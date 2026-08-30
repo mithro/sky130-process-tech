@@ -609,3 +609,351 @@ quotations could not be confirmed against the page. They are
 consistent with SKW-01 (Lam, AMAT, Novellus, Aviza, FSI, Axcelis GSD,
 Mirra all appear there) but should be treated as **weak** evidence
 until a copy of the posting is captured.
+
+## 5. Cypress Semiconductor, "Fab 4" and the S8 process
+
+### 5.1 Fab history: Control Data → VTC → Cypress Fab 4 → SkyWater
+
+**CYP-01** — Cypress Semiconductor, *"Cypress Closes Sale of Minnesota
+Wafer Fabrication Facility"*, PR Newswire, 2017-03-01.
+<https://www.prnewswire.com/news-releases/cypress-closes-sale-of-minnesota-wafer-fabrication-facility-300416287.html>.
+Sale of "Fab 4 in Bloomington, Minnesota" for $30 M to SkyWater
+Technology Foundry (Oxbow Industries); wafer-supply agreement. Tier:
+cross-check.
+
+**CYP-02** — Alex Van Abbema, Star Tribune, *"Twin Cities tech
+executives form new company, buy Cypress chip plant in Bloomington"*,
+2017-03-31.
+<https://www.startribune.com/twin-cities-tech-executives-form-new-company-buy-cypress-chip-plant-in-bloomington/417672063>.
+"The plant, built in the 1980s by Control Data, has 80,000 square feet
+of clean-room space and chiefly makes wafers that are 200 millimeters
+in diameter. Cypress produced about 17,000 wafers a month at the
+plant"; Cypress "bought the plant from Control Data Corp. in January
+1991 for $14.7 million"; about 400 employees. Includes an aerial
+photograph of the plant. (Page is rate-limited; retrieved with a
+browser.) Tier: cross-check.
+
+**CYP-03** — Evan Ramstad, Star Tribune, *"Why computer-chip factories
+from the 1980s are still going strong in Bloomington"*, 2019-06-09.
+<https://www.startribune.com/why-computer-chip-factories-from-the-1980s-are-still-going-strong-in-bloomington/510984342>.
+Fab tour report: Control Data's chip division (1970) → VTC Inc. (1982),
+which "added the plant that is now SkyWater's … at 2401 E. 86th St.";
+Control Data bought the plants back in the late 1980s and sold this
+one to Cypress; "under Cypress, the size of the cleanroom at SkyWater's
+plant more than doubled"; wafers go through "about 165 steps or
+processes over about four weeks"; 200 mm wafers; the SkyTech Center
+(carbon-nanotube deposition) lab. Tier: high-level.
+
+**CYP-04** — Evan Ramstad, Star Tribune, *"SkyWater, Minnesota's
+biggest chip plant, is getting even bigger with a third clean room"*,
+2019-10-22.
+<https://www.startribune.com/skywater-minnesota-s-biggest-chip-plant-is-getting-even-bigger-with-a-third-clean-room/563565242>.
+Third cleanroom (first physical expansion since the 1995 second
+cleanroom "that doubled the size of the plant, which was built in the
+early 1980s"); "New tools and equipment have been installed several
+times since then"; about 500 employees; copper interconnect capability
+and the 90 nm limit of the existing cleanrooms. Tier: high-level.
+
+**CYP-05** — ATREG, *"For sale: Cypress operational 200mm fab,
+Bloomington, USA"*, 2015-10-01.
+<https://atreg.com/for-sale-cypress-operational-200mm-fab-bloomington-usa/>.
+Fab-broker listing: "cleanroom facility spanning approx. 80,000 sq.
+ft.", "a fully integrated tool line capable of producing approx. 16,700
+wafers / month (350nm to 90nm)", "Wide range of 416 tools", DMEA
+Category 1A Trusted, 14.7-acre site, option to license process IP.
+Tier: cross-check (tool count and capacity in 2015).
+
+**CYP-06** — Cypress Semiconductor, Product Information Notification
+PIN152804, *"Qualification of GlobalWafer Silicon Wafers for 250nm,
+130nm and 90nm Technology Products at Cypress Fab 4"*, 2015-07-12
+(copy hosted by Future Electronics).
+<https://media.futureelectronics.com/PCN/45887_SPCN.PDF>. Names the
+process families run at Fab 4: "250nm R7, 130nm C8/R8/S8/L8 and 90nm
+C9/R9/R95 technology products at Cypress Fab 4 in Bloomington,
+Minnesota" — the clearest public statement that **S8 was a Fab 4
+process** — and the starting-wafer supplier qualification. Tier:
+cross-check.
+
+**CYP-07** — Cypress Semiconductor Corp., Form 10-Q/A for Q1 2003.
+<https://www.sec.gov/Archives/edgar/data/0000791915/000120677403000508/d12840.htm>.
+"Cypress's technologically advanced, eight-inch wafer production
+facility located in Minnesota ("Fab 4")"; "During Q1 2003 we continued
+ramping our latest 0.13-micron technology in manufacturing. We are
+simultaneously transferring our 90 nanometer technology from our
+eight-inch R&D facility in San Jose, California ("Fab 1") to our
+eight-inch manufacturing facility in Minnesota ("Fab 4")". Dates the
+0.13 µm ramp at Fab 4. Tier: cross-check.
+
+**CYP-08** — Cypress Semiconductor Corp., 2004 Annual Report (10-K
+wrap), 2005.
+<https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2004.pdf>.
+"Our 90-nanometer technology is now in production at our Minnesota
+facility"; fabs "utilize our proprietary 90-nanometer and 0.13 through
+0.8-micron CMOS, 0.25 and 0.8-micron BiCMOS, and 0.35-micron Silicon
+Nitride Oxide Silicon ("SONOS") processes"; "transition to more
+advanced process technologies in our facility in Bloomington,
+Minnesota including our 90-nanometer and 0.13-micron CMOS process
+technologies"; image sensors made "in Cypress's Fab 4 wafer
+fabrication plant"; "our existing 200mm wafers". Tier: cross-check.
+
+**CYP-09** — Cypress Semiconductor Corp., Form 10-K for fiscal 2007,
+filed 2008.
+<https://www.sec.gov/Archives/edgar/data/791915/000104746908002122/a2182468z10-k.htm>.
+Plan to exit the Texas fab and "transfer production to its more
+cost-competitive facility in Minnesota"; Bloomington property 278,000
+sq ft; transfer of "its 0.13-micron SRAM and LOGIC processes" to Grace
+Semiconductor (2007) and of the 0.35 µm SONOS process (2006). Tier:
+cross-check.
+
+**CYP-10** — Cypress Semiconductor Corp., Form 10-K for fiscal 2016,
+filed 2017.
+<https://www.sec.gov/Archives/edgar/data/791915/000079191517000007/cy-01012017x10xk.htm>.
+Bloomington property 337,000 sq ft; sale completed 2017-03-01; $37.2 M
+impairment. Tier: cross-check.
+
+**CYP-11** — FundingUniverse, *"History of Cypress Semiconductor
+Corporation"*.
+<https://www.fundinguniverse.com/company-histories/cypress-semiconductor-corporation-history/>.
+"At the end of 1990, the company bought its Bloomington, Minnesota,
+wafer fab from Control Data VTC, paying just $14.7 million"; 1998
+restructuring keeping SRAM at "Fab 4 in Minnesota, where it was
+developing a 0.35-micron process". Tier: high-level.
+
+**CYP-12** — Twin Cities Business, *"Minnesota's Silicon Touch"*,
+2011-06-01. <https://tcbmag.com/minnesotas-silicon-touch-june-2011/>.
+Cypress era: purchase from Control Data's VTC unit for $14.7 M;
+TrueTouch products made in Bloomington. Tier: high-level.
+
+**CYP-13** — Wikipedia, *"Cypress Semiconductor"* and *"Control Data
+Corporation"*.
+<https://en.wikipedia.org/wiki/Cypress_Semiconductor>,
+<https://en.wikipedia.org/wiki/Control_Data_Corporation> ("CDC spun
+off VTC, a chip maker"). Tier: high-level.
+
+**CYP-14** — AnySilicon, *"A Brief History of SkyWater Technology"*.
+<https://anysilicon.com/a-brief-history-of-skywater-technology/>.
+Tier: high-level.
+
+**CYP-15** — Jon Y (Asianometry), *"SkyWater Technologies: America's
+Semiconductor Foundry"*, 2021-07-28.
+<https://www.asianometry.com/p/skywater-technologies-americas-semiconductor>.
+80,000 sq ft, Cypress 1991–2017, "upgraded from 130nm/90nm to 65nm",
+"12,000 200-mm wafers a month … assuming 30 mask layers", 2019 DoD
+contract funded the third cleanroom and copper. Tier: high-level.
+
+**CYP-16** — Austin Lyons (Chipstrat), *"Understanding SkyWater"*,
+2025-11-15. <https://www.chipstrat.com/p/understanding-skywater>.
+Includes the 1991 acquisition terms ("$26.5m semiconductor facility,
+land and some equipment for $11.5m and … leased manufacturing
+equipment which costs $32m for just $3.2m", citing TechMonitor) and
+"The Minnesota fab is a 200mm fab at 90nm+ geometries". Tier:
+high-level.
+
+### 5.2 The S8 130 nm SONOS process in Cypress's own words
+
+**CYP-20** — Electronics Weekly, *"Cypress 4-Mbit non-volatile static
+random access memory"*, 2007-10-18.
+<https://www.electronicsweekly.com/news/products/memory-products/cypress-4-mbit-non-volatile-static-random-access-memory-2007-10/>.
+"The new 4-Mbit nvSRAMs are the first manufactured on Cypress's S8(tm)
+0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded
+nonvolatile memory technology". Tier: cross-check (S8 name).
+
+**CYP-21** — Tech Monitor, *"Cypress expands non-volatile SRAM
+portfolio"*, 2009-10-07.
+<https://www.techmonitor.ai/technology/data/cypress_expands_non_volatile_sram_portfolio_081009>.
+"its nvSRAMs are manufactured on S8 0.13-micron SONOS … embedded
+non-volatile memory technology". Tier: high-level.
+
+**CYP-22** — Cypress / UMC, *"Cypress and UMC Deliver ICs on New
+65-Nanometer SONOS Embedded Flash Technology"*, PR Newswire,
+2011-07-27.
+<https://www.prnewswire.com/news-releases/cypress-and-umc-deliver-ics-on-new-65-nanometer-sonos-embedded-flash-technology-126238008.html>.
+Compares S65 with "the current 130-nanometer S8 process" and states
+the SONOS module "only requires three additional mask layers to a
+standard CMOS process". Tier: cross-check.
+
+**CYP-23** — Cypress, *"Cypress Signs Innopower to Enable SONOS-Based
+Embedded Flash Solutions for 130-nm and 65-nm Technology Nodes"*,
+2011-02-17 (verified copy at Design & Reuse; the Business Wire
+original timed out).
+<https://www.design-reuse.com/news/25684/65-nm-sonos-embedded-nonvolatile-memory-ip.html>.
+"has been shipping in high volumes at 130-nm at several foundries".
+Tier: high-level.
+
+**CYP-24** — Krishnaswamy Ramkumar (Cypress), *"Cypress SONOS — A
+Scalable Embedded Flash Technology"*, ChipEstimate.com technical
+article, 2008-10-21.
+<https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21>.
+SONOS module "can easily be embedded into a logic process flow … with
+the addition of three to five masking layers"; retention "20 years
+after 100K cycles". Tier: high-level.
+
+**CYP-25** — K. Ramkumar, V. Prabhakar and R. Kapre (Cypress
+Semiconductor), *"Scalable SONOS based embedded non-volatile memory
+technology"*, Semiconductor Digest, 2020-02.
+<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>.
+Integration cost (extra masks), cell-size scaling from 130 nm to
+28 nm, channel engineering with indium. Tier: deep dive.
+
+**CYP-26** — Wikipedia, *"SONOS"*. <https://en.wikipedia.org/wiki/SONOS>.
+Notes Cypress as a SONOS supplier (IP licensing from 2011) and gives
+typical ONO thicknesses ("2 nm thick oxide lower layer, a 5 nm thick
+silicon nitride middle layer, and a 5–10 nm oxide upper layer"). Tier:
+high-level.
+
+### 5.3 Cypress patents on the SONOS module and its integration
+
+All four are assigned to Cypress Semiconductor Corporation at grant
+(later reassigned to Longitude Flash Memory Solutions / Monterey
+Research). They are the best public description of the ONO deposition
+recipe and of where the SONOS module sits in a 130 nm logic flow.
+
+**PAT-01** — US 6,969,689 B1, *"Method of manufacturing an
+oxide-nitride-oxide (ONO) dielectric for SONOS-type devices"*,
+K. Ramkumar, M. Rathor, B. Parameshwaran, L. Lancaster; filed
+2002-06-28, granted 2005-11-29.
+<https://patents.google.com/patent/US6969689B1/en>. Tunnel oxide
+"less than about 25 Å", charge-storing nitride "less than about 200 Å
+… preferably less than about 100 Å", top oxide "less than about 50 Å";
+all three layers formed in one furnace window of "about 700° C. to
+about 875° C." using NH₃, dichlorosilane and N₂O by LPCVD. Tier:
+deep dive.
+
+**PAT-02** — US 2009/0179253 A1, *"Oxide-nitride-oxide stack having
+multiple oxynitride layers"*, S. Levy, K. Ramkumar, F. Jenne, S. Geha;
+filed 2007-06-13, published 2009-07-16.
+<https://patents.google.com/patent/US20090179253A1/en>. Tunnel oxide
+"from about 15 Å to about 22 Å", multi-layer charge-trapping layer
+"about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å";
+LPCVD at 700–850 °C, 5–500 mTorr, N₂O/NH₃ and DCS/NH₃ gas ratios.
+Tier: deep dive.
+
+**PAT-03** — US 8,093,128 B2, *"Integration of non-volatile charge trap
+memory devices and logic CMOS devices"*, W. Koutny et al. (Cypress);
+filed 2008-05-22, granted 2012-01-10.
+<https://patents.google.com/patent/US8093128B2/en>. Order of the SONOS
+module relative to the logic well/channel implants, gate oxidation at
+"800° C. and 900° C.", nitridation at "900-1100° C.", blocking oxide
+3.0–5.0 nm. Tier: deep dive.
+
+**PAT-04** — US 8,796,098 B1, *"Embedded SONOS based memory cells"*,
+K. Ramkumar, I. Kouznetsov, V. Prabhakar (Cypress); filed 2013-09-04,
+granted 2014-08-05.
+<https://patents.google.com/patent/US8796098B1/en>. Pad oxide 10–20 nm,
+tunnel dielectric 1.0–4.0 nm, oxynitride charge-trapping layers
+2.0–5.0 nm, blocking oxide ~3–4.5 nm, HV gate oxide 5–7 nm, LV gate
+oxide 1–3 nm, indium channel doping. Tier: deep dive.
+
+*Searches for Cypress patents specifically on STI, TiN local
+interconnect, poly resistors or TiW/AlCu metallisation returned only
+generic results; none is listed here.*
+
+### 5.4 SONOS papers (non-Cypress) useful for the 130 nm node
+
+**PAP-01** — M. H. White, D. A. Adams and J. Bu, *"On the go with
+SONOS"*, IEEE Circuits and Devices Magazine, vol. 16, no. 4, pp. 22–31,
+2000-07, DOI 10.1109/101.857747.
+<https://ieeexplore.ieee.org/document/857747/>. Classic review of
+scaled SONOS. Tier: deep dive.
+
+**PAP-02** — M.-K. Seo et al. (Samsung), *"A 130-nm 0.9-V 66-MHz 8-Mb
+(256K × 32) local SONOS embedded flash EEPROM"*, IEEE Journal of
+Solid-State Circuits, vol. 40, no. 4, pp. 877–883, 2005-04,
+DOI 10.1109/JSSC.2005.845564.
+<https://ieeexplore.ieee.org/document/1424218/>. A 0.13 µm
+logic-compatible SONOS embedded flash from another vendor; cell size
+and P/E conditions for comparison. Tier: deep dive.
+
+**PAP-03** — Y. Kim et al. (Samsung), *"Highly manufacturable SONOS
+non-volatile memory for the embedded SoC solution"*, 2003 Symposium on
+VLSI Technology, pp. 31–32, DOI 10.1109/VLSIT.2003.1221071. Tier: deep
+dive.
+
+**PAP-04** — Wang et al., *"A million cycle 0.13um 1Mb embedded SONOS
+Flash memory using Successive Approximated Read Calibration"*, IEEE
+CICC 2008, pp. 427–430, DOI 10.1109/CICC.2008.4672111. Tier: deep dive.
+
+**PAP-05** — Taniguchi et al., *"SONOS Embedded Flash IP Using
+Trap-Depth-Controlled SiN Film Enabling Data Retention more than 10
+years at 200°C"*, 2023 IEEE International Memory Workshop, DOI
+10.1109/IMW56887.2023.10145990.
+<https://ieeexplore.ieee.org/document/10145990/>. SONOS on a 130 nm BCD
+platform with three added masks. Tier: deep dive.
+
+(IEEE Xplore pages return a JavaScript challenge to automated fetches;
+the bibliographic data above were verified through the Crossref
+metadata API for each DOI.)
+
+## 6. Trade press and analyst coverage of the Bloomington fab
+
+**PRESS-01** — Joanne Itow (Semico Research), *"A Different Foundry
+Model"*, Semiconductor Engineering, 2019-10-17.
+<https://semiengineering.com/skywater-the-right-foundry-at-the-right-time/>.
+"Today SkyWater is running an all-aluminum 90nm process"; "It does not
+even run 300mm wafers"; SkyTech Center for customer-dedicated tools;
+DMEA accreditation. Tier: high-level.
+
+**PRESS-02** — Mark LaPedus, *"200mm Fab Crunch"*, Semiconductor
+Engineering, 2018-05-21.
+<https://semiengineering.com/200mm-fab-crunch/> (PDF copy hosted by
+SkyWater:
+<https://www.skywatertechnology.com/wp-content/uploads/2018/05/200mm-Fab-Crunch-Semi-Engineering-180521.pdf>).
+"SkyWater has one 200mm fab with 0.35-micron, 90nm and other
+processes"; context on the used-200 mm-equipment shortage that shapes
+what tools such fabs can buy. Tier: high-level.
+
+**PRESS-03** — Willy Shih, Forbes, *"Inside SkyWater Technology's
+Domestic Semiconductor Foundry"*, 2020-10-28.
+<https://www.forbes.com/sites/willyshih/2020/10/28/skywater-technology-and-domestic-production-of-semiconductors/>.
+"SkyWater is still using 200 mm wafers"; 90 nm production, move to
+65 nm; two fab photographs. Tier: high-level.
+
+**PRESS-04** — Samuel K. Moore, IEEE Spectrum, *"U.S. Invests in Fabs
+That Make Radiation-Hardened Chips"*, 2019-10-29.
+<https://spectrum.ieee.org/us-invests-in-radiationhardenedchip-fabs>.
+5,500 m² expansion, copper interconnect "to support node scaling to
+65 nm and 45 nm". Tier: high-level.
+
+**PRESS-05** — Samuel K. Moore, IEEE Spectrum, *"The Foundry at the
+Heart of DARPA's Plan to Let Old Fabs Beat New Ones"*, 2018-08-06.
+<https://spectrum.ieee.org/the-foundry-at-the-heart-of-darpas-plan-to-let-old-fabs-beat-new-ones>.
+"a lot of the government work is done around 90 nm"; 200 mm wafers;
+carbon-nanotube handling protocols. Tier: high-level.
+
+**PRESS-06** — Electronics Weekly (David Manners), *"US DoD invests
+$170m in SkyWater fab"*, 2019-10-22.
+<https://www.electronicsweekly.com/news/business/us-dod-invests-170m-skywater-fab-2019-10/>.
+"operates an old 200mm Cypress fab in Bloomington". Tier: high-level.
+
+**PRESS-07** — Semiconductor Digest, *"US Department of Defense to
+Invest up to $170M in SkyWater's Domestic Technology Foundry"*,
+2019-10.
+<https://www.semiconductor-digest.com/us-department-of-defense-to-invest-up-to-170m-in-skywaters-domestic-technology-foundry/>.
+Tier: high-level.
+
+**PRESS-08** — Cleanroom Technology, *"SkyWater to expand
+microelectronics production with government contract"*, 2019-10-22.
+<https://www.cleanroomtechnology.com/news/article_page/Skywater_to_expand_microelectronics_production_with_government_contract/159234>.
+Quotes "8,000 sqft of new cleanroom area" (SKW-11 says up to
+15,000 sq ft; GOV-03/GOV-04 give 8,400–13,000 sq ft built). Tier:
+high-level.
+
+**PRESS-09** — Evertiq, *"SkyWater expands in Florida – assumes
+operation of 200mm fab"*, 2021-01-27. <https://evertiq.com/news/49475>.
+Mentions the October 2020 ribbon-cutting for the Bloomington
+expansion. Tier: high-level.
+
+**PRESS-10** — Semiconductor Today, *"SkyWater investing $56m in
+capacity expansion and 200mm GaN foundry"*, 2021-07-27.
+<https://www.semiconductor-today.com/news_items/2021/jul/skywater-270721.shtml>.
+Tier: high-level.
+
+**PRESS-11** — Chipstrat, Asianometry, AnySilicon, Star Tribune — see
+CYP-02, CYP-03, CYP-04, CYP-14, CYP-15, CYP-16 above.
+
+*Not retrievable:* EE Times, *"Cypress Sells Minnesota Fab for $30
+Million"* (2017-03) and EDN's Cypress SONOS licensing articles timed
+out or refused every fetch and are therefore not listed with URLs;
+the Klobuchar and Minnesota DEED press pages (2021, 2024) returned
+HTTP 403 / a CAPTCHA. No public fab-tour photo essay with tool counts
+was found beyond the photographs in CYP-02, CYP-03 and PRESS-03.
