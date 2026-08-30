@@ -20,7 +20,9 @@ Precisely, an implant is specified by species (B⁺, BF₂⁺, P⁺, As⁺, In�
 Sb⁺, occasionally Ge⁺ or N⁺), energy (a few keV to a few MeV), dose
 (ions per cm², from about 10¹¹ for a threshold adjust to several
 10¹⁵ for a source/drain), tilt and twist angles, and the screen film
-through which it is done. It is always followed, sooner or later, by an
+through which it is done; these ranges are typical industry values
+(Plummer, Deal and Griffin, ch. 8). It is always followed, sooner or
+later, by an
 anneal ({ref}`category-anneal`) that repairs the lattice damage and
 moves the dopant onto substitutional sites where it is electrically
 active.
@@ -132,6 +134,10 @@ low-dose implants, and periodically by SIMS profiling
 
 ### Implant classes in a 130 nm CMOS flow
 
+The energies and doses given below are typical industry values for the
+node (Plummer, Deal and Griffin, ch. 8; Wolf and Tauber, ch. 9);
+SKY130's own implant recipes are not public.
+
 * **Wells and deep wells** (n-well {ref}`NWI <step-018>`, p-well
   {ref}`PWI <step-027>`, deep n-well {ref}`DNI <step-008>`): phosphorus
   or boron at hundreds of keV to over 1 MeV, doses of order
@@ -140,8 +146,8 @@ low-dose implants, and periodically by SIMS profiling
   punch-through control; ITRS 2001 notes that "the retrograde well
   profile must be less than 0.5 times the drain extension depth to
   improve short channel effects" ([ITRS 2001, Front End
-  Processes][itrs2001-fep]). Multiple energies are chained (the "NWI2"
-  and "PWI2" steps) to shape the profile.
+  Processes][itrs2001-fep]). We infer that multiple energies are chained
+  (the "NWI2" and "PWI2" steps) to shape the profile.
 * **Threshold-adjust and channel implants** (low-Vt, high-Vt, channel,
   punch-through-stop): light doses of order 10¹²–10¹³ cm⁻² of BF₂, B,
   As or P at tens of keV, placed just under the gate oxide to set

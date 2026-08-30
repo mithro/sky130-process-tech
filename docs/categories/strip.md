@@ -14,8 +14,10 @@ but a sacrificial inorganic film, most notably the STI nitride
 
 Precisely, a post-implant strip in a 130 nm flow is usually three
 operations in one travelling group: a plasma ash in a downstream
-microwave or RF oxygen plasma at 200–300 °C, often with a low-power
-first stage to break through the hardened "crust" that a high-dose
+microwave or RF oxygen plasma at 200–300 °C (a typical industry value;
+the Gasonics L3510's platen range is 100–300 °C [gasonics]), often
+with a low-power first stage to break through the hardened "crust"
+that a high-dose
 implant leaves on the resist surface; a wet strip in sulfuric
 acid–hydrogen peroxide ({term}`SPM`, "piranha") which "is used to clean
 organic residues off substrates" ([Wikipedia: Piranha
@@ -42,8 +44,9 @@ substance known as a reactive species is generated. Oxygen or fluorine
 are the most common reactive species" ([Wikipedia: Plasma
 ashing][wiki-ash]). Atomic oxygen oxidises the resist's carbon and
 hydrogen to CO, CO₂ and H₂O, which are pumped away; the rate is
-thermally activated, so ashers run hot (200–300 °C) for bulk removal
-and cool for "descum". To avoid charging and ion damage to gate oxides,
+thermally activated, so ashers run hot for bulk removal — typically
+200–300 °C; the Gasonics L3510 platen spans 100–300 °C [gasonics] and
+the Aura 1000 150–300 °C [aura1000] — and cool for "descum". To avoid charging and ion damage to gate oxides,
 "many machines now use a downstream plasma configuration, where plasma
 is formed remotely and the desired particles are channeled to the
 wafer"; "monatomic oxygen is electrically neutral and although it does
@@ -202,8 +205,12 @@ and metals as a critical-dimension issue in its own right
   Technology". <https://doi.org/10.1016/b978-081551554-8.50004-5>
 * *ITRS 2001 Edition: Front End Processes* (surface preparation).
   <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
-* SemiStar, "Gasonics L3510 plasma asher" (tool description).
+* SemiStar, "Gasonics L3510 plasma asher" (tool description; platen
+  temperature 100–300 °C).
   <http://www.semistarcorp.com/product/gasonics-l3510-asher/>
+* Allwin21, "Gasonics Aura 1000 Plasma Asher" (specification summary;
+  temperature 150–300 °C typical).
+  <https://allwin21.com/gasonics-aura-1000-plasma-asher-2/>
 * Stanford Nanofabrication Facility, "Downstream/Remote Plasma Resist
   Removal". <https://snfguide.stanford.edu/guide/equipment/purpose/cleaning/resist-removal/dry-resist-removal/downstreamremote-plasma-resist-removal>
 * C2MI, "Akrion GAMA acid bench".
@@ -257,5 +264,6 @@ and metals as a critical-dimension issue in its own right
 [kern-handbook]: https://doi.org/10.1016/b978-081551554-8.50004-5
 [itrs2001-fep]: https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf
 [gasonics]: http://www.semistarcorp.com/product/gasonics-l3510-asher/
+[aura1000]: https://allwin21.com/gasonics-aura-1000-plasma-asher-2/
 [snf-strip]: https://snfguide.stanford.edu/guide/equipment/purpose/cleaning/resist-removal/dry-resist-removal/downstreamremote-plasma-resist-removal
 [akrion]: https://www.c2mi.ca/en/equipement/akrion-gama-acid-bench/

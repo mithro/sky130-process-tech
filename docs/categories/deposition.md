@@ -79,8 +79,10 @@ standard LPCVD films and their typical industry conditions are:
   ({ref}`SPNIT <step-076>`).
 * **TEOS oxide**, Si(OC₂H₅)₄ → SiO₂ + by-products, at roughly
   650–750 °C; and **HTO** (high-temperature oxide) from SiH₂Cl₂ + N₂O
-  at 800–900 °C. Both are conformal and are used for spacers and
-  liners ([Wikipedia: Tetraethyl orthosilicate][wiki-teos]).
+  at 800–900 °C, both temperatures being typical industry values
+  (Plummer, Deal and Griffin, ch. 9; Wolf and Tauber, ch. 6). Both are
+  conformal and are used for spacers and liners ([Wikipedia: Tetraethyl
+  orthosilicate][wiki-teos]).
 
 ### PECVD
 
@@ -103,9 +105,10 @@ deposition][wiki-pecvd]). Typical films:
   refractive index can be tuned between oxide and nitride; used as a
   dielectric anti-reflective coating under photoresist and as the
   dielectric of MiM capacitors ({ref}`CAPILD <step-135>`).
-* **PSG** by adding PH₃ to an oxide deposition, typically 4–8 wt.% P,
-  which getters sodium and, in older flows, could be reflowed
-  ([Wikipedia: Phosphosilicate glass][wiki-psg]).
+* **PSG** by adding PH₃ to an oxide deposition, typically 4–8 wt.% P
+  (a typical industry range; Wolf and Tauber, ch. 6), which getters
+  sodium and, in older flows, could be reflowed ([Wikipedia:
+  Phosphosilicate glass][wiki-psg]).
 
 The ion bombardment inherent in PECVD lets film stress be tuned from
 compressive to tensile by adjusting the low-frequency power, a
@@ -147,9 +150,10 @@ zone model with pressure and homologous temperature (Ohring, ch. 5
   effect ([Blech 1976][blech]); on top of Al it serves as an
   anti-reflective coating for lithography and as a diffusion barrier
   ([Wikipedia: Titanium nitride][wiki-tin]).
-* **Titanium–tungsten** (Ti:W, about 10 wt.% Ti), a barrier and
-  anti-reflective cap used in some aluminium stacks and as a capacitor
-  electrode.
+* **Titanium–tungsten** (Ti:W, "typically composed of 10 wt% of
+  titanium and the balance of tungsten" [US 5,160,534][tiw-patent]), a
+  barrier and anti-reflective cap used in some aluminium stacks and as
+  a capacitor electrode.
 * **Cobalt or titanium** for {term}`salicide` formation
   ({ref}`category-anneal`).
 
@@ -316,6 +320,10 @@ that the deposition steps below must hit.
 * US Patent 6,350,353, "Alternate steps of IMP and sputtering process
   to improve sidewall coverage" (Applied Materials).
   <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>
+* US Patent 5,160,534, "Titanium-tungsten target material for
+  sputtering and manufacturing method therefor" (Hitachi Metals,
+  granted 1992-11-03; Ti:W barrier composition).
+  <https://patents.google.com/patent/US5160534A/en>
 
 ### High-level
 
@@ -396,3 +404,4 @@ that the deposition steps below must hit.
 [amat-endura]: https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html
 [amat-1997]: https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf
 [imp-patent]: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353
+[tiw-patent]: https://patents.google.com/patent/US5160534A/en

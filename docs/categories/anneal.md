@@ -84,10 +84,11 @@ single-wafer RTA chamber uses banks of tungsten-halogen lamps above (and
 sometimes below) the wafer, a quartz window, gas flow of N₂, Ar or
 O₂, and an optical pyrometer whose reading must be corrected for the
 wafer's temperature- and film-dependent emissivity; ramp rates of
-50–250 °C/s are typical, and the trade-offs are "temperature and
-process uniformity, temperature measurement and control, and wafer
-stress" ([Wikipedia: Rapid thermal processing][wiki-rtp]; [Roozeboom
-and Parekh 1990][roozeboom]). Wafers that are heated non-uniformly
+50–250 °C/s are typical industry values ([Roozeboom and Parekh
+1990][roozeboom]), and the trade-offs are "temperature and process
+uniformity, temperature measurement and control, and wafer stress"
+([Wikipedia: Rapid thermal processing][wiki-rtp]). Wafers that are
+heated non-uniformly
 slip on {111} planes at the edge, so edge-ring design and lamp
 zoning matter. Furnaces, by contrast, hold 100–150 wafers at a uniform
 temperature for tens of minutes and are still used where a large Dt is

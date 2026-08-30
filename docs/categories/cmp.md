@@ -56,7 +56,8 @@ and wafer,
 
 where {math}`k_p`, the Preston coefficient, absorbs the properties of
 pad, slurry and film. It holds well for oxide polishing over the range
-of a few psi and tens of metres per minute used in production, and
+of a few psi and tens of metres per minute used in production (typical
+industry values; [Zantye, Kumar and Sikder 2004][zantye]), and
 deviations from it (a non-zero pressure threshold, sub-linear velocity
 dependence) are the subject of later models such as Luo and Dornfeld's,
 which treats the removal as the product of the number of active
@@ -134,6 +135,10 @@ polish and clean.
 | STI ({ref}`CMPNIT <step-012>`) | HDP oxide | Si₃N₄ | silica/KOH, or ceria with surfactant for high oxide:nitride selectivity | nitride erosion, oxide dishing in wide trenches, residual oxide on nitride |
 | Tungsten ({ref}`WCMPLI <step-100>` etc.) | W and Ti/TiN liner | ILD oxide | alumina or silica with H₂O₂ or Fe(NO₃)₃, pH 2–4 | plug recess, oxide erosion in dense arrays, W "coring", corrosion |
 | ILD ({ref}`CMPM <step-116>` etc.) | PECVD/HDP oxide | none (fixed removal) | fumed silica/KOH or NH₄OH, pH 10–11 | thickness non-uniformity, scratches, pattern-density steps |
+
+The slurry pH values in the table are typical industry values
+(Steigerwald, Murarka and Gutmann [steigerwald]; [Zantye, Kumar and
+Sikder 2004][zantye]).
 
 ## Typical equipment
 
