@@ -30,9 +30,10 @@ for example.
 In the SKY130 flow there are 27 etch steps: the STI nitride and trench
 etches, the SONOS tunnel/ONO stack etches, the gate-oxide wet etch, the
 poly gate etch, the spacer etch, a nitride cut, the local-interconnect
-contact and line etches, the five aluminium metal etches, four via
-etches, two MiM capacitor etches, a backside film removal, and the final
-nitride-seal and pad etches.
+contact and line etches, the sacrificial-oxide wet etch before
+silicidation, the metal contact etch, the five aluminium metal etches,
+four via etches, two MiM capacitor etches, a backside film removal, and
+the final nitride-seal and pad etches.
 
 ## Physics and engineering background
 
@@ -153,8 +154,10 @@ baths are monitored with etch-rate test wafers.
 Because film thickness and etch rate both vary, production etches are
 run to an {term}`endpoint` rather than a fixed time: optical emission
 spectroscopy watches a product or reactant line (for example the
-405 nm CN band during nitride etch or the 261 nm AlCl line in metal
-etch) and triggers a timed over-etch when it changes; laser
+387 nm CN band during nitride etch — "a strong peak at 387 nm indicates
+that CN is present in the plasma, usually indicating that nitride is
+being etched" ([US 6,376,262][cn-patent]) — or the 261 nm AlCl line in
+metal etch) and triggers a timed over-etch when it changes; laser
 interferometry on a monitoring pad follows the film thickness directly
 (Nojiri, ch. 4 [nojiri]). The {term}`loading effect` makes the rate
 depend on how much material is exposed, and micro-loading and ARDE
@@ -278,6 +281,10 @@ oxidation or clean must remove.
   <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
 * C2MI, "Akrion GAMA acid bench".
   <https://www.c2mi.ca/en/equipement/akrion-gama-acid-bench/>
+* US Patent 6,376,262, "Method of forming a semiconductor device using
+  double endpoint detection" (Tokyo Electron, granted 2002-04-23; CN
+  emission at 387 nm as the nitride etch endpoint signal).
+  <https://patents.google.com/patent/US6376262B1/en>
 
 ### High-level
 
@@ -345,3 +352,4 @@ oxidation or clean must remove.
 [snf-9400]: https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly
 [amat-1997]: https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf
 [akrion]: https://www.c2mi.ca/en/equipement/akrion-gama-acid-bench/
+[cn-patent]: https://patents.google.com/patent/US6376262B1/en

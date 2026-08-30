@@ -82,8 +82,9 @@ Griffin, ch. 8).
 ### Channelling
 
 "The range of an ion can be much longer if the ion travels exactly
-along a particular direction", such as ⟨110⟩ in silicon, so that "tiny
-alignment errors" produce "extreme differences in implantation depth"
+along a particular direction", such as ⟨110⟩ in silicon, and the effect
+is "highly nonlinear, with small variations from perfect orientation
+resulting in extreme differences in implantation depth"
 ([Wikipedia: Ion implantation][wiki-implant]). Production implants
 therefore tilt the wafer, conventionally by 7°, twist it to avoid
 planar channels, implant through a thin screen oxide that randomises the
