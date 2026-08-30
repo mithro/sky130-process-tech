@@ -93,11 +93,16 @@ pages are comparable and machine-checkable:
    basis for the inference stated).
 9. Resources required (gases, chemicals, targets, resists, …).
 10. Related steps and cross-references.
-11. References — three tiers: cross-check, high-level, deep-dive.
+11. References — three annotated reading lists: cross-check,
+    high-level, deep-dive (minimum eight deep-dive entries).
 12. Open questions / uncertainty notes.
+13. Footnote definitions (full citations) at the end of the file.
 
-A checker script (`tools/check_steps.py`) verifies every step page
-contains every mandatory heading and that every link resolves.
+Citations are Markdown footnotes (`[^label]`), which both GitHub and
+Sphinx/MyST render; see `citation-style.md`. Checker scripts verify
+every step page contains every mandatory heading
+(`tools/check_steps.py`) and that footnotes and reading lists are
+complete (`tools/check_refs.py`); the Sphinx build resolves every link.
 
 ## Workflow
 

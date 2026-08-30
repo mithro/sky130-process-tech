@@ -1,0 +1,66 @@
+# Citation style
+
+All pages cite sources with Markdown footnotes, which GitHub's renderer
+and Sphinx/MyST both understand:
+
+```markdown
+SkyWater lists an Axcelis GSD implanter.[^skw-01] Two sources at
+once.[^pdk-04][^txt-02]
+
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
+    diagram). <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
+```
+
+## Rules
+
+1. **Inline citation = footnote reference** `[^label]`, placed directly
+   after the claim, quotation or number it supports, before or after the
+   full stop consistently (after is preferred). Several sources:
+   `[^a][^b]`, no separators.
+2. **Labels** are lower-case, ASCII letters/digits/hyphens, and stable
+   across the whole documentation. Use the inventory key from
+   `docs/references/public-sources.md` where one exists (`SKW-01` →
+   `[^skw-01]`, `PDK-PERIPH` → `[^pdk-periph]`, `TXT-02` → `[^txt-02]`).
+   For sources not in the inventory use `author-year` (`[^chew-2002]`),
+   `pat-…` for patents (`[^pat-dnw-hynix]`), `wiki-…` for Wikipedia.
+3. **Footnote definitions** hold the full citation: authors, title,
+   venue/publisher, date, identifier (DOI, patent number, ISBN) and a
+   URL in angle brackets. Continuation lines are indented four spaces.
+   Put all definitions at the very end of the page, after
+   "Open questions", under a comment line `<!-- footnotes -->`. Both
+   renderers move footnotes to the bottom of the page anyway.
+4. **Every definition must be referenced at least once** (Sphinx warns,
+   and the build runs with `-W`), and every reference must be defined.
+5. **The three reference tiers stay** as annotated reading lists under
+   `## References`: `### Cross-check`, `### High-level understanding`,
+   `### Deep dive`. Each bullet is a *short* entry — author/organisation
+   and title, then one clause saying what the reader gets from it —
+   ending with the footnote reference that carries the full citation:
+
+   ```markdown
+   ### Deep dive
+
+   * Oh (Hynix), US 6,806,133 — a contemporaneous triple-well recipe with
+     explicit MeV phosphorus energies and doses.[^pat-dnw-hynix]
+   ```
+
+   Do not repeat URLs in the bullets; the footnote has them.
+6. **Deep dive must be substantial.** Minimum eight entries on a step
+   page and twelve on a category page, drawn from several kinds of
+   source: peer-reviewed papers (IEDM, VLSI, TED, JES/ECS, JVST, JAP),
+   review articles, theses/dissertations, patents from several
+   assignees, book chapters, standards (SEMI, ITRS), vendor application
+   notes or white papers, and university course notes. Prefer sources
+   the reader can actually open (DOI or URL), and say in the annotation
+   what the source contributes.
+7. **Verify before citing.** Fetch every URL/DOI; do not cite from
+   memory.
+
+## Checker
+
+`uv run tools/check_refs.py` verifies rules 4–6 on every written page:
+footnote references and definitions match, no reference-style link
+definitions (`[label]: url`) remain, and the Deep dive list meets the
+minimum length.

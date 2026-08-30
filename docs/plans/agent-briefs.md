@@ -58,13 +58,21 @@ step provide:
   resists, developers, wafers; link material pages.
 * **Related steps** — previous/next, the mask used, the strip step that
   follows a mask, the etch that follows a deposition, etc.
-* **References** — three tiers: *Cross-check* (primary public sources
-  for the specific claims on this page), *High-level* (Wikipedia,
-  textbooks, tutorials), *Deep dive* (papers, theses, patents).
-  Every reference is a full citation with a URL where one exists.
+* **Citations** — Markdown footnotes exactly as specified in
+  `docs/plans/citation-style.md`: `[^label]` after every claim, number
+  or quotation; full citation with URL in the footnote definition at
+  the end of the page; labels reuse the inventory keys in lower case.
+* **References** — three annotated reading lists: *Cross-check*
+  (primary public sources for the specific claims on this page),
+  *High-level* (Wikipedia, textbooks, tutorials), *Deep dive* (papers,
+  review articles, theses, patents from several assignees, book
+  chapters, standards, vendor application notes; **at least eight
+  entries**, each with one clause on what it contributes). Bullets are
+  short and end with the footnote reference that carries the full
+  citation.
 * **Open questions** — anything you could not confirm publicly.
 
-Run `uv run tools/check_steps.py` and
+Run `uv run tools/check_steps.py`, `uv run tools/check_refs.py` and
 `uv run sphinx-build -W -q -b html docs docs/_build/html` before
 finishing. Report the branch name, commits, and any claims you were
 unable to source.
@@ -86,8 +94,10 @@ them. Check, and report with file and line references:
    every conflict with both locations.
 4. **Inference hygiene** — is every "likely used at SkyWater" claim
    backed by stated public evidence, with the inference marked as such?
-5. **Template and build** — mandatory headings present; build passes
-   with `-W`.
+5. **Template, citations and build** — mandatory headings present;
+   citations follow `docs/plans/citation-style.md` (footnotes, no
+   reference-style links, Deep dive at or above the minimum length and
+   genuinely varied); `tools/check_refs.py` and the `-W` build pass.
 
 Return a verdict (`approve`, `approve with fixes`, `reject`) and an
 itemised list of required fixes.
