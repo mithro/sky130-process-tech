@@ -281,3 +281,331 @@ Symposium presentations by SkyWater staff on the SKY130 process itself
 returned only the items above; Crossref lists several 2024 conference
 papers that *use* the PDK (e.g. standard-cell characterisation) but
 none that describe the process flow.
+
+## 3. SkyWater Technology corporate sources
+
+### 3.1 Website — technology and facility pages
+
+**SKW-01** — SkyWater Technology, *"Facilities & Capabilities"*
+(Manufacturing → Facilities & Capabilities), live page, accessed
+2026-08-30.
+<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>.
+**The most valuable single public source for the tool set.** For the
+Minnesota fab it states "200 mm equipment", "91,000 sq ft cleanroom
+(class 10)", "Capacity: 10,000 30 ML CMOS wafers/month or 50,000 MOSFET
+wafers/month", "90 nm + feature geometries", and that the site was
+"recently expanded in 2020 to enable additional capacity and Cu back
+end of line". The "SkyWater Process Integration Tools & Capabilities"
+list then names tools and chemistries by area:
+
+* *Lithography* — "ASML I-line stepper", "ASML I-line scanner", "ASML
+  DUV stepper", "ASML DUV scanner", "ASML 193nm single stage scanner –
+  90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD"; tracks "DNS
+  80B track", "Sokudo RF3 track", "TEL ProZ Lithius track"; max field
+  26 mm × 32 mm.
+* *Photo metrology* — "AMAT Verity (multiple versions) CD", "AMAT
+  VeraSEM", "KLA 5200/5300/Archer overlay".
+* *Film deposition* — "Lam/Novellus/AMAT" PECVD TEOS ("C2 and
+  Producer"), PECVD silane oxide/nitride/oxynitride ("C1"),
+  "Lam/Novellus High Density Plasma (HDP) doped and phos doped with
+  sputter etch", "Lam/Novellus PECVD Tungsten – plug fill – PNL option",
+  "AMAT PVD Metal" (aluminium pure and Cu-doped, TiW, ESC TiN, IMP TiN,
+  collimated Ti, WN, cobalt, niobium), "AMAT Raider single wafer Cu
+  plating", ALD (AlN, TiN, SiO₂, Al₂O₃, HfO₂, TiO₂, ZrO₂).
+* *Etch* — metal: "Lam 9600, Al, TiW, TiN, Pt" and "Lam 2300 Versys,
+  Al, TiW, TiN, Nb, Pt"; poly/silicon: "AMAT DPSII, HBR, Cl2, NF3, CF4,
+  CHF3, O2 – gate, trench, W/WN", "Lam 9400 TCP, poly/nitride, HBr,
+  CF4, SF6, O2", "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2".
+* *Resist removal / cleans* — "Gasonic PEP, remote microwave plasma",
+  "Iridia RF microwave", "Mattson Aspen2", "Akrion Gamma Batch Wet Bench
+  – Sulfuric, SC1, phosphoric, BOE", batch rotational "EKS265, EKC270
+  solvents", single wafer "SEZ223, Davinci, HF, DSP+HF".
+* *Diffusion / anneal / implant* — "Furnaces are all made by Aviza"
+  (wet/dry oxidation to 1150 °C, Ar/N₂ anneal, LPCVD nitride,
+  polysilicon, silane oxide, "LPCVD oxide/nitride/oxide", BTBAS
+  low-temperature nitride, H₂ and forming-gas alloy); pre-clean "DNS
+  wet bench industry standard HF/SC1/SC2", "FSI Mercury"; RTA "Ag
+  Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"; implant "Axcelis 8250
+  Mid current B11, BF2, As … 1e11 to 1e14", "Axcelis GSD High
+  current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15", "Axcelis
+  GSD Hi dose B11, BF2, P, As 2-180kev, 5e12 to 5e16"; scribe
+  "Lumonics Superclean".
+* *CMP* — "AMAT Mirra CMP" for oxide, nitride, niobium, aluminium,
+  tungsten, high-selectivity tungsten and copper.
+* *Test* — parametric "HP 4062UX"; sort "Advantest T5365P", "Verigy
+  V3308, V4108", "Credence Duo", "Credence LT", "Verigy 93000",
+  "Camtek Falcon"; reliability lab "Qualitau".
+* *Special modules* — "Nitrided gate oxide", "Ti and Co Silicide", "W
+  plug dual damascene", "Cu dual damascene", "Nb damascene", "Photo
+  stitching", "Low temp (~200C) back end of line processing".
+
+Caveats: this is a 2020s capability list for the whole fab, so it
+includes tools added after the S8 flow was developed (copper plating,
+niobium, 193 nm scanners, ALD). Tier: cross-check (SkyWater statement).
+
+**SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
+(ROIC)"* platform page, accessed 2026-08-30.
+<https://www.skywatertechnology.com/cmos/>. Table of platforms: S130 —
+"130nm CMOS", "200mm", metal layers "5: Al", local interconnect "1",
+core 1.8 V, I/O "3.3V, 5.0V", high voltage "20+V, Drain-Extended CMOS
+(16V)", "MiM Capacitor", "Precision Resistor", "Bulk" substrate; S90LN
+— 90 nm, 7 Al metals, 2 dual-damascene local interconnect, 4 µm epi;
+RH90 — 90 nm FD-SOI. Tier: cross-check.
+
+**SKW-03** — SkyWater Technology, *"RH90: The Next-Generation Stateside
+Strategic Rad-Hard by Process Technology"*, 2023-03-14.
+<https://www.skywatertechnology.com/rh90-the-next-generation-stateside-strategic-rad-hard-by-process-technology/>.
+Context for the 90 nm FDSOI platform that shares the fab. Tier:
+high-level.
+
+**SKW-04** — SkyWater Technology, *"Weebit Nano ReRAM IP now available
+in SkyWater Technology's S130 process"*, 2023-03-07.
+<https://www.skywatertechnology.com/weebit-nano-reram-ip-now-available-in-skywater-technologys-s130-process/>.
+Describes S130 as an "automotive-grade, extended temperature,
+mixed-signal CMOS platform" used "for billions of devices to-date".
+Tier: cross-check.
+
+**SKW-05** — SkyWater Technology, *"Overcoming ASIC Obsolescence"*,
+2024-04-08.
+<https://www.skywatertechnology.com/overcoming-asic-obsolescence/>.
+States "a roadmap for the S130 process that extends 10-15 years".
+Tier: high-level.
+
+**SKW-06** — SkyWater Technology, *"A Day in the Life of a SkyWater
+Engineer"* (R&D/OPC engineer profile), 2024-09-04.
+<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-engineer/>.
+Names "the ASML TWINSCAN lithography tool" and "the game-changing
+Multibeam direct-write tool". Tier: cross-check (tool naming).
+
+**SKW-07** — SkyWater Technology, *"A Day in the Life of a SkyWater
+Maintenance Technician"*, 2023-12-14.
+<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>.
+Names a "Novellus high density plasma tool", the "SEZ etcher tool" and
+work on implanter robotics and vacuum systems. Tier: cross-check (tool
+naming).
+
+**SKW-08** — SkyWater Technology, *"Maintenance Technician Job
+Overview"* and *"Careers & Jobs"* pages.
+<https://www.skywatertechnology.com/maintenance-technicians/>,
+<https://www.skywatertechnology.com/careers/>. The careers page links
+the applicant portal on Dayforce
+(<https://jobs.dayforcehcm.com/en-US/skywater/CANDIDATEPORTAL/>); the
+maintenance page names no tools. Tier: high-level.
+
+**SKW-09** — SkyWater Technology press-release index.
+<https://www.skywatertechnology.com/category/press-releases/>. Tier:
+high-level (navigation).
+
+### 3.2 Press releases about the fab, expansions and tools
+
+**SKW-10** — *"SkyWater Technology Foundry Acquires Twin-Cities
+Semiconductor Manufacturing Facility from Cypress Semiconductor
+Corporation"*, 2017-03-27.
+<https://www.skywatertechnology.com/skywater-technology-foundry-acquires-twin-cities-semiconductor-manufacturing-facility-from-cypress-semiconductor-corporation/>.
+"200mm semiconductor wafer manufacturing facility in Bloomington",
+400 jobs, facility "originally established by Control Data Corporation
+in the 1980s", multi-year wafer supply to Cypress. Tier: cross-check.
+
+**SKW-11** — *"US Department of Defense to Invest up to $170M at
+SkyWater for Rad-Hard Technology"*, 2019-10-21.
+<https://www.skywatertechnology.com/us-department-of-defense-to-invest-up-to-170m-at-skywater-for-rad-hard-technology/>.
+"up to 15,000 square feet of new cleanroom area", addition of "copper
+dual-damascene interconnect technology", initial phase $80 M, 90 nm
+rad-hard capability. (Trade-press copies quote 8,000 sq ft; see
+PRESS-08.) Tier: cross-check.
+
+**SKW-12** — *"SkyWater Releases Early Access PDK … for 90 nm Strategic
+Rad-Hard by Process Platform"*, 2020-12-02, and *"SkyWater Successfully
+Launches MPW Shuttle for 90 nm Strategic Rad-Hard by Process
+Platform"*, 2021-07-15.
+<https://www.skywatertechnology.com/skywater-releases-early-access-pdk-and-partners-with-trusted-semiconductor-solutions-to-enable-design-kit-for-90-nm-strategic-rad-hard-by-process-platform/>,
+<https://www.skywatertechnology.com/press-releases/skywater-successfully-launches-mpw-shuttle-for-90-nm-strategic-rad-hard-by-process-platform/>.
+Tier: high-level.
+
+**SKW-13** — *"SkyWater Technology to Strategically Invest $56 Million
+in Capacity Expansion and Gallium Nitride Technology"*, 2021-07-26
+(Business Wire; verified copy at Semiconductor Today).
+<https://www.semiconductor-today.com/news_items/2021/jul/skywater-270721.shtml>.
+Capital for Minnesota capacity; no tool names. Tier: high-level.
+
+**SKW-14** — *"SkyWater Announces Enhanced Capabilities with
+Multibeam's First in Industry High Productivity Multicolumn E-Beam
+Lithography System"*, 2024-07-25.
+<https://www.skywatertechnology.com/multibeam-e-beam-lithography-system/>
+(also Business Wire:
+<https://www.businesswire.com/news/home/20240725367118/en/>).
+Multicolumn e-beam (MEBL) tool received for the Minnesota fab, "the
+only production lithography tool capable of sub 50 nm geometries on
+200 mm wafers", customer access from Q4 2024. Tier: cross-check.
+
+**SKW-15** — *"SkyWater Chosen for Volume U.S. Manufacturing of
+Temperature Sensing Chip …"*, 2020-05-26.
+<https://www.skywatertechnology.com/skywater-chosen-for-volume-u-s-manufacturing-of-temperature-sensing-chip-for-low-cost-wearable-solution-that-detects-early-stage-symptom-of-covid-19/>.
+Describes "SkyWater's 130 nm mixed-signal ASIC process (S130)". Tier:
+high-level.
+
+**SKW-16** — SkyWater Technology, *"SkyWater Technology — Presentation
+to MN Senate Jobs Committee"*, 2023-01-25 (Minnesota Legislative
+Reference Library archive, PDF).
+<https://www.lrl.mn.gov/archive/minutes/senate/2023/jobs/20230125/Jobs_20230125_SkyWater-Presentation-to-MN-Senate-Jobs-Committee-25Jan2023.pdf>.
+Minnesota site: ">600 employees", "200 mm equipment", "91,000 ft²
+Cleanroom (Class 10 + SMIF)", "10,000 30 ML CMOS wafers/month or
+50,000 MOSFET wafers/month", "65 nm+ feature geometries", ">$1B
+capital investment", "DMEA Cat 1A Trusted since 2010"; a company
+timeline from the Cypress era (65 nm qualification, foundry opened to
+non-Cypress customers) to 2022. Tier: cross-check.
+
+### 3.3 SEC filings
+
+Searches of the filings below for equipment-vendor names (Applied
+Materials, Lam Research, Novellus, ASML, Nikon, Canon, KLA, Axcelis,
+Varian, Tokyo Electron, Hitachi, Ebara, SCREEN, Amtech, Kokusai, ASM,
+Mattson, Rudolph/Onto, Ultratech, Cymer, Multibeam) found **no
+equipment supplier named as a supplier**; the only hits are
+biographical (a director on the Axcelis board; the President's earlier
+career at Rudolph Technologies). The filings do describe the fab,
+capacity, process platforms and raw-material suppliers.
+
+**SEC-01** — SkyWater Technology, Inc., Form S-1 (registration
+statement), filed 2021-03-22, and Form S-1/A, filed 2021-04-12.
+<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>,
+<https://www.sec.gov/Archives/edgar/data/1819974/000119312521112378/d26688ds1a.htm>
+(final prospectus 424B4:
+<https://www.sec.gov/Archives/edgar/data/1819974/000119312521126725/d26688d424b4.htm>).
+Key statements: "Our Bloomington, Minnesota-based fab can produce up
+to 156,000 wafers per year (depending on the product mix) and has at
+least 522 well-maintained fab and sort tools"; "Our utilization rate
+for 2019 was approximately 68%"; "Our S90 (90 nm gate), S130 (130 nm
+gate) and CMOS process flows (greater than 130 nm) are the foundation
+of our business"; "the base design IP portfolio for S130 technologies
+originating from Cypress (now Infineon) was licensed via a technology
+license agreement in 2017"; facilities of "approximately 396,000 square
+feet"; raw-material suppliers (GlobalWafers and SEH America wafers,
+Honeywell Electronic Materials sputter targets, Air Products and
+Praxair gases, KMG Chemicals); "Advantages of 200 millimeter Wafer
+Fabs". Note: SEC.gov rejects fetches without a descriptive
+`User-Agent`. Tier: cross-check.
+
+**SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
+2023, filed 2024.
+<https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>.
+"In our Minnesota facility's 200 mm fab, CMOS process flows for a number
+of different node dimensions are offered ranging from 90 nm—350 nm";
+"In 2020, we added deep-trench etching capability"; "the base design IP
+portfolio for S130 and S90 technologies originating from Cypress was
+licensed via a technology license agreement in 2017"; Minnesota
+facilities "approximately 356,000 square feet"; RH90 "uses the
+already-proven 90 nm fully depleted silicon-on insulator ("FDSOI")
+frontend process licensed from MIT-Lincoln Laboratory"; updated
+supplier list (GlobalWafers, SEH America, Honeywell and JX Metals
+targets, Linde and Airgas gases, EMD Performance Materials). Tier:
+cross-check.
+
+**SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
+2025, filed 2026.
+<https://www.sec.gov/Archives/edgar/data/1819974/000181997426000009/skyt-20251228.htm>.
+"our Minnesota fab was owned and operated by Cypress Semiconductor
+Corporation … as a captive manufacturing facility for 26 years"; lists
+as exhibit 10.7 the "Process Technology License Agreement, dated as of
+March 1, 2017, by and between Cypress Semiconductor Corporation and
+Cypress Semiconductor (Minnesota) Inc." and its 2020 amendment; Fab 25
+(Austin) acquisition. Tier: cross-check.
+
+**SEC-04** — Investor-relations SEC filings index.
+<https://ir.skywatertechnology.com/financials/sec-filings/default.aspx>.
+Tier: high-level (navigation).
+
+### 3.4 Government and construction sources about the Minnesota fab
+
+**GOV-01** — NIST CHIPS for America, *"SkyWater Technology
+(Minnesota)"*, preliminary memorandum of terms signed 2024-12-06.
+<https://www.nist.gov/chips/skywater-technology-minnesota-bloomington>.
+"up to $16 million" for "replacing equipment, upgrading the facility's
+cleanroom and space and IT systems" to increase "production capacity
+of 90nm and 130nm wafers by approximately 30%". Tier: cross-check.
+
+**GOV-02** — Business Facilities, *"SkyWater Technology To Invest
+$127M In Minnesota Facility"*, 2024-12-18.
+<https://businessfacilities.com/skywater-technology-invests-127m-in-minnesota-facility/>.
+$19 M Minnesota Forward Fund, $127 M total project, ~70 jobs. Tier:
+high-level.
+
+**GOV-03** — Hunt Electric, *"Skywater Technology Foundry"* project
+page. <https://www.huntelec.com/portfolio/skywater/>. "64,500 s.f.
+addition … 8,400 s.f. of Class 10 fabrication area and additional
+4,500 s.f. of future Class 10 area". Tier: cross-check (cleanroom
+size).
+
+**GOV-04** — Alliiance (architects), *"SkyWater Technology"* project
+page, 2023-01-23.
+<https://alliiance.com/design/science-and-technology/skywater-technology/>.
+"64,000 SF building addition … approximately 13,000 SF of Class 10
+semiconductor cleanroom fabrication (FAB) space; 4,800 SF of future
+FAB cleanroom; and a 15,300 SF sub-fabrication space". Tier:
+cross-check (cleanroom size).
+
+**GOV-05** — McGough (contractor), *"SkyWater Technology Foundry"*
+project page, 2023-07-20.
+<https://www.mcgough.com/portfolio/skywater-technology-foundry/>.
+"adding more than 64,000 SF". Tier: high-level.
+
+## 4. SkyWater job postings naming tools
+
+Job-board pages are heavily bot-protected; only the postings below
+could actually be retrieved. Posting text changes frequently, so each
+entry records the retrieval date.
+
+**JOB-01** — Indeed, *"Skywater Technology Foundry Jobs, Employment in
+Bloomington, MN"* (listing page), retrieved 2026-08-30.
+<https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>.
+The *Defect Technician 2* posting reads "General operation of
+semiconductor defect metrology tools: SEM/AIT/KLA/SP1/EV300/1X" —
+i.e. KLA-Tencor AIT (patterned-wafer inspection), SP1 (unpatterned
+Surfscan) and a Zeiss/Leica EV300-class optical review station. Other
+titles on the page (Equipment Maintenance Technician – Metrology,
+Senior Metals Process Technician, Development Engineering Senior
+Technician) name no tools. Tier: cross-check (medium strength).
+
+**JOB-02** — Indeed, Minnesota-wide and Bloomington listing pages,
+retrieved 2026-08-30.
+<https://www.indeed.com/q-skywater-technology-foundry-l-minnesota-jobs.html>,
+<https://www.indeed.com/q-skywater-technologies-l-bloomington,-mn-jobs.html>.
+Same job families; no additional tool names. Tier: high-level.
+
+**JOB-03** — Career.com, *"Plasma Etch Process Development Engineer"*,
+SkyWater Technology Foundry, Bloomington MN, posted 2024-08-09 (closed
+2024-10-30).
+<https://www.career.com/company/skywater-technology-foundry-inc/job/plasma-etch-process-development-engineer/-in-bloomington,mn?jid=83e5f3b7-6fb2-41df-9003-31e8e118e0a8>.
+Describes the role ("bringing cutting-edge eight-inch Silicon designs
+to life") but names no tools. Tier: high-level.
+
+**JOB-04** — LinkedIn, *"Equipment Maintenance Technician"*, SkyWater
+Technology, Austin TX (Fab 25, not Bloomington), retrieved 2026-08-30.
+<https://www.linkedin.com/jobs/view/equipment-maintenance-technician-at-skywater-technology-4434999110>.
+Names Daifuku AMHS, Kensington and Brooks wafer sorters — recorded
+here only to show that SkyWater postings do name vendors; not evidence
+for the Minnesota fab. Tier: high-level.
+
+**JOB-05** — SkyWater applicant portal (Dayforce).
+<https://jobs.dayforcehcm.com/en-US/skywater/CANDIDATEPORTAL/>. Live
+listings; the portal renders client-side and individual postings could
+not be captured. Tier: high-level.
+
+### Unverified leads (job boards)
+
+Search-engine snippets of SkyWater Technology Foundry postings on
+ZipRecruiter, Indeed and Glassdoor (2023–2026) repeatedly quote
+equipment lists such as: "LAM Alliance, LAM 2300 Exelan, TEL Unity
+M/ME, AMAT Centura DPS Metal/Poly/SuperE, LAM DaVinci wet etch sinks";
+"AMAT Endura/Centura PVD and HTF systems, Producer, SVG/Thermco
+horizontal diffusion furnaces/SEMY, Aviza Vertical Furnace, Novellus
+Concept One, and FSI Mercury"; "AMAT Centura 5200/5500, Producer, Mirra
+Mesa"; "AMAT Mirra and Mirra Mesa"; "Axcelis GSD300E Ion Implanter and
+Axcelis Purion Ion Implanters". The pages that carry them
+(<https://www.ziprecruiter.com/co/Skywater-Technology-Foundry/Jobs/-in-Bloomington,MN>
+and Glassdoor's SkyWater listings) returned HTTP 403 or a geographic
+redirect to every automated fetch attempted on 2026-08-30, so the
+quotations could not be confirmed against the page. They are
+consistent with SKW-01 (Lam, AMAT, Novellus, Aviza, FSI, Axcelis GSD,
+Mirra all appear there) but should be treated as **weak** evidence
+until a copy of the posting is captured.
