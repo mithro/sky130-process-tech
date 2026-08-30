@@ -29,7 +29,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 ## Phase 2 — Step pages (grouped by process module)
 
 - [x] Steps 001–013: starting material, STI, deep N-well — 2026-08-30, reviewed and merged
-- [~] Steps 014–034: wells and Vt implants (branch `steps/014-034`)
+- [r] Steps 014–034: wells and Vt implants (branch `steps/014-034`, written, under review)
 - [~] Steps 035–047: SONOS tunnel/ONO, gate oxides (branch `steps/035-047`)
 - [ ] Steps 048–063: poly gate, resistor implants, gate etch
 - [ ] Steps 064–088: tips, halos, spacers, source/drain
