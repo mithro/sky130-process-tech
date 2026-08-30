@@ -23,8 +23,9 @@ polish stop for the oxide CMP ({ref}`CMPNIT <step-012>`). It is removed
 at {ref}`NS19 <step-013>`.
 
 Precisely: a stoichiometric LPCVD nitride of the order of 100–200 nm
-is deposited in a furnace from dichlorosilane and ammonia. A TSMC STI
-patent gives the mask nitride as "500-2000 Å" (PAT-STI-TSMC); Wikipedia's
+is deposited in a furnace from dichlorosilane and ammonia. An AmberWave
+Systems STI patent gives the mask nitride as "500-2000 Å"
+(PAT-STI-AMBERWAVE); Wikipedia's
 STI outline calls it the "protective nitride" (WIKI-STI). No public
 SkyWater source gives the SKY130 value. The thickness is a compromise:
 thick enough to survive the trench etch and the CMP with margin, thin
@@ -55,10 +56,11 @@ simultaneously:
   Si₃N₄ mask");
 * a **CMP stop** — the oxide fill polishes much faster than nitride in
   a suitable slurry, so the polish at {ref}`CMPNIT <step-012>` can be
-  stopped on it across the whole wafer (a TSMC STI patent describes
-  "planarizing the substrate, typically via chemical-mechanical
-  polishing (CMP), using the silicon nitride layer over the active area
-  as a stop layer", PAT-STI-TSMC);
+  stopped on it across the whole wafer (an AmberWave Systems STI
+  patent, now TSMC-owned, describes "planarizing the substrate,
+  typically via chemical-mechanical polishing (CMP), using the silicon
+  nitride layer over the active area as a stop layer",
+  PAT-STI-AMBERWAVE);
 * a **plasma-etch mask** for the silicon trench etch, with good
   selectivity against HBr/Cl₂ chemistry (TXT-05);
 * **selectively removable** afterwards in hot phosphoric acid, which
@@ -155,9 +157,10 @@ which is a different (later-generation) precursor.
   *Oxide-nitride-oxide stack having multiple oxynitride layers*,
   published 2009-07-16 (LPCVD 700–850 °C, 5–500 mTorr).
   <https://patents.google.com/patent/US20090179253A1/en>
-* **PAT-STI-TSMC** — M. T. Currie and A. J. Lochtefeld (TSMC),
-  US 6,960,781 B2, *Shallow trench isolation process*, granted
-  2005-11-01 (nitride mask 500–2000 Å).
+* **PAT-STI-AMBERWAVE** — M. T. Currie and A. J. Lochtefeld (AmberWave
+  Systems Corporation; assigned to Taiwan Semiconductor Manufacturing
+  Co. on 2010-01-26), US 6,960,781 B2, *Shallow trench isolation
+  process*, granted 2005-11-01 (nitride mask 500–2000 Å).
   <https://patents.google.com/patent/US6960781B2/en>
 * **VGH-1967** — W. van Gelder and V. E. Hauser, *J. Electrochem. Soc.*
   114 (1967) 869, DOI 10.1149/1.2426757.
@@ -185,7 +188,7 @@ which is a different (later-generation) precursor.
 
 ### Deep dive
 
-* **THUNG-2016** — T. B. Joo, K. Ibrahim, N. A. Manap and
+* **THUNG-2016** — B. J. Thung, K. Ibrahim, N. A. Manap and
   F. Salehuddin, "Challenges for 0.13µm Generation Shallow Trench
   Isolation on 0.18µm Equipment Platform", *Journal of
   Telecommunication, Electronic and Computer Engineering* 8(5), 2016,

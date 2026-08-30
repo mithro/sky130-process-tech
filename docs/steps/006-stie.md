@@ -34,8 +34,9 @@ scale (PDK-04), and the assumptions page gives the field-oxide step
 above the silicon surface under poly as 0.07 µm (PDK-03). If the
 drawing's zero is the trench floor — which is our reading of the
 diagram, not a documented fact — the trench would be about 0.26 µm
-deep. That is in line with era practice: a TSMC STI patent gives
-"a depth d1 within a range of, for example, 3000-4000 Å" (PAT-STI-TSMC),
+deep. That is in line with era practice: an AmberWave Systems STI
+patent (now TSMC-owned) gives "a depth d1 within a range of, for
+example, 3000-4000 Å" (PAT-STI-AMBERWAVE),
 and the 2001 ITRS notes that STI aspect ratios rise node on node as
 spacing shrinks (ITRS-01). With a minimum trench width of 0.27 µm
 (PDK-PERIPH, difftap.3) and a nitride of ~150 nm, the fill aspect ratio
@@ -183,9 +184,10 @@ configuration of this decoupled-plasma-source platform from late
 * **PDK-PERIPH** — SkyWater PDK Authors, *Periphery rules* (difftap.3
   = 0.270 µm).
   <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
-* **PAT-STI-TSMC** — M. T. Currie and A. J. Lochtefeld (TSMC),
-  US 6,960,781 B2, *Shallow trench isolation process*, granted
-  2005-11-01 (trench depth 3000–4000 Å).
+* **PAT-STI-AMBERWAVE** — M. T. Currie and A. J. Lochtefeld (AmberWave
+  Systems Corporation; assigned to Taiwan Semiconductor Manufacturing
+  Co. on 2010-01-26), US 6,960,781 B2, *Shallow trench isolation
+  process*, granted 2005-11-01 (trench depth 3000–4000 Å).
   <https://patents.google.com/patent/US6960781B2/en>
 * **SNF-9400** — Stanford Nanofabrication Facility, *Lam Research TCP
   9400 Poly Etcher* page.
@@ -216,7 +218,7 @@ configuration of this decoupled-plasma-source platform from late
 * **ITRS-01** — ITRS 2001, *Front End Processes* (etch section on STI
   corner rounding; thermal/thin-film section on trench fill).
   <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
-* **THUNG-2016** — T. B. Joo et al., "Challenges for 0.13µm Generation
+* **THUNG-2016** — B. J. Thung et al., "Challenges for 0.13µm Generation
   Shallow Trench Isolation on 0.18µm Equipment Platform", *JTEC* 8(5),
   2016, pp. 15–21.
   <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>

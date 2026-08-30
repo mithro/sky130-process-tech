@@ -164,8 +164,10 @@ polisher, which is what this step needs.
 * **PDK-06** — SkyWater PDK Authors, *Layers Reference*
   ("fom_waffles").
   <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>
-* **PAT-STI-TSMC** — M. T. Currie and A. J. Lochtefeld (TSMC),
-  US 6,960,781 B2, granted 2005-11-01 ("chemical-mechanical polishing
+* **PAT-STI-AMBERWAVE** — M. T. Currie and A. J. Lochtefeld (AmberWave
+  Systems Corporation; assigned to Taiwan Semiconductor Manufacturing
+  Co. on 2010-01-26), US 6,960,781 B2, granted 2005-11-01
+  ("chemical-mechanical polishing
   (CMP), using the silicon nitride layer over the active area as a
   stop layer").
   <https://patents.google.com/patent/US6960781B2/en>
@@ -197,7 +199,7 @@ polisher, which is what this step needs.
 * **REV-01** — M. Nandakumar et al., "Shallow trench isolation for
   advanced ULSI CMOS technologies", *IEDM 1998*, pp. 133–136,
   DOI 10.1109/IEDM.1998.746297 (STI planarisation).
-* **THUNG-2016** — T. B. Joo et al., "Challenges for 0.13µm Generation
+* **THUNG-2016** — B. J. Thung et al., "Challenges for 0.13µm Generation
   Shallow Trench Isolation on 0.18µm Equipment Platform", *JTEC* 8(5),
   2016, pp. 15–21.
   <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>
