@@ -108,7 +108,7 @@ contains every mandatory heading and that every link resolves.
   technical accuracy and for conflicts with already-merged pages before
   merge.
 * At most two sub-agents run concurrently.
-* A leak-review sub-agent runs after every batch of merges.
+* A provenance-review sub-agent runs after every batch of merges.
 * Small, logical commits; the task log is updated one item at a time.
 
 ## Decisions made without user input
