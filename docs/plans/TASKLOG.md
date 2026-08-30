@@ -20,7 +20,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 
 ## Phase 1 — Research inventory
 
-- [ ] Inventory of public SkyWater / SKY130 sources (PDK docs, talks,
+- [~] Inventory of public SkyWater / SKY130 sources (PDK docs, talks,
       SEC filings, press, job postings, patents, papers)
 - [ ] Inventory of private starting-point material (private repo only)
 - [ ] Category pages (oxidation, deposition, litho, etch, implant,
