@@ -21,7 +21,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 
 - [~] Inventory of public SkyWater / SKY130 sources (PDK docs, talks,
       SEC filings, press, job postings, patents, papers)
-- [ ] Category pages (oxidation, deposition, litho, etch, implant,
+- [~] Category pages (oxidation, deposition, litho, etch, implant,
       anneal, CMP, clean/strip, metallisation, test)
 
 ## Phase 2 — Step pages (grouped by process module)
