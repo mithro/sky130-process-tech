@@ -1,0 +1,17 @@
+[project]
+name = "sky130-process-tech"
+version = "0.1.0"
+description = "Step-by-step reference on how the SKY130 130 nm process technology is manufactured"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+dependencies = [
+    "sphinx>=7.3",
+    "myst-parser>=3.0",
+    "furo>=2024.8",
+    "sphinx-copybutton>=0.5",
+    "sphinx-design>=0.6",
+]
+
+[tool.uv]
+package = false
