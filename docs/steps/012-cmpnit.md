@@ -77,8 +77,9 @@ An industry-generic STI polish for a 200 mm, 130 nm-era fab:
      solution — the classic oxide slurry, with oxide : nitride
      selectivity of only about 3–4 : 1, which needs endpoint control or
      a reverse-mask scheme to avoid over-polishing the nitride.
-   * *Ceria (CeO₂)* with surfactant additives — Wikipedia notes that
-     "Typically, CMP uses cerium dioxide as the abrasive" (WIKI-CMP) —
+   * *Ceria (CeO₂)* with surfactant additives — Wikipedia's general
+     description of CMP names cerium dioxide as a typical abrasive
+     (WIKI-CMP) —
      giving oxide : nitride selectivity of tens to one and a
      self-stopping polish, the "direct STI" approach that removed the
      reverse mask.
@@ -99,7 +100,7 @@ An industry-generic STI polish for a 200 mm, 130 nm-era fab:
    erosion by profilometry or AFM on test structures; defect scan.
 
 SkyWater's capability page lists "AMAT Mirra CMP – oxide – nitride –
-niobium – aluminum – tungsten" (SKW-01) — an oxide/nitride-capable
+niobium – aluminum – tungsten …" (SKW-01) — an oxide/nitride-capable
 polisher, which is what this step needs.
 
 ## Machines typically used
@@ -153,7 +154,7 @@ polisher, which is what this step needs.
 
 * **SKW-01** — SkyWater Technology, *Facilities & Capabilities*,
   accessed 2026-08-30 ("AMAT Mirra CMP – oxide – nitride – niobium –
-  aluminum – tungsten"; SEZ223 / DaVinci).
+  aluminum – tungsten …"; SEZ223 / DaVinci).
   <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 * **SKW-07** — SkyWater Technology, *A Day in the Life of a SkyWater
   Maintenance Technician*, 2023-12-14.

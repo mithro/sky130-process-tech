@@ -58,11 +58,17 @@ cannot:
    included "to control the STI corner rounding to reduce the junction
    leakage and fix the damaged induced during STI plasma dry etch"
    (THUNG-2016).
-2. **Rounds the corners.** Oxidation proceeds faster at convex corners
-   and is retarded by stress at concave ones, so the sharp top corner
-   of the trench is rounded — reducing the field crowding that causes
-   the sub-threshold "double hump" and gate-oxide thinning at the
-   active edge (ITRS-01, REV-01). The Spansion patent's whole subject
+2. **Rounds the corners.** A sharp convex corner is consumed from two
+   sides at once, and above about 1000 °C the oxide flows viscously
+   enough to relieve the stress that non-planar growth builds up, so
+   the sharp top corner of the trench is rounded — reducing the field
+   crowding that causes the sub-threshold "double hump" and gate-oxide
+   thinning at the active edge (ITRS-01, REV-01, TXT-01). Oxidation on
+   curved surfaces is in fact *retarded* relative to planar silicon:
+   Kao et al. found the retardation strongest "at low temperatures and
+   sharp curvatures" and "more severe on concave than convex
+   structures" (KAO-1987, KAO-1988), which is one reason a hot liner
+   oxidation rounds better. The Spansion patent's whole subject
    is using "double liner oxidation" plus "double sacrificial
    oxidation" so that "corners of the trenches are substantially
    rounded by the four oxidation processes" (PAT-STI-CR).
@@ -99,10 +105,9 @@ An industry-generic liner oxidation for a 200 mm, 130 nm-era fab:
 3. **Optional nitridation.** Some flows anneal the liner in NH₃ or NO
    to form a thin oxynitride, or deposit a thin nitride liner, to
    block oxidant diffusion during later oxidations and to stop the
-   HDP oxide's hydrogen reaching the interface (NISHIMURA-2002 reports
-   that hydrogen from the SiH₄ plasma is incorporated into HDP-CVD
-   oxide and drifts into underlying thermal oxide, degrading gate-oxide
-   reliability).
+   HDP oxide's hydrogen reaching the interface (silane-based HDP oxide
+   retains some hydrogen, and keeping it away from the Si/SiO₂
+   interface is one motive; TXT-05).
 4. **Metrology.** Liner thickness on a bare monitor wafer by
    ellipsometry; corner shape by cross-section SEM on sample lots.
 
@@ -197,10 +202,14 @@ width because of the encroachment under the nitride edge.
   Shallow Trench Isolation on 0.18µm Equipment Platform", *JTEC* 8(5),
   2016, pp. 15–21.
   <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>
-* **NISHIMURA-2002** — H. Nishimura, S. Takagi, M. Fujino and N. Nishi,
-  "Gap-Fill Process of Shallow Trench Isolation for 0.13 µm
-  Technologies", *Japanese Journal of Applied Physics* 41 (2002)
-  2886–2893, DOI 10.1143/JJAP.41.2886.
+* **KAO-1987** — D.-B. Kao, J. P. McVittie, W. D. Nix and
+  K. C. Saraswat, "Two-dimensional thermal oxidation of silicon — I.
+  Experiments", *IEEE Trans. Electron Devices* 34(5), 1987,
+  pp. 1008–1017, DOI 10.1109/T-ED.1987.23037.
+* **KAO-1988** — D.-B. Kao, J. P. McVittie, W. D. Nix and
+  K. C. Saraswat, "Two-dimensional thermal oxidation of silicon. II.
+  Modeling stress effects in wet oxides", *IEEE Trans. Electron
+  Devices* 35(1), 1988, pp. 25–37, DOI 10.1109/16.2412.
 
 ## Open questions
 

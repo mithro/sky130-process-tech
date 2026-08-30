@@ -14,7 +14,7 @@
 
 `STINITE` (shallow-trench-isolation nitride etch) is a plasma etch that
 transfers the resist pattern from {ref}`FOM <step-004>` into the hard
-mask: it removes the BARC, the isolation nitride
+mask: it removes the BARC (if one is used), the isolation nitride
 ({ref}`ISONIT <step-003>`) and the pad oxide ({ref}`BOX <step-002>`)
 wherever the resist is open, stopping on silicon. When it is finished
 the future field regions are bare silicon and the future active
