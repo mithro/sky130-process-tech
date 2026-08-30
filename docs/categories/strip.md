@@ -30,8 +30,8 @@ In the SKY130 flow there are fourteen implant-mask strips (one after
 every implant lithography, from {ref}`DNIS <step-009>` to
 {ref}`NSDIS <step-087>`) plus the STI nitride strip
 {ref}`NS19 <step-013>`. The strips that follow *etch* masks are not
-listed as separate steps in the public step list and are assumed to be
-part of the corresponding etch step group.
+listed as separate steps in the step list used in this reference and
+are assumed to be part of the corresponding etch step group.
 
 ## Physics and engineering background
 

@@ -184,7 +184,7 @@ rounding or nitride re-oxidation is wanted
 * **Rapid thermal processors** for RTO and ISSG: AG Associates
   Heatpulse 8108 (first shipped in 1992 and "targeted for volume
   production processes that utilize wafer sizes from 125 to 200
-  millimeters" [ag-8108]), Applied Materials Centura RTP
+  millimeters" [ag-10k]), Applied Materials Centura RTP
   (Radiance/Vantage chambers [amat-rtp]), Mattson (which absorbed the
   Steag and AG Associates RTP lines).
 * **Metrology**: spectroscopic ellipsometers (KLA-Tencor, Rudolph,
@@ -238,6 +238,10 @@ rounding or nitride re-oxidation is wanted
   <https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>
 * Plasma-Therm, "Product Spotlight: AG Heatpulse 8800 / 8108 RTP".
   <https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp>
+* AG Associates, Inc., Form 10-K for the fiscal year ended 1996-09-30,
+  filed 1996-12-23 (Heatpulse 8108 first shipped October 1992;
+  125–200 mm).
+  <https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt>
 
 ### High-level
 
@@ -299,5 +303,6 @@ rounding or nitride re-oxidation is wanted
 [asm-a400]: https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469
 [asm-vf]: https://www.asm.com/our-technology-products/vertical-furnace
 [ag-8108]: https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp
+[ag-10k]: https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt
 [amat-rtp]: https://www.edn.com/applied-dedicates-rtp-with-vantage/
 [nishi]: https://doi.org/10.1201/9781420017663

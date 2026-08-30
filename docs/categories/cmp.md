@@ -102,7 +102,7 @@ nitride in dense active areas). Both are reduced by high-selectivity
 slurries, a short over-polish, and design rules on feature width and
 density — which is why PDKs require metal fill and limit wide plates
 ([Zantye, Kumar and Sikder 2004][zantye]; [Krishnan, Nalaskowski and
-Cook 2009][krishnan]).
+Cook 2010][krishnan]).
 
 ### Endpoint and process control
 
@@ -125,7 +125,7 @@ surface; they must be removed before they dry. A post-CMP cleaner uses
 rotating polyvinyl-alcohol (PVA) brushes with dilute NH₄OH (for oxide)
 or dilute HF or citric acid (for tungsten), megasonic rinsing and a spin
 dry, integrated into the polisher so that the wafer never dries between
-polish and clean ([Chip History Center: Mirra][chiphistory]).
+polish and clean.
 
 ### STI, tungsten and oxide polishes compared
 
@@ -140,8 +140,8 @@ polish and clean ([Chip History Center: Mirra][chiphistory]).
 * **Polishers**: Applied Materials Mirra ("the Company announced its
   entry into the CMP market with the Mirra CMP in December 1995. The
   Mirra CMP system features a unique three-station, four polishing
-  head design" [amat-1997]) and Mirra Mesa with integrated cleaner
-  ([Chip History Center: Mirra][chiphistory]); Ebara F-REX 200 (the current
+  head design" [amat-1997]) and Mirra Mesa with integrated cleaner;
+  Ebara F-REX 200 (the current
   F-REX200M2 "polishes 200 mm wafers with high k-materials and
   aluminium layers" [ebara]); IPEC/Westech 372 and 472 and the
   SpeedFam-IPEC Auriga; Strasbaugh 6DS-SP; Lam Teres.
@@ -158,12 +158,12 @@ polish and clean ([Chip History Center: Mirra][chiphistory]).
   for oxide; colloidal silica (Klebosol class); ceria-based slurries
   for STI with nitride selectivity; alumina or silica plus oxidiser
   (H₂O₂, Fe(NO₃)₃) for tungsten. Slurry is consumed at a few hundred
-  millilitres per wafer per platen ([Wikipedia: Colloidal
-  silica][wiki-silica]; [Wikipedia: Cerium(IV) oxide][wiki-ceria]).
+  millilitres per wafer per platen, a typical industry figure
+  ([Zantye, Kumar and Sikder 2004][zantye]).
 * **Pads**: stacked polyurethane pads (Rodel IC1000 over Suba IV
   class) for primary polish; soft Politex-type pads for buffing;
-  replaced every few hundred to a thousand wafers ([Wikipedia:
-  Polyurethane][wiki-pu]).
+  replaced after a few hundred to a thousand wafers, a typical
+  industry figure (Steigerwald, Murarka and Gutmann [steigerwald]).
 * **Conditioners**: diamond-grit discs; **carrier films** and retaining
   rings; **brushes** (PVA) for the cleaner.
 * **Chemicals**: KOH, NH₄OH, dilute HF, citric acid, hydrogen peroxide

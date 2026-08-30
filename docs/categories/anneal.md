@@ -117,9 +117,9 @@ the selective etch:
   CoSi, the unreacted cobalt (over a Ti or TiN cap) is stripped, and a
   second anneal at roughly 700–800 °C forms CoSi₂, the only cobalt
   silicide with "a sufficiently low resistance to form an effective
-  electrical contact" ([Wikipedia: Salicide][wiki-salicide]; [Wikipedia:
-  Cobalt silicide][wiki-cosi2]). CoSi₂ consumes about 3.6 nm of silicon
-  per nanometre of cobalt, so the junction under it must be deep
+  electrical contact" ([Wikipedia: Salicide][wiki-salicide]). CoSi₂
+  consumes about 3.6 nm of silicon per nanometre of cobalt
+  ([Maex 1993][maex]), so the junction under it must be deep
   enough; ITRS 2001 assumes a silicide thickness of half the contact
   junction depth ([ITRS 2001, Front End Processes][itrs2001-fep]).
 
@@ -150,7 +150,7 @@ below that).
 * **Rapid thermal processors**: AG Associates Heatpulse 8108 ("first
   shipped in October 1992" as the "flagship product targeted for
   volume production processes that utilize wafer sizes from 125 to 200
-  millimeters" [ag-8108]), later sold by Steag and Mattson; Applied
+  millimeters" [ag-10k]), later sold by Steag and Mattson; Applied
   Materials RTP XE Centura (1997 [amat-1997]) and its Radiance and
   Vantage successors (which measure "the temperature 100 times per
   second at seven different places on the wafer" [amat-rtp]); Mattson
@@ -210,6 +210,10 @@ below that).
   <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
 * Plasma-Therm, "Product Spotlight: AG Heatpulse 8800 / 8108 RTP".
   <https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp>
+* AG Associates, Inc., Form 10-K for the fiscal year ended 1996-09-30,
+  filed 1996-12-23 (Heatpulse 8108 first shipped October 1992;
+  125–200 mm).
+  <https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt>
 * Applied Materials, 1997 Annual Report (RTP XE Centura).
   <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
 * EDN, "Applied dedicates RTP with Vantage".
@@ -230,8 +234,6 @@ below that).
 * Wikipedia, "Arrhenius equation".
   <https://en.wikipedia.org/wiki/Arrhenius_equation>
 * Wikipedia, "Salicide". <https://en.wikipedia.org/wiki/Salicide>
-* Wikipedia, "Cobalt silicide".
-  <https://en.wikipedia.org/wiki/Cobalt_silicide>
 * Wikipedia, "Titanium disilicide".
   <https://en.wikipedia.org/wiki/Titanium_disilicide>
 * Wikipedia, "Forming gas". <https://en.wikipedia.org/wiki/Forming_gas>
@@ -268,7 +270,6 @@ below that).
 [wiki-rtp]: https://en.wikipedia.org/wiki/Rapid_thermal_processing
 [wiki-furnace]: https://en.wikipedia.org/wiki/Diffusion_furnace
 [wiki-salicide]: https://en.wikipedia.org/wiki/Salicide
-[wiki-cosi2]: https://en.wikipedia.org/wiki/Cobalt_silicide
 [wiki-fg]: https://en.wikipedia.org/wiki/Forming_gas
 [gibbons2]: https://doi.org/10.1109/PROC.1972.8854
 [stolk]: https://doi.org/10.1063/1.364452
@@ -278,6 +279,7 @@ below that).
 [deal1980]: https://doi.org/10.1149/1.2129800
 [itrs2001-fep]: https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf
 [ag-8108]: https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp
+[ag-10k]: https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt
 [amat-1997]: https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf
 [amat-rtp]: https://www.edn.com/applied-dedicates-rtp-with-vantage/
 [asm-vf]: https://www.asm.com/our-technology-products/vertical-furnace
