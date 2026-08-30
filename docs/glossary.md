@@ -387,6 +387,11 @@ TEOS
     deposit conformal silicon dioxide by {term}`LPCVD` (around 700 °C)
     or {term}`PECVD` (around 400 °C).
 
+van der Pauw structure
+    A symmetric four-contact test structure (Greek cross or cloverleaf)
+    from which the sheet resistance of a film is obtained by van der
+    Pauw's theorem, independent of the structure's size.
+
 Vt
     Threshold voltage: the gate voltage at which a MOSFET turns on; set
     by channel doping, oxide thickness and gate work function.
