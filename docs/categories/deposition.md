@@ -190,8 +190,9 @@ or 2 µm depending on the flow option, an oxide spacer of 0.05 µm and a
 pre-LI ILD of 0.5 µm ([SKY130 PDK, Criteria & Assumptions][pdk-assume]).
 These are the antenna-rule assumptions; the PDK's process stack diagram
 labels the same conductors 0.36, 0.845 and 1.26 µm ([SKY130 PDK,
-process stack diagram][pdk-stack]). These are the deposited (and, for the dielectrics, post-CMP) targets
-that the deposition steps below must hit.
+process stack diagram][pdk-stack]). These are the deposited (and, for
+the dielectrics, post-CMP) targets that the deposition steps below must
+hit.
 
 ## Typical equipment
 
