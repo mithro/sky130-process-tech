@@ -22,8 +22,9 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Inventory of public SkyWater / SKY130 sources (PDK docs, talks,
       SEC filings, press, job postings, patents, papers) — 2026-08-30,
       reviewed and merged (`docs/references/public-sources.md`)
-- [r] Category pages (oxidation, deposition, litho, etch, implant,
-      anneal, CMP, clean/strip, metallisation, test)
+- [x] Category pages (oxidation, deposition, litho, etch, implant,
+      anneal, CMP, clean/strip, metallisation, test) — 2026-08-30,
+      reviewed and merged; glossary seeded with 84 terms
 
 ## Phase 2 — Step pages (grouped by process module)
 
