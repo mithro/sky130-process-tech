@@ -164,7 +164,7 @@ Which of the three carries the isolation nitride etch is not public.
 
 ### Deep dive
 
-* **THUNG-2016** — T. B. Joo et al., "Challenges for 0.13µm Generation
+* **THUNG-2016** — B. J. Thung et al., "Challenges for 0.13µm Generation
   Shallow Trench Isolation on 0.18µm Equipment Platform", *JTEC* 8(5),
   2016, pp. 15–21 (fill aspect ratio defined by trench depth plus
   nitride thickness).

@@ -208,7 +208,7 @@ profile refers to "the Novellus high density plasma tool" (SKW-07).
   "Gap-Fill Process of Shallow Trench Isolation for 0.13 µm
   Technologies", *Jpn. J. Appl. Phys.* 41 (2002) 2886–2893,
   DOI 10.1143/JJAP.41.2886.
-* **THUNG-2016** — T. B. Joo et al., "Challenges for 0.13µm Generation
+* **THUNG-2016** — B. J. Thung et al., "Challenges for 0.13µm Generation
   Shallow Trench Isolation on 0.18µm Equipment Platform", *JTEC* 8(5),
   2016, pp. 15–21.
   <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>

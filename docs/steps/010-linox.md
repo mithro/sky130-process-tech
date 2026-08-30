@@ -27,10 +27,11 @@ at "900-1100 degrees Celsius" and, in its double-liner variant, a
 second of "approximately 100-500 Å" (PAT-STI-CR); a Lattice patent uses
 "a high temperature (for example, in excess of approximately 1000
 degrees C.) oxide growth process" to reach "a thickness in the range
-of approximately 10 nm to approximately 30 nm" (PAT-STI-LATTICE); a
-TSMC patent notes the alternative that "the liner oxidation may take
-place in a wet, i.e., steam ambient and/or at a low temperature, i.e.,
-<1000° C." (PAT-STI-TSMC). No SkyWater source gives the SKY130 liner
+of approximately 10 nm to approximately 30 nm" (PAT-STI-LATTICE); an
+AmberWave Systems patent (now TSMC-owned) notes the alternative that
+"the liner oxidation may take place in a wet, i.e., steam ambient
+and/or at a low temperature, i.e., <1000° C." (PAT-STI-AMBERWAVE). No
+SkyWater source gives the SKY130 liner
 thickness or temperature.
 
 ## Step category
@@ -89,7 +90,7 @@ An industry-generic liner oxidation for a 200 mm, 130 nm-era fab:
    corner and round the top of the trench.
 2. **Furnace oxidation.** Vertical furnace, dry O₂ at 900–1100 °C
    (PAT-STI-CR, PAT-STI-LATTICE), or a dilute-steam or in-situ-steam
-   ambient at somewhat lower temperature (PAT-STI-TSMC). Thermal
+   ambient at somewhat lower temperature (PAT-STI-AMBERWAVE). Thermal
    oxidation in general runs between 800 and 1200 °C (WIKI-THOX);
    SkyWater's furnaces offer "dry oxidation to 1150C" and "wet
    oxidation to 1150C" (SKW-01). A dry, high-temperature recipe gives
@@ -163,9 +164,10 @@ width because of the encroachment under the nitride edge.
   US 7,985,656 B1, *Shallow trench isolation (STI) with trench liner
   of increased thickness*, granted 2011-07-26.
   <https://patents.google.com/patent/US7985656B1/en>
-* **PAT-STI-TSMC** — M. T. Currie and A. J. Lochtefeld (TSMC),
-  US 6,960,781 B2, *Shallow trench isolation process*, granted
-  2005-11-01.
+* **PAT-STI-AMBERWAVE** — M. T. Currie and A. J. Lochtefeld (AmberWave
+  Systems Corporation; assigned to Taiwan Semiconductor Manufacturing
+  Co. on 2010-01-26), US 6,960,781 B2, *Shallow trench isolation
+  process*, granted 2005-11-01.
   <https://patents.google.com/patent/US6960781B2/en>
 
 ### High-level understanding
@@ -191,7 +193,7 @@ width because of the encroachment under the nitride edge.
 * **ITRS-01** — ITRS 2001, *Front End Processes* (STI corner rounding
   by thermal versus etch processes).
   <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
-* **THUNG-2016** — T. B. Joo et al., "Challenges for 0.13µm Generation
+* **THUNG-2016** — B. J. Thung et al., "Challenges for 0.13µm Generation
   Shallow Trench Isolation on 0.18µm Equipment Platform", *JTEC* 8(5),
   2016, pp. 15–21.
   <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>

@@ -171,7 +171,7 @@ fab:
 * **REV-01** — M. Nandakumar et al., "Shallow trench isolation for
   advanced ULSI CMOS technologies", *IEDM 1998*, pp. 133–136,
   DOI 10.1109/IEDM.1998.746297 (STI flow and defectivity).
-* **THUNG-2016** — T. B. Joo et al., "Challenges for 0.13µm Generation
+* **THUNG-2016** — B. J. Thung et al., "Challenges for 0.13µm Generation
   Shallow Trench Isolation on 0.18µm Equipment Platform", *JTEC* 8(5),
   2016, pp. 15–21 (post-trench-etch wet clean).
   <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>
