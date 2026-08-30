@@ -24,7 +24,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
       SEC filings, press, job postings, patents, papers) — 2026-08-30,
       reviewed and merged (`docs/references/public-sources.md`)
 - [x] Inventory of starting-point material (kept outside this repo) — 2026-08-30
-- [~] Category pages (oxidation, deposition, litho, etch, implant,
+- [r] Category pages (oxidation, deposition, litho, etch, implant,
       anneal, CMP, clean/strip, metallisation, test)
 
 ## Phase 2 — Step pages (grouped by process module)
