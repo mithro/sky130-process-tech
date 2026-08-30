@@ -9,7 +9,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 
 ## Phase 0 — Setup
 
-- [x] Read the source step list (171 steps) — 2026-08-30
+- [x] Compile the 171-step list — 2026-08-30
 - [x] Write design document — 2026-08-30
 - [x] Repository scaffolding (licence, .gitignore, README) — 2026-08-30
 - [x] Sphinx + MyST + Read the Docs configuration, builds clean — 2026-08-30
@@ -58,6 +58,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 
 | Date | Scope | Result |
 |------|-------|--------|
+| 2026-08-30 | `main` @ dd8ef12, all files + full history | 0 high, 9 medium (wording in `docs/plans/`, "step list" phrasing), 6 low — all fixed on `main` |
 
 ## Notes
 

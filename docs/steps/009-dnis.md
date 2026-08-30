@@ -16,8 +16,9 @@
 implant at {ref}`DNI <step-008>`, and cleans the wafer so that it can
 go into the liner-oxidation furnace at {ref}`LINOX <step-010>`. It is
 the first of the many *implant strip* steps in SKY130 (the step list
-pairs almost every implant mask with an "…IS" strip). The name given
-in the step list, "High V deep N-well implant strip", records that the
+used in this reference pairs almost every implant mask with an "…IS"
+strip). The step name we use, "High V deep N-well implant strip",
+indicates that the
 deep N-well is associated with the high-voltage device family (see
 {ref}`DNM <step-007>`).
 

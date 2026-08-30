@@ -9,9 +9,9 @@ written, reviewed and audited to the same standard.
    documentation, vendor data sheets and manuals, regulatory filings,
    press releases, patents, standards, textbooks, papers, conference
    talks, Wikipedia, reputable industry press.
-2. **Every fact needs a public source.** If a fact cannot be
-   found publicly, either leave it out or state it as an inference from
-   public evidence with the reasoning shown.
+2. **Every fact needs a public source.** If a
+   fact cannot be found publicly, either leave it out or state it as an
+   inference from public evidence with the reasoning shown.
 3. **Numbers need a public citation.** Every thickness, temperature,
    dose, energy, pressure or time carries a citation to a public source
    or is explicitly marked as a typical industry value with a textbook
@@ -99,9 +99,9 @@ has no public source. Scan every tracked file **and the full git log
 * links that do not resolve publicly;
 * statements that carry no public citation;
 * specific numeric process values (thickness, dose, energy, temperature,
-  time, pressure) that carry no public citation;
-* mask plate IDs, lot/wafer numbers, purchase-order numbers, serial
-  numbers, or personal names of fab staff.
+  time, pressure) that carry no public citation and no "typical" label;
+* identifiers such as plate, lot, wafer, order or serial numbers, or
+  personal names of staff.
 
 Report every hit with file path, line (or commit hash), the offending
 text, and a proposed remediation. Return `clean` only if nothing is

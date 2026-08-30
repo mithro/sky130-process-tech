@@ -22,9 +22,8 @@ regions are still covered by resist / nitride / pad oxide.
 
 In many fabs this etch and the silicon trench etch that follows
 ({ref}`STIE <step-006>`) are run back-to-back in the same chamber as
-one multi-step recipe; SKY130's step list keeps them as two steps,
-which may reflect separate chambers, separate tools, or simply
-separate recipe/inspection points. We treat them separately here but
+one multi-step recipe; this reference keeps them as two steps because
+they are distinct unit processes with different chemistries. We treat them separately here but
 note that the hand-off is not public.
 
 ## Step category

@@ -144,7 +144,7 @@ stripping the thick gate oxide from the low-voltage active areas
 before silicidation ({ref}`SACETCH <step-095>`), because a plasma would
 damage the exposed silicon. Silicon nitride is stripped in hot
 phosphoric acid (85 % H₃PO₄ at 150–180 °C), with selectivity to oxide
-of tens to one — the STI nitride strip {ref}`NS19 <step-013>` is
+of tens to one (typical values; see {ref}`category-strip`) — the STI nitride strip {ref}`NS19 <step-013>` is
 catalogued under {ref}`category-strip`. Aluminium can be etched in
 phosphoric/acetic/nitric mixtures, but not with 130 nm-node fidelity.
 Wet etch rates vary with temperature, concentration and bath age, so
