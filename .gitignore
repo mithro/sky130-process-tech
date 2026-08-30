@@ -22,3 +22,6 @@ uv.lock
 .DS_Store
 .idea/
 .vscode/
+
+# Browser MCP scratch
+.playwright-mcp/
