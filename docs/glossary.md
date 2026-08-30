@@ -338,14 +338,14 @@ silicide
     A compound of a metal with silicon (TiSi₂, CoSi₂, NiSi) formed on
     gates and source/drains to lower their sheet and contact resistance.
 
-SPC
-    Statistical process control: charting of in-line measurements against
-    control limits so that drift is detected before it affects yield.
-
 spacer
     A dielectric sidewall (nitride or oxide) left on the gate edge by an
     anisotropic etch-back of a conformal film; it offsets the deep
     source/drain implant and the silicide from the channel.
+
+SPC
+    Statistical process control: charting of in-line measurements against
+    control limits so that drift is detected before it affects yield.
 
 SPM
     Sulfuric-peroxide mixture (also "piranha"): concentrated H₂SO₄ and
