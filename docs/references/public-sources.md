@@ -59,7 +59,7 @@ Gives the minimum feature sizes used to derive the design rules and a
 small set of film thicknesses: poly 0.18 µm, field oxide 0.07 µm above
 the silicon surface under poly, oxide spacer 0.05 µm, pre-LI ILD
 0.5 µm, photoresist 1.14 µm, metal 1 minimum width/space 0.14 µm,
-`mcon` bottom CD 0.09 µm, via1 0.15 µm. Tier: cross-check.
+contact (`mcon`) drawn CD 0.17 µm and "standard contact bottom CD" 0.09 µm, licon bottom CD 0.08 µm, via 0.15 µm. Tier: cross-check.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -71,9 +71,17 @@ each conductor with a thickness — diffusion 0.12 µm, poly 0.18 µm,
 relative permittivity: FOX (3.9), PSG (3.9), LINT (7.3), NILD2 (4.05),
 NILD3 (4.5), NILD3_C (3.5), NILD4 (4.2), NILD4_C (3.5), NILD5 (4.1),
 NILD6 (4.0), TOPOX (3.9), TOPNIT (7.5), PI1 (2.94), IOX (3.9) and
-SPNIT (7.5), plus the MiM layers `capm` and `cap2m`. It also gives the
-cumulative heights of each metal above the substrate (0.3262, 0.9361,
-1.3761, 2.0061, 2.7861, 4.0211, 5.3711 and 11.8834 µm). Tier: cross-check.
+SPNIT (7.5), plus the MiM layers `capm` and `cap2m`. It also labels
+the inter-level dielectric / via heights directly: li top to met1
+bottom (NILD2) 0.265 µm, via1 (NILD3) 0.27 µm, via2 (NILD4) 0.42 µm,
+via3 (NILD5) 0.39 µm, via4 (NILD6) 0.505 µm, LINT 0.075 µm, TOPOX
+0.09 µm, TOPNIT 0.3777 µm, NILD3_C/NILD4_C liners 0.030 µm, PSG
+0.6099 µm over the gate and 0.4299 µm over field poly; and levels
+above the substrate: FOX top 0.3262, li bottom 0.9361, li top 1.0111,
+met1 bottom 1.3761, met2 bottom 2.0061, met3 bottom 2.7861, met4
+bottom 4.0211, met5 bottom 5.3711, and PI1 top 11.8834 µm (further
+labels 0.54, 5.2523, 6.1346, 0.4223 and 0.070 µm dimension the
+metal5/passivation region). Tier: cross-check.
 
 **PDK-05** — *Masks* page and `masks.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -204,7 +212,7 @@ Discussion of why a 130 nm node was chosen and what SkyWater allowed to
 be published. Tier: high-level.
 
 **ANN-09** — SkyWater Technology, *"Open Source ASICs take a Giant Leap
-Forward with the First Ever Open Foundry PDK"*, 2020-06.
+Forward with the First Ever Open Foundry PDK"*, 2020-11-16.
 <https://www.skywatertechnology.com/open-source-asics-take-a-giant-leap-forward-with-first-ever-open-foundry-pdk/>.
 SkyWater's own framing of SKY130 as "130 nm CMOS technology" under
 Apache 2.0. Tier: cross-check (for SkyWater statements).
@@ -338,6 +346,9 @@ list then names tools and chemistries by area:
 * *Special modules* — "Nitrided gate oxide", "Ti and Co Silicide", "W
   plug dual damascene", "Cu dual damascene", "Nb damascene", "Photo
   stitching", "Low temp (~200C) back end of line processing".
+* *Physical analysis* — "FEI Dual Beam FIB/SEM", "Hitachi S-4800",
+  "SELA EM2 Precision Cleave", "Oxford PlasmaLab RIE deprocessing",
+  "Allied TechPrep polisher".
 
 Caveats: this is a 2020s capability list for the whole fab, so it
 includes tools added after the S8 flow was developed (copper plating,
@@ -403,7 +414,7 @@ Semiconductor Manufacturing Facility from Cypress Semiconductor
 Corporation"*, 2017-03-27.
 <https://www.skywatertechnology.com/skywater-technology-foundry-acquires-twin-cities-semiconductor-manufacturing-facility-from-cypress-semiconductor-corporation/>.
 "200mm semiconductor wafer manufacturing facility in Bloomington",
-400 jobs, facility "originally established by Control Data Corporation
+400 jobs, facility "Originally commissioned by Control Data Corporation
 in the 1980s", multi-year wafer supply to Cypress. Tier: cross-check.
 
 **SKW-11** — *"US Department of Defense to Invest up to $170M at
@@ -561,7 +572,7 @@ Bloomington, MN"* (listing page), retrieved 2026-08-30.
 The *Defect Technician 2* posting reads "General operation of
 semiconductor defect metrology tools: SEM/AIT/KLA/SP1/EV300/1X" —
 i.e. KLA-Tencor AIT (patterned-wafer inspection), SP1 (unpatterned
-Surfscan) and a Zeiss/Leica EV300-class optical review station. Other
+Surfscan) and an "EV300" review tool (vendor not stated in the posting). Other
 titles on the page (Equipment Maintenance Technician – Metrology,
 Senior Metals Process Technician, Development Engineering Senior
 Technician) name no tools. Tier: cross-check (medium strength).
@@ -1163,7 +1174,7 @@ on the floor today, not necessarily what built the first S8 wafers.
 | Coat/develop tracks | DNS (SCREEN) 80B; Sokudo RF3; TEL ProZ / Lithius | SKW-01 | strong |
 | Photo metrology | AMAT Verity (CD-SEM), AMAT VeraSEM; KLA 5200/5300/Archer overlay | SKW-01 | strong |
 | Defect inspection | KLA-Tencor AIT, SP1 (Surfscan); EV300 review; SEM | JOB-01 ("SEM/AIT/KLA/SP1/EV300/1X") | medium |
-| CVD dielectrics | Novellus Concept One/Two ("C1", "C2") PECVD; AMAT Producer PECVD TEOS; Lam/Novellus HDP-CVD (doped and PSG) | SKW-01; SKW-07 ("Novellus high density plasma tool") | strong |
+| CVD dielectrics | "C1"/"C2" PECVD (inferred to be Novellus Concept One/Two; SKW-01 gives only the abbreviations); AMAT Producer PECVD TEOS; Lam/Novellus HDP-CVD (doped and PSG) | SKW-01; SKW-07 ("Novellus high density plasma tool") | strong |
 | CVD tungsten | Lam/Novellus PECVD tungsten with PNL nucleation (plug fill, ≤10:1) | SKW-01 | strong |
 | PVD metals | AMAT PVD (Al and AlCu, TiW, TiN (ESC and IMP), collimated Ti, WN, Co, Nb) — consistent with Endura-class platforms | SKW-01 (platform name not given) | strong for vendor, weak for model |
 | Electroplating † | AMAT Raider single-wafer Cu plating | SKW-01 | strong |
@@ -1174,7 +1185,7 @@ on the floor today, not necessarily what built the first S8 wafers.
 | Resist strip | Gasonics PEP (remote microwave); Iridia RF microwave; Mattson Aspen 2 | SKW-01 | strong |
 | Wet clean / wet etch | Akrion Gamma batch bench (H₂SO₄, SC1, H₃PO₄, BOE); DNS wet bench (HF/SC1/SC2); FSI Mercury rotational; SEZ 223 and Lam DaVinci single-wafer (HF, DSP) | SKW-01; SKW-07 ("SEZ etcher tool") | strong |
 | Batch solvent | Rotational EKC265/EKC270 solvent strip | SKW-01 | strong |
-| Furnaces | Aviza (vertical) — wet/dry oxidation to 1150 °C, LPCVD nitride/poly/oxide/ONO, BTBAS nitride, forming-gas alloy | SKW-01 ("Furnaces are all made by Aviza") | strong |
+| Furnaces | Aviza (vertical per unverified job snippet only) — wet/dry oxidation to 1150 °C, LPCVD nitride/poly/oxide/ONO, BTBAS nitride, forming-gas alloy | SKW-01 ("Furnaces are all made by Aviza") | strong |
 | Furnaces (legacy) | SVG/Thermco horizontal furnaces | job-board snippet only | weak |
 | RTA | AG Associates Heatpulse 8808 (NH₃, Ar, N₂, O₂, to 1200 °C) | SKW-01 | strong |
 | Ion implant | Axcelis 8250 medium current; Axcelis GSD high current/high energy (10–3000 keV); Axcelis GSD high dose (2–180 keV) | SKW-01; SKW-07 (implanter maintenance) | strong |
@@ -1183,6 +1194,7 @@ on the floor today, not necessarily what built the first S8 wafers.
 | CMP | AMAT Mirra Mesa | job-board snippet only | weak |
 | Scribe | Lumonics Superclean laser scribe | SKW-01 | strong |
 | Parametric / sort test | HP 4062UX; Advantest T5365P; Verigy V3308, V4108, 93000; Credence Duo, LT; Camtek Falcon; Qualitau reliability | SKW-01 | strong |
+| Physical analysis | FEI dual-beam FIB/SEM; Hitachi S-4800 SEM; SELA EM2 cleaver; Oxford PlasmaLab RIE (deprocessing); Allied TechPrep polisher | SKW-01 | strong |
 | Starting wafers | GlobalWafers and SEH America 200 mm silicon (Cypress qualified GlobalWafers for S8 at Fab 4 in 2015) | SEC-01, SEC-02, CYP-06 | strong |
 | Sputter targets, gases, chemicals | Honeywell Electronic Materials and JX Metals targets; Air Products / Praxair / Linde / Airgas gases; KMG, EMD Performance Materials chemicals | SEC-01, SEC-02 | strong |
 | Tool population | "at least 522 well-maintained fab and sort tools" (2021); "416 tools" (2015) | SEC-01; CYP-05 | strong |
@@ -1190,17 +1202,17 @@ on the floor today, not necessarily what built the first S8 wafers.
 | Throughput | ~17,000 wafers/month (2017); 16,700/month (2015); 156,000/year (2021); 10,000 30-mask CMOS wafers/month (2023) | CYP-02, CYP-05, SEC-01, SKW-16 | strong |
 
 Not found in any public source: Nikon, Canon, Ultratech or Cymer
-lithography; Varian/Eaton implanters; Ebara CMP; Hitachi, Rudolph/Onto
-or Nanometrics metrology; Kokusai or ASM furnaces; Amtech. Their absence
-from SKW-01 is itself weak evidence that they are not (or no longer)
-on the floor.
+lithography; Varian/Eaton implanters; Ebara CMP; Rudolph/Onto or
+Nanometrics metrology; Kokusai or ASM furnaces; Amtech. (Hitachi
+appears in SKW-01 only as the S-4800 SEM in the physical-analysis
+lab, not as a process tool.) Their absence from SKW-01 is itself weak
+evidence that they are not (or no longer) on the floor.
 
 ## 10. Gaps and open questions
 
-* **Film thicknesses.** Public thicknesses exist only for the
-  conductors in PDK-04/ANN-16 and the few values in PDK-03. Dielectric
-  thicknesses can be inferred from the cumulative heights in PDK-04 but
-  no source states them directly; gate-oxide, ONO, spacer-nitride and
+* **Film thicknesses.** Public thicknesses exist for the conductors
+  and for the inter-level dielectric/via heights in PDK-04/ANN-16 and
+  the few values in PDK-03; gate-oxide, ONO, spacer-nitride and
   silicide thicknesses are only bounded by the Cypress patents
   (PAT-01 to PAT-04) and generic references.
 * **Lithography generation for S8.** SKW-01 lists i-line, KrF and ArF
