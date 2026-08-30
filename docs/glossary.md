@@ -258,7 +258,7 @@ PEB
 PECVD
     Plasma-enhanced chemical vapour deposition: {term}`CVD` in which an RF
     plasma supplies the energy to dissociate precursors, allowing
-    deposition at 300–450 °C on wafers that already carry metal.
+    deposition at 250–400 °C on wafers that already carry metal.
 
 Preston equation
     The empirical {term}`CMP` removal-rate law {math}`R = k_p\,P\,v`, in
@@ -356,15 +356,15 @@ step coverage
     The ratio of film thickness on the sidewall or bottom of a step to
     that on the flat top surface; a measure of conformality.
 
-STI
-    Shallow trench isolation: device isolation formed by etching trenches
-    into silicon, filling them with deposited oxide and planarising by
-    {term}`CMP`.
-
 stepper
     A projection exposure tool that images one reticle field at a time
     and steps the wafer between exposures. A scanner additionally scans
     the reticle and wafer through a slit during each exposure.
+
+STI
+    Shallow trench isolation: device isolation formed by etching trenches
+    into silicon, filling them with deposited oxide and planarising by
+    {term}`CMP`.
 
 straggle
     See {term}`projected range`.
