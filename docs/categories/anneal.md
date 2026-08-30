@@ -88,7 +88,7 @@ wafer's temperature- and film-dependent emissivity; ramp rates of
 process uniformity, temperature measurement and control, and wafer
 stress" ([Wikipedia: Rapid thermal processing][wiki-rtp]; [Roozeboom
 and Parekh 1990][roozeboom]). Wafers that are heated non-uniformly
-slip along {110} planes at the edge, so edge-ring design and lamp
+slip on {111} planes at the edge, so edge-ring design and lamp
 zoning matter. Furnaces, by contrast, hold 100–150 wafers at a uniform
 temperature for tens of minutes and are still used where a large Dt is
 wanted, for example the well drive-in, or where low temperature and

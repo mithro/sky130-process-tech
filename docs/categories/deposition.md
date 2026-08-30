@@ -141,10 +141,12 @@ zone model with pressure and homologous temperature (Ohring, ch. 5
   improves electromigration lifetime relative to pure aluminium
   ([Wikipedia: Electromigration][wiki-em]; Wolf and Tauber, ch. 11).
 * **Titanium** as an adhesion/contact layer and **titanium nitride**
-  by reactive sputtering of Ti in Ar/N₂. TiN under Al was shown by
-  Blech to suppress electromigration failure ([Blech 1976][blech]); on
-  top of Al it serves as an anti-reflective coating for lithography
-  and as a diffusion barrier ([Wikipedia: Titanium nitride][wiki-tin]).
+  by reactive sputtering of Ti in Ar/N₂. A conductive TiN underlayer
+  keeps a line open after an Al void forms, and it was on Al stripes
+  over TiN that Blech discovered the critical-length ("Blech length")
+  effect ([Blech 1976][blech]); on top of Al it serves as an
+  anti-reflective coating for lithography and as a diffusion barrier
+  ([Wikipedia: Titanium nitride][wiki-tin]).
 * **Titanium–tungsten** (Ti:W, about 10 wt.% Ti), a barrier and
   anti-reflective cap used in some aluminium stacks and as a capacitor
   electrode.
@@ -179,9 +181,12 @@ etch oxide. The blanket film is then removed from the field by CMP
 The SKY130 PDK's design-rule assumptions page publishes the nominal
 thicknesses used for antenna-ratio calculations: poly 0.18 µm, local
 interconnect (LI1) 0.1 µm, metal 1 and metal 2 0.35 µm, metal 3 and
-metal 4 0.8 µm, metal 5 2 µm, an oxide spacer of 0.05 µm and a pre-LI
-ILD of 0.5 µm ([SKY130 PDK, Criteria & Assumptions][pdk-assume]).
-These are the deposited (and, for the dielectrics, post-CMP) targets
+metal 4 0.8 µm (2 µm in the thick-metal flow options), metal 5 1.2 µm
+or 2 µm depending on the flow option, an oxide spacer of 0.05 µm and a
+pre-LI ILD of 0.5 µm ([SKY130 PDK, Criteria & Assumptions][pdk-assume]).
+These are the antenna-rule assumptions; the PDK's process stack diagram
+labels the same conductors 0.36, 0.845 and 1.26 µm ([SKY130 PDK,
+process stack diagram][pdk-stack]). These are the deposited (and, for the dielectrics, post-CMP) targets
 that the deposition steps below must hit.
 
 ## Typical equipment
@@ -195,8 +200,8 @@ that the deposition steps below must hit.
   tools — Novellus Concept One/Concept Two Sequel (Novellus's
   dielectric line comprised "Concept One, Concept One Maxus, Concept
   Two Sequel, Concept Two Dual Sequel, Concept Two Sequel-S"
-  [novellus]), Applied Materials Producer (twin-chamber, launched
-  1998) and Centura DxZ ([Applied Materials 10-K 2003][amat-10k]).
+  [novellus]), Applied Materials Producer ("Twin-Chamber" modules,
+  two single-wafer chambers per unit [amat-10k]) and Centura DxZ.
 * **HDP-CVD**: Novellus SPEED (completed in 1995, "a high-density
   plasma system with simpler, more cost-effective solutions for
   inter-metal dielectric films" [novellus]) and Applied Materials
@@ -288,6 +293,10 @@ that the deposition steps below must hit.
 * SkyWater Technology / Google, "Criteria & Assumptions", *SKY130 PDK
   documentation* (nominal film thicknesses).
   <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+* SkyWater Technology / Google, "Process stack diagram"
+  (`metal_stack.svg`), *SKY130 PDK* (conductor thicknesses 0.36, 0.845
+  and 1.26 µm).
+  <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
 * *ITRS 2001 Edition: Interconnect*.
   <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>
 * I. A. Blech, "Electromigration in thin aluminum films on titanium
@@ -380,6 +389,7 @@ that the deposition steps below must hit.
 [nishi]: https://doi.org/10.1201/9781420017663
 [itrs2001-ic]: https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf
 [pdk-assume]: https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html
+[pdk-stack]: https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg
 [asm-a400]: https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469
 [novellus]: https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc
 [amat-10k]: https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm

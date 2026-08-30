@@ -32,9 +32,8 @@ three ways, all of which appear in the SKY130 flow:
   remaining thickness ({ref}`CMPM <step-116>`, {ref}`CMPM2 <step-127>`,
   {ref}`CMPM3 <step-142>`, {ref}`CMPM4 <step-157>`), so that the next
   via and metal lithography see a flat surface. The SKY130 design
-  assumptions publish the resulting nominal dielectric thicknesses,
-  for example a pre-LI ILD of 0.5 µm ([SKY130 PDK, Criteria &
-  Assumptions][pdk-assume]).
+  assumptions give, for example, a pre-LI ILD thickness of 0.5 µm
+  ([SKY130 PDK, Criteria & Assumptions][pdk-assume]).
 
 CMP was developed at IBM in the 1980s — the foundational patents
 describe a "chem-mech polishing method for producing coplanar
@@ -70,9 +69,11 @@ Polishing is neither pure abrasion nor pure etching. For silicon dioxide,
 Cook showed that the alkaline slurry (pH 10–11) hydrolyses the oxide
 surface to a soft silanol-rich layer, that silica abrasive particles
 bond to it and tear it away, and that dissolved silica must be carried
-off before it re-deposits ([Cook 1990][cook]); the slurry is
-"cerium dioxide" or colloidal/fumed silica in water with KOH or NH₄OH
-([Wikipedia: Chemical-mechanical polishing][wiki-cmp]). For tungsten,
+off before it re-deposits ([Cook 1990][cook]); the abrasive is
+"cerium dioxide" ([Wikipedia: Chemical-mechanical polishing][wiki-cmp])
+or, for oxide, colloidal/fumed silica in water with KOH or NH₄OH
+([Cook 1990][cook]; [Krishnan, Nalaskowski and Cook 2010][krishnan]).
+For tungsten,
 Kaufman and co-workers at IBM showed that an oxidiser in the slurry
 (originally potassium ferricyanide, later hydrogen peroxide or ferric
 nitrate) forms a thin, soft WO₃ layer that the abrasive removes,
