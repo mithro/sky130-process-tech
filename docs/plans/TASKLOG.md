@@ -9,12 +9,11 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 
 ## Phase 0 — Setup
 
-- [x] Read the source step list (171 steps) — 2026-08-30
+- [x] Compile the 171-step list — 2026-08-30
 - [x] Write design document — 2026-08-30
 - [x] Repository scaffolding (licence, .gitignore, README) — 2026-08-30
 - [x] Sphinx + MyST + Read the Docs configuration, builds clean — 2026-08-30
 - [x] Step page template and checker script — 2026-08-30
-- [x] Working-notes area created outside the public tree — 2026-08-30
 - [x] Generate 171 stub step pages from the step list — 2026-08-30
 - [x] Machine index, material index, mask index, glossary stubs — 2026-08-30
 
@@ -23,7 +22,6 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Inventory of public SkyWater / SKY130 sources (PDK docs, talks,
       SEC filings, press, job postings, patents, papers) — 2026-08-30,
       reviewed and merged (`docs/references/public-sources.md`)
-- [x] Inventory of starting-point material (kept outside this repo) — 2026-08-30
 - [x] Category pages (oxidation, deposition, litho, etch, implant,
       anneal, CMP, clean/strip, metallisation, test) — 2026-08-30,
       reviewed and merged; glossary seeded with 84 terms
@@ -53,17 +51,17 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 
 - [ ] Technical accuracy review of every step page (independent agent)
 - [ ] Conflict review across pages (consistent thicknesses, names, order)
-- [ ] Leak review (private-source exposure) — repeat after each batch
+- [ ] Provenance review — repeat after each batch
 - [ ] Full Sphinx build with `-W` (warnings as errors)
 
-## Leak-review log
+## Provenance-review log
 
 | Date | Scope | Result |
 |------|-------|--------|
+| 2026-08-30 | `main` @ a335c7f, all files + full history | 0 high, 9 medium (wording in `docs/plans/`, "step list" phrasing), 6 low — all fixed on `main` |
 
 ## Notes
 
 - 2026-08-30: Worktrees in `.worktrees/` (project-local); max two
   sub-agents concurrently; Sphinx + MyST chosen (see design doc).
-- 2026-08-30: Repository backed up to a private GitHub repository
-  (`origin`); `main` is pushed after every merge.
+- 2026-08-30: `main` is pushed to `origin` after every merge.

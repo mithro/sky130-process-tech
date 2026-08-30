@@ -28,27 +28,21 @@ targeted at publication on Read the Docs.
 
 ## Non-goals
 
-* No proprietary recipes, parameters, or content from non-public sources.
-* No references — direct or oblique — to private source material.
+* No proprietary recipes or parameters.
+* No references — direct or oblique — to non-public material.
 * Not a PDK design-rule manual (that already exists in
   `skywater-pdk` docs); we link to it instead.
 
 ## Source policy (critical)
 
-Public documents **only** may be cited. Private material (personal
-cloud storage, private backups, NDA-covered sources) may be used solely
-as a *starting point* to discover what public information exists. Any
-working notes that mention private material live in a separate, private
-repository outside this tree; nothing in this repository names, links to
-or depends on it.
+Only publicly available documents may be cited. Working notes are kept
+outside this repository.
 
-An independent "leak-review" sub-agent audits the public tree and the
-commit history at regular intervals for:
+An independent review sub-agent audits the tree and the commit history
+at regular intervals for:
 
-* file paths, hostnames, or URLs of private storage;
-* names of private documents or folders;
-* phrasing that acknowledges a private origin ("internal document",
-  "from the NDA package", "SkyWater's runsheet says", …);
+* file paths, hostnames, or URLs that are not public;
+* phrasing that implies a non-public origin for any statement;
 * numeric values that appear nowhere in the public record and cannot be
   attributed to a public source.
 
@@ -122,8 +116,6 @@ contains every mandatory heading and that every link resolves.
 * Worktree location: `.worktrees/` (project-local, git-ignored).
 * Build system: Sphinx + MyST-Parser, `furo` theme, `uv` for Python.
 * Licence: Apache 2.0 (per standing instruction).
-* Private working notes are kept in a local-only git repository outside
-  this tree and are never referenced from it.
 * Step file naming: three-digit zero-padded step number + lower-case
   step code (`001-smat.md`). Codes containing `/` become `-`
   (`TI/TIN1` → `097-ti-tin1.md`).

@@ -9,12 +9,11 @@ written, reviewed and audited to the same standard.
    documentation, vendor data sheets and manuals, regulatory filings,
    press releases, patents, standards, textbooks, papers, conference
    talks, Wikipedia, reputable industry press.
-2. **Never name, link, quote or allude to private material.** No cloud
-   drive documents, no private backups, no NDA-covered sources, no
-   "internal documents", "runsheets", "travelers" or "the foundry's own
-   notes". If a fact is only known from a private source and cannot be
-   found publicly, either leave it out or state it as an inference from
-   public evidence with the reasoning shown.
+2. **Never name, link, quote or allude to non-public material.** If a
+   fact cannot be found publicly, either leave it out or state it as an
+   inference from public evidence with the reasoning shown. Do not
+   describe the origin of the step list; refer to it as "the step list
+   used in this reference".
 3. **Numbers need a public citation.** Every thickness, temperature,
    dose, energy, pressure or time carries a citation to a public source
    or is explicitly marked as a typical industry value with a textbook
@@ -93,25 +92,21 @@ them. Check, and report with file and line references:
 Return a verdict (`approve`, `approve with fixes`, `reject`) and an
 itemised list of required fixes.
 
-## Leak-review brief (private-source exposure)
+## Provenance-review brief
 
-You are auditing the *public* repository for any exposure of private
-source material. You have no need to know what the private material is;
-you are looking for signs of it. Scan every tracked file **and the full
-git log (`git log -p`)** for:
+You are auditing the repository for any statement, link or value whose
+origin is not public. Scan every tracked file **and the full git log
+(`git log -p`)** for:
 
-* hostnames, IP addresses, mount points, file-system paths or URLs that
-  point at personal or private storage (cloud drives, backup servers,
-  internal mirrors, code-review hosts other than public ones);
-* Google Docs/Sheets/Drive/Photos links or IDs;
-* the names of private documents, folders, spreadsheets or albums;
-* phrases acknowledging a private origin: "internal", "NDA", "confidential",
-  "proprietary document", "runsheet", "traveler", "the foundry's own",
-  "from the spreadsheet", "Tim's notes", "personal archive";
+* hostnames, IP addresses, file-system paths or URLs that are not
+  public;
+* document links or IDs that are not demonstrably public (linked from a
+  public page, repository or publication);
+* phrasing that implies a non-public origin for a statement;
 * specific numeric process values (thickness, dose, energy, temperature,
-  time, pressure) that carry no public citation;
-* mask plate IDs, lot/wafer numbers, purchase-order numbers, serial
-  numbers, or personal names of fab staff.
+  time, pressure) that carry no public citation and no "typical" label;
+* identifiers such as plate, lot, wafer, order or serial numbers, or
+  personal names of staff.
 
 Report every hit with file path, line (or commit hash), the offending
 text, and a proposed remediation. Return `clean` only if nothing is
