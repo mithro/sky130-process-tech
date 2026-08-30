@@ -1,0 +1,172 @@
+number,code,name
+1,SMAT,Starting material
+2,BOX,Base oxidation
+3,ISONIT,Iso nitride deposition
+4,FOM,Field oxide mask
+5,STINITE,Shallow trench nitride etch
+6,STIE,Shallow trench etch
+7,DNM,Deep N-well mask
+8,DNI,Deep N+ implant
+9,DNIS,High V deep N-well implant strip
+10,LINOX,LINOX oxidation
+11,FILOX,Fill oxide deposition
+12,CMPNIT,CMP over nitride
+13,NS19,Nitride strip
+14,LVTNM,Low Vt NMOS mask
+15,LVTNI,Low Vt NMOS implantation
+16,LVTNIS,Low Vt NMOS implant strip
+17,NWM,N-well mask
+18,NWI,N-well implant
+19,NWI2,NWI2 implant
+20,LVTPI,Low V P-channel implant
+21,LVTPIS,P-channel implant strip
+22,HVTPM,High V P-channel implant mask
+23,PCHI,P-channel implant
+24,PNCHI,P-channel BF2 implant
+25,PCHIS,P-channel BF2 implant strip
+26,PWBM,P-well block mask
+27,PWI,P-well implant
+28,PWI2,PWI2 implant
+29,PWIS,P-well implant strip
+30,PWDEM,P-well drain extended mask
+31,PWDEI1,PWDEI1 implant
+32,PWDEI2,PWDEI2 implant
+33,PWDEIS,PWDEIS implant strip
+34,RTAI,Pre-gate oxide anneal
+35,TUNM,Tunnel mask
+36,TUNARCE,Tunnel mask ARC etch
+37,PTSI,Punch-through stop implant
+38,DEPI,Depletion implant
+39,TUNME,Tunnel mask etch
+40,ONO,ONO stack oxidation
+41,ONOM,ONO mask
+42,ONOME,ONO mask etch
+43,GOX100,Gate oxidation
+44,LVOM,Low voltage oxide mask
+45,NCHI,N-channel implant
+46,GOXETCH,Low V gate oxide etch
+47,LVGOX,Gate oxidation
+48,SAGD,Single a-Si gate deposition
+49,RPM,Resistor protect mask
+50,P1I,Poly1 implant
+51,P1IS,P1IS implant resist strip
+52,RRPM,Rev resistor protect mask
+53,PRI,PRI implant splits
+54,PRIS,PRI implant resist strip
+55,URPM,Ultra-high resistor poly mask
+56,UPRI,UPRI implant
+57,UPRIS,UPRIS implant resist strip
+58,GATENIT,Gate poly nitride deposition
+59,POC,Protective oxide cap
+60,BFR,Backside film removal
+61,P1M,Poly mask
+62,P1ME,Poly mask poly etch
+63,IOX45,Implant oxidation
+64,NTM,NTM mask (tip formation)
+65,ASTI,As tip implant
+66,BHI,B halo implant
+67,ASTIS,As tip implant strip
+68,HVNTM,HV N-tip mask formation
+69,HVASTI,HV As N-tip implant
+70,HVASTIS,HV As N-tip implant strip
+71,LDNTM,LD tip layer mask
+72,LDASTI,LD ASTI implant
+73,LDBHI,LD B halo implant
+74,LDASTIS,LD ASTI implant strip
+75,TIPRTAD,RTA tip activation
+76,SPNIT,Spacer nitride deposition
+77,SPE,Spacer nitride etch
+78,NPCM,Nitride poly cut mask
+79,NPCME,Nitride poly cut mask etch
+80,SPOX,Spacer oxide deposition
+81,PSDM,P+ source drain implant mask
+82,PSDI,P+ source drain implant
+83,2PSDI,2nd P+ source drain implant
+84,PDIS,P+ source drain implant strip
+85,NSDM,N+ source drain implant mask
+86,NSDI,N+ source drain implant
+87,NSDIS,N+ source drain implant strip
+88,RTAD,RTA source drain implant anneal
+89,PSG,Sacrificial PSG deposition
+90,CMPP,CMP over poly
+91,NCAPOX,Cap oxide deposition
+92,RTAD2,RTA source drain anneal
+93,LICM1,Local interconnect contact mask
+94,LICM1E,Local interconnect contact mask etch
+95,SACETCH,Sacrificial etch
+96,ALLY1,Alloy 1
+97,TI/TIN1,IMP Ti/TiN deposition
+98,CSIL,Contact silicidation
+99,WDEP,Blanket CVD W deposition
+100,WCMPLI,W CMP for local interconnect
+101,LITIN,TiN deposition
+102,LI1M,Local interconnect 1 mask
+103,LI1ME,Local interconnect 1 mask etch
+104,LINIT,Nitride cap deposition
+105,NILD2,ILD oxide deposition
+106,CMPL,CMP polish over local interconnect
+107,CTM1,Metal contact mask
+108,CTME,Metal contact mask etch
+109,TIN2,IMP TiN deposition
+110,WDEP2,Blanket CVD W deposition
+111,WCMP2,W CMP for metal contact
+112,TIAL6,CoTi/AlCu/TiW deposition
+113,MM1,Metal1 mask
+114,MM1E,Metal1 mask etch
+115,NILD3,ILD oxide deposition
+116,CMPM,CMP over metal1
+117,NCAPOX3,CAPOX deposition
+118,VIM,Via1 mask
+119,VIME,Via1 mask etch
+120,TIN3,IMP TiN deposition
+121,WDEP3,Blanket CVD W deposition
+122,WCMP3,W CMP for via1
+123,TIAL12,AlCu 2/TiW deposition
+124,MM2,Metal2 mask
+125,MM2E,Metal2 mask etch
+126,NILD4,ILD oxide deposition
+127,CMPM2,CMP over metal2
+128,NCAPOX4,CAPOX deposition
+129,VIM2,Via2 mask
+130,VIM2E,Via2 mask etch
+131,TIN4,IMP TiN deposition
+132,WDEP4,Blanket CVD W deposition
+133,WCMP4,W CMP for via2
+134,WTIAL3,AlCu 2/TiW deposition
+135,CAPILD,Capacitor ILD oxynitride deposition
+136,CAPTIW1,Capacitor TiW deposition
+137,CAPM,Capacitor mask
+138,CAPME,Capacitor mask etch
+139,MM3,Metal3 mask
+140,MM3E,Metal3 mask etch
+141,NILD5,ILD oxide deposition
+142,CMPM3,CMP over metal3
+143,NCAPOX5,CAPOX deposition
+144,VIM3,Via3 mask
+145,VIM3E,Via3 mask etch
+146,TIN5,IMP TiN deposition
+147,WDEP5,Blanket CVD W deposition
+148,WCMP5,W CMP for via3
+149,WTIAL4,AlCu 2/TiW deposition
+150,CAPILD2,Capacitor ILD oxynitride deposition
+151,CAPTIW2,Capacitor TiW deposition
+152,CAP2M,Capacitor 2 mask
+153,CAP2ME,Capacitor 2 mask etch
+154,MM4,Metal4 mask
+155,MM4E,Metal4 mask etch
+156,NILD6,ILD oxide deposition
+157,CMPM4,CMP over metal4
+158,NCAPOX6,CAPOX deposition
+159,VIM4,Via4 (pad via) mask
+160,VIM4E,Via4 (pad via) mask etch
+161,WTIAL5,AlCu 2/TiW deposition
+162,MM5,Metal5 mask
+163,MM5E,Metal5 mask etch
+164,NFUSOX,Fuse oxide deposition
+165,NSM,Nitride seal mask
+166,NSME,Nitride seal mask etch
+167,NTSD,Nitride topside deposition
+168,PDM,Pad mask
+169,PDME,Pad mask etch
+170,ALLY,Alloy
+171,HPETEST,Electrical test
