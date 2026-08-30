@@ -348,8 +348,9 @@ spacer
     source/drain implant and the silicide from the channel.
 
 SPM
-    Sulfuric-peroxide mixture (also "piranha"): H₂SO₄ and H₂O₂, typically
-    4:1 at 100–130 °C, used to strip and oxidise organic residues.
+    Sulfuric-peroxide mixture (also "piranha"): concentrated H₂SO₄ and
+    30 % H₂O₂, typically 3:1 to 4:1, self-heating to above 100 °C, used
+    to strip and oxidise organic residues.
 
 step coverage
     The ratio of film thickness on the sidewall or bottom of a step to
