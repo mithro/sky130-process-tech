@@ -17,4 +17,5 @@ All sources cited anywhere in this documentation, grouped by tier:
 ```{toctree}
 :maxdepth: 1
 
+public-sources
 ```
