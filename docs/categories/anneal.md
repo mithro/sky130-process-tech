@@ -279,7 +279,6 @@ below that).
 [osburn]: https://doi.org/10.1016/b978-0-12-247690-7.50010-x
 [deal1980]: https://doi.org/10.1149/1.2129800
 [itrs2001-fep]: https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf
-[ag-8108]: https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp
 [ag-10k]: https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt
 [amat-1997]: https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf
 [amat-rtp]: https://www.edn.com/applied-dedicates-rtp-with-vantage/

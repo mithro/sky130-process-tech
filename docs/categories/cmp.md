@@ -263,9 +263,6 @@ Sikder 2004][zantye]).
   <https://patents.google.com/patent/US4789648A/en>
 
 [wiki-cmp]: https://en.wikipedia.org/wiki/Chemical-mechanical_polishing
-[wiki-silica]: https://en.wikipedia.org/wiki/Colloidal_silica
-[wiki-ceria]: https://en.wikipedia.org/wiki/Cerium(IV)_oxide
-[wiki-pu]: https://en.wikipedia.org/wiki/Polyurethane
 [cook]: https://doi.org/10.1016/0022-3093(90)90200-6
 [kaufman]: https://doi.org/10.1149/1.2085434
 [luo]: https://doi.org/10.1109/66.920723

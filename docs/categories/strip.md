@@ -46,7 +46,8 @@ ashing][wiki-ash]). Atomic oxygen oxidises the resist's carbon and
 hydrogen to CO, CO₂ and H₂O, which are pumped away; the rate is
 thermally activated, so ashers run hot for bulk removal — typically
 200–300 °C; the Gasonics L3510 platen spans 100–300 °C [gasonics] and
-the Aura 1000 150–300 °C [aura1000] — and cool for "descum". To avoid charging and ion damage to gate oxides,
+the Aura 1000 150–300 °C [aura1000] — and cool for "descum". To avoid
+charging and ion damage to gate oxides,
 "many machines now use a downstream plasma configuration, where plasma
 is formed remotely and the desired particles are channeled to the
 wafer"; "monatomic oxygen is electrically neutral and although it does

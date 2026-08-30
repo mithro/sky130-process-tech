@@ -177,9 +177,10 @@ exposure tool as dose and alignment corrections.
   "120 nm resolution", "115 200 mm wafers per hour" [asml-800]); Nikon
   NSR-S204B (248 nm, 4:1, 25 × 33 mm field, NA 0.55–0.68; the cited
   specification sheet describes a 300 mm-configured unit built in 2002
-  [nikon]); Canon FPA-3000EX4 (248 nm, 5×, NA 0.6 [canon]). The PAS 5500 platform, first shipped in 1991, was still
-  being supplied, latterly from recycled cores, three decades later
-  ([ASML: Three decades of PAS 5500][asml-30]).
+  [nikon]); Canon FPA-3000EX4 (248 nm, 5×, NA 0.6 [canon]). The
+  PAS 5500 platform, first shipped in 1991, was still being supplied,
+  latterly from recycled cores, three decades later ([ASML: Three
+  decades of PAS 5500][asml-30]).
 * **i-line steppers** for non-critical layers: ASML PAS 5500/275 and
   /300 series, Nikon NSR-2205i and Canon FPA-3000i5.
 * **Coater/developer tracks**: TEL CLEAN TRACK ACT 8 (introduced in

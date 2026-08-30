@@ -302,7 +302,6 @@ rounding or nitride re-oxidation is wanted
 [itrs2001-fep]: https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf
 [asm-a400]: https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469
 [asm-vf]: https://www.asm.com/our-technology-products/vertical-furnace
-[ag-8108]: https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp
 [ag-10k]: https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt
 [amat-rtp]: https://www.edn.com/applied-dedicates-rtp-with-vantage/
 [nishi]: https://doi.org/10.1201/9781420017663
