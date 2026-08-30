@@ -1144,3 +1144,76 @@ All verified on 2026-08-30:
 * *Back end of line* — <https://en.wikipedia.org/wiki/Back_end_of_line>
 * *SONOS* — see CYP-26
 * *130 nm process* — see ANN-17
+
+## 9. Evidence about specific tools at SkyWater
+
+Strength scale: **strong** = a SkyWater or tool-vendor statement;
+**medium** = a retrievable SkyWater job posting or an interview with a
+named SkyWater employee; **weak** = indirect (search-engine snippet of
+a posting that could not be retrieved, or an inference). Tools that
+post-date the original Cypress S8 flow are marked † — they show what is
+on the floor today, not necessarily what built the first S8 wafers.
+
+| Area | Vendor / model | Public hit(s) | Strength |
+|------|----------------|---------------|----------|
+| Lithography | ASML i-line stepper and i-line scanner | SKW-01 | strong |
+| Lithography | ASML DUV (KrF, 248 nm) stepper and scanner | SKW-01 | strong |
+| Lithography | ASML 193 nm single-stage scanner ("90nm CD") and twin-stage scanner ("sub 65nm CD") † | SKW-01; SKW-06 names "the ASML TWINSCAN lithography tool" | strong |
+| Lithography | Multibeam multicolumn e-beam (MEBL) † | SKW-14, SKW-06, GOV-01 context | strong |
+| Coat/develop tracks | DNS (SCREEN) 80B; Sokudo RF3; TEL ProZ / Lithius | SKW-01 | strong |
+| Photo metrology | AMAT Verity (CD-SEM), AMAT VeraSEM; KLA 5200/5300/Archer overlay | SKW-01 | strong |
+| Defect inspection | KLA-Tencor AIT, SP1 (Surfscan); EV300 review; SEM | JOB-01 ("SEM/AIT/KLA/SP1/EV300/1X") | medium |
+| CVD dielectrics | Novellus Concept One/Two ("C1", "C2") PECVD; AMAT Producer PECVD TEOS; Lam/Novellus HDP-CVD (doped and PSG) | SKW-01; SKW-07 ("Novellus high density plasma tool") | strong |
+| CVD tungsten | Lam/Novellus PECVD tungsten with PNL nucleation (plug fill, ≤10:1) | SKW-01 | strong |
+| PVD metals | AMAT PVD (Al and AlCu, TiW, TiN (ESC and IMP), collimated Ti, WN, Co, Nb) — consistent with Endura-class platforms | SKW-01 (platform name not given) | strong for vendor, weak for model |
+| Electroplating † | AMAT Raider single-wafer Cu plating | SKW-01 | strong |
+| ALD † | (vendor not named) AlN, TiN, SiO₂, Al₂O₃, HfO₂, TiO₂, ZrO₂ | SKW-01 | strong (capability), no vendor |
+| Metal etch | Lam 9600 (Al, TiW, TiN, Pt); Lam 2300 Versys (Al, TiW, TiN, Nb, Pt) | SKW-01 | strong |
+| Poly/oxide/trench etch | AMAT DPS II (HBr/Cl₂/NF₃/CF₄/CHF₃/O₂ — gate, trench, W/WN); Lam 9400 TCP (poly/nitride); Lam 4400 | SKW-01 | strong |
+| Etch (other) | Lam Alliance; Lam 2300 Exelan; TEL Unity M/ME; AMAT Centura DPS "Metal/Poly/SuperE" | job-board snippets only (§4 leads) | weak |
+| Resist strip | Gasonics PEP (remote microwave); Iridia RF microwave; Mattson Aspen 2 | SKW-01 | strong |
+| Wet clean / wet etch | Akrion Gamma batch bench (H₂SO₄, SC1, H₃PO₄, BOE); DNS wet bench (HF/SC1/SC2); FSI Mercury rotational; SEZ 223 and Lam DaVinci single-wafer (HF, DSP) | SKW-01; SKW-07 ("SEZ etcher tool") | strong |
+| Batch solvent | Rotational EKC265/EKC270 solvent strip | SKW-01 | strong |
+| Furnaces | Aviza (vertical) — wet/dry oxidation to 1150 °C, LPCVD nitride/poly/oxide/ONO, BTBAS nitride, forming-gas alloy | SKW-01 ("Furnaces are all made by Aviza") | strong |
+| Furnaces (legacy) | SVG/Thermco horizontal furnaces | job-board snippet only | weak |
+| RTA | AG Associates Heatpulse 8808 (NH₃, Ar, N₂, O₂, to 1200 °C) | SKW-01 | strong |
+| Ion implant | Axcelis 8250 medium current; Axcelis GSD high current/high energy (10–3000 keV); Axcelis GSD high dose (2–180 keV) | SKW-01; SKW-07 (implanter maintenance) | strong |
+| Ion implant | Axcelis GSD300E; Axcelis Purion † | job-board snippet only | weak |
+| CMP | AMAT Mirra (oxide, nitride, W, Al, Cu, Nb) | SKW-01 | strong |
+| CMP | AMAT Mirra Mesa | job-board snippet only | weak |
+| Scribe | Lumonics Superclean laser scribe | SKW-01 | strong |
+| Parametric / sort test | HP 4062UX; Advantest T5365P; Verigy V3308, V4108, 93000; Credence Duo, LT; Camtek Falcon; Qualitau reliability | SKW-01 | strong |
+| Starting wafers | GlobalWafers and SEH America 200 mm silicon (Cypress qualified GlobalWafers for S8 at Fab 4 in 2015) | SEC-01, SEC-02, CYP-06 | strong |
+| Sputter targets, gases, chemicals | Honeywell Electronic Materials and JX Metals targets; Air Products / Praxair / Linde / Airgas gases; KMG, EMD Performance Materials chemicals | SEC-01, SEC-02 | strong |
+| Tool population | "at least 522 well-maintained fab and sort tools" (2021); "416 tools" (2015) | SEC-01; CYP-05 | strong |
+| Cleanroom | 80,000 sq ft (2015–2017); 91,000 sq ft class 10 with SMIF after the 2020 addition (8,400–13,000 sq ft of new class 10 fab) | CYP-02, CYP-05, SKW-01, SKW-16, GOV-03, GOV-04 | strong |
+| Throughput | ~17,000 wafers/month (2017); 16,700/month (2015); 156,000/year (2021); 10,000 30-mask CMOS wafers/month (2023) | CYP-02, CYP-05, SEC-01, SKW-16 | strong |
+
+Not found in any public source: Nikon, Canon, Ultratech or Cymer
+lithography; Varian/Eaton implanters; Ebara CMP; Hitachi, Rudolph/Onto
+or Nanometrics metrology; Kokusai or ASM furnaces; Amtech. Their absence
+from SKW-01 is itself weak evidence that they are not (or no longer)
+on the floor.
+
+## 10. Gaps and open questions
+
+* **Film thicknesses.** Public thicknesses exist only for the
+  conductors in PDK-04/ANN-16 and the few values in PDK-03. Dielectric
+  thicknesses can be inferred from the cumulative heights in PDK-04 but
+  no source states them directly; gate-oxide, ONO, spacer-nitride and
+  silicide thicknesses are only bounded by the Cypress patents
+  (PAT-01 to PAT-04) and generic references.
+* **Lithography generation for S8.** SKW-01 lists i-line, KrF and ArF
+  ASML tools; which layers of SKY130 use which wavelength is not stated
+  publicly and must be inferred from feature size (ITRS-03).
+* **Tool models behind generic entries.** SKW-01 names vendors but not
+  models for PVD ("AMAT PVD Metal") and PECVD ("Producer", "C1", "C2");
+  the job-board snippets that would pin these down are unverified.
+* **Historical tool set.** Every tool list is post-2017; the 2000s
+  Cypress tool set that first ran S8 is documented only indirectly
+  (CYP-04: "New tools and equipment have been installed several
+  times"; PRESS-02 on the used-200 mm-tool market).
+* **Cypress process papers.** No IEDM/VLSI/IRPS paper by Cypress
+  authors describing the 130 nm S8 baseline (STI, TiN local
+  interconnect, AlCu/TiW/TiN metallisation) was found; only SONOS
+  module papers and patents.
