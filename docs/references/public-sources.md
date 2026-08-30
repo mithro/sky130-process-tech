@@ -957,3 +957,190 @@ out or refused every fetch and are therefore not listed with URLs;
 the Klobuchar and Minnesota DEED press pages (2021, 2024) returned
 HTTP 403 / a CAPTCHA. No public fab-tour photo essay with tool counts
 was found beyond the photographs in CYP-02, CYP-03 and PRESS-03.
+
+## 7. Teardowns, die photographs and cross-sections of SKY130 silicon
+
+**TD-01** — ZeptoBars, *"TT04 – looking inside TinyTapeout 4 (GDS
+included): weekend die-shot"*, 2024-07-11.
+<https://zeptobars.com/en/read/tt04-tinytapeout-silicon-inside-gds-sky130>.
+Optical die photographs of a Tiny Tapeout 4 chip (SKY130, MPW,
+5256 µm × 3662 µm die) before and after HF removal of the glass and
+metal layers, down to the STI pattern, with side-by-side GDS overlays.
+Useful for checking layer geometry and the visual appearance of
+metal 5 fill, but there are no measured thicknesses. Tier: cross-check
+(layout ↔ silicon), high-level for the stack.
+
+**TD-02** — Matt Venn (Zero to ASIC), *"Looking inside an open source
+ASIC with Zeptobars"*, 2024-08-03 (interview and video).
+<https://www.zerotoasiccourse.com/post/interview_with_zeptobars/>,
+<https://www.youtube.com/watch?v=zUv6sdxOaFE>. Describes the
+decapsulation and de-layering method used for TD-01. Tier: high-level.
+
+**TD-03** — Tiny Tapeout, *"Tiny Tapeout 4"* chip page.
+<https://tinytapeout.com/chips/tt04/>. Identifies the design and
+shuttle whose silicon was imaged in TD-01. Tier: high-level.
+
+**TD-04** — The Amp Hour, episode 616, *"Open Source Tapeout with
+Matthew Venn"*.
+<https://theamphour.com/616-open-source-tapeout-with-matthew-venn/>.
+Background on the open MPW programme that produced the imaged chips.
+Tier: high-level.
+
+*Not found.* No public SEM/FIB cross-section of a SKY130 or Cypress S8
+die with measured film thicknesses was located (searches covered
+siliconpr0n.org, TechInsights/Chipworks teasers, arXiv and IEEE). The
+siliconpr0n archive page for a Cypress PSoC 4 part
+(`azonenberg:cypress:cy8c4245axi`) exists but sits behind a bot
+challenge and could not be read, so it is not listed with a URL. For
+now the PDK stack diagram (PDK-04) and the Edwards slides (ANN-16)
+remain the only public statements of film thicknesses.
+
+## 8. General 130 nm-era process integration references
+
+These are the references every step page can lean on for "how it is
+typically performed" and for typical numeric values. Library records
+are cited so that the edition can be identified unambiguously.
+
+### 8.1 Textbooks
+
+**TXT-01** — J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+Technology: Fundamentals, Practice and Modeling*, Prentice Hall, 2000,
+ISBN 978-0-13-085037-9.
+<https://openlibrary.org/isbn/9780130850379>. Oxidation, diffusion,
+implantation, thin films, etch and back-end with models; the standard
+graduate text for this era. Tier: high-level.
+
+**TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+ISBN 978-0-9616721-6-4.
+<https://openlibrary.org/isbn/9780961672164>. Unit processes (wafer
+cleaning, oxidation, LPCVD/PECVD, sputtering, lithography, plasma
+etch, implantation). Tier: high-level.
+
+**TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
+Process Integration*, Lattice Press, 1990, ISBN 978-0-9616721-4-0.
+<https://openlibrary.org/isbn/9780961672140>. Isolation, wells,
+contacts, multilevel metal, passivation. Tier: high-level.
+
+**TXT-04** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 3: The
+Submicron MOSFET*, Lattice Press, 1995, ISBN 978-0-9616721-5-7.
+<https://openlibrary.org/isbn/9780961672157>. LDD/extension, halo,
+hot-carrier and gate-oxide engineering. Tier: high-level.
+
+**TXT-05** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+Deep-Submicron Process Technology*, Lattice Press, 2002,
+ISBN 978-0-9616721-7-1.
+<https://openlibrary.org/isbn/9780961672171>. STI, CMP, W plugs, salicide,
+DUV lithography, RTP — written for exactly the 0.25–0.13 µm
+generations. Tier: high-level.
+
+**TXT-06** — S. M. Sze (ed.), *VLSI Technology*, 2nd ed., McGraw-Hill,
+1988, ISBN 978-0-07-062735-2.
+<https://openlibrary.org/isbn/9780070627352>. Tier: high-level.
+
+**TXT-07** — M. Quirk and J. Serda, *Semiconductor Manufacturing
+Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
+<https://openlibrary.org/isbn/9780130815200>. Fab-floor view of each
+tool class, written around a 200 mm, 0.18 µm-era fab. Tier: high-level.
+
+**TXT-08** — H. Xiao, *Introduction to Semiconductor Manufacturing
+Technology*, 2nd ed., SPIE Press, 2012, ISBN 978-0-8194-9092-6.
+<https://openlibrary.org/isbn/9780819490926>; publisher page
+<https://spie.org/Publications/Book/924283>. Tier: high-level.
+
+**TXT-09** — Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
+Manufacturing Technology*, 2nd ed., CRC Press, 2007,
+ISBN 978-1-57444-675-3.
+<https://openlibrary.org/isbn/9781574446753>. Chapter-per-process
+reference with equipment detail. Tier: high-level.
+
+**TXT-10** — R. B. Fair (ed.), *Rapid Thermal Processing: Science and
+Technology*, Academic Press, 1993, ISBN 978-0-12-247690-7.
+<https://openlibrary.org/isbn/9780122476907>. Tier: deep dive.
+
+### 8.2 ITRS roadmaps (2001 and 2003 editions)
+
+Semiconductor Industry Association archive pages:
+<https://www.semiconductors.org/resources/2001-international-technology-roadmap-for-semiconductors-itrs/>
+and
+<https://www.semiconductors.org/resources/2003-international-technology-roadmap-for-semiconductors-itrs/>.
+The chapters most useful for a 130 nm flow (all verified PDFs):
+
+**ITRS-01** — ITRS 2001, *Front End Processes*.
+<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>.
+Starting material, STI, gate stack, junctions, contacts. Tier: deep dive.
+
+**ITRS-02** — ITRS 2001, *Interconnect*.
+<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>.
+Al versus Cu, dielectric k, via/metal dimensions by node. Tier: deep dive.
+
+**ITRS-03** — ITRS 2001, *Lithography*.
+<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>.
+Exposure tools and wavelengths (i-line, 248 nm, 193 nm) by node. Tier:
+deep dive.
+
+**ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
+<https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
+Gate length, oxide thickness, junction depth targets. Tier: deep dive.
+
+**ITRS-05** — ITRS 2003, *Front End Processes*, *Interconnect*,
+*Lithography* and *PIDS* chapters.
+<https://www.semiconductors.org/wp-content/uploads/2018/08/FEP2003.pdf>,
+<https://www.semiconductors.org/wp-content/uploads/2018/08/Interconnect2003.pdf>,
+<https://www.semiconductors.org/wp-content/uploads/2018/08/Litho2003.pdf>,
+<https://www.semiconductors.org/wp-content/uploads/2018/08/PIDS2003.pdf>.
+Tier: deep dive.
+
+### 8.3 Review papers (DOIs verified through Crossref)
+
+**REV-01** — M. Nandakumar, A. Chatterjee, S. Sridhar, K. Joyner,
+M. Rodder and I.-C. Chen, *"Shallow trench isolation for advanced ULSI
+CMOS technologies"*, IEDM 1998 Technical Digest, pp. 133–136,
+DOI 10.1109/IEDM.1998.746297. STI flow: trench definition, corner
+rounding, gap fill, planarisation, well implants. Tier: deep dive.
+
+**REV-02** — M. Krishnan, J. W. Nalaskowski and L. M. Cook, *"Chemical
+Mechanical Planarization: Slurry Chemistry, Materials, and
+Mechanisms"*, Chemical Reviews, vol. 110, no. 1, pp. 178–204, 2010,
+DOI 10.1021/cr900170z. Oxide, tungsten and copper CMP chemistry. Tier:
+deep dive.
+
+**REV-03** — E. K. Broadbent and C. L. Ramiller, *"Selective Low
+Pressure Chemical Vapor Deposition of Tungsten"*, Journal of The
+Electrochemical Society, vol. 131, no. 6, pp. 1427–1433, 1984,
+DOI 10.1149/1.2115864.
+<https://iopscience.iop.org/article/10.1149/1.2115864>. Foundational
+WF₆/H₂ and WF₆/SiH₄ kinetics behind W plug fill. Tier: deep dive.
+
+**REV-04** — S.-L. Zhang and M. Östling, *"Metal Silicides in CMOS
+Technology: Past, Present, and Future Trends"*, Critical Reviews in
+Solid State and Materials Sciences, vol. 28, no. 1, pp. 1–129, 2003,
+DOI 10.1080/10408430390802431. TiSi₂, CoSi₂ and NiSi salicide. Tier:
+deep dive.
+
+**REV-05** — E. C. Jones and E. Ishida, *"Shallow junction doping
+technologies for ULSI"*, Materials Science and Engineering: R, vol. 24,
+no. 1–2, pp. 1–80, 1998, DOI 10.1016/S0927-796X(98)00013-8. Low-energy
+implantation, transient-enhanced diffusion, extension/halo formation
+and RTA. Tier: deep dive.
+
+**REV-06** — M. H. White, D. A. Adams and J. Bu, *"On the go with
+SONOS"* — see PAP-01. Tier: deep dive.
+
+### 8.4 Encyclopaedia articles (high-level entry points)
+
+All verified on 2026-08-30:
+
+* *Shallow trench isolation* — <https://en.wikipedia.org/wiki/Shallow_trench_isolation>
+* *Chemical-mechanical polishing* — <https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>
+* *Rapid thermal processing* — <https://en.wikipedia.org/wiki/Rapid_thermal_processing>
+* *Ion implantation* — <https://en.wikipedia.org/wiki/Ion_implantation>
+* *Photolithography* (g/h/i-line and KrF/ArF wavelengths) — <https://en.wikipedia.org/wiki/Photolithography>
+* *Reactive-ion etching* — <https://en.wikipedia.org/wiki/Reactive-ion_etching>
+* *Chemical vapor deposition* (LPCVD, PECVD) — <https://en.wikipedia.org/wiki/Chemical_vapor_deposition>
+* *Sputter deposition* — <https://en.wikipedia.org/wiki/Sputter_deposition>
+* *Salicide* — <https://en.wikipedia.org/wiki/Salicide>
+* *Front end of line* — <https://en.wikipedia.org/wiki/Front_end_of_line>
+* *Back end of line* — <https://en.wikipedia.org/wiki/Back_end_of_line>
+* *SONOS* — see CYP-26
+* *130 nm process* — see ANN-17
