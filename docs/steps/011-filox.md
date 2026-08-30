@@ -61,8 +61,8 @@ insulator. The fill has to be:
   follow without etching faster than thermal oxide, or it will recess
   below the active surface and form divots at the active edge.
 * **Low in hydrogen and moisture.** HDP oxide from silane is "a nearly
-  hydrogen-free film" (WIKI-PECVD), but the hydrogen that is present can
-  reach the gate oxide (NISHIMURA-2002).
+  hydrogen-free film" (WIKI-PECVD), but residual hydrogen and moisture
+  remain a concern for the gate oxide grown later (TXT-05).
 * **Uniform in thickness** over dense and isolated patterns, because
   the polish at {ref}`CMPNIT <step-012>` has to clear it everywhere
   without over-polishing the nitride. This is why the FOM layer carries
@@ -86,8 +86,9 @@ An industry-generic HDP-CVD STI fill for a 200 mm, 130 nm-era fab:
    deposition-to-sputter ratio is the key tuning parameter for
    gap-fill (THUNG-2016; the Novellus release speaks of "tailoring the
    deposition, etch, and sputter-to-deposition (S/D) ratio",
-   LAM-SPEED). A published 0.13 µm STI gap-fill study is based on the
-   same SiH₄–O₂–Ar HDP-CVD system (NISHIMURA-2002).
+   LAM-SPEED). A published 0.13 µm STI gap-fill study (space width
+   0.13 µm, aspect ratio 3.9) models the same sputter/deposition
+   balance in HDP-CVD (NISHIMURA-2002).
 3. **Sequence.** A short *in-situ* sputter-clean or a thin protective
    liner deposition at low bias (so that the sputter component does
    not clip the nitride corners and redeposit silicon-rich material on

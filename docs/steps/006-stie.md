@@ -114,9 +114,10 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
 
 SkyWater's capability page lists the exact chemistry on its AMAT
 etcher: "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2 – gate, trench, W/WN"
-(SKW-01). Applied Materials sold a dedicated "DPS STI Centura"
-configuration of this decoupled-plasma-source platform from late
-1998 (see open questions).
+(SKW-01). Search-engine snippets of a 1998 Applied Materials press
+release refer to a dedicated "DPS STI Centura" configuration of this
+decoupled-plasma-source platform; the release itself could not be
+retrieved, so this is unverified (see open questions).
 
 ## Machines typically used
 

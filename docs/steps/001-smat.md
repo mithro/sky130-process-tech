@@ -39,8 +39,10 @@ What can be said publicly about the SKY130 starting wafer:
 * **Suppliers.** SkyWater's 2021 registration statement lists its
   principal silicon-wafer suppliers as "GlobalWafers Singapore Pte. Ltd.
   (silicon wafers)" and "SEH America, subsidiary of Shin-Etsu Handotai,
-  Ltd. (silicon wafers)" (SEC-01); the 2023 annual report repeats both
-  names (SEC-02). In 2015 Cypress issued product-change notice
+  Ltd. (silicon wafers)" (SEC-01); the 2023 annual report lists
+  "Globalwafers Co. LTD." and "SEH America Inc, subsidiary of Shin-Etsu
+  Handotai, Ltd." as the wafer suppliers (SEC-02). In 2015 Cypress
+  issued product-change notice
   PIN152804, "Qualification of GlobalWafer Silicon Wafers for 250nm,
   130nm and 90nm Technology Products at Cypress Fab 4", covering the
   "130nm C8/R8/S8/L8" families and stating that Cypress would use
@@ -77,11 +79,11 @@ depends on:
   historically made epi the choice for logic (ITRS-01: "high-performance
   logic ICs are generally manufactured on more costly epitaxial wafers
   … (e.g., latch-up suppression capability)"). The same roadmap notes
-  that this "may no longer be as critical due to the use of shallow
-  trench isolation (STI) and the development of alternate doping means
-  for achieving latch-up suppression" (ITRS-01) — which is exactly the
-  combination SKY130 uses: STI plus retrograde wells plus an optional
-  deep N-well.
+  that this "may no longer be as critical due to the implementation of
+  shallow trench isolation (STI) and the development of alternate
+  doping means for achieving latch-up suppression" (ITRS-01) — which is
+  exactly the combination SKY130 uses: STI plus retrograde wells plus
+  an optional deep N-well.
 * **Defect density and gate-oxide integrity.** Crystal-originated
   particles, metallic contamination and surface micro-roughness of the
   incoming wafer propagate directly into gate-oxide yield; the ITRS
@@ -187,7 +189,7 @@ Materials in SEC-02) but do not tie any product to a step.
   (ROIC)* platform table ("S130 … 200mm … Substrates: Bulk"), accessed
   2026-08-30. <https://www.skywatertechnology.com/cmos/>
 * **SEC-01** — SkyWater Technology, Inc., Form S-1, filed 2021-03-22,
-  "Raw Materials" section.
+  "Raw materials." run-in paragraph under "Manufacturing".
   <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 * **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal 2023.
   <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>

@@ -82,7 +82,7 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
   4 : 3 is used to keep the film silicon-poor and stoichiometric
   (TXT-02). The Cypress ONO patents describe the same DCS/NH₃ LPCVD
   chemistry for the SONOS nitride, at "about 700° C. to about 875° C."
-  (PAT-01) and "700–850 °C, 5–500 mTorr" (PAT-02), which shows that this
+  (PAT-01) and 700–850 °C, 5–500 mTorr (PAT-02), which shows that this
   chemistry is native to the Cypress furnace set.
 * **Film properties.** Stoichiometric LPCVD nitride is under about
   1 GPa of tensile stress and has a refractive index near 2.0; both are
