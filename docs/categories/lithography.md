@@ -175,8 +175,9 @@ exposure tool as dose and alignment corrections.
   standard 248 nm light", NA 0.7, "120 200 mm wafer per hour"
   [asml-750e]) and PAS 5500/800 (announced 2001-01-31: NA 0.80,
   "120 nm resolution", "115 200 mm wafers per hour" [asml-800]); Nikon
-  NSR-S204B (248 nm, 4:1, 25 × 33 mm field, NA 0.55–0.68 [nikon]);
-  Canon FPA-3000EX4 (248 nm, 5×, NA 0.6 [canon]). The PAS 5500 platform, first shipped in 1991, was still
+  NSR-S204B (248 nm, 4:1, 25 × 33 mm field, NA 0.55–0.68; the cited
+  specification sheet describes a 300 mm-configured unit built in 2002
+  [nikon]); Canon FPA-3000EX4 (248 nm, 5×, NA 0.6 [canon]). The PAS 5500 platform, first shipped in 1991, was still
   being supplied, latterly from recycled cores, three decades later
   ([ASML: Three decades of PAS 5500][asml-30]).
 * **i-line steppers** for non-critical layers: ASML PAS 5500/275 and
@@ -185,8 +186,8 @@ exposure tool as dose and alignment corrections.
   1997 for 200 mm, up to 120 wafers per hour [tel-act8];
   [TEL ACT series][tel-act]), SVG/ASML 90S and Dainippon Screen (DNS)
   tracks.
-* **Metrology**: KLA-Tencor 8100/8100XP CD-SEM (0.4–1.5 kV landing
-  energy, resolution below 4 nm [kla8100]) and Hitachi S-9200/S-9260
+* **Metrology**: KLA-Tencor 8100/8100XP CD-SEM (accelerating voltage
+  0.4–1.5 kV, resolution below 4 nm [kla8100]) and Hitachi S-9200/S-9260
   CD-SEMs [hitachi]; KLA-Tencor
   5xxx/Archer optical overlay tools; after-develop inspection on
   KLA-Tencor 2xxx bright-field inspectors ([Wikipedia: KLA

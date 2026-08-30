@@ -273,8 +273,8 @@ implanters is given by Current [current].
   <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
 * Axcelis Technologies, "GSD Ovation — High Current & High Energy
   Batch Ion Implanters". <https://www.axcelis.com/products/gsd-ovation/>
-* Legacy Semi / SurplusGLOBAL, "Varian VIISta HC High Current
-  Implanter" (listing). <https://www.surplusglobal.com/semiconductor/equip/implant/varian/94062-varian-viista-hc-high-current-implanter/>
+* Legacy Semi, "Varian VIISta HC High Current Implanter" (listing).
+  <https://www.semimarket.com/item/varian-viista-hc-high-current-implanter/94062>
 * W. Shockley, "Forming semiconductive devices by ionic bombardment",
   US Patent 2,787,564 (1957).
   <https://patents.google.com/patent/US2787564A/en>
@@ -348,4 +348,4 @@ implanters is given by Current [current].
 [current]: https://doi.org/10.1016/j.mssp.2016.10.045
 [itrs2001-fep]: https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf
 [axcelis-gsd]: https://www.axcelis.com/products/gsd-ovation/
-[viista]: https://www.surplusglobal.com/semiconductor/equip/implant/varian/94062-varian-viista-hc-high-current-implanter/
+[viista]: https://www.semimarket.com/item/varian-viista-hc-high-current-implanter/94062

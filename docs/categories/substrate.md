@@ -68,9 +68,10 @@ stated publicly ([SKY130 PDK documentation][pdk]).
 
 Almost all IC wafers are cut from boules grown by the Czochralski
 method, in which a seed crystal is dipped into molten silicon (melting
-point 1414 °C) held in a quartz crucible and slowly withdrawn while
-rotating, so that the melt freezes onto the seed as one continuous
-crystal ([Wikipedia: Czochralski method][wiki-cz]). The dopant is added
+point 1414 °C [Wikipedia: Silicon][wiki-si]) held in a quartz crucible
+and slowly withdrawn while rotating, so that the melt freezes onto the
+seed as one continuous crystal ([Wikipedia: Czochralski
+method][wiki-cz]). The dopant is added
 to the melt; because the segregation coefficient of most dopants is
 less than one, the crystal grows progressively more heavily doped from
 seed to tail, and the resistivity is specified as a range rather than a
@@ -79,11 +80,14 @@ growth, which avoids the crucible and gives much lower oxygen, is used
 for power and detector devices but is not economical at 200 mm for CMOS
 ([Wikipedia: Float-zone silicon][wiki-fz]).
 
-The boule is ground to diameter, notched, sliced with a wire saw,
-lapped, edge-rounded, chemically etched to remove saw damage, and
-finally polished on one side by {term}`CMP` to a mirror finish with
-sub-nanometre roughness, then cleaned and packed
-([Wikipedia: Wafer (electronics)][wiki-wafer]).
+The boule "is then sliced with a wafer saw (a type of wire saw),
+machined to improve flatness, chemically etched to remove crystal
+damage from machining steps and finally polished to form wafers"
+([Wikipedia: Wafer (electronics)][wiki-wafer]); in full, the sequence
+is grinding to diameter, notching, slicing, lapping, edge rounding,
+etching, single-side {term}`CMP` to a mirror finish with sub-nanometre
+roughness, cleaning and packing (Plummer, Deal and Griffin, ch. 3;
+Wolf and Tauber, ch. 1).
 
 ### Orientation, dopant and resistivity
 
@@ -125,7 +129,7 @@ wafer vendors increasingly supply material whose precipitation
 behaviour has been pre-set by the crystal-growth conditions
 (Plummer, Deal and Griffin, ch. 4; ITRS 2001 FEP
 [itrs2001-fep]). Backside damage or polysilicon films provide
-alternative "extrinsic" gettering ([Wikipedia: Getter][wiki-getter]).
+alternative "extrinsic" gettering (Plummer, Deal and Griffin, ch. 4).
 
 ### Flatness and particles
 
@@ -200,6 +204,7 @@ The substrate category has no process tool in the fab itself; the
   <https://en.wikipedia.org/wiki/Wafer_(electronics)>
 * Wikipedia, "Czochralski method".
   <https://en.wikipedia.org/wiki/Czochralski_method>
+* Wikipedia, "Silicon". <https://en.wikipedia.org/wiki/Silicon>
 * Wikipedia, "Float-zone silicon".
   <https://en.wikipedia.org/wiki/Float-zone_silicon>
 * Wikipedia, "Monocrystalline silicon".
@@ -207,7 +212,6 @@ The substrate category has no process tool in the fab itself; the
 * Wikipedia, "Miller index".
   <https://en.wikipedia.org/wiki/Miller_index>
 * Wikipedia, "Epitaxy". <https://en.wikipedia.org/wiki/Epitaxy>
-* Wikipedia, "Getter". <https://en.wikipedia.org/wiki/Gettering>
 * Wikipedia, "Latch-up". <https://en.wikipedia.org/wiki/Latch-up>
 * J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
   Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
@@ -238,8 +242,8 @@ The substrate category has no process tool in the fab itself; the
 
 [wiki-wafer]: https://en.wikipedia.org/wiki/Wafer_(electronics)
 [wiki-cz]: https://en.wikipedia.org/wiki/Czochralski_method
+[wiki-si]: https://en.wikipedia.org/wiki/Silicon
 [wiki-fz]: https://en.wikipedia.org/wiki/Float-zone_silicon
-[wiki-getter]: https://en.wikipedia.org/wiki/Gettering
 [wiki-seh]: https://en.wikipedia.org/wiki/Shin-Etsu_Chemical
 [wiki-sumco]: https://en.wikipedia.org/wiki/SUMCO
 [wiki-memc]: https://en.wikipedia.org/wiki/MEMC_Electronic_Materials
