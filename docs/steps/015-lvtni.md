@@ -1,10 +1,6 @@
 (step-015)=
 # Step 015 — LVTNI: Low Vt NMOS implantation
 
-:::{warning}
-This page is a stub. Content has not yet been researched and reviewed.
-:::
-
 | | |
 |---|---|
 | **Step number** | 15 of 171 |
@@ -16,50 +12,260 @@ This page is a stub. Content has not yet been researched and reviewed.
 
 ## What this step is
 
-*To be written.*
+`LVTNI` is a channel-type ion implant performed through the resist
+windows opened at {ref}`LVTNM <step-014>`. It is the first implant of
+the well and channel module and — unusually — it is placed *before*
+the N-well and P-well implants that follow at
+{ref}`NWI <step-018>`/{ref}`NWI2 <step-019>` and
+{ref}`PWI <step-027>`/{ref}`PWI2 <step-028>`. Its job is to set the
+difference in threshold voltage between the low-Vt N-channel devices
+of the PDK and the standard ones. The dopant enters the active silicon
+through the thin pad oxide left by {ref}`NS19 <step-013>`, which acts
+as the screen oxide; a Cypress SONOS patent from the same lineage
+describes exactly this arrangement, with "dopants … implanted into
+substrate 204 through the pad oxide 209" of "about 10 nanometers (nm)
+to about 20 nm" (PAT-04).
+
+Which regions receive the implant depends on the reticle polarity
+discussed on the {ref}`LVTNM <step-014>` page. The PDK describes the
+drawn `lvtn` layer as defining "regions to block Vt adjust implant for
+low Vt LV PMOS/NMOS, SONOS FETs and Native NMOS" (PDK-PERIPH). Two
+readings are possible:
+
+* **Block reading.** `LVTNI` is the baseline NMOS threshold-adjust
+  implant (a p-type species) given to every future NMOS channel
+  *except* those drawn as `lvtn`; low-Vt, native and SONOS channels
+  are the ones that skip it. This matches the PDK's word "block" and
+  the statement that native devices are "constructed by blocking out
+  all VT implants" (PDK-07).
+* **Counter-dope reading.** `LVTNI` is an n-type implant delivered
+  *only* into `lvtn` regions, which lowers the NMOS threshold by
+  partially compensating the p-type channel. A Round Rock/Micron
+  patent describes low-Vt devices obtained in this way, with a
+  "counter-doped channel region" (PAT-VT-RRR).
+
+Both are consistent with an NMOS threshold being lowered; only the
+first is consistent with the same layer also lowering the PMOS
+threshold, unless the reticle is derived separately for N-well
+regions. We favour the block reading but cannot confirm it.
 
 ## Step category
 
-*To be written.*
+`LVTNI` is an {ref}`Ion implantation <category-implant>` step of the
+*threshold-adjust* class: light dose (of order 10¹²–10¹³ cm⁻²), low
+energy (tens of keV), placed just under the future gate oxide, from a
+medium-current implanter (category page; TXT-01, ch. 8).
 
 ## Why this step exists
 
-*To be written.*
+The threshold voltage of a MOSFET rises with the doping of the channel
+region: in the standard body-effect expression the parameter γ
+contains the doping concentration N_A (WIKI-VT), and multi-threshold
+CMOS is built by "altering the concentration of dopant atoms in the
+channel region beneath the gate oxide" (WIKI-MTCMOS). The 1.8 V NMOS
+family of SKY130 comprises `nfet_01v8` and `nfet_01v8_lvt`
+(PDK-07); `LVTNI`, together with the N-channel implant
+{ref}`NCHI <step-045>` that all 1.8 V devices receive under the
+low-voltage oxide mask, is what separates the two. The same mask
+serves `pfet_01v8_lvt`, the native NMOS devices and the SONOS cells
+(PDK-PERIPH), so this step (or its absence) also underlies the
+zero-Vt-class devices whose value to analogue designers is a
+threshold near 0 V.
+
+The trade is leakage: "Typical high Vth devices reduce static leakage
+by 10 times compared with low Vth devices" (WIKI-MTCMOS). A process
+without `LVTNI` would still make working logic, but only at one
+threshold.
 
 ## How it is typically performed
 
-*To be written.*
+An industry-generic threshold-adjust implant for a 200 mm, 130 nm-era
+fab. The SKY130 species, energy and dose are not public; the values
+below are typical or taken from contemporaneous patents.
+
+* **Species.** For an implant that *raises* an NMOS threshold the
+  species is p-type: boron (¹¹B⁺), BF₂⁺ for a shallower boron
+  placement (only 11/49 of the beam energy is carried by the boron
+  atom; category page), or indium, a heavy p-type dopant used for
+  steep retrograde channels (SHAHIDI-1993; CHANG-2000). Cypress's own
+  patents describe BF₂ "at an energy of from about 10 to about 100
+  kilo-electron volts (keV), and a dose of from about 1e12 cm⁻² to
+  about 1e14 cm⁻² to form an N-type MOS (NMOS) transistor" channel,
+  and an indium-doped channel "implanted with Indium (In) at an
+  energy of from about 50 to about 500 kilo-electron volts (keV), and
+  a dose of from about 5e11 … to about 5e12 cm⁻²" for the memory
+  transistor (PAT-04); a 2020 Cypress article discusses "channel
+  engineering with indium" for the SONOS cell (CYP-25). For an implant
+  that *lowers* the threshold by counter-doping, the species is n-type
+  — arsenic or phosphorus — at similar doses (PAT-VT-RRR).
+* **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻²: an LSI Logic
+  patent has the threshold-adjust boron "implanted through the
+  sacrificial gate oxide in doses between 1×10¹² and 1×10¹³ atoms/cm²
+  … at implant energies between 50 and 100 keV" (PAT-VT-LSI); an AMD
+  patent gives "approximately 10-20 KeV for boron or 45-90 KeV for
+  BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a
+  channel implant (PAT-VT-AMD).
+* **Tilt and twist.** A few degrees of tilt with twist to suppress
+  channelling — "most implantation is carried out a few degrees
+  off-axis" (WIKI-IMPLANT); the PDK's assumptions table records 7° as
+  the angle for tip implants (PDK-03), which is also the textbook
+  convention for channel implants (TXT-02).
+* **Screen oxide.** The 10–20 nm pad oxide (PAT-04) randomises the
+  beam and keeps sputtered resist off the silicon.
+* **Charge control and wafer cooling.** Electron shower and cooled
+  electrostatic chuck — both features SkyWater lists for its
+  medium-current tool ("ESC chuck, E shower", SKW-01).
+* **Anneal.** None here; activation waits for {ref}`RTAI <step-034>`,
+  after all well implants.
+* **Monitoring.** Modulated-reflectance (Therma-Wave) on product or
+  monitor wafers, since the dose is too low for sheet resistance to
+  be a sensitive check (category page).
 
 ## Machines typically used
 
-*To be written.*
+* **Medium-current implanter**, 200 mm, serial end station with
+  tilt/twist: Axcelis (Eaton) NV-8250/8250HT, Varian E220/E500,
+  Nissin (TXT-09; category page). The Eaton 8250HT is described as
+  covering "3keV to 750keV" with beam currents "between 4µA and
+  3,500µA" (AXCELIS-8250).
+* **Therma-Wave** modulated-reflectance monitor; four-point probe on
+  monitor wafers after a monitor anneal.
 
 ## Machines likely used at SkyWater
 
-*To be written.*
+* **Axcelis 8250 medium-current implanter.** SKW-01 lists "Axcelis
+  8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,
+  0-60 deg tilt". The species (B, BF₂, As), the dose window
+  (10¹¹–10¹⁴ cm⁻²) and the tilt capability are exactly those of a
+  threshold-adjust implant. Strength: **strong** for the tool;
+  assignment to `LVTNI` is an **inference** from capability.
+* **Axcelis GSD** (SKW-01) could equally run a keV boron implant, but
+  a batch high-current/high-energy tool is normally reserved for
+  wells and source/drains. Strength: strong for existence, weak for
+  assignment.
+* A SkyWater maintenance profile mentions implanter robotics and
+  vacuum work (SKW-07) — corroboration that implanters are maintained
+  in house, not tool evidence.
 
 ## Resources required
 
-*To be written.*
+* **Boron trifluoride (BF₃)** as the source gas for B⁺ and BF₂⁺
+  (WIKI-IMPLANT; category page); **arsine (AsH₃)** or **phosphine
+  (PH₃)** if the implant is n-type; **solid indium** in a vaporiser
+  oven if indium is used (category page).
+* **Source support gases** (argon, xenon, hydrogen); **liquid nitrogen
+  / cryopump** consumables; high-purity nitrogen vent gas.
+* **Ion-source consumables** (filaments or cathodes, arc-chamber
+  liners, extraction electrodes).
+* **Wafer-cooling** water and backside gas; **monitor wafers**.
+* SkyWater's filings name Air Products, Praxair, Linde and Airgas
+  among its gas suppliers without tying them to a step (SEC-01,
+  SEC-02).
 
 ## Related steps and cross-references
 
-*To be written.*
+* Previous: {ref}`LVTNM <step-014>` (the mask); next:
+  {ref}`LVTNIS <step-016>` (strip).
+* Threshold-setting companions: {ref}`LVTPI <step-020>` (PMOS, under
+  the N-well mask), {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>`
+  (high-Vt PMOS) and {ref}`NCHI <step-045>` (N-channel, under the
+  low-voltage oxide mask).
+* Activated at {ref}`RTAI <step-034>`.
+* Category page: {ref}`Ion implantation <category-implant>`.
 
 ## References
 
 ### Cross-check
 
-*To be written.*
+* **SKW-01** — SkyWater Technology, *Facilities & Capabilities*,
+  accessed 2026-08-30 (Axcelis 8250 "Mid current B11, BF2, As, ESC
+  chuck, E shower, 1e11 to 1e14, 0-60 deg tilt").
+  <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+* **SKW-07** — SkyWater Technology, *A Day in the Life of a SkyWater
+  Maintenance Technician*, 2023-12-14.
+  <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
+* **SEC-01 / SEC-02** — SkyWater Technology, Inc., Form S-1
+  (2021-03-22) and Form 10-K for fiscal 2023 (gas suppliers).
+  <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>,
+  <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
+* **PDK-PERIPH** — SkyWater PDK Authors, *Periphery rules* (`lvtn`
+  function text).
+  <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+* **PDK-07** — SkyWater PDK Authors, *Device Details* (`nfet_01v8`,
+  `nfet_01v8_lvt`; native devices "blocking out all VT implants").
+  <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+* **PDK-03** — SkyWater PDK Authors, *Criteria & Assumptions* (implant
+  angles table).
+  <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+* **PAT-04** — K. Ramkumar, I. Kouznetsov and V. Prabhakar (Cypress),
+  US 8,796,098 B1, *Embedded SONOS based memory cells*, granted
+  2014-08-05 (pad oxide 10–20 nm; BF₂ 10–100 keV, 1e12–1e14 cm⁻²;
+  indium 50–500 keV).
+  <https://patents.google.com/patent/US8796098B1/en>
+* **AXCELIS-8250** — Semiconductor Online, *8250HT Medium Current Ion
+  Implanter* (Eaton Semiconductor Equipment Operations product
+  description; 3–750 keV, 4–3500 µA).
+  <https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>
 
 ### High-level understanding
 
-*To be written.*
+* **WIKI-IMPLANT** — Wikipedia, *Ion implantation*.
+  <https://en.wikipedia.org/wiki/Ion_implantation>
+* **WIKI-VT** — Wikipedia, *Threshold voltage* (body-effect parameter
+  containing N_A).
+  <https://en.wikipedia.org/wiki/Threshold_voltage>
+* **WIKI-MTCMOS** — Wikipedia, *Multi-threshold CMOS*.
+  <https://en.wikipedia.org/wiki/Multi-threshold_CMOS>
+* **TXT-01** — J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon
+  VLSI Technology*, Prentice Hall, 2000, ISBN 978-0-13-085037-9, ch. 8
+  ("Ion Implantation").
+  <https://openlibrary.org/isbn/9780130850379>
+* **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the
+  VLSI Era, Vol. 1*, 2nd ed., Lattice Press, 2000,
+  ISBN 978-0-9616721-6-4, ch. 9.
+  <https://openlibrary.org/isbn/9780961672164>
+* **TXT-09** — Y. Nishi and R. Doering (eds.), *Handbook of
+  Semiconductor Manufacturing Technology*, 2nd ed., CRC Press, 2007,
+  ISBN 978-1-57444-675-3 (implanter classes).
+  <https://openlibrary.org/isbn/9781574446753>
+* **CYP-25** — K. Ramkumar, V. Prabhakar and R. Kapre (Cypress),
+  *Scalable SONOS based embedded non-volatile memory technology*,
+  Semiconductor Digest, 2020-02 (indium channel engineering).
+  <https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>
 
 ### Deep dive
 
-*To be written.*
+* **PAT-VT-RRR** — M. Helm and X. Zhou, US 2011/0006372 A1 (Round
+  Rock Research), published 2011-01-13 (arsenic and BF₂/indium Vt
+  adjusts; counter-doped low-Vt channel).
+  <https://patents.google.com/patent/US20110006372A1/en>
+* **PAT-VT-LSI** — S. Aronowitz, L. Khan and J. Kimball (LSI Logic),
+  US 5,963,801 A, *Method of forming retrograde well structures and
+  punch-through barriers using low energy implants*, granted
+  1999-10-05 (Vt-adjust boron 1e12–1e13 cm⁻² at 50–100 keV).
+  <https://patents.google.com/patent/US5963801A/en>
+* **PAT-VT-AMD** — Z. Krivokapic and O. Milic (AMD), US 6,238,982 B1,
+  *Multiple threshold voltage semiconductor device fabrication
+  technology*, granted 2001-05-29 (channel implant energies/doses).
+  <https://patents.google.com/patent/US6238982B1/en>
+* **SHAHIDI-1993** — G. G. Shahidi et al., "Indium channel implant for
+  improved short-channel behavior of submicrometer NMOSFETs", *IEEE
+  Electron Device Letters*, vol. 14, no. 8, pp. 409–411, 1993,
+  DOI 10.1109/55.225595.
+* **CHANG-2000** — S.-J. Chang et al., "High-performance and
+  high-reliability 80-nm gate-length DTMOS with indium super steep
+  retrograde channel", *IEEE Transactions on Electron Devices*,
+  vol. 47, no. 12, pp. 2379–2384, 2000, DOI 10.1109/16.887025.
 
 ## Open questions
 
-*To be written.*
+* The species, energy, dose and tilt of `LVTNI` are not public; so is
+  its polarity (p-type baseline implant that low-Vt devices skip, or
+  n-type counter-dope into low-Vt devices).
+* Why this channel implant precedes the well implants — rather than
+  following them as in most published flows — is not documented; a
+  plausible reason is simply that it shares the full
+  {ref}`RTAI <step-034>` anneal with the wells either way.
+* Whether the pad oxide from {ref}`BOX <step-002>` is still present
+  as the screen oxide (see the open question on
+  {ref}`NS19 <step-013>`) is inferred, not stated.
