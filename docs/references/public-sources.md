@@ -145,6 +145,18 @@ contents for the rule chapters (Background, Masks, Criteria &
 Assumptions, Layers, Periphery rules, HV / VHV methodology, Antenna,
 RCX, Device details). Tier: cross-check.
 
+**PDK-PERIPH** — *Periphery rules* page.
+<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>.
+The numeric design rules by layer. Values used on the step pages:
+difftap.1 (width of diff or tap) 0.150 µm; difftap.3 (spacing of diff
+to diff, tap to tap, or non-abutting diff to tap) 0.270 µm; dnwell.2
+(minimum width of deep N-well) 3.000 µm; dnwell.3 (minimum spacing
+between deep N-wells, marked "Rule exempt inside UHVI") 6.300 µm;
+dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
+(enclosure rules between deep N-well and N-well); poly.2 (spacing of
+poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
+Tier: cross-check.
+
 **PDK-12** — *Sky130 Technology Library* (Hammer VLSI documentation).
 <https://hammer-vlsi.readthedocs.io/en/latest/Technology/Sky130.html>.
 Third-party (UC Berkeley) description of how the open PDK is consumed
@@ -391,9 +403,12 @@ Multibeam direct-write tool". Tier: cross-check (tool naming).
 **SKW-07** — SkyWater Technology, *"A Day in the Life of a SkyWater
 Maintenance Technician"*, 2023-12-14.
 <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>.
-Names a "Novellus high density plasma tool", the "SEZ etcher tool" and
-work on implanter robotics and vacuum systems. Tier: cross-check (tool
-naming).
+Names a "Novellus high density plasma tool" and the "SEZ etcher tool";
+photo captions show technicians troubleshooting "an implanter" and,
+separately, servicing tool robots (robot teach points, "a robot fault
+on a Novellus high density plasma tool", "a motor for a robot on a SEZ
+etcher tool") and "the pneumatic controls of a vacuum system". Tier:
+cross-check (tool naming).
 
 **SKW-08** — SkyWater Technology, *"Maintenance Technician Job
 Overview"* and *"Careers & Jobs"* pages.
@@ -491,11 +506,14 @@ gate) and CMOS process flows (greater than 130 nm) are the foundation
 of our business"; "the base design IP portfolio for S130 technologies
 originating from Cypress (now Infineon) was licensed via a technology
 license agreement in 2017"; facilities of "approximately 396,000 square
-feet"; raw-material suppliers (GlobalWafers and SEH America wafers,
-Honeywell Electronic Materials sputter targets, Air Products and
-Praxair gases, KMG Chemicals); "Advantages of 200 millimeter Wafer
-Fabs". Note: SEC.gov rejects fetches without a descriptive
-`User-Agent`. Tier: cross-check.
+feet"; raw-material suppliers, given in a run-in paragraph headed
+"Raw materials." under "Manufacturing" (GlobalWafers Singapore and SEH
+America wafers, Honeywell Electronic Materials sputter targets, Air
+Products and Praxair gases, KMG Chemicals; photoresist from "The Dow
+Chemical Company", "JSR Corporation" and "Tokyo Ohka Kogyo America,
+Inc."; developer from Air Products, Moses Lake); "Advantages of 200
+millimeter Wafer Fabs". Note: SEC.gov rejects fetches without a
+descriptive `User-Agent`. Tier: cross-check.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -855,9 +873,24 @@ tunnel dielectric 1.0–4.0 nm, oxynitride charge-trapping layers
 2.0–5.0 nm, blocking oxide ~3–4.5 nm, HV gate oxide 5–7 nm, LV gate
 oxide 1–3 nm, indium channel doping. Tier: deep dive.
 
-*Searches for Cypress patents specifically on STI, TiN local
+**PAT-STI-CR** — US 7,439,141 B2, *"Shallow trench isolation approach
+for improved STI corner rounding"*, U. Kim, Y. Sun, M. S. Chang et al.;
+priority date 2001-12-27, assigned to Spansion LLC, granted 2008-10-21.
+<https://patents.google.com/patent/US7439141B2/en>. Double liner
+oxidation scheme: first liner grown to "approximately 100-300 Å" at
+"900-1100 degrees Celsius", second liner "approximately 100-500 Å",
+pad-oxide undercut of "approximately 100-300 Å" by HF before the first
+liner oxidation, isolation oxide polished back level with the nitride,
+nitride then stripped "to expose the pad oxide". This patent
+originated at Spansion and came into Cypress's portfolio only through
+the 2015 Spansion merger; it is **not** evidence for the S8 flow and is
+used on the step pages only for era-typical STI values. Tier: deep
+dive.
+
+*Searches for Cypress-originated patents on STI, TiN local
 interconnect, poly resistors or TiW/AlCu metallisation returned only
-generic results; none is listed here.*
+generic results; the one STI patent in Cypress's hands (PAT-STI-CR)
+came from Spansion.*
 
 ### 5.4 SONOS papers (non-Cypress) useful for the 130 nm node
 
@@ -1153,8 +1186,142 @@ All verified on 2026-08-30:
 * *Salicide* — <https://en.wikipedia.org/wiki/Salicide>
 * *Front end of line* — <https://en.wikipedia.org/wiki/Front_end_of_line>
 * *Back end of line* — <https://en.wikipedia.org/wiki/Back_end_of_line>
+* *Thermal oxidation* (Deal–Grove growth, silicon consumption) — <https://en.wikipedia.org/wiki/Thermal_oxidation>
+* *Silicon nitride* (LPCVD reaction, hot H₃PO₄ etch, oxidation mask) — <https://en.wikipedia.org/wiki/Silicon_nitride>
+* *Plasma-enhanced chemical vapor deposition* (high-density plasma, SiH₄/O₂/Ar oxide) — <https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>
+* *Wafer (electronics)* (200 mm wafer thickness and notch) — <https://en.wikipedia.org/wiki/Wafer_(electronics)>
+* *RCA clean* (SC-1 and SC-2) — <https://en.wikipedia.org/wiki/RCA_clean>
 * *SONOS* — see CYP-26
 * *130 nm process* — see ANN-17
+
+### 8.5 Papers and patents used for era-typical isolation-module values
+
+None of these is a SkyWater or Cypress source; the step pages for the
+isolation module (steps 001–013) use them for typical numbers and
+mechanisms of a 130 nm-era STI and deep N-well module. DOIs were
+verified through the Crossref API and patents through Google Patents
+on 2026-08-30.
+
+**VGH-1967** — W. van Gelder and V. E. Hauser, *"The Etching of Silicon
+Nitride in Phosphoric Acid with Silicon Dioxide as a Mask"*, Journal of
+The Electrochemical Society, vol. 114, no. 8, p. 869, 1967,
+DOI 10.1149/1.2426757.
+<https://iopscience.iop.org/article/10.1149/1.2426757>. Hot phosphoric
+acid etch rates of silicon nitride, silicon dioxide and silicon, i.e.
+the selectivity behind every wet nitride strip. Tier: deep dive.
+
+**THUNG-2016** — B. J. Thung, K. Ibrahim, N. A. Manap and
+F. Salehuddin, *"Challenges for 0.13µm Generation Shallow Trench
+Isolation on 0.18µm Equipment Platform"*, Journal of Telecommunication,
+Electronic and Computer Engineering (JTEC), vol. 8, no. 5, pp. 15–21,
+2016.
+<https://jtec.utem.edu.my/jtec/article/view/697> (PDF:
+<https://jtec.utem.edu.my/jtec/article/download/697/707/3255>). A
+foundry account of running 0.13 µm STI on 0.18 µm-generation tools:
+definition of the fill aspect ratio, HDP void / poly-stringer yield
+loss, OPC on the STI layout, liner oxidation, post-etch wet clean,
+phosphoric-acid nitride strip. The journal page lists the first author
+as "Thung Beng Joo" (family name Thung). Tier: deep dive.
+
+**NISHIMURA-2002** — H. Nishimura, S. Takagi, M. Fujino and N. Nishi,
+*"Gap-Fill Process of Shallow Trench Isolation for 0.13 µm
+Technologies"*, Japanese Journal of Applied Physics, vol. 41, part 1,
+no. 5A, pp. 2886–2893, 2002, DOI 10.1143/JJAP.41.2886. HDP-CVD
+gap-fill modelling (sputter-yield angular dependence and ionic
+deposition) demonstrated on STI "of space width 0.13 µm and aspect
+ratio 3.9". Tier: deep dive.
+
+**CHEW-2002** — K. W. Chew, J. Zhang, K. Shao, W. B. Loh and S.-F. Chu,
+*"Impact of Deep N-well Implantation on Substrate Noise Coupling and RF
+Transistor Performance for Systems-on-a-Chip Integration"*, ESSDERC
+2002, pp. 251–254, DOI 10.1109/ESSDERC.2002.194917. Deep N-well as a
+substrate-noise isolation structure. Tier: deep dive.
+
+**YANG-2005** — M. T. Yang, D. C. W. Kuo, C. W. Kuo, Y. J. Wang,
+P. P. C. Ho, T. J. Yeh and S. Liu, *"Characterization and model of
+on-chip flicker noise with deep Nwell (DNW) isolation for 130nm and
+beyond SOC"*, ICMTS 2005, pp. 125–129, DOI 10.1109/ICMTS.2005.1452242.
+Deep N-well isolation at the 130 nm node. Tier: deep dive.
+
+**KAO-1987** — D.-B. Kao, J. P. McVittie, W. D. Nix and K. C. Saraswat,
+*"Two-dimensional thermal oxidation of silicon — I. Experiments"*,
+IEEE Transactions on Electron Devices, vol. 34, no. 5, pp. 1008–1017,
+1987, DOI 10.1109/T-ED.1987.23037. Oxidation of curved silicon "is
+retarded at low temperatures and sharp curvatures, and … the
+retardation is more severe on concave than convex structures"
+(abstract). Tier: deep dive.
+
+**KAO-1988** — D.-B. Kao, J. P. McVittie, W. D. Nix and K. C. Saraswat,
+*"Two-dimensional thermal oxidation of silicon. II. Modeling stress
+effects in wet oxides"*, IEEE Transactions on Electron Devices,
+vol. 35, no. 1, pp. 25–37, 1988, DOI 10.1109/16.2412. Viscous-stress
+model of the corner retardation. Tier: deep dive.
+
+**PAT-STI-AMBERWAVE** — US 6,960,781 B2, *"Shallow trench isolation
+process"*, M. T. Currie and A. J. Lochtefeld; original assignee
+AmberWave Systems Corporation, granted 2005-11-01; assigned to Taiwan
+Semiconductor Manufacturing Co. on 2010-01-26.
+<https://patents.google.com/patent/US6960781B2/en>. Pad oxide
+"50-200 Å", nitride "500-2000 Å", trench depth "3000-4000 Å", CMP
+"using the silicon nitride layer over the active area as a stop
+layer", liner oxidation optionally in steam or below 1000 °C. Tier:
+deep dive.
+
+**PAT-STI-LATTICE** — US 7,985,656 B1, *"Shallow trench isolation (STI)
+with trench liner of increased thickness"*, S. Mehta, S. Logie and
+S. Fong (Lattice Semiconductor), granted 2011-07-26.
+<https://patents.google.com/patent/US7985656B1/en>. Liner "in the range
+of approximately 10 nm to approximately 30 nm" grown by "a high
+temperature (for example, in excess of approximately 1000 degrees C.)
+oxide growth process". Tier: deep dive.
+
+**PAT-DNW-HYNIX** — US 6,806,133 B2, *"Method for fabricating
+semiconductor device with triple well structure"*, J.-G. Oh (Hynix
+Semiconductor), granted 2004-10-19.
+<https://patents.google.com/patent/US6806133B2/en>. Deep N-well by
+³¹P⁺ implantation "with an ion implantation energy of about 0.6 MeV to
+about 1.6 MeV" and a dose of "about 5×10¹² ions/cm² to about
+1.5×10¹³ ions/cm²", performed after the STI field oxide is formed.
+Tier: deep dive.
+
+### 8.6 Vendor, facility and marketplace pages for representative tools
+
+Used to describe tool classes that SKW-01 names only by vendor and
+family; none of these pages mentions SkyWater.
+
+**LAM-SPEED** — Novellus Systems (Lam Research newsroom), *"Novellus'
+SPEED Max HDP-CVD Dielectric Gapfill System Extends STI Application to
+32nm"*, press release, 2009-10-05.
+<https://newsroom.lamresearch.com/2009-10-05-NOVELLUS-SPEED-R-MAX-HDP-CVD-DIELECTRIC-GAPFILL-SYSTEM-EXTENDS-STI-APPLICATION-TO-32nm>.
+"HDP is still the preferred gapfill dielectric technology for advanced
+geometries"; "tailoring the deposition, etch, and sputter-to-deposition
+(S/D) ratio"; "enlarged remote plasma source". Tier: cross-check
+(vendor statement).
+
+**AXCELIS-GSD** — Axcelis Technologies, *"Axcelis Announces
+Introduction Of The 'GSD Ovation' High Current And High Energy Batch
+Implanters"*, PR Newswire, 2021-11-02.
+<https://www.prnewswire.com/news-releases/axcelis-announces-introduction-of-the-gsd-ovation-high-current-and-high-energy-batch-implanters-301412520.html>.
+Calls the GSD series "the industry benchmark for the longest
+manufactured and supported batch ion implanter" and names "the GSD/HE
+Ovation with energies up to 3 MeV, and the GSD/VHE Ovation with
+energies up to 4.9 MeV". Tier: cross-check (vendor statement).
+
+**SNF-9400** — Stanford Nanofabrication Facility, *"Lam Research TCP
+9400 Poly Etcher (lampoly)"* equipment page.
+<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>.
+"a Transformer Coupled Plasma (TCP) etcher, generates a uniform, high
+density plasma for selective etching of silicon and polysilicon"; the
+gas list includes chlorine, hydrogen bromide, oxygen and
+tetrafluoromethane. Tier: high-level.
+
+**AVIZA-AVP** — Moov used-equipment marketplace, *"Aviza / SVG /
+Thermco AVP 8000"* listing.
+<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>.
+"The AVP-8000 is a vertical batch furnace with a flexible platform for
+diffusion, oxidation, and LPCVD processes … can handle 150-200mm
+wafers." A dealer listing rather than a vendor data sheet. Tier:
+high-level (weak).
 
 ## 9. Evidence about specific tools at SkyWater
 
