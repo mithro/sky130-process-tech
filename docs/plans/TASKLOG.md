@@ -12,10 +12,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Read the source step list (171 steps) — 2026-08-30
 - [x] Write design document — 2026-08-30
 - [x] Repository scaffolding (licence, .gitignore, README) — 2026-08-30
-- [ ] Sphinx + MyST + Read the Docs configuration, builds clean
-- [ ] Step page template and checker script
-- [ ] Generate 171 stub step pages from the step list
-- [ ] Machine index, material index, mask index, glossary stubs
+- [x] Sphinx + MyST + Read the Docs configuration, builds clean — 2026-08-30
+- [x] Step page template and checker script — 2026-08-30
+- [x] Generate 171 stub step pages from the step list — 2026-08-30
+- [x] Machine index, material index, mask index, glossary stubs — 2026-08-30
 
 ## Phase 1 — Research inventory
 
