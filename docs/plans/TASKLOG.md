@@ -39,6 +39,18 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [ ] Steps 135–163: MiM caps, metal 3–5, vias 3–4
 - [ ] Steps 164–171: passivation, pad, alloy, test
 
+## Phase 2b — Citation conversion (added 2026-08-30)
+
+Citations are now Markdown footnotes with at least eight annotated
+deep-dive entries per step page and twelve per category page
+(`docs/plans/citation-style.md`, enforced by `tools/check_refs.py`).
+`docs/steps/008-dni.md` is the converted exemplar.
+
+- [x] Citation style guide, checker and exemplar page — 2026-08-30
+- [ ] Convert step pages 001–007, 009–013 and expand deep-dive lists
+- [ ] Convert the ten category pages and expand deep-dive lists
+- [ ] Convert steps 014–034 (on branch `steps/014-034`, before merge)
+
 ## Phase 3 — Cross-cutting pages
 
 - [ ] Machine pages + machine ↔ step index
