@@ -70,8 +70,9 @@ ch. 15 [lieberman]).
 A conventional capacitive RIE couples ion density and ion energy through
 the one RF supply. High-density sources decouple them: an inductively
 coupled ({term}`ICP`; Lam's {term}`TCP`; Applied's "decoupled plasma
-source", DPS) coil generates a dense plasma (10¹¹–10¹² cm⁻³) at a few
-millitorr, while a separate low-frequency bias on the electrostatic
+source", DPS) coil generates a dense plasma (typically 10¹¹–10¹² cm⁻³;
+Lieberman and Lichtenberg, ch. 12 [lieberman]) at a few millitorr, while
+a separate low-frequency bias on the electrostatic
 chuck sets the ion energy, so that "the ICP is employed as a high
 density source of ions which increases the etch rate" while the bias
 controls "the energy of ions bombarding the surface" ([Wikipedia:
