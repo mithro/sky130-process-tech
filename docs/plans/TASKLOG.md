@@ -63,3 +63,4 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 
 - 2026-08-30: Worktrees in `.worktrees/` (project-local); max two
   sub-agents concurrently; Sphinx + MyST chosen (see design doc).
+- 2026-08-30: `main` is pushed to `origin` after every merge.
