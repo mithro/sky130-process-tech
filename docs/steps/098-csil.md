@@ -12,8 +12,9 @@
 
 ## What this step is
 
-`CSIL` — contact silicidation — is the rapid thermal anneal that
-reacts the titanium of {ref}`TI/TIN1 <step-097>` with the silicon
+`CSIL` — contact silicidation — is the anneal (on our reading a rapid
+thermal anneal) that reacts the titanium of {ref}`TI/TIN1 <step-097>`
+with the silicon
 and polysilicon at the bottom of every contact hole to form titanium
 disilicide (TiSi₂). Where the titanium lies on oxide — the hole walls
 and the field — it does not react with the substrate; under its TiN

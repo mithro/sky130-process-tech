@@ -16,8 +16,9 @@
 blanket tungsten of {ref}`WDEP <step-099>` and the Ti/TiN liner of
 {ref}`TI/TIN1 <step-097>` from the field, leaving tungsten only
 inside the contact holes. The wafer is polished face-down in an
-acidic, oxidising slurry until the oxide of {ref}`NCAPOX <step-091>`
-is exposed everywhere and every `licon1` is an isolated
+acidic, oxidising slurry (industry-typical) until the oxide of
+{ref}`NCAPOX <step-091>` is exposed everywhere and every `licon1` is
+an isolated
 {term}`W plug` flush with the dielectric. The surface that results —
 planar oxide studded with tungsten discs — is the surface on which
 the titanium-nitride local interconnect ({ref}`LITIN <step-101>`) is
