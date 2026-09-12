@@ -84,11 +84,11 @@ An industry-generic light poly-resistor implant for a 200 mm,
   film; the amorphous film gives no channelling tail
   ({ref}`P1I <step-050>`).
 * **Dose.** Of order 10¹⁴ cm⁻² or below (illustrative estimate above),
-  squarely in the range of SkyWater's medium-current implanter
-  ("Axcelis 8250 Mid current B11, BF2, As … 1e11 to 1e14"[^skw-01]),
-  whose class is specified with dose repeatability suited to
-  threshold-adjust work.[^axcelis-8250] A high-dose tool can also run
-  it, at low beam current.
+  squarely in the range of SkyWater's medium-current implanter ("Axcelis
+  8250 Mid current B11, BF2, As … 1e11 to 1e14"[^skw-01]), whose vendor
+  description quotes "uniformity specifications of 0.5 percent" for the
+  8250HT class.[^axcelis-8250] A high-dose tool can also run it, at low
+  beam current.
 * **Tilt.** Normal or near-normal incidence; window widths follow the
   `rpm` rules (1.270 µm minimum[^pdk-periph]), so shadowing is
   negligible, but straggle at the resist edge blurs the doped

@@ -41,18 +41,17 @@ high that popping is a serious risk if the first step is kept cool.
 
 ## Why this step exists
 
-Every argument on {ref}`P1IS <step-051>` applies: the next resist
-cannot be coated over this one, residue would be sealed under the
-nitride cap, and the implanted crust must be removed without
-particles. Two points are specific to this strip. First, the
-surface now carries *two* doping levels — n⁺ poly and the p-type
-resistor bodies — and the clean must not treat them differently: an
-SC-1 step etches silicon at a rate that depends on doping and surface
-condition,[^lee-kt-1999] and a differential loss of even a few nanometres
+Every argument on {ref}`P1IS <step-051>` applies: the next resist cannot
+be coated over this one, residue would be sealed under the nitride cap,
+and the implanted crust must be removed without particles. Two points
+are specific to this strip. First, the surface now carries *two* doping
+levels — n⁺ poly and the p-type resistor bodies — and the clean must not
+treat them differently: an SC-1 step etches silicon at a measurable
+rate,[^lee-kt-1999] and a differential loss of even a few nanometres
 between body and surroundings would change the resistor's effective
 thickness, on which its sheet resistance depends linearly. Second, the
-resistor bodies are the most dose-sensitive structures on the wafer,
-so nothing in the strip may add or remove dopant — a constraint that
+resistor bodies are the most dose-sensitive structures on the wafer, so
+nothing in the strip may add or remove dopant — a constraint that
 excludes, for example, any hot step long enough to matter, and any
 chemistry that leaches boron from the surface.
 
@@ -63,15 +62,16 @@ An industry-generic post-implant strip on a bare poly surface, for a
 
 1. **Plasma ash.** Downstream O₂ plasma with N₂ or forming gas,
    beginning at low temperature to remove the crust without
-   popping[^fujimura-1989][^pat-strip-mosel] and finishing hot for
-   the bulk; water-vapour or H₂-containing chemistries penetrate a
-   crust faster than dry oxygen.[^fujimura-1991] Fujimura et al. also
-   showed that O₂ + H₂O downstream ashing is free of the sodium
-   contamination that some older ashers introduced,[^fujimura-1994]
-   which matters when the next film to be deposited is a gate cap. The
-   three ashers on SkyWater's list all offer N₂/O₂ with H₂ or forming
-   gas options at 40–270 °C.[^skw-01] A "cold" process for stripping
-   implanted resist is also described in the patent literature.[^pat-strip-ulvac]
+   popping[^fujimura-1989][^pat-strip-mosel] and finishing hot for the
+   bulk; water-vapour or H₂-containing chemistries penetrate a crust
+   faster than dry oxygen.[^fujimura-1991] Fujimura et al. also showed
+   that O₂ + H₂O downstream ashing is free of the sodium contamination
+   that some older ashers introduced,[^fujimura-1994] which matters when
+   the next film to be deposited is a gate cap. SkyWater's three ashers
+   cover this range — the Iridia and Mattson Aspen 2 list H₂ or H₂/N₂
+   additions and the Gasonic PEP N₂/O₂ only, at 40–270 °C between
+   them.[^skw-01] A "cold" process for stripping implanted resist is
+   also described in the patent literature.[^pat-strip-ulvac]
 2. **Wet clean.** SPM (H₂SO₄/H₂O₂) for residual organics, then SC-1
    for particles, with the SC-1 time limited by its silicon etch
    rate.[^lee-kt-1999] The category page and Kern's review give the
