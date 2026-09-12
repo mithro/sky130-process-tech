@@ -90,7 +90,7 @@ several reasons that the literature sets out:
   0.35 µm CMOS technology and the process challenges that came with
   it.[^goss-1997]
 * **A contact etch stop and cap.** Nitride is what a later
-  self-aligned or borderless contact etch stops on, and it seals the
+  self-aligned or {term}`borderless contact` etch stops on, and it seals the
   gate stack against the wet chemistry and implants that follow.
 * **Fringing field.** The dielectric constant of the spacer sets the
   gate-to-extension fringing capacitance and the fringing field that
@@ -112,7 +112,7 @@ LDD NMOS with different spacer materials.[^om-1995] The film's stress
 matters too: an etch-stop nitride over the gate strains the channel
 enough to change drive current, as Ito et al. and Shimizu et al.
 showed at the 130 nm generation.[^ito-2000][^shimizu-2001] These are
-the reasons a composite spacer with an oxide liner — which the PDK's
+the reasons a {term}`composite spacer` with an oxide {term}`liner` — which the PDK's
 "oxide spacer" entry[^pdk-03] suggests SKY130 has — is common.
 
 Without `SPNIT` there is no offset between extension and deep
@@ -147,7 +147,7 @@ fab (SKY130's recipe is not public):
   hydrogen content and stress set by the plasma conditions;[^smith-1990][^claassen-1985]
   the film's stress can drift irreversibly with later heating.[^hughey-2003]
   Conformality is poorer than LPCVD, which makes the spacer width
-  depend on pattern density; PECVD spacers are therefore less usual
+  depend on {term}`pattern density`; PECVD spacers are therefore less usual
   at this node, though not unknown.
 * **Thickness.** Not public. The spacer width is a fraction of the
   0.15 µm minimum gate length (poly.1a);[^pdk-periph] the PDK's

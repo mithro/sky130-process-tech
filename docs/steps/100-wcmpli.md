@@ -12,8 +12,8 @@
 
 ## What this step is
 
-`WCMPLI` — tungsten CMP for the local interconnect — removes the
-blanket tungsten of {ref}`WDEP <step-099>` and the Ti/TiN liner of
+`WCMPLI` — tungsten {term}`CMP` for the {term}`local interconnect` — removes the
+blanket tungsten of {ref}`WDEP <step-099>` and the Ti/TiN {term}`liner` of
 {ref}`TI/TIN1 <step-097>` from the field, leaving tungsten only
 inside the contact holes. The wafer is polished face-down in an
 acidic, oxidising slurry (industry-typical) until the oxide of
@@ -24,7 +24,7 @@ planar oxide studded with tungsten discs — is the surface on which
 the titanium-nitride local interconnect ({ref}`LITIN <step-101>`) is
 deposited and patterned, which is what the "LI" in the step code
 refers to; the later tungsten polishes {ref}`WCMP2 <step-111>` to
-{ref}`WCMP5 <step-148>` do the same for the contact and via plugs
+{ref}`WCMP5 <step-148>` do the same for the contact and {term}`via` plugs
 under each metal level.
 
 The PDK does not describe the polish, but its consequences are in
@@ -40,13 +40,13 @@ processes.[^skw-01]
 
 `WCMPLI` is a {ref}`Chemical-mechanical planarisation <category-cmp>`
 step of the *tungsten* type, which the category page contrasts with
-the STI and oxide polishes: the film removed is tungsten and its
+the {term}`STI` and oxide polishes: the film removed is tungsten and its
 Ti/TiN liner, the stop is the inter-level oxide, the slurry is
 alumina or silica with an oxidiser at pH 2–4, and the failure modes
-are plug recess, oxide erosion in dense arrays, tungsten "coring"
+are {term}`plug recess`, oxide {term}`erosion` in dense arrays, tungsten "coring"
 and corrosion. It is the first metal polish in the flow. What is
 specific to this instance is what lies under the oxide it stops on:
-on the cap-stop reading of {ref}`CMPP <step-090>`, only the cap oxide
+on the cap-stop reading of {ref}`CMPP <step-090>`, only the {term}`cap oxide`
 separates the polish from the gate caps, so erosion here is erosion
 of the dielectric that insulates the local interconnect from the
 gates, and the per-plug recess it leaves is what the 0.1 µm-thick
@@ -87,7 +87,7 @@ the demands on it:
   these effects.
 * **Endpoint.** Because the tungsten is opaque and the oxide is not,
   and because the motor torque changes as the metal clears, tungsten
-  CMP is one of the easier polishes to endpoint: Sue, Lültzen and
+  CMP is one of the easier polishes to {term}`endpoint`: Sue, Lültzen and
   Gonzales describe tungsten CMP endpoint detection,[^sue-1999] and
   Bibby and Holland review the methods.[^bibby-1998] The over-polish
   after endpoint is what removes the liner and the last tungsten
@@ -95,7 +95,7 @@ the demands on it:
   defect of too little; recess of too much).
 * **Corrosion and cleaning.** Tungsten and its liner form a galvanic
   couple in the slurry, and slurry residue corrodes the plugs; the
-  post-CMP clean is part of the step.
+  {term}`post-CMP clean` is part of the step.
 
 Without `WCMPLI` the local interconnect could not be patterned — it
 would be deposited on a continuous sheet of tungsten.

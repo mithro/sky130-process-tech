@@ -28,7 +28,7 @@ al. characterised.[^fujimura-1989]
 The surface under the resist is, on our reading of the flow, the
 {ref}`SPOX <step-080>` oxide everywhere: over the source/drain
 silicon, over the spacers and caps, over the field, and over the poly
-opened by the nitride cut. There is no exposed silicon, poly or
+opened by the {term}`nitride cut`. There is no exposed silicon, poly or
 metal, so the full acid–peroxide sequence can be used; but the oxide
 is thin, must still screen the N⁺ implant and cap the anneal, and so
 must not be stripped or seriously thinned here.

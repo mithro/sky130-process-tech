@@ -44,16 +44,16 @@ for oxide" of 0.75, a "Min MM* PD range" of 0.3 and 700 µm and
 
 `CMPM` is a {ref}`Chemical-mechanical planarisation <category-cmp>`
 step of the *inter-level dielectric* type — the category page's
-third row: PECVD/HDP oxide, no stop layer, silica slurry at pH
+third row: {term}`PECVD`/HDP oxide, no stop layer, silica slurry at pH
 10–11, with thickness non-uniformity, scratches and pattern-density
 steps as the failure modes. It is the class of polish IBM invented
-CMP for — coplanar metal/insulator films[^pat-cmp-ibm-1990] — and
+{term}`CMP` for — coplanar metal/insulator films[^pat-cmp-ibm-1990] — and
 the one whose pattern dependence Stine, Ouma, Boning and their
 co-workers turned into the density-based fill rules that every
 modern design-rule deck, this PDK's included, now
 carries.[^stine-1998][^ouma-2002][^stine-1998-ted] It differs from
 the tungsten polish of {ref}`WCMP2 <step-111>` in that nothing tells
-the tool to stop, and from the STI polish of
+the tool to stop, and from the {term}`STI` polish of
 {ref}`CMPNIT <step-012>` in that there is no nitride beneath. Because
 only one material is removed there is no {term}`dishing` or
 {term}`erosion` in the two-material sense of the tungsten polish; the
@@ -64,7 +64,7 @@ step in the oxide surface between dense and sparse metal.
 
 A subtractive aluminium back end without planarisation accumulates
 topography with every level; by metal 2 the steps would exceed the
-depth of focus of a 248 nm exposure and the via etch would have to
+depth of focus of a 248 nm exposure and the {term}`via` etch would have to
 reach metal 1 through wildly different oxide thicknesses. The polish
 fixes:
 
@@ -72,7 +72,7 @@ fixes:
   {ref}`MM2 <step-124>` exposures need a surface flat to within
   their depth of focus across the field — a few hundred nanometres
   for a 248 nm scanner[^wiki-litho] printing the PDK's 0.14 µm
-  metal and 0.15 µm via CDs[^pdk-03] ({ref}`category-lithography`
+  metal and 0.15 µm via {term}`CDs <CD>`[^pdk-03] ({ref}`category-lithography`
   sets out the trade-off). Sivaram et al. modelled the
   removal rate and planarity of interlevel-dielectric CMP,[^sivaram-1992]
   and Boning et al. introduced the statistical metrology of ILD
@@ -82,11 +82,11 @@ fixes:
   must clear 0.27 µm of oxide[^pdk-04] over every via while not
   over-etching the TiW cap where the oxide is thinner; the
   post-polish thickness range over metal 1 is the via etch's
-  over-etch budget.
+  {term}`over-etch` budget.
 * **Pattern-density control.** The polish rate depends on local
   density: oxide over an isolated line is removed faster than oxide
   over a dense array, so the surface after polishing follows the
-  metal density on a scale set by the pad's planarisation length
+  metal density on a scale set by the pad's {term}`planarisation length`
   (Ouma et al.[^ouma-2002]). Stine et al. showed how metal-fill
   patterning practices reduce the effect and what they cost in
   capacitance;[^stine-1998-ted] the PDK's `cmm1` waffle-drop fill,
@@ -111,7 +111,7 @@ recipe is not public):
 1. **Tool.** A multi-platen rotary polisher[^pat-cmp-mirra] with a
    stacked pad (hard top layer for planarisation over a soft
    sub-pad), a multi-zone carrier head and diamond conditioning;
-   optical thickness endpoint through a pad window is available on
+   optical thickness {term}`endpoint` through a pad window is available on
    this class of tool.[^pat-cmp-window][^pat-cmp-endpoint-ibm]
 2. **Slurry.** Fumed or colloidal silica in KOH or NH₄OH at pH
    10–11 (industry-typical values[^steigerwald-1997][^zantye-2004]);
@@ -134,7 +134,7 @@ recipe is not public):
    in-situ optical thickness measurement;[^pat-cmp-window] the polish
    must stop *above* the metal — breaking through to the TiW cap
    would scratch and thin the lines — so a generous margin is
-   left and the cap oxide makes up the thickness.
+   left and the {term}`cap oxide` makes up the thickness.
 5. **Post-CMP clean.** Double-sided brush scrub with dilute NH₄OH
    (Philipossian and Sun analyse the brush design for post-ILD-CMP
    scrubbing[^philipossian-2009]), sometimes a dilute HF dip, then
@@ -176,7 +176,7 @@ recipe is not public):
 * **Polishing pads** (stacked polyurethane) and **diamond
   conditioners**.[^wiki-cmp]
 * **DI water**, **dilute NH₄OH**, possibly **dilute HF**, for the
-  post-CMP clean; brush consumables.
+  {term}`post-CMP clean`; brush consumables.
 * **Carrier-head consumables** — membranes, retaining rings.
 * **Slurry supply and waste treatment**.[^txt-07]
 

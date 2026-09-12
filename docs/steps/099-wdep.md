@@ -14,7 +14,7 @@
 
 `WDEP` fills the contact holes with tungsten. A blanket film is grown
 by chemical vapour deposition from tungsten hexafluoride onto the
-TiN-lined wafer of {ref}`TI/TIN1 <step-097>`: a thin nucleation layer
+TiN-lined wafer of {ref}`TI/TIN1 <step-097>`: a thin {term}`nucleation layer`
 first, then a bulk film thick enough that the conformal growth from
 the walls of every hole meets in the middle and closes it. The
 tungsten covers the field as well as the holes; the polish that
@@ -34,7 +34,7 @@ interconnect"[^pdk-06] with a 15 000 mΩ per-contact
 resistance,[^pdk-08] and its physical criteria give a "min. etch and
 fill capability" of 0.15 µm for licon.[^pdk-03] The step names —
 `WDEP` here and {ref}`WDEP2 <step-110>` to {ref}`WDEP5 <step-147>`
-at the contact and via levels — say that the same blanket-fill-and-
+at the contact and {term}`via` levels — say that the same blanket-fill-and-
 polish scheme is used at every level.
 
 ## Step category
@@ -46,14 +46,14 @@ then the bulk fill by hydrogen reduction, WF₆ + 3H₂ → W + 6HF, at
 roughly 400–450 °C and a few tens of Torr,[^wiki-wf6][^txt-01] and is,
 in the category page's words, "almost perfectly conformal, so it fills
 contacts from the sidewalls inward and leaves only a small seam". It
-is the first CVD metal in the flow and the first film deposited on a
+is the first {term}`CVD` metal in the flow and the first film deposited on a
 metallised wafer, so the
-thermal ceiling is now the silicide and the liner rather than the
+thermal ceiling is now the {term}`silicide` and the {term}`liner` rather than the
 junctions. What is specific to this instance is the
 {term}`aspect ratio`: a 0.08 µm bottom[^pdk-03] under 0.5 µm of dielectric[^pdk-03]
 is the narrowest hole the tungsten will ever have to fill in SKY130,
 and the "PNL option for high aspect ratio (up to 10:1)" of
-SkyWater's tool[^skw-01] — a pulsed nucleation layer — is the
+SkyWater's tool[^skw-01] — a {term}`pulsed nucleation layer` — is the
 technique developed for such holes.
 
 ## Why this step exists
@@ -103,7 +103,7 @@ Broadbent and Ramiller had established the WF₆ chemistry in
   bows the wafer; the blanket is therefore no thicker than the fill
   needs.
 
-Without `WDEP` the contacts would be empty and the local interconnect
+Without `WDEP` the contacts would be empty and the {term}`local interconnect`
 would have nothing to land on.
 
 ## How it is typically performed
@@ -129,7 +129,7 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
    resistivity.[^mcconica-1986]
 4. **Post-deposition.** Chamber clean between wafers; the wafer goes
    to the tungsten polish. No anneal is needed.
-5. **Metrology.** Sheet resistance and thickness of the blanket by
+5. **Metrology.** {term}`Sheet resistance <sheet resistance>` and thickness of the blanket by
    {term}`four-point probe` and XRF; stress by wafer bow;
    cross-section SEM of filled contacts for seams and voids during
    development; fluorine content by SIMS when the liner is being
@@ -138,7 +138,7 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 ## Machines typically used
 
 * **CVD tungsten reactor**, 200 mm: Novellus Concept Two Altus and
-  Altus with PNL,[^novellus-history] Applied Materials Centura WxZ,
+  Altus with {term}`PNL`,[^novellus-history] Applied Materials Centura WxZ,
   Genus and Ulvac tungsten systems (category page).
 * **Four-point probe**, **XRF**, **stress gauge**, **cross-section
   SEM**.

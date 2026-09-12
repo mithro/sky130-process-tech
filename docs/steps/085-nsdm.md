@@ -77,7 +77,7 @@ regions inside `nsdm` are:
 * the **P-well-to-n⁺ diodes** (`diode_pw2nd_*`);[^pdk-07]
 * the poly contact heads outside resistors, which — on the reading of
   the {ref}`NPCM <step-078>` page — receive an extra n⁺ dose through
-  the nitride cut wherever `nsdm` covers them; the precision
+  the {term}`nitride cut` wherever `nsdm` covers them; the precision
   resistors themselves are kept 0.200 µm clear of `nsdm` (rpm.6)[^pdk-periph]
   so that their p-type heads are not counter-doped.
 
@@ -85,7 +85,7 @@ Kept *out* are the PMOS source/drains, p⁺ taps, PNP emitters and
 collectors and P⁺ resistors (nsd.8), and the capped gates, which on
 our reading receive nothing from either source/drain implant. The
 enclosure and spacing values reflect the lateral straggle and
-mask-proximity effects measured by Hook et al.[^hook-2003] and
+{term}`mask-proximity effects <mask-proximity effect>` measured by Hook et al.[^hook-2003] and
 modelled by Sheu et al.,[^sheu-2006] whose implications for analogue
 layout Drennan, Kniffin and Locascio describe.[^drennan-2006]
 

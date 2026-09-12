@@ -94,7 +94,7 @@ the capped-gate reading is hard to test from the NMOS side; and it
 does not dope the precision resistors, which rpm.6 keeps 0.200 µm
 clear of `nsdm`.[^pdk-periph] It *does* dope, on the
 {ref}`NPCM <step-078>` reading, the n⁺ poly contact heads exposed by
-the nitride cut inside `nsdm`.
+the {term}`nitride cut` inside `nsdm`.
 
 Without `NSDI` there would be no NMOS source/drain, no N-well
 contacts and no NPN.
@@ -127,7 +127,7 @@ fab (SKY130's recipe is not public):
 * **Wafer handling.** Batch spinning-disc end station with wafer
   cooling; the beam power at several mA (typical) heats the resist
   (Smith,[^smith-1983] Romig et al.[^romig-1996]). Charging control
-  by plasma flood gun is critical for an arsenic implant on a
+  by {term}`plasma flood gun` is critical for an arsenic implant on a
   resist-covered wafer — Lukaszek, Reno and Bammi measured the
   influence of resist on charging during high-current arsenic
   implants,[^lukaszek-1996] Current et al. the current–voltage

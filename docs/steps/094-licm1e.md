@@ -14,12 +14,12 @@
 
 `LICM1E` is the contact etch. Through the resist openings of
 {ref}`LICM1 <step-093>` it etches 0.17 µm holes[^pdk-periph] down
-through the cap oxide of {ref}`NCAPOX <step-091>` and the
+through the {term}`cap oxide` of {ref}`NCAPOX <step-091>` and the
 phosphosilicate glass of {ref}`PSG <step-089>` — together about
 0.5 µm, the PDK's "Pre-LI ILD thickness"[^pdk-03] — until each hole
 reaches its landing surface: the {ref}`SPOX <step-080>` oxide over
 a source/drain or tap, which the etch must also clear, or the bare
-poly head inside a nitride cut ({ref}`NPCME <step-079>`). The holes
+poly head inside a {term}`nitride cut` ({ref}`NPCME <step-079>`). The holes
 taper — the PDK's "Licon1 etch angle" is 10°[^pdk-03] — from the
 0.17 µm drawn opening to a "Standard Licon bottom CD" of
 0.08 µm,[^pdk-03] so the aspect ratio at the bottom is about 6:1.
@@ -28,16 +28,16 @@ After it the resist is stripped and the wafer cleaned (the
 on our reading), and the holes are lined, silicided and filled.
 
 Three landing surfaces make this etch unusual. A diffusion or tap
-contact lands on silicon between two nitride spacers and, where the
-0.055 µm licon.11 margin[^pdk-periph] is used up by overlay, on the
+contact lands on silicon between two nitride {term}`spacers <spacer>` and, where the
+0.055 µm licon.11 margin[^pdk-periph] is used up by {term}`overlay`, on the
 spacer and the nitride cap of the adjacent gate; the etch therefore
 needs {term}`selectivity` to nitride as well as to silicon. A poly
 contact lands on poly that the nitride cut has already exposed
 (licon.15, licon.18[^pdk-periph]), so there is no nitride to open at
 the bottom — that is the point of doing the cut first, as the
 {ref}`NPCM <step-078>` page argues from the scheme Tang et al. used
-for a TiN local interconnect.[^tang-1985] And every hole passes
-through two chemically different oxides, cap and PSG, whose etch
+for a TiN {term}`local interconnect`.[^tang-1985] And every hole passes
+through two chemically different oxides, cap and {term}`PSG`, whose etch
 rates differ, and — if the {ref}`CMPP <step-090>` polish landed on
 the gate caps — the holes over poly are shallower than those over
 diffusion, so the etch must tolerate different depths on one wafer.
@@ -56,7 +56,7 @@ What is specific to this instance is the {term}`aspect ratio` and
 the two selectivities at once. The same class recurs at
 {ref}`CTME <step-108>` (the `mcon` etch, which lands on the
 titanium-nitride local interconnect through its nitride cap) and at
-every via etch.
+every {term}`via` etch.
 
 ## Why this step exists
 
@@ -66,7 +66,7 @@ of every transistor. The specific requirements:
 
 * **Vertical, tapered profile.** The 10° taper[^pdk-03] is
   deliberate: it widens the mouth of the hole for the ionised-metal
-  liner ({ref}`TI/TIN1 <step-097>`) and the CVD tungsten fill
+  {term}`liner` ({ref}`TI/TIN1 <step-097>`) and the {term}`CVD` tungsten fill
   ({ref}`WDEP <step-099>`), and a controlled taper is how a 0.17 µm
   drawn contact becomes a 0.08 µm bottom. Oehrlein and Kurogi
   review the sidewall chemistry that sets the profile.[^oehrlein-1998]
@@ -74,7 +74,7 @@ of every transistor. The specific requirements:
   slowly than wide ones ({term}`ARDE`, "RIE lag") because ions and
   neutrals reach the bottom less easily; Gottscho, Jurgensen and
   Vitkavage set out the mechanisms,[^gottscho-1992] Joubert, Oehrlein
-  and Surendra modelled RIE lag for contact holes in a
+  and Surendra modelled {term}`RIE` lag for contact holes in a
   high-density fluorocarbon plasma,[^joubert-1994] and Doemling,
   Rueger and Oehrlein observed the *inverse* lag that appears when
   polymer deposition dominates.[^doemling-1996] Because the licons
@@ -89,7 +89,7 @@ of every transistor. The specific requirements:
   specifically.[^schaepkens-1999] Too much polymer and the hole
   stops before it reaches bottom ("etch stop"); too little and the
   spacer, the gate cap and the silicon are attacked.
-* **Damage and charging.** The over-etch on the silicon is the most
+* **Damage and charging.** The {term}`over-etch` on the silicon is the most
   damaging plasma exposure the junctions receive: Fonash reviews
   the damage and contamination dry etching leaves,[^fonash-1990]
   Oehrlein the silicon damage specifically,[^oehrlein-1989] and
@@ -113,7 +113,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    Exelan class[^lam-exelan][^lam-10k]) or an inductively coupled
    one (Applied Materials DPS class[^pat-dps-amat]) — with
    independent source and bias power, helium backside cooling and
-   optical emission endpoint ({ref}`category-etch`).
+   optical emission {term}`endpoint` ({ref}`category-etch`).
 2. **BARC open.** A short O₂/N₂ or CF₄-based step opens the
    anti-reflective coating under the resist.
 3. **Main etch.** C₄F₈ or CHF₃/CF₄ with Ar and a little O₂ at tens of
@@ -137,7 +137,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    stripped and the wafer wet-cleaned — the step list used in this
    reference has no separate strip step here, so we read the strip
    as part of this step or of {ref}`SACETCH <step-095>`.
-6. **Metrology.** Contact CD top and bottom by CD-SEM; cross-section
+6. **Metrology.** Contact {term}`CD` top and bottom by {term}`CD-SEM`; cross-section
    SEM for profile, taper and residue during development; electrical
    contact-chain resistance at {ref}`category-test` structures
    afterwards.
@@ -146,7 +146,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 * **Dielectric etcher**, 200 mm: Lam 4520XLE/Exelan,[^lam-exelan]
   Applied Materials MxP/eMax and DPS (dielectric
-  configurations),[^amat-1997] TEL DRM/Unity, Lam TCP 9100
+  configurations),[^amat-1997] TEL DRM/Unity, Lam {term}`TCP` 9100
   ({ref}`category-etch`).
 * **Optical emission endpoint** system on the etcher.
 * **Cross-section SEM**, **CD-SEM**.

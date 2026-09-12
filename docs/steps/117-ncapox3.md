@@ -24,7 +24,7 @@ metal 1 to its final thickness before the via-1 mask
 the PDK's stack diagram gives the via-1 height through NILD3 as
 0.27 µm.[^pdk-04] The cap's own thickness is not. Its suffix makes it the
 third "CAPOX" of the flow, after {ref}`NCAPOX <step-091>` over the
-pre-metal dielectric; the step list used in this reference carries
+{term}`pre-metal dielectric`; the step list used in this reference carries
 no `NCAPOX2`, and we infer that the second of the numbering belonged
 with the local-interconnect dielectric ({ref}`NILD2 <step-105>`,
 {ref}`CMPL <step-106>`) and is either absent from this flow or not
@@ -36,8 +36,8 @@ The stack diagram offers one further public hint. Beside "NILD3
 K=4.5" it draws a "NILD3_C" of permittivity 3.5 and thickness
 0.030 µm,[^pdk-04] and the same pairing recurs as NILD4/NILD4_C at the
 next level.[^pdk-04] The suffix, the thinness and the placement are
-consistent with this cap oxide, as they are with a liner under the
-gap fill ({ref}`NILD3 <step-115>`); the diagram does not say which,
+consistent with this {term}`cap oxide`, as they are with a {term}`liner` under the
+{term}`gap fill` ({ref}`NILD3 <step-115>`); the diagram does not say which,
 and a permittivity of 3.5 is lower than a plain plasma oxide's
 (inference; see *Open questions*).
 
@@ -57,28 +57,28 @@ steps see.
 
 ## Why this step exists
 
-A polish alone does not give a via level what it needs:
+A polish alone does not give a {term}`via` level what it needs:
 
 * **Thickness control.** The polish of {ref}`CMPM <step-116>` is
-  stopped by removal amount and varies with pattern density and
+  stopped by removal amount and varies with {term}`pattern density` and
   across the wafer — the variation Boning et al. and Chang et al.
-  characterised for ILD CMP.[^boning-1994][^chang-1995] Polishing to
+  characterised for ILD {term}`CMP`.[^boning-1994][^chang-1995] Polishing to
   a thickness *below* the target and adding a cap of well-controlled
   thickness is the standard way to tighten the final dielectric
   thickness (industry practice[^txt-05]), which in turn tightens the
-  over-etch the {ref}`VIME <step-119>` via etch needs to reach every
-  TiW cap. The PDK's "Via1 slope" of 0.02 and via CD of 0.15 µm[^pdk-03]
+  {term}`over-etch` the {ref}`VIME <step-119>` via etch needs to reach every
+  TiW cap. The PDK's "Via1 slope" of 0.02 and via {term}`CD` of 0.15 µm[^pdk-03]
   are the geometry that thickness control serves.
 * **Sealing the polished surface.** Oxide CMP leaves micro-scratches
   and embedded slurry particles — Devriendt et al. relate those
-  defects to the post-CMP clean[^devriendt-1998] — and a hydrated,
+  defects to the {term}`post-CMP clean`[^devriendt-1998] — and a hydrated,
   hydroxyl-rich surface layer;[^moon-2016] a fresh plasma oxide buries
   them under a dense film so that they do not seed via-etch defects
   or resist adhesion failures, and so that the polished surface's
   water is not released into the via later (the "via poisoning" of
   moisture-bearing dielectrics; industry experience[^txt-05]).
 * **A known surface for lithography.** The {ref}`VIM <step-118>`
-  resist and BARC are tuned to a reproducible oxide surface and
+  resist and {term}`BARC` are tuned to a reproducible oxide surface and
   thickness; the swing-curve reflectivity of a resist on oxide
   depends on the oxide's thickness, so a fixed cap gives a fixed
   exposure latitude.
@@ -105,7 +105,7 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
    platform[^amat-10k] and Novellus's Concept/Sequel
    family[^novellus-history] are the 200 mm-era tools.
 2. **Precursor.** {term}`TEOS`/O₂ plasma oxide — Raupp, Cale and Hey analyse
-   its kinetics and step coverage[^raupp-1992] — or SiH₄/N₂O plasma
+   its kinetics and {term}`step coverage`[^raupp-1992] — or SiH₄/N₂O plasma
    oxide, whose properties depend on RF power as Chapple-Sokol,
    Tierney and Batey measured;[^chapple-sokol-1989] on a flat polished
    surface conformality does not matter and either works. The
@@ -125,7 +125,7 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
    than for a gap fill: hydrogen evolution from a plasma oxide on
    later heating changes its stress, as Mani and Saif
    showed,[^mani-2007] and a porous or wet cap defeats its purpose.
-   The classic LPCVD TEOS route[^adams-1979][^becker-1987] gives a
+   The classic {term}`LPCVD` TEOS route[^adams-1979][^becker-1987] gives a
    denser film but at 650–750 °C, far above the aluminium limit, so
    it is not an option here (inference from the temperature).
 5. **Clean before and after.** The wafer comes from the post-CMP

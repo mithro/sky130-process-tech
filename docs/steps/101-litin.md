@@ -12,23 +12,23 @@
 
 ## What this step is
 
-`LITIN` deposits the local interconnect itself: a blanket film of
+`LITIN` deposits the {term}`local interconnect` itself: a blanket film of
 titanium nitride, about 0.1 µm thick, sputtered (on our reading) onto
-the polished surface of {ref}`WCMPLI <step-100>` — planar cap oxide
+the polished surface of {ref}`WCMPLI <step-100>` — planar {term}`cap oxide`
 studded with
 tungsten plugs. The next two steps pattern it ({ref}`LI1M <step-102>`,
 {ref}`LI1ME <step-103>`) into the `li1` layer of the PDK, a wiring
 level *below* metal 1 that connects transistor terminals to one
 another and to the `mcon` contacts of metal 1 over short distances.
 The step code reads "LI TiN" — the local-interconnect titanium
-nitride — by contrast with the liner TiN of {ref}`TI/TIN1 <step-097>`.
+nitride — by contrast with the {term}`liner` TiN of {ref}`TI/TIN1 <step-097>`.
 
 The public record on this film is better than for most of the flow.
 The PDK's stack diagram labels the conductor `li` with a thickness of
 0.1 µm and places it between the "PSG" dielectric and the "LINT"
 nitride;[^pdk-04] the assumptions table gives "LI1 thickness for
 antenna ratio calculations" as 0.1 µm;[^pdk-03] the extraction
-tables give "Local interconnect" a sheet resistance of
+tables give "Local interconnect" a {term}`sheet resistance` of
 12 800 mΩ/sq (12.8 Ω/sq);[^pdk-08] the layer list describes `li1`
 (67:20) as "Local interconnect" and `licon1` and `mcon` as the
 contacts to and from it;[^pdk-06] SkyWater's PDK README summarises
@@ -42,19 +42,19 @@ a resistivity of about 128 µΩ·cm, several times the roughly
 39 µΩ·cm Wikipedia quotes for bulk TiN[^wiki-tin] and squarely in
 the range of reactively sputtered TiN films (Sundgren's
 review[^sundgren-1985]). SkyWater's capability list includes "ESC
-TiN" and "Imp TiN" chambers on its AMAT PVD tool[^skw-01] and
+TiN" and "Imp TiN" chambers on its AMAT {term}`PVD` tool[^skw-01] and
 Honeywell as a sputter-target supplier.[^sec-01]
 
 ## Step category
 
 `LITIN` is a {ref}`Thin-film deposition <category-deposition>` step of
-the *PVD* type — reactive sputtering of titanium in argon–nitrogen
-(inferred; SkyWater's public list has PVD TiN chambers and no CVD
+the *PVD* type — {term}`reactive sputtering` of titanium in argon–nitrogen
+(inferred; SkyWater's public list has PVD TiN chambers and no {term}`CVD`
 TiN[^skw-01]) — and the only step in the flow whose sputtered
 *titanium nitride* is a wiring level in its own right rather than a
 liner, barrier or cap; the aluminium levels above it are sputtered
 wiring too. The category
-page describes the technique and TiN's other roles (barrier, ARC,
+page describes the technique and TiN's other roles (barrier, {term}`ARC`,
 the underlayer on which Blech discovered the critical-length
 effect[^blech-1976]). What is specific to this instance is that the
 film's *sheet resistance* is a circuit parameter: at 12.8 Ω/sq[^pdk-08]
@@ -75,11 +75,11 @@ reasons:
 * **Origins.** Tang et al. at Texas Instruments described a "VLSI
   local interconnect level using titanium nitride" at IEDM 1985 and
   in *IEEE TED* 1987,[^tang-1985][^tang-1987] using the TiN that
-  forms on top of a titanium salicide during its nitrogen anneal as
+  forms on top of a titanium {term}`salicide` during its nitrogen anneal as
   a patternable conductor; the corresponding TI patents by Haken and
   Holloway and by Holloway et al. claim the structure and the
   patterning process.[^pat-li-ti-haken][^pat-li-ti-holloway] Mann et
-  al. at IBM reviewed silicides and local interconnections
+  al. at IBM reviewed {term}`silicides <silicide>` and local interconnections
   together,[^mann-1995] and White et al. described a damascene-stud
   local interconnect.[^white-1992] SKY130's version, on our reading,
   differs from TI's in that the TiN is a *deposited* film on a
@@ -97,10 +97,10 @@ reasons:
   provide.
 * **Why TiN and not a metal.** TiN is refractory, so the levels
   above it can be processed at the 400–450 °C of the tungsten and
-  oxide depositions without hillocks or interdiffusion; it does not
+  oxide depositions without {term}`hillocks <hillock>` or interdiffusion; it does not
   react with the tungsten plugs it lands on; it adheres to oxide;
   and it can be etched in chlorine or fluorine plasmas with
-  selectivity to oxide ({ref}`LI1ME <step-103>`). Its resistivity —
+  {term}`selectivity` to oxide ({ref}`LI1ME <step-103>`). Its resistivity —
   set by nitrogen stoichiometry, density and grain structure
   (Sundgren;[^sundgren-1985] the reactive-sputtering model of Berg
   and Nyberg;[^berg-2005] the microstructural evolution Petrov et
@@ -112,7 +112,7 @@ reasons:
   completely (licon.4, li.5[^pdk-periph]) and step down into
   whatever recess the polish left; a conventional (non-IMP) sputter
   suffices on a planar surface, which is why an "ESC TiN"
-  chamber[^skw-01] rather than an IMP chamber is, we infer, the
+  chamber[^skw-01] rather than an {term}`IMP` chamber is, we infer, the
   natural choice here.
 
 Without `LITIN` there would be no `li1`: every transistor terminal
@@ -124,17 +124,17 @@ layouts of the PDK would not fit.
 An industry-generic reactively sputtered TiN film for a 200 mm,
 130 nm-era fab (SKY130's recipe is not public):
 
-1. **Degas and pre-clean.** Degas on the cluster tool to drive
+1. **Degas and pre-clean.** {term}`Degas <degas>` on the {term}`cluster tool` to drive
    water from the polished oxide; a light argon sputter pre-clean to
    remove the tungsten oxide from the plug tops (Boumerzoug et al.
-   describe the effect of titanium oxide on TiN on via
+   describe the effect of titanium oxide on TiN on {term}`via`
    resistance,[^boumerzoug-1997] the analogous problem).
 2. **Reactive sputtering.** DC magnetron sputtering from a titanium
    target in Ar/N₂ at a few mTorr, with the nitrogen flow held in
    the nitrided ("poisoned") target regime for stoichiometric TiN —
    the hysteresis Berg and Nyberg model[^berg-2005] is managed by
    flow or partial-pressure control; wafer temperature of the order
-   of 200–350 °C on an electrostatic chuck ("ESC TiN"[^skw-01]) for
+   of 200–350 °C on an {term}`electrostatic chuck` ("ESC TiN"[^skw-01]) for
    density and low resistivity (industry-typical[^txt-09][^sundgren-1985]).
    Thornton's zone model[^thornton-1974][^ohring-2002] predicts the
    columnar structure such films have.
@@ -160,7 +160,7 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 * **Applied Materials PVD, "ESC TiN" chamber.** SkyWater lists
   "AMAT PVD Metal" with "ESC TiN" and "Imp TiN".[^skw-01] Strength:
   **strong** for the vendor and for a conventional TiN chamber; the
-  platform (Endura-class) and the assignment of `LITIN` to the ESC
+  platform (Endura-class) and the assignment of `LITIN` to the {term}`ESC`
   chamber rather than the IMP chamber are **inferences** from the
   film's role and the planar surface.
 * **Sputter targets.** Honeywell Electronic Materials is named in
@@ -179,7 +179,7 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 ## Related steps and cross-references
 
 * Previous: {ref}`WCMPLI <step-100>` (the polished plug surface).
-  Next: {ref}`LI1M <step-102>` (the LI mask), {ref}`LI1ME <step-103>`
+  Next: {ref}`LI1M <step-102>` (the {term}`LI` mask), {ref}`LI1ME <step-103>`
   (the TiN etch), {ref}`LINIT <step-104>` (the nitride cap over it).
 * The plugs it lands on: {ref}`WDEP <step-099>`; the contacts to it
   from above: {ref}`CTM1 <step-107>`, {ref}`CTME <step-108>`.

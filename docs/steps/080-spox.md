@@ -13,7 +13,7 @@
 ## What this step is
 
 `SPOX` deposits a blanket silicon dioxide film over the wafer after the
-nitride cut and immediately before the first source/drain mask. The
+{term}`nitride cut` and immediately before the first source/drain mask. The
 step list used in this reference calls it the *spacer oxide*; the PDK's
 assumptions table lists an "oxide spacer" of 0.05 µm (variable
 `SpThickn`),[^pdk-03] and we infer that the two refer to the same film,
@@ -37,7 +37,7 @@ implant travels.
 ## Step category
 
 `SPOX` is a {ref}`Thin-film deposition <category-deposition>` step: a
-CVD oxide of the same family as the cap oxide {ref}`POC <step-059>`
+CVD oxide of the same family as the {term}`cap oxide` {ref}`POC <step-059>`
 and the later {ref}`NCAPOX <step-091>`. What is specific to it is
 that it is an *implant screen and spacer extension* rather than an
 insulator: its thickness enters the range and lateral placement of
@@ -76,7 +76,7 @@ does not say which SKY130 had in mind:
   poly, and the poly heads receive their source/drain doping through
   a defined oxide.
 * **A cap for the anneal.** During {ref}`RTAD <step-088>` a surface
-  oxide limits dopant loss: Farhane et al. measured arsenic dose loss
+  oxide limits dopant loss: Farhane et al. measured arsenic {term}`dose loss`
   during nitrogen anneals of shallow implants,[^farhane-2003] and
   Shibahara et al. traced the origins of dopant loss for low-energy
   arsenic and antimony,[^shibahara-1998] while Pelletier et al.
@@ -105,7 +105,7 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
   its conformality,[^becker-1987] and Adams and Capio the reduced-
   pressure silane–oxygen alternative at roughly 400–450 °C.[^adams-1979]
   LPCVD TEOS is the most conformal of the three and the usual choice
-  for a spacer or liner, but it spends minutes at a temperature where
+  for a spacer or {term}`liner`, but it spends minutes at a temperature where
   the arsenic tips and boron halos diffuse — a real cost after
   {ref}`TIPRTAD <step-075>`.
 * **PECVD TEOS oxide.** TEOS with O₂ in a single-wafer chamber at

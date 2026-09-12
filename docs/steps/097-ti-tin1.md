@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`TI/TIN1` sputters the contact liner: a thin titanium film followed
+`TI/TIN1` sputters the contact {term}`liner`: a thin titanium film followed
 by a thin titanium-nitride film, deposited by ionised-metal-plasma
 ({term}`IMP`) physical vapour deposition into the open contact holes
 of {ref}`LICM1E <step-094>` and over the field. The titanium lands on
@@ -20,17 +20,17 @@ the freshly cleaned silicon and poly at the bottom of each hole,
 where the next step ({ref}`CSIL <step-098>`) will react it into
 titanium disilicide; the titanium nitride covers the titanium and
 the oxide walls of the hole and is the barrier and adhesion layer on
-which the CVD tungsten of {ref}`WDEP <step-099>` nucleates. The
+which the {term}`CVD` tungsten of {ref}`WDEP <step-099>` nucleates. The
 "1" in the code marks it as the first of the flow's liner
 depositions — {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>` and
-later are the TiN-only liners of the contact and via levels — and
+later are the TiN-only liners of the contact and {term}`via` levels — and
 "IMP" names the deposition technique.
 
 The public evidence is unusually direct for a tool assignment.
 SkyWater's capability list gives, under "AMAT PVD Metal", "Imp TiN"
 and "Collimated Ti" alongside "ESC TiN", TiW and the aluminium
 alloys,[^skw-01] and the step list used in this reference calls the
-step "IMP Ti/TiN". Ionised PVD is the technique Rossnagel and
+step "IMP Ti/TiN". Ionised {term}`PVD` is the technique Rossnagel and
 Hopwood introduced for exactly this purpose — filling the bottom of
 a hole that line-of-sight sputtering cannot
 reach[^rossnagel-1993][^rossnagel-1994] — and Applied Materials sold
@@ -41,7 +41,7 @@ titanium and 10–30 nm of TiN on the field, with bottom coverage of
 tens of per cent (Koerner, Erb and Melzner evaluated Ti and TiN
 thicknesses for tungsten-plug contacts[^koerner-1993]); the
 titanium thickness at the hole bottom, together with the anneal,
-sets the silicide thickness of the next step.
+sets the {term}`silicide` thickness of the next step.
 
 ## Step category
 
@@ -93,7 +93,7 @@ each film:
   hole;[^rossnagel-1993][^rossnagel-1994] Hopwood reviewed ionised
   PVD for interconnects[^hopwood-1998] and Rossnagel the directional
   and ionised alternatives.[^rossnagel-1998] The older alternative,
-  collimated sputtering — a honeycomb collimator between target and
+  {term}`collimated sputtering` — a honeycomb collimator between target and
   wafer that passes only near-normal atoms — is what "Collimated Ti"
   on SkyWater's list refers to,[^skw-01] introduced by Rossnagel et
   al.[^rossnagel-1991] and applied to Ti/TiN by Ryan et al.[^ryan-1995]
@@ -115,7 +115,7 @@ attacked by fluorine.
 An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 130 nm-era fab (SKY130's recipe is not public):
 
-1. **Degas and pre-clean.** On the cluster tool: a degas station
+1. **Degas and pre-clean.** On the {term}`cluster tool`: a {term}`degas` station
    (lamp or heated chuck, 300–400 °C, minutes) to drive water out of
    the dielectric, then an argon RF sputter-etch pre-clean that
    removes the last nanometre of native oxide from the contact
@@ -144,9 +144,9 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 5. **Optional in-situ treatment.** Some flows add a short N₂/H₂
    plasma or a low-temperature anneal on the platform to "stuff" the
    TiN grain boundaries and reduce its fluorine uptake.
-6. **Metrology.** Sheet resistance of Ti and TiN monitors by
+6. **Metrology.** {term}`Sheet resistance <sheet resistance>` of Ti and TiN monitors by
    {term}`four-point probe`; thickness by XRF or ellipsometry; stress
-   by wafer bow; step coverage by cross-section SEM during
+   by wafer bow; {term}`step coverage` by cross-section SEM during
    development; particles.
 
 ## Machines typically used
@@ -180,7 +180,7 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
   plates; Honeywell named as supplier[^sec-01]).
 * **Argon** (sputter gas) and **nitrogen** (reactive gas for
   TiN);[^wiki-sputter] **helium** backside cooling.
-* **Chamber consumables** — shields, coils, clamp or ESC rings,
+* **Chamber consumables** — shields, coils, clamp or {term}`ESC` rings,
   collimators (for the collimated chamber), pasting targets.
 * **Monitor wafers** (SEMI M8 class)[^semi-m8] for sheet resistance,
   thickness and particles.
