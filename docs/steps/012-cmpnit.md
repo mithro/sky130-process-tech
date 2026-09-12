@@ -322,7 +322,7 @@ polisher, which is what this step needs.
 [^oliver-2004]: M. R. Oliver (ed.), *Chemical-Mechanical Planarization
     of Semiconductor Materials*, Springer Series in Materials Science
     69, Springer, 2004, ISBN 978-3-540-43181-9.
-    <https://openlibrary.org/isbn/9783540431817>
+    <https://doi.org/10.1007/978-3-662-06234-0>
 [^pat-cmp-mirra]: R. D. Tolles, N. Shendon, S. Somekh, I. Perlov,
     E. Gantvarg and H. Q. Lee (Applied Materials), *Continuous
     processing system for chemical mechanical polishing*,

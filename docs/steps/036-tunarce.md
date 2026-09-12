@@ -248,7 +248,8 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
     coating", *Proc. SPIE* **2724**, Advances in Resist Technology and
     Processing XIII, 710 (1996). <https://doi.org/10.1117/12.241869>
 [^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
-    SPIE Press, 2005. <https://doi.org/10.1117/3.601520>
+    SPIE Press, 2005, ISBN 978-0-8194-5660-1.
+    <https://doi.org/10.1117/3.601520>
 [^wiki-rie]: Wikipedia, *Reactive-ion etching*.
     <https://en.wikipedia.org/wiki/Reactive-ion_etching>
 [^xu-2001]: S. Xu, T. Lill and D. Podlesnik, "Wall-dependent etching
@@ -282,15 +283,16 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
     Microlithography XIII, 915 (2000). <https://doi.org/10.1117/12.389087>
 [^coburn-1979]: J. W. Coburn and H. F. Winters, "Ion- and
     electron-assisted gas-surface chemistry — An important effect in
-    plasma etching", *Journal of Applied Physics* **50**, 3189–3196
+    plasma etching", *Journal of Applied Physics* **50**(5), 3189–3196
     (1979). <https://doi.org/10.1063/1.326355>
 [^steinbruchel-1989]: C. Steinbrüchel, "Universal energy dependence of
     physical and ion-enhanced chemical etch yields at low ion energy",
-    *Applied Physics Letters* **55**, 1960–1962 (1989).
+    *Applied Physics Letters* **55**(19), 1960–1962 (1989).
     <https://doi.org/10.1063/1.102336>
 [^flamm-1981]: D. L. Flamm and V. M. Donnelly, "The design of plasma
-    etchants", *Plasma Chemistry and Plasma Processing* **1**, 317–363
-    (1981). <https://doi.org/10.1007/BF00565992>
+    etchants", *Plasma Chemistry and Plasma Processing* **1**(4),
+    317–363 (1981). <https://doi.org/10.1007/BF00565992>
 [^mack-2007]: C. Mack, *Fundamental Principles of Optical Lithography:
-    The Science of Microfabrication*, Wiley, 2007, ISBN
-    978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
+    The Science of Microfabrication*, Wiley, 2007,
+    ISBN 978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
+    (companion site <https://www.lithoguru.com/textbook/>)

@@ -243,7 +243,7 @@ fab:
 [^lee-1996]: W. J. Lee, N. Tokoro, H. T. Cho, J. O. Borland, M. Dennon
     and C. Kozak, "Thick photoresist outgassing during MeV implantation
     (mechanism and impact on production)", *Proc. 11th International
-    Conference on Ion Implantation Technology (1996)*, pp. 186–189.
+    Conference on Ion Implantation Technology* (1996), pp. 186–189.
     <https://doi.org/10.1109/IIT.1996.586180>
 [^fujimura-1990]: S. Fujimura, K. Shinagawa, M. Nakamura and H. Yano,
     "Additive Nitrogen Effects on Oxygen Plasma Downstream Ashing",

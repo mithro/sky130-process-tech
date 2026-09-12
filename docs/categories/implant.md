@@ -353,7 +353,7 @@ commercial implanters is given by Current.[^current-2017]
 [^srim]: J. F. Ziegler, *SRIM — The Stopping and Range of Ions in
     Matter* (software and documentation). <http://www.srim.org/>
 [^ziegler-2010]: J. F. Ziegler, M. D. Ziegler and J. P. Biersack, "SRIM
-    — The stopping and range of ions in matter (2010)", *Nuclear
+    – The stopping and range of ions in matter (2010)", *Nuclear
     Instruments and Methods in Physics Research B* **268**(11–12),
     1818–1823 (2010). <https://doi.org/10.1016/j.nimb.2010.02.091>
 [^wiki-implant]: Wikipedia, *Ion implantation*.

@@ -480,10 +480,11 @@ alignment corrections.
 [^dammel-1993]: R. R. Dammel, *Diazonaphthoquinone-based Resists*, SPIE
     Tutorial Texts TT11, SPIE Press, 1993.
     <https://doi.org/10.1117/3.2265072>
-[^otto-1994]: O. W. Otto, J. G. Garofalo, K. K. Low, C.-M. Yuan et al.,
+[^otto-1994]: O. W. Otto, J. G. Garofalo, K. K. Low, C.-M. Yuan, R. C.
+    Henderson, C. Pierrat, R. L. Kostelak, S. Vaidya and P. K. Vasudev,
     "Automated optical proximity correction: a rules-based approach",
-    *Proc. SPIE* **2197**, 278–293 (1994).
-    <https://doi.org/10.1117/12.175422>
+    *Proc. SPIE* **2197**, Optical/Laser Microlithography VII, 278–293
+    (1994). <https://doi.org/10.1117/12.175422>
 [^rieger-1994]: M. L. Rieger and J. P. Stirniman, "Using behavior
     modeling for proximity correction", *Proc. SPIE* **2197**, 371–376
     (1994). <https://doi.org/10.1117/12.175431>
@@ -506,8 +507,8 @@ alignment corrections.
 [^bruning-2007]: J. H. Bruning, "Optical lithography: 40 years and
     holding", *Proc. SPIE* **6520**, 652004 (2007).
     <https://doi.org/10.1117/12.720631>
-[^semi-p1]: SEMI P1, *Specification for Hard Surface Photomask
-    Substrates*, SEMI.
+[^semi-p1]: SEMI, *SEMI P1 — Specification for Hard Surface Photomask
+    Substrates*, SEMI Standards store listing.
     <https://store-us.semi.org/products/p00100-semi-p1-specification-for-hard-surface-photomask-substrates>
 [^pat-resist-zilog]: S. J. Buffat and J. L. Adams (Zilog), *High aspect
     ratio photolithographic method for high energy implantation*, US

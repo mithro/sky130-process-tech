@@ -263,12 +263,12 @@ memory (SKY130's recipe is not public):
     B1, granted 2014-08-05.
     <https://patents.google.com/patent/US8796098B1/en>
 [^flamm-1981]: D. L. Flamm and V. M. Donnelly, "The design of plasma
-    etchants", *Plasma Chemistry and Plasma Processing* **1**, 317–363
-    (1981). <https://doi.org/10.1007/BF00565992>
+    etchants", *Plasma Chemistry and Plasma Processing* **1**(4),
+    317–363 (1981). <https://doi.org/10.1007/BF00565992>
 [^regis-1997]: J. M. Regis, A. M. Joshi, T. Lill and M. Yu, "Reactive
     ion etch of silicon nitride spacer with high selectivity to oxide",
     *1997 IEEE/SEMI Advanced Semiconductor Manufacturing Conference and
-    Workshop (ASMC 97)*, pp. 252–256.
+    Workshop (ASMC 97) Proceedings*, pp. 252–256.
     <https://doi.org/10.1109/ASMC.1997.630744>
 [^pat-cn-tel]: Tokyo Electron Ltd., *Method of forming a semiconductor
     device using double endpoint detection*, US 6,376,262 B1, granted
@@ -295,11 +295,12 @@ memory (SKY130's recipe is not public):
     Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
     ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
 [^winters-1992]: H. F. Winters and J. W. Coburn, "Surface science
-    aspects of etching reactions", *Surface Science Reports* **14**,
-    162–269 (1992). <https://doi.org/10.1016/0167-5729(92)90009-Z>
+    aspects of etching reactions", *Surface Science Reports*
+    **14**(4–6), 162–269 (1992).
+    <https://doi.org/10.1016/0167-5729(92)90009-Z>
 [^coburn-1979]: J. W. Coburn and H. F. Winters, "Ion- and
     electron-assisted gas-surface chemistry — An important effect in
-    plasma etching", *Journal of Applied Physics* **50**, 3189–3196
+    plasma etching", *Journal of Applied Physics* **50**(5), 3189–3196
     (1979). <https://doi.org/10.1063/1.326355>
 [^nojiri-2015]: K. Nojiri, *Dry Etching Technology for Semiconductors*,
     Springer, 2015. <https://doi.org/10.1007/978-3-319-10295-5>

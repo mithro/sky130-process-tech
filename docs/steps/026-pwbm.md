@@ -238,15 +238,16 @@ raises NMOS Vt.[^hook-2003]
 <!-- footnotes -->
 
 [^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
-    `gds_layers.csv`, google/skywater-pdk repository.
+    `gds_layers.csv`, SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation.
-    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -306,8 +307,9 @@ raises NMOS Vt.[^hook-2003]
     Custom Integrated Circuits Conference 2006*, pp. 169–176.
     <https://doi.org/10.1109/CICC.2006.320869>
 [^mack-2007]: C. Mack, *Fundamental Principles of Optical Lithography:
-    The Science of Microfabrication*, Wiley, 2007, ISBN
-    978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
+    The Science of Microfabrication*, Wiley, 2007,
+    ISBN 978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
+    (companion site <https://www.lithoguru.com/textbook/>)
 [^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
     SPIE Press, 2005, ISBN 978-0-8194-5660-1.
     <https://doi.org/10.1117/3.601520>

@@ -315,4 +315,5 @@ strip step is listed; see {ref}`GOXETCH <step-046>`).
     Journal of Applied Physics* **39**(4S), 2287 (2000).
     <https://doi.org/10.1143/JJAP.39.2287>
 [^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
-    SPIE Press, 2005. <https://doi.org/10.1117/3.601520>
+    SPIE Press, 2005, ISBN 978-0-8194-5660-1.
+    <https://doi.org/10.1117/3.601520>

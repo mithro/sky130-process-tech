@@ -354,8 +354,8 @@ oxidation or clean must remove.
     etchants", *Plasma Chemistry and Plasma Processing* **1**(4),
     317–363 (1981). <https://doi.org/10.1007/BF00565992>
 [^lieberman-2005]: M. A. Lieberman and A. J. Lichtenberg, *Principles of
-    Plasma Discharges and Materials Processing*, 2nd ed., Wiley, 2005.
-    <https://doi.org/10.1002/0471724254>
+    Plasma Discharges and Materials Processing*, 2nd ed., Wiley, 2005,
+    ISBN 978-0-471-72001-0. <https://doi.org/10.1002/0471724254>
 [^donnelly-2013]: V. M. Donnelly and A. Kornblit, "Plasma etching:
     Yesterday, today, and tomorrow", *Journal of Vacuum Science &
     Technology A* **31**(5), 050825 (2013).
@@ -466,10 +466,10 @@ oxidation or clean must remove.
     Nitride in Phosphoric Acid with Silicon Dioxide as a Mask", *Journal
     of The Electrochemical Society* **114**(8), 869 (1967).
     <https://doi.org/10.1149/1.2426757>
-[^pat-tcp-lam]: J. S. Ogle (Lam Research), *Method and apparatus for
-    producing magnetically-coupled planar plasma*, US 4,948,458 A,
-    granted 1990-08-14.
-    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4948458>
+[^pat-tcp-lam]: J. S. Ogle (Lam Research Corporation), *Method and
+    apparatus for producing magnetically-coupled planar plasma*,
+    US 4,948,458 A, granted 1990-08-14.
+    <https://patents.google.com/patent/US4948458A/en>
 [^pat-dps-amat]: G. Z. Yin, H. Hanawa, D. X. Ma and D. Olgado (Applied
     Materials), *Plasma reactor with multi-section RF coil and isolated
     conducting lid*, US 5,540,824 A, granted 1996-07-30.

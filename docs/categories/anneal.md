@@ -309,9 +309,12 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
     pp. 227–309. <https://doi.org/10.1016/b978-0-12-247690-7.50010-x>
 [^wiki-fg]: Wikipedia, *Forming gas*.
     <https://en.wikipedia.org/wiki/Forming_gas>
-[^deal-1980]: B. E. Deal, "Standardized Terminology for Oxide Charges
-    Associated with Thermally Oxidized Silicon", *Journal of The
-    Electrochemical Society* **127**(4), 979–981 (1980).
+[^deal-1980]: B. E. Deal, "Standardized terminology for oxide charges
+    associated with thermally oxidized silicon", *IEEE Transactions on
+    Electron Devices* **27**(3), 606–608 (1980),
+    DOI 10.1109/T-ED.1980.19908; published simultaneously in *Journal of
+    The Electrochemical Society* **127**(4), 979–981 (1980).
+    <https://doi.org/10.1109/T-ED.1980.19908>,
     <https://doi.org/10.1149/1.2129800>
 [^ag-10k]: AG Associates, Inc., Form 10-K for the fiscal year ended
     1996-09-30, filed 1996-12-23 (Heatpulse 8108 first shipped October
