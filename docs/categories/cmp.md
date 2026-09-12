@@ -32,14 +32,13 @@ three ways, all of which appear in the SKY130 flow:
   remaining thickness ({ref}`CMPM <step-116>`, {ref}`CMPM2 <step-127>`,
   {ref}`CMPM3 <step-142>`, {ref}`CMPM4 <step-157>`), so that the next
   via and metal lithography see a flat surface. The SKY130 design
-  assumptions give, for example, a pre-LI ILD thickness of 0.5 µm
-  ([SKY130 PDK, Criteria & Assumptions][pdk-assume]).
+  assumptions give, for example, a pre-LI ILD thickness of 0.5 µm.[^pdk-03]
 
 CMP was developed at IBM in the 1980s — the foundational patents
 describe a "chem-mech polishing method for producing coplanar
-metal/insulator films on a substrate" ([Beyer et al., US 4,944,836][beyer])
+metal/insulator films on a substrate"[^pat-cmp-ibm-1990]
 — and became a mainstream production step in the 1990s as interconnect
-levels multiplied ([Wikipedia: Chemical-mechanical polishing][wiki-cmp]).
+levels multiplied.[^wiki-cmp]
 
 ## Physics and engineering background
 
@@ -57,53 +56,48 @@ and wafer,
 where {math}`k_p`, the Preston coefficient, absorbs the properties of
 pad, slurry and film. It holds well for oxide polishing over the range
 of a few psi and tens of metres per minute used in production (typical
-industry values; [Zantye, Kumar and Sikder 2004][zantye]), and
-deviations from it (a non-zero pressure threshold, sub-linear velocity
-dependence) are the subject of later models such as Luo and Dornfeld's,
-which treats the removal as the product of the number of active
-abrasive particles and the volume each removes ([Luo and Dornfeld
-2001][luo]; Zantye, Kumar and Sikder [zantye]).
+industry values),[^zantye-2004] and deviations from it (a non-zero
+pressure threshold, sub-linear velocity dependence) are the subject of
+later models such as Luo and Dornfeld's, which treats the removal as the
+product of the number of active abrasive particles and the volume each
+removes.[^luo-2001][^zantye-2004]
 
 ### Chemistry and mechanics
 
-Polishing is neither pure abrasion nor pure etching. For silicon dioxide,
-Cook showed that the alkaline slurry (pH 10–11) hydrolyses the oxide
-surface to a soft silanol-rich layer, that silica abrasive particles
-bond to it and tear it away, and that dissolved silica must be carried
-off before it re-deposits ([Cook 1990][cook]); the abrasive is
-"cerium dioxide" ([Wikipedia: Chemical-mechanical polishing][wiki-cmp])
-or, for oxide, colloidal/fumed silica in water with KOH or NH₄OH
-([Cook 1990][cook]; [Krishnan, Nalaskowski and Cook 2010][krishnan]).
-For tungsten,
-Kaufman and co-workers at IBM showed that an oxidiser in the slurry
-(originally potassium ferricyanide, later hydrogen peroxide or ferric
-nitrate) forms a thin, soft WO₃ layer that the abrasive removes,
-exposing fresh metal, so that the rate is set by oxidation and the
-selectivity to oxide by the slurry's acidity ([Kaufman et al.
-1991][kaufman]). The pad — a porous polyurethane, "porous polymeric
-materials with a pore size between 30 and 50 μm" ([Wikipedia:
-Chemical-mechanical polishing][wiki-cmp]) — carries the slurry in its
-pores, and its asperities transmit the load; it glazes with use and
-"must be regularly reconditioned" with a diamond disc.
+Polishing is neither pure abrasion nor pure etching. For silicon
+dioxide, Cook showed that the alkaline slurry (pH 10–11) hydrolyses the
+oxide surface to a soft silanol-rich layer, that silica abrasive
+particles bond to it and tear it away, and that dissolved silica must be
+carried off before it re-deposits;[^cook-1990] the abrasive is "cerium
+dioxide"[^wiki-cmp] or, for oxide, colloidal/fumed silica in water with
+KOH or NH₄OH.[^cook-1990][^rev-02] For tungsten, Kaufman and co-workers
+at IBM showed that an oxidiser in the slurry (originally potassium
+ferricyanide, later hydrogen peroxide or ferric nitrate) forms a thin,
+soft WO₃ layer that the abrasive removes, exposing fresh metal, so that
+the rate is set by oxidation and the selectivity to oxide by the
+slurry's acidity.[^kaufman-1991] The pad — a porous polyurethane,
+"porous polymeric materials with a pore size between 30 and 50
+μm"[^wiki-cmp] — carries the slurry in its pores, and its asperities
+transmit the load; it glazes with use and "must be regularly
+reconditioned" with a diamond disc.
 
 ### Planarisation, dishing and erosion
 
-A pad is compliant on the scale of the wafer but stiff on the scale of
-a feature, so it removes high features first: this is what makes CMP
+A pad is compliant on the scale of the wafer but stiff on the scale of a
+feature, so it removes high features first: this is what makes CMP
 planarise rather than merely thin. The planarisation length is of the
-order of a few millimetres, and within it the removal rate of a
-feature depends on the local pattern density — dense regions of raised
-oxide polish more slowly than sparse ones (Steigerwald, Murarka and
-Gutmann [steigerwald]). The same compliance causes the two classic
-defects of a stop-layer or metal polish: {term}`dishing`, the recession
-of a wide soft feature (an oxide-filled wide trench, a tungsten pad)
-below the surrounding hard surface, and {term}`erosion`, the thinning
-of the hard surface (oxide between a dense array of plugs, or the STI
-nitride in dense active areas). Both are reduced by high-selectivity
-slurries, a short over-polish, and design rules on feature width and
-density — which is why PDKs require metal fill and limit wide plates
-([Zantye, Kumar and Sikder 2004][zantye]; [Krishnan, Nalaskowski and
-Cook 2010][krishnan]).
+order of a few millimetres, and within it the removal rate of a feature
+depends on the local pattern density — dense regions of raised oxide
+polish more slowly than sparse ones.[^steigerwald-1997] The same
+compliance causes the two classic defects of a stop-layer or metal
+polish: {term}`dishing`, the recession of a wide soft feature (an
+oxide-filled wide trench, a tungsten pad) below the surrounding hard
+surface, and {term}`erosion`, the thinning of the hard surface (oxide
+between a dense array of plugs, or the STI nitride in dense active
+areas). Both are reduced by high-selectivity slurries, a short
+over-polish, and design rules on feature width and density — which is
+why PDKs require metal fill and limit wide
+plates.[^zantye-2004][^rev-02]
 
 ### Endpoint and process control
 
@@ -112,12 +106,11 @@ rate; motor-current or friction endpoint, which changes when the pad
 reaches a different material (nitride under oxide, oxide under
 tungsten); or in-situ optical or eddy-current thickness sensing. The
 Applied Mirra "was the first CMP system that successfully integrated
-endpoint detection and integrated cleaning"
-([Chip History Center: Mirra][chiphistory]). Pre- and post-polish
-thickness maps from an optical thickness gauge give the removal and its
-uniformity, which are put under {term}`SPC`; within-wafer
-non-uniformity is tuned with zoned carrier pressures, retaining rings
-and pad conditioning.
+endpoint detection and integrated cleaning".[^chiphistory-mirra] Pre-
+and post-polish thickness maps from an optical thickness gauge give the
+removal and its uniformity, which are put under {term}`SPC`;
+within-wafer non-uniformity is tuned with zoned carrier pressures,
+retaining rings and pad conditioning.
 
 ### Post-CMP cleaning
 
@@ -136,26 +129,24 @@ polish and clean.
 | Tungsten ({ref}`WCMPLI <step-100>` etc.) | W and Ti/TiN liner | ILD oxide | alumina or silica with H₂O₂ or Fe(NO₃)₃, pH 2–4 | plug recess, oxide erosion in dense arrays, W "coring", corrosion |
 | ILD ({ref}`CMPM <step-116>` etc.) | PECVD/HDP oxide | none (fixed removal) | fumed silica/KOH or NH₄OH, pH 10–11 | thickness non-uniformity, scratches, pattern-density steps |
 
-The slurry pH values in the table are typical industry values
-(Steigerwald, Murarka and Gutmann [steigerwald]; [Zantye, Kumar and
-Sikder 2004][zantye]).
+The slurry pH values in the table are typical industry
+values.[^steigerwald-1997][^zantye-2004]
 
 ## Typical equipment
 
 * **Polishers**: Applied Materials Mirra ("the Company announced its
   entry into the CMP market with the Mirra CMP in December 1995. The
-  Mirra CMP system features a unique three-station, four polishing
-  head design" [amat-1997]) and Mirra Mesa with integrated cleaner;
-  Ebara F-REX 200 (the current
-  F-REX200M2 "polishes 200 mm wafers with high k-materials and
-  aluminium layers" [ebara]); IPEC/Westech 372 and 472 and the
-  SpeedFam-IPEC Auriga; Strasbaugh 6DS-SP; Lam Teres.
-* **Post-CMP cleaners**: OnTrak (later Lam) DSS-200 double-sided
-  brush scrubbers; Applied Mesa integrated cleaner.
+  Mirra CMP system features a unique three-station, four polishing head
+  design")[^amat-1997] and Mirra Mesa with integrated cleaner; Ebara
+  F-REX 200 (the current F-REX200M2 "polishes 200 mm wafers with high
+  k-materials and aluminium layers");[^ebara-frex] IPEC/Westech 372 and
+  472 and the SpeedFam-IPEC Auriga; Strasbaugh 6DS-SP; Lam Teres.
+* **Post-CMP cleaners**: OnTrak (later Lam) DSS-200 double-sided brush
+  scrubbers; Applied Mesa integrated cleaner.
 * **Metrology**: optical film-thickness mappers (Nanometrics NanoSpec,
   Rudolph, KLA-Tencor), stylus profilers for dishing and step height
-  (KLA-Tencor HRP), and unpatterned-wafer defect inspection
-  (KLA-Tencor Surfscan) for scratches.
+  (KLA-Tencor HRP), and unpatterned-wafer defect inspection (KLA-Tencor
+  Surfscan) for scratches.
 
 ## Typical consumables
 
@@ -163,12 +154,11 @@ Sikder 2004][zantye]).
   for oxide; colloidal silica (Klebosol class); ceria-based slurries
   for STI with nitride selectivity; alumina or silica plus oxidiser
   (H₂O₂, Fe(NO₃)₃) for tungsten. Slurry is consumed at a few hundred
-  millilitres per wafer per platen, a typical industry figure
-  ([Zantye, Kumar and Sikder 2004][zantye]).
+  millilitres per wafer per platen, a typical industry figure.[^zantye-2004]
 * **Pads**: stacked polyurethane pads (Rodel IC1000 over Suba IV
   class) for primary polish; soft Politex-type pads for buffing;
   replaced after a few hundred to a thousand wafers, a typical
-  industry figure (Steigerwald, Murarka and Gutmann [steigerwald]).
+  industry figure.[^steigerwald-1997]
 * **Conditioners**: diamond-grit discs; **carrier films** and retaining
   rings; **brushes** (PVA) for the cleaner.
 * **Chemicals**: KOH, NH₄OH, dilute HF, citric acid, hydrogen peroxide
@@ -195,82 +185,187 @@ Sikder 2004][zantye]).
 
 ### Cross-check
 
-* F. W. Preston, "The theory and design of plate glass polishing
-  machines", *Journal of the Society of Glass Technology* **11**,
-  214–256 (1927).
-* L. M. Cook, "Chemical processes in glass polishing", *Journal of
-  Non-Crystalline Solids* **120**, 152–171 (1990).
-  <https://doi.org/10.1016/0022-3093(90)90200-6>
-* F. B. Kaufman et al., "Chemical-Mechanical Polishing for Fabricating
-  Patterned W Metal Features as Chip Interconnects", *Journal of the
-  Electrochemical Society* **138**, 3460–3465 (1991).
-  <https://doi.org/10.1149/1.2085434>
-* K. D. Beyer et al., "Chem-mech polishing method for producing
-  coplanar metal/insulator films on a substrate", US Patent 4,944,836
-  (1990). <https://patents.google.com/patent/US4944836A/en>
-* SkyWater Technology / Google, "Criteria & Assumptions", *SKY130 PDK
-  documentation* (dielectric thicknesses).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
-* Chip History Center, "The Mirra CMP System by Applied Materials".
-  <https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>
-* Applied Materials, 1997 Annual Report (entry into CMP with the
-  Mirra). <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
-* EBARA Precision Machinery Europe, "CMP Tools" (F-REX200M2).
-  <https://www.ebara-pm.eu/systems/cmp-tools/>
+* Preston, *J. Soc. Glass Technol.* 1927 — the removal-rate law (no
+  online copy is known).[^preston-1927]
+* Cook, *J. Non-Cryst. Solids* 1990 — the chemistry of oxide
+  polishing.[^cook-1990]
+* Kaufman et al. (IBM), *JES* 1991 — tungsten CMP by oxidation and
+  abrasion.[^kaufman-1991]
+* Beyer et al. (IBM), US 4,944,836 — the foundational
+  metal/insulator CMP patent.[^pat-cmp-ibm-1990]
+* SkyWater PDK, *Criteria & Assumptions* — dielectric
+  thicknesses.[^pdk-03]
+* Chip History Center, *The Mirra CMP System* — integrated endpoint
+  and cleaning.[^chiphistory-mirra]
+* Applied Materials, 1997 Annual Report — entry into CMP with the
+  Mirra.[^amat-1997]
+* EBARA Precision Machinery Europe, *CMP Tools* —
+  F-REX200M2.[^ebara-frex]
 
-### High-level
+### High-level understanding
 
-* Wikipedia, "Chemical-mechanical polishing".
-  <https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>
-* Wikipedia, "Shallow trench isolation".
-  <https://en.wikipedia.org/wiki/Shallow_trench_isolation>
-* Wikipedia, "Colloidal silica".
-  <https://en.wikipedia.org/wiki/Colloidal_silica>
-* Wikipedia, "Cerium(IV) oxide".
-  <https://en.wikipedia.org/wiki/Cerium(IV)_oxide>
-* Wikipedia, "Polyurethane".
-  <https://en.wikipedia.org/wiki/Polyurethane>
-* J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
-  Technology*, Prentice Hall, 2000, ISBN 978-0-13-085037-9, ch. 11
-  ("Back-End Technology").
-* S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4: Deep-Submicron
-  Process Technology*, Lattice Press, 2002, ISBN 978-0-9616721-7-1,
-  ch. 8 ("Chemical-Mechanical Polishing").
-* M. Quirk and J. Serda, *Semiconductor Manufacturing Technology*,
-  Prentice Hall, 2001, ISBN 978-0-13-081520-0, ch. 18.
-* H. Xiao, *Introduction to Semiconductor Manufacturing Technology*,
-  2nd ed., SPIE Press, 2012, ch. 12. <https://doi.org/10.1117/3.924283>
+* Wikipedia, *Chemical-mechanical polishing* — abrasives, pads and
+  conditioning.[^wiki-cmp]
+* Wikipedia, *Shallow trench isolation*.[^wiki-sti]
+* Wikipedia, *Colloidal silica*.[^wiki-colloidal-silica]
+* Wikipedia, *Cerium(IV) oxide*.[^wiki-ceria]
+* Wikipedia, *Polyurethane*.[^wiki-polyurethane]
+* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 11
+  ("Back-End Technology").[^txt-01]
+* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — ch. 8
+  ("Chemical-Mechanical Polishing").[^txt-05]
+* Quirk and Serda, *Semiconductor Manufacturing Technology* —
+  ch. 18.[^txt-07]
+* Xiao, *Introduction to Semiconductor Manufacturing Technology* —
+  ch. 12.[^txt-08]
 
 ### Deep dive
 
-* J. M. Steigerwald, S. P. Murarka and R. J. Gutmann, *Chemical
-  Mechanical Planarization of Microelectronic Materials*, Wiley, 1997.
-  <https://doi.org/10.1002/9783527617746>
-* P. B. Zantye, A. Kumar and A. K. Sikder, "Chemical mechanical
-  planarization for microelectronics applications", *Materials Science
-  and Engineering R* **45**, 89–220 (2004).
-  <https://doi.org/10.1016/j.mser.2004.06.002>
-* M. Krishnan, J. W. Nalaskowski and L. M. Cook, "Chemical Mechanical
-  Planarization: Slurry Chemistry, Materials, and Mechanisms",
-  *Chemical Reviews* **110**, 178–204 (2010).
-  <https://doi.org/10.1021/cr900170z>
-* J. Luo and D. A. Dornfeld, "Material removal mechanism in chemical
-  mechanical polishing: theory and modeling", *IEEE Transactions on
-  Semiconductor Manufacturing* **14**(2), 112–133 (2001).
-  <https://doi.org/10.1109/66.920723>
-* K. D. Beyer et al., "Method for producing coplanar multi-level
-  metal/insulator films on a substrate", US Patent 4,789,648 (1988).
-  <https://patents.google.com/patent/US4789648A/en>
+* Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization
+  of Microelectronic Materials* — the standard monograph: pads,
+  slurries, pattern effects and consumables.[^steigerwald-1997]
+* Zantye, Kumar and Sikder, *Mater. Sci. Eng. R* 2004 — a long review
+  of CMP for microelectronics, including Preston deviations and slurry
+  consumption.[^zantye-2004]
+* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — oxide, tungsten
+  and copper slurry chemistry and mechanisms.[^rev-02]
+* Luo and Dornfeld, *IEEE TSM* 2001 — the abrasive-contact model of
+  material removal.[^luo-2001]
+* Runnels and Eyman, *JES* 1994 — a tribology (fluid-film) analysis of
+  the wafer–pad contact.[^runnels-1994]
+* Stine et al. (MIT), *IEEE TSM* 1998 — the pattern-density model and
+  the test-mask method for characterising planarisation
+  length.[^stine-1998]
+* Ouma et al., *IEEE TSM* 2002 — characterisation and modelling of
+  oxide CMP with planarisation length and density
+  concepts.[^ouma-2002]
+* Boyd and Ellul, *JES* 1997 — a one-step STI planarisation process by
+  CMP.[^boyd-1997]
+* Nandakumar et al. (TI), IEDM 1998 — STI integration including gap
+  fill and planarisation.[^rev-01]
+* Stein, Hetherington and Cecchi (Sandia), *JES* 1999 — kinetics of
+  tungsten CMP: the roles of alumina abrasive and
+  oxidiser.[^stein-1999]
+* Lustig, Saenger and Tong (IBM), US 5,433,651 — in-situ optical
+  endpoint detection through a window in the platen.[^pat-cmp-endpoint-ibm]
+* Beyer et al. (IBM), US 4,789,648 — coplanar multi-level
+  metal/insulator films by polishing.[^pat-cmp-ibm-1988]
+* Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
+  Materials* — chapters on oxide, tungsten and STI CMP, pads and
+  slurries.[^oliver-2004]
+* Li (ed.), *Microelectronic Applications of Chemical Mechanical
+  Planarization* — including a chapter on STI CMP.[^li-2007]
+* MIT OpenCourseWare 6.152J — lecture notes on planarisation and
+  CMP.[^ocw-6152]
 
-[wiki-cmp]: https://en.wikipedia.org/wiki/Chemical-mechanical_polishing
-[cook]: https://doi.org/10.1016/0022-3093(90)90200-6
-[kaufman]: https://doi.org/10.1149/1.2085434
-[luo]: https://doi.org/10.1109/66.920723
-[zantye]: https://doi.org/10.1016/j.mser.2004.06.002
-[krishnan]: https://doi.org/10.1021/cr900170z
-[steigerwald]: https://doi.org/10.1002/9783527617746
-[beyer]: https://patents.google.com/patent/US4944836A/en
-[chiphistory]: https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system
-[amat-1997]: https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf
-[ebara]: https://www.ebara-pm.eu/systems/cmp-tools/
-[pdk-assume]: https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html
+<!-- footnotes -->
+
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^pat-cmp-ibm-1990]: K. D. Beyer et al. (IBM), *Chem-mech polishing
+    method for producing coplanar metal/insulator films on a substrate*,
+    US 4,944,836 A, granted 1990.
+    <https://patents.google.com/patent/US4944836A/en>
+[^wiki-cmp]: Wikipedia, *Chemical-mechanical polishing*.
+    <https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>
+[^zantye-2004]: P. B. Zantye, A. Kumar and A. K. Sikder, "Chemical
+    mechanical planarization for microelectronics applications",
+    *Materials Science and Engineering: R* **45**(3–6), 89–220 (2004).
+    <https://doi.org/10.1016/j.mser.2004.06.002>
+[^luo-2001]: J. Luo and D. A. Dornfeld, "Material removal mechanism in
+    chemical mechanical polishing: theory and modeling", *IEEE
+    Transactions on Semiconductor Manufacturing* **14**(2), 112–133
+    (2001). <https://doi.org/10.1109/66.920723>
+[^cook-1990]: L. M. Cook, "Chemical processes in glass polishing",
+    *Journal of Non-Crystalline Solids* **120**(1–3), 152–171 (1990).
+    <https://doi.org/10.1016/0022-3093(90)90200-6>
+[^rev-02]: M. Krishnan, J. W. Nalaskowski and L. M. Cook, "Chemical
+    Mechanical Planarization: Slurry Chemistry, Materials, and
+    Mechanisms", *Chemical Reviews* **110**(1), 178–204 (2010).
+    <https://doi.org/10.1021/cr900170z>
+[^kaufman-1991]: F. B. Kaufman, D. B. Thompson, R. E. Broadie, M. A.
+    Jaso et al., "Chemical-Mechanical Polishing for Fabricating
+    Patterned W Metal Features as Chip Interconnects", *Journal of The
+    Electrochemical Society* **138**(11), 3460–3465 (1991).
+    <https://doi.org/10.1149/1.2085434>
+[^steigerwald-1997]: J. M. Steigerwald, S. P. Murarka and R. J. Gutmann,
+    *Chemical Mechanical Planarization of Microelectronic Materials*,
+    Wiley, 1997. <https://doi.org/10.1002/9783527617746>
+[^chiphistory-mirra]: Chip History Center, *The Mirra CMP System by
+    Applied Materials*.
+    <https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>
+[^amat-1997]: Applied Materials, Inc., *1997 Annual Report*.
+    <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
+[^ebara-frex]: EBARA Precision Machinery Europe, *CMP Tools*
+    (F-REX200M2). <https://www.ebara-pm.eu/systems/cmp-tools/>
+[^preston-1927]: F. W. Preston, "The theory and design of plate glass
+    polishing machines", *Journal of the Society of Glass Technology*
+    **11**, 214–256 (1927).
+[^wiki-sti]: Wikipedia, *Shallow trench isolation*.
+    <https://en.wikipedia.org/wiki/Shallow_trench_isolation>
+[^wiki-colloidal-silica]: Wikipedia, *Colloidal silica*.
+    <https://en.wikipedia.org/wiki/Colloidal_silica>
+[^wiki-ceria]: Wikipedia, *Cerium(IV) oxide*.
+    <https://en.wikipedia.org/wiki/Cerium(IV)_oxide>
+[^wiki-polyurethane]: Wikipedia, *Polyurethane*.
+    <https://en.wikipedia.org/wiki/Polyurethane>
+[^txt-01]: J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+    Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
+    2000, ISBN 978-0-13-085037-9.
+    <https://openlibrary.org/isbn/9780130850379>
+[^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+    Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
+    978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^txt-07]: M. Quirk and J. Serda, *Semiconductor Manufacturing
+    Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
+    <https://openlibrary.org/isbn/9780130815200>
+[^txt-08]: H. Xiao, *Introduction to Semiconductor Manufacturing
+    Technology*, 2nd ed., SPIE Press, 2012, ISBN 978-0-8194-9092-6.
+    <https://doi.org/10.1117/3.924283>
+[^runnels-1994]: S. R. Runnels and L. M. Eyman, "Tribology Analysis of
+    Chemical-Mechanical Polishing", *Journal of The Electrochemical
+    Society* **141**(6), 1698–1701 (1994).
+    <https://doi.org/10.1149/1.2054985>
+[^stine-1998]: B. E. Stine, D. O. Ouma, R. R. Divecha, D. S. Boning et
+    al., "Rapid characterization and modeling of pattern-dependent
+    variation in chemical-mechanical polishing", *IEEE Transactions on
+    Semiconductor Manufacturing* **11**(1), 129–140 (1998).
+    <https://doi.org/10.1109/66.661292>
+[^ouma-2002]: D. O. Ouma, D. S. Boning, J. E. Chung, W. G. Easter et
+    al., "Characterization and modeling of oxide chemical-mechanical
+    polishing using planarization length and pattern density concepts",
+    *IEEE Transactions on Semiconductor Manufacturing* **15**(2),
+    232–244 (2002). <https://doi.org/10.1109/66.999598>
+[^boyd-1997]: J. M. Boyd and J. P. Ellul, "A One-Step Shallow Trench
+    Global Planarization Process Using Chemical Mechanical Polishing",
+    *Journal of The Electrochemical Society* **144**(5), 1838–1841
+    (1997). <https://doi.org/10.1149/1.1837687>
+[^rev-01]: M. Nandakumar, A. Chatterjee, S. Sridhar, K. Joyner,
+    M. Rodder and I.-C. Chen, "Shallow trench isolation for advanced
+    ULSI CMOS technologies", *IEDM 1998 Technical Digest*, pp. 133–136.
+    <https://doi.org/10.1109/IEDM.1998.746297>
+[^stein-1999]: D. Stein, D. L. Hetherington and J. L. Cecchi,
+    "Investigation of the Kinetics of Tungsten Chemical Mechanical
+    Polishing in Potassium Iodate-Based Slurries: I. Role of Alumina and
+    Potassium Iodate", *Journal of The Electrochemical Society*
+    **146**(1), 376–381 (1999). <https://doi.org/10.1149/1.1391617>
+[^pat-cmp-endpoint-ibm]: N. E. Lustig, K. L. Saenger and H.-M. Tong
+    (IBM), *In-situ endpoint detection and process monitoring method and
+    apparatus for chemical-mechanical polishing*, US 5,433,651 A,
+    granted 1995-07-18.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5433651>
+[^pat-cmp-ibm-1988]: K. D. Beyer et al. (IBM), *Method for producing
+    coplanar multi-level metal/insulator films on a substrate*, US
+    4,789,648 A, granted 1988.
+    <https://patents.google.com/patent/US4789648A/en>
+[^oliver-2004]: M. R. Oliver (ed.), *Chemical-Mechanical Planarization
+    of Semiconductor Materials*, Springer Series in Materials Science
+    69, Springer, 2004. <https://doi.org/10.1007/978-3-662-06234-0>
+[^li-2007]: Y. Li (ed.), *Microelectronic Applications of Chemical
+    Mechanical Planarization*, Wiley, 2007.
+    <https://doi.org/10.1002/9780470180907>
+[^ocw-6152]: MIT OpenCourseWare, *6.152J Micro/Nano Processing
+    Technology*, Fall 2005 (lecture notes on lithography, etching,
+    deposition and CMP).
+    <https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/>
