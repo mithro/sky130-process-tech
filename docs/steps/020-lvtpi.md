@@ -17,14 +17,15 @@ placed through the N-well resist of {ref}`NWM <step-017>`, after the two
 well implants {ref}`NWI <step-018>` and {ref}`NWI2 <step-019>`. Where
 those set the buried profile of the N-well, `LVTPI` is a low-energy
 *channel* implant that sets the surface doping under the future PMOS
-gates — that is, the PMOS threshold voltage. The step list calls it the
-"Low V P-channel implant"; the code reads naturally as "low-voltage(-Vt)
-P-channel implant". Because it shares the N-well window, it reaches
-every N-well region on the wafer: the 1.8 V PMOS, the 5 V PMOS, the
-N-well rings and the drain extensions alike, unless the reticle is
-generated differently for some of them (not public). It is the P-channel
-counterpart of {ref}`NCHI <step-045>`, the N-channel implant that the
-1.8 V NMOS receive later under the low-voltage oxide mask.
+gates — that is, the PMOS threshold voltage. The step list used in this
+reference names it the "Low V P-channel implant"; the code reads
+naturally as "low-voltage(-Vt) P-channel implant". Because it shares the
+N-well window, it reaches every N-well region on the wafer: the 1.8 V
+PMOS, the 5 V PMOS, the N-well rings and the drain extensions alike,
+unless the reticle is generated differently for some of them (not
+public). It is the P-channel counterpart of {ref}`NCHI <step-045>`, the
+N-channel implant that the 1.8 V NMOS receive later under the
+low-voltage oxide mask.
 
 The step's position is what makes it economical: no extra lithography is
 needed because the N-well mask already outlines exactly the regions

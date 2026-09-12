@@ -184,11 +184,11 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Open questions
 
-* Whether the pad oxide is retained through {ref}`RTAI <step-034>`
-  or removed here is inferred from the absence of a sacrificial-oxide
-  step in the public list.
+* Whether the pad oxide is retained through {ref}`RTAI <step-034>` or
+  removed here is inferred from the absence of a sacrificial-oxide step
+  in the step list used in this reference.
 * Whether the pre-anneal clean is part of this step or belongs to
-  {ref}`RTAI <step-034>` in the fab's own grouping is unknown.
+  {ref}`RTAI <step-034>` is unknown.
 * The strip recipe is not public.
 
 <!-- footnotes -->

@@ -18,17 +18,17 @@ low-Vt channel implant {ref}`LVTNI <step-015>`, the N-well pair
 {ref}`NWI <step-018>`/{ref}`NWI2 <step-019>` and the PMOS channel
 implant {ref}`LVTPI <step-020>`, the high-Vt PMOS pair
 {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>`, the P-well pair
-{ref}`PWI <step-027>`/{ref}`PWI2 <step-028>` and the drain-extended
-pair {ref}`PWDEI1 <step-031>`/{ref}`PWDEI2 <step-032>` — and none has
-yet been annealed. `RTAI` heats the wafer, in an inert ambient, to
-repair the lattice damage they left, move the dopant atoms onto
-substitutional sites where they are electrically active, and settle
-the well and channel profiles before the first gate dielectric is
-grown. The step list calls it the "Pre-gate oxide anneal"; the code
-`RTAI` reads as "RTA, implant" — a rapid thermal anneal — and the
-public evidence supports that reading (below). After it, the flow
-enters the SONOS module ({ref}`TUNM <step-035>`) and then gate
-oxidation ({ref}`GOX100 <step-043>`).
+{ref}`PWI <step-027>`/{ref}`PWI2 <step-028>` and the drain-extended pair
+{ref}`PWDEI1 <step-031>`/{ref}`PWDEI2 <step-032>` — and none has yet
+been annealed. `RTAI` heats the wafer, in an inert ambient, to repair
+the lattice damage they left, move the dopant atoms onto substitutional
+sites where they are electrically active, and settle the well and
+channel profiles before the first gate dielectric is grown. The step
+list used in this reference calls it the "Pre-gate oxide anneal"; the
+code `RTAI` reads as "RTA, implant" — a rapid thermal anneal — and the
+public evidence supports that reading (below). After it, the flow enters
+the SONOS module ({ref}`TUNM <step-035>`) and then gate oxidation
+({ref}`GOX100 <step-043>`).
 
 The only other anneal the wells have seen is incidental: the deep
 N-well of {ref}`DNI <step-008>` was driven by the liner oxidation at

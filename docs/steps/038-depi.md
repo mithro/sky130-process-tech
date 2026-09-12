@@ -15,15 +15,15 @@
 `DEPI` is the second implant through the tunnel-mask windows. Where
 {ref}`PTSI <step-037>` put a p-type barrier *under* the memory
 transistor's channel, `DEPI` dopes the channel *surface* so that the
-SONOS transistor is a depletion-mode device: one that conducts with
-zero volts on its gate and needs a negative gate voltage to turn off.
-The name is the step list's; the public confirmation is the PDK's own
-cross-section of the 2-T SONOS cell, whose labels include "Depletion
-Implant" alongside "ONO", "SONOS gate", "NPASS gate" and "NMOS VT
-implants".[^pdk-sonos-xs] The implant is confined to the `tunm` windows
-(GDS 80:20, "SONOS device tunnel implant"[^pdk-06]) by the resist from
-{ref}`TUNM <step-035>`, opened at {ref}`TUNARCE <step-036>`, and passes
-through the (inferred) pad oxide like `PTSI`.
+SONOS transistor is a depletion-mode device: one that conducts with zero
+volts on its gate and needs a negative gate voltage to turn off. The
+PDK's own cross-section of the 2-T SONOS cell uses the same term: its
+labels include "Depletion Implant" alongside "ONO", "SONOS gate", "NPASS
+gate" and "NMOS VT implants".[^pdk-sonos-xs] The implant is confined to
+the `tunm` windows (GDS 80:20, "SONOS device tunnel implant"[^pdk-06])
+by the resist from {ref}`TUNM <step-035>`, opened at
+{ref}`TUNARCE <step-036>`, and passes through the (inferred) pad oxide
+like `PTSI`.
 
 For an n-channel transistor a depletion implant is an n-type dose
 (arsenic or phosphorus) placed in the top few tens of nanometres of

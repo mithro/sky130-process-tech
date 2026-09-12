@@ -196,8 +196,8 @@ fab:
   wet sequence are not public.
 * Whether the post-trench-etch polymer clean (see
   {ref}`STIE <step-006>`) is performed here, at `STIE`, or before
-  {ref}`DNM <step-007>` is not distinguishable from the public step
-  list.
+  {ref}`DNM <step-007>` is not distinguishable from the step list used
+  in this reference.
 * Whether `DNIS` includes the pre-liner-oxidation HF treatment or
   whether that belongs to {ref}`LINOX <step-010>` is unknown.
 

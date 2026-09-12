@@ -225,11 +225,11 @@ raises NMOS Vt.[^hook-2003]
 ## Open questions
 
 * The PDK mask table leaves the "Used in SKY130" column blank for PWBM
-  (and for PWDEM) while the step list and the layer rules include it; in
+  (and for PWDEM) although the `pwbm`/`pwde` layers and their rules
+  exist and the step list used in this reference includes both steps; in
   `masks.csv` these two `pwbm`/`pwde`-backed masks are the only
   well-module masks left blank — DNM, NWM, HVTPM and LVTNM are all
-  ticked.[^pdk-05] Which of the two documents is authoritative is not
-  resolvable publicly.
+  ticked.[^pdk-05] We treat the blank as a documentation inconsistency.
 * That the reticle is derived from `nwell` ∪ `pwbm` is our inference
   from the absence of a drawn P-well layer; the actual Boolean
   generation rules are not public.

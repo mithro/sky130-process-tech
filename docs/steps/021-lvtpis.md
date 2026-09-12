@@ -17,9 +17,9 @@
 MeV-class phosphorus well implants {ref}`NWI <step-018>` and
 {ref}`NWI2 <step-019>` and the keV P-channel threshold implant
 {ref}`LVTPI <step-020>` — and then cleans the wafer for the next
-lithography, {ref}`HVTPM <step-022>`. The step list names it after the
-last implant it follows ("P-channel implant strip"), but the resist it
-removes is the N-well resist.
+lithography, {ref}`HVTPM <step-022>`. The step list used in this
+reference names it after the last implant it follows ("P-channel implant
+strip"); the resist it removes is, we infer, the N-well resist.
 
 This is the hardest strip of the module. The resist is the thickest
 in the flow so far (2–3 µm class, inferred on the

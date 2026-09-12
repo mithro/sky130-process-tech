@@ -13,14 +13,13 @@
 ## What this step is
 
 `PCHI` is the first of two channel implants placed through the resist
-windows of {ref}`HVTPM <step-022>`, the high-Vt P-channel mask. It
-adds dopant to the surface of the N-well under the future gates of the
-PMOS transistors drawn with the `hvtp` layer, on top of the baseline
-PMOS channel doping that every N-well received at
-{ref}`LVTPI <step-020>`. Its companion, {ref}`PNCHI <step-024>`, is
-named in the step list as a BF₂ implant; `PCHI` itself carries no
-species in its public name. The resist is stripped at
-{ref}`PCHIS <step-025>`.
+windows of {ref}`HVTPM <step-022>`, the high-Vt P-channel mask. It adds
+dopant to the surface of the N-well under the future gates of the PMOS
+transistors drawn with the `hvtp` layer, on top of the baseline PMOS
+channel doping that every N-well received at {ref}`LVTPI <step-020>`.
+Its companion, {ref}`PNCHI <step-024>`, carries "BF2" in its name in the
+step list used in this reference; `PCHI` itself carries no species in
+its name. The resist is stripped at {ref}`PCHIS <step-025>`.
 
 The PDK describes the `hvtp` region as the "Vt adjust implant region for
 high Vt LV PMOS"[^pdk-periph] and the resulting device as the "1.8V

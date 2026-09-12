@@ -15,11 +15,12 @@
 `PNCHI` is the second implant through the high-Vt P-channel resist of
 {ref}`HVTPM <step-022>`, following {ref}`PCHI <step-023>` without a
 strip in between. It is the one implant in the well and channel module
-whose species is public: the step list names it the "P-channel BF2
-implant". Boron difluoride (BF₂⁺) is the standard way to put boron very
-close to the silicon surface, because the molecular ion breaks up on
-impact and "only 11/49 of its energy is carried by the boron atom", so a
-beam energy the tool can control well produces a shallow boron profile
+whose name carries a species: the step list used in this reference names
+it "P-channel BF2 implant". No public document confirms the species.
+Boron difluoride (BF₂⁺) is the standard way to put boron very close to
+the silicon surface, because the molecular ion breaks up on impact and
+"only 11/49 of its energy is carried by the boron atom", so a beam
+energy the tool can control well produces a shallow boron profile
 (category page).[^txt-01] The resist is stripped at
 {ref}`PCHIS <step-025>`.
 
@@ -55,8 +56,8 @@ shallow boron dose in a high-Vt PMOS:
    shallow boron layer would be needed in *every* PMOS to bring |Vt|
    into range, and the high-Vt variant would use a *smaller* boron dose
    than the baseline. That would require the baseline PMOS to receive
-   its own BF₂ elsewhere, and the step list used in this reference shows
-   no such step; we consider it unlikely at 130 nm.[^txt-04]
+   its own BF₂ elsewhere, and the step list used in this reference
+   contains no such step; we consider it unlikely at 130 nm.[^txt-04]
 3. **Junction or field engineering under the gate edge.** A light boron
    dose at the channel surface changes the source/drain extension
    junction abruptness and the gate-edge field; some high-Vt devices are
@@ -132,7 +133,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   (strip); mask: {ref}`HVTPM <step-022>`.
 * Baseline PMOS channel: {ref}`LVTPI <step-020>`.
 * The other shallow p-type implants in the flow are the P⁺ source/drain
-  implants (species not given in the step list)
+  implants (species not given in the step list used in this reference)
   {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>`.
 * Activated at {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
@@ -199,8 +200,9 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   compensation reading above is our inference.
 * Energy, dose and the order of `PCHI`/`PNCHI` relative to each other
   in profile depth are not public.
-* The expansion of the acronym `PNCHI` is not public; we use only the
-  step list's "P-channel BF2 implant".
+* The expansion of the acronym `PNCHI` is not known; we use only the
+  name "P-channel BF2 implant" from the step list used in this
+  reference.
 
 <!-- footnotes -->
 

@@ -237,11 +237,11 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 ## Open questions
 
 * **Reticle polarity.** The PDK says `lvtn` *blocks* a Vt-adjust
-  implant, yet the step list pairs the mask with an implant
-  ({ref}`LVTNI <step-015>`). Whether the reticle opens *over* `lvtn`
-  (and `LVTNI` is a counter-doping implant) or *everywhere except*
-  `lvtn` (and `LVTNI` is the baseline Vt-adjust implant that low-Vt
-  devices skip) cannot be settled from public data; the "mask
+  implant, yet the step list used in this reference pairs the mask with
+  an implant ({ref}`LVTNI <step-015>`). Whether the reticle opens *over*
+  `lvtn` (and `LVTNI` is a counter-doping implant) or *everywhere
+  except* `lvtn` (and `LVTNI` is the baseline Vt-adjust implant that
+  low-Vt devices skip) cannot be settled from public data; the "mask
   add/drop" purposes show only that the reticle is generated, not how.
 * Whether separate NMOS and PMOS reticles are derived from the one
   drawn layer, or whether `nfet_01v8_lvt` and `pfet_01v8_lvt` share a

@@ -14,9 +14,10 @@
 
 `PCHIS` strips the photoresist patterned at {ref}`HVTPM <step-022>`
 after it has masked the two high-Vt PMOS channel implants
-{ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>`, and cleans the
-wafer for the P-well block mask {ref}`PWBM <step-026>`. The step list
-names it after the last implant ("P-channel BF2 implant strip").
+{ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>`, and cleans the wafer
+for the P-well block mask {ref}`PWBM <step-026>`. The step list used in
+this reference names it after the last implant ("P-channel BF2 implant
+strip").
 
 The resist is the roughly 1 µm i-line resist of an implant-block layer
 ({ref}`HVTPM <step-022>`). It has received two keV-class channel
