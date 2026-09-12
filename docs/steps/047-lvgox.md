@@ -71,7 +71,7 @@ the thick oxide has absorbed the long oxidation and the masked etch,
 gives it the smallest thermal and chemical history
 ({ref}`category-oxidation`). The price is that the thick oxide grows
 further during this step — in the parabolic Deal–Grove regime, where
-the increment is small and calculable[^deal-grove-1965] — so the
+the increment is small and calculable[^deal-1965] — so the
 {ref}`GOX100 <step-043>` target is set with this growth included.
 
 **Why nitrided.** By the 130 nm node "most gate oxides were lightly
@@ -233,7 +233,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
   penetration with an RTCVD oxynitride at 0.18 µm.[^tseng-1998]
 * Massoud, Plummer and Irene, *J. Electrochem. Soc.* 1985 — thin-regime
   growth kinetics.[^massoud-1985]
-* Deal and Grove, *J. Appl. Phys.* 1965 — the oxidation law.[^deal-grove-1965]
+* Deal and Grove, *J. Appl. Phys.* 1965 — the oxidation law.[^deal-1965]
 * Deal, *J. Electrochem. Soc.* 1980 — oxide-charge terminology.[^deal-1980]
 * Nulman, Krusius and Gat, *IEEE EDL* 1985 — rapid thermal oxidation
   of thin gate dielectrics.[^nulman-1985]
@@ -322,7 +322,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
     structure, and physical and electrical limits", *Journal of Applied
     Physics* **90**(5), 2057–2121 (2001).
     <https://doi.org/10.1063/1.1385803>
-[^deal-grove-1965]: B. E. Deal and A. S. Grove, "General Relationship
+[^deal-1965]: B. E. Deal and A. S. Grove, "General Relationship
     for the Thermal Oxidation of Silicon", *Journal of Applied Physics*
     **36**(12), 3770–3778 (1965). <https://doi.org/10.1063/1.1713945>
 [^pfiester-1990]: J. R. Pfiester, F. K. Baker, T. C. Mele, H.-H. Tseng,
@@ -377,10 +377,10 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
     S. Hattangady, "Surface nitridation of silicon dioxide with a high
     density nitrogen plasma", *Journal of Vacuum Science & Technology
     B* **15**(4), 967–970 (1997). <https://doi.org/10.1116/1.589516>
-[^deal-1980]: B. E. Deal, "Standardized Terminology for Oxide Charges
-    Associated with Thermally Oxidized Silicon", *Journal of The
-    Electrochemical Society* **127**(4), 979–981 (1980).
-    <https://doi.org/10.1149/1.2129800>
+[^deal-1980]: B. E. Deal, "Standardized terminology for oxide charges
+    associated with thermally oxidized silicon", *IEEE Transactions on
+    Electron Devices* **27**(3), 606–608 (1980).
+    <https://doi.org/10.1109/T-ED.1980.19908>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,

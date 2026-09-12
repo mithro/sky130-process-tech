@@ -25,12 +25,13 @@ margin.
 The PDK lists "ONO Mask, ONOM" as used in SKY130,[^pdk-05] with the
 generated mask layer `conom` (GDS 88:0, "ONO Mask") and a drawing
 purpose `conom` at 87:44.[^pdk-06] No `onom` design rules are
-published in the periphery-rule set, and there is no separately drawn
-`onom` layer for designers: we infer that the mask is generated from
-the `tunm` layer (GDS 80:20)[^pdk-06] by oversizing, so that the ONO
-island always encloses the tunnel window. That the memory cells live
-only inside memory blocks marked `areaid.ce` (rule tunm.8)[^pdk-periph]
-means the ONO islands are confined to the array areas of a design.
+published in the periphery-rule set, and there is no described or
+rule-bearing drawn `onom` layer for designers: we infer that the mask
+is generated from the `tunm` layer (GDS 80:20)[^pdk-06] by oversizing,
+so that the ONO island always encloses the tunnel window. That the
+memory cells live only inside memory blocks marked `areaid.ce` (rule
+tunm.8)[^pdk-periph] means the ONO islands are confined to the array
+areas of a design.
 
 The Cypress patents describe the same operation. In one, "a patterned
 mask layer … is formed on or overlying the sacrificial oxide layer

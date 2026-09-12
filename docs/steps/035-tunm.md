@@ -21,7 +21,8 @@ memory transistors and leaving everything else — every logic
 transistor, every 5 V and high-voltage device — covered. The windows
 are used three times before the resist comes off: two implants go
 through them ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`), and the
-pad oxide inside them is then etched away ({ref}`TUNME <step-039>`) so
+oxide inside them — the pad oxide, we infer — is then etched away
+({ref}`TUNME <step-039>`) so
 that the tunnel oxide of the {term}`ONO` stack can be grown on bare
 silicon at {ref}`ONO <step-040>`.
 
@@ -77,8 +78,8 @@ Control Gate (CG) in series with a CMOS Select Gate", in which
 by Fowler-Nordheim tunneling is trapped in the Nitride (N)
 layer".[^cyp-25] A Cypress press release states that the SONOS module
 "only requires three additional mask layers to a standard CMOS
-process";[^cyp-22] the PDK's mask table shows exactly three —
-`TUNM`, `ONOM` and `LDNTM`[^pdk-05] — and `TUNM` is the first.
+process";[^cyp-22] we read `TUNM`, `ONOM` and `LDNTM` in the PDK's
+mask table[^pdk-05] as the three SONOS masks — and `TUNM` is the first.
 
 The tunnel window has to be a separate mask because the memory
 transistor's channel is engineered differently from every logic
@@ -87,9 +88,9 @@ erased states straddle the read condition — the PDK's e-test table
 gives a nominal programmed threshold of 1.44 V and an erased threshold
 of −2.3 V[^pdk-07] — which calls for its own channel implants
 ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`), and its tunnel oxide
-has to be grown on bare silicon, which means removing the pad oxide
-only where the cells are ({ref}`TUNME <step-039>`). One mask serves
-all three. Without `TUNM` there would be no SONOS cells; the logic
+has to be grown on bare silicon, which means removing the (inferred)
+pad oxide only where the cells are ({ref}`TUNME <step-039>`). One mask
+serves all three. Without `TUNM` there would be no SONOS cells; the logic
 flow would be unaffected.
 
 ## How it is typically performed
@@ -97,11 +98,11 @@ flow would be unaffected.
 An industry-generic sequence for a relaxed implant-plus-etch window in
 a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
-1. **Surface preparation.** The wafer arrives with pad oxide over the
-   active areas and trench oxide over the field (see
-   {ref}`RTAI <step-034>` for the inference that the pad oxide is
-   retained). Dehydration bake and {term}`HMDS` vapour prime on the
-   coat/develop track.
+1. **Surface preparation.** The wafer arrives with, we infer, the pad
+   oxide still over the active areas and trench oxide over the field
+   (its retention after {ref}`NS19 <step-013>` is not public; see the
+   open questions there and on {ref}`RTAI <step-034>`). Dehydration
+   bake and {term}`HMDS` vapour prime on the coat/develop track.
 2. **Bottom anti-reflective coating.** An organic {term}`BARC` is
    spun and baked. ARCs "are often used in microelectronic
    photolithography to help reduce image distortions associated with
@@ -113,8 +114,8 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 3. **Resist coat and soft bake.** A positive resist of roughly 1 µm
    — the PDK's assumptions table gives 1.14 µm as its generic
    "Photoresist thickness"[^pdk-03] — thick enough to stop the
-   channel-type implants that follow (a 1 µm resist stops ions of a
-   few hundred keV; {ref}`category-implant`).
+   channel-type implants that follow (industry-typical: a 1 µm resist
+   stops ions of a few hundred keV; {ref}`category-implant`).
 4. **Exposure.** Through the tunnel reticle, aligned to the STI
    pattern printed at {ref}`FOM <step-004>`. The 0.410 µm minimum
    feature[^pdk-periph] corresponds to k₁ ≈ 0.67 at the 365 nm i-line
@@ -177,10 +178,11 @@ pre-oxidation clean are folded into those steps (see the
 ## Related steps and cross-references
 
 * Previous: {ref}`RTAI <step-034>` (well and channel anneal); the
-  wafer surface is the pad oxide from {ref}`BOX <step-002>`.
+  wafer surface is, we infer, the pad oxide from {ref}`BOX <step-002>`.
 * Next: {ref}`TUNARCE <step-036>` opens the ARC in the windows;
   {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implant through
-  them; {ref}`TUNME <step-039>` etches the pad oxide inside them.
+  them; {ref}`TUNME <step-039>` etches the oxide (the pad oxide, we
+  infer) inside them.
 * The ONO stack that the windows are made for is grown at
   {ref}`ONO <step-040>` and confined to the cells by
   {ref}`ONOM <step-041>`/{ref}`ONOME <step-042>`.

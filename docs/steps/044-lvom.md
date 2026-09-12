@@ -24,9 +24,10 @@ the covered regions keep their thick oxide.
 
 The PDK lists "Low Voltage Oxide, LVOM" as used in SKY130,[^pdk-05]
 with the generated mask layer `clvom` (GDS 46:0, "Low Voltage oxide
-mask") and a drawing purpose at 45:20.[^pdk-06] Designers do not draw
-`lvom`; they draw its complement, `hvi` (GDS 75:20, "High voltage
-(5.0V) thick oxide gate regions"),[^pdk-06] whose rule set is headed
+mask") and a drawing purpose at 45:20.[^pdk-06] In the published rule
+set designers do not draw `lvom`; they draw its complement, `hvi`
+(GDS 75:20, "High voltage (5.0V) thick oxide gate regions"),[^pdk-06]
+whose rule set is headed
 "Defines thick oxide for high voltage devices": minimum width
 0.600 µm (hvi.1), minimum spacing 0.700 µm (hvi.2a, with "Manual merge
 if space is below minimum", hvi.2b), "Hvi must not overlap tunm"
@@ -36,8 +37,8 @@ LVOM reticle is essentially NOT `hvi`: everything outside the drawn
 thick-oxide regions is opened. The PDK's high-voltage methodology
 confirms which devices sit inside `hvi`: "All high voltage devices use
 110A gate oxide thickness just like low voltage (0 to Vcc)
-devices"[^pdk-hv] — where "low voltage (0 to Vcc)" means the 5 V
-`g5v0d10v5` family — and "All VHV devices use 110A gate oxide
+devices"[^pdk-hv] — where, we read, "low voltage (0 to Vcc)" means
+the 5 V `g5v0d10v5` family — and "All VHV devices use 110A gate oxide
 thickness just like standard 5.0V Vcc devices".[^pdk-hv]
 
 One subtlety follows from hvi.4. Because `hvi` must not overlap the
