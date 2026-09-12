@@ -59,7 +59,7 @@ deep-dive entries per step page and twelve per category page
 - [ ] Materials pages + material ↔ step index
 - [ ] Mask pages + mask ↔ step ↔ GDS index
 - [x] Glossary: 144 terms, linked on first use across all written pages; inventory keyed for every label (748 entries) — merged 2026-09-12
-- [~] Glossary and inventory top-up for steps 089–117 (branch `topic/glossary-inventory-2`)
+- [x] Glossary and inventory top-up for steps 076–117 (204 terms; 951 inventory entries) — merged 2026-09-12
 - [ ] References / bibliography
 
 ## Phase 4 — Review
