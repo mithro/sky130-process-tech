@@ -27,7 +27,7 @@ the state of the resist and of the wafer:
 
 * the resist has been bombarded by MeV phosphorus ions, which
   carbonise its top surface into a hard crust that ordinary O₂ ashing
-  removes slowly and that can pop or flake during heating (TXT-02);
+  removes slowly and that can pop or flake during heating;[^txt-02]
 * the wafer has open silicon trenches with bare, plasma-damaged
   sidewalls, so the clean must be gentle enough not to roughen or
   etch them, and thorough enough that no organic or metallic residue
@@ -68,22 +68,23 @@ fab:
    high-energy implant resist: a low-temperature first stage, often
    with a forming-gas (H₂/N₂) or N₂/O₂ addition, that breaks up the
    carbonised crust without popping, then a hotter O₂ stage to remove
-   the bulk resist (TXT-02, TXT-05). SkyWater's own list describes its
+   the bulk resist.[^txt-02][^txt-05] SkyWater's own list describes its
    ashers as "Gasonic PEP, remote microwave plasma, N2, O2, 120C –
-   270C" and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C"
-   (SKW-01) — exactly the gas set for this kind of recipe.
+   270C" and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to
+   250C"[^skw-01] — exactly the gas set for this kind of recipe.
 2. **Wet strip / clean.** Sulphuric-peroxide mixture (H₂SO₄ : H₂O₂,
-   "piranha" or SPM) at roughly 100–130 °C (TXT-02) to remove the last
+   "piranha" or SPM) at roughly 100–130 °C[^txt-02] to remove the last
    organics, then
    SC-1 (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles and SC-2
-   (HCl/H₂O₂/H₂O) for metals (WIKI-RCA). Because the nitride and the
+   (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] Because the nitride and the
    trench silicon are both exposed, the sequence avoids any long HF
    step that would undercut the pad oxide beneath the nitride (some
-   flows do use a controlled short HF dip for exactly that reason,
-   PAT-STI-CR, but that belongs to the liner-oxidation preparation and
-   is discussed at {ref}`LINOX <step-010>`).
+   flows do use a controlled short HF dip for exactly that
+   reason,[^pat-sti-cr] but that belongs to the liner-oxidation
+   preparation and is discussed at {ref}`LINOX <step-010>`).
 3. **Rinse and dry.** DI-water rinse and spin or IPA (Marangoni) dry —
-   SKW-01 describes both spin and IPA drying on its Akrion bench.
+   SkyWater describes both spin and IPA drying on its Akrion
+   bench.[^skw-01]
 4. **Inspection.** Bright-field or laser-scatter inspection for resist
    residue and particles; sometimes a monitor check of the nitride
    thickness to confirm the clean has not thinned it.
@@ -98,28 +99,28 @@ fab:
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP** and **Mattson Aspen 2** ashers — both named on
-  SKW-01 with their gases and temperatures. Strength: strong for
-  existence; assignment to this step is inference.
-* **Iridia RF microwave** — also listed under resist removal on
-  SKW-01. Strength: strong for existence.
-* **Akrion Gamma batch wet bench** — SKW-01 lists it with sulphuric,
-  SC1, phosphoric and BOE chemistries and spin and IPA drying.
-  Strength: strong. A sulphuric (SPM) + SC-1 sequence on this bench is
-  the natural post-implant clean.
-* **DNS / FSI Mercury** HF/SC1/SC2 benches (SKW-01) as the pre-furnace
+* **Gasonics PEP** and **Mattson Aspen 2** ashers — both named by
+  SkyWater with their gases and temperatures.[^skw-01] Strength: strong
+  for existence; assignment to this step is inference.
+* **Iridia RF microwave** — also listed under resist removal by
+  SkyWater.[^skw-01] Strength: strong for existence.
+* **Akrion Gamma batch wet bench** — SkyWater lists it with sulphuric,
+  SC1, phosphoric and BOE chemistries and spin and IPA
+  drying.[^skw-01] Strength: strong. A sulphuric (SPM) + SC-1 sequence
+  on this bench is the natural post-implant clean.
+* **DNS / FSI Mercury** HF/SC1/SC2 benches[^skw-01] as the pre-furnace
   clean. Strength: strong for existence.
-* **Patterned-wafer inspection — KLA-Tencor AIT** (JOB-01). Strength:
+* **Patterned-wafer inspection — KLA-Tencor AIT.**[^job-01] Strength:
   medium.
 
 ## Resources required
 
 * **Oxygen, nitrogen, forming gas (H₂/N₂)** and, for some recipes, a
-  small **CF₄** addition to the ash (SKW-01).
+  small **CF₄** addition to the ash.[^skw-01]
 * **Sulphuric acid and hydrogen peroxide** (SPM).
 * **Ammonium hydroxide, hydrochloric acid, hydrogen peroxide**
-  (SC-1/SC-2) (WIKI-RCA).
-* **DI water**, **isopropanol** for drying (SKW-01).
+  (SC-1/SC-2).[^wiki-rca]
+* **DI water**, **isopropanol** for drying.[^skw-01]
 * **Nitrogen** for drying/purge.
 
 ## Related steps and cross-references
@@ -136,46 +137,58 @@ fab:
 
 ### Cross-check
 
-* **SKW-01** — SkyWater Technology, *Facilities & Capabilities*,
-  accessed 2026-08-30 (Gasonic PEP; Mattson Aspen2; Iridia; Akrion
-  Gamma with sulphuric/SC1/phosphoric/BOE and spin/IPA dry; DNS and
-  FSI Mercury HF/SC1/SC2).
-  <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-* **JOB-01** — Indeed, SkyWater Technology Foundry listings (Defect
-  Technician 2: "SEM/AIT/KLA/SP1/EV300/1X"), retrieved 2026-08-30.
-  <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
-* **PAT-STI-CR** — U. Kim et al. (Spansion), US 7,439,141 B2, granted
-  2008-10-21 (pad-oxide undercut of 100–300 Å before liner
-  oxidation).
-  <https://patents.google.com/patent/US7439141B2/en>
+* SkyWater, *Facilities & Capabilities* — Gasonic PEP; Mattson Aspen2;
+  Iridia; Akrion Gamma with sulphuric/SC1/phosphoric/BOE and spin/IPA
+  dry; DNS and FSI Mercury HF/SC1/SC2.[^skw-01]
+* Indeed, SkyWater Defect Technician 2 posting —
+  "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+* Kim et al. (Spansion), US 7,439,141 — pad-oxide undercut of
+  100–300 Å before liner oxidation.[^pat-sti-cr]
 
 ### High-level understanding
 
-* **WIKI-RCA** — Wikipedia, *RCA clean* (SC-1, SC-2 compositions and
-  temperatures).
-  <https://en.wikipedia.org/wiki/RCA_clean>
-* **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the
-  VLSI Era, Vol. 1*, 2nd ed., Lattice Press, 2000,
-  ISBN 978-0-9616721-6-4 (resist stripping; wafer cleaning).
-  <https://openlibrary.org/isbn/9780961672164>
-* **TXT-05** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4*,
-  Lattice Press, 2002, ISBN 978-0-9616721-7-1 (implanted-resist
-  stripping).
-  <https://openlibrary.org/isbn/9780961672171>
-* **TXT-07** — M. Quirk and J. Serda, *Semiconductor Manufacturing
-  Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0 (ash and
-  wet-clean tools).
-  <https://openlibrary.org/isbn/9780130815200>
+* Wikipedia, *RCA clean* — SC-1 and SC-2 compositions and
+  temperatures.[^wiki-rca]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+  resist stripping; wafer cleaning.[^txt-02]
+* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 —
+  implanted-resist stripping.[^txt-05]
+* Quirk and Serda, *Semiconductor Manufacturing Technology* — ash and
+  wet-clean tools.[^txt-07]
 
 ### Deep dive
 
-* **REV-01** — M. Nandakumar et al., "Shallow trench isolation for
-  advanced ULSI CMOS technologies", *IEDM 1998*, pp. 133–136,
-  DOI 10.1109/IEDM.1998.746297 (STI flow and defectivity).
-* **THUNG-2016** — B. J. Thung et al., "Challenges for 0.13µm Generation
-  Shallow Trench Isolation on 0.18µm Equipment Platform", *JTEC* 8(5),
-  2016, pp. 15–21 (post-trench-etch wet clean).
-  <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>
+* Nandakumar et al., IEDM 1998 — the STI flow and its defectivity
+  drivers.[^rev-01]
+* Thung et al., *JTEC* 2016 — the post-trench-etch wet clean in a
+  0.13 µm STI module.[^thung-2016]
+* Orvek and Huffman, *NIM B* 1985 — the carbonised layer that forms on
+  ion-implanted photoresist, the reason implant strips are
+  hard.[^orvek-1985]
+* Smith, *Ion Implantation: Equipment and Techniques* 1983 — resist
+  heating, flow and crust formation during implantation.[^smith-1983]
+* Lee et al., IIT 1996 — thick-resist outgassing during MeV
+  implantation, which conditions the crust this step
+  removes.[^lee-1996]
+* Fujimura et al., *Jpn. J. Appl. Phys.* 1990 — the effect of nitrogen
+  addition on downstream O₂ ashing, the chemistry behind an N₂/O₂
+  first stage.[^fujimura-1990]
+* Fujimura et al., *J. Vac. Sci. Technol. B* 1991 — resist stripping in
+  an O₂ + H₂O downstream plasma, a low-damage
+  alternative.[^fujimura-1991]
+* Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006 — liquid
+  formulations for stripping high-dose implanted resist when ashing
+  alone is insufficient.[^visintin-2006]
+* Bergman and Leonhard, *Solid State Phenomena* 2009 — wet stripping of
+  high-dose implanted resist with sulphur trioxide, a sulphuric-family
+  alternative to SPM.[^bergman-2009]
+* Kern, *J. Electrochem. Soc.* 1990 — the evolution of the RCA clean
+  used as the pre-furnace clean.[^kern-1990]
+* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature wet cleaning,
+  the later alternative to hot RCA chemistry.[^ohmi-1996]
+* Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
+  Technology* — the reference volume on wet and dry cleaning, resist
+  removal and particle control.[^reinhardt-2008]
 
 ## Open questions
 
@@ -187,3 +200,74 @@ fab:
   list.
 * Whether `DNIS` includes the pre-liner-oxidation HF treatment or
   whether that belongs to {ref}`LINOX <step-010>` is unknown.
+
+<!-- footnotes -->
+
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
+    Bloomington, MN* (listing page; Defect Technician 2 posting),
+    retrieved 2026-08-30. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^pat-sti-cr]: U. Kim, Y. Sun, M. S. Chang et al. (Spansion LLC; later
+    Cypress Semiconductor / Infineon), *Shallow trench isolation
+    approach for improved STI corner rounding*, US 7,439,141 B2,
+    priority 2001-12-27, granted 2008-10-21.
+    <https://patents.google.com/patent/US7439141B2/en>
+[^wiki-rca]: Wikipedia, *RCA clean*. <https://en.wikipedia.org/wiki/RCA_clean>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+    ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+    Deep-Submicron Process Technology*, Lattice Press, 2002,
+    ISBN 978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^txt-07]: M. Quirk and J. Serda, *Semiconductor Manufacturing
+    Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
+    <https://openlibrary.org/isbn/9780130815200>
+[^rev-01]: M. Nandakumar, A. Chatterjee, S. Sridhar, K. Joyner,
+    M. Rodder and I.-C. Chen, "Shallow trench isolation for advanced
+    ULSI CMOS technologies", *IEDM 1998 Technical Digest*, pp. 133–136.
+    <https://doi.org/10.1109/IEDM.1998.746297>
+[^thung-2016]: B. J. Thung, K. Ibrahim, N. A. Manap and F. Salehuddin,
+    "Challenges for 0.13µm Generation Shallow Trench Isolation on
+    0.18µm Equipment Platform", *Journal of Telecommunication,
+    Electronic and Computer Engineering* **8**(5), 15–21 (2016).
+    <https://jtec.utem.edu.my/jtec/article/view/697>
+[^orvek-1985]: K. J. Orvek and C. Huffman, "Carbonized layer formation
+    in ion implanted photoresist masks", *Nuclear Instruments and
+    Methods in Physics Research B* **7–8**, 501–506 (1985).
+    <https://doi.org/10.1016/0168-583X(85)90421-5>
+[^smith-1983]: T. C. Smith, "Wafer Cooling and Photoresist Masking
+    Problems in Ion Implantation", in *Ion Implantation: Equipment and
+    Techniques*, Springer Series in Electrophysics, Springer, 1983,
+    pp. 196–213. <https://doi.org/10.1007/978-3-642-69156-0_25>
+[^lee-1996]: W. J. Lee, N. Tokoro, H. T. Cho, J. O. Borland, M. Dennon
+    and C. Kozak, "Thick photoresist outgassing during MeV implantation
+    (mechanism and impact on production)", *Proc. 11th International
+    Conference on Ion Implantation Technology (1996)*, pp. 186–189.
+    <https://doi.org/10.1109/IIT.1996.586180>
+[^fujimura-1990]: S. Fujimura, K. Shinagawa, M. Nakamura and H. Yano,
+    "Additive Nitrogen Effects on Oxygen Plasma Downstream Ashing",
+    *Japanese Journal of Applied Physics* **29**(10R), 2165 (1990).
+    <https://doi.org/10.1143/JJAP.29.2165>
+[^fujimura-1991]: S. Fujimura, K. Shinagawa, M. T. Suzuki and
+    M. Nakamura, "Resist stripping in an O₂+H₂O plasma downstream",
+    *Journal of Vacuum Science & Technology B* **9**(2), 357–361 (1991).
+    <https://doi.org/10.1116/1.585575>
+[^visintin-2006]: P. M. Visintin, M. B. Korzenski and T. H. Baum,
+    "Liquid Clean Formulations for Stripping High-Dose Ion-Implanted
+    Photoresist from Microelectronic Devices", *Journal of The
+    Electrochemical Society* **153**(7), G591 (2006).
+    <https://doi.org/10.1149/1.2195884>
+[^bergman-2009]: E. J. Bergman and J. D. Leonhard, "Novel Methods for
+    Wet Stripping High Dose Implanted Photoresist Using Sulfur
+    Trioxide", *Solid State Phenomena* **145–146**, 281–284 (2009).
+    <https://doi.org/10.4028/www.scientific.net/SSP.145-146.281>
+[^kern-1990]: W. Kern, "The Evolution of Silicon Wafer Cleaning
+    Technology", *Journal of The Electrochemical Society* **137**(6),
+    1887–1892 (1990). <https://doi.org/10.1149/1.2086825>
+[^ohmi-1996]: T. Ohmi, "Total Room Temperature Wet Cleaning for Si
+    Substrate Surface", *Journal of The Electrochemical Society*
+    **143**(9), 2957–2964 (1996). <https://doi.org/10.1149/1.1837133>
+[^reinhardt-2008]: K. A. Reinhardt and W. Kern (eds.), *Handbook of
+    Silicon Wafer Cleaning Technology*, 2nd ed., William Andrew, 2008,
+    ISBN 978-0-8155-1554-8. <https://openlibrary.org/isbn/9780815515548>
