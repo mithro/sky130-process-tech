@@ -3423,6 +3423,1071 @@ oxide thickness. Used on steps 043, 044 and 047. Tier: cross-check.
 The labelled "Depletion Implant" in the 2-T cell drawing. Used on step
 038. Tier: cross-check.
 
+### 8.10 Category-page sources (by category)
+
+Sources cited only on the category pages (`docs/categories/*.md`),
+grouped by the category page that introduced them; where a source is
+shared between categories it is listed once, under the first, and the
+entry names every page that uses it. These pages are process-generic:
+none of the sources describes SkyWater unless the entry says so.
+
+#### Substrate
+
+##### Papers and review articles
+
+**BEAN-1978** — K. E. Bean, "Anisotropic etching of silicon", *IEEE
+Transactions on Electron Devices* **25**(10), 1185–1193 (1978).
+<https://doi.org/10.1109/T-ED.1978.19250> Crystal-plane behaviour of
+silicon in anisotropic etching. Used on the substrate category page.
+Tier: deep dive.
+
+**DASH-1959** — W. C. Dash, "Growth of Silicon Crystals Free from
+Dislocations", *Journal of Applied Physics* **30**(4), 459–474 (1959).
+<https://doi.org/10.1063/1.1702390> The "Dash neck" technique that gives
+dislocation-free CZ crystals. Used on the substrate category page. Tier:
+deep dive.
+
+**MYERS-2000** — S. M. Myers, M. Seibt and W. Schröter, "Mechanisms of
+transition-metal gettering in silicon", *Journal of Applied Physics*
+**88**(7), 3795–3819 (2000). <https://doi.org/10.1063/1.1289273> Review
+of the mechanisms of transition-metal gettering. Used on the substrate
+category page. Tier: deep dive.
+
+**SRINIVASAN-1980** — G. R. Srinivasan, "Autodoping Effects in Silicon
+Epitaxy", *Journal of The Electrochemical Society* **127**(6), 1334–1342
+(1980). <https://doi.org/10.1149/1.2129895> Autodoping during silicon
+epitaxy, the main process problem of p/p⁺ epi wafers. Used on the
+substrate category page. Tier: deep dive.
+
+**VORONKOV-1982** — V. V. Voronkov, "The mechanism of swirl defects
+formation in silicon", *Journal of Crystal Growth* **59**(3), 625–643
+(1982). <https://doi.org/10.1016/0022-0248(82)90386-4> The v/G theory of
+vacancy- versus interstitial-rich growth that governs grown-in defects.
+Used on the substrate category page. Tier: deep dive.
+
+##### Patents
+
+**PAT-MDZ-MEMC** — R. Falster, M. Cornara, D. Gambaro and M. Olmo (MEMC
+Electronic Materials), *Ideal oxygen precipitating silicon wafers and
+oxygen out-diffusion-less process therefor*, US 5,994,761 A, granted
+1999-11-30.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5994761>
+The "magic denuded zone" rapid-thermal treatment that sets precipitation
+behaviour without an oxygen out-diffusion anneal. Used on the substrate
+category page. Tier: deep dive.
+
+##### Standards and roadmaps
+
+**SEMI-M62** — SEMI M62, *Specification for Silicon Epitaxial Wafers*,
+SEMI.
+<https://store-us.semi.org/products/m06200-semi-m62-specification-for-silicon-epitaxial-wafers>
+The specification for epitaxial wafers. Used on the substrate category
+page. Tier: cross-check.
+
+**SEMI-M8** — SEMI M8, *Specification for Polished Monocrystalline
+Silicon Test Wafers*, SEMI.
+<https://store-us.semi.org/products/m00800-semi-m8-specification-for-polished-monocrystalline-silicon-test-wafers>
+The looser specification for polished test wafers. Used on the substrate
+category page. Tier: cross-check.
+
+#### Oxidation
+
+##### Papers and review articles
+
+**HU-1974** — S. M. Hu, "Formation of stacking faults and enhanced
+diffusion in the oxidation of silicon", *Journal of Applied Physics*
+**45**(4), 1567–1573 (1974). <https://doi.org/10.1063/1.1663459>
+Oxidation-induced stacking faults and oxidation-enhanced diffusion from
+injected interstitials. Used on the oxidation category page. Tier: deep
+dive.
+
+**LIGENZA-1960** — J. R. Ligenza and W. G. Spitzer, "The mechanisms for
+silicon oxidation in steam and oxygen", *Journal of Physics and
+Chemistry of Solids* **14**, 131–136 (1960).
+<https://doi.org/10.1016/0022-3697(60)90219-5> The isotope experiments
+showing that the oxidant diffuses through the oxide to react at the
+interface. Used on the oxidation category page. Tier: deep dive.
+
+**MASSOUD-1985B** — H. Z. Massoud, J. D. Plummer and E. A. Irene,
+"Thermal Oxidation of Silicon in Dry Oxygen: Growth-Rate Enhancement in
+the Thin Regime. II. Physical Mechanisms", *Journal of The
+Electrochemical Society* **132**(11), 2693–2700 (1985).
+<https://doi.org/10.1149/1.2113649> Candidate physical mechanisms for
+the thin-regime enhancement. Used on the oxidation category page. Tier:
+deep dive.
+
+**MASSOUD-1987** — H. Z. Massoud and J. D. Plummer, "Analytical
+relationship for the oxidation of silicon in dry oxygen in the thin-film
+regime", *Journal of Applied Physics* **62**(8), 3416–3423 (1987).
+<https://doi.org/10.1063/1.339305> The closed-form thin-film oxidation
+relationship used by growth calculators. Used on the oxidation category
+page. Tier: deep dive.
+
+**NAGAI-2002** — N. Nagai, K. Terada, Y. Muraji, H. Hashimoto et al.,
+"Infrared absorption study of rapid thermal oxidation and in situ steam
+generation of thin SiO₂ films by gradient etching preparation", *Journal
+of Applied Physics* **91**(7), 4747–4750 (2002).
+<https://doi.org/10.1063/1.1459097> Infrared study comparing RTO and
+ISSG thin oxides. Used on the oxidation category page. Tier: deep dive.
+
+**TAN-1982** — T. Y. Tan and U. Gösele, "Oxidation-enhanced or retarded
+diffusion and the growth or shrinkage of oxidation-induced stacking
+faults in silicon", *Applied Physics Letters* **40**(7), 616–619 (1982).
+<https://doi.org/10.1063/1.93200> Growth and shrinkage of
+oxidation-induced stacking faults tied to the interstitial
+supersaturation. Used on the oxidation category page. Tier: deep dive.
+
+##### Patents
+
+**PAT-DGOX-AMD** — M. I. Gardner (Advanced Micro Devices), *Dual gate
+oxide thickness integrated circuit and process for making same*, US
+6,033,943 A, granted 2000-03-07.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6033943>
+A dual-gate-oxide process: first oxide, masked strip, second oxidation.
+Used on the oxidation category page. Tier: deep dive.
+
+##### Standards and roadmaps
+
+**SEMI-MF576** — SEMI MF576, *Test Method for Measurement of Insulator
+Thickness and Refractive Index on Silicon Substrates by Ellipsometry*,
+SEMI.
+<https://store-us.semi.org/products/mf057600-semi-mf576-test-method-for-measurement-of-insulator-thickness-and-refractive-index-on-silicon-substrates-by-ellipsometry>
+The standard ellipsometric test method for insulator thickness and
+refractive index on silicon. Used on the oxidation category page. Tier:
+deep dive.
+
+##### University and course pages
+
+**BYU-OXCALC** — Brigham Young University Cleanroom, *Oxide Growth
+Calculator* (Deal–Grove with thin-oxide correction).
+<https://cleanroom.byu.edu/oxidetimecalc> Deal–Grove with the thin-oxide
+correction, runnable online. Used on the oxidation category page. Tier:
+high-level.
+
+#### Deposition
+
+##### Papers and review articles
+
+**ADAMS-1979** — A. C. Adams and C. D. Capio, "The Deposition of Silicon
+Dioxide Films at Reduced Pressure", *Journal of The Electrochemical
+Society* **126**(6), 1042–1046 (1979).
+<https://doi.org/10.1149/1.2129171> LPCVD oxide deposition, including
+TEOS and doped glasses. Used on the deposition category page. Tier: deep
+dive.
+
+**AMES-1970** — I. Ames, F. M. d'Heurle and R. E. Horstmann, "Reduction
+of Electromigration in Aluminum Films by Copper Doping", *IBM Journal of
+Research and Development* **14**(4), 461–463 (1970).
+<https://doi.org/10.1147/rd.144.0461> The original demonstration that
+copper doping suppresses aluminium electromigration. Used on the
+deposition category page. Tier: deep dive.
+
+**BLECH-1976** — I. A. Blech, "Electromigration in thin aluminum films
+on titanium nitride", *Journal of Applied Physics* **47**(4), 1203–1208
+(1976). <https://doi.org/10.1063/1.322842> The critical-length effect
+measured on Al lines over TiN. Used on the deposition category page.
+Tier: cross-check.
+
+**BOHR-1995** — M. T. Bohr, "Interconnect scaling — the real limiter to
+high performance ULSI", *IEDM 1995 Technical Digest*, pp. 241–244.
+<https://doi.org/10.1109/IEDM.1995.499187> Why interconnect, not the
+transistor, limits performance, motivating the metallisation stack. Used
+on the deposition category page. Tier: deep dive.
+
+**KAANTA-1987** — C. Kaanta, W. Cote, J. Cronin, K. Holland et al.,
+"Submicron wiring technology with tungsten and planarization", *IEDM
+1987 Technical Digest*, pp. 209–212.
+<https://doi.org/10.1109/IEDM.1987.191389> The tungsten-stud plus
+planarisation wiring scheme that became the standard plug process. Used
+on the deposition category page. Tier: deep dive.
+
+**KAMINS-1980** — T. I. Kamins, "Structure and Properties of LPCVD
+Silicon Films", *Journal of The Electrochemical Society* **127**(3),
+686–690 (1980). <https://doi.org/10.1149/1.2129733> Structure and
+properties of LPCVD silicon films as a function of deposition
+temperature. Used on the deposition category page. Tier: deep dive.
+
+**RAUPP-1992** — G. B. Raupp, T. S. Cale and H. P. W. Hey, "The role of
+oxygen excitation and loss in plasma-enhanced deposition of silicon
+dioxide from tetraethylorthosilicate", *Journal of Vacuum Science &
+Technology B* **10**(1), 37–45 (1992).
+<https://doi.org/10.1116/1.586361> Reaction kinetics of PECVD TEOS oxide
+and their effect on step coverage. Used on the deposition category page.
+Tier: deep dive.
+
+**ROSSNAGEL-1994** — S. M. Rossnagel and J. Hopwood, "Metal ion
+deposition from ionized magnetron sputtering discharge", *Journal of
+Vacuum Science & Technology B* **12**(1), 449–453 (1994).
+<https://doi.org/10.1116/1.587142> The first ionised-magnetron (IMP)
+metal deposition experiments. Used on the deposition category page.
+Tier: deep dive.
+
+**ROSSNAGEL-1998** — S. M. Rossnagel, "Directional and ionized physical
+vapor deposition for microelectronics applications", *Journal of Vacuum
+Science & Technology B* **16**(5), 2585–2608 (1998).
+<https://doi.org/10.1116/1.590242> Review of collimated and ionised PVD
+for liners and barriers. Used on the deposition category page. Tier:
+deep dive.
+
+**THORNTON-1974** — J. A. Thornton, "Influence of apparatus geometry and
+deposition conditions on the structure and topography of thick sputtered
+coatings", *Journal of Vacuum Science and Technology* **11**(4), 666–670
+(1974). <https://doi.org/10.1116/1.1312732> The structure-zone diagram
+for sputtered films versus pressure and temperature. Used on the
+deposition category page. Tier: deep dive.
+
+##### Books and book chapters
+
+**OHRING-2002** — M. Ohring, *Materials Science of Thin Films*, 2nd ed.,
+Academic Press, 2002.
+<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9> Nucleation, growth
+regimes, step coverage and the structure-zone model. Used on the
+deposition category page. Tier: deep dive.
+
+**SESHAN-2002** — K. Seshan (ed.), *Handbook of Thin-Film Deposition
+Processes and Techniques: Principles, Methods, Equipment and
+Applications*, 2nd ed., Noyes Publications / William Andrew, 2002, ISBN
+978-0-8155-1442-8. <https://openlibrary.org/isbn/9780815514428>
+Chapter-per-technique reference on CVD, PECVD, PVD and their equipment.
+Used on the deposition category page. Tier: deep dive.
+
+##### Patents
+
+**PAT-IMP-AMAT** — Applied Materials, *Alternate steps of IMP and
+sputtering process to improve sidewall coverage*, US 6,350,353 B2.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>
+Alternating IMP and conventional sputtering to improve sidewall
+coverage. Used on the deposition category page. Tier: cross-check.
+
+**PAT-TIW-HITACHI** — Hitachi Metals, *Titanium-tungsten target material
+for sputtering and manufacturing method therefor*, US 5,160,534 A,
+granted 1992-11-03. <https://patents.google.com/patent/US5160534A/en>
+The 10 wt.% Ti composition of Ti:W sputter targets. Used on the
+deposition category page. Tier: cross-check.
+
+##### Vendor, regulatory, marketplace and press pages
+
+**AMAT-10K** — Applied Materials, Inc., Form 10-K for fiscal 2003
+(platform descriptions: Centura, Endura, Endura SL, Producer).
+<https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm>
+Centura, Endura and Producer platform descriptions. Used on the
+deposition category page. Tier: cross-check.
+
+**AMAT-ENDURA** — Applied Materials, *Endura PVD*, product page.
+<https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>
+Current product page for the Endura PVD platform (cluster architecture
+and chamber types). Used on the deposition category page. Tier:
+cross-check.
+
+**ASM-A400** — ASM International, *ASM International N.V. launches A400
+DUO vertical furnace system*, press release, 2019-11-11.
+<https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>
+The A400 furnace's install base and wet-oxidation/anneal use. Used on
+the deposition and oxidation category pages. Tier: cross-check.
+
+**NOVELLUS-HISTORY** — Encyclopedia.com, *Novellus Systems, Inc.*
+(company history: Concept One/Two, Sequel, SPEED, Altus).
+<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>
+The Concept One/Two, Sequel, SPEED and Altus product history. Used on
+the deposition category page. Tier: cross-check.
+
+#### Lithography
+
+##### Papers and review articles
+
+**BOSSUNG-1977** — J. W. Bossung, "Projection Printing
+Characterization", *Proc. SPIE* **100**, 80–85 (1977).
+<https://doi.org/10.1117/12.955357> The focus–exposure ("Bossung") plots
+used to characterise projection printing. Used on the lithography
+category page. Tier: deep dive.
+
+**BRUNING-2007** — J. H. Bruning, "Optical lithography: 40 years and
+holding", *Proc. SPIE* **6520**, 652004 (2007).
+<https://doi.org/10.1117/12.720631> A history of optical lithography
+tools from contact printers to scanners. Used on the lithography
+category page. Tier: deep dive.
+
+**BRUNNER-1991** — T. A. Brunner, "Optimization of optical properties of
+resist processes", *Proc. SPIE* **1466**, 297–308 (1991).
+<https://doi.org/10.1117/12.46410> Optimising resist-stack optical
+properties: swing curves and anti-reflective layers. Used on the
+lithography category page. Tier: deep dive.
+
+**DAMMEL-1993** — R. R. Dammel, *Diazonaphthoquinone-based Resists*,
+SPIE Tutorial Texts TT11, SPIE Press, 1993.
+<https://doi.org/10.1117/3.2265072> The SPIE tutorial text on i-line
+resist chemistry. Used on the lithography category page. Tier: deep
+dive.
+
+**ITO-1983** — H. Ito and C. G. Willson, "Chemical amplification in the
+design of dry developing resist materials", *Polymer Engineering &
+Science* **23**(18), 1012–1018 (1983).
+<https://doi.org/10.1002/pen.760231807> The first chemical amplification
+resist paper. Used on the lithography category page. Tier: deep dive.
+
+**ITO-1984** — H. Ito and C. G. Willson, "Applications of
+Photoinitiators to the Design of Resists for Semiconductor
+Manufacturing", *ACS Symposium Series* **242**, 11–23 (1984).
+<https://doi.org/10.1021/bk-1984-0242.ch002> The chemically amplified
+resist concept applied to semiconductor manufacturing. Used on the
+lithography category page. Tier: deep dive.
+
+**LEVENSON-1982** — M. D. Levenson, N. S. Viswanathan and R. A. Simpson,
+"Improving resolution in photolithography with a phase-shifting mask",
+*IEEE Transactions on Electron Devices* **29**(12), 1828–1836 (1982).
+<https://doi.org/10.1109/T-ED.1982.21037> The original phase-shifting
+mask paper. Used on the lithography category page. Tier: deep dive.
+
+**LEVINSON-1987** — H. J. Levinson and W. H. Arnold, "Focus: The
+critical parameter for submicron lithography", *Journal of Vacuum
+Science & Technology B* **5**(1), 293–298 (1987).
+<https://doi.org/10.1116/1.583886> Focus as the critical parameter for
+submicron lithography, and its budget. Used on the lithography category
+page. Tier: deep dive.
+
+**LIN-1986** — B. J. Lin, "Where Is The Lost Resolution?", *Proc. SPIE*
+**633**, 44 (1986). <https://doi.org/10.1117/12.963701> Where the
+resolution is lost between the Rayleigh limit and production practice.
+Used on the lithography category page. Tier: deep dive.
+
+**LIN-1993** — B. J. Lin, "Phase-shifting masks gain an edge", *IEEE
+Circuits and Devices Magazine* **9**(2), 28–35 (1993).
+<https://doi.org/10.1109/101.200850> A tutorial on alternating and
+attenuated phase-shift masks. Used on the lithography category page.
+Tier: deep dive.
+
+**LIN-2002** — B. J. Lin, "The k₃ coefficient in nonparaxial λ/NA
+scaling equations for resolution, depth of focus, and immersion
+lithography", *Journal of Micro/Nanolithography, MEMS, and MOEMS*
+**1**(1), 7–12 (2002). <https://doi.org/10.1117/1.1445798> The k₁ and k₃
+coefficients and the nonparaxial scaling equations for resolution and
+depth of focus. Used on the lithography category page. Tier: deep dive.
+
+**MACK-1988** — C. A. Mack, "Understanding Focus Effects In
+Submicrometer Optical Lithography", *Optical Engineering* **27**(12)
+(1988). <https://doi.org/10.1117/12.7978683> Understanding focus effects
+in submicrometre optical lithography. Used on the lithography category
+page. Tier: deep dive.
+
+**REICHMANIS-1989** — E. Reichmanis and L. F. Thompson, "Polymer
+materials for microlithography", *Chemical Reviews* **89**(6), 1273–1289
+(1989). <https://doi.org/10.1021/cr00096a001> Polymer materials for
+microlithography, DNQ/novolak included. Used on the lithography category
+page. Tier: deep dive.
+
+**RIEGER-1994** — M. L. Rieger and J. P. Stirniman, "Using behavior
+modeling for proximity correction", *Proc. SPIE* **2197**, 371–376
+(1994). <https://doi.org/10.1117/12.175431> Model-based ("behaviour
+modelling") proximity correction. Used on the lithography category page.
+Tier: deep dive.
+
+**STARIKOV-1992** — A. Starikov, "Accuracy of overlay measurements: tool
+and mark asymmetry effects", *Optical Engineering* **31**(6), 1298
+(1992). <https://doi.org/10.1117/12.56172> Accuracy of overlay
+measurements and tool-induced shift. Used on the lithography category
+page. Tier: deep dive.
+
+**TOLPYGO-2014** — S. K. Tolpygo et al., "Fabrication Process and
+Properties of Fully-Planarized Deep-Submicron Nb/Al-AlOx/Nb Josephson
+Junctions for VLSI Circuits", arXiv:1408.5829 (2014) — describes a Canon
+FPA-3000EX4 248 nm stepper with 5× reduction and NA 0.6.
+<https://arxiv.org/abs/1408.5829> A Canon FPA-3000EX4 described in use.
+Used on the lithography category page. Tier: cross-check.
+
+**WALLRAFF-1999** — G. M. Wallraff and W. D. Hinsberg, "Lithographic
+Imaging Techniques for the Formation of Nanoscopic Features", *Chemical
+Reviews* **99**(7), 1801–1822 (1999).
+<https://doi.org/10.1021/cr980003i> Lithographic imaging techniques and
+resist chemistry for sub-quarter-micron features. Used on the
+lithography category page. Tier: deep dive.
+
+##### Books and book chapters
+
+**LEVINSON-2019** — H. J. Levinson, *Principles of Lithography*, 4th
+ed., SPIE Press, 2019, ISBN 978-1-5106-2760-4.
+<https://doi.org/10.1117/3.2525393> Tools, resists, overlay and
+metrology in one volume. Used on the lithography category page. Tier:
+high-level.
+
+##### Vendor, regulatory, marketplace and press pages
+
+**ASML-30** — ASML, *Three decades of PAS 5500*, 2021.
+<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+ASML's own account of the PAS 5500 platform's three-decade lifetime.
+Used on the lithography category page. Tier: cross-check.
+
+**ASML-750E** — ASML, *ASML introduces KrF lithography scanner* (PAS
+5500/750E), press release, 2000-04-04.
+<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>
+130 nm resolution at 248 nm, NA 0.7, 120 wafers per hour. Used on the
+lithography category page. Tier: cross-check.
+
+**ASML-800** — ASML, *ASML introduces new KrF Step & Scan system* (PAS
+5500/800), press release, 2001-01-31.
+<https://www.asml.com/en/news/press-releases/2001/asml-introduces-new-krf-step-and-scan-system-that-extends>
+NA 0.80, 120 nm resolution. Used on the lithography category page. Tier:
+cross-check.
+
+**CHIPHISTORY-PAS5500** — Chip History Center, *PAS 5500/400 Step & Scan
+Alignment System from ASML*.
+<https://www.chiphistory.org/163-asml-pas-5500-400-step-scan-system> The
+ASML platform in its historical context. Used on the lithography
+category page. Tier: deep dive.
+
+**GCE-KLA8100** — GCE Market, *KLA-Tencor 8100XP CD-SEM* (specification
+summary).
+<https://www.gcemarket.com/gce/gce.nsf/products/kla-tencor-8100xp-cd-sem-7expup>
+Marketplace specification summary for the KLA-Tencor 8100XP CD-SEM
+(accelerating voltage and resolution). Used on the lithography category
+page. Tier: cross-check.
+
+**MICROCHEMICALS-DEV** — MicroChemicals, *Development of photoresists*,
+application note.
+<https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>
+TMAH developer strength and practice. Used on the lithography category
+page. Tier: cross-check.
+
+**NIKON-S204B** — Nikon, *NSR-S204B 248 nm Scanner Exposure System
+Overview* (specification summary, reseller copy), attached to the
+listing Tara Semiconductor Technology, *Used 2002 NIKON S204 Scanner*
+(listing LITV25-01), accessed 2026-09-12.
+<https://f.machineryhost.com/fc49306d97602c8ed1be1dfbf0835ead/aa008f2897d7d4a224ff92839b4299e9/SpecSummary_LITV25-01_NSR-S204B.pdf>,
+<https://www.tarasemi.com/listings/5223879-used-2002-nikon-s204-scanner>
+Field size, NA and wavelength of the NSR-S204B KrF scanner. Used on the
+lithography category page. Tier: cross-check.
+
+**SEMIMARKET-S9200** — Legacy Semi, *Hitachi S-9200 CD-SEM* (listing).
+<https://www.semimarket.com/item/hitachi-s-9200-cd-sem/42724>
+Marketplace listing for the Hitachi S-9200 CD-SEM, a 200 mm-era in-line
+CD metrology tool. Used on the lithography category page. Tier:
+cross-check.
+
+**TEL-ACT** — Tokyo Electron, *Coater/Developer ACT Series*, product
+page. <https://www.tel.com/product/act.html> TEL product page for the
+ACT coater/developer family. Used on the lithography category page.
+Tier: cross-check.
+
+**TEL-ACT8** — Semiconductor Online, *CLEAN TRACK ACT 8 System for
+Spin-On Dielectric (SOD) Applications*.
+<https://www.semiconductoronline.com/doc/clean-track-act-8-system-for-spin-on-dielectr-0001>
+Introduction date and throughput of the CLEAN TRACK ACT 8. Used on the
+lithography category page. Tier: cross-check.
+
+##### University and course pages
+
+**MACK-BASICS** — C. A. Mack, *The Basics of Microlithography*, online
+tutorial. <https://www.lithoguru.com/scientist/lithobasics.html> An
+online tutorial on the lithography process sequence and its physics.
+Used on the lithography category page. Tier: high-level.
+
+**MACK-COURSE** — C. A. Mack, *Online Micro- and Nanofabrication Course*
+(CHE323 lecture materials).
+<https://www.lithoguru.com/scientist/CHE323/course.html> University
+lecture materials (CHE323) covering the whole lithography process. Used
+on the lithography category page. Tier: deep dive.
+
+#### Etch
+
+##### Papers and review articles
+
+**BELL-1997** — F. H. Bell and O. Joubert, "Polysilicon gate etching in
+high density plasmas. V. Comparison between quantitative chemical
+analysis of photoresist and oxide masked polysilicon gates etched in
+HBr/Cl₂/O₂ plasmas", *Journal of Vacuum Science & Technology B*
+**15**(1), 88–97 (1997). <https://doi.org/10.1116/1.589259> Chemical
+analysis of HBr/Cl₂/O₂ gate-etch sidewalls under resist and oxide masks.
+Used on the etch category page. Tier: deep dive.
+
+**COBURN-1979B** — J. W. Coburn and H. F. Winters, "Plasma etching — A
+discussion of mechanisms", *Journal of Vacuum Science and Technology*
+**16**(2), 391–403 (1979). <https://doi.org/10.1116/1.569958> A
+discussion of plasma etching mechanisms. Used on the etch category page.
+Tier: deep dive.
+
+**DONNELLY-2013** — V. M. Donnelly and A. Kornblit, "Plasma etching:
+Yesterday, today, and tomorrow", *Journal of Vacuum Science & Technology
+A* **31**(5), 050825 (2013). <https://doi.org/10.1116/1.4819316> A long
+review of plasma etching from its origins to the present. Used on the
+etch category page. Tier: deep dive.
+
+**GOTTSCHO-1992** — R. A. Gottscho, C. W. Jurgensen and D. J. Vitkavage,
+"Microscopic uniformity in plasma etching", *Journal of Vacuum Science &
+Technology B* **10**(5), 2133–2147 (1992).
+<https://doi.org/10.1116/1.586180> Microscopic uniformity:
+aspect-ratio-dependent etching and its causes. Used on the etch category
+page. Tier: deep dive.
+
+**HASHIMOTO-1994** — K. Hashimoto, "Charge Damage Caused by Electron
+Shading Effect", *Japanese Journal of Applied Physics* **33**(10R), 6013
+(1994). <https://doi.org/10.1143/JJAP.33.6013> Electron-shading charging
+damage during high-density plasma etching. Used on the etch category
+page. Tier: deep dive.
+
+**MOGAB-1977** — C. J. Mogab, "The Loading Effect in Plasma Etching",
+*Journal of The Electrochemical Society* **124**(8), 1262–1268 (1977).
+<https://doi.org/10.1149/1.2133542> The loading effect. Used on the etch
+category page. Tier: deep dive.
+
+**OEHRLEIN-1989** — G. S. Oehrlein, "Dry etching damage of silicon: A
+review", *Materials Science and Engineering: B* **4**(1–4), 441–450
+(1989). <https://doi.org/10.1016/0921-5107(89)90284-5> Review of
+dry-etching damage to silicon. Used on the etch category page. Tier:
+deep dive.
+
+**OEHRLEIN-1998** — G. S. Oehrlein and Y. Kurogi, "Sidewall surface
+chemistry in directional etching processes", *Materials Science and
+Engineering: R* **24**(4), 153–183 (1998).
+<https://doi.org/10.1016/S0927-796X(98)00016-3> Sidewall passivation
+chemistry in directional etching. Used on the etch category page. Tier:
+deep dive.
+
+**POULSEN-1977** — R. G. Poulsen, "Plasma etching in integrated circuit
+manufacture — A review", *Journal of Vacuum Science and Technology*
+**14**(1), 266–274 (1977). <https://doi.org/10.1116/1.569137> An early
+review of plasma etching in IC manufacture, including aluminium. Used on
+the etch category page. Tier: deep dive.
+
+**STANDAERT-1998** — T. E. F. M. Standaert, M. Schaepkens, N. R. Rueger,
+P. G. M. Sebel, G. S. Oehrlein and J. M. Cook, "High density
+fluorocarbon etching of silicon in an inductively coupled plasma:
+Mechanism of etching through a thick steady state fluorocarbon layer",
+*Journal of Vacuum Science & Technology A* **16**(1), 239–249 (1998).
+<https://doi.org/10.1116/1.580978> Etching through a steady-state
+fluorocarbon layer, the mechanism behind oxide-to-silicon selectivity.
+Used on the etch category page. Tier: deep dive.
+
+**TUDA-2001** — M. Tuda, K. Shintani and H. Ootera, "Profile evolution
+during polysilicon gate etching with low-pressure high-density
+Cl₂/HBr/O₂ plasma chemistries", *Journal of Vacuum Science & Technology
+A* **19**(3), 711–717 (2001). <https://doi.org/10.1116/1.1365135>
+Profile evolution during Cl₂/HBr/O₂ high-density poly gate etching. Used
+on the etch category page. Tier: deep dive.
+
+##### Patents
+
+**PAT-DPS-AMAT** — G. Z. Yin, H. Hanawa, D. X. Ma and D. Olgado (Applied
+Materials), *Plasma reactor with multi-section RF coil and isolated
+conducting lid*, US 5,540,824 A, granted 1996-07-30.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>
+The multi-section RF coil and isolated lid of the DPS reactor. Used on
+the etch category page. Tier: deep dive.
+
+**PAT-ENDPOINT-TEL** — Tokyo Electron, *Method of forming a
+semiconductor device using double endpoint detection*, US 6,376,262 B1,
+granted 2002-04-23 (CN emission at 387 nm as the nitride etch endpoint
+signal). <https://patents.google.com/patent/US6376262B1/en> CN emission
+at 387 nm as the nitride etch endpoint signal. Label ↔ key: the same
+patent is cited as `pat-cn-tel` on step 042 (PAT-CN-TEL). Used on the
+etch category page. Tier: cross-check.
+
+##### Vendor, regulatory, marketplace and press pages
+
+**AKRION-GAMA** — C2MI, *Akrion GAMA acid bench*, equipment page.
+<https://www.c2mi.ca/en/equipement/akrion-gama-acid-bench/> Facility
+equipment page describing an Akrion GAMA automated acid wet bench, the
+bench type SKW-01 lists. Used on the etch and strip category pages.
+Tier: cross-check.
+
+**LAM-10K** — Lam Research Corporation, Form 10-K for the fiscal year
+ended 2003-06-29 (product line: TCP 9400PTX/DFM, 2300, Exelan).
+<https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm>
+The TCP 9400PTX/DFM, 2300 and Exelan product line. Used on the etch
+category page. Tier: cross-check.
+
+**LAM-EXELAN** — Lam Research, *Lam Research Corporation Advances
+Dielectric Etch Capabilities With Launch Of Exelan High Performance*,
+press release, 2001-07-09.
+<https://newsroom.lamresearch.com/2001-07-09-Lam-Research-Corporation-Advances-Dielectric-Etch-Capabilities-With-Launch-Of-Exelan-R-High-Performance>
+Press release launching the Exelan dielectric etcher in 2001. Used on
+the etch category page. Tier: cross-check.
+
+#### Strip
+
+##### Papers and review articles
+
+**KERN-1970** — W. Kern and D. A. Puotinen, "Cleaning solutions based on
+hydrogen peroxide for use in silicon semiconductor technology", *RCA
+Review* **31**, 187–206 (1970). The original SC-1/SC-2 paper. Used on
+the strip category page. Tier: cross-check.
+
+##### Patents
+
+**PAT-ASHER-AXCELIS** — A. F. Becknell, P. Hammar and D. Ferris (Axcelis
+Technologies), *Apparatus and plasma ashing process for increasing
+photoresist removal rate*, US 7,449,416 B2, granted 2008-11-11.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>
+An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch
+residue removal over low-k dielectrics. Used on the strip category page.
+Tier: deep dive.
+
+**PAT-ASHER-FUSION** — M. Kamarehi and J. E. Simpson (Fusion Systems),
+*Plasma asher with microwave trap*, US 5,498,308 A, granted 1996-03-12.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>
+A downstream microwave asher design. Used on the strip category page.
+Tier: deep dive.
+
+##### Vendor, regulatory, marketplace and press pages
+
+**GASONICS-AURA** — Allwin21, *Gasonics Aura 1000 Plasma Asher*
+(specification summary; temperature 150–300 °C typical).
+<https://allwin21.com/gasonics-aura-1000-plasma-asher-2/> Specification
+summary for the Gasonics Aura 1000 downstream asher (150–300 °C
+typical). Used on the strip category page. Tier: cross-check.
+
+**GASONICS-L3510** — SemiStar Corp., *Gasonics L3510 plasma asher* (tool
+description; platen temperature 100–300 °C).
+<http://www.semistarcorp.com/product/gasonics-l3510-asher/> Tool
+description for the Gasonics L3510 asher (platen temperature 100–300
+°C). Used on the strip category page. Tier: cross-check.
+
+##### University and course pages
+
+**SNF-STRIP** — Stanford Nanofabrication Facility, *Downstream/Remote
+Plasma Resist Removal*, equipment guide.
+<https://snfguide.stanford.edu/guide/equipment/purpose/cleaning/resist-removal/dry-resist-removal/downstreamremote-plasma-resist-removal>
+University equipment guide on downstream/remote-plasma resist removal.
+Used on the strip category page. Tier: cross-check.
+
+#### Implant
+
+##### Papers and review articles
+
+**CURRENT-2017** — M. I. Current, "Ion implantation of advanced silicon
+devices: Past, present and future", *Materials Science in Semiconductor
+Processing* **62**, 13–22 (2017).
+<https://doi.org/10.1016/j.mssp.2016.10.045> Implantation for advanced
+silicon devices, past to future. Used on the implant category page.
+Tier: deep dive.
+
+**DENNARD-1974** — R. H. Dennard, F. H. Gaensslen, H.-N. Yu, V. L.
+Rideout, E. Bassous and A. R. LeBlanc, "Design of ion-implanted MOSFET's
+with very small physical dimensions", *IEEE Journal of Solid-State
+Circuits* **9**(5), 256–268 (1974).
+<https://doi.org/10.1109/JSSC.1974.1050511> The scaling rules against
+which the measured parameters are judged. Used on the implant and test
+category pages. Tier: deep dive.
+
+**GIBBONS-1968** — J. F. Gibbons, "Ion implantation in semiconductors —
+Part I: Range distribution theory and experiments", *Proceedings of the
+IEEE* **56**(3), 295–319 (1968).
+<https://doi.org/10.1109/PROC.1968.6273> Range distributions in
+semiconductors. Used on the implant category page. Tier: cross-check.
+
+**LINDHARD-1963** — J. Lindhard, M. Scharff and H. E. Schiøtt, "Range
+Concepts and Heavy Ion Ranges", *Matematisk-fysiske Meddelelser, Det
+Kongelige Danske Videnskabernes Selskab* **33**(14), 1–42 (1963).
+<https://gymarkiv.sdu.dk/MFM/kdvs/mfm%2030-39/mfm-33-14.pdf> The LSS
+range theory. Used on the implant category page. Tier: cross-check.
+
+##### Books and book chapters
+
+**RYSSEL-1986** — H. Ryssel and I. Ruge, *Ion Implantation*, Wiley,
+1986, ISBN 978-0-471-10311-0.
+<https://openlibrary.org/isbn/9780471103110> The classic monograph on
+range theory, damage, annealing and equipment. Used on the implant
+category page. Tier: deep dive.
+
+##### Theses
+
+**HOESSINGER-2000** — A. Hössinger, *Simulation of Ion Implantation for
+ULSI Technology*, PhD thesis, TU Wien, 2000.
+<https://www.iue.tuwien.ac.at/phd/hoessinger/> Monte Carlo simulation of
+implantation for ULSI technology. Used on the implant category page.
+Tier: deep dive.
+
+##### Patents
+
+**PAT-SHOCKLEY** — W. Shockley, *Forming semiconductive devices by ionic
+bombardment*, US 2,787,564 A, granted 1957.
+<https://patents.google.com/patent/US2787564A/en> The original patent on
+forming devices by ion bombardment. Used on the implant category page.
+Tier: cross-check.
+
+##### Vendor, regulatory, marketplace and press pages
+
+**SEMIMARKET-VIISTA** — Legacy Semi, *Varian VIISta HC High Current
+Implanter* (listing).
+<https://www.semimarket.com/item/varian-viista-hc-high-current-implanter/94062>
+Marketplace listing for the Varian VIISta HC single-wafer high-current
+implanter. Used on the implant category page. Tier: cross-check.
+
+**SRIM** — J. F. Ziegler, *SRIM — The Stopping and Range of Ions in
+Matter* (software and documentation). <http://www.srim.org/> The SRIM
+software and documentation for implant range and straggle calculations.
+Used on the implant category page. Tier: cross-check.
+
+#### Anneal
+
+##### Papers and review articles
+
+**AGARWAL-1999** — A. Agarwal, H.-J. Gossmann and A. T. Fiory, "Effect
+of ramp rates during rapid thermal annealing of ion implanted boron for
+formation of ultra-shallow junctions", *Journal of Electronic Materials*
+**28**(12), 1333–1339 (1999).
+<https://doi.org/10.1007/s11664-999-0118-7> The effect of RTA ramp rate
+on boron ultra-shallow junctions, the case for spike anneals. Used on
+the anneal category page. Tier: deep dive.
+
+**CARTIER-1993** — E. Cartier, J. H. Stathis and D. A. Buchanan,
+"Passivation and depassivation of silicon dangling bonds at the Si/SiO₂
+interface by atomic hydrogen", *Applied Physics Letters* **63**(11),
+1510–1512 (1993). <https://doi.org/10.1063/1.110758> Hydrogen
+passivation and depassivation of interface dangling bonds. Used on the
+anneal category page. Tier: deep dive.
+
+**CSEPREGI-1978** — L. Csepregi, E. F. Kennedy, J. W. Mayer and T. W.
+Sigmon, "Substrate-orientation dependence of the epitaxial regrowth rate
+from Si-implanted amorphous Si", *Journal of Applied Physics* **49**(7),
+3906–3911 (1978). <https://doi.org/10.1063/1.325397> Solid-phase
+epitaxial regrowth rates of amorphised silicon versus orientation. Used
+on the anneal category page. Tier: deep dive.
+
+**MAEX-1993** — K. Maex, "Silicides for integrated circuits: TiSi₂ and
+CoSi₂", *Materials Science and Engineering: R* **11**(2–3), vii–153
+(1993). <https://doi.org/10.1016/0927-796X(93)90001-J> TiSi₂ and CoSi₂
+formation, silicon consumption and the narrow-line effect. Used on the
+anneal category page. Tier: cross-check.
+
+**MANN-1994** — R. W. Mann and L. A. Clevenger, "The C49 to C54 Phase
+Transformation in TiSi₂ Thin Films", *Journal of The Electrochemical
+Society* **141**(5), 1347–1350 (1994).
+<https://doi.org/10.1149/1.2054921> The C49-to-C54 TiSi₂ phase
+transformation and its nucleation limit on narrow lines. Used on the
+anneal category page. Tier: deep dive.
+
+**REED-1988** — M. L. Reed and J. D. Plummer, "Chemistry of Si-SiO₂
+interface trap annealing", *Journal of Applied Physics* **63**(12),
+5776–5793 (1988). <https://doi.org/10.1063/1.340317> The chemistry of
+Si/SiO₂ interface-trap annealing in hydrogen. Used on the anneal
+category page. Tier: deep dive.
+
+**SEDGWICK-1983** — T. O. Sedgwick, "Short Time Annealing", *Journal of
+The Electrochemical Society* **130**(2), 484–493 (1983).
+<https://doi.org/10.1149/1.2119736> An early review of short-time
+annealing. Used on the anneal category page. Tier: deep dive.
+
+##### Books and book chapters
+
+**CAMPBELL-2013** — S. A. Campbell, *Fabrication Engineering at the
+Micro- and Nanoscale*, 4th ed., Oxford University Press, 2013, ISBN
+978-0-19-986122-4. <https://openlibrary.org/isbn/9780199861224> Textbook
+chapters on thermal processing, implantation, deposition, etching and
+lithography. Used on the anneal, deposition, etch, implant, lithography
+and oxidation category pages. Tier: high-level.
+
+**MURARKA-1983** — S. P. Murarka, "Formation", in *Silicides for VLSI
+Applications*, Academic Press, 1983, pp. 99–131.
+<https://doi.org/10.1016/b978-0-08-057056-3.50009-4> Ch. "Formation",
+the classic text on silicide reaction kinetics. Used on the anneal
+category page. Tier: deep dive.
+
+**OSBURN-1993** — C. M. Osburn, "Silicides", in R. B. Fair (ed.), *Rapid
+Thermal Processing: Science and Technology*, Academic Press, 1993, pp.
+227–309. <https://doi.org/10.1016/b978-0-12-247690-7.50010-x> Chapter on
+silicide formation by rapid thermal processing in Fair's *Rapid Thermal
+Processing* (the book is TXT-10). Label ↔ key: this chapter is part of
+the book listed as TXT-10. Used on the anneal category page. Tier:
+cross-check.
+
+**SZE-2012** — S. M. Sze and M. K. Lee, *Semiconductor Devices: Physics
+and Technology*, 3rd ed., Wiley, 2012, ISBN 978-0-470-53794-7.
+<https://www.wiley.com/en-us/Semiconductor+Devices%3A+Physics+and+Technology%2C+3rd+Edition-p-9780470537947>
+Textbook coverage of oxidation, implantation and MOSFET characteristics
+(ch. 6). Used on the anneal, implant, oxidation and test category pages.
+Tier: high-level.
+
+##### Vendor, regulatory, marketplace and press pages
+
+**AG-10K** — AG Associates, Inc., Form 10-K for the fiscal year ended
+1996-09-30, filed 1996-12-23 (Heatpulse 8108 first shipped October 1992;
+125–200 mm).
+<https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt>
+Heatpulse 8108 first shipped October 1992, 125–200 mm. Used on the
+anneal and oxidation category pages. Tier: cross-check.
+
+**AMAT-1997** — Applied Materials, Inc., *1997 Annual Report*.
+<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
+Applied Materials' 1997 product line: DPS and MxP/eMxP+ etchers,
+HDP-CVD, Mirra CMP and RTP chambers. Used on the anneal, cmp, deposition
+and etch category pages. Tier: cross-check.
+
+**AMAT-RTP** — EDN, *Applied dedicates RTP with Vantage*, 2002-09-23
+(Applied Materials Radiance/Vantage RTP chambers).
+<https://www.edn.com/applied-dedicates-rtp-with-vantage/> The
+Radiance/Vantage RTP chamber family. Used on the anneal and oxidation
+category pages. Tier: cross-check.
+
+**ASM-VF** — ASM International, *Vertical furnace*, product page.
+<https://www.asm.com/our-technology-products/vertical-furnace> ASM
+product page for its vertical furnace family (A400/A412). Used on the
+anneal and oxidation category pages. Tier: cross-check.
+
+**PLASMATHERM-AG** — Plasma-Therm, *Product Spotlight: AG Heatpulse 8800
+/ 8108 RTP*, blog post.
+<https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp>
+Vendor blog post on the AG Associates Heatpulse 8800 and 8108 RTP
+systems, now supported by Plasma-Therm. Used on the anneal and oxidation
+category pages. Tier: cross-check.
+
+##### University and course pages
+
+**OCW-6774** — MIT OpenCourseWare, *6.774 Physics of Microfabrication:
+Front End Processing*, Fall 2004 (lecture notes on oxidation, diffusion,
+implantation and annealing).
+<https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/>
+Lecture notes on oxidation, diffusion, implantation, damage and
+annealing. Used on the anneal, implant, oxidation and substrate category
+pages. Tier: deep dive.
+
+#### CMP
+
+##### Papers and review articles
+
+**BOYD-1997** — J. M. Boyd and J. P. Ellul, "A One-Step Shallow Trench
+Global Planarization Process Using Chemical Mechanical Polishing",
+*Journal of The Electrochemical Society* **144**(5), 1838–1841 (1997).
+<https://doi.org/10.1149/1.1837687> A one-step STI planarisation process
+by CMP. Used on the cmp category page. Tier: deep dive.
+
+**KAUFMAN-1991** — F. B. Kaufman, D. B. Thompson, R. E. Broadie, M. A.
+Jaso et al., "Chemical-Mechanical Polishing for Fabricating Patterned W
+Metal Features as Chip Interconnects", *Journal of The Electrochemical
+Society* **138**(11), 3460–3465 (1991).
+<https://doi.org/10.1149/1.2085434> Tungsten CMP by oxidation and
+abrasion. Used on the cmp category page. Tier: cross-check.
+
+**LUO-2001** — J. Luo and D. A. Dornfeld, "Material removal mechanism in
+chemical mechanical polishing: theory and modeling", *IEEE Transactions
+on Semiconductor Manufacturing* **14**(2), 112–133 (2001).
+<https://doi.org/10.1109/66.920723> The abrasive-contact model of
+material removal. Used on the cmp category page. Tier: deep dive.
+
+**OUMA-2002** — D. O. Ouma, D. S. Boning, J. E. Chung, W. G. Easter et
+al., "Characterization and modeling of oxide chemical-mechanical
+polishing using planarization length and pattern density concepts",
+*IEEE Transactions on Semiconductor Manufacturing* **15**(2), 232–244
+(2002). <https://doi.org/10.1109/66.999598> Characterisation and
+modelling of oxide CMP with planarisation length and density concepts.
+Used on the cmp category page. Tier: deep dive.
+
+**PRESTON-1927** — F. W. Preston, "The theory and design of plate glass
+polishing machines", *Journal of the Society of Glass Technology*
+**11**, 214–256 (1927). The Preston removal-rate law; no online copy is
+known. Used on the cmp category page. Tier: cross-check.
+
+**RUNNELS-1994** — S. R. Runnels and L. M. Eyman, "Tribology Analysis of
+Chemical-Mechanical Polishing", *Journal of The Electrochemical Society*
+**141**(6), 1698–1701 (1994). <https://doi.org/10.1149/1.2054985> A
+tribology (fluid-film) analysis of the wafer–pad contact. Used on the
+cmp category page. Tier: deep dive.
+
+**STEIN-1999** — D. Stein, D. L. Hetherington and J. L. Cecchi,
+"Investigation of the Kinetics of Tungsten Chemical Mechanical Polishing
+in Potassium Iodate-Based Slurries: I. Role of Alumina and Potassium
+Iodate", *Journal of The Electrochemical Society* **146**(1), 376–381
+(1999). <https://doi.org/10.1149/1.1391617> Kinetics of tungsten CMP:
+the roles of alumina abrasive and oxidiser. Used on the cmp category
+page. Tier: deep dive.
+
+**ZANTYE-2004** — P. B. Zantye, A. Kumar and A. K. Sikder, "Chemical
+mechanical planarization for microelectronics applications", *Materials
+Science and Engineering: R* **45**(3–6), 89–220 (2004).
+<https://doi.org/10.1016/j.mser.2004.06.002> A long review of CMP for
+microelectronics, including Preston deviations and slurry consumption.
+Used on the cmp category page. Tier: deep dive.
+
+##### Books and book chapters
+
+**LI-2007** — Y. Li (ed.), *Microelectronic Applications of Chemical
+Mechanical Planarization*, Wiley, 2007.
+<https://doi.org/10.1002/9780470180907> Including a chapter on STI CMP.
+Used on the cmp category page. Tier: deep dive.
+
+##### Patents
+
+**PAT-CMP-ENDPOINT-IBM** — N. E. Lustig, K. L. Saenger and H.-M. Tong
+(IBM), *In-situ endpoint detection and process monitoring method and
+apparatus for chemical-mechanical polishing*, US 5,433,651 A, granted
+1995-07-18.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5433651>
+In-situ optical endpoint detection through a window in the platen. Used
+on the cmp category page. Tier: deep dive.
+
+**PAT-CMP-IBM-1988** — M. M. Chow, J. E. Cronin, W. L. Guthrie, C. W.
+Kaanta et al. (IBM), *Method for producing coplanar multi-level
+metal/insulator films on a substrate and for forming patterned
+conductive lines simultaneously with stud vias*, US 4,789,648 A, granted
+1988-12-06. <https://patents.google.com/patent/US4789648A/en> Coplanar
+multi-level metal/insulator films by polishing, with lines and stud vias
+formed together. Used on the cmp category page. Tier: deep dive.
+
+**PAT-CMP-IBM-1990** — K. D. Beyer et al. (IBM), *Chem-mech polishing
+method for producing coplanar metal/insulator films on a substrate*, US
+4,944,836 A, granted 1990.
+<https://patents.google.com/patent/US4944836A/en> The foundational
+metal/insulator CMP patent. Used on the cmp category page. Tier:
+cross-check.
+
+##### Vendor, regulatory, marketplace and press pages
+
+**CHIPHISTORY-MIRRA** — Chip History Center, *The Mirra CMP System by
+Applied Materials*.
+<https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>
+The Mirra polisher in its historical context: integrated endpoint and
+cleaning. Used on the cmp category page. Tier: cross-check.
+
+**EBARA-FREX** — EBARA Precision Machinery Europe, *CMP Tools*
+(F-REX200M2). <https://www.ebara-pm.eu/systems/cmp-tools/> The
+F-REX200M2 200 mm CMP tool. Used on the cmp category page. Tier:
+cross-check.
+
+##### University and course pages
+
+**OCW-6152** — MIT OpenCourseWare, *6.152J Micro/Nano Processing
+Technology*, Fall 2005 (lecture notes on lithography, etching,
+deposition and CMP).
+<https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/>
+Lecture notes on lithography, resists, etching, deposition and CMP. Used
+on the cmp, deposition, etch and lithography category pages. Tier: deep
+dive.
+
+#### Test
+
+##### Papers and review articles
+
+**BERGER-1972** — H. H. Berger, "Models for contacts to planar devices",
+*Solid-State Electronics* **15**(2), 145–158 (1972).
+<https://doi.org/10.1016/0038-1101(72)90048-2> Contact models, the
+origin of the transmission-line method. Used on the test category page.
+Tier: deep dive.
+
+**BUEHLER-1978** — M. G. Buehler, S. D. Grant and W. R. Thurber, "Bridge
+and van der Pauw Sheet Resistors for Characterizing the Line Width of
+Conducting Layers", *Journal of The Electrochemical Society* **125**(4),
+650–654 (1978). <https://doi.org/10.1149/1.2131517> Bridge and van der
+Pauw resistors for line-width (electrical CD) measurement. Used on the
+test category page. Tier: deep dive.
+
+**HESS-1999** — C. Hess and L. H. Weiland, "Extraction of wafer-level
+defect density distributions to improve yield prediction", *IEEE
+Transactions on Semiconductor Manufacturing* **12**(2), 175–183 (1999).
+<https://doi.org/10.1109/66.762875> Extracting defect-density
+distributions from test structures for yield prediction. Used on the
+test category page. Tier: deep dive.
+
+**MALY-1990** — W. Maly, "Computer-aided design for VLSI circuit
+manufacturability", *Proceedings of the IEEE* **78**(2), 356–392 (1990).
+<https://doi.org/10.1109/5.52217> Design for manufacturability and the
+role of test structures. Used on the test category page. Tier: deep
+dive.
+
+**ORTIZ-CONDE-2002** — A. Ortiz-Conde, F. J. García Sánchez, J. J. Liou,
+A. Cerdeira, M. Estrada and Y. Yue, "A review of recent MOSFET threshold
+voltage extraction methods", *Microelectronics Reliability* **42**(4–5),
+583–596 (2002). <https://doi.org/10.1016/S0026-2714(02)00027-6> A review
+of MOSFET threshold-voltage extraction methods. Used on the test
+category page. Tier: deep dive.
+
+**PROCTOR-1983** — S. J. Proctor, L. W. Linholm and J. A. Mazer, "Direct
+measurements of interfacial contact resistance, end contact resistance,
+and interfacial contact layer uniformity", *IEEE Transactions on
+Electron Devices* **30**(11), 1535–1542 (1983).
+<https://doi.org/10.1109/T-ED.1983.21334> Kelvin measurement of
+interfacial contact resistance and its pitfalls. Used on the test
+category page. Tier: deep dive.
+
+**REEVES-1982** — G. K. Reeves and H. B. Harrison, "Obtaining the
+specific contact resistance from transmission line model measurements",
+*IEEE Electron Device Letters* **3**(5), 111–113 (1982).
+<https://doi.org/10.1109/EDL.1982.25502> Extracting specific contact
+resistance from TLM ladders. Used on the test category page. Tier: deep
+dive.
+
+**SMITS-1958** — F. M. Smits, "Measurement of Sheet Resistivities with
+the Four-Point Probe", *Bell System Technical Journal* **37**(3),
+711–718 (1958). <https://doi.org/10.1002/j.1538-7305.1958.tb03883.x>
+Four-point-probe sheet resistivity and its correction factors. Used on
+the test category page. Tier: deep dive.
+
+**STAPPER-1983** — C. H. Stapper, "Modeling of Integrated Circuit Defect
+Sensitivities", *IBM Journal of Research and Development* **27**(6),
+549–557 (1983). <https://doi.org/10.1147/rd.276.0549> Defect-sensitivity
+and critical-area yield modelling. Used on the test category page. Tier:
+deep dive.
+
+**VALDES-1954** — L. B. Valdes, "Resistivity Measurements on Germanium
+for Transistors", *Proceedings of the IRE* **42**(2), 420–427 (1954).
+<https://doi.org/10.1109/JRPROC.1954.274680> The original
+four-point-probe resistivity measurement. Used on the test category
+page. Tier: deep dive.
+
+**VDP-1958** — L. J. van der Pauw, "A method of measuring specific
+resistivity and Hall effect of discs of arbitrary shape", *Philips
+Research Reports* **13**, 1–9 (1958); reprinted in S. M. Sze (ed.),
+*Semiconductor Devices: Pioneering Papers*, World Scientific, 1991, pp.
+174–182. <https://doi.org/10.1142/9789814503464_0017> The theorem behind
+the four-contact sheet-resistance structure. Used on the test category
+page. Tier: deep dive.
+
+##### Books and book chapters
+
+**CHENG-1999** — Y. Cheng and C. Hu, *MOSFET Modeling & BSIM3 User's
+Guide*, Kluwer Academic, 1999. <https://doi.org/10.1007/b117400> How
+parametric data become compact-model parameters. Used on the test
+category page. Tier: deep dive.
+
+**SCHRODER-2006** — D. K. Schroder, *Semiconductor Material and Device
+Characterization*, 3rd ed., Wiley, 2006.
+<https://doi.org/10.1002/0471749095> The reference text on resistivity,
+contact, C–V and MOSFET measurements. Used on the test category page.
+Tier: deep dive.
+
+##### Standards and roadmaps
+
+**ITRS-2001-MET** — International Technology Roadmap for Semiconductors,
+*2001 Edition: Metrology*.
+<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>
+The test-structure and in-line metrology needs. Used on the test
+category page. Tier: cross-check.
+
+**ITRS-2001-TEST** — International Technology Roadmap for
+Semiconductors, *2001 Edition: Test and Test Equipment*.
+<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Test.pdf>
+Wafer sort and tester requirements. Used on the test category page.
+Tier: cross-check.
+
+**ITRS-2001-YIELD** — International Technology Roadmap for
+Semiconductors, *2001 Edition: Yield Enhancement*.
+<https://www.semiconductors.org/wp-content/uploads/2018/08/2001YieldEnhance.pdf>
+The yield-learning loop. Used on the test category page. Tier:
+cross-check.
+
+**SEMI-MF84** — SEMI MF84, *Test Method for Measuring Resistivity of
+Silicon Wafers With an In-Line Four-Point Probe*, SEMI.
+<https://store-us.semi.org/products/mf008400-semi-mf84-test-method-for-measuring-resistivity-of-silicon-wafers-with-an-in-line-four-point-probe>
+The standard four-point-probe resistivity test method. Used on the test
+category page. Tier: deep dive.
+
+##### Vendor, regulatory, marketplace and press pages
+
+**BRLTEST-4062** — BRL Test, *4062UX — Keysight / Agilent Parametric
+Testers* (listing).
+<https://www.brltest.com/index.php?main_page=product_info&products_id=7874>
+Used-equipment listing for the HP/Agilent 4062UX parametric tester named
+in SKW-01. Used on the test category page. Tier: cross-check.
+
+**KEITHLEY-S600** — Keithley Instruments, *Series S600 Parametric Test
+Systems*, data sheet.
+<https://download.tek.com/datasheet/SeriesS600_DataSht.pdf> Data sheet
+giving the S600 tester's intended uses. Used on the test category page.
+Tier: cross-check.
+
+**SEMIONLINE-S600** — Semiconductor Online, *S600 Series Parametric Test
+Systems*.
+<https://www.semiconductoronline.com/doc/s600-series-parametric-test-systems-0001>
+Product description of the Keithley S600 parametric test systems. Used
+on the test category page. Tier: cross-check.
+
 ## 9. Evidence about specific tools at SkyWater
 
 Strength scale: **strong** = a SkyWater or tool-vendor statement;
