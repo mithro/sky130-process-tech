@@ -157,6 +157,16 @@ dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
 poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
 Tier: cross-check.
 
+**PDK-HV** — *High Voltage Methodology* page.
+<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>.
+Design methodology for the HV and VHV (drain-extended) devices: "The
+VHV devices need to be designed with drain extentions (DE) fabricated
+by lightly doped Nwells and Pwells respectively"; "All VHV devices use
+110A gate oxide thickness just like standard 5.0V Vcc devices"; drawn
+channel lengths of 1.055 µm and 1.050 µm for the 16 V VHV NMOS and
+PMOS; "Under no circumstances the poly/extended drain overlap and
+field oxide length should be changed". Tier: cross-check.
+
 **PDK-12** — *Sky130 Technology Library* (Hammer VLSI documentation).
 <https://hammer-vlsi.readthedocs.io/en/latest/Technology/Sky130.html>.
 Third-party (UC Berkeley) description of how the open PDK is consumed
@@ -1191,6 +1201,13 @@ All verified on 2026-08-30:
 * *Plasma-enhanced chemical vapor deposition* (high-density plasma, SiH₄/O₂/Ar oxide) — <https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>
 * *Wafer (electronics)* (200 mm wafer thickness and notch) — <https://en.wikipedia.org/wiki/Wafer_(electronics)>
 * *RCA clean* (SC-1 and SC-2) — <https://en.wikipedia.org/wiki/RCA_clean>
+* *Multi-threshold CMOS* (why several thresholds are offered; how they are set) — <https://en.wikipedia.org/wiki/Multi-threshold_CMOS>
+* *Threshold voltage* (body-effect parameter containing the channel doping) — <https://en.wikipedia.org/wiki/Threshold_voltage>
+* *CMOS* (NMOS on the p-substrate, PMOS in an N-well) — <https://en.wikipedia.org/wiki/CMOS>
+* *Latch-up* (the parasitic n-p-n-p path through the wells) — <https://en.wikipedia.org/wiki/Latch-up>
+* *Plasma ashing* (downstream ashing, implanted-resist problems) — <https://en.wikipedia.org/wiki/Plasma_ashing>
+* *LDMOS* (drift regions formed by chained implants) — <https://en.wikipedia.org/wiki/LDMOS>
+* *Furnace anneal* (furnace anneals being supplanted by RTA) — <https://en.wikipedia.org/wiki/Diffusion_furnace>
 * *SONOS* — see CYP-26
 * *130 nm process* — see ANN-17
 
@@ -1322,6 +1339,506 @@ Thermco AVP 8000"* listing.
 diffusion, oxidation, and LPCVD processes … can handle 150-200mm
 wafers." A dealer listing rather than a vendor data sheet. Tier:
 high-level (weak).
+
+**AXCELIS-GSD-PAGE** — Axcelis Technologies, *"GSD Ovation — High
+Current & High Energy Batch Ion Implanters"*, product page, accessed
+2026-08-30. <https://www.axcelis.com/products/gsd-ovation/>. Describes
+the GSD/HE as a "10 stage LINAC with energies up to 3 MeV" and notes
+"source operating costs especially with fluorinated species". Distinct
+from the PR Newswire release AXCELIS-GSD. Tier: cross-check (vendor
+statement).
+
+**AXCELIS-8250** — Semiconductor Online, *"8250HT Medium Current Ion
+Implanter"* (Eaton Semiconductor Equipment Operations product
+description).
+<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>.
+The 8250HT covers "3keV to 750keV" with beam currents "between 4µA and
+3,500µA"; the medium-current class that SKW-01 lists as "Axcelis 8250".
+Tier: high-level (vendor description reproduced by a trade site).
+
+**AG-8800** — SemiStar Corp., *"AG Associates Heatpulse 8800 / 8808
+Rapid Thermal Processing"* (reseller specification page), accessed
+2026-08-30.
+<https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>.
+"Recommended steady-state temperature range: 400 – 1200°C", ramp-up
+"Programmable, 1 – 180°C per second", "2 banks of 14 lamps" with
+"10-zone lamp control", pyrometer or thermocouple sensing, wafer sizes
+to 8 inches, "Implant annealing" among the applications. Tier:
+high-level (reseller page for the tool SKW-01 lists as "Ag Heatpulse
+8808").
+
+**AG-8108** — SemiStar Corp., *"AG Associates Heatpulse 4100 / 8108 /
+8800 / 8800i Specifications"* (reseller PDF), accessed 2026-08-30.
+<http://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>.
+Although titled for the whole family, the PDF documents the operating
+specifications of the Heatpulse 4100: 400–1200 °C, maximum ramp
+150 °C/s, ±5 °C uniformity across a 150 mm wafer at 1150 °C, and a
+facility table (cooling water, CDA/N₂). Tier: high-level (weak for the
+8808 itself).
+
+### 8.7 Well and channel-implant module sources
+
+None of these is a SkyWater or Cypress source; the step pages for the
+well and channel-implant module (steps 014–034) use them for typical
+numbers, mechanisms and further reading on threshold-adjust implants,
+retrograde wells, implant-resist lithography and stripping,
+drain-extended devices and the well anneal. DOIs were verified through
+the Crossref API on 2026-09-12; patents were verified on Google
+Patents by the reviewer of the module (Google Patents refused
+automated access from the editing host).
+
+**PAT-VT-RRR** — US 2011/0006372 A1, *"Formation of standard voltage
+threshold and low voltage threshold MOSFET devices"*, M. Helm and
+X. Zhou (Round Rock Research; priority 2002-07-08), published
+2011-01-13.
+<https://patents.google.com/patent/US20110006372A1/en>. Low-Vt NMOS
+and PMOS defined by masked Vt-adjust implants: "an implant of Arsenic"
+as a first adjustment, a "boron type of implant such as BF2, or
+Indium" as a second, and a "counter-doped channel region". Tier: deep
+dive.
+
+**PAT-VT-LSI** — US 5,963,801 A, *"Method of forming retrograde well
+structures and punch-through barriers using low energy implants"*,
+S. Aronowitz, L. Khan and J. Kimball (LSI Logic), granted 1999-10-05.
+<https://patents.google.com/patent/US5963801A/en>. Threshold-adjust
+boron "implanted through the sacrificial gate oxide in doses between
+1×10¹² and 1×10¹³ atoms/cm² … at implant energies between 50 and
+100 keV"; chained punch-through barriers at 100, 70 and 50 keV; a
+furnace anneal at "approximately 900 °C … for approximately 30
+minutes". Tier: deep dive.
+
+**PAT-VT-AMD** — US 6,238,982 B1, *"Multiple threshold voltage
+semiconductor device fabrication technology"*, Z. Krivokapic and
+O. Milic (AMD), granted 2001-05-29.
+<https://patents.google.com/patent/US6238982B1/en>. Channel implant
+"approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a
+concentration of about 1.0 to 2.5×10¹³ ions/cm²". Tier: deep dive.
+
+**PAT-WELL-IBM** — US 6,667,205 B2, *"Method of forming retrograde
+n-well and p-well"*, M. J. Breitwisch, C. H. Lam and J. A. Slinkman
+(IBM), granted 2003-12-23.
+<https://patents.google.com/patent/US6667205B2/en>. Photoresist
+"typically 1800–2500 nm in thickness"; N-well phosphorus 850 keV at
+5.2 × 10¹³ cm⁻², 550 keV at 1.25 × 10¹² cm⁻² and 50 keV at
+5 × 10¹¹ cm⁻²; P-well boron 550, 150 and 45 keV; "The concentration of
+dopant is higher at the bottom of the well and lower at the upper
+surface of the well". Tier: deep dive.
+
+**PAT-WELL-HYNIX** — US 6,455,402 B2, *"Method of forming retrograde
+doping profile in twin well CMOS device"*, J.-H. Lee and J.-H. Son
+(Hyundai/Hynix), granted 2002-09-24.
+<https://patents.google.com/patent/US6455402B2/en>. N-well 700 keV at
+2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻²; P-well 350 keV at
+1.5 × 10¹³ cm⁻², 150 keV at 6.0 × 10¹² cm⁻² and 80 keV at
+1.0 × 10¹² cm⁻²; "an annealing at 1000 C for 10 sec in an RTA" before
+gate oxidation. Tier: deep dive.
+
+**PAT-TWIN-HARRIS** — US 5,247,199 A, *"Process for forming twin well
+CMOS integrated circuits"*, D. A. Matlock (Harris Corporation), granted
+1993-09-21. <https://patents.google.com/patent/US5247199A/en>. Twin
+wells by chained implants — 500/275/130 keV phosphorus and
+360/185/55 keV boron — with "an implant blocking photoresist layer 18"
+patterned to expose the region "adjacent to N-type well 17". Tier:
+deep dive.
+
+**PAT-UMC-DC** — US 5,393,679 A, *"Use of double charge implant to
+improve retrograde process PMOS punch through voltage"*, S.-H. Yang
+(United Microelectronics), granted 1995-02-28.
+<https://patents.google.com/patent/US5393679A/en>. Retrograde well by
+"double charge … P++ … at an energy within a range from about 380 keV
+to about 400 keV" on a medium-current implanter. Tier: deep dive.
+
+**PAT-RESIST-ZILOG** — US 6,576,405 B1, *"High aspect ratio
+photolithographic method for high energy implantation"*, S. J. Buffat
+and J. L. Adams (Zilog), granted 2003-06-10.
+<https://patents.google.com/patent/US6576405B1/en>. Resist "minimum
+thicknesses of 3.4 µm … with the preferred thickness for the resist
+between 3.8 µm and 4.2 µm" for a 1.3–1.5 MeV phosphorus N-well and a
+600–800 keV boron P-well. Tier: deep dive.
+
+**PAT-DEMOS-TI** — US 6,660,603 B2, *"Higher voltage drain extended
+MOS transistors with self-aligned channel and drain extensions"*,
+J. C. Mitros (Texas Instruments), granted 2003-12-09.
+<https://patents.google.com/patent/US6660603B2/en>. Drain-extended
+transistors "use a very lightly doped extension region adjacent to the
+drain that depletes at high drain voltages", formed from "the n-well
+region … as the lightly doped drain extension region"; boron "at doses
+of 2×10¹² cm² to 7×10¹³ cm² at energies of about 40 keV" for the
+p-type well and "phosphorous species at about 8×10¹² cm² to
+7×10¹³ cm² at an energy of about 150 keV" for the n-type. Tier: deep
+dive.
+
+**PAT-DEMOS-TI2** — US 2006/0006461 A1, *"Drain extended MOS
+transistors and methods for making the same"*, P. R. Chidambaram
+(Texas Instruments), published 2006-01-12.
+<https://patents.google.com/patent/US20060006461A1/en>. DE devices
+made "without the addition of extra masks or processing steps". Tier:
+deep dive.
+
+**PAT-FUJ** — US 7,605,041 B2, *"Semiconductor device and its
+manufacture method"*, T. Ema, H. Kojima and T. Anezaki (Fujitsu),
+granted 2009-10-20. <https://patents.google.com/patent/US7605041B2/en>.
+A 400 keV, 1.5 × 10¹³ cm⁻² boron p-well in a triple-well HV/flash
+integration. Tier: deep dive.
+
+**PAT-STRIP-MOSEL** — US 5,811,358 A, *"Low temperature dry process
+for stripping photoresist after high dose ion implantation"*,
+M.-S. Tseng, F.-H. Chao and N.-Y. Tsai (Mosel Vitelic), granted
+1998-09-22. <https://patents.google.com/patent/US5811358A/en>. The
+popping mechanism — volatile bulk resist that can "build up pressure
+beneath the implant-hardened surface layer" during a conventional
+"high temperature (>200° C.) dry ashing" — and a first stage "removed
+by oxygen and nitrogen/hydrogen plasma in a low-temperature (<220 °C)
+environment". Tier: deep dive.
+
+**PAT-STRIP-TSMC** — US 2004/0214448 A1, *"Method of ashing a
+photoresist"*, B.-W. Chan, Y.-H. Chiu and H.-J. Tao (TSMC), published
+2004-10-28. <https://patents.google.com/patent/US20040214448A1/en>.
+After implantation "the top portion of the photoresist layer is
+transformed into a carbonized crust that is difficult to remove because
+of its low solubility in wet strippers". Tier: deep dive.
+
+**PAT-STRIP-ULVAC** — US 5,795,831 A, *"Cold processes for cleaning
+and stripping photoresist from surfaces of semiconductor wafers"*,
+I. Nakayama et al. (ULVAC Technologies), granted 1998-08-18.
+<https://patents.google.com/patent/US5795831A/en>. A cold stripping
+and cleaning process for implanted resist, an alternative to hot
+ashing. Tier: deep dive.
+
+**PAT-RESURF-TI** — US 5,406,110 A, *"Resurf lateral double diffused
+insulated gate field effect transistor"*, O.-K. Kwon, T. R. Efland,
+S. Malhi and W. T. Ng (Texas Instruments), granted 1995-04-11.
+<https://patents.google.com/patent/US5406110A/en>. A RESURF lateral
+DMOS with an implanted drift region. Tier: deep dive.
+
+**PAT-RTP-AMAT** — US 5,155,336 A, *"Rapid thermal heating apparatus
+and method"*, C. M. Gronet and J. F. Gibbons (Applied Materials),
+granted 1992-10-13. <https://patents.google.com/patent/US5155336A/en>.
+A lamp-heated single-wafer RTP chamber design. Tier: deep dive.
+
+**PAT-RTP-TAMARACK** — US 4,649,261 A, *"Apparatus for heating
+semiconductor wafers in order to achieve annealing, silicide
+formation, reflow of glass passivation layers, etc."*, R. E. Sheets
+(Tamarack Scientific), granted 1987-03-10.
+<https://patents.google.com/patent/US4649261A/en>. An early
+lamp-heating apparatus for wafer annealing. Tier: deep dive.
+
+**HOOK-2003** — T. B. Hook, J. Brown, P. Cottrell, E. Adler,
+D. Hoyniak, J. Johnson and R. Mann, *"Lateral Ion Implant Straggle and
+Mask Proximity Effect"*, IEEE Transactions on Electron Devices,
+vol. 50, no. 9, pp. 1946–1951, 2003, DOI 10.1109/TED.2003.815371
+(open copy:
+<https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>).
+"Some of the ions scattered out of the edge of the photoresist are
+implanted in the silicon surface near the mask edge, altering the
+threshold voltage of those devices", with shifts "of up to 100 mV …
+over a lateral distance on the order of a micrometer"; models a
+"2.3 µm-thick pwell mask". Tier: deep dive.
+
+**SHEU-2006** — Y.-M. Sheu, K.-W. Su, S. Tian, S.-J. Yang, C.-C. Wang,
+M.-J. Chen and S. Liu, *"Modeling the Well-Edge Proximity Effect in
+Highly Scaled MOSFETs"*, IEEE Transactions on Electron Devices,
+vol. 53, no. 11, pp. 2792–2798, 2006, DOI 10.1109/TED.2006.884070. A
+compact model of the well-edge proximity effect. Tier: deep dive.
+
+**DRENNAN-2006** — P. G. Drennan, M. Kniffin and D. Locascio,
+*"Implications of Proximity Effects for Analog Design"*, IEEE Custom
+Integrated Circuits Conference 2006, pp. 169–176,
+DOI 10.1109/CICC.2006.320869. Designer-side consequences of the well
+proximity effect. Tier: deep dive.
+
+**MORRIS-2000** — W. Morris and L. Rubin, *"Technical and economic
+considerations for retrograde well and channel implants"*, 2000
+International Conference on Ion Implantation Technology, pp. 73–76,
+DOI 10.1109/IIT.2000.924093. Why MeV retrograde wells replaced diffused
+wells, with the cost trade-offs. Tier: deep dive.
+
+**RUBIN-2002** — L. M. Rubin, W. Morris and C. Jasper, *"Process
+control issues for retrograde well implants for narrow n+/p+ isolation
+in CMOS"*, 2002 International Conference on Ion Implantation
+Technology, pp. 17–20, DOI 10.1109/IIT.2002.1257927. How well-implant
+control sets the n⁺/p⁺ isolation spacing. Tier: deep dive.
+
+**BORLAND-1998** — J. O. Borland, H. T. Cho and J. K. Kim, *"LOCOS vs.
+shallow trench isolation latch-up using MeV implantation for well
+formation down to 0.18 μm design rules"*, 1998 International
+Conference on Ion Implantation Technology, vol. 1, pp. 67–70,
+DOI 10.1109/IIT.1999.812053. Latch-up with MeV-implanted wells under
+LOCOS and STI. Tier: deep dive.
+
+**STOLMEIJER-1986** — A. Stolmeijer, *"A twin-well CMOS process
+employing high-energy ion implantation"*, IEEE Transactions on Electron
+Devices, vol. 33, no. 4, pp. 450–457, 1986, DOI 10.1109/T-ED.1986.22511.
+The original twin-well CMOS process built entirely with high-energy
+implants. Tier: deep dive.
+
+**STOLMEIJER-1989** — A. Stolmeijer, M. Pitt, H. den Blanken, P. van
+der Plas and R. de Werdt, *"Profile engineering for sub-micron CMOS
+using high energy ion implantation"*, International Symposium on VLSI
+Technology, Systems and Applications 1989, pp. 317–320,
+DOI 10.1109/VTSA.1989.68637. Profile engineering of sub-micron CMOS
+wells with chained high-energy implants. Tier: deep dive.
+
+**TSUKAMOTO-1991** — K. Tsukamoto, S. Komori, T. Kuroi and Y. Akasaka,
+*"High-energy ion implantation for ULSI"*, Nuclear Instruments and
+Methods in Physics Research B, vol. 59–60, pp. 584–591, 1991,
+DOI 10.1016/0168-583X(91)95283-J. Review of high-energy implantation
+for ULSI: retrograde wells, buried layers, masking and damage
+annealing. Tier: deep dive.
+
+**BOURDELLE-2002** — K. K. Bourdelle, S. Chaudhry and J. Chu, *"The
+effect of triple well implant dose on performance of NMOS
+transistors"*, IEEE Transactions on Electron Devices, vol. 49, no. 3,
+pp. 521–524, 2002, DOI 10.1109/16.987125. How a 1 MeV phosphorus
+triple-well dose affects NMOS performance and diode leakage. Tier:
+deep dive.
+
+**SPINELLI-1985** — P. Spinelli, P. Escaron, A. Soubie and M. Bruel,
+*"High energy ion implantation for C-MOS isolation n-wells technology:
+Problems related to the use of multicharged phosphorous ions in an
+industrial context"*, Nuclear Instruments and Methods in Physics
+Research B, vol. 6, no. 1–2, pp. 283–286, 1985,
+DOI 10.1016/0168-583X(85)90646-9. Multiply charged phosphorus for MeV
+n-well implants in production. Tier: deep dive.
+
+**RO-1999** — J.-S. Ro, *"A study of buried layer formation using MeV
+ion implantation for the fabrication of ULSI CMOS devices"*, Thin Solid
+Films, vol. 349, no. 1–2, pp. 130–134, 1999,
+DOI 10.1016/S0040-6090(99)00079-6. Buried-layer formation by MeV
+implantation and the leakage caused by threading dislocations. Tier:
+deep dive.
+
+**JANG-1998** — Y.-T. Jang, T.-H. Huh and J.-S. Ro, *"A study on the
+defects in the fabrication of CMOS retrograde well including a buried
+layer using MeV ion implantation"*, 1998 International Conference on
+Ion Implantation Technology, vol. 2, pp. 959–962,
+DOI 10.1109/IIT.1998.813837. Defect formation in MeV retrograde wells
+with buried layers. Tier: deep dive.
+
+**PAT-BILLI-GENUS** — US 5,821,589 A, *"Method for CMOS latch-up
+improvement by MeV BILLI (buried implanted layer for lateral
+isolation) plus buried layer implantation"*, J. O. Borland (Genus),
+granted 1998-10-13. <https://patents.google.com/patent/US5821589A/en>.
+The "BILLI" buried-implanted-layer approach to latch-up suppression
+with MeV implants. Tier: deep dive.
+
+**CHAUDHRY-1997** — S. Chaudhry, C. S. Rafferty, W. J. Nagy,
+Y. F. Chyan, M. S. Carroll, A. S. Chen and K. H. Lee, *"Suppression of
+reverse short channel effect by high energy implantation"*, IEDM 1997
+Technical Digest, pp. 679–682, DOI 10.1109/IEDM.1997.650474.
+Suppressing the reverse short-channel effect with a high-energy well
+implant. Tier: deep dive.
+
+**RAFFERTY-1993** — C. S. Rafferty, H.-H. Vuong, S. A. Eshraghi,
+M. D. Giles, M. R. Pinto and S. J. Hillenius, *"Explanation of reverse
+short channel effect by defect gradients"*, IEDM 1993 Technical
+Digest, pp. 311–314, DOI 10.1109/IEDM.1993.347345. How implant damage
+plus the anneal reshapes channel doping. Tier: deep dive.
+
+**MACPHERSON-1971** — M. R. MacPherson, *"The adjustment of MOS
+transistor threshold voltage by ion implantation"*, Applied Physics
+Letters, vol. 18, no. 11, pp. 502–504, 1971, DOI 10.1063/1.1653513.
+The original threshold-adjust-by-implantation paper. Tier: deep dive.
+
+**PERESSINI-1973** — P. P. Peressini and W. S. Johnson, *"Threshold
+adjustment of N-channel enhancement mode FETs by ion implantation"*,
+1973 International Electron Devices Meeting, pp. 467–468,
+DOI 10.1109/IEDM.1973.188761. Early NMOS threshold adjustment by
+implantation. Tier: deep dive.
+
+**SHAHIDI-1993** — G. G. Shahidi, B. Davari, T. J. Bucelot,
+P. A. Ronsheim, P. J. Coane, S. Pollack, C. R. Blair, B. Clark and
+H. H. Hansen, *"Indium channel implant for improved short-channel
+behavior of submicrometer NMOSFETs"*, IEEE Electron Device Letters,
+vol. 14, no. 8, pp. 409–411, 1993, DOI 10.1109/55.225595. Indium
+channel implants for steep retrograde NMOS channels. Tier: deep dive.
+
+**HUANG-2000** — T.-Y. Huang, Y.-J. Lee, T.-S. Chao, C. Chen,
+C.-Y. Chang and S.-J. Chang, *"High-performance and high-reliability
+80-nm gate-length DTMOS with indium super steep retrograde channel"*,
+IEEE Transactions on Electron Devices, vol. 47, no. 12, pp. 2379–2384,
+2000, DOI 10.1109/16.887025 (Crossref lists T.-Y. Huang as first
+author). An 80 nm DTMOS with an indium super-steep retrograde channel.
+Tier: deep dive.
+
+**THOMPSON-1996** — S. E. Thompson, P. A. Packan and M. T. Bohr,
+*"Linear versus saturated drive current: tradeoffs in super steep
+retrograde well engineering"*, 1996 Symposium on VLSI Technology,
+Digest of Technical Papers, pp. 154–155, DOI 10.1109/VLSIT.1996.507830.
+Drive-current trade-offs of super-steep retrograde channels. Tier:
+deep dive.
+
+**TAUR-1997** — Y. Taur, D. A. Buchanan, W. Chen, D. J. Frank,
+K. E. Ismail, S.-H. Lo, G. A. Sai-Halasz, R. G. Viswanathan,
+H.-J. C. Wann, S. J. Wind and H.-S. Wong, *"CMOS scaling into the
+nanometer regime"*, Proceedings of the IEEE, vol. 85, no. 4,
+pp. 486–504, 1997, DOI 10.1109/5.573737. Super-steep retrograde
+channels and multiple thresholds at 0.1 µm. Tier: deep dive.
+
+**TAUR-2009** — Y. Taur and T. H. Ning, *Fundamentals of Modern VLSI
+Devices*, 2nd ed., Cambridge University Press, 2009,
+ISBN 978-0-521-83294-6, DOI 10.1017/CBO9781139195065. Threshold voltage
+versus channel doping, retrograde channels, body effect. Tier: deep
+dive.
+
+**WEI-1998** — L. Wei, Z. Chen, M. Johnson, K. Roy and V. De, *"Design
+and optimization of low voltage high performance dual threshold CMOS
+circuits"*, Proceedings of the 35th Design Automation Conference,
+pp. 489–494, 1998, DOI 10.1109/DAC.1998.724521. The circuit-level case
+for a second threshold voltage. Tier: deep dive.
+
+**WANG-1997** — L. Z. Wang, M. S.-C. Luo, H.-H. Tseng and S. A. Ajuria,
+*"The Influence of Fluorine on Boron-Enhanced Diffusion in Silicon by
+BF₂⁺ Implantation Through Oxide during High Temperature Rapid Thermal
+Anneal"*, Journal of The Electrochemical Society, vol. 144, no. 11,
+pp. L298–L301, 1997, DOI 10.1149/1.1838075. Fluorine's effect on boron
+diffusion after BF₂ implantation through oxide and RTA. Tier: deep
+dive.
+
+**SMITH-1985** — W. L. Smith, A. Rosencwaig and D. L. Willenborg,
+*"Ion implant monitoring with thermal wave technology"*, Applied
+Physics Letters, vol. 47, no. 6, pp. 584–586, 1985,
+DOI 10.1063/1.96079. The thermal-wave (modulated-reflectance) implant
+monitor. Tier: deep dive.
+
+**CURRENT-1996** — M. I. Current, *"Ion implantation for silicon device
+manufacturing: A vacuum perspective"*, Journal of Vacuum Science &
+Technology A, vol. 14, no. 3, pp. 1115–1123, 1996,
+DOI 10.1116/1.580279. Production-implanter overview: sources, beam
+lines, end stations and vacuum. Tier: deep dive.
+
+**MACK-2007** — C. Mack, *Fundamental Principles of Optical
+Lithography: The Science of Microfabrication*, Wiley, 2007,
+ISBN 978-0-470-01893-4, DOI 10.1002/9780470723876. k₁, resist profiles,
+thick-resist imaging. Tier: deep dive.
+
+**LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
+ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
+Overlay budgets and non-critical-layer tool choice. Tier: deep dive.
+
+**ROCHE-1985** — D. Roche, J. F. Michaud and M. Bruel, *"Outgassing of
+Photoresist During Ion Implantation"*, MRS Proceedings, vol. 45, 1985,
+DOI 10.1557/PROC-45-203. Resist outgassing during implantation. Tier:
+deep dive.
+
+**LEE-1996** — W. J. Lee, N. Tokoro, H. T. Cho, J. O. Borland,
+M. Dennon and C. Kozak, *"Thick photoresist outgassing during MeV
+implantation (mechanism and impact on production)"*, Proceedings of
+the 11th International Conference on Ion Implantation Technology
+(1996), pp. 186–189, DOI 10.1109/IIT.1996.586180. Outgassing of thick
+resists during MeV implantation. Tier: deep dive.
+
+**HORSKY-1998** — T. N. Horsky, *"Photoresist outgassing in high energy
+and high current ion implantation"*, 1998 International Conference on
+Ion Implantation Technology, vol. 1, pp. 654–657,
+DOI 10.1109/IIT.1999.812201. Resist outgassing in high-energy and
+high-current implanters. Tier: deep dive.
+
+**FUJIMURA-1989** — S. Fujimura, J. Konno, K. Hikazutani and H. Yano,
+*"Ashing of Ion-Implanted Resist Layer"*, Japanese Journal of Applied
+Physics, vol. 28, no. 10R, p. 2130, 1989, DOI 10.1143/JJAP.28.2130. The
+crust and popping mechanism of implanted resist, measured. Tier: deep
+dive.
+
+**FUJIMURA-1990** — S. Fujimura, K. Shinagawa, M. Nakamura and
+H. Yano, *"Additive Nitrogen Effects on Oxygen Plasma Downstream
+Ashing"*, Japanese Journal of Applied Physics, vol. 29, no. 10R,
+p. 2165, 1990, DOI 10.1143/JJAP.29.2165. Why nitrogen is added to
+oxygen in downstream ashing. Tier: deep dive.
+
+**FUJIMURA-1994** — S. Fujimura, M. T. Suzuki, K. Shinagawa and
+M. Nakamura, *"Sodium contamination free ashing process using O₂+H₂O
+plasma downstream"*, Journal of Vacuum Science & Technology B, vol. 12,
+no. 4, pp. 2409–2413, 1994, DOI 10.1116/1.587773. Water-vapour
+addition to downstream ashing. Tier: deep dive.
+
+**OHMI-1996** — T. Ohmi, *"Total Room Temperature Wet Cleaning for Si
+Substrate Surface"*, Journal of The Electrochemical Society, vol. 143,
+no. 9, pp. 2957–2964, 1996, DOI 10.1149/1.1837133. A room-temperature
+alternative to the hot RCA sequence. Tier: deep dive.
+
+**KERN-1990** — W. Kern, *"The Evolution of Silicon Wafer Cleaning
+Technology"*, Journal of The Electrochemical Society, vol. 137, no. 6,
+pp. 1887–1892, 1990, DOI 10.1149/1.2086825. History and chemistry of
+the RCA clean. Tier: deep dive.
+
+**KERN-HANDBOOK** — W. Kern, *"Overview and Evolution of Silicon Wafer
+Cleaning Technology"*, ch. 1 in K. A. Reinhardt and W. Kern (eds.),
+*Handbook of Silicon Wafer Cleaning Technology*, 2nd ed., William
+Andrew, 2008, pp. 3–92, ISBN 978-0-8155-1554-8,
+DOI 10.1016/b978-081551554-8.50004-5. Overview chapter on wet-cleaning
+chemistry and contamination. Tier: deep dive.
+
+**REINHARDT-2010** — K. A. Reinhardt and R. F. Reidy (eds.), *Handbook
+of Cleaning in Semiconductor Manufacturing: Fundamental and
+Applications*, Wiley, 2010, ISBN 978-0-470-62595-8,
+DOI 10.1002/9781118071748. Modern treatment of wet and dry cleaning,
+including post-implant strip. Tier: deep dive.
+
+**MITROS-2001** — J. C. Mitros, C.-Y. Tsai, H. Shichijo, M. Kunz,
+A. Morton, D. Goodpaster, D. Mosher and T. R. Efland, *"High-voltage
+drain extended MOS transistors for 0.18-µm logic CMOS process"*, IEEE
+Transactions on Electron Devices, vol. 48, no. 8, pp. 1751–1755, 2001,
+DOI 10.1109/16.936703. Drain-extended MOS transistors added to a
+0.18 µm logic process. Tier: deep dive.
+
+**MAI-2011** — A. Mai and H. Rücker, *"Drain-extended MOS transistors
+capable for operation at 10 V and at radio frequencies"*, Solid-State
+Electronics, vol. 65–66, pp. 45–50, 2011,
+DOI 10.1016/j.sse.2011.06.034. 10 V drain-extended devices in a
+0.13 µm technology. Tier: deep dive.
+
+**APPELS-1979** — J. A. Appels and H. M. J. Vaes, *"High voltage thin
+layer devices (RESURF devices)"*, 1979 International Electron Devices
+Meeting, pp. 238–241, DOI 10.1109/IEDM.1979.189589. The original RESURF
+paper. Tier: deep dive.
+
+**LUDIKHUIZE-2000** — A. W. Ludikhuize, *"A review of RESURF
+technology"*, 12th International Symposium on Power Semiconductor
+Devices & ICs (2000), pp. 11–18, DOI 10.1109/ISPSD.2000.856763. Review
+of RESURF design rules for drift regions. Tier: deep dive.
+
+**BALIGA-2008** — B. J. Baliga, *Fundamentals of Power Semiconductor
+Devices*, Springer, 2008, ISBN 978-0-387-47313-0,
+DOI 10.1007/978-0-387-47314-7. Breakdown, drift-region doping and
+on-resistance trade-offs. Tier: deep dive.
+
+**EFLAND-1998** — T. R. Efland, C.-Y. Tsai and S. Pendharkar, *"Lateral
+thinking about power devices (LDMOS)"*, IEDM 1998 Technical Digest,
+pp. 679–682, DOI 10.1109/IEDM.1998.746447. LDMOS integration into logic
+CMOS. Tier: deep dive.
+
+**STOLK-1997** — P. A. Stolk, H.-J. Gossmann, D. J. Eaglesham,
+D. C. Jacobson, C. S. Rafferty, G. H. Gilmer, M. Jaraíz, J. M. Poate,
+H. S. Luftman and T. E. Haynes, *"Physical mechanisms of transient
+enhanced dopant diffusion in ion-implanted silicon"*, Journal of
+Applied Physics, vol. 81, no. 9, pp. 6031–6050, 1997,
+DOI 10.1063/1.364452. The physical mechanisms of transient enhanced
+diffusion. Tier: deep dive.
+
+**MICHEL-1987** — A. E. Michel, W. Rausch, P. A. Ronsheim and
+R. H. Kastl, *"Rapid annealing and the anomalous diffusion of ion
+implanted boron into silicon"*, Applied Physics Letters, vol. 50,
+no. 7, pp. 416–418, 1987, DOI 10.1063/1.98160. First report of
+anomalous (transient enhanced) boron diffusion under rapid annealing.
+Tier: deep dive.
+
+**EAGLESHAM-1994** — D. J. Eaglesham, P. A. Stolk, H.-J. Gossmann and
+J. M. Poate, *"Implantation and transient B diffusion in Si: The
+source of the interstitials"*, Applied Physics Letters, vol. 65,
+no. 18, pp. 2305–2307, 1994, DOI 10.1063/1.112725. The interstitial
+source behind transient boron diffusion. Tier: deep dive.
+
+**ROOZEBOOM-1990** — F. Roozeboom and N. Parekh, *"Rapid thermal
+processing systems: A review with emphasis on temperature control"*,
+Journal of Vacuum Science & Technology B, vol. 8, no. 6,
+pp. 1249–1259, 1990, DOI 10.1116/1.584902. Review of RTP systems with
+emphasis on temperature control. Tier: deep dive.
+
+**FIORY-2002** — A. T. Fiory, *"Recent developments in rapid thermal
+processing"*, Journal of Electronic Materials, vol. 31, no. 10,
+pp. 981–987, 2002, DOI 10.1007/s11664-002-0031-9. RTP developments of
+the 130 nm era. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
