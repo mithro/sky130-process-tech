@@ -289,9 +289,10 @@ suppliers,[^sec-01][^sec-02] without tying them to a process.
 * The deposition temperature, pressure, precursor (silane or
   disilane) and rate are not public; the amorphous regime below about
   580 °C is an era-typical value from the cited literature.
-* Whether the film is deposited in one furnace run or with an in-situ
-  seed/interface layer is not public; the "single" in the step name
-  is read as one layer.
+* This page reads the "single" in the step name used in this
+  reference as one layer deposited in one furnace run; an in-situ
+  seed or interface layer would also be consistent with the public
+  sources.
 * No dedicated crystallisation anneal appears in the step list used in
   this reference; we assume the later thermal steps crystallise the
   film.

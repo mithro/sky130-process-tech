@@ -225,9 +225,9 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 * Whether the tunnel-mask ARC is an organic BARC or an inorganic
   dielectric ARC is not public; the O₂/HBr reading is an inference from
   the tool gas sets and from industry practice on i-line layers.
-* Why this particular relaxed layer carries an ARC when the other
-  implant masks of the flow apparently do not (no other ARC etch is
-  listed) is not explained publicly; the reflectivity contrast of the
+* Why this particular relaxed layer carries an ARC when no other
+  implant mask in the step list used in this reference has an ARC
+  etch is an open question; the reflectivity contrast of the
   pad-oxide/trench-oxide substrate is our best reading.
 * Which etcher runs the step, and whether the open is directional or a
   timed ash, is inferred, not stated.

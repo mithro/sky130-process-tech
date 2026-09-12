@@ -264,8 +264,8 @@ pre-oxidation clean are folded into those steps (see the
   inference from the 0.410 µm rule; no SkyWater statement assigns
   layers to tools.
 * Reticle tone and resist type are not public.
-* Why a relaxed implant layer carries an ARC (see
-  {ref}`TUNARCE <step-036>`) is not explained publicly.
+* Why a relaxed implant layer carries an ARC is an open question
+  (see {ref}`TUNARCE <step-036>`).
 * The internal layout rules of the memory arrays (`areaid.ce`) are not
   published, so the real cell pitch cannot be derived from the `tunm`
   rules alone.
