@@ -75,13 +75,14 @@ window is for.
   poorly controlled fraction of the dose and shift the profile of the
   memory transistor's channel — precisely the parameter these implants
   exist to set.
-* **Why it must be opened before the oxide etch.** The HF-based etch
-  at {ref}`TUNME <step-039>` cannot penetrate an organic film; the
-  window has to be clear down to the oxide.
+* **Why it must be opened before the oxide etch.** The (inferred)
+  HF-based etch at {ref}`TUNME <step-039>` cannot penetrate an organic
+  film; the window has to be clear down to the oxide.
 
-Without `TUNARCE` the tunnel window would be printed but not usable.
-Its cost is a few nanometres of resist loss and a plasma exposure of
-the (inferred) pad oxide, both of which the recipe must budget for.
+Without `TUNARCE` the tunnel window would be printed but not usable. Its
+cost is typically a few nanometres of resist loss[^nojiri-2015] and a
+plasma exposure of the (inferred) pad oxide, both of which the recipe
+must budget for.
 
 ## How it is typically performed
 
@@ -89,11 +90,11 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 (SKY130's recipe is not public):
 
 * **Chamber.** A high-density or medium-density plasma etcher of the
-  silicon/poly class, at a few to tens of millitorr with a modest bias
-  — the same chamber types used for gate etch. Reactive-ion etching
-  holds the wafer on an RF-driven electrode; "due to the mostly
-  vertical delivery of reactive ions" the etch is anisotropic
-  ({ref}`category-etch`).[^wiki-rie]
+  silicon/poly class, at a few to tens of millitorr
+  (industry-typical)[^txt-02] with a modest bias — the same chamber
+  types used for gate etch. Reactive-ion etching holds the wafer on an
+  RF-driven electrode; "due to the mostly vertical delivery of reactive
+  ions" the etch is anisotropic ({ref}`category-etch`).[^wiki-rie]
 * **Chemistry.** Oxygen with nitrogen, or oxygen with a hydrogen
   halide such as HBr. Pure O₂ etches organics fast but isotropically;
   adding N₂ or HBr passivates the sidewall so that the ARC opening does

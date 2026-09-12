@@ -50,8 +50,9 @@ hottest and longest of the four.
 
 Implanted dopant is inactive until the lattice is restored, and
 "partially damaged layers need 800–1000 °C to dissolve the defect
-clusters" (category page, citing Gibbons and Plummer). Three things
-depend on doing that now rather than later:
+clusters" (category page, citing Gibbons and
+Plummer).[^gibbons-1972][^txt-01] Three things depend on doing that now
+rather than later:
 
 * **Gate-oxide quality.** The gate oxide is grown on a silicon surface
   that has been implanted through a thin pad oxide several times;
@@ -67,7 +68,8 @@ depend on doing that now rather than later:
   phosphorus diffusivity from implant-generated interstitials
   ({term}`TED`) — is worst for slow anneals, "because the damage
   dissolves while the dopant is still mobile"; the resolution is "the
-  RTA: seconds at 1000–1100 °C" (category page, citing Stolk et al.).
+  RTA: seconds at 1000–1100 °C" (category page, citing Stolk et
+  al.).[^stolk-1997]
 * **Retrograde profiles must stay retrograde.** The point of the MeV
   wells is a peak below the surface; a long furnace drive would smear
   it. ITRS 2001 demands a "Retrograde channel depth" of 21–30 nm for its
@@ -109,10 +111,11 @@ An industry-generic well/channel activation anneal for a 200 mm,
   sheet-resistance mapping of monitor wafers after each lot to track
   activation and uniformity (category page).[^txt-10]
 * **Furnace alternative.** A vertical furnace at 900–1000 °C for tens of
-  minutes gives the same activation with more diffusion, and some fabs
-  prefer it for wells precisely because a little extra drive smooths the
-  chained profiles ("Increasingly, furnace anneals are being supplanted
-  by Rapid Thermal Anneal").[^wiki-furnace]
+  minutes (typical)[^txt-01] gives the same activation with more
+  diffusion, and some fabs prefer it for wells precisely because a
+  little extra drive smooths the chained profiles ("Increasingly,
+  furnace anneals are being supplanted by Rapid Thermal
+  Anneal").[^wiki-furnace]
 
 ## Machines typically used
 
@@ -282,7 +285,7 @@ An industry-generic well/channel activation anneal for a 200 mm,
 [^ag-8108]: SemiStar Corp., *AG Associates Heatpulse 4100 / 8108 / 8800
     / 8800i Specifications* (reseller PDF; the operating specifications
     documented are those of the Heatpulse 4100), accessed 2026-08-30.
-    <http://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>
+    <https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30.
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
@@ -327,3 +330,6 @@ An industry-generic well/channel activation anneal for a 200 mm,
     Wann, S. J. Wind and H.-S. Wong, "CMOS scaling into the nanometer
     regime", *Proceedings of the IEEE* **85**(4), 486–504 (1997).
     <https://doi.org/10.1109/5.573737>
+[^gibbons-1972]: J. F. Gibbons, "Ion implantation in semiconductors —
+    Part II: Damage production and annealing", *Proceedings of the IEEE*
+    **60**(9), 1062–1096 (1972). <https://doi.org/10.1109/PROC.1972.8854>

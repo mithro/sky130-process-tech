@@ -60,8 +60,8 @@ it.
 step of the *thick-resist implant-block* kind. The resist must stop
 boron at, we infer, a few hundred keV (see {ref}`PWI <step-027>`); the
 pattern is the coarsest in the front end after the deep N-well; and the
-layer is aligned to the STI pattern, as is `NWM`, so that the two well
-edges meet in the isolation between NMOS and PMOS.
+layer is, we infer, aligned to the STI pattern, as is `NWM`, so that the
+two well edges meet in the isolation between NMOS and PMOS.
 
 ## Why this step exists
 

@@ -22,14 +22,14 @@ high-temperature step — which raises its cleanliness requirement to
 the "pre-furnace" level of {ref}`DNIS <step-009>`.
 
 The resist is a thick implant resist (2 µm class, inferred on the
-{ref}`PWDEM <step-030>` page) that has received two light boron
-implants — of order 10¹² cm⁻² each, illustrative
-({ref}`PWDEI1 <step-031>`) — at energies up to a few hundred keV.
-The crust is therefore modest by the standards of
-{ref}`LVTPIS <step-021>`, and because `pwde` regions are small the
-open area of the mask is small too: the strip removes almost a full
-wafer's worth of resist. The surface beneath is, we infer, all oxide (pad oxide
-on active, trench oxide on field).
+{ref}`PWDEM <step-030>` page) that has received two light boron implants
+— of order 10¹² cm⁻² each, illustrative ({ref}`PWDEI1 <step-031>`) — at
+energies, illustratively, up to a few hundred keV. The crust is
+therefore modest by the standards of {ref}`LVTPIS <step-021>`, and
+because `pwde` regions are small the open area of the mask is small too:
+the strip removes almost a full wafer's worth of resist. The surface
+beneath is, we infer, all oxide (pad oxide on active, trench oxide on
+field).
 
 ## Step category
 
@@ -41,18 +41,18 @@ organic or metallic residue would be baked into the silicon.
 
 ## Why this step exists
 
-Photoresist cannot go into an anneal chamber: at 1000 °C it would
-carbonise, contaminate the chamber and leave the wafer covered in
-particles, and the mobile-ion and organic contamination it carries would
-be driven into the channels that every implant of this module has just
-defined. The strip must therefore remove all resist and its crust —
-"transformed into a carbonized crust that is difficult to
-remove"[^pat-strip-tsmc] — without popping,[^pat-strip-mosel] and the
-clean must take off the metals sputtered onto the wafer over ten
-implants. ITRS 2001 treats front-end surface preparation as a
-first-order concern for exactly this reason.[^itrs-01] A residue left
-here would be sealed under the gate oxides grown at
-{ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`.
+Photoresist cannot go into an anneal chamber: at the ~1000 °C of a
+typical activation anneal it would carbonise, contaminate the chamber
+and leave the wafer covered in particles, and the mobile-ion and organic
+contamination it carries would be driven into the channels that every
+implant of this module has just defined. The strip must therefore remove
+all resist and its crust — "transformed into a carbonized crust that is
+difficult to remove"[^pat-strip-tsmc] — without
+popping,[^pat-strip-mosel] and the clean must take off the metals
+sputtered onto the wafer over ten implants. ITRS 2001 treats front-end
+surface preparation as a first-order concern for exactly this
+reason.[^itrs-01] A residue left here would be sealed under the gate
+oxides grown at {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`.
 
 ## How it is typically performed
 

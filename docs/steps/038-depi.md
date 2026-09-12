@@ -40,10 +40,10 @@ dose.
 `DEPI` is an {ref}`Ion implantation <category-implant>` step of the
 *threshold-setting channel implant* class, like {ref}`LVTNI <step-015>`
 and {ref}`PCHI <step-023>`: a low-energy, medium-current implant of
-order 10¹²–10¹³ cm⁻² ({ref}`category-implant`). It differs from every
+order 10¹²–10¹³ cm⁻² (industry-typical).[^txt-01] It differs from every
 other channel implant in the flow in sign of purpose — it drives the
-threshold *negative* rather than trimming a positive one — and in
-being confined to the memory cells.
+threshold *negative* rather than trimming a positive one — and in being
+confined to the memory cells.
 
 ## Why this step exists
 
@@ -111,9 +111,10 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   "counter-doped channel region".[^pat-vt-rrr]
 * **Energy.** Low — tens of keV for arsenic — so that the n-layer is
   confined to the top few tens of nanometres above the `PTSI` barrier;
-  the tunnel oxide grown at {ref}`ONO <step-040>` consumes about
-  1 nm of this silicon (46 % of the oxide thickness lies below the
-  original surface[^wiki-thox]), which the target must allow for.
+  the tunnel oxide grown at {ref}`ONO <step-040>` consumes about 1 nm
+  for a 2 nm oxide of the kind the Cypress patents describe[^pat-04]
+  (46 % of the oxide thickness lies below the original
+  surface[^wiki-thox]), which the target must allow for.
 * **Dose.** Of order 10¹² cm⁻²: enough to swing the threshold by a
   volt or two against the p-well surface doping, in line with
   threshold-adjust practice[^macpherson-1971] and with the 10¹²–10¹³
@@ -167,9 +168,9 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 * Next: {ref}`TUNME <step-039>` removes the (inferred) pad oxide the
   implant went through; {ref}`ONO <step-040>` grows the tunnel oxide on the
   implanted silicon.
-* The select transistor of the cell is a standard NMOS whose channel
-  was implanted at {ref}`LVTNI <step-015>` or later; the cell's tip
-  implant is {ref}`LDNTM <step-071>`.
+* The select transistor of the cell is a standard NMOS whose channel we
+  take to have been implanted at {ref}`LVTNI <step-015>` or later; the
+  cell's tip implant is {ref}`LDNTM <step-071>`.
 * Native devices: see {ref}`LVTNM <step-014>` for the `lvtn` block
   layer.
 * Category page: {ref}`Ion implantation <category-implant>`.
@@ -329,3 +330,11 @@ An industry-generic depletion-mode channel implant for a 200 mm,
     process and divider modulus independent PLL using zero-VT
     MOSFETs", *Proc. ESSCIRC 2003 — 29th European Solid-State Circuits
     Conference*, pp. 105–108. <https://doi.org/10.1109/ESSCIRC.2003.1257083>
+[^txt-01]: J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+    Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
+    2000, ISBN 978-0-13-085037-9.
+    <https://openlibrary.org/isbn/9780130850379>
+[^pat-04]: K. Ramkumar, I. Kouznetsov and V. Prabhakar (Cypress
+    Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098
+    B1, granted 2014-08-05.
+    <https://patents.google.com/patent/US8796098B1/en>

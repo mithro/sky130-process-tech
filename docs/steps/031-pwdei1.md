@@ -57,10 +57,10 @@ for the p-type well and "phosphorous species at about 8×10¹² cm² to
 7×10¹³ cm² at an energy of about 150 keV" for the n-type
 one;[^pat-demos-ti] SKY130 does the same for its 16 V devices ("drain
 extentions (DE) fabricated by lightly doped Nwells and Pwells")[^pdk-hv]
-but adds a dedicated, lighter P-well for the 20 V family. Without
-`PWDEI1`/`PWDEI2` there would be no 20 V PMOS drift region and the
-`nfet_20v0`/`pfet_20v0` devices, the "20+V" of SkyWater's platform
-description,[^skw-02] could not be made.
+but adds, we infer from the `pwde` layer,[^pdk-06] a dedicated, lighter
+P-well for the 20 V family. Without `PWDEI1`/`PWDEI2` there would be no
+20 V PMOS drift region and the `nfet_20v0`/`pfet_20v0` devices, the
+"20+V" of SkyWater's platform description,[^skw-02] could not be made.
 
 ## How it is typically performed
 

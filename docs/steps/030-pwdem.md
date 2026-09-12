@@ -40,12 +40,12 @@ treat the blank as a documentation inconsistency (see *Open questions*).
 ## Step category
 
 `PWDEM` is a {ref}`Photolithography (mask step) <category-lithography>`
-step of the *thick-resist implant-block* type, aligned to the STI
-pattern and used only by the high-voltage device family. Its features
-are large — the 20 V devices have drawn channel lengths of the order of
-a micrometre (the PDK's HV methodology gives 1.055 µm and 1.050 µm for
-the 16 V VHV NMOS and PMOS[^pdk-hv]) and drift regions longer
-still.[^pdk-07]
+step of the *thick-resist implant-block* type, aligned (we infer) to the
+STI pattern and used only by the high-voltage device family. Its
+features are large — the 20 V devices have drawn channel lengths of the
+order of a micrometre (the PDK's HV methodology gives 1.055 µm and
+1.050 µm for the 16 V VHV NMOS and PMOS[^pdk-hv]) and drift regions
+longer still.[^pdk-07]
 
 ## Why this step exists
 
@@ -72,7 +72,7 @@ steps".[^pat-demos-ti2] For the 20 V devices the standard P-well is too
 heavily doped: a drift region must deplete fully at the rated voltage,
 which requires a doping and depth that a 4 × 10¹⁷ cm⁻³ well[^pdk-03]
 cannot provide. `PWDEM` therefore defines where a lighter, custom P-well
-goes — the drift region of the 20 V PMOS and, we infer, the body of the
+goes — we infer, the drift region of the 20 V PMOS and the body of the
 20 V NMOS whose standard P-well was blocked. This is what makes the 20 V
 devices "similar construction to the 11V/16V NMOS FET, with several
 differences: Longer drift region, Longer poly gate, Larger W/L, Devices

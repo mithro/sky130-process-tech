@@ -91,8 +91,8 @@ fab (SKY130 values are not public):
 * **Screen oxide.** Through the pad oxide of 10–20 nm that a Cypress
   patent describes under its well and channel implants.[^pat-04]
 * **Charge control.** Electron shower; the resist is thick and already
-  charged by two MeV implants (SkyWater lists "E shower" on the
-  8250).[^skw-01]
+  charged by two high-energy (MeV-class, we infer) implants (SkyWater
+  lists "E shower" on the 8250).[^skw-01]
 * **Anneal.** {ref}`RTAI <step-034>` — "a rapid thermal anneal is
   performed after implanting both the n-well and p-well" and "any number
   of channel implants may also be performed … to adjust threshold

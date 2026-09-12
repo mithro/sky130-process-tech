@@ -49,11 +49,10 @@ needs more length to control short-channel effects.[^pdk-periph]
 
 `LVTNM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant-block* type: the image quality that matters is
-placement relative to the active pattern and adequate resist
-thickness, not minimum feature size. It aligns to the STI/active
-pattern printed at {ref}`FOM <step-004>` and etched at
-{ref}`STIE <step-006>`, which at this point is the only pattern on the
-wafer.
+placement relative to the active pattern and adequate resist thickness,
+not minimum feature size. It aligns to the STI/active pattern printed at
+{ref}`FOM <step-004>` and etched at {ref}`STIE <step-006>`, which at
+this point is, we infer, the only pattern on the wafer.
 
 ## Why this step exists
 
@@ -146,9 +145,10 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 
 ## Resources required
 
-* **Positive i-line (DNQ/novolak) photoresist**, about 1 µm thick;
-  SkyWater's S-1 names The Dow Chemical Company, JSR Corporation and
-  Tokyo Ohka Kogyo America as photoresist suppliers.[^sec-01]
+* **Positive i-line (DNQ/novolak) photoresist**, about 1 µm thick
+  (inferred above; industry-typical); SkyWater's S-1 names The Dow
+  Chemical Company, JSR Corporation and Tokyo Ohka Kogyo America as
+  photoresist suppliers.[^sec-01]
 * **HMDS** adhesion promoter; **TMAH developer** (0.26 N is the industry
   standard);[^txt-02] edge-bead remover and rinse solvents; DI water and
   nitrogen.

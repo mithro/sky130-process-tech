@@ -99,7 +99,7 @@ at least one opening 244 over a channel 218 in the second region
 
 The window also serves the 1.8 V NMOS channel implant
 ({ref}`NCHI <step-045>`), which the earlier pages of this reference
-identify as the baseline N-channel implant that all 1.8 V NMOS receive
+infer to be the baseline N-channel implant that all 1.8 V NMOS receive
 (see {ref}`LVTNI <step-015>`). Without `LVOM` every transistor would
 have the thick oxide: the 1.8 V core would be slow and its thresholds
 wrong.
@@ -109,11 +109,12 @@ wrong.
 An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
 130 nm-era fab (SKY130's recipe is not public):
 
-1. **Surface.** Fresh thermal oxide (~10 nm) over all active areas and
-   trench oxide over the field; the ONO islands over the memory cells.
-   Dehydration bake and {term}`HMDS` prime. Resist adhesion to a
-   fresh, clean thermal oxide is good, which matters because the
-   resist edge will be undercut by HF at {ref}`GOXETCH <step-046>`.
+1. **Surface.** Fresh thermal oxide (~10 nm[^pdk-hv]) over all active
+   areas and trench oxide over the field; the ONO islands over the
+   memory cells. Dehydration bake and {term}`HMDS` prime. Resist
+   adhesion to a fresh, clean thermal oxide is good, which matters
+   because the resist edge will be undercut by HF at
+   {ref}`GOXETCH <step-046>`.
 2. **Resist coat.** About 1 µm of positive i-line resist (PDK generic
    value 1.14 µm[^pdk-03]) — thick enough to stop the channel implant
    and to survive a wet etch. No ARC is indicated by the step list

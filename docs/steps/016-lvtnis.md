@@ -25,9 +25,9 @@ The resist being removed is the roughly 1 µm i-line implant resist
 inferred on the {ref}`LVTNM <step-014>` page. It has received a
 channel-type implant — tens of keV, of order 10¹²–10¹³ cm⁻²
 (illustrative values, {ref}`LVTNI <step-015>`) — which is a *light*
-implant by strip standards. The wafer surface under it is entirely
-oxide: pad oxide over the active areas and trench oxide over the
-field, with no bare silicon and no metal, so the full acid–peroxide
+implant by strip standards. The wafer surface under it is, we infer,
+entirely oxide: pad oxide over the active areas and trench oxide over
+the field, with no bare silicon and no metal, so the full acid–peroxide
 clean sequence can be used without restriction.
 
 ## Step category
@@ -41,7 +41,8 @@ low and the energy modest; the strips after the well masks
 ({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`), which have seen
 hundreds of keV to MeV ions and summed doses near 10¹³ cm⁻², and above
 all the source/drain strips ({ref}`PDIS <step-084>`,
-{ref}`NSDIS <step-087>`) at several 10¹⁵ cm⁻², are the difficult ones.
+{ref}`NSDIS <step-087>`) at several 10¹⁵ cm⁻² (illustrative), are the
+difficult ones.
 
 ## Why this step exists
 
@@ -129,9 +130,9 @@ cleanliness.[^txt-02]
 * **Oxygen, nitrogen, forming gas (H₂/N₂)** for the ash; small **CF₄**
   additions are available on the Mattson and Iridia tools[^skw-01] but
   attack oxide and would normally be omitted here.
-* **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** for SPM;
-  **ammonium hydroxide** for SC-1; **hydrochloric acid** for
-  SC-2[^wiki-rca] (category page).
+* **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** for
+  SPM;[^wiki-rca] **ammonium hydroxide** for SC-1; **hydrochloric acid**
+  for SC-2[^wiki-rca] (category page).
 * **Ultrapure DI water**, **isopropanol** for drying, **nitrogen**.
 * SkyWater names KMG Chemicals and EMD Performance Materials among its
   chemical suppliers.[^sec-01][^sec-02]
