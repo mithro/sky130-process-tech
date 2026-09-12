@@ -4,7 +4,9 @@ This project documents, step by step, how the SKY130 130 nm CMOS process
 technology is manufactured. SKY130 is the open-source process design kit
 (PDK) released by SkyWater Technology and Google in 2020; it is derived
 from the Cypress Semiconductor "S8" 130 nm process and is fabricated on
-200 mm wafers at SkyWater's Bloomington, Minnesota fab.
+200 mm wafers at SkyWater's Bloomington, Minnesota fab (see the
+[SkyWater PDK documentation](https://skywater-pdk.readthedocs.io/) and
+[SkyWater Technology](https://www.skywatertechnology.com/)).
 
 The aim is to be the most comprehensive public reference on how a
 mass-produced 130 nm process is set up — using SKY130 as the worked

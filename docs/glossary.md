@@ -6,8 +6,9 @@ referenced from the pages that use it with the `{term}` role.
 
 ```{glossary}
 alloy anneal
-    A low-temperature (typically 350–450 °C) anneal in hydrogen-bearing
-    {term}`forming gas` performed after metallisation. It sinters the
+    A low-temperature (typically 350–450 °C; see {ref}`category-anneal`)
+    anneal in hydrogen-bearing {term}`forming gas` performed after
+    metallisation. It sinters the
     metal-to-silicon contacts and passivates interface traps at the
     Si/SiO₂ interface with hydrogen. Also called a sinter or
     forming-gas anneal.
@@ -139,8 +140,8 @@ FEOL
     the first interconnect level.
 
 forming gas
-    A mixture of a few per cent hydrogen in nitrogen (commonly 4–10 % H₂)
-    used for the {term}`alloy anneal`.
+    A mixture of a few per cent hydrogen in nitrogen (commonly 4–10 % H₂;
+    see {ref}`category-anneal`) used for the {term}`alloy anneal`.
 
 four-point probe
     A sheet-resistance measurement in which current is forced through two
@@ -258,7 +259,8 @@ PEB
 PECVD
     Plasma-enhanced chemical vapour deposition: {term}`CVD` in which an RF
     plasma supplies the energy to dissociate precursors, allowing
-    deposition at 250–400 °C on wafers that already carry metal.
+    deposition at 250–400 °C on wafers that already carry metal (see
+    {ref}`category-deposition`).
 
 Preston equation
     The empirical {term}`CMP` removal-rate law {math}`R = k_p\,P\,v`, in
@@ -302,7 +304,8 @@ RIE
 RTA
     Rapid thermal anneal: a single-wafer anneal in a lamp-heated chamber
     with ramp rates of tens to hundreds of degrees per second and a
-    soak of seconds. RTA is one application of {term}`RTP`.
+    soak of seconds (see {ref}`category-anneal`). RTA is one application
+    of {term}`RTP`.
 
 RTP
     Rapid thermal processing: the family of single-wafer lamp-heated
@@ -316,11 +319,12 @@ salicide
 SC-1
     Standard clean 1 (also APM): ammonium hydroxide, hydrogen peroxide
     and water, typically 1:1:5 to 1:2:50 at 40–80 °C; removes particles
-    and organic residues.
+    and organic residues (see {ref}`category-strip`).
 
 SC-2
     Standard clean 2 (also HPM): hydrochloric acid, hydrogen peroxide and
-    water, typically 1:1:6 at 70–80 °C; removes metallic contamination.
+    water, typically 1:1:6 at 70–80 °C; removes metallic contamination
+    (see {ref}`category-strip`).
 
 scribe line
     The streets between dies on a wafer that will be cut by the dicing
@@ -350,7 +354,7 @@ SPC
 SPM
     Sulfuric-peroxide mixture (also "piranha"): concentrated H₂SO₄ and
     30 % H₂O₂, typically 3:1 to 4:1, self-heating to above 100 °C, used
-    to strip and oxidise organic residues.
+    to strip and oxidise organic residues (see {ref}`category-strip`).
 
 step coverage
     The ratio of film thickness on the sidewall or bottom of a step to
@@ -385,7 +389,7 @@ TED
 TEOS
     Tetraethyl orthosilicate, Si(OC₂H₅)₄: a liquid precursor vaporised to
     deposit conformal silicon dioxide by {term}`LPCVD` (around 700 °C)
-    or {term}`PECVD` (around 400 °C).
+    or {term}`PECVD` (around 400 °C); see {ref}`category-deposition`.
 
 van der Pauw structure
     A symmetric four-contact test structure (Greek cross or cloverleaf)

@@ -59,18 +59,18 @@ followed by a timed over-ash.
 
 Resist that has masked a high-dose implant is a different material from
 freshly developed resist. The ions deposit their energy in the top
-100–200 nm, cross-linking and carbonising it and embedding the implanted
-species; problems arise "when this photoresist has undergone an
-implant step previously and heavy metal are embedded in the
-photoresist and it has experienced high temperatures causing it to be
-resistant to oxidizing".[^wiki-ash] If the
-crusted wafer is heated quickly, solvent and nitrogen trapped in the
-soft resist underneath blow the crust off in flakes ("popping") that
-land elsewhere on the wafer as hard-to-remove particles. The standard
-countermeasures are a low-temperature first ash step or a slow ramp,
-forming-gas or H₂O-containing chemistries that penetrate the crust, and
-a wet SPM follow-up, which is why implant strips are longer and more
-carefully engineered than etch strips.[^kern-handbook]
+100–200 nm,[^fujimura-1989] cross-linking and carbonising it and
+embedding the implanted species; problems arise "when this photoresist
+has undergone an implant step previously and heavy metal are embedded in
+the photoresist and it has experienced high temperatures causing it to
+be resistant to oxidizing".[^wiki-ash] If the crusted wafer is heated
+quickly, solvent and nitrogen trapped in the soft resist underneath blow
+the crust off in flakes ("popping") that land elsewhere on the wafer as
+hard-to-remove particles. The standard countermeasures are a
+low-temperature first ash step or a slow ramp, forming-gas or
+H₂O-containing chemistries that penetrate the crust, and a wet SPM
+follow-up, which is why implant strips are longer and more carefully
+engineered than etch strips.[^kern-handbook]
 
 ### Wet strip and clean chemistry
 
@@ -153,9 +153,9 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
   phosphoric acid; all semiconductor-grade (parts-per-trillion metals).
 * **Solvents**: NMP, DMSO, hydroxylamine-based strippers, isopropanol
   for drying.
-* **Water**: ultrapure de-ionised water at 18 MΩ·cm with sub-ppb TOC,
-  in very large volumes (thousands of litres per wafer pass through a
-  wet bench).
+* **Water**: ultrapure de-ionised water at 18 MΩ·cm with sub-ppb
+  TOC,[^reinhardt-2010] in very large volumes (thousands of litres per
+  wafer pass through a wet bench).
 * **Hardware**: quartz and PFA tanks, PTFE/PFA cassettes and carriers,
   filters, megasonic transducers, and asher quartz tubes and windows.
 

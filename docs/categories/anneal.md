@@ -24,9 +24,9 @@ types:
 * **Silicidation** — the reaction anneal(s) that turn a deposited
   titanium or cobalt film into a {term}`silicide` on the exposed
   silicon and polysilicon ({ref}`CSIL <step-098>`).
-* **Alloy (sinter)** — a 350–450 °C anneal in {term}`forming gas`
-  after contact formation ({ref}`ALLY1 <step-096>`) and after the last
-  metal ({ref}`ALLY <step-170>`).
+* **Alloy (sinter)** — a typically 350–450 °C anneal[^txt-02] in
+  {term}`forming gas` after contact formation ({ref}`ALLY1 <step-096>`)
+  and after the last metal ({ref}`ALLY <step-170>`).
 * Purely by association, the PSG densification, ILD bakes and the like
   are treated as part of the deposition steps.
 
@@ -62,8 +62,8 @@ obtained by annealing hot and fast. And the interstitials released as
 the damage anneals cause transient enhanced diffusion ({term}`TED`),
 which is worst for slow, low-temperature anneals because the damage
 dissolves while the dopant is still mobile.[^stolk-1997] The resolution
-is the RTA: seconds at 1000–1100 °C, or a "spike" anneal with
-essentially zero soak time, which activates the dopant while the
+is the RTA: seconds at 1000–1100 °C,[^stolk-1997] or a "spike" anneal
+with essentially zero soak time, which activates the dopant while the
 junction moves only a few nanometres. ITRS 2001 identifies the boron
 extension junction as the critical one and asks for its depth,
 abruptness and sheet resistance to be met simultaneously.[^itrs-01]
@@ -132,11 +132,10 @@ Si/SiO₂ interface, reducing the interface-trap density and stabilising
 the threshold voltage; the same anneal sinters the aluminium–silicon and
 titanium–silicide contacts and relaxes stress in the metal (Deal's
 terminology for the charges involved is given in his 1980
-paper).[^deal-1980][^txt-01] It
-must be the last hot step because subsequent plasma exposure would undo
-the passivation, and its temperature is capped by the aluminium
-metallisation (Al–Si eutectic at 577 °C, and hillock growth well below
-that).
+paper).[^deal-1980][^txt-01] It must be the last hot step because
+subsequent plasma exposure would undo the passivation, and its
+temperature is capped by the aluminium metallisation (Al–Si eutectic at
+577 °C,[^txt-02] and hillock growth well below that).
 
 ## Typical equipment
 

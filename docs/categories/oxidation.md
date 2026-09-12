@@ -25,10 +25,10 @@ original surface, and 54% above it".[^wiki-thox]
 In the SKY130 flow the oxidation steps are the pad oxide under the STI
 nitride ({ref}`BOX <step-002>`), the trench-liner oxidation
 ({ref}`LINOX <step-010>`), the tunnel-oxide/{term}`ONO` stack of the
-SONOS memory transistor ({ref}`ONO <step-040>`), the two gate
-oxidations for the thick-oxide and thin-oxide transistors
-({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`) and a
-post-gate-etch re-oxidation ({ref}`IOX45 <step-063>`).
+SONOS memory transistor ({ref}`ONO <step-040>`), the two gate oxidations
+for the thick-oxide and thin-oxide transistors
+({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`) and what we infer to
+be the post-gate-etch re-oxidation ({ref}`IOX45 <step-063>`).
 
 ## Physics and engineering background
 
@@ -122,19 +122,20 @@ Two very different thickness regimes appear in a CMOS flow:
   oxide thickness of 2.0–2.4 nm for low-operating-power and 2.4–2.8 nm
   for low-standby-power logic at the 130 nm node, and 5 nm for DRAM
   transfer devices; input/output transistors that must withstand 2.5 V,
-  3.3 V or 5 V use proportionally thicker oxides.[^itrs-01] These are grown
-  dry, often with a nitridation, at 750–950 °C, in a furnace or an
-  RTP chamber, to a thickness controlled to within a few per cent
-  (ITRS 2001 asks for EOT control of ±4 % 3σ).[^itrs-01]
+  3.3 V or 5 V use proportionally thicker oxides.[^itrs-01] These are
+  grown dry, often with a nitridation, typically at 750–950 °C,[^txt-01]
+  in a furnace or an RTP chamber, to a thickness controlled to within a
+  few per cent (ITRS 2001 asks for EOT control of ±4 % 3σ).[^itrs-01]
 * **Pad, liner and screen oxides** of 5–30 nm, grown dry or wet, whose
   job is mechanical or chemical: cushioning the stress of an LPCVD
   nitride, rounding trench corners and passivating trench sidewalls,
   or scattering implanted ions to reduce {term}`channelling`.[^txt-01]
-* **Field oxides** of hundreds of nanometres. In {term}`LOCOS`
-  isolation these were grown wet at 900–1000 °C through a nitride
-  mask; at 250 nm and below the industry moved to {term}`STI`, in which
-  the thick isolation oxide is *deposited* ({ref}`category-deposition`)
-  and only a thin liner is grown.[^wiki-sti] SKY130 uses STI.
+* **Field oxides** of hundreds of nanometres. In {term}`LOCOS` isolation
+  these were grown wet at 900–1000 °C[^txt-01] through a nitride mask;
+  at 250 nm and below the industry moved to {term}`STI`, in which the
+  thick isolation oxide is *deposited* ({ref}`category-deposition`) and
+  only a thin liner is grown.[^wiki-sti] SKY130 uses STI
+  ({ref}`STIE <step-006>`).
 
 ### Dual gate oxide processes
 
