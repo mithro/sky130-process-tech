@@ -37,7 +37,8 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 089–106: PSG, contact silicide, local interconnect — reviewed and merged 2026-09-12
 - [x] Steps 107–117: contact, metal 1 — reviewed and merged 2026-09-12
 - [~] Steps 118–134: via 1, metal 2, via 2 (branch `steps/118-134`)
-- [ ] Steps 135–163: MiM caps, metal 3–5, vias 3–4
+- [~] Steps 135–148: MiM capacitor 1, metal 3, via 3 (branch `steps/135-148`)
+- [ ] Steps 149–163: metal 4, MiM capacitor 2, via 4, metal 5
 - [ ] Steps 164–171: passivation, pad, alloy, test
 
 ## Phase 2b — Citation conversion (added 2026-08-30)
