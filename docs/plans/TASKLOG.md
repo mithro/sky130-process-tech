@@ -74,6 +74,7 @@ deep-dive entries per step page and twelve per category page
 |------|-------|--------|
 | 2026-08-30 | `main` @ dd8ef12, all files + full history | 0 high, 9 medium (wording in `docs/plans/`, "step list" phrasing), 6 low — all fixed on `main` |
 | 2026-09-12 | `main` @ e9e42a4, all files + history since dd8ef12 | 0 high, 35 medium, 105 low — all wording/hedging/citation hygiene; all fixed on `main` (merged 2026-09-12) |
+| 2026-09-12 | `main` @ 2d1ad7c, all files + history since e9e42a4 | 0 high, 11 medium, 22 low — hedging/citation hygiene on steps 048–088; fixes on `topic/provenance-fixes-3` |
 
 ## Notes
 
