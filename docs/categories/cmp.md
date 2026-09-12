@@ -14,7 +14,9 @@ surface is planar, and the polish is stopped either at a fixed removal
 or when a harder underlying "stop" layer is reached.
 
 Precisely, CMP is used in a 130 nm aluminium-interconnect process in
-three ways, all of which appear in the SKY130 flow:
+three ways, all of which appear in the SKY130 flow (the assignments
+below follow from the step names in the step list used in this
+reference):
 
 * **Dielectric planarisation with a stop layer.** The STI trench-fill
   oxide is polished back until the nitride hard mask on the active
@@ -122,6 +124,9 @@ dry, integrated into the polisher so that the wafer never dries between
 polish and clean.
 
 ### STI, tungsten and oxide polishes compared
+
+The film and stop-layer columns are those typical of the node; SKY130's
+own films are inferred from the step names.
 
 | Polish | Film removed | Stop | Slurry | Failure modes |
 |--------|--------------|------|--------|---------------|

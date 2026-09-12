@@ -23,9 +23,9 @@ sets how much over-etch is *needed*. A 130 nm process uses two families:
 plasma ("dry") etching in a vacuum chamber, which can be highly
 anisotropic and is used for every patterned film, and wet chemical
 etching in aqueous baths, which is isotropic and is used where a film
-must be removed cleanly and gently with very high selectivity — the
-thin oxides at {ref}`GOXETCH <step-046>` and {ref}`SACETCH <step-095>`,
-for example.
+must be removed cleanly and gently with very high selectivity — the thin
+oxides at {ref}`GOXETCH <step-046>` and {ref}`SACETCH <step-095>`, for
+example, which we infer to be wet etches.
 
 In the SKY130 flow there are 27 etch steps: the STI nitride and trench
 etches, the SONOS tunnel/ONO stack etches, the gate-oxide wet etch, the
@@ -81,6 +81,9 @@ as Lam's Exelan and Applied's eMxP+.[^donnelly-2013][^nojiri-2015]
 
 ### Chemistries by material
 
+The chemistries below are those typical of the node; SKY130's actual
+recipes are not public.
+
 * **Silicon and polysilicon** (STI trench {ref}`STIE <step-006>`, gate
   {ref}`P1ME <step-062>`): HBr/Cl₂ with a little O₂, which forms
   volatile SiBrₓ/SiClₓ while a thin SiOₓBrᵧ sidewall film keeps the
@@ -105,12 +108,13 @@ as Lam's Exelan and Applied's eMxP+.[^donnelly-2013][^nojiri-2015]
   is an unmasked anisotropic etch-back that leaves nitride only on the
   vertical gate sidewalls and must stop on a thin oxide without
   trenching the silicon.[^txt-01]
-* **Aluminium–copper with Ti/TiN caps** (metal 1–5, {ref}`MM1E
-  <step-114>` to {ref}`MM5E <step-163>`): Cl₂/BCl₃ with N₂ or CHF₃ for
-  sidewall passivation. AlCl₃ is volatile at room temperature, so
-  aluminium etches spontaneously in chlorine and anisotropy depends
-  entirely on the passivation film; BCl₃ scavenges water and reduces the
-  native Al₂O₃; copper chlorides are not volatile and are removed by ion
+* **Aluminium–copper with Ti/TiN or Ti:W caps** (metal 1–5,
+  {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`; the step names
+  indicate a Ti:W cap in SKY130): Cl₂/BCl₃ with N₂ or CHF₃ for sidewall
+  passivation. AlCl₃ is volatile at room temperature, so aluminium
+  etches spontaneously in chlorine and anisotropy depends entirely on
+  the passivation film; BCl₃ scavenges water and reduces the native
+  Al₂O₃; copper chlorides are not volatile and are removed by ion
   bombardment; and residual chlorine plus atmospheric moisture corrodes
   the lines, so the etch ends with an in-situ H₂O or O₂/CF₄ passivation
   plasma and an immediate rinse.[^nojiri-2015][^txt-02]
@@ -130,17 +134,18 @@ buffering gives "a more stable pH; thus, more stable concentrations of
 HF and HF₂⁻, and a more stable etch rate"; a 6:1 mixture of 40 % NH₄F
 and 49 % HF etches thermally grown oxide "at approximately 2 nanometres
 per second at 25 degrees Celsius".[^wiki-boe][^wiki-hf] Dilute HF is the
-tool for stripping the thick gate oxide from the low-voltage active
-areas ({ref}`GOXETCH <step-046>`) and for the sacrificial-oxide removal
-before silicidation ({ref}`SACETCH <step-095>`), because a plasma would
-damage the exposed silicon. Silicon nitride is stripped in hot
-phosphoric acid (85 % H₃PO₄ at 150–180 °C), with selectivity to oxide of
-tens to one (typical values; see {ref}`category-strip`) — the STI
-nitride strip {ref}`NS19 <step-013>` is catalogued under
-{ref}`category-strip`. Aluminium can be etched in
-phosphoric/acetic/nitric mixtures, but not with 130 nm-node fidelity.
-Wet etch rates vary with temperature, concentration and bath age, so
-baths are monitored with etch-rate test wafers.
+natural tool for, and we infer is used at, stripping the thick gate
+oxide from the low-voltage active areas ({ref}`GOXETCH <step-046>`) and
+the sacrificial-oxide removal before silicidation
+({ref}`SACETCH <step-095>`), because a plasma would damage the exposed
+silicon. Silicon nitride is stripped in hot phosphoric acid (85 % H₃PO₄
+at 150–180 °C), with selectivity to oxide of tens to one (typical
+values; see {ref}`category-strip`) — the STI nitride strip
+{ref}`NS19 <step-013>` is catalogued under {ref}`category-strip`.
+Aluminium can be etched in phosphoric/acetic/nitric mixtures, but not
+with 130 nm-node fidelity. Wet etch rates vary with temperature,
+concentration and bath age, so baths are monitored with etch-rate test
+wafers.
 
 ### Endpoint, over-etch and loading
 

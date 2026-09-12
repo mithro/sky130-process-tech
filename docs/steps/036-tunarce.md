@@ -26,14 +26,15 @@ two implants that follow ({ref}`PTSI <step-037>`,
 only, and so that the wet etch at {ref}`TUNME <step-039>` can reach and
 remove that oxide.
 
-Precisely: with the tunnel-mask resist in place, the wafer is exposed to
-an oxygen-based plasma that ashes the organic ARC in the open windows
-(the resist is attacked at a similar rate but is many times thicker),
-with the etch run to an optical-emission endpoint plus a timed over-etch,
-and stopping on the oxide beneath — 10–20 nm of pad oxide in the
-Cypress patent.[^pat-04] The step list used in
-this reference names the film only as "ARC"; whether it is an organic
-BARC or an inorganic dielectric ARC is discussed under *Open questions*.
+In its industry-generic form (SKY130's recipe is not public): with the
+tunnel-mask resist in place, the wafer is exposed to an oxygen-based
+plasma, we infer, that ashes the organic ARC in the open windows (the
+resist is attacked at a similar rate but is many times thicker), with
+the etch run to an optical-emission endpoint plus a timed over-etch, and
+stopping on the oxide beneath — 10–20 nm of pad oxide in the Cypress
+patent.[^pat-04] The step list used in this reference names the film
+only as "ARC"; whether it is an organic BARC or an inorganic dielectric
+ARC is discussed under *Open questions*.
 
 ## Step category
 

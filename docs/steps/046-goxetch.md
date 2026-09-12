@@ -12,17 +12,17 @@
 
 ## What this step is
 
-`GOXETCH` strips the thick gate oxide grown at
-{ref}`GOX100 <step-043>` from the low-voltage regions. With the
-{ref}`LVOM <step-044>` resist still in place — it has just served as
-the mask for {ref}`NCHI <step-045>` — the wafer is dipped in dilute
-hydrofluoric acid or buffered HF until the roughly 10 nm oxide in the
-windows is gone and bare silicon is exposed; under the resist, over
-the 5 V and high-voltage transistors, the oxide stays. The resist is
-then stripped and the wafer cleaned for the thin gate oxidation at
+`GOXETCH` strips the thick gate oxide grown at {ref}`GOX100 <step-043>`
+from the low-voltage regions. With the {ref}`LVOM <step-044>` resist
+still in place — it has just served as the mask for
+{ref}`NCHI <step-045>` — the wafer is dipped in dilute hydrofluoric acid
+or buffered HF until the roughly 10 nm oxide[^pdk-hv] in the windows is
+gone and bare silicon is exposed; under the resist, over the 5 V and
+high-voltage transistors, the oxide stays. The resist is then stripped
+and the wafer cleaned for the thin gate oxidation at
 {ref}`LVGOX <step-047>`. It is the etch half of the dual-gate-oxide
-process described on the {ref}`category-oxidation` page: "a mask and
-wet etch to strip it from the low-voltage active areas".
+process described on the {ref}`category-oxidation` page: "a mask and wet
+etch to strip it from the low-voltage active areas".
 
 Both Cypress flows describe the operation. In one, "The thick, first
 gate oxide 240 is etched in the exposed regions by using a BOE etch …
@@ -56,10 +56,10 @@ the two gate oxides.
 
 The 1.8 V transistors need a ~4 nm gate oxide (the 1.8 V NMOS model
 carries `toxe = 4.148e-9`[^pdk-model-nfet01v8]); the thick oxide on
-their active areas is ~10 nm and must be removed before the thin one
-can be grown. A thin oxide cannot simply be grown on top: oxidation
-adds to an existing oxide by the Deal–Grove law rather than replacing
-it ({ref}`category-oxidation`). The removal has to be:
+their active areas is ~10 nm[^pdk-hv] and must be removed before the
+thin one can be grown. A thin oxide cannot simply be grown on top:
+oxidation adds to an existing oxide by the Deal–Grove law rather than
+replacing it ({ref}`category-oxidation`). The removal has to be:
 
 * **Complete**, because any residue becomes part of the thin oxide;
 * **Damage-free**, because the exposed surface is the channel. The
@@ -308,3 +308,6 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 [^lee-1999]: S.-W. Lee, "Novel Dual Gate Oxide Process with Improved
     Gate Oxide Integrity Reliability", *Electrochemical and Solid-State
     Letters* **3**(1), 56 (1999). <https://doi.org/10.1149/1.1390957>
+[^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>

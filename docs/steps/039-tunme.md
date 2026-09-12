@@ -13,16 +13,17 @@
 ## What this step is
 
 `TUNME` removes the oxide — we infer the pad oxide from
-{ref}`BOX <step-002>` — from the tunnel windows so that the
-tunnel oxide of the SONOS memory transistor can be grown on bare
-silicon at the next step, {ref}`ONO <step-040>`. The resist patterned
-at {ref}`TUNM <step-035>` — opened through its ARC at
+{ref}`BOX <step-002>` — from the tunnel windows so that the tunnel oxide
+of the SONOS memory transistor can be grown on bare silicon at the next
+step, {ref}`ONO <step-040>`. The resist patterned at
+{ref}`TUNM <step-035>` — opened through its ARC at
 {ref}`TUNARCE <step-036>` and just used as the mask for the
-{ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants — now
-serves a third time, as the mask for a wet oxide etch. Inside each
-window the oxide — the pad oxide, we infer; 10–20 nm in the Cypress
-patent[^pat-04] — is dissolved in dilute hydrofluoric acid or buffered
-HF down to the silicon; outside the
+{ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants — now serves
+a third time, as the mask for an oxide etch that we infer to be wet: the
+Cypress patent uses HF chemistry,[^pat-04] and a plasma would damage the
+silicon. Inside each window the oxide — the pad oxide, we infer;
+10–20 nm in the Cypress patent[^pat-04] — is dissolved in dilute
+hydrofluoric acid or buffered HF down to the silicon; outside the
 windows the resist keeps the oxide intact.
 
 The Cypress embedded-SONOS patent describes exactly this operation on
@@ -44,14 +45,14 @@ step (or the head of the next); the sequence below includes them.
 
 ## Step category
 
-`TUNME` is an {ref}`Etch <category-etch>` step of the *wet oxide
-etch* type — the same class as {ref}`GOXETCH <step-046>` and
-{ref}`SACETCH <step-095>`. The category page explains the choice:
-dilute HF is used where a thin oxide must be removed "cleanly and
-gently with very high selectivity … because a plasma would damage the
-exposed silicon". Here the silicon being exposed will carry a tunnel
-oxide only 1–3 nm thick[^pat-04] whose quality decides the memory's
-endurance and retention, so the etch is the gentlest available.
+`TUNME` is an {ref}`Etch <category-etch>` step of the (inferred) *wet
+oxide etch* type — the same class as {ref}`GOXETCH <step-046>` and
+{ref}`SACETCH <step-095>`. The category page explains the choice: dilute
+HF is used where a thin oxide must be removed "cleanly and gently with
+very high selectivity … because a plasma would damage the exposed
+silicon". Here the silicon being exposed will carry a tunnel oxide only
+1–3 nm thick[^pat-04] whose quality decides the memory's endurance and
+retention, so the etch is the gentlest available.
 
 ## Why this step exists
 

@@ -19,8 +19,8 @@ for the P-well block mask {ref}`PWBM <step-026>`. The step list used in
 this reference names it after the last implant ("P-channel BF2 implant
 strip").
 
-The resist is the roughly 1 µm i-line resist of an implant-block layer
-({ref}`HVTPM <step-022>`). It has received two keV-class channel
+The resist is the i-line implant-block resist (roughly 1 µm, inferred on
+the {ref}`HVTPM <step-022>` page). It has received two keV-class channel
 implants at light doses (of order 10¹²–10¹³ cm⁻² each, illustrative;
 {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`), one of them BF₂. As at
 {ref}`LVTNIS <step-016>` this is a *light* implant strip: the crust is
@@ -38,10 +38,11 @@ sequence can be used without restriction.
 ## Step category
 
 `PCHIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-implant* type. The category page explains the general recipe;
-what is specific here is that the next step is a *thick-resist* well
-mask, so the surface must be free of the particles that would cause
-pinholes or coating defects in a 2–3 µm film.
+*post-implant* type. The category page explains the general recipe; what
+is specific here is that the next step is a *thick-resist* well mask, so
+the surface must be free of the particles that would cause pinholes or
+coating defects in a thick (2 µm-class, inferred on the
+{ref}`PWBM <step-026>` page) film.
 
 ## Why this step exists
 
