@@ -1,10 +1,6 @@
 (step-116)=
 # Step 116 — CMPM: CMP over metal1
 
-:::{warning}
-This page is a stub. Content has not yet been researched and reviewed.
-:::
-
 | | |
 |---|---|
 | **Step number** | 116 of 171 |
@@ -16,50 +12,401 @@ This page is a stub. Content has not yet been researched and reviewed.
 
 ## What this step is
 
-*To be written.*
+`CMPM` polishes the inter-level dielectric ({term}`ILD`) flat. The
+{ref}`NILD3 <step-115>` oxide arrives following the metal-1
+topography — thick over wide lines and dense arrays, thinner over
+open field, with the 0.36 µm[^pdk-04] step of the metal reproduced,
+softened, at its surface. The wafer is pressed against a pad flooded
+with alkaline silica slurry until that topography is gone and a
+planar oxide surface remains at a controlled height above the tops
+of the metal-1 lines. No material change marks the end: it is an
+*oxide-on-oxide* polish stopped by removal amount, not by a stop
+layer. The cap of {ref}`NCAPOX3 <step-117>` then restores a fixed
+thickness before the via-1 mask ({ref}`VIM <step-118>`) is printed on
+it. The finished dielectric above metal 1 is, per the PDK's stack
+diagram, the 0.27 µm via-1 height.[^pdk-04]
+
+"CMP over metal1" is the first of the back-end oxide polishes; the
+same operation recurs as {ref}`CMPM2 <step-127>`,
+{ref}`CMPM3 <step-142>` and {ref}`CMPM4 <step-157>` above each metal
+level. SkyWater lists "AMAT Mirra CMP" with "oxide" first among its
+applications.[^skw-01] The PDK's design rules are written around
+this polish: metal 1 carries a "Min MM1_oxide_Pattern_density" of
+0.7 (m1.pd.1) checked in square windows, and a fill algorithm that
+flags any 700 µm × 700 µm window covered by `cmm1 waffleDrop` whose
+metal density falls below stated levels;[^pdk-periph] the assumptions
+table gives an "Oxide Bias for MM1" of 0.6, a "Min pattern density
+for oxide" of 0.75, a "Min MM* PD range" of 0.3 and 700 µm and
+2 000 µm pattern-density extraction boxes.[^pdk-03]
 
 ## Step category
 
-*To be written.*
+`CMPM` is a {ref}`Chemical-mechanical planarisation <category-cmp>`
+step of the *inter-level dielectric* type — the category page's
+third row: PECVD/HDP oxide, no stop layer, silica slurry at pH
+10–11, with thickness non-uniformity, scratches and pattern-density
+steps as the failure modes. It is the class of polish IBM invented
+CMP for — coplanar metal/insulator films[^pat-cmp-ibm-1990] — and
+the one whose pattern dependence Stine, Ouma, Boning and their
+co-workers turned into the density-based fill rules that every
+modern design-rule deck, this PDK's included, now
+carries.[^stine-1998][^ouma-2002][^stine-1998-ted] It differs from
+the tungsten polish of {ref}`WCMP2 <step-111>` in that nothing tells
+the tool to stop, and from the STI polish of
+{ref}`CMPNIT <step-012>` in that there is no nitride beneath. Because
+only one material is removed there is no {term}`dishing` or
+{term}`erosion` in the two-material sense of the tungsten polish; the
+analogue here is the pattern-density-dependent thinning that leaves a
+step in the oxide surface between dense and sparse metal.
 
 ## Why this step exists
 
-*To be written.*
+A subtractive aluminium back end without planarisation accumulates
+topography with every level; by metal 2 the steps would exceed the
+depth of focus of a 248 nm exposure and the via etch would have to
+reach metal 1 through wildly different oxide thicknesses. The polish
+fixes:
+
+* **Planarity for lithography.** The {ref}`VIM <step-118>` and
+  {ref}`MM2 <step-124>` exposures need a surface flat to within
+  their depth of focus across the field — a few hundred nanometres
+  for a 248 nm scanner[^wiki-litho] printing the PDK's 0.14 µm
+  metal and 0.15 µm via CDs[^pdk-03] ({ref}`category-lithography`
+  sets out the trade-off). Sivaram et al. modelled the
+  removal rate and planarity of interlevel-dielectric CMP,[^sivaram-1992]
+  and Boning et al. introduced the statistical metrology of ILD
+  thickness variation that quantifies what the polish
+  achieves.[^boning-1994][^chang-1995]
+* **A uniform via depth.** The via-1 etch of {ref}`VIME <step-119>`
+  must clear 0.27 µm of oxide[^pdk-04] over every via while not
+  over-etching the TiW cap where the oxide is thinner; the
+  post-polish thickness range over metal 1 is the via etch's
+  over-etch budget.
+* **Pattern-density control.** The polish rate depends on local
+  density: oxide over an isolated line is removed faster than oxide
+  over a dense array, so the surface after polishing follows the
+  metal density on a scale set by the pad's planarisation length
+  (Ouma et al.[^ouma-2002]). Stine et al. showed how metal-fill
+  patterning practices reduce the effect and what they cost in
+  capacitance;[^stine-1998-ted] the PDK's `cmm1` waffle-drop fill,
+  its 0.7 minimum oxide density and its 700 µm windows[^pdk-periph]
+  are that practice in SKY130's rules, and the 2 000 µm box of the
+  assumptions table[^pdk-03] is, on our reading, the planarisation
+  length the rules were fitted against.
+* **Capacitance.** The remaining oxide thickness over metal 1 sets
+  the metal-1-to-metal-2 capacitance in the PDK's extraction
+  tables;[^pdk-08] Stine et al.'s electrical analysis of fill
+  patterns shows how fill and thickness trade.[^stine-1998-ted]
+
+Without `CMPM` the later levels of SKY130 could not be printed or
+etched reliably, and the via-1 chain would be open in some places and
+shorted in others.
 
 ## How it is typically performed
 
-*To be written.*
+An industry-generic ILD polish for a 200 mm, 130 nm-era fab (SKY130's
+recipe is not public):
+
+1. **Tool.** A multi-platen rotary polisher[^pat-cmp-mirra] with a
+   stacked pad (hard top layer for planarisation over a soft
+   sub-pad), a multi-zone carrier head and diamond conditioning;
+   optical thickness endpoint through a pad window is available on
+   this class of tool.[^pat-cmp-window][^pat-cmp-endpoint-ibm]
+2. **Slurry.** Fumed or colloidal silica in KOH or NH₄OH at pH
+   10–11 (industry-typical values[^steigerwald-1997][^zantye-2004]);
+   Cook's mechanism — hydration of the glass surface and removal of
+   the softened layer by the abrasive — is what makes oxide
+   polishing chemical as well as mechanical,[^cook-1990] and
+   Krishnan, Nalaskowski and Cook review the slurry
+   chemistry.[^rev-02]
+3. **Recipe.** Removal follows Preston's law, rate proportional to
+   pressure and velocity,[^preston-1927] modified by the pad's
+   fluid-film and contact mechanics.[^runnels-1994] Down-force of a
+   few psi and platen speeds of tens of rpm are typical.[^txt-05]
+   The first platen removes the bulk and planarises; a second, at
+   lower pressure, trims to the target thickness; a buff platen
+   removes slurry residue. The target is the remaining oxide over
+   the metal-1 top plus an allowance for the cap of
+   {ref}`NCAPOX3 <step-117>`, so that the sum reaches the 0.27 µm of
+   the PDK.[^pdk-04]
+4. **Endpoint.** By removal time calibrated on monitors, or by
+   in-situ optical thickness measurement;[^pat-cmp-window] the polish
+   must stop *above* the metal — breaking through to the TiW cap
+   would scratch and thin the lines — so a generous margin is
+   left and the cap oxide makes up the thickness.
+5. **Post-CMP clean.** Double-sided brush scrub with dilute NH₄OH
+   (Philipossian and Sun analyse the brush design for post-ILD-CMP
+   scrubbing[^philipossian-2009]), sometimes a dilute HF dip, then
+   spin-rinse-dry; Devriendt et al. relate oxide-CMP defects to the
+   cleaning strategy,[^devriendt-1998] and Sun, Han and Keswani review
+   brush scrubbing.[^sun-2017]
+6. **Metrology.** Remaining oxide thickness over metal-1 test pads
+   by reflectometry or ellipsometry at many sites; die-level
+   thickness maps on density test structures (the method of
+   Stine et al.[^stine-1998]); scratch and particle inspection on the
+   KLA AIT class SkyWater's job posting names;[^job-01] via-chain
+   resistance later at {term}`e-test`.
 
 ## Machines typically used
 
-*To be written.*
+* **Rotary multi-platen CMP polisher**, 200 mm: Applied Materials
+  Mirra,[^pat-cmp-mirra][^chiphistory-mirra] Ebara EPO/F-REX,[^ebara-frex]
+  SpeedFam-IPEC, Strasbaugh ({ref}`category-cmp`).
+* **Post-CMP brush scrubber** (OnTrak/Lam Synergy, SEZ/Lam DaVinci).
+* **Thin-film thickness metrology** (reflectometer, ellipsometer),
+  **patterned-wafer inspection**.
 
 ## Machines likely used at SkyWater
 
-*To be written.*
+* **Applied Materials Mirra CMP.** SkyWater lists "AMAT Mirra CMP"
+  with "oxide" among its applications.[^skw-01] Strength: **strong**
+  (SkyWater statement); assignment to this step follows from the
+  film. Unverified job-board snippets recorded in the public-sources
+  inventory mention "AMAT Mirra and Mirra Mesa" (weak).
+* **Post-CMP clean — SEZ223 / DaVinci** single-wafer tools;[^skw-01]
+  "the SEZ etcher tool" of the maintenance page.[^skw-07] A brush
+  scrubber is not named (open question).
+* **Defect inspection — KLA AIT / SP1.**[^job-01] Strength: medium.
 
 ## Resources required
 
-*To be written.*
+* **Silica-based oxide CMP slurry** (KOH- or NH₄OH-stabilised
+  fumed or colloidal silica).[^rev-02][^wiki-cmp]
+* **Polishing pads** (stacked polyurethane) and **diamond
+  conditioners**.[^wiki-cmp]
+* **DI water**, **dilute NH₄OH**, possibly **dilute HF**, for the
+  post-CMP clean; brush consumables.
+* **Carrier-head consumables** — membranes, retaining rings.
+* **Slurry supply and waste treatment**.[^txt-07]
 
 ## Related steps and cross-references
 
-*To be written.*
+* Previous: {ref}`NILD3 <step-115>` (the film). Next:
+  {ref}`NCAPOX3 <step-117>` (the cap), then {ref}`VIM <step-118>`.
+* The topography it removes: {ref}`MM1E <step-114>`; the fill rules
+  it imposes: {ref}`MM1 <step-113>`.
+* The via etch that depends on its thickness control:
+  {ref}`VIME <step-119>`.
+* The same polish at higher levels: {ref}`CMPM2 <step-127>`,
+  {ref}`CMPM3 <step-142>`, {ref}`CMPM4 <step-157>`; the earlier
+  oxide polishes: {ref}`CMPP <step-090>`, {ref}`CMPL <step-106>`; the
+  tungsten polish before it: {ref}`WCMP2 <step-111>`.
+* Category page: {ref}`Chemical-mechanical planarisation <category-cmp>`.
 
 ## References
 
 ### Cross-check
 
-*To be written.*
+* SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP – oxide";
+  SEZ223 / DaVinci.[^skw-01]
+* SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
+  "the SEZ etcher tool".[^skw-07]
+* Indeed, SkyWater *Defect Technician 2* posting — inspection
+  tools.[^job-01]
+* SkyWater PDK, *Periphery rules* — m1.pd.1 (0.7), the `cmm1`
+  waffle-drop density check in 700 µm windows.[^pdk-periph]
+* SkyWater PDK, *Criteria & Assumptions* — "Oxide Bias for MM1" 0.6;
+  "Min pattern density for oxide" 0.75; "Min MM* PD range" 0.3;
+  700 µm and 2 000 µm extraction boxes.[^pdk-03]
+* SkyWater PDK, *Process stack diagram* — `met1` 0.36 µm; via1
+  0.27 µm.[^pdk-04]
+* SkyWater PDK, *Parasitic Layout Extraction* — the capacitance
+  tables.[^pdk-08]
 
 ### High-level understanding
 
-*To be written.*
+* Wikipedia, *Chemical-mechanical polishing*; *Photolithography* —
+  the depth-of-focus relation.[^wiki-cmp][^wiki-litho]
+* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — ILD CMP.[^txt-05]
+* Quirk and Serda, *Semiconductor Manufacturing Technology* — CMP
+  tools and consumables.[^txt-07]
+* Chip History Center, *The Mirra CMP System*.[^chiphistory-mirra]
+* Moon, in *Advances in Chemical Mechanical Planarization* — the
+  chemical and physical mechanisms of dielectric CMP.[^moon-2016]
 
 ### Deep dive
 
-*To be written.*
+* Stine et al., *IEEE Trans. Semicond. Manuf.* 1998 — rapid
+  characterisation of pattern-dependent CMP variation.[^stine-1998]
+* Stine et al., *IEEE TED* 1998 — the physical and electrical effects
+  of metal-fill patterning for oxide CMP.[^stine-1998-ted]
+* Ouma et al., *IEEE Trans. Semicond. Manuf.* 2002 — planarisation
+  length and pattern density in oxide CMP.[^ouma-2002]
+* Boning et al., SPIE 1994, and Chang et al., IEDM 1995 —
+  statistical metrology of ILD thickness variation.[^boning-1994][^chang-1995]
+* Sivaram et al. (SEMATECH), MRS 1992 — removal-rate and planarity
+  models for ILD CMP.[^sivaram-1992]
+* Cook, *J. Non-Cryst. Solids* 1990 — the chemistry of glass
+  polishing.[^cook-1990]
+* Preston, 1927, and Runnels and Eyman, *J. Electrochem. Soc.* 1994
+  — the removal-rate law and the tribology of the wafer–pad
+  contact.[^preston-1927][^runnels-1994]
+* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — slurry
+  chemistry.[^rev-02]
+* Devriendt et al. (IMEC), *Solid State Phenomena* 1998 — oxide-CMP
+  defects versus post-CMP cleaning.[^devriendt-1998]
+* Philipossian and Sun, *Electrochem. Solid-State Lett.* 2009 — brush
+  design for post-ILD-CMP scrubbing.[^philipossian-2009]
+* Sun, Han and Keswani, 2017 — brush scrubbing reviewed.[^sun-2017]
+* Steigerwald, Murarka and Gutmann; Oliver (ed.); Zantye, Kumar and
+  Sikder — the CMP texts and review.[^steigerwald-1997][^oliver-2004][^zantye-2004]
+* Chow et al. (IBM), US 4,789,648, and Beyer et al. (IBM),
+  US 4,944,836 — the coplanar metal/insulator CMP patents.[^pat-cmp-ibm-1988][^pat-cmp-ibm-1990]
+* Tolles et al. and Birang et al. (Applied Materials), US 5,738,574
+  and US 5,893,796; Lustig et al. (IBM), US 5,433,651 — the Mirra
+  platform and in-situ endpoint.[^pat-cmp-mirra][^pat-cmp-window][^pat-cmp-endpoint-ibm]
 
 ## Open questions
 
-*To be written.*
+* The slurry, pad, removal amount, target oxide thickness over
+  metal 1 and the endpoint method of `CMPM` are not public.
+* How the 0.27 µm via-1 height of the PDK[^pdk-04] is split between
+  the polished NILD3 and the {ref}`NCAPOX3 <step-117>` cap is not
+  public.
+* Whether the 2 000 µm extraction box of the assumptions
+  table[^pdk-03] corresponds to the polish's planarisation length is
+  an inference.
+* The post-CMP cleaning tool is not identified beyond the
+  SEZ/DaVinci single-wafer tools.[^skw-01]
+
+<!-- footnotes -->
+
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
+    diagram), google/skywater-pdk repository.
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
+[^pdk-08]: SkyWater PDK Authors, *Parasitic Layout Extraction* page
+    (resistance and capacitance tables), SkyWater SKY130 PDK
+    documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
+[^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
+    PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^skw-07]: SkyWater Technology, *A Day in the Life of a SkyWater
+    Maintenance Technician*, 2023-12-14.
+    <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
+[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
+    Bloomington, MN* (listing page; *Defect Technician 2* posting),
+    retrieved 2026-08-30.
+    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^pat-cmp-mirra]: R. D. Tolles, N. Shendon, S. Somekh, I. Perlov,
+    E. Gantvarg and H. Q. Lee (Applied Materials), *Continuous
+    processing system for chemical mechanical polishing*,
+    US 5,738,574 A, granted 1998-04-14.
+    <https://patents.google.com/patent/US5738574A/en>
+[^pat-cmp-window]: M. Birang, A. Gleason and W. L. Guthrie (Applied
+    Materials), *Forming a transparent window in a polishing pad for a
+    chemical mechanical polishing apparatus*, US 5,893,796 A, granted
+    1999-04-13. <https://patents.google.com/patent/US5893796A/en>
+[^pat-cmp-endpoint-ibm]: N. E. Lustig, K. L. Saenger and H.-M. Tong
+    (IBM), *In-situ endpoint detection and process monitoring method
+    and apparatus for chemical-mechanical polishing*, US 5,433,651 A,
+    granted 1995-07-18.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5433651>
+[^pat-cmp-ibm-1988]: M. M. Chow, J. E. Cronin, W. L. Guthrie,
+    C. W. Kaanta et al. (IBM), *Method for producing coplanar
+    multi-level metal/insulator films on a substrate and for forming
+    patterned conductive lines simultaneously with stud vias*,
+    US 4,789,648 A, granted 1988-12-06.
+    <https://patents.google.com/patent/US4789648A/en>
+[^pat-cmp-ibm-1990]: K. D. Beyer et al. (IBM), *Chem-mech polishing
+    method for producing coplanar metal/insulator films on a
+    substrate*, US 4,944,836 A, granted 1990.
+    <https://patents.google.com/patent/US4944836A/en>
+[^chiphistory-mirra]: Chip History Center, *The Mirra CMP System by
+    Applied Materials*.
+    <https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>
+[^ebara-frex]: EBARA Precision Machinery Europe, *CMP Tools*
+    (F-REX200M2). <https://www.ebara-pm.eu/systems/cmp-tools/>
+[^wiki-cmp]: Wikipedia, *Chemical-mechanical polishing*.
+    <https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>
+[^wiki-litho]: Wikipedia, *Photolithography*.
+    <https://en.wikipedia.org/wiki/Photolithography>
+[^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+    Deep-Submicron Process Technology*, Lattice Press, 2002,
+    ISBN 978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^txt-07]: M. Quirk and J. Serda, *Semiconductor Manufacturing
+    Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
+    <https://openlibrary.org/isbn/9780130815200>
+[^moon-2016]: Y. Moon, "Chemical and physical mechanisms of dielectric
+    chemical mechanical polishing (CMP)", in *Advances in Chemical
+    Mechanical Planarization (CMP)*, Woodhead Publishing, 2016,
+    pp. 3–26, ISBN 978-0-08-100165-3.
+    <https://doi.org/10.1016/B978-0-08-100165-3.00001-2>
+[^stine-1998]: B. E. Stine, D. O. Ouma, R. R. Divecha, D. S. Boning,
+    J. E. Chung, D. L. Hetherington, C. R. Harwood, O. S. Nakagawa and
+    S.-Y. Oh, "Rapid characterization and modeling of pattern-dependent
+    variation in chemical-mechanical polishing", *IEEE Transactions on
+    Semiconductor Manufacturing* **11**(1), 129–140 (1998).
+    <https://doi.org/10.1109/66.661292>
+[^stine-1998-ted]: B. E. Stine, D. S. Boning, J. E. Chung,
+    L. Camilletti, F. Kruppa, E. R. Equi, W. Loh, S. Prasad,
+    M. Muthukrishnan, D. Towery, M. Berman and A. Kapoor, "The physical
+    and electrical effects of metal-fill patterning practices for oxide
+    chemical-mechanical polishing processes", *IEEE Transactions on
+    Electron Devices* **45**(3), 665–679 (1998).
+    <https://doi.org/10.1109/16.661228>
+[^ouma-2002]: D. O. Ouma, D. S. Boning, J. E. Chung, W. G. Easter,
+    V. Saxena, S. Misra and A. Crevasse, "Characterization and modeling
+    of oxide chemical-mechanical polishing using planarization length
+    and pattern density concepts", *IEEE Transactions on Semiconductor
+    Manufacturing* **15**(2), 232–244 (2002).
+    <https://doi.org/10.1109/66.999598>
+[^boning-1994]: D. S. Boning, T. Maung, J. E. Chung, K.-J. Chang,
+    S.-Y. Oh and D. Bartelink, "Statistical metrology for interlevel
+    dielectric thickness variation", *Proc. SPIE* **2334**, Advanced
+    Microelectronic Manufacturing, 316–327 (1994).
+    <https://doi.org/10.1117/12.186764>
+[^chang-1995]: E. Chang, B. Stine, T. Maung, R. Divecha, D. Boning,
+    J. Chung, K. Chang, G. Ray, D. Bradbury, O. S. Nakagawa, S. Oh and
+    D. Bartelink, "Using a statistical metrology framework to identify
+    systematic and random sources of die- and wafer-level ILD
+    thickness variation in CMP processes", *IEDM 1995 Technical
+    Digest*, pp. 499–502. <https://doi.org/10.1109/IEDM.1995.499247>
+[^sivaram-1992]: S. Sivaram, R. Tolles, H. Bath, E. Lee and
+    R. Leggett, "Chemical Mechanical Polishing of Interlevel
+    Dielectrics: Models for Removal Rate and Planarity", *MRS
+    Proceedings* **260**, 53 (1992). <https://doi.org/10.1557/PROC-260-53>
+[^cook-1990]: L. M. Cook, "Chemical processes in glass polishing",
+    *Journal of Non-Crystalline Solids* **120**(1–3), 152–171 (1990).
+    <https://doi.org/10.1016/0022-3093(90)90200-6>
+[^preston-1927]: F. W. Preston, "The theory and design of plate glass
+    polishing machines", *Journal of the Society of Glass Technology*
+    **11**, 214–256 (1927). No online copy is known.
+[^runnels-1994]: S. R. Runnels and L. M. Eyman, "Tribology Analysis of
+    Chemical-Mechanical Polishing", *Journal of The Electrochemical
+    Society* **141**(6), 1698–1701 (1994).
+    <https://doi.org/10.1149/1.2054985>
+[^rev-02]: M. Krishnan, J. W. Nalaskowski and L. M. Cook, "Chemical
+    Mechanical Planarization: Slurry Chemistry, Materials, and
+    Mechanisms", *Chemical Reviews* **110**(1), 178–204 (2010).
+    <https://doi.org/10.1021/cr900170z>
+[^devriendt-1998]: K. Devriendt, E. Vrancken, N. Heylen, J. Grillaert,
+    M. Meuris, M. M. Heyns and Z. C. Lin, "Relation between Oxide-CMP
+    Induced Defects and Post-CMP Cleaning Strategies", *Solid State
+    Phenomena* **65–66**, 173–176 (1998).
+    <https://doi.org/10.4028/www.scientific.net/SSP.65-66.173>
+[^philipossian-2009]: A. Philipossian and T. Sun, "Frictional Analysis
+    of Various Poly(vinyl alcohol) Brush Roller Designs for
+    Post-Interlevel Dielectric CMP Scrubbing Applications",
+    *Electrochemical and Solid-State Letters* **12**(3), H84 (2009).
+    <https://doi.org/10.1149/1.3058994>
+[^sun-2017]: T. Sun, Z. Han and M. Keswani, "Brush Scrubbing for
+    Post-CMP Cleaning", in *Developments in Surface Contamination and
+    Cleaning, Volume 9*, Elsevier, 2017, pp. 109–133.
+    <https://doi.org/10.1016/B978-0-323-43157-6.00004-5>
+[^steigerwald-1997]: J. M. Steigerwald, S. P. Murarka and R. J. Gutmann,
+    *Chemical Mechanical Planarization of Microelectronic Materials*,
+    Wiley, 1997, ISBN 978-0-471-13827-6.
+    <https://doi.org/10.1002/9783527617746>
+[^oliver-2004]: M. R. Oliver (ed.), *Chemical-Mechanical Planarization
+    of Semiconductor Materials*, Springer Series in Materials Science
+    69, Springer, 2004, ISBN 978-3-540-43181-9.
+    <https://doi.org/10.1007/978-3-662-06234-0>
+[^zantye-2004]: P. B. Zantye, A. Kumar and A. K. Sikder, "Chemical
+    mechanical planarization for microelectronics applications",
+    *Materials Science and Engineering: R* **45**(3–6), 89–220 (2004).
+    <https://doi.org/10.1016/j.mser.2004.06.002>
