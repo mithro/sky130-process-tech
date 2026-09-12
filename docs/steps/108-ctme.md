@@ -366,11 +366,11 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
     **3882**, Process, Equipment, and Materials Control in Integrated
     Circuit Manufacturing V, 231 (1999).
     <https://doi.org/10.1117/12.361313>
-[^cacciato-2003]: A. Cacciato, A. Scarpa, S. Evseev and D. Diekema,
+[^cacciato-2003]: A. Cacciato, A. Scarpa, S. Evseev and M. Diekema,
     "Charging damage during contact etch triggered by increased
-    borderless nitride conductivity", *Proc. 8th International
-    Symposium on Plasma- and Process-Induced Damage (P2ID 2003)*,
-    pp. 20–23. <https://doi.org/10.1109/PPID.2003.1199721>
+    borderless nitride conductivity", *Proc. 2003 8th International
+    Symposium on Plasma- and Process-Induced Damage*, pp. 20–23.
+    <https://doi.org/10.1109/PPID.2003.1199721>
 [^pat-dps-amat]: G. Z. Yin, H. Hanawa, D. X. Ma and D. Olgado (Applied
     Materials), *Plasma reactor with multi-section RF coil and isolated
     conducting lid*, US 5,540,824 A, granted 1996-07-30.

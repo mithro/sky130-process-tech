@@ -23,11 +23,11 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 748
+written page has exactly one entry here; the inventory holds 951
 keyed entries as of 2026-09-12, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10 and 8.11 were added to cover the sources the writers of the
-step and category pages introduced; a "Label ↔ key" note marks the few
+8.8, 8.9, 8.10, 8.11 and 8.12 were added to cover the sources the writers of
+the step and category pages introduced; a "Label ↔ key" note marks the few
 cases where one source has two keys.
 
 :::{note}
@@ -5474,6 +5474,1409 @@ Technology (IWJT 2002)*, pp. 19–22.
 <https://doi.org/10.1109/IWJT.2002.1225190> Drain-current asymmetry in
 130 nm MOSFETs from extension-implant shadowing caused by an implanter
 angle error. Used on steps 064 and 065. Tier: deep dive.
+
+### 8.12 Spacer, source/drain, silicide, local-interconnect and metal-1 module sources
+
+Sources introduced by the writers of the spacer and source/drain module
+(steps 076–088), the pre-metal dielectric and local-interconnect module
+(steps 089–106) and the metal-contact and metal-1 module (steps 107–117)
+that had no entry above. Each label on those pages is the key below in
+lower case; the citation is the one given in the page footnote, and the
+annotation is taken from the citing page's reading list. Grouped by the
+sub-module that first cited the source; an entry names every page that
+uses it. Only the Cypress qualification reports and notification under
+"Metal-1 stack" describe the Bloomington fab; none of the other sources
+describes SkyWater unless the entry says so.
+
+#### Spacer nitride, spacer etch, nitride/poly cut and spacer oxide (steps 076–080)
+
+**CACCIATO-2003** — A. Cacciato, A. Scarpa, S. Evseev and M. Diekema,
+"Charging damage during contact etch triggered by increased borderless
+nitride conductivity", *Proc. 2003 8th International Symposium on
+Plasma- and Process-Induced Damage*, pp. 20–23.
+<https://doi.org/10.1109/PPID.2003.1199721> Charging damage when a
+contact etch meets a borderless nitride. Used on steps 078, 079, 094,
+096, 104 and 108. Tier: deep dive.
+
+**FARHANE-2003** — R. Farhane, F. Salvetti, F. Wacquant, C. Laviron, B.
+Froment, A. Muller, A. Pouydebasque and A. Halimaoui, "Investigation of
+the dose loss during annealing in nitrogen of shallow-implanted
+arsenic", *Proc. 11th IEEE International Conference on Advanced Thermal
+Processing of Semiconductors (RTP 2003)*, pp. 173–176.
+<https://doi.org/10.1109/RTP.2003.1249144> Arsenic dose loss during
+nitrogen anneals. Used on steps 080, 086 and 088. Tier: deep dive.
+
+**GOSS-1997** — M. Goss and R. Thornburg, "The challenges of nitride
+spacer processing for a 0.35 μm CMOS technology", *1997 IEEE/SEMI
+Advanced Semiconductor Manufacturing Conference and Workshop (ASMC 97)
+Proceedings*, pp. 228–233. <https://doi.org/10.1109/ASMC.1997.630740>
+Integrating a nitride spacer into a 0.35 µm CMOS technology. Used on
+steps 076 and 077. Tier: deep dive.
+
+**GUMPHER-2004** — J. Gumpher, W. Bather, N. Mehta and D. Wedel,
+"Characterization of Low-Temperature Silicon Nitride LPCVD from
+Bis(tertiary-butylamino)silane and Ammonia", *Journal of The
+Electrochemical Society* **151**(5), G353 (2004).
+<https://doi.org/10.1149/1.1690294> BTBAS low-temperature LPCVD nitride.
+Used on steps 076 and 104. Tier: deep dive.
+
+**HUGHEY-2003** — M. P. Hughey and R. F. Cook, "Irreversible Tensile
+Stress Development in PECVD Silicon Nitride Films", *MRS Proceedings*
+**795** (2003). <https://doi.org/10.1557/PROC-795-U1.6> Irreversible
+stress change in PECVD nitride on heating. Used on steps 076 and 104.
+Tier: deep dive.
+
+**HWANG-1996** — H. Hwang, D.-H. Lee and J. M. Hwang, "Effect of Nitride
+Sidewall Spacer on Hot Carrier Reliability Characteristics of MOSFET's",
+*Extended Abstracts of the 1996 International Conference on Solid State
+Devices and Materials*, PC-4-6 (1996).
+<https://doi.org/10.7567/SSDM.1996.PC-4-6> Nitride spacer versus
+hot-carrier reliability. Used on step 076. Tier: deep dive.
+
+**ITO-2000** — S. Ito, H. Namba, K. Yamaguchi, T. Hirata, K. Ando, S.
+Koyama, S. Kuroki, N. Ikezawa, T. Suzuki, T. Saitoh and T. Horiuchi,
+"Mechanical stress effect of etch-stop nitride and its impact on deep
+submicron transistor design", *IEDM 2000 Technical Digest*, pp. 247–250.
+<https://doi.org/10.1109/IEDM.2000.904303> Nitride film stress as a
+channel-strain variable. Used on steps 076, 078 and 104. Tier: deep
+dive.
+
+**JANAPATY-1998** — V. Janapaty, J.-Y. Tsai and S. Prasad, "Enhanced
+hot-carrier-induced degradation of 0.25-μm P-MOSFETs with oxide/nitride
+composite spacer compared to those with oxide spacer", *Proc. SPIE*
+**3510**, Microelectronic Manufacturing, 225 (1998).
+<https://doi.org/10.1117/12.324387> Oxide/nitride composite versus oxide
+spacers on 0.25 µm PMOS. Used on steps 076 and 080. Tier: deep dive.
+
+**JOUBERT-1997** — O. Joubert and F. H. Bell, "Polysilicon Gate Etching
+in High-Density Plasmas: Comparison Between Oxide Hard Mask and Resist
+Mask", *Journal of The Electrochemical Society* **144**(5), 1854–1861
+(1997). <https://doi.org/10.1149/1.1837690> Resist and oxide masks over
+poly in high-density plasmas. Used on step 079. Tier: deep dive.
+
+**KASTENMEIER-1996** — B. E. E. Kastenmeier, P. J. Matsuo, J. J. Beulens
+and G. S. Oehrlein, "Chemical dry etching of silicon nitride and silicon
+dioxide using CF₄/O₂/N₂ gas mixtures", *Journal of Vacuum Science &
+Technology A* **14**(5), 2802–2813 (1996).
+<https://doi.org/10.1116/1.580203> Nitride and oxide etching in
+CF₄/O₂/N₂. Used on steps 077, 079 and 108. Tier: deep dive.
+
+**KRIEGER-1989** — G. Krieger, G. Spadini, P. Cuevas and J. Schuur,
+"Shadowing effects due to tilted arsenic source/drain implant", *IEEE
+Transactions on Electron Devices* **36**(11), 2458–2461 (1989).
+<https://doi.org/10.1109/16.43667> Shadowing of a tilted source/drain
+implant by the gate and spacer. Used on steps 077, 082, 083 and 086.
+Tier: deep dive.
+
+**LEE-CHEN-1983** — Y. H. Lee and M.-M. Chen, "Silicon etching mechanism
+and anisotropy in CF₄+O₂ plasma", *Journal of Applied Physics*
+**54**(10), 5966–5973 (1983). <https://doi.org/10.1063/1.331774>
+Mechanism and anisotropy in CF₄+O₂ plasmas. Used on steps 077 and 079.
+Tier: deep dive.
+
+**LIM-1993** — D. Lim, S.-H. Yang, S. Morris and A. F. Tasch, "An
+accurate and computationally-efficient model of boron implantation
+through screen oxide layers into (100) single-crystal silicon", *IEDM
+1993 Technical Digest*, pp. 291–294.
+<https://doi.org/10.1109/IEDM.1993.347350> A model of boron implantation
+through screen oxide into (100) silicon. Used on steps 080 and 082.
+Tier: deep dive.
+
+**MCANDREW-1994** — C. C. McAndrew, G. Zaneski, P. Layman and S. Ayyar,
+"Accurate characterization of MOSFET overlap/fringing capacitance for
+circuit design", *Proc. 1994 IEEE International Conference on
+Microelectronic Test Structures*, pp. 15–20.
+<https://doi.org/10.1109/ICMTS.1994.303510> Overlap/fringing capacitance
+models in which the spacer's permittivity appears. Used on step 076.
+Tier: deep dive.
+
+**MIZUNO-1989** — T. Mizuno, T. Kobori, Y. Saitoh, S. Sawada and T.
+Tanaka, "High dielectric LDD spacer technology for high performance
+MOSFET using gate-fringing field effects", *IEDM 1989 Technical Digest*,
+pp. 613–616. <https://doi.org/10.1109/IEDM.1989.74355> High-permittivity
+spacers and the gate-fringing field. Used on step 076. Tier: deep dive.
+
+**NG-1986** — K. K. Ng and W. T. Lynch, "Analysis of the
+gate-voltage-dependent series resistance of MOSFET's", *IEEE
+Transactions on Electron Devices* **33**(7), 965–972 (1986).
+<https://doi.org/10.1109/T-ED.1986.22602> Series resistance of the
+un-silicided extension under the spacer, and why it limits scaling. Used
+on steps 076, 077, 082 and 086. Tier: deep dive.
+
+**NG-1987** — K. K. Ng and W. T. Lynch, "The impact of intrinsic series
+resistance on MOSFET scaling", *IEEE Transactions on Electron Devices*
+**34**(3), 503–511 (1987). <https://doi.org/10.1109/T-ED.1987.22956>
+Series resistance of the un-silicided extension under the spacer, and
+why it limits scaling. Used on step 076. Tier: deep dive.
+
+**OM-1995** — J.-C. Om, M.-S. Jo, H.-S. Park, I.-S. Chung and W.-S. Min,
+"Source/drain junction leakage current of LDD NMOSFET with various
+spacer materials", *Proc. 1995 International Conference on
+Microelectronic Test Structures*, pp. 177–180.
+<https://doi.org/10.1109/ICMTS.1995.513968> Junction leakage versus
+spacer material. Used on steps 076 and 077. Tier: deep dive.
+
+**PARK-1991** — C. Park, K. M. Klein, A. F. Tasch, R. B. Simonton and G.
+E. Lux, "Paradoxical boron profile broadening caused by implantation
+through a screen oxide layer", *IEDM 1991 Technical Digest*, pp. 67–70.
+<https://doi.org/10.1109/IEDM.1991.235422> Boron profile broadening from
+a screen oxide. Used on steps 080 and 082. Tier: deep dive.
+
+**PELLETIER-2008** — B. Pelletier, M. Juhel, C. Trouiller, D. Beucher,
+J. Autran and P. Morin, "Boron out-diffusion mechanism in oxide and
+nitride CMOS sidewall spacer: Impact of the materials properties",
+*Materials Science and Engineering: B* **154–155**, 252–255 (2008).
+<https://doi.org/10.1016/j.mseb.2008.09.025> Boron out-diffusion into
+oxide and nitride spacers. Used on steps 080 and 088. Tier: deep dive.
+
+**PFIESTER-1988** — J. R. Pfiester, "LDD MOSFETs using disposable
+sidewall spacer technology", *IEEE Electron Device Letters* **9**(4),
+189–192 (1988). <https://doi.org/10.1109/55.685> Disposable-spacer
+alternatives, in which the spacer is removed after the implant. Used on
+step 077. Tier: deep dive.
+
+**PFIESTER-1990-EDL** — J. R. Pfiester, L. C. Parrillo, M. Woo, H.
+Kawasaki, B. Boeck, E. Travis and C. D. Gunderson, "An advanced 0.5-μm
+CMOS disposable TiN LDD/salicide spacer process", *IEEE Electron Device
+Letters* **11**(7), 318–320 (1990). <https://doi.org/10.1109/55.56487>
+Disposable-spacer alternatives, in which the spacer is removed after the
+implant. Used on step 077. Tier: deep dive.
+
+**REINHARDT-1992** — K. A. Reinhardt and F. M. Dumesnil,
+"Characterization of silicon damage during LDD oxide spacer etch with
+the use of thermal-wave-modulated reflectance", *Proc. SPIE* **1593**,
+Dry Etch Technology, 32–46 (1992). <https://doi.org/10.1117/12.56913>
+Silicon damage from an LDD spacer etch measured by thermal-wave
+reflectance. Used on step 077. Tier: deep dive.
+
+**SAMBONSUGI-1998** — Y. Sambonsugi and T. Sugii, "Hot-carrier
+degradation mechanism and promising device design of nMOSFETs with
+nitride sidewall spacer", *1998 IEEE International Reliability Physics
+Symposium Proceedings*, pp. 184–188.
+<https://doi.org/10.1109/RELPHY.1998.670531> Hot-carrier mechanism of
+NMOS with nitride spacers. Used on step 076. Tier: deep dive.
+
+**SHIBAHARA-1998** — K. Shibahara, H. Furumoto, K. Egusa, M. Koh and S.
+Yokoyama, "Dopant Loss Origins of Low Energy Implanted Arsenic and
+Antimony for Ultra Shallow Junction Formation", *MRS Proceedings*
+**532** (1998). <https://doi.org/10.1557/PROC-532-23> Origins of dopant
+loss for low-energy arsenic and antimony. Used on steps 080 and 086.
+Tier: deep dive.
+
+**SHIMAYA-1995** — M. Shimaya, "Water diffusion model for the
+enhancement of hot-carrier-induced degradation due to silicon nitride
+passivation in submicron MOSFET's", *33rd IEEE International Reliability
+Physics Symposium Proceedings* (1995), pp. 292–296.
+<https://doi.org/10.1109/RELPHY.1995.513694> Water diffusion through
+nitride and hot-carrier degradation. Used on steps 076 and 104. Tier:
+deep dive.
+
+**SHIMIZU-2001** — A. Shimizu, K. Hachimine, N. Ohki, H. Ohta, M.
+Koguchi, Y. Nonaka, H. Sato and F. Ootsuka, "Local mechanical-stress
+control (LMC): a new technique for CMOS-performance enhancement", *IEDM
+2001 Technical Digest*, pp. 19.4.1–19.4.4.
+<https://doi.org/10.1109/IEDM.2001.979529> Nitride film stress as a
+channel-strain variable. Used on steps 076 and 104. Tier: deep dive.
+
+**SHRIVASTAVA-1982** — R. Shrivastava and K. Fitzpatrick, "A simple
+model for the overlap capacitance of a VLSI MOS device", *IEEE
+Transactions on Electron Devices* **29**(12), 1870–1875 (1982).
+<https://doi.org/10.1109/T-ED.1982.21044> Overlap/fringing capacitance
+models in which the spacer's permittivity appears. Used on steps 076 and
+080. Tier: deep dive.
+
+**SMITH-2005** — J. W. Smith, S. M. Seutter and R. S. Iyer, "Thermal
+Chemical Vapor Deposition of Bis(Tertiary-Butylamino)Silane-based
+Silicon Nitride Thin Films", *Journal of The Electrochemical Society*
+**152**(4), G316 (2005). <https://doi.org/10.1149/1.1870792> BTBAS
+low-temperature LPCVD nitride. Used on step 076. Tier: deep dive.
+
+**TANG-1985** — T. E. Tang, C.-C. Wei, R. A. Haken, T. C. Holloway,
+C.-F. Wan and M. A. Douglas, "VLSI local interconnect level using
+titanium nitride", *IEDM 1985 Technical Digest*, pp. 590–593.
+<https://doi.org/10.1109/IEDM.1985.191041> The TiN local-interconnect
+scheme in which a nitride over poly is opened only where contacts are
+made. Used on steps 078, 079, 094 and 101. Tier: deep dive.
+
+**TANG-1987** — T. E. Tang, C.-C. Wei, R. A. Haken, T. C. Holloway, L.
+R. Hite and T. G. W. Blake, "Titanium nitride local interconnect
+technology for VLSI", *IEEE Transactions on Electron Devices* **34**(3),
+682–688 (1987). <https://doi.org/10.1109/T-ED.1987.22980> The TiN
+local-interconnect scheme in which a nitride over poly is opened only
+where contacts are made. Used on steps 078, 079, 101, 102 and 103. Tier:
+deep dive.
+
+**TSANG-1982** — P. J. Tsang, S. Ogura, W. W. Walker, J. F. Shepard and
+D. L. Critchlow, "Fabrication of high-performance LDDFET's with oxide
+sidewall-spacer technology", *IEEE Transactions on Electron Devices*
+**29**(4), 590–596 (1982). <https://doi.org/10.1109/T-ED.1982.20748> The
+oxide sidewall-spacer process: conformal deposition plus anisotropic
+etch-back. Used on steps 076, 077, 080, 082 and 086. Tier: deep dive.
+
+**TUDA-2004** — M. Tuda, K. Shintani and J. Tanimura, "Highly Selective
+Removal of Residual Deposited Films and Oxide Hard Masks on Polysilicon
+Gate Electrodes in Anhydrous HF Gases", *Japanese Journal of Applied
+Physics* **43**(3R), 945 (2004). <https://doi.org/10.1143/JJAP.43.945>
+Selective removal of hard masks and residues from poly gates. Used on
+step 079. Tier: deep dive.
+
+
+#### Source/drain implant masks, implants, strips and activation anneal (steps 081–088)
+
+**ADACHI-2001** — K. Adachi, K. Ohuchi and Y. Toyoshima, "Combination of
+germanium preamorphization and sub-keV boron implantation for
+source/drain extension of pMOSFETs", *Extended Abstracts of the Second
+International Workshop on Junction Technology* (2001), pp. 35–38.
+<https://doi.org/10.1109/IWJT.2001.993821> Ge PAI with sub-keV boron for
+PMOS extensions. Used on steps 082 and 083. Tier: deep dive.
+
+**AGARWAL-2000** — A. Agarwal, "Ultra-shallow junction formation using
+conventional ion implantation and rapid thermal annealing", *Proc. 2000
+International Conference on Ion Implantation Technology*, pp. 293–299.
+<https://doi.org/10.1109/IIT.2000.924147> Ultra-shallow junctions by
+conventional implantation and RTA. Used on step 088. Tier: deep dive.
+
+**ANGELUCCI-1985** — R. Angelucci, G. Celotti, D. Nobili and S. Solmi,
+"Precipitation and Diffusivity of Arsenic in Silicon", *Journal of The
+Electrochemical Society* **132**(11), 2726–2730 (1985).
+<https://doi.org/10.1149/1.2113654> Arsenic precipitation and
+diffusivity. Used on step 086. Tier: deep dive.
+
+**AUGENDRE-2001** — E. Augendre, A. De Keersgieter, S. Kubicek, A.
+Redolfi, J. Van Laer and G. Badenes, "Arsenic and Phosphorus
+co-Implantation for Deep Submicron CMOS Gate and Source/Drain
+Engineering", *Proc. 31st European Solid-State Device Research
+Conference (ESSDERC 2001)*, pp. 115–118.
+<https://doi.org/10.1109/ESSDERC.2001.195214> As/P co-implantation for
+gate and source/drain engineering. Used on steps 083 and 086. Tier: deep
+dive.
+
+**BOURDELLE-2000** — K. K. Bourdelle, H.-J. Gossmann, S. Chaudhry and A.
+Agarwal, "Comparison of B and BF₂ source/drain extension implants for
+PMOS transistors with thin gate oxides", *Proc. 2000 International
+Conference on Ion Implantation Technology*, pp. 25–27.
+<https://doi.org/10.1109/IIT.2000.924081> B versus BF₂ for PMOS
+junctions with thin gate oxides. Used on steps 082 and 083. Tier: deep
+dive.
+
+**CAMILLO-CASTILLO-2002** — R. A. Camillo-Castillo, K. S. Jones, M. E.
+Law and L. M. Rubin, "Study of the Effects of a Two-Step Anneal on the
+End of Range Defects in Silicon", *MRS Proceedings* **717** (2002).
+<https://doi.org/10.1557/PROC-717-C1.4> Two-step anneals and
+end-of-range defects. Used on steps 088 and 092. Tier: deep dive.
+
+**CARPENTER-2002** — N. Carpenter and T. Fecteau, "Process and
+productivity improvements during high pressure photoresist outgassing",
+*Proc. 14th International Conference on Ion Implantation Technology*
+(2002), pp. 507–510. <https://doi.org/10.1109/IIT.2002.1258053>
+Productivity during high-pressure resist outgassing. Used on steps 081
+and 084. Tier: deep dive.
+
+**CHEN-2002-RTP** — D. Chen, D. DeWitt, B. Tsai, K. Kreider and W.
+Kimes, "Effects of wafer emissivity on rapid thermal processing
+temperature measurement", *Proc. 10th IEEE International Conference on
+Advanced Thermal Processing of Semiconductors (RTP 2002)*, pp. 59–67.
+<https://doi.org/10.1109/RTP.2002.1039440> Temperature control and
+emissivity in RTP. Used on steps 088 and 092. Tier: deep dive.
+
+**CURRENT-1996-IIT** — M. I. Current, M. Vella and W. Lukaszek,
+"Beam-plasma concepts for wafer charging control during ion
+implantation", *Proc. 11th International Conference on Ion Implantation
+Technology* (1996), pp. 53–56. <https://doi.org/10.1109/IIT.1996.586119>
+Wafer charging and flood-gun control during high-current implants. Used
+on step 082. Tier: deep dive.
+
+**CURRENT-1998** — M. I. Current, M. Foad, S. Brown, W. Lukaszek and M.
+Vella, "Photoresist effects on wafer charging control: current-voltage
+characteristics measured with Charm-2 monitors during high-current As⁺
+implantation", *Proc. 1998 International Conference on Ion Implantation
+Technology*, vol. 1, pp. 490–493.
+<https://doi.org/10.1109/IIT.1999.812159> Charging control during
+high-current arsenic implants. Used on step 086. Tier: deep dive.
+
+**DIXON-1996** — W. Dixon, W. Lukaszek and C. Heden,
+"Photoresist-enhanced wafer charging during high current ion
+implantation", *Proc. 11th International Conference on Ion Implantation
+Technology* (1996), pp. 85–88. <https://doi.org/10.1109/IIT.1996.586134>
+Resist-enhanced wafer charging during high-current implants. Used on
+steps 081, 082 and 083. Tier: deep dive.
+
+**GERRITSEN-2000** — E. Gerritsen, "Spike anneal: RTP processing at
+reduced thermal budget with applications to TiSi₂ formation towards
+0.1-μm linewidths", *Microelectronic Engineering* **50**(1–4), 147–151
+(2000). <https://doi.org/10.1016/S0167-9317(99)00275-0> The spike
+anneal. Used on step 088. Tier: deep dive.
+
+**JEON-1989** — Y.-J. Jeon, M. F. Becker and R. M. Walser,
+"Concentration Dependence of Arsenic on Solid Phase Epitaxial Regrowth
+of Amorphous Silicon", *MRS Proceedings* **157** (1989).
+<https://doi.org/10.1557/PROC-157-745> Solid-phase epitaxial regrowth
+and its arsenic-concentration dependence. Used on steps 086 and 088.
+Tier: deep dive.
+
+**JONES-1996** — M. Jones and F. Sinclair, "Across-wafer channeling
+variations on batch implanters: a graphical technique to analyze
+spinning disk systems", *Proc. 11th International Conference on Ion
+Implantation Technology* (1996), pp. 264–267.
+<https://doi.org/10.1109/IIT.1996.586257> Channelling variation across a
+spinning-disc batch implanter. Used on steps 082 and 086. Tier: deep
+dive.
+
+**JOSSE-2002** — E. Josse, F. Arnaud, F. Wacquant, D. Lenoble, O. Menut
+and E. Robilliart, "Spike Anneal Optimization for Digital and Analogue
+High Performance 0.13 μm CMOS Platform", *Proc. 32nd European
+Solid-State Device Research Conference (ESSDERC 2002)*, pp. 207–210.
+<https://doi.org/10.1109/ESSDERC.2002.194906> Source/drain and
+spike-anneal optimisation for a 0.13 µm platform. Used on steps 083 and
+088. Tier: deep dive.
+
+**LEE-1999-EDL** — H.-D. Lee and Y.-J. Lee, "Arsenic and phosphorus
+double ion implanted source/drain junction for 0.25- and sub-0.25-μm
+MOSFET technology", *IEEE Electron Device Letters* **20**(1), 42–44
+(1999). <https://doi.org/10.1109/55.737568> An As/P double-implanted
+source/drain for 0.25 µm, the n-type analogue. Used on steps 083 and
+086. Tier: deep dive.
+
+**LIFSHITZ-1985** — N. Lifshitz, "Dependence of the work-function
+difference between the polysilicon gate and silicon substrate on the
+doping level in polysilicon", *IEEE Transactions on Electron Devices*
+**32**(3), 617–621 (1985). <https://doi.org/10.1109/T-ED.1985.21987>
+Poly gate work function versus doping. Used on step 082. Tier: deep
+dive.
+
+**LUNING-1992** — S. Luning, P. M. Rousseau, P. B. Griffin, P. G. Carey
+and J. D. Plummer, "Kinetics of high concentration arsenic deactivation
+at moderate to low temperatures", *IEDM 1992 Technical Digest*, pp.
+457–460. <https://doi.org/10.1109/IEDM.1992.307400> Kinetics of arsenic
+deactivation. Used on steps 086, 088 and 092. Tier: deep dive.
+
+**MATSUDA-2002** — T. Matsuda, S. Shishiguchi and H. Kitajima, "Ultra
+Shallow Junction Formation with High Process Controllability Using
+Optimized Rapid Thermal Anneal Process", *Japanese Journal of Applied
+Physics* **41**(2A), 451–457 (2002).
+<https://doi.org/10.1143/JJAP.41.451> An optimised RTA for shallow
+junctions. Used on step 088. Tier: deep dive.
+
+**MEHTA-1996** — S. Mehta, B. Axan, S. Walther and S. Felch,
+"Investigation of negative charging with plasma flood gun (PFG) during
+high current implantation", *Proc. 11th International Conference on Ion
+Implantation Technology* (1996), pp. 73–76.
+<https://doi.org/10.1109/IIT.1996.586128> Wafer charging and flood-gun
+control during high-current implants. Used on steps 082 and 086. Tier:
+deep dive.
+
+**MEZACK-2000** — G. Mezack, T. Callahan, S. Mehta and U. Jeong,
+"Advantages of the Varian VIISta single wafer high current ion implanter
+for advanced device fabrication", *Proc. 2000 International Conference
+on Ion Implantation Technology*, pp. 431–434.
+<https://doi.org/10.1109/IIT.2000.924180> The single-wafer high-current
+implanter alternative. Used on steps 082, 083 and 086. Tier: deep dive.
+
+**OGURA-1982** — S. Ogura, C. F. Codella, N. Rovedo, J. F. Shepard and
+J. Riseman, "A half micron MOSFET using double implanted LDD", *IEDM
+1982 Technical Digest*, pp. 718–721.
+<https://doi.org/10.1109/IEDM.1982.190395> The double-implanted LDD, two
+implants to grade one junction. Used on step 083. Tier: deep dive.
+
+**OZTURK-1988** — M. C. Öztürk, J. J. Wortman, C. M. Osburn, A. Ajmera,
+G. A. Rozgonyi, E. Frey, W.-K. Chu and C. Lee, "Optimization of the
+germanium preamorphization conditions for shallow-junction formation",
+*IEEE Transactions on Electron Devices* **35**(5), 659–668 (1988).
+<https://doi.org/10.1109/16.2510> Germanium pre-amorphisation for
+shallow p⁺ junctions. Used on steps 082 and 083. Tier: deep dive.
+
+**ROMIG-1996** — T. Romig, M. Bishop and V. Rio, "Exploration and
+prevention of photo resist burning in a high current ion implanter",
+*Proc. 11th International Conference on Ion Implantation Technology*
+(1996), pp. 190–193. <https://doi.org/10.1109/IIT.1996.586181> Resist
+burning in a high-current implanter. Used on steps 081, 082, 084, 085
+and 086. Tier: deep dive.
+
+**ROUSSEAU-1996** — P. M. Rousseau, P. B. Griffin, S. C. Kuehne and J.
+D. Plummer, "Enhanced diffusion by electrical deactivation of arsenic
+and its implications for bipolar devices", *IEEE Transactions on
+Electron Devices* **43**(4), 547–553 (1996).
+<https://doi.org/10.1109/16.485536> Arsenic deactivation as an
+interstitial source and its device consequences. Used on step 086. Tier:
+deep dive.
+
+**SORRELL-1993** — F. Y. Sorrell and R. S. Gyurcsik, "Model-based
+emissivity correction in pyrometer temperature control of rapid thermal
+processing systems", *IEEE Transactions on Semiconductor Manufacturing*
+**6**(3), 273–276 (1993). <https://doi.org/10.1109/66.238178>
+Temperature control and emissivity in RTP. Used on steps 088, 092 and
+098. Tier: deep dive.
+
+**VANDENABEELE-1998** — P. Vandenabeele and W. Renken, "Model Based
+Temperature Control in RTP Yielding ±0.1 °C accuracy on A 1000 °C, 2
+second, 100 °C/s Spike Anneal", *MRS Proceedings* **525** (1998).
+<https://doi.org/10.1557/PROC-525-109> Temperature control and
+emissivity in RTP. Used on steps 088 and 092. Tier: deep dive.
+
+
+#### Sacrificial PSG, CMP over poly, cap oxide and second anneal (steps 089–092)
+
+**ADAMS-1981** — A. C. Adams and C. D. Capio, "Planarization of
+Phosphorus-Doped Silicon Dioxide", *Journal of The Electrochemical
+Society* **128**(2), 423–429 (1981). <https://doi.org/10.1149/1.2127434>
+Planarisation versus phosphorus content and anneal. Used on step 089.
+Tier: deep dive.
+
+**ADAMS-1981-PECVD** — A. C. Adams, F. B. Alexander, C. D. Capio and T.
+E. Smith, "Characterization of Plasma-Deposited Silicon Dioxide",
+*Journal of The Electrochemical Society* **128**(7), 1545–1551 (1981).
+<https://doi.org/10.1149/1.2127680> Characterisation of plasma-deposited
+silicon dioxide. Used on steps 091, 092, 096 and 105. Tier: deep dive.
+
+**ALVI-1986** — N. S. Alvi and D. L. Kwong, "Reflow of Phosphosilicate
+Glass by Rapid Thermal Annealing", *Journal of The Electrochemical
+Society* **133**(12), 2626–2631 (1986).
+<https://doi.org/10.1149/1.2108492> Reflow of PSG by rapid thermal
+annealing. Used on step 092. Tier: deep dive.
+
+**ARMSTRONG-1974** — W. E. Armstrong and D. L. Tolliver, "A Scanning
+Electron Microscope Investigation of Glass Flow in MOS Integrated
+Circuit Fabrication", *Journal of The Electrochemical Society*
+**121**(2), 307 (1974). <https://doi.org/10.1149/1.2401803> The original
+SEM study of PSG flow over MOS topography. Used on step 089. Tier: deep
+dive.
+
+**BECKER-ROHL-1987** — F. S. Becker and S. Röhl, "Low Pressure
+Deposition of Doped SiO₂ by Pyrolysis of Tetraethylorthosilicate (TEOS):
+I. Boron and Phosphorus Doped Films", *Journal of The Electrochemical
+Society* **134**(11), 2923–2931 (1987).
+<https://doi.org/10.1149/1.2100314> TEOS-based doped oxides by LPCVD.
+Used on step 089. Tier: deep dive.
+
+**BIBBY-1998** — T. Bibby and K. Holland, "Endpoint detection for CMP",
+*Journal of Electronic Materials* **27**(10), 1073–1081 (1998).
+<https://doi.org/10.1007/s11664-998-0140-1> Endpoint detection for CMP.
+Used on steps 090, 100 and 106. Tier: deep dive.
+
+**CHEN-2002-PSG** — S. Chen, C.-Y. Fu, S.-M. Jang, C.-H. Yu and M.-S.
+Liang, "Plasma damage reduction for high density plasma CVD
+phosphosilicate glass process", *Proc. 7th International Symposium on
+Plasma- and Process-Induced Damage* (2002), pp. 76–79.
+<https://doi.org/10.1109/PPID.2002.1042613> Plasma damage from an HDP
+PSG process and its reduction. Used on step 089. Tier: deep dive.
+
+**DAUBENSPECK-1991** — T. H. Daubenspeck, J. K. DeBrosse, C. W.
+Koburger, M. Armacost and J. R. Abernathey, "Planarization of ULSI
+Topography over Variable Pattern Densities", *Journal of The
+Electrochemical Society* **138**(2), 506–509 (1991).
+<https://doi.org/10.1149/1.2085619> Planarisation over variable pattern
+densities. Used on steps 090 and 106. Tier: deep dive.
+
+**DAVARI-1989** — B. Davari, C. W. Koburger, R. Schulz, J. D. Warnock,
+T. Furukawa, M. Jost, Y. Taur, W. G. Schwittek, J. K. DeBrosse, M. L.
+Kerbaugh and J. L. Mauer, "A new planarization technique, using a
+combination of RIE and chemical mechanical polish (CMP)", *IEDM 1989
+Technical Digest*, pp. 61–64. <https://doi.org/10.1109/IEDM.1989.74228>
+RIE plus CMP planarisation of the inter-level dielectric. Used on steps
+090 and 106. Tier: deep dive.
+
+**FUJINO-1990** — K. Fujino, Y. Nishimoto, N. Tokumasu and K. Maeda,
+"Silicon Dioxide Deposition by Atmospheric Pressure and Low-Temperature
+CVD Using TEOS and Ozone", *Journal of The Electrochemical Society*
+**137**(9), 2883–2887 (1990). <https://doi.org/10.1149/1.2087093>
+TEOS/ozone oxide at atmospheric pressure. Used on step 091. Tier: deep
+dive.
+
+**FUJINO-1991** — K. Fujino, Y. Nishimoto, N. Tokumasu and K. Maeda,
+"Doped Silicon Oxide Deposition by Atmospheric Pressure and Low
+Temperature Chemical Vapor Deposition Using Tetraethoxysilane and
+Ozone", *Journal of The Electrochemical Society* **138**(10), 3019–3024
+(1991). <https://doi.org/10.1149/1.2085358> Doped oxide from TEOS and
+ozone. Used on step 089. Tier: deep dive.
+
+**HASHIMOTO-1977** — N. Hashimoto, Y. Yatsuda and S. Mutoh, "Glass Flow
+Mechanism of Phosphosilicate Glass and Its Application in MOS Devices",
+*Japanese Journal of Applied Physics* **16**(S1), 73 (1977).
+<https://doi.org/10.7567/JJAPS.16S1.73> The glass-flow mechanism and its
+use in MOS devices. Used on step 089. Tier: deep dive.
+
+**HSIAO-2005** — W.-C. Hsiao, C.-P. Liu and Y.-L. Wang, "Influence of
+thermal budget on phosphosilicate glass prepared by high-density plasma
+chemical-vapor deposition", *Journal of Vacuum Science & Technology B*
+**23**(5), 2146–2150 (2005). <https://doi.org/10.1116/1.2050670> HDP PSG
+mechanism and thermal budget. Used on steps 089, 091 and 092. Tier: deep
+dive.
+
+**KERN-1991** — W. Kern and J. Hartman, "Simultaneous deposition and
+fusion flow planarization of borophosphosilicate glass in a new chemical
+vapor deposition reactor", *Thin Solid Films* **206**(1–2), 64–69
+(1991). <https://doi.org/10.1016/0040-6090(91)90394-D> Simultaneous
+deposition and flow of BPSG. Used on step 089. Tier: deep dive.
+
+**KWOK-1994** — K. Kwok, E. Yieh, S. Robles and B. C. Nguyen, "Surface
+Related Phenomena in Integrated PECVD/Ozone-TEOS SACVD Processes for
+Sub-Half Micron Gap Fill: Electrostatic Effects", *Journal of The
+Electrochemical Society* **141**(8), 2172–2177 (1994).
+<https://doi.org/10.1149/1.2055081> Integrated PECVD/ozone-TEOS films
+and their surface effects. Used on steps 091 and 105. Tier: deep dive.
+
+**LAN-2004** — J. K. Lan and Y. L. Wang, "Mechanism of high density
+plasma chemical vapor deposition phosphosilicate glass process without
+in-situ plasma chamber clean", *Thin Solid Films* **469–470**, 438–443
+(2004). <https://doi.org/10.1016/j.tsf.2004.06.193> HDP PSG mechanism
+and thermal budget. Used on step 089. Tier: deep dive.
+
+**LEVIN-1982** — R. M. Levin, "Water Absorption and Densification of
+Phosphosilicate Glass Films", *Journal of The Electrochemical Society*
+**129**(8), 1765–1770 (1982). <https://doi.org/10.1149/1.2124289> Water
+absorption and densification of PSG films. Used on steps 089, 091, 092
+and 096. Tier: deep dive.
+
+**MAXIM-1994** — M. Maxim, M. Moinpour, J. Chu, H. Nguyen, P. Freiberger
+and N. Stenton, "Borophosphosilicate Glass (BPSG) Fusion Using Rapid
+Thermal Annealing and Steam Reflow: Physical Properties and Device
+Implications", *MRS Proceedings* **342** (1994).
+<https://doi.org/10.1557/PROC-342-289> BPSG fusion and implant
+activation in one RTA. Used on step 092. Tier: deep dive.
+
+**MEEK-1974** — R. L. Meek and C. F. Gibbon, "Preliminary Results of an
+Ion Scattering Study of Phosphosilicate Glass Gettering", *Journal of
+The Electrochemical Society* **121**(3), 444 (1974).
+<https://doi.org/10.1149/1.2401834> PSG gettering studied by ion
+scattering. Used on steps 089 and 092. Tier: deep dive.
+
+**MIYAZAKI-1994** — H. Miyazaki, H. Kojima, A. Hiraiwa, Y. Homma and K.
+Murakami, "Improved Phosphosilicate Glass Passivation Against Cu
+Contamination Using the Rapid Thermal Annealing Process", *Journal of
+The Electrochemical Society* **141**(3), 734–736 (1994).
+<https://doi.org/10.1149/1.2054801> PSG as a barrier to copper
+contamination. Used on steps 089 and 092. Tier: deep dive.
+
+**NANZ-1995** — G. Nanz and L. E. Camilletti, "Modeling of
+chemical-mechanical polishing: a review", *IEEE Transactions on
+Semiconductor Manufacturing* **8**(4), 382–389 (1995).
+<https://doi.org/10.1109/66.475179> The removal-rate law and a review of
+CMP models. Used on steps 090 and 106. Tier: deep dive.
+
+**NGUYEN-1990** — S. Nguyen, D. Dobuzinsky, D. Harmon, R. Gleason and S.
+Fridmann, "Reaction Mechanisms of Plasma- and Thermal-Assisted Chemical
+Vapor Deposition of Tetraethylorthosilicate Oxide Films", *Journal of
+The Electrochemical Society* **137**(7), 2209–2215 (1990).
+<https://doi.org/10.1149/1.2086914> Reaction mechanisms of plasma and
+thermal TEOS oxide deposition. Used on steps 091 and 105. Tier: deep
+dive.
+
+**PAULSON-1974** — W. M. Paulson and R. W. Kirk, "The Effects of
+Phosphorus-Doped Passivation Glass on the Corrosion of Aluminum", *12th
+International Reliability Physics Symposium* (1974), pp. 172–179.
+<https://doi.org/10.1109/IRPS.1974.362644> Phosphorus content and
+aluminium corrosion. Used on steps 089 and 091. Tier: deep dive.
+
+**THAR-1993** — R. P. S. Thar, F. Gonzalez, R. Hawthorne, V. Ward and N.
+Jeng, "Reduced Thermal Budget Borophosphosilicate Glass (BPSG) Fusion
+and Implant Activation Using Rapid Thermal Annealing and Steam Reflow",
+*MRS Proceedings* **303** (1993). <https://doi.org/10.1557/PROC-303-283>
+BPSG fusion and implant activation in one RTA. Used on step 092. Tier:
+deep dive.
+
+
+#### Local-interconnect contact lithography, etch, sacrificial etch and alloy (steps 093–096)
+
+**BROWER-1990** — K. L. Brower, "Dissociation kinetics of
+hydrogen-passivated (111) Si-SiO₂ interface defects", *Physical Review
+B* **42**(6), 3444–3453 (1990).
+<https://doi.org/10.1103/PhysRevB.42.3444> Dissociation kinetics of
+hydrogen-passivated interface defects. Used on step 096. Tier: deep
+dive.
+
+**CHEN-1999-PSM** — Y.-T. Chen, Y.-C. Wang and R. Chu, "Optimization of
+attenuated phase-shift mask for contact hole printing", *Proc. SPIE*
+**3679**, Optical Microlithography XII, 812 (1999).
+<https://doi.org/10.1117/12.354399> Attenuated PSM optimisation for
+contact holes. Used on step 093. Tier: deep dive.
+
+**COBB-1995** — N. B. Cobb and A. Zakhor, "Fast sparse aerial-image
+calculation for OPC", *Proc. SPIE* **2621**, 534–545 (1995).
+<https://doi.org/10.1117/12.228208> Rules-based, model-based and fast
+aerial-image OPC. Used on steps 093 and 102. Tier: deep dive.
+
+**DOEMLING-1996** — M. F. Doemling, N. R. Rueger and G. S. Oehrlein,
+"Observation of inverse reactive ion etching lag for silicon dioxide
+etching in inductively coupled plasmas", *Applied Physics Letters*
+**68**(1), 10–12 (1996). <https://doi.org/10.1063/1.116772> Inverse RIE
+lag. Used on steps 094 and 108. Tier: deep dive.
+
+**FONASH-1990** — S. J. Fonash, "An Overview of Dry Etching Damage and
+Contamination Effects", *Journal of The Electrochemical Society*
+**137**(12), 3885–3892 (1990). <https://doi.org/10.1149/1.2086322> Etch
+damage and contamination. Used on steps 094 and 095. Tier: deep dive.
+
+**JOUBERT-1994** — O. Joubert, G. S. Oehrlein and M. Surendra,
+"Fluorocarbon high density plasma. VI. Reactive ion etching lag model
+for contact hole silicon dioxide etching in an electron cyclotron
+resonance plasma", *Journal of Vacuum Science & Technology A* **12**(3),
+665–670 (1994). <https://doi.org/10.1116/1.578850> RIE-lag model for
+contact holes. Used on step 094. Tier: deep dive.
+
+**MAES-1981** — H. E. Maes, S. H. Usmani and G. L. Heyns, "Effects of a
+high-temperature hydrogen anneal on the memory retention of
+metal-nitride-oxide-silicon transistors at elevated temperatures",
+*Journal of Applied Physics* **52**(6), 4348–4350 (1981).
+<https://doi.org/10.1063/1.329266> Hydrogen anneals and nitride-memory
+retention. Used on step 096. Tier: deep dive.
+
+**MORITA-1990** — M. Morita, T. Ohmi, E. Hasegawa, M. Kawakami and M.
+Ohwada, "Growth of native oxide on a silicon surface", *Journal of
+Applied Physics* **68**(3), 1272–1281 (1990).
+<https://doi.org/10.1063/1.347181> Native oxide regrowth on silicon, the
+queue-time constraint. Used on steps 095 and 096. Tier: deep dive.
+
+**OEHRLEIN-1994-II** — G. S. Oehrlein, Y. Zhang, D. Vender and O.
+Joubert, "Fluorocarbon high-density plasmas. II. Silicon dioxide and
+silicon etching using CF₄ and CHF₃", *Journal of Vacuum Science &
+Technology A* **12**(2), 333–344 (1994).
+<https://doi.org/10.1116/1.578877> Fluorocarbon films in high-density
+oxide etching. Used on step 094. Label ↔ key: the same article is cited
+as `oehrlein-1994b` on step 108 (OEHRLEIN-1994B). Tier: deep dive.
+
+**PANKOVE-1983** — J. I. Pankove, D. E. Carlson, J. E. Berkeyheiser and
+R. O. Wance, "Neutralization of Shallow Acceptor Levels in Silicon by
+Atomic Hydrogen", *Physical Review Letters* **51**(24), 2224–2225
+(1983). <https://doi.org/10.1103/PhysRevLett.51.2224> Hydrogen
+deactivation of boron, the side-effect that bounds the recipe. Used on
+step 096. Tier: deep dive.
+
+**RANGAN-1998** — S. Rangan, S. Krishnan and S. Ashok, "Process-induced
+damage — a study of hydrogen and deuterium passivation", *Proc. 1998 3rd
+International Symposium on Plasma Process-Induced Damage*, pp. 213–216.
+<https://doi.org/10.1109/PPID.1998.725612> Hydrogen and deuterium
+passivation of process-induced damage. Used on step 096. Tier: deep
+dive.
+
+**RUEGER-1997** — N. R. Rueger, J. J. Beulens, M. Schaepkens, M. F.
+Doemling, J. M. Mirza, T. E. F. M. Standaert and G. S. Oehrlein, "Role
+of steady state fluorocarbon films in the etching of silicon dioxide
+using CHF₃ in an inductively coupled plasma reactor", *Journal of Vacuum
+Science & Technology A* **15**(4), 1881–1889 (1997).
+<https://doi.org/10.1116/1.580655> Fluorocarbon films in high-density
+oxide etching. Used on step 094. Tier: deep dive.
+
+**SAH-1983** — C.-T. Sah, J. Y.-C. Sun and J. J.-T. Tzou, "Deactivation
+of the boron acceptor in silicon by hydrogen", *Applied Physics Letters*
+**43**(2), 204–206 (1983). <https://doi.org/10.1063/1.94287> Hydrogen
+deactivation of boron, the side-effect that bounds the recipe. Used on
+step 096. Tier: deep dive.
+
+**SCHAEPKENS-1999** — M. Schaepkens, T. E. F. M. Standaert, N. R.
+Rueger, P. G. M. Sebel, G. S. Oehrlein and J. M. Cook, "Study of the
+SiO₂-to-Si₃N₄ etch selectivity mechanism in inductively coupled
+fluorocarbon plasmas and a comparison with the SiO₂-to-Si mechanism",
+*Journal of Vacuum Science & Technology A* **17**(1), 26–37 (1999).
+<https://doi.org/10.1116/1.582108> The SiO₂-to-Si₃N₄ selectivity
+mechanism. Used on steps 094, 104 and 108. Tier: deep dive.
+
+**STESMANS-1996** — A. Stesmans, "Passivation of P_b0 and P_b1 interface
+defects in thermal (100) Si/SiO₂ with molecular hydrogen", *Applied
+Physics Letters* **68**(15), 2076–2078 (1996).
+<https://doi.org/10.1063/1.116308> Passivation of P_b0 and P_b1 centres
+by molecular hydrogen. Used on step 096. Tier: deep dive.
+
+**YANG-1998** — C.-H. Yang and C.-M. Dai, "Resist and oxide thickness
+effect on process window for 0.2-μm contact patterns with off-axis
+illumination and attenuated phase-shift mask", *Proc. SPIE* **3334**,
+Optical Microlithography XI, 553 (1998).
+<https://doi.org/10.1117/12.310784> Process window of 0.2 µm contacts
+with OAI and attenuated PSM. Used on step 093. Tier: deep dive.
+
+
+#### Ti/TiN liner, contact silicide, tungsten fill and LI tungsten CMP (steps 097–100)
+
+**BERG-2005** — S. Berg and T. Nyberg, "Fundamental understanding and
+modeling of reactive sputtering processes", *Thin Solid Films*
+**476**(2), 215–230 (2005). <https://doi.org/10.1016/j.tsf.2004.10.051>
+Reactive sputtering model and hysteresis. Used on steps 097, 101 and
+109. Tier: deep dive.
+
+**BIELMANN-1999** — M. Bielmann et al., "Effect of Particle Size during
+Tungsten Chemical Mechanical Polishing", *Electrochemical and
+Solid-State Letters* **2**(8), 401 (1999).
+<https://doi.org/10.1149/1.1390851> Particle size in tungsten CMP. Used
+on step 100. Tier: deep dive.
+
+**ELBEL-1998** — N. Elbel, B. Neureither, B. Ebersberger and P. Lahnor,
+"Tungsten Chemical Mechanical Polishing", *Journal of The
+Electrochemical Society* **145**(5), 1659–1664 (1998).
+<https://doi.org/10.1149/1.1838533> Tungsten chemical mechanical
+polishing. Used on steps 100, 110 and 111. Tier: deep dive.
+
+**HOPWOOD-1998** — J. Hopwood, "Ionized physical vapor deposition of
+integrated circuit interconnects", *Physics of Plasmas* **5**(5),
+1624–1631 (1998). <https://doi.org/10.1063/1.872829> Ionised PVD for
+interconnects. Used on step 097. Tier: deep dive.
+
+**KIM-2004** — S.-H. Kim, E.-S. Hwang, S.-Y. Han, S.-H. Pyi, N. Kwak, H.
+Sohn, J. Kim and G. B. Choi, "Pulsed CVD of Tungsten Thin Film as a
+Nucleation Layer for Tungsten Plug-Fill", *Electrochemical and
+Solid-State Letters* **7**(9), G195 (2004).
+<https://doi.org/10.1149/1.1784053> Pulsed CVD tungsten nucleation for
+plug fill. Used on step 099. Tier: deep dive.
+
+**KLEIJN-1991** — C. R. Kleijn, C. J. Hoogendoorn, A. Hasper, J.
+Holleman and J. Middelhoek, "Transport Phenomena in Tungsten LPCVD in a
+Single-Wafer Reactor", *Journal of The Electrochemical Society*
+**138**(2), 509–517 (1991). <https://doi.org/10.1149/1.2085620>
+Transport phenomena in a single-wafer tungsten reactor. Used on step
+099. Tier: deep dive.
+
+**KOERNER-1993** — H. Koerner, H. P. Erb and H. Melzner, "Evaluation of
+Ti and TiN thicknesses for tungsten plug contact metallization",
+*Applied Surface Science* **73**, 6–13 (1993).
+<https://doi.org/10.1016/0169-4332(93)90139-3> Ti and TiN thicknesses
+for tungsten-plug contacts. Used on steps 097, 098 and 099. Tier: deep
+dive.
+
+**LEE-2001-WCMP** — W.-S. Lee, S.-Y. Kim, Y.-J. Seo and J.-K. Lee, "An
+optimization of tungsten plug chemical mechanical polishing (CMP) using
+different consumables", *Journal of Materials Science: Materials in
+Electronics* **12**(1), 63–68 (2001).
+<https://doi.org/10.1023/A:1011276830620> Plug CMP optimisation across
+consumables. Used on step 100. Tier: deep dive.
+
+**MANN-1995** — R. W. Mann, L. A. Clevenger, P. D. Agnello and F. R.
+White, "Silicides and local interconnections for high-performance VLSI
+applications", *IBM Journal of Research and Development* **39**(4),
+403–417 (1995). <https://doi.org/10.1147/rd.394.0403> Silicides and
+local interconnections together. Used on steps 098 and 101. Tier: deep
+dive.
+
+**MCCONICA-1986** — C. M. McConica and K. Krishnamani, "The Kinetics of
+LPCVD Tungsten Deposition in a Single Wafer Reactor", *Journal of The
+Electrochemical Society* **133**(12), 2542–2548 (1986).
+<https://doi.org/10.1149/1.2108468> Kinetics of LPCVD tungsten in a
+single-wafer reactor. Used on steps 099 and 110. Tier: deep dive.
+
+**MCCONICA-1988** — C. M. McConica and K. Cooper, "Tungsten Nucleation
+on Thermal Oxide during LPCVD of Tungsten by the Hydrogen Reduction of
+Tungsten Hexafluoride", *Journal of The Electrochemical Society*
+**135**(4), 1003–1008 (1988). <https://doi.org/10.1149/1.2095756>
+Tungsten nucleation on thermal oxide. Used on steps 099 and 110. Tier:
+deep dive.
+
+**MORGAN-1985** — A. E. Morgan, E. K. Broadbent and A. H. Reader,
+"Formation of Titanium Nitride/Silicide Bilayers by Rapid Thermal Anneal
+in Nitrogen", *MRS Proceedings* **52** (1985).
+<https://doi.org/10.1557/PROC-52-279> TiN/TiSi₂ bilayers by RTA in
+nitrogen. Used on step 098. Tier: deep dive.
+
+**NICOLET-1978** — M.-A. Nicolet, "Diffusion barriers in thin films",
+*Thin Solid Films* **52**(3), 415–443 (1978).
+<https://doi.org/10.1016/0040-6090(78)90184-0> Diffusion barriers in
+microelectronics in general. Used on step 097. Tier: deep dive.
+
+**OHTO-1996** — K. Ohto, K. Urabe, T. Taguwa, S. Chikaki and T. Kikkawa,
+"A novel TiN/Ti contact plug technology for gigabit scale DRAM using
+Ti-PECVD and TiN-LPCVD", *IEDM 1996 Technical Digest*, pp. 361–364.
+<https://doi.org/10.1109/IEDM.1996.553603> A TiN/Ti contact-plug
+technology. Used on step 098. Tier: deep dive.
+
+**PAT-PNL-NOVELLUS** — S.-H. Lee and J. Collins (Novellus Systems),
+*Method for producing ultra-thin tungsten layers with improved step
+coverage*, US 6,635,965 B1, filed 2001-10-09, granted 2003-10-21.
+<https://patents.google.com/patent/US6635965B1/en> The pulsed nucleation
+layer. Used on steps 099 and 110. Tier: cross-check.
+
+**PETRI-1998** — R. Petri, H. Hauf, D. Berenbaum, J. C. Favreau and P.
+Mazet, "Nitrogen effect on post-nucleation tungsten CVD film growth",
+*Proc. IEEE 1998 International Interconnect Technology Conference*, pp.
+202–204. <https://doi.org/10.1109/IITC.1998.704792> Nitrogen and
+post-nucleation tungsten growth. Used on step 099. Tier: deep dive.
+
+**PETROV-2003** — I. Petrov, P. B. Barna, L. Hultman and J. E. Greene,
+"Microstructural evolution during film growth", *Journal of Vacuum
+Science & Technology A* **21**(5), S117–S128 (2003).
+<https://doi.org/10.1116/1.1601610> Microstructural evolution during
+film growth. Used on steps 097 and 101. Tier: deep dive.
+
+**ROSSNAGEL-1991** — S. M. Rossnagel, D. Mikalsen, H. Kinoshita and J.
+J. Cuomo, "Collimated magnetron sputter deposition", *Journal of Vacuum
+Science & Technology A* **9**(2), 261–265 (1991).
+<https://doi.org/10.1116/1.577531> Collimated magnetron sputter
+deposition. Used on steps 097, 109 and 112. Tier: deep dive.
+
+**ROSSNAGEL-1993** — S. M. Rossnagel and J. Hopwood, "Magnetron sputter
+deposition with high levels of metal ionization", *Applied Physics
+Letters* **63**(24), 3285–3287 (1993).
+<https://doi.org/10.1063/1.110176> Ionised magnetron sputtering and
+metal-ion deposition. Used on steps 097 and 109. Tier: deep dive.
+
+**RYAN-1995** — J. G. Ryan, S. B. Brodsky, T. Katata, M. Honda, N. Shoda
+and H. Aochi, "Collimated Sputtering of Titanium and Titanium Nitride
+Films", *MRS Bulletin* **20**(11), 42–45 (1995).
+<https://doi.org/10.1557/S0883769400045553> Collimated sputtering of Ti
+and TiN. Used on step 097. Tier: deep dive.
+
+**SCHRODER-1984** — D. K. Schroder and D. L. Meier, "Solar cell contact
+resistance — A review", *IEEE Transactions on Electron Devices*
+**31**(5), 637–647 (1984). <https://doi.org/10.1109/T-ED.1984.21583>
+Contact-resistance models and measurement. Used on step 098. Tier: deep
+dive.
+
+**SRINIVAS-1992** — D. Srinivas, R. Foster, S. Marcus, R. Arora and H.
+Rebenne, "Nucleation of Tungsten on Titanium Nitride with Hydrogen
+Reduction of Tungsten Hexafluoride", *MRS Proceedings* **282** (1992).
+<https://doi.org/10.1557/PROC-282-365> Tungsten nucleation on TiN. Used
+on steps 097, 099, 109 and 110. Tier: deep dive.
+
+**SUE-1999** — L. Sue, J. Lültzen and S. Gonzales, "Tungsten Chemical
+Mechanical Polishing Endpoint Detection", *MRS Proceedings* **566**, 109
+(1999). <https://doi.org/10.1557/PROC-566-109> Tungsten CMP endpoint
+detection. Used on steps 100 and 111. Tier: deep dive.
+
+**SUNDGREN-1985** — J.-E. Sundgren, "Structure and properties of TiN
+coatings", *Thin Solid Films* **128**(1–2), 21–44 (1985).
+<https://doi.org/10.1016/0040-6090(85)90333-5> Structure and properties
+of TiN coatings. Used on steps 097, 101 and 109. Tier: deep dive.
+
+**TRIPATHI-1994** — S. Tripathi and F. Moghadam, "Development of a
+Silane Rich CVD Tungsten Process", *MRS Proceedings* **337** (1994).
+<https://doi.org/10.1557/PROC-337-561> A silane-rich CVD tungsten
+process. Used on step 099. Tier: deep dive.
+
+**VARAHRAMYAN-1996** — K. Varahramyan and E. J. Verret, "A model for
+specific contact resistance applicable for titanium silicide-silicon
+contacts", *Solid-State Electronics* **39**(11), 1601–1607 (1996).
+<https://doi.org/10.1016/0038-1101(96)00091-3> Specific contact
+resistance of TiSi₂–silicon contacts. Used on step 098. Tier: deep dive.
+
+**WANG-2002-WCMP** — C.-K. Wang, H.-S. Wu, N.-T. Ou and H.-C. Cheng,
+"Integrated Tungsten Chemical Mechanical Polishing Process
+Characterization for Via Plug Interconnection in Ultralarge Scale
+Integrated Circuits", *Japanese Journal of Applied Physics* **41**(8R),
+5120–5124 (2002). <https://doi.org/10.1143/JJAP.41.5120> Integrated
+tungsten CMP for via plugs. Used on step 100. Tier: deep dive.
+
+**WITTMER-1980** — M. Wittmer, "TiN and TaN as diffusion barriers in
+metallizations to silicon semiconductor devices", *Applied Physics
+Letters* **36**(6), 456–458 (1980). <https://doi.org/10.1063/1.91505>
+TiN as a diffusion barrier. Used on step 097. Tier: deep dive.
+
+**YOO-1999** — W. S. Yoo, A. J. Atanos and D. M. Whitworth, "Titanium
+Silicide Formation and Anneal Using a Susceptor-Based Low Pressure Rapid
+Thermal Processing System", *Japanese Journal of Applied Physics*
+**38**(3B), L304 (1999). <https://doi.org/10.1143/JJAP.38.L304> TiSi₂
+formation in a low-pressure RTP system. Used on step 098. Tier: deep
+dive.
+
+
+#### Local-interconnect TiN, mask, etch and nitride cap (steps 101–104)
+
+**BELL-1988** — H. B. Bell, H. M. Anderson and R. W. Light, "Reactive
+Ion Etching of Aluminum/Silicon in BBr₃/Cl₂ and BCl₃/Cl₂ Mixtures",
+*Journal of The Electrochemical Society* **135**(5), 1184–1191 (1988).
+<https://doi.org/10.1149/1.2095919> Reactive ion etching in BCl₃/Cl₂
+mixtures. Used on step 103. Tier: deep dive.
+
+**BOUMERZOUG-1997** — M. Boumerzoug, H. Xu, R. Bersin, P. Mascher and G.
+Balcaitis, "Removal of Titanium Oxide Grown on Titanium Nitride and
+Reduction of VIA Contact Resistance using a Modern Plasma Asher", *MRS
+Proceedings* **495** (1997). <https://doi.org/10.1557/PROC-495-345>
+Oxide on TiN and via contact resistance. Used on step 101. Tier: deep
+dive.
+
+**LIAO-2004** — H. Liao, P. S. Lee, L. N. L. Goh, H. Liu, J. L.
+Sudijono, Q. Elgin and C. Sanford, "The impact of etch-stop layer for
+borderless contacts on deep submicron CMOS device performance — a
+comparative study", *Thin Solid Films* **462–463**, 29–33 (2004).
+<https://doi.org/10.1016/j.tsf.2004.05.035> Etch-stop layers for
+borderless contacts and device performance. Used on step 104. Tier: deep
+dive.
+
+**MIN-2008** — S. R. Min, H. N. Cho, Y. L. Li, S. K. Lim, S. P. Choi and
+C. W. Chung, "Inductively coupled plasma reactive ion etching of
+titanium nitride thin films in a Cl₂/Ar plasma", *Journal of Industrial
+and Engineering Chemistry* **14**(3), 297–302 (2008).
+<https://doi.org/10.1016/j.jiec.2008.01.001> TiN etching in a Cl₂/Ar
+inductively coupled plasma. Used on step 103. Tier: deep dive.
+
+**PAT-LI-TI-HAKEN** — R. A. Haken and T. C. Holloway (Texas
+Instruments), *VLSI local interconnect structure*, US 4,821,085 A, filed
+1985-05-01, granted 1989-04-11.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4821085>
+The VLSI local interconnect structure. Used on step 101. Tier: deep
+dive.
+
+**PAT-LI-TI-HOLLOWAY** — T. C. Holloway, T. E. Tang, C.-C. Wei, R. A.
+Haken and D. A. Bell (Texas Instruments), *Process for patterning local
+interconnects*, US 4,657,628 A, filed 1986-03-07, granted 1987-04-14.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4657628>
+The process for patterning local interconnects. Used on steps 101 and
+103. Tier: deep dive.
+
+**PAT-TIN-ETCH-TI** — M. A. Douglas (Texas Instruments), *TiN etch
+process*, US 4,675,073 A, filed 1986-03-07, granted 1987-06-23.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4675073>
+A fluorine-deficient plasma etch of TiN selective to titanium silicide.
+Used on step 103. Tier: deep dive.
+
+**WHITE-1992** — White, Hill, Eslinger, Payne, Cote, Chen and Johnson,
+"Damascene stud local interconnect in CMOS technology", *IEDM 1992
+Technical Digest*, pp. 301–304.
+<https://doi.org/10.1109/IEDM.1992.307365> A damascene-stud local
+interconnect, the alternative structure. Used on step 101. Tier: deep
+dive.
+
+
+#### ILD2 oxide and CMP over local interconnect (steps 105–106)
+
+
+#### Metal contact mask, etch, TiN liner, tungsten fill and CMP (steps 107–111)
+
+**COBURN-1989** — J. W. Coburn and H. F. Winters, "Conductance
+considerations in the reactive ion etching of high aspect ratio
+features", *Applied Physics Letters* **55**(26), 2730–2732 (1989).
+<https://doi.org/10.1063/1.101937> Conductance limits in
+high-aspect-ratio feature etching. Used on step 108. Tier: deep dive.
+
+**FUKUDA-1987** — H. Fukuda, N. Hasegawa, T. Tanaka and T. Hayashida, "A
+new method for enhancing focus latitude in optical lithography: FLEX",
+*IEEE Electron Device Letters* **8**(4), 179–180 (1987).
+<https://doi.org/10.1109/EDL.1987.26594> FLEX, the focus-latitude
+enhancement used for contact holes. Used on step 107. Tier: deep dive.
+
+**HAMAGUCHI-1996** — S. Hamaguchi and S. M. Rossnagel, "Liner
+conformality in ionized magnetron sputter metal deposition processes",
+*Journal of Vacuum Science & Technology B* **14**(4), 2603–2608 (1996).
+<https://doi.org/10.1116/1.588993> Liner conformality in ionised
+sputtering, modelled. Used on step 109. Tier: deep dive.
+
+**HEGDE-1997** — R. I. Hegde, P. J. Tobin, S. Sitaram and J. Klein,
+"Thin Film Properties of Tungsten Nucleation Layer in Blanket Tungsten
+Deposition", *Journal of The Electrochemical Society* **144**(3),
+1087–1090 (1997). <https://doi.org/10.1149/1.1837536> Properties of the
+nucleation layer in blanket tungsten deposition. Used on step 110. Tier:
+deep dive.
+
+**HOPWOOD-1992** — J. Hopwood, "Review of inductively coupled plasmas
+for plasma processing", *Plasma Sources Science and Technology*
+**1**(2), 109–116 (1992). <https://doi.org/10.1088/0963-0252/1/2/006>
+The inductively coupled plasma sources behind IMP. Used on step 109.
+Tier: deep dive.
+
+**JOLLEY-1998** — R. Jolley, "Applications of Tetramethylammoninium
+Hydroxide (TMAH) as a Post Tungsten CMP Cleaning Mixture", *Solid State
+Phenomena* **65–66**, 105–108 (1998).
+<https://doi.org/10.4028/www.scientific.net/SSP.65-66.105> TMAH as a
+post-tungsten-CMP clean. Used on step 111. Tier: deep dive.
+
+**KNEER-1997** — E. A. Kneer, C. Raghunath, V. Mathew, S. Raghavan and
+J. S. Jeon, "Electrochemical Measurements during the Chemical Mechanical
+Polishing of Tungsten Thin Films", *Journal of The Electrochemical
+Society* **144**(9), 3041–3049 (1997).
+<https://doi.org/10.1149/1.1837956> Electrochemistry of tungsten during
+polishing. Used on step 111. Tier: deep dive.
+
+**LEVY-1986** — R. A. Levy and M. L. Green, "Low Pressure Chemical Vapor
+Deposition of Tungsten and Aluminum for VLSI Applications", *MRS
+Proceedings* **71** (1986). <https://doi.org/10.1557/PROC-71-229> LPCVD
+tungsten and aluminium for VLSI. Used on step 110. Tier: deep dive.
+
+**LU-1999** — P. Lu, W. Cui, R. Thomas and S. Mansfield, "Selection of
+attenuated phase shift mask compatible contact hole resists for KrF
+optical lithography", *Proc. SPIE* **3678**, Advances in Resist
+Technology and Processing XVI, 923 (1999).
+<https://doi.org/10.1117/12.350280> Choosing contact-hole resists
+compatible with an attenuated PSM at KrF. Used on step 107. Tier: deep
+dive.
+
+**MAO-2004** — D. Mao and J. Hopwood, "Ionized physical vapor deposition
+of titanium nitride: A deposition model", *Journal of Applied Physics*
+**96**(1), 820–828 (2004). <https://doi.org/10.1063/1.1753663> A
+deposition model for ionised PVD of titanium nitride. Used on step 109.
+Tier: deep dive.
+
+**OEHRLEIN-1994B** — G. S. Oehrlein, Y. Zhang, D. Vender and O. Joubert,
+"Fluorocarbon high-density plasmas. II. Silicon dioxide and silicon
+etching using CF₄ and CHF₃", *Journal of Vacuum Science & Technology A*
+**12**(2), 333–344 (1994). <https://doi.org/10.1116/1.578877> Oxide and
+silicon etching in CF₄/CHF₃ high-density plasmas. Used on step 108.
+Label ↔ key: the same article is cited as `oehrlein-1994-ii` on step 094
+(OEHRLEIN-1994-II). Tier: deep dive.
+
+**PAT-CMP-CABOT** — Cabot Corporation, *Composition and slurry useful
+for metal CMP*, US 5,958,288 A, filed 1996-11-26, granted 1999-09-28.
+<https://patents.google.com/patent/US5958288A/en> A
+peroxide/ferric-catalyst tungsten slurry. Used on step 111. Tier:
+cross-check.
+
+**PAT-HCM-NOVELLUS** — K. F. Lai (Novellus Systems), *Apparatus and
+method for controlling plasma uniformity across a substrate*, US
+6,179,973 B1, filed 1999-06-30, granted 2001-01-30.
+<https://patents.google.com/patent/US6179973B1/en> The
+hollow-cathode-magnetron ionised PVD source, a competing design. Used on
+step 109. Tier: deep dive.
+
+**PERRY-2001** — A. J. Perry, R. W. Waters, T. J. Barela and H. M.
+Anderson, "Oxide etch behavior in a high-density, low-pressure,
+inductively coupled C₂F₆ plasma: Etch rates, selectivity to photoresist,
+and the effect of dc bias", *Journal of Vacuum Science & Technology A*
+**19**(5), 2272–2281 (2001). <https://doi.org/10.1116/1.1382874> Oxide
+etch rates and selectivity in a high-density C₂F₆ plasma. Used on step
+108. Tier: deep dive.
+
+**SHIOYA-1987** — Y. Shioya, T. Ikegami, M. Maeda and K. Yanagida,
+"High-temperature stress measurement on chemical-vapor-deposited
+tungsten silicide and tungsten films", *Journal of Applied Physics*
+**61**(2), 561–566 (1987). <https://doi.org/10.1063/1.338259> Stress of
+CVD tungsten films at temperature. Used on step 110. Tier: deep dive.
+
+**SOCHA-2004** — R. Socha, D. Van Den Broeke, S. Hsu, J. F. Chen et al.,
+"Contact hole reticle optimization by using interference mapping
+lithography (IML)", *Proc. SPIE* **5377**, Optical Microlithography
+XVII, 222 (2004). <https://doi.org/10.1117/12.536581> Contact-hole
+reticle optimisation with assist features by interference mapping. Used
+on step 107. Tier: deep dive.
+
+**STEIN-1998** — D. Stein, D. Hetherington, T. Guilinger and J. L.
+Cecchi, "In Situ Electrochemical Investigation of Tungsten
+Electrochemical Behavior during Chemical Mechanical Polishing", *Journal
+of The Electrochemical Society* **145**(9), 3190–3196 (1998).
+<https://doi.org/10.1149/1.1838785> In-situ electrochemistry of tungsten
+during CMP. Used on step 111. Tier: deep dive.
+
+**TOYOSHIMA-1998** — T. Toyoshima, T. Ishibashi, T. Minanide, K. Sugino
+et al., "0.1 μm level contact hole pattern formation with KrF
+lithography by resolution enhancement lithography assisted by chemical
+shrink (RELACS)", *IEDM 1998 Technical Digest*, pp. 333–336.
+<https://doi.org/10.1109/IEDM.1998.746367> Chemical shrink (RELACS) for
+0.1 µm-class holes with KrF. Used on step 107. Tier: deep dive.
+
+**VLASSAK-2001** — J. J. Vlassak, "A Contact-Mechanics Based Model for
+Dishing and Erosion in Chemical-Mechanical Polishing", *MRS Proceedings*
+**671**, M4.6 (2001). <https://doi.org/10.1557/PROC-671-M4.6> A
+contact-mechanics model of dishing and erosion. Used on step 111. Tier:
+deep dive.
+
+**WITTMER-1985** — M. Wittmer, "Properties and microelectronic
+applications of thin films of refractory metal nitrides", *Journal of
+Vacuum Science & Technology A* **3**(4), 1797–1803 (1985).
+<https://doi.org/10.1116/1.573382> Refractory-metal nitrides as barriers
+in microelectronics. Used on step 109. Tier: deep dive.
+
+**WODECKI-1999** — N. Wodecki, "Low open area multilayered dielectric
+film etch endpoint detection using EndPoint Plus", *Proc. SPIE*
+**3882**, Process, Equipment, and Materials Control in Integrated
+Circuit Manufacturing V, 231 (1999). <https://doi.org/10.1117/12.361313>
+Endpoint detection on low-open-area dielectric etches. Used on step 108.
+Tier: deep dive.
+
+**WONG-2001** — A. K.-K. Wong, *Resolution Enhancement Techniques in
+Optical Lithography*, SPIE Tutorial Texts TT47, SPIE Press, 2001, ISBN
+978-0-8194-7881-8. <https://doi.org/10.1117/3.401208> The SPIE text on
+PSM, OPC and off-axis illumination. Used on steps 107 and 113. Tier:
+deep dive.
+
+**YAMAMOTO-2000** — K. Yamamoto, S. Kobayashi, T. Uno and T. Kotani,
+"Hierarchical optical proximity correction on contact hole layers",
+*Digest of Papers, Microprocesses and Nanotechnology 2000*, pp. 40–41.
+<https://doi.org/10.1109/IMNC.2000.872612> Hierarchical OPC on
+contact-hole layers. Used on step 107. Tier: deep dive.
+
+
+#### Metal-1 stack, mask, etch, ILD3, CMP and cap oxide (steps 112–117)
+
+**BONING-1994** — D. S. Boning, T. Maung, J. E. Chung, K.-J. Chang,
+S.-Y. Oh and D. Bartelink, "Statistical metrology for interlevel
+dielectric thickness variation", *Proc. SPIE* **2334**, Advanced
+Microelectronic Manufacturing, 316–327 (1994).
+<https://doi.org/10.1117/12.186764> Statistical metrology of ILD
+thickness variation. Used on steps 116 and 117. Tier: deep dive.
+
+**BYUN-2005** — K.-M. Byun, D.-H. Kim, Y.-W. Cha, S.-H. Lee et al.,
+"Reduction of plasma-induced damage during intermetal dielectric
+deposition in high-density plasma", *Proc. 2005 International Conference
+on Integrated Circuit Design and Technology (ICICDT)*, pp. 99–102.
+<https://doi.org/10.1109/ICICDT.2005.1502601> Reducing plasma damage
+during HDP inter-metal dielectric deposition. Used on step 115. Tier:
+deep dive.
+
+**CHANG-1995** — E. Chang, B. Stine, T. Maung, R. Divecha, D. Boning, J.
+Chung, K. Chang, G. Ray, D. Bradbury, O. S. Nakagawa, S. Oh and D.
+Bartelink, "Using a statistical metrology framework to identify
+systematic and random sources of die- and wafer-level ILD thickness
+variation in CMP processes", *IEDM 1995 Technical Digest*, pp. 499–502.
+<https://doi.org/10.1109/IEDM.1995.499247> Statistical metrology of ILD
+thickness variation. Used on steps 116 and 117. Tier: deep dive.
+
+**CHAUDHARI-1974** — P. Chaudhari, "Hillock growth in thin films",
+*Journal of Applied Physics* **45**(10), 4339–4346 (1974).
+<https://doi.org/10.1063/1.1663054> Hillock growth in thin films. Used
+on step 115. Tier: deep dive.
+
+**CHEN-1989** — C.-H. Chen, S. DeOrnellas and B. Burke, "Plasma Etching
+of Aluminum Alloys in BCl₃/Cl₂ Plasmas", in *Semiconductor Fabrication:
+Technology and Metrology*, ASTM STP 990, ASTM International, 1989, pp.
+202–211. <https://doi.org/10.1520/STP26039S> Plasma etching of aluminium
+alloys in BCl₃/Cl₂. Used on step 114. Tier: deep dive.
+
+**CHENG-2002** — M. Cheng and A. R. Neureuther, "Effects of residual
+aberrations on line-end shortening in 193-nm lithography", *Proc. SPIE*
+**4691**, Optical Microlithography XV, 1421 (2002).
+<https://doi.org/10.1117/12.474526> Line-end shortening from residual
+aberrations. Used on step 113. Tier: deep dive.
+
+**CHUN-1996** — J.-S. Chun, C.-K. Bok and K.-H. Baik, "Reduction of
+substrate dependency of chemically amplified resist", *Proc. SPIE*
+**2724**, Advances in Resist Technology and Processing XIII, 92 (1996).
+<https://doi.org/10.1117/12.241877> The substrate effect in chemically
+amplified resists and its reduction. Used on step 113. Tier: deep dive.
+
+**COOPERBERG-2002** — D. J. Cooperberg, V. Vahedi and R. A. Gottscho,
+"Semiempirical profile simulation of aluminum etching in a Cl₂/BCl₃
+plasma", *Journal of Vacuum Science & Technology A* **20**(5), 1536–1556
+(2002). <https://doi.org/10.1116/1.1494818> Profile simulation of
+aluminium etching in Cl₂/BCl₃. Used on step 114. Tier: deep dive.
+
+**CYP-PIN145273** — Cypress Semiconductor, *Product Information
+Notification PIN145273: Improvement of Cypress Minnesota
+Back-End-of-Line Integration for 130nm SONOS Product Families*, document
+001-11741 Rev. *H, 2014-03-13 (copy hosted by Tokyo Electron Device).
+<https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>
+The product-change notification that carries the QTP 123907 report and
+calls the TiW stack the "internal Cypress Minnesota process". Used on
+step 112. Tier: cross-check.
+
+**CYP-QTP-014807** — Cypress Semiconductor, *Technology Derivative
+Qualification Report, QTP# 014807 Version 2.0: Technology Derivative
+R7FT-3R, Fab4, Synchronous Dual-Port RAM*, June 2005 (copy hosted by
+Infineon Technologies).
+<https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
+R7FT-3R "Hot Al" derivative at Fab 4: 150 Å Ti / 4 200 Å Al / 300 Å TiW.
+Used on steps 112 and 117. Tier: cross-check.
+
+**CYP-QTP-030204** — Cypress Semiconductor, *Automotive Product
+Qualification Report, QTP# 030204: 256K Static RAM Automotive Devices,
+RAM42HA Technology, Fab 4*, document 001-88023 Rev. **, June 2013 (copy
+hosted by Infineon Technologies).
+<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>
+RAM42HA at Fab 4: TiW/AlCu/TiW 500/6 000/300 Å. Used on step 112. Tier:
+cross-check.
+
+**CYP-QTP-113005** — Cypress Semiconductor, *Product Qualification Plan,
+QTP# 113005: 64K Serial Non-Volatile SRAM Product Family, S8 Technology,
+CMI (Fab 4)*, document 001-85611 Rev. *A, January 2013 (copy hosted by
+Infineon Technologies).
+<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
+S8TNV-5R metal composition at Bloomington: Metal 1 "100A Ti / 3200A
+Al-0.5%Cu / 300A TiW". Used on steps 112, 113 and 114. Tier:
+cross-check.
+
+**CYP-QTP-123907** — Cypress Semiconductor, *Fab Process Qualification
+Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8 Technology,
+Fab 4 CMI*, document 001-91369 Rev. **, March 2014 (copy hosted by Tokyo
+Electron Device as the attachment to Cypress Product Information
+Notification PIN145273, 2014-03-13, which states the report is attached
+and available from cypress.com;
+<https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
+<https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
+S8 "Metal Stack Change from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN in CMI Fab
+4". Used on steps 112 and 117. Tier: cross-check.
+
+**DALTON-1990** — C. M. Dalton, "Enhanced selective tungsten
+encapsulation of TiW capped aluminum interconnect", *Proc. Seventh
+International IEEE VLSI Multilevel Interconnection Conference (VMIC
+1990)*, pp. 289–295. <https://doi.org/10.1109/VMIC.1990.127879> A
+TiW-capped aluminium interconnect. Used on step 112. Tier: deep dive.
+
+**DENISON-1996** — D. R. Denison, J. C. Barbour and J. H. Burkhart, "Low
+dielectric constant, fluorine-doped SiO₂ for intermetal dielectric",
+*Journal of Vacuum Science & Technology A* **14**(3), 1124–1126 (1996).
+<https://doi.org/10.1116/1.580280> Fluorine-doped SiO₂ as a
+low-permittivity inter-metal dielectric. Used on step 115. Tier: deep
+dive.
+
+**DEVRIENDT-1998** — K. Devriendt, E. Vrancken, N. Heylen, J. Grillaert,
+M. Meuris, M. M. Heyns and Z. C. Lin, "Relation between Oxide-CMP
+Induced Defects and Post-CMP Cleaning Strategies", *Solid State
+Phenomena* **65–66**, 173–176 (1998).
+<https://doi.org/10.4028/www.scientific.net/SSP.65-66.173> Oxide-CMP
+defects versus post-CMP cleaning. Used on steps 116 and 117. Tier: deep
+dive.
+
+**DOMENICUCCI-1996** — A. G. Domenicucci, R. G. Filippi, K. W. Choi,
+C.-K. Hu and K. P. Rodbell, "Effect of copper on the microstructure and
+electromigration lifetime of Ti–AlCu–Ti fine lines in the presence of
+tungsten diffusion barriers", *Journal of Applied Physics* **80**(9),
+4952–4959 (1996). <https://doi.org/10.1063/1.363539> Ti–AlCu–Ti lines
+over tungsten: copper, microstructure and lifetime. Used on step 112.
+Tier: deep dive.
+
+**FANG-1992** — S. Fang and J. P. McVittie, "Thin-oxide damage from gate
+charging during plasma processing", *IEEE Electron Device Letters*
+**13**(5), 288–290 (1992). <https://doi.org/10.1109/55.145056>
+Thin-oxide damage from gate charging during plasma processing. Used on
+step 114. Tier: deep dive.
+
+**FISCHL-1987** — D. S. Fischl and D. W. Hess, "Plasma-Enhanced Etching
+of Tungsten and Tungsten Silicide in Chlorine-Containing Discharges",
+*Journal of The Electrochemical Society* **134**(9), 2265–2269 (1987).
+<https://doi.org/10.1149/1.2100868> Chlorine etching of tungsten and
+tungsten silicide, relevant to the TiW cap. Used on step 114. Tier: deep
+dive.
+
+**GHATE-1978** — P. B. Ghate, J. C. Blair, C. R. Fuller and G. E.
+McGuire, "Application of Ti:W barrier metallization for integrated
+circuits", *Thin Solid Films* **53**(2), 117–128 (1978).
+<https://doi.org/10.1016/0040-6090(78)90024-X> Ti:W barrier
+metallisation. Used on step 112. Tier: deep dive.
+
+**HESS-1982** — D. W. Hess, "Plasma etch chemistry of aluminum and
+aluminum alloy films", *Plasma Chemistry and Plasma Processing*
+**2**(2), 141–155 (1982). <https://doi.org/10.1007/BF00633130> The
+plasma etch chemistry of aluminium and aluminium alloy films. Used on
+step 114. Tier: deep dive.
+
+**HWANG-1997** — G. S. Hwang and K. P. Giapis, "On the origin of the
+notching effect during etching in uniform high density plasmas",
+*Journal of Vacuum Science & Technology B* **15**(1), 70–87 (1997).
+<https://doi.org/10.1116/1.589258> The origin of notching in
+high-density plasma etching. Used on step 114. Tier: deep dive.
+
+**HWANG-1998** — G. S. Hwang and K. P. Giapis, "Mechanism of charging
+damage during interlevel oxide deposition in high-density plasma tools",
+*Proc. 1998 3rd International Symposium on Plasma Process-Induced Damage
+(P2ID)*, pp. 164–167. <https://doi.org/10.1109/PPID.1998.725600>
+Charging damage during interlevel oxide deposition in high-density
+plasma tools. Used on step 115. Tier: deep dive.
+
+**KAMOSHIDA-1997** — K. Kamoshida and Y. Ito, "Highly preferred (111)
+texture aluminum-copper films formed with argon plasma treatment of the
+titanium underlayer and their electromigration endurance as
+interconnects", *Journal of Vacuum Science & Technology B* **15**(4),
+961–966 (1997). <https://doi.org/10.1116/1.589515> (111) Al–Cu on a
+plasma-treated Ti underlayer. Used on step 112. Tier: deep dive.
+
+**KNORR-1996** — D. B. Knorr and K. P. Rodbell, "The role of texture in
+the electromigration behavior of pure aluminum lines", *Journal of
+Applied Physics* **79**(5), 2409–2417 (1996).
+<https://doi.org/10.1063/1.361168> The role of texture in aluminium
+electromigration. Used on step 112. Tier: deep dive.
+
+**LEE-1981** — W.-Y. Lee, J. M. Eldridge and G. C. Schwartz, "Reactive
+ion etching induced corrosion of Al and Al-Cu films", *Journal of
+Applied Physics* **52**(4), 2994–2999 (1981).
+<https://doi.org/10.1063/1.329043> RIE-induced corrosion of Al and Al–Cu
+films. Used on step 114. Tier: deep dive.
+
+**MANI-2007** — S. Mani and T. Saif, "Stress development in
+plasma-deposited silicon dioxide thin-films due to hydrogen evolution",
+*Thin Solid Films* **515**(5), 3120–3125 (2007).
+<https://doi.org/10.1016/j.tsf.2006.08.025> Stress development in plasma
+oxide from hydrogen evolution. Used on step 117. Tier: deep dive.
+
+**MOON-2016** — Y. Moon, "Chemical and physical mechanisms of dielectric
+chemical mechanical polishing (CMP)", in *Advances in Chemical
+Mechanical Planarization (CMP)*, Woodhead Publishing, 2016, pp. 3–26,
+ISBN 978-0-08-100165-3.
+<https://doi.org/10.1016/B978-0-08-100165-3.00001-2> The chemical and
+physical mechanisms of dielectric CMP. Used on steps 116 and 117. Tier:
+high-level.
+
+**MORI-1996** — S. Mori, T. Watanabe, K. Adachi, T. Fukushima, K. Uda
+and Y. Sato, "Substrate effect in chemically amplified resist", *Proc.
+SPIE* **2724**, Advances in Resist Technology and Processing XIII, 131
+(1996). <https://doi.org/10.1117/12.241812> The substrate effect in
+chemically amplified resists and its reduction. Used on step 113. Tier:
+deep dive.
+
+**NOWICKI-1978** — R. S. Nowicki, J. M. Harris, M.-A. Nicolet and I. V.
+Mitchell, "Studies of the Ti-W/Au metallization on aluminum", *Thin
+Solid Films* **53**(2), 195–205 (1978).
+<https://doi.org/10.1016/0040-6090(78)90035-4> Ti–W on aluminium. Used
+on step 112. Tier: deep dive.
+
+**OLOWOLAFE-1985** — J. O. Olowolafe, C. J. Palmstrøm, E. G. Colgan and
+J. W. Mayer, "Al/TiW reaction kinetics: Influence of Cu and interface
+oxides", *Journal of Applied Physics* **58**(9), 3440–3443 (1985).
+<https://doi.org/10.1063/1.335764> Al/TiW reaction kinetics and the
+effect of Cu. Used on step 112. Tier: deep dive.
+
+**PHILIPOSSIAN-2009** — A. Philipossian and T. Sun, "Frictional Analysis
+of Various Poly(vinyl alcohol) Brush Roller Designs for Post-Interlevel
+Dielectric CMP Scrubbing Applications", *Electrochemical and Solid-State
+Letters* **12**(3), H84 (2009). <https://doi.org/10.1149/1.3058994>
+Brush design for post-ILD-CMP scrubbing. Used on steps 116 and 117.
+Tier: deep dive.
+
+**ROCKE-1988** — M. Rocke and M. Schneegans, "Titanium nitride for
+antireflection control and hillock suppression on aluminum silicon
+metallization", *Journal of Vacuum Science & Technology B* **6**(4),
+1113–1115 (1988). <https://doi.org/10.1116/1.584306> A refractory cap
+for anti-reflection and hillock suppression on aluminium. Used on steps
+112 and 113. Tier: deep dive.
+
+**ROSENBERG-2000** — R. Rosenberg, D. C. Edelstein, C.-K. Hu and K. P.
+Rodbell, "Copper Metallization for High Performance Silicon Technology",
+*Annual Review of Materials Science* **30**(1), 229–262 (2000).
+<https://doi.org/10.1146/annurev.matsci.30.1.229> The copper alternative
+SKY130 did not take. Used on step 112. Tier: deep dive.
+
+**SCHAIBLE-1978** — P. M. Schaible, W. C. Metzger and J. P. Anderson,
+"Reactive ion etching of aluminum and aluminum alloys in an rf plasma
+containing halogen species", *Journal of Vacuum Science and Technology*
+**15**(2), 334–337 (1978). <https://doi.org/10.1116/1.569540> Reactive
+ion etching of aluminium and its alloys in halogen plasmas. Used on step
+114. Tier: deep dive.
+
+**SHIRAISHI-1992** — N. Shiraishi, S. Hirukawa, Y. Takeuchi and N.
+Magome, "New imaging technique for 64M-DRAM", *Proc. SPIE* **1674**,
+Optical/Laser Microlithography V, 741 (1992).
+<https://doi.org/10.1117/12.130364> Off-axis illumination for dense
+lines. Used on step 113. Tier: deep dive.
+
+**SIVARAM-1992** — S. Sivaram, R. Tolles, H. Bath, E. Lee and R.
+Leggett, "Chemical Mechanical Polishing of Interlevel Dielectrics:
+Models for Removal Rate and Planarity", *MRS Proceedings* **260**, 53
+(1992). <https://doi.org/10.1557/PROC-260-53> Removal-rate and planarity
+models for ILD CMP. Used on step 116. Tier: deep dive.
+
+**STINE-1998-TED** — B. E. Stine, D. S. Boning, J. E. Chung, L.
+Camilletti, F. Kruppa, E. R. Equi, W. Loh, S. Prasad, M. Muthukrishnan,
+D. Towery, M. Berman and A. Kapoor, "The physical and electrical effects
+of metal-fill patterning practices for oxide chemical-mechanical
+polishing processes", *IEEE Transactions on Electron Devices* **45**(3),
+665–679 (1998). <https://doi.org/10.1109/16.661228> The physical and
+electrical effects of metal-fill patterning for oxide CMP. Used on step
+116. Tier: deep dive.
+
+**USAMI-1993** — T. Usami, K. Shimokawa and M. Yoshimaru, "Low
+Dielectric Constant Interlayer Using Fluorine Doped Silicon Oxide",
+*Extended Abstracts of the 1993 International Conference on Solid State
+Devices and Materials*, S-II-9 (1993).
+<https://doi.org/10.7567/SSDM.1993.S-II-9> A fluorine-doped oxide
+interlayer. Used on step 115. Tier: deep dive.
+
+**VAIDYA-1981** — S. Vaidya and A. K. Sinha, "Effect of texture and
+grain structure on electromigration in Al-0.5%Cu thin films", *Thin
+Solid Films* **75**(3), 253–259 (1981).
+<https://doi.org/10.1016/0040-6090(81)90404-1> Texture and grain
+structure versus electromigration in Al–0.5%Cu. Used on step 112. Tier:
+deep dive.
+
+**WAI-2017** — W. T. Wai and N. C. Ling, "Al-Cu interconnect corrosion
+prevention in post metal etch and wet polymer clean wafers: CFM:
+Contamination free manufacturing", *2017 28th Annual SEMI Advanced
+Semiconductor Manufacturing Conference (ASMC)*, pp. 64–67.
+<https://doi.org/10.1109/ASMC.2017.7969200> Al–Cu corrosion prevention
+through the post-etch and polymer-clean sequence. Used on step 114.
+Tier: deep dive.
+
+**YAMANAKA-1999** — R. Yamanaka, T. Hattori, T. Mine, K. T. Hattori, T.
+P. Tanaka and T. Terasawa, "Suppression of resist pattern deformation on
+SiON bottom antireflective layer in deep-UV lithography", *Proc. SPIE*
+**3678**, Advances in Resist Technology and Processing XVI, 198 (1999).
+<https://doi.org/10.1117/12.350202> Resist deformation on a SiON BARC
+and its suppression. Used on step 113. Tier: deep dive.
+
+**YUE-1985** — J. T. Yue, W. P. Funsten and R. V. Taylor, "Stress
+Induced Voids in Aluminum Interconnects During IC Processing", *23rd
+International Reliability Physics Symposium* (1985), pp. 126–137.
+<https://doi.org/10.1109/IRPS.1985.362087> Stress-induced voids in
+aluminium interconnects. Used on step 115. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 

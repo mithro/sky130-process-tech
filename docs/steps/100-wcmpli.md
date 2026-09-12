@@ -320,8 +320,8 @@ fab (SKY130's recipe is not public):
     Materials in Electronics* **12**(1), 63–68 (2001).
     <https://doi.org/10.1023/A:1011276830620>
 [^sue-1999]: L. Sue, J. Lültzen and S. Gonzales, "Tungsten Chemical
-    Mechanical Polishing Endpoint Detection", *MRS Proceedings* **566**
-    (1999). <https://doi.org/10.1557/PROC-566-109>
+    Mechanical Polishing Endpoint Detection", *MRS Proceedings* **566**,
+    109 (1999). <https://doi.org/10.1557/PROC-566-109>
 [^bibby-1998]: T. Bibby and K. Holland, "Endpoint detection for CMP",
     *Journal of Electronic Materials* **27**(10), 1073–1081 (1998).
     <https://doi.org/10.1007/s11664-998-0140-1>
