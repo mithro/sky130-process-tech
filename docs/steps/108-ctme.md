@@ -270,8 +270,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   inferred from the stack diagram.[^pdk-04]
 * Which etcher runs the step is not public; SkyWater's list names no
   dedicated dielectric etcher.[^skw-01]
-* Whether the resist strip is a separate step is not public; the step
-  list used in this reference shows no separate strip.
+* The step list used in this reference has no separate strip step
+  after `CTME`; this page treats the resist strip and post-etch
+  clean as part of the etch step.
 
 <!-- footnotes -->
 

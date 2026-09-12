@@ -288,8 +288,9 @@ recipe is not public); the shared physics is set out at
   enclosure rule.[^pdk-periph]
 * Which etcher runs the step is not public; SkyWater's list names no
   dedicated dielectric etcher.[^skw-01]
-* Whether the resist strip is a separate step is not public; the step
-  list used in this reference shows no separate strip.
+* The step list used in this reference has no separate strip step
+  after `VIME`; this page treats the resist strip and post-etch
+  clean as part of the etch step.
 
 <!-- footnotes -->
 
