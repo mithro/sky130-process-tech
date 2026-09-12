@@ -260,8 +260,9 @@ fab (SKY130's recipe is not public):
 ## Open questions
 
 * That SKY130 uses a contact-only titanium silicide rather than a
-  salicide is an inference from the PDK's sheet resistances, the
-  step name and the step order; no public source states it.
+  salicide is our inference from the PDK's sheet resistances; the
+  step names and order used in this reference are consistent with
+  it, but no public source states it.
 * The anneal temperature, time, ambient and whether it is one or two
   soaks are not public.
 * The silicide thickness and its consumption of the 0.1 µm junction

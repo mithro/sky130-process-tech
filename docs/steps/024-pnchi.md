@@ -201,9 +201,9 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   compensation reading above is our inference.
 * Energy, dose and the order of `PCHI`/`PNCHI` relative to each other
   in profile depth are not public.
-* The expansion of the acronym `PNCHI` is not known; we use only the
-  name "P-channel BF2 implant" from the step list used in this
-  reference.
+* This reference does not expand the acronym `PNCHI`; the page uses
+  only the label "P-channel BF2 implant" from the step list used in
+  this reference.
 
 <!-- footnotes -->
 

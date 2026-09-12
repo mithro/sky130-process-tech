@@ -230,8 +230,8 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 * Whether the cap is deposited directly on the polished gate caps
   (the {ref}`CMPP <step-090>` cap-stop reading) or on residual PSG
   is not public.
-* The expansion of the step code "NCAPOX" is not public; "cap
-  oxide" at dielectric level N is our reading.
+* The expansion of the step code `NCAPOX` as "cap oxide" at
+  dielectric level N is our reading of the code.
 
 <!-- footnotes -->
 
