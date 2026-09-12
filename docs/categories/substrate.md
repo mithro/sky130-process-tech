@@ -256,8 +256,8 @@ The substrate category has no process tool in the fab itself; the
 [^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
     Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
     ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
-[^semi-m1]: SEMI M1, *Specification for Polished Single Crystal Silicon
-    Wafers*, SEMI.
+[^semi-m1]: SEMI, *SEMI M1 — Specification for Polished Single Crystal
+    Silicon Wafers*, SEMI Standards store listing.
     <https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>
 [^semi-m62]: SEMI M62, *Specification for Silicon Epitaxial Wafers*,
     SEMI.
@@ -341,8 +341,8 @@ The substrate category has no process tool in the fab itself; the
     Epitaxy", *Journal of The Electrochemical Society* **127**(6),
     1334–1342 (1980). <https://doi.org/10.1149/1.2129895>
 [^troutman-1986]: R. R. Troutman, *Latchup in CMOS Technology: The
-    Problem and Its Cure*, Kluwer, 1986.
-    <https://doi.org/10.1007/978-1-4757-1887-4>
+    Problem and Its Cure*, Kluwer Academic Publishers, 1986,
+    ISBN 978-0-89838-215-7. <https://doi.org/10.1007/978-1-4757-1887-4>
 [^bean-1978]: K. E. Bean, "Anisotropic etching of silicon", *IEEE
     Transactions on Electron Devices* **25**(10), 1185–1193 (1978).
     <https://doi.org/10.1109/T-ED.1978.19250>

@@ -404,8 +404,8 @@ must hit.
 [^wiki-psg]: Wikipedia, *Phosphosilicate glass*.
     <https://en.wikipedia.org/wiki/Phosphosilicate_glass>
 [^lieberman-2005]: M. A. Lieberman and A. J. Lichtenberg, *Principles of
-    Plasma Discharges and Materials Processing*, 2nd ed., Wiley, 2005.
-    <https://doi.org/10.1002/0471724254>
+    Plasma Discharges and Materials Processing*, 2nd ed., Wiley, 2005,
+    ISBN 978-0-471-72001-0. <https://doi.org/10.1002/0471724254>
 [^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
     Manufacturing Technology*, 2nd ed., CRC Press, 2007,
     ISBN 978-1-57444-675-3. <https://openlibrary.org/isbn/9781574446753>
@@ -429,7 +429,8 @@ must hit.
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
-    diagram). <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
+    diagram), google/skywater-pdk repository.
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
 [^asm-a400]: ASM International, *ASM International N.V. launches A400
     DUO vertical furnace system*, press release, 2019-11-11.
     <https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>
@@ -498,8 +499,8 @@ must hit.
     109–126 (1999). <https://doi.org/10.1147/rd.431.0109>
 [^nishimura-2002]: H. Nishimura, S. Takagi, M. Fujino and N. Nishi,
     "Gap-Fill Process of Shallow Trench Isolation for 0.13 µm
-    Technologies", *Japanese Journal of Applied Physics* **41**(5A),
-    2886–2893 (2002). <https://doi.org/10.1143/JJAP.41.2886>
+    Technologies", *Japanese Journal of Applied Physics* **41**, Part 1,
+    No. 5A, 2886–2893 (2002). <https://doi.org/10.1143/JJAP.41.2886>
 [^lam-speed]: Novellus Systems (Lam Research newsroom), *Novellus' SPEED
     Max HDP-CVD Dielectric Gapfill System Extends STI Application to
     32nm*, press release, 2009-10-05.

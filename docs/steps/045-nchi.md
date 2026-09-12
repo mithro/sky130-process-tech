@@ -219,7 +219,9 @@ fab (SKY130's values are not public):
 <!-- footnotes -->
 
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^pat-03]: W. Koutny et al. (Cypress Semiconductor), *Integration of
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.

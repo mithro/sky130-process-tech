@@ -274,7 +274,9 @@ memory transistor (SKY130's values are not public):
     Edition: Front End Processes*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^cyp-25]: K. Ramkumar, V. Prabhakar and R. Kapre (Cypress
     Semiconductor), *Scalable SONOS based embedded non-volatile memory
     technology*, Semiconductor Digest, 2020-02.

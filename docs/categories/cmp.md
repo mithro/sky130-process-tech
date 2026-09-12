@@ -297,7 +297,8 @@ values.[^steigerwald-1997][^zantye-2004]
     <https://doi.org/10.1149/1.2085434>
 [^steigerwald-1997]: J. M. Steigerwald, S. P. Murarka and R. J. Gutmann,
     *Chemical Mechanical Planarization of Microelectronic Materials*,
-    Wiley, 1997. <https://doi.org/10.1002/9783527617746>
+    Wiley, 1997, ISBN 978-0-471-13827-6.
+    <https://doi.org/10.1002/9783527617746>
 [^chiphistory-mirra]: Chip History Center, *The Mirra CMP System by
     Applied Materials*.
     <https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>
@@ -333,8 +334,9 @@ values.[^steigerwald-1997][^zantye-2004]
     Chemical-Mechanical Polishing", *Journal of The Electrochemical
     Society* **141**(6), 1698–1701 (1994).
     <https://doi.org/10.1149/1.2054985>
-[^stine-1998]: B. E. Stine, D. O. Ouma, R. R. Divecha, D. S. Boning et
-    al., "Rapid characterization and modeling of pattern-dependent
+[^stine-1998]: B. E. Stine, D. O. Ouma, R. R. Divecha, D. S. Boning, J.
+    E. Chung, D. L. Hetherington, C. R. Harwood, O. S. Nakagawa and
+    S.-Y. Oh, "Rapid characterization and modeling of pattern-dependent
     variation in chemical-mechanical polishing", *IEEE Transactions on
     Semiconductor Manufacturing* **11**(1), 129–140 (1998).
     <https://doi.org/10.1109/66.661292>
@@ -369,7 +371,8 @@ values.[^steigerwald-1997][^zantye-2004]
     <https://patents.google.com/patent/US4789648A/en>
 [^oliver-2004]: M. R. Oliver (ed.), *Chemical-Mechanical Planarization
     of Semiconductor Materials*, Springer Series in Materials Science
-    69, Springer, 2004. <https://doi.org/10.1007/978-3-662-06234-0>
+    69, Springer, 2004, ISBN 978-3-540-43181-9.
+    <https://doi.org/10.1007/978-3-662-06234-0>
 [^li-2007]: Y. Li (ed.), *Microelectronic Applications of Chemical
     Mechanical Planarization*, Wiley, 2007.
     <https://doi.org/10.1002/9780470180907>

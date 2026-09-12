@@ -225,8 +225,9 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
     Submicron MOSFET*, Lattice Press, 1995, ISBN 978-0-9616721-5-7.
     <https://openlibrary.org/isbn/9780961672157>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation.
-    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^wiki-implant]: Wikipedia, *Ion implantation*.
     <https://en.wikipedia.org/wiki/Ion_implantation>
 [^pat-04]: K. Ramkumar, I. Kouznetsov and V. Prabhakar (Cypress

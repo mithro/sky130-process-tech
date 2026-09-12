@@ -278,7 +278,9 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
     repository.
     <https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^itrs-01]: International Technology Roadmap for Semiconductors, *2001
     Edition: Front End Processes*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
@@ -379,8 +381,11 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
     B* **15**(4), 967–970 (1997). <https://doi.org/10.1116/1.589516>
 [^deal-1980]: B. E. Deal, "Standardized terminology for oxide charges
     associated with thermally oxidized silicon", *IEEE Transactions on
-    Electron Devices* **27**(3), 606–608 (1980).
-    <https://doi.org/10.1109/T-ED.1980.19908>
+    Electron Devices* **27**(3), 606–608 (1980),
+    DOI 10.1109/T-ED.1980.19908; published simultaneously in *Journal of
+    The Electrochemical Society* **127**(4), 979–981 (1980).
+    <https://doi.org/10.1109/T-ED.1980.19908>,
+    <https://doi.org/10.1149/1.2129800>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,

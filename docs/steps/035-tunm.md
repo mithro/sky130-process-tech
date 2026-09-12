@@ -288,7 +288,9 @@ pre-oxidation clean are folded into those steps (see the
     documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/background.html>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
@@ -361,7 +363,8 @@ pre-oxidation clean are folded into those steps (see the
     coating", *Proc. SPIE* **2724**, Advances in Resist Technology and
     Processing XIII, 710 (1996). <https://doi.org/10.1117/12.241869>
 [^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
-    SPIE Press, 2005. <https://doi.org/10.1117/3.601520>
+    SPIE Press, 2005, ISBN 978-0-8194-5660-1.
+    <https://doi.org/10.1117/3.601520>
 [^hook-2003]: T. B. Hook, J. Brown, P. Cottrell, E. Adler, D. Hoyniak,
     J. Johnson and R. Mann, "Lateral Ion Implant Straggle and Mask
     Proximity Effect", *IEEE Transactions on Electron Devices*

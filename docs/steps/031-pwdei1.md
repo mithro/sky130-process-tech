@@ -190,7 +190,7 @@ illustrative.
 <!-- footnotes -->
 
 [^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
-    `gds_layers.csv`, google/skywater-pdk repository.
+    `gds_layers.csv`, SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
 [^pat-demos-ti]: J. C. Mitros (Texas Instruments), *Higher voltage drain
@@ -199,8 +199,9 @@ illustrative.
     <https://patents.google.com/patent/US6660603B2/en>
 [^wiki-ldmos]: Wikipedia, *LDMOS*. <https://en.wikipedia.org/wiki/LDMOS>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation.
-    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>

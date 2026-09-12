@@ -263,7 +263,8 @@ and stripped there (no separate strip step is listed).
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
 [^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
-    SPIE Press, 2005. <https://doi.org/10.1117/3.601520>
+    SPIE Press, 2005, ISBN 978-0-8194-5660-1.
+    <https://doi.org/10.1117/3.601520>
 [^van-haren-2019]: R. J. F. van Haren, S. Steinert, O. Mouraille,
     K. D'havé, L. van Dijk, J. Hermans and D. Beyer, "Wafer alignment
     mark placement accuracy impact on the layer-to-layer overlay
@@ -280,8 +281,9 @@ and stripped there (no separate strip step is listed).
     <https://en.wikipedia.org/wiki/Photolithography>
 [^cyp-26]: Wikipedia, *SONOS*. <https://en.wikipedia.org/wiki/SONOS>
 [^mack-2007]: C. Mack, *Fundamental Principles of Optical Lithography:
-    The Science of Microfabrication*, Wiley, 2007, ISBN
-    978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
+    The Science of Microfabrication*, Wiley, 2007,
+    ISBN 978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
+    (companion site <https://www.lithoguru.com/textbook/>)
 [^baker-1996]: D. C. Baker and E. S. Capsuto, "Critical dimension
     control for i-line 0.35-μm device using a new antireflective
     coating", *Proc. SPIE* **2724**, Advances in Resist Technology and

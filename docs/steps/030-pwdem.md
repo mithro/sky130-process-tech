@@ -211,7 +211,7 @@ An industry-generic drain-extension well lithography for a 200 mm,
 <!-- footnotes -->
 
 [^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
-    `gds_layers.csv`, google/skywater-pdk repository.
+    `gds_layers.csv`, SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
@@ -222,8 +222,9 @@ An industry-generic drain-extension well lithography for a 200 mm,
     <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
     <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation.
-    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^pdk-10]: SkyWater PDK Authors, *google/skywater-pdk* repository
     README. <https://github.com/google/skywater-pdk>
 [^skw-02]: SkyWater Technology, *Mixed-Signal CMOS & ROIC*, platform

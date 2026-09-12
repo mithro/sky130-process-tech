@@ -325,9 +325,12 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
 [^byu-oxcalc]: Brigham Young University Cleanroom, *Oxide Growth
     Calculator* (Deal–Grove with thin-oxide correction).
     <https://cleanroom.byu.edu/oxidetimecalc>
-[^deal-1980]: B. E. Deal, "Standardized Terminology for Oxide Charges
-    Associated with Thermally Oxidized Silicon", *Journal of The
-    Electrochemical Society* **127**(4), 979–981 (1980).
+[^deal-1980]: B. E. Deal, "Standardized terminology for oxide charges
+    associated with thermally oxidized silicon", *IEEE Transactions on
+    Electron Devices* **27**(3), 606–608 (1980),
+    DOI 10.1109/T-ED.1980.19908; published simultaneously in *Journal of
+    The Electrochemical Society* **127**(4), 979–981 (1980).
+    <https://doi.org/10.1109/T-ED.1980.19908>,
     <https://doi.org/10.1149/1.2129800>
 [^itrs-01]: International Technology Roadmap for Semiconductors, *2001
     Edition: Front End Processes*.
@@ -411,16 +414,17 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
     <https://doi.org/10.1063/1.1385803>
 [^hori-1997]: T. Hori, *Gate Dielectrics and MOS ULSIs: Physics,
     Technology and Applications*, Springer Series in Electronics and
-    Photonics 34, Springer, 1997.
+    Photonics, vol. 34, Springer, 1997.
     <https://doi.org/10.1007/978-3-642-60856-8>
 [^hori-1989]: T. Hori, H. Iwasaki and K. Tsuji, "Electrical and physical
     properties of ultrathin reoxidized nitrided oxides prepared by rapid
     thermal processing", *IEEE Transactions on Electron Devices*
     **36**(2), 340–350 (1989). <https://doi.org/10.1109/16.19935>
-[^yu-1999]: M.-C. Yu, S.-M. Jang, C. H. Diaz, C. H. Yu et al.,
-    "Improvement of ultrathin gate oxide by a novel rapid thermal
-    oxidation process with in-situ steam generation", *Proc. SPIE*
-    **3881**, 234 (1999). <https://doi.org/10.1117/12.360557>
+[^yu-1999]: M.-C. Yu, S.-M. Jang, C. H. Diaz, C. H. Yu, S. C. Sun and M.
+    S. Liang (TSMC), "Improvement of ultrathin gate oxide by a novel
+    rapid thermal oxidation process with in-situ steam generation",
+    *Proc. SPIE* **3881**, Microelectronic Device Technology III, 234
+    (1999). <https://doi.org/10.1117/12.360557>
 [^nagai-2002]: N. Nagai, K. Terada, Y. Muraji, H. Hashimoto et al.,
     "Infrared absorption study of rapid thermal oxidation and in situ
     steam generation of thin SiO₂ films by gradient etching

@@ -265,7 +265,9 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^wiki-depletion]: Wikipedia, *Depletion and enhancement modes*.
     <https://en.wikipedia.org/wiki/Depletion_and_enhancement_modes>
 [^cyp-25]: K. Ramkumar, V. Prabhakar and R. Kapre (Cypress

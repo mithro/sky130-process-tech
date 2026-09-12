@@ -260,8 +260,9 @@ below are typical or taken from contemporaneous patents.
     PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation.
-    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^pat-vt-rrr]: M. Helm and X. Zhou (Round Rock Research), *Formation of
     standard voltage threshold and low voltage threshold MOSFET
     devices*, US 2011/0006372 A1, published 2011-01-13 (priority

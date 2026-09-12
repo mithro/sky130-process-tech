@@ -192,8 +192,9 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
     PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation.
-    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+    documentation, and the `nfet_01v8` cross-section drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^wiki-vt]: Wikipedia, *Threshold voltage*.
     <https://en.wikipedia.org/wiki/Threshold_voltage>
 [^wiki-mtcmos]: Wikipedia, *Multi-threshold CMOS*.
@@ -203,8 +204,8 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>
 [^wei-1998]: L. Wei, Z. Chen, M. Johnson, K. Roy and V. De, "Design and
     optimization of low voltage high performance dual threshold CMOS
-    circuits", *Proc. 35th Design Automation Conference*, pp. 489–494
-    (1998). <https://doi.org/10.1109/DAC.1998.724521>
+    circuits", *Proceedings of the 35th Design Automation Conference*,
+    pp. 489–494 (1998). <https://doi.org/10.1109/DAC.1998.724521>
 [^itrs-01]: International Technology Roadmap for Semiconductors, *2001
     Edition: Front End Processes*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
