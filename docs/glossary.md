@@ -28,6 +28,15 @@ anisotropy
     A perfectly anisotropic etch has zero lateral etch rate; a purely
     chemical wet etch of an amorphous film is isotropic.
 
+anti-reflective cap
+    A thin, dull metal film sputtered on top of an aluminium
+    interconnect so that the shiny aluminium does not reflect the
+    exposure light back into the photoresist during the metal
+    lithography. In SKY130's metal-1 stack the cap is titanium–tungsten
+    (see {ref}`step-112`); it also suppresses {term}`hillock`s, resists
+    corrosion and gives the {term}`via` etch a hard surface to land on.
+    Also "ARC cap" or "TiW cap"; compare {term}`BARC`.
+
 ARC
     Anti-reflective coating: a thin absorbing or interference layer
     placed above ({term}`TARC`) or below ({term}`BARC`) the photoresist
@@ -69,9 +78,26 @@ BARC
     (deposited, e.g. silicon oxynitride) layer under the photoresist that
     absorbs light reflected from the substrate.
 
+barrier metal
+    A thin refractory film — titanium nitride or titanium–tungsten —
+    placed between a conductor and a material it must not react with:
+    between aluminium and silicon, or between tungsten hexafluoride
+    and the titanium or silicon beneath it during plug fill. It works by
+    offering few fast diffusion paths and by staying chemically stable
+    at back-end temperatures. Usually paired with a {term}`liner`.
+
 BEOL
     Back end of line: the interconnect portion of the process flow, from
     the first contact through the final passivation.
+
+Blech length
+    The critical length below which an aluminium line on a rigid,
+    conducting underlayer such as titanium nitride does not fail by
+    {term}`electromigration`: the mechanical stress that builds up as
+    atoms pile up at one end of the line pushes back as hard as the
+    electron wind pushes forward, and net transport stops. Lines shorter
+    than it are sometimes called "immortal". Named for I. A. Blech's
+    experiments on aluminium over TiN (see {ref}`step-101`).
 
 blocking oxide
     The top oxide of the {term}`ONO` stack of a {term}`SONOS`
@@ -91,6 +117,16 @@ BOE
     fluoride (NH₄F), giving a stable, controlled etch rate for silicon
     dioxide.
 
+borderless contact
+    A contact that is allowed to overlap the edge of the diffusion, gate
+    or local interconnect it lands on, rather than being enclosed by it
+    with a margin. It is only safe if an {term}`etch-stop layer` under
+    the dielectric keeps the contact etch from digging into the
+    isolation or the gate beside the target; in exchange it saves the
+    enclosure area a bordered contact costs. SKY130's nitride cap over
+    the local interconnect plays this part for the metal contacts
+    ({ref}`step-104`, {ref}`step-108`).
+
 boron penetration
     Diffusion of boron from a p⁺ polysilicon gate through a thin gate
     oxide into the channel during the anneals that follow gate doping,
@@ -98,6 +134,14 @@ boron penetration
     suppressed by nitrogen in the gate oxide ({term}`oxynitride`) or
     avoided altogether by using an n⁺ gate on the PMOS
     ({term}`single-work-function gate`).
+
+BPSG
+    Borophosphosilicate glass: silicon dioxide doped with both boron and
+    phosphorus. The boron lowers the temperature at which the glass
+    softens and flows ({term}`reflow`) well below that of {term}`PSG`,
+    so that a BPSG {term}`pre-metal dielectric` can be smoothed over the
+    gates without harming the junctions beneath. SKY130's step list
+    names PSG rather than BPSG (see {ref}`step-089`).
 
 buried-channel PMOS
     A p-channel MOSFET with an n⁺ polysilicon gate whose channel has been
@@ -107,6 +151,28 @@ buried-channel PMOS
     function would otherwise give the PMOS far too negative a threshold.
     Buried channels are more prone to {term}`punch-through` at short
     gate lengths than surface channels.
+
+C49 TiSi₂
+    The metastable, high-resistivity crystal form of titanium disilicide
+    that forms first when titanium reacts with silicon. A second, hotter
+    anneal converts it to the stable, low-resistivity C54 form; the
+    conversion becomes harder as features shrink, because it starts from
+    only a few nucleation sites in each line. The two-anneal titanium
+    {term}`silicide` process exists to manage this transition (see
+    {ref}`step-098`).
+
+C54 TiSi₂
+    See {term}`C49 TiSi₂`.
+
+cap oxide
+    A thin undoped CVD oxide deposited over a doped glass or a freshly
+    polished dielectric to seal it: it keeps the phosphorus or boron of
+    a {term}`PSG` or {term}`BPSG` layer away from the films above, gives
+    a clean, stable surface for the next lithography and blocks
+    moisture. SKY130's step list has one over the gates
+    ({ref}`step-059`), one over the planarised pre-metal glass
+    ({ref}`step-091`) and one over the polished oxide of each metal
+    level, the first of them {ref}`step-117`.
 
 CAR
     Chemically amplified resist: a photoresist in which exposure creates
@@ -123,6 +189,9 @@ CD-SEM
     Critical-dimension scanning electron microscope: a low-voltage SEM
     fitted with automated pattern recognition and measurement software,
     used to measure line widths in the fab.
+
+CESL
+    See {term}`contact etch-stop layer`.
 
 chained implant
     A sequence of implants of one species at several energies and doses,
@@ -143,15 +212,67 @@ charge-trapping layer
     stored charge is localised and a single defect in the tunnel oxide
     cannot drain the whole cell, as it would in a floating-gate device.
 
+cluster tool
+    A vacuum platform with a central wafer-handling robot surrounded by
+    several process chambers, so that a wafer can be degassed,
+    sputter-cleaned and coated with two or three films in turn without
+    seeing air between them. Nearly all {term}`PVD` and much CVD of the
+    back end is done this way; the sequence of chambers a wafer visits
+    is the recipe of the step (see {ref}`step-097`).
+
 CMP
     Chemical-mechanical planarisation (or polishing): removal of material
     by pressing a rotating wafer against a polishing pad flooded with an
     abrasive, chemically active slurry.
 
+collimated sputtering
+    A {term}`PVD` variant in which a honeycomb plate — the collimator —
+    sits between the target and the wafer and lets through only atoms
+    travelling nearly perpendicular to the wafer. More of the flux
+    therefore reaches the bottom of deep contact holes, at the cost of
+    a lower deposition rate and material lost on the collimator. It was
+    the usual way to line contacts before {term}`IMP` sources (see
+    {ref}`step-097`).
+
+composite spacer
+    A {term}`spacer` built from two films, usually a thin oxide liner
+    under a thicker nitride. The nitride gives the spacer its etch
+    selectivity and stability; the oxide keeps the nitride, with its
+    charge traps and stress, away from the gate edge and the silicon,
+    which improves hot-carrier lifetime. Also "oxide/nitride spacer";
+    see {ref}`step-076` for how SKY130's spacer is read.
+
+contact etch-stop layer
+    A silicon nitride blanket deposited over the finished transistors,
+    or over the local interconnect, before the dielectric above it. The
+    contact etch, which cannot tell one oxide from another, stops on the
+    nitride; a short nitride etch then opens the holes. It makes
+    {term}`borderless contact`s possible and, because it is deposited
+    under stress, also strains the channel. Abbreviated CESL. SKY130's
+    nitride cap over the local interconnect ({ref}`step-104`) plays this
+    part for the metal contacts.
+
+contact silicide
+    A {term}`silicide` formed only at the bottom of the contact holes,
+    where the titanium of the plug liner touches silicon or
+    polysilicon, rather than over every exposed gate and source/drain
+    as in a {term}`salicide` process. It lowers the contact resistance
+    but leaves the sheet resistance of the diffusions and gates
+    unchanged. SKY130 is read as using a contact-only silicide (see
+    {ref}`step-098`).
+
 control gate
     The gate of the memory transistor in a {term}`2-T cell`: the
     electrode above the {term}`ONO` stack that is biased to program,
     erase and read the {term}`SONOS` transistor.
+
+coring
+    A tungsten {term}`CMP` defect in which the polish pulls tungsten out
+    of the seam at the centre of a plug, where the two growth fronts of
+    the fill met, leaving a hollow core. It raises the plug's resistance
+    and can trap slurry. Fills that close their seam cleanly, and
+    polishes that stop soon after the tungsten clears, avoid it (see
+    {ref}`step-100`).
 
 counter-doping
     An implant of the opposite type to the doping already present, which
@@ -169,10 +290,27 @@ CZ
     slowly pulled from a melt of silicon, producing the boules from which
     almost all IC wafers are cut.
 
+damascene
+    A way of making metal wiring by etching trenches or holes into the
+    dielectric, overfilling them with metal and polishing the excess
+    away, so that metal remains only in the recesses. It is the opposite
+    of {term}`subtractive metallisation` and is how copper wiring is
+    made; SKY130's aluminium lines are subtractive, but its tungsten
+    plugs are filled and polished in the damascene manner
+    ({ref}`step-099`, {ref}`step-100`).
+
 Deal–Grove model
     The linear–parabolic model of thermal oxidation of silicon
     (Deal and Grove, 1965) in which oxide thickness
     {math}`x` obeys {math}`x^2 + Ax = B(t + \tau)`.
+
+degas
+    A bake in vacuum given to a wafer just before a {term}`PVD`
+    deposition, to drive out the moisture and other volatiles absorbed
+    by the dielectrics and left by the cleans. Without it the gases
+    would leave the wafer during sputtering, raising the chamber
+    pressure and oxidising the growing film. Degas is usually the first
+    station of a {term}`cluster tool` sequence.
 
 DEMOS
     Drain-extended MOS: a high-voltage transistor built from a
@@ -202,6 +340,21 @@ dishing
     (a wide metal line or an oxide-filled trench) relative to the
     surrounding harder surface.
 
+disposable spacer
+    A {term}`spacer` that is used to offset an implant and then
+    stripped, so that it does not remain in the finished transistor. It
+    lets the deep source/drain be implanted before the extension, or a
+    spacer material that must not stay be used; the alternative, which
+    SKY130 follows, is a permanent spacer.
+
+dose loss
+    The fraction of a shallow implant — arsenic especially — that does
+    not end up electrically active in the silicon, because it segregates
+    to the surface oxide and the interface, or evaporates, during the
+    activation anneal. It is worse for lower energies and longer
+    anneals; an oxide kept in place over the silicon during the anneal
+    and a short {term}`spike anneal` limit it (see {ref}`step-086`).
+
 drift region
     The lightly doped region between the channel and the heavily doped
     drain contact of a {term}`DEMOS` transistor. It depletes at high
@@ -226,6 +379,23 @@ EBR
     the wafer edge during spin coating, using a solvent stream or an
     exposure of the edge.
 
+electromigration
+    The slow transport of metal atoms along a conductor by the momentum
+    of the electrons flowing through it, which at high current density
+    thins the line at one point until it opens and piles up metal at
+    another until it shorts or cracks the dielectric. Aluminium resists
+    it better with a little copper in the alloy, a refractory underlayer
+    and cap ({term}`Blech length`) and a preferred grain orientation.
+    Also "EM".
+
+electrostatic chuck
+    A wafer holder that grips the wafer by electrostatic attraction
+    through a thin dielectric instead of clamping its edge, and usually
+    cools it with helium flowing between chuck and wafer. It leaves the
+    whole front face free for processing and keeps the wafer at a
+    controlled temperature in plasma-etch, implant and sputter tools.
+    Abbreviated ESC.
+
 endpoint
     The moment at which an etch (or polish) has removed the target film;
     detected optically (emission spectroscopy, interferometry), by motor
@@ -246,12 +416,23 @@ erosion
     In {term}`CMP`, thinning of the hard surface (for example the oxide
     between dense tungsten plugs) in regions of high pattern density.
 
+ESC
+    See {term}`electrostatic chuck`.
+
 etch bias
     The difference between the width of a feature after etching and the
     width of the resist or {term}`hard mask` pattern that defined it. The
     lithography target is offset to compensate. A deliberately large
     bias, as in a {term}`resist trim`, prints gates shorter than the
     lithography alone can resolve.
+
+etch-stop layer
+    A film of different chemistry from the layer being etched — commonly
+    silicon nitride under an oxide — on which an etch of good
+    {term}`selectivity` can land. It makes the {term}`endpoint` tolerant
+    of thickness variation and {term}`over-etch` and protects whatever
+    lies beneath. The {term}`contact etch-stop layer` is one example; a
+    CMP stop layer plays the same part for a polish.
 
 e-test
     Electrical test: automated DC measurement of transistors, resistors,
@@ -298,6 +479,13 @@ Fowler–Nordheim tunnelling
     programmed and erased through its {term}`tunnel oxide`, and it is
     also a leakage and wear-out mechanism in any thin gate oxide.
 
+gap fill
+    The ability of a dielectric deposition to fill the narrow space
+    between adjacent lines or gates without leaving a void or seam. It
+    depends on the {term}`aspect ratio` of the gap and on the process:
+    {term}`HDP-CVD`, ozone–TEOS {term}`SACVD` and flowing doped glasses
+    ({term}`reflow`) all exist mainly for gap fill.
+
 gate oxide integrity
     The ability of a gate oxide to withstand voltage and charge stress
     without breaking down, measured by charge-to-breakdown and
@@ -342,6 +530,21 @@ HDP-CVD
     ions keeps narrow gaps open while they fill, used for STI and
     inter-metal dielectric gap fill.
 
+HF-last
+    A wet clean whose final chemical step is dilute hydrofluoric acid,
+    so that the wafer leaves the bath with its chemical oxide stripped
+    and the silicon surface terminated by hydrogen. That surface is what
+    silicide and contact-liner depositions want, but it re-oxidises in
+    air within hours, which sets a {term}`queue time` to the next step
+    (see {ref}`step-095`).
+
+hillock
+    A small bump of aluminium pushed up out of a film when compressive
+    stress — from heating a metal that expands more than the substrate
+    beneath it — is relieved by atoms diffusing to the surface. Hillocks
+    can short through a thin dielectric to the level above. A refractory
+    {term}`anti-reflective cap` and copper in the alloy suppress them.
+
 HMDS
     Hexamethyldisilazane, a vapour-phase adhesion promoter that makes the
     wafer surface hydrophobic before resist coating.
@@ -371,6 +574,9 @@ ILD
     dioxide-based) between conducting levels. Also IMD (inter-metal
     dielectric).
 
+IMD
+    See {term}`inter-metal dielectric`.
+
 IMP
     Ionised metal plasma: a {term}`PVD` variant in which a secondary RF
     plasma ionises the sputtered metal atoms so that a wafer bias can
@@ -382,6 +588,14 @@ implant crust
     drives out hydrogen. It ashes far more slowly than the resist under
     it, and if that resist is heated before the crust is gone it can
     rupture ({term}`popping`). See {ref}`category-strip`.
+
+inter-metal dielectric
+    The insulating layer between two levels of metal wiring, through
+    which the {term}`via`s pass. It must fill the gaps between the lines
+    beneath it and be planarised for the lithography above; SKY130's is
+    a CVD oxide polished by {term}`CMP` ({ref}`step-115`,
+    {ref}`step-116`). Abbreviated IMD; the term {term}`ILD` covers both
+    it and the {term}`pre-metal dielectric`.
 
 ISSG
     In-situ steam generation: growth of thin oxides in a single-wafer
@@ -398,6 +612,14 @@ Kelvin structure
     A four-terminal test structure that measures the resistance of a
     single contact or via while excluding the series resistance of the
     leads.
+
+keyhole
+    A void left along the centre line of a plug or gap when the film
+    growing in from the two side walls closes over at the top before the
+    bottom has filled. In a tungsten plug the keyhole, or seam, is
+    exposed by the CMP and can be pulled open ({term}`coring`); in a
+    dielectric it can fill with metal at the next step and short
+    adjacent lines. Conformal deposition and a tapered profile avoid it.
 
 knock-on implantation
     Recoil of atoms from a surface film into the substrate by the
@@ -425,10 +647,31 @@ LER
     short gate lengths. The related line-width roughness (LWR) combines
     the two edges.
 
+LI
+    See {term}`local interconnect`.
+
+liner
+    A thin conformal film deposited into a contact, via or trench before
+    the fill: for a tungsten plug, a titanium layer that makes ohmic
+    contact and a titanium nitride layer that protects the titanium and
+    the silicon from the tungsten hexafluoride and gives the tungsten a
+    surface to nucleate on. Also the first film of a
+    {term}`composite spacer` or the thin oxide under an HDP fill.
+    Compare {term}`barrier metal`.
+
 loading effect
     Dependence of etch rate on the amount of material exposed to the
     plasma, either across the wafer (macro-loading) or between dense and
     isolated features (micro-loading).
+
+local interconnect
+    A short-range wiring level below the first metal, used to join gates
+    and diffusions to each other within a cell and to carry the contacts
+    up to metal-1. In SKY130 it is a thin titanium nitride layer (`li1`)
+    patterned by its own mask and sitting between two layers of contacts
+    ({ref}`step-101` to {ref}`step-103`). Its resistance is far higher
+    than a metal's, so it is used only over short distances.
+    Abbreviated LI.
 
 LOCOS
     Local oxidation of silicon: the pre-STI isolation scheme in which a
@@ -445,6 +688,15 @@ LSS theory
     predicts the projected range and straggle of implanted ions from
     nuclear and electronic stopping powers.
 
+mask-proximity effect
+    A shift in the characteristics of a transistor that lies close to
+    the edge of an implant's resist mask, caused by ions scattering out
+    of the resist sidewall into the nearby silicon and by the resist
+    edge shadowing a tilted beam. It is the source/drain-mask
+    counterpart of the {term}`well proximity effect`, and layout rules
+    keep matched devices the same distance from mask edges (see
+    {ref}`step-081`).
+
 MOL
     Middle of line: the contact and local-interconnect steps that bridge
     FEOL and BEOL.
@@ -454,6 +706,30 @@ NA
     larger the NA the finer the resolution and the shallower the depth
     of focus.
 
+nitride cut
+    SKY130's name for the opening of the nitride that covers the
+    polysilicon gates and resistors — the *nitride poly cut* of
+    {ref}`step-078` and {ref}`step-079` — so that the local-interconnect
+    contacts can reach the poly wherever the `npc` layer is drawn.
+    Elsewhere the nitride stays in place as an {term}`etch-stop layer`.
+    Also "poly cut".
+
+notching
+    A plasma-etch defect in which the foot of a line is eaten sideways
+    at its interface with the underlying insulator, most often on the
+    outer lines of an array. It is caused by charge building up on the
+    insulator and deflecting ions towards the line, and worsens during
+    the {term}`over-etch` of high-density-plasma etches of polysilicon
+    and aluminium (see {ref}`step-114`).
+
+nucleation layer
+    The thin first layer of a CVD tungsten fill, deposited with silane
+    or diborane reducing the tungsten hexafluoride, on which the thick
+    hydrogen-reduced bulk film can then grow. Without it tungsten grows
+    slowly and unevenly on titanium nitride and the fluorine attacks
+    the liner. A {term}`pulsed nucleation layer` is one way of forming
+    it (see {ref}`step-099`).
+
 ONO
     Oxide–nitride–oxide: the tunnel oxide / charge-trapping nitride /
     blocking oxide stack of a SONOS non-volatile memory transistor.
@@ -462,6 +738,13 @@ OPC
     Optical proximity correction: pre-distortion of mask features (serifs,
     hammerheads, biasing) so that the printed image matches the intended
     layout despite diffraction.
+
+overburden
+    The film deposited beyond what is needed to fill the gaps between
+    lines — the excess that the following {term}`CMP` removes. It must
+    be thick enough that the polish reaches a flat surface before it
+    exposes the lines, and uniform enough that the polish time is the
+    same everywhere (see {ref}`step-115`).
 
 over-etch
     The part of an etch that continues after the {term}`endpoint`, to
@@ -474,6 +757,14 @@ overlay
     The positional error between a printed layer and a previously printed
     layer, measured on dedicated box-in-box or grating targets.
 
+oxide bias
+    A parameter of the PDK's *Criteria & Assumptions* table ("Oxide Bias
+    for MM1") listed with the pattern-density limits for the oxide
+    polishes. The PDK does not define it; the pages of this reference
+    read it as a density-related allowance for the dielectric
+    {term}`CMP` over metal-1 rather than as a drawn-layer bias (see
+    {ref}`step-116`).
+
 oxynitride
     Silicon dioxide containing nitrogen, either grown in a
     nitrogen-bearing ambient (N₂O or NO), made by nitriding an existing
@@ -482,6 +773,15 @@ oxynitride
     {term}`boron penetration` and raises the dielectric constant; as a
     deposited film silicon oxynitride serves as an inorganic
     {term}`BARC` and as a {term}`hard mask`. Also "nitrided oxide".
+
+pattern density
+    The fraction of the area within some window that is covered by
+    raised features — metal lines, or the oxide over them. Because a
+    {term}`CMP` pad presses harder on a sparse pattern than on a dense
+    one, the local removal rate and the final thickness depend on it,
+    which is why PDKs set minimum and maximum densities and add dummy
+    fill. The window over which the density matters is the
+    {term}`planarisation length`.
 
 PCM
     Process control monitor: the set of electrical test structures placed
@@ -499,6 +799,14 @@ PECVD
     deposition at 250–400 °C on wafers that already carry metal (see
     {ref}`category-deposition`).
 
+planarisation length
+    The lateral distance over which a {term}`CMP` process averages the
+    {term}`pattern density`: features closer together than this polish
+    as if they were one, features farther apart polish independently.
+    It is a property of the pad, slurry and pressure, and it is the
+    characteristic length in the density-based CMP models (see
+    {ref}`step-090`).
+
 plasma charging
     Build-up of charge on a wafer during plasma processing when the
     electron and ion currents collected by a conductor do not balance;
@@ -506,8 +814,32 @@ plasma charging
     through the thin gate oxide. Also "antenna effect", because the
     damage scales with the area of conductor connected to each gate.
 
+plasma flood gun
+    A device on a high-current ion implanter that fills the space in
+    front of the wafer with a low-energy plasma, usually of argon or
+    xenon, so that electrons from it neutralise the positive charge the
+    ion beam leaves on the resist-covered, insulated areas of the wafer.
+    Without it the charge can break down thin gate oxides. Abbreviated
+    PFG (see {ref}`step-082`).
+
+plug recess
+    The dip of the top of a tungsten plug below the surrounding oxide
+    after the tungsten {term}`CMP` or etch-back, because the tungsten
+    polishes faster than the oxide once the field has cleared. A deep
+    recess thins the liner and the metal that must fill it at the next
+    step and raises the contact resistance (see {ref}`step-100`).
+
+PMD
+    See {term}`pre-metal dielectric`.
+
+PNL
+    See {term}`pulsed nucleation layer`.
+
 pocket
     See {term}`halo`.
+
+poly cut
+    See {term}`nitride cut`.
 
 poly depletion
     The thin depletion layer that forms in a polysilicon gate next to
@@ -537,12 +869,35 @@ popping
     avoided by ashing at low temperature until the crust is gone, or by
     curing the resist before the implant. See {ref}`category-strip`.
 
+post-CMP clean
+    The brush scrub and chemical rinse that follow every {term}`CMP`
+    step, to remove the slurry particles and metal ions the polish
+    leaves behind before they dry on. After an oxide polish the
+    chemistry is dilute ammonia or a surfactant; after a tungsten polish
+    a dilute acid or amine removes the metal and abrasive residues (see
+    {ref}`step-090`).
+
 pre-amorphisation implant
     A heavy-ion implant (usually germanium or silicon) that turns the
     top of the silicon amorphous before a shallow dopant implant, so that
     the dopant cannot channel and the layer regrows by
     {term}`solid-phase epitaxy` with the dopant on lattice sites.
     Abbreviated PAI.
+
+pre-metal dielectric
+    The insulator between the transistors and the first level of wiring,
+    in which the contacts are etched. It is usually a doped glass
+    ({term}`PSG` or {term}`BPSG`), for {term}`gettering` and
+    {term}`gap fill`, sealed with a {term}`cap oxide` and planarised by
+    {term}`CMP`. In SKY130 the layers from {ref}`step-089` to
+    {ref}`step-091`, and the oxide of {ref}`step-105` above the local
+    interconnect, play this part. Abbreviated PMD.
+
+Preston coefficient
+    The proportionality constant {math}`k_p` of the
+    {term}`Preston equation`, which lumps together everything about the
+    pad, slurry and film that is not pressure or velocity. It is found
+    by experiment for each polish process.
 
 Preston equation
     The empirical {term}`CMP` removal-rate law {math}`R = k_p\,P\,v`, in
@@ -571,6 +926,14 @@ PSM
     light with a 180° phase difference so that destructive interference
     sharpens the image.
 
+pulsed nucleation layer
+    Novellus's name for a tungsten {term}`nucleation layer` grown by
+    alternating short pulses of tungsten hexafluoride and a reducing gas
+    (silane or diborane) rather than by flowing them together. Each
+    cycle adds a thin, conformal layer, so the nucleation film can be
+    made very thin with good {term}`step coverage` in narrow holes.
+    Abbreviated PNL (see {ref}`step-099`).
+
 punch-through
     Leakage between the source and drain of a short-channel MOSFET,
     beyond the control of the gate, that occurs when the drain's
@@ -590,6 +953,13 @@ quad implant
     {term}`halo` and {term}`LATID` implants symmetric. Also
     "quad-rotation" or "four-rotation" implant.
 
+queue time
+    The maximum time a wafer may wait between two steps, set by how
+    quickly a surface degrades: an {term}`HF-last` silicon surface
+    re-oxidises, a freshly polished oxide absorbs moisture, an exposed
+    resist loses its latent image. Wafers that exceed it are cleaned
+    again or reworked.
+
 radical oxidation
     Oxidation by atomic oxygen radicals generated from hydrogen and
     oxygen at low pressure, either in a single-wafer {term}`ISSG` chamber
@@ -601,6 +971,23 @@ RCA clean
     The two-step wet clean of Kern and Puotinen: {term}`SC-1`
     (NH₄OH/H₂O₂/H₂O) to remove particles and organics, then {term}`SC-2`
     (HCl/H₂O₂/H₂O) to remove metals.
+
+reactive sputtering
+    Sputtering a metal target in a mixture of argon and a reactive gas,
+    usually nitrogen or oxygen, so that the compound — titanium nitride
+    from a titanium target — forms on the wafer. The process has a
+    hysteresis: above a certain gas flow the target itself nitrides and
+    the rate falls, so the flow is controlled to stay near that
+    transition (see {ref}`step-101`).
+
+reflow
+    Heating a doped glass ({term}`PSG` or {term}`BPSG`) until it softens
+    and flows, which rounds sharp steps and fills the gaps between gates
+    or lines. The temperature needed falls as the dopant content rises;
+    the constraint is the {term}`thermal budget` of the junctions
+    beneath. {term}`CMP` has largely replaced reflow as the way of
+    planarising, but a short reflow can still be used for gap fill (see
+    {ref}`step-092`).
 
 resist trim
     A short isotropic plasma etch of the developed resist before the
@@ -642,6 +1029,14 @@ RTA
 RTP
     Rapid thermal processing: the family of single-wafer lamp-heated
     processes (anneal, oxidation, nitridation, silicidation).
+
+SACVD
+    Sub-atmospheric chemical vapour deposition: thermal CVD of silicon
+    dioxide from {term}`TEOS` and ozone at a pressure well above that of
+    {term}`LPCVD` but below atmospheric. The ozone–TEOS reaction gives a
+    film that flows into narrow gaps as it deposits, which makes it a
+    gap-filling alternative to {term}`HDP-CVD` for pre-metal and
+    inter-metal dielectrics (see {ref}`step-089`).
 
 salicide
     Self-aligned silicide: a metal (Ti, Co, Ni) deposited over the whole
@@ -730,6 +1125,12 @@ SPC
     Statistical process control: charting of in-line measurements against
     control limits so that drift is detected before it affects yield.
 
+SPE
+    Solid-phase epitaxy; see {term}`solid-phase epitaxy`. In the step
+    list used in this reference `SPE` is also the code of the spacer
+    nitride etch ({ref}`step-077`), which has nothing to do with
+    epitaxy.
+
 spike anneal
     An {term}`RTA` with no soak: the wafer is ramped as fast as the lamps
     allow to the peak temperature and cooled at once. The short time at
@@ -740,6 +1141,14 @@ SPM
     Sulfuric-peroxide mixture (also "piranha"): concentrated H₂SO₄ and
     30 % H₂O₂, typically 3:1 to 4:1, self-heating to above 100 °C, used
     to strip and oxidise organic residues (see {ref}`category-strip`).
+
+sputter etch
+    A short argon-ion bombardment of the wafer in a {term}`PVD`
+    chamber, just before the metal is deposited, to remove the native
+    oxide and contamination from the surface the film must contact. It
+    is the in-vacuum counterpart of an {term}`HF-last` wet clean; too
+    much of it redeposits material on the walls of the holes. Also
+    "pre-clean" or "sputter clean".
 
 SRAF
     Sub-resolution assist feature: a narrow bar placed on the mask next
@@ -763,6 +1172,29 @@ STI
 
 straggle
     See {term}`projected range`.
+
+stress-induced voiding
+    The opening of voids in a metal line, with no current flowing, as
+    the tensile stress locked into it by cooling from the deposition or
+    dielectric temperature relaxes by atoms diffusing away from one
+    point. It is a reliability failure of aluminium lines under stiff
+    dielectrics; a refractory underlayer keeps the line conducting
+    across the void. Also "stress migration".
+
+subtractive metallisation
+    Making wiring by depositing a blanket metal film, printing the lines
+    in resist and etching away the metal between them, after which the
+    dielectric is deposited over the lines and planarised. It is how
+    aluminium levels are made, including SKY130's ({ref}`step-113`,
+    {ref}`step-114`); the alternative is {term}`damascene`.
+
+swing curve
+    The periodic rise and fall of a photoresist's sensitivity, and hence
+    of the printed linewidth, as the resist thickness changes, caused by
+    interference between light reflected from the top of the resist and
+    light reflected from the substrate beneath it. Its amplitude is
+    largest on shiny substrates such as metal; a {term}`BARC` or
+    {term}`TARC` flattens it (see {ref}`step-113`).
 
 TARC
     Top anti-reflective coating: a thin, low-index layer spun on top of
@@ -807,6 +1239,22 @@ van der Pauw structure
     A symmetric four-contact test structure (Greek cross or cloverleaf)
     from which the sheet resistance of a film is obtained by van der
     Pauw's theorem, independent of the structure's size.
+
+via
+    A hole through an {term}`inter-metal dielectric`, filled with metal,
+    that connects one level of wiring to the next. In SKY130 the vias,
+    like the contacts, are tungsten-filled, and the word "contact" is
+    kept for the connections from metal-1 down to the local interconnect
+    and from the local interconnect down to silicon and poly.
+
+via poisoning
+    A via that ends up open or highly resistive because moisture or
+    other volatiles from the surrounding dielectric outgassed into the
+    hole while the metal was being deposited and oxidised its base.
+    Dielectrics that absorb water — spin-on glasses, porous or
+    hydrogen-rich oxides — are the usual cause; a dense
+    {term}`cap oxide` and a {term}`degas` before deposition prevent it
+    (see {ref}`step-117`).
 
 Vt
     Threshold voltage: the gate voltage at which a MOSFET turns on; set
