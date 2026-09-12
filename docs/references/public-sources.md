@@ -23,10 +23,10 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 612
+written page has exactly one entry here; the inventory holds 748
 keyed entries as of 2026-09-12, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9 and 8.10 were added to cover the sources the writers of the
+8.8, 8.9, 8.10 and 8.11 were added to cover the sources the writers of the
 step and category pages introduced; a "Label ↔ key" note marks the few
 cases where one source has two keys.
 
@@ -4495,6 +4495,985 @@ Systems*.
 <https://www.semiconductoronline.com/doc/s600-series-parametric-test-systems-0001>
 Product description of the Keithley S600 parametric test systems. Used
 on the test category page. Tier: cross-check.
+
+### 8.11 Gate, poly-resistor and tip/halo module sources
+
+Sources introduced by the writers of the polysilicon gate module
+(steps 048–063) and the tip/halo module (steps 064–075) that had no
+entry above. Each label on those pages is the key below in lower case;
+the citation is the one given in the page footnote. Grouped by the
+sub-module that first cited the source; an entry names every page that
+uses it. None of these sources describes SkyWater unless the entry
+says so.
+
+#### Polysilicon gate film, gate pre-doping and poly re-oxidation (steps 048, 050 and 063)
+
+**ARORA-1995** — N. D. Arora, E. Rios and C.-L. Huang, "Modeling the
+polysilicon depletion effect and its impact on submicrometer CMOS
+circuit performance", *IEEE Transactions on Electron Devices* **42**(5),
+935–943 (1995). <https://doi.org/10.1109/16.381991> Models of the
+poly-depletion effect and its circuit penalty. Used on steps 048 and
+050. Tier: deep dive.
+
+**BAUER-1998** — A. J. Bauer, P. Mayer, L. Frey, V. Häublein and H.
+Ryssel, "Implantation of nitrogen into polysilicon to suppress boron
+penetration through the gate oxide", *Proc. 1998 International
+Conference on Ion Implantation Technology*, vol. 1, pp. 30–33.
+<https://doi.org/10.1109/IIT.1999.812044> Nitrogen implantation into
+poly to suppress boron penetration. Used on step 050. Tier: deep dive.
+
+**CHAN-1987** — T. Y. Chan, A. T. Wu, P. K. Ko and C. Hu, "Effects of
+the gate-to-drain/source overlap on MOSFET characteristics", *IEEE
+Electron Device Letters* **8**(7), 326–328 (1987).
+<https://doi.org/10.1109/EDL.1987.26647> The gate-to-drain overlap and
+MOSFET characteristics. Used on step 063. Tier: deep dive.
+
+**CHRISTEL-1981** — L. A. Christel, J. F. Gibbons and S. Mylroie,
+"Recoil range distributions in multilayered targets", *Nuclear
+Instruments and Methods* **182–183**, 187–198 (1981).
+<https://doi.org/10.1016/0029-554X(81)90687-X> Recoil range
+distributions in multilayer targets: knock-on through a screen oxide.
+Used on step 063. Tier: deep dive.
+
+**CLAASSEN-1982** — W. A. P. Claassen, J. Bloem, W. G. J. N. Valkenburg
+and C. H. J. van den Brekel, "The deposition of silicon from silane in a
+low-pressure hot-wall system", *Journal of Crystal Growth* **57**(2),
+259–266 (1982). <https://doi.org/10.1016/0022-0248(82)90481-X> Silane
+deposition kinetics in a low-pressure hot-wall reactor. Used on step
+048. Tier: deep dive.
+
+**DOYLE-1993** — B. S. Doyle and A. Philipossian, "p-channel hot-carrier
+optimization of RNO gate dielectrics through the reoxidation step",
+*IEEE Electron Device Letters* **14**(4), 161–163 (1993).
+<https://doi.org/10.1109/55.215164> P-channel hot-carrier optimisation
+through the re-oxidation step. Used on step 063. Tier: deep dive.
+
+**HAO-1997** — M.-Y. Hao, D. Nayak and R. Rakkhit, "Impact of boron
+penetration at p⁺-poly/gate oxide interface on deep-submicron device
+reliability for dual-gate CMOS technologies", *IEEE Electron Device
+Letters* **18**(5), 215–217 (1997). <https://doi.org/10.1109/55.568770>
+Reliability impact of boron penetration in dual-gate CMOS. Used on step
+050. Tier: deep dive.
+
+**HARBEKE-1984** — G. Harbeke, L. Krausbauer, E. F. Steigmeier, A. E.
+Widmer, H. F. Kappert and G. Neugebauer, "Growth and Physical Properties
+of LPCVD Polycrystalline Silicon Films", *Journal of The Electrochemical
+Society* **131**(3), 675–682 (1984). <https://doi.org/10.1149/1.2115672>
+Growth and physical properties of LPCVD poly, including the amorphous
+regime. Used on step 048. Tier: deep dive.
+
+**HATALIS-1988** — M. K. Hatalis and D. W. Greve, "Large grain
+polycrystalline silicon by low-temperature annealing of low-pressure
+chemical vapor deposited amorphous silicon films", *Journal of Applied
+Physics* **63**(7), 2260–2266 (1988). <https://doi.org/10.1063/1.341065>
+Large-grain poly from low-temperature annealing of LPCVD a-Si. Used on
+step 048. Tier: deep dive.
+
+**HO-1979** — C. P. Ho and J. D. Plummer, "Si/SiO₂ Interface Oxidation
+Kinetics: A Physical Model for the Influence of High Substrate Doping
+Levels: I. Theory", *Journal of The Electrochemical Society* **126**(9),
+1516–1522 (1979). <https://doi.org/10.1149/1.2129320> The physical model
+of oxidation kinetics at high substrate doping. Used on step 063. Tier:
+deep dive.
+
+**HU-1985** — G. J. Hu and R. H. Bruce, "Design tradeoffs between
+surface and buried-channel FET's", *IEEE Transactions on Electron
+Devices* **32**(3), 584–588 (1985).
+<https://doi.org/10.1109/T-ED.1985.21981> The design trade-offs between
+surface- and buried-channel FETs, i.e. between p⁺ and n⁺ gates on PMOS.
+Used on step 050. Tier: deep dive.
+
+**IVERSON-1987** — R. B. Iverson and R. Reif, "Recrystallization of
+amorphized polycrystalline silicon films on SiO₂: Temperature dependence
+of the crystallization parameters", *Journal of Applied Physics*
+**62**(5), 1675–1681 (1987). <https://doi.org/10.1063/1.339591> The
+temperature dependence of solid-phase crystallisation kinetics of
+silicon films on SiO₂. Used on step 048. Tier: deep dive.
+
+**JOSHI-1992** — A. B. Joshi, G. Q. Lo, D. K. Shih and D.-L. Kwong,
+"Effect of rapid thermal reoxidation on the electrical properties of
+rapid thermally nitrided thin-gate oxides", *IEEE Transactions on
+Electron Devices* **39**(4), 883–892 (1992).
+<https://doi.org/10.1109/16.127479> Rapid thermal re-oxidation of
+rapidly nitrided thin gate oxides. Used on step 063. Tier: deep dive.
+
+**JOUBERT-1987** — P. Joubert, B. Loisel, Y. Chouan and L. Haji, "The
+Effect of Low Pressure on the Structure of LPCVD Polycrystalline Silicon
+Films", *Journal of The Electrochemical Society* **134**(10), 2541–2545
+(1987). <https://doi.org/10.1149/1.2100239> How deposition pressure
+changes the structure of LPCVD poly films. Used on step 048. Tier: deep
+dive.
+
+**KAMINS-1972** — T. I. Kamins, J. Manoliu and R. N. Tucker, "Diffusion
+of Impurities in Polycrystalline Silicon", *Journal of Applied Physics*
+**43**(1), 83–91 (1972). <https://doi.org/10.1063/1.1660842> Dopant
+diffusion in poly, the mechanism that spreads the implant through the
+film. Used on steps 048, 050 and 056. Tier: deep dive.
+
+**KAMINS-1979** — T. I. Kamins, "Oxidation of Phosphorus-Doped Low
+Pressure and Atmospheric Pressure CVD Polycrystalline-Silicon Films",
+*Journal of The Electrochemical Society* **126**(5), 838–844 (1979).
+<https://doi.org/10.1149/1.2129152> Oxidation of phosphorus-doped LPCVD
+and APCVD poly films. Used on step 063. Tier: deep dive.
+
+**KAMINS-1998** — T. Kamins, *Polycrystalline Silicon for Integrated
+Circuits and Displays*, 2nd ed., Kluwer Academic, 1998.
+<https://doi.org/10.1007/978-1-4615-5577-3> The monograph on deposition,
+structure, doping, oxidation and electrical properties of poly films.
+Used on steps 048, 050, 053, 055, 056 and 063. Tier: high-level / deep
+dive.
+
+**KINSBRON-1983** — E. Kinsbron, M. Sternheim and R. Knoell,
+"Crystallization of amorphous silicon films during low pressure chemical
+vapor deposition", *Applied Physics Letters* **42**(9), 835–837 (1983).
+<https://doi.org/10.1063/1.94080> Crystallisation of a-Si films during
+the deposition itself, the hazard that sets the deposition temperature
+margin. Used on step 048. Tier: deep dive.
+
+**KODA-1993** — M. Koda, Y. Shida, J. Kawaguchi and Y. Kaneko,
+"Improving gate oxide integrity in p⁺ pMOSFET by using large grain size
+polysilicon gate", *IEDM 1993 Technical Digest*, pp. 471–474.
+<https://doi.org/10.1109/IEDM.1993.347308> Gate-oxide integrity improved
+by large-grain poly gates. Used on step 048. Tier: deep dive.
+
+**LAI-1998** — C. S. Lai, T. S. Chao, T. F. Lei, C. L. Lee, T. Y. Huang
+and C. Y. Chang, "Improvement of Reliability of Metal-Oxide
+Semiconductor Field-Effect Transistors with N₂O Nitrided Gate Oxide and
+N₂O Polysilicon Gate Reoxidation", *Japanese Journal of Applied Physics*
+**37**(10R), 5507 (1998). <https://doi.org/10.1143/JJAP.37.5507>
+Reliability improvement from N₂O polysilicon-gate re-oxidation. Used on
+step 063. Tier: deep dive.
+
+**LU-1989** — C.-Y. Lu, J. M. Sung, H. C. Kirsch, S. J. Hillenius, T. E.
+Smith and L. Manchanda, "Anomalous C-V characteristics of implanted poly
+MOS structure in n⁺/p⁺ dual-gate CMOS technology", *IEEE Electron Device
+Letters* **10**(5), 192–194 (1989). <https://doi.org/10.1109/55.31717>
+Anomalous C–V of implanted-poly gates in an n⁺/p⁺ dual-gate technology,
+showing what incomplete gate doping looks like electrically. Used on
+step 050. Tier: deep dive.
+
+**MANDURAH-1981** — M. M. Mandurah, K. C. Saraswat and T. I. Kamins, "A
+model for conduction in polycrystalline silicon — Part I: Theory", *IEEE
+Transactions on Electron Devices* **28**(10), 1163–1171 (1981).
+<https://doi.org/10.1109/T-ED.1981.20504> Grain-boundary trapping and
+dopant segregation in doped poly, the model behind poly resistor and
+gate doping. Used on steps 048, 050, 052, 053 and 056. Tier: deep dive.
+
+**MEYERSON-1984** — B. S. Meyerson and W. Olbricht, "Phosphorus-Doped
+Polycrystalline Silicon via LPCVD: I. Process Characterization",
+*Journal of The Electrochemical Society* **131**(10), 2361–2365 (1984).
+<https://doi.org/10.1149/1.2115258> In-situ phosphorus doping of LPCVD
+poly and its effect on deposition rate, the alternative to an implanted
+gate. Used on step 048. Tier: deep dive.
+
+**PAN-1994** — Y. Pan, K. K. Ng and V. Kwong, "Comparison of gate-edge
+effects on the hot-carrier induced degradation of LDD N- and P-channel
+MOSFETs", *Solid-State Electronics* **37**(1), 77–82 (1994).
+<https://doi.org/10.1016/0038-1101(94)90108-2> Gate-edge effects on
+hot-carrier degradation of LDD devices. Used on step 063. Tier: deep
+dive.
+
+**RIOS-1994** — R. Rios, N. D. Arora and C.-L. Huang, "An analytic
+polysilicon depletion effect model for MOSFETs", *IEEE Electron Device
+Letters* **15**(4), 129–131 (1994). <https://doi.org/10.1109/55.285407>
+Models of the poly-depletion effect and its circuit penalty. Used on
+step 050. Tier: deep dive.
+
+**SARASWAT-1982** — K. C. Saraswat and H. Singh, "Thermal Oxidation of
+Heavily Phosphorus-Doped Thin Films of Polycrystalline Silicon",
+*Journal of The Electrochemical Society* **129**(10), 2321–2326 (1982).
+<https://doi.org/10.1149/1.2123503> Oxidation of heavily
+phosphorus-doped thin poly films, the n⁺ gate sidewall case. Used on
+step 063. Tier: deep dive.
+
+**SCHUEGRAF-1993** — K. F. Schuegraf, C. C. King and C. Hu, "Impact of
+polysilicon depletion in thin oxide MOS technology", *1993 International
+Symposium on VLSI Technology, Systems, and Applications (VLSI-TSA)*, pp.
+86–90. <https://doi.org/10.1109/VTSA.1993.263633> The impact of poly
+depletion in thin-oxide MOS technology. Used on step 050. Tier: deep
+dive.
+
+**SUNAMI-1978** — H. Sunami, "Thermal Oxidation of Phosphorus-Doped
+Polycrystalline Silicon in Wet Oxygen", *Journal of The Electrochemical
+Society* **125**(6), 892–897 (1978). <https://doi.org/10.1149/1.2131586>
+Thermal oxidation of phosphorus-doped poly in wet oxygen. Used on step
+063. Tier: deep dive.
+
+**SUNG-1989** — J. M. Sung, C. Y. Lu, M. L. Chen, S. J. Hillenius, W. S.
+Lindenberger, L. Manchanda, T. E. Smith and S. J. Wang, "Fluorine effect
+on boron diffusion of p⁺ gate devices (MOSFETs)", *IEDM 1989 Technical
+Digest*, pp. 447–450. <https://doi.org/10.1109/IEDM.1989.74318> The
+fluorine effect on boron diffusion in p⁺-gate devices. Used on step 050.
+Tier: deep dive.
+
+**VOUTSAS-1992** — A. T. Voutsas and M. K. Hatalis, "Structure of
+As-Deposited LPCVD Silicon Films at Low Deposition Temperatures and
+Pressures", *Journal of The Electrochemical Society* **139**(9),
+2659–2665 (1992). <https://doi.org/10.1149/1.2221280> The structure of
+as-deposited LPCVD films at low temperature and pressure: where the
+amorphous/polycrystalline boundary lies. Used on step 048. Tier: deep
+dive.
+
+**WIKI-ASI** — Wikipedia, *Amorphous silicon*.
+<https://en.wikipedia.org/wiki/Amorphous_silicon> Amorphous silicon, the
+form in which the gate film is deposited. Used on step 048. Tier:
+high-level.
+
+**WIKI-POLYDEP** — Wikipedia, *Polysilicon depletion effect*.
+<https://en.wikipedia.org/wiki/Polysilicon_depletion_effect> The
+polysilicon depletion effect that the gate pre-dope is chosen to
+suppress. Used on step 050. Tier: high-level.
+
+**WIKI-SILANE** — Wikipedia, *Silane*.
+<https://en.wikipedia.org/wiki/Silane> Silane, the poly deposition
+precursor, and its hazards. Used on step 048. Tier: high-level.
+
+**WONG-1988** — C. Y. Wong, J. Y. Sun, Y. Taur, C. S. Oh, R. Angelucci
+and B. Davari, "Doping of n⁺ and p⁺ polysilicon in a dual-gate CMOS
+process", *IEDM 1988 Technical Digest*, pp. 238–241.
+<https://doi.org/10.1109/IEDM.1988.32800> Doping n⁺ and p⁺ poly in a
+dual-gate CMOS process, the alternative to a single pre-dope. Used on
+steps 050 and 058. Tier: deep dive.
+
+**WU-1993** — S. L. Wu, C. L. Lee and T. F. Lei, "Suppression of boron
+penetration into an ultra-thin gate oxide (≤7 nm) by using a
+stacked-amorphous-silicon (SAS) film", *IEDM 1993 Technical Digest*, pp.
+329–332. <https://doi.org/10.1109/IEDM.1993.347341> The
+stacked-amorphous-silicon gate, an alternative to a single poly film.
+Used on step 048. Tier: deep dive.
+
+#### Poly resistor implants (steps 049 and 052–056)
+
+**AMEMIYA-1979** — Y. Amemiya, T. Ono and K. Kato, "Electrical trimming
+of heavily doped polycrystalline silicon resistors", *IEEE Transactions
+on Electron Devices* **26**(11), 1738–1742 (1979).
+<https://doi.org/10.1109/T-ED.1979.19679> Electrical trimming of heavily
+doped poly resistors. Used on step 049. Tier: deep dive.
+
+**ASHUAH-2009** — I. Ashuah, E. N. Shauly and Y. Shacham-Diamand,
+"Improvement of Temperature Coefficient of Resistance by Co-Implantation
+of Argon or Xenon or Fluorine in Boron Implanted Polysilicon Resistors",
+*IEEE Transactions on Semiconductor Manufacturing* **22**(2), 305–316
+(2009). <https://doi.org/10.1109/TSM.2009.2017655> Improving the TCR of
+boron-implanted poly resistors by co-implantation, a modern example of
+resistor-implant engineering. Used on steps 052, 053 and 056. Tier: deep
+dive.
+
+**CHEN-2000** — C.-H. Chen, Y.-K. Fang, M.-H. Kuo, Y.-L. Hsu and S.-L.
+Hsu, "A DC current stress method to improve the voltage coefficient of
+resistance of the polysilicon resistor in high voltage CMOS technology",
+*Solid-State Electronics* **44**(10), 1743–1746 (2000).
+<https://doi.org/10.1016/S0038-1101(00)00138-6> The voltage coefficient
+of poly resistors in a high-voltage CMOS technology. Used on steps 052,
+053, 055 and 056. Tier: deep dive.
+
+**KAMINS-1971** — T. I. Kamins, "Hall Mobility in Chemically Deposited
+Polycrystalline Silicon", *Journal of Applied Physics* **42**(11),
+4357–4365 (1971). <https://doi.org/10.1063/1.1659780> Hall mobility in
+deposited poly, the early data behind the models. Used on step 049.
+Tier: deep dive.
+
+**KATO-1996** — K. Kato and T. Ono, "Change in Temperature Coefficient
+of Resistance of Heavily Doped Polysilicon Resistors Caused by
+Electrical Trimming", *Japanese Journal of Applied Physics* **35**(8R),
+4209 (1996). <https://doi.org/10.1143/JJAP.35.4209> The temperature
+coefficient of heavily doped poly resistors and how processing changes
+it. Used on steps 052 and 055. Tier: deep dive.
+
+**LANE-1989** — W. A. Lane and G. T. Wrixon, "The design of thin-film
+polysilicon resistors for analog IC applications", *IEEE Transactions on
+Electron Devices* **36**(4), 738–744 (1989).
+<https://doi.org/10.1109/16.22479> The design of thin-film poly
+resistors for analogue ICs. Used on steps 049, 053 and 056. Tier: deep
+dive.
+
+**LU-1981** — N. C.-C. Lu, L. Gerzberg, C.-Y. Lu and J. D. Meindl,
+"Modeling and optimization of monolithic polycrystalline silicon
+resistors", *IEEE Transactions on Electron Devices* **28**(7), 818–830
+(1981). <https://doi.org/10.1109/T-ED.1981.20437> Modelling and
+optimisation of monolithic poly resistors: why the doping level sets
+everything. Used on steps 049, 053, 055 and 056. Tier: deep dive.
+
+**LU-1982** — N. C.-C. Lu, L. Gerzberg and J. D. Meindl, "Scaling
+limitations of monolithic polycrystalline-silicon resistors in VLSI
+static RAM's and logic", *IEEE Transactions on Electron Devices*
+**29**(4), 682–690 (1982). <https://doi.org/10.1109/T-ED.1982.20762>
+Scaling limits of poly resistors in SRAM and logic, including the
+end-resistance problem. Used on steps 052 and 055. Tier: deep dive.
+
+**ODWYER-2009** — T. G. O'Dwyer and M. P. Kennedy, "Comparison of
+resistor matching performance of polysilicon films in a CMOS process",
+*2009 Ph.D. Research in Microelectronics and Electronics (PRIME)*, pp.
+80–83. <https://doi.org/10.1109/RME.2009.5201322> Matching performance
+of different poly resistor films in a CMOS process. Used on steps 049
+and 052. Tier: deep dive.
+
+**SETO-1975** — J. Y. W. Seto, "The electrical properties of
+polycrystalline silicon films", *Journal of Applied Physics* **46**(12),
+5247–5254 (1975). <https://doi.org/10.1063/1.321593> The grain-boundary
+trapping theory of poly conduction that explains the steep dependence of
+resistance on dose. Used on steps 049, 052, 053, 055 and 056. Tier: deep
+dive.
+
+**TSANG-2014** — Y. Tsang, R. Shiono, G. Pfeffer and S. Kwan,
+"Characterization and Understanding of High Valued Polysilicon Resistor
+Resistance Variation Across a Resistor Bank With Parallel Resistor
+Fingers", *IEEE Transactions on Semiconductor Manufacturing* **27**(2),
+294–300 (2014). <https://doi.org/10.1109/TSM.2014.2311375> Resistance
+variation across banks of high-value poly resistors, a modern
+manufacturing view. Used on steps 049, 052, 055 and 056. Tier: deep
+dive.
+
+**UPRETI-1991** — N. K. Upreti and S. Singh, "Grain boundary effect on
+the electrical properties of boron-doped polysilicon films", *Bulletin
+of Materials Science* **14**(6), 1331–1341 (1991).
+<https://doi.org/10.1007/BF02823239> Grain-boundary effects on the
+electrical properties of boron-doped poly films. Used on steps 052, 053
+and 055. Tier: deep dive.
+
+**WRIGHT-2010** — S. W. Wright, C. P. Judge, M. J. Lee, D. F. Bowers, M.
+Dunbar and C. D. Wilson, "High sheet resistance, low temperature
+coefficient of resistance resistor films for integrated circuits",
+*Journal of Vacuum Science & Technology B* **28**(4), 834–840 (2010).
+<https://doi.org/10.1116/1.3466531> High-sheet-resistance, low-TCR
+resistor films for ICs. Used on steps 049, 053, 055 and 056. Tier: deep
+dive.
+
+#### Resist strips after the poly and tip implants (steps 051, 054, 057, 067, 070 and 074)
+
+**LEE-KT-1999** — K. T. Lee, "Etch Rate of Silicon and Silicon Dioxide
+in Ammonia-Peroxide Solutions Measured by Quartz Crystal Microbalance
+Technique", *Electrochemical and Solid-State Letters* **2**(4), 172
+(1999). <https://doi.org/10.1149/1.1390773> Etch rates of silicon and
+SiO₂ in ammonia–peroxide (SC-1) solutions, the constraint on cleaning a
+bare poly film. Used on steps 051, 054 and 057. Tier: deep dive.
+
+**PRITCHARD-1998** — D. C. Pritchard, W. Montgomery, J. P. Kimball and
+J. A. Albelo, "Photoresist performance evaluation of implant resist
+systems", *Proc. SPIE* **3333**, Advances in Resist Technology and
+Processing XV, 1337 (1998). <https://doi.org/10.1117/12.312367>
+Performance evaluation of implant resist systems, including post-implant
+strippability. Used on step 051. Tier: deep dive.
+
+**RUBIN-2000** — L. Rubin, D. Whiteside, C. Norton, A. Stevenson and C.
+Ukah, "Improved photoresist integrity by UV photostabilization for high
+dose, high energy ion implants", *Proc. 2000 International Conference on
+Ion Implantation Technology*, pp. 817–820.
+<https://doi.org/10.1109/IIT.2000.924279> UV photostabilisation of
+resist before high-dose implants, the implant-side remedy for resist
+popping. Used on step 067. Tier: deep dive.
+
+**YEGNASUBRAMANIAN-1992** — S. Yegnasubramanian, C. W. Draper and C. W.
+Pearce, "Tem Investigation of Implanted Photoresist Residues Remaining
+After Oxygen Plasma Ashing", *MRS Online Proceedings Library* **265**,
+295–300 (1992). <https://doi.org/10.1557/PROC-265-295> TEM of the
+implanted-resist residues left after oxygen-plasma ashing. Used on step
+067. Tier: deep dive.
+
+#### Gate hard mask, ARC, lithography and etch (steps 058, 059, 061 and 062)
+
+**ASENOV-2003** — A. Asenov, S. Kaya and A. R. Brown, "Intrinsic
+parameter fluctuations in decananometer MOSFETs introduced by gate line
+edge roughness", *IEEE Transactions on Electron Devices* **50**(5),
+1254–1260 (2003). <https://doi.org/10.1109/TED.2003.813457> Device
+parameter fluctuations caused by gate line-edge roughness. Used on step
+061. Tier: deep dive.
+
+**AUSSCHNITT-1999** — C. P. Ausschnitt, "Distinguishing dose from
+defocus for in-line lithography control", *Proc. SPIE* **3677**,
+Metrology, Inspection, and Process Control for Microlithography XIII,
+140 (1999). <https://doi.org/10.1117/12.350800> Separating dose from
+defocus for in-line lithography control. Used on step 061. Tier: deep
+dive.
+
+**BECKER-1987** — F. S. Becker, D. Pawlik, H. Anzinger and A. Spitzer,
+"Low-pressure deposition of high-quality SiO₂ films by pyrolysis of
+tetraethylorthosilicate", *Journal of Vacuum Science & Technology B*
+**5**(6), 1555–1563 (1987). <https://doi.org/10.1116/1.583673>
+Low-pressure TEOS oxide deposition. Used on step 059. Tier: deep dive.
+
+**BELL-1996** — F. H. Bell and O. Joubert, "Polysilicon gate etching in
+high density plasmas. III. X-ray photoelectron spectroscopy
+investigation of sidewall passivation of silicon trenches using an oxide
+hard mask", *Journal of Vacuum Science & Technology B* **14**(4),
+2493–2499 (1996). <https://doi.org/10.1116/1.588758> Sidewall
+passivation of silicon etched with an oxide hard mask. Used on steps 059
+and 062. Tier: deep dive.
+
+**BRUNNER-1997** — T. A. Brunner, "Impact of lens aberrations on optical
+lithography", *IBM Journal of Research and Development* **41**(1.2),
+57–67 (1997). <https://doi.org/10.1147/rd.411.0057> How lens aberrations
+show up as CD errors at low k₁. Used on step 061. Tier: deep dive.
+
+**CHAPPLE-SOKOL-1989** — J. D. Chapple-Sokol, E. Tierney and J. Batey,
+"RF Power Dependence of the Material Properties of PECVD Silicon
+Dioxide", *MRS Proceedings* **165** (1989).
+<https://doi.org/10.1557/PROC-165-113> RF-power dependence of PECVD
+oxide properties. Used on step 059. Tier: deep dive.
+
+**CLAASSEN-1985** — W. A. P. Claassen, W. G. J. N. Valkenburg, M. F. C.
+Willemsen and W. M. v. d. Wijgert, "Influence of Deposition Temperature,
+Gas Pressure, Gas Phase Composition, and RF Frequency on Composition and
+Mechanical Stress of Plasma Silicon Nitride Layers", *Journal of The
+Electrochemical Society* **132**(4), 893–898 (1985).
+<https://doi.org/10.1149/1.2113980> PECVD nitride composition and stress
+versus deposition conditions. Used on step 058. Tier: deep dive.
+
+**CUNGE-2002** — G. Cunge, R. L. Inglebert, O. Joubert, L. Vallier and
+N. Sadeghi, "Ion flux composition in HBr/Cl₂/O₂ and HBr/Cl₂/O₂/CF₄
+chemistries during silicon etching in industrial high-density plasmas",
+*Journal of Vacuum Science & Technology B* **20**(5), 2137–2148 (2002).
+<https://doi.org/10.1116/1.1511219> Ion flux composition in industrial
+HBr/Cl₂/O₂ high-density plasmas. Used on step 062. Tier: deep dive.
+
+**CZECH-1993** — G. Czech, L. Mader, K. H. Küsters, P. Küppers and A.
+Gutmann, "Reduction of linewidth variation for the gate conductor level
+by lithography based on a new antireflective layer", *Microelectronic
+Engineering* **21**(1–4), 51–56 (1993).
+<https://doi.org/10.1016/0167-9317(93)90025-Z> Linewidth-variation
+reduction at the gate level with a new ARC. Used on step 058. Tier: deep
+dive.
+
+**DESVOIVRES-2000** — L. Desvoivres, L. Vallier and O. Joubert, "Sub-0.1
+μm gate etch processes: Towards some limitations of the plasma
+technology?", *Journal of Vacuum Science & Technology B* **18**(1),
+156–165 (2000). <https://doi.org/10.1116/1.591168> Sub-0.1 µm gate etch
+and the limits of the technology. Used on steps 058 and 062. Tier: deep
+dive.
+
+**DETTER-2003** — X. Detter, R. Palla, I. Thomas-Boutherin, E. Pargon,
+G. Cunge, O. Joubert and L. Vallier, "Impact of chemistry on profile
+control of resist masked silicon gates etched in high density
+halogen-based plasmas", *Journal of Vacuum Science & Technology B*
+**21**(5), 2174–2183 (2003). <https://doi.org/10.1116/1.1612932>
+Chemistry and profile control of resist-masked gates. Used on step 062.
+Tier: deep dive.
+
+**DIJKSTRA-1993** — H. J. Dijkstra and C. A. H. Juffermans,
+"Optimization of antireflection layers for deep-UV lithography", *Proc.
+SPIE* **1927**, Optical/Laser Microlithography VI, 275 (1993).
+<https://doi.org/10.1117/12.150432> Optimisation of anti-reflection
+layers for deep-UV. Used on steps 058 and 059. Tier: deep dive.
+
+**GALLATIN-2005** — G. M. Gallatin, "Resist blur and line edge
+roughness", *Proc. SPIE* **5754**, Optical Microlithography XVIII, 4
+(2005). <https://doi.org/10.1117/12.607233> Resist blur and line-edge
+roughness. Used on step 061. Tier: deep dive.
+
+**GOLDFARB-2004** — D. L. Goldfarb, A. P. Mahorowala, G. M. Gallatin, K.
+E. Petrillo, K. Temple, M. Angelopoulos, S. Rasgon, H. H. Sawin, S. D.
+Allen, M. C. Lawson and R. W. Kwong, "Effect of thin-film imaging on
+line edge roughness transfer to underlayers during etch processes",
+*Journal of Vacuum Science & Technology B* **22**(2), 647–653 (2004).
+<https://doi.org/10.1116/1.1667513> Line-edge roughness transfer from
+resist to the underlying layers during etch. Used on step 062. Tier:
+deep dive.
+
+**HE-1998** — Q. He, W. W. Lee, M. A. Hanratty, D. Rogers, G. Xing, A.
+Singh and E. Zielinski, "Inorganic antireflective coating process for
+deep-UV lithography", *Proc. SPIE* **3334**, Optical Microlithography
+XI, 337 (1998). <https://doi.org/10.1117/12.310763> An inorganic ARC
+process for deep-UV in production. Used on steps 058 and 059. Tier: deep
+dive.
+
+**HINSBERG-1992** — W. D. Hinsberg, S. A. MacDonald, N. J. Clecak and C.
+D. Snyder, "Quantitation of airborne chemical contamination of
+chemically amplified resists using radiochemical analysis", *Proc. SPIE*
+**1672**, Advances in Resist Technology and Processing IX, 24 (1992).
+<https://doi.org/10.1117/12.59723> Quantitative measurement of airborne
+base contamination of chemically amplified resists. Used on step 059.
+Tier: deep dive.
+
+**HSU-2004** — L. Hsu, "An optical interference model to analyze
+interferometry endpoint signal for process control of polysilicon gate
+etch", *2004 Semiconductor Manufacturing Technology Workshop
+Proceedings*, pp. 111–114. <https://doi.org/10.1109/SMTW.2004.1393740>
+An interferometry endpoint model for poly gate etch process control.
+Used on step 062. Tier: deep dive.
+
+**JOUBERT-2003** — O. Joubert, E. Pargon, J. Foucher, X. Detter, G.
+Cunge and L. Vallier, "Nanometer scale linewidth control during etching
+of polysilicon gates in high-density plasmas", *Microelectronic
+Engineering* **69**(2–4), 350–357 (2003).
+<https://doi.org/10.1016/S0167-9317(03)00321-6> Nanometre-scale
+linewidth control in poly gate etching. Used on step 062. Tier: deep
+dive.
+
+**KANG-2007** — S. J. Kang, Y. H. Joung and S. Y. Mun, "New Gate CD
+Control Technology Using CF₄ Plasma Treatment Following HBr/O₂ Plasma
+Treatment Step in Gate Etch Process Using Organic BARC", *IEEE
+Transactions on Semiconductor Manufacturing* **20**(2), 150–153 (2007).
+<https://doi.org/10.1109/TSM.2007.895206> Gate CD control by plasma
+treatment of an organic BARC in the gate etch. Used on steps 061 and
+062. Tier: deep dive.
+
+**KIM-2007** — D.-K. Kim, Y. K. Kim and H. Lee, "A study of the role of
+HBr and oxygen on the etch selectivity and the post-etch profile in a
+polysilicon/oxide etch using HBr/O₂ based high density plasma for
+advanced DRAMs", *Materials Science in Semiconductor Processing*
+**10**(1), 41–48 (2007). <https://doi.org/10.1016/j.mssp.2006.08.027>
+HBr and O₂ in the poly/oxide selectivity and post-etch profile of an
+HBr/O₂ over-etch. Used on step 062. Tier: deep dive.
+
+**KRAFT-1995** — R. Kraft and S. Krishnan, "Gate oxide loss at the
+periphery of a metal–oxide–semiconductor field-effect transistor
+resulting from a polysilicon gate etch with a helicon etch tool",
+*Journal of Vacuum Science & Technology B* **13**(6), 2226–2229 (1995).
+<https://doi.org/10.1116/1.588053> Gate oxide loss at the MOSFET
+periphery after the poly etch, the damage the poly re-oxidation repairs.
+Used on steps 062 and 063. Tier: deep dive.
+
+**KRISHNAN-1995** — S. Krishnan, S. Aur, G. Wilhite and R. Rajgopal,
+"High density plasma etch induced damage to thin gate oxide", *IEDM 1995
+Technical Digest*, pp. 315–318.
+<https://doi.org/10.1109/IEDM.1995.499204> High-density-plasma etch
+damage to thin gate oxide. Used on step 062. Tier: deep dive.
+
+**LIN-2000** — Q. Lin, R. Sooriyakumaran and W.-S. Huang, "Toward
+controlled resist line-edge roughness: material origin of line-edge
+roughness in chemically amplified positive-tone resists", *Proc. SPIE*
+**3999**, Advances in Resist Technology and Processing XVII, 230 (2000).
+<https://doi.org/10.1117/12.388307> The material origin of line-edge
+roughness in CARs. Used on step 061. Tier: deep dive.
+
+**LIN-2001** — C. H. Lin, H. L. Chen and L. A. Wang, "A study on
+adhesion and footing issues of HMDSO films as bottom antireflective
+coating for deep UV lithographies", *Microelectronic Engineering*
+**57–58**, 555–561 (2001).
+<https://doi.org/10.1016/S0167-9317(01)00501-9> Adhesion and footing of
+a plasma-deposited BARC for deep-UV. Used on step 059. Tier: deep dive.
+
+**MOGAB-1980** — C. J. Mogab and H. J. Levinstein, "Anisotropic plasma
+etching of polysilicon", *Journal of Vacuum Science and Technology*
+**17**(3), 721–730 (1980). <https://doi.org/10.1116/1.570549>
+Anisotropic plasma etching of polysilicon, the classic starting point
+for gate etching. Used on step 062. Tier: deep dive.
+
+**MONTGOMERY-2005** — P. K. Montgomery, R. Peters, C. Garza, J. Cobb, B.
+Darlington, C. Parker, S. Filipiak and D. Babbitt, "Reduction of line
+edge roughness and post resist trim pattern collapse for sub 60 nm gate
+patterns using gas-phase resist fluorination", *Proc. SPIE* **5753**,
+Advances in Resist Technology and Processing XXII, 1024 (2005).
+<https://doi.org/10.1117/12.600785> Line-edge roughness and pattern
+collapse after resist trimming for sub-60 nm gates. Used on step 061.
+Tier: deep dive.
+
+**NOGUCHI-1997** — K. Noguchi, K. Tokashiki, T. Horiuchi and H.
+Miyamoto, "Reliability of thin gate oxide under plasma charging caused
+by antenna topography-dependent electron shading effect", *IEDM 1997
+Technical Digest*, pp. 441–444.
+<https://doi.org/10.1109/IEDM.1997.650419> Thin-oxide reliability under
+electron-shading charging during the poly etch. Used on step 062. Tier:
+deep dive.
+
+**OGAWA-1993** — T. Ogawa, M. Kimura, T. Gocho, Y. Tomo and T. Tsumori,
+"Practical resolution enhancement effect by new complete antireflective
+layer in KrF excimer laser lithography", *Proc. SPIE* **1927**,
+Optical/Laser Microlithography VI, 263 (1993).
+<https://doi.org/10.1117/12.150431> The "complete antireflective layer"
+for KrF lithography, the origin of inorganic DARC. Used on step 058.
+Tier: deep dive.
+
+**OGRYZLO-1988** — E. A. Ogryzlo, D. L. Flamm, D. E. Ibbotson and J. A.
+Mucha, "The etching of doped polycrystalline silicon by molecular
+chlorine", *Journal of Applied Physics* **64**(11), 6510–6514 (1988).
+<https://doi.org/10.1063/1.342070> Doping dependence of poly and silicon
+etch rates in chlorine. Used on step 062. Tier: deep dive.
+
+**OGRYZLO-1990** — E. A. Ogryzlo, D. E. Ibbotson, D. L. Flamm and J. A.
+Mucha, "Doping and crystallographic effects in Cl-atom etching of
+silicon", *Journal of Applied Physics* **67**(6), 3115–3120 (1990).
+<https://doi.org/10.1063/1.345388> Doping dependence of poly and silicon
+etch rates in chlorine. Used on step 062. Tier: deep dive.
+
+**ORSHANSKY-2004** — M. Orshansky, L. Milor and C. Hu, "Characterization
+of Spatial Intrafield Gate CD Variability, Its Impact on Circuit
+Performance, and Spatial Mask-Level Correction", *IEEE Transactions on
+Semiconductor Manufacturing* **17**(1), 2–11 (2004).
+<https://doi.org/10.1109/TSM.2003.822735> Spatial intrafield gate-CD
+variability, its circuit impact and mask-level correction. Used on step
+061. Tier: deep dive.
+
+**PAT-OXIME-AMD** — D. K. Foote and S. Gupta (Advanced Micro Devices),
+*Silicon oxime film*, US 5,710,067 A, filed 1995-06-07, granted
+1998-01-20. <https://patents.google.com/patent/US5710067A/en> A
+silicon-oxynitride-type dielectric ARC. Used on step 058. Tier:
+cross-check / deep dive.
+
+**SMITH-1990** — D. L. Smith, A. S. Alimonda, C.-C. Chen, S. E. Ready
+and B. Wacker, "Mechanism of SiNₓHᵧ Deposition from NH₃-SiH₄ Plasma",
+*Journal of The Electrochemical Society* **137**(2), 614–623 (1990).
+<https://doi.org/10.1149/1.2086517> Mechanism of PECVD SiNₓHᵧ deposition
+from NH₃/SiH₄. Used on step 058. Tier: deep dive.
+
+**STURTEVANT-1994** — J. L. Sturtevant, S. J. Holmes, S. E. Knight, D.
+Poley, P. A. Rabidoux, L. K. Somerville, T. L. McDevitt and A. Stamper,
+"Substrate contamination effects in the processing of chemically
+amplified DUV photoresists", *Proc. SPIE* **2197**, Optical/Laser
+Microlithography VII, 770–780 (1994).
+<https://doi.org/10.1117/12.175469> Substrate contamination effects on
+chemically amplified DUV resists, the case for an inert cap under the
+resist. Used on step 059. Tier: deep dive.
+
+**VALLIER-2003** — L. Vallier, J. Foucher, X. Detter, E. Pargon, O.
+Joubert, G. Cunge and T. Lill, "Chemical topography analyses of silicon
+gates etched in HBr/Cl₂/O₂ and HBr/Cl₂/O₂/CF₄ high density plasmas",
+*Journal of Vacuum Science & Technology B* **21**(2), 904–911 (2003).
+<https://doi.org/10.1116/1.1563255> Chemical topography of gates etched
+in HBr/Cl₂/O₂ and HBr/Cl₂/O₂/CF₄. Used on step 062. Tier: deep dive.
+
+**YOSHINO-1998** — H. Yoshino, T. Itani, S. Hashimoto, M. Yamana, T.
+Yoshii and H. Tanabe, "Compatibility of chemically amplified
+photoresists with bottom antireflective coatings", *Proc. SPIE*
+**3333**, Advances in Resist Technology and Processing XV, 655 (1998).
+<https://doi.org/10.1117/12.312459> Compatibility of chemically
+amplified resists with bottom anti-reflective coatings. Used on step
+059. Tier: deep dive.
+
+**ZHANG-2005** — G. Zhang, M. Terry, S. O'Brien, R. Soper, M. Mason, W.
+Kim, C. Wang, S. Hansen, J. Lee and J. Ganeshan, "65nm node gate pattern
+using attenuated phase shift mask with off-axis illumination and
+sub-resolution assist features", *Proc. SPIE* **5754**, Optical
+Microlithography XVIII, 83 (2005). <https://doi.org/10.1117/12.600409>
+Attenuated PSM with off-axis illumination and assist features on a later
+gate level, showing where the technique went. Used on step 061. Tier:
+deep dive.
+
+**ZHANG-2007** — Q. Zhang, K. Poolla and C. J. Spanos, "Across Wafer
+Critical Dimension Uniformity Enhancement Through Lithography and Etch
+Process Sequence: Concept, Approach, Modeling, and Experiment", *IEEE
+Transactions on Semiconductor Manufacturing* **20**(4), 488–505 (2007).
+<https://doi.org/10.1109/TSM.2007.907627> Across-wafer CD uniformity
+through the lithography and etch sequence. Used on steps 061 and 062.
+Tier: deep dive.
+
+#### Backside film removal (step 060)
+
+**BROUSSOUS-2005** — L. Broussous, P. Besson, M. M. Frank and D.
+Bourgeat, "Single Backside Cleaning on Silicon, Silicon Nitride and
+Silicon Oxide", *Solid State Phenomena* **103–104**, 249–254 (2005).
+<https://doi.org/10.4028/www.scientific.net/SSP.103-104.249>
+Single-sided backside cleaning of silicon, nitride and oxide in a spin
+tool. Used on step 060. Tier: deep dive.
+
+**CARLSON-2006** — A. Carlson and T. Le, "Correlation of wafer backside
+defects to photolithography hot spots using advanced macro inspection",
+*Proc. SPIE* **6152**, Metrology, Inspection, and Process Control for
+Microlithography XX, 61523E (2006). <https://doi.org/10.1117/12.656937>
+Correlating backside defects with lithography hot spots. Used on step
+060. Tier: deep dive.
+
+**KERN-1978** — W. Kern and C. A. Deckert, "Chemical Etching", in J. L.
+Vossen and W. Kern (eds.), *Thin Film Processes*, Academic Press, 1978,
+pp. 401–496. <https://doi.org/10.1016/B978-0-12-728250-3.50015-5> The
+reference chapter on wet etching of silicon, oxide and nitride. Used on
+step 060. Tier: deep dive.
+
+**LEDERER-2003** — K. Lederer, M. Scholze, U. Strohbach, A. Wocko, T.
+Reuter and A. Schoenauer, "Wafer backside inspection applications in
+lithography", *2003 IEEE/SEMI Advanced Semiconductor Manufacturing
+Conference and Workshop*, pp. 1–8.
+<https://doi.org/10.1109/ASMC.2003.1194459> Wafer backside inspection
+for lithography. Used on step 060. Tier: deep dive.
+
+**LIAUW-1987** — L. Liauw, A. Muray and M. Chen, "Impact Of Wafer
+Flatness On Submicron Optical Lithography", *Proc. SPIE* **0772**,
+Optical Microlithography VI, 232 (1987).
+<https://doi.org/10.1117/12.967055> The impact of wafer flatness on
+submicron optical lithography. Used on step 060. Tier: deep dive.
+
+**SCHWARTZ-1976** — B. Schwartz and H. Robbins, "Chemical Etching of
+Silicon: IV. Etching Technology", *Journal of The Electrochemical
+Society* **123**(12), 1903–1909 (1976).
+<https://doi.org/10.1149/1.2132721> HF/HNO₃ etching of silicon: rates,
+mechanisms and technology. Used on step 060. Tier: deep dive.
+
+**SEZ-223-MOOV** — Moov used-equipment marketplace, *Lam Research / SEZ
+SP223* listing, accessed 2026-09-12.
+<https://moov.co/marketplace/wet-etch/sez-lam-research/lam-research-sez-sp223>
+Used-equipment listing for a 200 mm SEZ SP223 spin processor that names
+backside film removal among its applications (weak evidence). Used on
+step 060. Tier: cross-check.
+
+**SEZ-223-PR** — SEZ Group, *SEZ Doubles Wafer Processing Capabilities
+With New Dual Chamber Spin-Processing System* (press release,
+1999-12-13), reproduced by Surface Finishing / VertMarkets.
+<https://www.surfacefinishing.com/doc/sez-doubles-wafer-processing-capabilities-wit-0001>
+Press release on the SEZ Spin-Processor 223: dual chambers, throughput,
+three chemistries and film-removal applications. Used on step 060. Tier:
+cross-check.
+
+**UNE-2000** — A. Une, Y. Kai, M. Mochida, S. Matsui and F. Ohira,
+"Influence of wafer chucking on focus margin for resolving fine patterns
+in optical lithography", *Microelectronic Engineering* **53**(1–4),
+137–140 (2000). <https://doi.org/10.1016/S0167-9317(00)00281-1> How
+wafer chucking affects the focus margin for fine patterns. Used on step
+060. Tier: deep dive.
+
+**ZHANG-1997** — Y. Zhang, L. Wagner and P. Golbutsov, "Importance of
+wafer flatness for CMP and lithography", *Proc. SPIE* **3050**, Optical
+Microlithography X, 266 (1997). <https://doi.org/10.1117/12.275916> The
+importance of wafer flatness for CMP and lithography. Used on step 060.
+Tier: deep dive.
+
+#### Tip, halo and activation (steps 064–075)
+
+**AGARWAL-1998** — A. Agarwal, A. T. Fiory, H.-J. L. Gossmann, C. S.
+Rafferty and P. Frisella, "Ultra-shallow junction formation by spike
+annealing in a lamp-based or hot-walled rapid thermal annealing system:
+effect of ramp-up rate", *Materials Science in Semiconductor Processing*
+**1**(3–4), 237–241 (1998).
+<https://doi.org/10.1016/S1369-8001(98)00030-4> Spike annealing in lamp
+and hot-wall systems and the effect of ramp-up rate. Used on step 075.
+Tier: deep dive.
+
+**BUTI-1989** — T. N. Buti, S. Ogura, N. Rovedo, K. Tobimatsu and C. F.
+Codella, "Asymmetrical halo source GOLD drain (HS-GOLD) deep sub-half
+micron n-MOSFET design for reliability and performance", *IEDM 1989
+Technical Digest*, pp. 617–620.
+<https://doi.org/10.1109/IEDM.1989.74356> The asymmetric halo-source
+device, showing what a one-sided halo does. Used on step 066. Tier: deep
+dive.
+
+**CHEN-1995** — H.-S. Chen, C.-S. Teng, L. Moberly and R. Lahri, "Ion
+beam shadowing effect in submicrometer large-angle-tilt implanted drain
+(LATID) MOSFETs", *Solid-State Electronics* **38**(7), 1321–1323 (1995).
+<https://doi.org/10.1016/0038-1101(94)00256-F> Ion-beam shadowing of
+tilted drain implants by adjacent structures, the effect behind the
+PDK's shadowing allowances. Used on steps 064, 066, 068, 069, 072 and
+073. Tier: deep dive.
+
+**CODELLA-1985** — C. F. Codella and S. Ogura, "Halo doping effects in
+submicron DI-LDD device design", *IEDM 1985 Technical Digest*, pp.
+230–233. <https://doi.org/10.1109/IEDM.1985.190938> The halo added to
+the LDD, the origin of the tip/halo pairing. Used on steps 064, 066, 071
+and 073. Tier: deep dive.
+
+**HORI-1989-LATID** — T. Hori, "1/4-μm LATID (LArge-Tilt-angle Implanted
+Drain) technology for 3.3-V operation", *IEDM 1989 Technical Digest*,
+pp. 777–780. <https://doi.org/10.1109/IEDM.1989.74169> The
+quarter-micron LATID transistor for 3.3 V operation. Used on steps 068
+and 069. Tier: deep dive.
+
+**HORI-1992** — T. Hori, J. Hirase, Y. Odake and T. Yasui,
+"Deep-submicrometer large-angle-tilt implanted drain (LATID)
+technology", *IEEE Transactions on Electron Devices* **39**(10),
+2312–2324 (1992). <https://doi.org/10.1109/16.158803> The full account
+of large-angle-tilt implanted drain technology. Used on steps 068 and
+069. Tier: deep dive.
+
+**HU-1985-HCI** — C. Hu, S. C. Tam, F.-C. Hsu, P.-K. Ko, T.-Y. Chan and
+K. W. Terrill, "Hot-electron-induced MOSFET degradation — Model,
+monitor, and improvement", *IEEE Transactions on Electron Devices*
+**32**(2), 375–385 (1985). <https://doi.org/10.1109/T-ED.1985.21952> The
+hot-electron degradation model that sets the lifetime target. Used on
+steps 068 and 069. Tier: deep dive.
+
+**KASNAVI-2000** — R. Kasnavi, P. B. Griffin and J. D. Plummer, "Ultra
+low energy arsenic implant limits on sheet resistance and junction
+depth", *2000 Symposium on VLSI Technology, Digest of Technical Papers*,
+pp. 112–113. <https://doi.org/10.1109/VLSIT.2000.852790> The limits of
+ultra-low energy arsenic implants on sheet resistance and junction
+depth. Used on step 065. Tier: deep dive.
+
+**KING-2000** — E. E. King, R. C. Lacoe and J. Wang-Ratkovic, "The role
+of the spacer oxide in determining worst-case hot-carrier stress
+conditions for NMOS LDD devices", *Proc. 2000 IEEE International
+Reliability Physics Symposium*, pp. 83–92.
+<https://doi.org/10.1109/RELPHY.2000.843895> The role of the spacer
+oxide in hot-carrier stress of LDD NMOS. Used on steps 068 and 069.
+Tier: deep dive.
+
+**LU-1989-RSCE** — C.-Y. Lu and J. M. Sung, "Reverse short-channel
+effects on threshold voltage in submicrometer salicide devices", *IEEE
+Electron Device Letters* **10**(10), 446–448 (1989).
+<https://doi.org/10.1109/55.43095> The reverse short-channel effect in
+submicrometre salicide devices. Used on steps 066 and 073. Tier: deep
+dive.
+
+**LUKASZEK-1996** — W. Lukaszek, S. Reno and R. Bammi, "Influence of
+photoresist on wafer charging during high current arsenic implant",
+*Proc. 11th International Conference on Ion Implantation Technology*
+(1996), pp. 89–92. <https://doi.org/10.1109/IIT.1996.586135> Wafer
+charging through resist during high-current arsenic implants. Used on
+steps 065 and 067. Tier: deep dive.
+
+**MACHALA-1997** — C. Machala, R. Wise, D. Mercer and A. Chatterjee,
+"The role of boron segregation and transient enhanced diffusion on
+reverse short channel effect", *Proc. SISPAD 1997*, pp. 141–143.
+<https://doi.org/10.1109/SISPAD.1997.621357> Boron segregation and TED
+in the reverse short-channel effect. Used on steps 066 and 073. Tier:
+deep dive.
+
+**NOBILI-1983** — D. Nobili, A. Carabelas, G. Celotti and S. Solmi,
+"Precipitation as the Phenomenon Responsible for the Electrically
+Inactive Arsenic in Silicon", *Journal of The Electrochemical Society*
+**130**(4), 922–928 (1983). <https://doi.org/10.1149/1.2119859> Arsenic
+precipitation and deactivation, irrelevant at LDD doses but decisive at
+logic-tip doses. Used on steps 065, 072 and 075. Tier: deep dive.
+
+**OGURA-1980** — S. Ogura, P. J. Tsang, W. W. Walker, D. L. Critchlow
+and J. F. Shepard, "Design and characteristics of the lightly doped
+drain-source (LDD) insulated gate field-effect transistor", *IEEE
+Transactions on Electron Devices* **27**(8), 1359–1367 (1980).
+<https://doi.org/10.1109/T-ED.1980.20040> The original lightly doped
+drain-source transistor, the ancestor of every tip implant. Used on
+steps 064, 065, 068, 069, 071 and 072. Tier: deep dive.
+
+**OGURA-1981** — S. Ogura, P. J. Tsang, W. W. Walker, D. L. Critchlow
+and J. F. Shepard, "Elimination of hot electron gate current by the
+lightly doped drain-source structure", *IEDM 1981 Technical Digest*, pp.
+651–654. <https://doi.org/10.1109/IEDM.1981.190171> Elimination of
+hot-electron gate current by the LDD structure. Used on step 069. Tier:
+deep dive.
+
+**PAT-HALO-AMD-DIFF** — B. Yu (Advanced Micro Devices), *MOSFET with
+differential halo implant and annealing strategy*, US 6,630,385 B1,
+granted 2003-10-07.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6630385>
+Two halo implants with different anneals to shape the pocket. Used on
+steps 066 and 073. Tier: deep dive.
+
+**PAT-HALO-AMD-ZERO** — D.-H. Ju and S. Luning (Advanced Micro Devices),
+*CMOS processing employing zero degree halo implant for P-channel
+transistor*, US 6,232,166 B1, granted 2001-05-15.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6232166>
+A zero-degree halo for the PMOS, for contrast with the tilted NMOS halo.
+Used on step 066. Tier: deep dive.
+
+**PAT-HALO-CHARTERED** — Y. Pan (Chartered Semiconductor Manufacturing),
+*Method of making self-aligned halo process for reducing junction
+capacitance*, US 5,595,919 A, granted 1997-01-21.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5595919>
+A self-aligned halo process designed to limit the junction-capacitance
+penalty. Used on steps 066 and 073. Tier: deep dive.
+
+**PAT-HALO-GOLDSTAR** — H. S. Hwang (Goldstar Electron), *Method for
+fabricating LDD transitor utilizing halo implant*, US 5,364,807 A,
+granted 1994-11-15.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5364807>
+An LDD transistor with a halo punch-through stopper made without extra
+masks. Used on steps 066 and 073. Tier: deep dive.
+
+**PAT-HV-GRADED-CYP** — I. Kouznetsov (Cypress Semiconductor), *Method
+and structure for high-voltage device with self-aligned graded
+junctions*, US 6,531,366 B1, granted 2003-03-11.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6531366>
+A high-voltage device with self-aligned graded junctions in a CMOS flow.
+Used on steps 068 and 069. Tier: deep dive.
+
+**PAT-LDD-MICRON** — L. C. Tran, M. McQueen and R. Kerr (Micron
+Technology), *Double LDD devices for improved DRAM refresh*, US
+6,759,288 B2, granted 2004-07-06.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6759288>
+A second, lighter LDD masked onto selected transistors to cut junction
+leakage. Used on steps 064, 065, 071 and 072. Tier: deep dive.
+
+**PAT-MULTI-LDD-AMD** — M. I. Gardner, F. N. Hause and H. J. Fulford
+(Advanced Micro Devices), *Integrated circuit having multiple LDD and/or
+source/drain implant steps to enhance circuit performance*, US 5,793,090
+A, granted 1998-08-11.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5793090>
+Separate LDD and source/drain implant steps for different transistors on
+one chip. Used on steps 064, 068 and 071. Tier: deep dive.
+
+**PAT-QUAD-TSMC** — M.-S. Lin, C.-S. Yoo and M.-S. Liang (Taiwan
+Semiconductor Manufacturing Company), *Multiple tilted angle ion
+implantation MOSFET method*, US 5,372,957 A, granted 1994-12-13.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5372957>
+Multiple tilted-angle implantation with wafer rotation for LDD devices.
+Used on steps 066, 069 and 073. Tier: deep dive.
+
+**PAT-SPE-AMD** — B. Yu (Advanced Micro Devices), *Solid phase epitaxy
+activation process for source/drain junction extensions and halo
+regions*, US 6,521,502 B1, granted 2003-02-18.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6521502>
+Activating extensions and halos by solid-phase epitaxy at low
+temperature, an alternative to spike-anneal activation. Used on steps
+065, 066, 072 and 075. Tier: deep dive.
+
+**PAT-SPIKE-AMAT** — B. Ramachandran, R. Jallepally, R. C. Boas, S.
+Ramamurthy, A. Al-Bayati, H. Graoui and J. M. Spear (Applied Materials),
+*Advances in spike anneal processes for ultra shallow junctions*, US
+6,897,131 B2, granted 2005-05-24.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6897131>
+Sharpening the spike by faster cool-down. Used on step 075. Tier: deep
+dive.
+
+**PAT-SPIKE-AMAT-AMBIENT** — D. Jennings, S. Tallavarjula and R. Thakur
+(Applied Materials), *Optimal spike anneal ambient*, US 6,803,297 B2,
+granted 2004-10-12.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803297>
+The anneal ambient for spike anneals. Used on step 075. Tier: deep dive.
+
+**PAT-SPIKE-IBM** — K. L. Lee, Y. Zhang, M. Surendra and E. M. Sikorski
+(IBM), *Sacrificial polysilicon sidewall process and rapid thermal spike
+annealing for advance CMOS fabrication*, US 6,518,136 B2, granted
+2003-02-11.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6518136>
+Extensions and halos activated by spike annealing to prevent their
+diffusion. Used on step 075. Tier: deep dive.
+
+**RAFI-2001** — J. M. Rafí and F. Campabadal, "Hot-carrier degradation
+in deep-submicrometer nMOSFETs: lightly doped drain vs. large angle tilt
+implanted drain", *Solid-State Electronics* **45**(8), 1391–1401 (2001).
+<https://doi.org/10.1016/S0038-1101(01)00004-1> Hot-carrier degradation
+of LDD versus LATID NMOS. Used on steps 068 and 069. Tier: deep dive.
+
+**ROUSSEAU-1994** — P. M. Rousseau, P. B. Griffin and J. D. Plummer,
+"Electrical deactivation of arsenic as a source of point defects",
+*Applied Physics Letters* **65**(5), 578–580 (1994).
+<https://doi.org/10.1063/1.112301> Arsenic deactivation as a source of
+interstitials that enhance diffusion of neighbouring dopants. Used on
+steps 065, 066 and 075. Tier: deep dive.
+
+**SHIN-1999** — H. Shin and S. Lee, "An 0.1-μm asymmetric halo by
+large-angle-tilt implant (AHLATI) MOSFET for high performance and
+reliability", *IEEE Transactions on Electron Devices* **46**(4), 820–822
+(1999). <https://doi.org/10.1109/16.753725> An asymmetric halo by
+large-angle tilt implant at 0.1 µm. Used on step 066. Tier: deep dive.
+
+**SHISHIGUCHI-1997** — S. Shishiguchi, A. Mineji, T. Hayashi and S.
+Saito, "Boron Implanted Shallow Junction Formation By
+High-temperature/Short-time/high-ramping-rate (400 °C/sec) RTA", *1997
+Symposium on VLSI Technology, Digest of Technical Papers*, pp. 89–90.
+<https://doi.org/10.1109/VLSIT.1997.623709> 400 °C/s RTA for boron
+shallow junctions. Used on step 075. Tier: deep dive.
+
+**TAKEDA-1982** — E. Takeda, H. Kume, T. Toyabe and S. Asai,
+"Submicrometer MOSFET structure for minimizing hot-carrier generation",
+*IEEE Transactions on Electron Devices* **29**(4), 611–618 (1982).
+<https://doi.org/10.1109/T-ED.1982.20752> Drain structures for
+minimising hot-carrier generation. Used on steps 068 and 069. Tier: deep
+dive.
+
+**TAUR-1998** — Y. Taur, C. H. Wann and D. J. Frank, "25 nm CMOS design
+considerations", *IEDM 1998 Technical Digest*, pp. 789–792.
+<https://doi.org/10.1109/IEDM.1998.746474> Super-halo design: pockets at
+the channel ends, light doping in between. Used on steps 066 and 073.
+Tier: deep dive.
+
+**THOMPSON-1998** — S. Thompson, P. Packan, T. Ghani, M. Stettler, M.
+Alavi, I. Post, S. Tyagi, S. Ahmed, S. Yang and M. Bohr, "Source/drain
+extension scaling for 0.1 μm and below channel length MOSFETs", *1998
+Symposium on VLSI Technology, Digest of Technical Papers*, pp. 132–133.
+<https://doi.org/10.1109/VLSIT.1998.689229> How extension depth and
+doping scale with gate length, the reason a 1.8 V tip differs from a 5 V
+one. Used on steps 064, 065 and 072. Tier: deep dive.
+
+**WIKI-HCI** — Wikipedia, *Hot-carrier injection*.
+<https://en.wikipedia.org/wiki/Hot-carrier_injection> Hot-carrier
+injection, the failure mode that graded and LATID drains exist to
+prevent. Used on steps 068 and 069. Tier: high-level.
+
+**YONEDA-2002** — K. Yoneda and M. Niwayama, "The drain current
+asymmetry of 130 nm MOSFETs due to extension implant shadowing
+originated by mechanical angle error in high current implanter",
+*Extended Abstracts of the Third International Workshop on Junction
+Technology (IWJT 2002)*, pp. 19–22.
+<https://doi.org/10.1109/IWJT.2002.1225190> Drain-current asymmetry in
+130 nm MOSFETs from extension-implant shadowing caused by an implanter
+angle error. Used on steps 064 and 065. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
