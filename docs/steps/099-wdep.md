@@ -26,8 +26,9 @@ polishing margin — is the industry-typical target for a plug fill
 (category page[^txt-01]).
 
 Two public facts anchor the step. SkyWater lists "Lam/Novellus PECVD
-Tungsten – plug fill – PNL option" among its deposition
-tools,[^skw-01] and "W plug dual damascene" among its special
+Tungsten" with the sub-bullets "plug fill" and "PNL option for high
+aspect ratio (up to 10:1)" among its deposition tools,[^skw-01] and
+"W plug dual damascene" among its special
 modules.[^skw-01] The PDK describes `licon1` as the "Contact to local
 interconnect"[^pdk-06] with a 15 000 mΩ per-contact
 resistance,[^pdk-08] and its physical criteria give a "min. etch and
@@ -42,16 +43,18 @@ polish scheme is used at every level.
 the *CVD tungsten* type, which the category page describes: a
 nucleation layer by silane reduction, 2WF₆ + 3SiH₄ → 2W + 3SiF₄ + 6H₂,
 then the bulk fill by hydrogen reduction, WF₆ + 3H₂ → W + 6HF, at
-roughly 400–450 °C and a few tens of Torr, "almost perfectly
-conformal, so it fills contacts from the sidewalls inward and leaves
-only a small seam".[^wiki-wf6][^txt-01] It is the first CVD metal in
-the flow and the first film deposited on a metallised wafer, so the
+roughly 400–450 °C and a few tens of Torr,[^wiki-wf6][^txt-01] and is,
+in the category page's words, "almost perfectly conformal, so it fills
+contacts from the sidewalls inward and leaves only a small seam". It
+is the first CVD metal in the flow and the first film deposited on a
+metallised wafer, so the
 thermal ceiling is now the silicide and the liner rather than the
 junctions. What is specific to this instance is the
 {term}`aspect ratio`: a 0.08 µm bottom[^pdk-03] under 0.5 µm of dielectric[^pdk-03]
 is the narrowest hole the tungsten will ever have to fill in SKY130,
-and the "PNL option" of SkyWater's tool[^skw-01] — a pulsed
-nucleation layer — is the technique developed for such holes.
+and the "PNL option for high aspect ratio (up to 10:1)" of
+SkyWater's tool[^skw-01] — a pulsed nucleation layer — is the
+technique developed for such holes.
 
 ## Why this step exists
 
@@ -143,7 +146,8 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 ## Machines likely used at SkyWater
 
 * **Lam/Novellus CVD tungsten with PNL.** SkyWater lists
-  "Lam/Novellus PECVD Tungsten – plug fill – PNL option".[^skw-01]
+  "Lam/Novellus PECVD Tungsten" with the sub-bullets "plug fill" and
+  "PNL option for high aspect ratio (up to 10:1)".[^skw-01]
   Strength: **strong** for the vendor, the plug-fill application and
   the pulsed-nucleation capability; the model (an Altus-class
   system, we infer from Novellus's product history[^novellus-history])
@@ -184,7 +188,8 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 ### Cross-check
 
 * SkyWater, *Facilities & Capabilities* — "Lam/Novellus PECVD
-  Tungsten – plug fill – PNL option"; "W plug dual damascene".[^skw-01]
+  Tungsten": "plug fill", "PNL option for high aspect ratio (up to
+  10:1)"; "W plug dual damascene".[^skw-01]
 * SkyWater PDK, *Layers Reference* — `licon1` "Contact to local
   interconnect".[^pdk-06]
 * SkyWater PDK, *Parasitic Layout Extraction* — LICON contact

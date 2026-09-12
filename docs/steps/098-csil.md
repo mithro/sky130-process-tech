@@ -130,7 +130,7 @@ fab (SKY130's recipe is not public):
   8808 lists NH₃, Ar, N₂ and O₂ ambients.[^skw-01]
 * **Temperature and time.** A soak of tens of seconds at 600–750 °C
   to form C49 TiSi₂ under the TiN, with or without a second soak at
-  750–850 °C for the C54 transformation — typical industry values
+  800–900 °C for the C54 transformation — typical industry values
   for a Ti/TiN contact silicide (Osburn;[^osburn-1993] Yoo, Atanos
   and Whitworth describe TiSi₂ formation and anneal in a
   susceptor-based low-pressure RTP system[^yoo-1999]). Because there

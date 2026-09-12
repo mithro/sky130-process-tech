@@ -49,9 +49,9 @@ and oxide on a wafer whose thermal ceiling is now set by the
 silicide ({ref}`CSIL <step-098>`) and the metal films — so a plasma
 deposition at 300–400 °C ({term}`PECVD`; category
 page[^wiki-pecvd]) is the industry-typical choice, and we infer it
-here. It is also the first *etch-stop* nitride in the flow, the
-role the category page assigns to nitride under an oxide contact
-etch.
+here. It is also the first nitride in the flow deposited *as* an
+etch stop, the role the category page assigns to nitride under an
+oxide contact etch.
 
 ## Why this step exists
 

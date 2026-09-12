@@ -23,12 +23,12 @@ the oxide walls of the hole and is the barrier and adhesion layer on
 which the CVD tungsten of {ref}`WDEP <step-099>` nucleates. The
 "1" in the code marks it as the first of the flow's liner
 depositions — {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>` and
-later are the TiN-only liners of the via levels — and "IMP" names
-the deposition technique.
+later are the TiN-only liners of the contact and via levels — and
+"IMP" names the deposition technique.
 
 The public evidence is unusually direct for a tool assignment.
 SkyWater's capability list gives, under "AMAT PVD Metal", "Imp TiN"
-and "collimated Ti" alongside "ESC TiN", TiW and the aluminium
+and "Collimated Ti" alongside "ESC TiN", TiW and the aluminium
 alloys,[^skw-01] and the step list used in this reference calls the
 step "IMP Ti/TiN". Ionised PVD is the technique Rossnagel and
 Hopwood introduced for exactly this purpose — filling the bottom of
@@ -94,7 +94,7 @@ each film:
   PVD for interconnects[^hopwood-1998] and Rossnagel the directional
   and ionised alternatives.[^rossnagel-1998] The older alternative,
   collimated sputtering — a honeycomb collimator between target and
-  wafer that passes only near-normal atoms — is what "collimated Ti"
+  wafer that passes only near-normal atoms — is what "Collimated Ti"
   on SkyWater's list refers to,[^skw-01] introduced by Rossnagel et
   al.[^rossnagel-1991] and applied to Ti/TiN by Ryan et al.[^ryan-1995]
   Applied Materials' patent alternates IMP and conventional steps to
@@ -120,7 +120,8 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
    the dielectric, then an argon RF sputter-etch pre-clean that
    removes the last nanometre of native oxide from the contact
    bottoms — light enough not to sputter oxide from the walls onto
-   the silicon (category page[^txt-09]).
+   the silicon (category page[^txt-09]). SkyWater's "AMAT PVD Metal"
+   entry lists "Sputter etch, degas" among its chambers.[^skw-01]
 2. **IMP titanium.** DC magnetron sputtering from a titanium target
    in argon at a few tens of mTorr — higher than conventional
    sputtering, so that the sputtered atoms thermalise and are
@@ -160,7 +161,7 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 ## Machines likely used at SkyWater
 
 * **Applied Materials PVD with IMP TiN and collimated Ti chambers.**
-  SkyWater lists "AMAT PVD Metal" with "Imp TiN", "collimated Ti"
+  SkyWater lists "AMAT PVD Metal" with "Imp TiN", "Collimated Ti"
   and "ESC TiN".[^skw-01] Strength: **strong** for the vendor and
   the chamber types; the platform (Endura is the AMAT 200 mm PVD
   cluster of the era[^amat-endura]) is an **inference**, as is the
@@ -203,7 +204,7 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 ### Cross-check
 
 * SkyWater, *Facilities & Capabilities* — "AMAT PVD Metal": "Imp
-  TiN", "collimated Ti", "ESC TiN".[^skw-01]
+  TiN", "Collimated Ti", "ESC TiN".[^skw-01]
 * SkyWater, Form S-1 — Honeywell Electronic Materials sputter
   targets; gas suppliers.[^sec-01]
 * SkyWater PDK, *Criteria & Assumptions* — "Standard Licon bottom
@@ -282,8 +283,10 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
     <https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>
 [^amat-1997]: Applied Materials, Inc., *1997 Annual Report*.
     <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
-[^pat-imp-amat]: Applied Materials, *Alternate steps of IMP and
-    sputtering process to improve sidewall coverage*, US 6,350,353 B2.
+[^pat-imp-amat]: P. Gopalraja, S. Edelstein, A. Tepman, P. Ding,
+    D. Ghosh and N. Maity (Applied Materials), *Alternate steps of IMP
+    and sputtering process to improve sidewall coverage*,
+    US 6,350,353 B2, granted 2002-02-26.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>
 [^wiki-tin]: Wikipedia, *Titanium nitride*.
     <https://en.wikipedia.org/wiki/Titanium_nitride>

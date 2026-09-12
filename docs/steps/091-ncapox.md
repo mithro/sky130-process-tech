@@ -103,7 +103,7 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
   plasma- and thermal-assisted reaction mechanisms,[^nguyen-1990]
   Raupp, Cale and Hey the role of oxygen excitation,[^raupp-1992] and
   Becker et al. the film quality obtainable from TEOS
-  pyrolysis.[^becker-1987-jvst] The film is smooth, moderately
+  pyrolysis.[^becker-1987] The film is smooth, moderately
   conformal and, after a short anneal, close to thermal oxide in wet
   etch rate. SkyWater lists "PECVD TEOS, C2 and Producer".[^skw-01]
 * **PECVD silane oxide.** SiH₄ with N₂O at 300–400 °C, faster and
@@ -205,7 +205,7 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 * Raupp, Cale and Hey, *JVST B* 1992 — oxygen excitation and loss
   in PECVD TEOS.[^raupp-1992]
 * Becker et al., *JVST B* 1987 — high-quality SiO₂ from TEOS
-  pyrolysis.[^becker-1987-jvst]
+  pyrolysis.[^becker-1987]
 * Adams et al., *J. Electrochem. Soc.* 1981 — characterisation of
   plasma-deposited silicon dioxide.[^adams-1981-pecvd]
 * Fujino et al., *J. Electrochem. Soc.* 1990 — TEOS/ozone oxide at
@@ -274,7 +274,7 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
     dioxide from tetraethylorthosilicate", *Journal of Vacuum Science &
     Technology B* **10**(1), 37–45 (1992).
     <https://doi.org/10.1116/1.586361>
-[^becker-1987-jvst]: F. S. Becker, D. Pawlik, H. Anzinger and
+[^becker-1987]: F. S. Becker, D. Pawlik, H. Anzinger and
     A. Spitzer, "Low-pressure deposition of high-quality SiO₂ films by
     pyrolysis of tetraethylorthosilicate", *Journal of Vacuum Science &
     Technology B* **5**(6), 1555–1563 (1987).
