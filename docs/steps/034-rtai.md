@@ -53,34 +53,33 @@ Implanted dopant is inactive until the lattice is restored, and
 clusters" (category page, citing Gibbons and Plummer). Three things
 depend on doing that now rather than later:
 
-* **Gate-oxide quality.** The gate oxide is grown on a silicon
-  surface that has been implanted through a thin pad oxide several
-  times; residual damage and interstitial clusters at the surface
-  would be incorporated into the oxide and its interface. Annealing
-  first, and then removing damaged surface oxide, gives the gate
-  oxidation a clean crystal to grow on (TXT-01, ch. 6 and 8).
+* **Gate-oxide quality.** The gate oxide is grown on a silicon surface
+  that has been implanted through a thin pad oxide several times;
+  residual damage and interstitial clusters at the surface would be
+  incorporated into the oxide and its interface. Annealing first, and
+  then removing damaged surface oxide, gives the gate oxidation a clean
+  crystal to grow on.[^txt-01]
 * **Profile control.** The well and channel profiles set every
   transistor's threshold, body effect and punch-through margin.
-  Annealing them in one defined step, before the SONOS and gate
-  modules add their own thermal cycles, makes the profiles a known
-  starting point. Transient enhanced diffusion — the boost in boron
-  and phosphorus diffusivity from implant-generated interstitials
+  Annealing them in one defined step, before the SONOS and gate modules
+  add their own thermal cycles, makes the profiles a known starting
+  point. Transient enhanced diffusion — the boost in boron and
+  phosphorus diffusivity from implant-generated interstitials
   ({term}`TED`) — is worst for slow anneals, "because the damage
   dissolves while the dopant is still mobile"; the resolution is "the
   RTA: seconds at 1000–1100 °C" (category page, citing Stolk et al.).
 * **Retrograde profiles must stay retrograde.** The point of the MeV
-  wells is a peak below the surface; a long furnace drive would
-  smear it. ITRS 2001 demands a "Retrograde channel depth" of
-  21–30 nm for its 2001 high-performance node (ITRS-01), which is
-  only compatible with short anneals.
+  wells is a peak below the surface; a long furnace drive would smear
+  it. ITRS 2001 demands a "Retrograde channel depth" of 21–30 nm for its
+  2001 high-performance node,[^itrs-01] which is only compatible with
+  short anneals.
 
-The order matters for the SONOS module too. Cypress's integration
-patent describes forming the charge-trapping stack "after at least
-some of the well and channel implants for the logic MOS transistors
-are formed", and states that "a rapid thermal anneal is performed
-after implanting both the n-well and p-well" (PAT-03) — the strongest
-public evidence that the SKY130 lineage anneals its wells by RTA
-before the SONOS and gate steps.
+The order matters for the SONOS module too. Cypress's integration patent
+describes forming the charge-trapping stack "after at least some of the
+well and channel implants for the logic MOS transistors are formed", and
+states that "a rapid thermal anneal is performed after implanting both
+the n-well and p-well"[^pat-03] — the strongest public evidence that the
+SKY130 lineage anneals its wells by RTA before the SONOS and gate steps.
 
 ## How it is typically performed
 
@@ -88,34 +87,32 @@ An industry-generic well/channel activation anneal for a 200 mm,
 130 nm-era fab (SKY130's recipe is not public):
 
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen or
-  argon; RTP "heats silicon wafers to temperatures exceeding 1,000°C
-  for not more than a few seconds" using "high intensity lamps" with
-  "in situ pyrometry to effect real time control" (WIKI-RTP). A small
-  oxygen addition is sometimes used to suppress boron out-diffusion
-  from the surface; a pure inert ambient avoids growing oxide
-  (category page).
+  argon; RTP "heats silicon wafers to temperatures exceeding 1,000°C for
+  not more than a few seconds" using "high intensity lamps" with "in
+  situ pyrometry to effect real time control".[^wiki-rtp] A small oxygen
+  addition is sometimes used to suppress boron out-diffusion from the
+  surface; a pure inert ambient avoids growing oxide (category page).
 * **Temperature and time.** Published well anneals of the era: "an
   annealing at 1000 C for 10 sec in an RTA (Rapid Thermal Anneal)
-  apparatus", after which "the gate insulating layer is formed on the
-  N well and P well regions by a thermal oxidation" (PAT-WELL-HYNIX);
-  in older flows a furnace at "approximately 900 °C in a neutral
-  ambient such as nitrogen for approximately 30 minutes"
-  (PAT-VT-LSI). A 1000–1050 °C, 10–30 s RTA is the typical
-  130 nm-era choice (TXT-05; TXT-10). Ramp rates of "1 – 180°C per
-  second" are the range of the AG Heatpulse 8800-class tools
-  (AG-8800).
-* **Sequence.** Pre-anneal clean (at {ref}`PWDEIS <step-033>`);
-  load; purge; ramp; soak; ramp-down; unload. The pad oxide, if
-  retained, caps the surface during the soak.
+  apparatus", after which "the gate insulating layer is formed on the N
+  well and P well regions by a thermal oxidation";[^pat-well-hynix] in
+  older flows a furnace at "approximately 900 °C in a neutral ambient
+  such as nitrogen for approximately 30 minutes".[^pat-vt-lsi] A
+  1000–1050 °C, 10–30 s RTA is the typical 130 nm-era
+  choice.[^txt-05][^txt-10] Ramp rates of "1 – 180°C per second" are the
+  range of the AG Heatpulse 8800-class tools.[^ag-8800]
+* **Sequence.** Pre-anneal clean (at {ref}`PWDEIS <step-033>`); load;
+  purge; ramp; soak; ramp-down; unload. The pad oxide, if retained, caps
+  the surface during the soak.
 * **Control.** Pyrometer emissivity calibration against
   thermocouple-instrumented wafers; edge-ring design to avoid slip;
   sheet-resistance mapping of monitor wafers after each lot to track
-  activation and uniformity (category page; TXT-10).
-* **Furnace alternative.** A vertical furnace at 900–1000 °C for tens
-  of minutes gives the same activation with more diffusion, and some
-  fabs prefer it for wells precisely because a little extra drive
-  smooths the chained profiles (WIKI-FURNACE: "Increasingly, furnace
-  anneals are being supplanted by Rapid Thermal Anneal").
+  activation and uniformity (category page).[^txt-10]
+* **Furnace alternative.** A vertical furnace at 900–1000 °C for tens of
+  minutes gives the same activation with more diffusion, and some fabs
+  prefer it for wells precisely because a little extra drive smooths the
+  chained profiles ("Increasingly, furnace anneals are being supplanted
+  by Rapid Thermal Anneal").[^wiki-furnace]
 
 ## Machines typically used
 
@@ -129,33 +126,38 @@ An industry-generic well/channel activation anneal for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **AG Associates Heatpulse 8808.** SKW-01 lists under RTA "Ag
-  Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C" — a single-wafer RTA
-  with the inert ambients (Ar, N₂) and the temperature reach this
-  step needs. Strength: **strong** for the tool (SkyWater statement);
-  assignment to `RTAI` is an **inference** from the step name and
-  from PAT-03. Reseller documentation for the Heatpulse 8800/8808
-  family gives a "Recommended steady-state temperature range: 400 –
-  1200°C", ramp-up "Programmable, 1 – 180°C per second", "2 banks of
-  14 lamps" with "10-zone lamp control", pyrometer or thermocouple
-  sensing, wafer sizes to 8 inches, and "Implant annealing" among
-  the listed applications (AG-8800; the reseller's specification PDF, whose operating specifications are those of the Heatpulse 4100 of the same family, gives the same 400–1200 °C range, a maximum ramp of 150 °C/s and ±5 °C uniformity across a 150 mm wafer at 1150 °C, AG-8108).
-* **Aviza furnaces.** SKW-01 states "Furnaces are all made by Aviza"
-  with "Ar anneal to 1150C" and "N2 anneal to 1150C" — the batch
-  alternative if the fab chose a furnace well anneal. Strength:
-  strong for existence; weak for assignment, since the step code
-  says RTA.
+* **AG Associates Heatpulse 8808.** SkyWater's facilities page lists
+  under RTA "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] —
+  a single-wafer RTA with the inert ambients (Ar, N₂) and the
+  temperature reach this step needs. Strength: **strong** for the tool
+  (SkyWater statement); assignment to `RTAI` is an **inference** from
+  the step name and from the Cypress integration patent.[^pat-03]
+  Reseller documentation for the Heatpulse 8800/8808 family gives a
+  "Recommended steady-state temperature range: 400 – 1200°C", ramp-up
+  "Programmable, 1 – 180°C per second", "2 banks of 14 lamps" with
+  "10-zone lamp control", pyrometer or thermocouple sensing, wafer sizes
+  to 8 inches, and "Implant annealing" among the listed
+  applications[^ag-8800] (the reseller's specification PDF, whose
+  operating specifications are those of the Heatpulse 4100 of the same
+  family, gives the same 400–1200 °C range, a maximum ramp of 150 °C/s
+  and ±5 °C uniformity across a 150 mm wafer at 1150 °C).[^ag-8108]
+* **Aviza furnaces.** SkyWater's facilities page states "Furnaces are
+  all made by Aviza"[^skw-01] with "Ar anneal to 1150C" and "N2 anneal
+  to 1150C" — the batch alternative if the fab chose a furnace well
+  anneal. Strength: strong for existence; weak for assignment, since the
+  step code says RTA.
 
 ## Resources required
 
-* **Nitrogen and argon** (process ambient, SKW-01); **oxygen** if a
+* **Nitrogen and argon** (process ambient);[^skw-01] **oxygen** if a
   minor addition is used.
 * **Tungsten-halogen lamps, quartz chamber/window, edge rings**;
   pyrometer calibration and thermocouple wafers (category page).
-* **Cooling water and CDA/N₂** for lamp and chamber cooling (facility table for the Heatpulse 4100, AG-8108).
+* **Cooling water and CDA/N₂** for lamp and chamber cooling (facility
+  table for the Heatpulse 4100).[^ag-8108]
 * **Monitor wafers** (SEMI M8 class) for sheet resistance.
 * Gas suppliers named by SkyWater: Air Products, Praxair, Linde,
-  Airgas (SEC-01, SEC-02).
+  Airgas.[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 
@@ -173,61 +175,56 @@ An industry-generic well/channel activation anneal for a 200 mm,
 
 ### Cross-check
 
-* **SKW-01** — SkyWater Technology, *Facilities & Capabilities*,
-  accessed 2026-08-30 ("Ag Heatpulse 8808 NH3, Ar, N2, O2, up to
-  1200C"; Aviza furnaces, Ar/N₂ anneal to 1150 °C).
-  <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-* **SEC-01 / SEC-02** — SkyWater Technology, Inc., Form S-1 (2021) and
-  Form 10-K (fiscal 2023).
-  <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>,
-  <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
-* **PAT-03** — W. Koutny et al. (Cypress), US 8,093,128 B2,
-  *Integration of non-volatile charge trap memory devices and logic
-  CMOS devices*, granted 2012-01-10 ("a rapid thermal anneal is
-  performed after implanting both the n-well and p-well").
-  <https://patents.google.com/patent/US8093128B2/en>
-* **AG-8800** — SemiStar Corp., *AG Associates Heatpulse 8800 / 8808
-  Rapid Thermal Processing* (reseller specification page), accessed
-  2026-08-30.
-  <https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>
-* **AG-8108** — SemiStar Corp., *AG Associates Heatpulse 4100 / 8108 /
-  8800 / 8800i Specifications* (PDF), accessed 2026-08-30.
-  <http://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>
+* SkyWater, *Facilities & Capabilities* — "Ag Heatpulse 8808 NH3, Ar,
+  N2, O2, up to 1200C"; Aviza furnaces, Ar/N₂ anneal to
+  1150 °C.[^skw-01]
+* SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
+  suppliers.[^sec-01][^sec-02]
+* Koutny et al. (Cypress), US 8,093,128 — "a rapid thermal anneal is
+  performed after implanting both the n-well and p-well".[^pat-03]
+* SemiStar, *AG Associates Heatpulse 8800 / 8808* reseller page —
+  temperature range, ramp rates, lamp banks and applications.[^ag-8800]
+* SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
+  Specifications* (PDF) — operating specifications and facility table of
+  the Heatpulse 4100.[^ag-8108]
 
 ### High-level understanding
 
-* **WIKI-RTP** — Wikipedia, *Rapid thermal processing*.
-  <https://en.wikipedia.org/wiki/Rapid_thermal_processing>
-* **WIKI-FURNACE** — Wikipedia, *Furnace anneal*.
-  <https://en.wikipedia.org/wiki/Diffusion_furnace>
-* **TXT-01** — J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon
-  VLSI Technology*, Prentice Hall, 2000, ISBN 978-0-13-085037-9,
-  ch. 6–8.
-  <https://openlibrary.org/isbn/9780130850379>
-* **TXT-05** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4*,
-  Lattice Press, 2002, ISBN 978-0-9616721-7-1 (RTP).
-  <https://openlibrary.org/isbn/9780961672171>
+* Wikipedia, *Rapid thermal processing* — lamp heating, seconds above
+  1000 °C, in-situ pyrometry.[^wiki-rtp]
+* Wikipedia, *Furnace anneal* — furnace anneals being supplanted by
+  RTA.[^wiki-furnace]
+* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 2 (CMOS
+  well formation) and ch. 8 (ion implantation).[^txt-01]
+* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — RTP.[^txt-05]
 
 ### Deep dive
 
-* **TXT-10** — R. B. Fair (ed.), *Rapid Thermal Processing: Science
-  and Technology*, Academic Press, 1993, ISBN 978-0-12-247690-7;
-  R. B. Fair, "Junction Formation in Silicon by Rapid Thermal
-  Annealing". <https://doi.org/10.1016/b978-0-12-247690-7.50009-3>
-* **ITRS-01** — ITRS 2001, *Front End Processes* (Table 51, retrograde
-  channel depth).
-  <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
-* **PAT-WELL-HYNIX** — J.-H. Lee and J.-H. Son (Hyundai/Hynix),
-  US 6,455,402 B2, granted 2002-09-24 (RTA 1000 °C, 10 s, then gate
-  oxidation).
-  <https://patents.google.com/patent/US6455402B2/en>
-* **PAT-VT-LSI** — US 5,963,801 A (LSI Logic), granted 1999-10-05
-  (furnace 900 °C, 30 min, N₂).
-  <https://patents.google.com/patent/US5963801A/en>
-* **STOLK-1997** — P. A. Stolk et al., "Physical mechanisms of
-  transient enhanced dopant diffusion in ion-implanted silicon",
-  *Journal of Applied Physics*, vol. 81, pp. 6031–6050, 1997,
-  DOI 10.1063/1.364452. <https://doi.org/10.1063/1.364452>
+* Fair (ed.), *Rapid Thermal Processing: Science and Technology* — the
+  chapter on junction formation by rapid thermal annealing.[^txt-10]
+* ITRS 2001, *Front End Processes* — Table 51, retrograde channel
+  depth.[^itrs-01]
+* Lee and Son (Hyundai/Hynix), US 6,455,402 — RTA 1000 °C, 10 s, then
+  gate oxidation.[^pat-well-hynix]
+* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — furnace
+  900 °C, 30 min, N₂.[^pat-vt-lsi]
+* Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997 — the physical
+  mechanisms of transient enhanced diffusion.[^stolk-1997]
+* Roozeboom and Parekh (Philips), *J. Vac. Sci. Technol. B* 1990 — a
+  review of RTP systems with emphasis on temperature
+  control.[^roozeboom-1990]
+* Fiory, *J. Electron. Mater.* 2002 — RTP developments of the 130 nm
+  era.[^fiory-2002]
+* Michel et al. (IBM), *Appl. Phys. Lett.* 1987 — the first report of
+  anomalous boron diffusion under rapid annealing.[^michel-1987]
+* Eaglesham et al. (AT&T), *Appl. Phys. Lett.* 1994 — the interstitial
+  source behind transient enhanced boron diffusion.[^eaglesham-1994]
+* Gronet and Gibbons (Applied Materials), US 5,155,336 — a lamp-heated
+  single-wafer RTP chamber design.[^pat-rtp-amat]
+* Sheets (Tamarack Scientific), US 4,649,261 — an early lamp-heating
+  apparatus for wafer annealing.[^pat-rtp-tamarack]
+* Taur et al., *Proc. IEEE* 1997 — why retrograde channel profiles
+  demand short anneals.[^taur-1997]
 
 ## Open questions
 
@@ -235,11 +232,98 @@ An industry-generic well/channel activation anneal for a 200 mm,
   1000 °C/10 s figure is from a contemporaneous third-party patent.
 * Whether `RTAI` is a single RTA or an RTA plus a short furnace step,
   and whether the Heatpulse 8808 or an Aviza furnace runs it, is
-  inferred from the step code and SKW-01.
+  inferred from the step code and SkyWater's tool list.[^skw-01]
 * Whether the pad oxide is present during the anneal, and where the
-  sacrificial oxide before gate oxidation is removed, is not
-  resolvable from the step list used in this reference (see {ref}`NS19 <step-013>` and
-  {ref}`PWDEIS <step-033>`).
-* The expansion of `RTAI` ("RTA, implant"?) is our reading of the
-  code.
-* The reseller's specification PDF cited for the Heatpulse family (AG-8108) documents the operating specifications of the Heatpulse 4100, not of the 8808 itself; the two share a family but the 8808's own data sheet is not public.
+  sacrificial oxide before gate oxidation is removed, is not resolvable
+  from the step list used in this reference (see {ref}`NS19 <step-013>`
+  and {ref}`PWDEIS <step-033>`).
+* The expansion of `RTAI` ("RTA, implant"?) is our reading of the code.
+* The reseller's specification PDF cited for the Heatpulse
+  family[^ag-8108] documents the operating specifications of the
+  Heatpulse 4100, not of the 8808 itself; the two share a family but the
+  8808's own data sheet is not public.
+
+<!-- footnotes -->
+
+[^txt-01]: J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+    Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
+    2000, ISBN 978-0-13-085037-9.
+    <https://openlibrary.org/isbn/9780130850379>
+[^itrs-01]: International Technology Roadmap for Semiconductors, *2001
+    Edition: Front End Processes*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
+[^pat-03]: W. Koutny et al. (Cypress Semiconductor), *Integration of
+    non-volatile charge trap memory devices and logic CMOS devices*, US
+    8,093,128 B2, granted 2012-01-10.
+    <https://patents.google.com/patent/US8093128B2/en>
+[^wiki-rtp]: Wikipedia, *Rapid thermal processing*.
+    <https://en.wikipedia.org/wiki/Rapid_thermal_processing>
+[^pat-well-hynix]: J.-H. Lee and J.-H. Son (Hyundai/Hynix), *Method of
+    forming retrograde doping profile in twin well CMOS device*, US
+    6,455,402 B2, granted 2002-09-24.
+    <https://patents.google.com/patent/US6455402B2/en>
+[^pat-vt-lsi]: S. Aronowitz, L. Khan and J. Kimball (LSI Logic), *Method
+    of forming retrograde well structures and punch-through barriers
+    using low energy implants*, US 5,963,801 A, granted 1999-10-05.
+    <https://patents.google.com/patent/US5963801A/en>
+[^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+    Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
+    978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^txt-10]: R. B. Fair (ed.), *Rapid Thermal Processing: Science and
+    Technology*, Academic Press, 1993, ISBN 978-0-12-247690-7; R. B.
+    Fair, "Junction Formation in Silicon by Rapid Thermal Annealing",
+    pp. 169–226. <https://doi.org/10.1016/b978-0-12-247690-7.50009-3>
+[^ag-8800]: SemiStar Corp., *AG Associates Heatpulse 8800 / 8808 Rapid
+    Thermal Processing* (reseller specification page), accessed
+    2026-08-30.
+    <https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>
+[^wiki-furnace]: Wikipedia, *Furnace anneal*.
+    <https://en.wikipedia.org/wiki/Diffusion_furnace>
+[^ag-8108]: SemiStar Corp., *AG Associates Heatpulse 4100 / 8108 / 8800
+    / 8800i Specifications* (reseller PDF; the operating specifications
+    documented are those of the Heatpulse 4100), accessed 2026-08-30.
+    <http://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30.
+    <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
+    filed 2021-03-22.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
+[^stolk-1997]: P. A. Stolk, H.-J. Gossmann, D. J. Eaglesham, D. C.
+    Jacobson, C. S. Rafferty, G. H. Gilmer, M. Jaraíz, J. M. Poate, H.
+    S. Luftman and T. E. Haynes, "Physical mechanisms of transient
+    enhanced dopant diffusion in ion-implanted silicon", *Journal of
+    Applied Physics* **81**(9), 6031–6050 (1997).
+    <https://doi.org/10.1063/1.364452>
+[^roozeboom-1990]: F. Roozeboom and N. Parekh, "Rapid thermal processing
+    systems: A review with emphasis on temperature control", *Journal of
+    Vacuum Science & Technology B* **8**(6), 1249–1259 (1990).
+    <https://doi.org/10.1116/1.584902>
+[^fiory-2002]: A. T. Fiory, "Recent developments in rapid thermal
+    processing", *Journal of Electronic Materials* **31**(10), 981–987
+    (2002). <https://doi.org/10.1007/s11664-002-0031-9>
+[^michel-1987]: A. E. Michel, W. Rausch, P. A. Ronsheim and R. H. Kastl,
+    "Rapid annealing and the anomalous diffusion of ion implanted boron
+    into silicon", *Applied Physics Letters* **50**(7), 416–418 (1987).
+    <https://doi.org/10.1063/1.98160>
+[^eaglesham-1994]: D. J. Eaglesham, P. A. Stolk, H.-J. Gossmann and J.
+    M. Poate, "Implantation and transient B diffusion in Si: The source
+    of the interstitials", *Applied Physics Letters* **65**(18),
+    2305–2307 (1994). <https://doi.org/10.1063/1.112725>
+[^pat-rtp-amat]: C. M. Gronet and J. F. Gibbons (Applied Materials),
+    *Rapid thermal heating apparatus and method*, US 5,155,336 A,
+    granted 1992-10-13.
+    <https://patents.google.com/patent/US5155336A/en>
+[^pat-rtp-tamarack]: R. E. Sheets (Tamarack Scientific), *Apparatus for
+    heating semiconductor wafers in order to achieve annealing, silicide
+    formation, reflow of glass passivation layers, etc.*, US 4,649,261
+    A, granted 1987-03-10.
+    <https://patents.google.com/patent/US4649261A/en>
+[^taur-1997]: Y. Taur, D. A. Buchanan, W. Chen, D. J. Frank, K. E.
+    Ismail, S.-H. Lo, G. A. Sai-Halasz, R. G. Viswanathan, H.-J. C.
+    Wann, S. J. Wind and H.-S. Wong, "CMOS scaling into the nanometer
+    regime", *Proceedings of the IEEE* **85**(4), 486–504 (1997).
+    <https://doi.org/10.1109/5.573737>
