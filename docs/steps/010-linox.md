@@ -30,7 +30,7 @@ degrees C.) oxide growth process" to reach "a thickness in the range
 of approximately 10 nm to approximately 30 nm";[^pat-sti-lattice] an
 AmberWave Systems patent (now TSMC-owned) notes the alternative that
 "the liner oxidation may take place in a wet, i.e., steam ambient
-and/or at a low temperature, i.e., <1000° C."[^pat-sti-amberwave] No
+and/or at a low temperature, i.e., <1000° C.".[^pat-sti-amberwave] No
 SkyWater source gives the SKY130 liner
 thickness or temperature.
 

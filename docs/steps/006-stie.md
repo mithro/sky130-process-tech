@@ -233,7 +233,8 @@ retrieved, so this is unverified (see open questions).
   trench-isolation-induced mechanical stress on MOSFET
   performance.[^bianchi-2002]
 * Horioka et al. (Toshiba), US 5,258,332 — rounding of trench corner
-  portions by etching, a patent-side view of step 4
+  portions by fluorine/oxygen chemical dry etching (framed around
+  trench capacitors rather than STI), the same technique as step 4
   above.[^pat-corner-toshiba]
 * Hon, SJSU master's thesis 2003 — line-edge roughness measurement on
   an STI etch.[^hon-2003]
