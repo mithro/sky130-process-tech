@@ -49,7 +49,7 @@ deep-dive entries per step page and twelve per category page
 - [x] Citation style guide, checker and exemplar page — 2026-08-30
 - [x] Convert step pages 001–007, 009–013 and expand deep-dive lists — reviewed and merged 2026-09-12
 - [ ] Inventory: add the isolation-module deep-dive sources (92 labels) to `public-sources.md`
-- [r] Convert the ten category pages and expand deep-dive lists (branch `topic/footnotes-categories`, converted, under review)
+- [x] Convert the ten category pages and expand deep-dive lists — reviewed and merged 2026-09-12
 - [x] Convert steps 014–034 — 2026-09-12
 
 ## Phase 3 — Cross-cutting pages
