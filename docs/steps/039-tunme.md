@@ -245,10 +245,10 @@ fab (SKY130's recipe is not public):
 * That the oxide under the resist/nitride is the pad oxide from
   {ref}`BOX <step-002>` rather than a later sacrificial oxide is
   inferred; its retention after {ref}`NS19 <step-013>` is not public.
-* Whether the pad oxide is removed only inside the tunnel windows
-  (masked, as the step name suggests) or everywhere after the resist
-  is stripped is not stated publicly; the Cypress patent text can be
-  read either way.[^pat-04]
+* Whether the pad oxide is removed only inside the tunnel windows or
+  everywhere after the resist is stripped is an open question; this
+  page reads the step name used in this reference as a masked etch,
+  and the Cypress patent text can be read either way.[^pat-04]
 * Where the resist strip and the pre-oxidation clean sit — in this
   step or in {ref}`ONO <step-040>` — is inferred from the absence of a
   separate strip step.

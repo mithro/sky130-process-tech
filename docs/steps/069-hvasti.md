@@ -25,10 +25,11 @@ sides of the channel: the *large-angle-tilt implanted drain* ({term}`LATID`) of
 Hori,[^hori-1989-latid][^hori-1992] the modern descendant of the lightly
 doped drain.[^ogura-1980]
 
-The step code says arsenic; the PDK confirms that its N-tip species is
-arsenic in general ("N Tip (As)").[^pdk-03] Energy and dose are not
-public. Unlike the 1.8 V tip there is no {term}`halo` in the step list used in
-this reference between this implant and its strip
+The PDK gives arsenic as its N-tip species in general ("N Tip
+(As)"),[^pdk-03] consistent with the step code used in this reference.
+Energy and dose are not public. Unlike the 1.8 V tip there is no
+{term}`halo` in the step list used in this reference between this
+implant and its strip
 {ref}`HVASTIS <step-070>`, which is consistent with a device whose
 0.5 µm "HV MOSFET channel length"[^pdk-03] does not need one
 (inference).

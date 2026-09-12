@@ -23,11 +23,11 @@ the deep n⁺ source/drain implanted later at {ref}`NSDI <step-086>`.
 The boron {term}`halo` {ref}`LDBHI <step-073>` follows through the same resist;
 the strip is {ref}`LDASTIS <step-074>`.
 
-The species is arsenic by the step code, consistent with the PDK's
-"N Tip (As)" row;[^pdk-03] energy and dose are not public. What "lightly
-doped" means quantitatively is likewise not public; we read it as an
-LDD-class dose, of order 10¹³ cm⁻² (typical of an {term}`LDD`),[^txt-04] against
-the 10¹⁴–10¹⁵ cm⁻² of a logic {term}`extension` (typical).[^txt-01]
+The PDK's "N Tip (As)" row gives arsenic,[^pdk-03] consistent with the
+step code used in this reference; energy and dose are not public. We
+read the "lightly doped" label as an LDD-class dose, of order
+10¹³ cm⁻² (typical of an {term}`LDD`),[^txt-04] against the
+10¹⁴–10¹⁵ cm⁻² of a logic {term}`extension` (typical).[^txt-01]
 
 ## Step category
 
