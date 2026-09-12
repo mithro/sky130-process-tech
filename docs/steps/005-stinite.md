@@ -44,7 +44,7 @@ clean, vertical profile. The nitride-etch profile matters because:
 
 * the nitride sidewall becomes the upper part of the trench sidewall
   and sets the top of the trench opening, hence the trench width and
-  the fill aspect ratio (THUNG-2016);
+  the fill aspect ratio;[^thung-2016]
 * any nitride *foot* or *taper* would be copied into the silicon by
   the subsequent trench etch and shift the active CD;
 * any pad-oxide residue left in the field would micro-mask the silicon
@@ -60,12 +60,13 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
    CF₄/O₂ with a little Ar) — in a medium-density or high-density
    plasma. Fluorine radicals etch nitride; CHF₃ adds polymerising
    carbon that protects the sidewall and gives anisotropy; O₂ trims the
-   polymer (TXT-02, WIKI-RIE: "High-energy ions from the plasma attack
-   the wafer surface and react with it", giving "very anisotropic etch
-   profiles"). Gas pressure in RIE is "typically maintained in a range
-   between a few millitorr and a few hundred millitorr" (WIKI-RIE).
+   polymer[^txt-02] (Wikipedia: "High-energy ions from the plasma
+   attack the wafer surface and react with it", giving "very
+   anisotropic etch profiles"[^wiki-rie]). Gas pressure in RIE is
+   "typically maintained in a range between a few millitorr and a few
+   hundred millitorr".[^wiki-rie]
 3. **Endpoint.** Optical emission spectroscopy on a nitrogen-containing
-   etch product detects the nitride/oxide interface (TXT-02); a timed
+   etch product detects the nitride/oxide interface;[^txt-02] a timed
    over-etch then clears the pad oxide.
 4. **Pad-oxide breakthrough.** A short CF₄- or CHF₃-rich step removes
    the 10–20 nm pad oxide and exposes silicon; selectivity to silicon
@@ -76,13 +77,13 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
 SkyWater's own capability list names exactly these gases on its
 silicon/nitride etchers: "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2 –
 gate, trench, W/WN" and "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6,
-O2" (SKW-01).
+O2".[^skw-01]
 
-Typical numbers for fluorocarbon nitride etching (TXT-02, TXT-05):
+Typical numbers for fluorocarbon nitride etching:[^txt-02][^txt-05]
 etch rates of the order of 100–300 nm/min, so a 150 nm nitride plus
 over-etch takes about a minute; selectivity to resist of roughly
-1–2 : 1 (which is why the 1.14 µm resist of PDK-03 is comfortable for
-a ~200 nm stack).
+1–2 : 1 (which is why the 1.14 µm resist of the PDK assumptions
+page[^pdk-03] is comfortable for a ~200 nm stack).
 
 ## Machines typically used
 
@@ -94,24 +95,25 @@ a ~200 nm stack).
 
 ## Machines likely used at SkyWater
 
-* **AMAT DPS II (Centura).** SKW-01 lists it with CF₄ and CHF₃ among its
-  gases and "trench" among its applications. Strength: strong that the
-  tool and gases exist; **inference** that this step runs on it.
-* **Lam 9400 TCP.** SKW-01: "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6,
-  O2". Strength: strong that a nitride-capable TCP etcher exists;
-  inference for this step. The 9400 is a transformer-coupled
-  high-density plasma etcher originally designed for polysilicon
-  (SNF-9400).
-* **Lam 4400.** SKW-01: "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2".
-  Strength: strong for existence; a possible legacy home for this
-  etch.
+* **AMAT DPS II (Centura).** SkyWater lists it with CF₄ and CHF₃ among
+  its gases and "trench" among its applications.[^skw-01] Strength:
+  strong that the tool and gases exist; **inference** that this step
+  runs on it.
+* **Lam 9400 TCP.** SkyWater lists "Lam 9400 TCP, poly/nitride, HBr,
+  CF4, SF6, O2".[^skw-01] Strength: strong that a nitride-capable TCP
+  etcher exists; inference for this step. The 9400 is a
+  transformer-coupled high-density plasma etcher originally designed
+  for polysilicon.[^snf-9400]
+* **Lam 4400.** SkyWater lists "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
+  O2".[^skw-01] Strength: strong for existence; a possible legacy home
+  for this etch.
 
 Which of the three carries the isolation nitride etch is not public.
 
 ## Resources required
 
-* **CF₄, CHF₃, O₂** (and possibly Ar or N₂) process gases (SKW-01,
-  TXT-02).
+* **CF₄, CHF₃, O₂** (and possibly Ar or N₂) process
+  gases.[^skw-01][^txt-02]
 * **Helium** for backside wafer cooling.
 * **Chamber-clean gases** (O₂, NF₃ or SF₆) between wafers or lots.
 * **Consumable chamber parts** — focus rings, liners, electrostatic-
@@ -132,45 +134,60 @@ Which of the three carries the isolation nitride etch is not public.
 
 ### Cross-check
 
-* **SKW-01** — SkyWater Technology, *Facilities & Capabilities*,
-  accessed 2026-08-30 (DPSII, Lam 9400 TCP and Lam 4400 gas lists).
-  <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-* **PDK-03** — SkyWater PDK Authors, *Criteria & Assumptions*
-  (photoresist thickness 1.14 µm).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
-* **SNF-9400** — Stanford Nanofabrication Facility, *Lam Research TCP
-  9400 Poly Etcher (lampoly)* equipment page ("Transformer Coupled
-  Plasma (TCP) etcher, generates a uniform, high density plasma for
-  selective etching of silicon and polysilicon"; gases include
-  chlorine, hydrogen bromide, oxygen, tetrafluoromethane).
-  <https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>
+* SkyWater, *Facilities & Capabilities* — the DPSII, Lam 9400 TCP and
+  Lam 4400 gas lists.[^skw-01]
+* SkyWater PDK, *Criteria & Assumptions* — photoresist thickness
+  1.14 µm.[^pdk-03]
+* Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
+  Etcher* — "Transformer Coupled Plasma (TCP) etcher, generates a
+  uniform, high density plasma for selective etching of silicon and
+  polysilicon"; gases include chlorine, hydrogen bromide, oxygen and
+  tetrafluoromethane.[^snf-9400]
 
 ### High-level understanding
 
-* **WIKI-RIE** — Wikipedia, *Reactive-ion etching*.
-  <https://en.wikipedia.org/wiki/Reactive-ion_etching>
-* **WIKI-STI** — Wikipedia, *Shallow trench isolation* ("Dry etch
-  (Reactive-ion etching)" step).
-  <https://en.wikipedia.org/wiki/Shallow_trench_isolation>
-* **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the
-  VLSI Era, Vol. 1*, 2nd ed., Lattice Press, 2000,
-  ISBN 978-0-9616721-6-4 (plasma-etch chapter: fluorocarbon etching of
-  SiO₂ and Si₃N₄).
-  <https://openlibrary.org/isbn/9780961672164>
-* **TXT-05** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4*,
-  Lattice Press, 2002, ISBN 978-0-9616721-7-1 (STI etch).
-  <https://openlibrary.org/isbn/9780961672171>
+* Wikipedia, *Reactive-ion etching* — ion-assisted anisotropy and
+  operating pressures.[^wiki-rie]
+* Wikipedia, *Shallow trench isolation* — the "Dry etch (Reactive-ion
+  etching)" step.[^wiki-sti]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — the
+  plasma-etch chapter: fluorocarbon etching of SiO₂ and
+  Si₃N₄.[^txt-02]
+* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — the STI
+  etch.[^txt-05]
 
 ### Deep dive
 
-* **THUNG-2016** — B. J. Thung et al., "Challenges for 0.13µm Generation
-  Shallow Trench Isolation on 0.18µm Equipment Platform", *JTEC* 8(5),
-  2016, pp. 15–21 (fill aspect ratio defined by trench depth plus
-  nitride thickness).
-  <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>
-* **REV-01** — M. Nandakumar et al., "Shallow trench isolation for
-  advanced ULSI CMOS technologies", *IEDM 1998*, pp. 133–136,
-  DOI 10.1109/IEDM.1998.746297.
+* Thung et al., *JTEC* 2016 — fill aspect ratio defined by trench
+  depth plus nitride thickness.[^thung-2016]
+* Nandakumar et al., IEDM 1998 — the STI review, including trench
+  definition through the nitride/oxide stack.[^rev-01]
+* Coburn and Winters, *J. Appl. Phys.* 1979 — the classic demonstration
+  that ion bombardment plus reactive gas etches far faster than either
+  alone, the basis of anisotropic RIE.[^coburn-1979]
+* Oehrlein et al., *J. Vac. Sci. Technol. A* 1994 — fluorocarbon
+  high-density plasmas with CF₄ and CHF₃: polymer deposition versus
+  etching, the mechanism behind sidewall passivation.[^oehrlein-1994]
+* Kastenmeier, Matsuo and Oehrlein, *J. Vac. Sci. Technol. A* 1999 —
+  how to etch silicon nitride selectively over silicon and silicon
+  dioxide in fluorine-based plasmas.[^kastenmeier-1999]
+* Regis et al., ASMC 1997 — a production RIE recipe for silicon nitride
+  with high selectivity to oxide, with the process-window
+  data.[^regis-1997]
+* Flamm, *Pure Appl. Chem.* 1990 — mechanisms of silicon etching in
+  fluorine- and chlorine-containing plasmas, relevant to the pad-oxide
+  breakthrough and the silicon stop.[^flamm-1990]
+* Lieberman and Lichtenberg, *Principles of Plasma Discharges and
+  Materials Processing* — the textbook on inductively and
+  capacitively coupled etch reactors.[^lieberman-2005]
+* Ogle (Lam Research), US 4,948,458 — the transformer-coupled planar
+  plasma source behind the Lam TCP 9400 family.[^pat-tcp-lam]
+* Bawolek, ASTM STP 960 (1987) — a Monte Carlo treatment of plasma-etch
+  emission endpoint, i.e. how the signal used at step 3 above
+  behaves.[^bawolek-1987]
+* Hon, SJSU master's thesis 2003 — characterisation of line-edge
+  roughness in an STI etch, a metrology view of the nitride/trench
+  profile.[^hon-2003]
 
 ## Open questions
 
@@ -178,6 +195,72 @@ Which of the three carries the isolation nitride etch is not public.
   different tools, is not public.
 * The exact chemistry (CF₄/CHF₃/O₂ versus CF₄/O₂ or CHF₃/O₂) and
   whether a BARC is present are inferred from the era and from
-  SKW-01's gas lists.
+  SkyWater's gas lists.[^skw-01]
 * Whether the pad oxide is fully cleared here or left as a thin screen
   for the start of the silicon etch is not public.
+
+<!-- footnotes -->
+
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^snf-9400]: Stanford Nanofabrication Facility, *Lam Research TCP 9400
+    Poly Etcher (lampoly)*, equipment page.
+    <https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>
+[^wiki-rie]: Wikipedia, *Reactive-ion etching*.
+    <https://en.wikipedia.org/wiki/Reactive-ion_etching>
+[^wiki-sti]: Wikipedia, *Shallow trench isolation*.
+    <https://en.wikipedia.org/wiki/Shallow_trench_isolation>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+    ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+    Deep-Submicron Process Technology*, Lattice Press, 2002,
+    ISBN 978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^thung-2016]: B. J. Thung, K. Ibrahim, N. A. Manap and F. Salehuddin,
+    "Challenges for 0.13µm Generation Shallow Trench Isolation on
+    0.18µm Equipment Platform", *Journal of Telecommunication,
+    Electronic and Computer Engineering* **8**(5), 15–21 (2016).
+    <https://jtec.utem.edu.my/jtec/article/view/697>
+[^rev-01]: M. Nandakumar, A. Chatterjee, S. Sridhar, K. Joyner,
+    M. Rodder and I.-C. Chen, "Shallow trench isolation for advanced
+    ULSI CMOS technologies", *IEDM 1998 Technical Digest*, pp. 133–136.
+    <https://doi.org/10.1109/IEDM.1998.746297>
+[^coburn-1979]: J. W. Coburn and H. F. Winters, "Ion- and
+    electron-assisted gas-surface chemistry — An important effect in
+    plasma etching", *Journal of Applied Physics* **50**(5), 3189–3196
+    (1979). <https://doi.org/10.1063/1.326355>
+[^oehrlein-1994]: G. S. Oehrlein, Y. Zhang, D. Vender and M. Haverlag,
+    "Fluorocarbon high-density plasmas. I. Fluorocarbon film deposition
+    and etching using CF₄ and CHF₃", *Journal of Vacuum Science &
+    Technology A* **12**(2), 323–332 (1994).
+    <https://doi.org/10.1116/1.578876>
+[^kastenmeier-1999]: B. E. E. Kastenmeier, P. J. Matsuo and
+    G. S. Oehrlein, "Highly selective etching of silicon nitride over
+    silicon and silicon dioxide", *Journal of Vacuum Science &
+    Technology A* **17**(6), 3179–3184 (1999).
+    <https://doi.org/10.1116/1.582097>
+[^regis-1997]: J. M. Regis, A. M. Joshi, T. Lill and M. Yu, "Reactive
+    ion etch of silicon nitride spacer with high selectivity to oxide",
+    *1997 IEEE/SEMI Advanced Semiconductor Manufacturing Conference and
+    Workshop (ASMC 97) Proceedings*, pp. 252–256.
+    <https://doi.org/10.1109/ASMC.1997.630744>
+[^flamm-1990]: D. L. Flamm, "Mechanisms of silicon etching in fluorine-
+    and chlorine-containing plasmas", *Pure and Applied Chemistry*
+    **62**(9), 1709–1720 (1990). <https://doi.org/10.1351/pac199062091709>
+[^lieberman-2005]: M. A. Lieberman and A. J. Lichtenberg, *Principles
+    of Plasma Discharges and Materials Processing*, 2nd ed., Wiley,
+    2005, ISBN 978-0-471-72001-0. <https://doi.org/10.1002/0471724254>
+[^pat-tcp-lam]: J. S. Ogle (Lam Research Corporation), *Method and
+    apparatus for producing magnetically-coupled planar plasma*,
+    US 4,948,458 A, granted 1990-08-14.
+    <https://patents.google.com/patent/US4948458A/en>
+[^bawolek-1987]: E. J. Bawolek, "Monte Carlo Simulation of Plasma Etch
+    Emission Endpoint", in *Emerging Semiconductor Technology*, ASTM STP
+    960, ASTM International, 1987, pp. 190–203.
+    <https://doi.org/10.1520/STP25751S>
+[^hon-2003]: B. M. Hon, *Characterization of shallow trench isolation
+    etch line edge roughness*, master's thesis, San José State
+    University, 2003. <https://doi.org/10.31979/etd.53yx-bwm5>
