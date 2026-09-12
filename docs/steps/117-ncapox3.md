@@ -44,14 +44,16 @@ and a permittivity of 3.5 is lower than a plain plasma oxide's
 ## Step category
 
 `NCAPOX3` is a {ref}`Thin-film deposition <category-deposition>` step
-of the *{term}`PECVD` oxide* class — the category page's PECVD section — and
-the simplest deposition in the module: a blanket, thin, low-temperature
-oxide on a flat surface with no gap to fill and no stop to respect.
-Its relatives are the other cap oxides ({ref}`NCAPOX <step-091>`,
-{ref}`NCAPOX4 <step-128>` and above) and the dielectric thickness-
-setting layers generally. What is specific to this instance is that
-it sits directly under the via-1 lithography and etch, so its
-thickness uniformity and its surface are what those steps see.
+of the *{term}`PECVD` oxide* class (PECVD on our reading: the
+aluminium beneath rules out furnace oxides) — the category page's
+PECVD section — and the simplest deposition in the module: a blanket,
+thin, low-temperature oxide on a flat surface with no gap to fill and
+no stop to respect. Its relatives are the other cap oxides
+({ref}`NCAPOX <step-091>`, {ref}`NCAPOX4 <step-128>` and above) and
+the dielectric thickness-setting layers generally. What is specific
+to this instance is that it sits directly under the via-1 lithography
+and etch, so its thickness uniformity and its surface are what those
+steps see.
 
 ## Why this step exists
 
@@ -257,8 +259,10 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 [^cyp-qtp-123907]: Cypress Semiconductor, *Fab Process Qualification
     Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8
     Technology, Fab 4 CMI*, document 001-91369 Rev. **, March 2014
-    (copy hosted by Tokyo Electron Device as a product-change
-    attachment).
+    (copy hosted by Tokyo Electron Device as the attachment to
+    Cypress Product Information Notification PIN145273, 2014-03-13,
+    which states the report is attached and available from
+    cypress.com; <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
     <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
 [^cyp-qtp-014807]: Cypress Semiconductor, *Technology Derivative
     Qualification Report, QTP# 014807 Version 2.0: Technology
