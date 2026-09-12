@@ -51,11 +51,7 @@ gate oxide (PDK-HV); that combination is only possible with a drift
 region far more lightly doped than the 4 × 10¹⁷ cm⁻³ standard P-well
 (PDK-03).
 
-Texas Instruments' 0.18 µm DE devices used the existing wells as
-drift regions, with "boron species at about 8×10¹² cm² to 7×10¹³ cm² at
-an energy of about 40 keV" for the p-type drift well (PAT-DEMOS-TI)
-and "phosphorous species at about 8×10¹² cm² to 7×10¹³ cm² at an
-energy of about 150 keV" for the n-type one; SKY130 does the same for
+Texas Instruments' DE devices for a 0.18 µm logic process (MITROS-2001) used the existing wells as drift regions; the companion patent gives boron "at doses of 2×10¹² cm² to 7×10¹³ cm² at energies of about 40 keV" for the p-type well and "phosphorous species at about 8×10¹² cm² to 7×10¹³ cm² at an energy of about 150 keV" for the n-type one (PAT-DEMOS-TI); SKY130 does the same for
 its 16 V devices ("drain extentions (DE) fabricated by lightly doped
 Nwells and Pwells", PDK-HV) but adds a dedicated, lighter P-well for
 the 20 V family. Without `PWDEI1`/`PWDEI2` there would be no 20 V
@@ -78,7 +74,7 @@ illustrative.
   example uses 40 keV for a shallow p-type drift (PAT-DEMOS-TI); a
   deeper, higher-voltage design would go higher.
 * **Dose.** Light — of order 10¹² cm⁻² per implant — so that the drift
-  region fully depletes at 20 V. The TI range of 8 × 10¹²–7 × 10¹³ cm⁻²
+  region fully depletes at 20 V. The TI range of 2 × 10¹²–7 × 10¹³ cm⁻²
   (PAT-DEMOS-TI) is for 5–12 V-class devices; a 20 V design at a
   fixed drift length would sit at or below its lower end
   (inference; TXT-04 on RESURF-type design).
@@ -164,7 +160,7 @@ illustrative.
 
 * **PAT-DEMOS-TI** — J. C. Mitros (TI), US 6,660,603 B2, granted
   2003-12-09 (DE definition; p-type drift boron 40 keV,
-  8 × 10¹²–7 × 10¹³ cm⁻²).
+  2 × 10¹²–7 × 10¹³ cm⁻²).
   <https://patents.google.com/patent/US6660603B2/en>
 * **PAT-DEMOS-TI2** — P. R. Chidambaram (TI), US 2006/0006461 A1,
   published 2006-01-12.

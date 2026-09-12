@@ -28,7 +28,7 @@ implants — of order 10¹² cm⁻² each, illustrative
 The crust is therefore modest by the standards of
 {ref}`LVTPIS <step-021>`, and because `pwde` regions are small the
 open area of the mask is small too: the strip removes almost a full
-wafer's worth of resist. The surface beneath is all oxide (pad oxide
+wafer's worth of resist. The surface beneath is, we infer, all oxide (pad oxide
 on active, trench oxide on field).
 
 ## Step category
@@ -80,7 +80,7 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
    is a real choice. Keeping it protects the silicon surface during
    the RTA and avoids dopant out-diffusion; removing it now would
    require a fresh sacrificial oxide before gate oxidation. The
-   public step list has no sacrificial-oxide step before
+   step list used in this reference has no sacrificial-oxide step before
    {ref}`GOX100 <step-043>`, so we infer that the pad oxide is *kept*
    through the anneal (see the open question on
    {ref}`NS19 <step-013>`).

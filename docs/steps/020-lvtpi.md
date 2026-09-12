@@ -12,8 +12,7 @@
 
 ## What this step is
 
-`LVTPI` is the third and last implant placed through the N-well
-resist of {ref}`NWM <step-017>`, after the two well implants
+`LVTPI` is, we infer from the step order, the third and last implant placed through the N-well resist of {ref}`NWM <step-017>`, after the two well implants
 {ref}`NWI <step-018>` and {ref}`NWI2 <step-019>`. Where those set the
 buried profile of the N-well, `LVTPI` is a low-energy *channel*
 implant that sets the surface doping under the future PMOS gates —
@@ -81,7 +80,7 @@ fab (SKY130 values are not public):
   buried-channel PMOS with an n⁺ gate, which was common up to the
   0.35 µm generation but rare at 130 nm (TXT-04). Which SKY130 uses is
   not public; arsenic or phosphorus is the more plausible reading,
-  and "BF2" appears in the public step list only for the *high-Vt*
+  and "BF2" appears in the step list used in this reference only for the *high-Vt*
   module ({ref}`PNCHI <step-024>`).
 * **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻² are typical for
   threshold adjusts (category page; PAT-VT-LSI gives 1 × 10¹²–1 × 10¹³

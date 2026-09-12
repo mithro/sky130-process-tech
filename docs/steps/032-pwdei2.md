@@ -64,7 +64,7 @@ An industry-generic second drift-well implant for a 200 mm,
   region, in the pattern of chained wells (PAT-WELL-IBM,
   PAT-WELL-HYNIX). Which member `PWDEI2` is, is not public.
 * **Dose.** Of order 10¹² cm⁻²; the Texas Instruments DE patent's
-  8 × 10¹²–7 × 10¹³ cm⁻² for a 5–12 V-class p-type drift region
+  2 × 10¹²–7 × 10¹³ cm⁻² for a 5–12 V-class p-type drift region
   (PAT-DEMOS-TI) is an upper bound for a 20 V design (inference).
 * **Tilt and twist.** 7° with twist (WIKI-IMPLANT).
 * **Sequence.** Back-to-back with `PWDEI1` on the same tool if the

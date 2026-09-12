@@ -38,8 +38,7 @@ clean sequence can be used without restriction.
 carbonises the top of the resist into a crust that ashes slowly and
 can pop. For this particular strip the crust is thin, because the dose
 is low and the energy modest; the strips after the well masks
-({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`), which have seen
-MeV ions and summed doses near 10¹³ cm⁻², and above all the
+({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`), which have seen hundreds of keV to MeV ions and summed doses near 10¹³ cm⁻², and above all the
 source/drain strips ({ref}`PDIS <step-084>`,
 {ref}`NSDIS <step-087>`) at several 10¹⁵ cm⁻², are the difficult ones.
 
@@ -51,9 +50,7 @@ the {ref}`NWM <step-017>` resist would print as a defect or block the
 MeV well implant locally. The resist also carries the implanted
 species in its crust and whatever metals the implanter's beam-line has
 sputtered onto it; both must be removed before the wafer sees the next
-implant and, eventually, the {ref}`RTAI <step-034>` anneal. A poorly
-stripped implant resist shows up as "popped" flakes that are
-"especially hard to clean from the wafer surface" (PAT-STRIP-MOSEL)
+implant and, eventually, the {ref}`RTAI <step-034>` anneal. A poorly stripped implant resist shows up as popped flakes — the patent literature notes that "the popping problem … causes the photoresist to become even harder" (PAT-STRIP-MOSEL)
 and as threshold-voltage outliers where residue shadowed a later
 implant.
 
@@ -65,10 +62,7 @@ fab:
 1. **Plasma ash.** Downstream (remote) microwave or RF oxygen plasma.
    The problem specific to implanted resist is that "the top portion
    of the photoresist layer is transformed into a carbonized crust
-   that is difficult to remove" (PAT-STRIP-TSMC) and that at wafer
-   temperatures "above 150 to above 200 °C" the bulk resist can
-   outgas so that "the entire photoresist can then 'pop'"
-   (PAT-STRIP-MOSEL). The standard countermeasure is a two-step
+   that is difficult to remove" (PAT-STRIP-TSMC) and that during a conventional "high temperature (>200° C.) dry ashing" the volatile bulk resist can "build up pressure beneath the implant-hardened surface layer" until it pops (PAT-STRIP-MOSEL). The standard countermeasure is a two-step
    recipe: a first step at low temperature — "removed by oxygen and
    nitrogen/hydrogen plasma in a low-temperature (<220 °C)
    environment" (PAT-STRIP-MOSEL) — until the crust is gone, then a
@@ -93,7 +87,7 @@ fab:
 4. **Inspection.** Patterned-wafer optical inspection for residue and
    particles.
 
-The pad oxide is left in place: a dilute-HF "oxide-last" step is
+We infer that the pad oxide is left in place: a dilute-HF "oxide-last" step is
 avoided here because the same oxide must still screen the four
 implants that follow ({ref}`NWI <step-018>` to
 {ref}`LVTPI <step-020>`); some flows accept a small oxide loss in SC-1

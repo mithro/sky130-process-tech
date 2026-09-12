@@ -13,11 +13,9 @@
 ## What this step is
 
 `PWDEM` prints the *P-well drain-extended mask*, the last lithography
-of the well and channel module. A thick photoresist is coated,
+of the well and channel module. A photoresist (thick, we infer) is coated,
 exposed and developed to open windows over the regions of the 20 V
-devices that are to receive a purpose-built, lightly doped P-well; the
-two implants {ref}`PWDEI1 <step-031>` and {ref}`PWDEI2 <step-032>`
-follow, and the resist is stripped at {ref}`PWDEIS <step-033>`.
+devices that are to receive a purpose-built, lightly doped P-well; the two implants {ref}`PWDEI1 <step-031>` and {ref}`PWDEI2 <step-032>` follow (through the same resist, we infer from the step order), and the resist is stripped at {ref}`PWDEIS <step-033>`.
 
 The drawn layer is `pwde` (GDS 124:20), "Regions to receive p-well
 drain-extended implants" (PDK-06). Its rules (pwdem.1–pwdem.6) have
@@ -34,7 +32,7 @@ back into part of it, inside a deep-N-well tub.
 
 The PDK's mask table lists "P-Well Drain Extended, PWDEM" but, as for
 PWBM, leaves the "Used in SKY130" column blank (PDK-05); the layer,
-its rules and the public step list all include it, so we treat the
+its rules and the step list used in this reference all include it, so we treat the
 blank as a documentation inconsistency (see *Open questions*).
 
 ## Step category
@@ -65,9 +63,8 @@ lightly doped Nwells and Pwells respectively" and "All VHV devices
 use 110A gate oxide thickness just like standard 5.0V Vcc devices"
 (PDK-HV).
 
-For the 16 V devices the ordinary wells serve as the drift regions
-(PDK-HV; PAT-DEMOS-TI2 notes that DE devices can be made "without
-adding new masks or processing steps"). For the 20 V devices the
+For the 16 V devices the ordinary wells serve, we infer, as the drift regions
+(PDK-HV; PAT-DEMOS-TI2 notes that DE devices can be made "without the addition of extra masks or processing steps"). For the 20 V devices the
 standard P-well is too heavily doped: a drift region must deplete
 fully at the rated voltage, which requires a doping and depth that a
 4 × 10¹⁷ cm⁻³ well (PDK-03) cannot provide. `PWDEM` therefore defines

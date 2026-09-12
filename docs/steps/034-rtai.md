@@ -139,9 +139,7 @@ An industry-generic well/channel activation anneal for a 200 mm,
   1200°C", ramp-up "Programmable, 1 – 180°C per second", "2 banks of
   14 lamps" with "10-zone lamp control", pyrometer or thermocouple
   sensing, wafer sizes to 8 inches, and "Implant annealing" among
-  the listed applications (AG-8800; the specification sheet for the
-  sibling 8108 gives the same 400–1200 °C range and ±5 °C uniformity
-  across an 8-inch wafer at 1150 °C, AG-8108).
+  the listed applications (AG-8800; the reseller's specification PDF, whose operating specifications are those of the Heatpulse 4100 of the same family, gives the same 400–1200 °C range, a maximum ramp of 150 °C/s and ±5 °C uniformity across a 150 mm wafer at 1150 °C, AG-8108).
 * **Aviza furnaces.** SKW-01 states "Furnaces are all made by Aviza"
   with "Ar anneal to 1150C" and "N2 anneal to 1150C" — the batch
   alternative if the fab chose a furnace well anneal. Strength:
@@ -154,7 +152,7 @@ An industry-generic well/channel activation anneal for a 200 mm,
   minor addition is used.
 * **Tungsten-halogen lamps, quartz chamber/window, edge rings**;
   pyrometer calibration and thermocouple wafers (category page).
-* **Cooling water and CDA/N₂** for lamp and tube cooling (AG-8108).
+* **Cooling water and CDA/N₂** for lamp and chamber cooling (facility table for the Heatpulse 4100, AG-8108).
 * **Monitor wafers** (SEMI M8 class) for sheet resistance.
 * Gas suppliers named by SkyWater: Air Products, Praxair, Linde,
   Airgas (SEC-01, SEC-02).
@@ -240,7 +238,8 @@ An industry-generic well/channel activation anneal for a 200 mm,
   inferred from the step code and SKW-01.
 * Whether the pad oxide is present during the anneal, and where the
   sacrificial oxide before gate oxidation is removed, is not
-  resolvable from the public step list (see {ref}`NS19 <step-013>` and
+  resolvable from the step list used in this reference (see {ref}`NS19 <step-013>` and
   {ref}`PWDEIS <step-033>`).
 * The expansion of `RTAI` ("RTA, implant"?) is our reading of the
   code.
+* The reseller's specification PDF cited for the Heatpulse family (AG-8108) documents the operating specifications of the Heatpulse 4100, not of the 8808 itself; the two share a family but the 8808's own data sheet is not public.

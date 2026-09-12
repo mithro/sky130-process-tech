@@ -24,13 +24,13 @@ channel implants at light doses (of order 10¹²–10¹³ cm⁻² each,
 illustrative; {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`), one of
 them BF₂. As at {ref}`LVTNIS <step-016>` this is a *light* implant
 strip: the crust is thin and the popping risk low compared with the
-MeV-well strips ({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`).
+high-energy well strips ({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`).
 One detail is specific to it: BF₂ implants leave fluorine in the
 resist crust, and fluorinated residues can be more tenacious in a
 pure-oxygen ash, which is one reason implant-strip recipes add
 hydrogen or water vapour (category page; TXT-05).
 
-The surface under the resist is still entirely oxide — pad oxide over
+The surface under the resist is, we infer, still entirely oxide — pad oxide over
 the active areas, trench oxide over the field — so the acid–peroxide
 sequence can be used without restriction.
 

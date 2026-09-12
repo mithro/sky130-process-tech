@@ -15,7 +15,7 @@
 `HVTPM` prints the *high-Vt P-channel mask*: photoresist is coated on
 the cleaned wafer, exposed through the HVTPM reticle and developed,
 opening windows over the PMOS channels that are to have a raised
-threshold. Two implants follow through the same resist — the
+threshold. Two implants follow, we infer from the step order, through the same resist — the
 P-channel implant {ref}`PCHI <step-023>` and the P-channel BF₂ implant
 {ref}`PNCHI <step-024>` — and the resist is stripped at
 {ref}`PCHIS <step-025>`.
@@ -184,7 +184,7 @@ fab:
 
 * The PDK mask table also flags "HLow VT PCh Radio*, HVTRM" as used in
   SKY130 (PDK-05), with a drawn layer `hvtr` (GDS 18:20, "High-Vt RF
-  transistor implant", PDK-06), yet the public step list has no
+  transistor implant", PDK-06), yet the step list used in this reference has no
   HVTRM step. Whether that mask is absent, folded into `HVTPM`, or
   belongs to an option not in the baseline flow is unknown.
 * Resist thickness and exposure tool are inferred.

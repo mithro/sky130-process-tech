@@ -19,9 +19,7 @@ the N-well and P-well implants that follow at
 {ref}`NWI <step-018>`/{ref}`NWI2 <step-019>` and
 {ref}`PWI <step-027>`/{ref}`PWI2 <step-028>`. Its job is to set the
 difference in threshold voltage between the low-Vt N-channel devices
-of the PDK and the standard ones. The dopant enters the active silicon
-through the thin pad oxide left by {ref}`NS19 <step-013>`, which acts
-as the screen oxide; a Cypress SONOS patent from the same lineage
+of the PDK and the standard ones. The dopant enters the active silicon through what we infer to be the pad oxide left by {ref}`NS19 <step-013>`, acting as the screen oxide (see the open question there); a Cypress SONOS patent from the same lineage
 describes exactly this arrangement, with "dopants … implanted into
 substrate 204 through the pad oxide 209" of "about 10 nanometers (nm)
 to about 20 nm" (PAT-04).
@@ -87,15 +85,14 @@ below are typical or taken from contemporaneous patents.
   species is p-type: boron (¹¹B⁺), BF₂⁺ for a shallower boron
   placement (only 11/49 of the beam energy is carried by the boron
   atom; category page), or indium, a heavy p-type dopant used for
-  steep retrograde channels (SHAHIDI-1993; CHANG-2000). Cypress's own
+  steep retrograde channels (SHAHIDI-1993; HUANG-2000). Cypress's own
   patents describe BF₂ "at an energy of from about 10 to about 100
   kilo-electron volts (keV), and a dose of from about 1e12 cm⁻² to
   about 1e14 cm⁻² to form an N-type MOS (NMOS) transistor" channel,
   and an indium-doped channel "implanted with Indium (In) at an
   energy of from about 50 to about 500 kilo-electron volts (keV), and
   a dose of from about 5e11 … to about 5e12 cm⁻²" for the memory
-  transistor (PAT-04); a 2020 Cypress article discusses "channel
-  engineering with indium" for the SONOS cell (CYP-25). For an implant
+  transistor (PAT-04); a 2020 Cypress article describes "use of deeper channel implants with heavier species such as Indium" for the SONOS cell (CYP-25). For an implant
   that *lowers* the threshold by counter-doping, the species is n-type
   — arsenic or phosphorus — at similar doses (PAT-VT-RRR).
 * **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻²: an LSI Logic
@@ -252,7 +249,7 @@ below are typical or taken from contemporaneous patents.
   improved short-channel behavior of submicrometer NMOSFETs", *IEEE
   Electron Device Letters*, vol. 14, no. 8, pp. 409–411, 1993,
   DOI 10.1109/55.225595.
-* **CHANG-2000** — S.-J. Chang et al., "High-performance and
+* **HUANG-2000** — T.-Y. Huang, Y.-J. Lee, T.-S. Chao, C. Chen, C.-Y. Chang and S.-J. Chang, "High-performance and
   high-reliability 80-nm gate-length DTMOS with indium super steep
   retrograde channel", *IEEE Transactions on Electron Devices*,
   vol. 47, no. 12, pp. 2379–2384, 2000, DOI 10.1109/16.887025.
