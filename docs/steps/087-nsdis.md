@@ -63,10 +63,11 @@ SC-1/SC-2-type clean follows the strip.[^kern-1990]
 
 The arsenic itself is a consideration. The crust contains implanted
 arsenic, the ash effluent and the wet-bench waste therefore carry it,
-and the fab's exhaust scrubbing and waste handling are designed for
-it; this is a matter of facility design rather than of the recipe,
-but it is why arsenic-implanted resist is often stripped on
-dedicated tools or in dedicated chambers (industry practice).
+and a fab's exhaust scrubbing and waste handling are designed for it
+(industry practice); this is a matter of facility design rather than
+of the recipe, but it is why arsenic-implanted resist is often
+stripped on dedicated tools or in dedicated chambers (industry
+practice).
 
 A poorly stripped implant resist shows up as popped flakes — "the
 popping problem … causes the photoresist to become even

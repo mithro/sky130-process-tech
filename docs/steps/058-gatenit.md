@@ -56,23 +56,23 @@ as much as its mechanical ones.
 A nitride cap on a poly gate can serve several purposes, and the
 public evidence supports more than one of them:
 
-* **{term}`Hard mask <hard mask>` and anti-reflective layer for the gate lithography.**
-  Poly is highly reflective at 248 nm and a gate layer printed at
-  0.15 µm ({ref}`P1M <step-061>`) needs reflectivity control. Silicon
-  {term}`oxynitride` and nitride films deposited by PECVD were the standard
-  *inorganic* anti-reflective layers of the KrF generation: Ogawa et
-  al. demonstrated a "complete antireflective layer" of this kind
-  for KrF lithography,[^ogawa-1993] Dijkstra and Juffermans showed
-  how to optimise its thickness and index,[^dijkstra-1993] Czech et
-  al. used one specifically to reduce linewidth variation at the
-  gate-conductor level,[^czech-1993] and He et al. describe a
-  production inorganic {term}`ARC` process for deep-UV.[^he-1998] Such a
-  layer doubles as a hard mask: Bell and Joubert compared gate etches
-  masked by resist and by a hard mask,[^bell-1997] and the resist can
-  be stripped before the poly is etched, which improves the profile
+* **{term}`Hard mask <hard mask>` and anti-reflective layer for the gate
+  lithography.** Poly is highly reflective at 248 nm, the wavelength we infer
+  for the gate layer ({ref}`P1M <step-061>`), and a gate printed at
+  0.15 µm[^pdk-periph] needs reflectivity control. Silicon {term}`oxynitride`
+  and nitride films deposited by PECVD were the standard *inorganic*
+  anti-reflective layers of the KrF generation: Ogawa et al. demonstrated a
+  "complete antireflective layer" of this kind for KrF
+  lithography,[^ogawa-1993] Dijkstra and Juffermans showed how to optimise its
+  thickness and index,[^dijkstra-1993] Czech et al. used one specifically to
+  reduce linewidth variation at the gate-conductor level,[^czech-1993] and He
+  et al. describe a production inorganic {term}`ARC` process for
+  deep-UV.[^he-1998] Such a layer doubles as a hard mask: Bell and Joubert
+  compared gate etches masked by resist and by a hard mask,[^bell-1997] and the
+  resist can be stripped before the poly is etched, which improves the profile
   and removes the resist's contribution to line-edge
-  roughness.[^desvoivres-2000] Whether SKY130 uses the nitride this
-  way, or relies on an organic {term}`BARC` as well, is not public
+  roughness.[^desvoivres-2000] Whether SKY130 uses the nitride this way, or
+  relies on an organic {term}`BARC` as well, is not public
   ({ref}`P1M <step-061>`).
 * **A cap that stays.** Because the nitride is cut only under contacts
   ({ref}`NPCM <step-078>`), the gate poly is sealed during the tip,

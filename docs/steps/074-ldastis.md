@@ -21,12 +21,13 @@ module and — because the next step is the activation anneal
 tip and halo implanted since {ref}`NTM <step-064>`.
 
 The resist is, we infer, the standard ~1 µm film (the PDK's nominal
-1.14 µm),[^pdk-03] and it has received a moderate arsenic dose (of
-order 10¹³ cm⁻², typical of an {term}`LDD`)[^txt-04] plus a light, tilted boron
-dose: a thinner {term}`crust <implant crust>` than after {ref}`ASTI <step-065>`, but a crust
-nonetheless. Under it lies the {term}`screen oxide` of {ref}`IOX45 <step-063>`
-over silicon and polysilicon, now carrying, in different regions, all
-three tips and both halos in their as-implanted, unannealed state.
+1.14 µm),[^pdk-03] and it has received a moderate arsenic dose (of order 10¹³
+cm⁻², typical of an {term}`LDD`)[^txt-04] plus a light, tilted boron dose: a
+thinner {term}`crust <implant crust>` than after {ref}`ASTI <step-065>`, but a
+crust nonetheless. Under it lies, we infer, the {term}`screen oxide` of
+{ref}`IOX45 <step-063>` over silicon and polysilicon, now carrying, in
+different regions, all three tips and both halos in their as-implanted,
+unannealed state.
 
 ## Step category
 
@@ -121,8 +122,8 @@ An industry-generic post-implant strip and pre-anneal clean for a
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** or **water vapour** for the
-  ash;[^skw-01] CF₄ omitted to protect the screen oxide.
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash;[^skw-01] CF₄
+  would be omitted, we infer, to protect the screen oxide.
 * **Sulphuric acid and hydrogen peroxide** for SPM;[^wiki-piranha]
   **ammonium hydroxide** for SC-1; **hydrochloric acid** for
   SC-2.[^wiki-rca]
