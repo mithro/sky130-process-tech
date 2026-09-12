@@ -27,8 +27,8 @@ ions from a magnetron plasma and lets them condense on the
 wafer.[^wiki-sputter] The choice between them is set by the material
 (metals are sputtered; dielectrics, silicon and tungsten are grown by
 CVD), by the temperature the wafer can tolerate at that point in the
-flow (below about 450 °C once aluminium is present), and by how
-conformally the film must coat holes and steps.
+flow (typically below about 450 °C once aluminium is present)[^txt-02],
+and by how conformally the film must coat holes and steps.
 
 ## Physics and engineering background
 
@@ -90,8 +90,8 @@ carry aluminium.[^wiki-pecvd] Typical films:
   dielectric and capping oxide of an aluminium BEOL; the ITRS 2001
   notes that fluorinated versions ("Low κ FSG (κ = 3.7)") had "been in
   production since the 250 nm node".[^itrs-02]
-* **Nitride** from SiH₄ + NH₃ + N₂, hydrogen-rich (10–25 at.% H),
-  used as an etch stop and as the final scratch- and
+* **Nitride** from SiH₄ + NH₃ + N₂, hydrogen-rich (typically 10–25 at.%
+  H)[^txt-02], used as an etch stop and as the final scratch- and
   moisture-resistant passivation ({ref}`NTSD <step-167>`).
 * **Silicon oxynitride** SiOₓNᵧ from SiH₄ + N₂O + NH₃, whose
   refractive index can be tuned between oxide and nitride; used as a
@@ -178,8 +178,9 @@ metal 4 0.8 µm (2 µm in the thick-metal flow options), metal 5 1.2 µm or
 2 µm depending on the flow option, an oxide spacer of 0.05 µm and a
 pre-LI ILD of 0.5 µm.[^pdk-03] These are the antenna-rule assumptions;
 the PDK's process stack diagram labels the same conductors 0.36, 0.845
-and 1.26 µm.[^pdk-04] These are the deposited (and, for the dielectrics,
-post-CMP) targets that the deposition steps below must hit.
+and 1.26 µm.[^pdk-04] We take these as the approximate deposited (and,
+for the dielectrics, post-CMP) targets that the deposition steps below
+must hit.
 
 ## Typical equipment
 
@@ -227,8 +228,8 @@ post-CMP) targets that the deposition steps below must hit.
   H₂.
 * **Chamber cleaning**: NF₃ or C₂F₆/O₂ plasma cleans for PECVD and
   HDP chambers; in-situ NF₃ cleans for LPCVD tubes.
-* **Sputter targets**: Al–0.5 %Cu, Ti, Ti:W (10 wt.% Ti), Co; argon
-  and nitrogen process gases; target lifetime is tracked in kWh.
+* **Sputter targets**: Al–Cu (0.5–1 wt.% Cu), Ti, Ti:W (10 wt.% Ti), Co;
+  argon and nitrogen process gases; target lifetime is tracked in kWh.
 * **Hardware**: quartz tubes and boats, showerheads, shields and
   clamp rings, electrostatic chucks, and vacuum-pump oil or dry pumps.
 

@@ -7,10 +7,10 @@ mass-produced 130 nm process is set up.
 SKY130 is the open-source process design kit released by SkyWater
 Technology and Google in 2020. It descends from the Cypress
 Semiconductor "S8" 130 nm process and is fabricated on 200 mm wafers at
-SkyWater's Bloomington, Minnesota fab. It offers one polysilicon gate
-level, a local-interconnect level, five aluminium metal levels, SONOS
-non-volatile memory, metal–insulator–metal capacitors and a family of
-1.8 V and 5 V (and higher) transistors.
+SkyWater's Bloomington, Minnesota fab.[^pdk-01][^skw-01] It offers one
+polysilicon gate level, a local-interconnect level, five aluminium metal
+levels, SONOS non-volatile memory, metal–insulator–metal capacitors and
+a family of 1.8 V and 5 V (and higher) transistors.
 
 Every page in this reference cites only publicly available sources.
 
@@ -39,3 +39,10 @@ masks/index
 glossary
 references/index
 ```
+
+<!-- footnotes -->
+
+[^pdk-01]: SkyWater PDK Authors, *SkyWater SKY130 PDK documentation*.
+    <https://skywater-pdk.readthedocs.io/en/main/>
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>

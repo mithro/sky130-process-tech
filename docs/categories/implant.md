@@ -27,11 +27,11 @@ dopant onto substitutional sites where it is electrically active.
 
 The SKY130 flow has 25 implants. In order: the deep n-well; the
 threshold-adjust, well and drain-extension implants of the various
-transistor flavours; the SONOS punch-through-stop and depletion
-implants; the n-channel implant; the poly gate and poly resistor
-implants; the arsenic tips and boron halos for the 1.8 V, high-voltage
-and lightly-doped transistors; and finally the p⁺ and n⁺ source/drain
-implants.
+transistor flavours; the punch-through-stop and depletion implants
+(which sit among the SONOS steps); the n-channel implant; the poly gate
+and poly resistor implants; the arsenic tips and boron halos for the
+1.8 V, high-voltage and lightly-doped transistors; and finally the p⁺
+and n⁺ source/drain implants.
 
 ## Physics and engineering background
 
@@ -71,10 +71,10 @@ or computed by Monte Carlo codes such as
 SRIM/TRIM.[^srim][^ziegler-2010] Typical ion energies "are in the range
 of 10 to 500 keV" and ranges "between 10 nanometers and 1
 micrometer";[^wiki-implant] a 130 nm process spans a wider window, from
-a few keV for source/drain extensions to over 1 MeV for deep n-wells.
-Because BF₂⁺ dissociates on impact and only 11/49 of its energy is
-carried by the boron atom, BF₂ is the way to implant boron shallowly
-with a beam energy the tool can control well.[^txt-01]
+a few keV for source/drain extensions to over 1 MeV for deep n-wells
+(typical).[^txt-01] Because BF₂⁺ dissociates on impact and only 11/49 of
+its energy is carried by the boron atom, BF₂ is the way to implant boron
+shallowly with a beam energy the tool can control well.[^txt-01]
 
 ### Channelling
 
@@ -96,10 +96,10 @@ Every ion displaces hundreds to thousands of silicon atoms; at doses
 above roughly 10¹⁴–10¹⁵ cm⁻² for arsenic, "the amount of
 crystallographic damage can be enough to completely amorphize the
 surface".[^wiki-implant] An amorphous layer regrows epitaxially from the
-undamaged substrate at 500–600 °C (solid-phase epitaxy), leaving
-end-of-range defects at the old amorphous/crystalline boundary. Below
-the amorphisation threshold the implant leaves a supersaturation of
-silicon self-interstitials, which during the anneal raise the
+undamaged substrate at 500–600 °C (solid-phase epitaxy),[^txt-01]
+leaving end-of-range defects at the old amorphous/crystalline boundary.
+Below the amorphisation threshold the implant leaves a supersaturation
+of silicon self-interstitials, which during the anneal raise the
 diffusivity of boron and phosphorus by orders of magnitude for a few
 seconds to minutes — transient enhanced diffusion ({term}`TED`).
 Eaglesham and co-workers identified the "+1" interstitials from the
@@ -207,8 +207,8 @@ commercial implanters is given by Current.[^current-2017]
   beam stops, Faraday-cup liners, disc pads, clamp rings, and
   wafer-cooling backside gas.
 * **Photoresist** thick enough to stop the ions (a 1 µm resist stops MeV
-  phosphorus only marginally, so deep-well masks may need thicker
-  resist) and the strip chemistry that removes it afterwards
+  phosphorus only marginally,[^lee-1996] so deep-well masks may need
+  thicker resist) and the strip chemistry that removes it afterwards
   ({ref}`category-strip`).
 
 ## Steps in this category

@@ -372,8 +372,11 @@ alignment corrections.
     lithography", *Journal of Micro/Nanolithography, MEMS, and MOEMS*
     **1**(1), 7–12 (2002). <https://doi.org/10.1117/1.1445798>
 [^nikon-s204b]: Nikon, *NSR-S204B 248 nm Scanner Exposure System
-    Overview* (specification summary, reseller copy).
-    <https://f.machineryhost.com/fc49306d97602c8ed1be1dfbf0835ead/aa008f2897d7d4a224ff92839b4299e9/SpecSummary_LITV25-01_NSR-S204B.pdf>
+    Overview* (specification summary, reseller copy), attached to the
+    listing Tara Semiconductor Technology, *Used 2002 NIKON S204
+    Scanner* (listing LITV25-01), accessed 2026-09-12.
+    <https://f.machineryhost.com/fc49306d97602c8ed1be1dfbf0835ead/aa008f2897d7d4a224ff92839b4299e9/SpecSummary_LITV25-01_NSR-S204B.pdf>,
+    <https://www.tarasemi.com/listings/5223879-used-2002-nikon-s204-scanner>
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
