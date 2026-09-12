@@ -17,9 +17,10 @@
 topography — thick over wide lines and dense arrays, thinner over
 open field, with the 0.36 µm[^pdk-04] step of the metal reproduced,
 softened, at its surface. The wafer is pressed against a pad flooded
-with alkaline silica slurry until that topography is gone and a
-planar oxide surface remains at a controlled height above the tops
-of the metal-1 lines. No material change marks the end: it is an
+with alkaline silica slurry (industry-standard for ILD; SKY130's is
+not public) until that topography is gone and a planar oxide surface
+remains at a controlled height above the tops of the metal-1 lines.
+No material change marks the end: it is an
 *oxide-on-oxide* polish stopped by removal amount, not by a stop
 layer. The cap of {ref}`NCAPOX3 <step-117>` then restores a fixed
 thickness before the via-1 mask ({ref}`VIM <step-118>`) is printed on
@@ -314,7 +315,7 @@ recipe is not public):
     <https://patents.google.com/patent/US4789648A/en>
 [^pat-cmp-ibm-1990]: K. D. Beyer et al. (IBM), *Chem-mech polishing
     method for producing coplanar metal/insulator films on a
-    substrate*, US 4,944,836 A, granted 1990.
+    substrate*, US 4,944,836 A, granted 1990-07-31.
     <https://patents.google.com/patent/US4944836A/en>
 [^chiphistory-mirra]: Chip History Center, *The Mirra CMP System by
     Applied Materials*.

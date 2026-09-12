@@ -107,11 +107,12 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
    oxide, whose properties depend on RF power as Chapple-Sokol,
    Tierney and Batey measured;[^chapple-sokol-1989] on a flat polished
    surface conformality does not matter and either works. The
-   Cypress reports for the S8 process at Fab 4 list a "1000A TEOS"
-   film under the nitride in the passivation,[^cyp-qtp-123907][^cyp-qtp-014807]
-   which shows a PECVD TEOS oxide of cap-like thickness in the same
-   flow; we infer, not from any public statement about this step,
-   that the cap oxide is of the same kind.
+   Cypress reports for Fab 4 processes (S8, and the 0.18 µm R7FT-3R
+   derivative) list a "1000A TEOS" film under the nitride in the
+   passivation,[^cyp-qtp-123907][^cyp-qtp-014807] which shows a PECVD
+   TEOS oxide of cap-like thickness in the same flow; we infer, not
+   from any public statement about this step, that the cap oxide is
+   of the same kind.
 3. **Thickness.** Not public; a cap of the order of 0.05–0.15 µm is
    typical of the practice (industry-typical value[^txt-05]), sized so
    that polished NILD3 plus cap reaches the 0.27 µm via-1 height of
