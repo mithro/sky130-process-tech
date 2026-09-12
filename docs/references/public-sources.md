@@ -6642,8 +6642,8 @@ Back-End-of-Line Integration for 130nm SONOS Product Families*, document
 001-11741 Rev. *H, 2014-03-13 (copy hosted by Tokyo Electron Device).
 <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>
 The product-change notification that carries the QTP 123907 report and
-calls the TiW stack the "internal Cypress Minnesota process". Used on
-step 112. Tier: cross-check.
+describes the TiW-based stack as Cypress's Minnesota process. Used on
+steps 112 and 123. Tier: cross-check.
 
 **CYP-QTP-014807** — Cypress Semiconductor, *Technology Derivative
 Qualification Report, QTP# 014807 Version 2.0: Technology Derivative
