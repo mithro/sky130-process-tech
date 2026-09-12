@@ -13,37 +13,37 @@
 ## What this step is
 
 `LVTNM` is the third mask of the flow and the first of the well and
-channel-implant module. The wafer arriving from
-{ref}`NS19 <step-013>` is planar: oxide-filled isolation trenches
-stand slightly proud of active islands covered, we infer, only by the thin pad oxide grown at {ref}`BOX <step-002>` (its fate after {ref}`NS19 <step-013>` is not public). `LVTNM` coats this
-surface with photoresist, exposes it through the *low-Vt N-channel
-mask* reticle and develops it, leaving resist windows through which the
-{ref}`LVTNI <step-015>` implant is placed. The resist is removed at
-{ref}`LVTNIS <step-016>`.
+channel-implant module. The wafer arriving from {ref}`NS19 <step-013>`
+is planar: oxide-filled isolation trenches stand slightly proud of
+active islands covered, we infer, only by the thin pad oxide grown at
+{ref}`BOX <step-002>` (its fate after {ref}`NS19 <step-013>` is not
+public). `LVTNM` coats this surface with photoresist, exposes it through
+the *low-Vt N-channel mask* reticle and develops it, leaving resist
+windows through which the {ref}`LVTNI <step-015>` implant is placed. The
+resist is removed at {ref}`LVTNIS <step-016>`.
 
 The PDK's mask table lists "Low Vt Nch*, LVTNM" as a mask used in
-SKY130 (PDK-05). The drawn layer is `lvtn` (GDS 125:44, "Low-Vt NMOS
-device") and the generated mask layer is `clvtnm` (GDS 25:0, "Low Vt
-Nch mask"), which also carries "mask add" (25:43) and "mask drop"
-(25:42) purposes (PDK-06). The existence of add/drop purposes shows
-that the reticle is *derived* from the drawn layer by Boolean
-operations in the mask-generation flow rather than being a copy of it.
+SKY130.[^pdk-05] The drawn layer is `lvtn` (GDS 125:44, "Low-Vt NMOS
+device") and the generated mask layer is `clvtnm` (GDS 25:0, "Low Vt Nch
+mask"), which also carries "mask add" (25:43) and "mask drop" (25:42)
+purposes.[^pdk-06] The existence of add/drop purposes shows that the
+reticle is *derived* from the drawn layer by Boolean operations in the
+mask-generation flow rather than being a copy of it.
 
 The periphery design rules state the layer's function directly: `lvtn`
 rules "Define regions to block Vt adjust implant for low Vt LV
-PMOS/NMOS, SONOS FETs and Native NMOS" (PDK-PERIPH). The rule values
-are coarse for a 130 nm process: minimum width 0.380 µm (lvtn.1a),
-minimum space 0.380 µm (lvtn.2), minimum enclosure of a gate by `lvtn`
-0.180 µm (lvtn.4b), minimum spacing to a gate 0.180 µm (lvtn.3a),
-spacing to a PMOS along the source/drain direction 0.235 µm (lvtn.3b),
-no overlap with `hvtp` with 0.380 µm spacing (lvtn.9), enclosure by
-`nwell` 0.380 µm when the layer is used inside an N-well (lvtn.10), and
-minimum area 0.265 µm² (lvtn.13) (PDK-PERIPH). A separate poly rule
-sets the minimum channel length of a PMOS overlapping `lvtn` at
-0.350 µm (poly.1b) — much longer than the 0.150 µm baseline — which is
-consistent with a device whose channel doping has been reduced and
-which therefore needs more length to control short-channel effects
-(PDK-PERIPH).
+PMOS/NMOS, SONOS FETs and Native NMOS".[^pdk-periph] The rule values are
+coarse for a 130 nm process: minimum width 0.380 µm (lvtn.1a), minimum
+space 0.380 µm (lvtn.2), minimum enclosure of a gate by `lvtn` 0.180 µm
+(lvtn.4b), minimum spacing to a gate 0.180 µm (lvtn.3a), spacing to a
+PMOS along the source/drain direction 0.235 µm (lvtn.3b), no overlap
+with `hvtp` with 0.380 µm spacing (lvtn.9), enclosure by `nwell`
+0.380 µm when the layer is used inside an N-well (lvtn.10), and minimum
+area 0.265 µm² (lvtn.13).[^pdk-periph] A separate poly rule sets the
+minimum channel length of a PMOS overlapping `lvtn` at 0.350 µm
+(poly.1b) — much longer than the 0.150 µm baseline — which is consistent
+with a device whose channel doping has been reduced and which therefore
+needs more length to control short-channel effects.[^pdk-periph]
 
 ## Step category
 
@@ -57,21 +57,21 @@ wafer.
 
 ## Why this step exists
 
-SKY130 is a multi-threshold process. The device list offers, at 1.8 V,
-a standard NMOS (`nfet_01v8`), a low-Vt NMOS (`nfet_01v8_lvt`), a
-standard PMOS, a low-Vt PMOS (`pfet_01v8_lvt`) and a high-Vt PMOS
-(`pfet_01v8_hvt`), together with native NMOS devices
-(`nfet_03v3_nvt`, `nfet_05v0_nvt`) that are "constructed by blocking
-out all VT implants" (PDK-07). The reason for offering several
-thresholds is the familiar speed/leakage trade: "Low Vth devices
-switch faster, and are therefore useful on critical delay paths to
-minimize clock periods. The penalty is that low Vth devices have
-substantially higher static leakage power", and the threshold "is
-adjusted by altering the concentration of dopant atoms in the channel
-region beneath the gate oxide" (WIKI-MTCMOS). The 2001 ITRS states
-that "multiple threshold-voltage and multiple-oxide-thickness devices
-also need to be available in order to enable more comprehensive
-circuit/system-level power/performance optimization" (ITRS-04).
+SKY130 is a multi-threshold process. The device list offers, at 1.8 V, a
+standard NMOS (`nfet_01v8`), a low-Vt NMOS (`nfet_01v8_lvt`), a standard
+PMOS, a low-Vt PMOS (`pfet_01v8_lvt`) and a high-Vt PMOS
+(`pfet_01v8_hvt`), together with native NMOS devices (`nfet_03v3_nvt`,
+`nfet_05v0_nvt`) that are "constructed by blocking out all VT
+implants".[^pdk-07] The reason for offering several thresholds is the
+familiar speed/leakage trade: "Low Vth devices switch faster, and are
+therefore useful on critical delay paths to minimize clock periods. The
+penalty is that low Vth devices have substantially higher static leakage
+power", and the threshold "is adjusted by altering the concentration of
+dopant atoms in the channel region beneath the gate
+oxide".[^wiki-mtcmos] The 2001 ITRS states that "multiple
+threshold-voltage and multiple-oxide-thickness devices also need to be
+available in order to enable more comprehensive circuit/system-level
+power/performance optimization".[^itrs-04]
 
 `LVTNM` is the mask that distinguishes the low-threshold (and, per the
 rule text, the native and SONOS) channels from the standard ones. The
@@ -97,36 +97,35 @@ An industry-generic implant-block lithography sequence for a 200 mm,
    the track; the surface is oxide everywhere (pad oxide on active,
    trench oxide on field), which primes well.
 2. **Resist coat.** A single-layer positive resist. The
-   {ref}`LVTNI <step-015>` implant is a channel-type implant at tens
-   of keV, which a resist of about 1 µm stops with a wide margin
-   (industry-typical; TXT-02, ch. 9). The PDK's own assumptions table
-   gives a nominal "Photoresist thickness" of 1.14 µm (PDK-03), so we
-   take that as the plausible order of thickness. No anti-reflective
-   coating is needed for a layer whose features are more than twice
-   the wavelength (inference from the 0.380 µm rules; WIKI-LITHO).
-3. **Exposure.** The 0.380 µm minimum width and space (PDK-PERIPH) are
-   comfortably within reach of an i-line (365 nm) stepper: at NA 0.6
-   the process factor is k₁ = 0.38 × 0.6 / 0.365 ≈ 0.62, well above
-   the "0.4 for production" level (WIKI-LITHO). ITRS 2001 reserves
-   248 nm for the critical layers of the 130 nm node (ITRS-03). We
-   therefore infer that `LVTNM` is an **i-line layer**, like the other
-   implant-block masks of this module and unlike
-   {ref}`FOM <step-004>`.
+   {ref}`LVTNI <step-015>` implant is a channel-type implant at tens of
+   keV, which a resist of about 1 µm stops with a wide margin
+   (industry-typical).[^txt-02] The PDK's own assumptions table gives a
+   nominal "Photoresist thickness" of 1.14 µm,[^pdk-03] so we take that
+   as the plausible order of thickness. No anti-reflective coating is
+   needed for a layer whose features are more than twice the wavelength
+   (inference from the 0.380 µm rules).[^wiki-litho]
+3. **Exposure.** The 0.380 µm minimum width and space[^pdk-periph] are
+   comfortably within reach of an i-line (365 nm) stepper: at NA 0.6 the
+   process factor is k₁ = 0.38 × 0.6 / 0.365 ≈ 0.62, well above the "0.4
+   for production" level.[^wiki-litho] ITRS 2001 reserves 248 nm for the
+   critical layers of the 130 nm node.[^itrs-03] We therefore infer that
+   `LVTNM` is an **i-line layer**, like the other implant-block masks of
+   this module and unlike {ref}`FOM <step-004>`.
 4. **Alignment.** To the STI pattern. The tightest coupling of this
    layer is to the *future* gate: the 0.180 µm enclosure of gate by
    `lvtn` (lvtn.4b) means both this mask and the later poly mask must
    register to the same active reference within a fraction of that
    value.
-5. **Develop** in aqueous TMAH (TXT-02), rinse, dry; a hard bake or UV
-   cure may follow to stabilise the resist against the implant
-   (industry practice, TXT-02).
+5. **Develop** in aqueous TMAH,[^txt-02] rinse, dry; a hard bake or UV
+   cure may follow to stabilise the resist against the implant (industry
+   practice).[^txt-02]
 6. **Inspection.** Overlay measured on box-in-box targets against the
    STI layer; CD checked loosely; after-develop inspection for defects.
 
 ## Machines typically used
 
 * **i-line stepper**, 200 mm: ASML PAS 5500/100–/275 series, Nikon
-  NSR-2205i, Canon FPA-3000i (TXT-05; see the category page).
+  NSR-2205i, Canon FPA-3000i[^txt-05] (see the category page).
 * **Coat/develop track** linked to the stepper (TEL, DNS/SCREEN,
   SVG/ASML, Sokudo).
 * **Overlay metrology** (KLA-Tencor 5xxx/Archer class) and a CD-SEM for
@@ -134,27 +133,27 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / i-line scanner.** SKW-01 lists "ASML I-line
-  stepper" and "ASML I-line scanner". Strength: **strong** for the
-  existence of the tools; the assignment of `LVTNM` to the i-line
-  tools is an **inference** from the 0.380 µm design rules, not a
-  SkyWater statement.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius** (SKW-01).
-  Strength: strong for existence; which track serves which exposure
-  tool is not public.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**
-  (SKW-01). Strength: strong.
+* **ASML i-line stepper / i-line scanner.** SkyWater's facilities page
+  lists "ASML I-line stepper" and "ASML I-line scanner".[^skw-01]
+  Strength: **strong** for the existence of the tools; the assignment of
+  `LVTNM` to the i-line tools is an **inference** from the 0.380 µm
+  design rules, not a SkyWater statement.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius**.[^skw-01] Strength:
+  strong for existence; which track serves which exposure tool is not
+  public.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
+  Strength: strong.
 
 ## Resources required
 
 * **Positive i-line (DNQ/novolak) photoresist**, about 1 µm thick;
   SkyWater's S-1 names The Dow Chemical Company, JSR Corporation and
-  Tokyo Ohka Kogyo America as photoresist suppliers (SEC-01).
-* **HMDS** adhesion promoter; **TMAH developer** (0.26 N is the
-  industry standard, TXT-02); edge-bead remover and rinse solvents;
-  DI water and nitrogen.
+  Tokyo Ohka Kogyo America as photoresist suppliers.[^sec-01]
+* **HMDS** adhesion promoter; **TMAH developer** (0.26 N is the industry
+  standard);[^txt-02] edge-bead remover and rinse solvents; DI water and
+  nitrogen.
 * **The LVTNM reticle** — a chrome-on-quartz plate generated from the
-  `clvtnm` layer with its add/drop corrections (PDK-06).
+  `clvtnm` layer with its add/drop corrections.[^pdk-06]
 
 ## Related steps and cross-references
 
@@ -176,64 +175,64 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 
 ### Cross-check
 
-* **PDK-05** — SkyWater PDK Authors, *Masks* page and `masks.csv`
-  ("Low Vt Nch*, LVTNM, X").
-  <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
-  <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
-* **PDK-06** — SkyWater PDK Authors, *Layers Reference* and
-  `gds_layers.csv` (`lvtn` 125:44; `clvtnm` 25:0, 25:43, 25:42).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
-  <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
-* **PDK-PERIPH** — SkyWater PDK Authors, *Periphery rules* (`lvtn`
-  function text; lvtn.1a, lvtn.2, lvtn.3a, lvtn.3b, lvtn.4b, lvtn.9,
-  lvtn.10, lvtn.13; poly.1b).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
-* **PDK-07** — SkyWater PDK Authors, *Device Details* (`nfet_01v8_lvt`,
-  `pfet_01v8_lvt`, `pfet_01v8_hvt`, native NMOS "constructed by
-  blocking out all VT implants").
-  <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
-* **PDK-03** — SkyWater PDK Authors, *Criteria & Assumptions*
-  ("Photoresist thickness" 1.14 µm).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
-* **SKW-01** — SkyWater Technology, *Facilities & Capabilities*,
-  accessed 2026-08-30 (ASML i-line stepper and scanner; tracks;
-  overlay and CD tools).
-  <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-* **SEC-01** — SkyWater Technology, Inc., Form S-1, 2021-03-22
-  (photoresist suppliers).
-  <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+* SkyWater PDK, *Masks* page and `masks.csv` — "Low Vt Nch*, LVTNM,
+  X".[^pdk-05]
+* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `lvtn` 125:44;
+  `clvtnm` 25:0, 25:43, 25:42.[^pdk-06]
+* SkyWater PDK, *Periphery rules* — `lvtn` function text; lvtn.1a,
+  lvtn.2, lvtn.3a, lvtn.3b, lvtn.4b, lvtn.9, lvtn.10, lvtn.13;
+  poly.1b.[^pdk-periph]
+* SkyWater PDK, *Device Details* — `nfet_01v8_lvt`, `pfet_01v8_lvt`,
+  `pfet_01v8_hvt`, native NMOS "constructed by blocking out all VT
+  implants".[^pdk-07]
+* SkyWater PDK, *Criteria & Assumptions* — "Photoresist thickness"
+  1.14 µm.[^pdk-03]
+* SkyWater, *Facilities & Capabilities* — ASML i-line stepper and
+  scanner; tracks; overlay and CD tools.[^skw-01]
+* SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
 
 ### High-level understanding
 
-* **WIKI-MTCMOS** — Wikipedia, *Multi-threshold CMOS*.
-  <https://en.wikipedia.org/wiki/Multi-threshold_CMOS>
-* **WIKI-LITHO** — Wikipedia, *Photolithography* (365 nm i-line,
-  CD = k₁·λ/NA).
-  <https://en.wikipedia.org/wiki/Photolithography>
-* **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the
-  VLSI Era, Vol. 1*, 2nd ed., Lattice Press, 2000,
-  ISBN 978-0-9616721-6-4 (lithography and implant-masking chapters).
-  <https://openlibrary.org/isbn/9780961672164>
-* **TXT-05** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4*,
-  Lattice Press, 2002, ISBN 978-0-9616721-7-1 (lithography tools of
-  the 0.25–0.13 µm generations).
-  <https://openlibrary.org/isbn/9780961672171>
+* Wikipedia, *Multi-threshold CMOS* — why several thresholds are offered
+  and how they are set.[^wiki-mtcmos]
+* Wikipedia, *Photolithography* — 365 nm i-line, CD =
+  k₁·λ/NA.[^wiki-litho]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+  lithography and implant-masking chapters.[^txt-02]
+* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
+  tools of the 0.25–0.13 µm generations.[^txt-05]
 
 ### Deep dive
 
-* **ITRS-03** — ITRS 2001, *Lithography* (exposure wavelength by
-  node).
-  <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
-* **ITRS-04** — ITRS 2001, *Process Integration, Devices, and
-  Structures* ("multiple threshold-voltage and multiple-oxide-thickness
-  devices").
-  <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>
-* **PAT-VT-RRR** — M. Helm and X. Zhou, US 2011/0006372 A1, *Formation
-  of standard voltage threshold and low voltage threshold MOSFET
-  devices* (Round Rock Research; priority 2002-07-08), published
-  2011-01-13 — an example of low-Vt NMOS and PMOS defined by masked
-  Vt-adjust implants.
-  <https://patents.google.com/patent/US20110006372A1/en>
+* ITRS 2001, *Lithography* — exposure wavelength by node.[^itrs-03]
+* ITRS 2001, *Process Integration, Devices, and Structures* — "multiple
+  threshold-voltage and multiple-oxide-thickness devices".[^itrs-04]
+* Helm and Zhou (Round Rock Research), US 2011/0006372 — an example of
+  low-Vt NMOS and PMOS defined by masked Vt-adjust
+  implants.[^pat-vt-rrr]
+* Hook et al. (IBM), *IEEE TED* 2003 — how ions scattered from an
+  implant-resist edge shift the threshold of nearby transistors, the
+  reason implant layers carry enclosure rules.[^hook-2003]
+* Sheu et al. (TSMC), *IEEE TED* 2006 — a compact model of the well-edge
+  proximity effect for layout-dependent threshold shifts.[^sheu-2006]
+* Drennan, Kniffin and Locascio, CICC 2006 — what proximity effects mean
+  for analogue designers placing devices near implant
+  edges.[^drennan-2006]
+* Mack, *Fundamental Principles of Optical Lithography* — k₁, resist
+  profiles and thick-resist imaging, the optics behind the i-line
+  assignment.[^mack-2007]
+* Levinson, *Principles of Lithography* — overlay budgets and how
+  non-critical layers are assigned to older exposure
+  tools.[^levinson-2005]
+* Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
+  voltage as a function of channel doping, the physics a Vt-adjust mask
+  exists to exploit.[^taur-2009]
+* Lee et al. (Genus), IIT 1996 — outgassing of thick implant resists
+  during implantation, one reason to hard-bake or UV-cure the
+  resist.[^lee-1996]
+* Buffat and Adams (Zilog), US 6,576,405 — what a resist must do when
+  the implant behind it is MeV-class, for contrast with this keV
+  layer.[^pat-resist-zilog]
 
 ## Open questions
 
@@ -249,3 +248,82 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   single physical mask, is not public.
 * Resist thickness, exposure tool and the use of a resist-hardening
   step are inferred from the design rules and general practice.
+
+<!-- footnotes -->
+
+[^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
+    <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
+[^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
+    `gds_layers.csv`, google/skywater-pdk repository.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
+[^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
+    PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
+    documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+[^wiki-mtcmos]: Wikipedia, *Multi-threshold CMOS*.
+    <https://en.wikipedia.org/wiki/Multi-threshold_CMOS>
+[^itrs-04]: International Technology Roadmap for Semiconductors, *2001
+    Edition: Process Integration, Devices, and Structures*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000, ISBN
+    978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^wiki-litho]: Wikipedia, *Photolithography*.
+    <https://en.wikipedia.org/wiki/Photolithography>
+[^itrs-03]: International Technology Roadmap for Semiconductors, *2001
+    Edition: Lithography*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+    Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
+    978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30.
+    <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
+    filed 2021-03-22.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^pat-vt-rrr]: M. Helm and X. Zhou (Round Rock Research), *Formation of
+    standard voltage threshold and low voltage threshold MOSFET
+    devices*, US 2011/0006372 A1, published 2011-01-13 (priority
+    2002-07-08). <https://patents.google.com/patent/US20110006372A1/en>
+[^hook-2003]: T. B. Hook, J. Brown, P. Cottrell, E. Adler, D. Hoyniak,
+    J. Johnson and R. Mann, "Lateral Ion Implant Straggle and Mask
+    Proximity Effect", *IEEE Transactions on Electron Devices*
+    **50**(9), 1946–1951 (2003).
+    <https://doi.org/10.1109/TED.2003.815371>; open copy
+    <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>
+[^sheu-2006]: Y.-M. Sheu, K.-W. Su, S. Tian, S.-J. Yang, C.-C. Wang,
+    M.-J. Chen and S. Liu, "Modeling the Well-Edge Proximity Effect in
+    Highly Scaled MOSFETs", *IEEE Transactions on Electron Devices*
+    **53**(11), 2792–2798 (2006).
+    <https://doi.org/10.1109/TED.2006.884070>
+[^drennan-2006]: P. G. Drennan, M. Kniffin and D. Locascio,
+    "Implications of Proximity Effects for Analog Design", *Proc. IEEE
+    Custom Integrated Circuits Conference 2006*, pp. 169–176.
+    <https://doi.org/10.1109/CICC.2006.320869>
+[^mack-2007]: C. Mack, *Fundamental Principles of Optical Lithography:
+    The Science of Microfabrication*, Wiley, 2007, ISBN
+    978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
+[^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
+    SPIE Press, 2005, ISBN 978-0-8194-5660-1.
+    <https://doi.org/10.1117/3.601520>
+[^taur-2009]: Y. Taur and T. H. Ning, *Fundamentals of Modern VLSI
+    Devices*, 2nd ed., Cambridge University Press, 2009, ISBN
+    978-0-521-83294-6. <https://doi.org/10.1017/CBO9781139195065>
+[^lee-1996]: W. J. Lee, N. Tokoro, H. T. Cho, J. O. Borland, M. Dennon
+    and C. Kozak, "Thick photoresist outgassing during MeV implantation
+    (mechanism and impact on production)", *Proc. 11th International
+    Conference on Ion Implantation Technology* (1996), pp. 186–189.
+    <https://doi.org/10.1109/IIT.1996.586180>
+[^pat-resist-zilog]: S. J. Buffat and J. L. Adams (Zilog), *High aspect
+    ratio photolithographic method for high energy implantation*, US
+    6,576,405 B1, granted 2003-06-10.
+    <https://patents.google.com/patent/US6576405B1/en>
