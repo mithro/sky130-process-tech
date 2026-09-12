@@ -112,7 +112,7 @@ fab (SKY130's recipe is not public):
    low-damage alternative.[^staffa-1995] The etch is run to an
    {term}`endpoint` on the 387 nm CN emission — "a strong peak at 387
    nm indicates that CN is present in the plasma, usually indicating
-   that nitride is being etched"[^pat-endpoint-tel] — and, because the
+   that nitride is being etched"[^pat-cn-tel] — and, because the
    open area is small, the signal is weak and often supplemented by
    a timed component.
 5. **Stop on poly.** Fluorine etches silicon faster than nitride
@@ -201,7 +201,7 @@ fab (SKY130's recipe is not public):
 * Stanford Nanofabrication Facility, *Lam Research TCP 9400* — the
   tool class.[^snf-9400]
 * Tokyo Electron, US 6,376,262 — the 387 nm CN endpoint for nitride
-  etching.[^pat-endpoint-tel]
+  etching.[^pat-cn-tel]
 
 ### High-level understanding
 
@@ -270,10 +270,9 @@ fab (SKY130's recipe is not public):
 [^snf-9400]: Stanford Nanofabrication Facility, *Lam Research TCP 9400
     Poly Etcher (lampoly)*, equipment page.
     <https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>
-[^pat-endpoint-tel]: Tokyo Electron, *Method of forming a semiconductor
+[^pat-cn-tel]: Tokyo Electron Ltd., *Method of forming a semiconductor
     device using double endpoint detection*, US 6,376,262 B1, granted
-    2002-04-23 (CN emission at 387 nm as the nitride etch endpoint
-    signal). <https://patents.google.com/patent/US6376262B1/en>
+    2002-04-23. <https://patents.google.com/patent/US6376262B1/en>
 [^wiki-rie]: Wikipedia, *Reactive-ion etching*.
     <https://en.wikipedia.org/wiki/Reactive-ion_etching>
 [^wiki-rca]: Wikipedia, *RCA clean*.

@@ -56,7 +56,7 @@ after. What is specific to this instance is that *conformality* is
 the film property that matters most: the spacer width is the
 sidewall thickness, so the ratio of sidewall to top thickness
 ({term}`step coverage`) must be close to one and reproducible across
-the wafer, and the film must coat the foot of a 0.2 µm-tall gate line
+the wafer, and the film must coat the foot of a roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03]) gate line
 on a 0.21 µm space (poly.2)[^pdk-periph] without seaming. The second
 distinguishing property is thermal budget: the wafer now carries
 annealed arsenic tips and boron halos, and a hot furnace deposition

@@ -15,8 +15,9 @@
 `RTAD` is the source/drain activation anneal. The three heavy implants
 of the module — {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>` and
 {ref}`NSDI <step-086>` — have left the source/drain silicon amorphised
-and its dopant electrically inactive; this step heats the wafer, in an
-inert ambient, for seconds at a temperature around 1000 °C, so that
+and its dopant electrically inactive; this step heats the wafer — in an
+inert ambient for seconds at around 1000 °C on the industry-typical
+recipe described below; SKY130's own conditions are not public — so that
 the amorphous layers regrow, the dopant moves onto lattice sites, the
 end-of-range damage is dissolved as far as it can be, and the
 junctions reach their designed depth — the PDK's 0.1 µm for "N+ or P+
@@ -28,8 +29,9 @@ the flow; the fourth, {ref}`RTAD2 <step-092>`, is a second
 "RTA source drain anneal" that the step list used in this reference
 places after the sacrificial PSG, the polish and the cap oxide.
 
-The anneal is also the thermal step that finishes the poly resistors'
-and poly heads' doping ({ref}`NPCME <step-079>`), re-anneals the
+On the reading of the {ref}`NPCM <step-078>` page, the anneal is also
+the thermal step that finishes the doping of the poly heads opened at
+{ref}`NPCME <step-079>`; it re-anneals the
 extensions and halos that {ref}`TIPRTAD <step-075>` activated, and
 sets the final position of every front-end junction relative to the
 gate edge. After it, the front end is electrically complete; what
@@ -95,8 +97,9 @@ step belongs to. The fluorine from BF₂ implants changes boron's
 behaviour in exactly this anneal,[^wang-1997] and the surrounding
 films matter: boron out-diffuses into oxide and nitride spacers at
 different rates,[^pelletier-2008] and shallow arsenic loses dose to
-the surface during a nitrogen anneal,[^farhane-2003] which is why the
-{ref}`SPOX <step-080>` oxide is left in place as a cap.
+the surface during a nitrogen anneal,[^farhane-2003] which is, we infer, one reason
+the {ref}`SPOX <step-080>` oxide is left in place as a cap (its
+retention is not public).
 
 Without `RTAD` the source/drains would be amorphous, inactive and
 several orders of magnitude too resistive; every transistor, resistor
@@ -170,10 +173,11 @@ An industry-generic source/drain activation anneal for a 200 mm,
   1200°C", ramp-up "Programmable, 1 – 180°C per second", "2 banks of
   14 lamps" with "10-zone lamp control" and lists "Implant annealing"
   among its applications,[^ag-8800] and a vendor blog post describes
-  the 8800/8108 family.[^plasmatherm-ag] The reseller's
-  specification PDF, whose operating specifications are those of the
-  Heatpulse 4100 of the same family, gives the same 400–1200 °C range
-  and a maximum ramp of 150 °C/s.[^ag-8108]
+  the 8800/8108 family.[^plasmatherm-ag] The reseller's family
+  specification PDF gives, in its Heatpulse 8108 section, the same
+  400–1200 °C range, a programmable 1–180 °C/s ramp-up and a maximum
+  ramp-down of 150 °C/s (its Heatpulse 4100 section differs:
+  400–1300 °C, 10–200 °C/s ramp-up).[^ag-8108]
 * **Aviza furnaces** ("Ar anneal to 1150C", "N2 anneal to
   1150C"[^skw-01]) are the batch alternative but, for the reasons
   above, an unlikely one for this step. Strength: strong for
@@ -222,8 +226,8 @@ An industry-generic source/drain activation anneal for a 200 mm,
 * SemiStar, *AG Associates Heatpulse 8800 / 8808* — temperature range,
   ramp rates, lamp banks, applications.[^ag-8800]
 * SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
-  Specifications* (PDF) — the Heatpulse 4100 operating and facility
-  specifications.[^ag-8108]
+  Specifications* (PDF) — the Heatpulse 4100 and 8108 operating and
+  facility specifications.[^ag-8108]
 * Plasma-Therm, *Product Spotlight: AG Heatpulse 8800 / 8108
   RTP*.[^plasmatherm-ag]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
@@ -296,7 +300,7 @@ An industry-generic source/drain activation anneal for a 200 mm,
 * The expansion of `RTAD` ("RTA, drain"?) is our reading of the
   code.
 * The reseller's specification PDF cited for the Heatpulse
-  family[^ag-8108] documents the Heatpulse 4100, not the 8808 itself;
+  family[^ag-8108] documents the Heatpulse 4100, 8108, 8800 and 8800i, not the 8808 itself;
   the 8808's own data sheet is not public.
 
 <!-- footnotes -->
@@ -314,8 +318,8 @@ An industry-generic source/drain activation anneal for a 200 mm,
     2026-08-30.
     <https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>
 [^ag-8108]: SemiStar Corp., *AG Associates Heatpulse 4100 / 8108 / 8800
-    / 8800i Specifications* (reseller PDF; the operating specifications
-    documented are those of the Heatpulse 4100), accessed 2026-08-30.
+    / 8800i Specifications* (reseller PDF; operating specifications for
+    the Heatpulse 4100 and 8108), accessed 2026-08-30.
     <https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>
 [^plasmatherm-ag]: Plasma-Therm, *Product Spotlight: AG Heatpulse 8800 /
     8108 RTP*, blog post.
