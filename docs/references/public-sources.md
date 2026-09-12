@@ -3013,6 +3013,416 @@ on step 013. Tier: deep dive.
 A university facility page describing furnace oxidation practice and
 recipes. Used on steps 002 and 010. Tier: deep dive.
 
+### 8.9 SONOS and gate-dielectric module sources
+
+None of these is a SkyWater or Cypress source unless marked. The step
+pages for the SONOS and gate-dielectric module (steps 035–047: tunnel
+oxide lithography and etch, punch-through stop, depletion implant, ONO
+deposition, patterning and etch, thick and thin gate oxides, dual-oxide
+lithography and etch) use them for era-typical values, mechanisms and
+further reading. The Cypress SONOS patents in §5.3 remain the primary
+public description of the module itself.
+
+#### Papers and review articles
+
+**BAKER-1996** — D. C. Baker and E. S. Capsuto, "Critical dimension
+control for i-line 0.35-μm device using a new antireflective coating",
+*Proc. SPIE* **2724**, Advances in Resist Technology and Processing
+XIII, 710 (1996). <https://doi.org/10.1117/12.241869> CD control for an
+i-line 0.35 µm device using a new anti-reflective coating. Used on steps
+035, 036 and 041. Tier: deep dive.
+
+**BEVERINA-2003** — A. Beverina, I. Guilmeau, J. P. Carrere, N. Emonet,
+F. Guyader, V. Huard, S. Petitdidier and R. Velard, "'Resist / Wet Etch'
+Couple for Dual Gate Oxide", *Solid State Phenomena* **92**, 235–238
+(2003). <https://doi.org/10.4028/www.scientific.net/SSP.92.235> The
+resist / wet-etch couple for dual gate oxide. Used on steps 044 and 046.
+Tier: deep dive.
+
+**BU-2001** — J. Bu and M. H. White, "Design considerations in scaled
+SONOS nonvolatile memory devices", *Solid-State Electronics* **45**(1),
+113–120 (2001). <https://doi.org/10.1016/S0038-1101(00)00232-X> Design
+considerations in scaled SONOS devices, including the memory window.
+Used on steps 038 and 040. Tier: deep dive.
+
+**BUCHANAN-1999** — D. A. Buchanan, "Scaling the gate dielectric:
+Materials, integration, and reliability", *IBM Journal of Research and
+Development* **43**(3), 245–264 (1999).
+<https://doi.org/10.1147/rd.433.0245> Scaling the gate dielectric:
+materials, integration, reliability. Used on step 047. Tier: deep dive.
+
+**CEROFOLINI-1998** — G. F. Cerofolini, "A study of the ionic route for
+hydrogen terminations resulting after SiO₂ etching by concentrated
+aqueous solutions of HF", *Applied Surface Science* **133**(1–2),
+108–114 (1998). <https://doi.org/10.1016/S0169-4332(98)00182-2> How HF
+etching leaves hydrogen-terminated silicon. Used on steps 039 and 046.
+Tier: deep dive.
+
+**COLVIN-2000** — J. B. Colvin and A. Roy, "Identification and Analysis
+of Parasitic Depletion Mode Leakage in a Memory Select Transistor",
+*ISTFA 2000: Proceedings of the 26th International Symposium for Testing
+and Failure Analysis*, pp. 247–249 (2000).
+<https://doi.org/10.31399/asm.cp.istfa2000p0247> Parasitic
+depletion-mode leakage in a memory select transistor, the failure the
+2-T cell must avoid. Used on step 038. Tier: deep dive.
+
+**EDWARDS-1971** — J. R. Edwards and G. Marr, "Ion-implanted
+depletion-mode IGFET", *1971 International Electron Devices Meeting*, p.
+156. <https://doi.org/10.1109/IEDM.1971.188465> The ion-implanted
+depletion-mode IGFET. Used on step 038. Tier: deep dive.
+
+**EITAN-2000** — B. Eitan, P. Pavan, I. Bloom, E. Aloni, A. Frommer and
+D. Finzi, "NROM: A novel localized trapping, 2-bit nonvolatile memory
+cell", *IEEE Electron Device Letters* **21**(11), 543–545 (2000).
+<https://doi.org/10.1109/55.877205> NROM, the localised charge-trapping
+alternative. Used on step 040. Tier: deep dive.
+
+**FLAMM-1981** — D. L. Flamm and V. M. Donnelly, "The design of plasma
+etchants", *Plasma Chemistry and Plasma Processing* **1**(4), 317–363
+(1981). <https://doi.org/10.1007/BF00565992> The design of plasma
+etchants, including oxygen-based organic etches. Used on steps 036 and
+042 and the etch category page. Tier: deep dive.
+
+**FRENCH-1994** — M. L. French and M. H. White, "Scaling of
+multidielectric nonvolatile SONOS memory structures", *Solid-State
+Electronics* **37**(12), 1913–1923 (1994).
+<https://doi.org/10.1016/0038-1101(94)90057-4> Scaling of
+multi-dielectric SONOS structures. Used on steps 038 and 040. Tier: deep
+dive.
+
+**GREEN-2001** — M. L. Green, E. P. Gusev, R. Degraeve and E. L.
+Garfunkel, "Ultrathin (<4 nm) SiO₂ and Si–O–N gate dielectric layers for
+silicon microelectronics: Understanding the processing, structure, and
+physical and electrical limits", *Journal of Applied Physics* **90**(5),
+2057–2121 (2001). <https://doi.org/10.1063/1.1385803> A long review of
+sub-4 nm SiO₂ and oxynitride gate dielectrics, their processing,
+structure and electrical limits. Used on steps 043 and 047 and the
+oxidation category page. Tier: deep dive.
+
+**HATTANGADY-1995** — S. V. Hattangady, H. Niimi and G. Lucovsky,
+"Controlled nitrogen incorporation at the gate oxide surface", *Applied
+Physics Letters* **66**(25), 3495–3497 (1995).
+<https://doi.org/10.1063/1.113775> Controlled nitrogen incorporation at
+the gate-oxide surface. Used on step 047. Tier: deep dive.
+
+**HORI-1988** — T. Hori and K. Kurimoto, "A new p-channel MOSFET with
+large-tilt-angle implanted punchthrough stopper (LATIPS)", *IEEE
+Electron Device Letters* **9**(12), 641–643 (1988).
+<https://doi.org/10.1109/55.20422> The large-tilt-angle implanted
+punch-through stopper (LATIPS). Used on step 037. Tier: deep dive.
+
+**HORI-1989** — T. Hori, H. Iwasaki and K. Tsuji, "Electrical and
+physical properties of ultrathin reoxidized nitrided oxides prepared by
+rapid thermal processing", *IEEE Transactions on Electron Devices*
+**36**(2), 340–350 (1989). <https://doi.org/10.1109/16.19935> Electrical
+and physical properties of RTP reoxidised nitrided oxides. Used on step
+047 and the oxidation category page. Tier: deep dive.
+
+**HWANG-1991** — H. Hwang, W. Ting, D.-L. Kwong and J. Lee, "A physical
+model for boron penetration through an oxynitride gate dielectric
+prepared by rapid thermal processing in N₂O", *Applied Physics Letters*
+**59**(13), 1581–1582 (1991). <https://doi.org/10.1063/1.106290> A
+physical model of boron penetration through N₂O oxynitride. Used on step
+047. Tier: deep dive.
+
+**INUKAI-2000** — T. Inukai and T. Hiramoto, "Suppression of Stand-by
+Tunnel Current in Ultra-Thin Gate Oxide MOSFETs by Dual Oxide
+Thickness-Multiple Threshold Voltage CMOS (DOT-MTCMOS)", *Japanese
+Journal of Applied Physics* **39**(4S), 2287 (2000).
+<https://doi.org/10.1143/JJAP.39.2287> Dual oxide thickness / multiple
+threshold CMOS for stand-by leakage. Used on step 044. Tier: deep dive.
+
+**ITO-1980** — T. Ito, T. Nozaki and H. Ishikawa, "Direct Thermal
+Nitridation of Silicon Dioxide Films in Anhydrous Ammonia Gas", *Journal
+of The Electrochemical Society* **127**(9), 2053–2057 (1980).
+<https://doi.org/10.1149/1.2130065> Direct thermal nitridation of SiO₂
+in ammonia. Used on step 047. Tier: deep dive.
+
+**JIEW-2012** — C. B. Jiew, Y. E. Chien and R. T. T. Yung, "Development
+of a robust 2T-SONOS cell for embedded flash application", *2012 12th
+Annual Non-Volatile Memory Technology Symposium (NVMTS)*, pp. 1–6.
+<https://doi.org/10.1109/NVMTS.2013.6632849> Development of a robust
+2T-SONOS cell for embedded flash, the same cell topology as SKY130's.
+Used on steps 035, 038 and 041. Tier: deep dive.
+
+**JUDGE-1971** — J. S. Judge, "A Study of the Dissolution of SiO₂ in
+Acidic Fluoride Solutions", *Journal of The Electrochemical Society*
+**118**(11), 1772 (1971). <https://doi.org/10.1149/1.2407835> The
+dissolution kinetics of SiO₂ in acidic fluoride solutions. Used on steps
+039 and 046. Tier: deep dive.
+
+**KIKUYAMA-1994** — H. Kikuyama, M. Waki, M. Miyashita, T. Yabune, N.
+Miki, J. Takano and T. Ohmi, "A Study of the Dissociation State and the
+SiO₂ Etching Reaction for HF Solutions of Extremely Low Concentration",
+*Journal of The Electrochemical Society* **141**(2), 366–374 (1994).
+<https://doi.org/10.1149/1.2054733> Dissociation state and etching
+reaction of extremely dilute HF. Used on steps 039 and 046. Tier: deep
+dive.
+
+**KIM-2001** — S.-H. Kim, S.-H. Kim, S.-E. Kim, M.-S. Kim, J.-H. Park
+and E.-S. Kim, "New STI Scheme to Compensate Gate Oxide Thinning at STI
+Corner Edge for the Devices Using Thick Dual Gate Oxide", *Extended
+Abstracts of the 2001 International Conference on Solid State Devices
+and Materials (SSDM)*, 2001. <https://doi.org/10.7567/SSDM.2001.A-6-6>
+An STI scheme that compensates thinning at the STI corner for thick dual
+gate oxides. Used on steps 044 and 046. Tier: deep dive.
+
+**KRAFT-1997** — R. Kraft, T. P. Schneider, W. W. Dostalik and S.
+Hattangady, "Surface nitridation of silicon dioxide with a high density
+nitrogen plasma", *Journal of Vacuum Science & Technology B* **15**(4),
+967–970 (1997). <https://doi.org/10.1116/1.589516> Surface nitridation
+of SiO₂ with a high-density nitrogen plasma. Used on step 047. Tier:
+deep dive.
+
+**KUEHNE-1997** — J. Kuehne, S. Hattangady, J. Piccirillo, G. C. Xing,
+G. E. Miner and D. Lopes, "Nitric Oxide Rapid Thermal Nitridation of
+Thin Gate Oxides", *MRS Proceedings* **470**, 381 (1997).
+<https://doi.org/10.1557/PROC-470-381> Nitric oxide rapid thermal
+nitridation of thin gate oxides. Used on step 047. Tier: deep dive.
+
+**LEE-1999** — S.-W. Lee, "Novel Dual Gate Oxide Process with Improved
+Gate Oxide Integrity Reliability", *Electrochemical and Solid-State
+Letters* **3**(1), 56 (1999). <https://doi.org/10.1149/1.1390957> A dual
+gate oxide process with improved gate-oxide integrity. Used on steps
+043, 044 and 046. Tier: deep dive.
+
+**LEE-1999-ICVC** — S.-W. Lee, I. H. Cho, S. H. Park, H. G. Choi, N. G.
+Kim, J.-K. Kim, S. B. Han and K. Lee, "Gate oxide thinning effects at
+the edge of shallow trench isolation in the dual gate oxide process",
+*ICVC '99: 6th International Conference on VLSI and CAD*, pp. 249–252.
+<https://doi.org/10.1109/ICVC.1999.820895> Gate oxide thinning at the
+STI edge in the dual gate oxide process. Used on steps 043, 044 and 046.
+Tier: deep dive.
+
+**LIBSCH-1990** — F. R. Libsch and M. H. White, "Charge transport and
+storage of low programming voltage SONOS/MONOS memory devices",
+*Solid-State Electronics* **33**(1), 105–126 (1990).
+<https://doi.org/10.1016/0038-1101(90)90017-9> Charge transport and
+storage in low-voltage SONOS/MONOS devices. Used on step 040. Tier: deep
+dive.
+
+**LIN-1997** — C.-H. Lin, J.-J. Yang, K. Young and K.-Y. Chiu,
+"Optimization of tilt-implanted punchthrough stopper on short-channel
+behavior in quarter-micron MOSFET with low-concentration wells", *Proc.
+1997 International Symposium on VLSI Technology, Systems, and
+Applications*, pp. 303–306. <https://doi.org/10.1109/VTSA.1997.614915>
+Optimising a tilt-implanted punch-through stopper in quarter-micron
+MOSFETs. Used on step 037. Tier: deep dive.
+
+**LINLIU-2000** — K. Linliu, M.-R. Kuo and Y.-R. Huang, "Novel polymeric
+antireflective coating (PARC) for better uniformity control of critical
+dimension", *Proc. SPIE* **4000**, Optical Microlithography XIII, 915
+(2000). <https://doi.org/10.1117/12.389087> A polymeric ARC for better
+CD uniformity. Used on step 036. Tier: deep dive.
+
+**LO-1997** — S.-H. Lo, D. A. Buchanan, Y. Taur and W. Wang,
+"Quantum-mechanical modeling of electron tunneling current from the
+inversion layer of ultra-thin-oxide nMOSFET's", *IEEE Electron Device
+Letters* **18**(5), 209–211 (1997). <https://doi.org/10.1109/55.568766>
+Tunnelling current through ultrathin oxides. Used on step 047. Tier:
+deep dive.
+
+**LUE-2005** — H.-T. Lue, S.-Y. Wang, E.-K. Lai, Y.-H. Shih, S.-C. Lai,
+L.-W. Yang, K.-C. Chen, K.-Y. Hsieh, R. Liu and C.-Y. Lu, "BE-SONOS: A
+bandgap engineered SONOS with excellent performance and reliability",
+*IEDM 2005 Technical Digest*, pp. 547–550.
+<https://doi.org/10.1109/IEDM.2005.1609404> Bandgap-engineered SONOS,
+the multi-layer tunnel dielectric idea. Used on step 040. Tier: deep
+dive.
+
+**MA-1998** — T. P. Ma, "Making silicon nitride film a viable gate
+dielectric", *IEEE Transactions on Electron Devices* **45**(3), 680–690
+(1998). <https://doi.org/10.1109/16.661229> Silicon nitride as a gate
+dielectric, the nitrogen-rich end of the spectrum. Used on step 047.
+Tier: deep dive.
+
+**MAXIM-2003** — A. Maxim, "A low voltage, 10-2550MHz, 0.15μ CMOS,
+process and divider modulus independent PLL using zero-VT MOSFETs",
+*Proc. ESSCIRC 2003 — 29th European Solid-State Circuits Conference*,
+pp. 105–108. <https://doi.org/10.1109/ESSCIRC.2003.1257083> A circuit
+built on zero-Vt MOSFETs, showing what designers do with
+near-zero-threshold devices. Used on step 038. Tier: deep dive.
+
+**MONK-1994** — D. J. Monk, D. S. Soane and R. T. Howe, "Hydrofluoric
+Acid Etching of Silicon Dioxide Sacrificial Layers: I. Experimental
+Observations" and "II. Modeling", *Journal of The Electrochemical
+Society* **141**(1), 264–269 and 270–274 (1994).
+<https://doi.org/10.1149/1.2054696>, <https://doi.org/10.1149/1.2054697>
+HF etching of silicon dioxide, experiments and model. Used on steps 039
+and 046. Tier: deep dive.
+
+**NULMAN-1985** — J. Nulman, J. P. Krusius and A. Gat, "Rapid thermal
+processing of thin gate dielectrics. Oxidation of silicon", *IEEE
+Electron Device Letters* **6**(5), 205–207 (1985).
+<https://doi.org/10.1109/EDL.1985.26099> Rapid thermal oxidation of thin
+gate dielectrics. Used on steps 043 and 047. Tier: deep dive.
+
+**PFIESTER-1990** — J. R. Pfiester, F. K. Baker, T. C. Mele, H.-H.
+Tseng, P. J. Tobin, J. D. Hayden, J. W. Miller, C. D. Gunderson and L.
+C. Parrillo, "The effects of boron penetration on p⁺ polysilicon gated
+PMOS devices", *IEEE Transactions on Electron Devices* **37**(8),
+1842–1851 (1990). <https://doi.org/10.1109/16.57135> Boron penetration
+through thin oxides from p⁺ poly gates. Used on step 047. Tier: deep
+dive.
+
+**RAMANATHAN-1998** — V. Ramanathan, S. Chen, K. Lai, M. R. Brongo and
+N. Samarakone, "Etch integration issues in the development of deep
+submicron contacts utilizing DUV resist and organic BARC", *Proc. SPIE*
+**3333**, Advances in Resist Technology and Processing XV, 909 (1998).
+<https://doi.org/10.1117/12.312473> Etch integration issues with DUV
+resist over organic BARC. Used on step 036. Tier: deep dive.
+
+**ROZE-2017** — F. Rozé, O. Gourhant, E. Blanquet, F. Bertin, M. Juhel,
+F. Abbate, C. Pribat and R. Duru, "Oxidation kinetics of Si and SiGe by
+dry rapid thermal oxidation, in-situ steam generation oxidation and dry
+furnace oxidation", *Journal of Applied Physics* **121**(24), 245308
+(2017). <https://doi.org/10.1063/1.4987040> Oxidation kinetics of dry
+RTO, ISSG and dry furnace oxidation compared. Used on steps 040, 043 and
+047. Tier: deep dive.
+
+**STATHIS-2002** — J. H. Stathis, "Reliability limits for the gate
+insulator in CMOS technology", *IBM Journal of Research and Development*
+**46**(2.3), 265–286 (2002). <https://doi.org/10.1147/rd.462.0265>
+Reliability limits of the gate insulator. Used on step 047. Tier: deep
+dive.
+
+**STEINBRUCHEL-1989** — C. Steinbrüchel, "Universal energy dependence of
+physical and ion-enhanced chemical etch yields at low ion energy",
+*Applied Physics Letters* **55**(19), 1960–1962 (1989).
+<https://doi.org/10.1063/1.102336> The energy dependence of ion-enhanced
+etch yields, governing the low-bias ARC open. Used on step 036 and the
+etch category page. Tier: deep dive.
+
+**TOGO-1998** — M. Togo, K. Noda and T. Tanigawa (NEC),
+"Multiple-thickness gate oxide and dual-gate technologies for
+high-performance logic-embedded DRAMs", *IEDM 1998 Technical Digest*,
+pp. 347–350. <https://doi.org/10.1109/IEDM.1998.746371>
+Multiple-thickness gate oxide and dual-gate technologies for embedded
+DRAM. Used on steps 043 and 044. Tier: deep dive.
+
+**TSENG-1998** — H.-H. Tseng, D. L. O'Meara, P. J. Tobin, V. S. Wang, X.
+Guo, R. Hegde, I. Y. Yang, P. Gilbert et al. (Motorola), "Reduced gate
+leakage current and boron penetration of 0.18 μm 1.5 V MOSFETs using
+integrated RTCVD oxynitride gate dielectric", *IEDM 1998 Technical
+Digest*, pp. 793–796. <https://doi.org/10.1109/IEDM.1998.746475> Reduced
+leakage and boron penetration with an RTCVD oxynitride at 0.18 µm. Used
+on step 047. Tier: deep dive.
+
+**VAN-SCHAIJK-2004** — R. van Schaijk, M. van Duuren, W. Y. Mei, K. van
+der Jeugd, A. Rothschild and M. Demand, "Oxide–nitride–oxide layer
+optimisation for reliable embedded SONOS memories", *Microelectronic
+Engineering* **72**(1–4), 395–398 (2004).
+<https://doi.org/10.1016/j.mee.2004.01.021> ONO layer optimisation for
+reliable embedded SONOS. Used on step 040. Tier: deep dive.
+
+**WINTERS-1992** — H. F. Winters and J. W. Coburn, "Surface science
+aspects of etching reactions", *Surface Science Reports* **14**(4–6),
+162–269 (1992). <https://doi.org/10.1016/0167-5729(92)90009-Z>
+Surface-science mechanisms of fluorine-based etching. Used on step 042
+and the etch category page. Tier: deep dive.
+
+**WRIGHT-1990** — P. J. Wright and K. C. Saraswat, "Thickness
+limitations of SiO₂ gate dielectrics for MOS ULSI", *IEEE Transactions
+on Electron Devices* **37**(8), 1884–1892 (1990).
+<https://doi.org/10.1109/16.57140> Thickness limitations of SiO₂ gate
+dielectrics. Used on steps 043 and 047. Tier: deep dive.
+
+**XU-2001** — S. Xu, T. Lill and D. Podlesnik, "Wall-dependent etching
+characteristics of organic antireflection coating in O₂+halogen/hydrogen
+halide plasma", *Journal of Vacuum Science & Technology A* **19**(6),
+2893–2899 (2001). <https://doi.org/10.1116/1.1412655> Wall-dependent
+etching of organic ARC in O₂ + halogen / hydrogen halide plasmas. Used
+on step 036. Tier: deep dive.
+
+**YANG-2000** — Y. Yang and M. H. White, "Charge retention of scaled
+SONOS nonvolatile memory devices at elevated temperatures", *Solid-State
+Electronics* **44**(6), 949–958 (2000).
+<https://doi.org/10.1016/S0038-1101(00)00012-5> Charge retention of
+scaled SONOS at elevated temperature. Used on step 040. Tier: deep dive.
+
+**YU-1999** — M.-C. Yu, S.-M. Jang, C. H. Diaz, C. H. Yu, S. C. Sun and
+M. S. Liang (TSMC), "Improvement of ultrathin gate oxide by a novel
+rapid thermal oxidation process with in-situ steam generation", *Proc.
+SPIE* **3881**, Microelectronic Device Technology III, 234 (1999).
+<https://doi.org/10.1117/12.360557> Ultrathin gate oxide grown by
+in-situ steam generation in an RTP chamber. Used on steps 040, 043 and
+047 and the oxidation category page. Tier: deep dive.
+
+#### Books and book chapters
+
+**BREWER-GILL-2007** — J. E. Brewer and M. Gill (eds.), *Nonvolatile
+Memory Technologies with Emphasis on Flash: A Comprehensive Guide to
+Understanding and Using NVSM Devices*, Wiley-IEEE Press, 2007.
+<https://doi.org/10.1002/9780470181355> The SONOS chapters. Used on step
+040. Tier: high-level.
+
+**HORI-1997** — T. Hori, *Gate Dielectrics and MOS ULSIs: Physics,
+Technology and Applications*, Springer Series in Electronics and
+Photonics, vol. 34, Springer, 1997.
+<https://doi.org/10.1007/978-3-642-60856-8> Monograph on nitrided and
+reoxidised-nitrided gate oxides. Used on steps 043 and 047 and the
+oxidation category page. Tier: deep dive.
+
+**MERCKEL-1977** — G. Merckel, "Ion Implanted MOS Transistors —
+Depletion Mode Devices", in *Process and Device Modeling for Integrated
+Circuit Design*, Springer, 1977, pp. 677–688.
+<https://doi.org/10.1007/978-94-011-7583-8_24> Modelling of
+ion-implanted depletion-mode transistors. Used on step 038. Tier: deep
+dive.
+
+**NOJIRI-2015** — K. Nojiri, *Dry Etching Technology for
+Semiconductors*, Springer, 2015.
+<https://doi.org/10.1007/978-3-319-10295-5> A production-oriented
+monograph on poly, oxide and metal etch chemistries and endpoint. Used
+on steps 036 and 042 and the etch category page. Tier: deep dive.
+
+#### Patents
+
+**PAT-CN-TEL** — Tokyo Electron Ltd., *Method of forming a semiconductor
+device using double endpoint detection*, US 6,376,262 B1, granted
+2002-04-23. <https://patents.google.com/patent/US6376262B1/en> CN
+emission at 387 nm as the nitride etch endpoint. Label ↔ key: the same
+patent is cited as `pat-endpoint-tel` on the etch category page
+(PAT-ENDPOINT-TEL). Used on step 042. Tier: cross-check.
+
+**PAT-ONO-THICK-CYP** — K. Ramkumar (Cypress Semiconductor), *Method of
+integration of ONO stack formation into thick gate oxide CMOS flow*, US
+9,824,895 B1, granted 2017-11-21.
+<https://patents.google.com/patent/US9824895B1/en> The alternative
+ordering with the thick gate oxide before the ONO, and why. Used on step
+043. Tier: cross-check.
+
+**PAT-RADOX-CYP** — K. Ramkumar, S. Levy and J. Byun (Cypress
+Semiconductor), *Radical oxidation process for fabricating a nonvolatile
+charge trap memory device*, US 8,940,645 B2, granted 2015-01-27.
+<https://patents.google.com/patent/US8940645B2/en> A radical oxidation
+process for the ONO stack with trap-free and trap-dense oxynitride
+layers. Used on step 040. Tier: deep dive.
+
+#### SkyWater and PDK sources
+
+**PDK-MODEL-NFET01V8** — SkyWater PDK Authors,
+`sky130_fd_pr__nfet_01v8__tt.pm3.spice` (typical-corner BSIM4 model,
+parameter `toxe`), google/skywater-pdk-libs-sky130_fd_pr repository.
+<https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice>
+The BSIM4 `toxe` parameter of the 1.8 V NMOS model, a public electrical
+oxide thickness. Used on steps 043, 044, 046 and 047. Tier: cross-check.
+
+**PDK-MODEL-NFET5V** — SkyWater PDK Authors,
+`sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice` (typical-corner BSIM4
+model, parameter `toxe`), google/skywater-pdk-libs-sky130_fd_pr
+repository.
+<https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice>
+The BSIM4 `toxe` parameter of the 5 V NMOS model, a public electrical
+oxide thickness. Used on steps 043, 044 and 047. Tier: cross-check.
+
+**PDK-SONOS-XS** — SkyWater PDK Authors, `cross-section-sonos-cell.svg`
+(2-T SONOS cell cross-section drawing), google/skywater-pdk repository,
+`docs/rules/device-details/special_sonosfet/`.
+<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/special_sonosfet/cross-section-sonos-cell.svg>
+The labelled "Depletion Implant" in the 2-T cell drawing. Used on step
+038. Tier: cross-check.
+
 ## 9. Evidence about specific tools at SkyWater
 
 Strength scale: **strong** = a SkyWater or tool-vendor statement;
