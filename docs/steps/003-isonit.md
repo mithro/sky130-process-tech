@@ -24,16 +24,16 @@ at {ref}`NS19 <step-013>`.
 
 Precisely: a stoichiometric LPCVD nitride of the order of 100–200 nm
 is deposited in a furnace from dichlorosilane and ammonia. An AmberWave
-Systems STI patent gives the mask nitride as "500-2000 Å"
-(PAT-STI-AMBERWAVE); Wikipedia's
-STI outline calls it the "protective nitride" (WIKI-STI). No public
-SkyWater source gives the SKY130 value. The thickness is a compromise:
-thick enough to survive the trench etch and the CMP with margin, thin
-enough to keep the trench aspect ratio (trench depth *plus* nitride,
-divided by trench width) manageable for the HDP fill — a paper on
-0.13 µm STI defines the fill aspect ratio exactly that way, as "the
-ratio of the sum of the STI trench depth and pad nitride thickness to
-the minimum space design rule critical dimension" (THUNG-2016).
+Systems STI patent gives the mask nitride as
+"500-2000 Å";[^pat-sti-amberwave] Wikipedia's STI outline calls it the
+"protective nitride".[^wiki-sti] No public SkyWater source gives the
+SKY130 value. The thickness is a compromise: thick enough to survive
+the trench etch and the CMP with margin, thin enough to keep the trench
+aspect ratio (trench depth *plus* nitride, divided by trench width)
+manageable for the HDP fill — a paper on 0.13 µm STI defines the fill
+aspect ratio exactly that way, as "the ratio of the sum of the STI
+trench depth and pad nitride thickness to the minimum space design rule
+critical dimension".[^thung-2016]
 
 ## Step category
 
@@ -52,41 +52,41 @@ simultaneously:
 * an **oxidation barrier** — oxygen does not diffuse through it, so
   the active silicon stays unoxidised during the liner oxidation at
   {ref}`LINOX <step-010>` (this is the same property that made it the
-  LOCOS mask; WIKI-SIN illustrates "local silicon oxidation through an
-  Si₃N₄ mask");
+  LOCOS mask; Wikipedia illustrates "local silicon oxidation through an
+  Si₃N₄ mask"[^wiki-sin]);
 * a **CMP stop** — the oxide fill polishes much faster than nitride in
   a suitable slurry, so the polish at {ref}`CMPNIT <step-012>` can be
   stopped on it across the whole wafer (an AmberWave Systems STI
   patent, now TSMC-owned, describes "planarizing the substrate,
   typically via chemical-mechanical polishing (CMP), using the silicon
-  nitride layer over the active area as a stop layer",
-  PAT-STI-AMBERWAVE);
+  nitride layer over the active area as a stop
+  layer"[^pat-sti-amberwave]);
 * a **plasma-etch mask** for the silicon trench etch, with good
-  selectivity against HBr/Cl₂ chemistry (TXT-05);
+  selectivity against HBr/Cl₂ chemistry;[^txt-05]
 * **selectively removable** afterwards in hot phosphoric acid, which
-  etches nitride at ~100 Å/min while barely touching oxide (VGH-1967).
+  etches nitride at ~100 Å/min while barely touching oxide.[^vgh-1967]
 
 Its thickness also sets the height of the oxide "fence" left standing
 above the silicon after the nitride is stripped, which is why the final
-field-oxide step height above the active surface (0.07 µm under poly,
-PDK-03) is tied to the choices made here.
+field-oxide step height above the active surface (0.07 µm under
+poly[^pdk-03]) is tied to the choices made here.
 
 ## How it is typically performed
 
 An industry-generic recipe for a 200 mm, 130 nm-era fab:
 
 * **Deposition chemistry.** Dichlorosilane (SiH₂Cl₂, "DCS") and ammonia:
-  3 SiCl₂H₂ + 4 NH₃ → Si₃N₄ + 6 HCl + 6 H₂ (WIKI-SIN, WIKI-CVD). LPCVD
+  3 SiCl₂H₂ + 4 NH₃ → Si₃N₄ + 6 HCl + 6 H₂.[^wiki-sin][^wiki-cvd] LPCVD
   nitride is deposited at roughly 700–800 °C and a few hundred mTorr in
   a hot-wall furnace; an NH₃ : DCS ratio well above the stoichiometric
-  4 : 3 is used to keep the film silicon-poor and stoichiometric
-  (TXT-02). The Cypress ONO patents describe the same DCS/NH₃ LPCVD
-  chemistry for the SONOS nitride, at "about 700° C. to about 875° C."
-  (PAT-01) and 700–850 °C, 5–500 mTorr (PAT-02), which shows that this
-  chemistry is native to the Cypress furnace set.
+  4 : 3 is used to keep the film silicon-poor and
+  stoichiometric.[^txt-02] The Cypress ONO patents describe the same
+  DCS/NH₃ LPCVD chemistry for the SONOS nitride, at "about 700° C. to
+  about 875° C."[^pat-01] and 700–850 °C, 5–500 mTorr,[^pat-02] which
+  shows that this chemistry is native to the Cypress furnace set.
 * **Film properties.** Stoichiometric LPCVD nitride is under about
   1 GPa of tensile stress and has a refractive index near 2.0; both are
-  monitored as process-control signals (TXT-02).
+  monitored as process-control signals.[^txt-02]
 * **Sequence.** Load 100–150 wafers, pump down, leak check, ramp to
   temperature under N₂, stabilise NH₃, add DCS for the deposition time,
   purge, back-fill, unload. Deposition rates are of the order of a few
@@ -95,7 +95,7 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
   bow on monitor wafers; particle scan.
 
 SkyWater's capability page lists LPCVD nitride explicitly among its
-furnace processes (SKW-01), along with BTBAS low-temperature nitride,
+furnace processes,[^skw-01] along with BTBAS low-temperature nitride,
 which is a different (later-generation) precursor.
 
 ## Machines typically used
@@ -108,23 +108,24 @@ which is a different (later-generation) precursor.
 
 ## Machines likely used at SkyWater
 
-* **Aviza furnace running LPCVD nitride.** SKW-01: "Furnaces are all
-  made by Aviza", with LPCVD nitride among the listed processes.
-  Strength: strong. Vertical configuration: weak (job-board snippet and
-  a used-equipment listing for the AVP-8000, AVIZA-AVP).
+* **Aviza furnace running LPCVD nitride.** SkyWater states "Furnaces
+  are all made by Aviza", with LPCVD nitride among the listed
+  processes.[^skw-01] Strength: strong. Vertical configuration: weak
+  (job-board snippet and a used-equipment listing for the
+  AVP-8000[^aviza-avp]).
 * No public source names the specific tube used for the isolation
   nitride versus the gate-stack or spacer nitrides.
 
 ## Resources required
 
-* **Dichlorosilane (SiH₂Cl₂)** and **ammonia (NH₃)** process gases
-  (WIKI-SIN).
+* **Dichlorosilane (SiH₂Cl₂)** and **ammonia (NH₃)** process
+  gases.[^wiki-sin]
 * **Nitrogen** for purge and ramp.
 * **HCl-tolerant exhaust / scrubber** — the reaction by-product is HCl
   and ammonium chloride condenses in the pump lines, a well-known
-  maintenance load on nitride tubes (TXT-02).
+  maintenance load on nitride tubes.[^txt-02]
 * **Quartz or silicon-carbide tube and boat**; tube-cleaning
-  chemistry (typically NF₃ or a wet HF clean, TXT-02).
+  chemistry (typically NF₃ or a wet HF clean).[^txt-02]
 * **Monitor wafers.**
 
 ## Related steps and cross-references
@@ -143,60 +144,65 @@ which is a different (later-generation) precursor.
 
 ### Cross-check
 
-* **SKW-01** — SkyWater Technology, *Facilities & Capabilities*,
-  accessed 2026-08-30 (Aviza furnaces; LPCVD nitride; BTBAS nitride).
-  <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-* **PDK-03** — SkyWater PDK Authors, *Criteria & Assumptions* ("field
-  oxide (above silicon surface) … underneath poly" 0.07 µm).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
-* **PAT-01** — K. Ramkumar et al. (Cypress), US 6,969,689 B1, *Method
-  of manufacturing an oxide-nitride-oxide (ONO) dielectric for
-  SONOS-type devices*, granted 2005-11-29 (DCS/NH₃ LPCVD nitride).
-  <https://patents.google.com/patent/US6969689B1/en>
-* **PAT-02** — S. Levy et al. (Cypress), US 2009/0179253 A1,
-  *Oxide-nitride-oxide stack having multiple oxynitride layers*,
-  published 2009-07-16 (LPCVD 700–850 °C, 5–500 mTorr).
-  <https://patents.google.com/patent/US20090179253A1/en>
-* **PAT-STI-AMBERWAVE** — M. T. Currie and A. J. Lochtefeld (AmberWave
-  Systems Corporation; assigned to Taiwan Semiconductor Manufacturing
-  Co. on 2010-01-26), US 6,960,781 B2, *Shallow trench isolation
-  process*, granted 2005-11-01 (nitride mask 500–2000 Å).
-  <https://patents.google.com/patent/US6960781B2/en>
-* **VGH-1967** — W. van Gelder and V. E. Hauser, *J. Electrochem. Soc.*
-  114 (1967) 869, DOI 10.1149/1.2426757.
-  <https://iopscience.iop.org/article/10.1149/1.2426757>
-* **AVIZA-AVP** — Moov listing, *Aviza / SVG / Thermco AVP-8000*,
-  accessed 2026-08-30.
-  <https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>
+* SkyWater, *Facilities & Capabilities* — Aviza furnaces; LPCVD
+  nitride; BTBAS nitride.[^skw-01]
+* SkyWater PDK, *Criteria & Assumptions* — "field oxide (above silicon
+  surface) … underneath poly" 0.07 µm.[^pdk-03]
+* Ramkumar et al. (Cypress), US 6,969,689 — DCS/NH₃ LPCVD nitride in
+  the ONO stack.[^pat-01]
+* Levy et al. (Cypress), US 2009/0179253 — LPCVD at 700–850 °C,
+  5–500 mTorr.[^pat-02]
+* Currie and Lochtefeld (AmberWave), US 6,960,781 — nitride mask
+  500–2000 Å; CMP stop on nitride.[^pat-sti-amberwave]
+* van Gelder and Hauser, *J. Electrochem. Soc.* 1967 — hot phosphoric
+  etch rates.[^vgh-1967]
+* Moov marketplace, Aviza / SVG / Thermco AVP-8000 listing
+  (weak).[^aviza-avp]
 
 ### High-level understanding
 
-* **WIKI-SIN** — Wikipedia, *Silicon nitride* (LPCVD reaction, hot
-  H₃PO₄ etch, oxidation mask).
-  <https://en.wikipedia.org/wiki/Silicon_nitride>
-* **WIKI-CVD** — Wikipedia, *Chemical vapor deposition*.
-  <https://en.wikipedia.org/wiki/Chemical_vapor_deposition>
-* **WIKI-STI** — Wikipedia, *Shallow trench isolation*.
-  <https://en.wikipedia.org/wiki/Shallow_trench_isolation>
-* **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the
-  VLSI Era, Vol. 1*, 2nd ed., Lattice Press, 2000,
-  ISBN 978-0-9616721-6-4 (CVD chapter: LPCVD nitride).
-  <https://openlibrary.org/isbn/9780961672164>
-* **TXT-05** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4*,
-  Lattice Press, 2002, ISBN 978-0-9616721-7-1 (STI chapter).
-  <https://openlibrary.org/isbn/9780961672171>
+* Wikipedia, *Silicon nitride* — the LPCVD reaction, hot H₃PO₄ etch
+  and use as an oxidation mask.[^wiki-sin]
+* Wikipedia, *Chemical vapor deposition* — LPCVD in
+  context.[^wiki-cvd]
+* Wikipedia, *Shallow trench isolation* — the "protective
+  nitride".[^wiki-sti]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — the
+  CVD chapter on LPCVD nitride.[^txt-02]
+* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — the STI
+  chapter.[^txt-05]
 
 ### Deep dive
 
-* **THUNG-2016** — B. J. Thung, K. Ibrahim, N. A. Manap and
-  F. Salehuddin, "Challenges for 0.13µm Generation Shallow Trench
-  Isolation on 0.18µm Equipment Platform", *Journal of
-  Telecommunication, Electronic and Computer Engineering* 8(5), 2016,
-  pp. 15–21.
-  <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>
-* **REV-01** — M. Nandakumar et al., "Shallow trench isolation for
-  advanced ULSI CMOS technologies", *IEDM 1998*, pp. 133–136,
-  DOI 10.1109/IEDM.1998.746297.
+* Thung et al., *JTEC* 2016 — the fill-aspect-ratio definition that
+  ties the nitride thickness to the HDP fill window.[^thung-2016]
+* Nandakumar et al., IEDM 1998 — the STI review, including the
+  stack and its role in corner rounding and CMP.[^rev-01]
+* Roenigk and Jensen, *J. Electrochem. Soc.* 1987 — a reactor model of
+  LPCVD nitride from DCS/NH₃, explaining thickness uniformity along a
+  hot-wall tube.[^roenigk-1987]
+* Peev, Zambov and Yanakiev, *Thin Solid Films* 1990 — the kinetics of
+  the DCS–NH₃ reaction and how the deposition rate depends on gas
+  ratio, pressure and temperature.[^peev-1990]
+* Temple-Boyer et al., *J. Vac. Sci. Technol. A* 1998 — residual stress
+  in LPCVD SiNₓ as a function of composition, the reason
+  stoichiometric films are highly tensile.[^temple-boyer-1998]
+* Habraken and Kuiper, *Mater. Sci. Eng. R* 1994 — a review of silicon
+  nitride and oxynitride films: growth, composition, hydrogen content
+  and etch behaviour.[^habraken-1994]
+* Stoney, *Proc. R. Soc. A* 1909 — the wafer-curvature relation used to
+  turn a bow measurement into a film stress.[^stoney-1909]
+* Hu, *J. Appl. Phys.* 1991 — how nitride stress on a pad oxide
+  generates dislocations during later oxidation.[^hu-1991]
+* Kooi, van Lierop and Appels, *J. Electrochem. Soc.* 1976 — the
+  nitride mask's edge behaviour during oxidation (the Kooi
+  effect).[^kooi-1976]
+* Teasdale et al., *Electrochem. Solid-State Lett.* 2001 — single-wafer
+  RTCVD of DCS/NH₃ nitride, the alternative to a batch
+  furnace.[^teasdale-2001]
+* Stanford Nanofabrication Facility, *Tystar LPCVD Tube Training* — a
+  university facility guide to running a hot-wall LPCVD nitride
+  tube.[^snf-lpcvd]
 
 ## Open questions
 
@@ -208,3 +214,88 @@ which is a different (later-generation) precursor.
   reflectivity at 248 nm) is unknown.
 * Whether SkyWater's nitride tube is a dedicated one or shared with the
   ONO and spacer nitrides is not public.
+
+<!-- footnotes -->
+
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^pat-01]: K. Ramkumar, M. Rathor, B. Parameshwaran and L. Lancaster
+    (Cypress Semiconductor), *Method of manufacturing an
+    oxide-nitride-oxide (ONO) dielectric for SONOS-type devices*,
+    US 6,969,689 B1, granted 2005-11-29.
+    <https://patents.google.com/patent/US6969689B1/en>
+[^pat-02]: S. Levy, K. Ramkumar, F. Jenne and S. Geha (Cypress
+    Semiconductor), *Oxide-nitride-oxide stack having multiple
+    oxynitride layers*, US 2009/0179253 A1, published 2009-07-16.
+    <https://patents.google.com/patent/US20090179253A1/en>
+[^pat-sti-amberwave]: M. T. Currie and A. J. Lochtefeld (AmberWave
+    Systems Corporation; assigned to Taiwan Semiconductor Manufacturing
+    Co. on 2010-01-26), *Shallow trench isolation process*,
+    US 6,960,781 B2, granted 2005-11-01.
+    <https://patents.google.com/patent/US6960781B2/en>
+[^vgh-1967]: W. van Gelder and V. E. Hauser, "The Etching of Silicon
+    Nitride in Phosphoric Acid with Silicon Dioxide as a Mask", *Journal
+    of The Electrochemical Society* **114**(8), 869 (1967).
+    <https://doi.org/10.1149/1.2426757>
+[^aviza-avp]: Moov used-equipment marketplace, *Aviza / SVG / Thermco
+    AVP 8000* listing, accessed 2026-08-30.
+    <https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>
+[^wiki-sin]: Wikipedia, *Silicon nitride*.
+    <https://en.wikipedia.org/wiki/Silicon_nitride>
+[^wiki-cvd]: Wikipedia, *Chemical vapor deposition*.
+    <https://en.wikipedia.org/wiki/Chemical_vapor_deposition>
+[^wiki-sti]: Wikipedia, *Shallow trench isolation*.
+    <https://en.wikipedia.org/wiki/Shallow_trench_isolation>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+    ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+    Deep-Submicron Process Technology*, Lattice Press, 2002,
+    ISBN 978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^thung-2016]: B. J. Thung, K. Ibrahim, N. A. Manap and F. Salehuddin,
+    "Challenges for 0.13µm Generation Shallow Trench Isolation on
+    0.18µm Equipment Platform", *Journal of Telecommunication,
+    Electronic and Computer Engineering* **8**(5), 15–21 (2016).
+    <https://jtec.utem.edu.my/jtec/article/view/697>
+[^rev-01]: M. Nandakumar, A. Chatterjee, S. Sridhar, K. Joyner,
+    M. Rodder and I.-C. Chen, "Shallow trench isolation for advanced
+    ULSI CMOS technologies", *IEDM 1998 Technical Digest*, pp. 133–136.
+    <https://doi.org/10.1109/IEDM.1998.746297>
+[^roenigk-1987]: K. F. Roenigk and K. F. Jensen, "Low Pressure CVD of
+    Silicon Nitride", *Journal of The Electrochemical Society*
+    **134**(7), 1777–1785 (1987). <https://doi.org/10.1149/1.2100756>
+[^peev-1990]: G. Peev, L. Zambov and Y. Yanakiev, "Kinetics of the
+    chemical reaction between dichlorosilane and ammonia during silicon
+    nitride film deposition", *Thin Solid Films* **189**(2), 275–282
+    (1990). <https://doi.org/10.1016/0040-6090(90)90456-N>
+[^temple-boyer-1998]: P. Temple-Boyer, C. Rossi, E. Saint-Etienne and
+    E. Scheid, "Residual stress in low pressure chemical vapor
+    deposition SiNₓ films deposited from silane and ammonia", *Journal
+    of Vacuum Science & Technology A* **16**(4), 2003–2007 (1998).
+    <https://doi.org/10.1116/1.581302>
+[^habraken-1994]: F. H. P. M. Habraken and A. E. T. Kuiper, "Silicon
+    nitride and oxynitride films", *Materials Science and Engineering:
+    R: Reports* **12**(3), 123–175 (1994).
+    <https://doi.org/10.1016/0927-796X(94)90006-X>
+[^stoney-1909]: G. G. Stoney, "The tension of metallic films deposited
+    by electrolysis", *Proceedings of the Royal Society of London A*
+    **82**(553), 172–175 (1909). <https://doi.org/10.1098/rspa.1909.0021>
+[^hu-1991]: S. M. Hu, "Stress-related problems in silicon technology",
+    *Journal of Applied Physics* **70**(6), R53–R80 (1991).
+    <https://doi.org/10.1063/1.349282>
+[^kooi-1976]: E. Kooi, J. G. van Lierop and J. A. Appels, "Formation of
+    Silicon Nitride at a Si–SiO₂ Interface during Local Oxidation of
+    Silicon and during Heat-Treatment of Oxidized Silicon in NH₃ Gas",
+    *Journal of The Electrochemical Society* **123**(7), 1117–1120
+    (1976). <https://doi.org/10.1149/1.2133008>
+[^teasdale-2001]: D. Teasdale, Y. Senzaki, R. Herring, G. Hoeye,
+    L. Page and P. Schubert, "LPCVD of Silicon Nitride from
+    Dichlorosilane and Ammonia by Single Wafer Rapid Thermal
+    Processing", *Electrochemical and Solid-State Letters* **4**(5),
+    F11 (2001). <https://doi.org/10.1149/1.1359056>
+[^snf-lpcvd]: Stanford Nanofabrication Facility, *Tystar LPCVD Tube
+    Training*, equipment training page.
+    <https://snfguide.stanford.edu/guide/equipment/training/tystar-lpcvd-tube-training>
