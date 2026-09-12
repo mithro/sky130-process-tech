@@ -15,34 +15,33 @@
 `HVTPM` prints the *high-Vt P-channel mask*: photoresist is coated on
 the cleaned wafer, exposed through the HVTPM reticle and developed,
 opening windows over the PMOS channels that are to have a raised
-threshold. Two implants follow, we infer from the step order, through the same resist — the
-P-channel implant {ref}`PCHI <step-023>` and the P-channel BF₂ implant
-{ref}`PNCHI <step-024>` — and the resist is stripped at
-{ref}`PCHIS <step-025>`.
+threshold. Two implants follow, we infer from the step order, through
+the same resist — the P-channel implant {ref}`PCHI <step-023>` and the
+P-channel BF₂ implant {ref}`PNCHI <step-024>` — and the resist is
+stripped at {ref}`PCHIS <step-025>`.
 
-A note on the name. The step list expands the code as "High V
-P-channel implant mask", which could be read as *high-voltage*. The
-PDK is unambiguous that the "V" is a threshold: the mask table lists
-"High Vt PCh*, HVTPM" (PDK-05); the drawn layer `hvtp` (GDS 78:44) is
-"High-Vt LVPMOS implant" and the generated mask `chvtpm` (GDS 97:0) is
-"High Vt Pch mask", with mask add/drop purposes 97:43 and 97:42
-(PDK-06); and the rule table's function line reads "Define Vt adjust
-implant region for high Vt LV PMOS" (PDK-PERIPH). The device it
-creates is `pfet_01v8_hvt`, the "1.8V high-VT PMOS FET", and the
-high-Vt varactor option `cap_var_hvt` (PDK-07). The "LV" in the
-layer's description makes the point twice: this is a low-voltage
-(1.8 V) device with a high threshold, nothing to do with the 5 V or
-20 V families.
+A note on the name. The step list expands the code as "High V P-channel
+implant mask", which could be read as *high-voltage*. The PDK is
+unambiguous that the "V" is a threshold: the mask table lists "High Vt
+PCh*, HVTPM";[^pdk-05] the drawn layer `hvtp` (GDS 78:44) is "High-Vt
+LVPMOS implant" and the generated mask `chvtpm` (GDS 97:0) is "High Vt
+Pch mask", with mask add/drop purposes 97:43 and 97:42;[^pdk-06] and the
+rule table's function line reads "Define Vt adjust implant region for
+high Vt LV PMOS".[^pdk-periph] The device it creates is `pfet_01v8_hvt`,
+the "1.8V high-VT PMOS FET", and the high-Vt varactor option
+`cap_var_hvt`.[^pdk-07] The "LV" in the layer's description makes the
+point twice: this is a low-voltage (1.8 V) device with a high threshold,
+nothing to do with the 5 V or 20 V families.
 
 The design rules are as coarse as those of `lvtn`: minimum width
-0.380 µm (hvtp.1), minimum spacing 0.380 µm (hvtp.2), minimum
-enclosure of a PMOS by `hvtp` 0.180 µm (hvtp.3), minimum spacing from
-a PMOS not meant to be high-Vt 0.180 µm (hvtp.4), minimum area
-0.265 µm² (hvtp.5, hvtp.6), and no overlap with `lvtn`, with 0.380 µm
-spacing between the two (lvtn.9) (PDK-PERIPH). Unlike `lvtn`, whose
-rule heading says it *blocks* an implant, `hvtp` is described as the
-*region that receives* the implant, so the reticle polarity here is
-straightforward: resist is removed over `hvtp`.
+0.380 µm (hvtp.1), minimum spacing 0.380 µm (hvtp.2), minimum enclosure
+of a PMOS by `hvtp` 0.180 µm (hvtp.3), minimum spacing from a PMOS not
+meant to be high-Vt 0.180 µm (hvtp.4), minimum area 0.265 µm² (hvtp.5,
+hvtp.6), and no overlap with `lvtn`, with 0.380 µm spacing between the
+two (lvtn.9).[^pdk-periph] Unlike `lvtn`, whose rule heading says it
+*blocks* an implant, `hvtp` is described as the *region that receives*
+the implant, so the reticle polarity here is straightforward: resist is
+removed over `hvtp`.
 
 ## Step category
 
@@ -54,21 +53,21 @@ the STI/active pattern.
 ## Why this step exists
 
 SKY130 offers three 1.8 V PMOS thresholds — `pfet_01v8`,
-`pfet_01v8_lvt`, `pfet_01v8_hvt` (PDK-07) — because a high-threshold
+`pfet_01v8_lvt`, `pfet_01v8_hvt`[^pdk-07] — because a high-threshold
 device is the tool for cutting standby leakage: "High Vth devices are
 used on non-critical paths to reduce static leakage power without
 incurring a delay penalty. Typical high Vth devices reduce static
-leakage by 10 times compared with low Vth devices" (WIKI-MTCMOS). The
+leakage by 10 times compared with low Vth devices".[^wiki-mtcmos] The
 2001 ITRS treats "Multiple Vt" as a standard feature of the mixed-
-signal and low-power roadmap (ITRS-04). In a flow where the baseline
+signal and low-power roadmap.[^itrs-04] In a flow where the baseline
 PMOS threshold is set by {ref}`LVTPI <step-020>` through the N-well
 mask, a *separate* mask is the only way to give some PMOS a different
-channel dose; `HVTPM` is that mask. Without it the PDK's `_hvt` PMOS
-and high-Vt varactor would not exist, and low-leakage standard-cell
+channel dose; `HVTPM` is that mask. Without it the PDK's `_hvt` PMOS and
+high-Vt varactor would not exist, and low-leakage standard-cell
 libraries built on them could not be offered.
 
 There is no NMOS equivalent in the step list: NMOS come in standard,
-low-Vt and native flavours only (PDK-07), so the high-Vt option is
+low-Vt and native flavours only,[^pdk-07] so the high-Vt option is
 PMOS-only in SKY130.
 
 ## How it is typically performed
@@ -77,43 +76,42 @@ An industry-generic implant-block lithography for a 200 mm, 130 nm-era
 fab:
 
 1. **Track preparation.** HMDS prime on the oxide surface.
-2. **Resist coat.** A conventional positive resist of roughly 1 µm
-   (the PDK's nominal "Photoresist thickness" is 1.14 µm, PDK-03) is
-   ample for keV channel implants (TXT-02). No BARC is needed for
-   0.38 µm features at i-line (inference; WIKI-LITHO).
-3. **Exposure.** i-line: k₁ ≈ 0.62 for 0.38 µm at NA 0.6 (WIKI-LITHO),
+2. **Resist coat.** A conventional positive resist of roughly 1 µm (the
+   PDK's nominal "Photoresist thickness" is 1.14 µm)[^pdk-03] is ample
+   for keV channel implants.[^txt-02] No BARC is needed for 0.38 µm
+   features at i-line (inference).[^wiki-litho]
+3. **Exposure.** i-line: k₁ ≈ 0.62 for 0.38 µm at NA 0.6,[^wiki-litho]
    well within production margins; the KrF tools are reserved for the
-   critical layers (ITRS-03). We infer an **i-line layer**.
+   critical layers.[^itrs-03] We infer an **i-line layer**.
 4. **Alignment** to STI. The 0.180 µm enclosure and spacing rules
-   (hvtp.3, hvtp.4) define the overlay budget between this mask and
-   the active pattern that determines which transistor is which.
+   (hvtp.3, hvtp.4) define the overlay budget between this mask and the
+   active pattern that determines which transistor is which.
 5. **Develop** in TMAH; optional hard bake or UV cure before the
-   implant (TXT-02).
-6. **Metrology.** Overlay to STI; CD sampled; after-develop
-   inspection.
+   implant.[^txt-02]
+6. **Metrology.** Overlay to STI; CD sampled; after-develop inspection.
 
 ## Machines typically used
 
 * **i-line stepper**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
-  Canon FPA-3000i) (TXT-05).
+  Canon FPA-3000i).[^txt-05]
 * **Coat/develop track**; **overlay tool**; **CD-SEM** for sampling.
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / scanner** (SKW-01). Strength: **strong** for
-  existence; assignment to `HVTPM` is an **inference** from the
-  0.38 µm rules.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius** (SKW-01).
-  Strength: strong for existence.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**
-  (SKW-01). Strength: strong.
+* **ASML i-line stepper / scanner**.[^skw-01] Strength: **strong** for
+  existence; assignment to `HVTPM` is an **inference** from the 0.38 µm
+  rules.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius**.[^skw-01] Strength:
+  strong for existence.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
+  Strength: strong.
 
 ## Resources required
 
-* **Positive i-line photoresist** (~1 µm); suppliers named in SEC-01:
-  Dow, JSR, Tokyo Ohka Kogyo.
+* **Positive i-line photoresist** (~1 µm); suppliers named in SkyWater's
+  S-1: Dow, JSR, Tokyo Ohka Kogyo.[^sec-01]
 * **HMDS**, **TMAH developer**, edge-bead remover, DI water, nitrogen.
-* **The HVTPM reticle** (generated from `chvtpm`, PDK-06).
+* **The HVTPM reticle** (generated from `chvtpm`).[^pdk-06]
 
 ## Related steps and cross-references
 
@@ -131,60 +129,142 @@ fab:
 
 ### Cross-check
 
-* **PDK-05** — SkyWater PDK Authors, *Masks* / `masks.csv` ("High Vt
-  PCh*, HVTPM, X").
-  <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
-  <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
-* **PDK-06** — SkyWater PDK Authors, `gds_layers.csv` (`hvtp` 78:44
-  "High-Vt LVPMOS implant"; `chvtpm` 97:0, 97:43, 97:42).
-  <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
-* **PDK-PERIPH** — SkyWater PDK Authors, *Periphery rules* (`hvtp`
-  function text; hvtp.1–hvtp.6; lvtn.9).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
-* **PDK-07** — SkyWater PDK Authors, *Device Details*
-  (`pfet_01v8_hvt`; `cap_var_hvt`).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
-* **PDK-03** — SkyWater PDK Authors, *Criteria & Assumptions*
-  (photoresist thickness).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
-* **SKW-01** — SkyWater Technology, *Facilities & Capabilities*,
-  accessed 2026-08-30.
-  <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-* **SEC-01** — SkyWater Technology, Inc., Form S-1, 2021-03-22.
-  <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+* SkyWater PDK, *Masks* page and `masks.csv` — "High Vt PCh*, HVTPM,
+  X".[^pdk-05]
+* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `hvtp` 78:44
+  "High-Vt LVPMOS implant"; `chvtpm` 97:0, 97:43, 97:42.[^pdk-06]
+* SkyWater PDK, *Periphery rules* — `hvtp` function text; hvtp.1–hvtp.6;
+  lvtn.9.[^pdk-periph]
+* SkyWater PDK, *Device Details* — `pfet_01v8_hvt`;
+  `cap_var_hvt`.[^pdk-07]
+* SkyWater PDK, *Criteria & Assumptions* — photoresist
+  thickness.[^pdk-03]
+* SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
+* SkyWater, Form S-1 (2021) — photoresist, gas and chemical
+  suppliers.[^sec-01]
 
 ### High-level understanding
 
-* **WIKI-MTCMOS** — Wikipedia, *Multi-threshold CMOS*.
-  <https://en.wikipedia.org/wiki/Multi-threshold_CMOS>
-* **WIKI-LITHO** — Wikipedia, *Photolithography*.
-  <https://en.wikipedia.org/wiki/Photolithography>
-* **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the
-  VLSI Era, Vol. 1*, 2nd ed., Lattice Press, 2000,
-  ISBN 978-0-9616721-6-4.
-  <https://openlibrary.org/isbn/9780961672164>
-* **TXT-05** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4*,
-  Lattice Press, 2002, ISBN 978-0-9616721-7-1.
-  <https://openlibrary.org/isbn/9780961672171>
+* Wikipedia, *Multi-threshold CMOS* — why several thresholds are offered
+  and how they are set.[^wiki-mtcmos]
+* Wikipedia, *Photolithography* — 365 nm i-line and CD =
+  k₁·λ/NA.[^wiki-litho]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+  lithography, resist stripping, wafer cleaning and implantation
+  chapters.[^txt-02]
+* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
+  tools, implanted-resist stripping and RTP of the 0.25–0.13 µm
+  generations.[^txt-05]
 
 ### Deep dive
 
-* **ITRS-03** — ITRS 2001, *Lithography*.
-  <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
-* **ITRS-04** — ITRS 2001, *Process Integration, Devices, and
-  Structures* ("Multiple Vt").
-  <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>
-* **WEI-1998** — L. Wei, Z. Chen, M. Johnson, K. Roy and V. De, "Design
-  and optimization of low voltage high performance dual threshold
-  CMOS circuits", *Proceedings of the 35th Design Automation
-  Conference*, pp. 489–494, 1998, DOI 10.1109/DAC.1998.724521 — the
-  circuit-level case for a second PMOS/NMOS threshold.
+* ITRS 2001, *Lithography* — exposure wavelength by node.[^itrs-03]
+* ITRS 2001, *Process Integration, Devices, and Structures* — "Multiple
+  Vt".[^itrs-04]
+* Wei et al., DAC 1998 — the circuit-level case for a second PMOS/NMOS
+  threshold.[^wei-1998]
+* Hook et al. (IBM), *IEEE TED* 2003 — threshold shifts from ions
+  scattered at an implant-resist edge, the reason for the `hvtp`
+  enclosure rules.[^hook-2003]
+* Sheu et al. (TSMC), *IEEE TED* 2006 — a compact model of the well-edge
+  proximity effect.[^sheu-2006]
+* Drennan, Kniffin and Locascio, CICC 2006 — designer-side consequences
+  of proximity effects for analogue layout.[^drennan-2006]
+* Mack, *Fundamental Principles of Optical Lithography* — k₁ and
+  resist-profile fundamentals behind the i-line assignment.[^mack-2007]
+* Levinson, *Principles of Lithography* — overlay budgets and tool
+  choice for non-critical layers.[^levinson-2005]
+* Helm and Zhou (Round Rock Research), US 2011/0006372 — multiple
+  thresholds made with masked Vt-adjust implants.[^pat-vt-rrr]
+* Krivokapic and Milic (AMD), US 6,238,982 — a multi-threshold
+  fabrication flow with channel-implant energies and doses.[^pat-vt-amd]
+* Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
+  voltage as a function of channel doping, what the extra mask
+  buys.[^taur-2009]
 
 ## Open questions
 
 * The PDK mask table also flags "HLow VT PCh Radio*, HVTRM" as used in
-  SKY130 (PDK-05), with a drawn layer `hvtr` (GDS 18:20, "High-Vt RF
-  transistor implant", PDK-06), yet the step list used in this reference has no
-  HVTRM step. Whether that mask is absent, folded into `HVTPM`, or
-  belongs to an option not in the baseline flow is unknown.
+  SKY130,[^pdk-05] with a drawn layer `hvtr` (GDS 18:20, "High-Vt RF
+  transistor implant"),[^pdk-06] yet the step list used in this
+  reference has no HVTRM step. Whether that mask is absent, folded into
+  `HVTPM`, or belongs to an option not in the baseline flow is unknown.
 * Resist thickness and exposure tool are inferred.
+
+<!-- footnotes -->
+
+[^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
+    <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
+[^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
+    `gds_layers.csv`, google/skywater-pdk repository.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
+[^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
+    PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
+    documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+[^wiki-mtcmos]: Wikipedia, *Multi-threshold CMOS*.
+    <https://en.wikipedia.org/wiki/Multi-threshold_CMOS>
+[^itrs-04]: International Technology Roadmap for Semiconductors, *2001
+    Edition: Process Integration, Devices, and Structures*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000, ISBN
+    978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^wiki-litho]: Wikipedia, *Photolithography*.
+    <https://en.wikipedia.org/wiki/Photolithography>
+[^itrs-03]: International Technology Roadmap for Semiconductors, *2001
+    Edition: Lithography*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+    Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
+    978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30.
+    <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
+    filed 2021-03-22.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^wei-1998]: L. Wei, Z. Chen, M. Johnson, K. Roy and V. De, "Design and
+    optimization of low voltage high performance dual threshold CMOS
+    circuits", *Proc. 35th Design Automation Conference*, pp. 489–494
+    (1998). <https://doi.org/10.1109/DAC.1998.724521>
+[^hook-2003]: T. B. Hook, J. Brown, P. Cottrell, E. Adler, D. Hoyniak,
+    J. Johnson and R. Mann, "Lateral Ion Implant Straggle and Mask
+    Proximity Effect", *IEEE Transactions on Electron Devices*
+    **50**(9), 1946–1951 (2003).
+    <https://doi.org/10.1109/TED.2003.815371>; open copy
+    <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>
+[^sheu-2006]: Y.-M. Sheu, K.-W. Su, S. Tian, S.-J. Yang, C.-C. Wang,
+    M.-J. Chen and S. Liu, "Modeling the Well-Edge Proximity Effect in
+    Highly Scaled MOSFETs", *IEEE Transactions on Electron Devices*
+    **53**(11), 2792–2798 (2006).
+    <https://doi.org/10.1109/TED.2006.884070>
+[^drennan-2006]: P. G. Drennan, M. Kniffin and D. Locascio,
+    "Implications of Proximity Effects for Analog Design", *Proc. IEEE
+    Custom Integrated Circuits Conference 2006*, pp. 169–176.
+    <https://doi.org/10.1109/CICC.2006.320869>
+[^mack-2007]: C. Mack, *Fundamental Principles of Optical Lithography:
+    The Science of Microfabrication*, Wiley, 2007, ISBN
+    978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
+[^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
+    SPIE Press, 2005, ISBN 978-0-8194-5660-1.
+    <https://doi.org/10.1117/3.601520>
+[^pat-vt-rrr]: M. Helm and X. Zhou (Round Rock Research), *Formation of
+    standard voltage threshold and low voltage threshold MOSFET
+    devices*, US 2011/0006372 A1, published 2011-01-13 (priority
+    2002-07-08). <https://patents.google.com/patent/US20110006372A1/en>
+[^pat-vt-amd]: Z. Krivokapic and O. Milic (AMD), *Multiple threshold
+    voltage semiconductor device fabrication technology*, US 6,238,982
+    B1, granted 2001-05-29.
+    <https://patents.google.com/patent/US6238982B1/en>
+[^taur-2009]: Y. Taur and T. H. Ning, *Fundamentals of Modern VLSI
+    Devices*, 2nd ed., Cambridge University Press, 2009, ISBN
+    978-0-521-83294-6. <https://doi.org/10.1017/CBO9781139195065>
