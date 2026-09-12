@@ -33,7 +33,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 035–047: SONOS tunnel/ONO, gate oxides — reviewed and merged 2026-09-12
 - [x] Steps 048–063: poly gate, resistor implants, gate etch — reviewed and merged 2026-09-12 (PMOS gate read as n⁺ poly; 020/024 aligned)
 - [x] Steps 064–075: tips, halos, tip RTA — reviewed and merged 2026-09-12
-- [r] Steps 076–088: spacers, source/drain, S/D RTA (branch `steps/076-088`, written 2026-09-12, under review)
+- [x] Steps 076–088: spacers, source/drain, S/D RTA — reviewed and merged 2026-09-12
 - [ ] Steps 089–106: PSG, contact silicide, local interconnect
 - [ ] Steps 107–117: contact, metal 1
 - [ ] Steps 118–134: via 1–2, metal 2–3 (part)
@@ -58,7 +58,7 @@ deep-dive entries per step page and twelve per category page
 - [ ] Machine pages + machine ↔ step index
 - [ ] Materials pages + material ↔ step index
 - [ ] Mask pages + mask ↔ step ↔ GDS index
-- [~] Glossary: add writers' term candidates and link {term}s on merged pages; inventory top-up for steps 064–075 (branch `topic/glossary-inventory`)
+- [x] Glossary: 144 terms, linked on first use across all written pages; inventory keyed for every label (748 entries) — merged 2026-09-12
 - [ ] References / bibliography
 
 ## Phase 4 — Review
