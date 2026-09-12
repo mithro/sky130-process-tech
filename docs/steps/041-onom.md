@@ -55,9 +55,9 @@ on resist-friendly oxide alone: the top surface is the blocking oxide
 other oxide for coating purposes. Its features are the tunnel windows
 plus an overlap — 0.410 µm windows[^pdk-periph] grown by a margin that
 is not public — so it is a relaxed layer, and we infer an i-line
-exposure as for {ref}`TUNM <step-035>`. Its overlay requirement is to
-the tunnel mask rather than to active, which is unusual: most layers
-align to the STI pattern or to poly.
+exposure as for {ref}`TUNM <step-035>`. Its critical overlay is, we
+infer, to the tunnel mask rather than to active, which is unusual: most
+layers align to the STI pattern or to poly.
 
 ## Why this step exists
 
@@ -113,16 +113,16 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
    (the PDK's generic 1.14 µm[^pdk-03]); etch selectivity, not implant
    stopping, sets the thickness here.
 4. **Exposure.** Through the ONO reticle on an i-line stepper (our
-   inference from feature size, as on {ref}`TUNM <step-035>`; the
-   2001 ITRS reserves 248 nm for the critical layers of the 130 nm
-   node[^itrs-03]). Overlay is measured to the `TUNM` layer, because
-   the island-to-window enclosure is the quantity that matters.
+   inference from feature size, as on {ref}`TUNM <step-035>`; the 2001
+   ITRS reserves 248 nm for the critical layers of the 130 nm
+   node[^itrs-03]). Overlay would be measured to the `TUNM` layer,
+   because the island-to-window enclosure is the quantity that matters.
    Overlay budgets and how alignment-mark placement limits them are
    treated by Levinson[^levinson-2005] and by van Haren et
    al.[^van-haren-2019]
 5. **Post-exposure bake, develop** in 2.38 % TMAH,[^txt-02] rinse,
    hard bake.
-6. **Inspection.** Overlay to `TUNM`, CD of the islands, and
+6. **Inspection.** Overlay to `TUNM` (inferred), CD of the islands, and
    after-develop inspection for resist residue on the open stack, which
    would leave nitride stringers after the etch.
 

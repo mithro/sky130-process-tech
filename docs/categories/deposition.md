@@ -110,13 +110,14 @@ freedom LPCVD lacks.[^lieberman-2005]
 High-density-plasma CVD combines an inductively coupled SiH₄/O₂/Ar
 plasma with an RF bias on the wafer, so that deposition and argon
 sputtering occur at once. Sputtering preferentially removes material
-from the corners of a gap, which would otherwise close first, so gaps
-of aspect ratio around 3:1 fill without voids in a single step. The
+from the corners of a gap, which would otherwise close first, so gaps of
+aspect ratio around 3:1 fill without voids in a single step. The
 deposition-to-sputter ratio is the key recipe knob, and the bias makes
 the process hot (wafer temperature is controlled by helium backside
-cooling on an electrostatic chuck). HDP-CVD oxide fills the STI
-trenches ({ref}`FILOX <step-011>`) and, in many aluminium processes,
-the gaps between metal lines before a capping oxide and CMP.[^txt-01][^txt-09]
+cooling on an electrostatic chuck). HDP-CVD oxide is the usual STI fill
+at this node and is the likely process behind {ref}`FILOX <step-011>`;
+in many aluminium processes it also fills the gaps between metal lines
+before a capping oxide and CMP.[^txt-01][^txt-09]
 
 ### PVD (sputtering)
 

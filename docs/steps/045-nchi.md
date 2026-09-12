@@ -26,13 +26,13 @@ implant, and the PDK says its cross-section "is identical to the std
 NMOS FET except for the VT adjust implants".[^pdk-07]
 
 The implant passes through the thick gate oxide grown at
-{ref}`GOX100 <step-043>` — roughly 10 nm of fresh thermal oxide — and
-through the resist windows; the 5 V and high-voltage regions are
-covered. That the oxide it goes through is about to be etched away is
-not incidental: Cypress notes that implanted oxide is degraded and
-loses more in every strip,[^pat-03] and an implant placed *before* the
-oxide strip leaves the damaged oxide to be discarded rather than kept
-as a gate dielectric.
+{ref}`GOX100 <step-043>` — roughly 10 nm of fresh thermal oxide (the
+PDK's 110 Å final value[^pdk-hv] less the later increment) — and through
+the resist windows; the 5 V and high-voltage regions are covered. That
+the oxide it goes through is about to be etched away is not incidental:
+Cypress notes that implanted oxide is degraded and loses more in every
+strip,[^pat-03] and an implant placed *before* the oxide strip leaves
+the damaged oxide to be discarded rather than kept as a gate dielectric.
 
 No public source gives the species, energy or dose. The Cypress
 embedded-SONOS patent describes the equivalent implant in its flow:
@@ -99,8 +99,8 @@ fab (SKY130's values are not public):
   ions/cm²".[^pat-vt-amd]
 * **Energy.** Tens of keV for BF₂ (10–100 keV in the Cypress
   patent[^pat-04]), set so that the peak lies just under the eventual
-  gate oxide after allowing for the ~10 nm screen oxide the ions must
-  cross — the screen also randomises the beam and reduces
+  gate oxide after allowing for the ~10 nm screen oxide[^pdk-hv] the
+  ions must cross — the screen also randomises the beam and reduces
   {term}`channelling`.[^txt-02]
 * **Dose.** Of order 10¹²–10¹³ cm⁻²: "1e12 cm⁻² to about 1e14
   cm⁻²"[^pat-04] and 1.0–2.5 × 10¹³ cm⁻²[^pat-vt-amd] in the patents.
@@ -297,3 +297,6 @@ fab (SKY130's values are not public):
     **50**(9), 1946–1951 (2003).
     <https://doi.org/10.1109/TED.2003.815371>; open copy
     <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>
+[^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
