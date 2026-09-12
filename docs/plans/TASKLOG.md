@@ -47,7 +47,7 @@ deep-dive entries per step page and twelve per category page
 `docs/steps/008-dni.md` is the converted exemplar.
 
 - [x] Citation style guide, checker and exemplar page — 2026-08-30
-- [ ] Convert step pages 001–007, 009–013 and expand deep-dive lists
+- [~] Convert step pages 001–007, 009–013 and expand deep-dive lists (branch `topic/footnotes-steps-001-013`)
 - [ ] Convert the ten category pages and expand deep-dive lists
 - [ ] Convert steps 014–034 (on branch `steps/014-034`, before merge)
 
@@ -77,3 +77,5 @@ deep-dive entries per step page and twelve per category page
 - 2026-08-30: Worktrees in `.worktrees/` (project-local); max two
   sub-agents concurrently; Sphinx + MyST chosen (see design doc).
 - 2026-08-30: `main` is pushed to `origin` after every merge.
+- 2026-09-12: Work resumed after a pause; worktrees recreated for the
+  surviving branches.
