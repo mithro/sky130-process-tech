@@ -22,18 +22,17 @@ only where the gate implant did not. The resist is stripped at
 
 Unlike `RPM`, this mask is not in the PDK's public mask table, which
 lists "Resistor Protect, RPM" but no reverse mask.[^pdk-05] That is not
-surprising: the two reticles are generated from the same drawn layer,
-`rpm` (GDS 86:20, "300 ohms/square polysilicon resistor
-implant"),[^pdk-06] one in each tone, and a designer never needs to
-know that two exist. The word "Rev" in the step list used in this
-reference is the only public trace of it. We infer that the reverse
-reticle is derived from `rpm` alone or from `rpm` less `urpm` (GDS
-79:20, "2000 ohms/square polysilicon resistor implant"[^pdk-06]),
-depending on whether the ultra-high-resistance bodies receive this
-implant as well as their own ({ref}`URPM <step-055>`,
-{ref}`UPRI <step-056>`); the PDK says only that for the 2000 Ω/sq
-resistors "a separate implant is used to set the sheet
-resistance".[^pdk-07]
+surprising if, as we infer, the two reticles are generated from the same
+drawn layer, `rpm` (GDS 86:20, "300 ohms/square polysilicon resistor
+implant"),[^pdk-06] one in each tone, and a designer never needs to know
+that two exist. The word "Rev" in the step list used in this reference
+is the only public trace of it. We infer that the reverse reticle is
+derived from `rpm` alone or from `rpm` less `urpm` (GDS 79:20, "2000
+ohms/square polysilicon resistor implant"[^pdk-06]), depending on
+whether the ultra-high-resistance bodies receive this implant as well as
+their own ({ref}`URPM <step-055>`, {ref}`UPRI <step-056>`); the PDK says
+only that for the 2000 Ω/sq resistors "a separate implant is used to set
+the sheet resistance".[^pdk-07]
 
 ## Step category
 
@@ -60,18 +59,18 @@ boundaries.[^mandurah-1981] A precision resistor therefore needs its
 own implant, at its own dose, into film that has received nothing
 else. `RRPM` provides the window for it.
 
-The mask also carries the resistor's matching budget. The head and
-tail of each fixed-width resistor are contacted by slot contacts, and
-the PDK models the device as an end resistance R₀ plus a body
-resistance R₁ = R_SH/W per micrometre.[^pdk-07] R₀ depends on where
-the doped body meets the n⁺ poly and the contact — that is, on the
-`rpm` edge — so the enclosure of the resistor by `rpm` (rpm.3,
-0.200 µm) and the ban on poly straddling `rpm` (rpm.8)[^pdk-periph]
-are what make R₀ reproducible. O'Dwyer and Kennedy compared the
-matching of different poly resistor films in a CMOS
-process,[^odwyer-2009] and Tsang et al. traced resistance variation
-across banks of high-value poly resistors to exactly such edge
-effects.[^tsang-2014]
+The mask also carries the resistor's matching budget. The head and tail
+of each fixed-width resistor are contacted by slot contacts, and the PDK
+models the device as an end resistance R₀ plus a body resistance R₁ =
+R_SH/W per micrometre.[^pdk-07] The PDK says R₀ is "dominated by the
+slot licons",[^pdk-07] but part of it is, we infer, set by where the
+doped body meets the n⁺ poly and the contact — that is, by the `rpm`
+edge — so the enclosure of the resistor by `rpm` (rpm.3, 0.200 µm) and
+the ban on poly straddling `rpm` (rpm.8)[^pdk-periph] are what make R₀
+reproducible. O'Dwyer and Kennedy compared the matching of different
+poly resistor films in a CMOS process,[^odwyer-2009] and Tsang et al.
+traced resistance variation across banks of high-value poly resistors to
+exactly such edge effects.[^tsang-2014]
 
 ## How it is typically performed
 

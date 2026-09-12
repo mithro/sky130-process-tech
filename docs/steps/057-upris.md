@@ -42,20 +42,20 @@ surface is the top of every gate.
 ## Why this step exists
 
 The resist must go, as always. Beyond that, the film that goes into
-{ref}`GATENIT <step-058>` must be free of organic residue and
-particles, because anything on it is buried under the cap and printed
-into the gate at {ref}`P1ME <step-062>`: a particle becomes a
-micro-mask that leaves a poly stringer, a residue becomes a local
-etch-rate change. The state of the surface also matters for the film
-that is deposited on it. A silicon nitride deposited by LPCVD or PECVD
-on silicon nucleates and adheres well; on a contaminated or rough
-surface it can blister or deposit non-uniformly, and a thin, uniform
-chemical oxide is generally a *better* base for a nitride cap than
-bare silicon, because it decouples the nitride's tensile stress from
-the film beneath.[^hu-1991][^temple-boyer-1998] The clean here is
+{ref}`GATENIT <step-058>` must be free of organic residue and particles,
+because anything on it is buried under the cap and printed into the gate
+at {ref}`P1ME <step-062>`: a particle becomes a micro-mask that leaves a
+poly stringer, a residue becomes a local etch-rate change. The state of
+the surface also matters for the film that is deposited on it. A silicon
+nitride deposited by LPCVD or PECVD on silicon nucleates and adheres
+well; on a contaminated or rough surface it can blister or deposit
+non-uniformly. A thin, uniform chemical oxide under the cap is harmless,
+and LPCVD nitride's tensile stress of order 1 GPa[^temple-boyer-1998] is
+one of the film-stress problems Hu reviews,[^hu-1991] so the surface it
+is deposited on should at least be clean and uniform. The clean here is
 therefore designed to leave that oxide, not remove it — an inference
-from the step order, since no public source describes the SKY130
-surface state before the cap.
+from the step order, since no public source describes the SKY130 surface
+state before the cap.
 
 Metallic contamination is the other concern. The three implants of
 the module have sputtered beam-line material onto the resist and the
@@ -129,8 +129,8 @@ clean, for a 200 mm, 130 nm-era fab:
   film), then {ref}`POC <step-059>`.
 * Companion strips: {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`;
   light-implant exemplar: {ref}`LVTNIS <step-016>`.
-* The other pre-furnace clean of the flow is the one before
-  {ref}`BOX <step-002>` (see {ref}`SMAT <step-001>`).
+* Another pre-furnace clean is the one before {ref}`BOX <step-002>` (see
+  {ref}`SMAT <step-001>`).
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 ## References

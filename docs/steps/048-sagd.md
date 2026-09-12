@@ -14,8 +14,8 @@
 
 `SAGD` deposits the film that becomes every transistor gate and every
 poly resistor in SKY130: a single blanket layer of amorphous silicon
-(a-Si), laid down by low-pressure chemical vapour deposition (LPCVD)
-from silane over the freshly grown gate oxides of
+(a-Si), laid down by low-pressure chemical vapour deposition (LPCVD) —
+from silane, we infer — over the freshly grown gate oxides of
 {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`, the ONO stack of
 the SONOS cells ({ref}`ONO <step-040>`) and the field oxide. The film is
 undoped as deposited; it receives its doping from the implants that
