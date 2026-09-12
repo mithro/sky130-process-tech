@@ -20,7 +20,15 @@ to:
 * **Deep dive** — papers, theses, roadmaps and conference proceedings.
 
 Entries carry a short key (for example `PDK-03`) so that other pages can
-refer to them unambiguously.
+refer to them unambiguously. The footnote labels on the step, category,
+landing and glossary pages are these keys in lower case (`PDK-03` →
+`[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
+written page has exactly one entry here; the inventory holds 612
+keyed entries as of 2026-09-12, and `tools/check_refs.py` keeps the
+page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
+8.8, 8.9 and 8.10 were added to cover the sources the writers of the
+step and category pages introduced; a "Label ↔ key" note marks the few
+cases where one source has two keys.
 
 :::{note}
 Everything in this inventory is publicly available. Where a public
