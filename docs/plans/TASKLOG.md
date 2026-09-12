@@ -58,7 +58,7 @@ deep-dive entries per step page and twelve per category page
 - [ ] Machine pages + machine ↔ step index
 - [ ] Materials pages + material ↔ step index
 - [ ] Mask pages + mask ↔ step ↔ GDS index
-- [ ] Glossary
+- [~] Glossary: add writers' term candidates and link {term}s on merged pages; inventory top-up for steps 064–075 (branch `topic/glossary-inventory`)
 - [ ] References / bibliography
 
 ## Phase 4 — Review
