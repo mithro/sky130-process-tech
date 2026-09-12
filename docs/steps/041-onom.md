@@ -224,8 +224,8 @@ and stripped there (no separate strip step is listed).
 * Whether the ONO layer is printed on the i-line or {term}`DUV` tools is an
   inference from feature size.
 * Whether an ARC is used under the ONO-mask resist, and if so which
-  kind, is not public; the step list used in this reference has no
-  separate ARC etch here.
+  kind, is an open question; this page follows the step list used in
+  this reference, which has no separate ARC etch here.
 * Reticle tone and the resist thickness for this layer are not public.
 
 <!-- footnotes -->
