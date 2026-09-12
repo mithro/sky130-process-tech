@@ -92,9 +92,10 @@ fab, as on {ref}`RRPM <step-052>`:
    relaxed geometry (category page[^wiki-litho]); no SkyWater statement
    assigns layers to tools.
 4. **Alignment.** To the {term}`STI`/active marks of {ref}`FOM <step-004>`,
-   like the other two resistor masks; the resistor body will later be
-   cut from the poly by {ref}`P1M <step-061>`, so the window must
-   enclose the drawn body with {term}`overlay` margin on every side.
+   like the other two resistor masks (inferred; the alignment tree is not
+   public); the resistor body will later be cut from the poly by
+   {ref}`P1M <step-061>`, so the window must enclose the drawn body with
+   {term}`overlay` margin on every side.
 5. **Post-exposure bake, develop** (TMAH[^wiki-tmah]), rinse, hard
    bake.
 6. **Inspection.** Overlay to active; window presence by optical
@@ -202,10 +203,10 @@ reading is used throughout these pages and is marked as an inference.
 
 ## Open questions
 
-* Whether `URPM` is a separate reticle from `RRPM`, or whether the
-  step list's two names reflect one reticle with two implant recipes,
-  is not public; the PDK's "separate implant" and two drawn layers
-  support two reticles.
+* Whether `URPM` is a separate reticle from `RRPM`, or whether the two
+  names in the step list used in this reference reflect one reticle
+  with two implant recipes, is not public; the PDK's "separate
+  implant" and two drawn layers support two reticles.
 * Whether the `urpm` bodies receive only {ref}`UPRI <step-056>` (the
   reading used here) is inferred.
 * Whether the ultra-high resistor is a process option in the sense of

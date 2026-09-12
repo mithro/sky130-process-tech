@@ -13,10 +13,10 @@
 ## What this step is
 
 `PDIS` removes the photoresist patterned at {ref}`PSDM <step-081>`
-after it has masked the two p-type implants {ref}`PSDI <step-082>`
-and {ref}`2PSDI <step-083>`, and cleans the wafer so that the N⁺
-source/drain mask {ref}`NSDM <step-085>` can be coated on it. It is
-the first of the two source/drain strips (the other is
+after it has masked the two p-type implants {ref}`PSDI <step-082>` and
+{ref}`2PSDI <step-083>` (on our reading), and cleans the wafer so that
+the N⁺ source/drain mask {ref}`NSDM <step-085>` can be coated on it.
+It is the first of the two source/drain strips (the other is
 {ref}`NSDIS <step-087>`), and the two of them are, with the poly
 implant strip {ref}`P1IS <step-051>`, the hardest strips in the front
 end: the resist has taken a dose of the order of 10¹⁵ cm⁻²

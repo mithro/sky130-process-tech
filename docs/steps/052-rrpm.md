@@ -91,14 +91,15 @@ An industry-generic implant-mask litho sequence, as on
    i-line rests on its 1.27 µm / 0.84 µm geometry, far above the
    i-line limit (category page, {term}`CD` = {term}`k₁ <k1>`·λ/{term}`NA`[^wiki-litho]).
 4. **Alignment.** To the {term}`STI`/active marks of {ref}`FOM <step-004>`,
-   as for `RPM`, because the poly is still unpatterned. Since both
-   `RPM` and `RRPM` align to the same reference, their mutual {term}`overlay`
-   is the sum of two registrations — the reason the drawn resistor is
-   enclosed by `rpm` with margin[^pdk-periph] rather than butting the
-   n⁺ region. Any gap between the `RPM` island and the `RRPM` window
-   leaves an undoped strip of poly; any overlap leaves a strip doped
-   both n⁺ and p, and Hook et al. show how lateral {term}`straggle` at a
-   resist edge blurs the boundary further.[^hook-2003]
+   as for `RPM`, because the poly is still unpatterned (inferred; the
+   alignment tree is not public). Since both `RPM` and `RRPM` align to the
+   same reference, their mutual {term}`overlay` is the sum of two
+   registrations — the reason the drawn resistor is enclosed by `rpm` with
+   margin[^pdk-periph] rather than butting the n⁺ region. Any gap between the
+   `RPM` island and the `RRPM` window leaves an undoped strip of poly; any
+   overlap leaves a strip doped both n⁺ and p, and Hook et al. show how
+   lateral {term}`straggle` at a resist edge blurs the boundary
+   further.[^hook-2003]
 5. **Post-exposure bake, develop** (2.38 % TMAH[^wiki-tmah]), rinse,
    hard bake or UV cure.
 6. **Inspection.** Overlay to active; open-window check by optical

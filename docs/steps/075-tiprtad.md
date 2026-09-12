@@ -153,8 +153,8 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 
 ## Resources required
 
-* **Nitrogen and argon** (process ambient);[^skw-01] **oxygen** if a
-  minor addition is used.
+* **Nitrogen and argon** (likely ambient; SkyWater's list gives the
+  tool's gases);[^skw-01] **oxygen** if a minor addition is used.
 * **Tungsten-halogen lamps, quartz chamber/window, edge rings**;
   pyrometer calibration and thermocouple wafers (category page).
 * **Cooling water and CDA/N₂** for lamp and chamber cooling.[^ag-8108]

@@ -15,11 +15,12 @@
 `NSDIS` removes the photoresist patterned at {ref}`NSDM <step-085>`
 after the N⁺ source/drain implant {ref}`NSDI <step-086>`, and cleans
 the wafer for the source/drain activation anneal {ref}`RTAD <step-088>`
-that follows directly. It is the second of the two source/drain
-strips and the last resist strip of the front end before the first
-anneal of the module; it is therefore also the *pre-anneal clean*,
-and anything it leaves behind — organic residue, metals from the
-implanter, arsenic-bearing crust — goes into the RTA with the wafer.
+that follows directly. It is the second of the two source/drain strips
+and the last resist strip of the front end before the first anneal of
+the module; it is therefore also the *pre-anneal clean*, and anything
+it leaves behind — organic residue, metals from the implanter,
+arsenic-bearing crust (the species we infer on {ref}`NSDI <step-086>`)
+— goes into the RTA with the wafer.
 
 The resist it removes has taken an arsenic dose of the order of
 10¹⁵ cm⁻² (industry-typical for a source/drain[^txt-01]). Arsenic is
@@ -36,30 +37,31 @@ needed to cap the anneal.
 ## Step category
 
 `NSDIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-high-dose-implant* type, the twin of {ref}`PDIS <step-084>`.
-The category page explains the crust and the popping it causes when
-the wafer is heated quickly ("build[s] up pressure beneath the
-implant-hardened surface layer"[^pat-strip-mosel]); at an arsenic
-dose of 10¹⁵ cm⁻² the crust is at its worst. What distinguishes this
-strip from `PDIS` is what follows it: not another resist coat but a
-1000 °C-class anneal, so the wet clean must leave the surface as
-free of metals as a pre-gate-oxidation clean would, and must do so
-without removing the oxide the anneal needs.
+*post-high-dose-implant* type, the twin of {ref}`PDIS <step-084>`. The
+category page explains the crust and the popping it causes when the
+wafer is heated quickly ("build[s] up pressure beneath the
+implant-hardened surface layer"[^pat-strip-mosel]); at an arsenic dose
+of 10¹⁵ cm⁻² the crust is at its worst. What distinguishes this strip
+from `PDIS` is what follows it: not another resist coat but a
+1000 °C-class anneal (industry-typical; see {ref}`RTAD <step-088>`),
+so the wet clean must leave the surface as free of metals as a
+pre-gate-oxidation clean would, and must do so without removing the
+oxide the anneal needs.
 
 ## Why this step exists
 
-Two things must be true before {ref}`RTAD <step-088>`. The resist
-must be entirely gone — organic residue carbonises in the anneal and
+Two things must be true before {ref}`RTAD <step-088>`. The resist must
+be entirely gone — organic residue carbonises in the anneal and
 becomes an un-removable defect, and a popped flake of crust on a
-source/drain region masks nothing at this point but becomes a
-particle under the sacrificial PSG ({ref}`PSG <step-089>`) and the
-polish that follows. And the wafer must be clean of metals: the
-implanter's beam-line and disc sputter metal onto the resist and
-the exposed oxide, and at 1000 °C those metals diffuse into the
-silicon and the junctions that have just been made. Fujimura et al.
-showed how sodium contamination is kept out of downstream
-ashing,[^fujimura-1994] and Kern's review explains why an
-SC-1/SC-2-type clean follows the strip.[^kern-1990]
+source/drain region masks nothing at this point but becomes a particle
+under the sacrificial PSG ({ref}`PSG <step-089>`) and the polish that
+follows. And the wafer must be clean of metals: the implanter's
+beam-line and disc sputter metal onto the resist and the exposed
+oxide, and at a typical 1000 °C those metals diffuse into the silicon
+and the junctions that have just been made. Fujimura et al. showed how
+sodium contamination is kept out of downstream ashing,[^fujimura-1994]
+and Kern's review explains why an SC-1/SC-2-type clean follows the
+strip.[^kern-1990]
 
 The arsenic itself is a consideration. The crust contains implanted
 arsenic, the ash effluent and the wet-bench waste therefore carry it,

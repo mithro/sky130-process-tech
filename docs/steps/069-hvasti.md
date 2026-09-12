@@ -109,8 +109,8 @@ fab (SKY130's energy and dose are not public):
   penetration"[^pdk-03] allows for ions that pass through the resist
   edge. Outgassing and charging are reduced with a thin
   film,[^lee-1996] but an electron shower and electrostatic chuck ("ESC
-  chuck, E shower" on SkyWater's medium-current tool) are still
-  used;[^skw-01] platen cooling is industry practice.
+  chuck, E shower" on SkyWater's medium-current tool) are, we infer,
+  still used;[^skw-01] platen cooling is industry practice.
 * **Anneal.** None here; activation at {ref}`TIPRTAD <step-075>`.
 * **Monitoring.** Thermal-wave measurement on monitor
   wafers;[^smith-1985] tilt-angle verification is the specific control

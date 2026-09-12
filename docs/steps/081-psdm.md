@@ -13,14 +13,13 @@
 ## What this step is
 
 `PSDM` is the P⁺ source/drain implant mask. It coats the wafer — now
-carrying spacers, the nitride cut and the fresh
-{ref}`SPOX <step-080>` oxide — with photoresist, exposes it through
-the P⁺ implant reticle and develops it, leaving resist windows over
-every region that is to receive the heavy p-type implants of
-{ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>`. The resist is
-stripped at {ref}`PDIS <step-084>`. It is the first of the two
-source/drain masks; its complement, {ref}`NSDM <step-085>`, follows
-with the N⁺ implant.
+carrying spacers, the nitride cut and the fresh {ref}`SPOX <step-080>`
+oxide — with photoresist, exposes it through the P⁺ implant reticle
+and develops it, leaving resist windows over every region that is to
+receive the heavy p-type implants of {ref}`PSDI <step-082>` and
+{ref}`2PSDI <step-083>` (on our reading). The resist is stripped at
+{ref}`PDIS <step-084>`. It is the first of the two source/drain masks;
+its complement, {ref}`NSDM <step-085>`, follows with the N⁺ implant.
 
 The PDK documents the layer thoroughly. The mask table lists "P+
 Implant, PSDM" as used in SKY130;[^pdk-05] the drawn layer is `psdm`

@@ -18,12 +18,12 @@ process — the n⁺ taps to the N-wells, the NPN emitter and collector
 contacts, the PNP base contacts, the N⁺ diffusion resistors and the
 n-side of the P-well diodes.[^pdk-07] It goes through the resist
 windows of {ref}`NSDM <step-085>`, through the thin
-{ref}`SPOX <step-080>` oxide, and is self-aligned to the nitride
-spacers, so that the heavy junction stands a spacer-width off the
-gate edge and joins the shallow arsenic {term}`extension` implanted
-before the spacer ({ref}`ASTI <step-065>`, {ref}`HVASTI <step-069>`,
-{ref}`LDASTI <step-072>`). The resist is stripped at
-{ref}`NSDIS <step-087>` and the dopant activated at
+{ref}`SPOX <step-080>` oxide (on our reading), and is self-aligned to
+the nitride spacers, so that the heavy junction stands a spacer-width
+off the gate edge and joins the shallow arsenic {term}`extension`
+implanted before the spacer ({ref}`ASTI <step-065>`,
+{ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`). The resist is
+stripped at {ref}`NSDIS <step-087>` and the dopant activated at
 {ref}`RTAD <step-088>`.
 
 Unlike the p-type side, the n-type side has a single implant in the

@@ -86,8 +86,8 @@ also take this tip on their source side; the PDK's rule that `hvntm`
 "must enclose ESD_nwell_tap inside hvi" (hvntm.7)[^pdk-periph] shows
 that the layer is used on more than plain transistors.
 
-Cypress, whose S8 process is the ancestor of SKY130, patented a
-"high-voltage device with self-aligned graded junctions" in a CMOS
+Cypress, whose S8 process is the ancestor of SKY130,[^pdk-02] patented
+a "high-voltage device with self-aligned graded junctions" in a CMOS
 flow;[^pat-hv-graded-cyp] the patent's inventor is also a named
 inventor on the embedded-SONOS patent used throughout this reference,
 which is circumstantial evidence that a graded-junction HV device of
@@ -117,11 +117,11 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
    above i-line resolution ({term}`k₁ <k1>` ≈ 1.2 at {term}`NA` 0.6);[^wiki-litho] with ITRS
    2001 reserving 248 nm for critical layers,[^itrs-03] we infer an
    i-line exposure.
-4. **Alignment.** To poly. The {term}`overlay` requirement comes from the
-   shadowing geometry: the 0.232 µm "HVNTM shadowing" and 0.1 µm
-   minimum tip-opening width[^pdk-03] fix how far a resist edge must
-   stand from a gate for the tilted beam to reach it on the intended
-   side.
+4. **Alignment.** To poly (inferred; the alignment tree is not public).
+   The {term}`overlay` requirement comes from the shadowing geometry: the
+   0.232 µm "HVNTM shadowing" and 0.1 µm minimum tip-opening
+   width[^pdk-03] fix how far a resist edge must stand from a gate for
+   the tilted beam to reach it on the intended side.
 5. **Develop** in 0.26 N TMAH,[^txt-02] rinse, dry; a post-develop bake
    or UV cure to stabilise the thin film against the implant (industry
    practice).[^txt-02]
@@ -250,6 +250,9 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 
 <!-- footnotes -->
 
+[^pdk-02]: SkyWater PDK Authors, *Background*, SkyWater SKY130 PDK
+    documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/background.html>
 [^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,

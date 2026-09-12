@@ -78,16 +78,16 @@ temperature and time a compromise, as the category page explains:
   era,[^fiory-2002] and Gerritsen the spike anneal as reduced-budget
   RTP.[^gerritsen-2000]
 * **Activation and deactivation.** Above the solid solubility the
-  dopant clusters or precipitates and becomes inactive — Nobili et
-  al. for arsenic[^nobili-1983] — and arsenic that was over-activated
-  by a fast anneal relaxes during later thermal steps, injecting
+  dopant clusters or precipitates and becomes inactive — Nobili et al.
+  for arsenic[^nobili-1983] — and arsenic that was over-activated by a
+  fast anneal relaxes during later thermal steps, injecting
   interstitials as it does so.[^rousseau-1994][^luning-1992] The
   highest activation is obtained by annealing hot and fast; the most
-  *stable* activation may not be, which is one reading of why a
-  second source/drain anneal ({ref}`RTAD2 <step-092>`) exists in this
-  flow (inference from the step list; no public source explains it).
-  Camillo-Castillo et al. studied what a two-step anneal does to
-  end-of-range defects.[^camillo-castillo-2002]
+  *stable* activation may not be, which is one reading of why a second
+  source/drain anneal ({ref}`RTAD2 <step-092>`) exists in this flow
+  (inference from the step order used in this reference; no public
+  source explains it). Camillo-Castillo et al. studied what a two-step
+  anneal does to end-of-range defects.[^camillo-castillo-2002]
 
 Josse et al. describe optimising the spike anneal for a 0.13 µm CMOS
 platform with both digital and analogue devices,[^josse-2002] and
@@ -185,8 +185,8 @@ An industry-generic source/drain activation anneal for a 200 mm,
 
 ## Resources required
 
-* **Nitrogen and argon** as process ambient;[^skw-01] **oxygen** if a
-  minor addition is used.
+* **Nitrogen and argon** (likely ambient; SkyWater's list gives the
+  tool's gases);[^skw-01] **oxygen** if a minor addition is used.
 * **Tungsten-halogen lamps, quartz window and chamber, edge rings**;
   pyrometer calibration and thermocouple wafers (category page).
 * **Cooling water and CDA/N₂** for lamp and chamber cooling
