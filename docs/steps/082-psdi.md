@@ -128,7 +128,7 @@ fab (SKY130's recipe is not public):
   the profile in the way Park et al. found paradoxical[^park-1991]
   and Lim et al. modelled.[^lim-1993]
 * **Tilt.** 0°, per the PDK's "High current" implant-angle entry.[^pdk-03]
-  A zero-tilt implant beside a 0.2 µm-tall capped gate with spacers
+  A zero-tilt implant beside a roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03]) capped gate with spacers
   avoids the shadowing of tilted source/drain implants that Krieger
   et al. analysed,[^krieger-1989] and it needs the screen oxide and
   the self-amorphisation of BF₂ (or a pre-amorphisation) to control

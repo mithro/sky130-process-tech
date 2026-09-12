@@ -120,12 +120,12 @@ fab (SKY130's recipe is not public):
 * **Tilt.** 0°, per the PDK's "High current" implant-angle
   entry;[^pdk-03] the amorphisation makes channelling a smaller
   concern than for boron, and zero tilt avoids the shadowing beside
-  0.2 µm-tall capped gates that Krieger et al. analysed for tilted
+  roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03]) capped gates that Krieger et al. analysed for tilted
   arsenic source/drain implants.[^krieger-1989] On a spinning-disc
   batch tool the effective angle still varies across the
   disc.[^jones-1996]
 * **Wafer handling.** Batch spinning-disc end station with wafer
-  cooling; the beam power at several mA heats the resist
+  cooling; the beam power at several mA (typical) heats the resist
   (Smith,[^smith-1983] Romig et al.[^romig-1996]). Charging control
   by plasma flood gun is critical for an arsenic implant on a
   resist-covered wafer — Lukaszek, Reno and Bammi measured the

@@ -140,10 +140,11 @@ An industry-generic well/channel activation anneal for a 200 mm,
   "Programmable, 1 – 180°C per second", "2 banks of 14 lamps" with
   "10-zone lamp control", pyrometer or thermocouple sensing, wafer sizes
   to 8 inches, and "Implant annealing" among the listed
-  applications[^ag-8800] (the reseller's specification PDF, whose
-  operating specifications are those of the Heatpulse 4100 of the same
-  family, gives the same 400–1200 °C range, a maximum ramp of 150 °C/s
-  and ±5 °C uniformity across a 150 mm wafer at 1150 °C).[^ag-8108]
+  applications[^ag-8800] (the reseller's family specification PDF gives, in its
+  Heatpulse 8108 section, the same 400–1200 °C range, a programmable
+  1–180 °C/s ramp-up, a maximum ramp-down of 150 °C/s and ±5 °C
+  uniformity across a 150 mm wafer at 1150 °C; its Heatpulse 4100
+  section differs: 400–1300 °C, 10–200 °C/s ramp-up).[^ag-8108]
 * **Aviza furnaces.** SkyWater's facilities page states "Furnaces are
   all made by Aviza"[^skw-01] with "Ar anneal to 1150C" and "N2 anneal
   to 1150C" — the batch alternative if the fab chose a furnace well
@@ -188,8 +189,8 @@ An industry-generic well/channel activation anneal for a 200 mm,
 * SemiStar, *AG Associates Heatpulse 8800 / 8808* reseller page —
   temperature range, ramp rates, lamp banks and applications.[^ag-8800]
 * SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
-  Specifications* (PDF) — operating specifications and facility table of
-  the Heatpulse 4100.[^ag-8108]
+  Specifications* (PDF) — operating specifications and facility tables
+  of the Heatpulse 4100 and 8108.[^ag-8108]
 
 ### High-level understanding
 
@@ -242,8 +243,8 @@ An industry-generic well/channel activation anneal for a 200 mm,
   and {ref}`PWDEIS <step-033>`).
 * The expansion of `RTAI` ("RTA, implant"?) is our reading of the code.
 * The reseller's specification PDF cited for the Heatpulse
-  family[^ag-8108] documents the operating specifications of the
-  Heatpulse 4100, not of the 8808 itself; the two share a family but the
+  family[^ag-8108] documents the Heatpulse 4100, 8108, 8800 and 8800i, not the 8808
+  itself; the two share a family but the
   8808's own data sheet is not public.
 
 <!-- footnotes -->
@@ -283,8 +284,8 @@ An industry-generic well/channel activation anneal for a 200 mm,
 [^wiki-furnace]: Wikipedia, *Furnace anneal*.
     <https://en.wikipedia.org/wiki/Diffusion_furnace>
 [^ag-8108]: SemiStar Corp., *AG Associates Heatpulse 4100 / 8108 / 8800
-    / 8800i Specifications* (reseller PDF; the operating specifications
-    documented are those of the Heatpulse 4100), accessed 2026-08-30.
+    / 8800i Specifications* (reseller PDF; operating specifications for
+    the Heatpulse 4100 and 8108), accessed 2026-08-30.
     <https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30.

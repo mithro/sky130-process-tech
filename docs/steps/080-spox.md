@@ -143,7 +143,7 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
   for assignment to this step.
 * **"C1" PECVD silane oxide** — "PECVD silane oxide/nitride/
   oxynitride, C1".[^skw-01] Strength: strong for existence.
-* **Aviza furnaces, LPCVD silane oxide** — "LPCVD oxide" is among the
+* **Aviza furnaces, LPCVD silane oxide** — "LPCVD silane oxide" is among the
   furnace processes.[^skw-01] Strength: strong for existence.
 * Which of the three deposits the spacer oxide is not public; the
   thermal-budget argument favours a PECVD film (inference).

@@ -116,7 +116,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
    and the deep source/drain implants (BF₂ or boron at tens of keV,
    typical industry values[^txt-02]) are stopped by a small fraction
    of that. The thickness is set less by stopping power than by
-   coverage over 0.2 µm-tall capped gates and by the resist's need to
+   coverage over roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03]) capped gates and by the resist's need to
    survive a 10¹⁵ cm⁻² beam: Smith's early treatment of wafer
    cooling and resist masking in implantation,[^smith-1983] and
    Romig et al.'s study of resist burning in a high-current

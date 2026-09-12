@@ -105,7 +105,7 @@ contacted at all.
 An industry-generic cut-layer lithography sequence for a 200 mm,
 130 nm-era fab (SKY130's recipe is not public):
 
-1. **Surface preparation.** The wafer is topographic: 0.2 µm-tall
+1. **Surface preparation.** The wafer is topographic: roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03])
    capped poly lines with nitride spacers on a planar oxide. A
    dehydration bake and HMDS prime on the track.[^txt-02]
 2. **Resist and BARC.** A 0.27 µm opening over reflective, stepped
