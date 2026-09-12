@@ -406,7 +406,7 @@ post-CMP) targets that the deposition steps below must hit.
     <https://doi.org/10.1002/0471724254>
 [^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
     Manufacturing Technology*, 2nd ed., CRC Press, 2007,
-    ISBN 978-1-57444-675-3. <https://doi.org/10.1201/9781420017663>
+    ISBN 978-1-57444-675-3. <https://openlibrary.org/isbn/9781574446753>
 [^wiki-em]: Wikipedia, *Electromigration*.
     <https://en.wikipedia.org/wiki/Electromigration>
 [^blech-1976]: I. A. Blech, "Electromigration in thin aluminum films on

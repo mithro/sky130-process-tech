@@ -243,8 +243,8 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
   resist outgassing under the beam.[^roche-1985]
 * Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — a
   low-temperature dry strip after high-dose implantation.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — a two-stage ash for the
-  hardened top layer of implanted resist.[^pat-strip-tsmc]
+* Chan, Chiu and Tao (TSMC), US 2004/0214448 — a one-step CₓHᵧF_z/O₂
+  plasma ash for the carbonised crust of implanted resist.[^pat-strip-tsmc]
 * Nakayama et al. (ULVAC), US 5,795,831 — cold stripping and cleaning
   processes.[^pat-strip-ulvac]
 * Kamarehi and Simpson (Fusion Systems), US 5,498,308 — a downstream
@@ -366,4 +366,4 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>
 [^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
     Manufacturing Technology*, 2nd ed., CRC Press, 2007,
-    ISBN 978-1-57444-675-3. <https://doi.org/10.1201/9781420017663>
+    ISBN 978-1-57444-675-3. <https://openlibrary.org/isbn/9781574446753>

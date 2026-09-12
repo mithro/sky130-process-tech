@@ -336,7 +336,7 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
     <https://en.wikipedia.org/wiki/Shallow_trench_isolation>
 [^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
     Manufacturing Technology*, 2nd ed., CRC Press, 2007,
-    ISBN 978-1-57444-675-3. <https://doi.org/10.1201/9781420017663>
+    ISBN 978-1-57444-675-3. <https://openlibrary.org/isbn/9781574446753>
 [^asm-a400]: ASM International, *ASM International N.V. launches A400
     DUO vertical furnace system*, press release, 2019-11-11.
     <https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>

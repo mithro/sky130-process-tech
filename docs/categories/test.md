@@ -374,4 +374,4 @@ device.
     <https://store-us.semi.org/products/mf008400-semi-mf84-test-method-for-measuring-resistivity-of-silicon-wafers-with-an-in-line-four-point-probe>
 [^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
     Manufacturing Technology*, 2nd ed., CRC Press, 2007,
-    ISBN 978-1-57444-675-3. <https://doi.org/10.1201/9781420017663>
+    ISBN 978-1-57444-675-3. <https://openlibrary.org/isbn/9781574446753>

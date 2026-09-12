@@ -306,7 +306,7 @@ alignment corrections.
 
 ### Deep dive
 
-* Lin, *J. Micro/Nanolith. MEMS MOEMS* 2002 — the k₁ coefficient and
+* Lin, *J. Micro/Nanolith. MEMS MOEMS* 2002 — the k₁ and k₃ coefficients and
   the nonparaxial scaling equations for resolution and depth of
   focus.[^lin-2002]
 * Lin, *Proc. SPIE* 1986 — where the resolution is lost between the

@@ -348,7 +348,7 @@ The substrate category has no process tool in the fab itself; the
     <https://doi.org/10.1109/T-ED.1978.19250>
 [^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
     Manufacturing Technology*, 2nd ed., CRC Press, 2007,
-    ISBN 978-1-57444-675-3. <https://doi.org/10.1201/9781420017663>
+    ISBN 978-1-57444-675-3. <https://openlibrary.org/isbn/9781574446753>
 [^ocw-6774]: MIT OpenCourseWare, *6.774 Physics of Microfabrication:
     Front End Processing*, Fall 2004 (lecture notes on oxidation,
     diffusion, implantation and annealing).
