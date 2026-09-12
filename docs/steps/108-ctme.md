@@ -169,10 +169,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   O2".[^skw-01] Both carry fluorocarbons that can etch oxide;
   strength: **weak** for assignment to the contact etch (the DPS II
   line is labelled "gate, trench, W/WN"[^skw-01]).
-* **Lam 2300 Exelan** appears only in unverified job-board snippets
-  recorded in the public-sources inventory (§4 leads); strength:
-  **weak**, unverified. Lam's own 10-K lists the Exelan
-  line.[^lam-10k]
+   then a solvent or semi-aqueous clean ("EKS265, EKC270 solvents" on
+   SkyWater's wet-bench list,[^skw-01] EKC265/270-class; SkyWater
+   writes "EKS265") to remove the fluorocarbon
 * **Strip and clean — Gasonics PEP, Iridia, Mattson Aspen2; Akrion
   Gamma wet bench; batch rotational tools with "EKS265, EKC270
   solvents"; SEZ223 / DaVinci.**[^skw-01] Strength: strong for
