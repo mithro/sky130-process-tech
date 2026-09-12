@@ -74,8 +74,7 @@ micrometer";[^wiki-implant] a 130 nm process spans a wider window, from
 a few keV for source/drain extensions to over 1 MeV for deep n-wells.
 Because BF₂⁺ dissociates on impact and only 11/49 of its energy is
 carried by the boron atom, BF₂ is the way to implant boron shallowly
-with a beam energy the tool can control well (Plummer, Deal and Griffin,
-ch. 8).
+with a beam energy the tool can control well.[^txt-01]
 
 ### Channelling
 

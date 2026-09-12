@@ -248,15 +248,16 @@ values.[^steigerwald-1997][^zantye-2004]
   oxidiser.[^stein-1999]
 * Lustig, Saenger and Tong (IBM), US 5,433,651 — in-situ optical
   endpoint detection through a window in the platen.[^pat-cmp-endpoint-ibm]
-* Beyer et al. (IBM), US 4,789,648 — coplanar multi-level
-  metal/insulator films by polishing.[^pat-cmp-ibm-1988]
+* Chow et al. (IBM), US 4,789,648 — coplanar multi-level
+  metal/insulator films by polishing, with lines and stud vias formed
+  together.[^pat-cmp-ibm-1988]
 * Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
   Materials* — chapters on oxide, tungsten and STI CMP, pads and
   slurries.[^oliver-2004]
 * Li (ed.), *Microelectronic Applications of Chemical Mechanical
   Planarization* — including a chapter on STI CMP.[^li-2007]
-* MIT OpenCourseWare 6.152J — lecture notes on planarisation and
-  CMP.[^ocw-6152]
+* MIT OpenCourseWare 6.152J — lecture notes on the deposition and etch
+  steps that CMP planarises (no dedicated CMP lecture).[^ocw-6152]
 
 <!-- footnotes -->
 
@@ -355,9 +356,11 @@ values.[^steigerwald-1997][^zantye-2004]
     apparatus for chemical-mechanical polishing*, US 5,433,651 A,
     granted 1995-07-18.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5433651>
-[^pat-cmp-ibm-1988]: K. D. Beyer et al. (IBM), *Method for producing
-    coplanar multi-level metal/insulator films on a substrate*, US
-    4,789,648 A, granted 1988.
+[^pat-cmp-ibm-1988]: M. M. Chow, J. E. Cronin, W. L. Guthrie, C. W. Kaanta
+    et al. (IBM), *Method for producing coplanar multi-level
+    metal/insulator films on a substrate and for forming patterned
+    conductive lines simultaneously with stud vias*, US 4,789,648 A,
+    granted 1988-12-06.
     <https://patents.google.com/patent/US4789648A/en>
 [^oliver-2004]: M. R. Oliver (ed.), *Chemical-Mechanical Planarization
     of Semiconductor Materials*, Springer Series in Materials Science
