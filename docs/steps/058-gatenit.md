@@ -242,8 +242,9 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 * The meaning of the PDK's "poly cap after SPE" (0.2 µm) entry is our
   reading; the table does not define it.
 * Whether the gate is ever doped through or around the cap by later
-  implants — the n⁺/p⁺ PMOS-gate question of {ref}`P1I <step-050>` —
-  is not public.
+  implants is not public; with a 0.2 µm cap[^pdk-03] and no nitride cut
+  over gates (npc.4)[^pdk-periph] we read the gates as keeping the n⁺
+  doping of {ref}`P1I <step-050>` on both NMOS and PMOS.
 
 <!-- footnotes -->
 
