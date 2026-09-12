@@ -1211,6 +1211,517 @@ All verified on 2026-08-30:
 * *SONOS* — see CYP-26
 * *130 nm process* — see ANN-17
 
+The pages cite the articles above and a number of others by label.
+Every Wikipedia label in use on the pages has a keyed entry here so
+that the inventory is complete; the articles are entry points, not
+evidence, and are cited only in the *High-level* tier. All were
+fetched when the citing page was written or reviewed (2026-08-30 to
+2026-09-12).
+
+**WIKI-4T** — Wikipedia, *Four-terminal sensing*.
+<https://en.wikipedia.org/wiki/Four-terminal_sensing> Four-terminal
+(Kelvin) sensing, the principle behind four-point-probe and Kelvin
+contact measurements. Used on the test category page. Tier: high-level.
+
+**WIKI-ADVANTEST** — Wikipedia, *Advantest*.
+<https://en.wikipedia.org/wiki/Advantest> Company article on the
+test-equipment maker Advantest. Used on the test category page. Tier:
+high-level.
+
+**WIKI-AGILENT** — Wikipedia, *Agilent Technologies*.
+<https://en.wikipedia.org/wiki/Agilent_Technologies> Company article on
+Agilent Technologies, successor to the HP test-and-measurement business
+behind the 4062UX tester. Used on the test category page. Tier:
+high-level.
+
+**WIKI-AMAT** — Wikipedia, *Applied Materials*.
+<https://en.wikipedia.org/wiki/Applied_Materials> Company article on
+Applied Materials. Used on the substrate category page. Tier:
+high-level.
+
+**WIKI-ANNEALING** — Wikipedia, *Annealing (materials science)*.
+<https://en.wikipedia.org/wiki/Annealing_(materials_science)> Annealing
+in materials science: recovery, recrystallisation and grain growth. Used
+on the anneal category page. Tier: high-level.
+
+**WIKI-ARC** — Wikipedia, *Anti-reflective coating*.
+<https://en.wikipedia.org/wiki/Anti-reflective_coating> ARCs in
+photolithography, BARC. Used on steps 035 and 036 and the lithography
+category page. Tier: high-level.
+
+**WIKI-ARRHENIUS** — Wikipedia, *Arrhenius equation*.
+<https://en.wikipedia.org/wiki/Arrhenius_equation> Arrhenius temperature
+dependence of rate constants, used for diffusion and etch rates. Used on
+the anneal category page. Tier: high-level.
+
+**WIKI-ASH** — Wikipedia, *Plasma ashing*.
+<https://en.wikipedia.org/wiki/Plasma_ashing> Downstream ashing and
+implanted-resist problems. Used on steps 016, 021, 025, 029 and 033 and
+the strip category page. Tier: high-level.
+
+**WIKI-ASH3** — Wikipedia, *Arsine*.
+<https://en.wikipedia.org/wiki/Arsine> Arsine, the arsenic source gas
+for implanters. Used on the implant category page. Tier: high-level.
+
+**WIKI-ASM** — Wikipedia, *ASM International*.
+<https://en.wikipedia.org/wiki/ASM_International> Company article on ASM
+International (vertical furnaces, ALD). Used on the substrate category
+page. Tier: high-level.
+
+**WIKI-ATE** — Wikipedia, *Automatic test equipment*.
+<https://en.wikipedia.org/wiki/Automatic_test_equipment> Automatic test
+equipment: what a tester and handler do at wafer sort and final test.
+Used on the test category page. Tier: high-level.
+
+**WIKI-AXCELIS** — Wikipedia, *Axcelis Technologies*.
+<https://en.wikipedia.org/wiki/Axcelis_Technologies> Company article on
+Axcelis Technologies, the former Eaton implanter business. Used on the
+implant category page. Tier: high-level.
+
+**WIKI-BF3** — Wikipedia, *Boron trifluoride*.
+<https://en.wikipedia.org/wiki/Boron_trifluoride> Boron trifluoride, the
+boron source gas for B⁺ and BF₂⁺ implants. Used on the implant category
+page. Tier: high-level.
+
+**WIKI-BOE** — Wikipedia, *Buffered oxide etch*.
+<https://en.wikipedia.org/wiki/Buffered_oxide_etch> BOE composition and
+etch rate. Used on steps 039 and 046 and the etch category page. Tier:
+high-level.
+
+**WIKI-CD** — Wikipedia, *Critical dimension*.
+<https://en.wikipedia.org/wiki/Critical_dimension> Critical dimension:
+the smallest printed feature and how it is measured. Used on the
+lithography category page. Tier: high-level.
+
+**WIKI-CERIA** — Wikipedia, *Cerium(IV) oxide*.
+<https://en.wikipedia.org/wiki/Cerium(IV)_oxide> Cerium(IV) oxide, the
+abrasive in high-selectivity STI slurries. Used on the cmp category
+page. Tier: high-level.
+
+**WIKI-CHANNEL** — Wikipedia, *Channelling (physics)*.
+<https://en.wikipedia.org/wiki/Channelling_(physics)> Ion channelling
+along crystal axes and why implants use tilt and twist. Used on the
+implant category page. Tier: high-level.
+
+**WIKI-CMOS** — Wikipedia, *CMOS*. <https://en.wikipedia.org/wiki/CMOS>
+NMOS on the p-substrate, PMOS in an N-well. Used on steps 017, 018 and
+026. Tier: high-level.
+
+**WIKI-CMP** — Wikipedia, *Chemical-mechanical polishing*.
+<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing> Pads,
+conditioners, abrasives, endpoint and REB + CMP for STI. Used on step
+012 and the cmp category page. Tier: high-level.
+
+**WIKI-COLLOIDAL-SILICA** — Wikipedia, *Colloidal silica*.
+<https://en.wikipedia.org/wiki/Colloidal_silica> Colloidal silica, the
+abrasive in conventional oxide slurries. Used on the cmp category page.
+Tier: high-level.
+
+**WIKI-CTF** — Wikipedia, *Charge trap flash*.
+<https://en.wikipedia.org/wiki/Charge_trap_flash> Why trapped charge
+tolerates oxide defects. Used on step 040. Tier: high-level.
+
+**WIKI-CVD** — Wikipedia, *Chemical vapor deposition*.
+<https://en.wikipedia.org/wiki/Chemical_vapor_deposition> LPCVD in
+context. Used on step 003 and the deposition category page. Tier:
+high-level.
+
+**WIKI-CZ** — Wikipedia, *Czochralski method*.
+<https://en.wikipedia.org/wiki/Czochralski_method> Czochralski crystal
+pulling for silicon boules. Used on the substrate category page. Tier:
+high-level.
+
+**WIKI-DEPLETION** — Wikipedia, *Depletion and enhancement modes*.
+<https://en.wikipedia.org/wiki/Depletion_and_enhancement_modes> The sign
+of the threshold in each mode. Used on step 038. Tier: high-level.
+
+**WIKI-DG** — Wikipedia, *Deal–Grove model*.
+<https://en.wikipedia.org/wiki/Deal%E2%80%93Grove_model> The
+rate-constant table and the thin-oxide caveat. Used on steps 043 and 047
+and the oxidation category page. Tier: high-level.
+
+**WIKI-DNQ** — Wikipedia, *Diazonaphthoquinone*.
+<https://en.wikipedia.org/wiki/Diazonaphthoquinone> Diazonaphthoquinone,
+the photoactive compound of i-line novolak resists. Used on the
+lithography category page. Tier: high-level.
+
+**WIKI-DOPANT** — Wikipedia, *Dopant*.
+<https://en.wikipedia.org/wiki/Dopant> Dopants in silicon: group III and
+V elements and what they do. Used on the implant category page. Tier:
+high-level.
+
+**WIKI-DRY-ETCH** — Wikipedia, *Dry etching*.
+<https://en.wikipedia.org/wiki/Dry_etching> Dry etching overview: plasma
+etching, RIE and ion milling. Used on the etch category page. Tier:
+high-level.
+
+**WIKI-EM** — Wikipedia, *Electromigration*.
+<https://en.wikipedia.org/wiki/Electromigration> Electromigration in
+interconnects and the Al–Cu remedy. Used on the deposition category
+page. Tier: high-level.
+
+**WIKI-EPITAXY** — Wikipedia, *Epitaxy*.
+<https://en.wikipedia.org/wiki/Epitaxy> Epitaxial growth and its
+terminology. Used on the substrate category page. Tier: high-level.
+
+**WIKI-ETCHING** — Wikipedia, *Etching (microfabrication)*.
+<https://en.wikipedia.org/wiki/Etching_(microfabrication)> Etching in
+microfabrication: wet versus dry, isotropic versus anisotropic. Used on
+the etch category page. Tier: high-level.
+
+**WIKI-EXCIMER** — Wikipedia, *Excimer laser*.
+<https://en.wikipedia.org/wiki/Excimer_laser> Excimer lasers, the KrF
+(248 nm) and ArF (193 nm) sources of DUV steppers. Used on the
+lithography category page. Tier: high-level.
+
+**WIKI-FG** — Wikipedia, *Forming gas*.
+<https://en.wikipedia.org/wiki/Forming_gas> The 5 % H₂ in N₂ mixture and
+interface passivation. Used on the anneal category page. Tier:
+high-level.
+
+**WIKI-FICK** — Wikipedia, *Fick's laws of diffusion*.
+<https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion> Fick's laws,
+the basis of diffusion and Deal–Grove modelling. Used on the anneal
+category page. Tier: high-level.
+
+**WIKI-FURNACE** — Wikipedia, *Furnace anneal*.
+<https://en.wikipedia.org/wiki/Diffusion_furnace> Furnace anneals being
+supplanted by RTA. The label keeps the page's *Furnace anneal* wording;
+the article is titled *Diffusion furnace*. Used on step 034 and the
+anneal category page. Tier: high-level.
+
+**WIKI-FZ** — Wikipedia, *Float-zone silicon*.
+<https://en.wikipedia.org/wiki/Float-zone_silicon> Float-zone silicon
+and why CZ material is used for CMOS substrates instead. Used on the
+substrate category page. Tier: high-level.
+
+**WIKI-GATE-OXIDE** — Wikipedia, *Gate oxide*.
+<https://en.wikipedia.org/wiki/Gate_oxide> What the gate oxide does and
+withstands. Label ↔ key: the same article is cited as `wiki-gox` on the
+oxidation category page. Used on steps 043, 044 and 047. Tier:
+high-level.
+
+**WIKI-GOX** — Wikipedia, *Gate oxide*.
+<https://en.wikipedia.org/wiki/Gate_oxide> Gate oxide: role, thickness
+scaling and leakage. Label ↔ key: the same article is cited as
+`wiki-gate-oxide` on steps 043, 044 and 047. Used on the oxidation
+category page. Tier: high-level.
+
+**WIKI-GW** — Wikipedia, *GlobalWafers*.
+<https://en.wikipedia.org/wiki/GlobalWafers> Company article on
+GlobalWafers, a wafer supplier named in SkyWater's Form S-1 (SEC-01).
+Used on the substrate category page. Tier: high-level.
+
+**WIKI-H3PO4** — Wikipedia, *Phosphoric acid*.
+<https://en.wikipedia.org/wiki/Phosphoric_acid> Phosphoric acid, the hot
+nitride-strip chemistry. Used on the etch and strip category pages.
+Tier: high-level.
+
+**WIKI-HF** — Wikipedia, *Hydrofluoric acid*.
+<https://en.wikipedia.org/wiki/Hydrofluoric_acid> Hydrofluoric acid, the
+oxide etchant, and its hazards. Used on the etch and strip category
+pages. Tier: high-level.
+
+**WIKI-ICP** — Wikipedia, *Inductively coupled plasma*.
+<https://en.wikipedia.org/wiki/Inductively_coupled_plasma> Inductively
+coupled plasma, the source type behind TCP and DPS etchers. Used on the
+etch category page. Tier: high-level.
+
+**WIKI-IMPLANT** — Wikipedia, *Ion implantation*.
+<https://en.wikipedia.org/wiki/Ion_implantation> Energies, ranges,
+channelling, amorphisation and implanter classes. Used on steps 007,
+008, 015, 018, 019, 020, 023, 024, 027, 028, 031, 032, 037, 038 and 045
+and the implant category page. Tier: high-level.
+
+**WIKI-KEITHLEY** — Wikipedia, *Keithley Instruments*.
+<https://en.wikipedia.org/wiki/Keithley_Instruments> Company article on
+Keithley Instruments (parametric test systems). Used on the test
+category page. Tier: high-level.
+
+**WIKI-KLA** — Wikipedia, *KLA Corporation*.
+<https://en.wikipedia.org/wiki/KLA_Corporation> The inspection and
+metrology vendor. Used on the lithography and substrate category pages.
+Tier: high-level.
+
+**WIKI-LATCHUP** — Wikipedia, *Latch-up*.
+<https://en.wikipedia.org/wiki/Latch-up> The parasitic n-p-n-p path
+through the wells. Used on steps 017, 018 and 027 and the substrate
+category page. Tier: high-level.
+
+**WIKI-LDMOS** — Wikipedia, *LDMOS*.
+<https://en.wikipedia.org/wiki/LDMOS> Drift regions formed by chained
+implants. Used on steps 030, 031 and 032. Tier: high-level.
+
+**WIKI-LITHO** — Wikipedia, *Photolithography*.
+<https://en.wikipedia.org/wiki/Photolithography> The process sequence,
+the resolution equation and wavelengths. Used on steps 004, 007, 014,
+017, 022, 026, 030, 035, 041 and 044 and the lithography category page.
+Tier: high-level.
+
+**WIKI-LOCOS** — Wikipedia, *LOCOS*.
+<https://en.wikipedia.org/wiki/LOCOS> LOCOS isolation, the predecessor
+of STI. Used on the oxidation category page. Tier: high-level.
+
+**WIKI-MASK** — Wikipedia, *Photomask*.
+<https://en.wikipedia.org/wiki/Photomask> Photomasks: substrates,
+absorber and pellicles. Used on the lithography category page. Tier:
+high-level.
+
+**WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
+<https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
+article on MEMC Electronic Materials, the wafer maker later part of
+SunEdison Semiconductor and GlobalWafers. Used on the substrate category
+page. Tier: high-level.
+
+**WIKI-MILLER** — Wikipedia, *Miller index*.
+<https://en.wikipedia.org/wiki/Miller_index> Miller indices for crystal
+planes such as (100). Used on the substrate category page. Tier:
+high-level.
+
+**WIKI-MONOSI** — Wikipedia, *Monocrystalline silicon*.
+<https://en.wikipedia.org/wiki/Monocrystalline_silicon> Monocrystalline
+silicon as the wafer material. Used on the substrate category page.
+Tier: high-level.
+
+**WIKI-MTCMOS** — Wikipedia, *Multi-threshold CMOS*.
+<https://en.wikipedia.org/wiki/Multi-threshold_CMOS> Why several
+thresholds are offered and how they are set. Used on steps 014, 015,
+020, 022, 023 and 045. Tier: high-level.
+
+**WIKI-NA** — Wikipedia, *Numerical aperture*.
+<https://en.wikipedia.org/wiki/Numerical_aperture> Numerical aperture
+and its place in the Rayleigh resolution criterion. Used on the
+lithography category page. Tier: high-level.
+
+**WIKI-NMP** — Wikipedia, *N-Methyl-2-pyrrolidone*.
+<https://en.wikipedia.org/wiki/N-Methyl-2-pyrrolidone>
+N-Methyl-2-pyrrolidone, a solvent-strip chemistry. Used on the strip
+category page. Tier: high-level.
+
+**WIKI-OPC** — Wikipedia, *Optical proximity correction*.
+<https://en.wikipedia.org/wiki/Optical_proximity_correction> Optical
+proximity correction of mask shapes. Used on the lithography category
+page. Tier: high-level.
+
+**WIKI-PECVD** — Wikipedia, *Plasma-enhanced chemical vapor deposition*.
+<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>
+High-density plasma, sputtering during deposition, SiH₄/O₂/Ar oxide.
+Used on step 011 and the deposition category page. Tier: high-level.
+
+**WIKI-PH3** — Wikipedia, *Phosphine*.
+<https://en.wikipedia.org/wiki/Phosphine> Phosphine, the phosphorus
+source gas for implanters. Used on the implant category page. Tier:
+high-level.
+
+**WIKI-PIRANHA** — Wikipedia, *Piranha solution*.
+<https://en.wikipedia.org/wiki/Piranha_solution> SPM ratios and
+temperature. Used on the strip category page. Tier: high-level.
+
+**WIKI-PLASMA-ETCH** — Wikipedia, *Plasma etching*.
+<https://en.wikipedia.org/wiki/Plasma_etching> Plasma etching mechanisms
+and chemistries. Used on the etch category page. Tier: high-level.
+
+**WIKI-POLY** — Wikipedia, *Polycrystalline silicon*.
+<https://en.wikipedia.org/wiki/Polycrystalline_silicon> Polycrystalline
+silicon as a gate and resistor material. Used on the deposition category
+page. Tier: high-level.
+
+**WIKI-POLYURETHANE** — Wikipedia, *Polyurethane*.
+<https://en.wikipedia.org/wiki/Polyurethane> Polyurethane, the CMP pad
+material. Used on the cmp category page. Tier: high-level.
+
+**WIKI-PROBECARD** — Wikipedia, *Probe card*.
+<https://en.wikipedia.org/wiki/Probe_card> Probe cards for wafer test.
+Used on the test category page. Tier: high-level.
+
+**WIKI-PSG** — Wikipedia, *Phosphosilicate glass*.
+<https://en.wikipedia.org/wiki/Phosphosilicate_glass> Phosphosilicate
+glass, the doped CVD dielectric. Used on the deposition category page.
+Tier: high-level.
+
+**WIKI-PSM** — Wikipedia, *Phase-shift mask*.
+<https://en.wikipedia.org/wiki/Phase-shift_mask> Phase-shift masks as a
+resolution-enhancement technique. Used on the lithography category page.
+Tier: high-level.
+
+**WIKI-PVD** — Wikipedia, *Physical vapor deposition*.
+<https://en.wikipedia.org/wiki/Physical_vapor_deposition> Physical
+vapour deposition overview. Used on the deposition category page. Tier:
+high-level.
+
+**WIKI-RC** — Wikipedia, *Contact resistance*.
+<https://en.wikipedia.org/wiki/Contact_resistance> Contact resistance
+and specific contact resistivity. Used on the test category page. Tier:
+high-level.
+
+**WIKI-RCA** — Wikipedia, *RCA clean*.
+<https://en.wikipedia.org/wiki/RCA_clean> SC-1 and SC-2 compositions and
+temperatures. Used on steps 001, 002, 006, 009, 010, 013, 016, 021, 025,
+029, 033, 039 and 046 and the strip category page. Tier: high-level.
+
+**WIKI-RESIST** — Wikipedia, *Photoresist*.
+<https://en.wikipedia.org/wiki/Photoresist> Photoresist chemistry, tone
+and processing. Used on the lithography and strip category pages. Tier:
+high-level.
+
+**WIKI-RET** — Wikipedia, *Resolution enhancement technologies*.
+<https://en.wikipedia.org/wiki/Resolution_enhancement_technologies>
+Resolution enhancement technologies: OPC, phase-shift masks and off-axis
+illumination. Used on the lithography category page. Tier: high-level.
+
+**WIKI-RIE** — Wikipedia, *Reactive-ion etching*.
+<https://en.wikipedia.org/wiki/Reactive-ion_etching> RF frequency,
+self-bias, pressure range and ICP sources. Used on steps 005, 006, 036
+and 042 and the etch category page. Tier: high-level.
+
+**WIKI-RS** — Wikipedia, *Sheet resistance*.
+<https://en.wikipedia.org/wiki/Sheet_resistance> Sheet resistance and
+the ohms-per-square convention. Used on the test category page. Tier:
+high-level.
+
+**WIKI-RTP** — Wikipedia, *Rapid thermal processing*.
+<https://en.wikipedia.org/wiki/Rapid_thermal_processing> Lamp heating,
+seconds above 1000 °C, in-situ pyrometry. Used on step 034 and the
+anneal and oxidation category pages. Tier: high-level.
+
+**WIKI-SALICIDE** — Wikipedia, *Salicide*.
+<https://en.wikipedia.org/wiki/Salicide> The two-anneal self-aligned
+silicide sequence. Used on the anneal category page. Tier: high-level.
+
+**WIKI-SCE** — Wikipedia, *Short-channel effect*.
+<https://en.wikipedia.org/wiki/Short-channel_effect> Depletion-region
+overlap and DIBL. Used on step 037. Tier: high-level.
+
+**WIKI-SEH** — Wikipedia, *Shin-Etsu Chemical*.
+<https://en.wikipedia.org/wiki/Shin-Etsu_Chemical> Company article on
+Shin-Etsu Chemical, parent of the wafer maker Shin-Etsu Handotai. Used
+on the substrate category page. Tier: high-level.
+
+**WIKI-SI** — Wikipedia, *Silicon*.
+<https://en.wikipedia.org/wiki/Silicon> Silicon's properties, including
+the melting point. Used on the substrate category page. Tier:
+high-level.
+
+**WIKI-SILTRONIC** — Wikipedia, *Siltronic*.
+<https://en.wikipedia.org/wiki/Siltronic> Company article on the wafer
+maker Siltronic. Used on the substrate category page. Tier: high-level.
+
+**WIKI-SIN** — Wikipedia, *Silicon nitride*.
+<https://en.wikipedia.org/wiki/Silicon_nitride> The LPCVD reaction, hot
+H₃PO₄ etch and use as an oxidation mask. Used on steps 003, 013, 040 and
+042 and the deposition category page. Tier: high-level.
+
+**WIKI-SKYWATER** — Wikipedia, *SkyWater Technology*.
+<https://en.wikipedia.org/wiki/SkyWater_Technology> Fab history and 200
+mm capacity. Label ↔ key: the same article as ANN-18. Used on the
+substrate category page. Tier: high-level.
+
+**WIKI-SONOS** — Wikipedia, *SONOS*.
+<https://en.wikipedia.org/wiki/SONOS> SONOS memory cell structure and
+operation. Label ↔ key: the same article as CYP-26; both labels are in
+use on the pages. Used on the oxidation category page. Tier: high-level.
+
+**WIKI-SPC** — Wikipedia, *Statistical process control*.
+<https://en.wikipedia.org/wiki/Statistical_process_control> Statistical
+process control charts and limits. Used on the test category page. Tier:
+high-level.
+
+**WIKI-SPUTTER** — Wikipedia, *Sputter deposition*.
+<https://en.wikipedia.org/wiki/Sputter_deposition> Sputter deposition:
+magnetron sources, targets and step coverage. Used on the deposition
+category page. Tier: high-level.
+
+**WIKI-SRIM** — Wikipedia, *Stopping and Range of Ions in Matter*.
+<https://en.wikipedia.org/wiki/Stopping_and_Range_of_Ions_in_Matter>
+SRIM, the Monte Carlo range and straggle calculator for implants. Used
+on the implant category page. Tier: high-level.
+
+**WIKI-STEPPER** — Wikipedia, *Stepper*.
+<https://en.wikipedia.org/wiki/Stepper> Steppers and step-and-scan
+systems: reduction optics, alignment and overlay. Used on the
+lithography category page. Tier: high-level.
+
+**WIKI-STI** — Wikipedia, *Shallow trench isolation*.
+<https://en.wikipedia.org/wiki/Shallow_trench_isolation> The three STI
+operations and the LOCOS cross-over node. Used on steps 002, 003, 005,
+006, 007, 011, 012 and 013 and the cmp and oxidation category pages.
+Tier: high-level.
+
+**WIKI-SUMCO** — Wikipedia, *SUMCO*.
+<https://en.wikipedia.org/wiki/SUMCO> Company article on the wafer maker
+SUMCO. Used on the substrate category page. Tier: high-level.
+
+**WIKI-TEOS** — Wikipedia, *Tetraethyl orthosilicate*.
+<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate> Tetraethyl
+orthosilicate, the liquid precursor for CVD oxide. Used on the
+deposition category page. Tier: high-level.
+
+**WIKI-TERADYNE** — Wikipedia, *Teradyne*.
+<https://en.wikipedia.org/wiki/Teradyne> Company article on the
+test-equipment maker Teradyne. Used on the test category page. Tier:
+high-level.
+
+**WIKI-TEST** — Wikipedia, *Wafer testing*.
+<https://en.wikipedia.org/wiki/Wafer_testing> Parametric versus
+functional test and the wafermap. Used on the test category page. Tier:
+high-level.
+
+**WIKI-THINFILM** — Wikipedia, *Thin film*.
+<https://en.wikipedia.org/wiki/Thin_film> Thin films: deposition methods
+and properties. Used on the deposition category page. Tier: high-level.
+
+**WIKI-THOX** — Wikipedia, *Thermal oxidation*.
+<https://en.wikipedia.org/wiki/Thermal_oxidation> Reaction, silicon
+consumption, chlorine additions and dry–wet–dry cycles. Used on steps
+002, 010, 038 and 043 and the oxidation category page. Tier: high-level.
+
+**WIKI-TIN** — Wikipedia, *Titanium nitride*.
+<https://en.wikipedia.org/wiki/Titanium_nitride> Titanium nitride as a
+barrier and local-interconnect material. Used on the deposition category
+page. Tier: high-level.
+
+**WIKI-TISI2** — Wikipedia, *Titanium disilicide*.
+<https://en.wikipedia.org/wiki/Titanium_disilicide> Titanium disilicide
+and its C49-to-C54 phase transformation. Used on the anneal category
+page. Tier: high-level.
+
+**WIKI-TLM** — Wikipedia, *Transfer length method*.
+<https://en.wikipedia.org/wiki/Transmission_line_measurement> The
+transfer-length (transmission-line) method for contact resistance. The
+label keeps the page's *Transfer length method* wording; the article is
+titled *Transmission line measurement*. Used on the test category page.
+Tier: high-level.
+
+**WIKI-TMAH** — Wikipedia, *Tetramethylammonium hydroxide*.
+<https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>
+Tetramethylammonium hydroxide, the standard aqueous resist developer.
+Used on the lithography category page. Tier: high-level.
+
+**WIKI-VARIAN** — Wikipedia, *Varian Semiconductor*.
+<https://en.wikipedia.org/wiki/Varian_Semiconductor> Company article on
+Varian Semiconductor Equipment (implanters; now part of Applied
+Materials). Used on the implant category page. Tier: high-level.
+
+**WIKI-VDP** — Wikipedia, *Van der Pauw method*.
+<https://en.wikipedia.org/wiki/Van_der_Pauw_method> The van der Pauw
+method for sheet resistance and Hall measurements. Used on the test
+category page. Tier: high-level.
+
+**WIKI-VT** — Wikipedia, *Threshold voltage*.
+<https://en.wikipedia.org/wiki/Threshold_voltage> The body-effect
+parameter containing the channel doping. Used on steps 015, 020, 023 and
+045 and the implant and test category pages. Tier: high-level.
+
+**WIKI-WAFER** — Wikipedia, *Wafer (electronics)*.
+<https://en.wikipedia.org/wiki/Wafer_(electronics)> Diameters,
+thickness, notch, orientation and doping ranges. Used on step 001 and
+the substrate category page. Tier: high-level.
+
+**WIKI-WF6** — Wikipedia, *Tungsten hexafluoride*.
+<https://en.wikipedia.org/wiki/Tungsten_hexafluoride> Tungsten
+hexafluoride, the CVD tungsten precursor. Used on the deposition
+category page. Tier: high-level.
+
 ### 8.5 Papers and patents used for era-typical isolation-module values
 
 None of these is a SkyWater or Cypress source; the step pages for the
