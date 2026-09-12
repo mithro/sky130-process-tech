@@ -125,7 +125,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 4. **Endpoint and over-etch.** Optical emission (CO at 483 nm
    rises while oxide is etched and falls as the holes clear; the
    double-endpoint scheme of the Tokyo Electron
-   patent[^pat-endpoint-tel] is one way to detect it through the
+   patent[^pat-cn-tel] is one way to detect it through the
    small open area) followed by a timed over-etch that clears the
    {ref}`SPOX <step-080>` oxide at the bottom of the diffusion
    contacts and the shallower poly contacts' residue without
@@ -248,7 +248,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 * Yin et al. (Applied Materials), US 5,540,824 — the DPS
   reactor.[^pat-dps-amat]
 * Tokyo Electron, US 6,376,262 — double endpoint detection for
-  layered stacks.[^pat-endpoint-tel]
+  layered stacks.[^pat-cn-tel]
 * Tang et al. (TI), IEDM 1985 — the local-interconnect scheme in
   which nitride over poly is removed only at contact sites.[^tang-1985]
 
@@ -367,7 +367,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
     Materials), *Plasma reactor with multi-section RF coil and isolated
     conducting lid*, US 5,540,824 A, granted 1996-07-30.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>
-[^pat-endpoint-tel]: Tokyo Electron, *Method of forming a semiconductor
+[^pat-cn-tel]: Tokyo Electron Ltd., *Method of forming a semiconductor
     device using double endpoint detection*, US 6,376,262 B1, granted
     2002-04-23 (CN emission at 387 nm as the nitride etch endpoint
     signal). <https://patents.google.com/patent/US6376262B1/en>

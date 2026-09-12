@@ -355,7 +355,7 @@ An industry-generic oxide/PMD polish for a 200 mm, 130 nm-era fab
     <https://patents.google.com/patent/US4789648A/en>
 [^pat-cmp-ibm-1990]: K. D. Beyer et al. (IBM), *Chem-mech polishing
     method for producing coplanar metal/insulator films on a substrate*,
-    US 4,944,836 A, granted 1990.
+    US 4,944,836 A, granted 1990-07-31.
     <https://patents.google.com/patent/US4944836A/en>
 [^pat-cmp-mirra]: R. D. Tolles, N. Shendon, S. Somekh, I. Perlov,
     E. Gantvarg and H. Q. Lee (Applied Materials), *Continuous

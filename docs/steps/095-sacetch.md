@@ -123,12 +123,12 @@ fab (SKY130's recipe is not public):
 
 1. **Strip.** If not already done at {ref}`LICM1E <step-094>`:
    oxygen or H₂/N₂ downstream plasma {term}`ash` of the resist and
-   BARC at 120–270 °C (the range SkyWater's ashers list[^skw-01]),
+   BARC at 40–270 °C (the range SkyWater's ashers list[^skw-01]),
    followed by a solvent or {term}`SPM` clean for the implant-free
    but fluorocarbon-crusted resist ({ref}`category-strip`).
 2. **Polymer removal.** A dilute SC-1 or a proprietary
    post-etch-residue remover (amine/hydroxylamine class; SkyWater
-   lists "EKC265, EKC270 solvents"[^skw-01]) for fluorocarbon
+   lists "EKS265, EKC270 solvents" [sic][^skw-01]) for fluorocarbon
    residue on the hole walls.
 3. **HF dip.** Dilute HF, typically 100:1 to 500:1 (industry
    practice[^reinhardt-2010]), for tens of seconds — long enough to
