@@ -16,12 +16,15 @@
 {term}`extension` — the "tip" — of the standard 1.8 V NMOS transistors.
 Through the resist windows opened at {ref}`NTM <step-064>`, arsenic ions
 enter the active silicon on both sides of every polysilicon gate, passing
-through the thin screen oxide grown at {ref}`IOX45 <step-063>`. The gate
-itself masks the channel, so the implanted region begins at the gate
-edge and is *self-aligned* to it; the poly gate is implanted too, which
-adds to its n-type doping. The result is a shallow, heavily doped n-type
-layer that will link the channel to the deep n⁺ source/drain formed
-later at {ref}`NSDI <step-086>`, outside the spacer.
+through the thin screen oxide inferred to have been grown at
+{ref}`IOX45 <step-063>`. The gate stack itself masks the channel, so
+the implanted region begins at the gate edge and is *self-aligned* to
+it; the gate poly is shielded by the nitride and oxide caps it still
+carries from {ref}`GATENIT <step-058>` and {ref}`POC <step-059>` (see
+{ref}`P1I <step-050>`), so the tip does not dope the gate. The result
+is a shallow, heavily doped n-type layer that will link the channel to
+the deep n⁺ source/drain formed later at {ref}`NSDI <step-086>`,
+outside the spacer.
 
 That the tip is arsenic is stated publicly: the PDK's junction-depth
 table has a row "N Tip (As)" with a lateral ("vertical space") value of
@@ -40,7 +43,7 @@ node),[^txt-01][^rev-05] a dose of the order of 10¹⁴–10¹⁵ cm⁻²
 the flow — the category page notes that a 130 nm process spans "from a
 few keV for source/drain extensions to over 1 MeV for deep
 n-wells"[^txt-01] — and, with the deep source/drain implants, one of
-the two that amorphise the silicon surface.
+the two that, at typical doses, amorphise the silicon surface.
 
 ## Why this step exists
 
@@ -107,14 +110,15 @@ fab (SKY130's energy and dose are not public):
   end-of-range defects at the old amorphous/crystalline boundary
   ({ref}`category-implant`).
 * **Tilt and twist.** The PDK records 7° for the tip implant.[^pdk-03] A
-  tilted beam is shadowed on one side of each gate by the 0.18 µm
-  poly[^pdk-03] (a 7° beam is blocked for about 0.18 µm × tan 7° ≈
-  22 nm beside the gate), so symmetric source and drain tips require
-  either two or four wafer rotations or a 0° implant through a screen
-  oxide (category page). Yoneda and Niwayama showed how an angle error
-  of the implanter turns this shadowing into a measurable
-  source/drain asymmetry at 130 nm.[^yoneda-2002] SKY130's rotation
-  scheme is not public.
+  tilted beam is shadowed on one side of each gate by the gate stack —
+  0.18 µm of poly[^pdk-03] plus the roughly 0.2 µm cap read on the
+  {ref}`GATENIT <step-058>` page[^pdk-03] — so a 7° beam is blocked for
+  about 0.38 µm × tan 7° ≈ 47 nm beside the gate, and symmetric source
+  and drain tips require either two or four wafer rotations or a 0°
+  implant through a screen oxide (category page). Yoneda and Niwayama
+  showed how an angle error of the implanter turns this shadowing into
+  a measurable source/drain asymmetry at 130 nm.[^yoneda-2002] SKY130's
+  rotation scheme is not public.
 * **Charge control and cooling.** The wafer is largely resist-covered;
   an electron shower or plasma flood neutralises the beam, and
   Lukaszek et al. showed that the resist itself changes wafer charging

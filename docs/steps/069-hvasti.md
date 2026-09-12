@@ -15,13 +15,13 @@
 `HVASTI` is the arsenic implant that forms the drain extension of the
 high-voltage (5 V-class) NMOS transistors. Through the thin resist
 windows opened at {ref}`HVNTM <step-068>`, and through the screen oxide
-from {ref}`IOX45 <step-063>`, arsenic ions strike the wafer at a steep
-angle — the PDK's assumptions page gives "Angle for HV tip implant" 40°
-and "Twist angle for HV Tip" 23°[^pdk-03] — so that the implanted
-region reaches *under* the edge of the polysilicon gate rather than
-stopping at it. After {ref}`TIPRTAD <step-075>` the result is a lightly
-doped, graded n⁻ region overlapped by the gate on both sides of the
-channel: the *large-angle-tilt implanted drain* (LATID) of
+inferred at {ref}`IOX45 <step-063>`, arsenic ions strike the wafer at a
+steep angle — the PDK's assumptions page gives "Angle for HV tip
+implant" 40° and "Twist angle for HV Tip" 23°[^pdk-03] — so that the
+implanted region reaches *under* the edge of the polysilicon gate
+rather than stopping at it. After {ref}`TIPRTAD <step-075>` the result
+is a lightly doped, graded n⁻ region overlapped by the gate on both
+sides of the channel: the *large-angle-tilt implanted drain* (LATID) of
 Hori,[^hori-1989-latid][^hori-1992] the modern descendant of the lightly
 doped drain.[^ogura-1980]
 
@@ -236,8 +236,11 @@ fab (SKY130's energy and dose are not public):
   source side is not public.
 * Whether the 5 V PMOS has a corresponding tilted p-tip — the PDK's
   "HVPTM shadowing" parameter[^pdk-03] suggests one was at least
-  contemplated — is not visible in the step list used in this
-  reference.
+  contemplated, and its *High Voltage Methodology* page says hv
+  p-channel devices "get the extra junction grading implant into the
+  ringed gate with the HVPDM mask",[^pdk-hv] a mask name absent from
+  the PDK's `masks.csv`[^pdk-05] — is not visible in the step list used
+  in this reference.
 
 <!-- footnotes -->
 
@@ -248,6 +251,10 @@ fab (SKY130's energy and dose are not public):
     documentation, and the `nfet_01v8` cross-section drawing.
     <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
+[^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
+    <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
 [^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
