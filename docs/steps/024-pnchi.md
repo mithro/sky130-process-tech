@@ -55,7 +55,7 @@ shallow boron dose in a high-Vt PMOS:
    shallow boron layer would be needed in *every* PMOS to bring |Vt|
    into range, and the high-Vt variant would use a *smaller* boron
    dose than the baseline. That would require the baseline PMOS to
-   receive its own BF₂ elsewhere, and the public step list shows no
+   receive its own BF₂ elsewhere, and the step list used in this reference shows no
    such step; we consider it unlikely at 130 nm (TXT-04).
 3. **Junction or field engineering under the gate edge.** A light
    boron dose at the channel surface changes the source/drain
@@ -124,7 +124,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 * **Boron trifluoride (BF₃)** source gas, delivered in sub-atmospheric
   cylinders (WIKI-IMPLANT; category page). Fluorinated species erode
   ion-source parts faster than hydrides, so source-consumable usage
-  is higher (AXCELIS-GSD notes "source operating costs especially
+  is higher (AXCELIS-GSD-PAGE notes "source operating costs especially
   with fluorinated species").
 * Support gases, cryopump and beam-line consumables, monitor wafers.
 * No new resist: the {ref}`HVTPM <step-022>` resist is reused.
@@ -134,8 +134,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 * Previous: {ref}`PCHI <step-023>`; next: {ref}`PCHIS <step-025>`
   (strip); mask: {ref}`HVTPM <step-022>`.
 * Baseline PMOS channel: {ref}`LVTPI <step-020>`.
-* The other BF₂-class shallow boron implants in the flow are the P⁺
-  source/drain implants {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>`.
+* The other shallow p-type implants in the flow are the P⁺ source/drain implants (species not given in the step list) {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>`.
 * Activated at {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
@@ -158,7 +157,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 * **AXCELIS-8250** — Semiconductor Online, *8250HT Medium Current Ion
   Implanter*.
   <https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>
-* **AXCELIS-GSD** — Axcelis Technologies, *GSD Ovation* product page
+* **AXCELIS-GSD-PAGE** — Axcelis Technologies, *GSD Ovation* product page
   (fluorinated-species source costs).
   <https://www.axcelis.com/products/gsd-ovation/>
 

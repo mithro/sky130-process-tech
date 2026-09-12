@@ -12,12 +12,10 @@
 
 ## What this step is
 
-`PWBM` prints the *P-well block mask*: a thick photoresist is coated,
+`PWBM` prints the *P-well block mask*: a photoresist (thick, we infer) is coated,
 exposed through the PWBM reticle and developed so that resist
 *remains* over every region that must not receive the P-well and is
-removed everywhere else. The two P-well implants
-{ref}`PWI <step-027>` and {ref}`PWI2 <step-028>` follow through the
-openings, and the resist is stripped at {ref}`PWIS <step-029>`. The
+removed everywhere else. The two P-well implants {ref}`PWI <step-027>` and {ref}`PWI2 <step-028>` follow (through the same openings, we infer from the step order), and the resist is stripped at {ref}`PWIS <step-029>`. The
 name says how the layer is used: this is a *block* mask, the negative
 of the {ref}`NWM <step-017>` N-well mask in spirit, and the P-well is
 implanted into all silicon that it does not cover.
@@ -39,7 +37,7 @@ special 20 V regions.
 
 The PDK's mask table lists "P-Well Block Mask, PWBM" but — unlike
 `NWM`, `LVTNM` and `HVTPM` — does *not* tick it as "Used in SKY130"
-(PDK-05). The public step list nevertheless contains the step, and the
+(PDK-05). The step list used in this reference nevertheless contains the step, and the
 `pwbm` layer and its rules exist, so we treat the unticked box as a
 documentation inconsistency rather than as evidence that the mask is
 absent (see *Open questions*).
@@ -77,10 +75,7 @@ the regions where the PDK's 20 V devices want either no well
 drain-extended devices, PDK-07; PDK-HV). A block mask does both with
 one lithography.
 
-The alternative — a self-aligned twin well in which an oxide grown on
-the N-well blocks the P-well implant without a second mask — was used
-in older generations (PAT-TWIN-HARRIS) but costs a thermal step and
-cannot make the custom 20 V regions. A drawn P-well mask would be
+The alternative used in older generations — a separately drawn P-well mask, as in the Harris twin-well flow where "an implant blocking photoresist layer 18" is patterned to expose the region "adjacent to N-type well 17" (PAT-TWIN-HARRIS) — needs a second, positively drawn well layer and cannot by itself define the custom 20 V regions. A drawn P-well mask would be
 equivalent to `PWBM` in effect; SKY130 simply chose to draw the
 exceptions rather than the wells.
 
@@ -92,8 +87,7 @@ fab:
 1. **Track preparation.** HMDS prime; no BARC for a coarse layer
    (inference; WIKI-LITHO).
 2. **Thick resist coat.** The resist must stop the deepest P-well
-   boron. IBM's retrograde p-well used boron at 550 keV behind a
-   resist "between 1800–2500 nm" (PAT-WELL-IBM); Hook's IBM study
+   boron. IBM's retrograde p-well used boron at 550 keV behind a resist "typically 1800–2500 nm in thickness" (PAT-WELL-IBM); Hook's IBM study
    modelled a "2.3 µm-thick pwell mask" against 600 keV boron
    (HOOK-2003); Zilog's 600–800 keV p-well needed at least 3.4 µm
    (PAT-RESIST-ZILOG). For a P-well whose peak is at 0.42 µm and whose
@@ -215,14 +209,17 @@ edges the shift raises NMOS Vt (HOOK-2003).
   <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>
 * **SHEU-2006** — Y.-M. Sheu et al., *IEEE Trans. Electron Devices*,
   vol. 53, no. 11, pp. 2792–2798, 2006, DOI 10.1109/TED.2006.884070.
-* **RUBIN-2002** — L. Rubin, W. Morris and J. Jasper, *IIT 2002*,
+* **RUBIN-2002** — L. M. Rubin, W. Morris and C. Jasper, *IIT 2002*,
   pp. 17–20, DOI 10.1109/IIT.2002.1257927.
 
 ## Open questions
 
 * The PDK mask table leaves the "Used in SKY130" column blank for
   PWBM (and for PWDEM) while the step list and the layer rules include
-  it; which of the two is authoritative is not resolvable publicly.
+  it; in `masks.csv` these two `pwbm`/`pwde`-backed masks are the only
+  well-module masks left blank — DNM, NWM, HVTPM and LVTNM are all
+  ticked (PDK-05). Which of the two documents is authoritative is not
+  resolvable publicly.
 * That the reticle is derived from `nwell` ∪ `pwbm` is our inference
   from the absence of a drawn P-well layer; the actual Boolean
   generation rules are not public.

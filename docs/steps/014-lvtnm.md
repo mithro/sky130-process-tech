@@ -15,8 +15,7 @@
 `LVTNM` is the third mask of the flow and the first of the well and
 channel-implant module. The wafer arriving from
 {ref}`NS19 <step-013>` is planar: oxide-filled isolation trenches
-stand slightly proud of active islands that are covered only by the
-thin pad oxide grown at {ref}`BOX <step-002>`. `LVTNM` coats this
+stand slightly proud of active islands covered, we infer, only by the thin pad oxide grown at {ref}`BOX <step-002>` (its fate after {ref}`NS19 <step-013>` is not public). `LVTNM` coats this
 surface with photoresist, exposes it through the *low-Vt N-channel
 mask* reticle and develops it, leaving resist windows through which the
 {ref}`LVTNI <step-015>` implant is placed. The resist is removed at

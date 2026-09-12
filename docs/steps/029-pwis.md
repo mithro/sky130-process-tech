@@ -30,7 +30,7 @@ inference). Because `PWBM` is a *block* mask, the resist covered only
 the N-wells and the 20 V regions: most of the wafer was open and the
 resist area to be removed is smaller than for a normal mask.
 
-The surface beneath is still all oxide (pad oxide on active, trench
+The surface beneath is, we infer, still all oxide (pad oxide on active, trench
 oxide on field), so the full SPM/SC-1/SC-2 sequence is available.
 
 ## Step category

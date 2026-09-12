@@ -27,7 +27,7 @@ in the flow so far (2–3 µm class, inferred on the
 ions for the longest cumulative time, and the summed dose is of order
 10¹³ cm⁻² (illustrative; {ref}`NWI <step-018>`). All three conditions
 thicken the carbonised crust and raise the risk of popping. The wafer
-surface under the resist is still all oxide (pad oxide and trench
+surface under the resist is, we infer, still all oxide (pad oxide and trench
 oxide), which allows the full SPM/SC-1 sequence.
 
 ## Step category
@@ -130,7 +130,7 @@ the crust stage cannot be hurried.
   {ref}`NWM <step-017>` and masked {ref}`NWI <step-018>` and
   {ref}`NWI2 <step-019>` as well.
 * Next: {ref}`HVTPM <step-022>`.
-* The comparable MeV-resist strips are {ref}`DNIS <step-009>` and
+* The comparable heavy-implant-resist strips are {ref}`DNIS <step-009>` and
   {ref}`PWIS <step-029>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
