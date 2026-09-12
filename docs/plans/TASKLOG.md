@@ -72,6 +72,7 @@ deep-dive entries per step page and twelve per category page
 | Date | Scope | Result |
 |------|-------|--------|
 | 2026-08-30 | `main` @ a335c7f, all files + full history | 0 high, 9 medium (wording in `docs/plans/`, "step list" phrasing), 6 low — all fixed on `main` |
+| 2026-09-12 | `main` @ 05150a6, all files + history since a335c7f | 0 high, 35 medium, 105 low — all wording/hedging/citation hygiene; fixes on `topic/provenance-fixes` |
 
 ## Notes
 
