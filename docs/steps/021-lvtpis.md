@@ -26,9 +26,9 @@ in the flow so far (2–3 µm class, inferred on the
 {ref}`NWM <step-017>` page), it has been bombarded by high-energy
 ions for the longest cumulative time, and the summed dose is of order
 10¹³ cm⁻² (illustrative; {ref}`NWI <step-018>`). All three conditions
-thicken the carbonised crust and raise the risk of popping. The wafer
+thicken the carbonised {term}`crust <implant crust>` and raise the risk of {term}`popping`. The wafer
 surface under the resist is, we infer, still all oxide (pad oxide and trench
-oxide), which allows the full SPM/SC-1 sequence.
+oxide), which allows the full {term}`SPM`/{term}`SC-1` sequence.
 
 ## Step category
 
@@ -62,7 +62,7 @@ oxidizing".[^wiki-ash]
 An industry-generic MeV-implant-resist strip for a 200 mm, 130 nm-era
 fab:
 
-1. **Two-stage plasma ash.** A first stage below the popping threshold —
+1. **Two-stage plasma {term}`ash`.** A first stage below the popping threshold —
    "removed by oxygen and nitrogen/hydrogen plasma in a low-temperature
    (<220 °C) environment", preferably 150–220 °C[^pat-strip-mosel] —
    until the crust is consumed, then a hotter oxygen stage for the bulk
@@ -73,13 +73,13 @@ fab:
    NH3, H2/N2, 40C-270C"; "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up
    to 250C".[^skw-01] Downstream plasma is used so that the neutral
    atomic oxygen does the work and charged species recombine before
-   reaching the wafer.[^wiki-ash] Endpoint on the CO emission line, then
+   reaching the wafer.[^wiki-ash] {term}`Endpoint <endpoint>` on the CO emission line, then
    a timed over-ash.
 2. **Wet strip.** SPM (H₂SO₄:H₂O₂, roughly 3:1 to 4:1, self-heated to
    above 100 °C) to dissolve the remaining organics and any popped
    flakes (category page).[^txt-02] SkyWater's Akrion Gamma bench lists
    "Sulfuric".[^skw-01]
-3. **Clean.** SC-1 (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles, SC-2
+3. **Clean.** SC-1 (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles, {term}`SC-2`
    (HCl/H₂O₂/H₂O) for the metals that an implanter's beam-line and disc
    can sputter onto the resist.[^wiki-rca] The pad oxide is preserved
    for the remaining implants.
@@ -114,7 +114,7 @@ crust stage cannot be hurried.
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)**; **CF₄** is available but
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)**; **CF₄** is available but
   attacks the oxide surface and is normally omitted[^skw-01] (category
   page).
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
@@ -159,7 +159,7 @@ crust stage cannot be hurried.
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
-  tools, implanted-resist stripping and RTP of the 0.25–0.13 µm
+  tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
 * Quirk and Serda, *Semiconductor Manufacturing Technology* — fab-floor
   view of ash and wet-clean tools.[^txt-07]

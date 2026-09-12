@@ -18,13 +18,13 @@ three ways, all of which appear in the SKY130 flow (the assignments
 below follow from the step names in the step list used in this
 reference):
 
-* **Dielectric planarisation with a stop layer.** The STI trench-fill
-  oxide is polished back until the nitride hard mask on the active
+* **Dielectric planarisation with a stop layer.** The {term}`STI` trench-fill
+  oxide is polished back until the nitride {term}`hard mask` on the active
   areas is exposed ({ref}`CMPNIT <step-012>`); a sacrificial
   {term}`PSG` is polished over the gate-poly caps ({ref}`CMPP <step-090>`);
   and the pre-metal dielectric is planarised over the local interconnect
   ({ref}`CMPL <step-106>`).
-* **Metal plug formation.** Blanket CVD tungsten is polished off the
+* **Metal plug formation.** Blanket {term}`CVD` tungsten is polished off the
   field, leaving tungsten only in the contact and via holes
   ({ref}`WCMPLI <step-100>`, {ref}`WCMP2 <step-111>`,
   {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`,
@@ -34,7 +34,7 @@ reference):
   remaining thickness ({ref}`CMPM <step-116>`, {ref}`CMPM2 <step-127>`,
   {ref}`CMPM3 <step-142>`, {ref}`CMPM4 <step-157>`), so that the next
   via and metal lithography see a flat surface. The SKY130 design
-  assumptions give, for example, a pre-LI ILD thickness of 0.5 µm.[^pdk-03]
+  assumptions give, for example, a pre-LI {term}`ILD` thickness of 0.5 µm.[^pdk-03]
 
 CMP was developed at IBM in the 1980s — the foundational patents
 describe a "chem-mech polishing method for producing coplanar
@@ -46,7 +46,7 @@ levels multiplied.[^wiki-cmp]
 
 ### Preston's equation
 
-The empirical law of polishing was written down by Preston for plate
+The empirical law of polishing was written down by {term}`Preston <Preston equation>` for plate
 glass in 1927 (Preston 1927, cited below): the removal rate is
 proportional to the pressure and to the relative velocity between pad
 and wafer,
@@ -76,7 +76,7 @@ KOH or NH₄OH.[^cook-1990][^rev-02] For tungsten, Kaufman and co-workers
 at IBM showed that an oxidiser in the slurry (originally potassium
 ferricyanide, later hydrogen peroxide or ferric nitrate) forms a thin,
 soft WO₃ layer that the abrasive removes, exposing fresh metal, so that
-the rate is set by oxidation and the selectivity to oxide by the
+the rate is set by oxidation and the {term}`selectivity` to oxide by the
 slurry's acidity.[^kaufman-1991] The pad — a porous polyurethane,
 "porous polymeric materials with a pore size between 30 and 50
 μm"[^wiki-cmp] — carries the slurry in its pores, and its asperities
@@ -104,7 +104,7 @@ plates.[^zantye-2004][^rev-02]
 ### Endpoint and process control
 
 The polish is stopped by one of: a fixed time derived from a measured
-rate; motor-current or friction endpoint, which changes when the pad
+rate; motor-current or friction {term}`endpoint`, which changes when the pad
 reaches a different material (nitride under oxide, oxide under
 tungsten); or in-situ optical or eddy-current thickness sensing. The
 Applied Mirra "was the first CMP system that successfully integrated

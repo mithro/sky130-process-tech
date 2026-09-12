@@ -13,7 +13,7 @@
 ## What this step is
 
 `PWDEIS` removes the thick photoresist patterned at
-{ref}`PWDEM <step-030>` after it has masked the two drain-extended
+{ref}`PWDEM <step-030>` after it has masked the two {term}`drain-extended <DEMOS>`
 P-well implants {ref}`PWDEI1 <step-031>` and {ref}`PWDEI2 <step-032>`,
 and cleans the wafer for the {ref}`RTAI <step-034>` anneal. It is the
 last of the five implant strips of the well and channel module, and
@@ -24,7 +24,7 @@ the "pre-furnace" level of {ref}`DNIS <step-009>`.
 The resist is a thick implant resist (2 µm class, inferred on the
 {ref}`PWDEM <step-030>` page) that has received two light boron implants
 — of order 10¹² cm⁻² each, illustrative ({ref}`PWDEI1 <step-031>`) — at
-energies, illustratively, up to a few hundred keV. The crust is
+energies, illustratively, up to a few hundred keV. The {term}`crust <implant crust>` is
 therefore modest by the standards of {ref}`LVTPIS <step-021>`, and
 because `pwde` regions are small the open area of the mask is small too:
 the strip removes almost a full wafer's worth of resist. The surface
@@ -36,7 +36,7 @@ field).
 `PWDEIS` is a {ref}`Resist strip / clean <category-strip>` step of the
 *post-implant* type with a *pre-anneal clean* role. The category page
 notes that the state in which the surface is left "must match what
-the next step expects"; here the next step is an RTA in which any
+the next step expects"; here the next step is an {term}`RTA` in which any
 organic or metallic residue would be baked into the silicon.
 
 ## Why this step exists
@@ -48,7 +48,7 @@ contamination it carries would be driven into the channels that every
 implant of this module has just defined. The strip must therefore remove
 all resist and its crust — "transformed into a carbonized crust that is
 difficult to remove"[^pat-strip-tsmc] — without
-popping,[^pat-strip-mosel] and the clean must take off the metals
+{term}`popping`,[^pat-strip-mosel] and the clean must take off the metals
 sputtered onto the wafer over ten implants. ITRS 2001 treats front-end
 surface preparation as a first-order concern for exactly this
 reason.[^itrs-01] A residue left here would be sealed under the gate
@@ -59,7 +59,7 @@ oxides grown at {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`.
 An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 130 nm-era fab:
 
-1. **Plasma ash.** Downstream oxygen plasma with a forming-gas addition;
+1. **Plasma {term}`ash`.** Downstream oxygen plasma with a forming-gas addition;
    a two-stage recipe if the fab runs one for all implant strips — first
    stage "in a low-temperature (<220 °C) environment" with "oxygen and
    nitrogen/hydrogen plasma" until the crust is gone,[^pat-strip-mosel]
@@ -67,10 +67,10 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
    "Gasonic PEP … N2, O2, 120C – 270C", "Iridia … H2/N2, 40C-270C",
    "Mattson Aspen2 … O2, CF4, H2>N2, up to 250C".[^skw-01] The remote
    plasma keeps charged species off the wafer.[^wiki-ash]
-2. **Wet strip.** SPM (H₂SO₄:H₂O₂) for residual organics (category page;
+2. **Wet strip.** {term}`SPM` (H₂SO₄:H₂O₂) for residual organics (category page;
    "Sulfuric" on the Akrion Gamma[^skw-01]).
-3. **Full RCA-type clean.** SC-1 (NH₄OH/H₂O₂/H₂O, 75–80 °C) for
-   particles and SC-2 (HCl/H₂O₂/H₂O, 75–80 °C) for
+3. **Full RCA-type clean.** {term}`SC-1` (NH₄OH/H₂O₂/H₂O, 75–80 °C) for
+   particles and {term}`SC-2` (HCl/H₂O₂/H₂O, 75–80 °C) for
    metals[^wiki-rca][^kern-1990] — the SC-2 step matters more here than
    after the earlier strips because the anneal follows. SkyWater lists
    "DNS wet bench industry standard HF/SC1/SC2" and "FSI Mercury
@@ -90,7 +90,7 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 * **Downstream plasma asher** (Gasonics Aura/PEP, Mattson Aspen,
   Axcelis/Fusion ES, PSK).
 * **Batch wet bench** with SPM, SC-1, SC-2 and rinser/dryer, or a
-  **spray/single-wafer processor** for the RCA clean.
+  **spray/single-wafer processor** for the {term}`RCA clean`.
 * **Surface scanner** (KLA-Tencor Surfscan class).
 
 ## Machines likely used at SkyWater
@@ -107,7 +107,7 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)**.[^skw-01]
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)**.[^skw-01]
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
   acid**[^wiki-rca] (category page); **dilute HF** only if the oxide is
   removed.

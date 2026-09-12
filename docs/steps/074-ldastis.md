@@ -14,7 +14,7 @@
 
 `LDASTIS` removes the resist patterned at {ref}`LDNTM <step-071>` after
 it has masked the lightly doped arsenic tip {ref}`LDASTI <step-072>`
-and the boron halo {ref}`LDBHI <step-073>` of the SONOS memory
+and the boron {term}`halo` {ref}`LDBHI <step-073>` of the {term}`SONOS` memory
 transistors, and cleans the wafer. It is the last strip of the tip
 module and — because the next step is the activation anneal
 {ref}`TIPRTAD <step-075>` — it is also the *pre-anneal clean* for every
@@ -22,9 +22,9 @@ tip and halo implanted since {ref}`NTM <step-064>`.
 
 The resist is, we infer, the standard ~1 µm film (the PDK's nominal
 1.14 µm),[^pdk-03] and it has received a moderate arsenic dose (of
-order 10¹³ cm⁻², typical of an LDD)[^txt-04] plus a light, tilted boron
-dose: a thinner crust than after {ref}`ASTI <step-065>`, but a crust
-nonetheless. Under it lies the screen oxide of {ref}`IOX45 <step-063>`
+order 10¹³ cm⁻², typical of an {term}`LDD`)[^txt-04] plus a light, tilted boron
+dose: a thinner {term}`crust <implant crust>` than after {ref}`ASTI <step-065>`, but a crust
+nonetheless. Under it lies the {term}`screen oxide` of {ref}`IOX45 <step-063>`
 over silicon and polysilicon, now carrying, in different regions, all
 three tips and both halos in their as-implanted, unannealed state.
 
@@ -43,9 +43,9 @@ driven into the silicon by the anneal that follows.
 Two reasons, one ordinary and one specific to its position.
 
 The ordinary one: the resist must be gone, and its arsenic-bearing
-crust with it, before the wafer is heated. Resist that survives an ash
+crust with it, before the wafer is heated. Resist that survives an {term}`ash`
 carbonises further in the anneal and becomes almost impossible to
-remove; flakes of popped crust shadow the spacer deposition that
+remove; flakes of popped crust {term}`shadow <shadowing>` the {term}`spacer` deposition that
 follows the anneal ({ref}`SPNIT <step-076>`).
 
 The specific one: {ref}`TIPRTAD <step-075>` heats the wafer to
@@ -54,7 +54,7 @@ anneal),[^stolk-1997][^agarwal-1999] and any metallic contamination on
 the surface — from the implanter beam lines, the ashers, or handling —
 diffuses into the junction regions at such temperatures and raises
 junction leakage. The pre-anneal clean therefore includes a metal-
-removing step: SC-2 (HCl/H₂O₂/H₂O) after SC-1 in the RCA
+removing step: {term}`SC-2` (HCl/H₂O₂/H₂O) after {term}`SC-1` in the RCA
 sequence,[^wiki-rca][^kern-1990] or an HCl- or HF-based
 alternative.[^ohmi-1996] ITRS 2001's surface-preparation section sets
 the metallic-contamination targets a front-end clean must
@@ -69,14 +69,14 @@ An industry-generic post-implant strip and pre-anneal clean for a
 1. **Plasma ash.** Downstream microwave or RF oxygen plasma with
    nitrogen[^fujimura-1990] or water vapour[^fujimura-1994] additions;
    a cooler first stage — "low-temperature (<220 °C)"[^pat-strip-mosel]
-   — to open the crust without popping,[^fujimura-1989] then a hot
-   stage to clear the bulk, with optical-emission endpoint and a timed
+   — to open the crust without {term}`popping`,[^fujimura-1989] then a hot
+   stage to clear the bulk, with optical-emission {term}`endpoint` and a timed
    over-ash. SkyWater's ashers offer these chemistries: "Gasonic PEP,
    remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF
    microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C" and "Mattson
    Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C".[^skw-01] Downstream
    operation avoids charging the exposed gates.[^wiki-ash]
-2. **Wet strip.** SPM ("3 parts of concentrated sulfuric acid and 1
+2. **Wet strip.** {term}`SPM` ("3 parts of concentrated sulfuric acid and 1
    part of 30 wt. % hydrogen peroxide solution" is
    typical)[^wiki-piranha] for the last organics and the arsenic-
    bearing residue; SkyWater's Akrion Gamma bench lists "Sulfuric,
@@ -121,7 +121,7 @@ An industry-generic post-implant strip and pre-anneal clean for a
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)** or **water vapour** for the
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** or **water vapour** for the
   ash;[^skw-01] CF₄ omitted to protect the screen oxide.
 * **Sulphuric acid and hydrogen peroxide** for SPM;[^wiki-piranha]
   **ammonium hydroxide** for SC-1; **hydrochloric acid** for
@@ -172,7 +172,7 @@ An industry-generic post-implant strip and pre-anneal clean for a
 ### Deep dive
 
 * Kern, *J. Electrochem. Soc.* 1990 — the evolution and chemistry of
-  the RCA clean, including SC-2's role against metals.[^kern-1990]
+  the {term}`RCA clean`, including SC-2's role against metals.[^kern-1990]
 * Kern, *Handbook of Silicon Wafer Cleaning Technology* — cleaning
   chemistry and contamination control before thermal steps.[^kern-handbook]
 * Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor

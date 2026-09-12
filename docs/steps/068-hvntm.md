@@ -17,7 +17,7 @@
 *high-voltage* NMOS transistors — those built on the 110 Å thick gate
 oxide inside the `hvi` regions[^pdk-hv] — and covers everything else,
 so that the arsenic implant {ref}`HVASTI <step-069>` forms their
-lightly doped, graded drain extension. The resist is removed at
+lightly doped, graded drain {term}`extension`. The resist is removed at
 {ref}`HVASTIS <step-070>`.
 
 The PDK lists "High Volt. N-tip, HVNTM" as a mask used in
@@ -27,7 +27,7 @@ generated mask layer `chvntm` (39:0, "High voltage N-tip implant
 mask") with a drawing purpose at 38:20.[^pdk-06] Its design rules are
 headed "Defines tip implants for the HV NMOS" and begin with "Hvntm can
 be drawn inside HVI. Drawn layer will be OR-ed with the CL and
-rechecked for CLDRC" — that is, the reticle is the union of what the
+rechecked for CLDRC" — that is, the {term}`reticle` is the union of what the
 designer draws and a computed layer.[^pdk-periph] The rules are coarse:
 width 0.700 µm (hvntm.1), spacing 0.700 µm (hvntm.2), enclosure of n⁺
 diffusion inside `hvi` by 0.185 µm (hvntm.3), a 0.185 µm space to n⁺
@@ -44,7 +44,7 @@ opening" 0.1 µm; and its high-voltage table gives "Photoresist tilted
 implant penetration" 0.02 µm, "Photoresist tilted implant blocking
 distance" 0.013 µm, "Min size of HVTip" 0.1 µm and an "Extra CD tol for
 HVNTM" of 0.015 µm.[^pdk-03] These numbers are mutually consistent: a
-0.3 µm resist wall shadows a 40° beam for 0.3 µm × tan 40° ≈ 0.25 µm,
+0.3 µm resist wall {term}`shadows <shadowing>` a 40° beam for 0.3 µm × tan 40° ≈ 0.25 µm,
 which less the 0.02 µm the beam penetrates at the resist edge gives
 the 0.232 µm figure (our arithmetic). We therefore read `HVNTM` as a
 *thin-resist* mask for a *large-tilt* implant.
@@ -71,16 +71,16 @@ that destroys the device in hours — the degradation Hu and co-workers
 modelled and showed how to monitor.[^hu-1985-hci] The classical remedies
 are the lightly doped drain,[^ogura-1980] the double-diffused
 drain[^takeda-1982] and, most relevant here, the *large-angle-tilt
-implanted drain* (LATID) of Hori, in which a tilted n⁻ implant is
+implanted drain* ({term}`LATID`) of Hori, in which a tilted n⁻ implant is
 driven under the gate edge so that the drain field is graded and
 overlapped by the gate;[^hori-1989-latid][^hori-1992] Rafí and Campabadal
-compared the hot-carrier behaviour of LDD and LATID
+compared the hot-carrier behaviour of {term}`LDD` and LATID
 devices directly.[^rafi-2001] The PDK's 40° HV tip angle[^pdk-03] is
 the signature of exactly this kind of drain, so we infer that the 5 V
 NMOS family — `nfet_g5v0d10v5`, the ESD NMOS built on it, and the
 native 5 V device whose "minimum gate length" is 0.9 µm[^pdk-07] —
-receives its extension here. The drain-extended 11 V/16 V and 20 V
-NMOS, which share the 110 Å oxide,[^pdk-hv] use an N-well drift region
+receives its extension here. The {term}`drain-extended <DEMOS>` 11 V/16 V and 20 V
+NMOS, which share the 110 Å oxide,[^pdk-hv] use an N-well {term}`drift region`
 as their drain extension[^pdk-hv][^mitros-2001] and may or may not
 also take this tip on their source side; the PDK's rule that `hvntm`
 "must enclose ESD_nwell_tap inside hvi" (hvntm.7)[^pdk-periph] shows
@@ -96,14 +96,14 @@ than that.
 
 Without `HVNTM`, the 5 V transistors would either take the 1.8 V tip
 and fail hot-carrier lifetime, or take no tip and have an undoped gap
-under the spacer between channel and n⁺ drain.
+under the {term}`spacer` between channel and n⁺ drain.
 
 ## How it is typically performed
 
 An industry-generic thin-resist implant-mask sequence for a 200 mm,
 130 nm-era fab:
 
-1. **Surface preparation.** Dehydration bake and HMDS prime on the
+1. **Surface preparation.** Dehydration bake and {term}`HMDS` prime on the
    screen-oxide surface left by {ref}`ASTIS <step-067>`.
 2. **Resist coat.** A thin positive resist — the PDK's 0.3 µm
    "Photoresist thickness for HV Tip Implants"[^pdk-03] — spun at a
@@ -114,10 +114,10 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
    penetration" of 0.02 µm[^pdk-03] acknowledges that the resist edge
    is not a perfect wall to a 40° beam.
 3. **Exposure.** The 0.7 µm width and space rules[^pdk-periph] are far
-   above i-line resolution (k₁ ≈ 1.2 at NA 0.6);[^wiki-litho] with ITRS
+   above i-line resolution ({term}`k₁ <k1>` ≈ 1.2 at {term}`NA` 0.6);[^wiki-litho] with ITRS
    2001 reserving 248 nm for critical layers,[^itrs-03] we infer an
    i-line exposure.
-4. **Alignment.** To poly. The overlay requirement comes from the
+4. **Alignment.** To poly. The {term}`overlay` requirement comes from the
    shadowing geometry: the 0.232 µm "HVNTM shadowing" and 0.1 µm
    minimum tip-opening width[^pdk-03] fix how far a resist edge must
    stand from a gate for the tilted beam to reach it on the intended
@@ -125,17 +125,17 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 5. **Develop** in 0.26 N TMAH,[^txt-02] rinse, dry; a post-develop bake
    or UV cure to stabilise the thin film against the implant (industry
    practice).[^txt-02]
-6. **Inspection.** Overlay to poly; CD; after-develop defect
+6. **Inspection.** Overlay to poly; {term}`CD`; after-develop defect
    inspection, which matters more than usual because pinholes in a
    0.3 µm film would let arsenic through.
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm: ASML PAS 5500/100–/275 series, Nikon
+* **i-line {term}`stepper`**, 200 mm: ASML PAS 5500/100–/275 series, Nikon
   NSR-2205i, Canon FPA-3000i.[^txt-05]
 * **Coat/develop track** with a thin-resist recipe (TEL, DNS/SCREEN,
   Sokudo).
-* **Overlay metrology** (KLA-Tencor 5xxx/Archer) and a CD-SEM.
+* **Overlay metrology** (KLA-Tencor 5xxx/Archer) and a {term}`CD-SEM`.
 
 ## Machines likely used at SkyWater
 
@@ -166,7 +166,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 * Next: {ref}`HVASTI <step-069>` (the 40° arsenic implant), then
   {ref}`HVASTIS <step-070>` (strip).
 * Sibling tip masks: {ref}`NTM <step-064>` (1.8 V NMOS),
-  {ref}`LDNTM <step-071>` (SONOS transistors).
+  {ref}`LDNTM <step-071>` ({term}`SONOS` transistors).
 * The drain-extended devices' N-well drift regions:
   {ref}`NWM <step-017>`, {ref}`PWDEM <step-030>`; activation:
   {ref}`TIPRTAD <step-075>`.
@@ -227,7 +227,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 * Mitros et al. (TI), *IEEE TED* 2001 — drain-extended transistors in
   a logic process, the other high-voltage drain design in SKY130.[^mitros-2001]
 * Kouznetsov (Cypress), US 6,531,366 — a high-voltage device with
-  self-aligned graded junctions in a CMOS flow.[^pat-hv-graded-cyp]
+  self-aligned {term}`graded junctions <graded junction>` in a CMOS flow.[^pat-hv-graded-cyp]
 * Mitros (TI), US 6,660,603 — drain-extended transistors with
   self-aligned channel and drain extensions.[^pat-demos-ti]
 * Gardner, Hause and Fulford (AMD), US 5,793,090 — separate LDD

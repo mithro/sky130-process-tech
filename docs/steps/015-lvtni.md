@@ -21,25 +21,25 @@ N-well and P-well implants that follow at
 difference in threshold voltage between the low-Vt N-channel devices of
 the PDK and the standard ones. The dopant enters the active silicon
 through what we infer to be the pad oxide left by
-{ref}`NS19 <step-013>`, acting as the screen oxide (see the open
-question there); a Cypress SONOS patent from the same lineage describes
+{ref}`NS19 <step-013>`, acting as the {term}`screen oxide` (see the open
+question there); a Cypress {term}`SONOS` patent from the same lineage describes
 exactly this arrangement, with "dopants … implanted into substrate 204
 through the pad oxide 209" of "about 10 nanometers (nm) to about
 20 nm".[^pat-04]
 
-Which regions receive the implant depends on the reticle polarity
+Which regions receive the implant depends on the {term}`reticle` polarity
 discussed on the {ref}`LVTNM <step-014>` page. The PDK describes the
 drawn `lvtn` layer as defining "regions to block Vt adjust implant for
 low Vt LV PMOS/NMOS, SONOS FETs and Native NMOS".[^pdk-periph] Two
 readings are possible:
 
-* **Block reading.** `LVTNI` is the baseline NMOS threshold-adjust
+* **Block reading.** `LVTNI` is the baseline NMOS {term}`threshold-adjust <threshold-adjust implant>`
   implant (a p-type species) given to every future NMOS channel *except*
   those drawn as `lvtn`; low-Vt, native and SONOS channels are the ones
   that skip it. This matches the PDK's word "block" and the statement
   that native devices are "constructed by blocking out all VT
   implants".[^pdk-07]
-* **Counter-dope reading.** `LVTNI` is an n-type implant delivered
+* **{term}`Counter-dope <counter-doping>` reading.** `LVTNI` is an n-type implant delivered
   *only* into `lvtn` regions, which lowers the NMOS threshold by
   partially compensating the p-type channel. A Round Rock/Micron patent
   describes low-Vt devices obtained in this way, with a "counter-doped
@@ -105,7 +105,7 @@ below are typical or taken from contemporaneous patents.
   at a concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a channel
   implant.[^pat-vt-amd]
 * **Tilt and twist.** A few degrees of tilt with twist to suppress
-  channelling — "most implantation is carried out a few degrees
+  {term}`channelling` — "most implantation is carried out a few degrees
   off-axis";[^wiki-implant] the PDK's assumptions table records 7° as
   the angle for tip implants,[^pdk-03] which is also the textbook
   convention for channel implants.[^txt-02]
@@ -117,7 +117,7 @@ below are typical or taken from contemporaneous patents.
 * **Anneal.** None here; activation waits for {ref}`RTAI <step-034>`,
   after all well implants.
 * **Monitoring.** Modulated-reflectance (Therma-Wave) on product or
-  monitor wafers, since the dose is too low for sheet resistance to be a
+  monitor wafers, since the dose is too low for {term}`sheet resistance` to be a
   sensitive check (category page).
 
 ## Machines typically used
@@ -127,7 +127,7 @@ below are typical or taken from contemporaneous patents.
   Nissin[^txt-09] (category page). The Eaton 8250HT is described as
   covering "3keV to 750keV" with beam currents "between 4µA and
   3,500µA".[^axcelis-8250]
-* **Therma-Wave** modulated-reflectance monitor; four-point probe on
+* **Therma-Wave** modulated-reflectance monitor; {term}`four-point probe` on
   monitor wafers after a monitor anneal.
 
 ## Machines likely used at SkyWater
@@ -213,7 +213,7 @@ below are typical or taken from contemporaneous patents.
 ### Deep dive
 
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — arsenic and
-  BF₂/indium Vt adjusts; counter-doped low-Vt channel.[^pat-vt-rrr]
+  BF₂/indium {term}`Vt` adjusts; counter-doped low-Vt channel.[^pat-vt-rrr]
 * Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
   boron 1e12–1e13 cm⁻² at 50–100 keV.[^pat-vt-lsi]
 * Krivokapic and Milic (AMD), US 6,238,982 — channel implant

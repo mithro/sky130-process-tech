@@ -113,7 +113,7 @@ the bulk, and subsequent hot steps grow them. The resulting SiO₂
 precipitates and their associated dislocation loops trap fast-diffusing
 metals such as Fe, Cu and Ni far from the transistors ("intrinsic
 gettering"), while the denuded zone near the surface stays defect-free.
-Because the thermal budget of a 130 nm process is small, wafer vendors
+Because the {term}`thermal budget` of a 130 nm process is small, wafer vendors
 increasingly supply material whose precipitation behaviour has been
 pre-set by the crystal-growth conditions.[^txt-01][^itrs-01] Backside
 damage or polysilicon films provide alternative "extrinsic"
@@ -220,7 +220,7 @@ The substrate category has no process tool in the fab itself; the
   intrinsic point defects in crystals and wafers, the basis of
   "perfect silicon" and controlled precipitation.[^falster-2000]
 * Ryuta et al., *JJAP* 1990 — the discovery of crystal-originated pits
-  (COPs) revealed by SC-1 cleaning.[^ryuta-1990]
+  (COPs) revealed by {term}`SC-1` cleaning.[^ryuta-1990]
 * Borghesi et al., *JAP* 1995 — a long review of oxygen precipitation in
   silicon.[^borghesi-1995]
 * Myers, Seibt and Schröter, *JAP* 2000 — review of the mechanisms of

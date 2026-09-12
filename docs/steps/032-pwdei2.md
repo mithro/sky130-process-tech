@@ -17,10 +17,10 @@ devices, run through the {ref}`PWDEM <step-030>` resist directly after
 {ref}`PWDEI1 <step-031>`. It is the last implant of the well and channel
 module; only the {ref}`PWDEIS <step-033>` strip and the
 {ref}`RTAI <step-034>` anneal remain before the flow moves on to the
-SONOS module at {ref}`TUNM <step-035>`. As with the other "2" implants
+{term}`SONOS` module at {ref}`TUNM <step-035>`. As with the other "2" implants
 of the module, its name is the only public description; we infer a
 second energy of the same species, completing a two-member chained
-profile for the lightly doped drain-extended P-well
+profile for the lightly doped {term}`drain-extended <DEMOS>` P-well
 (inference).[^txt-01]
 
 ## Step category
@@ -31,7 +31,7 @@ profile for the lightly doped drain-extended P-well
 
 ## Why this step exists
 
-A drift region is not a uniform slab. The classic design has doping that
+A {term}`drift region` is not a uniform slab. The classic design has doping that
 is heaviest under the drain contact — to keep on-resistance low and to
 make an ohmic transition to the n⁺ or p⁺ drain — and lightest next to
 the channel, where the peak electric field occurs at the gate edge and
@@ -70,7 +70,7 @@ An industry-generic second drift-well implant for a 200 mm,
 * **Sequence.** Back-to-back with `PWDEI1` on the same tool if the
   energies allow.
 * **Anneal.** {ref}`RTAI <step-034>`, plus the remaining front-end
-  thermal budget — a lightly doped, deep well is the profile least
+  {term}`thermal budget` — a lightly doped, deep well is the profile least
   affected by the later short anneals (category page on
   {ref}`anneal <category-anneal>`).
 
@@ -80,7 +80,7 @@ An industry-generic second drift-well implant for a 200 mm,
   750keV"[^axcelis-8250]; Varian E500) for light doses at moderate
   energy, or a **high-energy batch implanter** (Axcelis GSD/HE) for the
   deep member.
-* **Four-point probe** metrology on monitor wafers.
+* **{term}`Four-point probe <four-point probe>`** metrology on monitor wafers.
 
 ## Machines likely used at SkyWater
 
@@ -123,12 +123,12 @@ An industry-generic second drift-well implant for a 200 mm,
 
 * Wikipedia, *LDMOS* — drift regions formed by chained
   implants.[^wiki-ldmos]
-* Wikipedia, *Ion implantation* — energies, sources, channelling and
+* Wikipedia, *Ion implantation* — energies, sources, {term}`channelling` and
   tilt in one page.[^wiki-implant]
 * Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 2 (CMOS
   well formation) and ch. 8 (ion implantation).[^txt-01]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — channel
-  engineering, surface- versus buried-channel PMOS, high-voltage
+  engineering, surface- versus {term}`buried-channel PMOS`, high-voltage
   MOS.[^txt-04]
 
 ### Deep dive
@@ -139,10 +139,10 @@ An industry-generic second drift-well implant for a 200 mm,
   MOS transistors added to a 0.18 µm logic process.[^mitros-2001]
 * Mai and Rücker (IHP), *Solid-State Electronics* 2011 — 10 V
   drain-extended devices in a 0.13 µm technology.[^mai-2011]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde N-well
+* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — {term}`retrograde N-well <retrograde well>`
   and P-well energies, doses and resist thickness.[^pat-well-ibm]
 * Lee and Son (Hyundai/Hynix), US 6,455,402 — chained retrograde
-  twin-well implants and a 1000 °C, 10 s RTA.[^pat-well-hynix]
+  twin-well implants and a 1000 °C, 10 s {term}`RTA`.[^pat-well-hynix]
 * Appels and Vaes (Philips), IEDM 1979 — the original RESURF paper:
   vertical and lateral depletion of a thin drift layer.[^appels-1979]
 * Ludikhuize (Philips), ISPSD 2000 — a review of RESURF design rules for

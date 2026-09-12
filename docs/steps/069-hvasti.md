@@ -12,22 +12,22 @@
 
 ## What this step is
 
-`HVASTI` is the arsenic implant that forms the drain extension of the
+`HVASTI` is the arsenic implant that forms the drain {term}`extension` of the
 high-voltage (5 V-class) NMOS transistors. Through the thin resist
-windows opened at {ref}`HVNTM <step-068>`, and through the screen oxide
+windows opened at {ref}`HVNTM <step-068>`, and through the {term}`screen oxide`
 inferred at {ref}`IOX45 <step-063>`, arsenic ions strike the wafer at a
 steep angle — the PDK's assumptions page gives "Angle for HV tip
 implant" 40° and "Twist angle for HV Tip" 23°[^pdk-03] — so that the
 implanted region reaches *under* the edge of the polysilicon gate
 rather than stopping at it. After {ref}`TIPRTAD <step-075>` the result
 is a lightly doped, graded n⁻ region overlapped by the gate on both
-sides of the channel: the *large-angle-tilt implanted drain* (LATID) of
+sides of the channel: the *large-angle-tilt implanted drain* ({term}`LATID`) of
 Hori,[^hori-1989-latid][^hori-1992] the modern descendant of the lightly
 doped drain.[^ogura-1980]
 
 The step code says arsenic; the PDK confirms that its N-tip species is
 arsenic in general ("N Tip (As)").[^pdk-03] Energy and dose are not
-public. Unlike the 1.8 V tip there is no halo in the step list used in
+public. Unlike the 1.8 V tip there is no {term}`halo` in the step list used in
 this reference between this implant and its strip
 {ref}`HVASTIS <step-070>`, which is consistent with a device whose
 0.5 µm "HV MOSFET channel length"[^pdk-03] does not need one
@@ -36,11 +36,11 @@ this reference between this implant and its strip
 ## Step category
 
 `HVASTI` is an {ref}`Ion implantation <category-implant>` step of the
-*LDD* class: a moderate dose — of order 10¹³ cm⁻² is typical of an LDD
+*{term}`LDD`* class: a moderate dose — of order 10¹³ cm⁻² is typical of an LDD
 for a 3.3–5 V transistor[^txt-04] — at tens of keV, delivered at a
 large tilt with wafer rotation. It is the flow's most steeply tilted
 implant, and the one whose geometry the PDK documents most completely
-(resist thickness, angle, twist, shadowing, penetration).[^pdk-03]
+(resist thickness, angle, twist, {term}`shadowing`, penetration).[^pdk-03]
 
 ## Why this step exists
 
@@ -54,7 +54,7 @@ group compared drain structures for minimum hot-carrier
 generation;[^takeda-1982] and Hori's LATID improved on the LDD by
 implanting the n⁻ region at a large tilt so that it lies *under* the
 gate, where the gate field keeps it conductive, instead of under the
-spacer, where an un-gated n⁻ region adds series resistance and can
+{term}`spacer`, where an un-gated n⁻ region adds series resistance and can
 itself be damaged by hot carriers.[^hori-1992] Rafí and Campabadal's
 direct comparison of LDD and LATID NMOS shows the reliability
 difference.[^rafi-2001] King et al. showed how the spacer over the n⁻
@@ -66,7 +66,7 @@ gate-overlapped, tilt-implanted drain. Which devices get it is an
 inference: the 5 V/10.5 V NMOS `nfet_g5v0d10v5`, the ESD NMOS built on
 it, and the native 5 V NMOS with its 0.9 µm minimum gate
 length,[^pdk-07] all on the 110 Å oxide.[^pdk-hv] The 11 V/16 V and
-20 V drain-extended NMOS use an N-well drift region as their drain
+20 V {term}`drain-extended <DEMOS>` NMOS use an N-well {term}`drift region` as their drain
 extension[^pdk-hv][^mitros-2001] and would need this tip, if at all,
 only on the source side.
 
@@ -86,7 +86,7 @@ fab (SKY130's energy and dose are not public):
   gives a better-defined overlap, at the price of a less graded
   profile.
 * **Energy and dose.** Tens of keV and of order 10¹³ cm⁻²
-  (typical);[^txt-04][^txt-01] the dose sets the n⁻ sheet resistance
+  (typical);[^txt-04][^txt-01] the dose sets the n⁻ {term}`sheet resistance`
   and hence the trade between hot-carrier margin and on-resistance,
   and the energy sets how far the tilted beam reaches under the gate.
   The PDK's "N+ or P+ S/D (XJ)" of 0.1 µm[^pdk-03] bounds the depth the
@@ -158,7 +158,7 @@ fab (SKY130's energy and dose are not public):
   oxide: {ref}`IOX45 <step-063>`.
 * Next: {ref}`HVASTIS <step-070>` (strip).
 * The other tips: {ref}`ASTI <step-065>` (1.8 V NMOS),
-  {ref}`LDASTI <step-072>` (SONOS transistors); the 1.8 V halo:
+  {ref}`LDASTI <step-072>` ({term}`SONOS` transistors); the 1.8 V halo:
   {ref}`BHI <step-066>`.
 * The thick gate oxide of these devices: {ref}`GOX100 <step-043>`,
   {ref}`LVOM <step-044>`; the drain-extended devices' drift wells:
@@ -189,7 +189,7 @@ fab (SKY130's energy and dose are not public):
 ### High-level understanding
 
 * Wikipedia, *Hot-carrier injection* — the failure mode.[^wiki-hci]
-* Wikipedia, *Ion implantation* — tilt, channelling, sources.[^wiki-implant]
+* Wikipedia, *Ion implantation* — tilt, {term}`channelling`, sources.[^wiki-implant]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD, LATID
   and hot-carrier design.[^txt-04]
 * Plummer, Deal and Griffin, *Silicon VLSI Technology* — implantation
@@ -217,7 +217,7 @@ fab (SKY130's energy and dose are not public):
   LATID MOSFETs.[^chen-1995]
 * Mitros et al. (TI), *IEEE TED* 2001 — the drain-extended
   alternative.[^mitros-2001]
-* Kouznetsov (Cypress), US 6,531,366 — self-aligned graded junctions
+* Kouznetsov (Cypress), US 6,531,366 — self-aligned {term}`graded junctions <graded junction>`
   for a high-voltage device.[^pat-hv-graded-cyp]
 * Lin, Yoo and Liang (TSMC), US 5,372,957 — multiple tilted-angle
   implantation with rotation.[^pat-quad-tsmc]

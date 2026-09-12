@@ -22,7 +22,7 @@ only where the gate implant did not. The resist is stripped at
 
 Unlike `RPM`, this mask is not in the PDK's public mask table, which
 lists "Resistor Protect, RPM" but no reverse mask.[^pdk-05] That is not
-surprising if, as we infer, the two reticles are generated from the same
+surprising if, as we infer, the two {term}`reticles <reticle>` are generated from the same
 drawn layer, `rpm` (GDS 86:20, "300 ohms/square polysilicon resistor
 implant"),[^pdk-06] one in each tone, and a designer never needs to know
 that two exist. The word "Rev" in the step list used in this reference
@@ -50,7 +50,7 @@ shift; a continuous field of resist with holes in it cannot).
 The two flavours of precision resistor in SKY130 are p-type films
 with sheet resistances of 300 Ω/sq and 2000 Ω/sq[^pdk-07][^pdk-08]
 inside a poly layer that is otherwise n⁺ at 48.2 Ω/sq.[^pdk-08] The
-resistance of a poly resistor is a steep function of its dose:
+resistance of a {term}`poly resistor` is a steep function of its dose:
 Seto's grain-boundary trapping model shows the resistivity falling by
 orders of magnitude over a narrow doping range once the traps at the
 boundaries are filled,[^seto-1975] and Mandurah, Saraswat and Kamins
@@ -77,7 +77,7 @@ exactly such edge effects.[^tsang-2014]
 An industry-generic implant-mask litho sequence, as on
 {ref}`RPM <step-049>`, with the differences noted:
 
-1. **Surface preparation.** HMDS prime on the track. The surface is
+1. **Surface preparation.** {term}`HMDS` prime on the track. The surface is
    the doped a-Si film with the thin chemical oxide left by
    {ref}`P1IS <step-051>`.
 2. **Resist coat.** i-line positive resist of about 1 µm (the PDK's
@@ -89,15 +89,15 @@ An industry-generic implant-mask litho sequence, as on
    reticle: opaque field, clear windows the size of the resistor
    bodies plus enclosure. The inference that the layer is printed on
    i-line rests on its 1.27 µm / 0.84 µm geometry, far above the
-   i-line limit (category page, CD = k₁·λ/NA[^wiki-litho]).
-4. **Alignment.** To the STI/active marks of {ref}`FOM <step-004>`,
+   i-line limit (category page, {term}`CD` = {term}`k₁ <k1>`·λ/{term}`NA`[^wiki-litho]).
+4. **Alignment.** To the {term}`STI`/active marks of {ref}`FOM <step-004>`,
    as for `RPM`, because the poly is still unpatterned. Since both
-   `RPM` and `RRPM` align to the same reference, their mutual overlay
+   `RPM` and `RRPM` align to the same reference, their mutual {term}`overlay`
    is the sum of two registrations — the reason the drawn resistor is
    enclosed by `rpm` with margin[^pdk-periph] rather than butting the
    n⁺ region. Any gap between the `RPM` island and the `RRPM` window
    leaves an undoped strip of poly; any overlap leaves a strip doped
-   both n⁺ and p, and Hook et al. show how lateral straggle at a
+   both n⁺ and p, and Hook et al. show how lateral {term}`straggle` at a
    resist edge blurs the boundary further.[^hook-2003]
 5. **Post-exposure bake, develop** (2.38 % TMAH[^wiki-tmah]), rinse,
    hard bake or UV cure.
@@ -110,7 +110,7 @@ mostly chrome. Neither tone nor resist is stated publicly.
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
+* **i-line {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i), or a KrF tool (category page).
 * **Coat/develop track**; **overlay metrology**.
 

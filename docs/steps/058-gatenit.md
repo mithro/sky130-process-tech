@@ -28,7 +28,7 @@ the drawn layer `npc` (GDS 95:20) is described as "Nitride poly cut
 resistor to be enclosed by `npc` by 0.095 µm (rpm.5) and keep `npc`
 0.090 µm from any gate (npc.4).[^pdk-periph] In the step list the
 nitride cut ({ref}`NPCM <step-078>`/{ref}`NPCME <step-079>`) comes
-*after* the spacer etch ({ref}`SPE <step-077>`) and before the
+*after* the {term}`spacer` etch ({ref}`SPE <step-077>`) and before the
 source/drain masks. We therefore infer that the nitride deposited
 here stays on top of the poly through gate etch, spacer formation and
 the source/drain implants, and is opened only where the
@@ -40,8 +40,8 @@ spacer etch; the table does not define the term further.
 ## Step category
 
 `GATENIT` is a {ref}`Thin-film deposition <category-deposition>` step:
-a silicon nitride deposited either by furnace LPCVD from
-dichlorosilane and ammonia or by PECVD from silane and ammonia. Both
+a silicon nitride deposited either by furnace {term}`LPCVD` from
+dichlorosilane and ammonia or by {term}`PECVD` from silane and ammonia. Both
 are on SkyWater's public capability list — "LPCVD nitride" among the
 Aviza furnace processes, and "PECVD nitride C1" and "PECVD silane
 oxide/nitride/oxynitride, C1" among the PECVD tools[^skw-01] — and no
@@ -56,31 +56,31 @@ as much as its mechanical ones.
 A nitride cap on a poly gate can serve several purposes, and the
 public evidence supports more than one of them:
 
-* **Hard mask and anti-reflective layer for the gate lithography.**
+* **{term}`Hard mask <hard mask>` and anti-reflective layer for the gate lithography.**
   Poly is highly reflective at 248 nm and a gate layer printed at
   0.15 µm ({ref}`P1M <step-061>`) needs reflectivity control. Silicon
-  oxynitride and nitride films deposited by PECVD were the standard
+  {term}`oxynitride` and nitride films deposited by PECVD were the standard
   *inorganic* anti-reflective layers of the KrF generation: Ogawa et
   al. demonstrated a "complete antireflective layer" of this kind
   for KrF lithography,[^ogawa-1993] Dijkstra and Juffermans showed
   how to optimise its thickness and index,[^dijkstra-1993] Czech et
   al. used one specifically to reduce linewidth variation at the
   gate-conductor level,[^czech-1993] and He et al. describe a
-  production inorganic ARC process for deep-UV.[^he-1998] Such a
+  production inorganic {term}`ARC` process for deep-UV.[^he-1998] Such a
   layer doubles as a hard mask: Bell and Joubert compared gate etches
   masked by resist and by a hard mask,[^bell-1997] and the resist can
   be stripped before the poly is etched, which improves the profile
   and removes the resist's contribution to line-edge
   roughness.[^desvoivres-2000] Whether SKY130 uses the nitride this
-  way, or relies on an organic BARC as well, is not public
+  way, or relies on an organic {term}`BARC` as well, is not public
   ({ref}`P1M <step-061>`).
 * **A cap that stays.** Because the nitride is cut only under contacts
   ({ref}`NPCM <step-078>`), the gate poly is sealed during the tip,
-  halo and source/drain implants. That is consistent with — and, we
+  {term}`halo` and source/drain implants. That is consistent with — and, we
   infer, the reason for — doping the gate *before* patterning at
   {ref}`P1I <step-050>`: a capped gate cannot be doped by the
   source/drain implants, as in a conventional dual-gate flow.[^wong-1988]
-  A sealed gate also cannot lose dopant or be counter-doped, and its
+  A sealed gate also cannot lose dopant or be {term}`counter-doped <counter-doping>`, and its
   top surface is protected from the plasma and wet steps that follow.
 * **Resistor protection.** The precision resistors are enclosed by
   `npc` with a defined margin,[^pdk-periph] so their bodies remain
@@ -88,9 +88,9 @@ public evidence supports more than one of them:
   cap is part of what makes the resistor's end resistance
   reproducible.
 * **A stop layer.** The step list contains a "CMP over poly"
-  ({ref}`CMPP <step-090>`) after the sacrificial PSG deposition; a
+  ({ref}`CMPP <step-090>`) after the sacrificial {term}`PSG` deposition; a
   nitride on top of the poly is the natural polish stop for such a
-  step, as the STI nitride is for {ref}`CMPNIT <step-012>`. This is an
+  step, as the {term}`STI` nitride is for {ref}`CMPNIT <step-012>`. This is an
   inference from the step order only.
 
 Without a cap, the gate would be doped by every later implant, the
@@ -107,7 +107,7 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
   the reactor,[^roenigk-1987] and Habraken and Kuiper review the film
   properties.[^habraken-1994] The film is stoichiometric, dense, about
   1 GPa tensile[^temple-boyer-1998] and deposits on both sides of the
-  wafer — one reason a backside film removal
+  wafer — one reason a {term}`backside film removal`
   ({ref}`BFR <step-060>`) follows. The deposition temperature would
   crystallise the amorphous gate film and begin activating its
   dopants, which is not necessarily unwelcome.
@@ -122,7 +122,7 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
   are made.[^pat-oxime-amd] A PECVD film keeps the poly amorphous and
   coats only the front side.
 * **Thickness.** Not public. An ARC is tuned to a few tens of
-  nanometres; a hard mask or CMP stop is thicker. The PDK's 0.2 µm
+  nanometres; a hard mask or {term}`CMP` stop is thicker. The PDK's 0.2 µm
   "poly cap after SPE"[^pdk-03] suggests the cap *stack* (nitride plus
   oxide) is of hard-mask thickness, if our reading of that entry is
   right.
@@ -170,7 +170,7 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
   {ref}`NPCM <step-078>`/{ref}`NPCME <step-079>`; possible polish stop
   at {ref}`CMPP <step-090>`.
 * Other nitrides: {ref}`ISONIT <step-003>` (STI), {ref}`ONO <step-040>`
-  (SONOS), {ref}`SPNIT <step-076>` (spacer), {ref}`LINIT <step-104>`.
+  ({term}`SONOS`), {ref}`SPNIT <step-076>` (spacer), {ref}`LINIT <step-104>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 ## References
@@ -194,9 +194,9 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 * Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
 * Wikipedia, *Anti-reflective coating* — inorganic ARCs.[^wiki-arc]
 * Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
-  CVD nitride.[^txt-02]
+  {term}`CVD` nitride.[^txt-02]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — gate stacks
-  and DUV reflectivity control.[^txt-05]
+  and {term}`DUV` reflectivity control.[^txt-05]
 
 ### Deep dive
 

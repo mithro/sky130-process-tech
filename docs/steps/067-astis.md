@@ -14,7 +14,7 @@
 
 `ASTIS` removes the photoresist patterned at {ref}`NTM <step-064>`
 after it has masked two implants — the arsenic tip
-{ref}`ASTI <step-065>` and the boron halo {ref}`BHI <step-066>` — and
+{ref}`ASTI <step-065>` and the boron {term}`halo` {ref}`BHI <step-066>` — and
 cleans the wafer so that the next tip mask, {ref}`HVNTM <step-068>`, can
 be coated on a bare, particle-free surface. It is the first resist strip
 after the gate etch and the first of the three strips in the tip
@@ -25,12 +25,12 @@ such an "…S" step ({ref}`HVASTIS <step-070>`,
 The resist being removed is the roughly 1 µm i-line implant resist
 inferred on the {ref}`NTM <step-064>` page (the PDK's nominal
 photoresist thickness is 1.14 µm).[^pdk-03] It has received a heavy
-arsenic dose — of order 10¹⁴–10¹⁵ cm⁻² (typical of an extension
+arsenic dose — of order 10¹⁴–10¹⁵ cm⁻² (typical of an {term}`extension`
 implant)[^txt-01] — and a light, tilted boron dose. That makes it a
 *hard* strip by the standards of the flow: the arsenic has turned the
-top of the resist into a carbonised crust,[^orvek-1985][^fujimura-1989]
+top of the resist into a carbonised {term}`crust <implant crust>`,[^orvek-1985][^fujimura-1989]
 and the crust contains arsenic. The surface under the resist is, we
-infer, the thin screen oxide from {ref}`IOX45 <step-063>` over silicon
+infer, the thin {term}`screen oxide` from {ref}`IOX45 <step-063>` over silicon
 and over the capped polysilicon gates; no metal is present, so the full
 acid–peroxide sequence is available, but the screen oxide must survive
 because two more tip implants will be made through it.
@@ -55,7 +55,7 @@ than after most masks. The {ref}`HVNTM <step-068>` resist that follows
 is, per the PDK's assumptions page, only 0.3 µm thick ("Photoresist
 thickness for HV Tip Implants")[^pdk-03] — a film that a flake of popped
 crust or a ridge of residue would easily disturb, and whose 40° tilted
-implant[^pdk-03] would be shadowed by any particle standing on the
+implant[^pdk-03] would be {term}`shadowed <shadowing>` by any particle standing on the
 surface. The crust also carries the implanted arsenic and whatever
 metals the beam line has sputtered onto it; both must leave the wafer
 before the {ref}`TIPRTAD <step-075>` anneal can drive them in. A
@@ -71,7 +71,7 @@ landed on.
 An industry-generic high-dose implant-strip sequence for a 200 mm,
 130 nm-era fab:
 
-1. **Plasma ash, two stages.** Downstream (remote) microwave or RF
+1. **Plasma {term}`ash`, two stages.** Downstream (remote) microwave or RF
    oxygen plasma. Because "the top portion of the photoresist layer is
    transformed into a carbonized crust that is difficult to
    remove"[^pat-strip-tsmc] and a conventional "high temperature
@@ -91,12 +91,12 @@ An industry-generic high-dose implant-strip sequence for a 200 mm,
    is used because "monatomic oxygen is electrically neutral" and the
    remote plasma "prevents damage to the wafer surface"[^wiki-ash] —
    which matters with gate oxide and gate edges now exposed.
-2. **Wet strip and clean.** Sulphuric acid–hydrogen peroxide (SPM,
+2. **Wet strip and clean.** Sulphuric acid–hydrogen peroxide ({term}`SPM`,
    "piranha"), "a typical mixture is 3 parts of concentrated sulfuric
    acid and 1 part of 30 wt. % hydrogen peroxide solution",[^wiki-piranha]
    dissolves the remaining organics and the arsenic-bearing residue;
-   SC-1 (NH₄OH/H₂O₂/H₂O at 75–80 °C) then removes particles, with an
-   optional SC-2 (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] SkyWater's Akrion
+   {term}`SC-1` (NH₄OH/H₂O₂/H₂O at 75–80 °C) then removes particles, with an
+   optional {term}`SC-2` (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] SkyWater's Akrion
    Gamma bench lists "Sulfuric, SC1" among its chemistries.[^skw-01]
    Sulphur-trioxide[^bergman-2009] and formulated
    solvent-based[^visintin-2006] strippers are the published
@@ -138,7 +138,7 @@ practice).[^txt-02]
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)** and, on the Iridia,
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** and, on the Iridia,
   **water vapour** for the ash;[^skw-01] **CF₄** is available but would
   attack the screen oxide and is normally omitted.
 * **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** for
@@ -175,7 +175,7 @@ practice).[^txt-02]
   tool list.[^job-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the popping
+* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the {term}`popping`
   mechanism and a low-temperature first ash stage.[^pat-strip-mosel]
 * Chan, Chiu and Tao (TSMC), US 2004/0214448 — the "carbonized crust" of
   implanted resist.[^pat-strip-tsmc]

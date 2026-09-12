@@ -16,14 +16,14 @@
 {ref}`ONOM <step-041>` resist does not cover — that is, from every
 logic, 5 V and high-voltage transistor, from the select transistors of
 the memory cells and from the field — leaving the {term}`ONO` only as
-islands over the SONOS memory transistors. It is the step that
+islands over the {term}`SONOS` memory transistors. It is the step that
 separates the memory from the logic: after it, the logic silicon can
 be cleaned and oxidised to make ordinary gate oxides at
 {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`, while the
 islands keep their charge-trapping dielectric.
 
-Precisely: the blocking oxide (and any sacrificial cap) and the
-nitride or oxynitride trapping layer are removed by a plasma etch that
+Precisely: the {term}`blocking oxide` (and any sacrificial cap) and the
+nitride or {term}`oxynitride` trapping layer are removed by a plasma etch that
 stops on the underlying oxide — we infer the pad oxide from
 {ref}`BOX <step-002>`, still present outside the tunnel
 windows — and the last oxide is then cleared, either here or at the
@@ -54,9 +54,9 @@ oxide stop below it, on the Lam 9400 / DPS "poly/nitride" class of tool
 the stop layer: the oxide beneath the nitride — the pad oxide, we infer
 — is 10–20 nm in the Cypress patent,[^pat-04] and the silicon under it
 will become the channel of every logic transistor. The etch is therefore
-run like a spacer etch — a nitride etch with "selectivity to oxide" that
+run like a {term}`spacer` etch — a nitride etch with "selectivity to oxide" that
 must "stop on a thin oxide without trenching the silicon"
-({ref}`category-etch`) — rather than like a hard-mask open.
+({ref}`category-etch`) — rather than like a {term}`hard-mask <hard mask>` open.
 
 ## Why this step exists
 
@@ -89,7 +89,7 @@ sense — every gate would sit on ONO.
 An industry-generic ONO stack etch for a 200 mm, 130 nm-era embedded
 memory (SKY130's recipe is not public):
 
-1. **ARC open (if used).** If the ONO mask carries an inorganic or
+1. **{term}`ARC` open (if used).** If the ONO mask carries an inorganic or
    organic ARC, it is opened first in the same chamber
    ({ref}`TUNARCE <step-036>` describes the organic case; Cypress's
    inorganic spin-on ARC is "dry etched" with the stack[^pat-03]).
@@ -100,21 +100,21 @@ memory (SKY130's recipe is not public):
    Flamm and Donnelly[^flamm-1981]).
 3. **Nitride.** The trapping layer (7–15 nm in the Cypress
    patents[^pat-02][^pat-03]) is etched in CF₄/O₂,
-   CHF₃/O₂ or SF₆-based chemistry tuned for selectivity to the oxide
+   CHF₃/O₂ or SF₆-based chemistry tuned for {term}`selectivity` to the oxide
    below; a 1997 ASMC paper reports a nitride spacer etch "with high
-   selectivity to oxide" of the kind required.[^regis-1997] Endpoint
+   selectivity to oxide" of the kind required.[^regis-1997] {term}`Endpoint <endpoint>`
    is by optical emission — "a strong peak at 387 nm indicates that
    CN is present in the plasma, usually indicating that nitride is
-   being etched"[^pat-cn-tel] — followed by a short over-etch that
+   being etched"[^pat-cn-tel] — followed by a short {term}`over-etch` that
    lands on the oxide. Because the nitride is only a few
    nanometres thick, the endpoint signal is brief and the over-etch
    is timed.
-4. **Resist strip.** Oxygen-plasma ash and a wet strip
+4. **Resist strip.** Oxygen-plasma {term}`ash` and a wet strip
    ({ref}`category-strip`); the resist has seen a fluorocarbon plasma
    and carries polymer residue that the wet step removes.
 5. **Bottom oxide.** The remaining (inferred) pad oxide (plus the
    fraction of a nanometre that the tunnel oxidation added[^deal-1965])
-   is removed in BOE or dilute HF — "an etchant, such as BOE, is
+   is removed in {term}`BOE` or dilute HF — "an etchant, such as BOE, is
    employed to clear sacrificial dielectric layer 303"[^pat-03] —
    exposing the logic silicon for gate oxidation. Whether this happens
    here or as the {ref}`GOX100 <step-043>` pre-clean is not resolvable
@@ -138,7 +138,7 @@ memory (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Silicon/nitride plasma etcher**, 200 mm: Lam TCP 9400 series,
+* **Silicon/nitride plasma etcher**, 200 mm: Lam {term}`TCP` 9400 series,
   Applied Materials DPS Centura; or a **dielectric etcher** (Lam
   Exelan, Applied MxP) for a fluorocarbon-only recipe
   ({ref}`category-etch`).
@@ -169,7 +169,7 @@ memory (SKY130's recipe is not public):
 * **CF₄, CHF₃, SF₆ and O₂** process gases,[^skw-01] with **Ar** or
   **He** as typical diluents; **HBr** if a silicon-selective landing
   step is used.
-* **Oxygen/nitrogen/forming gas** for the ash; **SPM** for the wet
+* **Oxygen/nitrogen/{term}`forming gas`** for the ash; **{term}`SPM`** for the wet
   strip ({ref}`category-strip`).
 * **BOE or dilute HF** for the bottom oxide;[^pat-03][^pat-04]
   **hot phosphoric acid** only for the all-wet alternative.[^vgh-1967]
@@ -183,7 +183,7 @@ memory (SKY130's recipe is not public):
 * Next: {ref}`GOX100 <step-043>` (first gate oxidation on the cleared
   silicon).
 * The stack being removed was formed at {ref}`ONO <step-040>`; the
-  same nitride chemistry serves the STI hard-mask etch
+  same nitride chemistry serves the {term}`STI` hard-mask etch
   {ref}`STINITE <step-005>` and the spacer etch {ref}`SPE <step-077>`.
 * The ONO islands are etched again, self-aligned to the gate, at the
   poly etch ({ref}`P1ME <step-062>`).
@@ -225,7 +225,7 @@ memory (SKY130's recipe is not public):
 * Winters and Coburn, *Surf. Sci. Rep.* 1992 — surface-science
   mechanisms of fluorine-based etching.[^winters-1992]
 * Coburn and Winters, *J. Appl. Phys.* 1979 — ion-assisted etching, the
-  origin of anisotropy.[^coburn-1979]
+  origin of {term}`anisotropy`.[^coburn-1979]
 * Nojiri, *Dry Etching Technology for Semiconductors* — endpoint,
   selectivity and stack-etch practice.[^nojiri-2015]
 * Kern, *J. Electrochem. Soc.* 1990 — the wet-clean chemistry used

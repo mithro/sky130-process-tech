@@ -14,7 +14,7 @@
 
 `STINITE` (shallow-trench-isolation nitride etch) is a plasma etch that
 transfers the resist pattern from {ref}`FOM <step-004>` into the hard
-mask: it removes the BARC (if one is used), the isolation nitride
+mask: it removes the {term}`BARC` (if one is used), the isolation nitride
 ({ref}`ISONIT <step-003>`) and the pad oxide ({ref}`BOX <step-002>`)
 wherever the resist is open, stopping on silicon. When it is finished
 the future field regions are bare silicon and the future active
@@ -31,22 +31,22 @@ note that the hand-off is not public.
 `STINITE` is an {ref}`Etch <category-etch>` step — a fluorocarbon
 dielectric etch of nitride and oxide, distinct from the halogen
 silicon etch at {ref}`STIE <step-006>`. Similar nitride-opening etches
-occur later at {ref}`SPE <step-077>` (spacer) and
+occur later at {ref}`SPE <step-077>` ({term}`spacer`) and
 {ref}`NPCME <step-079>`.
 
 ## Why this step exists
 
 The trench etch cannot be done through resist alone: a silicon etch in
-HBr/Cl₂ chemistry needs a hard mask that survives the etch, the
+HBr/Cl₂ chemistry needs a {term}`hard mask` that survives the etch, the
 subsequent resist strip and the liner oxidation. The nitride/oxide
 stack provides that, but it must first be opened in the field with a
 clean, vertical profile. The nitride-etch profile matters because:
 
 * the nitride sidewall becomes the upper part of the trench sidewall
   and sets the top of the trench opening, hence the trench width and
-  the fill aspect ratio;[^thung-2016]
+  the fill {term}`aspect ratio`;[^thung-2016]
 * any nitride *foot* or *taper* would be copied into the silicon by
-  the subsequent trench etch and shift the active CD;
+  the subsequent trench etch and shift the active {term}`CD`;
 * any pad-oxide residue left in the field would micro-mask the silicon
   etch and leave silicon grass at the trench floor.
 
@@ -59,17 +59,17 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
 2. **Nitride main etch.** Fluorocarbon chemistry — CF₄, CHF₃ and O₂ (or
    CF₄/O₂ with a little Ar) — in a medium-density or high-density
    plasma. Fluorine radicals etch nitride; CHF₃ adds polymerising
-   carbon that protects the sidewall and gives anisotropy; O₂ trims the
+   carbon that protects the sidewall and gives {term}`anisotropy`; O₂ trims the
    polymer[^txt-02] (Wikipedia: "High-energy ions from the plasma
    attack the wafer surface and react with it", giving "very
-   anisotropic etch profiles"[^wiki-rie]). Gas pressure in RIE is
+   anisotropic etch profiles"[^wiki-rie]). Gas pressure in {term}`RIE` is
    "typically maintained in a range between a few millitorr and a few
    hundred millitorr".[^wiki-rie]
-3. **Endpoint.** Optical emission spectroscopy on a nitrogen-containing
+3. **{term}`Endpoint <endpoint>`.** Optical emission spectroscopy on a nitrogen-containing
    etch product detects the nitride/oxide interface;[^txt-02] a timed
-   over-etch then clears the pad oxide.
+   {term}`over-etch` then clears the pad oxide.
 4. **Pad-oxide breakthrough.** A short CF₄- or CHF₃-rich step removes
-   the 10–20 nm pad oxide and exposes silicon; selectivity to silicon
+   the 10–20 nm pad oxide and exposes silicon; {term}`selectivity` to silicon
    is kept modest so that the surface is not pitted.
 5. **Hand-off.** Either continue *in situ* to the silicon trench etch
    ({ref}`STIE <step-006>`) or vent and transfer.
@@ -88,10 +88,10 @@ page[^pdk-03] is comfortable for a ~200 nm stack).
 ## Machines typically used
 
 * **Dielectric / nitride plasma etcher**, 200 mm single-wafer,
-  fluorocarbon chemistry: Lam 4520/4420 and 9400 TCP (with CF₄/O₂),
+  fluorocarbon chemistry: Lam 4520/4420 and 9400 {term}`TCP` (with CF₄/O₂),
   AMAT Centura DPS or MxP/eMax dielectric chambers, TEL DRM / Unity.
 * **Optical emission endpoint** system on the chamber.
-* **CD-SEM** for post-etch CD; **defect inspection** for residue.
+* **{term}`CD-SEM`** for post-etch CD; **defect inspection** for residue.
 
 ## Machines likely used at SkyWater
 
@@ -153,7 +153,7 @@ Which of the three carries the isolation nitride etch is not public.
 * Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — the
   plasma-etch chapter: fluorocarbon etching of SiO₂ and
   Si₃N₄.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — the STI
+* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — the {term}`STI`
   etch.[^txt-05]
 
 ### Deep dive

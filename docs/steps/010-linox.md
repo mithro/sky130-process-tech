@@ -21,7 +21,7 @@ a small encroachment at the nitride edge). The result is a *trench
 liner* of the order of 10–30 nm of high-quality thermal SiO₂ lining
 every trench.
 
-Public numbers for comparable flows: a Spansion/Cypress-lineage STI
+Public numbers for comparable flows: a Spansion/Cypress-lineage {term}`STI`
 patent grows a first liner "to a thickness of approximately 100-300 Å"
 at "900-1100 degrees Celsius" and, in its double-liner variant, a
 second of "approximately 100-500 Å";[^pat-sti-cr] a Lattice patent uses
@@ -87,7 +87,7 @@ cannot:
 An industry-generic liner oxidation for a 200 mm, 130 nm-era fab:
 
 1. **Pre-oxidation clean.** After the resist strip
-   ({ref}`DNIS <step-009>`), an SC-1/SC-2 clean and a *short* dilute-HF
+   ({ref}`DNIS <step-009>`), an {term}`SC-1`/{term}`SC-2` clean and a *short* dilute-HF
    dip. The HF dip serves two purposes: it removes the chemical oxide
    so that the liner grows on clean silicon, and it deliberately
    undercuts the pad oxide at the nitride edge — "approximately
@@ -102,9 +102,9 @@ An industry-generic liner oxidation for a 200 mm, 130 nm-era fab:
    oxidation to 1150C" and "wet oxidation to 1150C".[^skw-01] A dry,
    high-temperature recipe gives the best corner rounding and viscous
    stress relief; an HCl or DCE addition is sometimes used for
-   metallic gettering.
+   metallic {term}`gettering`.
 3. **Optional nitridation.** Some flows anneal the liner in NH₃ or NO
-   to form a thin oxynitride, or deposit a thin nitride liner, to
+   to form a thin {term}`oxynitride`, or deposit a thin nitride liner, to
    block oxidant diffusion during later oxidations and to stop the
    HDP oxide's hydrogen reaching the interface (silane-based HDP oxide
    retains some hydrogen, and keeping it away from the Si/SiO₂
@@ -120,7 +120,7 @@ width because of the encroachment under the nitride edge.
 
 * **Vertical oxidation furnace** (as for {ref}`BOX <step-002>`):
   SVG/Thermco–ASML–Aviza AVP/RVP, Kokusai, TEL Alpha-8, ASM A400.
-  Some fabs use a single-wafer RTP tool for in-situ-steam liner
+  Some fabs use a single-wafer {term}`RTP` tool for in-situ-steam liner
   oxidation instead.
 * **Wet bench** for the pre-oxidation clean and HF dip.
 * **Ellipsometer**, **cross-section SEM**.

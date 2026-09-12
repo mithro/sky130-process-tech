@@ -22,12 +22,12 @@ amorphous-silicon surface with no oxide to spare.
 
 The resist being removed differs from the one at `P1IS` in two ways.
 It is a *field* of resist with small windows rather than small
-islands, so there is far more of it to remove per wafer and the crust
+islands, so there is far more of it to remove per wafer and the {term}`crust <implant crust>`
 is continuous; and it has taken a p-type implant — boron or BF₂ at a
 dose of order 10¹⁴–10¹⁵ cm⁻² (illustrative, {ref}`PRI <step-053>`) —
 which is lighter than the gate implant but still in the range where a
 carbonised crust forms.[^orvek-1985] If BF₂ is the species, the crust
-also contains fluorine, which downstream O₂/N₂ ashing removes
+also contains fluorine, which downstream O₂/N₂ {term}`ashing <ash>` removes
 without difficulty (the same species is stripped after
 {ref}`PNCHI <step-024>` at {ref}`PCHIS <step-025>`).
 
@@ -37,7 +37,7 @@ without difficulty (the same species is stripped after
 *post-implant* type. On the category page's scale it lies between the
 light channel-implant strips and the heavy source/drain strips: the
 dose is high enough to need the crust-first ash sequence, but not so
-high that popping is a serious risk if the first step is kept cool.
+high that {term}`popping` is a serious risk if the first step is kept cool.
 
 ## Why this step exists
 
@@ -46,10 +46,10 @@ be coated over this one, residue would be sealed under the nitride cap,
 and the implanted crust must be removed without particles. Two points
 are specific to this strip. First, the surface now carries *two* doping
 levels — n⁺ poly and the p-type resistor bodies — and the clean must not
-treat them differently: an SC-1 step etches silicon at a measurable
+treat them differently: an {term}`SC-1` step etches silicon at a measurable
 rate,[^lee-kt-1999] and a differential loss of even a few nanometres
 between body and surroundings would change the resistor's effective
-thickness, on which its sheet resistance depends linearly. Second, the
+thickness, on which its {term}`sheet resistance` depends linearly. Second, the
 resistor bodies are the most dose-sensitive structures on the wafer, so
 nothing in the strip may add or remove dopant — a constraint that
 excludes, for example, any hot step long enough to matter, and any
@@ -60,7 +60,7 @@ chemistry that leaches boron from the surface.
 An industry-generic post-implant strip on a bare poly surface, for a
 200 mm, 130 nm-era fab:
 
-1. **Plasma ash.** Downstream O₂ plasma with N₂ or forming gas,
+1. **Plasma ash.** Downstream O₂ plasma with N₂ or {term}`forming gas`,
    beginning at low temperature to remove the crust without
    popping[^fujimura-1989][^pat-strip-mosel] and finishing hot for the
    bulk; water-vapour or H₂-containing chemistries penetrate a crust
@@ -72,7 +72,7 @@ An industry-generic post-implant strip on a bare poly surface, for a
    additions and the Gasonic PEP N₂/O₂ only, at 40–270 °C between
    them.[^skw-01] A "cold" process for stripping implanted resist is
    also described in the patent literature.[^pat-strip-ulvac]
-2. **Wet clean.** SPM (H₂SO₄/H₂O₂) for residual organics, then SC-1
+2. **Wet clean.** {term}`SPM` (H₂SO₄/H₂O₂) for residual organics, then SC-1
    for particles, with the SC-1 time limited by its silicon etch
    rate.[^lee-kt-1999] The category page and Kern's review give the
    chemistries;[^wiki-rca][^kern-1990] Ohmi's room-temperature

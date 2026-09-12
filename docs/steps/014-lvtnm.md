@@ -18,7 +18,7 @@ is planar: oxide-filled isolation trenches stand slightly proud of
 active islands covered, we infer, only by the thin pad oxide grown at
 {ref}`BOX <step-002>` (its fate after {ref}`NS19 <step-013>` is not
 public). `LVTNM` coats this surface with photoresist, exposes it through
-the *low-Vt N-channel mask* reticle and develops it, leaving resist
+the *low-Vt N-channel mask* {term}`reticle` and develops it, leaving resist
 windows through which the {ref}`LVTNI <step-015>` implant is placed. The
 resist is removed at {ref}`LVTNIS <step-016>`.
 
@@ -50,7 +50,7 @@ needs more length to control short-channel effects.[^pdk-periph]
 `LVTNM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant-block* type: the image quality that matters is
 placement relative to the active pattern and adequate resist thickness,
-not minimum feature size. It aligns to the STI/active pattern printed at
+not minimum feature size. It aligns to the {term}`STI`/active pattern printed at
 {ref}`FOM <step-004>` and etched at {ref}`STIE <step-006>`, which at
 this point is, we infer, the only pattern on the wafer.
 
@@ -73,7 +73,7 @@ available in order to enable more comprehensive circuit/system-level
 power/performance optimization".[^itrs-04]
 
 `LVTNM` is the mask that distinguishes the low-threshold (and, per the
-rule text, the native and SONOS) channels from the standard ones. The
+rule text, the native and {term}`SONOS`) channels from the standard ones. The
 PDK's `lvtn` rule heading says the layer *blocks* a Vt-adjust implant.
 That wording, and the fact that the same layer serves low-Vt NMOS,
 low-Vt PMOS and native NMOS — devices whose thresholds could not all be
@@ -92,7 +92,7 @@ the low-Vt, native and SONOS device options in the PDK would not exist.
 An industry-generic implant-block lithography sequence for a 200 mm,
 130 nm-era fab:
 
-1. **Surface preparation.** Dehydration bake and vapour HMDS prime on
+1. **Surface preparation.** Dehydration bake and vapour {term}`HMDS` prime on
    the track; the surface is oxide everywhere (pad oxide on active,
    trench oxide on field), which primes well.
 2. **Resist coat.** A single-layer positive resist. The
@@ -104,8 +104,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
    needed for a layer whose features are more than twice the wavelength
    (inference from the 0.380 µm rules).[^wiki-litho]
 3. **Exposure.** The 0.380 µm minimum width and space[^pdk-periph] are
-   comfortably within reach of an i-line (365 nm) stepper: at NA 0.6 the
-   process factor is k₁ = 0.38 × 0.6 / 0.365 ≈ 0.62, well above the "0.4
+   comfortably within reach of an i-line (365 nm) {term}`stepper`: at {term}`NA` 0.6 the
+   process factor is {term}`k₁ <k1>` = 0.38 × 0.6 / 0.365 ≈ 0.62, well above the "0.4
    for production" level.[^wiki-litho] ITRS 2001 reserves 248 nm for the
    critical layers of the 130 nm node.[^itrs-03] We therefore infer that
    `LVTNM` is an **i-line layer**, like the other implant-block masks of
@@ -118,8 +118,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 5. **Develop** in aqueous TMAH,[^txt-02] rinse, dry; a hard bake or UV
    cure may follow to stabilise the resist against the implant (industry
    practice).[^txt-02]
-6. **Inspection.** Overlay measured on box-in-box targets against the
-   STI layer; CD checked loosely; after-develop inspection for defects.
+6. **Inspection.** {term}`Overlay <overlay>` measured on box-in-box targets against the
+   STI layer; {term}`CD` checked loosely; after-develop inspection for defects.
 
 ## Machines typically used
 
@@ -127,7 +127,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   NSR-2205i, Canon FPA-3000i[^txt-05] (see the category page).
 * **Coat/develop track** linked to the stepper (TEL, DNS/SCREEN,
   SVG/ASML, Sokudo).
-* **Overlay metrology** (KLA-Tencor 5xxx/Archer class) and a CD-SEM for
+* **Overlay metrology** (KLA-Tencor 5xxx/Archer class) and a {term}`CD-SEM` for
   periodic checks.
 
 ## Machines likely used at SkyWater
@@ -239,7 +239,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 * **Reticle polarity.** The PDK says `lvtn` *blocks* a Vt-adjust
   implant, yet the step list used in this reference pairs the mask with
   an implant ({ref}`LVTNI <step-015>`). Whether the reticle opens *over*
-  `lvtn` (and `LVTNI` is a counter-doping implant) or *everywhere
+  `lvtn` (and `LVTNI` is a {term}`counter-doping` implant) or *everywhere
   except* `lvtn` (and `LVTNI` is the baseline Vt-adjust implant that
   low-Vt devices skip) cannot be settled from public data; the "mask
   add/drop" purposes show only that the reticle is generated, not how.

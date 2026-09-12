@@ -25,7 +25,7 @@ original surface, and 54% above it".[^wiki-thox]
 In the SKY130 flow the oxidation steps are the pad oxide under the STI
 nitride ({ref}`BOX <step-002>`), the trench-liner oxidation
 ({ref}`LINOX <step-010>`), the tunnel-oxide/{term}`ONO` stack of the
-SONOS memory transistor ({ref}`ONO <step-040>`), the two gate oxidations
+{term}`SONOS` memory transistor ({ref}`ONO <step-040>`), the two gate oxidations
 for the thick-oxide and thin-oxide transistors
 ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`) and what we infer to
 be the post-gate-etch re-oxidation ({ref}`IOX45 <step-063>`).
@@ -76,7 +76,7 @@ required.[^txt-01]
 
 ### The thin-oxide regime
 
-The Deal–Grove model under-predicts growth for the first 20–30 nm of dry
+The {term}`Deal–Grove model` under-predicts growth for the first 20–30 nm of dry
 oxide: "very thin oxides (less than about 25 nanometres) grow much more
 quickly in O₂ than the model predicts".[^wiki-dg] Massoud, Plummer and
 Irene characterised this enhancement and added exponentially decaying
@@ -105,12 +105,12 @@ anneal` ({ref}`category-anneal`).
 
 By the 130 nm node most gate oxides were lightly nitrided, either by
 growing in N₂O or NO, or by a plasma or thermal nitridation after
-growth. Nitrogen near the top interface blocks boron penetration from
+growth. Nitrogen near the top interface blocks {term}`boron penetration` from
 the p⁺ poly gate and raises the dielectric constant slightly; the ITRS
 2001 expected "evolution of the oxynitride gate dielectric materials" to
 continue until high-κ materials matured.[^itrs-01] For the SONOS memory
-transistor, a very thin tunnel oxide is grown, a charge-trapping silicon
-nitride deposited by {term}`LPCVD`, and a blocking oxide formed on top
+transistor, a very thin {term}`tunnel oxide` is grown, a charge-trapping silicon
+nitride deposited by {term}`LPCVD`, and a {term}`blocking oxide` formed on top
 by oxidising the nitride or depositing an oxide — the
 oxide–nitride–oxide ({term}`ONO`) stack.[^wiki-sonos]
 
@@ -124,9 +124,9 @@ Two very different thickness regimes appear in a CMOS flow:
   transfer devices; input/output transistors that must withstand 2.5 V,
   3.3 V or 5 V use proportionally thicker oxides.[^itrs-01] These are
   grown dry, often with a nitridation, typically at 750–950 °C,[^txt-01]
-  in a furnace or an RTP chamber, to a thickness controlled to within a
-  few per cent (ITRS 2001 asks for EOT control of ±4 % 3σ).[^itrs-01]
-* **Pad, liner and screen oxides** of 5–30 nm, grown dry or wet, whose
+  in a furnace or an {term}`RTP` chamber, to a thickness controlled to within a
+  few per cent (ITRS 2001 asks for {term}`EOT` control of ±4 % 3σ).[^itrs-01]
+* **Pad, liner and {term}`screen oxides <screen oxide>`** of 5–30 nm, grown dry or wet, whose
   job is mechanical or chemical: cushioning the stress of an LPCVD
   nitride, rounding trench corners and passivating trench sidewalls,
   or scattering implanted ions to reduce {term}`channelling`.[^txt-01]
@@ -150,7 +150,7 @@ from the second growth, and both must be modelled together.[^txt-01]
 ### Furnace versus RTP and ISSG
 
 Batch furnaces oxidise 100–150 wafers at once with excellent thickness
-uniformity but a thermal budget of tens of minutes at temperature;
+uniformity but a {term}`thermal budget` of tens of minutes at temperature;
 single-wafer rapid-thermal oxidation (RTO) trades throughput for a
 budget of seconds and the ability to switch ambient between steps. In
 {term}`ISSG`, hydrogen and oxygen are injected into a reduced-pressure
@@ -187,8 +187,8 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
   (N₂) for purge and anneal, all at semiconductor purity (99.9999 %
   or better).
 * Chlorine sources: anhydrous HCl, or trans-1,2-dichloroethylene (DCE,
-  which replaced trichloroethane) for sodium gettering.
-* N₂O or NO for oxynitride gate dielectrics; NH₃ for nitridation.
+  which replaced trichloroethane) for sodium {term}`gettering`.
+* N₂O or NO for {term}`oxynitride` gate dielectrics; NH₃ for nitridation.
 * Quartz (fused silica) tubes, boats, baffles and liners, which are
   periodically cleaned or replaced; silicon carbide boats for
   high-temperature use.
@@ -290,7 +290,7 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
   interface.[^nicollian-1982]
 * Roozeboom and Parekh, *JVST B* 1990 — review of RTP systems with
   emphasis on temperature control.[^roozeboom-1990]
-* Gardner (AMD), US 6,033,943 — a dual-gate-oxide process: first oxide,
+* Gardner (AMD), US 6,033,943 — a {term}`dual-gate-oxide <dual gate oxide>` process: first oxide,
   masked strip, second oxidation.[^pat-dgox-amd]
 * Mehta, Logie and Fong (Lattice), US 7,985,656 — a thick STI trench
   liner grown above 1000 °C.[^pat-sti-lattice]

@@ -15,9 +15,9 @@
 `DEPI` is the second implant through the tunnel-mask windows. Where
 {ref}`PTSI <step-037>` put a p-type barrier *under* the memory
 transistor's channel, `DEPI` dopes the channel *surface* so that the
-SONOS transistor is a depletion-mode device: one that conducts with zero
+{term}`SONOS` transistor is a {term}`depletion-mode` device: one that conducts with zero
 volts on its gate and needs a negative gate voltage to turn off. The
-PDK's own cross-section of the 2-T SONOS cell uses the same term: its
+PDK's own cross-section of the {term}`2-T <2-T cell>` SONOS cell uses the same term: its
 labels include "Depletion Implant" alongside "ONO", "SONOS gate", "NPASS
 gate" and "NMOS VT implants".[^pdk-sonos-xs] The implant is confined to
 the `tunm` windows (GDS 80:20, "SONOS device tunnel implant"[^pdk-06])
@@ -48,12 +48,12 @@ confined to the memory cells.
 ## Why this step exists
 
 The reason is the way the 2-T cell is read. The PDK's programme/erase
-table shows the read condition as 0 V on the control gate, +1.1 V on
-the drain and +1.8 V on the word line (the select gate), and the
+table shows the read condition as 0 V on the {term}`control gate`, +1.1 V on
+the drain and +1.8 V on the word line (the {term}`select gate`), and the
 threshold measurement likewise at 2.05 µA with the gate at
 0 V.[^pdk-07] The memory transistor therefore has to conduct with its
 gate *grounded* when erased and be cut off with its gate grounded when
-programmed. The e-test table gives exactly that: a nominal "SONOS
+programmed. The {term}`e-test` table gives exactly that: a nominal "SONOS
 erased VT" of −2.3 V (specification −3.648 to −0.952 V), a "SONOS
 programmed VT" of 1.44 V, and a "program inhibit VT" of
 −1.132 V.[^pdk-07] A transistor whose erased threshold is −2.3 V is a
@@ -69,7 +69,7 @@ positive.[^cyp-25][^cyp-26] The *neutral* threshold — with no net
 charge in the nitride — sits between the two, and it is set by the
 channel doping under the {term}`ONO`. A depletion implant places that
 neutral point near or below zero so that a symmetric ±ΔV window from
-Fowler–Nordheim programming and erase[^cyp-25] straddles the 0 V read
+{term}`Fowler–Nordheim <Fowler–Nordheim tunnelling>` programming and erase[^cyp-25] straddles the 0 V read
 condition with margin on both sides. Scaled-SONOS design papers treat
 the channel doping and the neutral threshold as design variables of the
 memory window alongside the ONO thicknesses.[^bu-2001][^french-1994]
@@ -111,13 +111,13 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   "counter-doped channel region".[^pat-vt-rrr]
 * **Energy.** Low — tens of keV for arsenic — so that the n-layer is
   confined to the top few tens of nanometres above the `PTSI` barrier;
-  the tunnel oxide grown at {ref}`ONO <step-040>` consumes about 1 nm
+  the {term}`tunnel oxide` grown at {ref}`ONO <step-040>` consumes about 1 nm
   for a 2 nm oxide of the kind the Cypress patents describe[^pat-04]
   (46 % of the oxide thickness lies below the original
   surface[^wiki-thox]), which the target must allow for.
 * **Dose.** Of order 10¹² cm⁻²: enough to swing the threshold by a
   volt or two against the p-well surface doping, in line with
-  threshold-adjust practice[^macpherson-1971] and with the 10¹²–10¹³
+  {term}`threshold-adjust <threshold-adjust implant>` practice[^macpherson-1971] and with the 10¹²–10¹³
   cm⁻² channel-implant range of the era's patents.[^pat-vt-amd]
 * **Tilt and twist.** 7° with twist,[^txt-02][^wiki-implant] through
   the (inferred) pad oxide, which randomises the beam and reduces
@@ -217,7 +217,7 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 * MacPherson, *Appl. Phys. Lett.* 1971 — threshold adjustment by ion
   implantation, the technique in its original form.[^macpherson-1971]
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — arsenic
-  channel adjustment and counter-doped channels in a multi-Vt
+  channel adjustment and {term}`counter-doped <counter-doping>` channels in a multi-Vt
   flow.[^pat-vt-rrr]
 * Krivokapic and Milic (AMD), US 6,238,982 — channel-implant energies
   and doses of the era.[^pat-vt-amd]

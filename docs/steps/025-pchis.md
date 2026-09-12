@@ -15,7 +15,7 @@
 `PCHIS` strips the photoresist patterned at {ref}`HVTPM <step-022>`
 after it has masked the two high-Vt PMOS channel implants
 {ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>`, and cleans the wafer
-for the P-well block mask {ref}`PWBM <step-026>`. The step list used in
+for the P-well {term}`block mask` {ref}`PWBM <step-026>`. The step list used in
 this reference names it after the last implant ("P-channel BF2 implant
 strip").
 
@@ -23,11 +23,11 @@ The resist is the i-line implant-block resist (roughly 1 µm, inferred on
 the {ref}`HVTPM <step-022>` page). It has received two keV-class channel
 implants at light doses (of order 10¹²–10¹³ cm⁻² each, illustrative;
 {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`), one of them BF₂. As at
-{ref}`LVTNIS <step-016>` this is a *light* implant strip: the crust is
-thin and the popping risk low compared with the high-energy well strips
+{ref}`LVTNIS <step-016>` this is a *light* implant strip: the {term}`crust <implant crust>` is
+thin and the {term}`popping` risk low compared with the high-energy well strips
 ({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`). One detail is
 specific to it: BF₂ implants leave fluorine in the resist crust, and
-fluorinated residues can be more tenacious in a pure-oxygen ash, which
+fluorinated residues can be more tenacious in a pure-oxygen {term}`ash`, which
 is one reason implant-strip recipes add hydrogen or water vapour
 (category page).[^txt-05]
 
@@ -71,10 +71,10 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
    ashers span "120C – 270C" (Gasonic PEP), "40C-270C" (Iridia) and "up
    to 250C" (Mattson Aspen2), with N₂, O₂, H₂/N₂ and CF₄
    options.[^skw-01]
-2. **Wet strip.** SPM (H₂SO₄:H₂O₂) — "used to clean organic residues off
+2. **Wet strip.** {term}`SPM` (H₂SO₄:H₂O₂) — "used to clean organic residues off
    substrates" (category page, citing Wikipedia) — on a batch bench;
    SkyWater's Akrion Gamma lists "Sulfuric".[^skw-01]
-3. **Clean.** SC-1 for particles, optionally SC-2 for metals.[^wiki-rca]
+3. **Clean.** {term}`SC-1` for particles, optionally {term}`SC-2` for metals.[^wiki-rca]
    No HF: the pad oxide (which we infer is still present) must survive
    as the screen for the four implants still to come.
 4. **Rinse, dry, inspect.** Cascade rinse, spin or IPA dry, particle
@@ -100,7 +100,7 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)** for the ash.[^skw-01]
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash.[^skw-01]
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
   acid**[^wiki-rca] (category page).
 * **DI water, isopropanol, nitrogen**.
@@ -141,13 +141,13 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
-  tools, implanted-resist stripping and RTP of the 0.25–0.13 µm
+  tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
 
 ### Deep dive
 
 * Kern, *J. Electrochem. Soc.* 1990 — the history and chemistry of the
-  RCA clean.[^kern-1990]
+  {term}`RCA clean`.[^kern-1990]
 * Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the measured
   crust-and-popping mechanism of ion-implanted resist that every implant
   strip has to defeat.[^fujimura-1989]

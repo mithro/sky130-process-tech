@@ -18,7 +18,7 @@
 electrode is deposited at {ref}`SAGD <step-048>`, and the film it grows
 is the one every `nfet_01v8` and `pfet_01v8` switches through. At the
 same time the thick oxide left over the 5 V and high-voltage regions
-grows a little thicker, and the ONO islands of the memory cells see
+grows a little thicker, and the {term}`ONO` islands of the memory cells see
 the same ambient. If the oxide is nitrided — which SkyWater's
 "Nitrided gate oxide" special module makes likely[^skw-01] — the
 nitridation belongs here too.
@@ -44,8 +44,8 @@ about 3 nm"[^pat-04] — for a more advanced node than SKY130.
 the *thin gate oxide* class, grown in the regime where "very thin
 oxides (less than about 25 nanometres) grow much more quickly in O₂
 than the model predicts"[^wiki-dg] and where recipes are calibrated on
-the tool rather than from Deal–Grove.[^massoud-1985] It is the second
-pass of the dual-gate-oxide process and the most tightly controlled
+the tool rather than from {term}`Deal–Grove <Deal–Grove model>`.[^massoud-1985] It is the second
+pass of the {term}`dual-gate-oxide <dual gate oxide>` process and the most tightly controlled
 oxidation in the flow. The category page's *Nitrided oxides and ONO
 stacks* section gives the background on nitridation.
 
@@ -81,7 +81,7 @@ until high-κ matured.[^itrs-01] Nitrogen near the top of the oxide
 blocks boron from a p⁺ polysilicon gate from diffusing through into
 the channel — "the effects of boron penetration on p⁺ polysilicon
 gated PMOS devices" were quantified by Pfiester et al.[^pfiester-1990]
-and modelled for N₂O oxynitrides by Hwang et al.[^hwang-1991] — and
+and modelled for N₂O {term}`oxynitrides <oxynitride>` by Hwang et al.[^hwang-1991] — and
 nitrogen also reduces hot-carrier degradation and raises the dielectric
 constant slightly.[^hori-1997][^hori-1989] SkyWater lists "Nitrided gate
 oxide" among its special modules,[^skw-01] and Cypress's integration
@@ -98,7 +98,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 (SKY130's recipe is not public):
 
 1. **Load.** Straight from the pre-gate clean ({ref}`GOXETCH <step-046>`)
-   into a vertical furnace under nitrogen, or into a single-wafer RTP
+   into a vertical furnace under nitrogen, or into a single-wafer {term}`RTP`
    chamber; queue time is limited.
 2. **Oxidation.** Dry O₂ at 750–900 °C to about 4 nm (industry-typical
    range),[^txt-01] often with a dilute-oxygen or reduced-pressure
@@ -197,7 +197,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
   nitrogen; nitriding gases.[^pat-03]
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
   thin second gate oxide grown by thermal oxidation.[^pat-04]
-* ITRS 2001, *Front End Processes* — EOT targets and thickness
+* ITRS 2001, *Front End Processes* — {term}`EOT` targets and thickness
   control; oxynitride evolution.[^itrs-01]
 
 ### High-level understanding
@@ -225,7 +225,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
   high-density nitrogen plasma.[^kraft-1997]
 * Kuehne et al., MRS 1997 — nitric oxide rapid thermal nitridation of
   thin gate oxides.[^kuehne-1997]
-* Pfiester et al., *IEEE TED* 1990 — boron penetration through thin
+* Pfiester et al., *IEEE TED* 1990 — {term}`boron penetration` through thin
   oxides from p⁺ poly gates.[^pfiester-1990]
 * Hwang, Ting, Kwong and Lee, *Appl. Phys. Lett.* 1991 — a physical
   model of boron penetration through N₂O oxynitride.[^hwang-1991]
@@ -238,7 +238,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 * Nulman, Krusius and Gat, *IEEE EDL* 1985 — rapid thermal oxidation
   of thin gate dielectrics.[^nulman-1985]
 * Yu et al. (TSMC), SPIE 1999 and Rozé et al., *J. Appl. Phys.* 2017 —
-  ISSG oxidation and its kinetics.[^yu-1999][^roze-2017]
+  {term}`ISSG` oxidation and its kinetics.[^yu-1999][^roze-2017]
 * Lo, Buchanan, Taur and Wang, *IEEE EDL* 1997 — tunnelling current
   through ultrathin oxides.[^lo-1997]
 * Stathis, *IBM J. Res. Dev.* 2002 — reliability limits of the gate
@@ -260,7 +260,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 * Furnace versus RTO, temperature, ambient and time are not public.
 * How much the thick oxide grows during this step, and hence the
   {ref}`GOX100 <step-043>` target, is not public.
-* Whether the ONO blocking oxide is nitrided together with the gate
+* Whether the ONO {term}`blocking oxide` is nitrided together with the gate
   oxides, as in the Cypress patent, is not public.
 
 <!-- footnotes -->

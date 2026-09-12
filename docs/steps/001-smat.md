@@ -35,8 +35,8 @@ What can be said publicly about the SKY130 starting wafer:
   therefore p-type (boron-doped).
 * **Bulk, not epitaxial.** SkyWater's platform table gives the S130
   substrate as "Bulk", in contrast to the S90LN entry, which reads
-  "4 µm EPI".[^skw-02] We read this as a polished bulk Czochralski (CZ)
-  wafer without an epitaxial layer; see the open questions below.
+  "4 µm EPI".[^skw-02] We read this as a polished bulk Czochralski ({term}`CZ`)
+  wafer without an {term}`epitaxial layer`; see the open questions below.
 * **Suppliers.** SkyWater's 2021 registration statement lists its
   principal silicon-wafer suppliers as "GlobalWafers Singapore Pte. Ltd.
   (silicon wafers)" and "SEH America, subsidiary of Shin-Etsu Handotai,
@@ -61,7 +61,7 @@ This is the only step in the
 {ref}`Substrate / starting material <category-substrate>` category. What
 is specific to SKY130 is that it is a *bulk* 200 mm p-type wafer for a
 process that, unusually for a 130 nm-era logic technology, carries
-5 V and 10–20 V devices, SONOS memory and a deep N-well option on the
+5 V and 10–20 V devices, {term}`SONOS` memory and a deep N-well option on the
 same substrate.[^pdk-07][^pdk-10]
 
 ## Why this step exists
@@ -84,12 +84,12 @@ depends on:
   the implementation of shallow trench isolation (STI) and the
   development of alternate doping means for achieving latch-up
   suppression"[^itrs-01] — which is exactly the combination SKY130
-  uses: STI plus retrograde wells plus an optional deep N-well.
-* **Defect density and gate-oxide integrity.** Crystal-originated
+  uses: {term}`STI` plus {term}`retrograde wells <retrograde well>` plus an optional deep N-well.
+* **Defect density and {term}`gate-oxide integrity <gate oxide integrity>`.** Crystal-originated
   particles, metallic contamination and surface micro-roughness of the
   incoming wafer propagate directly into gate-oxide yield; the ITRS
   starting-materials tables exist for this reason.[^itrs-01]
-* **Mechanical and thermal budget.** The 725 µm thickness and the
+* **Mechanical and {term}`thermal budget`.** The 725 µm thickness and the
   oxygen content of a CZ wafer govern warpage through the high-
   temperature isolation and well steps that follow.
 
@@ -114,16 +114,16 @@ typically:
    the polished option.
 3. **Receive and inspect.** Incoming lots are checked against the
    specification: particle count and haze on an unpatterned-wafer laser
-   scanner, resistivity by four-point probe or eddy current, flatness
+   scanner, resistivity by {term}`four-point probe` or eddy current, flatness
    and thickness, and bow/warp.[^txt-07]
 4. **Mark and sort.** Each wafer is laser-scribed with a lot and wafer
    identifier near the notch so that it can be tracked through the
    flow; wafers are sorted into 25-wafer lots.
 5. **Initial clean.** Before the first furnace step
    ({ref}`BOX <step-002>`) the wafers receive a standard RCA-type
-   clean. The RCA sequence is SC-1 (NH₄OH : H₂O₂ : H₂O, typically
+   clean. The RCA sequence is {term}`SC-1` (NH₄OH : H₂O₂ : H₂O, typically
    1 : 1 : 5 at 75–80 °C for about 10 min), an optional dilute HF dip,
-   and SC-2 (HCl : H₂O₂ : H₂O, 1 : 1 : 6 at 75–80 °C).[^wiki-rca]
+   and {term}`SC-2` (HCl : H₂O₂ : H₂O, 1 : 1 : 6 at 75–80 °C).[^wiki-rca]
 
 ## Machines typically used
 
@@ -134,7 +134,7 @@ typically:
   200 mm-era standard.
 * **Wafer laser marker / scribe** for identification.
 * **Wafer sorter** for lot assembly and slot mapping.
-* **Batch wet bench** for the RCA clean.
+* **Batch wet bench** for the {term}`RCA clean`.
 
 ## Machines likely used at SkyWater
 
@@ -245,7 +245,7 @@ product to a step.
   "crystal-originated singularities" (COPs) revealed by SC-1 cleaning,
   the defect class that gate-oxide yield depends on.[^ryuta-1990]
 * Borghesi et al., *J. Appl. Phys.* 1995 — a review of oxygen
-  precipitation in CZ silicon, the basis of internal gettering and a
+  precipitation in CZ silicon, the basis of internal {term}`gettering` and a
   driver of wafer warpage through the thermal budget.[^borghesi-1995]
 * Kang and Schroder, *J. Appl. Phys.* 1989 — a review of gettering
   mechanisms (intrinsic and extrinsic) that a bulk-wafer process relies

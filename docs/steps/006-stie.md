@@ -14,7 +14,7 @@
 
 `STIE` (shallow-trench-isolation etch) is the plasma etch that cuts the
 isolation trenches into the silicon. Using the patterned nitride/pad-
-oxide hard mask from {ref}`STINITE <step-005>` (with the
+oxide {term}`hard mask` from {ref}`STINITE <step-005>` (with the
 {ref}`FOM <step-004>` resist still on top, or already removed —
 see below), a halogen plasma etches a few hundred nanometres into the
 wafer wherever the field is open. The trench walls are made slightly
@@ -22,7 +22,7 @@ tapered and the corners are kept free of sharp features so that the
 later liner oxidation ({ref}`LINOX <step-010>`) and HDP fill
 ({ref}`FILOX <step-011>`) can complete the isolation.
 
-Wikipedia summarises STI as "etching a pattern of trenches in the
+Wikipedia summarises {term}`STI` as "etching a pattern of trenches in the
 silicon, depositing one or more dielectric materials (such as silicon
 dioxide) to fill the trenches, and removing the excess
 dielectric";[^wiki-sti] `STIE` is the first of those three operations.
@@ -37,7 +37,7 @@ diagram, not a documented fact — the trench would be about 0.26 µm
 deep. That is in line with era practice: an AmberWave Systems STI
 patent (now TSMC-owned) gives "a depth d1 within a range of, for
 example, 3000-4000 Å",[^pat-sti-amberwave] and the 2001 ITRS notes that
-STI aspect ratios rise node on node as spacing shrinks.[^itrs-01] With
+STI {term}`aspect ratios <aspect ratio>` rise node on node as spacing shrinks.[^itrs-01] With
 a minimum trench width of 0.27 µm (difftap.3)[^pdk-periph] and a
 nitride of ~150 nm, the fill aspect ratio (depth + nitride) / width
 would be about 1.5 : 1 (Thung et al. define the ratio that
@@ -54,7 +54,7 @@ chemistry on a different film.
 
 ## Why this step exists
 
-STI replaced LOCOS at "CMOS process technology nodes of 250 nanometers
+STI replaced {term}`LOCOS` at "CMOS process technology nodes of 250 nanometers
 and smaller"[^wiki-sti] because a trench gives a planar surface, no
 bird's-beak encroachment and a much smaller active-to-active pitch. The
 trench profile is the single most important geometric input to the
@@ -102,7 +102,7 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
    controlled by rate calibration on monitor wafers.
 4. **Corner rounding (optional).** A short isotropic step, or a
    dedicated post-etch treatment, softens the top corner.[^itrs-01]
-5. **Resist strip and clean.** O₂ plasma ash, then a wet clean to
+5. **Resist strip and clean.** O₂ plasma {term}`ash`, then a wet clean to
    remove the bromine-containing sidewall polymer — an STI paper
    notes that after the dry etch a "wet cleaning process is then
    applied to remove the polymer or residue on the side wall of shallow
@@ -110,7 +110,7 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
    it is presumably part of `STIE` or of the following
    {ref}`DNM <step-007>` litho preparation (open question).
 6. **Metrology.** Trench depth by cross-section SEM or by an optical
-   scatterometry/profilometry monitor; CD by CD-SEM.
+   scatterometry/profilometry monitor; {term}`CD` by {term}`CD-SEM`.
 
 SkyWater's capability page lists the exact chemistry on its AMAT
 etcher: "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2 – gate, trench,
@@ -122,7 +122,7 @@ retrieved, so this is unverified (see open questions).
 ## Machines typically used
 
 * **High-density silicon etcher**, 200 mm single wafer: Applied
-  Materials Centura DPS / DPS II (decoupled plasma source), Lam TCP 9400
+  Materials Centura DPS / DPS II (decoupled plasma source), Lam {term}`TCP` 9400
   series (transformer-coupled plasma[^snf-9400]), TEL DRM/Unity,
   Hitachi M-series microwave ECR etchers.
 * **Resist asher** (downstream microwave or RF O₂ plasma).
@@ -150,8 +150,8 @@ retrieved, so this is unverified (see open questions).
 * **Helium** backside cooling; **N₂** purge.
 * **NF₃ or SF₆/O₂** chamber clean (SkyWater lists NF₃ on the
   DPSII[^skw-01]).
-* **O₂ / N₂ / forming gas** for the ash.
-* **SC-1, H₂SO₄/H₂O₂ or dilute HF** for the post-etch
+* **O₂ / N₂ / {term}`forming gas`** for the ash.
+* **{term}`SC-1`, H₂SO₄/H₂O₂ or dilute HF** for the post-etch
   clean.[^wiki-rca]
 * Chamber consumables (ceramic liners, focus rings); monitor wafers
   for depth calibration.
@@ -189,7 +189,7 @@ retrieved, so this is unverified (see open questions).
 
 * Wikipedia, *Shallow trench isolation* — the three STI operations and
   the LOCOS cross-over node.[^wiki-sti]
-* Wikipedia, *Reactive-ion etching* — ICP with separate
+* Wikipedia, *Reactive-ion etching* — {term}`ICP` with separate
   bias.[^wiki-rie]
 * Wikipedia, *RCA clean* — the post-etch clean chemistry.[^wiki-rca]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — STI trench
@@ -236,7 +236,7 @@ retrieved, so this is unverified (see open questions).
   portions by fluorine/oxygen chemical dry etching (framed around
   trench capacitors rather than STI), the same technique as step 4
   above.[^pat-corner-toshiba]
-* Hon, SJSU master's thesis 2003 — line-edge roughness measurement on
+* Hon, SJSU master's thesis 2003 — {term}`line-edge roughness <LER>` measurement on
   an STI etch.[^hon-2003]
 
 ## Open questions

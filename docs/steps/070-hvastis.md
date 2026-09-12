@@ -23,23 +23,23 @@ thin — the PDK's "Photoresist thickness for HV Tip Implants" is
 0.3 µm, against 1.14 µm for the standard resist[^pdk-03] — and the
 implant it has absorbed is, we infer from the LDD-type dose of the
 step, one to two orders of magnitude lighter than the 1.8 V tip (of
-order 10¹³ cm⁻², typical of an LDD,[^txt-04] against 10¹⁴–10¹⁵ cm⁻²).
-The crust is correspondingly thinner and the strip easier. On the other
+order 10¹³ cm⁻², typical of an {term}`LDD`,[^txt-04] against 10¹⁴–10¹⁵ cm⁻²).
+The {term}`crust <implant crust>` is correspondingly thinner and the strip easier. On the other
 hand the ions arrived at 40°,[^pdk-03] so the resist sidewalls facing
 the beam have been implanted along their whole height, and the PDK's
 0.02 µm "Photoresist tilted implant penetration"[^pdk-03] means the
 resist edges have been damaged through. The surface under the resist is
-the screen oxide from {ref}`IOX45 <step-063>` over silicon and poly,
+the {term}`screen oxide` from {ref}`IOX45 <step-063>` over silicon and poly,
 which must survive once more for {ref}`LDASTI <step-072>`.
 
 ## Step category
 
 `HVASTIS` is a {ref}`Resist strip / clean <category-strip>` step of the
 *post-implant* type, of medium difficulty: an implanted crust is
-present, so the low-temperature first ash stage that guards against
-popping is still prudent, but the total resist volume is a quarter of
+present, so the low-temperature first {term}`ash` stage that guards against
+{term}`popping` is still prudent, but the total resist volume is a quarter of
 the usual and the dose is moderate. The category page's generic
-post-implant sequence — downstream ash, SPM, SC-1 — applies without
+post-implant sequence — downstream ash, {term}`SPM`, {term}`SC-1` — applies without
 special measures.
 
 ## Why this step exists
@@ -53,7 +53,7 @@ oxide, gate oxide edges and poly sidewalls see the plasma for longer
 than necessary — one reason downstream (charge-free) ashing is
 preferred over direct plasma exposure once gates exist.[^wiki-ash]
 Residue matters as it did after `ASTIS`: a flake left here blocks the
-SONOS tip implant on whichever cell it lands.
+{term}`SONOS` tip implant on whichever cell it lands.
 
 ## How it is typically performed
 
@@ -65,7 +65,7 @@ moderate-dose tilted implant, 200 mm, 130 nm era:
    Fujimura's group established for implanted resist. A short,
    cooler first stage opens the thin crust — the "low-temperature
    (<220 °C)" first step of the two-stage recipe[^pat-strip-mosel] —
-   and a hot stage clears the remaining film; endpoint by optical
+   and a hot stage clears the remaining film; {term}`endpoint` by optical
    emission followed by a timed over-ash, kept short because the film
    is thin. Horsky's and Roche's studies of resist outgassing and
    carbonisation during implantation explain what the ash is
@@ -110,7 +110,7 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)** or **water vapour** for the
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** or **water vapour** for the
   ash;[^skw-01] CF₄ omitted to protect the screen oxide.
 * **Sulphuric acid and hydrogen peroxide** for SPM;[^wiki-piranha]
   **ammonium hydroxide** for SC-1.[^wiki-rca]

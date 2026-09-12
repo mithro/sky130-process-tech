@@ -24,7 +24,7 @@ energy the tool can control well produces a shallow boron profile
 (category page).[^txt-01] The resist is stripped at
 {ref}`PCHIS <step-025>`.
 
-Boron is p-type. In an N-well channel it *counter-dopes* the surface
+Boron is p-type. In an N-well channel it *{term}`counter-dopes <counter-doping>`* the surface
 and, on its own, would lower the magnitude of a PMOS threshold, not
 raise it. Its appearance inside the "high Vt LV PMOS"
 module[^pdk-periph] therefore needs explanation; the possibilities are
@@ -44,15 +44,15 @@ shallow boron dose in a high-Vt PMOS:
 
 1. **Surface compensation in a retrograde channel.** The deeper n-type
    implant of {ref}`PCHI <step-023>` can be made heavier than the
-   threshold alone requires, so that it also controls punch-through and
+   threshold alone requires, so that it also controls {term}`punch-through` and
    drain-induced barrier lowering; a shallow BF₂ dose then trims the
-   *surface* concentration back to the value that gives the wanted |Vt|.
+   *surface* concentration back to the value that gives the wanted |{term}`Vt`|.
    The net result is a steeper retrograde profile — high doping a few
    tens of nanometres down, lighter at the surface — which is exactly
    what ITRS 2001's "Retrograde channel depth" of 21–30 nm[^itrs-01] and
    the super-steep-retrograde literature describe.[^thompson-1996] This
    is our preferred reading.
-2. **Buried-channel PMOS.** The gate pages read the PMOS gate as n⁺
+2. **{term}`Buried-channel PMOS <buried-channel PMOS>`.** The gate pages read the PMOS gate as n⁺
    polysilicon ({ref}`P1I <step-050>`), so the baseline device already
    has a boron counter-doping ({ref}`LVTPI <step-020>`); a *high-Vt*
    variant then needs less net p-type surface doping, which a heavier
@@ -78,12 +78,12 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 * **Species and source.** BF₂⁺ selected by the analysing magnet from a
   boron trifluoride (BF₃) plasma[^wiki-implant] (category page). The
   fluorine co-implanted with the boron is a known side effect: it
-  amorphises the surface slightly, which helps suppress channelling, and
+  amorphises the surface slightly, which helps suppress {term}`channelling`, and
   it can retard boron diffusion during the anneal.[^txt-01]
 * **Energy.** Tens of keV of BF₂ energy, corresponding to a boron energy
-  of a few keV and a projected range of tens of nanometres. Public
+  of a few keV and a {term}`projected range` of tens of nanometres. Public
   examples: BF₂ "at an energy of from about 10 to about 100
-  kilo-electron volts (keV)" for a channel implant in a Cypress SONOS
+  kilo-electron volts (keV)" for a channel implant in a Cypress {term}`SONOS`
   patent;[^pat-04] "45-90 KeV for BF₂" in an AMD channel-implant
   example.[^pat-vt-amd]
 * **Dose.** Light: "a dose of from about 1e12 cm⁻² to about 1e14 cm⁻²"
@@ -93,7 +93,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 * **Tilt and twist.** 7° with twist;[^wiki-implant] with BF₂ the
   self-amorphisation makes channelling less of a concern than with bare
   boron.
-* **Screen oxide.** Through the pad oxide;[^pat-04] a shallow implant is
+* **{term}`Screen oxide <screen oxide>`.** Through the pad oxide;[^pat-04] a shallow implant is
   sensitive to the oxide's thickness, so the oxide loss in the preceding
   strips matters (see {ref}`LVTPIS <step-021>`).
 * **Anneal.** {ref}`RTAI <step-034>`; boron in a shallow layer is the
@@ -176,7 +176,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 * Krivokapic and Milic (AMD), US 6,238,982 — BF₂ 45–90 keV, 1–2.5 ×
   10¹³ cm⁻².[^pat-vt-amd]
 * Wang et al., *J. Electrochem. Soc.* 1997 — fluorine's effect on boron
-  diffusion after BF₂ implantation through oxide and RTA, directly
+  diffusion after BF₂ implantation through oxide and {term}`RTA`, directly
   relevant to a BF₂ channel implant annealed at RTAI.[^wang-1997]
 * Taur et al., *Proc. IEEE* 1997 — super-steep retrograde channels at
   0.1 µm, the profile a surface compensation implant helps

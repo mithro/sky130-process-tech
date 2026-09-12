@@ -18,7 +18,7 @@ types:
 
 * **Implant activation and well anneals** — a furnace or rapid
   thermal anneal ({term}`RTA`) after the well and channel implants
-  ({ref}`RTAI <step-034>`), after the extension implants
+  ({ref}`RTAI <step-034>`), after the {term}`extension` implants
   ({ref}`TIPRTAD <step-075>`) and after the source/drain implants
   ({ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`).
 * **Silicidation** — the reaction anneal(s) that turn a deposited
@@ -27,7 +27,7 @@ types:
 * **Alloy (sinter)** — a typically 350–450 °C anneal[^txt-02] in
   {term}`forming gas` after contact formation ({ref}`ALLY1 <step-096>`)
   and after the last metal ({ref}`ALLY <step-170>`).
-* Purely by association, the PSG densification, ILD bakes and the like
+* Purely by association, the {term}`PSG` densification, {term}`ILD` bakes and the like
   are treated as part of the deposition steps.
 
 ## Physics and engineering background
@@ -52,7 +52,7 @@ antimony use vacancies.
 ### Activation and damage annealing
 
 Implanted dopant is electrically inactive until the lattice is restored.
-Amorphised layers regrow by solid-phase epitaxy at 500–600 °C with the
+Amorphised layers regrow by {term}`solid-phase epitaxy` at 500–600 °C with the
 dopant incorporated substitutionally up to and beyond its equilibrium
 solid solubility; partially damaged layers need 800–1000 °C to dissolve
 the defect clusters.[^gibbons-1972][^txt-01] Two effects make the choice
@@ -66,11 +66,11 @@ is the RTA: seconds at 1000–1100 °C,[^stolk-1997] or a "spike" anneal
 with essentially zero soak time, which activates the dopant while the
 junction moves only a few nanometres. ITRS 2001 identifies the boron
 extension junction as the critical one and asks for its depth,
-abruptness and sheet resistance to be met simultaneously.[^itrs-01]
+abruptness and {term}`sheet resistance` to be met simultaneously.[^itrs-01]
 
 ### Rapid thermal processing
 
-RTP "heats silicon wafers to temperatures exceeding 1,000°C for not more
+{term}`RTP` "heats silicon wafers to temperatures exceeding 1,000°C for not more
 than a few seconds" using "high intensity lamps or lasers", with "*in
 situ* pyrometry to effect real time control" because the chamber never
 reaches thermal equilibrium; applications include "dopant activation,
@@ -87,7 +87,7 @@ planes at the edge, so edge-ring design and lamp zoning matter.
 Furnaces, by contrast, hold 100–150 wafers at a uniform temperature for
 tens of minutes and are still used where a large Dt is wanted, for
 example the well drive-in, or where low temperature and long time are
-cheap, for example the alloy anneal.[^wiki-furnace]
+cheap, for example the {term}`alloy anneal`.[^wiki-furnace]
 
 ### Silicidation
 
@@ -102,7 +102,7 @@ the selective etch:
 
 * **Titanium**: a first RTA at roughly 600–700 °C in N₂ forms the
   metastable C49 TiSi₂ (and TiN on top), the unreacted Ti/TiN is
-  stripped in SC-1 or SPM, and a second RTA at roughly 800–900 °C
+  stripped in {term}`SC-1` or {term}`SPM`, and a second RTA at roughly 800–900 °C
   converts C49 to the low-resistivity C54 phase; on narrow lines the
   C49→C54 transformation becomes nucleation-limited, the "narrow-line
   effect" that drove the industry to cobalt at the 180–130 nm
@@ -150,7 +150,7 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
 * **Vertical furnaces** for well drive, densification and alloy: ASM
   A400,[^asm-vf] TEL Alpha-8, Aviza/Thermco, Kokusai; older horizontal
   Thermco and BTU tubes for alloy.
-* **Metrology**: four-point probe sheet resistance after every
+* **Metrology**: {term}`four-point probe` sheet resistance after every
   activation anneal, Therma-Wave for lightly doped implants, SIMS for
   profiles, and thermocouple-instrumented wafers for RTP temperature
   calibration.
@@ -241,7 +241,7 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
   junction formation by implantation and RTA.[^rev-05]
 * Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999 — the effect
   of RTA ramp rate on boron ultra-shallow junctions, the case for
-  spike anneals.[^agarwal-1999]
+  {term}`spike anneals <spike anneal>`.[^agarwal-1999]
 * Fiory, *J. Electron. Mater.* 2002 — RTP developments of the 130 nm
   era.[^fiory-2002]
 * Sedgwick, *JES* 1983 — an early review of short-time

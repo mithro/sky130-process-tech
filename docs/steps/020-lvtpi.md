@@ -22,7 +22,7 @@ reference names it the "Low V P-channel implant"; the code reads
 naturally as "low-voltage(-Vt) P-channel implant". Because it shares the
 N-well window, it reaches every N-well region on the wafer: the 1.8 V
 PMOS, the 5 V PMOS, the N-well rings and the drain extensions alike,
-unless the reticle is generated differently for some of them (not
+unless the {term}`reticle` is generated differently for some of them (not
 public). It is the P-channel counterpart of {ref}`NCHI <step-045>`, the
 N-channel implant that the 1.8 V NMOS receive later under the
 low-voltage oxide mask.
@@ -37,7 +37,7 @@ through the same mask.[^pat-well-ibm]
 ## Step category
 
 `LVTPI` is an {ref}`Ion implantation <category-implant>` step of the
-*threshold-adjust* class — light dose, tens of keV, medium-current
+*{term}`threshold-adjust <threshold-adjust implant>`* class — light dose, tens of keV, medium-current
 tool (category page) — even though it is grouped with the well
 implants in the flow.
 
@@ -45,12 +45,12 @@ implants in the flow.
 
 The PMOS threshold must be set independently of the well profile. The
 buried N-well peak of {ref}`NWI <step-018>` is placed deep for latch-up
-and punch-through reasons and leaves the surface only lightly doped, so
+and {term}`punch-through` reasons and leaves the surface only lightly doped, so
 a shallow channel implant sets the surface concentration to the value
-that gives the wanted |Vt| — an n-type dose that raises it under a p⁺
+that gives the wanted |{term}`Vt`| — an n-type dose that raises it under a p⁺
 gate, or, under the n⁺ gate the gate pages infer for SKY130
-({ref}`P1I <step-050>`), a p-type dose that counter-dopes the surface of
-a buried-channel device. In the body-effect expression γ ∝ √N,[^wiki-vt]
+({ref}`P1I <step-050>`), a p-type dose that {term}`counter-dopes <counter-doping>` the surface of
+a {term}`buried-channel device <buried-channel PMOS>`. In the body-effect expression γ ∝ √N,[^wiki-vt]
 and multi-Vt CMOS is made by "altering the concentration of dopant atoms
 in the channel region beneath the gate oxide".[^wiki-mtcmos] The 2001
 ITRS FEP table gives, as illustration of the magnitudes involved, a
@@ -87,7 +87,7 @@ fab (SKY130 values are not public):
   1.0–2.5 × 10¹³ cm⁻²[^pat-vt-amd]).
 * **Tilt and twist.** 7° with twist;[^wiki-implant][^txt-02] the implant
   is symmetric, so no rotation is needed.
-* **Screen oxide.** Through the pad oxide of 10–20 nm that a Cypress
+* **{term}`Screen oxide <screen oxide>`.** Through the pad oxide of 10–20 nm that a Cypress
   patent describes under its well and channel implants.[^pat-04]
 * **Charge control.** Electron shower; the resist is thick and already
   charged by two high-energy (MeV-class, we infer) implants (SkyWater
@@ -148,8 +148,8 @@ fab (SKY130 values are not public):
   `pfet_01v8_hvt`, `pfet_g5v0d10v5`.[^pdk-07]
 * SkyWater PDK, *Periphery rules* — `lvtn` and `hvtp` function
   text.[^pdk-periph]
-* Koutny et al. (Cypress), US 8,093,128 — channel implants and RTA
-  before the SONOS module.[^pat-03]
+* Koutny et al. (Cypress), US 8,093,128 — channel implants and {term}`RTA`
+  before the {term}`SONOS` module.[^pat-03]
 * Ramkumar et al. (Cypress), US 8,796,098 — implants through a 10–20 nm
   pad oxide.[^pat-04]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
@@ -157,7 +157,7 @@ fab (SKY130 values are not public):
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — energies, sources, channelling and
+* Wikipedia, *Ion implantation* — energies, sources, {term}`channelling` and
   tilt in one page.[^wiki-implant]
 * Wikipedia, *Threshold voltage* — the body-effect parameter containing
   the channel doping.[^wiki-vt]

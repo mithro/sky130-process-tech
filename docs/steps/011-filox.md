@@ -27,7 +27,7 @@ stand well above the nitride everywhere — typically 1.5–2 × the
 (trench + nitride) height, i.e. of the order of 0.5–0.7 µm for a
 ~0.3 µm trench (era-typical figures[^txt-05]). At the 130 nm node the
 deposition method is high-density-plasma chemical vapour deposition
-(HDP-CVD): "High Density Plasma (HDP) and Chemical Vapor Deposition
+({term}`HDP-CVD`): "High Density Plasma (HDP) and Chemical Vapor Deposition
 (CVD) is the industry standard for STI oxide",[^thung-2016] and
 Novellus was still calling HDP "the preferred gapfill dielectric
 technology for advanced geometries" in 2009.[^lam-speed] The PDK gives
@@ -38,10 +38,10 @@ surface under poly as 0.07 µm.[^pdk-03]
 ## Step category
 
 `FILOX` is a {ref}`Thin-film deposition <category-deposition>` step —
-a plasma CVD of undoped silicon oxide. It is the first of many CVD
+a plasma {term}`CVD` of undoped silicon oxide. It is the first of many CVD
 oxides in the flow; later ones ({ref}`PSG <step-089>`,
 {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, …) fill gaps
-between poly and metal lines and use PECVD TEOS, PSG or HDP as the
+between poly and metal lines and use {term}`PECVD` {term}`TEOS`, {term}`PSG` or HDP as the
 topography demands. The isolation fill is distinctive because its gaps
 are the narrowest and deepest in the front end and because it is
 followed immediately by a polish that stops on nitride.
@@ -71,7 +71,7 @@ insulator. The fill has to be:
 
 ## How it is typically performed
 
-An industry-generic HDP-CVD STI fill for a 200 mm, 130 nm-era fab:
+An industry-generic HDP-CVD {term}`STI` fill for a 200 mm, 130 nm-era fab:
 
 1. **Chamber.** Inductively coupled high-density plasma reactor with an
    RF-biased electrostatic chuck; wafer temperature of a few hundred
@@ -89,7 +89,7 @@ An industry-generic HDP-CVD STI fill for a 200 mm, 130 nm-era fab:
    gap-fill[^thung-2016] (the Novellus release speaks of "tailoring the
    deposition, etch, and sputter-to-deposition (S/D)
    ratio"[^lam-speed]). A published 0.13 µm STI gap-fill study (space
-   width 0.13 µm, aspect ratio 3.9) models the same sputter/deposition
+   width 0.13 µm, {term}`aspect ratio` 3.9) models the same sputter/deposition
    balance in HDP-CVD.[^nishimura-2002]
 3. **Sequence.** A short *in-situ* sputter-clean or a thin protective
    liner deposition at low bias (so that the sputter component does
@@ -98,7 +98,7 @@ An industry-generic HDP-CVD STI fill for a 200 mm, 130 nm-era fab:
    unbiased cap. Multi-step deposition/etch/deposition sequences are
    used for the tightest gaps.
 4. **Post-deposition.** Some fabs densify the HDP oxide in a furnace
-   or RTP anneal in N₂ at around 900–1000 °C;[^txt-05] others rely on
+   or {term}`RTP` anneal in N₂ at around 900–1000 °C;[^txt-05] others rely on
    the later thermal steps. An anneal here also continues the deep N-well
    ({ref}`DNI <step-008>`) drive.
 5. **Metrology.** Thickness and uniformity by optical reflectometry;

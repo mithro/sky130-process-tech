@@ -35,8 +35,8 @@ clean sequence can be used without restriction.
 `LVTNIS` is a {ref}`Resist strip / clean <category-strip>` step of the
 *post-implant* type. The category page explains why implant strips are
 "longer and more carefully engineered than etch strips": the ion beam
-carbonises the top of the resist into a crust that ashes slowly and can
-pop. For this particular strip the crust is thin, because the dose is
+carbonises the top of the resist into a {term}`crust <implant crust>` that {term}`ashes <ash>` slowly and can
+{term}`pop <popping>`. For this particular strip the crust is thin, because the dose is
 low and the energy modest; the strips after the well masks
 ({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`), which have seen
 hundreds of keV to MeV ions and summed doses near 10¹³ cm⁻², and above
@@ -56,7 +56,7 @@ and, eventually, the {ref}`RTAI <step-034>` anneal. A poorly stripped
 implant resist shows up as popped flakes — the patent literature notes
 that "the popping problem … causes the photoresist to become even
 harder"[^pat-strip-mosel] and as threshold-voltage outliers where
-residue shadowed a later implant.
+residue {term}`shadowed <shadowing>` a later implant.
 
 ## How it is typically performed
 
@@ -82,11 +82,11 @@ fab:
    up to 250C".[^skw-01] Downstream configuration is chosen because
    "monatomic oxygen is electrically neutral" and the remote plasma
    "prevents damage to the wafer surface".[^wiki-ash]
-2. **Wet strip and clean.** Sulphuric acid–hydrogen peroxide (SPM,
+2. **Wet strip and clean.** Sulphuric acid–hydrogen peroxide ({term}`SPM`,
    "piranha") to dissolve the last organics — "a typical mixture is 3
    parts of concentrated sulfuric acid and 1 part of 30 wt. % hydrogen
    peroxide solution" (category page, citing Wikipedia) — followed by
-   SC-1 (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles and, optionally, SC-2
+   {term}`SC-1` (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles and, optionally, {term}`SC-2`
    (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] SkyWater's Akrion Gamma bench
    lists "Sulfuric, SC1" among its chemistries.[^skw-01]
 3. **Rinse and dry.** Cascade DI-water rinse, spin-rinse or IPA
@@ -127,7 +127,7 @@ cleanliness.[^txt-02]
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)** for the ash; small **CF₄**
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash; small **CF₄**
   additions are available on the Mattson and Iridia tools[^skw-01] but
   attack oxide and would normally be omitted here.
 * **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** for
@@ -181,7 +181,7 @@ cleanliness.[^txt-02]
 ### Deep dive
 
 * Kern, *J. Electrochem. Soc.* 1990 — the history and chemistry of the
-  RCA clean.[^kern-1990]
+  {term}`RCA clean`.[^kern-1990]
 * ITRS 2001, *Front End Processes* — surface preparation.[^itrs-01]
 * Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the measured
   crust-and-popping mechanism of ion-implanted resist that every implant

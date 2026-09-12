@@ -14,8 +14,8 @@
 
 `LDNTM` is the third and last tip mask of the module. On the surface
 cleaned at {ref}`HVASTIS <step-070>` it patterns a resist that exposes
-the SONOS memory transistors and covers everything else, so that the
-*lightly doped* arsenic tip {ref}`LDASTI <step-072>` and its boron halo
+the {term}`SONOS` memory transistors and covers everything else, so that the
+*lightly doped* arsenic tip {ref}`LDASTI <step-072>` and its boron {term}`halo`
 {ref}`LDBHI <step-073>` can be implanted into the memory cells alone.
 The resist is removed at {ref}`LDASTIS <step-074>`, after which every
 tip in the flow is annealed at {ref}`TIPRTAD <step-075>`.
@@ -32,7 +32,7 @@ itself. The earlier pages of this reference on the SONOS module
 {ref}`DEPI <step-038>`, {ref}`ONO <step-040>`) already point here as
 the cell's tip implant.
 
-The PDK's assumptions page, which publishes shadowing allowances for
+The PDK's assumptions page, which publishes {term}`shadowing` allowances for
 `NTM` and `HVNTM`, has none for `LDNTM`,[^pdk-03] and gives a single
 "Angle for tip implant" of 7° that we take to apply to this tip as well
 as the standard one (inference).
@@ -50,13 +50,13 @@ SONOS test structures are opened.
 ## Why this step exists
 
 The SONOS memory transistor is a different animal from the logic NMOS
-next to it. The PDK's e-test parameters describe it at drawn W/L
+next to it. The PDK's {term}`e-test` parameters describe it at drawn W/L
 0.45/0.22 µm (original cell) and 0.35/0.15 µm ("star" cell); its
-programme and erase conditions apply +6.7 V to the control gate with
+programme and erase conditions apply +6.7 V to the {term}`control gate` with
 −3.8 V on source, drain and body, and −3.8 V on the gate with +6.7 V on
 the other three terminals; and it must keep its window over 100 000
 cycles.[^pdk-07] Three consequences follow for its source/drain
-extensions:
+{term}`extensions <extension>`:
 
 * **Junction voltage.** During programme, erase and inhibit the
   source/drain junctions sit at several volts relative to gate and
@@ -64,25 +64,25 @@ extensions:
   abrupt tip under a gate at −3.8 V would drive band-to-band tunnelling
   and gate-induced drain leakage at the gate edge, disturbing
   unselected cells and loading the charge pumps. A lightly doped,
-  graded tip lowers the peak field, the classical LDD
+  graded tip lowers the peak field, the classical {term}`LDD`
   argument.[^ogura-1980] The same reasoning — a lighter LDD to cut
   junction leakage on selected transistors — is made explicitly in a
   Micron DRAM patent of the era.[^pat-ldd-micron]
 * **Charge-trapping reliability.** SONOS cells are programmed and
   erased by tunnelling through the thin bottom oxide;[^pap-01] any
-  hot-carrier injection at the drain edge during read or inhibit
+  {term}`hot-carrier injection` at the drain edge during read or inhibit
   injects charge into the nitride where it is not wanted and shifts the
   cell's threshold — the mechanism deliberately exploited by NROM-type
   cells[^eitan-2000] and deliberately avoided here. A graded drain
   keeps the lateral field low.
 * **Short-channel control at 0.15–0.22 µm.** A lighter tip gives less
   short-channel margin than the logic tip, so the cell gets its own
-  halo ({ref}`LDBHI <step-073>`) on top of the punch-through stopper
+  halo ({ref}`LDBHI <step-073>`) on top of the {term}`punch-through stopper <punch-through>`
   implanted at {ref}`PTSI <step-037>`.
 
 Because the memory transistor's channel is set by its own implants
 ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`) and its gate is poly
-over ONO rather than over gate oxide, its junctions are co-optimised
+over {term}`ONO` rather than over gate oxide, its junctions are co-optimised
 with them; Cypress's embedded-SONOS patents describe the cell as a
 device formed inside a logic flow with its own implant
 steps,[^pat-04][^pat-03] and a separate LDD implant for a particular
@@ -98,7 +98,7 @@ tip at all.
 An industry-generic implant-block lithography sequence for a 200 mm,
 130 nm-era fab:
 
-1. **Surface preparation.** Dehydration bake and HMDS prime on the
+1. **Surface preparation.** Dehydration bake and {term}`HMDS` prime on the
    oxide surface left by {ref}`HVASTIS <step-070>`.
 2. **Resist coat.** A single-layer positive resist; with no
    thin-resist parameter published for this mask (the PDK gives 0.3 µm
@@ -117,14 +117,14 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 5. **Develop** in 0.26 N TMAH,[^txt-02] rinse, dry; a post-develop
    bake or UV cure to stabilise the resist against two implants
    (industry practice).[^txt-02]
-6. **Inspection.** Overlay to poly; after-develop defect inspection.
+6. **Inspection.** {term}`Overlay <overlay>` to poly; after-develop defect inspection.
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm: ASML PAS 5500/100–/275 series, Nikon
+* **i-line {term}`stepper`**, 200 mm: ASML PAS 5500/100–/275 series, Nikon
   NSR-2205i, Canon FPA-3000i.[^txt-05]
 * **Coat/develop track** (TEL, DNS/SCREEN, SVG/ASML, Sokudo).
-* **Overlay metrology** (KLA-Tencor 5xxx/Archer) and a CD-SEM.
+* **Overlay metrology** (KLA-Tencor 5xxx/Archer) and a {term}`CD-SEM`.
 
 ## Machines likely used at SkyWater
 
@@ -133,7 +133,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   the tools; **inference** for the assignment of `LDNTM` to them.
 * **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius**.[^skw-01] Strength:
   strong for existence.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
+* **Overlay — KLA 5200/5300/Archer; {term}`CD` — AMAT Verity/VeraSEM**.[^skw-01]
   Strength: strong.
 
 ## Resources required
@@ -144,7 +144,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   suppliers.[^sec-01]
 * **HMDS**, **0.26 N TMAH developer**,[^txt-02] edge-bead remover, DI
   water, nitrogen.
-* **The LDNTM reticle** — generated from the drawn `ldntm` layer as
+* **The LDNTM {term}`reticle`** — generated from the drawn `ldntm` layer as
   `cldntm`.[^pdk-06]
 
 ## Related steps and cross-references
@@ -220,7 +220,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 
 ## Open questions
 
-* Whether the select transistor of the 2-T cell, as well as the memory
+* Whether the select transistor of the {term}`2-T cell`, as well as the memory
   transistor, is inside the `ldntm` opening is not public.
 * The resist thickness and the tilt at which the lightly doped tip is
   implanted are inferred; the PDK publishes no `LDNTM` shadowing

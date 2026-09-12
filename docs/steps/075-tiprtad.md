@@ -14,9 +14,9 @@
 
 `TIPRTAD` is the rapid thermal anneal that closes the tip module. Five
 implants have gone into the wafer since the gate was etched — the
-standard arsenic tip {ref}`ASTI <step-065>` and its boron halo
+standard arsenic tip {ref}`ASTI <step-065>` and its boron {term}`halo`
 {ref}`BHI <step-066>`, the tilted high-voltage tip
-{ref}`HVASTI <step-069>`, and the lightly doped SONOS tip
+{ref}`HVASTI <step-069>`, and the lightly doped {term}`SONOS` tip
 {ref}`LDASTI <step-072>` with its halo {ref}`LDBHI <step-073>` — and
 none has been annealed. `TIPRTAD` heats the wafer — in an inert
 ambient for seconds on the industry-typical recipe described below;
@@ -27,7 +27,7 @@ junctions as little as possible. The step list used in this reference
 calls it "RTA tip activation"; we read the code as "tip RTA" with a
 trailing qualifier that the later {ref}`RTAD <step-088>` and
 {ref}`RTAD2 <step-092>` share, and the public evidence supports the
-RTA reading (below). After it the spacer nitride is deposited at
+RTA reading (below). After it the {term}`spacer` nitride is deposited at
 {ref}`SPNIT <step-076>`.
 
 It is the second of the four activation anneals in the flow, after
@@ -39,7 +39,7 @@ the one with the shallowest, most abrupt profiles to preserve.
 
 `TIPRTAD` is an {ref}`Anneal / thermal processing <category-anneal>`
 step of the *implant activation* type — a single-wafer, lamp-heated
-{term}`RTA` — in its most demanding form: an extension anneal, in
+{term}`RTA` — in its most demanding form: an {term}`extension` anneal, in
 which the target is maximum activation with minimum diffusion. The
 category page sets out the compromise: "the highest activation is
 obtained by annealing hot and fast", and transient enhanced diffusion
@@ -56,7 +56,7 @@ on doing it fast:
 * **Activation and regrowth.** Implanted dopant is inactive until the
   lattice is restored;[^gibbons-1972][^txt-01] the arsenic tip, at a
   dose that amorphises the surface (typical),[^wiki-implant] regrows by
-  solid-phase epitaxy from the undamaged substrate at 500–600 °C with
+  {term}`solid-phase epitaxy` from the undamaged substrate at 500–600 °C with
   the arsenic incorporated substitutionally,[^csepregi-1978] and the
   boron halos in crystalline or regrown silicon need 800–1000 °C-class
   temperatures to dissolve their defect clusters.[^gibbons-1972] Above
@@ -77,11 +77,11 @@ on doing it fast:
   purpose.[^shishiguchi-1997] Jones and Ishida's review covers the
   whole trade.[^rev-05]
 * **Before the spacer.** The spacer film of {ref}`SPNIT <step-076>` is
-  deposited hot for tens of minutes (a furnace LPCVD nitride is
+  deposited hot for tens of minutes (a furnace {term}`LPCVD` nitride is
   typical of the era).[^txt-01] Unannealed tips and halos would spend
-  that time in exactly the slow, warm regime where TED is
+  that time in exactly the slow, warm regime where {term}`TED` is
   worst;[^stolk-1997] annealing first removes the damage so that the
-  spacer deposition moves nothing. IBM's spike-anneal patent describes
+  spacer deposition moves nothing. IBM's {term}`spike-anneal <spike anneal>` patent describes
   the same logic — extensions activated, then halos "implanted and
   activated preferably using spike annealing to prevent their
   diffusion".[^pat-spike-ibm]
@@ -97,12 +97,12 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 (SKY130's recipe is not public):
 
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen or
-  argon; RTP "heats silicon wafers to temperatures exceeding 1,000°C
+  argon; {term}`RTP` "heats silicon wafers to temperatures exceeding 1,000°C
   for not more than a few seconds" with "in situ pyrometry to effect
   real time control".[^wiki-rtp] A small oxygen addition is sometimes
   used to suppress dopant loss and surface pitting; Applied Materials
   patented an "optimal spike anneal ambient" for exactly this
-  question.[^pat-spike-amat-ambient] The screen oxide from
+  question.[^pat-spike-amat-ambient] The {term}`screen oxide` from
   {ref}`IOX45 <step-063>`, if retained through
   {ref}`LDASTIS <step-074>`, caps the surface.
 * **Temperature and time.** 950–1050 °C for seconds, or a spike to
@@ -127,7 +127,7 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 * **Rapid thermal processors**, 200 mm: AG Associates Heatpulse
   8108/8800 series, Applied Materials RTP Centura (XE/Radiance), Steag
   (later Mattson) RTP, Kokusai and TEL RTP ({ref}`category-anneal`).
-* **Four-point probe** for sheet resistance; **thermocouple wafers**
+* **{term}`Four-point probe <four-point probe>`** for {term}`sheet resistance`; **thermocouple wafers**
   for calibration.
 
 ## Machines likely used at SkyWater

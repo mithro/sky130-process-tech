@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`LDASTI` is the *lightly doped* arsenic tip implant of the SONOS
+`LDASTI` is the *lightly doped* arsenic tip implant of the {term}`SONOS`
 memory transistors: the counterpart of {ref}`ASTI <step-065>` made
 through the {ref}`LDNTM <step-071>` resist, at a dose that — the step
 and mask names tell us — is lower than the standard tip's. Arsenic
@@ -20,14 +20,14 @@ ions enter the memory cell's active silicon on both sides of each
 control-gate line, self-aligned to the polysilicon gate, and form the
 shallow n⁻ regions that will connect the memory transistor's channel to
 the deep n⁺ source/drain implanted later at {ref}`NSDI <step-086>`.
-The boron halo {ref}`LDBHI <step-073>` follows through the same resist;
+The boron {term}`halo` {ref}`LDBHI <step-073>` follows through the same resist;
 the strip is {ref}`LDASTIS <step-074>`.
 
 The species is arsenic by the step code, consistent with the PDK's
 "N Tip (As)" row;[^pdk-03] energy and dose are not public. What "lightly
 doped" means quantitatively is likewise not public; we read it as an
-LDD-class dose, of order 10¹³ cm⁻² (typical of an LDD),[^txt-04] against
-the 10¹⁴–10¹⁵ cm⁻² of a logic extension (typical).[^txt-01]
+LDD-class dose, of order 10¹³ cm⁻² (typical of an {term}`LDD`),[^txt-04] against
+the 10¹⁴–10¹⁵ cm⁻² of a logic {term}`extension` (typical).[^txt-01]
 
 ## Step category
 
@@ -51,7 +51,7 @@ quantified for logic: a lighter, deeper extension gives less
 short-channel control and more series resistance.[^thompson-1998] For
 a memory transistor read at low current, series resistance is
 secondary; short-channel control is restored by the cell's own halo
-({ref}`LDBHI <step-073>`) and punch-through stopper
+({ref}`LDBHI <step-073>`) and {term}`punch-through stopper <punch-through>`
 ({ref}`PTSI <step-037>`).
 
 Arsenic is kept, rather than the phosphorus of the classic LDD,
@@ -62,7 +62,7 @@ at which it precipitates and deactivates,[^nobili-1983] so its
 activation is complete after a short anneal.
 
 Without `LDASTI`, the memory transistors would have an undoped gap
-between channel and n⁺ source/drain under the spacer, or would have to
+between channel and n⁺ source/drain under the {term}`spacer`, or would have to
 take the logic tip with its leakage and disturb penalties.
 
 ## How it is typically performed
@@ -85,19 +85,19 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
   diffusion the anneal produces.[^stolk-1997]
 * **Screen.** The implant passes through whatever dielectric remains
   over the memory transistor's source/drain after the gate etch — the
-  screen oxide of {ref}`IOX45 <step-063>` and, if it survived the gate
-  etch, part of the ONO stack patterned at {ref}`ONOME <step-042>`;
+  {term}`screen oxide` of {ref}`IOX45 <step-063>` and, if it survived the gate
+  etch, part of the {term}`ONO` stack patterned at {ref}`ONOME <step-042>`;
   which is the case is not public (see *Open questions*).
 * **Tilt and rotation.** 7° (PDK tip angle),[^pdk-03] with twist; two
   or four rotations, or 0°, for symmetry — not public. In a dense
-  array the neighbouring gate lines shadow a tilted beam more than in
+  array the neighbouring gate lines {term}`shadow <shadowing>` a tilted beam more than in
   logic, which favours a small tilt.[^chen-1995]
 * **Charge control and cooling.** Electron shower and electrostatic
   chuck ("ESC chuck, E shower" on SkyWater's medium-current
   tool);[^skw-01] platen cooling is industry practice.
 * **Anneal.** None here; activation at {ref}`TIPRTAD <step-075>`.
 * **Monitoring.** Thermal-wave measurement on monitor
-  wafers;[^smith-1985] at 10¹³ cm⁻² the sheet resistance of a monitor
+  wafers;[^smith-1985] at 10¹³ cm⁻² the {term}`sheet resistance` of a monitor
   is measurable but less sensitive.
 
 ## Machines typically used
@@ -183,7 +183,7 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
 * Thompson et al. (Intel), VLSI 1998 — the extension depth/doping
   trade-off this implant deliberately takes the other way.[^thompson-1998]
 * Jones and Ishida, *Mater. Sci. Eng. R* 1998 — shallow-junction
-  doping, arsenic behaviour and TED.[^rev-05]
+  doping, arsenic behaviour and {term}`TED`.[^rev-05]
 * Nobili et al., *J. Electrochem. Soc.* 1983 — arsenic precipitation
   and deactivation, irrelevant at LDD doses but decisive at logic-tip
   doses.[^nobili-1983]
@@ -198,7 +198,7 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
 * Tran, McQueen and Kerr (Micron), US 6,759,288 — a lighter LDD on
   selected transistors to reduce junction leakage.[^pat-ldd-micron]
 * Yu (AMD), US 6,521,502 — extension and halo activation by
-  solid-phase epitaxy, for contrast with a non-amorphising tip.[^pat-spe-amd]
+  {term}`solid-phase epitaxy`, for contrast with a non-amorphising tip.[^pat-spe-amd]
 * Chen et al., *Solid-State Electronics* 1995 — shadowing of tilted
   implants by neighbouring gates.[^chen-1995]
 * Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 — the
@@ -213,7 +213,7 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
   on the gate-etch and {ref}`ONOME <step-042>` details, which are not
   public.
 * Whether the implant is at 7° with rotations or at 0° is not public.
-* Whether the select transistor of the 2-T cell receives this tip or
+* Whether the select transistor of the {term}`2-T cell` receives this tip or
   the logic tip is not public.
 
 <!-- footnotes -->

@@ -13,11 +13,11 @@
 ## What this step is
 
 `SAGD` deposits the film that becomes every transistor gate and every
-poly resistor in SKY130: a single blanket layer of amorphous silicon
-(a-Si), laid down by low-pressure chemical vapour deposition (LPCVD) —
+{term}`poly resistor` in SKY130: a single blanket layer of amorphous silicon
+(a-Si), laid down by low-pressure chemical vapour deposition ({term}`LPCVD`) —
 from silane, we infer — over the freshly grown gate oxides of
-{ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`, the ONO stack of
-the SONOS cells ({ref}`ONO <step-040>`) and the field oxide. The film is
+{ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`, the {term}`ONO` stack of
+the {term}`SONOS` cells ({ref}`ONO <step-040>`) and the field oxide. The film is
 undoped as deposited; it receives its doping from the implants that
 follow ({ref}`P1I <step-050>` for the gates, {ref}`PRI <step-053>` and
 {ref}`UPRI <step-056>` for the resistors), is capped
@@ -42,12 +42,12 @@ leave nothing for a resistor mask to protect.
 
 **Why "single"?** Two other gate constructions were common at the
 130 nm node and both use more than one silicon layer: a polycide gate
-(poly under tungsten silicide, used by DRAM makers to cut gate
+(poly under tungsten {term}`silicide`, used by DRAM makers to cut gate
 resistance) and a stacked-amorphous-silicon gate, in which two thin a-Si
 layers are deposited with an interface between them to block boron
 penetration through the gate oxide.[^wu-1993] We infer that "single"
 distinguishes the SKY130 gate from such stacks: one layer, one
-deposition. The PDK's sheet resistance for poly, 48.2 Ω/sq,[^pdk-08] is
+deposition. The PDK's {term}`sheet resistance` for poly, 48.2 Ω/sq,[^pdk-08] is
 far above the few Ω/sq of a silicided or polycide gate[^txt-05] and is
 what a heavily doped, unsilicided 0.18 µm poly film gives, so there is
 no silicide strap on the gate either.
@@ -61,7 +61,7 @@ choice between amorphous and polycrystalline deposition; what is
 specific here is that this is the only film in the flow whose grain
 structure is a device parameter. Its grains set the roughness of the
 gate edge after etch, the uniformity of dopant activation, the
-poly-depletion behaviour of the gate and the matching of the precision
+{term}`poly-depletion <poly depletion>` behaviour of the gate and the matching of the precision
 resistors.
 
 ## Why this step exists
@@ -88,14 +88,14 @@ deliberate choice with three documented benefits:
   A smooth top surface matters for the 0.15 µm gate
   lithography[^pdk-periph] ({ref}`P1M <step-061>`) and a smooth, fine-grained sidewall for the
   gate etch ({ref}`P1ME <step-062>`), because columnar as-deposited
-  poly grains print as line-edge roughness.
+  poly grains print as {term}`line-edge roughness <LER>`.
 * **Better dopant uniformity and less poly depletion.** Grain
   boundaries trap and segregate dopant;[^mandurah-1981][^kamins-1972]
   a film with fewer, larger grains after crystallisation gives more
   uniform activation and a smaller gate-depletion penalty, which at a
   4 nm-class gate oxide is a measurable loss of drive
   current.[^arora-1995]
-* **Gate-oxide integrity.** Koda et al. reported better gate-oxide
+* **{term}`Gate-oxide integrity <gate oxide integrity>`.** Koda et al. reported better gate-oxide
   integrity for p⁺ PMOS gates made from large-grain poly grown from
   amorphous films.[^koda-1993]
 
@@ -139,9 +139,9 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
 * **Crystallisation.** No dedicated anneal is listed in the step list
   used in this reference. Solid-phase crystallisation of a-Si on oxide
   proceeds at 600 °C over hours and much faster at higher
-  temperatures;[^iverson-1987] the later furnace and RTA steps
+  temperatures;[^iverson-1987] the later furnace and {term}`RTA` steps
   ({ref}`IOX45 <step-063>`, {ref}`TIPRTAD <step-075>`,
-  {ref}`RTAD <step-088>`) supply more than enough thermal budget, so
+  {ref}`RTAD <step-088>`) supply more than enough {term}`thermal budget`, so
   the film is fully polycrystalline long before contact.
 * **Metrology.** Thickness by spectroscopic ellipsometry (the amorphous
   and crystalline optical constants differ, which is itself a
@@ -201,7 +201,7 @@ suppliers,[^sec-01][^sec-02] without tying them to a process.
 * Also covers the SONOS cell stack from {ref}`ONO <step-040>` to
   {ref}`ONOME <step-042>`, so the memory-cell gate and the logic gate
   are the same film.
-* Poly stringers from incomplete STI planarisation are discussed on
+* Poly stringers from incomplete {term}`STI` planarisation are discussed on
   {ref}`FILOX <step-011>`; the earlier furnace nitride is
   {ref}`ISONIT <step-003>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.

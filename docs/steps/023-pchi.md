@@ -31,8 +31,8 @@ high-VT PMOS FET", `pfet_01v8_hvt`, modelled for V_DS and V_GS from 0 to
 ## Step category
 
 `PCHI` is an {ref}`Ion implantation <category-implant>` step of the
-*threshold-adjust* class: light dose, tens of keV, medium-current
-tool, through the pad/screen oxide (category page). It is the third
+*{term}`threshold-adjust <threshold-adjust implant>`* class: light dose, tens of keV, medium-current
+tool, through the pad/{term}`screen oxide` (category page). It is the third
 threshold implant of the module after {ref}`LVTNI <step-015>` and
 {ref}`LVTPI <step-020>`.
 
@@ -41,7 +41,7 @@ threshold implant of the module after {ref}`LVTNI <step-015>` and
 The threshold of a PMOS in an N-well rises in magnitude with the n-type
 doping at the surface of the channel.[^wiki-vt][^wiki-mtcmos] `LVTPI`
 sets that doping for the standard PMOS; `PCHI` and `PNCHI` add to it
-where a higher |Vt| is wanted. The motive is leakage: "Typical high Vth
+where a higher |{term}`Vt`| is wanted. The motive is leakage: "Typical high Vth
 devices reduce static leakage by 10 times compared with low Vth
 devices",[^wiki-mtcmos] and a 130 nm low-power process needs a high-Vt
 option to make standby-current targets in cells that are not
@@ -80,12 +80,12 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
   so its dose is at the low end of the range — a few 10¹² cm⁻² is
   illustrative.
 * **Tilt and twist.** 7° with twist.[^wiki-implant][^txt-02]
-* **Screen oxide.** The pad oxide (10–20 nm in the Cypress SONOS
+* **Screen oxide.** The pad oxide (10–20 nm in the Cypress {term}`SONOS`
   patent)[^pat-04] randomises the beam and traps recoils.
 * **Charge control.** Electron shower on a cooled electrostatic chuck
   (SkyWater lists "ESC chuck, E shower").[^skw-01]
 * **Anneal.** None until {ref}`RTAI <step-034>`.
-* **Monitoring.** Thermal-wave on product; sheet resistance on monitors
+* **Monitoring.** Thermal-wave on product; {term}`sheet resistance` on monitors
   after a monitor anneal.
 
 ## Machines typically used
@@ -137,7 +137,7 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — energies, sources, channelling and
+* Wikipedia, *Ion implantation* — energies, sources, {term}`channelling` and
   tilt in one page.[^wiki-implant]
 * Wikipedia, *Threshold voltage* — the body-effect parameter containing
   the channel doping.[^wiki-vt]
@@ -158,10 +158,10 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
 * Thompson, Packan and Bohr (Intel), VLSI 1996 — drive-current
   trade-offs of super-steep retrograde channels.[^thompson-1996]
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — low-Vt NMOS and
-  PMOS defined by masked Vt-adjust implants, including a counter-doped
+  PMOS defined by masked Vt-adjust implants, including a {term}`counter-doped <counter-doping>`
   channel.[^pat-vt-rrr]
 * Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
-  boron at 1e12–1e13 cm⁻² and 50–100 keV, chained punch-through
+  boron at 1e12–1e13 cm⁻² and 50–100 keV, chained {term}`punch-through`
   barriers, a 900 °C furnace anneal.[^pat-vt-lsi]
 * Shahidi et al. (IBM), *IEEE EDL* 1993 — indium channel implants for
   steep retrograde NMOS channels.[^shahidi-1993]

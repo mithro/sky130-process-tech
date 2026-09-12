@@ -13,10 +13,10 @@
 ## What this step is
 
 `TUNME` removes the oxide — we infer the pad oxide from
-{ref}`BOX <step-002>` — from the tunnel windows so that the tunnel oxide
-of the SONOS memory transistor can be grown on bare silicon at the next
+{ref}`BOX <step-002>` — from the tunnel windows so that the {term}`tunnel oxide`
+of the {term}`SONOS` memory transistor can be grown on bare silicon at the next
 step, {ref}`ONO <step-040>`. The resist patterned at
-{ref}`TUNM <step-035>` — opened through its ARC at
+{ref}`TUNM <step-035>` — opened through its {term}`ARC` at
 {ref}`TUNARCE <step-036>` and just used as the mask for the
 {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants — now serves
 a third time, as the mask for an oxide etch that we infer to be wet: the
@@ -59,7 +59,7 @@ retention, so the etch is the gentlest available.
 The tunnel oxide is the thinnest and most critical film in the SONOS
 cell: the Cypress patents put it at "less than about 25 Å"[^pat-01] and
 "from about 15 Å to about 22 Å",[^pat-02] and it has to pass
-programming current by Fowler–Nordheim tunnelling for 100 000 cycles
+programming current by {term}`Fowler–Nordheim tunnelling` for 100 000 cycles
 (the PDK guarantees "100K cycles")[^pdk-07] while blocking leakage for
 years. Three things follow:
 
@@ -75,7 +75,7 @@ years. Three things follow:
   grown on clean crystal.
 * **It must be removed only where the cells are.** Elsewhere the
   (inferred) pad oxide would continue to serve as the base on which the
-  nitride of the ONO stack will sit and be removed again
+  nitride of the {term}`ONO` stack will sit and be removed again
   ({ref}`ONOME <step-042>`), and as a protective layer over the logic
   silicon until the gate-oxide pre-clean. A masked etch does this; a
   blanket strip would not.
@@ -106,7 +106,7 @@ fab (SKY130's recipe is not public):
    surfactant helps the liquid wet 0.4 µm windows in hydrophobic resist;
    Cypress specifies "a 10:1 buffered oxide etch (BOE) containing a
    surfactant".[^pat-04] The resist is not attacked by HF.
-2. **Over-etch and undercut.** The etch is timed for the oxide
+2. **{term}`Over-etch <over-etch>` and undercut.** The etch is timed for the oxide
    thickness plus an over-etch to clear thickness variation; being
    isotropic, it undercuts the resist edge by roughly the oxide
    thickness plus over-etch — tens of nanometres, small against the
@@ -116,13 +116,13 @@ fab (SKY130's recipe is not public):
 3. **Rinse and dry.** DI-water rinse; the freshly exposed silicon is
    hydrophobic.
 4. **Resist strip.** The resist has seen two light implants and one
-   plasma. An oxygen (or O₂/N₂, O₂/forming-gas) downstream ash — "A
+   plasma. An oxygen (or O₂/N₂, O₂/forming-gas) downstream {term}`ash` — "A
    photoresist tunnel mask 220 can be ashed or stripped using oxygen
-   plasma"[^pat-04] — followed by a sulphuric-peroxide (SPM) wet strip
+   plasma"[^pat-04] — followed by a sulphuric-peroxide ({term}`SPM`) wet strip
    ({ref}`category-strip`). The ash regrows a thin oxide on the exposed
    silicon, which the next clean removes.
-5. **Pre-oxidation clean.** An RCA-type sequence — SC-1 for particles
-   and organics, SC-2 for metals[^wiki-rca] — with an HF-last or a
+5. **Pre-oxidation clean.** An RCA-type sequence — {term}`SC-1` for particles
+   and organics, {term}`SC-2` for metals[^wiki-rca] — with an HF-last or a
    deliberately grown chemical oxide as the final surface. The choice
    matters for a tunnel oxide of the 1.5–3 nm class the Cypress patents
    describe:[^pat-04] the Cypress patents describe SC-1 at "50 to 80° C.
@@ -169,7 +169,7 @@ fab (SKY130's recipe is not public):
 * **Sulphuric acid and hydrogen peroxide** (SPM), **ammonium
   hydroxide** (SC-1), **hydrochloric acid** (SC-2),[^wiki-rca]
   **ozone** if an ozonated-water clean is used.[^pat-03]
-* **Oxygen, nitrogen, forming gas** for the ash.[^skw-01]
+* **Oxygen, nitrogen, {term}`forming gas`** for the ash.[^skw-01]
 * **Ultrapure DI water**, **isopropanol** for drying, **nitrogen**.
 * SkyWater names KMG Chemicals and EMD Performance Materials among
   its chemical suppliers.[^sec-01][^sec-02]

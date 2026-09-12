@@ -18,7 +18,7 @@ a diffusion time at high temperature.
 
 Precisely, an implant is specified by species (B⁺, BF₂⁺, P⁺, As⁺, In⁺,
 Sb⁺, occasionally Ge⁺ or N⁺), energy (a few keV to a few MeV), dose
-(ions per cm², from about 10¹¹ for a threshold adjust to several 10¹⁵
+(ions per cm², from about 10¹¹ for a {term}`threshold adjust <threshold-adjust implant>` to several 10¹⁵
 for a source/drain), tilt and twist angles, and the screen film through
 which it is done; these ranges are typical industry values.[^txt-01] It
 is always followed, sooner or later, by an anneal
@@ -28,8 +28,8 @@ dopant onto substitutional sites where it is electrically active.
 The SKY130 flow has 25 implants. In order: the deep n-well; the
 threshold-adjust, well and drain-extension implants of the various
 transistor flavours; the punch-through-stop and depletion implants
-(which sit among the SONOS steps); the n-channel implant; the poly gate
-and poly resistor implants; the arsenic tips and boron halos for the
+(which sit among the {term}`SONOS` steps); the n-channel implant; the poly gate
+and {term}`poly resistor` implants; the arsenic tips and boron halos for the
 1.8 V, high-voltage and lightly-doped transistors; and finally the p⁺
 and n⁺ source/drain implants.
 
@@ -42,7 +42,7 @@ collisions with nuclei (nuclear stopping, {math}`S_n`), which dominate
 at low energy and for heavy ions and which displace lattice atoms; and
 inelastic interaction with electrons (electronic stopping,
 {math}`S_e`), which dominates at high energy and behaves like viscous
-drag, {math}`S_e \propto \sqrt{E}` in the LSS regime. The total range
+drag, {math}`S_e \propto \sqrt{E}` in the {term}`LSS <LSS theory>` regime. The total range
 is
 
 ```{math}
@@ -83,10 +83,10 @@ a particular direction", such as ⟨110⟩ in silicon, and the effect is
 "highly nonlinear, with small variations from perfect orientation
 resulting in extreme differences in implantation depth".[^wiki-implant]
 Production implants therefore tilt the wafer, conventionally by 7°,
-twist it to avoid planar channels, implant through a thin screen oxide
+twist it to avoid planar channels, implant through a thin {term}`screen oxide`
 that randomises the ion directions, or pre-amorphise the surface with a
 germanium or silicon implant.[^wiki-channel][^txt-01] Tilt has a side
-effect on a patterned wafer: the resist edge shadows one side of each
+effect on a patterned wafer: the resist edge {term}`shadows <shadowing>` one side of each
 opening, so {term}`halo` and other symmetric implants are done in two or
 four rotations ("quad" implants).
 
@@ -96,7 +96,7 @@ Every ion displaces hundreds to thousands of silicon atoms; at doses
 above roughly 10¹⁴–10¹⁵ cm⁻² for arsenic, "the amount of
 crystallographic damage can be enough to completely amorphize the
 surface".[^wiki-implant] An amorphous layer regrows epitaxially from the
-undamaged substrate at 500–600 °C (solid-phase epitaxy),[^txt-01]
+undamaged substrate at 500–600 °C ({term}`solid-phase epitaxy`),[^txt-01]
 leaving end-of-range defects at the old amorphous/crystalline boundary.
 Below the amorphisation threshold the implant leaves a supersaturation
 of silicon self-interstitials, which during the anneal raise the
@@ -105,7 +105,7 @@ seconds to minutes — transient enhanced diffusion ({term}`TED`).
 Eaglesham and co-workers identified the "+1" interstitials from the
 implant as the source[^eaglesham-1994] and Stolk and co-workers set out
 the physical mechanisms.[^stolk-1997] TED is the reason that shallow
-junctions at the 130 nm node need low thermal budgets and rapid thermal
+junctions at the 130 nm node need low {term}`thermal budgets <thermal budget>` and rapid thermal
 anneals rather than furnaces, and why the order of implants and anneals
 in a flow is not arbitrary.
 
@@ -133,7 +133,7 @@ SKY130's own implant recipes are not public.
   {ref}`PWI <step-027>`, deep n-well {ref}`DNI <step-008>`): phosphorus
   or boron at hundreds of keV to over 1 MeV, doses of order 10¹²–10¹³
   cm⁻², from a high-energy implanter. A "retrograde" well whose peak
-  lies below the channel gives latch-up immunity and punch-through
+  lies below the channel gives latch-up immunity and {term}`punch-through`
   control; ITRS 2001 notes that "the retrograde well profile must be
   less than 0.5 times the drain extension depth to improve short channel
   effects".[^itrs-01] We infer that multiple energies are chained (the
@@ -144,7 +144,7 @@ SKY130's own implant recipes are not public.
   {term}`Vt`, from a medium-current implanter.
 * **Poly and resistor implants** ({ref}`P1I <step-050>`, {ref}`PRI
   <step-053>`, {ref}`UPRI <step-056>`): the gate must be degenerately
-  doped (high 10¹⁵ cm⁻²) to avoid poly depletion, whereas precision
+  doped (high 10¹⁵ cm⁻²) to avoid {term}`poly depletion`, whereas precision
   resistors need lower, carefully split doses to hit a target sheet
   resistance.
 * **Extensions ("tips") and halos** ({ref}`ASTI <step-065>`, {ref}`BHI
@@ -156,7 +156,7 @@ SKY130's own implant recipes are not public.
   challenging junction.[^itrs-01]
 * **Source/drain** ({ref}`NSDI <step-086>`, {ref}`PSDI <step-082>`):
   arsenic and boron/BF₂ at several 10¹⁵ cm⁻² and tens of keV, after the
-  spacer, from a high-current implanter; these amorphise the surface and
+  {term}`spacer`, from a high-current implanter; these amorphise the surface and
   set the contact resistance.
 
 ### Typical implanter classes
@@ -196,7 +196,7 @@ commercial implanters is given by Current.[^current-2017]
 * **Source gases**, supplied in sub-atmospheric (SDS) or dilute
   cylinders for safety: boron trifluoride (BF₃) for B⁺ and BF₂⁺,
   phosphine (PH₃) for P⁺, arsine (AsH₃) for As⁺, germane (GeH₄) for
-  pre-amorphisation, and hydrogen or xenon as
+  {term}`pre-amorphisation <pre-amorphisation implant>`, and hydrogen or xenon as
   co-gases.[^wiki-bf3][^wiki-ph3][^wiki-ash3]
 * **Solid sources**: elemental arsenic, phosphorus, antimony or indium
   in vaporiser ovens, for species without a convenient gas.
@@ -264,7 +264,7 @@ commercial implanters is given by Current.[^current-2017]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — energies, ranges, channelling,
+* Wikipedia, *Ion implantation* — energies, ranges, {term}`channelling`,
   amorphisation and implanter classes.[^wiki-implant]
 * Wikipedia, *Stopping and Range of Ions in Matter*.[^wiki-srim]
 * Wikipedia, *Channelling (physics)*.[^wiki-channel]
@@ -307,7 +307,7 @@ commercial implanters is given by Current.[^current-2017]
 * MacPherson, *APL* 1971 — the original threshold-adjust-by-implant
   paper.[^macpherson-1971]
 * Tsukamoto et al., *NIM B* 1991 — review of high-energy implantation
-  for retrograde wells and buried layers.[^tsukamoto-1991]
+  for {term}`retrograde wells <retrograde well>` and buried layers.[^tsukamoto-1991]
 * Morris and Rubin, IIT 2000 — why MeV retrograde wells replaced
   diffused wells, with cost trade-offs.[^morris-2000]
 * Rubin, Morris and Jasper, IIT 2002 — process-control issues for

@@ -7,14 +7,14 @@ Deposition steps *add* a layer of material onto the wafer surface,
 covering everything that is there. Almost every other step in the flow
 either patterns a deposited film, implants through one, or polishes one
 back. In a 130 nm aluminium-interconnect process like SKY130, the
-deposited films are: silicon nitride (STI hard mask, gate cap, sidewall
-spacers, etch stops and final passivation); silicon dioxide in several
+deposited films are: silicon nitride ({term}`STI` {term}`hard mask`, gate cap, sidewall
+{term}`spacers <spacer>`, etch stops and final passivation); silicon dioxide in several
 flavours (STI trench fill, spacer oxide, {term}`PSG`, inter-level
 dielectrics and capping oxides); amorphous or polycrystalline silicon
 (the gate and resistor layer); titanium and titanium nitride (contact
 liners and barriers); tungsten (contact and via plugs); aluminium–copper
 alloy (the five wiring levels); titanium–tungsten (anti-reflective caps
-and capacitor electrodes); and silicon oxynitride (MiM capacitor
+and capacitor electrodes); and silicon {term}`oxynitride` (MiM capacitor
 dielectric and anti-reflective layers).
 
 Precisely, the films are grown by one of two families of technique.
@@ -48,7 +48,7 @@ leaving voids.[^txt-01][^ohring-2002] Conformality is quantified as
 {term}`step coverage`, and the {term}`aspect ratio` of the feature being
 coated is the governing parameter. Low sticking coefficients (as in
 {term}`LPCVD` {term}`TEOS` oxide and nitride) give the best step
-coverage; PECVD and PVD films have sticking coefficients near unity and
+coverage; {term}`PECVD` and PVD films have sticking coefficients near unity and
 poor bottom coverage in deep holes.
 
 ### LPCVD
@@ -62,7 +62,7 @@ standard LPCVD films and their typical industry conditions are:
 * **Polysilicon or amorphous silicon** from silane, SiH₄ → Si + 2H₂, at
   roughly 580–650 °C. Below about 580 °C the film deposits amorphous and
   crystallises during later anneals, giving a smoother surface and finer
-  grain, which helps gate etch and CD control; SKY130's gate is
+  grain, which helps gate etch and {term}`CD` control; SKY130's gate is
   deposited amorphous ({ref}`SAGD <step-048>`). Phosphine or diborane
   can be co-flowed for in-situ doping, but gates in a dual-work-function
   CMOS process are usually implanted instead.[^wiki-poly][^txt-01]
@@ -74,7 +74,7 @@ standard LPCVD films and their typical industry conditions are:
   cap ({ref}`GATENIT <step-058>`) and the spacer ({ref}`SPNIT
   <step-076>`).
 * **TEOS oxide**, Si(OC₂H₅)₄ → SiO₂ + by-products, at roughly 650–750
-  °C; and **HTO** (high-temperature oxide) from SiH₂Cl₂ + N₂O at 800–900
+  °C; and **{term}`HTO`** (high-temperature oxide) from SiH₂Cl₂ + N₂O at 800–900
   °C, both temperatures being typical industry values.[^txt-01][^txt-02]
   Both are conformal and are used for spacers and liners.[^wiki-teos]
 
@@ -87,7 +87,7 @@ carry aluminium.[^wiki-pecvd] Typical films:
 
 * **Oxide** from SiH₄ + N₂O, or from TEOS + O₂ (better conformality and
   lower particle count). PECVD TEOS oxide is the workhorse inter-level
-  dielectric and capping oxide of an aluminium BEOL; the ITRS 2001
+  dielectric and capping oxide of an aluminium {term}`BEOL`; the ITRS 2001
   notes that fluorinated versions ("Low κ FSG (κ = 3.7)") had "been in
   production since the 250 nm node".[^itrs-02]
 * **Nitride** from SiH₄ + NH₃ + N₂, hydrogen-rich (typically 10–25 at.%
@@ -114,10 +114,10 @@ from the corners of a gap, which would otherwise close first, so gaps of
 aspect ratio around 3:1 fill without voids in a single step. The
 deposition-to-sputter ratio is the key recipe knob, and the bias makes
 the process hot (wafer temperature is controlled by helium backside
-cooling on an electrostatic chuck). HDP-CVD oxide is the usual STI fill
+cooling on an electrostatic chuck). {term}`HDP-CVD` oxide is the usual STI fill
 at this node and is the likely process behind {ref}`FILOX <step-011>`;
 in many aluminium processes it also fills the gaps between metal lines
-before a capping oxide and CMP.[^txt-01][^txt-09]
+before a capping oxide and {term}`CMP`.[^txt-01][^txt-09]
 
 ### PVD (sputtering)
 
@@ -176,7 +176,7 @@ thicknesses used for antenna-ratio calculations: poly 0.18 µm, local
 interconnect (LI1) 0.1 µm, metal 1 and metal 2 0.35 µm, metal 3 and
 metal 4 0.8 µm (2 µm in the thick-metal flow options), metal 5 1.2 µm or
 2 µm depending on the flow option, an oxide spacer of 0.05 µm and a
-pre-LI ILD of 0.5 µm.[^pdk-03] These are the antenna-rule assumptions;
+pre-LI {term}`ILD` of 0.5 µm.[^pdk-03] These are the antenna-rule assumptions;
 the PDK's process stack diagram labels the same conductors 0.36, 0.845
 and 1.26 µm.[^pdk-04] We take these as the approximate deposited (and,
 for the dielectrics, post-CMP) targets that the deposition steps below
@@ -211,7 +211,7 @@ must hit.
   (Concept One-W, Concept Two-Altus, and Concept Two-Dual
   Altus)")[^novellus-history] and Applied Materials Centura WxZ.
 * **Metrology**: ellipsometry and reflectometry for dielectric
-  thickness; {term}`four-point probe` sheet resistance for metals;
+  thickness; {term}`four-point probe` {term}`sheet resistance` for metals;
   stress gauges (wafer-bow); particle counters on blanket monitor
   wafers.
 

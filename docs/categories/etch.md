@@ -4,7 +4,7 @@
 ## What this class of step does
 
 An etch step removes material selectively: wherever the photoresist
-(or a hard mask) is open, the exposed film is eaten away down to a
+(or a {term}`hard mask`) is open, the exposed film is eaten away down to a
 stopping layer, and wherever it is covered, the film stays. Etching is
 how the pattern drawn by lithography ({ref}`category-lithography`) is
 transferred into the real materials of the chip — nitride, silicon,
@@ -15,7 +15,7 @@ etch-back) or only from the wafer backside.
 Precisely, an etch is characterised by four numbers. Its **rate**
 (nm/min) sets the process time; its {term}`selectivity`, the ratio of
 the rate on the target film to the rate on the mask and on the
-underlying stop layer, sets how much over-etch can be tolerated; its
+underlying stop layer, sets how much {term}`over-etch` can be tolerated; its
 {term}`anisotropy`, the ratio of vertical to lateral rate, sets how
 faithfully the resist width becomes the etched width; and its
 **uniformity** across the wafer and between dense and isolated features
@@ -27,12 +27,12 @@ must be removed cleanly and gently with very high selectivity — the thin
 oxides at {ref}`GOXETCH <step-046>` and {ref}`SACETCH <step-095>`, for
 example, which we infer to be wet etches.
 
-In the SKY130 flow there are 27 etch steps: the STI nitride and trench
-etches, the SONOS tunnel/ONO stack etches, the gate-oxide wet etch, the
-poly gate etch, the spacer etch, a nitride cut, the local-interconnect
+In the SKY130 flow there are 27 etch steps: the {term}`STI` nitride and trench
+etches, the {term}`SONOS` tunnel/{term}`ONO` stack etches, the gate-oxide wet etch, the
+poly gate etch, the {term}`spacer` etch, a nitride cut, the local-interconnect
 contact and line etches, the sacrificial-oxide wet etch before
 silicidation, the metal contact etch, the five aluminium metal etches,
-four via etches, two MiM capacitor etches, a backside film removal, and
+four via etches, two MiM capacitor etches, a {term}`backside film removal`, and
 the final nitride-seal and pad etches.
 
 ## Physics and engineering background
@@ -64,7 +64,7 @@ from the walls.[^flamm-1981][^lieberman-2005]
 
 ### Plasma sources
 
-A conventional capacitive RIE couples ion density and ion energy through
+A conventional capacitive {term}`RIE` couples ion density and ion energy through
 the one RF supply. High-density sources decouple them: an inductively
 coupled ({term}`ICP`; Lam's {term}`TCP`; Applied's "decoupled plasma
 source", DPS) coil generates a dense plasma (typically 10¹¹–10¹²
@@ -88,7 +88,7 @@ recipes are not public.
   {ref}`P1ME <step-062>`): HBr/Cl₂ with a little O₂, which forms
   volatile SiBrₓ/SiClₓ while a thin SiOₓBrᵧ sidewall film keeps the
   profile vertical; the O₂ also raises selectivity to the gate oxide
-  underneath, and the main etch is followed by a soft-landing and an
+  underneath, and the main etch is followed by a {term}`soft-landing <soft landing>` and an
   HBr/O₂ over-etch step with selectivity to SiO₂ of the order of 100:1
   so that a 2–4 nm gate oxide survives.[^nojiri-2015][^txt-01] SF₆ "is
   commonly used for etching silicon" where isotropy is
@@ -120,10 +120,10 @@ recipes are not public.
   plasma and an immediate rinse.[^nojiri-2015][^txt-02]
 * **Ti:W and TiN** (capacitor top plates {ref}`CAPME <step-138>`,
   {ref}`CAP2ME <step-153>`): fluorine (SF₆, CF₄) or chlorine chemistries
-  with high selectivity to the oxynitride dielectric beneath.
-* **Anti-reflective coatings** ({ref}`TUNARCE <step-036>`): organic BARC
+  with high selectivity to the {term}`oxynitride` dielectric beneath.
+* **Anti-reflective coatings** ({ref}`TUNARCE <step-036>`): organic {term}`BARC`
   opens in O₂/N₂ or HBr/O₂; inorganic SiON in CF₄-based plasmas.
-* **Tungsten** etch-back (an alternative to CMP for plugs): SF₆/Ar.
+* **Tungsten** etch-back (an alternative to {term}`CMP` for plugs): SF₆/Ar.
 
 ### Wet etching
 
@@ -160,8 +160,8 @@ monitoring pad follows the film thickness directly.[^nojiri-2015] The
 {term}`loading effect` makes the rate depend on how much material is
 exposed, and micro-loading and ARDE make dense and isolated features
 etch differently, so the over-etch must cover the slowest feature while
-the stop layer survives under the fastest. Etch bias — the difference
-between the resist CD and the etched CD — is deliberately used to trim
+the stop layer survives under the fastest. {term}`Etch bias <etch bias>` — the difference
+between the resist {term}`CD` and the etched CD — is deliberately used to trim
 gates below the printed dimension: ITRS 2001 lists an MPU/ASIC gate etch
 bias of 25 nm for the 130 nm node.[^itrs-01]
 
@@ -196,7 +196,7 @@ oxidation or clean must remove.
   Plastics benches); centrifugal spray processors (FSI Mercury);
   single-wafer spin etchers for backside film removal and bevel clean
   (SEZ, now Lam) — the natural tool class for {ref}`BFR <step-060>`.
-* **Metrology and inspection**: CD-SEM after etch, cross-section SEM for
+* **Metrology and inspection**: {term}`CD-SEM` after etch, cross-section SEM for
   profiles, optical inspection for residues, and etch-rate monitor
   wafers.
 
