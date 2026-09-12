@@ -172,9 +172,9 @@ recipe is not public); the shared physics is set out at
   CF4, CHF3, O2" and "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
   O2".[^skw-01] Both carry fluorocarbons that can etch oxide;
   strength: **weak** for assignment to the via etch.
-* **Lam Exelan.** Lam's Exelan line is not on SkyWater's
-  list;[^skw-01] job-board mentions are unverified. Strength:
-  **weak**. Lam's own 10-K lists the Exelan line.[^lam-10k]
+* **Lam Exelan.** No public source places an Exelan at SkyWater; it
+  appears here only as the era's typical dielectric etcher, a line
+  Lam's own 10-K lists.[^lam-10k]
 * **Strip and clean — Gasonics PEP, Iridia, Mattson Aspen2; Akrion
   Gamma wet bench; batch rotational tools with "EKS265, EKC270
   solvents"; SEZ223 / DaVinci.**[^skw-01] Strength: strong for
