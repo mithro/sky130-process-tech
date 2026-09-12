@@ -13,7 +13,7 @@
 ## What this step is
 
 `PTSI` is the first of two implants made through the tunnel-mask windows
-into the channel region of the SONOS memory transistors. It puts, we
+into the channel region of the {term}`SONOS` memory transistors. It puts, we
 infer from the step name and the n-channel cell, a p-type doping peak
 *below* the surface of the memory channel — a "punch-through stop" — to
 keep the depletion region of the drain from reaching the source in a
@@ -23,7 +23,7 @@ programme, erase and inhibit operations. The surface doping, which sets
 the threshold, is left for the next implant, {ref}`DEPI <step-038>`.
 
 The wafer at this point carries the {ref}`TUNM <step-035>` resist,
-opened through its ARC at {ref}`TUNARCE <step-036>`, so the implant
+opened through its {term}`ARC` at {ref}`TUNARCE <step-036>`, so the implant
 enters only the tunnel windows (`tunm`, GDS 80:20, described by the PDK
 as "SONOS device tunnel implant"[^pdk-06]) and passes through the screen
 oxide there — the pad oxide, we infer — which is 10–20 nm in the Cypress
@@ -43,13 +43,13 @@ Cypress-published analogue and era-typical values below.
 *channel engineering* class — the same family as {ref}`LVTNI <step-015>`
 and {ref}`PCHI <step-023>` — but of the sub-surface ("punch-through
 stopper" or "anti-punch-through") type rather than the surface
-threshold-adjust type: a medium-current implant at tens to a hundred or
+{term}`threshold-adjust <threshold-adjust implant>` type: a medium-current implant at tens to a hundred or
 so keV, of order 10¹²–10¹³ cm⁻² (industry-typical),[^txt-01] aimed at a
 peak beneath the channel.
 
 ## Why this step exists
 
-Punch-through is the short-channel failure in which the source and
+{term}`Punch-through <punch-through>` is the short-channel failure in which the source and
 drain depletion regions merge: Wikipedia describes the regime in which
 "the depletion regions of the source and drain begin overlapping
 underneath the channel", and drain-induced barrier lowering as the
@@ -64,19 +64,19 @@ device.[^itrs-01]
 
 Three things make the SONOS transistor need its own barrier:
 
-* **It is short.** The PDK's e-test parameters are defined on memory
+* **It is short.** The PDK's {term}`e-test` parameters are defined on memory
   transistors of drawn W/L 0.45/0.22 µm for the original cell and
   0.35/0.15 µm for the "star" cell,[^pdk-07] i.e. gate lengths at or
   near the process minimum.
 * **It sees high voltages.** The PDK's programme and erase table
-  applies +6.7 V to the control gate with −3.8 V on source, drain and
+  applies +6.7 V to the {term}`control gate` with −3.8 V on source, drain and
   body, and −3.8 V on the gate with +6.7 V on the other three
   terminals,[^pdk-07] and unselected cells on shared lines see partial
   versions of these ("program inhibit" thresholds are also
   specified[^pdk-07]). A logic-style channel would not hold off these
   conditions at 0.22 µm.
 * **Its surface must stay lightly doped.** The next implant makes the
-  channel depletion-mode ({ref}`DEPI <step-038>`), and Cypress's own
+  channel {term}`depletion-mode` ({ref}`DEPI <step-038>`), and Cypress's own
   scaling paper stresses "reduction of dopants in the surface of the
   channel" of the control gate and "use of deeper channel implants
   with heavier species such as Indium … so as to keep surface dopant
@@ -115,21 +115,21 @@ memory transistor (SKY130's values are not public):
 * **Tilt and twist.** 7° with a twist is the textbook convention to
   suppress {term}`channelling`;[^txt-02][^wiki-implant] a large tilt is
   used only when the barrier is meant to be asymmetric.[^hori-1988]
-* **Screen.** Through the screen oxide — the pad oxide, we infer;
+* **Screen.** Through the {term}`screen oxide` — the pad oxide, we infer;
   10–20 nm in the Cypress patent[^pat-04] — which also randomises the
   beam.
 * **Wafer handling.** Single-wafer, electrostatically chucked end
   station with an electron shower for charge neutralisation; the
   resist carries only a light dose here.
 * **Anneal.** No dedicated anneal; the implant is, we infer, activated
-  by the ONO furnace steps ({ref}`ONO <step-040>`) and the gate
+  by the {term}`ONO` furnace steps ({ref}`ONO <step-040>`) and the gate
   oxidations ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`). The
   Cypress integration patent places the memory-cell formation "after at
   least some of the well and channel implants for the logic MOS
   transistors are formed",[^pat-03] which is exactly where the step list
   used in this reference puts it.
 * **Monitoring.** Thermal-wave damage measurement on product,
-  sheet resistance on monitor wafers ({ref}`category-implant`).
+  {term}`sheet resistance` on monitor wafers ({ref}`category-implant`).
 
 ## Machines typically used
 
@@ -185,7 +185,7 @@ memory transistor (SKY130's values are not public):
 
 * SkyWater PDK, *Layers Reference* — `tunm` 80:20 "SONOS device tunnel
   implant".[^pdk-06]
-* SkyWater PDK, *Periphery rules* — `lvtn` blocks the standard Vt
+* SkyWater PDK, *Periphery rules* — `lvtn` blocks the standard {term}`Vt`
   implants from "SONOS FETs".[^pdk-periph]
 * SkyWater PDK, *Device Details* — SONOS cell W/L, programme/erase
   voltages and thresholds.[^pdk-07]
@@ -206,7 +206,7 @@ memory transistor (SKY130's values are not public):
 ### High-level understanding
 
 * Wikipedia, *Short-channel effect* — depletion-region overlap and
-  DIBL.[^wiki-sce]
+  {term}`DIBL`.[^wiki-sce]
 * Wikipedia, *Ion implantation* — energies, tilt and
   channelling.[^wiki-implant]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — the submicron

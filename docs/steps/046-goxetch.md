@@ -20,7 +20,7 @@ or buffered HF until the roughly 10 nm oxide[^pdk-hv] in the windows is
 gone and bare silicon is exposed; under the resist, over the 5 V and
 high-voltage transistors, the oxide stays. The resist is then stripped
 and the wafer cleaned for the thin gate oxidation at
-{ref}`LVGOX <step-047>`. It is the etch half of the dual-gate-oxide
+{ref}`LVGOX <step-047>`. It is the etch half of the {term}`dual-gate-oxide <dual gate oxide>`
 process described on the {ref}`category-oxidation` page: "a mask and wet
 etch to strip it from the low-voltage active areas".
 
@@ -58,7 +58,7 @@ The 1.8 V transistors need a ~4 nm gate oxide (the 1.8 V NMOS model
 carries `toxe = 4.148e-9`[^pdk-model-nfet01v8]); the thick oxide on
 their active areas is ~10 nm[^pdk-hv] and must be removed before the
 thin one can be grown. A thin oxide cannot simply be grown on top:
-oxidation adds to an existing oxide by the Deal–Grove law rather than
+oxidation adds to an existing oxide by the {term}`Deal–Grove <Deal–Grove model>` law rather than
 replacing it ({ref}`category-oxidation`). The removal has to be:
 
 * **Complete**, because any residue becomes part of the thin oxide;
@@ -70,7 +70,7 @@ replacing it ({ref}`category-oxidation`). The removal has to be:
   along the resist–oxide interface thins the thick oxide beside the
   boundary. The pairing of resist and wet etch for dual gate oxide is
   a recognised integration problem;[^beverina-2003] the thinning of the
-  thick oxide at STI edges and at the mask boundary in a dual-oxide
+  thick oxide at {term}`STI` edges and at the mask boundary in a dual-oxide
   process has been characterised[^lee-1999-icvc] and STI schemes
   proposed to compensate it.[^kim-2001]
 
@@ -92,7 +92,7 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    concentration, the dissociation state of the acid.[^kikuyama-1994]
    Monk, Soane and Howe give the kinetics and a model for HF etching
    of oxide films.[^monk-1994] Cypress uses "a BOE etch"[^pat-04] here.
-2. **Over-etch.** Timed to clear the thickest oxide on the wafer plus
+2. **{term}`Over-etch <over-etch>`.** Timed to clear the thickest oxide on the wafer plus
    margin; the hydrophobic (dewetting) silicon surface is the classic
    visual sign that the oxide is gone. Every second of over-etch
    widens the undercut under the resist edge, so the margin is kept
@@ -100,16 +100,16 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    ({ref}`category-etch`).
 3. **Rinse.** DI water; the bare silicon is now hydrogen-terminated
    and hydrophobic.[^cerofolini-1998]
-4. **Resist strip.** Oxygen-plasma ash and SPM ("conventional piranha
+4. **Resist strip.** Oxygen-plasma {term}`ash` and {term}`SPM` ("conventional piranha
    clean and/or plasma ash operations"[^pat-03]) — the resist has seen
    one light implant and an HF bath ({ref}`category-strip`).
 5. **Pre-gate clean.** An RCA-type clean whose final surface state
-   is chosen for the thin oxide: SC-1 for particles, SC-2 for
+   is chosen for the thin oxide: {term}`SC-1` for particles, {term}`SC-2` for
    metals,[^wiki-rca] then either an HF-last (hydrogen-terminated
    silicon) or a thin chemical oxide. Two constraints are public. The
    clean must not remove the thick oxide that is now exposed — Cypress
    uses "a wet etch that does not etch oxide"[^pat-04] — and it must
-   not attack the ONO blocking oxide of the memory cells, which SC-1
+   not attack the {term}`ONO` {term}`blocking oxide` of the memory cells, which SC-1
    etches at "approximately 0.2 to 0.3 nm/minute" and can roughen or
    pit, so that an "ultra-dilute SC1" is preferred.[^pat-03] Kern's
    review gives the chemistry of these cleans,[^kern-1990] Ohmi the
@@ -153,7 +153,7 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   Akrion list.[^skw-01]
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide,
   hydrochloric acid** for SPM/SC-1/SC-2.[^wiki-rca]
-* **Oxygen, nitrogen, forming gas** for the ash.[^skw-01]
+* **Oxygen, nitrogen, {term}`forming gas`** for the ash.[^skw-01]
 * **Ultrapure DI water, isopropanol, nitrogen.**
 * SkyWater names KMG Chemicals and EMD Performance Materials among
   its chemical suppliers.[^sec-01][^sec-02]
@@ -214,7 +214,7 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 * Kim et al., SSDM 2001 — an STI scheme to compensate thick-oxide
   thinning at the corner.[^kim-2001]
 * Lee (Hyundai), *Electrochem. Solid-State Lett.* 1999 — a dual gate
-  oxide process with improved gate-oxide integrity.[^lee-1999]
+  oxide process with improved {term}`gate-oxide integrity <gate oxide integrity>`.[^lee-1999]
 * Kern, *J. Electrochem. Soc.* 1990 — wafer-cleaning chemistry.[^kern-1990]
 * Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature
   cleaning.[^ohmi-1996]

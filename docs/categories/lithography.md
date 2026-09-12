@@ -21,7 +21,7 @@ Precisely, a mask step is a sequence performed on a coater/developer
    {term}`HMDS` prime to make the surface hydrophobic so the resist
    adheres.
 2. **Anti-reflective coating**: for critical layers a {term}`BARC` is
-   spun on and baked (or an inorganic ARC was deposited earlier).
+   spun on and baked (or an inorganic {term}`ARC` was deposited earlier).
 3. **Coat**: resist is dispensed and spun to a uniform film; SKY130's
    design assumptions use a nominal photoresist thickness of 1.14
    µm.[^pdk-03] The edge bead is removed ({term}`EBR`).
@@ -93,7 +93,7 @@ field can be longer than the lens's well-corrected image circle and lens
 aberrations average along the scan.[^wiki-stepper] ITRS 2001 describes
 130 nm-node scanners as having "rectangular fields (nominally 25 mm x 32
 mm for 4X scanners)".[^itrs-01] Alignment uses diffraction-grating marks
-in the scribe line read by the tool's alignment sensor; the tool fits a
+in the {term}`scribe line` read by the tool's alignment sensor; the tool fits a
 linear model (translation, rotation, scaling, orthogonality) per wafer
 and per field and prints to it.
 
@@ -120,7 +120,7 @@ and per field and prints to it.
 Substrate reflections cause standing waves through the resist thickness
 and, on topography, reflective notching. The cure is an anti-reflective
 coating: an organic {term}`BARC` spun under the resist, or an inorganic
-one such as PECVD silicon oxynitride or TiN on aluminium, tuned so that
+one such as {term}`PECVD` silicon {term}`oxynitride` or TiN on aluminium, tuned so that
 reflections from its top and bottom interfere destructively at the
 exposure wavelength.[^wiki-arc][^mack-2007] SKY130's flow contains a
 dedicated ARC etch after the tunnel mask ({ref}`TUNARCE <step-036>`),
@@ -141,7 +141,7 @@ focus.[^wiki-mask] Two enhancements push {math}`k_1` below 0.4:
 * **Optical proximity correction** ({term}`OPC`). Line ends shorten,
   corners round and isolated lines print differently from dense ones;
   OPC pre-distorts the mask data (biasing, serifs, hammerheads,
-  sub-resolution assist features) so the wafer image matches the
+  {term}`sub-resolution assist features <SRAF>`) so the wafer image matches the
   design.[^wiki-opc]
 
 ### Overlay and CD control
@@ -314,7 +314,7 @@ alignment corrections.
 * Levenson, Viswanathan and Simpson, *IEEE TED* 1982 — the original
   phase-shifting mask paper.[^levenson-1982]
 * Lin, *IEEE Circuits and Devices* 1993 — a tutorial on alternating and
-  attenuated phase-shift masks.[^lin-1993]
+  {term}`attenuated phase-shift masks <attenuated PSM>`.[^lin-1993]
 * Ito and Willson, *ACS Symp. Ser.* 1984 — the chemically amplified
   resist concept applied to semiconductor manufacturing.[^ito-1984]
 * Ito and Willson, *Polym. Eng. Sci.* 1983 — the first chemical

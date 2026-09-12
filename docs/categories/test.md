@@ -4,7 +4,7 @@
 ## What this class of step does
 
 Electrical test is where the finished wafer is measured rather than
-changed. After the final alloy anneal ({ref}`ALLY <step-170>`) the
+changed. After the final {term}`alloy anneal` ({ref}`ALLY <step-170>`) the
 wafer is placed on a prober, a card of fine needles is lowered onto
 special test structures, and a parametric tester measures transistors,
 resistors, capacitors, diodes and interconnect chains one by one. The
@@ -33,7 +33,7 @@ file, named a wafermap".[^wiki-test]
 Parametric test does not measure the product circuit. It measures a
 process control monitor ({term}`PCM`): a fixed set of test structures
 placed in the {term}`scribe line` between dies (or in dedicated
-drop-in sites), stepped onto every reticle field so that they see
+drop-in sites), stepped onto every {term}`reticle` field so that they see
 exactly the same processing as the product. A 130 nm CMOS PCM
 typically contains:
 
@@ -44,7 +44,7 @@ typically contains:
   and breakdown are extracted.
 * **Sheet-resistance structures** — {term}`van der Pauw structure`s
   or long bars — for every conducting film: n-well, p-well, n⁺ and p⁺
-  diffusions with and without silicide, the poly gate and each poly
+  diffusions with and without {term}`silicide`, the poly gate and each poly
   resistor flavour, local interconnect and each metal level.
 * **Contact and via structures** — {term}`Kelvin structure`s for the
   resistance of a single contact, and long chains of thousands of
@@ -55,9 +55,9 @@ typically contains:
 * **Capacitors** — MOS capacitors whose C–V curve gives the gate-oxide
   thickness and flat-band voltage; MiM capacitors for capacitance
   density and leakage; junction capacitors.
-* **Diodes and isolation** — well and junction diodes, STI leakage
+* **Diodes and isolation** — well and junction diodes, {term}`STI` leakage
   between adjacent active areas, latch-up structures.
-* **Memory cells** — for a SONOS process, single cells or small arrays
+* **Memory cells** — for a {term}`SONOS` process, single cells or small arrays
   that are programmed and erased to check the memory window.
 
 The structures are laid out so that every measurement is a
@@ -71,10 +71,10 @@ resistance drop out.[^wiki-rs][^wiki-4t]
 The resistance of a square of a thin film is its {term}`sheet
 resistance`, {math}`R_s = \rho/t`, in ohms per square; "a square sheet
 with sheet resistance 10 ohm/square has an actual resistance of 10 ohm,
-regardless of the size of the square".[^wiki-rs] A four-point probe on a
+regardless of the size of the square".[^wiki-rs] A {term}`four-point probe` on a
 large area gives {math}`R_s = (\pi/\ln 2)\,V/I \approx 4.53\,V/I`; on a
 small symmetric test structure with four contacts on its periphery, van
-der Pauw's theorem gives the sheet resistance of an arbitrarily shaped
+der Pauw's theorem gives the {term}`sheet resistance` of an arbitrarily shaped
 lamina from two resistance measurements, which is why the cloverleaf or
 Greek-cross "van der Pauw structure" is the standard PCM
 element.[^wiki-vdp] Contact resistance is extracted from a Kelvin cross
@@ -114,8 +114,8 @@ Yield Enhancement chapters.[^itrs-2001-met][^itrs-2001-yield]
 Although only the final e-test is a numbered step in the SKY130 flow,
 every category above has in-line metrology attached to it —
 ellipsometry after oxidation and deposition, {term}`CD-SEM` and
-overlay after lithography and etch, sheet resistance after implant
-and anneal, thickness mapping after CMP, particle counts after clean —
+{term}`overlay` after lithography and etch, sheet resistance after implant
+and anneal, thickness mapping after {term}`CMP`, particle counts after clean —
 so that most excursions are caught long before test. E-test is the
 last and most complete check, and the only one that sees the finished
 device.
@@ -135,7 +135,7 @@ device.
   ring.[^wiki-probecard]
 * **Bench characterisation**: HP/Agilent 4155/4156 semiconductor
   parameter analysers and manual probe stations for engineering work.
-* **Wafer sort** (customer or product step): Teradyne, Advantest,
+* **{term}`Wafer sort <wafer sort>`** (customer or product step): Teradyne, Advantest,
   Credence/LTX testers with high-pin-count probe
   cards.[^wiki-teradyne][^wiki-advantest]
 
@@ -213,7 +213,7 @@ device.
 * Valdes, *Proc. IRE* 1954 — the original four-point-probe resistivity
   measurement.[^valdes-1954]
 * Buehler, Grant and Thurber (NBS), *JES* 1978 — bridge and van der
-  Pauw resistors for line-width (electrical CD)
+  Pauw resistors for line-width (electrical {term}`CD`)
   measurement.[^buehler-1978]
 * Proctor, Linholm and Mazer (NBS), *IEEE TED* 1983 — Kelvin
   measurement of interfacial contact resistance and its

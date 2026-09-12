@@ -16,7 +16,7 @@
 {term}`extension` — the "tip" — of the standard 1.8 V NMOS transistors.
 Through the resist windows opened at {ref}`NTM <step-064>`, arsenic ions
 enter the active silicon on both sides of every polysilicon gate, passing
-through the thin screen oxide inferred to have been grown at
+through the thin {term}`screen oxide` inferred to have been grown at
 {ref}`IOX45 <step-063>`. The gate stack itself masks the channel, so
 the implanted region begins at the gate edge and is *self-aligned* to
 it; the gate poly is shielded by the nitride and oxide caps it still
@@ -24,14 +24,14 @@ carries from {ref}`GATENIT <step-058>` and {ref}`POC <step-059>` (see
 {ref}`P1I <step-050>`), so the tip does not dope the gate. The result
 is a shallow, heavily doped n-type layer that will link the channel to
 the deep n⁺ source/drain formed later at {ref}`NSDI <step-086>`,
-outside the spacer.
+outside the {term}`spacer`.
 
 That the tip is arsenic is stated publicly: the PDK's junction-depth
 table has a row "N Tip (As)" with a lateral ("vertical space") value of
 0.01 µm (variable `LDNTIP`), beside the deeper "N+ or P+ S/D (XJ)" row
 at 0.1 µm vertical and 0.06 µm lateral;[^pdk-03] the same page gives the
 "Angle for tip implant" as 7°.[^pdk-03] Energy and dose are not public.
-The boron halo {ref}`BHI <step-066>` follows through the same resist,
+The boron {term}`halo` {ref}`BHI <step-066>` follows through the same resist,
 and the resist is stripped at {ref}`ASTIS <step-067>`.
 
 ## Step category
@@ -51,7 +51,7 @@ The extension does three jobs that the deep source/drain cannot:
 
 * **Short-channel control.** The junction that faces the channel must
   be shallow so that the drain's depletion region does not reach under
-  the gate and lower the source barrier (drain-induced barrier lowering, DIBL); Wikipedia
+  the gate and lower the source barrier (drain-induced barrier lowering, {term}`DIBL`); Wikipedia
   describes the regime in which "the depletion regions of the source
   and drain begin overlapping underneath the channel".[^wiki-sce] ITRS
   2001 sets the extension junction depth at "0.55*Physical Gate
@@ -63,9 +63,9 @@ The extension does three jobs that the deep source/drain cannot:
   from the channel to the deep junction under the spacer; ITRS 2001
   allocates "7% of the allowable source and drain parasitic
   resistances to the drain extensions" and sets a maximum (PMOS)
-  drain-extension sheet resistance of 400 Ω/sq for its 2001
+  drain-extension {term}`sheet resistance` of 400 Ω/sq for its 2001
   year.[^itrs-01] A lightly
-  doped LDD of the 1980 kind[^ogura-1980] would cost too much drive
+  doped {term}`LDD` of the 1980 kind[^ogura-1980] would cost too much drive
   current at 1.8 V, which is why the modern "tip" is heavily doped.
 * **Gate overlap.** The extension must reach a few nanometres under the
   gate edge — the PDK's 0.01 µm "N Tip (As)" lateral figure[^pdk-03] —
@@ -105,12 +105,12 @@ fab (SKY130's energy and dose are not public):
 * **Dose.** Of order 10¹⁴–10¹⁵ cm⁻² (typical).[^txt-01] Above roughly
   10¹⁴–10¹⁵ cm⁻² for arsenic "the amount of crystallographic damage can
   be enough to completely amorphize the surface",[^wiki-implant] so the
-  implanted layer is amorphous and regrows by solid-phase epitaxy at
+  implanted layer is amorphous and regrows by {term}`solid-phase epitaxy` at
   {ref}`TIPRTAD <step-075>`, which gives high activation but leaves
   end-of-range defects at the old amorphous/crystalline boundary
   ({ref}`category-implant`).
 * **Tilt and twist.** The PDK records 7° for the tip implant.[^pdk-03] A
-  tilted beam is shadowed on one side of each gate by the gate stack —
+  tilted beam is {term}`shadowed <shadowing>` on one side of each gate by the gate stack —
   0.18 µm of poly[^pdk-03] plus the roughly 0.2 µm cap read on the
   {ref}`GATENIT <step-058>` page[^pdk-03] — so a 7° beam is blocked for
   about 0.38 µm × tan 7° ≈ 47 nm beside the gate, and symmetric source
@@ -127,7 +127,7 @@ fab (SKY130's energy and dose are not public):
 * **Anneal.** None here; the tip, its halo and the two other tip
   flavours are activated together at {ref}`TIPRTAD <step-075>`.
 * **Monitoring.** Sheet resistance on bare monitor wafers after a
-  monitor anneal (the dose is high enough for a four-point probe), and
+  monitor anneal (the dose is high enough for a {term}`four-point probe`), and
   thermal-wave measurement on product.[^smith-1985]
 
 ## Machines typically used
@@ -181,7 +181,7 @@ fab (SKY130's energy and dose are not public):
 * Next: {ref}`BHI <step-066>` (the halo through the same resist), then
   {ref}`ASTIS <step-067>` (strip).
 * The other tip implants: {ref}`HVASTI <step-069>` (5 V NMOS) and
-  {ref}`LDASTI <step-072>` (SONOS transistors).
+  {ref}`LDASTI <step-072>` ({term}`SONOS` transistors).
 * Activation: {ref}`TIPRTAD <step-075>`; spacer:
   {ref}`SPNIT <step-076>`; deep n⁺ junction: {ref}`NSDI <step-086>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
@@ -225,7 +225,7 @@ fab (SKY130's energy and dose are not public):
   energy arsenic implants on sheet resistance and junction
   depth.[^kasnavi-2000]
 * Jones and Ishida, *Mater. Sci. Eng. R* 1998 — review of shallow
-  junction formation: low-energy implantation, TED and RTA.[^rev-05]
+  junction formation: low-energy implantation, {term}`TED` and {term}`RTA`.[^rev-05]
 * Nobili et al., *J. Electrochem. Soc.* 1983 — precipitation as the
   cause of electrically inactive arsenic above its solubility.[^nobili-1983]
 * Rousseau, Griffin and Plummer, *Appl. Phys. Lett.* 1994 — arsenic
@@ -237,7 +237,7 @@ fab (SKY130's energy and dose are not public):
   drain-current asymmetry at 130 nm.[^yoneda-2002]
 * Lukaszek, Reno and Bammi, IIT 1996 — wafer charging through resist
   during high-current arsenic implants.[^lukaszek-1996]
-* Hook et al. (IBM), *IEEE TED* 2003 — lateral straggle at implant
+* Hook et al. (IBM), *IEEE TED* 2003 — lateral {term}`straggle` at implant
   edges.[^hook-2003]
 * Yu (AMD), US 6,521,502 — activating extensions and halos by
   solid-phase epitaxy of an amorphised layer.[^pat-spe-amd]
@@ -254,7 +254,7 @@ fab (SKY130's energy and dose are not public):
   the step, cannot be settled from public data.
 * The rotation scheme (0°, two or four rotations at the published 7°
   tilt) is not public.
-* Whether a germanium or silicon pre-amorphisation is used is not
+* Whether a germanium or silicon {term}`pre-amorphisation <pre-amorphisation implant>` is used is not
   public; none appears in the step list used in this reference.
 * Whether the tip precedes or follows the halo within the resist
   window — the step list used in this reference puts the arsenic

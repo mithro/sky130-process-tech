@@ -12,10 +12,10 @@
 
 ## What this step is
 
-`TUNM` is the first mask of the SONOS non-volatile-memory module and
+`TUNM` is the first mask of the {term}`SONOS` non-volatile-memory module and
 the first lithography step after the wells and channels were annealed
 at {ref}`RTAI <step-034>`. It coats the wafer with an anti-reflective
-coating and photoresist, exposes the *tunnel mask* reticle and
+coating and photoresist, exposes the *tunnel mask* {term}`reticle` and
 develops it, opening windows over the channel regions of the SONOS
 memory transistors and leaving everything else — every logic
 transistor, every 5 V and high-voltage device — covered. The windows
@@ -23,7 +23,7 @@ are used three times before the resist comes off: two implants go
 through them ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`), and the
 oxide inside them — the pad oxide, we infer — is then etched away
 ({ref}`TUNME <step-039>`) so
-that the tunnel oxide of the {term}`ONO` stack can be grown on bare
+that the {term}`tunnel oxide` of the {term}`ONO` stack can be grown on bare
 silicon at {ref}`ONO <step-040>`.
 
 The PDK documents the mask and the drawn layer behind it. The mask table
@@ -60,7 +60,7 @@ layer whose resist must survive two implants and an (inferred) wet oxide
 etch. Its minimum feature (0.410 µm) and space (0.500 µm)[^pdk-periph]
 are far above the 0.15 µm of the active layer ({ref}`FOM <step-004>`),
 so it sits in the class of layers that a 130 nm-era fab prints on an
-i-line stepper (see below). What sets it apart from the other implant
+i-line {term}`stepper` (see below). What sets it apart from the other implant
 masks of the flow is that it is followed by a dedicated anti-reflective
 coating etch ({ref}`TUNARCE <step-036>`), the only such step in the step
 list used in this reference.
@@ -84,7 +84,7 @@ mask table[^pdk-05] as the three SONOS masks — and `TUNM` is the first.
 The tunnel window has to be a separate mask because the memory
 transistor's channel is engineered differently from every logic
 transistor. Its threshold must be set so that the programmed and
-erased states straddle the read condition — the PDK's e-test table
+erased states straddle the read condition — the PDK's {term}`e-test` table
 gives a nominal programmed threshold of 1.44 V and an erased threshold
 of −2.3 V[^pdk-07] — which calls for its own channel implants
 ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`), and its tunnel oxide
@@ -108,7 +108,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    photolithography to help reduce image distortions associated with
    reflections off the surface of the substrate" and "help reduce
    standing waves, thin-film interference, and specular
-   reflections".[^wiki-arc] The existence of a separate ARC etch at
+   reflections".[^wiki-arc] The existence of a separate {term}`ARC` etch at
    {ref}`TUNARCE <step-036>` is our evidence that this layer carries
    one; why a relaxed layer needs it is discussed on that page.
 3. **Resist coat and soft bake.** A positive resist of roughly 1 µm
@@ -116,16 +116,16 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    "Photoresist thickness"[^pdk-03] — thick enough to stop the
    channel-type implants that follow (industry-typical: a 1 µm resist
    stops ions of a few hundred keV; {ref}`category-implant`).
-4. **Exposure.** Through the tunnel reticle, aligned to the STI pattern
+4. **Exposure.** Through the tunnel reticle, aligned to the {term}`STI` pattern
    printed at {ref}`FOM <step-004>`. The 0.410 µm minimum
-   feature[^pdk-periph] corresponds to k₁ ≈ 0.67 at the 365 nm i-line
-   with a typical 0.6 NA i-line lens (illustrative) (CD =
+   feature[^pdk-periph] corresponds to {term}`k₁ <k1>` ≈ 0.67 at the 365 nm i-line
+   with a typical 0.6 {term}`NA` i-line lens (illustrative) ({term}`CD` =
    k₁·λ/NA),[^wiki-litho] comfortably inside the i-line process window,
    so we infer an i-line layer; the 2001 ITRS assigns 248 nm only to the
    critical layers of the 130 nm node.[^itrs-03]
 5. **Post-exposure bake, develop** in 2.38 % TMAH,[^txt-02] rinse,
    and a hard bake to harden the resist for the implants.
-6. **Inspection.** Overlay to active and CD on the coarse tunnel
+6. **Inspection.** {term}`Overlay <overlay>` to active and CD on the coarse tunnel
    window; after-develop inspection for residue in the windows, which
    would block the implants or the oxide etch.
 
@@ -144,13 +144,13 @@ pre-oxidation clean are folded into those steps (see the
   Nikon NSR-2205i, Canon FPA-3000i ({ref}`category-lithography`).
 * **Coat/develop track** with BARC and resist coat, bake and develop
   modules (TEL, DNS/SCREEN, Sokudo).
-* **Overlay and CD metrology** (KLA-Tencor overlay tools, CD-SEM).
+* **Overlay and CD metrology** (KLA-Tencor overlay tools, {term}`CD-SEM`).
 * **After-develop inspection** (optical patterned-wafer inspection).
 
 ## Machines likely used at SkyWater
 
 * **ASML i-line stepper or i-line scanner.** SkyWater lists "ASML
-  I-line stepper" and "ASML I-line scanner" alongside its DUV
+  I-line stepper" and "ASML I-line scanner" alongside its {term}`DUV`
   tools.[^skw-01] Strength: **strong** for the vendor and wavelength
   classes; **inference** for assigning `TUNM` to the i-line tools,
   from the 0.410 µm design rule.[^pdk-periph]
@@ -215,7 +215,7 @@ pre-oxidation clean are folded into those steps (see the
 * Cypress/UMC press release — "only requires three additional mask
   layers".[^cyp-22]
 * Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest — the
-  2T cell and its Fowler–Nordheim programming.[^cyp-25]
+  2T cell and its {term}`Fowler–Nordheim <Fowler–Nordheim tunnelling>` programming.[^cyp-25]
 
 ### High-level understanding
 

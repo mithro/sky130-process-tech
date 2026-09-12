@@ -12,10 +12,10 @@
 
 ## What this step is
 
-`LDBHI` is the boron {term}`halo` implant of the SONOS memory
+`LDBHI` is the boron {term}`halo` implant of the {term}`SONOS` memory
 transistors — the counterpart of {ref}`BHI <step-066>` made through the
 {ref}`LDNTM <step-071>` resist after the lightly doped arsenic tip of
-{ref}`LDASTI <step-072>`. A tilted boron beam places p-type pockets
+{ref}`LDASTI <step-072>`. A tilted boron beam places p-type {term}`pockets <pocket>`
 around the memory transistor's tips, on the channel side of each
 junction, self-aligned to the control-gate line. The step list used in
 this reference pairs this halo only with the `NTM` and `LDNTM` tips: the
@@ -25,9 +25,9 @@ annealed at {ref}`TIPRTAD <step-075>`.
 
 Species beyond "B", energy, dose, tilt and rotation are not public.
 What distinguishes this halo from the logic halo is its host: a
-transistor whose channel was set by its own punch-through stopper
+transistor whose channel was set by its own {term}`punch-through stopper <punch-through>`
 ({ref}`PTSI <step-037>`) and depletion implant ({ref}`DEPI <step-038>`),
-whose gate is poly over an ONO stack, and whose tip is lightly doped
+whose gate is poly over an {term}`ONO` stack, and whose tip is lightly doped
 and, we infer, non-amorphising ({ref}`LDASTI <step-072>`).
 
 ## Step category
@@ -45,7 +45,7 @@ does — Codella and Ogura's original purpose of holding the threshold up
 as the channel shortens[^codella-1985] — and needs it more, for two
 reasons:
 
-* **Its tip is lightly doped.** A graded, lightly doped extension
+* **Its tip is lightly doped.** A graded, lightly doped {term}`extension`
   ({ref}`LDASTI <step-072>`) has a longer depletion tail into the
   channel than an abrupt logic tip, so the drain's field reaches
   further under the gate; without a pocket the cell's threshold would
@@ -64,7 +64,7 @@ reasons:
 A halo in a non-volatile cell also sets its disturb margins: a
 programmed cell's threshold and an erased cell's leakage both depend on
 how the pocket doping and the tip meet under the gate edge, and on how
-much the anneal moves the boron. The reverse short-channel effect —
+much the anneal moves the boron. The {term}`reverse short-channel effect` —
 threshold rising at short lengths through boron pile-up near the
 junctions[^lu-1989-rsce][^rafferty-1993][^machala-1997] — is present here as
 in logic and is absorbed into the cell's threshold targets.
@@ -91,13 +91,13 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   implant,[^pat-vt-amd] and a halo sits in the same range.
 * **Tilt and rotation.** Large tilt with two or four rotations to make
   the pocket symmetric[^pat-quad-tsmc] (20–45° is typical[^txt-04]); in
-  the dense memory array the neighbouring control-gate lines shadow a
+  the dense memory array the neighbouring control-gate lines {term}`shadow <shadowing>` a
   tilted beam,[^chen-1995] so the tilt and the array pitch are chosen
   together. The tilt is not public.
-* **Channelling.** Because the lightly doped tip does not amorphise
+* **{term}`Channelling <channelling>`.** Because the lightly doped tip does not amorphise
   the surface (inference from an LDD-class dose), the boron enters
   crystalline silicon and is more prone to channelling than the logic
-  halo; the twist, the screen oxide and the tilt itself are the
+  halo; the twist, the {term}`screen oxide` and the tilt itself are the
   countermeasures.[^wiki-implant] Its damage is sub-amorphising point
   defects, the "+1" interstitials that drive transient enhanced
   diffusion of the boron itself during the anneal,[^eaglesham-1994]
@@ -179,7 +179,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — halo and
   pocket engineering.[^txt-04]
 * Plummer, Deal and Griffin, *Silicon VLSI Technology* — implantation
-  and TED.[^txt-01]
+  and {term}`TED`.[^txt-01]
 * Taur and Ning, *Fundamentals of Modern VLSI Devices* — non-uniform
   channel doping and short-channel thresholds.[^taur-2009]
 
@@ -203,7 +203,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 * Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997 — the physics of
   transient enhanced diffusion.[^stolk-1997]
 * Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999 — ramp rate
-  and boron junction movement, the case for a spike anneal.[^agarwal-1999]
+  and boron junction movement, the case for a {term}`spike anneal`.[^agarwal-1999]
 * White, Adams and Bu, *IEEE Circuits & Devices* 2000 — SONOS cell
   operation and the disturb mechanisms the pocket affects.[^pap-01]
 * Chen et al., *Solid-State Electronics* 1995 — shadowing of tilted
@@ -212,7 +212,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   junction-capacitance penalty.[^pat-halo-chartered]
 * Lin, Yoo and Liang (TSMC), US 5,372,957 — multiple tilted-angle
   implantation with rotation.[^pat-quad-tsmc]
-* Hwang (Goldstar), US 5,364,807 — an LDD transistor with a halo
+* Hwang (Goldstar), US 5,364,807 — an {term}`LDD` transistor with a halo
   punch-through stopper.[^pat-halo-goldstar]
 * Yu (AMD), US 6,630,385 — differential halo implants and
   anneals.[^pat-halo-amd-diff]
@@ -224,7 +224,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 * Whether the lightly doped tip leaves the surface crystalline, and
   hence how much channelling and TED this halo sees, is an inference
   from LDD-typical doses.
-* Whether the select transistor of the 2-T cell receives this halo is
+* Whether the select transistor of the {term}`2-T cell` receives this halo is
   not public.
 * How the halo, the punch-through stopper and the depletion implant
   combine to set the erased and programmed thresholds is not

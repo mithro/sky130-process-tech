@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`PWDEM` prints the *P-well drain-extended mask*, the last lithography of
+`PWDEM` prints the *P-well {term}`drain-extended <DEMOS>` mask*, the last lithography of
 the well and channel module. A photoresist (thick, we infer) is coated,
 exposed and developed to open windows over the regions of the 20 V
 devices that are to receive a purpose-built, lightly doped P-well; the
@@ -41,10 +41,10 @@ treat the blank as a documentation inconsistency (see *Open questions*).
 
 `PWDEM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *thick-resist implant-block* type, aligned (we infer) to the
-STI pattern and used only by the high-voltage device family. Its
+{term}`STI` pattern and used only by the high-voltage device family. Its
 features are large — the 20 V devices have drawn channel lengths of the
 order of a micrometre (the PDK's HV methodology gives 1.055 µm and
-1.050 µm for the 16 V VHV NMOS and PMOS[^pdk-hv]) and drift regions
+1.050 µm for the 16 V VHV NMOS and PMOS[^pdk-hv]) and {term}`drift regions <drift region>`
 longer still.[^pdk-07]
 
 ## Why this step exists
@@ -83,7 +83,7 @@ placed in pairs".[^pdk-07]
 An industry-generic drain-extension well lithography for a 200 mm,
 130 nm-era fab:
 
-1. **Track preparation.** HMDS prime; no BARC for micrometre-scale
+1. **Track preparation.** {term}`HMDS` prime; no {term}`BARC` for micrometre-scale
    features (inference).[^wiki-litho]
 2. **Thick resist coat.** The resist must stop the deepest
    drain-extension implant. A DE well is *lighter* than the main well
@@ -92,8 +92,8 @@ An industry-generic drain-extension well lithography for a 200 mm,
    {ref}`PWBM <step-026>` is plausible (inference;[^txt-02] compare
    IBM's 1800–2500 nm for 550 keV boron[^pat-well-ibm]).
 3. **Exposure.** i-line; the layer's features are
-   micrometre-scale[^pdk-hv] and its overlay requirements are set by the
-   drift-region length rather than by a sub-micrometre CD. We infer an
+   micrometre-scale[^pdk-hv] and its {term}`overlay` requirements are set by the
+   drift-region length rather than by a sub-micrometre {term}`CD`. We infer an
    **i-line layer**.
 4. **Alignment** to STI. In a DE device the field-oxide length and the
    poly-to-drift overlap are reliability-critical — "Under no
@@ -104,7 +104,7 @@ An industry-generic drain-extension well lithography for a 200 mm,
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
+* **i-line {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i).[^txt-05]
 * **Coat/develop track** with thick-resist capability; **overlay tool**.
 
@@ -121,7 +121,7 @@ An industry-generic drain-extension well lithography for a 200 mm,
 * **Thick positive i-line implant resist** (inference); suppliers named
   in SkyWater's S-1: Dow, JSR, Tokyo Ohka Kogyo.[^sec-01]
 * **HMDS**, **TMAH developer**, edge-bead remover, DI water, nitrogen.
-* **The PWDEM reticle** (from `pwde`).[^pdk-06]
+* **The PWDEM {term}`reticle`** (from `pwde`).[^pdk-06]
 
 ## Related steps and cross-references
 
@@ -162,12 +162,12 @@ An industry-generic drain-extension well lithography for a 200 mm,
 
 * Wikipedia, *LDMOS* — drift region formed by implantation.[^wiki-ldmos]
 * Wikipedia, *Photolithography* — 365 nm i-line and CD =
-  k₁·λ/NA.[^wiki-litho]
+  {term}`k₁ <k1>`·λ/{term}`NA`.[^wiki-litho]
 * Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
-  tools, implanted-resist stripping and RTP of the 0.25–0.13 µm
+  tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
 
 ### Deep dive

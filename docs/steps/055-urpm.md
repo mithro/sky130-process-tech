@@ -13,7 +13,7 @@
 ## What this step is
 
 `URPM` opens resist windows over the bodies of the *ultra-high*
-sheet-resistance poly resistors so that they can receive their own
+sheet-resistance {term}`poly resistors <poly resistor>` so that they can receive their own
 implant, {ref}`UPRI <step-056>`. Everything else — the n⁺ gate film and
 the 300 Ω/sq resistor bodies doped at {ref}`PRI <step-053>` — stays
 under resist. The resist is stripped at {ref}`UPRIS <step-057>`.
@@ -22,7 +22,7 @@ The device it serves is public. The PDK lists "P− poly precision
 resistors" (`res_xhigh_po`) with the same five fixed widths and layout
 footprints as the 300 Ω/sq family, and states that "a separate implant
 is used to set the sheet resistance to 2000 ohm/sq"; at the time the
-documentation was written their electrical and e-test specifications
+documentation was written their electrical and {term}`e-test` specifications
 were "still TBD, once sufficient silicon has been evaluated".[^pdk-07]
 The extraction table lists the "UHR poly resistor" at 2000 Ω/sq.[^pdk-08]
 The drawn layer is `urpm` (GDS 79:20, "2000 ohms/square polysilicon
@@ -35,7 +35,7 @@ sheet ρ resistors".[^ann-15]
 
 Like {ref}`RRPM <step-052>`, `URPM` is not in the PDK's public mask
 table, which lists only `RPM` among the resistor masks.[^pdk-05] We
-infer that the reticle is generated from `urpm` in the window
+infer that the {term}`reticle` is generated from `urpm` in the window
 (dark-field) tone, and that its geometry follows the `rpm` rules,
 because the P− resistors share the P+ layout footprints.[^pdk-07]
 
@@ -59,7 +59,7 @@ low-power analogue blocks need. It cannot be made from the 300 Ω/sq
 film simply by drawing it longer: area, parasitic capacitance to the
 substrate and matching all scale badly. It also cannot be made by
 under-dosing the 300 Ω/sq implant on the same mask, because the two
-values differ by a factor of seven in sheet resistance and, on Seto's
+values differ by a factor of seven in {term}`sheet resistance` and, on Seto's
 model, sit on different parts of the steep resistance-versus-doping
 curve,[^seto-1975] so they need separate, individually controlled
 doses.
@@ -82,19 +82,19 @@ optimisable implant window.
 An industry-generic implant-mask litho sequence for a 200 mm, 130 nm-era
 fab, as on {ref}`RRPM <step-052>`:
 
-1. **Surface preparation.** HMDS prime; the surface is the doped
+1. **Surface preparation.** {term}`HMDS` prime; the surface is the doped
    a-Si film with the chemical oxide left by {ref}`PRIS <step-054>`.
 2. **Resist coat.** i-line positive resist of about 1 µm (the PDK's
    general figure is 1.14 µm[^pdk-03]); the implant it blocks is a
    light, low-energy poly implant.
-3. **Exposure.** i-line stepper, dark-field reticle with clear windows
+3. **Exposure.** i-line {term}`stepper`, dark-field reticle with clear windows
    over the `urpm` bodies. The i-line assignment is inferred from the
    relaxed geometry (category page[^wiki-litho]); no SkyWater statement
    assigns layers to tools.
-4. **Alignment.** To the STI/active marks of {ref}`FOM <step-004>`,
+4. **Alignment.** To the {term}`STI`/active marks of {ref}`FOM <step-004>`,
    like the other two resistor masks; the resistor body will later be
    cut from the poly by {ref}`P1M <step-061>`, so the window must
-   enclose the drawn body with overlay margin on every side.
+   enclose the drawn body with {term}`overlay` margin on every side.
 5. **Post-exposure bake, develop** (TMAH[^wiki-tmah]), rinse, hard
    bake.
 6. **Inspection.** Overlay to active; window presence by optical
@@ -192,7 +192,7 @@ reading is used throughout these pages and is marked as an inference.
   in boron-doped poly.[^upreti-1991]
 * Chen et al., *Solid-State Electronics* 2000 — voltage coefficient of
   poly resistors, largest for the lightest doping.[^chen-2000]
-* Hook et al., *IEEE TED* 2003 — straggle at resist edges.[^hook-2003]
+* Hook et al., *IEEE TED* 2003 — {term}`straggle` at resist edges.[^hook-2003]
 * Buffat and Adams (Zilog), US 6,576,405 — implant-mask lithography
   design space.[^pat-resist-zilog]
 * Bossung, SPIE 1977 — the exposure–focus process window.[^bossung-1977]

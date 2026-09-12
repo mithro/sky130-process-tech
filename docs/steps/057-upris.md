@@ -19,12 +19,12 @@ amorphous-silicon film to the deposition that caps it,
 {ref}`GATENIT <step-058>`. It is the last of the three strips of the
 gate module and the last time the gate film is exposed to a wet
 chemistry before it is sealed under nitride and oxide. The next step
-is a furnace or PECVD deposition rather than another mask, which
+is a furnace or {term}`PECVD` deposition rather than another mask, which
 changes what "clean" has to mean.
 
 The resist being removed has taken the lightest implant of the module
 — a p-type dose of order 10¹⁴ cm⁻² or less (illustrative,
-{ref}`UPRI <step-056>`) — so its crust is thin, in the same class as
+{ref}`UPRI <step-056>`) — so its {term}`crust <implant crust>` is thin, in the same class as
 the channel-implant strips of the well module
 ({ref}`LVTNIS <step-016>`). The surface it leaves behind carries three
 doping levels (n⁺ gate poly, 300 Ω/sq and 2000 Ω/sq resistor bodies)
@@ -47,7 +47,7 @@ because anything on it is buried under the cap and printed into the gate
 at {ref}`P1ME <step-062>`: a particle becomes a micro-mask that leaves a
 poly stringer, a residue becomes a local etch-rate change. The state of
 the surface also matters for the film that is deposited on it. A silicon
-nitride deposited by LPCVD or PECVD on silicon nucleates and adheres
+nitride deposited by {term}`LPCVD` or PECVD on silicon nucleates and adheres
 well; on a contaminated or rough surface it can blister or deposit
 non-uniformly. A thin, uniform chemical oxide under the cap is harmless,
 and LPCVD nitride's tensile stress of order 1 GPa[^temple-boyer-1998] is
@@ -63,19 +63,19 @@ open film, and the wafers have been through three tracks and two
 ashers. A furnace step comes next, and the category page explains why
 metals must be removed before any high-temperature process: they
 diffuse and precipitate, and the gate oxide is directly beneath the
-film. SC-1 and SC-2 exist for exactly this.[^kern-1990][^wiki-rca]
+film. {term}`SC-1` and {term}`SC-2` exist for exactly this.[^kern-1990][^wiki-rca]
 
 ## How it is typically performed
 
 An industry-generic light-implant strip followed by a pre-deposition
 clean, for a 200 mm, 130 nm-era fab:
 
-1. **Plasma ash.** Downstream O₂/N₂ plasma; a single hot step often
+1. **Plasma {term}`ash`.** Downstream O₂/N₂ plasma; a single hot step often
    suffices for a light implant, though a fab that runs all implant
    strips on one recipe will use the two-step sequence
    anyway.[^fujimura-1989][^pat-strip-mosel] The three ashers on
    SkyWater's list cover the gases and temperatures.[^skw-01]
-2. **Wet strip and clean.** SPM for organics, SC-1 for particles and,
+2. **Wet strip and clean.** {term}`SPM` for organics, SC-1 for particles and,
    because a furnace step follows, SC-2 (HCl/H₂O₂/H₂O) for
    metals[^wiki-rca] — the full RCA sequence of Kern and
    Puotinen.[^kern-1970] The SC-1 exposure is again limited by its
@@ -115,7 +115,7 @@ clean, for a 200 mm, 130 nm-era fab:
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas** for the ash.[^skw-01]
+* **Oxygen, nitrogen, {term}`forming gas`** for the ash.[^skw-01]
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide,
   hydrochloric acid** for SPM/SC-1/SC-2.[^wiki-rca]
 * **Ultrapure DI water, isopropanol, nitrogen.**

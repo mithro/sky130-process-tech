@@ -31,11 +31,11 @@ resist is stripped at {ref}`PWDEIS <step-033>`.
 `PWDEI1` is an {ref}`Ion implantation <category-implant>` step of the
 *well* class, but with a twist: the aim is a doping *lower* than the
 standard well, so its dose is at the light end of the well range and
-its energy is chosen for the depth the drift region must have.
+its energy is chosen for the depth the {term}`drift region` must have.
 
 ## Why this step exists
 
-A drain-extended MOSFET holds off voltage in a drift region that
+A {term}`drain-extended <DEMOS>` MOSFET holds off voltage in a drift region that
 depletes before the gate oxide or the channel junction breaks down: "a
 very lightly doped extension region adjacent to the drain that depletes
 at high drain voltages".[^pat-demos-ti] The trade is one-dimensional
@@ -82,11 +82,11 @@ illustrative.
   a fixed drift length would sit at or below its lower end (inference;
   see the RESURF-type design discussion in Wolf vol. 3[^txt-04]).
 * **Tilt and twist.** 7° with twist;[^wiki-implant] the drift region is
-  long, so tilt shadowing at the resist edge is a small fraction of it.
+  long, so tilt {term}`shadowing` at the resist edge is a small fraction of it.
 * **Wafer handling and anneal.** As for {ref}`PWI <step-027>`;
   activation at {ref}`RTAI <step-034>`, after which the lightly doped
-  well sees the remaining front-end thermal budget.
-* **Monitoring.** Sheet resistance on monitor wafers; the drift region's
+  well sees the remaining front-end {term}`thermal budget`.
+* **Monitoring.** {term}`Sheet resistance <sheet resistance>` on monitor wafers; the drift region's
   sheet resistance is one of the device's key parameters.
 
 ## Machines typically used
@@ -96,7 +96,7 @@ illustrative.
   750keV")[^axcelis-8250] depending on energy; a light-dose,
   moderate-energy boron implant is natural work for the medium-current
   tool (category page).
-* **Four-point probe** metrology.
+* **{term}`Four-point probe <four-point probe>`** metrology.
 
 ## Machines likely used at SkyWater
 
@@ -145,7 +145,7 @@ illustrative.
 
 * Wikipedia, *LDMOS* — drift regions formed by chained
   implants.[^wiki-ldmos]
-* Wikipedia, *Ion implantation* — energies, sources, channelling and
+* Wikipedia, *Ion implantation* — energies, sources, {term}`channelling` and
   tilt in one page.[^wiki-implant]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — drain
   engineering, high-voltage MOS.[^txt-04]
@@ -160,10 +160,10 @@ illustrative.
   MOS transistors added to a 0.18 µm logic process.[^mitros-2001]
 * Mai and Rücker (IHP), *Solid-State Electronics* 2011 — 10 V
   drain-extended devices in a 0.13 µm technology.[^mai-2011]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde N-well
+* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — {term}`retrograde N-well <retrograde well>`
   and P-well energies, doses and resist thickness.[^pat-well-ibm]
 * Lee and Son (Hyundai/Hynix), US 6,455,402 — chained retrograde
-  twin-well implants and a 1000 °C, 10 s RTA.[^pat-well-hynix]
+  twin-well implants and a 1000 °C, 10 s {term}`RTA`.[^pat-well-hynix]
 * Appels and Vaes (Philips), IEDM 1979 — the original RESURF paper: the
   physics of a fully depleting drift layer.[^appels-1979]
 * Ludikhuize (Philips), ISPSD 2000 — a review of RESURF design rules

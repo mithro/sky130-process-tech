@@ -21,7 +21,7 @@ areas is gone and the polish lands on the nitride from
 is a planar surface of nitride islands (future active areas) and
 oxide-filled trenches (future field oxide), level with one another.
 
-This is the step that gives STI its defining advantage over LOCOS —
+This is the step that gives {term}`STI` its defining advantage over {term}`LOCOS` —
 a flat surface — and Wikipedia's STI outline lists it as "Chemical-
 mechanical polishing of the oxide" followed by "Removal of the
 protective nitride".[^wiki-sti] Because the oxide is later recessed
@@ -48,7 +48,7 @@ could handle. Beyond simply flattening, the polish controls:
 * **Active-area nitride thickness after polish**, which sets how much
   oxide is left standing above the silicon once the nitride is
   stripped at {ref}`NS19 <step-013>`.
-* **Dishing** of the oxide in wide trenches and **erosion** of the
+* **{term}`Dishing <dishing>`** of the oxide in wide trenches and **{term}`erosion`** of the
   nitride in dense active regions. Dishing lowers the field oxide
   below the active surface locally and produces divots at active edges;
   erosion thins the nitride and the silicon beneath it. Both are
@@ -75,10 +75,10 @@ An industry-generic STI polish for a 200 mm, 130 nm-era fab:
    node:[^rev-02]
    * *Fumed or colloidal silica* in an alkaline (KOH or NH₄OH)
      solution — the classic oxide slurry, with oxide : nitride
-     selectivity of only about 3–4 : 1, which needs endpoint control or
+     {term}`selectivity` of only about 3–4 : 1, which needs {term}`endpoint` control or
      a reverse-mask scheme to avoid over-polishing the nitride.
    * *Ceria (CeO₂)* with surfactant additives — Wikipedia's general
-     description of CMP names cerium dioxide as a typical
+     description of {term}`CMP` names cerium dioxide as a typical
      abrasive[^wiki-cmp] —
      giving oxide : nitride selectivity of tens to one and a
      self-stopping polish, the "direct STI" approach that removed the
@@ -208,7 +208,7 @@ polisher, which is what this step needs.
 * Chang, *Microelectron. Eng.* 2005 — a dishing model specific to the
   STI CMP process.[^chang-2005]
 * Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization
-  of Microelectronic Materials* — the standard CMP textbook: Preston's
+  of Microelectronic Materials* — the standard CMP textbook: {term}`Preston <Preston equation>`'s
   law, pads, slurries and process control.[^steigerwald-1997]
 * Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
   Materials* — chapter-level treatments of dielectric CMP, endpoint and

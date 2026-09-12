@@ -9,7 +9,7 @@ starts from a bare, chemically defined surface. Resist is an organic
 polymer; it is burnt off in an oxygen plasma ({term}`ash`) and the
 inorganic residue and any remaining organic film are dissolved in hot
 acid–peroxide baths. A few "strip" steps in the flow remove not resist
-but a sacrificial inorganic film, most notably the STI nitride
+but a sacrificial inorganic film, most notably the {term}`STI` nitride
 ({ref}`NS19 <step-013>`), by wet etching.
 
 Precisely, a post-implant strip in a 130 nm flow is usually three
@@ -52,7 +52,7 @@ recombine during the channeling, it does so at a slower rate than the
 positively or negatively charged free radicals".[^wiki-ash] Small
 additions of fluorine (CF₄) attack silicon oxides and speed the removal
 of inorganic residues; additions of hydrogen or water vapour help with
-implanted resist. Endpoint is detected from the CO emission line,
+implanted resist. {term}`Endpoint <endpoint>` is detected from the CO emission line,
 followed by a timed over-ash.
 
 ### The post-implant crust
@@ -65,7 +65,7 @@ has undergone an implant step previously and heavy metal are embedded in
 the photoresist and it has experienced high temperatures causing it to
 be resistant to oxidizing".[^wiki-ash] If the crusted wafer is heated
 quickly, solvent and nitrogen trapped in the soft resist underneath blow
-the crust off in flakes ("popping") that land elsewhere on the wafer as
+the {term}`crust <implant crust>` off in flakes ("popping") that land elsewhere on the wafer as
 hard-to-remove particles. The standard countermeasures are a
 low-temperature first ash step or a slow ramp, forming-gas or
 H₂O-containing chemistries that penetrate the crust, and a wet SPM
@@ -95,7 +95,7 @@ engineered than etch strips.[^kern-handbook]
   in 1965 while working for RCA".[^wiki-rca][^kern-1990]
 * **Dilute HF**: a short dip removes the chemical oxide left by SC-1 or
   SPM and leaves a hydrogen-terminated, hydrophobic surface; used as
-  "HF-last" before gate oxidation and before silicide deposition.
+  "HF-last" before gate oxidation and before {term}`silicide` deposition.
 * **Solvent and semi-aqueous strippers**: N-methyl-2-pyrrolidone (NMP),
   dimethyl sulfoxide (DMSO) and hydroxylamine- or amine-based
   formulations (EKC265, ACT) dissolve resist and etch polymers where
@@ -105,8 +105,8 @@ engineered than etch strips.[^kern-handbook]
 ### Nitride strip
 
 The STI nitride ({ref}`ISONIT <step-003>`) is removed after the oxide
-CMP in hot phosphoric acid — 85 % H₃PO₄ at 150–180 °C — which etches
-Si₃N₄ at a few nanometres per minute with a selectivity to SiO₂ of the
+{term}`CMP` in hot phosphoric acid — 85 % H₃PO₄ at 150–180 °C — which etches
+Si₃N₄ at a few nanometres per minute with a {term}`selectivity` to SiO₂ of the
 order of 30:1 or better; the pad oxide underneath protects the silicon
 and is later removed in HF.[^txt-02][^wiki-h3po4] The bath temperature
 and its water content (which the etch consumes) must be controlled, and
@@ -121,7 +121,7 @@ in which the surface is left — hydrophilic chemical oxide or
 hydrophobic H-terminated silicon — must match what the next step
 expects: gate oxidation wants an HF-last surface with a re-grown
 chemical oxide of controlled thickness, while resist coating wants a
-hydrophobic surface obtained with HMDS ({ref}`category-lithography`).
+hydrophobic surface obtained with {term}`HMDS` ({ref}`category-lithography`).
 The ITRS 2001 front-end chapter treats surface preparation, particles
 and metals as a critical-dimension issue in its own right.[^itrs-01]
 
@@ -147,7 +147,7 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 
 ## Typical consumables
 
-* **Gases**: O₂, N₂, forming gas (H₂/N₂), CF₄, water vapour.
+* **Gases**: O₂, N₂, {term}`forming gas` (H₂/N₂), CF₄, water vapour.
 * **Acids and bases**: 96–98 % sulfuric acid, 30 % hydrogen peroxide,
   29 % ammonium hydroxide, 37 % hydrochloric acid, 49 % HF, 85 %
   phosphoric acid; all semiconductor-grade (parts-per-trillion metals).
@@ -222,7 +222,7 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 
 ### Deep dive
 
-* Fujimura et al., *JJAP* 1989 — the crust and popping mechanism of
+* Fujimura et al., *JJAP* 1989 — the crust and {term}`popping` mechanism of
   implanted resist, measured.[^fujimura-1989]
 * Fujimura et al., *JJAP* 1990 — why nitrogen is added to oxygen
   downstream ashing.[^fujimura-1990]

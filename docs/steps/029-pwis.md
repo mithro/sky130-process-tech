@@ -22,7 +22,7 @@ The resist is a thick (about 2 µm class, inferred on the
 few hundred keV and a summed dose of order 10¹³ cm⁻² (both illustrative;
 {ref}`PWI <step-027>`). It is therefore a *heavy* implant strip of the
 same kind as {ref}`LVTPIS <step-021>` and {ref}`DNIS <step-009>`, with a
-carbonised crust and a real popping risk, although boron — light and
+carbonised {term}`crust <implant crust>` and a real {term}`popping` risk, although boron — light and
 with a long range — deposits less of its energy in the top of the resist
 than phosphorus does, so the crust is somewhat thinner than after the
 N-well implants[^txt-01] (inference). Because `PWBM` is a *block* mask,
@@ -31,20 +31,20 @@ wafer was open and the resist area to be removed is smaller than for a
 normal mask.
 
 The surface beneath is, we infer, still all oxide (pad oxide on active, trench
-oxide on field), so the full SPM/SC-1/SC-2 sequence is available.
+oxide on field), so the full {term}`SPM`/{term}`SC-1`/{term}`SC-2` sequence is available.
 
 ## Step category
 
 `PWIS` is a {ref}`Resist strip / clean <category-strip>` step of the
 *post-implant* type, the fourth of five in this module. The category
-page's discussion of the crust and of two-stage ashing applies in
+page's discussion of the crust and of two-stage {term}`ashing <ash>` applies in
 full.
 
 ## Why this step exists
 
 The next lithography, {ref}`PWDEM <step-030>`, is another thick implant
 resist that must be coated on a clean surface; any residue of this
-resist would print as a defect and would block the drain-extended P-well
+resist would print as a defect and would block the {term}`drain-extended <DEMOS>` P-well
 implants locally — in a 20 V device, exactly where the doping is most
 critical. The crust must be removed by plasma first: "the top portion of
 the photoresist layer is transformed into a carbonized crust that is
@@ -63,14 +63,14 @@ An industry-generic heavy-implant-resist strip for a 200 mm,
 130 nm-era fab:
 
 1. **Two-stage plasma ash.** First stage below the popping threshold
-   with oxygen plus forming gas — "removed by oxygen and
+   with oxygen plus {term}`forming gas` — "removed by oxygen and
    nitrogen/hydrogen plasma in a low-temperature (<220 °C)
    environment"[^pat-strip-mosel] — until the crust has gone, then a hot
    oxygen stage for the bulk. Downstream plasma so that neutral atomic
    oxygen does the work.[^wiki-ash] SkyWater's ashers: "Gasonic PEP,
    remote microwave plasma, N2, O2, 120C – 270C"; "Iridia RF microwave,
    N2, O2, H2, CF4, NH3, H2/N2, 40C-270C"; "Mattson Aspen2, RF plasma,
-   O2, CF4, H2>N2, up to 250C".[^skw-01] Endpoint on CO emission, timed
+   O2, CF4, H2>N2, up to 250C".[^skw-01] {term}`Endpoint <endpoint>` on CO emission, timed
    over-ash.
 2. **Wet strip.** SPM (H₂SO₄:H₂O₂ about 3:1–4:1, above 100 °C) to
    dissolve residual organics and flakes (category page);[^txt-02]
@@ -144,7 +144,7 @@ An industry-generic heavy-implant-resist strip for a 200 mm,
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
-  tools, implanted-resist stripping and RTP of the 0.25–0.13 µm
+  tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
 
 ### Deep dive

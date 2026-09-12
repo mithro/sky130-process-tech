@@ -26,8 +26,8 @@ What makes this strip different from an ordinary post-etch strip is
 the state of the resist and of the wafer:
 
 * the resist has been bombarded by MeV phosphorus ions, which
-  carbonise its top surface into a hard crust that ordinary O₂ ashing
-  removes slowly and that can pop or flake during heating;[^txt-02]
+  carbonise its top surface into a hard {term}`crust <implant crust>` that ordinary O₂ {term}`ashing <ash>`
+  removes slowly and that can {term}`pop <popping>` or flake during heating;[^txt-02]
 * the wafer has open silicon trenches with bare, plasma-damaged
   sidewalls, so the clean must be gentle enough not to roughen or
   etch them, and thorough enough that no organic or metallic residue
@@ -73,9 +73,9 @@ fab:
    270C" and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to
    250C"[^skw-01] — exactly the gas set for this kind of recipe.
 2. **Wet strip / clean.** Sulphuric-peroxide mixture (H₂SO₄ : H₂O₂,
-   "piranha" or SPM) at roughly 100–130 °C[^txt-02] to remove the last
+   "piranha" or {term}`SPM`) at roughly 100–130 °C[^txt-02] to remove the last
    organics, then
-   SC-1 (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles and SC-2
+   {term}`SC-1` (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles and {term}`SC-2`
    (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] Because the nitride and the
    trench silicon are both exposed, the sequence avoids any long HF
    step that would undercut the pad oxide beneath the nitride (some
@@ -105,7 +105,7 @@ fab:
 * **Iridia RF microwave** — also listed under resist removal by
   SkyWater.[^skw-01] Strength: strong for existence.
 * **Akrion Gamma batch wet bench** — SkyWater lists it with sulphuric,
-  SC1, phosphoric and BOE chemistries and spin and IPA
+  SC1, phosphoric and {term}`BOE` chemistries and spin and IPA
   drying.[^skw-01] Strength: strong. A sulphuric (SPM) + SC-1 sequence
   on this bench is the natural post-implant clean.
 * **DNS / FSI Mercury** HF/SC1/SC2 benches[^skw-01] as the pre-furnace
@@ -115,7 +115,7 @@ fab:
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)** and, for some recipes, a
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** and, for some recipes, a
   small **CF₄** addition to the ash.[^skw-01]
 * **Sulphuric acid and hydrogen peroxide** (SPM).
 * **Ammonium hydroxide, hydrochloric acid, hydrogen peroxide**
@@ -158,7 +158,7 @@ fab:
 
 ### Deep dive
 
-* Nandakumar et al., IEDM 1998 — the STI flow and its defectivity
+* Nandakumar et al., IEDM 1998 — the {term}`STI` flow and its defectivity
   drivers.[^rev-01]
 * Thung et al., *JTEC* 2016 — the post-trench-etch wet clean in a
   0.13 µm STI module.[^thung-2016]
@@ -182,7 +182,7 @@ fab:
 * Bergman and Leonhard, *Solid State Phenomena* 2009 — wet stripping of
   high-dose implanted resist with sulphur trioxide, a sulphuric-family
   alternative to SPM.[^bergman-2009]
-* Kern, *J. Electrochem. Soc.* 1990 — the evolution of the RCA clean
+* Kern, *J. Electrochem. Soc.* 1990 — the evolution of the {term}`RCA clean`
   used as the pre-furnace clean.[^kern-1990]
 * Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature wet cleaning,
   the later alternative to hot RCA chemistry.[^ohmi-1996]

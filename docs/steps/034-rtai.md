@@ -18,7 +18,7 @@ low-Vt channel implant {ref}`LVTNI <step-015>`, the N-well pair
 {ref}`NWI <step-018>`/{ref}`NWI2 <step-019>` and the PMOS channel
 implant {ref}`LVTPI <step-020>`, the high-Vt PMOS pair
 {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>`, the P-well pair
-{ref}`PWI <step-027>`/{ref}`PWI2 <step-028>` and the drain-extended pair
+{ref}`PWI <step-027>`/{ref}`PWI2 <step-028>` and the {term}`drain-extended <DEMOS>` pair
 {ref}`PWDEI1 <step-031>`/{ref}`PWDEI2 <step-032>` — and none has yet
 been annealed. `RTAI` heats the wafer, in an inert ambient, to repair
 the lattice damage they left, move the dopant atoms onto substitutional
@@ -27,7 +27,7 @@ channel profiles before the first gate dielectric is grown. The step
 list used in this reference calls it the "Pre-gate oxide anneal"; the
 code `RTAI` reads as "RTA, implant" — a rapid thermal anneal — and the
 public evidence supports that reading (below). After it, the flow enters
-the SONOS module ({ref}`TUNM <step-035>`) and then gate oxidation
+the {term}`SONOS` module ({ref}`TUNM <step-035>`) and then gate oxidation
 ({ref}`GOX100 <step-043>`).
 
 The only other anneal the wells have seen is incidental: the deep
@@ -61,7 +61,7 @@ rather than later:
   then removing damaged surface oxide, gives the gate oxidation a clean
   crystal to grow on.[^txt-01]
 * **Profile control.** The well and channel profiles set every
-  transistor's threshold, body effect and punch-through margin.
+  transistor's threshold, body effect and {term}`punch-through` margin.
   Annealing them in one defined step, before the SONOS and gate modules
   add their own thermal cycles, makes the profiles a known starting
   point. Transient enhanced diffusion — the boost in boron and
@@ -81,7 +81,7 @@ describes forming the charge-trapping stack "after at least some of the
 well and channel implants for the logic MOS transistors are formed", and
 states that "a rapid thermal anneal is performed after implanting both
 the n-well and p-well"[^pat-03] — the strongest public evidence that the
-SKY130 lineage anneals its wells by RTA before the SONOS and gate steps.
+SKY130 lineage anneals its wells by {term}`RTA` before the SONOS and gate steps.
 
 ## How it is typically performed
 
@@ -89,7 +89,7 @@ An industry-generic well/channel activation anneal for a 200 mm,
 130 nm-era fab (SKY130's recipe is not public):
 
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen or
-  argon; RTP "heats silicon wafers to temperatures exceeding 1,000°C for
+  argon; {term}`RTP` "heats silicon wafers to temperatures exceeding 1,000°C for
   not more than a few seconds" using "high intensity lamps" with "in
   situ pyrometry to effect real time control".[^wiki-rtp] A small oxygen
   addition is sometimes used to suppress boron out-diffusion from the
@@ -124,7 +124,7 @@ An industry-generic well/channel activation anneal for a 200 mm,
   (later Mattson) RTP, Kokusai and TEL RTP (category page).
 * **Vertical furnaces** (ASM A400, TEL Alpha-8, Aviza/Thermco) as the
   batch alternative.
-* **Four-point probe** for sheet resistance; **thermocouple wafers**
+* **{term}`Four-point probe <four-point probe>`** for {term}`sheet resistance`; **thermocouple wafers**
   for calibration.
 
 ## Machines likely used at SkyWater

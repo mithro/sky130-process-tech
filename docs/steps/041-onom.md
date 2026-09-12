@@ -18,7 +18,7 @@ whole wafer; this lithography step prints resist islands over the memory
 transistors and leaves the stack exposed everywhere else, so that
 {ref}`ONOME <step-042>` can etch it away from all the logic, 5 V and
 high-voltage transistors before their gate oxides are grown. After the
-etch the ONO survives only as small islands, which, we infer, each cover
+etch the {term}`ONO` survives only as small islands, which, we infer, each cover
 a tunnel window opened at {ref}`TUNM <step-035>` and its margin.
 
 The PDK lists "ONO Mask, ONOM" as used in SKY130,[^pdk-05] with the
@@ -49,14 +49,14 @@ layers from other regions of the substrate, such as the HV MOS region
 
 `ONOM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *etch mask* type, printed on a dielectric stack rather than
-on resist-friendly oxide alone: the top surface is the blocking oxide
+on resist-friendly oxide alone: the top surface is the {term}`blocking oxide`
 (or a sacrificial oxide cap over it[^pat-04]), which behaves like any
 other oxide for coating purposes. Its features are the tunnel windows
 plus an overlap — 0.410 µm windows[^pdk-periph] grown by a margin that
 is not public — so it is a relaxed layer, and we infer an i-line
-exposure as for {ref}`TUNM <step-035>`. Its critical overlay is, we
+exposure as for {ref}`TUNM <step-035>`. Its critical {term}`overlay` is, we
 infer, to the tunnel mask rather than to active, which is unusual: most
-layers align to the STI pattern or to poly.
+layers align to the {term}`STI` pattern or to poly.
 
 ## Why this step exists
 
@@ -71,14 +71,14 @@ Cypress's flow puts it: the ONO is formed and patterned, then "the
 logic MOS gate insulator" is formed by a thermal process that
 "additionally" reoxidises the ONO.[^pat-03] Cypress's press release
 puts the total cost of the module at "three additional mask
-layers",[^cyp-22] and its 2020 article credits SONOS with "the
+layers",[^cyp-22] and its 2020 article credits {term}`SONOS` with "the
 simplicity of its integration (fewer extra lithography
 masks)"[^cyp-25] — `ONOM` is the mask that pays for keeping the ONO
 out of the logic.
 
 Two geometric facts about the island matter. It must enclose the
 tunnel window with margin, because the silicon inside the window has
-only the tunnel oxide on it: if the ONO etch reached it, the etch
+only the {term}`tunnel oxide` on it: if the ONO etch reached it, the etch
 would land on 1–3 nm of oxide[^pat-04] and then on the channel. And the
 island edge is where the logic gate oxide will later grow up against
 the nitride sidewall, so the edge must lie on field oxide or on
@@ -105,13 +105,13 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
 2. **Anti-reflective layer.** Optional. The Cypress integration patent
    uses "an inorganic spin-on anti-reflective coating (ARC)" on top of
    the stack, etched together with it;[^pat-03] on a relaxed i-line
-   layer many fabs would omit an ARC. The step list used in this
+   layer many fabs would omit an {term}`ARC`. The step list used in this
    reference has no ARC etch after `ONOM`, so if one is used its open
    is part of {ref}`ONOME <step-042>`.
 3. **Resist coat, soft bake.** A positive i-line resist of about 1 µm
-   (the PDK's generic 1.14 µm[^pdk-03]); etch selectivity, not implant
+   (the PDK's generic 1.14 µm[^pdk-03]); etch {term}`selectivity`, not implant
    stopping, sets the thickness here.
-4. **Exposure.** Through the ONO reticle on an i-line stepper (our
+4. **Exposure.** Through the ONO {term}`reticle` on an i-line {term}`stepper` (our
    inference from feature size, as on {ref}`TUNM <step-035>`; the 2001
    ITRS reserves 248 nm for the critical layers of the 130 nm
    node[^itrs-03]). Overlay would be measured to the `TUNM` layer,
@@ -121,7 +121,7 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
    al.[^van-haren-2019]
 5. **Post-exposure bake, develop** in 2.38 % TMAH,[^txt-02] rinse,
    hard bake.
-6. **Inspection.** Overlay to `TUNM` (inferred), CD of the islands, and
+6. **Inspection.** Overlay to `TUNM` (inferred), {term}`CD` of the islands, and
    after-develop inspection for resist residue on the open stack, which
    would leave nitride stringers after the etch.
 
@@ -133,7 +133,7 @@ and stripped there (no separate strip step is listed).
 * **i-line stepper**, 200 mm: ASML PAS 5500/100–/275, Nikon
   NSR-2205i, Canon FPA-3000i ({ref}`category-lithography`).
 * **Coat/develop track** (TEL, DNS/SCREEN, Sokudo).
-* **Overlay metrology** (KLA-Tencor) and **CD-SEM**.
+* **Overlay metrology** (KLA-Tencor) and **{term}`CD-SEM`**.
 
 ## Machines likely used at SkyWater
 
@@ -221,7 +221,7 @@ and stripped there (no separate strip step is listed).
 
 * The derivation of the ONO mask from `tunm` (oversize value, any
   merging inside the array) is not public.
-* Whether the ONO layer is printed on the i-line or DUV tools is an
+* Whether the ONO layer is printed on the i-line or {term}`DUV` tools is an
   inference from feature size.
 * Whether an ARC is used under the ONO-mask resist, and if so which
   kind, is not public; the step list used in this reference has no

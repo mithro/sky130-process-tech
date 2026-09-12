@@ -12,8 +12,8 @@
 
 ## What this step is
 
-`PWBM` prints the *P-well block mask*: a photoresist (thick, we infer)
-is coated, exposed through the PWBM reticle and developed so that resist
+`PWBM` prints the *P-well {term}`block mask`*: a photoresist (thick, we infer)
+is coated, exposed through the PWBM {term}`reticle` and developed so that resist
 *remains* over every region that must not receive the P-well and is
 removed everywhere else. The two P-well implants {ref}`PWI <step-027>`
 and {ref}`PWI2 <step-028>` follow (through the same openings, we infer
@@ -47,7 +47,7 @@ absent (see *Open questions*).
 The `pwbm` rules (pwbm.1–pwbm.5) have no public numeric values ("N/A")
 but describe the geometry: `pwbm` regions live inside the 20 V
 identifier `uhvi`; "dnwell inside UHVI must be enclosed by pwbm (exempt
-pwbm hole inside dnwell)" (pwbm.4); and the drain-extended implant layer
+pwbm hole inside dnwell)" (pwbm.4); and the {term}`drain-extended <DEMOS>` implant layer
 `pwde` must be enclosed by `pwbm` (pwdem.3).[^pdk-periph] In words:
 inside a 20 V device the standard P-well is kept out of the deep-N-well
 tub, and a custom, lighter P-well is put back by
@@ -60,7 +60,7 @@ it.
 step of the *thick-resist implant-block* kind. The resist must stop
 boron at, we infer, a few hundred keV (see {ref}`PWI <step-027>`); the
 pattern is the coarsest in the front end after the deep N-well; and the
-layer is, we infer, aligned to the STI pattern, as is `NWM`, so that the
+layer is, we infer, aligned to the {term}`STI` pattern, as is `NWM`, so that the
 two well edges meet in the isolation between NMOS and PMOS.
 
 ## Why this step exists
@@ -68,8 +68,8 @@ two well edges meet in the isolation between NMOS and PMOS.
 CMOS needs a P-type body for its NMOS: "The N device is manufactured on
 a p-type substrate",[^wiki-cmos] but a 130 nm process cannot use the
 lightly doped substrate (8 × 10¹⁴ cm⁻³ background)[^pdk-03] as it comes
-— it needs a *retrograde P-well* with a peak of 4 × 10¹⁷ cm⁻³ at 0.42 µm
-depth[^pdk-03] for punch-through, isolation and latch-up control (see
+— it needs a *{term}`retrograde P-well <retrograde well>`* with a peak of 4 × 10¹⁷ cm⁻³ at 0.42 µm
+depth[^pdk-03] for {term}`punch-through`, isolation and latch-up control (see
 {ref}`PWI <step-027>`). That implant must be kept out of the N-wells,
 where it would compensate the PMOS body, and out of the regions where
 the PDK's 20 V devices want either no well (`nfet_20v0_zvt`) or a
@@ -89,7 +89,7 @@ to draw the exceptions rather than the wells.
 An industry-generic P-well-block lithography for a 200 mm, 130 nm-era
 fab:
 
-1. **Track preparation.** HMDS prime; no BARC for a coarse layer
+1. **Track preparation.** {term}`HMDS` prime; no {term}`BARC` for a coarse layer
    (inference).[^wiki-litho]
 2. **Thick resist coat.** The resist must stop the deepest P-well boron.
    IBM's retrograde p-well used boron at 550 keV behind a resist
@@ -103,24 +103,24 @@ fab:
 3. **Exposure.** i-line: the `pwbm` rules carry no minimum width, but
    the reticle's tightest features are the N-well outlines (0.840 µm
    width, 1.270 µm space),[^pdk-periph] for which i-line has ample
-   margin (k₁ ≈ 1.4 at NA 0.6).[^wiki-litho] We infer an **i-line
+   margin ({term}`k₁ <k1>` ≈ 1.4 at {term}`NA` 0.6).[^wiki-litho] We infer an **i-line
    layer**.
 4. **Alignment** to STI. The N-well/P-well junction is budgeted at
    0.034 µm from the drawn edge,[^pdk-03] so `PWBM` and `NWM` must both
-   register to the same STI marks; their mutual overlay is what sets the
+   register to the same STI marks; their mutual {term}`overlay` is what sets the
    well-to-well junction position and hence the n⁺/p⁺ spacing
    rules.[^rubin-2002]
 5. **Develop, hard bake, inspect.** TMAH develop; resist hardening for
    the high-energy implant; overlay to STI.
 
-**Well proximity effect.** As with the N-well, ions scattered from the
+**{term}`Well proximity effect <well proximity effect>`.** As with the N-well, ions scattered from the
 resist edge shift the threshold of transistors within about a micrometre
 of the well boundary;[^hook-2003][^sheu-2006] for P-well edges the shift
-raises NMOS Vt.[^hook-2003]
+raises NMOS {term}`Vt`.[^hook-2003]
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
+* **i-line {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i).[^txt-05]
 * **Coat/develop track** with thick-resist capability.
 * **Overlay metrology**.
@@ -181,7 +181,7 @@ raises NMOS Vt.[^hook-2003]
 
 * Wikipedia, *CMOS* — NMOS on the p-substrate, PMOS in an
   N-well.[^wiki-cmos]
-* Wikipedia, *Photolithography* — 365 nm i-line and CD =
+* Wikipedia, *Photolithography* — 365 nm i-line and {term}`CD` =
   k₁·λ/NA.[^wiki-litho]
 * Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
   lithography, resist stripping, wafer cleaning and implantation
@@ -189,7 +189,7 @@ raises NMOS Vt.[^hook-2003]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 2 — twin-well CMOS,
   well masking options.[^txt-03]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
-  tools, implanted-resist stripping and RTP of the 0.25–0.13 µm
+  tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
 
 ### Deep dive
@@ -200,7 +200,7 @@ raises NMOS Vt.[^hook-2003]
   1.3–1.5 MeV phosphorus wells.[^pat-resist-zilog]
 * Matlock (Harris), US 5,247,199 — a twin-well flow with 500/275/130 keV
   phosphorus and 360/185/55 keV boron chains.[^pat-twin-harris]
-* Hook et al. (IBM), *IEEE TED* 2003 — lateral straggle from a thick
+* Hook et al. (IBM), *IEEE TED* 2003 — lateral {term}`straggle` from a thick
   well resist and the resulting mask proximity effect.[^hook-2003]
 * Sheu et al. (TSMC), *IEEE TED* 2006 — a compact model of the well-edge
   proximity effect.[^sheu-2006]

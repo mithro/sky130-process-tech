@@ -16,7 +16,7 @@
 coating from the bottom of the windows that {ref}`TUNM <step-035>`
 opened in the photoresist. A bottom anti-reflective coating
 ({term}`BARC`) is spun on *under* the resist and is not photosensitive:
-after develop the resist is gone from the tunnel windows but the ARC
+after develop the resist is gone from the tunnel windows but the {term}`ARC`
 film still covers the oxide inside them — the pad oxide from
 {ref}`BOX <step-002>`, we infer (its retention is not public). This etch
 transfers the resist pattern through the ARC and stops on that oxide, so
@@ -28,9 +28,9 @@ remove that oxide.
 
 In its industry-generic form (SKY130's recipe is not public): with the
 tunnel-mask resist in place, the wafer is exposed to an oxygen-based
-plasma, we infer, that ashes the organic ARC in the open windows (the
+plasma, we infer, that {term}`ashes <ash>` the organic ARC in the open windows (the
 resist is attacked at a similar rate but is many times thicker), with
-the etch run to an optical-emission endpoint plus a timed over-etch, and
+the etch run to an optical-emission {term}`endpoint` plus a timed {term}`over-etch`, and
 stopping on the oxide beneath — 10–20 nm of pad oxide in the Cypress
 patent.[^pat-04] The step list used in this reference names the film
 only as "ARC"; whether it is an organic BARC or an inorganic dielectric
@@ -40,7 +40,7 @@ ARC is discussed under *Open questions*.
 
 `TUNARCE` is an {ref}`Etch <category-etch>` step of the *ARC open*
 type — the category page notes that organic BARC "opens in O₂/N₂ or
-HBr/O₂" while an inorganic silicon oxynitride ARC is opened "in
+HBr/O₂" while an inorganic silicon {term}`oxynitride` ARC is opened "in
 CF₄-based plasmas". It is the only ARC etch in the step list used in
 this reference, which makes it a marker: of the roughly thirty mask
 layers in SKY130, the tunnel mask is the one whose flow explicitly
@@ -62,7 +62,7 @@ window is for.
   under a resist that must define 0.410 µm windows with 0.095 µm
   clearances to the gates (tunm.1, tunm.3, tunm.4).[^pdk-periph]
   Reflectivity swings of that kind change the effective dose inside
-  the resist and shift the printed CD ({ref}`category-lithography`);
+  the resist and shift the printed {term}`CD` ({ref}`category-lithography`);
   an ARC removes the substrate from the exposure equation. A 1996
   study on an i-line 0.35 µm device is the classic demonstration that
   a new anti-reflective coating tightens CD control.[^baker-1996]
@@ -102,9 +102,9 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   Materials) characterised organic ARC etching "in O₂+halogen/hydrogen
   halide plasma" and showed how the sidewall chemistry controls the
   profile;[^xu-2001] Ramanathan et al. discuss the integration issues
-  of DUV resist over organic BARC, including resist loss during the
+  of {term}`DUV` resist over organic BARC, including resist loss during the
   BARC open.[^ramanathan-1998]
-* **Selectivity.** Organic ARC and resist are chemically similar, so
+* **{term}`Selectivity <selectivity>`.** Organic ARC and resist are chemically similar, so
   selectivity to resist is close to 1:1 and the resist budget must
   include the ARC thickness plus over-etch (industry practice; Nojiri,
   ch. 3).[^nojiri-2015] Selectivity to the underlying oxide is very
@@ -117,7 +117,7 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>`. The plasma leaves
   the resist surface slightly hardened, which the eventual strip must
   cope with.
-* **Inorganic alternative.** If the ARC were a PECVD silicon
+* **Inorganic alternative.** If the ARC were a {term}`PECVD` silicon
   oxynitride, the open would be a CF₄/CHF₃-based dielectric etch with
   its own selectivity problem to the oxide underneath
   ({ref}`category-etch`).
@@ -125,14 +125,14 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 ## Machines typically used
 
 * **Silicon/poly plasma etcher** with O₂/N₂/HBr capability, 200 mm:
-  Lam TCP 9400 series, Applied Materials DPS Centura
+  Lam {term}`TCP` 9400 series, Applied Materials DPS Centura
   ({ref}`category-etch`).
 * **Dielectric etcher** (Lam Exelan, Applied MxP) if the ARC is
   inorganic.
 * **Downstream asher** — some fabs open thin organic ARCs on relaxed
   layers with a timed, isotropic ash rather than a directional etch
   ({ref}`category-strip`).
-* **Optical emission endpoint** on the etcher; **CD-SEM** for the
+* **Optical emission endpoint** on the etcher; **{term}`CD-SEM`** for the
   post-etch window.
 
 ## Machines likely used at SkyWater

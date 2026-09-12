@@ -13,7 +13,7 @@
 ## What this step is
 
 `HVTPM` prints the *high-Vt P-channel mask*: photoresist is coated on
-the cleaned wafer, exposed through the HVTPM reticle and developed,
+the cleaned wafer, exposed through the HVTPM {term}`reticle` and developed,
 opening windows over the PMOS channels that are to have a raised
 threshold. Two implants follow, we infer from the step order, through
 the same resist — the P-channel implant {ref}`PCHI <step-023>` and the
@@ -48,7 +48,7 @@ removed over `hvtp`.
 `HVTPM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant-block* type: coarse features, a standard-thickness
 resist (the implants behind it are keV channel implants), aligned to
-the STI/active pattern.
+the {term}`STI`/active pattern.
 
 ## Why this step exists
 
@@ -75,26 +75,26 @@ high-Vt option is PMOS-only in SKY130.
 An industry-generic implant-block lithography for a 200 mm, 130 nm-era
 fab:
 
-1. **Track preparation.** HMDS prime on the oxide surface.
+1. **Track preparation.** {term}`HMDS` prime on the oxide surface.
 2. **Resist coat.** A conventional positive resist of roughly 1 µm (the
    PDK's nominal "Photoresist thickness" is 1.14 µm)[^pdk-03] is ample
-   for keV channel implants.[^txt-02] No BARC is needed for 0.38 µm
+   for keV channel implants.[^txt-02] No {term}`BARC` is needed for 0.38 µm
    features at i-line (inference).[^wiki-litho]
-3. **Exposure.** i-line: k₁ ≈ 0.62 for 0.38 µm at NA 0.6,[^wiki-litho]
+3. **Exposure.** i-line: {term}`k₁ <k1>` ≈ 0.62 for 0.38 µm at {term}`NA` 0.6,[^wiki-litho]
    well within production margins; the KrF tools are reserved for the
    critical layers.[^itrs-03] We infer an **i-line layer**.
 4. **Alignment** to STI. The 0.180 µm enclosure and spacing rules
-   (hvtp.3, hvtp.4) define the overlay budget between this mask and the
+   (hvtp.3, hvtp.4) define the {term}`overlay` budget between this mask and the
    active pattern that determines which transistor is which.
 5. **Develop** in TMAH; optional hard bake or UV cure before the
    implant.[^txt-02]
-6. **Metrology.** Overlay to STI; CD sampled; after-develop inspection.
+6. **Metrology.** Overlay to STI; {term}`CD` sampled; after-develop inspection.
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
+* **i-line {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i).[^txt-05]
-* **Coat/develop track**; **overlay tool**; **CD-SEM** for sampling.
+* **Coat/develop track**; **overlay tool**; **{term}`CD-SEM`** for sampling.
 
 ## Machines likely used at SkyWater
 
@@ -153,7 +153,7 @@ fab:
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
-  tools, implanted-resist stripping and RTP of the 0.25–0.13 µm
+  tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
 
 ### Deep dive

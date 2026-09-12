@@ -13,13 +13,13 @@
 ## What this step is
 
 `ISONIT` ("isolation nitride") deposits a blanket film of silicon
-nitride (Si₃N₄) by low-pressure chemical vapour deposition (LPCVD) on
+nitride (Si₃N₄) by low-pressure chemical vapour deposition ({term}`LPCVD`) on
 top of the pad oxide from {ref}`BOX <step-002>`. The nitride is the
-hard mask of the STI module: it is patterned at
+{term}`hard mask` of the {term}`STI` module: it is patterned at
 {ref}`FOM <step-004>`/{ref}`STINITE <step-005>`, protects the future
 active areas during the silicon trench etch ({ref}`STIE <step-006>`)
 and the liner oxidation ({ref}`LINOX <step-010>`), and acts as the
-polish stop for the oxide CMP ({ref}`CMPNIT <step-012>`). It is removed
+polish stop for the oxide {term}`CMP` ({ref}`CMPNIT <step-012>`). It is removed
 at {ref}`NS19 <step-013>`.
 
 Precisely: a stoichiometric LPCVD nitride of the order of 100–200 nm
@@ -29,7 +29,7 @@ Systems STI patent gives the mask nitride as
 "protective nitride".[^wiki-sti] No public SkyWater source gives the
 SKY130 value. The thickness is a compromise: thick enough to survive
 the trench etch and the CMP with margin, thin enough to keep the trench
-aspect ratio (trench depth *plus* nitride, divided by trench width)
+{term}`aspect ratio` (trench depth *plus* nitride, divided by trench width)
 manageable for the HDP fill — a paper on 0.13 µm STI defines the fill
 aspect ratio exactly that way, as "the ratio of the sum of the STI
 trench depth and pad nitride thickness to the minimum space design rule
@@ -52,7 +52,7 @@ simultaneously:
 * an **oxidation barrier** — oxygen does not diffuse through it, so
   the active silicon stays unoxidised during the liner oxidation at
   {ref}`LINOX <step-010>` (this is the same property that made it the
-  LOCOS mask; Wikipedia illustrates "local silicon oxidation through an
+  {term}`LOCOS` mask; Wikipedia illustrates "local silicon oxidation through an
   Si₃N₄ mask"[^wiki-sin]);
 * a **CMP stop** — the oxide fill polishes much faster than nitride in
   a suitable slurry, so the polish at {ref}`CMPNIT <step-012>` can be
@@ -62,7 +62,7 @@ simultaneously:
   nitride layer over the active area as a stop
   layer"[^pat-sti-amberwave]);
 * a **plasma-etch mask** for the silicon trench etch, with good
-  selectivity against HBr/Cl₂ chemistry;[^txt-05]
+  {term}`selectivity` against HBr/Cl₂ chemistry;[^txt-05]
 * **selectively removable** afterwards in hot phosphoric acid, which
   etches nitride at ~100 Å/min while barely touching oxide.[^vgh-1967]
 
@@ -80,8 +80,8 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
   nitride is deposited at roughly 700–800 °C and a few hundred mTorr in
   a hot-wall furnace; an NH₃ : DCS ratio well above the stoichiometric
   4 : 3 is used to keep the film silicon-poor and
-  stoichiometric.[^txt-02] The Cypress ONO patents describe the same
-  DCS/NH₃ LPCVD chemistry for the SONOS nitride, at "about 700° C. to
+  stoichiometric.[^txt-02] The Cypress {term}`ONO` patents describe the same
+  DCS/NH₃ LPCVD chemistry for the {term}`SONOS` nitride, at "about 700° C. to
   about 875° C."[^pat-01] and 700–850 °C, 5–500 mTorr,[^pat-02] which
   shows that this chemistry is native to the Cypress furnace set.
 * **Film properties.** Stoichiometric LPCVD nitride is under about
@@ -114,7 +114,7 @@ which is a different (later-generation) precursor.
   (job-board snippet and a used-equipment listing for the
   AVP-8000[^aviza-avp]).
 * No public source names the specific tube used for the isolation
-  nitride versus the gate-stack or spacer nitrides.
+  nitride versus the gate-stack or {term}`spacer` nitrides.
 
 ## Resources required
 
@@ -168,7 +168,7 @@ which is a different (later-generation) precursor.
 * Wikipedia, *Shallow trench isolation* — the "protective
   nitride".[^wiki-sti]
 * Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — the
-  CVD chapter on LPCVD nitride.[^txt-02]
+  {term}`CVD` chapter on LPCVD nitride.[^txt-02]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — the STI
   chapter.[^txt-05]
 
@@ -188,7 +188,7 @@ which is a different (later-generation) precursor.
   in LPCVD SiNₓ as a function of composition, the reason
   stoichiometric films are highly tensile.[^temple-boyer-1998]
 * Habraken and Kuiper, *Mater. Sci. Eng. R* 1994 — a review of silicon
-  nitride and oxynitride films: growth, composition, hydrogen content
+  nitride and {term}`oxynitride` films: growth, composition, hydrogen content
   and etch behaviour.[^habraken-1994]
 * Stoney, *Proc. R. Soc. A* 1909 — the wafer-curvature relation used to
   turn a bow measurement into a film stress.[^stoney-1909]

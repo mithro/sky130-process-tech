@@ -43,7 +43,7 @@ kilo-electron volts (keV), and a dose of from about 1e12 cm⁻² to about
 ## Step category
 
 `NCHI` is an {ref}`Ion implantation <category-implant>` step of the
-*threshold-adjust channel implant* class — low energy, medium current,
+*{term}`threshold-adjust <threshold-adjust implant>` channel implant* class — low energy, medium current,
 of order 10¹²–10¹³ cm⁻² (industry-typical)[^txt-01] — and the last
 channel implant of the flow before the gate is deposited at
 {ref}`SAGD <step-048>`. It is the N-channel counterpart of
@@ -67,7 +67,7 @@ applied it to n-channel enhancement devices.[^peressini-1973]
 Placing the implant here rather than in the well module has two
 consequences worth stating:
 
-* **Thermal budget.** The implant sees only the {ref}`LVGOX <step-047>`
+* **{term}`Thermal budget <thermal budget>`.** The implant sees only the {ref}`LVGOX <step-047>`
   oxidation and the later RTAs before the gate goes on, so the surface
   profile stays shallow — the same logic Cypress applies to its memory
   channel, keeping "surface dopant concentrations low" by limiting
@@ -82,7 +82,7 @@ The window also exposes the 1.8 V *PMOS* regions. Whether the
 generated `clvom` mask excludes N-wells, or whether the PMOS channels
 simply tolerate the dose, is not public (see *Open questions*).
 Without `NCHI` the 1.8 V NMOS would have the threshold of the bare
-P-well surface — close to the native devices, whose Vt implants are
+P-well surface — close to the native devices, whose {term}`Vt` implants are
 deliberately blocked.[^pdk-07]
 
 ## How it is typically performed
@@ -93,13 +93,13 @@ fab (SKY130's values are not public):
 * **Species.** Boron, as ¹¹B⁺ or BF₂⁺; BF₂⁺ gives a shallower profile
   for the same accelerator voltage because the molecule shares its
   energy, and the fluorine it carries affects boron diffusion during
-  the later RTA.[^wang-1997] Cypress's flow uses BF₂;[^pat-04] an AMD
+  the later {term}`RTA`.[^wang-1997] Cypress's flow uses BF₂;[^pat-04] an AMD
   patent of the era gives "approximately 10-20 KeV for boron or
   45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
   ions/cm²".[^pat-vt-amd]
 * **Energy.** Tens of keV for BF₂ (10–100 keV in the Cypress
   patent[^pat-04]), set so that the peak lies just under the eventual
-  gate oxide after allowing for the ~10 nm screen oxide[^pdk-hv] the
+  gate oxide after allowing for the ~10 nm {term}`screen oxide`[^pdk-hv] the
   ions must cross — the screen also randomises the beam and reduces
   {term}`channelling`.[^txt-02]
 * **Dose.** Of order 10¹²–10¹³ cm⁻²: "1e12 cm⁻² to about 1e14
@@ -113,7 +113,7 @@ fab (SKY130's values are not public):
   it; {term}`TED` during those steps is part of the profile design
   ({ref}`category-implant`).
 * **Monitoring.** Thermal-wave measurement on product;[^smith-1985]
-  the e-test threshold of `nfet_01v8` is the ultimate monitor.
+  the {term}`e-test` threshold of `nfet_01v8` is the ultimate monitor.
 
 ## Machines typically used
 
@@ -150,7 +150,7 @@ fab (SKY130's values are not public):
 * Companion channel implants: {ref}`LVTNI <step-015>` (low-Vt NMOS),
   {ref}`LVTPI <step-020>` (1.8 V PMOS), {ref}`PCHI <step-023>` /
   {ref}`PNCHI <step-024>` (high-Vt PMOS), {ref}`PTSI <step-037>` /
-  {ref}`DEPI <step-038>` (SONOS).
+  {ref}`DEPI <step-038>` ({term}`SONOS`).
 * Wells: {ref}`PWI <step-027>`; anneal of the well module:
   {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.

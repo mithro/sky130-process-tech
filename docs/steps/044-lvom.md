@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`LVOM` is the mask of the dual-gate-oxide process. After the first,
+`LVOM` is the mask of the {term}`dual-gate-oxide <dual gate oxide>` process. After the first,
 thick gate oxide has been grown over every active area at
 {ref}`GOX100 <step-043>`, this lithography step opens resist windows
 over the *low-voltage* (1.8 V) transistors and leaves resist over the
@@ -33,7 +33,7 @@ whose rule set is headed
 if space is below minimum", hvi.2b), "Hvi must not overlap tunm"
 (hvi.4), and a minimum space of 0.700 µm "between hvi and nwell
 (exclude coincident edges)" (hvi.5).[^pdk-periph] We infer that the
-LVOM reticle is essentially NOT `hvi`: everything outside the drawn
+LVOM {term}`reticle` is essentially NOT `hvi`: everything outside the drawn
 thick-oxide regions is opened. The PDK's high-voltage methodology
 confirms which devices sit inside `hvi`: "All high voltage devices use
 110A gate oxide thickness just like low voltage (0 to Vcc)
@@ -42,11 +42,11 @@ the 5 V `g5v0d10v5` family — and "All VHV devices use 110A gate oxide
 thickness just like standard 5.0V Vcc devices".[^pdk-hv]
 
 One subtlety follows from hvi.4. Because `hvi` must not overlap the
-tunnel windows, the SONOS memory transistors are formally *outside*
-the thick-oxide regions, yet their gate dielectric is the ONO island,
+tunnel windows, the {term}`SONOS` memory transistors are formally *outside*
+the thick-oxide regions, yet their gate dielectric is the {term}`ONO` island,
 not the thin oxide. How the generated `clvom` mask treats the ONO
 islands — whether it excludes them so that the resist protects the
-blocking oxide during the etch and clean — is not public. The
+{term}`blocking oxide` during the etch and clean — is not public. The
 Cypress integration patent shows that its equivalent resist does
 exactly that: "while the photoresist layer 318 protects the ONO charge
 trapping dielectric stack 306 a clean which would be detrimental to
@@ -72,7 +72,7 @@ the generated mask is not published.
 ## Why this step exists
 
 SKY130 supports "internal 1.8V with 5.0V I/Os",[^pdk-10] plus 10–20 V
-drain-extended devices that share the 5 V oxide.[^pdk-hv] A gate oxide
+{term}`drain-extended <DEMOS>` devices that share the 5 V oxide.[^pdk-hv] A gate oxide
 cannot serve both: ITRS 2001 puts the equivalent oxide thickness of
 2001-era low-operating-power logic at 2.0–2.4 nm and of low-standby
 logic at 2.4–2.8 nm,[^itrs-01] whereas an oxide that must sit under 5 V
@@ -117,18 +117,18 @@ An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
    {ref}`GOXETCH <step-046>`.
 2. **Resist coat.** About 1 µm of positive i-line resist (PDK generic
    value 1.14 µm[^pdk-03]) — thick enough to stop the channel implant
-   and to survive a wet etch. No ARC is indicated by the step list
+   and to survive a wet etch. No {term}`ARC` is indicated by the step list
    used in this reference.
-3. **Exposure** through the LVOM reticle on an i-line stepper (our
+3. **Exposure** through the LVOM reticle on an i-line {term}`stepper` (our
    inference from the 0.6 µm rule; the 2001 ITRS reserves 248 nm for
-   the critical layers[^itrs-03]), aligned to the STI pattern; the
-   thick/thin boundary must land on field oxide, so overlay to active
+   the critical layers[^itrs-03]), aligned to the {term}`STI` pattern; the
+   thick/thin boundary must land on field oxide, so {term}`overlay` to active
    is the controlled quantity.
 4. **Post-exposure bake, develop** in 2.38 % TMAH,[^txt-02] rinse.
 5. **Hard bake.** A firm hard bake improves adhesion and reduces HF
    penetration along the resist–oxide interface at the etch, one of
    the resist/etch couple's known failure modes.[^beverina-2003]
-6. **Inspection.** Overlay and CD; after-develop inspection for
+6. **Inspection.** Overlay and {term}`CD`; after-develop inspection for
    residue in the LV windows.
 
 The resist then masks {ref}`NCHI <step-045>` and
@@ -140,7 +140,7 @@ strip step is listed; see {ref}`GOXETCH <step-046>`).
 * **i-line stepper**, 200 mm: ASML PAS 5500/100–/275, Nikon
   NSR-2205i, Canon FPA-3000i ({ref}`category-lithography`).
 * **Coat/develop track** (TEL, DNS/SCREEN, Sokudo).
-* **Overlay metrology** and **CD-SEM**.
+* **Overlay metrology** and **{term}`CD-SEM`**.
 
 ## Machines likely used at SkyWater
 
@@ -208,14 +208,14 @@ strip step is listed; see {ref}`GOXETCH <step-046>`).
 * Beverina et al. (STMicroelectronics), *Solid State Phenomena* 2003 —
   the resist / wet-etch couple for dual gate oxide.[^beverina-2003]
 * Lee (Hyundai), *Electrochem. Solid-State Lett.* 1999 — a dual gate
-  oxide process with improved gate-oxide integrity.[^lee-1999]
+  oxide process with improved {term}`gate-oxide integrity <gate oxide integrity>`.[^lee-1999]
 * Lee et al., ICVC 1999 — gate oxide thinning at the STI edge in a
   dual gate oxide process.[^lee-1999-icvc]
 * Kim et al., SSDM 2001 — an STI scheme that compensates thinning at
   the STI corner for thick dual gate oxides.[^kim-2001]
 * Inukai and Hiramoto, *Jpn. J. Appl. Phys.* 2000 — dual oxide
   thickness / multiple threshold CMOS for stand-by leakage.[^inukai-2000]
-* ITRS 2001, *Front End Processes* — EOT targets that force two
+* ITRS 2001, *Front End Processes* — {term}`EOT` targets that force two
   oxides.[^itrs-01]
 * ITRS 2001, *Lithography* — wavelength by layer criticality.[^itrs-03]
 * Levinson, *Principles of Lithography* — overlay and resist
@@ -227,7 +227,7 @@ strip step is listed; see {ref}`GOXETCH <step-046>`).
   excludes the ONO islands) is not public; the NOT-`hvi` reading and
   the protection of the ONO are inferences, the latter from a Cypress
   patent.
-* Whether the layer is exposed on i-line or DUV tools is inferred from
+* Whether the layer is exposed on i-line or {term}`DUV` tools is inferred from
   the 0.6 µm rule.
 * The enclosure of active regions by the generated mask, resist type
   and hard-bake conditions are not public.

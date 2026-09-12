@@ -12,8 +12,8 @@
 
 ## What this step is
 
-`UPRI` is the implant that sets the sheet resistance of the SKY130
-ultra-high-resistance poly resistor. Through the windows of
+`UPRI` is the implant that sets the {term}`sheet resistance` of the SKY130
+ultra-high-resistance {term}`poly resistor`. Through the windows of
 {ref}`URPM <step-055>` it places a light p-type dose into the still
 undoped bodies of the `res_xhigh_po` devices; the resist covers the
 n⁺ gate film and the 300 Ω/sq bodies doped at {ref}`PRI <step-053>`.
@@ -81,7 +81,7 @@ An industry-generic light poly-resistor implant for a 200 mm,
   spread a small quantity of dopant uniformly through the
   film.[^kamins-1972]
 * **Energy.** Tens of keV, keeping the profile inside the 0.18 µm
-  film; the amorphous film gives no channelling tail
+  film; the amorphous film gives no {term}`channelling` tail
   ({ref}`P1I <step-050>`).
 * **Dose.** Of order 10¹⁴ cm⁻² or below (illustrative estimate above),
   squarely in the range of SkyWater's medium-current implanter ("Axcelis
@@ -90,12 +90,12 @@ An industry-generic light poly-resistor implant for a 200 mm,
   8250HT class.[^axcelis-8250] A high-dose tool can also run it, at low
   beam current.
 * **Tilt.** Normal or near-normal incidence; window widths follow the
-  `rpm` rules (1.270 µm minimum[^pdk-periph]), so shadowing is
-  negligible, but straggle at the resist edge blurs the doped
+  `rpm` rules (1.270 µm minimum[^pdk-periph]), so {term}`shadowing` is
+  negligible, but {term}`straggle` at the resist edge blurs the doped
   length.[^hook-2003]
 * **Anneal.** None dedicated; activation happens in the later thermal
   steps. Because the final value depends on grain growth as well as
-  activation, the resistor is characterised at e-test on finished
+  activation, the resistor is characterised at {term}`e-test` on finished
   wafers.
 * **Monitoring.** Sheet resistance on monitor wafers after a standard
   anneal; the implanter's dose integrator and, for crystalline
@@ -106,7 +106,7 @@ An industry-generic light poly-resistor implant for a 200 mm,
 * **Medium-current implanter** (Axcelis/Eaton 8250, Varian E220/E500,
   Applied Materials xR80) — the natural tool for a light, precise
   dose (category page).
-* **Four-point probe** for monitor sheet resistance.
+* **{term}`Four-point probe <four-point probe>`** for monitor sheet resistance.
 
 ## Machines likely used at SkyWater
 
