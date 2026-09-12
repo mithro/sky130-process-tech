@@ -47,7 +47,8 @@ deep-dive entries per step page and twelve per category page
 `docs/steps/008-dni.md` is the converted exemplar.
 
 - [x] Citation style guide, checker and exemplar page — 2026-08-30
-- [r] Convert step pages 001–007, 009–013 and expand deep-dive lists (branch `topic/footnotes-steps-001-013`, converted, under review)
+- [x] Convert step pages 001–007, 009–013 and expand deep-dive lists — reviewed and merged 2026-09-12
+- [ ] Inventory: add the isolation-module deep-dive sources (92 labels) to `public-sources.md`
 - [~] Convert the ten category pages and expand deep-dive lists (branch `topic/footnotes-categories`)
 - [x] Convert steps 014–034 — 2026-09-12
 
