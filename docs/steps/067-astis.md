@@ -1,10 +1,6 @@
 (step-067)=
 # Step 067 — ASTIS: As tip implant strip
 
-:::{warning}
-This page is a stub. Content has not yet been researched and reviewed.
-:::
-
 | | |
 |---|---|
 | **Step number** | 67 of 171 |
@@ -16,50 +12,324 @@ This page is a stub. Content has not yet been researched and reviewed.
 
 ## What this step is
 
-*To be written.*
+`ASTIS` removes the photoresist patterned at {ref}`NTM <step-064>`
+after it has masked two implants — the arsenic tip
+{ref}`ASTI <step-065>` and the boron halo {ref}`BHI <step-066>` — and
+cleans the wafer so that the next tip mask, {ref}`HVNTM <step-068>`, can
+be coated on a bare, particle-free surface. It is the first resist strip
+after the gate etch and the first of the three strips in the tip
+module; the step list used in this reference pairs each tip mask with
+such an "…S" step ({ref}`HVASTIS <step-070>`,
+{ref}`LDASTIS <step-074>`).
+
+The resist being removed is the roughly 1 µm i-line implant resist
+inferred on the {ref}`NTM <step-064>` page (the PDK's nominal
+photoresist thickness is 1.14 µm).[^pdk-03] It has received a heavy
+arsenic dose — of order 10¹⁴–10¹⁵ cm⁻² (typical of an extension
+implant)[^txt-01] — and a light, tilted boron dose. That makes it a
+*hard* strip by the standards of the flow: the arsenic has turned the
+top of the resist into a carbonised crust,[^orvek-1985][^fujimura-1989]
+and the crust contains arsenic. The surface under the resist is the
+thin screen oxide from {ref}`IOX45 <step-063>` over silicon and over the
+polysilicon gates; no metal is present, so the full acid–peroxide
+sequence is available, but the screen oxide must survive because two
+more tip implants will be made through it.
 
 ## Step category
 
-*To be written.*
+`ASTIS` is a {ref}`Resist strip / clean <category-strip>` step of the
+*post-implant* type, at the difficult end of that class. The category
+page explains that implanted resist is "a different material from
+freshly developed resist": the ions deposit their energy in the top
+100–200 nm,[^fujimura-1989] cross-linking and carbonising it, and if
+the crusted wafer is heated quickly the soft resist underneath blows
+the crust off in flakes ("popping"). The channel-implant strips of the
+well module ({ref}`LVTNIS <step-016>`) saw doses a hundred times
+smaller; only the source/drain strips ({ref}`PDIS <step-084>`,
+{ref}`NSDIS <step-087>`) are harder than this one.
 
 ## Why this step exists
 
-*To be written.*
+Resist must be gone before the next coat, and residue matters more here
+than after most masks. The {ref}`HVNTM <step-068>` resist that follows
+is, per the PDK's assumptions page, only 0.3 µm thick ("Photoresist
+thickness for HV Tip Implants")[^pdk-03] — a film that a flake of popped
+crust or a ridge of residue would easily disturb, and whose 40° tilted
+implant[^pdk-03] would be shadowed by any particle standing on the
+surface. The crust also carries the implanted arsenic and whatever
+metals the beam line has sputtered onto it; both must leave the wafer
+before the {ref}`TIPRTAD <step-075>` anneal can drive them in. A
+poorly stripped implant resist shows up as hard-to-remove flakes — the
+patent literature notes that "the popping problem … causes the
+photoresist to become even harder"[^pat-strip-mosel] — and, after this
+particular strip, as tip and halo doping missing from whichever
+transistors the flakes landed on.
 
 ## How it is typically performed
 
-*To be written.*
+An industry-generic high-dose implant-strip sequence for a 200 mm,
+130 nm-era fab:
+
+1. **Plasma ash, two stages.** Downstream (remote) microwave or RF
+   oxygen plasma. Because "the top portion of the photoresist layer is
+   transformed into a carbonized crust that is difficult to
+   remove"[^pat-strip-tsmc] and a conventional "high temperature
+   (>200° C.) dry ashing" lets the volatile bulk "build up pressure
+   beneath the implant-hardened surface layer",[^pat-strip-mosel] the
+   first stage runs cool — "removed by oxygen and nitrogen/hydrogen
+   plasma in a low-temperature (<220 °C) environment"[^pat-strip-mosel]
+   — until the crust is opened, after which a hotter bulk stage
+   finishes the film. Fujimura's group showed why nitrogen[^fujimura-1990]
+   and water vapour[^fujimura-1991] are added to the oxygen for
+   implanted resist, and Yegnasubramanian et al. showed by TEM what is
+   left when the ash is not adequate.[^yegnasubramanian-1992]
+   SkyWater's ashers offer exactly these chemistries: "Gasonic PEP,
+   remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF microwave,
+   N2, O2, H2, CF4, NH3, H2/N2, 40C-270C" and "Mattson Aspen2, RF
+   plasma, O2, CF4, H2>N2, up to 250C".[^skw-01] Downstream operation
+   is used because "monatomic oxygen is electrically neutral" and the
+   remote plasma "prevents damage to the wafer surface"[^wiki-ash] —
+   which matters with gate oxide and gate edges now exposed.
+2. **Wet strip and clean.** Sulphuric acid–hydrogen peroxide (SPM,
+   "piranha"), "a typical mixture is 3 parts of concentrated sulfuric
+   acid and 1 part of 30 wt. % hydrogen peroxide solution",[^wiki-piranha]
+   dissolves the remaining organics and the arsenic-bearing residue;
+   SC-1 (NH₄OH/H₂O₂/H₂O at 75–80 °C) then removes particles, with an
+   optional SC-2 (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] SkyWater's Akrion
+   Gamma bench lists "Sulfuric, SC1" among its chemistries.[^skw-01]
+   Sulphur-trioxide[^bergman-2009] and formulated
+   solvent-based[^visintin-2006] strippers are the published
+   alternatives for high-dose implanted resist.
+3. **Rinse and dry.** Cascade DI-water rinse, spin-rinse or IPA dry.
+4. **Inspection.** Patterned-wafer optical inspection for flakes and
+   residue.
+
+We infer that no HF step is used: the screen oxide must remain as the
+screen for {ref}`HVASTI <step-069>` and {ref}`LDASTI <step-072>`, and
+SC-1's slow oxide etch is the only thinning budgeted (industry
+practice).[^txt-02]
 
 ## Machines typically used
 
-*To be written.*
+* **Downstream plasma asher**, 200 mm single-wafer: Gasonics
+  (Novellus) Aura/PEP, Mattson Aspen, Axcelis/Fusion ES series, PSK
+  ({ref}`category-strip`).
+* **Batch wet bench** with SPM, SC-1, SC-2 tanks and a rinser/dryer
+  (Akrion, DNS/SCREEN, SCP), or a **spray processor** (FSI Mercury).
+* **Patterned-wafer inspection** (KLA-Tencor 2xxx/AIT class).
 
 ## Machines likely used at SkyWater
 
-*To be written.*
+* **Gasonics PEP, Iridia RF microwave and Mattson Aspen 2 ashers** —
+  all named on SkyWater's facilities page with their gases and
+  temperatures.[^skw-01] Strength: **strong** for existence; the
+  assignment of this strip to any one of them is an inference. The
+  Iridia's H₂/N₂ and H₂O-capable chemistry and 40 °C lower limit fit a
+  cool first stage best.
+* **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
+  BOE")[^skw-01] for the SPM/SC-1 sequence. Strength: strong for
+  existence.
+* **DNS wet bench and FSI Mercury** ("industry standard
+  HF/SC1/SC2")[^skw-01] as alternative clean tools. Strength: strong for
+  existence.
+* **KLA-Tencor AIT** patterned-wafer inspection, from a SkyWater job
+  posting.[^job-01] Strength: medium.
 
 ## Resources required
 
-*To be written.*
+* **Oxygen, nitrogen, forming gas (H₂/N₂)** and, on the Iridia,
+  **water vapour** for the ash;[^skw-01] **CF₄** is available but would
+  attack the screen oxide and is normally omitted.
+* **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** for
+  SPM;[^wiki-piranha] **ammonium hydroxide** for SC-1; **hydrochloric
+  acid** for SC-2.[^wiki-rca]
+* **Ultrapure DI water**, **isopropanol** for drying, **nitrogen**.
+* Arsenic-bearing resist ash and spent acid go to the fab's hazardous
+  exhaust and waste-acid systems (general practice).
+* SkyWater names KMG Chemicals and EMD Performance Materials among its
+  chemical suppliers.[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 
-*To be written.*
+* Previous: {ref}`BHI <step-066>` (the last implant through this
+  resist); the resist was patterned at {ref}`NTM <step-064>` and also
+  masked {ref}`ASTI <step-065>`.
+* Next: {ref}`HVNTM <step-068>` (the thin HV-tip resist coated on the
+  cleaned surface).
+* Companion strips in this module: {ref}`HVASTIS <step-070>`,
+  {ref}`LDASTIS <step-074>`; the next high-dose strips are
+  {ref}`PDIS <step-084>` and {ref}`NSDIS <step-087>`.
+* Category page: {ref}`Resist strip / clean <category-strip>`.
 
 ## References
 
 ### Cross-check
 
-*To be written.*
+* SkyWater, *Facilities & Capabilities* — Gasonic PEP; Iridia; Mattson
+  Aspen2; Akrion Gamma; DNS and FSI Mercury benches.[^skw-01]
+* SkyWater PDK, *Criteria & Assumptions* — photoresist thickness
+  1.14 µm; 0.3 µm resist and 40° angle for the HV tip that
+  follows.[^pdk-03]
+* Indeed, SkyWater Technology Foundry listings — the defect-metrology
+  tool list.[^job-01]
+* SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
+  suppliers.[^sec-01][^sec-02]
+* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the popping
+  mechanism and a low-temperature first ash stage.[^pat-strip-mosel]
+* Chan, Chiu and Tao (TSMC), US 2004/0214448 — the "carbonized crust" of
+  implanted resist.[^pat-strip-tsmc]
 
 ### High-level understanding
 
-*To be written.*
+* Wikipedia, *Plasma ashing* — downstream ashing and implanted-resist
+  problems.[^wiki-ash]
+* Wikipedia, *Piranha solution* and *RCA clean* — SPM, SC-1 and SC-2
+  compositions.[^wiki-piranha][^wiki-rca]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+  resist stripping and wafer cleaning.[^txt-02]
+* Plummer, Deal and Griffin, *Silicon VLSI Technology* — extension
+  implant doses that set the crust.[^txt-01]
+* Quirk and Serda, *Semiconductor Manufacturing Technology* — ash and
+  wet-clean tools.[^txt-07]
 
 ### Deep dive
 
-*To be written.*
+* Orvek and Huffman, *NIM B* 1985 — the carbonised layer formed in
+  ion-implanted resist masks.[^orvek-1985]
+* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the crust and
+  popping mechanism, measured.[^fujimura-1989]
+* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990 — why nitrogen
+  is added to oxygen in downstream ashing.[^fujimura-1990]
+* Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1991 — resist
+  stripping in an O₂ + H₂O downstream plasma.[^fujimura-1991]
+* Yegnasubramanian, Draper and Pearce, *MRS Proc.* 1992 — TEM of the
+  implanted-resist residues left after oxygen-plasma ashing.[^yegnasubramanian-1992]
+* Rubin et al. (Varian), IIT 2000 — UV photostabilisation of resist
+  before high-dose implants, the implant-side half of the
+  problem.[^rubin-2000]
+* Lukaszek, Reno and Bammi, IIT 1996 — resist and wafer charging
+  during high-current arsenic implants.[^lukaszek-1996]
+* Bergman and Leonhard, *Solid State Phenomena* 2009 — wet stripping
+  of high-dose implanted resist with sulphur trioxide.[^bergman-2009]
+* Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006 —
+  formulated liquid strippers for high-dose implanted resist.[^visintin-2006]
+* Kern, *J. Electrochem. Soc.* 1990 — history and chemistry of the RCA
+  clean.[^kern-1990]
+* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing* — post-implant stripping and wet cleaning.[^reinhardt-2010]
+* Nakayama et al. (ULVAC), US 5,795,831 — a cold process for stripping
+  implanted resist.[^pat-strip-ulvac]
+* Kamarehi and Simpson (Fusion Systems), US 5,498,308 — a downstream
+  microwave asher design.[^pat-asher-fusion]
+* Becknell, Hammar and Ferris (Axcelis), US 7,449,416 — a plasma
+  ashing process tuned for removal rate.[^pat-asher-axcelis]
 
 ## Open questions
 
-*To be written.*
+* The SKY130 ash recipe (stage temperatures, gases, whether H₂O or
+  H₂/N₂ is used) and the wet sequence are not public.
+* Whether an oxide-thinning budget is assigned to this clean, and how
+  the screen oxide thickness is tracked across the three tip strips, is
+  not public.
+* Which of the three ashers on SkyWater's public tool list[^skw-01]
+  runs the high-dose strips is not stated publicly.
+* The tip dose that determines how hard this strip is remains an
+  inference from node-typical values ({ref}`ASTI <step-065>`).
+
+<!-- footnotes -->
+
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^txt-01]: J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+    Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
+    2000, ISBN 978-0-13-085037-9.
+    <https://openlibrary.org/isbn/9780130850379>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+    ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^txt-07]: M. Quirk and J. Serda, *Semiconductor Manufacturing
+    Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
+    <https://openlibrary.org/isbn/9780130815200>
+[^orvek-1985]: K. J. Orvek and C. Huffman, "Carbonized layer formation
+    in ion implanted photoresist masks", *Nuclear Instruments and
+    Methods in Physics Research B* **7–8**, 501–506 (1985).
+    <https://doi.org/10.1016/0168-583X(85)90421-5>
+[^fujimura-1989]: S. Fujimura, J. Konno, K. Hikazutani and H. Yano,
+    "Ashing of Ion-Implanted Resist Layer", *Japanese Journal of Applied
+    Physics* **28**(10R), 2130 (1989).
+    <https://doi.org/10.1143/JJAP.28.2130>
+[^fujimura-1990]: S. Fujimura, K. Shinagawa, M. Nakamura and H. Yano,
+    "Additive Nitrogen Effects on Oxygen Plasma Downstream Ashing",
+    *Japanese Journal of Applied Physics* **29**(10R), 2165 (1990).
+    <https://doi.org/10.1143/JJAP.29.2165>
+[^fujimura-1991]: S. Fujimura, K. Shinagawa, M. T. Suzuki and
+    M. Nakamura, "Resist stripping in an O₂+H₂O plasma downstream",
+    *Journal of Vacuum Science & Technology B* **9**(2), 357–361 (1991).
+    <https://doi.org/10.1116/1.585575>
+[^yegnasubramanian-1992]: S. Yegnasubramanian, C. W. Draper and C. W.
+    Pearce, "Tem Investigation of Implanted Photoresist Residues
+    Remaining After Oxygen Plasma Ashing", *MRS Online Proceedings
+    Library* **265**, 295–300 (1992).
+    <https://doi.org/10.1557/PROC-265-295>
+[^rubin-2000]: L. Rubin, D. Whiteside, C. Norton, A. Stevenson and
+    C. Ukah, "Improved photoresist integrity by UV photostabilization
+    for high dose, high energy ion implants", *Proc. 2000 International
+    Conference on Ion Implantation Technology*, pp. 817–820.
+    <https://doi.org/10.1109/IIT.2000.924279>
+[^lukaszek-1996]: W. Lukaszek, S. Reno and R. Bammi, "Influence of
+    photoresist on wafer charging during high current arsenic implant",
+    *Proc. 11th International Conference on Ion Implantation
+    Technology* (1996), pp. 89–92.
+    <https://doi.org/10.1109/IIT.1996.586135>
+[^bergman-2009]: E. J. Bergman and J. D. Leonhard, "Novel Methods for
+    Wet Stripping High Dose Implanted Photoresist Using Sulfur
+    Trioxide", *Solid State Phenomena* **145–146**, 281–284 (2009).
+    <https://doi.org/10.4028/www.scientific.net/SSP.145-146.281>
+[^visintin-2006]: P. M. Visintin, M. B. Korzenski and T. H. Baum,
+    "Liquid Clean Formulations for Stripping High-Dose Ion-Implanted
+    Photoresist from Microelectronic Devices", *Journal of The
+    Electrochemical Society* **153**(7), G591 (2006).
+    <https://doi.org/10.1149/1.2195884>
+[^pat-strip-mosel]: M.-S. Tseng, F.-H. Chao and N.-Y. Tsai (Mosel
+    Vitelic), *Low temperature dry process for stripping photoresist
+    after high dose ion implantation*, US 5,811,358 A, granted
+    1998-09-22. <https://patents.google.com/patent/US5811358A/en>
+[^pat-strip-tsmc]: B.-W. Chan, Y.-H. Chiu and H.-J. Tao (TSMC), *Method
+    of ashing a photoresist*, US 2004/0214448 A1, published 2004-10-28.
+    <https://patents.google.com/patent/US20040214448A1/en>
+[^pat-strip-ulvac]: I. Nakayama et al. (ULVAC Technologies), *Cold
+    processes for cleaning and stripping photoresist from surfaces of
+    semiconductor wafers*, US 5,795,831 A, granted 1998-08-18.
+    <https://patents.google.com/patent/US5795831A/en>
+[^pat-asher-fusion]: M. Kamarehi and J. E. Simpson (Fusion Systems),
+    *Plasma asher with microwave trap*, US 5,498,308 A, granted
+    1996-03-12.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>
+[^pat-asher-axcelis]: A. F. Becknell, P. Hammar and D. Ferris (Axcelis
+    Technologies), *Apparatus and plasma ashing process for increasing
+    photoresist removal rate*, US 7,449,416 B2, granted 2008-11-11.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^wiki-ash]: Wikipedia, *Plasma ashing*.
+    <https://en.wikipedia.org/wiki/Plasma_ashing>
+[^wiki-piranha]: Wikipedia, *Piranha solution*.
+    <https://en.wikipedia.org/wiki/Piranha_solution>
+[^wiki-rca]: Wikipedia, *RCA clean*.
+    <https://en.wikipedia.org/wiki/RCA_clean>
+[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
+    Bloomington, MN* (listing page; Defect Technician 2 posting),
+    retrieved 2026-08-30. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
+    statement), filed 2021-03-22; "Raw materials." run-in paragraph
+    under "Manufacturing". <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024. <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
+[^kern-1990]: W. Kern, "The Evolution of Silicon Wafer Cleaning
+    Technology", *Journal of The Electrochemical Society* **137**(6),
+    1887–1892 (1990). <https://doi.org/10.1149/1.2086825>
+[^reinhardt-2010]: K. A. Reinhardt and R. F. Reidy (eds.), *Handbook of
+    Cleaning in Semiconductor Manufacturing: Fundamental and
+    Applications*, Wiley, 2010, ISBN 978-0-470-62595-8.
+    <https://doi.org/10.1002/9781118071748>
