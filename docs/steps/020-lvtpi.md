@@ -45,18 +45,20 @@ implants in the flow.
 
 The PMOS threshold must be set independently of the well profile. The
 buried N-well peak of {ref}`NWI <step-018>` is placed deep for latch-up
-and punch-through reasons and leaves the surface only lightly doped; a
-p⁺-gated surface-channel PMOS on such a surface would have too small a
-|Vt|. A shallow n-type implant raises the surface concentration to the
-value that gives the wanted threshold; in the body-effect expression γ ∝
-√N,[^wiki-vt] and multi-Vt CMOS is made by "altering the concentration
-of dopant atoms in the channel region beneath the gate
-oxide".[^wiki-mtcmos] The 2001 ITRS FEP table gives, as illustration of
-the magnitudes involved, a "Uniform channel concentration … for Vt=0.4"
-of 0.8–1.5 × 10¹⁸ cm⁻³ for the 2001 high-performance node and a
-"Retrograde channel depth" of 21–30 nm[^itrs-01] — SKY130's 1.8 V
-devices are a low-power, longer-channel design and will not match those
-numbers, but the order of magnitude is the same.
+and punch-through reasons and leaves the surface only lightly doped, so
+a shallow channel implant sets the surface concentration to the value
+that gives the wanted |Vt| — an n-type dose that raises it under a p⁺
+gate, or, under the n⁺ gate the gate pages infer for SKY130
+({ref}`P1I <step-050>`), a p-type dose that counter-dopes the surface of
+a buried-channel device. In the body-effect expression γ ∝ √N,[^wiki-vt]
+and multi-Vt CMOS is made by "altering the concentration of dopant atoms
+in the channel region beneath the gate oxide".[^wiki-mtcmos] The 2001
+ITRS FEP table gives, as illustration of the magnitudes involved, a
+"Uniform channel concentration … for Vt=0.4" of 0.8–1.5 × 10¹⁸ cm⁻³ for
+the 2001 high-performance node and a "Retrograde channel depth" of
+21–30 nm[^itrs-01] — SKY130's 1.8 V devices are a low-power,
+longer-channel design and will not match those numbers, but the order of
+magnitude is the same.
 
 `LVTPI` therefore establishes the *baseline* PMOS: `pfet_01v8` and, we
 infer, the 5 V `pfet_g5v0d10v5`. The other PMOS flavours are derived
@@ -70,18 +72,15 @@ layer[^pdk-07][^pdk-periph] (see {ref}`LVTNM <step-014>`).
 An industry-generic PMOS threshold implant for a 200 mm, 130 nm-era
 fab (SKY130 values are not public):
 
-* **Species.** For a surface-channel PMOS with a p⁺ polysilicon gate the
-  threshold-setting species is *n-type*: arsenic, which stays shallow
-  and diffuses slowly, or phosphorus. The Round Rock/Micron multi-Vt
-  patent uses "an implant of Arsenic" as its first threshold
-  adjust;[^pat-vt-rrr] IBM used 50 keV phosphorus at 5 ×
-  10¹¹ cm⁻².[^pat-well-ibm] A *p-type* species (boron/BF₂) would instead
-  counter-dope the surface and lower |Vt| — the recipe of a
-  buried-channel PMOS with an n⁺ gate, which was common up to the
-  0.35 µm generation but rare at 130 nm.[^txt-04] Which SKY130 uses is
-  not public; arsenic or phosphorus is the more plausible reading, and
-  "BF2" appears in the step list used in this reference only for the
-  *high-Vt* module ({ref}`PNCHI <step-024>`).
+* **Species.** If, as the gate pages infer ({ref}`P1I <step-050>`),
+  SKY130 uses n⁺ poly on the PMOS, the baseline threshold implant is a
+  *p-type* counter-doping (boron or BF₂) that brings a buried-channel
+  PMOS from the ≈−1.2 V of an uncompensated n⁺-gate device towards the
+  PDK's −1.05 V long-channel value;[^pdk-07] if the gate were p⁺, an
+  *n-type* species (arsenic or phosphorus) would set the threshold
+  instead — the Round Rock/Micron patent uses "an implant of
+  Arsenic",[^pat-vt-rrr] IBM 50 keV phosphorus at
+  5 × 10¹¹ cm⁻².[^pat-well-ibm] Which SKY130 uses is not public.
 * **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻² are typical for
   threshold adjusts (category page; an LSI Logic patent gives 1 × 10¹²–1
   × 10¹³ cm⁻² for the boron equivalent,[^pat-vt-lsi] an AMD patent
@@ -111,17 +110,19 @@ fab (SKY130 values are not public):
 ## Machines likely used at SkyWater
 
 * **Axcelis 8250 medium-current** — "B11, BF2, As, ESC chuck, E shower,
-  1e11 to 1e14, 0-60 deg tilt":[^skw-01] arsenic is available and the
-  dose window fits. Strength: **strong** for the tool; assignment is an
-  **inference**. Note that phosphorus is *not* in the 8250's public
-  species list, which favours arsenic if this tool is used.
+  1e11 to 1e14, 0-60 deg tilt":[^skw-01] boron and BF₂ (the species of
+  the n⁺-gate reading) and arsenic (of the p⁺-gate reading) are all
+  available and the dose window fits. Strength: **strong** for the tool;
+  assignment is an **inference**. Note that phosphorus is *not* in the
+  8250's public species list.
 * **Axcelis GSD** — "B11, BF2, P, As, 10-3000kev"[^skw-01] could run
   either species. Strength: strong for existence.
 
 ## Resources required
 
-* **Arsine (AsH₃)** or **phosphine (PH₃)** source gas;[^wiki-implant]
-  **BF₃** if the implant is p-type.
+* **Boron trifluoride (BF₃)** source gas for the p-type implant of the
+  n⁺-gate reading; **arsine (AsH₃)** or **phosphine (PH₃)** if the
+  implant is n-type.[^wiki-implant]
 * Support gases, cryopump and source consumables, monitor wafers
   (category page).
 * No new resist: the {ref}`NWM <step-017>` resist is reused.
@@ -201,12 +202,13 @@ fab (SKY130 values are not public):
 * Whether "Low V" means low-voltage (1.8 V) or low-Vt, and whether the
   implant also reaches the 5 V PMOS regions, is not stated publicly;
   we read it as the baseline PMOS channel implant for all N-wells.
-* Species (arsenic or phosphorus versus BF₂), energy and dose are not
-  public.
-* Whether SKY130's PMOS is surface-channel with a p⁺ gate — the
-  assumption behind the n-type species reading — is inferred from the
-  node and the presence of a separate P⁺ source/drain mask
-  ({ref}`PSDM <step-081>`), not documented.
+* Species (boron or BF₂ versus arsenic or phosphorus), energy and dose
+  are not public.
+* SKY130's PMOS gate is read on the gate pages as n⁺ poly
+  (buried-channel PMOS), inferred from the PDK's "N+ doped gate poly",
+  the absence of a P⁺ poly mask, the capped gate and the −1.05 V
+  long-channel threshold; the species reading above follows from that
+  inference.
 
 <!-- footnotes -->
 
