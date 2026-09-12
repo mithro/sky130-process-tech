@@ -23,7 +23,7 @@ Implant" alongside "ONO", "SONOS gate", "NPASS gate" and "NMOS VT
 implants".[^pdk-sonos-xs] The implant is confined to the `tunm` windows
 (GDS 80:20, "SONOS device tunnel implant"[^pdk-06]) by the resist from
 {ref}`TUNM <step-035>`, opened at {ref}`TUNARCE <step-036>`, and passes
-through the pad oxide like `PTSI`.
+through the (inferred) pad oxide like `PTSI`.
 
 For an n-channel transistor a depletion implant is an n-type dose
 (arsenic or phosphorus) placed in the top few tens of nanometres of
@@ -119,7 +119,7 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   threshold-adjust practice[^macpherson-1971] and with the 10¹²–10¹³
   cm⁻² channel-implant range of the era's patents.[^pat-vt-amd]
 * **Tilt and twist.** 7° with twist,[^txt-02][^wiki-implant] through
-  the pad oxide, which randomises the beam and reduces
+  the (inferred) pad oxide, which randomises the beam and reduces
   {term}`channelling`.
 * **Order.** After `PTSI` through the same resist; the order of the
   two implants does not matter physically and is presumably chosen for
@@ -164,8 +164,8 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 
 * Previous: {ref}`PTSI <step-037>` (sub-surface barrier through the
   same window); mask: {ref}`TUNM <step-035>`.
-* Next: {ref}`TUNME <step-039>` removes the pad oxide the implant went
-  through; {ref}`ONO <step-040>` grows the tunnel oxide on the
+* Next: {ref}`TUNME <step-039>` removes the (inferred) pad oxide the
+  implant went through; {ref}`ONO <step-040>` grows the tunnel oxide on the
   implanted silicon.
 * The select transistor of the cell is a standard NMOS whose channel
   was implanted at {ref}`LVTNI <step-015>` or later; the cell's tip

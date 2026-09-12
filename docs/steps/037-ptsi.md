@@ -26,7 +26,8 @@ The wafer at this point carries the {ref}`TUNM <step-035>` resist,
 opened through its ARC at {ref}`TUNARCE <step-036>`, so the implant
 enters only the tunnel windows (`tunm`, GDS 80:20, described by the
 PDK as "SONOS device tunnel implant"[^pdk-06]) and passes through the
-pad oxide there, which is 10–20 nm in the Cypress embedded-SONOS
+screen oxide there — the pad oxide, we infer — which is 10–20 nm in
+the Cypress embedded-SONOS
 flow.[^pat-04] Everywhere else the resist stops it. The PDK's rule
 that the low-Vt block layer defines "regions to block Vt adjust
 implant for low Vt LV PMOS/NMOS, SONOS FETs and Native
@@ -115,8 +116,9 @@ memory transistor (SKY130's values are not public):
 * **Tilt and twist.** 7° with a twist is the textbook convention to
   suppress {term}`channelling`;[^txt-02][^wiki-implant] a large tilt is
   used only when the barrier is meant to be asymmetric.[^hori-1988]
-* **Screen.** Through the pad oxide (10–20 nm),[^pat-04] which also
-  randomises the beam.
+* **Screen.** Through the screen oxide — the pad oxide, we infer;
+  10–20 nm in the Cypress patent[^pat-04] — which also randomises the
+  beam.
 * **Wafer handling.** Single-wafer, electrostatically chucked end
   station with an electron shower for charge neutralisation; the
   resist carries only a light dose here.

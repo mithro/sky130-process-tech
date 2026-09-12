@@ -12,15 +12,17 @@
 
 ## What this step is
 
-`TUNME` removes the pad oxide from the tunnel windows so that the
+`TUNME` removes the oxide — we infer the pad oxide from
+{ref}`BOX <step-002>` — from the tunnel windows so that the
 tunnel oxide of the SONOS memory transistor can be grown on bare
 silicon at the next step, {ref}`ONO <step-040>`. The resist patterned
 at {ref}`TUNM <step-035>` — opened through its ARC at
 {ref}`TUNARCE <step-036>` and just used as the mask for the
 {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants — now
 serves a third time, as the mask for a wet oxide etch. Inside each
-window the 10–20 nm pad oxide[^pat-04] is dissolved in dilute
-hydrofluoric acid or buffered HF down to the silicon; outside the
+window the oxide — the pad oxide, we infer; 10–20 nm in the Cypress
+patent[^pat-04] — is dissolved in dilute hydrofluoric acid or buffered
+HF down to the silicon; outside the
 windows the resist keeps the oxide intact.
 
 The Cypress embedded-SONOS patent describes exactly this operation on
@@ -101,10 +103,11 @@ fab (SKY130's recipe is not public):
    liquid wet 0.4 µm windows in hydrophobic resist; Cypress specifies
    "a 10:1 buffered oxide etch (BOE) containing a surfactant".[^pat-04]
    The resist is not attacked by HF.
-2. **Over-etch and undercut.** The etch is timed for the pad oxide
-   plus an over-etch to clear thickness variation; being isotropic, it
-   undercuts the resist edge by roughly the oxide thickness plus
-   over-etch — tens of nanometres, small against the 0.095 µm `tunm`
+2. **Over-etch and undercut.** The etch is timed for the oxide
+   thickness plus an over-etch to clear thickness variation; being
+   isotropic, it undercuts the resist edge by roughly the oxide
+   thickness plus over-etch — tens of nanometres, small against the
+   0.095 µm `tunm`
    extension beyond the gate (tunm.3).[^pdk-periph] Etch-rate test
    wafers track bath ageing ({ref}`category-etch`).
 3. **Rinse and dry.** DI-water rinse; the freshly exposed silicon is
@@ -177,7 +180,8 @@ fab (SKY130's recipe is not public):
 * The same wet chemistry later strips the thick gate oxide from the
   1.8 V regions ({ref}`GOXETCH <step-046>`) and the sacrificial oxide
   before silicidation ({ref}`SACETCH <step-095>`).
-* The pad oxide being removed was grown at {ref}`BOX <step-002>`.
+* The oxide being removed is, we infer, the pad oxide grown at
+  {ref}`BOX <step-002>`.
 * Category pages: {ref}`Etch <category-etch>`,
   {ref}`Resist strip / clean <category-strip>`.
 
@@ -235,6 +239,9 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
+* That the oxide under the resist/nitride is the pad oxide from
+  {ref}`BOX <step-002>` rather than a later sacrificial oxide is
+  inferred; its retention after {ref}`NS19 <step-013>` is not public.
 * Whether the pad oxide is removed only inside the tunnel windows
   (masked, as the step name suggests) or everywhere after the resist
   is stripped is not stated publicly; the Cypress patent text can be

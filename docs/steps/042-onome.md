@@ -24,8 +24,8 @@ islands keep their charge-trapping dielectric.
 
 Precisely: the blocking oxide (and any sacrificial cap) and the
 nitride or oxynitride trapping layer are removed by a plasma etch that
-stops on the underlying oxide — the pad oxide from
-{ref}`BOX <step-002>`, which is still present outside the tunnel
+stops on the underlying oxide — we infer the pad oxide from
+{ref}`BOX <step-002>`, still present outside the tunnel
 windows — and the last oxide is then cleared, either here or at the
 gate-oxide pre-clean, by a wet etch. The Cypress integration patent
 describes exactly this two-stage approach: "a combination of dry and
@@ -51,8 +51,9 @@ pre-gate-oxide clean are, we infer, part of this step or of the next.
 stack etch* type: a nitride etch with an oxide etch above it and a
 very thin oxide stop below it, on the Lam 9400 / DPS "poly/nitride"
 class of tool (see below). Its distinctive difficulty is the stop
-layer: the pad oxide beneath the nitride is 10–20 nm,[^pat-04] and the
-silicon under it will become the channel of every logic transistor.
+layer: the oxide beneath the nitride — the pad oxide, we infer — is
+10–20 nm in the Cypress patent,[^pat-04] and the silicon under it will
+become the channel of every logic transistor.
 The etch is therefore run like a spacer etch — a nitride etch with
 "selectivity to oxide" that must "stop on a thin oxide without
 trenching the silicon" ({ref}`category-etch`) — rather than like a
@@ -74,7 +75,7 @@ side:
   reaches the channel silicon; ion bombardment leaves "a few
   nanometres of damaged, sometimes amorphised silicon" that "the next
   oxidation or clean must remove" ({ref}`category-etch`). Landing on
-  the pad oxide and finishing wet is how the damage is kept off the
+  the oxide and finishing wet is how the damage is kept off the
   channel.
 * **The ONO edge must be clean.** The island sidewall is the boundary
   along which the logic gate oxide will later grow; a "good stack
@@ -106,13 +107,14 @@ memory (SKY130's recipe is not public):
    is by optical emission — "a strong peak at 387 nm indicates that
    CN is present in the plasma, usually indicating that nitride is
    being etched"[^pat-cn-tel] — followed by a short over-etch that
-   lands on the pad oxide. Because the nitride is only a few
+   lands on the oxide. Because the nitride is only a few
    nanometres thick, the endpoint signal is brief and the over-etch
    is timed.
 4. **Resist strip.** Oxygen-plasma ash and a wet strip
    ({ref}`category-strip`); the resist has seen a fluorocarbon plasma
    and carries polymer residue that the wet step removes.
-5. **Bottom oxide.** The remaining pad oxide (plus the fraction of a
+5. **Bottom oxide.** The remaining (inferred) pad oxide (plus the
+   fraction of a
    nanometre that the tunnel oxidation added) is removed in BOE or
    dilute HF — "an etchant, such as BOE, is employed to clear
    sacrificial dielectric layer 303"[^pat-03] — exposing the logic
@@ -235,6 +237,9 @@ memory (SKY130's recipe is not public):
 
 ## Open questions
 
+* That the oxide under the resist/nitride is the pad oxide from
+  {ref}`BOX <step-002>` rather than a later sacrificial oxide is
+  inferred; its retention after {ref}`NS19 <step-013>` is not public.
 * Whether the nitride is removed dry (as the Cypress patents describe)
   or wet, and on which tool, is inferred.
 * Whether the bottom oxide is cleared here or at the

@@ -17,8 +17,10 @@ coating from the bottom of the windows that {ref}`TUNM <step-035>`
 opened in the photoresist. A bottom anti-reflective coating
 ({term}`BARC`) is spun on *under* the resist and is not photosensitive:
 after develop the resist is gone from the tunnel windows but the ARC
-film still covers the pad oxide inside them. This etch transfers the
-resist pattern through the ARC and stops on the pad oxide, so that the
+film still covers the oxide inside them — the pad oxide from
+{ref}`BOX <step-002>`, we infer (its retention is not public). This etch
+transfers the resist pattern through the ARC and stops on that oxide, so
+that the
 two implants that follow ({ref}`PTSI <step-037>`,
 {ref}`DEPI <step-038>`) enter the silicon through a known, thin oxide
 only, and so that the wet etch at {ref}`TUNME <step-039>` can reach and
@@ -28,7 +30,8 @@ Precisely: with the tunnel-mask resist in place, the wafer is exposed to
 an oxygen-based plasma that ashes the organic ARC in the open windows
 (the resist is attacked at a similar rate but is many times thicker),
 with the etch run to an optical-emission endpoint plus a timed over-etch,
-and stopping on the 10–20 nm pad oxide.[^pat-04] The step list used in
+and stopping on the oxide beneath — 10–20 nm of pad oxide in the
+Cypress patent.[^pat-04] The step list used in
 this reference names the film only as "ARC"; whether it is an organic
 BARC or an inorganic dielectric ARC is discussed under *Open questions*.
 
@@ -77,7 +80,7 @@ window is for.
 
 Without `TUNARCE` the tunnel window would be printed but not usable.
 Its cost is a few nanometres of resist loss and a plasma exposure of
-the pad oxide, both of which the recipe must budget for.
+the (inferred) pad oxide, both of which the recipe must budget for.
 
 ## How it is typically performed
 
@@ -114,7 +117,7 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   cope with.
 * **Inorganic alternative.** If the ARC were a PECVD silicon
   oxynitride, the open would be a CF₄/CHF₃-based dielectric etch with
-  its own selectivity problem to the pad oxide underneath
+  its own selectivity problem to the oxide underneath
   ({ref}`category-etch`).
 
 ## Machines typically used
