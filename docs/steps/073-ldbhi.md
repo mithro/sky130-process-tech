@@ -66,7 +66,7 @@ programmed cell's threshold and an erased cell's leakage both depend on
 how the pocket doping and the tip meet under the gate edge, and on how
 much the anneal moves the boron. The reverse short-channel effect —
 threshold rising at short lengths through boron pile-up near the
-junctions[^lu-1989][^rafferty-1993][^machala-1997] — is present here as
+junctions[^lu-1989-rsce][^rafferty-1993][^machala-1997] — is present here as
 in logic and is absorbed into the cell's threshold targets.
 
 Without `LDBHI`, the memory transistor would have to rely on its
@@ -103,8 +103,9 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   diffusion of the boron itself during the anneal,[^eaglesham-1994]
   which is why a fast, hot {ref}`TIPRTAD <step-075>` matters as much
   here as for the logic halo.[^stolk-1997][^agarwal-1999]
-* **Charge control and cooling.** Electron shower and cooled
-  electrostatic chuck.[^skw-01]
+* **Charge control and cooling.** Electron shower and electrostatic
+  chuck ("ESC chuck, E shower" on SkyWater's medium-current
+  tool);[^skw-01] platen cooling is industry practice.
 * **Monitoring.** Thermal-wave measurement and tilt-angle
   calibration.[^smith-1985]
 
@@ -124,9 +125,9 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   0-60 deg tilt".[^skw-01] Boron and BF₂, the halo dose window and a
   tilt range to 60°. Strength: **strong** for the tool; **inference**
   for the assignment to `LDBHI`, as for {ref}`BHI <step-066>`.
-* **Axcelis GSD**[^skw-01] — a batch tool with fixed disk tilt;
-  possible, less natural. Strength: strong for existence; weak for
-  assignment.
+* **Axcelis GSD high-current implanters**[^skw-01] — batch tools listed
+  with "tilt/twist" capability; possible, less natural for a low-dose
+  halo. Strength: strong for existence; weak for assignment.
 
 ## Resources required
 
@@ -190,7 +191,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 * Taur, Wann and Frank (IBM), IEDM 1998 — super-halo design: pockets
   at the channel ends, light doping in between.[^taur-1998]
 * Lu and Sung, *IEEE EDL* 1989 — the reverse short-channel
-  effect.[^lu-1989]
+  effect.[^lu-1989-rsce]
 * Rafferty et al. (AT&T), IEDM 1993 — its explanation by defect
   gradients.[^rafferty-1993]
 * Machala et al. (TI), SISPAD 1997 — boron segregation and TED in the
@@ -288,7 +289,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 [^taur-1998]: Y. Taur, C. H. Wann and D. J. Frank, "25 nm CMOS design
     considerations", *IEDM 1998 Technical Digest*, pp. 789–792.
     <https://doi.org/10.1109/IEDM.1998.746474>
-[^lu-1989]: C.-Y. Lu and J. M. Sung, "Reverse short-channel effects on
+[^lu-1989-rsce]: C.-Y. Lu and J. M. Sung, "Reverse short-channel effects on
     threshold voltage in submicrometer salicide devices", *IEEE
     Electron Device Letters* **10**(10), 446–448 (1989).
     <https://doi.org/10.1109/55.43095>

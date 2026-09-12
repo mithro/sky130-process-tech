@@ -22,7 +22,7 @@ region reaches *under* the edge of the polysilicon gate rather than
 stopping at it. After {ref}`TIPRTAD <step-075>` the result is a lightly
 doped, graded n⁻ region overlapped by the gate on both sides of the
 channel: the *large-angle-tilt implanted drain* (LATID) of
-Hori,[^hori-1989][^hori-1992] the modern descendant of the lightly
+Hori,[^hori-1989-latid][^hori-1992] the modern descendant of the lightly
 doped drain.[^ogura-1980]
 
 The step code says arsenic; the PDK confirms that its N-tip species is
@@ -48,7 +48,7 @@ At 5.5 V on the drain, an abrupt, heavily doped tip of the
 {ref}`ASTI <step-065>` kind would concentrate the lateral field at the
 gate edge and inject hot electrons into the gate oxide — the
 degradation mechanism Hu and co-workers modelled, monitored and showed
-how to reduce by drain engineering.[^hu-1985] The LDD spreads the
+how to reduce by drain engineering.[^hu-1985-hci] The LDD spreads the
 field over a lightly doped region;[^ogura-1980][^ogura-1981] Takeda's
 group compared drain structures for minimum hot-carrier
 generation;[^takeda-1982] and Hori's LATID improved on the LDD by
@@ -108,8 +108,9 @@ fab (SKY130's energy and dose are not public):
   short shadow; the PDK's 0.02 µm "Photoresist tilted implant
   penetration"[^pdk-03] allows for ions that pass through the resist
   edge. Outgassing and charging are reduced with a thin
-  film,[^lee-1996] but the platen is still cooled and an electron
-  shower used.[^skw-01]
+  film,[^lee-1996] but an electron shower and electrostatic chuck ("ESC
+  chuck, E shower" on SkyWater's medium-current tool) are still
+  used;[^skw-01] platen cooling is industry practice.
 * **Anneal.** None here; activation at {ref}`TIPRTAD <step-075>`.
 * **Monitoring.** Thermal-wave measurement on monitor
   wafers;[^smith-1985] tilt-angle verification is the specific control
@@ -132,11 +133,11 @@ fab (SKY130's energy and dose are not public):
   dose, and a tilt range that reaches 60° — the published 40° HV tip
   angle[^pdk-03] fits inside it. Strength: **strong** for the tool and
   its tilt range; **medium** for the assignment, because it is the only
-  listed tool whose stated tilt range covers 40°.
-* **Axcelis GSD** ("B11, BF2, P, As, 10-3000kev, 1e11 to
-  5e15")[^skw-01] — a batch tool with a fixed-tilt spinning disk;
-  possible only if configured for a large tilt. Strength: strong for
-  existence; weak for assignment.
+  listed tool with a *stated* tilt range, and that range covers 40°.
+* **Axcelis GSD high-current implanters** ("10-3000kev, 1e11 to 5e15,
+  tilt/twist" and "2-180kev, 5e12 to 5e16, tilt/twist")[^skw-01] —
+  batch tools listed with tilt and twist capability but with no stated
+  tilt range. Strength: strong for existence; weak for assignment.
 
 ## Resources required
 
@@ -198,7 +199,7 @@ fab (SKY130's energy and dose are not public):
 
 ### Deep dive
 
-* Hori (Matsushita), IEDM 1989 — the LATID transistor.[^hori-1989]
+* Hori (Matsushita), IEDM 1989 — the LATID transistor.[^hori-1989-latid]
 * Hori et al. (Matsushita), *IEEE TED* 1992 — LATID technology in
   full: tilt, dose, overlap and reliability.[^hori-1992]
 * Ogura et al. (IBM), *IEEE TED* 1980 — the LDD.[^ogura-1980]
@@ -207,7 +208,7 @@ fab (SKY130's energy and dose are not public):
 * Takeda et al. (Hitachi), *IEEE TED* 1982 — drain structures for
   minimum hot-carrier generation.[^takeda-1982]
 * Hu et al. (Berkeley), *IEEE TED* 1985 — the hot-electron lifetime
-  model.[^hu-1985]
+  model.[^hu-1985-hci]
 * Rafí and Campabadal, *Solid-State Electronics* 2001 — LDD versus
   LATID hot-carrier degradation.[^rafi-2001]
 * King, Lacoe and Wang-Ratkovic, IRPS 2000 — spacer oxide and
@@ -277,7 +278,7 @@ fab (SKY130's energy and dose are not public):
     technologies for ULSI", *Materials Science and Engineering: R*
     **24**(1–2), 1–80 (1998).
     <https://doi.org/10.1016/S0927-796X(98)00013-8>
-[^hori-1989]: T. Hori, "1/4-μm LATID (LArge-Tilt-angle Implanted
+[^hori-1989-latid]: T. Hori, "1/4-μm LATID (LArge-Tilt-angle Implanted
     Drain) technology for 3.3-V operation", *IEDM 1989 Technical
     Digest*, pp. 777–780. <https://doi.org/10.1109/IEDM.1989.74169>
 [^hori-1992]: T. Hori, J. Hirase, Y. Odake and T. Yasui,
@@ -297,7 +298,7 @@ fab (SKY130's energy and dose are not public):
     "Submicrometer MOSFET structure for minimizing hot-carrier
     generation", *IEEE Transactions on Electron Devices* **29**(4),
     611–618 (1982). <https://doi.org/10.1109/T-ED.1982.20752>
-[^hu-1985]: C. Hu, S. C. Tam, F.-C. Hsu, P.-K. Ko, T.-Y. Chan and K. W.
+[^hu-1985-hci]: C. Hu, S. C. Tam, F.-C. Hsu, P.-K. Ko, T.-Y. Chan and K. W.
     Terrill, "Hot-electron-induced MOSFET degradation — Model, monitor,
     and improvement", *IEEE Transactions on Electron Devices* **32**(2),
     375–385 (1985). <https://doi.org/10.1109/T-ED.1985.21952>

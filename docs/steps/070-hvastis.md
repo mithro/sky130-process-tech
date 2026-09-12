@@ -22,9 +22,9 @@ Two things distinguish it from {ref}`ASTIS <step-067>`. The resist is
 thin — the PDK's "Photoresist thickness for HV Tip Implants" is
 0.3 µm, against 1.14 µm for the standard resist[^pdk-03] — and the
 implant it has absorbed is, we infer from the LDD-type dose of the
-step, an order of magnitude lighter than the 1.8 V tip (of order
-10¹³ cm⁻², typical of an LDD,[^txt-04] against 10¹⁴–10¹⁵ cm⁻²). The
-crust is correspondingly thinner and the strip easier. On the other
+step, one to two orders of magnitude lighter than the 1.8 V tip (of
+order 10¹³ cm⁻², typical of an LDD,[^txt-04] against 10¹⁴–10¹⁵ cm⁻²).
+The crust is correspondingly thinner and the strip easier. On the other
 hand the ions arrived at 40°,[^pdk-03] so the resist sidewalls facing
 the beam have been implanted along their whole height, and the PDK's
 0.02 µm "Photoresist tilted implant penetration"[^pdk-03] means the

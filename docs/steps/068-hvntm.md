@@ -68,12 +68,12 @@ A 5 V NMOS cannot use the 1.8 V tip. The extension of
 current at 0.15 µm; at 5.5 V on the drain such a junction would put the
 peak lateral field at the gate edge and generate hot carriers at a rate
 that destroys the device in hours — the degradation Hu and co-workers
-modelled and showed how to monitor.[^hu-1985] The classical remedies
+modelled and showed how to monitor.[^hu-1985-hci] The classical remedies
 are the lightly doped drain,[^ogura-1980] the double-diffused
 drain[^takeda-1982] and, most relevant here, the *large-angle-tilt
 implanted drain* (LATID) of Hori, in which a tilted n⁻ implant is
 driven under the gate edge so that the drain field is graded and
-overlapped by the gate;[^hori-1989][^hori-1992] Rafí and Campabadal
+overlapped by the gate;[^hori-1989-latid][^hori-1992] Rafí and Campabadal
 compared the hot-carrier behaviour of LDD and LATID
 devices directly.[^rafi-2001] The PDK's 40° HV tip angle[^pdk-03] is
 the signature of exactly this kind of drain, so we infer that the 5 V
@@ -208,11 +208,11 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 ### Deep dive
 
 * Hori (Matsushita), IEDM 1989 — the quarter-micron LATID transistor
-  for 3.3 V operation.[^hori-1989]
+  for 3.3 V operation.[^hori-1989-latid]
 * Hori et al. (Matsushita), *IEEE TED* 1992 — the full account of
   large-angle-tilt implanted drain technology.[^hori-1992]
 * Hu et al. (Berkeley), *IEEE TED* 1985 — the hot-electron degradation
-  model that sets the lifetime target.[^hu-1985]
+  model that sets the lifetime target.[^hu-1985-hci]
 * Takeda et al. (Hitachi), *IEEE TED* 1982 — drain structures for
   minimising hot-carrier generation.[^takeda-1982]
 * Ogura et al. (IBM), *IEEE TED* 1980 — the lightly doped
@@ -295,14 +295,14 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
-[^hori-1989]: T. Hori, "1/4-μm LATID (LArge-Tilt-angle Implanted
+[^hori-1989-latid]: T. Hori, "1/4-μm LATID (LArge-Tilt-angle Implanted
     Drain) technology for 3.3-V operation", *IEDM 1989 Technical
     Digest*, pp. 777–780. <https://doi.org/10.1109/IEDM.1989.74169>
 [^hori-1992]: T. Hori, J. Hirase, Y. Odake and T. Yasui,
     "Deep-submicrometer large-angle-tilt implanted drain (LATID)
     technology", *IEEE Transactions on Electron Devices* **39**(10),
     2312–2324 (1992). <https://doi.org/10.1109/16.158803>
-[^hu-1985]: C. Hu, S. C. Tam, F.-C. Hsu, P.-K. Ko, T.-Y. Chan and K. W.
+[^hu-1985-hci]: C. Hu, S. C. Tam, F.-C. Hsu, P.-K. Ko, T.-Y. Chan and K. W.
     Terrill, "Hot-electron-induced MOSFET degradation — Model, monitor,
     and improvement", *IEEE Transactions on Electron Devices* **32**(2),
     375–385 (1985). <https://doi.org/10.1109/T-ED.1985.21952>
