@@ -1,10 +1,6 @@
 (step-055)=
 # Step 055 — URPM: Ultra-high resistor poly mask
 
-:::{warning}
-This page is a stub. Content has not yet been researched and reviewed.
-:::
-
 | | |
 |---|---|
 | **Step number** | 55 of 171 |
@@ -16,50 +12,305 @@ This page is a stub. Content has not yet been researched and reviewed.
 
 ## What this step is
 
-*To be written.*
+`URPM` opens resist windows over the bodies of the *ultra-high*
+sheet-resistance poly resistors so that they can receive their own
+implant, {ref}`UPRI <step-056>`. Everything else — the n⁺ gate film and
+the 300 Ω/sq resistor bodies doped at {ref}`PRI <step-053>` — stays
+under resist. The resist is stripped at {ref}`UPRIS <step-057>`.
+
+The device it serves is public. The PDK lists "P− poly precision
+resistors" (`res_xhigh_po`) with the same five fixed widths and layout
+footprints as the 300 Ω/sq family, and states that "a separate implant
+is used to set the sheet resistance to 2000 ohm/sq"; at the time the
+documentation was written their electrical and e-test specifications
+were "still TBD, once sufficient silicon has been evaluated".[^pdk-07]
+The extraction table lists the "UHR poly resistor" at 2000 Ω/sq.[^pdk-08]
+The drawn layer is `urpm` (GDS 79:20, "2000 ohms/square polysilicon
+resistor implant").[^pdk-06] The resistor is one of the process's
+advertised features: the repository README lists a "high sheet rho
+poly resistor",[^pdk-10] the *Background* page lists "Poly resistor
+(`r`)" among the technology-stack options,[^pdk-02] and Edwards's
+WOSET paper describes the options as including "high and ultra-high
+sheet ρ resistors".[^ann-15]
+
+Like {ref}`RRPM <step-052>`, `URPM` is not in the PDK's public mask
+table, which lists only `RPM` among the resistor masks.[^pdk-05] We
+infer that the reticle is generated from `urpm` in the window
+(dark-field) tone, and that its geometry follows the `rpm` rules,
+because the P− resistors share the P+ layout footprints.[^pdk-07]
 
 ## Step category
 
-*To be written.*
+`URPM` is a {ref}`Photolithography (mask step) <category-lithography>`
+step of the *implant-block* type, printed on the doped gate film with
+relaxed geometry (the `rpm` minimum width is 1.270 µm and spacing
+0.840 µm[^pdk-periph]). Its special feature is the sensitivity of what
+lies beneath the windows: the 2000 Ω/sq film is the highest-resistance
+and therefore most lightly doped conductor in the process, and any
+lithographic error that lets the implant stray — or the window
+mis-size — shows up directly as resistor value and matching error.
 
 ## Why this step exists
 
-*To be written.*
+A 2000 Ω/sq film lets a designer build resistors of hundreds of
+kilohms to megohms in a few square micrometres, which is what bias
+networks, reference ladders, RC filters and the load devices of
+low-power analogue blocks need. It cannot be made from the 300 Ω/sq
+film simply by drawing it longer: area, parasitic capacitance to the
+substrate and matching all scale badly. It also cannot be made by
+under-dosing the 300 Ω/sq implant on the same mask, because the two
+values differ by a factor of seven in sheet resistance and, on Seto's
+model, sit on different parts of the steep resistance-versus-doping
+curve,[^seto-1975] so they need separate, individually controlled
+doses.
+
+The price of a lightly doped poly resistor is variability. Its
+resistance is dominated by grain-boundary barriers, so it is sensitive
+to grain size, to the exact dose and to anything that changes the trap
+density; Tsang et al. document resistance variation across banks of
+high-value poly resistors and trace it to layout and process
+edges,[^tsang-2014] and Wright et al. discuss what it takes to make
+high-sheet-resistance films with a low temperature
+coefficient.[^wright-2010] The PDK's own caution that the P− resistor
+specifications were "TBD" until enough silicon had been
+measured[^pdk-07] is the practical face of the same physics. `URPM`
+is where the process gives this device its own, separately
+optimisable implant window.
 
 ## How it is typically performed
 
-*To be written.*
+An industry-generic implant-mask litho sequence for a 200 mm, 130 nm-era
+fab, as on {ref}`RRPM <step-052>`:
+
+1. **Surface preparation.** HMDS prime; the surface is the doped
+   a-Si film with the chemical oxide left by {ref}`PRIS <step-054>`.
+2. **Resist coat.** i-line positive resist of about 1 µm (the PDK's
+   general figure is 1.14 µm[^pdk-03]); the implant it blocks is a
+   light, low-energy poly implant.
+3. **Exposure.** i-line stepper, dark-field reticle with clear windows
+   over the `urpm` bodies. The i-line assignment is inferred from the
+   relaxed geometry (category page[^wiki-litho]); no SkyWater statement
+   assigns layers to tools.
+4. **Alignment.** To the STI/active marks of {ref}`FOM <step-004>`,
+   like the other two resistor masks; the resistor body will later be
+   cut from the poly by {ref}`P1M <step-061>`, so the window must
+   enclose the drawn body with overlay margin on every side.
+5. **Post-exposure bake, develop** (TMAH[^wiki-tmah]), rinse, hard
+   bake.
+6. **Inspection.** Overlay to active; window presence by optical
+   inspection.
+
+**Interaction with the other resistor masks.** If the `urpm` bodies
+were covered at {ref}`RPM <step-049>` (no gate implant) and *not*
+opened at {ref}`RRPM <step-052>` (no 300 Ω/sq implant), then
+{ref}`UPRI <step-056>` is the only implant they receive and its dose
+alone sets 2000 Ω/sq. If instead they were opened at `RRPM`, `UPRI`
+would have to be a *counter*-doping or a very small additional dose,
+which is implausible for a resistance seven times higher. The first
+reading is used throughout these pages and is marked as an inference.
 
 ## Machines typically used
 
-*To be written.*
+* **i-line stepper**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
+  Canon FPA-3000i), or a KrF tool (category page).
+* **Coat/develop track**; **overlay metrology**.
 
 ## Machines likely used at SkyWater
 
-*To be written.*
+* **ASML i-line stepper or scanner.**[^skw-01] Strength: strong for
+  the tools; **inference** for the layer assignment.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius.**[^skw-01]
+  Strength: strong.
+* **Overlay — KLA 5200/5300/Archer.**[^skw-01] Strength: strong.
 
 ## Resources required
 
-*To be written.*
+* **i-line positive photoresist**[^wiki-dnq] from the suppliers named
+  in SkyWater's S-1 (Dow, JSR, Tokyo Ohka Kogyo).[^sec-01]
+* **HMDS**, **edge-bead remover**, **developer** (TMAH[^wiki-tmah]),
+  DI water, nitrogen.
+* **The URPM reticle** — chrome-on-quartz,[^wiki-mask] relaxed
+  geometry, derived from `urpm`.
 
 ## Related steps and cross-references
 
-*To be written.*
+* Previous: {ref}`PRIS <step-054>`. Next: {ref}`UPRI <step-056>`
+  (the implant); strip at {ref}`UPRIS <step-057>`.
+* The other resistor masks: {ref}`RPM <step-049>` (protect) and
+  {ref}`RRPM <step-052>` (reverse, for the 300 Ω/sq flavour).
+* Resistor bodies cut at {ref}`P1ME <step-062>`; contacted through
+  {ref}`NPCM <step-078>` and {ref}`LICM1 <step-093>`.
+* Previous mask step: {ref}`RRPM <step-052>`; next mask step:
+  {ref}`P1M <step-061>`.
+* Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
 
 ### Cross-check
 
-*To be written.*
+* SkyWater PDK, *Device Details* — P− poly precision resistors,
+  2000 Ω/sq, "a separate implant", specifications "TBD".[^pdk-07]
+* SkyWater PDK, *Parasitic Layout Extraction* — UHR poly 2000 Ω/sq.[^pdk-08]
+* SkyWater PDK, *Layers Reference* — `urpm` 79:20.[^pdk-06]
+* SkyWater PDK, *Masks* page — no ultra-high resistor mask
+  listed.[^pdk-05]
+* SkyWater PDK, *Background* — "Poly resistor (`r`)" option.[^pdk-02]
+* SkyWater PDK, repository README — "high sheet rho poly
+  resistor".[^pdk-10]
+* Edwards (Efabless), WOSET 2020 — "high and ultra-high sheet ρ
+  resistors".[^ann-15]
+* SkyWater PDK, *Periphery rules* — `rpm` geometry.[^pdk-periph]
+* SkyWater PDK, *Criteria & Assumptions* — photoresist thickness.[^pdk-03]
+* SkyWater, *Facilities & Capabilities* — litho tools.[^skw-01]
+* SkyWater, Form S-1 — resist suppliers.[^sec-01]
 
 ### High-level understanding
 
-*To be written.*
+* Wikipedia, *Photolithography*, *Photomask*, *Diazonaphthoquinone*,
+  *Tetramethylammonium hydroxide*.[^wiki-litho][^wiki-mask][^wiki-dnq][^wiki-tmah]
+* Wikipedia, *Sheet resistance*.[^wiki-rs]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+  lithography.[^txt-02]
+* Kamins, *Polycrystalline Silicon for Integrated Circuits and
+  Displays* — lightly doped poly.[^kamins-1998]
 
 ### Deep dive
 
-*To be written.*
+* Seto, *J. Appl. Phys.* 1975 — the model that puts 300 and
+  2000 Ω/sq on different parts of the same curve.[^seto-1975]
+* Tsang et al., *IEEE TSM* 2014 — resistance variation across
+  high-value poly resistor banks.[^tsang-2014]
+* Wright et al., *J. Vac. Sci. Technol. B* 2010 — high-sheet-resistance,
+  low-TCR resistor films.[^wright-2010]
+* Lu, Gerzberg, Lu and Meindl, *IEEE TED* 1981 — poly resistor
+  optimisation.[^lu-1981]
+* Lu, Gerzberg and Meindl, *IEEE TED* 1982 — scaling limits of
+  high-value poly resistors.[^lu-1982]
+* Kato and Ono, *Jpn. J. Appl. Phys.* 1996 — temperature-coefficient
+  changes in poly resistors.[^kato-1996]
+* Upreti and Singh, *Bull. Mater. Sci.* 1991 — grain-boundary effects
+  in boron-doped poly.[^upreti-1991]
+* Chen et al., *Solid-State Electronics* 2000 — voltage coefficient of
+  poly resistors, largest for the lightest doping.[^chen-2000]
+* Hook et al., *IEEE TED* 2003 — straggle at resist edges.[^hook-2003]
+* Buffat and Adams (Zilog), US 6,576,405 — implant-mask lithography
+  design space.[^pat-resist-zilog]
+* Bossung, SPIE 1977 — the exposure–focus process window.[^bossung-1977]
+* Levinson, *Principles of Lithography* — resist processing and
+  overlay.[^levinson-2005]
+* ITRS 2001, *Lithography* — tool classes by layer.[^itrs-03]
 
 ## Open questions
 
-*To be written.*
+* Whether `URPM` is a separate reticle from `RRPM`, or whether the
+  step list's two names reflect one reticle with two implant recipes,
+  is not public; the PDK's "separate implant" and two drawn layers
+  support two reticles.
+* Whether the `urpm` bodies receive only {ref}`UPRI <step-056>` (the
+  reading used here) is inferred.
+* Whether the ultra-high resistor is a process option in the sense of
+  the *Background* page's `r` suffix — i.e. whether this mask is
+  skipped on some product flows — is not stated.
+* Reticle tone, resist and exposure tool are inferred.
+
+<!-- footnotes -->
+
+[^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
+    documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+[^pdk-08]: SkyWater PDK Authors, *Parasitic Layout Extraction* page
+    (sheet-resistance table), SkyWater SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
+[^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
+    `gds_layers.csv`, SkyWater SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
+[^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
+    <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
+[^pdk-02]: SkyWater PDK Authors, *Background*, SkyWater SKY130 PDK
+    documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/background.html>
+[^pdk-10]: SkyWater PDK Authors, *google/skywater-pdk* repository
+    README. <https://github.com/google/skywater-pdk>
+[^ann-15]: R. T. Edwards (Efabless), "Google/SkyWater and the Promise of
+    the Open PDK", *Workshop on Open-Source EDA Technology (WOSET)
+    2020*. <https://woset-workshop.github.io/PDFs/2020/a03.pdf>
+[^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
+    PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
+    statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^wiki-litho]: Wikipedia, *Photolithography*.
+    <https://en.wikipedia.org/wiki/Photolithography>
+[^wiki-mask]: Wikipedia, *Photomask*.
+    <https://en.wikipedia.org/wiki/Photomask>
+[^wiki-dnq]: Wikipedia, *Diazonaphthoquinone*.
+    <https://en.wikipedia.org/wiki/Diazonaphthoquinone>
+[^wiki-tmah]: Wikipedia, *Tetramethylammonium hydroxide*.
+    <https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>
+[^wiki-rs]: Wikipedia, *Sheet resistance*.
+    <https://en.wikipedia.org/wiki/Sheet_resistance>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+    ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^kamins-1998]: T. Kamins, *Polycrystalline Silicon for Integrated
+    Circuits and Displays*, 2nd ed., Kluwer Academic, 1998.
+    <https://doi.org/10.1007/978-1-4615-5577-3>
+[^seto-1975]: J. Y. W. Seto, "The electrical properties of
+    polycrystalline silicon films", *Journal of Applied Physics*
+    **46**(12), 5247–5254 (1975). <https://doi.org/10.1063/1.321593>
+[^tsang-2014]: Y. Tsang, R. Shiono, G. Pfeffer and S. Kwan,
+    "Characterization and Understanding of High Valued Polysilicon
+    Resistor Resistance Variation Across a Resistor Bank With Parallel
+    Resistor Fingers", *IEEE Transactions on Semiconductor
+    Manufacturing* **27**(2), 294–300 (2014).
+    <https://doi.org/10.1109/TSM.2014.2311375>
+[^wright-2010]: S. W. Wright, C. P. Judge, M. J. Lee, D. F. Bowers,
+    M. Dunbar and C. D. Wilson, "High sheet resistance, low temperature
+    coefficient of resistance resistor films for integrated circuits",
+    *Journal of Vacuum Science & Technology B* **28**(4), 834–840
+    (2010). <https://doi.org/10.1116/1.3466531>
+[^lu-1981]: N. C.-C. Lu, L. Gerzberg, C.-Y. Lu and J. D. Meindl,
+    "Modeling and optimization of monolithic polycrystalline silicon
+    resistors", *IEEE Transactions on Electron Devices* **28**(7),
+    818–830 (1981). <https://doi.org/10.1109/T-ED.1981.20437>
+[^lu-1982]: N. C.-C. Lu, L. Gerzberg and J. D. Meindl, "Scaling
+    limitations of monolithic polycrystalline-silicon resistors in VLSI
+    static RAM's and logic", *IEEE Transactions on Electron Devices*
+    **29**(4), 682–690 (1982). <https://doi.org/10.1109/T-ED.1982.20762>
+[^kato-1996]: K. Kato and T. Ono, "Change in Temperature Coefficient of
+    Resistance of Heavily Doped Polysilicon Resistors Caused by
+    Electrical Trimming", *Japanese Journal of Applied Physics*
+    **35**(8R), 4209 (1996). <https://doi.org/10.1143/JJAP.35.4209>
+[^upreti-1991]: N. K. Upreti and S. Singh, "Grain boundary effect on
+    the electrical properties of boron-doped polysilicon films",
+    *Bulletin of Materials Science* **14**(6), 1331–1341 (1991).
+    <https://doi.org/10.1007/BF02823239>
+[^chen-2000]: C.-H. Chen, Y.-K. Fang, M.-H. Kuo, Y.-L. Hsu and
+    S.-L. Hsu, "A DC current stress method to improve the voltage
+    coefficient of resistance of the polysilicon resistor in high
+    voltage CMOS technology", *Solid-State Electronics* **44**(10),
+    1743–1746 (2000). <https://doi.org/10.1016/S0038-1101(00)00138-6>
+[^hook-2003]: T. B. Hook, J. Brown, P. Cottrell, E. Adler, D. Hoyniak,
+    J. Johnson and R. Mann, "Lateral Ion Implant Straggle and Mask
+    Proximity Effect", *IEEE Transactions on Electron Devices*
+    **50**(9), 1946–1951 (2003).
+    <https://doi.org/10.1109/TED.2003.815371>; open copy
+    <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>
+[^pat-resist-zilog]: S. J. Buffat and J. L. Adams (Zilog), *High aspect
+    ratio photolithographic method for high energy implantation*,
+    US 6,576,405 B1, granted 2003-06-10.
+    <https://patents.google.com/patent/US6576405B1/en>
+[^bossung-1977]: J. W. Bossung, "Projection Printing Characterization",
+    *Proc. SPIE* **100**, 80–85 (1977).
+    <https://doi.org/10.1117/12.955357>
+[^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
+    SPIE Press, 2005. <https://doi.org/10.1117/3.601520>
+[^itrs-03]: International Technology Roadmap for Semiconductors, *2001
+    Edition: Lithography*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
