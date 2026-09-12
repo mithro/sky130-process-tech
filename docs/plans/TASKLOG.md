@@ -36,7 +36,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 076–088: spacers, source/drain, S/D RTA — reviewed and merged 2026-09-12
 - [x] Steps 089–106: PSG, contact silicide, local interconnect — reviewed and merged 2026-09-12
 - [~] Steps 107–117: contact, metal 1 (branch `steps/107-117`; reviewed 2026-09-12, fixes in progress)
-- [ ] Steps 118–134: via 1–2, metal 2–3 (part)
+- [~] Steps 118–134: via 1, metal 2, via 2 (branch `steps/118-134`)
 - [ ] Steps 135–163: MiM caps, metal 3–5, vias 3–4
 - [ ] Steps 164–171: passivation, pad, alloy, test
 
