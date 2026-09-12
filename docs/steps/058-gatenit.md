@@ -18,8 +18,8 @@ gate poly. Together with the oxide cap that follows
 0.18 µm poly,[^pdk-03] nitride, oxide — that is patterned at
 {ref}`P1M <step-061>` and etched at {ref}`P1ME <step-062>`. The
 thickness, deposition method and precise purpose of the nitride are
-not public; what follows is a reading of the step list used in this
-reference against the PDK's public rules.
+not public; what follows is our inference from the PDK's public
+rules.
 
 The most informative public fact is what happens to this film later.
 The PDK's mask table lists a "Nitride Poly Cut, NPCM" mask,[^pdk-05]
