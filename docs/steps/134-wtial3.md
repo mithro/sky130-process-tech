@@ -36,7 +36,11 @@ report for a 64 K nvSRAM family on "S8TNV-5R" technology gives
 S8DI technology, "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A TiW", a
 22 050 Å (2.2 µm) stack with a TiW rather than a Ti bottom layer, and
 notes that the S8P change excluded "top metal layers".[^cyp-qtp-123907]
-The PDK matches both in its own way. Its stack diagram labels `met3`
+Both reports describe three-metal processes — S8TNV-5R ("3
+Metal")[^cyp-qtp-113005] and S8DI ("1P3M")[^cyp-qtp-123907] — in
+which metal 3 is the top metal; applying their metal-3 descriptions to
+SKY130's intermediate metal 3, under two further metals, is our
+inference. The PDK matches both in its own way. Its stack diagram labels `met3`
 0.845 µm[^pdk-04] and its extraction tables give metals 3 and 4
 47 mΩ/sq against 125 mΩ/sq for metals 1 and 2;[^pdk-08] 0.8 µm of
 aluminium alloy at 47 mΩ/sq implies a resistivity of about
@@ -50,8 +54,10 @@ matching "Via 2-S8TM" of 0.8 µm;[^pdk-03] and its mask table lists
 the `MM3` mask three times, flagging only the PLM variant for
 SKY130.[^pdk-05] On our reading, then, the flow described here
 deposits a metal 3 of about 0.8 µm, and a 2 µm "S8TM" thick-metal
-option exists whose via 2, metal 3 and, per the 2014 report, bottom
-layer all differ. The metal-3 rules are coarser than the levels
+option exists whose via 2 and metal 3 differ; whether its bottom layer
+matches the TiW-bottomed top metal of the 2014 S8DI report — a
+different technology — is not public, and any such match would be an
+inference. The metal-3 rules are coarser than the levels
 below: 0.300 µm width and space (m3.1, m3.2), 0.240 µm² minimum area
 (m3.6), and 0.065 µm enclosure of via 2 (m3.4).[^pdk-periph]
 
@@ -76,9 +82,9 @@ of the *PVD, multi-layer metal* class; {ref}`TIAL6 <step-112>` sets
 out the sputtering of Ti, Al–Cu and Ti:W films and the reasons for
 each layer, and {ref}`TIAL12 <step-123>` what a via level adds. What
 is specific to this instance is thickness. Sputtering 0.72 µm of
-aluminium alloy — or 2.1 µm in the thick-metal option — takes several
-times longer than the 0.32 µm of the lower levels, heats the wafer
-more, grows larger grains, and stores more stress; the film's
+aluminium alloy takes more than twice as long as the 0.32 µm of the
+lower levels (and a 2 µm thick-metal option[^pdk-03] longer still),
+heats the wafer more, grows larger grains, and stores more stress; the film's
 hillocks, its wafer bow and its later etch ({ref}`MM3E <step-140>`)
 all scale with it. And the stack must serve as a capacitor electrode:
 its TiW cap is the surface on which {ref}`CAPILD <step-135>` deposits
@@ -457,9 +463,8 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
     International* **7**(4), 281–286 (1991).
     <https://doi.org/10.1002/qre.4680070414>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
-    documentation, and the `nfet_01v8` cross-section drawing.
-    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
-    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
+    documentation, section "MiM capacitors" (CMIMA 2 fF/µm² nominal).
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
 [^greenwood-2007]: B. B. Greenwood and J. Prasad, "Integrating TiN only
     bottom plate metal-insulator metal capacitor (MIMC) for contamination
     free manufacturing", *2007 International Semiconductor Device
