@@ -23,10 +23,10 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 951
+written page has exactly one entry here; the inventory holds 999
 keyed entries as of 2026-09-12, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10, 8.11 and 8.12 were added to cover the sources the writers of
+8.8, 8.9, 8.10, 8.11, 8.12 and 8.13 were added to cover the sources the writers of
 the step and category pages introduced; a "Label ↔ key" note marks the few
 cases where one source has two keys.
 
@@ -151,7 +151,12 @@ cross-check.
 <https://skywater-pdk.readthedocs.io/en/main/rules.html>. Table of
 contents for the rule chapters (Background, Masks, Criteria &
 Assumptions, Layers, Periphery rules, HV / VHV methodology, Antenna,
-RCX, Device details). Tier: cross-check.
+RCX, Device details). The *Antenna Rules* chapter
+(<https://skywater-pdk.readthedocs.io/en/main/rules/antenna.html>)
+defines the ratio of interconnect area exposed to plasma etch (bottom
+areas of licon, mcon, via and via2; perimeter areas of poly, li and
+met1–met3) to the connected gate area, layer by layer; step 125 cites
+it under this key. Tier: cross-check.
 
 **PDK-PERIPH** — *Periphery rules* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>.
@@ -6877,6 +6882,358 @@ Induced Voids in Aluminum Interconnects During IC Processing", *23rd
 International Reliability Physics Symposium* (1985), pp. 126–137.
 <https://doi.org/10.1109/IRPS.1985.362087> Stress-induced voids in
 aluminium interconnects. Used on step 115. Tier: deep dive.
+
+### 8.13 Via-1, metal-2, via-2 and metal-3-stack module sources
+
+Sources introduced by the writers of the via-1 module (steps 118–122),
+the metal-2 module (steps 123–128) and the via-2 module and metal-3
+stack (steps 129–134) that had no entry above. As in §8.12, each label
+on those pages is the key below in lower case, the citation is the one
+given in the page footnote, and the annotation is taken from the citing
+page's reading list; entries are grouped by the sub-module that first
+cited the source and name every page that uses it. None of these
+sources describes SkyWater or the Bloomington fab.
+
+#### Via 1: mask, etch, liner, tungsten fill and CMP (steps 118–122)
+
+**BUI-1994** — N. D. Bui, V. H. Pham, D. D. Forsythe, R. T. Lee and J.
+T. Yue, "Effect of TiN ARC on Electromigration Performance of Tungsten
+Plug Via", *MRS Proceedings* **338** (1994).
+<https://doi.org/10.1557/PROC-338-471> The anti-reflective TiN cap under
+a tungsten-plug via and its effect on via electromigration. Used on
+steps 119, 120, 130 and 131. Tier: deep dive.
+
+**DOMAE-1998** — S. Domae, H. Masuda, K. Tateiwa, Y. Kato and M.
+Fujimoto, "Stress-induced voiding in stacked tungsten via structure",
+*1998 IEEE International Reliability Physics Symposium Proceedings*, pp.
+318–323. <https://doi.org/10.1109/RELPHY.1998.670663> Stress-induced
+voiding in stacked tungsten-via structures. Used on steps 121 and 132.
+Tier: deep dive.
+
+**GN-1994** — F. H. Gn, L. Liu and M. Guo, "Comparison study between
+tungsten and aluminum plug for submicrometer contact via manufacturing",
+*Proc. SPIE* **2335**, Microelectronic Manufacturing, 98–106 (1994).
+<https://doi.org/10.1117/12.186049> Tungsten versus aluminium plugs for
+submicrometre contacts and vias. Used on step 121. Tier: deep dive.
+
+**GROVER-1998** — G. S. Grover, H. Liang, S. Ganeshkumar and W. Fortino,
+"Effect of slurry viscosity modification on oxide and tungsten CMP",
+*Wear* **214**(1), 10–13 (1998).
+<https://doi.org/10.1016/S0043-1648(97)00219-6> Slurry viscosity and the
+balance of oxide and tungsten removal in CMP. Used on steps 122 and 133.
+Tier: deep dive.
+
+**HU-1993** — C.-K. Hu, M. B. Small and P. S. Ho, "Electromigration in
+Al(Cu) two-level structures: Effect of Cu and kinetics of damage
+formation", *Journal of Applied Physics* **74**(2), 969–978 (1993).
+<https://doi.org/10.1063/1.354839> Electromigration in two-level Al(Cu)
+structures: the effect of copper and the kinetics of damage formation.
+Used on steps 120, 121, 123, 131 and 132. Tier: deep dive.
+
+**IRELAND-1997** — P. J. Ireland, "High aspect ratio contacts: A review
+of the current tungsten plug process", *Thin Solid Films* **304**(1–2),
+1–12 (1997). <https://doi.org/10.1016/S0040-6090(96)09557-0> A review of
+the tungsten-plug process for high-aspect-ratio contacts and vias, liner
+included. Used on steps 120, 121, 131 and 132. Tier: deep dive.
+
+**KAWASAKI-1996** — H. Kawasaki and C.-K. Hu, "An electromigration
+failure model of tungsten plug contacts/vias for realistic lifetime
+prediction", *1996 Symposium on VLSI Technology, Digest of Technical
+Papers*, pp. 192–193. <https://doi.org/10.1109/VLSIT.1996.507848> An
+electromigration failure model for tungsten-plug contacts and vias. Used
+on steps 121, 131 and 132. Tier: deep dive.
+
+**KOBAYAKAWA-1991** — M. Kobayakawa, A. Arimatsu, F. Yokoyama, N.
+Hirashita and T. Ajioka, "A study of outgassing from spin-on-glass films
+used for planarization", *Proc. Eighth International IEEE VLSI
+Multilevel Interconnection Conference (VMIC 1991)*, pp. 454–456.
+<https://doi.org/10.1109/VMIC.1991.153054> Outgassing from spin-on-glass
+planarising films, the mechanism behind via poisoning. Used on steps
+119, 120, 121, 128, 130, 131 and 132. Tier: deep dive.
+
+**KWOK-1990** — T. Kwok, C. Tan, D. Moy, J. J. Estabil, H. S. Rathore
+and S. Basavaiah, "Electromigration in a two-level Al-Cu
+interconnection with W studs", *Proc. Seventh International IEEE VLSI
+Multilevel Interconnection Conference (VMIC 1990)*, pp. 106–112.
+<https://doi.org/10.1109/VMIC.1990.127852> Electromigration in
+two-level Al–Cu wiring with tungsten studs. Used on steps 120, 121,
+123, 131 and 132. Tier: deep dive.
+
+**LE-1996** — H. A. Le, K. Banerjee and J. W. McPherson, "The dependence
+of W-plug via EM performance on via size", *Semiconductor Science and
+Technology* **11**(6), 858–864 (1996).
+<https://doi.org/10.1088/0268-1242/11/6/003> How tungsten-plug via
+electromigration depends on the via size. Used on steps 118, 121, 129
+and 132. Tier: deep dive.
+
+**NGUYEN-2000** — V. H. Nguyen, P. Van Der Velden, R. Daamen, H. Van
+Kranenburg and P. H. Woerlee, "Modelling of dishing for metal chemical
+mechanical polishing", *IEDM 2000 Technical Digest*, pp. 499–502.
+<https://doi.org/10.1109/IEDM.2000.904364> A model of dishing in metal
+CMP. Used on steps 122 and 133. Tier: deep dive.
+
+**PAT-ETCHSTOP-TI** — G. Xing, G. A. Cerny and M. R. Visokay (Texas
+Instruments), *Etchstop for integrated circuits*, US 6,090,697 A, filed
+1998-06-26, granted 2000-07-18.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6090697>
+An etch stop for a fluorine-bearing via etch. Used on steps 119 and 130.
+Tier: deep dive.
+
+**PAT-VIA-POISON-UMC** — K.-L. Wu and H.-B. Lu (United
+Microelectronics Corp.), *Method for preventing poisoned vias and
+trenches*, US 6,013,581 A, filed 1998-10-05, granted 2000-01-11.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6013581>
+Preventing poisoned vias and trenches. Used on steps 119, 121, 130
+and 132. Tier: deep dive.
+
+**PAT-WCVD-AMAT** — M. Chang, C. Leung, D. N. Wang and D. Cheng (Applied
+Materials), *Process for CVD deposition of tungsten layer on
+semiconductor wafer*, US 5,028,565 A, filed 1989-08-25, granted
+1991-07-02.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5028565>
+An early process patent for CVD tungsten deposition on semiconductor
+wafers. Used on steps 121 and 132. Tier: deep dive.
+
+**PETRI-1992** — R. Petri, D. Henry and N. Sadeghi, "Tungsten etching
+mechanisms in low-pressure SF₆ plasma", *Journal of Applied Physics*
+**72**(7), 2644–2651 (1992). <https://doi.org/10.1063/1.351565> Tungsten
+etching mechanisms in fluorine plasmas, the reason a TiW floor is a
+fragile etch stop. Used on steps 119 and 130. Tier: deep dive.
+
+**RANG-1988** — S. Rang, R. Chow, R. H. Wilson, B. Gorowitz and A. G.
+Williams, "Application of selective CVD tungsten for low contact
+resistance via filling to aluminum multilayer interconnection", *Journal
+of Electronic Materials* **17**(3), 213–216 (1988).
+<https://doi.org/10.1007/BF02652180> Selective CVD tungsten via fill to
+aluminium wiring, the alternative to blanket fill. Used on step 121.
+Tier: deep dive.
+
+**ROMERO-1991** — J. D. Romero, M. Khan, H. Fatemi and J. Turlo,
+"Outgassing behavior of spin-on-glass (SOG)", *Journal of Materials
+Research* **6**(9), 1996–2003 (1991).
+<https://doi.org/10.1557/JMR.1991.1996> Outgassing behaviour of
+spin-on-glass films and its link to via poisoning. Used on steps 119,
+120, 130 and 131. Tier: deep dive.
+
+**SAITO-1993** — T. Saito, H. Aoki, T. Tamaru and N. Owada, "Reliability
+improvement in blanket tungsten CVD contact filling process for high
+aspect ratio contact", *31st Annual Proceedings, Reliability Physics
+1993*, pp. 334–339. <https://doi.org/10.1109/RELPHY.1993.283279>
+Reliability of blanket-tungsten CVD filling of high-aspect-ratio
+contacts. Used on steps 121 and 132. Tier: deep dive.
+
+**SHIRATANI-2006** — M. Shiratani and K. Kumazawa, "Low Erosion Tungsten
+CMP Process with High Productivity", *2006 IEEE International Symposium
+on Semiconductor Manufacturing (ISSM)*, pp. 149–151.
+<https://doi.org/10.1109/ISSM.2006.4493046> A low-erosion tungsten CMP
+process. Used on steps 122 and 133. Tier: deep dive.
+
+**UTTECHT-1991** — R. R. Uttecht and R. M. Geffken, "A
+four-level-metal fully planarized interconnect technology for dense
+high performance logic and SRAM applications", *Proc. Eighth
+International IEEE VLSI Multilevel Interconnection Conference (VMIC
+1991)*, pp. 20–26. <https://doi.org/10.1109/VMIC.1991.152961> IBM's
+four-level-metal fully planarised interconnect for dense logic and
+SRAM. Used on steps 121 and 127. Tier: deep dive.
+
+**WALLS-1995** — J. A. Walls, "Stress-voiding in tungsten-plug
+interconnect systems induced by high-temperature processing", *IEEE
+Electron Device Letters* **16**(10), 430–432 (1995).
+<https://doi.org/10.1109/55.464807> Stress voiding in tungsten-plug
+interconnect induced by high-temperature processing. Used on steps 121
+and 132. Tier: deep dive.
+
+**WANG-1996-LINER** — C.-K. Wang, L. M. Liu, D. M. Liao, D. C. Smith and
+M. Danek, "Optimization of PVD Ti/CVD TiN Liner for 0.35 μm Tungsten
+Plug Technology", *MRS Proceedings* **427** (1996).
+<https://doi.org/10.1557/PROC-427-383> Optimising a Ti/TiN liner for a
+0.35 µm tungsten plug. Used on steps 120 and 131. Tier: deep dive.
+
+**WIKI-VIA** — Wikipedia, *Via (electronics)*.
+<https://en.wikipedia.org/wiki/Via_(electronics)> Vias between wiring
+levels, an entry point for the via mask, etch and fill pages. Used on
+steps 118, 119, 121, 129, 130 and 132. Tier: high-level.
+
+#### Metal-2 stack, mask, etch, ILD4, CMP and cap oxide (steps 123–128)
+
+**ABRAHAM-1997** — S. C. Abraham, C. T. Gabriel and J. Zheng,
+"Performance of different etch chemistries on titanium nitride
+antireflective coating layers and related selectivity and microloading
+improvements for submicron geometries obtained with a high-density metal
+etcher", *Journal of Vacuum Science & Technology A* **15**(3), 702–706
+(1997). <https://doi.org/10.1116/1.580805> Etch chemistries, selectivity
+and microloading for a TiN anti-reflective layer on a high-density metal
+etcher. Used on step 125. Tier: deep dive.
+
+**ARMSTRONG-1991** — N. P. Armstrong, "Evaluation of TiW + Al/Cu
+electromigration performance", *Quality and Reliability Engineering
+International* **7**(4), 281–286 (1991).
+<https://doi.org/10.1002/qre.4680070414> Electromigration performance of
+the TiW + Al/Cu system. Used on steps 123 and 134. Tier: deep dive.
+
+**BLECH-1998** — I. A. Blech, "Diffusional back flows during
+electromigration", *Acta Materialia* **46**(11), 3717–3723 (1998).
+<https://doi.org/10.1016/S1359-6454(97)00446-1> Diffusional back-flow
+during electromigration, the mechanism behind the critical length. Used
+on step 123. Tier: deep dive.
+
+**BLECH-HERRING-1976** — I. A. Blech and C. Herring, "Stress generation
+by electromigration", *Applied Physics Letters* **29**(3), 131–133
+(1976). <https://doi.org/10.1063/1.89024> The stress that
+electromigration generates in a line. Used on step 123. Tier: deep dive.
+
+**BURKE-1991** — P. A. Burke, "Semi-empirical modelling of SiO₂
+chemical-mechanical polishing planarization", *Proc. Eighth
+International IEEE VLSI Multilevel Interconnection Conference (VMIC
+1991)*, pp. 379–384. <https://doi.org/10.1109/VMIC.1991.153031> A
+semi-empirical model of oxide CMP planarisation. Used on step 127. Tier:
+deep dive.
+
+**CHEN-1991-TIN** — S. Chen, C. L. Chen and S. Tsou, "Sputtered TiN
+performance as an anti-reflective coating in backend sub-µm i-line
+lithography process", *Proc. Eighth International IEEE VLSI Multilevel
+Interconnection Conference (VMIC 1991)*, pp. 393–395.
+<https://doi.org/10.1109/VMIC.1991.153035> Sputtered TiN as a back-end
+anti-reflective coating for sub-micrometre i-line lithography. Used on
+steps 123 and 124. Tier: deep dive.
+
+**FILIPPI-1993** — R. G. Filippi, G. A. Biery and M. H. Wood, "Evidence
+of the Electromigration Short-Length Effect in Aluminum-Based Metallurgy
+with Tungsten Diffusion Barriers", *MRS Proceedings* **309** (1993).
+<https://doi.org/10.1557/PROC-309-141> The electromigration short-length
+effect in aluminium wiring with tungsten diffusion barriers. Used on
+steps 123 and 134. Tier: deep dive.
+
+**GEORGIOU-1991** — G. E. Georgiou, M. Baker and S. A. Eshraghi, "Effect
+of sputtered TiW deposition conditions on barrier properties for
+submicron metallization", *Proc. Eighth International IEEE VLSI
+Multilevel Interconnection Conference (VMIC 1991)*, pp. 420–422.
+<https://doi.org/10.1109/VMIC.1991.153044> How sputtered-TiW deposition
+conditions set its barrier properties. Used on steps 123 and 134. Tier:
+deep dive.
+
+**HARTSOUGH-1979** — L. D. Hartsough, "Resistivity of bias-sputtered TiW
+films", *Thin Solid Films* **64**(1), 17–23 (1979).
+<https://doi.org/10.1016/0040-6090(79)90536-4> Resistivity of
+bias-sputtered TiW films. Used on steps 123 and 134. Tier: deep dive.
+
+**KAANTA-1991** — C. W. Kaanta, S. G. Bombardier, W. J. Cote, W. R.
+Hill, G. Kerszykowski, H. S. Landis, D. J. Poindexter, C. W. Pollard, G.
+H. Ross, J. G. Ryan, S. Wolff and J. E. Cronin, "Dual Damascene: a ULSI
+wiring technology", *Proc. Eighth International IEEE VLSI Multilevel
+Interconnection Conference (VMIC 1991)*, pp. 144–152.
+<https://doi.org/10.1109/VMIC.1991.152978> IBM's dual-damascene wiring,
+the successor to the planarised aluminium back end. Used on step 127.
+Tier: deep dive.
+
+**KIM-2004-HDP** — S.-Y. Kim, W.-S. Lee and Y.-J. Seo, "Prevention of
+plasma-induced damage during HDP–CVD deposition", *Journal of Materials
+Processing Technology* **147**(2), 211–216 (2004).
+<https://doi.org/10.1016/j.jmatprotec.2003.12.023> Preventing
+plasma-induced damage during HDP-CVD inter-metal dielectric deposition.
+Used on step 126. Tier: deep dive.
+
+**MARTIN-1989** — C. A. Martin and J. W. McPherson, "Via
+electromigration performance of Ti/W/Al-Cu(2%) multilayered
+metallization", *Proc. Sixth International IEEE VLSI Multilevel
+Interconnection Conference (VMIC 1989)*, pp. 168–175.
+<https://doi.org/10.1109/VMIC.1989.78063> Via electromigration in
+Ti/W/Al–Cu multilayer metallisation. Used on steps 123 and 134. Tier:
+deep dive.
+
+**MAY-1991** — J. S. May, "Electromigration Characteristics of Vias in
+Ti:W/Al-Cu (2wt%) Multilayered Metallization", *29th International
+Reliability Physics Symposium (IRPS 1991)*, pp. 91–96.
+<https://doi.org/10.1109/IRPS.1991.363216> Electromigration of vias in
+Ti:W/Al–Cu multilayer metallisation. Used on steps 123 and 134. Tier:
+deep dive.
+
+**NIX-1992** — W. D. Nix and E. Arzt, "On void nucleation and growth in
+metal interconnect lines under electromigration conditions",
+*Metallurgical Transactions A* **23**(7), 2007–2013 (1992).
+<https://doi.org/10.1007/BF02647548> Void nucleation and growth in
+interconnect lines under electromigration. Used on steps 123 and 134.
+Tier: deep dive.
+
+**PAT-DUMMY-TSMC** — W.-C. Chiou and S.-M. Jang (Taiwan Semiconductor
+Manufacturing Co.), *Method for forming dummy structures for improved
+CMP and reduced capacitance*, US 6,849,549 B1, filed 2003-12-04, granted
+2005-02-01.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6849549>
+Dummy structures for CMP planarity with reduced added capacitance. Used
+on step 127. Tier: deep dive.
+
+**PAT-DUMMY-UMC** — M.-S. Yang, Y. Huang, J.-Y. Wu and W. Lur (United
+Microelectronics Corp.), *Method of improving surface planarity of
+chemical-mechanical polishing operation by forming shallow dummy
+pattern*, US 6,214,745 B1, filed 1998-11-19, granted 2001-04-10.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6214745>
+Shallow dummy patterns to improve CMP planarity. Used on step 127. Tier:
+deep dive.
+
+**PAT-TAPER-ATT** — C. N. Bredbenner, T. A. Giniecki, N. Selamoglu and
+H. J. Stocker (AT&T Bell Laboratories), *Method for tapered etching*, US
+4,919,748 A, filed 1989-06-30, granted 1990-04-24.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4919748>
+Tapered aluminium etching with CHF₃ and Cl₂, the pre-planarisation
+alternative to a vertical profile. Used on step 125. Tier: deep dive.
+
+**ROCHE-1996** — G. A. Roche and J. P. McVittie, "Application of Plasma
+Charging Probe to Production HDP CVD Tool", *Proc. 1st International
+Symposium on Plasma Process-Induced Damage (P2ID 1996)*, pp. 71–74.
+<https://doi.org/10.1109/PPID.1996.715205> A plasma charging probe
+applied to a production HDP-CVD tool. Used on step 126. Tier: deep dive.
+
+**STAMPER-1998** — A. K. Stamper, M. B. Fuselier and X. Tian, "Advanced
+wiring RC delay issues for sub-0.25-micron generation CMOS", *Proc. IEEE
+1998 International Interconnect Technology Conference (IITC)*, pp.
+62–64. <https://doi.org/10.1109/IITC.1998.704752> RC-delay issues of
+aluminium wiring at the sub-0.25 µm generation. Used on steps 123, 126
+and 134. Tier: deep dive.
+
+**WIKI-INTERCONNECT** — Wikipedia, *Interconnect (integrated circuits)*.
+<https://en.wikipedia.org/wiki/Interconnect_(integrated_circuits)>
+Integrated-circuit interconnect, an entry point for the metal-stack
+pages. Used on steps 123 and 134. Tier: high-level.
+
+**YOO-1996** — W. S. Yoo and R. Swope, "Intermetal Dielectric Gap Fill
+by Plasma Enhanced Chemical Vapor Deposited Fluorine-Doped Silicon
+Dioxide Films", *Japanese Journal of Applied Physics* **35**(3A), L273
+(1996). <https://doi.org/10.1143/JJAP.35.L273> Inter-metal gap fill by
+PECVD fluorine-doped oxide. Used on step 126. Tier: deep dive.
+
+#### Via 2 and the metal-3 stack (steps 129–134)
+
+**CHU-2001** — S.-F. Chu, K. W. Chew, W. B. Loh, Y. M. Wang, B. G. Onn,
+Y. Ju, J. Zhang and K. Shao, "High quality factor silicon-integrated
+spiral inductors achieved by using thick top metal with different
+passivation schemes", *2001 International Symposium on VLSI Technology,
+Systems, and Applications (VLSI-TSA)*, pp. 154–157.
+<https://doi.org/10.1109/VTSA.2001.934506> Thick top metal for
+high-quality-factor spiral inductors on silicon. Used on step 134. Tier:
+deep dive.
+
+**GREENWOOD-2007** — B. B. Greenwood and J. Prasad, "Integrating TiN
+only bottom plate metal-insulator metal capacitor (MIMC) for
+contamination free manufacturing", *2007 International Semiconductor
+Device Research Symposium (ISDRS)*, pp. 1–2.
+<https://doi.org/10.1109/ISDRS.2007.4422363> A TiN-only bottom plate for
+a MiM capacitor integrated in an aluminium back end. Used on step 134.
+Tier: deep dive.
+
+**LI-2003** — Y. Li, "Reservoir effect and maximum allowed VIA
+misalignment for AlCu interconnect with tungsten VIA plug",
+*Microelectronics Reliability* **43**(9–11), 1449–1454 (2003).
+<https://doi.org/10.1016/S0026-2714(03)00257-9> The reservoir effect and
+the maximum allowed via misalignment for Al–Cu wiring with tungsten
+plugs. Used on step 132. Tier: deep dive.
+
+**ZLATANOVIC-1990** — D. Zlatanović and G. Davinić, "Influence of
+heat-treatment temperature and aluminum thickness on hillocks formation
+in thin aluminum films", *Vacuum* **40**(1–2), 157–159 (1990).
+<https://doi.org/10.1016/0042-207X(90)90144-N> Hillock formation in
+aluminium films versus heat-treatment temperature and film thickness.
+Used on step 134. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
