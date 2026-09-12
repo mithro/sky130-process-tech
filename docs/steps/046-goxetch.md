@@ -116,7 +116,8 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    room-temperature alternatives,[^ohmi-1996] and the handbook edited by
    Reinhardt and Reidy the pre-gate practice.[^reinhardt-2010]
 6. **Queue time.** Straight to the thin oxidation; bare silicon
-   regrows native oxide within hours ({ref}`category-strip`).
+   regrows native oxide within hours (industry practice; Reinhardt and
+   Reidy[^reinhardt-2010]).
 
 ## Machines typically used
 

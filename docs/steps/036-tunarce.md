@@ -87,9 +87,9 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 * **Chamber.** A high-density or medium-density plasma etcher of the
   silicon/poly class, at a few to tens of millitorr with a modest bias
   — the same chamber types used for gate etch. Reactive-ion etching
-  holds the wafer on an RF-driven electrode and accelerates ions
-  "normal to its surface" ({ref}`category-etch`, citing
-  Wikipedia).[^wiki-rie]
+  holds the wafer on an RF-driven electrode; "due to the mostly
+  vertical delivery of reactive ions" the etch is anisotropic
+  ({ref}`category-etch`).[^wiki-rie]
 * **Chemistry.** Oxygen with nitrogen, or oxygen with a hydrogen
   halide such as HBr. Pure O₂ etches organics fast but isotropically;
   adding N₂ or HBr passivates the sidewall so that the ARC opening does
@@ -287,5 +287,5 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
     etchants", *Plasma Chemistry and Plasma Processing* **1**, 317–363
     (1981). <https://doi.org/10.1007/BF00565992>
 [^mack-2007]: C. Mack, *Fundamental Principles of Optical Lithography:
-    The Science of Microfabrication*, Wiley, 2007,
-    ISBN 978-0-470-01893-4. <https://openlibrary.org/isbn/9780470018934>
+    The Science of Microfabrication*, Wiley, 2007, ISBN
+    978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>

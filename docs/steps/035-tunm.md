@@ -364,4 +364,5 @@ pre-oxidation clean are folded into those steps (see the
     J. Johnson and R. Mann, "Lateral Ion Implant Straggle and Mask
     Proximity Effect", *IEEE Transactions on Electron Devices*
     **50**(9), 1946–1951 (2003).
-    <https://doi.org/10.1109/TED.2003.815371>
+    <https://doi.org/10.1109/TED.2003.815371>; open copy
+    <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>

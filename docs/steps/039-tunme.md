@@ -127,7 +127,7 @@ fab (SKY130's recipe is not public):
    by Ohmi.[^ohmi-1996]
 6. **Queue time.** Wafers go to the tunnel oxidation promptly, because
    native oxide and airborne contamination grow on bare silicon within
-   hours ({ref}`category-strip`).
+   hours (industry practice; Reinhardt and Reidy[^reinhardt-2010]).
 
 ## Machines typically used
 
