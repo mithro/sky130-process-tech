@@ -12,27 +12,26 @@
 
 ## What this step is
 
-`PTSI` is the first of two implants made through the tunnel-mask
-windows into the channel region of the SONOS memory transistors. It
-puts a p-type doping peak *below* the surface of the memory channel —
-a "punch-through stop" — to keep the depletion region of the drain from
-reaching the source in a transistor whose gate is only a few tenths of
-a micrometre long and which must withstand several volts on its drain
-and body during programme, erase and inhibit operations. The surface
-doping, which sets the threshold, is left for the next implant,
-{ref}`DEPI <step-038>`.
+`PTSI` is the first of two implants made through the tunnel-mask windows
+into the channel region of the SONOS memory transistors. It puts, we
+infer from the step name and the n-channel cell, a p-type doping peak
+*below* the surface of the memory channel — a "punch-through stop" — to
+keep the depletion region of the drain from reaching the source in a
+transistor whose gate is only a few tenths of a micrometre long and
+which must withstand several volts on its drain and body during
+programme, erase and inhibit operations. The surface doping, which sets
+the threshold, is left for the next implant, {ref}`DEPI <step-038>`.
 
 The wafer at this point carries the {ref}`TUNM <step-035>` resist,
 opened through its ARC at {ref}`TUNARCE <step-036>`, so the implant
-enters only the tunnel windows (`tunm`, GDS 80:20, described by the
-PDK as "SONOS device tunnel implant"[^pdk-06]) and passes through the
-screen oxide there — the pad oxide, we infer — which is 10–20 nm in
-the Cypress embedded-SONOS
-flow.[^pat-04] Everywhere else the resist stops it. The PDK's rule
-that the low-Vt block layer defines "regions to block Vt adjust
-implant for low Vt LV PMOS/NMOS, SONOS FETs and Native
+enters only the tunnel windows (`tunm`, GDS 80:20, described by the PDK
+as "SONOS device tunnel implant"[^pdk-06]) and passes through the screen
+oxide there — the pad oxide, we infer — which is 10–20 nm in the Cypress
+embedded-SONOS flow.[^pat-04] Everywhere else the resist stops it. The
+PDK's rule that the low-Vt block layer defines "regions to block Vt
+adjust implant for low Vt LV PMOS/NMOS, SONOS FETs and Native
 NMOS"[^pdk-periph] shows that the memory transistors do *not* receive
-the standard NMOS channel implants; `PTSI` and `DEPI` are their
+the standard NMOS channel implants; we read `PTSI` and `DEPI` as their
 replacements.
 
 No public source gives the species, energy or dose. We describe the
@@ -41,12 +40,12 @@ Cypress-published analogue and era-typical values below.
 ## Step category
 
 `PTSI` is an {ref}`Ion implantation <category-implant>` step of the
-*channel engineering* class — the same family as
-{ref}`LVTNI <step-015>` and {ref}`PCHI <step-023>` — but of the
-sub-surface ("punch-through stopper" or "anti-punch-through") type
-rather than the surface threshold-adjust type: a medium-current implant
-at tens to a hundred or so keV, of order 10¹²–10¹³ cm⁻²
-({ref}`category-implant`), aimed at a peak beneath the channel.
+*channel engineering* class — the same family as {ref}`LVTNI <step-015>`
+and {ref}`PCHI <step-023>` — but of the sub-surface ("punch-through
+stopper" or "anti-punch-through") type rather than the surface
+threshold-adjust type: a medium-current implant at tens to a hundred or
+so keV, of order 10¹²–10¹³ cm⁻² (industry-typical),[^txt-01] aimed at a
+peak beneath the channel.
 
 ## Why this step exists
 
@@ -122,13 +121,13 @@ memory transistor (SKY130's values are not public):
 * **Wafer handling.** Single-wafer, electrostatically chucked end
   station with an electron shower for charge neutralisation; the
   resist carries only a light dose here.
-* **Anneal.** No dedicated anneal; the implant is activated by the
-  ONO furnace steps ({ref}`ONO <step-040>`) and the gate oxidations
-  ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`). The Cypress
-  integration patent places the memory-cell formation "after at least
-  some of the well and channel implants for the logic MOS transistors
-  are formed",[^pat-03] which is exactly where the step list used in
-  this reference puts it.
+* **Anneal.** No dedicated anneal; the implant is, we infer, activated
+  by the ONO furnace steps ({ref}`ONO <step-040>`) and the gate
+  oxidations ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`). The
+  Cypress integration patent places the memory-cell formation "after at
+  least some of the well and channel implants for the logic MOS
+  transistors are formed",[^pat-03] which is exactly where the step list
+  used in this reference puts it.
 * **Monitoring.** Thermal-wave damage measurement on product,
   sheet resistance on monitor wafers ({ref}`category-implant`).
 
@@ -342,3 +341,7 @@ memory transistor (SKY130's values are not public):
     **50**(9), 1946–1951 (2003).
     <https://doi.org/10.1109/TED.2003.815371>; open copy
     <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>
+[^txt-01]: J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+    Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
+    2000, ISBN 978-0-13-085037-9.
+    <https://openlibrary.org/isbn/9780130850379>

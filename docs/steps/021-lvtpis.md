@@ -13,8 +13,8 @@
 ## What this step is
 
 `LVTPIS` removes the thick N-well photoresist that was patterned at
-{ref}`NWM <step-017>` and has since masked three implants — the two
-MeV-class phosphorus well implants {ref}`NWI <step-018>` and
+{ref}`NWM <step-017>` and has since masked three implants — the two well
+implants (MeV-class phosphorus, we infer) {ref}`NWI <step-018>` and
 {ref}`NWI2 <step-019>` and the keV P-channel threshold implant
 {ref}`LVTPI <step-020>` — and then cleans the wafer for the next
 lithography, {ref}`HVTPM <step-022>`. The step list used in this

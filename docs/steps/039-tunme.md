@@ -63,29 +63,31 @@ programming current by Fowler–Nordheim tunnelling for 100 000 cycles
 (the PDK guarantees "100K cycles")[^pdk-07] while blocking leakage for
 years. Three things follow:
 
-* **It must be grown, not left over.** A 10–20 nm pad oxide that has
-  been implanted through several times, plasma-exposed at
-  {ref}`TUNARCE <step-036>`, and thinned by successive resist strips
-  is not a tunnel oxide. Cypress's integration patent quantifies the
-  damage: "approximately 0.5 nm of silicon dioxide may be removed
-  during a conventional post-implant resist strip process", more "if
-  the silicon dioxide received an implant", so that "between 1.5 nm and
+* **It must be grown, not left over.** A 10–20 nm[^pat-04] pad oxide
+  that has been implanted through several times, plasma-exposed at
+  {ref}`TUNARCE <step-036>`, and thinned by successive resist strips is
+  not a tunnel oxide. Cypress's integration patent quantifies the
+  damage: "approximately 0.5 nm of silicon dioxide may be removed during
+  a conventional post-implant resist strip process", more "if the
+  silicon dioxide received an implant", so that "between 1.5 nm and
   2.5 nm of silicon dioxide may be removed" over a flow's worth of
   implants.[^pat-03] The pad oxide must go, and a fresh oxide must be
   grown on clean crystal.
-* **It must be removed only where the cells are.** Elsewhere the pad
-  oxide continues to serve as the base on which the nitride of the ONO
-  stack will sit and be removed again ({ref}`ONOME <step-042>`), and as
-  a protective layer over the logic silicon until the gate-oxide
-  pre-clean. A masked etch does this; a blanket strip would not.
+* **It must be removed only where the cells are.** Elsewhere the
+  (inferred) pad oxide would continue to serve as the base on which the
+  nitride of the ONO stack will sit and be removed again
+  ({ref}`ONOME <step-042>`), and as a protective layer over the logic
+  silicon until the gate-oxide pre-clean. A masked etch does this; a
+  blanket strip would not.
 * **The surface must be perfect.** HF etching leaves silicon
   hydrogen-terminated and smooth;[^cerofolini-1998][^kern-1990] a
   plasma etch would leave a damaged, roughened surface that the tunnel
   oxide would inherit.
 
-Without `TUNME` the tunnel oxide would be grown on top of the pad
-oxide, giving a "tunnel" dielectric of 12–23 nm through which nothing
-would tunnel at the PDK's ±10.5 V programme/erase conditions.[^pdk-07]
+Without `TUNME` the tunnel oxide would be grown on top of the pad oxide,
+giving a "tunnel" dielectric of 12–23 nm (the patent's ranges[^pat-04])
+through which nothing would tunnel at the PDK's ±10.5 V programme/erase
+conditions.[^pdk-07]
 
 ## How it is typically performed
 
@@ -93,17 +95,17 @@ An industry-generic masked pad-oxide removal for a 200 mm, 130 nm-era
 fab (SKY130's recipe is not public):
 
 1. **Wet etch with resist in place.** Dilute HF (50:1 to 100:1) or
-   surfactant-containing BOE in a wet bench or single-wafer spray
-   tool. A 6:1 BOE etches thermal oxide at "approximately 2 nanometres
-   per second at 25 degrees Celsius"[^wiki-boe] — far too fast to
-   control for a 10–20 nm film — so more dilute chemistries with rates
-   of a few nanometres per minute are used; the etch rate scales with
-   the HF and HF₂⁻ concentrations,[^judge-1971] and at very low
-   concentrations the dissociation state of the acid controls the rate
-   and the surface left behind.[^kikuyama-1994] A surfactant helps the
-   liquid wet 0.4 µm windows in hydrophobic resist; Cypress specifies
-   "a 10:1 buffered oxide etch (BOE) containing a surfactant".[^pat-04]
-   The resist is not attacked by HF.
+   surfactant-containing BOE in a wet bench or single-wafer spray tool.
+   A 6:1 BOE etches thermal oxide at "approximately 2 nanometres per
+   second at 25 degrees Celsius"[^wiki-boe] — far too fast to control
+   for a 10–20 nm film — so more dilute chemistries with rates of
+   typically a few nanometres per minute are used;[^kikuyama-1994] the
+   etch rate scales with the HF and HF₂⁻ concentrations,[^judge-1971]
+   and at very low concentrations the dissociation state of the acid
+   controls the rate and the surface left behind.[^kikuyama-1994] A
+   surfactant helps the liquid wet 0.4 µm windows in hydrophobic resist;
+   Cypress specifies "a 10:1 buffered oxide etch (BOE) containing a
+   surfactant".[^pat-04] The resist is not attacked by HF.
 2. **Over-etch and undercut.** The etch is timed for the oxide
    thickness plus an over-etch to clear thickness variation; being
    isotropic, it undercuts the resist edge by roughly the oxide
@@ -122,13 +124,13 @@ fab (SKY130's recipe is not public):
 5. **Pre-oxidation clean.** An RCA-type sequence — SC-1 for particles
    and organics, SC-2 for metals[^wiki-rca] — with an HF-last or a
    deliberately grown chemical oxide as the final surface. The choice
-   matters for a 2 nm oxide: the Cypress patents describe SC-1 at
-   "50 to 80° C. for about 10 minutes" and SC-2 as "a 1:1:10 solution
-   of HCl, H₂O₂ and H₂O at about 50 to 80° C.",[^pat-04] and one of
-   them replaces SC-1 with "an ozonated water cleaning regime" in
-   places where the ONO stack is exposed.[^pat-03] The
-   room-temperature alternatives to the hot RCA sequence are reviewed
-   by Ohmi.[^ohmi-1996]
+   matters for a tunnel oxide of the 1.5–3 nm class the Cypress patents
+   describe:[^pat-04] the Cypress patents describe SC-1 at "50 to 80° C.
+   for about 10 minutes" and SC-2 as "a 1:1:10 solution of HCl, H₂O₂ and
+   H₂O at about 50 to 80° C.",[^pat-04] and one of them replaces SC-1
+   with "an ozonated water cleaning regime" in places where the ONO
+   stack is exposed.[^pat-03] The room-temperature alternatives to the
+   hot RCA sequence are reviewed by Ohmi.[^ohmi-1996]
 6. **Queue time.** Wafers go to the tunnel oxidation promptly, because
    native oxide and airborne contamination grow on bare silicon within
    hours (industry practice; Reinhardt and Reidy[^reinhardt-2010]).

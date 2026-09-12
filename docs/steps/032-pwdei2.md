@@ -50,8 +50,8 @@ extra voltage.
 There is also a coupling with the standard wells. Where `pwde` sits
 inside a deep-N-well tub (pwdem.5),[^pdk-periph] the lightly doped
 P-well must reach down to, but not merge into, the buried N-type floor
-from {ref}`DNI <step-008>`; the deeper member of the pair sets that
-junction.
+from {ref}`DNI <step-008>`; we infer that the deeper member of the pair
+sets that junction.
 
 ## How it is typically performed
 

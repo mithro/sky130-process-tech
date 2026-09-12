@@ -62,20 +62,21 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 
 1. **Plasma ash.** Downstream oxygen plasma with a nitrogen or
    forming-gas addition. For light doses a single-stage recipe at
-   200–270 °C is common; fabs that run one standard implant-strip recipe
-   use the two-stage sequence anyway — a first stage below about 220 °C
-   "by oxygen and nitrogen/hydrogen plasma" until the crust is gone,
-   then a hotter bulk stage.[^pat-strip-mosel] The remote configuration
-   lets "electrically charged particles time to recombine before they
-   reach the wafer surface".[^wiki-ash] SkyWater's ashers span "120C –
-   270C" (Gasonic PEP), "40C-270C" (Iridia) and "up to 250C" (Mattson
-   Aspen2), with N₂, O₂, H₂/N₂ and CF₄ options.[^skw-01]
+   200–270 °C is typical;[^txt-02] fabs that run one standard
+   implant-strip recipe use the two-stage sequence anyway — a first
+   stage below about 220 °C "by oxygen and nitrogen/hydrogen plasma"
+   until the crust is gone, then a hotter bulk stage.[^pat-strip-mosel]
+   The remote configuration lets "electrically charged particles time to
+   recombine before they reach the wafer surface".[^wiki-ash] SkyWater's
+   ashers span "120C – 270C" (Gasonic PEP), "40C-270C" (Iridia) and "up
+   to 250C" (Mattson Aspen2), with N₂, O₂, H₂/N₂ and CF₄
+   options.[^skw-01]
 2. **Wet strip.** SPM (H₂SO₄:H₂O₂) — "used to clean organic residues off
    substrates" (category page, citing Wikipedia) — on a batch bench;
    SkyWater's Akrion Gamma lists "Sulfuric".[^skw-01]
 3. **Clean.** SC-1 for particles, optionally SC-2 for metals.[^wiki-rca]
-   No HF: the pad oxide must survive as the screen for the four implants
-   still to come.
+   No HF: the pad oxide (which we infer is still present) must survive
+   as the screen for the four implants still to come.
 4. **Rinse, dry, inspect.** Cascade rinse, spin or IPA dry, particle
    scan.
 

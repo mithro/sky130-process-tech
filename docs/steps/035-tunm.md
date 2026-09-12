@@ -56,14 +56,14 @@ not publish.
 
 `TUNM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant and etch window* type: a relaxed, non-critical
-layer whose resist must survive two implants and a wet oxide etch. Its
-minimum feature (0.410 µm) and space (0.500 µm)[^pdk-periph] are far
-above the 0.15 µm of the active layer ({ref}`FOM <step-004>`), so it
-sits in the class of layers that a 130 nm-era fab prints on an i-line
-stepper (see below). What sets it apart from the other implant masks
-of the flow is that it is followed by a dedicated anti-reflective
-coating etch ({ref}`TUNARCE <step-036>`), the only such step in the
-step list used in this reference.
+layer whose resist must survive two implants and an (inferred) wet oxide
+etch. Its minimum feature (0.410 µm) and space (0.500 µm)[^pdk-periph]
+are far above the 0.15 µm of the active layer ({ref}`FOM <step-004>`),
+so it sits in the class of layers that a 130 nm-era fab prints on an
+i-line stepper (see below). What sets it apart from the other implant
+masks of the flow is that it is followed by a dedicated anti-reflective
+coating etch ({ref}`TUNARCE <step-036>`), the only such step in the step
+list used in this reference.
 
 ## Why this step exists
 
@@ -116,13 +116,13 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    "Photoresist thickness"[^pdk-03] — thick enough to stop the
    channel-type implants that follow (industry-typical: a 1 µm resist
    stops ions of a few hundred keV; {ref}`category-implant`).
-4. **Exposure.** Through the tunnel reticle, aligned to the STI
-   pattern printed at {ref}`FOM <step-004>`. The 0.410 µm minimum
+4. **Exposure.** Through the tunnel reticle, aligned to the STI pattern
+   printed at {ref}`FOM <step-004>`. The 0.410 µm minimum
    feature[^pdk-periph] corresponds to k₁ ≈ 0.67 at the 365 nm i-line
-   with a 0.6 NA lens (CD = k₁·λ/NA),[^wiki-litho] comfortably inside
-   the i-line process window, so we infer an i-line layer; the 2001
-   ITRS assigns 248 nm only to the critical layers of the 130 nm
-   node.[^itrs-03]
+   with a typical 0.6 NA i-line lens (illustrative) (CD =
+   k₁·λ/NA),[^wiki-litho] comfortably inside the i-line process window,
+   so we infer an i-line layer; the 2001 ITRS assigns 248 nm only to the
+   critical layers of the 130 nm node.[^itrs-03]
 5. **Post-exposure bake, develop** in 2.38 % TMAH,[^txt-02] rinse,
    and a hard bake to harden the resist for the implants.
 6. **Inspection.** Overlay to active and CD on the coarse tunnel
@@ -172,8 +172,8 @@ pre-oxidation clean are folded into those steps (see the
 * **Developer** — aqueous TMAH (2.38 %);[^txt-02] SkyWater's S-1
   names Air Products (Moses Lake) as a developer supplier.[^sec-01]
 * **Edge-bead remover**, DI water, nitrogen.
-* **The tunnel reticle** — a chrome-on-quartz photomask; with a
-  0.41 µm minimum feature no {term}`OPC` is needed.
+* **The tunnel reticle** — a chrome-on-quartz photomask; with a 0.41 µm
+  minimum feature no {term}`OPC` would be needed.
 
 ## Related steps and cross-references
 

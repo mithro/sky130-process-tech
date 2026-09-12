@@ -44,7 +44,7 @@ kilo-electron volts (keV), and a dose of from about 1e12 cm⁻² to about
 
 `NCHI` is an {ref}`Ion implantation <category-implant>` step of the
 *threshold-adjust channel implant* class — low energy, medium current,
-of order 10¹²–10¹³ cm⁻² ({ref}`category-implant`) — and the last
+of order 10¹²–10¹³ cm⁻² (industry-typical)[^txt-01] — and the last
 channel implant of the flow before the gate is deposited at
 {ref}`SAGD <step-048>`. It is the N-channel counterpart of
 {ref}`LVTPI <step-020>`, which the 1.8 V PMOS received through the
@@ -300,3 +300,7 @@ fab (SKY130's values are not public):
 [^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
+[^txt-01]: J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+    Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
+    2000, ISBN 978-0-13-085037-9.
+    <https://openlibrary.org/isbn/9780130850379>

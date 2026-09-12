@@ -52,16 +52,16 @@ stacks* section gives the background on nitridation.
 ## Why this step exists
 
 The 1.8 V core needs a gate oxide thin enough for drive current and
-short-channel control at a 0.15 µm gate length and thick enough not
-to leak or break: a gate oxide "serves as the dielectric layer so that
-the gate can sustain as high as 1 to 5 MV/cm transverse electric
-field in order to strongly modulate the conductance of the
+short-channel control at a 0.15 µm gate length[^pdk-periph] and thick
+enough not to leak or break: a gate oxide "serves as the dielectric
+layer so that the gate can sustain as high as 1 to 5 MV/cm transverse
+electric field in order to strongly modulate the conductance of the
 channel".[^wiki-gate-oxide] At 4 nm the direct-tunnelling gate leakage
-that dominates below ~3 nm[^lo-1997] is still small, and the
-reliability limits of thin oxides[^stathis-2002][^wright-1990] leave
-margin at 1.8 V. Buchanan's review lays out the trade-offs of scaling
-the gate dielectric,[^buchanan-1999] and Green et al. the processing and
-physical limits of sub-4 nm SiO₂ and Si–O–N films.[^green-2001]
+that dominates below ~3 nm[^lo-1997] is still small, and the reliability
+limits of thin oxides[^stathis-2002][^wright-1990] leave margin at
+1.8 V. Buchanan's review lays out the trade-offs of scaling the gate
+dielectric,[^buchanan-1999] and Green et al. the processing and physical
+limits of sub-4 nm SiO₂ and Si–O–N films.[^green-2001]
 
 **Why thin second.** The thin oxide is the film least able to tolerate
 subsequent processing: every furnace step thickens it, every HF
@@ -127,10 +127,10 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 5. **Unload and gate deposition.** The oxide is covered by the
    amorphous-silicon gate at {ref}`SAGD <step-048>` as soon as
    possible, since a 4 nm oxide's surface is easily contaminated.
-6. **Metrology.** Spectroscopic ellipsometry to ±0.1 nm on monitor
-   wafers and on product test sites; C–V for electrical thickness and
-   nitrogen-induced flat-band shift; ITRS 2001's "<± 4" % 3σ
-   control[^itrs-01] is the era's target.
+6. **Metrology.** Spectroscopic ellipsometry (repeatability typically of
+   order 0.1 nm) on monitor wafers and on product test sites; C–V for
+   electrical thickness and nitrogen-induced flat-band shift; ITRS
+   2001's "<± 4" % 3σ control[^itrs-01] is the era's target.
 
 ## Machines typically used
 
@@ -398,3 +398,5 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 [^ma-1998]: T. P. Ma, "Making silicon nitride film a viable gate
     dielectric", *IEEE Transactions on Electron Devices* **45**(3),
     680–690 (1998). <https://doi.org/10.1109/16.661229>
+[^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
+    PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>

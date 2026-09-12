@@ -47,17 +47,16 @@ pre-gate-oxide clean are, we infer, part of this step or of the next.
 
 ## Step category
 
-`ONOME` is an {ref}`Etch <category-etch>` step of the *thin-film
-stack etch* type: a nitride etch with an oxide etch above it and a
-very thin oxide stop below it, on the Lam 9400 / DPS "poly/nitride"
-class of tool (see below). Its distinctive difficulty is the stop
-layer: the oxide beneath the nitride — the pad oxide, we infer — is
-10–20 nm in the Cypress patent,[^pat-04] and the silicon under it will
-become the channel of every logic transistor.
-The etch is therefore run like a spacer etch — a nitride etch with
-"selectivity to oxide" that must "stop on a thin oxide without
-trenching the silicon" ({ref}`category-etch`) — rather than like a
-hard-mask open.
+`ONOME` is an {ref}`Etch <category-etch>` step of the *thin-film stack
+etch* type: a nitride etch with an oxide etch above it and a very thin
+oxide stop below it, on the Lam 9400 / DPS "poly/nitride" class of tool
+(the assignment is inferred — see below). Its distinctive difficulty is
+the stop layer: the oxide beneath the nitride — the pad oxide, we infer
+— is 10–20 nm in the Cypress patent,[^pat-04] and the silicon under it
+will become the channel of every logic transistor. The etch is therefore
+run like a spacer etch — a nitride etch with "selectivity to oxide" that
+must "stop on a thin oxide without trenching the silicon"
+({ref}`category-etch`) — rather than like a hard-mask open.
 
 ## Why this step exists
 
@@ -114,19 +113,20 @@ memory (SKY130's recipe is not public):
    ({ref}`category-strip`); the resist has seen a fluorocarbon plasma
    and carries polymer residue that the wet step removes.
 5. **Bottom oxide.** The remaining (inferred) pad oxide (plus the
-   fraction of a nanometre that the tunnel oxidation added) is removed
-   in BOE or dilute HF — "an etchant, such as BOE, is employed to clear
-   sacrificial dielectric layer 303"[^pat-03] — exposing the logic
-   silicon for gate oxidation. Whether this happens here or as the
-   {ref}`GOX100 <step-043>` pre-clean is not resolvable from the step
-   list used in this reference; the Cypress flows differ on it (see
-   {ref}`GOX100 <step-043>`). One Cypress patent warns that once the
-   stack is exposed, "Conventional HF-based gate insulator pre-cleans
-   will etch or otherwise degrade the quality of the ONO charge trapping
-   dielectric stack 306, particularly when the stack includes a CVD
-   formed blocking layer",[^pat-03] which is why its pre-clean is
-   "substantially free of HF"[^pat-03] while the other protects the
-   blocking oxide with a sacrificial cap that the BOE removes.[^pat-04]
+   fraction of a nanometre that the tunnel oxidation added[^deal-1965])
+   is removed in BOE or dilute HF — "an etchant, such as BOE, is
+   employed to clear sacrificial dielectric layer 303"[^pat-03] —
+   exposing the logic silicon for gate oxidation. Whether this happens
+   here or as the {ref}`GOX100 <step-043>` pre-clean is not resolvable
+   from the step list used in this reference; the Cypress flows differ
+   on it (see {ref}`GOX100 <step-043>`). One Cypress patent warns that
+   once the stack is exposed, "Conventional HF-based gate insulator
+   pre-cleans will etch or otherwise degrade the quality of the ONO
+   charge trapping dielectric stack 306, particularly when the stack
+   includes a CVD formed blocking layer",[^pat-03] which is why its
+   pre-clean is "substantially free of HF"[^pat-03] while the other
+   protects the blocking oxide with a sacrificial cap that the BOE
+   removes.[^pat-04]
 6. **All-wet alternative.** The stack could in principle be removed
    entirely wet — BOE for the top oxide, hot phosphoric acid for the
    nitride, whose selectivity to oxide was established by van Gelder
@@ -166,8 +166,9 @@ memory (SKY130's recipe is not public):
 
 ## Resources required
 
-* **CF₄, CHF₃, SF₆, O₂, Ar/He** process gases;[^skw-01]
-  **HBr** if a silicon-selective landing step is used.
+* **CF₄, CHF₃, SF₆ and O₂** process gases,[^skw-01] with **Ar** or
+  **He** as typical diluents; **HBr** if a silicon-selective landing
+  step is used.
 * **Oxygen/nitrogen/forming gas** for the ash; **SPM** for the wet
   strip ({ref}`category-strip`).
 * **BOE or dilute HF** for the bottom oxide;[^pat-03][^pat-04]
@@ -320,3 +321,6 @@ memory (SKY130's recipe is not public):
     Semiconductor), *Oxide-nitride-oxide stack having multiple
     oxynitride layers*, US 2009/0179253 A1, published 2009-07-16.
     <https://patents.google.com/patent/US20090179253A1/en>
+[^deal-1965]: B. E. Deal and A. S. Grove, "General Relationship
+    for the Thermal Oxidation of Silicon", *Journal of Applied Physics*
+    **36**(12), 3770–3778 (1965). <https://doi.org/10.1063/1.1713945>

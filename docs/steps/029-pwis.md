@@ -19,7 +19,7 @@ for the last mask of the module, {ref}`PWDEM <step-030>`.
 
 The resist is a thick (about 2 µm class, inferred on the
 {ref}`PWBM <step-026>` page) implant resist that has absorbed boron at a
-few hundred keV and a summed dose of order 10¹³ cm⁻² (illustrative;
+few hundred keV and a summed dose of order 10¹³ cm⁻² (both illustrative;
 {ref}`PWI <step-027>`). It is therefore a *heavy* implant strip of the
 same kind as {ref}`LVTPIS <step-021>` and {ref}`DNIS <step-009>`, with a
 carbonised crust and a real popping risk, although boron — light and
@@ -76,8 +76,8 @@ An industry-generic heavy-implant-resist strip for a 200 mm,
    dissolve residual organics and flakes (category page);[^txt-02]
    "Sulfuric" on SkyWater's Akrion Gamma bench.[^skw-01]
 3. **Clean.** SC-1 for particles and SC-2 for metals;[^wiki-rca] no HF,
-   because the pad oxide is still the screen for the two drain-extended
-   implants and must remain.
+   because the pad oxide is, we infer, still the screen for the two
+   drain-extended implants and must remain.
 4. **Rinse, dry, inspect.** Cascade rinse, spin or IPA dry; laser
    surface scan for particles and patterned inspection for residue.
 

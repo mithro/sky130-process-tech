@@ -14,13 +14,12 @@
 
 `ONOM` is the second of the three SONOS-specific masks. The
 oxide–nitride–oxide stack grown at {ref}`ONO <step-040>` covers the
-whole wafer; this lithography step prints resist islands over the
-memory transistors and leaves the stack exposed everywhere else, so
-that {ref}`ONOME <step-042>` can etch it away from all the logic,
-5 V and high-voltage transistors before their gate oxides are grown.
-After the etch the ONO survives only as small islands, each one
-covering a tunnel window opened at {ref}`TUNM <step-035>` and its
-margin.
+whole wafer; this lithography step prints resist islands over the memory
+transistors and leaves the stack exposed everywhere else, so that
+{ref}`ONOME <step-042>` can etch it away from all the logic, 5 V and
+high-voltage transistors before their gate oxides are grown. After the
+etch the ONO survives only as small islands, which, we infer, each cover
+a tunnel window opened at {ref}`TUNM <step-035>` and its margin.
 
 The PDK lists "ONO Mask, ONOM" as used in SKY130,[^pdk-05] with the
 generated mask layer `conom` (GDS 88:0, "ONO Mask") and a drawing
