@@ -32,7 +32,8 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 014–034: wells and Vt implants — reviewed, converted to footnotes and merged 2026-09-12
 - [x] Steps 035–047: SONOS tunnel/ONO, gate oxides — reviewed and merged 2026-09-12
 - [~] Steps 048–063: poly gate, resistor implants, gate etch (branch `steps/048-063`)
-- [ ] Steps 064–088: tips, halos, spacers, source/drain
+- [~] Steps 064–075: tips, halos, tip RTA (branch `steps/064-075`)
+- [ ] Steps 076–088: spacers, source/drain, S/D RTA
 - [ ] Steps 089–106: PSG, contact silicide, local interconnect
 - [ ] Steps 107–117: contact, metal 1
 - [ ] Steps 118–134: via 1–2, metal 2–3 (part)
