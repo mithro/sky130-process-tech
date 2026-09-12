@@ -165,9 +165,9 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
   and "ESC TiN".[^skw-01] Strength: **strong** for the vendor and
   the chamber types; the platform (Endura is the AMAT 200 mm PVD
   cluster of the era[^amat-endura]) is an **inference**, as is the
-  assignment of this step to the IMP TiN and collimated Ti chambers —
-  though the step name "IMP Ti/TiN" and the public list match
-  closely. Whether the titanium is deposited by IMP or by collimation
+  assignment of this step to the IMP TiN and collimated Ti chambers,
+  with which the step name used in this reference ("IMP Ti/TiN") is
+  consistent. Whether the titanium is deposited by IMP or by collimation
   is not public; SkyWater's list names collimation for Ti and IMP for
   TiN.
 * **Sputter targets.** SkyWater's S-1 names Honeywell Electronic
