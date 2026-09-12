@@ -241,10 +241,9 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
   polished {ref}`NILD3 <step-115>` and this cap is not public.
 * Whether "C2" denotes a Novellus Concept Two is an inference from
   the vendor's product names.[^novellus-history]
-* Why the step numbering runs from `NCAPOX` to `NCAPOX3` with no
-  `NCAPOX2` in the step list used in this reference is not public;
-  that the missing cap belonged with the local-interconnect
-  dielectric is our inference.
+* The step list used in this reference numbers the caps `NCAPOX`
+  and `NCAPOX3`, with no `NCAPOX2`; that the second of the numbering
+  goes with the local-interconnect dielectric is our inference.
 
 <!-- footnotes -->
 

@@ -286,8 +286,8 @@ fab (SKY130's recipe is not public):
   separately named; the PDK's "HVPTM shadowing" entry of 0.089 µm in
   its physical-criteria table[^pdk-03] hints that a high-voltage P-tip
   mask exists in at least one flow variant, but it appears in neither
-  the mask list nor the step list used here. Which of these is the
-  case is not public.
+  the mask list nor the step list used here. Which of these applies
+  is an open question on this page.
 * Whether the gate poly of the PMOS is entirely shielded from this
   implant is inferred from the cap thickness and npc.4; no public
   source states it.

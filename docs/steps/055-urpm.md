@@ -203,10 +203,10 @@ reading is used throughout these pages and is marked as an inference.
 
 ## Open questions
 
-* Whether `URPM` is a separate reticle from `RRPM`, or whether the two
-  names in the step list used in this reference reflect one reticle
-  with two implant recipes, is not public; the PDK's "separate
-  implant" and two drawn layers support two reticles.
+* This page treats `URPM` and {ref}`RRPM <step-052>` as separate
+  reticles, on the strength of the PDK's "separate implant" and two
+  drawn layers; one reticle with two implant recipes would also fit
+  the two steps in the step list used in this reference.
 * Whether the `urpm` bodies receive only {ref}`UPRI <step-056>` (the
   reading used here) is inferred.
 * Whether the ultra-high resistor is a process option in the sense of
