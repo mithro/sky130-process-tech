@@ -72,7 +72,8 @@ could not, it lets the source and drain be implanted with the gate as
 the mask, and its work function can be set by doping.[^wiki-poly] In
 SKY130 the same film also forms the two precision resistor flavours
 (300 Ω/sq "P+ poly" and 2000 Ω/sq "P− poly"),[^pdk-07] the poly plate
-of the varactors and the gate of the SONOS memory transistor.
+of the varactors and the gate of the SONOS memory transistor (inferred
+from the step order).
 
 Depositing the film *amorphous* rather than polycrystalline is a
 deliberate choice with three documented benefits:
@@ -110,8 +111,9 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
 
 * **Pre-clean.** The wafer arrives with fresh gate oxide, so only a
   light clean (or none) is used; a dilute-HF step is excluded because
-  it would thin the 4 nm oxide. Queue time between gate oxidation and
-  deposition is limited to keep the oxide surface clean.
+  it would thin the ~4 nm oxide.[^pdk-model-nfet01v8] Queue time
+  between gate oxidation and deposition is limited to keep the oxide
+  surface clean.
 * **Chemistry.** Silane pyrolysis, SiH₄ → Si + 2 H₂, in a hot-wall
   LPCVD furnace at a few hundred mTorr; Claassen et al. measured the
   deposition kinetics of silane in a low-pressure hot-wall
@@ -200,7 +202,7 @@ suppliers,[^sec-01][^sec-02] without tying them to a process.
   {ref}`IOX45 <step-063>`.
 * Also covers the SONOS cell stack from {ref}`ONO <step-040>` to
   {ref}`ONOME <step-042>`, so the memory-cell gate and the logic gate
-  are the same film.
+  are the same film (inferred from the step order).
 * Poly stringers from incomplete {term}`STI` planarisation are discussed on
   {ref}`FILOX <step-011>`; the earlier furnace nitride is
   {ref}`ISONIT <step-003>`.
@@ -398,6 +400,11 @@ suppliers,[^sec-01][^sec-02] without tying them to a process.
 [^itrs-01]: International Technology Roadmap for Semiconductors, *2001
     Edition: Front End Processes*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
+[^pdk-model-nfet01v8]: SkyWater PDK Authors,
+    `sky130_fd_pr__nfet_01v8__tt.pm3.spice` (typical-corner BSIM4
+    model, parameter `toxe`), google/skywater-pdk-libs-sky130_fd_pr
+    repository.
+    <https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^snf-lpcvd]: Stanford Nanofabrication Facility, *Tystar LPCVD Tube

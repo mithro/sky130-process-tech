@@ -14,13 +14,14 @@
 
 `NPCM` is the lithography step for the *nitride poly cut*: the resist
 pattern that tells {ref}`NPCME <step-079>` where to remove the nitride
-that has covered the poly since {ref}`GATENIT <step-058>`. The wafer
-arriving from {ref}`SPE <step-077>` carries gates and resistor bodies
-that are, on our reading of the flow, still capped by about 0.2 µm of
-nitride/oxide ("poly cap after SPE"[^pdk-03]) and flanked by the new
-nitride spacers. Nothing can be contacted through that cap, so before
-the local-interconnect contacts ({ref}`LICM1 <step-093>`) can land on
-poly the cap must be opened where they will land. `NPCM` prints those
+that (on our reading) has covered the poly since
+{ref}`GATENIT <step-058>`. The wafer arriving from
+{ref}`SPE <step-077>` carries gates and resistor bodies that are, on
+our reading of the flow, still capped by about 0.2 µm of nitride/oxide
+("poly cap after SPE"[^pdk-03]) and flanked by the new nitride
+spacers. Nothing can be contacted through that cap, so before the
+local-interconnect contacts ({ref}`LICM1 <step-093>`) can land on poly
+the cap must be opened where they will land. `NPCM` prints those
 openings.
 
 The mask is one of the best-documented in the public PDK. The mask

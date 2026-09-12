@@ -15,14 +15,14 @@
 `PSDI` is the heavy p-type implant that forms the deep source and
 drain of every PMOS transistor, together with all the other P⁺
 diffusions of the process. It goes through the resist windows of
-{ref}`PSDM <step-081>`, through the thin {ref}`SPOX <step-080>` oxide,
-and into silicon wherever the windows are not blocked by a gate stack
-or a spacer: the implant is *self-aligned* to the spacer edge, so the
-heavy junction lands a spacer-width away from the gate edge while the
-shallow extension implanted earlier reaches under it. A second p-type
-implant, {ref}`2PSDI <step-083>`, follows in the same resist; the
-resist is stripped at {ref}`PDIS <step-084>`, and the dopant is
-activated at {ref}`RTAD <step-088>`.
+{ref}`PSDM <step-081>`, through the thin {ref}`SPOX <step-080>` oxide
+(on our reading), and into silicon wherever the windows are not
+blocked by a gate stack or a spacer: the implant is *self-aligned* to
+the spacer edge, so the heavy junction lands a spacer-width away from
+the gate edge while the shallow extension implanted earlier reaches
+under it. A second p-type implant, {ref}`2PSDI <step-083>`, follows in
+the same resist; the resist is stripped at {ref}`PDIS <step-084>`, and
+the dopant is activated at {ref}`RTAD <step-088>`.
 
 What the PDK says about the result is specific, if sparse. The
 junction-depth table gives "N+ or P+ S/D (XJ)" a vertical feature of
@@ -284,10 +284,10 @@ fab (SKY130's recipe is not public):
   same resist), by lateral straggle and diffusion of this implant
   under the spacer during {ref}`RTAD <step-088>`, or by a step not
   separately named; the PDK's "HVPTM shadowing" entry of 0.089 µm in
-  its physical-criteria table[^pdk-03] hints that a high-voltage
-  P-tip mask exists in at least one flow variant, but it appears in
-  neither the mask list nor the step list. Which of these is the case
-  is not public.
+  its physical-criteria table[^pdk-03] hints that a high-voltage P-tip
+  mask exists in at least one flow variant, but it appears in neither
+  the mask list nor the step list used here. Which of these is the
+  case is not public.
 * Whether the gate poly of the PMOS is entirely shielded from this
   implant is inferred from the cap thickness and npc.4; no public
   source states it.

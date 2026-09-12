@@ -22,9 +22,9 @@ areas".[^pdk-06] Inside a window the etch also meets the nitride
 spacers on the poly sidewalls and whatever spacer nitride lies on the
 field oxide beside them; how much of the spacer it is allowed to take
 is a recipe choice discussed below. The resist is stripped and the
-wafer cleaned as part of the sequence, since no separate strip follows
-in the step list used in this reference; the next step is an oxide
-deposition ({ref}`SPOX <step-080>`).
+wafer cleaned as part of the sequence (on our reading), since no
+separate strip follows in the step list used in this reference; the
+next step is an oxide deposition ({ref}`SPOX <step-080>`).
 
 The structures being opened are of two kinds. The first are the
 contact heads of poly interconnect and gate leads, kept at least
@@ -54,12 +54,12 @@ opening. The local-interconnect contact `licon1` is etched later
 ({ref}`LICM1E <step-094>`) through the sacrificial PSG and cap oxide
 ({ref}`PSG <step-089>`, {ref}`NCAPOX <step-091>`); if the nitride cap
 were still under it, the contact etch would have to change chemistry
-at the bottom of a 0.17 µm hole and would stop unevenly on gates,
-resistor ends and interconnect. Cutting the nitride now, on a flat,
-resist-defined pattern, is easier to control and lets the contact
-etch stop on a uniform surface. The scheme is the one Tang et al.
-used for the titanium-nitride local interconnect at Texas Instruments,
-where the nitride over poly was removed only at contact
+at the bottom of a 0.17 µm hole[^pdk-periph] and would stop unevenly
+on gates, resistor ends and interconnect. Cutting the nitride now, on
+a flat, resist-defined pattern, is easier to control and lets the
+contact etch stop on a uniform surface. The scheme is the one Tang et
+al. used for the titanium-nitride local interconnect at Texas
+Instruments, where the nitride over poly was removed only at contact
 sites.[^tang-1985][^tang-1987]
 
 The order relative to the source/drain implants is deliberate on our
