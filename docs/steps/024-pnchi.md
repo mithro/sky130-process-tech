@@ -52,12 +52,13 @@ shallow boron dose in a high-Vt PMOS:
    what ITRS 2001's "Retrograde channel depth" of 21–30 nm[^itrs-01] and
    the super-steep-retrograde literature describe.[^thompson-1996] This
    is our preferred reading.
-2. **Buried-channel PMOS.** If the PMOS gate were n⁺ polysilicon, a
-   shallow boron layer would be needed in *every* PMOS to bring |Vt|
-   into range, and the high-Vt variant would use a *smaller* boron dose
-   than the baseline. That would require the baseline PMOS to receive
-   its own BF₂ elsewhere, and the step list used in this reference
-   contains no such step; we consider it unlikely at 130 nm.[^txt-04]
+2. **Buried-channel PMOS.** The gate pages read the PMOS gate as n⁺
+   polysilicon ({ref}`P1I <step-050>`), so the baseline device already
+   has a boron counter-doping ({ref}`LVTPI <step-020>`); a *high-Vt*
+   variant then needs less net p-type surface doping, which a heavier
+   n-type {ref}`PCHI <step-023>` supplies, with this shallow BF₂ dose
+   trimming the surface profile — which folds this reading into reading
+   1.
 3. **Junction or field engineering under the gate edge.** A light boron
    dose at the channel surface changes the source/drain extension
    junction abruptness and the gate-edge field; some high-Vt devices are
