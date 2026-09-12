@@ -287,8 +287,8 @@ recipe is not public); the shared physics is set out at
   enclosure rule.[^pdk-periph]
 * Which etcher runs the step is not public; SkyWater's list names no
   dedicated dielectric etcher.[^skw-01]
-* Whether the resist strip is a separate step in SkyWater's flow is
-  not shown in the step list used in this reference.
+* Whether the resist strip is a separate step is not public; the step
+  list used in this reference shows no separate strip.
 
 <!-- footnotes -->
 
