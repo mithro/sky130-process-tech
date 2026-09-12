@@ -27,7 +27,7 @@ drain", by analogy with {ref}`RTAI <step-034>` and
 thermal anneal is good (below). It is the third of the four RTAs in
 the flow; the fourth, {ref}`RTAD2 <step-092>`, is a second
 "RTA source drain anneal" that the step list used in this reference
-places after the sacrificial PSG, the polish and the cap oxide.
+places after the sacrificial PSG, the polish and the {term}`cap oxide`.
 
 On the reading of the {ref}`NPCM <step-078>` page, the anneal is also
 the thermal step that finishes the doping of the poly heads opened at

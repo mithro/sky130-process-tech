@@ -14,12 +14,12 @@
 
 `NCAPOX` deposits an undoped silicon-dioxide "cap" over the polished
 phosphosilicate glass of {ref}`CMPP <step-090>`. It is a blanket,
-unpatterned CVD oxide on a surface that is now flat, so its only
+unpatterned {term}`CVD` oxide on a surface that is now flat, so its only
 geometric task is to be uniform; its purpose is chemical and
 structural — to seal the doped glass, to re-bury whatever the polish
 exposed, and to provide the clean, undoped oxide that the
 local-interconnect contacts ({ref}`LICM1E <step-094>`) will be
-etched through first and that the local interconnect
+etched through first and that the {term}`local interconnect`
 ({ref}`LITIN <step-101>`) will lie on. The step-name pattern recurs
 at every metal level of the flow — {ref}`NCAPOX3 <step-117>`,
 {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`,
@@ -34,11 +34,11 @@ stack diagram, the cap is part of the interval it labels "PSG" —
 0.4299 µm over field poly, up to the `li` bottom at 0.9361 µm[^pdk-04]
 — and part of the 0.5 µm "Pre-LI ILD thickness" of the assumptions
 table.[^pdk-03] If the polish stops on the 0.2 µm gate caps (the
-reading of the {ref}`CMPP <step-090>` page), the cap oxide is what
+reading of the {ref}`CMPP <step-090>` page), the {term}`cap oxide` is what
 separates the cap tops from the local interconnect, and its
 thickness is of the order of 0.2–0.3 µm (inferred from those two
-numbers; not public). The film's identity — an undoped PECVD oxide
-from TEOS or silane — is likewise an inference, from the industry
+numbers; not public). The film's identity — an undoped {term}`PECVD` oxide
+from {term}`TEOS` or silane — is likewise an inference, from the industry
 practice set out below and from SkyWater's "PECVD TEOS, C2 and
 Producer" and "PECVD silane oxide … C1" entries.[^skw-01]
 
@@ -66,12 +66,12 @@ for reasons the literature spells out:
   absorbed water plus phosphorus gives phosphoric acid, the
   aluminium-corrosion mechanism Paulson and Kirk described.[^paulson-1974]
   A dense undoped oxide over the glass keeps ambient moisture out
-  during the queue times of the contact module.
+  during the {term}`queue times <queue time>` of the contact module.
 * **Keeping phosphorus away from the contacts.** The contact etch
   ({ref}`LICM1E <step-094>`) opens holes whose upper sidewalls are
-  cap oxide and whose lower sidewalls are PSG; phosphorus at the
+  cap oxide and whose lower sidewalls are {term}`PSG`; phosphorus at the
   surface of the etched hole could out-diffuse into the titanium
-  liner or the silicon during the silicide anneal
+  {term}`liner` or the silicon during the {term}`silicide` anneal
   ({ref}`CSIL <step-098>`) — the phosphorus out-diffusion from HDP
   PSG is a known integration concern (Hsiao, Liu and Wang study its
   thermal-budget dependence[^hsiao-2005]). A cap moves the doped
@@ -111,14 +111,14 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
   characterised the plasma-deposited film.[^adams-1981-pecvd]
   SkyWater lists "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01]
 * **SACVD TEOS/ozone.** Sub-atmospheric TEOS with ozone, more
-  conformal but hygroscopic and usually reserved for gap fill;
+  conformal but hygroscopic and usually reserved for {term}`gap fill`;
   Fujino et al. describe the chemistry[^fujino-1990] and Kwok et al.
   its integration with PECVD.[^kwok-1994] Unlikely for a cap on a
   flat surface (inference).
 * **Thickness.** Of the order of 0.2–0.3 µm on the reading above;
   not public.
 * **Sequence.** Post-CMP clean (at {ref}`CMPP <step-090>`) with a
-  dilute-HF touch to remove slurry residue and a degas; deposition,
+  dilute-HF touch to remove slurry residue and a {term}`degas`; deposition,
   typically in a single-wafer chamber with an in-situ NF₃ clean
   between wafers;[^txt-09] optional short plasma treatment to
   densify the surface.

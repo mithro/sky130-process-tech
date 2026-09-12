@@ -27,7 +27,7 @@ That is the distinctive feature of this module, and the public
 evidence for it is the PDK's own numbers. In a self-aligned silicide
 ({term}`salicide`) process the metal is deposited on the bare gates
 and source/drains and reacts everywhere silicon is exposed, so the
-poly and diffusion sheet resistances fall to a few ohms per square
+poly and diffusion {term}`sheet resistances <sheet resistance>` fall to a few ohms per square
 (category page[^wiki-salicide][^txt-05]). The SKY130 extraction
 tables give poly 48 200 mΩ/sq (48.2 Ω/sq), N-diffusion
 120 000 mΩ/sq and P-diffusion 197 000 mΩ/sq[^pdk-08] — the values of
@@ -35,7 +35,7 @@ heavily doped but *unsilicided* poly and diffusion — and a per-contact
 resistance of 15 000 mΩ (15 Ω) for a licon.[^pdk-08] The
 {ref}`P1I <step-050>` page draws the same conclusion from the poly
 value. Combined with the step name, the position of the anneal —
-after the liner and before the tungsten — and the absence of any
+after the {term}`liner` and before the tungsten — and the absence of any
 silicide-metal deposition or selective strip elsewhere in the step
 list used in this reference, we infer a *contact-only* titanium
 silicide. SkyWater lists "Ti and Co Silicide" among its special
@@ -50,8 +50,8 @@ not public), and whether the anneal is one step or two.
 
 `CSIL` is an {ref}`Anneal / thermal processing <category-anneal>` step
 of the *silicidation* type — the class the category page describes
-for titanium: a first RTA at roughly 600–700 °C in N₂ forms the
-metastable C49 TiSi₂ (and TiN on top), a selective strip removes
+for titanium: a first {term}`RTA` at roughly 600–700 °C in N₂ forms the
+metastable {term}`C49 TiSi₂` (and TiN on top), a selective strip removes
 unreacted metal, and a second RTA at roughly 800–900 °C converts C49
 to the low-resistivity C54 phase.[^maex-1993][^osburn-1993] What is
 specific to this instance is that the sequence is *not* a salicide:
@@ -79,12 +79,12 @@ contact-only form:
   The PDK's 15 Ω per licon[^pdk-08] is the outcome.
 * **Why not a salicide.** Three features of the PDK's device list
   argue for keeping the gates and diffusions unsilicided
-  (inference): the precision poly resistors ({ref}`RPM <step-049>`,
+  (inference): the precision {term}`poly resistors <poly resistor>` ({ref}`RPM <step-049>`,
   {ref}`URPM <step-055>`) and the diffusion resistors need their
   high sheet resistances,[^pdk-07][^pdk-08] which a blanket silicide
   would have to be masked away from; the 5 V and drain-extended
   devices[^pdk-07] carry lightly doped regions that a silicide would
-  short; and the SONOS cells ({ref}`ONO <step-040>`) have an ONO
+  short; and the {term}`SONOS` cells ({ref}`ONO <step-040>`) have an {term}`ONO`
   stack under the gate that a silicide anneal's stress and a
   selective strip's chemistry would threaten. A contact-only
   silicide needs no extra mask and no strip. The cost is the poly
@@ -122,7 +122,7 @@ junction of high and variable resistance.
 
 ## How it is typically performed
 
-An industry-generic contact silicide anneal for a 200 mm, 130 nm-era
+An industry-generic {term}`contact silicide` anneal for a 200 mm, 130 nm-era
 fab (SKY130's recipe is not public):
 
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen
@@ -134,11 +134,11 @@ fab (SKY130's recipe is not public):
   800–900 °C for the C54 transformation — typical industry values
   for a Ti/TiN contact silicide (Osburn;[^osburn-1993] Yoo, Atanos
   and Whitworth describe TiSi₂ formation and anneal in a
-  susceptor-based low-pressure RTP system[^yoo-1999]). Because there
+  susceptor-based low-pressure {term}`RTP` system[^yoo-1999]). Because there
   is no strip between them, the two soaks can be one recipe.
-* **Sequence.** Load from the PVD platform without a wet step;
+* **Sequence.** Load from the {term}`PVD` platform without a wet step;
   purge; low-temperature stabilisation; ramp; soak; ramp-down;
-  unload to the tungsten deposition. Queue time between liner and
+  unload to the tungsten deposition. {term}`Queue time <queue time>` between liner and
   anneal is limited to keep the titanium from oxidising through
   pinholes in the TiN (industry practice).
 * **Control.** Pyrometer emissivity correction for a metallised

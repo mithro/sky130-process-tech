@@ -86,7 +86,7 @@ can be made to land reproducibly.
 Two things the implant does *not* do, on the reading used throughout
 this reference, are worth stating. It does not dope the PMOS gate:
 the gate is capped by about 0.2 µm of nitride/oxide ("poly cap after
-SPE"[^pdk-03]), the nitride cut is kept off gates by npc.4,[^pdk-periph]
+SPE"[^pdk-03]), the {term}`nitride cut` is kept off gates by npc.4,[^pdk-periph]
 and the gate poly was doped n-type at {ref}`P1I <step-050>` — so
 SKY130 avoids the boron-penetration problem of p⁺ gates that
 Pfiester et al. described[^pfiester-1990] at the cost of a
@@ -138,7 +138,7 @@ fab (SKY130's recipe is not public):
 * **Wafer handling.** Batch spinning-disc end station with wafer
   cooling — the beam power at high current heats the resist, and
   Smith's early chapter[^smith-1983] and Romig et al.'s study of
-  resist burning[^romig-1996] set out the limits. A plasma flood gun
+  resist burning[^romig-1996] set out the limits. A {term}`plasma flood gun`
   neutralises the positive charge that a beam on a resist-covered
   wafer builds up: Dixon, Lukaszek and Heden showed how resist
   enhances charging,[^dixon-1996] Mehta et al. investigated negative

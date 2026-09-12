@@ -15,7 +15,7 @@
 `CTME` etches the metal-contact holes. Through the resist openings of
 {ref}`CTM1 <step-107>` a fluorocarbon plasma cuts the
 {ref}`NILD2 <step-105>` oxide — planarised at {ref}`CMPL <step-106>`
-(on our reading) — down to the titanium nitride local interconnect,
+(on our reading) — down to the titanium nitride {term}`local interconnect`,
 producing the holes that {ref}`TIN2 <step-109>` will line and
 {ref}`WDEP2 <step-110>` will fill to make the `mcon` plug, "Contact
 from local interconnect to metal1".[^pdk-06] The resist is stripped
@@ -44,7 +44,7 @@ the etch must not dig a trench there.
 
 `CTME` is an {ref}`Etch <category-etch>` step of the *dielectric,
 fluorocarbon* class — the same chemistry family as the trench and
-local-contact etches ({ref}`LICM1E <step-094>`) and the via etches
+local-contact etches ({ref}`LICM1E <step-094>`) and the {term}`via` etches
 above ({ref}`VIME <step-119>`) — with two properties that mark it
 out: it is a high-aspect-ratio hole rather than a line, so
 {term}`ARDE` and polymer build-up at the bottom govern the recipe;
@@ -63,16 +63,16 @@ connection between a device and the metal system:
 * **Contact area.** The PDK's extraction tables give an `mcon`
   152 000 mΩ — 152 Ω — against 15 000 mΩ for a `licon` and 4 500 mΩ
   for a `via`.[^pdk-08] A W-to-TiN interface of 0.09 µm bottom
-  CD[^pdk-03] has little more than a quarter of the drawn area of the
+  {term}`CD`[^pdk-03] has little more than a quarter of the drawn area of the
   0.17 µm top, and the taper the etch leaves, together with the
-  interfacial layer the liner forms, is on our reading why the number
+  interfacial layer the {term}`liner` forms, is on our reading why the number
   is so high. Ohmic contact to TiN is a metal–metal contact, so the
   dominant term is interfacial rather than a Schottky barrier
   ({term}`sheet resistance` and contact resistance are treated in the
   PDK's parasitic tables[^pdk-08]).
 * **Etch-stop integrity.** If the etch breaks through the 0.10 µm
   `li`[^pdk-04] the tungsten plug reaches whatever is below — the
-  PSG over a gate or the silicide — and the local-interconnect scheme
+  {term}`PSG` over a gate or the {term}`silicide` — and the local-interconnect scheme
   fails; if it under-etches, nitride or polymer remains at the bottom
   and the contact is open or resistive. The etch must therefore have
   an oxide-to-nitride selectivity high enough to stop on 0.075 µm of
@@ -105,7 +105,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 1. **Chamber.** A single-wafer dielectric etcher — a medium-density
    capacitively coupled or a high-density inductively coupled
    reactor with separate bias — with helium backside cooling, a
-   cooled electrostatic chuck and optical-emission endpoint
+   cooled {term}`electrostatic chuck` and optical-emission {term}`endpoint`
    ({ref}`category-etch`). Lam launched the Exelan dual-frequency
    dielectric etcher for this generation in 2001.[^lam-exelan]
 2. **BARC open.** If an organic {term}`BARC` was used at
@@ -132,7 +132,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    signal weak), which is why endpoint on such layers needs
    specialised detection — Wodecki describes a low-open-area
    multilayer dielectric endpoint method[^wodecki-1999] — or is run
-   by time with a monitor. The over-etch clears the deepest holes
+   by time with a monitor. The {term}`over-etch` clears the deepest holes
    while the nitride cap protects the `li`.
 5. **Nitride breakthrough.** A short, less polymerising step (CF₄ or
    CHF₃/O₂) removes the LINT nitride from the hole floor (on our
@@ -156,7 +156,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 * **Dielectric etcher**, 200 mm single-wafer: Lam Exelan / 4520XLE,
   Applied Materials eMax / MxP+ / Super-e, TEL DRM / Unity
   ({ref}`category-etch`); high-density alternatives (AMAT IPS, Lam
-  TCP 9100).
+  {term}`TCP` 9100).
 * **Resist asher** (Gasonics Aura, Mattson Aspen) and **wet bench or
   single-wafer clean** for post-etch residue.
 * **CD-SEM**, **cross-section SEM**, **e-test** for contact chains.
@@ -184,7 +184,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   for the oxide and nitride etch steps (industry practice;[^nojiri-2015]
   SkyWater lists CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]).
 * **Helium** for backside cooling; **NF₃** or O₂-based chamber clean.
-* **O₂/N₂** (and forming gas or CF₄) for the ash;[^skw-01]
+* **O₂/N₂** (and {term}`forming gas` or CF₄) for the ash;[^skw-01]
   **amine or semi-aqueous solvent** (EKC265/270 class) and DI water
   for the post-etch clean.[^skw-01]
 * **Chamber consumables** (liners, focus and edge rings, electrodes),

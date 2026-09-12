@@ -13,13 +13,13 @@
 ## What this step is
 
 `LINIT` deposits a thin, conformal silicon nitride over the patterned
-local interconnect: over the tops and sidewalls of the TiN lines of
-{ref}`LI1ME <step-103>`, the exposed cap oxide between them, and any
+{term}`local interconnect`: over the tops and sidewalls of the TiN lines of
+{ref}`LI1ME <step-103>`, the exposed {term}`cap oxide` between them, and any
 tungsten-plug tops the lines leave uncovered. The step code reads
 "LI nitride", and the PDK names the film: the process stack diagram
 labels the dielectric directly above `li` "LINT K=7.3" and
 dimensions it 0.075 µm.[^pdk-04] The relative permittivity is that
-of silicon nitride (7–7.5; the {ref}`SPNIT <step-076>` spacer nitride
+of silicon nitride (7–7.5; the {ref}`SPNIT <step-076>` {term}`spacer` nitride
 is labelled 7.5), so the film's identity is public even though its
 deposition method is not.
 
@@ -39,14 +39,14 @@ constraint on the recipe (inference from the materials present).
 ## Step category
 
 `LINIT` is a {ref}`Thin-film deposition <category-deposition>` step —
-a CVD silicon nitride, in the family of {ref}`ISONIT <step-003>`,
+a {term}`CVD` silicon nitride, in the family of {ref}`ISONIT <step-003>`,
 {ref}`GATENIT <step-058>` and {ref}`SPNIT <step-076>` before it and
 the {ref}`NTSD <step-167>` topside nitride at the end. What
 distinguishes this instance is the substrate and the temperature:
 the earlier nitrides were deposited on silicon and oxide at furnace
 temperatures, while this one goes onto titanium nitride, tungsten
 and oxide on a wafer whose thermal ceiling is now set by the
-silicide ({ref}`CSIL <step-098>`) and the metal films — so a plasma
+{term}`silicide` ({ref}`CSIL <step-098>`) and the metal films — so a plasma
 deposition at 300–400 °C ({term}`PECVD`; category
 page[^wiki-pecvd]) is the industry-typical choice, and we infer it
 here. It is also the first nitride in the flow deposited *as* an
@@ -63,10 +63,10 @@ the borderless-contact schemes of the era:
   oxide etch through the NILD2 oxide that must stop on a 0.1 µm TiN
   line — and, where the contact is misaligned or the line is narrow,
   must not dig into the oxide beside the line. An oxide etch stops on
-  nitride with the selectivity that the fluorocarbon-film mechanism
+  nitride with the {term}`selectivity` that the fluorocarbon-film mechanism
   gives (Schaepkens et al.[^schaepkens-1999]); the nitride is then
   opened with a short, separate etch. Liao et al. compared etch-stop
-  layers for borderless contacts and their effect on deep-submicron
+  layers for {term}`borderless contacts <borderless contact>` and their effect on deep-submicron
   device performance,[^liao-2004] and Cacciato et al. describe the
   charging that a conductive etch-stop nitride can cause during a
   contact etch,[^cacciato-2003] which is one reason its composition
@@ -133,7 +133,7 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
   (li.1 + li.3[^pdk-periph]); {term}`step coverage` is checked by
   cross-section SEM.
 * **Sequence.** Post-etch clean (at {ref}`LI1ME <step-103>`); load;
-  a short degas or N₂/NH₃ plasma pre-treatment to remove TiN
+  a short {term}`degas` or N₂/NH₃ plasma pre-treatment to remove TiN
   surface oxide; deposition; in-situ NF₃ chamber clean between
   wafers.[^txt-09]
 * **Metrology.** Thickness and refractive index by spectroscopic
@@ -164,7 +164,7 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
 ## Resources required
 
 * **Silane, ammonia and nitrogen** (PECVD),[^wiki-pecvd] or **BTBAS
-  and ammonia** (low-temperature LPCVD).[^gumpher-2004]
+  and ammonia** (low-temperature {term}`LPCVD`).[^gumpher-2004]
 * **NF₃** (with argon or oxygen) chamber clean; **helium** or
   **argon** diluent.[^txt-09]
 * **Chamber consumables** — showerheads, heater and liner parts.

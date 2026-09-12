@@ -13,7 +13,7 @@
 ## What this step is
 
 `PSDM` is the P⁺ source/drain implant mask. It coats the wafer — now
-carrying spacers, the nitride cut and the fresh {ref}`SPOX <step-080>`
+carrying spacers, the {term}`nitride cut` and the fresh {ref}`SPOX <step-080>`
 oxide — with photoresist, exposes it through the P⁺ implant reticle
 and develops it, leaving resist windows over every region that is to
 receive the heavy p-type implants of {ref}`PSDI <step-082>` and
@@ -93,7 +93,7 @@ implants" CMOS source/drain scheme.
 Two proximity effects follow from a high-dose implant edge in resist.
 Ions scattered laterally from the resist edge shift the threshold of
 transistors placed near it — Hook et al. measured the lateral
-straggle and mask-proximity effect at IBM,[^hook-2003] Sheu et al.
+straggle and {term}`mask-proximity effect` at IBM,[^hook-2003] Sheu et al.
 built a compact model of the well-edge version,[^sheu-2006] and
 Drennan, Kniffin and Locascio explained what it means for analogue
 layout[^drennan-2006] — which is why the layer carries enclosure and

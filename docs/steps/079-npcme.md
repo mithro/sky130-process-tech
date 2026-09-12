@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`NPCME` etches the nitride poly cut. Through the resist windows printed
+`NPCME` etches the {term}`nitride poly cut <nitride cut>`. Through the resist windows printed
 at {ref}`NPCM <step-078>`, it removes the dielectric cap standing on
 the poly — whatever remains of the {ref}`POC <step-059>` oxide and the
 {ref}`GATENIT <step-058>` nitride, about 0.2 µm of it after the spacer
@@ -51,14 +51,14 @@ of little help, because the last film before the poly is nitride.
 
 Everything a poly line will ever connect to passes through this
 opening. The local-interconnect contact `licon1` is etched later
-({ref}`LICM1E <step-094>`) through the sacrificial PSG and cap oxide
+({ref}`LICM1E <step-094>`) through the sacrificial PSG and {term}`cap oxide`
 ({ref}`PSG <step-089>`, {ref}`NCAPOX <step-091>`); if the nitride cap
 were still under it, the contact etch would have to change chemistry
 at the bottom of a 0.17 µm hole[^pdk-periph] and would stop unevenly
 on gates, resistor ends and interconnect. Cutting the nitride now, on
 a flat, resist-defined pattern, is easier to control and lets the
 contact etch stop on a uniform surface. The scheme is the one Tang et
-al. used for the titanium-nitride local interconnect at Texas
+al. used for the titanium-nitride {term}`local interconnect` at Texas
 Instruments, where the nitride over poly was removed only at contact
 sites.[^tang-1985][^tang-1987]
 

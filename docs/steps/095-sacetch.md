@@ -13,8 +13,8 @@
 ## What this step is
 
 `SACETCH` — "sacrificial etch" — sits between the contact etch
-({ref}`LICM1E <step-094>`) and the alloy anneal ({ref}`ALLY1 <step-096>`)
-that precedes the titanium liner. Its name says that something
+({ref}`LICM1E <step-094>`) and the {term}`alloy anneal` ({ref}`ALLY1 <step-096>`)
+that precedes the titanium {term}`liner`. Its name says that something
 *sacrificial* is removed; the step list used in this reference does
 not say what. No public source describes it. What is certain is its
 position: the contact holes are open, the resist has been (or is
@@ -44,7 +44,7 @@ all three as inferences:
    grow or deposit a few nanometres of oxide in the open contacts
    after the plasma etch to consume the damaged silicon that Fonash
    and Oehrlein describe,[^fonash-1990][^oehrlein-1989] then strip it;
-   the step would then be that strip. The thermal budget argues
+   the step would then be that strip. The {term}`thermal budget` argues
    against a grown oxide here (the junctions are 0.1 µm deep[^pdk-03]),
    but a low-temperature chemical oxide is possible.
 3. **A sacrificial-layer etch in the resist sense.** The resist and
@@ -76,7 +76,7 @@ Reinhardt and Reidy.[^reinhardt-2008][^reinhardt-2010]
 
 ## Why this step exists
 
-The contact silicide ({ref}`CSIL <step-098>`) forms only where
+The {term}`contact silicide` ({ref}`CSIL <step-098>`) forms only where
 titanium touches clean silicon. The reasons a wet etch is inserted
 before the liner:
 
@@ -98,10 +98,10 @@ before the liner:
   {ref}`LICM1E <step-094>` reading), that oxide has to come off here;
   Monk, Soane and Howe give the kinetics of HF etching of thin oxide
   films in confined geometries.[^monk-1994]
-* **What must survive.** The nitride spacers and the gate caps are
+* **What must survive.** The nitride {term}`spacers <spacer>` and the gate caps are
   exposed on the walls of the diffusion contacts; nitride etches
   slowly in HF, with the mechanism Knotter and Denteneer
-  describe,[^knotter-2001] but the PSG and cap oxide of the walls
+  describe,[^knotter-2001] but the {term}`PSG` and {term}`cap oxide` of the walls
   etch quickly — doped glass faster than undoped — so the dip is
   short and the {term}`over-etch` small. Every nanometre removed from
   the walls widens the hole the liner must cover.
@@ -113,7 +113,7 @@ before the liner:
   HF.[^kern-1990][^kern-handbook]
 
 Without `SACETCH`, on this reading, every contact would carry an
-interfacial oxide and the silicide anneal would give high, variable
+interfacial oxide and the {term}`silicide` anneal would give high, variable
 contact resistance.
 
 ## How it is typically performed
@@ -134,7 +134,7 @@ fab (SKY130's recipe is not public):
    practice[^reinhardt-2010]), for tens of seconds — long enough to
    remove a few nanometres of oxide from the contact bottoms, short
    enough to take little from the walls; the etch rate follows the
-   acid concentration.[^judge-1971] BOE is the alternative where a
+   acid concentration.[^judge-1971] {term}`BOE` is the alternative where a
    more stable rate is wanted (6:1 BOE etches thermal oxide at
    "approximately 2 nanometres per second"[^wiki-boe], too fast for
    this purpose undiluted).
@@ -245,13 +245,13 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* What "sacrificial" refers to — the screen oxide at the contact
+* What "sacrificial" refers to — the {term}`screen oxide` at the contact
   bottoms, a deliberately formed post-etch oxide, or the resist and
   BARC — is not public; all three readings above are inferences.
 * The chemistry (dilute HF or BOE, concentration, time), the tool
   and whether the step includes the resist strip are not public.
 * Whether a chemical oxide is deliberately left on the contact
-  bottoms (some liner processes prefer it) rather than an HF-last
+  bottoms (some liner processes prefer it) rather than an {term}`HF-last`
   surface is not public.
 
 <!-- footnotes -->

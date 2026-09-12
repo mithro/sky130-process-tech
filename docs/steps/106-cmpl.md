@@ -12,11 +12,11 @@
 
 ## What this step is
 
-`CMPL` — chemical-mechanical polish over the local interconnect —
+`CMPL` — chemical-mechanical polish over the {term}`local interconnect` —
 planarises the inter-level oxide of {ref}`NILD2 <step-105>` and sets
 its final thickness. The as-deposited oxide copies the 0.1 µm TiN
 lines and their 0.075 µm nitride cap[^pdk-04] beneath it, more
-strongly over dense LI arrays than over open field; the wafer is
+strongly over dense {term}`LI` arrays than over open field; the wafer is
 polished in an alkaline silica slurry (industry-typical) until that
 topography is gone and a controlled thickness of oxide — the PDK's
 0.265 µm "NILD2"
@@ -46,7 +46,7 @@ What is specific to this instance is the thinness of the films
 involved: the step to be planarised is only about 0.175 µm, the
 remaining oxide only 0.265 µm,[^pdk-04] and beneath that oxide lie
 the nitride cap and the 0.1 µm TiN — so an over-polish that would be
-harmless on a thick inter-metal dielectric here reaches the nitride
+harmless on a thick {term}`inter-metal dielectric` here reaches the nitride
 over dense LI, and an under-polish leaves steps that the 0.17 µm
 `mcon` lithography ({ref}`CTM1 <step-107>`; ct.1[^pdk-periph])
 cannot tolerate. The polish is therefore controlled to a remaining
@@ -81,7 +81,7 @@ thin films:
   did to {ref}`CMPP <step-090>`; Kahng and Samadi survey the fill
   synthesis that keeps LI-level density within the window.[^kahng-2008]
 * **Defectivity.** Scratches and slurry residue from this polish
-  become contact and metal-1 defects; the post-CMP clean is part of
+  become contact and metal-1 defects; the {term}`post-CMP clean` is part of
   the step, and the {ref}`NCAPOX3 <step-117>`-style cap that follows
   a metal-level polish has no counterpart here, so the polished
   surface itself must be clean enough for lithography.
@@ -165,7 +165,7 @@ fab (SKY130's recipe is not public):
 * The conductors and cap beneath the oxide: {ref}`LITIN <step-101>`,
   {ref}`LI1ME <step-103>`, {ref}`LINIT <step-104>`.
 * The earlier oxide polish of the module: {ref}`CMPP <step-090>`;
-  the tungsten polish: {ref}`WCMPLI <step-100>`; the STI polish:
+  the tungsten polish: {ref}`WCMPLI <step-100>`; the {term}`STI` polish:
   {ref}`CMPNIT <step-012>`.
 * The later metal-level polishes: {ref}`CMPM <step-116>`,
   {ref}`CMPM2 <step-127>`.
@@ -225,7 +225,7 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* The removal amount, slurry, endpoint method and post-CMP clean are
+* The removal amount, slurry, {term}`endpoint` method and post-CMP clean are
   not public.
 * Whether the 0.265 µm of the stack diagram is the post-polish
   thickness over LI (our reading) or a nominal design value is not
