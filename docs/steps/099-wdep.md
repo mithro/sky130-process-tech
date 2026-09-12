@@ -32,10 +32,10 @@ aspect ratio (up to 10:1)" among its deposition tools,[^skw-01] and
 modules.[^skw-01] The PDK describes `licon1` as the "Contact to local
 interconnect"[^pdk-06] with a 15 000 mΩ per-contact
 resistance,[^pdk-08] and its physical criteria give a "min. etch and
-fill capability" of 0.15 µm for licon.[^pdk-03] The step names —
-`WDEP` here and {ref}`WDEP2 <step-110>` to {ref}`WDEP5 <step-147>`
-at the contact and {term}`via` levels — say that the same blanket-fill-and-
-polish scheme is used at every level.
+fill capability" of 0.15 µm for licon.[^pdk-03] This reference uses
+the same blanket-fill-and-polish scheme at every level: `WDEP` here
+and {ref}`WDEP2 <step-110>` to {ref}`WDEP5 <step-147>` at the contact
+and {term}`via` levels.
 
 ## Step category
 
