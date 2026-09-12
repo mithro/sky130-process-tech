@@ -18,8 +18,8 @@
 {ref}`NWM <step-017>`, can be coated on a bare, particle-free oxide
 surface. It is the second implant-resist strip of the flow (after
 {ref}`DNIS <step-009>`) and the first of five in the well and channel
-module; the step list pairs every implant mask with such an "…IS"
-step.
+module; the step list used in this reference pairs every implant mask
+with such an "…IS" step.
 
 The resist being removed is the roughly 1 µm i-line implant resist
 inferred on the {ref}`LVTNM <step-014>` page. It has received a

@@ -26,25 +26,25 @@ oxide inside them — the pad oxide, we infer — is then etched away
 that the tunnel oxide of the {term}`ONO` stack can be grown on bare
 silicon at {ref}`ONO <step-040>`.
 
-The PDK documents the mask and the drawn layer behind it. The mask
-table lists "Tunnel Mask, TUNM" as used in SKY130,[^pdk-05] the
-generated mask layer is `ctunm` (GDS 20:0, "Tunnel mask"), and the
-drawn layer is `tunm` (GDS 80:20), which the layer list describes as
-"SONOS device tunnel implant".[^pdk-06] That description — an
-*implant* layer rather than an oxide layer — is the strongest public
-hint about what the following steps do, and matches the two implants
-that the step list used in this reference places between this mask
-and its etch. The `tunm` rules (function: "Defines SONOS FETs") give
-the geometry: minimum width 0.410 µm (tunm.1), minimum spacing
-0.500 µm (tunm.2), an extension of `tunm` beyond the poly-over-active
-gate of 0.095 µm (tunm.3) and the same 0.095 µm clearance to any
-other gate (tunm.4); "(poly and diff) may not straddle tunm" (tunm.5);
-"Tunm outside deep n-well is not allowed" (tunm.6a); a minimum area of
-0.672 µm² (tunm.7); and `tunm` "must be enclosed by areaid.ce"
-(tunm.8),[^pdk-periph] the "Memory (SRAM) core cell identifier"
-layer.[^pdk-06] A separate rule on the thick-oxide layer, "Hvi must
-not overlap tunm" (hvi.4),[^pdk-periph] keeps the memory transistor
-out of the 5 V gate-oxide regions defined at {ref}`LVOM <step-044>`.
+The PDK documents the mask and the drawn layer behind it. The mask table
+lists "Tunnel Mask, TUNM" as used in SKY130,[^pdk-05] the generated mask
+layer is `ctunm` (GDS 20:0, "Tunnel mask"), and the drawn layer is
+`tunm` (GDS 80:20), which the layer list describes as "SONOS device
+tunnel implant".[^pdk-06] That description — an *implant* layer rather
+than an oxide layer — is the strongest hint in the PDK about what the
+following steps do, and matches the two implants that the step list used
+in this reference places between this mask and its etch. The `tunm`
+rules (function: "Defines SONOS FETs") give the geometry: minimum width
+0.410 µm (tunm.1), minimum spacing 0.500 µm (tunm.2), an extension of
+`tunm` beyond the poly-over-active gate of 0.095 µm (tunm.3) and the
+same 0.095 µm clearance to any other gate (tunm.4); "(poly and diff) may
+not straddle tunm" (tunm.5); "Tunm outside deep n-well is not allowed"
+(tunm.6a); a minimum area of 0.672 µm² (tunm.7); and `tunm` "must be
+enclosed by areaid.ce" (tunm.8),[^pdk-periph] the "Memory (SRAM) core
+cell identifier" layer.[^pdk-06] A separate rule on the thick-oxide
+layer, "Hvi must not overlap tunm" (hvi.4),[^pdk-periph] keeps the
+memory transistor out of the 5 V gate-oxide regions defined at
+{ref}`LVOM <step-044>`.
 
 Together these say that the tunnel window is drawn tightly around the
 gate of each SONOS transistor, that every memory cell sits inside a

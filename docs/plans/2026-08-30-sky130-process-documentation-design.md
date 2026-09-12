@@ -35,8 +35,7 @@ targeted at publication on Read the Docs.
 
 ## Source policy (critical)
 
-Only publicly available documents may be cited. Working notes are kept
-outside this repository.
+Only publicly available documents may be cited.
 
 An independent review sub-agent audits the tree and the commit history
 at regular intervals for:

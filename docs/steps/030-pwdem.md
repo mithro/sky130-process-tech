@@ -203,9 +203,9 @@ An industry-generic drain-extension well lithography for a 200 mm,
 * Whether `pwde` defines the body of the 20 V NMOS, the drift region
   of the 20 V PMOS, or both, is inferred from the rule geometry; the
   PDK's 20 V cross-section drawings are not labelled in text form.
-* The blank "Used in SKY130" entry for PWDEM in the PDK mask table
-  conflicts with the step list; which is authoritative is not
-  resolvable publicly.
+* The blank "Used in SKY130" entry for PWDEM in the PDK mask table sits
+  oddly with the existence of the `pwde` layer and its rules; we treat
+  it as a documentation inconsistency that cannot be resolved publicly.
 * Resist thickness and exposure tool are inferred.
 
 <!-- footnotes -->

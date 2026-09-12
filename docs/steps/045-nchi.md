@@ -213,7 +213,8 @@ fab (SKY130's values are not public):
 * Whether the low-voltage oxide window through which it is implanted
   excludes the 1.8 V PMOS regions, or whether those regions receive
   the dose, is not public.
-* The acronym's expansion beyond "N-channel implant" is not public.
+* The step list used in this reference names this step "N-channel
+  implant"; no public source says which N-channel implant it is.
 
 <!-- footnotes -->
 

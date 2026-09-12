@@ -20,18 +20,18 @@ the same resist — the P-channel implant {ref}`PCHI <step-023>` and the
 P-channel BF₂ implant {ref}`PNCHI <step-024>` — and the resist is
 stripped at {ref}`PCHIS <step-025>`.
 
-A note on the name. The step list expands the code as "High V P-channel
-implant mask", which could be read as *high-voltage*. The PDK is
-unambiguous that the "V" is a threshold: the mask table lists "High Vt
-PCh*, HVTPM";[^pdk-05] the drawn layer `hvtp` (GDS 78:44) is "High-Vt
-LVPMOS implant" and the generated mask `chvtpm` (GDS 97:0) is "High Vt
-Pch mask", with mask add/drop purposes 97:43 and 97:42;[^pdk-06] and the
-rule table's function line reads "Define Vt adjust implant region for
-high Vt LV PMOS".[^pdk-periph] The device it creates is `pfet_01v8_hvt`,
-the "1.8V high-VT PMOS FET", and the high-Vt varactor option
-`cap_var_hvt`.[^pdk-07] The "LV" in the layer's description makes the
-point twice: this is a low-voltage (1.8 V) device with a high threshold,
-nothing to do with the 5 V or 20 V families.
+A note on the name. The step list used in this reference gives the name
+"High V P-channel implant mask", which could be read as *high-voltage*.
+The PDK is unambiguous that the "V" is a threshold: the mask table lists
+"High Vt PCh*, HVTPM";[^pdk-05] the drawn layer `hvtp` (GDS 78:44) is
+"High-Vt LVPMOS implant" and the generated mask `chvtpm` (GDS 97:0) is
+"High Vt Pch mask", with mask add/drop purposes 97:43 and
+97:42;[^pdk-06] and the rule table's function line reads "Define Vt
+adjust implant region for high Vt LV PMOS".[^pdk-periph] The device it
+creates is `pfet_01v8_hvt`, the "1.8V high-VT PMOS FET", and the high-Vt
+varactor option `cap_var_hvt`.[^pdk-07] The "LV" in the layer's
+description makes the point twice: this is a low-voltage (1.8 V) device
+with a high threshold, nothing to do with the 5 V or 20 V families.
 
 The design rules are as coarse as those of `lvtn`: minimum width
 0.380 µm (hvtp.1), minimum spacing 0.380 µm (hvtp.2), minimum enclosure
@@ -66,9 +66,9 @@ channel dose; `HVTPM` is that mask. Without it the PDK's `_hvt` PMOS and
 high-Vt varactor would not exist, and low-leakage standard-cell
 libraries built on them could not be offered.
 
-There is no NMOS equivalent in the step list: NMOS come in standard,
-low-Vt and native flavours only,[^pdk-07] so the high-Vt option is
-PMOS-only in SKY130.
+There is no NMOS equivalent in the step list used in this reference:
+NMOS come in standard, low-Vt and native flavours only,[^pdk-07] so the
+high-Vt option is PMOS-only in SKY130.
 
 ## How it is typically performed
 

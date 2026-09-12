@@ -114,18 +114,17 @@ memory (SKY130's recipe is not public):
    ({ref}`category-strip`); the resist has seen a fluorocarbon plasma
    and carries polymer residue that the wet step removes.
 5. **Bottom oxide.** The remaining (inferred) pad oxide (plus the
-   fraction of a
-   nanometre that the tunnel oxidation added) is removed in BOE or
-   dilute HF — "an etchant, such as BOE, is employed to clear
+   fraction of a nanometre that the tunnel oxidation added) is removed
+   in BOE or dilute HF — "an etchant, such as BOE, is employed to clear
    sacrificial dielectric layer 303"[^pat-03] — exposing the logic
    silicon for gate oxidation. Whether this happens here or as the
    {ref}`GOX100 <step-043>` pre-clean is not resolvable from the step
-   list; the Cypress flows differ on it (see {ref}`GOX100 <step-043>`).
-   One Cypress patent warns that once the stack is exposed,
-   "Conventional HF-based gate insulator pre-cleans will etch or
-   otherwise degrade the quality of the ONO charge trapping dielectric
-   stack 306, particularly when the stack includes a CVD formed
-   blocking layer",[^pat-03] which is why its pre-clean is
+   list used in this reference; the Cypress flows differ on it (see
+   {ref}`GOX100 <step-043>`). One Cypress patent warns that once the
+   stack is exposed, "Conventional HF-based gate insulator pre-cleans
+   will etch or otherwise degrade the quality of the ONO charge trapping
+   dielectric stack 306, particularly when the stack includes a CVD
+   formed blocking layer",[^pat-03] which is why its pre-clean is
    "substantially free of HF"[^pat-03] while the other protects the
    blocking oxide with a sacrificial cap that the BOE removes.[^pat-04]
 6. **All-wet alternative.** The stack could in principle be removed
