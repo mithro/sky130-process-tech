@@ -18,18 +18,17 @@ and capacitor electrodes); and silicon oxynitride (MiM capacitor
 dielectric and anti-reflective layers).
 
 Precisely, the films are grown by one of two families of technique.
-*Chemical vapour deposition* ({term}`CVD`) feeds gaseous precursors
-into a heated, low-pressure chamber, where they react on the surface
-(and, in plasma variants, are pre-dissociated by an RF discharge) to
-leave a solid film and volatile by-products ([Wikipedia: Chemical
-vapor deposition][wiki-cvd]). *Physical vapour deposition*
-({term}`PVD`) knocks atoms off a solid target with argon ions from a
-magnetron plasma and lets them condense on the wafer ([Wikipedia:
-Sputter deposition][wiki-sputter]). The choice between them is set by
-the material (metals are sputtered; dielectrics, silicon and tungsten
-are grown by CVD), by the temperature the wafer can tolerate at that
-point in the flow (below about 450 °C once aluminium is present), and
-by how conformally the film must coat holes and steps.
+*Chemical vapour deposition* ({term}`CVD`) feeds gaseous precursors into
+a heated, low-pressure chamber, where they react on the surface (and, in
+plasma variants, are pre-dissociated by an RF discharge) to leave a
+solid film and volatile by-products.[^wiki-cvd] *Physical vapour
+deposition* ({term}`PVD`) knocks atoms off a solid target with argon
+ions from a magnetron plasma and lets them condense on the
+wafer.[^wiki-sputter] The choice between them is set by the material
+(metals are sputtered; dielectrics, silicon and tungsten are grown by
+CVD), by the temperature the wafer can tolerate at that point in the
+flow (below about 450 °C once aluminium is present), and by how
+conformally the film must coat holes and steps.
 
 ## Physics and engineering background
 
@@ -38,66 +37,59 @@ by how conformally the film must coat holes and steps.
 A CVD reaction proceeds in series: reactant transport through the
 boundary layer to the surface, adsorption, surface reaction and
 desorption of by-products. At low temperature the surface reaction is
-the bottleneck and the rate follows an Arrhenius law,
-{math}`R \propto e^{-E_A/kT}`; at high temperature transport limits the
-rate and it becomes nearly temperature-independent. Films deposited in
-the surface-reaction-limited regime are conformal, because reactants
-reach every surface at the same concentration and have time to migrate
-before reacting; films deposited in the transport-limited regime are
-thicker on exposed corners and thinner in recesses, and can pinch off
-narrow gaps leaving voids (Plummer, Deal and Griffin, ch. 9; Ohring,
-ch. 6 [ohring]). Conformality is quantified as {term}`step coverage`,
-and the {term}`aspect ratio` of the feature being coated is the
-governing parameter. Low sticking coefficients (as in {term}`LPCVD`
-{term}`TEOS` oxide and nitride) give the best step coverage; PECVD and
-PVD films have sticking coefficients near unity and poor bottom
-coverage in deep holes.
+the bottleneck and the rate follows an Arrhenius law, {math}`R \propto
+e^{-E_A/kT}`; at high temperature transport limits the rate and it
+becomes nearly temperature-independent. Films deposited in the
+surface-reaction-limited regime are conformal, because reactants reach
+every surface at the same concentration and have time to migrate before
+reacting; films deposited in the transport-limited regime are thicker on
+exposed corners and thinner in recesses, and can pinch off narrow gaps
+leaving voids.[^txt-01][^ohring-2002] Conformality is quantified as
+{term}`step coverage`, and the {term}`aspect ratio` of the feature being
+coated is the governing parameter. Low sticking coefficients (as in
+{term}`LPCVD` {term}`TEOS` oxide and nitride) give the best step
+coverage; PECVD and PVD films have sticking coefficients near unity and
+poor bottom coverage in deep holes.
 
 ### LPCVD
 
 Low-pressure CVD runs at 0.1–1 Torr in a hot-wall batch furnace, which
 deposits on 100 or more wafers at once with excellent uniformity
 because the low pressure makes the gas-phase diffusion length long
-compared with the wafer spacing (Plummer, Deal and Griffin, ch. 9). The
+compared with the wafer spacing.[^txt-01] The
 standard LPCVD films and their typical industry conditions are:
 
-* **Polysilicon or amorphous silicon** from silane, SiH₄ → Si + 2H₂,
-  at roughly 580–650 °C. Below about 580 °C the film deposits amorphous
-  and crystallises during later anneals, giving a smoother surface and
-  finer grain, which helps gate etch and CD control; SKY130's gate is
+* **Polysilicon or amorphous silicon** from silane, SiH₄ → Si + 2H₂, at
+  roughly 580–650 °C. Below about 580 °C the film deposits amorphous and
+  crystallises during later anneals, giving a smoother surface and finer
+  grain, which helps gate etch and CD control; SKY130's gate is
   deposited amorphous ({ref}`SAGD <step-048>`). Phosphine or diborane
   can be co-flowed for in-situ doping, but gates in a dual-work-function
-  CMOS process are usually implanted instead ([Wikipedia:
-  Polycrystalline silicon][wiki-poly]; Plummer, Deal and Griffin, ch. 9).
-* **Silicon nitride** from dichlorosilane and ammonia,
-  3SiH₂Cl₂ + 4NH₃ → Si₃N₄ + 6HCl + 6H₂, at roughly 700–800 °C. The
-  film is dense, highly conformal and under tensile stress of order
-  1 GPa, which limits its thickness before cracking or wafer bowing
-  ([Wikipedia: Silicon nitride][wiki-sin]; Wolf and Tauber, ch. 6).
-  Used for the STI polish-stop/hard mask ({ref}`ISONIT <step-003>`),
-  the gate cap ({ref}`GATENIT <step-058>`) and the spacer
-  ({ref}`SPNIT <step-076>`).
-* **TEOS oxide**, Si(OC₂H₅)₄ → SiO₂ + by-products, at roughly
-  650–750 °C; and **HTO** (high-temperature oxide) from SiH₂Cl₂ + N₂O
-  at 800–900 °C, both temperatures being typical industry values
-  (Plummer, Deal and Griffin, ch. 9; Wolf and Tauber, ch. 6). Both are
-  conformal and are used for spacers and liners ([Wikipedia: Tetraethyl
-  orthosilicate][wiki-teos]).
+  CMOS process are usually implanted instead.[^wiki-poly][^txt-01]
+* **Silicon nitride** from dichlorosilane and ammonia, 3SiH₂Cl₂ + 4NH₃ →
+  Si₃N₄ + 6HCl + 6H₂, at roughly 700–800 °C. The film is dense, highly
+  conformal and under tensile stress of order 1 GPa, which limits its
+  thickness before cracking or wafer bowing.[^wiki-sin][^txt-02] Used
+  for the STI polish-stop/hard mask ({ref}`ISONIT <step-003>`), the gate
+  cap ({ref}`GATENIT <step-058>`) and the spacer ({ref}`SPNIT
+  <step-076>`).
+* **TEOS oxide**, Si(OC₂H₅)₄ → SiO₂ + by-products, at roughly 650–750
+  °C; and **HTO** (high-temperature oxide) from SiH₂Cl₂ + N₂O at 800–900
+  °C, both temperatures being typical industry values.[^txt-01][^txt-02]
+  Both are conformal and are used for spacers and liners.[^wiki-teos]
 
 ### PECVD
 
 Plasma-enhanced CVD uses a 13.56 MHz (often mixed with a low-frequency
 component) capacitive discharge to dissociate the precursors so that
 deposition proceeds at 250–400 °C, low enough for wafers that already
-carry aluminium ([Wikipedia: Plasma-enhanced chemical vapor
-deposition][wiki-pecvd]). Typical films:
+carry aluminium.[^wiki-pecvd] Typical films:
 
 * **Oxide** from SiH₄ + N₂O, or from TEOS + O₂ (better conformality and
   lower particle count). PECVD TEOS oxide is the workhorse inter-level
   dielectric and capping oxide of an aluminium BEOL; the ITRS 2001
   notes that fluorinated versions ("Low κ FSG (κ = 3.7)") had "been in
-  production since the 250 nm node" ([ITRS 2001,
-  Interconnect][itrs2001-ic]).
+  production since the 250 nm node".[^itrs-02]
 * **Nitride** from SiH₄ + NH₃ + N₂, hydrogen-rich (10–25 at.% H),
   used as an etch stop and as the final scratch- and
   moisture-resistant passivation ({ref}`NTSD <step-167>`).
@@ -106,13 +98,12 @@ deposition][wiki-pecvd]). Typical films:
   dielectric anti-reflective coating under photoresist and as the
   dielectric of MiM capacitors ({ref}`CAPILD <step-135>`).
 * **PSG** by adding PH₃ to an oxide deposition, typically 4–8 wt.% P
-  (a typical industry range; Wolf and Tauber, ch. 6), which getters
-  sodium and, in older flows, could be reflowed ([Wikipedia:
-  Phosphosilicate glass][wiki-psg]).
+  (a typical industry range),[^txt-02] which getters
+  sodium and, in older flows, could be reflowed.[^wiki-psg]
 
 The ion bombardment inherent in PECVD lets film stress be tuned from
 compressive to tensile by adjusting the low-frequency power, a
-freedom LPCVD lacks (Lieberman and Lichtenberg, ch. 16 [lieberman]).
+freedom LPCVD lacks.[^lieberman-2005]
 
 ### HDP-CVD
 
@@ -125,35 +116,33 @@ deposition-to-sputter ratio is the key recipe knob, and the bias makes
 the process hot (wafer temperature is controlled by helium backside
 cooling on an electrostatic chuck). HDP-CVD oxide fills the STI
 trenches ({ref}`FILOX <step-011>`) and, in many aluminium processes,
-the gaps between metal lines before a capping oxide and CMP
-(Plummer, Deal and Griffin, ch. 9; Nishi and Doering [nishi]).
+the gaps between metal lines before a capping oxide and CMP.[^txt-01][^txt-09]
 
 ### PVD (sputtering)
 
 In magnetron sputtering an argon plasma is confined near the target by
 crossed electric and magnetic fields; Ar⁺ ions strike the target and
 eject atoms with a few eV of energy that travel line-of-sight to the
-wafer ([Wikipedia: Sputter deposition][wiki-sputter]). Because the flux
-is directional and the sticking coefficient is about one, step coverage
-in a contact hole is poor, and film microstructure follows Thornton's
-zone model with pressure and homologous temperature (Ohring, ch. 5
-[ohring]). The metallisation films of an aluminium BEOL are:
+wafer.[^wiki-sputter] Because the flux is directional and the sticking
+coefficient is about one, step coverage in a contact hole is poor, and
+film microstructure follows Thornton's zone model with pressure and
+homologous temperature.[^ohring-2002] The metallisation films of an
+aluminium BEOL are:
 
 * **Aluminium–copper**, typically Al with 0.5–1 wt.% Cu, sputtered at
   150–400 °C. The copper segregates to grain boundaries and greatly
-  improves electromigration lifetime relative to pure aluminium
-  ([Wikipedia: Electromigration][wiki-em]; Wolf and Tauber, ch. 11).
-* **Titanium** as an adhesion/contact layer and **titanium nitride**
-  by reactive sputtering of Ti in Ar/N₂. A conductive TiN underlayer
-  keeps a line open after an Al void forms, and it was on Al stripes
-  over TiN that Blech discovered the critical-length ("Blech length")
-  effect ([Blech 1976][blech]); on top of Al it serves as an
-  anti-reflective coating for lithography and as a diffusion barrier
-  ([Wikipedia: Titanium nitride][wiki-tin]).
-* **Titanium–tungsten** (Ti:W, "typically composed of 10 wt% of
-  titanium and the balance of tungsten" [US 5,160,534][tiw-patent]), a
-  barrier and anti-reflective cap used in some aluminium stacks and as
-  a capacitor electrode.
+  improves electromigration lifetime relative to pure
+  aluminium.[^wiki-em][^txt-02]
+* **Titanium** as an adhesion/contact layer and **titanium nitride** by
+  reactive sputtering of Ti in Ar/N₂. A conductive TiN underlayer keeps
+  a line open after an Al void forms, and it was on Al stripes over TiN
+  that Blech discovered the critical-length ("Blech length")
+  effect;[^blech-1976] on top of Al it serves as an anti-reflective
+  coating for lithography and as a diffusion barrier.[^wiki-tin]
+* **Titanium–tungsten** (Ti:W, "typically composed of 10 wt% of titanium
+  and the balance of tungsten"),[^pat-tiw-hitachi] a barrier and
+  anti-reflective cap used in some aluminium stacks and as a capacitor
+  electrode.
 * **Cobalt or titanium** for {term}`salicide` formation
   ({ref}`category-anneal`).
 
@@ -164,16 +153,15 @@ metal; a wafer bias then draws the ions vertically down the hole, so
 bottom coverage rises to tens of per cent. IMP Ti/TiN is the standard
 liner under CVD tungsten at this node, which is why SKY130's liner steps
 are named "IMP Ti/TiN" ({ref}`TI/TIN1 <step-097>`) and "IMP TiN"
-({ref}`TIN2 <step-109>`) (Nishi and Doering [nishi]; Applied
-Materials IMP patents, e.g. [US 6,350,353][imp-patent]).
+({ref}`TIN2 <step-109>`) (see, for example, an Applied Materials
+IMP patent).[^txt-09][^pat-imp-amat]
 
 ### CVD tungsten
 
 Tungsten plugs are grown from tungsten hexafluoride. A thin nucleation
 layer is deposited by silane reduction, 2WF₆ + 3SiH₄ → 2W + 3SiF₄ + 6H₂,
 then the bulk fill by hydrogen reduction, WF₆ + 3H₂ → W + 6HF, at
-roughly 400–450 °C and a few tens of Torr ([Wikipedia: Tungsten
-hexafluoride][wiki-wf6]; Plummer, Deal and Griffin, ch. 11). CVD W is
+roughly 400–450 °C and a few tens of Torr.[^wiki-wf6][^txt-01] CVD W is
 almost perfectly conformal, so it fills contacts from the sidewalls
 inward and leaves only a small seam. The TiN liner is essential: WF₆
 attacks bare silicon and titanium, and HF by-product would otherwise
@@ -185,43 +173,41 @@ etch oxide. The blanket film is then removed from the field by CMP
 The SKY130 PDK's design-rule assumptions page publishes the nominal
 thicknesses used for antenna-ratio calculations: poly 0.18 µm, local
 interconnect (LI1) 0.1 µm, metal 1 and metal 2 0.35 µm, metal 3 and
-metal 4 0.8 µm (2 µm in the thick-metal flow options), metal 5 1.2 µm
-or 2 µm depending on the flow option, an oxide spacer of 0.05 µm and a
-pre-LI ILD of 0.5 µm ([SKY130 PDK, Criteria & Assumptions][pdk-assume]).
-These are the antenna-rule assumptions; the PDK's process stack diagram
-labels the same conductors 0.36, 0.845 and 1.26 µm ([SKY130 PDK,
-process stack diagram][pdk-stack]). These are the deposited (and, for
-the dielectrics, post-CMP) targets that the deposition steps below must
-hit.
+metal 4 0.8 µm (2 µm in the thick-metal flow options), metal 5 1.2 µm or
+2 µm depending on the flow option, an oxide spacer of 0.05 µm and a
+pre-LI ILD of 0.5 µm.[^pdk-03] These are the antenna-rule assumptions;
+the PDK's process stack diagram labels the same conductors 0.36, 0.845
+and 1.26 µm.[^pdk-04] These are the deposited (and, for the dielectrics,
+post-CMP) targets that the deposition steps below must hit.
 
 ## Typical equipment
 
-* **LPCVD furnaces**: the same vertical batch furnaces as for
-  oxidation, fitted with silane, DCS, ammonia and TEOS (bubbler or
-  liquid injection) delivery and a vacuum pump train — ASM A400
-  ("LPCVD processes like doped silicon and silicon nitride films"
-  [asm-a400]), TEL Alpha-8, Aviza/Thermco.
-* **PECVD**: single-wafer multi-station or multi-chamber cluster
-  tools — Novellus Concept One/Concept Two Sequel (Novellus's
-  dielectric line comprised "Concept One, Concept One Maxus, Concept
-  Two Sequel, Concept Two Dual Sequel, Concept Two Sequel-S"
-  [novellus]), Applied Materials Producer ("Twin-Chamber" modules,
-  two single-wafer chambers per unit [amat-10k]) and Centura DxZ.
-* **HDP-CVD**: Novellus SPEED (completed in 1995, "a high-density
-  plasma system with simpler, more cost-effective solutions for
-  inter-metal dielectric films" [novellus]) and Applied Materials
-  Ultima HDP-CVD Centura, "the industry's first production-ready
-  HDP-CVD system" [amat-1997].
-* **PVD**: Applied Materials Endura ("Applied Materials entered the
-  PVD market in April 1990 with the Endura PVD system", with Ti/TiN
-  liner options for "sub-0.25-micron, high aspect ratio contact and
-  via structures" added in 1996 [amat-1997]; [Endura PVD][amat-endura]),
-  with degas, pre-clean, Ti, IMP Ti/TiN, Al–Cu and TiN chambers on one
-  vacuum mainframe; Novellus INOVA; earlier Varian and MRC (Materials
-  Research Corporation) sputterers.
+* **LPCVD furnaces**: the same vertical batch furnaces as for oxidation,
+  fitted with silane, DCS, ammonia and TEOS (bubbler or liquid
+  injection) delivery and a vacuum pump train — ASM A400 ("LPCVD
+  processes like doped silicon and silicon nitride films"),[^asm-a400]
+  TEL Alpha-8, Aviza/Thermco.
+* **PECVD**: single-wafer multi-station or multi-chamber cluster tools —
+  Novellus Concept One/Concept Two Sequel (Novellus's dielectric line
+  comprised "Concept One, Concept One Maxus, Concept Two Sequel, Concept
+  Two Dual Sequel, Concept Two Sequel-S"),[^novellus-history] Applied
+  Materials Producer ("Twin-Chamber" modules, two single-wafer chambers
+  per unit)[^amat-10k] and Centura DxZ.
+* **HDP-CVD**: Novellus SPEED (completed in 1995, "a high-density plasma
+  system with simpler, more cost-effective solutions for inter-metal
+  dielectric films")[^novellus-history] and Applied Materials Ultima
+  HDP-CVD Centura, "the industry's first production-ready HDP-CVD
+  system".[^amat-1997]
+* **PVD**: Applied Materials Endura ("Applied Materials entered the PVD
+  market in April 1990 with the Endura PVD system", with Ti/TiN liner
+  options for "sub-0.25-micron, high aspect ratio contact and via
+  structures" added in 1996),[^amat-1997][^amat-endura] with degas,
+  pre-clean, Ti, IMP Ti/TiN, Al–Cu and TiN chambers on one vacuum
+  mainframe; Novellus INOVA; earlier Varian and MRC (Materials Research
+  Corporation) sputterers.
 * **CVD tungsten**: Novellus Concept Two Altus ("metal solutions
-  (Concept One-W, Concept Two-Altus, and Concept Two-Dual Altus)"
-  [novellus]) and Applied Materials Centura WxZ.
+  (Concept One-W, Concept Two-Altus, and Concept Two-Dual
+  Altus)")[^novellus-history] and Applied Materials Centura WxZ.
 * **Metrology**: ellipsometry and reflectometry for dielectric
   thickness; {term}`four-point probe` sheet resistance for metals;
   stress gauges (wafer-bow); particle counters on blanket monitor
@@ -295,114 +281,232 @@ hit.
 
 ### Cross-check
 
-* SkyWater Technology / Google, "Criteria & Assumptions", *SKY130 PDK
-  documentation* (nominal film thicknesses).
-  <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
-* SkyWater Technology / Google, "Process stack diagram"
-  (`metal_stack.svg`), *SKY130 PDK* (conductor thicknesses 0.36, 0.845
-  and 1.26 µm).
-  <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
-* *ITRS 2001 Edition: Interconnect*.
-  <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>
-* I. A. Blech, "Electromigration in thin aluminum films on titanium
-  nitride", *Journal of Applied Physics* **47**, 1203–1208 (1976).
-  <https://doi.org/10.1063/1.322842>
-* Applied Materials, "Endura PVD" product page.
-  <https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>
-* Applied Materials, Inc., Form 10-K for fiscal 2003 (platform
-  descriptions: Centura, Endura, Endura SL, Producer).
-  <https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm>
-* Encyclopedia.com, "Novellus Systems, Inc." (product-line history:
-  Concept One/Two, Sequel, SPEED, Altus).
-  <https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>
-* ASM International, "ASM International N.V. launches A400 DUO
-  vertical furnace system", 2019-11-11.
-  <https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>
-* US Patent 6,350,353, "Alternate steps of IMP and sputtering process
-  to improve sidewall coverage" (Applied Materials).
-  <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>
-* US Patent 5,160,534, "Titanium-tungsten target material for
-  sputtering and manufacturing method therefor" (Hitachi Metals,
-  granted 1992-11-03; Ti:W barrier composition).
-  <https://patents.google.com/patent/US5160534A/en>
+* SkyWater PDK, *Criteria & Assumptions* — the nominal film
+  thicknesses used for antenna calculations.[^pdk-03]
+* SkyWater PDK, process stack diagram (`metal_stack.svg`) — conductor
+  thicknesses 0.36, 0.845 and 1.26 µm.[^pdk-04]
+* ITRS 2001, *Interconnect* — FSG in production since the 250 nm node,
+  and the dielectric roadmap.[^itrs-02]
+* Blech, *JAP* 1976 — the critical-length effect measured on Al lines
+  over TiN.[^blech-1976]
+* Applied Materials, *Endura PVD* product page.[^amat-endura]
+* Applied Materials, Form 10-K (fiscal 2003) — Centura, Endura and
+  Producer platform descriptions.[^amat-10k]
+* Encyclopedia.com, *Novellus Systems, Inc.* — the Concept One/Two,
+  Sequel, SPEED and Altus product history.[^novellus-history]
+* ASM International, A400 DUO press release — the A400's LPCVD
+  processes.[^asm-a400]
+* Applied Materials, US 6,350,353 — alternating IMP and conventional
+  sputtering to improve sidewall coverage.[^pat-imp-amat]
+* Hitachi Metals, US 5,160,534 — the 10 wt.% Ti composition of Ti:W
+  sputter targets.[^pat-tiw-hitachi]
 
-### High-level
+### High-level understanding
 
-* Wikipedia, "Chemical vapor deposition".
-  <https://en.wikipedia.org/wiki/Chemical_vapor_deposition>
-* Wikipedia, "Plasma-enhanced chemical vapor deposition".
-  <https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>
-* Wikipedia, "Sputter deposition".
-  <https://en.wikipedia.org/wiki/Sputter_deposition>
-* Wikipedia, "Physical vapor deposition".
-  <https://en.wikipedia.org/wiki/Physical_vapor_deposition>
-* Wikipedia, "Polycrystalline silicon".
-  <https://en.wikipedia.org/wiki/Polycrystalline_silicon>
-* Wikipedia, "Silicon nitride".
-  <https://en.wikipedia.org/wiki/Silicon_nitride>
-* Wikipedia, "Tetraethyl orthosilicate".
-  <https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>
-* Wikipedia, "Phosphosilicate glass".
-  <https://en.wikipedia.org/wiki/Phosphosilicate_glass>
-* Wikipedia, "Titanium nitride".
-  <https://en.wikipedia.org/wiki/Titanium_nitride>
-* Wikipedia, "Tungsten hexafluoride".
-  <https://en.wikipedia.org/wiki/Tungsten_hexafluoride>
-* Wikipedia, "Electromigration".
-  <https://en.wikipedia.org/wiki/Electromigration>
-* Wikipedia, "Thin film". <https://en.wikipedia.org/wiki/Thin_film>
-* J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
-  Technology*, Prentice Hall, 2000, ISBN 978-0-13-085037-9, ch. 9
-  ("Thin Film Deposition") and ch. 11 ("Back-End Technology").
-* S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI Era,
-  Vol. 1*, 2nd ed., Lattice Press, 2000, ISBN 978-0-9616721-6-4,
+* Wikipedia, *Chemical vapor deposition*.[^wiki-cvd]
+* Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
+* Wikipedia, *Sputter deposition*.[^wiki-sputter]
+* Wikipedia, *Physical vapor deposition*.[^wiki-pvd]
+* Wikipedia, *Polycrystalline silicon*.[^wiki-poly]
+* Wikipedia, *Silicon nitride*.[^wiki-sin]
+* Wikipedia, *Tetraethyl orthosilicate*.[^wiki-teos]
+* Wikipedia, *Phosphosilicate glass*.[^wiki-psg]
+* Wikipedia, *Titanium nitride*.[^wiki-tin]
+* Wikipedia, *Tungsten hexafluoride*.[^wiki-wf6]
+* Wikipedia, *Electromigration*.[^wiki-em]
+* Wikipedia, *Thin film*.[^wiki-thinfilm]
+* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 9 ("Thin
+  Film Deposition") and ch. 11 ("Back-End Technology").[^txt-01]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
   ch. 6 ("Chemical Vapor Deposition of Amorphous and Polycrystalline
   Films") and ch. 11 ("Aluminum Thin Films and Physical Vapor
-  Deposition").
-* S. A. Campbell, *Fabrication Engineering at the Micro- and
-  Nanoscale*, 4th ed., Oxford University Press, 2013,
-  ISBN 978-0-19-986122-4, ch. 12 and 13.
-* H. Xiao, *Introduction to Semiconductor Manufacturing Technology*,
-  2nd ed., SPIE Press, 2012, ch. 10 and 11.
-  <https://doi.org/10.1117/3.924283>
+  Deposition").[^txt-02]
+* Campbell, *Fabrication Engineering at the Micro- and Nanoscale* —
+  ch. 12 and 13.[^campbell-2013]
+* Xiao, *Introduction to Semiconductor Manufacturing Technology* —
+  ch. 10 and 11.[^txt-08]
 
 ### Deep dive
 
-* M. Ohring, *Materials Science of Thin Films*, 2nd ed., Academic
-  Press, 2002. <https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>
-* M. A. Lieberman and A. J. Lichtenberg, *Principles of Plasma
-  Discharges and Materials Processing*, 2nd ed., Wiley, 2005.
-  <https://doi.org/10.1002/0471724254>
-* Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
-  Manufacturing Technology*, 2nd ed., CRC Press, 2007.
-  <https://doi.org/10.1201/9781420017663>
-* M. T. Bohr, "Interconnect scaling — the real limiter to high
-  performance ULSI", *IEDM Technical Digest*, 241–244 (1995).
-  <https://doi.org/10.1109/IEDM.1995.499187>
-* Applied Materials, 1997 Annual Report (Centura and Endura platform
-  history). <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
+* Ohring, *Materials Science of Thin Films* — nucleation, growth
+  regimes, step coverage and the structure-zone model.[^ohring-2002]
+* Lieberman and Lichtenberg, *Principles of Plasma Discharges and
+  Materials Processing* — ch. 16 on plasma-enhanced deposition and
+  ion-bombardment control of film stress.[^lieberman-2005]
+* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology* — chapters on CVD, PVD, HDP-CVD and IMP
+  liners.[^txt-09]
+* Bohr, IEDM 1995 — why interconnect, not the transistor, limits
+  performance, motivating the metallisation stack.[^bohr-1995]
+* Broadbent and Ramiller, *JES* 1984 — WF₆/H₂ and WF₆/SiH₄ kinetics
+  behind CVD tungsten fill.[^rev-03]
+* Kaanta et al. (IBM), IEDM 1987 — the tungsten-stud plus planarisation
+  wiring scheme that became the standard plug process.[^kaanta-1987]
+* Rossnagel and Hopwood, *JVST B* 1994 — the first ionised-magnetron
+  (IMP) metal deposition experiments.[^rossnagel-1994]
+* Rossnagel, *JVST B* 1998 — review of collimated and ionised PVD for
+  liners and barriers.[^rossnagel-1998]
+* Thornton, *JVST* 1974 — the structure-zone diagram for sputtered films
+  versus pressure and temperature.[^thornton-1974]
+* Raupp, Cale and Hey, *JVST B* 1992 — reaction kinetics of PECVD TEOS
+  oxide and their effect on step coverage.[^raupp-1992]
+* Adams and Capio, *JES* 1979 — LPCVD oxide deposition, including TEOS
+  and doped glasses.[^adams-1979]
+* Kamins, *JES* 1980 — structure and properties of LPCVD silicon films
+  as a function of deposition temperature.[^kamins-1980]
+* Ames, d'Heurle and Horstmann, *IBM J. Res. Dev.* 1970 — the original
+  demonstration that copper doping suppresses aluminium
+  electromigration.[^ames-1970]
+* Nguyen, *IBM J. Res. Dev.* 1999 — review of HDP-CVD dielectrics,
+  gap-fill and the deposition-to-sputter ratio.[^nguyen-1999]
+* Nishimura et al., *JJAP* 2002 — HDP-CVD gap-fill modelling
+  demonstrated on 0.13 µm STI.[^nishimura-2002]
+* Novellus, SPEED Max press release — a vendor's description of HDP
+  gap-fill knobs (deposition, etch and sputter-to-deposition
+  ratio).[^lam-speed]
+* Seshan (ed.), *Handbook of Thin-Film Deposition Processes and
+  Techniques* — chapter-per-technique reference on CVD, PECVD, PVD and
+  their equipment.[^seshan-2002]
+* Applied Materials, 1997 Annual Report — Centura and Endura platform
+  history.[^amat-1997]
+* MIT OpenCourseWare 6.152J — lecture notes on CVD and PVD
+  fundamentals.[^ocw-6152]
 
-[wiki-cvd]: https://en.wikipedia.org/wiki/Chemical_vapor_deposition
-[wiki-sputter]: https://en.wikipedia.org/wiki/Sputter_deposition
-[wiki-poly]: https://en.wikipedia.org/wiki/Polycrystalline_silicon
-[wiki-sin]: https://en.wikipedia.org/wiki/Silicon_nitride
-[wiki-teos]: https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate
-[wiki-pecvd]: https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition
-[wiki-psg]: https://en.wikipedia.org/wiki/Phosphosilicate_glass
-[wiki-em]: https://en.wikipedia.org/wiki/Electromigration
-[wiki-tin]: https://en.wikipedia.org/wiki/Titanium_nitride
-[wiki-wf6]: https://en.wikipedia.org/wiki/Tungsten_hexafluoride
-[blech]: https://doi.org/10.1063/1.322842
-[ohring]: https://doi.org/10.1016/B978-0-12-524975-1.X5000-9
-[lieberman]: https://doi.org/10.1002/0471724254
-[nishi]: https://doi.org/10.1201/9781420017663
-[itrs2001-ic]: https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf
-[pdk-assume]: https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html
-[pdk-stack]: https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg
-[asm-a400]: https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469
-[novellus]: https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc
-[amat-10k]: https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm
-[amat-endura]: https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html
-[amat-1997]: https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf
-[imp-patent]: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353
-[tiw-patent]: https://patents.google.com/patent/US5160534A/en
+<!-- footnotes -->
+
+[^wiki-cvd]: Wikipedia, *Chemical vapor deposition*.
+    <https://en.wikipedia.org/wiki/Chemical_vapor_deposition>
+[^wiki-sputter]: Wikipedia, *Sputter deposition*.
+    <https://en.wikipedia.org/wiki/Sputter_deposition>
+[^txt-01]: J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+    Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
+    2000, ISBN 978-0-13-085037-9.
+    <https://openlibrary.org/isbn/9780130850379>
+[^ohring-2002]: M. Ohring, *Materials Science of Thin Films*, 2nd ed.,
+    Academic Press, 2002.
+    <https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>
+[^wiki-poly]: Wikipedia, *Polycrystalline silicon*.
+    <https://en.wikipedia.org/wiki/Polycrystalline_silicon>
+[^wiki-sin]: Wikipedia, *Silicon nitride*.
+    <https://en.wikipedia.org/wiki/Silicon_nitride>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+    ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^wiki-teos]: Wikipedia, *Tetraethyl orthosilicate*.
+    <https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>
+[^wiki-pecvd]: Wikipedia, *Plasma-enhanced chemical vapor deposition*.
+    <https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>
+[^itrs-02]: International Technology Roadmap for Semiconductors, *2001
+    Edition: Interconnect*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>
+[^wiki-psg]: Wikipedia, *Phosphosilicate glass*.
+    <https://en.wikipedia.org/wiki/Phosphosilicate_glass>
+[^lieberman-2005]: M. A. Lieberman and A. J. Lichtenberg, *Principles of
+    Plasma Discharges and Materials Processing*, 2nd ed., Wiley, 2005.
+    <https://doi.org/10.1002/0471724254>
+[^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
+    Manufacturing Technology*, 2nd ed., CRC Press, 2007,
+    ISBN 978-1-57444-675-3. <https://doi.org/10.1201/9781420017663>
+[^wiki-em]: Wikipedia, *Electromigration*.
+    <https://en.wikipedia.org/wiki/Electromigration>
+[^blech-1976]: I. A. Blech, "Electromigration in thin aluminum films on
+    titanium nitride", *Journal of Applied Physics* **47**(4), 1203–1208
+    (1976). <https://doi.org/10.1063/1.322842>
+[^wiki-tin]: Wikipedia, *Titanium nitride*.
+    <https://en.wikipedia.org/wiki/Titanium_nitride>
+[^pat-tiw-hitachi]: Hitachi Metals, *Titanium-tungsten target material
+    for sputtering and manufacturing method therefor*, US 5,160,534 A,
+    granted 1992-11-03.
+    <https://patents.google.com/patent/US5160534A/en>
+[^pat-imp-amat]: Applied Materials, *Alternate steps of IMP and
+    sputtering process to improve sidewall coverage*, US 6,350,353 B2.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>
+[^wiki-wf6]: Wikipedia, *Tungsten hexafluoride*.
+    <https://en.wikipedia.org/wiki/Tungsten_hexafluoride>
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
+    diagram). <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
+[^asm-a400]: ASM International, *ASM International N.V. launches A400
+    DUO vertical furnace system*, press release, 2019-11-11.
+    <https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>
+[^novellus-history]: Encyclopedia.com, *Novellus Systems, Inc.*
+    (company history: Concept One/Two, Sequel, SPEED, Altus).
+    <https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>
+[^amat-10k]: Applied Materials, Inc., Form 10-K for fiscal 2003
+    (platform descriptions: Centura, Endura, Endura SL, Producer).
+    <https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm>
+[^amat-1997]: Applied Materials, Inc., *1997 Annual Report*.
+    <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
+[^amat-endura]: Applied Materials, *Endura PVD*, product page.
+    <https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>
+[^wiki-pvd]: Wikipedia, *Physical vapor deposition*.
+    <https://en.wikipedia.org/wiki/Physical_vapor_deposition>
+[^wiki-thinfilm]: Wikipedia, *Thin film*.
+    <https://en.wikipedia.org/wiki/Thin_film>
+[^campbell-2013]: S. A. Campbell, *Fabrication Engineering at the Micro-
+    and Nanoscale*, 4th ed., Oxford University Press, 2013,
+    ISBN 978-0-19-986122-4. <https://openlibrary.org/isbn/9780199861224>
+[^txt-08]: H. Xiao, *Introduction to Semiconductor Manufacturing
+    Technology*, 2nd ed., SPIE Press, 2012, ISBN 978-0-8194-9092-6.
+    <https://doi.org/10.1117/3.924283>
+[^bohr-1995]: M. T. Bohr, "Interconnect scaling — the real limiter to
+    high performance ULSI", *IEDM 1995 Technical Digest*, pp. 241–244.
+    <https://doi.org/10.1109/IEDM.1995.499187>
+[^rev-03]: E. K. Broadbent and C. L. Ramiller, "Selective Low Pressure
+    Chemical Vapor Deposition of Tungsten", *Journal of The
+    Electrochemical Society* **131**(6), 1427–1433 (1984).
+    <https://doi.org/10.1149/1.2115864>
+[^kaanta-1987]: C. Kaanta, W. Cote, J. Cronin, K. Holland et al.,
+    "Submicron wiring technology with tungsten and planarization", *IEDM
+    1987 Technical Digest*, pp. 209–212.
+    <https://doi.org/10.1109/IEDM.1987.191389>
+[^rossnagel-1994]: S. M. Rossnagel and J. Hopwood, "Metal ion deposition
+    from ionized magnetron sputtering discharge", *Journal of Vacuum
+    Science & Technology B* **12**(1), 449–453 (1994).
+    <https://doi.org/10.1116/1.587142>
+[^rossnagel-1998]: S. M. Rossnagel, "Directional and ionized physical
+    vapor deposition for microelectronics applications", *Journal of
+    Vacuum Science & Technology B* **16**(5), 2585–2608 (1998).
+    <https://doi.org/10.1116/1.590242>
+[^thornton-1974]: J. A. Thornton, "Influence of apparatus geometry and
+    deposition conditions on the structure and topography of thick
+    sputtered coatings", *Journal of Vacuum Science and Technology*
+    **11**(4), 666–670 (1974). <https://doi.org/10.1116/1.1312732>
+[^raupp-1992]: G. B. Raupp, T. S. Cale and H. P. W. Hey, "The role of
+    oxygen excitation and loss in plasma-enhanced deposition of silicon
+    dioxide from tetraethylorthosilicate", *Journal of Vacuum Science &
+    Technology B* **10**(1), 37–45 (1992).
+    <https://doi.org/10.1116/1.586361>
+[^adams-1979]: A. C. Adams and C. D. Capio, "The Deposition of Silicon
+    Dioxide Films at Reduced Pressure", *Journal of The Electrochemical
+    Society* **126**(6), 1042–1046 (1979).
+    <https://doi.org/10.1149/1.2129171>
+[^kamins-1980]: T. I. Kamins, "Structure and Properties of LPCVD Silicon
+    Films", *Journal of The Electrochemical Society* **127**(3), 686–690
+    (1980). <https://doi.org/10.1149/1.2129733>
+[^ames-1970]: I. Ames, F. M. d'Heurle and R. E. Horstmann, "Reduction of
+    Electromigration in Aluminum Films by Copper Doping", *IBM Journal
+    of Research and Development* **14**(4), 461–463 (1970).
+    <https://doi.org/10.1147/rd.144.0461>
+[^nguyen-1999]: S. V. Nguyen, "High-density plasma chemical vapor
+    deposition of silicon-based dielectric films for integrated
+    circuits", *IBM Journal of Research and Development* **43**(1.2),
+    109–126 (1999). <https://doi.org/10.1147/rd.431.0109>
+[^nishimura-2002]: H. Nishimura, S. Takagi, M. Fujino and N. Nishi,
+    "Gap-Fill Process of Shallow Trench Isolation for 0.13 µm
+    Technologies", *Japanese Journal of Applied Physics* **41**(5A),
+    2886–2893 (2002). <https://doi.org/10.1143/JJAP.41.2886>
+[^lam-speed]: Novellus Systems (Lam Research newsroom), *Novellus' SPEED
+    Max HDP-CVD Dielectric Gapfill System Extends STI Application to
+    32nm*, press release, 2009-10-05.
+    <https://newsroom.lamresearch.com/2009-10-05-NOVELLUS-SPEED-R-MAX-HDP-CVD-DIELECTRIC-GAPFILL-SYSTEM-EXTENDS-STI-APPLICATION-TO-32nm>
+[^seshan-2002]: K. Seshan (ed.), *Handbook of Thin-Film Deposition
+    Processes and Techniques: Principles, Methods, Equipment and
+    Applications*, 2nd ed., Noyes Publications / William Andrew, 2002,
+    ISBN 978-0-8155-1442-8. <https://openlibrary.org/isbn/9780815514428>
+[^ocw-6152]: MIT OpenCourseWare, *6.152J Micro/Nano Processing
+    Technology*, Fall 2005 (lecture notes on lithography, etching,
+    deposition and CMP).
+    <https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/>
