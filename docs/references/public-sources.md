@@ -2351,6 +2351,668 @@ processing"*, Journal of Electronic Materials, vol. 31, no. 10,
 pp. 981–987, 2002, DOI 10.1007/s11664-002-0031-9. RTP developments of
 the 130 nm era. Tier: deep dive.
 
+
+**GIBBONS-1972** — J. F. Gibbons, "Ion implantation in semiconductors —
+Part II: Damage production and annealing", *Proceedings of the IEEE*
+**60**(9), 1062–1096 (1972). <https://doi.org/10.1109/PROC.1972.8854>
+Damage production and annealing of implanted layers. Used on step 034
+and the anneal and implant category pages. Tier: deep dive.
+
+### 8.8 Isolation-module deep-dive sources
+
+None of these is a SkyWater or Cypress source; the step pages for the
+isolation module (steps 001–013: starting material, pad oxide, nitride,
+active-area lithography, trench etch, deep N-well, liner, fill, CMP and
+nitride strip) use them for era-typical values, mechanisms and further
+reading. They complement §8.5, which holds the first sources gathered
+for the same module. Every entry was fetched by the writer or reviewer
+of the citing page; a random sample was re-checked through Crossref on
+2026-09-12.
+
+#### Papers and review articles
+
+**AMERICA-2004** — W. G. America and S. V. Babu, "Slurry Additive
+Effects on the Suppression of Silicon Nitride Removal during CMP",
+*Electrochemical and Solid-State Letters* **7**(12), G327 (2004).
+<https://doi.org/10.1149/1.1817870> Slurry additives that suppress
+silicon nitride removal, i.e. how a self-stopping STI slurry is made.
+Used on step 012. Tier: deep dive.
+
+**BASSETT-2016** — D. W. Bassett and A. L. P. Rotondaro, "Silica
+Formation during Etching of Silicon Nitride in Phosphoric Acid", *Solid
+State Phenomena* **255**, 285–290 (2016).
+<https://doi.org/10.4028/www.scientific.net/SSP.255.285> Silica
+formation during nitride etching in phosphoric acid, the mechanism
+behind bath ageing and selectivity drift. Used on step 013. Tier: deep
+dive.
+
+**BERGMAN-2009** — E. J. Bergman and J. D. Leonhard, "Novel Methods for
+Wet Stripping High Dose Implanted Photoresist Using Sulfur Trioxide",
+*Solid State Phenomena* **145–146**, 281–284 (2009).
+<https://doi.org/10.4028/www.scientific.net/SSP.145-146.281> Wet
+stripping of high-dose implanted resist with sulphur trioxide, a
+sulphuric-family alternative to SPM. Used on step 009. Tier: deep dive.
+
+**BESTWICK-1990** — T. D. Bestwick and G. S. Oehrlein, "Reactive ion
+etching of silicon using bromine containing plasmas", *Journal of Vacuum
+Science & Technology A* **8**(3), 1696–1701 (1990).
+<https://doi.org/10.1116/1.576832> Reactive-ion etching of silicon in
+bromine-containing plasmas, the chemistry of the main etch. Used on step
+006. Tier: deep dive.
+
+**BIANCHI-2002** — R. A. Bianchi, G. Bouche and O. Roux-dit-Buisson,
+"Accurate modeling of trench isolation induced mechanical stress effects
+on MOSFET electrical performance", *IEDM 2002 Technical Digest*, pp.
+117–120. <https://doi.org/10.1109/IEDM.2002.1175792> Modelling of
+trench-isolation-induced mechanical stress on MOSFET performance. Used
+on steps 006 and 011. Tier: deep dive.
+
+**BORGHESI-1995** — A. Borghesi, B. Pivac, A. Sassella and A. Stella,
+"Oxygen precipitation in silicon", *Journal of Applied Physics*
+**77**(9), 4169–4244 (1995). <https://doi.org/10.1063/1.359479> A review
+of oxygen precipitation in CZ silicon, the basis of internal gettering
+and a driver of wafer warpage through the thermal budget. Used on step
+001 and the substrate category page. Tier: deep dive.
+
+**BRYANT-1994** — A. Bryant, W. Hänsch and T. Mii, "Characteristics of
+CMOS device isolation for the ULSI age", *Proc. 1994 IEEE International
+Electron Devices Meeting*, pp. 671–674.
+<https://doi.org/10.1109/IEDM.1994.383292> The device-level case for STI
+over LOCOS and what trench isolation must deliver. Used on steps 006,
+010 and 013. Tier: deep dive.
+
+**BU-2005** — K.-H. Bu and B. M. Moudgil, "Colloidal Silica based High
+Selectivity Shallow Trench Isolation (STI) Chemical Mechanical Polishing
+(CMP) Slurry", *MRS Proceedings* **867**, W8.5 (2005).
+<https://doi.org/10.1557/PROC-867-W8.5> A colloidal-silica route to a
+high-selectivity STI slurry, the alternative to ceria. Used on step 012.
+Tier: deep dive.
+
+**CHANG-2005** — S.-H. Chang, "A dishing model for STI CMP process",
+*Microelectronic Engineering* **82**(2), 136–142 (2005).
+<https://doi.org/10.1016/j.mee.2005.07.002> A dishing model specific to
+the STI CMP process. Used on step 012. Tier: deep dive.
+
+**CHATTERJEE-1996** — A. Chatterjee, J. Esquivel, S. Nag, I. Ali, D.
+Rogers, K. Taylor, K. Joyner, M. Mason, D. Mercer, A. Amerasekera, T.
+Houston and I.-C. Chen, "A shallow trench isolation study for 0.25/0.18
+µm CMOS technologies and beyond", *1996 Symposium on VLSI Technology,
+Digest of Technical Papers*, pp. 156–157.
+<https://doi.org/10.1109/VLSIT.1996.507831> An STI integration study for
+0.25/0.18 µm CMOS covering the pad-oxide/nitride stack and trench corner
+choices. Used on steps 002 and 006. Tier: deep dive.
+
+**COBURN-1979** — J. W. Coburn and H. F. Winters, "Ion- and
+electron-assisted gas-surface chemistry — An important effect in plasma
+etching", *Journal of Applied Physics* **50**(5), 3189–3196 (1979).
+<https://doi.org/10.1063/1.326355> The classic demonstration that ion
+bombardment plus reactive gas etches far faster than either alone, the
+basis of anisotropic RIE. Used on steps 005, 036 and 042 and the etch
+category page. Tier: deep dive.
+
+**COOK-1990** — L. M. Cook, "Chemical processes in glass polishing",
+*Journal of Non-Crystalline Solids* **120**(1–3), 152–171 (1990).
+<https://doi.org/10.1016/0022-3093(90)90200-6> The chemical mechanism of
+glass (oxide) polishing that oxide CMP inherits. Used on step 012 and
+the cmp category page. Tier: deep dive.
+
+**DEAL-1965** — B. E. Deal and A. S. Grove, "General Relationship for
+the Thermal Oxidation of Silicon", *Journal of Applied Physics*
+**36**(12), 3770–3778 (1965). <https://doi.org/10.1063/1.1713945> The
+planar oxidation model that the corner results are measured against.
+Used on steps 002, 010, 040, 042, 043 and 047 and the oxidation category
+page. Tier: deep dive.
+
+**DEAL-1980** — B. E. Deal, "Standardized terminology for oxide charges
+associated with thermally oxidized silicon", *IEEE Transactions on
+Electron Devices* **27**(3), 606–608 (1980), DOI
+10.1109/T-ED.1980.19908; published simultaneously in *Journal of The
+Electrochemical Society* **127**(4), 979–981 (1980).
+<https://doi.org/10.1109/T-ED.1980.19908>,
+<https://doi.org/10.1149/1.2129800> The standard terminology for oxide
+charges (fixed, trapped, mobile, interface) used when qualifying any
+thermal oxide. Used on steps 002, 043 and 047 and the anneal and
+oxidation category pages. Tier: deep dive.
+
+**DECKERT-1978** — C. A. Deckert, "Etching of CVD Si₃N₄ in Acidic
+Fluoride Media", *Journal of The Electrochemical Society* **125**(2),
+320–323 (1978). <https://doi.org/10.1149/1.2131436> Etching of CVD Si₃N₄
+in acidic fluoride media, the older data on the same chemistry. Used on
+step 013. Tier: deep dive.
+
+**EDMARK-1985** — K. W. Edmark and C. P. Ausschnitt, "Stepper Overlay
+Calibration Using Alignment To A Latent Image", *Proc. SPIE* **0538**,
+Optical Microlithography IV, 91 (1985).
+<https://doi.org/10.1117/12.947752> Stepper overlay calibration by
+aligning to a latent image, an early treatment of stepper
+self-calibration relevant to an unaligned first layer. Used on step 004.
+Tier: deep dive.
+
+**FALSTER-2000** — R. Falster and V. V. Voronkov, "The engineering of
+intrinsic point defects in silicon wafers and crystals", *Materials
+Science and Engineering: B* **73**(1–3), 87–94 (2000).
+<https://doi.org/10.1016/S0921-5107(99)00439-0> Engineering of intrinsic
+point defects in crystals and wafers, the basis of "perfect silicon" and
+controlled precipitation. Used on step 001 and the substrate category
+page. Tier: deep dive.
+
+**FAZAN-1993** — P. C. Fazan and V. K. Mathews, "A highly manufacturable
+trench isolation process for deep submicron DRAMs", *Proc. IEEE
+International Electron Devices Meeting 1993*, pp. 57–60.
+<https://doi.org/10.1109/IEDM.1993.347399> An early manufacturable
+trench isolation process, showing the etch, fill and polish sequence.
+Used on step 006. Tier: deep dive.
+
+**FLAMM-1990** — D. L. Flamm, "Mechanisms of silicon etching in
+fluorine- and chlorine-containing plasmas", *Pure and Applied Chemistry*
+**62**(9), 1709–1720 (1990). <https://doi.org/10.1351/pac199062091709>
+Mechanisms of silicon etching in fluorine- and chlorine-containing
+plasmas, relevant to the pad-oxide breakthrough and the silicon stop.
+Used on step 005. Tier: deep dive.
+
+**FUJIMURA-1991** — S. Fujimura, K. Shinagawa, M. T. Suzuki and M.
+Nakamura, "Resist stripping in an O₂+H₂O plasma downstream", *Journal of
+Vacuum Science & Technology B* **9**(2), 357–361 (1991).
+<https://doi.org/10.1116/1.585575> Resist stripping in an O₂ + H₂O
+downstream plasma, a low-damage alternative. Used on step 009. Tier:
+deep dive.
+
+**HABRAKEN-1994** — F. H. P. M. Habraken and A. E. T. Kuiper, "Silicon
+nitride and oxynitride films", *Materials Science and Engineering: R:
+Reports* **12**(3), 123–175 (1994).
+<https://doi.org/10.1016/0927-796X(94)90006-X> A review of silicon
+nitride and oxynitride films: growth, composition, hydrogen content and
+etch behaviour. Used on step 003. Tier: deep dive.
+
+**HOSHINO-2001** — T. Hoshino, Y. Kurata, Y. Terasaki and K. Susa,
+"Mechanism of polishing of SiO₂ films by CeO₂ particles", *Journal of
+Non-Crystalline Solids* **283**(1–3), 129–136 (2001).
+<https://doi.org/10.1016/S0022-3093(01)00364-7> The mechanism by which
+ceria particles polish SiO₂. Used on step 012. Tier: deep dive.
+
+**HU-1991** — S. M. Hu, "Stress-related problems in silicon technology",
+*Journal of Applied Physics* **70**(6), R53–R80 (1991).
+<https://doi.org/10.1063/1.349282> A review of stress-related problems
+in silicon technology, including nitride-on-pad-oxide stress and
+dislocation generation. Used on steps 002, 003 and 010. Tier: deep dive.
+
+**IRENE-1988** — E. A. Irene, "Models for the oxidation of silicon",
+*Critical Reviews in Solid State and Materials Sciences* **14**(2),
+175–223 (1988). <https://doi.org/10.1080/10408438808242183> A review of
+oxidation models beyond Deal–Grove, including the thin-film and stress
+effects. Used on step 002. Tier: deep dive.
+
+**ITO-2005** — H. Ito, "Chemical Amplification Resists for
+Microlithography", *Advances in Polymer Science* **172**, 37–245 (2005).
+<https://doi.org/10.1007/b97574> A 200-page review of chemically
+amplified resists, including KrF poly(hydroxystyrene) systems. Used on
+step 004 and the lithography category page. Tier: deep dive.
+
+**KAHNG-2008** — A. B. Kahng and K. Samadi, "CMP Fill Synthesis: A
+Survey of Recent Studies", *IEEE Transactions on Computer-Aided Design
+of Integrated Circuits and Systems* **27**(1), 3–19 (2008).
+<https://doi.org/10.1109/TCAD.2007.907061> A survey of dummy-fill
+synthesis for CMP, the design-side view of the FOM "waffles". Used on
+step 004. Tier: deep dive.
+
+**KANG-1989** — J. S. Kang and D. K. Schroder, "Gettering in silicon",
+*Journal of Applied Physics* **65**(8), 2974–2985 (1989).
+<https://doi.org/10.1063/1.342714> A review of gettering mechanisms
+(intrinsic and extrinsic) that a bulk-wafer process relies on to keep
+metals away from junctions. Used on step 001 and the substrate category
+page. Tier: deep dive.
+
+**KASTENMEIER-1999** — B. E. E. Kastenmeier, P. J. Matsuo and G. S.
+Oehrlein, "Highly selective etching of silicon nitride over silicon and
+silicon dioxide", *Journal of Vacuum Science & Technology A* **17**(6),
+3179–3184 (1999). <https://doi.org/10.1116/1.582097> How to etch silicon
+nitride selectively over silicon and silicon dioxide in fluorine-based
+plasmas. Used on step 005. Tier: deep dive.
+
+**KNOTTER-2001** — D. M. Knotter and T. J. J. Denteneer, "Etching
+Mechanism of Silicon Nitride in HF-Based Solutions", *Journal of The
+Electrochemical Society* **148**(3), F43 (2001).
+<https://doi.org/10.1149/1.1348262> The etching mechanism of silicon
+nitride in HF-based solutions, relevant to the pre-strip breakthrough
+dip. Used on step 013. Tier: deep dive.
+
+**KOOI-1976** — E. Kooi, J. G. van Lierop and J. A. Appels, "Formation
+of Silicon Nitride at a Si–SiO₂ Interface during Local Oxidation of
+Silicon and during Heat-Treatment of Oxidized Silicon in NH₃ Gas",
+*Journal of The Electrochemical Society* **123**(7), 1117–1120 (1976).
+<https://doi.org/10.1149/1.2133008> The "Kooi effect": nitride formed at
+the Si/SiO₂ interface at the edge of a nitride mask, the reason
+pad-oxide thickness and post-strip treatment matter. Used on steps 002,
+003, 010 and 013 and the oxidation category page. Tier: deep dive.
+
+**LEE-1997** — S. Lee, K. Jung, J. Son, S. Chung, M. Chae, J. Kim, W.
+Yang, Y. Lee and J. Hwang, "Shallow Trench Isolation Characteristics
+with High-Density-Plasma (HDP) CVD Gap-Fill Oxide for Deep-Submicron
+CMOS Technologies", *Extended Abstracts of the 1997 International
+Conference on Solid State Devices and Materials*, C-13-4 (1997).
+<https://doi.org/10.7567/SSDM.1997.C-13-4> STI characteristics with an
+HDP-CVD gap-fill oxide for deep-submicron CMOS, including device
+results. Used on step 011. Tier: deep dive.
+
+**LIN-1998** — S. C. Lin, J. B. Kuo, K. T. Huang and S. W. Sun,
+"Analytical subthreshold current hump model for deep-submicron
+shallow-trench-isolated CMOS devices", *Solid-State Electronics*
+**42**(10), 1871–1879 (1998).
+<https://doi.org/10.1016/S0038-1101(98)00161-0> An analytical model of
+the sub-threshold current hump caused by the STI top corner. Used on
+step 006. Tier: deep dive.
+
+**LINDEMANN-2007** — H. M. Lindemann, J. Radecker and H.-P. Sperlich,
+"Selective Oxide (SelOx) Deposition as Unique Gap-Fill Solution for
+Shallow Trench Isolation", *2007 IEEE/SEMI Advanced Semiconductor
+Manufacturing Conference (ASMC)*, pp. 253–258.
+<https://doi.org/10.1109/ASMC.2007.375111> Selective oxide deposition as
+an alternative STI gap-fill, showing where HDP's limits lie. Used on
+step 011. Tier: deep dive.
+
+**LIU-2007** — L. Liu, I. Kashkoush, G. Chen and C. Murphy, "Maintaining
+a Stable Etch Selectivity between Silicon Nitride and Silicon Dioxide in
+a Hot Phosphoric Acid Bath", *ECS Transactions* **11**(2), 63–70 (2007).
+<https://doi.org/10.1149/1.2779363> How to keep the nitride : oxide
+selectivity stable in a production hot phosphoric bath, from Akrion, the
+wet-bench vendor SKW-01 names. Used on step 013. Tier: deep dive.
+
+**LIU-2020** — P. Liu, M. Garcia-Sciveres, T. Heim, A. Krieger and D.
+Gnani, "Measured Effectiveness of Deep N-well Substrate Isolation in a
+65nm Pixel Readout Chip Prototype", *Nuclear Instruments and Methods in
+Physics Research A* (2020); preprint arXiv:1908.06182.
+<https://arxiv.org/abs/1908.06182> Quantitative deep N-well isolation
+measurements in a 65 nm pixel readout chip, showing which side of the
+isolation to put the sensitive circuits. Used on step 008. Tier: deep
+dive.
+
+**MANIVANNAN-2010** — R. Manivannan, S. Noyel Victoria and S.
+Ramanathan, "Mechanism of high selectivity in ceria based shallow trench
+isolation chemical mechanical polishing slurries", *Thin Solid Films*
+**518**(20), 5737–5740 (2010).
+<https://doi.org/10.1016/j.tsf.2010.05.072> The mechanism of high
+oxide-to-nitride selectivity in ceria STI slurries. Used on step 012.
+Tier: deep dive.
+
+**MARCUS-1982** — R. B. Marcus and T. T. Sheng, "The Oxidation of Shaped
+Silicon Surfaces", *Journal of The Electrochemical Society* **129**(6),
+1278–1282 (1982). <https://doi.org/10.1149/1.2124118> The first
+systematic study of oxidising shaped (trenched and stepped) silicon
+surfaces. Used on step 010. Tier: deep dive.
+
+**MASSOUD-1985** — H. Z. Massoud, J. D. Plummer and E. A. Irene,
+"Thermal Oxidation of Silicon in Dry Oxygen: Growth-Rate Enhancement in
+the Thin Regime. I. Experimental Results", *Journal of The
+Electrochemical Society* **132**(11), 2685–2693 (1985).
+<https://doi.org/10.1149/1.2113648> The growth-rate enhancement in the
+thin (< 30 nm) dry-oxide regime that a 10–20 nm pad oxide sits in. Used
+on steps 002, 040, 043 and 047 and the oxidation category page. Tier:
+deep dive.
+
+**MATSUDA-1998** — S. Matsuda, T. Sato, H. Yoshimura, Y. Takegawa, A.
+Sudo, I. Mizushima, Y. Tsunashima and Y. Toyoshima, "Novel corner
+rounding process for shallow trench isolation utilizing MSTS
+(Micro-Structure Transformation of Silicon)", *IEDM 1998 Technical
+Digest*, pp. 137–140. <https://doi.org/10.1109/IEDM.1998.746298> A
+corner-rounding process based on silicon micro-structure transformation
+after the trench etch. Used on steps 006 and 010. Tier: deep dive.
+
+**NANDAKUMAR-1997** — M. Nandakumar, S. Sridhar, S. Nag, P. Mei, D.
+Rogers, M. Hanratty, A. Amerasekera and I.-C. Chen, "A shallow trench
+isolation for sub-0.13 µm CMOS technologies", *IEDM 1997 Technical
+Digest*, pp. 657–660. <https://doi.org/10.1109/IEDM.1997.650469> STI for
+sub-0.13 µm CMOS, including the liner and corner engineering. Used on
+steps 006 and 010. Tier: deep dive.
+
+**NGUYEN-1999** — S. V. Nguyen, "High-density plasma chemical vapor
+deposition of silicon-based dielectric films for integrated circuits",
+*IBM Journal of Research and Development* **43**(1.2), 109–126 (1999).
+<https://doi.org/10.1147/rd.431.0109> A review of HDP-CVD of
+silicon-based dielectrics: reactor design, film properties and gap-fill
+mechanisms. Used on step 011 and the deposition category page. Tier:
+deep dive.
+
+**OCONNOR-1996** — J. P. O'Connor and N. Tokoro, "End station and beam
+line design considerations for photoresist outgassing with high energy
+(MeV) ion implantation", *Proc. 11th International Conference on Ion
+Implantation Technology (1996)*, pp. 350–354.
+<https://doi.org/10.1109/IIT.1996.586285> End-station and beam-line
+design to cope with resist outgassing at MeV energies. Used on step 007.
+Tier: deep dive.
+
+**OEHRLEIN-1994** — G. S. Oehrlein, Y. Zhang, D. Vender and M. Haverlag,
+"Fluorocarbon high-density plasmas. I. Fluorocarbon film deposition and
+etching using CF₄ and CHF₃", *Journal of Vacuum Science & Technology A*
+**12**(2), 323–332 (1994). <https://doi.org/10.1116/1.578876>
+Fluorocarbon high-density plasmas with CF₄ and CHF₃: polymer deposition
+versus etching, the mechanism behind sidewall passivation. Used on step
+005 and the etch category page. Tier: deep dive.
+
+**OHASHI-2007** — T. Ohashi, T. Kubota and A. Nakajima, "Ar Annealing
+for Suppression of Gate Oxide Thinning at Shallow Trench Isolation
+Edge", *IEEE Electron Device Letters* **28**(7), 562–564 (2007).
+<https://doi.org/10.1109/LED.2007.899328> An argon anneal that
+suppresses gate-oxide thinning at the STI edge, a later view of the same
+problem. Used on step 010. Tier: deep dive.
+
+**ORVEK-1985** — K. J. Orvek and C. Huffman, "Carbonized layer formation
+in ion implanted photoresist masks", *Nuclear Instruments and Methods in
+Physics Research B* **7–8**, 501–506 (1985).
+<https://doi.org/10.1016/0168-583X(85)90421-5> The carbonised layer that
+forms on ion-implanted photoresist, the reason implant strips are hard.
+Used on step 009. Tier: deep dive.
+
+**OTTO-1994** — O. W. Otto, J. G. Garofalo, K. K. Low, C.-M. Yuan, R. C.
+Henderson, C. Pierrat, R. L. Kostelak, S. Vaidya and P. K. Vasudev,
+"Automated optical proximity correction: a rules-based approach", *Proc.
+SPIE* **2197**, Optical/Laser Microlithography VII, 278–293 (1994).
+<https://doi.org/10.1117/12.175422> An early rules-based optical
+proximity correction method of the kind applied to active-layer
+reticles. Used on step 004 and the lithography category page. Tier: deep
+dive.
+
+**PEEV-1990** — G. Peev, L. Zambov and Y. Yanakiev, "Kinetics of the
+chemical reaction between dichlorosilane and ammonia during silicon
+nitride film deposition", *Thin Solid Films* **189**(2), 275–282 (1990).
+<https://doi.org/10.1016/0040-6090(90)90456-N> The kinetics of the
+DCS–NH₃ reaction and how the deposition rate depends on gas ratio,
+pressure and temperature. Used on step 003. Tier: deep dive.
+
+**REGIS-1997** — J. M. Regis, A. M. Joshi, T. Lill and M. Yu, "Reactive
+ion etch of silicon nitride spacer with high selectivity to oxide",
+*1997 IEEE/SEMI Advanced Semiconductor Manufacturing Conference and
+Workshop (ASMC 97) Proceedings*, pp. 252–256.
+<https://doi.org/10.1109/ASMC.1997.630744> A production RIE recipe for
+silicon nitride with high selectivity to oxide, with the process-window
+data. Used on steps 005 and 042. Tier: deep dive.
+
+**ROENIGK-1987** — K. F. Roenigk and K. F. Jensen, "Low Pressure CVD of
+Silicon Nitride", *Journal of The Electrochemical Society* **134**(7),
+1777–1785 (1987). <https://doi.org/10.1149/1.2100756> A reactor model of
+LPCVD nitride from DCS/NH₃, explaining thickness uniformity along a
+hot-wall tube. Used on step 003. Tier: deep dive.
+
+**RYUTA-1990** — J. Ryuta, E. Morita, T. Tanaka and Y. Shimanuki,
+"Crystal-Originated Singularities on Si Wafer Surface after SC1
+Cleaning", *Japanese Journal of Applied Physics* **29**(11A), L1947
+(1990). <https://doi.org/10.1143/JJAP.29.L1947> The paper that
+identified "crystal-originated singularities" (COPs) revealed by SC-1
+cleaning, the defect class that gate-oxide yield depends on. Used on
+step 001 and the substrate category page. Tier: deep dive.
+
+**STAFFA-1995** — J. Staffa, D. Hwang, B. Luther, J. Ruzyllo and R.
+Grant, "Temperature dependence of the etch rate and selectivity of
+silicon nitride over silicon dioxide in remote plasma NF₃/Cl₂", *Applied
+Physics Letters* **67**(13), 1902–1904 (1995).
+<https://doi.org/10.1063/1.114371> Nitride-over-oxide selectivity of a
+remote NF₃/Cl₂ plasma, a dry alternative to the hot phosphoric strip.
+Used on step 013. Tier: deep dive.
+
+**STINE-1998** — B. E. Stine, D. O. Ouma, R. R. Divecha, D. S. Boning,
+J. E. Chung, D. L. Hetherington, C. R. Harwood, O. S. Nakagawa and S.-Y.
+Oh, "Rapid characterization and modeling of pattern-dependent variation
+in chemical-mechanical polishing", *IEEE Transactions on Semiconductor
+Manufacturing* **11**(1), 129–140 (1998).
+<https://doi.org/10.1109/66.661292> Rapid characterisation and modelling
+of pattern-dependent CMP variation, the basis of density-based fill
+rules. Used on step 012 and the cmp category page. Tier: deep dive.
+
+**STONEY-1909** — G. G. Stoney, "The tension of metallic films deposited
+by electrolysis", *Proceedings of the Royal Society of London A*
+**82**(553), 172–175 (1909). <https://doi.org/10.1098/rspa.1909.0021>
+The wafer-curvature relation used to turn a bow measurement into a film
+stress. Used on step 003. Tier: deep dive.
+
+**TEASDALE-2001** — D. Teasdale, Y. Senzaki, R. Herring, G. Hoeye, L.
+Page and P. Schubert, "LPCVD of Silicon Nitride from Dichlorosilane and
+Ammonia by Single Wafer Rapid Thermal Processing", *Electrochemical and
+Solid-State Letters* **4**(5), F11 (2001).
+<https://doi.org/10.1149/1.1359056> Single-wafer RTCVD of DCS/NH₃
+nitride, the alternative to a batch furnace. Used on step 003. Tier:
+deep dive.
+
+**TEMPLE-BOYER-1998** — P. Temple-Boyer, C. Rossi, E. Saint-Etienne and
+E. Scheid, "Residual stress in low pressure chemical vapor deposition
+SiNₓ films deposited from silane and ammonia", *Journal of Vacuum
+Science & Technology A* **16**(4), 2003–2007 (1998).
+<https://doi.org/10.1116/1.581302> Residual stress in LPCVD SiNₓ as a
+function of composition, the reason stoichiometric films are highly
+tensile. Used on step 003. Tier: deep dive.
+
+**VAN-HAREN-2019** — R. J. F. van Haren, S. Steinert, O. Mouraille, K.
+D'havé, L. van Dijk, J. Hermans and D. Beyer, "Wafer alignment mark
+placement accuracy impact on the layer-to-layer overlay performance",
+*Proc. SPIE* **11148**, Photomask Technology 2019, 37 (2019).
+<https://doi.org/10.1117/12.2536270> How alignment-mark placement
+accuracy limits layer-to-layer overlay. Used on steps 004 and 041. Tier:
+deep dive.
+
+**VASSILIEV-1999** — V. Y. Vassiliev, "Properties and Gap-Fill
+Capability of HPD-CVD Phosphosilicate Glass Films for
+Subquarter-Micrometer ULSI Device Technology", *Electrochemical and
+Solid-State Letters* **3**(2), 80 (1999).
+<https://doi.org/10.1149/1.1390964> Properties and gap-fill capability
+of HDP-CVD phosphosilicate glass, the doped variant SkyWater also lists.
+Used on step 011. Tier: deep dive.
+
+**VISINTIN-2006** — P. M. Visintin, M. B. Korzenski and T. H. Baum,
+"Liquid Clean Formulations for Stripping High-Dose Ion-Implanted
+Photoresist from Microelectronic Devices", *Journal of The
+Electrochemical Society* **153**(7), G591 (2006).
+<https://doi.org/10.1149/1.2195884> Liquid formulations for stripping
+high-dose implanted resist when ashing alone is insufficient. Used on
+step 009. Tier: deep dive.
+
+**WATANABE-1996** — H. Watanabe, K. Shimizu, Y. Takeuchi and S. Aritome,
+"Corner-rounded shallow trench isolation technology to reduce the
+stress-induced tunnel oxide leakage current for highly reliable flash
+memories", *IEDM 1996 Technical Digest*, pp. 833–836.
+<https://doi.org/10.1109/IEDM.1996.554109> Corner-rounded STI to cut
+stress-induced tunnel-oxide leakage in flash memory. Used on steps 006
+and 010. Tier: deep dive.
+
+**YU-1992** — C. Yu, P. C. Fazan, V. K. Mathews and T. T. Doan, "Dishing
+effects in a chemical mechanical polishing planarization process for
+advanced trench isolation", *Applied Physics Letters* **61**(11),
+1344–1346 (1992). <https://doi.org/10.1063/1.107586> Dishing effects in
+CMP planarisation for trench isolation, measured early. Used on step
+012. Tier: deep dive.
+
+**ZIEGLER-2010** — J. F. Ziegler, M. D. Ziegler and J. P. Biersack,
+"SRIM – The stopping and range of ions in matter (2010)", *Nuclear
+Instruments and Methods in Physics Research B* **268**(11–12), 1818–1823
+(2010). <https://doi.org/10.1016/j.nimb.2010.02.091> SRIM, the tool used
+to compute the ion range in resist that sets the mask thickness. Used on
+step 007 and the implant category page. Tier: deep dive.
+
+**ZULEHNER-1983** — W. Zulehner, "Czochralski growth of silicon",
+*Journal of Crystal Growth* **65**(1–3), 189–213 (1983).
+<https://doi.org/10.1016/0022-0248(83)90051-9> A wafer-maker's review of
+Czochralski silicon growth: pulling, oxygen and carbon incorporation,
+dopant segregation. Used on step 001 and the substrate category page.
+Tier: deep dive.
+
+#### Books and book chapters
+
+**BAWOLEK-1987** — E. J. Bawolek, "Monte Carlo Simulation of Plasma Etch
+Emission Endpoint", in *Emerging Semiconductor Technology*, ASTM STP
+960, ASTM International, 1987, pp. 190–203.
+<https://doi.org/10.1520/STP25751S> A Monte Carlo treatment of
+plasma-etch optical-emission endpoint behaviour. Used on step 005. Tier:
+deep dive.
+
+**LIEBERMAN-2005** — M. A. Lieberman and A. J. Lichtenberg, *Principles
+of Plasma Discharges and Materials Processing*, 2nd ed., Wiley, 2005,
+ISBN 978-0-471-72001-0. <https://doi.org/10.1002/0471724254> Ch. 16 on
+plasma-enhanced deposition and ion-bombardment control of film stress.
+Used on step 005 and the deposition and etch category pages. Tier: deep
+dive.
+
+**NICOLLIAN-1982** — E. H. Nicollian and J. R. Brews, *MOS (Metal Oxide
+Semiconductor) Physics and Technology*, Wiley, 1982, ISBN
+978-0-471-08500-3. <https://openlibrary.org/isbn/9780471085003> The
+reference on oxide charges and C–V characterisation of the Si/SiO₂
+interface. Used on step 002 and the oxidation category page. Tier: deep
+dive.
+
+**OLIVER-2004** — M. R. Oliver (ed.), *Chemical-Mechanical Planarization
+of Semiconductor Materials*, Springer Series in Materials Science 69,
+Springer, 2004, ISBN 978-3-540-43181-9.
+<https://doi.org/10.1007/978-3-662-06234-0> Chapter-level treatments of
+dielectric CMP, endpoint and post-CMP cleaning. Used on step 012 and the
+cmp category page. Tier: deep dive.
+
+**REINHARDT-2008** — K. A. Reinhardt and W. Kern (eds.), *Handbook of
+Silicon Wafer Cleaning Technology*, 2nd ed., William Andrew, 2008, ISBN
+978-0-8155-1554-8. <https://openlibrary.org/isbn/9780815515548> The
+reference volume on wet and dry cleaning, resist removal and particle
+control. Label ↔ key: the handbook whose first chapter is listed
+separately as KERN-HANDBOOK. Used on steps 009 and 013. Tier: deep dive.
+
+**SESHAN-2012** — K. Seshan (ed.), *Handbook of Thin Film Deposition*,
+3rd ed., William Andrew, 2012, ISBN 978-1-4377-7873-1.
+<https://openlibrary.org/isbn/9781437778731> The chapter-level reference
+on CVD and HDP-CVD dielectric equipment and films. Used on step 011.
+Tier: deep dive.
+
+**SHIMURA-1989** — F. Shimura, *Semiconductor Silicon Crystal
+Technology*, Academic Press, 1989, ISBN 978-0-12-640045-8.
+<https://openlibrary.org/isbn/9780126400458> The standard monograph on
+CZ growth, dopant and oxygen incorporation, and wafer characterisation.
+Used on step 001 and the substrate category page. Tier: deep dive.
+
+**SMITH-1983** — T. C. Smith, "Wafer Cooling and Photoresist Masking
+Problems in Ion Implantation", in *Ion Implantation: Equipment and
+Techniques*, Springer Series in Electrophysics, Springer, 1983, pp.
+196–213. <https://doi.org/10.1007/978-3-642-69156-0_25> Wafer cooling
+and photoresist masking problems (flow, crust, popping) in implantation.
+Used on steps 007 and 009. Tier: deep dive.
+
+**STEIGERWALD-1997** — J. M. Steigerwald, S. P. Murarka and R. J.
+Gutmann, *Chemical Mechanical Planarization of Microelectronic
+Materials*, Wiley, 1997, ISBN 978-0-471-13827-6.
+<https://doi.org/10.1002/9783527617746> The standard CMP textbook:
+Preston's law, pads, slurries and process control. Used on step 012 and
+the cmp category page. Tier: deep dive.
+
+**SUN-2017** — T. Sun, Z. Han and M. Keswani, "Brush Scrubbing for
+Post-CMP Cleaning", in *Developments in Surface Contamination and
+Cleaning, Volume 9*, Elsevier, 2017, pp. 109–133.
+<https://doi.org/10.1016/B978-0-323-43157-6.00004-5> Brush scrubbing for
+post-CMP cleaning. Used on step 012. Tier: deep dive.
+
+**TROUTMAN-1986** — R. R. Troutman, *Latchup in CMOS Technology: The
+Problem and Its Cure*, Kluwer Academic Publishers, 1986, ISBN
+978-0-89838-215-7. <https://doi.org/10.1007/978-1-4757-1887-4> The
+monograph on why substrate resistance matters and how epitaxial
+substrates, guard rings and wells suppress latch-up. Used on step 001
+and the substrate category page. Tier: deep dive.
+
+#### Theses
+
+**HON-2003** — B. M. Hon, *Characterization of shallow trench isolation
+etch line edge roughness*, master's thesis, San José State University,
+2003. <https://doi.org/10.31979/etd.53yx-bwm5> Characterisation of
+line-edge roughness in an STI etch, a metrology view of the
+nitride/trench profile. Used on steps 005 and 006. Tier: deep dive.
+
+#### Patents
+
+**PAT-CMP-MIRRA** — R. D. Tolles, N. Shendon, S. Somekh, I. Perlov, E.
+Gantvarg and H. Q. Lee (Applied Materials), *Continuous processing
+system for chemical mechanical polishing*, US 5,738,574 A, granted
+1998-04-14. <https://patents.google.com/patent/US5738574A/en> The
+multi-platen "continuous processing" CMP architecture of the Mirra
+family. Used on step 012. Tier: deep dive.
+
+**PAT-CMP-WINDOW** — M. Birang, A. Gleason and W. L. Guthrie (Applied
+Materials), *Forming a transparent window in a polishing pad for a
+chemical mechanical polishing apparatus*, US 5,893,796 A, granted
+1999-04-13. <https://patents.google.com/patent/US5893796A/en> A
+transparent window in the pad for in-situ optical endpoint detection.
+Used on step 012. Tier: deep dive.
+
+**PAT-CORNER-TOSHIBA** — K. Horioka, H. Okano and H. Nishino (Toshiba
+Corporation), *Method of manufacturing semiconductor devices including
+rounding of corner portions by etching*, US 5,258,332 A, granted
+1993-11-02. <https://patents.google.com/patent/US5258332A/en> Rounding
+of trench corner portions by fluorine/oxygen chemical dry etching,
+framed around trench capacitors rather than STI. Used on step 006. Tier:
+deep dive.
+
+**PAT-HDP-AMAT** — Z. Tan, D. Li and W. Zygmunt (Applied Materials),
+*HDP-CVD deposition process for filling high aspect ratio gaps*, US
+6,914,016 B2, granted 2005-07-05.
+<https://patents.google.com/patent/US6914016B2/en> A multi-step HDP-CVD
+deposition/etch process for high-aspect-ratio gaps, the Applied
+Materials counterpart to the Novellus approach. Used on step 011. Tier:
+deep dive.
+
+**PAT-HDP-NOVELLUS** — G. D. Papasouliotis, A. B. Chakravarti, R. A.
+Conti, L. Economikos and P. A. Van Cleemput (Novellus Systems /
+International Business Machines), *High throughput chemical vapor
+deposition process capable of filling high aspect ratio structures*, US
+6,030,881 A, granted 2000-02-29.
+<https://patents.google.com/patent/US6030881A/en> A high-throughput
+HDP-CVD process for filling high-aspect-ratio structures. Used on step
+011. Tier: deep dive.
+
+**PAT-HOTPHOS-TSMC** — C.-C. Huang and S. M. Chen (Taiwan Semiconductor
+Manufacturing Co.), *Automated method for monitoring and controlling the
+orthophosphoric acid etch rate of silicon nitride insulator layers*, US
+5,830,375 A, granted 1998-11-03.
+<https://patents.google.com/patent/US5830375A/en> An automated method
+for monitoring and controlling the phosphoric-acid etch rate of silicon
+nitride, a production-control view. Used on step 013. Tier: deep dive.
+
+**PAT-TCP-LAM** — J. S. Ogle (Lam Research Corporation), *Method and
+apparatus for producing magnetically-coupled planar plasma*, US
+4,948,458 A, granted 1990-08-14.
+<https://patents.google.com/patent/US4948458A/en> The
+transformer-coupled planar plasma source behind the Lam TCP 9400 family.
+Used on step 005 and the etch category page. Tier: deep dive.
+
+**PAT-WORLEY-2000** — E. R. Worley, *Method of reducing substrate noise
+coupling in mixed signal integrated circuits*, US 6,020,614 A, granted
+2000-02-01. <https://patents.google.com/patent/US6020614A/en> Reducing
+substrate-noise coupling in mixed-signal ICs by tailoring deep implants
+between regions. Used on step 008. Tier: deep dive.
+
+#### Standards and roadmaps
+
+**SEMI-M1** — SEMI, *SEMI M1 — Specification for Polished Single Crystal
+Silicon Wafers*, SEMI Standards store listing.
+<https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>
+The industry standard that defines the diameter, thickness, notch,
+flatness and resistivity classes a fab orders against. Used on step 001
+and the substrate category page. Tier: cross-check.
+
+**SEMI-P1** — SEMI, *SEMI P1 — Specification for Hard Surface Photomask
+Substrates*, SEMI Standards store listing.
+<https://store-us.semi.org/products/p00100-semi-p1-specification-for-hard-surface-photomask-substrates>
+The specification for hard-surface photomask substrates. Used on step
+004 and the lithography category page. Tier: deep dive.
+
+#### University and course pages
+
+**SNF-LPCVD** — Stanford Nanofabrication Facility, *Tystar LPCVD Tube
+Training*, equipment training page.
+<https://snfguide.stanford.edu/guide/equipment/training/tystar-lpcvd-tube-training>
+A university facility guide to running a hot-wall LPCVD nitride tube.
+Used on step 003. Tier: deep dive.
+
+**SNF-NITRIDE-WET** — Stanford Nanofabrication Facility, *Silicon
+Nitride Wet Etching*, equipment-purpose page.
+<https://snfguide.stanford.edu/guide/equipment/purpose/etching/wet-etching/silicon-nitride-wet-etching>
+A university facility page on the hot phosphoric bath in practice. Used
+on step 013. Tier: deep dive.
+
+**SNF-OXIDE** — Stanford Nanofabrication Facility, *Oxide Growth
+(furnace)*, processing-technique page.
+<https://snfguide.stanford.edu/guide/equipment/processing-technique/annealing-oxidation/oxide-growth-furnace>
+A university facility page describing furnace oxidation practice and
+recipes. Used on steps 002 and 010. Tier: deep dive.
+
 ## 9. Evidence about specific tools at SkyWater
 
 Strength scale: **strong** = a SkyWater or tool-vendor statement;
