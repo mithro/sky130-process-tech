@@ -18,13 +18,14 @@ standard arsenic tip {ref}`ASTI <step-065>` and its boron halo
 {ref}`BHI <step-066>`, the tilted high-voltage tip
 {ref}`HVASTI <step-069>`, and the lightly doped SONOS tip
 {ref}`LDASTI <step-072>` with its halo {ref}`LDBHI <step-073>` — and
-none has been annealed. `TIPRTAD` heats the wafer, in an inert
-ambient, for seconds at a temperature high enough to regrow the
-arsenic-amorphised silicon, put the arsenic and boron onto lattice
-sites, and dissolve the implant damage, while moving the junctions as
-little as possible. The step list used in this reference calls it "RTA
-tip activation"; we read the code as "tip RTA" with a trailing
-qualifier that the later {ref}`RTAD <step-088>` and
+none has been annealed. `TIPRTAD` heats the wafer — in an inert
+ambient for seconds on the industry-typical recipe described below;
+SKY130's own conditions are not public — to a temperature high enough
+to regrow the arsenic-amorphised silicon, put the arsenic and boron
+onto lattice sites, and dissolve the implant damage, while moving the
+junctions as little as possible. The step list used in this reference
+calls it "RTA tip activation"; we read the code as "tip RTA" with a
+trailing qualifier that the later {ref}`RTAD <step-088>` and
 {ref}`RTAD2 <step-092>` share, and the public evidence supports the
 RTA reading (below). After it the spacer nitride is deposited at
 {ref}`SPNIT <step-076>`.
