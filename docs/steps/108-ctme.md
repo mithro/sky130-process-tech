@@ -63,13 +63,13 @@ connection between a device and the metal system:
 * **Contact area.** The PDK's extraction tables give an `mcon`
   152 000 mΩ — 152 Ω — against 15 000 mΩ for a `licon` and 4 500 mΩ
   for a `via`.[^pdk-08] A W-to-TiN interface of 0.09 µm bottom
-  CD[^pdk-03] has a fifth of the drawn area of the 0.17 µm top, and
-  the taper the etch leaves, together with the interfacial layer the
-  liner forms, is on our reading why the number is so high. Ohmic
-  contact to TiN is a metal–metal contact, so the dominant term is
-  interfacial rather than a Schottky barrier ({term}`sheet resistance`
-  and contact resistance are treated in the PDK's parasitic
-  tables[^pdk-08]).
+  CD[^pdk-03] has little more than a quarter of the drawn area of the
+  0.17 µm top, and the taper the etch leaves, together with the
+  interfacial layer the liner forms, is on our reading why the number
+  is so high. Ohmic contact to TiN is a metal–metal contact, so the
+  dominant term is interfacial rather than a Schottky barrier
+  ({term}`sheet resistance` and contact resistance are treated in the
+  PDK's parasitic tables[^pdk-08]).
 * **Etch-stop integrity.** If the etch breaks through the 0.10 µm
   `li`[^pdk-04] the tungsten plug reaches whatever is below — the
   PSG over a gate or the silicide — and the local-interconnect scheme
@@ -168,15 +168,15 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   CF4, CHF3, O2" and "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
   O2".[^skw-01] Both carry fluorocarbons that can etch oxide;
   strength: **weak** for assignment to the contact etch (the DPS II
-  line is labelled "gate, trench, W/WN" in the inventory's record of
-  the page[^skw-01]).
+  line is labelled "gate, trench, W/WN"[^skw-01]).
 * **Lam 2300 Exelan** appears only in unverified job-board snippets
   recorded in the public-sources inventory (§4 leads); strength:
   **weak**, unverified. Lam's own 10-K lists the Exelan
   line.[^lam-10k]
 * **Strip and clean — Gasonics PEP, Iridia, Mattson Aspen2; Akrion
-  Gamma wet bench with "EKS265, EKC270 solvents"; SEZ223 /
-  DaVinci.**[^skw-01] Strength: strong for existence.
+  Gamma wet bench; batch rotational tools with "EKS265, EKC270
+  solvents"; SEZ223 / DaVinci.**[^skw-01] Strength: strong for
+  existence.
 
 ## Resources required
 
