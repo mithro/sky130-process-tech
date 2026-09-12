@@ -326,10 +326,10 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
     for the Thermal Oxidation of Silicon", *Journal of Applied Physics*
     **36**(12), 3770–3778 (1965). <https://doi.org/10.1063/1.1713945>
 [^pfiester-1990]: J. R. Pfiester, F. K. Baker, T. C. Mele, H.-H. Tseng,
-    P. J. Tobin, J. D. Hayden, J. W. Miller and C. D. Gunderson, "The
-    effects of boron penetration on p⁺ polysilicon gated PMOS devices",
-    *IEEE Transactions on Electron Devices* **37**(8), 1842–1851
-    (1990). <https://doi.org/10.1109/16.57135>
+    P. J. Tobin, J. D. Hayden, J. W. Miller, C. D. Gunderson and
+    L. C. Parrillo, "The effects of boron penetration on p⁺
+    polysilicon gated PMOS devices", *IEEE Transactions on Electron
+    Devices* **37**(8), 1842–1851 (1990). <https://doi.org/10.1109/16.57135>
 [^hwang-1991]: H. Hwang, W. Ting, D.-L. Kwong and J. Lee, "A physical
     model for boron penetration through an oxynitride gate dielectric
     prepared by rapid thermal processing in N₂O", *Applied Physics
@@ -390,7 +390,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
     Deep-Submicron Process Technology*, Lattice Press, 2002,
     ISBN 978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
 [^tseng-1998]: H.-H. Tseng, D. L. O'Meara, P. J. Tobin, V. S. Wang,
-    X. Guo, R. Hegde, I. Y. Yang and P. Gilbert (Motorola), "Reduced
+    X. Guo, R. Hegde, I. Y. Yang, P. Gilbert et al. (Motorola), "Reduced
     gate leakage current and boron penetration of 0.18 μm 1.5 V
     MOSFETs using integrated RTCVD oxynitride gate dielectric", *IEDM
     1998 Technical Digest*, pp. 793–796.

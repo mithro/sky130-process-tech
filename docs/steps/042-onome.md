@@ -98,7 +98,8 @@ memory (SKY130's recipe is not public):
    plasma (CF₄/CHF₃ with O₂ or Ar) — the chemistry that "etches oxide
    as SiF₄ only under ion bombardment" ({ref}`category-etch`, citing
    Flamm and Donnelly[^flamm-1981]).
-3. **Nitride.** The trapping layer (5–15 nm) is etched in CF₄/O₂,
+3. **Nitride.** The trapping layer (7–15 nm in the Cypress
+   patents[^pat-02][^pat-03]) is etched in CF₄/O₂,
    CHF₃/O₂ or SF₆-based chemistry tuned for selectivity to the oxide
    below; a 1997 ASMC paper reports a nitride spacer etch "with high
    selectivity to oxide" of the kind required.[^regis-1997] Endpoint
@@ -311,3 +312,7 @@ memory (SKY130's recipe is not public):
     oxide-nitride-oxide (ONO) dielectric for SONOS-type devices*,
     US 6,969,689 B1, granted 2005-11-29.
     <https://patents.google.com/patent/US6969689B1/en>
+[^pat-02]: S. Levy, K. Ramkumar, F. Jenne and S. Geha (Cypress
+    Semiconductor), *Oxide-nitride-oxide stack having multiple
+    oxynitride layers*, US 2009/0179253 A1, published 2009-07-16.
+    <https://patents.google.com/patent/US20090179253A1/en>

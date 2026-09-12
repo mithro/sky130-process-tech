@@ -102,14 +102,16 @@ memory transistor (SKY130's values are not public):
   super-steep retrograde channels at 80 nm.[^huang-2000]
 * **Energy.** Chosen to place the peak below the eventual channel,
   typically a few tens of nanometres to about 0.1 µm deep. Published
-  logic-era barriers: 50–100 keV boron;[^pat-vt-lsi] the Cypress
-  indium range above.[^pat-04] Hori and Kurimoto's LATIPS device used a
-  large-tilt-angle implant to put the stopper under the channel edge
-  only,[^hori-1988] and Lin et al. optimised a tilt-implanted stopper
-  in quarter-micron MOSFETs with low-concentration wells.[^lin-1997]
+  logic-era barriers: boron chained at 100, 70 and 50 keV;[^pat-vt-lsi]
+  the Cypress indium range above.[^pat-04] Hori and Kurimoto's LATIPS
+  device used a large-tilt-angle implant to put the stopper under the
+  channel edge only,[^hori-1988] and Lin et al. optimised a
+  tilt-implanted stopper in quarter-micron MOSFETs with
+  low-concentration wells.[^lin-1997]
 * **Dose.** Of order 10¹²–10¹³ cm⁻²; the Cypress patent's
   5 × 10¹¹–5 × 10¹² cm⁻² for indium[^pat-04] and the LSI Logic patent's
-  1 × 10¹²–1 × 10¹³ cm⁻² for boron[^pat-vt-lsi] bracket it.
+  chained boron barrier (4 × 10¹² cm⁻² at 100 keV plus 1–3 × 10¹¹ cm⁻²
+  at 70 and 50 keV)[^pat-vt-lsi] bracket it.
 * **Tilt and twist.** 7° with a twist is the textbook convention to
   suppress {term}`channelling`;[^txt-02][^wiki-implant] a large tilt is
   used only when the barrier is meant to be asymmetric.[^hori-1988]
@@ -336,4 +338,5 @@ memory transistor (SKY130's values are not public):
     J. Johnson and R. Mann, "Lateral Ion Implant Straggle and Mask
     Proximity Effect", *IEEE Transactions on Electron Devices*
     **50**(9), 1946–1951 (2003).
-    <https://doi.org/10.1109/TED.2003.815371>
+    <https://doi.org/10.1109/TED.2003.815371>; open copy
+    <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>

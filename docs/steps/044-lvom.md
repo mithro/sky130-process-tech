@@ -70,7 +70,7 @@ the generated mask is not published.
 
 ## Why this step exists
 
-SKY130 runs a "1.8V core" with "5.0V I/O",[^pdk-10] plus 10–20 V
+SKY130 supports "internal 1.8V with 5.0V I/Os",[^pdk-10] plus 10–20 V
 drain-extended devices that share the 5 V oxide.[^pdk-hv] A gate oxide
 cannot serve both: ITRS 2001 puts the equivalent oxide thickness of
 2001-era low-operating-power logic at 2.0–2.4 nm and of low-standby
@@ -184,7 +184,7 @@ strip step is listed; see {ref}`GOXETCH <step-046>`).
   thickness.[^pdk-03]
 * SkyWater PDK, SPICE model files — `toxe` of `nfet_01v8` and
   `nfet_g5v0d10v5`.[^pdk-model-nfet01v8][^pdk-model-nfet5v]
-* SkyWater PDK, repository README — "1.8V core", "5.0V I/O".[^pdk-10]
+* SkyWater PDK, repository README — "internal 1.8V with 5.0V I/Os".[^pdk-10]
 * SkyWater, *Facilities & Capabilities* — lithography tools.[^skw-01]
 * SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
 * Koutny et al. (Cypress), US 8,093,128 — the resist opening over the

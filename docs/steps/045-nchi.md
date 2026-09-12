@@ -52,9 +52,10 @@ N-well window.
 
 ## Why this step exists
 
-A MOSFET's threshold "rises with the doping of the channel region";
+A MOSFET's threshold rises with the doping of the channel region
+(through the body-effect term in Wikipedia's expression[^wiki-vt]);
 multi-threshold CMOS is built "by altering the concentration of dopant
-atoms in the channel region beneath the gate oxide".[^wiki-mtcmos][^wiki-vt]
+atoms in the channel region beneath the gate oxide".[^wiki-mtcmos]
 The P-well of {ref}`PWI <step-027>` sets a background; the retrograde
 profile keeps the surface lightly doped on purpose
 ({ref}`NWI <step-018>`); a dedicated surface implant is what puts the
@@ -293,4 +294,5 @@ fab (SKY130's values are not public):
     J. Johnson and R. Mann, "Lateral Ion Implant Straggle and Mask
     Proximity Effect", *IEEE Transactions on Electron Devices*
     **50**(9), 1946–1951 (2003).
-    <https://doi.org/10.1109/TED.2003.815371>
+    <https://doi.org/10.1109/TED.2003.815371>; open copy
+    <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>
