@@ -140,7 +140,8 @@ recipe is not public); the shared physics is set out at
 5. **Strip and clean.** Oxygen or O₂/N₂ downstream {term}`ash` —
    Gasonics, Iridia or Mattson class in SkyWater's list[^skw-01] —
    then a solvent or semi-aqueous clean (the "EKS265, EKC270
-   solvents" of SkyWater's wet-bench list[^skw-01]) to remove the
+   solvents" of SkyWater's wet-bench list,[^skw-01] EKC265/270-class;
+   SkyWater writes "EKS265") to remove the
    fluorocarbon polymer and the titanium- and tungsten-fluoride
    residue from the via floor without attacking the TiW or the
    exposed aluminium of an unlanded via. No HF is used (inference:
@@ -171,9 +172,9 @@ recipe is not public); the shared physics is set out at
   CF4, CHF3, O2" and "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
   O2".[^skw-01] Both carry fluorocarbons that can etch oxide;
   strength: **weak** for assignment to the via etch.
-* **Lam 2300 Exelan** appears only in unverified job-board snippets
-  recorded in the public-sources inventory; strength: **weak**,
-  unverified. Lam's own 10-K lists the Exelan line.[^lam-10k]
+* **Lam Exelan.** Lam's Exelan line is not on SkyWater's
+  list;[^skw-01] job-board mentions are unverified. Strength:
+  **weak**. Lam's own 10-K lists the Exelan line.[^lam-10k]
 * **Strip and clean — Gasonics PEP, Iridia, Mattson Aspen2; Akrion
   Gamma wet bench; batch rotational tools with "EKS265, EKC270
   solvents"; SEZ223 / DaVinci.**[^skw-01] Strength: strong for
