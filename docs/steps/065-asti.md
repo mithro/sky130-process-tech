@@ -59,8 +59,9 @@ The extension does three jobs that the deep source/drain cannot:
 * **Series resistance.** The extension carries the full drain current
   from the channel to the deep junction under the spacer; ITRS 2001
   allocates "7% of the allowable source and drain parasitic
-  resistances to the drain extensions" and sets a maximum extension
-  sheet resistance of 400 Ω/sq for its 2001 year.[^itrs-01] A lightly
+  resistances to the drain extensions" and sets a maximum (PMOS)
+  drain-extension sheet resistance of 400 Ω/sq for its 2001
+  year.[^itrs-01] A lightly
   doped LDD of the 1980 kind[^ogura-1980] would cost too much drive
   current at 1.8 V, which is why the modern "tip" is heavily doped.
 * **Gate overlap.** The extension must reach a few nanometres under the
@@ -139,12 +140,13 @@ fab (SKY130's energy and dose are not public):
 
 ## Machines likely used at SkyWater
 
-* **Axcelis GSD high-current implanter.** SkyWater lists "Axcelis GSD
-  High current/energy B11, BF2, P, As, 10-3000kev, 1e11 to
-  5e15"[^skw-01] — arsenic, and the only tool on the list reaching the
-  10¹⁵ cm⁻² decade. Strength: **strong** for the tool; **inference**
-  for the assignment. Note that the quoted lower energy limit is
-  10 keV: a sub-10 keV tip would have to run elsewhere.
+* **Axcelis GSD high-current implanters.** SkyWater lists two: "Axcelis
+  GSD High current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15,
+  tilt/twist" and "Axcelis GSD Hi dose B11, BF2, P, As 2-180kev, 5e12
+  to 5e16, tilt/twist"[^skw-01] — both offer arsenic and reach the
+  10¹⁵ cm⁻² decade, and the Hi dose tool's 2 keV floor covers even a
+  very shallow tip. Strength: **strong** for the tools; **inference**
+  for the assignment.
 * **Axcelis 8250 medium-current implanter.** SkyWater lists "Axcelis
   8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,
   0-60 deg tilt".[^skw-01] It offers arsenic, the 7° tilt and

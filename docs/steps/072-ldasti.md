@@ -92,8 +92,9 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
   or four rotations, or 0°, for symmetry — not public. In a dense
   array the neighbouring gate lines shadow a tilted beam more than in
   logic, which favours a small tilt.[^chen-1995]
-* **Charge control and cooling.** Electron shower and cooled
-  electrostatic chuck.[^skw-01]
+* **Charge control and cooling.** Electron shower and electrostatic
+  chuck ("ESC chuck, E shower" on SkyWater's medium-current
+  tool);[^skw-01] platen cooling is industry practice.
 * **Anneal.** None here; activation at {ref}`TIPRTAD <step-075>`.
 * **Monitoring.** Thermal-wave measurement on monitor
   wafers;[^smith-1985] at 10¹³ cm⁻² the sheet resistance of a monitor
@@ -118,9 +119,10 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
   tip. Strength: **strong** for the tool; **medium** for the
   assignment, since a "lightly doped" tip is the one tip whose dose
   plausibly fits the medium-current tool.
-* **Axcelis GSD** ("B11, BF2, P, As, 10-3000kev, 1e11 to
-  5e15")[^skw-01] — possible if the energy is 10 keV or more. Strength:
-  strong for existence; weak for assignment.
+* **Axcelis GSD high-current implanters** ("10-3000kev, 1e11 to 5e15,
+  tilt/twist" and "2-180kev, 5e12 to 5e16, tilt/twist")[^skw-01] —
+  possible; the Hi dose tool's 2 keV floor covers a shallow tip.
+  Strength: strong for existence; weak for assignment.
 
 ## Resources required
 

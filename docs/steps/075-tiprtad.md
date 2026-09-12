@@ -141,9 +141,10 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
   family gives a "Recommended steady-state temperature range: 400 –
   1200°C", ramp-up "Programmable, 1 – 180°C per second", "2 banks of
   14 lamps" with "10-zone lamp control", and "Implant annealing" among
-  the applications;[^ag-8800] the family specification PDF (whose
-  operating specifications are those of the Heatpulse 4100) gives the
-  same 400–1200 °C range and a maximum ramp of 150 °C/s.[^ag-8108]
+  the applications;[^ag-8800] the family specification PDF's Heatpulse
+  8108 section gives the same 400–1200 °C range, a programmable
+  1–180 °C/s ramp-up and a maximum ramp-down of 150 °C/s (its Heatpulse
+  4100 section differs: 400–1300 °C, 10–200 °C/s ramp-up).[^ag-8108]
 * **Aviza furnaces** ("Ar anneal to 1150C", "N2 anneal to
   1150C")[^skw-01] exist on site but are, for the reasons above, an
   unlikely home for a tip anneal. Strength: strong for existence; weak
@@ -233,8 +234,8 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
   systems and temperature control.[^roozeboom-1990]
 * Ramachandran et al. (Applied Materials), US 6,897,131 — sharpening
   the spike by faster cool-down.[^pat-spike-amat]
-* Applied Materials, US 6,803,297 — the anneal ambient for spike
-  anneals.[^pat-spike-amat-ambient]
+* Jennings, Tallavarjula and Thakur (Applied Materials), US 6,803,297 —
+  the anneal ambient for spike anneals.[^pat-spike-amat-ambient]
 * Lee et al. (IBM), US 6,518,136 — extensions and halos activated by
   spike annealing to prevent their diffusion.[^pat-spike-ibm]
 * Yu (AMD), US 6,521,502 — activating extensions and halos by
@@ -253,7 +254,8 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
   clean at {ref}`LDASTIS <step-074>`, which is not public.
 * The expansion of `TIPRTAD` is our reading of the code.
 * The reseller PDF cited for the Heatpulse family[^ag-8108] documents
-  the Heatpulse 4100's operating specifications, not the 8808's own.
+  the Heatpulse 4100 and 8108, not the 8808 itself; the 8808's own
+  figures come from the reseller's product page.[^ag-8800]
 
 <!-- footnotes -->
 
@@ -326,8 +328,9 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6518136>
 [^wiki-rtp]: Wikipedia, *Rapid thermal processing*.
     <https://en.wikipedia.org/wiki/Rapid_thermal_processing>
-[^pat-spike-amat-ambient]: Applied Materials, Inc., *Optimal spike
-    anneal ambient*, US 6,803,297 B2, granted 2004-10-12.
+[^pat-spike-amat-ambient]: D. Jennings, S. Tallavarjula and R. Thakur
+    (Applied Materials), *Optimal spike anneal ambient*, US 6,803,297
+    B2, granted 2004-10-12.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803297>
 [^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
     Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
@@ -355,8 +358,8 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^ag-8108]: SemiStar Corp., *AG Associates Heatpulse 4100 / 8108 / 8800
-    / 8800i Specifications* (reseller PDF; the operating specifications
-    documented are those of the Heatpulse 4100), accessed 2026-08-30.
+    / 8800i Specifications* (reseller PDF; operating specifications for
+    the Heatpulse 4100 and 8108), accessed 2026-08-30.
     <https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22; "Raw materials." run-in paragraph

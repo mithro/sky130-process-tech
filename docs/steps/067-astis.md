@@ -59,11 +59,12 @@ implant[^pdk-03] would be shadowed by any particle standing on the
 surface. The crust also carries the implanted arsenic and whatever
 metals the beam line has sputtered onto it; both must leave the wafer
 before the {ref}`TIPRTAD <step-075>` anneal can drive them in. A
-poorly stripped implant resist shows up as hard-to-remove flakes — the
-patent literature notes that "the popping problem … causes the
-photoresist to become even harder"[^pat-strip-mosel] — and, after this
-particular strip, as tip and halo doping missing from whichever
-transistors the flakes landed on.
+poorly stripped implant resist shows up as hard-to-remove flakes — one
+patent has the implant-hardened surface "first stripped by oxygen and
+nitrogen/hydrogen plasma at a lower temperature (<220° C.) to prevent
+popping problem"[^pat-strip-mosel] — and, after this particular strip,
+as tip and halo doping missing from whichever transistors the flakes
+landed on.
 
 ## How it is typically performed
 
