@@ -321,7 +321,7 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 [^pat-pnl-novellus]: S.-H. Lee and J. Collins (Novellus Systems),
     *Method for producing ultra-thin tungsten layers with improved step
     coverage*, US 6,635,965 B1, filed 2001-10-09, granted 2003-10-21.
-    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6635965>
+    <https://patents.google.com/patent/US6635965B1/en>
 [^koerner-1993]: H. Koerner, H. P. Erb and H. Melzner, "Evaluation of
     Ti and TiN thicknesses for tungsten plug contact metallization",
     *Applied Surface Science* **73**, 6–13 (1993).
