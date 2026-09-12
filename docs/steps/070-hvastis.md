@@ -18,19 +18,19 @@ and cleans the wafer for the third and last tip mask,
 {ref}`LDNTM <step-071>`. It is the second of the three strips in the tip
 module.
 
-Two things distinguish it from {ref}`ASTIS <step-067>`. The resist is
-thin — the PDK's "Photoresist thickness for HV Tip Implants" is
-0.3 µm, against 1.14 µm for the standard resist[^pdk-03] — and the
-implant it has absorbed is, we infer from the LDD-type dose of the
-step, one to two orders of magnitude lighter than the 1.8 V tip (of
-order 10¹³ cm⁻², typical of an {term}`LDD`,[^txt-04] against 10¹⁴–10¹⁵ cm⁻²).
-The {term}`crust <implant crust>` is correspondingly thinner and the strip easier. On the other
-hand the ions arrived at 40°,[^pdk-03] so the resist sidewalls facing
-the beam have been implanted along their whole height, and the PDK's
-0.02 µm "Photoresist tilted implant penetration"[^pdk-03] means the
-resist edges have been damaged through. The surface under the resist is
-the {term}`screen oxide` from {ref}`IOX45 <step-063>` over silicon and poly,
-which must survive once more for {ref}`LDASTI <step-072>`.
+Two things distinguish it from {ref}`ASTIS <step-067>`. The resist is thin —
+the PDK's "Photoresist thickness for HV Tip Implants" is 0.3 µm, against
+1.14 µm for the standard resist[^pdk-03] — and the implant it has absorbed is,
+we infer from the LDD-type dose of the step, one to two orders of magnitude
+lighter than the 1.8 V tip (of order 10¹³ cm⁻², typical of an
+{term}`LDD`,[^txt-04] against 10¹⁴–10¹⁵ cm⁻²). The
+{term}`crust <implant crust>` is correspondingly thinner and the strip easier.
+On the other hand the ions arrived at 40°,[^pdk-03] so the resist sidewalls
+facing the beam have been implanted along their whole height, and the PDK's
+0.02 µm "Photoresist tilted implant penetration"[^pdk-03] means the resist
+edges have been damaged through. The surface under the resist is, we infer, the
+{term}`screen oxide` from {ref}`IOX45 <step-063>` over silicon and poly, which
+must survive once more for {ref}`LDASTI <step-072>`.
 
 ## Step category
 
@@ -110,8 +110,8 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** or **water vapour** for the
-  ash;[^skw-01] CF₄ omitted to protect the screen oxide.
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash;[^skw-01] CF₄
+  would be omitted, we infer, to protect the screen oxide.
 * **Sulphuric acid and hydrogen peroxide** for SPM;[^wiki-piranha]
   **ammonium hydroxide** for SC-1.[^wiki-rca]
 * **Ultrapure DI water**, **isopropanol**, **nitrogen**.

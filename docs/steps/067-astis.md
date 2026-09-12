@@ -125,8 +125,8 @@ practice).[^txt-02]
   all named on SkyWater's facilities page with their gases and
   temperatures.[^skw-01] Strength: **strong** for existence; the
   assignment of this strip to any one of them is an inference. The
-  Iridia's H₂/N₂ and H₂O-capable chemistry and 40 °C lower limit fit a
-  cool first stage best.
+  Iridia's H₂/N₂ chemistry and 40 °C lower limit fit a cool first
+  stage best.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
   BOE")[^skw-01] for the SPM/SC-1 sequence. Strength: strong for
   existence.
@@ -138,9 +138,9 @@ practice).[^txt-02]
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** and, on the Iridia,
-  **water vapour** for the ash;[^skw-01] **CF₄** is available but would
-  attack the screen oxide and is normally omitted.
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the
+  ash;[^skw-01] **CF₄** is available but would attack the screen oxide
+  and is normally omitted.
 * **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** for
   SPM;[^wiki-piranha] **ammonium hydroxide** for SC-1; **hydrochloric
   acid** for SC-2.[^wiki-rca]

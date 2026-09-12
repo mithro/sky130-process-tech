@@ -57,13 +57,13 @@ therefore designed to leave that oxide, not remove it — an inference
 from the step order, since no public source describes the SKY130 surface
 state before the cap.
 
-Metallic contamination is the other concern. The three implants of
-the module have sputtered beam-line material onto the resist and the
-open film, and the wafers have been through three tracks and two
-ashers. A furnace step comes next, and the category page explains why
-metals must be removed before any high-temperature process: they
-diffuse and precipitate, and the gate oxide is directly beneath the
-film. {term}`SC-1` and {term}`SC-2` exist for exactly this.[^kern-1990][^wiki-rca]
+Metallic contamination is the other concern. The three implants of the module
+have sputtered beam-line material onto the resist and the open film, and the
+wafers have been through three tracks and two ashers. A furnace step may come
+next ({ref}`GATENIT <step-058>`), and the category page explains why metals
+must be removed before any high-temperature process: they diffuse and
+precipitate, and the gate oxide is directly beneath the film. {term}`SC-1` and
+{term}`SC-2` exist for exactly this.[^kern-1990][^wiki-rca]
 
 ## How it is typically performed
 
@@ -76,15 +76,14 @@ clean, for a 200 mm, 130 nm-era fab:
    anyway.[^fujimura-1989][^pat-strip-mosel] The three ashers on
    SkyWater's list cover the gases and temperatures.[^skw-01]
 2. **Wet strip and clean.** {term}`SPM` for organics, SC-1 for particles and,
-   because a furnace step follows, SC-2 (HCl/H₂O₂/H₂O) for
+   because a furnace step may follow, SC-2 (HCl/H₂O₂/H₂O) for
    metals[^wiki-rca] — the full RCA sequence of Kern and
-   Puotinen.[^kern-1970] The SC-1 exposure is again limited by its
-   silicon etch rate,[^lee-kt-1999] and the sequence finishes without an
-   HF step so that a thin chemical oxide remains (inference above).
-   SkyWater's benches cover the chemistries: "Akrion Gamma Batch Wet
-   Bench – Sulfuric, SC1, phosphoric, BOE", "DNS wet bench industry
-   standard HF/SC1/SC2" and "FSI Mercury industry standard HF/SC1/SC2
-   rotational".[^skw-01]
+   Puotinen.[^kern-1970] The SC-1 exposure is again limited by its silicon
+   etch rate,[^lee-kt-1999] and the sequence finishes without an HF step so
+   that a thin chemical oxide remains (inference above). SkyWater's benches
+   cover the chemistries: "Akrion Gamma Batch Wet Bench – Sulfuric, SC1,
+   phosphoric, BOE", "DNS wet bench industry standard HF/SC1/SC2" and "FSI
+   Mercury industry standard HF/SC1/SC2 rotational".[^skw-01]
 3. **Rinse and dry.** Cascade rinse and IPA/Marangoni dry, which
    leaves fewer drying marks than spin drying on a hydrophilic
    surface.[^reinhardt-2008]
