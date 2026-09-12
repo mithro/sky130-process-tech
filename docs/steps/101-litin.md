@@ -13,8 +13,9 @@
 ## What this step is
 
 `LITIN` deposits the local interconnect itself: a blanket film of
-titanium nitride, about 0.1 µm thick, sputtered onto the polished
-surface of {ref}`WCMPLI <step-100>` — planar cap oxide studded with
+titanium nitride, about 0.1 µm thick, sputtered (on our reading) onto
+the polished surface of {ref}`WCMPLI <step-100>` — planar cap oxide
+studded with
 tungsten plugs. The next two steps pattern it ({ref}`LI1M <step-102>`,
 {ref}`LI1ME <step-103>`) into the `li1` layer of the PDK, a wiring
 level *below* metal 1 that connects transistor terminals to one
@@ -47,9 +48,12 @@ Honeywell as a sputter-target supplier.[^sec-01]
 ## Step category
 
 `LITIN` is a {ref}`Thin-film deposition <category-deposition>` step of
-the *PVD* type — reactive sputtering of titanium in argon–nitrogen —
-and the only step in the flow whose sputtered film is a wiring level
-in its own right rather than a liner, barrier or cap. The category
+the *PVD* type — reactive sputtering of titanium in argon–nitrogen
+(inferred; SkyWater's public list has PVD TiN chambers and no CVD
+TiN[^skw-01]) — and the only step in the flow whose sputtered
+*titanium nitride* is a wiring level in its own right rather than a
+liner, barrier or cap; the aluminium levels above it are sputtered
+wiring too. The category
 page describes the technique and TiN's other roles (barrier, ARC,
 the underlayer on which Blech discovered the critical-length
 effect[^blech-1976]). What is specific to this instance is that the

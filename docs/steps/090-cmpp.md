@@ -19,9 +19,9 @@ roughly 0.4 µm higher over every capped gate line and resistor body
 (0.18 µm poly plus the 0.2 µm cap[^pdk-03]) than over the field and
 the source/drains, with an HDP film's characteristic peaked profile
 over narrow lines. The wafer is pressed against a rotating pad in an
-alkaline silica slurry until those peaks are gone and the surface is
-flat to within the depth of focus of the contact lithography that
-follows.
+alkaline silica slurry (industry-typical) until those peaks are gone
+and the surface is flat to within the depth of focus of the contact
+lithography that follows.
 
 How far down the polish goes is the crux of the step, and it is not
 public. Two readings are consistent with the step name and the PDK.

@@ -17,8 +17,9 @@ planarises the inter-level oxide of {ref}`NILD2 <step-105>` and sets
 its final thickness. The as-deposited oxide copies the 0.1 µm TiN
 lines and their 0.075 µm nitride cap[^pdk-04] beneath it, more
 strongly over dense LI arrays than over open field; the wafer is
-polished in an alkaline silica slurry until that topography is gone
-and a controlled thickness of oxide — the PDK's 0.265 µm "NILD2"
+polished in an alkaline silica slurry (industry-typical) until that
+topography is gone and a controlled thickness of oxide — the PDK's
+0.265 µm "NILD2"
 between the `li` top and the `metal1` bottom[^pdk-04] — remains
 over the local interconnect. It is the last step of the
 middle-of-line module: the surface it leaves is the one on which the
