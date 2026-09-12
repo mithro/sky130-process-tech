@@ -29,7 +29,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 ## Phase 2 — Step pages (grouped by process module)
 
 - [x] Steps 001–013: starting material, STI, deep N-well — 2026-08-30, reviewed and merged
-- [r] Steps 014–034: wells and Vt implants (branch `steps/014-034`, written, under review)
+- [~] Steps 014–034: wells and Vt implants (branch `steps/014-034`; reviewed 2026-09-12, fixes + footnote conversion in progress)
 - [~] Steps 035–047: SONOS tunnel/ONO, gate oxides (branch `steps/035-047`)
 - [ ] Steps 048–063: poly gate, resistor implants, gate etch
 - [ ] Steps 064–088: tips, halos, spacers, source/drain
@@ -49,7 +49,7 @@ deep-dive entries per step page and twelve per category page
 - [x] Citation style guide, checker and exemplar page — 2026-08-30
 - [~] Convert step pages 001–007, 009–013 and expand deep-dive lists (branch `topic/footnotes-steps-001-013`)
 - [ ] Convert the ten category pages and expand deep-dive lists
-- [ ] Convert steps 014–034 (on branch `steps/014-034`, before merge)
+- [~] Convert steps 014–034 (on branch `steps/014-034`, before merge)
 
 ## Phase 3 — Cross-cutting pages
 
