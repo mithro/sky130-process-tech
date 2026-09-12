@@ -1,10 +1,6 @@
 (step-036)=
 # Step 036 — TUNARCE: Tunnel mask ARC etch
 
-:::{warning}
-This page is a stub. Content has not yet been researched and reviewed.
-:::
-
 | | |
 |---|---|
 | **Step number** | 36 of 171 |
@@ -16,50 +12,280 @@ This page is a stub. Content has not yet been researched and reviewed.
 
 ## What this step is
 
-*To be written.*
+`TUNARCE` is a short plasma etch that removes the anti-reflective
+coating from the bottom of the windows that {ref}`TUNM <step-035>`
+opened in the photoresist. A bottom anti-reflective coating
+({term}`BARC`) is spun on *under* the resist and is not photosensitive:
+after develop the resist is gone from the tunnel windows but the ARC
+film still covers the pad oxide inside them. This etch transfers the
+resist pattern through the ARC and stops on the pad oxide, so that the
+two implants that follow ({ref}`PTSI <step-037>`,
+{ref}`DEPI <step-038>`) enter the silicon through a known, thin oxide
+only, and so that the wet etch at {ref}`TUNME <step-039>` can reach and
+remove that oxide.
+
+Precisely: with the tunnel-mask resist in place, the wafer is exposed to
+an oxygen-based plasma that ashes the organic ARC in the open windows
+(the resist is attacked at a similar rate but is many times thicker),
+with the etch run to an optical-emission endpoint plus a timed over-etch,
+and stopping on the 10–20 nm pad oxide.[^pat-04] The step list used in
+this reference names the film only as "ARC"; whether it is an organic
+BARC or an inorganic dielectric ARC is discussed under *Open questions*.
 
 ## Step category
 
-*To be written.*
+`TUNARCE` is an {ref}`Etch <category-etch>` step of the *ARC open*
+type — the category page notes that organic BARC "opens in O₂/N₂ or
+HBr/O₂" while an inorganic silicon oxynitride ARC is opened "in
+CF₄-based plasmas". It is the only ARC etch in the step list used in
+this reference, which makes it a marker: of the roughly thirty mask
+layers in SKY130, the tunnel mask is the one whose flow explicitly
+shows an ARC being opened as a separate operation. On the critical
+layers ({ref}`FOM <step-004>`, {ref}`P1M <step-061>`) the ARC open is
+presumably folded into the main etch recipe on the same tool.
 
 ## Why this step exists
 
-*To be written.*
+An ARC exists to make the resist image good; the ARC etch exists
+because the ARC then gets in the way of everything else the resist
+window is for.
+
+* **Why the ARC.** Anti-reflective coatings "help reduce standing
+  waves, thin-film interference, and specular reflections"[^wiki-arc]
+  from the substrate. At the tunnel mask the substrate is a thin pad
+  oxide over silicon next to thick trench oxide over silicon: two
+  stacks with very different reflectivity at 365 nm, side by side,
+  under a resist that must define 0.410 µm windows with 0.095 µm
+  clearances to the gates (tunm.1, tunm.3, tunm.4).[^pdk-periph]
+  Reflectivity swings of that kind change the effective dose inside
+  the resist and shift the printed CD ({ref}`category-lithography`);
+  an ARC removes the substrate from the exposure equation. A 1996
+  study on an i-line 0.35 µm device is the classic demonstration that
+  a new anti-reflective coating tightens CD control.[^baker-1996]
+* **Why the ARC must be opened before implanting.** A 130 nm-era BARC
+  is of the order of 100 nm thick (industry-typical value; Levinson,
+  ch. on resist processing).[^levinson-2005] The channel-type implants
+  that follow are at tens of keV, whose {term}`projected range` in an
+  organic film is comparable to that thickness
+  ({ref}`category-implant`), so an unopened ARC would absorb a large,
+  poorly controlled fraction of the dose and shift the profile of the
+  memory transistor's channel — precisely the parameter these implants
+  exist to set.
+* **Why it must be opened before the oxide etch.** The HF-based etch
+  at {ref}`TUNME <step-039>` cannot penetrate an organic film; the
+  window has to be clear down to the oxide.
+
+Without `TUNARCE` the tunnel window would be printed but not usable.
+Its cost is a few nanometres of resist loss and a plasma exposure of
+the pad oxide, both of which the recipe must budget for.
 
 ## How it is typically performed
 
-*To be written.*
+An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
+(SKY130's recipe is not public):
+
+* **Chamber.** A high-density or medium-density plasma etcher of the
+  silicon/poly class, at a few to tens of millitorr with a modest bias
+  — the same chamber types used for gate etch. Reactive-ion etching
+  holds the wafer on an RF-driven electrode and accelerates ions
+  "normal to its surface" ({ref}`category-etch`, citing
+  Wikipedia).[^wiki-rie]
+* **Chemistry.** Oxygen with nitrogen, or oxygen with a hydrogen
+  halide such as HBr. Pure O₂ etches organics fast but isotropically;
+  adding N₂ or HBr passivates the sidewall so that the ARC opening does
+  not undercut the resist edge. Xu, Lill and Podlesnik (Applied
+  Materials) characterised organic ARC etching "in O₂+halogen/hydrogen
+  halide plasma" and showed how the sidewall chemistry controls the
+  profile;[^xu-2001] Ramanathan et al. discuss the integration issues
+  of DUV resist over organic BARC, including resist loss during the
+  BARC open.[^ramanathan-1998]
+* **Selectivity.** Organic ARC and resist are chemically similar, so
+  selectivity to resist is close to 1:1 and the resist budget must
+  include the ARC thickness plus over-etch (industry practice; Nojiri,
+  ch. 3).[^nojiri-2015] Selectivity to the underlying oxide is very
+  high in an oxygen plasma, because oxide has no volatile product
+  without fluorine; a small HBr addition etches oxide only slowly.
+* **Endpoint.** Optical emission of a carbon-containing product line
+  followed by a fixed over-etch to clear the ARC in the smallest
+  windows ({ref}`category-etch`).
+* **Post-etch.** No strip — the resist stays on for
+  {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>`. The plasma leaves
+  the resist surface slightly hardened, which the eventual strip must
+  cope with.
+* **Inorganic alternative.** If the ARC were a PECVD silicon
+  oxynitride, the open would be a CF₄/CHF₃-based dielectric etch with
+  its own selectivity problem to the pad oxide underneath
+  ({ref}`category-etch`).
 
 ## Machines typically used
 
-*To be written.*
+* **Silicon/poly plasma etcher** with O₂/N₂/HBr capability, 200 mm:
+  Lam TCP 9400 series, Applied Materials DPS Centura
+  ({ref}`category-etch`).
+* **Dielectric etcher** (Lam Exelan, Applied MxP) if the ARC is
+  inorganic.
+* **Downstream asher** — some fabs open thin organic ARCs on relaxed
+  layers with a timed, isotropic ash rather than a directional etch
+  ({ref}`category-strip`).
+* **Optical emission endpoint** on the etcher; **CD-SEM** for the
+  post-etch window.
 
 ## Machines likely used at SkyWater
 
-*To be written.*
+* **Applied Materials DPS II.** SkyWater lists "AMAT DPSII, HBr, Cl2,
+  NF3, CF4, CHF3, O2 – gate, trench, W/WN".[^skw-01] The HBr/O₂ gas set
+  is exactly an organic-ARC-open chemistry. Strength: **strong** for
+  the tool; **inference** for its assignment to `TUNARCE`.
+* **Lam 9400 TCP.** Listed as "Lam 9400 TCP, poly/nitride, HBr, CF4,
+  SF6, O2"[^skw-01] — also capable of O₂/HBr ARC opens and, with CF₄,
+  of an inorganic ARC open. Strength: strong for the tool; inference
+  for the assignment. A university clean-room describes the 9400 as "a
+  Transformer Coupled Plasma (TCP) etcher" with a gas list including
+  oxygen.[^snf-9400]
+* **Gasonics PEP / Iridia / Mattson Aspen 2 ashers** ("N2, O2",
+  "N2, O2, H2, CF4, NH3, H2/N2")[^skw-01] — the isotropic alternative.
+  Strength: strong for existence; weak for assignment.
 
 ## Resources required
 
-*To be written.*
+* **Oxygen, nitrogen, hydrogen bromide, helium/argon** process gases;
+  the DPS II and 9400 gas sets are public.[^skw-01] SkyWater names Air
+  Products, Praxair, Linde and Airgas as gas suppliers.[^sec-01][^sec-02]
+* **CF₄/CHF₃** only if the ARC is inorganic.[^skw-01]
+* **Helium backside cooling**, chamber consumables (electrostatic
+  chuck, liners, focus ring).
+* **Endpoint optics** and their windows.
 
 ## Related steps and cross-references
 
-*To be written.*
+* Previous: {ref}`TUNM <step-035>` (the resist and ARC being opened).
+* Next: {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implant
+  through the cleared windows; {ref}`TUNME <step-039>` etches the pad
+  oxide in them.
+* The ARC question for the other mask layers is discussed on
+  {ref}`FOM <step-004>`.
+* Category page: {ref}`Etch <category-etch>`; the ARC itself belongs
+  to {ref}`category-lithography`.
 
 ## References
 
 ### Cross-check
 
-*To be written.*
+* SkyWater, *Facilities & Capabilities* — AMAT DPS II and Lam 9400 TCP
+  gas sets; ashers.[^skw-01]
+* SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
+  suppliers.[^sec-01][^sec-02]
+* SkyWater PDK, *Periphery rules* — tunm.1, tunm.3 and tunm.4, the
+  dimensions the ARC protects.[^pdk-periph]
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
+  10–20 nm pad oxide on which the ARC etch stops.[^pat-04]
+* Stanford Nanofabrication Facility, *Lam Research TCP 9400* — the
+  reactor class and its gases.[^snf-9400]
 
 ### High-level understanding
 
-*To be written.*
+* Wikipedia, *Anti-reflective coating* — ARCs in photolithography,
+  BARC.[^wiki-arc]
+* Wikipedia, *Reactive-ion etching* — the plasma etch
+  basics.[^wiki-rie]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+  plasma etching and resist processing.[^txt-02]
+* Levinson, *Principles of Lithography* — anti-reflective coatings and
+  resist processing.[^levinson-2005]
 
 ### Deep dive
 
-*To be written.*
+* Xu, Lill and Podlesnik (Applied Materials), *JVST A* 2001 —
+  wall-dependent etching of organic ARC in O₂ + halogen / hydrogen
+  halide plasmas.[^xu-2001]
+* Ramanathan et al., SPIE 1998 — etch integration issues with DUV
+  resist over organic BARC.[^ramanathan-1998]
+* Baker and Capsuto, SPIE 1996 — CD control for an i-line 0.35 µm
+  device using a new anti-reflective coating.[^baker-1996]
+* Linliu, Kuo and Huang, SPIE 2000 — a polymeric ARC for better CD
+  uniformity.[^linliu-2000]
+* Coburn and Winters, *J. Appl. Phys.* 1979 — the ion-assisted
+  chemistry that makes a plasma etch directional.[^coburn-1979]
+* Steinbrüchel, *Appl. Phys. Lett.* 1989 — the energy dependence of
+  ion-enhanced etch yields, governing the low-bias ARC open.[^steinbruchel-1989]
+* Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981 — the design
+  of plasma etchants, including oxygen-based organic etches.[^flamm-1981]
+* Nojiri, *Dry Etching Technology for Semiconductors* — selectivity,
+  endpoint and the practical recipe structure.[^nojiri-2015]
+* Mack, *Fundamental Principles of Optical Lithography* — the
+  reflectivity and standing-wave theory behind the ARC.[^mack-2007]
 
 ## Open questions
 
-*To be written.*
+* Whether the tunnel-mask ARC is an organic BARC or an inorganic
+  dielectric ARC is not public; the O₂/HBr reading is an inference from
+  the tool gas sets and from industry practice on i-line layers.
+* Why this particular relaxed layer carries an ARC when the other
+  implant masks of the flow apparently do not (no other ARC etch is
+  listed) is not explained publicly; the reflectivity contrast of the
+  pad-oxide/trench-oxide substrate is our best reading.
+* Which etcher runs the step, and whether the open is directional or a
+  timed ash, is inferred, not stated.
+* ARC thickness, etch time and over-etch are not public.
+
+<!-- footnotes -->
+
+[^pat-04]: K. Ramkumar, I. Kouznetsov and V. Prabhakar (Cypress
+    Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098
+    B1, granted 2014-08-05.
+    <https://patents.google.com/patent/US8796098B1/en>
+[^wiki-arc]: Wikipedia, *Anti-reflective coating*.
+    <https://en.wikipedia.org/wiki/Anti-reflective_coating>
+[^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
+    PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^baker-1996]: D. C. Baker and E. S. Capsuto, "Critical dimension
+    control for i-line 0.35-μm device using a new antireflective
+    coating", *Proc. SPIE* **2724**, Advances in Resist Technology and
+    Processing XIII, 710 (1996). <https://doi.org/10.1117/12.241869>
+[^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
+    SPIE Press, 2005. <https://doi.org/10.1117/3.601520>
+[^wiki-rie]: Wikipedia, *Reactive-ion etching*.
+    <https://en.wikipedia.org/wiki/Reactive-ion_etching>
+[^xu-2001]: S. Xu, T. Lill and D. Podlesnik, "Wall-dependent etching
+    characteristics of organic antireflection coating in
+    O₂+halogen/hydrogen halide plasma", *Journal of Vacuum Science &
+    Technology A* **19**(6), 2893–2899 (2001).
+    <https://doi.org/10.1116/1.1412655>
+[^ramanathan-1998]: V. Ramanathan, S. Chen, K. Lai, M. R. Brongo and
+    N. Samarakone, "Etch integration issues in the development of deep
+    submicron contacts utilizing DUV resist and organic BARC", *Proc.
+    SPIE* **3333**, Advances in Resist Technology and Processing XV,
+    909 (1998). <https://doi.org/10.1117/12.312473>
+[^nojiri-2015]: K. Nojiri, *Dry Etching Technology for Semiconductors*,
+    Springer, 2015. <https://doi.org/10.1007/978-3-319-10295-5>
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^snf-9400]: Stanford Nanofabrication Facility, *Lam Research TCP 9400
+    Poly Etcher (lampoly)*, equipment page.
+    <https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>
+[^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
+    statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+    ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^linliu-2000]: K. Linliu, M.-R. Kuo and Y.-R. Huang, "Novel polymeric
+    antireflective coating (PARC) for better uniformity control of
+    critical dimension", *Proc. SPIE* **4000**, Optical
+    Microlithography XIII, 915 (2000). <https://doi.org/10.1117/12.389087>
+[^coburn-1979]: J. W. Coburn and H. F. Winters, "Ion- and
+    electron-assisted gas-surface chemistry — An important effect in
+    plasma etching", *Journal of Applied Physics* **50**, 3189–3196
+    (1979). <https://doi.org/10.1063/1.326355>
+[^steinbruchel-1989]: C. Steinbrüchel, "Universal energy dependence of
+    physical and ion-enhanced chemical etch yields at low ion energy",
+    *Applied Physics Letters* **55**, 1960–1962 (1989).
+    <https://doi.org/10.1063/1.102336>
+[^flamm-1981]: D. L. Flamm and V. M. Donnelly, "The design of plasma
+    etchants", *Plasma Chemistry and Plasma Processing* **1**, 317–363
+    (1981). <https://doi.org/10.1007/BF00565992>
+[^mack-2007]: C. Mack, *Fundamental Principles of Optical Lithography:
+    The Science of Microfabrication*, Wiley, 2007,
+    ISBN 978-0-470-01893-4. <https://openlibrary.org/isbn/9780470018934>
