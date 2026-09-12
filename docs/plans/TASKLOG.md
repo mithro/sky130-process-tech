@@ -30,8 +30,8 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 
 - [x] Steps 001–013: starting material, STI, deep N-well — 2026-08-30, reviewed and merged
 - [x] Steps 014–034: wells and Vt implants — reviewed, converted to footnotes and merged 2026-09-12
-- [r] Steps 035–047: SONOS tunnel/ONO, gate oxides (branch `steps/035-047`, written 2026-09-12, under review)
-- [ ] Steps 048–063: poly gate, resistor implants, gate etch
+- [~] Steps 035–047: SONOS tunnel/ONO, gate oxides (branch `steps/035-047`; reviewed 2026-09-12, fixes in progress)
+- [~] Steps 048–063: poly gate, resistor implants, gate etch (branch `steps/048-063`)
 - [ ] Steps 064–088: tips, halos, spacers, source/drain
 - [ ] Steps 089–106: PSG, contact silicide, local interconnect
 - [ ] Steps 107–117: contact, metal 1
