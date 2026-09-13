@@ -44,7 +44,9 @@ a resistivity of about 128 µΩ·cm, several times the roughly
 the range of reactively sputtered TiN films (Sundgren's
 review[^sundgren-1985]). SkyWater's capability list includes "ESC
 TiN" and "Imp TiN" chambers on its AMAT {term}`PVD` tool[^skw-01] and
-Honeywell as a sputter-target supplier.[^sec-01]
+its filings name Honeywell Electronic Materials (2021 S-1 and fiscal
+2023 10-K) and JX Metals (fiscal 2023 10-K) as sputter-target
+suppliers.[^sec-01][^sec-02]
 
 ## Step category
 
@@ -164,13 +166,17 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
   platform (Endura-class) and the assignment of `LITIN` to the {term}`ESC`
   chamber rather than the IMP chamber are **inferences** from the
   film's role and the planar surface.
-* **Sputter targets.** Honeywell Electronic Materials is named in
-  SkyWater's S-1.[^sec-01] Strength: strong for the supplier.
+* **Sputter targets.** SkyWater's filings name Honeywell Electronic
+  Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
+  as sputter-target suppliers.[^sec-01][^sec-02] Strength: strong for the
+  suppliers; the specific target is not named.
 
 ## Resources required
 
-* **Titanium sputter targets** (Honeywell named as
-  supplier[^sec-01]); **argon** and **nitrogen**.[^wiki-sputter]
+* **Titanium sputter targets** (SkyWater's filings name Honeywell Electronic
+  Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
+  as sputter-target suppliers[^sec-01][^sec-02]); **argon** and
+  **nitrogen**.[^wiki-sputter]
 * **Helium** backside cooling; chamber shields, clamp/ESC parts,
   pasting cycles.
 * **Monitor wafers** (SEMI M8 class)[^semi-m8] for sheet resistance,
@@ -210,8 +216,8 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 * SkyWater/Efabless press release, 2021-04-06 — "the local
   interconnect" as a standard feature.[^ann-11]
 * SkyWater, *Facilities & Capabilities* — "ESC TiN", "Imp TiN".[^skw-01]
-* SkyWater, Form S-1 — Honeywell sputter targets; gas
-  suppliers.[^sec-01]
+* SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — sputter-target and
+  gas suppliers.[^sec-01][^sec-02]
 
 ### High-level understanding
 
@@ -296,6 +302,9 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
 [^amat-endura]: Applied Materials, *Endura PVD*, product page.
     <https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>
 [^amat-1997]: Applied Materials, Inc., *1997 Annual Report*.

@@ -169,14 +169,17 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
   titanium is deposited by IMP or by collimation
   is not public; SkyWater's list names collimation for Ti and IMP for
   TiN.
-* **Sputter targets.** SkyWater's S-1 names Honeywell Electronic
-  Materials as a sputter-target supplier.[^sec-01] Strength: strong
-  for the supplier; the specific target is not named.
+* **Sputter targets.** SkyWater's filings name Honeywell Electronic
+  Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
+  as sputter-target suppliers.[^sec-01][^sec-02] Strength: strong for the
+  suppliers; the specific target is not named.
 
 ## Resources required
 
-* **Titanium sputter targets** (high-purity, bonded to backing
-  plates; Honeywell named as supplier[^sec-01]).
+* **Titanium sputter targets** (high-purity, bonded to backing plates;
+  SkyWater's filings name Honeywell Electronic Materials (2021 S-1 and
+  fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K) as sputter-target
+  suppliers[^sec-01][^sec-02]).
 * **Argon** (sputter gas) and **nitrogen** (reactive gas for
   TiN);[^wiki-sputter] **helium** backside cooling.
 * **Chamber consumables** — shields, coils, clamp or {term}`ESC` rings,
@@ -205,8 +208,8 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 
 * SkyWater, *Facilities & Capabilities* — "AMAT PVD Metal": "Imp
   TiN", "Collimated Ti", "ESC TiN".[^skw-01]
-* SkyWater, Form S-1 — Honeywell Electronic Materials sputter
-  targets; gas suppliers.[^sec-01]
+* SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — sputter-target and
+  gas suppliers.[^sec-01][^sec-02]
 * SkyWater PDK, *Criteria & Assumptions* — "Standard Licon bottom
   CD" 0.08 µm; "Pre-LI ILD thickness" 0.5 µm; S/D junction
   0.1 µm.[^pdk-03]
@@ -276,6 +279,9 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
