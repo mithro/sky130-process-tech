@@ -552,8 +552,8 @@ the tier needs:[^skw-01]
 * Beckmann et al., *ECS Trans.* 2016 — wet HF versus BCl₃/O₂ RIE
   removal of the HfO₂, compared for structure, electrical behaviour and
   yield.[^beckmann-2016]
-* Golonzka et al. (Intel), VLSI 2019 — RRAM integrated into a
-  production logic flow.[^golonzka-2019]
+* Golonzka et al. (Intel), VLSI 2019 — RRAM integrated into Intel's
+  22FFL FinFET logic technology.[^golonzka-2019]
 * George, *Chem. Rev.* 2010 — atomic layer deposition.[^george-2010]
 * Wilk, Wallace and Anthony, *J. Appl. Phys.* 2001 — high-κ dielectrics
   and their process compatibility.[^wilk-2001]
