@@ -10172,9 +10172,8 @@ accessed 2026-09-13.
 production of the MERCURY batch spray cleaner for 75–200 mm wafers, with
 "over 1,000 systems installed"; a 2024 notice on the page transfers the
 product line to another supplier. Used on the wet bench and spray
-processor page.
+processor page. Tier: cross-check (vendor statement).
 Also used on the etch and strip category pages.
-Tier: cross-check (vendor statement).
 
 #### Deposition machine pages (first cited there)
 
@@ -10346,8 +10345,8 @@ Planar 200 Flowfill, a "multi-chambered cluster system" in which "The
 plasma CVD films are deposited in one module and the CVD planarizing
 flow layer is deposited in the Flowfill(TM) module", offered against SOG
 and HDP gap fill. Used on the PECVD and HDP-CVD pages.
-Also used on the FILOX, PSG, NCAPOX, NILD3 and NILD4 step pages.
 Tier: cross-check (regulatory filing).
+Also used on the FILOX, PSG, NCAPOX, NILD3 and NILD4 step pages.
 
 **SEMITODAY-SPTS-2009** — Semiconductor Today, *Sumitomo Precision
 Products completes acquisition of Aviza*, news item, 2009-10-19.
@@ -10356,9 +10355,8 @@ The lineage of Newport-based Electrotech "(founded in 1968)", bought in
 1996 by Plasma & Materials Technologies, which became Trikon
 Technologies; "Trikon later merged with Aviza Technology Inc in 2005",
 and SPP's 2009 purchase of Aviza's assets to form SPP Process Technology
-Systems (SPTS). Used on the PECVD page.
+Systems (SPTS). Used on the PECVD page. Tier: high-level (trade press).
 Also used on the NCAPOX step page.
-Tier: high-level (trade press).
 
 **NOVELLUS-HDP-2001** — Novellus Systems, *Dielectric – HDP Solutions*,
 product page; Wayback Machine capture of 2001-12-02.
@@ -10973,10 +10971,9 @@ CD-SEMs from the S-6000 of 1984 to the CG4100: design aims (in-lens
 detection, low-energy beams, field-emission gun, recipes), pitch
 calibration standards, and the resolution, repeatability, throughput and
 wafer sizes of the S-6000, S-8820, S-9200 and CG4000. Used on the CD-SEM
-and overlay metrology page.
+and overlay metrology page. Tier: cross-check (vendor statement).
 Also used on the lithography category page and the P1M, CTM1 and VIM step
 pages.
-Tier: cross-check (vendor statement).
 
 **KLA-5200XP** — KLA-Tencor, *5200XP Overlay Metrology System*, product
 page; Wayback Machine capture of 2001-08-07.
