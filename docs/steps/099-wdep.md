@@ -154,7 +154,9 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
   and the assignment to this step are **inferences** — though a
   plug fill is what the entry says and this is the flow's first plug
   fill. Novellus's PNL patent describes the nucleation technique the
-  entry names.[^pat-pnl-novellus]
+  entry names.[^pat-pnl-novellus] SkyWater's wording "PECVD
+  Tungsten"[^skw-01] we read as a label for the tungsten CVD tool
+  rather than a statement of a plasma-driven deposition (inference).
 * **"W plug dual damascene" special module.**[^skw-01] Strength:
   strong for the existence of tungsten-plug processing; the
   "damascene" wording is not explained on the page.
@@ -245,6 +247,9 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
   SkyWater's "PNL option" entry.
 * Which Novellus/Lam model is used, and whether the same tool serves
   the via levels, is not public.
+* SkyWater's phrase "PECVD Tungsten"[^skw-01] is read here as a label
+  for the tungsten CVD tool rather than evidence of a plasma-assisted
+  deposition; no public source clarifies it.
 * What SkyWater's "W plug dual damascene" phrase refers to is not
   explained on the public page.
 
