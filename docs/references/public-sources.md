@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1221
+written page has exactly one entry here; the inventory holds 1229
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -9601,6 +9601,71 @@ Novellus licensed the GaSonics Aura 1000/2000LL, AE 2001/2000LL and L3510
 strip systems to a refurbisher, while the Gamma and PEP Iridia lines from
 its 2001 GaSonics purchase stayed with Novellus. Used on the downstream
 plasma asher page. Tier: high-level (trade press).
+
+**AKRION-GAMA-SERIES** — Akrion Technologies, *GAMA Automated Wet
+Station*, product page, accessed 2026-09-13.
+<https://www.akriontech.com/product-3> The GAMA series as a modular batch
+immersion wet station for cleaning, etching and stripping, with
+concentration control and dilute chemistry. Used on the wet bench and
+spray processor page. Tier: cross-check (vendor statement).
+
+**LEENAARS-1990** — A. F. M. Leenaars, J. A. M. Huethorst and J. J. van
+Oekel, "Marangoni drying: A new extremely clean drying process",
+*Langmuir* **6**(11), 1701–1703 (1990).
+<https://doi.org/10.1021/la00101a014> The paper that introduced
+Marangoni drying (no abstract in Crossref or OpenAlex; the annotation
+rests on the title). Used on the wet bench and spray processor page.
+Tier: deep dive.
+
+**PAT-DICO2-MKS** — C. Gottschalk, U. Brammer, J. Lohr and J. Seiwert
+(MKS Instruments), *System and method for carbonation of deionized
+water*, EP 2 104 648 B1, granted 2013-04-17.
+<https://patents.google.com/patent/EP2104648B1/en> CO₂-dissolved DI water
+for wet cleaning, whose dissolved CO₂ lowers the water's resistivity "to
+a level that prevents surface charging". Used on the wet bench and spray
+processor page. Tier: cross-check (patent).
+
+**PAT-EKC-HYDROXYLAMINE** — W. M. Lee (EKC Technology), *Cleaning
+compositions for removing etching residue and method of using*,
+US 5,334,332 A, filed 1992-07-09, granted 1994-08-02.
+<https://patents.google.com/patent/US5334332A/en> Resist and etch-residue
+removers of hydroxylamine and an alkanolamine, with a chelating agent
+such as 1,2-dihydroxybenzene. Used on the wet bench and spray processor
+page. Tier: cross-check (patent).
+
+**PAT-SPRAY-SEMITOOL** — C. Meuchel, M. Bernt and T. Henke (Semitool),
+*Centrifugal spray processor and retrofit kit*, US 7,305,999 B2, filed
+2002-07-19, granted 2007-12-11.
+<https://patents.google.com/patent/US7305999B2/en> A centrifugal spray
+processor with cassettes in a motor-driven rotor and arrays of smaller,
+higher-back-pressure nozzles to cut chemical consumption. Used on the wet
+bench and spray processor page. Tier: cross-check (patent).
+
+**SCREEN-WS820** — SCREEN Semiconductor Solutions, *Wet Station: WS-620C
+/ WS-820L*, product page, accessed 2026-09-13.
+<https://www.screen.co.jp/spe/en/products/ws-620c820l> The WS-620C
+(150 mm) and WS-820C and WS-820L (200 mm, carrier and carrierless) wet
+stations: up to 13 baths and six transfer robots, and an optional
+low-pressure drying unit against watermarks. Used on the wet bench and
+spray processor page. Tier: cross-check (vendor statement).
+
+**SST-AKRION-SCP-2007** — Solid State Technology, *Akrion sells "SCP"
+automated wet station for wafer cleaning*, 2007-06-11.
+<https://sst.semiconductor-digest.com/2007/06/akrion-sells-scp-automated-wet-station-for-wafer-cleaning/>
+Sale of an Akrion E200 200 mm wet bench for resist strip and etch; the
+E200's RCA-clean, nitride-etch and strip configurations, rinse tanks and
+dryers with "true" HF-last capability; Akrion's 2006 purchase of SCP
+Global Technologies' assets. Used on the wet bench and spray processor
+page. Tier: high-level (trade press).
+
+**TEL-MERCURY-2018** — Tokyo Electron, *TEL announces the relaunch of
+MERCURY MP, a Batch Spray Cleaning System*, news release, 2018-07-10,
+accessed 2026-09-13.
+<https://www.tel.com/news/product/2018/20180710_001.html> The return to
+production of the MERCURY batch spray cleaner for 75–200 mm wafers, with
+"over 1,000 systems installed"; a 2024 notice on the page transfers the
+product line to another supplier. Used on the wet bench and spray
+processor page. Tier: cross-check (vendor statement).
 
 ## 9. Evidence about specific tools at SkyWater
 
