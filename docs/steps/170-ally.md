@@ -136,7 +136,7 @@ an aluminium back end (SKY130's recipe is not public):
   cycling of the metal; unload.
 * **Single-wafer alternative.** A forming-gas anneal in an RTP chamber
   is possible but uncommon for the final sinter; SkyWater's Heatpulse
-  8808 lists "NH3, Ar, N2, O2" but not hydrogen,[^skw-01] which argues
+  8808 lists "NH3, Ar, N2, O2" but not H₂ or forming gas,[^skw-01] which argues
   for the furnace here (inference).
 * **Metrology.** Monitor MOS capacitors for interface-trap density
   (charge pumping or C–V); the transistor, contact-chain and sheet
@@ -158,10 +158,12 @@ an aluminium back end (SKY130's recipe is not public):
   "Furnaces are all made by Aviza" and lists "H2 and forming gas alloy"
   among the furnace processes.[^skw-01] Strength: **strong** for the
   existence of a furnace alloy process; the assignment to `ALLY` is an
-  **inference** — it is the only hydrogen-bearing anneal on the list.
+  **inference** — it is the only anneal listed with H₂ or forming gas
+  (the furnaces' "H2 and forming gas alloy").
   Dealer documentation describes the Aviza/SVG AVP-8000 as a vertical
   batch furnace for 150–200 mm wafers.[^aviza-avp]
-* **AG Associates Heatpulse 8808** — no hydrogen in its listed ambients;[^skw-01]
+* **AG Associates Heatpulse 8808** — no H₂ or forming gas among its
+  listed gases ("NH3, Ar, N2, O2");[^skw-01]
   weak.
 
 ## Resources required

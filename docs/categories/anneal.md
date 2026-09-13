@@ -25,8 +25,9 @@ types:
   titanium or cobalt film into a {term}`silicide` on the exposed
   silicon and polysilicon ({ref}`CSIL <step-098>`).
 * **Alloy (sinter)** — a typically 350–450 °C anneal[^txt-02] in
-  {term}`forming gas` after contact formation ({ref}`ALLY1 <step-096>`)
-  and after the last metal ({ref}`ALLY <step-170>`).
+  {term}`forming gas` after the contact etch and clean but before any
+  metal ({ref}`ALLY1 <step-096>`) and after the last metal
+  ({ref}`ALLY <step-170>`).
 * Purely by association, the {term}`PSG` densification, {term}`ILD` bakes and the like
   are treated as part of the deposition steps.
 
