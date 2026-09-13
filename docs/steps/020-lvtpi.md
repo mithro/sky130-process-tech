@@ -133,7 +133,7 @@ fab (SKY130 values are not public):
 * **Boron trifluoride (BF₃)** source gas for the p-type implant of the
   n⁺-gate reading; **arsine (AsH₃)** or **phosphine (PH₃)** if the
   implant is n-type.[^wiki-implant]
-* Support gases, cryopump and source consumables, monitor wafers
+* Support gases, cryopump and source consumables, {ref}`monitor wafers <material-substrates>`
   (category page).
 * No new resist: the {ref}`NWM <step-017>` resist is reused.
 

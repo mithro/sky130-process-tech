@@ -153,7 +153,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   ion-source parts faster than hydrides, so source-consumable usage is
   higher (Axcelis's GSD page notes "source operating costs especially
   with fluorinated species").[^axcelis-gsd-page]
-* Support gases, cryopump and beam-line consumables, monitor wafers.
+* Support gases, cryopump and beam-line consumables, {ref}`monitor wafers <material-substrates>`.
 * No new resist: the {ref}`HVTPM <step-022>` resist is reused.
 
 ## Related steps and cross-references
