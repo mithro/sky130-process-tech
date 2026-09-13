@@ -213,7 +213,11 @@ forming gas;[^skw-01] the furnace grades for
 The gases are listed in the {ref}`materials index <materials-index>`;
 what is specific to an anneal and alloy furnace is summarised here. None
 of the SkyWater sources describes the fab's hydrogen supply or furnace
-exhaust.
+exhaust. Forming gas and the other anneal ambients are described on the
+{ref}`anneal ambients <material-anneal-ambients>` page. Quartz and
+silicon-carbide furnace ware is described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Gases.** Nitrogen and argon for inert anneals and purges;[^ohashi-2007]
   forming gas or hydrogen for the alloy,[^wiki-fg] which the University
@@ -284,6 +288,10 @@ ambients are not public.
   and the step assignments.
 * {ref}`category-test` — the electrical monitors that measure the alloy's
   effect.
+* {ref}`material-anneal-ambients` — forming gas and the other anneal
+  ambients.
+* {ref}`material-hardware-consumables` — furnace ware, traps and
+  abatement.
 
 ## References
 

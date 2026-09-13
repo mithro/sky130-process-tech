@@ -224,7 +224,9 @@ The wet chemicals are described on the
 {ref}`wet chemicals <material-wet-chemicals>` page and listed in the
 {ref}`materials index <materials-index>`; what is specific to a spin processor is summarised
 here. None of the SkyWater sources describes the tool's chemical supply
-or exhaust.
+or exhaust. Ultrapure water, its standards and its quality parameters
+are described on the {ref}`ultrapure water <material-ultrapure-water>`
+page.
 
 * **Acids and oxidisers.** Dilute HF;[^skw-01][^kikuyama-1994] sulfuric
   acid, hydrogen peroxide and HF for DSP and DSP+, at compositions such
@@ -296,6 +298,8 @@ public.
 * {ref}`materials-index` — HF, sulfuric acid, peroxide and solvents.
 * {ref}`material-wet-chemicals` — the acids, peroxide cleans and solvents,
   their grades and SkyWater's listed chemistries.
+* {ref}`material-ultrapure-water` — rinse water, its standards and
+  quality.
 
 ## References
 

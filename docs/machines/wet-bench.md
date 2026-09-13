@@ -227,7 +227,9 @@ The wet chemicals are described on the
 {ref}`wet chemicals <material-wet-chemicals>` page and listed in the
 {ref}`materials index <materials-index>`; what is specific to a wet bench is summarised here.
 None of the SkyWater sources describes the fab's chemical supply or
-waste treatment.
+waste treatment. Ultrapure water, its standards and its quality
+parameters are described on the
+{ref}`ultrapure water <material-ultrapure-water>` page.
 
 * **Acids, bases and oxidisers.** Sulfuric acid and hydrogen peroxide
   for SPM; ammonia, hydrochloric acid and peroxide for SC-1 and
@@ -297,6 +299,8 @@ not public.
 * {ref}`materials-index` — wet chemicals and ultrapure water.
 * {ref}`material-wet-chemicals` — the acids, peroxide cleans and solvents,
   their grades and SkyWater's listed chemistries.
+* {ref}`material-ultrapure-water` — rinse water, its standards and
+  quality.
 
 ## References
 

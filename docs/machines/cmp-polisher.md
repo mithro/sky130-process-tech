@@ -266,7 +266,11 @@ The slurries, pads and cleaning chemicals are listed in the
 {ref}`materials index <materials-index>` and described on the
 {ref}`category page <category-cmp>`; what is specific to the polisher is
 summarised here. None of the SkyWater sources describes the fab's
-slurry distribution or waste treatment.
+slurry distribution or waste treatment. Slurries, pads, conditioners,
+carrier parts and post-CMP clean chemistry are described on the
+{ref}`CMP consumables <material-cmp-consumables>` page. Ultrapure water,
+its standards and its quality parameters are described on the
+{ref}`ultrapure water <material-ultrapure-water>` page.
 
 * **Slurries.** Silica or ceria slurries for oxide and STI, and
   oxidiser-bearing slurries for tungsten ({ref}`category-cmp`), such as
@@ -341,6 +345,10 @@ page and the step pages.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — slurries, pads and cleaning chemicals.
+* {ref}`material-cmp-consumables` — slurries, pads, conditioners and
+  post-CMP clean chemistry.
+* {ref}`material-ultrapure-water` — rinse water, its standards and
+  quality.
 
 ## References
 
