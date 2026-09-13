@@ -45,6 +45,10 @@ written, reviewed and audited to the same standard.
 9. **Do not launch sub-agents of your own.** Do all the work yourself,
    sequentially; the coordinator keeps at most two agents running at
    once.
+10. **No personal details in web requests.** Fetch with the user agent
+    `sky130-process-tech docs checker` and never put an e-mail address,
+    name or account in any request header or URL. Where a site demands
+    a contact (e.g. SEC EDGAR), use the Wayback Machine copy instead.
 
 ## Writer brief (step pages)
 
