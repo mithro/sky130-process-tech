@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`LVTPI` is, we infer from the step order, the third and last implant
+`LVTPI` is, in the sequence this reference describes, the third and last implant
 placed through the N-well resist of {ref}`NWM <step-017>`, after the two
 well implants {ref}`NWI <step-018>` and {ref}`NWI2 <step-019>`. Where
 those set the buried profile of the N-well, `LVTPI` is a low-energy

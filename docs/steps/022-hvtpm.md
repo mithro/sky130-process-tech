@@ -15,7 +15,8 @@
 `HVTPM` prints the *high-Vt P-channel mask*: photoresist is coated on
 the cleaned wafer, exposed through the HVTPM {term}`reticle` and developed,
 opening windows over the PMOS channels that are to have a raised
-threshold. Two implants follow, we infer from the step order, through
+threshold. Two implants follow, in the sequence this reference
+describes, through
 the same resist — the P-channel implant {ref}`PCHI <step-023>` and the
 P-channel BF₂ implant {ref}`PNCHI <step-024>` — and the resist is
 stripped at {ref}`PCHIS <step-025>`.

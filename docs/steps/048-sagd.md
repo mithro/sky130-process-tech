@@ -71,8 +71,8 @@ could not, it lets the source and drain be implanted with the gate as
 the mask, and its work function can be set by doping.[^wiki-poly] In
 SKY130 the same film also forms the two precision resistor flavours
 (300 Ω/sq "P+ poly" and 2000 Ω/sq "P− poly"),[^pdk-07] the poly plate
-of the varactors and the gate of the SONOS memory transistor (inferred
-from the step order).
+of the varactors and, as this reference describes the module, the gate
+of the SONOS memory transistor (inference).
 
 Depositing the film *amorphous* rather than polycrystalline is a
 deliberate choice with three documented benefits:
@@ -202,7 +202,7 @@ suppliers,[^sec-01][^sec-02] without tying them to a process.
   {ref}`IOX45 <step-063>`.
 * Also covers the SONOS cell stack from {ref}`ONO <step-040>` to
   {ref}`ONOME <step-042>`, so the memory-cell gate and the logic gate
-  are the same film (inferred from the step order).
+  are the same film (this reference's reading; inference).
 * Poly stringers from incomplete {term}`STI` planarisation are discussed on
   {ref}`FILOX <step-011>`; the earlier furnace nitride is
   {ref}`ISONIT <step-003>`.
