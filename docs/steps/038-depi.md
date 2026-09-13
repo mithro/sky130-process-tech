@@ -165,7 +165,7 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 
 ## Machines typically used
 
-* **Medium-current ion implanter**, 200 mm, single-wafer: Axcelis
+* **{ref}`Medium-current ion implanter <machine-medium-current-implanter>`**, 200 mm, single-wafer: Axcelis
   (Eaton) 8250 class ("3keV to 750keV"[^axcelis-8250]), Varian
   E220/E500, Applied Materials xR ({ref}`category-implant`).
 * **Thermal-wave** metrology.

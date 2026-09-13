@@ -92,8 +92,8 @@ illustrative.
 
 ## Machines typically used
 
-* **High-energy batch implanter** (Axcelis GSD/HE, Varian VIISta 3000)
-  or **medium-current implanter** (Axcelis 8250HT "3keV to
+* **{ref}`High-energy batch implanter <machine-high-energy-implanter>`** (Axcelis GSD/HE, Varian VIISta 3000)
+  or **{ref}`medium-current implanter <machine-medium-current-implanter>`** (Axcelis 8250HT "3keV to
   750keV")[^axcelis-8250] depending on energy; a light-dose,
   moderate-energy boron implant is natural work for the medium-current
   tool (category page).

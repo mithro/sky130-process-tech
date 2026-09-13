@@ -77,9 +77,9 @@ An industry-generic second drift-well implant for a 200 mm,
 
 ## Machines typically used
 
-* **Medium-current implanter** (Axcelis 8250HT "3keV to
+* **{ref}`Medium-current implanter <machine-medium-current-implanter>`** (Axcelis 8250HT "3keV to
   750keV"[^axcelis-8250]; Varian E500) for light doses at moderate
-  energy, or a **high-energy batch implanter** (Axcelis GSD/HE) for the
+  energy, or a **{ref}`high-energy batch implanter <machine-high-energy-implanter>`** (Axcelis GSD/HE) for the
   deep member.
 * **{term}`Four-point probe <four-point probe>`** metrology on monitor wafers.
 
