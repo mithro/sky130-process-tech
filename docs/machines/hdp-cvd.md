@@ -298,7 +298,8 @@ page.
   source or dedicated injectors, followed by a seasoning
   oxide;[^pat-hdp-reactor-amat][^pat-hdp-clean-novellus][^pat-seasoning-amat]
   NF₃, the usual PECVD clean gas, has "a global warming potential (GWP)
-  17,200 times greater than that of CO2".[^wiki-nf3]
+  17,200 times greater than that of CO2" over 100 years (an IPCC Fourth
+  Assessment Report, AR4, value).[^wiki-nf3]
 * **Chamber parts.** Quartz or ceramic domes and alumina gas nozzles,
   which the seasoning patent names as sources of sodium;[^pat-seasoning-amat]
   the dome's heater and cold plates.[^pat-hdp-reactor-amat]

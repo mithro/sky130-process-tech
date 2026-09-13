@@ -320,7 +320,8 @@ page.
   ozone for SACVD.[^amat-sacvd-2000]
 * **Chamber-clean gases.** NF₃, "a greenhouse gas, with a global
   warming potential (GWP) 17,200 times greater than that of
-  CO2",[^wiki-nf3] or perfluorocarbons such as C₂F₆;[^sobolewski-1998]
+  CO2" over 100 years (an IPCC Fourth Assessment Report, AR4,
+  value),[^wiki-nf3] or perfluorocarbons such as C₂F₆;[^sobolewski-1998]
   remote plasma cleans reduce the gas used.[^amat-producer-se-2001]
 * **RF and heater hardware.** High- and low-frequency generators and
   matching networks,[^pearce-1992] gas inlet manifolds that carry the
