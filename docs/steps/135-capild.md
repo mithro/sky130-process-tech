@@ -87,7 +87,7 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   among the "normally *optional* features" SKY130 includes "as
   standard";[^pdk-10] "MiM Capacitor" in the S130 platform
   table;[^skw-02] and "MiM capacitors" among the "normally optional
-  features" offered as standard on the open shuttles.[^ann-11] A
+  features" SKY130 offers "as standard".[^ann-11] A
   capacitor whose plates are metal has no
   depletion layer, so its capacitance barely changes with bias and
   its series resistance is small; the alternatives — a poly–poly or

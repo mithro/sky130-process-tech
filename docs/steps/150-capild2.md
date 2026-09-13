@@ -17,10 +17,12 @@ metal–insulator–metal (MiM) capacitor. Straight after the blanket
 metal-4 stack of {ref}`WTIAL4 <step-149>` is sputtered — and before that
 metal is patterned — a thin dielectric film is laid over the whole
 wafer by {term}`PECVD`. This reference describes the film as a PECVD
-silicon {term}`oxynitride` (inference: SkyWater lists a PECVD
-oxynitride capability with a range of refractive indices,[^skw-01] and
-PECVD oxynitride is an established MiM dielectric[^ng-2003]); the PDK
-does not name the material. A thin top-plate film follows at {ref}`CAPTIW2 <step-151>`; the two are cut into capacitor top
+silicon {term}`oxynitride`; the public record does not single that
+material out — SkyWater lists PECVD oxide, nitride and oxynitride with
+"range of R.I." options,[^skw-01] PECVD nitride and oxynitride have both
+served as MiM dielectrics,[^kar-roy-1999][^ng-2003] and the PDK does
+not name the material. A thin top-plate film follows at
+{ref}`CAPTIW2 <step-151>`; the two are cut into capacitor top
 plates by the second capacitor mask and etch ({ref}`CAP2M <step-152>`,
 {ref}`CAP2ME <step-153>`), and only then is metal 4 patterned
 ({ref}`MM4 <step-154>`, {ref}`MM4E <step-155>`). The sequence repeats
@@ -116,8 +118,8 @@ difference in thickness or permittivity between this film and
 * **An analogue capacitor with metal plates.** SkyWater and Google list
   MiM capacitors among SKY130's features — "Optional MiM capacitors" in
   the PDK README,[^pdk-10] "MiM Capacitor" in the S130 platform
-  table[^skw-02] and "MiM capacitors" among the options offered as
-  standard on the open shuttles.[^ann-11] Metal plates have no depletion
+  table[^skw-02] and "MiM capacitors" among the "normally optional
+  features" SKY130 offers "as standard".[^ann-11] Metal plates have no depletion
   layer, so capacitance barely changes with bias; Kar-Roy et al.
   (Conexant) and Babcock et al. (Texas Instruments) describe PECVD-nitride
   MiMs added to aluminium back ends for mixed-signal and RF
@@ -328,9 +330,11 @@ back end (SKY130's recipe is not public); the sequence is that of
   page.[^pdk-previous]
 * The design rules for `cap2m` — width, spacing, enclosure by metal 4
   and of via 4 — are not published.[^pdk-periph]
-* Whether every SKY130 lot carries the second capacitor module, given
-  the README's "optional" wording[^pdk-10] and the unflagged capacitor
-  mask,[^pdk-05] is not public.
+* Whether every SKY130 lot carries the second capacitor module is not
+  public: the README lists "Optional MiM capacitors" and also counts MiM
+  capacitors among the "normally *optional* features" SKY130 includes
+  "as standard",[^pdk-10] and the capacitor mask is not
+  flagged.[^pdk-05]
 
 <!-- footnotes -->
 

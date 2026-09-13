@@ -49,8 +49,9 @@ above metal 3,[^pdk-04] and it will be contacted by a via-4 opening that
 the rules allow only as a 0.800 µm square (via4.1, via4.3)[^pdk-periph]
 — four times the width of a via 3 — which lands on the plate as the
 {ref}`VIM4E <step-160>` etch finishes. In the PDK's stacked
-cross-section the plate is joined upward to "M5 (plate 1)", the same
-node as "M3 (plate 1)".[^pdk-07]
+cross-section the plate is joined upward to "M5 (plate 1)", the label
+the drawing also gives the metal-5 shape joined through metal 4 to "M3
+(plate 1)".[^pdk-07]
 
 ## Step category
 
@@ -98,8 +99,8 @@ stress and deposition energy matter because the layer beneath is thin
   electrode for a copper back end ("ALCAP").[^pat-mim-ti-alcap]
 * **Series resistance of a stacked pair.** The plate's 5.8 Ω/sq[^pdk-07]
   sits in series with the capacitor; in the PDK's stacked cross-section
-  it is contacted from above by several via-4 shapes and the `CAPM`
-  plate below by several via-3 shapes,[^pdk-07] the layout by which the
+  it is contacted from above by two via-4 shapes and the `CAPM`
+  plate below by two via-3 shapes,[^pdk-07] the layout by which the
   PDK's sub-circuit model — which "accounts for the parasitic contact
   resistance"[^pdk-07] — keeps that resistance small (inference from
   the drawing). Ng et al. review MiM integration choices in Al–Cu and
