@@ -12755,7 +12755,8 @@ lower case and the citation is the one given in the page footnote; the
 entries are grouped by the material page that first cited the source,
 and sources already listed above record their use on a material page in
 an "Also used on" line of their own. Apart from SKW-CERTS,
-EPA-GHGRP-SKYWATER and MPCA-2025, which name SkyWater and its
+EPA-GHGRP-SKYWATER (the EPA's greenhouse-gas reporting record for the
+Bloomington facility) and MPCA-2025, which name SkyWater and its
 Minnesota site, none of these sources mentions SkyWater, SKY130 or the
 Bloomington fab; they describe materials, grades, suppliers and their
 products in general. Every URL was fetched on 2026-09-13:
