@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1217
+written page has exactly one entry here; the inventory holds 1221
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -9569,6 +9569,38 @@ cross-check (vendor statement).
 <https://en.wikipedia.org/wiki/Boron_trichloride> BCl₃ in semiconductor
 plasma etching, where it etches metal oxides through volatile
 oxychlorides. Used on the metal plasma etcher page. Tier: high-level.
+
+**SEMISTAR-IRIDIA** — SemiStar Corp., *Novellus Gasonics PEP Iridia DL
+Plasma Asher*, used-equipment listing, accessed 2026-09-13.
+<http://www.semistarcorp.com/product/novellus-gasonics-pep-iridia-dl-plasma-asher/>
+A dual-module PEP 4800DL system whose modules each carry an "Astex
+Microwave Generator" and an "ENI ACG-5XL RF Generator", with gas lines
+including CF₄, N₂, O₂ and 4 % H₂/N₂. Used on the downstream plasma asher
+page. Tier: high-level (dealer listing).
+
+**SNF-AURA** — Stanford Nanofabrication Facility, *Gasonics Aura Asher
+(gasonics)*, equipment page, accessed 2026-09-13.
+<https://snfguide.stanford.edu/guide/equipment/gasonics-aura-asher-gasonics>
+A GaSonics Aura downstream microwave asher: an O₂/N₂ plasma whose
+products reach the wafer in an "afterglow" that is no longer electrically
+damaging; single-wafer cassette loading and lamp heating. Used on the
+downstream plasma asher page. Tier: high-level.
+
+**SST-GASONICS-2000** — Solid State Technology, *Novellus Acquires
+Gasonics*, 2000-10-27.
+<https://sst.semiconductor-digest.com/2000/10/novellus-acquires-gasonics/>
+Novellus's stock-for-stock acquisition of GaSonics International, "a
+supplier of dry resist removal and surface preparation equipment",
+valued at about $347 million. Used on the downstream plasma asher page.
+Tier: high-level (trade press).
+
+**SST-NOVELLUS-SPEC-2006** — Solid State Technology, *Novellus
+licenses–not sells–legacy strip tools to SPEC*, 2006-10-19.
+<https://sst.semiconductor-digest.com/2006/10/novellus-licenses-not-sells-legacy-strip-tools-to-spec/>
+Novellus licensed the GaSonics Aura 1000/2000LL, AE 2001/2000LL and L3510
+strip systems to a refurbisher, while the Gamma and PEP Iridia lines from
+its 2001 GaSonics purchase stayed with Novellus. Used on the downstream
+plasma asher page. Tier: high-level (trade press).
 
 ## 9. Evidence about specific tools at SkyWater
 
