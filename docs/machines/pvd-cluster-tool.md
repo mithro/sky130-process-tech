@@ -189,8 +189,9 @@ INOVA.[^novellus-pvd-2001]
   structures";[^amat-1997] the Integrated PVD/CVD Liner/Barrier system,
   with "more than 100 systems shipped" by 2000, and the Vectra IMP
   chamber;[^amat-ism-2000] the Endura SL;[^amat-ism-cu-2000] and the
-  Self-Ionized Plasma (SIP) TiN chamber, "used in volume production for
-  advanced devices with aspect ratios of 7:1".[^amat-liner-barrier-2001]
+  Self-Ionized Plasma (SIP) Ti/TiN ("TTN") chamber, "used in volume
+  production for advanced devices with aspect ratios of
+  7:1".[^amat-liner-barrier-2001]
   Applied describes the Endura today as "the most successful
   metallization system in the history of the semiconductor
   industry".[^amat-endura]
@@ -205,10 +206,11 @@ INOVA.[^novellus-pvd-2001]
 * **Varian.** The collimated deposition patent above is Varian's;[^pat-collimator-varian]
   the step pages also name the Varian M2i ({ref}`TI/TIN1 <step-097>`),
   of which no vendor description was retrieved for this page.
-* **Other vendors.** The step pages name MRC Eclipse, ULVAC and Anelva
-  sputtering systems and Electrotech/Trikon high-pressure fill modules
-  ({ref}`TIAL6 <step-112>`, {ref}`WTIAL5 <step-161>`); no vendor
-  description of them was retrieved for this page.
+* **Other vendors.** The step pages name MRC Eclipse
+  ({ref}`TI/TIN1 <step-097>`), ULVAC and Anelva sputtering systems
+  ({ref}`TIAL6 <step-112>`) and Electrotech/Trikon high-pressure fill
+  modules ({ref}`WTIAL5 <step-161>`); no vendor description of them was
+  retrieved for this page.
 
 ## At SkyWater
 
@@ -289,8 +291,9 @@ logistics.
   chamber; SkyWater's filings name Honeywell and JX Metals as suppliers
   of "metal sputtering targets".[^sec-02] Magnetron targets erode
   unevenly: "a 'racetrack' erosion profile may appear on the surface of
-  the target".[^wiki-sputter] TiW targets of the period were "typically
-  composed of 10 wt% of titanium and the balance of tungsten" (category
+  the target".[^wiki-sputter] TiW barrier films of the period were
+  "typically composed of 10 wt% of titanium and the balance of
+  tungsten", sputtered from TiW targets (category
   page).[^pat-tiw-hitachi]
 * **Gases.** Argon for sputtering and pre-clean, nitrogen for reactive
   TiN.[^wiki-sputter]
@@ -313,10 +316,11 @@ SKY130 conditions of their own. SKY130's sputtering recipes and most of
 its film thicknesses are not public.
 
 * **Liners under tungsten.** The {ref}`TI/TIN1 <step-097>` page reads the
-  contact liner as ionised Ti/TiN (inference from "Imp TiN" and
-  "Collimated Ti"[^skw-01]), and the via-liner pages
-  ({ref}`TIN2 <step-109>` to {ref}`TIN5 <step-146>`) as IMP TiN; each is
-  followed by a tungsten fill ({ref}`tungsten CVD page
+  contact liner as titanium followed by IMP TiN (inference from "Imp
+  TiN"[^skw-01]); whether the titanium is collimated, as "Collimated Ti"
+  would allow, or ionised is not public. The via-liner pages
+  ({ref}`TIN2 <step-109>` to {ref}`TIN5 <step-146>`) read their liners as
+  IMP TiN. Each liner is followed by a tungsten fill ({ref}`tungsten CVD page
   <machine-tungsten-cvd>`). Ionised deposition exists to put metal at
   the bottom of such holes.[^rossnagel-1994][^hopwood-1998]
 * **The local interconnect.** The PDK draws `li` 0.1 µm thick,[^pdk-04]
@@ -375,7 +379,7 @@ its film thicknesses are not public.
   integrated liner/barrier system, the Vectra IMP chamber and the Endura
   SL.[^amat-ism-2000][^amat-ism-cu-2000]
 * Applied Materials, *Aluminum Liner/Barrier* (2001) and *Aluminum Slab
-  and Fill* (2002) pages — SIP TiN, aluminium over tungsten plugs and
+  and Fill* (2002) pages — SIP Ti/TiN, aluminium over tungsten plugs and
   ALPS+ fill.[^amat-liner-barrier-2001][^amat-al-slab-2002]
 * Novellus Systems, *Metal PVD Solutions* (1998 and 2001 captures) — the
   INOVA, its Varian origin and the HCM source.[^novellus-pvd-1998][^novellus-pvd-2001]
@@ -473,6 +477,7 @@ its film thicknesses are not public.
 [^amat-endura]: Applied Materials, *Endura PVD*, product page; read from
     the Wayback Machine capture of 2026-06-11.
     <https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>
+    <https://web.archive.org/web/20260611155710/https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>
 [^amat-ism-2000]: Applied Materials, *Interconnect Systems & Modules*
     (liner/barrier and tungsten CVD systems), product page; Wayback
     Machine capture of 2000-08-15.
@@ -584,9 +589,9 @@ its film thicknesses are not public.
 [^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
     filed 2024.
     <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
-[^pat-tiw-hitachi]: Hitachi Metals, *Titanium-tungsten target material
-    for sputtering and manufacturing method therefor*, US 5,160,534 A,
-    granted 1992-11-03.
+[^pat-tiw-hitachi]: A. Hiraki (Hitachi Metals), *Titanium-tungsten
+    target material for sputtering and manufacturing method therefor*,
+    US 5,160,534 A, filed 1991-05-31, granted 1992-11-03.
     <https://patents.google.com/patent/US5160534A/en>
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
     diagram), google/skywater-pdk repository.
