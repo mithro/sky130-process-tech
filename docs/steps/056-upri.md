@@ -70,6 +70,12 @@ stress,[^chen-2000] and Tsang et al. analyse the variation of
 high-value resistor banks;[^tsang-2014] both are consequences of the
 same barrier-limited conduction that this implant sets up.
 
+The published SKY130 {term}`test tile` carries the structures such a
+film is characterised with: eleven modules of "2K ohm/sq P- POLY
+RESISTOR" at the same five widths as the 300 Ω/sq set, from 0.5 to 20
+squares and many as "Mismatch" pairs, and a van der Pauw "RSRP - 2K
+ohm/sq poly resistor sheet resistance: VDP".[^raw-data-testtile-pads]
+
 ## How it is typically performed
 
 An industry-generic light poly-resistor implant for a 200 mm,
@@ -148,6 +154,9 @@ An industry-generic light poly-resistor implant for a 200 mm,
 * SkyWater, *Facilities & Capabilities* — the 8250 and GSD implanters
   with species and dose ranges.[^skw-01]
 * Semiconductor Online, 8250HT — the medium-current class.[^axcelis-8250]
+* SKY130 raw-data repository, test-tile pad documentation — the 2 kΩ/sq
+  poly-resistor and van der Pauw structures of the published test
+  tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -292,3 +301,9 @@ An industry-generic light poly-resistor implant for a 200 mm,
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>

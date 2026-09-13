@@ -95,6 +95,13 @@ pad oxide only where the cells are ({ref}`TUNME <step-039>`). One mask
 serves all three. Without `TUNM` there would be no SONOS cells; the logic
 flow would be unaffected.
 
+The published SKY130 {term}`test tile` shows the structures the SONOS
+module is characterised with: "SONOS Rev 2" transistors from 0.45/0.15
+to 25/25 µm, in deep N-well and "w/o DNW", a "2T Flash Cell Rev 2
+Array, 11,264 cells" with "FET W/Lsonos/Lnpass = 0.45/0.22/0.15",
+area- and perimeter-intensive "SONOS Rev 2" capacitors, and "NV Latch
+Tri-Gates".[^raw-data-testtile-pads]
+
 ## How it is typically performed
 
 An industry-generic sequence for a relaxed implant-plus-etch window in
@@ -217,6 +224,9 @@ and the pre-oxidation clean as part of those steps (see the
   additional mask layers"; no count is given for S8.[^cyp-22]
 * Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest — the
   2T cell and its {term}`Fowler–Nordheim <Fowler–Nordheim tunnelling>` programming.[^cyp-25]
+* SKY130 raw-data repository, test-tile pad documentation — the SONOS
+  transistor, array and capacitor structures of the published test
+  tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -376,3 +386,9 @@ and the pre-oxidation clean as part of those steps (see the
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>

@@ -37,7 +37,11 @@ Like {ref}`RRPM <step-052>`, `URPM` is not in the PDK's public mask
 table, which lists only `RPM` among the resistor masks.[^pdk-05] We
 infer that the {term}`reticle` is generated from `urpm` in the window
 (dark-field) tone, and that its geometry follows the `rpm` rules,
-because the P− resistors share the P+ layout footprints.[^pdk-07]
+because the P− resistors share the P+ layout footprints.[^pdk-07] The
+pad documentation of the SKY130 {term}`test tile` names the mask too,
+marking the equivalent shortest 2 kΩ/sq resistors (W = 0.69 µm,
+L = 0.345 µm and W = 0.33 µm, L = 0.33 µm) "(may not work for routes
+using URPM mask)".[^raw-data-testtile-pads]
 
 ## Step category
 
@@ -167,6 +171,9 @@ reading is used throughout these pages and is marked as an inference.
 * SkyWater PDK, *Criteria & Assumptions* — photoresist thickness.[^pdk-03]
 * SkyWater, *Facilities & Capabilities* — litho tools.[^skw-01]
 * SkyWater, Form S-1 — resist suppliers.[^sec-01]
+* SKY130 raw-data repository, test-tile pad documentation — the 2 kΩ/sq
+  poly-resistor (URPM note) structures of the published test
+  tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -327,3 +334,9 @@ reading is used throughout these pages and is marked as an inference.
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
