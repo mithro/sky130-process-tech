@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 75 of 171 |
+| **Step number** | 75 of 171[^steps-sheet] |
 | **Step code** | `TIPRTAD` |
 | **Category** | {ref}`Anneal / thermal processing <category-anneal>` |
 | **Phase** | FEOL — extensions, spacers, source/drain |
@@ -377,3 +377,6 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
     *Rapid thermal heating apparatus and method*, US 5,155,336 A,
     granted 1992-10-13.
     <https://patents.google.com/patent/US5155336A/en>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
