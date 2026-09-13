@@ -25,8 +25,9 @@ electrical test ({ref}`HPETEST <step-171>`).
 The PDK's process stack diagram draws this film as "TOPNIT K=7.5" over
 the thin "TOPOX K=3.9": 0.54 µm thick on top of `metal5` and 0.4223 µm
 on its sidewall, with a "glass cut" through it over the metal; beside
-the metal it also dimensions 0.3777 µm above the metal-5
-level.[^pdk-04] The Cypress qualification reports for other processes at
+the metal it places the top of the nitride 0.3777 µm above the bottom
+of metal 5, with no separate TOPOX drawn (our reading of the
+drawing).[^pdk-04] The Cypress qualification reports for other processes at
 the same fab give thicker nitrides — "1000Å TEOS / 9000Å PECVD Nitride"
 (R7FT-3R, 2005),[^cyp-qtp-014807] "1000A TEOS/9000A Si3N4" (S8DI,
 2014)[^cyp-qtp-123907] and "7000 +/- 2000A Nitride" (S8TNV-5R,
@@ -35,27 +36,31 @@ nitride between 0.54 µm and 0.9 µm; which value applies to SKY130 lots
 is not public. The R7FT-3R report calls its nitride "PECVD", and
 SkyWater lists "PECVD nitride C1" and "PECVD silane
 oxide/nitride/oxynitride, C1 – low temp, range of R.I.
-options";[^cyp-qtp-014807][^skw-01] we read `NTSD` as a PECVD silicon
-nitride (inference). The step list used in this reference does not
-explain the film beyond its place in the flow.
+options";[^cyp-qtp-014807][^skw-01] we read `NTSD` as a {term}`PECVD`
+silicon nitride (inference). The step list used in this reference does
+not explain the film.
 
 ## Step category
 
 `NTSD` is a {ref}`Thin-film deposition <category-deposition>` step of
 the *PECVD nitride* class — the film the category page describes as
 "the final scratch- and moisture-resistant passivation".
-{ref}`LINIT <step-104>` is the flow's other plasma-nitride deposition
-over metal, 0.075 µm thick;[^pdk-04] this one is several times thicker,
+{ref}`LINIT <step-104>`, over the local interconnect, is the flow's
+other nitride on conductors (a plasma nitride on the reading of that
+page), 0.075 µm thick;[^pdk-04] this one is several times thicker,
 is deposited over the tallest topography in the flow (1.26 µm metal-5
 lines on 1.600 µm spaces, m5.1 and m5.2[^pdk-periph][^pdk-04]) and, on
 our reading, into a trench several micrometres deep at the die edge, so
 {term}`step coverage` and film stress matter more than at any earlier
 nitride. The diagram's 0.4223 µm on the sidewall against 0.54 µm on top
 is a sidewall coverage of about 78 % (our arithmetic from the
-labels[^pdk-04]). Because nothing is deposited over it except an
-optional polyimide ("PI1"[^pdk-04]; the mask table does not flag the
-polyimide masks as used in SKY130[^pdk-05]), it is also the surface the
-package mould compound touches.
+labels[^pdk-04]). Because nothing is deposited over it in the flow
+described here except possibly a polyimide ("PI1"[^pdk-04]; the mask
+table does not flag "Polyimide" (PMM) for SKY130 but does flag
+"Polyimide 2 (2)" (PMM2), "DECA PBO" and "Cu Inductor/Redist."
+(CU1M),[^pdk-05] and SkyWater lists a "Polyimide cure" furnace
+process[^skw-01]), on a die without those options it is also the
+surface the package mould compound touches.
 
 ## Why this step exists
 
@@ -69,8 +74,8 @@ package mould compound touches.
   oxide under bias and shift MOS characteristics — Snow, Grove, Deal and
   Sah measured their transport in thermal oxide[^snow-1965] — and
   moisture with ionic contamination corrodes aluminium, as Comizzoli et
-  al. reviewed;[^comizzoli-1986] Peck's humidity model underlies the
-  tests used to qualify such a barrier.[^peck-1986] Habraken and
+  al. reviewed;[^comizzoli-1986] Peck's acceleration model is used to
+  shorten such humidity tests.[^peck-1986] Habraken and
   Kuiper review the films' composition and properties.[^habraken-1994]
 * **Sealing the die edge (inference).** Deposited into the `nsm`
   opening, the nitride can form a wall through the dielectric stack at
@@ -171,7 +176,7 @@ public):
 * The oxide beneath: {ref}`NFUSOX <step-164>`; the metal it covers:
   {ref}`MM5E <step-163>`.
 * The anneal after passivation: {ref}`ALLY <step-170>`.
-* The other plasma nitride over metal: {ref}`LINIT <step-104>`.
+* The other nitride over conductors: {ref}`LINIT <step-104>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 ## References
@@ -180,13 +185,13 @@ public):
 
 * SkyWater PDK, *Process stack diagram* — "TOPNIT K=7.5", 0.54 µm and
   0.4223 µm; 0.3777 µm; "TOPOX"; "PI1"; `metal5` 1.26 µm.[^pdk-04]
-* SkyWater PDK, *Masks* — the polyimide masks not flagged for
-  SKY130.[^pdk-05]
+* SkyWater PDK, *Masks* — PMM not flagged for SKY130; PMM2, PBO and
+  CU1M flagged.[^pdk-05]
 * SkyWater PDK, *Periphery rules* — m5.1, m5.2.[^pdk-periph]
 * Cypress, QTP 014807, QTP 123907/132302/132301 and QTP 113005 — the
   passivation descriptions at Fab 4.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
 * SkyWater, *Facilities & Capabilities* — "PECVD nitride C1"; furnace
-  nitrides.[^skw-01]
+  nitrides; "Polyimide cure".[^skw-01]
 * SkyWater, Form S-1 — gas suppliers.[^sec-01]
 
 ### High-level understanding
@@ -219,7 +224,8 @@ public):
   degradation.[^shimaya-1995]
 * Snow, Grove, Deal and Sah, *J. Appl. Phys.* 1965 — alkali-ion
   transport in oxide, the contamination the nitride blocks.[^snow-1965]
-* Peck, IRPS 1986 — humidity-test acceleration.[^peck-1986]
+* Peck, IRPS 1986 — a humidity-test acceleration model for plastic
+  packages.[^peck-1986]
 * Hunter et al., IMAPS 2012 — probe- and bond-induced cracking in
   aluminium pad structures.[^hunter-2012]
 * Bothra, McKay and Jhota (Zeevo), US 6,492,716; Stamper, McGahay and He
@@ -234,15 +240,18 @@ public):
 * The nitride thickness for SKY130 is not public: 0.54 µm on the PDK
   diagram[^pdk-04] against 0.7–0.9 µm in Cypress reports for other
   processes at the same fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
-* What the diagram's 0.3777 µm beside metal 5 measures[^pdk-04] is not
-  stated.
+* The diagram's 0.3777 µm beside metal 5 runs, on our reading, from the
+  bottom of metal 5 to the top of the nitride, with no TOPOX drawn
+  there;[^pdk-04] whether the passivation is really thinner between
+  lines is not stated.
 * Whether the nitride fills, lines or merely bridges the `nsm` opening,
   and what it lands on there, is not public.
 * The deposition chemistry, temperature, refractive index, stress and
   hydrogen content are not public; that the film is PECVD is an
   inference from SkyWater's list and a Cypress report.[^skw-01][^cyp-qtp-014807]
-* Whether an optional polyimide is ever applied to SKY130 wafers is not
-  public; the polyimide masks are not flagged for SKY130.[^pdk-05]
+* Whether a polyimide is applied in the fab is not public: the mask
+  table flags PMM2, PBO and CU1M but not PMM for SKY130,[^pdk-05] and
+  SkyWater lists "Polyimide cure".[^skw-01]
 
 <!-- footnotes -->
 
@@ -340,7 +349,7 @@ public):
 [^hunter-2012]: S. Hunter, J. L. Clark, D. Hornberger and L. Rubio, "Use
     of Wire Bonding to Study Bond Pad Damage from Wafer Probe",
     *International Symposium on Microelectronics* **2012**(1), 384–395
-    (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-tp41>
+    (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-TP41>
 [^pat-sealring-zeevo]: S. Bothra, T. G. McKay and R. Jhota (Zeevo),
     *Seal ring structure for IC containing integrated digital/RF/analog
     circuits and functions*, US 6,492,716 B1, filed 2001-04-30, granted
