@@ -246,9 +246,9 @@ The two lists differ. The grades fall on the starting-material page, the
 resist strips after implants, the tunnel mask, the backside film removal
 and the CMP steps; {ref}`CMPNIT <step-012>` grades the posting although
 its "Machines typically used" section names thickness metrology and a
-profiler rather than inspection. Most of the other pages in the list
+profiler rather than inspection. None of the other 36 pages in the list
 above — the depositions, etches and implants, and the mask steps other
-than {ref}`TUNM <step-035>` — do not cite the posting.
+than {ref}`TUNM <step-035>` — cites the posting.
 
 ## Consumables and facilities
 
@@ -295,11 +295,16 @@ plans and defect limits are not public.
   ITRS 2001 notes that the buried patterns of a polished wafer let a
   grazing-angle laser inspector approximate unpatterned inspection for
   tool qualification.[^itrs-2001-yield]
-* **After develop.** The mask pages name after-develop inspection, and
-  {ref}`P1M <step-061>` names bright-field inspectors of the KLA-Tencor 2xxx
-  class; KLA-Tencor paired the SP1 DLS with "after-develop inspection
-  (ADI) for macro and micro defects" in its lithography-module
-  strategy.[^kla-sp1dls-2002]
+* **After develop.** Sixteen of the 36 mask pages — the tunnel, gate,
+  contact, metal, via, capacitor, nitride-seal and pad masks
+  ({ref}`TUNM <step-035>`, {ref}`P1M <step-061>`, {ref}`CTM1 <step-107>`
+  to {ref}`PDM <step-168>`) — name after-develop or optical inspection;
+  the other 20, among them {ref}`FOM <step-004>`, {ref}`NPCM <step-078>`,
+  {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>` and the implant masks
+  other than TUNM, do not. {ref}`P1M <step-061>` names bright-field
+  inspectors of the KLA-Tencor 2xxx class; KLA-Tencor paired the SP1 DLS
+  with "after-develop inspection (ADI) for macro and micro defects" in its
+  lithography-module strategy.[^kla-sp1dls-2002]
 * **After depositions and fills.** The cap-oxide, passivation and
   tungsten-fill pages ({ref}`NCAPOX3 <step-117>`, {ref}`NTSD <step-167>`,
   {ref}`WDEP2 <step-110>` and their counterparts) name particle
