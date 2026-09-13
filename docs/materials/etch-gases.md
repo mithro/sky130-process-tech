@@ -191,7 +191,11 @@ tons of CO₂ equivalent, computed with GWPs "generally based on the
 IPCC’s Fourth Assessment Report (AR4)", with fifth-assessment values for
 fluorinated gases that have none in AR4.[^epa-ghgrp-fgas] The tables do not give the
 individual gases, processes or tools, and heat-transfer fluids may
-account for some of the fully fluorinated total (our reading).
+account for some of the fully fluorinated total (our reading). The totals
+also include by-product gases: a facility reports emissions of each
+fluorinated gas, "including each input gas and each by-product
+gas",[^epa-ghgrp-subpart-i] so a group's emission does not by itself show
+that a gas of that group is supplied to a tool.
 
 ### Strength of the evidence
 
@@ -202,9 +206,10 @@ CF₄, CHF₃, SF₆ and C₂F₆ are used at the fab; they describe the whole f
 in the 2020s and tie no gas to a step, and they come from silicon and
 poly etchers, not from the tools the step pages assign to the contact,
 via and metal etches.[^skw-01] The EPA record is a regulatory filing and
-is strong evidence that perfluorocarbons, hydrofluorocarbons, SF₆ and NF₃
-are emitted by the Bloomington facility's etching, cleaning or other
-subpart I processes, weak for any SKY130 step.[^epa-ghgrp-skywater] BCl₃,
+is strong evidence that the Bloomington facility's subpart I processes
+emit perfluorocarbons, hydrofluorocarbons, SF₆ and NF₃ (as input or
+by-product gases), weak for any particular gas being bought and for any
+SKY130 step.[^epa-ghgrp-skywater] BCl₃,
 C₄F₈, CH₃F, CH₂F₂, CO and CH₄, and every gas on the metal and dielectric
 etches, are industry practice that the step pages supply.
 
@@ -342,8 +347,9 @@ public.
   deposition steps; SkyWater lists NF₃ only on the DPS II
   etcher.[^skw-01]
 * **Emissions over time.** The Bloomington facility's reported
-  perfluorocarbon emissions fell from about 101,800 to about 47,100
-  CO₂-equivalent units between 2011 and 2023, while its NF₃ figure stayed
+  perfluorocarbon emissions, input and by-product gases together, fell
+  from about 101,800 to about 47,100 CO₂-equivalent units between 2011
+  and 2023, while its NF₃ figure stayed
   of the order of 1,000–3,500;[^epa-ghgrp-skywater] the public tables do
   not say whether production, process changes or abatement caused this.
 
