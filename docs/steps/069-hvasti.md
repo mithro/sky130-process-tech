@@ -122,7 +122,7 @@ fab (SKY130's energy and dose are not public):
   E220/E500 and VIISta 810, Applied Materials xR LEAP
   ({ref}`category-implant`). The 8250HT covers "3keV to 750keV" with
   beam currents "between 4µA and 3,500µA".[^axcelis-8250]
-* **Thermal-wave** metrology.
+* **{ref}`Thermal-wave <machine-sheet-resistance-metrology>`** metrology.
 
 ## Machines likely used at SkyWater
 

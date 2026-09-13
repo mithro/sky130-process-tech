@@ -116,7 +116,7 @@ practice).[^txt-02]
   ({ref}`category-strip`).
 * **{ref}`Batch wet bench <machine-wet-bench>`** with SPM, SC-1, SC-2 tanks and a rinser/dryer
   (Akrion, DNS/SCREEN, SCP), or a **{ref}`spray processor <machine-wet-bench>`** (FSI Mercury).
-* **Patterned-wafer inspection** (KLA-Tencor 2xxx/AIT class).
+* **{ref}`Patterned-wafer inspection <machine-defect-inspection>`** (KLA-Tencor 2xxx/AIT class).
 
 ## Machines likely used at SkyWater
 

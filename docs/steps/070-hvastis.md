@@ -94,7 +94,7 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
   ({ref}`category-strip`).
 * **{ref}`Batch wet bench <machine-wet-bench>`** with SPM and SC-1 tanks and a rinser/dryer
   (Akrion, DNS/SCREEN, SCP), or a **{ref}`spray processor <machine-wet-bench>`** (FSI Mercury).
-* **Patterned-wafer inspection** (KLA-Tencor 2xxx/AIT class).
+* **{ref}`Patterned-wafer inspection <machine-defect-inspection>`** (KLA-Tencor 2xxx/AIT class).
 
 ## Machines likely used at SkyWater
 

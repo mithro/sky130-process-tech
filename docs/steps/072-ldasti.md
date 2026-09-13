@@ -109,7 +109,7 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
   beam currents "between 4µA and 3,500µA".[^axcelis-8250]
 * **{ref}`High-current implanter <machine-high-current-implanter>`** (Axcelis GSD, Varian VIISta 80) as the
   alternative if the dose is at the upper end.
-* **Thermal-wave** and **four-point-probe** metrology.
+* **{ref}`Thermal-wave <machine-sheet-resistance-metrology>`** and **four-point-probe** metrology.
 
 ## Machines likely used at SkyWater
 

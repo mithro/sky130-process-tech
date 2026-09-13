@@ -171,8 +171,7 @@ fab (SKY130's recipe is not public):
   panels.
 * **{ref}`PECVD system <machine-pecvd>`** (Novellus Concept One/Sequel, Applied Materials
   Producer/Centura DxZ) as the single-wafer alternative.
-* **Spectroscopic ellipsometer**, **stress gauge**, **cross-section
-  SEM**.
+* **{ref}`Spectroscopic ellipsometer <machine-film-thickness-metrology>`**, **stress gauge**, **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**.
 
 ## Machines likely used at SkyWater
 
