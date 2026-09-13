@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1629
+written page has exactly one entry here; the inventory holds 1642
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -503,6 +503,7 @@ Also used on the anneal ambients material page.
 Also used on the ultrapure water material page.
 Also used on the hardware consumables material page.
 Also used on the process gases material page.
+Also used on the dopant gases and implant sources material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -684,6 +685,7 @@ Also used on the anneal ambients material page.
 Also used on the ultrapure water material page.
 Also used on the hardware consumables material page.
 Also used on the process gases material page.
+Also used on the dopant gases and implant sources material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -709,6 +711,7 @@ Also used on the anneal ambients material page.
 Also used on the ultrapure water material page.
 Also used on the hardware consumables material page.
 Also used on the process gases material page.
+Also used on the dopant gases and implant sources material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -996,6 +999,7 @@ technology"*, Semiconductor Digest, 2020-02.
 <https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>.
 Integration cost (extra masks), cell-size scaling from 130 nm to
 28 nm, channel engineering with indium. Tier: deep dive.
+Also used on the dopant gases and implant sources material page.
 
 **CYP-26** — Wikipedia, *"SONOS"*. <https://en.wikipedia.org/wiki/SONOS>.
 Notes Cypress as a SONOS supplier (IP licensing from 2011) and gives
@@ -1050,6 +1054,7 @@ oxide 1–3 nm, indium channel doping.
 Also used on the wet bench page. Tier: deep dive.
 Also used on the wet chemicals material page.
 Also used on the substrates material page.
+Also used on the dopant gases and implant sources material page.
 
 **PAT-STI-CR** — US 7,439,141 B2, *"Shallow trench isolation approach
 for improved STI corner rounding"*, U. Kim, Y. Sun, M. S. Chang et al.;
@@ -1257,6 +1262,7 @@ Also used on the PECVD and PVD cluster tool pages.
 Tier: high-level.
 Also used on the sputter targets material page.
 Also used on the anneal ambients material page.
+Also used on the dopant gases and implant sources material page.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
 Process Integration*, Lattice Press, 1990, ISBN 978-0-9616721-4-0.
@@ -1487,6 +1493,7 @@ Also used on the process gases material page.
 <https://en.wikipedia.org/wiki/Arsine> Arsine, the arsenic source gas
 for implanters. Used on the implant category page, and on the
 medium-current and high-current implanter pages. Tier: high-level.
+Also used on the dopant gases and implant sources material page.
 
 **WIKI-ASM** — Wikipedia, *ASM International*.
 <https://en.wikipedia.org/wiki/ASM_International> Company article on ASM
@@ -1510,6 +1517,7 @@ high-energy implanter pages. Tier: high-level.
 <https://en.wikipedia.org/wiki/Boron_trifluoride> Boron trifluoride, the
 boron source gas for B⁺ and BF₂⁺ implants. Used on the implant category
 page, and on the medium-current implanter page. Tier: high-level.
+Also used on the dopant gases and implant sources material page.
 
 **WIKI-BOE** — Wikipedia, *Buffered oxide etch*.
 <https://en.wikipedia.org/wiki/Buffered_oxide_etch> BOE composition and
@@ -1693,6 +1701,7 @@ channelling, amorphisation and implanter classes. Used on steps 007,
 and the implant category page, and on the medium-current, high-current
 and high-energy implanter pages. Tier: high-level.
 Also used on the process gases material page.
+Also used on the dopant gases and implant sources material page.
 
 **WIKI-KEITHLEY** — Wikipedia, *Keithley Instruments*.
 <https://en.wikipedia.org/wiki/Keithley_Instruments> Company article on
@@ -1787,6 +1796,7 @@ source gas for implanters. Used on the implant category page, and on the
 medium-current and high-energy implanter pages. Tier:
 high-level.
 Also used on the HDP-CVD page.
+Also used on the dopant gases and implant sources material page.
 
 **WIKI-PIRANHA** — Wikipedia, *Piranha solution*.
 <https://en.wikipedia.org/wiki/Piranha_solution> SPM ratios and
@@ -2194,6 +2204,7 @@ from the PR Newswire release AXCELIS-GSD.
 Also used on the high-current and high-energy implanter pages.
 Tier: cross-check (vendor
 statement).
+Also used on the dopant gases and implant sources material page.
 
 **AXCELIS-8250** — Semiconductor Online, *"8250HT Medium Current Ion
 Implanter"* (Eaton Semiconductor Equipment Operations product
@@ -2597,6 +2608,7 @@ H. H. Hansen, *"Indium channel implant for improved short-channel
 behavior of submicrometer NMOSFETs"*, IEEE Electron Device Letters,
 vol. 14, no. 8, pp. 409–411, 1993, DOI 10.1109/55.225595. Indium
 channel implants for steep retrograde NMOS channels. Tier: deep dive.
+Also used on the dopant gases and implant sources material page.
 
 **HUANG-2000** — T.-Y. Huang, Y.-J. Lee, T.-S. Chao, C. Chen,
 C.-Y. Chang and S.-J. Chang, *"High-performance and high-reliability
@@ -2657,6 +2669,7 @@ lines, end stations and vacuum.
 Also used on the medium-current, high-current and high-energy implanter
 pages.
 Tier: deep dive.
+Also used on the dopant gases and implant sources material page.
 
 **MACK-2007** — C. Mack, *Fundamental Principles of Optical
 Lithography: The Science of Microfabrication*, Wiley, 2007,
@@ -4815,6 +4828,7 @@ range theory. Used on the implant category page. Tier: cross-check.
 range theory, damage, annealing and equipment. Used on the implant
 category page, and on the medium-current implanter page. Tier: deep
 dive.
+Also used on the dopant gases and implant sources material page.
 
 ##### Theses
 
@@ -6851,6 +6865,7 @@ Temperature Chemical Vapor Deposition Using Tetraethoxysilane and
 Ozone", *Journal of The Electrochemical Society* **138**(10), 3019–3024
 (1991). <https://doi.org/10.1149/1.2085358> Doped oxide from TEOS and
 ozone. Used on step 089. Tier: deep dive.
+Also used on the dopant gases and implant sources material page.
 
 **HASHIMOTO-1977** — N. Hashimoto, Y. Yatsuda and S. Mutoh, "Glass Flow
 Mechanism of Phosphosilicate Glass and Its Application in MOS Devices",
@@ -6865,6 +6880,7 @@ chemical-vapor deposition", *Journal of Vacuum Science & Technology B*
 mechanism and thermal budget. Used on steps 089, 091 and 092. Tier: deep
 dive.
 Also used on the HDP-CVD page.
+Also used on the dopant gases and implant sources material page.
 
 **KERN-1991** — W. Kern and J. Hartman, "Simultaneous deposition and
 fusion flow planarization of borophosphosilicate glass in a new chemical
@@ -9470,6 +9486,7 @@ lives "from 70 h … to over 500 h" and doubly charged fractions of 15 %
 for phosphorus and 2 % for boron. Distinct from HORSKY-1998 (resist
 outgassing). Used on the medium-current and high-energy implanter
 pages. Tier: deep dive.
+Also used on the dopant gases and implant sources material page.
 
 **PAT-SDS-ATMI** — G. M. Tom and J. V. McManus (Advanced Technology
 Materials), *Storage and delivery system for gaseous hydride, halide,
@@ -9480,6 +9497,7 @@ phosphine; its background records dilute (10–15 %) hydride cylinders at
 400–1800 psig and species-change times for solid and gas sources. Used
 on the medium-current, high-current and high-energy implanter pages.
 Tier: cross-check (patent).
+Also used on the dopant gases and implant sources material page.
 
 **SWENSON-1996** — D. R. Swenson, D. F. Downey, S. R. Walther, A. Renau,
 G. Gammel and M. E. Mack, "Metals-contamination-reduction program for
@@ -9489,6 +9507,7 @@ International Conference on Ion Implantation Technology* (1996), pp.
 and Si-coated shields were added to the beamline" to cut Al, Fe and Cr
 contamination of arsenic implants. Used on the medium-current and
 high-current implanter pages. Tier: deep dive.
+Also used on the dopant gases and implant sources material page.
 
 **SWENSON-1996-BERNAS** — D. R. Swenson, A. Renau, S. R. Walther and M.
 E. Mack, "Enhanced Bernas ion source for the Varian EHP-500
@@ -9561,6 +9580,7 @@ dealer sheet for a 1995 E500 HP "Medium Current Implanter" used for
 box, a "Type II Bernas ion source w/ tungsten arc chamber", CTI
 cryopumps, Pfeiffer turbopumps and Edwards dry pumps. Used on the
 medium-current implanter page. Tier: high-level (dealer listing).
+Also used on the dopant gases and implant sources material page.
 
 **PAT-FARADAY-VARIAN** — J. Bisson, Z. Zhao, G. Gammel, D. Alvarado and
 C. Walker (Varian Semiconductor Equipment Associates), *Faraday system
@@ -13886,6 +13906,129 @@ Products & Chemicals completed the corporate spin-off of the company";
 "ultra-thin dielectric and metal precursors of film" and "delivery
 equipment for the semiconductor industry". Used on the process gases
 material page. Tier: high-level.
+Also used on the dopant gases and implant sources material page.
+
+#### Dopant gases and implant sources (first cited there)
+
+**SEMI-C3-6** — SEMI, *SEMI C3.6 — Specification for Phosphine (PH3) in
+Cylinders, 99.98% Quality*, SEMI Standards store listing (revision
+C3.6-0421), accessed 2026-09-13.
+<https://store-us.semi.org/products/c00306-semi-c3-6-specification-for-phosphine-ph3-in-cylinders-99-98-quality>
+"specifications for phosphine (PH3) that are used in the semiconductor
+industry"; revision history from "SEMI C3.6-81 (first published)". Used
+on the dopant gases and implant sources material page. Tier: cross-check
+(standard).
+
+**SEMI-C3-2** — SEMI, *SEMI C3.2 — Specification for Arsine (AsH3) in
+Cylinders, 99.94% Quality*, SEMI Standards store listing (revision
+C3.2-0611 (Reapproved 0218)), accessed 2026-09-13.
+<https://store-us.semi.org/products/c00302-semi-c3-2-specification-for-arsine-ash3-in-cylinders-99-94-quality>
+"specifications for arsine (AsH3) that is used in the semiconductor
+industry"; "originally published in 1992". Used on the dopant gases and
+implant sources material page. Tier: cross-check (standard).
+
+**SEMI-C3-27** — SEMI, *SEMI C3.27 — Specification for Boron Trifluoride
+(BF3) in Cylinders, 99.0% Quality*, SEMI Standards store listing
+(revision C3.27-1102 (Reapproved 0118)), accessed 2026-09-13.
+<https://store-us.semi.org/products/c00327-semi-c3-27-specification-for-boron-trifluoride-bf3-in-cylinders-99-0-quality>
+"a specification for boron trifluoride (BF3) used in the semiconductor
+industry"; "originally published in 1984". Used on the dopant gases and
+implant sources material page. Tier: cross-check (standard).
+
+**NIOSH-ARSINE** — National Institute for Occupational Safety and
+Health, *NIOSH Pocket Guide to Chemical Hazards: Arsine*, CDC; read from
+the Wayback Machine capture of 2025-11-30.
+<https://www.cdc.gov/niosh/npg/npgd0040.html>
+<https://web.archive.org/web/20251130093607/https://www.cdc.gov/niosh/npg/npgd0040.html>
+IDLH "Ca [3 ppm]"; NIOSH REL "Ca C 0.002 mg/m3 [15-minute]"; OSHA PEL
+"TWA 0.05 ppm (0.2 mg/m3)"; "Colorless gas with a mild, garlic-like
+odor. [Note: Shipped as a liquefied compressed gas.]". Used on the dopant
+gases and implant sources material page. Tier: cross-check (safety
+data).
+
+**NIOSH-PHOSPHINE** — National Institute for Occupational Safety and
+Health, *NIOSH Pocket Guide to Chemical Hazards: Phosphine*, CDC; read
+from the Wayback Machine capture of 2025-11-30.
+<https://www.cdc.gov/niosh/npg/npgd0505.html>
+<https://web.archive.org/web/20251130140523/https://www.cdc.gov/niosh/npg/npgd0505.html>
+IDLH "50 ppm"; NIOSH REL "TWA 0.3 ppm (0.4 mg/m3) ST 1 ppm (1 mg/m3)";
+"Shipped as a liquefied compressed gas". Used on the dopant gases and
+implant sources material page. Tier: cross-check (safety data).
+
+**NIOSH-BF3** — National Institute for Occupational Safety and Health,
+*NIOSH Pocket Guide to Chemical Hazards: Boron trifluoride*, CDC; read
+from the Wayback Machine capture of 2026-01-15.
+<https://www.cdc.gov/niosh/npg/npgd0062.html>
+<https://web.archive.org/web/20260115022425/https://www.cdc.gov/niosh/npg/npgd0062.html>
+IDLH "25 ppm"; NIOSH REL and OSHA PEL "C 1 ppm (3 mg/m3)"; "Colorless gas
+with a pungent, suffocating odor. [Note: Forms dense white fumes in moist
+air. Shipped as a nonliquefied compressed gas.]". Used on the dopant gases
+and implant sources material page. Tier: cross-check (safety data).
+
+**EMD-ION-X** — EMD Electronics (Merck KGaA, Darmstadt), *ION-X® BF3 —
+Boron Trifluoride ION-X® Dopant Gas Storage and Delivery System*,
+product page, accessed 2026-09-13.
+<https://www.emdgroup.com/en/expertise/semiconductors/offering/isotopically-enriched-bf3.html>
+Vendor statement: "Isotopically Enriched BF3"; "ION-X® is used for the
+safe storage and delivery of sub-atmospheric dopant gases such as arsine,
+phosphine and boron trifluoride"; "With its Metal-Organic Framework
+(MOF), ION-X® can selectively adsorb, store and safely deliver ultra-high
+purity gases at sub-atmospheric pressures". Does not name SkyWater. Used
+on the dopant gases and implant sources material page. Tier: cross-check
+(vendor statement).
+
+**ENTEGRIS-IMPLANT-GASES** — Entegris, *Specialty Gases and Delivery
+Systems for Ion Implantation*, industry-insights page, accessed
+2026-09-13.
+<https://www.entegris.com/en/home/resources/industry-insights/specialty-gases-and-delivery-systems-for-ion-implantation.html>
+Vendor statement: Entegris pioneered "the Safe Delivery Source® (SDS®)
+package over 30 years ago", which "provides subatmospheric gas storage
+and delivery for ion implant dopant materials"; the fourth generation
+(SDS4) was qualified with "SDS4 phosphine (PH3) and SDS4 arsine (AsH3)
+cylinders" on production implanters. Does not name SkyWater. Used on the
+dopant gases and implant sources material page. Tier: cross-check (vendor
+statement).
+
+**OLANDER-2000** — W. K. Olander, M. Donatucci, J. Mayer and L. Wang,
+"Vacuum actuated gas delivery", *2000 International Conference on Ion
+Implantation Technology Proceedings*, pp. 722–725.
+<https://doi.org/10.1109/IIT.2000.924255> The Vacuum Actuated Cylinder:
+sub-atmospheric delivery of dopant fluorides through a pressure-control
+device inside the cylinder that opens only when the manifold is below a
+preset pressure. Used on the dopant gases and implant sources material
+page. Tier: deep dive.
+
+**MCKEE-2002** — D. J. McKee and L. J. Van Horn, "Evaluation and
+integration of a new gas source package for boron trifluoride used in ion
+implantation", *Proc. 14th International Conference on Ion Implantation
+Technology* (2002), pp. 424–427. <https://doi.org/10.1109/IIT.2002.1258031>
+A production test at Agere Systems of an ATMI VAC package for BF₃ on an
+Axcelis GSD200E implanter. Used on the dopant gases and implant sources
+material page. Tier: deep dive.
+
+**HAM-2017** — S. Ham, C. Yoon, S. Kim, J. Park, O. Kwon, J. Heo, D.
+Park, S. Choi, S. Kim, K. Ha and W. Kim, "Arsenic Exposure during
+Preventive Maintenance of an Ion Implanter in a Semiconductor
+Manufacturing Factory", *Aerosol and Air Quality Research* **17**(4),
+990–999 (2017). <https://doi.org/10.4209/aaqr.2016.07.0310> Airborne and
+bulk arsenic during implanter maintenance, highest for medium-current
+tools. Used on the dopant gases and implant sources material page. Tier:
+deep dive.
+
+**MOMIYAMA-1999** — Y. Momiyama, S. Yamaguchi, S. Ohkubo and T. Sugii,
+"Indium tilted channel implantation technology for 60 nm nMOSFET",
+*1999 Symposium on VLSI Technology, Digest of Technical Papers*, pp.
+67–68. <https://doi.org/10.1109/VLSIT.1999.799343> A tilted indium channel
+implant with a steeper lateral profile than boron and no reliability
+penalty. Used on the dopant gases and implant sources material page.
+Tier: deep dive.
+
+**WIKI-INDUSTRIAL-GAS** — Wikipedia, *Industrial gas*.
+<https://en.wikipedia.org/wiki/Industrial_gas> Production and supply of
+industrial gases; "Toxic or flammable gas cylinders are often stored by
+end users in gas cabinets for protection from external fire or from any
+leak". Used on the dopant gases and implant sources material page. Tier:
+high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
