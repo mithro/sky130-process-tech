@@ -116,7 +116,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   E220/E500 and VIISta 810, Applied Materials xR LEAP
   ({ref}`category-implant`); the 8250HT covers "3keV to 750keV" with
   beam currents "between 4µA and 3,500µA".[^axcelis-8250]
-* **Thermal-wave** metrology.
+* **{ref}`Thermal-wave <machine-sheet-resistance-metrology>`** metrology.
 
 ## Machines likely used at SkyWater
 

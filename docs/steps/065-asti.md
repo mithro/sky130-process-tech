@@ -140,7 +140,7 @@ fab (SKY130's energy and dose are not public):
   Varian E220/E500 — used for extension implants when the dose is at
   the low end and a precise tilt is wanted; the 8250HT covers "3keV to
   750keV" with beam currents "between 4µA and 3,500µA".[^axcelis-8250]
-* **Four-point probe** and **thermal-wave** metrology.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`** and **thermal-wave** metrology.
 
 ## Machines likely used at SkyWater
 
