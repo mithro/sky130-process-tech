@@ -72,7 +72,7 @@ Also used on the medium-current and high-current implanter pages.
 Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
 Tier: cross-check.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -379,7 +379,7 @@ type field.
 Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
 or scanner pages.
 Tier: cross-check.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -425,9 +425,6 @@ wafers/month", "90 nm + feature geometries", and that the site was
 "recently expanded in 2020 to enable additional capacity and Cu back
 end of line". The "SkyWater Process Integration Tools & Capabilities"
 list then names tools and chemistries by area:
-Also used on the wet chemicals material page.
-Also used on the lithography materials page.
-Also used on the sputter targets material page.
 
 * *Lithography* — "ASML I-line stepper", "ASML I-line scanner", "ASML
   DUV stepper", "ASML DUV scanner", "ASML 193nm single stage scanner –
@@ -495,6 +492,9 @@ Also used on the defect and particle inspection, film thickness and stress
 metrology, sheet-resistance and dose metrology, cross-section SEM and
 profilers and parametric tester and prober pages.
 Tier: cross-check (SkyWater statement).
+Also used on the wet chemicals material page.
+Also used on the lithography materials material page.
+Also used on the sputter targets material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -662,8 +662,11 @@ Also used on the starting-material machine page.
 Also used on the CMP polisher machine page.
 Tier: cross-check.
 Also used on the wet chemicals material page.
-Also used on the lithography materials page.
-Also used on the sputter targets material page.
+Also used on the lithography materials material page.
+Also used on the sputter targets material page, which also quotes the
+"Business" section: "Before we began independent operations, our fab
+was owned and operated by Cypress Semiconductor Corporation, or Cypress,
+as a captive manufacturing facility for 20 years".
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -681,7 +684,7 @@ targets, Linde and Airgas gases, EMD Performance Materials). Tier:
 cross-check.
 Also used on the PVD cluster tool page.
 Also used on the wet chemicals material page.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 Also used on the sputter targets material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
@@ -1428,7 +1431,7 @@ on the anneal category page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Anti-reflective_coating> ARCs in
 photolithography, BARC. Used on steps 035 and 036 and the lithography
 category page. Tier: high-level.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **WIKI-ARRHENIUS** — Wikipedia, *Arrhenius equation*.
 <https://en.wikipedia.org/wiki/Arrhenius_equation> Arrhenius temperature
@@ -1540,7 +1543,7 @@ the photoactive compound of i-line novolac resists. Used on the
 lithography category page.
 Also used on the i-line stepper or scanner page.
 Tier: high-level.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **WIKI-DOPANT** — Wikipedia, *Dopant*.
 <https://en.wikipedia.org/wiki/Dopant> Dopants in silicon: group III and
@@ -1573,7 +1576,7 @@ the etch category page. Tier: high-level.
 lithography category page and step 159.
 Also used on the DUV (KrF, 248 nm) stepper or scanner page.
 Tier: high-level.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **WIKI-FG** — Wikipedia, *Forming gas*.
 <https://en.wikipedia.org/wiki/Forming_gas> The 5 % H₂ in N₂ mixture and
@@ -1677,7 +1680,7 @@ the resolution equation and wavelengths. Used on steps 004, 007, 014,
 Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
 Tier: high-level.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **WIKI-LOCOS** — Wikipedia, *LOCOS*.
 <https://en.wikipedia.org/wiki/LOCOS> LOCOS isolation, the predecessor
@@ -1687,7 +1690,7 @@ of STI. Used on the oxidation category page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Photomask> Photomasks: substrates,
 absorber and pellicles. Used on the lithography category page. Tier:
 high-level.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
 <https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
@@ -1804,7 +1807,7 @@ Also used on the wet chemicals material page.
 <https://en.wikipedia.org/wiki/Photoresist> Photoresist chemistry, tone
 and processing. Used on the lithography and strip category pages. Tier:
 high-level.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **WIKI-RET** — Wikipedia, *Resolution enhancement technologies*.
 <https://en.wikipedia.org/wiki/Resolution_enhancement_technologies>
@@ -1959,7 +1962,7 @@ Tetramethylammonium hydroxide, the standard aqueous resist developer.
 Used on the lithography category page.
 Also used on the coat/develop track page.
 Tier: high-level.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **WIKI-VARIAN** — Wikipedia, *Varian Semiconductor*.
 <https://en.wikipedia.org/wiki/Varian_Semiconductor> Company article on
@@ -2231,7 +2234,7 @@ wavelength-tuned, 6% transmission MoSiON absorber". The page does not state a re
 Used on the mask index and steps 129, 144 and 159 for the mask maker's
 name and abbreviation for an embedded attenuated phase-shift mask. Tier: cross-check (vendor
 statement).
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 ### 8.7 Well and channel-implant module sources
 
@@ -2608,7 +2611,7 @@ ISBN 978-0-470-01893-4, DOI 10.1002/9780470723876. k₁, resist profiles,
 thick-resist imaging.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
@@ -2974,7 +2977,7 @@ Microlithography", *Advances in Polymer Science* **172**, 37–245 (2005).
 <https://doi.org/10.1007/b97574> A 200-page review of chemically
 amplified resists, including KrF poly(hydroxystyrene) systems. Used on
 step 004 and the lithography category page. Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **KAHNG-2008** — A. B. Kahng and K. Samadi, "CMP Fill Synthesis: A
 Survey of Recent Studies", *IEEE Transactions on Computer-Aided Design
@@ -3471,11 +3474,12 @@ and the substrate category page. Tier: cross-check.
 Also used on the starting-material machine page.
 
 **SEMI-P1** — SEMI, *SEMI P1 — Specification for Hard Surface Photomask
-Substrates*, SEMI Standards store listing.
+Substrates*, SEMI Standards store listing (revision P1-0708E, inactive),
+accessed 2026-09-13.
 <https://store-us.semi.org/products/p00100-semi-p1-specification-for-hard-surface-photomask-substrates>
 The specification for hard-surface photomask substrates. Used on step
 004 and the lithography category page. Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 #### University and course pages
 
@@ -4269,7 +4273,7 @@ properties: swing curves and anti-reflective layers. Used on the
 lithography category page.
 Also used on the coat/develop track page.
 Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **DAMMEL-1993** — R. R. Dammel, *Diazonaphthoquinone-based Resists*,
 SPIE Tutorial Texts TT11, SPIE Press, 1993.
@@ -4277,7 +4281,7 @@ SPIE Tutorial Texts TT11, SPIE Press, 1993.
 resist chemistry. Used on the lithography category page.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **ITO-1983** — H. Ito and C. G. Willson, "Chemical amplification in the
 design of dry developing resist materials", *Polymer Engineering &
@@ -4294,7 +4298,7 @@ lithography category page.
 Also used on the DUV (KrF, 248 nm) stepper or scanner and coat/develop
 track pages.
 Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **LEVENSON-1982** — M. D. Levenson, N. S. Viswanathan and R. A. Simpson,
 "Improving resolution in photolithography with a phase-shifting mask",
@@ -4343,7 +4347,7 @@ materials for microlithography", *Chemical Reviews* **89**(6), 1273–1289
 (1989). <https://doi.org/10.1021/cr00096a001> Polymer materials for
 microlithography, DNQ/novolac included. Used on the lithography category
 page. Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **RIEGER-1994** — M. L. Rieger and J. P. Stirniman, "Using behavior
 modeling for proximity correction", *Proc. SPIE* **2197**, 371–376
@@ -4448,7 +4452,7 @@ TMAH developer strength and practice. Used on the lithography category
 page.
 Also used on the coat/develop track page.
 Tier: cross-check.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **NIKON-S204B** — Nikon, *NSR-S204B 248 nm Scanner Exposure System
 Overview* (specification summary, reseller copy), attached to the
@@ -10744,7 +10748,7 @@ or scanner page. Tier: cross-check (vendor statement).
 lamps using "three ultraviolet wavelengths (436, 405 and 365 nm)", with a
 near-point arc, from 500 W to 35 kW class. Used on the i-line stepper or
 scanner page. Tier: cross-check (vendor statement).
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **KATO-2007** — A. Kato, *Chronology of Lithography Milestones*, version
 0.9, May 2007, hosted on lithoguru.com.
@@ -10837,7 +10841,7 @@ International Conference on Ion Implantation Technology*, pp. 813–816.
 compared under high-current, high-dose implants, the DUV resist found
 equivalent. Used on the i-line stepper or scanner and coat/develop track
 pages. Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **NAKAGAWA-1990** — K. Nakagawa, M. Taguchi and T. Ema, "Fabrication of
 64 M DRAM with i-line phase-shift lithography", *IEDM Technical Digest*
@@ -10929,7 +10933,7 @@ A review of excimer lasers as lithography sources at 248, 193 and 157 nm:
 specifications, narrow spectral width, coherence and the advances made to
 meet them. Used on the DUV (KrF, 248 nm) stepper or scanner page. Tier:
 deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **LALOVIC-2001** — I. Lalovic, A. Kroyan, N. R. Farrar, D. Taitano, P.
 Zambon and A. H. Smith, "Investigation of cross-field wavefront
@@ -10954,7 +10958,7 @@ contamination of a chemically amplified resist", *Proc. SPIE* **1466**,
 resist by parts-per-billion airborne organic bases, and its cure by
 carbon-filtered air. Used on the DUV (KrF, 248 nm) stepper or scanner
 and coat/develop track pages. Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **SCREEN-SK80EX** — SCREEN Semiconductor Solutions, *Coat/Develop Track:
 SK-60EX/SK-80EX*, product page.
@@ -11020,7 +11024,7 @@ puddle develop processes", *Proc. SPIE* **1086**, 470 (1989).
 <https://doi.org/10.1117/12.953060> A surfactant-bearing developer for
 spray-puddle develop, its sensitivities, exposure latitude and linewidth
 uniformity. Used on the coat/develop track page. Tier: deep dive.
-Also used on the lithography materials page.
+Also used on the lithography materials material page.
 
 **ETO-2007** — H. Eto, Y. Ito and T. Homma, "Effect of temperature on
 photoresist critical dimension during puddle development", *Japanese
@@ -12675,7 +12679,7 @@ business introduction page, accessed 2026-09-13.
 "Photo-imageable liquids", positive and negative tone, a lineup
 "compatible with various exposure sources, including EUV (MOR), EUV
 (CAR), ArF, KrF, i-line, and g-line", and "multilayer materials"
-(underlayers and topcoats). Used on the lithography materials page.
+(underlayers and topcoats). Used on the lithography materials material page.
 Tier: cross-check (vendor statement).
 
 **TOK-PRODUCTS** — Tokyo Ohka Kogyo Co., Ltd., *Semiconductor
@@ -12685,7 +12689,7 @@ company's front-end products: "g/i-Line photoresists", "KrF excimer laser
 photoresists", ArF and EUV photoresists, "Developer and Rinse Solutions",
 "Thinners", "Stripping Solution" and "Adhesion Enhancing Materials". The
 page's market-share figures are projections attributed to a market
-research firm and are not used. Used on the lithography materials page.
+research firm and are not used. Used on the lithography materials material page.
 Tier: cross-check (vendor statement).
 
 **MLI-TMAH** — Moses Lake Industries, *TMAH Aqueous Solutions*, product
@@ -12695,13 +12699,13 @@ page, accessed 2026-09-13.
 made by a "chlorine-free manufacturing method", with "metallic impurity
 levels of <1000 ppt", "at concentrations of choice (in water) up to 25%,
 and with or without surfactants", in IBCs, drums and bottles. Used on the
-lithography materials page. Tier: cross-check (vendor statement).
+lithography materials material page. Tier: cross-check (vendor statement).
 
 **MLI-ABOUT** — Moses Lake Industries, *About MLI*, company page,
 accessed 2026-09-13. <https://mlindustries.com/about-mli/> "Founded in
 1984 as a wholly owned subsidiary of Tama Chemicals"; a supplier of
 chemicals for the semiconductor industry. Used on the lithography
-materials page. Tier: cross-check (company statement).
+materials material page. Tier: cross-check (company statement).
 
 **SEMI-C46** — SEMI, *SEMI C46 — Guide for 25% Tetramethylammonium
 Hydroxide*, SEMI Standards store listing (revision C46-0812, inactive),
@@ -12709,7 +12713,7 @@ accessed 2026-09-13.
 <https://store-us.semi.org/products/c04600-semi-c46-guide-for-25-tetramethylammonium-hydroxide>
 A "guide for a grade of 25% tetramethylammonium hydroxide", listing
 proposed impurity limits; originally published in 1991. Used on the
-lithography materials page. Tier: deep dive (standard).
+lithography materials material page. Tier: deep dive (standard).
 
 **SEMI-P5** — SEMI, *SEMI P5 — Specification for Pellicles*, SEMI
 Standards store listing (revision P5-0416, reapproved 1221), accessed
@@ -12718,20 +12722,20 @@ Standards store listing (revision P5-0416, reapproved 1221), accessed
 "covers the general requirements for pellicles used on photomasks or
 reticles in photolithographic exposure systems", for broadband,
 polychromatic or monochromatic exposure; first published 1986. Used on
-the lithography materials page. Tier: deep dive (standard).
+the lithography materials material page. Tier: deep dive (standard).
 
 **WIKI-HMDS** — Wikipedia, *Bis(trimethylsilyl)amine*
 (hexamethyldisilazane).
 <https://en.wikipedia.org/wiki/Bis(trimethylsilyl)amine> The compound and
 its uses; "In photolithography, HMDS is often used as an adhesion promoter
 for photoresists", best applied "from the gas phase on heated
-substrates". Used on the lithography materials page. Tier: high-level.
+substrates". Used on the lithography materials material page. Tier: high-level.
 
 **WIKI-PGMEA** — Wikipedia, *Propylene glycol methyl ether acetate*.
 <https://en.wikipedia.org/wiki/Propylene_glycol_methyl_ether_acetate>
 PGMEA as "a commonly used solvent" in the semiconductor industry and
 often "the most abundant airborne, molecular contamination (AMC) in
-semiconductor cleanrooms". Used on the lithography materials page. Tier:
+semiconductor cleanrooms". Used on the lithography materials material page. Tier:
 high-level.
 
 **DILL-1975** — F. H. Dill, W. P. Hornberger, P. S. Hauge and J. M. Shaw,
@@ -12739,14 +12743,14 @@ high-level.
 Electron Devices* **22**(7), 445–452 (1975).
 <https://doi.org/10.1109/T-ED.1975.18159> Exposure described by the
 optical parameters A, B and C and development by a rate function R(M).
-Used on the lithography materials page. Tier: deep dive.
+Used on the lithography materials material page. Tier: deep dive.
 
 **PACANSKY-1979** — J. Pacansky and J. R. Lyerla, "Photochemical
 Decomposition Mechanisms for AZ-Type Photoresists", *IBM Journal of
 Research and Development* **23**(1), 42–55 (1979).
 <https://doi.org/10.1147/rd.231.0042> Infrared and ¹³C NMR study of
 naphthoquinonediazide photolysis via a ketene to 3-indenecarboxylic acid
-in air, or to esters in vacuum. Used on the lithography materials page.
+in air, or to esters in vacuum. Used on the lithography materials material page.
 Tier: deep dive.
 
 **KIM-1984** — D. J. Kim, W. G. Oldham and A. R. Neureuther,
@@ -12754,7 +12758,7 @@ Tier: deep dive.
 Devices* **31**(12), 1730–1736 (1984).
 <https://doi.org/10.1109/T-ED.1984.21779> A development-rate model with
 depth dependence over the full exposure range, and its measurement.
-Used on the lithography materials page. Tier: deep dive.
+Used on the lithography materials material page. Tier: deep dive.
 
 **ITO-1994** — H. Ito, G. Breyta, D. Hofer, R. Sooriyakumaran, K.
 Petrillo and D. Seeger, "Environmentally stable chemical amplification
@@ -12764,21 +12768,21 @@ Technology* **7**(3), 433–447 (1994).
 <https://doi.org/10.2494/photopolymer.7.433> The ESCAP resist, a
 4-hydroxystyrene/t-butyl acrylate copolymer annealed above its glass
 transition for resistance to airborne contamination and delay. Used on
-the lithography materials page. Tier: deep dive.
+the lithography materials material page. Tier: deep dive.
 
 **HUANG-1994** — W.-S. Huang, R. W. Kwong, A. D. Katnani and M.
 Khojasteh, "Evaluation of a new environmentally stable positive tone
 chemically amplified deep-UV resist", *Proc. SPIE* **2195**, 37 (1994).
 <https://doi.org/10.1117/12.175370> A positive DUV resist resilient to
 airborne bases, with stable linewidth after more than 24 hours between
-exposure and develop. Used on the lithography materials page. Tier: deep
+exposure and develop. Used on the lithography materials material page. Tier: deep
 dive.
 
 **HERSHEL-1981** — R. Hershel, "Pellicle Protection Of Integrated
 Circuit (IC) Masks", *Proc. SPIE* **0275**, Semiconductor
 Microlithography VI, 23–28 (1981). <https://doi.org/10.1117/12.931869>
 The mask-protection problem and the optical requirements of pellicles
-for projection systems. Used on the lithography materials page. Tier:
+for projection systems. Used on the lithography materials material page. Tier:
 deep dive.
 
 **WANG-2013-TMAH** — Y. Wang, Z. Zhang, C. Jiang and T. Xu,
@@ -12787,14 +12791,14 @@ Tetramethylammonium Hydroxide (TMAH) from Photoresist Developer
 Wastewater", *Industrial & Engineering Chemistry Research* **52**(51),
 18356–18361 (2013). <https://doi.org/10.1021/ie4023995> Recovery and
 concentration of TMAH from developer wastewater by electrodialysis. Used
-on the lithography materials page. Tier: deep dive.
+on the lithography materials material page. Tier: deep dive.
 
 **PAT-ARC-BREWER** — J. W. Arnold, T. L. Brewer and S. Punyakumleard
 (Brewer Science), *Anti-reflective coating*, US 4,910,122 A, priority
 1982-09-30, granted 1990-03-20.
 <https://patents.google.com/patent/US4910122A/en> A dyed polymer layer
 under the resist that absorbs reflected light and fills small
-depressions. Used on the lithography materials page. Tier: deep dive.
+depressions. Used on the lithography materials material page. Tier: deep dive.
 
 **PAT-RESIST-TOK** — H. Kohara, H. Tanaka, M. Miyabe, Y. Arai, S. Asaumi
 and T. Nakayama (Tokyo Ohka Kogyo), *Positive-working naphthoquinone
@@ -12802,14 +12806,14 @@ diazide photoresist composition with two cresol novolac resins*,
 US 4,731,319 A, priority 1985-08-09, granted 1988-03-15.
 <https://patents.google.com/patent/US4731319A/en> A DNQ resist with two
 cresol novolacs differing in molecular weight and m-/p-cresol ratio.
-Used on the lithography materials page. Tier: deep dive.
+Used on the lithography materials material page. Tier: deep dive.
 
 **PAT-EBR-CLARIANT** — W. C. Nelson and O. Lehar (Clariant Finance
 (BVI)), *Use of mixtures of ethyl lactate and N-methyl pyrollidone as an
 edge bead remover for photoresists*, US 5,814,433 A, priority 1996-05-17,
 granted 1998-09-29. <https://patents.google.com/patent/US5814433A/en> An
 ethyl lactate–NMP edge-bead remover with a flash point above 38 °C, for
-backside and topside use. Used on the lithography materials page. Tier:
+backside and topside use. Used on the lithography materials material page. Tier:
 deep dive.
 
 **PAT-THINNER-SAMSUNG** — M.-S. Jeon, C.-D. Lee and B.-Y. Lee (Samsung
@@ -12818,7 +12822,7 @@ manufacturing of semiconductor devices*, US 6,159,646 A, priority
 1997-09-04, granted 2000-12-12.
 <https://patents.google.com/patent/US6159646A/en> Ethyl lactate,
 ethyl-3-ethoxy propionate and γ-butyrolactone thinners for edge and
-backside rinse and for rework. Used on the lithography materials page.
+backside rinse and for rework. Used on the lithography materials material page.
 Tier: deep dive.
 
 #### Sputter targets (first cited there)
