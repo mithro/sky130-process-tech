@@ -58,7 +58,7 @@ deep-dive entries per step page and twelve per category page
 
 - [ ] Machine pages + machine ↔ step index
 - [ ] Materials pages + material ↔ step index
-- [~] Mask pages + mask ↔ step ↔ GDS index (index page on branch `topic/masks-index`)
+- [~] Mask pages + mask ↔ step ↔ GDS index — index page reviewed and merged 2026-09-13; per-mask pages not started
 - [ ] sky130B ReRAM module page (RRAM tier between met1 and met2: r1c stack, split via; public source: sky130_fd_pr_reram documentation)
 - [x] Glossary: 144 terms, linked on first use across all written pages; inventory keyed for every label (748 entries) — merged 2026-09-12
 - [x] Glossary and inventory top-up for steps 076–117 (204 terms; 951 inventory entries) — merged 2026-09-12
