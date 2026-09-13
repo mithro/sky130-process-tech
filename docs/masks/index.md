@@ -517,13 +517,13 @@ show the following.[^mask-renders][^steps-sheet]
   ([MPW-1 TUNM](https://data.wafer.space/big-storage/sky130-masks/mpw-001_TUNM/mpw-001_TUNM.html),
   [MPW-5 TUNM](https://data.wafer.space/big-storage/sky130-masks/mpw-005_TUNM/mpw-005_TUNM.html)).
   `PWBM`, with plates on MPW-6 and MPW-8, and `PWDEM`, with a plate on
-  MPW-6, are empty on
-  every run: no rendered die draws `pwbm` 19:44 or `pwde` 124:20
+  MPW-6, are empty on every run: no rendered die draws `pwbm` 19:44 or
+  `pwde` 124:20
   ([MPW-6 PWBM](https://data.wafer.space/big-storage/sky130-masks/mpw-006_PWBM/mpw-006_PWBM.html),
   [MPW-8 PWBM](https://data.wafer.space/big-storage/sky130-masks/mpw-008_PWBM/mpw-008_PWBM.html)).
-  `RPM` has a plate on MPW-3, where no die draws `rpm` 86:20. `RRM` and `VIMC` have plates on MPW-1
-  to MPW-3, and `VIMC` also on MPW-5, where no die draws the layer
-  201:20 from which the site renders both. Because the renders leave
+  `RPM` has a plate on MPW-3, where no die draws `rpm` 86:20. `RRM` and
+  `VIMC` have plates on MPW-1 to MPW-3, and `VIMC` also on MPW-5, where
+  no die draws the layer 201:20 from which the site renders both. Because the renders leave
   out whatever the fab adds, they cannot show what these plates carry.
 * **Rendered, no plate.** Four renders have no recorded plate on any
   run, and each reuses another mask's layers: `INDM` is `met3`
@@ -555,8 +555,9 @@ show the following.[^mask-renders][^steps-sheet]
 * **"40 of 40" is not 40 designs.** `CAPM`, `CAP2M` and `URPM` have
   shapes on 39 or 40 dies of every run, but on each run 33 to 39 of
   those dies carry exactly one shape on the layer, and only a few dies
-  carry more ([MPW-7 CAP2M](https://data.wafer.space/big-storage/sky130-masks/mpw-007_CAP2M/mpw-007_CAP2M.html)). The die count
-  therefore does not show that most projects use MiM capacitors or the
+  carry more
+  ([MPW-7 CAP2M](https://data.wafer.space/big-storage/sky130-masks/mpw-007_CAP2M/mpw-007_CAP2M.html)).
+  The die count therefore does not show that most projects use MiM capacitors or the
   2000 Ω/sq resistor; the site does not say what the single shape is.
   `NSM` likewise has exactly 36 shapes on every die that has any.
 
@@ -627,7 +628,7 @@ expressions (below). The layer names are those of
   `CAP2M` repeat the renders site's wording: "sky130B RRAM tier
   (met1-met2)" and `r1c` "GDS 201/20" for `RRM`; "r1v, the upper half"
   of via 1 and "Not CTM1/mcon" (the site: "NOT CTM1/mcon") for `VIMC`;
-  "Capacitor mask" for `CAP2M`. Its level names for the
+  "Capacitor mask" for `CAP2M`. The sheet's level names for the
   local-interconnect, contact, via and metal masks ("Via 0 (???→M0)",
   "LI (Metal 0)", …) are identical to the site's.[^steps-sheet][^mask-renders]
   This page therefore does not cite either source as corroborating the
