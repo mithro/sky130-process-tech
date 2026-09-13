@@ -192,7 +192,9 @@ fab (SKY130 values are not public):
   Vt adjust.[^pat-vt-rrr]
 * Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
   boron at 1e12–1e13 cm⁻² and 50–100 keV, chained punch-through
-  barriers, a 900 °C furnace anneal.[^pat-vt-lsi]
+  barriers, and a well anneal "at approximately 900° C. in a neutral
+  ambient such as nitrogen for approximately 30 minutes" (the patent does
+  not name the tool).[^pat-vt-lsi]
 * Krivokapic and Milic (AMD), US 6,238,982 — channel-implant energies
   and doses for boron and BF₂.[^pat-vt-amd]
 * MacPherson, *Appl. Phys. Lett.* 1971 — the original
