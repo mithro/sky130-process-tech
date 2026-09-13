@@ -47,7 +47,7 @@ concentration.
 
 ### Chuck and one-sided processing
 
-SEZ's founding patent describes the chuck. The wafer rests on "a gas
+An SEZ patent of 1988 describes the chuck. The wafer rests on "a gas
 cushion" formed by compressed gas from an annular nozzle, and "the gas
 exiting between the wafer (11) and the support (1)" keeps the treatment
 fluid off the underside; the support sits inside "an annular tank"
@@ -93,8 +93,8 @@ HF for only 10 s each onto a rotating silicon wafer through jet
 nozzles",[^hattori-1998] and later removed particulate and metallic
 contamination "in 20 s" with an ultra-dilute HF and nitrogen spray,
 with silicon and oxide losses "below 0.003 and 0.03 nm".[^hattori-2007]
-Nitride also etches in HF, by a mechanism that explains "etch
-selectivity between these two materials".[^knotter-2001] Dilute HF can
+Nitride also etches in HF, by a mechanism that explains the "etch
+selectivity between these two materials", nitride and oxide.[^knotter-2001] Dilute HF can
 be monitored in line: Kikuyama et al. showed that conductivity "can be used to monitor the etching rate
 … very accurately when the etching rate is relatively slow (around
 1 Å/min)".[^kikuyama-1994]
@@ -209,10 +209,11 @@ likely used at SkyWater"), as collected on the machines index:
 
 * **"Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled"** — *inference (SEZ 223):* {ref}`BFR <step-060>`; *medium:* {ref}`SACETCH <step-095>`; *strong for existence:* {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`; *named as the post-CMP clean; no brush scrubber named:* {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>`
 
-The one assignment graded above existence is {ref}`BFR <step-060>`,
-which rests on the SEZ press release and the used-equipment listing
-naming film removal and backside applications for the
-223.[^sez-223-pr][^sez-223-moov] The CMP pages name the SEZ tools for the
+Two step pages grade the assignment itself rather than only the tool's
+existence: {ref}`BFR <step-060>` (an inference, resting on the SEZ press
+release and the used-equipment listing naming film removal and backside
+applications for the 223[^sez-223-pr][^sez-223-moov]) and
+{ref}`SACETCH <step-095>` ("medium for a contact-hole clean"). The CMP pages name the SEZ tools for the
 post-CMP clean because SkyWater names no brush scrubber; that clean is
 described on the {ref}`post-CMP cleaner page
 <machine-post-cmp-cleaner>`.
@@ -253,8 +254,9 @@ public.
   {ref}`GOXETCH <step-046>` and {ref}`SACETCH <step-095>` offer a
   single-wafer wet tool as one option beside the batch benches; both SEZ
   "HF" and the benches' HF are listed, so the listing does not choose
-  between them.[^skw-01] A single-wafer HF step etches with little
-  material loss when the chemistry is dilute.[^hattori-2007]
+  between them.[^skw-01] Very dilute HF on a spin tool can clean with
+  oxide loss below 0.03 nm;[^hattori-2007] an etch that must clear an
+  oxide uses a stronger mix or a longer time (industry practice).
 * **Cleans after contact and via etches.** The contact and via etch
   pages ({ref}`CTME <step-108>`, {ref}`VIME <step-119>`,
   {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`) name a wet bench or
@@ -263,8 +265,8 @@ public.
   residue work used an aluminium stack etched on a Lam TCP 9600, a model
   SkyWater also lists;[^sez-polymer-1999][^skw-01] neither source
   concerns SKY130.
-* **Post-CMP clean.** The CMP pages list SEZ/Lam Da Vinci among
-  post-CMP brush scrubbers and name the SEZ tools as SkyWater's
+* **Post-CMP clean.** Nine of the CMP pages list SEZ/Lam Da Vinci among
+  post-CMP brush scrubbers, and all name the SEZ tools as SkyWater's
   candidate. The SEZ 223 listing names "Post-CMP-Cleaning" as an
   application,[^sez-223-moov] and SEZ's note describes backside
   wet-etch cleaning after CMP;[^kinoshita-sez] neither mentions a brush,
