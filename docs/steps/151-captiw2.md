@@ -155,7 +155,7 @@ back end (SKY130's recipe is not public); the sequence is that of
   Endura,[^amat-endura] Novellus INOVA, Ulvac and Anelva sputtering
   systems ({ref}`category-deposition`).
 * **Degas chamber** on the same platform.
-* **Four-point probe**, **XRF**, **stress gauge**, **reflectometer**.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`**, **{ref}`XRF <machine-film-thickness-metrology>`**, **stress gauge**, **reflectometer**.
 
 ## Machines likely used at SkyWater
 

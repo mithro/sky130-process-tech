@@ -134,8 +134,7 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 * **{ref}`PECVD oxide system <machine-pecvd>`**, 200 mm: Applied Materials Producer or
   Centura DxZ,[^amat-10k] Novellus Concept One/Two,
   Sequel[^novellus-history] ({ref}`category-deposition`).
-* **Ellipsometer / reflectometer**, **stress gauge**, **particle
-  inspection**.
+* **{ref}`Ellipsometer <machine-film-thickness-metrology>` / reflectometer**, **stress gauge**, **{ref}`particle inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 

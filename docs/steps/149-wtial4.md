@@ -178,7 +178,7 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
   Applied Materials Endura,[^amat-endura] Novellus INOVA, Ulvac and
   Anelva sputtering systems ({ref}`category-deposition`).
 * **Degas and sputter-etch pre-clean chambers**.
-* **Four-point probe**, **XRF**, **reflectometer**, **stress gauge**.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`**, **{ref}`XRF <machine-film-thickness-metrology>`**, **reflectometer**, **stress gauge**.
 
 ## Machines likely used at SkyWater
 
