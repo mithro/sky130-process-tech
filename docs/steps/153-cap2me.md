@@ -14,18 +14,19 @@
 
 `CAP2ME` etches the top plates of the second MiM capacitor. Through the
 resist islands of {ref}`CAP2M <step-152>` a plasma removes the blanket
-TiW of {ref}`CAPTIW2 <step-151>` — of the order of 0.1 µm on our
-reading of the PDK's 5.8 Ω/sq MiM2 top-plate sheet
-resistance[^pdk-07] — and stops on, or a little way into, the thin
-dielectric of {ref}`CAPILD2 <step-150>`, leaving TiW only where the
+top-plate film of {ref}`CAPTIW2 <step-151>` — described in this reference
+as TiW of the order of 0.1 µm, an inference from the PDK's 5.8 Ω/sq
+MiM2 top-plate sheet resistance[^pdk-07] — and stops on, or a little way
+into, the thin capacitor dielectric of {ref}`CAPILD2 <step-150>`, leaving
+the plate film only where the
 layout draws `cap2m`, "MiM capacitor plate over metal 4".[^pdk-06] The
 resist is then stripped: the step list used in this reference has no
 separate strip step after `CAP2ME`, so this page treats the resist
 strip and clean as part of the etch. The step repeats
 {ref}`CAPME <step-138>` one metal level higher.
 
-What lies under the film sets the difficulty. Beneath the TiW is a
-dielectric some 20–30 nm thick (our estimate at
+What lies under the film sets the difficulty. Beneath the plate film
+is a dielectric some 20–30 nm thick (our estimate at
 {ref}`CAPILD2 <step-150>`), and beneath that is the unpatterned
 metal-4 stack of {ref}`WTIAL4 <step-149>`, whose cap is — on the
 public description of the S8 metal stacks at lower levels — TiW over
@@ -134,7 +135,7 @@ same sequence.
    (typically 1 800–3 000 Å/min)[^pat-mim-ti-etch] — so that about 0.1 µm
    of TiW clears in well under a minute (our arithmetic; the patent
    describes TiN, not TiW).
-4. **Endpoint and over-etch.** Optical emission as the TiW clears; the
+4. **Endpoint and over-etch.** Optical emission as the plate film clears; the
    open area is most of the wafer, so the signal is strong — the reverse
    of the low-open-area problem Wodecki describes for via
    etches.[^wodecki-1999] The over-etch is short and at reduced bias,

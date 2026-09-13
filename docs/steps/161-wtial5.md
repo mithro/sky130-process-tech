@@ -121,7 +121,7 @@ grains, higher stress and hillock tendency that go with it. And it is
 the only metal level in the flow deposited onto open vias rather than
 onto polished plugs, so its underlayer and early aluminium must cover
 the via walls and floor as well as the flat oxide (inference from the
-step list used in this reference and the via-4 rules[^pdk-periph]).
+reading above and the via-4 rules[^pdk-periph]).
 
 ## Why this step exists
 
