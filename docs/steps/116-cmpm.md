@@ -161,9 +161,11 @@ recipe is not public):
 
 * **Applied Materials Mirra CMP.** SkyWater lists "AMAT Mirra CMP"
   with "oxide" among its applications.[^skw-01] Strength: **strong**
-  (SkyWater statement); assignment to this step follows from the
-  film.
-* **Post-CMP clean — SEZ 223 / Da Vinci** single-wafer tools;[^skw-01]
+  for the tool and its oxide polish (SkyWater statement); assignment to
+  this step is an **inference** from the film, since the list names no
+  steps.
+* **Post-CMP clean — SEZ 223 / Da Vinci** single-wafer tools, and the
+  Mirra entry also lists "Track ammonia clean" and "IPA clean";[^skw-01]
   a "SEZ etcher tool" on the maintenance page.[^skw-07] A brush
   scrubber is not named (open question).
 * **Defect inspection — KLA AIT / SP1.**[^job-01] Strength: medium.

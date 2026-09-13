@@ -116,13 +116,18 @@ polisher, which is what this step needs.
 ## Machines likely used at SkyWater
 
 * **Applied Materials Mirra CMP.** SkyWater names it and lists oxide
-  and nitride among its applications.[^skw-01] Strength: strong
-  (SkyWater statement).
+  and nitride among its applications.[^skw-01] Strength: **strong**
+  for the tool and its oxide and nitride polishes (SkyWater statement);
+  assignment to this step is an **inference** from the film, since the
+  list names no steps.
 * **Post-CMP clean** — SkyWater lists the "SEZ223, Davinci"
-  single-wafer tools (HF, DSP+HF)[^skw-01] and the technician profile
+  single-wafer tools (HF, DSP+HF), and the Mirra entry also lists
+  "Track ammonia clean" and "IPA clean";[^skw-01] the technician profile
   mentions "a SEZ etcher tool".[^skw-07] Strength: strong for
   existence; a brush scrubber is not named on any public page (open
   question).
+* **Defect inspection — KLA AIT / SP1** per a SkyWater job
+  posting.[^job-01] Strength: medium.
 
 ## Resources required
 
@@ -165,6 +170,8 @@ polisher, which is what this step needs.
   over the active area as a stop layer".[^pat-sti-amberwave]
 * Kim et al. (Spansion), US 7,439,141 — isolation oxide "polished back
   … approximately level with the nitride mask".[^pat-sti-cr]
+* Indeed, SkyWater *Defect Technician 2* posting — inspection
+  tools.[^job-01]
 
 ### High-level understanding
 
@@ -239,6 +246,10 @@ polisher, which is what this step needs.
 
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
+    Bloomington, MN* (listing page; *Defect Technician 2* posting),
+    retrieved 2026-08-30; listings expire.
+    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^skw-07]: SkyWater Technology, *A Day in the Life of a SkyWater
     Maintenance Technician*, 2023-12-14. <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater

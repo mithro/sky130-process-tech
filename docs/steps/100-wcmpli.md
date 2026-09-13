@@ -147,13 +147,18 @@ fab (SKY130's recipe is not public):
 
 * **Applied Materials Mirra CMP, tungsten.** SkyWater lists "AMAT
   Mirra CMP" with "tungsten" and "high selectivity tungsten" among
-  its processes.[^skw-01] Strength: **strong** for the tool and for
-  a tungsten polish capability; assignment to `WCMPLI` is an
-  **inference** (the list names no steps), though a tungsten polish
-  has no other purpose in this flow than the plug levels.
+  its processes.[^skw-01] Strength: **strong** for the tool and its
+  tungsten polishes (SkyWater statement); assignment to this step is
+  an **inference** from the film, since the list names no steps (a
+  tungsten polish has no other purpose in this flow than the plug
+  levels); which of the two tungsten processes runs this step is not
+  public.
 * **Post-CMP cleaning.** SkyWater lists the "SEZ223, Davinci"
-  single-wafer tools with HF and DSP+HF chemistries;[^skw-01] a
+  single-wafer tools with HF and DSP+HF chemistries, and the Mirra
+  entry also lists "Track ammonia clean" and "IPA clean";[^skw-01] a
   brush scrubber is not named on any public page (open question).
+* **Defect inspection — KLA AIT / SP1** per a SkyWater job
+  posting.[^job-01] Strength: medium.
 
 ## Resources required
 
@@ -194,6 +199,8 @@ fab (SKY130's recipe is not public):
 * Applied Materials, 1997 Annual Report; Chip History Center on the
   Mirra.[^amat-1997][^chiphistory-mirra]
 * SkyWater, Form S-1 — chemical suppliers.[^sec-01]
+* Indeed, SkyWater *Defect Technician 2* posting — inspection
+  tools.[^job-01]
 
 ### High-level understanding
 
@@ -254,6 +261,10 @@ fab (SKY130's recipe is not public):
     diagram). <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
+    Bloomington, MN* (listing page; *Defect Technician 2* posting),
+    retrieved 2026-08-30; listings expire.
+    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
