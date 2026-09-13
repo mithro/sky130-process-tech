@@ -251,8 +251,8 @@ fab (SKY130's recipe is not public); the film-by-film account is at
   consumes Al–Cu target material faster per wafer than any other level (our
   arithmetic from the thicknesses[^pdk-04]).
 * **Argon** for sputtering and pre-clean; **nitrogen** for venting.
-* **Chamber shields, clamps and electrostatic-chuck consumables**.
-* **Monitor wafers** for sheet resistance, stress, reflectivity and
+* **{ref}`Chamber shields <material-hardware-consumables>`, clamps and electrostatic-chuck consumables**.
+* **{ref}`Monitor wafers <material-substrates>`** for sheet resistance, stress, reflectivity and
   via-fill cross-sections.
 
 ## Related steps and cross-references
