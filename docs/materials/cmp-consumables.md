@@ -319,8 +319,8 @@ not public.
 * SkyWater Technology, maintenance-technician profile — the SEZ
   tool.[^skw-07]
 * Entegris, *CMC Materials | July 2022* and *Semiconductor Cleaning
-  Solutions*; Wikipedia, *Entegris* — the acquisition and the CMP
-  consumables offered.[^entegris-cmc-2022][^entegris-post-cmp][^wiki-entegris]
+  Solutions* — the acquisition and the CMP consumables
+  offered.[^entegris-cmc-2022][^entegris-post-cmp]
 * Qnity Electronics, *CMP Pads* and *Our story* — current pad lines and
   the company's DuPont origin.[^qnity-cmp-pads][^qnity-story]
 * Cabot, US 5,958,288 — an oxidiser-and-catalyst tungsten
@@ -333,6 +333,8 @@ not public.
 * Wikipedia, *Chemical-mechanical polishing*, *Cerium(IV) oxide* and
   *Colloidal silica* — pads, abrasives and slurry
   particles.[^wiki-cmp][^wiki-ceria][^wiki-colloidal-silica]
+* Wikipedia, *Entegris* — CMC Materials' acquisition and its former name,
+  Cabot Microelectronics.[^wiki-entegris]
 * Quirk and Serda, *Semiconductor Manufacturing Technology* — CMP on the
   fab floor, with its water and waste.[^txt-07]
 * Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor

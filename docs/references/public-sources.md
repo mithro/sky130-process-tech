@@ -13128,7 +13128,7 @@ name SkyWater. Used on the substrates material page. Tier: cross-check
 **GW-HOME** — GlobalWafers, *Silicon Wafer Manufacturing*, home page,
 accessed 2026-09-13. <https://www.gw-semi.com/> States "we serve 100% of
 the top 25 customers in the semiconductor industry". Used on the
-substrates material page. Tier: high-level (vendor statement).
+substrates material page. Tier: cross-check (vendor statement).
 
 **SEH-PRODUCTS** — SEH America, *Products*, product page, accessed
 2026-09-13. <https://sehamerica.com/products/> Polished wafers "in
@@ -13243,7 +13243,7 @@ CMP consumables material page. Tier: cross-check (vendor statement).
 "is targeting November 1, 2025, to complete the separation of its
 Electronics business with the intention to create a new independent,
 publicly traded company, Qnity Electronics, Inc.". Used on the CMP
-consumables material page. Tier: high-level (company statement).
+consumables material page. Tier: cross-check (company statement).
 
 **PAT-PAD-RODEL** — H. F. Reinhardt, J. V. H. Roberts, H. G. McClain,
 W. D. Budinger and E. W. Jensen (Rodel Inc.), *Polymeric polishing pad
