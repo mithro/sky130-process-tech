@@ -253,11 +253,10 @@ fab (SKY130's energy and dose are not public):
 * The rotation scheme (0°, two or four rotations at the published 7°
   tilt) is not public.
 * Whether a germanium or silicon {term}`pre-amorphisation <pre-amorphisation implant>` is used is an
-  open question; this page follows the step list used in this
-  reference, which has none.
+  open question; this page describes none.
 * Whether the tip precedes or follows the halo within the resist
-  window — the step list used in this reference puts the arsenic
-  first — affects the amorphous layer the boron sees; see
+  window — this reference describes the arsenic first — affects the
+  amorphous layer the boron sees; see
   {ref}`BHI <step-066>`.
 
 <!-- footnotes -->

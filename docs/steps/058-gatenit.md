@@ -26,16 +26,16 @@ The PDK's mask table lists a "Nitride Poly Cut, NPCM" mask,[^pdk-05]
 the drawn layer `npc` (GDS 95:20) is described as "Nitride poly cut
 (under licon1 areas)",[^pdk-06] and the rules require every precision
 resistor to be enclosed by `npc` by 0.095 µm (rpm.5) and keep `npc`
-0.090 µm from any gate (npc.4).[^pdk-periph] In the step list used
-here the nitride cut ({ref}`NPCM <step-078>`/{ref}`NPCME <step-079>`)
-comes *after* the {term}`spacer` etch ({ref}`SPE <step-077>`) and
-before the source/drain masks. We therefore infer that the nitride
-deposited here stays on top of the poly through gate etch, spacer
-formation and the source/drain implants, and is opened only where the
-local-interconnect contacts must reach the poly. The assumptions
-table's "poly cap after SPE" of 0.2 µm[^pdk-03] is, on this reading,
+0.090 µm from any gate (npc.4).[^pdk-periph] The assumptions table
+also gives a "poly cap after SPE" of 0.2 µm,[^pdk-03] which we read as
 the thickness of cap material still standing on the gate after the
-spacer etch; the table does not define the term further.
+{term}`spacer` etch; the table does not define the term further. We
+therefore infer that the nitride deposited here stays on top of the
+poly through gate etch, spacer formation and the source/drain
+implants, and is opened only where the local-interconnect contacts
+must reach the poly; this reference accordingly places the nitride
+cut ({ref}`NPCM <step-078>`/{ref}`NPCME <step-079>`) after the spacer
+etch ({ref}`SPE <step-077>`) and before the source/drain masks.
 
 ## Step category
 
@@ -87,11 +87,11 @@ public evidence supports more than one of them:
   capped and are contacted only at their ends through the cut; the
   cap is part of what makes the resistor's end resistance
   reproducible.
-* **A stop layer.** The step list used in this reference contains a "CMP over
-  poly" ({ref}`CMPP <step-090>`) after the sacrificial {term}`PSG` deposition;
+* **A stop layer.** This reference describes a polish over the poly
+  ({ref}`CMPP <step-090>`) after the sacrificial {term}`PSG` deposition;
   a nitride on top of the poly is the natural polish stop for such a step, as
   the {term}`STI` nitride is for {ref}`CMPNIT <step-012>`. This is an
-  inference from the step order only.
+  inference; no public source describes the stop.
 
 Without a cap, the gate would be doped by every later implant, the
 gate lithography would print on bare reflective poly, and the

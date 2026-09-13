@@ -27,9 +27,9 @@ continuous; and it has taken a p-type implant — boron or BF₂ at a dose of or
 10¹⁴–10¹⁵ cm⁻² (illustrative, {ref}`PRI <step-053>`) — which is lighter than
 the gate implant but still in the range where a carbonised crust
 forms.[^orvek-1985] If BF₂ is the species, the crust also contains fluorine,
-which downstream O₂/N₂ {term}`ashing <ash>` removes without difficulty (the
-same named species is stripped after {ref}`PNCHI <step-024>` at
-{ref}`PCHIS <step-025>`).
+which downstream O₂/N₂ {term}`ashing <ash>` removes without difficulty (as
+at {ref}`PCHIS <step-025>`, after {ref}`PNCHI <step-024>`, if that
+implant is also BF₂).
 
 ## Step category
 
@@ -116,8 +116,7 @@ chemical oxide is thin and will be buried under the
 * Previous: {ref}`PRI <step-053>`; mask: {ref}`RRPM <step-052>`.
 * Next: {ref}`URPM <step-055>`.
 * Companion strips: {ref}`P1IS <step-051>`, {ref}`UPRIS <step-057>`;
-  the strip after the other step named "BF2" in the step list used
-  here is {ref}`PCHIS <step-025>`.
+  the strip after {ref}`PNCHI <step-024>` is {ref}`PCHIS <step-025>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 ## References
