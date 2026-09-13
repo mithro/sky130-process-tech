@@ -26,9 +26,9 @@ The PDK's process stack diagram draws exactly such a film. Directly on
 0.070 µm on its sidewall, and over that a thicker "TOPNIT K=7.5"
 nitride dimensioned 0.54 µm on top and 0.4223 µm on the sidewall;
 a "glass cut" is drawn through both over the metal, and a
-polyimide ("PI1 K=2.94") tops the stack.[^pdk-04] The Cypress
-qualification reports for other processes at the same Bloomington fab
-describe their passivation in the same two-layer form: "1000Å TEOS /
+polyimide ("PI1 K=2.94") tops the stack.[^pdk-04] Cypress
+qualification reports for the R7FT-3R technology and for two S8
+variants at the same Bloomington fab describe their passivation in the same two-layer form: "1000Å TEOS /
 9000Å PECVD Nitride" for the 0.18 µm R7FT-3R derivative in
 2005,[^cyp-qtp-014807] and "1000A TEOS/9000A Si3N4" for the S8DI
 metal-stack-change report of 2014,[^cyp-qtp-123907] while the 2013
@@ -241,7 +241,7 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   it is the PDK's TOPOX is our reading. Its precursor (TEOS or silane),
   thickness and deposition conditions are not public; 0.09 µm is the
   diagram's label[^pdk-04] and 1000 Å the Cypress reports' value for
-  other processes.[^cyp-qtp-123907][^cyp-qtp-014807]
+  the S8DI variant and the R7FT-3R technology.[^cyp-qtp-123907][^cyp-qtp-014807]
 * The PDK documents laser-programmable {term}`metal fuses <metal fuse>`
   — the mf.\* rules with the note "For SP8P\*/SKY130P\* (PLM) CADflow
   use MM4 for Metal Fuse",[^pdk-periph] a "Laser Fuse Criteria" table and

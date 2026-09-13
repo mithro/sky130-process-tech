@@ -27,11 +27,11 @@ the thin "TOPOX K=3.9": 0.54 µm thick on top of `metal5` and 0.4223 µm
 on its sidewall, with a "glass cut" through it over the metal; beside
 the metal it places the top of the nitride 0.3777 µm above the bottom
 of metal 5, with no separate TOPOX drawn (our reading of the
-drawing).[^pdk-04] The Cypress qualification reports for other processes at
-the same fab give thicker nitrides — "1000Å TEOS / 9000Å PECVD Nitride"
-(R7FT-3R, 2005),[^cyp-qtp-014807] "1000A TEOS/9000A Si3N4" (S8DI,
-2014)[^cyp-qtp-123907] and "7000 +/- 2000A Nitride" (S8TNV-5R,
-2013)[^cyp-qtp-113005] — so the public record puts the passivation
+drawing).[^pdk-04] Cypress qualification reports for two other S8 variants and
+for the R7FT-3R technology at the same fab give thicker nitrides —
+"1000Å TEOS / 9000Å PECVD Nitride" (R7FT-3R, 2005),[^cyp-qtp-014807]
+"1000A TEOS/9000A Si3N4" (S8DI, 2014)[^cyp-qtp-123907] and "7000 +/-
+2000A Nitride" (S8TNV-5R, 2013)[^cyp-qtp-113005] — so the public record puts the passivation
 nitride between 0.54 µm and 0.9 µm; which value applies to SKY130 lots
 is not public. The R7FT-3R report calls its nitride "PECVD", and
 SkyWater lists "PECVD nitride C1" and "PECVD silane
@@ -127,8 +127,8 @@ public):
    dependence[^habraken-1994]) and the Si–H/N–H bonding that Lanford
    and Rand calibrated by infrared absorption.[^lanford-1978]
 4. **Thickness.** Of the order of 0.5–0.9 µm: 0.54 µm on the PDK's
-   diagram[^pdk-04] and 0.7–0.9 µm in the Cypress reports for other
-   processes at the fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
+   diagram[^pdk-04] and 0.7–0.9 µm in the Cypress reports for the S8DI and S8TNV-5R
+   variants and the R7FT-3R technology at the fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
    A Vanguard fuse patent describes a passivation of "silicon oxide
    layer … between about 0.4 and 0.7 microns thick" under "silicon
    nitride layer … between about 0.4 and 0.7 microns
@@ -238,8 +238,8 @@ public):
 ## Open questions
 
 * The nitride thickness for SKY130 is not public: 0.54 µm on the PDK
-  diagram[^pdk-04] against 0.7–0.9 µm in Cypress reports for other
-  processes at the same fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
+  diagram[^pdk-04] against 0.7–0.9 µm in Cypress reports for the S8DI and S8TNV-5R
+  variants and the R7FT-3R technology at the same fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
 * The diagram's 0.3777 µm beside metal 5 runs, on our reading, from the
   bottom of metal 5 to the top of the nitride, with no TOPOX drawn
   there;[^pdk-04] whether the passivation is really thinner between
