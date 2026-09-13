@@ -14,7 +14,9 @@ published about its own tools of this class and which SKY130 step this
 reference assigns to it. The wafer itself — diameter, doping,
 orientation, oxygen and the vendor's equipment — is on the
 {ref}`category page <category-substrate>`; the clean that follows is on
-the {ref}`wet bench page <machine-wet-bench>`.
+the {ref}`wet bench page <machine-wet-bench>`; the same scanners on
+monitor and product wafers at later steps are on the
+{ref}`defect and particle inspection page <machine-defect-inspection>`.
 
 | | Starting material: incoming inspection, marking and sorting |
 |---|---|
@@ -306,7 +308,8 @@ limits and marking scheme are not public.
 * **One scanner class for the whole fab.** The scanner used for incoming
   wafers is the "Industry standard for process tool qualification" as
   well;[^kla-sp1-2021] the machines index lists its particle and defect
-  checks on many later steps under defect and particle inspection
+  checks on many later steps under
+  {ref}`defect and particle inspection <machine-defect-inspection>`
   ({ref}`machines-index`).
 
 ## Related pages
@@ -315,6 +318,8 @@ limits and marking scheme are not public.
   and the vendor's equipment.
 * {ref}`SMAT <step-001>` — the step this class serves.
 * {ref}`machine-wet-bench` — the pre-furnace clean that follows receipt.
+* {ref}`machine-defect-inspection` — unpatterned and patterned inspection
+  at later steps, with the same scanner family.
 * {ref}`category-test` — in-line defect inspection and electrical test.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
