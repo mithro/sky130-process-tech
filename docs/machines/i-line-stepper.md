@@ -317,6 +317,8 @@ resist thicknesses per layer are not public.
   the 36 mask steps of SKY130.
 * {ref}`machine-duv-krf-stepper` — the exposure class for the critical
   levels, and the other side of the mix-and-match.
+* {ref}`machine-coat-develop-track` — the coat, bake and develop around
+  each exposure.
 * {ref}`masks-index` — each mask's PDK entry, minimum CD, plates and the
   mask-type record for vias 2–4.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools

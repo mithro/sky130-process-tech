@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1306
+written page has exactly one entry here; the inventory holds 1317
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -10478,9 +10478,9 @@ scanners (Nikon NSR-1505EX 1988, ASML PAS 5000/70 1991, SVGL Micrascan
 1990 and Micrascan III 1996, Nikon NSR-S201A 1995, ASML PAS 5500/500 and
 Canon FPA-4000ES1 1997), Cymer's market share and first solid-state KrF
 laser, Ushio as the leading mercury-lamp supplier and Cobilt as the
-origin of Tokyo Electron's tracks. Used on the i-line stepper or scanner
-and DUV (KrF, 248 nm) stepper or scanner pages. Tier: high-level
-(industry chronology).
+origin of Tokyo Electron's tracks. Used on the i-line stepper or
+scanner, DUV (KrF, 248 nm) stepper or scanner and coat/develop track
+pages. Tier: high-level (industry chronology).
 
 **BUCKLEY-1989** — J. D. Buckley, D. N. Galburt and C. Karatzas,
 "Step-and-scan lithography using reduction optics", *Journal of Vacuum
@@ -10555,9 +10555,10 @@ Tier: deep dive.
 Hallock and A. Becknell, "Photoresist properties during high current
 implantation: an I-line vs. DUV resist comparison", *Proc. 2000
 International Conference on Ion Implantation Technology*, pp. 813–816.
-<https://doi.org/10.1109/IIT.2000.924278> DUV and i-line resists compared
-under high-current, high-dose implants, the DUV resist found equivalent.
-Used on the i-line stepper or scanner page. Tier: deep dive.
+<https://doi.org/10.1109/IIT.2000.924278> DUV and i-line resists
+compared under high-current, high-dose implants, the DUV resist found
+equivalent. Used on the i-line stepper or scanner and coat/develop track
+pages. Tier: deep dive.
 
 **NAKAGAWA-1990** — K. Nakagawa, M. Taguchi and T. Ema, "Fabrication of
 64 M DRAM with i-line phase-shift lithography", *IEDM Technical Digest*
@@ -10668,10 +10669,89 @@ tungsten CMP and copper dual-damascene levels. Used on the DUV (KrF,
 
 **MACDONALD-1991** — S. A. MacDonald et al., "Airborne chemical
 contamination of a chemically amplified resist", *Proc. SPIE* **1466**,
-2–12 (1991). <https://doi.org/10.1117/12.46354> Degradation of a
-t-BOC/onium salt resist by parts-per-billion airborne organic bases, and
-its cure by carbon-filtered air. Used on the DUV (KrF, 248 nm) stepper or
-scanner page. Tier: deep dive.
+2–12 (1991).
+<https://doi.org/10.1117/12.46354> Degradation of a t-BOC/onium salt
+resist by parts-per-billion airborne organic bases, and its cure by
+carbon-filtered air. Used on the DUV (KrF, 248 nm) stepper or scanner
+and coat/develop track pages. Tier: deep dive.
+
+**SCREEN-SK80EX** — SCREEN Semiconductor Solutions, *Coat/Develop Track:
+SK-60EX/SK-80EX*, product page.
+<https://www.screen.co.jp/spe/en/products/sk-60ex80ex> Coat/develop tracks
+for 50–200 mm wafers "Continuing the Reliability of the Long-Selling 60/80
+Series" with its large installed base, compatible with the recipes of
+the 60/80 series. Used on the coat/develop track page. Tier: cross-check
+(vendor statement).
+
+**SCREEN-RF200EX** — SCREEN Semiconductor Solutions, *Coat/Develop Track:
+RF-200EX/RF-300EX*, product page.
+<https://www.screen.co.jp/spe/en/products/rf-200ex300ex> A current track
+"Dedicated design for 200mm wafers" for DUV processes, redeploying 300 mm
+unit technology, with reduced resist consumption. Used on the coat/develop
+track page. Tier: cross-check (vendor statement).
+
+**SOKUDO-RF3-2006** — Sokudo Co., Ltd. and JSR Micro, Inc., *JSR Micro,
+Inc. Selects RF3 Track System from Sokudo Co., Ltd.*, press release,
+2006-09-20, hosted by SCREEN (document PR060920E).
+<https://www.screen.co.jp/eng/spe/mt-images/pr060920_e.pdf> The sale of
+an RF3 coat/develop track of modular structure for 65 nm and 45 nm node
+work; Sokudo as a joint venture of Dainippon Screen and Applied Materials
+established on 2006-07-03. Used on the coat/develop track page. Tier:
+cross-check (vendor statement).
+
+**WIKI-SPIN-COATING** — Wikipedia, *Spin coating*.
+<https://en.wikipedia.org/wiki/Spin_coating> Spin coating of photoresist
+"about 1 micrometre thick" at 20 to 80 revolutions per second, the
+dependence of thickness on speed and viscosity, and edge beads. Used on
+the coat/develop track page. Tier: high-level.
+
+**EMSLIE-1958** — A. G. Emslie, F. T. Bonner and L. G. Peck, "Flow of a
+viscous liquid on a rotating disk", *Journal of Applied Physics*
+**29**(5), 858–862 (1958). <https://doi.org/10.1063/1.1723300> The flow
+equations of a Newtonian liquid on a rotating disk: an initially uniform
+layer stays uniform and irregular layers level out under centrifugation.
+Used on the coat/develop track page. Tier: deep dive.
+
+**MEYERHOFER-1978** — D. Meyerhofer, "Characteristics of resist films
+produced by spinning", *Journal of Applied Physics* **49**(7), 3993–3997
+(1978). <https://doi.org/10.1063/1.325357> A model of spun resist films
+with evaporation: thickness independent of substrate size and scaling with
+spin speed, viscosity and evaporation rate, checked on positive resists.
+Used on the coat/develop track page. Tier: deep dive.
+
+**SMITH-MACK-2001** — M. D. Smith and C. A. Mack, "Examination of a
+simplified reaction-diffusion model for post-exposure bake of chemically
+amplified resists", *Proc. SPIE* **4345**, 1022 (2001).
+<https://doi.org/10.1117/12.436827> Coupled and decoupled
+reaction–diffusion models of the post-exposure bake compared analytically.
+Used on the coat/develop track page. Tier: deep dive.
+
+**RAMANAN-2000** — N. Ramanan, A. Kozman and J. B. Sims, "Differences
+between wafer and bake plate temperature uniformity in proximity bake: a
+theoretical and experimental study", *Proc. SPIE* **3999**, 890 (2000).
+<https://doi.org/10.1117/12.388375> Wafer temperature uniformity in
+proximity bake as set by lid design, air flow, plate design and plate and
+wafer flatness. Used on the coat/develop track page. Tier: deep dive.
+
+**PERERA-1989** — T. Perera, "Characteristics of a developer for spray
+puddle develop processes", *Proc. SPIE* **1086**, 470 (1989).
+<https://doi.org/10.1117/12.953060> A surfactant-bearing developer for
+spray-puddle develop, its sensitivities, exposure latitude and linewidth
+uniformity. Used on the coat/develop track page. Tier: deep dive.
+
+**ETO-2007** — H. Eto, Y. Ito and T. Homma, "Effect of temperature on
+photoresist critical dimension during puddle development", *Japanese
+Journal of Applied Physics* **46**(6R), 3354 (2007).
+<https://doi.org/10.1143/JJAP.46.3354> Evaporative cooling of the wafer
+edge during puddle develop and a DNQ/novolac CD change of about 5 nm/°C.
+Used on the coat/develop track page. Tier: deep dive.
+
+**FUJIWARA-2006** — T. Fujiwara, K. Shiraishi, H. Tanizaki, Y. Ishii, H.
+Kyoda, T. Yamamoto and S. Ishida, "Wafer management between coat/developer
+track and immersion lithography tool", *Proc. SPIE* **6154**, 61544L
+(2006). <https://doi.org/10.1117/12.656303> Wafer handling between an
+in-line coat/developer and an immersion scanner before the post-exposure
+bake. Used on the coat/develop track page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
