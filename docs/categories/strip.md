@@ -26,12 +26,11 @@ solvent or semi-aqueous step to remove the halogenated polymer left by
 plasma etching, and after aluminium etch the SPM step is omitted because
 it attacks the metal.
 
-In the SKY130 flow there are fourteen implant-mask strips (one after
-every implant lithography, from {ref}`DNIS <step-009>` to
-{ref}`NSDIS <step-087>`) plus the STI nitride strip
-{ref}`NS19 <step-013>`. The strips that follow *etch* masks are not
-listed as separate steps in the step list used in this reference and
-are assumed to be part of the corresponding etch step group.
+In the flow described in this reference there are fourteen
+implant-mask strips (one after every implant lithography, from
+{ref}`DNIS <step-009>` to {ref}`NSDIS <step-087>`) plus the STI
+nitride strip {ref}`NS19 <step-013>`. This reference treats the strips
+that follow *etch* masks as part of the corresponding etch step.
 
 ## Physics and engineering background
 

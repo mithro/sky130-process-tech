@@ -140,8 +140,9 @@ BPSG
     phosphorus. The boron lowers the temperature at which the glass
     softens and flows ({term}`reflow`) well below that of {term}`PSG`,
     so that a BPSG {term}`pre-metal dielectric` can be smoothed over the
-    gates without harming the junctions beneath. SKY130's step list
-    names PSG rather than BPSG (see {ref}`step-089`).
+    gates without harming the junctions beneath. This reference
+    describes SKY130's pre-metal glass as PSG rather than BPSG (see
+    {ref}`step-089`).
 
 buried-channel PMOS
     A p-channel MOSFET with an n⁺ polysilicon gate whose channel has been
@@ -169,7 +170,7 @@ cap oxide
     polished dielectric to seal it: it keeps the phosphorus or boron of
     a {term}`PSG` or {term}`BPSG` layer away from the films above, gives
     a clean, stable surface for the next lithography and blocks
-    moisture. SKY130's step list has one over the gates
+    moisture. This reference describes one over the gates
     ({ref}`step-059`), one over the planarised pre-metal glass
     ({ref}`step-091`) and one over the polished oxide of each metal
     level, the first of them {ref}`step-117`.

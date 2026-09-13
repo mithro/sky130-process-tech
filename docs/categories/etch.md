@@ -109,8 +109,9 @@ recipes are not public.
   vertical gate sidewalls and must stop on a thin oxide without
   trenching the silicon.[^txt-01]
 * **Aluminium–copper with Ti/TiN or Ti:W caps** (metal 1–5,
-  {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`; the step names
-  indicate a Ti:W cap in SKY130): Cl₂/BCl₃ with N₂ or CHF₃ for sidewall
+  {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`; SKY130's stacks
+  carry a Ti:W cap on the public description of the S8 metal
+  stacks[^cyp-qtp-113005]): Cl₂/BCl₃ with N₂ or CHF₃ for sidewall
   passivation. AlCl₃ is volatile at room temperature, so aluminium
   etches spontaneously in chlorine and anisotropy depends entirely on
   the passivation film; BCl₃ scavenges water and reduces the native
@@ -478,3 +479,8 @@ oxidation or clean must remove.
     Technology*, Fall 2005 (lecture notes on lithography, etching,
     deposition and CMP).
     <https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/>
+[^cyp-qtp-113005]: Cypress Semiconductor, *Product Qualification
+    Plan, QTP# 113005: 64K Serial Non-Volatile SRAM Product Family, S8
+    Technology, CMI (Fab 4)*, document 001-85611 Rev. *A, January
+    2013 (copy hosted by Infineon Technologies).
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
