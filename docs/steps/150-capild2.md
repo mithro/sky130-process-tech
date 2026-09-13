@@ -73,7 +73,8 @@ capacitor. The area-intensive structures differ by only about 1 %
 periphery-intensive structure measures less than its first-level
 counterpart (9.91 against 10.37 pF), so the levels do not differ by a
 simple area capacitance, and an area-plus-periphery model fitted to the
-three second-level structures leaves errors of about 5 %. Fitted over
+three second-level structures leaves errors of up to about 4 % and a
+periphery term close to zero. Fitted over
 ±3.3 V, their quadratic voltage coefficients are +47 to +51 ppm/V²,
 against +32 to +40 ppm/V² at the first level (our extraction from the
 published measurements, with no correction for pad and wiring

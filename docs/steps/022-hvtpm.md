@@ -80,10 +80,10 @@ against 20.26 pF); we read the parameter names, because the table's
 descriptions do not match them.[^pdk-07] Published
 capacitance–voltage sweeps of the test tile's two options, which the
 pad list maps to `cap_var_lvt` and `cap_var_hvt`, show the same
-pattern: for 98 devices of 5 × 5 µm, 4.60 pF against 2.41 pF at 1.8 V
-into depletion and 21.04 pF against 21.14 pF at 1.8 V into
+pattern: for 98 devices of 5 × 5 µm, 4.60 pF against 2.41 pF at −1.8 V, on the
+low-capacitance side, and 21.04 pF against 21.14 pF at 1.8 V into
 accumulation, and, over five sizes, an area capacitance of about 1.66
-against 0.80 fF/µm² at 1.8 V into depletion (our extraction from the
+against 0.80 fF/µm² at −1.8 V (our extraction from the
 published measurements; the files record no measurement frequency,
 temperature, date or
 wafer).[^raw-data-passives][^raw-data-testtile-pads] A larger
