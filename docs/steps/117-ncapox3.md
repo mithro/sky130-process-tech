@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 117 of 171 |
+| **Step number** | 117 of 171[^steps-sheet] |
 | **Step code** | `NCAPOX3` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | BEOL — contact and metal 1 |
@@ -336,3 +336,6 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 [^lieberman-2005]: M. A. Lieberman and A. J. Lichtenberg, *Principles
     of Plasma Discharges and Materials Processing*, 2nd ed., Wiley,
     2005, ISBN 978-0-471-72001-0. <https://doi.org/10.1002/0471724254>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

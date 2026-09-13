@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 116 of 171 |
+| **Step number** | 116 of 171[^steps-sheet] |
 | **Step code** | `CMPM` |
 | **Category** | {ref}`Chemical-mechanical planarisation <category-cmp>` |
 | **Phase** | BEOL — contact and metal 1 |
@@ -410,3 +410,6 @@ recipe is not public):
     mechanical planarization for microelectronics applications",
     *Materials Science and Engineering: R* **45**(3–6), 89–220 (2004).
     <https://doi.org/10.1016/j.mser.2004.06.002>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
