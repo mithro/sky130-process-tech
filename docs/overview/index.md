@@ -289,7 +289,7 @@ steps and 36 masks.
 | Poly gate and poly resistors | {ref}`SAGD <step-048>` – {ref}`IOX45 <step-063>` | 16 | 4 (`RPM`, `RRPM`, `URPM`, `P1M`) | poly 0.18 µm;[^pdk-03][^pdk-04] gate poly 48.2 Ω/sq;[^pdk-08] 300 Ω/sq and 2000 Ω/sq precision resistors;[^pdk-07] poly width 0.150 µm, space 0.210 µm;[^pdk-periph] "poly cap after SPE" 0.2 µm[^pdk-03] |
 | Tips and halos | {ref}`NTM <step-064>` – {ref}`TIPRTAD <step-075>` | 12 | 3 (`NTM`, `HVNTM`, `LDNTM`) | "N Tip (As)"; tip implant angle 7°, HV tip 40° with 23° twist;[^pdk-03] no P-tip mask in the mask table[^pdk-05] |
 | Spacers and source/drain | {ref}`SPNIT <step-076>` – {ref}`RTAD <step-088>` | 13 | 3 (`NPCM`, `PSDM`, `NSDM`) | "SPNIT K=7.5";[^pdk-04] "oxide spacer" 0.05 µm, "N+ or P+ S/D (XJ)" 0.1 µm;[^pdk-03] N- and P-diffusion 120 Ω/sq and 197 Ω/sq[^pdk-08] |
-| Pre-metal dielectric, contact silicide and local interconnect | {ref}`PSG <step-089>` – {ref}`CMPL <step-106>` | 18 | 2 (`LICM1`, `LI1M`) | "PSG K=3.9", 0.6099 µm over the gate and 0.4299 µm over field poly;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm;[^pdk-03] `li` 0.1 µm,[^pdk-04] 12.8 Ω/sq;[^pdk-08] "LINT K=7.3" 0.075 µm and "NILD2 K=4.05" 0.265 µm[^pdk-04] |
+| Pre-metal dielectric, contact silicide and local interconnect | {ref}`PSG <step-089>` – {ref}`CMPL <step-106>` | 18 | 2 (`LICM1`, `LI1M`) | "PSG K=3.9", 0.6099 µm from the field-oxide top to the `li` bottom and 0.4299 µm over field poly;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm;[^pdk-03] `li` 0.1 µm,[^pdk-04] 12.8 Ω/sq;[^pdk-08] "LINT K=7.3" 0.075 µm and "NILD2 K=4.05" 0.265 µm[^pdk-04] |
 | Metal contact and metal 1 | {ref}`CTM1 <step-107>` – {ref}`NCAPOX3 <step-117>` | 11 | 2 (`CTM1`, `MM1`) | `mcon` 0.170 µm square;[^pdk-periph] S8 metal 1 "100A Ti / 3200A Al-0.5%Cu / 300A TiW";[^cyp-qtp-113005] `met1` 0.36 µm;[^pdk-04] 125 mΩ/sq[^pdk-08] |
 | Via 1, metal 2 and via 2 | {ref}`VIM <step-118>` – {ref}`WTIAL3 <step-134>` | 17 | 3 (`VIM`, `MM2`, `VIM2`) | via 0.150 µm and via 2 0.200 µm squares;[^pdk-periph] via heights 0.27 µm and 0.42 µm, `met2` 0.36 µm[^pdk-04] |
 | First MiM capacitor, metal 3 and via 3 | {ref}`CAPILD <step-135>` – {ref}`WCMP5 <step-148>` | 14 | 3 (`CAPM`, `MM3`, `VIM3`) | 2 fF/µm², top plate 5.8 Ω/sq;[^pdk-07] `met3` 0.845 µm and via-3 height 0.39 µm;[^pdk-04] 47 mΩ/sq;[^pdk-08] `CAPM` not marked as used in SKY130[^pdk-05] |
@@ -518,9 +518,9 @@ where no number is given, none is public.
 | Gate dielectrics | thin and thick gate oxide; ONO in SONOS cells | 110 Å (5 V and high-voltage devices);[^pdk-hv] model `toxe` 4.148 nm (1.8 V) and 11.6 nm (5 V);[^pdk-model-nfet01v8][^pdk-model-nfet5v] ONO not public | — | {ref}`ONO <step-040>`; {ref}`GOX100 <step-043>` – {ref}`LVGOX <step-047>` |
 | Gate and resistor poly | "polysilicon"[^pdk-04] | 0.18 µm[^pdk-03][^pdk-04] | — | {ref}`SAGD <step-048>` – {ref}`P1ME <step-062>` |
 | Gate cap and spacers | "SPNIT K=7.5"[^pdk-04] | "poly cap after SPE" 0.2 µm; "oxide spacer" 0.05 µm[^pdk-03] | — | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`; {ref}`SPNIT <step-076>` – {ref}`SPOX <step-080>` |
-| Pre-metal dielectric | "PSG K=3.9"[^pdk-04] | 0.6099 µm over the gate, 0.4299 µm over field poly;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm[^pdk-03] | — | {ref}`PSG <step-089>` – {ref}`NCAPOX <step-091>` |
-| Local interconnect | `li` (TiN) | 0.1 µm[^pdk-04][^pdk-03] | bottom 0.9361, top 1.0111[^pdk-04] | {ref}`LITIN <step-101>` – {ref}`LI1ME <step-103>` |
-| Local-interconnect cap | "LINT K=7.3"[^pdk-04] | 0.075 µm[^pdk-04] | — | {ref}`LINIT <step-104>` |
+| Pre-metal dielectric | "PSG K=3.9"[^pdk-04] | 0.6099 µm from the field-oxide top to the `li` bottom and 0.4299 µm over field poly;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm[^pdk-03] | — | {ref}`PSG <step-089>` – {ref}`NCAPOX <step-091>` |
+| Local interconnect | `li` (TiN) | 0.1 µm[^pdk-04][^pdk-03] | bottom 0.9361[^pdk-04] | {ref}`LITIN <step-101>` – {ref}`LI1ME <step-103>` |
+| Local-interconnect cap | "LINT K=7.3"[^pdk-04] | 0.075 µm[^pdk-04] | 1.0111, read as its top beside `li` (see below)[^pdk-04] | {ref}`LINIT <step-104>` |
 | Dielectric to metal 1 (`mcon`) | "NILD2 K=4.05"[^pdk-04] | 0.265 µm[^pdk-04] | — | {ref}`NILD2 <step-105>` – {ref}`WCMP2 <step-111>` |
 | Metal 1 | `metal1` | 0.36 µm[^pdk-04] | bottom 1.3761[^pdk-04] | {ref}`TIAL6 <step-112>` – {ref}`MM1E <step-114>` |
 | Via 1 | "NILD3 K=4.5", "NILD3_C K=3.5"[^pdk-04] | via 0.27 µm; NILD3_C 0.030 µm[^pdk-04] | — | {ref}`NILD3 <step-115>` – {ref}`WCMP3 <step-122>` |
@@ -543,14 +543,21 @@ thickness plus the via height (1.3761 + 0.36 + 0.27 = 2.0061 µm, and so
 on to 4.0211 + 0.845 + 0.505 = 5.3711 µm), and the PSG labels equal the
 distance from the field-oxide top to the `li` bottom (0.9361 − 0.3262 =
 0.6099 µm) and that distance less the 0.18 µm poly (0.4299 µm) (our
-arithmetic from the labels[^pdk-04]). Two intervals do not close. The
-`li` levels bracket 0.075 µm, not the 0.1 µm the conductor label gives
-({ref}`LITIN <step-101>`); and the 0.365 µm between the `li` top and the
-metal-1 bottom is more than the 0.265 µm NILD2 label, or the 0.34 µm of
-NILD2 and LINT together ({ref}`CTM1 <step-107>`,
-{ref}`NILD2 <step-105>`). The public values for some films also
-disagree with other public sources; those differences are among the
-open questions below.
+arithmetic from the labels[^pdk-04]). Below metal 1 the labels add up
+too: the `li` bottom (0.9361 µm) plus the 0.1 µm `li`, the 0.075 µm LINT
+and the 0.265 µm NILD2 gives exactly the 1.3761 µm metal-1 bottom (our
+arithmetic from the labels[^pdk-04]). One label does not fit that
+reading. The 1.0111 µm level is 0.075 µm above the `li` bottom, not
+0.1 µm; the diagram, being not to scale, draws the top of `li` and the
+top of the LINT on the glass beside it at the same height, and the
+label's leader line runs to the LINT rather than to `li`. We therefore
+read 1.0111 µm as the top of the LINT beside `li` (0.9361 + 0.075 µm),
+which fits every other label (our reading of the drawing[^pdk-04]). The
+{ref}`LITIN <step-101>`, {ref}`NILD2 <step-105>` and
+{ref}`CTM1 <step-107>` pages read it as the `li` top, which would leave
+0.075 µm for `li` and 0.365 µm from `li` to metal 1 instead of 0.34 µm.
+The public values for some films also disagree with other public
+sources; those differences are among the open questions below.
 
 (overview-phases)=
 ## Front end, middle of line and back end
@@ -719,8 +726,8 @@ public.
   ({ref}`NTSD <step-167>`, {ref}`PDME <step-169>`); how deep the
   nitride-seal opening goes is not public either
   ({ref}`NSME <step-166>`).
-* **Stack-diagram intervals.** Besides the local-interconnect and NILD2
-  intervals described {ref}`above <overview-cross-section>`, what the
+* **Stack-diagram intervals.** Besides the 1.0111 µm label described
+  {ref}`above <overview-cross-section>`, what the
   thin "NILD3_C" and "NILD4_C" films represent, and why the finished
   dielectric above metal 2 is thicker than that above metal 1, are not
   public ({ref}`NILD3 <step-115>`, {ref}`NCAPOX3 <step-117>`,
