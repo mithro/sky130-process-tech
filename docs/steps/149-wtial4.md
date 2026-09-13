@@ -174,7 +174,7 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
 
 ## Machines typically used
 
-* **PVD cluster tool with Ti/TiW, Al–Cu and TiW chambers**, 200 mm:
+* **{ref}`PVD cluster tool <machine-pvd-cluster-tool>` with Ti/TiW, Al–Cu and TiW chambers**, 200 mm:
   Applied Materials Endura,[^amat-endura] Novellus INOVA, Ulvac and
   Anelva sputtering systems ({ref}`category-deposition`).
 * **Degas and sputter-etch pre-clean chambers**.

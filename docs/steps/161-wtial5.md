@@ -221,7 +221,7 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 
 ## Machines typically used
 
-* **PVD cluster tool with Ti/TiW, Al–Cu and TiW chambers**, 200 mm, with
+* **{ref}`PVD cluster tool <machine-pvd-cluster-tool>` with Ti/TiW, Al–Cu and TiW chambers**, 200 mm, with
   heated or biased aluminium chambers where hot fill is used: Applied
   Materials Endura,[^amat-endura] Novellus INOVA, Electrotech/Trikon
   high-pressure fill modules,[^pat-forcefill-electrotech] Ulvac and Anelva
