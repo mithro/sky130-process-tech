@@ -91,8 +91,10 @@ def check(page: Path, rows: dict[str, str]) -> list[str]:
     if row is None:
         return problems + [f"no main-table row links {label.group(1)} in index.md"]
     steps_body = sections(body.get("At SkyWater", ""), "###").get(STEPS_H3, "")
+    # The first paragraph that links a step and is not a bullet list (a
+    # paragraph may itself start with the emphasis "*alternative:*").
     paragraph = next((p for p in steps_body.split("\n\n") if STEP_RE.search(p)
-                      and not p.lstrip().startswith("*")), "")
+                      and not re.match(r"\*\s", p.lstrip())), "")
     for name, got, want in zip(("steps", "alternative"), step_sets(paragraph),
                                step_sets(row)):
         if got != want:
