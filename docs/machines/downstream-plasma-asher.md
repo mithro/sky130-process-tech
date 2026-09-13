@@ -122,10 +122,12 @@ consumed".[^wiki-ash]
   description;[^gasonics-aura] the L3510, "a production-proven downstream
   plasma photoresist ashing system" for 75–200 mm wafers;[^gasonics-l3510]
   and the PEP Iridia line, whose modules pair microwave and RF
-  generators.[^semistar-iridia] Novellus agreed in October 2000 to buy
-  GaSonics, "a supplier of dry resist removal and surface preparation
-  equipment", for "approximately $347 million";[^sst-gasonics-2000] in
-  2006 Novellus licensed the Aura 1000/2000LL and L3510 designs to a
+  generators.[^semistar-iridia] Solid State Technology reported on
+  2000-10-27 that Novellus "is acquiring" GaSonics, "a supplier of dry
+  resist removal and surface preparation equipment", in a stock-for-stock
+  merger "valued at approximately $347 million";[^sst-gasonics-2000] a
+  2006 report refers to "Novellus' 2001 purchase of GaSonics" and
+  reports that Novellus had just licensed the Aura 1000/2000LL and L3510 designs to a
   refurbisher while keeping the "Gamma and PEP Iridia lines".[^sst-novellus-spec-2006]
 * **Mattson Technology.** The Aspen II Strip and Aspen III Strip on the
   "Aspen II platform" and "Aspen III platform", with ICP sources; Mattson
