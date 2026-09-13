@@ -11791,7 +11791,9 @@ inspection page. Tier: deep dive.
 1997-09-19, granted 2001-03-13.
 <https://patents.google.com/patent/US6201601B1/en> Normal and oblique
 illumination with a curved-mirror collector and butterfly-shaped spatial
-filters. Used on the defect and particle inspection page. Tier: deep dive.
+filters, for bare or unpatterned wafers and rough films, separating
+particles from COPs. Used on the defect and particle inspection page.
+Tier: deep dive.
 
 **PAT-TWOPHASE-ORBOT** — D. Alumot, G. Neumann, R. Sherman and E. Tirosh
 (Orbot Instruments), *Two-phase optical inspection method and apparatus
