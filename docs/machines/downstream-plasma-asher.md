@@ -218,7 +218,7 @@ exhaust.
   and the L3510's lamp and platen heaters are service
   items.[^gasonics-aura][^gasonics-l3510]
 * **Wet follow-up.** Most strips end on a
-  wet bench, which removes the inorganic
+  {ref}`wet bench <machine-wet-bench>`, which removes the inorganic
   residue the ash leaves; Tseng, Chao and Tsai finish with "ammonium
   hydroxide and hydrogen peroxide".[^pat-strip-mosel]
 
@@ -259,7 +259,7 @@ SKY130 conditions of their own. SKY130's strip recipes are not public.
 
 * {ref}`category-strip` — ashing, the implant crust and wet strips, and
   the 15 strip steps of SKY130.
-* Wet bench and spray processor — the wet clean that follows most strips.
+* {ref}`machine-wet-bench` — the wet clean that follows most strips.
 * {ref}`category-implant` — the implants whose resist this tool
   removes.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools

@@ -241,7 +241,7 @@ The inferences rest on the listed capability: "gate" and "trench" appear
 only on the DPS II entry, "poly/nitride" only on the 9400 entry, and the
 4400 entry names no application.[^skw-01] The ONO etch
 ({ref}`ONOME <step-042>`) is also one of the two options of the
-dielectric and nitride etcher class.
+{ref}`dielectric and nitride etcher class <machine-plasma-etcher-dielectric>`.
 
 ## Consumables and facilities
 
@@ -308,19 +308,19 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   thickness.[^hashimoto-1994][^noguchi-1997]
 * **Strip and clean afterwards.** Every etch on this tool is followed by
   a resist strip in a
-  downstream plasma asher and a
-  clean on a wet bench, which remove the
+  {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and a
+  clean on a {ref}`wet bench <machine-wet-bench>`, which remove the
   halogenated sidewall residue.[^thung-2016]
 
 ## Related pages
 
 * {ref}`category-etch` — plasma and wet etching physics and the 27
   etch steps of SKY130.
-* Plasma etcher: dielectric and nitride and
-  Plasma etcher: metal — the other two plasma-etcher
+* {ref}`machine-plasma-etcher-dielectric` and
+  {ref}`machine-plasma-etcher-metal` — the other two plasma-etcher
   classes; the dielectric etch pages weigh the three etchers listed
   here.
-* Downstream plasma asher and Wet bench and spray processor —
+* {ref}`machine-downstream-plasma-asher` and {ref}`machine-wet-bench` —
   the strip and clean after each etch.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
