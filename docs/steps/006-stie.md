@@ -106,18 +106,15 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
    remove the bromine-containing sidewall polymer — an STI paper
    notes that after the dry etch a "wet cleaning process is then
    applied to remove the polymer or residue on the side wall of shallow
-   trench".[^thung-2016] In SKY130 the strip is not a listed step;
-   it is presumably part of `STIE` or of the following
-   {ref}`DNM <step-007>` litho preparation (open question).
+   trench".[^thung-2016] This reference treats the strip as part of
+   `STIE`; it could equally belong to the preparation for the
+   following {ref}`DNM <step-007>` lithography (open question).
 6. **Metrology.** Trench depth by cross-section SEM or by an optical
    scatterometry/profilometry monitor; {term}`CD` by {term}`CD-SEM`.
 
 SkyWater's capability page lists the exact chemistry on its AMAT
 etcher: "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2 – gate, trench,
-W/WN".[^skw-01] Search-engine snippets of a 1998 Applied Materials
-press release refer to a dedicated "DPS STI Centura" configuration of
-this decoupled-plasma-source platform; the release itself could not be
-retrieved, so this is unverified (see open questions).
+W/WN".[^skw-01]
 
 ## Machines typically used
 
@@ -246,10 +243,7 @@ retrieved, so this is unverified (see open questions).
   not documented; the drawing says "not to scale". No measured
   cross-section of SKY130 STI is public.
 * **Where the FOM resist is stripped** — inside `STIE`, or before the
-  silicon etch — is not listed as a step and is unknown.
-* **Applied Materials' "DPS STI Centura" press release** (dated
-  1998-12-14 according to search-engine snippets) could not be fetched
-  during writing and is therefore not cited as a verified source.
+  silicon etch — is not stated publicly.
 * Whether SkyWater's DPSII or a Lam tool carries this etch is not
   public.
 
