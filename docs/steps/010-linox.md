@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 10 of 171 |
+| **Step number** | 10 of 171[^steps-sheet] |
 | **Step code** | `LINOX` |
 | **Category** | {ref}`Thermal oxidation <category-oxidation>` |
 | **Phase** | FEOL — isolation |
@@ -314,3 +314,6 @@ width because of the encroachment under the nitride edge.
 [^snf-oxide]: Stanford Nanofabrication Facility, *Oxide Growth
     (furnace)*, processing-technique page.
     <https://snfguide.stanford.edu/guide/equipment/processing-technique/annealing-oxidation/oxide-growth-furnace>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

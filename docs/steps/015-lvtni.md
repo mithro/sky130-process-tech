@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 15 of 171 |
+| **Step number** | 15 of 171[^steps-sheet] |
 | **Step code** | `LVTNI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
 | **Phase** | FEOL — wells and channel implants |
@@ -348,3 +348,6 @@ below are typical or taken from contemporaneous patents.
     manufacturing: A vacuum perspective", *Journal of Vacuum Science &
     Technology A* **14**(3), 1115–1123 (1996).
     <https://doi.org/10.1116/1.580279>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

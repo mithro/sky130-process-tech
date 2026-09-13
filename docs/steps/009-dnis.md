@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 9 of 171 |
+| **Step number** | 9 of 171[^steps-sheet] |
 | **Step code** | `DNIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
 | **Phase** | FEOL — isolation |
@@ -269,3 +269,6 @@ fab:
 [^reinhardt-2008]: K. A. Reinhardt and W. Kern (eds.), *Handbook of
     Silicon Wafer Cleaning Technology*, 2nd ed., William Andrew, 2008,
     ISBN 978-0-8155-1554-8. <https://openlibrary.org/isbn/9780815515548>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
