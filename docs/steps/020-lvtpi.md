@@ -115,8 +115,10 @@ fab (SKY130 values are not public):
   available and the dose window fits. Strength: **strong** for the tool;
   assignment is an **inference**. Note that phosphorus is *not* in the
   8250's public species list.
-* **Axcelis GSD high-current/high-energy implanter** — "B11, BF2, P, As, 10-3000kev"[^skw-01] could run
-  either species. Strength: strong for existence.
+* **Axcelis GSD high-current/high-energy implanter** — "B11, BF2, P,
+  As, 10-3000kev"[^skw-01] (the entry whose dose range starts below the
+  Hi dose entry's 5e12) could run either species. Strength: strong for
+  existence.
 
 ## Resources required
 
