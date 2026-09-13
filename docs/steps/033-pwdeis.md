@@ -214,7 +214,7 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
     Technology", *Journal of The Electrochemical Society* **137**(6),
     1887–1892 (1990). <https://doi.org/10.1149/1.2086825>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page), retrieved 2026-08-30.
+    Bloomington, MN* (listing page), retrieved 2026-08-30; listings expire.
     <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.

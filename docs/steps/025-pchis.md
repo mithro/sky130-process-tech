@@ -195,7 +195,7 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 [^wiki-rca]: Wikipedia, *RCA clean*.
     <https://en.wikipedia.org/wiki/RCA_clean>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page), retrieved 2026-08-30.
+    Bloomington, MN* (listing page), retrieved 2026-08-30; listings expire.
     <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.

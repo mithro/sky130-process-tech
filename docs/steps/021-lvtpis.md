@@ -230,7 +230,7 @@ crust stage cannot be hurried.
     Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
     <https://openlibrary.org/isbn/9780130815200>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page), retrieved 2026-08-30.
+    Bloomington, MN* (listing page), retrieved 2026-08-30; listings expire.
     <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.

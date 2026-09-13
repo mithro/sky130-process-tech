@@ -327,7 +327,7 @@ pre-oxidation clean are folded into those steps (see the
     statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
     Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+    retrieved 2026-08-30; listings expire. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^pap-01]: M. H. White, D. A. Adams and J. Bu, "On the go with SONOS",
     *IEEE Circuits and Devices Magazine* **16**(4), 22–31 (2000).
     <https://doi.org/10.1109/101.857747>
