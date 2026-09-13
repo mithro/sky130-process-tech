@@ -207,7 +207,8 @@ records the difference.
 The strip gases are listed in the {ref}`materials index
 <materials-index>`; what is specific to an asher is summarised here.
 None of the SkyWater sources describes the fab's gas delivery or
-exhaust.
+exhaust. Forming gas as an ash ambient is described on the
+{ref}`anneal ambients <material-anneal-ambients>` page.
 
 * **Gases.** O₂ and N₂ for the bulk ash; forming gas, H₂, NH₃ and CF₄ on
   the Iridia and Aspen entries;[^skw-01] a used PEP Iridia module lists
@@ -272,6 +273,8 @@ SKY130 conditions of their own. SKY130's strip recipes are not public.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — strip gases.
+* {ref}`material-anneal-ambients` — forming gas in anneals and
+  ashers.
 
 ## References
 

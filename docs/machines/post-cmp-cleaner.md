@@ -220,7 +220,10 @@ Every CMP page also quotes the Mirra entry's "Track ammonia clean" and
 The cleaning chemicals are listed in the {ref}`materials index
 <materials-index>`; what is specific to a post-CMP cleaner is summarised
 here. None of the SkyWater sources describes the fab's cleaner
-chemistry or brush supply.
+chemistry or brush supply. Brushes and post-CMP clean chemistry are
+described on the {ref}`CMP consumables <material-cmp-consumables>` page.
+Ultrapure water, its standards and its quality parameters are described
+on the {ref}`ultrapure water <material-ultrapure-water>` page.
 
 * **Brushes.** Rotating roller brushes of PVA or nylon, flushed with
   ultrapure water through hollow cores,[^pat-scrubber-ontrak] and
@@ -283,6 +286,10 @@ chemistries are not public.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — cleaning chemicals and ultrapure water.
+* {ref}`material-cmp-consumables` — slurries, pads, brushes and
+  post-CMP clean chemistry.
+* {ref}`material-ultrapure-water` — rinse water, its standards and
+  quality.
 
 ## References
 

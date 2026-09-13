@@ -252,7 +252,8 @@ thickness, index or stress gauge at SkyWater, because none is named.
 What is specific to film metrology is summarised here; the
 {ref}`materials index <materials-index>` lists monitor wafers. None of
 the SkyWater sources describes the fab's metrology standards, recipes or
-monitor-wafer practice.
+monitor-wafer practice. Monitor and test wafers are described on the
+{ref}`substrates and test wafers <material-substrates>` page.
 
 * **Light sources.** The Opti-Probe used "A highly stable, 20,000-hour
   diode laser", "A 5000-hour halogen lamp" and a deuterium source for the
@@ -333,6 +334,8 @@ targets, limits and sampling plans are not public.
 * {ref}`machine-parametric-tester` — the C–V monitors beside the ellipsometer.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
+* {ref}`material-substrates` — monitor and test wafers, their grades
+  and reuse.
 
 ## References
 

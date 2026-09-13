@@ -186,7 +186,9 @@ and {ref}`machine-tungsten-cvd`.
 
 What is specific to this class is summarised here; the
 {ref}`materials index <materials-index>` lists monitor wafers. None of
-the SkyWater sources describes the fab's monitor-wafer practice.
+the SkyWater sources describes the fab's monitor-wafer practice. Monitor
+and test wafers are described on the
+{ref}`substrates and test wafers <material-substrates>` page.
 
 * **Monitor wafers.** Bare wafers implanted with a test recipe and, for
   sheet resistance, annealed before measurement; the test wafers
@@ -270,6 +272,8 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
   e-test.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
+* {ref}`material-substrates` — monitor and test wafers, their grades
+  and reuse.
 
 ## References
 

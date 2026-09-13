@@ -257,7 +257,9 @@ step: "the association is our inference from the tool's function".
 The wafers and the clean chemicals are listed in the
 {ref}`materials index <materials-index>`; what is specific to this
 class is summarised here. None of the SkyWater sources describes the
-fab's incoming-quality laboratory.
+fab's incoming-quality laboratory. The prime and test wafers are
+described on the {ref}`substrates and test wafers <material-substrates>`
+page.
 
 * **Wafers.** Prime polished wafers, typically to SEMI M1[^semi-m1]
   (industry practice), from suppliers such as those named in the
@@ -324,6 +326,8 @@ limits and marking scheme are not public.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — wafers and cleaning chemicals.
+* {ref}`material-substrates` — prime, test, monitor and reclaimed
+  wafers and their standards.
 
 ## References
 
