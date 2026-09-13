@@ -8447,9 +8447,10 @@ the raw-data repository, 2022 (Apache 2.0).
 |V_DS| = 0.1 V and 1.8 V, with 0, 0.9 V and 1.8 V of reverse body
 bias), 237 matching I_D–V_D sweeps (gate in 0.36 V steps) and 6 gate
 C–V sweeps of two overlap-capacitance structures. For each of the five
-types the structures include the geometries of the PDK's e-test
-parameters (7/8, 7/0.15, 0.42/8 or 0.42/1 and 0.42/0.15 µm; 7/8, 7/0.35,
-0.42/8 and 0.42/0.35 µm for `pfet_01v8_lvt`), and there are NMOS
+types one module holds the geometries of the PDK's e-test thresholds
+and currents (7/8, 7/0.15, 0.42/8 or 0.42/1 and 0.42/0.15 µm; 7/8,
+7/0.35, 0.42/8 and 0.42/0.35 µm for `pfet_01v8_lvt`), all except the
+0.42/1 µm `nfet_01v8`, and there are NMOS
 devices the pad list places "in DNW", series in which only the
 source/drain extent (`sa` = `sb`, 2.5 µm down to 0.265 µm) changes, and
 multi-finger arrays. File names give the drawn W, L and multiplier and
