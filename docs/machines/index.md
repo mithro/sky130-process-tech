@@ -200,7 +200,9 @@ Notes on the table:
   those that say a KrF tool could print it but "is not needed"
   ({ref}`NWM <step-017>`, {ref}`CAPM <step-137>`).
 * **The dielectric etch row has no SkyWater tool.** SkyWater lists its
-  plasma etchers under "Metal Etch" and "Poly/Silicon Etch" only.[^skw-01]
+  production plasma etchers under "Metal Etch" and "Poly/Silicon Etch"
+  only; its "Physical Analysis" group adds an "Oxford PlasmaLab RIE
+  deprocessing" tool.[^skw-01]
   The local-interconnect contact, contact, via and nitride-seal etch
   pages say that no dielectric etcher is named and, like the pad etch
   page, grade one or more of the three poly/silicon etchers as
@@ -602,8 +604,9 @@ can be made consistent later; no step page has been changed here.
   "PNL option") and head their bullet "CVD tungsten" or "tungsten CVD".
   None of them discusses the word "PECVD", and the capabilities page
   does not explain it.
-* **The dielectric etcher.** No dielectric etcher appears on the
-  capabilities page;[^skw-01] whether the contact, via, nitride-seal and
+* **The dielectric etcher.** No dielectric etcher appears among the
+  process tools on the capabilities page (its "Physical Analysis" group
+  lists an "Oxford PlasmaLab RIE deprocessing" tool);[^skw-01] whether the contact, via, nitride-seal and
   pad etches run on the listed poly/silicon etchers or on a tool the
   page does not list is not public.
 * **Models behind generic entries.** "C1", "C2 and Producer", "AMAT PVD
