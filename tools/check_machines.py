@@ -9,7 +9,8 @@ For every ``docs/machines/*.md`` page except ``index.md``:
 * the steps paragraph under "SKY130 steps assigned to this class" links
   the same steps as the page's row in the main table of
   ``docs/machines/index.md`` (the row whose first cell links the page's
-  label), both before and after "*alternative:*".
+  label), separately for the main list, the "*alternative:*" list and
+  the "*also …:*" lists, so a step moved between lists is caught.
 
 Exit status is non-zero on any problem.  Run with
 ``uv run tools/check_machines.py``.
@@ -45,6 +46,8 @@ H3 = {
 STEPS_H3 = "SKY130 steps assigned to this class"
 STEP_RE = re.compile(r"\{ref\}`[^`<]*<(step-\d{3})>`")
 LABEL_RE = re.compile(r"^\((machine-[a-z0-9-]+)\)=$", re.MULTILINE)
+# "*alternative:*" or "*also for a clean:*" (any "*also …:*" wording).
+MARKER_RE = re.compile(r"(\*alternative:\*|\*also\b[^*\n]*:\*)")
 
 
 def sections(text: str, level: str) -> dict[str, str]:
@@ -53,10 +56,20 @@ def sections(text: str, level: str) -> dict[str, str]:
     return {parts[i].strip(): parts[i + 1] for i in range(1, len(parts), 2)}
 
 
-def step_sets(text: str) -> tuple[set[str], set[str]]:
-    """Steps before and after "*alternative:*" in a paragraph or table cell."""
-    main, _, alt = text.partition("*alternative:*")
-    return set(STEP_RE.findall(main)), set(STEP_RE.findall(alt))
+def step_sets(text: str) -> tuple[set[str], set[str], set[str]]:
+    """Main, "*alternative:*" and "*also …:*" steps in a paragraph or cell.
+
+    Each marker starts a new list that runs to the next marker, so the
+    lists may appear in any order; several "*also …:*" lists are merged.
+    """
+    buckets: dict[str, set[str]] = {"steps": set(), "alternative": set(),
+                                    "also": set()}
+    parts = MARKER_RE.split(text)
+    buckets["steps"] |= set(STEP_RE.findall(parts[0]))
+    for i in range(1, len(parts), 2):
+        name = "alternative" if parts[i].startswith("*alternative") else "also"
+        buckets[name] |= set(STEP_RE.findall(parts[i + 1]))
+    return buckets["steps"], buckets["alternative"], buckets["also"]
 
 
 def index_rows() -> dict[str, str]:
@@ -95,8 +108,8 @@ def check(page: Path, rows: dict[str, str]) -> list[str]:
     # paragraph may itself start with the emphasis "*alternative:*").
     paragraph = next((p for p in steps_body.split("\n\n") if STEP_RE.search(p)
                       and not re.match(r"\*\s", p.lstrip())), "")
-    for name, got, want in zip(("steps", "alternative"), step_sets(paragraph),
-                               step_sets(row)):
+    for name, got, want in zip(("steps", "alternative", "also"),
+                               step_sets(paragraph), step_sets(row)):
         if got != want:
             problems.append(
                 f"{name}: page only {sorted(got - want)}, index only {sorted(want - got)}"
