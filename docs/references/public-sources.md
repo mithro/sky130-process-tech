@@ -8220,7 +8220,7 @@ on the floor today, not necessarily what built the first S8 wafers.
 | Lithography | ASML DUV (KrF, 248 nm) stepper and scanner | SKW-01 | strong |
 | Lithography | ASML 193 nm single-stage scanner ("90nm CD") and twin-stage scanner ("sub 65nm CD") † | SKW-01; SKW-06 names "the ASML TWINSCAN lithography tool" | strong |
 | Lithography | Multibeam multicolumn e-beam (MEBL) † | SKW-14, SKW-06, GOV-01 context | strong |
-| Coat/develop tracks | DNS (SCREEN) 80B; Sokudo RF3; TEL Lithius Pro Z | SKW-01 | strong |
+| Coat/develop tracks | DNS (SCREEN) 80B; Sokudo RF3; TEL ProZ Lithius | SKW-01 | strong |
 | Photo metrology | AMAT Verity (CD-SEM), AMAT VeraSEM; KLA 5200/5300/Archer overlay | SKW-01 | strong |
 | Defect inspection | KLA-Tencor AIT, SP1 (Surfscan); EV300 review; SEM | JOB-01 ("SEM/AIT/KLA/SP1/EV300/1X") | medium |
 | CVD dielectrics | "C1"/"C2" PECVD (inferred to be Novellus Concept One/Two; SKW-01 gives only the abbreviations); AMAT Producer PECVD TEOS; Lam/Novellus HDP-CVD (doped and PSG) | SKW-01; SKW-07 ("Novellus high density plasma tool") | strong |

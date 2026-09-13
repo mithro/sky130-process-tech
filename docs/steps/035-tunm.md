@@ -154,7 +154,7 @@ and the pre-oxidation clean as part of those steps (see the
   tools.[^skw-01] Strength: **strong** for the vendor and wavelength
   classes; **inference** for assigning `TUNM` to the i-line tools,
   from the 0.410 µm design rule.[^pdk-periph]
-* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z.**[^skw-01]
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
   Strength: strong for existence; which track serves the i-line tools
   is not public.
 * **Metrology — AMAT Verity/VeraSEM CD-SEM; KLA 5200/5300/Archer

@@ -113,7 +113,7 @@ An industry-generic drain-extension well lithography for a 200 mm,
 
 * **ASML i-line stepper / scanner**.[^skw-01] Strength: **strong** for
   existence; assignment is an **inference** from the coarse geometry.
-* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z**.[^skw-01] Strength:
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01] Strength:
   strong for existence.
 * **Overlay — KLA 5200/5300/Archer**.[^skw-01] Strength: strong.
 
