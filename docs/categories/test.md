@@ -87,7 +87,11 @@ current–voltage and capacitance–voltage sweeps whose headers give the
 biases, compliance and instrument channels but no temperature, date or
 wafer; {ref}`HPETEST <step-171>` sets thresholds, currents and resistances we
 extracted from them beside the PDK's e-test
-nominals.[^raw-data-hv-mosfets][^raw-data-lv-mosfets]
+nominals.[^raw-data-hv-mosfets][^raw-data-lv-mosfets] Measurements of
+the tile's passive devices, varactors and bipolar transistors are also
+published as IC-CAP files (resistor, diode and bipolar I–V; MiM and
+varactor C–V), which likewise carry no temperature, date or wafer
+information.[^raw-data-passives]
 
 ### Sheet resistance and van der Pauw
 
@@ -203,9 +207,10 @@ device.
 * SkyWater PDK documentation — the device models and corners that
   e-test checks a wafer against.[^pdk-01]
 * Google's SKY130 raw-data repository — the README, the manufacturing
-  test tile, its 273-module pad documentation and measured transistor
-  and gate-capacitor files, and the open MPW-5 test
-  tile.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open][^raw-data-hv-mosfets][^raw-data-lv-mosfets]
+  test tile, its 273-module pad documentation, measured transistor,
+  gate-capacitor, passive-device, varactor and bipolar files, and the
+  open MPW-5 test
+  tile.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open][^raw-data-hv-mosfets][^raw-data-lv-mosfets][^raw-data-passives]
 
 ### High-level understanding
 
@@ -446,3 +451,11 @@ device.
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>

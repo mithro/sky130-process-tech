@@ -115,7 +115,18 @@ threshold-implant pages ({ref}`LVTNM <step-014>`,
 {ref}`BHI <step-066>`, for deep N-well at {ref}`DNI <step-008>` and for
 the source/drain diffusion extent at {ref}`FILOX <step-011>`; they bear
 on the pages' readings of those steps but give no implant doses or
-depths.[^raw-data-lv-mosfets]
+depths.[^raw-data-lv-mosfets] The files for the tile's resistors, MiM
+capacitors, varactors and bipolar transistors are used in the same
+way. In our extraction from the published measurements the P+ precision
+poly resistors come out at about 310 Ω/sq ({ref}`PRI <step-053>`), the
+P− ones at about 1 940–1 970 Ω/sq ({ref}`UPRI <step-056>`) and the
+first MiM capacitor at 1.87 fF/µm² ({ref}`CAPILD <step-135>`); diffusion
+and well resistors, the second MiM capacitor, the varactors and the NPN
+are quoted at {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>`,
+{ref}`DNM <step-007>`, {ref}`DNI <step-008>`, {ref}`NWI <step-018>`,
+{ref}`PWI <step-027>`, {ref}`CAPILD2 <step-150>`,
+{ref}`HVTPM <step-022>` and {ref}`LVGOX <step-047>`. These files too
+record no temperature, date or wafer.[^raw-data-passives]
 
 ### What the process offers
 
@@ -802,8 +813,9 @@ public.
   licence.[^pdk-10]
 * SKY130 raw-data repository, README and test-tile pad documentation —
   the CoolCAD measurements and the 273 test modules, including the MiM
-  capacitor structures; the transistor and gate-capacitor files from
-  which our extracted values come.[^raw-data-readme][^raw-data-testtile-pads][^raw-data-hv-mosfets][^raw-data-lv-mosfets]
+  capacitor structures; the transistor, gate-capacitor, passive-device,
+  varactor and bipolar files from which our extracted values
+  come.[^raw-data-readme][^raw-data-testtile-pads][^raw-data-hv-mosfets][^raw-data-lv-mosfets][^raw-data-passives]
 * SkyWater PDK, *Criteria & Assumptions* — poly, cap, spacer and pre-LI
   dielectric thicknesses, well and junction depths, implant angles and
   the antenna thicknesses by flow.[^pdk-03]
@@ -1178,3 +1190,11 @@ public.
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>

@@ -235,6 +235,17 @@ drawn width are about two to four times as high, and neither the files
 nor the pad list explain the
 difference.[^raw-data-lv-mosfets][^raw-data-testtile-pads]
 
+Measurements of the tile's passive devices, varactors and bipolar
+transistors are also published as IC-CAP files: resistor, diode and
+bipolar-transistor current–voltage sweeps and MiM-capacitor and
+varactor capacitance–voltage sweeps, whose headers likewise carry no
+temperature, date or wafer information.[^raw-data-passives] The values
+we extract from them are set beside the PDK's e-test limits, where it
+gives any, on the pages for the layers concerned — for example the
+poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
+{ref}`DNI <step-008>` and the MiM capacitor at
+{ref}`CAPILD <step-135>`.
+
 ## Machines typically used
 
 * **Parametric tester**: HP/Agilent 4062UX,[^brltest-4062]
@@ -314,6 +325,9 @@ difference.[^raw-data-lv-mosfets][^raw-data-testtile-pads]
 * The same repository's files for the five 1.8 V transistor types — the
   thresholds and drain currents set here beside the e-test nominals are
   our extraction.[^raw-data-lv-mosfets]
+* The same repository's files for the resistors, MiM capacitors,
+  varactors, diodes and bipolar transistors of the tile — what is
+  measured and how the files are labelled.[^raw-data-passives]
 
 ### High-level understanding
 
@@ -539,3 +553,11 @@ difference.[^raw-data-lv-mosfets][^raw-data-testtile-pads]
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>

@@ -8512,8 +8512,9 @@ over M4" capacitor and measures like the second-level module 4541; one
 sense channel of the module-3379 van der Pauw file stays at about
 0.2 mV. Every value quoted from these files on this site is our
 extraction from the published measurements, with the method stated
-where it is quoted. Used on steps 007, 018, 022, 027, 047, 052, 053,
-055, 056, 082, 086, 135, 138, 150 and 153. Tier: cross-check.
+where it is quoted. Used on steps 007, 008, 018, 022, 023, 024, 027,
+047, 052, 053, 055, 056, 082, 086, 135, 138, 150, 153 and 171, the test
+category page and the overview. Tier: cross-check.
 
 ## 9. Evidence about specific tools at SkyWater
 
