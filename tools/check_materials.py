@@ -14,10 +14,14 @@ For every ``docs/materials/*.md`` page except ``index.md``:
   compared with footnote references removed and white space collapsed;
 * no index row is claimed by two pages, and the rows whose Class cell
   links a page's label are exactly the rows that page claims;
-* the steps paragraph (the first paragraph under that heading that links
-  a step and is not a bullet list) links exactly the union of the steps
-  in the claimed rows' Steps cells ("all except" cells count as the
-  complement over the 171 steps).
+* the steps paragraph (the paragraph after the "Steps:" line) links
+  exactly the union of the steps in the claimed rows' Steps cells ("all
+  except" cells, in any letter case, count as the complement over the
+  171 steps), lists no step twice, lists the steps in ascending order,
+  and gives each link the step's code (from the title of its page) as
+  its text; the bare ``{ref}`step-NNN``` form is accepted too.
+
+Every index Steps cell must start with "all except" or with a step link.
 
 Exit status is non-zero on any problem.  Run with
 ``uv run tools/check_materials.py``; an optional argument names another
@@ -32,6 +36,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MATERIALS = ROOT / "docs" / "materials"
+STEPS = ROOT / "docs" / "steps"
 
 H2 = [
     "What the class is and what it does",
@@ -54,8 +59,12 @@ H3 = {
 STEPS_H3 = "SKY130 steps that use this class"
 TABLE_H2 = "Materials index"
 ROWS_INTRO = "Materials index rows covered:"
+STEPS_INTRO = "Steps:"
 ALL_STEPS = {f"step-{n:03d}" for n in range(1, 172)}
-STEP_RE = re.compile(r"<(step-\d{3})>`")
+# Both {ref}`CODE <step-NNN>` and the bare {ref}`step-NNN` form; group 1 is
+# the link text (None for the bare form), group 2 the label.
+STEP_RE = re.compile(r"\{ref\}`(?:([^`<]*?)\s*<)?(step-\d{3})>?`")
+TITLE_RE = re.compile(r"^# Step (\d{3}) — (.+?):", re.MULTILINE)
 FOOTNOTE_RE = re.compile(r"\[\^[A-Za-z0-9_-]+\]")
 
 
@@ -70,9 +79,27 @@ def sections(text: str, level: str) -> dict[str, str]:
     return {parts[i].strip(): parts[i + 1] for i in range(1, len(parts), 2)}
 
 
+def steps_in(text: str) -> list[str]:
+    return [label for _, label in STEP_RE.findall(text)]
+
+
+def is_all_except(cell: str) -> bool:
+    return cell.strip().lower().startswith("all except")
+
+
 def cell_steps(cell: str) -> set[str]:
-    steps = set(STEP_RE.findall(cell))
-    return ALL_STEPS - steps if cell.strip().startswith("all except") else steps
+    steps = set(steps_in(cell))
+    return ALL_STEPS - steps if is_all_except(cell) else steps
+
+
+def step_codes() -> dict[str, str]:
+    """Map ``step-NNN`` to the code in the title of that step's page."""
+    codes = {}
+    for page in STEPS.glob("[0-9][0-9][0-9]-*.md"):
+        m = TITLE_RE.search(page.read_text())
+        if m:
+            codes[f"step-{m.group(1)}"] = m.group(2).strip()
+    return codes
 
 
 def index_rows(materials: Path) -> dict[str, tuple[str, str]]:
@@ -104,8 +131,38 @@ def claimed_rows(steps_body: str) -> list[str] | None:
     return [norm(b) for b in bullets]
 
 
+def paragraph_after(body: str, intro: str) -> str | None:
+    """The paragraph that follows a line reading exactly ``intro``."""
+    m = re.search(rf"^{re.escape(intro)}[ \t]*\n[ \t]*\n(.+?)(?:\n[ \t]*\n|\Z)",
+                  body, flags=re.MULTILINE | re.DOTALL)
+    return m.group(1) if m else None
+
+
+def check_steps_paragraph(paragraph: str, want: set[str],
+                          codes: dict[str, str]) -> list[str]:
+    problems = []
+    links = STEP_RE.findall(paragraph)
+    steps = [label for _, label in links]
+    got = set(steps)
+    if got != want:
+        problems.append(
+            f"steps: page only {sorted(got - want)}, rows only {sorted(want - got)}"
+        )
+    twice = sorted({s for s in steps if steps.count(s) > 1})
+    if twice:
+        problems.append(f"steps: {twice} listed twice")
+    if steps != sorted(steps):
+        problems.append("steps: not in ascending order")
+    for text, label in links:
+        if text and label in codes and text != codes[label]:
+            problems.append(
+                f"steps: link text {text!r} for {label} is not its code {codes[label]!r}"
+            )
+    return problems
+
+
 def check(page: Path, rows: dict[str, tuple[str, str]],
-          owners: dict[str, list[str]]) -> list[str]:
+          owners: dict[str, list[str]], codes: dict[str, str]) -> list[str]:
     text = page.read_text()
     problems = []
     label = f"material-{page.stem}"
@@ -123,7 +180,7 @@ def check(page: Path, rows: dict[str, tuple[str, str]],
     steps_body = sections(body.get("At SkyWater", ""), "###").get(STEPS_H3, "")
     claimed = claimed_rows(steps_body)
     if not claimed:
-        return problems + [f"no bullet list after '{ROWS_INTRO}'"]
+        return problems + [f"no '* ' bullet list after a '{ROWS_INTRO}' line"]
     want: set[str] = set()
     for row in claimed:
         owners.setdefault(row, []).append(page.name)
@@ -137,24 +194,26 @@ def check(page: Path, rows: dict[str, tuple[str, str]],
         if f"<{label}>" in cls and row not in claimed:
             problems.append(f"index row {row!r} links {label} but is not listed")
 
-    paragraph = next((p for p in steps_body.split("\n\n") if STEP_RE.search(p)
-                      and not re.match(r"\*\s", p.lstrip())), "")
-    got = set(STEP_RE.findall(paragraph))
-    if got != want:
-        problems.append(
-            f"steps: page only {sorted(got - want)}, rows only {sorted(want - got)}"
-        )
-    return problems
+    paragraph = paragraph_after(steps_body, STEPS_INTRO)
+    if paragraph is None:
+        return problems + [f"no paragraph after a '{STEPS_INTRO}' line"]
+    return problems + check_steps_paragraph(paragraph, want, codes)
 
 
 def main() -> int:
     materials = Path(sys.argv[1]) if len(sys.argv) > 1 else MATERIALS
     rows = index_rows(materials)
+    codes = step_codes()
     pages = sorted(p for p in materials.glob("*.md") if p.name != "index.md")
     owners: dict[str, list[str]] = {}
     bad = 0
+    for row, (_, steps_cell) in rows.items():
+        if not (is_all_except(steps_cell) or steps_cell.lstrip().startswith("{ref}`")):
+            bad += 1
+            print(f"index row {row!r}: Steps cell starts with neither 'all except' "
+                  "nor a step link")
     for page in pages:
-        for problem in check(page, rows, owners):
+        for problem in check(page, rows, owners, codes):
             bad += 1
             print(f"{page.name}: {problem}")
     for row, names in sorted(owners.items()):
