@@ -127,7 +127,10 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 
 * **{ref}`PECVD system <machine-pecvd>`**, 200 mm: Applied Materials Producer or Centura
   DxZ (TEOS and silane oxides), Novellus Concept One/Two and
-  Sequel;[^novellus-history] Lam (Trikon) Delta.
+  Sequel;[^novellus-history] the Trikon Delta 201, a "single-chamber
+  production system for producing films, including silicon dioxide or
+  silicon nitride" from Electrotech;[^trikon-10k-1996] Trikon "later merged
+  with Aviza Technology Inc in 2005".[^semitoday-spts-2009]
 * **{ref}`Ellipsometer <machine-film-thickness-metrology>`**, **stress gauge**, **{ref}`unpatterned defect inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
@@ -231,6 +234,13 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
   is not public.
 
 <!-- footnotes -->
+[^trikon-10k-1996]: Trikon Technologies, Inc., *Annual Report on Form
+    10-K for the fiscal year ended December 31, 1996*; copy on
+    GetFilings.com, Wayback Machine capture of 2008-10-12.
+    <http://web.archive.org/web/20081012193325/http://www.getfilings.com/o0000898430-97-001539.html>
+[^semitoday-spts-2009]: Semiconductor Today, *Sumitomo Precision
+    Products completes acquisition of Aviza*, news item, 2009-10-19.
+    <https://www.semiconductor-today.com/news_items/2009/OCT/STS_191009.htm>
 
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
     diagram). <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>

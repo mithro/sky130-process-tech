@@ -10339,8 +10339,9 @@ producing films, including silicon dioxide or silicon nitride", and the
 Planar 200 Flowfill, a "multi-chambered cluster system" in which "The
 plasma CVD films are deposited in one module and the CVD planarizing
 flow layer is deposited in the Flowfill(TM) module", offered against SOG
-and HDP gap fill. Used on the PECVD and HDP-CVD pages. Tier: cross-check
-(regulatory filing).
+and HDP gap fill. Used on the PECVD and HDP-CVD pages.
+Also used on the PSG, NCAPOX, NILD3 and NILD4 step pages.
+Tier: cross-check (regulatory filing).
 
 **SEMITODAY-SPTS-2009** — Semiconductor Today, *Sumitomo Precision
 Products completes acquisition of Aviza*, news item, 2009-10-19.
@@ -10349,7 +10350,9 @@ The lineage of Newport-based Electrotech "(founded in 1968)", bought in
 1996 by Plasma & Materials Technologies, which became Trikon
 Technologies; "Trikon later merged with Aviza Technology Inc in 2005",
 and SPP's 2009 purchase of Aviza's assets to form SPP Process Technology
-Systems (SPTS). Used on the PECVD page. Tier: high-level (trade press).
+Systems (SPTS). Used on the PECVD page.
+Also used on the NCAPOX step page.
+Tier: high-level (trade press).
 
 **NOVELLUS-HDP-2001** — Novellus Systems, *Dielectric – HDP Solutions*,
 product page; Wayback Machine capture of 2001-12-02.
