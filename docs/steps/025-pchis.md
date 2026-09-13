@@ -22,7 +22,8 @@ strip").
 The resist is the i-line implant-block resist (roughly 1 µm, inferred on
 the {ref}`HVTPM <step-022>` page). It has received two keV-class channel
 implants at light doses (of order 10¹²–10¹³ cm⁻² each, illustrative;
-{ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`), one of them BF₂. As at
+{ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`), the second of them BF₂ on
+this reference's reading. As at
 {ref}`LVTNIS <step-016>` this is a *light* implant strip: the {term}`crust <implant crust>` is
 thin and the {term}`popping` risk low compared with the high-energy well strips
 ({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`). One detail is

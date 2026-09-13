@@ -201,8 +201,9 @@ crust stage cannot be hurried.
 * The ash recipe (stages, temperatures, gases) and wet sequence are
   not public.
 * Whether the three implants really share one resist, and hence
-  whether this is the strip of the N-well resist, is inferred from
-  the step order.
+  whether this is the strip of the N-well resist, is this reference's
+  reading, following the usual single-mask retrograde-well practice
+  (see {ref}`NWM <step-017>`).
 * How much pad oxide is lost per strip/clean cycle, and whether that
   loss is budgeted against a later sacrificial-oxide step, is unknown
   (see the open question on {ref}`NS19 <step-013>`).

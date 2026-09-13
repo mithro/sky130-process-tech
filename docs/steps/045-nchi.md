@@ -17,7 +17,8 @@
 before the thick oxide is stripped from them at
 {ref}`GOXETCH <step-046>`. This reference describes it as the baseline
 threshold-setting implant of the 1.8 V NMOS (inference from its
-position — under the low-voltage oxide mask, after the well and
+place in the sequence this reference describes — under the low-voltage
+oxide mask, after the well and
 channel module was annealed at {ref}`RTAI <step-034>` — and from the
 PDK's device description below): the p-type
 dose in the top of the channel that gives `nfet_01v8` its threshold.
@@ -209,7 +210,8 @@ fab (SKY130's values are not public):
 ## Open questions
 
 * That `NCHI` is the baseline 1.8 V NMOS threshold implant is an
-  inference from its position and from the PDK's VT-adjust
+  inference from its place in the sequence this reference describes
+  and from the PDK's VT-adjust
   description;[^pdk-07] no public source describes it directly.
 * Species (B or BF₂), energy, dose and tilt are not public.
 * Whether the low-voltage oxide window through which it is implanted
@@ -217,7 +219,7 @@ fab (SKY130's values are not public):
   the dose, is not public.
 * The label "N-channel implant" used in this reference does not say
   which N-channel implant this is; the reading on this page is an
-  inference from its position.
+  inference from its place in the sequence this reference describes.
 
 <!-- footnotes -->
 
