@@ -149,12 +149,12 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 
 ## Resources required
 
-* **TEOS** (liquid, vaporised) and **oxygen**, or **silane** and
+* **{ref}`TEOS <material-precursors>`** (liquid, vaporised) and **{ref}`oxygen <material-process-gases>`**, or **silane** and
   **N₂O** for the silane route;[^wiki-teos][^wiki-pecvd] **helium**,
   **nitrogen** or **argon** as carrier or diluent (typical; the PECVD
   article describes TEOS deposition "in an oxygen or oxygen-argon
   plasma"[^wiki-pecvd]).
-* **NF₃** chamber clean (with argon or oxygen); **helium** backside
+* **{ref}`NF₃ <material-etch-gases>`** chamber clean (with argon or oxygen); **helium** backside
   cooling.[^txt-09]
 * **{ref}`Chamber consumables <material-hardware-consumables>`** — showerheads, heater and liner parts.
 * **{ref}`Monitor wafers <material-substrates>`** (SEMI M8 class)[^semi-m8] for thickness, stress

@@ -140,9 +140,9 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Oxygen, nitrogen, {ref}`forming gas <material-anneal-ambients>` (H₂/N₂)**, possibly **NH₃** (listed
+* **{ref}`Oxygen <material-process-gases>`, nitrogen, {ref}`forming gas <material-anneal-ambients>` (H₂/N₂)**, possibly **{ref}`NH₃ <material-precursors>`** (listed
   for the Iridia) or **water vapour** (not among SkyWater's listed asher
-  gases), for the two-step ash;[^skw-01][^fujimura-1994] **CF₄**, listed
+  gases), for the two-step ash;[^skw-01][^fujimura-1994] **{ref}`CF₄ <material-etch-gases>`**, listed
   on the Iridia and Mattson ashers,[^skw-01] attacks the oxide and would,
   we infer, be omitted here.
 * **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** ({ref}`wet chemicals <material-wet-chemicals>`) for SPM;
