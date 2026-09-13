@@ -1407,7 +1407,7 @@ the etch category page. Tier: high-level.
 **WIKI-EXCIMER** — Wikipedia, *Excimer laser*.
 <https://en.wikipedia.org/wiki/Excimer_laser> Excimer lasers, the KrF
 (248 nm) and ArF (193 nm) sources of DUV steppers. Used on the
-lithography category page. Tier: high-level.
+lithography category page and step 159. Tier: high-level.
 
 **WIKI-FG** — Wikipedia, *Forming gas*.
 <https://en.wikipedia.org/wiki/Forming_gas> The 5 % H₂ in N₂ mixture and
@@ -1964,8 +1964,8 @@ the company's "advanced binary reticles", with the resist pattern
 "Specialty Phase-Shift Masks", states "At 248nm and 193nm wavelengths,
 our embedded attenuated phase-shift masks (EAPSM) rely on a
 wavelength-tuned, 6% transmission MoSiON absorber". The page does not state a reduction ratio.
-Used on the mask index for the mask maker's name and abbreviation for
-an embedded attenuated phase-shift mask. Tier: cross-check (vendor
+Used on the mask index and steps 129, 144 and 159 for the mask maker's
+name and abbreviation for an embedded attenuated phase-shift mask. Tier: cross-check (vendor
 statement).
 
 ### 8.7 Well and channel-implant module sources
@@ -3903,7 +3903,7 @@ A two-step e-beam write for binary masks; its background defines
 "Binary intensity masks (binary masks, chrome-on-glass, BIM)", in which
 "a layer of opaque material, such as chrome, is deposited on a
 transparent substrate material, such as quartz". Used on the mask index
-for the abbreviation for a binary mask. Tier: cross-check.
+and steps 129, 144 and 159 for the abbreviation for a binary mask. Tier: cross-check.
 
 ##### Vendor, regulatory, marketplace and press pages
 
