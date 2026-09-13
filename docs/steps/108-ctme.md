@@ -163,7 +163,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   {term}`TCP` 9100).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** (GaSonics Aura, Mattson Aspen) and **{ref}`wet bench <machine-wet-bench>` or
   single-wafer clean** for post-etch residue.
-* **CD-SEM**, **cross-section SEM**, **e-test** for contact chains.
+* **{ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **cross-section SEM**, **e-test** for contact chains.
 
 ## Machines likely used at SkyWater
 

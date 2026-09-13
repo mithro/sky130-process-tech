@@ -131,7 +131,7 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** — some fabs open thin organic ARCs on relaxed
   layers with a timed, isotropic ash rather than a directional etch
   ({ref}`category-strip`).
-* **Optical emission endpoint** on the etcher; **{term}`CD-SEM`** for the
+* **Optical emission endpoint** on the etcher; **{term}`CD-SEM`** ({ref}`class page <machine-cd-sem-overlay-metrology>`) for the
   post-etch window.
 
 ## Machines likely used at SkyWater
