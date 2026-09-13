@@ -164,7 +164,7 @@ recipe is not public); the shared physics is set out at
   ({ref}`category-etch`); high-density alternatives (AMAT IPS, Lam
   TCP 9100).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** (GaSonics Aura, Mattson Aspen) and **{ref}`wet bench <machine-wet-bench>` or
-  single-wafer clean** for post-etch residue.
+  {ref}`single-wafer clean <machine-single-wafer-spin-processor>`** for post-etch residue.
 * **{ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **cross-section SEM**, **e-test** for via chains.
 
 ## Machines likely used at SkyWater

@@ -162,7 +162,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   ({ref}`category-etch`); high-density alternatives (AMAT IPS, Lam
   {term}`TCP` 9100).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** (GaSonics Aura, Mattson Aspen) and **{ref}`wet bench <machine-wet-bench>` or
-  single-wafer clean** for post-etch residue.
+  {ref}`single-wafer clean <machine-single-wafer-spin-processor>`** for post-etch residue.
 * **{ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **cross-section SEM**, **e-test** for contact chains.
 
 ## Machines likely used at SkyWater
