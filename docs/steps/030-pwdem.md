@@ -95,10 +95,13 @@ nothing about breakdown. Ten 20 µm-wide `nfet_g5v0d16v0` structures with
 a 0.925 µm drawn gate ("L=0.7") have a median resistance of about 470 Ω
 at V_GS = 5 V and V_DS = 0.1 V, against 119 Ω for a 20/0.5 µm
 `nfet_g5v0d10v5`; at V_DS = 2.5 V they carry 62–71 % of their
-V_DS = 5 V current, against 95 % for the 5 V device; and their
-threshold, taken at a constant current of 100 nA × W/L, moves by
-1–6 mV per volt of drain bias against 28 mV/V (our extraction from the
-published measurements).[^raw-data-hv-mosfets] The 16 V PMOS behaves
+V_DS = 5 V current, against 95 % for that device and 96 % for a
+1/1 µm `nfet_g5v0d10v5`, whose 3.2 kΩ at the same bias corresponds to
+about 160 Ω at 20 µm width; their threshold, taken at a constant
+current of 100 nA × W/L, moves by 1–6 mV per volt of drain bias, which
+a 1/1 µm 5 V device (3.9 mV/V) also shows, against 28 mV/V at 0.5 µm,
+so this last difference reflects gate length rather than the drift
+region (our extraction from the published measurements).[^raw-data-hv-mosfets] The 16 V PMOS behaves
 alike (about 725 Ω against 310 Ω at 20 µm width), and the 20 V NMOS and
 PMOS structures of modules 4441 and 4442 carry 60–70 % of their
 V_DS = 5 V current at 2.5 V.[^raw-data-hv-mosfets] The thresholds of the
