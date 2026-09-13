@@ -338,6 +338,7 @@ public beyond the ranges SkyWater lists for its tools.[^skw-01]
 * {ref}`machine-hdp-cvd` — the phosphorus-doped glass.
 * {ref}`material-process-gases` — the nitrogen, helium and hydrogen
   around the implanters.
+* {ref}`material-precursors` — the phosphorus-glass precursors.
 * {ref}`materials-index` — all consumable classes, including abatement.
 
 ## References

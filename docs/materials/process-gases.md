@@ -7,8 +7,10 @@ and hydrogen for oxidation and steam; argon and helium as sputter gas,
 plasma diluent and backside coolant; and a few oxidation additives —
 hydrogen chloride or dichloroethylene for chlorine, nitrous oxide or
 nitric oxide for nitrogen, and water vapour for ashing and corrosion
-passivation. Unlike the toxic hydrides and fluorides of the dopant,
-precursor and etch-gas classes, most of them are inert, oxidising or flammable rather than poisonous, and
+passivation. Unlike the toxic hydrides and fluorides of the
+{ref}`dopant <material-dopant-sources>`, {ref}`precursor
+<material-precursors>` and {ref}`etch <material-etch-gases>` classes,
+most of them are inert, oxidising or flammable rather than poisonous, and
 they are used in far larger volumes. This page describes the class in
 general, lists representative gases and the purity grades they are
 bought to, and then says what SkyWater has published about process gases
@@ -282,9 +284,10 @@ This page covers the rows of the {ref}`materials index <materials-table>`
 listed below by key; the steps are those whose *Resources required* section
 names one of them (the union of the rows' *Steps* cells). Forming gas,
 which the step pages name for ashes and alloys, belongs to the anneal
-ambients row; ammonia belongs to the precursors row, and the argon, xenon
-or hydrogen support gases of the implanters to the ion-source row of the
-dopant sources.
+ambients row; ammonia belongs to the {ref}`precursors
+<material-precursors>` page, and the argon, xenon or hydrogen support
+gases of the implanters to the ion-source row of the
+{ref}`dopant sources <material-dopant-sources>` page.
 
 Materials index rows covered:
 
@@ -419,6 +422,8 @@ not public.
 * {ref}`machine-pvd-cluster-tool` and {ref}`machine-downstream-plasma-asher`
   — argon and nitrogen for sputtering; oxygen, nitrogen and water vapour
   for ashing.
+* {ref}`material-dopant-sources`, {ref}`material-precursors` and
+  {ref}`material-etch-gases` — the toxic and reactive gas classes.
 * {ref}`materials-index` — all consumable classes, including forming
   gas.
 
