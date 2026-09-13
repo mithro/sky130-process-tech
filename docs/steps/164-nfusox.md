@@ -12,8 +12,7 @@
 
 ## What this step is
 
-`NFUSOX` is the first deposition after the last metal etch: a thin,
-blanket, low-temperature oxide laid over the freshly etched metal-5
+`NFUSOX` is the first deposition after the last metal etch: on our reading (see below), a thin, blanket, low-temperature oxide laid over the freshly etched metal-5
 lines, pads and the {ref}`NCAPOX6 <step-158>` oxide between them. It
 opens the {term}`passivation` module — the insulating "glass" that seals the
 finished circuit — which continues with the silicon nitride of

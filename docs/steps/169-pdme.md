@@ -27,8 +27,7 @@ diagram draws a "glass cut" through "TOPNIT K=7.5" (0.54 µm over the
 metal) and "TOPOX K=3.9" (0.09 µm) down to `metal5`,[^pdk-04] while
 Cypress reports for other processes at the same fab give 7000–9000 Å of
 nitride over 1000 Å of TEOS oxide.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
-Under the oxide lies the top of the metal-5 stack. No public source
-gives its films; this reference reads it, with the lower levels, as a
+Under the oxide lies the top of the metal-5 stack. The PDK does not give its films; this reference reads it, with the lower levels, as a
 TiW-capped Al–Cu stack ({ref}`WTIAL5 <step-161>`; inference from the
 300 Å TiW caps of the S8 stacks in a Cypress report[^cyp-qtp-113005]
 and from Cypress's 2014 report, which moved the lower levels to Ti/TiN
@@ -235,7 +234,8 @@ an aluminium top metal (SKY130's recipe is not public):
   public.
 * The etch chemistry, tool, endpoint and any fluorine-removal treatment
   are not public.
-* The passivation thickness to be etched is uncertain: 0.63 µm on the PDK
+* The passivation thickness to be etched is uncertain: 0.63 µm (0.54
+  µm TOPNIT plus 0.09 µm TOPOX, our arithmetic) on the PDK
   diagram[^pdk-04] against about 0.7–1.0 µm in the Cypress reports for
   other processes.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
 * Whether the same etch opens laser-fuse windows (see

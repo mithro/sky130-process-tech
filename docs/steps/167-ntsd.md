@@ -13,7 +13,7 @@
 ## What this step is
 
 `NTSD` deposits the silicon nitride that is the outer skin of the die:
-a blanket plasma nitride laid over the thin passivation oxide of
+a blanket nitride — on our reading a plasma (PECVD) nitride — laid over the thin passivation oxide of
 {ref}`NFUSOX <step-164>`, over the metal-5 lines and pads beneath it,
 and — on our reading of {ref}`NSM <step-165>` and
 {ref}`NSME <step-166>` — into the ring-shaped opening just etched along
