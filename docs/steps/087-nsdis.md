@@ -127,7 +127,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   describes the downstream class.[^snf-strip]
 * **{ref}`Batch wet bench <machine-wet-bench>`** (Akrion, DNS/SCREEN, SCP) or
   **{ref}`spray processor <machine-wet-bench>`** (FSI Mercury) with SPM, SC-1 and SC-2.
-* **Patterned-wafer inspection** (KLA-Tencor AIT class).
+* **{ref}`Patterned-wafer inspection <machine-defect-inspection>`** (KLA-Tencor AIT class).
 
 ## Machines likely used at SkyWater
 

@@ -172,7 +172,7 @@ fab (SKY130's recipe is not public):
   VIISta 80 (single-wafer, described by Mezack et al.[^mezack-2000]);
   Current gives the production-implanter overview[^current-1996] and
   the longer view of implantation for advanced devices.[^current-2017]
-* **Four-point probe**; **particle inspection**.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`**; **{ref}`particle inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 

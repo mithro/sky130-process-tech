@@ -161,7 +161,7 @@ fab (SKY130's recipe is not public):
   NV-GSD (batch), Applied Materials xR and Quantum, Varian VIISta 80
   (single-wafer[^mezack-2000]); Current's overviews of production
   implanters.[^current-1996][^current-2017]
-* **Four-point probe**; **particle inspection**.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`**; **{ref}`particle inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 

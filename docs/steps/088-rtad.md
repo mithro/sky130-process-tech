@@ -156,7 +156,7 @@ An industry-generic source/drain activation anneal for a 200 mm,
   8108/8800 series, Applied Materials RTP Centura (the lamp-heated
   chamber of Gronet and Gibbons[^pat-rtp-amat]), Steag/Mattson RTP,
   Kokusai and TEL RTP (category page).
-* **Four-point probe** for sheet resistance; **thermocouple wafers**
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`** for sheet resistance; **thermocouple wafers**
   for calibration.
 
 ## Machines likely used at SkyWater

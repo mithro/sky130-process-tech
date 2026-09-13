@@ -128,8 +128,7 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 * **{ref}`PECVD system <machine-pecvd>`**, 200 mm: Applied Materials Producer or Centura
   DxZ (TEOS and silane oxides), Novellus Concept One/Two and
   Sequel;[^novellus-history] Lam (Trikon) Delta.
-* **Ellipsometer**, **stress gauge**, **unpatterned defect
-  inspection**.
+* **{ref}`Ellipsometer <machine-film-thickness-metrology>`**, **stress gauge**, **{ref}`unpatterned defect inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 

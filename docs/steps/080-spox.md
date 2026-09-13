@@ -133,7 +133,7 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
   Concept Two/Sequel) with TEOS or silane oxide.
 * **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** (Aviza/SVG, TEL, ASM, Kokusai) with
   TEOS or SiH₄/O₂ for the batch alternative.
-* **Spectroscopic ellipsometer**.
+* **{ref}`Spectroscopic ellipsometer <machine-film-thickness-metrology>`**.
 
 ## Machines likely used at SkyWater
 
