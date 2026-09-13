@@ -466,7 +466,7 @@ can be made consistent later; no step page has been changed here.
   implanter" ({ref}`DNI <step-008>`) or "Axcelis GSD
   high-current/high-energy implanter" ({ref}`NWI <step-018>`), the
   second "Axcelis GSD high-dose implanter" ({ref}`P1I <step-050>`,
-  {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>`), and both together
+  {ref}`PRI <step-053>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>`), and both together
   "Axcelis GSD high-current implanters" ({ref}`ASTI <step-065>`,
   {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`,
   {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`). Five pages write
