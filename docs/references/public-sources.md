@@ -33,8 +33,7 @@ sources the writers of the step and category pages introduced; a
 :::{note}
 Nothing in this inventory comes from private material. Where a public
 source could not be retrieved (dead link, paywall, bot-blocking), it is
-listed under *Unverified leads* at the end of the relevant section and
-is **not** counted as a verified source.
+not cited.
 :::
 
 ## 1. SkyWater open PDK documentation
@@ -643,24 +642,8 @@ for the Minnesota fab. Tier: high-level.
 listings; the portal renders client-side and individual postings could
 not be captured. Tier: high-level.
 
-### Unverified leads (job boards)
-
-Search-engine snippets of SkyWater Technology Foundry postings on
-ZipRecruiter, Indeed and Glassdoor (2023–2026) repeatedly quote
-equipment lists such as: "LAM Alliance, LAM 2300 Exelan, TEL Unity
-M/ME, AMAT Centura DPS Metal/Poly/SuperE, LAM DaVinci wet etch sinks";
-"AMAT Endura/Centura PVD and HTF systems, Producer, SVG/Thermco
-horizontal diffusion furnaces/SEMY, Aviza Vertical Furnace, Novellus
-Concept One, and FSI Mercury"; "AMAT Centura 5200/5500, Producer, Mirra
-Mesa"; "AMAT Mirra and Mirra Mesa"; "Axcelis GSD300E Ion Implanter and
-Axcelis Purion Ion Implanters". The pages that carry them
-(<https://www.ziprecruiter.com/co/Skywater-Technology-Foundry/Jobs/-in-Bloomington,MN>
-and Glassdoor's SkyWater listings) returned HTTP 403 or a geographic
-redirect to every automated fetch attempted on 2026-08-30, so the
-quotations could not be confirmed against the page. They are
-consistent with SKW-01 (Lam, AMAT, Novellus, Aviza, FSI, Axcelis GSD,
-Mirra all appear there) but should be treated as **weak** evidence
-until a copy of the posting is captured.
+ZipRecruiter and Glassdoor listing pages refused automated retrieval on
+2026-08-30; nothing from them is used in this reference.
 
 ## 5. Cypress Semiconductor, "Fab 4" and the S8 process
 
@@ -7450,8 +7433,8 @@ against it. Used on steps 140, 141, 143 and 145. Tier: deep dive.
 
 Strength scale: **strong** = a SkyWater or tool-vendor statement;
 **medium** = a retrievable SkyWater job posting or an interview with a
-named SkyWater employee; **weak** = indirect (search-engine snippet of
-a posting that could not be retrieved, or an inference). Tools that
+named SkyWater employee; **weak** = indirect (an inference from public
+evidence). Tools that
 post-date the original Cypress S8 flow are marked † — they show what is
 on the floor today, not necessarily what built the first S8 wafers.
 
@@ -7471,17 +7454,13 @@ on the floor today, not necessarily what built the first S8 wafers.
 | ALD † | (vendor not named) AlN, TiN, SiO₂, Al₂O₃, HfO₂, TiO₂, ZrO₂ | SKW-01 | strong (capability), no vendor |
 | Metal etch | Lam 9600 (Al, TiW, TiN, Pt); Lam 2300 Versys (Al, TiW, TiN, Nb, Pt) | SKW-01 | strong |
 | Poly/oxide/trench etch | AMAT DPS II (HBr/Cl₂/NF₃/CF₄/CHF₃/O₂ — gate, trench, W/WN); Lam 9400 TCP (poly/nitride); Lam 4400 | SKW-01 | strong |
-| Etch (other) | Lam Alliance; Lam 2300 Exelan; TEL Unity M/ME; AMAT Centura DPS "Metal/Poly/SuperE" | job-board snippets only (§4 leads) | weak |
 | Resist strip | Gasonics PEP (remote microwave); Iridia RF microwave; Mattson Aspen 2 | SKW-01 | strong |
 | Wet clean / wet etch | Akrion Gamma batch bench (H₂SO₄, SC1, H₃PO₄, BOE); DNS wet bench (HF/SC1/SC2); FSI Mercury rotational; SEZ 223 and Lam DaVinci single-wafer (HF, DSP) | SKW-01; SKW-07 ("SEZ etcher tool") | strong |
 | Batch solvent | Rotational EKC265/EKC270 solvent strip | SKW-01 | strong |
-| Furnaces | Aviza (vertical per unverified job snippet only) — wet/dry oxidation to 1150 °C, LPCVD nitride/poly/oxide/ONO, BTBAS nitride, forming-gas alloy | SKW-01 ("Furnaces are all made by Aviza") | strong |
-| Furnaces (legacy) | SVG/Thermco horizontal furnaces | job-board snippet only | weak |
+| Furnaces | Aviza — wet/dry oxidation to 1150 °C, LPCVD nitride/poly/oxide/ONO, BTBAS nitride, forming-gas alloy | SKW-01 ("Furnaces are all made by Aviza") | strong |
 | RTA | AG Associates Heatpulse 8808 (NH₃, Ar, N₂, O₂, to 1200 °C) | SKW-01 | strong |
 | Ion implant | Axcelis 8250 medium current; Axcelis GSD high current/high energy (10–3000 keV); Axcelis GSD high dose (2–180 keV) | SKW-01; SKW-07 (implanter maintenance) | strong |
-| Ion implant | Axcelis GSD300E; Axcelis Purion † | job-board snippet only | weak |
 | CMP | AMAT Mirra (oxide, nitride, W, Al, Cu, Nb) | SKW-01 | strong |
-| CMP | AMAT Mirra Mesa | job-board snippet only | weak |
 | Scribe | Lumonics Superclean laser scribe | SKW-01 | strong |
 | Parametric / sort test | HP 4062UX; Advantest T5365P; Verigy V3308, V4108, 93000; Credence Duo, LT; Camtek Falcon; Qualitau reliability | SKW-01 | strong |
 | Physical analysis | FEI dual-beam FIB/SEM; Hitachi S-4800 SEM; SELA EM2 cleaver; Oxford PlasmaLab RIE (deprocessing); Allied TechPrep polisher | SKW-01 | strong |
@@ -7510,7 +7489,7 @@ evidence that they are not (or no longer) on the floor.
   publicly and must be inferred from feature size (ITRS-03).
 * **Tool models behind generic entries.** SKW-01 names vendors but not
   models for PVD ("AMAT PVD Metal") and PECVD ("Producer", "C1", "C2");
-  the job-board snippets that would pin these down are unverified.
+  no public source found gives the models.
 * **Historical tool set.** Every tool list is post-2017; the 2000s
   Cypress tool set that first ran S8 is documented only indirectly
   (CYP-04: "New tools and equipment have been installed several
