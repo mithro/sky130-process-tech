@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 166 of 171 |
+| **Step number** | 166 of 171[^steps-sheet] |
 | **Step code** | `NSME` |
 | **Category** | {ref}`Etch <category-etch>` |
 | **Phase** | BEOL — passivation, pads, alloy, test |
@@ -316,3 +316,6 @@ public):
     and devices made*, US 6,300,252 B1, filed 1999-10-01, granted
     2001-10-09.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6300252>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
