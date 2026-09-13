@@ -82,10 +82,11 @@ effects";[^lyding-1996] Kizilyalli et al. applied deuterium anneals to
 multilevel metal/dielectric MOS systems in manufacturing;[^kizilyalli-1998]
 and a University of Illinois patent gives an example anneal "in an
 ambient of 10% deuterium in nitrogen".[^pat-deuterium-uiuc] Hydrogen has
-side-effects that bound the recipe: it deactivates boron acceptors in
-silicon,[^sah-1983][^pankove-1983] and in nitride charge-trapping
-memories a high-temperature hydrogen anneal after nitridation changed
-(there, improved) the retention of MNOS transistors.[^maes-1981]
+other effects that bear on the recipe: it deactivates boron acceptors in
+silicon,[^sah-1983][^pankove-1983] and it affects nitride
+charge-trapping memories, whose retention a high-temperature
+post-nitridation hydrogen anneal improved in MNOS
+transistors.[^maes-1981]
 Plasma-deposited nitride
 itself carries hydrogen, some 20–25 at.% in films deposited at
 330–350 °C, which Lanford and Rand measured.[^lanford-1978]
