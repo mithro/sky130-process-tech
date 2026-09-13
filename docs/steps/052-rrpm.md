@@ -150,7 +150,7 @@ mostly chrome. Neither tone nor resist is stated publicly.
   suppliers named in SkyWater's 2021 S-1 (Dow, JSR, Tokyo Ohka
   Kogyo).[^sec-01]
 * **HMDS**, **edge-bead remover**, **developer** (TMAH[^wiki-tmah]),
-  {ref}`DI water <material-ultrapure-water>`, nitrogen.
+  {ref}`DI water <material-ultrapure-water>`, {ref}`nitrogen <material-process-gases>`.
 * **The RRPM reticle** — chrome-on-quartz,[^wiki-mask] relaxed
   geometry; the second of the two reticles derived from `rpm`.
 

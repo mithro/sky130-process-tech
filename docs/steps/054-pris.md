@@ -106,9 +106,9 @@ chemical oxide is thin and will be buried under the
 
 ## Resources required
 
-* **Oxygen, nitrogen, {ref}`forming gas <material-anneal-ambients>` (H₂/N₂)**, possibly **NH₃** (listed
+* **{ref}`Oxygen <material-process-gases>`, nitrogen, {ref}`forming gas <material-anneal-ambients>` (H₂/N₂)**, possibly **{ref}`NH₃ <material-precursors>`** (listed
   for the Iridia) or **water vapour** (not among SkyWater's listed asher
-  gases), for the ash;[^skw-01][^fujimura-1991] **CF₄**, listed on the
+  gases), for the ash;[^skw-01][^fujimura-1991] **{ref}`CF₄ <material-etch-gases>`**, listed on the
   Iridia and Mattson ashers,[^skw-01] would etch the exposed silicon
   film and would, we infer, be omitted here.
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide** ({ref}`wet chemicals <material-wet-chemicals>`) for
