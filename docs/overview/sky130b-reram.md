@@ -28,7 +28,7 @@ mask. What differs is that the ReRAM stack sits on a via rather than on
 a metal plate, and needs a second via level above it.
 
 This module is not part of the 171-step list used in this reference
-({ref}`steps-index`), which contains no steps for it. This page
+({ref}`steps-index`), which contains no steps for it.[^steps-sheet] This page
 therefore describes the tier as a module: where it sits in the stack,
 what the public PDK files say about its layers and masks, how a tier of
 this kind is typically built, and what it changes for the rest of the
@@ -149,11 +149,12 @@ reads a layer named `RERAM` as "calma 201 20".[^opdks-magic-tech] We
 read 201:20 as the drawn `r1c` layer (inference: it is the only layer in
 the cell that the base PDK does not define, and its 0.32 µm × 0.32 µm
 area equals the Verilog-A model's default `area_ox` of 0.1024e-12
-m²[^reram-cell]). A public spreadsheet of S8/SKY130 process steps and
-masks names the tier's two masks "RRAM Mask, RRM" (for `r1c`) and "Via 1
-top, RRAM tier, VIMC" (for `r1v`), marks neither as used in SKY130, and
-marks RRM as existing for the runs it labels MPW-1, -2, -3, -4, -7 and
--8 and VIMC for MPW-1, -2, -3, -4, -5, -7 and -8.[^steps-sheet]
+m²[^reram-cell]). The *S8 / SKY130 Process Steps* sheet, from which the
+step list used in this reference is taken, names the tier's two masks
+"RRAM Mask, RRM" (for `r1c`) and "Via 1 top, RRAM tier, VIMC" (for
+`r1v`), marks neither as used in SKY130, and marks RRM as existing for
+the runs it labels MPW-1, -2, -3, -4, -7 and -8 and VIMC for MPW-1, -2,
+-3, -4, -5, -7 and -8.[^steps-sheet]
 
 Magic models the cell in its own way: under `#ifdef RERAM` a `reram`
 contact type joins metal 1 to metal 2, is written out as `via` squares
@@ -282,7 +283,7 @@ vias and adds two mask layers:[^reram-ug][^reram-layers]
 
 * **`r1c`** — the RRAM cell (bottom electrode, oxide and top electrode),
   printed after the lower vias are complete; listed as "RRAM Mask, RRM"
-  in the public mask spreadsheet.[^steps-sheet]
+  in the process-steps sheet's mask table.[^steps-sheet]
 * **`r1v`** — the upper vias, over cells and over bypasses, printed
   after the RRAM encapsulation; listed as "Via 1 top, RRAM tier,
   VIMC".[^steps-sheet]
@@ -488,8 +489,9 @@ the tier needs:[^skw-01]
 * SkyWater PDK, *Masks*, *Layers Reference*, *Periphery rules* and
   *Parasitic Layout Extraction* — `cviam`, `via`, via
   enclosures and via resistance.[^pdk-05][^pdk-06][^pdk-periph][^pdk-08]
-* Public process-steps spreadsheet, "Run Mask IDs" — the RRM and VIMC
-  masks and the runs for which they exist.[^steps-sheet]
+* *S8 / SKY130 Process Steps* sheet — the step list, and in "Run Mask
+  IDs" the RRM and VIMC masks and the runs for which they
+  exist.[^steps-sheet]
 * SkyWater, *Facilities & Capabilities* — ALD HfO₂ and TiN, PVD TiN,
   TiN metal etch.[^skw-01]
 * SkyWater, Weebit Nano ReRAM press release — a ReRAM bitcell "between
@@ -639,9 +641,10 @@ the tier needs:[^skw-01]
     <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
-[^steps-sheet]: *[external] S8 / SKY130 Process Steps* (public Google
-    Sheet), "Run Mask IDs" tab, rows "RRAM Mask, RRM" and "Via 1 top,
-    RRAM tier, VIMC", accessed 2026-09-13.
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tabs "Sheet1" (step number, code and description) and "Run Mask IDs"
+    (rows "RRAM Mask, RRM" and "Via 1 top, RRAM tier, VIMC"), retrieved
+    2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
