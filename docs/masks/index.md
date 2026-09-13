@@ -557,13 +557,13 @@ show the following.[^mask-renders][^steps-sheet]
   any run, although the sheet records an `RRPM` plate on all eight.
 * **The ReRAM layer.** The site renders `RRM` from the layer 201:20 and
   `VIMC` as `via` AND 201:20. Both have shapes on only three runs, on
-  the same dies (frame and project name):
+  the same dies (frames):
 
   | Run | Dies with shapes on `RRM` and `VIMC` |
   |-----|--------------------------------------|
-  | MPW-4 | B2 `4t1r_testchip`; D2 `rram_testchip` |
-  | MPW-7 | B3 `nanofabrication_project_using_openfasoc`; B7 `reram_crossbar`; D1 `mixed_signal_circuits-jun13`; D7 `reram-controller-mpw7_v2`; E2 `in_memory_computing_rram`; E3 `rram_imc_v2_flat` |
-  | MPW-8 | B1 `nanofabrication_project_using_openfasoc_mpw8`; B3 `reram_crossbar_rerun`; B7 `reram_module_mpw8`; D5 `mixed_signal_circuits_mpw8_dec14`; E5 `mega4_reram` |
+  | MPW-4 | B2, D2 |
+  | MPW-7 | B3, B7, D1, D7, E2, E3 |
+  | MPW-8 | B1, B3, B7, D5, E5 |
 
   For MPW-4 the renders and the sheet's plates belong to different
   reticle sets ({ref}`masks-mpw-reticle-sets`).
