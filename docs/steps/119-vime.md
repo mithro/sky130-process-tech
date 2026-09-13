@@ -139,7 +139,7 @@ recipe is not public); the shared physics is set out at
 5. **Strip and clean.** Oxygen or O₂/N₂ downstream {term}`ash` —
    GaSonics, Iridia or Mattson class in SkyWater's list[^skw-01] —
    then a solvent or semi-aqueous clean (the "EKS265, EKC270
-   solvents" of SkyWater's wet-bench list,[^skw-01] EKC265/270-class;
+   solvents" of SkyWater's wet-bench list,[^skw-01] EKC265/EKC270-class;
    SkyWater writes "EKS265") to remove the
    fluorocarbon polymer and the titanium- and tungsten-fluoride
    residue from the via floor without attacking the TiW or the
@@ -186,7 +186,7 @@ recipe is not public); the shared physics is set out at
   CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]).
 * **Helium** for backside cooling; **NF₃** or O₂-based chamber clean.
 * **O₂/N₂** (and forming gas or CF₄) for the ash;[^skw-01] **amine or
-  semi-aqueous solvent** (EKC265/270 class) and DI water for the
+  semi-aqueous solvent** (EKC265/EKC270 class) and DI water for the
   post-etch clean.[^skw-01]
 * **Chamber consumables** (liners, focus and edge rings, electrodes);
   **monitor wafers** with blanket oxide and TiW for rate and
