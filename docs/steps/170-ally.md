@@ -25,7 +25,9 @@ page[^txt-01][^wiki-fg]). SkyWater lists "H2 and forming gas alloy" among
 the processes of its furnaces, which "are all made by Aviza",[^skw-01]
 but does not say at which points of a flow the process is used. The
 step list used in this reference does not give conditions; we read
-`ALLY` as the conventional final forming-gas anneal (inference), and the
+`ALLY` as the conventional final forming-gas anneal (inference from its
+position after the last plasma step and the pad opening, and from the
+furnace alloy process SkyWater lists[^skw-01]), and the
 earlier {ref}`ALLY1 <step-096>` as a second, pre-metal use of the same
 kind of anneal.
 
