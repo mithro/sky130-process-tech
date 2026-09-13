@@ -174,14 +174,14 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Dilute HF** (or **BOE**; {ref}`wet chemicals <material-wet-chemicals>`),[^wiki-hf][^wiki-boe] **DI water**,
+* **Dilute HF** (or **BOE**; {ref}`wet chemicals <material-wet-chemicals>`),[^wiki-hf][^wiki-boe] **{ref}`DI water <material-ultrapure-water>`**,
   **IPA** or nitrogen for drying.
 * **SC-1 chemicals** (NH₄OH, H₂O₂)[^wiki-rca] and/or a
   **post-etch-residue remover** (EKC265/EKC270 class;
   SkyWater lists "EKS265, EKC270 solvents"[^skw-01]).
-* **O₂, N₂, H₂/N₂** for the strip;[^skw-01] **SPM** (H₂SO₄/H₂O₂)
+* **O₂, N₂, {ref}`H₂/N₂ <material-anneal-ambients>`** for the strip;[^skw-01] **SPM** (H₂SO₄/H₂O₂)
   if a wet strip is used.[^wiki-piranha]
-* **Etch-rate monitor wafers** with thermal oxide.[^semi-m8]
+* **Etch-rate {ref}`monitor wafers <material-substrates>`** with thermal oxide.[^semi-m8]
 * Chemical suppliers named in SkyWater's 2021 S-1: KMG
   Chemicals.[^sec-01]
 

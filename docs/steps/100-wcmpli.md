@@ -164,15 +164,15 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Tungsten slurry** — alumina or silica with H₂O₂ ({ref}`wet chemicals <material-wet-chemicals>`), Fe(NO₃)₃ or
+* **{ref}`Tungsten slurry <material-cmp-consumables>`** — alumina or silica with H₂O₂ ({ref}`wet chemicals <material-wet-chemicals>`), Fe(NO₃)₃ or
   KIO₃ oxidiser (typical industry chemistry[^rev-02][^stein-1999]).
 * **Polishing pads** (stacked polyurethane, IC1000/Suba IV class), **diamond
   conditioners**, **carrier films, membranes and retaining
   rings**.[^steigerwald-1997]
-* **DI water** in quantity; **dilute NH₄OH** or **TMAH**,[^jolley-1998]
+* **{ref}`DI water <material-ultrapure-water>`** in quantity; **dilute NH₄OH** or **TMAH**,[^jolley-1998]
   possibly **citric acid** or **dilute HF** (category page), for the
   post-CMP clean; **PVA brushes**.
-* **Monitor wafers** with blanket tungsten and oxide for rate and
+* **{ref}`Monitor wafers <material-substrates>`** with blanket tungsten and oxide for rate and
   selectivity checks.[^semi-m8]
 * Chemical suppliers named in SkyWater's 2021 S-1: KMG
   Chemicals.[^sec-01]

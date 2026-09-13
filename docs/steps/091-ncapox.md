@@ -156,8 +156,8 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
   plasma"[^wiki-pecvd]).
 * **NF₃** chamber clean (with argon or oxygen); **helium** backside
   cooling.[^txt-09]
-* **Chamber consumables** — showerheads, heater and liner parts.
-* **Monitor wafers** (SEMI M8 class)[^semi-m8] for thickness, stress
+* **{ref}`Chamber consumables <material-hardware-consumables>`** — showerheads, heater and liner parts.
+* **{ref}`Monitor wafers <material-substrates>`** (SEMI M8 class)[^semi-m8] for thickness, stress
   and particle control.
 * Gas suppliers named in SkyWater's 2021 S-1: Air Products,
   Praxair.[^sec-01]
