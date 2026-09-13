@@ -457,6 +457,8 @@ includes tools added after the S8 flow was developed (copper plating,
 niobium, 193 nm scanners, ALD).
 Also used on the medium-current, high-current and high-energy implanter
 pages.
+Also used on the vertical-furnace oxidation, LPCVD and anneal pages and
+the rapid thermal processor and plasma nitridation chamber pages.
 Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
@@ -946,7 +948,9 @@ filed 2008-05-22, granted 2012-01-10.
 <https://patents.google.com/patent/US8093128B2/en>. Order of the SONOS
 module relative to the logic well/channel implants, gate oxidation at
 "800° C. and 900° C.", nitridation at "900-1100° C.", blocking oxide
-3.0–5.0 nm. Tier: deep dive.
+3.0–5.0 nm.
+Also used on the vertical-furnace oxidation and LPCVD pages.
+Tier: deep dive.
 
 **PAT-04** — US 8,796,098 B1, *"Embedded SONOS based memory cells"*,
 K. Ramkumar, I. Kouznetsov, V. Prabhakar (Cypress); filed 2013-09-04,
@@ -1138,6 +1142,8 @@ implantation, thin films, etch and back-end with models; the standard
 graduate text for this era.
 Also used on the medium-current, high-current and high-energy implanter
 pages.
+Also used on the vertical-furnace oxidation, LPCVD and anneal pages and
+the rapid thermal processor and plasma nitridation chamber pages.
 Tier: high-level.
 
 **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
@@ -1147,6 +1153,7 @@ ISBN 978-0-9616721-6-4.
 cleaning, oxidation, LPCVD/PECVD, sputtering, lithography, plasma
 etch, implantation).
 Also used on the high-energy implanter page.
+Also used on the vertical-furnace LPCVD and anneal pages.
 Tier: high-level.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
@@ -1164,7 +1171,10 @@ Deep-Submicron Process Technology*, Lattice Press, 2002,
 ISBN 978-0-9616721-7-1.
 <https://openlibrary.org/isbn/9780961672171>. STI, CMP, W plugs, salicide,
 DUV lithography, RTP — written for exactly the 0.25–0.13 µm
-generations. Tier: high-level.
+generations.
+Also used on the rapid thermal processor and plasma nitridation chamber
+pages.
+Tier: high-level.
 
 **TXT-06** — S. M. Sze (ed.), *VLSI Technology*, 2nd ed., McGraw-Hill,
 1988, ISBN 978-0-07-062735-2.
@@ -1175,6 +1185,7 @@ Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
 <https://openlibrary.org/isbn/9780130815200>. Fab-floor view of each
 tool class, written around a 200 mm, 0.18 µm-era fab.
 Also used on the medium-current and high-current implanter pages.
+Also used on the vertical-furnace oxidation page.
 Tier: high-level.
 
 **TXT-08** — H. Xiao, *Introduction to Semiconductor Manufacturing
@@ -1188,11 +1199,15 @@ ISBN 978-1-57444-675-3.
 <https://openlibrary.org/isbn/9781574446753>. Chapter-per-process
 reference with equipment detail.
 Also used on the medium-current implanter page.
+Also used on the vertical-furnace oxidation page and the rapid thermal
+processor page.
 Tier: high-level.
 
 **TXT-10** — R. B. Fair (ed.), *Rapid Thermal Processing: Science and
 Technology*, Academic Press, 1993, ISBN 978-0-12-247690-7.
-<https://openlibrary.org/isbn/9780122476907>. Tier: deep dive.
+<https://openlibrary.org/isbn/9780122476907>.
+Also used on the rapid thermal processor page.
+Tier: deep dive.
 
 ### 8.2 ITRS roadmaps (2001 and 2003 editions)
 
@@ -1407,8 +1422,9 @@ tolerates oxide defects. Used on step 040. Tier: high-level.
 
 **WIKI-CVD** — Wikipedia, *Chemical vapor deposition*.
 <https://en.wikipedia.org/wiki/Chemical_vapor_deposition> LPCVD in
-context. Used on step 003 and the deposition category page. Tier:
-high-level.
+context. Used on step 003 and the deposition category page.
+Also used on the vertical-furnace LPCVD page.
+Tier: high-level.
 
 **WIKI-CZ** — Wikipedia, *Czochralski method*.
 <https://en.wikipedia.org/wiki/Czochralski_method> Czochralski crystal
@@ -1460,8 +1476,9 @@ lithography category page and step 159. Tier: high-level.
 
 **WIKI-FG** — Wikipedia, *Forming gas*.
 <https://en.wikipedia.org/wiki/Forming_gas> The 5 % H₂ in N₂ mixture and
-interface passivation. Used on the anneal category page. Tier:
-high-level.
+interface passivation. Used on the anneal category page.
+Also used on the vertical-furnace anneal page.
+Tier: high-level.
 
 **WIKI-FICK** — Wikipedia, *Fick's laws of diffusion*.
 <https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion> Fick's laws,
@@ -1472,7 +1489,9 @@ category page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Diffusion_furnace> Furnace anneals being
 supplanted by RTA. The label keeps the page's *Furnace anneal* wording;
 the article is titled *Diffusion furnace*. Used on step 034 and the
-anneal category page. Tier: high-level.
+anneal category page.
+Also used on the vertical-furnace anneal page.
+Tier: high-level.
 
 **WIKI-FZ** — Wikipedia, *Float-zone silicon*.
 <https://en.wikipedia.org/wiki/Float-zone_silicon> Float-zone silicon
@@ -1668,7 +1687,9 @@ high-level.
 **WIKI-RTP** — Wikipedia, *Rapid thermal processing*.
 <https://en.wikipedia.org/wiki/Rapid_thermal_processing> Lamp heating,
 seconds above 1000 °C, in-situ pyrometry. Used on step 034 and the
-anneal and oxidation category pages. Tier: high-level.
+anneal and oxidation category pages.
+Also used on the rapid thermal processor page.
+Tier: high-level.
 
 **WIKI-SALICIDE** — Wikipedia, *Salicide*.
 <https://en.wikipedia.org/wiki/Salicide> The two-anneal self-aligned
@@ -1695,7 +1716,9 @@ maker Siltronic. Used on the substrate category page. Tier: high-level.
 **WIKI-SIN** — Wikipedia, *Silicon nitride*.
 <https://en.wikipedia.org/wiki/Silicon_nitride> The LPCVD reaction, hot
 H₃PO₄ etch and use as an oxidation mask. Used on steps 003, 013, 040, 042
-and 135 and the deposition category page. Tier: high-level.
+and 135 and the deposition category page.
+Also used on the vertical-furnace LPCVD page.
+Tier: high-level.
 
 **WIKI-SKYWATER** — Wikipedia, *SkyWater Technology*.
 <https://en.wikipedia.org/wiki/SkyWater_Technology> Fab history and 200
@@ -1759,7 +1782,9 @@ and properties. Used on the deposition category page. Tier: high-level.
 **WIKI-THOX** — Wikipedia, *Thermal oxidation*.
 <https://en.wikipedia.org/wiki/Thermal_oxidation> Reaction, silicon
 consumption, chlorine additions and dry–wet–dry cycles. Used on steps
-002, 010, 038 and 043 and the oxidation category page. Tier: high-level.
+002, 010, 038 and 043 and the oxidation category page.
+Also used on the vertical-furnace oxidation and anneal pages.
+Tier: high-level.
 
 **WIKI-TIN** — Wikipedia, *Titanium nitride*.
 <https://en.wikipedia.org/wiki/Titanium_nitride> Titanium nitride as a
@@ -1939,8 +1964,9 @@ Thermco AVP 8000"* listing.
 <https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>.
 "The AVP-8000 is a vertical batch furnace with a flexible platform for
 diffusion, oxidation, and LPCVD processes … can handle 150-200mm
-wafers." A dealer listing rather than a vendor data sheet. Tier:
-high-level (weak).
+wafers." A dealer listing rather than a vendor data sheet.
+Also used on the vertical-furnace oxidation, LPCVD and anneal pages.
+Tier: high-level (weak).
 
 **AXCELIS-GSD-PAGE** — Axcelis Technologies, *"GSD Ovation — High
 Current & High Energy Batch Ion Implanters"*, product page, accessed
@@ -1968,8 +1994,9 @@ Rapid Thermal Processing"* (reseller specification page), accessed
 "Recommended steady-state temperature range: 400 – 1200°C", ramp-up
 "Programmable, 1 – 180°C per second", "2 banks of 14 lamps" with
 "10-zone lamp control", pyrometer or thermocouple sensing, wafer sizes
-to 8 inches, "Implant annealing" among the applications. Tier:
-high-level (reseller page for the tool SKW-01 lists as "Ag Heatpulse
+to 8 inches, "Implant annealing" among the applications.
+Also used on the rapid thermal processor page.
+Tier: high-level (reseller page for the tool SKW-01 lists as "Ag Heatpulse
 8808").
 
 **AG-8108** — SemiStar Corp., *"AG Associates Heatpulse 4100 / 8108 /
@@ -1978,8 +2005,13 @@ high-level (reseller page for the tool SKW-01 lists as "Ag Heatpulse
 Although titled for the whole family, the PDF documents the operating
 specifications of the Heatpulse 4100: 400–1200 °C, maximum ramp
 150 °C/s, ±5 °C uniformity across a 150 mm wafer at 1150 °C, and a
-facility table (cooling water, CDA/N₂). Tier: high-level (weak for the
-8808 itself).
+facility table (cooling water, CDA/N₂). Re-read on 2026-09-13, the PDF
+also carries 8108, 8800 and 8800i sections; its 8800 section gives a
+ramp-up "up to 100°C per second with Ceramic Shield; up to 150°C per
+second without Ceramic Shield", "±3°C across an 8-inch wafer at 1150°C"
+and the 8800 facility connections, and no section names the 8808.
+Also used on the rapid thermal processor page.
+Tier: high-level (weak for the 8808 itself).
 
 **GASONICS-2000** — GaSonics International, home page, Wayback Machine
 capture of 2000-03-01.
@@ -2056,7 +2088,9 @@ boron "implanted through the sacrificial gate oxide in doses between
 1×10¹² and 1×10¹³ atoms/cm² … at implant energies between 50 and
 100 keV"; chained punch-through barriers at 100, 70 and 50 keV; a
 furnace anneal at "approximately 900 °C … for approximately 30
-minutes". Tier: deep dive.
+minutes".
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **PAT-VT-AMD** — US 6,238,982 B1, *"Multiple threshold voltage
 semiconductor device fabrication technology"*, Z. Krivokapic and
@@ -2084,7 +2118,9 @@ doping profile in twin well CMOS device"*, J.-H. Lee and J.-H. Son
 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻²; P-well 350 keV at
 1.5 × 10¹³ cm⁻², 150 keV at 6.0 × 10¹² cm⁻² and 80 keV at
 1.0 × 10¹² cm⁻²; "an annealing at 1000 C for 10 sec in an RTA" before
-gate oxidation. Tier: deep dive.
+gate oxidation.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **PAT-TWIN-HARRIS** — US 5,247,199 A, *"Process for forming twin well
 CMOS integrated circuits"*, D. A. Matlock (Harris Corporation), granted
@@ -2169,14 +2205,18 @@ DMOS with an implanted drift region. Tier: deep dive.
 **PAT-RTP-AMAT** — US 5,155,336 A, *"Rapid thermal heating apparatus
 and method"*, C. M. Gronet and J. F. Gibbons (Applied Materials),
 granted 1992-10-13. <https://patents.google.com/patent/US5155336A/en>.
-A lamp-heated single-wafer RTP chamber design. Tier: deep dive.
+A lamp-heated single-wafer RTP chamber design.
+Also used on the rapid thermal processor page.
+Tier: deep dive.
 
 **PAT-RTP-TAMARACK** — US 4,649,261 A, *"Apparatus for heating
 semiconductor wafers in order to achieve annealing, silicide
 formation, reflow of glass passivation layers, etc."*, R. E. Sheets
 (Tamarack Scientific), granted 1987-03-10.
 <https://patents.google.com/patent/US4649261A/en>. An early
-lamp-heating apparatus for wafer annealing. Tier: deep dive.
+lamp-heating apparatus for wafer annealing.
+Also used on the rapid thermal processor page.
+Tier: deep dive.
 
 **HOOK-2003** — T. B. Hook, J. Brown, P. Cottrell, E. Adler,
 D. Hoyniak, J. Johnson and R. Mann, *"Lateral Ion Implant Straggle and
@@ -2491,7 +2531,10 @@ H. S. Luftman and T. E. Haynes, *"Physical mechanisms of transient
 enhanced dopant diffusion in ion-implanted silicon"*, Journal of
 Applied Physics, vol. 81, no. 9, pp. 6031–6050, 1997,
 DOI 10.1063/1.364452. The physical mechanisms of transient enhanced
-diffusion. Tier: deep dive.
+diffusion.
+Also used on the vertical-furnace anneal page and the rapid thermal
+processor page.
+Tier: deep dive.
 
 **MICHEL-1987** — A. E. Michel, W. Rausch, P. A. Ronsheim and
 R. H. Kastl, *"Rapid annealing and the anomalous diffusion of ion
@@ -2510,7 +2553,9 @@ source behind transient boron diffusion. Tier: deep dive.
 processing systems: A review with emphasis on temperature control"*,
 Journal of Vacuum Science & Technology B, vol. 8, no. 6,
 pp. 1249–1259, 1990, DOI 10.1116/1.584902. Review of RTP systems with
-emphasis on temperature control. Tier: deep dive.
+emphasis on temperature control.
+Also used on the rapid thermal processor page.
+Tier: deep dive.
 
 **FIORY-2002** — A. T. Fiory, *"Recent developments in rapid thermal
 processing"*, Journal of Electronic Materials, vol. 31, no. 10,
@@ -2627,7 +2672,9 @@ the Thermal Oxidation of Silicon", *Journal of Applied Physics*
 **36**(12), 3770–3778 (1965). <https://doi.org/10.1063/1.1713945> The
 planar oxidation model that the corner results are measured against.
 Used on steps 002, 010, 040, 042, 043 and 047 and the oxidation category
-page. Tier: deep dive.
+page.
+Also used on the vertical-furnace oxidation page.
+Tier: deep dive.
 
 **DEAL-1980** — B. E. Deal, "Standardized terminology for oxide charges
 associated with thermally oxidized silicon", *IEEE Transactions on
@@ -2638,7 +2685,9 @@ Electrochemical Society* **127**(4), 979–981 (1980).
 <https://doi.org/10.1149/1.2129800> The standard terminology for oxide
 charges (fixed, trapped, mobile, interface) used when qualifying any
 thermal oxide. Used on steps 002, 043 and 047 and the anneal and
-oxidation category pages. Tier: deep dive.
+oxidation category pages.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **DECKERT-1978** — C. A. Deckert, "Etching of CVD Si₃N₄ in Acidic
 Fluoride Media", *Journal of The Electrochemical Society* **125**(2),
@@ -2812,8 +2861,9 @@ the Thin Regime. I. Experimental Results", *Journal of The
 Electrochemical Society* **132**(11), 2685–2693 (1985).
 <https://doi.org/10.1149/1.2113648> The growth-rate enhancement in the
 thin (< 30 nm) dry-oxide regime that a 10–20 nm pad oxide sits in. Used
-on steps 002, 040, 043 and 047 and the oxidation category page. Tier:
-deep dive.
+on steps 002, 040, 043 and 047 and the oxidation category page.
+Also used on the vertical-furnace oxidation page.
+Tier: deep dive.
 
 **MATSUDA-1998** — S. Matsuda, T. Sato, H. Yoshimura, Y. Takegawa, A.
 Sudo, I. Mizushima, Y. Tsunashima and Y. Toyoshima, "Novel corner
@@ -2860,7 +2910,9 @@ for Suppression of Gate Oxide Thinning at Shallow Trench Isolation
 Edge", *IEEE Electron Device Letters* **28**(7), 562–564 (2007).
 <https://doi.org/10.1109/LED.2007.899328> An argon anneal that
 suppresses gate-oxide thinning at the STI edge, a later view of the same
-problem. Used on step 010. Tier: deep dive.
+problem. Used on step 010.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **ORVEK-1985** — K. J. Orvek and C. Huffman, "Carbonized layer formation
 in ion implanted photoresist masks", *Nuclear Instruments and Methods in
@@ -2897,7 +2949,9 @@ data. Used on steps 005 and 042. Tier: deep dive.
 Silicon Nitride", *Journal of The Electrochemical Society* **134**(7),
 1777–1785 (1987). <https://doi.org/10.1149/1.2100756> A reactor model of
 LPCVD nitride from DCS/NH₃, explaining thickness uniformity along a
-hot-wall tube. Used on step 003. Tier: deep dive.
+hot-wall tube. Used on step 003.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep dive.
 
 **RYUTA-1990** — J. Ryuta, E. Morita, T. Tanaka and Y. Shimanuki,
 "Crystal-Originated Singularities on Si Wafer Surface after SC1
@@ -2935,8 +2989,10 @@ Page and P. Schubert, "LPCVD of Silicon Nitride from Dichlorosilane and
 Ammonia by Single Wafer Rapid Thermal Processing", *Electrochemical and
 Solid-State Letters* **4**(5), F11 (2001).
 <https://doi.org/10.1149/1.1359056> Single-wafer RTCVD of DCS/NH₃
-nitride, the alternative to a batch furnace. Used on step 003. Tier:
-deep dive.
+nitride, the alternative to a batch furnace. Used on step 003.
+Also used on the vertical-furnace LPCVD page and the rapid thermal
+processor page.
+Tier: deep dive.
 
 **TEMPLE-BOYER-1998** — P. Temple-Boyer, C. Rossi, E. Saint-Etienne and
 E. Scheid, "Residual stress in low pressure chemical vapor deposition
@@ -2944,7 +3000,9 @@ SiNₓ films deposited from silane and ammonia", *Journal of Vacuum
 Science & Technology A* **16**(4), 2003–2007 (1998).
 <https://doi.org/10.1116/1.581302> Residual stress in LPCVD SiNₓ as a
 function of composition, the reason stoichiometric films are highly
-tensile. Used on step 003. Tier: deep dive.
+tensile. Used on step 003.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep dive.
 
 **VAN-HAREN-2019** — R. J. F. van Haren, S. Steinert, O. Mouraille, K.
 D'havé, L. van Dijk, J. Hermans and D. Beyer, "Wafer alignment mark
@@ -3217,7 +3275,9 @@ Used on steps 038 and 040. Tier: deep dive.
 Materials, integration, and reliability", *IBM Journal of Research and
 Development* **43**(3), 245–264 (1999).
 <https://doi.org/10.1147/rd.433.0245> Scaling the gate dielectric:
-materials, integration, reliability. Used on step 047. Tier: deep dive.
+materials, integration, reliability. Used on step 047.
+Also used on the plasma nitridation chamber page.
+Tier: deep dive.
 
 **CEROFOLINI-1998** — G. F. Cerofolini, "A study of the ionic route for
 hydrogen terminations resulting after SiO₂ etching by concentrated
@@ -3265,13 +3325,18 @@ physical and electrical limits", *Journal of Applied Physics* **90**(5),
 2057–2121 (2001). <https://doi.org/10.1063/1.1385803> A long review of
 sub-4 nm SiO₂ and oxynitride gate dielectrics, their processing,
 structure and electrical limits. Used on steps 043 and 047 and the
-oxidation category page. Tier: deep dive.
+oxidation category page.
+Also used on the vertical-furnace oxidation page and the plasma
+nitridation chamber page.
+Tier: deep dive.
 
 **HATTANGADY-1995** — S. V. Hattangady, H. Niimi and G. Lucovsky,
 "Controlled nitrogen incorporation at the gate oxide surface", *Applied
 Physics Letters* **66**(25), 3495–3497 (1995).
 <https://doi.org/10.1063/1.113775> Controlled nitrogen incorporation at
-the gate-oxide surface. Used on step 047. Tier: deep dive.
+the gate-oxide surface. Used on step 047.
+Also used on the plasma nitridation chamber page.
+Tier: deep dive.
 
 **HORI-1988** — T. Hori and K. Kurimoto, "A new p-channel MOSFET with
 large-tilt-angle implanted punchthrough stopper (LATIPS)", *IEEE
@@ -3284,14 +3349,20 @@ physical properties of ultrathin reoxidized nitrided oxides prepared by
 rapid thermal processing", *IEEE Transactions on Electron Devices*
 **36**(2), 340–350 (1989). <https://doi.org/10.1109/16.19935> Electrical
 and physical properties of RTP reoxidised nitrided oxides. Used on step
-047 and the oxidation category page. Tier: deep dive.
+047 and the oxidation category page.
+Also used on the rapid thermal processor and plasma nitridation chamber
+pages.
+Tier: deep dive.
 
 **HWANG-1991** — H. Hwang, W. Ting, D.-L. Kwong and J. Lee, "A physical
 model for boron penetration through an oxynitride gate dielectric
 prepared by rapid thermal processing in N₂O", *Applied Physics Letters*
 **59**(13), 1581–1582 (1991). <https://doi.org/10.1063/1.106290> A
 physical model of boron penetration through N₂O oxynitride. Used on step
-047. Tier: deep dive.
+047.
+Also used on the rapid thermal processor and plasma nitridation chamber
+pages.
+Tier: deep dive.
 
 **INUKAI-2000** — T. Inukai and T. Hiramoto, "Suppression of Stand-by
 Tunnel Current in Ultra-Thin Gate Oxide MOSFETs by Dual Oxide
@@ -3304,7 +3375,10 @@ threshold CMOS for stand-by leakage. Used on step 044. Tier: deep dive.
 Nitridation of Silicon Dioxide Films in Anhydrous Ammonia Gas", *Journal
 of The Electrochemical Society* **127**(9), 2053–2057 (1980).
 <https://doi.org/10.1149/1.2130065> Direct thermal nitridation of SiO₂
-in ammonia. Used on step 047. Tier: deep dive.
+in ammonia. Used on step 047.
+Also used on the rapid thermal processor and plasma nitridation chamber
+pages.
+Tier: deep dive.
 
 **JIEW-2012** — C. B. Jiew, Y. E. Chien and R. T. T. Yung, "Development
 of a robust 2T-SONOS cell for embedded flash application", *2012 12th
@@ -3339,8 +3413,9 @@ gate oxides. Used on steps 044 and 046. Tier: deep dive.
 Hattangady, "Surface nitridation of silicon dioxide with a high density
 nitrogen plasma", *Journal of Vacuum Science & Technology B* **15**(4),
 967–970 (1997). <https://doi.org/10.1116/1.589516> Surface nitridation
-of SiO₂ with a high-density nitrogen plasma. Used on step 047. Tier:
-deep dive.
+of SiO₂ with a high-density nitrogen plasma. Used on step 047.
+Also used on the plasma nitridation chamber page.
+Tier: deep dive.
 
 **KUEHNE-1997** — J. Kuehne, S. Hattangady, J. Piccirillo, G. C. Xing,
 G. E. Miner and D. Lopes, "Nitric Oxide Rapid Thermal Nitridation of
@@ -3423,7 +3498,9 @@ and 046. Tier: deep dive.
 processing of thin gate dielectrics. Oxidation of silicon", *IEEE
 Electron Device Letters* **6**(5), 205–207 (1985).
 <https://doi.org/10.1109/EDL.1985.26099> Rapid thermal oxidation of thin
-gate dielectrics. Used on steps 043 and 047. Tier: deep dive.
+gate dielectrics. Used on steps 043 and 047.
+Also used on the rapid thermal processor page.
+Tier: deep dive.
 
 **PFIESTER-1990** — J. R. Pfiester, F. K. Baker, T. C. Mele, H.-H.
 Tseng, P. J. Tobin, J. D. Hayden, J. W. Miller, C. D. Gunderson and L.
@@ -3446,7 +3523,9 @@ dry rapid thermal oxidation, in-situ steam generation oxidation and dry
 furnace oxidation", *Journal of Applied Physics* **121**(24), 245308
 (2017). <https://doi.org/10.1063/1.4987040> Oxidation kinetics of dry
 RTO, ISSG and dry furnace oxidation compared. Used on steps 040, 043 and
-047. Tier: deep dive.
+047.
+Also used on the vertical-furnace oxidation page.
+Tier: deep dive.
 
 **STATHIS-2002** — J. H. Stathis, "Reliability limits for the gate
 insulator in CMOS technology", *IBM Journal of Research and Development*
@@ -3514,7 +3593,10 @@ rapid thermal oxidation process with in-situ steam generation", *Proc.
 SPIE* **3881**, Microelectronic Device Technology III, 234 (1999).
 <https://doi.org/10.1117/12.360557> Ultrathin gate oxide grown by
 in-situ steam generation in an RTP chamber. Used on steps 040, 043 and
-047 and the oxidation category page. Tier: deep dive.
+047 and the oxidation category page.
+Also used on the vertical-furnace oxidation page and the rapid thermal
+processor page.
+Tier: deep dive.
 
 #### Books and book chapters
 
@@ -3740,7 +3822,9 @@ high-level.
 Dioxide Films at Reduced Pressure", *Journal of The Electrochemical
 Society* **126**(6), 1042–1046 (1979).
 <https://doi.org/10.1149/1.2129171> LPCVD oxide deposition, including
-TEOS and doped glasses. Used on the deposition category page. Tier: deep
+TEOS and doped glasses. Used on the deposition category page.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep
 dive.
 
 **AMES-1970** — I. Ames, F. M. d'Heurle and R. E. Horstmann, "Reduction
@@ -3773,7 +3857,9 @@ on the deposition category page. Tier: deep dive.
 Silicon Films", *Journal of The Electrochemical Society* **127**(3),
 686–690 (1980). <https://doi.org/10.1149/1.2129733> Structure and
 properties of LPCVD silicon films as a function of deposition
-temperature. Used on the deposition category page. Tier: deep dive.
+temperature. Used on the deposition category page.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep dive.
 
 **RAUPP-1992** — G. B. Raupp, T. S. Cale and H. P. W. Hey, "The role of
 oxygen excitation and loss in plasma-enhanced deposition of silicon
@@ -3853,7 +3939,9 @@ cross-check.
 DUO vertical furnace system*, press release, 2019-11-11.
 <https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>
 The A400 furnace's install base and wet-oxidation/anneal use. Used on
-the deposition and oxidation category pages. Tier: cross-check.
+the deposition and oxidation category pages.
+Also used on the vertical-furnace oxidation, LPCVD and anneal pages.
+Tier: cross-check.
 
 **NOVELLUS-HISTORY** — Encyclopedia.com, *Novellus Systems, Inc.*
 (company history: Concept One/Two, Sequel, SPEED, Altus).
@@ -4318,7 +4406,9 @@ the anneal category page. Tier: deep dive.
 interface by atomic hydrogen", *Applied Physics Letters* **63**(11),
 1510–1512 (1993). <https://doi.org/10.1063/1.110758> Hydrogen
 passivation and depassivation of interface dangling bonds. Used on the
-anneal category page. Tier: deep dive.
+anneal category page.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **CSEPREGI-1978** — L. Csepregi, E. F. Kennedy, J. W. Mayer and T. W.
 Sigmon, "Substrate-orientation dependence of the epitaxial regrowth rate
@@ -4344,12 +4434,16 @@ anneal category page. Tier: deep dive.
 interface trap annealing", *Journal of Applied Physics* **63**(12),
 5776–5793 (1988). <https://doi.org/10.1063/1.340317> The chemistry of
 Si/SiO₂ interface-trap annealing in hydrogen. Used on the anneal
-category page. Tier: deep dive.
+category page.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **SEDGWICK-1983** — T. O. Sedgwick, "Short Time Annealing", *Journal of
 The Electrochemical Society* **130**(2), 484–493 (1983).
 <https://doi.org/10.1149/1.2119736> An early review of short-time
-annealing. Used on the anneal category page. Tier: deep dive.
+annealing. Used on the anneal category page.
+Also used on the rapid thermal processor page.
+Tier: deep dive.
 
 ##### Books and book chapters
 
@@ -4394,7 +4488,9 @@ anneal and oxidation category pages. Tier: cross-check.
 <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
 Applied Materials' 1997 product line: DPS and MxP/eMxP+ etchers,
 HDP-CVD, Mirra CMP and RTP chambers. Used on the anneal, cmp, deposition
-and etch category pages. Tier: cross-check.
+and etch category pages.
+Also used on the rapid thermal processor page.
+Tier: cross-check.
 
 **AMAT-RTP** — EDN, *Applied dedicates RTP with Vantage*, 2002-09-23
 (Applied Materials Radiance/Vantage RTP chambers).
@@ -4405,14 +4501,18 @@ category pages. Tier: cross-check.
 **ASM-VF** — ASM International, *Vertical furnace*, product page.
 <https://www.asm.com/our-technology-products/vertical-furnace> ASM
 product page for its vertical furnace family (A400/A412). Used on the
-anneal and oxidation category pages. Tier: cross-check.
+anneal and oxidation category pages.
+Also used on the vertical-furnace oxidation and LPCVD pages.
+Tier: cross-check.
 
 **PLASMATHERM-AG** — Plasma-Therm, *Product Spotlight: AG Heatpulse 8800
 / 8108 RTP*, blog post.
 <https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp>
 Vendor blog post on the AG Associates Heatpulse 8800 and 8108 RTP
 systems, now supported by Plasma-Therm. Used on the anneal and oxidation
-category pages. Tier: cross-check.
+category pages.
+Also used on the rapid thermal processor page.
+Tier: cross-check.
 
 ##### University and course pages
 
@@ -4737,7 +4837,9 @@ Widmer, H. F. Kappert and G. Neugebauer, "Growth and Physical Properties
 of LPCVD Polycrystalline Silicon Films", *Journal of The Electrochemical
 Society* **131**(3), 675–682 (1984). <https://doi.org/10.1149/1.2115672>
 Growth and physical properties of LPCVD poly, including the amorphous
-regime. Used on step 048. Tier: deep dive.
+regime. Used on step 048.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep dive.
 
 **HATALIS-1988** — M. K. Hatalis and D. W. Greve, "Large grain
 polycrystalline silicon by low-temperature annealing of low-pressure
@@ -4805,7 +4907,9 @@ dive.
 vapor deposition", *Applied Physics Letters* **42**(9), 835–837 (1983).
 <https://doi.org/10.1063/1.94080> Crystallisation of a-Si films during
 the deposition itself, the hazard that sets the deposition temperature
-margin. Used on step 048. Tier: deep dive.
+margin. Used on step 048.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep dive.
 
 **KODA-1993** — M. Koda, Y. Shida, J. Kawaguchi and Y. Kaneko,
 "Improving gate oxide integrity in p⁺ pMOSFET by using large grain size
@@ -4819,7 +4923,9 @@ Semiconductor Field-Effect Transistors with N₂O Nitrided Gate Oxide and
 N₂O Polysilicon Gate Reoxidation", *Japanese Journal of Applied Physics*
 **37**(10R), 5507 (1998). <https://doi.org/10.1143/JJAP.37.5507>
 Reliability improvement from N₂O polysilicon-gate re-oxidation. Used on
-step 063. Tier: deep dive.
+step 063.
+Also used on the vertical-furnace oxidation page.
+Tier: deep dive.
 
 **LU-1989** — C.-Y. Lu, J. M. Sung, H. C. Kirsch, S. J. Hillenius, T. E.
 Smith and L. Manchanda, "Anomalous C-V characteristics of implanted poly
@@ -4841,7 +4947,9 @@ Polycrystalline Silicon via LPCVD: I. Process Characterization",
 *Journal of The Electrochemical Society* **131**(10), 2361–2365 (1984).
 <https://doi.org/10.1149/1.2115258> In-situ phosphorus doping of LPCVD
 poly and its effect on deposition rate, the alternative to an implanted
-gate. Used on step 048. Tier: deep dive.
+gate. Used on step 048.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep dive.
 
 **PAN-1994** — Y. Pan, K. K. Ng and V. Kwong, "Comparison of gate-edge
 effects on the hot-carrier induced degradation of LDD N- and P-channel
@@ -5067,7 +5175,9 @@ dive.
 "Low-pressure deposition of high-quality SiO₂ films by pyrolysis of
 tetraethylorthosilicate", *Journal of Vacuum Science & Technology B*
 **5**(6), 1555–1563 (1987). <https://doi.org/10.1116/1.583673>
-Low-pressure TEOS oxide deposition. Used on step 059. Tier: deep dive.
+Low-pressure TEOS oxide deposition. Used on step 059.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep dive.
 
 **BELL-1996** — F. H. Bell and O. Joubert, "Polysilicon gate etching in
 high density plasmas. III. X-ray photoelectron spectroscopy
@@ -5698,7 +5808,9 @@ steps 076 and 077. Tier: deep dive.
 Bis(tertiary-butylamino)silane and Ammonia", *Journal of The
 Electrochemical Society* **151**(5), G353 (2004).
 <https://doi.org/10.1149/1.1690294> BTBAS low-temperature LPCVD nitride.
-Used on steps 076 and 104. Tier: deep dive.
+Used on steps 076 and 104.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep dive.
 
 **HUGHEY-2003** — M. P. Hughey and R. F. Cook, "Irreversible Tensile
 Stress Development in PECVD Silicon Nitride Films", *MRS Proceedings*
@@ -5870,7 +5982,9 @@ models in which the spacer's permittivity appears. Used on steps 076 and
 Chemical Vapor Deposition of Bis(Tertiary-Butylamino)Silane-based
 Silicon Nitride Thin Films", *Journal of The Electrochemical Society*
 **152**(4), G316 (2005). <https://doi.org/10.1149/1.1870792> BTBAS
-low-temperature LPCVD nitride. Used on step 076. Tier: deep dive.
+low-temperature LPCVD nitride. Used on step 076.
+Also used on the vertical-furnace LPCVD page.
+Tier: deep dive.
 
 **TANG-1985** — T. E. Tang, C.-C. Wei, R. A. Haken, T. C. Holloway,
 C.-F. Wan and M. A. Douglas, "VLSI local interconnect level using
@@ -5958,7 +6072,9 @@ Kimes, "Effects of wafer emissivity on rapid thermal processing
 temperature measurement", *Proc. 10th IEEE International Conference on
 Advanced Thermal Processing of Semiconductors (RTP 2002)*, pp. 59–67.
 <https://doi.org/10.1109/RTP.2002.1039440> Temperature control and
-emissivity in RTP. Used on steps 088 and 092. Tier: deep dive.
+emissivity in RTP. Used on steps 088 and 092.
+Also used on the rapid thermal processor page.
+Tier: deep dive.
 
 **CURRENT-1996-IIT** — M. I. Current, M. Vella and W. Lukaszek,
 "Beam-plasma concepts for wafer charging control during ion
@@ -6091,7 +6207,9 @@ emissivity correction in pyrometer temperature control of rapid thermal
 processing systems", *IEEE Transactions on Semiconductor Manufacturing*
 **6**(3), 273–276 (1993). <https://doi.org/10.1109/66.238178>
 Temperature control and emissivity in RTP. Used on steps 088, 092 and
-098. Tier: deep dive.
+098.
+Also used on the rapid thermal processor page.
+Tier: deep dive.
 
 **VANDENABEELE-1998** — P. Vandenabeele and W. Renken, "Model Based
 Temperature Control in RTP Yielding ±0.1 °C accuracy on A 1000 °C, 2
@@ -6267,7 +6385,9 @@ deep dive.
 hydrogen-passivated (111) Si-SiO₂ interface defects", *Physical Review
 B* **42**(6), 3444–3453 (1990).
 <https://doi.org/10.1103/PhysRevB.42.3444> Dissociation kinetics of
-hydrogen-passivated interface defects. Used on step 096. Tier: deep
+hydrogen-passivated interface defects. Used on step 096.
+Also used on the vertical-furnace anneal page.
+Tier: deep
 dive.
 
 **CHEN-1999-PSM** — Y.-T. Chen, Y.-C. Wang and R. Chu, "Optimization of
@@ -6304,13 +6424,17 @@ high-temperature hydrogen anneal on the memory retention of
 metal-nitride-oxide-silicon transistors at elevated temperatures",
 *Journal of Applied Physics* **52**(6), 4348–4350 (1981).
 <https://doi.org/10.1063/1.329266> Hydrogen anneals and nitride-memory
-retention. Used on step 096. Tier: deep dive.
+retention. Used on step 096.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **MORITA-1990** — M. Morita, T. Ohmi, E. Hasegawa, M. Kawakami and M.
 Ohwada, "Growth of native oxide on a silicon surface", *Journal of
 Applied Physics* **68**(3), 1272–1281 (1990).
 <https://doi.org/10.1063/1.347181> Native oxide regrowth on silicon, the
-queue-time constraint. Used on steps 095 and 096. Tier: deep dive.
+queue-time constraint. Used on steps 095 and 096.
+Also used on the vertical-furnace oxidation page.
+Tier: deep dive.
 
 **OEHRLEIN-1994-II** — G. S. Oehrlein, Y. Zhang, D. Vender and O.
 Joubert, "Fluorocarbon high-density plasmas. II. Silicon dioxide and
@@ -6346,7 +6470,9 @@ oxide etching. Used on step 094. Tier: deep dive.
 of the boron acceptor in silicon by hydrogen", *Applied Physics Letters*
 **43**(2), 204–206 (1983). <https://doi.org/10.1063/1.94287> Hydrogen
 deactivation of boron, the side-effect that bounds the recipe. Used on
-step 096. Tier: deep dive.
+step 096.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **SCHAEPKENS-1999** — M. Schaepkens, T. E. F. M. Standaert, N. R.
 Rueger, P. G. M. Sebel, G. S. Oehrlein and J. M. Cook, "Study of the
@@ -6360,7 +6486,9 @@ mechanism. Used on steps 094, 104 and 108. Tier: deep dive.
 defects in thermal (100) Si/SiO₂ with molecular hydrogen", *Applied
 Physics Letters* **68**(15), 2076–2078 (1996).
 <https://doi.org/10.1063/1.116308> Passivation of P_b0 and P_b1 centres
-by molecular hydrogen. Used on step 096. Tier: deep dive.
+by molecular hydrogen. Used on step 096.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **YANG-1998** — C.-H. Yang and C.-M. Dai, "Resist and oxide thickness
 effect on process window for 0.2-μm contact patterns with off-axis
@@ -8035,7 +8163,9 @@ of hot carrier reliability with deuterium anneals for manufacturing
 multilevel metal/dielectric MOS systems", *IEEE Electron Device Letters*
 **19**(11), 444–446 (1998). <https://doi.org/10.1109/55.728907> Deuterium
 anneals for manufacturing multilevel metal/dielectric MOS systems. Used
-on step 170. Tier: deep dive.
+on step 170.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **LEARN-1976** — A. J. Learn, "Evolution and Current Status of Aluminum
 Metallization", *Journal of The Electrochemical Society* **123**(6),
@@ -8046,14 +8176,18 @@ metallisation and its processing. Used on step 170. Tier: deep dive.
 of hot electron degradation in metal oxide semiconductor transistors by
 deuterium processing", *Applied Physics Letters* **68**(18), 2526–2528
 (1996). <https://doi.org/10.1063/1.116172> Deuterium in the final sinter
-and hot-electron degradation. Used on step 170. Tier: deep dive.
+and hot-electron degradation. Used on step 170.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **PAT-DEUTERIUM-UIUC** — J. W. Lyding and K. Hess (Board of Trustees of
 the University of Illinois), *Deuterium-treated semiconductor devices*,
 US 5,872,387 A, filed 1996-01-16, granted 1999-02-16.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5872387>
 Deuterium-treated devices and example anneal conditions. Used on step
-170. Tier: deep dive.
+170.
+Also used on the vertical-furnace anneal page.
+Tier: deep dive.
 
 **SAYAH-1988** — H. R. Sayah and M. G. Buehler, "Comb/serpentine/cross-bridge
 test structure for fabrication process evaluation", *Proc. 1988 IEEE
