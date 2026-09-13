@@ -162,10 +162,10 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 
 ## Resources required
 
-* **Tungsten hexafluoride** (WF₆),[^wiki-wf6] **silane** (and
-  possibly **diborane**) for nucleation, **hydrogen** for the bulk
+* **{ref}`Tungsten hexafluoride <material-precursors>`** (WF₆),[^wiki-wf6] **silane** (and
+  possibly **diborane**) for nucleation, **{ref}`hydrogen <material-process-gases>`** for the bulk
   reduction, **argon** and **nitrogen** as carriers.
-* **NF₃** for chamber cleaning; {ref}`fluorine-tolerant exhaust <material-hardware-consumables>` and
+* **{ref}`NF₃ <material-etch-gases>`** for chamber cleaning; {ref}`fluorine-tolerant exhaust <material-hardware-consumables>` and
   scrubbing for HF and SiF₄ by-products.[^txt-09]
 * **Chamber consumables** — pedestal heaters, showerheads, liners.
 * **{ref}`Monitor wafers <material-substrates>`** (SEMI M8 class)[^semi-m8] with TiN for
