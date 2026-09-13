@@ -142,6 +142,8 @@ illustrative.
   concentration.[^pdk-03]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
+* SKY130 raw-data repository, test-tile pad documentation — the cell
+  names of the 20 V NMOS and PMOS structures.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -186,6 +188,11 @@ illustrative.
   not public.
 * Whether the `pwde` well is the drift region of the 20 V PMOS, the
   body of the 20 V NMOS, or both, is inferred from the rule geometry.
+  The test-tile pad list puts `pwde` in the cell names of its 20 V PMOS
+  structures but not in those of its 20 V NMOS structures (see
+  {ref}`PWDEM <step-030>`);[^raw-data-testtile-pads] names need not list
+  every layer, so this supports the PMOS reading without settling the
+  NMOS one.
 * Whether `PWDEI1` is the deeper or the shallower member of the pair
   is unknown.
 
@@ -269,3 +276,9 @@ illustrative.
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
