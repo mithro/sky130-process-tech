@@ -268,8 +268,7 @@ the fab's laser gases, laser service or tool environment.
   "Mask GDS to reticle" and "OPC modeling" among its
   services.[^skw-01]
 * **Track link.** The NSR-S204B lists an "In-Line Track Interface",[^nikon-s204b]
-    the connection to the coat/develop track that bakes and develops the
-  exposed wafer.
+    the connection to the {ref}`coat/develop track <machine-coat-develop-track>` that bakes and develops the exposed wafer.
 
 ## Process-integration notes for SKY130
 
@@ -313,6 +312,8 @@ settings and resists per layer are not public.
   the 36 mask steps of SKY130.
 * {ref}`machine-i-line-stepper` — the exposure class for the other levels
   and the mix-and-match between classes.
+* {ref}`machine-coat-develop-track` — the linked track that coats, bakes
+  and develops the KrF resist.
 * {ref}`masks-index` — each mask's PDK entry, minimum CD, plates and the
   mask-type record for vias 2–4.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
