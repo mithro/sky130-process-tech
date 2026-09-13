@@ -97,7 +97,7 @@ illustrative.
   750keV")[^axcelis-8250] depending on energy; a light-dose,
   moderate-energy boron implant is natural work for the medium-current
   tool (category page).
-* **{term}`Four-point probe <four-point probe>`** ({ref}`sheet-resistance metrology <machine-sheet-resistance-metrology>`) metrology.
+* **{term}`Four-point probe <four-point probe>`** {ref}`metrology <machine-sheet-resistance-metrology>`.
 
 ## Machines likely used at SkyWater
 
