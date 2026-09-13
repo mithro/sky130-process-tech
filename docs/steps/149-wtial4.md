@@ -39,11 +39,13 @@ open PDK repeat the 0.845 µm.[^ann-16] The antenna-rule table lists a
 "S8P*/SP8P*" flows and 2 µm for the "S8Q*/SP8Q" flows,[^pdk-03] and
 the rule tables name "SKY130P*/SP8P*" as the flow in which via 4
 connects metal 4 to metal 5 and call the SP8P*/SKY130P* CAD flow
-"PLM";[^pdk-periph] and the background page lists "5 levels of metal (
-p - penta)" among the technology's features.[^pdk-02] On that reading
-SKY130 as published is a "P" flow, so the 0.8 µm value applies and the
-2 µm entry belongs to another variant (inference). The metal-4 design rules match metal 3's: 0.300 µm
-width and space (m4.1, m4.2), 0.065 µm enclosure of via 3 (m4.3),
+"PLM",[^pdk-periph] and the mask table flags its "Via 2-PLM", "Metal
+3-PLM" and "Via3-PLM" entries as used in SKY130;[^pdk-05] and the
+background page lists "5 levels of metal (p - penta)" among the
+technology's features.[^pdk-02] On that reading SKY130 as published is
+a "P" flow, so the 0.8 µm value applies and the 2 µm entry belongs to
+another variant (inference). The metal-4 design rules match metal 3's:
+0.300 µm width and space (m4.1, m4.2), 0.065 µm enclosure of via 3 (m4.3),
 0.240 µm² minimum area (m4.4a) and a 0.7 minimum oxide pattern
 density checked in 700 µm windows (m4.pd.1, m4.pd.2a).[^pdk-periph]
 
@@ -233,7 +235,9 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
   metal-3-to-4 and metal-4-to-5 plate capacitances.[^pdk-08]
 * SkyWater PDK, *Criteria & Assumptions* — metal-4 antenna thickness
   0.8 µm (S8P*/SP8P*) and 2 µm (S8Q*/SP8Q).[^pdk-03]
-* SkyWater PDK, *Background* — "5 levels of metal ( p - penta)".[^pdk-02]
+* SkyWater PDK, *Background* — "5 levels of metal (p - penta)".[^pdk-02]
+* SkyWater PDK, *Masks* — "Via 2-PLM", "Metal 3-PLM", "Via3-PLM" flagged
+  as used in SKY130.[^pdk-05]
 * SkyWater PDK, *Periphery rules* — m4.1–m4.pd.2b; via4 function
   "SKY130P*/SP8P*"; the metal-fuse note and mf.1–mf.2.[^pdk-periph]
 * SkyWater PDK, *Layers Reference* — `met4` 71:20, `met4` fuse 71:17;
@@ -303,8 +307,9 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
   public; the 2 µm "S8Q*/SP8Q" entry[^pdk-03] is read here as another
   flow.
 * That SKY130 is the "P" flow of the rule tables (SKY130P*, PLM) is our
-  reading of the via-4 and metal-fuse notes[^pdk-periph] and of the
-  background page's "p - penta".[^pdk-02]
+  reading of the via-4 and metal-fuse notes,[^pdk-periph] of the mask
+  table's flagged "-PLM" entries[^pdk-05] and of the background page's
+  "p - penta".[^pdk-02]
 * Whether fuses are drawn in metal 4 in SKY130 designs as
   published, and how that constrains this stack, is not public beyond
   the fuse note.[^pdk-periph]
@@ -322,6 +327,10 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
     diagram), google/skywater-pdk repository.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
+[^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
+    <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
 [^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
     `gds_layers.csv`, SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
