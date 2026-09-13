@@ -248,9 +248,11 @@ logistics, test-wafer stock or reclaim; the points below are industry
 practice or supplier and standards statements.
 
 * **Ordering and identity.** Wafers are ordered against SEMI M1 or M8
-  categories[^semi-m1][^semi-m8] and marked to SEMI M12 or M13, whose
-  mark "links the properties of the wafer stored in an appropriate
-  database system to each individual wafer";[^semi-m12][^semi-m13] the
+  categories[^semi-m1][^semi-m8] and marked to SEMI M12, whose mark
+  "links the properties of the wafer stored in an appropriate database
+  system to each individual wafer",[^semi-m12] or to SEMI M13, whose code
+  includes "the origin, approximate resistivity, dopant species, and
+  crystal growth orientation";[^semi-m13] the
   marking and sorting tools are on the
   {ref}`starting-material page <machine-starting-material>`.
 * **Supply.** Wafers come from a few large makers; SkyWater's filings
@@ -490,8 +492,9 @@ are not public.
     intrinsic point defects in silicon wafers and crystals", *Materials
     Science and Engineering: B* **73**(1–3), 87–94 (2000).
     <https://doi.org/10.1016/S0921-5107(99)00439-0>
-[^semi-m62]: SEMI M62, *Specification for Silicon Epitaxial Wafers*,
-    SEMI.
+[^semi-m62]: SEMI, *SEMI M62 — Specification for Silicon Epitaxial
+    Wafers*, SEMI Standards store listing (revision M62-1125, current),
+    accessed 2026-09-13.
     <https://store-us.semi.org/products/m06200-semi-m62-specification-for-silicon-epitaxial-wafers>
 [^itrs-01]: International Technology Roadmap for Semiconductors, *2001
     Edition: Front End Processes*.
@@ -527,11 +530,12 @@ are not public.
     diagram), google/skywater-pdk repository.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
 [^semi-m12]: SEMI, *SEMI M12 — Specification for Serial Alphanumeric
-    Marking of Silicon Wafers*, SEMI Standards store listing, accessed
-    2026-09-13.
+    Marking of Silicon Wafers*, SEMI Standards store listing (revision
+    M12-0523, current), accessed 2026-09-13.
     <https://store-us.semi.org/products/m01200-semi-m12-specification-for-serial-alphanumeric-marking-of-the-front-surface-of-wafers>
 [^semi-m13]: SEMI, *SEMI M13 — Specification for Alphanumeric Marking of
-    Silicon Wafers*, SEMI Standards store listing, accessed 2026-09-13.
+    Silicon Wafers*, SEMI Standards store listing (revision M13-0523,
+    current), accessed 2026-09-13.
     <https://store-us.semi.org/products/m01300-semi-m13-specification-for-alphanumeric-marking-of-silicon-wafers>
 [^gw-home]: GlobalWafers, *Silicon Wafer Manufacturing*, home page,
     accessed 2026-09-13. <https://www.gw-semi.com/>
