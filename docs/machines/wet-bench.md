@@ -23,7 +23,7 @@ cleaning and etching is on the {ref}`strip <category-strip>` and
 | Hot phosphoric bath | "Refluxed boiling phosphoric acid at 180°C" etches nitride at 100 Å/min against 0–25 Å/min for deposited oxide;[^vgh-1967] water spiking and partial bath replacement keep the selectivity stable over the bath's life.[^liu-2007] |
 | Wafer handling | Immersion benches move batches between tanks — SCREEN's WS-820C "for 200 mm wafers with carrier transfer processing" or WS-820L "with carrierless transfer processing", with "up to 13 baths";[^screen-ws820] a centrifugal spray processor holds cassettes "in a rotor within the process chamber" facing spray manifolds.[^pat-spray-semitool] |
 | Drying | Spin or IPA-vapour drying — SkyWater lists "spin or IPA dry" on its Akrion bench;[^skw-01] Kern noted "Improvements in wafer drying by use of isopropanol vapor";[^kern-1990] Marangoni drying was published as "A new extremely clean drying process".[^leenaars-1990] |
-| 200 mm era | Akrion GAMA and E200 benches;[^akrion-gama][^sst-akrion-scp-2007] SCREEN (DNS) WS-820 wet stations;[^screen-ws820] the FSI (now TEL) MERCURY batch spray system for "75mm – 200mm wafers", with "over 1,000 systems installed".[^tel-mercury-2018] |
+| 200 mm era | Akrion GAMA (150–300 mm)[^akrion-gama-series] and E200 benches;[^sst-akrion-scp-2007] SCREEN (DNS) WS-820 wet stations;[^screen-ws820] the FSI (now TEL) MERCURY batch spray system for "75mm – 200mm wafers", with "over 1,000 systems installed".[^tel-mercury-2018] |
 | SkyWater-listed tool | "Akrion Gamma Batch Wet Bench" ("Sulfuric, SC1, phosphoric, BOE, spin or IPA dry"), "Batch Rotational" ("EKS265, EKC270 solvents, CO2 injected DI"); under "Pre-cleaning", "DNS wet bench industry standard HF/SC1/SC2" ("dilute HF-last with IPA dry") and "FSI Mercury industry standard HF/SC1/SC2 rotational"[^skw-01] |
 | SKY130 steps | 4 steps, plus 36 where it runs a clean or strip; see {ref}`SKY130 steps assigned to this class <machine-wet-bench-steps>` |
 
@@ -146,8 +146,9 @@ related solvent N-methyl-2-pyrrolidone.[^wiki-nmp]
   another supplier in 2024.[^tel-mercury-2018]
 * **Semitool.** Centrifugal spray processors, as described in its
   patent.[^pat-spray-semitool]
-* **Other vendors.** The step pages also name SCP and Santa Clara
-  Plastics benches ({ref}`NS19 <step-013>`); no separate vendor
+* **Other vendors.** The step pages also name SCP
+  ({ref}`PRIS <step-054>`) and Santa Clara Plastics
+  ({ref}`NS19 <step-013>`) benches; no separate vendor
   description was retrieved for this page.
 
 ## At SkyWater
@@ -179,8 +180,10 @@ is a single-wafer spin processor, a separate class.[^skw-01] SkyWater
 gives no model, tank count or vendor for the Batch Rotational tool. We
 read "Akrion Gamma" as Akrion's GAMA wet station,[^akrion-gama-series]
 "DNS" as Dainippon Screen, now SCREEN,[^screen-ws820] and "rotational"
-on the FSI Mercury as its centrifugal spray rotor;[^tel-mercury-2018]
-these are inferences from the names. The step pages write the solvents
+on the FSI Mercury as a rotating batch spray chamber of the kind the
+Semitool patent describes;[^pat-spray-semitool] TEL describes the
+MERCURY only as a "batch spray cleaning system".[^tel-mercury-2018]
+These are inferences from the names. The step pages write the solvents
 EKC265/EKC270; whether SkyWater's "EKS265" is the same product is not
 stated.
 
@@ -252,10 +255,11 @@ not public.
   nitride-to-oxide selectivity;[^vgh-1967][^liu-2007] the page assigns
   it to the Akrion bench as the only phosphoric tank SkyWater
   lists.[^skw-01]
-* **Wet oxide etches over thin films.** {ref}`TUNME <step-039>` and
-  {ref}`GOXETCH <step-046>` open windows in thin oxides with BOE, the
-  etchant the Cypress patents name, and {ref}`SACETCH <step-095>` uses
-  dilute HF; at these thicknesses the slow, well-controlled rates of
+* **Wet oxide etches over thin films.** {ref}`TUNME <step-039>` removes
+  the pad oxide from the tunnel windows and {ref}`GOXETCH <step-046>`
+  strips the exposed thick gate oxide, both with BOE, the etchant the
+  Cypress patent names (with 20:1 BOE or 50:1 HF among its alternatives
+  for the pad oxide), and {ref}`SACETCH <step-095>` uses dilute HF; at these thicknesses the slow, well-controlled rates of
   dilute HF matter.[^kikuyama-1994][^wiki-boe]
 * **Pre-furnace cleans.** The oxidation and anneal pages
   ({ref}`BOX <step-002>`, {ref}`LINOX <step-010>` and the pre-anneal
