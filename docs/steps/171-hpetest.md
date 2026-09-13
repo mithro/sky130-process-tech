@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 171 of 171 |
+| **Step number** | 171 of 171[^steps-sheet] |
 | **Step code** | `HPETEST` |
 | **Category** | {ref}`Electrical test / metrology <category-test>` |
 | **Phase** | BEOL — passivation, pads, alloy, test |
@@ -333,3 +333,6 @@ fab (SKY130's test plan is not public beyond the parameters above):
     of Wire Bonding to Study Bond Pad Damage from Wafer Probe",
     *International Symposium on Microelectronics* **2012**(1), 384–395
     (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-TP41>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
