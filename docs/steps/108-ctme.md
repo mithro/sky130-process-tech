@@ -165,10 +165,11 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 * **No dielectric etcher is named on SkyWater's public list.** The
   list gives, under poly/silicon etch, "AMAT DPSII, HBR, Cl2, NF3,
-  CF4, CHF3, O2" and "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
-  O2".[^skw-01] Both carry fluorocarbons that can etch oxide;
-  strength: **weak** for assignment to the contact etch (the DPS II
-  line is labelled "gate, trench, W/WN"[^skw-01]).
+  CF4, CHF3, O2", "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" and
+  "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2".[^skw-01] All three carry
+  fluorine-bearing gases that can etch oxide; strength: **weak** for
+  assignment of any of them to the contact etch (the DPS II line is
+  labelled "gate, trench, W/WN"[^skw-01]).
 * **Lam Exelan.** No public source places an Exelan at SkyWater; it
   appears here only as the era's typical dielectric etcher, a line
   Lam's own 10-K lists.[^lam-10k]
@@ -216,8 +217,8 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   (k 7.3), NILD2 0.265 µm.[^pdk-04]
 * SkyWater PDK, *Layers Reference* — `mcon` 67:44.[^pdk-06]
 * SkyWater PDK, *Parasitic Layout Extraction* — MCON 152 000 mΩ.[^pdk-08]
-* SkyWater, *Facilities & Capabilities* — DPS II and Lam 4400 gas
-  lists; ashers; EKC solvents.[^skw-01]
+* SkyWater, *Facilities & Capabilities* — DPS II, Lam 9400 TCP and
+  Lam 4400 gas lists; ashers; EKC solvents.[^skw-01]
 * Lam Research, Exelan launch (2001) and 10-K (2003).[^lam-exelan][^lam-10k]
 
 ### High-level understanding
