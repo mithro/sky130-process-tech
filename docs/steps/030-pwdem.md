@@ -139,7 +139,8 @@ An industry-generic drain-extension well lithography for a 200 mm,
    should be changed"[^pdk-hv] — so the well edge position relative to
    the STI, and later the poly, matters more than for an ordinary well.
 5. **Develop, hard bake, inspect.** 2.38 % TMAH[^microchemicals-dev]
-   (0.26 N; our arithmetic from TMAH's molar mass of 91.15 g/mol)
+   (0.26 N; our arithmetic from TMAH's molar mass of 91.15 g/mol,[^wiki-tmah]
+   taking the solution's density as about 1 g/mL)
    develop.
 
 ## Machines typically used
@@ -271,6 +272,8 @@ An industry-generic drain-extension well lithography for a 200 mm,
 
 <!-- footnotes -->
 
+[^wiki-tmah]: Wikipedia, *Tetramethylammonium hydroxide*.
+    <https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>
 [^microchemicals-dev]: MicroChemicals, *Development of photoresists*,
     application note.
     <https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>

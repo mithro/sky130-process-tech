@@ -102,7 +102,8 @@ fab, as on {ref}`RRPM <step-052>`:
    {term}`overlay` margin on every side.
 5. **Post-exposure bake, develop** in 2.38 %
    TMAH[^wiki-tmah][^microchemicals-dev] (0.26 N; our arithmetic from TMAH's
-   molar mass of 91.15 g/mol), rinse, hard bake.
+   molar mass of 91.15 g/mol,[^wiki-tmah]
+   taking the solution's density as about 1 g/mL), rinse, hard bake.
 6. **Inspection.** Overlay to active; window presence by optical
    inspection.
 

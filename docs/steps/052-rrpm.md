@@ -110,7 +110,8 @@ An industry-generic implant-mask litho sequence, as on
    lateral {term}`straggle` at a resist edge blurs the boundary
    further.[^hook-2003]
 5. **Post-exposure bake, develop** in 2.38 % TMAH[^microchemicals-dev] (0.26 N; our arithmetic from TMAH's
-   molar mass of 91.15 g/mol), rinse,
+   molar mass of 91.15 g/mol,[^wiki-tmah]
+   taking the solution's density as about 1 g/mL), rinse,
    hard bake or UV cure.
 6. **Inspection.** Overlay to active; open-window check by optical
    inspection.

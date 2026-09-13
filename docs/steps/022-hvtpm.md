@@ -93,7 +93,8 @@ fab:
    (hvtp.3, hvtp.4) define the {term}`overlay` budget between this mask and the
    active pattern that determines which transistor is which.
 5. **Develop** in 2.38 % TMAH[^microchemicals-dev] (0.26 N; our
-   arithmetic from TMAH's molar mass of 91.15 g/mol); optional hard
+   arithmetic from TMAH's molar mass of 91.15 g/mol,[^wiki-tmah]
+   taking the solution's density as about 1 g/mL); optional hard
    bake or UV cure before the
    implant.[^txt-02]
 6. **Metrology.** Overlay to STI; {term}`CD` sampled; after-develop inspection.
@@ -209,6 +210,8 @@ fab:
 
 <!-- footnotes -->
 
+[^wiki-tmah]: Wikipedia, *Tetramethylammonium hydroxide*.
+    <https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>
 [^microchemicals-dev]: MicroChemicals, *Development of photoresists*,
     application note.
     <https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>
