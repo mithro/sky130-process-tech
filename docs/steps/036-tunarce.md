@@ -156,7 +156,7 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   the DPS II and 9400 gas sets are public.[^skw-01] SkyWater's filings name
   Air Products and Praxair (2021 S-1) and Linde and Airgas (fiscal 2023
   10-K) as gas suppliers.[^sec-01][^sec-02]
-* **CF₄/CHF₃** only if the ARC is inorganic.[^skw-01]
+* **CF₄/CHF₃** only if the ARC ({ref}`lithography materials <material-lithography-materials>`) is inorganic.[^skw-01]
 * **Helium backside cooling**, chamber consumables (electrostatic
   chuck, liners, focus ring).
 * **Endpoint optics** and their windows.
