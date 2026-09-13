@@ -146,7 +146,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Resources required
 
-* **Positive i-line (DNQ/novolac) photoresist**, about 1 µm (PDK
+* **Positive i-line (DNQ/novolac) photoresist** ({ref}`lithography materials <material-lithography-materials>`), about 1 µm (PDK
   nominal 1.14 µm[^pdk-03]); suppliers named in SkyWater's 2021 S-1: Dow,
   JSR, Tokyo Ohka Kogyo.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover,

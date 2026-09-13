@@ -210,8 +210,9 @@ is not stated, and no step page grades that.
 
 ## Consumables and facilities
 
-The lithography consumables are listed in the
-{ref}`materials index <materials-index>`; what is specific to a track is
+The lithography consumables are described on the
+{ref}`lithography materials <material-lithography-materials>` page and
+listed in the {ref}`materials index <materials-index>`; what is specific to a track is
 summarised here. None of the SkyWater sources describes the fab's
 chemical delivery or track exhaust.
 
@@ -288,6 +289,8 @@ for HV tip implants (0.3 µm) in the design assumptions.[^pdk-03]
   and the step assignments.
 * {ref}`materials-index` — resists, BARC, HMDS, developer and ultrapure
   water.
+* {ref}`material-lithography-materials` — resists, coatings, developer,
+  solvents, reticles and light-source consumables.
 * {ref}`machine-cd-sem-overlay-metrology` — the CD and overlay
   measurements after develop, and the rework they trigger.
 * {ref}`masks-index` — the 36 mask steps the tracks serve.

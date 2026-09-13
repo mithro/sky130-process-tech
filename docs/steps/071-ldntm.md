@@ -139,7 +139,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 
 ## Resources required
 
-* **Positive i-line (DNQ/novolac) photoresist**, about 1 µm
+* **Positive i-line (DNQ/novolac) photoresist** ({ref}`lithography materials <material-lithography-materials>`), about 1 µm
   (inferred); SkyWater's 2021 S-1 names The Dow Chemical Company, JSR
   Corporation and Tokyo Ohka Kogyo America as photoresist
   suppliers.[^sec-01]
