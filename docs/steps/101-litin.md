@@ -20,8 +20,9 @@ tungsten plugs. The next two steps pattern it ({ref}`LI1M <step-102>`,
 {ref}`LI1ME <step-103>`) into the `li1` layer of the PDK, a wiring
 level *below* metal 1 that connects transistor terminals to one
 another and to the `mcon` contacts of metal 1 over short distances.
-The step code reads "LI TiN" — the local-interconnect titanium
-nitride — by contrast with the {term}`liner` TiN of {ref}`TI/TIN1 <step-097>`.
+This reference describes the film as the local-interconnect titanium
+nitride, distinct from the {term}`liner` TiN of {ref}`TI/TIN1 <step-097>`;
+the public basis for that description follows.
 
 The public record on this film is better than for most of the flow.
 The PDK's stack diagram labels the conductor `li` with a thickness of
@@ -142,7 +143,7 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 4. **Optional treatments.** A brief N₂ or N₂/H₂ plasma after
    deposition to saturate the surface, or a short in-situ anneal to
    stabilise resistivity; some flows deposit a thin titanium
-   adhesion layer first (not indicated by the step name).
+   adhesion layer first (whether SKY130 does is not public).
 5. **Metrology.** Sheet resistance by {term}`four-point probe` on
    product monitor sites and blanket wafers — the 12.8 Ω/sq target;
    thickness by XRF; stress by wafer bow; reflectivity as a

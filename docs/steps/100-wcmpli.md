@@ -22,8 +22,7 @@ an isolated
 {term}`W plug` flush with the dielectric. The surface that results —
 planar oxide studded with tungsten discs — is the surface on which
 the titanium-nitride local interconnect ({ref}`LITIN <step-101>`) is
-deposited and patterned, which is what the "LI" in the step code
-refers to; the later tungsten polishes {ref}`WCMP2 <step-111>` to
+deposited and patterned; the later tungsten polishes {ref}`WCMP2 <step-111>` to
 {ref}`WCMP5 <step-148>` do the same for the contact and {term}`via` plugs
 under each metal level.
 
