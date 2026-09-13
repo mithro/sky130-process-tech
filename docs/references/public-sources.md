@@ -13752,6 +13752,8 @@ tools. Used on the process gases material page. Tier: cross-check
 Also used on the etch and chamber-clean gases material page.
 Also used on the hardware consumables material page, which notes that
 the records name no abatement system.
+Also used on the materials index page (the public basis section and the
+N₂O/NO, SF₆ and NF₃ rows).
 
 **EPA-GHGRP-SUBPART-I** — U.S. Environmental Protection Agency,
 *Electronics Manufacturing: Subpart I, Greenhouse Gas Reporting
@@ -13772,6 +13774,7 @@ which destruction or removal efficiency is claimed. Used on the process
 gases material page. Tier: cross-check (regulatory guidance).
 Also used on the etch and chamber-clean gases material page.
 Also used on the hardware consumables material page.
+Also used on the materials index page.
 
 **NIOSH-HCL** — National Institute for Occupational Safety and Health,
 *NIOSH Pocket Guide to Chemical Hazards: Hydrogen chloride*, CDC; read

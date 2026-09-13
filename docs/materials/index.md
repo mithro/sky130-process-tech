@@ -74,7 +74,7 @@ describe them; the main table assigns every material to one of them.
 
 ## The public basis for SkyWater-specific materials
 
-Three kinds of public source say something about the materials at
+Four kinds of public source say something about the materials at
 SkyWater's Bloomington fab. None of them ties a material to a step.
 
 **SkyWater's capability list.** SkyWater's *Facilities &
@@ -131,6 +131,26 @@ stacks and the TEOS/nitride {term}`passivation`[^cyp-qtp-113005][^cyp-qtp-123907
 the SKY130 stack.[^pdk-03][^pdk-04] These are the sources of the
 {ref}`films table <materials-films>` below.
 
+**The EPA greenhouse-gas record.** The U.S. Environmental Protection
+Agency's Greenhouse Gas Reporting Program lists the Bloomington facility
+(ID 1000354, "SKYWATER TECHNOLOGY FOUNDRY INC" in the records for
+2010–2013 and "SKYWATER TECHNOLOGY INC" from 2014) as reporting under
+subpart I, electronics manufacturing, in each year from 2011 to 2023;
+its subpart I entries include N₂O, SF₆ and NF₃ in every one of those
+years, alongside perfluorocarbons, hydrofluorocarbons and other
+fluorinated gases.[^epa-ghgrp-skywater] The record has three limits.
+The public tables give CO₂-equivalent totals by gas or gas group, so
+the perfluorocarbon and hydrofluorocarbon totals do not show which of
+CF₄, C₂F₆, CHF₃ or the other gases of those groups is
+emitted.[^epa-ghgrp-skywater] A facility reports each fluorinated gas
+"including each input gas and each by-product
+gas",[^epa-ghgrp-subpart-i] so a reported emission does not by itself
+show that the gas is supplied to a tool. And the tables name no tools,
+processes, steps or abatement systems.[^epa-ghgrp-skywater] The
+{ref}`process gases <material-process-gases>` and
+{ref}`etch and chamber-clean gases <material-etch-gases>` pages discuss
+what the record shows for their classes.
+
 ## How to read the index
 
 * **Typical and SkyWater-evidenced materials.** The *Role* column
@@ -138,9 +158,10 @@ the SKY130 stack.[^pdk-03][^pdk-04] These are the sources of the
   industry-typical practice for a 200 mm, 130 nm fab. The *Public
   SkyWater evidence* column quotes the capability list, a filing or a
   qualification report where one names the material, or the
-  capability it serves, and otherwise reads *typical (not listed)*. A
-  quotation shows that a material or capability exists at the fab; it
-  does not show that a given SKY130 step uses it.
+  capability it serves, adds the EPA greenhouse-gas record for the
+  gases it names, and otherwise reads *typical (not listed)*. A
+  quotation or record shows that a material or capability exists at
+  the fab; it does not show that a given SKY130 step uses it.
 * **Steps column.** A step is listed when the *Resources required*
   section of its page names the material (or, for an implant, names
   its source-support gases or source consumables). The list was
@@ -218,7 +239,7 @@ etch-gases
 | `he` | Helium (He) | {ref}`Bulk gas <material-process-gases>` | Backside wafer cooling in etch, CVD, PVD and implant tools; TEOS carrier and CVD diluent. | typical (not listed) | {ref}`005 <step-005>`, {ref}`006 <step-006>`, {ref}`008 <step-008>`, {ref}`011 <step-011>`, {ref}`036 <step-036>`, {ref}`037 <step-037>`, {ref}`038 <step-038>`, {ref}`042 <step-042>`, {ref}`045 <step-045>`, {ref}`050 <step-050>`, {ref}`053 <step-053>`, {ref}`056 <step-056>`, {ref}`059 <step-059>`, {ref}`062 <step-062>`, {ref}`065 <step-065>`, {ref}`066 <step-066>`, {ref}`069 <step-069>`, {ref}`072 <step-072>`, {ref}`073 <step-073>`, {ref}`077 <step-077>`, {ref}`079 <step-079>`, {ref}`080 <step-080>`, {ref}`083 <step-083>`, {ref}`089 <step-089>`, {ref}`091 <step-091>`, {ref}`094 <step-094>`, {ref}`097 <step-097>`, {ref}`101 <step-101>`, {ref}`103 <step-103>`, {ref}`104 <step-104>`, {ref}`105 <step-105>`, {ref}`108 <step-108>`, {ref}`114 <step-114>`, {ref}`115 <step-115>`, {ref}`117 <step-117>`, {ref}`119 <step-119>`, {ref}`125 <step-125>`, {ref}`126 <step-126>`, {ref}`128 <step-128>`, {ref}`130 <step-130>`, {ref}`135 <step-135>`, {ref}`138 <step-138>`, {ref}`140 <step-140>`, {ref}`141 <step-141>`, {ref}`143 <step-143>`, {ref}`145 <step-145>`, {ref}`150 <step-150>`, {ref}`153 <step-153>`, {ref}`155 <step-155>`, {ref}`156 <step-156>`, {ref}`158 <step-158>`, {ref}`160 <step-160>`, {ref}`163 <step-163>`, {ref}`164 <step-164>`, {ref}`166 <step-166>`, {ref}`169 <step-169>` |
 | `water-vapour` | Water vapour (H₂O) | {ref}`Ash and passivation additive <material-process-gases>` | Ash additive after high-dose implants ({ref}`PRIS <step-054>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`); post-etch corrosion passivation of Al–Cu and TiN. | typical (not listed) | {ref}`054 <step-054>`, {ref}`084 <step-084>`, {ref}`087 <step-087>`, {ref}`103 <step-103>`, {ref}`114 <step-114>`, {ref}`125 <step-125>`, {ref}`140 <step-140>`, {ref}`155 <step-155>`, {ref}`163 <step-163>` |
 | `hcl-dce` | HCl or trans-1,2-dichloroethylene (DCE) | {ref}`Oxidation additive <material-process-gases>` | Chlorine source for {term}`gettering` in furnace oxidations. | typical (not listed) | {ref}`010 <step-010>`, {ref}`040 <step-040>`, {ref}`043 <step-043>`, {ref}`047 <step-047>`, {ref}`063 <step-063>` |
-| `n2o-no` | Nitrous oxide (N₂O), nitric oxide (NO) | {ref}`Oxidant; nitriding gas <material-process-gases>` | Nitrided or {term}`oxynitride` gate and {term}`liner` oxides; {term}`ONO` oxynitride layers; oxidant for PECVD silane oxide and oxynitride. | Gases not named; the list has "Nitrided gate oxide" and "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01] | {ref}`010 <step-010>`, {ref}`040 <step-040>`, {ref}`047 <step-047>`, {ref}`059 <step-059>`, {ref}`063 <step-063>`, {ref}`080 <step-080>`, {ref}`091 <step-091>`, {ref}`117 <step-117>`, {ref}`128 <step-128>`, {ref}`135 <step-135>`, {ref}`143 <step-143>`, {ref}`150 <step-150>`, {ref}`158 <step-158>`, {ref}`164 <step-164>` |
+| `n2o-no` | Nitrous oxide (N₂O), nitric oxide (NO) | {ref}`Oxidant; nitriding gas <material-process-gases>` | Nitrided or {term}`oxynitride` gate and {term}`liner` oxides; {term}`ONO` oxynitride layers; oxidant for PECVD silane oxide and oxynitride. | The capability list names neither gas but has "Nitrided gate oxide" and "PECVD silane oxide/nitride/oxynitride, C1";[^skw-01] N₂O emissions reported to the EPA for the Bloomington facility in each year 2011–2023, process not stated.[^epa-ghgrp-skywater] | {ref}`010 <step-010>`, {ref}`040 <step-040>`, {ref}`047 <step-047>`, {ref}`059 <step-059>`, {ref}`063 <step-063>`, {ref}`080 <step-080>`, {ref}`091 <step-091>`, {ref}`117 <step-117>`, {ref}`128 <step-128>`, {ref}`135 <step-135>`, {ref}`143 <step-143>`, {ref}`150 <step-150>`, {ref}`158 <step-158>`, {ref}`164 <step-164>` |
 | `nh3` | Ammonia (NH₃) | {ref}`Precursor; nitriding gas <material-precursors>` | {term}`LPCVD`, BTBAS and PECVD nitride; PECVD oxynitride; oxide nitridation; possible ash additive. | "LPCVD nitride, with NH3 and also DH3"; NH3 in the Heatpulse and Iridia entries.[^skw-01] | {ref}`003 <step-003>`, {ref}`010 <step-010>`, {ref}`040 <step-040>`, {ref}`047 <step-047>`, {ref}`054 <step-054>`, {ref}`058 <step-058>`, {ref}`076 <step-076>`, {ref}`084 <step-084>`, {ref}`087 <step-087>`, {ref}`104 <step-104>`, {ref}`135 <step-135>`, {ref}`150 <step-150>`, {ref}`167 <step-167>` |
 | `sih4` | Silane (SiH₄) | {ref}`Precursor <material-precursors>` | HDP-CVD oxide and {term}`PSG`; PECVD oxide, nitride and oxynitride; LPCVD amorphous-silicon gate; tungsten {term}`nucleation <nucleation layer>`. | Named only in film names: "PECVD silane oxide/nitride/oxynitride, C1", "LPCVD silane oxide"; the gate film is "LPCVD polysilicon (undoped), both amorphous and crystalline".[^skw-01] | {ref}`011 <step-011>`, {ref}`048 <step-048>`, {ref}`058 <step-058>`, {ref}`059 <step-059>`, {ref}`076 <step-076>`, {ref}`080 <step-080>`, {ref}`089 <step-089>`, {ref}`091 <step-091>`, {ref}`099 <step-099>`, {ref}`104 <step-104>`, {ref}`105 <step-105>`, {ref}`110 <step-110>`, {ref}`115 <step-115>`, {ref}`117 <step-117>`, {ref}`121 <step-121>`, {ref}`126 <step-126>`, {ref}`128 <step-128>`, {ref}`132 <step-132>`, {ref}`135 <step-135>`, {ref}`141 <step-141>`, {ref}`143 <step-143>`, {ref}`147 <step-147>`, {ref}`150 <step-150>`, {ref}`156 <step-156>`, {ref}`158 <step-158>`, {ref}`164 <step-164>`, {ref}`167 <step-167>` |
 | `dcs` | Dichlorosilane (SiH₂Cl₂) | {ref}`Precursor <material-precursors>` | LPCVD nitride (isolation, gate cap, {term}`spacer` options); ONO trapping layer. | Not named; the LPCVD nitride entry reads "with NH3 and also DH3" and the list has "LPCVD oxide/nitride/oxide".[^skw-01] | {ref}`003 <step-003>`, {ref}`040 <step-040>`, {ref}`058 <step-058>`, {ref}`076 <step-076>` |
@@ -236,8 +257,8 @@ etch-gases
 | `chf3` | Trifluoromethane (CHF₃) | {ref}`Etch gas <material-etch-gases>` | Oxide and nitride etch, ARC open, sidewall passivation in metal etch. | CHF3 on the DPSII entry only.[^skw-01] | {ref}`005 <step-005>`, {ref}`036 <step-036>`, {ref}`042 <step-042>`, {ref}`062 <step-062>`, {ref}`077 <step-077>`, {ref}`079 <step-079>`, {ref}`094 <step-094>`, {ref}`103 <step-103>`, {ref}`108 <step-108>`, {ref}`114 <step-114>`, {ref}`119 <step-119>`, {ref}`125 <step-125>`, {ref}`130 <step-130>`, {ref}`138 <step-138>`, {ref}`140 <step-140>`, {ref}`145 <step-145>`, {ref}`153 <step-153>`, {ref}`155 <step-155>`, {ref}`160 <step-160>`, {ref}`163 <step-163>`, {ref}`166 <step-166>`, {ref}`169 <step-169>` |
 | `c2f6` | Hexafluoroethane (C₂F₆) | {ref}`Etch gas <material-etch-gases>` | Contact, via and seal-ring oxide etches. | C2F6 on the Lam 4400 entry only.[^skw-01] | {ref}`094 <step-094>`, {ref}`108 <step-108>`, {ref}`119 <step-119>`, {ref}`130 <step-130>`, {ref}`145 <step-145>`, {ref}`160 <step-160>`, {ref}`166 <step-166>` |
 | `etch-additives` | C₄F₈, CO, CH₃F, CH₂F₂, CH₄ | {ref}`Etch additive <material-etch-gases>` | Polymerising, selectivity and passivation additives: C₄F₈ and CO in contact and via etches; CH₃F or CH₂F₂ for nitride selectivity; CH₄ in metal etch. | typical (not listed) | {ref}`077 <step-077>`, {ref}`094 <step-094>`, {ref}`108 <step-108>`, {ref}`114 <step-114>`, {ref}`119 <step-119>`, {ref}`125 <step-125>`, {ref}`130 <step-130>`, {ref}`138 <step-138>`, {ref}`145 <step-145>`, {ref}`153 <step-153>`, {ref}`160 <step-160>`, {ref}`166 <step-166>` |
-| `sf6` | Sulphur hexafluoride (SF₆) | {ref}`Etch gas; clean gas <material-etch-gases>` | Nitride, TiN, TiW and pad etches; SF₆/O₂ chamber clean. | SF6 on the Lam 9400 and Lam 4400 entries.[^skw-01] | {ref}`005 <step-005>`, {ref}`006 <step-006>`, {ref}`042 <step-042>`, {ref}`062 <step-062>`, {ref}`077 <step-077>`, {ref}`103 <step-103>`, {ref}`114 <step-114>`, {ref}`125 <step-125>`, {ref}`138 <step-138>`, {ref}`153 <step-153>`, {ref}`169 <step-169>` |
-| `nf3` | Nitrogen trifluoride (NF₃) | {ref}`Clean gas; etch gas <material-etch-gases>` | Remote- or in-situ-plasma clean of HDP, PECVD and tungsten CVD chambers and etchers; nitride-tube clean option. | NF3 on the DPSII entry.[^skw-01] | {ref}`003 <step-003>`, {ref}`005 <step-005>`, {ref}`006 <step-006>`, {ref}`011 <step-011>`, {ref}`058 <step-058>`, {ref}`059 <step-059>`, {ref}`062 <step-062>`, {ref}`076 <step-076>`, {ref}`077 <step-077>`, {ref}`079 <step-079>`, {ref}`080 <step-080>`, {ref}`089 <step-089>`, {ref}`091 <step-091>`, {ref}`094 <step-094>`, {ref}`099 <step-099>`, {ref}`103 <step-103>`, {ref}`104 <step-104>`, {ref}`105 <step-105>`, {ref}`108 <step-108>`, {ref}`110 <step-110>`, {ref}`115 <step-115>`, {ref}`117 <step-117>`, {ref}`119 <step-119>`, {ref}`121 <step-121>`, {ref}`126 <step-126>`, {ref}`128 <step-128>`, {ref}`130 <step-130>`, {ref}`132 <step-132>`, {ref}`135 <step-135>`, {ref}`141 <step-141>`, {ref}`143 <step-143>`, {ref}`145 <step-145>`, {ref}`147 <step-147>`, {ref}`150 <step-150>`, {ref}`156 <step-156>`, {ref}`158 <step-158>`, {ref}`160 <step-160>`, {ref}`164 <step-164>`, {ref}`167 <step-167>` |
+| `sf6` | Sulphur hexafluoride (SF₆) | {ref}`Etch gas; clean gas <material-etch-gases>` | Nitride, TiN, TiW and pad etches; SF₆/O₂ chamber clean. | SF6 on the Lam 9400 and Lam 4400 entries;[^skw-01] SF₆ emissions (input or by-product gas) reported to the EPA for the Bloomington facility, no tool or process stated.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i] | {ref}`005 <step-005>`, {ref}`006 <step-006>`, {ref}`042 <step-042>`, {ref}`062 <step-062>`, {ref}`077 <step-077>`, {ref}`103 <step-103>`, {ref}`114 <step-114>`, {ref}`125 <step-125>`, {ref}`138 <step-138>`, {ref}`153 <step-153>`, {ref}`169 <step-169>` |
+| `nf3` | Nitrogen trifluoride (NF₃) | {ref}`Clean gas; etch gas <material-etch-gases>` | Remote- or in-situ-plasma clean of HDP, PECVD and tungsten CVD chambers and etchers; nitride-tube clean option. | NF3 on the DPSII entry;[^skw-01] NF₃ emissions (input or by-product gas) reported to the EPA for the Bloomington facility, no tool or process stated.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i] | {ref}`003 <step-003>`, {ref}`005 <step-005>`, {ref}`006 <step-006>`, {ref}`011 <step-011>`, {ref}`058 <step-058>`, {ref}`059 <step-059>`, {ref}`062 <step-062>`, {ref}`076 <step-076>`, {ref}`077 <step-077>`, {ref}`079 <step-079>`, {ref}`080 <step-080>`, {ref}`089 <step-089>`, {ref}`091 <step-091>`, {ref}`094 <step-094>`, {ref}`099 <step-099>`, {ref}`103 <step-103>`, {ref}`104 <step-104>`, {ref}`105 <step-105>`, {ref}`108 <step-108>`, {ref}`110 <step-110>`, {ref}`115 <step-115>`, {ref}`117 <step-117>`, {ref}`119 <step-119>`, {ref}`121 <step-121>`, {ref}`126 <step-126>`, {ref}`128 <step-128>`, {ref}`130 <step-130>`, {ref}`132 <step-132>`, {ref}`135 <step-135>`, {ref}`141 <step-141>`, {ref}`143 <step-143>`, {ref}`145 <step-145>`, {ref}`147 <step-147>`, {ref}`150 <step-150>`, {ref}`156 <step-156>`, {ref}`158 <step-158>`, {ref}`160 <step-160>`, {ref}`164 <step-164>`, {ref}`167 <step-167>` |
 | `hbr` | Hydrogen bromide (HBr), Br₂ | {ref}`Etch gas <material-etch-gases>` | Silicon trench and gate etches; organic ARC open; bromine option for the {term}`MiM <MiM capacitor>` plate etches; optional silicon-selective landing step in the ONO etch. | "HBR" on the DPSII entry; "HBr" on the Lam 9400 and 4400 entries.[^skw-01] | {ref}`006 <step-006>`, {ref}`036 <step-036>`, {ref}`042 <step-042>`, {ref}`062 <step-062>`, {ref}`138 <step-138>`, {ref}`153 <step-153>` |
 | `cl2` | Chlorine (Cl₂) | {ref}`Etch gas <material-etch-gases>` | Trench and gate etches; Al–Cu, TiN and TiW metal etches. | Cl2 on the DPSII and Lam 4400 entries; the metal etchers are listed without gases ("Lam 9600, Al, TiW, TiN, Pt").[^skw-01] | {ref}`006 <step-006>`, {ref}`062 <step-062>`, {ref}`103 <step-103>`, {ref}`114 <step-114>`, {ref}`125 <step-125>`, {ref}`138 <step-138>`, {ref}`140 <step-140>`, {ref}`153 <step-153>`, {ref}`155 <step-155>`, {ref}`163 <step-163>` |
 | `bcl3` | Boron trichloride (BCl₃) | {ref}`Etch gas <material-etch-gases>` | Al–Cu and TiN etches; MiM plate etch. | typical (not listed) | {ref}`103 <step-103>`, {ref}`114 <step-114>`, {ref}`125 <step-125>`, {ref}`138 <step-138>`, {ref}`140 <step-140>`, {ref}`153 <step-153>`, {ref}`155 <step-155>`, {ref}`163 <step-163>` |
@@ -633,6 +654,18 @@ supplier statement. The differences below remain.
 [^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
     filed 2024; "Raw materials" paragraph.
     <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
+[^epa-ghgrp-skywater]: U.S. Environmental Protection Agency, Greenhouse
+    Gas Reporting Program, Envirofacts tables `PUB_DIM_FACILITY` and
+    `PUB_FACTS_SUBP_GHG_EMISSION` for facility ID 1000354 (Bloomington,
+    Minnesota; "SKYWATER TECHNOLOGY FOUNDRY INC" for 2010–2013 and
+    "SKYWATER TECHNOLOGY INC" from 2014), reporting years 2010–2023,
+    retrieved 2026-09-13.
+    <https://data.epa.gov/efservice/PUB_DIM_FACILITY/FACILITY_ID/1000354/JSON>
+    <https://data.epa.gov/efservice/PUB_FACTS_SUBP_GHG_EMISSION/FACILITY_ID/1000354/SUB_PART_ID/43/JSON>
+[^epa-ghgrp-subpart-i]: U.S. Environmental Protection Agency,
+    *Electronics Manufacturing: Subpart I, Greenhouse Gas Reporting
+    Program*, information sheet, December 2024, accessed 2026-09-13.
+    <https://www.epa.gov/system/files/documents/2024-04/i_electronics_infosheet_2024.pdf>
 [^cyp-qtp-113005]: Cypress Semiconductor, *Product Qualification
     Plan, QTP# 113005: 64K Serial Non-Volatile SRAM Product Family, S8
     Technology, CMI (Fab 4)*, document 001-85611 Rev. *A, January
