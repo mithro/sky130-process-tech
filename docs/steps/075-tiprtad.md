@@ -155,7 +155,7 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 
 ## Resources required
 
-* **Nitrogen and argon** (likely ambient, our inference; SkyWater lists
+* **{ref}`Nitrogen <material-process-gases>` and argon** (likely ambient, our inference; SkyWater lists
   the Heatpulse's gases, "NH3, Ar, N2, O2", but no ambient for any
   step);[^skw-01] **oxygen** if a minor addition is used.
 * **{ref}`Tungsten-halogen lamps <material-hardware-consumables>`, quartz chamber/window, edge rings**;

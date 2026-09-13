@@ -138,8 +138,8 @@ practice).[^txt-02]
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` ({ref}`H₂/N₂ <material-anneal-ambients>`)** for the
-  ash;[^skw-01] **CF₄**, listed on the Iridia and Mattson
+* **{ref}`Oxygen <material-process-gases>`, nitrogen, {term}`forming gas` ({ref}`H₂/N₂ <material-anneal-ambients>`)** for the
+  ash;[^skw-01] **{ref}`CF₄ <material-etch-gases>`**, listed on the Iridia and Mattson
   ashers,[^skw-01] attacks the screen oxide and would, we infer, be
   omitted here (category page).
 * **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** ({ref}`wet chemicals <material-wet-chemicals>`) for

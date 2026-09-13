@@ -161,10 +161,10 @@ fab (SKY130's energy and dose are not public):
 
 ## Resources required
 
-* **Arsine (AsH₃)** in sub-atmospheric or dilute cylinders, or a
+* **{ref}`Arsine <material-dopant-sources>` (AsH₃)** in sub-atmospheric or dilute cylinders, or a
   **solid arsenic** source charge;[^wiki-implant][^wiki-ash3] arsine is
   highly toxic and is handled in monitored gas cabinets.
-* **Source-support gases** (argon, xenon), source consumables
+* **Source-support gases** ({ref}`argon <material-process-gases>`, xenon), source consumables
   (filaments, arc-chamber liners, extraction electrodes).
 * **Helium** for platen cooling; **liquid nitrogen** or cryopump
   regeneration; high-purity **nitrogen** for venting.

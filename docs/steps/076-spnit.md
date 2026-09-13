@@ -192,10 +192,10 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Dichlorosilane and ammonia** (DCS route)[^wiki-sin] or **BTBAS
+* **{ref}`Dichlorosilane <material-precursors>` and ammonia** (DCS route)[^wiki-sin] or **BTBAS
   and ammonia** (low-temperature route);[^gumpher-2004] **silane,
-  ammonia and nitrogen** for PECVD.[^wiki-pecvd]
-* **Nitrogen** purge; **NF₃ or CF₄/O₂** chamber clean for a PECVD
+  ammonia and {ref}`nitrogen <material-process-gases>`** for PECVD.[^wiki-pecvd]
+* **Nitrogen** purge; **{ref}`NF₃ <material-etch-gases>` or CF₄/O₂** chamber clean for a PECVD
   tool; {ref}`ammonium-chloride trap maintenance <material-hardware-consumables>` and HCl-tolerant exhaust
   for a DCS furnace.[^txt-02]
 * **Quartz ware** (furnace) or chamber consumables (PECVD).
