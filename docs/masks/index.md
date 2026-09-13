@@ -65,7 +65,10 @@ layers, combined by which operations, generate each mask. The pairing
 of masks with drawn layers below is therefore made by correspondence
 of names and descriptions across the files, and where it needs more
 reasoning than that it is marked *(inference)* and explained on the
-step page.
+step page. The one operation the PDK does state is for `hvntm`: "Drawn
+layer will be OR-ed with the CL and rechecked for CLDRC".[^pdk-periph]
+The PDK does not expand "CL"; the {ref}`HVNTM <step-068>` page reads it
+as a computed layer.
 
 ## Mask steps in this reference
 
@@ -102,7 +105,7 @@ In the table:
 | {ref}`LVTNM <step-014>` | Low Vt Nch\*, LVTNM — `X` | `clvtnm` mask 25:0; drawing 25:44, mask add 25:43, mask drop 25:42 | `lvtn` 125:44 | {ref}`LVTNI <step-015>`; strip {ref}`LVTNIS <step-016>` | `LVTNMCD` 0.38 / `LVTNMCDSP` 0.38 |
 | {ref}`NWM <step-017>` | N-Well\*, NWM — `X` | `cnwm` mask 21:0 | `nwell` 64:20 | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`; strip {ref}`LVTPIS <step-021>` | `NWMCD` 0.84 / `NWMCDSP` 1.27 |
 | {ref}`HVTPM <step-022>` | High Vt PCh\*, HVTPM — `X` | `chvtpm` mask 97:0; drawing 88:44, mask add 97:43, mask drop 97:42 | `hvtp` 78:44 | {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`; strip {ref}`PCHIS <step-025>` | `HVTPMCD` 0.38 / `HVTPMCDSP` 0.38 |
-| {ref}`PWBM <step-026>` | P-Well Block Mask, PWBM — *blank* | none | `pwbm` 19:44 | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`; strip {ref}`PWIS <step-029>` | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 |
+| {ref}`PWBM <step-026>` | P-Well Block Mask, PWBM — *blank* | none | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`; strip {ref}`PWIS <step-029>` | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 |
 | {ref}`PWDEM <step-030>` | P-Well Drain Extended, PWDEM — *blank* | none | `pwde` 124:20 | {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; strip {ref}`PWDEIS <step-033>` | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 |
 | {ref}`TUNM <step-035>` | Tunnel Mask, TUNM — `X` | `ctunm` mask 20:0 | `tunm` 80:20 | {ref}`TUNARCE <step-036>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`TUNME <step-039>` | `TUNMCD` 0.41 / `TUNMCDSP` 0.5 |
 | {ref}`ONOM <step-041>` | ONO Mask, ONOM — `X` | `conom` mask 88:0; drawing 87:44 | no drawn `onom` layer; from `tunm` 80:20 *(inference)* | {ref}`ONOME <step-042>` | `ONOMCD` 0.41 / `ONOMCDSP` 0.5 |
@@ -112,7 +115,7 @@ In the table:
 | {ref}`URPM <step-055>` | *not listed* | none | `urpm` 79:20 *(inference)* | {ref}`UPRI <step-056>`; strip {ref}`UPRIS <step-057>` | none listed |
 | {ref}`P1M <step-061>` | Poly 1, P1M — `X` | `cp1m` mask 28:0; mask add 33:43, mask drop 33:42, waffle drop 33:24 | `poly` 66:20 (also purposes gate 66:9, resistor 66:13) | {ref}`P1ME <step-062>` | `P1MCD` N/A / `P1MCDSP` 0.14; "Endcap/Gap" `P1G` 0.15 / 0.21 |
 | {ref}`NTM <step-064>` | N-tip Implant, NTM — `X` | `cntm` mask 27:0; drawing 26:20, mask add 26:21, mask drop 26:22 | no drawn `ntm` layer; derived from the device layers *(inference)* | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`; strip {ref}`ASTIS <step-067>` | `NTMCD` 0.84 / `NTMCDSP` 0.7 |
-| {ref}`HVNTM <step-068>` | High Volt. N-tip, HVNTM — `X` | `chvntm` mask 39:0; drawing 38:20 | `hvntm` 125:20 | {ref}`HVASTI <step-069>`; strip {ref}`HVASTIS <step-070>` | `HVNTMCD` 0.7 / `HVNTMCDSP` 0.7 |
+| {ref}`HVNTM <step-068>` | High Volt. N-tip, HVNTM — `X` | `chvntm` mask 39:0; drawing 38:20 | `hvntm` 125:20, "OR-ed with the CL" (the `hvntm` rules)[^pdk-periph] | {ref}`HVASTI <step-069>`; strip {ref}`HVASTIS <step-070>` | `HVNTMCD` 0.7 / `HVNTMCDSP` 0.7 |
 | {ref}`LDNTM <step-071>` | Lightly Doped N-tip, LDNTM — `X` | `cldntm` mask 11:0 | `ldntm` 11:44 | {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`; strip {ref}`LDASTIS <step-074>` | `LDNTMCD` 0.7 / `LDNTMCDSP` 0.7 |
 | {ref}`NPCM <step-078>` | Nitride Poly Cut, NPCM — `X` | `cnpc` mask 49:0; drawing 44:20 | `npc` 95:20 | {ref}`NPCME <step-079>` | `NPCMCD` 0.27 / `NPCMCDSP` 0.27 |
 | {ref}`PSDM <step-081>` | P+ Implant, PSDM — `X` | `cpsdm` mask 32:0; drawing 31:20, mask add 31:21, mask drop 31:22 | `psdm` 94:20 | {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`; strip {ref}`PDIS <step-084>` | `PSDMCD` 0.38 / `PSDMCDSP` 0.38 |
@@ -153,17 +156,21 @@ Notes on the table:
   (`cviam3` drawing 112:20, `cmm4` waffle drop 112:4) and 117
   (`cviam4` drawing 117:20, `cmm5` waffle drop 117:4).[^pdk-06]
 * **The "(inference)" entries.** `FOM` is paired with the active
-  layers `diff` and `tap` on its step page; `ONOM` with `tunm`
-  oversized; `LVOM` with the complement of the thick-oxide layer
+  layers `diff` and `tap` on its step page; `PWBM` with `nwell` as
+  well as `pwbm`, since `gds_layers.csv` has no drawn P-well layer;
+  `ONOM` with `tunm` oversized; `LVOM` with the complement of the thick-oxide layer
   `hvi`, since designers draw `hvi` rather than `lvom`; `NTM` with a
   Boolean combination of the device layers, since there is no drawn
   `ntm`; `CTM1` with `mcon`, "Contact from local interconnect to
   metal1", because `licon1` corresponds to `LICM1`; `RPM` with `urpm`
   as well as `rpm`; and `RRPM`, `URPM` and `CAP2M`, which have no
   `masks.csv` entry, with `rpm`, `urpm` and `cap2m` on the readings of
-  their step pages.[^pdk-06] The metal-fuse pairing for `MM4` is not an
-  inference: the metal-fuse rules say "For SP8P\*/SKY130P\* (PLM) CADflow
-  use MM4 for Metal Fuse".[^pdk-periph]
+  their step pages.[^pdk-06] The metal-fuse entry for `MM4` rests on
+  rule x.11, "Metal fuses are drawn in met4" (the other two x.11 rows
+  name `met2` and `met3`), and the note "For SP8P\*/SKY130P\* (PLM)
+  CADflow use MM4 for Metal Fuse";[^pdk-periph]
+  the {ref}`MM4 <step-154>` page reads the fuse links as printed by
+  this mask (inference from the note).
 * **Waffle drop.** `waffle drop` purposes exist for `cfom`, `cp1m` and
   `cmm1`–`cmm5`,[^pdk-06] the levels that x.15a allows to carry
   waffle-drop shapes inside the die;[^pdk-periph] the
@@ -202,7 +209,7 @@ None of the six has a mask-level (`c…`) layer in
 
 | Step | `masks.csv` | Drawn layer (`gds_layers.csv`) | Minimum CD, feature / space | Other PDK data |
 |------|-------------|--------------------------------|-----------------------------|----------------|
-| {ref}`PWBM <step-026>` | P-Well Block Mask, PWBM — *blank* | `pwbm` 19:44 | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 | The periphery rules have a `pwbm` rule set, "Define p-well block"; Table F2b has a PWBM column, marked `C` in, among others, the UHV 5/20 V drain-extended device rows. The step page treats the blank field as a documentation inconsistency. |
+| {ref}`PWBM <step-026>` | P-Well Block Mask, PWBM — *blank* | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 | The periphery rules have a `pwbm` rule set, "Define p-well block"; Table F2b has a PWBM column, marked `C` in, among others, the UHV 5/20 V drain-extended device rows. The step page treats the blank field as a documentation inconsistency. |
 | {ref}`PWDEM <step-030>` | P-Well Drain Extended, PWDEM — *blank* | `pwde` 124:20 | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 | The periphery rules have a `pwdem` rule set; Table F2b has a PWDEM column, marked `C` in the "UHV pmos 5/20V DE" row. |
 | {ref}`CAPM <step-137>` | Capacitor MiM, CAPM — *blank* | `capm` 89:44 | `CAPMCD` 2 / `CAPMCDSP` 0.84 | The periphery rules have a `capm` rule set, "Defines MIM capacitor", with values shown as "N/A"; Table F2b has a CAPM column, marked `C` in the "MiM" row. |
 | {ref}`RRPM <step-052>` | *not listed* | `rpm` 86:20 *(inference)* | none listed | No separate rule set or Table F2b column. |
@@ -318,10 +325,10 @@ reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
 ## Open questions
 
 * The PDK does not publish the operations that generate each mask from
-  the drawn layers, nor what the `drawing`, `mask add`, `mask drop` and
-  `waffle drop` purposes contribute when they sit on a different layer
-  number from the `mask` purpose (`cp1m` 28:0 against 33:42–33:43, for
-  example).[^pdk-06] The pairings marked *(inference)* rest on the
+  the drawn layers (apart from the `hvntm` note), nor what the
+  `drawing`, `mask add`, `mask drop` and `waffle drop` purposes
+  contribute when they sit on a different layer number from the `mask`
+  purpose (`cp1m` 28:0 against 33:42–33:43, for example).[^pdk-06] The pairings marked *(inference)* rest on the
   step pages' readings.
 * `masks.csv` leaves the `Used in SKY130` field blank for `PWBM`,
   `PWDEM` and `CAPM` and has no entry for the masks of
