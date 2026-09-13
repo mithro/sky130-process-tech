@@ -558,11 +558,10 @@ reading. The 1.0111 µm level is 0.075 µm above the `li` bottom, not
 top of the LINT on the glass beside it at the same height, and the
 label's leader line runs to the LINT rather than to `li`. We therefore
 read 1.0111 µm as the top of the LINT beside `li` (0.9361 + 0.075 µm),
-which fits every other label (our reading of the drawing[^pdk-04]). The
-{ref}`LITIN <step-101>`, {ref}`NILD2 <step-105>` and
-{ref}`CTM1 <step-107>` pages read it as the `li` top, which would leave
-0.075 µm for `li` and 0.365 µm from `li` to metal 1 instead of 0.34 µm.
-The public values for some films also disagree with other public
+which fits every other label and leaves 0.34 µm from the `li` top to
+metal 1 (our reading of the drawing[^pdk-04]; the
+{ref}`LITIN <step-101>`, {ref}`NILD2 <step-105>`, {ref}`CTM1 <step-107>`
+and {ref}`CTME <step-108>` pages follow it). The public values for some films also disagree with other public
 sources; those differences are among the open questions below.
 
 (overview-phases)=

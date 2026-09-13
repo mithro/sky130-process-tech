@@ -80,14 +80,15 @@ relative permittivity: FOX (3.9), PSG (3.9), LINT (7.3), NILD2 (4.05),
 NILD3 (4.5), NILD3_C (3.5), NILD4 (4.2), NILD4_C (3.5), NILD5 (4.1),
 NILD6 (4.0), TOPOX (3.9), TOPNIT (7.5), PI1 (2.94), IOX (3.9) and
 SPNIT (7.5), plus the MiM layers `capm` and `cap2m`. It also labels
-the inter-level dielectric / via heights directly: li top to met1
-bottom (NILD2) 0.265 µm, via1 (NILD3) 0.27 µm, via2 (NILD4) 0.42 µm,
+the inter-level dielectric / via heights directly: LINT top over li to
+met1 bottom (NILD2) 0.265 µm, via1 (NILD3) 0.27 µm, via2 (NILD4) 0.42 µm,
 via3 (NILD5) 0.39 µm, via4 (NILD6) 0.505 µm, LINT 0.075 µm, TOPOX
 0.09 µm, TOPNIT 0.54 µm on metal (0.3777 µm from the metal-5 bottom to its top in the field, on our
 reading of the drawing), NILD3_C/NILD4_C liners 0.030 µm, PSG
 0.6099 µm from the field-oxide top to the li bottom and 0.4299 µm from
 the field-poly top to the li bottom (our reading of the drawing); and levels
-above the substrate: FOX top 0.3262, li bottom 0.9361, li top 1.0111,
+above the substrate: FOX top 0.3262, li bottom 0.9361, 1.0111 (read as the top of
+the LINT beside li, 0.9361 + 0.075 µm; our reading of the drawing),
 met1 bottom 1.3761, met2 bottom 2.0061, met3 bottom 2.7861, met4
 bottom 4.0211, met5 bottom 5.3711, and PI1 top 11.8834 µm (further
 labels 5.2523, 6.1346, 0.4223 and 0.070 µm dimension the
