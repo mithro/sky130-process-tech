@@ -39,7 +39,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 118–134: via 1, metal 2, via 2 — reviewed and merged 2026-09-12 (48 inventory entries added as §8.13; strip-step open question reworded on 108/113/114)
 - [x] Steps 135–148: MiM capacitor 1, metal 3, via 3 — reviewed and merged 2026-09-13 (27 inventory entries added as §8.14; PDK capm level inconsistency disclosed)
 - [x] Steps 149–163: metal 4, MiM capacitor 2, via 4, metal 5 — reviewed and merged 2026-09-13 (30 inventory entries added as §8.15; SKY130 read as an S8PIR* flow for metal-5 rules)
-- [r] Steps 164–171: passivation, pad, alloy, test (branch `steps/164-171`, written 2026-09-13, under review)
+- [x] Steps 164–171: passivation, pad, alloy, test — reviewed and merged 2026-09-13 (25 inventory entries added as §8.16; all 171 step pages written)
 
 ## Phase 2b — Citation conversion (added 2026-08-30)
 
