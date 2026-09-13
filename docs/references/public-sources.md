@@ -67,7 +67,9 @@ Gives the minimum feature sizes used to derive the design rules and a
 small set of film thicknesses: poly 0.18 µm, field oxide 0.07 µm above
 the silicon surface under poly, oxide spacer 0.05 µm, pre-LI ILD
 0.5 µm, photoresist 1.14 µm, metal 1 minimum width/space 0.14 µm,
-contact (`mcon`) drawn CD 0.17 µm and "standard contact bottom CD" 0.09 µm, licon bottom CD 0.08 µm, via 0.15 µm. Tier: cross-check.
+contact (`mcon`) drawn CD 0.17 µm and "standard contact bottom CD" 0.09 µm, licon bottom CD 0.08 µm, via 0.15 µm.
+Also used on the medium-current and high-current implanter pages.
+Tier: cross-check.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -452,7 +454,10 @@ list then names tools and chemistries by area:
 
 Caveats: this is a 2020s capability list for the whole fab, so it
 includes tools added after the S8 flow was developed (copper plating,
-niobium, 193 nm scanners, ALD). Tier: cross-check (SkyWater statement).
+niobium, 193 nm scanners, ALD).
+Also used on the medium-current, high-current and high-energy implanter
+pages.
+Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -1130,14 +1135,19 @@ Technology: Fundamentals, Practice and Modeling*, Prentice Hall, 2000,
 ISBN 978-0-13-085037-9.
 <https://openlibrary.org/isbn/9780130850379>. Oxidation, diffusion,
 implantation, thin films, etch and back-end with models; the standard
-graduate text for this era. Tier: high-level.
+graduate text for this era.
+Also used on the medium-current, high-current and high-energy implanter
+pages.
+Tier: high-level.
 
 **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
 Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
 ISBN 978-0-9616721-6-4.
 <https://openlibrary.org/isbn/9780961672164>. Unit processes (wafer
 cleaning, oxidation, LPCVD/PECVD, sputtering, lithography, plasma
-etch, implantation). Tier: high-level.
+etch, implantation).
+Also used on the high-energy implanter page.
+Tier: high-level.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
 Process Integration*, Lattice Press, 1990, ISBN 978-0-9616721-4-0.
@@ -1163,7 +1173,9 @@ generations. Tier: high-level.
 **TXT-07** — M. Quirk and J. Serda, *Semiconductor Manufacturing
 Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
 <https://openlibrary.org/isbn/9780130815200>. Fab-floor view of each
-tool class, written around a 200 mm, 0.18 µm-era fab. Tier: high-level.
+tool class, written around a 200 mm, 0.18 µm-era fab.
+Also used on the medium-current and high-current implanter pages.
+Tier: high-level.
 
 **TXT-08** — H. Xiao, *Introduction to Semiconductor Manufacturing
 Technology*, 2nd ed., SPIE Press, 2012, ISBN 978-0-8194-9092-6.
@@ -1174,7 +1186,9 @@ Technology*, 2nd ed., SPIE Press, 2012, ISBN 978-0-8194-9092-6.
 Manufacturing Technology*, 2nd ed., CRC Press, 2007,
 ISBN 978-1-57444-675-3.
 <https://openlibrary.org/isbn/9781574446753>. Chapter-per-process
-reference with equipment detail. Tier: high-level.
+reference with equipment detail.
+Also used on the medium-current implanter page.
+Tier: high-level.
 
 **TXT-10** — R. B. Fair (ed.), *Rapid Thermal Processing: Science and
 Technology*, Academic Press, 1993, ISBN 978-0-12-247690-7.
@@ -1329,7 +1343,8 @@ the strip category page. Tier: high-level.
 
 **WIKI-ASH3** — Wikipedia, *Arsine*.
 <https://en.wikipedia.org/wiki/Arsine> Arsine, the arsenic source gas
-for implanters. Used on the implant category page. Tier: high-level.
+for implanters. Used on the implant category page, and on the
+medium-current and high-current implanter pages. Tier: high-level.
 
 **WIKI-ASM** — Wikipedia, *ASM International*.
 <https://en.wikipedia.org/wiki/ASM_International> Company article on ASM
@@ -1344,12 +1359,13 @@ Used on the test category page. Tier: high-level.
 **WIKI-AXCELIS** — Wikipedia, *Axcelis Technologies*.
 <https://en.wikipedia.org/wiki/Axcelis_Technologies> Company article on
 Axcelis Technologies, the former Eaton implanter business. Used on the
-implant category page. Tier: high-level.
+implant category page, and on the medium-current, high-current and
+high-energy implanter pages. Tier: high-level.
 
 **WIKI-BF3** — Wikipedia, *Boron trifluoride*.
 <https://en.wikipedia.org/wiki/Boron_trifluoride> Boron trifluoride, the
 boron source gas for B⁺ and BF₂⁺ implants. Used on the implant category
-page. Tier: high-level.
+page, and on the medium-current implanter page. Tier: high-level.
 
 **WIKI-BOE** — Wikipedia, *Buffered oxide etch*.
 <https://en.wikipedia.org/wiki/Buffered_oxide_etch> BOE composition and
@@ -1499,7 +1515,8 @@ etch category page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Ion_implantation> Energies, ranges,
 channelling, amorphisation and implanter classes. Used on steps 007,
 008, 015, 018, 019, 020, 023, 024, 027, 028, 031, 032, 037, 038 and 045
-and the implant category page. Tier: high-level.
+and the implant category page, and on the medium-current, high-current
+and high-energy implanter pages. Tier: high-level.
 
 **WIKI-KEITHLEY** — Wikipedia, *Keithley Instruments*.
 <https://en.wikipedia.org/wiki/Keithley_Instruments> Company article on
@@ -1578,7 +1595,8 @@ Used on step 011 and the deposition category page. Tier: high-level.
 
 **WIKI-PH3** — Wikipedia, *Phosphine*.
 <https://en.wikipedia.org/wiki/Phosphine> Phosphine, the phosphorus
-source gas for implanters. Used on the implant category page. Tier:
+source gas for implanters. Used on the implant category page, and on the
+medium-current and high-energy implanter pages. Tier:
 high-level.
 
 **WIKI-PIRANHA** — Wikipedia, *Piranha solution*.
@@ -1768,7 +1786,9 @@ Used on the lithography category page. Tier: high-level.
 **WIKI-VARIAN** — Wikipedia, *Varian Semiconductor*.
 <https://en.wikipedia.org/wiki/Varian_Semiconductor> Company article on
 Varian Semiconductor Equipment (implanters; now part of Applied
-Materials). Used on the implant category page. Tier: high-level.
+Materials). Used on the implant category page, and on the
+medium-current, high-current and high-energy implanter pages. Tier:
+high-level.
 
 **WIKI-VDP** — Wikipedia, *Van der Pauw method*.
 <https://en.wikipedia.org/wiki/Van_der_Pauw_method> The van der Pauw
@@ -1878,6 +1898,7 @@ Semiconductor), granted 2004-10-19.
 ³¹P⁺ implantation "with an ion implantation energy of about 0.6 MeV to
 about 1.6 MeV" and a dose of "about 5×10¹² ions/cm² to about
 1.5×10¹³ ions/cm²", performed after the STI field oxide is formed.
+Also used on the high-energy implanter page.
 Tier: deep dive.
 
 ### 8.6 Vendor, facility and marketplace pages for representative tools
@@ -1901,7 +1922,9 @@ Implanters"*, PR Newswire, 2021-11-02.
 Calls the GSD series "the industry benchmark for the longest
 manufactured and supported batch ion implanter" and names "the GSD/HE
 Ovation with energies up to 3 MeV, and the GSD/VHE Ovation with
-energies up to 4.9 MeV". Tier: cross-check (vendor statement).
+energies up to 4.9 MeV".
+Also used on the high-current and high-energy implanter pages.
+Tier: cross-check (vendor statement).
 
 **SNF-9400** — Stanford Nanofabrication Facility, *"Lam Research TCP
 9400 Poly Etcher (lampoly)"* equipment page.
@@ -1924,7 +1947,9 @@ Current & High Energy Batch Ion Implanters"*, product page, accessed
 2026-08-30. <https://www.axcelis.com/products/gsd-ovation/>. Describes
 the GSD/HE as a "10 stage LINAC with energies up to 3 MeV" and notes
 "source operating costs especially with fluorinated species". Distinct
-from the PR Newswire release AXCELIS-GSD. Tier: cross-check (vendor
+from the PR Newswire release AXCELIS-GSD.
+Also used on the high-current and high-energy implanter pages.
+Tier: cross-check (vendor
 statement).
 
 **AXCELIS-8250** — Semiconductor Online, *"8250HT Medium Current Ion
@@ -1933,6 +1958,7 @@ description).
 <https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>.
 The 8250HT covers "3keV to 750keV" with beam currents "between 4µA and
 3,500µA"; the medium-current class that SKW-01 lists as "Axcelis 8250".
+Also used on the medium-current implanter page.
 Tier: high-level (vendor description reproduced by a trade site).
 
 **AG-8800** — SemiStar Corp., *"AG Associates Heatpulse 8800 / 8808
@@ -2047,7 +2073,9 @@ n-well and p-well"*, M. J. Breitwisch, C. H. Lam and J. A. Slinkman
 5.2 × 10¹³ cm⁻², 550 keV at 1.25 × 10¹² cm⁻² and 50 keV at
 5 × 10¹¹ cm⁻²; P-well boron 550, 150 and 45 keV; "The concentration of
 dopant is higher at the bottom of the well and lower at the upper
-surface of the well". Tier: deep dive.
+surface of the well".
+Also used on the high-energy implanter page.
+Tier: deep dive.
 
 **PAT-WELL-HYNIX** — US 6,455,402 B2, *"Method of forming retrograde
 doping profile in twin well CMOS device"*, J.-H. Lee and J.-H. Son
@@ -2071,7 +2099,9 @@ improve retrograde process PMOS punch through voltage"*, S.-H. Yang
 (United Microelectronics), granted 1995-02-28.
 <https://patents.google.com/patent/US5393679A/en>. Retrograde well by
 "double charge … P++ … at an energy within a range from about 380 keV
-to about 400 keV" on a medium-current implanter. Tier: deep dive.
+to about 400 keV" on a medium-current implanter.
+Also used on the medium-current and high-energy implanter pages.
+Tier: deep dive.
 
 **PAT-RESIST-ZILOG** — US 6,576,405 B1, *"High aspect ratio
 photolithographic method for high energy implantation"*, S. J. Buffat
@@ -2158,7 +2188,9 @@ vol. 50, no. 9, pp. 1946–1951, 2003, DOI 10.1109/TED.2003.815371
 implanted in the silicon surface near the mask edge, altering the
 threshold voltage of those devices", with shifts "of up to 100 mV …
 over a lateral distance on the order of a micrometer"; models a
-"2.3 µm-thick pwell mask". Tier: deep dive.
+"2.3 µm-thick pwell mask".
+Also used on the high-energy implanter page.
+Tier: deep dive.
 
 **SHEU-2006** — Y.-M. Sheu, K.-W. Su, S. Tian, S.-J. Yang, C.-C. Wang,
 M.-J. Chen and S. Liu, *"Modeling the Well-Edge Proximity Effect in
@@ -2176,13 +2208,17 @@ proximity effect. Tier: deep dive.
 considerations for retrograde well and channel implants"*, 2000
 International Conference on Ion Implantation Technology, pp. 73–76,
 DOI 10.1109/IIT.2000.924093. Why MeV retrograde wells replaced diffused
-wells, with the cost trade-offs. Tier: deep dive.
+wells, with the cost trade-offs.
+Also used on the medium-current and high-energy implanter pages.
+Tier: deep dive.
 
 **RUBIN-2002** — L. M. Rubin, W. Morris and C. Jasper, *"Process
 control issues for retrograde well implants for narrow n+/p+ isolation
 in CMOS"*, 2002 International Conference on Ion Implantation
 Technology, pp. 17–20, DOI 10.1109/IIT.2002.1257927. How well-implant
-control sets the n⁺/p⁺ isolation spacing. Tier: deep dive.
+control sets the n⁺/p⁺ isolation spacing.
+Also used on the high-energy implanter page.
+Tier: deep dive.
 
 **BORLAND-1998** — J. O. Borland, H. T. Cho and J. K. Kim, *"LOCOS vs.
 shallow trench isolation latch-up using MeV implantation for well
@@ -2209,7 +2245,9 @@ wells with chained high-energy implants. Tier: deep dive.
 Methods in Physics Research B, vol. 59–60, pp. 584–591, 1991,
 DOI 10.1016/0168-583X(91)95283-J. Review of high-energy implantation
 for ULSI: retrograde wells, buried layers, masking and damage
-annealing. Tier: deep dive.
+annealing.
+Also used on the high-energy implanter page.
+Tier: deep dive.
 
 **BOURDELLE-2002** — K. K. Bourdelle, S. Chaudhry and J. Chu, *"The
 effect of triple well implant dose on performance of NMOS
@@ -2224,7 +2262,9 @@ Problems related to the use of multicharged phosphorous ions in an
 industrial context"*, Nuclear Instruments and Methods in Physics
 Research B, vol. 6, no. 1–2, pp. 283–286, 1985,
 DOI 10.1016/0168-583X(85)90646-9. Multiply charged phosphorus for MeV
-n-well implants in production. Tier: deep dive.
+n-well implants in production.
+Also used on the high-energy implanter page.
+Tier: deep dive.
 
 **RO-1999** — J.-S. Ro, *"A study of buried layer formation using MeV
 ion implantation for the fabrication of ULSI CMOS devices"*, Thin Solid
@@ -2245,7 +2285,9 @@ improvement by MeV BILLI (buried implanted layer for lateral
 isolation) plus buried layer implantation"*, J. O. Borland (Genus),
 granted 1998-10-13. <https://patents.google.com/patent/US5821589A/en>.
 The "BILLI" buried-implanted-layer approach to latch-up suppression
-with MeV implants. Tier: deep dive.
+with MeV implants.
+Also used on the high-energy implanter page.
+Tier: deep dive.
 
 **CHAUDHRY-1997** — S. Chaudhry, C. S. Rafferty, W. J. Nagy,
 Y. F. Chyan, M. S. Carroll, A. S. Chen and K. H. Lee, *"Suppression of
@@ -2324,13 +2366,18 @@ dive.
 *"Ion implant monitoring with thermal wave technology"*, Applied
 Physics Letters, vol. 47, no. 6, pp. 584–586, 1985,
 DOI 10.1063/1.96079. The thermal-wave (modulated-reflectance) implant
-monitor. Tier: deep dive.
+monitor.
+Also used on the medium-current implanter page.
+Tier: deep dive.
 
 **CURRENT-1996** — M. I. Current, *"Ion implantation for silicon device
 manufacturing: A vacuum perspective"*, Journal of Vacuum Science &
 Technology A, vol. 14, no. 3, pp. 1115–1123, 1996,
 DOI 10.1116/1.580279. Production-implanter overview: sources, beam
-lines, end stations and vacuum. Tier: deep dive.
+lines, end stations and vacuum.
+Also used on the medium-current, high-current and high-energy implanter
+pages.
+Tier: deep dive.
 
 **MACK-2007** — C. Mack, *Fundamental Principles of Optical
 Lithography: The Science of Microfabrication*, Wiley, 2007,
@@ -2351,13 +2398,18 @@ M. Dennon and C. Kozak, *"Thick photoresist outgassing during MeV
 implantation (mechanism and impact on production)"*, Proceedings of
 the 11th International Conference on Ion Implantation Technology
 (1996), pp. 186–189, DOI 10.1109/IIT.1996.586180. Outgassing of thick
-resists during MeV implantation. Tier: deep dive.
+resists during MeV implantation.
+Also used on the high-energy implanter page.
+Tier: deep dive.
 
 **HORSKY-1998** — T. N. Horsky, *"Photoresist outgassing in high energy
 and high current ion implantation"*, 1998 International Conference on
 Ion Implantation Technology, vol. 1, pp. 654–657,
 DOI 10.1109/IIT.1999.812201. Resist outgassing in high-energy and
-high-current implanters. Tier: deep dive.
+high-current implanters.
+Also used on the medium-current, high-current and high-energy implanter
+pages.
+Tier: deep dive.
 
 **FUJIMURA-1989** — S. Fujimura, J. Konno, K. Hikazutani and H. Yano,
 *"Ashing of Ion-Implanted Resist Layer"*, Japanese Journal of Applied
@@ -2791,7 +2843,8 @@ line design considerations for photoresist outgassing with high energy
 (MeV) ion implantation", *Proc. 11th International Conference on Ion
 Implantation Technology (1996)*, pp. 350–354.
 <https://doi.org/10.1109/IIT.1996.586285> End-station and beam-line
-design to cope with resist outgassing at MeV energies. Used on step 007.
+design to cope with resist outgassing at MeV energies. Used on step 007,
+and on the high-energy implanter page.
 Tier: deep dive.
 
 **OEHRLEIN-1994** — G. S. Oehrlein, Y. Zhang, D. Vender and M. Haverlag,
@@ -3000,7 +3053,8 @@ Problems in Ion Implantation", in *Ion Implantation: Equipment and
 Techniques*, Springer Series in Electrophysics, Springer, 1983, pp.
 196–213. <https://doi.org/10.1007/978-3-642-69156-0_25> Wafer cooling
 and photoresist masking problems (flow, crust, popping) in implantation.
-Used on steps 007 and 009. Tier: deep dive.
+Used on steps 007 and 009, and on the high-current implanter page. Tier:
+deep dive.
 
 **STEIGERWALD-1997** — J. M. Steigerwald, S. P. Murarka and R. J.
 Gutmann, *Chemical Mechanical Planarization of Microelectronic
@@ -4185,7 +4239,8 @@ Used on the strip category page. Tier: cross-check.
 devices: Past, present and future", *Materials Science in Semiconductor
 Processing* **62**, 13–22 (2017).
 <https://doi.org/10.1016/j.mssp.2016.10.045> Implantation for advanced
-silicon devices, past to future. Used on the implant category page.
+silicon devices, past to future. Used on the implant category page, and
+on the medium-current implanter page.
 Tier: deep dive.
 
 **DENNARD-1974** — R. H. Dennard, F. H. Gaensslen, H.-N. Yu, V. L.
@@ -4214,7 +4269,8 @@ range theory. Used on the implant category page. Tier: cross-check.
 1986, ISBN 978-0-471-10311-0.
 <https://openlibrary.org/isbn/9780471103110> The classic monograph on
 range theory, damage, annealing and equipment. Used on the implant
-category page. Tier: deep dive.
+category page, and on the medium-current implanter page. Tier: deep
+dive.
 
 ##### Theses
 
@@ -5362,7 +5418,7 @@ beam shadowing effect in submicrometer large-angle-tilt implanted drain
 <https://doi.org/10.1016/0038-1101(94)00256-F> Ion-beam shadowing of
 tilted drain implants by adjacent structures, the effect behind the
 PDK's shadowing allowances. Used on steps 064, 066, 068, 069, 072 and
-073. Tier: deep dive.
+073, and on the medium-current implanter page. Tier: deep dive.
 
 **CODELLA-1985** — C. F. Codella and S. Ogura, "Halo doping effects in
 submicron DI-LDD device design", *IEDM 1985 Technical Digest*, pp.
@@ -5417,7 +5473,8 @@ photoresist on wafer charging during high current arsenic implant",
 *Proc. 11th International Conference on Ion Implantation Technology*
 (1996), pp. 89–92. <https://doi.org/10.1109/IIT.1996.586135> Wafer
 charging through resist during high-current arsenic implants. Used on
-steps 065 and 067. Tier: deep dive.
+steps 065 and 067, and on the high-current implanter page. Tier: deep
+dive.
 
 **MACHALA-1997** — C. Machala, R. Wise, D. Mercer and A. Chatterjee,
 "The role of boron segregation and transient enhanced diffusion on
@@ -5503,7 +5560,8 @@ Semiconductor Manufacturing Company), *Multiple tilted angle ion
 implantation MOSFET method*, US 5,372,957 A, granted 1994-12-13.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5372957>
 Multiple tilted-angle implantation with wafer rotation for LDD devices.
-Used on steps 066, 069 and 073. Tier: deep dive.
+Used on steps 066, 069 and 073, and on the medium-current implanter
+page. Tier: deep dive.
 
 **PAT-SPE-AMD** — B. Yu (Advanced Micro Devices), *Solid phase epitaxy
 activation process for source/drain junction extensions and halo
@@ -5594,7 +5652,8 @@ originated by mechanical angle error in high current implanter",
 Technology (IWJT 2002)*, pp. 19–22.
 <https://doi.org/10.1109/IWJT.2002.1225190> Drain-current asymmetry in
 130 nm MOSFETs from extension-implant shadowing caused by an implanter
-angle error. Used on steps 064 and 065. Tier: deep dive.
+angle error. Used on steps 064 and 065, and on the high-current
+implanter page. Tier: deep dive.
 
 ### 8.12 Spacer, source/drain, silicide, local-interconnect and metal-1 module sources
 
@@ -5686,7 +5745,8 @@ CF₄/O₂/N₂. Used on steps 077, 079 and 108. Tier: deep dive.
 "Shadowing effects due to tilted arsenic source/drain implant", *IEEE
 Transactions on Electron Devices* **36**(11), 2458–2461 (1989).
 <https://doi.org/10.1109/16.43667> Shadowing of a tilted source/drain
-implant by the gate and spacer. Used on steps 077, 082, 083 and 086.
+implant by the gate and spacer. Used on steps 077, 082, 083 and 086, and
+on the high-current implanter page.
 Tier: deep dive.
 
 **LEE-CHEN-1983** — Y. H. Lee and M.-M. Chen, "Silicon etching mechanism
@@ -5905,7 +5965,7 @@ emissivity in RTP. Used on steps 088 and 092. Tier: deep dive.
 implantation", *Proc. 11th International Conference on Ion Implantation
 Technology* (1996), pp. 53–56. <https://doi.org/10.1109/IIT.1996.586119>
 Wafer charging and flood-gun control during high-current implants. Used
-on step 082. Tier: deep dive.
+on step 082, and on the medium-current implanter page. Tier: deep dive.
 
 **CURRENT-1998** — M. I. Current, M. Foad, S. Brown, W. Lukaszek and M.
 Vella, "Photoresist effects on wafer charging control: current-voltage
@@ -5913,14 +5973,16 @@ characteristics measured with Charm-2 monitors during high-current As⁺
 implantation", *Proc. 1998 International Conference on Ion Implantation
 Technology*, vol. 1, pp. 490–493.
 <https://doi.org/10.1109/IIT.1999.812159> Charging control during
-high-current arsenic implants. Used on step 086. Tier: deep dive.
+high-current arsenic implants. Used on step 086, and on the high-current
+implanter page. Tier: deep dive.
 
 **DIXON-1996** — W. Dixon, W. Lukaszek and C. Heden,
 "Photoresist-enhanced wafer charging during high current ion
 implantation", *Proc. 11th International Conference on Ion Implantation
 Technology* (1996), pp. 85–88. <https://doi.org/10.1109/IIT.1996.586134>
 Resist-enhanced wafer charging during high-current implants. Used on
-steps 081, 082 and 083. Tier: deep dive.
+steps 081, 082 and 083, and on the high-current implanter page. Tier:
+deep dive.
 
 **GERRITSEN-2000** — E. Gerritsen, "Spike anneal: RTP processing at
 reduced thermal budget with applications to TiSi₂ formation towards
@@ -5940,7 +6002,8 @@ variations on batch implanters: a graphical technique to analyze
 spinning disk systems", *Proc. 11th International Conference on Ion
 Implantation Technology* (1996), pp. 264–267.
 <https://doi.org/10.1109/IIT.1996.586257> Channelling variation across a
-spinning-disc batch implanter. Used on steps 082 and 086. Tier: deep
+spinning-disc batch implanter. Used on steps 082 and 086, and on the
+high-current implanter page. Tier: deep
 dive.
 
 **JOSSE-2002** — E. Josse, F. Arnaud, F. Wacquant, D. Lenoble, O. Menut
@@ -5983,7 +6046,8 @@ junctions. Used on step 088. Tier: deep dive.
 high current implantation", *Proc. 11th International Conference on Ion
 Implantation Technology* (1996), pp. 73–76.
 <https://doi.org/10.1109/IIT.1996.586128> Wafer charging and flood-gun
-control during high-current implants. Used on steps 082 and 086. Tier:
+control during high-current implants. Used on steps 082 and 086, and on
+the high-current implanter page. Tier:
 deep dive.
 
 **MEZACK-2000** — G. Mezack, T. Callahan, S. Mehta and U. Jeong,
@@ -5991,7 +6055,8 @@ deep dive.
 for advanced device fabrication", *Proc. 2000 International Conference
 on Ion Implantation Technology*, pp. 431–434.
 <https://doi.org/10.1109/IIT.2000.924180> The single-wafer high-current
-implanter alternative. Used on steps 082, 083 and 086. Tier: deep dive.
+implanter alternative. Used on steps 082, 083 and 086, and on the
+high-current implanter page. Tier: deep dive.
 
 **OGURA-1982** — S. Ogura, C. F. Codella, N. Rovedo, J. F. Shepard and
 J. Riseman, "A half micron MOSFET using double implanted LDD", *IEDM
@@ -6011,7 +6076,7 @@ prevention of photo resist burning in a high current ion implanter",
 *Proc. 11th International Conference on Ion Implantation Technology*
 (1996), pp. 190–193. <https://doi.org/10.1109/IIT.1996.586181> Resist
 burning in a high-current implanter. Used on steps 081, 082, 084, 085
-and 086. Tier: deep dive.
+and 086, and on the high-current implanter page. Tier: deep dive.
 
 **ROUSSEAU-1996** — P. M. Rousseau, P. B. Griffin, S. C. Kuehne and J.
 D. Plummer, "Enhanced diffusion by electrical deactivation of arsenic
@@ -8527,7 +8592,8 @@ SKY130 or the Bloomington fab; they describe equipment classes and
 models in general. Every URL was fetched on 2026-09-13, and the IEEE and
 AIP papers were checked through Crossref (bibliographic data) and
 OpenAlex (abstracts) on that date; the annotations of papers rest on
-their abstracts.
+their abstracts. An entry's tier records its first use; a page that
+cites the source later may list it under a different reading tier.
 
 #### Medium-current implanter (first cited there)
 
@@ -8540,7 +8606,8 @@ station" and ">600 units shipped", the NV-6200AV with "tilt angles from
 0 to 60 degrees", the 1994 NV-GSD-HE combining "the GSD end station and
 the LINAC technology", the "back biased Secondary Electron Flood (SEF)"
 of 1996, the NV-8250HT of 2000 and the spin-off as Axcelis in 2000. Used
-on the medium-current, high-current and high-energy implanter pages.
+on the medium-current, high-current and high-energy implanter pages, and
+on the implant category page.
 Tier: cross-check (vendor statement).
 
 **TANJYO-2011** — M. Tanjyo and M. Naito, "History of Ion Implanter and
