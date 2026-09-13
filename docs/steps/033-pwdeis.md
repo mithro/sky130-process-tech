@@ -109,13 +109,13 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash; **CF₄**,
+* **Oxygen, nitrogen, {term}`forming gas` ({ref}`H₂/N₂ <material-anneal-ambients>`)** for the ash; **CF₄**,
   listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
   trench oxide and would, we infer, be omitted here (category page).
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
   acid** ({ref}`wet chemicals <material-wet-chemicals>`)[^wiki-rca] (category page); **dilute HF** only if the oxide is
   removed.
-* **Ultrapure DI water**, **isopropanol**, **nitrogen**.
+* **{ref}`Ultrapure DI water <material-ultrapure-water>`**, **isopropanol**, **nitrogen**.
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
   S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 

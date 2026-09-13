@@ -158,7 +158,7 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   Air Products and Praxair (2021 S-1) and Linde and Airgas (fiscal 2023
   10-K) as gas suppliers.[^sec-01][^sec-02]
 * **CF₄/CHF₃** only if the {ref}`ARC <material-lithography-materials>` is inorganic.[^skw-01]
-* **Helium backside cooling**, chamber consumables (electrostatic
+* **Helium backside cooling**, {ref}`chamber consumables <material-hardware-consumables>` (electrostatic
   chuck, liners, focus ring).
 * **Endpoint optics** and their windows.
 

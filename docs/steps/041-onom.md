@@ -152,7 +152,7 @@ etch).
 * **i-line photoresist** ({ref}`lithography materials <material-lithography-materials>`; Dow, JSR, TOK are SkyWater's named
   suppliers[^sec-01]), **HMDS**, optional **inorganic or organic
   ARC**.[^pat-03]
-* **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, DI water,
+* **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, {ref}`DI water <material-ultrapure-water>`,
   nitrogen.
 * **The ONO reticle** — chrome on quartz; relaxed features.
 

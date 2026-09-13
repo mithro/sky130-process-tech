@@ -95,7 +95,7 @@ An industry-generic second drift-well implant for a 200 mm,
 ## Resources required
 
 * **Boron trifluoride (BF₃)**; support gases; cryopump and source
-  consumables; monitor wafers (category page).
+  consumables; {ref}`monitor wafers <material-substrates>` (category page).
 * No new resist: the {ref}`PWDEM <step-030>` resist is reused.
 
 ## Related steps and cross-references
