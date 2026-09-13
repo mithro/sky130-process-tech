@@ -25,7 +25,7 @@ pages.
 | Etchants | Hydrofluoric acid, of which "A common concentration is 49% (48–52%)";[^wiki-hf] buffered oxide etch, for example "6:1 volume ratio of 40% NH4F to 49% HF";[^wiki-boe] phosphoric acid, "commonly encountered as an 85% aqueous solution";[^wiki-h3po4] HF/HNO₃ for silicon.[^robbins-1959] |
 | Cleans | SC-1 and SC-2 "at 75 or 80 °C";[^wiki-rca] SPM, "3 parts of concentrated sulfuric acid and 1 part of 30 wt. % hydrogen peroxide solution" as a typical mixture;[^wiki-piranha] ozonised water.[^hattori-1998] |
 | Solvents | Isopropanol for drying;[^kern-1990] hydroxylamine–alkanolamine residue removers.[^pat-ekc-hydroxylamine] |
-| Grades | SEMI specifications for hydrofluoric acid, buffered oxide etchants, hydrogen peroxide, sulphuric acid and 2-propanol, the last "typically required by semiconductor devices with geometries of 0.8 to 1.2 microns" at its VLSI grade.[^semi-c28][^semi-c23][^semi-c30][^semi-c44][^semi-c41] |
+| Grades | SEMI specifications for hydrofluoric acid, buffered oxide etchants, hydrogen peroxide, sulphuric acid and 2-propanol, the last "typically required by semiconductor devices with geometries of 0.8 to 1.2 microns" at its VLSI grade, a grade defined for much larger geometries than 130 nm.[^semi-c28][^semi-c23][^semi-c30][^semi-c44][^semi-c41] |
 | Hazards | HF causes "bone damage due to HF strongly interacting with calcium in bones";[^wiki-hf] mixing piranha "is an extremely exothermic process".[^wiki-piranha] |
 | SkyWater evidence | "Sulfuric, SC1, phosphoric, BOE, spin or IPA dry"; "EKS265, EKC270 solvents"; "HF, DSP+HF, titration controlled"; "HF/SC1/SC2";[^skw-01] "high-purity acid, base, and cleaning solutions for various wet processing steps"[^sec-01][^sec-02] |
 | SKY130 steps | 49 steps; see {ref}`SKY130 steps that use this class <material-wet-chemicals-steps>` |
@@ -65,7 +65,7 @@ etchant of "hydrogen fluoride, ammonium fluoride and a surfactant
 selected from a group consisting of fluorine-containing carboxylic acids
 and their salts, with which very minute and complicated pattern can be
 etched",[^pat-bhf-daikin] and a Hashimoto Chemical patent with Ohmi
-among its inventors "a mixture of hydrofluoric acid, ammonium fluoride
+among its inventors describes a composition comprising "a mixture of hydrofluoric acid, ammonium fluoride
 solution and water, and at least one compound selected from the group
 of surfactants".[^pat-bhf-hashimoto]
 HF also etches silicon nitride, at rates that differ from oxide;
@@ -167,9 +167,9 @@ temperatures are not public.
   volume in Wikipedia's example, which etches thermal oxide "at
   approximately 2 nanometres per second at 25 degrees
   Celsius";[^wiki-boe] SEMI C23 covers "grades of buffered oxide
-  etchants used in the semiconductor industry".[^semi-c23] Surfactant
-  grades follow patents such as Hashimoto's and
-  Daikin's.[^pat-bhf-hashimoto][^pat-bhf-daikin]
+  etchants used in the semiconductor industry".[^semi-c23]
+  Surfactant-bearing buffered etchants are described in patents such as
+  Hashimoto's and Daikin's.[^pat-bhf-hashimoto][^pat-bhf-daikin]
 * **Hydrogen peroxide.** 30 % in the RCA and piranha
   recipes;[^wiki-rca][^wiki-piranha] SEMI C30 covers "five Grades and
   one Tier of hydrogen peroxide used in the semiconductor
@@ -189,7 +189,9 @@ temperatures are not public.
 * **Isopropanol (2-propanol).** SEMI C41 "covers all grades of
   2-propanol used in the semiconductor industry", and "The VLSI grade
   purity level is typically required by semiconductor devices with
-  geometries of 0.8 to 1.2 microns".[^semi-c41] It "is a colorless,
+  geometries of 0.8 to 1.2 microns", a grade defined for much larger
+  geometries than 130 nm; the listing describes no other
+  grade.[^semi-c41] It "is a colorless,
   flammable, organic compound".[^wiki-ipa]
 * **Post-etch residue removers.** Proprietary solvent blends; the step
   pages write them as the EKC265/EKC270 class, and EKC Technology's
@@ -287,8 +289,8 @@ The steps fall into groups, as the index rows describe them:
 * **Acid and peroxide cleans and wet etches** in the front end — the
   pre-furnace cleans, the nitride strip at {ref}`NS19 <step-013>`, the
   tunnel-window and gate-oxide etches, the backside film removal at
-  {ref}`BFR <step-060>` and the SPM and SC-1 cleans after the implant
-  strips.
+  {ref}`BFR <step-060>`, and the SPM and SC-1 cleans after the implant
+  strips and after the trench, poly, spacer and nitride-cut etches.
 * **Solvent cleans** after the contact, via, local-interconnect,
   metal, capacitor, seal-ring and pad etches, and in the sacrificial
   etch at {ref}`SACETCH <step-095>`.
@@ -338,22 +340,24 @@ public.
 * **HF-last surfaces and queue time.** A clean that ends in HF leaves a
   hydrogen-terminated surface[^higashi-1990] on which native oxide grows
   again in air or water;[^morita-1990] the {ref}`GOXETCH <step-046>`
-  page matches its HF-last pre-gate clean to SkyWater's "dilute HF-last
-  with IPA dry" entry,[^skw-01] and the time before the furnace is a
+  page matches a possible HF-last pre-gate clean to SkyWater's "dilute
+  HF-last with IPA dry" entry,[^skw-01] and the time before the furnace is a
   {term}`queue time` the flow must control (industry practice).
 * **SC-2 before hot steps.** The pre-furnace and pre-anneal cleans name
   SC-2 because it removes metals,[^wiki-rca] and SkyWater lists SC-2
   only on its DNS and FSI tools,[^skw-01] which is how the
   {ref}`wet bench page <machine-wet-bench>` assigns those cleans.
 * **Thin oxides.** {ref}`TUNME <step-039>` and
-  {ref}`GOXETCH <step-046>` etch thin oxides with BOE, the etchant a
-  Cypress embedded-SONOS patent names for the two operations, with 20:1
-  BOE or 50:1 HF among its alternatives for the pad
-  oxide;[^pat-04] slow, buffered etches keep such steps
+  {ref}`GOXETCH <step-046>` etch thin oxides with dilute HF or BOE, as
+  their pages read them; a Cypress embedded-SONOS patent names BOE for
+  both operations (10:1 with surfactant for the pad oxide, and a BOE etch
+  under similar conditions for the thick gate oxide), with 20:1 BOE or
+  50:1 HF among its alternatives for the pad oxide;[^pat-04] slow, buffered etches keep such steps
   controllable.[^wiki-boe][^kikuyama-1994]
-* **The nitride strip.** {ref}`NS19 <step-013>` strips the isolation
-  nitride in hot phosphoric acid, whose water content sets the
-  nitride-to-oxide selectivity;[^vgh-1967][^liu-2007] "phosphoric"
+* **The nitride strip.** The {ref}`NS19 <step-013>` page reads the
+  isolation nitride strip as hot phosphoric acid, whose water content
+  sets the nitride-to-oxide selectivity (industry
+  practice);[^vgh-1967][^liu-2007] "phosphoric"
   appears only on SkyWater's Akrion entry.[^skw-01]
 * **Backside silicon.** {ref}`BFR <step-060>` describes its silicon etch
   as HF/HNO₃, in which nitric acid oxidises the silicon and HF dissolves
