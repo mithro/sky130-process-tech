@@ -20,10 +20,10 @@ its fab and which SKY130 steps name them. The etch mechanisms are on the
 
 | | Etch and chamber-clean gases |
 |---|---|
-| What they do | Supply halogen atoms and ions that form volatile products with the film; ion bombardment and reactive gas together etch far faster than either alone.[^coburn-1979] |
+| What they do | Supply halogen atoms and ions that form volatile products with the film; ion bombardment enhances the gas–surface reaction, the effect Coburn and Winters describe.[^coburn-1979] |
 | Gases in the SKY130 steps | CF₄, CHF₃, C₂F₆, C₄F₈, CH₃F, CH₂F₂, CO, CH₄, SF₆, NF₃, HBr, Cl₂, BCl₃ (step-page readings). |
 | Grades | SEMI C3.40 (carbon tetrafluoride) and C3.24 (sulphur hexafluoride).[^semi-c3-40][^semi-c3-24] |
-| Climate | CF₄ "persists in the atmosphere for 50,000 years";[^wiki-cf4] NF₃ has "a global warming potential (GWP) 17,200 times greater than that of CO2" (a fourth-assessment value);[^wiki-nf3] SF₆ "is the most potent greenhouse gas".[^wiki-sf6] |
+| Climate | CF₄ "persists in the atmosphere for 50,000 years";[^wiki-cf4] NF₃ has "a global warming potential (GWP) 17,200 times greater than that of CO2" (a fourth-assessment value);[^wiki-nf3] SF₆ is, according to the IPCC as Wikipedia reports it, "the most potent greenhouse gas".[^wiki-sf6] |
 | Hazards | NIOSH IDLH "10 ppm" for chlorine, "30 ppm" for hydrogen bromide and "1000 ppm" for nitrogen trifluoride.[^niosh-cl2][^niosh-hbr][^niosh-nf3] |
 | SkyWater evidence | "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2"; "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2"; "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2"; CF4 on two ashers;[^skw-01] fluorinated-gas emissions reported to the EPA for the Bloomington fab[^epa-ghgrp-skywater] |
 | SKY130 steps | 64 steps; see {ref}`SKY130 steps that use this class <material-etch-gases-steps>` |
@@ -37,9 +37,9 @@ radiation enhances such gas–surface reactions, examining "the reactions of
 Si, SiO2, and Si3N4 with XeF2, F2, and Cl2";[^coburn-1979] their later
 review covers the surface science of etching.[^winters-1992] Fluorine
 gives volatile SiF₄ from silicon, oxide and nitride, and WF₆ from
-tungsten; chlorine and bromine give volatile aluminium and titanium
-chlorides and a slower, more controllable silicon etch; carbon in the
-feed gas builds a fluorocarbon film that protects sidewalls and the
+tungsten; chlorine gives volatile aluminium and titanium chlorides, and
+chlorine and bromine a slower, more controllable silicon etch; carbon in
+the feed gas builds a fluorocarbon film that protects sidewalls and the
 layer beneath ({ref}`category-etch`). Flamm reviewed the mechanisms of
 silicon etching in fluorine- and chlorine-containing plasmas.[^flamm-1990]
 The same fluorine chemistry removes film from the walls of deposition
@@ -98,18 +98,20 @@ emissions".[^chan-2004]
 ### Chlorine, boron trichloride and hydrogen bromide
 
 Aluminium, titanium and TiN are etched with chlorine: Chen, DeOrnellas and
-Burke studied aluminium alloys in BCl₃/Cl₂ plasmas,[^chen-1989] and "BCl3
-is also used in plasma etching in semiconductor manufacturing. This gas
-etches metal oxides by formation of a volatile BOClx and MxOyClz
-compounds",[^wiki-bcl3] the native alumina that must be broken through
-before the metal etches (our reading). Allen and Rickard added nitrogen
-for a tapered aluminium etch.[^allen-1994] Chlorine-etched Al–Cu corrodes
-if it meets air unprotected.[^lee-1981-corrosion] Silicon gates and
-trenches are etched in HBr/Cl₂/O₂, whose bromine and oxygen form
-sidewall films and give selectivity to the gate oxide
-({ref}`category-etch`); Bell and Joubert analysed gates "etched in
-HBr/Cl2/O2 plasmas",[^bell-1997] and Tuda et al. followed profile evolution
-in "low-pressure high-density Cl2/HBr/O2 plasma chemistries".[^tuda-2001]
+Burke studied the etch rates of aluminium and "native aluminum oxide
+films" in BCl₃/Cl₂ plasmas,[^chen-1989] the native alumina that must be
+broken through before the metal etches, and "BCl3 is also used in plasma
+etching in semiconductor manufacturing. This gas etches metal oxides by
+formation of a volatile BOClx and MxOyClz compounds".[^wiki-bcl3] Allen
+and Rickard added nitrogen for a tapered aluminium
+etch.[^allen-1994] Chlorine-etched Al–Cu corrodes if it meets air
+unprotected.[^lee-1981-corrosion] Silicon gates and trenches are etched
+in HBr/Cl₂/O₂, whose oxygen forms a silicon oxide sidewall film and gives
+selectivity to the gate oxide ({ref}`category-etch`); Bell and Joubert,
+analysing gates "etched in HBr/Cl2/O2 plasmas", found the sidewall
+passivation layer to be "a chlorine rich silicon oxide
+film",[^bell-1997] and Tuda et al. followed profile evolution in
+"low-pressure high-density Cl2/HBr/O2 plasma chemistries".[^tuda-2001]
 Hydrogen bromide "is highly corrosive and, if inhaled, can cause lung
 damage".[^wiki-hbr]
 
@@ -256,8 +258,8 @@ The steps fall into groups, as the index rows describe them:
   for the cap breakthrough and CH₄ as a possible passivating additive at
   {ref}`MM1E <step-114>` and {ref}`MM2E <step-125>`; the capacitor plate
   etches {ref}`CAPME <step-138>` and {ref}`CAP2ME <step-153>` name HBr and
-  CH₂F₂ among their options; the pad etch {ref}`PDME <step-169>` uses
-  CF₄, CHF₃ and SF₆.
+  CH₂F₂ among their options; the pad etch page {ref}`PDME <step-169>`
+  reads CF₄, CHF₃ and SF₆.
 * **Chamber cleans.** NF₃ at the HDP, PECVD and tungsten CVD steps and at
   several etches, and as a tube-clean option at
   {ref}`ISONIT <step-003>`.
