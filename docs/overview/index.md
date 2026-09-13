@@ -13,4 +13,5 @@ back-end (BEOL) modules, and how to read the step pages.
 ```{toctree}
 :maxdepth: 1
 
+sky130b-reram
 ```
