@@ -359,8 +359,8 @@ the plate is placed against other layers.
   implantation for ULSI.[^tsukamoto-1991]
 * Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
   in resist.[^ziegler-2010]
-* ITRS 2001, *Lithography* — mask magnification and layer allocation at
-  130 nm.[^itrs-03]
+* ITRS 2001, *Lithography* — mask magnification and the optical mask
+  requirements of the 130 nm generation.[^itrs-03]
 
 ## Open questions
 
