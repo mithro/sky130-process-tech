@@ -48,7 +48,10 @@ which can often have the same magnitude as the sheet
 resistance",[^wiki-rs] the four-terminal principle behind Kelvin
 measurements in general.[^wiki-4t] Smits evaluated the correction factors
 for rectangular and circular samples, noting that "Diffused surface layers can be
-treated as two-dimensional structures";[^smits-1958] SEMI MF84 is the
+treated as two-dimensional structures";[^smits-1958] for equally spaced
+probes on a sheet large compared with the spacing, his analysis gives
+{math}`R_s = (\pi/\ln 2)\,V/I \approx 4.532\,V/I`, and smaller samples
+need his tabulated corrections.[^smits-1958] SEMI MF84 is the
 standard in-line four-point-probe test method for silicon
 wafers.[^semi-mf84] Perloff, Wahl and Conragan automated the measurement for
 doping-uniformity maps and showed that "the four-point probe and van der
