@@ -154,8 +154,7 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
   chambers: Applied Materials Endura with IMP
   chambers,[^amat-endura][^amat-1997] Novellus INOVA (hollow-cathode
   magnetron), Varian/Novellus M2i, MRC Eclipse (category page).
-* **Four-point probe**, **XRF**, **stress gauge**, **cross-section
-  SEM**.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`**, **{ref}`XRF <machine-film-thickness-metrology>`**, **stress gauge**, **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**.
 
 ## Machines likely used at SkyWater
 
