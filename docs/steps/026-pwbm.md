@@ -172,7 +172,7 @@ raises NMOS {term}`Vt`.[^hook-2003]
   suppliers named in SkyWater's 2021 S-1: Dow, JSR, Tokyo Ohka
   Kogyo.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev]
-  edge-bead remover, {ref}`DI water <material-ultrapure-water>`, nitrogen.
+  edge-bead remover, {ref}`DI water <material-ultrapure-water>`, {ref}`nitrogen <material-process-gases>`.
 * **The PWBM reticle**, generated from `nwell` and `pwbm`
   (inference).[^pdk-06]
 

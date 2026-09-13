@@ -148,7 +148,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 
 ## Resources required
 
-* **Boron trifluoride (BF₃)** source gas, delivered in sub-atmospheric
+* **{ref}`Boron trifluoride <material-dopant-sources>` (BF₃)** source gas, delivered in sub-atmospheric
   cylinders[^wiki-implant] (category page). Fluorinated species erode
   ion-source parts faster than hydrides, so source-consumable usage is
   higher (Axcelis's GSD page notes "source operating costs especially
