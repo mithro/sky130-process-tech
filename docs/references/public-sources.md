@@ -8358,7 +8358,8 @@ antifuse structures. One continuation row reads "PLACE IN CENTER,
 CORNER OF RETICLE"; several poly-resistor rows name an "RRPM mask" and a
 "URPM mask". Used on step 171, the test category page, the overview and
 the well, isolation, poly-resistor, poly, SONOS, drain-extended-well,
-contact, via, metal and MiM step pages. Tier: cross-check.
+P-well block, depletion-implant, gate-oxidation, contact, via, metal and
+MiM step pages. Tier: cross-check.
 
 **RAW-DATA-TESTTILE-OPEN** — SkyWater PDK Authors, *SkyWater 130nm Open
 Manufacturing Test Tile*, `docs/sky130-testtile-open/README.rst` with
