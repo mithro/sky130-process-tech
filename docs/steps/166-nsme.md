@@ -135,9 +135,9 @@ public):
 
 ## Machines typically used
 
-* **Dielectric etcher**, 200 mm: Lam Exelan,[^lam-exelan] Applied
+* **{ref}`Dielectric etcher <machine-plasma-etcher-dielectric>`**, 200 mm: Lam Exelan,[^lam-exelan] Applied
   Materials MxP/eMax, TEL Unity ({ref}`category-etch`).
-* **Downstream plasma asher**; **solvent wet bench**.
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`**; **{ref}`solvent wet bench <machine-wet-bench>`**.
 * **Optical microscope**, **cross-section SEM**.
 
 ## Machines likely used at SkyWater

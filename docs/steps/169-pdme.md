@@ -130,11 +130,11 @@ an aluminium top metal (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Dielectric/nitride plasma etcher**, 200 mm: Lam TCP 9400-class
+* **{ref}`Dielectric/nitride plasma etcher <machine-plasma-etcher-dielectric>`**, 200 mm: Lam TCP 9400-class
   nitride-capable etchers,[^snf-9400][^lam-10k] Lam Exelan dielectric
   etchers,[^lam-exelan] Applied Materials and TEL equivalents
   ({ref}`category-etch`).
-* **Downstream plasma asher**; **solvent wet bench**.
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`**; **{ref}`solvent wet bench <machine-wet-bench>`**.
 * **Automated pad inspection**, **TOF-SIMS / XPS** for surface
   analysis, **wire-bond pull tester** on monitors.
 

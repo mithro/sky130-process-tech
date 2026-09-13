@@ -157,11 +157,11 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ## Machines typically used
 
-* **Dielectric etcher**, 200 mm single-wafer: Lam Exelan / 4520XLE,
+* **{ref}`Dielectric etcher <machine-plasma-etcher-dielectric>`**, 200 mm single-wafer: Lam Exelan / 4520XLE,
   Applied Materials eMax / MxP+ / Super-e, TEL DRM / Unity
   ({ref}`category-etch`); high-density alternatives (AMAT IPS, Lam
   {term}`TCP` 9100).
-* **Downstream plasma asher** (GaSonics Aura, Mattson Aspen) and **wet bench or
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** (GaSonics Aura, Mattson Aspen) and **{ref}`wet bench <machine-wet-bench>` or
   single-wafer clean** for post-etch residue.
 * **CD-SEM**, **cross-section SEM**, **e-test** for contact chains.
 
