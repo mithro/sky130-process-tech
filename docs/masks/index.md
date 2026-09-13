@@ -683,7 +683,8 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
 * SkyWater PDK, *Criteria & Assumptions*, Table 2 — minimum feature
   and space per mask with variable names.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — rules x.9 and x.15a on mask-level
-  layers, the rule-set function lines and the metal-fuse note.[^pdk-periph]
+  layers, the grid rules x.1a and x.1b, the rule-set function lines and
+  the metal-fuse note.[^pdk-periph]
 * SkyWater PDK, *WLCSP Rules* — the DECA `cpbo`, `rdl` and `cpmm2`
   rule sets.[^pdk-wlcsp]
 * SkyWater PDK, *Device Details* — the two MiM capacitor constructions,
@@ -819,7 +820,11 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   `gds_layers.csv` has an
   `areaid.op` identifier (81:54, "OPC drop. Block automatic OPC (for
   fab blocks and lithocal structures)"), which implies that automatic
-  OPC is applied, but not to which masks;[^pdk-06] the step pages and
+  OPC is applied;[^pdk-06] rule x.1a sets a grid of 0.001 (unit printed
+  as "mm") for "p1m.md (OPC)", among other layers, and for the "mask
+  data for p1m, met1, via, met2", against 0.005 for all other layers
+  (x.1b), but the PDK does not describe the correction
+  ({ref}`mask-p1m`);[^pdk-periph] the step pages and
   the {ref}`lithography category page <category-lithography>` give
   industry-generic readings.
 * The process-steps sheet records no plates for `CTM1`, `MM1`, `VIM`,
