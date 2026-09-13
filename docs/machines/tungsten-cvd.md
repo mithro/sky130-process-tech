@@ -167,11 +167,7 @@ behaviour whose cause "is not clear".[^shioya-1987]
   the modular Concept Two platform", with "uniform deposition to 194mm",
   and the Dual Altus as "two Concept One process chambers for a total of
   10 stations";[^novellus-wcvd-1998] the 300 mm Concept Three Altus
-  followed.[^novellus-wcvd-2002] The company history records that the
-  first Concept One-W sale was to "Cypress Semiconductor's fabrication
-  facility", jointly with a Lam metal etcher;[^novellus-history] it does
-  not say which Cypress fab, and a sale of that time is not evidence
-  about the tool SkyWater lists today.
+  followed.[^novellus-wcvd-2002]
 * **Other vendors.** The step pages also name Genus, ULVAC and Tokyo
   Electron tungsten CVD systems ({ref}`WDEP2 <step-110>`); no vendor
   description of them was retrieved for this page.
@@ -269,8 +265,9 @@ SKY130 conditions of their own. SKY130's tungsten recipes and
 thicknesses are not public.
 
 * **A liner first.** Every fill lands on titanium nitride deposited in the
-  PVD tool just before it ({ref}`TI/TIN1 <step-097>`,
-  {ref}`TIN2 <step-109>` to {ref}`TIN5 <step-146>`), because WF₆ and its
+  PVD tool before it ({ref}`TI/TIN1 <step-097>`, followed by the
+  {ref}`CSIL <step-098>` anneal, and {ref}`TIN2 <step-109>` to
+  {ref}`TIN5 <step-146>` immediately before each via fill), because WF₆ and its
   HF attack silicon, titanium and oxide and tungsten adheres poorly to
   oxide (category page;[^wiki-wf6] the {ref}`WDEP <step-099>` page
   describes the barrier role). Saito et al.'s failure through a porous
