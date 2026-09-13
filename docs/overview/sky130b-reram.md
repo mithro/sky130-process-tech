@@ -233,8 +233,8 @@ says which parts are typical and which are our inference for SKY130.
 6. **`r1c` lithography.** Resist islands are printed where the layout
    draws `r1c`. With a 0.230 µm minimum width and a 0.140 µm minimum
    space[^reram-ug] the layer is about as tight as metal 1 and via 1;
-   the ITRS 2001 assigns 248 nm exposure with resolution enhancement to
-   the critical layers of the 130 nm generation,[^itrs-03] so we infer
+   ITRS 2001 lists "248 nm + PSM" and "193 nm" as the exposure options
+   for the 130 nm node,[^itrs-03] so we infer
    a DUV exposure like {ref}`VIM <step-118>`. Alignment is to the lower vias, which the cell
    must cover.
 7. **Stack etch.** The electrodes and oxide are removed outside the
@@ -544,8 +544,8 @@ the tier needs:[^skw-01]
 * Wikipedia, *Physical vapor deposition*, *Reactive-ion etching* and
   *Chemical-mechanical polishing* — the electrode, etch and polish
   processes of the module.[^wiki-pvd][^wiki-rie][^wiki-cmp]
-* ITRS 2001, *Lithography* — the exposure technology of the 130 nm
-  generation's critical layers.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 
 ### Deep dive
 

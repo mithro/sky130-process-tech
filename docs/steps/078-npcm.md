@@ -120,8 +120,9 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
    stepper of NA 0.6 would work at k₁ = 0.27 × 0.6 / 0.365 ≈ 0.44,
    close to the "0.4 for production" limit;[^wiki-litho] a 248 nm
    tool gives k₁ ≈ 0.65 with margin for overlay-driven proximity
-   effects. ITRS 2001 assigns 248 nm to the critical layers of the
-   130 nm node.[^itrs-03] We therefore infer a **DUV** exposure for
+   effects. ITRS 2001 lists "248 nm + PSM" and "193 nm" as the
+   exposure options for the 130 nm node, and only 248 nm had "a mature
+   infrastructure".[^itrs-03] We therefore infer a **DUV** exposure for
    `NPCM`, driven by its 0.09 µm placement tolerance to poly rather
    than by its CD. Whether the tool is a stepper or a scanner is not
    public; SkyWater lists both.[^skw-01]
