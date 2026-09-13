@@ -135,9 +135,10 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 
 * **{ref}`HDP-CVD reactor <machine-hdp-cvd>`**, 200 mm single-wafer, multi-chamber cluster:
   Novellus SPEED, Applied Materials Ultima HDP-CVD (Centura), Lam
-  (post-2012 Novellus SPEED Max/NExT), Trikon Planar 200. Novellus'
+  (post-2012 Novellus SPEED Max/NExT). Novellus'
   SPEED platform was the market's long-running STI fill
-  tool.[^lam-speed]
+  tool.[^lam-speed] Trikon offered its Planar 200 Flowfill as an
+  alternative to HDP gap fill, not as an HDP system.[^trikon-10k-1996]
 * **{ref}`Furnace <machine-vertical-furnace-anneal>` or {ref}`RTP <machine-rapid-thermal-processor>`** for optional densification.
 * **{ref}`Reflectometer <machine-film-thickness-metrology>` / ellipsometer**; **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**.
 
@@ -264,6 +265,10 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
   inferred from the vendor name only.
 
 <!-- footnotes -->
+[^trikon-10k-1996]: Trikon Technologies, Inc., *Annual Report on Form
+    10-K for the fiscal year ended December 31, 1996*; copy on
+    GetFilings.com, Wayback Machine capture of 2008-10-12.
+    <http://web.archive.org/web/20081012193325/http://www.getfilings.com/o0000898430-97-001539.html>
 
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>

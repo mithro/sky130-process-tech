@@ -10343,7 +10343,7 @@ Planar 200 Flowfill, a "multi-chambered cluster system" in which "The
 plasma CVD films are deposited in one module and the CVD planarizing
 flow layer is deposited in the Flowfill(TM) module", offered against SOG
 and HDP gap fill. Used on the PECVD and HDP-CVD pages.
-Also used on the PSG, NCAPOX, NILD3 and NILD4 step pages.
+Also used on the FILOX, PSG, NCAPOX, NILD3 and NILD4 step pages.
 Tier: cross-check (regulatory filing).
 
 **SEMITODAY-SPTS-2009** — Semiconductor Today, *Sumitomo Precision
