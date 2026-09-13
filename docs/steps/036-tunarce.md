@@ -123,12 +123,12 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 
 ## Machines typically used
 
-* **Silicon/poly plasma etcher** with O₂/N₂/HBr capability, 200 mm:
+* **{ref}`Silicon/poly plasma etcher <machine-plasma-etcher-silicon>`** with O₂/N₂/HBr capability, 200 mm:
   Lam {term}`TCP` 9400 series, Applied Materials DPS Centura
   ({ref}`category-etch`).
-* **Dielectric etcher** (Lam Exelan, Applied MxP) if the ARC is
+* **{ref}`Dielectric etcher <machine-plasma-etcher-dielectric>`** (Lam Exelan, Applied MxP) if the ARC is
   inorganic.
-* **Downstream plasma asher** — some fabs open thin organic ARCs on relaxed
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** — some fabs open thin organic ARCs on relaxed
   layers with a timed, isotropic ash rather than a directional etch
   ({ref}`category-strip`).
 * **Optical emission endpoint** on the etcher; **{term}`CD-SEM`** for the
