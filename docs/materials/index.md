@@ -89,7 +89,9 @@ BTBAS low temp nitride", "H2 and forming gas alloy"); sputtered films
 "Collimated Ti"); and polish processes ("oxide", "nitride",
 "tungsten", "high selectivity tungsten", "Track ammonia
 clean").[^skw-01] It gives no gases for the metal etchers, the
-sputtering tools, the plasma CVD tools or the tungsten CVD tool. The
+sputtering tools or the tungsten CVD tool, and for the CVD tools names
+only precursors, through its film names ("PECVD TEOS", "PECVD silane
+oxide/nitride/oxynitride", "LPCVD BTBAS low temp nitride"). The
 {ref}`public-sources inventory <references-public-sources>` notes that
 the list describes the whole fab in the 2020s, including tools added
 after the S8 flow was developed. The quotations on this page were
@@ -159,7 +161,7 @@ the SKY130 stack.[^pdk-03][^pdk-04] These are the sources of the
 | HCl or trans-1,2-dichloroethylene (DCE) | Oxidation additive | Chlorine source for gettering in furnace oxidations. | typical (not listed) | {ref}`010 <step-010>`, {ref}`040 <step-040>`, {ref}`043 <step-043>`, {ref}`047 <step-047>`, {ref}`063 <step-063>` |
 | Nitrous oxide (N₂O), nitric oxide (NO) | Oxidant; nitriding gas | Nitrided or oxynitride gate and liner oxides; ONO oxynitride layers; oxidant for PECVD silane oxide and oxynitride. | Gases not named; the list has "Nitrided gate oxide" and "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01] | {ref}`010 <step-010>`, {ref}`040 <step-040>`, {ref}`047 <step-047>`, {ref}`059 <step-059>`, {ref}`063 <step-063>`, {ref}`080 <step-080>`, {ref}`091 <step-091>`, {ref}`117 <step-117>`, {ref}`128 <step-128>`, {ref}`135 <step-135>`, {ref}`143 <step-143>`, {ref}`150 <step-150>`, {ref}`158 <step-158>`, {ref}`164 <step-164>` |
 | Ammonia (NH₃) | Precursor; nitriding gas | LPCVD, BTBAS and PECVD nitride; PECVD oxynitride; oxide nitridation; possible ash additive. | "LPCVD nitride, with NH3 and also DH3"; NH3 in the Heatpulse and Iridia entries.[^skw-01] | {ref}`003 <step-003>`, {ref}`010 <step-010>`, {ref}`040 <step-040>`, {ref}`047 <step-047>`, {ref}`058 <step-058>`, {ref}`076 <step-076>`, {ref}`084 <step-084>`, {ref}`087 <step-087>`, {ref}`104 <step-104>`, {ref}`135 <step-135>`, {ref}`150 <step-150>`, {ref}`167 <step-167>` |
-| Silane (SiH₄) | Precursor | HDP-CVD oxide and PSG; PECVD oxide, nitride and oxynitride; LPCVD amorphous-silicon gate; tungsten nucleation. | Precursor not named; "PECVD silane oxide/nitride/oxynitride, C1", "LPCVD silane oxide", "LPCVD polysilicon (undoped), both amorphous and crystalline".[^skw-01] | {ref}`011 <step-011>`, {ref}`048 <step-048>`, {ref}`058 <step-058>`, {ref}`059 <step-059>`, {ref}`076 <step-076>`, {ref}`080 <step-080>`, {ref}`089 <step-089>`, {ref}`091 <step-091>`, {ref}`099 <step-099>`, {ref}`104 <step-104>`, {ref}`105 <step-105>`, {ref}`110 <step-110>`, {ref}`115 <step-115>`, {ref}`117 <step-117>`, {ref}`121 <step-121>`, {ref}`126 <step-126>`, {ref}`128 <step-128>`, {ref}`132 <step-132>`, {ref}`135 <step-135>`, {ref}`141 <step-141>`, {ref}`143 <step-143>`, {ref}`147 <step-147>`, {ref}`150 <step-150>`, {ref}`156 <step-156>`, {ref}`158 <step-158>`, {ref}`164 <step-164>`, {ref}`167 <step-167>` |
+| Silane (SiH₄) | Precursor | HDP-CVD oxide and PSG; PECVD oxide, nitride and oxynitride; LPCVD amorphous-silicon gate; tungsten nucleation. | Named only in film names: "PECVD silane oxide/nitride/oxynitride, C1", "LPCVD silane oxide"; the gate film is "LPCVD polysilicon (undoped), both amorphous and crystalline".[^skw-01] | {ref}`011 <step-011>`, {ref}`048 <step-048>`, {ref}`058 <step-058>`, {ref}`059 <step-059>`, {ref}`076 <step-076>`, {ref}`080 <step-080>`, {ref}`089 <step-089>`, {ref}`091 <step-091>`, {ref}`099 <step-099>`, {ref}`104 <step-104>`, {ref}`105 <step-105>`, {ref}`110 <step-110>`, {ref}`115 <step-115>`, {ref}`117 <step-117>`, {ref}`121 <step-121>`, {ref}`126 <step-126>`, {ref}`128 <step-128>`, {ref}`132 <step-132>`, {ref}`135 <step-135>`, {ref}`141 <step-141>`, {ref}`143 <step-143>`, {ref}`147 <step-147>`, {ref}`150 <step-150>`, {ref}`156 <step-156>`, {ref}`158 <step-158>`, {ref}`164 <step-164>`, {ref}`167 <step-167>` |
 | Dichlorosilane (SiH₂Cl₂) | Precursor | LPCVD nitride (isolation, gate cap, spacer options); ONO trapping layer. | Not named; the LPCVD nitride entry reads "with NH3 and also DH3" and the list has "LPCVD oxide/nitride/oxide".[^skw-01] | {ref}`003 <step-003>`, {ref}`040 <step-040>`, {ref}`058 <step-058>`, {ref}`076 <step-076>` |
 | TEOS (tetraethyl orthosilicate) | Precursor (liquid) | PECVD cap, spacer, inter-level and fuse oxides; TEOS route for PSG. | "PECVD TEOS, C2 and Producer" with "low temp options";[^skw-01] a 2005 Cypress Fab 4 report gives the passivation as "1000Å TEOS / 9000Å PECVD Nitride".[^cyp-qtp-014807] | {ref}`059 <step-059>`, {ref}`080 <step-080>`, {ref}`089 <step-089>`, {ref}`091 <step-091>`, {ref}`105 <step-105>`, {ref}`115 <step-115>`, {ref}`117 <step-117>`, {ref}`126 <step-126>`, {ref}`128 <step-128>`, {ref}`141 <step-141>`, {ref}`143 <step-143>`, {ref}`156 <step-156>`, {ref}`158 <step-158>`, {ref}`164 <step-164>` |
 | BTBAS (bis(tertiary-butylamino)silane) | Precursor (liquid) | Low-temperature LPCVD nitride option for the spacer and the local-interconnect cap. | "LPCVD BTBAS low temp nitride".[^skw-01] | {ref}`076 <step-076>`, {ref}`104 <step-104>` |
@@ -306,8 +308,8 @@ after arsenic implants ({ref}`ASTIS <step-067>`), chlorine from the
 metal etches ({ref}`MM1E <step-114>`), fluorocarbons from the
 dielectric etches ({ref}`NSME <step-166>`), and the metal-laden slurry
 waste of the tungsten polishes ({ref}`WCMP2 <step-111>`[^txt-07]).
-No public SkyWater source describes the fab's gas delivery, abatement
-or waste treatment.
+None of the SkyWater sources cited here describes the fab's gas
+delivery, abatement or waste treatment.
 
 ## References
 
@@ -586,10 +588,10 @@ decide between them, and the step pages are unchanged.
   doped"; the dopant of the first is not given. The fluorinated-oxide
   option of {ref}`NILD3 <step-115>` and {ref}`NILD4 <step-126>` rests on
   the PDK's "_C" films, not on this entry.[^skw-01]
-* **No materials for many tools.** No public source names the gases of
-  the metal etchers or the sputtering and CVD tools, or the furnace
-  gases beyond what the process names imply ("LPCVD nitride, with NH3
-  and also DH3", "Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and
+* **No materials for many tools.** None of the sources cited here
+  names the co-reactant or diluent gases of the CVD tools, the gases of
+  the metal etchers or sputtering tools, or the furnace gases beyond
+  what the process names imply ("LPCVD nitride, with NH3 and also DH3", "Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and
   forming gas alloy"), nor any slurry, pad, BARC or resist product or a
   developer concentration. The implanter entries give species ("B11,
   BF2, P, As") but not whether they come from gas or solid sources, and none
