@@ -330,6 +330,8 @@ settings and resists per layer are not public.
   measurements that feed corrections back to the exposure tool.
 * {ref}`masks-index` — each mask's PDK entry, minimum CD, plates and the
   mask-type record for vias 2–4.
+* {ref}`mask-p1m` and {ref}`mask-vim4` — per-mask pages for the gate
+  mask and the via-4 mask, both assigned to this class.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, anti-reflective coatings, developer
