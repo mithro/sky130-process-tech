@@ -34,27 +34,29 @@ A KrF tool has the same chain of illuminator, reticle stage, reduction
 lens, wafer stage, alignment and focus systems as an i-line
 tool,[^wiki-stepper] and ASML built both on one PAS 5500 body for
 "economic mix-and-match".[^asml-pas5500-750f] What makes a machine a
-*KrF* tool is a pulsed laser source at 248 nm, a lens designed for that wavelength (the early KrF lenses were all-quartz[^pol-1986]) and the chemically amplified resist it exposes. Das and Sandstrom review the lasers,[^das-2002]
-and Bruning the history of the tools.[^bruning-2007]
+*KrF* tool is a pulsed laser source at 248 nm, a lens designed for that
+wavelength (the early KrF lenses were all-quartz[^pol-1986]) and the
+chemically amplified resist it exposes. Das and Sandstrom review the
+lasers,[^das-2002] and Bruning the history of the tools.[^bruning-2007]
 
 ### Excimer laser source
 
 Excimer lasers for lithography were first demonstrated by Jain, Willson
 and Lin, who printed with XeCl and KrF lasers and found the exposure
-"∼ 2 orders of magnitude faster" than with conventional
-lamps.[^jain-1982] An excimer laser "typically uses a combination of a
-noble gas ( argon , krypton , or xenon ) and a reactive gas ( fluorine or
-chlorine )";[^wiki-excimer] Das and Sandstrom note that excimer lasers are
+"∼ 2 orders of magnitude faster" than with conventional lamps.[^jain-1982]
+An excimer laser "typically uses a combination of a noble gas ( argon ,
+krypton , or xenon ) and a reactive gas ( fluorine or chlorine
+)";[^wiki-excimer] Das and Sandstrom note that excimer lasers are
 "capable of operating with narrow spectral widths" and have "a low
-degree of coherence".[^das-2002] The
-laser stands apart from the exposure tool: ASML specifies "20-m remote
-capability" for the beam delivery.[^asml-pas5500-350c] The
-laser's bandwidth adds to the lens aberrations: Lalovic et al. measured "a positive relationship" between wavefront
-aberration and laser bandwidth on a 0.6 NA stepper and
-scanner.[^lalovic-2001] Kato's chronology records Cymer's first prototype
-lithography laser of 1988 at "200Hz rep. rate, output power of 3W", its
-first solid-state-switched laser of 1995 at 600 Hz and 6 W, and a market
-share of more than 80 % "during the 90s and until early
+degree of coherence".[^das-2002] The laser stands apart from the
+exposure tool: ASML specifies "20-m remote capability" for the beam
+delivery.[^asml-pas5500-350c] The laser's bandwidth adds to the lens
+aberrations: Lalovic et al. measured "a positive relationship" between
+wavefront aberration and laser bandwidth on a 0.6 NA stepper and
+scanner.[^lalovic-2001] Kato's chronology records Cymer's first
+prototype lithography laser of 1988 at "200Hz rep. rate, output power of
+3W", its first solid-state-switched laser of 1995 at 600 Hz and 6 W, and
+a market share of more than 80 % "during the 90s and until early
 00's".[^kato-2007] By 2000 the 130 nm scanners used "A 2 kHz, 20 W
 laser".[^asml-750e]
 
@@ -65,45 +67,44 @@ The early KrF steppers had modest apertures: an all-quartz 5× lens of NA
 modified stepper of 1986,[^pol-1986] and a "5x reduction lens with NA
 0.42 and 21.2 mm field size" in Wittekoek et al.'s stepper of
 1990.[^wittekoek-1990] By the 130 nm generation the NA had risen to 0.7
-and 0.8 (quick facts above), with
-variable NA and illumination set per layer: the PAS 5500/750E had "the
-highest partial coherence (0.88)" and a "QUASAR module, which enables
-multipole illumination", to "optimize their depth of focus and exposure
-latitude process window and reduce mask error factors".[^asml-750e] At
-248 nm and NA 0.7, λ/NA is about 354 nm, so the 130 nm resolution ASML
-quotes corresponds to {term}`k1` ≈ 0.37 (our arithmetic with the relation
-on the {ref}`category page <category-lithography>`). The depth of focus
-shrinks with the square of NA, a scaling Lin refined for high-NA
+and 0.8 (quick facts above), with variable NA and illumination set per
+layer: the PAS 5500/750E had "the highest partial coherence (0.88)" and
+a "QUASAR module, which enables multipole illumination", to "optimize
+their depth of focus and exposure latitude process window and reduce
+mask error factors".[^asml-750e] At 248 nm and NA 0.7, λ/NA is about 354
+nm, so the 130 nm resolution ASML quotes corresponds to {term}`k1` ≈
+0.37 (our arithmetic with the relation on the
+{ref}`category page <category-lithography>`). The depth of focus shrinks
+with the square of NA, a scaling Lin refined for high-NA
 lenses;[^lin-2002] below {math}`k_1 \approx 0.4` resolution-enhancement
 techniques are needed ({ref}`category-lithography`), and Lin showed
 phase shifting feasible to 0.18 µm at {math}`k_1 = 0.35`, 248 nm and NA
-0.5.[^lin-1993] ASML specifies the /750F's CD through focus: CD uniformity "≤ 10 nm" at best
-focus and "≤ 15 nm" "Over 0.4-µm defocus" for 0.13 µm lines and
-spaces.[^asml-pas5500-750f]
+0.5.[^lin-1993] ASML specifies the /750F's CD through focus: CD
+uniformity "≤ 10 nm" at best focus and "≤ 15 nm" "Over 0.4-µm defocus"
+for 0.13 µm lines and spaces.[^asml-pas5500-750f]
 
 ### Stepper and step-and-scan
 
 A KrF stepper exposes a square field at once (22.0 mm × 22.0 mm on the
 /350C);[^asml-pas5500-350c] a scanner exposes a slit and scans the
 reticle and wafer stages in step, over a 26 mm × 33 mm field on the ASML
-and 25 mm × 33 mm on the Nikon
-tools.[^asml-pas5500-750f][^nikon-s204b] Step-and-scan began with
-the Micrascan, developed by Perkin-Elmer and introduced by SVG
-Lithography in 1990;[^kato-2007] Buckley, Galburt and Karatzas described
-a 4:1 ring-field step-and-scan tool scanning 20 mm × 32.5 mm subfields in
-1989.[^buckley-1989] The early Micrascans used lamps, and the Micrascan III of 1996 was SVGL's
-"first KrF laser based DUV scanner".[^kato-2007] De Zwart et al. reported
-in 1997 on a step-and-scan system "capable of exposing 26 X 33 mm
-fields, using a 248 nm DUV-lens with a variable Numerical Aperture of 0.40
-to 0.63", whose overlay and dose accuracy "at high scanning speeds"
-proved the technology ready "for use in high volume sub 0.25 micrometers
+and 25 mm × 33 mm on the Nikon tools.[^asml-pas5500-750f][^nikon-s204b]
+Step-and-scan began with the Micrascan, developed by Perkin-Elmer and
+introduced by SVG Lithography in 1990;[^kato-2007] Buckley, Galburt and
+Karatzas described a 4:1 ring-field step-and-scan tool scanning 20 mm ×
+32.5 mm subfields in 1989.[^buckley-1989] The early Micrascans used
+lamps, and the Micrascan III of 1996 was SVGL's "first KrF laser based
+DUV scanner".[^kato-2007] De Zwart et al. reported in 1997 on a
+step-and-scan system "capable of exposing 26 X 33 mm fields, using a 248
+nm DUV-lens with a variable Numerical Aperture of 0.40 to 0.63", whose
+overlay and dose accuracy "at high scanning speeds" proved the
+technology ready "for use in high volume sub 0.25 micrometers
 manufacturing".[^de-zwart-1997] The scanner's advantages ASML lists are
 "Large field size, better CD control and lower lens
 aberrations".[^asml-pas5500-750f] Steppers remained on sale beside
-scanners: ASML describes its /350C as "a very
-cost-effective mix-and-match lithography solution when used in
-conjunction with other ASML PAS 5500 i-line and DUV
-steppers".[^asml-pas5500-350c]
+scanners: ASML describes its /350C as "a very cost-effective
+mix-and-match lithography solution when used in conjunction with other
+ASML PAS 5500 i-line and DUV steppers".[^asml-pas5500-350c]
 
 ### Alignment, levelling and overlay
 
@@ -156,14 +157,16 @@ filter".[^macdonald-1991] The NSR-S204B lists "Nitrogen Purge" and
   production worthy KrF scanner in the industry".[^kato-2007] The
   NSR-S202A scanning stepper achieved "sub-quarter micron resolution" and
   "80 wafers per hour with 8 in. wafers".[^nikon-s202a-s102b] The NSR-S204B
-  in the category page's specification sheet is a 2002 unit configured for
-  300 mm wafers.[^nikon-s204b]
+  specification summary cited here (a reseller copy) describes a unit
+  manufactured in June 2002 and configured for 300 mm
+  wafers.[^nikon-s204b]
 * **Canon.** The FPA-4000ES1 of 1997 was "Canon's first KrF scanning
   stepper".[^kato-2007] The FPA-3000EX4, a 5× KrF stepper of NA 0.6, was
   still used in 2014 "for photolithography of all layers" of a 200 mm
   superconductor process;[^tolpygo-2014] Canon's current FPA-3030EX6,
-  which inherits the performance of the FPA-3000EX6, gives "resolution (150 nm), overlay accuracy (25 nm) and
-  productivity (throughput *121 wph)".[^canon-fpa3030ex6]
+  which inherits the performance of the FPA-3000EX6, gives "resolution
+  (150 nm), overlay accuracy (25 nm) and productivity (throughput *121
+  wph)".[^canon-fpa3030ex6]
 * **SVG Lithography.** The Micrascan III (1996), with NA 0.6 and 0.25 µm
   resolution; SVGL's Micrascan line was discontinued in 2001 after ASML
   acquired the company.[^kato-2007]
@@ -185,28 +188,33 @@ four deep-UV exposure tools:[^skw-01]
 
 followed by "Overlay down to single digit nm" and "Max field size 26mm x
 32mm", and, in the "Special Modules" group, "Photo stitching in both X
-and Y directions, sub-20nm stitching errors".[^skw-01] Read term by term:
-"DUV" names no wavelength; the step pages read "ASML DUV stepper" and "ASML DUV scanner" as 248 nm (KrF) tools, as the {ref}`machines index <machines-index>` records, and that the list gives the two 193 nm scanners as separate entries is consistent with that reading (our reading). The 193 nm entries give a CD
-each and distinguish a "single stage" from a "twin stage" scanner; ASML's
-TWINSCAN platform was introduced in 2000,[^kato-2007] and SkyWater's
-engineer profile names "the ASML TWINSCAN" among "More advanced tools"
-that "are always arriving",[^skw-06] but that the twin-stage entry is a
-TWINSCAN is our inference. None of the entries gives a model, NA or tool
-count, and the overlay and field lines name no tool.
+and Y directions, sub-20nm stitching errors".[^skw-01] Read term by
+term: "DUV" names no wavelength; the step pages read "ASML DUV stepper"
+and "ASML DUV scanner" as 248 nm (KrF) tools, as the
+{ref}`machines index <machines-index>` records, and that the list gives
+the two 193 nm scanners as separate entries is consistent with that
+reading (our reading). The 193 nm entries give a CD each and distinguish
+a "single stage" from a "twin stage" scanner; ASML's TWINSCAN platform
+was introduced in 2000,[^kato-2007] and SkyWater's engineer profile
+names "the ASML TWINSCAN" among "More advanced tools" that "are always
+arriving",[^skw-06] but that the twin-stage entry is a TWINSCAN is our
+inference. None of the entries gives a model, NA or tool count, and the
+overlay and field lines name no tool.
 
 ### Strength of the evidence
 
-On the strength scale of the {ref}`machines index <machines-index>`
-the listings are **strong**: they are SkyWater
-statements.[^skw-01] The caveats that apply to every listed tool are
-under {ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
-For this class the caveat about the age of the list matters most: the
-page describes a site "Recently expanded in 2020 to enable additional
+On the strength scale of the {ref}`machines index <machines-index>` the
+listings are **strong**: they are SkyWater statements.[^skw-01] The
+caveats that apply to every listed tool are under
+{ref}`Reading the SkyWater evidence <machines-reading-evidence>`. For
+this class the caveat about the age of the list matters most: the page
+describes a site "Recently expanded in 2020 to enable additional
 capacity and Cu back end of line" with "90 nm + feature
 geometries",[^skw-01] the 193 nm entries give 90 nm and sub-65 nm CDs,
-and the
-{ref}`P1M <step-061>` page sets them aside as "not evidence for how the
-130 nm gate was, or is, printed". The engineer profile corroborates an ASML TWINSCAN tool on the floor but not its wavelength or use.[^skw-06]
+and the {ref}`P1M <step-061>` page sets them aside as "not evidence for
+how the 130 nm gate was, or is, printed". The engineer profile
+corroborates an ASML TWINSCAN tool on the floor but not its wavelength
+or use.[^skw-06]
 
 (machine-duv-krf-stepper-steps)=
 ### SKY130 steps assigned to this class
@@ -263,8 +271,10 @@ the fab's laser gases, laser service or tool environment.
   via 4 plates only ({ref}`masks-index`).[^steps-sheet] SkyWater lists
   "Mask GDS to reticle" and "OPC modeling" among its
   services.[^skw-01]
-* **Track link.** The NSR-S204B lists an "In-Line Track Interface",[^nikon-s204b]
-    the connection to the {ref}`coat/develop track <machine-coat-develop-track>` that bakes and develops the exposed wafer.
+* **Track link.** The NSR-S204B lists an "In-Line Track
+  Interface",[^nikon-s204b] the connection to the
+  {ref}`coat/develop track <machine-coat-develop-track>` that bakes and
+  develops the exposed wafer.
 
 ## Process-integration notes for SKY130
 
@@ -295,9 +305,10 @@ settings and resists per layer are not public.
   overlay between classes applies ({ref}`machine-i-line-stepper`). Why a
   0.8 µm via has a 248 nm reticle is not stated.[^steps-sheet]
 * **Alignment on polished levels.** From {ref}`LICM1 <step-093>` upward
-  the KrF levels are printed over polished oxide, and from
-  {ref}`LI1M <step-102>` upward over polished tungsten plugs, the case for which ATHENA alignment was
-  introduced.[^asml-750e][^laidler-2002]
+  the KrF levels are printed over polished surfaces: the
+  local-interconnect and metal masks over polished tungsten plugs, the
+  contact and via masks over polished oxide — the cases ATHENA alignment
+  was meant to widen latitude on.[^asml-750e][^laidler-2002]
 * **Amine-free handling.** KrF resist must be exposed and baked without
   delay in filtered air;[^macdonald-1991] which of SkyWater's three tracks
   is linked to which exposure tool is not public.
