@@ -311,9 +311,9 @@ cards are not public.
   loads exhaust lines, pumps and traps;[^pat-nh4cl-vlsi][^pat-nh4cl-tsmc]
   the ISONIT page lists an HCl-tolerant exhaust and tube cleaning, and the
   ONO page quartz ware periodically cleaned of nitride.
-* **Chamber walls and gate CD.** The gate etch at
-  {ref}`P1ME <step-062>` runs on an etcher whose wall coating changes with
-  oxygen addition;[^cunge-2005] the step page names chamber consumables
+* **Chamber walls and gate CD.** On its page's reading, the gate etch at
+  {ref}`P1ME <step-062>` runs in HBr/Cl₂/O₂, a chemistry in which wall
+  coatings change with oxygen addition;[^cunge-2005] the step page names chamber consumables
   and monitor wafers together, since chamber state and CD drift are
   controlled together (our reading).
 * **Metal etches and chlorine.** The metal etches from
