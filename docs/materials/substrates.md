@@ -60,11 +60,13 @@ thermal treatment at the wafer maker;[^pat-mdz-memc] GlobalWafers, which
 acquired SunEdison Semiconductor in 2016,[^wiki-gw] offers a "Starting
 polished wafer with built-in denuding and nucleation that does not rely
 on long thermal treatments in the IC fab process".[^gw-products] And
-vacancy clusters from growth open as pits: Ryuta et al. showed that SC-1
+voids from crystal growth open as pits: Ryuta et al. showed that SC-1
 cleaning reveals "crystal-originated singularities" that laser counters
-see as particles,[^ryuta-1990] and Ishii et al. that pair pits of this
-kind caused gate-oxide failure at oxide thicknesses around
-10 nm.[^ishii-1996] Falster and Voronkov describe how growth conditions
+see as particles, presuming their origin to be "some kind of defect in
+the melt-grown crystals";[^ryuta-1990] Miyazaki et al. concluded that
+the original COP in a crystal is "an octahedral void";[^miyazaki-1997]
+and Ishii et al. found that pair pits of this kind caused gate-oxide
+failure at oxide thicknesses around 10 nm.[^ishii-1996] Falster and Voronkov describe how growth conditions
 control these point defects.[^falster-2000]
 
 ### Epitaxial and other substrates
@@ -298,10 +300,12 @@ are not public.
   where oxygen precipitates would nucleate and grow;[^borghesi-1995]
   whether SKY130 relies on the wafer's own precipitation or on a
   pre-engineered wafer is not public.
-* **Crystal pits and the gate oxides.** COPs caused failures in oxides of
-  around 10 nm,[^ishii-1996][^miyazaki-1997] the range of the thick gate
-  oxide of {ref}`GOX100 <step-043>` on that page's reading, so the
-  incoming wafer's defect grade bears on gate-oxide yield (our reading).
+* **Crystal pits and the gate oxides.** Pair-pit COPs caused failures in
+  gate oxides around 10 nm thick,[^ishii-1996] and COPs were the main
+  cause of GOI failure in Miyazaki et al.'s capacitors,[^miyazaki-1997]
+  10 nm being the range of the thick gate oxide of
+  {ref}`GOX100 <step-043>` on that page's reading, so the incoming
+  wafer's defect grade bears on gate-oxide yield (our reading).
 * **Monitors as a hidden consumable.** On the step pages' readings, most
   of the flow's 171 steps name a monitor or reference wafer; at the ratios
   Watanabe et al. report for a DRAM fab, 1.5 to 0.5 monitor wafers per
