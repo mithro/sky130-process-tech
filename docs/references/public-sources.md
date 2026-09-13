@@ -4946,8 +4946,12 @@ cross-check.
 **CHIPHISTORY-MIRRA** — Chip History Center, *The Mirra CMP System by
 Applied Materials*.
 <https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>
-The Mirra polisher in its historical context: integrated endpoint and
-cleaning. Used on the cmp category page. Tier: cross-check.
+The Mirra polisher in its historical context; calls it "the first CMP
+system that successfully integrated endpoint detection and integrated
+cleaning", although by Applied's own release (AMAT-MESA-1999) the
+integrated cleaner came with the Mirra Mesa of 1999, and its "Announced
+in 1997" differs from Applied's December 1995 (AMAT-1997). Used on the
+cmp category page. Tier: cross-check.
 Also used on the CMP polisher machine page.
 
 **EBARA-FREX** — EBARA Precision Machinery Europe, *CMP Tools*
@@ -11434,6 +11438,7 @@ mixing, HF in the brush modules and heated RCA chemistries in the
 megasonic module. Used on the CMP polisher machine page. Tier:
 cross-check (vendor statement).
 Also used on the post-CMP cleaner machine page.
+Also used on the CMP category page.
 
 **IPEC-472-1997** — IPEC-Planar, *AVANTI 472*, product page; Wayback
 Machine capture of 1997-06-26.
