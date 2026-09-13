@@ -109,8 +109,9 @@ reaches a different material (nitride under oxide, oxide under
 tungsten); or in-situ optical or eddy-current thickness sensing. A Chip History
 Center article calls the Applied Mirra "the first CMP system that
 successfully integrated endpoint detection and integrated
-cleaning";[^chiphistory-mirra] by Applied's own release the integrated
-cleaner came with the Mirra Mesa of 1999.[^amat-mesa-1999] Pre-
+cleaning";[^chiphistory-mirra] Applied's own release introduces its
+integrated Mesa cleaner, "specifically developed for the Mirra", with the
+Mirra Mesa in 1999.[^amat-mesa-1999] Pre-
 and post-polish thickness maps from an optical thickness gauge give the
 removal and its uniformity, which are put under {term}`SPC`;
 within-wafer non-uniformity is tuned with zoned carrier pressures,
@@ -203,8 +204,9 @@ values.[^steigerwald-1997][^zantye-2004]
   metal/insulator CMP patent.[^pat-cmp-ibm-1990]
 * SkyWater PDK, *Criteria & Assumptions* — dielectric
   thicknesses.[^pdk-03]
-* Chip History Center, *The Mirra CMP System* — integrated endpoint
-  and cleaning.[^chiphistory-mirra]
+* Chip History Center, *The Mirra CMP System* — the Mirra in
+  historical context (its integrated-cleaning claim is qualified
+  above).[^chiphistory-mirra]
 * Applied Materials, 1997 Annual Report — entry into CMP with the
   Mirra.[^amat-1997]
 * EBARA Precision Machinery Europe, *CMP Tools* —

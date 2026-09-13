@@ -4948,11 +4948,14 @@ Applied Materials*.
 <https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>
 The Mirra polisher in its historical context; calls it "the first CMP
 system that successfully integrated endpoint detection and integrated
-cleaning", although by Applied's own release (AMAT-MESA-1999) the
-integrated cleaner came with the Mirra Mesa of 1999, and its "Announced
-in 1997" differs from Applied's December 1995 (AMAT-1997). Used on the
-cmp category page. Tier: cross-check.
+cleaning", although Applied's own release (AMAT-MESA-1999) introduces its
+integrated Mesa cleaner, "specifically developed for the Mirra", with the
+Mirra Mesa in 1999, and its "Announced in 1997" differs from Applied's
+December 1995 (AMAT-1997). Used on the cmp category page. Tier:
+cross-check.
 Also used on the CMP polisher machine page.
+Also used on the CMPP, WCMPLI, CMPL, WCMP2, CMPM, WCMP3, CMPM2, WCMP4,
+CMPM3, WCMP5 and CMPM4 step pages.
 
 **EBARA-FREX** — EBARA Precision Machinery Europe, *CMP Tools*
 (F-REX200M2). <https://www.ebara-pm.eu/systems/cmp-tools/> The

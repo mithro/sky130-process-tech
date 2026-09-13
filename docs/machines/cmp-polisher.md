@@ -176,8 +176,9 @@ polishing and cleaning capabilities on a single system" to give
   tools".[^amat-mirra-500-2000] The Mirra Mesa of 1999 added the Mesa
   cleaner.[^amat-mesa-1999] A Chip History Center article calls the
   Mirra "the first CMP system that successfully integrated endpoint
-  detection and integrated cleaning"; by Applied's own releases the
-  integrated cleaner came with the Mirra Mesa of 1999, and the article's
+  detection and integrated cleaning"; Applied's own releases introduce
+  its integrated Mesa cleaner, "specifically developed for the Mirra",
+  with the Mirra Mesa of 1999, and the article's
   "Announced in 1997" differs from both Applied's December 1995 and the
   article's own "Relevant Date" of
   1995-06-30.[^chiphistory-mirra][^amat-1997][^amat-mesa-1999]
