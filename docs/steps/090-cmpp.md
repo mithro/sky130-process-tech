@@ -159,8 +159,9 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
   single-wafer tools with HF and DSP+HF chemistries, and the Mirra
   entry also lists "Track ammonia clean" and "IPA clean";[^skw-01] a
   brush scrubber is not named on any public page (open question).
-* **Defect inspection — KLA AIT / SP1** per a SkyWater job
-  posting.[^job-01] Strength: medium.
+* **Defect inspection — KLA AIT / SP1**, our reading of "AIT" and "SP1"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 
