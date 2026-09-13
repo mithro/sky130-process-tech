@@ -130,14 +130,15 @@ separated from its neighbours. Noguchi et al. studied "plasma charging
 due to antenna-topography-dependent electron shading effect during metal
 etching on thin gate oxide" of 2.2–6.0 nm.[^noguchi-1997] Hashimoto
 established the electron-shading mechanism with resist patterns over an
-antenna,[^hashimoto-1994] and Hwang and Giapis showed that "Transient
+antenna,[^hashimoto-1994] and Hwang and Giapis, simulating the
+over-etch of polysilicon lines on insulator, showed that "Transient
 charging of exposed insulator surfaces is found to profoundly affect
-local sidewall etching (notching)" during over-etch.[^hwang-1997]
+local sidewall etching (notching)".[^hwang-1997]
 
 ## Representative 200 mm-era models
 
-* **Lam Research.** The TCP 9600, in production for 200 mm aluminium
-  etch by 1994;[^christie-1994] the TCP 9600SE with a microwave stripper
+* **Lam Research.** The TCP 9600, used for sub-0.5 µm 200 mm aluminium
+  etch development by 1994;[^christie-1994] the TCP 9600SE with a microwave stripper
   option (1998);[^lam-9600se-stripper-1998] the TCP 9600PTX, "qualified at
   multiple customer sites for 0.18 micron aluminum etch" with "0.13
   micron capability" demonstrated (1999);[^lam-9600ptx-1999] the TCP
@@ -170,8 +171,9 @@ Etch" group of two tools:[^skw-01]
 
 Read term by term, both entries name aluminium, TiW, TiN and platinum,
 and the 2300 entry adds niobium; neither names gases, titanium or
-tungsten.[^skw-01] SkyWater gives no model suffix (SE, PTX or DFM for
-the 9600) and does not say whether the 2300 Versys runs 200 mm wafers;
+tungsten.[^skw-01] We read "Lam 9600" as Lam's TCP 9600 family, an
+inference from the model number; SkyWater gives no model suffix (SE,
+PTX or DFM) and does not say whether the 2300 Versys runs 200 mm wafers;
 Lam launched the 2300 series for "both 200- and 300-mm
 wafers".[^lam-2300-2000] No SKY130 step page uses platinum or
 niobium; the capabilities page also lists "Nb damascene" among its special modules.[^skw-01] These are
@@ -346,8 +348,9 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 * Noguchi et al., IEDM 1997 — electron-shading charging during metal
   etching.[^noguchi-1997]
 * Hashimoto, *JJAP* 1994 — the electron-shading mechanism.[^hashimoto-1994]
-* Hwang and Giapis, *JVST B* 1997 — notching from transient charging in
-  high-density plasmas.[^hwang-1997]
+* Hwang and Giapis, *JVST B* 1997 — a simulation of notching from
+  transient charging in the polysilicon over-etch in high-density
+  plasmas.[^hwang-1997]
 * Donnelly and Kornblit, *JVST A* 2013 — a review of plasma
   etching.[^donnelly-2013]
 
