@@ -12661,9 +12661,11 @@ that had no entry above. Each label on those pages is the key below in
 lower case and the citation is the one given in the page footnote; the
 entries are grouped by the material page that first cited the source,
 and sources already listed above record their use on a material page in
-an "Also used on" line of their own. None of these sources mentions
-SkyWater, SKY130 or the Bloomington fab; they describe materials,
-grades, suppliers and their products in general. Every URL was fetched on 2026-09-13:
+an "Also used on" line of their own. Apart from SKW-CERTS,
+EPA-GHGRP-SKYWATER and MPCA-2025, which name SkyWater and its
+Minnesota site, none of these sources mentions SkyWater, SKY130 or the
+Bloomington fab; they describe materials, grades, suppliers and their
+products in general. Every URL was fetched on 2026-09-13:
 papers were checked through Crossref (bibliographic data) and OpenAlex
 (abstracts) and their annotations rest on their abstracts; patents were
 checked through Google Patents (bibliographic data and abstract); SEMI
