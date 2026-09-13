@@ -69,6 +69,22 @@ insulator. The fill has to be:
   without over-polishing the nitride. This is why the FOM layer carries
   fill "waffles" in wide field regions.[^pdk-06]
 
+The filled trench also affects the transistors beside it mechanically:
+Bianchi, Bouche and Roux-dit-Buisson model the "mobility variations"
+that trench-isolation-induced stress causes "on complex MOSFET
+geometries".[^bianchi-2002] The published SKY130 test tile includes
+transistors that differ only in how far the source/drain diffusion
+extends from the gate (`sa` = `sb`, from 2.5 µm down to
+0.265 µm).[^raw-data-testtile-pads] As that extent shortens, the drain
+current at |V_GS| = |V_DS| = 1.8 V of a 7/0.15 µm `pfet_01v8` rises
+from 0.95 mA to 1.38 mA, while that of a 1/0.15 µm `nfet_01v8_lvt`
+falls from 0.536 mA to 0.463 mA and that of a 1/0.15 µm `nfet_01v8`
+from 0.450 mA to 0.409 mA (our extraction from the published
+measurements; one device at each extent).[^raw-data-lv-mosfets] We
+read these opposite trends as consistent with a stress effect of the
+kind Bianchi et al. model (inference); the data do not measure stress,
+and other effects of the diffusion extent cannot be excluded.
+
 ## How it is typically performed
 
 An industry-generic HDP-CVD {term}`STI` fill for a 200 mm, 130 nm-era fab:
@@ -180,6 +196,9 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 * Novellus / Lam Research, SPEED Max press release — HDP as the
   preferred STI gap-fill technology; S/D ratio; remote plasma
   clean.[^lam-speed]
+* SKY130 raw-data repository, 1.8 V transistor files and test-tile pad
+  documentation — drain current against source/drain diffusion extent
+  (our extraction).[^raw-data-lv-mosfets][^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -327,3 +346,17 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 1.8 V
+    transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_01v8`, `nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt`,
+    `pfet_01v8_lvt`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
