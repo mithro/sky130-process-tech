@@ -59,7 +59,13 @@ adds a boat cover inside the inner and outer tubes of an LPCVD furnace
 so that the film "is improved in uniformity and
 homogeneity".[^pat-lpcvd-kokusai] Sodium diffuses through quartz: Eisele and
 Ruthardt described stabilised fused-quartz tubes with reduced sodium
-diffusion.[^eisele-1978] Silicon carbide is the alternative: Entegris
+diffusion.[^eisele-1978] Heat also limits the ware's life: Heraeus offers
+stabilised tubes for high-temperature use "to reduce the possibility of
+sagging at elevated working temperatures",[^heraeus-tubes] and silica
+glass can crystallise (devitrify) where it is contaminated — Horii et al.
+heated silica glasses in contact with a NaCl grain and found a
+crystallised region whose depth grew with the square root of the heating
+time.[^horii-2010] Silicon carbide is the alternative: Entegris
 describes converted SiC with contamination "typically below 5 ppm" and
 states that its dummy wafers "can be cleaned and reused indefinitely in
 LPCVD or diffusion processes".[^entegris-supersic] Deposition furnaces
@@ -120,7 +126,12 @@ backing pumps;[^fiala-1999] Hu et al. studied NF₃ decomposition in
 point-of-use "wet-thermal-wet abatement" of PECVD chamber
 cleaning;[^hu-2018] and Mangyou et al. reported an atmospheric plasma
 system treating "up to 80 L/min of CF4 exhaust with 95% of
-DRE".[^mangyou-2005] Johnson, Ridgeway and Maroulis describe process
+DRE".[^mangyou-2005] Hydrides can also be taken up at ambient
+temperature by solid adsorbents: Hsu et al. found that copper, zinc and
+cerium oxides on alumina removed silane with an efficiency above 99.9 %
+before breakthrough,[^hsu-2007] and tested copper on sol-gel alumina for
+phosphine, which "local scrubbers must immediately abate" because of its
+toxicity.[^hsu-2010] Johnson, Ridgeway and Maroulis describe process
 changes in CVD cleaning and etch that reduce PFC emissions at
 source,[^johnson-2004] and Sherer's book covers point-of-use devices and
 the centralised acid and ammonia scrubbers of a fab's exhaust
@@ -166,8 +177,9 @@ catalogues, not the parts SkyWater buys.
   hardware.[^ag-8800][^chen-2002-rtp]
 * **Abatement.** Heated traps for condensable by-products,[^pat-nh4cl-vlsi]
   thermal or plasma point-of-use abatement for fluorinated
-  gases,[^hu-2018][^mangyou-2005][^fiala-1999] and central wet
-  scrubbers.[^sherer-2005]
+  gases,[^hu-2018][^mangyou-2005][^fiala-1999] adsorbent beds for
+  hydrides such as silane and phosphine,[^hsu-2007][^hsu-2010] and central
+  wet scrubbers.[^sherer-2005]
 * **Probe cards and cleaning.** Needle, vertical and MEMS
   cards;[^wiki-probecard] Entegris lists, among CMC Materials' products,
   "Highly engineered cleaning materials for advanced probe cards, test
@@ -399,6 +411,8 @@ cards are not public.
 
 * Eisele and Ruthardt, *JES* 1978 — stabilised quartz tubes against
   sodium.[^eisele-1978]
+* Horii et al., *J. Ceram. Soc. Japan* 2010 — crystallisation of silica
+  glass in contact with NaCl.[^horii-2010]
 * Osawa (Tokyo Electron), US 5,820,367 — a ring boat against
   slip.[^pat-boat-tel]
 * Shimazu (Tokyo Electron), US 5,709,543 — furnace-throat
@@ -432,6 +446,8 @@ cards are not public.
   NF₃.[^hu-2018]
 * Mangyou et al., ISSM 2005 — atmospheric plasma PFC
   abatement.[^mangyou-2005]
+* Hsu et al., *JAWMA* 2007 and 2010 — metal-oxide and copper adsorbents
+  on alumina for silane and phosphine removal.[^hsu-2007][^hsu-2010]
 * Johnson, Ridgeway and Maroulis, *IEEE TSM* 2004 — PFC reduction in CVD
   and etch.[^johnson-2004]
 * Broz and Rincon, ITC 1999 — probe contact resistance at
@@ -591,6 +607,20 @@ cards are not public.
     plasma abatement system for PFC reduction", *ISSM 2005, IEEE
     International Symposium on Semiconductor Manufacturing*,
     pp. 263–266. <https://doi.org/10.1109/ISSM.2005.1513352>
+[^horii-2010]: N. Horii, M. Kamide, A. Inouye and N. Kuzuu,
+    "Crystallization of silica glass upon heating by contact with a NaCl
+    crystal grain", *Journal of the Ceramic Society of Japan*
+    **118**(1376), 318–320 (2010).
+    <https://doi.org/10.2109/jcersj2.118.318>
+[^hsu-2007]: J.-N. Hsu, C.-J. Tsai, C. Chiang and S.-N. Li, "Silane
+    Removal at Ambient Temperature by Using Alumina-Supported Metal Oxide
+    Adsorbents", *Journal of the Air & Waste Management Association*
+    **57**(2), 204–210 (2007).
+    <https://doi.org/10.1080/10473289.2007.10465309>
+[^hsu-2010]: J.-N. Hsu, H. Bai, S.-N. Li and C.-J. Tsai, "Copper Loaded
+    on Sol-Gel-Derived Alumina Adsorbents for Phosphine Removal",
+    *Journal of the Air & Waste Management Association* **60**(5),
+    629–635 (2010). <https://doi.org/10.3155/1047-3289.60.5.629>
 [^johnson-2004]: A. D. Johnson, R. G. Ridgeway and P. J. Maroulis,
     "Reduction of PFC emissions to the environment through advances in
     CVD and etch processes", *IEEE Transactions on Semiconductor
