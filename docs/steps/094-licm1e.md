@@ -179,7 +179,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   for the oxide etch (industry practice;[^nojiri-2015] SkyWater lists
   CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]).
 * **Helium** backside cooling; **NF₃/O₂** chamber clean.
-* **O₂/N₂** (and {term}`forming gas`) for the post-etch polymer removal and
+* **O₂/N₂** (and {ref}`forming gas <material-anneal-ambients>`) for the post-etch polymer removal and
   strip;[^skw-01] the CF₄ that the ashers list is left out here, as on the
   metal-contact and via etches, since it would attack the silicon at the
   bottom of the diffusion contacts (inference). No post-etch solvent is

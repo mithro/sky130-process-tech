@@ -175,7 +175,7 @@ memory (SKY130's recipe is not public):
 * **CF₄, CHF₃, SF₆ and O₂** process gases,[^skw-01] with **Ar** or
   **He** as typical diluents; **HBr** if a silicon-selective landing
   step is used.
-* **Oxygen/nitrogen/{term}`forming gas`** for the ash; **{term}`SPM`** for the wet
+* **Oxygen/nitrogen/{ref}`forming gas <material-anneal-ambients>`** for the ash; **{term}`SPM`** for the wet
   strip ({ref}`category-strip`; {ref}`wet chemicals <material-wet-chemicals>`).
 * **BOE or dilute HF** for the bottom oxide;[^pat-03][^pat-04]
   **hot phosphoric acid** only for the all-wet alternative.[^vgh-1967]
