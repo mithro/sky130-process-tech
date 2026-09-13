@@ -172,7 +172,8 @@ fab (SKY130's recipe is not public):
   post-CMP clean; **PVA brushes**.
 * **Monitor wafers** with blanket tungsten and oxide for rate and
   selectivity checks.[^semi-m8]
-* Chemical suppliers named by SkyWater: KMG Chemicals.[^sec-01]
+* Chemical suppliers named in SkyWater's 2021 S-1: KMG
+  Chemicals.[^sec-01]
 
 ## Related steps and cross-references
 

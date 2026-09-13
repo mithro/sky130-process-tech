@@ -171,7 +171,8 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 * **Chamber consumables** — pedestal heaters, showerheads, liners.
 * **Monitor wafers** (SEMI M8 class)[^semi-m8] with TiN for
   thickness, resistance and particle control.
-* Gas suppliers named by SkyWater: Air Products, Praxair.[^sec-01]
+* Gas suppliers named in SkyWater's 2021 S-1: Air Products,
+  Praxair.[^sec-01]
 
 ## Related steps and cross-references
 

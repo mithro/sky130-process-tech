@@ -183,7 +183,8 @@ fab (SKY130's recipe is not public):
 * **Cooling water and CDA/N₂** for lamp and chamber cooling.[^ag-8108]
 * **Monitor wafers** (SEMI M8 class)[^semi-m8] with blanket Ti/TiN on
   silicon for sheet-resistance tracking.
-* Gas suppliers named by SkyWater: Air Products, Praxair.[^sec-01]
+* Gas suppliers named in SkyWater's 2021 S-1: Air Products,
+  Praxair.[^sec-01]
 
 ## Related steps and cross-references
 
