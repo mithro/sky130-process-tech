@@ -42,13 +42,14 @@ states the target: a silicon-based dielectric "<1,000 Å" thick
 removes no more than 100 Å (typically under 50 Å) of it, using a
 chlorine- or bromine-based first halogen gas, a fluorocarbon (CHF₃,
 CH₂F₂ or CF₄) as the fluorine-bearing second halogen gas, and a
-noble-gas carrier.[^pat-mim-ti-etch] The Philips patent etches its
-TiN top electrode at a fast rate and then, approaching the interface
-with the insulator, at a slower one,[^pat-mim-philips] and the Newport
-Fab process etches the TiN top plate and the nitride dielectric
-together and then protects the stack's sidewall with an oxide
-spacer[^pat-mim-newportfab] — the alternative, in which the dielectric
-is patterned with the plate.
+noble-gas carrier.[^pat-mim-ti-etch] The other two patents take the
+alternative, in which the dielectric is patterned with the plate. The
+Philips patent etches its ~3000 Å TiN top electrode and the insulator
+in a multi-rate etch, slowing near the TiN/insulator interface and
+stopping close to the TiN ARC on the bottom
+electrode;[^pat-mim-philips] the Newport Fab process etches the TiN
+top plate and the nitride dielectric together and then protects the
+stack's sidewall with an oxide spacer.[^pat-mim-newportfab]
 
 Which of the two SKY130 follows — stop on the dielectric, or cut
 through it — is not public. The PDK's `cap_mim` cross-section draws
@@ -59,9 +60,11 @@ the drawing is a schematic and cannot show a few nanometres of
 residual film. Against the literal reading stands the stack itself:
 under the dielectric lies the metal-3 cap, which is the same TiW the
 etch is removing,[^cyp-qtp-113005] so an etch that cleared the
-dielectric would have no selective layer left to stop on. We
-therefore describe the stop-on-dielectric version as the more
-plausible (inference) and record the other under *Open questions*.
+dielectric would have no selective layer left to stop on — although
+the Philips process shows that a through-etch can be stopped by rate
+control on the bottom-electrode cap.[^pat-mim-philips] We therefore
+describe the stop-on-dielectric version as the more plausible
+(inference) and record the other under *Open questions*.
 Either way, after this step the wafer carries TiW islands a fraction
 of a micrometre high over blanket metal 3, and the
 {ref}`MM3 <step-139>` resist is coated over that topography.
@@ -72,8 +75,8 @@ of a micrometre high over blanket metal 3, and the
 metal, fluorine-chemistry* class — the category page's "Ti:W and TiN"
 entry. Tungsten etches in fluorine plasmas as WF₆ (Turban, Coulon and
 Mutsukura's mechanistic study of SF₆ etching of tungsten[^turban-1989]
-and Petri, Henry and Sadeghi's[^petri-1992]) and titanium as TiF₄, so
-SF₆-, CF₄- or NF₃-based chemistries etch TiW quickly; Liu and Kuo,
+and Petri, Henry and Sadeghi's[^petri-1992]), so fluorine-based
+chemistries attack the tungsten-rich TiW readily; Liu and Kuo,
 etching TiW in CF₄/O₂, CF₄/Cl₂ and CF₄/HCl plasmas, found both
 fluorine and chlorine effective etchants, with the rate set by the
 etchant concentration and the ion energy.[^liu-2007-tiw] Chlorine
@@ -114,10 +117,11 @@ than its own {term}`over-etch` would normally consume.
   charging in high-density plasmas,[^hwang-1997] Fang and McVittie
   the thin-dielectric damage it causes,[^fang-1992] and Cheung the
   same charging mechanism during plasma-enhanced dielectric
-  deposition, the step that follows;[^cheung-2000] a MiM
-  dielectric that has been charged shows higher leakage and a
-  shifted {math}`C(V)`. The etch is run at low bias in its final
-  stage for this reason (industry practice[^nojiri-2015]).
+  deposition, as at {ref}`NILD5 <step-141>` later;[^cheung-2000] a
+  MiM dielectric that has been charged shows higher leakage and a
+  shifted {math}`C(V)`. We infer that the final stage of the etch is
+  run at low bias to limit this; Nojiri treats charging damage in dry
+  etching.[^nojiri-2015]
 * **Clean plate edges.** Residue or a re-entrant foot at the plate
   edge becomes a fringing-field and leakage site and a place where
   the {ref}`NILD5 <step-141>` fill can void; the two-rate etch of
@@ -143,10 +147,10 @@ end (SKY130's recipe is not public):
 3. **Main etch.** A halogen chemistry — Cl₂ (or BCl₃) with a small
    fluorine-bearing addition such as CF₄, CHF₃ or SF₆, in argon (the
    TI patent's Cl₂ or Br₂ / fluorocarbon / noble-gas
-   scheme[^pat-mim-ti-etch]) — at moderate bias;
-   the TiW clears in tens of seconds at rates of a few hundred
-   nanometres per minute (industry-typical for tungsten in fluorine
-   plasmas[^turban-1989][^liu-2007-tiw]). Flamm and Donnelly and
+   scheme[^pat-mim-ti-etch]) — at moderate bias; for a ~0.1 µm
+   film the main etch is short (our estimate), and Turban et al. and
+   Liu and Kuo give the dependence of the rate on chemistry, power
+   and pressure.[^turban-1989][^liu-2007-tiw] Flamm and Donnelly and
    Winters and Coburn set out the surface chemistry that makes the
    fluorine-to-oxide rate low without ion assistance.[^flamm-1981][^winters-1992]
 4. **Endpoint and over-etch.** Optical emission on a tungsten or
@@ -156,8 +160,8 @@ end (SKY130's recipe is not public):
    The over-etch is short and at reduced bias, sized to clear TiW
    stringers while removing at most a few nanometres of oxynitride
    (the TI patent's ≤100 Å[^pat-mim-ti-etch]).
-5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` — Gasonics,
-   Iridia or Mattson class in SkyWater's list[^skw-01] — then a
+5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` — the "Gasonic
+   PEP", Iridia or Mattson class in SkyWater's list[^skw-01] — then a
    solvent or semi-aqueous clean (the "EKS265, EKC270 solvents" of
    the wet-bench list[^skw-01]) that removes fluorocarbon and
    metal-fluoride residue without attacking TiW or the dielectric;
@@ -184,7 +188,7 @@ end (SKY130's recipe is not public):
   TiN, Pt" and "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt".[^skw-01]
   Strength: **strong** for the tools and for TiW as a qualified
   material; which runs this step is not public.
-* **Strip — Gasonics PEP, Iridia, Mattson Aspen2; clean — batch
+* **Strip — "Gasonic PEP", Iridia, Mattson Aspen2; clean — batch
   rotational tools with "EKS265, EKC270 solvents".**[^skw-01]
   Strength: strong for existence; assignment is an inference.
 
@@ -261,8 +265,9 @@ end (SKY130's recipe is not public):
   chemistry this etch's clean must avoid.[^danzl-1997]
 * Cathey et al. (TI), US 8,110,414 — selective plasma etch of MiM
   top electrodes.[^pat-mim-ti-etch]
-* Olewine and Saiz (Philips), US 6,717,193 — a fast-then-slow etch of
-  the top electrode approaching the insulator.[^pat-mim-philips]
+* Olewine and Saiz (Philips), US 6,717,193 — a multi-rate etch of the
+  top electrode and insulator that slows near their interface and
+  stops close to the bottom electrode's TiN ARC.[^pat-mim-philips]
 * Kar-Roy and Racanelli (Newport Fab), US 6,430,028 — etching plate
   and dielectric together and spacering the edge.[^pat-mim-newportfab]
 * Ogle (Lam Research), US 4,948,458, and Yin et al. (Applied
@@ -276,15 +281,18 @@ end (SKY130's recipe is not public):
   PDK's schematic cross-section draws the dielectric only under the
   plate,[^pdk-07] which read literally favours the latter; we describe
   the former because the metal-3 TiW cap beneath offers no selective
-  stop for a through-etch (inference).
+  stop for a through-etch (inference), although a rate-controlled
+  stop of the Philips kind[^pat-mim-philips] would be possible.
 * The chemistry, endpoint, over-etch and dielectric loss of the etch
   are not public.
-* Whether a sidewall spacer or other edge treatment follows the etch
-  is not shown in the step list used in this reference.
+* The step list used in this reference has no spacer or
+  edge-treatment step after `CAPME`; whether any edge treatment is
+  folded into the etch is not public.
 * Which of the two listed Lam metal etchers runs the step is not
   public.[^skw-01]
-* Whether the resist strip and clean are separate steps in SkyWater's
-  flow is not shown in the step list used in this reference.
+* The step list used in this reference has no separate strip step
+  after `CAPME`; this page treats the resist strip and clean as part
+  of the etch.
 
 <!-- footnotes -->
 
