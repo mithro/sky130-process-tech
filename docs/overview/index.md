@@ -93,7 +93,8 @@ Electronics LLC using the manufacturing test tile created by
 SkyWater",[^raw-data-readme] and the pad documentation of that
 {term}`test tile`, whose 273 modules name contact and via chains,
 resistors, capacitors and transistors layer by layer and are quoted on
-the step pages as public examples of the kind of structure measured at
+the step pages as public examples of e-test-type structures; the
+repository does not say they are the structures measured at
 {ref}`HPETEST <step-171>`.[^raw-data-testtile-pads] Among the
 measured files are sweeps of the 5 V, 16 V and 20 V transistors, the
 native and zero-threshold NMOS, the ESD NMOS and the thick-oxide
