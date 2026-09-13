@@ -91,6 +91,7 @@ deep-dive entries per step page and twelve per category page
 | 2026-09-13 | `main` @ 2e6578a, files + history since 18b0ec7 (steps 149–163) | 0 high, 7 medium, 3 low — step order/code used as evidence on 149–162; fixed on `main` (merged 2026-09-13) |
 | 2026-09-13 | `main` @ b88f6ee, files + history since 0fa02fb (steps 164–171, mask index) | clean; 0 high, 0 medium, 6 low — readings stated as fact in openings, one step-name reading, typical NA and derived values unmarked; fixed on `main` (merged 2026-09-13) |
 | 2026-09-13 | `main` @ 12d486b, files + history since b88f6ee (sheet citation, overview, ReRAM, machines, materials, references pages) | 0 high, 2 medium, 6 low — step order/name used as evidence on the overview (fixed on `main`, merged 2026-09-13); materials-index typical values without citations and mask-type codes in STEPS-SHEET pending |
+| 2026-09-13 | `main` @ 72f7c08, files + history since 2caaa17 (consistency sweeps 1–2, materials citations, mask-run section) | clean of non-public content; 0 high, 0 medium, 5 low (CD-metrology grade wording, step order as tool evidence on 019/028, EKS/EKC citation, TMAH arithmetic inputs, plate-case labels) + 1 owner-decision note — fixes queued after the via 2–4 lithography merge |
 
 ## Notes
 
