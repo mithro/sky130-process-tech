@@ -338,10 +338,10 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
     fluorocarbon plasmas and a comparison with the SiO₂-to-Si
     mechanism", *Journal of Vacuum Science & Technology A* **17**(1),
     26–37 (1999). <https://doi.org/10.1116/1.582108>
-[^perry-2001]: A. J. Perry, R. W. Waters, T. J. Barela and H. M.
-    Anderson, "Oxide etch behavior in a high-density, low-pressure,
-    inductively coupled C₂F₆ plasma: Etch rates, selectivity to
-    photoresist, and the effect of dc bias", *Journal of Vacuum Science
+[^perry-2001]: W. L. Perry, K. Waters, M. Barela and H. M. Anderson,
+    "Oxide etch behavior in a high-density, low-pressure, inductively
+    coupled C₂F₆ plasma: Etch rates, selectivity to photoresist, plasma
+    parameters, and CFx radical densities", *Journal of Vacuum Science
     & Technology A* **19**(5), 2272–2281 (2001).
     <https://doi.org/10.1116/1.1382874>
 [^coburn-1989]: J. W. Coburn and H. F. Winters, "Conductance
