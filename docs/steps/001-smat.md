@@ -145,7 +145,7 @@ typically:
 * **Unpatterned-wafer inspection — KLA-Tencor SP1.** A SkyWater Defect
   Technician posting reads "General operation of semiconductor defect
   metrology tools: SEM/AIT/KLA/SP1/EV300/1X".[^job-01] Strength: medium
-  (a retrievable job posting).
+  (a job listing retrieved 2026-08-30; listings expire).
 * **Pre-furnace clean — DNS or FSI Mercury wet bench.** SkyWater's
   capability list names "DNS wet bench industry standard HF/SC1/SC2"
   and "FSI Mercury industry standard HF/SC1/SC2 rotational" under
@@ -301,7 +301,7 @@ product to a step.
     README. <https://github.com/google/skywater-pdk>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
     Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+    retrieved 2026-08-30; listings expire. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^wiki-wafer]: Wikipedia, *Wafer (electronics)*.
     <https://en.wikipedia.org/wiki/Wafer_(electronics)>
 [^wiki-rca]: Wikipedia, *RCA clean*. <https://en.wikipedia.org/wiki/RCA_clean>

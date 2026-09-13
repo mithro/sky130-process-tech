@@ -602,12 +602,14 @@ project page, 2023-07-20.
 
 ## 4. SkyWater job postings naming tools
 
-Job-board pages are heavily bot-protected; only the postings below
+Job-listing sites are heavily bot-protected; only the postings below
 could actually be retrieved. Posting text changes frequently, so each
 entry records the retrieval date.
 
 **JOB-01** — Indeed, *"Skywater Technology Foundry Jobs, Employment in
-Bloomington, MN"* (listing page), retrieved 2026-08-30.
+Bloomington, MN"* (listing page), retrieved 2026-08-30; listings
+expire, and the page refused later automated retrieval (HTTP 403,
+2026-09-13).
 <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>.
 The *Defect Technician 2* posting reads "General operation of
 semiconductor defect metrology tools: SEM/AIT/KLA/SP1/EV300/1X" —
@@ -7432,7 +7434,8 @@ against it. Used on steps 140, 141, 143 and 145. Tier: deep dive.
 ## 9. Evidence about specific tools at SkyWater
 
 Strength scale: **strong** = a SkyWater or tool-vendor statement;
-**medium** = a retrievable SkyWater job posting or an interview with a
+**medium** = a SkyWater job posting (retrieved on the date stated;
+listings expire) or an interview with a
 named SkyWater employee; **weak** = indirect (an inference from public
 evidence). Tools that
 post-date the original Cypress S8 flow are marked † — they show what is

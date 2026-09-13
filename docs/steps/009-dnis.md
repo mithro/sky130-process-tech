@@ -207,7 +207,7 @@ fab:
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
     Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+    retrieved 2026-08-30; listings expire. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^pat-sti-cr]: U. Kim, Y. Sun, M. S. Chang et al. (Spansion LLC; later
     Cypress Semiconductor / Infineon), *Shallow trench isolation
     approach for improved STI corner rounding*, US 7,439,141 B2,

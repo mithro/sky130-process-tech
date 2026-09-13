@@ -239,7 +239,7 @@ cleanliness.[^txt-02]
     Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000, ISBN
     978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page), retrieved 2026-08-30.
+    Bloomington, MN* (listing page), retrieved 2026-08-30; listings expire.
     <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
