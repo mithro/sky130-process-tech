@@ -120,8 +120,9 @@ An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
    and to survive a wet etch. No {term}`ARC` is assumed on this relaxed
    i-line layer (inference).
 3. **Exposure** through the LVOM reticle on an i-line {term}`stepper` (our
-   inference from the 0.6 µm rule; the 2001 ITRS reserves 248 nm for
-   the critical layers[^itrs-03]), aligned to the {term}`STI` pattern; the
+   inference from the 0.6 µm rule; ASML describes older exposure tools
+   that "migrate to the lithography of choice for less critical
+   layers"[^asml-30]), aligned to the {term}`STI` pattern; the
    thick/thin boundary must land on field oxide, so {term}`overlay` to active
    is the controlled quantity.
 4. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse.
@@ -218,7 +219,8 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
   thickness / multiple threshold CMOS for stand-by leakage.[^inukai-2000]
 * ITRS 2001, *Front End Processes* — {term}`EOT` targets that force two
   oxides.[^itrs-01]
-* ITRS 2001, *Lithography* — wavelength by layer criticality.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 * Levinson, *Principles of Lithography* — overlay and resist
   processing for non-critical layers.[^levinson-2005]
 
@@ -285,6 +287,8 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
+    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
     Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
     ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>

@@ -108,8 +108,9 @@ fab:
    for keV channel implants.[^txt-02] No {term}`BARC` is needed for 0.38 µm
    features at i-line (inference).[^wiki-litho]
 3. **Exposure.** i-line: {term}`k₁ <k1>` ≈ 0.62 for 0.38 µm at {term}`NA` 0.6,[^wiki-litho]
-   well within production margins; the KrF tools are reserved for the
-   critical layers.[^itrs-03] We infer an **i-line layer**.
+   well within production margins, and ASML describes older exposure
+   tools that "migrate to the lithography of choice for less critical
+   layers".[^asml-30] We infer an **i-line layer**.
 4. **Alignment** to STI. The 0.180 µm enclosure and spacing rules
    (hvtp.3, hvtp.4) define the {term}`overlay` budget between this mask and the
    active pattern that determines which transistor is which.
@@ -270,6 +271,8 @@ fab:
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
+    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
     Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
     978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>

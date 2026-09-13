@@ -130,8 +130,9 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    feature[^pdk-periph] corresponds to {term}`k₁ <k1>` ≈ 0.67 at the 365 nm i-line
    with a typical 0.6 {term}`NA` i-line lens (illustrative) ({term}`CD` =
    k₁·λ/NA),[^wiki-litho] comfortably inside the i-line process window,
-   so we infer an i-line layer; the 2001 ITRS assigns 248 nm only to the
-   critical layers of the 130 nm node.[^itrs-03]
+   so we infer an i-line layer; ASML describes older exposure tools that
+   "migrate to the lithography of choice for less critical
+   layers".[^asml-30]
 5. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse,
    and a hard bake to harden the resist for the implants.
 6. **Inspection.** {term}`Overlay <overlay>` to active and CD on the coarse tunnel
@@ -245,8 +246,8 @@ and the pre-oxidation clean as part of those steps (see the
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — which layers of the 130 nm node need
-  248 nm, the basis for the i-line inference.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 * White, Adams and Bu, *IEEE Circuits & Devices* 2000 — the classic
   review of scaled SONOS, including cell structures.[^pap-01]
 * Seo et al. (Samsung), *IEEE JSSC* 2005 — a 130 nm logic-compatible
@@ -337,6 +338,8 @@ and the pre-oxidation clean as part of those steps (see the
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
+    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
