@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1391
+written page has exactly one entry here; the inventory holds 1418
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -11543,6 +11543,228 @@ Technology (ICSICT)*, pp. 351–353.
 post-tungsten-contact-CMP brush station with HF spray causing metal-1
 bridges in sub-130 nm logic, and the brush and megasonic changes that
 reduced them. Used on the post-CMP cleaner machine page. Tier: deep dive.
+
+#### Metrology and test machine pages (first cited there)
+
+The entries below were introduced by the defect and particle inspection,
+film thickness and stress metrology, sheet-resistance and dose metrology,
+cross-section SEM and profilers, and parametric tester and prober pages,
+and are grouped in that order by the page that first cited them. The
+vendor pages, press releases and data sheets were fetched on 2026-09-13,
+most of them from the Wayback Machine capture named in the entry; the
+papers were checked through Crossref and OpenAlex on that date, and their
+annotations rest on their abstracts; the patents were checked through
+Google Patents (bibliographic data and abstract).
+
+**TENCOR-SP1-WP** — Tencor Instruments, *Surfscan SP1: New Inspection
+Technology for Unpatterned 300mm Wafers*, technology white paper, web
+page; Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302034319/http://www.tencor.com:80/products/SP1WhitePaper.html>
+Describes laser-scattering inspection ("a laser illuminates the wafer
+surface, and light scattered by contaminants and other surface
+irregularities is collected by specially positioned collection optics"),
+detection "down to 0.08 micron", haze measurement "down to a few parts per
+billion" and 150 wafers per hour on 200 mm (100 on 300 mm). Used on the
+defect and particle inspection page. Tier: cross-check (vendor statement).
+
+**TENCOR-SP1-TECH** — Tencor Instruments, *Technical Details of the
+Surfscan SP1 Unpatterned Wafer Inspection System*, web page; Wayback
+Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302034311/http://www.tencor.com:80/products/SP1TechDetails.html>
+The stationary illumination beam with a rotating and translating wafer,
+axi-symmetric dark-field collection independent of defect orientation, and
+an optional Nomarski bright-field channel for mounds and dimples. Used on
+the defect and particle inspection page. Tier: cross-check (vendor
+statement).
+
+**TENCOR-UNPATTERNED-1997** — Tencor Instruments, *Unpatterned Wafer
+Inspection* (Surfscan SP1, 6420 and 6220), product page; Wayback Machine
+capture of 1997-03-02.
+<https://web.archive.org/web/19970302033400/http://www.tencor.com:80/products/uwaferinpection.html>
+The Surfscan 6220 for bare and smooth blanket-film wafers and haze, "down
+to 0.09 micron on well-polished silicon", and the 6420 for metal films,
+rough surfaces and CMP applications, "down to 0.1 micron on polished
+silicon". Used on the defect and particle inspection page. Tier:
+cross-check (vendor statement).
+
+**TENCOR-PATTERNED-1997** — Tencor Instruments, *Patterned Wafer
+Inspection* (Surfscan AIT and 7700), product page; Wayback Machine capture
+of 1997-03-02.
+<https://web.archive.org/web/19970302033408/http://www.tencor.com:80/products/pwaferinpection.html>
+The Surfscan AIT (30 full-wafer inspections per hour, "Ideal for
+after-etch and post-CMP inspection levels") and the Surfscan 7700 (optimal
+sensitivity 0.15 µm, contaminants below 0.20 µm on nitride, oxide and TEOS
+levels, and a microscope review option). Used on the defect and particle inspection page. Tier:
+cross-check (vendor statement).
+
+**TENCOR-AIT-1995** — Tencor Instruments, *Tencor Instruments Unveils
+Surfscan AIT Wafer Inspection System*, press release, 1995-10-23; Wayback
+Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302034359/http://www.tencor.com:80/press/surfscan.html>
+Introduces the Surfscan AIT as the first high-speed in-line inspector for
+both pattern defects and particles, developed with SEMATECH for 0.25 µm
+technology, building on Tencor's laser-scattering tools. Used on the
+defect and particle inspection page. Tier: cross-check (vendor statement).
+
+**TENCOR-CRS-1997** — Tencor Instruments, *Laser Confocal Review* (Tencor
+CRS), product page; Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302033431/http://www.tencor.com:80/products/lasercreview.html>
+A review station for defects found by automatic inspection, resolving
+features "as small as 0.15 micron" and placing defects under, within or on
+top of a film. Used on the defect and particle inspection page. Tier:
+cross-check (vendor statement).
+
+**TENCOR-ADC-1996** — Tencor Instruments, *Tencor Instruments Introduces
+Automatic Defect Classification (ADC) for its Tencor CRS Laser Confocal
+Review Station*, press release, 1996-07-16; Wayback Machine capture of
+1997-03-02.
+<https://web.archive.org/web/19970302033828/http://www.tencor.com:80/press/ADCrelease.html>
+An ADC module for the CRS-1010 that automates defect relocation and
+classification and allows expanded sampling plans. Used on the defect and
+particle inspection page. Tier: cross-check (vendor statement).
+
+**TENCOR-DEFECTDATA-1997** — Tencor Instruments, *Defect Data Analysis*
+(SwiftAccess), product page; Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302033417/http://www.tencor.com:80/products/defectdata.html>
+A fab-wide defect database whose control charts can be shown on the
+Surfscan AIT. Used on the defect and particle inspection page. Tier:
+cross-check (vendor statement).
+
+**KLA-SP1DLS** — KLA-Tencor, *Surfscan SP1 DLS: Unpatterned surface
+inspection*, product page; Wayback Machine capture of 2002-02-08.
+<https://web.archive.org/web/20020208135136/http://www.kla-tencor.com:80/products/defect_control/surfscan-sp1/surfscan.html>
+The SP1 successor for 200 mm and 300 mm, with a backside inspection module
+for product wafers, tool qualification "in 0.13 µm design rules and below"
+and a place in a lithography-module strategy with after-develop
+inspection. Used on the defect and particle inspection page. Tier:
+cross-check (vendor statement).
+
+**KLA-AITXP** — KLA-Tencor, *AIT XP: High-throughput scanning for
+patterned wafer inspection*, product page; Wayback Machine capture of
+2002-06-04.
+<https://web.archive.org/web/20020604135033/http://www.kla-tencor.com:80/products/defect_control/aitxp/aitxp.html>
+Extends the AIT II and AIT III, and groups the 23xx, AIT and eS20 series
+as a combination of "brightfield/darkfield and e-beam" inspection. Used on
+the defect and particle inspection page. Tier: cross-check (vendor
+statement).
+
+**KLA-2351** — KLA-Tencor, *2351: High-resolution imaging for patterned
+wafer inspection*, product page; Wayback Machine capture of 2002-01-31.
+<https://web.archive.org/web/20020131004355/http://www.kla-tencor.com:80/products/defect_control/2351/2351.html>
+Critical-defect detection "at design rules of 0.13 µm and smaller", an
+upgrade path from the 2350 and 200/300 mm bridging. Used on the defect and
+particle inspection page. Tier: cross-check (vendor statement).
+
+**KLA-EV300** — KLA-Tencor, *eV300: E-beam defect review*, product page;
+Wayback Machine capture of 2002-02-08.
+<https://web.archive.org/web/20020208135357/http://www.kla-tencor.com:80/products/defect_control/ev300/ev300.html>
+An SEM review tool that reads defect files from inspection and optical
+review systems and has integrated automatic defect classification. Used on
+the defect and particle inspection page. Tier: cross-check (vendor
+statement).
+
+**KLA-DEFECT-2002** — KLA-Tencor, *Defect Control* (inspection, review and
+analysis products), product menu page; Wayback Machine capture of
+2002-06-03.
+<https://web.archive.org/web/20020603184120/http://www.kla-tencor.com:80/products/defect_control/index.html>
+Lists the inspection (AIT XP, Surfscan SP1 DLS, 2351, 2401, eS20XP and
+others) and review (CRS-3000, eV300) products, and describes e-beam and
+optical review. Used on the defect and particle inspection page. Tier:
+cross-check (vendor statement).
+
+**WIKI-DARKFIELD** — Wikipedia, *Dark-field microscopy*.
+<https://en.wikipedia.org/wiki/Dark-field_microscopy> Microscopy methods
+that exclude the unscattered beam from the image. Used on the defect and
+particle inspection page. Tier: high-level.
+
+**PAT-SCAN-TENCOR** — L. K. Galbraith (Tencor Instruments), *Scanning
+contaminant and defect detector*, US 4,378,159 A, filed 1981-03-30,
+granted 1983-03-29. <https://patents.google.com/patent/US4378159A/en> A
+scanning laser detector for reflective surfaces with a light collector
+for scattered light. Used on the defect and particle inspection page.
+Tier: deep dive.
+
+**PAT-COLLECTOR-TENCOR** — L. K. Galbraith (Tencor Instruments), *Light
+collector for optical contaminant and flaw detector*, US 4,601,576 A, filed
+1983-12-09, granted 1986-07-22.
+<https://patents.google.com/patent/US4601576A/en> A two-stage collector
+that re-images diffusely scattered light onto a detector. Used on the
+defect and particle inspection page. Tier: deep dive.
+
+**PAT-PHOTOMASK-KLA** — K. Levy and P. Sandland (KLA Instruments),
+*Automatic photomask inspection system and apparatus*, US 4,247,203 A,
+filed 1978-04-03, granted 1981-01-27.
+<https://patents.google.com/patent/US4247203A/en> Optical inspection that
+detects differences between two dies by comparing aligned detector
+signals. Used on the defect and particle inspection page. Tier: deep dive.
+
+**PAT-INSPECT-KLA** — J. R. Jordan III, M. Nikoonahad and K. B. Wells
+(KLA-Tencor), *Surface inspection system*, US 5,864,394 A, filed
+1995-09-29, granted 1999-01-26.
+<https://patents.google.com/patent/US5864394A/en> A high-throughput
+inspection system that detects anomalies by comparing adjacent repeating
+patterns, with dynamic height correction. Used on the defect and particle
+inspection page. Tier: deep dive.
+
+**PAT-OBLIQUE-KLA** — M. Vaez-Iravani, S. Stokowski and G. Zhao
+(KLA-Tencor), *Sample inspection system*, US 6,201,601 B1, filed
+1997-09-19, granted 2001-03-13.
+<https://patents.google.com/patent/US6201601B1/en> Normal and oblique
+illumination with a curved-mirror collector and butterfly-shaped spatial
+filters. Used on the defect and particle inspection page. Tier: deep dive.
+
+**PAT-TWOPHASE-ORBOT** — D. Alumot, G. Neumann, R. Sherman and E. Tirosh
+(Orbot Instruments), *Two-phase optical inspection method and apparatus
+for defect detection*, US 5,699,447 A, filed 1991-11-12, granted
+1997-12-16. <https://patents.google.com/patent/US5699447A/en> A fast laser
+scan of the whole surface followed by high-resolution examination of the
+suspected locations only. Used on the defect and particle inspection page.
+Tier: deep dive.
+
+**RADIN-1988** — C. Radin, "A Defect Reduction Methodology For Increased
+Sort Yield Using Automated Defect Inspection", *Proc. SPIE* **0921**, 224
+(1988). <https://doi.org/10.1117/12.968369> Automated inspection with a
+KLA-2020 compared with operator inspection and electrical short-loop
+experiments. Used on the defect and particle inspection page. Tier: deep
+dive.
+
+**SHERMAN-1993** — R. Sherman, E. Tirosh and Z. Smilansky, "Automatic
+defect classification system for semiconductor wafers", *Proc. SPIE*
+**1907**, 72–79 (1993). <https://doi.org/10.1117/12.144824> An adaptive
+classifier for patterned-wafer defects on Orbot's inspection system. Used
+on the defect and particle inspection page. Tier: deep dive.
+
+**BREAUX-1995** — L. Breaux and B. Singh, "Automatic defect classification
+system for patterned semiconductor wafers", *Proc. ISSM* 1995, pp. 68–73.
+<https://doi.org/10.1109/ISSM.1995.524362> A commercial ADC system
+combining image processing and a fuzzy-logic expert system. Used on the
+defect and particle inspection page. Tier: deep dive.
+
+**NURANI-1996** — R. K. Nurani, R. Akella and A. J. Strojwas, "In-line
+defect sampling methodology in yield management: an integrated framework",
+*IEEE Transactions on Semiconductor Manufacturing* **9**(4), 506–517
+(1996). <https://doi.org/10.1109/66.542166> Cost-based defect sampling
+trading inspection cost against the yield impact of undetected defects.
+Used on the defect and particle inspection page. Tier: deep dive.
+
+**TOBIN-1997** — K. W. Tobin Jr., S. S. Gleason, T. P. Karnowski, S. L.
+Cohen and F. Lakhani, "Automatic classification of spatial signatures on
+semiconductor wafer maps", *Proc. SPIE* **3050**, 434 (1997).
+<https://doi.org/10.1117/12.275936> Spatial signature analysis of wafer
+defect maps (SEMATECH and Oak Ridge National Laboratory). Used on the
+defect and particle inspection page. Tier: deep dive.
+
+**SCHEER-1996** — B. W. Scheer, "Development of a physical haze and
+microroughness standard", *Proc. SPIE* **2862**, 78–95 (1996).
+<https://doi.org/10.1117/12.256193> Haze masking particle detection, and a
+standard made of etched features on silicon wafers. Used on the defect and
+particle inspection page. Tier: deep dive.
+
+**ONO-2002** — M. Ono, H. Iwata and K. Watanabe, "Accuracy of yield impact
+calculation based on kill ratio", *ASMC 2002*.
+<https://doi.org/10.1109/ASMC.2002.1001580> Simulated defect and bin maps
+showing when kill-ratio yield-impact estimates fail. Used on the defect
+and particle inspection page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
