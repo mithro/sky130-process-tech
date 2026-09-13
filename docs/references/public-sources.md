@@ -6545,7 +6545,7 @@ for plasma processing", *Plasma Sources Science and Technology*
 The inductively coupled plasma sources behind IMP. Used on step 109.
 Tier: deep dive.
 
-**JOLLEY-1998** — R. Jolley, "Applications of Tetramethylammoninium
+**JOLLEY-1998** — M. Jolley, "Applications of Tetramethylammoninium
 Hydroxide (TMAH) as a Post Tungsten CMP Cleaning Mixture", *Solid State
 Phenomena* **65–66**, 105–108 (1998).
 <https://doi.org/10.4028/www.scientific.net/SSP.65-66.105> TMAH as a
