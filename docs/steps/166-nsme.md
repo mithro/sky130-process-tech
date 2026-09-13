@@ -160,9 +160,11 @@ public):
   for the oxide etch (industry practice;[^nojiri-2015] SkyWater lists
   CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]); **He** backside
   cooling.
-* **O₂/N₂** (and forming gas or CF₄) for the ash;[^skw-01] **amine or
-  semi-aqueous solvent** (EKC265/EKC270 class) and DI water for the
-  post-etch clean.[^skw-01]
+* **O₂/N₂** (and forming gas) for the ash;[^skw-01] CF₄, listed on the
+  Iridia and Mattson ashers,[^skw-01] would etch the oxide the ash exposes —
+  the thin passivation oxide over metal 5 and the walls of the ring — and
+  would, we infer, be left out. **Amine or semi-aqueous solvent**
+  (EKC265/EKC270 class) and DI water for the post-etch clean.[^skw-01]
 * **Chamber consumables** (focus rings, electrodes); **fluorocarbon
   abatement**; **monitor wafers** with a full dielectric stack.
 
