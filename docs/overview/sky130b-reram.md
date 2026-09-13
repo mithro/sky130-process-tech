@@ -135,8 +135,9 @@ masks are generated from the one drawn `via` layer. The tech-file slide
 gives `r1c` a minimum width of 0.230 µm and a minimum spacing of
 0.140 µm; the DRC example slide shows rules `rr1_cell.1 (0.230)` and
 `rr1_cell.2 (0.230)`.[^reram-ug] The DRC test layout in the repository
-carries twelve such rule labels (`RR1_CELL.1` to `RR1_CELL.12`, with
-values from 0.055 to 0.230 and one of 20) but no descriptions, and we
+carries twelve such rule labels (`RR1_CELL.1` to `RR1_CELL.12`; eleven
+carry values from 0.055 to 0.230 or 20, `RR1_CELL.9` none) but no
+descriptions, and we
 do not attempt to interpret them.[^reram-cell]
 
 Neither `r1c` nor `r1v` appears in the base PDK's mask table or GDS
@@ -583,9 +584,9 @@ the tier needs:[^skw-01]
   not described.
 * Whether `r1v` is geometrically identical to `cviam`; whether 201:20 is
   the drawn `r1c` layer (our inference from the library cell and the
-  Magic file); what the DRC rules `rr1_cell.3` to `rr1_cell.12` check,
-  and why the DRC example gives 0.230 for `rr1_cell.2` where the
-  tech-file slide gives a 0.140 µm spacing.
+  Magic file); what the DRC rules `rr1_cell.1` to `rr1_cell.12` check
+  (the DRC example labels `rr1_cell.2` 0.230, while the tech-file
+  slide's spacing is 0.140 µm and `rr1_cell.3`/`.4` carry 0.140).
 * Whether the lower via of the tier is the unchanged base via-1 module
   and the upper via repeats it, as this page reads the cross-section.
 * How the module relates to the Weebit ReRAM offered in S130, to the
