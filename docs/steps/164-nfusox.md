@@ -26,13 +26,14 @@ The PDK's process stack diagram draws exactly such a film. Directly on
 0.070 µm on its sidewall, and over that a thicker "TOPNIT K=7.5"
 nitride dimensioned 0.54 µm on top and 0.4223 µm on the sidewall;
 a "glass cut" is drawn through both over the metal, and a
-polyimide ("PI1 K=2.94") tops the stack.[^pdk-04] Cypress
-qualification reports for the R7FT-3R technology and for two S8
-variants at the same Bloomington fab describe their passivation in the same two-layer form: "1000Å TEOS /
-9000Å PECVD Nitride" for the 0.18 µm R7FT-3R derivative in
-2005,[^cyp-qtp-014807] and "1000A TEOS/9000A Si3N4" for the S8DI
-metal-stack-change report of 2014,[^cyp-qtp-123907] while the 2013
-S8TNV-5R report gives only "7000 +/- 2000A Nitride".[^cyp-qtp-113005]
+polyimide ("PI1 K=2.94") tops the stack.[^pdk-04] Two Cypress
+qualification reports from the same Bloomington fab, for the R7FT-3R
+technology and the S8DI variant of S8, describe their passivation in the
+same two-layer form: "1000Å TEOS / 9000Å PECVD Nitride" for the 0.18 µm
+R7FT-3R derivative in 2005,[^cyp-qtp-014807] and "1000A TEOS/9000A Si3N4"
+for the S8DI metal-stack-change report of 2014,[^cyp-qtp-123907] while the
+2013 report for the S8TNV-5R variant gives only "7000 +/- 2000A
+Nitride".[^cyp-qtp-113005]
 The step list used in this reference does not explain what the oxide
 is for; we read `NFUSOX` as the
 deposition of the thin undoped oxide the PDK labels TOPOX (inference:

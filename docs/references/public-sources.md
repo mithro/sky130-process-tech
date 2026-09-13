@@ -1927,8 +1927,7 @@ capture of 2000-03-01.
 <https://web.archive.org/web/20000301102837/http://www.gasonics.com:80/>
 The company styles itself "GaSonics International", "a leading supplier
 of semiconductor processing equipment", with photoresist removal and
-wafer cleaning among its applications, and announces the "PEP Plus
-3510". Used on the machines index for the spelling of the vendor name.
+wafer cleaning among its applications. Used on the machines index for the spelling of the vendor name.
 Tier: cross-check (vendor statement).
 
 **MATTSON-2001** — Mattson Technology, *The Aspen Strip*, product page,
