@@ -140,7 +140,7 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 ## Machines typically used
 
 * **{ref}`Rotary multi-platen CMP polisher <machine-cmp-polisher>`**, 200 mm: Applied Materials Mirra and Mirra
-  Mesa,[^amat-1997][^chiphistory-mirra] Ebara F-REX,[^ebara-frex]
+  Mesa,[^amat-1997][^chiphistory-mirra][^amat-mesa-1999] Ebara F-REX,[^ebara-frex]
   SpeedFam-IPEC Avanti 472, Strasbaugh 6DS-SP (category page).
 * **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam DSS-200, Applied Mesa
   integrated cleaner).
@@ -265,6 +265,10 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
   any public page.
 
 <!-- footnotes -->
+[^amat-mesa-1999]: Applied Materials, *Applied Materials Announces New
+    Mirra Mesa System to Address Market Demand for Integrated CMP
+    Solutions*, press release, 1999-06-10, accessed 2026-09-13.
+    <https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-mirra-mesa-system-address-market>
 
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
     SKY130 PDK documentation.

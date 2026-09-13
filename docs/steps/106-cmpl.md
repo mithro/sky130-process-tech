@@ -113,8 +113,9 @@ fab (SKY130's recipe is not public):
 4. **Endpoint.** Time plus post-polish thickness measurement — the
    "blind polishing" Wikipedia describes for oxide[^wiki-cmp] —
    supplemented, on tools that have it, by in-situ optical
-   thickness monitoring through a pad window;[^pat-cmp-window] Bibby
-   and Holland review the options.[^bibby-1998] Run-to-run control
+   thickness monitoring through a pad window.[^pat-cmp-window] Bibby
+   and Holland's 1998 paper, by its abstract, discusses "many of the
+   approaches that have been published".[^bibby-1998] Run-to-run control
    adjusts the time from the previous lot's measured removal.
 5. **Post-CMP clean.** Double-sided brush scrub in dilute NH₄OH,
    spin-rinse-dry; slurry residue must be gone before the wafer
@@ -128,7 +129,7 @@ fab (SKY130's recipe is not public):
 ## Machines typically used
 
 * **{ref}`Rotary multi-platen CMP polisher <machine-cmp-polisher>`**, 200 mm: Applied Materials Mirra and Mirra
-  Mesa,[^amat-1997][^chiphistory-mirra] Ebara F-REX,[^ebara-frex]
+  Mesa,[^amat-1997][^chiphistory-mirra][^amat-mesa-1999] Ebara F-REX,[^ebara-frex]
   SpeedFam-IPEC Avanti 472, Strasbaugh 6DS-SP (category page).
 * **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam DSS-200, Applied Mesa
   integrated cleaner).
@@ -242,6 +243,10 @@ fab (SKY130's recipe is not public):
   on any public page.
 
 <!-- footnotes -->
+[^amat-mesa-1999]: Applied Materials, *Applied Materials Announces New
+    Mirra Mesa System to Address Market Demand for Integrated CMP
+    Solutions*, press release, 1999-06-10, accessed 2026-09-13.
+    <https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-mirra-mesa-system-address-market>
 
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
     diagram). <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>

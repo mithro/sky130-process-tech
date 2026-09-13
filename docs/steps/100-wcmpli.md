@@ -88,7 +88,8 @@ the demands on it:
   and because the motor torque changes as the metal clears, tungsten
   CMP is one of the easier polishes to {term}`endpoint`: Sue, Lültzen and
   Gonzales describe tungsten CMP endpoint detection,[^sue-1999] and
-  Bibby and Holland review the methods.[^bibby-1998] The over-polish
+  Bibby and Holland's 1998 paper, by its abstract, discusses "many of
+  the approaches that have been published".[^bibby-1998] The over-polish
   after endpoint is what removes the liner and the last tungsten
   residue ("coring" — tungsten pulled from plug seams — is one
   defect of too little; recess of too much).
@@ -136,7 +137,7 @@ fab (SKY130's recipe is not public):
 ## Machines typically used
 
 * **{ref}`Rotary multi-platen CMP polisher <machine-cmp-polisher>`**, 200 mm: Applied Materials Mirra and Mirra
-  Mesa,[^amat-1997][^chiphistory-mirra] Ebara F-REX,[^ebara-frex]
+  Mesa,[^amat-1997][^chiphistory-mirra][^amat-mesa-1999] Ebara F-REX,[^ebara-frex]
   SpeedFam-IPEC Avanti 472, Strasbaugh 6DS-SP (category page).
 * **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam DSS-200, Applied Mesa
   integrated cleaner).
@@ -259,6 +260,10 @@ fab (SKY130's recipe is not public):
   on any public page.
 
 <!-- footnotes -->
+[^amat-mesa-1999]: Applied Materials, *Applied Materials Announces New
+    Mirra Mesa System to Address Market Demand for Integrated CMP
+    Solutions*, press release, 1999-06-10, accessed 2026-09-13.
+    <https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-mirra-mesa-system-address-market>
 
 [^jolley-1998]: M. Jolley, "Applications of Tetramethylammoninium
     Hydroxide (TMAH) as a Post Tungsten CMP Cleaning Mixture", *Solid
