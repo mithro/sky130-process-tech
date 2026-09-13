@@ -79,9 +79,10 @@ of it is one page.
   this page were checked against it again on 2026-09-13.
 * **A maintenance-technician profile.** SkyWater's *A Day in the Life
   of a SkyWater Maintenance Technician* has photo captions naming "a
-  Novellus high density plasma tool" and "a SEZ etcher tool", and
-  mentions troubleshooting "complex equipment, like an
-  implanter".[^skw-07]
+  Novellus high density plasma tool" and "a SEZ etcher tool" (the
+  second in a longer caption: "In the photo above, he replaces a motor
+  for a robot on a SEZ etcher tool"), and a third about troubleshooting
+  "complex equipment, like an implanter".[^skw-07]
 * **A job posting.** A *Defect Technician 2* posting retrieved on
   2026-08-30 asks for "General operation of semiconductor defect
   metrology tools: SEM/AIT/KLA/SP1/EV300/1X", which the step pages read
