@@ -3666,8 +3666,10 @@ Used on the deposition category page. Tier: deep dive.
 
 ##### Patents
 
-**PAT-IMP-AMAT** — Applied Materials, *Alternate steps of IMP and
-sputtering process to improve sidewall coverage*, US 6,350,353 B2.
+**PAT-IMP-AMAT** — P. Gopalraja, S. Edelstein, A. Tepman, P. Ding, D. Ghosh
+and N. Maity (Applied Materials), *Alternate steps of IMP and sputtering
+process to improve sidewall coverage*, US 6,350,353 B2, filed 1999-11-24,
+granted 2002-02-26.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>
 Alternating IMP and conventional sputtering to improve sidewall
 coverage. Used on the deposition category page. Tier: cross-check.
@@ -6508,7 +6510,7 @@ for metal CMP*, US 5,958,288 A, filed 1996-11-26, granted 1999-09-28.
 peroxide/ferric-catalyst tungsten slurry. Used on step 111. Tier:
 cross-check.
 
-**PAT-HCM-NOVELLUS** — K. F. Lai (Novellus Systems), *Apparatus and
+**PAT-HCM-NOVELLUS** — K. F. Lai et al. (Novellus Systems), *Apparatus and
 method for controlling plasma uniformity across a substrate*, US
 6,179,973 B1, filed 1999-06-30, granted 2001-01-30.
 <https://patents.google.com/patent/US6179973B1/en> The
