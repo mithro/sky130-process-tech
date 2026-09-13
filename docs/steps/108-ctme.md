@@ -19,9 +19,8 @@
 producing the holes that {ref}`TIN2 <step-109>` will line and
 {ref}`WDEP2 <step-110>` will fill to make the `mcon` plug, "Contact
 from local interconnect to metal1".[^pdk-06] The resist is stripped
-afterwards; the step list used in this reference does not show a
-separate strip step between `CTME` and `TIN2`, so on our reading the
-strip and post-etch clean belong to this step.
+afterwards; this reference treats the strip and post-etch clean as
+part of this step.
 
 The public dimensions are those of the mask: a 0.170 µm square
 (ct.1) on a 0.190 µm space (ct.2),[^pdk-periph] a "min. etch and fill
@@ -270,9 +269,8 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   inferred from the stack diagram.[^pdk-04]
 * Which etcher runs the step is not public; SkyWater's list names no
   dedicated dielectric etcher.[^skw-01]
-* The step list used in this reference has no separate strip step
-  after `CTME`; this page treats the resist strip and post-etch
-  clean as part of the etch step.
+* This page treats the resist strip and post-etch clean as part of
+  the etch step.
 
 <!-- footnotes -->
 
