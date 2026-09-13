@@ -17,18 +17,15 @@ dielectric ({term}`ILD`). After {ref}`CMPM <step-116>` the {ref}`NILD3 <step-115
 oxide is flat but its thickness above the metal-1 lines is whatever
 the polish left — a target with a tolerance — and its surface carries
 the scratches, slurry residue and hydrated layer of a polish. A thin
-plasma oxide deposited over it seals that surface and, on our reading
-of the step name and its position, brings the dielectric above
-metal 1 to its final thickness before the via-1 mask
+plasma oxide deposited over it seals that surface and, we infer from
+the PDK's finished via-1 height and the polish's thickness variation
+(see below), brings the dielectric above metal 1 to its final
+thickness before the via-1 mask
 ({ref}`VIM <step-118>`) is printed. The finished number is public:
 the PDK's stack diagram gives the via-1 height through NILD3 as
-0.27 µm.[^pdk-04] The cap's own thickness is not. Its suffix makes it the
-third "CAPOX" of the flow, after {ref}`NCAPOX <step-091>` over the
-{term}`pre-metal dielectric`; the step list used in this reference carries
-no `NCAPOX2`, and we infer that the second of the numbering belonged
-with the local-interconnect dielectric ({ref}`NILD2 <step-105>`,
-{ref}`CMPL <step-106>`) and is either absent from this flow or not
-listed as a separate step. The cap recurs as
+0.27 µm.[^pdk-04] The cap's own thickness is not. A similar cap is
+described at {ref}`NCAPOX <step-091>` over the
+{term}`pre-metal dielectric`. The cap recurs as
 {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>` and
 {ref}`NCAPOX6 <step-158>` above each polished metal level.
 
@@ -241,9 +238,6 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
   polished {ref}`NILD3 <step-115>` and this cap is not public.
 * Whether "C2" denotes a Novellus Concept Two is an inference from
   the vendor's product names.[^novellus-history]
-* The step list used in this reference numbers the caps `NCAPOX`
-  and `NCAPOX3`, with no `NCAPOX2`; that the second of the numbering
-  goes with the local-interconnect dielectric is our inference.
 
 <!-- footnotes -->
 
