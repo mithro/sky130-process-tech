@@ -153,7 +153,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   configurations),[^amat-1997] TEL DRM/Unity, Lam {term}`TCP` 9100
   ({ref}`category-etch`).
 * **Optical emission endpoint** system on the etcher.
-* **Cross-section SEM**, **CD-SEM**.
+* **Cross-section SEM**, **{ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**.
 
 ## Machines likely used at SkyWater
 
