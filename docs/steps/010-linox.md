@@ -118,9 +118,9 @@ width because of the encroachment under the nitride edge.
 
 ## Machines typically used
 
-* **Vertical oxidation furnace** (as for {ref}`BOX <step-002>`):
+* **{ref}`Vertical oxidation furnace <machine-vertical-furnace-oxidation>`** (as for {ref}`BOX <step-002>`):
   SVG/Thermco–ASML–Aviza AVP/RVP, Kokusai, TEL Alpha-8, ASM A400.
-  Some fabs use a single-wafer {term}`RTP` tool for in-situ-steam liner
+  Some fabs use a {ref}`single-wafer RTP tool <machine-rapid-thermal-processor>` for in-situ-steam liner
   oxidation instead.
 * **Wet bench** for the pre-oxidation clean and HF dip.
 * **Ellipsometer**, **cross-section SEM**.

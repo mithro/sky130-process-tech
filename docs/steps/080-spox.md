@@ -131,7 +131,7 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
 
 * **PECVD system** (Applied Materials Producer/Centura DxZ, Novellus
   Concept Two/Sequel) with TEOS or silane oxide.
-* **Vertical LPCVD furnace** (Aviza/SVG, TEL, ASM, Kokusai) with
+* **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** (Aviza/SVG, TEL, ASM, Kokusai) with
   TEOS or SiH₄/O₂ for the batch alternative.
 * **Spectroscopic ellipsometer**.
 

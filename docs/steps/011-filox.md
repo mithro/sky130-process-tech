@@ -138,7 +138,7 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
   (post-2012 Novellus SPEED Max/NExT), Trikon Planar 200. Novellus'
   SPEED platform was the market's long-running STI fill
   tool.[^lam-speed]
-* **Furnace or RTP** for optional densification.
+* **{ref}`Furnace <machine-vertical-furnace-anneal>` or {ref}`RTP <machine-rapid-thermal-processor>`** for optional densification.
 * **Reflectometer / ellipsometer**; **cross-section SEM**.
 
 ## Machines likely used at SkyWater
