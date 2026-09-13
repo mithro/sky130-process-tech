@@ -95,6 +95,7 @@ met1 bottom 1.3761, met2 bottom 2.0061, met3 bottom 2.7861, met4
 bottom 4.0211, met5 bottom 5.3711, and PI1 top 11.8834 µm (further
 labels 5.2523, 6.1346, 0.4223 and 0.070 µm dimension the
 metal5/passivation region). Tier: cross-check.
+Also used on the PECVD, HDP-CVD and PVD cluster tool pages.
 
 **PDK-05** — *Masks* page and `masks.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -127,6 +128,7 @@ periphery, SONOS programmed/erased Vt 1.44 V / −2.3 V and 100 k cycle
 endurance.
 Also used on the silicon and polysilicon plasma etcher and metal plasma
 etcher pages.
+Also used on the PECVD and PVD cluster tool pages.
 Tier: cross-check.
 
 **PDK-08** — *Parasitic Layout Extraction* page.
@@ -329,6 +331,7 @@ metal3 0.845 µm, metal2 0.36 µm, metal1 0.36 µm, local interconnect
 redistribution layer (4.0 µm RDL, 5.25 µm polyimide via).
 Also used on the metal plasma etcher page. Tier:
 high-level (numbers should be cross-checked against PDK-04).
+Also used on the PVD cluster tool page.
 
 **ANN-17** — Wikipedia, *"130 nm process"*.
 <https://en.wikipedia.org/wiki/130_nm_process>. Context for the node
@@ -467,6 +470,8 @@ the rapid thermal processor and plasma nitridation chamber pages.
 Also used on the silicon and polysilicon plasma etcher, dielectric and
 nitride plasma etcher, metal plasma etcher, downstream plasma asher and
 wet bench and spray processor pages.
+Also used on the PECVD, HDP-CVD, tungsten CVD and PVD cluster tool
+pages.
 Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
@@ -518,6 +523,7 @@ separately, servicing tool robots (robot teach points, "a robot fault
 on a Novellus high density plasma tool", "a motor for a robot on a SEZ
 etcher tool") and "the pneumatic controls of a vacuum system". Tier:
 cross-check (tool naming).
+Also used on the HDP-CVD page.
 
 **SKW-08** — SkyWater Technology, *"Maintenance Technician Job
 Overview"* and *"Careers & Jobs"* pages.
@@ -624,6 +630,7 @@ Inc."; developer from Air Products, Moses Lake); "Advantages of 200
 millimeter Wafer Fabs". Note: SEC.gov rejects fetches without a
 descriptive `User-Agent`.
 Also used on the dielectric and nitride plasma etcher page.
+Also used on the PVD cluster tool page.
 Tier: cross-check.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
@@ -640,6 +647,7 @@ frontend process licensed from MIT-Lincoln Laboratory"; updated
 supplier list (GlobalWafers, SEH America, Honeywell and JX Metals
 targets, Linde and Airgas gases, EMD Performance Materials). Tier:
 cross-check.
+Also used on the PVD cluster tool page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -1159,6 +1167,7 @@ Also used on the vertical-furnace oxidation, LPCVD and anneal pages and
 the rapid thermal processor and plasma nitridation chamber pages.
 Also used on the silicon and polysilicon plasma etcher and dielectric
 and nitride plasma etcher pages.
+Also used on the PECVD, HDP-CVD and tungsten CVD pages.
 Tier: high-level.
 
 **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
@@ -1171,6 +1180,7 @@ Also used on the high-energy implanter page.
 Also used on the vertical-furnace LPCVD and anneal pages.
 Also used on the silicon and polysilicon plasma etcher, dielectric and
 nitride plasma etcher and metal plasma etcher pages.
+Also used on the PECVD and PVD cluster tool pages.
 Tier: high-level.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
@@ -1191,6 +1201,7 @@ DUV lithography, RTP — written for exactly the 0.25–0.13 µm
 generations.
 Also used on the rapid thermal processor and plasma nitridation chamber
 pages.
+Also used on the tungsten CVD page.
 Tier: high-level.
 
 **TXT-06** — S. M. Sze (ed.), *VLSI Technology*, 2nd ed., McGraw-Hill,
@@ -1219,6 +1230,7 @@ reference with equipment detail.
 Also used on the medium-current implanter page.
 Also used on the vertical-furnace oxidation page and the rapid thermal
 processor page.
+Also used on the HDP-CVD page.
 Tier: high-level.
 
 **TXT-10** — R. B. Fair (ed.), *Rapid Thermal Processing: Science and
@@ -1280,6 +1292,7 @@ Electrochemical Society, vol. 131, no. 6, pp. 1427–1433, 1984,
 DOI 10.1149/1.2115864.
 <https://iopscience.iop.org/article/10.1149/1.2115864>. Foundational
 WF₆/H₂ and WF₆/SiH₄ kinetics behind W plug fill. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **REV-04** — S.-L. Zhang and M. Östling, *"Metal Silicides in CMOS
 Technology: Past, Present, and Future Trends"*, Critical Reviews in
@@ -1640,12 +1653,14 @@ page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>
 High-density plasma, sputtering during deposition, SiH₄/O₂/Ar oxide.
 Used on step 011 and the deposition category page. Tier: high-level.
+Also used on the PECVD and HDP-CVD pages.
 
 **WIKI-PH3** — Wikipedia, *Phosphine*.
 <https://en.wikipedia.org/wiki/Phosphine> Phosphine, the phosphorus
 source gas for implanters. Used on the implant category page, and on the
 medium-current and high-energy implanter pages. Tier:
 high-level.
+Also used on the HDP-CVD page.
 
 **WIKI-PIRANHA** — Wikipedia, *Piranha solution*.
 <https://en.wikipedia.org/wiki/Piranha_solution> SPM ratios and
@@ -1687,6 +1702,7 @@ Tier: high-level.
 <https://en.wikipedia.org/wiki/Physical_vapor_deposition> Physical
 vapour deposition overview. Used on the deposition category page. Tier:
 high-level.
+Also used on the PVD cluster tool page.
 
 **WIKI-RC** — Wikipedia, *Contact resistance*.
 <https://en.wikipedia.org/wiki/Contact_resistance> Contact resistance
@@ -1778,6 +1794,7 @@ high-level.
 <https://en.wikipedia.org/wiki/Sputter_deposition> Sputter deposition:
 magnetron sources, targets and step coverage. Used on the deposition
 category page. Tier: high-level.
+Also used on the PVD cluster tool page.
 
 **WIKI-SRIM** — Wikipedia, *Stopping and Range of Ions in Matter*.
 <https://en.wikipedia.org/wiki/Stopping_and_Range_of_Ions_in_Matter>
@@ -1803,6 +1820,7 @@ SUMCO. Used on the substrate category page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate> Tetraethyl
 orthosilicate, the liquid precursor for CVD oxide. Used on the
 deposition category page. Tier: high-level.
+Also used on the PECVD page.
 
 **WIKI-TERADYNE** — Wikipedia, *Teradyne*.
 <https://en.wikipedia.org/wiki/Teradyne> Company article on the
@@ -1829,6 +1847,7 @@ Tier: high-level.
 <https://en.wikipedia.org/wiki/Titanium_nitride> Titanium nitride as a
 barrier and local-interconnect material. Used on the deposition category
 page. Tier: high-level.
+Also used on the PVD cluster tool page.
 
 **WIKI-TISI2** — Wikipedia, *Titanium disilicide*.
 <https://en.wikipedia.org/wiki/Titanium_disilicide> Titanium disilicide
@@ -1873,6 +1892,7 @@ the substrate category page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Tungsten_hexafluoride> Tungsten
 hexafluoride, the CVD tungsten precursor. Used on the deposition
 category page. Tier: high-level.
+Also used on the tungsten CVD page.
 
 ### 8.5 Papers and patents used for era-typical isolation-module values
 
@@ -1914,6 +1934,7 @@ no. 5A, pp. 2886–2893, 2002, DOI 10.1143/JJAP.41.2886. HDP-CVD
 gap-fill modelling (sputter-yield angular dependence and ionic
 deposition) demonstrated on STI "of space width 0.13 µm and aspect
 ratio 3.9". Tier: deep dive.
+Also used on the HDP-CVD page.
 
 **CHEW-2002** — K. W. Chew, J. Zhang, K. Shao, W. B. Loh and S.-F. Chu,
 *"Impact of Deep N-well Implantation on Substrate Noise Coupling and RF
@@ -1982,6 +2003,7 @@ SPEED Max HDP-CVD Dielectric Gapfill System Extends STI Application to
 geometries"; "tailoring the deposition, etch, and sputter-to-deposition
 (S/D) ratio"; "enlarged remote plasma source". Tier: cross-check
 (vendor statement).
+Also used on the HDP-CVD page.
 
 **AXCELIS-GSD** — Axcelis Technologies, *"Axcelis Announces
 Introduction Of The 'GSD Ovation' High Current And High Energy Batch
@@ -2967,6 +2989,7 @@ deposition of silicon-based dielectric films for integrated circuits",
 silicon-based dielectrics: reactor design, film properties and gap-fill
 mechanisms. Used on step 011 and the deposition category page. Tier:
 deep dive.
+Also used on the HDP-CVD page.
 
 **OCONNOR-1996** — J. P. O'Connor and N. Tokoro, "End station and beam
 line design considerations for photoresist outgassing with high energy
@@ -3103,6 +3126,7 @@ Solid-State Letters* **3**(2), 80 (1999).
 <https://doi.org/10.1149/1.1390964> Properties and gap-fill capability
 of HDP-CVD phosphosilicate glass, the doped variant SkyWater also lists.
 Used on step 011. Tier: deep dive.
+Also used on the HDP-CVD page.
 
 **VISINTIN-2006** — P. M. Visintin, M. B. Korzenski and T. H. Baum,
 "Liquid Clean Formulations for Stripping High-Dose Ion-Implanted
@@ -3157,6 +3181,7 @@ plasma-enhanced deposition and ion-bombardment control of film stress.
 Used on step 005 and the deposition and etch category pages.
 Also used on the silicon and polysilicon plasma etcher and dielectric
 and nitride plasma etcher pages.
+Also used on the PECVD page.
 Tier: deep
 dive.
 
@@ -3262,6 +3287,7 @@ deep dive.
 deposition/etch process for high-aspect-ratio gaps, the Applied
 Materials counterpart to the Novellus approach. Used on step 011. Tier:
 deep dive.
+Also used on the HDP-CVD page.
 
 **PAT-HDP-NOVELLUS** — G. D. Papasouliotis, A. B. Chakravarti, R. A.
 Conti, L. Economikos and P. A. Van Cleemput (Novellus Systems /
@@ -3271,6 +3297,7 @@ deposition process capable of filling high aspect ratio structures*, US
 <https://patents.google.com/patent/US6030881A/en> A high-throughput
 HDP-CVD process for filling high-aspect-ratio structures. Used on step
 011. Tier: deep dive.
+Also used on the HDP-CVD page.
 
 **PAT-HOTPHOS-TSMC** — C.-C. Huang and S. M. Chen (Taiwan Semiconductor
 Manufacturing Co.), *Automated method for monitoring and controlling the
@@ -3952,6 +3979,7 @@ on the deposition category page. Tier: deep dive.
 <https://doi.org/10.1109/IEDM.1987.191389> The tungsten-stud plus
 planarisation wiring scheme that became the standard plug process. Used
 on the deposition category page. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **KAMINS-1980** — T. I. Kamins, "Structure and Properties of LPCVD
 Silicon Films", *Journal of The Electrochemical Society* **127**(3),
@@ -3967,6 +3995,7 @@ dioxide from tetraethylorthosilicate", *Journal of Vacuum Science &
 Technology B* **10**(1), 37–45 (1992).
 <https://doi.org/10.1116/1.586361> Reaction kinetics of PECVD TEOS oxide
 and their effect on step coverage. Used on the deposition category page.
+Also used on the PECVD page.
 Tier: deep dive.
 
 **ROSSNAGEL-1994** — S. M. Rossnagel and J. Hopwood, "Metal ion
@@ -3974,6 +4003,7 @@ deposition from ionized magnetron sputtering discharge", *Journal of
 Vacuum Science & Technology B* **12**(1), 449–453 (1994).
 <https://doi.org/10.1116/1.587142> The first ionised-magnetron (IMP)
 metal deposition experiments. Used on the deposition category page.
+Also used on the PVD cluster tool page.
 Tier: deep dive.
 
 **ROSSNAGEL-1998** — S. M. Rossnagel, "Directional and ionized physical
@@ -3982,6 +4012,7 @@ Science & Technology B* **16**(5), 2585–2608 (1998).
 <https://doi.org/10.1116/1.590242> Review of collimated and ionised PVD
 for liners and barriers. Used on the deposition category page. Tier:
 deep dive.
+Also used on the PVD cluster tool page.
 
 **THORNTON-1974** — J. A. Thornton, "Influence of apparatus geometry and
 deposition conditions on the structure and topography of thick sputtered
@@ -3989,6 +4020,7 @@ coatings", *Journal of Vacuum Science and Technology* **11**(4), 666–670
 (1974). <https://doi.org/10.1116/1.1312732> The structure-zone diagram
 for sputtered films versus pressure and temperature. Used on the
 deposition category page. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 ##### Books and book chapters
 
@@ -3997,6 +4029,7 @@ Academic Press, 2002.
 <https://doi.org/10.1016/B978-0-12-524975-1.X5000-9> Nucleation, growth
 regimes, step coverage and the structure-zone model. Used on the
 deposition category page. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **SESHAN-2002** — K. Seshan (ed.), *Handbook of Thin-Film Deposition
 Processes and Techniques: Principles, Methods, Equipment and
@@ -4004,6 +4037,7 @@ Applications*, 2nd ed., Noyes Publications / William Andrew, 2002, ISBN
 978-0-8155-1442-8. <https://openlibrary.org/isbn/9780815514428>
 Chapter-per-technique reference on CVD, PECVD, PVD and their equipment.
 Used on the deposition category page. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 ##### Patents
 
@@ -4014,12 +4048,14 @@ granted 2002-02-26.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>
 Alternating IMP and conventional sputtering to improve sidewall
 coverage. Used on the deposition category page. Tier: cross-check.
+Also used on the PVD cluster tool page.
 
 **PAT-TIW-HITACHI** — Hitachi Metals, *Titanium-tungsten target material
 for sputtering and manufacturing method therefor*, US 5,160,534 A,
 granted 1992-11-03. <https://patents.google.com/patent/US5160534A/en>
 The 10 wt.% Ti composition of Ti:W sputter targets. Used on the
 deposition category page. Tier: cross-check.
+Also used on the PVD cluster tool page.
 
 ##### Vendor, regulatory, marketplace and press pages
 
@@ -4034,6 +4070,10 @@ deposition category page. Tier: cross-check.
 Current product page for the Endura PVD platform (cluster architecture
 and chamber types). Used on the deposition category page. Tier:
 cross-check.
+Also used on the PVD cluster tool page, read from the Wayback Machine
+capture of 2026-06-11 because the live page refused the checker's
+request on 2026-09-13:
+<https://web.archive.org/web/20260611155710/https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>
 
 **ASM-A400** — ASM International, *ASM International N.V. launches A400
 DUO vertical furnace system*, press release, 2019-11-11.
@@ -4051,6 +4091,7 @@ Tier: cross-check.
 <https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>
 The Concept One/Two, Sequel, SPEED and Altus product history. Used on
 the deposition category page. Tier: cross-check.
+Also used on the PECVD, HDP-CVD and tungsten CVD pages.
 
 #### Lithography
 
@@ -4634,6 +4675,8 @@ and etch category pages.
 Also used on the rapid thermal processor page.
 Also used on the silicon and polysilicon plasma etcher, dielectric and
 nitride plasma etcher and metal plasma etcher pages.
+Also used on the PECVD, HDP-CVD, tungsten CVD and PVD cluster tool
+pages.
 Tier: cross-check.
 
 **AMAT-RTP** — EDN, *Applied dedicates RTP with Vantage*, 2002-09-23
@@ -5156,6 +5199,7 @@ suppress. Used on step 050. Tier: high-level.
 **WIKI-SILANE** — Wikipedia, *Silane*.
 <https://en.wikipedia.org/wiki/Silane> Silane, the poly deposition
 precursor, and its hazards. Used on step 048. Tier: high-level.
+Also used on the PECVD page.
 
 **WONG-1988** — C. Y. Wong, J. Y. Sun, Y. Taur, C. S. Oh, R. Angelucci
 and B. Davari, "Doping of n⁺ and p⁺ polysilicon in a dual-gate CMOS
@@ -5553,6 +5597,7 @@ and B. Wacker, "Mechanism of SiNₓHᵧ Deposition from NH₃-SiH₄ Plasma",
 *Journal of The Electrochemical Society* **137**(2), 614–623 (1990).
 <https://doi.org/10.1149/1.2086517> Mechanism of PECVD SiNₓHᵧ deposition
 from NH₃/SiH₄. Used on step 058. Tier: deep dive.
+Also used on the PECVD page.
 
 **STURTEVANT-1994** — J. L. Sturtevant, S. J. Holmes, S. E. Knight, D.
 Poley, P. A. Rabidoux, L. K. Somerville, T. L. McDevitt and A. Stamper,
@@ -6402,6 +6447,7 @@ E. Smith, "Characterization of Plasma-Deposited Silicon Dioxide",
 *Journal of The Electrochemical Society* **128**(7), 1545–1551 (1981).
 <https://doi.org/10.1149/1.2127680> Characterisation of plasma-deposited
 silicon dioxide. Used on steps 091, 092, 096 and 105. Tier: deep dive.
+Also used on the PECVD page.
 
 **ALVI-1986** — N. S. Alvi and D. L. Kwong, "Reflow of Phosphosilicate
 Glass by Rapid Thermal Annealing", *Journal of The Electrochemical
@@ -6434,6 +6480,7 @@ phosphosilicate glass process", *Proc. 7th International Symposium on
 Plasma- and Process-Induced Damage* (2002), pp. 76–79.
 <https://doi.org/10.1109/PPID.2002.1042613> Plasma damage from an HDP
 PSG process and its reduction. Used on step 089. Tier: deep dive.
+Also used on the HDP-CVD page.
 
 **DAUBENSPECK-1991** — T. H. Daubenspeck, J. K. DeBrosse, C. W.
 Koburger, M. Armacost and J. R. Abernathey, "Planarization of ULSI
@@ -6456,6 +6503,7 @@ CVD Using TEOS and Ozone", *Journal of The Electrochemical Society*
 **137**(9), 2883–2887 (1990). <https://doi.org/10.1149/1.2087093>
 TEOS/ozone oxide at atmospheric pressure. Used on step 091. Tier: deep
 dive.
+Also used on the PECVD page.
 
 **FUJINO-1991** — K. Fujino, Y. Nishimoto, N. Tokumasu and K. Maeda,
 "Doped Silicon Oxide Deposition by Atmospheric Pressure and Low
@@ -6476,6 +6524,7 @@ chemical-vapor deposition", *Journal of Vacuum Science & Technology B*
 **23**(5), 2146–2150 (2005). <https://doi.org/10.1116/1.2050670> HDP PSG
 mechanism and thermal budget. Used on steps 089, 091 and 092. Tier: deep
 dive.
+Also used on the HDP-CVD page.
 
 **KERN-1991** — W. Kern and J. Hartman, "Simultaneous deposition and
 fusion flow planarization of borophosphosilicate glass in a new chemical
@@ -6489,6 +6538,7 @@ Sub-Half Micron Gap Fill: Electrostatic Effects", *Journal of The
 Electrochemical Society* **141**(8), 2172–2177 (1994).
 <https://doi.org/10.1149/1.2055081> Integrated PECVD/ozone-TEOS films
 and their surface effects. Used on steps 091 and 105. Tier: deep dive.
+Also used on the PECVD page.
 
 **LAN-2004** — J. K. Lan and Y. L. Wang, "Mechanism of high density
 plasma chemical vapor deposition phosphosilicate glass process without
@@ -6535,6 +6585,7 @@ The Electrochemical Society* **137**(7), 2209–2215 (1990).
 <https://doi.org/10.1149/1.2086914> Reaction mechanisms of plasma and
 thermal TEOS oxide deposition. Used on steps 091 and 105. Tier: deep
 dive.
+Also used on the PECVD page.
 
 **PAULSON-1974** — W. M. Paulson and R. W. Kirk, "The Effects of
 Phosphorus-Doped Passivation Glass on the Corrosion of Aluminum", *12th
@@ -6680,6 +6731,7 @@ modeling of reactive sputtering processes", *Thin Solid Films*
 **476**(2), 215–230 (2005). <https://doi.org/10.1016/j.tsf.2004.10.051>
 Reactive sputtering model and hysteresis. Used on steps 097, 101 and
 109. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **BIELMANN-1999** — M. Bielmann et al., "Effect of Particle Size during
 Tungsten Chemical Mechanical Polishing", *Electrochemical and
@@ -6697,6 +6749,7 @@ polishing. Used on steps 100, 110 and 111. Tier: deep dive.
 integrated circuit interconnects", *Physics of Plasmas* **5**(5),
 1624–1631 (1998). <https://doi.org/10.1063/1.872829> Ionised PVD for
 interconnects. Used on step 097. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **KIM-2004** — S.-H. Kim, E.-S. Hwang, S.-Y. Han, S.-H. Pyi, N. Kwak, H.
 Sohn, J. Kim and G. B. Choi, "Pulsed CVD of Tungsten Thin Film as a
@@ -6704,6 +6757,7 @@ Nucleation Layer for Tungsten Plug-Fill", *Electrochemical and
 Solid-State Letters* **7**(9), G195 (2004).
 <https://doi.org/10.1149/1.1784053> Pulsed CVD tungsten nucleation for
 plug fill. Used on step 099. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **KLEIJN-1991** — C. R. Kleijn, C. J. Hoogendoorn, A. Hasper, J.
 Holleman and J. Middelhoek, "Transport Phenomena in Tungsten LPCVD in a
@@ -6711,6 +6765,7 @@ Single-Wafer Reactor", *Journal of The Electrochemical Society*
 **138**(2), 509–517 (1991). <https://doi.org/10.1149/1.2085620>
 Transport phenomena in a single-wafer tungsten reactor. Used on step
 099. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **KOERNER-1993** — H. Koerner, H. P. Erb and H. Melzner, "Evaluation of
 Ti and TiN thicknesses for tungsten plug contact metallization",
@@ -6738,6 +6793,7 @@ LPCVD Tungsten Deposition in a Single Wafer Reactor", *Journal of The
 Electrochemical Society* **133**(12), 2542–2548 (1986).
 <https://doi.org/10.1149/1.2108468> Kinetics of LPCVD tungsten in a
 single-wafer reactor. Used on steps 099 and 110. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **MCCONICA-1988** — C. M. McConica and K. Cooper, "Tungsten Nucleation
 on Thermal Oxide during LPCVD of Tungsten by the Hydrogen Reduction of
@@ -6745,6 +6801,7 @@ Tungsten Hexafluoride", *Journal of The Electrochemical Society*
 **135**(4), 1003–1008 (1988). <https://doi.org/10.1149/1.2095756>
 Tungsten nucleation on thermal oxide. Used on steps 099 and 110. Tier:
 deep dive.
+Also used on the tungsten CVD page.
 
 **MORGAN-1985** — A. E. Morgan, E. K. Broadbent and A. H. Reader,
 "Formation of Titanium Nitride/Silicide Bilayers by Rapid Thermal Anneal
@@ -6768,12 +6825,14 @@ technology. Used on step 098. Tier: deep dive.
 coverage*, US 6,635,965 B1, filed 2001-10-09, granted 2003-10-21.
 <https://patents.google.com/patent/US6635965B1/en> The pulsed nucleation
 layer. Used on steps 099 and 110. Tier: cross-check.
+Also used on the tungsten CVD page.
 
 **PETRI-1998** — R. Petri, H. Hauf, D. Berenbaum, J. C. Favreau and P.
 Mazet, "Nitrogen effect on post-nucleation tungsten CVD film growth",
 *Proc. IEEE 1998 International Interconnect Technology Conference*, pp.
 202–204. <https://doi.org/10.1109/IITC.1998.704792> Nitrogen and
 post-nucleation tungsten growth. Used on step 099. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **PETROV-2003** — I. Petrov, P. B. Barna, L. Hultman and J. E. Greene,
 "Microstructural evolution during film growth", *Journal of Vacuum
@@ -6786,18 +6845,21 @@ J. Cuomo, "Collimated magnetron sputter deposition", *Journal of Vacuum
 Science & Technology A* **9**(2), 261–265 (1991).
 <https://doi.org/10.1116/1.577531> Collimated magnetron sputter
 deposition. Used on steps 097, 109 and 112. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **ROSSNAGEL-1993** — S. M. Rossnagel and J. Hopwood, "Magnetron sputter
 deposition with high levels of metal ionization", *Applied Physics
 Letters* **63**(24), 3285–3287 (1993).
 <https://doi.org/10.1063/1.110176> Ionised magnetron sputtering and
 metal-ion deposition. Used on steps 097 and 109. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **RYAN-1995** — J. G. Ryan, S. B. Brodsky, T. Katata, M. Honda, N. Shoda
 and H. Aochi, "Collimated Sputtering of Titanium and Titanium Nitride
 Films", *MRS Bulletin* **20**(11), 42–45 (1995).
 <https://doi.org/10.1557/S0883769400045553> Collimated sputtering of Ti
 and TiN. Used on step 097. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **SCHRODER-1984** — D. K. Schroder and D. L. Meier, "Solar cell contact
 resistance — A review", *IEEE Transactions on Electron Devices*
@@ -6938,6 +7000,7 @@ conformality in ionized magnetron sputter metal deposition processes",
 *Journal of Vacuum Science & Technology B* **14**(4), 2603–2608 (1996).
 <https://doi.org/10.1116/1.588993> Liner conformality in ionised
 sputtering, modelled. Used on step 109. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **HEGDE-1997** — R. I. Hegde, P. J. Tobin, S. Sitaram and J. Klein,
 "Thin Film Properties of Tungsten Nucleation Layer in Blanket Tungsten
@@ -6945,12 +7008,14 @@ Deposition", *Journal of The Electrochemical Society* **144**(3),
 1087–1090 (1997). <https://doi.org/10.1149/1.1837536> Properties of the
 nucleation layer in blanket tungsten deposition. Used on step 110. Tier:
 deep dive.
+Also used on the tungsten CVD page.
 
 **HOPWOOD-1992** — J. Hopwood, "Review of inductively coupled plasmas
 for plasma processing", *Plasma Sources Science and Technology*
 **1**(2), 109–116 (1992). <https://doi.org/10.1088/0963-0252/1/2/006>
 The inductively coupled plasma sources behind IMP. Used on step 109.
 Also used on the silicon and polysilicon plasma etcher page.
+Also used on the HDP-CVD page.
 Tier: deep dive.
 
 **JOLLEY-1998** — M. Jolley, "Applications of Tetramethylammoninium
@@ -6983,6 +7048,7 @@ dive.
 of titanium nitride: A deposition model", *Journal of Applied Physics*
 **96**(1), 820–828 (2004). <https://doi.org/10.1063/1.1753663> A
 deposition model for ionised PVD of titanium nitride. Used on step 109.
+Also used on the PVD cluster tool page.
 Tier: deep dive.
 
 **OEHRLEIN-1994B** — G. S. Oehrlein, Y. Zhang, D. Vender and O. Joubert,
@@ -7007,6 +7073,7 @@ method for controlling plasma uniformity across a substrate*, US
 <https://patents.google.com/patent/US6179973B1/en> The
 hollow-cathode-magnetron ionised PVD source, a competing design. Used on
 step 109. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **PERRY-2001** — W. L. Perry, K. Waters, M. Barela and H. M. Anderson,
 "Oxide etch behavior in a high-density, low-pressure, inductively coupled
@@ -7023,6 +7090,7 @@ Tier: deep dive.
 tungsten silicide and tungsten films", *Journal of Applied Physics*
 **61**(2), 561–566 (1987). <https://doi.org/10.1063/1.338259> Stress of
 CVD tungsten films at temperature. Used on step 110. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **SOCHA-2004** — R. Socha, D. Van Den Broeke, S. Hsu, J. F. Chen et al.,
 "Contact hole reticle optimization by using interference mapping
@@ -7144,6 +7212,7 @@ Back-End-of-Line Integration for 130nm SONOS Product Families*, document
 The product-change notification that carries the QTP 123907 report and
 describes the TiW-based stack as Cypress's Minnesota process. Used on
 steps 112 and 123. Tier: cross-check.
+Also used on the PVD cluster tool page.
 
 **CYP-QTP-014807** — Cypress Semiconductor, *Technology Derivative
 Qualification Report, QTP# 014807 Version 2.0: Technology Derivative
@@ -7152,6 +7221,7 @@ Infineon Technologies).
 <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
 R7FT-3R "Hot Al" derivative at Fab 4: 150 Å Ti / 4 200 Å Al / 300 Å TiW.
 Used on steps 112 and 117. Tier: cross-check.
+Also used on the PECVD page.
 
 **CYP-QTP-030204** — Cypress Semiconductor, *Automotive Product
 Qualification Report, QTP# 030204: 256K Static RAM Automotive Devices,
@@ -7171,6 +7241,7 @@ Al-0.5%Cu / 300A TiW", Metal 2 the same, Metal 3 "150A Ti / 7200A
 Al-0.5%Cu / 300A TiW". Used on steps 112–114, 118–121, 123–125,
 129–132, 134, 136, 138–141, 145 and 146 and on the etch category page.
 Also used on the metal plasma etcher page.
+Also used on the PVD cluster tool page.
 Tier: cross-check.
 
 **CYP-QTP-123907** — Cypress Semiconductor, *Fab Process Qualification
@@ -7196,6 +7267,7 @@ dielectric constant, fluorine-doped SiO₂ for intermetal dielectric",
 <https://doi.org/10.1116/1.580280> Fluorine-doped SiO₂ as a
 low-permittivity inter-metal dielectric. Used on step 115. Tier: deep
 dive.
+Also used on the HDP-CVD page.
 
 **DEVRIENDT-1998** — K. Devriendt, E. Vrancken, N. Heylen, J. Grillaert,
 M. Meuris, M. M. Heyns and Z. C. Lin, "Relation between Oxide-CMP
@@ -7256,6 +7328,7 @@ damage during interlevel oxide deposition in high-density plasma tools",
 (P2ID)*, pp. 164–167. <https://doi.org/10.1109/PPID.1998.725600>
 Charging damage during interlevel oxide deposition in high-density
 plasma tools. Used on step 115. Tier: deep dive.
+Also used on the HDP-CVD page.
 
 **KAMOSHIDA-1997** — K. Kamoshida and Y. Ito, "Highly preferred (111)
 texture aluminum-copper films formed with argon plasma treatment of the
@@ -7448,6 +7521,7 @@ of the current tungsten plug process", *Thin Solid Films* **304**(1–2),
 1–12 (1997). <https://doi.org/10.1016/S0040-6090(96)09557-0> A review of
 the tungsten-plug process for high-aspect-ratio contacts and vias, liner
 included. Used on steps 120, 121, 131 and 132. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **KAWASAKI-1996** — H. Kawasaki and C.-K. Hu, "An electromigration
 failure model of tungsten plug contacts/vias for realistic lifetime
@@ -7506,6 +7580,7 @@ semiconductor wafer*, US 5,028,565 A, filed 1989-08-25, granted
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5028565>
 An early process patent for CVD tungsten deposition on semiconductor
 wafers. Used on steps 121 and 132. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **PETRI-1992** — R. Petri, D. Henry and N. Sadeghi, "Tungsten etching
 mechanisms in low-pressure SF₆ plasma", *Journal of Applied Physics*
@@ -7534,6 +7609,7 @@ aspect ratio contact", *31st Annual Proceedings, Reliability Physics
 1993*, pp. 334–339. <https://doi.org/10.1109/RELPHY.1993.283279>
 Reliability of blanket-tungsten CVD filling of high-aspect-ratio
 contacts. Used on steps 121 and 132. Tier: deep dive.
+Also used on the tungsten CVD page.
 
 **SHIRATANI-2006** — M. Shiratani and K. Kumazawa, "Low Erosion Tungsten
 CMP Process with High Productivity", *2006 IEEE International Symposium
@@ -7698,6 +7774,7 @@ Charging Probe to Production HDP CVD Tool", *Proc. 1st International
 Symposium on Plasma Process-Induced Damage (P2ID 1996)*, pp. 71–74.
 <https://doi.org/10.1109/PPID.1996.715205> A plasma charging probe
 applied to a production HDP-CVD tool. Used on step 126. Tier: deep dive.
+Also used on the HDP-CVD page.
 
 **STAMPER-1998** — A. K. Stamper, M. B. Fuselier and X. Tian, "Advanced
 wiring RC delay issues for sub-0.25-micron generation CMOS", *Proc. IEEE
@@ -7777,6 +7854,7 @@ Electron Device Letters* **22**(5), 230–232 (2001).
 <https://doi.org/10.1109/55.919238> Frequency dependence and linearity
 of PECVD-nitride MiM capacitors against oxide ones for precision
 analogue use. Used on steps 135 and 136. Tier: deep dive.
+Also used on the PECVD page.
 
 **BLONKOWSKI-2007** — S. Blonkowski, "Nonlinear capacitance variations in
 amorphous oxide metal-insulator-metal structures", *Applied Physics
@@ -7797,6 +7875,7 @@ Symposium on Plasma Process-Induced Damage (P2ID)*, pp. 161–163.
 <https://doi.org/10.1109/PPID.2000.870658> Photoconduction as the
 mechanism of charging damage during plasma-enhanced dielectric
 deposition. Used on steps 138, 141 and 143. Tier: deep dive.
+Also used on the PECVD page.
 
 **DANZL-1997** — R. B. Danzl and A. McLaurin, "The use of concentrated
 hydrogen peroxide for the removal of a TiW ARC from aluminum bond pads",
@@ -7815,6 +7894,7 @@ F. H. P. M. Habraken, W. F. van der Weg and M. Hendriks,
 <https://doi.org/10.1063/1.337117> How the gas mixture sets the
 composition of PECVD silicon oxynitride. Used on step 135. Tier: deep
 dive.
+Also used on the PECVD page.
 
 **DIRKS-1992** — A. G. Dirks, R. A. M. Wolters and A. E. M. De Veirman,
 "Columnar microstructures in magnetron-sputtered refractory metal thin
@@ -7842,6 +7922,7 @@ Technology Conference (IITC)*, pp. 245–247.
 <https://doi.org/10.1109/IITC.1999.787134> 1.0–2.0 fF/µm² PECVD-nitride
 MiM capacitors integrated in a 0.25 µm CMOS back end. Used on steps 135
 and 136. Tier: deep dive.
+Also used on the PECVD page.
 
 **LIU-2007-TIW** — G. Liu and Y. Kuo, "Reactive Ion Etching of Titanium
 Tungsten Thin Films", *Journal of The Electrochemical Society*
@@ -7944,6 +8025,7 @@ for nondispersive metal-insulator-metal capacitors", *IEEE Electron
 Device Letters* **23**(4), 191–193 (2002).
 <https://doi.org/10.1109/55.992835> Dispersion in PECVD MiM dielectrics
 and how to avoid it. Used on step 135. Tier: deep dive.
+Also used on the PECVD page.
 
 **WIKI-CAPACITOR** — Wikipedia, *Capacitor*.
 <https://en.wikipedia.org/wiki/Capacitor> Capacitance, dielectrics and
@@ -8067,6 +8149,7 @@ Science & Technology A* **4**(3), 457–460 (1986).
 <https://doi.org/10.1116/1.573905> The step coverage of bias-sputtered
 aluminium in straight-walled vias. Used on steps 159, 160 and 161. Tier:
 deep dive.
+Also used on the PVD cluster tool page.
 
 #### Metal 5: stack, mask and etch (steps 161–163)
 
@@ -8090,6 +8173,7 @@ studied by transmission electron microscopy", *Journal of Applied
 Physics* **85**(1), 571–577 (1999). <https://doi.org/10.1063/1.369491>
 The mechanisms of aluminium via fill by reflow and forcefill. Used on
 step 161. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **HARIU-1989** — T. Hariu, K. Watanabe, M. Inoue, T. Takada and H.
 Tsuchikawa, "The Properties of Al-Cu/Ti Films Sputter Deposited at
@@ -8098,6 +8182,7 @@ Physics Symposium (IRPS 1989)*, pp. 210–214.
 <https://doi.org/10.1109/IRPS.1989.363388> The electromigration lifetime
 of Al–Cu/Ti films sputtered at 500 °C with substrate bias. Used on step
 161. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **HESS-2003** — K. J. Hess, S. H. Downey, G. B. Halt, T. Lee, L. L.
 Mercado, J. W. Miter, W. C. Ng and D. G. Wontor, "Reliability of bond
@@ -8161,6 +8246,7 @@ submicron vias using aluminum alloy high temperature sputter filling",
 Conference (VMIC 1991)*, pp. 170–176.
 <https://doi.org/10.1109/VMIC.1991.152982> High-temperature Al–Si–Cu
 sputter filling of submicron vias. Used on step 161. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **ONO-1990** — H. Ono, Y. Ushiku and T. Yoda, "Development of a
 planarized Al-Si contact filling technology", *Proc. Seventh
@@ -8191,6 +8277,7 @@ Multilevel Interconnection Conference (VMIC 1990)*, pp. 332–334.
 <https://doi.org/10.1109/VMIC.1990.127888> The underlayer's effect on
 sputtered aluminium grain structure and via step coverage. Used on step
 161. Tier: deep dive.
+Also used on the PVD cluster tool page.
 
 **TAYLOR-1998** — D. S. Taylor, M. K. Jain and T. S. Cale, "Deposition
 rate dependence of step coverage of sputter deposited aluminum-(1.5%)
@@ -8198,6 +8285,7 @@ copper films", *Journal of Vacuum Science & Technology A* **16**(5),
 3123–3126 (1998). <https://doi.org/10.1116/1.581476> Temperature and
 rate dependence of Al–Cu step coverage. Used on step 161. Tier: deep
 dive.
+Also used on the PVD cluster tool page.
 
 **WIKI-WIRE-BONDING** — Wikipedia, *Wire bonding*.
 <https://en.wikipedia.org/wiki/Wire_bonding> Wire bonding to aluminium
@@ -8240,6 +8328,7 @@ plasma-deposited silicon nitride", *Journal of Applied Physics*
 in plasma nitride, its infrared calibration, and hydrogen in a plasma
 oxide deposited at 300 °C. Used on steps 164, 167 and 170. Tier: deep
 dive.
+Also used on the PECVD page.
 
 **PAT-CRACKSTOP-IBM** — A. R. Mitwalsky and T.-C. Chen (Siemens
 Aktiengesellschaft / International Business Machines), *Crack stops*,
@@ -8305,6 +8394,7 @@ Passivation", *Journal of The Electrochemical Society* **125**(4),
 601–608 (1978). <https://doi.org/10.1149/1.2131509> Reactive-plasma
 Si–N films for MOS-LSI passivation. Used on steps 164 and 167. Tier:
 deep dive.
+Also used on the PECVD page.
 
 #### Passivation nitride (step 167)
 
@@ -8313,6 +8403,7 @@ deep dive.
 *Journal of Applied Physics* **53**(8), 5630–5633 (1982).
 <https://doi.org/10.1063/1.331445> Hydrogen and etch rate across nine
 commercial plasma-nitride reactors. Used on step 167. Tier: deep dive.
+Also used on the PECVD page.
 
 **SNOW-1965** — E. H. Snow, A. S. Grove, B. E. Deal and C. T. Sah, "Ion
 Transport Phenomena in Insulating Films", *Journal of Applied Physics*
@@ -9678,6 +9769,7 @@ high-level.
 a plasma to fluorine radicals that attack polysilicon, nitride and
 oxide, and its use to clean PECVD chambers. Used on the silicon and
 polysilicon plasma etcher page. Tier: high-level.
+Also used on the PECVD, HDP-CVD and tungsten CVD pages.
 
 **ALLWIN-RAINBOW-4500** — Allwin21, *Lam Rainbow 45XX Plasma Etcher*,
 reseller product description, accessed 2026-09-13.
@@ -10032,7 +10124,8 @@ dive.
 **WIKI-NOVELLUS** — Wikipedia, *Novellus Systems*.
 <https://en.wikipedia.org/wiki/Novellus_Systems> The CVD, PECVD and PVD
 equipment maker, its product lines and its acquisition by Lam Research,
-"completed in June 2012". Used on the PECVD page. Tier: high-level.
+"completed in June 2012". Used on the PECVD, HDP-CVD and tungsten CVD
+pages. Tier: high-level.
 
 **NOVELLUS-HDP-2001** — Novellus Systems, *Dielectric – HDP Solutions*,
 product page; Wayback Machine capture of 2001-12-02.
@@ -10086,8 +10179,8 @@ shaped induction coil" around a quartz bell jar, driven at "about 450
 KHz" at "about 0.1-100 mTorr", with a high-frequency source that
 "independently adjusts the bias voltage on the wafer"; the description
 notes that with "careful substrate bias control" the source "is suitable
-for dielectric gap filling". Used on the HDP-CVD page. Tier: cross-check
-(patent).
+for dielectric gap filling". Used on the HDP-CVD and PVD cluster tool
+pages. Tier: cross-check (patent).
 
 **PAT-HDP-REACTOR-AMAT** — F. C. Redeker, F. Moghadam, H. Hanawa, T.
 Ishikawa, D. Maydan, S. Li, B. Lue, R. J. Steger, M. Wong, Y. Wong and
@@ -10164,7 +10257,8 @@ microwave clean; the Sprint Centura, which "operates at 300 Torr" at
 ">60 wph"; and the Endura Integrated PVD/CVD Liner/Barrier system with a
 Vectra IMP Ti chamber, a CVD TiN TxZ chamber and a Preclean II chamber,
 and the Vectra IMP chamber's bottom coverage and chamber count. Used on
-the tungsten CVD page. Tier: cross-check (vendor statement).
+the tungsten CVD and PVD cluster tool pages. Tier: cross-check (vendor
+statement).
 
 **PAT-BACKSIDE-NOVELLUS** — E. P. van de Ven, E. K. Broadbent, J. C.
 Benzing, B. L. Chin and C. W. Burkhart (Novellus Systems), *Gas-based
