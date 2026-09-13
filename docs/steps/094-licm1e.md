@@ -140,7 +140,11 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 6. **Metrology.** Contact {term}`CD` top and bottom by {term}`CD-SEM`; cross-section
    SEM for profile, taper and residue during development; electrical
    contact-chain resistance at {ref}`category-test` structures
-   afterwards.
+   afterwards. The published SKY130 {term}`test tile` lists such chains:
+   "LI1-n+ diffusion contacts: licon1 = 0.17 um (generic)" and a p+
+   equivalent as strings of 6992 contacts, "LI1-poly contacts" as a
+   string of 8360, and transistors that measure "licon resistance" at
+   "contact-gate=0.050u" and "0.055u".[^raw-data-testtile-pads]
 
 ## Machines typically used
 
@@ -217,6 +221,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   etchers.[^amat-1997]
 * Lam Research, Exelan press release and Form 10-K.[^lam-exelan][^lam-10k]
 * SkyWater, Form S-1 — gas suppliers.[^sec-01]
+* SKY130 raw-data repository, test-tile pad documentation — the licon
+  contact-string and contact-resistance structures of the published test
+  tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -385,3 +392,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
