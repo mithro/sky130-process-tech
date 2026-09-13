@@ -225,9 +225,11 @@ on the scale of the {ref}`machines index <machines-reading-evidence>`,
 that boron, BF₂, arsenic and (on the GSD tools) phosphorus are implanted
 at the fab, and that a phosphorus-doped HDP oxide is deposited; they tie
 no species to a step.[^skw-01] That the species come from BF₃, PH₃ and
-AsH₃ in sub-atmospheric cylinders is industry practice for Axcelis GSD
-tools of the period — McKee and Van Horn's BF₃ trial ran on a
-GSD200E[^mckee-2002] — not a SkyWater statement. Indium, solid sources,
+AsH₃ is industry practice, and sub-atmospheric packages were one delivery
+route of the period: hydride sources had been supplied as dilute
+high-pressure mixtures before sorbent packages,[^pat-sds-atmi] and McKee
+and Van Horn tested a new sub-atmospheric BF₃ package on a GSD200E in
+production.[^mckee-2002] Neither is a SkyWater statement. Indium, solid sources,
 TMPO and the ion-source parts appear in no SkyWater source cited here.
 The supplier statements are strong as statements but name no dopant
 gas.[^sec-01][^sec-02]
