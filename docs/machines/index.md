@@ -7,7 +7,8 @@ each class does in the SKY130 flow, quotes what SkyWater has published
 about its own tools of that class, and lists the steps that use it. It
 is compiled from the two machine sections that every step page carries,
 "Machines typically used" and "Machines likely used at SkyWater", read
-on all 171 pages; it adds no evidence of its own. Where the step pages
+on all 171 pages; it adds no evidence of its own about SkyWater's
+tools. Where the step pages
 differ from each other or from the sources they quote, the differences
 are listed under
 {ref}`Open questions and inconsistencies <machines-inconsistencies>`
@@ -425,52 +426,26 @@ Notes on the table:
 The items below were found while extracting the machine sections of all
 171 step pages and comparing the tool names they quote with SkyWater's
 capabilities page and maintenance-technician profile, both re-read on
-2026-09-13.[^skw-01][^skw-07] They are recorded so that the step pages
-can be made consistent later; no step page has been changed here.
+2026-09-13.[^skw-01][^skw-07] Items that a consistency pass over the
+step pages on 2026-09-13 resolved have been removed from this list.
 
-### Tool names written differently
+### How tool names are written
 
-* **"Gasonic PEP".** SkyWater writes "Gasonic PEP".[^skw-01] The
-  SkyWater sections of 31 step pages write "Gasonics PEP" (from
-  {ref}`STIE <step-006>` to {ref}`PDME <step-169>`), and 7 write
-  "Gasonic PEP" ({ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`,
-  {ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>`,
-  {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`,
-  {ref}`MM5E <step-163>`); several implant-strip pages use both, one in
-  the machine section and the other in their reference lists.
-* **"Mattson Aspen2".** SkyWater writes "Mattson Aspen2".[^skw-01] The
-  machine sections from {ref}`STIE <step-006>` to
-  {ref}`NSDIS <step-087>` (21 pages) write "Mattson Aspen 2"; those
-  from {ref}`LICM1E <step-094>` to {ref}`PDME <step-169>` (17 pages)
-  write "Aspen2".
-* **"EKS265, EKC270".** SkyWater writes "EKS265, EKC270
-  solvents".[^skw-01] {ref}`SACETCH <step-095>` and
-  {ref}`LI1ME <step-103>` write "EKC265/EKC270"; the 14 etch pages from
-  {ref}`CTME <step-108>` onwards quote "EKS265, EKC270". The
-  {ref}`public-sources inventory <references-public-sources>` has
-  "EKS265, EKC270" in its SKW-01 entry and "EKC265/EKC270" in its
-  section 9 table.
-* **"TEL ProZ Lithius track".** SkyWater writes "TEL ProZ Lithius
-  track".[^skw-01] The mask pages from {ref}`FOM <step-004>` to
-  {ref}`CAPM <step-137>` (28 pages) write "TEL ProZ/Lithius", those
-  from {ref}`MM3 <step-139>` to {ref}`PDM <step-168>` (8 pages) "TEL
-  ProZ Lithius"; the inventory's section 9 table writes "TEL ProZ /
-  Lithius".
-* **"SEZ223, Davinci".** SkyWater writes "SEZ223, Davinci", with no
-  vendor for the second tool.[^skw-01] Five pages write "SEZ 223"
-  ({ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`,
-  {ref}`GOXETCH <step-046>`, {ref}`BFR <step-060>`,
-  {ref}`SACETCH <step-095>`). In their SkyWater sections, 12 pages
-  write "DaVinci" and 10 keep SkyWater's "Davinci"
-  ({ref}`BFR <step-060>` uses both), and {ref}`BFR <step-060>` and
-  {ref}`SACETCH <step-095>` name the tool "Lam DaVinci", citing only
-  the capabilities page in that bullet.
-* **"Ag Heatpulse 8808".** SkyWater writes "Ag Heatpulse
-  8808".[^skw-01] The anneal and oxidation pages expand this to "AG
-  Associates Heatpulse 8808" (nine pages) or "AG Heatpulse 8808"
-  ({ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>`); the expansion
-  matches the reseller documentation cited on several of them but is
-  not SkyWater's wording.
+After that pass the step pages quote both SkyWater pages as written and,
+outside quotation marks, write each tool name in one form. Where the
+vendor's own name identifies the product, the pages use it: GaSonics,
+as the company styled itself;[^gasonics-2000] Mattson Aspen II, the
+platform name Mattson used;[^mattson-2001] SEZ 223, SEZ's
+"Spin-Processor 223";[^sez-223-pr] Da Vinci, SEZ's spelling for its
+single-wafer cleaning tools;[^sez-2005] and AG Associates Heatpulse
+8808, as the reseller documentation names the family.[^ag-8800] The
+solvents are written EKC265/EKC270; whether SkyWater's "EKS265" is the
+same product is not stated.[^skw-01] The track is written "TEL ProZ
+Lithius", SkyWater's word order without a slash: TEL describes its
+LITHIUS Pro Z as a 300 mm coater/developer for the 10 nm
+node,[^tel-lithius] so this reference does not identify the 200 mm
+fab's track with that model.
+
 * **The two Axcelis GSD entries.** SkyWater lists "Axcelis GSD High
   current/energy …" and "Axcelis GSD Hi dose …" as separate
   entries.[^skw-01] The pages call the first "Axcelis GSD high-energy
@@ -494,43 +469,6 @@ can be made consistent later; no step page has been changed here.
   stepper or scanner", "KrF (248 nm) step-and-scan systems" and "KrF
   step-and-scan or stepper"; "Rotary CMP polisher" and "Rotary
   multi-platen CMP polisher".
-
-### Quotations that differ from the source
-
-* {ref}`TUNARCE <step-036>` and {ref}`ONOME <step-042>` quote the DPS II
-  entry as "HBr, Cl2, NF3, …"; SkyWater's entry reads "AMAT DPSII, HBR,
-  Cl2, NF3, CF4, CHF3, O2", as the other etch pages quote
-  it.[^skw-01]
-* Some quotations join separate list items of the capabilities page
-  into one quoted string: "Furnaces are all made by Aviza: wet oxidation
-  to 1150C, dry oxidation to 1150C" ({ref}`GOX100 <step-043>`); "wet
-  oxidation to 1150C, dry oxidation to 1150C" ({ref}`ONO <step-040>`,
-  {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`); and "industry
-  standard HF/SC1/SC2, dilute HF-last with IPA dry"
-  ({ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`). On the
-  capabilities page each of these is a separate line, without the colon
-  or commas.[^skw-01]
-* {ref}`CAP2ME <step-153>` puts "Batch Rotational (EKS265, EKC270
-  solvents …)" in quotation marks; SkyWater gives "Batch Rotational" and
-  "– EKS265, EKC270 solvents, CO2 injected DI" as separate
-  lines.[^skw-01]
-* {ref}`SPOX <step-080>` breaks the quotation "PECVD silane
-  oxide/nitride/oxynitride, C1" across a line after a slash, so that it
-  renders as "oxide/nitride/ oxynitride".
-* The maintenance-technician profile's captions read "a Novellus high
-  density plasma tool" and "a SEZ etcher tool".[^skw-07]
-  {ref}`FILOX <step-011>` quotes "the Novellus high density plasma
-  tool", and {ref}`CMPNIT <step-012>`, {ref}`NS19 <step-013>`,
-  {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`,
-  {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`,
-  {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`,
-  {ref}`WCMP5 <step-148>` and {ref}`CMPM4 <step-157>` quote "the SEZ
-  etcher tool".
-* {ref}`ALLY1 <step-096>` and {ref}`ALLY <step-170>` call the furnaces'
-  "H2 and forming gas alloy" the only hydrogen-bearing anneal on the
-  list, {ref}`ALLY1 <step-096>` adding that "the Heatpulse lists no
-  hydrogen ambient". The "Ag Heatpulse 8808" entry lists no H₂ or
-  forming gas, but it does list NH3, which carries hydrogen.[^skw-01]
 
 ### Different tools or grades for analogous steps
 
@@ -616,11 +554,11 @@ can be made consistent later; no step page has been changed here.
 ### Open questions
 
 * **"PECVD Tungsten".** SkyWater lists "Lam/Novellus PECVD
-  Tungsten";[^skw-01] the five tungsten-fill pages quote the entry but
+  Tungsten";[^skw-01] the five tungsten-fill pages quote the entry,
   describe a WF₆-based blanket CVD (reading pulsed nucleation from the
-  "PNL option") and head their bullet "CVD tungsten" or "tungsten CVD".
-  None of them discusses the word "PECVD", and the capabilities page
-  does not explain it.
+  "PNL option") and read the word "PECVD" as a label for the tungsten
+  CVD tool rather than evidence of a plasma-assisted deposition. The
+  capabilities page does not explain it.
 * **The dielectric etcher.** No dielectric etcher appears among the
   process tools on the capabilities page (its "Physical Analysis" group
   lists an "Oxford PlasmaLab RIE deprocessing" tool);[^skw-01] whether the contact, via, nitride-seal and
@@ -757,6 +695,19 @@ can be made consistent later; no step page has been changed here.
     New Dual Chamber Spin-Processing System* (press release, 1999-12-13),
     reproduced by Surface Finishing / VertMarkets.
     <https://www.surfacefinishing.com/doc/sez-doubles-wafer-processing-capabilities-wit-0001>
+[^sez-2005]: SEZ Group, *World-Leading Korean Manufacturer Places
+    Multi-System Order for SEZ Da Vinci Tools*, press release,
+    2005-03-02; Wayback Machine capture of 2009-01-07.
+    <https://web.archive.org/web/20090107032902/http://www.sez.com/02_Mar_05__World_Leading_Korean_Manufacturer_Places_Multi_System_Order_for_SEZ_Da_Vinci__Tools.SEZ>
+[^gasonics-2000]: GaSonics International, home page; Wayback Machine
+    capture of 2000-03-01.
+    <https://web.archive.org/web/20000301102837/http://www.gasonics.com:80/>
+[^mattson-2001]: Mattson Technology, *The Aspen Strip*, product page;
+    Wayback Machine capture of 2001-12-19.
+    <https://web.archive.org/web/20011219013713/http://www.mattson.com/products/aspen_strip.html>
+[^tel-lithius]: Tokyo Electron, *Coater/Developer LITHIUS Series*,
+    product page, accessed 2026-09-13.
+    <https://www.tel.com/product/lithius.html>
 [^current-1996]: M. I. Current, "Ion implantation for silicon device
     manufacturing: A vacuum perspective", *Journal of Vacuum Science &
     Technology A* **14**(3), 1115–1123 (1996).

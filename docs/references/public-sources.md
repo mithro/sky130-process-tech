@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1114
+written page has exactly one entry here; the inventory holds 1118
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16 and 8.17 were added
@@ -1921,6 +1921,41 @@ specifications of the Heatpulse 4100: 400–1200 °C, maximum ramp
 150 °C/s, ±5 °C uniformity across a 150 mm wafer at 1150 °C, and a
 facility table (cooling water, CDA/N₂). Tier: high-level (weak for the
 8808 itself).
+
+**GASONICS-2000** — GaSonics International, home page, Wayback Machine
+capture of 2000-03-01.
+<https://web.archive.org/web/20000301102837/http://www.gasonics.com:80/>
+The company styles itself "GaSonics International", "a leading supplier
+of semiconductor processing equipment", with photoresist removal and
+wafer cleaning among its applications, and announces the "PEP Plus
+3510". Used on the machines index for the spelling of the vendor name.
+Tier: cross-check (vendor statement).
+
+**MATTSON-2001** — Mattson Technology, *The Aspen Strip*, product page,
+Wayback Machine capture of 2001-12-19.
+<https://web.archive.org/web/20011219013713/http://www.mattson.com/products/aspen_strip.html>
+Names the "Aspen II Strip" and "Aspen III Strip" systems built on the
+"Aspen II platform" and "Aspen III platform". Used on the machines index
+for the spelling of the platform name. Tier: cross-check (vendor
+statement).
+
+**SEZ-2005** — SEZ Group, *World-Leading Korean Manufacturer Places
+Multi-System Order for SEZ Da Vinci Tools*, press release, 2005-03-02,
+Wayback Machine capture of 2009-01-07.
+<https://web.archive.org/web/20090107032902/http://www.sez.com/02_Mar_05__World_Leading_Korean_Manufacturer_Places_Multi_System_Order_for_SEZ_Da_Vinci__Tools.SEZ>
+SEZ's "Da Vinci™ family of cleaning tools" (DV-38F systems for 300 mm
+back-end polymer removal); "Having sold the first Da Vinci tool in Q2
+04". Used on the machines index for the spelling of the tool name.
+Tier: cross-check (vendor statement).
+
+**TEL-LITHIUS** — Tokyo Electron, *Coater/Developer LITHIUS Series*,
+product page, accessed 2026-09-13.
+<https://www.tel.com/product/lithius.html> Describes the "CLEAN TRACK™
+LITHIUS Pro™ Z" as "TEL's most advanced 300mm coater/developer for the
+10nm technology node and beyond" and the original "CLEAN TRACK™
+LITHIUS™" as "a 300/200mm coater/developer". Used on the machines index
+to explain why SkyWater's "TEL ProZ Lithius track" is not identified
+with a model. Tier: cross-check (vendor statement).
 
 ### 8.7 Well and channel-implant module sources
 
