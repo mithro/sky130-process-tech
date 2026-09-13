@@ -348,6 +348,8 @@ public.
 * {ref}`machine-downstream-plasma-asher` — CF₄ on the ashers.
 * {ref}`material-process-gases` — oxygen, argon, nitrogen and helium used
   with the etch gases.
+* {ref}`material-precursors` — the deposition gases whose chamber films
+  the clean gases remove.
 * {ref}`materials-index` — all consumable classes, including abatement.
 
 ## References

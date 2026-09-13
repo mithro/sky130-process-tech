@@ -291,8 +291,9 @@ practice, standards and safety data.
   materials such as "manganese dioxide", is the most widely used
   method.[^wiki-ozone]
 * **Chamber cleaning.** Deposition on chamber walls is removed with
-  fluorine chemistries, the subject of the etch and chamber-clean gas
-  class ({ref}`machine-pecvd`).
+  fluorine chemistries, the subject of the
+  {ref}`etch and chamber-clean gases <material-etch-gases>` page
+  ({ref}`machine-pecvd`).
 
 ## Process-integration notes for SKY130
 
@@ -340,6 +341,7 @@ not public.
 * {ref}`machine-rapid-thermal-processor` — ammonia nitridation.
 * {ref}`material-process-gases` and {ref}`material-dopant-sources` — the
   oxidants, carriers and phosphorus sources used with the precursors.
+* {ref}`material-etch-gases` — the NF₃ and fluorocarbon chamber cleans.
 * {ref}`materials-index` — all consumable classes and the films table.
 
 ## References
