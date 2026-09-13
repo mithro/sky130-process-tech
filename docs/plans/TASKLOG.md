@@ -83,6 +83,7 @@ deep-dive entries per step page and twelve per category page
 | 2026-09-12 | `main` @ eca31e2, files + history since 8060783 (steps 118–134) | 0 high, 3 medium, 6 low — step-list label wording, one broken edit, typical-value marking; fixed on `main` incl. same pattern on steps 004–117 (merged 2026-09-13) |
 | 2026-09-13 | `main` @ 9ea20a2, files + history since 8418f18 (steps 135–148) plus job-listing mentions across `docs/` | 0 high, 7 medium, 4 low — step names/order used as evidence (swept across 001–148, categories, glossary), MiM materials stated as fact, unretrievable listing material removed from §4 and pages; fix branch independently reviewed (16 follow-up fixes) and merged 2026-09-13 |
 | 2026-09-13 | `main` @ 2e6578a, files + history since 18b0ec7 (steps 149–163) | 0 high, 7 medium, 3 low — step order/code used as evidence on 149–162; fixed on `main` (merged 2026-09-13) |
+| 2026-09-13 | `main` @ b88f6ee, files + history since 0fa02fb (steps 164–171, mask index) | clean; 0 high, 0 medium, 6 low — readings stated as fact in openings, one step-name reading, typical NA and derived values unmarked; fixed on `main` (merged 2026-09-13) |
 
 ## Notes
 
