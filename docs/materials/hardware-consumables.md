@@ -194,7 +194,9 @@ lamp, probe card, trap or abatement system. The S-1 includes "maintenance
 parts" among essential items (quoted above), states that "We use,
 generate and discharge hazardous chemicals and waste in our research and
 development and manufacturing activities", and states that "our
-facilities are ISO 14001 certified".[^sec-01] SkyWater's certifications
+facilities are ISO 14001 certified",[^sec-01] and the annual report for
+fiscal 2023 lists "ISO 14001:2015" among the certifications "for our
+Minnesota facility".[^sec-02] SkyWater's certifications
 page lists for SkyWater Minnesota "ISO14004 Environmental Management
 system" among its accreditations.[^skw-certs] SkyWater's maintenance
 technician profile describes work on tool robots and "the pneumatic
@@ -355,8 +357,8 @@ cards are not public.
 * SkyWater Technology, *Facilities & Capabilities* and *Certifications &
   Policies* — the tool and test entries and the Minnesota site's
   environmental accreditation.[^skw-01][^skw-certs]
-* SkyWater Technology, Form S-1 (2021) — maintenance parts, hazardous
-  materials and ISO 14001.[^sec-01]
+* SkyWater Technology, Form S-1 (2021) and 10-K for fiscal 2023 —
+  maintenance parts, hazardous materials and ISO 14001.[^sec-01][^sec-02]
 * SkyWater Technology, maintenance-technician profile — tool maintenance
   work.[^skw-07]
 * US EPA, GHGRP facility record and *Subpart I Information Sheet* —
@@ -379,6 +381,8 @@ cards are not public.
 * Wikipedia, *Probe card*, *Nitrogen trifluoride* and *Hexafluoroethane* —
   probe cards and the greenhouse potential of clean and etch
   gases.[^wiki-probecard][^wiki-nf3][^wiki-c2f6]
+* Wikipedia, *ISO 14000 series* — the environmental-management standards
+  and what ISO 14001 and ISO 14004 each cover.[^wiki-iso14000]
 * Sherer, *Semiconductor Industry: Wafer Fab Exhaust Management* —
   point-of-use and central exhaust treatment.[^sherer-2005]
 * Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
@@ -441,8 +445,11 @@ cards are not public.
 * Which prober runs the SKY130 e-test, and what probe cards it uses, is
   not public; SkyWater lists an "Engineering manual Probe Station" with
   its parametric tester.[^skw-01]
-* Why SkyWater's certifications page lists ISO 14004 for Minnesota while
-  the S-1 states ISO 14001 certification is not explained.[^skw-certs][^sec-01]
+* SkyWater's certifications page lists "ISO14004" for Minnesota, while
+  the 10-K lists ISO 14001:2015 for the Minnesota
+  facility;[^skw-certs][^sec-02] ISO 14004 is the
+  implementation-guidelines standard of the series,[^wiki-iso14000] so we
+  read the web listing as a slip for ISO 14001 (our inference).
 
 <!-- footnotes -->
 
@@ -488,6 +495,12 @@ cards are not public.
     and maintenance parts, and "Environmental, Safety and Quality
     Matters"; read from a Wayback Machine copy on 2026-09-13.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024; certifications list and "Environmental, Safety and
+    Quality Matters"; read from a Wayback Machine copy on 2026-09-13.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
+[^wiki-iso14000]: Wikipedia, *ISO 14000 series*, accessed 2026-09-13.
+    <https://en.wikipedia.org/wiki/ISO_14000_series>
 [^epa-ghgrp-skywater]: US Environmental Protection Agency, Greenhouse Gas
     Reporting Program, Envirofacts `pub_dim_facility` records for
     facility 1000354 ("SKYWATER TECHNOLOGY INC", 2401 E. 86th St.,

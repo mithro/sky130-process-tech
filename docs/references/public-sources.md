@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1593
+written page has exactly one entry here; the inventory holds 1594
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -705,6 +705,7 @@ Also used on the substrates material page.
 Also used on the CMP consumables material page.
 Also used on the anneal ambients material page.
 Also used on the ultrapure water material page.
+Also used on the hardware consumables material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -13560,6 +13561,15 @@ pp. 217–219. <https://doi.org/10.1109/ISSM.1999.808775> Abstract: probing
 problems from "resistance increase between probes and pads during the
 probing process" removed by a fab process improvement at Intel. Used on
 the hardware consumables material page. Tier: deep dive.
+
+**WIKI-ISO14000** — Wikipedia, *ISO 14000 series*, accessed 2026-09-13.
+<https://en.wikipedia.org/wiki/ISO_14000_series> ISO 14001 as "the core
+set of standards used by organizations for designing and implementing an
+effective environmental management system"; its list of the series
+gives "ISO 14001 Environmental management systems - Requirements with
+guidance for use" and "ISO 14004 Environmental management systems -
+General guidelines on implementation". Used on the hardware consumables
+material page. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
