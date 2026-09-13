@@ -26,9 +26,10 @@ The public dimensions are those of the mask: a 0.170 µm square
 (ct.1) on a 0.190 µm space (ct.2),[^pdk-periph] a "min. etch and fill
 capability for mcon" of 0.14 µm, and a "Standard contact bottom CD"
 of 0.09 µm in the PDK's laser-fuse table.[^pdk-03] The depth is
-roughly 0.3–0.37 µm on our reading of the stack diagram, which puts
-the top of `li` at 1.0111 µm and the bottom of `met1` at 1.3761 µm
-while labelling NILD2 as 0.265 µm.[^pdk-04] What the etch lands on is,
+about 0.34 µm on our reading of the stack diagram, which puts the
+bottom of `li` at 0.9361 µm and the bottom of `met1` at 1.3761 µm,
+with 0.1 µm of `li`, 0.075 µm of LINT and 0.265 µm of NILD2 between
+them.[^pdk-04] What the etch lands on is,
 on our reading, not bare TiN but the "LINT" nitride cap of 0.075 µm
 (k 7.3) that the diagram draws over the local interconnect[^pdk-04]
 and that {ref}`LINIT <step-104>` deposits — so the etch is an oxide

@@ -253,11 +253,14 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
   temperature, bias), whether a titanium adhesion layer precedes the
   TiN, and whether the film is IMP or conventionally sputtered are
   not public.
-* The stack diagram's level labels — `li` bottom 0.9361 µm and
-  1.0111 µm — bracket 0.075 µm rather than the 0.1 µm the conductor
-  label and the assumptions table give;[^pdk-04][^pdk-03] the
-  drawing is marked "not to scale" and the discrepancy is not
-  explained.
+* The stack diagram gives the `li` bottom at 0.9361 µm and a level of
+  1.0111 µm only 0.075 µm higher, against the 0.1 µm that its
+  conductor label and the assumptions table give for
+  `li`.[^pdk-04][^pdk-03] The 1.0111 µm leader line runs to the top of
+  the LINT on the glass beside `li`, which the drawing (marked "not to
+  scale") puts at the same height as the `li` top; we read the label
+  as that LINT top (0.9361 + 0.075 µm), which fits every other label
+  (our reading of the drawing).[^pdk-04]
 * Whether the 12.8 Ω/sq figure is the as-deposited value or the
   value after the nitride cap and later anneals is not stated.
 

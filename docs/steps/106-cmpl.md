@@ -20,7 +20,8 @@ strongly over dense {term}`LI` arrays than over open field; the wafer is
 polished in an alkaline silica slurry (industry-typical) until that
 topography is gone and a controlled thickness of oxide — the PDK's
 0.265 µm "NILD2"
-between the `li` top and the `metal1` bottom[^pdk-04] — remains
+between the top of the nitride cap over `li` and the `metal1`
+bottom[^pdk-04] — remains
 over the local interconnect. It is the last step of the
 middle-of-line module: the surface it leaves is the one on which the
 `mcon` contacts are printed ({ref}`CTM1 <step-107>`) and etched
