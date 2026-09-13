@@ -142,7 +142,8 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   DNS and FSI Mercury benches, the only ones listed with SC-2, are the
   natural pre-anneal clean stations (inference), as at
   {ref}`PWDEIS <step-033>` and {ref}`LDASTIS <step-074>`.
-* **KLA-Tencor AIT** inspection, from a SkyWater job posting.[^job-01]
+* **KLA-Tencor AIT** inspection, our reading of "AIT"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
   Strength: medium.
 
 ## Resources required
@@ -176,8 +177,8 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 * SkyWater, *Facilities & Capabilities* — GaSonics PEP, Iridia and
   Mattson Aspen II with gases and temperatures; Akrion Gamma; DNS and
   FSI benches.[^skw-01]
-* Indeed, SkyWater listings — defect-metrology tools including
-  AIT.[^job-01]
+* Indeed, SkyWater listings — the defect-metrology tool list
+  "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
 * Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — popping and

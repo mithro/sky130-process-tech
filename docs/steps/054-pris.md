@@ -100,8 +100,9 @@ chemical oxide is thin and will be buried under the
   any one of them is an inference.
 * **Akrion Gamma batch bench; DNS bench; FSI Mercury.**[^skw-01]
   Strength: strong for existence.
-* **KLA-Tencor AIT** inspection (job posting).[^job-01] Strength:
-  medium.
+* **KLA-Tencor AIT** inspection, our reading of "AIT"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 
