@@ -640,6 +640,103 @@ sources, in the order in which the thermal steps occur.
    `sky130B` variant every thermal step after the ReRAM stack is also
    seen by its 5 nm switching oxide ({ref}`overview-sky130b-reram`).
 
+(overview-open-questions)=
+## Key open questions
+
+Every step page ends with what it could not confirm. The questions
+below are those that affect several steps or the picture of the process
+as a whole; each links to the pages where the evidence is set out.
+Across the whole flow, no implant species, energy or dose beyond the
+PDK's tables, and no deposition, etch or anneal condition of SKY130 is
+public.
+
+* **PMOS gate doping.** The PDK calls the generic poly "N+ doped gate
+  poly",[^pdk-07] its mask table has no separate P⁺ poly
+  mask,[^pdk-05] and its rules keep the nitride cut away from
+  gates.[^pdk-periph] The step pages therefore read both NMOS and PMOS
+  gates as n⁺ poly, with a counter-doped PMOS channel; no public source
+  says so ({ref}`P1I <step-050>`, {ref}`LVTPI <step-020>`,
+  {ref}`PNCHI <step-024>`).
+* **PMOS source/drain extension.** The mask table has only N-tip
+  masks,[^pdk-05] yet the PDK's PMOS cross-section shows P− extensions,[^pdk-07]
+  its assumptions list an "HVPTM shadowing" of 0.089 µm[^pdk-03] and its
+  high-voltage page says hv p-channel devices "get the extra junction
+  grading implant into the ringed gate with the HVPDM mask".[^pdk-hv]
+  Where the PMOS extension is formed — by the second P⁺ implant, by
+  diffusion under the spacer or by a step not in the list — is open
+  ({ref}`NTM <step-064>`, {ref}`PSDI <step-082>`,
+  {ref}`2PSDI <step-083>`).
+* **Fate of the pad oxide.** Whether the pad oxide of
+  {ref}`BOX <step-002>` survives the nitride strip as the screen oxide
+  for the well implants, and where it is finally removed, is not public;
+  the step list contains no separate sacrificial oxidation before the
+  gate oxides, and the pages from {ref}`NS19 <step-013>` to
+  {ref}`GOXETCH <step-046>` depend on the answer
+  ({ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`).
+* **Three unexplained middle-of-line steps and the silicide.** The step
+  list does not explain the second source/drain anneal after the glass
+  is polished, the "sacrificial" etch after the contact etch, or an alloy
+  anneal before any metal is on the wafer; the step pages give readings
+  ({ref}`RTAD2 <step-092>`, {ref}`SACETCH <step-095>`,
+  {ref}`ALLY1 <step-096>`). That the only silicide is at the contact
+  bottoms is itself an inference from the PDK's sheet
+  resistances ({ref}`CSIL <step-098>`).
+* **Metal-stack composition.** Cypress reports for S8 at the same fab
+  describe a Ti/Al–Cu/TiW stack and its 2014 change "from Ti/AlCu/TiW
+  to Ti/TiN/AlCu/Ti/TiN";[^cyp-qtp-113005][^cyp-qtp-123907] which
+  stack SKY130 lots receive is not public, and no public source gives
+  the films of metal 4 or metal 5 ({ref}`TIAL6 <step-112>`,
+  {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>`).
+* **Metal-3 and metal-4 thickness.** The stack diagram labels both
+  0.845 µm;[^pdk-04] the antenna table gives 0.8 µm for the S8P flows and
+  0.85 µm for "S8T\* other than S8TM\*";[^pdk-03] Cypress's S8TNV report
+  gives "Metal 3: 150A Ti / 7200A Al-0.5%Cu / 300A TiW", which sums to
+  0.765 µm;[^cyp-qtp-113005] and a 0.18 µm Fab 4 derivative's
+  "150Å Ti / 8,000Å Al / 300Å TiW" metal 3 sums to exactly
+  0.845 µm[^cyp-qtp-014807] (our arithmetic). The difference is not
+  resolved ({ref}`MM3E <step-140>`, {ref}`MM4E <step-155>`).
+* **Metal-5 thickness and via-4 fill.** Metal 5 is 1.26 µm on the stack
+  diagram and in Edwards's slides,[^pdk-04][^ann-16] 1.2 µm or 2 µm by
+  flow in the antenna table,[^pdk-03] and "1.2 µm" as top metal in
+  SkyWater's S130 table.[^skw-02] No liner, tungsten or polish step
+  follows the via-4 etch in the step list,[^steps-sheet] so the step
+  pages read the 0.8 µm vias as filled by the metal-5 aluminium; no
+  public source says how they are filled ({ref}`VIM4 <step-159>`,
+  {ref}`WTIAL5 <step-161>`, {ref}`MM5E <step-163>`).
+* **MiM capacitors.** The dielectric's material and thickness, the
+  top-plate material and whether the plate etch stops on the dielectric
+  are not public. The PDK is not self-consistent about the capacitors'
+  level: its device page, layer table and stack diagram put `capm` over
+  metal 3,[^pdk-07][^pdk-06][^pdk-04] while its `capm` rules and
+  extraction entries name metal 2 and via 2,[^pdk-periph][^pdk-08] and
+  `cap2m` has no rules and no mask-table entry[^pdk-periph][^pdk-05]
+  ({ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>`,
+  {ref}`CAPILD2 <step-150>`).
+* **Passivation thickness.** The stack diagram gives 0.09 µm of TOPOX
+  and 0.54 µm of TOPNIT;[^pdk-04] Cypress reports for other processes at
+  the same fab give "1000A TEOS/9000A Si3N4" and "7000 +/- 2000A
+  Nitride".[^cyp-qtp-123907][^cyp-qtp-113005] Which applies to SKY130 is
+  not public, and with it the thickness the pad etch must clear
+  ({ref}`NTSD <step-167>`, {ref}`PDME <step-169>`); how deep the
+  nitride-seal opening goes is not public either
+  ({ref}`NSME <step-166>`).
+* **Stack-diagram intervals.** Besides the local-interconnect and NILD2
+  intervals described {ref}`above <overview-cross-section>`, what the
+  thin "NILD3_C" and "NILD4_C" films represent, and why the finished
+  dielectric above metal 2 is thicker than that above metal 1, are not
+  public ({ref}`NILD3 <step-115>`, {ref}`NCAPOX3 <step-117>`,
+  {ref}`NILD4 <step-126>`). No trench depth is public either
+  ({ref}`STIE <step-006>`).
+* **Masks and options.** The step list has 36 mask steps. The PDK's
+  mask table marks 34 masks as used in SKY130, four of which (`HVTRM`,
+  `PBO`, `CU1M`, `PMM2`) have no step, leaves `PWBM`, `PWDEM` and `CAPM`
+  unmarked, and does not list `RRPM`, `URPM` or `CAP2M`
+  ({ref}`masks-index`);[^pdk-05] SkyWater's S130 table gives "30 – 34"
+  mask steps and lists no inductor, where the PDK README says the
+  process "Is inductor-capable".[^skw-02][^pdk-10] Which optional masks
+  — MiM capacitors, drain-extended wells, ultra-high-value resistors —
+  are run on a given lot is not public.
+
 <!-- footnotes -->
 
 [^pdk-02]: SkyWater PDK Authors, *Background*, SkyWater SKY130 PDK
@@ -797,3 +894,12 @@ sources, in the order in which the thermal steps occur.
     (1993). <https://doi.org/10.1016/0927-796X(93)90001-J>
 [^wiki-wf6]: Wikipedia, *Tungsten hexafluoride*.
     <https://en.wikipedia.org/wiki/Tungsten_hexafluoride>
+[^ann-16]: T. Edwards (Efabless), *Introduction to the SkyWater PDK —
+    The New Age of Open Source Silicon*, lecture slides, 2021-10-08
+    (UC San Diego BENG 207).
+    <https://isn.ucsd.edu/courses/beng207/lectures/Tim_Edwards_2021_slides.pdf>
+[^cyp-qtp-014807]: Cypress Semiconductor, *Technology Derivative
+    Qualification Report, QTP# 014807 Version 2.0: Technology
+    Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM*, June 2005
+    (copy hosted by Infineon Technologies).
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
