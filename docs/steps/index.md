@@ -3,6 +3,8 @@
 
 The SKY130 flow is documented here as 171 numbered steps, in the
 order in which a wafer experiences them. Each step has its own page.
+The step numbers, codes and names are those of the public
+*S8 / SKY130 Process Steps* sheet.[^steps-sheet]
 
 | # | Code | Step | Category |
 |---|------|------|----------|
@@ -354,3 +356,9 @@ order in which a wafer experiences them. Each step has its own page.
 170-ally
 171-hpetest
 ```
+
+<!-- footnotes -->
+
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    retrieved 2026-09-13; tab "Sheet1" lists the 171 steps (number, code and
+    description). <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

@@ -12,7 +12,9 @@ polysilicon gate level, a local-interconnect level, five aluminium metal
 levels, SONOS non-volatile memory, metal–insulator–metal capacitors and
 a family of 1.8 V and 5 V (and higher) transistors.
 
-Every page in this reference cites only publicly available sources.
+Every page in this reference cites only publicly available sources. The
+171-step sequence, with its step codes and names, is taken from the
+public *S8 / SKY130 Process Steps* sheet.[^steps-sheet]
 
 ```{toctree}
 :maxdepth: 1
@@ -46,3 +48,6 @@ references/index
     <https://skywater-pdk.readthedocs.io/en/main/>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    retrieved 2026-09-13; tab "Sheet1" lists the 171 steps (number, code and
+    description). <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
