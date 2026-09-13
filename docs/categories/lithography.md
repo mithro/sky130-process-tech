@@ -164,7 +164,7 @@ alignment corrections.
 
 ## Typical equipment
 
-* **KrF step-and-scan systems**, 4× or 5× reduction: ASML PAS 5500/750E
+* **{ref}`KrF step-and-scan systems <machine-duv-krf-stepper>`**, 4× or 5× reduction: ASML PAS 5500/750E
   (announced 2000-04-04: "130 nm resolution while using standard 248 nm
   light", NA 0.7, "120 200 mm wafer per hour")[^asml-750e] and PAS
   5500/800 (announced 2001-01-31: NA 0.80, "120 nm resolution", "115 200
@@ -174,12 +174,12 @@ alignment corrections.
   (248 nm, 5×, NA 0.6).[^tolpygo-2014] The PAS 5500 platform, first
   shipped in 1991, was still being supplied, latterly from recycled
   cores, three decades later.[^asml-30]
-* **i-line steppers** for non-critical layers: ASML PAS 5500/275 and
+* **{ref}`i-line steppers <machine-i-line-stepper>`** for non-critical layers: ASML PAS 5500/275 and
   /300 series, Nikon NSR-2205i and Canon FPA-3000i5.
-* **Coater/developer tracks**: TEL CLEAN TRACK ACT 8 (introduced in 1997
+* **{ref}`Coater/developer tracks <machine-coat-develop-track>`**: TEL CLEAN TRACK ACT 8 (introduced in 1997
   for 200 mm, up to 120 wafers per hour),[^tel-act8][^tel-act] SVG/ASML
   90S and Dainippon Screen (DNS) tracks.
-* **Metrology**: KLA-Tencor 8100/8100XP CD-SEM (accelerating voltage
+* **{ref}`Metrology <machine-cd-sem-overlay-metrology>`**: KLA-Tencor 8100/8100XP CD-SEM (accelerating voltage
   0.4–1.5 kV, resolution below 4 nm)[^gce-kla8100] and Hitachi
   S-9200/S-9260 CD-SEMs;[^semimarket-s9200] KLA-Tencor 5xxx/Archer
   optical overlay tools; after-develop inspection on KLA-Tencor 2xxx
