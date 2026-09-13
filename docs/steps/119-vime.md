@@ -19,10 +19,9 @@ beneath it — 0.27 µm in all, the via-1 height of the PDK's stack
 diagram[^pdk-04] — down to the top of the metal-1 lines, producing the
 holes that {ref}`TIN3 <step-120>` will line and {ref}`WDEP3 <step-121>`
 will fill to make the `via` plug, "Contact from metal 1 to
-metal 2".[^pdk-06] The resist is stripped afterwards; the step list
-used in this reference shows no separate strip between `VIME` and
-`TIN3`, so on our reading the strip and post-etch clean belong to
-this step, as they do at {ref}`CTME <step-108>`.
+metal 2".[^pdk-06] The resist is stripped afterwards; this reference
+treats the strip and post-etch clean as part of this step, as at
+{ref}`CTME <step-108>`.
 
 What the etch lands on is the difference from the contact etch. The
 floor of a `via` is not the nitride-capped titanium-nitride local
@@ -288,9 +287,8 @@ recipe is not public); the shared physics is set out at
   enclosure rule.[^pdk-periph]
 * Which etcher runs the step is not public; SkyWater's list names no
   dedicated dielectric etcher.[^skw-01]
-* The step list used in this reference has no separate strip step
-  after `VIME`; this page treats the resist strip and post-etch
-  clean as part of the etch step.
+* This page treats the resist strip and post-etch clean as part of
+  the etch step.
 
 <!-- footnotes -->
 
