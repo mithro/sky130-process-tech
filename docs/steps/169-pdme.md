@@ -119,7 +119,7 @@ an aluminium top metal (SKY130's recipe is not public):
    main etch to remove Al–F–O residue from the pads, the methods of the
    Micron and TSMC patents.[^pat-pad-fluorine-micron][^pat-pad-fluorine-tsmc]
 6. **Strip and clean.** Downstream O₂/N₂ {term}`ash` and a solvent
-   clean compatible with exposed aluminium (SkyWater lists Gasonics,
+   clean compatible with exposed aluminium (SkyWater lists GaSonics,
    Iridia and Mattson strippers and "EKS265, EKC270
    solvents"[^skw-01]); DI rinse and dry.
 7. **Metrology.** Visual and automated inspection of every pad for
@@ -147,7 +147,7 @@ an aluminium top metal (SKY130's recipe is not public):
   ("HBR, Cl2, NF3, CF4, CHF3, O2").[^skw-01] Strength: weak.
 * **Lam 9600 / Lam 2300 Versys**, listed for "TiW",[^skw-01] if a
   separate cap removal is done by plasma (weak).
-* **Strip and clean — Gasonics PEP, Iridia, Mattson Aspen2; batch
+* **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; batch
   rotational tools with "EKS265, EKC270 solvents".**[^skw-01] Strength:
   strong for existence.
 

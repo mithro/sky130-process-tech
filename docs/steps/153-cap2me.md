@@ -142,7 +142,7 @@ same sequence.
    sized to clear stringers while removing at most a few nanometres of
    dielectric.[^pat-mim-ti-etch]
 5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` — SkyWater lists
-   "Gasonic PEP", Iridia and Mattson Aspen2 strippers[^skw-01] — then a
+   "Gasonic PEP", Iridia and Mattson Aspen II strippers[^skw-01] — then a
    solvent clean (the "EKS265, EKC270 solvents" of its batch rotational
    tools[^skw-01]) that removes fluorocarbon and metal-halide residue
    without attacking TiW or the dielectric; hydrogen peroxide etches TiW,

@@ -125,7 +125,7 @@ public):
    0.5 % (our estimate above) — Wodecki describes endpoint on
    low-open-area dielectric etches[^wodecki-1999] — so a timed etch
    calibrated on monitors, with an {term}`over-etch`, is likely (inference).
-5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` on the Gasonics,
+5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` on the GaSonics,
    Iridia or Mattson strippers SkyWater lists, then a solvent polymer
    clean compatible with the exposed oxide and the aluminium beneath
    the thin oxide elsewhere ("EKS265, EKC270 solvents"[^skw-01]).
@@ -149,7 +149,7 @@ public):
   strength: **weak** for assignment to this etch.
 * **Lam Exelan.** No public source places one at SkyWater; it appears
   here as the era's typical dielectric etcher.[^lam-exelan]
-* **Strip and clean — Gasonics PEP, Iridia, Mattson Aspen2; batch
+* **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; batch
   rotational tools with "EKS265, EKC270 solvents".**[^skw-01] Strength:
   strong for existence; assignment is an inference.
 
