@@ -137,7 +137,7 @@ public):
 
 * **Dielectric etcher**, 200 mm: Lam Exelan,[^lam-exelan] Applied
   Materials MxP/eMax, TEL Unity ({ref}`category-etch`).
-* **Downstream asher**; **solvent wet bench**.
+* **Downstream plasma asher**; **solvent wet bench**.
 * **Optical microscope**, **cross-section SEM**.
 
 ## Machines likely used at SkyWater
