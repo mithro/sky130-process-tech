@@ -198,8 +198,9 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
   Ti[^pat-tiw-hitachi]); SkyWater's filings name Honeywell Electronic Materials (2021
   S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
   as sputter-target suppliers.[^sec-01][^sec-02]
-* **Argon** for sputtering and pre-clean; **nitrogen** for venting;
-  gas suppliers per the filings.[^sec-01][^sec-02]
+* **Argon** for sputtering and pre-clean; **nitrogen** for venting. Gas
+  suppliers named in SkyWater's filings: Air Products and Praxair (2021
+  S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 * **Chamber shields, clamps and electrostatic-chuck consumables**,
   consumed at the thick-film rate of metal 3.
 * **Monitor wafers** for sheet resistance, reflectivity, stress and
