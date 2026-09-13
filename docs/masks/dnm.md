@@ -61,11 +61,10 @@ whether every wafer receives it.
 What the mask does not define is also worth stating. The N-well ring
 that closes the tub is printed by {ref}`NWM <step-017>`, and the P-well
 inside it is set by the P-well implants that follow; on the step pages'
-readings `DNM` only places the buried plate. A triple-well process of
-this kind, with an N-type isolation well under a P-well, goes back at
-least to Stolmeijer's MeV-implanted twin-well process of 1986, which
-already combined "an n-type isolation well in a p-p+substrate
-and retrograde wells", built with implants of up to 1 MeV.[^stolmeijer-1986]
+readings `DNM` only places the buried plate. Stolmeijer's 1986 twin-well
+process, built with implants of up to 1 MeV, already included "an n-type
+isolation well in a p-p+substrate and retrograde wells"; the abstract
+does not describe the well's geometry.[^stolmeijer-1986]
 Hong et al. describe a 0.22 µm triple-well CMOS process formed by
 high-energy implantation,[^hong-1999] and Voldman's *Latchup* gives a
 chapter to dual-well and triple-well CMOS as latch-up
