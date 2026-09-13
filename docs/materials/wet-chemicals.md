@@ -28,7 +28,7 @@ pages.
 | Grades | SEMI specifications for hydrofluoric acid, buffered oxide etchants, hydrogen peroxide, sulphuric acid and 2-propanol, the last "typically required by semiconductor devices with geometries of 0.8 to 1.2 microns" at its VLSI grade.[^semi-c28][^semi-c23][^semi-c30][^semi-c44][^semi-c41] |
 | Hazards | HF causes "bone damage due to HF strongly interacting with calcium in bones";[^wiki-hf] mixing piranha "is an extremely exothermic process".[^wiki-piranha] |
 | SkyWater evidence | "Sulfuric, SC1, phosphoric, BOE, spin or IPA dry"; "EKS265, EKC270 solvents"; "HF, DSP+HF, titration controlled"; "HF/SC1/SC2";[^skw-01] "high-purity acid, base, and cleaning solutions for various wet processing steps"[^sec-01][^sec-02] |
-| SKY130 steps | 50 steps; see {ref}`SKY130 steps that use this class <material-wet-chemicals-steps>` |
+| SKY130 steps | 49 steps; see {ref}`SKY130 steps that use this class <material-wet-chemicals-steps>` |
 
 ## What the class is and what it does
 
@@ -125,10 +125,8 @@ temperature. Hattori et al. built a single-wafer spin clean "while
 alternately supplying ozonized water and dilute HF for only 10 s each
 onto a rotating silicon wafer", which "can efficiently remove both
 particulate and metallic contaminants as well as organic
-contaminants".[^hattori-1998] The materials index puts the gas-phase
-O₂/O₃ of a TEOS-based phosphosilicate glass in the same row
-({ref}`PSG <step-089>`), so that step is listed below although it uses
-no liquid.
+contaminants".[^hattori-1998] Gas-phase ozone, used with TEOS in
+deposition, is indexed as a precursor, not here.
 
 ### Solvents: isopropanol and post-etch residue removers
 
@@ -254,7 +252,7 @@ SKY130, and it ties no chemical to a step.[^skw-01] The filings are
 strong for the supplier names but weak for any particular chemical,
 because they give only "chemicals" or "specialty chemicals" and changed
 between 2021 and 2023.[^sec-01][^sec-02] Hydrogen peroxide is evidenced
-only through SC-1 and SC-2; nitric acid and ozone are industry practice
+only through SC-1 and SC-2; nitric acid and ozonated water are industry practice
 that the step pages supply, not SkyWater statements.
 
 (material-wet-chemicals-steps)=
@@ -276,13 +274,13 @@ Materials index rows covered:
 * Hot phosphoric acid (H₃PO₄, 85 %[^wiki-h3po4])
 * Hydrogen peroxide (H₂O₂, 30 %[^wiki-rca][^wiki-piranha])
 * Nitric acid (HF/HNO₃); titration reagents
-* Ozone and ozonated water (O₃)
+* Ozonated water (O₃ in water)
 * Isopropanol (IPA)
 * Amine or semi-aqueous post-etch residue removers (EKC265/EKC270 class)
 
 Steps:
 
-{ref}`SMAT <step-001>`, {ref}`BOX <step-002>`, {ref}`ISONIT <step-003>`, {ref}`STIE <step-006>`, {ref}`DNIS <step-009>`, {ref}`LINOX <step-010>`, {ref}`NS19 <step-013>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOX100 <step-043>`, {ref}`GOXETCH <step-046>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`BFR <step-060>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`PSG <step-089>`, {ref}`SACETCH <step-095>`, {ref}`WCMPLI <step-100>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`WCMP2 <step-111>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`WCMP3 <step-122>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`WCMP4 <step-133>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`WCMP5 <step-148>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>`
+{ref}`SMAT <step-001>`, {ref}`BOX <step-002>`, {ref}`ISONIT <step-003>`, {ref}`STIE <step-006>`, {ref}`DNIS <step-009>`, {ref}`LINOX <step-010>`, {ref}`NS19 <step-013>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOX100 <step-043>`, {ref}`GOXETCH <step-046>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`BFR <step-060>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`SACETCH <step-095>`, {ref}`WCMPLI <step-100>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`WCMP2 <step-111>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`WCMP3 <step-122>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`WCMP4 <step-133>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`WCMP5 <step-148>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>`
 
 The steps fall into groups, as the index rows describe them:
 
