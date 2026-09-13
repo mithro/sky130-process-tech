@@ -29,14 +29,14 @@ technology node (130nm)".[^pdk-02] The PDK's *Previous Nomenclature*
 page gives the older name: `s8` is "The old Cypress and SkyWater name
 for the SKY130 process. It stood for the "8th generation" of the SONOS
 technology developed originally by Cypress."[^pdk-previous] Cypress used
-the same name in public: a 2007 product announcement calls it "Cypress's
+the same name in public: a 2007 Electronics Weekly article calls it "Cypress's
 S8(tm) 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded
 nonvolatile memory technology",[^cyp-20] and a 2011 release still
 referred to "the current 130-nanometer S8™ process".[^cyp-22]
 
 The process was run in Cypress's Fab 4 in Bloomington, Minnesota.
-Cypress described Fab 4, where it ramped its 0.13 µm technology in
-2003, as an "eight-inch wafer production facility",[^cyp-07] and a 2015
+Cypress described Fab 4, where it was ramping its 0.13 µm technology in
+early 2003, as an "eight-inch wafer production facility",[^cyp-07] and a 2015
 Cypress notice qualified a new wafer supplier "for the 250nm R7, 130nm
 C8/R8/S8/L8 and 90nm C9/R9/R95 technology products at Cypress Fab 4 in
 Bloomington, Minnesota".[^cyp-06] On 2017-03-01 Cypress announced that it
@@ -521,7 +521,7 @@ where no number is given, none is public.
 | Gate and resistor poly | "polysilicon"[^pdk-04] | 0.18 µm[^pdk-03][^pdk-04] | — | {ref}`SAGD <step-048>` – {ref}`P1ME <step-062>` |
 | Gate cap and spacers | "SPNIT K=7.5"[^pdk-04] | "poly cap after SPE" 0.2 µm; "oxide spacer" 0.05 µm[^pdk-03] | — | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`; {ref}`SPNIT <step-076>` – {ref}`SPOX <step-080>` |
 | Pre-metal dielectric | "PSG K=3.9"[^pdk-04] | 0.6099 µm from the field-oxide top to the `li` bottom and 0.4299 µm over field poly;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm[^pdk-03] | — | {ref}`PSG <step-089>` – {ref}`NCAPOX <step-091>` |
-| Local interconnect | `li` (TiN) | 0.1 µm[^pdk-04][^pdk-03] | bottom 0.9361[^pdk-04] | {ref}`LITIN <step-101>` – {ref}`LI1ME <step-103>` |
+| Local interconnect | `li` (TiN[^ann-16]) | 0.1 µm[^pdk-04][^pdk-03] | bottom 0.9361[^pdk-04] | {ref}`LITIN <step-101>` – {ref}`LI1ME <step-103>` |
 | Local-interconnect cap | "LINT K=7.3"[^pdk-04] | 0.075 µm[^pdk-04] | 1.0111, read as its top beside `li` (see below)[^pdk-04] | {ref}`LINIT <step-104>` |
 | Dielectric to metal 1 (`mcon`) | "NILD2 K=4.05"[^pdk-04] | 0.265 µm[^pdk-04] | — | {ref}`NILD2 <step-105>` – {ref}`WCMP2 <step-111>` |
 | Metal 1 | `metal1` | 0.36 µm[^pdk-04] | bottom 1.3761[^pdk-04] | {ref}`TIAL6 <step-112>` – {ref}`MM1E <step-114>` |
@@ -922,7 +922,8 @@ public.
     PR Newswire, 2020-11-12, accessed 2026-09-13.
     <https://www.prnewswire.com/news-releases/google-partners-with-skywater-and-efabless-to-enable-open-source-manufacturing-of-custom-asics-301171870.html>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
-    SKY130 PDK documentation (Table 4, `assumptions/04-physical.csv`).
+    SKY130 PDK documentation (Tables 3a, 3b, 3f and 4,
+    `assumptions/04-physical.csv`).
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/04-physical.csv>
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
