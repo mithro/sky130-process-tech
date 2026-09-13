@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1355
+written page has exactly one entry here; the inventory holds 1368
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -480,6 +480,7 @@ pages.
 Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner, coat/develop track and CD-SEM and overlay metrology pages.
 Also used on the starting-material machine page.
+Also used on the single-wafer spin processor machine page.
 Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
@@ -534,6 +535,7 @@ on a Novellus high density plasma tool", "a motor for a robot on a SEZ
 etcher tool") and "the pneumatic controls of a vacuum system". Tier:
 cross-check (tool naming).
 Also used on the HDP-CVD page.
+Also used on the single-wafer spin processor machine page.
 
 **SKW-08** — SkyWater Technology, *"Maintenance Technician Job
 Overview"* and *"Careers & Jobs"* pages.
@@ -1585,6 +1587,7 @@ Tier: high-level.
 oxide etchant, and its hazards. Used on the etch and strip category
 pages.
 Also used on the wet bench and spray processor page.
+Also used on the single-wafer spin processor machine page.
 Tier: high-level.
 
 **WIKI-ICP** — Wikipedia, *Inductively coupled plasma*.
@@ -2143,6 +2146,7 @@ Wayback Machine capture of 2009-01-07.
 SEZ's "Da Vinci™ family of cleaning tools" (DV-38F systems for 300 mm
 back-end polymer removal); "Having sold the first Da Vinci tool in Q2
 04". Used on the machines index for the spelling of the tool name.
+Also used on the single-wafer spin processor machine page.
 Tier: cross-check (vendor statement).
 
 **TEL-LITHIUS** — Tokyo Electron, *Coater/Developer LITHIUS Series*,
@@ -2621,6 +2625,7 @@ Andrew, 2008, pp. 3–92, ISBN 978-0-8155-1554-8,
 DOI 10.1016/b978-081551554-8.50004-5. Overview chapter on wet-cleaning
 chemistry and contamination.
 Also used on the wet bench and spray processor page.
+Also used on the single-wafer spin processor machine page.
 Tier: deep dive.
 
 **REINHARDT-2010** — K. A. Reinhardt and R. F. Reidy (eds.), *Handbook
@@ -2932,6 +2937,7 @@ Electrochemical Society* **148**(3), F43 (2001).
 nitride in HF-based solutions, relevant to the pre-strip breakthrough
 dip. Used on step 013.
 Also used on the wet bench and spray processor page.
+Also used on the single-wafer spin processor machine page.
 Tier: deep dive.
 
 **KOOI-1976** — E. Kooi, J. G. van Lierop and J. A. Appels, "Formation
@@ -3250,6 +3256,7 @@ reference volume on wet and dry cleaning, resist removal and particle
 control. Label ↔ key: the handbook whose first chapter is listed
 separately as KERN-HANDBOOK. Used on steps 009 and 013.
 Also used on the wet bench and spray processor page.
+Also used on the single-wafer spin processor machine page.
 Tier: deep dive.
 
 **SESHAN-2012** — K. Seshan (ed.), *Handbook of Thin Film Deposition*,
@@ -3567,6 +3574,7 @@ SiO₂ Etching Reaction for HF Solutions of Extremely Low Concentration",
 <https://doi.org/10.1149/1.2054733> Dissociation state and etching
 reaction of extremely dilute HF. Used on steps 039 and 046.
 Also used on the wet bench and spray processor page.
+Also used on the single-wafer spin processor machine page.
 Tier: deep
 dive.
 
@@ -5740,6 +5748,7 @@ Silicon Oxide", *Solid State Phenomena* **103–104**, 249–254 (2005).
 <https://doi.org/10.4028/www.scientific.net/SSP.103-104.249>
 Single-sided backside cleaning of silicon, nitride and oxide in a spin
 tool. Used on step 060. Tier: deep dive.
+Also used on the single-wafer spin processor machine page.
 
 **CARLSON-2006** — A. Carlson and T. Le, "Correlation of wafer backside
 defects to photolithography hot spots using advanced macro inspection",
@@ -5772,6 +5781,7 @@ Silicon: IV. Etching Technology", *Journal of The Electrochemical
 Society* **123**(12), 1903–1909 (1976).
 <https://doi.org/10.1149/1.2132721> HF/HNO₃ etching of silicon: rates,
 mechanisms and technology. Used on step 060. Tier: deep dive.
+Also used on the single-wafer spin processor machine page.
 
 **SEZ-223-MOOV** — Moov used-equipment marketplace, *Lam Research / SEZ
 SP223* listing, accessed 2026-09-12.
@@ -5779,6 +5789,7 @@ SP223* listing, accessed 2026-09-12.
 Used-equipment listing for a 200 mm SEZ SP223 spin processor that names
 backside film removal among its applications (weak evidence). Used on
 step 060. Tier: cross-check.
+Also used on the single-wafer spin processor machine page.
 
 **SEZ-223-PR** — SEZ Group, *SEZ Doubles Wafer Processing Capabilities
 With New Dual Chamber Spin-Processing System* (press release,
@@ -5787,6 +5798,7 @@ With New Dual Chamber Spin-Processing System* (press release,
 Press release on the SEZ Spin-Processor 223: dual chambers, throughput,
 three chemistries and film-removal applications. Used on step 060. Tier:
 cross-check.
+Also used on the single-wafer spin processor machine page.
 
 **UNE-2000** — A. Une, Y. Kai, M. Mochida, S. Matsui and F. Ohira,
 "Influence of wafer chucking on focus margin for resolving fine patterns
@@ -10800,6 +10812,7 @@ viscous liquid on a rotating disk", *Journal of Applied Physics*
 equations of a Newtonian liquid on a rotating disk: an initially uniform
 layer stays uniform and irregular layers level out under centrifugation.
 Used on the coat/develop track page. Tier: deep dive.
+Also used on the single-wafer spin processor machine page.
 
 **MEYERHOFER-1978** — D. Meyerhofer, "Characteristics of resist films
 produced by spinning", *Journal of Applied Physics* **49**(7), 3993–3997
@@ -11168,6 +11181,127 @@ deep dive.
 invisible except under condensation, explained by a thin, poorly
 conducting polycrystalline surface layer. Used on the starting-material
 machine page. Tier: deep dive.
+
+**SEZ-8200-2001** — SEZ Group, *First Double Sided Single Wafer
+Spin-Processor Available for Cleaning Applications*, press release,
+2001-01-31; Wayback Machine capture of 2008-11-20.
+<https://web.archive.org/web/20081120145130/http://www.sez.com/31_Jan_01__First_Double_Sided_Single_Wafer_Spin_Processor_Available_for_Cleaning_Applications.SEZ>
+The four-chamber Spin-Processor 8200, based on the 4200, as "the first
+non-contact, single wafer, double sided cleaner", with up to 200 wafers
+per hour, spin-off that "eliminates redeposition and cross-contamination",
+and SEZ's headquarters in Villach. Used on the single-wafer spin
+processor machine page. Tier: cross-check (vendor statement).
+
+**SEZ-DAVINCI-2008** — SEZ Group, *Da Vinci*, product page; Wayback
+Machine capture of 2008-03-22.
+<https://web.archive.org/web/20080322001425/http://www.sez.com:80/Da_Vinci.SEZ>
+The Da Vinci single-wafer platform for BEOL polymer cleaning and backside
+etch and clean on 200 mm and 300 mm wafers, "Originally developed to
+address 90-nm technology nodes", with double-sided processing and
+separated rinse and chemical chambers. Used on the single-wafer spin
+processor machine page. Tier: cross-check (vendor statement).
+
+**SEZ-LAM-2007** — SEZ Group, *SEZ Holding Welcomes Planned Acquisition
+by Lam Research*, press release, 2007-12-11; Wayback Machine capture of
+2007-12-13.
+<https://web.archive.org/web/20071213223543/http://www.sez.com:80/11_Dec_07__SEZ_Holding_Welcomes_Planned_Acquisition_by_Lam_Research.SEZ>
+The agreement for a Lam Research tender offer for SEZ, SEZ to become a
+Lam division for single-wafer cleaning, and SEZ's "installed base of over
+1,200 tools". Used on the single-wafer spin processor machine page.
+Tier: cross-check (vendor statement).
+
+**SEZ-POLYMER-1999** — E. Gaulhofer, H. Kruwinus (SEZ), G. Goebel, E.
+Finson and T. Maw (EKC), "Single-Wafer Polymer Removal for 0.18-micron to
+0.25-micron Technology", *European Semiconductor*, April 1999; reprint on
+the SEZ website, Wayback Machine capture of 2006-01-17.
+<https://web.archive.org/web/20060117001812/http://www.sez.com:80/NR/rdonlyres/e3nsv7jtmjelajokwc2pivxpcigbahrzmpkjqmcqjbeiv4nzvl7qlr3sxhl7otzjxbrsdw6tls4y3ubhoiijpiwz2qb/polymer_removal_0499.pdf>
+How a single-wafer spin processor dispenses, spins off, rinses and dries;
+post-etch residue removal with room-temperature semi-aqueous EKC removers
+on 200 mm wafers (10–120 s, 400–800 rpm, 0.8–2.0 l/min) after a Lam
+TCP9600 metal etch; chemical and water use per wafer; the four-chamber
+SEZ 4200. Used on the single-wafer spin processor machine page. Tier:
+high-level (vendor application article).
+
+**KINOSHITA-SEZ** — K. Kinoshita (SEZ application department, Sumitomo
+Electronics), *Post-CMP Cleaning Technique by SEZ: Cleaning of Backside
+by Wet Etching*, application article, undated; SEZ website, Wayback
+Machine capture of 2006-01-17.
+<https://web.archive.org/web/20060117013206/http://www.sez.com:80/NR/rdonlyres/e7enpr5qqh5rriqc5rsb2wuafgjsrvoycez2ufodmguu27gfnn2xqfmf4al2ukmo7cfqmdm5dwfkx3lfnkizldcy2nb/postcmp.pdf>
+Backside particles after CMP and lithography focus; compounds between
+backside films and metals that brush and megasonic cleaning do not
+remove; backside wet etching on a chemical spin etcher that "requires no
+protection for the device surface"; slurry and metal removal examples.
+Used on the single-wafer spin processor machine page. Tier: high-level
+(vendor application article).
+
+**SCREEN-SP2100** — SCREEN Semiconductor Solutions, *SCREEN Launches New
+Spin Processor for Single Wafer Cleaning*, news release, 2020-06-25.
+<https://www.screen.co.jp/spe/en/information/spe200625> The SP-2100 spin
+processor for wafers up to 200 mm, with an optional metal-etch
+configuration, a built-in chemical cabinet and a selectable number of
+chambers. Used on the single-wafer spin processor machine page. Tier:
+cross-check (vendor statement).
+
+**FRAUNHOFER-DSP** — Fraunhofer Institute for Microengineering and
+Microsystems IMM, *DSP Cleaning Agent Online Monitoring System*, product
+sheet, accessed 2026-09-13.
+<https://www.imm.fraunhofer.de/content/dam/imm/de/documents/PDFs-neu2018/A-und-S/IMM-DSP_Cleaning_Agent_Online_Monitoring_System%20.pdf>
+DSP as "3.7 wt% hydrogen peroxide (H2O2) and 8.5 wt% sulfuric acid
+(H2SO4)", DSP+ with 150 or 300 ppm HF as a replacement for SPM on
+post-etch residues, and optical in-line monitoring of the two
+concentrations. Used on the single-wafer spin processor machine page.
+Tier: cross-check (research institute statement).
+
+**PAT-SPIN-SEZ** — F. Sumnitsch (SEZ), *Support for slice-shaped articles
+and device for etching silicon wafers with such a support*, US 4,903,717
+A, filed 1988-11-09, granted 1990-02-27 (assigned to SEZ; current
+assignee listed as Lam Research AG).
+<https://patents.google.com/patent/US4903717A/en> A wafer support with
+an annular gas nozzle whose gas cushion keeps treatment fluid off the
+underside, inside an annular tank with ducts at several levels for
+collecting fluids. Used on the single-wafer spin processor machine page.
+Tier: deep dive.
+
+**HATTORI-1998** — T. Hattori, T. Osaka, A. Okamoto, K. Saga and H.
+Kuniyasu, "Contamination Removal by Single‐Wafer Spin Cleaning with
+Repetitive Use of Ozonized Water and Dilute HF", *Journal of The
+Electrochemical Society* **145**(9), 3278–3284 (1998).
+<https://doi.org/10.1149/1.1838798> Room-temperature spin cleaning with
+alternating 10 s doses of ozonised water and dilute HF. Used on the
+single-wafer spin processor machine page. Tier: deep dive.
+
+**HATTORI-2007** — T. Hattori, H. Hirano, T. Osaka and H. Kuniyasu,
+"Environmentally Benign Single-Wafer Spin Cleaning Using Ultra-Diluted
+HF/Nitrogen Jet Spray Without Causing Structural Damage and Material
+Loss", *IEEE Transactions on Semiconductor Manufacturing* **20**(3),
+252–258 (2007). <https://doi.org/10.1109/TSM.2007.901845> A 20 s
+ultra-dilute HF and nitrogen spray clean with negligible silicon and
+oxide loss. Used on the single-wafer spin processor machine page. Tier:
+deep dive.
+
+**OINOUE-2018** — T. Oinoue, S. Saito, A. Okuyama, Y. Hagimoto and H.
+Iwamoto, "Behavior Analysis of Si Etching Process with HF/HNO3 Mixture in
+Single-Spin Wafer Process", *Solid State Phenomena* **282**, 83–87 (2018).
+<https://doi.org/10.4028/www.scientific.net/SSP.282.83> Radial etch-rate
+distributions of silicon and oxide in HF/HNO₃ on a spinning wafer,
+explained by chemical consumption. Used on the single-wafer spin
+processor machine page. Tier: deep dive.
+
+**LEE-2012-DSP** — H. H. Lee, M. S. Yun, H. W. Lee and J. G. Park,
+"Removing W Polymer Residue from BEOL Structures Using DSP+ (Dilute
+Sulfuric-Peroxide-HF) Mixture – A Case Study", *Solid State Phenomena*
+**195**, 128–131 (2012).
+<https://doi.org/10.4028/www.scientific.net/SSP.195.128> DSP+ as the
+replacement for SPM in removing post-etch metal and polymer residues.
+Used on the single-wafer spin processor machine page. Tier: deep dive.
+
+**MUI-2011** — D. Mui, E. H. Lenz, C. Cyterski, K. Venkataraman and M.
+Kawaguchi, "Wafer Surface Charging Model for Single-Wafer Wet-Spin
+Processes", *IEEE Transactions on Semiconductor Manufacturing* **24**(4),
+552–558 (2011). <https://doi.org/10.1109/TSM.2011.2162346> Surface
+charging in a single-wafer wet spin tool modelled as charge advection by
+the liquid's shear flow. Used on the single-wafer spin processor machine
+page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
