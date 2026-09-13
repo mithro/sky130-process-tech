@@ -94,9 +94,10 @@ A downstream asher strips resist with the neutral products of a remote
 plasma. Wikipedia lists "N2/H2 where the H2 portion is 2%" among ashing
 gases besides oxygen and fluorine;[^wiki-ash] a used Iridia module of
 the kind SkyWater lists has a "4 percent H2/N2" line.[^semistar-iridia]
-Hydrogen-bearing and water-bearing chemistries attack implanted resist
-differently from dry oxygen, which Fujimura et al. studied for O₂ + H₂O
-downstream plasmas.[^fujimura-1991] Hydrogen also limits oxidation of
+Additions change the ash chemistry: Fujimura et al. found that 1 % water
+vapour lowered the activation energy of downstream O₂ ashing of a novolak
+resist more than 3 % hydrogen did, which they attributed to OH
+radicals.[^fujimura-1991] Hydrogen also limits oxidation of
 exposed metal: Xu and Diao found that tungsten oxidised rapidly in an O₂
 downstream plasma, that "oxidation can be reduced effectively by adding
 H2", and that added N₂ lowered the efficiency of the hydrogen.[^xu-2008]
@@ -325,8 +326,9 @@ temperatures are not public.
 * Lanford and Rand, *JAP* 1978 — hydrogen in plasma nitride.[^lanford-1978]
 * Ohashi, Kubota and Nakajima, *IEEE EDL* 2007 — argon annealing at the
   STI edge.[^ohashi-2007]
-* Fujimura et al., *JVST B* 1991 — resist stripping in O₂ + H₂O
-  downstream plasma.[^fujimura-1991]
+* Fujimura et al., *JVST B* 1991 — water vapour against hydrogen as an
+  addition to downstream O₂ ashing, and the activation energies of
+  each.[^fujimura-1991]
 * Xu and Diao, *JVST A* 2008 — tungsten oxidation in O₂/H₂/N₂ downstream
   plasma.[^xu-2008]
 
