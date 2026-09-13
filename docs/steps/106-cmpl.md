@@ -153,14 +153,14 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Oxide slurry** — fumed or colloidal silica in KOH or NH₄OH
+* **{ref}`Oxide slurry <material-cmp-consumables>`** — fumed or colloidal silica in KOH or NH₄OH
   (typical industry chemistry[^rev-02][^steigerwald-1997]).
 * **Polishing pads** (stacked polyurethane, IC1000/Suba IV class) and **diamond
   conditioners**; **carrier films, membranes and retaining
   rings**.[^steigerwald-1997]
-* **DI water** in quantity; **dilute NH₄OH** (category page), possibly
+* **{ref}`DI water <material-ultrapure-water>`** in quantity; **dilute NH₄OH** (category page), possibly
   **dilute HF**, for the post-CMP clean; **PVA brushes**.
-* **Monitor wafers** with blanket oxide for rate checks.[^semi-m8]
+* **{ref}`Monitor wafers <material-substrates>`** with blanket oxide for rate checks.[^semi-m8]
 * Chemical suppliers named in SkyWater's 2021 S-1: KMG
   Chemicals.[^sec-01]
 

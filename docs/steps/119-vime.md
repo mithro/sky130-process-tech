@@ -189,13 +189,13 @@ recipe is not public); the shared physics is set out at
   for the oxide etch (industry practice;[^nojiri-2015] SkyWater lists
   CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]).
 * **Helium** for backside cooling; **NF₃** or O₂-based chamber clean.
-* **O₂/N₂** (and forming gas) for the ash;[^skw-01] CF₄, listed on the
+* **O₂/N₂** (and {ref}`forming gas <material-anneal-ambients>`) for the ash;[^skw-01] CF₄, listed on the
   Iridia and Mattson ashers,[^skw-01] would attack the exposed TiW and
   would, we infer, be left out. **Amine or semi-aqueous solvent**
   ({ref}`wet chemicals <material-wet-chemicals>`; EKC265/EKC270 class; SkyWater lists "EKS265, EKC270
-  solvents"[^skw-01]) and DI water for the post-etch clean.
-* **Chamber consumables** (liners, focus and edge rings, electrodes);
-  **monitor wafers** with blanket oxide and TiW for rate and
+  solvents"[^skw-01]) and {ref}`DI water <material-ultrapure-water>` for the post-etch clean.
+* **{ref}`Chamber consumables <material-hardware-consumables>`** (liners, focus and edge rings, electrodes);
+  **{ref}`monitor wafers <material-substrates>`** with blanket oxide and TiW for rate and
   selectivity checks.
 
 ## Related steps and cross-references
