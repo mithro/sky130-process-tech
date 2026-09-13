@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1198
+written page has exactly one entry here; the inventory holds 1205
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -9395,6 +9395,83 @@ profiling", *Journal of Vacuum Science & Technology B* **21**(1), 193–197
 (2003). <https://doi.org/10.1116/1.1535925> Backside SIMS on SOI wafers to
 quantify boron penetration through DPN oxide after rapid thermal
 activation. Used on the plasma nitridation chamber page. Tier: deep dive.
+
+#### Etch, strip and clean machine pages (first cited there)
+
+The entries below were introduced by the three plasma-etcher pages, the
+downstream plasma asher page and the wet bench and spray processor page,
+and are grouped in that order by the page that first cited them. The
+vendor press releases and product pages were fetched on 2026-09-13; the
+papers were checked through Crossref and OpenAlex on that date, and
+their annotations rest on their abstracts.
+
+**AMAT-DPS-PLUS-1999** — Applied Materials, *Applied Materials Launches
+Silicon Etch System for Sub-0.15 Micron Chip Generations* (Silicon Etch
+DPS Plus Centura), press release, 1999-06-24.
+<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-launches-silicon-etch-system-sub-015-micron>
+The DPS Plus on the Etch Centura II platform: "Predictive Endpoint" for a
+"soft-landing" before the gate oxide, in use in "more than 80 Silicon
+Etch DPS process chambers"; "More than 350 silicon etch DPS chambers"
+installed; the DPS Centura "Introduced in 1997"; a dome temperature
+control design and "A dual cooling zone ceramic electrostatic chuck".
+Used on the silicon and polysilicon plasma etcher page. Tier:
+cross-check (vendor statement).
+
+**AMAT-300-ETCH-2000** — Applied Materials, *Applied Materials Unveils
+300mm Etch Product Line*, press release, 2000-07-10.
+<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-300mm-etch-product-line>
+Applied's 300 mm etchers on the Centura 300 platform, "derived from
+Applied Materials' production-proven Centura 200mm design": the
+Dielectric Etch eMax 300 and IPS 300, the Silicon and Metal Etch DPS 300,
+"200mm-proven chamber materials and surface coatings", and a metal etch
+strip chamber "based on its 200mm ASP technology" that also performs a
+passivation. Used on the silicon, dielectric and metal plasma etcher
+pages and the downstream plasma asher page. Tier: cross-check (vendor
+statement).
+
+**LAM-2300-2000** — Lam Research, *Lam Research Corporation Launches
+Industry's First 200- And 300-Mm Capable Etch Product Line*, press
+release, 2000-11-16.
+<https://newsroom.lamresearch.com/2000-11-16-Lam-Research-Corporation-Launches-Industrys-First-200-And-300-Mm-Capable-Etch-Product-Line>
+The 2300 Etch Series "for both 200- and 300-mm wafers", a platform that
+"handles four process modules": the 2300 Exelan dielectric etcher, the
+Versys Silicon (gate BARC, resist trim, hardmask open and STI in one
+chamber; "in situ waferless auto cleans"; interferometric endpoint) and
+the Versys Metal ("aluminum etch and integrated resist removal",
+convertible to a silicon etch chamber). Used on the silicon, dielectric
+and metal plasma etcher pages. Tier: cross-check (vendor statement).
+
+**ALLWIN-RAINBOW-4400** — Allwin21, *Lam Rainbow 44XX Plasma Etcher*,
+reseller product description, accessed 2026-09-13.
+<https://allwin21.com/lam-rainbow-44xx-plasma-etcher/> The Rainbow
+etchers as "single-wafer plasma/RIE etching systems" for 6-inch or
+8-inch wafers with upper and lower RF match networks "for programmable
+switching between plasma and RIE modes"; 44XX applications including
+native-oxide breakthrough, a three-step nitride spacer etch and a
+"Cl2/HBr Main Etch and Cl2/HBr/O2 Overetch" for doped polysilicon; a
+typical gas list. Used on the silicon and polysilicon plasma etcher
+page. Tier: high-level (reseller description).
+
+**CUNGE-2005** — G. Cunge, M. Kogelschatz, O. Joubert and N. Sadeghi,
+"Plasma–wall interactions during silicon etching processes in
+high-density HBr/Cl₂/O₂ plasmas", *Plasma Sources Science and
+Technology* **14**(2), S42–S52 (2005).
+<https://doi.org/10.1088/0963-0252/14/2/S06> SiClₓ radical densities and
+reactor-wall deposits in gate-etch plasmas: walls "stay clean" without
+O₂, and a silicon oxychloride layer grows on them as O₂ is added. Used
+on the silicon and polysilicon plasma etcher page. Tier: deep dive.
+
+**WIKI-HBR** — Wikipedia, *Hydrogen bromide*.
+<https://en.wikipedia.org/wiki/Hydrogen_bromide> The silicon etch gas
+and its hazard ("highly corrosive and, if inhaled, can cause lung
+damage"). Used on the silicon and polysilicon plasma etcher page. Tier:
+high-level.
+
+**WIKI-NF3** — Wikipedia, *Nitrogen trifluoride*.
+<https://en.wikipedia.org/wiki/Nitrogen_trifluoride> NF₃ broken down in
+a plasma to fluorine radicals that attack polysilicon, nitride and
+oxide, and its use to clean PECVD chambers. Used on the silicon and
+polysilicon plasma etcher page. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
