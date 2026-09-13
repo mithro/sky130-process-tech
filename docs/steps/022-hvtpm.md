@@ -113,7 +113,7 @@ fab:
 ## Resources required
 
 * **Positive i-line photoresist** (~1 µm); suppliers named in SkyWater's
-  S-1: Dow, JSR, Tokyo Ohka Kogyo.[^sec-01]
+  2021 S-1: Dow, JSR, Tokyo Ohka Kogyo.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev] edge-bead remover, DI water, nitrogen.
 * **The HVTPM reticle** (generated from `chvtpm`).[^pdk-06]
 

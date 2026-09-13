@@ -130,7 +130,7 @@ reading is used throughout these pages and is marked as an inference.
 ## Resources required
 
 * **i-line positive photoresist**[^wiki-dnq] from the suppliers named
-  in SkyWater's S-1 (Dow, JSR, Tokyo Ohka Kogyo).[^sec-01]
+  in SkyWater's 2021 S-1 (Dow, JSR, Tokyo Ohka Kogyo).[^sec-01]
 * **HMDS**, **edge-bead remover**, **developer** (2.38 % (0.26 N) TMAH[^wiki-tmah][^microchemicals-dev]),
   DI water, nitrogen.
 * **The URPM reticle** — chrome-on-quartz,[^wiki-mask] relaxed

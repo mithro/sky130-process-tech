@@ -141,7 +141,7 @@ raises NMOS {term}`Vt`.[^hook-2003]
 ## Resources required
 
 * **Thick positive i-line implant resist** (~2 µm class, inference);
-  suppliers named in SkyWater's S-1: Dow, JSR, Tokyo Ohka
+  suppliers named in SkyWater's 2021 S-1: Dow, JSR, Tokyo Ohka
   Kogyo.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev] edge-bead remover, DI water, nitrogen.
 * **The PWBM reticle**, generated from `nwell` and `pwbm`

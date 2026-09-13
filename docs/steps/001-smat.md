@@ -170,9 +170,9 @@ at `SMAT`; the association is our inference from the tool's function.
 * **Nitrogen** for drying and cassette purging.
 
 SkyWater's filings name its chemical and gas suppliers (Air Products,
-Praxair, KMG Chemicals in the S-1;[^sec-01] Linde, Airgas, EMD
-Performance Materials in the 2023 10-K[^sec-02]) but do not tie any
-product to a step.
+Praxair, KMG Chemicals in the 2021 S-1;[^sec-01] Linde, Airgas, EMD
+Performance Materials in the fiscal 2023 10-K[^sec-02]) but do not tie
+any product to a step.
 
 ## Related steps and cross-references
 
