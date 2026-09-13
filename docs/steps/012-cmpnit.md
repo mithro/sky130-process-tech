@@ -133,10 +133,10 @@ polisher, which is what this step needs.
 
 * **Slurry** — silica-based or ceria-based STI
   slurry.[^rev-02][^wiki-cmp]
-* **Polishing pads** (polyurethane) and **pad conditioners** (diamond
-  discs).[^wiki-cmp]
-* **DI water** in large volumes; **dilute NH₄OH / surfactant / dilute
-  HF** for post-CMP cleaning.
+* **Polishing pads** (stacked polyurethane, IC1000/Suba IV class;
+  category page) and **pad conditioners** (diamond discs).[^wiki-cmp]
+* **DI water** in large volumes; **dilute NH₄OH** (category page),
+  possibly **dilute HF**, for the post-CMP clean; **PVA brushes**.
 * **Carrier-head consumables** — membranes, retaining rings.
 * **Slurry supply and waste treatment** — CMP is one of the largest
   water and waste-water consumers in the fab.[^txt-07]

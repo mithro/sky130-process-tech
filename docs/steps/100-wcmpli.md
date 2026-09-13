@@ -164,11 +164,12 @@ fab (SKY130's recipe is not public):
 
 * **Tungsten slurry** — alumina or silica with H₂O₂, Fe(NO₃)₃ or
   KIO₃ oxidiser (typical industry chemistry[^rev-02][^stein-1999]).
-* **Polishing pads** (IC1000/Suba IV class), **diamond
+* **Polishing pads** (stacked polyurethane, IC1000/Suba IV class), **diamond
   conditioners**, **carrier films, membranes and retaining
   rings**.[^steigerwald-1997]
-* **DI water** in quantity; **dilute NH₄OH**, **citric acid**,
-  **dilute HF** for post-CMP cleaning; **PVA brushes**.
+* **DI water** in quantity; **dilute NH₄OH** or **TMAH**,[^jolley-1998]
+  possibly **citric acid** or **dilute HF** (category page), for the
+  post-CMP clean; **PVA brushes**.
 * **Monitor wafers** with blanket tungsten and oxide for rate and
   selectivity checks.[^semi-m8]
 * Chemical suppliers named by SkyWater: KMG Chemicals.[^sec-01]
@@ -214,6 +215,8 @@ fab (SKY130's recipe is not public):
 
 ### Deep dive
 
+* Jolley, *Solid State Phenomena* 1998 — TMAH as a post-tungsten-CMP
+  clean.[^jolley-1998]
 * Kaufman et al. (IBM), *J. Electrochem. Soc.* 1991 — tungsten CMP
   by oxidation and abrasion, the founding paper.[^kaufman-1991]
 * Kaanta et al. (IBM), IEDM 1987 — tungsten studs and
@@ -255,6 +258,10 @@ fab (SKY130's recipe is not public):
 
 <!-- footnotes -->
 
+[^jolley-1998]: R. Jolley, "Applications of Tetramethylammoninium
+    Hydroxide (TMAH) as a Post Tungsten CMP Cleaning Mixture", *Solid
+    State Phenomena* **65–66**, 105–108 (1998).
+    <https://doi.org/10.4028/www.scientific.net/SSP.65-66.105>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack

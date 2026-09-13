@@ -166,11 +166,11 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
   (Cabot Semi-Sperse class; typical industry
   chemistry[^rev-02][^steigerwald-1997]); a nitride-selective
   (ceria or additive-silica) slurry if the polish stops on the caps.
-* **Polishing pads** (IC1000/Suba IV class) and **diamond
+* **Polishing pads** (stacked polyurethane, IC1000/Suba IV class) and **diamond
   conditioners**; **carrier films, membranes and retaining
   rings**.[^steigerwald-1997]
-* **DI water** in quantity; **dilute NH₄OH**, **dilute HF** for
-  post-CMP cleaning; **PVA brushes**.
+* **DI water** in quantity; **dilute NH₄OH** (category page), possibly
+  **dilute HF**, for the post-CMP clean; **PVA brushes**.
 * **Monitor wafers** with blanket PSG and nitride for rate and
   selectivity checks.[^semi-m8]
 * Chemical suppliers named by SkyWater: KMG Chemicals.[^sec-01]

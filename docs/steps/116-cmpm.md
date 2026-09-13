@@ -174,10 +174,11 @@ recipe is not public):
 
 * **Silica-based oxide CMP slurry** (KOH- or NH₄OH-stabilised
   fumed or colloidal silica).[^rev-02][^wiki-cmp]
-* **Polishing pads** (stacked polyurethane) and **diamond
+* **Polishing pads** (stacked polyurethane, IC1000/Suba IV class;
+  category page) and **diamond
   conditioners**.[^wiki-cmp]
-* **DI water**, **dilute NH₄OH**, possibly **dilute HF**, for the
-  {term}`post-CMP clean`; brush consumables.
+* **DI water**, **dilute NH₄OH** (category page), possibly **dilute
+  HF**, for the {term}`post-CMP clean`; **PVA brushes**.
 * **Carrier-head consumables** — membranes, retaining rings.
 * **Slurry supply and waste treatment**.[^txt-07]
 
