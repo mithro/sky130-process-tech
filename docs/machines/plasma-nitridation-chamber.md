@@ -6,9 +6,11 @@ seconds, to a low-pressure nitrogen plasma, so that nitrogen is
 incorporated near the top surface of the oxide without heating the
 wafer to the temperatures a thermal nitridation needs. The nitrogen
 blocks boron from a p⁺ polysilicon gate and lowers gate leakage; kept
-away from the silicon interface, it does so without the mobility loss of
-a thermally nitrided oxide. The class arrived as a production tool around
-the 130 nm node.[^amat-dpn-2001] This page describes the class in general, lists
+near the top surface, it can avoid the mobility loss that nitrogen at the
+silicon interface causes,[^pat-rpn-ti][^hattangady-1998] although a heavy
+plasma nitridation can itself cost transconductance.[^lek-2002] The
+class arrived as a production tool around the 130 nm
+node.[^amat-dpn-2001] This page describes the class in general, lists
 representative models, and then says what SkyWater has published and
 which SKY130 step this reference associates with the class. Nitrided
 oxides in general are on the {ref}`oxidation category page
@@ -22,7 +24,7 @@ oxides in general are on the {ref}`oxidation category page
 | Nitrogen profile | "approximately 15 at. % nitrogen into the top 0.5 nm" of an oxide "in 10 s";[^kraft-1997] nitrogen "confined to the immediate vicinity of the surface".[^hattangady-1995] |
 | Wafer temperature | Remote plasma nitridation "at low temperatures, 23 and 300 °C";[^hattangady-1995] 300 °C in a later remote-plasma study.[^niimi-2002] |
 | Wafer handling | Single wafer, on a cluster tool with the other gate-stack chambers: DPN "can be easily integrated on a single cluster tool platform with our other single-wafer gate fabrication technologies".[^amat-dpn-2001] |
-| 200 mm era | Applied Materials' DPN chamber, of which it had "over a dozen DPN chambers in use for production" in 2001;[^amat-dpn-2001] the DPN Centura.[^pat-pna-amat] |
+| 200 mm era | Applied Materials' DPN chamber, introduced for "130nm and below device designs" in 2001 with "over a dozen DPN chambers in use for production" (wafer size not stated);[^amat-dpn-2001] the DPN Centura.[^pat-pna-amat] |
 | SkyWater-listed tool | None named; SkyWater lists "Nitrided gate oxide" as a special module without a tool[^skw-01] |
 | SKY130 steps | No step as the process tool, 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-plasma-nitridation-chamber-steps>` |
 
@@ -184,10 +186,9 @@ tool".
 
 Steps whose "Machines typically used" section names a plasma nitridation
 chamber as the tool or one of two options (identical to the
-{ref}`machines index <machines-index>` table; no step names the class as
-its process tool):
+{ref}`machines index <machines-index>` table):
 
-None as the process tool; *alternative:* {ref}`LVGOX <step-047>`
+*alternative:* {ref}`LVGOX <step-047>`
 
 How the step pages grade the SkyWater tools that could provide a nitrided
 oxide ("Machines likely used at SkyWater"), as collected on the machines
@@ -195,9 +196,9 @@ index:
 
 * **Special modules "Nitrided gate oxide", "Ti and Co Silicide", "W plug
   dual damascene"** — *inference for use in SKY130 (nitrided oxide):* {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`; *strong for the capability (silicide, W plug):* {ref}`CSIL <step-098>`, {ref}`WDEP <step-099>`
-* **"Ag Heatpulse 8808 …" (the NH₃ route)** — *weak:*
-  {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`; see
-  {ref}`machine-rapid-thermal-processor`.
+* **"Ag Heatpulse 8808 …"** — *weak:* {ref}`LVGOX <step-047>`,
+  {ref}`IOX45 <step-063>` (the LVGOX page names its NH₃ line as the one
+  public hint); see {ref}`machine-rapid-thermal-processor`.
 
 No step page grades a plasma nitridation tool at SkyWater, because none is
 named.
