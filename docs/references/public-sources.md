@@ -483,6 +483,9 @@ Also used on the starting-material machine page.
 Also used on the single-wafer spin processor machine page.
 Also used on the CMP polisher machine page.
 Also used on the post-CMP cleaner machine page.
+Also used on the defect and particle inspection, film thickness and stress
+metrology, sheet-resistance and dose metrology, cross-section SEM and
+profilers and parametric tester and prober pages.
 Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
@@ -732,8 +735,10 @@ i.e. KLA-Tencor AIT (patterned-wafer inspection), SP1 (unpatterned
 Surfscan) and an "EV300" review tool (vendor not stated in the posting). Other
 titles on the page (Equipment Maintenance Technician – Metrology,
 Senior Metals Process Technician, Development Engineering Senior
-Technician) name no tools. Tier: cross-check (medium strength).
+Technician) name no tools.
 Also used on the starting-material machine page.
+Also used on the defect and particle inspection page.
+Tier: cross-check (medium strength).
 
 **JOB-02** — Indeed, Minnesota-wide and Bloomington listing pages,
 retrieved 2026-08-30.
@@ -1237,6 +1242,8 @@ Also used on the medium-current and high-current implanter pages.
 Also used on the vertical-furnace oxidation page.
 Also used on the downstream plasma asher page.
 Also used on the starting-material machine page.
+Also used on the defect and particle inspection and film thickness and
+stress metrology pages.
 Tier: high-level.
 
 **TXT-08** — H. Xiao, *Introduction to Semiconductor Manufacturing
@@ -1373,7 +1380,9 @@ fetched when the citing page was written or reviewed (2026-08-30 to
 **WIKI-4T** — Wikipedia, *Four-terminal sensing*.
 <https://en.wikipedia.org/wiki/Four-terminal_sensing> Four-terminal
 (Kelvin) sensing, the principle behind four-point-probe and Kelvin
-contact measurements. Used on the test category page. Tier: high-level.
+contact measurements. Used on the test category page.
+Also used on the sheet-resistance and dose metrology page.
+Tier: high-level.
 
 **WIKI-ADVANTEST** — Wikipedia, *Advantest*.
 <https://en.wikipedia.org/wiki/Advantest> Company article on the
@@ -1383,7 +1392,9 @@ high-level.
 **WIKI-AGILENT** — Wikipedia, *Agilent Technologies*.
 <https://en.wikipedia.org/wiki/Agilent_Technologies> Company article on
 Agilent Technologies, successor to the HP test-and-measurement business
-behind the 4062UX tester. Used on the test category page. Tier:
+behind the 4062UX tester. Used on the test category page.
+Also used on the parametric tester and prober page.
+Tier:
 high-level.
 
 **WIKI-AMAT** — Wikipedia, *Applied Materials*.
@@ -1426,7 +1437,9 @@ page. Tier: high-level.
 **WIKI-ATE** — Wikipedia, *Automatic test equipment*.
 <https://en.wikipedia.org/wiki/Automatic_test_equipment> Automatic test
 equipment: what a tester and handler do at wafer sort and final test.
-Used on the test category page. Tier: high-level.
+Used on the test category page.
+Also used on the parametric tester and prober page.
+Tier: high-level.
 
 **WIKI-AXCELIS** — Wikipedia, *Axcelis Technologies*.
 <https://en.wikipedia.org/wiki/Axcelis_Technologies> Company article on
@@ -1612,13 +1625,16 @@ and high-energy implanter pages. Tier: high-level.
 **WIKI-KEITHLEY** — Wikipedia, *Keithley Instruments*.
 <https://en.wikipedia.org/wiki/Keithley_Instruments> Company article on
 Keithley Instruments (parametric test systems). Used on the test
-category page. Tier: high-level.
+category page.
+Also used on the parametric tester and prober page.
+Tier: high-level.
 
 **WIKI-KLA** — Wikipedia, *KLA Corporation*.
 <https://en.wikipedia.org/wiki/KLA_Corporation> The inspection and
 metrology vendor. Used on the lithography and substrate category pages.
 Also used on the CD-SEM and overlay metrology page.
 Also used on the starting-material machine page.
+Also used on the defect and particle inspection page.
 Tier: high-level.
 
 **WIKI-LATCHUP** — Wikipedia, *Latch-up*.
@@ -1722,7 +1738,9 @@ material. Used on the cmp category page. Tier: high-level.
 
 **WIKI-PROBECARD** — Wikipedia, *Probe card*.
 <https://en.wikipedia.org/wiki/Probe_card> Probe cards for wafer test.
-Used on the test category page. Tier: high-level.
+Used on the test category page.
+Also used on the parametric tester and prober page.
+Tier: high-level.
 
 **WIKI-PSG** — Wikipedia, *Phosphosilicate glass*.
 <https://en.wikipedia.org/wiki/Phosphosilicate_glass> Phosphosilicate
@@ -1773,7 +1791,9 @@ Tier: high-level.
 
 **WIKI-RS** — Wikipedia, *Sheet resistance*.
 <https://en.wikipedia.org/wiki/Sheet_resistance> Sheet resistance and
-the ohms-per-square convention. Used on the test category page. Tier:
+the ohms-per-square convention. Used on the test category page.
+Also used on the sheet-resistance and dose metrology page.
+Tier:
 high-level.
 
 **WIKI-RTP** — Wikipedia, *Rapid thermal processing*.
@@ -1869,7 +1889,9 @@ high-level.
 
 **WIKI-TEST** — Wikipedia, *Wafer testing*.
 <https://en.wikipedia.org/wiki/Wafer_testing> Parametric versus
-functional test and the wafermap. Used on the test category page. Tier:
+functional test and the wafermap. Used on the test category page.
+Also used on the parametric tester and prober page.
+Tier:
 high-level.
 
 **WIKI-THINFILM** — Wikipedia, *Thin film*.
@@ -2535,6 +2557,7 @@ Physics Letters, vol. 47, no. 6, pp. 584–586, 1985,
 DOI 10.1063/1.96079. The thermal-wave (modulated-reflectance) implant
 monitor.
 Also used on the medium-current implanter page.
+Also used on the sheet-resistance and dose metrology page.
 Tier: deep dive.
 
 **CURRENT-1996** — M. I. Current, *"Ion implantation for silicon device
@@ -2899,7 +2922,9 @@ ceria particles polish SiO₂. Used on step 012. Tier: deep dive.
 *Journal of Applied Physics* **70**(6), R53–R80 (1991).
 <https://doi.org/10.1063/1.349282> A review of stress-related problems
 in silicon technology, including nitride-on-pad-oxide stress and
-dislocation generation. Used on steps 002, 003 and 010. Tier: deep dive.
+dislocation generation. Used on steps 002, 003 and 010.
+Also used on the film thickness and stress metrology page.
+Tier: deep dive.
 
 **IRENE-1988** — E. A. Irene, "Models for the oxidation of silicon",
 *Critical Reviews in Solid State and Materials Sciences* **14**(2),
@@ -3139,14 +3164,18 @@ in chemical-mechanical polishing", *IEEE Transactions on Semiconductor
 Manufacturing* **11**(1), 129–140 (1998).
 <https://doi.org/10.1109/66.661292> Rapid characterisation and modelling
 of pattern-dependent CMP variation, the basis of density-based fill
-rules. Used on step 012 and the cmp category page. Tier: deep dive.
+rules. Used on step 012 and the cmp category page.
 Also used on the CMP polisher machine page.
+Also used on the cross-section SEM and profilers page.
+Tier: deep dive.
 
 **STONEY-1909** — G. G. Stoney, "The tension of metallic films deposited
 by electrolysis", *Proceedings of the Royal Society of London A*
 **82**(553), 172–175 (1909). <https://doi.org/10.1098/rspa.1909.0021>
 The wafer-curvature relation used to turn a bow measurement into a film
-stress. Used on step 003. Tier: deep dive.
+stress. Used on step 003.
+Also used on the film thickness and stress metrology page.
+Tier: deep dive.
 
 **TEASDALE-2001** — D. Teasdale, Y. Senzaki, R. Herring, G. Hoeye, L.
 Page and P. Schubert, "LPCVD of Silicon Nitride from Dichlorosilane and
@@ -3206,7 +3235,9 @@ effects in a chemical mechanical polishing planarization process for
 advanced trench isolation", *Applied Physics Letters* **61**(11),
 1344–1346 (1992). <https://doi.org/10.1063/1.107586> Dishing effects in
 CMP planarisation for trench isolation, measured early. Used on step
-012. Tier: deep dive.
+012.
+Also used on the cross-section SEM and profilers page.
+Tier: deep dive.
 
 **ZIEGLER-2010** — J. F. Ziegler, M. D. Ziegler and J. P. Biersack,
 "SRIM – The stopping and range of ions in matter (2010)", *Nuclear
@@ -3997,7 +4028,9 @@ Thickness and Refractive Index on Silicon Substrates by Ellipsometry*,
 SEMI.
 <https://store-us.semi.org/products/mf057600-semi-mf576-test-method-for-measurement-of-insulator-thickness-and-refractive-index-on-silicon-substrates-by-ellipsometry>
 The standard ellipsometric test method for insulator thickness and
-refractive index on silicon. Used on the oxidation category page. Tier:
+refractive index on silicon. Used on the oxidation category page.
+Also used on the film thickness and stress metrology page.
+Tier:
 deep dive.
 
 ##### University and course pages
@@ -4956,7 +4989,9 @@ and van der Pauw Sheet Resistors for Characterizing the Line Width of
 Conducting Layers", *Journal of The Electrochemical Society* **125**(4),
 650–654 (1978). <https://doi.org/10.1149/1.2131517> Bridge and van der
 Pauw resistors for line-width (electrical CD) measurement. Used on the
-test category page. Tier: deep dive.
+test category page.
+Also used on the parametric tester and prober page.
+Tier: deep dive.
 
 **HESS-1999** — C. Hess and L. H. Weiland, "Extraction of wafer-level
 defect density distributions to improve yield prediction", *IEEE
@@ -4976,7 +5011,9 @@ A. Cerdeira, M. Estrada and Y. Yue, "A review of recent MOSFET threshold
 voltage extraction methods", *Microelectronics Reliability* **42**(4–5),
 583–596 (2002). <https://doi.org/10.1016/S0026-2714(02)00027-6> A review
 of MOSFET threshold-voltage extraction methods. Used on the test
-category page. Tier: deep dive.
+category page.
+Also used on the parametric tester and prober page.
+Tier: deep dive.
 
 **PROCTOR-1983** — S. J. Proctor, L. W. Linholm and J. A. Mazer, "Direct
 measurements of interfacial contact resistance, end contact resistance,
@@ -4984,7 +5021,9 @@ and interfacial contact layer uniformity", *IEEE Transactions on
 Electron Devices* **30**(11), 1535–1542 (1983).
 <https://doi.org/10.1109/T-ED.1983.21334> Kelvin measurement of
 interfacial contact resistance and its pitfalls. Used on the test
-category page. Tier: deep dive.
+category page.
+Also used on the parametric tester and prober page.
+Tier: deep dive.
 
 **REEVES-1982** — G. K. Reeves and H. B. Harrison, "Obtaining the
 specific contact resistance from transmission line model measurements",
@@ -4997,20 +5036,26 @@ dive.
 the Four-Point Probe", *Bell System Technical Journal* **37**(3),
 711–718 (1958). <https://doi.org/10.1002/j.1538-7305.1958.tb03883.x>
 Four-point-probe sheet resistivity and its correction factors. Used on
-the test category page. Tier: deep dive.
+the test category page.
 Also used on the starting-material machine page.
+Also used on the sheet-resistance and dose metrology page.
+Tier: deep dive.
 
 **STAPPER-1983** — C. H. Stapper, "Modeling of Integrated Circuit Defect
 Sensitivities", *IBM Journal of Research and Development* **27**(6),
 549–557 (1983). <https://doi.org/10.1147/rd.276.0549> Defect-sensitivity
-and critical-area yield modelling. Used on the test category page. Tier:
+and critical-area yield modelling. Used on the test category page.
+Also used on the defect and particle inspection page.
+Tier:
 deep dive.
 
 **VALDES-1954** — L. B. Valdes, "Resistivity Measurements on Germanium
 for Transistors", *Proceedings of the IRE* **42**(2), 420–427 (1954).
 <https://doi.org/10.1109/JRPROC.1954.274680> The original
 four-point-probe resistivity measurement. Used on the test category
-page. Tier: deep dive.
+page.
+Also used on the sheet-resistance and dose metrology page.
+Tier: deep dive.
 
 **VDP-1958** — L. J. van der Pauw, "A method of measuring specific
 resistivity and Hall effect of discs of arbitrary shape", *Philips
@@ -5018,19 +5063,24 @@ Research Reports* **13**, 1–9 (1958); reprinted in S. M. Sze (ed.),
 *Semiconductor Devices: Pioneering Papers*, World Scientific, 1991, pp.
 174–182. <https://doi.org/10.1142/9789814503464_0017> The theorem behind
 the four-contact sheet-resistance structure. Used on the test category
-page. Tier: deep dive.
+page.
+Also used on the sheet-resistance and dose metrology page.
+Tier: deep dive.
 
 ##### Books and book chapters
 
 **CHENG-1999** — Y. Cheng and C. Hu, *MOSFET Modeling & BSIM3 User's
 Guide*, Kluwer Academic, 1999. <https://doi.org/10.1007/b117400> How
 parametric data become compact-model parameters. Used on the test
-category page. Tier: deep dive.
+category page.
+Also used on the parametric tester and prober page.
+Tier: deep dive.
 
 **SCHRODER-2006** — D. K. Schroder, *Semiconductor Material and Device
 Characterization*, 3rd ed., Wiley, 2006.
 <https://doi.org/10.1002/0471749095> The reference text on resistivity,
 contact, C–V and MOSFET measurements. Used on the test category page.
+Also used on the sheet-resistance and dose metrology page.
 Tier: deep dive.
 
 ##### Standards and roadmaps
@@ -5039,7 +5089,10 @@ Tier: deep dive.
 *2001 Edition: Metrology*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>
 The test-structure and in-line metrology needs. Used on the test
-category page. Tier: cross-check.
+category page.
+Also used on the film thickness and stress metrology, sheet-resistance and
+dose metrology and cross-section SEM and profilers pages.
+Tier: cross-check.
 
 **ITRS-2001-TEST** — International Technology Roadmap for
 Semiconductors, *2001 Edition: Test and Test Equipment*.
@@ -5050,14 +5103,19 @@ Tier: cross-check.
 **ITRS-2001-YIELD** — International Technology Roadmap for
 Semiconductors, *2001 Edition: Yield Enhancement*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001YieldEnhance.pdf>
-The yield-learning loop. Used on the test category page. Tier:
+The yield-learning loop. Used on the test category page.
+Also used on the defect and particle inspection and parametric tester and
+prober pages.
+Tier:
 cross-check.
 
 **SEMI-MF84** — SEMI MF84, *Test Method for Measuring Resistivity of
 Silicon Wafers With an In-Line Four-Point Probe*, SEMI.
 <https://store-us.semi.org/products/mf008400-semi-mf84-test-method-for-measuring-resistivity-of-silicon-wafers-with-an-in-line-four-point-probe>
 The standard four-point-probe resistivity test method. Used on the test
-category page. Tier: deep dive.
+category page.
+Also used on the sheet-resistance and dose metrology page.
+Tier: deep dive.
 
 ##### Vendor, regulatory, marketplace and press pages
 
@@ -5065,12 +5123,15 @@ category page. Tier: deep dive.
 Testers* (listing).
 <https://www.brltest.com/index.php?main_page=product_info&products_id=7874>
 Used-equipment listing for the HP/Agilent 4062UX parametric tester named
-in SKW-01. Used on the test category page. Tier: cross-check.
+in SKW-01. Used on the test category page.
+Also used on the parametric tester and prober page.
+Tier: cross-check.
 
 **KEITHLEY-S600** — Keithley Instruments, *Series S600 Parametric Test
 Systems*, data sheet.
 <https://download.tek.com/datasheet/SeriesS600_DataSht.pdf> Data sheet
 giving the S600 tester's intended uses. Used on the test category page.
+Also used on the parametric tester and prober page.
 Tier: cross-check.
 
 **SEMIONLINE-S600** — Semiconductor Online, *S600 Series Parametric Test
@@ -8326,7 +8387,9 @@ CMOS. Used on steps 161 and 162. Tier: deep dive.
 "Use of Wire Bonding to Study Bond Pad Damage from Wafer Probe",
 *International Symposium on Microelectronics* **2012**(1), 384–395
 (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-TP41> Wire bonding used
-to reveal probe damage in aluminium bond pads. Used on step 161. Tier:
+to reveal probe damage in aluminium bond pads. Used on step 161.
+Also used on the parametric tester and prober page.
+Tier:
 deep dive.
 
 **JANSSEN-1998** — G. C. A. M. Janssen, J. F. Jongste, J. P. Lokker, A.
@@ -8588,7 +8651,9 @@ fluorine on aluminium bond pads. Used on step 169. Tier: deep dive.
 **BUEHLER-1974** — M. G. Buehler, *Microelectronic Test Patterns*, NBS
 Special Publication 400-6, National Bureau of Standards, 1974.
 <https://doi.org/10.6028/NBS.SP.400-6> An early NBS publication on test
-patterns. Used on step 171. Tier: deep dive.
+patterns. Used on step 171.
+Also used on the parametric tester and prober page.
+Tier: deep dive.
 
 **KIZILYALLI-1998** — I. C. Kizilyalli, G. C. Abeln, Z. Chen, J. Lee,
 G. Weber, B. Kotzias, S. Chetlur, J. W. Lyding and K. Hess, "Improvement
@@ -8628,7 +8693,9 @@ test structure for fabrication process evaluation", *Proc. 1988 IEEE
 International Conference on Microelectronic Test Structures (ICMTS)*,
 pp. 23–28. <https://doi.org/10.1109/ICMTS.1988.672923> A
 comb/serpentine/cross-bridge structure for process evaluation. Used on
-step 171. Tier: deep dive.
+step 171.
+Also used on the parametric tester and prober page.
+Tier: deep dive.
 
 ### 8.17 sky130B ReRAM module
 
@@ -8956,7 +9023,9 @@ format"; separates a "**Current** proprietary SkyWater Test Tile" from a
 "**Future** fully open source Test Tile" (Google, NIST and the
 University of Michigan). `AUTHORS` lists Google LLC, SkyWater Technology
 Foundry and CoolCAD Electronics LLC. Used on step 171, the test category
-page and the overview. Tier: cross-check.
+page and the overview.
+Also used on the parametric tester and prober page.
+Tier: cross-check.
 
 **RAW-DATA-TESTTILE-PROP** — SkyWater PDK Authors, *SkyWater 130nm
 Proprietary Manufacturing Test Tile*,
@@ -8969,7 +9038,9 @@ and layout of the circuits connected to these probe points are **not**
 currently available". The pad-layout photograph labels "Row 1"–"Row 4",
 pin numbers 01–12, a "Lithographic Calibration Region" and "Alignment
 Marks". No position on the reticle is given. Used on step 171 and the
-test category page. Tier: cross-check.
+test category page.
+Also used on the parametric tester and prober page.
+Tier: cross-check.
 
 **RAW-DATA-TESTTILE-PADS** — SkyWater PDK Authors, *Manufacturing Test
 Tile Pad Documentation* (PDF title "Pad documentation for SKY130 MPW
@@ -8993,7 +9064,9 @@ CORNER OF RETICLE"; several poly-resistor rows name an "RRPM mask" and a
 the well, deep-N-well mask, high-Vt mask, isolation, poly-resistor, poly,
 SONOS, drain-extended-well, P-well block, depletion-implant,
 gate-oxidation, source/drain-implant, contact, via, metal and MiM step
-pages. Tier: cross-check.
+pages.
+Also used on the parametric tester and prober page.
+Tier: cross-check.
 
 **RAW-DATA-TESTTILE-OPEN** — SkyWater PDK Authors, *SkyWater 130nm Open
 Manufacturing Test Tile*, `docs/sky130-testtile-open/README.rst` with
@@ -9024,7 +9097,9 @@ sweeps and outputs. The raw-data figure annotates a transistor file:
 "Aliases given to each source measurement unit", "Source measurement
 unit number on the curve tracer", "Compliance", "Linear sweep, constant,
 etc.", "Sweep order", "Start value", "Final value", "Number of steps",
-"Step size". Used on step 171. Tier: cross-check.
+"Step size". Used on step 171.
+Also used on the parametric tester and prober page.
+Tier: cross-check.
 
 **RAW-DATA-NOTEBOOKS** — Google LLC, *SKY130 plots of {IC,IB,IG}/VG*
 (`sky130_plot_current.ipynb`), and B. Murmann, *SKY130 plots of ID-VG
@@ -10948,13 +11023,18 @@ and overlay metrology page. Tier: cross-check (vendor statement).
 **WIKI-SEM** — Wikipedia, *Scanning electron microscope*.
 <https://en.wikipedia.org/wiki/Scanning_electron_microscope>
 Secondary-electron imaging, electron sources and specimen charging. Used
-on the CD-SEM and overlay metrology page. Tier: high-level.
+on the CD-SEM and overlay metrology page.
+Also used on the defect and particle inspection and cross-section SEM and
+profilers pages.
+Tier: high-level.
 
 **POSTEK-1994** — M. T. Postek, "Scanning electron microscope metrology",
 *Proc. SPIE* **10274**, 1027405 (1994).
 <https://doi.org/10.1117/12.187461> A review of SEM metrology of
 submicrometre integrated-circuit structures and its recent improvements.
-Used on the CD-SEM and overlay metrology page. Tier: high-level.
+Used on the CD-SEM and overlay metrology page.
+Also used on the cross-section SEM and profilers page.
+Tier: high-level.
 
 **ROSENFIELD-1986** — M. G. Rosenfield, "Linewidth measurement using the
 low voltage SEM", *Proceedings, Annual Meeting, Electron Microscopy
@@ -11828,8 +11908,8 @@ Wayback Machine capture of 2001-07-13.
 <https://web.archive.org/web/20010713111217/http://www.thermawave.com:80/aboutus/corphistory.htm>
 The company's two product lines: the Therma-Probe implant monitor
 (introduced 1985) and the Opti-Probe film gauge (introduced 1992). Used
-on the film thickness and stress metrology page. Tier: cross-check
-(vendor statement).
+on the film thickness and stress metrology and sheet-resistance and dose
+metrology pages. Tier: cross-check (vendor statement).
 
 **RUDOLPH-1999** — Rudolph Technologies, Inc., *1999 Annual Report*
 (including the Form 10-K for 1999); Wayback Machine capture of 2000-08-30.
