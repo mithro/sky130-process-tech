@@ -80,8 +80,13 @@ current at |V_GS| = |V_DS| = 1.8 V of a 7/0.15 µm `pfet_01v8` rises
 from 0.95 mA to 1.38 mA, while that of a 1/0.15 µm `nfet_01v8_lvt`
 falls from 0.536 mA to 0.463 mA and that of a 1/0.15 µm `nfet_01v8`
 from 0.450 mA to 0.409 mA (our extraction from the published
-measurements; one device at each extent).[^raw-data-lv-mosfets] We
-read these opposite trends as consistent with a stress effect of the
+measurements; one device at each extent; the `nfet_01v8` values do not
+fall at every step). Over the same range the thresholds extracted by
+maximum-transconductance extrapolation at |V_DS| = 0.1 V also move: the
+PMOS threshold magnitude falls by 0.14 V, and the thresholds
+of the low-Vt and standard NMOS rise by 0.04 V and 0.03 V, so the
+current changes are not due to mobility alone.[^raw-data-lv-mosfets]
+We read the opposite trends as consistent with a stress effect of the
 kind Bianchi et al. model (inference); the data do not measure stress,
 and other effects of the diffusion extent cannot be excluded.
 
