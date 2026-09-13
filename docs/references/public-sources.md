@@ -8445,8 +8445,10 @@ the raw-data repository, 2022 (Apache 2.0).
 <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
 480 files: 237 I_D–V_G sweeps (gate 0 to ±1.8 V in 50 mV steps at
 |V_DS| = 0.1 V and 1.8 V, with 0, 0.9 V and 1.8 V of reverse body
-bias), 237 matching I_D–V_D sweeps (gate in 0.36 V steps) and 6 gate
-C–V sweeps of two overlap-capacitance structures. For each of the five
+bias except on the 20 array files, which are at zero body bias), 237
+matching I_D–V_D sweeps (gate in 0.36 V steps) and 6 gate C–V sweeps
+(−1.8 V to 1.8 V) of the low-Vt NMOS (module 5219) and high-Vt PMOS
+(modules 5207 and 5219) overlap-capacitance structures. For each of the five
 types one module holds the geometries of the PDK's e-test thresholds
 and currents (7/8, 7/0.15, 0.42/8 or 0.42/1 and 0.42/0.15 µm; 7/8,
 7/0.35, 0.42/8 and 0.42/0.35 µm for `pfet_01v8_lvt`), all except the
@@ -8468,7 +8470,7 @@ at a few milliamperes; the sweeps of several `pfet_01v8` structures
 (modules 8405 and 8407) and of the 3/1, 7/8 and 7/0.35 µm
 `pfet_01v8_lvt` of module 8396 are erratic (for the 7/8 µm device only
 below about 0.5 µA), and two module-5290 arrays carry about 0.7 µA at zero
-gate voltage. Every threshold, current and body-effect value quoted
+gate voltage and V_DS = 0.1 V (about 4.6 µA at 1.8 V). Every threshold, current and body-effect value quoted
 from these files on this site is our extraction from the published
 measurements, with the method stated where it is quoted. Used on steps
 008, 011, 014, 015, 020, 023, 024, 045, 066 and 171, the test category
