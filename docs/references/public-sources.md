@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1494
+written page has exactly one entry here; the inventory holds 1493
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -4406,12 +4406,6 @@ lithography category page.
 Also used on the DUV (KrF, 248 nm) stepper or scanner and coat/develop
 track pages.
 Tier: cross-check.
-
-**SEMIMARKET-S9200** — Legacy Semi, *Hitachi S-9200 CD-SEM* (listing).
-<https://www.semimarket.com/item/hitachi-s-9200-cd-sem/42724>
-Marketplace listing for the Hitachi S-9200 CD-SEM, a 200 mm-era in-line
-CD metrology tool. Used on the lithography category page. Tier:
-cross-check.
 
 **TEL-ACT** — Tokyo Electron, *Coater/Developer ACT Series*, product
 page. <https://www.tel.com/product/act.html> TEL product page for the
@@ -10967,7 +10961,10 @@ CD-SEMs from the S-6000 of 1984 to the CG4100: design aims (in-lens
 detection, low-energy beams, field-emission gun, recipes), pitch
 calibration standards, and the resolution, repeatability, throughput and
 wafer sizes of the S-6000, S-8820, S-9200 and CG4000. Used on the CD-SEM
-and overlay metrology page. Tier: cross-check (vendor statement).
+and overlay metrology page.
+Also used on the lithography category page and the P1M, CTM1 and VIM step
+pages.
+Tier: cross-check (vendor statement).
 
 **KLA-5200XP** — KLA-Tencor, *5200XP Overlay Metrology System*, product
 page; Wayback Machine capture of 2001-08-07.
