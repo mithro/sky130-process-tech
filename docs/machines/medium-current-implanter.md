@@ -207,9 +207,9 @@ On the strength scale of the {ref}`machines index <machines-index>`
 this listing is **strong**: it is a SkyWater statement.[^skw-01] The
 caveats that apply to every listed tool are under
 {ref}`Reading the SkyWater evidence <machines-reading-evidence>`. For
-this class the listing is strong for the model family but not for the
-variant or its energy range, so the "3keV to 750keV" of the 8250HT is
-Eaton's figure, not SkyWater's.[^skw-01][^axcelis-8250]
+this class it is also the only SkyWater source that names a tool: the
+implanter in the maintenance-technician profile could be any of the
+three listed.
 
 (machine-medium-current-implanter-steps)=
 ### SKY130 steps assigned to this class
