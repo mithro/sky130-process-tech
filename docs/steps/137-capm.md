@@ -158,8 +158,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
   i-line systems ({ref}`category-lithography`); a {ref}`KrF tool <machine-duv-krf-stepper>` could
   print the layer but is not needed.
 * **{ref}`Coat/develop track <machine-coat-develop-track>`** (TEL ACT/Lithius,[^tel-act] DNS, Sokudo).
-* **Optical CD / {ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **overlay tool**, **after-develop
-  inspection**.
+* **Optical CD / {ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **overlay tool**, **{ref}`after-develop inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 

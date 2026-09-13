@@ -203,8 +203,7 @@ back end (SKY130's recipe is not public):
 * **{ref}`PECVD dielectric system <machine-pecvd>`**, 200 mm: Novellus Concept One/Two or
   Sequel,[^novellus-history] Applied Materials Producer or Centura
   DxZ[^amat-10k] ({ref}`category-deposition`).
-* **Spectroscopic ellipsometer** for thickness and index; **C–V and
-  leakage probers** at e-test.
+* **{ref}`Spectroscopic ellipsometer <machine-film-thickness-metrology>`** for thickness and index; **{ref}`C–V and leakage probers <machine-parametric-tester>`** at e-test.
 
 ## Machines likely used at SkyWater
 
