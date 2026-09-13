@@ -171,9 +171,9 @@ wafers".[^tw-op3260]
   constants "in the UV range down to 190 nm";[^tw-op3260] and the
   Opti-Probe 5240 of the 5000 family, adding deep-UV spectroscopic and
   absolute ellipsometry.[^tw-op5000]
-* **Prometrix, a Tencor division.** The UV-1250SE and UV-1270SE (1996,
-  with an integrated SMIF minienvironment), the UV-1050 broadband
-  reflectometer for resists and anti-reflective coatings, the FT-750
+* **Prometrix, a Tencor division.** The UV-1250SE and its successor the
+  UV-1270SE (1996, with an integrated SMIF minienvironment), the UV-1050
+  broadband reflectometer for resists and anti-reflective coatings, the FT-750
   spectrophotometer for films "typically down to 150 Angstrom", and the
   SpectraMap SM300 mapper.[^tencor-thinfilm-1997][^tencor-uv1270se-1996]
 * **Rudolph Technologies.** The AutoEL (1977), the SpectraLASER
@@ -185,8 +185,8 @@ wafers".[^tw-op3260]
   200 mm wafers, the 9000i integrated system, and tabletop
   models.[^nanometrics-2000]
 * **Tencor, then KLA-Tencor, stress gauges.** The FLX-2320, FLX-5400 and
-  FLX-2900 of 1997,[^tencor-stress-1997] and the FLX-2320 still listed in
-  2002 beside the ASET-F5x thin-film and Quantox gate-monitoring
+  FLX-2900, described on a 1997 capture,[^tencor-stress-1997] and the
+  FLX-2320 still listed in 2002 beside the ASET-F5x thin-film and Quantox gate-monitoring
   systems.[^kla-flx2320]
 
 ## At SkyWater

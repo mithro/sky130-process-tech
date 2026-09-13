@@ -25,7 +25,7 @@ planarisation are on the {ref}`etch <category-etch>` and
 | SEM resolution | "1.0nm at 15kV", "2.0nm at 1kV" and "1.4nm at 1kV with Beam Deceleration", for specimens of "200mm diameter" (Hitachi S-4800).[^hitachi-s4800] |
 | Profiler performance | "guaranteed 8Å step height repeatability", scans "up to 205mm" and a stylus force "as small as 0.05 mg" (HRP-200);[^tencor-hrp200-1996] "7.5Å (1s) or 0.1% repeatability" (P-15).[^kla-p15] |
 | AFM | "a lateral resolution of 30 Å and a vertical resolution less than 1 Å" in the first atomic force microscope;[^binnig-1986] "The first fully automated AFM designed exclusively for in-fab semiconductor metrology" for wafers to 200 mm (Dimension 9000).[^veeco-afm-2000] |
-| 200 mm era | FEI's FIB 200xP and FIB 800 workstations (1999) and later DualBeam FIB/SEM families;[^fei-fib200xp-1999][^fei-fib800-1999][^fei-dualbeam-2006] Hitachi field-emission SEMs;[^hitachi-s4800] SELA microcleaving systems;[^sela-2001] Tencor P-series and HRP-200 profilers;[^tencor-profiling-1997] Veeco Dektak profilers and Digital Instruments Dimension AFMs.[^veeco-stylus-2000][^veeco-afm-2000] |
+| 200 mm era | FEI's FIB 200xP and FIB 800 workstations (1999 product pages) and later DualBeam FIB/SEM families;[^fei-fib200xp-1999][^fei-fib800-1999][^fei-dualbeam-2006] Hitachi field-emission SEMs;[^hitachi-s4800] SELA microcleaving systems;[^sela-2001] Tencor P-series and HRP-200 profilers;[^tencor-profiling-1997] Veeco Dektak profilers and Digital Instruments Dimension AFMs.[^veeco-stylus-2000][^veeco-afm-2000] |
 | SkyWater-listed tool | None assigned by a step page; the physical-analysis list includes "FEI Dual Beam FIB/SEM" and "Hitachi S-4800"[^skw-01] |
 | SKY130 steps | Cross-section SEM at 38 steps and a profiler or AFM at 8; see {ref}`SKY130 steps assigned to this class <machine-cross-section-sem-profilers-steps>` |
 
@@ -77,9 +77,9 @@ to locate submicron defects without imaging the wafer".[^fei-fib800-1999]
 A dual-beam system combines an ion column with an electron column, so that
 the section can be cut and imaged in place; Wikipedia notes that such a
 combination "enables the benefits of both to be utilized".[^wiki-fib]
-FEI's Quanta 200 3D DualBeam of 2006 offered "site-specific cross sectioning, ion
-beam imaging, material deposition and etching, analysis and TEM sample
-preparation".[^fei-dualbeam-2006] Nikawa's review of FIB failure analysis
+FEI's Quanta 200 3D DualBeam, described on a 2006 capture, offered
+"site-specific cross sectioning, ion beam imaging, material deposition
+and etching, analysis and TEM sample preparation".[^fei-dualbeam-2006] Nikawa's review of FIB failure analysis
 shows cross-sections of an electromigration open, a pinhole in the oxide
 between metal and substrate, and an open caused by process anomalies, and
 lists "microscopic cross sectioning for secondary electron miscroscopy
@@ -95,8 +95,8 @@ stylus".[^tencor-hrp200-1996] Bennett and Dancy describe an instrument with "hei
 of the order of 1-2 A and lateral resolution of a few tenths of a
 micrometer on smooth surfaces", whose stylus loading "can be adjusted so
 that no permanent marks are left on the surface".[^bennett-1981] Tencor's
-production profilers of 1997 included the P-22, with "stylus forces as
-low as 0.05 mg on critical surfaces", and the HRP-200, which combined "a
+production profilers on a 1997 capture included the P-22, with "stylus
+forces as low as 0.05 mg on critical surfaces", and the HRP-200, which combined "a
 Tencor stylus profiler with the high-resolution analysis and imaging
 capabilities of an Atomic Force Microscope (AFM)".[^tencor-profiling-1997]
 Tencor launched the HRP-200 for metal CMP, measuring "tungsten plug recess
@@ -157,10 +157,10 @@ deposition and etch step pages name them for.
   TEMstation for TEM pre-thinning.[^sela-2001]
 * **Tencor, then KLA-Tencor.** The P-10, P-11, P-22 and P-30 SMIF stylus
   profilers, the Alpha-Step 500 and the HRP-200 (1996);[^tencor-profiling-1997][^tencor-hrp200-1996]
-  the P-15 and the HRP-240/340 (2002).[^kla-p15][^kla-hrp]
+  the P-15 and the HRP-240/340 (2002 product pages).[^kla-p15][^kla-hrp]
 * **Veeco and Digital Instruments.** Dektak Series V and Dektak 3 ST
   profilers, and Dimension 3100, 5000 and 9000 AFMs
-  (2000).[^veeco-stylus-2000][^veeco-afm-2000]
+  (2000 product pages).[^veeco-stylus-2000][^veeco-afm-2000]
 
 ## At SkyWater
 
