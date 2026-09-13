@@ -44,6 +44,7 @@ i-line-stepper
 duv-krf-stepper
 coat-develop-track
 cd-sem-overlay-metrology
+starting-material
 ```
 
 (machines-reading-evidence)=
@@ -220,7 +221,7 @@ classes as equal options.
 
 | Machine class | What it does in SKY130 | Tools SkyWater lists publicly | Steps |
 |---------------|------------------------|-------------------------------|-------|
-| {ref}`Starting material <category-substrate>`: incoming inspection, marking and sorting | Crystal growth, slicing and polishing are done at the wafer vendor; in the fab the SMAT page lists a surface scanner, a laser marker, a wafer sorter and a batch wet bench for the incoming wafers. | "Scribe: Lumonics Superclean"[^skw-01] | {ref}`SMAT <step-001>` |
+| {ref}`Starting material <machine-starting-material>`: incoming inspection, marking and sorting | Crystal growth, slicing and polishing are done at the wafer vendor; in the fab the SMAT page lists a surface scanner, a laser marker, a wafer sorter and a batch wet bench for the incoming wafers. | "Scribe: Lumonics Superclean"[^skw-01] | {ref}`SMAT <step-001>` |
 | {ref}`Vertical batch furnace <machine-vertical-furnace-oxidation>`: oxidation | Thermal oxides: the pad (base) oxide, the trench liner, the oxides of the ONO sequence, the thick and thin gate oxides and the oxidation after the gate etch. | "Furnaces are all made by Aviza": "wet oxidation to 1150C", "dry oxidation to 1150C"[^skw-01] | {ref}`BOX <step-002>`, {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>` |
 | {ref}`Vertical batch furnace <machine-vertical-furnace-lpcvd>`: LPCVD | Isolation nitride, the ONO nitride, the amorphous-silicon gate film and the spacer nitride; one of two options for the gate nitride and the oxide cap; the batch alternative for the spacer oxide and the local-interconnect nitride cap. | "LPCVD nitride, with NH3 and also DH3", "LPCVD polysilicon (undoped), both amorphous and crystalline", "LPCVD silane oxide", "LPCVD oxide/nitride/oxide", "LPCVD BTBAS low temp nitride" (Aviza)[^skw-01] | {ref}`ISONIT <step-003>`, {ref}`ONO <step-040>`, {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`, {ref}`SPNIT <step-076>`; *alternative:* {ref}`SPOX <step-080>`, {ref}`LINIT <step-104>` |
 | {ref}`Vertical batch furnace <machine-vertical-furnace-anneal>`: anneal and alloy | The hydrogen or forming-gas alloy anneals; the batch alternative for the pre-gate implant anneal and for densifying the fill oxide. | "Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and forming gas alloy" (Aviza)[^skw-01] | {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>`; *alternative:* {ref}`FILOX <step-011>`, {ref}`RTAI <step-034>` |

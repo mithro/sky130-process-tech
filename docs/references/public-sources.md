@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1338
+written page has exactly one entry here; the inventory holds 1355
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -479,6 +479,7 @@ Also used on the PECVD, HDP-CVD, tungsten CVD and PVD cluster tool
 pages.
 Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner, coat/develop track and CD-SEM and overlay metrology pages.
+Also used on the starting-material machine page.
 Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
@@ -642,6 +643,7 @@ Also used on the dielectric and nitride plasma etcher page.
 Also used on the PVD cluster tool page.
 Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
+Also used on the starting-material machine page.
 Tier: cross-check.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
@@ -726,6 +728,7 @@ Surfscan) and an "EV300" review tool (vendor not stated in the posting). Other
 titles on the page (Equipment Maintenance Technician – Metrology,
 Senior Metals Process Technician, Development Engineering Senior
 Technician) name no tools. Tier: cross-check (medium strength).
+Also used on the starting-material machine page.
 
 **JOB-02** — Indeed, Minnesota-wide and Bloomington listing pages,
 retrieved 2026-08-30.
@@ -817,6 +820,7 @@ C9/R9/R95 technology products at Cypress Fab 4 in Bloomington,
 Minnesota" — the clearest public statement that **S8 was a Fab 4
 process** — and the starting-wafer supplier qualification. Tier:
 cross-check.
+Also used on the starting-material machine page.
 
 **CYP-07** — Cypress Semiconductor Corp., Form 10-Q/A for Q1 2003.
 <https://www.sec.gov/Archives/edgar/data/0000791915/000120677403000508/d12840.htm>.
@@ -1227,6 +1231,7 @@ tool class, written around a 200 mm, 0.18 µm-era fab.
 Also used on the medium-current and high-current implanter pages.
 Also used on the vertical-furnace oxidation page.
 Also used on the downstream plasma asher page.
+Also used on the starting-material machine page.
 Tier: high-level.
 
 **TXT-08** — H. Xiao, *Introduction to Semiconductor Manufacturing
@@ -1605,6 +1610,7 @@ category page. Tier: high-level.
 <https://en.wikipedia.org/wiki/KLA_Corporation> The inspection and
 metrology vendor. Used on the lithography and substrate category pages.
 Also used on the CD-SEM and overlay metrology page.
+Also used on the starting-material machine page.
 Tier: high-level.
 
 **WIKI-LATCHUP** — Wikipedia, *Latch-up*.
@@ -1914,6 +1920,7 @@ parameter containing the channel doping. Used on steps 015, 020, 023 and
 <https://en.wikipedia.org/wiki/Wafer_(electronics)> Diameters,
 thickness, notch, orientation and doping ranges. Used on step 001 and
 the substrate category page. Tier: high-level.
+Also used on the starting-material machine page.
 
 **WIKI-WF6** — Wikipedia, *Tungsten hexafluoride*.
 <https://en.wikipedia.org/wiki/Tungsten_hexafluoride> Tungsten
@@ -2604,6 +2611,7 @@ pp. 1887–1892, 1990, DOI 10.1149/1.2086825. History and chemistry of
 the RCA clean.
 Also used on the downstream plasma asher and wet bench and spray
 processor pages.
+Also used on the starting-material machine page.
 Tier: deep dive.
 
 **KERN-HANDBOOK** — W. Kern, *"Overview and Evolution of Silicon Wafer
@@ -3102,6 +3110,7 @@ Cleaning", *Japanese Journal of Applied Physics* **29**(11A), L1947
 identified "crystal-originated singularities" (COPs) revealed by SC-1
 cleaning, the defect class that gate-oxide yield depends on. Used on
 step 001 and the substrate category page. Tier: deep dive.
+Also used on the starting-material machine page.
 
 **STAFFA-1995** — J. Staffa, D. Hwang, B. Luther, J. Ruzyllo and R.
 Grant, "Temperature dependence of the etch rate and selectivity of
@@ -3254,6 +3263,7 @@ Technology*, Academic Press, 1989, ISBN 978-0-12-640045-8.
 <https://openlibrary.org/isbn/9780126400458> The standard monograph on
 CZ growth, dopant and oxygen incorporation, and wafer characterisation.
 Used on step 001 and the substrate category page. Tier: deep dive.
+Also used on the starting-material machine page.
 
 **SMITH-1983** — T. C. Smith, "Wafer Cooling and Photoresist Masking
 Problems in Ion Implantation", in *Ion Implantation: Equipment and
@@ -3366,6 +3376,7 @@ Silicon Wafers*, SEMI Standards store listing.
 The industry standard that defines the diameter, thickness, notch,
 flatness and resistivity classes a fab orders against. Used on step 001
 and the substrate category page. Tier: cross-check.
+Also used on the starting-material machine page.
 
 **SEMI-P1** — SEMI, *SEMI P1 — Specification for Hard Surface Photomask
 Substrates*, SEMI Standards store listing.
@@ -3901,6 +3912,7 @@ Silicon Test Wafers*, SEMI.
 <https://store-us.semi.org/products/m00800-semi-m8-specification-for-polished-monocrystalline-silicon-test-wafers>
 The looser specification for polished test wafers. Used on the substrate
 category page. Tier: cross-check.
+Also used on the starting-material machine page.
 
 #### Oxidation
 
@@ -4957,6 +4969,7 @@ the Four-Point Probe", *Bell System Technical Journal* **37**(3),
 711–718 (1958). <https://doi.org/10.1002/j.1538-7305.1958.tb03883.x>
 Four-point-probe sheet resistivity and its correction factors. Used on
 the test category page. Tier: deep dive.
+Also used on the starting-material machine page.
 
 **STAPPER-1983** — C. H. Stapper, "Modeling of Integrated Circuit Defect
 Sensitivities", *IBM Journal of Research and Development* **27**(6),
@@ -10992,6 +11005,169 @@ Recipe creation and management for overlay metrology in a high-volume
 ASIC fab with many active reticles, using standard targets and an
 off-line recipe database. Used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
+
+#### CMP, clean and starting-material machine pages (first cited there)
+
+The entries below were introduced by the starting-material, single-wafer
+spin processor, CMP polisher and post-CMP cleaner pages, and are grouped
+in that order by the page that first cited them. The vendor pages,
+brochures, standards listings and press releases were fetched on
+2026-09-13, those no longer served from the Wayback Machine capture
+named in the entry; the papers were checked through Crossref and
+OpenAlex on that date, and their annotations rest on their abstracts;
+the patents were read on Google Patents (bibliographic data, abstract
+and the passages quoted).
+
+**KLA-SP1-2021** — KLA Corporation, *Surfscan® SP1TBI Pro / SP1DLS Pro:
+Unpatterned Wafer Defect Inspection Systems*, brochure, rev. 1.0,
+2021-05-25.
+<https://www.kla.com/documents/products/brochures/Surfscan_SP1.pdf>
+The SP1 scanner family as restarted for 150–300 mm wafers: oblique,
+normal and brightfield-DIC illumination, haze maps, sensitivity "down to
+60nm on the SP1 TBI and 50nm on the SP1 DLS on prime bare silicon",
+"Industry standard for wafer qualification – wafer manufacturer OQC and
+wafer fab IQC", "Industry standard for process tool qualification" and
+"Onboard grading capability with up to 4 x 200mm load port sorting
+stations". Used on the starting-material machine page. Tier:
+cross-check (vendor statement).
+
+**KLA-SP1DLS-2002** — KLA-Tencor, *Surfscan SP1 DLS: Unpatterned surface
+inspection*, product page; Wayback Machine capture of 2002-02-08.
+<https://web.archive.org/web/20020208135136/http://www.kla-tencor.com:80/products/defect_control/surfscan-sp1/surfscan.html>
+The SP1 DLS with a backside inspection module, "enhanced sensitivity in
+200 mm/300 mm wafer process qualification", continuity with the SP1 TBI,
+and "tool-qualification and tool monitoring in 0.13 µm design rules and
+below". Used on the starting-material machine page. Tier: cross-check
+(vendor statement).
+
+**THINKLASER-SIGMACLEAN** — Thinklaser USA, *SigmaClean: Debris-Free
+100 - 200 mm Wafer Marking*, product page, accessed 2026-09-13.
+<https://www.thinklaserusa.com/sigmaclean> A WaferMark soft-mark laser
+marker for 100–200 mm wafers: "debris-free soft marking", SEMI T7, M12
+and M13 compliance, marks "within a 25 mm band around the wafer's
+circumference", dot depth "2.4 μm - 5 μm", "240 wph", a 1053 nm
+diode-pumped Nd:YLF laser, and facilities (process vacuum, "Mark Point
+Exhaust", static-charge limit). Used on the starting-material machine
+page. Tier: cross-check (vendor statement).
+
+**CAE-WAFERMARK-SUPERCLEAN** — Capital Asset Exchange (CAE), *GSI
+LUMONICS WaferMark SuperClean Marking Machine*, used-equipment listing
+no. 293743883, accessed 2026-09-13.
+<https://caeonline.com/buy/marking-machines/gsi-lumonics-wafermark-superclean/293743883>
+Listing of a "GSI LUMONICS WaferMark SuperClean", "Laser marking system,
+8"", "1995 vintage"; only the model name, wafer size and vintage are
+used, not the listing's generic description. Used on the
+starting-material machine page. Tier: high-level (marketplace listing).
+
+**WHS-T4** — Wafer Handling Systems, *2-Cassette automation sorter with
+OCR (WHS-T4) 200 mm (8")*, product page, accessed 2026-09-13.
+<https://www.waferhandlingsystems.com/product/2-cassette-automation-sorter-with-ocr-whs-t4-200-mm-8/287/>
+A current 100–200 mm wafer sorter: tilt-stage load ports, linear robot,
+notch/flat aligner, an ID reader "for OCR, barcode, or data matrix
+recognition", sorting by wafer ID in 25-slot cassettes, SECS/GEM lot and
+ID tracking and "up to 650 wafers per hour". Used on the
+starting-material machine page. Tier: cross-check (vendor statement).
+
+**SEMI-M12** — SEMI, *SEMI M12 — Specification for Serial Alphanumeric
+Marking of Silicon Wafers*, SEMI Standards store listing, accessed
+2026-09-13.
+<https://store-us.semi.org/products/m01200-semi-m12-specification-for-serial-alphanumeric-marking-of-the-front-surface-of-wafers>
+Scope of the standard: a coded alphanumeric mark that "links the
+properties of the wafer stored in an appropriate database system to each
+individual wafer", its geometric and spatial limits for flatted and
+notched wafers, and consistency that simplifies OCR equipment; marking
+techniques are not addressed. Used on the starting-material machine
+page. Tier: cross-check (standard).
+
+**SEMI-M13** — SEMI, *SEMI M13 — Specification for Alphanumeric Marking
+of Silicon Wafers*, SEMI Standards store listing, accessed 2026-09-13.
+<https://store-us.semi.org/products/m01300-semi-m13-specification-for-alphanumeric-marking-of-silicon-wafers>
+Scope of the standard: a mark coding "the origin, approximate
+resistivity, dopant species, and crystal growth orientation in addition
+to a wafer identification number" for marking "performed by silicon
+manufacturers"; marking techniques are not addressed. Used on the
+starting-material machine page. Tier: cross-check (standard).
+
+**PAT-SOFTMARK-GSI** — B. Gu and J. S. Ehrmann (GSI Group), *Method and
+system for laser soft marking*, US 7,705,268 B2, filed 2005-11-09,
+granted 2010-04-27. <https://patents.google.com/patent/US7705268B2/en>
+Soft and hard laser marks, the WaferMark as "believed to be the first
+industrial laser marking system on silicon wafer", the "debris free"
+Supersoftmark® of the Wafermark Sigma Clean and its narrow energy
+window, and soft-mark depth set by pulse width. Used on the
+starting-material machine page. Tier: deep dive.
+
+**PAT-LASERMARK-WACKER** — F. Kuhn-Kuhnenfeld, J. Kramler and H.-A.
+Gerber (Wacker Siltronic), *Method of making reference surface markings
+on semiconductor wafers by laser beam*, US 4,522,656 A, filed
+1984-04-26, granted 1985-06-11.
+<https://patents.google.com/patent/US4522656A/en> "Contrast rich,
+permanent and slag-free" marks made by irradiating 1.5 to 6.5 times the
+mark area and melting the silicon only at the centre. Used on the
+starting-material machine page. Tier: deep dive.
+
+**PAT-SORTER-INFINEON** — D. Caspary and D. Kaulfuss (Infineon
+Technologies), *Method and device for sorting wafers*, US 6,747,230 B2,
+filed 2002-09-03, granted 2004-06-08.
+<https://patents.google.com/patent/US6747230B2/en> Sorting wafers from
+random slots into sequence by reading each wafer's information carrier.
+Used on the starting-material machine page. Tier: deep dive.
+
+**LIU-1993** — B. Y. H. Liu, S.-K. Chae and G.-N. Bae, "Sizing Accuracy,
+Counting Efficiency, Lower Detection Limit and Repeatability of a Wafer
+Surface Scanner for Ideal and Real‐World Particles", *Journal of The
+Electrochemical Society* **140**(5), 1403–1409 (1993).
+<https://doi.org/10.1149/1.2221569> A Tencor Surfscan 4000 evaluated
+with PSL spheres and real Si and SiO₂ particles, with scattering
+calculations; Si particles detected well below the PSL-based limit. Used
+on the starting-material machine page. Tier: deep dive.
+
+**HUFF-1997** — H. R. Huff et al., "Measurement of Silicon Particles by
+Laser Surface Scanning and Angle‐Resolved Light Scattering", *Journal of
+The Electrochemical Society* **144**(1), 243–250 (1997).
+<https://doi.org/10.1149/1.1837392> A SEMATECH task force on false counts
+from haze, the mis-sizing of silicon particles by PSL-calibrated
+scanners, and angle-resolved scattering. Used on the starting-material
+machine page. Tier: deep dive.
+
+**SCHEER-1996** — B. W. Scheer, "Development of a physical haze and
+microroughness standard", *Proc. SPIE* **2862**, 78–95 (1996).
+<https://doi.org/10.1117/12.256193> Haze masking particle detection, the
+instrument dependence of roughness, and a lithographically etched haze
+standard on 150 mm wafers. Used on the starting-material machine page.
+Tier: deep dive.
+
+**ISHII-1996** — H. Ishii, S. Shiratake, K. Oka, K. Motonami, T. Koyama
+and J. Izumitani, "Direct Observation of Crystal-Originated Particles on
+Czochralski-Grown Silicon Wafer Surface and Effect on Gate Oxide
+Reliability", *Japanese Journal of Applied Physics* **35**(11A), L1385
+(1996). <https://doi.org/10.1143/JJAP.35.L1385> Single and pair COP pits
+and their effect on the TDDB of about 10 nm gate oxides. Used on the
+starting-material machine page. Tier: deep dive.
+
+**MIYAZAKI-1997** — M. Miyazaki, S. Miyazaki, T. Kitamura, Y. Yanase, T.
+Ochiai and H. Tsuya, "Influence of Crystal-Originated 'Particle'
+Microstructure on Silicon Wafers on Gate Oxide Integrity", *Japanese
+Journal of Applied Physics* **36**(10R), 6187 (1997).
+<https://doi.org/10.1143/JJAP.36.6187> COPs as the main cause of GOI
+failure, their shape after SC-1, anneal and repolish, and the octahedral
+void behind them. Used on the starting-material machine page. Tier: deep
+dive.
+
+**CHRIST-1983** — M. H. Christ and B. S. Maurantonio, "Influence of Laser
+Marking on Silicon Wafer Properties", in *Silicon Processing*, ASTM STP
+804, ASTM International, 1983, pp. 62–82.
+<https://doi.org/10.1520/STP36160S> Dislocations and slip near unetched
+laser marks after oxidation, slag around dot-matrix marks, and its effect
+on epitaxial growth. Used on the starting-material machine page. Tier:
+deep dive.
+
+**KHOONG-2010** — L. E. Khoong, Y. C. Lam, H. Y. Zheng and X. Chen,
+"Laser soft marking on silicon wafer", *Journal of Applied Physics*
+**107**(5), 053107 (2010). <https://doi.org/10.1063/1.3319611> Soft marks
+invisible except under condensation, explained by a thin, poorly
+conducting polycrystalline surface layer. Used on the starting-material
+machine page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
