@@ -174,7 +174,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Resources required
 
-* **i-line positive photoresist** (DNQ/novolac); SkyWater's S-1
+* **i-line positive photoresist** (DNQ/novolac); SkyWater's 2021 S-1
   names Dow, JSR and Tokyo Ohka Kogyo as photoresist
   suppliers.[^sec-01]
 * **Organic BARC** or dyed resist, **2.38 % (0.26 N) TMAH developer** (the
