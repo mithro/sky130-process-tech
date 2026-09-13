@@ -62,7 +62,13 @@ Four parts of the PDK documentation describe masks.
   `VIMCDSP`, …).[^pdk-03] The table has no unit column; this page
   quotes the numbers as printed, which the step pages read as µm (the
   periphery rules give the same 0.150 µm and 0.170 µm for via 1 as
-  `VIMCD` and `VIMCDSP`[^pdk-periph]). The table does not give a resist
+  `VIMCD` and `VIMCDSP`[^pdk-periph]). The pad documentation of the
+  SKY130 {term}`test tile` uses several of the values: gate-oxide
+  capacitors drawn at "FOM w/s = 0.14/0.27" (`FOMCD` / `FOMCDSP`),
+  N-well isolation structures that include "Nwell to Nwell Space =
+  1.27um" (`NWMCDSP`), and metal-5 test lines 1.6 µm wide labelled
+  "S8PIR/PF" (the "S8PF\*/S8PIR\*" row of `MM5CD` /
+  `MM5CDSP`).[^raw-data-testtile-pads] The table does not give a resist
   tone for any mask.
 * **The design rules.** Each drawn layer's rule set in the periphery
   rules opens with a "Function" line, and a few notes name masks
@@ -237,15 +243,16 @@ MPW-6 ({ref}`masks-mpw-runs`).[^steps-sheet]
 |------|-------------|--------------------------------|-----------------------------|----------------|
 | {ref}`PWBM <step-026>` | P-Well Block Mask, PWBM — *blank* | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 | The periphery rules have a `pwbm` rule set, "Define p-well block"; Table F2b has a PWBM column, marked `C` in, among others, the UHV 5/20 V drain-extended device rows. The step page treats the blank field as a documentation inconsistency. |
 | {ref}`PWDEM <step-030>` | P-Well Drain Extended, PWDEM — *blank* | `pwde` 124:20 | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 | The periphery rules have a `pwdem` rule set; Table F2b has a PWDEM column, marked `C` in the "UHV pmos 5/20V DE" row. The step page treats the blank as a documentation inconsistency. |
-| {ref}`CAPM <step-137>` | Capacitor MiM, CAPM — *blank* | `capm` 89:44 | `CAPMCD` 2 / `CAPMCDSP` 0.84 | The periphery rules have a `capm` rule set, "Defines MIM capacitor", with values shown as "N/A"; Table F2b has a CAPM column, marked `C` in the "MiM" row. |
-| {ref}`RRPM <step-052>` | *not listed* | `rpm` 86:20 *(inference)* | none listed | No separate rule set or Table F2b column. |
-| {ref}`URPM <step-055>` | *not listed* | `urpm` 79:20 *(inference)* | none listed | No separate rule set or Table F2b column. |
-| {ref}`CAP2M <step-152>` | *not listed* | `cap2m` 97:44 *(inference)* | none listed | No `cap2m` rule set or Table F2b column; the MiM device page lists "CAP2M over Metal-4" beside "CAPM over Metal-3" and calls the constructions "identical".[^pdk-07] |
+| {ref}`CAPM <step-137>` | Capacitor MiM, CAPM — *blank* | `capm` 89:44 | `CAPMCD` 2 / `CAPMCDSP` 0.84 | The periphery rules have a `capm` rule set, "Defines MIM capacitor", with values shown as "N/A"; Table F2b has a CAPM column, marked `C` in the "MiM" row. The test tile's pad documentation describes its MiM capacitors as "CAPM on M3".[^raw-data-testtile-pads] |
+| {ref}`RRPM <step-052>` | *not listed* | `rpm` 86:20 *(inference)* | none listed | No separate rule set or Table F2b column. The test tile's pad documentation names the mask: its shortest 0.33 µm- and 0.69 µm-wide 300 Ω/sq poly resistors are marked "(will not work for any routes using RRPM mask)".[^raw-data-testtile-pads] |
+| {ref}`URPM <step-055>` | *not listed* | `urpm` 79:20 *(inference)* | none listed | No separate rule set or Table F2b column. The test tile's pad documentation names the mask: the 2 kΩ/sq equivalents of those resistors are marked "(may not work for routes using URPM mask)".[^raw-data-testtile-pads] |
+| {ref}`CAP2M <step-152>` | *not listed* | `cap2m` 97:44 *(inference)* | none listed | No `cap2m` rule set or Table F2b column; the MiM device page lists "CAP2M over Metal-4" beside "CAPM over Metal-3" and calls the constructions "identical";[^pdk-07] the test tile's pad documentation has "CAP2M over M4".[^raw-data-testtile-pads] |
 
 The sources for both tables are `masks.csv`,[^pdk-05] `gds_layers.csv`
 and Table F2b,[^pdk-06] the minimum-CD table,[^pdk-03] the periphery
-rules,[^pdk-periph] the WLCSP rules[^pdk-wlcsp] and the *Device
-Details* page.[^pdk-07]
+rules,[^pdk-periph] the WLCSP rules,[^pdk-wlcsp] the *Device
+Details* page[^pdk-07] and the test tile's pad
+documentation.[^raw-data-testtile-pads]
 
 ### Unmarked `masks.csv` entries with no mask step
 
@@ -667,6 +674,9 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   rule sets.[^pdk-wlcsp]
 * SkyWater PDK, *Device Details* — the two MiM capacitor constructions,
   `CAPM` and `CAP2M`.[^pdk-07]
+* SkyWater PDK Authors, test-tile pad documentation — the `RRPM`,
+  `URPM`, `CAPM` and `CAP2M` names on test structures and the
+  minimum-CD values the structures use.[^raw-data-testtile-pads]
 * *S8 / SKY130 Process Steps* sheet, tabs "Run Mask IDs", "Masks",
   "Sheet4" and "Random Mask Case Label Info" — the plates recorded for
   each mask on MPW-1 to MPW-8, the mask-step list, the via mask types
@@ -779,7 +789,8 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   {ref}`VIM2 <step-129>` and {ref}`MM3 <step-139>` pages give
   readings.
 * Table 2 of *Criteria & Assumptions* has no unit column;[^pdk-03] the
-  µm reading rests on agreement with the periphery rules.
+  µm reading rests on agreement with the periphery rules and the test
+  tile's pad documentation.[^pdk-periph][^raw-data-testtile-pads]
 * No PDK document gives the resist tone, reticle type (binary or
   phase-shift) or exposure tool for any mask. The process-steps sheet
   gives a coded reticle type for three masks only, which we read as
@@ -849,6 +860,12 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
     drawing.
     <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/cap_mim/cross-section-cap_mim.svg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tabs "Run Mask IDs" (the mask table set against MPW-1 to MPW-8, with
     an "Exists" column per run), "Masks" (mask steps with step numbers),
