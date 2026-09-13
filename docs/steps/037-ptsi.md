@@ -148,9 +148,10 @@ memory transistor (SKY130's values are not public):
   0-60 deg tilt".[^skw-01] The species, dose range and tilt range cover
   a boron punch-through stopper. Strength: **strong** for the tool;
   **inference** for its assignment to `PTSI`.
-* **Axcelis GSD high-current/high-energy implanter** ("B11, BF2, P, As, 10-3000kev, 1e11 to
-  5e15")[^skw-01] — could also run it. Strength: strong for existence;
-  weak for assignment.
+* **Axcelis GSD high-current/high-energy implanter** ("B11, BF2, P,
+  As, 10-3000kev, 1e11 to 5e15")[^skw-01] (the entry whose dose range
+  starts below the Hi dose entry's 5e12) — could also run it. Strength:
+  strong for existence; weak for assignment.
 * Indium is *not* among the species SkyWater lists for any
   implanter,[^skw-01] so if SKY130 used indium here it would be on a
   configuration not described publicly (see *Open questions*).
