@@ -234,8 +234,9 @@ at 0.3 µm, are left open between this class and the KrF class.
 
 ## Consumables and facilities
 
-The lithography consumables are listed in the
-{ref}`materials index <materials-index>`; what is specific to an i-line
+The lithography consumables are described on the
+{ref}`lithography materials <material-lithography-materials>` page and
+listed in the {ref}`materials index <materials-index>`; what is specific to an i-line
 exposure tool is summarised here. None of the SkyWater sources describes
 the fab's lamp supply, reticle handling or tool environment.
 
@@ -342,6 +343,8 @@ implants.[^pdk-03]
   and the step assignments.
 * {ref}`materials-index` — resists, developer and exposure-tool
   consumables.
+* {ref}`material-lithography-materials` — resists, coatings, developer,
+  solvents, reticles and light-source consumables.
 * {ref}`category-implant` and {ref}`category-strip` — the implants these
   masks block and the resist strip that follows.
 

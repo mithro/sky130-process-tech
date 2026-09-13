@@ -244,8 +244,9 @@ nm.[^steps-sheet] The sheet names no exposure tool.
 
 ## Consumables and facilities
 
-The lithography consumables are listed in the
-{ref}`materials index <materials-index>`; what is specific to a KrF
+The lithography consumables are described on the
+{ref}`lithography materials <material-lithography-materials>` page and
+listed in the {ref}`materials index <materials-index>`; what is specific to a KrF
 exposure tool is summarised here. None of the SkyWater sources describes
 the fab's laser gases, laser service or tool environment.
 
@@ -331,6 +332,8 @@ settings and resists per layer are not public.
   and the step assignments.
 * {ref}`materials-index` — resists, anti-reflective coatings, developer
   and laser consumables.
+* {ref}`material-lithography-materials` — resists, coatings, developer,
+  solvents, reticles and light-source consumables.
 
 ## References
 
