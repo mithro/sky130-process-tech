@@ -153,7 +153,7 @@ recipe is not public):
 * **Rotary multi-platen CMP polisher**, 200 mm: Applied Materials
   Mirra,[^pat-cmp-mirra][^chiphistory-mirra] Ebara EPO/F-REX,[^ebara-frex]
   SpeedFam-IPEC, Strasbaugh ({ref}`category-cmp`).
-* **Post-CMP brush scrubber** (OnTrak/Lam Synergy, SEZ/Lam DaVinci).
+* **Post-CMP brush scrubber** (OnTrak/Lam Synergy, SEZ/Lam Da Vinci).
 * **Thin-film thickness metrology** (reflectometer, ellipsometer),
   **patterned-wafer inspection**.
 
@@ -163,7 +163,7 @@ recipe is not public):
   with "oxide" among its applications.[^skw-01] Strength: **strong**
   (SkyWater statement); assignment to this step follows from the
   film.
-* **Post-CMP clean — SEZ223 / DaVinci** single-wafer tools;[^skw-01]
+* **Post-CMP clean — SEZ 223 / Da Vinci** single-wafer tools;[^skw-01]
   a "SEZ etcher tool" on the maintenance page.[^skw-07] A brush
   scrubber is not named (open question).
 * **Defect inspection — KLA AIT / SP1.**[^job-01] Strength: medium.
@@ -198,7 +198,7 @@ recipe is not public):
 ### Cross-check
 
 * SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP – oxide";
-  SEZ223 / DaVinci.[^skw-01]
+  SEZ 223 / Da Vinci.[^skw-01]
 * SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
   "a SEZ etcher tool".[^skw-07]
 * Indeed, SkyWater *Defect Technician 2* posting — inspection
@@ -267,7 +267,7 @@ recipe is not public):
   table[^pdk-03] corresponds to the polish's planarisation length is
   an inference.
 * The post-CMP cleaning tool is not identified beyond the
-  SEZ/DaVinci single-wafer tools.[^skw-01]
+  SEZ/Da Vinci single-wafer tools.[^skw-01]
 
 <!-- footnotes -->
 
