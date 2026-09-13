@@ -220,6 +220,8 @@ described on the {ref}`post-CMP cleaner page
 
 ## Consumables and facilities
 
+The process gases are described on the
+{ref}`process gases <material-process-gases>` page.
 The wet chemicals are described on the
 {ref}`wet chemicals <material-wet-chemicals>` page and listed in the
 {ref}`materials index <materials-index>`; what is specific to a spin processor is summarised
@@ -305,6 +307,9 @@ public.
   quality.
 * {ref}`material-hardware-consumables` — chamber parts and waste
   treatment, including BFR's chuck and nozzle consumables.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
 
 ## References
 

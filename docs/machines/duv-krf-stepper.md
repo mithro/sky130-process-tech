@@ -244,6 +244,8 @@ nm.[^steps-sheet] The sheet names no exposure tool.
 
 ## Consumables and facilities
 
+The process gases are described on the
+{ref}`process gases <material-process-gases>` page.
 The lithography consumables are described on the
 {ref}`lithography materials <material-lithography-materials>` page and
 listed in the {ref}`materials index <materials-index>`; what is specific to a KrF
@@ -334,6 +336,9 @@ settings and resists per layer are not public.
   and laser consumables.
 * {ref}`material-lithography-materials` — resists, coatings, developer,
   solvents, reticles and light-source consumables.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
 
 ## References
 
