@@ -138,16 +138,16 @@ practice).[^txt-02]
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the
+* **Oxygen, nitrogen, {term}`forming gas` ({ref}`H₂/N₂ <material-anneal-ambients>`)** for the
   ash;[^skw-01] **CF₄**, listed on the Iridia and Mattson
   ashers,[^skw-01] attacks the screen oxide and would, we infer, be
   omitted here (category page).
 * **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** ({ref}`wet chemicals <material-wet-chemicals>`) for
   SPM;[^wiki-piranha] **ammonium hydroxide** for SC-1; **hydrochloric
   acid** for SC-2.[^wiki-rca]
-* **Ultrapure DI water**, **isopropanol** for drying, **nitrogen**.
+* **{ref}`Ultrapure DI water <material-ultrapure-water>`**, **isopropanol** for drying, **nitrogen**.
 * Arsenic-bearing resist ash and spent acid go to the fab's hazardous
-  exhaust and waste-acid systems (general practice).
+  exhaust and {ref}`waste-acid systems <material-hardware-consumables>` (general practice).
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
   S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 

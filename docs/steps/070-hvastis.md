@@ -112,14 +112,14 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the
+* **Oxygen, nitrogen, {term}`forming gas` ({ref}`H₂/N₂ <material-anneal-ambients>`)** for the
   ash;[^skw-01] **CF₄**, listed on the Iridia and Mattson
   ashers,[^skw-01] attacks the screen oxide and would, we infer, be
   omitted here (category page).
 * **Sulphuric acid and hydrogen peroxide** ({ref}`wet chemicals <material-wet-chemicals>`) for SPM;[^wiki-piranha]
   **ammonium hydroxide** for SC-1; **hydrochloric acid** for an
   optional SC-2.[^wiki-rca]
-* **Ultrapure DI water**, **isopropanol**, **nitrogen**.
+* **{ref}`Ultrapure DI water <material-ultrapure-water>`**, **isopropanol**, **nitrogen**.
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
   S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 

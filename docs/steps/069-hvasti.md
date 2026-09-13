@@ -149,7 +149,7 @@ fab (SKY130's energy and dose are not public):
   **nitrogen** for venting.
 * **Helium** for platen cooling; **liquid nitrogen** or cryopump
   regeneration.
-* **Monitor wafers** for thermal-wave and tilt control.
+* **{ref}`Monitor wafers <material-substrates>`** for thermal-wave and tilt control.
 * Gas suppliers named in SkyWater's filings: Air Products and Praxair
   (2021 S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 

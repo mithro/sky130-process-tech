@@ -154,8 +154,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
   0.3 µm;[^pdk-03] SkyWater's 2021 S-1 names The Dow Chemical Company, JSR
   Corporation and Tokyo Ohka Kogyo America as photoresist
   suppliers.[^sec-01]
-* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, DI
-  water, nitrogen.
+* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, {ref}`DI water <material-ultrapure-water>`, nitrogen.
 * **The HVNTM reticle** — generated from the drawn `hvntm` layer OR-ed
   with its computed layer.[^pdk-periph][^pdk-06]
 
