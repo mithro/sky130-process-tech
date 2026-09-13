@@ -248,7 +248,7 @@ poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
 
 ## Machines typically used
 
-* **Parametric tester**: HP/Agilent 4062UX,[^brltest-4062]
+* **{ref}`Parametric tester <machine-parametric-tester>`**: HP/Agilent 4062UX,[^brltest-4062]
   Keithley S600[^keithley-s600] ({ref}`category-test`).
 * **Automatic wafer prober** with a hot/cold chuck (Electroglas, TEL,
   Tokyo Seimitsu[^wiki-ate]).

@@ -143,8 +143,7 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 * **{ref}`PECVD dielectric system <machine-pecvd>`**, 200 mm: Novellus Concept One/Two or
   Sequel,[^novellus-history] Applied Materials Producer or Centura
   DxZ[^amat-10k] ({ref}`category-deposition`).
-* **Ellipsometer / reflectometer**, **stress gauge**, **particle
-  inspection**.
+* **{ref}`Ellipsometer <machine-film-thickness-metrology>` / reflectometer**, **stress gauge**, **{ref}`particle inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 

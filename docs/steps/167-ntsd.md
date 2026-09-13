@@ -146,7 +146,7 @@ public):
 * **{ref}`PECVD dielectric system <machine-pecvd>`**, 200 mm: Novellus Concept One/Two or
   Sequel,[^novellus-history] Applied Materials Producer or Centura
   DxZ[^amat-10k] ({ref}`category-deposition`).
-* **Ellipsometer**, **stress gauge**, **FTIR**, **particle inspection**.
+* **{ref}`Ellipsometer <machine-film-thickness-metrology>`**, **stress gauge**, **FTIR**, **{ref}`particle inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 
