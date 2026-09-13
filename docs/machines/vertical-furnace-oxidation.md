@@ -320,7 +320,7 @@ and thicknesses are not public.
   module without naming a tool;[^skw-01] the furnace lines list no N₂O
   or NO, the ambients of an oxide grown and nitrided in one
   step.[^lai-1998] The possible routes are on the
-  plasma nitridation page.
+  {ref}`plasma nitridation page <machine-plasma-nitridation-chamber>`.
 * **Post-oxidation anneal.** The {ref}`GOX100 <step-043>` and
   {ref}`IOX45 <step-063>` pages end their oxidations with an inert anneal
   in the same tube; SkyWater's furnace list has "Ar anneal to 1150C" and
@@ -336,7 +336,7 @@ and thicknesses are not public.
   used for deposition, anneals and the alloy.
 * {ref}`machine-rapid-thermal-processor` — the single-wafer alternative
   and the Heatpulse entry.
-* Plasma nitridation chamber — nitridation of the thin
+* {ref}`machine-plasma-nitridation-chamber` — nitridation of the thin
   gate oxide.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
