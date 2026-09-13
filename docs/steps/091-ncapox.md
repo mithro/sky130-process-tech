@@ -129,7 +129,8 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
   DxZ (TEOS and silane oxides), Novellus Concept One/Two and
   Sequel;[^novellus-history] the Trikon Delta 201, a "single-chamber
   production system for producing films, including silicon dioxide or
-  silicon nitride" from Electrotech;[^trikon-10k-1996] Trikon "later merged
+  silicon nitride" from Electrotech (the 10-K does not say whether it is
+  plasma-enhanced);[^trikon-10k-1996] Trikon "later merged
   with Aviza Technology Inc in 2005".[^semitoday-spts-2009]
 * **{ref}`Ellipsometer <machine-film-thickness-metrology>`**, **stress gauge**, **{ref}`unpatterned defect inspection <machine-defect-inspection>`**.
 
