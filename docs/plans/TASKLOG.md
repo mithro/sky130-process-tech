@@ -42,7 +42,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 164–171: passivation, pad, alloy, test — reviewed and merged 2026-09-13 (25 inventory entries added as §8.16; all 171 step pages written)
 - [x] Cite the public *S8 / SKY130 Process Steps* sheet (STEPS-SHEET) on the landing page, steps index and every step page — 2026-09-13
 - [ ] Use the sheet's mask tabs (masks made per MPW run, mask types, plate labels) on the mask index and lithography pages
-- [ ] Tool-name and grade consistency sweep across step pages (inconsistencies listed on the machine index: SkyWater spellings such as "Gasonic PEP", "Aspen2", "ProZ Lithius", "SEZ223, Davinci", "Ag Heatpulse"; differing etcher, cap-oxide, CMP and implanter grades for analogous steps)
+- [ ] Tool-name and grade consistency sweep across step pages (inconsistencies listed on the machine index: SkyWater spellings such as "Gasonic PEP", "Aspen2", "ProZ Lithius", "SEZ223, Davinci", "Ag Heatpulse"; differing etcher, cap-oxide, CMP and implanter grades for analogous steps; also: CYP-22 "three additional mask layers" applied to S8 on TUNM/ONOM though the release concerns S65; ALLY1/ALLY "only hydrogen-bearing anneal" vs Heatpulse NH₃; anneal category page's ALLY1 placement; glossary BEOL start vs phase table; materials-index inconsistencies)
 
 ## Phase 2b — Citation conversion (added 2026-08-30)
 
@@ -63,7 +63,8 @@ deep-dive entries per step page and twelve per category page
 - [~] Materials pages + material ↔ step index (index page on branch `topic/materials-index`)
 - [~] Mask pages + mask ↔ step ↔ GDS index — index page reviewed and merged 2026-09-13; per-mask pages not started
 - [x] sky130B ReRAM module page (`docs/overview/sky130b-reram.md`) — reviewed and merged 2026-09-13 (31 inventory entries in §8.17 and RERAM-INDEX)
-- [~] Process overview page (`docs/overview/index.md`, branch `topic/overview`)
+- [r] Process overview page (`docs/overview/index.md`, branch `topic/overview`, written 2026-09-13, under review)
+- [ ] References landing page (`docs/references/index.md`, still a stub)
 - [x] Glossary: 144 terms, linked on first use across all written pages; inventory keyed for every label (748 entries) — merged 2026-09-12
 - [x] Glossary and inventory top-up for steps 076–117 (204 terms; 951 inventory entries) — merged 2026-09-12
 - [ ] References / bibliography
