@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1381
+written page has exactly one entry here; the inventory holds 1391
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -482,6 +482,7 @@ scanner, coat/develop track and CD-SEM and overlay metrology pages.
 Also used on the starting-material machine page.
 Also used on the single-wafer spin processor machine page.
 Also used on the CMP polisher machine page.
+Also used on the post-CMP cleaner machine page.
 Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
@@ -1749,6 +1750,7 @@ high-level.
 temperatures. Used on steps 001, 002, 006, 009, 010, 013, 016, 021, 025,
 029, 033, 039 and 046 and the strip category page.
 Also used on the wet bench and spray processor page.
+Also used on the post-CMP cleaner machine page.
 Tier: high-level.
 
 **WIKI-RESIST** — Wikipedia, *Photoresist*.
@@ -3299,6 +3301,7 @@ Post-CMP Cleaning", in *Developments in Surface Contamination and
 Cleaning, Volume 9*, Elsevier, 2017, pp. 109–133.
 <https://doi.org/10.1016/B978-0-323-43157-6.00004-5> Brush scrubbing for
 post-CMP cleaning. Used on step 012. Tier: deep dive.
+Also used on the post-CMP cleaner machine page.
 
 **TROUTMAN-1986** — R. R. Troutman, *Latchup in CMOS Technology: The
 Problem and Its Cure*, Kluwer Academic Publishers, 1986, ISBN
@@ -5808,6 +5811,7 @@ Used-equipment listing for a 200 mm SEZ SP223 spin processor that names
 backside film removal among its applications (weak evidence). Used on
 step 060. Tier: cross-check.
 Also used on the single-wafer spin processor machine page.
+Also used on the post-CMP cleaner machine page.
 
 **SEZ-223-PR** — SEZ Group, *SEZ Doubles Wafer Processing Capabilities
 With New Dual Chamber Spin-Processing System* (press release,
@@ -7145,6 +7149,7 @@ Hydroxide (TMAH) as a Post Tungsten CMP Cleaning Mixture", *Solid State
 Phenomena* **65–66**, 105–108 (1998).
 <https://doi.org/10.4028/www.scientific.net/SSP.65-66.105> TMAH as a
 post-tungsten-CMP clean. Used on step 111. Tier: deep dive.
+Also used on the post-CMP cleaner machine page.
 
 **KNEER-1997** — E. A. Kneer, C. Raghunath, V. Mathew, S. Raghavan and
 J. S. Jeon, "Electrochemical Measurements during the Chemical Mechanical
@@ -7399,6 +7404,7 @@ Phenomena* **65–66**, 173–176 (1998).
 <https://doi.org/10.4028/www.scientific.net/SSP.65-66.173> Oxide-CMP
 defects versus post-CMP cleaning. Used on steps 116 and 117. Tier: deep
 dive.
+Also used on the post-CMP cleaner machine page.
 
 **DOMENICUCCI-1996** — A. G. Domenicucci, R. G. Filippi, K. W. Choi,
 C.-K. Hu and K. P. Rodbell, "Effect of copper on the microstructure and
@@ -7510,6 +7516,7 @@ of Various Poly(vinyl alcohol) Brush Roller Designs for Post-Interlevel
 Dielectric CMP Scrubbing Applications", *Electrochemical and Solid-State
 Letters* **12**(3), H84 (2009). <https://doi.org/10.1149/1.3058994>
 Brush design for post-ILD-CMP scrubbing. Used on steps 116 and 117.
+Also used on the post-CMP cleaner machine page.
 Tier: deep dive.
 
 **ROCKE-1988** — M. Rocke and M. Schneegans, "Titanium nitride for
@@ -11221,6 +11228,7 @@ etch and clean on 200 mm and 300 mm wafers, "Originally developed to
 address 90-nm technology nodes", with double-sided processing and
 separated rinse and chemical chambers. Used on the single-wafer spin
 processor machine page. Tier: cross-check (vendor statement).
+Also used on the post-CMP cleaner machine page.
 
 **SEZ-LAM-2007** — SEZ Group, *SEZ Holding Welcomes Planned Acquisition
 by Lam Research*, press release, 2007-12-11; Wayback Machine capture of
@@ -11254,6 +11262,7 @@ remove; backside wet etching on a chemical spin etcher that "requires no
 protection for the device surface"; slurry and metal removal examples.
 Used on the single-wafer spin processor machine page. Tier: high-level
 (vendor application article).
+Also used on the post-CMP cleaner machine page.
 
 **SCREEN-SP2100** — SCREEN Semiconductor Solutions, *SCREEN Launches New
 Spin Processor for Single Wafer Cleaning*, news release, 2020-06-25.
@@ -11344,6 +11353,7 @@ and spin rinse dryer, vertical edge-gripped wafers, on-board chemical
 mixing, HF in the brush modules and heated RCA chemistries in the
 megasonic module. Used on the CMP polisher machine page. Tier:
 cross-check (vendor statement).
+Also used on the post-CMP cleaner machine page.
 
 **IPEC-472-1997** — IPEC-Planar, *AVANTI 472*, product page; Wayback
 Machine capture of 1997-06-26.
@@ -11361,6 +11371,7 @@ Feature list of the AvantGaard 676: four polishing modules, integrated
 post-CMP spray-box cleaning, through-the-pad slurry delivery and endpoint
 capability. Used on the CMP polisher machine page. Tier: cross-check
 (vendor statement).
+Also used on the post-CMP cleaner machine page.
 
 **SPEEDFAM-IPEC-2001** — SpeedFam-IPEC CMP Group, *Products* (Momentum,
 Auriga, AvantGaard), product page; Wayback Machine capture of 2001-04-12.
@@ -11371,6 +11382,7 @@ integrated cleaner) for 0.18 µm and 0.13 µm; the Auriga family with
 optical endpoint, dual-station box cleaner, PVA brush boxes, megasonic
 option and spin rinse dryer; the AvantGaard 776. Used on the CMP polisher
 machine page. Tier: cross-check (vendor statement).
+Also used on the post-CMP cleaner machine page.
 
 **STRASBAUGH-6DS-1999** — Strasbaugh, *The 6DS-SP Series Planarizers*,
 product page; Wayback Machine capture of 1999-02-10.
@@ -11379,6 +11391,7 @@ A dual-spindle production polisher processing two wafers at once, with
 polish force to 500 lb, integrated cleaning options and optional dual
 tables, post-CMP scrubber and on-line thickness measurement. Used on the
 CMP polisher machine page. Tier: cross-check (vendor statement).
+Also used on the post-CMP cleaner machine page.
 
 **STRASBAUGH-6EC-1999** — Strasbaugh, *The Model 6EC Laboratory
 Planarizer*, product page; Wayback Machine capture of 1999-02-10.
@@ -11397,6 +11410,7 @@ one platform to avoid slurry drying on the wafer, integrated with six
 polisher suppliers including Lam's Teres; chemical mechanical cleaning
 technology; more than 750 OnTrak cleaners installed. Used on the CMP
 polisher machine page. Tier: cross-check (vendor statement).
+Also used on the post-CMP cleaner machine page.
 
 **LAM-CLEAN-1000-2001** — Lam Research, *Lam Research Ships 1,000th
 Post-CMP Clean System To Philips*, press release, 2001-02-14.
@@ -11406,6 +11420,7 @@ direct-polish STI; all Synergy Integra systems use double-sided scrubbing
 and chemical mechanical cleaning, with an open architecture for other
 polishers. Used on the CMP polisher machine page. Tier: cross-check
 (vendor statement).
+Also used on the post-CMP cleaner machine page.
 
 **PAT-CARRIER-AMAT** — S. M. Zuniga, M. Birang, H. Chen and S.-H. Ko
 (Applied Materials), *Carrier head with a flexible membrane for a
@@ -11439,7 +11454,91 @@ plasma clean process in a high volume DRAM manufacturing environment",
 Workshop*, pp. 1–4. <https://doi.org/10.1109/ASMC.2004.1309523>
 Tungsten-filled microscratches from tungsten CMP shorting lines, removed
 by a plasma etch after the polish. Used on the CMP polisher machine page.
+Also used on the post-CMP cleaner machine page.
 Tier: deep dive.
+
+**SCREEN-SS3200** — SCREEN Semiconductor Solutions, *Launch of 200mm
+Wafer Cleaning System — New SS-3200 for 200mm expands SCREEN SPE's
+world-leading spin scrubber lineup*, news release, 2024-11-06.
+<https://www.screen.co.jp/spe/en/information/spe241106> A 200 mm spin
+scrubber, "Method in which wafers are physically cleaned using soft
+brushes and DI water", with throughput up to 500 wafers per hour and
+lower DI water use per wafer. Used on the post-CMP cleaner machine page.
+Tier: cross-check (vendor statement).
+
+**PAT-SCRUBBER-ONTRAK** — R. A. Lutz (OnTrak Systems), *Double-sided
+wafer scrubber with a wet submersing silicon wafer indexer*, US 5,442,828
+A, filed 1992-11-30, granted 1995-08-22.
+<https://patents.google.com/patent/US5442828A/en> The DSS-200 and DSS-150
+double-sided scrubbers for bare-silicon and post-CMP cleaning; why slurry
+must not dry; brush stations with hollow-core, water-flushed nylon or PVA
+brushes; a spin-dry station; a wet indexer that keeps wafers submerged.
+Used on the post-CMP cleaner machine page. Tier: deep dive.
+
+**PAT-MEGASONIC-RCA** — A. Mayer and S. Shwartzman (RCA), *Megasonic
+cleaning system*, US 3,893,869 A, granted 1975-07-08.
+<https://patents.google.com/patent/US3893869A/en> A cleaning, rinsing and
+drying system with a transducer at about 0.2–5 MHz propagating sound
+parallel to the wafer surfaces. Used on the post-CMP cleaner machine
+page. Tier: deep dive.
+
+**BUSNAINA-1995** — A. A. Busnaina, I. I. Kashkoush and G. W. Gale, "An
+Experimental Study of Megasonic Cleaning of Silicon Wafers", *Journal of
+The Electrochemical Society* **142**(8), 2812–2817 (1995).
+<https://doi.org/10.1149/1.2050096> Megasonic removal of PSL, SiO₂ and
+Si₃N₄ particles at 862 kHz in DI water and SC-1 against time, particle
+size and power. Used on the post-CMP cleaner machine page. Tier: deep
+dive.
+
+**GALE-1999** — G. W. Gale and A. A. Busnaina, "Roles of cavitation and
+acoustic streaming in megasonic cleaning", *Particulate Science and
+Technology* **17**(3), 229–238 (1999).
+<https://doi.org/10.1080/02726359908906815> Mechanisms of megasonic
+particle removal and the effects of frequency, temperature and power
+density. Used on the post-CMP cleaner machine page. Tier: deep dive.
+
+**ZHANG-BUSNAINA-1999** — F. Zhang, A. A. Busnaina and G. Ahmadi,
+"Particle Adhesion and Removal in Chemical Mechanical Polishing and
+Post‐CMP Cleaning", *Journal of The Electrochemical Society* **146**(7),
+2665–2669 (1999). <https://doi.org/10.1149/1.1391989> A model of particle
+penetration during CMP and of particle removal by rolling in final
+polishing and brush cleaning. Used on the post-CMP cleaner machine page.
+Tier: deep dive.
+
+**ZHANG-RAGHAVAN-1999** — L. Zhang, S. Raghavan and M. Weling,
+"Minimization of chemical-mechanical planarization (CMP) defects and
+post-CMP cleaning", *Journal of Vacuum Science & Technology B* **17**(5),
+2248–2255 (1999). <https://doi.org/10.1116/1.590901> A review of CMP
+contamination (particulate, metallic, organic), slurry additives and
+approaches to post-CMP cleaning. Used on the post-CMP cleaner machine
+page. Tier: deep dive.
+
+**BUSNAINA-2002** — A. A. Busnaina, H. Lin, N. Moumen, J.-W. Feng and J.
+Taylor, "Particle adhesion and removal mechanisms in post-CMP cleaning
+processes", *IEEE Transactions on Semiconductor Manufacturing* **15**(4),
+374–382 (2002). <https://doi.org/10.1109/TSM.2002.804872> Particle
+adhesion strengthened by chemical reaction with moisture and ageing, and
+brush contact, pressure and time in particle removal. Used on the
+post-CMP cleaner machine page. Tier: deep dive.
+
+**XU-2004** — K. Xu, R. Vos, G. Vereecke, G. Doumen, W. Fyen, P. W.
+Mertens, M. M. Heyns, C. Vinckier and J. Fransaer, "Particle adhesion and
+removal mechanisms during brush scrubber cleaning", *Journal of Vacuum
+Science & Technology B* **22**(6), 2844–2852 (2004).
+<https://doi.org/10.1116/1.1815319> Force analysis and experiments on
+34 nm silica particles: rolling, not lifting, removes them, in a
+hydrodynamic lubrication regime. Used on the post-CMP cleaner machine
+page. Tier: deep dive.
+
+**GE-2006** — D.-W. Ge, B.-C. Qiu, L.-R. Chen, F.-Y. He, J.-N. Liu,
+C.-X. Zhi and X. Cheng, "Optimizing post cleaning of Tungsten contact CMP
+to improve the yield of logic products with copper interconnect", *2006
+8th International Conference on Solid-State and Integrated Circuit
+Technology (ICSICT)*, pp. 351–353.
+<https://doi.org/10.1109/ICSICT.2006.306249> Organic particles from a
+post-tungsten-contact-CMP brush station with HF spray causing metal-1
+bridges in sub-130 nm logic, and the brush and megasonic changes that
+reduced them. Used on the post-CMP cleaner machine page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
