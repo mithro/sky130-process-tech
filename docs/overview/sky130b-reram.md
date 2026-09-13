@@ -201,7 +201,8 @@ says which parts are typical and which are our inference for SKY130.
 3. **Switching oxide.** HfO₂ or a doped or laminated hafnium oxide, a
    few nanometres thick, is deposited by {term}`ALD` — TSMC's patent
    describes alternating HfCl₄ and H₂O pulses, with a long water pulse
-   to enrich the film in oxygen vacancies[^pat-rram-oxide-tsmc] — or by
+   to dope the film with hydrogen and raise its oxygen-vacancy
+   concentration[^pat-rram-oxide-tsmc] — or by
    PVD, both chosen, as Intermolecular's patent puts it, "to remain
    within a Back End of Line (BEOL) thermal budget".[^pat-rram-intermolecular]
    ALD's self-limiting half-reactions give the thickness control a
@@ -246,7 +247,7 @@ says which parts are typical and which are our inference for SKY130.
    the tungsten plugs and oxide beneath, which the bypass vias also
    rely on (inference).
 8. **Encapsulation and inter-level dielectric.** The patterned cells
-   are covered — in TSMC's patents with nitride spacers or a conformal
+   are covered — in TSMC's patents with nitride spacers or a
    dielectric protection layer, then an upper ILD[^pat-rram-oxide-tsmc][^pat-rram-etchstop-tsmc]
    — to protect the oxide's edges and to build the roughly 0.3 µm of
    dielectric through which the upper vias will pass (0.27 µm above a
@@ -559,7 +560,7 @@ the tier needs:[^skw-01]
 * Dang et al. (TSMC), US 9,431,609 B2 — an RRAM stack with ALD HfOx,
   capping layer, spacers and top-electrode via.[^pat-rram-oxide-tsmc]
 * Liu et al. (TSMC), US 10,003,022 B2 — a conductive etch stop and a
-  two-etch, spacer-defined stack patterning.[^pat-rram-etchstop-tsmc]
+  three-etch, spacer-defined stack patterning.[^pat-rram-etchstop-tsmc]
 * Lee, Chiang and Pramanik (Intermolecular), US 9,076,523 B2 — embedded
   bipolar ReRAM, BEOL thermal budget and reactive TiN
   electrodes.[^pat-rram-intermolecular]
