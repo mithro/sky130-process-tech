@@ -627,7 +627,7 @@ Same job families; no additional tool names. Tier: high-level.
 
 **JOB-03** — Career.com, *"Plasma Etch Process Development Engineer"*,
 SkyWater Technology Foundry, Bloomington MN, posted 2024-08-09 (closed
-2024-10-30).
+2024-10-30), retrieved 2026-08-30.
 <https://www.career.com/company/skywater-technology-foundry-inc/job/plasma-etch-process-development-engineer/-in-bloomington,mn?jid=83e5f3b7-6fb2-41df-9003-31e8e118e0a8>.
 Describes the role ("bringing cutting-edge eight-inch Silicon designs
 to life") but names no tools. Tier: high-level.
@@ -643,9 +643,6 @@ for the Minnesota fab. Tier: high-level.
 <https://jobs.dayforcehcm.com/en-US/skywater/CANDIDATEPORTAL/>. Live
 listings; the portal renders client-side and individual postings could
 not be captured. Tier: high-level.
-
-ZipRecruiter and Glassdoor listing pages refused automated retrieval on
-2026-08-30; nothing from them is used in this reference.
 
 ## 5. Cypress Semiconductor, "Fab 4" and the S8 process
 
@@ -6654,8 +6651,10 @@ CMI (Fab 4)*, document 001-85611 Rev. *A, January 2013 (copy hosted by
 Infineon Technologies).
 <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
 S8TNV-5R metal composition at Bloomington: Metal 1 "100A Ti / 3200A
-Al-0.5%Cu / 300A TiW". Used on steps 112, 113 and 114 and on the etch category page. Tier:
-cross-check.
+Al-0.5%Cu / 300A TiW", Metal 2 the same, Metal 3 "150A Ti / 7200A
+Al-0.5%Cu / 300A TiW". Used on steps 112–114, 118–121, 123–125,
+129–132, 134, 136, 138–141, 145 and 146 and on the etch category page.
+Tier: cross-check.
 
 **CYP-QTP-123907** — Cypress Semiconductor, *Fab Process Qualification
 Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8 Technology,
