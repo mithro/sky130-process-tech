@@ -278,7 +278,10 @@ names only doped films.[^skw-01]
 The process gases are listed in the {ref}`materials index
 <materials-index>`; what is specific to an HDP-CVD tool is summarised
 here. None of the SkyWater sources describes the fab's gas delivery,
-pumps or abatement.
+pumps or abatement. Chamber parts and exhaust abatement are described on
+the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Process gases.** Silane, oxygen and argon;[^pat-hdp-novellus]
   a phosphorus precursor for PSG[^hsiao-2005] (typically phosphine,
@@ -349,6 +352,8 @@ thicknesses are not public.
   and the step assignments.
 * {ref}`materials-index` — silane, phosphine and the clean gases.
 * {ref}`category-cmp` — the polishes that planarise the fill oxides.
+* {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement.
 
 ## References
 

@@ -249,7 +249,10 @@ only on the DPS II entry, "poly/nitride" only on the 9400 entry, and the
 The etch gases and chamber parts are listed in the
 {ref}`materials index <materials-index>`; what is specific to a silicon
 etcher is summarised here. None of the SkyWater sources describes the
-fab's gas delivery or abatement.
+fab's gas delivery or abatement. Chamber parts and exhaust abatement are
+described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Process gases.** HBr, Cl₂ and O₂ for silicon; CF₄, SF₆, NF₃, CHF₃
   or C₂F₆ for breakthrough, hard-mask open and cleaning — the gases
@@ -334,6 +337,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — etch gases and chamber materials.
+* {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement.
 
 ## References
 

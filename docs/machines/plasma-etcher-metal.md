@@ -214,7 +214,10 @@ an inference from the platforms' age, not a SkyWater statement.
 The etch gases and chamber parts are listed in the
 {ref}`materials index <materials-index>`; what is specific to a metal
 etcher is summarised here. None of the SkyWater sources describes the
-fab's gas delivery or abatement.
+fab's gas delivery or abatement. Chamber parts and exhaust abatement are
+described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Chlorine chemistry.** Cl₂ and BCl₃, with N₂ or a fluorocarbon such
   as CHF₃ for sidewall passivation;[^chen-1989][^allen-1994][^pat-taper-att]
@@ -290,6 +293,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   these etches pattern, and the capacitor top-plate film (TiW on this
   reference's reading, {ref}`CAPTIW1 <step-136>`).
 * {ref}`materials-index` — etch gases and chamber materials.
+* {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement.
 
 ## References
 

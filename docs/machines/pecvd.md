@@ -300,7 +300,10 @@ SkyWater lists no doped PECVD oxide.[^skw-01]
 The precursor gases are listed in the
 {ref}`materials index <materials-index>`; what is specific to a PECVD
 or SACVD tool is summarised here. None of the SkyWater sources describes
-the fab's gas delivery, pumps or abatement.
+the fab's gas delivery, pumps or abatement. Chamber parts and exhaust
+abatement are described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Silicon precursors.** Silane, "a pyrophoric gas (capable of
   autoignition at temperatures below 54 °C or 129 °F)",[^wiki-silane]
@@ -400,6 +403,8 @@ pressures, thicknesses and chemistries are not public.
   and the step assignments.
 * {ref}`materials-index` — silane, TEOS and the chamber-clean gases.
 * {ref}`category-cmp` — the polish that precedes the cap oxides.
+* {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement.
 
 ## References
 

@@ -287,7 +287,9 @@ The targets are described on the
 process gases are listed in the {ref}`materials index
 <materials-index>`; what is specific to a PVD cluster tool is summarised
 here. None of the SkyWater sources describes the fab's pumps or target
-logistics.
+logistics. Chamber parts and exhaust abatement are described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Targets.** Titanium, aluminium–copper and TiW targets, one per
   chamber; SkyWater's filings name Honeywell and JX Metals as suppliers
@@ -369,6 +371,8 @@ its film thicknesses are not public.
 * {ref}`materials-index` — sputter targets and process gases.
 * {ref}`material-sputter-targets` — target materials, purity, bonding
   and suppliers.
+* {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement.
 
 ## References
 
