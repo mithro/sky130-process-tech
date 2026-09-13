@@ -78,12 +78,15 @@ magnification of 4×.[^itrs-03]
 Mercury arc lamps supplied the g-line (436 nm) and i-line (365 nm) used
 through the 1980s and early 1990s; excimer lasers then took over, KrF at
 248 nm and ArF at 193 nm.[^wiki-litho][^wiki-excimer] A 130 nm-era fab
-typically runs a *mixed* line: KrF scanners for the critical layers
-(active, poly, contact, metal 1, via 1) and older i-line steppers for
-the non-critical implant-block, upper-metal and pad layers, whose
-features are a few hundred nanometres or larger (industry practice:
-ASML describes older systems that "migrate to the lithography of choice
-for less critical layers"[^asml-30]). Which of SKY130's 36 masks are on which
+typically runs a *mixed* line, with older tools moved to the less
+critical layers (industry practice: ASML describes older systems that
+"migrate to the lithography of choice for less critical
+layers"[^asml-30]): KrF tools for the critical layers and i-line tools
+for non-critical layers whose features are a few hundred nanometres or
+larger. On the step pages' readings, for example, active, poly, local
+interconnect, contact, metals 1 and 2 and vias 1 to 4 are KrF layers,
+and the implant blocks, capacitor plates, top metal and pad opening are
+i-line layers. Which of SKY130's 36 masks are on which
 tool is not public. The process-steps sheet records a mask type for
 three plates only, which we read as embedded attenuated phase-shift
 masks for vias 2 and 3 and a binary mask for via 4, all for 248 nm
@@ -253,7 +256,7 @@ alignment corrections.
 
 ### Cross-check
 
-* ITRS 2001, *Lithography* — Tables 57a and 58a: half-pitch, gate,
+* ITRS 2001, *Lithography* — Tables 57a and 59a: half-pitch, gate,
   contact, overlay and CD-control targets, mask magnification and PSM
   choices.[^itrs-03]
 * ITRS 2001, *Front End Processes* — scanner field size and gate etch

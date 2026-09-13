@@ -1370,9 +1370,18 @@ Al versus Cu, dielectric k, via/metal dimensions by node. Tier: deep dive.
 Exposure-tool options by node for critical layers ("248 nm + PSM" and
 "193 nm" at the 130 nm node in Figure 34; "For critical layer imaging,
 optical lithography is represented by three wavelengths—248 nm, 193 nm,
-and 157 nm"); the optical mask table notes "The requirements are for
+and 157 nm. Currently, only 248 nm lithography has a mature
+infrastructure"); the optical mask table notes "The requirements are for
 critical layers at defined year". It does not mention i-line or
-exposure tools for non-critical layers.
+exposure tools for non-critical layers. Table 57a gives half-pitch, gate
+and contact CDs in resist and after etch, overlay and CD control by year
+(2001: DRAM half-pitch 130 nm, contact 165 nm in resist, overlay 46 nm,
+CD control 15.9 nm DRAM, 5.3 nm MPU gate, 7.3 nm ASIC/LP); Table 59a
+gives mask magnification (4× in 2001), 45 nm overlay and "Primary PSM
+choices are attenuated shifter and alternating aperture". The
+requirements text says "contacts have very small process windows and
+large mask error factors", and the metrology crosscut calls the "20%
+measurement precision to process tolerance metric" "somewhat relaxed".
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
 Also used on the DNM, P1M and VIM4 mask pages.
@@ -4564,6 +4573,9 @@ Also used on the VIM4 mask page.
 **ASML-30** — ASML, *Three decades of PAS 5500*, 2021.
 <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 ASML's own account of the PAS 5500 platform's three-decade lifetime.
+States that "older systems remain in constant use but migrate to the
+lithography of choice for less critical layers" (a general statement,
+not about SKY130).
 Used on the lithography category page.
 Also used on the i-line stepper or scanner page.
 Tier: cross-check.
