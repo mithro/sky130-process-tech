@@ -244,8 +244,9 @@ These notes connect the machine class to the step pages; they add no
 SKY130 conditions of their own. SKY130's single-wafer recipes are not
 public.
 
-* **Backside film removal.** {ref}`BFR <step-060>` strips the furnace
-  films from the back of the wafer before the gate mask. The page reads
+* **Backside film removal.** On the {ref}`BFR <step-060>` page's
+  reading, the step strips the furnace films from the back of the wafer
+  before the gate mask. The page reads
   the tool as SEZ 223 (inference) and describes a chuck that touches
   only the edge or floats the wafer on a nitrogen cushion, with the front
   protected by gas flow and geometry; the SEZ patent's gas cushion keeps

@@ -267,9 +267,9 @@ chemistries are not public.
   cleaner, the listed "Track ammonia clean" and "IPA clean", the SEZ
   tools, or an unlisted scrubber is not public (open question).
 * **Before the next lithography and deposition.** A polish is followed by
-  a liner or cap deposition or a mask ({ref}`WCMPLI <step-100>` is
-  followed by the TiN local interconnect, {ref}`CMPM <step-116>` by the
-  cap oxide); particles left on the back after CMP can defocus the next
+  a liner or cap deposition or a mask (on the step pages' readings,
+  {ref}`WCMPLI <step-100>` is followed by the TiN local interconnect and
+  {ref}`CMPM <step-116>` by the cap oxide); particles left on the back after CMP can defocus the next
   exposure on a vacuum chuck.[^kinoshita-sez]
 
 ## Related pages
