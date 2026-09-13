@@ -13,7 +13,7 @@
 ## What this step is
 
 `CAPM` is the lithography that defines the top plates of the first
-MiM capacitor. On the blanket TiW of {ref}`CAPTIW1 <step-136>` — which
+{term}`MiM capacitor`. On the blanket TiW of {ref}`CAPTIW1 <step-136>` — which
 lies on the oxynitride of {ref}`CAPILD <step-135>` and the
 still-unpatterned metal-3 stack of {ref}`WTIAL3 <step-134>` — a
 resist is coated, exposed and developed so that resist remains
@@ -54,7 +54,7 @@ separate the resist's substrate from the aluminium below.
 
 `CAPM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *non-critical, large-feature* type. At 2 µm and 0.84 µm
-the process factor on an i-line (365 nm) stepper of {term}`NA` 0.6
+the process factor {term}`k₁ <k1>` on an i-line (365 nm) stepper of {term}`NA` 0.6
 would be {math}`k_1 = 0.84 \times 0.6 / 0.365 \approx 1.4`, far above
 the resolution limit, and the ITRS 2001 lithography chapter assigns
 such layers to the cheaper exposure tools of the generation;[^itrs-03]
@@ -121,7 +121,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 1. **Surface preparation.** The wafer comes from the {term}`PVD`
    cluster; a dehydration bake, and either an organic {term}`BARC`
    or a dyed resist to tame the reflectivity of TiW-on-aluminium
-   (Brunner's swing-curve analysis is the basis;[^brunner-1991]
+   (Brunner's {term}`swing-curve <swing curve>` analysis is the basis;[^brunner-1991]
    Rocke and Schneegans documented the anti-reflective role of a
    refractory cap on aluminium[^rocke-1988]). No {term}`HMDS` is
    needed on a metal.
@@ -178,7 +178,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 * **Organic BARC** or dyed resist, **0.26 N TMAH developer** (Air
   Products per the S-1[^sec-01]), edge-bead remover, rinse solvents,
   DI water and nitrogen.[^txt-02]
-* **The CAPM reticle**, generated from the drawn `capm` layer
+* **The CAPM {term}`reticle`**, generated from the drawn `capm` layer
   (89:44)[^pdk-06] — on our reading a binary chrome-on-glass mask
   without OPC.
 * **Mercury-lamp consumables** for the i-line tool.
