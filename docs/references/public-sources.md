@@ -346,16 +346,20 @@ Sheet), retrieved 2026-09-13.
 The source of the 171-step list used in this reference (tab "Sheet1":
 step number, code and description, `SMAT` to `HPETEST`). Further tabs:
 "Masks" (the mask steps with their step numbers); "Run Mask IDs" (the
-PDK mask table set against MPW-1 to MPW-8, recording for each run
-whether a plate exists for each mask, its plate ID, and notes including
-the sky130B ReRAM masks `RRM` and `VIMC`); "SKY130 MPW-3 Mask
-Information" (photographs of via-2 and via-3 plates); "Random Mask Case
-Label Info" (Photronics plate-case labels: 6 × 6 × 0.25 in blanks, 4×,
-CD specifications); and "Sheet4" (mask types, e.g.
-`F4-248-EAPSM-A43-APRX` for `VIM2`/`VIM3` and `B4-248-BIM-LSR-WET` for
-`VIM4`). Each tab can be exported anonymously as CSV. Used on the
-landing page, the steps index, every step page and the mask index.
-Tier: cross-check.
+PDK mask table set against MPW-1 to MPW-8, each run's columns headed by
+a reticle-set ID such as `5CS8007AC`, recording for each run whether a
+plate exists for each mask and its plate ID such as `S8007AA020A`, with
+"Info" notes including the sky130B ReRAM masks `RRM` and `VIMC`);
+"SKY130 MPW-3 Mask Information" (images of via-2 and via-3 plates);
+"Random Mask Case Label Info" (Photronics plate-case labels: 6 × 6 ×
+0.25 in blanks, 4×, CD specifications); and "Sheet4" (mask-type codes,
+e.g. `F4-248-EAPSM-A43-APRX` for `VIM2`/`VIM3` and `B4-248-BIM-LSR-WET`
+for `VIM4`). Each tab can be exported anonymously as CSV. Used on the
+landing page, the steps index and every step page; the mask index uses
+"Run Mask IDs" for the reticle-set IDs, plate IDs and plate numbers of
+each run, "Masks" for the mask-step list, "Sheet4" for the mask-type
+codes and "Random Mask Case Label Info" for the blank size and "4X"
+type field. Tier: cross-check.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
