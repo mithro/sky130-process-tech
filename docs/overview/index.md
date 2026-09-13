@@ -473,6 +473,86 @@ opened ({ref}`PDM <step-168>`, {ref}`PDME <step-169>`), the wafer
 receives a final {term}`alloy anneal` ({ref}`ALLY <step-170>`) and the
 {term}`e-test` structures are measured ({ref}`HPETEST <step-171>`).
 
+(overview-cross-section)=
+## A simplified cross-section
+
+The only public drawing of the whole SKY130 stack is the PDK's process
+stack diagram.[^pdk-04] It is marked "(Diagram not to scale!)" and labels
+each conductor with a thickness, each dielectric with a name and a
+relative permittivity ("K"), some dielectric intervals with a height,
+and some interfaces with a level above the diagram's zero, whose datum
+the drawing does not state (the {ref}`STIE <step-006>` page reads it as
+the trench floor). Reading it from the bottom up, with the step pages:
+
+* **Silicon.** A p-type bulk wafer ("p-substrate" on the
+  diagram[^pdk-04]) carries the N-wells, P-wells and deep N-wells of the
+  well module and the shallow source/drain junctions, 0.1 µm deep in the
+  PDK's assumptions.[^pdk-03] The field between active areas is the STI
+  oxide, "FOX K=3.9", which stands 0.07 µm above the silicon under
+  poly.[^pdk-04][^pdk-03]
+* **Transistors.** On the active silicon lie the gate oxides (and, in
+  the memory cells, the ONO stack, which the diagram does not draw), the
+  0.18 µm poly gate with its nitride/oxide cap, and the sidewall
+  spacers, labelled "SPNIT K=7.5".[^pdk-04]
+* **Middle of line.** A phosphosilicate glass ("PSG K=3.9") buries the
+  transistors; tungsten-filled `licon` contacts pass through it to the
+  titanium-nitride local interconnect `li`, which is capped by the
+  "LINT K=7.3" nitride and buried in "NILD2 K=4.05".[^pdk-04]
+* **Back end.** Five aluminium levels alternate with oxide dielectrics
+  "NILD3" to "NILD6", with tungsten plugs (`mcon`, `via1`–`via3`) and the
+  wider via 4 between them; the two capacitor plates `capm` and `cap2m`
+  sit in the dielectric above metal 3 and metal 4.[^pdk-04]
+* **Passivation.** A thin "TOPOX K=3.9" oxide and a thicker "TOPNIT
+  K=7.5" nitride cover metal 5, with a "glass cut" over the pad, and a
+  polyimide "PI1 K=2.94" is drawn on top.[^pdk-04] The step list has no
+  polyimide step.
+
+The table lists the levels bottom to top with the thicknesses and
+heights the step pages quote. Dielectric heights are the diagram's
+labels for the intervals between conductors, not deposited thicknesses;
+where no number is given, none is public.
+
+| Level (bottom to top) | PDK name or description | Thickness quoted | Level on the diagram (µm) | Built at |
+|-----------------------|-------------------------|------------------|---------------------------|----------|
+| Substrate and wells | "p-substrate";[^pdk-04] "Bulk"[^skw-02] | N-well baseline vertical dimension 1.1 µm; P-well 0.75 µm; S/D junction 0.1 µm[^pdk-03] | — | {ref}`SMAT <step-001>`; {ref}`LVTNM <step-014>` – {ref}`RTAI <step-034>`; {ref}`PSDM <step-081>` – {ref}`RTAD <step-088>` |
+| Field oxide | "FOX K=3.9"[^pdk-04] | 0.07 µm above the silicon under poly[^pdk-03] | top 0.3262[^pdk-04] | {ref}`BOX <step-002>` – {ref}`NS19 <step-013>` |
+| Gate dielectrics | thin and thick gate oxide; ONO in SONOS cells | 110 Å (5 V and high-voltage devices);[^pdk-hv] model `toxe` 4.148 nm (1.8 V) and 11.6 nm (5 V);[^pdk-model-nfet01v8][^pdk-model-nfet5v] ONO not public | — | {ref}`ONO <step-040>`; {ref}`GOX100 <step-043>` – {ref}`LVGOX <step-047>` |
+| Gate and resistor poly | "polysilicon"[^pdk-04] | 0.18 µm[^pdk-03][^pdk-04] | — | {ref}`SAGD <step-048>` – {ref}`P1ME <step-062>` |
+| Gate cap and spacers | "SPNIT K=7.5"[^pdk-04] | "poly cap after SPE" 0.2 µm; "oxide spacer" 0.05 µm[^pdk-03] | — | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`; {ref}`SPNIT <step-076>` – {ref}`SPOX <step-080>` |
+| Pre-metal dielectric | "PSG K=3.9"[^pdk-04] | 0.6099 µm over the gate, 0.4299 µm over field poly;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm[^pdk-03] | — | {ref}`PSG <step-089>` – {ref}`NCAPOX <step-091>` |
+| Local interconnect | `li` (TiN) | 0.1 µm[^pdk-04][^pdk-03] | bottom 0.9361, top 1.0111[^pdk-04] | {ref}`LITIN <step-101>` – {ref}`LI1ME <step-103>` |
+| Local-interconnect cap | "LINT K=7.3"[^pdk-04] | 0.075 µm[^pdk-04] | — | {ref}`LINIT <step-104>` |
+| Dielectric to metal 1 (`mcon`) | "NILD2 K=4.05"[^pdk-04] | 0.265 µm[^pdk-04] | — | {ref}`NILD2 <step-105>` – {ref}`WCMP2 <step-111>` |
+| Metal 1 | `metal1` | 0.36 µm[^pdk-04] | bottom 1.3761[^pdk-04] | {ref}`TIAL6 <step-112>` – {ref}`MM1E <step-114>` |
+| Via 1 | "NILD3 K=4.5", "NILD3_C K=3.5"[^pdk-04] | via 0.27 µm; NILD3_C 0.030 µm[^pdk-04] | — | {ref}`NILD3 <step-115>` – {ref}`WCMP3 <step-122>` |
+| Metal 2 | `metal2` | 0.36 µm[^pdk-04] | bottom 2.0061[^pdk-04] | {ref}`TIAL12 <step-123>` – {ref}`MM2E <step-125>` |
+| Via 2 | "NILD4 K=4.2", "NILD4_C K=3.5"[^pdk-04] | via 0.42 µm; NILD4_C 0.030 µm[^pdk-04] | — | {ref}`NILD4 <step-126>` – {ref}`WCMP4 <step-133>` |
+| Metal 3 | `metal3` | 0.845 µm[^pdk-04] | bottom 2.7861[^pdk-04] | {ref}`WTIAL3 <step-134>`, {ref}`MM3 <step-139>`, {ref}`MM3E <step-140>` |
+| First MiM capacitor | `capm`[^pdk-04] | not labelled;[^pdk-04] 2 fF/µm²[^pdk-07] | — | {ref}`CAPILD <step-135>` – {ref}`CAPME <step-138>` |
+| Via 3 | "NILD5 K=4.1"[^pdk-04] | via 0.39 µm[^pdk-04] | — | {ref}`NILD5 <step-141>` – {ref}`WCMP5 <step-148>` |
+| Metal 4 | `metal4` | 0.845 µm[^pdk-04] | bottom 4.0211[^pdk-04] | {ref}`WTIAL4 <step-149>`, {ref}`MM4 <step-154>`, {ref}`MM4E <step-155>` |
+| Second MiM capacitor | `cap2m`[^pdk-04] | not labelled;[^pdk-04] 2 fF/µm²[^pdk-07] | — | {ref}`CAPILD2 <step-150>` – {ref}`CAP2ME <step-153>` |
+| Via 4 | "NILD6 K=4.0"[^pdk-04] | via 0.505 µm[^pdk-04] | — | {ref}`NILD6 <step-156>` – {ref}`VIM4E <step-160>` |
+| Metal 5 | `metal5` | 1.26 µm[^pdk-04] | bottom 5.3711[^pdk-04] | {ref}`WTIAL5 <step-161>` – {ref}`MM5E <step-163>` |
+| Passivation oxide | "TOPOX K=3.9"[^pdk-04] | 0.09 µm on the metal, 0.070 µm on its sidewall[^pdk-04] | — | {ref}`NFUSOX <step-164>` |
+| Passivation nitride | "TOPNIT K=7.5"[^pdk-04] | 0.54 µm on the metal, 0.4223 µm on its sidewall[^pdk-04] | — | {ref}`NTSD <step-167>` |
+| Polyimide | "PI1 K=2.94"[^pdk-04] | — | top 11.8834[^pdk-04] | no step in the step list |
+
+Most of the labels are consistent with one another. From metal 1
+upwards each metal bottom equals the one below plus that metal's
+thickness plus the via height (1.3761 + 0.36 + 0.27 = 2.0061 µm, and so
+on to 4.0211 + 0.845 + 0.505 = 5.3711 µm), and the PSG labels equal the
+distance from the field-oxide top to the `li` bottom (0.9361 − 0.3262 =
+0.6099 µm) and that distance less the 0.18 µm poly (0.4299 µm) (our
+arithmetic from the labels[^pdk-04]). Two intervals do not close. The
+`li` levels bracket 0.075 µm, not the 0.1 µm the conductor label gives
+({ref}`LITIN <step-101>`); and the 0.365 µm between the `li` top and the
+metal-1 bottom is more than the 0.265 µm NILD2 label, or the 0.34 µm of
+NILD2 and LINT together ({ref}`CTM1 <step-107>`,
+{ref}`NILD2 <step-105>`). The public values for some films also
+disagree with other public sources; those differences are among the
+open questions below.
+
 <!-- footnotes -->
 
 [^pdk-02]: SkyWater PDK Authors, *Background*, SkyWater SKY130 PDK
