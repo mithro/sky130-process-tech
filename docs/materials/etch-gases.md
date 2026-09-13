@@ -174,9 +174,11 @@ emissions" and on "per- and polyfluoroalkyl substances (commonly known as
 PFAS or “forever chemicals”)", and that stakeholders focus on
 "greenhouse gas emissions".[^sec-02]
 
-The EPA's Greenhouse Gas Reporting Program lists "SKYWATER TECHNOLOGY
-INC" in Bloomington, Minnesota, reporting under subpart I, electronics
-manufacturing, in each year from 2011 to 2023.[^epa-ghgrp-skywater] The
+The EPA's Greenhouse Gas Reporting Program lists the Bloomington,
+Minnesota facility (ID 1000354, "SKYWATER TECHNOLOGY FOUNDRY INC" in the
+records for 2010–2013 and "SKYWATER TECHNOLOGY INC" from 2014),
+reporting under subpart I, electronics manufacturing, in each year from
+2011 to 2023.[^epa-ghgrp-skywater] The
 subpart covers plasma etching and chamber cleaning "using
 plasma-generated F2 atoms and other reactive F2-containing fragments", N₂O
 use and fluorinated heat-transfer fluids.[^epa-ghgrp-subpart-i] For 2023
@@ -479,8 +481,9 @@ public.
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^epa-ghgrp-skywater]: U.S. Environmental Protection Agency, Greenhouse
     Gas Reporting Program, Envirofacts tables `PUB_DIM_FACILITY` and
-    `PUB_FACTS_SUBP_GHG_EMISSION` for facility ID 1000354 ("SKYWATER
-    TECHNOLOGY INC", Bloomington, Minnesota), reporting years 2010–2023,
+    `PUB_FACTS_SUBP_GHG_EMISSION` for facility ID 1000354 (Bloomington,
+    Minnesota; "SKYWATER TECHNOLOGY FOUNDRY INC" for 2010–2013 and
+    "SKYWATER TECHNOLOGY INC" from 2014), reporting years 2010–2023,
     retrieved 2026-09-13.
     <https://data.epa.gov/efservice/PUB_DIM_FACILITY/FACILITY_ID/1000354/JSON>
     <https://data.epa.gov/efservice/PUB_FACTS_SUBP_GHG_EMISSION/FACILITY_ID/1000354/SUB_PART_ID/43/JSON>
