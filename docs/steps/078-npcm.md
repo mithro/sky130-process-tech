@@ -165,7 +165,7 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
   BARC**; SkyWater's 2021 S-1 names Dow, JSR and Tokyo Ohka Kogyo as resist
   suppliers.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover,
-  rinse solvents, DI water and nitrogen.
+  rinse solvents, {ref}`DI water <material-ultrapure-water>` and nitrogen.
 * **The NPCM reticle** — generated from the `cnpc` mask layer
   (49:0).[^pdk-06]
 

@@ -197,7 +197,7 @@ fab (SKY130's recipe is not public):
 * **Source consumables** — filaments/cathodes, arc-chamber liners,
   extraction electrodes; **disc pads** and platen cooling water;
   flood-gun consumables.
-* **Monitor wafers** (SEMI M8 class)[^semi-m8] for sheet resistance.
+* **{ref}`Monitor wafers <material-substrates>`** (SEMI M8 class)[^semi-m8] for sheet resistance.
 
 ## Related steps and cross-references
 

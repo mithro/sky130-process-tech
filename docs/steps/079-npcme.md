@@ -170,9 +170,9 @@ fab (SKY130's recipe is not public):
 * **CF₄, CHF₃, O₂, N₂/Ar** for the nitride and oxide etch; **NF₃** for
   a remote-plasma variant or chamber clean.[^skw-01]
 * **Helium** backside cooling.
-* **O₂/N₂/forming gas** for the strip; **H₂SO₄/H₂O₂ and SC-1** ({ref}`wet chemicals <material-wet-chemicals>`) for the
+* **O₂/N₂/{ref}`forming gas <material-anneal-ambients>`** for the strip; **H₂SO₄/H₂O₂ and SC-1** ({ref}`wet chemicals <material-wet-chemicals>`) for the
   clean.[^wiki-rca]
-* **Chamber consumables**, **monitor wafers** with blanket nitride,
+* **{ref}`Chamber consumables <material-hardware-consumables>`**, **{ref}`monitor wafers <material-substrates>`** with blanket nitride,
   oxide and poly for rate and selectivity checks.
 
 ## Related steps and cross-references
