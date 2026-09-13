@@ -150,11 +150,15 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 * **Applied Materials Mirra CMP.** SkyWater lists "AMAT Mirra CMP"
   for oxide, nitride, niobium, aluminium, tungsten, high-selectivity
   tungsten and copper.[^skw-01] Strength: **strong** for the tool
-  and for an oxide/nitride polish capability; assignment to `CMPP`
-  is an **inference** (the list names no steps).
+  and its oxide and nitride polishes (SkyWater statement); assignment
+  to this step is an **inference** from the film, since the list names
+  no steps.
 * **Post-CMP cleaning.** SkyWater lists the "SEZ223, Davinci"
-  single-wafer tools with HF and DSP+HF chemistries;[^skw-01] a
+  single-wafer tools with HF and DSP+HF chemistries, and the Mirra
+  entry also lists "Track ammonia clean" and "IPA clean";[^skw-01] a
   brush scrubber is not named on any public page (open question).
+* **Defect inspection — KLA AIT / SP1** per a SkyWater job
+  posting.[^job-01] Strength: medium.
 
 ## Resources required
 
@@ -200,6 +204,8 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 * Applied Materials, 1997 Annual Report — the Mirra product
   line.[^amat-1997]
 * SkyWater, Form S-1 — chemical suppliers.[^sec-01]
+* Indeed, SkyWater *Defect Technician 2* posting — inspection
+  tools.[^job-01]
 
 ### High-level understanding
 
@@ -265,6 +271,10 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
+    Bloomington, MN* (listing page; *Defect Technician 2* posting),
+    retrieved 2026-08-30; listings expire.
+    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
