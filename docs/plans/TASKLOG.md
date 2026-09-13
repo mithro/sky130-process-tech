@@ -41,7 +41,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 149–163: metal 4, MiM capacitor 2, via 4, metal 5 — reviewed and merged 2026-09-13 (30 inventory entries added as §8.15; SKY130 read as an S8PIR* flow for metal-5 rules)
 - [x] Steps 164–171: passivation, pad, alloy, test — reviewed and merged 2026-09-13 (25 inventory entries added as §8.16; all 171 step pages written)
 - [x] Cite the public *S8 / SKY130 Process Steps* sheet (STEPS-SHEET) on the landing page, steps index and every step page — 2026-09-13
-- [ ] Use the sheet's mask tabs (masks made per MPW run, mask types, plate labels; no plate IDs, PO or lot numbers pending owner decision) on the mask index and lithography pages
+- [~] Use the sheet's mask tabs on the mask index and lithography pages — mask index section "Plates recorded for the MPW runs" reviewed and merged 2026-09-13 (no plate IDs, PO or lot numbers pending owner decision); lithography pages: see the via 2–4 follow-up
 - [x] Consistency sweep part 1 — SkyWater quotations verbatim, vendor names in prose, S65 mask count, alloy hydrogen wording, BEOL/MOL glossary, PSG and li-top stack readings, Cypress report variants, PECVD tungsten on WDEP, novolac, 2.38 % TMAH — reviewed and merged 2026-09-13
 - [~] Consistency sweep part 2 (branch `topic/consistency-sweep-2`) — evidence grades and tool classes for analogous steps (machines index items), chemistries of analogous steps (materials index items), Axcelis GSD entry naming, developer strength on 007/017/022/026/030/055
 
