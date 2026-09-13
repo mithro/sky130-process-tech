@@ -140,12 +140,12 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 
 ## Machines typically used
 
-* **DUV (KrF, 248 nm) stepper or scanner**, 200 mm: ASML PAS 5500/300–/750
+* **{ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>`**, 200 mm: ASML PAS 5500/300–/750
   series, Nikon NSR-S20x, Canon FPA-3000EX ({ref}`category-lithography`);
-  an **i-line stepper** is the alternative if the layer is relaxed.
-* **Coat/develop track** (TEL, DNS/SCREEN, Sokudo) with BARC and DUV
+  an **{ref}`i-line stepper <machine-i-line-stepper>`** is the alternative if the layer is relaxed.
+* **{ref}`Coat/develop track <machine-coat-develop-track>`** (TEL, DNS/SCREEN, Sokudo) with BARC and DUV
   resist modules.
-* **Overlay metrology** (KLA-Tencor 5xxx/Archer) and **CD-SEM**.
+* **{ref}`Overlay metrology <machine-cd-sem-overlay-metrology>`** (KLA-Tencor 5xxx/Archer) and **CD-SEM**.
 
 ## Machines likely used at SkyWater
 

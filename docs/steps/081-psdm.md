@@ -141,11 +141,11 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm: ASML PAS 5500/100–/275, Nikon NSR-2205i,
+* **{ref}`i-line stepper <machine-i-line-stepper>`**, 200 mm: ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i ({ref}`category-lithography`).
-* **Coat/develop track** (TEL, DNS/SCREEN, SVG/ASML, Sokudo) with a
+* **{ref}`Coat/develop track <machine-coat-develop-track>`** (TEL, DNS/SCREEN, SVG/ASML, Sokudo) with a
   UV-cure or hard-bake module.
-* **Overlay metrology** (KLA-Tencor 5xxx/Archer); **CD-SEM** for
+* **{ref}`Overlay metrology <machine-cd-sem-overlay-metrology>`** (KLA-Tencor 5xxx/Archer); **CD-SEM** for
   periodic checks.
 
 ## Machines likely used at SkyWater

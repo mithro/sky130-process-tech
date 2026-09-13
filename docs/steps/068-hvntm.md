@@ -131,11 +131,11 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 
 ## Machines typically used
 
-* **i-line {term}`stepper`**, 200 mm: ASML PAS 5500/100–/275 series, Nikon
+* **{ref}`i-line <machine-i-line-stepper>` {term}`stepper`**, 200 mm: ASML PAS 5500/100–/275 series, Nikon
   NSR-2205i, Canon FPA-3000i.[^txt-05]
-* **Coat/develop track** with a thin-resist recipe (TEL, DNS/SCREEN,
+* **{ref}`Coat/develop track <machine-coat-develop-track>`** with a thin-resist recipe (TEL, DNS/SCREEN,
   Sokudo).
-* **Overlay metrology** (KLA-Tencor 5xxx/Archer) and a {term}`CD-SEM`.
+* **{ref}`Overlay metrology <machine-cd-sem-overlay-metrology>`** (KLA-Tencor 5xxx/Archer) and a {term}`CD-SEM`.
 
 ## Machines likely used at SkyWater
 

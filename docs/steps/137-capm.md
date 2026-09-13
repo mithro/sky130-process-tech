@@ -153,12 +153,12 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Machines typically used
 
-* **i-line stepper or scanner**, 200 mm: ASML PAS 5500/275–/400
+* **{ref}`i-line stepper or scanner <machine-i-line-stepper>`**, 200 mm: ASML PAS 5500/275–/400
   class,[^asml-30][^chiphistory-pas5500] Nikon NSR-i and Canon FPA
-  i-line systems ({ref}`category-lithography`); a KrF tool could
+  i-line systems ({ref}`category-lithography`); a {ref}`KrF tool <machine-duv-krf-stepper>` could
   print the layer but is not needed.
-* **Coat/develop track** (TEL ACT/Lithius,[^tel-act] DNS, Sokudo).
-* **Optical CD / CD-SEM**, **overlay tool**, **after-develop
+* **{ref}`Coat/develop track <machine-coat-develop-track>`** (TEL ACT/Lithius,[^tel-act] DNS, Sokudo).
+* **Optical CD / {ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **overlay tool**, **after-develop
   inspection**.
 
 ## Machines likely used at SkyWater
