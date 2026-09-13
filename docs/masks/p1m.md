@@ -40,8 +40,8 @@ whose width is the channel length and whose minimum is 0.150 µm
 least 0.330 µm wide (poly.3).[^pdk-periph] *Criteria & Assumptions*
 gives 0.33 and 0.48 as the "Poly resistor width and spacing to reduce CD
 variation (um)" (`POLYRCD`, `POLYRSPC`), the same numbers as rules poly.3
-and poly.9: the resistor rules are set with this mask's CD variation in
-mind.[^pdk-03][^pdk-periph]
+and poly.9, so the PDK ties the resistor rules to the CD variation of
+this level.[^pdk-03][^pdk-periph]
 
 The PDK's mask generation table, Table F2b, marks the `P1M` column `C`
 ("CREATED") in 40 of its 80 device rows: the n+ and p+ poly resistors,
@@ -211,9 +211,10 @@ lithography leaves and its correction at mask level.[^orshansky-2004]
 **Overlay.** The step page infers that `P1M` aligns to the STI marks of
 {ref}`FOM <step-004>`. The placement margins against active are
 0.130 beyond diffusion (poly.8) and 0.250 of diffusion beyond poly
-(poly.7), with poly on field kept 0.075 µm from diffusion (poly.4); the
-tip and halo masks and spacers that follow take the etched gate as their
-reference.[^pdk-periph] Starikov analysed the accuracy of the overlay
+(poly.7), with poly on field kept 0.075 µm from diffusion
+(poly.4);[^pdk-periph] on the step pages' readings the tip and halo
+implants and the spacers that follow take the etched gate as their
+reference. Starikov analysed the accuracy of the overlay
 measurements on which such margins rely.[^starikov-1992]
 
 (mask-p1m-steps)=
