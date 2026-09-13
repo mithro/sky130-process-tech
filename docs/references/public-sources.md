@@ -8173,7 +8173,10 @@ switching resistive memory*, US 9,076,523 B2, filed 2012-12-13, granted
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9076523>
 Embedded ReRAM with non-linear elements; its description notes ALD or
 PVD "to remain within a Back End of Line (BEOL) thermal budget" for the
-switching layer, titanium nitride as an oxygen-reactive electrode, and
+switching layer; titanium nitride listed both among inert
+(oxygen-resistant) electrode materials (col. 5) and as an example of a
+reactive one (cols. 6–7), the naming being "relative"; forming
+"considered to be a part of the fabrication of ReRAM cell" (col. 9); and
 that hafnium-oxide layers "may need about 7 Volts during their forming".
 Tier: deep dive.
 

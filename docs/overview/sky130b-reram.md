@@ -452,8 +452,10 @@ the tier needs:[^skw-01]
   capacitors.[^wilk-2001][^wiki-hfo2]
 * **Electrodes** — not stated by SkyWater. The published HfO₂ cells
   cited here use TiN, some with a thin Ti or Hf layer next to the
-  oxide; Intermolecular's patent calls TiN an "oxygen reactive"
-  electrode material.[^lee-2008-hfo2][^govoreanu-2011][^pat-rram-intermolecular]
+  oxide.[^lee-2008-hfo2][^govoreanu-2011] Intermolecular's patent lists
+  titanium nitride both among materials for an inert (oxygen-resistant)
+  electrode and as an example of a reactive one, noting that the
+  "inert" and "reactive" naming "is relative".[^pat-rram-intermolecular]
 * **Etch chemistries** — BCl₃/O₂ plasma, fluorine- or argon-based
   plasmas, and dilute HF as a wet
   alternative.[^beckmann-2016][^pat-rram-oxide-tsmc]
@@ -572,8 +574,8 @@ the tier needs:[^skw-01]
 * Liu et al. (TSMC), US 10,003,022 B2 — a conductive etch stop and a
   three-etch, spacer-defined stack patterning.[^pat-rram-etchstop-tsmc]
 * Lee, Chiang and Pramanik (Intermolecular), US 9,076,523 B2 — embedded
-  bipolar ReRAM, BEOL thermal budget and reactive TiN
-  electrodes.[^pat-rram-intermolecular]
+  bipolar ReRAM, BEOL thermal budget, inert and reactive electrodes and
+  forming as part of fabrication.[^pat-rram-intermolecular]
 
 ## Open questions
 
