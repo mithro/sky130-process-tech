@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 31 of 171 |
+| **Step number** | 31 of 171[^steps-sheet] |
 | **Step code** | `PWDEI1` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
 | **Phase** | FEOL — wells and channel implants |
@@ -265,3 +265,6 @@ illustrative.
     of triple well implant dose on performance of NMOS transistors",
     *IEEE Transactions on Electron Devices* **49**(3), 521–524 (2002).
     <https://doi.org/10.1109/16.987125>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

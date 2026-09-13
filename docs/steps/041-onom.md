@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 41 of 171 |
+| **Step number** | 41 of 171[^steps-sheet] |
 | **Step code** | `ONOM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
 | **Phase** | FEOL — SONOS and gate dielectrics |
@@ -313,3 +313,6 @@ etch).
     Trap-Depth-Controlled SiN Film Enabling Data Retention more than
     10 years at 200°C", *2023 IEEE International Memory Workshop
     (IMW)*, pp. 1–4. <https://doi.org/10.1109/IMW56887.2023.10145990>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

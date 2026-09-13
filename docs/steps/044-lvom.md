@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 44 of 171 |
+| **Step number** | 44 of 171[^steps-sheet] |
 | **Step code** | `LVOM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
 | **Phase** | FEOL — SONOS and gate dielectrics |
@@ -317,3 +317,6 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 [^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
     SPIE Press, 2005, ISBN 978-0-8194-5660-1.
     <https://doi.org/10.1117/3.601520>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
