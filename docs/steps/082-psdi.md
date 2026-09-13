@@ -34,9 +34,19 @@ current" implants an angle of 0°, against 7° for the tip implant and
 40° with a 23° twist for the high-voltage tip.[^pdk-03] The
 extraction tables give P-diffusion a sheet resistance of
 197 000 mΩ/sq, that is 197 Ω/sq, against 120 Ω/sq for
-N-diffusion.[^pdk-08] The species, energy and dose are not public;
-the "P+" name and the high-current angle entry are what the public
-data provide, and we infer the rest from industry practice.
+N-diffusion.[^pdk-08] The device page's e-test table gives the P⁺
+diffusion sheet resistance `RSP` as 197 Ω/sq (limits 166–228) and the
+high-voltage P⁺ diffusion `RSPH` as 191 Ω/sq (160–228).[^pdk-07] The
+SKY130 raw-data repository publishes two-terminal sweeps of two
+25.05-square "p+ resistor" structures on the test tile, one of which
+the pad list's pin labels call "hv p+ res"; they measure 211.7 Ω and
+205.5 Ω per square, contacts included — inside those limits and, like
+the nominal values, lower for the high-voltage structure (our
+extraction from the published measurements; the files record no
+temperature, date or wafer).[^raw-data-passives][^raw-data-testtile-pads]
+The species, energy and dose are not public; the "P+" name and the
+high-current angle entry are what the public data provide, and we
+infer the rest from industry practice.
 
 The PMOS cross-section in the PDK shows "P+" source/drain beside
 "P−" extensions under the gate edge.[^pdk-07] Where that P⁻
@@ -214,7 +224,11 @@ fab (SKY130's recipe is not public):
   current" 0°); diff/tap width criteria.[^pdk-03]
 * SkyWater PDK, *Device Details* — PMOS cross-section with "P+" and
   "P−" regions; PNP, NPN, diode and diffusion-resistor
-  descriptions.[^pdk-07]
+  descriptions; `RSP` and `RSPH` e-test limits.[^pdk-07]
+* SKY130 raw-data repository — two-terminal sweeps of the test tile's
+  P⁺ diffusion resistors and the pad list that describes them; the
+  sheet resistances quoted here are our
+  extraction.[^raw-data-passives][^raw-data-testtile-pads]
 * SkyWater PDK, *Parasitic Layout Extraction* — P-diffusion
   197 000 mΩ/sq, N-diffusion 120 000 mΩ/sq.[^pdk-08]
 * SkyWater PDK, *Periphery rules* — rpm.4, npc.4, psd.*.[^pdk-periph]
@@ -434,3 +448,17 @@ fab (SKY130's recipe is not public):
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
