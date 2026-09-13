@@ -64,7 +64,7 @@ deep-dive entries per step page and twelve per category page
 
 ## Phase 3 — Cross-cutting pages
 
-- [~] Machine pages + machine ↔ step index — index page reviewed and merged 2026-09-13; per-class pages: pilot (three implanter classes) on branch `topic/machine-pages`
+- [~] Machine pages + machine ↔ step index — index page reviewed and merged 2026-09-13; per-class pages: pilot (three implanter classes) reviewed and merged 2026-09-13 with `tools/check_machines.py`; 27 classes to go
 - [~] Materials pages + material ↔ step index — index page reviewed and merged 2026-09-13; per-class pages not started
 - [~] Mask pages + mask ↔ step ↔ GDS index — index page reviewed and merged 2026-09-13; per-mask pages not started
 - [x] sky130B ReRAM module page (`docs/overview/sky130b-reram.md`) — reviewed and merged 2026-09-13 (31 inventory entries in §8.17 and RERAM-INDEX)
