@@ -13,7 +13,7 @@
 ## What this step is
 
 `CAPILD` deposits the dielectric of SKY130's first
-metal–insulator–metal (MiM) capacitor. Straight after the blanket
+{term}`metal–insulator–metal (MiM) capacitor <MiM capacitor>`. Straight after the blanket
 metal-3 stack of {ref}`WTIAL3 <step-134>` is sputtered — and before
 that metal is patterned — a thin silicon {term}`oxynitride` film is
 laid over the whole wafer by {term}`PECVD`. A thin titanium–tungsten
@@ -117,7 +117,7 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   SkyWater's "range of R.I. options"[^skw-01] is the public trace of
   a tunable film.
 * **Voltage and temperature coefficients.** The models are valid to
-  5 V,[^pdk-07] so the quadratic voltage coefficient matters;
+  5 V,[^pdk-07] so the quadratic {term}`voltage coefficient` matters;
   Blonkowski and Gonon and Vallée give the physical interpretation of
   the {math}`C(V)` curvature in amorphous dielectrics.[^blonkowski-2007][^gonon-2007]
   Whether the PDK publishes coefficients for `cap_mim` is not

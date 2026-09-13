@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`CAPTIW1` deposits the *top plate* of the first MiM capacitor: a
+`CAPTIW1` deposits the *top plate* of the first {term}`MiM capacitor`: a
 blanket titanium–tungsten film sputtered over the thin oxynitride of
 {ref}`CAPILD <step-135>`, which itself lies on the unpatterned
 metal-3 stack of {ref}`WTIAL3 <step-134>`. At this moment the wafer
@@ -98,7 +98,7 @@ plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
   — play the same role with the fab's other refractory film.
 * **Sheet resistance and quality factor.** A plate of 5.8 Ω/sq[^pdk-07]
   under a 2 fF/µm² dielectric gives a distributed RC whose series
-  resistance limits the capacitor's quality factor at RF; the PDK's
+  resistance limits the capacitor's {term}`quality factor` at RF; the PDK's
   maximum MiM capacitor aspect ratio of 20[^pdk-03] and its
   `CAPMCD` of 2 µm[^pdk-03] bound the plate geometry the model has
   been fitted for (inference), and Ng et al. review MiM integration
@@ -125,7 +125,7 @@ back end (SKY130's recipe is not public):
    (industry practice[^txt-05]). Some processes deposit the
    dielectric and the top plate on connected tools; SkyWater's PECVD
    and PVD tools are listed separately,[^skw-01] so on our reading
-   the transfer is by queue-time rule rather than under vacuum.
+   the transfer is by {term}`queue-time <queue time>` rule rather than under vacuum.
 2. **Degas, no sputter etch.** A vacuum bake in the {term}`PVD`
    cluster's {term}`degas` chamber; the argon pre-clean SkyWater lists
    as "Sputter etch, degas"[^skw-01] is, we infer, omitted or made

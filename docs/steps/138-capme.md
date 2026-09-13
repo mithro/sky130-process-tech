@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`CAPME` etches the top plates of the first MiM capacitor. Through
+`CAPME` etches the top plates of the first {term}`MiM capacitor`. Through
 the resist islands of {ref}`CAPM <step-137>` a plasma removes the
 blanket TiW of {ref}`CAPTIW1 <step-136>` — of the order of 0.1 µm on
 our reading of the PDK's top-plate sheet resistance — and stops on,
@@ -110,7 +110,7 @@ than its own {term}`over-etch` would normally consume.
   through. The ≤100 Å loss the TI patent allows[^pat-mim-ti-etch] is
   the scale of the margin.
 * **It must not damage the dielectric under the plates.** Ion
-  bombardment and charging during the over-etch reach the capacitor
+  bombardment and {term}`charging <plasma charging>` during the over-etch reach the capacitor
   through its top plate: the plate is a metal island on a thin
   insulator over a large conductor, the geometry that collects
   plasma charge. Hwang and Giapis explained pattern-dependent

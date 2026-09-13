@@ -15,7 +15,7 @@
 `NCAPOX5` deposits a *{term}`cap oxide`* on the polished inter-level
 dielectric over metal 3. After {ref}`CMPM3 <step-142>` the
 {ref}`NILD5 <step-141>` oxide is flat, but its thickness above the
-metal-3 lines and above the MiM capacitor plates is whatever the
+metal-3 lines and above the {term}`MiM capacitor` plates is whatever the
 polish left, and its surface carries the scratches, slurry residue and
 hydrated layer of a polish. A thin plasma oxide deposited over it
 seals that surface and, on our reading of the step name and its
