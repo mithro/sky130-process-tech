@@ -290,7 +290,7 @@ recipe is not public):
     <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
     Bloomington, MN* (listing page; *Defect Technician 2* posting),
-    retrieved 2026-08-30.
+    retrieved 2026-08-30; listings expire.
     <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^pat-cmp-mirra]: R. D. Tolles, N. Shendon, S. Somekh, I. Perlov,
     E. Gantvarg and H. Q. Lee (Applied Materials), *Continuous
