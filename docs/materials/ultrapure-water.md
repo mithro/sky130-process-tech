@@ -18,6 +18,7 @@ published about water at its fab and which SKY130 steps name it. The
 tools that use most of it are on the
 {ref}`wet bench <machine-wet-bench>`,
 {ref}`single-wafer spin processor <machine-single-wafer-spin-processor>`,
+{ref}`coat-develop track <machine-coat-develop-track>`,
 {ref}`CMP polisher <machine-cmp-polisher>` and
 {ref}`post-CMP cleaner <machine-post-cmp-cleaner>` pages.
 
@@ -99,7 +100,7 @@ standards below. SKY130's water specification is not public.
   establish quality expectations for the supplied UPW" and "To set the
   process control parameters for UPW-system operation", written for
   facilities making semiconductors "with line widths of 32 nm and
-  smaller" and developed with input from the IRDS UPW
+  smaller", a scope far below 130 nm, and developed with input from the IRDS UPW
   committee.[^semi-f63]
 * **SEMI F61** (F61-0521, current) — "the engineering and component
   requirements for a UPW system used in semiconductor manufacturing",
@@ -174,8 +175,9 @@ sections describe them:
   of the back end.
 * **Mask steps** — the resist coat, develop and rinse of the mask steps,
   where the pages name DI water with the developer and rinse solvents.
-* **Polishes** — the twelve CMP steps, where the pages name DI water "in
-  quantity" or "in large volumes" for the polish and post-CMP clean.
+* **Polishes** — the twelve CMP steps, where all the pages name DI water
+  for the polish and post-CMP clean and four say "in quantity" or "in
+  large volumes".
 
 Most furnace, implant, deposition, anneal and test steps name no water;
 their resources are gases, targets and hardware.
@@ -202,7 +204,7 @@ standards and literature statements.
   actually improve final water quality by using a cleaner stream for the
   feed".[^itrs-2001-yield] Cartwright described a semiconductor plant
   where "over 90% of the rinse water is purified back to 18 megohm/cm
-  quality for reuse";[^cartwright-1985] Ohmi's clean reduced chemical and
+  quality for reuse" (sic, for megohm·cm);[^cartwright-1985] Ohmi's clean reduced chemical and
   ultrapure water use to "less than 1% and 5%,
   respectively".[^ohmi-1996] Tool makers promote lower DI water use per
   wafer.[^screen-ss3200]
@@ -215,8 +217,9 @@ standards and literature statements.
 These notes connect the class to the step pages; they add no SKY130
 conditions of their own. SKY130's water specification is not public.
 
-* **HF-last rinses and native oxide.** The pre-gate cleans at
-  {ref}`GOXETCH <step-046>` and {ref}`TUNME <step-039>` end on silicon
+* **HF-last rinses and native oxide.** On their pages' readings, the
+  pre-gate cleans at {ref}`GOXETCH <step-046>` and
+  {ref}`TUNME <step-039>` end on silicon
   that rinse water can re-oxidise; native oxide grows in ultrapure water
   when oxygen is present,[^morita-1990][^li-2005] so dissolved oxygen in
   the final rinse bears on the gate oxides that follow (our reading).
@@ -228,8 +231,8 @@ conditions of their own. SKY130's water specification is not public.
 * **Developer rinse.** The mask-step pages name DI water beside the TMAH
   developer and rinse solvents; rinsing the developer off with water is
   industry practice ({ref}`material-lithography-materials`).
-* **Slurry must not dry.** The CMP pages name DI water in large volumes
-  for the polish and the brush clean, which keep the wafer wet until the
+* **Slurry must not dry.** The CMP pages name DI water for the polish and
+  the brush clean, four of them in quantity or in large volumes, which keep the wafer wet until the
   slurry is removed ({ref}`material-cmp-consumables`).[^pat-scrubber-ontrak]
 * **Water in the baths.** The RCA cleans, SPM and dilute HF of the wet
   chemicals class are made up with DI water to their working
@@ -239,6 +242,7 @@ conditions of their own. SKY130's water specification is not public.
 
 * {ref}`machine-wet-bench` and {ref}`machine-single-wafer-spin-processor` —
   rinses, carbonated DI water and drying.
+* {ref}`machine-coat-develop-track` — the develop rinse.
 * {ref}`machine-cmp-polisher` and {ref}`machine-post-cmp-cleaner` — water
   for polishing and brush cleaning.
 * {ref}`material-wet-chemicals` — the chemicals water dilutes and rinses
