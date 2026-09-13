@@ -287,7 +287,7 @@ not public.
   oxide improves its charge trapping "by the reducing of hydrogen
   concentration".[^hori-1989] Whether SKY130
   uses this, a plasma nitridation or no nitridation is not public
-  (Plasma nitridation chamber).
+  ({ref}`machine-plasma-nitridation-chamber`).
 * **No hydrogen, no steam.** The entry lists no H₂, so in-situ steam
   generation and forming-gas anneals are not supported by the public
   list; the alloy steps are assigned to the furnaces for that reason.[^skw-01]
@@ -306,7 +306,7 @@ not public.
   the furnace.
 * {ref}`machine-vertical-furnace-oxidation` and
   {ref}`machine-vertical-furnace-anneal` — the batch alternatives.
-* Plasma nitridation chamber — the plasma route to a
+* {ref}`machine-plasma-nitridation-chamber` — the plasma route to a
   nitrided gate oxide.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.

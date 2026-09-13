@@ -30,6 +30,7 @@ vertical-furnace-oxidation
 vertical-furnace-lpcvd
 vertical-furnace-anneal
 rapid-thermal-processor
+plasma-nitridation-chamber
 ```
 
 (machines-reading-evidence)=
@@ -178,7 +179,9 @@ apart.
 In the table:
 
 * **Machine class** links to the machine-class page where there is one
-  (the three ion-implanter classes), and otherwise to the category page
+  (the three ion-implanter classes, the three vertical-furnace classes,
+  the rapid thermal processor and the plasma nitridation chamber), and
+  otherwise to the category page
   that describes the class and its physics.
 * **What it does in SKY130** summarises the step pages; the films and
   purposes are as the step pages describe them, including the readings
@@ -208,7 +211,7 @@ classes as equal options.
 | {ref}`Vertical batch furnace <machine-vertical-furnace-lpcvd>`: LPCVD | Isolation nitride, the ONO nitride, the amorphous-silicon gate film and the spacer nitride; one of two options for the gate nitride and the oxide cap; the batch alternative for the spacer oxide and the local-interconnect nitride cap. | "LPCVD nitride, with NH3 and also DH3", "LPCVD polysilicon (undoped), both amorphous and crystalline", "LPCVD silane oxide", "LPCVD oxide/nitride/oxide", "LPCVD BTBAS low temp nitride" (Aviza)[^skw-01] | {ref}`ISONIT <step-003>`, {ref}`ONO <step-040>`, {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`, {ref}`SPNIT <step-076>`; *alternative:* {ref}`SPOX <step-080>`, {ref}`LINIT <step-104>` |
 | {ref}`Vertical batch furnace <machine-vertical-furnace-anneal>`: anneal and alloy | The hydrogen or forming-gas alloy anneals; the batch alternative for the pre-gate implant anneal and for densifying the fill oxide. | "Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and forming gas alloy" (Aviza)[^skw-01] | {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>`; *alternative:* {ref}`FILOX <step-011>`, {ref}`RTAI <step-034>` |
 | {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` (RTA, RTO) | Single-wafer lamp-heated anneals: the pre-gate implant anneal, tip and source/drain activation and contact silicidation; one of two routes for the thin gate oxide and the post-gate-etch oxidation; the single-wafer alternative for the liner, ONO and thick gate oxidations, densification and alloy. | "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] | {ref}`RTAI <step-034>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`CSIL <step-098>`; *alternative:* {ref}`LINOX <step-010>`, {ref}`FILOX <step-011>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
-| {ref}`Plasma nitridation chamber <category-oxidation>` | Nitridation of the thin gate oxide, if it is plasma-nitrided. | None named; SkyWater lists "Nitrided gate oxide" as a special module without a tool[^skw-01] | *alternative:* {ref}`LVGOX <step-047>` |
+| {ref}`Plasma nitridation chamber <machine-plasma-nitridation-chamber>` | Nitridation of the thin gate oxide, if it is plasma-nitrided. | None named; SkyWater lists "Nitrided gate oxide" as a special module without a tool[^skw-01] | *alternative:* {ref}`LVGOX <step-047>` |
 | {ref}`PECVD <category-deposition>` (and SACVD) | Low-temperature oxides, nitrides and oxynitrides: gate nitride and oxide cap (one of two options), spacer oxide, the cap oxides, the local-interconnect nitride cap, the ILD overburden option, the MiM capacitor dielectrics, the fuse oxide and the passivation nitride; TEOS-based doped oxide as a PSG option. | "Lam/Novellus/AMAT": "PECVD TEOS, C2 and Producer" ("low temp options"), "PECVD silane oxide/nitride/oxynitride, C1" ("low temp, range of R.I. options"), "PECVD nitride C1"[^skw-01] | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`, {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`, {ref}`NCAPOX <step-091>`, {ref}`LINIT <step-104>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NCAPOX3 <step-117>`, {ref}`NILD4 <step-126>`, {ref}`NCAPOX4 <step-128>`, {ref}`CAPILD <step-135>`, {ref}`NILD5 <step-141>`, {ref}`NCAPOX5 <step-143>`, {ref}`CAPILD2 <step-150>`, {ref}`NILD6 <step-156>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>`, {ref}`NTSD <step-167>`; *alternative:* {ref}`SPNIT <step-076>` |
 | {ref}`HDP-CVD <category-deposition>` | Gap fill: the shallow-trench fill oxide, the phosphorus-doped pre-metal dielectric and the inter-level oxides between local interconnect and metal 4. | "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" ("high aspect (5:1) fill capability")[^skw-01]; a caption naming "a Novellus high density plasma tool"[^skw-07] | {ref}`FILOX <step-011>`, {ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
 | {ref}`Tungsten CVD <category-deposition>` | Blanket tungsten fill of the local-interconnect contacts, the metal contacts and vias 1–3, polished back afterwards. | "Lam/Novellus PECVD Tungsten" ("plug fill", "{term}`PNL` option for high aspect ratio (up to 10:1)")[^skw-01] | {ref}`WDEP <step-099>`, {ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>` |

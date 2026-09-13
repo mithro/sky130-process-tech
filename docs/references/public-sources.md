@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1185
+written page has exactly one entry here; the inventory holds 1198
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -9132,6 +9132,130 @@ High-Temperature Rapid Thermal Processing in Single Wafer Furnace",
 wafers processed above 1050°C" and slip-free results after optimising
 wafer handling. Used on the rapid thermal processor page. Tier: deep
 dive.
+
+##### Plasma nitridation chamber (first cited there)
+
+**AMAT-DPN-2001** — Light Reading, *Applied Materials Nitridates*
+(reproducing Applied Materials' announcement of its DPN chamber),
+2001-11-28, accessed 2026-09-13.
+<https://www.lightreading.com/business-management/applied-materials-nitridates>
+The single-wafer Decoupled Plasma Nitridation chamber, which "incorporates
+a high concentration of nitrogen into the surface of an ultra-thin gate
+oxide to prevent boron penetration and reduce leakage current" for
+"130nm and below device designs", with "over a dozen DPN chambers in use
+for production". Used on the plasma nitridation chamber page. Tier:
+cross-check (vendor statement reproduced by trade press).
+
+**PAT-PNA-AMAT** — C. S. Olsen (Applied Materials), *Manufacturing method
+for two-step post nitridation annealing of plasma nitrided gate
+dielectric*, US 7,429,538 B2, filed 2005-06-27, granted 2008-09-30.
+<https://patents.google.com/patent/US7429538B2/en> Describes DPN as "a
+technology using inductive coupling to generate nitrogen plasma", run at
+"about 5-20 mTorr", "200-800 Watt" and "pulse at about 5-15 kHz" in the
+"DPN Centura™", followed by a two-step post-nitridation anneal. Used on
+the plasma nitridation chamber page. Tier: cross-check (patent).
+
+**PAT-SPA-TEL** — M. Igeta, C. Wajda, D. L. O'Meara, K. Scheer and T.
+Eurakawa (Tokyo Electron; International Business Machines), *Method and
+system for forming an oxynitride layer*, US 7,501,352 B2, filed
+2005-03-30, granted 2009-03-10.
+<https://patents.google.com/patent/US7501352B2/en> Nitridation with a
+"slot plane antenna (SPA) plasma source" of "low electron temperature
+(less than about 1.5 eV) and high plasma density", naming a TRIAS SPA
+processing system. Used on the plasma nitridation chamber page. Tier:
+deep dive (patent).
+
+**PAT-RPN-TI** — R. Kraft, S. Hattangady and D. T. Grider (Texas
+Instruments), *Method of forming thin silicon nitride or silicon
+oxynitride gate dielectrics*, US 6,136,654 A, filed 1997-12-04, granted
+2000-10-24. <https://patents.google.com/patent/US6136654A/en> Nitridation
+of a gate oxide in a high-density plasma (helicon, helical-resonator, ECR
+or inductively coupled) at millitorr pressures for seconds; its
+background sets out the temperature and control problems of ammonia
+nitridation. Used on the plasma nitridation chamber page. Tier:
+cross-check (patent).
+
+**NIIMI-2002** — H. Niimi, A. Khandelwal, H. H. Lamb and G. Lucovsky,
+"Reaction pathways in remote plasma nitridation of ultrathin SiO₂ films",
+*Journal of Applied Physics* **91**(1), 48–55 (2002).
+<https://doi.org/10.1063/1.1419208> Remote He/N₂ and N₂ plasma
+nitridation of 3 nm oxides at 300 °C: surface nitrogen at 0.1 Torr,
+distributed nitrogen at 0.3 Torr, and the plasma species responsible.
+Used on the plasma nitridation chamber page. Tier: deep dive.
+
+**HATTANGADY-1998** — S. Hattangady, D. T. Grider, R. Kraft, W.-T.
+Shiau, M. A. Douglas, P. Nicollian, M. Rodder, G. A. Brown, A.
+Chatterjee, J. C. Hu, S. Aur, H.-L. Tsai, R. A. Chapman, R. H. Eklund,
+I.-C. Chen and M. F. Pas, "Remote plasma nitrided oxides for ultrathin
+gate dielectric applications", *Proc. SPIE* **3506**, 30 (1998).
+<https://doi.org/10.1117/12.323956> Remote-plasma nitrided oxides against
+boron penetration and leakage, without the mobility loss of thermal
+oxynitrides, and the production advantages of a self-limiting process on a
+thicker starting oxide. Used on the plasma nitridation chamber page. Tier:
+deep dive.
+
+**KAPILA-1999** — D. Kapila, S. Hattangady, M. Douglas, R. Kraft and M.
+Gribelyuk, "Modeling and Optimization of Oxynitride Gate Dielectrics
+Formation by Remote Plasma Nitridation of Silicon Dioxide", *Journal of
+The Electrochemical Society* **146**(3), 1111–1116 (1999).
+<https://doi.org/10.1149/1.1391730> Response-surface and physical models
+of the nitrogen profile from remote plasma nitridation, optimised for top
+surface nitrogen and minimum nitrogen at the bottom interface. Used on the
+plasma nitridation chamber page. Tier: deep dive.
+
+**PAT-DPN-RF-AMAT** — P. A. Kraus and T. C. Chua (Applied Materials),
+*Method and apparatus for plasma nitridation of gate dielectrics using
+amplitude modulated radio-frequency energy*, US 7,514,373 B2, filed
+2006-05-31 (priority 2003-05-28), granted 2009-04-07.
+<https://patents.google.com/patent/US7514373B2/en> A
+"smooth-varying modulated RF power source to reduce electron temperature
+spike" in plasma nitridation, improving channel mobility and gate leakage
+over square-wave modulation. Used on the plasma nitridation chamber page.
+Tier: deep dive (patent).
+
+**PAT-DPN-ANNEAL-CHARTERED** — D. Zhong, Y. Tan, C. Ang and J. Zheng
+(Chartered Semiconductor Manufacturing), *Ultra-thin gate oxide through
+post decoupled plasma nitridation anneal*, US 2003/0170956 A1, filed
+2002-03-06, published 2003-09-11.
+<https://patents.google.com/patent/US20030170956A1/en> Replaces the
+conventional post-DPN anneal "in pure helium" with one "in a 1:4
+oxygen-nitrogen mixture (1,050° C. at about 10 torr)". Used on the plasma
+nitridation chamber page. Tier: deep dive (patent).
+
+**TEL-TRIASE** — Tokyo Electron, *Deposition Trias e+ Series*, product
+page, accessed 2026-09-13. <https://www.tel.com/product/triase.html> The
+Trias e+ single-wafer platform for 300 mm modules; the Trias SPA series'
+"Slot Plane Antenna technology" generates "high-density, low-electron
+temperature plasma". Used on the plasma nitridation chamber page. Tier:
+cross-check (vendor statement).
+
+**LEK-2002** — C. M. Lek, B. J. Cho, C. H. Ang, S. S. Tan, W. Y. Loh,
+J. Z. Zhen and L. Chan, "Impact of decoupled plasma nitridation of
+ultra-thin gate oxide on the performance of p-channel MOSFETs",
+*Semiconductor Science and Technology* **17**(6), L25–L28 (2002).
+<https://doi.org/10.1088/0268-1242/17/6/101> DPN of 15–17 Å oxides
+suppresses boron penetration by placing nitrogen near the top interface,
+but lowers transconductance and raises interface-trap density compared
+with thermal nitridation. Used on the plasma nitridation chamber page.
+Tier: deep dive.
+
+**CHEN-2002-RPN** — C.-H. Chen, Y.-K. Fang, S.-F. Ting, W.-T. Hsieh,
+C.-W. Yang, T.-H. Hsu, M.-C. Yu, T.-L. Lee, S.-C. Chen, C.-H. Yu and
+M.-S. Liang, "Downscaling limit of equivalent oxide thickness in
+formation of ultrathin gate dielectric by thermal-enhanced remote plasma
+nitridation", *IEEE Transactions on Electron Devices* **49**(5), 840–846
+(2002). <https://doi.org/10.1109/16.998593> Radical-induced reoxidation
+below 20 Å base oxide, effective EOT reduction above 17 Å, and a 14 Å EOT
+limit for remote plasma nitridation. Used on the plasma nitridation
+chamber page. Tier: deep dive.
+
+**YEO-2003** — K. L. Yeo, A. T. S. Wee, R. Liu, F. F. Zhou and A. See,
+"Investigation of boron penetration through decoupled plasma nitrided
+gate oxide using backside secondary ion mass spectrometry depth
+profiling", *Journal of Vacuum Science & Technology B* **21**(1), 193–197
+(2003). <https://doi.org/10.1116/1.1535925> Backside SIMS on SOI wafers to
+quantify boron penetration through DPN oxide after rapid thermal
+activation. Used on the plasma nitridation chamber page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
