@@ -41,7 +41,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 149–163: metal 4, MiM capacitor 2, via 4, metal 5 — reviewed and merged 2026-09-13 (30 inventory entries added as §8.15; SKY130 read as an S8PIR* flow for metal-5 rules)
 - [x] Steps 164–171: passivation, pad, alloy, test — reviewed and merged 2026-09-13 (25 inventory entries added as §8.16; all 171 step pages written)
 - [x] Cite the public *S8 / SKY130 Process Steps* sheet (STEPS-SHEET) on the landing page, steps index and every step page — 2026-09-13
-- [ ] Use the sheet's mask tabs (masks made per MPW run, mask types, plate labels) on the mask index and lithography pages
+- [ ] Use the sheet's mask tabs (masks made per MPW run, mask types, plate labels; no plate IDs, PO or lot numbers pending owner decision) on the mask index and lithography pages
 - [~] Tool-name and grade consistency sweep (part 1, spellings and factual items, on branch `topic/consistency-sweep`) across step pages (inconsistencies listed on the machine index: SkyWater spellings such as "Gasonic PEP", "Aspen2", "ProZ Lithius", "SEZ223, Davinci", "Ag Heatpulse"; differing etcher, cap-oxide, CMP and implanter grades for analogous steps; also: CYP-22 "three additional mask layers" applied to S8 on TUNM/ONOM though the release concerns S65; ALLY1/ALLY "only hydrogen-bearing anneal" vs Heatpulse NH₃; anneal category page's ALLY1 placement; glossary BEOL start vs phase table; materials-index inconsistencies; PSG "0.6099 µm over the gate" on 089 and PDK-04 (it is field-oxide top to li bottom); LITIN/CTM1/NILD2 li-top label analysis (only the 1.0111 µm label disagrees); NTSD passivation reports called "other processes" though two are S8; `cyp-qtp-123907` URL variants)
 
 ## Phase 2b — Citation conversion (added 2026-08-30)
@@ -65,6 +65,7 @@ deep-dive entries per step page and twelve per category page
 - [x] sky130B ReRAM module page (`docs/overview/sky130b-reram.md`) — reviewed and merged 2026-09-13 (31 inventory entries in §8.17 and RERAM-INDEX)
 - [x] Process overview page (`docs/overview/index.md`) — reviewed and merged 2026-09-13
 - [x] References landing page (`docs/references/index.md`) — 2026-09-13
+- [ ] Materials index: cite or label the typical values flagged by the 2026-09-13 review (Si₃N₄/SiO₂ thickness ranges, IMP Ti/TiN thickness, H₃PO₄ 85 %, H₂O₂ 30 %, TMAH 2.38 wt.%, Ti:W 10 wt.%); the sheet's "Masks" tab lists 37 rows (incl. PSDI) vs 36 mask steps
 - [x] Glossary: 144 terms, linked on first use across all written pages; inventory keyed for every label (748 entries) — merged 2026-09-12
 - [x] Glossary and inventory top-up for steps 076–117 (204 terms; 951 inventory entries) — merged 2026-09-12
 - [ ] References / bibliography
@@ -87,6 +88,7 @@ deep-dive entries per step page and twelve per category page
 | 2026-09-13 | `main` @ 9ea20a2, files + history since 8418f18 (steps 135–148) plus job-listing mentions across `docs/` | 0 high, 7 medium, 4 low — step names/order used as evidence (swept across 001–148, categories, glossary), MiM materials stated as fact, unretrievable listing material removed from §4 and pages; fix branch independently reviewed (16 follow-up fixes) and merged 2026-09-13 |
 | 2026-09-13 | `main` @ 2e6578a, files + history since 18b0ec7 (steps 149–163) | 0 high, 7 medium, 3 low — step order/code used as evidence on 149–162; fixed on `main` (merged 2026-09-13) |
 | 2026-09-13 | `main` @ b88f6ee, files + history since 0fa02fb (steps 164–171, mask index) | clean; 0 high, 0 medium, 6 low — readings stated as fact in openings, one step-name reading, typical NA and derived values unmarked; fixed on `main` (merged 2026-09-13) |
+| 2026-09-13 | `main` @ 12d486b, files + history since b88f6ee (sheet citation, overview, ReRAM, machines, materials, references pages) | 0 high, 2 medium, 6 low — step order/name used as evidence on the overview (fixed on `main`, merged 2026-09-13); materials-index typical values without citations and mask-type codes in STEPS-SHEET pending |
 
 ## Notes
 
