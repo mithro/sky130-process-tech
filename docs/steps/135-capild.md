@@ -415,11 +415,11 @@ back end (SKY130's recipe is not public):
     <https://doi.org/10.1016/S0167-577X(01)00436-0>
 [^blonkowski-2007]: S. Blonkowski, "Nonlinear capacitance variations in
     amorphous oxide metal-insulator-metal structures", *Applied Physics
-    Letters* **91**(17) (2007). <https://doi.org/10.1063/1.2800291>
+    Letters* **91**(17), 172903 (2007). <https://doi.org/10.1063/1.2800291>
 [^gonon-2007]: P. Gonon and C. Vallée, "Modeling of nonlinearities in
     the capacitance-voltage characteristics of high-k
     metal-insulator-metal capacitors", *Applied Physics Letters*
-    **90**(14) (2007). <https://doi.org/10.1063/1.2719618>
+    **90**(14), 142906 (2007). <https://doi.org/10.1063/1.2719618>
 [^pat-mim-newportfab]: A. Kar-Roy and M. Racanelli (Newport Fab, LLC),
     *Method for fabrication of an MIM capacitor and related structure*,
     US 6,430,028 B1, filed 2000-11-22, granted 2002-08-06.

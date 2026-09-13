@@ -23,12 +23,12 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 999
-keyed entries as of 2026-09-12, and `tools/check_refs.py` keeps the
+written page has exactly one entry here; the inventory holds 1026
+keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10, 8.11, 8.12 and 8.13 were added to cover the sources the writers of
-the step and category pages introduced; a "Label ↔ key" note marks the few
-cases where one source has two keys.
+8.8, 8.9, 8.10, 8.11, 8.12, 8.13 and 8.14 were added to cover the
+sources the writers of the step and category pages introduced; a
+"Label ↔ key" note marks the few cases where one source has two keys.
 
 :::{note}
 Nothing in this inventory comes from private material. Where a public
@@ -1621,8 +1621,8 @@ maker Siltronic. Used on the substrate category page. Tier: high-level.
 
 **WIKI-SIN** — Wikipedia, *Silicon nitride*.
 <https://en.wikipedia.org/wiki/Silicon_nitride> The LPCVD reaction, hot
-H₃PO₄ etch and use as an oxidation mask. Used on steps 003, 013, 040 and
-042 and the deposition category page. Tier: high-level.
+H₃PO₄ etch and use as an oxidation mask. Used on steps 003, 013, 040, 042
+and 135 and the deposition category page. Tier: high-level.
 
 **WIKI-SKYWATER** — Wikipedia, *SkyWater Technology*.
 <https://en.wikipedia.org/wiki/SkyWater_Technology> Fab history and 200
@@ -7236,6 +7236,215 @@ in thin aluminum films", *Vacuum* **40**(1–2), 157–159 (1990).
 <https://doi.org/10.1016/0042-207X(90)90144-N> Hillock formation in
 aluminium films versus heat-treatment temperature and film thickness.
 Used on step 134. Tier: deep dive.
+
+### 8.14 MiM-capacitor, metal-3 and via-3 module sources
+
+Sources introduced by the writers of the first MiM-capacitor module
+(steps 135–138), the metal-3 module (steps 139–143) and the via-3
+module (steps 144–148) that had no entry above. As in §8.13, each label
+on those pages is the key below in lower case, the citation is the one
+given in the page footnote, and the annotation is taken from the citing
+page's reading list; entries are grouped by the sub-module that first
+cited the source and name every page that uses it. None of these
+sources describes SkyWater or the Bloomington fab.
+
+#### MiM capacitor: dielectric, top plate, mask and etch (steps 135–138)
+
+**ARMACOST-2000** — M. Armacost, A. Augustin, P. Felsner, Y. Feng, G.
+Friese, J. Heidenreich, G. Hueckel, O. Prigge and K. Stein, "A high
+reliability metal insulator metal capacitor for 0.18 μm copper
+technology", *IEDM 2000 Technical Digest*, pp. 157–160.
+<https://doi.org/10.1109/IEDM.2000.904282> A high-reliability MiM
+capacitor in a 0.18 µm platform. Used on step 135. Tier: deep dive.
+
+**BABCOCK-2001** — J. A. Babcock, S. G. Balster, A. Pinto, C. Dirnecker,
+P. Steinmann, R. Jumpertz and B. El-Kareh, "Analog characteristics of
+metal-insulator-metal capacitors using PECVD nitride dielectrics", *IEEE
+Electron Device Letters* **22**(5), 230–232 (2001).
+<https://doi.org/10.1109/55.919238> Frequency dependence and linearity
+of PECVD-nitride MiM capacitors against oxide ones for precision
+analogue use. Used on steps 135 and 136. Tier: deep dive.
+
+**BLONKOWSKI-2007** — S. Blonkowski, "Nonlinear capacitance variations in
+amorphous oxide metal-insulator-metal structures", *Applied Physics
+Letters* **91**(17), 172903 (2007). <https://doi.org/10.1063/1.2800291>
+The physics of the MiM voltage coefficient in amorphous oxides. Used on
+step 135. Tier: deep dive.
+
+**BOSE-2002** — M. Bose, D. N. Bose and D. K. Basa, "Plasma enhanced
+growth, composition and refractive index of silicon oxynitride films",
+*Materials Letters* **52**(6), 417–422 (2002).
+<https://doi.org/10.1016/S0167-577X(01)00436-0> Composition and
+refractive index of PECVD silicon oxynitride. Used on step 135. Tier:
+deep dive.
+
+**CHEUNG-2000** — K. P. Cheung, "On the mechanism of plasma enhanced
+dielectric deposition charging damage", *Proc. 2000 5th International
+Symposium on Plasma Process-Induced Damage (P2ID)*, pp. 161–163.
+<https://doi.org/10.1109/PPID.2000.870658> Photoconduction as the
+mechanism of charging damage during plasma-enhanced dielectric
+deposition. Used on steps 138, 141 and 143. Tier: deep dive.
+
+**DANZL-1997** — R. B. Danzl and A. McLaurin, "The use of concentrated
+hydrogen peroxide for the removal of a TiW ARC from aluminum bond pads",
+*Proc. Twenty-First IEEE/CPMT International Electronics Manufacturing
+Technology Symposium (IEMT 1997)*, pp. 99–104.
+<https://doi.org/10.1109/IEMT.1997.626884> Peroxide removal of a TiW
+cap from aluminium pads, the wet chemistry that etches TiW. Used on
+steps 136, 138 and 145. Tier: deep dive.
+
+**DENISSE-1986** — C. M. M. Denisse, K. Z. Troost, J. B. Oude Elferink,
+F. H. P. M. Habraken, W. F. van der Weg and M. Hendriks,
+"Plasma-enhanced growth and composition of silicon oxynitride films",
+*Journal of Applied Physics* **60**(7), 2536–2542 (1986).
+<https://doi.org/10.1063/1.337117> How the gas mixture sets the
+composition of PECVD silicon oxynitride. Used on step 135. Tier: deep
+dive.
+
+**DIRKS-1992** — A. G. Dirks, R. A. M. Wolters and A. E. M. De Veirman,
+"Columnar microstructures in magnetron-sputtered refractory metal thin
+films of tungsten, molybdenum and W-Ti-(N)", *Thin Solid Films*
+**208**(2), 181–188 (1992).
+<https://doi.org/10.1016/0040-6090(92)90640-W> Columnar microstructure
+of sputtered W and W–Ti(N) films. Used on step 136. Tier: deep dive.
+
+**GONON-2007** — P. Gonon and C. Vallée, "Modeling of nonlinearities in
+the capacitance-voltage characteristics of high-k metal-insulator-metal
+capacitors", *Applied Physics Letters* **90**(14), 142906 (2007).
+<https://doi.org/10.1063/1.2719618> A model of the capacitance–voltage
+nonlinearity of MiM capacitors. Used on step 135. Tier: deep dive.
+
+**HILL-1980** — M. L. Hill, "Magnetron-sputtered Ti-W films", *Thin
+Solid Films* **72**(2), 349–350 (1980).
+<https://doi.org/10.1016/0040-6090(80)90017-6> Magnetron-sputtered Ti–W
+films. Used on step 136. Tier: deep dive.
+
+**KAR-ROY-1999** — A. Kar-Roy, C. Hu, M. Racanelli, C. A. Compton, P.
+Kempf, G. Jolly, P. N. Sherman, J. Zheng, Z. Zhang and A. Yin, "High
+density metal insulator metal capacitors using PECVD nitride for mixed
+signal and RF circuits", *Proc. IEEE 1999 International Interconnect
+Technology Conference (IITC)*, pp. 245–247.
+<https://doi.org/10.1109/IITC.1999.787134> 1.0–2.0 fF/µm² PECVD-nitride
+MiM capacitors integrated in a 0.25 µm CMOS back end. Used on steps 135
+and 136. Tier: deep dive.
+
+**LIU-2007-TIW** — G. Liu and Y. Kuo, "Reactive Ion Etching of Titanium
+Tungsten Thin Films", *Journal of The Electrochemical Society*
+**154**(7), H653 (2007). <https://doi.org/10.1149/1.2737631> Reactive
+ion etching of TiW in CF₄/O₂, CF₄/Cl₂ and CF₄/HCl. Used on steps 114,
+125, 136, 138 and 140. Tier: deep dive.
+
+**MAHNKOPF-1999** — R. Mahnkopf, K.-H. Allers, M. Armacost, A. Augustin
+et al., "'System on a chip' technology platform for 0.18 μm digital,
+mixed signal and eDRAM applications", *IEDM 1999 Technical Digest*, pp.
+849–852. <https://doi.org/10.1109/IEDM.1999.824282> A 0.18 µm digital,
+mixed-signal and eDRAM technology platform. Used on step 135. Tier: deep
+dive.
+
+**NG-2003** — C. H. Ng, K. W. Chew and S. F. Chu, "Characterization and
+comparison of PECVD silicon nitride and silicon oxynitride dielectric
+for MIM capacitors", *IEEE Electron Device Letters* **24**(8), 506–508
+(2003). <https://doi.org/10.1109/LED.2003.815154> PECVD nitride versus
+oxynitride as the MiM dielectric. Used on step 135. Tier: deep dive.
+
+**NG-2005** — C. H. Ng, C.-S. Ho, S.-F. S. Chu and S.-C. Sun, "MIM
+Capacitor Integration for Mixed-Signal/RF Applications", *IEEE
+Transactions on Electron Devices* **52**(7), 1399–1409 (2005).
+<https://doi.org/10.1109/TED.2005.850642> A review of MiM capacitor
+integration in Al–Cu and Cu back ends. Used on steps 135, 136, 137, 139
+and 142. Tier: deep dive.
+
+**PAT-MIM-FREESCALE** — D. R. Roberts and G. L. Huffman (Freescale
+Semiconductor), *MIM capacitor in a semiconductor device and method
+therefor*, US 7,375,002 B2, filed 2005-06-28, granted 2008-05-20.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7375002>
+A MiM capacitor over planarised interconnect, with a via etch that stops
+on the plates and the interconnect together. Used on steps 135, 136,
+137, 144 and 145. Tier: deep dive.
+
+**PAT-MIM-IBM** — T. J. Brabazon, B. El-Kareh, S. R. Martin, M. J. Rutten
+and C. W. Kaanta (International Business Machines), *Precision analog
+metal-metal capacitor*, US 5,708,559 A, filed 1995-10-27, granted
+1998-01-13.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5708559>
+A precision analogue metal–metal capacitor with a damascene bottom
+plate. Used on steps 135, 136 and 137. Tier: deep dive.
+
+**PAT-MIM-INFINEON** — S.-O. Kim and E. Demm (Infineon Technologies),
+*MIM capacitor structure and method of fabrication*, US 7,112,507 B2,
+filed 2003-11-24, granted 2006-09-26.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7112507>
+A plate formed in the full thickness of a metallisation level. Used on
+step 137. Tier: deep dive.
+
+**PAT-MIM-NEWPORTFAB** — A. Kar-Roy and M. Racanelli (Newport Fab, LLC),
+*Method for fabrication of an MIM capacitor and related structure*, US
+6,430,028 B1, filed 2000-11-22, granted 2002-08-06.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6430028>
+A nitride/TiN capacitor on an aluminium interconnect layer, etched
+together and protected by an oxide spacer. Used on steps 135, 136, 137,
+138, 139 and 140. Tier: deep dive.
+
+**PAT-MIM-PHILIPS** — M. C. Olewine and K. F. Saiz (Koninklijke Philips
+Electronics), *Metal-insulator-metal (MIM) capacitor structure and
+methods of fabricating same*, US 6,717,193 B2, filed 2001-10-09, granted
+2004-04-06.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6717193>
+Ammonia-plasma treatment of the bottom electrode and a multi-rate etch
+of the top electrode and insulator. Used on steps 135 and 138. Tier:
+deep dive.
+
+**PAT-MIM-TI-ALCAP** — D. L. Crenshaw, B. L. Williams, A. Tsao, H.
+Shichijo, S. S. Papa Rao, K. D. Brennan and S. A. Lytle (Texas
+Instruments), *Metal insulator metal (MIM) capacitor fabrication with
+sidewall spacers and aluminum cap (ALCAP) top electrode*, US 7,250,334
+B2, filed 2004-07-31, granted 2007-07-31.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7250334>
+An aluminium cap over a Ta/TaN top electrode, with sidewall spacers, on
+a copper back end. Used on step 136. Tier: deep dive.
+
+**PAT-MIM-TI-ETCH** — M. O. Cathey Jr., P. Mahalingam, W. Tian, D. C.
+Guiling, X. Chen, B. Hu and S. Chevacharoenkul (Texas Instruments),
+*Forming integrated circuit devices with metal-insulator-metal capacitors
+using selective etch of top electrodes*, US 8,110,414 B2, filed
+2009-04-30, granted 2012-02-07.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8110414>
+A selective plasma etch of MiM top electrodes that removes no more than
+100 Å of the dielectric. Used on step 138. Tier: cross-check.
+
+**TURBAN-1989** — G. Turban, J. F. Coulon and N. Mutsukura, "A
+mechanistic study of SF₆ reactive ion etching of tungsten", *Thin Solid
+Films* **176**(2), 289–308 (1989).
+<https://doi.org/10.1016/0040-6090(89)90102-8> The mechanism of SF₆
+reactive ion etching of tungsten. Used on steps 136 and 138. Tier: deep
+dive.
+
+**VAN-HUYLENBROECK-2002** — S. Van Huylenbroeck, S. Decoutere, R.
+Venegas, S. Jenei and G. Winderickx, "Investigation of PECVD dielectrics
+for nondispersive metal-insulator-metal capacitors", *IEEE Electron
+Device Letters* **23**(4), 191–193 (2002).
+<https://doi.org/10.1109/55.992835> Dispersion in PECVD MiM dielectrics
+and how to avoid it. Used on step 135. Tier: deep dive.
+
+**WIKI-CAPACITOR** — Wikipedia, *Capacitor*.
+<https://en.wikipedia.org/wiki/Capacitor> Capacitance, dielectrics and
+capacitor types, an entry point for the MiM-capacitor pages. Used on
+steps 135 and 136. Tier: high-level.
+
+**WIKI-SION** — Wikipedia, *Silicon oxynitride*.
+<https://en.wikipedia.org/wiki/Silicon_oxynitride> Composition,
+deposition and uses of silicon oxynitride films. Used on step 135. Tier:
+high-level.
+
+#### Metal 3: mask, etch, ILD5, CMP and cap oxide (steps 139–143)
+
+**WANG-2004-MIM** — Z. Wang, J. Ackaert, C. Salm, F. G. Kuper, M. Tack,
+E. De Backer, P. Coppens, L. De Schepper and B. Vlachakis,
+"Plasma-charging damage of floating MIM capacitors", *IEEE Transactions
+on Electron Devices* **51**(6), 1017–1024 (2004).
+<https://doi.org/10.1109/TED.2004.829518> Plasma-charging damage of
+floating MiM capacitors, its dependence on antenna areas and layout rules
+against it. Used on steps 140, 141, 143 and 145. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
