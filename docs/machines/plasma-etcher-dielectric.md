@@ -219,7 +219,10 @@ the two metal etchers as a weak option for removing a TiW cap.
 The etch gases and chamber parts are listed in the
 {ref}`materials index <materials-index>`; what is specific to a
 dielectric etcher is summarised here. None of the SkyWater sources
-describes the fab's gas delivery or abatement.
+describes the fab's gas delivery or abatement. Chamber parts and exhaust
+abatement are described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Fluorocarbon gases.** CF₄, CHF₃ and C₂F₆, with Ar, O₂ and,
   for nitride over-etch, CH₃F;[^regis-1997][^allwin-rainbow-4500] CHF₃
@@ -290,6 +293,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 * {ref}`materials-index` — fluorocarbon gases and chamber materials.
 * {ref}`category-deposition` — the oxide and nitride films these etches
   pattern.
+* {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement.
 
 ## References
 

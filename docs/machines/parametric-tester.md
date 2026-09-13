@@ -223,7 +223,10 @@ e-test limits, are described on the {ref}`HPETEST <step-171>` and
 ## Consumables and facilities
 
 What is specific to this class is summarised here. None of the SkyWater
-sources describes the fab's probe cards, calibration or test data system.
+sources describes the fab's probe cards, calibration or test data
+system. Probe cards and their cleaning are described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Probe cards and needles.** Cards laid out to the test-structure pads,
   with needles of tungsten, tungsten–rhenium, beryllium–copper or other
@@ -286,6 +289,8 @@ not public beyond the PDK's e-test parameter tables, which the
   electrical defect structures.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
+* {ref}`material-hardware-consumables` — probe cards, needles and
+  cleaning media.
 
 ## References
 

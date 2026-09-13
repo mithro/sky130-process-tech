@@ -238,7 +238,10 @@ but grade the Heatpulse as weak.
 
 The gases are listed in the {ref}`materials index <materials-index>`;
 what is specific to a lamp-heated RTP tool is summarised here. None of
-the SkyWater sources describes the fab's RTP facilities.
+the SkyWater sources describes the fab's RTP facilities. Lamps, quartz
+and other RTP parts are described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Process gases.** SkyWater's entry lists NH₃, Ar, N₂ and O₂;[^skw-01] the
   Heatpulse gas box has mass-flow-controlled lines,[^ag-8800] and an
@@ -313,6 +316,8 @@ not public.
   and the step assignments.
 * {ref}`category-test` — the sheet-resistance and electrical monitors of
   the anneals.
+* {ref}`material-hardware-consumables` — lamps, quartz and other RTP
+  parts.
 
 ## References
 

@@ -238,7 +238,10 @@ public.[^skw-01]
 The process gases are listed in the {ref}`materials index
 <materials-index>`; what is specific to a tungsten CVD tool is
 summarised here. None of the SkyWater sources describes the fab's gas
-delivery, pumps or abatement.
+delivery, pumps or abatement. Chamber parts and exhaust abatement are
+described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Tungsten hexafluoride.** "a toxic, corrosive, colorless gas", which
   "On contact with water" gives "hydrogen fluoride (HF) and tungsten
@@ -307,6 +310,8 @@ thicknesses are not public.
   and the step assignments.
 * {ref}`materials-index` — tungsten hexafluoride, silane and the clean
   gases.
+* {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement.
 
 ## References
 

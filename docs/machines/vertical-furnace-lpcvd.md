@@ -243,7 +243,10 @@ as the batch alternative).[^skw-01]
 The precursor gases are listed in the
 {ref}`materials index <materials-index>`; what is specific to a batch
 LPCVD furnace is summarised here. None of the SkyWater sources describes
-the fab's gas delivery, pumps or abatement.
+the fab's gas delivery, pumps or abatement. Quartz and silicon-carbide
+furnace ware is described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Precursors.** Dichlorosilane and ammonia for nitride; BTBAS, a
   liquid delivered as vapour, with ammonia for low-temperature
@@ -315,6 +318,8 @@ pressures and thicknesses are not public.
 * {ref}`materials-index` — the precursor gases and their hazards.
 * {ref}`category-etch` — the etches that pattern the furnace nitrides and
   the gate silicon.
+* {ref}`material-hardware-consumables` — furnace ware, traps and
+  abatement.
 
 ## References
 

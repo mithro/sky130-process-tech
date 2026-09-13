@@ -265,7 +265,10 @@ The gases and quartzware of oxidation are listed in the
 {ref}`materials index <materials-index>` and on the
 {ref}`category page <category-oxidation>`; what is specific to the
 furnace is summarised here. None of the SkyWater sources describes the
-fab's furnace gas supply or exhaust.
+fab's furnace gas supply or exhaust. Quartz and silicon-carbide furnace
+ware is described on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Oxidant and carrier gases.** Oxygen; hydrogen for the steam torch;
   nitrogen for purge and anneal; a chlorine source, HCl or
@@ -354,6 +357,8 @@ and thicknesses are not public.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`category-strip` — the pre-furnace cleans on the listed benches.
+* {ref}`material-hardware-consumables` — furnace ware, traps and
+  abatement.
 
 ## References
 
