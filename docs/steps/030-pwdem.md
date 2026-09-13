@@ -162,7 +162,7 @@ An industry-generic drain-extension well lithography for a 200 mm,
 
 ## Resources required
 
-* **Thick positive i-line implant resist** (inference; see {ref}`lithography materials <material-lithography-materials>`); suppliers named
+* **Thick positive i-line {ref}`implant resist <material-lithography-materials>`** (inference); suppliers named
   in SkyWater's 2021 S-1: Dow, JSR, Tokyo Ohka Kogyo.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev]
   edge-bead remover, DI water, nitrogen.

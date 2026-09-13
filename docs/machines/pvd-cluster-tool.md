@@ -283,7 +283,7 @@ names collimation for titanium and IMP for TiN.
 ## Consumables and facilities
 
 The targets are described on the
-{ref}`sputter targets <material-sputter-targets>` page, and they and the
+{ref}`sputter targets <material-sputter-targets>` page; targets and
 process gases are listed in the {ref}`materials index
 <materials-index>`; what is specific to a PVD cluster tool is summarised
 here. None of the SkyWater sources describes the fab's pumps or target
