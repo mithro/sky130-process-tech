@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 94 of 171 |
+| **Step number** | 94 of 171[^steps-sheet] |
 | **Step code** | `LICM1E` |
 | **Category** | {ref}`Etch <category-etch>` |
 | **Phase** | MOL — silicide and local interconnect |
@@ -375,3 +375,6 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
     C.-F. Wan and M. A. Douglas, "VLSI local interconnect level using
     titanium nitride", *IEDM 1985 Technical Digest*, pp. 590–593.
     <https://doi.org/10.1109/IEDM.1985.191041>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
