@@ -86,7 +86,11 @@ slightly, as a dose confined close to the surface would, and a larger
 increment at short gate length suggests that it also acts on
 short-channel behaviour. Those are readings of electrical averages: the
 data give neither the depth nor the dose of either implant, and do not
-show which of `PCHI` and `PNCHI` does what (inference).
+show which of `PCHI` and `PNCHI` does what (inference). The varactor
+capacitance–voltage data set out on {ref}`HVTPM <step-022>` fit a
+higher net donor concentration near the well surface under the two
+implants together, and are equally silent on the split
+(inference).[^raw-data-passives]
 
 Whichever applies, the aim is the same: a `pfet_01v8_hvt` with the
 higher threshold, lower leakage and acceptable short-channel behaviour
@@ -181,6 +185,9 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 * SKY130 raw-data repository, 1.8 V transistor files — the high-Vt
   threshold increment at two gate lengths and the body effect (our
   extraction).[^raw-data-lv-mosfets]
+* SKY130 raw-data repository, varactor C–V files — the low- and
+  high-Vt varactors compared on the HVTPM page (our
+  extraction).[^raw-data-passives]
 
 ### High-level understanding
 
@@ -227,7 +234,10 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   is not explained by any public source; the retrograde-channel
   compensation reading above is our inference.
 * Energy, dose and the order of `PCHI`/`PNCHI` relative to each other
-  in profile depth are not public.
+  in profile depth are not public. The varactor C–V data show a higher
+  net donor concentration near the surface under the high-Vt implants
+  taken together (inference; see {ref}`HVTPM <step-022>`); they do not
+  show how `PCHI` and `PNCHI` divide it.[^raw-data-passives]
 * This reference does not expand the acronym `PNCHI`; the BF₂ species
   on this page is this reference's inference.
 
@@ -321,3 +331,11 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>

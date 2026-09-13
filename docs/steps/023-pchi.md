@@ -70,6 +70,19 @@ node)[^itrs-01] and that Thompson, Packan and Bohr analysed for its
 drive-current trade-offs.[^thompson-1996] We infer, without public
 confirmation, that `PCHI` and `PNCHI` divide these roles between them.
 
+The high-Vt varactor shows the two implants from another side.
+{ref}`HVTPM <step-022>` sets the published capacitance–voltage sweeps
+of the test tile's two varactor options, which the pad list maps to
+`cap_var_lvt` and `cap_var_hvt`, beside each other: for 98 devices of
+5 × 5 µm the high-Vt option measures 4.60 pF against 2.41 pF at
+−1.8 V, on the low-capacitance side, and 21.04 pF against 21.14 pF at
+1.8 V, into accumulation (our extraction from the published
+measurements; the files record no measurement frequency, temperature,
+date or wafer).[^raw-data-passives][^raw-data-testtile-pads] We read the
+larger depletion capacitance as a higher net donor concentration near
+the well surface under the high-Vt implants taken together; the data
+do not show how `PCHI` and `PNCHI` divide it (inference).
+
 ## How it is typically performed
 
 An industry-generic high-Vt PMOS channel implant for a 200 mm,
@@ -149,6 +162,10 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
 * SKY130 raw-data repository, 1.8 V transistor files — `pfet_01v8_hvt`
   and `pfet_01v8` thresholds and drain currents side by side (our
   extraction).[^raw-data-lv-mosfets]
+* SKY130 raw-data repository, varactor C–V files and test-tile pad
+  documentation — the low- and high-Vt varactors and the pad list that
+  names them; the capacitances quoted here are our
+  extraction.[^raw-data-passives][^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -287,3 +304,17 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
