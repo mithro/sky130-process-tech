@@ -81,7 +81,7 @@ An industry-generic second drift-well implant for a 200 mm,
   750keV"[^axcelis-8250]; Varian E500) for light doses at moderate
   energy, or a **{ref}`high-energy batch implanter <machine-high-energy-implanter>`** (Axcelis GSD/HE) for the
   deep member.
-* **{term}`Four-point probe <four-point probe>`** ({ref}`sheet-resistance metrology <machine-sheet-resistance-metrology>`) metrology on monitor wafers.
+* **{term}`Four-point probe <four-point probe>`** {ref}`metrology <machine-sheet-resistance-metrology>` on monitor wafers.
 
 ## Machines likely used at SkyWater
 
