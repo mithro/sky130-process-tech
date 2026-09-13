@@ -157,7 +157,11 @@ memory (SKY130's recipe is not public):
   its gas list.[^snf-9400]
 * **Applied Materials DPS II** ("HBR, Cl2, NF3, CF4, CHF3, O2 – gate,
   trench")[^skw-01] — has CHF₃ for the oxide layers. Strength: strong
-  for existence; inference for assignment.
+  for existence; **medium** for assignment, as the entry names no
+  nitride application.
+* **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2").[^skw-01] Strength:
+  strong for existence; **weak** for assignment, as the entry names no
+  application.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
   BOE")[^skw-01] — for the BOE clear (and the phosphoric route, if
   used). Strength: strong for existence.

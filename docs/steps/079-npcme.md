@@ -156,7 +156,10 @@ fab (SKY130's recipe is not public):
   label with CF₄/O₂; assignment to this step is an **inference**.
 * **AMAT DPS II** ("HBR, Cl2, NF3, CF4, CHF3, O2 – gate, trench,
   W/WN"[^skw-01]) — carries CF₄/CHF₃ and, being the gate etcher, has
-  the poly-stop chemistries in hand. Strength: medium.
+  the poly-stop chemistries in hand. Strength: **medium**, as the entry
+  names no nitride application.
+* **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01]). Strength:
+  **weak**, as the entry names no application.
 * **Ashers — GaSonics PEP, Iridia, Mattson Aspen II; wet benches —
   Akrion Gamma, DNS, FSI Mercury.**[^skw-01] Strength: strong for
   existence.

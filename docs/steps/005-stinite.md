@@ -95,18 +95,19 @@ page[^pdk-03] is comfortable for a ~200 nm stack).
 
 ## Machines likely used at SkyWater
 
-* **AMAT DPS II (Centura).** SkyWater lists it with CF₄ and CHF₃ among
-  its gases and "trench" among its applications.[^skw-01] Strength:
-  strong that the tool and gases exist; **inference** that this step
-  runs on it.
 * **Lam 9400 TCP.** SkyWater lists "Lam 9400 TCP, poly/nitride, HBr,
   CF4, SF6, O2".[^skw-01] Strength: strong that a nitride-capable TCP
-  etcher exists; inference for this step. The 9400 is a
+  etcher exists; **inference** for this step, the entry being the only
+  one on the list that names nitride. The 9400 is a
   transformer-coupled high-density plasma etcher originally designed
   for polysilicon.[^snf-9400]
+* **AMAT DPS II (Centura).** SkyWater lists it with CF₄ and CHF₃ among
+  its gases and "trench" among its applications.[^skw-01] Strength:
+  strong that the tool and gases exist; **medium** for this step, as
+  the entry names no nitride application.
 * **Lam 4400.** SkyWater lists "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
-  O2".[^skw-01] Strength: strong for existence; a possible legacy home
-  for this etch.
+  O2".[^skw-01] Strength: strong for existence; **weak** for this
+  step, as the entry names no application.
 
 Which of the three carries the isolation nitride etch is not public.
 
