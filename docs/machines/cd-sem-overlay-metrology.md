@@ -269,9 +269,9 @@ sampling plans are not public.
   from the exposure-tool specifications on those pages). SkyWater lists
   APC "feed forward and backwards" without saying where it is
   applied.[^skw-01]
-* **Planarised levels.** SKY130 polishes its trench fill, pre-metal
-  dielectric, tungsten plugs and inter-level oxides
-  ({ref}`category-cmp`), and Plambeck, Knoll and Lord note that
+* **Planarised levels.** On this reference's readings SKY130 polishes
+  its trench fill, pre-metal dielectric, tungsten plugs and inter-level
+  oxides ({ref}`category-cmp`), and Plambeck, Knoll and Lord note that
   "planarized metrology targets can cause overlay measurements to be
   inaccurate as well as imprecise"; the coherence-probe option of the
   5200XP was "optimized for planarized
@@ -280,13 +280,13 @@ sampling plans are not public.
   {ref}`P1M <step-061>` and again after {ref}`P1ME <step-062>` gives the
   etch bias the category page describes; how well the two agree depends on
   the CD algorithm.[^solecky-2002]
-* **Many reticle sets.** The process-steps sheet heads each of the MPW
-  runs it records with its own reticle-set identifier
-  ({ref}`masks-mpw-runs`), so every set needs its own exposure and
+* **Many reticle sets.** The process-steps sheet heads each MPW run's
+  columns with its own identifier, which the public renders site calls
+  the run's reticle set ({ref}`masks-mpw-reticle-sets`), so every set needs its own exposure and
   metrology recipes in the way DeMoor et al. describe for
   ASIC fabs (inference).[^demoor-2000]
-* **Rework.** A lot that fails CD or overlay is stripped and re-exposed
-  before etch ({ref}`category-lithography`); the
+* **Rework.** In a fab of this kind a lot that fails CD or overlay is
+  stripped and re-exposed before etch (industry practice) ({ref}`category-lithography`); the
   {ref}`coat/develop track <machine-coat-develop-track>` runs the rework.
 
 ## Related pages

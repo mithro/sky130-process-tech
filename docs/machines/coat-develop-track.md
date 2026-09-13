@@ -224,9 +224,10 @@ chemical delivery or track exhaust.
 * **Adhesion promoter.** HMDS vapour.[^wiki-litho]
 * **Solvents.** Edge-bead-removal and cup-rinse solvent; the resist's
   casting solvent is driven off in the bake ({ref}`category-lithography`).
-* **Developer.** Metal-ion-free TMAH, 2.38 %,[^microchemicals-dev] from
-  "Air Products & Chemicals, Inc., Moses Lake (developer)" at the time of
-  the S-1,[^sec-01] with temperature-controlled delivery.[^wiki-litho]
+* **Developer.** Typically metal-ion-free TMAH, commonly
+  2.38 %,[^microchemicals-dev] with temperature-controlled
+  delivery;[^wiki-litho] SkyWater's S-1 names "Air Products & Chemicals,
+  Inc., Moses Lake (developer)" without giving its chemistry.[^sec-01]
 * **Water, exhaust and filtration.** Ultrapure water for the develop
   rinse and exhaust from the spin cups and bake plates (industry
   practice); chemical filtration of the track air for chemically
@@ -268,8 +269,9 @@ for HV tip implants (0.3 µm) in the design assumptions.[^pdk-03]
   contribute about 1 nm (our arithmetic); for the chemically amplified
   KrF levels the post-exposure bake is the more sensitive
   step.[^wiki-litho][^smith-mack-2001]
-* **Rework.** A wafer whose CD or overlay fails after develop is stripped
-  and re-coated rather than etched ({ref}`category-lithography`), so the
+* **Rework.** In a fab of this kind a wafer whose CD or overlay fails
+  after develop is stripped and re-coated rather than etched (industry
+  practice; {ref}`category-lithography`), so the
   track also runs rework lots.
 * **Resist kept through several steps.** The {ref}`TUNM <step-035>`
   resist serves an ARC etch, two implants and a wet etch
