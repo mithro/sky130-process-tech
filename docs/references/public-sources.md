@@ -8465,8 +8465,9 @@ to four times those of the same drawn geometries in other modules
 (whose currents are close to the e-test nominals), although their
 thresholds agree; the linear-region currents of the arrays level off
 at a few milliamperes; the sweeps of several `pfet_01v8` structures
-(modules 8405 and 8407) and of the 3/1 µm `pfet_01v8_lvt` of module
-8396 are erratic, and two module-5290 arrays carry about 0.7 µA at zero
+(modules 8405 and 8407) and of the 3/1, 7/8 and 7/0.35 µm
+`pfet_01v8_lvt` of module 8396 are erratic (for the 7/8 µm device only
+below about 0.5 µA), and two module-5290 arrays carry about 0.7 µA at zero
 gate voltage. Every threshold, current and body-effect value quoted
 from these files on this site is our extraction from the published
 measurements, with the method stated where it is quoted. Used on steps

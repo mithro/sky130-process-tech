@@ -206,8 +206,9 @@ the 7/8 µm `nfet_01v8` gives 0.534 V against the VTXNL nominal of
 of 0.700 V. Of the 19 e-test thresholds matched in these modules, 16 of
 the 18 with a usable printed nominal lie within 0.03 V of it; the
 exceptions are two low-Vt PMOS values, 0.668 V against 0.630 V at
-0.42/8 µm and 0.636 V against 0.533 V at 7/0.35 µm, where a second
-7/0.35 µm structure in another module gives 0.536 V. All 18 with usable
+0.42/8 µm and 0.636 V against 0.533 V at 7/0.35 µm; that 7/0.35 µm
+sweep rises irregularly, and a second 7/0.35 µm structure in another
+module, with a smooth sweep, gives 0.536 V. All 18 with usable
 printed limits lie inside them (our extraction from the published
 measurements).[^raw-data-lv-mosfets][^pdk-07] Two entries of the
 PDK's `pfet_01v8_lvt` table cannot be used as printed: the VTCPSN35L
@@ -219,7 +220,9 @@ bias), four of the five e-test currents lie inside their limits and
 within 7 % of nominal: 3.40 mA for the 7/0.15 µm `nfet_01v8` (IDSNS15
 3.510 mA), 1.28 mA and 0.94 mA for the 7/0.15 µm `pfet_01v8` and
 `pfet_01v8_hvt` (1.347 mA and 1.003 mA) and 1.24 mA for the 7/0.35 µm
-`pfet_01v8_lvt` (1.22 mA). The fifth, the 7/0.15 µm `nfet_01v8_lvt` of
+`pfet_01v8_lvt` (1.22 mA), from the same irregular sweep; the smooth
+7/0.35 µm structure in module 8426 with a 2.5 µm source/drain extent
+carries 1.11 mA, also inside the limits. The fifth, the 7/0.15 µm `nfet_01v8_lvt` of
 that module, carries 3.30 mA, below the 3.527 mA lower limit of
 IDSNS15L, while twelve 7/0.15 µm low-Vt NMOS structures in two other
 modules carry 3.67–4.13 mA, inside it (our extraction from the
@@ -381,7 +384,8 @@ difference.[^raw-data-lv-mosfets][^raw-data-testtile-pads]
   constant-current criterion of 100 nA × W/L gives thresholds
   0.05–0.08 V lower for the NMOS types, 0.02–0.09 V lower for the
   standard and high-Vt PMOS and 0.22–0.33 V lower for the low-Vt PMOS
-  (our extraction from the published
+  (0.14 V for the smooth 7/0.35 µm structure of module 8426; our
+  extraction from the published
   measurements).[^raw-data-lv-mosfets][^pdk-07] The PDK's parameter
   names mix `VTX…` and, for the low-Vt PMOS, `VTC…` without explaining
   either.[^pdk-07]
