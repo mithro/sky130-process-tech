@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 164 of 171 |
+| **Step number** | 164 of 171[^steps-sheet] |
 | **Step code** | `NFUSOX` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | BEOL — passivation, pads, alloy, test |
@@ -378,3 +378,6 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
     circuits and functions*, US 6,492,716 B1, filed 2001-04-30, granted
     2002-12-10.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6492716>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
