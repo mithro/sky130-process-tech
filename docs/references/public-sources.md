@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1160
+written page has exactly one entry here; the inventory holds 1174
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -8884,6 +8884,149 @@ resonator modules for high-energy implanters; its background calls
 1.5 MeV "typical for the deep implants", requires 300–700 keV capability
 and names the "Eaton GSD/HE and GSD/VHE ion implanters". Used on the
 high-energy implanter page. Tier: cross-check (patent).
+
+#### Thermal-processing machine pages
+
+Sources introduced for the five thermal-processing machine pages
+(vertical batch furnace for oxidation, for LPCVD and for anneal and
+alloy; rapid thermal processor; plasma nitridation chamber), grouped by
+the page that first cited them. Every URL was fetched on 2026-09-13 with
+the documentation checker's user agent; pages that no longer serve their
+content were read from the Wayback Machine capture named in the entry.
+Papers were checked through Crossref (bibliographic data) and OpenAlex
+(abstracts), and patents through Google Patents (bibliographic data,
+abstract and the passages quoted), on the same date; the annotations of
+papers rest on their abstracts.
+
+##### Vertical batch furnace: oxidation (first cited there)
+
+**EXPERTECH-VTR** — Expertech, *VTR7000PLUS Thermal Reactor | Vertical
+Diffusion Furnaces*, product page, accessed 2026-09-13.
+<https://www.exper-tech.com/products/vertical-thermal-reactor> The
+vertical thermal reactor "originated by Silicon Valley Group (SVG)", with
+"over 1000 VTR systems currently in production use worldwide", "a unique
+dual-boat design", a "ULPA-filtered Class 1 loading area", "a
+double-walled process tube to eliminate film particle formation near the
+loading door", loads of "150 product, test, and filler wafers" and a
+heating element of "600-1200° C (Up to 1250° C for > 4 Hours)". Used on
+the vertical-furnace oxidation, LPCVD and anneal pages. Tier:
+cross-check (vendor statement).
+
+**PAT-TORCH-DRIMER** — G. Drimer, A. Glaser and D. M. Rowell, *Fast,
+safe, pyrogenic external torch assembly*, US 5,257,926 A, filed
+1991-12-17, granted 1993-11-02.
+<https://patents.google.com/patent/US5257926A/en> An external
+hydrogen–oxygen torch that "provides pure steam for semiconductor
+processing"; its background describes the "Pyrogenic Internal Torch", the
+"+/-0.5° C. temperature stabilization" oxide uniformity requires, and the
+parts of earlier external torches. Used on the vertical-furnace oxidation
+page. Tier: cross-check (patent).
+
+**PAT-VF-INSULATION-TEL** — T. Shimazu (Tokyo Electron), *Vertical heat
+treatment apparatus*, US 5,709,543 A, filed 1996-09-04, granted
+1998-01-20. <https://patents.google.com/patent/US5709543A/en> A vertical
+furnace whose substrate holder stands on a cap closing "the bottom
+opening (furnace throat)" through a heat-insulation structure of "thin
+heat insulation plates"; describes the load, nitrogen purge, heat-up and
+process sequence. Used on the vertical-furnace oxidation page. Tier: deep
+dive (patent).
+
+**PAT-LOADLOCK-KOKUSAI** — M. Shimada (Kokusai Electric), *Semiconductor
+fabricating apparatus, method for controlling oxygen concentration within
+load-lock chamber and method for generating native oxide*, US 5,735,961
+A, filed 1996-05-16, granted 1998-04-07.
+<https://patents.google.com/patent/US5735961A/en> A vertical-furnace
+load lock purged to "oxygen concentration less than 1 ppm" or held at
+"1-100 ppm" to grow a native oxide of "1-2 atomic layers" before loading
+into a tube at "approx. 750° C." Used on the vertical-furnace oxidation
+page. Tier: cross-check (patent).
+
+**TEL-TELINDY** — Tokyo Electron, *Deposition TELINDY Series*, product
+page (including the ALPHA-8SE i), accessed 2026-09-13.
+<https://www.tel.com/product/telindy.html> The ALPHA-8SE i, "a vertical
+batch thermal processing system for 200mm wafers", "Released in 2018" as
+a remodel of the ALPHA-8SE, for "150/200mm wafers in a batch of up to 150"
+and "oxidation/annealing, chemical vapor deposition (CVD) of Si (Poly,
+a-Si), SiN, and SiO₂ films"; "more than two decades have passed since the
+release of ALPHA-8SE". Used on the vertical-furnace oxidation, LPCVD and
+anneal pages. Tier: cross-check (vendor statement).
+
+**TEL-ALPHA8SE** — Semiconductor Online, *Thermal Processing Applications
+— Alpha-8SE* (Tokyo Electron America product description), undated,
+accessed 2026-09-13.
+<https://www.semiconductoronline.com/doc/thermal-processing-applications-alpha-8se-0001>
+TEL's "Alpha-8 series diffusion and LP-CVD furnaces", with the Alpha-8SE
+generation aimed at devices "that require sub-0.18 micron design rules".
+Used on the vertical-furnace oxidation, LPCVD and anneal pages. Tier:
+high-level (vendor description reproduced by a trade site).
+
+**AVIZA-VERT** — Aviza Technology, *Vertical Processors*, product page,
+2005; Wayback Machine capture of 2005-11-08.
+<https://web.archive.org/web/20051108133056/http://www.avizatechnology.com/products/vert.htm>
+The AVP/RVP, Aviza's "third-generation vertical diffusion furnaces", with
+"Dual boat feature, fast temperature ramping and Advanced Temperature
+Control (ATC)", described as "smallest footprint systems for 150/200mm
+wafer processing"; the 300 mm RVP-300 with "sequential processing for
+nitrided oxides or composite oxide-nitride stacks". Used on the
+vertical-furnace oxidation, LPCVD and anneal pages. Tier: cross-check
+(vendor statement).
+
+**PAT-BOAT-TEL** — T. Osawa (Tokyo Electron), *Boat for heat treatment*,
+US 5,820,367 A, filed 1996-09-18, granted 1998-10-13.
+<https://patents.google.com/patent/US5820367A/en> A vertical-furnace boat
+with annular ring supports so that "a surface defect called a slip
+generated when the wafer is heat treated can be eliminated". Used on the
+vertical-furnace oxidation page. Tier: deep dive (patent).
+
+**PAT-VF-TRANSFER-TEL** — T. Tanahashi (Tokyo Electron; Tokyo Electron
+Tohoku), *Vertical heat treatment apparatus with a circulation gas
+passage*, US 5,551,984 A, filed 1994-12-05, granted 1996-09-03.
+<https://patents.google.com/patent/US5551984A/en> Filtered gas
+circulation in the transfer chamber below a vertical furnace, which "can
+be in the form of a load-lock chamber, and the gas streams are nitrogen
+gas streams", with PTFE filter material. Used on the vertical-furnace
+oxidation page. Tier: deep dive (patent).
+
+**PAT-TORCH-PERSYS** — G. Drimer, L. Mendelovici and N. Borivker (Persys
+Technology), *Compact external torch assembly for semiconductor
+processing*, US 6,179,609 B1, filed 1999-07-02, granted 2001-01-30.
+<https://patents.google.com/patent/US6179609B1/en> A torch used "both to
+produce steam and to perform wet or dry dichlorethylene (DCE) oxidation".
+Used on the vertical-furnace oxidation page. Tier: deep dive (patent).
+
+**PAT-TORCH-YAMAHA** — T. Yuuki (Yamaha), *Pyrogenic wet thermal
+oxidation of semiconductor wafers*, US 5,633,212 A, filed 1994-07-22,
+granted 1997-05-27. <https://patents.google.com/patent/US5633212A/en>
+Steam from "an external gas burner" fed to the top of the process tube,
+with dilute nitrogen admitted until the flame is stable "so as to
+suppress the initial oxidation". Used on the vertical-furnace oxidation
+page. Tier: deep dive (patent).
+
+**RAZOUK-1979** — R. R. Razouk and B. E. Deal, "Dependence of Interface
+State Density on Silicon Thermal Oxidation Process Variables", *Journal
+of The Electrochemical Society* **126**(9), 1573–1581 (1979).
+<https://doi.org/10.1149/1.2129333> Interface-state density against
+oxidation ambient, anneal and cooling ambient, temperature and
+orientation; oxides cooled in nitrogen or argon show large densities that
+a low-temperature hydrogen anneal reduces. Used on the vertical-furnace
+oxidation and anneal pages. Tier: deep dive.
+
+**AVIZA-COMPANY** — Aviza Technology, *Company*, web page, 2005; Wayback
+Machine capture of 2005-11-24.
+<https://web.archive.org/web/20051124224446/http://www.avizatechnology.com/company/index.htm>
+Aviza "Established in October 2003", tracing "its roots back to 1962 to
+the establishment of Thermco, an Orange, California-based supplier of
+heater element assemblies", with thermal furnace, ALD and APCVD product
+lines. Used on the vertical-furnace oxidation page. Tier: cross-check
+(vendor statement).
+
+**AVIZA-NEWS** — Aviza Technology, *News* (index of press releases and
+events), web page, 2005; Wayback Machine capture of 2005-12-04.
+<https://web.archive.org/web/20051204025122/http://www.avizatechnology.com/news/index.htm>
+Lists the press release of 2004-11-08 "TETREON TECHNOLOGIES ACQUIRES
+THERMCO HORIZONTAL FURNACES FROM AVIZA TECHNOLOGY" (the release itself is
+not archived). Used on the vertical-furnace oxidation and anneal pages.
+Tier: cross-check (vendor statement).
 
 ## 9. Evidence about specific tools at SkyWater
 
