@@ -268,8 +268,9 @@ which process.
 The furnace, RTA and asher entries are SkyWater statements and rank as
 **strong** evidence, on the scale of the
 {ref}`machines index <machines-reading-evidence>`, that oxygen, steam
-from hydrogen, argon, nitrogen and hydrogen are used at the fab; as for
-the tools, the list describes the whole fab in the 2020s and ties no gas
+(by an unstated method), argon, nitrogen and hydrogen are used at the
+fab; that the steam is pyrogenic is industry practice, not a SkyWater
+statement. As for the tools, the list describes the whole fab in the 2020s and ties no gas
 to a step.[^skw-01] The EPA record is a regulatory filing about the
 Bloomington facility and is strong for the use of N₂O somewhere in its
 processes, weak for any SKY130 step.[^epa-ghgrp-skywater] The supplier
