@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1667
+written page has exactly one entry here; the inventory holds 1665
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -13537,28 +13537,6 @@ SkyWater Minnesota "ISO9001", "AS9100", "IATF16949", "ISO13485" and
 hardware consumables material page. Tier: cross-check (SkyWater
 statement).
 
-**EPA-GHGRP-SKYWATER** — US Environmental Protection Agency, Greenhouse
-Gas Reporting Program, Envirofacts `pub_dim_facility` records matching
-"SKYWATER", retrieved 2026-09-13.
-<https://data.epa.gov/efservice/pub_dim_facility/facility_name/CONTAINING/SKYWATER/JSON>
-Facility 1000354, "SKYWATER TECHNOLOGY FOUNDRY INC" (to 2013) and
-"SKYWATER TECHNOLOGY INC" (from 2014), 2401 E. 86th St., Bloomington,
-MN, NAICS 334413; reported subparts "C" for 2010 and "C,I" for each year
-2011–2023. Names no abatement system. Used on the hardware consumables
-material page. Tier: cross-check (regulator data).
-
-**EPA-SUBPART-I** — US Environmental Protection Agency, *Electronics
-Manufacturing: Subpart I, Greenhouse Gas Reporting Program*, information
-sheet, December 2024, accessed 2026-09-13.
-<https://www.epa.gov/system/files/documents/2024-04/i_electronics_infosheet_2024.pdf>
-Defines the source category (fluorine plasma etch, chamber clean and
-wafer clean, N₂O in CVD, fluorinated heat-transfer fluids); facilities
-report fluorinated GHG and N₂O emissions, "Controlled emissions of GHGs
-from abatement systems, if applicable", and an "Inventory and
-description of all abatement systems" for which destruction or removal
-efficiency is claimed. Used on the hardware consumables material page.
-Tier: cross-check (regulator guidance).
-
 **MPCA-2025** — Minnesota Pollution Control Agency, *SkyWater Technology
 fined more than $97,000 for violations with their air permit, federal
 regulations and Minnesota rules*, news release, 2025-02-04, accessed
@@ -13754,6 +13732,7 @@ Minnesota; "SKYWATER TECHNOLOGY FOUNDRY INC" for 2010–2013 and
 retrieved 2026-09-13.
 <https://data.epa.gov/efservice/PUB_DIM_FACILITY/FACILITY_ID/1000354/JSON>
 <https://data.epa.gov/efservice/PUB_FACTS_SUBP_GHG_EMISSION/FACILITY_ID/1000354/SUB_PART_ID/43/JSON>
+<https://data.epa.gov/efservice/pub_dim_facility/facility_name/CONTAINING/SKYWATER/JSON>
 Public regulatory data (retrieved through the Envirofacts web service).
 The facility table gives reported subparts "C" for 2010 and "C,I" for
 2011–2023, NAICS 334413, and parent company "Cypress Semiconductor
@@ -13771,6 +13750,8 @@ fluorinated GHGs 2141, NF₃ 1441.36, N₂O 185.058, HFEs 82.1; PFCs were
 tools. Used on the process gases material page. Tier: cross-check
 (regulatory filing data).
 Also used on the etch and chamber-clean gases material page.
+Also used on the hardware consumables material page, which notes that
+the records name no abatement system.
 
 **EPA-GHGRP-SUBPART-I** — U.S. Environmental Protection Agency,
 *Electronics Manufacturing: Subpart I, Greenhouse Gas Reporting
@@ -13786,9 +13767,11 @@ CVD and other production processes" and "Controlled emissions of GHGs
 from abatement systems, if applicable"; per-fab reporting by process
 type; a facility "must determine the total annual emissions of each
 fluorinated GHG emitted", "including each input gas and each by-product
-gas". Used on the process gases material page. Tier: cross-check
-(regulatory guidance).
+gas"; and an "Inventory and description of all abatement systems" for
+which destruction or removal efficiency is claimed. Used on the process
+gases material page. Tier: cross-check (regulatory guidance).
 Also used on the etch and chamber-clean gases material page.
+Also used on the hardware consumables material page.
 
 **NIOSH-HCL** — National Institute for Occupational Safety and Health,
 *NIOSH Pocket Guide to Chemical Hazards: Hydrogen chloride*, CDC; read
