@@ -218,8 +218,9 @@ diagram[^pdk-04]); the aluminium limit of roughly
 ## Resources required
 
 * **Silane, nitrous oxide, ammonia**, with **nitrogen or helium**
-  diluent;[^denisse-1986][^wiki-pecvd] gas suppliers per SkyWater's
-  filings.[^sec-01]
+  diluent.[^denisse-1986][^wiki-pecvd] Gas suppliers named in SkyWater's
+  filings: Air Products and Praxair (2021 S-1), Linde and Airgas (fiscal
+  2023 10-K).[^sec-01][^sec-02]
 * **NF₃** for the chamber clean; **nitrogen** purge.
 * **Showerhead, heater and liner consumables**; **monitor wafers** with
   the metal-4 stack for thickness and capacitance checks.
@@ -374,6 +375,9 @@ diagram[^pdk-04]); the aluminium limit of roughly
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
 [^ann-11]: SkyWater / Efabless, *First Google-Sponsored MPW Shuttle
     Launched at SkyWater with 40 Open Source Community Submitted
     Designs*, 2021-04-06.

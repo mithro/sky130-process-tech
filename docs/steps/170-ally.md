@@ -170,7 +170,8 @@ an aluminium back end (SKY130's recipe is not public):
 
 * **Forming gas** (H₂ in N₂; "5% H2 in N2" is the typical formulation
   Wikipedia gives[^wiki-fg]) or **hydrogen** and **nitrogen** supplied
-  separately; gas suppliers named by SkyWater's filings.[^sec-01]
+  separately. Gas suppliers named in SkyWater's filings: Air Products and
+  Praxair (2021 S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 * **Quartz tube, boats and baffles**; a hydrogen-rated gas panel with
   leak detection and purge interlocks.
 * **Monitor wafers** (SEMI M8 class)[^semi-m8] with MOS capacitors.
@@ -197,7 +198,8 @@ an aluminium back end (SKY130's recipe is not public):
   nitride thicknesses at Fab 4.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
 * Moov, *Aviza / SVG / Thermco AVP 8000* listing; ASM International,
   *Vertical furnace*.[^aviza-avp][^asm-vf]
-* SkyWater, Form S-1 — gas suppliers.[^sec-01]
+* SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
+  suppliers.[^sec-01][^sec-02]
 
 ### High-level understanding
 
@@ -280,6 +282,9 @@ an aluminium back end (SKY130's recipe is not public):
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
 [^aviza-avp]: Moov used-equipment marketplace, *Aviza / SVG / Thermco
     AVP 8000* listing, accessed 2026-08-30.
     <https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>

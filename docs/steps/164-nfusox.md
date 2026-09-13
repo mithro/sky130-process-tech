@@ -161,11 +161,12 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **TEOS** (liquid, vaporised) and **oxygen**, or **silane** and
-  **N₂O** for the silane route;[^wiki-teos][^wiki-pecvd] **helium**,
-  **nitrogen** or **argon** as carrier or diluent (typical; the PECVD
-  article describes TEOS deposition "in an oxygen or oxygen-argon
-  plasma"[^wiki-pecvd]); gas suppliers per SkyWater's filings.[^sec-01]
+* **TEOS** (liquid, vaporised) and **oxygen**, or **silane** and **N₂O** for
+  the silane route;[^wiki-teos][^wiki-pecvd] **helium**, **nitrogen** or
+  **argon** as carrier or diluent (typical; the PECVD article describes TEOS
+  deposition "in an oxygen or oxygen-argon plasma"[^wiki-pecvd]). Gas
+  suppliers named in SkyWater's filings: Air Products and Praxair (2021
+  S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 * **NF₃** for the chamber clean; **nitrogen** purge.
 * **Showerhead, heater and liner consumables**; **monitor wafers**.
 
@@ -202,7 +203,8 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 * Cypress, QTP 113005 (2013) — "7000 +/- 2000A Nitride".[^cyp-qtp-113005]
 * SkyWater, *Facilities & Capabilities* — PECVD TEOS and silane oxide
   entries.[^skw-01]
-* SkyWater, Form S-1 — gas suppliers.[^sec-01]
+* SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
+  suppliers.[^sec-01][^sec-02]
 
 ### High-level understanding
 
@@ -304,6 +306,9 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
 [^novellus-history]: Encyclopedia.com, *Novellus Systems, Inc.*
     (company history: Concept One/Two, Sequel, SPEED, Altus).
     <https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>
