@@ -204,7 +204,9 @@ By the same extrapolation at |V_DS| = 0.1 V, less half the drain bias,
 the 7/8 µm `nfet_01v8` gives 0.534 V against the VTXNL nominal of
 0.541 V and the 7/0.15 µm device 0.707 V against the VTXNS15 nominal
 of 0.700 V. Of the 19 e-test thresholds matched in these modules, 16 of
-the 18 with a usable printed nominal lie within 0.03 V of it; the
+the 18 with a usable printed nominal lie within 0.03 V of it (two of
+them at 0.029 V, so the count depends on how the transconductance is
+differentiated); the
 exceptions are two low-Vt PMOS values, 0.668 V against 0.630 V at
 0.42/8 µm and 0.636 V against 0.533 V at 7/0.35 µm; that 7/0.35 µm
 sweep rises irregularly, and a second 7/0.35 µm structure in another
