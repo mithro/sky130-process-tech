@@ -124,9 +124,9 @@ reading is used throughout these pages and is marked as an inference.
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
-  Canon FPA-3000i), or a KrF tool (category page).
-* **Coat/develop track**; **overlay metrology** and a {term}`CD-SEM` for
+* **{ref}`i-line stepper <machine-i-line-stepper>`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
+  Canon FPA-3000i), or a {ref}`KrF tool <machine-duv-krf-stepper>` (category page).
+* **{ref}`Coat/develop track <machine-coat-develop-track>`**; **{ref}`overlay metrology <machine-cd-sem-overlay-metrology>`** and a {term}`CD-SEM` for
   periodic checks.
 
 ## Machines likely used at SkyWater

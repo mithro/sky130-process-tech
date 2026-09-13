@@ -135,11 +135,11 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm: ASML PAS 5500/100–/275 series, Nikon
+* **{ref}`i-line stepper <machine-i-line-stepper>`**, 200 mm: ASML PAS 5500/100–/275 series, Nikon
   NSR-2205i, Canon FPA-3000i[^txt-05] (see the category page).
-* **Coat/develop track** linked to the stepper (TEL, DNS/SCREEN,
+* **{ref}`Coat/develop track <machine-coat-develop-track>`** linked to the stepper (TEL, DNS/SCREEN,
   SVG/ASML, Sokudo).
-* **Overlay metrology** (KLA-Tencor 5xxx/Archer class) and a {term}`CD-SEM` for
+* **{ref}`Overlay metrology <machine-cd-sem-overlay-metrology>`** (KLA-Tencor 5xxx/Archer class) and a {term}`CD-SEM` for
   periodic checks.
 
 ## Machines likely used at SkyWater

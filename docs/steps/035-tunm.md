@@ -147,11 +147,11 @@ and the pre-oxidation clean as part of those steps (see the
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm, 5× reduction: ASML PAS 5500/100–/275,
+* **{ref}`i-line stepper <machine-i-line-stepper>`**, 200 mm, 5× reduction: ASML PAS 5500/100–/275,
   Nikon NSR-2205i, Canon FPA-3000i ({ref}`category-lithography`).
-* **Coat/develop track** with BARC and resist coat, bake and develop
+* **{ref}`Coat/develop track <machine-coat-develop-track>`** with BARC and resist coat, bake and develop
   modules (TEL, DNS/SCREEN, Sokudo).
-* **Overlay and CD metrology** (KLA-Tencor overlay tools, {term}`CD-SEM`).
+* **{ref}`Overlay and CD metrology <machine-cd-sem-overlay-metrology>`** (KLA-Tencor overlay tools, {term}`CD-SEM`).
 * **After-develop inspection** (optical patterned-wafer inspection).
 
 ## Machines likely used at SkyWater
