@@ -86,7 +86,7 @@ An industry-generic heavy-implant-resist strip for a 200 mm,
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** with forming-gas capability (GaSonics
   Aura/PEP, Mattson Aspen, Axcelis/Fusion ES, PSK).
 * **{ref}`Batch wet bench <machine-wet-bench>`** (SPM, SC-1, SC-2) or **{ref}`spray processor <machine-wet-bench>`**.
-* **Surface scanner** and **patterned-wafer inspection**.
+* **{ref}`Surface scanner <machine-defect-inspection>`** and **patterned-wafer inspection**.
 
 ## Machines likely used at SkyWater
 

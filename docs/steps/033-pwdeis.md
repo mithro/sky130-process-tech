@@ -91,7 +91,7 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
   Axcelis/Fusion ES, PSK).
 * **{ref}`Batch wet bench <machine-wet-bench>`** with SPM, SC-1, SC-2 and rinser/dryer, or a
   **{ref}`spray <machine-wet-bench>`/{ref}`single-wafer processor <machine-single-wafer-spin-processor>`** for the {term}`RCA clean`.
-* **Surface scanner** (KLA-Tencor Surfscan class).
+* **{ref}`Surface scanner <machine-defect-inspection>`** (KLA-Tencor Surfscan class).
 
 ## Machines likely used at SkyWater
 

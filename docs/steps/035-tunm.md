@@ -152,7 +152,7 @@ and the pre-oxidation clean as part of those steps (see the
 * **{ref}`Coat/develop track <machine-coat-develop-track>`** with BARC and resist coat, bake and develop
   modules (TEL, DNS/SCREEN, Sokudo).
 * **{ref}`Overlay and CD metrology <machine-cd-sem-overlay-metrology>`** (KLA-Tencor overlay tools, {term}`CD-SEM`).
-* **After-develop inspection** (optical patterned-wafer inspection).
+* **{ref}`After-develop inspection <machine-defect-inspection>`** (optical patterned-wafer inspection).
 
 ## Machines likely used at SkyWater
 

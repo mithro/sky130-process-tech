@@ -113,7 +113,7 @@ fab (SKY130 values are not public):
 * If the batch {ref}`high-energy tool <machine-high-energy-implanter>` has just run `NWI`/`NWI2`, some fabs run
   the channel implant on it too to avoid a cassette move; both tool
   classes cover tens of keV.
-* **Thermal-wave** metrology for dose control.
+* **{ref}`Thermal-wave <machine-sheet-resistance-metrology>`** metrology for dose control.
 
 ## Machines likely used at SkyWater
 

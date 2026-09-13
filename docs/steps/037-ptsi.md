@@ -139,7 +139,7 @@ memory transistor (SKY130's values are not public):
   (Eaton) 8250 class, Varian E220/E500, Applied Materials xR
   ({ref}`category-implant`). The 8250HT covers "3keV to 750keV" with
   beam currents "between 4µA and 3,500µA".[^axcelis-8250]
-* **Thermal-wave** and **four-point-probe** metrology.
+* **{ref}`Thermal-wave <machine-sheet-resistance-metrology>`** and **four-point-probe** metrology.
 
 ## Machines likely used at SkyWater
 

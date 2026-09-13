@@ -168,7 +168,7 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 * **{ref}`Medium-current ion implanter <machine-medium-current-implanter>`**, 200 mm, single-wafer: Axcelis
   (Eaton) 8250 class ("3keV to 750keV"[^axcelis-8250]), Varian
   E220/E500, Applied Materials xR ({ref}`category-implant`).
-* **Thermal-wave** metrology.
+* **{ref}`Thermal-wave <machine-sheet-resistance-metrology>`** metrology.
 
 ## Machines likely used at SkyWater
 
