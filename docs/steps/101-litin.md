@@ -156,7 +156,7 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 * **{ref}`Cluster PVD system <machine-pvd-cluster-tool>`**, 200 mm, with degas, pre-clean and reactive
   TiN chambers: Applied Materials Endura,[^amat-endura][^amat-1997]
   Novellus INOVA, MRC Eclipse, Varian M2i (category page).
-* **Four-point probe**, **XRF**, **stress gauge**, **reflectometer**.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`**, **{ref}`XRF <machine-film-thickness-metrology>`**, **stress gauge**, **reflectometer**.
 
 ## Machines likely used at SkyWater
 

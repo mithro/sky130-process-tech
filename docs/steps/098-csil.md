@@ -154,8 +154,7 @@ fab (SKY130's recipe is not public):
   8108/8800 series, Applied Materials RTP Centura (the Gronet and
   Gibbons chamber[^pat-rtp-amat]), Steag/Mattson RTP, Kokusai and TEL
   RTP (category page).
-* **Four-point probe** for silicide monitors; **contact-chain test
-  structures**.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`** for silicide monitors; **{ref}`contact-chain test structures <machine-parametric-tester>`**.
 
 ## Machines likely used at SkyWater
 

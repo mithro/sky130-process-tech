@@ -147,8 +147,7 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
   (multi-station),[^novellus-history] Applied Materials Producer or
   Centura DxZ (category page).
 * **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** with BTBAS/NH₃ as the alternative.
-* **Spectroscopic ellipsometer**, **stress gauge**, **cross-section
-  SEM**.
+* **{ref}`Spectroscopic ellipsometer <machine-film-thickness-metrology>`**, **stress gauge**, **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**.
 
 ## Machines likely used at SkyWater
 

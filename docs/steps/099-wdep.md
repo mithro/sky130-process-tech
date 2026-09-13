@@ -140,8 +140,7 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 * **{ref}`CVD tungsten reactor <machine-tungsten-cvd>`**, 200 mm: Novellus Concept Two Altus and
   Altus with {term}`PNL`,[^novellus-history] Applied Materials Centura WxZ,
   Genus and Ulvac tungsten systems (category page).
-* **Four-point probe**, **XRF**, **stress gauge**, **cross-section
-  SEM**.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`**, **{ref}`XRF <machine-film-thickness-metrology>`**, **stress gauge**, **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**.
 
 ## Machines likely used at SkyWater
 

@@ -140,8 +140,8 @@ fab (SKY130's recipe is not public):
   SpeedFam-IPEC Avanti 472, Strasbaugh 6DS-SP (category page).
 * **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam DSS-200, Applied Mesa
   integrated cleaner).
-* **Optical film-thickness mapper**; **profilometer/AFM**;
-  **unpatterned defect inspection**.
+* **{ref}`Optical film-thickness mapper <machine-film-thickness-metrology>`**; **{ref}`profilometer/AFM <machine-cross-section-sem-profilers>`**;
+  **{ref}`unpatterned defect inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 
