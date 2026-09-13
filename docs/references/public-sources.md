@@ -13779,7 +13779,9 @@ fluids); facilities report "Fluorinated GHG emissions from electronic
 manufacturing production processes and HTF use", "N2O emissions from
 CVD and other production processes" and "Controlled emissions of GHGs
 from abatement systems, if applicable"; per-fab reporting by process
-type. Used on the process gases material page. Tier: cross-check
+type; a facility "must determine the total annual emissions of each
+fluorinated GHG emitted", "including each input gas and each by-product
+gas". Used on the process gases material page. Tier: cross-check
 (regulatory guidance).
 Also used on the etch and chamber-clean gases material page.
 
