@@ -235,6 +235,10 @@ public.[^skw-01]
 
 ## Consumables and facilities
 
+The precursors, process gases and chamber-clean gases are described on
+the {ref}`precursors <material-precursors>`,
+{ref}`process gases <material-process-gases>` and
+{ref}`etch and chamber-clean gases <material-etch-gases>` pages.
 The process gases are listed in the {ref}`materials index
 <materials-index>`; what is specific to a tungsten CVD tool is
 summarised here. None of the SkyWater sources describes the fab's gas
@@ -312,6 +316,13 @@ thicknesses are not public.
   gases.
 * {ref}`material-hardware-consumables` — chamber parts and exhaust
   abatement.
+* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
+  ammonia, SiF₄, ozone and WF₆.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
+* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases.
 
 ## References
 

@@ -282,6 +282,8 @@ names collimation for titanium and IMP for TiN.
 
 ## Consumables and facilities
 
+The process gases are described on the
+{ref}`process gases <material-process-gases>` page.
 The targets are described on the
 {ref}`sputter targets <material-sputter-targets>` page; targets and
 process gases are listed in the {ref}`materials index
@@ -373,6 +375,9 @@ its film thicknesses are not public.
   and suppliers.
 * {ref}`material-hardware-consumables` — chamber parts and exhaust
   abatement.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
 
 ## References
 

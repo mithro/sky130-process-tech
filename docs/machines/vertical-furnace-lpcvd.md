@@ -240,6 +240,9 @@ as the batch alternative).[^skw-01]
 
 ## Consumables and facilities
 
+The precursors and process gases are described on the
+{ref}`precursors <material-precursors>` and
+{ref}`process gases <material-process-gases>` pages.
 The precursor gases are listed in the
 {ref}`materials index <materials-index>`; what is specific to a batch
 LPCVD furnace is summarised here. None of the SkyWater sources describes
@@ -320,6 +323,11 @@ pressures and thicknesses are not public.
   the gate silicon.
 * {ref}`material-hardware-consumables` — furnace ware, traps and
   abatement.
+* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
+  ammonia, SiF₄, ozone and WF₆.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
 
 ## References
 

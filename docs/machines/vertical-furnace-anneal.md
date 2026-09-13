@@ -210,6 +210,8 @@ forming gas;[^skw-01] the furnace grades for
 
 ## Consumables and facilities
 
+The process gases are described on the
+{ref}`process gases <material-process-gases>` page.
 The gases are listed in the {ref}`materials index <materials-index>`;
 what is specific to an anneal and alloy furnace is summarised here. None
 of the SkyWater sources describes the fab's hydrogen supply or furnace
@@ -292,6 +294,9 @@ ambients are not public.
   ambients.
 * {ref}`material-hardware-consumables` — furnace ware, traps and
   abatement.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
 
 ## References
 

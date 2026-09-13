@@ -236,6 +236,9 @@ but grade the Heatpulse as weak.
 
 ## Consumables and facilities
 
+The process gases and precursors are described on the
+{ref}`process gases <material-process-gases>` and
+{ref}`precursors <material-precursors>` pages.
 The gases are listed in the {ref}`materials index <materials-index>`;
 what is specific to a lamp-heated RTP tool is summarised here. None of
 the SkyWater sources describes the fab's RTP facilities. Lamps, quartz
@@ -318,6 +321,11 @@ not public.
   the anneals.
 * {ref}`material-hardware-consumables` — lamps, quartz and other RTP
   parts.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
+* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
+  ammonia, SiF₄, ozone and WF₆.
 
 ## References
 

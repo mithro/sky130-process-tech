@@ -261,6 +261,8 @@ tool offers as a batch process.[^skw-01]
 
 ## Consumables and facilities
 
+The process gases are described on the
+{ref}`process gases <material-process-gases>` page.
 The gases and quartzware of oxidation are listed in the
 {ref}`materials index <materials-index>` and on the
 {ref}`category page <category-oxidation>`; what is specific to the
@@ -359,6 +361,9 @@ and thicknesses are not public.
 * {ref}`category-strip` — the pre-furnace cleans on the listed benches.
 * {ref}`material-hardware-consumables` — furnace ware, traps and
   abatement.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
 
 ## References
 
