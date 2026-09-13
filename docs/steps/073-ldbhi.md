@@ -132,9 +132,9 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 
 ## Resources required
 
-* **Boron trifluoride (BF₃)** for ¹¹B⁺ or BF₂⁺.[^wiki-bf3]
+* **{ref}`Boron trifluoride <material-dopant-sources>` (BF₃)** for ¹¹B⁺ or BF₂⁺.[^wiki-bf3]
 * **Source-support gases**, source consumables, high-purity
-  **nitrogen** for venting.
+  **{ref}`nitrogen <material-process-gases>`** for venting.
 * **Helium** for platen cooling; **liquid nitrogen** or cryopump
   regeneration.
 * **{ref}`Monitor wafers <material-substrates>`**.
