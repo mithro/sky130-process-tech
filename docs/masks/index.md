@@ -108,6 +108,7 @@ second column links to it.
 :maxdepth: 1
 
 dnm
+p1m
 ```
 
 In the table:
@@ -143,7 +144,7 @@ In the table:
 | {ref}`RPM <step-049>` | Resistor Protect, RPM — `X` | `crpm` mask 96:0 | `rpm` 86:20; `urpm` 79:20 *(inference)* | {ref}`P1I <step-050>`; strip {ref}`P1IS <step-051>` | `RPMCD` 1.27 / `RPMCDSP` 0.84 |
 | {ref}`RRPM <step-052>` | *not listed* | none | `rpm` 86:20, alone or less `urpm` 79:20 *(inference)* | {ref}`PRI <step-053>`; strip {ref}`PRIS <step-054>` | none listed |
 | {ref}`URPM <step-055>` | *not listed* | none | `urpm` 79:20 *(inference)* | {ref}`UPRI <step-056>`; strip {ref}`UPRIS <step-057>` | none listed |
-| {ref}`P1M <step-061>` | Poly 1, P1M — `X` | `cp1m` mask 28:0; mask add 33:43, mask drop 33:42, waffle drop 33:24 | `poly` 66:20 (also purposes gate 66:9, resistor 66:13) | {ref}`P1ME <step-062>` | `P1MCD` N/A / `P1MCDSP` 0.14; "Endcap/Gap" `P1G` 0.15 / 0.21 |
+| {ref}`P1M <step-061>` | Poly 1, {ref}`P1M <mask-p1m>` — `X` | `cp1m` mask 28:0; mask add 33:43, mask drop 33:42, waffle drop 33:24 | `poly` 66:20 (also purposes gate 66:9, resistor 66:13) | {ref}`P1ME <step-062>` | `P1MCD` N/A / `P1MCDSP` 0.14; "Endcap/Gap" `P1G` 0.15 / 0.21 |
 | {ref}`NTM <step-064>` | N-tip Implant, NTM — `X` | `cntm` mask 27:0; drawing 26:20, mask add 26:21, mask drop 26:22 | no drawn `ntm` layer; derived from the device layers *(inference)* | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`; strip {ref}`ASTIS <step-067>` | `NTMCD` 0.84 / `NTMCDSP` 0.7 |
 | {ref}`HVNTM <step-068>` | High Volt. N-tip, HVNTM — `X` | `chvntm` mask 39:0; drawing 38:20 | `hvntm` 125:20, "OR-ed with the CL" (the `hvntm` rules)[^pdk-periph] | {ref}`HVASTI <step-069>`; strip {ref}`HVASTIS <step-070>` | `HVNTMCD` 0.7 / `HVNTMCDSP` 0.7 |
 | {ref}`LDNTM <step-071>` | Lightly Doped N-tip, LDNTM — `X` | `cldntm` mask 11:0 | `ldntm` 11:44 | {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`; strip {ref}`LDASTIS <step-074>` | `LDNTMCD` 0.7 / `LDNTMCDSP` 0.7 |
