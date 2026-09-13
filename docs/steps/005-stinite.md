@@ -164,9 +164,9 @@ Which of the three carries the isolation nitride etch is not public.
   depth plus nitride thickness.[^thung-2016]
 * Nandakumar et al., IEDM 1998 — the STI review, including trench
   definition through the nitride/oxide stack.[^rev-01]
-* Coburn and Winters, *J. Appl. Phys.* 1979 — the classic demonstration
-  that ion bombardment plus reactive gas etches far faster than either
-  alone, the basis of anisotropic RIE.[^coburn-1979]
+* Coburn and Winters, *J. Appl. Phys.* 1979 — how ion and electron
+  bombardment enhances gas–surface reactions, examined for Si, SiO₂ and
+  Si₃N₄ with XeF₂, F₂ and Cl₂.[^coburn-1979]
 * Oehrlein et al., *J. Vac. Sci. Technol. A* 1994 — fluorocarbon
   high-density plasmas with CF₄ and CHF₃: polymer deposition versus
   etching, the mechanism behind sidewall passivation.[^oehrlein-1994]

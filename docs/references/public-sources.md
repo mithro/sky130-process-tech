@@ -2949,9 +2949,12 @@ choices. Used on steps 002 and 006. Tier: deep dive.
 **COBURN-1979** — J. W. Coburn and H. F. Winters, "Ion- and
 electron-assisted gas-surface chemistry — An important effect in plasma
 etching", *Journal of Applied Physics* **50**(5), 3189–3196 (1979).
-<https://doi.org/10.1063/1.326355> The classic demonstration that ion
-bombardment plus reactive gas etches far faster than either alone, the
-basis of anisotropic RIE. Used on steps 005, 036 and 042 and the etch
+<https://doi.org/10.1063/1.326355> Per its abstract, describes how far
+gas–surface reactions giving volatile products can be enhanced by
+energetic radiation ("primarily ions and electrons"), examines
+experimentally "the reactions of Si, SiO2, and Si3N4 with XeF2, F2, and
+Cl2", and discusses possible mechanisms and implications for plasma
+etching and lithography. Used on steps 005, 036 and 042 and the etch
 category page. Tier: deep dive.
 Also used on the etch and chamber-clean gases material page.
 

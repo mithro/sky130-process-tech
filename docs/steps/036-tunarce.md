@@ -210,8 +210,9 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   device using a new anti-reflective coating.[^baker-1996]
 * Linliu, Kuo and Huang, SPIE 2000 — a polymeric ARC for better CD
   uniformity.[^linliu-2000]
-* Coburn and Winters, *J. Appl. Phys.* 1979 — the ion-assisted
-  chemistry that makes a plasma etch directional.[^coburn-1979]
+* Coburn and Winters, *J. Appl. Phys.* 1979 — how ion and electron
+  bombardment enhances gas–surface reactions, and its implications for
+  plasma etching.[^coburn-1979]
 * Steinbrüchel, *Appl. Phys. Lett.* 1989 — the energy dependence of
   ion-enhanced etch yields, governing the low-bias ARC open.[^steinbruchel-1989]
 * Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981 — the design
