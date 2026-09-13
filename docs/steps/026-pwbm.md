@@ -111,7 +111,9 @@ fab:
    register to the same STI marks; their mutual {term}`overlay` is what sets the
    well-to-well junction position and hence the n⁺/p⁺ spacing
    rules.[^rubin-2002]
-5. **Develop, hard bake, inspect.** TMAH develop; resist hardening for
+5. **Develop, hard bake, inspect.** 2.38 % TMAH[^microchemicals-dev]
+   (0.26 N; our arithmetic from TMAH's molar mass of 91.15 g/mol)
+   develop; resist hardening for
    the high-energy implant; overlay to STI.
 
 **{term}`Well proximity effect <well proximity effect>`.** As with the N-well, ions scattered from the
@@ -141,7 +143,7 @@ raises NMOS {term}`Vt`.[^hook-2003]
 * **Thick positive i-line implant resist** (~2 µm class, inference);
   suppliers named in SkyWater's S-1: Dow, JSR, Tokyo Ohka
   Kogyo.[^sec-01]
-* **HMDS**, **TMAH developer**, edge-bead remover, DI water, nitrogen.
+* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev] edge-bead remover, DI water, nitrogen.
 * **The PWBM reticle**, generated from `nwell` and `pwbm`
   (inference).[^pdk-06]
 
@@ -193,6 +195,8 @@ raises NMOS {term}`Vt`.[^hook-2003]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
   tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
+* MicroChemicals, *Development of photoresists* — practical
+  develop-process notes, including the 2.38 % TMAH developers.[^microchemicals-dev]
 
 ### Deep dive
 
@@ -239,6 +243,9 @@ raises NMOS {term}`Vt`.[^hook-2003]
 
 <!-- footnotes -->
 
+[^microchemicals-dev]: MicroChemicals, *Development of photoresists*,
+    application note.
+    <https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>
 [^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
     `gds_layers.csv`, SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,

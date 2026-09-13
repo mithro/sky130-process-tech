@@ -88,7 +88,9 @@ fab:
 4. **Alignment** to STI. The 0.180 µm enclosure and spacing rules
    (hvtp.3, hvtp.4) define the {term}`overlay` budget between this mask and the
    active pattern that determines which transistor is which.
-5. **Develop** in TMAH; optional hard bake or UV cure before the
+5. **Develop** in 2.38 % TMAH[^microchemicals-dev] (0.26 N; our
+   arithmetic from TMAH's molar mass of 91.15 g/mol); optional hard
+   bake or UV cure before the
    implant.[^txt-02]
 6. **Metrology.** Overlay to STI; {term}`CD` sampled; after-develop inspection.
 
@@ -112,7 +114,7 @@ fab:
 
 * **Positive i-line photoresist** (~1 µm); suppliers named in SkyWater's
   S-1: Dow, JSR, Tokyo Ohka Kogyo.[^sec-01]
-* **HMDS**, **TMAH developer**, edge-bead remover, DI water, nitrogen.
+* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev] edge-bead remover, DI water, nitrogen.
 * **The HVTPM reticle** (generated from `chvtpm`).[^pdk-06]
 
 ## Related steps and cross-references
@@ -157,6 +159,8 @@ fab:
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
   tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
+* MicroChemicals, *Development of photoresists* — practical
+  develop-process notes, including the 2.38 % TMAH developers.[^microchemicals-dev]
 
 ### Deep dive
 
@@ -195,6 +199,9 @@ fab:
 
 <!-- footnotes -->
 
+[^microchemicals-dev]: MicroChemicals, *Development of photoresists*,
+    application note.
+    <https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>
 [^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
