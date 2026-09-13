@@ -82,7 +82,12 @@ SONOS, 2T-flash and antifuse structures; the transistor modules sweep
 width, length and the source/drain extent (`sa`,
 `sb`).[^raw-data-testtile-pads] The data measured on the tile were
 "collected under contract by CoolCAD Electronics LLC" to help validate
-the PDK.[^raw-data-readme]
+the PDK.[^raw-data-readme] Its transistor and gate-capacitor files are
+current–voltage and capacitance–voltage sweeps whose headers give the
+biases, compliance and instrument channels but no temperature, date or
+wafer; {ref}`HPETEST <step-171>` sets thresholds and resistances we
+extracted from them beside the PDK's e-test
+nominals.[^raw-data-hv-mosfets]
 
 ### Sheet resistance and van der Pauw
 
@@ -198,9 +203,9 @@ device.
 * SkyWater PDK documentation — the device models and corners that
   e-test checks a wafer against.[^pdk-01]
 * Google's SKY130 raw-data repository — the README, the manufacturing
-  test tile and its 273-module pad documentation, and the open MPW-5
-  test
-  tile.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open]
+  test tile, its 273-module pad documentation and measured transistor
+  and gate-capacitor files, and the open MPW-5 test
+  tile.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open][^raw-data-hv-mosfets]
 
 ### High-level understanding
 
@@ -422,3 +427,14 @@ device.
     images, `google/skywater-pdk-sky130-raw-data` repository, 2022,
     retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-open/README.rst>
+[^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V,
+    20 V, native, zero-Vt and ESD transistors and the thick-oxide gate
+    capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_g5v0d10v5`, `pfet_g5v0d10v5`, `nfet_g5v0d16v0`,
+    `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
+    `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
+    `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>

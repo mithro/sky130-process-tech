@@ -167,6 +167,28 @@ unit number on the curve tracer", a "Compliance" and a
 sweep.[^raw-data-mdm] The repository does not describe SkyWater's own
 production test or name its tester.
 
+The transistor files can be set beside the PDK's e-test nominals,
+although the PDK states neither the bias conditions nor the extraction
+methods behind them. For the 5 V NMOS, whose nominal VTXNLH at W/L 7/8
+is 0.811 V,[^pdk-07] two 7/8 µm test-tile devices give 0.79 V and
+0.82 V by maximum-transconductance extrapolation of the drain current at
+V_DS = 0.1 V. For the 16 V {term}`drain-extended <DEMOS>` NMOS at 20 µm
+width, the median resistance at V_GS = 5 V and V_DS = 0.1 V is 469 Ω
+for ten 0.925 µm ("L=0.7") structures and 695 Ω for eight 2.425 µm
+("L=2.2") structures, against RDS nominals of 458.5 Ω and 703.8 Ω at
+W/L 20/0.7 and 20/2.2 (our extraction from the published
+measurements).[^raw-data-hv-mosfets][^pdk-07] Of the 24 e-test
+threshold parameters we compared for the 5 V, 16 V, 20 V, native,
+zero-Vt and ESD transistors, 23 have every working test-tile structure
+inside the published minimum–maximum limits; the exception, VTXPN42H, is
+a 0.42/20 µm PMOS whose current (at most about 4 µA) is too small for
+the method, and one 0.42/0.5 µm NMOS structure carries no current at
+all.[^raw-data-hv-mosfets][^pdk-07] The files record the sweeps,
+compliance and instrument channels but no temperature, measurement
+date, wafer or die, and the drain is swept to at most 5 V (10 V on the
+symmetric 16 V structures), so they do not bear on breakdown or the
+10.5–20 V ratings.[^raw-data-hv-mosfets]
+
 ## Machines typically used
 
 * **Parametric tester**: HP/Agilent 4062UX,[^brltest-4062]
@@ -239,6 +261,10 @@ production test or name its tester.
   copies" per MPW run), the 273-module pad documentation, the open
   MPW-5 test tile and the MDM file
   format.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open][^raw-data-mdm]
+* The same repository's measured files for the 5 V, 16 V, 20 V, native,
+  zero-Vt and ESD transistors — the thresholds, resistances and currents
+  compared here with the e-test nominals are our
+  extraction.[^raw-data-hv-mosfets]
 
 ### High-level understanding
 
@@ -298,6 +324,13 @@ production test or name its tester.
   and that the data "cannot be used to predict the subthreshold slope
   (digital leakage)".[^raw-data-notebooks] The resolution of the fab's
   own e-test is not public.
+* The PDK's e-test drain currents for the 5 V transistors, IDSNS50H
+  12.1 mA and IDSPS50H 6.83 mA, are listed at W/L 7/0.50 without a
+  bias;[^pdk-07] 7/0.5 µm test-tile devices carry 4.43 mA and 2.44 mA at
+  |V_GS| = |V_DS| = 5 V, and 20/0.5 µm devices 11.6 mA and 6.71 mA (our
+  extraction from the published measurements).[^raw-data-hv-mosfets]
+  Whether the published values refer to another bias or another width
+  is not stated.
 
 <!-- footnotes -->
 
@@ -426,3 +459,14 @@ production test or name its tester.
     Colab notebooks in the `google/skywater-pdk-sky130-raw-data`
     repository, retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/notebooks>
+[^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V,
+    20 V, native, zero-Vt and ESD transistors and the thick-oxide gate
+    capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_g5v0d10v5`, `pfet_g5v0d10v5`, `nfet_g5v0d16v0`,
+    `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
+    `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
+    `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>

@@ -94,7 +94,16 @@ SkyWater",[^raw-data-readme] and the pad documentation of that
 {term}`test tile`, whose 273 modules name contact and via chains,
 resistors, capacitors and transistors layer by layer and are quoted on
 the step pages as public examples of the kind of structure measured at
-{ref}`HPETEST <step-171>`.[^raw-data-testtile-pads]
+{ref}`HPETEST <step-171>`.[^raw-data-testtile-pads] Among the
+measured files are sweeps of the 5 V, 16 V and 20 V transistors, the
+native and zero-threshold NMOS, the ESD transistors and the thick-oxide
+gate capacitors. Thresholds, resistances, body-effect coefficients and
+oxide capacitance extracted from them are quoted on the step pages for
+the gate oxide ({ref}`GOX100 <step-043>`), the P-well block and
+drain-extended wells ({ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`)
+and electrical test ({ref}`HPETEST <step-171>`), each marked as our
+extraction rather than a published value; the files record no
+temperature, date or wafer.[^raw-data-hv-mosfets]
 
 ### What the process offers
 
@@ -781,7 +790,8 @@ public.
   licence.[^pdk-10]
 * SKY130 raw-data repository, README and test-tile pad documentation —
   the CoolCAD measurements and the 273 test modules, including the MiM
-  capacitor structures.[^raw-data-readme][^raw-data-testtile-pads]
+  capacitor structures; the transistor and gate-capacitor files from
+  which our extracted values come.[^raw-data-readme][^raw-data-testtile-pads][^raw-data-hv-mosfets]
 * SkyWater PDK, *Criteria & Assumptions* — poly, cap, spacer and pre-LI
   dielectric thicknesses, well and junction depths, implant angles and
   the antenna thicknesses by flow.[^pdk-03]
@@ -1137,3 +1147,14 @@ public.
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
     retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V,
+    20 V, native, zero-Vt and ESD transistors and the thick-oxide gate
+    capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_g5v0d10v5`, `pfet_g5v0d10v5`, `nfet_g5v0d16v0`,
+    `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
+    `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
+    `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
