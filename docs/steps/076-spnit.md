@@ -24,12 +24,12 @@ spacer width is what sets the offset between the gate edge and the
 deep source/drain junctions implanted at {ref}`PSDI <step-082>` and
 {ref}`NSDI <step-086>`.
 
-Two public facts tie the step to SKY130. The PDK's process stack
+Two public facts bear on the step. The PDK's process stack
 diagram names a dielectric "SPNIT" with a relative permittivity of
 7.5,[^pdk-04] the value of silicon nitride, alongside the other
 front-end dielectrics (the field and inter-level oxides at 3.9–4.5, the
-"LINT" nitride at 7.3); the step code in the step list used in this
-reference is the same word. And the PDK's assumptions table carries an
+"LINT" nitride at 7.3); this reference uses the same word as the
+step's label. And the PDK's assumptions table carries an
 "oxide spacer" of 0.05 µm[^pdk-03] — so the finished SKY130 spacer is,
 we infer, a composite: an oxide component (the re-oxidation of
 {ref}`IOX45 <step-063>` under the nitride, the oxide of
@@ -301,8 +301,8 @@ fab (SKY130's recipe is not public):
   spacer" entries; the PDK does not draw the spacer's structure.
 * Whether a thin pre-spacer oxide is deposited between
   {ref}`TIPRTAD <step-075>` and this step (a common liner) is not
-  shown in the step list used in this reference; on our reading the
-  {ref}`IOX45 <step-063>` oxide plays that part.
+  stated publicly; this reference describes none, reading the
+  {ref}`IOX45 <step-063>` oxide as playing that part (inference).
 * The condition of the oxide over the source/drain silicon at this
   point, on which the {ref}`SPE <step-077>` etch must stop, is not
   public.

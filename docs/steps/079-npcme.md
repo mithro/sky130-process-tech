@@ -22,9 +22,9 @@ areas".[^pdk-06] Inside a window the etch also meets the nitride
 spacers on the poly sidewalls and whatever spacer nitride lies on the
 field oxide beside them; how much of the spacer it is allowed to take
 is a recipe choice discussed below. The resist is stripped and the
-wafer cleaned as part of the sequence (on our reading), since no
-separate strip follows in the step list used in this reference; the
-next step is an oxide deposition ({ref}`SPOX <step-080>`).
+wafer cleaned afterwards; this reference treats the strip and clean
+as part of this step. The next step is an oxide deposition
+({ref}`SPOX <step-080>`).
 
 The structures being opened are of two kinds. The first are the
 contact heads of poly interconnect and gate leads, kept at least

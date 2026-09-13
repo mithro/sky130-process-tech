@@ -14,8 +14,9 @@
 
 `LDASTI` is the *lightly doped* arsenic tip implant of the {term}`SONOS`
 memory transistors: the counterpart of {ref}`ASTI <step-065>` made
-through the {ref}`LDNTM <step-071>` resist, at a dose that — the step
-and mask names tell us — is lower than the standard tip's. Arsenic
+through the {ref}`LDNTM <step-071>` resist, at a dose that is, we
+infer, lower than the standard tip's: the PDK calls the mask the
+"Lightly-doped N-tip implant mask".[^pdk-06] Arsenic
 ions enter the memory cell's active silicon on both sides of each
 control-gate line, self-aligned to the polysilicon gate, and form the
 shallow n⁻ regions that will connect the memory transistor's channel to
@@ -23,9 +24,9 @@ the deep n⁺ source/drain implanted later at {ref}`NSDI <step-086>`.
 The boron {term}`halo` {ref}`LDBHI <step-073>` follows through the same resist;
 the strip is {ref}`LDASTIS <step-074>`.
 
-The PDK's "N Tip (As)" row gives arsenic,[^pdk-03] consistent with the
-step code used in this reference; energy and dose are not public. We
-read the "lightly doped" label as an LDD-class dose, of order
+The PDK's "N Tip (As)" row gives arsenic;[^pdk-03] energy and dose are
+not public. We read the PDK's "lightly-doped" mask description as an
+LDD-class dose, of order
 10¹³ cm⁻² (typical of an {term}`LDD`),[^txt-04] against the
 10¹⁴–10¹⁵ cm⁻² of a logic {term}`extension` (typical).[^txt-01]
 

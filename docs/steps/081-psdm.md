@@ -247,7 +247,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
   add/drop purposes.[^pdk-06]
 * Whether both {ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>`
   use this resist without any intermediate step is inferred from the
-  absence of a second mask in the step list used in this reference.
+  PDK's single "P+ Implant, PSDM" mask.[^pdk-05]
 
 <!-- footnotes -->
 

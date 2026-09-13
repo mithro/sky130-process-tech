@@ -276,15 +276,15 @@ fab (SKY130's recipe is not public):
   public; the values above are industry-typical.
 * **The PMOS extension.** The PDK's PMOS cross-section shows "P−"
   extensions,[^pdk-07] but the mask list contains only N-tip masks
-  (NTM, HVNTM, LDNTM)[^pdk-05] and the step list used in this
-  reference has no PMOS tip module. The extension may be formed by
+  (NTM, HVNTM, LDNTM)[^pdk-05] and this reference describes no PMOS
+  tip module. The extension may be formed by
   {ref}`2PSDI <step-083>` (a lighter or tilted component under the
   same resist), by lateral straggle and diffusion of this implant
   under the spacer during {ref}`RTAD <step-088>`, or by a step not
   separately named; the PDK's "HVPTM shadowing" entry of 0.089 µm in
   its physical-criteria table[^pdk-03] hints that a high-voltage P-tip
-  mask exists in at least one flow variant, but it appears in neither
-  the mask list nor the step list used here. Which of these applies
+  mask exists in at least one flow variant, but no such mask appears
+  in the mask list. Which of these applies
   is an open question on this page.
 * Whether the gate poly of the PMOS is entirely shielded from this
   implant is inferred from the cap thickness and npc.4; no public
