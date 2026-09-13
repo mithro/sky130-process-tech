@@ -27,7 +27,23 @@ The public numbers: the 1.8 V NMOS model carries `toxe = 4.148e-9`
 (4.148 nm) as its oxide thickness for electrical
 purposes,[^pdk-model-nfet01v8] against 11.6 nm for the 5 V
 device;[^pdk-model-nfet5v] the PDK rates the 1.8 V models to
-V<sub>GS</sub> of 1.95 V.[^pdk-07] For comparison, ITRS 2001 lists an
+V<sub>GS</sub> of 1.95 V.[^pdk-07] Measured capacitance gives a
+consistent figure. The PDK's varactors are "1.8V accumulation-mode
+MOS varactors", with "no equivalent varactor for 5V
+operation",[^pdk-07] so we read them as built on this oxide. The
+SKY130 raw-data repository publishes capacitance–voltage sweeps of the
+test tile's `cap_var_lvt` and `cap_var_hvt` structures, five sizes of
+each from one 40 × 40 µm device to 462 devices of 5 × 0.5 µm, whose
+dimensions the pad list gives.[^raw-data-testtile-pads][^raw-data-passives]
+Splitting the accumulation capacitance at 1.8 V into an area and an
+edge term gives 8.52 fF/µm² (low-Vt) and 8.40 fF/µm² (high-Vt); for a
+relative permittivity of 3.9 these correspond to an electrical
+thickness of about 4.06 nm and 4.11 nm (our extraction from the
+published measurements, without corrections for gate depletion, the
+thickness of the accumulation layer or pad and wiring capacitance, so
+not a physical thickness; the files record neither the measurement
+frequency nor the temperature).[^raw-data-passives] For comparison,
+ITRS 2001 lists an
 equivalent oxide thickness of 2.0–2.4 nm for low-operating-power and
 2.4–2.8 nm for low-standby-power logic in 2001, with a thickness
 control requirement of "<± 4" % 3σ;[^itrs-01] SKY130's oxide is
@@ -187,7 +203,11 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 * SkyWater PDK, SPICE models of `nfet_01v8` and `nfet_g5v0d10v5` —
   `toxe` 4.148 nm and 11.6 nm.[^pdk-model-nfet01v8][^pdk-model-nfet5v]
 * SkyWater PDK, *Device Details* — 1.8 V device operating
-  voltages.[^pdk-07]
+  voltages; "1.8V accumulation-mode MOS varactors".[^pdk-07]
+* SKY130 raw-data repository — C–V sweeps of the test tile's
+  varactors and the pad list that gives their sizes; the area
+  capacitance and electrical thickness quoted here are our
+  extraction.[^raw-data-passives][^raw-data-testtile-pads]
 * SkyWater, *Facilities & Capabilities* — Aviza furnaces; Heatpulse
   8808 with NH₃; "Nitrided gate oxide" special module.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
@@ -253,7 +273,9 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 ## Open questions
 
 * The physical thickness of the 1.8 V gate oxide is not public; the
-  model's 4.148 nm `toxe` is an electrical-model parameter.
+  model's 4.148 nm `toxe` is an electrical-model parameter, and the
+  4.06–4.11 nm from the published varactor measurements is an
+  uncorrected electrical figure.[^raw-data-passives]
 * Whether the oxide is nitrided, and by which method (NH₃, N₂O/NO,
   or plasma), is inferred from SkyWater's special-module listing and
   the Cypress lineage, not stated.
@@ -408,3 +430,17 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
