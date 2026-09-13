@@ -251,11 +251,11 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 
 * The SKY130 anneal temperature, time (soak or spike) and ambient are
   not public.
-* Whether the Heatpulse 8808 runs this step is inferred from the step
-  name and SkyWater's tool list.[^skw-01]
+* Whether the Heatpulse 8808 runs this step is inferred from the
+  shallow-junction anneal this step needs and the tool being the only
+  RTA on SkyWater's list.[^skw-01]
 * Whether the screen oxide is present during the anneal depends on the
   clean at {ref}`LDASTIS <step-074>`, which is not public.
-* The expansion of `TIPRTAD` is our reading of the code.
 * The reseller PDF cited for the Heatpulse family[^ag-8108] documents
   the Heatpulse 4100 and 8108, not the 8808 itself; the 8808's own
   figures come from the reseller's product page.[^ag-8800]

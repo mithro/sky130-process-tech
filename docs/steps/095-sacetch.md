@@ -16,7 +16,8 @@
 ({ref}`LICM1E <step-094>`) and the {term}`alloy anneal` ({ref}`ALLY1 <step-096>`)
 that precedes the titanium {term}`liner`. The step list used in this
 reference does not explain what the etch removes; we read it from its
-position and from public cleaning practice. At this point in the
+place in the sequence this reference describes and from public
+cleaning practice. At this point in the
 sequence the contact holes are open, the resist has been (or is
 being) stripped, and the next two steps are a hydrogen anneal and
 the sputtering of titanium onto the silicon and poly at the bottom
@@ -26,8 +27,8 @@ treatment those surfaces receive before metal meets them, and the
 before silicidation" performed in dilute HF, the same class as
 {ref}`TUNME <step-039>` and {ref}`GOXETCH <step-046>`.
 
-Three readings fit that position; we set them out and mark all three
-as inferences:
+Three readings fit that place in the sequence; we set them out and
+mark all three as inferences:
 
 1. **Removal of the sacrificial oxide at the contact bottoms.** On
    the reading of the {ref}`SPOX <step-080>` and {ref}`LICM1E <step-094>`
@@ -159,9 +160,9 @@ fab (SKY130's recipe is not public):
   industry standard HF/SC1/SC2" and "FSI Mercury industry standard
   HF/SC1/SC2 rotational" under pre-clean.[^skw-01] Strength:
   **strong** for the existence of dilute-HF cleaning; assignment to
-  `SACETCH` is an **inference** from its position before the liner
-  and from the HF-last pre-metal clean of the cleaning
-  literature.[^kern-1990]
+  `SACETCH` is an **inference** from its place in the sequence this
+  reference describes, before the liner, and from the HF-last
+  pre-metal clean of the cleaning literature.[^kern-1990]
 * **SEZ 223 / Lam DaVinci.** Single-wafer "HF, DSP+HF, titration
   controlled".[^skw-01] Strength: strong for existence; medium for a
   contact-hole clean.

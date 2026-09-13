@@ -24,8 +24,8 @@ junctions reach their designed depth — the PDK's 0.1 µm for "N+ or P+
 S/D (XJ)"[^pdk-03] — and no further. This reference describes it,
 like {ref}`RTAI <step-034>` and {ref}`TIPRTAD <step-075>`, as a rapid
 thermal anneal, and the public evidence for that is good (below). It
-is the third of the four RTAs described in this reference; the
-fourth, {ref}`RTAD2 <step-092>`, is a second source/drain anneal
+is the third RTA described in this reference; the next,
+{ref}`RTAD2 <step-092>`, is a second source/drain anneal
 placed after the sacrificial PSG, the polish and the {term}`cap oxide`.
 
 On the reading of the {ref}`NPCM <step-078>` page, the anneal is also
@@ -165,8 +165,8 @@ An industry-generic source/drain activation anneal for a 200 mm,
   Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] — a
   single-wafer RTA with the inert ambients and the temperature reach
   this step needs. Strength: **strong** for the tool (SkyWater
-  statement); assignment to `RTAD` is an **inference** from its being
-  the only RTA on SkyWater's list, and a source/drain activation is
+  statement); assignment to `RTAD` is an **inference** from the
+  Heatpulse being the only RTA on SkyWater's list, and a source/drain activation is
   the archetypal use of such a tool: reseller documentation for the
   Heatpulse 8800/8808
   family gives "Recommended steady-state temperature range: 400 –
