@@ -305,8 +305,8 @@ logistics.
 * **Chucks and heaters.** Electrostatic or heated pedestals, with RF
   bias on IMP chambers;[^amat-ism-2000][^amat-liner-barrier-2001] the
   glossary entry {term}`electrostatic chuck` gives the principle.
-* **Monitor wafers.** Sheet resistance, thickness (XRF), reflectivity and
-  stress on blanket wafers, as the step pages' industry-generic outlines
+* **Monitor wafers.** {ref}`Sheet resistance <machine-sheet-resistance-metrology>`,
+  {ref}`thickness (XRF) <machine-film-thickness-metrology>`, reflectivity and stress on blanket wafers, as the step pages' industry-generic outlines
   describe
   ({ref}`TIAL6 <step-112>`).
 

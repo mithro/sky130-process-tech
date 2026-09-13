@@ -285,6 +285,7 @@ dishing and step-height limits are not public.
 * {ref}`machine-cd-sem-overlay-metrology` — top-down CD measurement.
 * {ref}`machine-defect-inspection` — the defects a FIB section is cut
   through.
+* {ref}`machine-film-thickness-metrology` — the thickness gauges after deposition and CMP.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 

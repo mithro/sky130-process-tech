@@ -234,7 +234,7 @@ describes the fab's gas delivery or abatement.
 * **Resist.** Implant resist hardened against heating (Romig et al. used
   a deep-UV treatment),[^romig-1996] and the strip that removes its
   crust afterwards ({ref}`category-strip`).
-* **Monitor wafers.** Bare wafers for sheet-resistance checks of dose and
+* **Monitor wafers.** Bare wafers for {ref}`sheet-resistance checks <machine-sheet-resistance-metrology>` of dose and
   uniformity; a charging monitor wafer (CHARM-2) is the tool Current et
   al. used to measure charging during high-current arsenic
   implants.[^current-1998]

@@ -31,7 +31,7 @@ control in general are on the {ref}`category page <category-lithography>`.
 
 Both tools sample: a few wafers per lot, a few fields per wafer and a
 few sites per field, located by pattern recognition and measured by a
-recipe. What sets them apart from the defect inspectors in the same area
+recipe. What sets them apart from the {ref}`defect inspectors <machine-defect-inspection>` in the same area
 is that they return numbers — a width, an x and y offset — rather than a
 defect map, and that those numbers go straight into process control.
 The {ref}`category page <category-lithography>` gives the resolution
@@ -182,7 +182,7 @@ lists:[^skw-01]
 
 The "Lithography" group above it ends its exposure-tool list with
 "Overlay down to single digit nm", and the "Physical Analysis" group
-lists a "Hitachi S-4800" SEM.[^skw-01] Read term by term: "AMAT Verity"
+lists a "Hitachi S-4800" SEM ({ref}`machine-cross-section-sem-profilers`).[^skw-01] Read term by term: "AMAT Verity"
 is Applied Materials' VeritySEM CD-SEM line, as we read the
 name,[^amat-veritysem-2004] in unstated versions; "AMAT VeraSEM" is the
 CD-SEM Applied introduced in 1999;[^amat-verasem-1999] "KLA

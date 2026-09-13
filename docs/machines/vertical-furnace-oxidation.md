@@ -287,7 +287,7 @@ fab's furnace gas supply or exhaust.
 * **Filler and monitor wafers.** A VTR load is "150 product, test, and
   filler wafers";[^expertech-vtr] filler (dummy) wafers keep the gas
   flow and temperature uniform at the ends of the boat, and monitor
-  wafers carry the ellipsometry measurement.
+  wafers carry the {ref}`ellipsometry measurement <machine-film-thickness-metrology>`.
 * **Loading-area gas and filtration.** Nitrogen for a load lock, and
   filters in the transfer chamber, where TEL specifies PTFE filter
   material "which can reduce the amount of impurities scattered from the

@@ -261,7 +261,7 @@ the fab's gas delivery, pumps or abatement.
   cleans, and the cleaned or replaced quartz is the main consumable of the
   class.
 * **Filler and monitor wafers.** Fillers at the ends of the boat, and
-  monitors for thickness, refractive index and stress in each
+  monitors for {ref}`thickness, refractive index and stress <machine-film-thickness-metrology>` in each
   load.[^expertech-vtr]
 
 ## Process-integration notes for SKY130
