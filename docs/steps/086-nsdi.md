@@ -157,7 +157,7 @@ fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **High-current ion implanter**, 200 mm: Axcelis/Eaton GSD and
+* **{ref}`High-current ion implanter <machine-high-current-implanter>`**, 200 mm: Axcelis/Eaton GSD and
   NV-GSD (batch), Applied Materials xR and Quantum, Varian VIISta 80
   (single-wafer[^mezack-2000]); Current's overviews of production
   implanters.[^current-1996][^current-2017]

@@ -132,11 +132,11 @@ fab (SKY130's energy and dose are not public):
 
 ## Machines typically used
 
-* **High-current ion implanter**, 200 mm, batch: Axcelis (Eaton)
+* **{ref}`High-current ion implanter <machine-high-current-implanter>`**, 200 mm, batch: Axcelis (Eaton)
   NV-GSD/200 and GSD series, Varian VIISta 80, Applied Materials
   xR80/Quantum ({ref}`category-implant`) — the usual home of
   10¹⁴–10¹⁵ cm⁻² implants.
-* **Medium-current ion implanter**, single-wafer: Axcelis 8250 class,
+* **{ref}`Medium-current ion implanter <machine-medium-current-implanter>`**, single-wafer: Axcelis 8250 class,
   Varian E220/E500 — used for extension implants when the dose is at
   the low end and a precise tilt is wanted; the 8250HT covers "3keV to
   750keV" with beam currents "between 4µA and 3,500µA".[^axcelis-8250]
