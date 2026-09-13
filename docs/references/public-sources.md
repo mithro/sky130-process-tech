@@ -14292,8 +14292,9 @@ and flammable gas"; "used in semiconductor manufacturing processes as an
 etching gas in plasma etch reactors". Used on the etch and chamber-clean
 gases material page. Tier: high-level.
 
-**WIKI-PFC** — Wikipedia, *Perfluorocarbon*.
-<https://en.wikipedia.org/wiki/Perfluorocarbon> Properties of
+**WIKI-PFC** — Wikipedia, *Fluorocarbon* (the *Perfluorocarbon* title
+redirects to it).
+<https://en.wikipedia.org/wiki/Fluorocarbon> Properties of
 fluorocarbons and an extract of IPCC fifth assessment lifetimes and
 100-year GWPs (CF₄ 50,000 years and 6630; C₂F₆ 10,000 years and 11,100;
 c-C₄F₈ 3200 years and 9540). Used on the etch and chamber-clean gases
