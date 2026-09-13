@@ -253,8 +253,8 @@ Steps:
 
 {ref}`DNI <step-008>`, {ref}`LVTNI <step-015>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`P1I <step-050>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`, {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`, {ref}`PSG <step-089>`
 
-These are the 25 implants of the flow and the doped glass at
-{ref}`PSG <step-089>`. On the step pages' readings, boron trifluoride
+These are the 25 steps the step pages read as implants, and the doped
+glass at {ref}`PSG <step-089>`. On the step pages' readings, boron trifluoride
 serves the p-well, threshold, halo, punch-through, resistor and P+
 source/drain implants; phosphine the deep N-well, N-well and poly
 implants and the PSG; arsine the tips, depletion implant and N+

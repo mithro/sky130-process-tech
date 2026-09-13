@@ -236,8 +236,9 @@ The steps fall into groups, as the index rows describe them:
   CF₄, CHF₃ and SF₆ for the nitride, ONO and spacer etches
   ({ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`,
   {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`), with CH₃F or CH₂F₂ as
-  a possible selectivity additive at {ref}`SPE <step-077>`; HBr at the
-  ARC etch {ref}`TUNARCE <step-036>`.
+  a possible selectivity additive at {ref}`SPE <step-077>`; HBr at
+  {ref}`TUNARCE <step-036>`, which the step list does not explain and its
+  page reads as the opening of an anti-reflective coating.
 * **Contact, via and seal-ring etches.** C₄F₈, C₂F₆, CHF₃ and CF₄, with
   CO as a possible additive ({ref}`LICM1E <step-094>`,
   {ref}`CTME <step-108>`, {ref}`VIME <step-119>` to
