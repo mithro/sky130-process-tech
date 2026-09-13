@@ -210,15 +210,16 @@ None of the six has a mask-level (`c…`) layer in
 | Step | `masks.csv` | Drawn layer (`gds_layers.csv`) | Minimum CD, feature / space | Other PDK data |
 |------|-------------|--------------------------------|-----------------------------|----------------|
 | {ref}`PWBM <step-026>` | P-Well Block Mask, PWBM — *blank* | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 | The periphery rules have a `pwbm` rule set, "Define p-well block"; Table F2b has a PWBM column, marked `C` in, among others, the UHV 5/20 V drain-extended device rows. The step page treats the blank field as a documentation inconsistency. |
-| {ref}`PWDEM <step-030>` | P-Well Drain Extended, PWDEM — *blank* | `pwde` 124:20 | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 | The periphery rules have a `pwdem` rule set; Table F2b has a PWDEM column, marked `C` in the "UHV pmos 5/20V DE" row. |
+| {ref}`PWDEM <step-030>` | P-Well Drain Extended, PWDEM — *blank* | `pwde` 124:20 | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 | The periphery rules have a `pwdem` rule set; Table F2b has a PWDEM column, marked `C` in the "UHV pmos 5/20V DE" row. The step page treats the blank as a documentation inconsistency. |
 | {ref}`CAPM <step-137>` | Capacitor MiM, CAPM — *blank* | `capm` 89:44 | `CAPMCD` 2 / `CAPMCDSP` 0.84 | The periphery rules have a `capm` rule set, "Defines MIM capacitor", with values shown as "N/A"; Table F2b has a CAPM column, marked `C` in the "MiM" row. |
 | {ref}`RRPM <step-052>` | *not listed* | `rpm` 86:20 *(inference)* | none listed | No separate rule set or Table F2b column. |
 | {ref}`URPM <step-055>` | *not listed* | `urpm` 79:20 *(inference)* | none listed | No separate rule set or Table F2b column. |
-| {ref}`CAP2M <step-152>` | *not listed* | `cap2m` 97:44 *(inference)* | none listed | No `cap2m` rule set or Table F2b column. |
+| {ref}`CAP2M <step-152>` | *not listed* | `cap2m` 97:44 *(inference)* | none listed | No `cap2m` rule set or Table F2b column; the MiM device page lists "CAP2M over Metal-4" beside "CAPM over Metal-3" and calls the constructions "identical".[^pdk-07] |
 
 The sources for both tables are `masks.csv`,[^pdk-05] `gds_layers.csv`
 and Table F2b,[^pdk-06] the minimum-CD table,[^pdk-03] the periphery
-rules[^pdk-periph] and the WLCSP rules.[^pdk-wlcsp]
+rules,[^pdk-periph] the WLCSP rules[^pdk-wlcsp] and the *Device
+Details* page.[^pdk-07]
 
 ### Unmarked `masks.csv` entries with no mask step
 
@@ -260,6 +261,8 @@ reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
   layers, the rule-set function lines and the metal-fuse note.[^pdk-periph]
 * SkyWater PDK, *WLCSP Rules* — the DECA `cpbo`, `rdl` and `cpmm2`
   rule sets.[^pdk-wlcsp]
+* SkyWater PDK, *Device Details* — the two MiM capacitor constructions,
+  `CAPM` and `CAP2M`.[^pdk-07]
 
 ### High-level understanding
 
@@ -381,6 +384,11 @@ reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
     tables), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/wlcsp.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/wlcsp/deca.csv>
+[^pdk-07]: SkyWater PDK Authors, *Device Details* (MiM capacitors),
+    SkyWater SKY130 PDK documentation, and the `cap_mim` cross-section
+    drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/cap_mim/cross-section-cap_mim.svg>
 [^wiki-litho]: Wikipedia, *Photolithography*.
     <https://en.wikipedia.org/wiki/Photolithography>
 [^wiki-opc]: Wikipedia, *Optical proximity correction*.
