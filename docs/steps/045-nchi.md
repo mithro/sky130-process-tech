@@ -143,8 +143,8 @@ fab (SKY130's values are not public):
 * **Source consumables**, **helium** platen cooling, **nitrogen**,
   cryopump regeneration.
 * **Monitor wafers**.
-* Gas suppliers named by SkyWater: Air Products, Praxair, Linde,
-  Airgas.[^sec-01][^sec-02]
+* Gas suppliers named in SkyWater's filings: Air Products and Praxair
+  (2021 S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 

@@ -147,8 +147,8 @@ practice).[^txt-02]
 * **Ultrapure DI water**, **isopropanol** for drying, **nitrogen**.
 * Arsenic-bearing resist ash and spent acid go to the fab's hazardous
   exhaust and waste-acid systems (general practice).
-* SkyWater names KMG Chemicals and EMD Performance Materials among its
-  chemical suppliers.[^sec-01][^sec-02]
+* Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
+  S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 

@@ -187,7 +187,7 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
 * **Vacuum pump oil / dry pump maintenance** and exhaust abatement.
 * **Monitor wafers** for thickness and particles.
 
-SkyWater's filings name Air Products, Praxair, Linde and Airgas as gas
+SkyWater's filings name Air Products and Praxair (2021 S-1) and Linde and Airgas (fiscal 2023 10-K) as gas
 suppliers,[^sec-01][^sec-02] without tying them to a process.
 
 ## Related steps and cross-references

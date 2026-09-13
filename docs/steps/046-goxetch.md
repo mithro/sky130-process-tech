@@ -155,8 +155,8 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   hydrochloric acid** for SPM/SC-1/SC-2.[^wiki-rca]
 * **Oxygen, nitrogen, {term}`forming gas`** for the ash.[^skw-01]
 * **Ultrapure DI water, isopropanol, nitrogen.**
-* SkyWater names KMG Chemicals and EMD Performance Materials among
-  its chemical suppliers.[^sec-01][^sec-02]
+* Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
+  S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 
