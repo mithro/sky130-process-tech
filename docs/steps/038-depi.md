@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 38 of 171 |
+| **Step number** | 38 of 171[^steps-sheet] |
 | **Step code** | `DEPI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
 | **Phase** | FEOL — SONOS and gate dielectrics |
@@ -340,3 +340,6 @@ An industry-generic depletion-mode channel implant for a 200 mm,
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098
     B1, granted 2014-08-05.
     <https://patents.google.com/patent/US8796098B1/en>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 33 of 171 |
+| **Step number** | 33 of 171[^steps-sheet] |
 | **Step code** | `PWDEIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
 | **Phase** | FEOL — wells and channel implants |
@@ -256,3 +256,6 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
     *Handbook of Silicon Wafer Cleaning Technology*, 2nd ed., William
     Andrew, 2008, pp. 3–92, ISBN 978-0-8155-1554-8.
     <https://doi.org/10.1016/b978-081551554-8.50004-5>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

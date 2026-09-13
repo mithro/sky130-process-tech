@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 35 of 171 |
+| **Step number** | 35 of 171[^steps-sheet] |
 | **Step code** | `TUNM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
 | **Phase** | FEOL — SONOS and gate dielectrics |
@@ -370,3 +370,6 @@ and the pre-oxidation clean as part of those steps (see the
     **50**(9), 1946–1951 (2003).
     <https://doi.org/10.1109/TED.2003.815371>; open copy
     <https://ewh.ieee.org/r5/denver/sscs/References/2003_09_Hook.pdf>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
