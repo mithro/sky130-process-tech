@@ -67,19 +67,21 @@ sensitive to various SEM parameters including the primary electron
 energy, the beam diameter, and the defocus of the beam".[^singh-1988]
 Rosenfield noted that "the peak to peak method may be used to accurately
 measure the linewidth of an isolated resist line; but, a threshold
-technique may be required for an isolated space in resist".[^rosenfield-1986]
-Postek, Keery and Larrabee showed why width is harder than pitch: edge
-location errors cancel in a pitch measurement, but "in linewidth
-measurement applications, the effects of edge location uncertainty are
-additive and thus give twice the edge detection error to the measured
-width".[^postek-1988] Monte Carlo models of beam–sample interaction are
-used to relate the profile to the true edge,[^lowney-1995] and Solecky,
-Mayer and Archie tuned CD algorithms against AFM and electrical test,
-noting that CD-SEMs' "combination of throughput, resolution, precision,
-ability to measure any feature of interest and automation has been
-unmatched".[^solecky-2002] The beam also changes some samples: You, Bok
-and Shin saw acrylate-type ArF resist lines shrink by 30 % after 30
-measurements,[^you-2002] a problem reported for a 193 nm acrylate resist, not for the i-line and KrF resists the step pages read for SKY130.
+technique may be required for an isolated space in
+resist".[^rosenfield-1986] Postek, Keery and Larrabee showed why width
+is harder than pitch: edge location errors cancel in a pitch
+measurement, but "in linewidth measurement applications, the effects of
+edge location uncertainty are additive and thus give twice the edge
+detection error to the measured width".[^postek-1988] Monte Carlo models
+of beam–sample interaction are used to relate the profile to the true
+edge,[^lowney-1995] and Solecky, Mayer and Archie tuned CD algorithms
+against AFM and electrical test, noting that CD-SEMs' "combination of
+throughput, resolution, precision, ability to measure any feature of
+interest and automation has been unmatched".[^solecky-2002] The beam
+also changes some samples: You, Bok and Shin saw acrylate-type ArF
+resist lines shrink by 30 % after 30 measurements,[^you-2002] a problem
+reported for a 193 nm acrylate resist, not for the i-line and KrF
+resists the step pages read for SKY130.
 
 ### Precision, calibration and matching
 
@@ -123,16 +125,17 @@ and overlay sensors of lithography as one family.[^den-boef-2016]
 
 ### From measurement to correction
 
-The numbers go back to the exposure tool. KLA-Tencor's Archer 10, as its product page described it in 2003, "Automatically transfers overlay test data to the ASML PAS
-5500™ series stepper", and its analysis software gives "analysis results
-for wafer lot dispositioning, stepper correction, and problem
-troubleshooting".[^kla-archer10] In a foundry the recipe load is heavy:
-DeMoor et al. describe ASIC fabs with "thousands or even tens of
-thousands of reticles active at any one time", where "each individual
-reticle will require independent recipes for stepper exposure, and the
-subsequent misregistration and critical dimension metrology steps", and
-used an off-line recipe database across several overlay
-tools.[^demoor-2000]
+The numbers go back to the exposure tool. KLA-Tencor's Archer 10, as its
+product page described it in 2003, "Automatically transfers overlay test
+data to the ASML PAS 5500™ series stepper", and its analysis software
+gives "analysis results for wafer lot dispositioning, stepper
+correction, and problem troubleshooting".[^kla-archer10] In a foundry
+the recipe load is heavy: DeMoor et al. describe ASIC fabs with
+"thousands or even tens of thousands of reticles active at any one
+time", where "each individual reticle will require independent recipes
+for stepper exposure, and the subsequent misregistration and critical
+dimension metrology steps", and used an off-line recipe database across
+several overlay tools.[^demoor-2000]
 
 ## Representative 200 mm-era models
 
@@ -140,8 +143,7 @@ tools.[^demoor-2000]
   "8 (manual operation)" wafers per hour), S-8820 (1994; 5 nm and 5 nm,
   20 wafers per hour) and S-9200 (1998; 3 nm and 3 nm, 45 wafers per hour
   on 8-inch wafers); the S-9300 of 1999 was "ready in time for the shift
-  to 300-mm wafers".[^hitachi-2011] The P1M and contact pages also cite a
-  reseller listing of the S-9200.
+  to 300-mm wafers".[^hitachi-2011]
 * **Opal, then Applied Materials.** Applied acquired Opal, "a supplier of
   CD-SEM (Critical Dimension-Scanning Electron Microscope) systems", in
   January 1997, and introduced the Opal 7830Si, "Building on the proven
@@ -153,10 +155,12 @@ tools.[^demoor-2000]
   VeritySEM followed in 2004 for 65–45 nm, with "less than 5 angstrom
   precision".[^amat-veritysem-2004]
 * **KLA-Tencor.** The 8100XP CD-SEM, 0.4–1.5 kV with a 4 nm
-  resolution;[^gce-kla8100] the 5200XP overlay system for 0.18 µm;[^kla-5200xp]
-  the Archer 10, presented in 2003 as an overlay tool "for 300 mm
-  manufacturing at the sub-0.13-micron node";[^kla-archer10] and later
-  Archers, the Archer 300 LCM of 2010 succeeding "the widely-adopted Archer
+  resolution;[^gce-kla8100] the 5200XP overlay system for
+  0.18 µm;[^kla-5200xp] the Archer 10, whose product page (2003 capture)
+  describes an overlay tool "for 300 mm manufacturing at the
+  sub-0.13-micron node";[^kla-archer10] KLA-Tencor's overlay product
+  menu already listed it in 2001;[^kla-5200xp] and later Archers, the
+  Archer 300 LCM of 2010 succeeding "the widely-adopted Archer
   200".[^kla-archer300-2010]
 
 ## At SkyWater
@@ -178,17 +182,17 @@ lists:[^skw-01]
 
 The "Lithography" group above it ends its exposure-tool list with
 "Overlay down to single digit nm", and the "Physical Analysis" group
-lists a "Hitachi S-4800" SEM.[^skw-01] Read term by term: "AMAT Verity" is
-Applied Materials' VeritySEM CD-SEM line, as we read the
+lists a "Hitachi S-4800" SEM.[^skw-01] Read term by term: "AMAT Verity"
+is Applied Materials' VeritySEM CD-SEM line, as we read the
 name,[^amat-veritysem-2004] in unstated versions; "AMAT VeraSEM" is the
 CD-SEM Applied introduced in 1999;[^amat-verasem-1999] "KLA
-5200/5300/Archer" names three generations of KLA-Tencor optical overlay
-tools, of which the 5200XP and the Archer 10 have public
-descriptions;[^kla-5200xp][^kla-archer10] no description of the 5300 was
-retrieved. SkyWater gives no tool counts, and does not say whether "Overlay
-down to single digit nm" is a measurement or an exposure capability, nor
-which tools the APC line connects. No step page assigns the S-4800, the
-reticle inspection or the APC entry to a SKY130 step.
+5200/5300/Archer" we read as KLA-Tencor optical overlay tools of the
+5200, 5300 and Archer lines; the 5200XP and the Archer 10 have public
+descriptions,[^kla-5200xp][^kla-archer10] but no description of a 5300
+was retrieved. SkyWater gives no tool counts, and does not say whether
+"Overlay down to single digit nm" is a measurement or an exposure
+capability, nor which tools the APC line connects. No step page assigns
+the S-4800, the reticle inspection or the APC entry to a SKY130 step.
 
 ### Strength of the evidence
 
@@ -197,7 +201,8 @@ the listings are **strong**: they are SkyWater
 statements.[^skw-01] The caveats that apply to every listed tool are
 under {ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
 The step pages grade them "strong for existence" and treat their use at
-a given mask as an inference, since the list names no step; the machines index records that grade on nearly every mask page. The
+a given mask as an inference, since the list names no step; the
+machines index records that grade on nearly every mask page. The
 VeritySEM press release dates that product to 2004, after the 130 nm
 generation,[^amat-veritysem-2004] which fits the caveat that the list
 shows today's floor, not the tools that first ran S8.
@@ -251,21 +256,34 @@ sampling plans are not public.
 
 * **Overlay at every level, CD where it matters.** The step pages name
   overlay metrology at all 36 masks and a CD-SEM at every mask and at the
-  isolation-nitride, trench, tunnel-mask ARC, gate, local-interconnect, contact, via, metal and capacitor etches. For scale, ITRS 2001 put the overlay requirement at 46 nm in the year it set the DRAM half-pitch at 130 nm.[^itrs-03]
+  isolation-nitride, trench, tunnel-mask ARC, gate, local-interconnect,
+  contact, via, metal and capacitor etches. For scale, ITRS 2001 put the
+  overlay requirement at 46 nm in the year it set the DRAM half-pitch at
+  130 nm.[^itrs-03]
 * **Mixed exposure classes.** The i-line and KrF levels
-  ({ref}`machine-i-line-stepper`, {ref}`machine-duv-krf-stepper`) share one overlay entry in SkyWater's list, which does not say whether separate tools serve the two classes; where a level is printed on a
+  ({ref}`machine-i-line-stepper`, {ref}`machine-duv-krf-stepper`) share
+  one overlay entry in SkyWater's list, which does not say whether
+  separate tools serve the two classes; where a level is printed on a
   different tool from its reference, the tool corrections the
   measurements feed back must cover matched-machine errors (inference
   from the exposure-tool specifications on those pages). SkyWater lists
   APC "feed forward and backwards" without saying where it is
   applied.[^skw-01]
-* **Planarised levels.** SKY130 polishes its trench fill, pre-metal dielectric, tungsten plugs and inter-level oxides ({ref}`category-cmp`), and Plambeck, Knoll and Lord note that "planarized metrology targets can cause overlay measurements to be inaccurate as well as imprecise"; the coherence-probe option of the 5200XP was "optimized for planarized layers".[^plambeck-1995][^kla-5200xp]
+* **Planarised levels.** SKY130 polishes its trench fill, pre-metal
+  dielectric, tungsten plugs and inter-level oxides
+  ({ref}`category-cmp`), and Plambeck, Knoll and Lord note that
+  "planarized metrology targets can cause overlay measurements to be
+  inaccurate as well as imprecise"; the coherence-probe option of the
+  5200XP was "optimized for planarized
+  layers".[^plambeck-1995][^kla-5200xp]
 * **After develop and after etch.** Measuring the gate at
   {ref}`P1M <step-061>` and again after {ref}`P1ME <step-062>` gives the
   etch bias the category page describes; how well the two agree depends on
   the CD algorithm.[^solecky-2002]
-* **Many reticle sets.** The process-steps sheet heads each of the MPW runs it records with its own reticle-set identifier ({ref}`masks-mpw-runs`), so every set needs its own
-  exposure and metrology recipes in the way DeMoor et al. describe for
+* **Many reticle sets.** The process-steps sheet heads each of the MPW
+  runs it records with its own reticle-set identifier
+  ({ref}`masks-mpw-runs`), so every set needs its own exposure and
+  metrology recipes in the way DeMoor et al. describe for
   ASIC fabs (inference).[^demoor-2000]
 * **Rework.** A lot that fails CD or overlay is stripped and re-exposed
   before etch ({ref}`category-lithography`); the
@@ -378,9 +396,11 @@ sampling plans are not public.
     page; Wayback Machine capture of 2001-08-07.
     <https://web.archive.org/web/20010807104430/http://www.kla-tencor.com:80/products/semicon_process_para_ctrl/overlay/5200xp-overlay-met_sys.html>
 [^gce-kla8100]: GCE Market, *KLA-Tencor 8100XP CD-SEM* (specification
-    summary), retrieved 2026-09-13 (the address now redirects to
-    <https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>).
-    <https://www.gcemarket.com/gce/gce.nsf/products/kla-tencor-8100xp-cd-sem-7expup>
+    summary), retrieved 2026-09-13.
+    <https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>
+    (formerly
+    <https://www.gcemarket.com/gce/gce.nsf/products/kla-tencor-8100xp-cd-sem-7expup>,
+    which now redirects there)
 [^classone-kla5200xp]: ClassOne Equipment, *KLA-Tencor 5200XP Overlay
     Registration System* (refurbished-equipment listing), accessed
     2026-09-13.
