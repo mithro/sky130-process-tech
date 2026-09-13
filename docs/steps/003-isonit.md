@@ -126,7 +126,7 @@ which is a different (later-generation) precursor.
   and ammonium chloride condenses in the pump lines, a well-known
   maintenance load on nitride tubes.[^txt-02]
 * **Quartz or silicon-carbide tube and boat**; tube-cleaning
-  chemistry (typically NF₃ or a wet HF clean).[^txt-02]
+  chemistry (typically NF₃ or a wet HF clean; see {ref}`wet chemicals <material-wet-chemicals>`).[^txt-02]
 * **Monitor wafers.**
 
 ## Related steps and cross-references

@@ -162,7 +162,7 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Hydrofluoric acid (49 %)** diluted to 50:1–100:1, or **buffered
+* **Hydrofluoric acid (49 %)** ({ref}`wet chemicals <material-wet-chemicals>`) diluted to 50:1–100:1, or **buffered
   oxide etch** (NH₄F/HF) with **surfactant**;[^pat-04][^wiki-boe]
   {term}`BOE` is on SkyWater's Akrion list.[^skw-01]
 * **Sulphuric acid and hydrogen peroxide** (SPM), **ammonium

@@ -113,7 +113,7 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
   listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
   trench oxide and would, we infer, be omitted here (category page).
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
-  acid**[^wiki-rca] (category page); **dilute HF** only if the oxide is
+  acid** ({ref}`wet chemicals <material-wet-chemicals>`)[^wiki-rca] (category page); **dilute HF** only if the oxide is
   removed.
 * **Ultrapure DI water**, **isopropanol**, **nitrogen**.
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021

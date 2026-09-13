@@ -158,7 +158,7 @@ W/WN".[^skw-01]
 * **NF₃ or SF₆/O₂** chamber clean (SkyWater lists NF₃ on the
   DPSII[^skw-01]).
 * **O₂ / N₂ / {term}`forming gas`** for the ash.
-* **{term}`SC-1`, H₂SO₄/H₂O₂ or dilute HF** for the post-etch
+* **{term}`SC-1`, H₂SO₄/H₂O₂ or dilute HF** ({ref}`wet chemicals <material-wet-chemicals>`) for the post-etch
   clean.[^wiki-rca]
 * Chamber consumables (ceramic liners, focus rings); monitor wafers
   for depth calibration.

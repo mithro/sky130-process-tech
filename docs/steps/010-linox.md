@@ -145,7 +145,7 @@ width because of the encroachment under the nitride edge.
 * **Nitrogen** for purge and ramp.
 * **Optional HCl or trans-dichloroethylene (DCE)** for chlorine
   gettering; **NH₃ or NO** if a nitridation is used.[^txt-01]
-* **Dilute HF, SC-1, SC-2 chemicals** for the pre-clean.[^wiki-rca]
+* **Dilute HF, SC-1, SC-2 chemicals** ({ref}`wet chemicals <material-wet-chemicals>`) for the pre-clean.[^wiki-rca]
 * Quartz consumables and monitor wafers.
 
 ## Related steps and cross-references
