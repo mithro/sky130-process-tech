@@ -126,14 +126,14 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 
 ## Typical equipment
 
-* **Ashers**: downstream microwave strippers such as the GaSonics L3510
+* **{ref}`Ashers <machine-downstream-plasma-asher>`**: downstream microwave strippers such as the GaSonics L3510
   (a "production-proven downstream plasma photoresist ashing system" for
   75–200 mm wafers)[^gasonics-l3510] and the GaSonics Aura series;
   Mattson Aspen (ICP-based strip); Axcelis/Fusion ES and RadiantStrip;
   single-wafer RF ashers integrated onto etch platforms (Applied
   Materials ASP and Lam). University clean-room guides describe the
   class.[^snf-strip]
-* **Wet benches**: automated multi-tank benches with SPM, SC-1, SC-2, HF
+* **{ref}`Wet benches <machine-wet-bench>`**: automated multi-tank benches with SPM, SC-1, SC-2, HF
   and hot-phosphoric tanks, quick-dump rinsers and IPA dryers — Akrion
   GAMA,[^akrion-gama] SCP, DNS/Screen, Santa Clara Plastics, Semitool.
 * **Spray processors** (FSI Mercury centrifugal spray) and
