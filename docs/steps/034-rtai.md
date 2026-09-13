@@ -98,8 +98,9 @@ An industry-generic well/channel activation anneal for a 200 mm,
   annealing at 1000 C for 10 sec in an RTA (Rapid Thermal Anneal)
   apparatus", after which "the gate insulating layer is formed on the N
   well and P well regions by a thermal oxidation";[^pat-well-hynix] in
-  older flows a furnace at "approximately 900 °C in a neutral ambient
-  such as nitrogen for approximately 30 minutes".[^pat-vt-lsi] A
+  older flows a well anneal "at approximately 900° C. in a neutral
+  ambient such as nitrogen for approximately 30 minutes" (the patent does
+  not name the tool).[^pat-vt-lsi] A
   1000–1050 °C, 10–30 s RTA is the typical 130 nm-era
   choice.[^txt-05][^txt-10] Ramp rates of "1 – 180°C per second" are the
   range of the AG Associates Heatpulse 8800-class tools.[^ag-8800]
@@ -212,8 +213,8 @@ An industry-generic well/channel activation anneal for a 200 mm,
   depth.[^itrs-01]
 * Lee and Son (Hyundai/Hynix), US 6,455,402 — RTA 1000 °C, 10 s, then
   gate oxidation.[^pat-well-hynix]
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — furnace
-  900 °C, 30 min, N₂.[^pat-vt-lsi]
+* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — a well
+  anneal at 900 °C for 30 min in nitrogen, tool not named.[^pat-vt-lsi]
 * Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997 — the physical
   mechanisms of transient enhanced diffusion.[^stolk-1997]
 * Roozeboom and Parekh (Philips), *J. Vac. Sci. Technol. B* 1990 — a
