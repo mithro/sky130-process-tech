@@ -107,7 +107,9 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)**.[^skw-01]
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash; **CF₄**,
+  listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
+  trench oxide and would, we infer, be omitted here (category page).
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
   acid**[^wiki-rca] (category page); **dilute HF** only if the oxide is
   removed.

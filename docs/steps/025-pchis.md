@@ -101,7 +101,9 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash.[^skw-01]
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash; **CF₄**,
+  listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
+  trench oxide and would, we infer, be omitted here (category page).
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
   acid**[^wiki-rca] (category page).
 * **DI water, isopropanol, nitrogen**.
