@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1567
+written page has exactly one entry here; the inventory holds 1578
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -500,6 +500,7 @@ Also used on the sputter targets material page.
 Also used on the substrates material page.
 Also used on the CMP consumables material page.
 Also used on the anneal ambients material page.
+Also used on the ultrapure water material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -677,6 +678,7 @@ as a captive manufacturing facility for 20 years".
 Also used on the substrates material page.
 Also used on the CMP consumables material page.
 Also used on the anneal ambients material page.
+Also used on the ultrapure water material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -699,6 +701,7 @@ Also used on the sputter targets material page.
 Also used on the substrates material page.
 Also used on the CMP consumables material page.
 Also used on the anneal ambients material page.
+Also used on the ultrapure water material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -1286,6 +1289,7 @@ stress metrology pages.
 Tier: high-level.
 Also used on the substrates material page.
 Also used on the CMP consumables material page.
+Also used on the ultrapure water material page.
 
 **TXT-08** — H. Xiao, *Introduction to Semiconductor Manufacturing
 Technology*, 2nd ed., SPIE Press, 2012, ISBN 978-0-8194-9092-6.
@@ -1831,6 +1835,7 @@ Also used on the wet bench and spray processor page.
 Also used on the post-CMP cleaner machine page.
 Tier: high-level.
 Also used on the wet chemicals material page.
+Also used on the ultrapure water material page.
 
 **WIKI-RESIST** — Wikipedia, *Photoresist*.
 <https://en.wikipedia.org/wiki/Photoresist> Photoresist chemistry, tone
@@ -2707,6 +2712,7 @@ alternative to the hot RCA sequence.
 Also used on the wet bench and spray processor page.
 Tier: deep dive.
 Also used on the wet chemicals material page.
+Also used on the ultrapure water material page.
 
 **KERN-1990** — W. Kern, *"The Evolution of Silicon Wafer Cleaning
 Technology"*, Journal of The Electrochemical Society, vol. 137, no. 6,
@@ -2717,6 +2723,7 @@ processor pages.
 Also used on the starting-material machine page.
 Tier: deep dive.
 Also used on the wet chemicals material page.
+Also used on the ultrapure water material page.
 
 **KERN-HANDBOOK** — W. Kern, *"Overview and Evolution of Silicon Wafer
 Cleaning Technology"*, ch. 1 in K. A. Reinhardt and W. Kern (eds.),
@@ -5223,6 +5230,7 @@ The yield-learning loop. Used on the test category page.
 Also used on the defect and particle inspection and parametric tester and
 prober pages.
 Tier: cross-check.
+Also used on the ultrapure water material page.
 
 **SEMI-MF84** — SEMI MF84, *Test Method for Measuring Resistivity of
 Silicon Wafers With an In-Line Four-Point Probe*, SEMI.
@@ -6971,6 +6979,7 @@ queue-time constraint. Used on steps 095 and 096.
 Also used on the vertical-furnace oxidation page.
 Tier: deep dive.
 Also used on the wet chemicals material page.
+Also used on the ultrapure water material page.
 
 **OEHRLEIN-1994-II** — G. S. Oehrlein, Y. Zhang, D. Vender and O.
 Joubert, "Fluorocarbon high-density plasmas. II. Silicon dioxide and
@@ -10271,6 +10280,7 @@ Marangoni drying (no abstract in Crossref or OpenAlex; the annotation
 rests on the title). Used on the wet bench and spray processor page.
 Tier: deep dive.
 Also used on the wet chemicals material page.
+Also used on the ultrapure water material page.
 
 **PAT-DICO2-MKS** — C. Gottschalk, U. Brammer, J. Lohr and J. Seiwert
 (MKS Instruments), *System and method for carbonation of deionized
@@ -10279,6 +10289,7 @@ water*, EP 2 104 648 B1, granted 2013-04-17.
 for wet cleaning, whose dissolved CO₂ lowers the water's resistivity "to
 a level that prevents surface charging". Used on the wet bench and spray
 processor page. Tier: cross-check (patent).
+Also used on the ultrapure water material page.
 
 **PAT-EKC-HYDROXYLAMINE** — W. M. Lee (EKC Technology), *Cleaning
 compositions for removing etching residue and method of using*,
@@ -11724,6 +11735,7 @@ scrubber, "Method in which wafers are physically cleaned using soft
 brushes and DI water", with throughput up to 500 wafers per hour and
 lower DI water use per wafer. Used on the post-CMP cleaner machine page.
 Tier: cross-check (vendor statement).
+Also used on the ultrapure water material page.
 
 **PAT-SCRUBBER-ONTRAK** — R. A. Lutz (OnTrak Systems), *Double-sided
 wafer scrubber with a wet submersing silicon wafer indexer*, US 5,442,828
@@ -11734,6 +11746,7 @@ must not dry; brush stations with hollow-core, water-flushed nylon or PVA
 brushes; a spin-dry station; a wet indexer that keeps wafers submerged.
 Used on the post-CMP cleaner machine page. Tier: deep dive.
 Also used on the CMP consumables material page.
+Also used on the ultrapure water material page.
 
 **PAT-MEGASONIC-RCA** — A. Mayer and S. Shwartzman (RCA), *Megasonic
 cleaning system*, US 3,893,869 A, granted 1975-07-08.
@@ -11749,6 +11762,7 @@ The Electrochemical Society* **142**(8), 2812–2817 (1995).
 Si₃N₄ particles at 862 kHz in DI water and SC-1 against time, particle
 size and power. Used on the post-CMP cleaner machine page. Tier: deep
 dive.
+Also used on the ultrapure water material page.
 
 **GALE-1999** — G. W. Gale and A. A. Busnaina, "Roles of cavitation and
 acoustic streaming in megasonic cleaning", *Particulate Science and
@@ -13269,6 +13283,107 @@ Abstract: tungsten oxidises rapidly to WO₃ in an O₂ downstream plasma at
 up to 300 °C; "oxidation can be reduced effectively by adding H2"; adding
 N₂ lowers the efficiency of the hydrogen. Used on the anneal ambients
 material page. Tier: deep dive.
+
+#### Ultrapure water (first cited there)
+
+**SEMI-F63** — SEMI, *SEMI F63 — Guide for Ultrapure Water Used in
+Semiconductor Processing*, SEMI Standards store listing (revision
+F63-1224, current), accessed 2026-09-13.
+<https://store-us.semi.org/products/f06300-semi-f63-guide-for-ultrapure-water-used-in-semiconductor-processing>
+The abstract: the guide may be used to set purchasing criteria for UPW
+equipment, "To set the process control parameters for UPW-system
+operation" and "To establish quality expectations for the supplied UPW";
+"UPW is used extensively in the production of semiconductor devices for
+all wet-processing steps (including wafer rinsing)"; written for
+facilities making semiconductors "with line widths of 32 nm and smaller"
+with IRDS UPW committee input. Used on the ultrapure water material page.
+Tier: cross-check (standard).
+
+**SEMI-F61** — SEMI, *SEMI F61 — Guide to Design and Operation of a
+Semiconductor Ultrapure Water System*, SEMI Standards store listing
+(revision F61-0521, current), accessed 2026-09-13.
+<https://store-us.semi.org/products/f06100-semi-f61-guide-to-design-and-operation-of-a-semiconductor-ultrapure-water-system>
+The abstract: "the engineering and component requirements for a UPW
+system used in semiconductor manufacturing", for UPW and hot UPW systems,
+used with SEMI F63 and F75. Used on the ultrapure water material page.
+Tier: cross-check (standard).
+
+**ASTM-D5127** — ASTM International, *D5127-13(2018) Standard Guide for
+Ultra-Pure Water Used in the Electronics and Semiconductor Industries*
+(active), catalogue page; read from the Wayback Machine capture of
+2024-09-17 (the live page refuses automated requests).
+<https://www.astm.org/d5127-13r18.html>
+<https://web.archive.org/web/20240917021043/https://www.astm.org/d5127-13r18.html>
+"Significance and Use": the guide "recommends the water quality required
+for the electronics and microelectronics industries"; "The types of
+ultra-pure water are defined with respect to device line width"; the
+recommendations "apply at the point of distribution". Used on the
+ultrapure water material page. Tier: cross-check (standard).
+
+**WIKI-UPW** — Wikipedia, *Ultrapure water*.
+<https://en.wikipedia.org/wiki/Ultrapure_water> Pretreatment, reverse
+osmosis, degassing, UV and ion-exchange or electrodeionization polishing;
+a semiconductor UPW table with resistivity ">18.18 MΩ·cm" and TOC
+"<1 μg/L"; dissolved oxygen "<10 μg/L in the ultrapure rinse water";
+advanced fabs "consuming several million gallons of UPW per day"; TOC
+measured by oxidising organics to CO₂. Used on the ultrapure water
+material page. Tier: high-level.
+
+**WIKI-PURIFIED-WATER** — Wikipedia, *Purified water*.
+<https://en.wikipedia.org/wiki/Purified_water> A table of laboratory
+water standards in which ASTM D1193 Type I water has a resistivity of
+18.2 MΩ·cm at 25 °C. Used on the ultrapure water material page. Tier:
+high-level.
+
+**LIBMAN-2015** — S. Libman, D. Wilcox and B. Zerfas, "Ultrapure Water
+for Advance Semiconductor Manufacturing: Challenges and Opportunities",
+*ECS Transactions* **69**(8), 17–28 (2015).
+<https://doi.org/10.1149/06908.0017ecst> Abstract: killer particle size
+near 10 nm, particles in UPW exceeding requirements, "hydrogen peroxide
+generated in Ultraviolet treatment" and dissolved organics "either
+originating from incoming city water or introduced by UPW system
+materials". Used on the ultrapure water material page. Tier: deep dive.
+
+**LI-2005** — F. Li, M. K. Balazs and S. Anderson, "Effects of Ambient
+and Dissolved Oxygen Concentration in Ultrapure Water on Initial Growth
+of Native Oxide on a Silicon (100) Surface", *Journal of The
+Electrochemical Society* **152**(8), G669 (2005).
+<https://doi.org/10.1149/1.1946487> Abstract: "the ambient and the
+dissolved oxygen concentration in UPW dramatically affect the growth rate
+of the native oxide" after HF cleaning. Used on the ultrapure water
+material page. Tier: deep dive.
+
+**YAGI-1992** — Y. Yagi, T. Imaoka, Y. Kasama and T. Ohmi, "Advanced
+ultrapure water systems with low dissolved oxygen for native oxide free
+wafer processing", *IEEE Transactions on Semiconductor Manufacturing*
+**5**(2), 121–127 (1992). <https://doi.org/10.1109/66.136273> Abstract:
+two UPW systems with membrane vacuum degassing plus catalytic reduction or
+nitrogen bubbling supply "10 ppb or less in dissolved oxygen
+concentration", with TOC, silica and residue at 1 ppb or less. Used on
+the ultrapure water material page. Tier: deep dive.
+
+**GAUDET-1984** — P. W. Gaudet, "Point-Of-Use Ultrafiltration of
+Deionized Rinse Water and Effects on Microelectronics Device Quality", in
+*Semiconductor Processing*, ASTM International, 1984,
+ISBN 978-0-8031-0403-7, pp. 184–197. <https://doi.org/10.1520/STP32652S>
+Abstract: control of "colloidal particles of 0.2 micron and smaller" in
+critical rinses by point-of-use ultrafiltration. Used on the ultrapure
+water material page. Tier: deep dive.
+
+**CARTWRIGHT-1985** — P. S. Cartwright, "Total Effluent Treatment and
+Rinse Water Reclamation in a Semiconductor Device Manufacturing
+Facility", *Water Science and Technology* **17**(2–3), 325–336 (1985).
+<https://doi.org/10.2166/wst.1985.0141> Abstract: "over 90% of the rinse
+water is purified back to 18 megohm/cm quality for reuse", with toxic
+chemicals precipitated as sludge. Used on the ultrapure water material
+page. Tier: deep dive.
+
+**NAKATA-2016** — K. Nakata, T. Fukui and T. Nagai, "Particle adsorption
+onto Si wafers in ultrapure water; its mechanism and effect of carbon
+dioxide", *ISSM 2016*, pp. 1–4. <https://doi.org/10.1109/ISSM.2016.7934544>
+A model of particle adsorption onto silicon in UPW from spin-cleaning and
+impurity experiments. Used on the ultrapure water material page. Tier:
+deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
