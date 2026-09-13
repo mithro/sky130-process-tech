@@ -302,14 +302,14 @@ each shuttle.[^steps-sheet][^mask-renders]
 
 | Run | Sheet column heading | Plate-ID prefix | Renders site: reticle set | Fab lot (site) | Identification (site) | Projects (site) | Run page |
 |-----|----------------------|-----------------|---------------------------|----------------|-----------------------|-----------------|----------|
-| MPW-1 | `7CS8M06AC` | `S8M06AA` | `7CS8M06AC` | 4120787 | "likely" | 37 | [mpw-001](https://data.wafer.space/big-storage/sky130-masks/mpw-001.html) |
-| MPW-2 | `5CS8007AC` | `S8007AA` | `5CS8007AC` | 4205819 | "confirmed" | 56 | [mpw-002](https://data.wafer.space/big-storage/sky130-masks/mpw-002.html) |
-| MPW-3 | `5CS8008AC` | `S8008AA` | `5CS8008AC` | 4206521 | "confirmed" | 53 | [mpw-003](https://data.wafer.space/big-storage/sky130-masks/mpw-003.html) |
-| MPW-4 | `5CS8018AC` | `S8018AA` | `5CS8010AC`, "SKY130 MPW-4 (original)" | 4216266 | "confirmed" | 52 | [mpw-004](https://data.wafer.space/big-storage/sky130-masks/mpw-004.html) |
-| MPW-5 | `5CS8011AC` | `S8011AA` | `5CS8011AC` | 4229389 | "confirmed" | 74 | [mpw-005](https://data.wafer.space/big-storage/sky130-masks/mpw-005.html) |
-| MPW-6 | `5CS8014AC` | `S8014AA` | `5CS8014AC` | none given | "confirmed" | 85 | [mpw-006](https://data.wafer.space/big-storage/sky130-masks/mpw-006.html) |
-| MPW-7 | `5CS8016AC` | `S8016AA` | `5CS8016AC` | none given | "inferred" | 106 | [mpw-007](https://data.wafer.space/big-storage/sky130-masks/mpw-007.html) |
-| MPW-8 | `5CS8017AC` | `S8017AA` | `5CS8017AC` | none given | "inferred" | 144 | [mpw-008](https://data.wafer.space/big-storage/sky130-masks/mpw-008.html) |
+| MPW-1 | `7CS8M06AC` | `S8M06AA` | `7CS8M06AC` | 4120787 | "likely" | 37 | `mpw-001.html` |
+| MPW-2 | `5CS8007AC` | `S8007AA` | `5CS8007AC` | 4205819 | "confirmed" | 56 | `mpw-002.html` |
+| MPW-3 | `5CS8008AC` | `S8008AA` | `5CS8008AC` | 4206521 | "confirmed" | 53 | `mpw-003.html` |
+| MPW-4 | `5CS8018AC` | `S8018AA` | `5CS8010AC`, "SKY130 MPW-4 (original)" | 4216266 | "confirmed" | 52 | `mpw-004.html` |
+| MPW-5 | `5CS8011AC` | `S8011AA` | `5CS8011AC` | 4229389 | "confirmed" | 74 | `mpw-005.html` |
+| MPW-6 | `5CS8014AC` | `S8014AA` | `5CS8014AC` | none given | "confirmed" | 85 | `mpw-006.html` |
+| MPW-7 | `5CS8016AC` | `S8016AA` | `5CS8016AC` | none given | "inferred" | 106 | `mpw-007.html` |
+| MPW-8 | `5CS8017AC` | `S8017AA` | `5CS8017AC` | none given | "inferred" | 144 | `mpw-008.html` |
 
 * **MPW-4 has two sets.** The sheet heads its MPW-4 column `5CS8018AC`,
   and every MPW-4 plate ID in it has the prefix
@@ -485,10 +485,9 @@ positions of a grid of six rows and seven columns (frames A1 to F7);
 the site shows the other two, A7 and C5, as "SkyWater test structures",
 "not a shuttle project", and does not render them. It gives every die
 as 3588.07 µm × 5188.0 µm on MPW-2 to MPW-8 and 3588.0 µm × 5188.0 µm
-on MPW-1.[^mask-renders] The run pages are linked from the table in
-{ref}`masks-mpw-reticle-sets`; the overview
-[masks.html](https://data.wafer.space/big-storage/sky130-masks/masks.html)
-sets every run against every mask.
+on MPW-1.[^mask-renders] The run pages are named in the table in
+{ref}`masks-mpw-reticle-sets`; the overview page `masks.html` sets
+every run against every mask.
 
 The site states the limits of its images: "These are renders of
 *drawn* data, not photomask artwork: reticle pitch, 4x reduction,
@@ -513,14 +512,10 @@ show the following.[^mask-renders][^steps-sheet]
 * **Plates recorded, no drawn shapes.** `TUNM`, `ONOM` and `LDNTM` have
   plates on all eight runs, but their layers (`tunm` 80:20 for the
   first two, `ldntm` 11:44) are drawn on one die of MPW-1 (frame A4)
-  and one of MPW-5 (frame D7) and on no die of the other six runs
-  ([MPW-1 TUNM](https://data.wafer.space/big-storage/sky130-masks/mpw-001_TUNM/mpw-001_TUNM.html),
-  [MPW-5 TUNM](https://data.wafer.space/big-storage/sky130-masks/mpw-005_TUNM/mpw-005_TUNM.html)).
+  and one of MPW-5 (frame D7) and on no die of the other six runs.
   `PWBM`, with plates on MPW-6 and MPW-8, and `PWDEM`, with a plate on
   MPW-6, are empty on every run: no rendered die draws `pwbm` 19:44 or
-  `pwde` 124:20
-  ([MPW-6 PWBM](https://data.wafer.space/big-storage/sky130-masks/mpw-006_PWBM/mpw-006_PWBM.html),
-  [MPW-8 PWBM](https://data.wafer.space/big-storage/sky130-masks/mpw-008_PWBM/mpw-008_PWBM.html)).
+  `pwde` 124:20.
   `RPM` has a plate on MPW-3, where no die draws `rpm` 86:20. `RRM` and
   `VIMC` have plates on MPW-1 to MPW-3, and `VIMC` also on MPW-5, where
   no die draws the layer 201:20 from which the site renders both. Because the renders leave
@@ -542,21 +537,20 @@ show the following.[^mask-renders][^steps-sheet]
 
   | Run | Dies with shapes on `RRM` and `VIMC` |
   |-----|--------------------------------------|
-  | MPW-4 ([RRM](https://data.wafer.space/big-storage/sky130-masks/mpw-004_RRM/mpw-004_RRM.html)) | B2 `4t1r_testchip`; D2 `rram_testchip` |
-  | MPW-7 ([RRM](https://data.wafer.space/big-storage/sky130-masks/mpw-007_RRM/mpw-007_RRM.html)) | B3 `nanofabrication_project_using_openfasoc`; B7 `reram_crossbar`; D1 `mixed_signal_circuits-jun13`; D7 `reram-controller-mpw7_v2`; E2 `in_memory_computing_rram`; E3 `rram_imc_v2_flat` |
-  | MPW-8 ([RRM](https://data.wafer.space/big-storage/sky130-masks/mpw-008_RRM/mpw-008_RRM.html)) | B1 `nanofabrication_project_using_openfasoc_mpw8`; B3 `reram_crossbar_rerun`; B7 `reram_module_mpw8`; D5 `mixed_signal_circuits_mpw8_dec14`; E5 `mega4_reram` |
+  | MPW-4 | B2 `4t1r_testchip`; D2 `rram_testchip` |
+  | MPW-7 | B3 `nanofabrication_project_using_openfasoc`; B7 `reram_crossbar`; D1 `mixed_signal_circuits-jun13`; D7 `reram-controller-mpw7_v2`; E2 `in_memory_computing_rram`; E3 `rram_imc_v2_flat` |
+  | MPW-8 | B1 `nanofabrication_project_using_openfasoc_mpw8`; B3 `reram_crossbar_rerun`; B7 `reram_module_mpw8`; D5 `mixed_signal_circuits_mpw8_dec14`; E5 `mega4_reram` |
 
   The MPW-4 renders are of the layouts the site ties to the original
   set `5CS8010AC`; the sheet's MPW-4 plates are those of `5CS8018AC`
   ({ref}`masks-mpw-reticle-sets`).
 * **Masks used on few dies.** `rpm` 86:20, which the site renders for
   `RPM`, is drawn on 1, 5, 0, 3, 4, 2, 3 and 2 dies of MPW-1 to MPW-8
-  in turn ([MPW-2 RPM](https://data.wafer.space/big-storage/sky130-masks/mpw-002_RPM/mpw-002_RPM.html)).
+  in turn.
 * **"40 of 40" is not 40 designs.** `CAPM`, `CAP2M` and `URPM` have
   shapes on 39 or 40 dies of every run, but on each run 33 to 39 of
   those dies carry exactly one shape on the layer, and only a few dies
-  carry more
-  ([MPW-7 CAP2M](https://data.wafer.space/big-storage/sky130-masks/mpw-007_CAP2M/mpw-007_CAP2M.html)).
+  carry more.
   The die count therefore does not show that most projects use MiM capacitors or the
   2000 Ω/sq resistor; the site does not say what the single shape is.
   `NSM` likewise has exactly 36 shapes on every die that has any.
@@ -859,7 +853,10 @@ expressions (below). The layer names are those of
     directory: `README.md`, `masks.html`, the run pages `mpw-001.html` to
     `mpw-008.html`, and for each run × mask directory the page,
     `job.json`, `result.json` and per-die slot JSON files, retrieved
-    2026-09-13. Rendered from the public shuttle repositories under
+    2026-09-13. Run pages are `mpw-00N.html`; each render's page is
+    `<run>_<mask>/<run>_<mask>.html` (for example
+    `mpw-001_TUNM/mpw-001_TUNM.html`). Rendered from the public shuttle
+    repositories under
     <https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>.
     <https://data.wafer.space/big-storage/sky130-masks/>
 [^photronics-abr]: Photronics, Inc., *Advanced Binary Reticle*, product
