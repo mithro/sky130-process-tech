@@ -141,7 +141,8 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
   cap is an **inference** from the Fab 4 TEOS passivation
   films.[^cyp-qtp-123907][^cyp-qtp-014807]
 * **PECVD silane oxide "C1".**[^skw-01] Strength: strong for existence; an
-  alternative for the cap (weak for assignment).
+  alternative for the cap (medium for assignment, as on the other cap
+  oxides).
 
 ## Resources required
 
