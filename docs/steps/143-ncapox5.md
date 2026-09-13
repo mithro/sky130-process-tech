@@ -149,12 +149,12 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Resources required
 
-* **TEOS** (liquid, vaporised) and **oxygen**, or **silane** and
+* **{ref}`TEOS <material-precursors>`** (liquid, vaporised) and **{ref}`oxygen <material-process-gases>`**, or **silane** and
   **N₂O** for the silane route;[^wiki-teos][^wiki-pecvd] **helium**,
   **nitrogen** or **argon** as carrier or diluent (typical; the PECVD
   article describes TEOS deposition "in an oxygen or oxygen-argon
   plasma"[^wiki-pecvd]).
-* **NF₃** for the chamber clean; **nitrogen** purge.
+* **{ref}`NF₃ <material-etch-gases>`** for the chamber clean; **nitrogen** purge.
 * **{ref}`Showerhead, heater and liner consumables <material-hardware-consumables>`**; **{ref}`monitor wafers <material-substrates>`**.
 
 ## Related steps and cross-references

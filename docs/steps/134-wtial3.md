@@ -209,7 +209,7 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
   Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
   as sputter-target suppliers.[^sec-01][^sec-02] A thick metal consumes
   Al–Cu targets several times faster per wafer than the thin levels.
-* **Argon** for sputtering and pre-clean; **nitrogen** for venting. Gas
+* **{ref}`Argon <material-process-gases>`** for sputtering and pre-clean; **nitrogen** for venting. Gas
   suppliers named in SkyWater's filings: Air Products and Praxair (2021
   S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 * **{ref}`Chamber shields <material-hardware-consumables>`, clamps and electrostatic-chuck consumables**,

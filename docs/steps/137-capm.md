@@ -180,7 +180,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 * **Organic BARC** or dyed resist, **2.38 % (0.26 N) TMAH developer** (the
   2021 S-1 names "Air Products & Chemicals, Inc., Moses Lake" for
   developer[^sec-01]), edge-bead remover, rinse solvents, {ref}`DI water <material-ultrapure-water>` and
-  nitrogen.[^txt-02]
+  {ref}`nitrogen <material-process-gases>`.[^txt-02]
 * **The CAPM {term}`reticle`**, generated from the drawn `capm` layer
   (89:44)[^pdk-06] — on our reading a binary chrome-on-glass mask
   without OPC.
