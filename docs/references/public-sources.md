@@ -731,8 +731,10 @@ expire, and the page refused later automated retrieval (HTTP 403,
 <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>.
 The *Defect Technician 2* posting reads "General operation of
 semiconductor defect metrology tools: SEM/AIT/KLA/SP1/EV300/1X" —
-i.e. KLA-Tencor AIT (patterned-wafer inspection), SP1 (unpatterned
-Surfscan) and an "EV300" review tool (vendor not stated in the posting). Other
+which the step and machine pages read as KLA-Tencor's AIT
+(patterned-wafer) and Surfscan SP1 (unpatterned-wafer) inspectors and an
+eV300 review SEM (our reading; the posting expands none of the
+abbreviations). Other
 titles on the page (Equipment Maintenance Technician – Metrology,
 Senior Metals Process Technician, Development Engineering Senior
 Technician) name no tools.
@@ -12439,7 +12441,7 @@ on the floor today, not necessarily what built the first S8 wafers.
 | Lithography | Multibeam multicolumn e-beam (MEBL) † | SKW-14, SKW-06, GOV-01 context | strong |
 | Coat/develop tracks | DNS (SCREEN) 80B; Sokudo RF3; TEL ProZ Lithius | SKW-01 | strong |
 | Photo metrology | AMAT Verity (CD-SEM), AMAT VeraSEM; KLA 5200/5300/Archer overlay | SKW-01 | strong |
-| Defect inspection | KLA-Tencor AIT, SP1 (Surfscan); EV300 review; SEM | JOB-01 ("SEM/AIT/KLA/SP1/EV300/1X") | medium |
+| Defect inspection | "SEM/AIT/KLA/SP1/EV300/1X" (read as KLA-Tencor AIT, Surfscan SP1 and eV300 review; reading ours) | JOB-01 ("SEM/AIT/KLA/SP1/EV300/1X") | medium |
 | CVD dielectrics | "C1"/"C2" PECVD (inferred to be Novellus Concept One/Two; SKW-01 gives only the abbreviations); AMAT Producer PECVD TEOS; Lam/Novellus HDP-CVD (doped and PSG) | SKW-01; SKW-07 ("Novellus high density plasma tool") | strong |
 | CVD tungsten | Lam/Novellus PECVD tungsten with PNL nucleation (plug fill, ≤10:1) | SKW-01 | strong |
 | PVD metals | AMAT PVD (Al and AlCu, TiW, TiN (ESC and IMP), collimated Ti, WN, Co, Nb) — consistent with Endura-class platforms | SKW-01 (platform name not given) | strong for vendor, weak for model |
