@@ -152,7 +152,10 @@ recipe is not public); the shared physics is set out at
 7. **Metrology.** Top and bottom CD by {term}`CD-SEM`, profile and
    cap loss by cross-section SEM on monitors, via-chain resistance at
    {term}`e-test`; the PDK's 4.5 Ω `via`[^pdk-08] is the number such
-   chains give.
+   chains give. The published SKY130 {term}`test tile`'s via-1
+   structures are an "M2 to M1 via: 0.15um (3240 vias)" string and
+   "M2-M1-LI1-N+" and "M2-M1-LI1-P+" strings of 6992 contacts, each a
+   "stacked via on mcon on licon1".[^raw-data-testtile-pads]
 
 ## Machines typically used
 
@@ -225,6 +228,8 @@ recipe is not public); the shared physics is set out at
 * SkyWater, *Facilities & Capabilities* — DPS II, Lam 9400 TCP and Lam 4400 gas
   lists; ashers; EKC solvents.[^skw-01]
 * Lam Research, Exelan launch (2001) and 10-K (2003).[^lam-exelan][^lam-10k]
+* SKY130 raw-data repository, test-tile pad documentation — the via-1
+  chain structures of the published test tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -427,3 +432,9 @@ recipe is not public); the shared physics is set out at
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>

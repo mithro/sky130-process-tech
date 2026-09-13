@@ -149,7 +149,11 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 7. **Metrology.** Top and bottom CD by {term}`CD-SEM`, depth and
    profile by cross-section SEM on monitors, contact-chain resistance
    at {term}`e-test`; the 152 Ω `mcon` of the PDK[^pdk-08] is the kind
-   of number such chains give.
+   of number such chains give. The published SKY130 {term}`test tile`
+   has an "M1-LI1 contacts: mcon = 0.17 um" string of 3600 contacts,
+   "M1-LI1-N+" and "M1-LI1-P+" contact strings of 6384 and 6992, and
+   "M1-LI contact Kelvin" structures drawn with ".05 LI enclosure" and
+   "-.01 LI enclosure".[^raw-data-testtile-pads]
 
 ## Machines typically used
 
@@ -221,6 +225,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 * SkyWater, *Facilities & Capabilities* — DPS II, Lam 9400 TCP and
   Lam 4400 gas lists; ashers; EKC solvents.[^skw-01]
 * Lam Research, Exelan launch (2001) and 10-K (2003).[^lam-exelan][^lam-10k]
+* SKY130 raw-data repository, test-tile pad documentation — the mcon
+  contact-string and Kelvin structures of the published test
+  tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -383,3 +390,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
