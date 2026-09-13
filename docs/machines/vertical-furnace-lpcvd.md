@@ -90,9 +90,9 @@ increase and the thickness uniformity to degrade".[^adams-1979]
   nitride; the reaction produces HCl and, with excess ammonia, ammonium
   chloride (below).[^wiki-sin][^pat-nh4cl-tsmc] LPCVD nitride "contains up
   to 8% hydrogen" and "experiences strong tensile stress, which may crack
-  films thicker than 200 nm".[^wiki-sin] Temple-Boyer et al. show how
-  stress and composition follow temperature, pressure and gas
-  ratio.[^temple-boyer-1998]
+  films thicker than 200 nm".[^wiki-sin] Temple-Boyer et al. show, for
+  silane–ammonia LPCVD nitride, how stress and composition follow
+  temperature, pressure and gas ratio.[^temple-boyer-1998]
 * **Low-temperature nitride from BTBAS.** Bis(tertiary-butylamino)silane
   lowers the nitride temperature: Gumpher et al. deposited it "at
   550-600°C in a 200 mm vertical batch furnace system" at "4-30 Å/min"
@@ -200,8 +200,8 @@ the Aviza history and the question of vertical or horizontal tubes are
 on the {ref}`oxidation furnace page <machine-vertical-furnace-oxidation>`.
 For this class the list is unusually specific — a process named
 "oxide/nitride/oxide" and a BTBAS nitride match particular SKY130 films —
-but it still names no step, so every assignment below is an inference
-from a listed capability.
+but it still names no step, so the grades below are the step pages'
+readings of a listed capability.
 
 (machine-vertical-furnace-lpcvd-steps)=
 ### SKY130 steps assigned to this class
@@ -228,13 +228,15 @@ likely used at SkyWater"), as collected on the machines index:
 
 The furnace row covers all three furnace classes, because SkyWater
 lists its furnaces as one group; the LPCVD steps are those in the
-paragraph above. The inferences rest on the listed processes: "LPCVD
-nitride" for {ref}`ISONIT <step-003>` and {ref}`GATENIT <step-058>`,
-"LPCVD oxide/nitride/oxide" for {ref}`ONO <step-040>`, "LPCVD polysilicon
-(undoped), both amorphous and crystalline" for {ref}`SAGD <step-048>`,
-"LPCVD BTBAS low temp nitride" for {ref}`SPNIT <step-076>` and
-{ref}`LINIT <step-104>`, and "LPCVD silane oxide" for
-{ref}`POC <step-059>` and {ref}`SPOX <step-080>`.[^skw-01]
+paragraph above. The grades rest on the listed processes: "LPCVD
+nitride" for {ref}`ISONIT <step-003>` (strong) and
+{ref}`GATENIT <step-058>` (inference), "LPCVD oxide/nitride/oxide" for
+{ref}`ONO <step-040>` (inference), "LPCVD polysilicon (undoped), both
+amorphous and crystalline" for {ref}`SAGD <step-048>` (inference), "LPCVD
+BTBAS low temp nitride" for {ref}`SPNIT <step-076>` (inference) and
+{ref}`LINIT <step-104>` (weak), and "LPCVD silane oxide" for
+{ref}`POC <step-059>` and {ref}`SPOX <step-080>` (strong for existence,
+as the batch alternative).[^skw-01]
 
 ## Consumables and facilities
 
@@ -354,8 +356,8 @@ pressures and thicknesses are not public.
 
 * Roenigk and Jensen, *J. Electrochem. Soc.* 1987 — a hot-wall reactor
   model for dichlorosilane nitride.[^roenigk-1987]
-* Temple-Boyer et al., *JVST A* 1998 — stress and composition of LPCVD
-  nitride.[^temple-boyer-1998]
+* Temple-Boyer et al., *JVST A* 1998 — stress and composition of
+  silane–ammonia LPCVD nitride.[^temple-boyer-1998]
 * Gumpher et al., *J. Electrochem. Soc.* 2004 — BTBAS nitride in a 200 mm
   vertical batch furnace.[^gumpher-2004]
 * Smith, Seutter and Iyer, *J. Electrochem. Soc.* 2005 — single-wafer BTBAS
