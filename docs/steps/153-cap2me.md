@@ -192,7 +192,7 @@ same sequence.
   poly/silicon etchers[^skw-01]); **He** for backside cooling. The gas
   set is the one given at {ref}`CAPME <step-138>`, since the PDK calls
   the two capacitor constructions identical.[^pdk-07]
-* **O₂/N₂** for the ash;[^skw-01] **amine or semi-aqueous solvent** and
+* **O₂/N₂** for the ash;[^skw-01] **amine or semi-aqueous solvent** ({ref}`wet chemicals <material-wet-chemicals>`) and
   DI water for the clean.[^skw-01]
 * **Chamber consumables** and **monitor wafers** with TiW over thin
   dielectric for rate and selectivity checks.
