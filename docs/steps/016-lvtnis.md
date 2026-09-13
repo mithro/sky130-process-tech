@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 16 of 171 |
+| **Step number** | 16 of 171[^steps-sheet] |
 | **Step code** | `LVTNIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
 | **Phase** | FEOL — wells and channel implants |
@@ -282,3 +282,6 @@ cleanliness.[^txt-02]
 [^roche-1985]: D. Roche, J. F. Michaud and M. Bruel, "Outgassing of
     Photoresist During Ion Implantation", *MRS Proceedings* **45**
     (1985). <https://doi.org/10.1557/PROC-45-203>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 23 of 171 |
+| **Step number** | 23 of 171[^steps-sheet] |
 | **Step code** | `PCHI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
 | **Phase** | FEOL — wells and channel implants |
@@ -261,3 +261,6 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
 [^taur-2009]: Y. Taur and T. H. Ning, *Fundamentals of Modern VLSI
     Devices*, 2nd ed., Cambridge University Press, 2009, ISBN
     978-0-521-83294-6. <https://doi.org/10.1017/CBO9781139195065>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

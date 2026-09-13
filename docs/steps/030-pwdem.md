@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 30 of 171 |
+| **Step number** | 30 of 171[^steps-sheet] |
 | **Step code** | `PWDEM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
 | **Phase** | FEOL — wells and channel implants |
@@ -298,3 +298,6 @@ An industry-generic drain-extension well lithography for a 200 mm,
     (mechanism and impact on production)", *Proc. 11th International
     Conference on Ion Implantation Technology* (1996), pp. 186–189.
     <https://doi.org/10.1109/IIT.1996.586180>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
