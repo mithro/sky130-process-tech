@@ -125,7 +125,7 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   tanks (Akrion, DNS/SCREEN, SCP), a **spray processor** (FSI
   Mercury) or a **single-wafer wet tool** (SEZ/Lam Da Vinci)
   ({ref}`category-etch`, {ref}`category-strip`).
-* **Downstream asher** for the strip.
+* **Downstream plasma asher** for the strip.
 * **Ellipsometer** for etch-rate monitors; **particle scanner**
   after the clean.
 

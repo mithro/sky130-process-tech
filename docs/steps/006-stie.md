@@ -122,7 +122,7 @@ W/WN".[^skw-01]
   Materials Centura DPS / DPS II (decoupled plasma source), Lam {term}`TCP` 9400
   series (transformer-coupled plasma[^snf-9400]), TEL DRM/Unity,
   Hitachi M-series microwave ECR etchers.
-* **Resist asher** (downstream microwave or RF O₂ plasma).
+* **Downstream plasma asher** (microwave or RF O₂ plasma).
 * **Wet bench** for post-etch polymer removal.
 * **Cross-section SEM / CD-SEM** for depth and CD.
 

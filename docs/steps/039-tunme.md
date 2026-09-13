@@ -141,7 +141,7 @@ fab (SKY130's recipe is not public):
   tanks and a rinser/dryer (Akrion, DNS/SCREEN, SCP), or a **spray
   processor** (FSI Mercury), or a **single-wafer wet tool** (SEZ/Lam
   Da Vinci) ({ref}`category-etch`, {ref}`category-strip`).
-* **Downstream asher** for the strip (GaSonics, Mattson, Axcelis/Fusion).
+* **Downstream plasma asher** for the strip (GaSonics, Mattson, Axcelis/Fusion).
 * **Ellipsometer** on monitor wafers for etch-rate control; **particle
   scanner** after the clean.
 

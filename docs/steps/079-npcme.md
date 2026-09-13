@@ -146,7 +146,7 @@ fab (SKY130's recipe is not public):
   (poly/nitride class[^snf-9400]), Lam Exelan/4520XLE, Applied
   Materials MxP/eMax, TEL DRM; remote-plasma NF₃-based tools for a
   low-damage alternative.
-* **Downstream asher** and **wet bench** for the strip and clean.
+* **Downstream plasma asher** and **wet bench** for the strip and clean.
 * **Cross-section SEM**.
 
 ## Machines likely used at SkyWater
