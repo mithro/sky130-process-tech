@@ -25,8 +25,8 @@ lines the opening.
 What the etch removes is not public. Its first film is the thin
 passivation oxide of {ref}`NFUSOX <step-164>` (0.09 µm "TOPOX" on the
 PDK's stack diagram[^pdk-04]). Below that, in a region with no wiring,
-lie only dielectrics: on the diagram, the inter-level oxides NILD6 to
-NILD2 and the cap and gap-fill oxides between them, the thin "LINT
+lie only dielectrics: on the diagram, the inter-level dielectrics NILD6
+to NILD2 with the thin NILD3_C and NILD4_C layers, the thin "LINT
 K=7.3" nitride (0.075 µm) over the local-interconnect level, the "PSG
 K=3.9" pre-metal glass and the field oxide, the bottom of metal 5
 lying 5.3711 µm above the substrate.[^pdk-04] In the seal-ring cell
@@ -51,7 +51,8 @@ describe two readings (inference):
   to nitride makes such a stop possible (Schaepkens et al. studied the
   mechanism[^schaepkens-1999]).
 
-Either way the opening is several micrometres deep and 3–5 µm wide, an
+On either of these deeper readings the opening is several micrometres
+deep and 3–5 µm wide, an
 {term}`aspect ratio` of order 1–2 (our arithmetic), and occupies a very
 small fraction of the wafer: a 5 µm band around the 3.6 mm × 5.2 mm
 Caravel seal ring[^caravel-sealring] is about 0.09 mm² of an 18.7 mm²
@@ -61,11 +62,9 @@ die, some 0.5 % (our arithmetic).
 
 `NSME` is an {ref}`Etch <category-etch>` step of the *dielectric,
 fluorocarbon-chemistry* class — the category page's "Silicon dioxide"
-entry, applied not to a contact or via hole but to a wide, deep ring.
-The {ref}`category page <category-etch>` lists this step under
-silicon nitride etches; on the reading given here the film removed is mostly oxide, and nitride
-is at most a thin layer to break through or stop on (see *Open
-questions*). What is specific to this instance is the depth of the
+entry, applied not to a contact or via hole but to a wide, deep ring;
+on the reading given here nitride is at most a thin layer to break
+through or stop on. What is specific to this instance is the depth of the
 dielectric column, the absence of any conductor to land on, the tiny
 open area, and the timing: it is the only dielectric etch in the flow
 made after metal 5 and before the passivation nitride, so the resist and
@@ -87,7 +86,7 @@ beside the ring.
   close that path (inference). That this is the purpose of
   SKY130's `nsm` ring is our inference ({ref}`NSM <step-165>`).
 * **A crack stop.** A trench through the dielectric along the saw line
-  interrupts crack propagation from dicing, the function an IBM patent
+  interrupts crack propagation from dicing, the function a Siemens and IBM patent
   obtains from "discontinuities in the thickness of the dielectric
   layer" near the edges of the active regions (inference for
   SKY130).[^pat-crackstop-ibm]
@@ -122,10 +121,10 @@ public):
    (Kastenmeier et al. give nitride and oxide rates in CF₄/O₂/N₂[^kastenmeier-1996]);
    if it is to stop on it, a polymerising chemistry with high
    oxide-to-nitride selectivity is used.[^schaepkens-1999]
-4. **Endpoint.** Optical emission is weak at an open area of about
+4. **{term}`Endpoint <endpoint>`.** Optical emission is weak at an open area of about
    0.5 % (our estimate above) — Wodecki describes endpoint on
    low-open-area dielectric etches[^wodecki-1999] — so a timed etch
-   calibrated on monitors, with an over-etch, is likely (inference).
+   calibrated on monitors, with an {term}`over-etch`, is likely (inference).
 5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` on the Gasonics,
    Iridia or Mattson strippers SkyWater lists, then a solvent polymer
    clean compatible with the exposed oxide and the aluminium beneath
@@ -215,7 +214,7 @@ public):
 * Wodecki, SPIE 1999 — endpoint detection at low open area.[^wodecki-1999]
 * Stamper, McGahay and He (GlobalFoundries), US 10,062,748 — an edge seal
   etched through the dielectrics.[^pat-edgeseal-gf]
-* Mitwalsky and Chen (IBM), US 5,789,302 — dielectric discontinuities as
+* Mitwalsky and Chen (Siemens and IBM), US 5,789,302 — dielectric discontinuities as
   dicing crack stops.[^pat-crackstop-ibm]
 * Ying and Hung (TSMC), US 6,300,252 — a two-step window etch through a
   passivation and inter-metal dielectrics.[^pat-fusewin-tsmc]
@@ -227,11 +226,6 @@ public):
 * How deep the etch goes — through the thin TOPOX only, to the LINT
   nitride, or to the silicon of the seal ring — and whether it passes
   any nitride, are not public.
-* The {ref}`category page <category-etch>` lists `NSME` among nitride
-  etches; if the
-  opening is cut after the first passivation oxide and before the
-  passivation nitride, as the flow order implies, the film removed is
-  mainly oxide. We have not found a public statement that settles it.
 * The chemistry, endpoint and tool are not public.
 * This page treats the resist strip and clean as part of the etch.
 
@@ -308,8 +302,8 @@ public):
     (GlobalFoundries), *Segmented guard-ring and chip edge seals*,
     US 10,062,748 B1, filed 2017-02-27, granted 2018-08-28.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10062748>
-[^pat-crackstop-ibm]: A. R. Mitwalsky and T.-C. Chen (International
-    Business Machines / Samsung Electronics), *Crack stops*,
+[^pat-crackstop-ibm]: A. R. Mitwalsky and T.-C. Chen (Siemens
+    Aktiengesellschaft / International Business Machines), *Crack stops*,
     US 5,789,302 A, filed 1997-03-24, granted 1998-08-04.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5789302>
 [^pat-sealring-zeevo]: S. Bothra, T. G. McKay and R. Jhota (Zeevo),
