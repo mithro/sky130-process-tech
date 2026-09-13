@@ -42,7 +42,25 @@ What is public about the film is electrical, not physical. The PDK
 gives the capacitor an area capacitance `CMIMA` of 2 fF/µm² (limits
 1.8–2.2), a periphery capacitance `CMIMP` of 0.19 fF/µm, a top-plate
 {term}`sheet resistance` `RSCAPM` of 5.8 Ω/sq, and models valid for
-plate voltages of 0–5.0 V.[^pdk-07] Neither the dielectric's
+plate voltages of 0–5.0 V; its e-test table sets the `CMIMP` limits
+at 0.11–0.27 fF/µm.[^pdk-07]
+
+Measured values are public as well. The SKY130 raw-data repository
+publishes capacitance–voltage sweeps of the test tile's "CAPM on M3"
+capacitors, whose areas and perimeters the pad list
+gives.[^raw-data-testtile-pads][^raw-data-passives] Fitted over
+−3.3 V to +3.3 V, the 11-plate, 17 600 µm² capacitor measures 33.26 pF
+at 0 V. Solving the area-intensive (5 × 35 × 35 µm) and
+periphery-intensive (72 × 2 × 35 µm) structures for an area and a
+periphery term gives 1.87 fF/µm² and 0.18 fF/µm, both inside the
+e-test limits, and those two terms predict the large capacitor to
+within 0.3 %; a copy of it with "seas of via-2's" under the plates
+measures 0.08 % more (our extraction from the published measurements,
+with no correction for pad and wiring capacitance; the files record no
+measurement frequency, temperature, date or
+wafer).[^raw-data-passives]
+
+Neither the dielectric's
 thickness nor its permittivity is labelled anywhere in the PDK; the
 stack diagram carries no thickness for `capm` or its dielectric.[^pdk-04]
 The PDK does not name the dielectric. This reference describes it as
@@ -55,9 +73,11 @@ bound the thickness: with {math}`C/A = \varepsilon_0 k / d`, a film
 giving 2 fF/µm² is {math}`d \approx 4.4\,\mathrm{nm} \times k`, so
 about 18 nm for an oxide-like {math}`k = 4`, 22–27 nm for a mid-range
 oxynitride ({math}`k \approx 5`–6) and 33 nm for the {math}`k = 7.5`
-the PDK labels for its nitride films (TOPNIT, SPNIT).[^pdk-04] This
-is our arithmetic with an assumed permittivity, not a published
-number; 1–2 fF/µm² is also the density the published Al-BEOL
+the PDK labels for its nitride films (TOPNIT, SPNIT).[^pdk-04] With
+the measured 1.87 fF/µm² instead, the factor is about 4.7 nm and each
+thickness about 7 % larger.[^raw-data-passives] This is our arithmetic
+with an assumed permittivity, not a published number; 1–2 fF/µm² is
+also the density the published Al-BEOL
 PECVD-nitride MiM processes of the period reported.[^kar-roy-1999]
 
 ## Step category
@@ -127,7 +147,11 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   the {math}`C(V)` curvature in amorphous dielectrics.[^blonkowski-2007][^gonon-2007]
   Whether the PDK publishes coefficients for `cap_mim` is not
   something we could confirm; the device page lists only the three
-  parameters above.[^pdk-07]
+  parameters above.[^pdk-07] The published C–V sweeps of the four
+  first-level test structures fit quadratic coefficients of +32 to
+  +40 ppm/V² over ±3.3 V, and the fitted capacitance at ±3.3 V is
+  within 0.05 % of that at 0 V (our fit); they contain no temperature
+  data.[^raw-data-passives]
 
 Without `CAPILD` there would be nothing between metal 3 and the TiW
 of {ref}`CAPTIW1 <step-136>`, and the `capm` mask would define a short
@@ -241,6 +265,10 @@ back end (SKY130's recipe is not public):
   offered as standard.[^ann-11]
 * SkyWater, *Facilities & Capabilities* — "PECVD silane
   oxide/nitride/oxynitride, C1 – low temp, range of R.I. options".[^skw-01]
+* SKY130 raw-data repository — C–V sweeps of the first-level MiM test
+  capacitors and the pad list that gives their areas and perimeters;
+  the capacitance terms and voltage coefficients quoted here are our
+  extraction.[^raw-data-passives][^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -291,7 +319,8 @@ back end (SKY130's recipe is not public):
 
 * The dielectric's composition, permittivity, thickness and
   deposition conditions are not public; 18–33 nm is our estimate
-  from the 2 fF/µm² of the PDK[^pdk-07] with an assumed {math}`k`.
+  from the 2 fF/µm² of the PDK[^pdk-07] with an assumed {math}`k`
+  (about 7 % more from the measured 1.87 fF/µm²[^raw-data-passives]).
 * Whether the film is a single oxynitride or an oxide/nitride stack,
   and whether it receives a plasma treatment or anneal, is not public.
 * The PDK is not self-consistent here. The device page, the layer
@@ -302,11 +331,14 @@ back end (SKY130's recipe is not public):
   between capm and via2"), the via2 rule table says via2 connects
   "met2/capm to met3 in the SKY130DI* flow",[^pdk-periph] and the
   extraction table describes `cap_mim` with via2, m3 and "capm-m2"
-  terminals.[^pdk-08] We follow the metal-3 reading; the met2/via2
-  wording may come from a flow variant with the capacitor one level
-  lower (inference).
+  terminals.[^pdk-08] We follow the metal-3 reading, which the test
+  tile's pad documentation shares ("CAPM on M3");[^raw-data-testtile-pads]
+  the met2/via2 wording may come from a flow variant with the capacitor
+  one level lower (inference).
 * Whether voltage and temperature coefficients for `cap_mim` are
-  published in the PDK models is not confirmed here.
+  published in the PDK models is not confirmed here; the published
+  test-tile sweeps give a voltage dependence but no temperature
+  dependence.[^raw-data-passives]
 * The mask table lists "Capacitor MiM, CAPM" without the "used in
   SKY130" flag,[^pdk-05] consistent with the README's "optional"
   wording;[^pdk-10] whether every SKY130 lot carries the capacitor
@@ -457,3 +489,17 @@ back end (SKY130's recipe is not public):
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>

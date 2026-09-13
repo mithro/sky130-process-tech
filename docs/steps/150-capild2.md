@@ -59,6 +59,27 @@ the PDK gives both capacitors the same area capacitance and calls them
 identical,[^pdk-07] we read this film as the same deposition as
 {ref}`CAPILD <step-135>` (inference).
 
+Published measurements bear on that reading without settling it. The
+SKY130 raw-data repository holds capacitance–voltage sweeps of the test
+tile's "CAP2M over M4" capacitors beside the first-level
+ones.[^raw-data-testtile-pads][^raw-data-passives] The two large
+second-level capacitors (11 plates, 17 600 µm²) measure 35.27 pF and
+35.29 pF at 0 V, 2.00 fF/µm² including periphery, against 33.26 pF and
+33.28 pF for the first-level ones; one of the two second-level files is
+named `large_mim_cap`, but its module is the one the pad list describes
+as CAP2M over M4, and its value matches the other second-level
+capacitor. The area-intensive structures differ by only about 1 %
+(1.91 against 1.89 fF/µm² including periphery), while the second-level
+periphery-intensive structure measures less than its first-level
+counterpart (9.91 against 10.37 pF), so the levels do not differ by a
+simple area capacitance, and an area-plus-periphery model fitted to the
+three second-level structures leaves errors of about 5 %. Fitted over
+±3.3 V, their quadratic voltage coefficients are +47 to +51 ppm/V²,
+against +32 to +40 ppm/V² at the first level (our extraction from the
+published measurements, with no correction for pad and wiring
+capacitance; the files record no measurement frequency, temperature,
+date or wafer).[^raw-data-passives]
+
 **Where the public record is inconsistent.** Other PDK tables do not
 match this picture. The mask table lists "Capacitor MiM, CAPM" but no
 second capacitor mask,[^pdk-05] the minimum-CD table gives only
@@ -109,6 +130,11 @@ difference in thickness or permittivity between this film and
   2 fF/µm²[^pdk-07] is large; the second capacitor, stacked over the
   first, doubles the capacitance available on the same footprint (our
   arithmetic from the identical `CMIMA` and `CMIM2A`[^pdk-07]). The
+  test tile has such a pair — "CAPM-M3 and CAP2M-M4 capacitors, stacked
+  on top of each other and connected together", 11 pairs of 40 × 40 µm
+  plates[^raw-data-testtile-pads] — and its published measurement,
+  68.78 pF, is 0.3–0.4 % more than the sum of the separately measured
+  single-level large capacitors (our extraction).[^raw-data-passives] The
   Newport Fab patent builds exactly such a composite capacitor "perpendicular
   to the surface of the die", with upper and lower MiMs sharing a
   middle electrode and joined in parallel,[^pat-mim-stack-newportfab]
@@ -263,6 +289,10 @@ diagram[^pdk-04]); the aluminium limit of roughly
 * SkyWater PDK, README — "Optional MiM capacitors".[^pdk-10]
 * SkyWater, S130 platform table — "MiM Capacitor".[^skw-02]
 * SkyWater / Efabless, first MPW shuttle release.[^ann-11]
+* SKY130 raw-data repository — C–V sweeps of the first-level,
+  second-level and stacked MiM test capacitors and the pad list that
+  describes them; the values quoted here are our
+  extraction.[^raw-data-passives][^raw-data-testtile-pads]
 * SkyWater, *Facilities & Capabilities* — PECVD silane
   oxide/nitride/oxynitride "C1"; HP 4062UX.[^skw-01]
 
@@ -318,7 +348,10 @@ diagram[^pdk-04]); the aluminium limit of roughly
   conditions are not public; 18–33 nm is our estimate from the PDK's
   2 fF/µm²[^pdk-07] with an assumed {math}`k`, and the reading that it
   repeats {ref}`CAPILD <step-135>` rests on the PDK calling the two
-  constructions identical.
+  constructions identical. The published test-tile measurements show
+  the two levels within a few per cent of each other but not
+  identical, and cannot separate thickness, permittivity and plate
+  geometry.[^raw-data-passives]
 * The PDK is inconsistent about the capacitors' levels: the device
   page, layer table and stack diagram place `cap2m` over metal 4, while
   the mask table, minimum-CD table and periphery rules have no `cap2m`
@@ -327,7 +360,8 @@ diagram[^pdk-04]); the aluminium limit of roughly
   3.[^pdk-07][^pdk-06][^pdk-04][^pdk-05][^pdk-03][^pdk-periph][^pdk-08]
   The level reading on this page is an inference, supported by the
   "dual MiM cap layers on metal 3 and metal 4" of the nomenclature
-  page.[^pdk-previous]
+  page[^pdk-previous] and by the "CAP2M over M4" of the test tile's
+  pad documentation.[^raw-data-testtile-pads]
 * The design rules for `cap2m` — width, spacing, enclosure by metal 4
   and of via 4 — are not published.[^pdk-periph]
 * Whether every SKY130 lot carries the second capacitor module is not
@@ -484,3 +518,17 @@ diagram[^pdk-04]); the aluminium limit of roughly
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>

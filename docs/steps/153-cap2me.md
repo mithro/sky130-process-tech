@@ -157,7 +157,11 @@ same sequence.
    area-intensive capacitors with the same expected values, "CAP2M
    linewidth" and "CAP2M sheet rho" lines, a "Kelvin via-4, M5-CAP2M
    over M4" and "M4-M4" and "CAP2M-CAP2M serp/comb"
-   structures.[^raw-data-testtile-pads]
+   structures.[^raw-data-testtile-pads] The published C–V
+   measurements of the two large, the periphery-intensive and the
+   area-intensive capacitors are 35.27–35.29 pF, 9.91 pF and 11.70 pF
+   at 0 V, against the expected 35.5, 11.1 and 12.4 pF (our extraction; see
+   {ref}`CAPILD2 <step-150>`).[^raw-data-passives]
 
 ## Machines typically used
 
@@ -223,6 +227,9 @@ same sequence.
 * SKY130 raw-data repository, test-tile pad documentation — the CAP2M
   capacitor, linewidth and serpentine/comb structures of the published
   test tile.[^raw-data-testtile-pads]
+* SKY130 raw-data repository, measured data — C–V sweeps of those
+  capacitors; the values quoted here are our
+  extraction.[^raw-data-passives]
 
 ### High-level understanding
 
@@ -392,3 +399,11 @@ same sequence.
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
     retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>

@@ -183,7 +183,10 @@ end (SKY130's recipe is not public):
    two expected values for an area and a perimeter term gives about
    2.0 fF/µm² and 0.19 fF/µm, which reproduces the third and equals the
    PDK's nominal `CMIMA` and `CMIMP`[^pdk-07] (our arithmetic; the
-   values are expected design values, not measurements).
+   values are expected design values, not measurements). The
+   published C–V measurements of the three structures, 33.26 pF,
+   10.37 pF and 11.57 pF at 0 V, are 6–7 % below those expected values
+   (our extraction; see {ref}`CAPILD <step-135>`).[^raw-data-passives]
 
 ## Machines typically used
 
@@ -251,6 +254,9 @@ end (SKY130's recipe is not public):
 * SKY130 raw-data repository, test-tile pad documentation — the MiM
   capacitor, plate linewidth, sheet-resistance and serpentine/comb
   structures of the published test tile.[^raw-data-testtile-pads]
+* SKY130 raw-data repository, measured data — C–V sweeps of those
+  capacitors; the values quoted here are our
+  extraction.[^raw-data-passives]
 
 ### High-level understanding
 
@@ -419,3 +425,11 @@ end (SKY130's recipe is not public):
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
     retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
