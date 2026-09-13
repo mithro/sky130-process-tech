@@ -174,6 +174,71 @@ Notes on the table:
   reference's step is the variant marked `X`; the {ref}`VIM2 <step-129>` and
   {ref}`MM3 <step-139>` step pages discuss the unmarked variants.
 
+## PDK masks and mask steps that do not correspond
+
+Comparing the two lists leaves entries on each side without a partner.
+The tables record them with what the PDK says about each; they do not
+imply that either list is incomplete.
+
+### Marked in `masks.csv`, with no mask step in this reference
+
+Four of the 34 marked entries have no mask step in the step list used
+in this reference, which ends with the pad mask, pad etch, alloy and
+electrical test ({ref}`PDM <step-168>` to {ref}`HPETEST <step-171>`)
+and contains no polyimide, redistribution or bump steps.
+
+| `masks.csv` entry | Mask-level layer (`gds_layers.csv`) | Drawn layer (`gds_layers.csv`) | Minimum CD, feature / space | Other PDK data |
+|-------------------|-------------------------------------|--------------------------------|-----------------------------|----------------|
+| HLow VT PCh Radio\*, HVTRM — `X` | `chvtrm` mask 98:0 | `hvtr` 18:20 | `HVTRMCD` 0.38 / `HVTRMCDSP` 0.38 | Layer descriptions "HLow VT PCh Radio mask" (`chvtrm`) and "High-Vt RF transistor implant" (`hvtr`); the `hvtr` rule set's function line reads "Define low VT adjust implant region for pmedlvtrf". The {ref}`HVTPM <step-022>` page lists the absence of a step as an open question. |
+| DECA PBO, PBO — `X` | none | none | `PBOCD` 10 / `PBOCDSP` 10 | The WLCSP rules' DECA table has a `cpbo` rule set, "1st polyimide (mask)", whose function is "Opens over the pad openings; Allows RDL layer to connect to top metal". |
+| Cu Inductor/Redist., CU1M — `X` | none | none | `CU1MCD` 20 / `CU1MCDSP` 20 | The periphery rules' `rdl` rule set: "Defines the Cu Inductor. Connects to met5 through the pad opening"; the DECA table's `rdl` "connects the top metal from the customer to the bumps". Table F2b has a CU1M column. |
+| Polyimide 2 (2), PMM2 — `X` | none | none | none listed | The DECA table's `cpmm2` rule set, "2nd polyimide", describes a via between the redistribution layer and the under-bump metal. |
+
+### Mask steps in this reference without a marked `masks.csv` entry
+
+Six of the 36 mask steps have no marked entry: three are listed with
+the `Used in SKY130` field blank, and three are not listed at all.
+None of the six has a mask-level (`c…`) layer in
+`gds_layers.csv`.[^pdk-05][^pdk-06]
+
+| Step | `masks.csv` | Drawn layer (`gds_layers.csv`) | Minimum CD, feature / space | Other PDK data |
+|------|-------------|--------------------------------|-----------------------------|----------------|
+| {ref}`PWBM <step-026>` | P-Well Block Mask, PWBM — *blank* | `pwbm` 19:44 | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 | The periphery rules have a `pwbm` rule set, "Define p-well block"; Table F2b has a PWBM column, marked `C` in, among others, the UHV 5/20 V drain-extended device rows. The step page treats the blank field as a documentation inconsistency. |
+| {ref}`PWDEM <step-030>` | P-Well Drain Extended, PWDEM — *blank* | `pwde` 124:20 | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 | The periphery rules have a `pwdem` rule set; Table F2b has a PWDEM column, marked `C` in the "UHV pmos 5/20V DE" row. |
+| {ref}`CAPM <step-137>` | Capacitor MiM, CAPM — *blank* | `capm` 89:44 | `CAPMCD` 2 / `CAPMCDSP` 0.84 | The periphery rules have a `capm` rule set, "Defines MIM capacitor", with values shown as "N/A"; Table F2b has a CAPM column, marked `C` in the "MiM" row. |
+| {ref}`RRPM <step-052>` | *not listed* | `rpm` 86:20 *(inference)* | none listed | No separate rule set or Table F2b column. |
+| {ref}`URPM <step-055>` | *not listed* | `urpm` 79:20 *(inference)* | none listed | No separate rule set or Table F2b column. |
+| {ref}`CAP2M <step-152>` | *not listed* | `cap2m` 97:44 *(inference)* | none listed | No `cap2m` rule set or Table F2b column. |
+
+The sources for both tables are `masks.csv`,[^pdk-05] `gds_layers.csv`
+and Table F2b,[^pdk-06] the minimum-CD table,[^pdk-03] the periphery
+rules[^pdk-periph] and the WLCSP rules.[^pdk-wlcsp]
+
+### Unmarked `masks.csv` entries with no mask step
+
+For completeness, nine acronyms appear in `masks.csv` only with the
+`Used in SKY130` field blank and have no mask step in this reference;
+the unmarked variants of `VIM2`, `MM3` and `PDM` are in the main table.
+
+| `masks.csv` entry | Mask-level and drawn layers (`gds_layers.csv`) | Minimum CD, feature / space |
+|-------------------|------------------------------------------------|-----------------------------|
+| N-Core Implant, NCM — *blank* | `cncm` mask 17:0, drawing 96:44; `ncm` 92:44 | `NCMCD` 0.38 / `NCMCDSP` 0.38 |
+| Open Frame Mask, OFM — *blank* | none | `OFMCD` N/A / `OFMCDSP` N/A |
+| Pad Via, VIPDM — *blank* | none | `VIPDMCD` 1.2 / `VIPDMCDSP` 1.27 |
+| Inductor-TLM, INDM — *blank* | none | `INDMCD` 2.5 / `INDMCDSP` 2.5 |
+| Polyimide, PMM — *blank* | none | `PMMCD` 5 / `PMMCDSP` 15 |
+| Polyimide_ExtFab, PMM[E] — *blank* | none | `PMM[E]CD` 5 / `PMM[E]CDSP` 15 |
+| Pad&Polyimide_ExtFab, PDMM[E] — *blank* | none | none listed |
+| Under Bump Metal, UBM — *blank* | none | none listed |
+| Bumps, BUMP — *blank* | none | none listed |
+
+`NCM` is the only one of the nine with layers in `gds_layers.csv`; its
+rule set's function is "Define Vt adjust implant region for LV NMOS in
+the core of NVSRAM".[^pdk-periph] With `chvtrm`, `cncm` is one of the
+two mask-level layers that have no mask step in this
+reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
+"Pad Via, VIPDM" entry.
+
 <!-- footnotes -->
 
 [^wiki-mask]: Wikipedia, *Photomask*.
@@ -195,3 +260,7 @@ Notes on the table:
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-wlcsp]: SkyWater PDK Authors, *WLCSP Rules* (Amkor and DECA
+    tables), SkyWater SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/wlcsp.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/wlcsp/deca.csv>
