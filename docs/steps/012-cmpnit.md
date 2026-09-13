@@ -110,8 +110,8 @@ polisher, which is what this step needs.
   nitride[^skw-01]), Ebara EPO-222/EPO-300, Strasbaugh 6DS-SP,
   SpeedFam-IPEC Avanti 472, Lam Teres.
 * **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam Synergy, SEZ/Lam Da Vinci).
-* **Film-thickness metrology** (Nanometrics, KLA-Tencor, Rudolph)
-  and **profilometer/AFM**.
+* **{ref}`Film-thickness metrology <machine-film-thickness-metrology>`** (Nanometrics, KLA-Tencor, Rudolph)
+  and **{ref}`profilometer/AFM <machine-cross-section-sem-profilers>`**.
 
 ## Machines likely used at SkyWater
 

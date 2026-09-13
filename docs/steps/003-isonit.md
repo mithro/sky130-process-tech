@@ -104,7 +104,7 @@ which is a different (later-generation) precursor.
   panel and HCl-tolerant exhaust scrubbing. Representative 200 mm-era
   tools: SVG/Thermco–ASML–Aviza AVP/RVP series, Kokusai DD/Vertron,
   TEL Alpha-8S, ASM A400.
-* **Ellipsometer** and **stress gauge** for process control.
+* **{ref}`Ellipsometer <machine-film-thickness-metrology>`** and **stress gauge** for process control.
 
 ## Machines likely used at SkyWater
 

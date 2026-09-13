@@ -123,7 +123,7 @@ width because of the encroachment under the nitride edge.
   Some fabs use a {ref}`single-wafer <machine-rapid-thermal-processor>` {term}`RTP` tool for in-situ-steam liner
   oxidation instead.
 * **{ref}`Wet bench <machine-wet-bench>`** for the pre-oxidation clean and HF dip.
-* **Ellipsometer**, **cross-section SEM**.
+* **{ref}`Ellipsometer <machine-film-thickness-metrology>`**, **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**.
 
 ## Machines likely used at SkyWater
 
