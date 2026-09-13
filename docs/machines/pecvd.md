@@ -426,7 +426,7 @@ pressures, thicknesses and chemistries are not public.
   capacitor construction and the passivation layers.[^pdk-07][^pdk-04]
 * Cypress Semiconductor, QTP 014807 — a TEOS and PECVD nitride
   passivation from the Bloomington fab.[^cyp-qtp-014807]
-* Trikon Technologies, Form 10-K for 1996 — the Delta 201 PECVD system
+* Trikon Technologies, Form 10-K for 1996 — the Delta 201 CVD system
   and its Electrotech origin.[^trikon-10k-1996]
 
 ### High-level understanding
