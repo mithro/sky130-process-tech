@@ -78,8 +78,8 @@ reasons for the oxide in SKY130 specifically are inferred.
   the moisture and mobile-ion barrier of a plastic-packaged die — Sinha
   et al. described reactive-plasma Si–N films for MOS-LSI
   passivation,[^sinha-1978] and a later seal-ring patent describes the
-  passivation nitride as "a very good barrier of moisture and ionic
-  contamination" above a passivation oxide[^pat-sealring-zeevo] — but
+  passivation nitride over its passivation oxide as "a very good barrier
+  of moisture and ionic contamination"[^pat-sealring-zeevo] — but
   it is hydrogen-rich and highly stressed.[^lanford-1978][^claassen-1985]
   A thin oxide between the metal and the nitride separates the
   aluminium from the nitride's deposition chemistry and adds a
@@ -89,12 +89,18 @@ reasons for the oxide in SKY130 specifically are inferred.
   (Chaudhari[^chaudhari-1974]). That an oxide under the nitride serves
   this purpose in SKY130 is our inference from the stack and the
   industry pattern.[^txt-05]
-* **An undoped film next to the metal.** A phosphorus-doped glass on
-  aluminium absorbs water and forms acids that corrode the metal, as
-  Paulson and Kirk showed for passivation glasses;[^paulson-1974] the
-  R7FT-3R report lists "Free Phosphorus contents in top glass layer(%):
-  0%".[^cyp-qtp-014807] A TEOS or silane oxide of the kind SkyWater
-  lists[^skw-01] is undoped (inference for SKY130).
+* **Doped or undoped.** Passivation oxides under nitride have often
+  been phosphorus-doped — the seal-ring patent notes that the
+  passivation oxide "is usually doped with phosphorous to form
+  phosphosilicate glass (PSG) to absorb and hold the moisture", and also
+  that in 0.25 and 0.18 µm technologies a passivation oxide "without
+  phosphorous has been used and has passed reliability
+  tests"[^pat-sealring-zeevo] — but too much phosphorus corrodes
+  aluminium, as Paulson and Kirk showed for passivation
+  glasses.[^paulson-1974] The R7FT-3R report lists "Free Phosphorus
+  contents in top glass layer(%): 0%"[^cyp-qtp-014807] and the PDK gives
+  TOPOX the undoped-oxide permittivity of 3.9;[^pdk-04] we read the
+  SKY130 film as undoped (inference).
 * **An interface for the pad opening.** The pad etch
   ({ref}`PDME <step-169>`) cuts the nitride with fluorine chemistry;
   a known oxide between nitride and metal gives that etch a change in
