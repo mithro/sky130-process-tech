@@ -226,8 +226,9 @@ The substrate category has no process tool in the fab itself; the
   silicon.[^borghesi-1995]
 * Myers, Seibt and Schröter, *JAP* 2000 — review of the mechanisms of
   transition-metal gettering.[^myers-2000]
-* Kang and Schroder, *JAP* 1989 — intrinsic and extrinsic gettering
-  compared.[^kang-1989]
+* Kang and Schroder, *JAP* 1989 — phosphorus-diffusion, argon-implant
+  and nickel-film gettering experiments (oxidation does not getter), and
+  a segregation model.[^kang-1989]
 * Falster et al. (MEMC), US 5,994,761 — the "magic denuded zone"
   rapid-thermal treatment that sets precipitation behaviour without an
   oxygen out-diffusion anneal.[^pat-mdz-memc]
