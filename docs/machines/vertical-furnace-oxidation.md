@@ -87,8 +87,9 @@ design replaces the load-lock atmosphere with inert gas "with oxygen
 concentration less than 1 ppm" and can instead meter oxygen back in to
 grow a native oxide of "1-2 atomic layers" before the wafers enter a
 reaction tube at "approx. 750° C."[^pat-loadlock-kokusai] The
-{ref}`LVGOX <step-047>` page notes the other half of the same concern:
-the queue time between the pre-gate clean and the furnace is limited.
+industry-generic recipe on the {ref}`LVGOX <step-047>` page covers the
+other half of the same concern: it limits the queue time between the
+pre-gate clean and the furnace.
 
 ### Dry, wet and chlorinated oxidation
 
@@ -332,9 +333,10 @@ and thicknesses are not public.
   or NO, the ambients of an oxide grown and nitrided in one
   step.[^lai-1998] The possible routes are on the
   {ref}`plasma nitridation page <machine-plasma-nitridation-chamber>`.
-* **Post-oxidation anneal.** The {ref}`GOX100 <step-043>` and
-  {ref}`IOX45 <step-063>` pages end their oxidations with an inert anneal
-  in the same tube; SkyWater's furnace list has "Ar anneal to 1150C" and
+* **Post-oxidation anneal.** The typical recipes on the
+  {ref}`GOX100 <step-043>` and {ref}`IOX45 <step-063>` pages end the
+  oxidation with an inert anneal in the same tube (industry practice;
+  SKY130's recipe is not public); SkyWater's furnace list has "Ar anneal to 1150C" and
   "N2 anneal to 1150C".[^skw-01] The ambient of that anneal and of the
   cool-down affects the interface-state density.[^razouk-1979]
 
