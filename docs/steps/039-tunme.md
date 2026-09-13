@@ -139,9 +139,9 @@ fab (SKY130's recipe is not public):
 
 * **Automated wet bench** with dilute-HF/BOE, SPM, SC-1 and SC-2
   tanks and a rinser/dryer (Akrion, DNS/SCREEN, SCP), or a **spray
-  processor** (FSI Mercury), or a **single-wafer wet tool** (SEZ, Lam
-  DaVinci) ({ref}`category-etch`, {ref}`category-strip`).
-* **Downstream asher** for the strip (Gasonics, Mattson, Axcelis/Fusion).
+  processor** (FSI Mercury), or a **single-wafer wet tool** (SEZ/Lam
+  Da Vinci) ({ref}`category-etch`, {ref}`category-strip`).
+* **Downstream asher** for the strip (GaSonics, Mattson, Axcelis/Fusion).
 * **Ellipsometer** on monitor wafers for etch-rate control; **particle
   scanner** after the clean.
 
@@ -154,11 +154,11 @@ fab (SKY130's recipe is not public):
 * **DNS wet bench** — "industry standard HF/SC1/SC2" and "dilute
   HF-last with IPA dry"[^skw-01] — the natural home of the pre-oxidation clean.
   Strength: strong for existence; inference for assignment.
-* **FSI Mercury** ("HF/SC1/SC2 rotational") and **SEZ 223 / DaVinci
+* **FSI Mercury** ("HF/SC1/SC2 rotational") and **SEZ 223 / Da Vinci
   single-wafer** ("HF, DSP+HF, titration controlled").[^skw-01]
   Strength: strong for existence; a SkyWater technician profile names
   the "SEZ etcher tool".[^skw-07]
-* **Gasonics PEP, Iridia and Mattson Aspen 2 ashers**[^skw-01] for the
+* **GaSonics PEP, Iridia and Mattson Aspen II ashers**[^skw-01] for the
   strip. Strength: strong for existence.
 
 ## Resources required

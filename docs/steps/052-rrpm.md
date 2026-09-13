@@ -121,7 +121,7 @@ mostly chrome. Neither tone nor resist is stated publicly.
 
 * **ASML i-line stepper or scanner.**[^skw-01] Strength: strong for
   the tools; **inference** for the assignment of this layer.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius.**[^skw-01]
+* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z.**[^skw-01]
   Strength: strong.
 * **Overlay — KLA 5200/5300/Archer.**[^skw-01] Strength: strong.
 

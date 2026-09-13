@@ -87,7 +87,7 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Machines typically used
 
-* **Downstream plasma asher** (Gasonics Aura/PEP, Mattson Aspen,
+* **Downstream plasma asher** (GaSonics Aura/PEP, Mattson Aspen,
   Axcelis/Fusion ES, PSK).
 * **Batch wet bench** with SPM, SC-1, SC-2 and rinser/dryer, or a
   **spray/single-wafer processor** for the {term}`RCA clean`.
@@ -95,7 +95,7 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia RF microwave, Mattson Aspen 2**.[^skw-01]
+* **GaSonics PEP, Iridia RF microwave, Mattson Aspen II**.[^skw-01]
   Strength: **strong** for existence; assignment is an inference.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1")[^skw-01] for the
   SPM/SC-1 steps. Strength: strong for existence.

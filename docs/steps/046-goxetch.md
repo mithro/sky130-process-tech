@@ -123,7 +123,7 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 * **Automated wet bench** with dilute-HF/BOE, SPM, SC-1 and SC-2
   tanks (Akrion, DNS/SCREEN, SCP), a **spray processor** (FSI
-  Mercury) or a **single-wafer wet tool** (SEZ, Lam DaVinci)
+  Mercury) or a **single-wafer wet tool** (SEZ/Lam Da Vinci)
   ({ref}`category-etch`, {ref}`category-strip`).
 * **Downstream asher** for the strip.
 * **Ellipsometer** for etch-rate monitors; **particle scanner**
@@ -140,10 +140,10 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   option listed. Strength: strong for existence; inference for
   assignment.
 * **FSI Mercury** ("HF/SC1/SC2 rotational") and **SEZ 223 /
-  DaVinci** ("HF, DSP+HF, titration controlled").[^skw-01] Strength:
+  Da Vinci** ("HF, DSP+HF, titration controlled").[^skw-01] Strength:
   strong for existence; the SEZ is also named in a technician
   profile.[^skw-07]
-* **Gasonics PEP, Iridia, Mattson Aspen 2** ashers.[^skw-01]
+* **GaSonics PEP, Iridia, Mattson Aspen II** ashers.[^skw-01]
   Strength: strong for existence.
 
 ## Resources required

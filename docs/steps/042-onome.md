@@ -161,7 +161,7 @@ memory (SKY130's recipe is not public):
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
   BOE")[^skw-01] — for the BOE clear (and the phosphoric route, if
   used). Strength: strong for existence.
-* **Gasonics PEP / Iridia / Mattson Aspen 2** ashers.[^skw-01]
+* **GaSonics PEP / Iridia / Mattson Aspen II** ashers.[^skw-01]
   Strength: strong for existence.
 
 ## Resources required

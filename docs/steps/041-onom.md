@@ -140,7 +140,7 @@ etch).
 
 * **ASML i-line stepper / scanner.**[^skw-01] Strength: **strong** for
   the tool class; **inference** for assigning `ONOM` to it.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius.**[^skw-01]
+* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z.**[^skw-01]
   Strength: strong for existence.
 * **KLA 5200/5300/Archer overlay; AMAT Verity/VeraSEM CD.**[^skw-01]
   Strength: strong.

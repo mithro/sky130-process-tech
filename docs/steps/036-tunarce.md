@@ -146,7 +146,7 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   for the assignment. A university clean-room describes the 9400 as "a
   Transformer Coupled Plasma (TCP) etcher" with a gas list including
   oxygen.[^snf-9400]
-* **Gasonics PEP / Iridia / Mattson Aspen 2 ashers** ("N2, O2",
+* **GaSonics PEP / Iridia / Mattson Aspen II ashers** ("N2, O2",
   "N2, O2, H2, CF4, NH3, H2/N2")[^skw-01] — the isotropic alternative.
   Strength: strong for existence; weak for assignment.
 
