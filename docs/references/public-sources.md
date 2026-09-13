@@ -459,6 +459,9 @@ Also used on the medium-current, high-current and high-energy implanter
 pages.
 Also used on the vertical-furnace oxidation, LPCVD and anneal pages and
 the rapid thermal processor and plasma nitridation chamber pages.
+Also used on the silicon and polysilicon plasma etcher, dielectric and
+nitride plasma etcher, metal plasma etcher, downstream plasma asher and
+wet bench and spray processor pages.
 Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
@@ -614,7 +617,9 @@ Products and Praxair gases, KMG Chemicals; photoresist from "The Dow
 Chemical Company", "JSR Corporation" and "Tokyo Ohka Kogyo America,
 Inc."; developer from Air Products, Moses Lake); "Advantages of 200
 millimeter Wafer Fabs". Note: SEC.gov rejects fetches without a
-descriptive `User-Agent`. Tier: cross-check.
+descriptive `User-Agent`.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: cross-check.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -709,7 +714,9 @@ SkyWater Technology Foundry, Bloomington MN, posted 2024-08-09 (closed
 2024-10-30), retrieved 2026-08-30.
 <https://www.career.com/company/skywater-technology-foundry-inc/job/plasma-etch-process-development-engineer/-in-bloomington,mn?jid=83e5f3b7-6fb2-41df-9003-31e8e118e0a8>.
 Describes the role ("bringing cutting-edge eight-inch Silicon designs
-to life") but names no tools. Tier: high-level.
+to life") but names no tools.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: high-level.
 
 **JOB-04** — LinkedIn, *"Equipment Maintenance Technician"*, SkyWater
 Technology, Austin TX (Fab 25, not Bloomington), retrieved 2026-08-30.
@@ -1144,6 +1151,8 @@ Also used on the medium-current, high-current and high-energy implanter
 pages.
 Also used on the vertical-furnace oxidation, LPCVD and anneal pages and
 the rapid thermal processor and plasma nitridation chamber pages.
+Also used on the silicon and polysilicon plasma etcher and dielectric
+and nitride plasma etcher pages.
 Tier: high-level.
 
 **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
@@ -1154,6 +1163,8 @@ cleaning, oxidation, LPCVD/PECVD, sputtering, lithography, plasma
 etch, implantation).
 Also used on the high-energy implanter page.
 Also used on the vertical-furnace LPCVD and anneal pages.
+Also used on the silicon and polysilicon plasma etcher, dielectric and
+nitride plasma etcher and metal plasma etcher pages.
 Tier: high-level.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
@@ -1186,6 +1197,7 @@ Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
 tool class, written around a 200 mm, 0.18 µm-era fab.
 Also used on the medium-current and high-current implanter pages.
 Also used on the vertical-furnace oxidation page.
+Also used on the downstream plasma asher page.
 Tier: high-level.
 
 **TXT-08** — H. Xiao, *Introduction to Semiconductor Manufacturing
@@ -1354,7 +1366,9 @@ the anneal category page. Tier: high-level.
 **WIKI-ASH** — Wikipedia, *Plasma ashing*.
 <https://en.wikipedia.org/wiki/Plasma_ashing> Downstream ashing and
 implanted-resist problems. Used on steps 016, 021, 025, 029 and 033 and
-the strip category page. Tier: high-level.
+the strip category page.
+Also used on the downstream plasma asher page.
+Tier: high-level.
 
 **WIKI-ASH3** — Wikipedia, *Arsine*.
 <https://en.wikipedia.org/wiki/Arsine> Arsine, the arsenic source gas
@@ -1384,7 +1398,9 @@ page, and on the medium-current implanter page. Tier: high-level.
 
 **WIKI-BOE** — Wikipedia, *Buffered oxide etch*.
 <https://en.wikipedia.org/wiki/Buffered_oxide_etch> BOE composition and
-etch rate. Used on steps 039 and 046 and the etch category page. Tier:
+etch rate. Used on steps 039 and 046 and the etch category page.
+Also used on the wet bench and spray processor page.
+Tier:
 high-level.
 
 **WIKI-CD** — Wikipedia, *Critical dimension*.
@@ -1518,17 +1534,22 @@ Used on the substrate category page. Tier: high-level.
 **WIKI-H3PO4** — Wikipedia, *Phosphoric acid*.
 <https://en.wikipedia.org/wiki/Phosphoric_acid> Phosphoric acid, the hot
 nitride-strip chemistry. Used on the etch and strip category pages.
+Also used on the wet bench and spray processor page.
 Tier: high-level.
 
 **WIKI-HF** — Wikipedia, *Hydrofluoric acid*.
 <https://en.wikipedia.org/wiki/Hydrofluoric_acid> Hydrofluoric acid, the
 oxide etchant, and its hazards. Used on the etch and strip category
-pages. Tier: high-level.
+pages.
+Also used on the wet bench and spray processor page.
+Tier: high-level.
 
 **WIKI-ICP** — Wikipedia, *Inductively coupled plasma*.
 <https://en.wikipedia.org/wiki/Inductively_coupled_plasma> Inductively
 coupled plasma, the source type behind TCP and DPS etchers. Used on the
-etch category page. Tier: high-level.
+etch category page.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: high-level.
 
 **WIKI-IMPLANT** — Wikipedia, *Ion implantation*.
 <https://en.wikipedia.org/wiki/Ion_implantation> Energies, ranges,
@@ -1600,7 +1621,9 @@ lithography category page. Tier: high-level.
 **WIKI-NMP** — Wikipedia, *N-Methyl-2-pyrrolidone*.
 <https://en.wikipedia.org/wiki/N-Methyl-2-pyrrolidone>
 N-Methyl-2-pyrrolidone, a solvent-strip chemistry. Used on the strip
-category page. Tier: high-level.
+category page.
+Also used on the wet bench and spray processor page.
+Tier: high-level.
 
 **WIKI-OPC** — Wikipedia, *Optical proximity correction*.
 <https://en.wikipedia.org/wiki/Optical_proximity_correction> Optical
@@ -1620,11 +1643,16 @@ high-level.
 
 **WIKI-PIRANHA** — Wikipedia, *Piranha solution*.
 <https://en.wikipedia.org/wiki/Piranha_solution> SPM ratios and
-temperature. Used on the strip category page. Tier: high-level.
+temperature. Used on the strip category page.
+Also used on the wet bench and spray processor page.
+Tier: high-level.
 
 **WIKI-PLASMA-ETCH** — Wikipedia, *Plasma etching*.
 <https://en.wikipedia.org/wiki/Plasma_etching> Plasma etching mechanisms
-and chemistries. Used on the etch category page. Tier: high-level.
+and chemistries. Used on the etch category page.
+Also used on the silicon and polysilicon plasma etcher and metal plasma
+etcher pages.
+Tier: high-level.
 
 **WIKI-POLY** — Wikipedia, *Polycrystalline silicon*.
 <https://en.wikipedia.org/wiki/Polycrystalline_silicon> Polycrystalline
@@ -1662,7 +1690,9 @@ high-level.
 **WIKI-RCA** — Wikipedia, *RCA clean*.
 <https://en.wikipedia.org/wiki/RCA_clean> SC-1 and SC-2 compositions and
 temperatures. Used on steps 001, 002, 006, 009, 010, 013, 016, 021, 025,
-029, 033, 039 and 046 and the strip category page. Tier: high-level.
+029, 033, 039 and 046 and the strip category page.
+Also used on the wet bench and spray processor page.
+Tier: high-level.
 
 **WIKI-RESIST** — Wikipedia, *Photoresist*.
 <https://en.wikipedia.org/wiki/Photoresist> Photoresist chemistry, tone
@@ -1677,7 +1707,10 @@ illumination. Used on the lithography category page. Tier: high-level.
 **WIKI-RIE** — Wikipedia, *Reactive-ion etching*.
 <https://en.wikipedia.org/wiki/Reactive-ion_etching> RF frequency,
 self-bias, pressure range and ICP sources. Used on steps 005, 006, 036
-and 042 and the etch category page. Tier: high-level.
+and 042 and the etch category page.
+Also used on the silicon and polysilicon plasma etcher, dielectric and
+nitride plasma etcher and metal plasma etcher pages.
+Tier: high-level.
 
 **WIKI-RS** — Wikipedia, *Sheet resistance*.
 <https://en.wikipedia.org/wiki/Sheet_resistance> Sheet resistance and
@@ -1849,7 +1882,9 @@ The Electrochemical Society, vol. 114, no. 8, p. 869, 1967,
 DOI 10.1149/1.2426757.
 <https://iopscience.iop.org/article/10.1149/1.2426757>. Hot phosphoric
 acid etch rates of silicon nitride, silicon dioxide and silicon, i.e.
-the selectivity behind every wet nitride strip. Tier: deep dive.
+the selectivity behind every wet nitride strip.
+Also used on the wet bench and spray processor page.
+Tier: deep dive.
 
 **THUNG-2016** — B. J. Thung, K. Ibrahim, N. A. Manap and
 F. Salehuddin, *"Challenges for 0.13µm Generation Shallow Trench
@@ -1862,7 +1897,9 @@ foundry account of running 0.13 µm STI on 0.18 µm-generation tools:
 definition of the fill aspect ratio, HDP void / poly-stringer yield
 loss, OPC on the STI layout, liner oxidation, post-etch wet clean,
 phosphoric-acid nitride strip. The journal page lists the first author
-as "Thung Beng Joo" (family name Thung). Tier: deep dive.
+as "Thung Beng Joo" (family name Thung).
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **NISHIMURA-2002** — H. Nishimura, S. Takagi, M. Fujino and N. Nishi,
 *"Gap-Fill Process of Shallow Trench Isolation for 0.13 µm
@@ -1957,7 +1994,9 @@ Tier: cross-check (vendor statement).
 "a Transformer Coupled Plasma (TCP) etcher, generates a uniform, high
 density plasma for selective etching of silicon and polysilicon"; the
 gas list includes chlorine, hydrogen bromide, oxygen and
-tetrafluoromethane. Tier: high-level.
+tetrafluoromethane.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: high-level.
 
 **AVIZA-AVP** — Moov used-equipment marketplace, *"Aviza / SVG /
 Thermco AVP 8000"* listing.
@@ -2022,6 +2061,7 @@ capture of 2000-03-01.
 The company styles itself "GaSonics International", "a leading supplier
 of semiconductor processing equipment", with photoresist removal and
 wafer cleaning among its applications. Used on the machines index for the spelling of the vendor name.
+Also used on the downstream plasma asher page.
 Tier: cross-check (vendor statement).
 
 **MATTSON-2001** — Mattson Technology, *The Aspen Strip*, product page,
@@ -2029,7 +2069,9 @@ Wayback Machine capture of 2001-12-19.
 <https://web.archive.org/web/20011219013713/http://www.mattson.com/products/aspen_strip.html>
 Names the "Aspen II Strip" and "Aspen III Strip" systems built on the
 "Aspen II platform" and "Aspen III platform". Used on the machines index
-for the spelling of the platform name. Tier: cross-check (vendor
+for the spelling of the platform name.
+Also used on the downstream plasma asher page.
+Tier: cross-check (vendor
 statement).
 
 **SEZ-2005** — SEZ Group, *World-Leading Korean Manufacturer Places
@@ -2183,21 +2225,27 @@ popping mechanism — volatile bulk resist that can "build up pressure
 beneath the implant-hardened surface layer" during a conventional
 "high temperature (>200° C.) dry ashing" — and a first stage "removed
 by oxygen and nitrogen/hydrogen plasma in a low-temperature (<220 °C)
-environment". Tier: deep dive.
+environment".
+Also used on the downstream plasma asher page.
+Tier: deep dive.
 
 **PAT-STRIP-TSMC** — US 2004/0214448 A1, *"Method of ashing a
 photoresist"*, B.-W. Chan, Y.-H. Chiu and H.-J. Tao (TSMC), published
 2004-10-28. <https://patents.google.com/patent/US20040214448A1/en>.
 After implantation "the top portion of the photoresist layer is
 transformed into a carbonized crust that is difficult to remove because
-of its low solubility in wet strippers". Tier: deep dive.
+of its low solubility in wet strippers".
+Also used on the downstream plasma asher page.
+Tier: deep dive.
 
 **PAT-STRIP-ULVAC** — US 5,795,831 A, *"Cold processes for cleaning
 and stripping photoresist from surfaces of semiconductor wafers"*,
 I. Nakayama et al. (ULVAC Technologies), granted 1998-08-18.
 <https://patents.google.com/patent/US5795831A/en>. A cold stripping
 and cleaning process for implanted resist, an alternative to hot
-ashing. Tier: deep dive.
+ashing.
+Also used on the downstream plasma asher page.
+Tier: deep dive.
 
 **PAT-RESURF-TI** — US 5,406,110 A, *"Resurf lateral double diffused
 insulated gate field effect transistor"*, O.-K. Kwon, T. R. Efland,
@@ -2442,7 +2490,8 @@ implantation (mechanism and impact on production)"*, Proceedings of
 the 11th International Conference on Ion Implantation Technology
 (1996), pp. 186–189, DOI 10.1109/IIT.1996.586180. Outgassing of thick
 resists during MeV implantation.
-Also used on the high-energy implanter page.
+Also used on the high-energy implanter page, and on the downstream
+plasma asher page.
 Tier: deep dive.
 
 **HORSKY-1998** — T. N. Horsky, *"Photoresist outgassing in high energy
@@ -2451,43 +2500,57 @@ Ion Implantation Technology, vol. 1, pp. 654–657,
 DOI 10.1109/IIT.1999.812201. Resist outgassing in high-energy and
 high-current implanters.
 Also used on the medium-current, high-current and high-energy implanter
-pages.
+pages, and on the downstream plasma asher page.
 Tier: deep dive.
 
 **FUJIMURA-1989** — S. Fujimura, J. Konno, K. Hikazutani and H. Yano,
 *"Ashing of Ion-Implanted Resist Layer"*, Japanese Journal of Applied
 Physics, vol. 28, no. 10R, p. 2130, 1989, DOI 10.1143/JJAP.28.2130. The
-crust and popping mechanism of implanted resist, measured. Tier: deep
+crust and popping mechanism of implanted resist, measured.
+Also used on the downstream plasma asher and wet bench and spray
+processor pages.
+Tier: deep
 dive.
 
 **FUJIMURA-1990** — S. Fujimura, K. Shinagawa, M. Nakamura and
 H. Yano, *"Additive Nitrogen Effects on Oxygen Plasma Downstream
 Ashing"*, Japanese Journal of Applied Physics, vol. 29, no. 10R,
 p. 2165, 1990, DOI 10.1143/JJAP.29.2165. Why nitrogen is added to
-oxygen in downstream ashing. Tier: deep dive.
+oxygen in downstream ashing.
+Also used on the downstream plasma asher page.
+Tier: deep dive.
 
 **FUJIMURA-1994** — S. Fujimura, M. T. Suzuki, K. Shinagawa and
 M. Nakamura, *"Sodium contamination free ashing process using O₂+H₂O
 plasma downstream"*, Journal of Vacuum Science & Technology B, vol. 12,
 no. 4, pp. 2409–2413, 1994, DOI 10.1116/1.587773. Water-vapour
-addition to downstream ashing. Tier: deep dive.
+addition to downstream ashing.
+Also used on the downstream plasma asher page.
+Tier: deep dive.
 
 **OHMI-1996** — T. Ohmi, *"Total Room Temperature Wet Cleaning for Si
 Substrate Surface"*, Journal of The Electrochemical Society, vol. 143,
 no. 9, pp. 2957–2964, 1996, DOI 10.1149/1.1837133. A room-temperature
-alternative to the hot RCA sequence. Tier: deep dive.
+alternative to the hot RCA sequence.
+Also used on the wet bench and spray processor page.
+Tier: deep dive.
 
 **KERN-1990** — W. Kern, *"The Evolution of Silicon Wafer Cleaning
 Technology"*, Journal of The Electrochemical Society, vol. 137, no. 6,
 pp. 1887–1892, 1990, DOI 10.1149/1.2086825. History and chemistry of
-the RCA clean. Tier: deep dive.
+the RCA clean.
+Also used on the downstream plasma asher and wet bench and spray
+processor pages.
+Tier: deep dive.
 
 **KERN-HANDBOOK** — W. Kern, *"Overview and Evolution of Silicon Wafer
 Cleaning Technology"*, ch. 1 in K. A. Reinhardt and W. Kern (eds.),
 *Handbook of Silicon Wafer Cleaning Technology*, 2nd ed., William
 Andrew, 2008, pp. 3–92, ISBN 978-0-8155-1554-8,
 DOI 10.1016/b978-081551554-8.50004-5. Overview chapter on wet-cleaning
-chemistry and contamination. Tier: deep dive.
+chemistry and contamination.
+Also used on the wet bench and spray processor page.
+Tier: deep dive.
 
 **REINHARDT-2010** — K. A. Reinhardt and R. F. Reidy (eds.), *Handbook
 of Cleaning in Semiconductor Manufacturing: Fundamental and
@@ -2696,7 +2759,9 @@ Tier: deep dive.
 Fluoride Media", *Journal of The Electrochemical Society* **125**(2),
 320–323 (1978). <https://doi.org/10.1149/1.2131436> Etching of CVD Si₃N₄
 in acidic fluoride media, the older data on the same chemistry. Used on
-step 013. Tier: deep dive.
+step 013.
+Also used on the wet bench and spray processor page.
+Tier: deep dive.
 
 **EDMARK-1985** — K. W. Edmark and C. P. Ausschnitt, "Stepper Overlay
 Calibration Using Alignment To A Latent Image", *Proc. SPIE* **0538**,
@@ -2785,14 +2850,18 @@ Oehrlein, "Highly selective etching of silicon nitride over silicon and
 silicon dioxide", *Journal of Vacuum Science & Technology A* **17**(6),
 3179–3184 (1999). <https://doi.org/10.1116/1.582097> How to etch silicon
 nitride selectively over silicon and silicon dioxide in fluorine-based
-plasmas. Used on step 005. Tier: deep dive.
+plasmas. Used on step 005.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **KNOTTER-2001** — D. M. Knotter and T. J. J. Denteneer, "Etching
 Mechanism of Silicon Nitride in HF-Based Solutions", *Journal of The
 Electrochemical Society* **148**(3), F43 (2001).
 <https://doi.org/10.1149/1.1348262> The etching mechanism of silicon
 nitride in HF-based solutions, relevant to the pre-strip breakthrough
-dip. Used on step 013. Tier: deep dive.
+dip. Used on step 013.
+Also used on the wet bench and spray processor page.
+Tier: deep dive.
 
 **KOOI-1976** — E. Kooi, J. G. van Lierop and J. A. Appels, "Formation
 of Silicon Nitride at a Si–SiO₂ Interface during Local Oxidation of
@@ -2833,7 +2902,9 @@ a Stable Etch Selectivity between Silicon Nitride and Silicon Dioxide in
 a Hot Phosphoric Acid Bath", *ECS Transactions* **11**(2), 63–70 (2007).
 <https://doi.org/10.1149/1.2779363> How to keep the nitride : oxide
 selectivity stable in a production hot phosphoric bath, from Akrion, the
-wet-bench vendor SKW-01 names. Used on step 013. Tier: deep dive.
+wet-bench vendor SKW-01 names. Used on step 013.
+Also used on the wet bench and spray processor page.
+Tier: deep dive.
 
 **LIU-2020** — P. Liu, M. Garcia-Sciveres, T. Heim, A. Krieger and D.
 Gnani, "Measured Effectiveness of Deep N-well Substrate Isolation in a
@@ -2906,7 +2977,9 @@ etching using CF₄ and CHF₃", *Journal of Vacuum Science & Technology A*
 **12**(2), 323–332 (1994). <https://doi.org/10.1116/1.578876>
 Fluorocarbon high-density plasmas with CF₄ and CHF₃: polymer deposition
 versus etching, the mechanism behind sidewall passivation. Used on step
-005 and the etch category page. Tier: deep dive.
+005 and the etch category page.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **OHASHI-2007** — T. Ohashi, T. Kubota and A. Nakajima, "Ar Annealing
 for Suppression of Gate Oxide Thinning at Shallow Trench Isolation
@@ -2946,7 +3019,9 @@ ion etch of silicon nitride spacer with high selectivity to oxide",
 Workshop (ASMC 97) Proceedings*, pp. 252–256.
 <https://doi.org/10.1109/ASMC.1997.630744> A production RIE recipe for
 silicon nitride with high selectivity to oxide, with the process-window
-data. Used on steps 005 and 042. Tier: deep dive.
+data. Used on steps 005 and 042.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **ROENIGK-1987** — K. F. Roenigk and K. F. Jensen, "Low Pressure CVD of
 Silicon Nitride", *Journal of The Electrochemical Society* **134**(7),
@@ -3073,7 +3148,10 @@ deep dive.
 of Plasma Discharges and Materials Processing*, 2nd ed., Wiley, 2005,
 ISBN 978-0-471-72001-0. <https://doi.org/10.1002/0471724254> Ch. 16 on
 plasma-enhanced deposition and ion-bombardment control of film stress.
-Used on step 005 and the deposition and etch category pages. Tier: deep
+Used on step 005 and the deposition and etch category pages.
+Also used on the silicon and polysilicon plasma etcher and dielectric
+and nitride plasma etcher pages.
+Tier: deep
 dive.
 
 **NICOLLIAN-1982** — E. H. Nicollian and J. R. Brews, *MOS (Metal Oxide
@@ -3095,7 +3173,9 @@ Silicon Wafer Cleaning Technology*, 2nd ed., William Andrew, 2008, ISBN
 978-0-8155-1554-8. <https://openlibrary.org/isbn/9780815515548> The
 reference volume on wet and dry cleaning, resist removal and particle
 control. Label ↔ key: the handbook whose first chapter is listed
-separately as KERN-HANDBOOK. Used on steps 009 and 013. Tier: deep dive.
+separately as KERN-HANDBOOK. Used on steps 009 and 013.
+Also used on the wet bench and spray processor page.
+Tier: deep dive.
 
 **SESHAN-2012** — K. Seshan (ed.), *Handbook of Thin Film Deposition*,
 3rd ed., William Andrew, 2012, ISBN 978-1-4377-7873-1.
@@ -3199,7 +3279,10 @@ apparatus for producing magnetically-coupled planar plasma*, US
 4,948,458 A, granted 1990-08-14.
 <https://patents.google.com/patent/US4948458A/en> The
 transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-Used on step 005 and the etch category page. Tier: deep dive.
+Used on step 005 and the etch category page.
+Also used on the silicon and polysilicon plasma etcher and metal plasma
+etcher pages.
+Tier: deep dive.
 
 **PAT-WORLEY-2000** — E. R. Worley, *Method of reducing substrate noise
 coupling in mixed signal integrated circuits*, US 6,020,614 A, granted
@@ -3234,7 +3317,9 @@ Used on step 003. Tier: deep dive.
 Nitride Wet Etching*, equipment-purpose page.
 <https://snfguide.stanford.edu/guide/equipment/purpose/etching/wet-etching/silicon-nitride-wet-etching>
 A university facility page on the hot phosphoric bath in practice. Used
-on step 013. Tier: deep dive.
+on step 013.
+Also used on the wet bench and spray processor page.
+Tier: deep dive.
 
 **SNF-OXIDE** — Stanford Nanofabrication Facility, *Oxide Growth
 (furnace)*, processing-technique page.
@@ -3401,7 +3486,9 @@ Miki, J. Takano and T. Ohmi, "A Study of the Dissociation State and the
 SiO₂ Etching Reaction for HF Solutions of Extremely Low Concentration",
 *Journal of The Electrochemical Society* **141**(2), 366–374 (1994).
 <https://doi.org/10.1149/1.2054733> Dissociation state and etching
-reaction of extremely dilute HF. Used on steps 039 and 046. Tier: deep
+reaction of extremely dilute HF. Used on steps 039 and 046.
+Also used on the wet bench and spray processor page.
+Tier: deep
 dive.
 
 **KIM-2001** — S.-H. Kim, S.-H. Kim, S.-E. Kim, M.-S. Kim, J.-H. Park
@@ -3582,7 +3669,9 @@ characteristics of organic antireflection coating in O₂+halogen/hydrogen
 halide plasma", *Journal of Vacuum Science & Technology A* **19**(6),
 2893–2899 (2001). <https://doi.org/10.1116/1.1412655> Wall-dependent
 etching of organic ARC in O₂ + halogen / hydrogen halide plasmas. Used
-on step 036. Tier: deep dive.
+on step 036.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **YANG-2000** — Y. Yang and M. H. White, "Charge retention of scaled
 SONOS nonvolatile memory devices at elevated temperatures", *Solid-State
@@ -3627,7 +3716,9 @@ dive.
 Semiconductors*, Springer, 2015.
 <https://doi.org/10.1007/978-3-319-10295-5> A production-oriented
 monograph on poly, oxide and metal etch chemistries and endpoint. Used
-on steps 036 and 042 and the etch category page. Tier: deep dive.
+on steps 036 and 042 and the etch category page.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 #### Patents
 
@@ -4173,7 +4264,9 @@ analysis of photoresist and oxide masked polysilicon gates etched in
 HBr/Cl₂/O₂ plasmas", *Journal of Vacuum Science & Technology B*
 **15**(1), 88–97 (1997). <https://doi.org/10.1116/1.589259> Chemical
 analysis of HBr/Cl₂/O₂ gate-etch sidewalls under resist and oxide masks.
-Used on the etch category page. Tier: deep dive.
+Used on the etch category page.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **COBURN-1979B** — J. W. Coburn and H. F. Winters, "Plasma etching — A
 discussion of mechanisms", *Journal of Vacuum Science and Technology*
@@ -4185,30 +4278,43 @@ Tier: deep dive.
 Yesterday, today, and tomorrow", *Journal of Vacuum Science & Technology
 A* **31**(5), 050825 (2013). <https://doi.org/10.1116/1.4819316> A long
 review of plasma etching from its origins to the present. Used on the
-etch category page. Tier: deep dive.
+etch category page.
+Also used on the silicon and polysilicon plasma etcher, dielectric and
+nitride plasma etcher and metal plasma etcher pages.
+Tier: deep dive.
 
 **GOTTSCHO-1992** — R. A. Gottscho, C. W. Jurgensen and D. J. Vitkavage,
 "Microscopic uniformity in plasma etching", *Journal of Vacuum Science &
 Technology B* **10**(5), 2133–2147 (1992).
 <https://doi.org/10.1116/1.586180> Microscopic uniformity:
 aspect-ratio-dependent etching and its causes. Used on the etch category
-page. Tier: deep dive.
+page.
+Also used on the silicon and polysilicon plasma etcher and dielectric
+and nitride plasma etcher pages.
+Tier: deep dive.
 
 **HASHIMOTO-1994** — K. Hashimoto, "Charge Damage Caused by Electron
 Shading Effect", *Japanese Journal of Applied Physics* **33**(10R), 6013
 (1994). <https://doi.org/10.1143/JJAP.33.6013> Electron-shading charging
 damage during high-density plasma etching. Used on the etch category
-page. Tier: deep dive.
+page.
+Also used on the silicon and polysilicon plasma etcher, dielectric and
+nitride plasma etcher and metal plasma etcher pages.
+Tier: deep dive.
 
 **MOGAB-1977** — C. J. Mogab, "The Loading Effect in Plasma Etching",
 *Journal of The Electrochemical Society* **124**(8), 1262–1268 (1977).
 <https://doi.org/10.1149/1.2133542> The loading effect. Used on the etch
-category page. Tier: deep dive.
+category page.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **OEHRLEIN-1989** — G. S. Oehrlein, "Dry etching damage of silicon: A
 review", *Materials Science and Engineering: B* **4**(1–4), 441–450
 (1989). <https://doi.org/10.1016/0921-5107(89)90284-5> Review of
-dry-etching damage to silicon. Used on the etch category page. Tier:
+dry-etching damage to silicon. Used on the etch category page.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier:
 deep dive.
 
 **OEHRLEIN-1998** — G. S. Oehrlein and Y. Kurogi, "Sidewall surface
@@ -4222,7 +4328,9 @@ deep dive.
 manufacture — A review", *Journal of Vacuum Science and Technology*
 **14**(1), 266–274 (1977). <https://doi.org/10.1116/1.569137> An early
 review of plasma etching in IC manufacture, including aluminium. Used on
-the etch category page. Tier: deep dive.
+the etch category page.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **STANDAERT-1998** — T. E. F. M. Standaert, M. Schaepkens, N. R. Rueger,
 P. G. M. Sebel, G. S. Oehrlein and J. M. Cook, "High density
@@ -4231,14 +4339,18 @@ Mechanism of etching through a thick steady state fluorocarbon layer",
 *Journal of Vacuum Science & Technology A* **16**(1), 239–249 (1998).
 <https://doi.org/10.1116/1.580978> Etching through a steady-state
 fluorocarbon layer, the mechanism behind oxide-to-silicon selectivity.
-Used on the etch category page. Tier: deep dive.
+Used on the etch category page.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **TUDA-2001** — M. Tuda, K. Shintani and H. Ootera, "Profile evolution
 during polysilicon gate etching with low-pressure high-density
 Cl₂/HBr/O₂ plasma chemistries", *Journal of Vacuum Science & Technology
 A* **19**(3), 711–717 (2001). <https://doi.org/10.1116/1.1365135>
 Profile evolution during Cl₂/HBr/O₂ high-density poly gate etching. Used
-on the etch category page. Tier: deep dive.
+on the etch category page.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 ##### Patents
 
@@ -4247,7 +4359,10 @@ Materials), *Plasma reactor with multi-section RF coil and isolated
 conducting lid*, US 5,540,824 A, granted 1996-07-30.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>
 The multi-section RF coil and isolated lid of the DPS reactor. Used on
-the etch category page. Tier: deep dive.
+the etch category page.
+Also used on the silicon and polysilicon plasma etcher and metal plasma
+etcher pages.
+Tier: deep dive.
 
 **PAT-ENDPOINT-TEL** — Tokyo Electron, *Method of forming a
 semiconductor device using double endpoint detection*, US 6,376,262 B1,
@@ -4255,7 +4370,9 @@ granted 2002-04-23 (CN emission at 387 nm as the nitride etch endpoint
 signal). <https://patents.google.com/patent/US6376262B1/en> CN emission
 at 387 nm as the nitride etch endpoint signal. Label ↔ key: the same
 patent is cited as `pat-cn-tel` on step 042 (PAT-CN-TEL). Used on the
-etch category page. Tier: cross-check.
+etch category page.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: cross-check.
 
 ##### Vendor, regulatory, marketplace and press pages
 
@@ -4263,6 +4380,7 @@ etch category page. Tier: cross-check.
 <https://www.c2mi.ca/en/equipement/akrion-gama-acid-bench/> Facility
 equipment page describing an Akrion GAMA automated acid wet bench, the
 bench type SKW-01 lists. Used on the etch and strip category pages.
+Also used on the wet bench and spray processor page.
 Tier: cross-check.
 
 **LAM-10K** — Lam Research Corporation, Form 10-K for the fiscal year
@@ -4276,7 +4394,9 @@ Dielectric Etch Capabilities With Launch Of Exelan High Performance*,
 press release, 2001-07-09.
 <https://newsroom.lamresearch.com/2001-07-09-Lam-Research-Corporation-Advances-Dielectric-Etch-Capabilities-With-Launch-Of-Exelan-R-High-Performance>
 Press release launching the Exelan dielectric etcher in 2001. Used on
-the etch category page. Tier: cross-check.
+the etch category page.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: cross-check.
 
 #### Strip
 
@@ -4285,7 +4405,9 @@ the etch category page. Tier: cross-check.
 **KERN-1970** — W. Kern and D. A. Puotinen, "Cleaning solutions based on
 hydrogen peroxide for use in silicon semiconductor technology", *RCA
 Review* **31**, 187–206 (1970). The original SC-1/SC-2 paper. Used on
-the strip category page. Tier: cross-check.
+the strip category page.
+Also used on the wet bench and spray processor page.
+Tier: cross-check.
 
 ##### Patents
 
@@ -4295,12 +4417,14 @@ photoresist removal rate*, US 7,449,416 B2, granted 2008-11-11.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>
 An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch
 residue removal over low-k dielectrics. Used on the strip category page.
+Also used on the downstream plasma asher page.
 Tier: deep dive.
 
 **PAT-ASHER-FUSION** — M. Kamarehi and J. E. Simpson (Fusion Systems),
 *Plasma asher with microwave trap*, US 5,498,308 A, granted 1996-03-12.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>
 A downstream microwave asher design. Used on the strip category page.
+Also used on the downstream plasma asher page.
 Tier: deep dive.
 
 ##### Vendor, regulatory, marketplace and press pages
@@ -4309,13 +4433,17 @@ Tier: deep dive.
 (specification summary; temperature 150–300 °C typical).
 <https://allwin21.com/gasonics-aura-1000-plasma-asher-2/> Specification
 summary for the GaSonics Aura 1000 downstream asher (150–300 °C
-typical). Used on the strip category page. Tier: cross-check.
+typical). Used on the strip category page.
+Also used on the downstream plasma asher page.
+Tier: cross-check.
 
 **GASONICS-L3510** — SemiStar Corp., *Gasonics L3510 plasma asher* (tool
 description; platen temperature 100–300 °C).
 <http://www.semistarcorp.com/product/gasonics-l3510-asher/> Tool
 description for the GaSonics L3510 asher (platen temperature 100–300
-°C). Used on the strip category page. Tier: cross-check.
+°C). Used on the strip category page.
+Also used on the downstream plasma asher page.
+Tier: cross-check.
 
 ##### University and course pages
 
@@ -4323,7 +4451,9 @@ description for the GaSonics L3510 asher (platen temperature 100–300
 Plasma Resist Removal*, equipment guide.
 <https://snfguide.stanford.edu/guide/equipment/purpose/cleaning/resist-removal/dry-resist-removal/downstreamremote-plasma-resist-removal>
 University equipment guide on downstream/remote-plasma resist removal.
-Used on the strip category page. Tier: cross-check.
+Used on the strip category page.
+Also used on the downstream plasma asher page.
+Tier: cross-check.
 
 #### Implant
 
@@ -4496,6 +4626,8 @@ Applied Materials' 1997 product line: DPS and MxP/eMxP+ etchers,
 HDP-CVD, Mirra CMP and RTP chambers. Used on the anneal, cmp, deposition
 and etch category pages.
 Also used on the rapid thermal processor page.
+Also used on the silicon and polysilicon plasma etcher, dielectric and
+nitride plasma etcher and metal plasma etcher pages.
 Tier: cross-check.
 
 **AMAT-RTP** — EDN, *Applied dedicates RTP with Vantage*, 2002-09-23
@@ -5137,7 +5269,9 @@ in Ammonia-Peroxide Solutions Measured by Quartz Crystal Microbalance
 Technique", *Electrochemical and Solid-State Letters* **2**(4), 172
 (1999). <https://doi.org/10.1149/1.1390773> Etch rates of silicon and
 SiO₂ in ammonia–peroxide (SC-1) solutions, the constraint on cleaning a
-bare poly film. Used on steps 051, 054 and 057. Tier: deep dive.
+bare poly film. Used on steps 051, 054 and 057.
+Also used on the wet bench and spray processor page.
+Tier: deep dive.
 
 **PRITCHARD-1998** — D. C. Pritchard, W. Montgomery, J. P. Kimball and
 J. A. Albelo, "Photoresist performance evaluation of implant resist
@@ -5191,7 +5325,9 @@ investigation of sidewall passivation of silicon trenches using an oxide
 hard mask", *Journal of Vacuum Science & Technology B* **14**(4),
 2493–2499 (1996). <https://doi.org/10.1116/1.588758> Sidewall
 passivation of silicon etched with an oxide hard mask. Used on steps 059
-and 062. Tier: deep dive.
+and 062.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **BRUNNER-1997** — T. A. Brunner, "Impact of lens aberrations on optical
 lithography", *IBM Journal of Research and Development* **41**(1.2),
@@ -5217,7 +5353,9 @@ N. Sadeghi, "Ion flux composition in HBr/Cl₂/O₂ and HBr/Cl₂/O₂/CF₄
 chemistries during silicon etching in industrial high-density plasmas",
 *Journal of Vacuum Science & Technology B* **20**(5), 2137–2148 (2002).
 <https://doi.org/10.1116/1.1511219> Ion flux composition in industrial
-HBr/Cl₂/O₂ high-density plasmas. Used on step 062. Tier: deep dive.
+HBr/Cl₂/O₂ high-density plasmas. Used on step 062.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **CZECH-1993** — G. Czech, L. Mader, K. H. Küsters, P. Küppers and A.
 Gutmann, "Reduction of linewidth variation for the gate conductor level
@@ -5231,7 +5369,9 @@ dive.
 μm gate etch processes: Towards some limitations of the plasma
 technology?", *Journal of Vacuum Science & Technology B* **18**(1),
 156–165 (2000). <https://doi.org/10.1116/1.591168> Sub-0.1 µm gate etch
-and the limits of the technology. Used on steps 058 and 062. Tier: deep
+and the limits of the technology. Used on steps 058 and 062.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep
 dive.
 
 **DETTER-2003** — X. Detter, R. Palla, I. Thomas-Boutherin, E. Pargon,
@@ -5282,7 +5422,9 @@ interferometry endpoint signal for process control of polysilicon gate
 etch", *2004 Semiconductor Manufacturing Technology Workshop
 Proceedings*, pp. 111–114. <https://doi.org/10.1109/SMTW.2004.1393740>
 An interferometry endpoint model for poly gate etch process control.
-Used on step 062. Tier: deep dive.
+Used on step 062.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **JOUBERT-2003** — O. Joubert, E. Pargon, J. Foucher, X. Detter, G.
 Cunge and L. Vallier, "Nanometer scale linewidth control during etching
@@ -5340,7 +5482,9 @@ a plasma-deposited BARC for deep-UV. Used on step 059. Tier: deep dive.
 etching of polysilicon", *Journal of Vacuum Science and Technology*
 **17**(3), 721–730 (1980). <https://doi.org/10.1116/1.570549>
 Anisotropic plasma etching of polysilicon, the classic starting point
-for gate etching. Used on step 062. Tier: deep dive.
+for gate etching. Used on step 062.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **MONTGOMERY-2005** — P. K. Montgomery, R. Peters, C. Garza, J. Cobb, B.
 Darlington, C. Parker, S. Filipiak and D. Babbitt, "Reduction of line
@@ -5356,7 +5500,10 @@ Miyamoto, "Reliability of thin gate oxide under plasma charging caused
 by antenna topography-dependent electron shading effect", *IEDM 1997
 Technical Digest*, pp. 441–444.
 <https://doi.org/10.1109/IEDM.1997.650419> Thin-oxide reliability under
-electron-shading charging during the poly etch. Used on step 062. Tier:
+electron-shading charging during the poly etch. Used on step 062.
+Also used on the silicon and polysilicon plasma etcher and metal plasma
+etcher pages.
+Tier:
 deep dive.
 
 **OGAWA-1993** — T. Ogawa, M. Kimura, T. Gocho, Y. Tomo and T. Tsumori,
@@ -5377,7 +5524,9 @@ etch rates in chlorine. Used on step 062. Tier: deep dive.
 Mucha, "Doping and crystallographic effects in Cl-atom etching of
 silicon", *Journal of Applied Physics* **67**(6), 3115–3120 (1990).
 <https://doi.org/10.1063/1.345388> Doping dependence of poly and silicon
-etch rates in chlorine. Used on step 062. Tier: deep dive.
+etch rates in chlorine. Used on step 062.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **ORSHANSKY-2004** — M. Orshansky, L. Milor and C. Hu, "Characterization
 of Spatial Intrafield Gate CD Variability, Its Impact on Circuit
@@ -5413,7 +5562,9 @@ Joubert, G. Cunge and T. Lill, "Chemical topography analyses of silicon
 gates etched in HBr/Cl₂/O₂ and HBr/Cl₂/O₂/CF₄ high density plasmas",
 *Journal of Vacuum Science & Technology B* **21**(2), 904–911 (2003).
 <https://doi.org/10.1116/1.1563255> Chemical topography of gates etched
-in HBr/Cl₂/O₂ and HBr/Cl₂/O₂/CF₄. Used on step 062. Tier: deep dive.
+in HBr/Cl₂/O₂ and HBr/Cl₂/O₂/CF₄. Used on step 062.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **YOSHINO-1998** — H. Yoshino, T. Itani, S. Hashimoto, M. Yamana, T.
 Yoshii and H. Tanabe, "Compatibility of chemically amplified
@@ -5807,7 +5958,9 @@ spacer processing for a 0.35 μm CMOS technology", *1997 IEEE/SEMI
 Advanced Semiconductor Manufacturing Conference and Workshop (ASMC 97)
 Proceedings*, pp. 228–233. <https://doi.org/10.1109/ASMC.1997.630740>
 Integrating a nitride spacer into a 0.35 µm CMOS technology. Used on
-steps 076 and 077. Tier: deep dive.
+steps 076 and 077.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **GUMPHER-2004** — J. Gumpher, W. Bather, N. Mehta and D. Wedel,
 "Characterization of Low-Temperature Silicon Nitride LPCVD from
@@ -5850,14 +6003,19 @@ spacers on 0.25 µm PMOS. Used on steps 076 and 080. Tier: deep dive.
 in High-Density Plasmas: Comparison Between Oxide Hard Mask and Resist
 Mask", *Journal of The Electrochemical Society* **144**(5), 1854–1861
 (1997). <https://doi.org/10.1149/1.1837690> Resist and oxide masks over
-poly in high-density plasmas. Used on step 079. Tier: deep dive.
+poly in high-density plasmas. Used on step 079.
+Also used on the silicon and polysilicon plasma etcher page.
+Tier: deep dive.
 
 **KASTENMEIER-1996** — B. E. E. Kastenmeier, P. J. Matsuo, J. J. Beulens
 and G. S. Oehrlein, "Chemical dry etching of silicon nitride and silicon
 dioxide using CF₄/O₂/N₂ gas mixtures", *Journal of Vacuum Science &
 Technology A* **14**(5), 2802–2813 (1996).
 <https://doi.org/10.1116/1.580203> Nitride and oxide etching in
-CF₄/O₂/N₂. Used on steps 077, 079 and 108. Tier: deep dive.
+CF₄/O₂/N₂. Used on steps 077, 079 and 108.
+Also used on the dielectric and nitride plasma etcher and downstream
+plasma asher pages.
+Tier: deep dive.
 
 **KRIEGER-1989** — G. Krieger, G. Spadini, P. Cuevas and J. Schuur,
 "Shadowing effects due to tilted arsenic source/drain implant", *IEEE
@@ -5871,6 +6029,7 @@ Tier: deep dive.
 and anisotropy in CF₄+O₂ plasma", *Journal of Applied Physics*
 **54**(10), 5966–5973 (1983). <https://doi.org/10.1063/1.331774>
 Mechanism and anisotropy in CF₄+O₂ plasmas. Used on steps 077 and 079.
+Also used on the dielectric and nitride plasma etcher page.
 Tier: deep dive.
 
 **LIM-1993** — D. Lim, S.-H. Yang, S. Morris and A. F. Tasch, "An
@@ -6411,7 +6570,9 @@ aerial-image OPC. Used on steps 093 and 102. Tier: deep dive.
 "Observation of inverse reactive ion etching lag for silicon dioxide
 etching in inductively coupled plasmas", *Applied Physics Letters*
 **68**(1), 10–12 (1996). <https://doi.org/10.1063/1.116772> Inverse RIE
-lag. Used on steps 094 and 108. Tier: deep dive.
+lag. Used on steps 094 and 108.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **FONASH-1990** — S. J. Fonash, "An Overview of Dry Etching Damage and
 Contamination Effects", *Journal of The Electrochemical Society*
@@ -6486,7 +6647,9 @@ SiO₂-to-Si₃N₄ etch selectivity mechanism in inductively coupled
 fluorocarbon plasmas and a comparison with the SiO₂-to-Si mechanism",
 *Journal of Vacuum Science & Technology A* **17**(1), 26–37 (1999).
 <https://doi.org/10.1116/1.582108> The SiO₂-to-Si₃N₄ selectivity
-mechanism. Used on steps 094, 104 and 108. Tier: deep dive.
+mechanism. Used on steps 094, 104 and 108.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **STESMANS-1996** — A. Stesmans, "Passivation of P_b0 and P_b1 interface
 defects in thermal (100) Si/SiO₂ with molecular hydrogen", *Applied
@@ -6689,7 +6852,9 @@ dive.
 Ion Etching of Aluminum/Silicon in BBr₃/Cl₂ and BCl₃/Cl₂ Mixtures",
 *Journal of The Electrochemical Society* **135**(5), 1184–1191 (1988).
 <https://doi.org/10.1149/1.2095919> Reactive ion etching in BCl₃/Cl₂
-mixtures. Used on step 103. Tier: deep dive.
+mixtures. Used on step 103.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **BOUMERZOUG-1997** — M. Boumerzoug, H. Xu, R. Bersin, P. Mascher and G.
 Balcaitis, "Removal of Titanium Oxide Grown on Titanium Nitride and
@@ -6731,7 +6896,9 @@ The process for patterning local interconnects. Used on steps 101 and
 process*, US 4,675,073 A, filed 1986-03-07, granted 1987-06-23.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4675073>
 A fluorine-deficient plasma etch of TiN selective to titanium silicide.
-Used on step 103. Tier: deep dive.
+Used on step 103.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **WHITE-1992** — White, Hill, Eslinger, Payne, Cote, Chen and Johnson,
 "Damascene stud local interconnect in CMOS technology", *IEDM 1992
@@ -6750,7 +6917,9 @@ dive.
 considerations in the reactive ion etching of high aspect ratio
 features", *Applied Physics Letters* **55**(26), 2730–2732 (1989).
 <https://doi.org/10.1063/1.101937> Conductance limits in
-high-aspect-ratio feature etching. Used on step 108. Tier: deep dive.
+high-aspect-ratio feature etching. Used on step 108.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **FUKUDA-1987** — H. Fukuda, N. Hasegawa, T. Tanaka and T. Hayashida, "A
 new method for enhancing focus latitude in optical lithography: FLEX",
@@ -6775,6 +6944,7 @@ deep dive.
 for plasma processing", *Plasma Sources Science and Technology*
 **1**(2), 109–116 (1992). <https://doi.org/10.1088/0963-0252/1/2/006>
 The inductively coupled plasma sources behind IMP. Used on step 109.
+Also used on the silicon and polysilicon plasma etcher page.
 Tier: deep dive.
 
 **JOLLEY-1998** — M. Jolley, "Applications of Tetramethylammoninium
@@ -6815,7 +6985,9 @@ etching using CF₄ and CHF₃", *Journal of Vacuum Science & Technology A*
 **12**(2), 333–344 (1994). <https://doi.org/10.1116/1.578877> Oxide and
 silicon etching in CF₄/CHF₃ high-density plasmas. Used on step 108.
 Label ↔ key: the same article is cited as `oehrlein-1994-ii` on step 094
-(OEHRLEIN-1994-II). Tier: deep dive.
+(OEHRLEIN-1994-II).
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **PAT-CMP-CABOT** — Cabot Corporation, *Composition and slurry useful
 for metal CMP*, US 5,958,288 A, filed 1996-11-26, granted 1999-09-28.
@@ -6836,7 +7008,9 @@ C₂F₆ plasma: Etch rates, selectivity to photoresist, plasma parameters,
 and CFx radical densities", *Journal of Vacuum Science & Technology A*
 **19**(5), 2272–2281 (2001). <https://doi.org/10.1116/1.1382874> Oxide
 etch rates and selectivity in a high-density C₂F₆ plasma. Used on steps
-108, 119, 130 and 145. Tier: deep dive.
+108, 119, 130 and 145.
+Also used on the dielectric and nitride plasma etcher page.
+Tier: deep dive.
 
 **SHIOYA-1987** — Y. Shioya, T. Ikegami, M. Maeda and K. Yanagida,
 "High-temperature stress measurement on chemical-vapor-deposited
@@ -6882,6 +7056,7 @@ film etch endpoint detection using EndPoint Plus", *Proc. SPIE*
 **3882**, Process, Equipment, and Materials Control in Integrated
 Circuit Manufacturing V, 231 (1999). <https://doi.org/10.1117/12.361313>
 Endpoint detection on low-open-area dielectric etches. Used on step 108.
+Also used on the dielectric and nitride plasma etcher page.
 Tier: deep dive.
 
 **WONG-2001** — A. K.-K. Wong, *Resolution Enhancement Techniques in
@@ -6931,7 +7106,9 @@ on step 115. Tier: deep dive.
 of Aluminum Alloys in BCl₃/Cl₂ Plasmas", in *Semiconductor Fabrication:
 Technology and Metrology*, ASTM STP 990, ASTM International, 1989, pp.
 202–211. <https://doi.org/10.1520/STP26039S> Plasma etching of aluminium
-alloys in BCl₃/Cl₂. Used on step 114. Tier: deep dive.
+alloys in BCl₃/Cl₂. Used on step 114.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **CHENG-2002** — M. Cheng and A. R. Neureuther, "Effects of residual
 aberrations on line-end shortening in 193-nm lithography", *Proc. SPIE*
@@ -6949,7 +7126,9 @@ amplified resists and its reduction. Used on step 113. Tier: deep dive.
 "Semiempirical profile simulation of aluminum etching in a Cl₂/BCl₃
 plasma", *Journal of Vacuum Science & Technology A* **20**(5), 1536–1556
 (2002). <https://doi.org/10.1116/1.1494818> Profile simulation of
-aluminium etching in Cl₂/BCl₃. Used on step 114. Tier: deep dive.
+aluminium etching in Cl₂/BCl₃. Used on step 114.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **CYP-PIN145273** — Cypress Semiconductor, *Product Information
 Notification PIN145273: Improvement of Cypress Minnesota
@@ -7037,7 +7216,9 @@ step 114. Tier: deep dive.
 of Tungsten and Tungsten Silicide in Chlorine-Containing Discharges",
 *Journal of The Electrochemical Society* **134**(9), 2265–2269 (1987).
 <https://doi.org/10.1149/1.2100868> Chlorine etching of tungsten and
-tungsten silicide, relevant to the TiW cap. Used on step 114. Tier: deep
+tungsten silicide, relevant to the TiW cap. Used on step 114.
+Also used on the metal plasma etcher page.
+Tier: deep
 dive.
 
 **GHATE-1978** — P. B. Ghate, J. C. Blair, C. R. Fuller and G. E.
@@ -7050,13 +7231,17 @@ metallisation. Used on step 112. Tier: deep dive.
 aluminum alloy films", *Plasma Chemistry and Plasma Processing*
 **2**(2), 141–155 (1982). <https://doi.org/10.1007/BF00633130> The
 plasma etch chemistry of aluminium and aluminium alloy films. Used on
-step 114. Tier: deep dive.
+step 114.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **HWANG-1997** — G. S. Hwang and K. P. Giapis, "On the origin of the
 notching effect during etching in uniform high density plasmas",
 *Journal of Vacuum Science & Technology B* **15**(1), 70–87 (1997).
 <https://doi.org/10.1116/1.589258> The origin of notching in
-high-density plasma etching. Used on step 114. Tier: deep dive.
+high-density plasma etching. Used on step 114.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **HWANG-1998** — G. S. Hwang and K. P. Giapis, "Mechanism of charging
 damage during interlevel oxide deposition in high-density plasma tools",
@@ -7142,7 +7327,9 @@ SKY130 did not take. Used on step 112. Tier: deep dive.
 containing halogen species", *Journal of Vacuum Science and Technology*
 **15**(2), 334–337 (1978). <https://doi.org/10.1116/1.569540> Reactive
 ion etching of aluminium and its alloys in halogen plasmas. Used on step
-114. Tier: deep dive.
+114.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **SHIRAISHI-1992** — N. Shiraishi, S. Hirukawa, Y. Takeuchi and N.
 Magome, "New imaging technique for 64M-DRAM", *Proc. SPIE* **1674**,
@@ -7185,6 +7372,8 @@ Contamination free manufacturing", *2017 28th Annual SEMI Advanced
 Semiconductor Manufacturing Conference (ASMC)*, pp. 64–67.
 <https://doi.org/10.1109/ASMC.2017.7969200> Al–Cu corrosion prevention
 through the post-etch and polymer-clean sequence. Used on step 114.
+Also used on the metal plasma etcher and wet bench and spray processor
+pages.
 Tier: deep dive.
 
 **YAMANAKA-1999** — R. Yamanaka, T. Hattori, T. Mine, K. T. Hattori, T.
@@ -7493,7 +7682,9 @@ H. J. Stocker (AT&T Bell Laboratories), *Method for tapered etching*, US
 4,919,748 A, filed 1989-06-30, granted 1990-04-24.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4919748>
 Tapered aluminium etching with CHF₃ and Cl₂, the pre-planarisation
-alternative to a vertical profile. Used on step 125. Tier: deep dive.
+alternative to a vertical profile. Used on step 125.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **ROCHE-1996** — G. A. Roche and J. P. McVittie, "Application of Plasma
 Charging Probe to Production HDP CVD Tool", *Proc. 1st International
@@ -7606,7 +7797,9 @@ hydrogen peroxide for the removal of a TiW ARC from aluminum bond pads",
 Technology Symposium (IEMT 1997)*, pp. 99–104.
 <https://doi.org/10.1109/IEMT.1997.626884> Peroxide removal of a TiW
 cap from aluminium pads, the wet chemistry that etches TiW. Used on
-steps 136, 138 and 145. Tier: deep dive.
+steps 136, 138 and 145.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **DENISSE-1986** — C. M. M. Denisse, K. Z. Troost, J. B. Oude Elferink,
 F. H. P. M. Habraken, W. F. van der Weg and M. Hendriks,
@@ -7647,7 +7840,9 @@ and 136. Tier: deep dive.
 Tungsten Thin Films", *Journal of The Electrochemical Society*
 **154**(7), H653 (2007). <https://doi.org/10.1149/1.2737631> Reactive
 ion etching of TiW in CF₄/O₂, CF₄/Cl₂ and CF₄/HCl. Used on steps 114,
-125, 136, 138 and 140. Tier: deep dive.
+125, 136, 138 and 140.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **MAHNKOPF-1999** — R. Mahnkopf, K.-H. Allers, M. Armacost, A. Augustin
 et al., "'System on a chip' technology platform for 0.18 μm digital,
@@ -7725,7 +7920,9 @@ using selective etch of top electrodes*, US 8,110,414 B2, filed
 2009-04-30, granted 2012-02-07.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8110414>
 A selective plasma etch of MiM top electrodes that removes no more than
-100 Å of the dielectric. Used on step 138. Tier: cross-check.
+100 Å of the dielectric. Used on step 138.
+Also used on the metal plasma etcher page.
+Tier: cross-check.
 
 **TURBAN-1989** — G. Turban, J. F. Coulon and N. Mutsukura, "A
 mechanistic study of SF₆ reactive ion etching of tungsten", *Thin Solid
@@ -7813,7 +8010,9 @@ deep dive.
 interconnect etch", *Journal of Vacuum Science & Technology A* **12**(4),
 1265–1268 (1994). <https://doi.org/10.1116/1.579306> A tapered aluminium
 interconnect etch with N₂ additions in a TCP etcher. Used on steps 155,
-162 and 163. Tier: deep dive.
+162 and 163.
+Also used on the metal plasma etcher page.
+Tier: deep dive.
 
 **TAGUCHI-1998** — M. Taguchi, K. Maeda and J. Aoyama, "Improvement of
 filling capability by control of water outgassing from via holes in
