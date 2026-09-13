@@ -148,10 +148,10 @@ fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Automated wet bench** with dilute-HF, SC-1 and solvent tanks
+* **{ref}`Automated wet bench <machine-wet-bench>`** with dilute-HF, SC-1 and solvent tanks
   (Akrion, DNS/SCREEN, SCP), a **spray processor** (FSI Mercury) or a
   **single-wafer wet tool** (SEZ/Lam Da Vinci) ({ref}`category-etch`).
-* **Downstream plasma asher** for the strip ({ref}`category-strip`).
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** for the strip ({ref}`category-strip`).
 * **Ellipsometer** for etch-rate monitors; **particle scanner**.
 
 ## Machines likely used at SkyWater

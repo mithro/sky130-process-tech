@@ -148,7 +148,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ## Machines typically used
 
-* **Dielectric etcher**, 200 mm: Lam 4520XLE/Exelan,[^lam-exelan]
+* **{ref}`Dielectric etcher <machine-plasma-etcher-dielectric>`**, 200 mm: Lam 4520XLE/Exelan,[^lam-exelan]
   Applied Materials MxP/eMax and DPS (dielectric
   configurations),[^amat-1997] TEL DRM/Unity, Lam {term}`TCP` 9100
   ({ref}`category-etch`).

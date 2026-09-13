@@ -87,9 +87,9 @@ chemical oxide is thin and will be buried under the
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm (GaSonics Aura/PEP, Mattson
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`**, 200 mm (GaSonics Aura/PEP, Mattson
   Aspen, Axcelis/Fusion ES, PSK).
-* **Batch wet bench** (Akrion, DNS/SCREEN, SCP) or **spray processor**
+* **{ref}`Batch wet bench <machine-wet-bench>`** (Akrion, DNS/SCREEN, SCP) or **spray processor**
   (FSI Mercury) with SPM and SC-1.
 * **Patterned-wafer inspection** (KLA-Tencor AIT class).
 
