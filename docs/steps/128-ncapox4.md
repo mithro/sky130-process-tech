@@ -158,7 +158,7 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
   article describes TEOS deposition "in an oxygen or oxygen-argon
   plasma"[^wiki-pecvd]).
 * **NF₃** for the chamber clean; **nitrogen** purge.
-* **Showerhead, heater and liner consumables**; **monitor wafers**.
+* **{ref}`Showerhead, heater and liner consumables <material-hardware-consumables>`**; **{ref}`monitor wafers <material-substrates>`**.
 
 ## Related steps and cross-references
 

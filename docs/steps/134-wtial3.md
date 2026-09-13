@@ -212,9 +212,9 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
 * **Argon** for sputtering and pre-clean; **nitrogen** for venting. Gas
   suppliers named in SkyWater's filings: Air Products and Praxair (2021
   S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
-* **Chamber shields, clamps and electrostatic-chuck consumables**,
+* **{ref}`Chamber shields <material-hardware-consumables>`, clamps and electrostatic-chuck consumables**,
   changed more often for a thick film.
-* **Monitor wafers** for sheet resistance, reflectivity, stress and
+* **{ref}`Monitor wafers <material-substrates>`** for sheet resistance, reflectivity, stress and
   particles.
 
 ## Related steps and cross-references
