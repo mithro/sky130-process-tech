@@ -25,8 +25,10 @@ lists "Resistor Protect, RPM" but no reverse mask.[^pdk-05] That is not
 surprising if, as we infer, the two {term}`reticles <reticle>` are generated from the same
 drawn layer, `rpm` (GDS 86:20, "300 ohms/square polysilicon resistor
 implant"),[^pdk-06] one in each tone, and a designer never needs to know
-that two exist. The word "Rev" in the step list used in this reference
-is the only public trace of it. We infer that the reverse reticle is
+that two exist. That a reverse-tone mask is used is itself our
+inference: the p-type resistor implant must reach the bodies that
+`rpm` protected from the gate implant, and a reticle of the opposite
+tone on the same layer does exactly that. We infer that the reverse reticle is
 derived from `rpm` alone or from `rpm` less `urpm` (GDS 79:20, "2000
 ohms/square polysilicon resistor implant"[^pdk-06]), depending on
 whether the ultra-high-resistance bodies receive this implant as well as
