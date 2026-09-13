@@ -216,6 +216,9 @@ the two metal etchers as a weak option for removing a TiW cap.
 
 ## Consumables and facilities
 
+The etch gases and process gases are described on the
+{ref}`etch and chamber-clean gases <material-etch-gases>` and
+{ref}`process gases <material-process-gases>` pages.
 The etch gases and chamber parts are listed in the
 {ref}`materials index <materials-index>`; what is specific to a
 dielectric etcher is summarised here. None of the SkyWater sources
@@ -295,6 +298,11 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   pattern.
 * {ref}`material-hardware-consumables` — chamber parts and exhaust
   abatement.
+* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
 
 ## References
 

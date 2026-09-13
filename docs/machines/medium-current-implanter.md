@@ -235,6 +235,8 @@ range stops at "1e14".[^skw-01]
 
 ## Consumables and facilities
 
+The dopant sources are described on the
+{ref}`dopant gases and implant sources <material-dopant-sources>` page.
 The dopant gases and the ion-source parts of an implanter are listed in
 the {ref}`materials index <materials-index>`; what is specific to a
 medium-current tool is summarised here. None of the SkyWater sources
@@ -349,6 +351,8 @@ not public.
 * {ref}`category-strip` — removal of the implant resist after each
   implant.
 * {ref}`material-substrates` — monitor wafers for dose and uniformity.
+* {ref}`material-dopant-sources` — dopant gases, solid sources,
+  sub-atmospheric packages and ion-source parts.
 
 ## References
 
