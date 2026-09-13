@@ -117,8 +117,7 @@ polisher, which is what this step needs.
 
 * **Applied Materials Mirra CMP.** SkyWater names it and lists oxide
   and nitride among its applications.[^skw-01] Strength: strong
-  (SkyWater statement). Unverified job-board snippets also mention
-  "AMAT Mirra and Mirra Mesa" (public-sources §4); weak.
+  (SkyWater statement).
 * **Post-CMP clean** — SkyWater lists the "SEZ223, Davinci"
   single-wafer tools (HF, DSP+HF)[^skw-01] and the technician profile
   mentions "the SEZ etcher tool".[^skw-07] Strength: strong for

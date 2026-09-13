@@ -110,9 +110,10 @@ which is a different (later-generation) precursor.
 
 * **Aviza furnace running LPCVD nitride.** SkyWater states "Furnaces
   are all made by Aviza", with LPCVD nitride among the listed
-  processes.[^skw-01] Strength: strong. Vertical configuration: weak
-  (job-board snippet and a used-equipment listing for the
-  AVP-8000[^aviza-avp]).
+  processes.[^skw-01] Strength: strong. Vertical configuration: not
+  stated publicly; a used-equipment listing for the
+  AVP-8000[^aviza-avp] shows the vendor's vertical 200 mm furnace
+  (weak).
 * No public source names the specific tube used for the isolation
   nitride versus the gate-stack or {term}`spacer` nitrides.
 

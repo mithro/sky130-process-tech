@@ -158,8 +158,6 @@ fab (SKY130's energy and dose are not public):
   10¹⁴ cm⁻² would put a heavier tip out of reach. Strength: strong for
   the tool; weak-to-medium for assignment — which tool runs `ASTI`
   depends on the (non-public) dose.
-* Unverified job-board snippets mention "Axcelis GSD300E" and "Axcelis
-  Purion" implanters (see {ref}`references-public-sources`, §4); weak.
 
 ## Resources required
 

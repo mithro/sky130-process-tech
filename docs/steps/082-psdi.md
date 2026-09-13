@@ -176,8 +176,6 @@ fab (SKY130's recipe is not public):
   1e11 to 1e14" range[^skw-01]). Axcelis describes the GSD family as
   "the industry benchmark for the longest manufactured and supported
   batch ion implanter".[^axcelis-gsd]
-* Unverified job-board snippets mention "Axcelis GSD300E" and
-  "Axcelis Purion" ({ref}`references-public-sources`, §4); weak.
 
 ## Resources required
 
