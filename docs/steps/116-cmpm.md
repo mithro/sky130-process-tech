@@ -154,8 +154,8 @@ recipe is not public):
   Mirra,[^pat-cmp-mirra][^chiphistory-mirra] Ebara EPO/F-REX,[^ebara-frex]
   SpeedFam-IPEC, Strasbaugh ({ref}`category-cmp`).
 * **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam Synergy, SEZ/Lam Da Vinci).
-* **Thin-film thickness metrology** (reflectometer, ellipsometer),
-  **patterned-wafer inspection**.
+* **{ref}`Thin-film thickness metrology <machine-film-thickness-metrology>`** (reflectometer, ellipsometer),
+  **{ref}`patterned-wafer inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 

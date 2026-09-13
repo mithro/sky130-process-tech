@@ -165,7 +165,7 @@ recipe is not public); the shared physics is set out at
   TCP 9100).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** (GaSonics Aura, Mattson Aspen) and **{ref}`wet bench <machine-wet-bench>` or
   {ref}`single-wafer clean <machine-single-wafer-spin-processor>`** for post-etch residue.
-* **{ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **cross-section SEM**, **e-test** for via chains.
+* **{ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**, **{ref}`e-test <machine-parametric-tester>`** for via chains.
 
 ## Machines likely used at SkyWater
 
