@@ -70,9 +70,9 @@ diagram.[^pdk-04]
 | `via_top` (upper part of `via`) | 2.0311 → 2.3011 | 0.270 | — |
 | `met2` | 2.3011 → 2.6611 | 0.360 | 2.0061 → 2.3661 |
 
-The same slide gives `via` as a whole as 0.565, the sum of `via_bot`
-0.270, `via_top` 0.270 and the 0.025 of the three RRAM
-layers.[^reram-ug] The open_pdks Magic technology file uses the same
+The same slide gives `via` as a whole as 0.565,[^reram-ug] which equals
+`via_bot` 0.270 plus `via_top` 0.270 plus the 0.025 of the three RRAM
+layers (our arithmetic). The open_pdks Magic technology file uses the same
 numbers for its `sky130B` extraction: via 1 at 1.7361 µm with thickness
 0.565 µm and metal 2 at 2.3011 µm, against 0.27 µm and 2.0061 µm without
 ReRAM.[^opdks-magic-tech] The oxide thickness agrees with the default
@@ -96,7 +96,8 @@ can be laid on them (inference from the geometry). The tier therefore
 belongs after the via-1 plug polish ({ref}`WCMP3 <step-122>`) and before
 the metal-2 stack deposition ({ref}`TIAL12 <step-123>`): the RRAM stack,
 its patterning and encapsulation, a second inter-level dielectric of
-about 0.27 µm, and the upper vias would all be inserted there, and metal
+about 0.295 µm (0.27 µm above the top electrode; our arithmetic), and
+the upper vias would all be inserted there, and metal
 2 and everything above it would then be built 0.295 µm higher
 (2.3011 − 2.0061 µm; our arithmetic from the two stacks).
 
@@ -246,8 +247,10 @@ says which parts are typical and which are our inference for SKY130.
 8. **Encapsulation and inter-level dielectric.** The patterned cells
    are covered — in TSMC's patents with nitride spacers or a conformal
    dielectric protection layer, then an upper ILD[^pat-rram-oxide-tsmc][^pat-rram-etchstop-tsmc]
-   — to protect the oxide's edges and to build the 0.27 µm of dielectric
-   through which the upper vias will pass.[^reram-ug] In an aluminium
+   — to protect the oxide's edges and to build the roughly 0.3 µm of
+   dielectric through which the upper vias will pass (0.27 µm above a
+   cell, 0.295 µm where there is none; our arithmetic from the tech-file
+   levels[^reram-ug]). In an aluminium
    flow such as SKY130's this would, on our reading, be a PECVD or HDP
    oxide like {ref}`NILD3 <step-115>`, followed by polishing as in
    {ref}`CMPM <step-116>` and a cap as in {ref}`NCAPOX3 <step-117>`
@@ -257,7 +260,12 @@ says which parts are typical and which are our inference for SKY130.
    dielectric. Over a cell the etch must land on a top electrode only
    10 nm thick without punching through it into the 5 nm oxide; over a
    bypass it must land on the tungsten plug of the lower via (inference
-   from the tech-file thicknesses).
+   from the tech-file thicknesses). The two are not the same depth: over
+   a cell the upper via passes through 0.27 µm of dielectric, over a
+   bypass through 0.295 µm, so an etch shared by both that clears the
+   bypass over-etches the cell by about 0.025 µm, more than the whole
+   10 nm top electrode; it would need high selectivity to the electrode
+   (inference from the tech-file levels).
 10. **Upper via fill.** A liner, tungsten fill and polish as at
     {ref}`TIN3 <step-120>`, {ref}`WDEP3 <step-121>` and
     {ref}`WCMP3 <step-122>` — "2 stacked normal vias … same via width
@@ -563,10 +571,13 @@ the tier needs:[^skw-01]
   stated.
 * How the stack is etched (one etch or several, with or without
   spacers), how it is encapsulated, and which dielectric forms the
-  upper 0.27 µm are not public.
-* How the upper via lands on a 10 nm top electrode, and how the bypass
-  accounts for the 0.025 µm of the RRAM layers (0.270 + 0.270 µm against
-  a total of 0.565 µm), are not described.
+  added 0.295 µm are not public.
+* How the upper via lands on a 10 nm top electrode is not described.
+  Over a cell the 0.025 µm of the RRAM layers accounts for the
+  difference between `via_bot` plus `via_top` (0.540 µm) and the
+  0.565 µm between metal 1 and metal 2 (our arithmetic); how the bypass's "2 stacked
+  normal vias", where there is no RRAM stack, span the same 0.565 µm is
+  not described.
 * Whether `r1v` is geometrically identical to `cviam`; whether 201:20 is
   the drawn `r1c` layer (our inference from the library cell and the
   Magic file); what the DRC rules `rr1_cell.3` to `rr1_cell.12` check,
