@@ -969,7 +969,8 @@ granted 2014-08-05.
 <https://patents.google.com/patent/US8796098B1/en>. Pad oxide 10–20 nm,
 tunnel dielectric 1.0–4.0 nm, oxynitride charge-trapping layers
 2.0–5.0 nm, blocking oxide ~3–4.5 nm, HV gate oxide 5–7 nm, LV gate
-oxide 1–3 nm, indium channel doping. Tier: deep dive.
+oxide 1–3 nm, indium channel doping.
+Also used on the wet bench page. Tier: deep dive.
 
 **PAT-STI-CR** — US 7,439,141 B2, *"Shallow trench isolation approach
 for improved STI corner rounding"*, U. Kim, Y. Sun, M. S. Chang et al.;

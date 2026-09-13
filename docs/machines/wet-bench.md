@@ -256,10 +256,13 @@ not public.
   it to the Akrion bench as the only phosphoric tank SkyWater
   lists.[^skw-01]
 * **Wet oxide etches over thin films.** {ref}`TUNME <step-039>` removes
-  the pad oxide from the tunnel windows and {ref}`GOXETCH <step-046>`
-  strips the exposed thick gate oxide, both with BOE, the etchant the
-  Cypress patent names (with 20:1 BOE or 50:1 HF among its alternatives
-  for the pad oxide), and {ref}`SACETCH <step-095>` uses dilute HF; at these thicknesses the slow, well-controlled rates of
+  the oxide from the tunnel windows (the pad oxide, on that page's
+  inference) and {ref}`GOXETCH <step-046>` strips the exposed thick gate
+  oxide, both with BOE, the etchant a Cypress embedded-SONOS patent
+  names for the two operations, with 20:1 BOE or 50:1 HF among its
+  alternatives for the pad oxide;[^pat-04] the
+  {ref}`SACETCH <step-095>` page reads its etch, by inference, as a
+  dilute-HF dip. At these thicknesses the slow, well-controlled rates of
   dilute HF matter.[^kikuyama-1994][^wiki-boe]
 * **Pre-furnace cleans.** The oxidation and anneal pages
   ({ref}`BOX <step-002>`, {ref}`LINOX <step-010>` and the pre-anneal
@@ -315,6 +318,9 @@ not public.
   water against surface charging.[^pat-dico2-mks]
 * Lee (EKC Technology), US 5,334,332 — hydroxylamine and alkanolamine
   residue removers.[^pat-ekc-hydroxylamine]
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — BOE
+  etches of the pad and thick gate oxides, with HF alternatives, in an
+  embedded-SONOS flow.[^pat-04]
 
 ### High-level understanding
 
@@ -381,6 +387,10 @@ not public.
     1887–1892 (1990). <https://doi.org/10.1149/1.2086825>
 [^wiki-piranha]: Wikipedia, *Piranha solution*.
     <https://en.wikipedia.org/wiki/Piranha_solution>
+[^pat-04]: K. Ramkumar, I. Kouznetsov and V. Prabhakar (Cypress
+    Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098
+    B1, granted 2014-08-05.
+    <https://patents.google.com/patent/US8796098B1/en>
 [^wiki-boe]: Wikipedia, *Buffered oxide etch*.
     <https://en.wikipedia.org/wiki/Buffered_oxide_etch>
 [^vgh-1967]: W. van Gelder and V. E. Hauser, "The Etching of Silicon
