@@ -219,7 +219,7 @@ The {ref}`NS19 <step-013>` grade is one of the few *strong* assignments
 on the machines index, because the Akrion bench is "the only phosphoric
 tank listed".[^skw-01] The single-wafer "SEZ223, Davinci" entry, which
 several of these pages also name for HF etches and cleans, belongs to
-the single-wafer spin processor class ({ref}`machine-single-wafer-spin-processor`).
+the {ref}`single-wafer spin processor <machine-single-wafer-spin-processor>` class.
 
 ## Consumables and facilities
 
