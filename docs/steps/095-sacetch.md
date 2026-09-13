@@ -177,7 +177,7 @@ fab (SKY130's recipe is not public):
 * **Dilute HF** (or **BOE**),[^wiki-hf][^wiki-boe] **DI water**,
   **IPA** or nitrogen for drying.
 * **SC-1 chemicals** (NH₄OH, H₂O₂)[^wiki-rca] and/or a
-  **post-etch-residue remover** (EKC265/270 class[^skw-01]).
+  **post-etch-residue remover** (EKC265/EKC270 class[^skw-01]).
 * **O₂, N₂, H₂/N₂** for the strip;[^skw-01] **SPM** (H₂SO₄/H₂O₂)
   if a wet strip is used.[^wiki-piranha]
 * **Etch-rate monitor wafers** with thermal oxide.[^semi-m8]

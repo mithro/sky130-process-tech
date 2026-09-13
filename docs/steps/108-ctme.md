@@ -141,7 +141,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    chemistry.[^kastenmeier-1996] The bottom CD is set here.
 6. **Strip and clean.** Oxygen plasma {term}`ash` — GaSonics, Mattson
    or Iridia class in SkyWater's list[^skw-01] — followed by a solvent
-   or semi-aqueous clean (EKC265/270-type amine solvents are on
+   or semi-aqueous clean (EKC265/EKC270-type amine solvents are on
    SkyWater's wet-bench list[^skw-01]) to remove the fluorocarbon
    polymer from the sidewalls and the metal-oxide residue from the
    TiN floor without attacking the TiN. No HF is used (inference:
@@ -184,7 +184,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   SkyWater lists CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]).
 * **Helium** for backside cooling; **NF₃** or O₂-based chamber clean.
 * **O₂/N₂** (and {term}`forming gas` or CF₄) for the ash;[^skw-01]
-  **amine or semi-aqueous solvent** (EKC265/270 class) and DI water
+  **amine or semi-aqueous solvent** (EKC265/EKC270 class) and DI water
   for the post-etch clean.[^skw-01]
 * **Chamber consumables** (liners, focus and edge rings, electrodes),
   **monitor wafers** with blanket oxide and nitride for rate and
