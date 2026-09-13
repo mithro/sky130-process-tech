@@ -8465,7 +8465,7 @@ lot, wafer or die. Points that affect readings: the drain currents per
 drawn width of the module-26xx "fet mismatch" structures are about two
 to four times those of the same drawn geometries in other modules
 (whose currents are close to the e-test nominals), although their
-thresholds agree; the linear-region currents of the arrays level off
+thresholds agree to within about 0.05 V; the linear-region currents of the arrays level off
 at a few milliamperes; the sweeps of several `pfet_01v8` structures
 (modules 8405 and 8407) and of the 3/1, 7/8 and 7/0.35 µm
 `pfet_01v8_lvt` of module 8396 are erratic (for the 7/8 µm device only
