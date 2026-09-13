@@ -568,10 +568,13 @@ decide between them, and the step pages are unchanged.
   "Polyimide cure" and "Atmospheric selective oxidation" among the
   furnace processes, and "CO2 injected DI" and "IPA clean" among the
   cleans.[^skw-01] No step page's resources section lists a cobalt
-  target, a polyimide or a selective oxidation; the
-  {ref}`TIAL6 <step-112>` page mentions the cobalt entry and the
-  {ref}`NTSD <step-167>` page the polyimide cure, no step page mentions
-  the two cleans, and only {ref}`CMPM4 <step-157>` quotes the Mirra's
+  target, a polyimide or a selective oxidation; the metal-stack and
+  TiN-liner PVD pages ({ref}`TIN2 <step-109>`, {ref}`TIAL6 <step-112>`,
+  {ref}`TIN3 <step-120>`, {ref}`TIAL12 <step-123>`,
+  {ref}`TIN4 <step-131>`, {ref}`WTIAL3 <step-134>`,
+  {ref}`TIN5 <step-146>` and {ref}`WTIAL4 <step-149>`) quote the cobalt
+  entry, the {ref}`NTSD <step-167>` page mentions the polyimide cure,
+  no step page mentions the two cleans, and only {ref}`CMPM4 <step-157>` quotes the Mirra's
   "Track ammonia clean". The PDK stack diagram draws a polyimide, "PI1
   K=2.94", for which the step list has no step.[^pdk-04]
 * **The PSG dimension labels.** {ref}`PSG <step-089>` describes the
@@ -581,8 +584,8 @@ decide between them, and the step pages are unchanged.
   (0.9361 µm), and 0.4299 µm equals the distance from the top of the
   0.18 µm field poly to the `li` bottom (our arithmetic).[^pdk-04]
 * **Diagram labels without a step reading.** The stack diagram also
-  carries an "IOX K=3.9" label and dimensions of 0.006 µm, 0.0431 µm
-  and 0.121 µm that no step page, including {ref}`IOX45 <step-063>`,
+  carries an "IOX K=3.9" label and dimensions of 0.006 µm, 0.0431 µm,
+  0.121 µm and 5.2523 µm that no step page, including {ref}`IOX45 <step-063>`,
   uses.[^pdk-04]
 * **What "doped" means.** SkyWater's HDP entry reads "doped and phos
   doped"; the dopant of the first is not given. The fluorinated-oxide
