@@ -15,9 +15,11 @@ shipped, reworked or scrapped. This is the {term}`e-test` or wafer
 acceptance test ({term}`WAT`); it is the single {ref}`HPETEST
 <step-171>` step at the end of the SKY130 flow.
 
-Precisely, "wafer testing is a step performed during semiconductor
-device fabrication after back end of line (BEOL) and before IC
-packaging", and it comes in two kinds: wafer parametric tests, performed
+In the general description, "wafer testing is a step performed during
+semiconductor device fabrication after back end of line (BEOL) and
+before IC packaging"; this reference, whose phase table ends the back
+end with the final alloy and test, files {ref}`HPETEST <step-171>`
+itself under BEOL. Wafer testing comes in two kinds: wafer parametric tests, performed
 at "a few locations on each wafer" to verify that fabrication succeeded,
 and wafer functional testing (also called die sort or {term}`wafer
 sort`), which applies "special test patterns" to test "all individual

@@ -585,13 +585,12 @@ the first contacts (`licon`) and the local interconnect itself. The back
 end starts with the metal-contact mask and, in this reference, includes
 the passivation, the final alloy and electrical test. Two consequences
 of these choices are worth knowing when comparing with other sources:
-the glossary's general definition of the back end runs "from the first
-contact through the final passivation", whereas this reference counts
-the first contact level as middle of line; and the test category page
-quotes the general description of wafer testing as a step performed
-"after back end of line (BEOL)", whereas the step pages file
-{ref}`HPETEST <step-171>` under BEOL ({ref}`glossary`,
-{ref}`category-test`). The deposition of the metal-3 stack,
+in common usage the back end runs from the first contact through the
+final passivation, whereas this reference counts the first contact
+level as middle of line; and general descriptions place wafer testing
+after the back end, whereas this reference files
+{ref}`HPETEST <step-171>` under BEOL. The {ref}`glossary` and the
+{ref}`test category page <category-test>` state both. The deposition of the metal-3 stack,
 {ref}`WTIAL3 <step-134>`, is also filed with via 2 rather than with the
 capacitor and metal-3 steps that follow it.
 

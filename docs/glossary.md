@@ -115,8 +115,14 @@ barrier metal
     at back-end temperatures. Usually paired with a {term}`liner`.
 
 BEOL
-    Back end of line: the interconnect portion of the process flow, from
-    the first contact through the final passivation.
+    Back end of line: the interconnect portion of the process flow. In
+    common usage it runs from the first contact through the final
+    passivation. This reference splits the flow differently: the
+    pre-metal glass, the `licon` contacts and the local interconnect
+    ({ref}`step-089` to {ref}`step-106`) form the {term}`MOL`, and the
+    back end starts with the metal contact and metal 1
+    ({ref}`step-107`) and runs to passivation, pads, the final alloy
+    and electrical test ({ref}`step-171`).
 
 Blech length
     The critical length below which an aluminium line on a rigid,
@@ -768,7 +774,9 @@ MiM capacitor
 
 MOL
     Middle of line: the contact and local-interconnect steps that bridge
-    FEOL and BEOL.
+    FEOL and BEOL; in this reference, the pre-metal glass through the
+    polish over the local interconnect ({ref}`step-089` to
+    {ref}`step-106`).
 
 NA
     Numerical aperture of the projection lens, {math}`n \sin\theta`; the
