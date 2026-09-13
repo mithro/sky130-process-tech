@@ -161,7 +161,7 @@ an aluminium back end (SKY130's recipe is not public):
   **inference** — it is the only hydrogen-bearing anneal on the list.
   Dealer documentation describes the Aviza/SVG AVP-8000 as a vertical
   batch furnace for 150–200 mm wafers.[^aviza-avp]
-* **AG Heatpulse 8808** — no hydrogen in its listed ambients;[^skw-01]
+* **AG Associates Heatpulse 8808** — no hydrogen in its listed ambients;[^skw-01]
   weak.
 
 ## Resources required
