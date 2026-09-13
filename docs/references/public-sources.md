@@ -6651,7 +6651,12 @@ Used on step 089. Tier: deep dive.
 **BIBBY-1998** — T. Bibby and K. Holland, "Endpoint detection for CMP",
 *Journal of Electronic Materials* **27**(10), 1073–1081 (1998).
 <https://doi.org/10.1007/s11664-998-0140-1> Endpoint detection for CMP.
-Used on steps 090, 100 and 106. Tier: deep dive.
+The public abstract (retrieved 2026-09-13) notes motor-current friction
+sensing for metal polishing, patented acoustic methods and optical
+methods with "some success" for STI, and says the paper discusses "many
+of the approaches that have been published", categorised as global or
+local and direct or indirect. Used on steps 090, 100 and 106. Tier: deep
+dive.
 Also used on the CMP polisher machine page.
 
 **CHEN-2002-PSG** — S. Chen, C.-Y. Fu, S.-M. Jang, C.-H. Yu and M.-S.
