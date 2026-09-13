@@ -146,9 +146,10 @@ The substrate category has no process tool in the fab itself; the
   lamp-heated reactors such as the ASM Epsilon series and the Applied
   Materials Centura Epi, or the older batch barrel
   reactors.[^wiki-asm][^wiki-amat]
-* **{ref}`Incoming inspection <machine-starting-material>`**: laser surface scanners (KLA-Tencor Surfscan
-  family), capacitive flatness gauges (ADE), four-point-probe
-  resistivity mapping, and FTIR for oxygen content.[^wiki-kla]
+* **{ref}`Incoming inspection <machine-starting-material>`**: {ref}`laser surface scanners <machine-defect-inspection>`
+  (KLA-Tencor Surfscan family), capacitive flatness gauges (ADE),
+  {ref}`four-point-probe resistivity mapping <machine-sheet-resistance-metrology>`,
+  and FTIR for oxygen content.[^wiki-kla]
 
 ## Typical consumables
 

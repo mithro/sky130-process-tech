@@ -149,9 +149,9 @@ values.[^steigerwald-1997][^zantye-2004]
   472 and the SpeedFam-IPEC Auriga; Strasbaugh 6DS-SP; Lam Teres.
 * **{ref}`Post-CMP cleaners <machine-post-cmp-cleaner>`**: OnTrak (later Lam) DSS-200 double-sided brush
   scrubbers; Applied Mesa integrated cleaner.
-* **Metrology**: optical film-thickness mappers (Nanometrics NanoSpec,
-  Rudolph, KLA-Tencor), stylus profilers for dishing and step height
-  (KLA-Tencor HRP), and unpatterned-wafer defect inspection (KLA-Tencor
+* **Metrology**: {ref}`optical film-thickness mappers <machine-film-thickness-metrology>` (Nanometrics NanoSpec,
+  Rudolph, KLA-Tencor), {ref}`stylus profilers <machine-cross-section-sem-profilers>` for dishing and step height
+  (KLA-Tencor HRP), and {ref}`unpatterned-wafer defect inspection <machine-defect-inspection>` (KLA-Tencor
   Surfscan) for scratches.
 
 ## Typical consumables

@@ -210,10 +210,10 @@ must hit.
 * **{ref}`CVD tungsten <machine-tungsten-cvd>`**: Novellus Concept Two Altus ("metal solutions
   (Concept One-W, Concept Two-Altus, and Concept Two-Dual
   Altus)")[^novellus-history] and Applied Materials Centura WxZ.
-* **Metrology**: ellipsometry and reflectometry for dielectric
-  thickness; {term}`four-point probe` {term}`sheet resistance` for metals;
-  stress gauges (wafer-bow); particle counters on blanket monitor
-  wafers.
+* **Metrology**: {ref}`ellipsometry and reflectometry <machine-film-thickness-metrology>` for dielectric
+  thickness; {term}`four-point probe` {term}`sheet resistance` for metals
+  ({ref}`machine-sheet-resistance-metrology`); stress gauges (wafer-bow); {ref}`particle counters <machine-defect-inspection>`
+  on blanket monitor wafers.
 
 ## Typical consumables
 

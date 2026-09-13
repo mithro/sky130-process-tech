@@ -182,7 +182,7 @@ alignment corrections.
 * **{ref}`Metrology <machine-cd-sem-overlay-metrology>`**: KLA-Tencor 8100/8100XP CD-SEM (accelerating voltage
   0.4–1.5 kV, resolution below 4 nm)[^gce-kla8100] and Hitachi
   S-9200/S-9260 CD-SEMs;[^semimarket-s9200] KLA-Tencor 5xxx/Archer
-  optical overlay tools; after-develop inspection on KLA-Tencor 2xxx
+  optical overlay tools; {ref}`after-develop inspection <machine-defect-inspection>` on KLA-Tencor 2xxx
   bright-field inspectors.[^wiki-kla]
 * **Reticles** are made at a mask shop (Photronics, DNP, Toppan, or a
   captive shop) with laser or e-beam pattern generators and are not fab

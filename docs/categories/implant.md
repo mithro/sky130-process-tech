@@ -186,7 +186,7 @@ several MeV for wells.[^wiki-implant][^current-2017]
   energies up to 3 MeV" and "14 stage LINAC with energies up to 4.9
   MeV");[^axcelis-gsd-page] Varian VIISta 3000 and Genus/Varian tandem
   machines.
-* **Dose metrology**: four-point probes (KLA-Tencor RS-series OmniMap),
+* **{ref}`Dose metrology <machine-sheet-resistance-metrology>`**: four-point probes (KLA-Tencor RS-series OmniMap),
   Therma-Wave TP-series modulated-reflectance monitors, and SIMS at an
   analytical laboratory.
 

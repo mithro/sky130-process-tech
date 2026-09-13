@@ -140,9 +140,9 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
   **{ref}`single-wafer spin processors <machine-single-wafer-spin-processor>`** (SEZ, later Lam; DNS) for HF-based
   and solvent strips with better chemical freshness and no
   cross-contamination between wafers.
-* **Metrology**: laser surface scanners for particles (KLA-Tencor
+* **Metrology**: {ref}`laser surface scanners <machine-defect-inspection>` for particles (KLA-Tencor
   Surfscan), TXRF and VPD-ICP-MS for surface metals, contact-angle and
-  ellipsometric checks of the chemical oxide.
+  {ref}`ellipsometric checks <machine-film-thickness-metrology>` of the chemical oxide.
 
 ## Typical consumables
 

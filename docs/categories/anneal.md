@@ -151,7 +151,7 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
 * **{ref}`Vertical furnaces <machine-vertical-furnace-anneal>`** for well drive, densification and alloy: ASM
   A400,[^asm-vf] TEL Alpha-8, Aviza/Thermco, Kokusai; older horizontal
   Thermco and BTU tubes for alloy.
-* **Metrology**: {term}`four-point probe` sheet resistance after every
+* **Metrology**: {term}`four-point probe` {ref}`sheet resistance <machine-sheet-resistance-metrology>` after every
   activation anneal, Therma-Wave for lightly doped implants, SIMS for
   profiles, and thermocouple-instrumented wafers for RTP temperature
   calibration.
