@@ -71,9 +71,10 @@ particles on smooth surfaces, normal illumination for "mechanical
 scratches for equipment monitoring or slip lines for epitaxial
 processes", brightfield differential interference contrast for "defects
 with surface height changes", and haze maps.[^kla-sp1-2021] The
-SP1 DLS of 2002 added a module for "non-destructive inspection of the
-backsides of patterned (product) wafers, as well as the front and
-backsides of unpatterned wafers".[^kla-sp1dls-2002]
+SP1 DLS, as KLA-Tencor described it in 2002, had a backside inspection
+module for "non-destructive inspection of the backsides of patterned
+(product) wafers, as well as the front and backsides of unpatterned
+wafers".[^kla-sp1dls-2002]
 
 ### Pits that look like particles
 
@@ -147,9 +148,8 @@ stations".[^kla-sp1-2021]
 
 The category page lists the other gauges an incoming-quality laboratory
 uses: capacitive flatness gauges, four-point-probe resistivity mapping
-and FTIR for oxygen ({ref}`category-substrate`). The four-point probe
-is the oldest of these; Smits described four-point-probe sheet
-resistivity and its correction factors.[^smits-1958] None of these
+and FTIR for oxygen ({ref}`category-substrate`). Smits described
+four-point-probe sheet resistivity and its correction factors.[^smits-1958] None of these
 gauges appears in any SkyWater source retrieved for this page.
 
 ## Representative 200 mm-era models
@@ -199,7 +199,7 @@ it lists "Camtek Falcon (outgoing QA)", which we read as inspection of
 finished rather than incoming wafers.[^skw-01] Under "Other Services" it lists "High
 resistivity, red phos low resistivity and Silison on Insulator
 processing" (sic), which describes substrates the fab offers to process,
-not the SKY130 wafer.[^skw-01]
+not the SKY130 wafer (our reading).[^skw-01]
 
 Two other public SkyWater sources touch the class. A *Defect Technician
 2* posting asks for "General operation of semiconductor defect metrology
@@ -257,8 +257,9 @@ The wafers and the clean chemicals are listed in the
 class is summarised here. None of the SkyWater sources describes the
 fab's incoming-quality laboratory.
 
-* **Wafers.** Prime polished wafers to SEMI M1[^semi-m1] from the
-  suppliers named in the S-1,[^sec-01] and test wafers to SEMI M8 for
+* **Wafers.** Prime polished wafers, typically to SEMI M1[^semi-m1]
+  (industry practice), from suppliers such as those named in the
+  S-1,[^sec-01] and test wafers to SEMI M8 for
   monitoring tools ({ref}`category-substrate`).[^semi-m8]
 * **Calibration standards.** Polystyrene latex spheres deposited on
   bare wafers, with the sizing errors for real particles described
@@ -283,8 +284,9 @@ limits and marking scheme are not public.
   table and PDK drawings; resistivity, orientation and whether the
   original S8 wafer was epitaxial are open questions there. SkyWater's
   Minnesota fab runs "200 mm equipment".[^skw-01]
-* **Where the mark is written.** SEMI M13 is written for marking
-  "performed by silicon manufacturers",[^semi-m13] and SkyWater lists a
+* **Where the mark is written.** SEMI M12 and M13 are both written for
+  marking "performed by silicon manufacturers",[^semi-m12][^semi-m13]
+  and SkyWater lists a
   marker of its own;[^skw-01] whether SKY130 wafers arrive marked, are
   marked at Bloomington, or both, is not public. A mark made before the
   first oxidation must not seed slip ({ref}`BOX <step-002>` is the first
