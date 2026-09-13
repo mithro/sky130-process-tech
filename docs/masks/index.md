@@ -253,6 +253,126 @@ two mask-level layers that have no mask step in this
 reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
 "Pad Via, VIPDM" entry.
 
+(masks-mpw-runs)=
+## Masks made for the MPW runs
+
+The *S8 / SKY130 Process Steps* sheet, from which the step list used in
+this reference is taken, has a tab "Run Mask IDs" that sets a mask
+table against eight runs it labels MPW-1 to MPW-8. Its rows are the 51
+entries of `masks.csv`, with the same names, acronyms and `Used in
+SKY130` marks, plus five rows the PDK table does not have: "Rev
+Resistor Protect, RRPM", "Ultra-High Resistor Poly, URPM", "Capacitor
+MiM 2, CAP2M", "RRAM Mask, RRM" and "Via 1 top, RRAM tier,
+VIMC".[^steps-sheet][^pdk-05] Each run has an "Exists" column, marked
+`X` where the sheet records a plate for that mask on that
+run.[^steps-sheet] The tables below report those marks; *not recorded*
+means no `X` on any of the eight runs.
+
+| Step | `masks.csv` (`Used in SKY130`) | Plates recorded |
+|------|--------------------------------|-----------------|
+| {ref}`FOM <step-004>` | `X` | all eight |
+| {ref}`DNM <step-007>` | `X` | all eight |
+| {ref}`LVTNM <step-014>` | `X` | all eight |
+| {ref}`NWM <step-017>` | `X` | all eight |
+| {ref}`HVTPM <step-022>` | `X` | all eight |
+| {ref}`PWBM <step-026>` | *blank* | MPW-6 and MPW-8 |
+| {ref}`PWDEM <step-030>` | *blank* | MPW-6 |
+| {ref}`TUNM <step-035>` | `X` | all eight |
+| {ref}`ONOM <step-041>` | `X` | all eight |
+| {ref}`LVOM <step-044>` | `X` | all eight |
+| {ref}`RPM <step-049>` | `X` | all eight |
+| {ref}`RRPM <step-052>` | *not listed* | all eight |
+| {ref}`URPM <step-055>` | *not listed* | all eight |
+| {ref}`P1M <step-061>` | `X` | all eight |
+| {ref}`NTM <step-064>` | `X` | all eight |
+| {ref}`HVNTM <step-068>` | `X` | all eight |
+| {ref}`LDNTM <step-071>` | `X` | all eight |
+| {ref}`NPCM <step-078>` | `X` | all eight |
+| {ref}`PSDM <step-081>` | `X` | all eight |
+| {ref}`NSDM <step-085>` | `X` | all eight |
+| {ref}`LICM1 <step-093>` | `X` | all eight |
+| {ref}`LI1M <step-102>` | `X` | all eight |
+| {ref}`CTM1 <step-107>` | `X` | all except MPW-5 |
+| {ref}`MM1 <step-113>` | `X` | all except MPW-5 |
+| {ref}`VIM <step-118>` | `X` | all except MPW-5 |
+| {ref}`MM2 <step-124>` | `X` | all eight |
+| {ref}`VIM2 <step-129>` | Via 2-PLM `X`; Via 2-TNV and Via 2-S8TM *blank* | Via 2-PLM: all eight; Via 2-TNV and Via 2-S8TM: not recorded |
+| {ref}`CAPM <step-137>` | *blank* | all eight |
+| {ref}`MM3 <step-139>` | Metal 3-PLM `X`; Metal 3-TLM and Metal 3-S8TM *blank* | Metal 3-PLM: all eight; Metal 3-TLM and Metal 3-S8TM: not recorded |
+| {ref}`VIM3 <step-144>` | `X` | all eight |
+| {ref}`CAP2M <step-152>` | *not listed* | all eight |
+| {ref}`MM4 <step-154>` | `X` | all eight |
+| {ref}`VIM4 <step-159>` | `X` | all except MPW-5 |
+| {ref}`MM5 <step-162>` | `X` | all eight |
+| {ref}`NSM <step-165>` | `X` | all eight (MPW-6 plate identified differently) |
+| {ref}`PDM <step-168>` | Pad (scribe protect) `X`; Pad (scribe unprotect) *blank* | scribe protect: all except MPW-5; scribe unprotect: not recorded |
+
+| Entry with no mask step in this reference | `masks.csv` (`Used in SKY130`) | Plates recorded |
+|-------------------------------------------|--------------------------------|-----------------|
+| RRAM Mask, RRM | *not listed* | all except MPW-5 and MPW-6 |
+| Via 1 top, RRAM tier, VIMC | *not listed* | all except MPW-6 |
+| HVTRM, PBO, CU1M, PMM2 | `X` | not recorded |
+| NCM, OFM, VIPDM, INDM, PMM, PMM[E], PDMM[E], UBM, BUMP | *blank* | not recorded |
+
+The source of both tables is the "Run Mask IDs" tab,[^steps-sheet] with
+the `masks.csv` fields from the PDK.[^pdk-05] What the record shows:
+
+* **Masks the PDK table does not mark.** Plates are recorded on all
+  eight runs for `RRPM`, `URPM` and `CAP2M`, which `masks.csv` does not
+  list, and for `CAPM`, which it lists with the field
+  blank.[^steps-sheet][^pdk-05] `PWBM`, also blank in `masks.csv`, has
+  plates recorded only for MPW-6 and MPW-8, and `PWDEM` only for
+  MPW-6.[^steps-sheet]
+* **Masks with no plate on any run.** The sheet records no plate on
+  any of the eight runs for the four marked entries without a mask
+  step here — `HVTRM`, `PBO`, `CU1M` and `PMM2` — nor for the unmarked
+  variants "Via 2-TNV", "Via 2-S8TM", "Metal 3-TLM", "Metal 3-S8TM" and
+  "Pad (scribe unprotect)", nor for the nine unmarked entries without a
+  mask step.[^steps-sheet][^pdk-05] Each of the other 30 marked entries
+  has plates recorded on seven or eight runs.[^steps-sheet]
+* **MPW-5.** The sheet records no plates for `CTM1`, `MM1`, `VIM`,
+  `VIM4` and `PDM` on MPW-5 (nor for `RRM`), so MPW-5 has 30 `X` marks
+  against 36 for each of MPW-1 to MPW-4, MPW-6 and MPW-7 and 37 for
+  MPW-8.[^steps-sheet] The sheet gives no reason. This page reports
+  what is recorded and does not conclude that those masks were absent
+  from MPW-5: the gap may be in the record rather than in the run.
+* **NSM on MPW-6.** Every run has an `NSM` plate, but the identifier
+  recorded for the MPW-6 plate does not follow the pattern shared by
+  the `NSM` plates of the other seven runs.[^steps-sheet] The sheet
+  does not explain the difference.
+* **The sky130B ReRAM masks.** `RRM` has plates recorded on MPW-1 to
+  MPW-4, MPW-7 and MPW-8, and `VIMC` on MPW-1 to MPW-5, MPW-7 and
+  MPW-8; neither has one on MPW-6.[^steps-sheet] The sheet's notes tie
+  both to the ReRAM tier between metal 1 and metal 2 described on the
+  {ref}`overview-sky130b-reram` page.[^steps-sheet] Neither is a step
+  in the step list used here or an entry in `masks.csv`, so neither
+  appears in the main table of this page.[^steps-sheet][^pdk-05]
+* **The "Masks" tab.** A further tab, "Masks", lists 37 rows of step
+  number, code and description: the 36 mask steps counted above and
+  step 82, `PSDI`, which it describes, like step 81 `PSDM`, as "P+
+  source drain implant mask".[^steps-sheet] The step list itself calls
+  step 82 "P+ source drain implant", and this reference treats it as
+  the implant through the `PSDM` resist
+  ({ref}`PSDI <step-082>`).[^steps-sheet]
+
+### Mask types and plate labels
+
+A tab headed "Sheet4" gives a mask type, as a coded string, for three
+masks only.[^steps-sheet] The via 2 (`VIM2`) and via 3 (`VIM3`) plates
+are recorded as 4× embedded
+{term}`attenuated phase-shift masks <attenuated PSM>` for 248 nm
+exposure, and the via 4 (`VIM4`) plate as a 4× binary mask for 248 nm
+exposure (our reading of the sheet's mask-type codes). The tab does not
+say to which runs these types apply, and it gives no type for any other
+mask.
+
+The tab "Random Mask Case Label Info" transcribes two plate-case labels
+from Photronics, one for a metal 2 plate and one for a metal 5
+plate.[^steps-sheet] Both give the blank as 6 × 6 × 0.25 in
+(152.4 mm × 152.4 mm × 6.35 mm) and carry "4X" in their type
+field.[^steps-sheet] The tab does not tie either label to one of the
+MPW runs.
+
 ## References
 
 ### Cross-check
@@ -270,6 +390,10 @@ reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
   rule sets.[^pdk-wlcsp]
 * SkyWater PDK, *Device Details* — the two MiM capacitor constructions,
   `CAPM` and `CAP2M`.[^pdk-07]
+* *S8 / SKY130 Process Steps* sheet, tabs "Run Mask IDs", "Masks",
+  "Sheet4" and "Random Mask Case Label Info" — the plates recorded for
+  each mask on MPW-1 to MPW-8, the mask-step list, the via mask types
+  and the plate-case labels.[^steps-sheet]
 
 ### High-level understanding
 
@@ -400,6 +524,13 @@ reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
     drawing.
     <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/cap_mim/cross-section-cap_mim.svg>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tabs "Run Mask IDs" (the mask table set against MPW-1 to MPW-8, with
+    an "Exists" column per run), "Masks" (mask steps with step numbers),
+    "Sheet4" (mask types), "Random Mask Case Label Info" (plate-case
+    labels) and "Sheet1" (step number, code and description), retrieved
+    2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^wiki-litho]: Wikipedia, *Photolithography*.
     <https://en.wikipedia.org/wiki/Photolithography>
 [^wiki-opc]: Wikipedia, *Optical proximity correction*.
