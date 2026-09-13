@@ -146,7 +146,7 @@ width because of the encroachment under the nitride edge.
 * **Optional HCl or trans-dichloroethylene (DCE)** for chlorine
   gettering; **NH₃ or NO** if a nitridation is used.[^txt-01]
 * **Dilute HF, SC-1, SC-2 chemicals** ({ref}`wet chemicals <material-wet-chemicals>`) for the pre-clean.[^wiki-rca]
-* Quartz consumables and monitor wafers.
+* {ref}`Quartz consumables <material-hardware-consumables>` and {ref}`monitor wafers <material-substrates>`.
 
 ## Related steps and cross-references
 

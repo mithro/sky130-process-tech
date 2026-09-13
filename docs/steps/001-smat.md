@@ -163,9 +163,9 @@ at `SMAT`; the association is our inference from the tool's function.
 
 ## Resources required
 
-* **Silicon wafers** — 200 mm, 725 µm, p-type CZ,
+* **{ref}`Silicon wafers <material-substrates>`** — 200 mm, 725 µm, p-type CZ,
   polished.[^skw-02][^wiki-wafer]
-* **Ultra-pure water** for rinsing.
+* **{ref}`Ultra-pure water <material-ultrapure-water>`** for rinsing.
 * **SC-1 chemicals** ({ref}`wet chemicals <material-wet-chemicals>`) — ammonium hydroxide, hydrogen peroxide.
 * **SC-2 chemicals** — hydrochloric acid, hydrogen peroxide.
 * **Dilute HF** for the optional native-oxide strip.[^wiki-rca]
