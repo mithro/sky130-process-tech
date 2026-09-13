@@ -1396,8 +1396,7 @@ high-level.
 Agilent Technologies, successor to the HP test-and-measurement business
 behind the 4062UX tester. Used on the test category page.
 Also used on the parametric tester and prober page.
-Tier:
-high-level.
+Tier: high-level.
 
 **WIKI-AMAT** — Wikipedia, *Applied Materials*.
 <https://en.wikipedia.org/wiki/Applied_Materials> Company article on
@@ -1795,8 +1794,7 @@ Tier: high-level.
 <https://en.wikipedia.org/wiki/Sheet_resistance> Sheet resistance and
 the ohms-per-square convention. Used on the test category page.
 Also used on the sheet-resistance and dose metrology page.
-Tier:
-high-level.
+Tier: high-level.
 
 **WIKI-RTP** — Wikipedia, *Rapid thermal processing*.
 <https://en.wikipedia.org/wiki/Rapid_thermal_processing> Lamp heating,
@@ -1893,8 +1891,7 @@ high-level.
 <https://en.wikipedia.org/wiki/Wafer_testing> Parametric versus
 functional test and the wafermap. Used on the test category page.
 Also used on the parametric tester and prober page.
-Tier:
-high-level.
+Tier: high-level.
 
 **WIKI-THINFILM** — Wikipedia, *Thin film*.
 <https://en.wikipedia.org/wiki/Thin_film> Thin films: deposition methods
@@ -4032,8 +4029,7 @@ SEMI.
 The standard ellipsometric test method for insulator thickness and
 refractive index on silicon. Used on the oxidation category page.
 Also used on the film thickness and stress metrology page.
-Tier:
-deep dive.
+Tier: deep dive.
 
 ##### University and course pages
 
@@ -5048,8 +5044,7 @@ Sensitivities", *IBM Journal of Research and Development* **27**(6),
 549–557 (1983). <https://doi.org/10.1147/rd.276.0549> Defect-sensitivity
 and critical-area yield modelling. Used on the test category page.
 Also used on the defect and particle inspection page.
-Tier:
-deep dive.
+Tier: deep dive.
 
 **VALDES-1954** — L. B. Valdes, "Resistivity Measurements on Germanium
 for Transistors", *Proceedings of the IRE* **42**(2), 420–427 (1954).
@@ -5108,8 +5103,7 @@ Semiconductors, *2001 Edition: Yield Enhancement*.
 The yield-learning loop. Used on the test category page.
 Also used on the defect and particle inspection and parametric tester and
 prober pages.
-Tier:
-cross-check.
+Tier: cross-check.
 
 **SEMI-MF84** — SEMI MF84, *Test Method for Measuring Resistivity of
 Silicon Wafers With an In-Line Four-Point Probe*, SEMI.
@@ -8391,8 +8385,7 @@ CMOS. Used on steps 161 and 162. Tier: deep dive.
 (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-TP41> Wire bonding used
 to reveal probe damage in aluminium bond pads. Used on step 161.
 Also used on the parametric tester and prober page.
-Tier:
-deep dive.
+Tier: deep dive.
 
 **JANSSEN-1998** — G. C. A. M. Janssen, J. F. Jongste, J. P. Lokker, A.
 H. Verbruggen and S. Radelaar, "Aluminium via-fill at elevated pressure
