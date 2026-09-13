@@ -137,7 +137,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   Strength: **strong** for the existence of the tools; the assignment of
   `LVTNM` to the i-line tools is an **inference** from the 0.380 µm
   design rules, not a SkyWater statement.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius**.[^skw-01] Strength:
+* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z**.[^skw-01] Strength:
   strong for existence; which track serves which exposure tool is not
   public.
 * **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]

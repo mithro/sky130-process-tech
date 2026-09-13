@@ -94,14 +94,14 @@ crust stage cannot be hurried.
 ## Machines typically used
 
 * **Downstream plasma asher** with a two-step, forming-gas-capable
-  recipe: Gasonics Aura/PEP, Mattson Aspen, Axcelis/Fusion ES, PSK
+  recipe: GaSonics Aura/PEP, Mattson Aspen, Axcelis/Fusion ES, PSK
   (category page).
 * **Batch wet bench** (SPM, SC-1, SC-2) or **spray processor**.
 * **Surface scanner / patterned inspection**.
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia RF microwave, Mattson Aspen 2**[^skw-01] — the
+* **GaSonics PEP, Iridia RF microwave, Mattson Aspen II**[^skw-01] — the
   Iridia's "H2/N2" and the Mattson's "H2>N2" options are the forming-gas
   chemistries used for implant crusts. Strength: **strong** for
   existence; assignment is an inference.

@@ -102,7 +102,7 @@ cleanliness.[^txt-02]
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm single-wafer: Gasonics
+* **Downstream plasma asher**, 200 mm single-wafer: GaSonics
   (Novellus) Aura/PEP, Mattson Aspen, Axcelis/Fusion ES series, PSK
   (category page).
 * **Batch wet bench** with SPM, SC-1, SC-2 tanks and a rinser/dryer
@@ -111,7 +111,7 @@ cleanliness.[^txt-02]
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia RF microwave and Mattson Aspen 2 ashers** — all
+* **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** — all
   named on SkyWater's facilities page with their gases and
   temperatures.[^skw-01] Strength: **strong** for existence; the
   assignment of this particular strip to any one of them is an
@@ -153,8 +153,8 @@ cleanliness.[^txt-02]
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Gasonic PEP; Iridia; Mattson
-  Aspen2; Akrion Gamma; DNS and FSI Mercury benches.[^skw-01]
+* SkyWater, *Facilities & Capabilities* — GaSonics PEP; Iridia; Mattson
+  Aspen II; Akrion Gamma; DNS and FSI Mercury benches.[^skw-01]
 * Indeed, SkyWater Technology Foundry listings — the defect-metrology
   tool list "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
