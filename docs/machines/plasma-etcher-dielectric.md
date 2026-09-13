@@ -245,13 +245,17 @@ describes the fab's gas delivery or abatement.
 These notes connect the machine class to the step pages; they add no
 SKY130 conditions of their own. SKY130's etch recipes are not public.
 
-* **Two kinds of step.** The class covers nitride etches that stop on
-  thin oxide ({ref}`STINITE <step-005>`, {ref}`SPE <step-077>`,
-  {ref}`NPCME <step-079>`, the nitride of {ref}`ONOME <step-042>`) and
-  oxide etches that stop on a conductor or on nitride
-  ({ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, the four via
-  etches, {ref}`NSME <step-166>`). The first rely on a CH₃F/O₂ over-etch or a
-  fluorine-lean O₂/N₂ downstream chemistry,[^regis-1997][^kastenmeier-1999] the second on the
+* **Two kinds of step.** The class covers nitride etches and oxide
+  etches. The nitride etches stop on thin oxide ({ref}`SPE <step-077>`,
+  the nitride of {ref}`ONOME <step-042>`), on polysilicon
+  ({ref}`NPCME <step-079>`, which clears the nitride–oxide cap from the
+  poly) or on silicon ({ref}`STINITE <step-005>`, which clears the
+  nitride and the pad oxide ahead of the trench etch); the oxide etches
+  stop on a conductor or on nitride ({ref}`LICM1E <step-094>`,
+  {ref}`CTME <step-108>`, the four via etches, {ref}`NSME <step-166>`).
+  The nitride etches rely on a CH₃F/O₂ over-etch or a fluorine-lean
+  O₂/N₂ downstream chemistry, which can be selective over both oxide
+  and silicon,[^regis-1997][^kastenmeier-1999] the oxide etches on the
   thicker fluorocarbon film that nitride and silicon carry.[^schaepkens-1999]
 * **Spacer etch without a mask.** The {ref}`SPE <step-077>` page's
   etch-back must clear nitride from flat areas while leaving the
