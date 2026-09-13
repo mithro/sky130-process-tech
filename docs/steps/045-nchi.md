@@ -143,9 +143,9 @@ fab (SKY130's values are not public):
 
 ## Resources required
 
-* **Boron trifluoride (BF₃)** source gas for B⁺ or BF₂⁺
+* **{ref}`Boron trifluoride <material-dopant-sources>` (BF₃)** source gas for B⁺ or BF₂⁺
   ({ref}`category-implant`).
-* **Source consumables**, **helium** platen cooling, **nitrogen**,
+* **Source consumables**, **{ref}`helium <material-process-gases>`** platen cooling, **nitrogen**,
   cryopump regeneration.
 * **{ref}`Monitor wafers <material-substrates>`**.
 * Gas suppliers named in SkyWater's filings: Air Products and Praxair

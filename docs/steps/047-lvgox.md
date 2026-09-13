@@ -175,7 +175,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 
 ## Resources required
 
-* **Oxygen**, **nitrogen/argon**; **N₂O, NO or NH₃** for nitridation
+* **{ref}`Oxygen <material-process-gases>`**, **nitrogen/argon**; **N₂O, NO or {ref}`NH₃ <material-precursors>`** for nitridation
   ({ref}`category-oxidation`); the Heatpulse 8808's listed gases are
   NH₃, Ar, N₂ and O₂.[^skw-01]
 * **HCl or DCE** as chlorine source for furnace oxidation

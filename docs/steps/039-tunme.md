@@ -168,7 +168,7 @@ fab (SKY130's recipe is not public):
 * **Sulphuric acid and hydrogen peroxide** (SPM), **ammonium
   hydroxide** (SC-1), **hydrochloric acid** (SC-2),[^wiki-rca]
   **ozone** if an ozonated-water clean is used.[^pat-03]
-* **Oxygen, nitrogen, {ref}`forming gas <material-anneal-ambients>`** for the ash.[^skw-01]
+* **{ref}`Oxygen <material-process-gases>`, nitrogen, {ref}`forming gas <material-anneal-ambients>`** for the ash.[^skw-01]
 * **{ref}`Ultrapure DI water <material-ultrapure-water>`**, **isopropanol** for drying, **nitrogen**.
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
   S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
