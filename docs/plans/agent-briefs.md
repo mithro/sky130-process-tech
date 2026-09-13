@@ -90,7 +90,8 @@ step provide:
 * **Open questions** — anything you could not confirm publicly.
 
 Run `uv run tools/check_steps.py`, `uv run tools/check_refs.py`,
-`uv run tools/check_machines.py` (machine-page headings and step lists) and
+`uv run tools/check_machines.py` (machine-page headings and step lists),
+`uv run tools/check_materials.py` (material-page headings, index rows covered and step lists) and
 `uv run sphinx-build -W -q -b html docs docs/_build/html` before
 finishing. Report the branch name, commits, and any claims you were
 unable to source.
