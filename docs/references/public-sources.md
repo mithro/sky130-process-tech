@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1144
+written page has exactly one entry here; the inventory holds 1149
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -8665,6 +8665,55 @@ dealer sheet for a 1995 E500 HP "Medium Current Implanter" used for
 box, a "Type II Bernas ion source w/ tungsten arc chamber", CTI
 cryopumps, Pfeiffer turbopumps and Edwards dry pumps. Used on the
 medium-current implanter page. Tier: high-level (dealer listing).
+
+#### High-current implanter (first cited there)
+
+**AMAT-QUANTUM-1999** — Applied Materials, *Applied Materials Announces
+New Quantum System for All High Current Sub-0.18 Micron Ion Implantation
+Applications*, press release (Business Wire), 1999-07-12.
+<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-quantum-system-all-high-current>
+The Quantum LEAP ("200eV to 80keV"), Quantum 80 ("2keV to 80keV") and
+Quantum 120 high-current implanters on a platform that "bridges 150mm,
+200mm or 300mm wafers"; "Nearly 100" xR80 and xR LEAP systems in use;
+the short beam path that "minimizes beam 'blow up' and energy
+contamination". Used on the high-current implanter page. Tier:
+cross-check (vendor statement).
+
+**PAT-DISK-NOVA** — G. Ryding (Nova Associates), *Treating workpieces
+with beams*, US 4,234,797 A, granted 1980-11-18.
+<https://patents.google.com/patent/US4234797A/en> The batch end station
+with "a constantly spinning disk the axis of which is translated", a
+detector behind the disc sampling the beam "through a moving slot" to
+control the translation speed for uniform dose, and an electron shower
+that "neutralizes charge on the workpieces". Used on the high-current
+implanter page. Tier: cross-check (patent).
+
+**PAT-DOSE-EATON** — H. Chen and F. Sinclair (Eaton Corporation), *Dose
+control for use in an ion implanter*, US 5,760,409 A, granted
+1998-06-02. <https://patents.google.com/patent/US5760409A/en> Dose
+control that corrects the Faraday reading for charge neutralisation and
+charge stripping as a function of beam-path pressure, up to MeV
+energies; records that "Such Faraday cages do not measure neutral atoms
+in the ion beam" and dose tolerances "at the 1% level". Used on the
+high-current and high-energy implanter pages. Tier: cross-check
+(patent).
+
+**KRAUPNER-2002** — J. Kraupner, A. Kyek, J. Vogl and S. Weiss, "Dose
+theory and pressure compensation on Axcelis GSD high current implanter",
+*Proc. 14th International Conference on Ion Implantation Technology*
+(2002), pp. 260–263. <https://doi.org/10.1109/IIT.2002.1257988>
+Dosimetry and pressure compensation on the GSD, where neutralisation by
+gas in the beam line or end station "may lead to wrong dose and bad
+uniformity". Used on the high-current implanter page. Tier: deep dive.
+
+**XU-1996** — J. Xu and H. S. Lee, "High current implanter dopant
+cross-contamination and its control", *Proc. 11th International
+Conference on Ion Implantation Technology* (1996), pp. 151–154.
+<https://doi.org/10.1109/IIT.1996.586161> Boron cross-contamination in
+high-dose arsenic implants on multi-species high-current implanters,
+with energetic boron tied to the post-analyser acceleration voltage and
+surface boron sputtered from the beam line. Used on the high-current
+implanter page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
