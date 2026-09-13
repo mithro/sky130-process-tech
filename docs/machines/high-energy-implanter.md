@@ -16,7 +16,7 @@ reference assigns to it. The physics of implantation is on the
 | | High-energy ion implanter |
 |---|---|
 | What it does | Implants B⁺, P⁺ and multiply charged ions deep below the surface for wells and buried layers; one of the four implanter types — high current, medium current, high energy and ultra-high dose — into which fabs divide implant work.[^tanjyo-2011] |
-| Energy | "above 200 keV and up to 10 MeV" in Wikipedia's classification;[^wiki-implant] an Eaton patent calls 1.5 MeV "typical for the deep implants" but requires implants "between 300 keV and 700 keV" too;[^pat-linac-axcelis] Axcelis's GSD/HE has a "10 stage LINAC with energies up to 3 MeV" and the GSD/VHE a "14 stage LINAC with energies up to 4.9 MeV".[^axcelis-gsd-page] |
+| Energy | "above 200 keV and up to 10 MeV" in Wikipedia's classification;[^wiki-implant] an Axcelis patent calls 1.5 MeV "typical for the deep implants" but says the implanter "still must be capable of performing implants at energies between 300 keV and 700 keV";[^pat-linac-axcelis] Axcelis's GSD/HE has a "10 stage LINAC with energies up to 3 MeV" and the GSD/VHE a "14 stage LINAC with energies up to 4.9 MeV".[^axcelis-gsd-page] |
 | Beam current | For wells, triple wells and buried layers "the typical beam current is less than a few hundred particle micro-amperes";[^oconnor-1996] the NV-GSD/VHE delivers "beam currents of B⁺ in excess of 1 pmA at energies approaching 1.7 MeV".[^wilson-1996] |
 | Dose | For the same applications "the typical dose … is less than 3E13/cm²";[^oconnor-1996] Nissin's example CMOS flow runs its high-energy well implants at 10¹³ cm⁻²;[^tanjyo-2011] buried p-type layers need "doses as high as 2×10¹⁵ at/cm²".[^namaroff-2000] |
 | Wafer handling | Batch: the NV-GSD-HE was "the integration of the GSD end station and the LINAC technology";[^axcelis-history] or single-wafer: Varian's VIISta 3000.[^tokoro-2000] |
@@ -245,8 +245,8 @@ not public.
   implanters", with "no significant difference" in transistors from the
   beam-angle variation of a batch end station.[^morris-2000]
 * **Multiply charged ions.** The {ref}`DNI <step-008>` page names
-  multiply charged phosphorus as a common way to reach MeV energies "at
-  the cost of beam current",[^spinelli-1985] and the
+  multiply charged phosphorus as a common way to reach MeV energies at
+  the cost of beam current, citing Spinelli et al.,[^spinelli-1985] and the
   {ref}`NWI <step-018>` page cites doubly charged P⁺⁺ for a retrograde
   well.[^pat-umc-dc] Energy contamination from such beams is a
   machine-side risk that final-energy analysis addresses.[^kubo-1996][^suetsugu-2000]

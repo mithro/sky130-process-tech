@@ -83,8 +83,8 @@ to 5% at 200 pμA.[^kubo-1996]
 
 "The beam can be scanned across the wafer magnetically,
 electrostatically, mechanically or with a combination of these
-techniques."[^wiki-implant] The 200 mm medium-current machines of the
-late 1990s used hybrid scanning. The Eaton 8250 sweeps the beam with an
+techniques."[^wiki-implant] Two late-1990s medium-current designs show
+the hybrid approach. The Eaton 8250 sweeps the beam with an
 electrostatic scanner and "a novel electrostatic scan angle correction
 lens to produce parallel beams", with "beam parallelism better than
 +/-0.2 degrees at the wafer", and moves the wafer mechanically in the
@@ -123,10 +123,14 @@ charge-up".[^tanjyo-2011] Implanters therefore supply electrons to the
 beam near the wafer; Current et al. model the charge-control systems in
 use, "dense and dilute plasma flows, electron showers".[^current-1996-iit]
 Nissin's 200 mm EXCEED2000AH uses "a filament-type plasma flood gun
-(PFG)", and notes that "the electron energy must be less than 3 eV" so
-as not to charge thin gate oxides negatively.[^tanjyo-2011] Eaton
-introduced a "back biased Secondary Electron Flood (SEF)" in 1996 for the
-same reason.[^axcelis-history]
+(PFG)" and its 300 mm EXCEED2300H an RF-type PFG; to keep the plasma
+electrons from charging the device negatively, "the electron energy must
+be less than 3 eV", corresponding to the breakdown voltage of gate oxides
+of 1 nm or less, and the RF type "can supply such low energy electrons
+by magnetic filtering".[^tanjyo-2011] Eaton, whose history calls charge
+control one of the bigger process challenges of the era because gate
+oxides were "very sensitive to charge breakdown", introduced a "back biased
+Secondary Electron Flood (SEF)" in 1996.[^axcelis-history]
 
 ### End station, tilt and twist
 
@@ -144,8 +148,9 @@ control at an accuracy of ±0.1 degrees".[^tanjyo-2011]
 ## Representative 200 mm-era models
 
 * **Eaton / Axcelis.** The NV-6200AV (1990), the 8200P ("featuring
-  innovative parallel scanning beam", 1996), the 8250 and the NV-8250HT
-  (2000), and the MC3 for 300 mm (1998).[^axcelis-history] Eaton
+  innovative parallel scanning beam", 1996), the 8250 (presented at IIT
+  1998[^harlan-1998]) and the NV-8250HT (2000), and the MC3 for 300 mm
+  (1998).[^axcelis-history] Eaton
   describes the 8250 as "a 200mm system that provides enhanced yield and
   serial processing advantages to users for high-tilt, medium-current
   implants and indium implants".[^axcelis-8250] Eaton spun the business
