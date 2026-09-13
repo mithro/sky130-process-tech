@@ -7,8 +7,7 @@ blocks, relaxed etch masks, capacitor plates, the thick upper metal and
 the pad opening. It images a reticle onto resist-coated wafers with the
 365 nm line of a mercury lamp, either a whole field at a time (a
 {term}`stepper`) or through a scanned slit (a step-and-scan system, or
-scanner). In a 200 mm, 130 nm-era fab it shares the line with KrF tools,
-which print the critical levels, and the two must overlay each other.
+scanner). In a 200 mm, 130 nm-era fab it shares the line with {ref}`KrF tools <machine-duv-krf-stepper>`, which print the critical levels, and the two must overlay each other.
 This page describes the class in general, lists representative
 200 mm-era models, and then says what SkyWater has published about its
 own tools of this class and which SKY130 steps this reference assigns to
@@ -316,6 +315,8 @@ resist thicknesses per layer are not public.
 
 * {ref}`category-lithography` — optics, resists, masks and overlay, and
   the 36 mask steps of SKY130.
+* {ref}`machine-duv-krf-stepper` — the exposure class for the critical
+  levels, and the other side of the mix-and-match.
 * {ref}`masks-index` — each mask's PDK entry, minimum CD, plates and the
   mask-type record for vias 2–4.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools

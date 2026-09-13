@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1293
+written page has exactly one entry here; the inventory holds 1306
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -10445,13 +10445,14 @@ cross-check (vendor statement).
 **NIKON-S202A-S102B** — Semiconductor Online, *Two Scanning Steppers*
 (Nikon Precision Europe announcement of the NSR-S202A and NSR-S102B),
 undated.
-<https://www.semiconductoronline.com/doc/two-scanning-steppers-0001>
-Two scanning steppers "designed for 256M DRAM mass production" with
-25 mm × 33 mm fields, synchronised reticle and wafer stages and designs
-that accommodate mix-and-match: the KrF NSR-S202A (80 wafers per hour on
+<https://www.semiconductoronline.com/doc/two-scanning-steppers-0001> Two
+scanning steppers "designed for 256M DRAM mass production" with 25 mm ×
+33 mm fields, synchronised reticle and wafer stages and designs that
+accommodate mix-and-match: the KrF NSR-S202A (80 wafers per hour on
 8-inch wafers) and the i-line NSR-S102B ("0.35 micron or better
 resolution") for "less critical layers". Used on the i-line stepper or
-scanner page. Tier: cross-check (vendor statement).
+scanner and DUV (KrF, 248 nm) stepper or scanner pages. Tier:
+cross-check (vendor statement).
 
 **NIKON-2205IL1** — Nikon, *NSR-2205iL1 5x Reduction i-line Stepper*,
 product page (announced 2023-08-31).
@@ -10478,7 +10479,8 @@ scanners (Nikon NSR-1505EX 1988, ASML PAS 5000/70 1991, SVGL Micrascan
 Canon FPA-4000ES1 1997), Cymer's market share and first solid-state KrF
 laser, Ushio as the leading mercury-lamp supplier and Cobilt as the
 origin of Tokyo Electron's tracks. Used on the i-line stepper or scanner
-page. Tier: high-level (industry chronology).
+and DUV (KrF, 248 nm) stepper or scanner pages. Tier: high-level
+(industry chronology).
 
 **BUCKLEY-1989** — J. D. Buckley, D. N. Galburt and C. Karatzas,
 "Step-and-scan lithography using reduction optics", *Journal of Vacuum
@@ -10486,7 +10488,8 @@ Science & Technology B* **7**(6), 1607–1612 (1989).
 <https://doi.org/10.1116/1.584499> A step-and-scan tool sequentially
 scanning 20 mm × 32.5 mm subfields through 4:1 ring-field optics, with
 reticle and wafer on separate synchronised stages. Used on the i-line
-stepper or scanner page. Tier: deep dive.
+stepper or scanner and DUV (KrF, 248 nm) stepper or scanner pages. Tier:
+deep dive.
 
 **BUCKLEY-KARATZAS-1989** — J. D. Buckley and C. Karatzas, "Step and
 scan: a systems overview of a new lithography tool", *Proc. SPIE*
@@ -10561,6 +10564,114 @@ Used on the i-line stepper or scanner page. Tier: deep dive.
 1990, pp. 817–820. <https://doi.org/10.1109/IEDM.1990.237037> Phase-shift
 lithography making 0.3 µm patterns with i-line exposure. Used on the
 i-line stepper or scanner page. Tier: deep dive.
+
+**ASML-PAS5500-350C** — ASML, *PAS 5500/350C* (Deep UV stepper),
+refurbished systems data sheet, 2019.
+<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-350c.pdf>
+A KrF stepper "for 0.15-µm applications and beyond": NA 0.40–0.63, 4×,
+22.0 mm × 22.0 mm field, single-machine overlay ≤ 28 nm and matched ≤ 60
+nm, 88 wafers per hour on 200 mm at 30 mJ/cm², a 10 W, 1 kHz Cymer 5610
+laser with 20 m remote beam delivery, and mix-and-match with PAS 5500
+i-line and DUV steppers. Used on the DUV (KrF, 248 nm) stepper or scanner
+page. Tier: cross-check (vendor statement).
+
+**ASML-PAS5500-750F** — ASML, *PAS 5500/750F DUV Step and Scan*,
+refurbished systems data sheet, 2019.
+<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-750f.pdf>
+A KrF scanner that "enables 130-nm mass production using mature 248-nm
+KrF technology": NA 0.5–0.7, 26.0 mm × 33.0 mm field, CD uniformity
+through focus, single-machine overlay ≤ 25 nm and matched ≤ 40 nm,
+≥ 130 wafers per hour at 50 mJ/cm², a 20 W laser variable to 2 kHz,
+TTL and ATHENA alignment, an 8-spot level sensor and commonality with
+the i-line and 193 nm scanners. Used on the DUV (KrF, 248 nm) stepper or
+scanner page. Tier: cross-check (vendor statement).
+
+**ASML-PAS5500-850C** — ASML, *PAS 5500/850C DUV Step-and-Scan*,
+refurbished systems data sheet, 2019.
+<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-850c.pdf>
+A 248 nm scanner that "enables 110-nm mass production": NA 0.55–0.80,
+26.0 mm × 33.0 mm field, single-machine overlay ≤ 15 nm and matched
+≤ 25 nm, ≥ 135 wafers per hour, a 20 W Cymer ELS6610 laser with variable
+laser frequency control. Used on the DUV (KrF, 248 nm) stepper or scanner
+page. Tier: cross-check (vendor statement).
+
+**CANON-FPA3030EX6** — Canon Inc., *FPA-3030EX6: KrF Stepper for IoT
+devices*, product page.
+<https://global.canon/en/product/indtech/semicon/fpa3030ex6.html> A
+current KrF stepper for 100–200 mm wafers inheriting the FPA-3000EX6:
+resolution ≤ 150 nm, NA 0.50–0.65, 1:5, 22 mm × 22 mm field, overlay
+≤ 25 nm, 121 wafers per hour on 200 mm. Used on the DUV (KrF, 248 nm)
+stepper or scanner page. Tier: cross-check (vendor statement).
+
+**JAIN-1982** — K. Jain, C. G. Willson and B. J. Lin, "Ultrafast deep UV
+lithography with excimer lasers", *IEEE Electron Device Letters* **3**(3),
+53–55 (1982). <https://doi.org/10.1109/EDL.1982.25476> The first use of
+pulsed excimer lasers (XeCl at 308 nm, KrF at 248 nm) for photolithography,
+about two orders of magnitude faster than lamp exposure. Used on the DUV
+(KrF, 248 nm) stepper or scanner page. Tier: deep dive.
+
+**POL-1986** — V. Pol et al., "Excimer laser-based lithography: a deep
+ultraviolet wafer stepper", *Proc. SPIE* **0633**, 6 (1986).
+<https://doi.org/10.1117/12.963697> A commercial step-and-repeat tool
+modified for 248 nm with an all-quartz 5× lens of NA 0.20–0.38 and a KrF
+laser, giving 0.5 µm practical resolution. Used on the DUV (KrF, 248 nm)
+stepper or scanner page. Tier: deep dive.
+
+**TANIMOTO-1989** — A. Tanimoto, A. Miyaji, Y. Ichihara, T. Uemura and I.
+Tanaka, "Excimer laser stepper for sub-half micron lithography", *Proc.
+SPIE* **1088**, 434 (1989). <https://doi.org/10.1117/12.953172> A
+flat-field excimer laser stepper with a narrow-band KrF laser, dose
+control, off-axis He–Ne alignment and enhanced global alignment reaching
+overlay better than 0.18 µm. Used on the DUV (KrF, 248 nm) stepper or
+scanner page. Tier: deep dive.
+
+**WITTEKOEK-1990** — S. Wittekoek, M. A. van den Brink, H. F. Linders, J.
+M. D. Stoeldraijer, J. W. Martens and D. R. Ritchie, "Deep-UV wafer
+stepper with through-the-lens wafer to reticle alignment", *Proc. SPIE*
+**1264**, 534 (1990). <https://doi.org/10.1117/12.20207> A 248 nm stepper
+with an all-quartz 5× lens of NA 0.42 and 21.2 mm field, 633 nm
+through-the-lens alignment with correction optics, and laser wavelength
+calibration. Used on the DUV (KrF, 248 nm) stepper or scanner page. Tier:
+deep dive.
+
+**DE-ZWART-1997** — G. de Zwart et al., "Performance of a step-and-scan
+system for DUV lithography", *Proc. SPIE* **3051**, 817 (1997).
+<https://doi.org/10.1117/12.276002> A 248 nm step-and-scan system exposing
+26 mm × 33 mm fields with a variable 0.40–0.63 NA lens, with results on
+dynamic distortion, focus, imaging, overlay and dose accuracy for sub
+0.25 µm manufacturing. Used on the DUV (KrF, 248 nm) stepper or scanner
+page. Tier: deep dive.
+
+**DAS-2002** — P. Das and R. L. Sandstrom, "Advances in excimer laser
+technology for sub-0.25-μm lithography", *Proceedings of the IEEE*
+**90**(10), 1637–1652 (2002). <https://doi.org/10.1109/JPROC.2002.803665>
+A review of excimer lasers as lithography sources at 248, 193 and 157 nm:
+specifications, narrow spectral width, coherence and the advances made to
+meet them. Used on the DUV (KrF, 248 nm) stepper or scanner page. Tier:
+deep dive.
+
+**LALOVIC-2001** — I. Lalovic, A. Kroyan, N. R. Farrar, D. Taitano, P.
+Zambon and A. H. Smith, "Investigation of cross-field wavefront
+aberrations of KrF lithography exposure systems as a function of excimer
+laser bandwidth", *Proc. SPIE* **4346**, 1262 (2001).
+<https://doi.org/10.1117/12.435655> Measured wavefront error against laser
+bandwidth on a 0.6 NA KrF stepper and scanner. Used on the DUV (KrF,
+248 nm) stepper or scanner page. Tier: deep dive.
+
+**LAIDLER-2002** — D. W. Laidler, H. J. L. Megens, S. Lalbahadoersing,
+R. J. F. van Haren and F. Bornebroek, "Advances in process overlay: ATHENA
+alignment system performance on critical process layers", *Proc. SPIE*
+**4689**, 397 (2002). <https://doi.org/10.1117/12.473478> ATHENA alignment
+strategies and mark designs evaluated on shallow trench isolation,
+tungsten CMP and copper dual-damascene levels. Used on the DUV (KrF,
+248 nm) stepper or scanner page. Tier: deep dive.
+
+**MACDONALD-1991** — S. A. MacDonald et al., "Airborne chemical
+contamination of a chemically amplified resist", *Proc. SPIE* **1466**,
+2–12 (1991). <https://doi.org/10.1117/12.46354> Degradation of a
+t-BOC/onium salt resist by parts-per-billion airborne organic bases, and
+its cure by carbon-filtered air. Used on the DUV (KrF, 248 nm) stepper or
+scanner page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
