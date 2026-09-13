@@ -13,8 +13,8 @@
 ## What this step is
 
 `ALLY` is the last thermal step of the flow: after the pads have been
-opened ({ref}`PDME <step-169>`), the finished wafers are annealed at low
-temperature in a hydrogen-bearing ambient and then sent to electrical
+opened ({ref}`PDME <step-169>`), the finished wafers are, on our reading, annealed at low temperature in a
+hydrogen-bearing ambient and then sent to electrical
 test ({ref}`HPETEST <step-171>`). In the industry's vocabulary an
 {term}`alloy anneal` (or "sinter") is a furnace anneal in
 {term}`forming gas` at typically 350–450 °C[^txt-02] whose purposes are
@@ -28,9 +28,8 @@ step list used in this reference does not give conditions; we read
 `ALLY` as the conventional final forming-gas anneal (inference:
 textbooks describe a final forming-gas anneal at the end of the process
 as standard practice,[^txt-01][^txt-02] and SkyWater lists a furnace
-alloy process[^skw-01]), and the
-earlier {ref}`ALLY1 <step-096>` as a second, pre-metal use of the same
-kind of anneal.
+alloy process[^skw-01]). The earlier
+{ref}`ALLY1 <step-096>` is discussed on its own page.
 
 What is unusual about this wafer compared with the one at
 {ref}`ALLY1 <step-096>` is how much now lies between the ambient and
@@ -178,7 +177,7 @@ an aluminium back end (SKY130's recipe is not public):
 
 * Previous: {ref}`PDME <step-169>` (the last plasma step, which opens the
   pads). Next: {ref}`HPETEST <step-171>` (electrical test).
-* The first alloy anneal: {ref}`ALLY1 <step-096>`.
+* An earlier anneal: {ref}`ALLY1 <step-096>`.
 * The hydrogen-rich passivation nitride over the wafer:
   {ref}`NTSD <step-167>`; the oxide beneath it: {ref}`NFUSOX <step-164>`.
 * The memory cells whose nitride hydrogen can affect:
