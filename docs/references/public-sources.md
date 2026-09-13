@@ -8733,7 +8733,11 @@ SKY130 or the Bloomington fab; they describe equipment classes and
 models in general. Every URL was fetched on 2026-09-13, and the IEEE and
 AIP papers were checked through Crossref (bibliographic data) and
 OpenAlex (abstracts) on that date; the annotations of papers rest on
-their abstracts. An entry's tier records its first use; a page that
+their abstracts. The papers of the thermal-processing pages (ECS, JJAP,
+SPIE and others as well) were checked the same way, and their patents
+through Google Patents (bibliographic data, abstract and the passages
+quoted); pages that no longer serve their content were read from the
+Wayback Machine capture named in the entry. An entry's tier records its first use; a page that
 cites the source later may list it under a different reading tier.
 
 #### Medium-current implanter (first cited there)
@@ -9026,20 +9030,7 @@ resonator modules for high-energy implanters; its background calls
 and names the "Eaton GSD/HE and GSD/VHE ion implanters". Used on the
 high-energy implanter page. Tier: cross-check (patent).
 
-#### Thermal-processing machine pages
-
-Sources introduced for the five thermal-processing machine pages
-(vertical batch furnace for oxidation, for LPCVD and for anneal and
-alloy; rapid thermal processor; plasma nitridation chamber), grouped by
-the page that first cited them. Every URL was fetched on 2026-09-13 with
-the documentation checker's user agent; pages that no longer serve their
-content were read from the Wayback Machine capture named in the entry.
-Papers were checked through Crossref (bibliographic data) and OpenAlex
-(abstracts), and patents through Google Patents (bibliographic data,
-abstract and the passages quoted), on the same date; the annotations of
-papers rest on their abstracts.
-
-##### Vertical batch furnace: oxidation (first cited there)
+#### Vertical batch furnace: oxidation (first cited there)
 
 **EXPERTECH-VTR** — Expertech, *VTR7000PLUS Thermal Reactor | Vertical
 Diffusion Furnaces*, product page, accessed 2026-09-13.
@@ -9176,7 +9167,7 @@ Aviza's news index, which only listed the headline. Used on the
 vertical-furnace oxidation and anneal pages. Tier: cross-check (vendor
 statement).
 
-##### Vertical batch furnace: LPCVD (first cited there)
+#### Vertical batch furnace: LPCVD (first cited there)
 
 **PAT-NH4CL-TSMC** — L. Lin, T. Fan, S. Chen, V. Lee and Y.-H. Wu (Taiwan
 Semiconductor Manufacturing Company), *Cold trap for CVD furnace*, US
@@ -9234,7 +9225,7 @@ against dichlorosilane–ammonia nitride "above 630 degrees C" and BTBAS
 "at 570 degrees C or above". Used on the vertical-furnace LPCVD page.
 Tier: cross-check (vendor statement).
 
-##### Rapid thermal processor (first cited there)
+#### Rapid thermal processor (first cited there)
 
 **MATTSON-METRON-2002** — Mattson Technology, Inc. and Metron Technology
 N.V., *Mattson Technology Inc. and Metron Technology N.V. Announce the
@@ -9281,7 +9272,7 @@ wafers processed above 1050°C" and slip-free results after optimising
 wafer handling. Used on the rapid thermal processor page. Tier: deep
 dive.
 
-##### Plasma nitridation chamber (first cited there)
+#### Plasma nitridation chamber (first cited there)
 
 **AMAT-DPN-2001** — Light Reading, *Applied Materials Nitridates*
 (reproducing Applied Materials' announcement of its DPN chamber),
