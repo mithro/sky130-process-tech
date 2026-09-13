@@ -41,9 +41,9 @@ to form a gate stack 236 overlying the channel 224 of the NVM
 transistor and to remove the sacrificial oxide, cap layer, and the
 charge trapping layers 230 from the second region 208".[^pat-04]
 
-The step list used in this reference has no strip step between
-`ONOME` and {ref}`GOX100 <step-043>`, so the resist strip and the
-pre-gate-oxide clean are, we infer, part of this step or of the next.
+This reference treats the resist strip and the pre-gate-oxide clean
+as part of this step; they could equally belong to the next,
+{ref}`GOX100 <step-043>`.
 
 ## Step category
 
@@ -117,9 +117,9 @@ memory (SKY130's recipe is not public):
    is removed in {term}`BOE` or dilute HF — "an etchant, such as BOE, is
    employed to clear sacrificial dielectric layer 303"[^pat-03] —
    exposing the logic silicon for gate oxidation. Whether this happens
-   here or as the {ref}`GOX100 <step-043>` pre-clean is not resolvable
-   from the step list used in this reference; the Cypress flows differ
-   on it (see {ref}`GOX100 <step-043>`). One Cypress patent warns that
+   here or as the {ref}`GOX100 <step-043>` pre-clean is not stated
+   publicly; the Cypress flows differ on it (see
+   {ref}`GOX100 <step-043>`). One Cypress patent warns that
    once the stack is exposed, "Conventional HF-based gate insulator
    pre-cleans will etch or otherwise degrade the quality of the ONO
    charge trapping dielectric stack 306, particularly when the stack
@@ -243,12 +243,11 @@ memory (SKY130's recipe is not public):
 * Whether the nitride is removed dry (as the Cypress patents describe)
   or wet, and on which tool, is inferred.
 * Whether the bottom oxide is cleared here or at the
-  {ref}`GOX100 <step-043>` pre-clean is not resolvable from the step
-  list used in this reference.
+  {ref}`GOX100 <step-043>` pre-clean is not stated publicly.
 * Whether an ARC is used on the ONO mask and opened in this etch is
   not public.
-* Where the resist is stripped is inferred from the absence of a
-  separate strip step.
+* Where the resist is stripped is not stated publicly; this page
+  treats the strip as part of this etch.
 * Endpoint method, over-etch and the resulting pad-oxide loss are not
   public.
 

@@ -36,9 +36,9 @@ substrate 302", a pre-clean is done "while the photoresist layer 318
 protects the ONO charge trapping dielectric stack 306", and "the
 photoresist layer 318 is stripped … for example with conventional
 piranha clean and/or plasma ash operations, subsequent to the
-selective removal of the gate insulator layer(s)".[^pat-03] The step
-list used in this reference has no strip step between `GOXETCH` and
-`LVGOX`, so we take the strip and clean to belong to this step.
+selective removal of the gate insulator layer(s)".[^pat-03] Following
+that sequence, this reference treats the strip and clean as part of
+this step.
 
 ## Step category
 
@@ -227,8 +227,8 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   thick/thin boundary are not public.
 * Whether the pre-gate clean ends HF-last or with a chemical oxide is
   not public; SkyWater's DNS bench offers "dilute HF-last".[^skw-01]
-* Where the resist is stripped is inferred from the absence of a
-  separate strip step.
+* Where the resist is stripped is not stated publicly; this page
+  treats the strip as part of this step.
 * How the ONO blocking oxide is protected during this etch and clean
   (resist coverage, sacrificial cap, or oxide-safe chemistry) is not
   public; both Cypress approaches are described above.

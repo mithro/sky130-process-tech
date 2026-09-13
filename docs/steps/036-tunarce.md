@@ -32,21 +32,20 @@ plasma, we infer, that {term}`ashes <ash>` the organic ARC in the open windows (
 resist is attacked at a similar rate but is many times thicker), with
 the etch run to an optical-emission {term}`endpoint` plus a timed {term}`over-etch`, and
 stopping on the oxide beneath — 10–20 nm of pad oxide in the Cypress
-patent.[^pat-04] The step list used in this reference names the film
-only as "ARC"; whether it is an organic BARC or an inorganic dielectric
-ARC is discussed under *Open questions*.
+patent.[^pat-04] This reference describes the film only as an ARC;
+whether it is an organic BARC or an inorganic dielectric ARC is
+discussed under *Open questions*.
 
 ## Step category
 
 `TUNARCE` is an {ref}`Etch <category-etch>` step of the *ARC open*
 type — the category page notes that organic BARC "opens in O₂/N₂ or
 HBr/O₂" while an inorganic silicon {term}`oxynitride` ARC is opened "in
-CF₄-based plasmas". It is the only ARC etch in the step list used in
-this reference, which makes it a marker: of the roughly thirty mask
-layers in SKY130, the tunnel mask is the one whose flow explicitly
-shows an ARC being opened as a separate operation. On the critical
-layers ({ref}`FOM <step-004>`, {ref}`P1M <step-061>`) the ARC open is
-presumably folded into the main etch recipe on the same tool.
+CF₄-based plasmas". It is the only ARC etch this reference describes
+as a separate step. On the critical layers ({ref}`FOM <step-004>`,
+{ref}`P1M <step-061>`) this reference treats any ARC open as part of
+the main etch recipe on the same tool (inference from industry
+practice).
 
 ## Why this step exists
 
@@ -225,10 +224,10 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 * Whether the tunnel-mask ARC is an organic BARC or an inorganic
   dielectric ARC is not public; the O₂/HBr reading is an inference from
   the tool gas sets and from industry practice on i-line layers.
-* Why this particular relaxed layer carries an ARC when no other
-  implant mask in the step list used in this reference has an ARC
-  etch is an open question; the reflectivity contrast of the
-  pad-oxide/trench-oxide substrate is our best reading.
+* Why a relaxed implant layer would carry an ARC, when this reference
+  describes no ARC etch at the other implant masks, is an open
+  question; the reflectivity contrast of the pad-oxide/trench-oxide
+  substrate is our best reading.
 * Which etcher runs the step, and whether the open is directional or a
   timed ash, is inferred, not stated.
 * ARC thickness, etch time and over-etch are not public.

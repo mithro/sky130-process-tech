@@ -117,8 +117,8 @@ An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
    {ref}`GOXETCH <step-046>`.
 2. **Resist coat.** About 1 µm of positive i-line resist (PDK generic
    value 1.14 µm[^pdk-03]) — thick enough to stop the channel implant
-   and to survive a wet etch. No {term}`ARC` is indicated by the step list
-   used in this reference.
+   and to survive a wet etch. No {term}`ARC` is assumed on this relaxed
+   i-line layer (inference).
 3. **Exposure** through the LVOM reticle on an i-line {term}`stepper` (our
    inference from the 0.6 µm rule; the 2001 ITRS reserves 248 nm for
    the critical layers[^itrs-03]), aligned to the {term}`STI` pattern; the
@@ -132,8 +132,8 @@ An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
    residue in the LV windows.
 
 The resist then masks {ref}`NCHI <step-045>` and
-{ref}`GOXETCH <step-046>` and is stripped after the etch (no separate
-strip step is listed; see {ref}`GOXETCH <step-046>`).
+{ref}`GOXETCH <step-046>` and is stripped after the etch (this
+reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 
 ## Machines typically used
 

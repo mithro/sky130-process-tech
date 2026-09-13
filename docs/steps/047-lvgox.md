@@ -13,7 +13,7 @@
 ## What this step is
 
 `LVGOX` grows the thin gate oxide of the 1.8 V transistors — the
-*low-voltage gate oxide* of the step code — on the silicon that
+*low-voltage gate oxide* — on the silicon that
 {ref}`GOXETCH <step-046>` cleared. It is the last step before the gate
 electrode is deposited at {ref}`SAGD <step-048>`, and the film it grows
 is the one every `nfet_01v8` and `pfet_01v8` switches through. At the

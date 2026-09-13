@@ -105,9 +105,9 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
 2. **Anti-reflective layer.** Optional. The Cypress integration patent
    uses "an inorganic spin-on anti-reflective coating (ARC)" on top of
    the stack, etched together with it;[^pat-03] on a relaxed i-line
-   layer many fabs would omit an {term}`ARC`. The step list used in this
-   reference has no ARC etch after `ONOM`, so if one is used its open
-   is part of {ref}`ONOME <step-042>`.
+   layer many fabs would omit an {term}`ARC`. If one is used, this
+   reference treats its open as part of {ref}`ONOME <step-042>`, as in
+   the Cypress flow where the ARC is etched with the stack.[^pat-03]
 3. **Resist coat, soft bake.** A positive i-line resist of about 1 µm
    (the PDK's generic 1.14 µm[^pdk-03]); etch {term}`selectivity`, not implant
    stopping, sets the thickness here.
@@ -126,7 +126,8 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
    would leave nitride stringers after the etch.
 
 The resist is consumed as the etch mask at {ref}`ONOME <step-042>`
-and stripped there (no separate strip step is listed).
+and stripped there (this reference treats the strip as part of that
+etch).
 
 ## Machines typically used
 
@@ -224,8 +225,8 @@ and stripped there (no separate strip step is listed).
 * Whether the ONO layer is printed on the i-line or {term}`DUV` tools is an
   inference from feature size.
 * Whether an ARC is used under the ONO-mask resist, and if so which
-  kind, is an open question; this page follows the step list used in
-  this reference, which has no separate ARC etch here.
+  kind, is an open question; this page describes no separate ARC etch
+  here.
 * Reticle tone and the resist thickness for this layer are not public.
 
 <!-- footnotes -->
