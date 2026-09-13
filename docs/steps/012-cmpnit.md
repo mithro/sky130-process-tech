@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 12 of 171 |
+| **Step number** | 12 of 171[^steps-sheet] |
 | **Step code** | `CMPNIT` |
 | **Category** | {ref}`Chemical-mechanical planarisation <category-cmp>` |
 | **Phase** | FEOL — isolation |
@@ -335,3 +335,6 @@ polisher, which is what this step needs.
     Post-CMP Cleaning", in *Developments in Surface Contamination and
     Cleaning, Volume 9*, Elsevier, 2017, pp. 109–133.
     <https://doi.org/10.1016/B978-0-323-43157-6.00004-5>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

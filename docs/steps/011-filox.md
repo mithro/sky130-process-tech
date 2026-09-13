@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 11 of 171 |
+| **Step number** | 11 of 171[^steps-sheet] |
 | **Step code** | `FILOX` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | FEOL — isolation |
@@ -323,3 +323,6 @@ profile refers to "the Novellus high density plasma tool".[^skw-07]
 [^seshan-2012]: K. Seshan (ed.), *Handbook of Thin Film Deposition*,
     3rd ed., William Andrew, 2012, ISBN 978-1-4377-7873-1.
     <https://openlibrary.org/isbn/9781437778731>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

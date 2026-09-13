@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 1 of 171 |
+| **Step number** | 1 of 171[^steps-sheet] |
 | **Step code** | `SMAT` |
 | **Category** | {ref}`Substrate / starting material <category-substrate>` |
 | **Phase** | FEOL — isolation |
@@ -349,3 +349,6 @@ product to a step.
 [^kern-1990]: W. Kern, "The Evolution of Silicon Wafer Cleaning
     Technology", *Journal of The Electrochemical Society* **137**(6),
     1887–1892 (1990). <https://doi.org/10.1149/1.2086825>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 6 of 171 |
+| **Step number** | 6 of 171[^steps-sheet] |
 | **Step code** | `STIE` |
 | **Category** | {ref}`Etch <category-etch>` |
 | **Phase** | FEOL — isolation |
@@ -345,3 +345,6 @@ W/WN".[^skw-01]
 [^hon-2003]: B. M. Hon, *Characterization of shallow trench isolation
     etch line edge roughness*, master's thesis, San José State
     University, 2003. <https://doi.org/10.31979/etd.53yx-bwm5>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
