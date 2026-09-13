@@ -86,8 +86,15 @@ does not settle it.
 
 The layer table also has `areaid.op` (81:54), "OPC drop. Block automatic
 OPC (for fab blocks and lithocal structures)",[^pdk-06] which implies
-that automatic {term}`OPC` is applied to some mask data, without saying
-to which masks ({ref}`masks-index`). *Criteria & Assumptions* sets a
+that automatic {term}`OPC` is applied to some mask data, and rule x.1a
+names P1M among the layers it applies to. Rule x.1a reads "p1m.md (OPC),
+DECA and AMKOR layers (pi1.dg, pmm.dg, rdl.dg, pi2.dg, ubm.dg, bump.dg)
+and mask data for p1m, met1, via, met2 must be on a grid of mm", with the
+value 0.001 (unit printed as "mm"), against 0.005 for "all layers except
+those mentioned in 1a" (x.1b).[^pdk-periph] We read "(OPC)" and the
+finer grid as a sign that the poly mask data are proximity-corrected
+(inference); the PDK does not expand "md" or say what the correction
+is. *Criteria & Assumptions* sets a
 "Min process bias 3s tolerance for poly" of 0.02 (`PHP1TOL`), against a
 general "Min process bias 3s tolerance" of 0.032 (`PHTOL`),[^pdk-03] so
 the PDK assumes tighter bias control for poly than for other layers; it
@@ -244,7 +251,8 @@ poly, not this resist, and are not listed.
 
 ## Design rules and critical dimensions
 
-The `poly` rules of the periphery rules; flag P means "Rule applies to
+The `poly` rules of the periphery rules, with the grid rules x.1a and
+x.1b and the poly row of x.2; flag P means "Rule applies to
 periphery only (outside areaid.ce). A corresponding core rule may or may
 not exist.", and the unit column of poly.7 and poly.8 is blank in the
 published table.[^pdk-periph]
@@ -263,6 +271,8 @@ published table.[^pdk-periph]
 | poly.9 | "Poly resistor spacing to poly or spacing (no overlap) to diff/tap" | 0.480 µm |
 | poly.10 | "Poly can’t overlap inner corners of diff" | — |
 | poly.11 | "No 90 deg turns of poly on diff" | — |
+| x.1a | "p1m.md (OPC), DECA and AMKOR layers (pi1.dg, pmm.dg, rdl.dg, pi2.dg, ubm.dg, bump.dg) and mask data for p1m, met1, via, met2 must be on a grid of mm" | 0.001 (unit "mm") |
+| x.1b | "Data for SKY130 layout and mask on all layers except those mentioned in 1a must be on a grid of mm (except inside Seal ring)" | 0.005 (unit "mm") |
 | x.2 | Angles on poly "n x 90" deg, "except for ESD flare gates or gated_npn" | — |
 
 Table 2 of *Criteria & Assumptions* gives two "Poly 1" rows: an
@@ -302,8 +312,8 @@ feature the plate must resolve is therefore the 0.150 µm gate line on a
   column of Table F2b.[^pdk-06]
 * SkyWater PDK, *Criteria & Assumptions* — `P1G`, `P1MCD`/`P1MCDSP`,
   `PHP1TOL`, `POLYTH` and the poly resistor CD criteria.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `poly` rules, x.2, x.9, x.15a
-  and the flag legend.[^pdk-periph]
+* SkyWater PDK, *Periphery rules* — the `poly` rules, x.1a, x.1b, x.2,
+  x.9, x.15a and the flag legend.[^pdk-periph]
 * *S8 / SKY130 Process Steps* sheet — the step, the `P1M` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
 * *SKY130 Open MPW mask-layer renders* — the `P1M` renders and their
@@ -357,8 +367,9 @@ feature the plate must resolve is therefore the 0.150 µm gate line on a
 ## Open questions
 
 * The operation that makes the `cp1m` plate data from `poly` and the
-  `cp1m` add, drop and waffle-drop purposes is not published, nor
-  whether OPC or a bias is applied to this mask.[^pdk-06]
+  `cp1m` add, drop and waffle-drop purposes is not published.[^pdk-06]
+  Rule x.1a ties P1M to OPC, but the PDK does not describe the
+  correction or any bias applied to this mask.[^pdk-periph]
 * The plate's type (binary or attenuated phase-shift), tone and CD
   specification, the resist and the exposure tool are not public; the
   KrF reading rests on the 0.150 µm rule.
