@@ -505,7 +505,8 @@ the trench floor). Reading it from the bottom up, with the step pages:
 * **Passivation.** A thin "TOPOX K=3.9" oxide and a thicker "TOPNIT
   K=7.5" nitride cover metal 5, with a "glass cut" over the pad, and a
   polyimide "PI1 K=2.94" is drawn on top.[^pdk-04] The step list has no
-  polyimide step.
+  polyimide step, although SkyWater's S130 table gives polyimide
+  "Yes".[^skw-02]
 
 The table lists the levels bottom to top with the thicknesses and
 heights the step pages quote. Dielectric heights are the diagram's
@@ -748,7 +749,7 @@ public.
   `PBO`, `CU1M`, `PMM2`) have no step, leaves `PWBM`, `PWDEM` and `CAPM`
   unmarked, and does not list `RRPM`, `URPM` or `CAP2M`
   ({ref}`masks-index`);[^pdk-05] SkyWater's S130 table gives "30 – 34"
-  mask steps and lists no inductor, where the PDK README says the
+  mask steps and gives inductor "No", where the PDK README says the
   process "Is inductor-capable".[^skw-02][^pdk-10] Which optional masks
   — MiM capacitors, drain-extended wells, ultra-high-value resistors —
   are run on a given lot is not public.
