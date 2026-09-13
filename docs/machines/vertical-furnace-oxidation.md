@@ -13,7 +13,7 @@ steps this reference assigns to the class. The oxidation physics
 (Deal–Grove kinetics, the thin-oxide regime, oxide charges) is on the
 {ref}`category page <category-oxidation>`; the same furnace platform
 used for deposition and for anneals has pages of its own
-(Vertical batch furnace: LPCVD,
+({ref}`machine-vertical-furnace-lpcvd`,
 Vertical batch furnace: anneal and alloy).
 
 | | Vertical batch furnace: oxidation |
@@ -170,7 +170,7 @@ and the interface is finished much later by the hydrogen alloy
 * **Kokusai Electric.** A vertical furnace maker whose patents of the
   period cover load-lock oxygen control[^pat-loadlock-kokusai] and the
   tube and boat hardware described on the
-  LPCVD page.
+  {ref}`LPCVD page <machine-vertical-furnace-lpcvd>`.
 
 The {ref}`category page <category-oxidation>` lists the same vendors
 and the rapid thermal oxidation tools that compete with them.
@@ -307,7 +307,7 @@ and thicknesses are not public.
   the tunneling layer … without removing the substrate between
   operations",[^pat-03] and SkyWater lists "LPCVD oxide/nitride/oxide"
   among its furnace processes.[^skw-01] The page therefore spans this
-  class and the LPCVD class.
+  class and the {ref}`LPCVD class <machine-vertical-furnace-lpcvd>`.
 * **Furnace or rapid thermal oxidation.** Five of the six pages offer a
   single-wafer rapid thermal oxidation as the alternative and grade the
   SkyWater Heatpulse for it as weak.[^skw-01] In-situ steam generation,
@@ -331,7 +331,7 @@ and thicknesses are not public.
 
 * {ref}`category-oxidation` — oxidation kinetics, oxide quality and the
   six oxidation steps of SKY130.
-* Vertical batch furnace: LPCVD and
+* {ref}`machine-vertical-furnace-lpcvd` and
   Vertical batch furnace: anneal and alloy — the same Aviza furnace group
   used for deposition, anneals and the alloy.
 * Rapid thermal processor (RTA, RTO) — the single-wafer alternative

@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1174
+written page has exactly one entry here; the inventory holds 1180
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -9026,6 +9026,64 @@ events), web page, 2005; Wayback Machine capture of 2005-12-04.
 Lists the press release of 2004-11-08 "TETREON TECHNOLOGIES ACQUIRES
 THERMCO HORIZONTAL FURNACES FROM AVIZA TECHNOLOGY" (the release itself is
 not archived). Used on the vertical-furnace oxidation and anneal pages.
+Tier: cross-check (vendor statement).
+
+##### Vertical batch furnace: LPCVD (first cited there)
+
+**PAT-NH4CL-TSMC** — L. Lin, T. Fan, S. Chen, V. Lee and Y.-H. Wu (Taiwan
+Semiconductor Manufacturing Company), *Cold trap for CVD furnace*, US
+2004/0069224 A1, filed 2002-10-11, published 2004-04-15.
+<https://patents.google.com/patent/US20040069224A1/en> Dichlorosilane
+nitride in a hot-wall vertical furnace at about 750–800 °C and "several
+hundred m Torr", and its ammonium chloride by-product "in the form of a
+fine powder" that deposits on cold surfaces and "may be syphoned back
+into the furnace". Used on the vertical-furnace LPCVD page. Tier:
+cross-check (patent).
+
+**PAT-NH4CL-VLSI** — O. L. Caton, C. A. Bellows, C. M. Hebert, Jr. and
+S. J. Schaper (VLSI Technology), *Thermal trap for gaseous materials*,
+US 5,303,558 A, filed 1992-07-30, granted 1994-04-19.
+<https://patents.google.com/patent/US5303558A/en> Ammonium chloride from
+a nitride process is gaseous at "typically about 700° C." but "forms a
+solid condensate at temperatures below about 125° C." in exhaust pipes
+and pumps; a trap with walls at about 140 °C and a water-cooled
+collection surface. Used on the vertical-furnace LPCVD page. Tier: deep
+dive (patent).
+
+**PAT-LPCVD-SONY** — S. C. Persyn (Sony), *Vertical LPCVD furnace with
+reversible manifold collar and method of retrofitting same*, US 5,800,616
+A, filed 1997-12-15, granted 1998-09-01.
+<https://patents.google.com/patent/US5800616A/en> Describes "the TEL
+VCF-615S LP-TEOS furnace": a bell-shaped chamber with an inner sleeve, a
+boat on "a boat elevator and boat pedestal", "A multi-zone heating
+element", a bottom exhaust port and TEOS injected into the bottom zone.
+Used on the vertical-furnace LPCVD page. Tier: cross-check (patent).
+
+**PAT-LPCVD-KOKUSAI** — K. Maeda, S. Kakizaki, T. Taniyama, H. Yanagawa
+and K. Suzaki (Kokusai Electric), *Vertical furnace of a semiconductor
+manufacturing apparatus and a boat cover thereof*, US 5,902,103 A, filed
+1996-12-23, granted 1999-05-11.
+<https://patents.google.com/patent/US5902103A/en> The conventional outer
+and inner tubes, gas inlet and annular exhaust of a vertical CVD furnace,
+and a boat cover that splits the gas into "branched streams" so that the
+film "is improved in uniformity and homogeneity". Used on the
+vertical-furnace LPCVD page. Tier: deep dive (patent).
+
+**PAT-LPCVD-NEC** — T. Usami (NEC), *Vertical low pressure CVD apparatus
+with an adjustable nozzle*, US 5,503,678 A, filed 1994-11-04, granted
+1996-04-02. <https://patents.google.com/patent/US5503678A/en> Separate
+annular nozzles for "silane gas and an oxidizing gas", spaced so that the
+gases mix uniformly "without an early reaction". Used on the
+vertical-furnace LPCVD page. Tier: deep dive (patent).
+
+**AVIZA-SATIN-2004** — Aviza Technology, *Aviza Technology Introduces New
+Low Temperature Silicon Nitride Process* ("New Satin Process Aimed at
+Sub-90nm DRAM and Logic IC Manufacturing"), press release, 2004-11-29;
+Wayback Machine capture of 2005-03-09.
+<https://web.archive.org/web/20050309110319/http://www.avizatechnology.com/news/pressrel/113004.htm>
+An LPCVD nitride "at approximately 500 degrees C" on the RVP-500, set
+against dichlorosilane–ammonia nitride "above 630 degrees C" and BTBAS
+"at 570 degrees C or above". Used on the vertical-furnace LPCVD page.
 Tier: cross-check (vendor statement).
 
 ## 9. Evidence about specific tools at SkyWater
