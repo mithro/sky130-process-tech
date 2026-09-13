@@ -205,6 +205,9 @@ named.
 
 ## Consumables and facilities
 
+The process gases and precursors are described on the
+{ref}`process gases <material-process-gases>` and
+{ref}`precursors <material-precursors>` pages.
 None of the SkyWater sources describes a nitridation process; what the
 class needs is summarised from the public process descriptions.
 
@@ -270,6 +273,11 @@ and how, is not public.
   and the step assignments.
 * {ref}`category-implant` — the p⁺ gate doping whose boron the nitrogen
   is meant to stop.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
+* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
+  ammonia, SiF₄, ozone and WF₆.
 
 ## References
 

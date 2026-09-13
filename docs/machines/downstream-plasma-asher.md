@@ -204,6 +204,9 @@ records the difference.
 
 ## Consumables and facilities
 
+The process gases and etch gases are described on the
+{ref}`process gases <material-process-gases>` and
+{ref}`etch and chamber-clean gases <material-etch-gases>` pages.
 The strip gases are listed in the {ref}`materials index
 <materials-index>`; what is specific to an asher is summarised here.
 None of the SkyWater sources describes the fab's gas delivery or
@@ -275,6 +278,11 @@ SKY130 conditions of their own. SKY130's strip recipes are not public.
 * {ref}`materials-index` — strip gases.
 * {ref}`material-anneal-ambients` — forming gas in anneals and
   ashers.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
+* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases.
 
 ## References
 

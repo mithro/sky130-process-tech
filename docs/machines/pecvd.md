@@ -297,6 +297,10 @@ SkyWater lists no doped PECVD oxide.[^skw-01]
 
 ## Consumables and facilities
 
+The precursors, chamber-clean gases and process gases are described on
+the {ref}`precursors <material-precursors>`,
+{ref}`etch and chamber-clean gases <material-etch-gases>` and
+{ref}`process gases <material-process-gases>` pages.
 The precursor gases are listed in the
 {ref}`materials index <materials-index>`; what is specific to a PECVD
 or SACVD tool is summarised here. None of the SkyWater sources describes
@@ -405,6 +409,13 @@ pressures, thicknesses and chemistries are not public.
 * {ref}`category-cmp` — the polish that precedes the cap oxides.
 * {ref}`material-hardware-consumables` — chamber parts and exhaust
   abatement.
+* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
+  ammonia, SiF₄, ozone and WF₆.
+* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
 
 ## References
 
