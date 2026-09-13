@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1492
+written page has exactly one entry here; the inventory holds 1493
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -11635,6 +11635,16 @@ most of them from the Wayback Machine capture named in the entry; the
 papers were checked through Crossref and OpenAlex on that date, and their
 annotations rest on their abstracts; the patents were checked through
 Google Patents (bibliographic data and abstract).
+
+**TENCOR-SP1-1996** — Tencor Instruments, *Tencor Instruments Introduces
+Revolutionary 300mm Wafer Inspection System* (Surfscan SP1), press release,
+1996-06-17; Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302033839/http://www.tencor.com:80/press/SP1EMBG.html>
+Tencor's announcement of the Surfscan SP1, dated "JUNE 17, 1996": a
+stationary beam with axi-symmetric collection on a rotating wafer, an
+optional bright-field channel, detection "down to 0.08 micron" and up to
+100 wafers per hour on 300 mm (150 on 200 mm). Used on the defect and
+particle inspection page. Tier: cross-check (vendor statement).
 
 **TENCOR-SP1-WP** — Tencor Instruments, *Surfscan SP1: New Inspection
 Technology for Unpatterned 300mm Wafers*, technology white paper, web

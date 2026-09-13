@@ -23,7 +23,7 @@ metrology in general is on the {ref}`test category page <category-test>`.
 | Sensitivity | "down to 0.09 micron on well-polished silicon" (Surfscan 6220) and "down to 0.08 micron" (Surfscan SP1) on bare wafers;[^tencor-unpatterned-1997][^tencor-sp1-wp] "an optimal sensitivity of 0.15 micron" on the patterned Surfscan 7700.[^tencor-patterned-1997] |
 | Throughput | "150 wph for 200mm wafers" on the SP1;[^tencor-sp1-wp] "30 full wafer inspections/hour" on the patterned Surfscan AIT.[^tencor-patterned-1997] |
 | Requirement at 130 nm | ITRS 2001 sets, for 2001, a patterned-inspection sensitivity of 104 nm (polystyrene-latex sphere equivalent) at a yield-ramp scan rate of 1200 cm²/h and 130 nm at a volume-production rate of 3000 cm²/h, 70 nm on bare silicon and non-metal films, and 7 nm resolution for defect review.[^itrs-2001-yield] |
-| 200 mm era | Tencor's Surfscan 6220, 6420 and SP1 unpatterned scanners and the Surfscan AIT and 7700 patterned inspectors (1997 product pages);[^tencor-unpatterned-1997][^tencor-patterned-1997] KLA-Tencor's 2351 imaging inspector, AIT XP and eV300 review SEM (2002).[^kla-2351][^kla-aitxp][^kla-ev300] |
+| 200 mm era | Tencor's Surfscan 6220, 6420 and SP1 unpatterned scanners and the Surfscan AIT and 7700 patterned inspectors (1997 product pages);[^tencor-unpatterned-1997][^tencor-patterned-1997] KLA-Tencor's 2351 imaging inspector, AIT XP and eV300 review SEM (2002 product pages).[^kla-2351][^kla-aitxp][^kla-ev300] |
 | SkyWater-listed tool | None on the capabilities page; a job posting reads "SEM/AIT/KLA/SP1/EV300/1X"[^job-01] |
 | SKY130 steps | 64 steps; see {ref}`SKY130 steps assigned to this class <machine-defect-inspection-steps>` |
 
@@ -60,7 +60,8 @@ sensitivity requirements in terms of "detecting accurately sized
 Polystyrene Latex (PSL) spheres" deposited on test and calibration
 wafers.[^itrs-2001-yield]
 
-The SP1 of 1997 illustrates the design choices. It used a fixed
+The SP1, which Tencor introduced in June 1996,[^tencor-sp1-1996] illustrates
+the design choices; as Tencor's 1997 pages describe it, it used a fixed
 illumination beam, so that "the wafer be moved in two dimensions: It must
 be rotated and translated along a radius", with axi-symmetric collection
 optics that collect scattered light "independent of the defect's
@@ -91,7 +92,7 @@ to keep neighbouring patterns registered.[^pat-inspect-kla] Tencor's Surfscan AI
 "the first in the industry to provide high-speed capture of both pattern
 defects and particles for in-line process monitoring", built on Tencor's
 "other laser scattering tools".[^tencor-ait-1995]
-KLA-Tencor's own product lines of 2002 set "High-throughput scanning for
+KLA-Tencor's own product pages of 2002 set "High-throughput scanning for
 patterned wafer inspection" (AIT XP) beside "High-resolution imaging for
 patterned wafer inspection" (the 2351), and described its 23xx, AIT
 and eS20 series as a strategy "that combines inspection technologies that
@@ -164,8 +165,9 @@ Surfscan AIT".[^tencor-defectdata-1997]
   broad range of surfaces", and the Surfscan 6420 for metal films and
   rough surfaces, "Also ideal for detecting defects on non-uniform films,
   a critical requirement for CMP applications";[^tencor-unpatterned-1997]
-  the Surfscan SP1 of 1997, for 200 mm and 300 mm wafers at 150 and 100
-  wafers per hour;[^tencor-sp1-wp] and the Surfscan SP1 DLS of 2002, which
+  the Surfscan SP1, introduced in June 1996,[^tencor-sp1-1996] for 200 mm
+  and 300 mm wafers at 150 and 100 wafers per hour;[^tencor-sp1-wp] and the
+  Surfscan SP1 DLS, described on a 2002 capture of KLA-Tencor's site, which
   "Continues the industry-leading SP1 TBI platform" and added a backside
   inspection module for "fully automated, non-destructive inspection of
   the backsides of patterned (product) wafers".[^kla-sp1dls]
@@ -174,7 +176,8 @@ Surfscan AIT".[^tencor-defectdata-1997]
   0.25-micron technology";[^tencor-ait-1995] the Surfscan 7700, which
   detected contaminants "below 0.20 micron" on "complex process levels
   such as nitride, oxide and TEOS films";[^tencor-patterned-1997] and the
-  AIT XP of 2002, extending "the AIT II and AIT III".[^kla-aitxp]
+  AIT XP, described on a 2002 capture, extending "the AIT II and AIT
+  III".[^kla-aitxp]
 * **Imaging inspectors.** KLA's 2020, used in Radin's 1988
   defect-reduction work;[^radin-1988] the 2350 and its successor the 2351,
   for "critical-defect detection at design rules of 0.13 µm and
@@ -305,9 +308,9 @@ plans and defect limits are not public.
 * **Incoming wafers and the backside.** {ref}`SMAT <step-001>` names an
   unpatterned surface scanner for incoming wafers, and
   {ref}`BFR <step-060>` a backside inspection tool; KLA-Tencor's backside
-  module of 2002 inspected the backsides of product
-  wafers.[^kla-sp1dls] ITRS 2001 gives backside particle requirements for
-  200 mm wafers.[^itrs-2001-yield]
+  module, described on a 2002 capture of its SP1 DLS page, inspected the
+  backsides of product wafers.[^kla-sp1dls] ITRS 2001 gives backside
+  particle requirements for 200 mm wafers.[^itrs-2001-yield]
 * **Pads.** {ref}`PDME <step-169>` names automated pad inspection before
   test.
 * **Electrical defect monitors.** Optical inspection is complemented by
@@ -343,9 +346,10 @@ plans and defect limits are not public.
   inspection tool.[^skw-01]
 * ITRS 2001, *Yield Enhancement* — defect detection and review
   requirements, PSL calibration and sampling.[^itrs-2001-yield]
-* Tencor, *Surfscan SP1* white paper and technical details (1997) — laser
-  scattering, stationary-beam design, haze and
-  throughput.[^tencor-sp1-wp][^tencor-sp1-tech]
+* Tencor, *Surfscan SP1* introduction press release (1996), white paper
+  and technical details (1997) — the launch date, laser scattering,
+  stationary-beam design, haze and
+  throughput.[^tencor-sp1-1996][^tencor-sp1-wp][^tencor-sp1-tech]
 * Tencor, *Unpatterned Wafer Inspection* and *Patterned Wafer Inspection*
   pages (1997) — the Surfscan 6220, 6420, AIT and
   7700.[^tencor-unpatterned-1997][^tencor-patterned-1997]
@@ -418,6 +422,10 @@ plans and defect limits are not public.
 
 <!-- footnotes -->
 
+[^tencor-sp1-1996]: Tencor Instruments, *Tencor Instruments Introduces
+    Revolutionary 300mm Wafer Inspection System* (Surfscan SP1), press
+    release, 1996-06-17; Wayback Machine capture of 1997-03-02.
+    <https://web.archive.org/web/19970302033839/http://www.tencor.com:80/press/SP1EMBG.html>
 [^tencor-sp1-wp]: Tencor Instruments, *Surfscan SP1: New Inspection
     Technology for Unpatterned 300mm Wafers*, technology white paper, web
     page; Wayback Machine capture of 1997-03-02.

@@ -94,7 +94,7 @@ the required parametric or functional test".[^electroglas-1999] A prober
 is "equipped with automatic pattern recognition optics capable of aligning
 the wafer with sufficient accuracy to ensure accurate registration between
 the contact pads on the wafer and the tips of the probes".[^wiki-test]
-Electroglas's Horizon 4090 of 1998 added "automatic
+Electroglas's Horizon 4090, described on a 1998 capture, added "automatic
 probe-to-pad-alignment (APTPA)" and GEM factory
 integration,[^electroglas-4090] and the Horizon 4090µ integrated a mini-environment
 and SMIF interface for parametric test.[^electroglas-4090u]
@@ -138,8 +138,8 @@ model extraction.[^cheng-1999]
 * **Keithley.** The Series S600 parametric testers, with the S680 as the
   latest configuration on the data sheet.[^keithley-s600]
 * **Electroglas.** The Horizon 4090 and 4085X automatic probers for 200 mm
-  wafers (1998), the latter for "probing high-pin-count devices", and the
-  Horizon 4090µ.[^electroglas-4090][^electroglas-4085x][^electroglas-4090u]
+  wafers (1998 captures), the latter for "probing high-pin-count
+  devices", and the Horizon 4090µ.[^electroglas-4090][^electroglas-4085x][^electroglas-4090u]
 * **Tokyo Electron.** The P-8 and P-12 series probers, refurbished today as
   the P-8XL for wafers from 100 mm to 200 mm.[^tel-prober]
 * **Cascade Microtech, now FormFactor.** The SUMMIT200 and PMC200 probe

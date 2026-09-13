@@ -126,7 +126,7 @@ structures, at electrical test ({ref}`HPETEST <step-171>`).
   temperature-compensated RS75/tc model;[^tencor-rs75-1995] the OmniMap
   NC110, which "Measures resistivity directly on product wafers" and gives
   data on "aluminum and tungsten metallization schemes such as
-  Ti/TiN/Al/TiN, TiN/W";[^tencor-resistivity-1997] and the RS-100 of 2002,
+  Ti/TiN/Al/TiN, TiN/W";[^tencor-resistivity-1997] and the RS-100, described on a 2002 capture,
   "the tool of choice in the metals, CMP, and diffusion
   modules".[^kla-rs100]
 * **Therma-Wave.** The Therma-Probe, introduced in 1985,[^tw-history] and
