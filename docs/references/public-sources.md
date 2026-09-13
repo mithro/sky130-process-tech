@@ -125,7 +125,8 @@ constrain the process: P+ poly resistor 300 Ω/sq at fixed widths
 0.35–5.73 µm, P− poly 2000 Ω/sq, MiM 2 fF/µm² area and 0.19 fF/µm
 periphery, SONOS programmed/erased Vt 1.44 V / −2.3 V and 100 k cycle
 endurance.
-Also used on the metal plasma etcher page.
+Also used on the silicon and polysilicon plasma etcher and metal plasma
+etcher pages.
 Tier: cross-check.
 
 **PDK-08** — *Parasitic Layout Extraction* page.
