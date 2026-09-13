@@ -125,7 +125,7 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 
 ## Machines typically used
 
-* **PECVD system**, 200 mm: Applied Materials Producer or Centura
+* **{ref}`PECVD system <machine-pecvd>`**, 200 mm: Applied Materials Producer or Centura
   DxZ (TEOS and silane oxides), Novellus Concept One/Two and
   Sequel;[^novellus-history] Lam (Trikon) Delta.
 * **Ellipsometer**, **stress gauge**, **unpatterned defect

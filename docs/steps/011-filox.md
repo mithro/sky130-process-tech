@@ -133,7 +133,7 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 
 ## Machines typically used
 
-* **HDP-CVD reactor**, 200 mm single-wafer, multi-chamber cluster:
+* **{ref}`HDP-CVD reactor <machine-hdp-cvd>`**, 200 mm single-wafer, multi-chamber cluster:
   Novellus SPEED, Applied Materials Ultima HDP-CVD (Centura), Lam
   (post-2012 Novellus SPEED Max/NExT), Trikon Planar 200. Novellus'
   SPEED platform was the market's long-running STI fill

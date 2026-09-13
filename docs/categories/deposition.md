@@ -189,25 +189,25 @@ must hit.
   injection) delivery and a vacuum pump train — ASM A400 ("LPCVD
   processes like doped silicon and silicon nitride films"),[^asm-a400]
   TEL Alpha-8, Aviza/Thermco.
-* **PECVD**: single-wafer multi-station or multi-chamber cluster tools —
+* **{ref}`PECVD <machine-pecvd>`**: single-wafer multi-station or multi-chamber cluster tools —
   Novellus Concept One/Concept Two Sequel (Novellus's dielectric line
   comprised "Concept One, Concept One Maxus, Concept Two Sequel, Concept
   Two Dual Sequel, Concept Two Sequel-S"),[^novellus-history] Applied
   Materials Producer ("Twin-Chamber" modules, two single-wafer chambers
   per unit)[^amat-10k] and Centura DxZ.
-* **HDP-CVD**: Novellus SPEED (completed in 1995, "a high-density plasma
+* **{ref}`HDP-CVD <machine-hdp-cvd>`**: Novellus SPEED (completed in 1995, "a high-density plasma
   system with simpler, more cost-effective solutions for inter-metal
   dielectric films")[^novellus-history] and Applied Materials Ultima
   HDP-CVD Centura, "the industry's first production-ready HDP-CVD
   system".[^amat-1997]
-* **PVD**: Applied Materials Endura ("Applied Materials entered the PVD
+* **{ref}`PVD <machine-pvd-cluster-tool>`**: Applied Materials Endura ("Applied Materials entered the PVD
   market in April 1990 with the Endura PVD system", with Ti/TiN liner
   options for "sub-0.25-micron, high aspect ratio contact and via
   structures" added in 1996),[^amat-1997][^amat-endura] with degas,
   pre-clean, Ti, IMP Ti/TiN, Al–Cu and TiN chambers on one vacuum
   mainframe; Novellus INOVA; earlier Varian and MRC (Materials Research
   Corporation) sputterers.
-* **CVD tungsten**: Novellus Concept Two Altus ("metal solutions
+* **{ref}`CVD tungsten <machine-tungsten-cvd>`**: Novellus Concept Two Altus ("metal solutions
   (Concept One-W, Concept Two-Altus, and Concept Two-Dual
   Altus)")[^novellus-history] and Applied Materials Centura WxZ.
 * **Metrology**: ellipsometry and reflectometry for dielectric

@@ -134,7 +134,7 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 
 * **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** (SVG/Thermco–ASML–Aviza AVP/RVP, Kokusai,
   TEL Alpha-8S, ASM A400) with DCS/NH₃ gas panel, *or*
-* **PECVD system** (Novellus Concept One/Two and Sequel, Applied
+* **{ref}`PECVD system <machine-pecvd>`** (Novellus Concept One/Two and Sequel, Applied
   Materials Precision 5000 / Centura DxZ / Producer) with SiH₄/NH₃/N₂.
 * **Spectroscopic ellipsometer**; **stress gauge**.
 
