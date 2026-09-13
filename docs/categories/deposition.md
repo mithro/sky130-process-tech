@@ -154,8 +154,10 @@ metal; a wafer bias then draws the ions vertically down the hole, so
 bottom coverage rises to tens of per cent. IMP Ti/TiN is the standard
 liner under CVD tungsten at this node (see, for example, an Applied
 Materials IMP patent),[^txt-09][^pat-imp-amat] and this reference
-describes SKY130's contact and via liners as IMP Ti/TiN
-({ref}`TI/TIN1 <step-097>`) and IMP TiN ({ref}`TIN2 <step-109>`).
+reads SKY130's contact liner as titanium followed by IMP TiN, with the
+titanium route (collimated or ionised) not public
+({ref}`TI/TIN1 <step-097>`), and its via liners as IMP TiN
+({ref}`TIN2 <step-109>`).
 
 ### CVD tungsten
 
