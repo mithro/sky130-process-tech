@@ -153,10 +153,13 @@ the cell that the base PDK does not define, and its 0.32 µm × 0.32 µm
 area equals the Verilog-A model's default `area_ox` of 0.1024e-12
 m²[^reram-cell]). The *S8 / SKY130 Process Steps* sheet, from which the
 step list used in this reference is taken, names the tier's two masks
-"RRAM Mask, RRM" (for `r1c`) and "Via 1 top, RRAM tier, VIMC" (for
-`r1v`), marks neither as used in SKY130, and marks RRM as existing for
-the runs it labels MPW-1, -2, -3, -4, -7 and -8 and VIMC for MPW-1, -2,
--3, -4, -5, -7 and -8.[^steps-sheet]
+"RRAM Mask, RRM" and "Via 1 top, RRAM tier, VIMC"; its notes tie RRM to
+`r1c` and VIMC to `r1v`. It marks neither as used in SKY130, and marks
+RRM as existing for the runs it labels MPW-1, -2, -3, -4, -7 and -8 and
+VIMC for MPW-1, -2, -3, -4, -5, -7 and -8.[^steps-sheet] The RRM note
+also gives GDS 201/20, but the notes are written in the terms of the
+PDK files cited above, so we do not count them as independent evidence
+for our reading of 201:20.
 
 Magic models the cell in its own way: under `#ifdef RERAM` a `reram`
 contact type joins metal 1 to metal 2, is written out as `via` squares
