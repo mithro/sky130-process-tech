@@ -178,8 +178,9 @@ memory (SKY130's recipe is not public):
 * **BOE or dilute HF** for the bottom oxide;[^pat-03][^pat-04]
   **hot phosphoric acid** only for the all-wet alternative.[^vgh-1967]
 * **DI water, isopropanol, nitrogen**; chamber consumables.
-* Gas and chemical suppliers named by SkyWater: Air Products, Praxair,
-  Linde, Airgas; KMG, EMD.[^sec-01][^sec-02]
+* Gas and chemical suppliers named in SkyWater's filings: Air
+  Products, Praxair and KMG (2021 S-1); Linde, Airgas and EMD
+  (fiscal 2023 10-K).[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 
