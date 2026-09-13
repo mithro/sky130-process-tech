@@ -39,8 +39,9 @@ barrier films[^txt-02]) a 5.8 Ω/sq sheet corresponds to
 top plate as roughly 0.1 µm of TiW (inferred; our arithmetic), several
 times thicker than the 300 Å TiW cap of the metal stacks[^cyp-qtp-113005]
 and several times thicker than the dielectric beneath it. Its role is
-electrical (a low-resistance plate, since `RSCAPM` enters the
-capacitor's series resistance in the PDK's sub-circuit model[^pdk-07])
+electrical (a low-resistance plate, in series with the capacitor in
+the PDK's sub-circuit model, which "accounts for the parasitic contact
+resistance"[^pdk-07])
 and mechanical: it must survive the {ref}`CAPME <step-138>` etch as a
 plate, the {ref}`MM3E <step-140>` aluminium etch as a masked island,
 the {ref}`NILD5 <step-141>` deposition and {ref}`CMPM3 <step-142>`
@@ -56,9 +57,9 @@ magnetron sputtering and of Ti:W films applies, and
 aluminium stacks. What is specific here is that the film is a device
 electrode deposited on a 20–30 nm dielectric ({ref}`CAPILD <step-135>`)
 rather than on metal: the sputter pre-clean that normally precedes a
-PVD film cannot be used, because a few nanometres of argon
-{term}`sputter etch` would remove a large fraction of the capacitor
-dielectric, and the film's stress and its deposition energy matter
+PVD film is, we infer, omitted or kept very light, because a few
+nanometres of argon {term}`sputter etch` would remove a large fraction
+of the capacitor dielectric, and the film's stress and its deposition energy matter
 because the dielectric beneath is thin enough to be damaged by them
 (inference from the geometry; the same concern shapes the TiN top
 plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
@@ -72,8 +73,8 @@ plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
   on a flat, continuous dielectric and the capacitance is set by the
   drawn `capm` area plus a periphery term — the `CMIMA` 2 fF/µm² and
   `CMIMP` 0.19 fF/µm of the PDK.[^pdk-07] This is the
-  top-plate-first construction of the IBM and Newport Fab
-  patents,[^pat-mim-ibm][^pat-mim-newportfab] and of the Al-BEOL MiM
+  top-plate-first construction of the Newport Fab and Freescale
+  patents,[^pat-mim-newportfab][^pat-mim-freescale] and of the Al-BEOL MiM
   processes Kar-Roy et al. and Babcock et al. describe.[^kar-roy-1999][^babcock-2001]
 * **Why TiW.** The plate must be a metal that (i) sputters at low
   temperature onto a dielectric without reacting with it, (ii) can
@@ -85,22 +86,23 @@ plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
   aluminium level ({ref}`TIAL6 <step-112>`; SkyWater lists "TiW"
   among its PVD films[^skw-01]), a barrier whose properties Nicolet
   reviewed and Ghate et al. established,[^nicolet-1978][^ghate-1978]
-  it etches in fluorine plasmas (tungsten as WF₆, titanium as
-  TiF₄[^turban-1989][^liu-2007-tiw]) and in hydrogen peroxide, which
+  it etches in fluorine plasmas (tungsten as WF₆ in SF₆,[^turban-1989]
+  TiW in CF₄-based mixtures[^liu-2007-tiw]) and in hydrogen peroxide, which
   Danzl and McLaurin used to strip a TiW anti-reflective cap from
   aluminium pads,[^danzl-1997] and the fab's metal etchers are
   qualified for it ("Lam 9600, Al, TiW, TiN, Pt"[^skw-01]). The
   published alternatives — TiN top plates in the Conexant/Newport
   Fab and TI processes,[^kar-roy-1999][^pat-mim-newportfab][^babcock-2001]
-  an aluminium-capped TiN in TI's later "ALCAP" scheme[^pat-mim-ti-alcap]
+  an aluminium cap over a Ta/TaN top electrode on a copper back end
+  in TI's later "ALCAP" scheme[^pat-mim-ti-alcap]
   — play the same role with the fab's other refractory film.
 * **Sheet resistance and quality factor.** A plate of 5.8 Ω/sq[^pdk-07]
   under a 2 fF/µm² dielectric gives a distributed RC whose series
   resistance limits the capacitor's quality factor at RF; the PDK's
-  maximum "MiM Capacitor aspect ratio" of 20[^pdk-03] and its
+  maximum MiM capacitor aspect ratio of 20[^pdk-03] and its
   `CAPMCD` of 2 µm[^pdk-03] bound the plate geometry the model has
-  been fitted for, and Ng et al. discuss the plate-resistance
-  trade-off in MiM integration.[^ng-2005]
+  been fitted for (inference), and Ng et al. review MiM integration
+  in Al–Cu and Cu back ends.[^ng-2005]
 * **Stress on a thin dielectric.** Sputtered W-rich films are
   compressive or tensile according to pressure and composition —
   Thornton's structure-zone model[^thornton-1974] and Dirks, Wolters
@@ -239,12 +241,12 @@ back end (SKY130's recipe is not public):
   aluminium, the wet alternative.[^danzl-1997]
 * Kar-Roy et al., IITC 1999, and Babcock et al., *IEEE EDL* 2001 —
   TiN top plates in published Al-BEOL MiM processes.[^kar-roy-1999][^babcock-2001]
-* Ng et al., *IEEE TED* 2005 — plate resistance and quality factor in
-  MiM integration.[^ng-2005]
+* Ng et al., *IEEE TED* 2005 — a review of MiM integration in Al–Cu
+  and Cu back ends.[^ng-2005]
 * Brabazon et al. (IBM), US 5,708,559; Kar-Roy and Racanelli
   (Newport Fab), US 6,430,028; Crenshaw et al. (TI), US 7,250,334 —
-  top-plate materials and constructions from three
-  assignees.[^pat-mim-ibm][^pat-mim-newportfab][^pat-mim-ti-alcap]
+  plate materials and constructions from three assignees, including
+  IBM's damascene bottom plate.[^pat-mim-ibm][^pat-mim-newportfab][^pat-mim-ti-alcap]
 
 ## Open questions
 
@@ -256,7 +258,7 @@ back end (SKY130's recipe is not public):
   not public.
 * Whether the plate is a single TiW film or carries a thin cap
   (as the TI "ALCAP" scheme does[^pat-mim-ti-alcap]) is not public;
-  the step name suggests a single film.
+  a single film is assumed here.
 * The PVD chamber and platform model are inferred from SkyWater's
   film list.[^skw-01]
 
@@ -371,6 +373,10 @@ back end (SKY130's recipe is not public):
     *Method for fabrication of an MIM capacitor and related structure*,
     US 6,430,028 B1, filed 2000-11-22, granted 2002-08-06.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6430028>
+[^pat-mim-freescale]: D. R. Roberts and G. L. Huffman (Freescale
+    Semiconductor), *MIM capacitor in a semiconductor device and method
+    therefor*, US 7,375,002 B2, filed 2005-06-28, granted 2008-05-20.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7375002>
 [^pat-mim-ti-alcap]: D. L. Crenshaw, B. L. Williams, A. Tsao,
     H. Shichijo, S. S. Papa Rao, K. D. Brennan and S. A. Lytle (Texas
     Instruments), *Metal insulator metal (MIM) capacitor fabrication
