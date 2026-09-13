@@ -20,8 +20,8 @@ down, in one vacuum sequence on our reading, a refractory underlayer, a
 thick aluminium–copper alloy and a titanium–tungsten cap; the
 {ref}`MM5 <step-162>` mask and {ref}`MM5E <step-163>` etch then pattern
 it into the `met5` layer (GDS 72:20, "Metal 5").[^pdk-06] The PDK's
-background page describes the technology as having "5 levels of metal (
-p - penta)",[^pdk-02] and its layer table defines the later opening
+background page describes the technology as having "5 levels of
+metal (p - penta)",[^pdk-02] and its layer table defines the later opening
 over metal-5 pads, `pad` (76:20), "Passivation cut (opening over
 pads)".[^pdk-06]
 
@@ -274,7 +274,7 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 
 ### Cross-check
 
-* SkyWater PDK, *Background* — "5 levels of metal ( p - penta)";
+* SkyWater PDK, *Background* — "5 levels of metal (p - penta)";
   "Inductor or Inductor-Capable".[^pdk-02]
 * SkyWater PDK, *Previous Nomenclature* — "s8pfhd", "5 metal layer
   backend stack"; "s8phirs", rdl metal inductors.[^pdk-previous]
