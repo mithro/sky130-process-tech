@@ -93,8 +93,32 @@ are made by *omitting* implants (through the `lvtn` block layer, whose
 function is to "block Vt adjust implant for low Vt LV PMOS/NMOS, SONOS
 FETs and Native NMOS"[^pdk-periph]), not by adding one. We therefore
 infer that `DEPI` is specific to the SONOS cells and plays no part in
-the native or zero-Vt transistors; their thresholds are simply those
-of the undoped well surface.
+the native or zero-Vt transistors; their thresholds are those of
+channels without threshold-adjust implants.
+
+Measurements published in the SKY130 raw-data repository are consistent
+with that reading. By maximum-transconductance extrapolation of the
+drain current at a drain bias of 0.1 V (our extraction from the
+published measurements), the `nfet_05v0_nvt` structures have thresholds
+of 0.05–0.12 V and the `nfet_03v3_nvt` structures −0.05 to +0.05 V,
+against 0.79–0.82 V for two 7/8 µm `nfet_g5v0d10v5` devices; the 20 V
+zero-Vt structure on the {term}`test tile` (pad-list name `n20zvtvhv1`;
+see {ref}`PWBM <step-026>`) gives −0.12 to
+−0.13 V.[^raw-data-hv-mosfets][^raw-data-testtile-pads] None of these
+thresholds is strongly negative. The shift of threshold with body bias
+tells the devices apart: the body-effect coefficient is about 0.47 √V
+for a 10/4 µm `nfet_05v0_nvt`, 0.73 √V for the 7/8 µm `nfet_g5v0d10v5`
+and 0.07 √V for the zero-Vt structure (our extraction, body biases of
+0, −2.5 and −5 V). With the standard uniform-doping expression and the
+thick-oxide capacitance measured on the same tile (see
+{ref}`GOX100 <step-043>`), these correspond to effective body dopings
+of about 6 × 10¹⁶, 1.5 × 10¹⁷ and 1.4 × 10¹⁵ cm⁻³.[^raw-data-hv-mosfets]
+We read this as a native device that keeps a well-doped body under its
+channel, and a zero-Vt device whose body is some forty times more
+lightly doped, as the PDK's "p-well and all Vt implants blocked"
+implies.[^pdk-07] The effective values are averages over the depleted
+depth, not doping profiles, and the data say nothing about the implants
+themselves.
 
 ## How it is typically performed
 
@@ -188,6 +212,10 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   descriptions.[^pdk-07]
 * SkyWater PDK, *Periphery rules* — the `lvtn` block-layer
   function.[^pdk-periph]
+* SKY130 raw-data repository — I–V sweeps of the native, zero-Vt and
+  5 V NMOS test-tile structures (thresholds and body-effect coefficients
+  quoted here are our extraction) and the pad list naming
+  them.[^raw-data-hv-mosfets][^raw-data-testtile-pads]
 * SkyWater PDK, *Layers Reference* — `tunm` 80:20.[^pdk-06]
 * SkyWater, *Facilities & Capabilities* — Axcelis 8250 and GSD species
   and dose ranges.[^skw-01]
@@ -246,7 +274,9 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   stated; we read `DEPI` as the surface, n-type component.
 * Whether `DEPI` contributes to any device other than the SONOS
   transistor is inferred (no) from the PDK's description of the native
-  and zero-Vt devices as implant-blocked.
+  and zero-Vt devices as implant-blocked; their measured thresholds of
+  about −0.13 to +0.12 V (our extraction) are consistent with that but
+  do not exclude a small contribution.[^raw-data-hv-mosfets]
 * The programme-inhibit threshold of −1.132 V[^pdk-07] implies a
   partial-erase state whose relation to the channel doping is not
   documented publicly.
@@ -345,3 +375,20 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V,
+    20 V, native, zero-Vt and ESD transistors and the thick-oxide gate
+    capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_g5v0d10v5`, `pfet_g5v0d10v5`, `nfet_g5v0d16v0`,
+    `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
+    `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
+    `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>

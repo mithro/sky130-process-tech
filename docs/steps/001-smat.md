@@ -204,6 +204,11 @@ any product to a step.
 * SkyWater PDK, *Device Details* and the `nfet_01v8` cross-section
   drawing — "P-substrate", "Deep N-well", and the substrate-collector
   PNP.[^pdk-07]
+* SkyWater PDK, *Criteria & Assumptions* — the "background
+  concentration" in the N-well table.[^pdk-03]
+* SKY130 raw-data repository — I–V sweeps of the 20 V zero-Vt NMOS on
+  the test tile, from which the effective body doping quoted in the
+  open questions is our extraction.[^raw-data-hv-mosfets]
 * google/skywater-pdk README — the device and option list built on the
   one substrate.[^pdk-10]
 * Indeed, SkyWater Defect Technician 2 posting — the
@@ -263,7 +268,16 @@ any product to a step.
 * **Resistivity and orientation.** No public source gives the SKY130
   wafer resistivity, boron concentration or surface orientation. The
   (100) orientation and few-to-tens-of-Ω·cm range above are textbook
-  norms, not SkyWater data.
+  norms, not SkyWater data. Two indirect figures exist. The PDK's
+  process assumptions give a "background concentration" of
+  8 × 10¹⁴ cm⁻³ in their N-well table without saying that it is the
+  wafer doping.[^pdk-03] And the 20 V zero-Vt NMOS, whose P-well and
+  threshold implants are blocked,[^pdk-07] has a body-effect coefficient
+  of about 0.07 √V on SkyWater's test tile, which with a uniform-doping
+  model and the measured 11.3 nm electrical oxide thickness corresponds
+  to an effective body doping of about 1.4 × 10¹⁵ cm⁻³ (our extraction
+  from the published measurements; see {ref}`PWBM <step-026>`).[^raw-data-hv-mosfets]
+  Neither is a wafer specification, and neither gives the orientation.
 * **Bulk versus epitaxial.** SkyWater's "Bulk" entry[^skw-02] is the
   only public statement and it is a marketing table written years
   after the S8 flow was developed. Whether the original Cypress S8
@@ -354,3 +368,17 @@ any product to a step.
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V,
+    20 V, native, zero-Vt and ESD transistors and the thick-oxide gate
+    capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_g5v0d10v5`, `pfet_g5v0d10v5`, `nfet_g5v0d16v0`,
+    `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
+    `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
+    `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
