@@ -8484,7 +8484,7 @@ bipolar transistors: IC-CAP `.mdm` files in the
 (subdirectories `res`, `cap_mim`, `cap_var`, `npn`, `pnp`, `diode`,
 `isolation` and `unknown`), 2022 (Apache 2.0).
 <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
-307 `.mdm` files, beside seven ring-oscillator oscilloscope captures
+307 `.mdm` files (two of them duplicates), beside seven ring-oscillator oscilloscope captures
 (CSV with PNG plots; the CSV headers are the only dated files, "18 JUL
 2022"). Two-terminal I–V sweeps (to ±1 V or less) of 88 "300 ohm/sq
 P+" and 88 "2K ohm/sq P-" poly resistors (drawn widths 0.33–5.73 µm,
@@ -8492,7 +8492,7 @@ P+" and 88 "2K ohm/sq P-" poly resistors (drawn widths 0.33–5.73 µm,
 high-voltage P⁺ diffusion resistors and a 0.14 µm N⁺ line, of one
 N-well, two deep N-well and two isolated P-well resistors of about one
 square, of five `xpwres` (`res_iso_pw`) lengths, of well-isolation
-structures and of a via-4 chain; four-terminal sweeps of van der Pauw
+structures and of a via-4 chain and a via-4 array; four-terminal sweeps of van der Pauw
 structures, narrow poly and P⁺ lines and metal-1/metal-2 lines; C–V sweeps from −3.3 V to +3.3 V of
 first-level, second-level and stacked MiM capacitors (nine files) and
 from −4 V to +4 V of `cap_var_lvt` and `cap_var_hvt` varactors

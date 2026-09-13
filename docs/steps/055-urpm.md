@@ -42,10 +42,11 @@ pad documentation of the SKY130 {term}`test tile` names the mask too,
 marking the equivalent shortest 2 kΩ/sq resistors (W = 0.69 µm,
 L = 0.345 µm and W = 0.33 µm, L = 0.33 µm) "(may not work for routes
 using URPM mask)".[^raw-data-testtile-pads] The published measurements
-of the marked structures read 1.33–1.43 kΩ (0.33 µm, one square) and,
+of the marked structures read, from the slope of each sweep within
+±0.1 V, 1.33–1.43 kΩ (0.33 µm, one square) and,
 at 0.69 µm and half a square, 0.59 kΩ in one module against 2.8–3.1 kΩ
 in another; the longer resistors of the family give a sheet resistance
-of about 1 960 Ω/sq (our extraction from the published measurements;
+of about 1 950 Ω/sq (our extraction from the published measurements;
 see {ref}`UPRI <step-056>`).[^raw-data-passives]
 
 ## Step category

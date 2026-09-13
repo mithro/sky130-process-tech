@@ -81,7 +81,8 @@ sweeps.[^raw-data-passives] The arithmetic used on
 {ref}`PRI <step-053>` — the difference between the median 20-square and
 4-square resistances at each drawn width taken as 16 squares of body,
 then fitted against width — gives a sheet resistance of about
-1 960 Ω/sq, with an electrical width within about 0.03 µm of drawn,
+1 940–1 970 Ω/sq, with an electrical width within about 0.05 µm of
+drawn (the fit depends on whether the 0.33 µm set is included),
 and the 20-square resistors 1.41 µm and wider read 39.1–40.2 kΩ (our
 extraction from the published measurements; the files record no
 temperature, date or wafer, so they give no temperature
