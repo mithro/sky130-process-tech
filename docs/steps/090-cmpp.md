@@ -152,8 +152,7 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
   for oxide, nitride, niobium, aluminium, tungsten, high-selectivity
   tungsten and copper.[^skw-01] Strength: **strong** for the tool
   and for an oxide/nitride polish capability; assignment to `CMPP`
-  is an **inference** (the list names no steps). Unverified
-  job-board snippets mention "AMAT Mirra and Mirra Mesa" (weak).
+  is an **inference** (the list names no steps).
 * **Post-CMP cleaning.** SkyWater lists the "SEZ223, Davinci"
   single-wafer tools with HF and DSP+HF chemistries;[^skw-01] a
   brush scrubber is not named on any public page (open question).
