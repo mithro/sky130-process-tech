@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1205
+written page has exactly one entry here; the inventory holds 1211
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -9472,6 +9472,53 @@ high-level.
 a plasma to fluorine radicals that attack polysilicon, nitride and
 oxide, and its use to clean PECVD chambers. Used on the silicon and
 polysilicon plasma etcher page. Tier: high-level.
+
+**ALLWIN-RAINBOW-4500** — Allwin21, *Lam Rainbow 45XX Plasma Etcher*,
+reseller product description, accessed 2026-09-13.
+<https://allwin21.com/lam-rainbow-45xx-plasma-etcher/> The Rainbow 45XX
+parallel-plate etchers, "mainly for Oxide Etch": Ar/CF₄/CHF₃ contact and
+oxide spacer etches selective to polysilicon, etch-back planarisation, a
+front-end nitride etch, and a helium backside-cooling controller. Used
+on the dielectric and nitride plasma etcher page. Tier: high-level
+(reseller description).
+
+**PAT-MERIE-AMAT** — D. Cheng, V. J. Zeitlin, D. L. Andrews, M. Chang,
+D. Maydan, S. Somekh, K. R. Stalder, D. N. Wang, J. M. White and J. Y. K.
+Wong (Applied Materials), *Magnetic field-enhanced plasma etch reactor*,
+US 4,842,683 A, filed 1988-04-25, granted 1989-06-27.
+<https://patents.google.com/patent/US4842683A/en> A magnetic field
+enhanced single-wafer etch reactor with a stepped magnetic field for
+uniform etching at high pressure, a gas-cooled wafer interface, quartz
+protective coatings and in-situ self-cleaning. Used on the dielectric
+and nitride plasma etcher page. Tier: cross-check (patent).
+
+**KASTENMEIER-1998** — B. E. E. Kastenmeier, P. J. Matsuo, G. S.
+Oehrlein and J. G. Langan, "Remote plasma etching of silicon nitride and
+silicon dioxide using NF₃/O₂ gas mixtures", *Journal of Vacuum Science &
+Technology A* **16**(4), 2047–2056 (1998).
+<https://doi.org/10.1116/1.581309> Nitride and oxide etching in the
+afterglow of NF₃ and NF₃/O₂ microwave discharges; O₂ injection enhances
+the nitride rate, attributed to NO at the surface. Used on the
+dielectric and nitride plasma etcher page. Tier: deep dive.
+
+**BLANC-2013** — R. Blanc, F. Leverd, T. David and O. Joubert,
+"Patterning of silicon nitride for CMOS gate spacer technology. I.
+Mechanisms involved in the silicon consumption in CH₃F/O₂/He high
+density plasmas", *Journal of Vacuum Science & Technology B* **31**(5),
+051801 (2013). <https://doi.org/10.1116/1.4816466> Silicon recess under
+CH₃F/O₂/He spacer etches: selectivity from a SiOₓFᵧ passivation layer,
+and an oxidised layer driven by ion energy. Used on the dielectric and
+nitride plasma etcher page. Tier: deep dive.
+
+**WIKI-CHF3** — Wikipedia, *Fluoroform*.
+<https://en.wikipedia.org/wiki/Fluoroform> CHF₃ and its use in plasma
+etching of silicon oxide and nitride. Used on the dielectric and nitride
+plasma etcher page. Tier: high-level.
+
+**WIKI-C2F6** — Wikipedia, *Hexafluoroethane*.
+<https://en.wikipedia.org/wiki/Hexafluoroethane> C₂F₆ as an etchant and
+its global warming potential of 9200. Used on the dielectric and nitride
+plasma etcher page. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
