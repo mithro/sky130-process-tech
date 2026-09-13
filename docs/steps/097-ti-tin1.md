@@ -13,8 +13,7 @@
 ## What this step is
 
 `TI/TIN1` sputters the contact {term}`liner`: a thin titanium film followed
-by a thin titanium-nitride film, deposited by ionised-metal-plasma
-({term}`IMP`) physical vapour deposition into the open contact holes
+by a thin titanium-nitride film, sputtered into the open contact holes
 of {ref}`LICM1E <step-094>` and over the field. The titanium lands on
 the freshly cleaned silicon and poly at the bottom of each hole,
 where the next step ({ref}`CSIL <step-098>`) will react it into
@@ -28,8 +27,10 @@ TiN-only liners of the contact and {term}`via` levels.
 The public evidence is unusually direct for a tool assignment.
 SkyWater's capability list gives, under "AMAT PVD Metal", "Imp TiN"
 and "Collimated Ti" alongside "ESC TiN", TiW and the aluminium
-alloys,[^skw-01] and this reference describes the liner as deposited
-by that ionised route (inference). Ionised {term}`PVD` is the technique Rossnagel and
+alloys,[^skw-01] and this reference reads the liner as titanium followed
+by ionised-metal-plasma ({term}`IMP`) TiN, from "Imp TiN" (inference);
+whether the titanium is collimated, as "Collimated Ti" would allow, or
+ionised is not public. Ionised {term}`PVD` is the technique Rossnagel and
 Hopwood introduced for exactly this purpose — filling the bottom of
 a hole that line-of-sight sputtering cannot
 reach[^rossnagel-1993][^rossnagel-1994] — and Applied Materials sold
