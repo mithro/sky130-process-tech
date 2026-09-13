@@ -23,11 +23,12 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1083
+written page has exactly one entry here; the inventory holds 1113
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15 and 8.16 were added to cover the
-sources the writers of the step and category pages introduced; a
+8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16 and 8.17 were added
+to cover the sources the writers of the step, category and overview
+pages introduced; a
 "Label ↔ key" note marks the few cases where one source has two keys.
 
 :::{note}
@@ -438,7 +439,9 @@ in SkyWater Technology's S130 process"*, 2023-03-07.
 <https://www.skywatertechnology.com/weebit-nano-reram-ip-now-available-in-skywater-technologys-s130-process/>.
 Describes S130 as an "automotive-grade, extended temperature,
 mixed-signal CMOS platform" used "for billions of devices to-date".
-Tier: cross-check.
+A photograph caption (re-checked 2026-09-13) reads "Weebit ReRAM bitcell
+is shown integrated into the S130 technology between Metal1 and
+Metal2"; the module includes "a 256Kb ReRAM array". Tier: cross-check.
 
 **SKW-05** — SkyWater Technology, *"Overcoming ASIC Obsolescence"*,
 2024-04-08.
@@ -7894,6 +7897,290 @@ International Conference on Microelectronic Test Structures (ICMTS)*,
 pp. 23–28. <https://doi.org/10.1109/ICMTS.1988.672923> A
 comb/serpentine/cross-bridge structure for process evaluation. Used on
 step 171. Tier: deep dive.
+
+### 8.17 sky130B ReRAM module
+
+Sources introduced for the overview page on the optional sky130B ReRAM
+(RRAM) tier between metal 1 and metal 2. As in §8.15, each label on that
+page is the key below in lower case and the citation is the one given in
+the page footnote. The SkyWater ReRAM documentation, its GitHub repository
+and the open_pdks files describe SkyWater's module; the papers and
+patents describe RRAM devices and their integration in general, and,
+apart from HSIEH-2019 (a figure from which the SkyWater documentation
+reproduces), none of them is stated to describe SkyWater's process.
+Every URL was fetched on 2026-09-13; every DOI was checked through
+Crossref on that date.
+
+#### SkyWater ReRAM documentation and library
+
+**RERAM-BACKGROUND** — SkyWater PDK Authors, *Background*,
+`sky130_fd_pr_reram` — SKY130 ReRAM (SkyWater Provided) documentation
+("Initial documentation only release").
+<https://sky130-fd-pr-reram.readthedocs.io/en/latest/background.html>
+States that "a HfO2-based RRAM layer is fabricated within the BEOL process
+at multiple points as described in the physical design rules"; describes
+a typical RRAM as a metal-oxide switching layer "sandwiched by top and
+bottom metal electrodes"; defines FORM, SET, RESET and read ("0.1-0.2V"),
+the 1T-1R cell and its bit line, word line and source line; "This
+technology is still under development". Tier: cross-check.
+
+**RERAM-SPECS** — SkyWater PDK Authors, *Technology Specifications*,
+`sky130_fd_pr_reram` documentation.
+<https://sky130-fd-pr-reram.readthedocs.io/en/latest/technology_specifications.html>
+Forming data on a 1 Mbit array: fresh conductance "below 0.1 uS (e.g.,
+resistance above 10MOhms)", forming voltages "from 2.2 to 3.1V" (average
+2.5 V), yield above 99 % at 3.1 V, LRS after forming "30-120uS", pulse
+width "1,000ns"; transcribed FORM/SET/RESET tables for 1T1R and 1T4R
+test structures; 1T4R and 1T8R schematics; multi-bit programming; a
+figure "extracted from" HSIEH-2019. Tier: cross-check.
+
+**RERAM-UG** — SkyWater PDK Authors, *User Guide* (slide images
+`page_1.svg`–`page_11.svg`, without `page_5`), `sky130_fd_pr_reram`
+documentation.
+<https://sky130-fd-pr-reram.readthedocs.io/en/latest/user_guide.html>
+Slides "RRAM between met1/met2": FEOL "same as SKY130 PDK (met1 and
+everything below)", BEOL "same as SKY130 PDK (met2 and everything
+above)"; RRAM top electrode, oxide and bottom electrode "all are defined
+by the same layer (r1c)"; "Both top & bottom parts of RRAM vias are drawn
+on a single PDK layer, which is separated during mask generation"; mask
+layers `cviam`, `r1c`, `r1v`; "RRAM bypass (2 stacked normal vias: 2x via
+thickness, same via width & spacing)"; DRC example `rr1_cell.1 (0.230)`
+and `rr1_cell.2 (0.230)`; the place-and-route tech-file slide with
+thicknesses (met1 0.360, rr1_bot_electrode 0.010, rr1_oxide 0.005 with
+dielectric constant 10 and "not in .ict", rr1_top_electrode 0.010, via
+0.565 = via_bot 0.270 + via_top 0.270, met2 0.360), `r1c` minimum width
+0.230 and spacing 0.140, and z-levels 1.3761 to 2.6611. Tier: cross-check.
+
+**RERAM-LAYERS** — SkyWater PDK Authors, `docs/figures/page_5.svg`
+("sky130_fd_pr_reram Layer Descriptions" slide),
+google/skywater-pdk-libs-sky130_fd_pr_reram repository, commit d6d2a3c
+(2022-04-20); present in the repository but not included in the rendered
+User Guide.
+<https://github.com/google/skywater-pdk-libs-sky130_fd_pr_reram/blob/d6d2a3c6960aac0a0b12fc21221c31777bbf284d/docs/figures/page_5.svg>
+Table of drawn and mask layers: `via` "defines both top & bottom contacts
+to RRAM cell (when via is enclosed by r1c), or connects met1 and met2";
+`cviam` (mask) "defines bottom part"; `r1c` (drawn and mask) "RRAM cell",
+"defines RRAM cell between met1 and met2"; `r1v` (mask) "RRAM via",
+"defines top part of contacts to RRAM tier1 cell". Tier: cross-check.
+
+**RERAM-CELL** — SkyWater PDK Authors, `cells/reram_cell/`
+(`sky130_fd_pr_reram__reram_cell.gds`, `.va`, `.spice`),
+google/skywater-pdk-libs-sky130_fd_pr_reram repository, commit d6d2a3c.
+<https://github.com/google/skywater-pdk-libs-sky130_fd_pr_reram/tree/d6d2a3c6960aac0a0b12fc21221c31777bbf284d/cells/reram_cell>
+The cell layout carries a 0.32 µm × 0.32 µm shape on GDS 201:20, a
+0.15 µm `via` (68:44) square, `met1` (68:20) and `met2` (69:20) with
+labels BE and TE; the Verilog-A model's defaults are `area_ox` 0.1024e-12
+m² and `Tox` 5.0e-9 m with filament-thickness parameters. Tier:
+cross-check.
+
+**RERAM-REFS** — SkyWater PDK Authors, *References*, `sky130_fd_pr_reram`
+documentation.
+<https://sky130-fd-pr-reram.readthedocs.io/en/latest/references.html>
+"The ReRAM PDK from Skywater included academic references": GUAN-2012 and
+JIANG-2014. Tier: cross-check.
+
+#### open_pdks sky130B variant
+
+**OPDKS-MAKEFILE** — R. T. Edwards et al., *open_pdks*,
+`sky130/Makefile.in`, commit 1689ac3 (2026-08-27).
+<https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/Makefile.in>
+"sky130B = 5-metal backend stack with dual MiM and ReRAM" (line 4);
+"NOTE: ReRAM support is what distinguishes variant B from variant A."
+followed by `SKY130B_DEFS += -DRERAM` (lines 345–346); installs the
+`sky130_fd_pr_reram` library for variant B only. Tier: cross-check.
+
+**OPDKS-README** — R. T. Edwards et al., *open_pdks*, `sky130/README`,
+commit 1689ac3. <https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/README>
+"From open_pdks version 1.0.269, there is a process variant … sky130B …
+which reflects support for ReRAM." Tier: cross-check.
+
+**OPDKS-MAGIC-TECH** — R. T. Edwards et al., *open_pdks*,
+`sky130/magic/sky130.tech` (Magic technology file source), commit
+1689ac3.
+<https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/magic/sky130.tech>
+Under `#ifdef RERAM`: a `reram` contact type between metal 1 and metal 2
+written to GDS as `via` squares on 68:44 plus "layer RERAM reram / calma
+201 20" (lines 1293–1301) and read back with "calma RERAM 201 20" (line
+4194); DRC "width reram 260 "ReRAM width < %d (rr1.1)"", "spacing reram
+reram 55 … (rr1.2)" and "no_overlap reram v1" (lines 4835–4842);
+extraction heights `v1` 1.7361/0.565, `allm2` 2.3011/0.36, `allm3`
+3.0811, `mimcap` 2.7611 against `v1` 1.7361/0.27, `allm2` 2.0061 and
+`mimcap` 2.4661 without ReRAM (lines 5303–5352); via-1 contact resistance
+`m2c` 9000 against 4500 (nominal), 30000 against 15000 and 4000 against
+2000 (corner variants) (lines 5420–5423, 5482–5485, 5544–5547). Tier:
+cross-check.
+
+#### RRAM devices, integration and the 3DSoC work
+
+**GUAN-2012** — X. Guan, S. Yu and H.-S. P. Wong, "A SPICE Compact Model
+of Metal Oxide Resistive Switching Memory With Variations", *IEEE Electron
+Device Letters* **33**(10), 1405–1407 (2012).
+<https://doi.org/10.1109/LED.2012.2210856> A SPICE model of metal-oxide
+RRAM including temperature and temporal variation, fitted to HfOx RRAM
+data; cited by the SkyWater ReRAM documentation. Tier: deep dive.
+
+**JIANG-2014** — Z. Jiang, S. Yu, Y. Wu, J. H. Engel, X. Guan and
+H.-S. P. Wong, "Verilog-A compact model for oxide-based resistive random
+access memory (RRAM)", *2014 International Conference on Simulation of
+Semiconductor Processes and Devices (SISPAD)*, pp. 41–44.
+<https://doi.org/10.1109/SISPAD.2014.6931558> A dynamic Verilog-A RRAM
+model for DC cycling and pulsed operation with variability; cited by the
+SkyWater ReRAM documentation. Tier: deep dive.
+
+**HSIEH-2019** — E. R. Hsieh, M. Giordano, B. Hodson, A. Levy, S. K.
+Osekowsky, R. M. Radway, Y. C. Shih, W. Wan, T. F. Wu, X. Zheng,
+M. Nelson, B. Q. Le, H.-S. P. Wong, S. Mitra and S. Wong, "High-Density
+Multiple Bits-per-Cell 1T4R RRAM Array with Gradual SET/RESET and its
+Effectiveness for Deep Learning", *2019 IEEE International Electron
+Devices Meeting (IEDM)*, pp. 35.6.1–35.6.4.
+<https://doi.org/10.1109/IEDM19573.2019.8993514> A 1T4R, two-bits-per-cell
+array of "HfO2-based RRAM … built using a logic foundry technology that
+is fully compatible with the CMOS back-end process" (abstract); the
+source of a figure on RERAM-SPECS. Tier: deep dive.
+
+**SRIMANI-2020** — T. Srimani, G. Hills, M. Bishop, C. Lau, P. Kanhaiya
+et al., "Heterogeneous Integration of BEOL Logic and Memory in a
+Commercial Foundry: Multi-Tier Complementary Carbon Nanotube Logic and
+Resistive RAM at a 130 nm node", *2020 IEEE Symposium on VLSI
+Technology*, pp. 1–2.
+<https://doi.org/10.1109/VLSITechnology18217.2020.9265083> Four device
+tiers (two of CNFET logic, two of RRAM) with 15 metal layers at a
+~130 nm node in "a commercial foundry", with a monolithic 3D PDK
+(abstract). Tier: deep dive.
+
+**WONG-2012** — H.-S. P. Wong, H.-Y. Lee, S. Yu, Y.-S. Chen, Y. Wu,
+P.-S. Chen, B. Lee, F. T. Chen and M.-J. Tsai, "Metal–Oxide RRAM",
+*Proceedings of the IEEE* **100**(6), 1951–1970 (2012).
+<https://doi.org/10.1109/JPROC.2012.2190369> Review of binary metal-oxide
+RRAM: mechanism, materials, electrical characteristics, arrays,
+uniformity, endurance, retention and scaling. Tier: deep dive.
+
+**WASER-2007** — R. Waser and M. Aono, "Nanoionics-based resistive
+switching memories", *Nature Materials* **6**(11), 833–840 (2007).
+<https://doi.org/10.1038/nmat2023> Classification of resistive switching
+mechanisms; in transition-metal-oxide "anion-migration cells" conducting
+sub-oxide paths are formed and removed by local redox processes. Tier:
+deep dive.
+
+**IELMINI-2016** — D. Ielmini, "Resistive switching memories based on
+metal oxides: mechanisms, reliability and scaling", *Semiconductor
+Science and Technology* **31**(6), 063002 (2016).
+<https://doi.org/10.1088/0268-1242/31/6/063002> Open-access review of
+bipolar RRAM switching, state stability and scaling. Tier: deep dive.
+
+**LEE-2008-HFO2** — H. Y. Lee, P. S. Chen, T. Y. Wu, Y. S. Chen,
+C. C. Wang, P. J. Tzeng, C. H. Lin, F. Chen, C. H. Lien and M.-J. Tsai,
+"Low power and high speed bipolar switching with a thin reactive Ti
+buffer layer in robust HfO2 based RRAM", *2008 IEEE International
+Electron Devices Meeting*, pp. 1–4.
+<https://doi.org/10.1109/IEDM.2008.4796677> An HfO₂ RRAM "with the TiN
+electrodes" and a thin Ti buffer layer, "fully integrated with 0.18 µm
+CMOS technology" (abstract). Tier: deep dive.
+
+**CHEN-2009-HFOX** — Y. S. Chen, H. Y. Lee, P. S. Chen, P. Y. Gu, C. W.
+Chen, W. P. Lin, W. H. Liu, Y. Y. Hsu, S. S. Sheu, P. C. Chiang, W. S.
+Chen, F. T. Chen, C. H. Lien and M.-J. Tsai, "Highly scalable hafnium
+oxide memory with improvements of resistive distribution and read disturb
+immunity", *2009 IEEE International Electron Devices Meeting (IEDM)*,
+pp. 1–4. <https://doi.org/10.1109/IEDM.2009.5424411> A 30 nm × 30 nm HfOx
+cell and a 1 kb 1T1R array with an AlOx buffer layer and verify schemes
+(abstract). Tier: deep dive.
+
+**GOVOREANU-2011** — B. Govoreanu, G. S. Kar, Y.-Y. Chen, V. Paraschiv et
+al., "10×10nm² Hf/HfOx crossbar resistive RAM with excellent performance,
+reliability and low-energy operation", *2011 International Electron
+Devices Meeting*, pp. 31.6.1–31.6.4.
+<https://doi.org/10.1109/IEDM.2011.6131652> A sub-10 nm × 10 nm Hf/HfOx
+cell; the role of the cap layer and film crystallinity (abstract). Tier:
+deep dive.
+
+**BECKMANN-2016** — K. Beckmann, J. Holt, W. Olin-Ammentorp, J. Van
+Nostrand and N. Cady, "Impact of Etch Process on Hafnium Dioxide Based
+Nanoscale RRAM Devices", *ECS Transactions* **75**(13), 93–99 (2016).
+<https://doi.org/10.1149/07513.0093ecst> A W/HfO₂/Ti/TiN RRAM on a 300 mm
+65 nm platform; TiN/Ti etched by RIE and HfO₂ removed either by dilute
+HF or a BCl₃/O₂ RIE, compared for structure, electrical behaviour and
+yield (abstract). Tier: deep dive.
+
+**GOLONZKA-2019** — O. Golonzka, U. Arslan, P. Bai, M. Bohr, O. Baykan et
+al., "Non-Volatile RRAM Embedded into 22FFL FinFET Technology", *2019
+Symposium on VLSI Technology*, pp. T230–T231.
+<https://doi.org/10.23919/VLSIT.2019.8776570> An embedded RRAM in a
+production logic process: bit-cell integration into the logic flow,
+endurance, retention and yield on 7.2 Mbit arrays (abstract). Tier: deep
+dive.
+
+**LE-2019** — B. Q. Le, A. Grossi, E. Vianello, T. Wu, G. Lama,
+E. Beigne, H.-S. P. Wong and S. Mitra, "Resistive RAM With Multiple Bits
+Per Cell: Array-Level Demonstration of 3 Bits Per Cell", *IEEE
+Transactions on Electron Devices* **66**(1), 641–646 (2019).
+<https://doi.org/10.1109/TED.2018.2879788> Multi-bit programming of 4 kbit
+1T1R "HfOx-based RRAM integrated in the back end of the line of 130-nm
+silicon CMOS technology" (abstract); cited by RERAM-BACKGROUND. Tier:
+deep dive.
+
+**GEORGE-2010** — S. M. George, "Atomic Layer Deposition: An Overview",
+*Chemical Reviews* **110**(1), 111–131 (2010).
+<https://doi.org/10.1021/cr900056b> Review of atomic layer deposition.
+Tier: deep dive.
+
+**WILK-2001** — G. D. Wilk, R. M. Wallace and J. M. Anthony, "High-κ gate
+dielectrics: Current status and materials properties considerations",
+*Journal of Applied Physics* **89**(10), 5243–5275 (2001).
+<https://doi.org/10.1063/1.1361065> Review of the properties and process
+compatibility of high-κ dielectrics, the materials background of HfO₂.
+Tier: deep dive.
+
+#### Patents on RRAM integration
+
+**PAT-RRAM-OXIDE-TSMC** — T. H. Dang, H.-L. Lin, C.-Y. Tsai, C.-S. Tsai
+and R.-L. Lee (Taiwan Semiconductor Manufacturing Co.), *Oxide film
+scheme for RRAM structure*, US 9,431,609 B2, filed 2014-08-14, granted
+2016-08-30.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9431609>
+An RRAM stack over a lower interconnect: bottom electrode (Ta, TaN, Ti or
+TiN by vapour deposition), ALD HfOx from HfCl₄ and H₂O pulses plus
+HfAlOx, capping layer, top electrode, patterning by a masking layer with
+a fluorine or argon plasma, nitride sidewall spacers, bottom-electrode
+etch, upper ILD and a via landing on the top electrode. Tier: deep dive.
+
+**PAT-RRAM-ETCHSTOP-TSMC** — M. C. Liu, Y.-T. Tseng, C.-Y. Hsu, S.-C. Liu
+and C.-S. Tsai (Taiwan Semiconductor Manufacturing Co.), *RRAM cell
+structure with conductive etch-stop layer*, US 10,003,022 B2, filed
+2014-03-04, granted 2018-06-19.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10003022>
+A conductive etch-stop layer between the lower interconnect and the
+bottom electrode, a two-etch stack patterning with sidewall spacers and
+a conformal dielectric protection layer, to avoid a bottom-electrode via
+mask, CMP and copper etch by-products. Tier: deep dive.
+
+**PAT-RRAM-INTERMOLECULAR** — M. Lee, T. Chiang and D. Pramanik
+(Intermolecular, Inc.), *Methods of manufacturing embedded bipolar
+switching resistive memory*, US 9,076,523 B2, filed 2012-12-13, granted
+2015-07-07.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9076523>
+Embedded ReRAM with non-linear elements; its description notes ALD or
+PVD "to remain within a Back End of Line (BEOL) thermal budget" for the
+switching layer, titanium nitride as an oxygen-reactive electrode, and
+that hafnium-oxide layers "may need about 7 Volts during their forming".
+Tier: deep dive.
+
+#### Encyclopaedia articles
+
+**WIKI-RERAM** — Wikipedia, *Resistive random-access memory*.
+<https://en.wikipedia.org/wiki/Resistive_random-access_memory> Oxygen
+vacancies, forming and the set/reset cycle; HfO₂ as a low-voltage ReRAM
+material. Tier: high-level.
+
+**WIKI-ALD** — Wikipedia, *Atomic layer deposition*.
+<https://en.wikipedia.org/wiki/Atomic_layer_deposition> Sequential,
+self-limiting precursor pulses; ALD of high-κ oxides including HfO₂.
+Tier: high-level.
+
+**WIKI-HFO2** — Wikipedia, *Hafnium(IV) oxide*.
+<https://en.wikipedia.org/wiki/Hafnium(IV)_oxide> Hafnia as a high-κ
+dielectric ("4–6 times higher than that of SiO2") and as a candidate for
+resistive-switching memories. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
