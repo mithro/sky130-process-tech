@@ -214,7 +214,8 @@ which rests on the SEZ press release and the used-equipment listing
 naming film removal and backside applications for the
 223.[^sez-223-pr][^sez-223-moov] The CMP pages name the SEZ tools for the
 post-CMP clean because SkyWater names no brush scrubber; that clean is
-described on the {ref}`CMP category page <category-cmp>`.
+described on the {ref}`post-CMP cleaner page
+<machine-post-cmp-cleaner>`.
 
 ## Consumables and facilities
 
@@ -284,7 +285,7 @@ public.
 * {ref}`category-strip` — wet strip and clean chemistry.
 * {ref}`machine-wet-bench` — the batch benches and spray processors that
   share the HF and clean steps.
-* {ref}`category-cmp` — the polishes whose post-CMP clean the CMP pages
+* {ref}`machine-post-cmp-cleaner` — the post-CMP clean that the CMP pages
   assign to this class's listed tools.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.

@@ -14,7 +14,7 @@ This page describes the class in general, lists representative
 own tool of this class and which SKY130 steps this reference assigns to
 it. The polishing physics, slurries and the kinds of polish in the flow
 are on the {ref}`category page <category-cmp>`; the clean after each
-polish is described there too.
+polish is on the {ref}`post-CMP cleaner page <machine-post-cmp-cleaner>`.
 
 | | CMP polisher |
 |---|---|
@@ -312,12 +312,15 @@ page and the step pages.
 * **The clean that follows.** Every polish is followed by a post-CMP
   clean before the slurry dries;[^lam-integra-1999] the CMP pages find no
   brush scrubber on SkyWater's list and name the single-wafer SEZ tools
-  instead ({ref}`machine-single-wafer-spin-processor`).
+  instead ({ref}`machine-post-cmp-cleaner`,
+  {ref}`machine-single-wafer-spin-processor`).
 
 ## Related pages
 
 * {ref}`category-cmp` — polishing physics, slurries, pads and the polishes
   of SKY130.
+* {ref}`machine-post-cmp-cleaner` — the brush scrubbers and integrated
+  cleaners that follow the polish.
 * {ref}`machine-single-wafer-spin-processor` — the listed single-wafer
   tools the CMP pages name for the post-CMP clean.
 * {ref}`machine-hdp-cvd` and {ref}`machine-pecvd` — the oxides the polisher
