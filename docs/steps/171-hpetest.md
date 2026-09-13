@@ -276,10 +276,10 @@ poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
 
 ## Resources required
 
-* **Probe cards** laid out for the e-test modules, and replacement
+* **{ref}`Probe cards <material-hardware-consumables>`** laid out for the e-test modules, and replacement
   needles; **probe-tip cleaning media**.[^wiki-probecard]
 * **Calibration standards** for source-measure units and capacitance
-  meters; **reference wafers** for tester correlation.
+  meters; **{ref}`reference wafers <material-substrates>`** for tester correlation.
 * **Test-plan software and a data system** holding the specifications
   (the PDK's EDR parameters[^pdk-07]).
 * No process gases or chemicals.

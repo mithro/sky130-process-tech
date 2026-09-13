@@ -162,9 +162,9 @@ an aluminium top metal (SKY130's recipe is not public):
   names CF₄, CHF₃, SF₆ and O₂ on its listed etchers[^skw-01]); **He**
   backside cooling.
 * **O₂/N₂** for the ash;[^skw-01] **aluminium-compatible solvent** ({ref}`wet chemicals <material-wet-chemicals>`) and
-  DI water; possibly **hydrogen peroxide** if a TiW cap is removed
+  {ref}`DI water <material-ultrapure-water>`; possibly **hydrogen peroxide** if a TiW cap is removed
   wet.[^danzl-1997]
-* **Chamber consumables**; **fluorine abatement**; **monitor wafers**
+* **{ref}`Chamber consumables <material-hardware-consumables>`**; **fluorine abatement**; **{ref}`monitor wafers <material-substrates>`**
   with passivated metal-5 pads for rate, residue and bond tests.
 
 ## Related steps and cross-references
