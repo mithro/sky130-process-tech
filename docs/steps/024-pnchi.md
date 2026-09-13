@@ -14,9 +14,10 @@
 
 `PNCHI` is the second implant through the high-Vt P-channel resist of
 {ref}`HVTPM <step-022>`, following {ref}`PCHI <step-023>` without a
-strip in between. It is the one implant in the well and channel module
-whose name carries a species: the step list used in this reference names
-it "P-channel BF2 implant". No public document confirms the species.
+strip in between. This reference describes it as a boron difluoride
+implant; no public document states the species, and the reading is an
+inference from practice and from SkyWater's implanter species list,
+which includes "BF2" (below).[^skw-01]
 Boron difluoride (BF₂⁺) is the standard way to put boron very close to
 the silicon surface, because the molecular ion breaks up on impact and
 "only 11/49 of its energy is carried by the boron atom", so a beam
@@ -134,7 +135,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   (strip); mask: {ref}`HVTPM <step-022>`.
 * Baseline PMOS channel: {ref}`LVTPI <step-020>`.
 * The other shallow p-type implants in the flow are the P⁺ source/drain
-  implants (species not given in the step list used in this reference)
+  implants (species discussed on those pages)
   {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>`.
 * Activated at {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
@@ -201,9 +202,8 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   compensation reading above is our inference.
 * Energy, dose and the order of `PCHI`/`PNCHI` relative to each other
   in profile depth are not public.
-* This reference does not expand the acronym `PNCHI`; the page uses
-  only the label "P-channel BF2 implant" from the step list used in
-  this reference.
+* This reference does not expand the acronym `PNCHI`; the BF₂ species
+  on this page is this reference's inference.
 
 <!-- footnotes -->
 

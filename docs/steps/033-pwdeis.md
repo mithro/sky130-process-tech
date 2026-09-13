@@ -78,10 +78,10 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 4. **HF or not?** Whether the pad oxide is removed before the anneal is
    a real choice. Keeping it protects the silicon surface during the RTA
    and avoids dopant out-diffusion; removing it now would require a
-   fresh sacrificial oxide before gate oxidation. The step list used in
-   this reference has no sacrificial-oxide step before
-   {ref}`GOX100 <step-043>`, so we infer that the pad oxide is *kept*
-   through the anneal (see the open question on {ref}`NS19 <step-013>`).
+   fresh sacrificial oxide before gate oxidation. This reference
+   describes no sacrificial oxidation before {ref}`GOX100 <step-043>`
+   and so treats the pad oxide as *kept* through the anneal (an
+   assumption; see the open question on {ref}`NS19 <step-013>`).
 5. **Rinse, dry, inspect.** Cascade rinse, IPA (Marangoni) or spin dry;
    laser surface scan for particles.
 
@@ -185,8 +185,8 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 ## Open questions
 
 * Whether the pad oxide is retained through {ref}`RTAI <step-034>` or
-  removed here is inferred from the absence of a sacrificial-oxide step
-  in the step list used in this reference.
+  removed here is not stated publicly; this page assumes it is
+  retained.
 * Whether the pre-anneal clean is part of this step or belongs to
   {ref}`RTAI <step-034>` is unknown.
 * The strip recipe is not public.

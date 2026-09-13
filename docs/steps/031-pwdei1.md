@@ -18,12 +18,13 @@ receive p-well drain-extended implants"[^pdk-06] — of the 20 V devices.
 Together with {ref}`PWDEI2 <step-032>` it builds a *lightly doped
 P-well* that serves as the drift (drain-extension) region of the 20 V
 PMOS and, we infer, as the low-doped body of the 20 V NMOS whose
-standard P-well was blocked at {ref}`PWBM <step-026>`. The code reads as
-"P-well drain-extended implant 1"; the "1"/"2" numbering tells us the
-well is a chained, two-energy implant like the main wells
+standard P-well was blocked at {ref}`PWBM <step-026>`. This reference
+describes the well as a chained, two-energy implant like the main wells
 ({ref}`NWI <step-018>`/{ref}`NWI2 <step-019>`,
-{ref}`PWI <step-027>`/{ref}`PWI2 <step-028>`). That is our inference
-from the names; no public document describes the two implants. The
+{ref}`PWI <step-027>`/{ref}`PWI2 <step-028>`). That is our inference,
+from the PDK's plural "implants" for the layer[^pdk-06] and from
+well-building practice;[^pat-well-ibm][^pat-well-hynix] no public
+document describes the two implants. The
 resist is stripped at {ref}`PWDEIS <step-033>`.
 
 ## Step category

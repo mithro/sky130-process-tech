@@ -33,9 +33,9 @@ the 20 V device area at {ref}`PWBM <step-026>`, and `PWDEM` now puts a
 *different* P-well back into part of it, inside a deep-N-well tub.
 
 The PDK's mask table lists "P-Well Drain Extended, PWDEM" but, as for
-PWBM, leaves the "Used in SKY130" column blank;[^pdk-05] the layer, its
-rules and the step list used in this reference all include it, so we
-treat the blank as a documentation inconsistency (see *Open questions*).
+PWBM, leaves the "Used in SKY130" column blank;[^pdk-05] the layer and
+its rules exist,[^pdk-06] so this reference treats the blank as a
+documentation inconsistency (see *Open questions*).
 
 ## Step category
 

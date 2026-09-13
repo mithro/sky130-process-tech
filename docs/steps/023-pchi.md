@@ -17,9 +17,9 @@ windows of {ref}`HVTPM <step-022>`, the high-Vt P-channel mask. It adds
 dopant to the surface of the N-well under the future gates of the PMOS
 transistors drawn with the `hvtp` layer, on top of the baseline PMOS
 channel doping that, we infer, every N-well received at
-{ref}`LVTPI <step-020>`. Its companion, {ref}`PNCHI <step-024>`, carries
-"BF2" in its name in the step list used in this reference; `PCHI` itself
-carries no species in its name. The resist is stripped at
+{ref}`LVTPI <step-020>`. Its companion, {ref}`PNCHI <step-024>`, is
+described in this reference as a BF₂ implant (an inference, set out on
+that page); the species of `PCHI` is discussed below. The resist is stripped at
 {ref}`PCHIS <step-025>`.
 
 The PDK describes the `hvtp` region as the "Vt adjust implant region for

@@ -17,8 +17,9 @@ devices, run through the {ref}`PWDEM <step-030>` resist directly after
 {ref}`PWDEI1 <step-031>`. It is the last implant of the well and channel
 module; only the {ref}`PWDEIS <step-033>` strip and the
 {ref}`RTAI <step-034>` anneal remain before the flow moves on to the
-{term}`SONOS` module at {ref}`TUNM <step-035>`. As with the other "2" implants
-of the module, its name is the only public description; we infer a
+{term}`SONOS` module at {ref}`TUNM <step-035>`. As with
+{ref}`NWI2 <step-019>` and {ref}`PWI2 <step-028>`, no public document
+describes it; we infer, from well-building practice, a
 second energy of the same species, completing a two-member chained
 profile for the lightly doped {term}`drain-extended <DEMOS>` P-well
 (inference).[^txt-01]
@@ -162,7 +163,8 @@ An industry-generic second drift-well implant for a 200 mm,
 ## Open questions
 
 * Energy, dose and the depth ordering of `PWDEI1`/`PWDEI2` are not
-  public; that they form a chained pair is inferred from the names.
+  public; that they form a chained pair is our inference (see
+  {ref}`PWDEI1 <step-031>`).
 * Whether the `pwde` well also carries a threshold-setting component
   for the 20 V NMOS channel, or whether that comes from later channel
   implants, is unknown.

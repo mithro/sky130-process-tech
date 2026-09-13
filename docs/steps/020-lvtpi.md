@@ -17,9 +17,9 @@ placed through the N-well resist of {ref}`NWM <step-017>`, after the two
 well implants {ref}`NWI <step-018>` and {ref}`NWI2 <step-019>`. Where
 those set the buried profile of the N-well, `LVTPI` is a low-energy
 *channel* implant that sets the surface doping under the future PMOS
-gates — that is, the PMOS threshold voltage. The step list used in this
-reference names it the "Low V P-channel implant"; the code reads
-naturally as "low-voltage(-Vt) P-channel implant". Because it shares the
+gates — that is, the PMOS threshold voltage (inference, on the
+arrangement of the IBM patent below). In this reference it is labelled
+"Low V P-channel implant". Because it shares the
 N-well window, it reaches every N-well region on the wafer: the 1.8 V
 PMOS, the 5 V PMOS, the N-well rings and the drain extensions alike,
 unless the {term}`reticle` is generated differently for some of them (not
@@ -199,9 +199,11 @@ fab (SKY130 values are not public):
 
 ## Open questions
 
-* Whether "Low V" means low-voltage (1.8 V) or low-Vt, and whether the
-  implant also reaches the 5 V PMOS regions, is not stated publicly;
-  we read it as the baseline PMOS channel implant for all N-wells.
+* The step list used in this reference does not explain "Low V"; we
+  read the step as the baseline PMOS channel implant for all N-wells,
+  following the arrangement of the IBM retrograde-well
+  patent.[^pat-well-ibm] Whether the implant also reaches the 5 V PMOS
+  regions is not stated publicly.
 * Species (boron or BF₂ versus arsenic or phosphorus), energy and dose
   are not public.
 * SKY130's PMOS gate is read on the gate pages as n⁺ poly
