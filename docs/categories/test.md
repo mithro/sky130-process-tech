@@ -74,8 +74,7 @@ the pad documentation of the SkyWater "manufacturing test tile" carried
 on Google's MPW runs: 273 numbered modules, each a line of up to twelve
 pads with the terminal on each pad written
 out.[^raw-data-testtile-pads][^raw-data-testtile-prop] By our count
-they include 36 finger-capacitor ("VPP") modules, 28 poly-resistor
-modules at 300 Ω/sq and 2 kΩ/sq (many as "Mismatch" pairs), 7 MiM
+they include 36 finger-capacitor ("VPP") modules, 28 poly-resistor modules (24 of them labelled 300 Ω/sq or 2 kΩ/sq; many as "Mismatch" pairs), 7 MiM
 capacitor modules, 9 diode, 6 bipolar-transistor and 6 ring-oscillator
 modules, together with licon and mcon contact strings, via chains from
 via 1 to via 4, comb/serpentine and line-integrity structures, and SRAM,
