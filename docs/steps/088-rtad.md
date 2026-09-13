@@ -152,7 +152,7 @@ An industry-generic source/drain activation anneal for a 200 mm,
 
 ## Machines typically used
 
-* **Rapid thermal processors**, 200 mm: AG Associates Heatpulse
+* **{ref}`Rapid thermal processors <machine-rapid-thermal-processor>`**, 200 mm: AG Associates Heatpulse
   8108/8800 series, Applied Materials RTP Centura (the lamp-heated
   chamber of Gronet and Gibbons[^pat-rtp-amat]), Steag/Mattson RTP,
   Kokusai and TEL RTP (category page).

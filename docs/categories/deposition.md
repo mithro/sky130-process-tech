@@ -184,7 +184,7 @@ must hit.
 
 ## Typical equipment
 
-* **LPCVD furnaces**: the same vertical batch furnaces as for oxidation,
+* **{ref}`LPCVD furnaces <machine-vertical-furnace-lpcvd>`**: the same vertical batch furnaces as for oxidation,
   fitted with silane, DCS, ammonia and TEOS (bubbler or liquid
   injection) delivery and a vacuum pump train — ASM A400 ("LPCVD
   processes like doped silicon and silicon nitride films"),[^asm-a400]
