@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1491
+written page has exactly one entry here; the inventory holds 1494
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -12315,6 +12315,32 @@ sidewalls by atomic force microscopy", *Applied Physics Letters*
 profiles and critical dimensions of lines and trenches with a boot-shaped
 AFM tip. Used on the cross-section SEM and profilers page. Tier: deep
 dive.
+
+**SPINELLA-1996** — C. Spinella, V. Raineri, F. La Via and S. U.
+Campisano, "Two-dimensional junction profiling by selective chemical
+etching: Applications to electron device characterization", *Journal of
+Vacuum Science & Technology B* **14**(1), 414–420 (1996).
+<https://doi.org/10.1116/1.588485> Delineation of two-dimensional junction
+profiles for transmission electron microscopy by selective HF:HNO3
+etching of doped silicon, including boron-doped samples. Used on the
+cross-section SEM and profilers page. Tier: deep dive.
+
+**DIXSON-2002** — R. G. Dixson, A. Guerry, M. H. Bennett, T. V. Vorburger
+and M. T. Postek, "Toward traceability for at-line AFM dimensional
+metrology", *Proc. SPIE* **4689**, 313 (2002).
+<https://doi.org/10.1117/12.473471> A CD-AFM reference measurement system
+at International SEMATECH with NIST, its scale calibration and uncertainty
+budgets, as a traceable reference for CD-SEM benchmarking. Used on the
+cross-section SEM and profilers page. Tier: deep dive.
+
+**SAKATA-2002** — T. Sakata, H. Takahashi and T. Sekine, "Investigation of
+Ga contamination due to analysis by dual beam FIB", *Proceedings of the
+9th International Symposium on the Physical and Failure Analysis of
+Integrated Circuits (IPFA 2002)*, pp. 174–178.
+<https://doi.org/10.1109/IPFA.2002.1025643> Dual-beam FIB/SEM sectioning of
+defects for yield management, and the gallium contamination that bears on
+whether a wafer can return to the production line. Used on the
+cross-section SEM and profilers page. Tier: deep dive.
 
 **EEPOWER-4070** — EE Power, *Agilent Technologies Offers New 4070 Series
 Testers*, new-products item, 2002-12-03.

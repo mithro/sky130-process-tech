@@ -53,6 +53,13 @@ cleave "with submicron accuracy through the targeted feature", giving
 "two mirror-image cross sections", and reduced preparation "from hours to
 about 10 minutes".[^sela-2001]
 
+A cleaved face shows films and interfaces but not where one doping type
+gives way to another. For that, analysts etch the section in a solution
+that attacks doped silicon selectively (industry practice): Spinella et
+al. describe the "selective chemical etching of doped regions in silicon
+by a HF:HNO3 chemical mixture" to delineate two-dimensional junction
+profiles for transmission electron microscopy.[^spinella-1996]
+
 The face is then imaged in a field-emission SEM. Secondary electrons "can
 only escape from the top few nanometers of the surface of a
 sample",[^wiki-sem] so the image shows the edges and layers of the
@@ -130,6 +137,9 @@ scanning-probe ("stylus") microscopes "offer 3D measurements that are
 insensitive to the conductivity of the material scanned", but that
 "Flexing of the stylus degrades measurements, however, when the probe is
 too slender".[^itrs-2001-met]
+International SEMATECH and NIST developed a CD-AFM "reference
+measurement system" as "a traceable metrology reference" for CD-SEM
+benchmarking.[^dixson-2002]
 
 ### What the measurements show
 
@@ -278,7 +288,11 @@ dishing and step-height limits are not public.
   polishes vary with pattern density.[^stine-1998]
 * **Defects in section.** A FIB that reads inspection particle maps can
   cut through a defect found by {ref}`machine-defect-inspection`, as the
-  FIB 800 was designed to.[^fei-fib800-1999]
+  FIB 800 was designed to.[^fei-fib800-1999] Sakata, Takahashi and Sekine
+  describe the dual-beam FIB as "an important tool for yield management"
+  and raise gallium contamination as a concern for "whether the wafer can be
+  returned back to a production line or not after the
+  analysis".[^sakata-2002]
 
 ## Related pages
 
@@ -344,12 +358,14 @@ dishing and step-height limits are not public.
   width.[^yu-1992]
 * Stine et al., *IEEE TSM* 1998 — test masks and measurements for
   pattern-dependent CMP variation.[^stine-1998]
-* Tencor, HRP-200 press release, 1996 — profiler measurement of plug
-  recess, erosion and dishing.[^tencor-hrp200-1996]
-* SELA, *Company Background*, 2001 — microcleaving against cleave-and-polish
-  preparation.[^sela-2001]
-* FEI, *FIB 800xP*, 1999 — a wafer-level FIB driven by inspection defect
-  maps.[^fei-fib800-1999]
+* Spinella, Raineri, La Via and Campisano, *J. Vac. Sci. Technol. B*
+  1996 — junction delineation by selective chemical etching for
+  electron microscopy.[^spinella-1996]
+* Dixson et al., *Proc. SPIE* 2002 — a CD-AFM reference measurement system
+  for traceable CD metrology at International SEMATECH.[^dixson-2002]
+* Sakata, Takahashi and Sekine, IPFA 2002 — dual-beam FIB defect
+  sectioning in yield management and the gallium contamination of wafers
+  returned to the line.[^sakata-2002]
 
 ## Open questions
 
@@ -445,6 +461,21 @@ dishing and step-height limits are not public.
     effects in a chemical mechanical polishing planarization process for
     advanced trench isolation", *Applied Physics Letters* **61**(11),
     1344–1346 (1992). <https://doi.org/10.1063/1.107586>
+[^spinella-1996]: C. Spinella, V. Raineri, F. La Via and S. U. Campisano,
+    "Two-dimensional junction profiling by selective chemical etching:
+    Applications to electron device characterization", *Journal of Vacuum
+    Science & Technology B* **14**(1), 414–420 (1996).
+    <https://doi.org/10.1116/1.588485>
+[^dixson-2002]: R. G. Dixson, A. Guerry, M. H. Bennett, T. V. Vorburger and
+    M. T. Postek, "Toward traceability for at-line AFM dimensional
+    metrology", *Proc. SPIE* **4689**, Metrology, Inspection, and Process
+    Control for Microlithography XVI, 313 (2002).
+    <https://doi.org/10.1117/12.473471>
+[^sakata-2002]: T. Sakata, H. Takahashi and T. Sekine, "Investigation of Ga
+    contamination due to analysis by dual beam FIB", *Proceedings of the
+    9th International Symposium on the Physical and Failure Analysis of
+    Integrated Circuits (IPFA 2002)*, pp. 174–178.
+    <https://doi.org/10.1109/IPFA.2002.1025643>
 [^stine-1998]: B. E. Stine, D. O. Ouma, R. R. Divecha, D. S. Boning, J. E.
     Chung, D. L. Hetherington, C. R. Harwood, O. S. Nakagawa and S.-Y. Oh,
     "Rapid characterization and modeling of pattern-dependent variation in
