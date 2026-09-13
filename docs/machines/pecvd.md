@@ -21,9 +21,9 @@ the furnace alternative for the front-end dielectrics is on the
 |---|---|
 | What it does | Deposits dielectric films from gases activated by a discharge "between two electrodes, the space between which is filled with the reacting gases"; plasma deposition is used "onto wafers containing metal layers or other temperature-sensitive structures".[^wiki-pecvd] |
 | Plasma excitation | Capacitive, at "the standard 13.56 MHz" or a low frequency "usually around 100 kHz", or "a mixture of low- and high-frequency signals in a dual-frequency reactor";[^wiki-pecvd] "one at 270 kHz and the other at 13.56 MHz" in Pearce et al.'s nitride study.[^pearce-1992] |
-| Films and temperatures | Silane–N₂O oxide "deposited at 100°–340°C";[^adams-1981-pecvd] TEOS–O₂ oxide at "about 1 to 50 torr" and "about 200° C. to 500° C." in Applied Materials' reactor patent;[^pat-p5000-amat] silane–ammonia nitride "made at 330–350 °C" with "about 20–25 at.% H";[^lanford-1978] oxynitrides across "the entire range of compositions from silicon oxide to silicon nitride".[^denisse-1986] |
+| Films and temperatures | Silane–N₂O oxide "deposited at 100°–340°C";[^adams-1981-pecvd] TEOS–O₂ oxide at "about 1 to 50 torr" and "about 200° C. to 500° C." in Applied Materials' reactor patent;[^pat-p5000-amat] plasma nitride "made at 330–350 °C" with "about 20–25 at.% H";[^lanford-1978] oxynitrides across "the entire range of compositions from silicon oxide to silicon nitride".[^denisse-1986] |
 | SACVD | "TEOS (tetraethylorthosilicate) and Ozone (O3) chemistry at near-atmospheric pressure", introduced by Applied Materials "in 1994 on its Precision 5000® platform".[^amat-sacvd-2000] |
-| Wafer handling | Multi-station: Novellus's Dual Sequel "combines two process chambers with 12 deposition stations";[^novellus-pecvd-1998] twin single-wafer: Applied's Producer allows "the simultaneous processing of two wafers side-by-side in separate compartments with identical environments".[^amat-producer-2001] |
+| Wafer handling | Multi-station: Novellus's Dual Sequel "combines two process chambers with 12 deposition stations";[^novellus-pecvd-1998] twin single-wafer: Applied's Producer has "twin process chambers that permit simultaneous processing of two wafers side-by-side in separate compartments with identical environments".[^amat-producer-2001] |
 | 200 mm era | Novellus Concept One ("Introduced in 1987", "150/200mm"), Concept One MAXUS and Concept Two Sequel;[^novellus-pecvd-1998] Applied's Precision 5000 (1987) and Centura platforms,[^amat-1997] and the Producer, introduced in 1998.[^amat-producer-se-2001] |
 | SkyWater-listed tool | "Lam/Novellus/AMAT": "PECVD TEOS, C2 and Producer" ("low temp options"), "PECVD silane oxide/nitride/oxynitride, C1" ("low temp, range of R.I. options"), "PECVD nitride C1"[^skw-01] |
 | SKY130 steps | 19 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-pecvd-steps>` |
@@ -161,8 +161,9 @@ Film grows on the gas manifold and walls as well as on the wafer, and
 is removed with a fluorine plasma. Nitrogen
 trifluoride "is also widely used to clean PECVD chambers";[^wiki-nf3]
 Sobolewski, Langan and Felker studied "NF3/Ar, CF4/O2/Ar, and C2F6/O2/Ar
-chamber cleaning plasmas" in a capacitive reactor and note that their
-performance "varies in unpredictable ways".[^sobolewski-1998] Allgood et
+chamber cleaning plasmas" in a capacitive reactor and note that the
+performance of such fluorinated discharges "varies in unpredictable
+ways".[^sobolewski-1998] Allgood et
 al. measured clean times and perfluorocompound emissions "in a Novellus
 Concept One 200, a widely used commercial PECVD tool".[^allgood-2003]
 Remote plasma cleans move the discharge out of the chamber: an Applied
@@ -200,9 +201,18 @@ temperature".[^cheung-2000]
   nitrides.[^amat-pecvd-teos-2002][^amat-pecvd-psg-2002][^amat-pecvd-sin-2002]
   In 1997 Applied settled patent litigation with Novellus "concerning
   plasma TEOS and tungsten CVD technology".[^amat-1997]
-* **Other vendors.** The step pages also name Lam (Trikon) Delta PECVD
-  systems ({ref}`NCAPOX <step-091>`); no vendor description of them was
-  retrieved for this page.
+* **Trikon Technologies.** The {ref}`NCAPOX <step-091>` page names a
+  Delta PECVD system and credits it to "Lam (Trikon)"; no source
+  retrieved for this page links Trikon to Lam. The Delta 201 was one of
+  the products Trikon "obtained with the acquisition of Electrotech on
+  November 15, 1996", described as "a versatile, single-chamber
+  production system for producing films, including silicon dioxide or
+  silicon nitride".[^trikon-10k-1996] Semiconductor Today traces the
+  line from Newport-based Electrotech (founded in 1968), bought in 1996
+  by Plasma & Materials Technologies, which became Trikon Technologies;
+  "Trikon later merged with Aviza Technology Inc in 2005", and in 2009
+  Sumitomo Precision Products bought most of Aviza's assets and formed
+  SPP Process Technology Systems (SPTS).[^semitoday-spts-2009]
 
 ## At SkyWater
 
@@ -297,9 +307,10 @@ the fab's gas delivery, pumps or abatement.
   and TEOS, a liquid used "as a precursor to silicon dioxide in the
   semiconductor industry" and delivered as vapour.[^wiki-teos] SkyWater
   names both in its PECVD entries.[^skw-01]
-* **Oxidants and nitrogen sources.** N₂O and O₂ for oxide, NH₃ and N₂
-  for nitride, and N₂O with NH₃ for oxynitride;[^denisse-1986] ozone
-  for SACVD.[^amat-sacvd-2000]
+* **Oxidants and nitrogen sources.** N₂O and O₂ for
+  oxide,[^adams-1981-pecvd][^pat-p5000-amat] NH₃ or N₂ for
+  nitride,[^wiki-pecvd] and N₂O with NH₃ for oxynitride;[^denisse-1986]
+  ozone for SACVD.[^amat-sacvd-2000]
 * **Chamber-clean gases.** NF₃, "a greenhouse gas, with a global
   warming potential (GWP) 17,200 times greater than that of
   CO2",[^wiki-nf3] or perfluorocarbons such as C₂F₆;[^sobolewski-1998]
@@ -324,15 +335,16 @@ pressures, thicknesses and chemistries are not public.
   under the local-interconnect nitride cap ({ref}`LINIT <step-104>`),
   and aluminium under the films from {ref}`NILD3 <step-115>` on. The category page gives the
   usual ceiling as "below about 450 °C once aluminium is
-  present";[^txt-02] plasma films are made well below it, silane oxide
-  at 100–340 °C in Adams et al.'s work.[^adams-1981-pecvd]
+  present";[^txt-02] plasma films can be made below it: silane oxide
+  at 100–340 °C in Adams et al.'s work,[^adams-1981-pecvd] Applied's
+  thin nitride at 400 °C.[^amat-sin-wp]
 * **Poor conformality decides the ILD split.** Plasma oxide "is not
   conformal",[^adams-1981-pecvd] so the inter-level oxide pages
   ({ref}`NILD2 <step-105>` to {ref}`NILD6 <step-156>`) infer HDP-CVD
   for the gaps between metal lines and grade PECVD TEOS for a liner or
   overburden, or, on {ref}`NILD2 <step-105>`, where the gap is 1:1, for
-  the whole film. Applied described its TEOS and silane
-  oxides for exactly those roles, "as liners or cap layers for HDP-CVD
+  the whole film. Applied described its PECVD TEOS oxides for exactly
+  those roles, "as liners or cap layers for HDP-CVD
   applications".[^amat-pecvd-teos-2002]
 * **Caps over polished oxide.** The cap-oxide pages from
   {ref}`NCAPOX3 <step-117>` on read
@@ -414,9 +426,14 @@ pressures, thicknesses and chemistries are not public.
   capacitor construction and the passivation layers.[^pdk-07][^pdk-04]
 * Cypress Semiconductor, QTP 014807 — a TEOS and PECVD nitride
   passivation from the Bloomington fab.[^cyp-qtp-014807]
+* Trikon Technologies, Form 10-K for 1996 — the Delta 201 PECVD system
+  and its Electrotech origin.[^trikon-10k-1996]
 
 ### High-level understanding
 
+* Semiconductor Today, *Sumitomo Precision Products completes
+  acquisition of Aviza* (2009) — the Electrotech, Trikon, Aviza and SPTS
+  lineage.[^semitoday-spts-2009]
 * Wikipedia, *Plasma-enhanced chemical vapor deposition* — discharges,
   excitation frequencies and the films.[^wiki-pecvd]
 * Wikipedia, *Silane*, *Tetraethyl orthosilicate* and *Nitrogen
@@ -487,9 +504,9 @@ pressures, thicknesses and chemistries are not public.
   MiM dielectric an oxynitride or a nitride, are not public.
 * Whether any SKY130 dielectric is deposited by SACVD, which SkyWater
   does not list, is not public.
-* The model list above is incomplete: it covers the Novellus and Applied
-  Materials systems for which a public description was found, not the
-  Lam, Trikon, ASM and other PECVD systems of the period.
+* The model list above is incomplete: it covers the Novellus, Applied
+  Materials and Trikon systems for which a public description was found,
+  not the ASM and other PECVD systems of the period.
 
 <!-- footnotes -->
 
@@ -658,3 +675,10 @@ pressures, thicknesses and chemistries are not public.
 [^lieberman-2005]: M. A. Lieberman and A. J. Lichtenberg, *Principles of
     Plasma Discharges and Materials Processing*, 2nd ed., Wiley, 2005,
     ISBN 978-0-471-72001-0. <https://doi.org/10.1002/0471724254>
+[^trikon-10k-1996]: Trikon Technologies, Inc., *Annual Report on Form
+    10-K for the fiscal year ended December 31, 1996*; copy on
+    GetFilings.com, Wayback Machine capture of 2008-10-12.
+    <http://web.archive.org/web/20081012193325/http://www.getfilings.com/o0000898430-97-001539.html>
+[^semitoday-spts-2009]: Semiconductor Today, *Sumitomo Precision
+    Products completes acquisition of Aviza*, news item, 2009-10-19.
+    <https://www.semiconductor-today.com/news_items/2009/OCT/STS_191009.htm>
