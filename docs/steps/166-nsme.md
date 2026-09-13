@@ -156,11 +156,13 @@ public):
 
 ## Resources required
 
-* **Fluorocarbons** (C₄F₈, C₂F₆, CF₄, CHF₃), **Ar**, **O₂**, possibly
-  **N₂** (industry practice;[^nojiri-2015] SkyWater names CF₄, CHF₃ and
-  C₂F₆ on its listed etchers[^skw-01]); **He** backside cooling.
-* **O₂/N₂** for the ash;[^skw-01] **polymer-removal solvent** and DI
-  water.
+* **C₄F₈, C₂F₆, CHF₃, CF₄**, **Ar**, **O₂** (and possibly CO or N₂)
+  for the oxide etch (industry practice;[^nojiri-2015] SkyWater lists
+  CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]); **He** backside
+  cooling.
+* **O₂/N₂** (and forming gas or CF₄) for the ash;[^skw-01] **amine or
+  semi-aqueous solvent** (EKC265/EKC270 class) and DI water for the
+  post-etch clean.[^skw-01]
 * **Chamber consumables** (focus rings, electrodes); **fluorocarbon
   abatement**; **monitor wafers** with a full dielectric stack.
 
