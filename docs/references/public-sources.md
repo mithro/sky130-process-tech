@@ -124,7 +124,9 @@ resistors, MiM and VPP capacitors) with electrical parameters that
 constrain the process: P+ poly resistor 300 Ω/sq at fixed widths
 0.35–5.73 µm, P− poly 2000 Ω/sq, MiM 2 fF/µm² area and 0.19 fF/µm
 periphery, SONOS programmed/erased Vt 1.44 V / −2.3 V and 100 k cycle
-endurance. Tier: cross-check.
+endurance.
+Also used on the metal plasma etcher page.
+Tier: cross-check.
 
 **PDK-08** — *Parasitic Layout Extraction* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
@@ -7164,6 +7166,7 @@ S8TNV-5R metal composition at Bloomington: Metal 1 "100A Ti / 3200A
 Al-0.5%Cu / 300A TiW", Metal 2 the same, Metal 3 "150A Ti / 7200A
 Al-0.5%Cu / 300A TiW". Used on steps 112–114, 118–121, 123–125,
 129–132, 134, 136, 138–141, 145 and 146 and on the etch category page.
+Also used on the metal plasma etcher page.
 Tier: cross-check.
 
 **CYP-QTP-123907** — Cypress Semiconductor, *Fab Process Qualification

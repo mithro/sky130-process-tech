@@ -97,9 +97,9 @@ Cl are effective etchants", the rate depending on "both the plasma phase
 etchant concentration and the ion bombardment energy", with a peak near
 100 mTorr.[^liu-2007-tiw] Titanium nitride can be etched in a
 "fluorine-deficient plasma" selective to titanium silicide, as a Texas
-Instruments patent describes.[^pat-tin-etch-ti] Where the film sits on a
-thin dielectric, as a capacitor top plate does, the over-etch must stop
-quickly: a later Texas Instruments patent etches a MiM top electrode
+Instruments patent describes.[^pat-tin-etch-ti] Where a conductor film
+sits on a thin dielectric, as a MiM capacitor top plate of any material
+does, the over-etch must stop quickly: a later Texas Instruments patent etches a MiM top electrode
 with two halogen gases, one containing fluorine, in a way that "removes
 ≦100 A of the thickness of the dielectric layer".[^pat-mim-ti-etch]
 
@@ -242,15 +242,21 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 * **Three kinds of metal etch.** The class covers the TiN local
   interconnect ({ref}`LI1ME <step-103>`), five aluminium stacks with
   refractory layers ({ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`)
-  and two TiW capacitor top plates ({ref}`CAPME <step-138>`,
-  {ref}`CAP2ME <step-153>`). SkyWater's two entries name all three
-  materials, Al, TiN and TiW.[^skw-01]
+  and two capacitor top plates ({ref}`CAPME <step-138>`,
+  {ref}`CAP2ME <step-153>`). The PDK calls the top plate only "a thin
+  conductor layer on top of the dielectric";[^pdk-07] this reference
+  reads it as TiW (inference, set out on the {ref}`CAPTIW1 <step-136>`
+  page: TiW caps the Cypress S8 aluminium stacks[^cyp-qtp-113005] and is
+  on SkyWater's PVD and metal-etch lists[^skw-01]), and the same
+  evidence would equally allow TiN. SkyWater's two entries name Al, TiN
+  and TiW.[^skw-01]
 * **Stopping on tungsten plugs and thin dielectrics.** The aluminium
   over-etch lands on oxide and on the tops of tungsten plugs, with
   selectivity to the plugs ({ref}`MM1E <step-114>`); chlorine etched
   tungsten at no more than 90 nm/min in Fischl and Hess's
   conditions;[^fischl-1987] the capacitor
-  top-plate etches land on the thin MiM dielectric, where the step pages
+  top-plate etches, whatever the plate material, land on the thin MiM
+  dielectric, where the step pages
   cite a patent that removes no more than about 100 Å of
   it.[^pat-mim-ti-etch]
 * **Profiles for gap fill.** The inter-level oxides deposited over each
@@ -275,8 +281,9 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   which the {ref}`LI1ME <step-103>` page offers as a medium option.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
-* {ref}`category-deposition` — the TiN, aluminium and TiW films these
-  etches pattern.
+* {ref}`category-deposition` — the TiN, aluminium and refractory films
+  these etches pattern, and the capacitor top-plate film (TiW on this
+  reference's reading, {ref}`CAPTIW1 <step-136>`).
 * {ref}`materials-index` — etch gases and chamber materials.
 
 ## References
@@ -285,6 +292,10 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 
 * SkyWater Technology, *Facilities & Capabilities* — the two "Metal
   Etch" entries quoted on this page.[^skw-01]
+* SkyWater PDK, *Device Details* — the MiM top plate as "a thin
+  conductor layer", its material unnamed.[^pdk-07]
+* Cypress, QTP 113005 — the Ti/Al–Cu/TiW composition of the S8 metal
+  stacks.[^cyp-qtp-113005]
 * Lam Research, TCP 9600SE microwave stripper announcement (1998) — the
   TCP metal etcher, its integrated downstream stripper and corrosion
   tests.[^lam-9600se-stripper-1998]
@@ -410,6 +421,16 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30; etch entries re-checked 2026-09-13.
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^pdk-07]: SkyWater PDK Authors, *Device Details* (MiM capacitors),
+    SkyWater SKY130 PDK documentation, and the `cap_mim` cross-section
+    drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/cap_mim/cross-section-cap_mim.svg>
+[^cyp-qtp-113005]: Cypress Semiconductor, *Product Qualification
+    Plan, QTP# 113005: 64K Serial Non-Volatile SRAM Product Family, S8
+    Technology, CMI (Fab 4)*, document 001-85611 Rev. *A, January
+    2013 (copy hosted by Infineon Technologies).
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
 [^schaible-1978]: P. M. Schaible, W. C. Metzger and J. P. Anderson,
     "Reactive ion etching of aluminum and aluminum alloys in an rf plasma
     containing halogen species", *Journal of Vacuum Science and
