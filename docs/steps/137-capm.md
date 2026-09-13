@@ -13,8 +13,9 @@
 ## What this step is
 
 `CAPM` is the lithography that defines the top plates of the first
-{term}`MiM capacitor`. On the blanket TiW of {ref}`CAPTIW1 <step-136>` — which
-lies on the oxynitride of {ref}`CAPILD <step-135>` and the
+{term}`MiM capacitor`. On the blanket plate film of
+{ref}`CAPTIW1 <step-136>` (TiW, as assumed there) — which
+lies on the capacitor dielectric of {ref}`CAPILD <step-135>` and the
 still-unpatterned metal-3 stack of {ref}`WTIAL3 <step-134>` — a
 resist is coated, exposed and developed so that resist remains
 wherever the layout draws `capm`, "MiM capacitor plate over metal 3"
@@ -103,7 +104,7 @@ model form[^pdk-07]).
   (inference; the choice sets which enclosure carries the
   {term}`overlay` error, and Levinson treats the budgeting[^levinson-2005]).
 * **Protecting the dielectric.** Everywhere the resist is cleared,
-  the {ref}`CAPME <step-138>` etch will expose the oxynitride; where
+  the {ref}`CAPME <step-138>` etch will expose the capacitor dielectric; where
   it remains, the plate and the dielectric under it are the finished
   capacitor. The resist therefore also decides where the delicate
   film is exposed to plasma — a reason the etch, not the mask, is
@@ -128,7 +129,8 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 2. **Resist coat.** A positive i-line DNQ/novolak resist — the
    chemistry Dammel's tutorial text and Reichmanis and
    Thompson's review describe[^dammel-1993][^reichmanis-1989][^wiki-dnq]
-   — at around 1 µm (the PDK's nominal resist thickness of 1.14 µm
+   — at around 1 µm (industry-typical for i-line
+   resists[^mack-2007]; the PDK's nominal resist thickness of 1.14 µm
    is an antenna-rule assumption that need not describe this
    layer[^pdk-03]). A thicker resist is affordable here because the
    features are large and the TiW etch is short.

@@ -14,14 +14,13 @@
 
 `CAPME` etches the top plates of the first {term}`MiM capacitor`. Through
 the resist islands of {ref}`CAPM <step-137>` a plasma removes the
-blanket TiW of {ref}`CAPTIW1 <step-136>` — of the order of 0.1 µm on
-our reading of the PDK's top-plate sheet resistance — and stops on,
-or a little way into, the thin oxynitride of {ref}`CAPILD <step-135>`,
+blanket plate film of {ref}`CAPTIW1 <step-136>` — TiW, as assumed
+there, of the order of 0.1 µm on our reading of the PDK's top-plate
+sheet resistance — and stops on, or a little way into, the thin
+capacitor dielectric of {ref}`CAPILD <step-135>`,
 leaving TiW only where the layout draws `capm`, "MiM capacitor plate
-over metal 3".[^pdk-06] The resist is then stripped. The step list
-used in this reference shows no separate strip between `CAPME` and
-`MM3`, so on our reading the strip and post-etch clean belong to this
-step, as they do at the other etches of the flow.
+over metal 3".[^pdk-06] The resist is then stripped; this reference
+treats the strip and post-etch clean as part of this step.
 
 What makes this etch unlike any other in the process is what lies
 under the film being removed. Beneath the TiW is a dielectric some
@@ -33,9 +32,11 @@ is not yet patterned and must be etched, with its dielectric, at
 would begin to consume the bottom plate's cap everywhere outside the
 capacitors, and the capacitor's edge would be a dielectric sidewall
 exposed to plasma. The etch therefore has to remove a refractory
-metal with very high {term}`selectivity` to a very thin film of
-silicon oxynitride — a fluorine-etchable metal over a fluorine-
-etchable dielectric — and to stop within a few nanometres. A Texas
+metal with very high {term}`selectivity` to a very thin dielectric —
+for a TiW plate on an oxynitride, as assumed here (see
+{ref}`CAPTIW1 <step-136>` and {ref}`CAPILD <step-135>`), a
+fluorine-etchable metal over a fluorine-etchable dielectric — and to
+stop within a few nanometres. A Texas
 Instruments patent on the same operation for a TiN top electrode
 states the target: a silicon-based dielectric "<1,000 Å" thick
 (typically 150–400 Å), and a dry etch of the top electrode that
@@ -158,7 +159,7 @@ end (SKY130's recipe is not public):
    plates are a small fraction of the wafer), so the signal is strong
    — the reverse of Wodecki's low-open-area via problem.[^wodecki-1999]
    The over-etch is short and at reduced bias, sized to clear TiW
-   stringers while removing at most a few nanometres of oxynitride
+   stringers while removing at most a few nanometres of the dielectric
    (the TI patent's ≤100 Å[^pat-mim-ti-etch]).
 5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` — the "Gasonic
    PEP", Iridia or Mattson class in SkyWater's list[^skw-01] — then a
@@ -201,8 +202,8 @@ end (SKY130's recipe is not public):
   cooling.
 * **O₂/N₂** for the ash;[^skw-01] **amine or semi-aqueous solvent**
   and DI water for the clean.[^skw-01]
-* **Chamber consumables** and **monitor wafers** with TiW over
-  oxynitride for rate and selectivity checks.
+* **Chamber consumables** and **monitor wafers** carrying the plate
+  film over the capacitor dielectric for rate and selectivity checks.
 
 ## Related steps and cross-references
 
@@ -276,7 +277,7 @@ end (SKY130's recipe is not public):
 
 ## Open questions
 
-* Whether `CAPME` stops on the oxynitride or etches through it (so
+* Whether `CAPME` stops on the capacitor dielectric or etches through it (so
   that the dielectric is patterned with the plate) is not public. The
   PDK's schematic cross-section draws the dielectric only under the
   plate,[^pdk-07] which read literally favours the latter; we describe
@@ -285,14 +286,12 @@ end (SKY130's recipe is not public):
   stop of the Philips kind[^pat-mim-philips] would be possible.
 * The chemistry, endpoint, over-etch and dielectric loss of the etch
   are not public.
-* The step list used in this reference has no spacer or
-  edge-treatment step after `CAPME`; whether any edge treatment is
-  folded into the etch is not public.
+* Whether the plate edge receives a spacer or other edge treatment,
+  as in the Newport Fab patent,[^pat-mim-newportfab] is not stated in
+  any public source; this reference describes none.
 * Which of the two listed Lam metal etchers runs the step is not
   public.[^skw-01]
-* The step list used in this reference has no separate strip step
-  after `CAPME`; this page treats the resist strip and clean as part
-  of the etch.
+* This page treats the resist strip and clean as part of the etch.
 
 <!-- footnotes -->
 
