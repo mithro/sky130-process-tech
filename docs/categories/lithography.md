@@ -194,7 +194,7 @@ alignment corrections.
 * **Solvents**: PGMEA (propylene glycol methyl ether acetate) and
   ethyl lactate as resist casting solvents and for EBR; cyclohexanone.
 * **Developer**: aqueous tetramethylammonium hydroxide (TMAH), the
-  industry-standard strength being 0.26 N (2.38 wt.%), metal-ion-free,
+  industry-standard strength being 2.38 % (0.26 N), metal-ion-free,
   with surfactant.[^mack-2007][^wiki-tmah][^microchemicals-dev]
 * **Excimer laser gases**: krypton, fluorine (in neon) premixes for KrF
   lasers; laser chambers and optics are periodic replacements.

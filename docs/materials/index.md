@@ -163,7 +163,7 @@ the SKY130 stack.[^pdk-03][^pdk-04] These are the sources of the
 |----------|-------|----------------------|--------------------------|----------------------------------------|
 | Silicon wafers, 200 mm, p-type, polished bulk | Substrate | Starting material of the flow. | "200 mm equipment";[^skw-01] suppliers in both filings (table above).[^sec-01][^sec-02] | {ref}`001 <step-001>` |
 | Test and monitor wafers (SEMI M8 class) | Substrate | Thickness, {term}`sheet-resistance <sheet resistance>`, particle, rate and selectivity monitors; RTP thermocouple wafers; CD, {term}`overlay` and tester reference wafers. | typical (not listed) | {ref}`002 <step-002>`, {ref}`003 <step-003>`, {ref}`006 <step-006>`, {ref}`008 <step-008>`, {ref}`010 <step-010>`, {ref}`015 <step-015>`, {ref}`018 <step-018>`, {ref}`019 <step-019>`, {ref}`020 <step-020>`, {ref}`023 <step-023>`, {ref}`024 <step-024>`, {ref}`027 <step-027>`, {ref}`028 <step-028>`, {ref}`031 <step-031>`, {ref}`032 <step-032>`, {ref}`034 <step-034>`, {ref}`037 <step-037>`, {ref}`038 <step-038>`, {ref}`040 <step-040>`, {ref}`043 <step-043>`, {ref}`045 <step-045>`, {ref}`047 <step-047>`, {ref}`048 <step-048>`, {ref}`050 <step-050>`, {ref}`053 <step-053>`, {ref}`056 <step-056>`, {ref}`058 <step-058>`, {ref}`059 <step-059>`, {ref}`060 <step-060>`, {ref}`061 <step-061>`, {ref}`062 <step-062>`, {ref}`063 <step-063>`, {ref}`065 <step-065>`, {ref}`066 <step-066>`, {ref}`069 <step-069>`, {ref}`072 <step-072>`, {ref}`073 <step-073>`, {ref}`075 <step-075>`, {ref}`076 <step-076>`, {ref}`077 <step-077>`, {ref}`079 <step-079>`, {ref}`080 <step-080>`, {ref}`082 <step-082>`, {ref}`083 <step-083>`, {ref}`086 <step-086>`, {ref}`088 <step-088>`, {ref}`089 <step-089>`, {ref}`090 <step-090>`, {ref}`091 <step-091>`, {ref}`092 <step-092>`, {ref}`094 <step-094>`, {ref}`095 <step-095>`, {ref}`096 <step-096>`, {ref}`097 <step-097>`, {ref}`098 <step-098>`, {ref}`099 <step-099>`, {ref}`100 <step-100>`, {ref}`101 <step-101>`, {ref}`103 <step-103>`, {ref}`104 <step-104>`, {ref}`105 <step-105>`, {ref}`106 <step-106>`, {ref}`108 <step-108>`, {ref}`109 <step-109>`, {ref}`110 <step-110>`, {ref}`112 <step-112>`, {ref}`114 <step-114>`, {ref}`115 <step-115>`, {ref}`117 <step-117>`, {ref}`119 <step-119>`, {ref}`120 <step-120>`, {ref}`121 <step-121>`, {ref}`123 <step-123>`, {ref}`125 <step-125>`, {ref}`126 <step-126>`, {ref}`128 <step-128>`, {ref}`130 <step-130>`, {ref}`131 <step-131>`, {ref}`132 <step-132>`, {ref}`134 <step-134>`, {ref}`135 <step-135>`, {ref}`136 <step-136>`, {ref}`138 <step-138>`, {ref}`140 <step-140>`, {ref}`141 <step-141>`, {ref}`143 <step-143>`, {ref}`145 <step-145>`, {ref}`146 <step-146>`, {ref}`147 <step-147>`, {ref}`149 <step-149>`, {ref}`150 <step-150>`, {ref}`151 <step-151>`, {ref}`153 <step-153>`, {ref}`155 <step-155>`, {ref}`156 <step-156>`, {ref}`158 <step-158>`, {ref}`160 <step-160>`, {ref}`161 <step-161>`, {ref}`163 <step-163>`, {ref}`164 <step-164>`, {ref}`166 <step-166>`, {ref}`167 <step-167>`, {ref}`169 <step-169>`, {ref}`170 <step-170>`, {ref}`171 <step-171>` |
-| Nitrogen (N₂) | Bulk gas; anneal ambient | Purge, drying and vent gas; anneal ambient; ash gas; reactive gas for TiN; etch and CVD diluent; CDA/N₂ lamp cooling. | "N2 anneal to 1150C"; "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"; N2 on the Gasonic and Iridia asher entries.[^skw-01] | all except {ref}`004 <step-004>`, {ref}`007 <step-007>`, {ref}`012 <step-012>`, {ref}`019 <step-019>`, {ref}`020 <step-020>`, {ref}`023 <step-023>`, {ref}`024 <step-024>`, {ref}`027 <step-027>`, {ref}`028 <step-028>`, {ref}`031 <step-031>`, {ref}`032 <step-032>`, {ref}`053 <step-053>`, {ref}`056 <step-056>`, {ref}`089 <step-089>`, {ref}`090 <step-090>`, {ref}`091 <step-091>`, {ref}`100 <step-100>`, {ref}`105 <step-105>`, {ref}`106 <step-106>`, {ref}`111 <step-111>`, {ref}`116 <step-116>`, {ref}`122 <step-122>`, {ref}`127 <step-127>`, {ref}`133 <step-133>`, {ref}`141 <step-141>`, {ref}`142 <step-142>`, {ref}`148 <step-148>`, {ref}`156 <step-156>`, {ref}`157 <step-157>`, {ref}`171 <step-171>` |
+| Nitrogen (N₂) | Bulk gas; anneal ambient | Purge, drying and vent gas; anneal ambient; ash gas; reactive gas for TiN; etch and CVD diluent; CDA/N₂ lamp cooling. | "N2 anneal to 1150C"; "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"; N2 on the GaSonics and Iridia asher entries.[^skw-01] | all except {ref}`004 <step-004>`, {ref}`007 <step-007>`, {ref}`012 <step-012>`, {ref}`019 <step-019>`, {ref}`020 <step-020>`, {ref}`023 <step-023>`, {ref}`024 <step-024>`, {ref}`027 <step-027>`, {ref}`028 <step-028>`, {ref}`031 <step-031>`, {ref}`032 <step-032>`, {ref}`053 <step-053>`, {ref}`056 <step-056>`, {ref}`089 <step-089>`, {ref}`090 <step-090>`, {ref}`091 <step-091>`, {ref}`100 <step-100>`, {ref}`105 <step-105>`, {ref}`106 <step-106>`, {ref}`111 <step-111>`, {ref}`116 <step-116>`, {ref}`122 <step-122>`, {ref}`127 <step-127>`, {ref}`133 <step-133>`, {ref}`141 <step-141>`, {ref}`142 <step-142>`, {ref}`148 <step-148>`, {ref}`156 <step-156>`, {ref}`157 <step-157>`, {ref}`171 <step-171>` |
 | Oxygen (O₂) | Bulk gas; oxidant | Dry oxidation and pyrogenic steam; ash; etch additive; oxidant for HDP and {term}`PECVD` oxides; minor RTA addition. | "dry oxidation to 1150C"; "wet oxidation to 1150C"; O2 in the Heatpulse, asher and all three poly/silicon etcher entries.[^skw-01] | {ref}`002 <step-002>`, {ref}`005 <step-005>`, {ref}`006 <step-006>`, {ref}`009 <step-009>`, {ref}`010 <step-010>`, {ref}`011 <step-011>`, {ref}`016 <step-016>`, {ref}`021 <step-021>`, {ref}`025 <step-025>`, {ref}`029 <step-029>`, {ref}`033 <step-033>`, {ref}`034 <step-034>`, {ref}`036 <step-036>`, {ref}`039 <step-039>`, {ref}`040 <step-040>`, {ref}`042 <step-042>`, {ref}`043 <step-043>`, {ref}`046 <step-046>`, {ref}`047 <step-047>`, {ref}`051 <step-051>`, {ref}`054 <step-054>`, {ref}`057 <step-057>`, {ref}`058 <step-058>`, {ref}`059 <step-059>`, {ref}`062 <step-062>`, {ref}`063 <step-063>`, {ref}`067 <step-067>`, {ref}`070 <step-070>`, {ref}`074 <step-074>`, {ref}`075 <step-075>`, {ref}`076 <step-076>`, {ref}`077 <step-077>`, {ref}`079 <step-079>`, {ref}`080 <step-080>`, {ref}`084 <step-084>`, {ref}`087 <step-087>`, {ref}`088 <step-088>`, {ref}`089 <step-089>`, {ref}`091 <step-091>`, {ref}`094 <step-094>`, {ref}`095 <step-095>`, {ref}`103 <step-103>`, {ref}`104 <step-104>`, {ref}`105 <step-105>`, {ref}`108 <step-108>`, {ref}`114 <step-114>`, {ref}`115 <step-115>`, {ref}`117 <step-117>`, {ref}`119 <step-119>`, {ref}`125 <step-125>`, {ref}`126 <step-126>`, {ref}`128 <step-128>`, {ref}`130 <step-130>`, {ref}`138 <step-138>`, {ref}`140 <step-140>`, {ref}`141 <step-141>`, {ref}`143 <step-143>`, {ref}`145 <step-145>`, {ref}`153 <step-153>`, {ref}`155 <step-155>`, {ref}`156 <step-156>`, {ref}`158 <step-158>`, {ref}`160 <step-160>`, {ref}`163 <step-163>`, {ref}`164 <step-164>`, {ref}`166 <step-166>`, {ref}`169 <step-169>` |
 | Hydrogen (H₂) | Bulk gas; reductant | Pyrogenic or {term}`radical oxidation`; bulk reduction of WF₆; alloy anneal; implant-source co-gas; possible {term}`PVD` pre-clean. | "H2 and forming gas alloy"; "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C".[^skw-01] | {ref}`002 <step-002>`, {ref}`008 <step-008>`, {ref}`010 <step-010>`, {ref}`015 <step-015>`, {ref}`040 <step-040>`, {ref}`043 <step-043>`, {ref}`096 <step-096>`, {ref}`099 <step-099>`, {ref}`109 <step-109>`, {ref}`110 <step-110>`, {ref}`120 <step-120>`, {ref}`121 <step-121>`, {ref}`131 <step-131>`, {ref}`132 <step-132>`, {ref}`146 <step-146>`, {ref}`147 <step-147>`, {ref}`170 <step-170>` |
 | Forming gas (H₂ in N₂) | Anneal and ash ambient | Implant-crust and post-etch ash; alloy anneals at {ref}`ALLY1 <step-096>` and {ref}`ALLY <step-170>` ("5% H2 in N2" is the typical formulation[^wiki-fg]). | "H2 and forming gas alloy"; Iridia "H2/N2"; "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C".[^skw-01] | {ref}`006 <step-006>`, {ref}`009 <step-009>`, {ref}`016 <step-016>`, {ref}`021 <step-021>`, {ref}`025 <step-025>`, {ref}`029 <step-029>`, {ref}`033 <step-033>`, {ref}`039 <step-039>`, {ref}`042 <step-042>`, {ref}`046 <step-046>`, {ref}`051 <step-051>`, {ref}`054 <step-054>`, {ref}`057 <step-057>`, {ref}`062 <step-062>`, {ref}`067 <step-067>`, {ref}`070 <step-070>`, {ref}`074 <step-074>`, {ref}`079 <step-079>`, {ref}`084 <step-084>`, {ref}`087 <step-087>`, {ref}`094 <step-094>`, {ref}`095 <step-095>`, {ref}`096 <step-096>`, {ref}`108 <step-108>`, {ref}`114 <step-114>`, {ref}`119 <step-119>`, {ref}`125 <step-125>`, {ref}`130 <step-130>`, {ref}`170 <step-170>` |
@@ -210,7 +210,7 @@ the SKY130 stack.[^pdk-03][^pdk-04] These are the sources of the
 | KrF (248 nm) chemically amplified positive photoresist | Lithography | Critical levels: active, poly, {term}`nitride cut`, local-interconnect contact and line, contact, metals 1–4, vias 1–3 (per step-page readings). | "ASML DUV stepper", "ASML DUV scanner";[^skw-01] resist suppliers in both filings (table above).[^sec-01][^sec-02] | {ref}`004 <step-004>`, {ref}`061 <step-061>`, {ref}`078 <step-078>`, {ref}`093 <step-093>`, {ref}`102 <step-102>`, {ref}`107 <step-107>`, {ref}`113 <step-113>`, {ref}`118 <step-118>`, {ref}`124 <step-124>`, {ref}`129 <step-129>`, {ref}`139 <step-139>`, {ref}`144 <step-144>`, {ref}`154 <step-154>` |
 | Organic BARC, inorganic ARC or dyed resist | Lithography | Reflectivity control on DUV levels and over metal; the ARC opened at {ref}`TUNARCE <step-036>`. | typical (not listed) | {ref}`004 <step-004>`, {ref}`035 <step-035>`, {ref}`036 <step-036>`, {ref}`041 <step-041>`, {ref}`061 <step-061>`, {ref}`078 <step-078>`, {ref}`093 <step-093>`, {ref}`102 <step-102>`, {ref}`107 <step-107>`, {ref}`113 <step-113>`, {ref}`118 <step-118>`, {ref}`124 <step-124>`, {ref}`129 <step-129>`, {ref}`137 <step-137>`, {ref}`139 <step-139>`, {ref}`144 <step-144>`, {ref}`152 <step-152>`, {ref}`154 <step-154>`, {ref}`159 <step-159>`, {ref}`162 <step-162>` |
 | HMDS adhesion promoter | Lithography | Vapour prime before resist coat. | typical (not listed) | {ref}`004 <step-004>`, {ref}`007 <step-007>`, {ref}`014 <step-014>`, {ref}`017 <step-017>`, {ref}`022 <step-022>`, {ref}`026 <step-026>`, {ref}`030 <step-030>`, {ref}`035 <step-035>`, {ref}`041 <step-041>`, {ref}`044 <step-044>`, {ref}`049 <step-049>`, {ref}`052 <step-052>`, {ref}`055 <step-055>`, {ref}`061 <step-061>`, {ref}`064 <step-064>`, {ref}`068 <step-068>`, {ref}`071 <step-071>`, {ref}`078 <step-078>`, {ref}`081 <step-081>`, {ref}`085 <step-085>`, {ref}`093 <step-093>`, {ref}`102 <step-102>`, {ref}`107 <step-107>`, {ref}`118 <step-118>`, {ref}`129 <step-129>`, {ref}`144 <step-144>`, {ref}`159 <step-159>`, {ref}`165 <step-165>`, {ref}`168 <step-168>` |
-| TMAH developer, 2.38 wt.% (0.26 N) | Lithography | Aqueous development of positive resist. | S-1: "Air Products & Chemicals, Inc., Moses Lake (developer)";[^sec-01] FY2023 10-K: "Moses Lake Industries Inc. (developer)".[^sec-02] | {ref}`004 <step-004>`, {ref}`007 <step-007>`, {ref}`014 <step-014>`, {ref}`017 <step-017>`, {ref}`022 <step-022>`, {ref}`026 <step-026>`, {ref}`030 <step-030>`, {ref}`035 <step-035>`, {ref}`041 <step-041>`, {ref}`044 <step-044>`, {ref}`049 <step-049>`, {ref}`052 <step-052>`, {ref}`055 <step-055>`, {ref}`061 <step-061>`, {ref}`064 <step-064>`, {ref}`068 <step-068>`, {ref}`071 <step-071>`, {ref}`078 <step-078>`, {ref}`081 <step-081>`, {ref}`085 <step-085>`, {ref}`093 <step-093>`, {ref}`102 <step-102>`, {ref}`107 <step-107>`, {ref}`113 <step-113>`, {ref}`118 <step-118>`, {ref}`124 <step-124>`, {ref}`129 <step-129>`, {ref}`137 <step-137>`, {ref}`139 <step-139>`, {ref}`144 <step-144>`, {ref}`152 <step-152>`, {ref}`154 <step-154>`, {ref}`159 <step-159>`, {ref}`162 <step-162>`, {ref}`165 <step-165>`, {ref}`168 <step-168>` |
+| TMAH developer, 2.38 % (0.26 N) | Lithography | Aqueous development of positive resist. | S-1: "Air Products & Chemicals, Inc., Moses Lake (developer)";[^sec-01] FY2023 10-K: "Moses Lake Industries Inc. (developer)".[^sec-02] | {ref}`004 <step-004>`, {ref}`007 <step-007>`, {ref}`014 <step-014>`, {ref}`017 <step-017>`, {ref}`022 <step-022>`, {ref}`026 <step-026>`, {ref}`030 <step-030>`, {ref}`035 <step-035>`, {ref}`041 <step-041>`, {ref}`044 <step-044>`, {ref}`049 <step-049>`, {ref}`052 <step-052>`, {ref}`055 <step-055>`, {ref}`061 <step-061>`, {ref}`064 <step-064>`, {ref}`068 <step-068>`, {ref}`071 <step-071>`, {ref}`078 <step-078>`, {ref}`081 <step-081>`, {ref}`085 <step-085>`, {ref}`093 <step-093>`, {ref}`102 <step-102>`, {ref}`107 <step-107>`, {ref}`113 <step-113>`, {ref}`118 <step-118>`, {ref}`124 <step-124>`, {ref}`129 <step-129>`, {ref}`137 <step-137>`, {ref}`139 <step-139>`, {ref}`144 <step-144>`, {ref}`152 <step-152>`, {ref}`154 <step-154>`, {ref}`159 <step-159>`, {ref}`162 <step-162>`, {ref}`165 <step-165>`, {ref}`168 <step-168>` |
 | Edge-bead remover and rinse solvents (PGMEA, ethyl lactate, cyclohexanone) | Solvent; lithography | Edge-bead removal, back-rinse and rework. | typical (not listed) | {ref}`004 <step-004>`, {ref}`007 <step-007>`, {ref}`014 <step-014>`, {ref}`017 <step-017>`, {ref}`022 <step-022>`, {ref}`026 <step-026>`, {ref}`030 <step-030>`, {ref}`035 <step-035>`, {ref}`041 <step-041>`, {ref}`044 <step-044>`, {ref}`049 <step-049>`, {ref}`052 <step-052>`, {ref}`055 <step-055>`, {ref}`061 <step-061>`, {ref}`064 <step-064>`, {ref}`068 <step-068>`, {ref}`071 <step-071>`, {ref}`078 <step-078>`, {ref}`081 <step-081>`, {ref}`085 <step-085>`, {ref}`093 <step-093>`, {ref}`102 <step-102>`, {ref}`107 <step-107>`, {ref}`113 <step-113>`, {ref}`118 <step-118>`, {ref}`124 <step-124>`, {ref}`129 <step-129>`, {ref}`137 <step-137>`, {ref}`139 <step-139>`, {ref}`144 <step-144>`, {ref}`152 <step-152>`, {ref}`154 <step-154>`, {ref}`159 <step-159>`, {ref}`162 <step-162>`, {ref}`165 <step-165>`, {ref}`168 <step-168>` |
 | Reticles (chrome on quartz, with pellicles; SEMI P1 blanks) | Lithography | One per mask step; see {ref}`masks-index`. | "Mask GDS to reticle"; "Reticle storage/handler/defect inspection".[^skw-01] | {ref}`004 <step-004>`, {ref}`007 <step-007>`, {ref}`014 <step-014>`, {ref}`017 <step-017>`, {ref}`022 <step-022>`, {ref}`026 <step-026>`, {ref}`030 <step-030>`, {ref}`035 <step-035>`, {ref}`041 <step-041>`, {ref}`044 <step-044>`, {ref}`049 <step-049>`, {ref}`052 <step-052>`, {ref}`055 <step-055>`, {ref}`061 <step-061>`, {ref}`064 <step-064>`, {ref}`068 <step-068>`, {ref}`071 <step-071>`, {ref}`078 <step-078>`, {ref}`081 <step-081>`, {ref}`085 <step-085>`, {ref}`093 <step-093>`, {ref}`102 <step-102>`, {ref}`107 <step-107>`, {ref}`113 <step-113>`, {ref}`118 <step-118>`, {ref}`124 <step-124>`, {ref}`129 <step-129>`, {ref}`137 <step-137>`, {ref}`139 <step-139>`, {ref}`144 <step-144>`, {ref}`152 <step-152>`, {ref}`154 <step-154>`, {ref}`159 <step-159>`, {ref}`162 <step-162>`, {ref}`165 <step-165>`, {ref}`168 <step-168>` |
 | Exposure-tool consumables: KrF laser gas (Kr, F₂/Ne), mercury lamps | Lithography hardware | Light sources of the DUV and i-line tools. | typical (not listed) | {ref}`061 <step-061>`, {ref}`107 <step-107>`, {ref}`113 <step-113>`, {ref}`118 <step-118>`, {ref}`124 <step-124>`, {ref}`129 <step-129>`, {ref}`137 <step-137>`, {ref}`139 <step-139>`, {ref}`144 <step-144>`, {ref}`152 <step-152>`, {ref}`154 <step-154>`, {ref}`159 <step-159>`, {ref}`162 <step-162>`, {ref}`165 <step-165>`, {ref}`168 <step-168>` |
@@ -412,7 +412,10 @@ delivery, abatement or waste treatment.
 The step pages were written separately, and their *Resources
 required* sections do not always describe analogous steps in the same
 way. The differences below are recorded as found; this page does not
-decide between them, and the step pages are unchanged.
+decide between them. Items that a consistency pass over the step pages
+on 2026-09-13 resolved (spellings and quotations of SkyWater's entries,
+developer strength, the metal-etch gas wording, the PSG dimension labels
+and the discussion of "PECVD Tungsten") have been removed.
 
 ### Chemistries of analogous steps
 
@@ -467,12 +470,7 @@ decide between them, and the step pages are unchanged.
   {ref}`MM3E <step-140>` and {ref}`MM4E <step-155>`, and "a fluorine-
   or chlorine-bearing mixture" at {ref}`MM5E <step-163>`; the ash is
   "O₂/N₂ and H₂/N₂" on the first two and "O₂/N₂" on the last three; CH₄
-  is a possible additive on the first two only. {ref}`MM1E <step-114>`
-  and {ref}`MM2E <step-125>` say "SkyWater names Cl₂ and CF₄ on its
-  etchers", while the metal-3 to metal-5 pages add that "SkyWater lists
-  no gases for its metal etchers"; the capability list's metal-etch
-  entries ("Lam 9600, Al, TiW, TiN, Pt"; "Lam 2300 Versys, Al, TiW, TiN,
-  Nb, Pt") carry no gases.[^skw-01]
+  is a possible additive on the first two only.
 * **Contact, via and seal-ring oxide etches.** C₂F₆ is a possible
   addition at {ref}`LICM1E <step-094>` but a listed gas at
   {ref}`CTME <step-108>`, {ref}`VIME <step-119>`,
@@ -494,13 +492,6 @@ decide between them, and the step pages are unchanged.
   {ref}`MM5 <step-162>`; the MM1, CAPM and MM5 recipe outlines say
   HMDS is not used on metal, while MM2, MM3, CAP2M and MM4 give no
   reason.
-* **Developer strength.** Six resources sections give it as
-  "2.38 %" ({ref}`FOM <step-004>`, {ref}`TUNM <step-035>`,
-  {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`,
-  {ref}`RPM <step-049>`, {ref}`P1M <step-061>`), 23 as "0.26 N", and
-  seven without a strength. These are two expressions of one solution:
-  the {ref}`lithography category page <category-lithography>` gives the
-  industry-standard strength as "0.26 N (2.38 wt.%)".
 * **Cap-oxide carriers.** The pages give "helium or argon diluent"
   ({ref}`NCAPOX <step-091>`), "helium or nitrogen carrier"
   ({ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`) and "helium
@@ -535,31 +526,15 @@ decide between them, and the step pages are unchanged.
   name Honeywell as the target supplier; the later PVD pages add JX
   Metals from the 10-K.
 
-### Spellings and transcriptions against SkyWater's page
+### Spellings against SkyWater's page
 
-* SkyWater writes "Gasonic PEP"; 31 step pages write "Gasonics PEP"
-  (some pages use both forms).
-* SkyWater writes "EKS265, EKC270 solvents"; 15 pages quote that, and
-  seven describe the chemistry as "EKC265/270" or "EKC265/EKC270"
-  class. The page does not say whether "EKS265" and "EKC265" are the
-  same product.
-* SkyWater writes "Mattson Aspen2", "Davinci" and "TEL ProZ Lithius
-  track"; many pages write "Aspen 2", "DaVinci" and "TEL ProZ/Lithius".
-* SkyWater writes "HBR" in the DPSII entry and "HBr" elsewhere;
-  {ref}`TUNARCE <step-036>` and {ref}`ONOME <step-042>` quote the DPSII
-  entry with "HBr".
-* SkyWater writes "Sulfuric"; the step pages use "sulphuric" outside
-  quotations, following this reference's British spelling. The pages
-  themselves use both "novolac" ({ref}`FOM <step-004>`,
-  {ref}`DNM <step-007>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`)
-  and "novolak" (the other pages and the lithography category page).
-* {ref}`DNIS <step-009>` describes the Akrion bench as having "spin
-  and IPA drying"; SkyWater writes "spin or IPA dry". Some pages join
-  sub-items of the list into one quotation — {ref}`GOX100 <step-043>`
-  quotes "Furnaces are all made by Aviza: wet oxidation to 1150C, dry
-  oxidation to 1150C", where the page has separate lines and no colon,
-  and {ref}`CAP2ME <step-153>` quotes "Batch Rotational (EKS265, EKC270
-  solvents …)".[^skw-01]
+* Quotations keep SkyWater's wording, including "Sulfuric", "HBR" in
+  the DPSII entry and "EKS265"; outside quotations the step pages write
+  "sulphuric", following this reference's British spelling, "novolac",
+  and the tool and solvent names set out on the
+  {ref}`machines index <machines-inconsistencies>`. The capabilities
+  page does not say whether "EKS265" and "EKC265" are the same
+  product.[^skw-01]
 
 ### Open questions
 
@@ -571,11 +546,10 @@ decide between them, and the step pages are unchanged.
 * **"PECVD Tungsten".** SkyWater lists "Lam/Novellus PECVD
   Tungsten";[^skw-01] the step pages describe the plug fill as chemical
   vapour deposition from WF₆ reduced by hydrogen, with a silane or
-  diborane nucleation layer. {ref}`WDEP2 <step-110>` to
-  {ref}`WDEP5 <step-147>` read the wording as a label for the tungsten
-  CVD tool rather than evidence of a plasma-assisted deposition;
-  {ref}`WDEP <step-099>` quotes it without comment. No public source
-  clarifies it.
+  diborane nucleation layer. {ref}`WDEP <step-099>` and
+  {ref}`WDEP2 <step-110>` to {ref}`WDEP5 <step-147>` read the wording as
+  a label for the tungsten CVD tool rather than evidence of a
+  plasma-assisted deposition. No public source clarifies it.
 * **Listed but unused.** The list names "Cobalt" among the PVD films,
   "Polyimide cure" and "Atmospheric selective oxidation" among the
   furnace processes, and "CO2 injected DI" and "IPA clean" among the
@@ -589,12 +563,6 @@ decide between them, and the step pages are unchanged.
   no step page mentions the two cleans, and only {ref}`CMPM4 <step-157>` quotes the Mirra's
   "Track ammonia clean". The PDK stack diagram draws a polyimide, "PI1
   K=2.94", for which the step list has no step.[^pdk-04]
-* **The PSG dimension labels.** {ref}`PSG <step-089>` describes the
-  stack diagram's 0.6099 µm label as the dielectric "over the gate
-  region". The diagram gives no region for it; the value equals the
-  distance from the field-oxide top (0.3262 µm) to the `li` bottom
-  (0.9361 µm), and 0.4299 µm equals the distance from the top of the
-  0.18 µm field poly to the `li` bottom (our arithmetic).[^pdk-04]
 * **Diagram labels without a step reading.** The stack diagram also
   carries an "IOX K=3.9" label and dimensions of 0.006 µm, 0.0431 µm,
   0.121 µm and 5.2523 µm that no step page, including {ref}`IOX45 <step-063>`,
