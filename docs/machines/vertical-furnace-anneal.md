@@ -222,14 +222,16 @@ exhaust.
   is run.[^kizilyalli-1998]
 * **Hydrogen safety.** Premixed forming gas of about 5 % hydrogen is not
   explosive;[^wiki-fg] richer hydrogen needs the interlocks, purges and
-  exhaust treatment of a flammable gas. The step pages describe purging
-  the tube of oxygen before hydrogen is admitted.
+  exhaust treatment of a flammable gas. The typical recipes on the step
+  pages purge the tube of oxygen before hydrogen is admitted (industry
+  practice).
 * **Quartzware, boats and heater.** As on the
   {ref}`oxidation furnace <machine-vertical-furnace-oxidation>`, with less
   wear at alloy temperatures than at oxidation temperatures.
 * **Monitor wafers.** MOS capacitor or transistor monitors for
   interface-trap density, since the purpose of the alloy is electrical;
-  the ALLY pages name charge pumping and C–V.
+  the ALLY pages name charge pumping and C–V as typical monitors
+  (industry practice).
 
 ## Process-integration notes for SKY130
 
