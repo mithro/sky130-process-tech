@@ -74,7 +74,8 @@ An industry-generic post-implant strip on a bare poly surface, for a
    also described in the patent literature.[^pat-strip-ulvac]
 2. **Wet clean.** {term}`SPM` (H₂SO₄/H₂O₂) for residual organics, then SC-1
    for particles, with the SC-1 time limited by its silicon etch
-   rate.[^lee-kt-1999] The category page and Kern's review give the
+   rate,[^lee-kt-1999] and, optionally, {term}`SC-2` for metals. The
+   category page and Kern's review give the
    chemistries;[^wiki-rca][^kern-1990] Ohmi's room-temperature
    sequence is the low-thermal-budget alternative.[^ohmi-1996]
    SkyWater's Akrion Gamma bench lists "Sulfuric, SC1".[^skw-01]
@@ -104,10 +105,13 @@ chemical oxide is thin and will be buried under the
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas, water vapour** for the
-  ash.[^skw-01][^fujimura-1991]
+* **Oxygen, nitrogen, forming gas (H₂/N₂)**, possibly **NH₃** (listed
+  for the Iridia) or **water vapour** (not among SkyWater's listed asher
+  gases), for the ash;[^skw-01][^fujimura-1991] **CF₄**, listed on the
+  Iridia and Mattson ashers,[^skw-01] would etch the exposed silicon
+  film and would, we infer, be omitted here.
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide** for
-  SPM/SC-1.[^wiki-rca]
+  SPM/SC-1; **hydrochloric acid** for an optional SC-2.[^wiki-rca]
 * **DI water, isopropanol, nitrogen.**
 * Chemical suppliers named by SkyWater: KMG Chemicals, EMD Performance
   Materials.[^sec-01][^sec-02]

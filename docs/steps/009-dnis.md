@@ -116,8 +116,10 @@ fab:
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** and, for some recipes, a
-  small **CF₄** addition to the ash.[^skw-01]
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the
+  ash;[^skw-01] **CF₄**, listed on the Iridia and Mattson ashers,[^skw-01]
+  attacks the exposed trench silicon and pad oxide and would, we infer,
+  be omitted here (category page).
 * **Sulphuric acid and hydrogen peroxide** (SPM).
 * **Ammonium hydroxide, hydrochloric acid, hydrogen peroxide**
   (SC-1/SC-2).[^wiki-rca]

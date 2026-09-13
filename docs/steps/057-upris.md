@@ -115,7 +115,9 @@ clean, for a 200 mm, 130 nm-era fab:
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas`** for the ash.[^skw-01]
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash; **CF₄**,
+  listed on the Iridia and Mattson ashers,[^skw-01] would etch the
+  exposed silicon film and would, we infer, be omitted here.
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide,
   hydrochloric acid** for SPM/SC-1/SC-2.[^wiki-rca]
 * **Ultrapure DI water, isopropanol, nitrogen.**

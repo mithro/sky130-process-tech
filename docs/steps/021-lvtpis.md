@@ -114,9 +114,9 @@ crust stage cannot be hurried.
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)**; **CF₄** is available but
-  attacks the oxide surface and is normally omitted[^skw-01] (category
-  page).
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash; **CF₄**,
+  listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
+  trench oxide and would, we infer, be omitted here (category page).
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
   acid**[^wiki-rca] (category page).
 * **DI water, isopropanol, nitrogen**.

@@ -127,9 +127,9 @@ cleanliness.[^txt-02]
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash; small **CF₄**
-  additions are available on the Mattson and Iridia tools[^skw-01] but
-  attack oxide and would normally be omitted here.
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash; **CF₄**,
+  listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
+  trench oxide and would, we infer, be omitted here (category page).
 * **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** for
   SPM;[^wiki-rca] **ammonium hydroxide** for SC-1; **hydrochloric acid**
   for SC-2[^wiki-rca] (category page).

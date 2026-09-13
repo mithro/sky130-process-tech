@@ -77,7 +77,8 @@ moderate-dose tilted implant, 200 mm, 130 nm era:
 2. **Wet strip and clean.** SPM ("3 parts of concentrated sulfuric
    acid and 1 part of 30 wt. % hydrogen peroxide solution" is
    typical)[^wiki-piranha] for residual organics, then SC-1
-   (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles;[^wiki-rca] SkyWater's
+   (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles and, optionally,
+   {term}`SC-2` for metals;[^wiki-rca] SkyWater's
    Akrion Gamma bench lists "Sulfuric, SC1".[^skw-01] Room-temperature
    alternatives to the hot sequence exist.[^ohmi-1996]
 3. **Rinse and dry.** Cascade DI-water rinse and spin or IPA dry.
@@ -110,10 +111,13 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash;[^skw-01] CF₄
-  would be omitted, we infer, to protect the screen oxide.
+* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the
+  ash;[^skw-01] **CF₄**, listed on the Iridia and Mattson
+  ashers,[^skw-01] attacks the screen oxide and would, we infer, be
+  omitted here (category page).
 * **Sulphuric acid and hydrogen peroxide** for SPM;[^wiki-piranha]
-  **ammonium hydroxide** for SC-1.[^wiki-rca]
+  **ammonium hydroxide** for SC-1; **hydrochloric acid** for an
+  optional SC-2.[^wiki-rca]
 * **Ultrapure DI water**, **isopropanol**, **nitrogen**.
 * SkyWater names KMG Chemicals and EMD Performance Materials among its
   chemical suppliers.[^sec-01][^sec-02]

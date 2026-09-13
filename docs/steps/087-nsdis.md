@@ -147,9 +147,11 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)**, possibly **NH₃** or
-  **water vapour**, for the two-step ash;[^skw-01][^fujimura-1994]
-  arsenic-tolerant exhaust scrubbing.
+* **Oxygen, nitrogen, forming gas (H₂/N₂)**, possibly **NH₃** (listed
+  for the Iridia) or **water vapour** (not among SkyWater's listed asher
+  gases), for the two-step ash;[^skw-01][^fujimura-1994] **CF₄**, listed
+  on the Iridia and Mattson ashers,[^skw-01] attacks the oxide and would,
+  we infer, be omitted here; arsenic-tolerant exhaust scrubbing.
 * **Sulphuric acid and hydrogen peroxide** for SPM; **ammonium
   hydroxide** for SC-1; **hydrochloric acid** for SC-2.[^wiki-rca]
 * **Ultrapure DI water**, **isopropanol**, **nitrogen**.
