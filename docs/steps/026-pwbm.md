@@ -45,6 +45,30 @@ depends on the block,[^pdk-07] so this reference treats the unticked
 box as a documentation inconsistency rather than as evidence that the
 mask is absent (see *Open questions*).
 
+Measured data are consistent with a zero-Vt device that has no P-well
+under its channel. The SKY130 raw-data repository publishes I–V sweeps
+of a {term}`test tile` structure that the pad list names `n20zvtvhv1`
+("w/l=30/5.5; m=2", cell name
+`s8defet_ccgx_hvn_nw_dnw_native_sti_2p0_nopw_L5p0_W60`), whose only body
+connection in the pad list is `Psub`;[^raw-data-testtile-pads] the repository
+files it under `nfet_20v0_nvt`, but its geometry is that of the PDK's
+`nfet_20v0_zvt` e-test structure ("2\* 30/5.5") rather than the
+"2\* 30/1.0" listed for `nfet_20v0_nvt`.[^pdk-07] Five instances give a
+threshold of −0.12 to −0.13 V by maximum-transconductance extrapolation
+at a drain bias of 0.1 V, against an e-test nominal of −0.1224 V, and a
+body-effect coefficient of 0.070–0.072 √V from the threshold shift at
+substrate biases of −2.5 V and −5 V (our extraction from the published
+measurements).[^raw-data-hv-mosfets][^pdk-07] With the standard
+uniform-doping expression and the thick-oxide capacitance measured on
+the same tile ({ref}`GOX100 <step-043>`), that coefficient corresponds
+to an effective body doping of about 1.4 × 10¹⁵ cm⁻³ — far below the
+4 × 10¹⁷ cm⁻³ P-well peak and of the same order as the PDK's
+8 × 10¹⁴ cm⁻³ background concentration[^pdk-03] — whereas the same
+calculation gives about 1.5 × 10¹⁷ cm⁻³ for a 5 V NMOS in the standard
+P-well (see {ref}`DEPI <step-038>`).[^raw-data-hv-mosfets] The value is
+an average over the depleted depth and says nothing about how the block
+was drawn or printed.
+
 The `pwbm` rules (pwbm.1–pwbm.5) have no public numeric values ("N/A")
 but describe the geometry: `pwbm` regions live inside the 20 V
 identifier `uhvi`; "dnwell inside UHVI must be enclosed by pwbm (exempt
@@ -176,6 +200,10 @@ raises NMOS {term}`Vt`.[^hook-2003]
   implants blocked".[^pdk-07]
 * SkyWater PDK, *Criteria & Assumptions* — P-well peak concentration and
   coordinate, vertical dimension, junction offset.[^pdk-03]
+* SKY130 raw-data repository — I–V sweeps of the 20 V zero-Vt test-tile
+  structure (threshold, body-effect coefficient and effective doping
+  quoted here are our extraction) and the pad-list row that names
+  it.[^raw-data-hv-mosfets][^raw-data-testtile-pads]
 * SkyWater PDK, *High Voltage Methodology* — drain extensions
   "fabricated by lightly doped Nwells and Pwells".[^pdk-hv]
 * SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
@@ -345,3 +373,20 @@ raises NMOS {term}`Vt`.[^hook-2003]
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V,
+    20 V, native, zero-Vt and ESD transistors and the thick-oxide gate
+    capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_g5v0d10v5`, `pfet_g5v0d10v5`, `nfet_g5v0d16v0`,
+    `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
+    `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
+    `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
