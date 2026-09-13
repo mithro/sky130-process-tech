@@ -199,8 +199,8 @@ oxidation or clean must remove.
   Plastics benches); centrifugal {ref}`spray processors <machine-wet-bench>` (FSI Mercury);
   {ref}`single-wafer spin etchers <machine-single-wafer-spin-processor>` for backside film removal and bevel clean
   (SEZ, now Lam) — the natural tool class for {ref}`BFR <step-060>`.
-* **Metrology and inspection**: {term}`CD-SEM` after etch, cross-section SEM for
-  profiles, optical inspection for residues, and etch-rate monitor
+* **Metrology and inspection**: {term}`CD-SEM` after etch, {ref}`cross-section SEM <machine-cross-section-sem-profilers>` for
+  profiles, {ref}`optical inspection <machine-defect-inspection>` for residues, and etch-rate monitor
   wafers.
 
 ## Typical consumables

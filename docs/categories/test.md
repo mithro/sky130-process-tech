@@ -149,7 +149,7 @@ device.
 
 ## Typical equipment
 
-* **Parametric testers**: Keithley Series S600 (designed for "process
+* **{ref}`Parametric testers <machine-parametric-tester>`**: Keithley Series S600 (designed for "process
   control, process and equipment tuning and optimization, equipment
   qualification, Wafer Acceptance Testing, and device modeling and
   characterization");[^keithley-s600] Hewlett-Packard/Agilent 4062UX,

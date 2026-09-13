@@ -176,9 +176,8 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
   millimeters"),[^ag-10k] Applied Materials Centura RTP
   (Radiance/Vantage chambers),[^amat-rtp] Mattson (which absorbed the
   Steag and AG Associates RTP lines).
-* **Metrology**: spectroscopic ellipsometers (KLA-Tencor, Rudolph,
-  Nanometrics) for thickness and refractive index; C–V and I–V test
-  structures at {ref}`category-test` for electrical thickness and
+* **Metrology**: {ref}`spectroscopic ellipsometers <machine-film-thickness-metrology>` (KLA-Tencor, Rudolph,
+  Nanometrics) for thickness and refractive index; {ref}`C–V and I–V test structures <machine-parametric-tester>` at {ref}`category-test` for electrical thickness and
   breakdown.
 
 ## Typical consumables
