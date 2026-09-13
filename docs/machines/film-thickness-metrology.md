@@ -305,10 +305,13 @@ targets, limits and sampling plans are not public.
 * **Doped glass.** {ref}`PSG <step-089>` names ellipsometry and FTIR for
   thickness and phosphorus content, the infrared band method Stout and
   Krishnan describe.[^stout-1989]
-* **Metal films.** The liner, tungsten, TiN and Ti/Al–Cu stack pages name
-  XRF, a four-point probe and a stress gauge. For opaque liners and
-  stacks, picosecond ultrasonics measures each layer of a multilayer
-  stack.[^stoner-1998]
+* **Metal films.** The liner, TiN, TiW and Ti/Al–Cu stack pages and the
+  first tungsten fill ({ref}`WDEP <step-099>`) name XRF, a four-point
+  probe and a stress gauge; the later tungsten-fill pages
+  ({ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`,
+  {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>`) name a four-point
+  probe and a stress gauge. For opaque liners and stacks, picosecond
+  ultrasonics measures each layer of a multilayer stack.[^stoner-1998]
 * **Capacitor dielectrics.** {ref}`CAPILD <step-135>` and
   {ref}`CAPILD2 <step-150>` name a spectroscopic ellipsometer for
   thickness and index, and the capacitor etch pages
