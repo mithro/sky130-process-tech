@@ -100,8 +100,9 @@ page lists the stack as "5 levels of metal (`p` - penta)", "Inductor or
 Inductor-Capable (`i`)", "Poly resistor (`r`)", "SONOS shrunken cell
 (`s`)" and "Supports 10V regulated supply (`10R`)".[^pdk-02]
 
-The PDK's device pages document 1.8 V NMOS and PMOS transistors with
-low- and high-threshold variants, native NMOS at 3.0 V and 5.0 V,
+The PDK's device pages document 1.8 V NMOS and PMOS transistors,
+low-threshold NMOS and PMOS and a high-threshold PMOS, 1.8 V
+accumulation-mode varactors, native NMOS at 3.0 V and 5.0 V,
 "5.0V/10.5V" NMOS and PMOS, a "10V/16V PMOS FET" and an "11V/16V NMOS
 FET", 20 V NMOS and PMOS (including native, zero-threshold and isolated
 NMOS), an ESD NMOS, diodes, NPN and PNP bipolar transistors, SRAM and
@@ -118,8 +119,8 @@ substrate.[^skw-02]
 Each of these features has a visible cost in the step list, and the
 module table below shows where: the two gate-oxide thicknesses need a
 mask of their own ({ref}`LVOM <step-044>`); the drain-extended devices
-need dedicated well masks ({ref}`PWBM <step-026>`,
-{ref}`PWDEM <step-030>`); the SONOS cell needs a tunnel window, an ONO
+need their own P-well mask and blocked regions in the P-well block mask
+({ref}`PWDEM <step-030>`, {ref}`PWBM <step-026>`); the SONOS cell needs a tunnel window, an ONO
 island and its own tip implant ({ref}`TUNM <step-035>`,
 {ref}`ONOM <step-041>`, {ref}`LDNTM <step-071>`); the precision
 resistors need three implant masks ({ref}`RPM <step-049>`,
@@ -128,8 +129,8 @@ needs a contact and a line mask ({ref}`LICM1 <step-093>`,
 {ref}`LI1M <step-102>`); and each MiM capacitor needs a plate mask
 ({ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`). These pairings
 rest on the PDK's descriptions of the corresponding layers, as set out on
-each step page. Three further features set SKY130 apart from a typical
-130 nm logic process of its time. Its interconnect is aluminium ("5:
+each step page. Three further features differ from the copper, salicided
+processes of leading-edge 130 nm logic (our characterisation). Its interconnect is aluminium ("5:
 Al"[^skw-02]), which the step pages describe as patterned
 {term}`subtractively <subtractive metallisation>` over tungsten plugs
 rather than as copper {term}`damascene` ({ref}`TIAL6 <step-112>`,
@@ -157,8 +158,8 @@ devices, deep nwell"; `s8phirs`, "The base process plus rdl layer and
 rdl metal inductors"; `s8phrc`, "The base process plus dual MiM cap
 layers on metal 3 and metal 4"; and `s8pfn-20`, "The base process plus
 UHV (ultra-high voltage) implants for 20V device support".[^pdk-previous]
-Thicker top metals are documented only in the PDK's tables for flows
-other than the one described here. The antenna-calculation table gives
+The PDK documents thicker top metals only in entries labelled with other
+flow names. The antenna-calculation table gives
 "Metal5 thickness for antenna ratio calculation (S8P\*/SP8P\* with 2um
 thick metal)" as 2 µm beside a 1.2 µm entry "with 1.2um thick metal", a
 2 µm metal 3 for the "S8TM\* flow" and a 2 µm metal 4 for "S8Q\*/SP8Q";[^pdk-03]
