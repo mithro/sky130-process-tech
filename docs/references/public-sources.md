@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1129
+written page has exactly one entry here; the inventory holds 1130
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17 and 8.18 were added
@@ -8475,6 +8475,44 @@ from these files on this site is our extraction from the published
 measurements, with the method stated where it is quoted. Used on steps
 008, 011, 014, 015, 020, 023, 024, 045, 066 and 171, the test category
 page and the overview. Tier: cross-check.
+
+**RAW-DATA-PASSIVES** — SkyWater PDK Authors (measurements by CoolCAD
+Electronics LLC), measured data for resistors, capacitors, varactors and
+bipolar transistors: IC-CAP `.mdm` files in the
+`sky130_fd_pr/cells/unsorted/` directory of the raw-data repository
+(subdirectories `res`, `cap_mim`, `cap_var`, `npn`, `pnp`, `diode`,
+`isolation` and `unknown`), 2022 (Apache 2.0).
+<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
+307 `.mdm` files, beside seven ring-oscillator oscilloscope captures
+(CSV with PNG plots; the CSV headers are the only dated files, "18 JUL
+2022"). Two-terminal I–V sweeps (to ±1 V or less) of 88 "300 ohm/sq
+P+" and 88 "2K ohm/sq P-" poly resistors (drawn widths 0.33–5.73 µm,
+0.5–20 squares), of 25-square N⁺, high-voltage N⁺, P⁺ and
+high-voltage P⁺ diffusion resistors and a 0.14 µm N⁺ line, of one
+N-well, two deep N-well and two isolated P-well resistors of about one
+square, of five `xpwres` (`res_iso_pw`) lengths, of well-isolation
+structures and of a via-4 chain; four-terminal sweeps of van der Pauw
+structures, narrow poly and P⁺ lines and metal-1/metal-2 lines; C–V sweeps from −3.3 V to +3.3 V of
+first-level, second-level and stacked MiM capacitors (nine files) and
+from −4 V to +4 V of `cap_var_lvt` and `cap_var_hvt` varactors
+(14 files); forward and reverse Gummel and Early sweeps of a
+poly-emitter NPN and 0.68 µm lateral PNPs; diode I–V and MOS overlap
+C–V sweeps. File names give the structure, drawn geometry, test-tile
+module and pad numbers, which match the rows of RAW-DATA-TESTTILE-PADS;
+headers give only the sources, sweeps, compliance and instrument-channel
+names — no temperature, date, lot, wafer, die or C–V frequency — and
+the undocumented suffixes `_D2`/`_D3` do not match the pad list's die
+rows. Labelling points that affect readings: the 2.85 µm poly-resistor
+pairs the pad list gives four squares in modules 6210 and 6224 (pads
+4–6) measure about one square's resistance; the 1.41 µm "L = 13.142,
+sq = 4" pairs measure like the other four-square structures; module
+4549, whose file is named `large_mim_cap`, is the pad list's "CAP2M
+over M4" capacitor and measures like the second-level module 4541; one
+sense channel of the module-3379 van der Pauw file stays at about
+0.2 mV. Every value quoted from these files on this site is our
+extraction from the published measurements, with the method stated
+where it is quoted. Used on steps 007, 018, 022, 027, 047, 052, 053,
+055, 056, 082, 086, 135, 138, 150 and 153. Tier: cross-check.
 
 ## 9. Evidence about specific tools at SkyWater
 
