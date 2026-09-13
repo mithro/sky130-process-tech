@@ -120,7 +120,7 @@ reading is used throughout these pages and is marked as an inference.
 
 * **ASML i-line stepper or scanner.**[^skw-01] Strength: strong for
   the tools; **inference** for the layer assignment.
-* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z.**[^skw-01]
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
   Strength: strong.
 * **Overlay — KLA 5200/5300/Archer.**[^skw-01] Strength: strong.
 
