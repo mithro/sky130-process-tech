@@ -104,7 +104,18 @@ the substrate ({ref}`SMAT <step-001>`), the gate oxide
 depletion implant ({ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`,
 {ref}`DEPI <step-038>`) and electrical test ({ref}`HPETEST <step-171>`), each marked as our
 extraction rather than a published value; the files record no
-temperature, date or wafer.[^raw-data-hv-mosfets]
+temperature, date or wafer.[^raw-data-hv-mosfets] The files for the five
+1.8 V transistor types (standard, low-Vt and high-Vt) are used the same
+way: measured thresholds, drain currents and body effect are quoted
+beside the e-test values at {ref}`HPETEST <step-171>`, on the
+threshold-implant pages ({ref}`LVTNM <step-014>`,
+{ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`,
+{ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`,
+{ref}`NCHI <step-045>`), for the gate-length dependence at
+{ref}`BHI <step-066>`, for deep N-well at {ref}`DNI <step-008>` and for
+the source/drain diffusion extent at {ref}`FILOX <step-011>`; they bear
+on the pages' readings of those steps but give no implant doses or
+depths.[^raw-data-lv-mosfets]
 
 ### What the process offers
 
@@ -792,7 +803,7 @@ public.
 * SKY130 raw-data repository, README and test-tile pad documentation —
   the CoolCAD measurements and the 273 test modules, including the MiM
   capacitor structures; the transistor and gate-capacitor files from
-  which our extracted values come.[^raw-data-readme][^raw-data-testtile-pads][^raw-data-hv-mosfets]
+  which our extracted values come.[^raw-data-readme][^raw-data-testtile-pads][^raw-data-hv-mosfets][^raw-data-lv-mosfets]
 * SkyWater PDK, *Criteria & Assumptions* — poly, cap, spacer and pre-LI
   dielectric thicknesses, well and junction depths, implant angles and
   the antenna thicknesses by flow.[^pdk-03]
@@ -1156,6 +1167,14 @@ public.
     `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
     `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
     `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 1.8 V
+    transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_01v8`, `nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt`,
+    `pfet_01v8_lvt`), `google/skywater-pdk-sky130-raw-data`
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
