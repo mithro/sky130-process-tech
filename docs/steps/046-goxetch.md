@@ -148,7 +148,7 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Hydrofluoric acid (49 %)** diluted, or **BOE** (NH₄F/HF) with
+* **Hydrofluoric acid (49 %)** ({ref}`wet chemicals <material-wet-chemicals>`) diluted, or **BOE** (NH₄F/HF) with
   **surfactant**;[^pat-04][^wiki-boe] {term}`BOE` is on SkyWater's
   Akrion list.[^skw-01]
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide,

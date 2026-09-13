@@ -111,7 +111,7 @@ chemical oxide is thin and will be buried under the
   gases), for the ash;[^skw-01][^fujimura-1991] **CF₄**, listed on the
   Iridia and Mattson ashers,[^skw-01] would etch the exposed silicon
   film and would, we infer, be omitted here.
-* **Sulphuric acid, hydrogen peroxide, ammonium hydroxide** for
+* **Sulphuric acid, hydrogen peroxide, ammonium hydroxide** ({ref}`wet chemicals <material-wet-chemicals>`) for
   SPM/SC-1; **hydrochloric acid** for an optional SC-2.[^wiki-rca]
 * **DI water, isopropanol, nitrogen.**
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021

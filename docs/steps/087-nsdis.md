@@ -153,7 +153,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   gases), for the two-step ash;[^skw-01][^fujimura-1994] **CF₄**, listed
   on the Iridia and Mattson ashers,[^skw-01] attacks the oxide and would,
   we infer, be omitted here; arsenic-tolerant exhaust scrubbing.
-* **Sulphuric acid and hydrogen peroxide** for SPM; **ammonium
+* **Sulphuric acid and hydrogen peroxide** ({ref}`wet chemicals <material-wet-chemicals>`) for SPM; **ammonium
   hydroxide** for SC-1; **hydrochloric acid** for SC-2.[^wiki-rca]
 * **Ultrapure DI water**, **isopropanol**, **nitrogen**.
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021

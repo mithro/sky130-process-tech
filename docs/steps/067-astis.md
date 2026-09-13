@@ -142,7 +142,7 @@ practice).[^txt-02]
   ash;[^skw-01] **CF₄**, listed on the Iridia and Mattson
   ashers,[^skw-01] attacks the screen oxide and would, we infer, be
   omitted here (category page).
-* **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** for
+* **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** ({ref}`wet chemicals <material-wet-chemicals>`) for
   SPM;[^wiki-piranha] **ammonium hydroxide** for SC-1; **hydrochloric
   acid** for SC-2.[^wiki-rca]
 * **Ultrapure DI water**, **isopropanol** for drying, **nitrogen**.

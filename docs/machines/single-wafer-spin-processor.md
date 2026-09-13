@@ -220,8 +220,9 @@ described on the {ref}`post-CMP cleaner page
 
 ## Consumables and facilities
 
-The wet chemicals are listed in the {ref}`materials index
-<materials-index>`; what is specific to a spin processor is summarised
+The wet chemicals are described on the
+{ref}`wet chemicals <material-wet-chemicals>` page and listed in the
+{ref}`materials index <materials-index>`; what is specific to a spin processor is summarised
 here. None of the SkyWater sources describes the tool's chemical supply
 or exhaust.
 
@@ -293,6 +294,8 @@ public.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — HF, sulfuric acid, peroxide and solvents.
+* {ref}`material-wet-chemicals` — the acids, peroxide cleans and solvents,
+  their grades and SkyWater's listed chemistries.
 
 ## References
 

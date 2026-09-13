@@ -127,7 +127,7 @@ An industry-generic post-implant strip and pre-anneal clean for a
   ash;[^skw-01] **CF₄**, listed on the Iridia and Mattson
   ashers,[^skw-01] attacks the screen oxide and would, we infer, be
   omitted here (category page).
-* **Sulphuric acid and hydrogen peroxide** for SPM;[^wiki-piranha]
+* **Sulphuric acid and hydrogen peroxide** ({ref}`wet chemicals <material-wet-chemicals>`) for SPM;[^wiki-piranha]
   **ammonium hydroxide** for SC-1; **hydrochloric acid** for
   SC-2.[^wiki-rca]
 * **Ultrapure DI water**, **isopropanol**, **nitrogen**.
