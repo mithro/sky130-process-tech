@@ -112,7 +112,7 @@ fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm single-wafer: Gasonics
+* **Downstream plasma asher**, 200 mm single-wafer: GaSonics
   (Novellus) Aura/PEP, Mattson Aspen, Axcelis/Fusion ES, PSK;
   Axcelis's asher patent describes a design aimed at raising the
   removal rate of implanted resist,[^pat-asher-axcelis] and the
@@ -123,7 +123,7 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia RF microwave and Mattson Aspen 2 ashers** —
+* **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** —
   named with their gases and temperatures on SkyWater's facilities
   page.[^skw-01] Strength: **strong** for existence; the assignment
   of this strip to any one of them is an inference, the Iridia's
@@ -164,8 +164,8 @@ fab (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Gasonic PEP, Iridia and
-  Mattson Aspen2 with gases and temperatures; Akrion Gamma; DNS and
+* SkyWater, *Facilities & Capabilities* — GaSonics PEP, Iridia and
+  Mattson Aspen II with gases and temperatures; Akrion Gamma; DNS and
   FSI benches.[^skw-01]
 * Indeed, SkyWater listings — defect-metrology tools including
   AIT.[^job-01]

@@ -97,7 +97,7 @@ An industry-generic post-implant strip and pre-anneal clean for a
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm single-wafer: Gasonics
+* **Downstream plasma asher**, 200 mm single-wafer: GaSonics
   (Novellus) Aura/PEP, Mattson Aspen, Axcelis/Fusion ES series, PSK
   ({ref}`category-strip`).
 * **Batch wet bench** with SPM, SC-1 and SC-2 tanks and a
@@ -107,7 +107,7 @@ An industry-generic post-implant strip and pre-anneal clean for a
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia RF microwave and Mattson Aspen 2 ashers** —
+* **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** —
   named on SkyWater's facilities page with their gases and
   temperatures.[^skw-01] Strength: **strong** for existence; the
   assignment of this strip to any one of them is an inference.
@@ -146,8 +146,8 @@ An industry-generic post-implant strip and pre-anneal clean for a
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Gasonic PEP; Iridia; Mattson
-  Aspen2; Akrion Gamma; DNS and FSI Mercury benches with
+* SkyWater, *Facilities & Capabilities* — GaSonics PEP; Iridia; Mattson
+  Aspen II; Akrion Gamma; DNS and FSI Mercury benches with
   "HF/SC1/SC2".[^skw-01]
 * SkyWater PDK, *Criteria & Assumptions* — photoresist thickness
   1.14 µm.[^pdk-03]
