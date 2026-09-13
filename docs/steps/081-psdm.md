@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 81 of 171 |
+| **Step number** | 81 of 171[^steps-sheet] |
 | **Step code** | `PSDM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
 | **Phase** | FEOL — extensions, spacers, source/drain |
@@ -343,3 +343,6 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
     ratio photolithographic method for high energy implantation*, US
     6,576,405 B1, granted 2003-06-10.
     <https://patents.google.com/patent/US6576405B1/en>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

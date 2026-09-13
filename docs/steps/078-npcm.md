@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 78 of 171 |
+| **Step number** | 78 of 171[^steps-sheet] |
 | **Step code** | `NPCM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
 | **Phase** | FEOL — extensions, spacers, source/drain |
@@ -328,3 +328,6 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
     Resistor Fingers", *IEEE Transactions on Semiconductor
     Manufacturing* **27**(2), 294–300 (2014).
     <https://doi.org/10.1109/TSM.2014.2311375>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

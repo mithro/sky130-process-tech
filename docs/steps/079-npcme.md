@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 79 of 171 |
+| **Step number** | 79 of 171[^steps-sheet] |
 | **Step code** | `NPCME` |
 | **Category** | {ref}`Etch <category-etch>` |
 | **Phase** | FEOL — extensions, spacers, source/drain |
@@ -342,3 +342,6 @@ fab (SKY130's recipe is not public):
     *1997 IEEE/SEMI Advanced Semiconductor Manufacturing Conference and
     Workshop (ASMC 97) Proceedings*, pp. 252–256.
     <https://doi.org/10.1109/ASMC.1997.630744>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

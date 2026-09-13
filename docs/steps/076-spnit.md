@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 76 of 171 |
+| **Step number** | 76 of 171[^steps-sheet] |
 | **Step code** | `SPNIT` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | FEOL — extensions, spacers, source/drain |
@@ -450,3 +450,6 @@ fab (SKY130's recipe is not public):
 [^hughey-2003]: M. P. Hughey and R. F. Cook, "Irreversible Tensile
     Stress Development in PECVD Silicon Nitride Films", *MRS
     Proceedings* **795** (2003). <https://doi.org/10.1557/PROC-795-U1.6>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
