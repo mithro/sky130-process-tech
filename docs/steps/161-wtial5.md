@@ -13,9 +13,9 @@
 ## What this step is
 
 `WTIAL5` deposits the metal-5 film stack — the top metal of SKY130,
-which carries power, wide buses, inductors and the bond pads. Onto the
+which carries power, wide buses, inductors and the {term}`bond pads <bond pad>`. Onto the
 cap oxide of {ref}`NCAPOX6 <step-158>`, and into the open via-4 holes
-just etched at {ref}`VIM4E <step-160>`, a sputtering cluster tool lays
+just etched at {ref}`VIM4E <step-160>`, a sputtering {term}`cluster tool` lays
 down, in one vacuum sequence on our reading, a refractory underlayer, a
 thick aluminium–copper alloy and a titanium–tungsten cap; the
 {ref}`MM5 <step-162>` mask and {ref}`MM5E <step-163>` etch then pattern
@@ -83,14 +83,14 @@ and reasoning (all inference):
   0.310 µm (m5.3) where metal 4 needs 0.190 µm (via4.4),[^pdk-periph] and
   the minimum metal-5 line is twice the via width; a via that the top
   metal fills needs the metal to overlap its rim generously (inference).
-* *Established techniques exist.* Aluminium via fill was a production
-  alternative to tungsten plugs in the 1990s, compared with them by Gn,
-  Liu and Guo:[^gn-1994] hot or reflow sputtering — reviewed by Kikuta,
+* *Established techniques exist.* {term}`Aluminium via fill <aluminium via fill>` was a production
+  alternative to {term}`tungsten plugs <W plug>` in the 1990s, compared with them by Gn,
+  Liu and Guo:[^gn-1994] hot or {term}`reflow` sputtering — reviewed by Kikuta,
   who notes that it avoids Al/W interfaces and the higher resistivity of
   tungsten[^kikuta-1995] — and studied by Ono, Ushiku and Yoda (Al–Si
   contact fill at 500–550 °C) and Nishimura, Yamada and Ogawa
   (high-temperature Al–Si–Cu via fill), with Hariu et al. measuring the
-  electromigration lifetime of Al–Cu/Ti films sputtered at 500 °C with
+  {term}`electromigration` lifetime of Al–Cu/Ti films sputtered at 500 °C with
   bias;[^ono-1990][^nishimura-1991][^hariu-1989]
   the Applied Materials multistep process, which sputters a thin
   aluminium layer at modest power, then continues at high power with
@@ -114,7 +114,7 @@ and reasoning (all inference):
 Which technique — a thick, conventionally sputtered film leaving a
 dimple over each via, a heated or biased deposition, or a high-pressure
 fill — SKY130 uses is not public. A hot fill near 500 °C would also
-expose both MiM capacitor levels and four aluminium levels to a
+expose both {term}`MiM capacitor` levels and four aluminium levels to a
 temperature above the 400–450 °C usually allowed for an aluminium back
 end (industry-typical[^txt-05]), which argues for the gentler options
 (the Applied Materials patent itself prefers stopping near
@@ -128,7 +128,7 @@ sputtering of Ti, Al–Cu and Ti:W films, and {ref}`WTIAL3 <step-134>` what a
 thick film changes. Two things are specific to this instance. It is the
 thickest metal deposition of the flow, about 1.5 times metal 3 and 4
 (1.26 µm against 0.845 µm[^pdk-04]), with the longer deposition, larger
-grains, higher stress and hillock tendency that go with it. And it is
+grains, higher stress and {term}`hillock` tendency that go with it. And it is
 the only metal level in the flow deposited onto open vias rather than
 onto polished plugs, so its underlayer and early aluminium must cover
 the via walls and floor as well as the flat oxide (inference from the
@@ -147,7 +147,7 @@ Metal 5 is the top routing level and the interface to the package:
   places the global wires.[^itrs-02]
 * **Inductors.** The PDK calls the technology "Inductor or
   Inductor-Capable";[^pdk-02] a thick top metal is the classic route to
-  a high-quality-factor spiral inductor, as Chu et al. showed for thick
+  a high-{term}`quality-factor <quality factor>` spiral inductor, as Chu et al. showed for thick
   top metal with different passivation schemes.[^chu-2001] The periphery
   rules' `rdl` table "Defines the Cu Inductor" that "Connects to met5
   through the pad opening",[^pdk-periph] an option built on top of this
@@ -189,17 +189,17 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 {ref}`TIAL6 <step-112>`.
 
 1. **Cluster tool.** A multi-chamber PVD platform — SkyWater's "AMAT PVD
-   Metal" with "Sputter etch, degas"[^skw-01] — so that degas, pre-clean
+   Metal" with "Sputter etch, degas"[^skw-01] — so that {term}`degas`, pre-clean
    and the depositions happen without an air break; the Endura is the
    200 mm-era Applied Materials platform.[^amat-endura]
 2. **Degas.** A vacuum bake long enough to drive water from the via
    walls and the oxide; Taguchi, Maeda and Aoyama improved aluminium via
    filling by controlling that outgassing.[^taguchi-1998]
-3. **Pre-clean.** A light argon sputter etch to remove fluoride,
+3. **Pre-clean.** A light argon {term}`sputter etch` to remove fluoride,
    polymer and oxide residue from the TiW floors of the vias (industry
    practice[^txt-05]); on a `cap2m` plate the same etch must not thin the
    plate (inference).
-4. **Underlayer.** Ti or TiW; collimated titanium[^rossnagel-1991] places
+4. **Underlayer.** Ti or TiW; {term}`collimated titanium <collimated sputtering>`[^rossnagel-1991] places
    more of the film on the via floor, and an underlayer changes the
    grain structure and via fill of the aluminium above it, as Pramanik
    and Jain found for sputtered aluminium and Lee and Rha for a CVD–PVD
