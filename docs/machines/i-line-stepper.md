@@ -339,6 +339,9 @@ implants.[^pdk-03]
   measurements after develop.
 * {ref}`masks-index` — each mask's PDK entry, minimum CD, plates and the
   mask-type record for vias 2–4.
+* {ref}`mask-dnm` and {ref}`mask-vim4` — per-mask pages for the deep
+  N-well mask, assigned to this class, and the via-4 mask, for which it
+  is the alternative.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, developer and exposure-tool
