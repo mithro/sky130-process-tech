@@ -299,7 +299,7 @@ pumps or abatement.
   holds millitorr pressures at high gas flows.[^pat-hdp-reactor-amat]
 * **Monitor wafers.** Blanket wafers for thickness, uniformity and
   particles, and patterned wafers cross-sectioned for voids, as the step
-  pages describe ({ref}`FILOX <step-011>`, {ref}`NILD3 <step-115>`).
+  pages' industry-generic outlines describe ({ref}`FILOX <step-011>`, {ref}`NILD3 <step-115>`).
 
 ## Process-integration notes for SKY130
 
