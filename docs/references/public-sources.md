@@ -11445,8 +11445,8 @@ and spin rinse dryer, vertical edge-gripped wafers, on-board chemical
 mixing, HF in the brush modules and heated RCA chemistries in the
 megasonic module. Used on the CMP polisher machine page. Tier:
 cross-check (vendor statement).
-Also used on the post-CMP cleaner machine page.
-Also used on the CMP category page.
+Also used on the post-CMP cleaner machine page, the CMP category page and
+the CMPP, WCMPLI and CMPL step pages.
 
 **IPEC-472-1997** — IPEC-Planar, *AVANTI 472*, product page; Wayback
 Machine capture of 1997-06-26.
