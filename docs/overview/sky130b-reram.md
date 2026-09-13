@@ -234,7 +234,7 @@ says which parts are typical and which are our inference for SKY130.
 7. **Stack etch.** The electrodes and oxide are removed outside the
    islands. Beckmann et al. etched TiN/Ti by {term}`RIE` and
    compared a dilute-HF wet etch with a BCl₃/O₂ plasma for the HfO₂,
-   finding that the choice affected structure, electrical behaviour and
+   examining the effect on structure, electrical behaviour and
    yield;[^beckmann-2016] TSMC's patent etches the top electrode and cap
    with a fluorine or argon plasma, forms nitride sidewall spacers, and
    then etches the oxide and bottom electrode with the spacers as a
@@ -545,8 +545,9 @@ the tier needs:[^skw-01]
   buffer.[^chen-2009-hfox]
 * Govoreanu et al. (imec), IEDM 2011 — a sub-10 nm Hf/HfOx cell and the
   role of the cap layer.[^govoreanu-2011]
-* Beckmann et al., *ECS Trans.* 2016 — how the HfO₂ etch (wet HF or
-  BCl₃/O₂ plasma) affects RRAM yield.[^beckmann-2016]
+* Beckmann et al., *ECS Trans.* 2016 — wet HF versus BCl₃/O₂ RIE
+  removal of the HfO₂, compared for structure, electrical behaviour and
+  yield.[^beckmann-2016]
 * Golonzka et al. (Intel), VLSI 2019 — RRAM integrated into a
   production logic flow.[^golonzka-2019]
 * George, *Chem. Rev.* 2010 — atomic layer deposition.[^george-2010]
