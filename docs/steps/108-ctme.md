@@ -191,7 +191,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 * **O₂/N₂** (and {term}`forming gas`) for the ash;[^skw-01] CF₄, listed on
   the Iridia and Mattson ashers,[^skw-01] would attack the exposed TiN and
   would, we infer, be left out. **Amine or semi-aqueous solvent**
-  (EKC265/EKC270 class; SkyWater lists "EKS265, EKC270
+  ({ref}`wet chemicals <material-wet-chemicals>`; EKC265/EKC270 class; SkyWater lists "EKS265, EKC270
   solvents"[^skw-01]) and DI water for the post-etch clean.
 * **Chamber consumables** (liners, focus and edge rings, electrodes),
   **monitor wafers** with blanket oxide and nitride for rate and
