@@ -129,7 +129,7 @@ typically:
 
 * **Crystal pullers, wire saws, lapping/polishing lines** — at the
   wafer vendor, not in the fab.[^wiki-wafer][^txt-07]
-* **{ref}`Unpatterned-wafer surface scanner <machine-starting-material>`** (laser light scattering) for
+* **{ref}`Unpatterned-wafer surface scanner <machine-starting-material>`** ({ref}`laser light scattering <machine-defect-inspection>`) for
   incoming particle inspection; the KLA-Tencor Surfscan family was the
   200 mm-era standard.
 * **{ref}`Wafer laser marker / scribe <machine-starting-material>`** for identification.

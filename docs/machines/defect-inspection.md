@@ -306,7 +306,9 @@ plans and defect limits are not public.
   inspection; ITRS 2001 sets a coarser sensitivity requirement for
   inspection on metal films than on non-metal films.[^itrs-2001-yield]
 * **Incoming wafers and the backside.** {ref}`SMAT <step-001>` names an
-  unpatterned surface scanner for incoming wafers, and
+  unpatterned surface scanner for incoming wafers, described with the
+  marker and sorter on the
+  {ref}`starting-material page <machine-starting-material>`, and
   {ref}`BFR <step-060>` a backside inspection tool; KLA-Tencor's backside
   module, described on a 2002 capture of its SP1 DLS page, inspected the
   backsides of product wafers.[^kla-sp1dls-2002] ITRS 2001 gives backside
@@ -325,6 +327,8 @@ plans and defect limits are not public.
 * {ref}`category-strip` and {ref}`category-cmp` — the strips, cleans and
   polishes after which the step pages name inspection.
 * {ref}`category-substrate` — incoming wafer inspection.
+* {ref}`machine-starting-material` — the incoming-wafer scanner, marker
+  and sorter at SMAT.
 * {ref}`machine-cd-sem-overlay-metrology` — the metrology tools of the
   lithography area.
 * {ref}`machine-film-thickness-metrology` — the thickness and stress gauges run on the same monitor
