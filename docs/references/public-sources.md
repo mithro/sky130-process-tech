@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1128
+written page has exactly one entry here; the inventory holds 1129
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17 and 8.18 were added
@@ -8436,6 +8436,41 @@ coefficient and capacitance quoted from these files on this site is our
 extraction from the published measurements, with the method stated
 where it is quoted. Used on steps 001, 026, 030, 038, 043 and 171, the
 test category page and the overview. Tier: cross-check.
+
+**RAW-DATA-LV-MOSFETS** — SkyWater PDK Authors (measurements by CoolCAD
+Electronics LLC), measured data for the 1.8 V transistors: IC-CAP
+`.mdm` files in the `sky130_fd_pr/cells/` directories `nfet_01v8`,
+`nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt` and `pfet_01v8_lvt` of
+the raw-data repository, 2022 (Apache 2.0).
+<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+480 files: 237 I_D–V_G sweeps (gate 0 to ±1.8 V in 50 mV steps at
+|V_DS| = 0.1 V and 1.8 V, with 0, 0.9 V and 1.8 V of reverse body
+bias), 237 matching I_D–V_D sweeps (gate in 0.36 V steps) and 6 gate
+C–V sweeps of two overlap-capacitance structures. For each of the five
+types the structures include the geometries of the PDK's e-test
+parameters (7/8, 7/0.15, 0.42/8 or 0.42/1 and 0.42/0.15 µm; 7/8, 7/0.35,
+0.42/8 and 0.42/0.35 µm for `pfet_01v8_lvt`), and there are NMOS
+devices the pad list places "in DNW", series in which only the
+source/drain extent (`sa` = `sb`, 2.5 µm down to 0.265 µm) changes, and
+multi-finger arrays. File names give the drawn W, L and multiplier and
+the test-tile module and pad numbers, which match the rows of
+RAW-DATA-TESTTILE-PADS, except that the array files `5290_9`
+(`nfet_01v8`) and `5291_9` (`pfet_01v8_hvt`) are named L = 0.15 µm
+where the pad list gives "w=0.42; l=0.5; m=1680". Headers give only the
+sweeps, compliance and instrument-channel names — no temperature, date,
+lot, wafer or die. Points that affect readings: the drain currents per
+drawn width of the module-26xx "fet mismatch" structures are about two
+to four times those of the same drawn geometries in other modules
+(whose currents are close to the e-test nominals), although their
+thresholds agree; the linear-region currents of the arrays level off
+at a few milliamperes; the sweeps of several `pfet_01v8` structures
+(modules 8405 and 8407) and of the 3/1 µm `pfet_01v8_lvt` of module
+8396 are erratic, and two module-5290 arrays carry about 0.7 µA at zero
+gate voltage. Every threshold, current and body-effect value quoted
+from these files on this site is our extraction from the published
+measurements, with the method stated where it is quoted. Used on steps
+008, 011, 014, 015, 020, 023, 024, 045, 066 and 171, the test category
+page and the overview. Tier: cross-check.
 
 ## 9. Evidence about specific tools at SkyWater
 
