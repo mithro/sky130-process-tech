@@ -7948,8 +7948,9 @@ thickness, same via width & spacing)"; DRC example `rr1_cell.1 (0.230)`
 and `rr1_cell.2 (0.230)`; the place-and-route tech-file slide with
 thicknesses (met1 0.360, rr1_bot_electrode 0.010, rr1_oxide 0.005 with
 dielectric constant 10 and "not in .ict", rr1_top_electrode 0.010, via
-0.565 = via_bot 0.270 + via_top 0.270, met2 0.360), `r1c` minimum width
-0.230 and spacing 0.140, and z-levels 1.3761 to 2.6611. Tier: cross-check.
+0.565 (via_bot 0.270, via_top 0.270 and the 0.025 of the RRAM layers; our
+sum), met2 0.360), `r1c` minimum width 0.230 and spacing 0.140, and
+z-levels 1.3761 to 2.6611. Tier: cross-check.
 
 **RERAM-LAYERS** — SkyWater PDK Authors, `docs/figures/page_5.svg`
 ("sky130_fd_pr_reram Layer Descriptions" slide),
