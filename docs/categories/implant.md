@@ -172,14 +172,17 @@ several MeV for wells.[^wiki-implant][^current-2017]
 
 ## Typical equipment
 
-* **High-current**: Axcelis (formerly Eaton) NV-GSD/200 series batch
-  implanters (the GSD line continues as the GSD Ovation, "for general
-  high current applications");[^axcelis-gsd-page] Varian VIISta 80 and
+* **{ref}`High-current <machine-high-current-implanter>`**: Axcelis
+  (formerly Eaton and Nova) NV-10 series and NV-GSD/200 series batch
+  implanters[^axcelis-history] (the GSD line continues as the GSD
+  Ovation, "for general high current applications");[^axcelis-gsd-page]
+  Varian VIISta 80 and
   VIISta HC single-wafer high-current implanters;[^semimarket-viista]
   Applied Materials xR series.
-* **Medium-current**: Varian E220 and E500 series; Axcelis (Eaton) 8250
-  and NV-10; Nissin.
-* **High-energy**: Axcelis NV-GSD/HE and GSD/VHE ("10 stage LINAC with
+* **{ref}`Medium-current <machine-medium-current-implanter>`**: Varian
+  E220 and E500 series; Axcelis (Eaton) 8250 and 8200P;[^axcelis-history]
+  Nissin.
+* **{ref}`High-energy <machine-high-energy-implanter>`**: Axcelis NV-GSD/HE and GSD/VHE ("10 stage LINAC with
   energies up to 3 MeV" and "14 stage LINAC with energies up to 4.9
   MeV");[^axcelis-gsd-page] Varian VIISta 3000 and Genus/Varian tandem
   machines.
@@ -258,6 +261,8 @@ commercial implanters is given by Current.[^current-2017]
   requirements, retrograde-well and extension notes.[^itrs-01]
 * Axcelis, *GSD Ovation* product page — high-current and high-energy
   batch implanter classes and LINAC energies.[^axcelis-gsd-page]
+* Axcelis, *Our History* — dates of the Nova, Eaton and Axcelis
+  high-current and medium-current implanters.[^axcelis-history]
 * Legacy Semi, Varian VIISta HC listing.[^semimarket-viista]
 * Shockley, US 2,787,564 — the original patent on forming devices by
   ion bombardment.[^pat-shockley]
@@ -383,6 +388,9 @@ commercial implanters is given by Current.[^current-2017]
 [^axcelis-gsd-page]: Axcelis Technologies, *GSD Ovation — High Current &
     High Energy Batch Ion Implanters*, product page, accessed
     2026-08-30. <https://www.axcelis.com/products/gsd-ovation/>
+[^axcelis-history]: Axcelis Technologies, *Our History* ("45 Years of
+    Innovation"), company web page, accessed 2026-09-13.
+    <https://www.axcelis.com/about/our-history/>
 [^semimarket-viista]: Legacy Semi, *Varian VIISta HC High Current
     Implanter* (listing).
     <https://www.semimarket.com/item/varian-viista-hc-high-current-implanter/94062>
