@@ -205,7 +205,8 @@ any product to a step.
   drawing — "P-substrate", "Deep N-well", and the substrate-collector
   PNP.[^pdk-07]
 * SkyWater PDK, *Criteria & Assumptions* — the "background
-  concentration" in the N-well table.[^pdk-03]
+  concentration" among the n-well entries (variable `NWBCONC`) of its
+  basic-parameters table.[^pdk-03]
 * SKY130 raw-data repository — I–V sweeps of the 20 V zero-Vt NMOS on
   the test tile, from which the effective body doping quoted in the
   open questions is our extraction.[^raw-data-hv-mosfets]
@@ -270,12 +271,12 @@ any product to a step.
   (100) orientation and few-to-tens-of-Ω·cm range above are textbook
   norms, not SkyWater data. Two indirect figures exist. The PDK's
   process assumptions give a "background concentration" of
-  8 × 10¹⁴ cm⁻³ in their N-well table without saying that it is the
-  wafer doping.[^pdk-03] And the 20 V zero-Vt NMOS, whose P-well and
+  8 × 10¹⁴ cm⁻³ among the n-well entries (variable `NWBCONC`) of their
+  basic-parameters table without saying that it is the wafer doping.[^pdk-03] And the 20 V zero-Vt NMOS, whose P-well and
   threshold implants are blocked,[^pdk-07] has a body-effect coefficient
   of about 0.07 √V on SkyWater's test tile, which with a uniform-doping
-  model and the measured 11.3 nm electrical oxide thickness corresponds
-  to an effective body doping of about 1.4 × 10¹⁵ cm⁻³ (our extraction
+  model and the 11.3 nm electrical oxide thickness we extracted from the
+  tile's C–V data corresponds to an effective body doping of about 1.4 × 10¹⁵ cm⁻³ (our extraction
   from the published measurements; see {ref}`PWBM <step-026>`).[^raw-data-hv-mosfets]
   Neither is a wafer specification, and neither gives the orientation.
 * **Bulk versus epitaxial.** SkyWater's "Bulk" entry[^skw-02] is the
