@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1598
+written page has exactly one entry here; the inventory holds 1629
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -502,6 +502,7 @@ Also used on the CMP consumables material page.
 Also used on the anneal ambients material page.
 Also used on the ultrapure water material page.
 Also used on the hardware consumables material page.
+Also used on the process gases material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -682,6 +683,7 @@ Also used on the CMP consumables material page.
 Also used on the anneal ambients material page.
 Also used on the ultrapure water material page.
 Also used on the hardware consumables material page.
+Also used on the process gases material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -706,6 +708,7 @@ Also used on the CMP consumables material page.
 Also used on the anneal ambients material page.
 Also used on the ultrapure water material page.
 Also used on the hardware consumables material page.
+Also used on the process gases material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -1238,6 +1241,7 @@ Also used on the PECVD, HDP-CVD and tungsten CVD pages.
 Tier: high-level.
 Also used on the substrates material page.
 Also used on the anneal ambients material page.
+Also used on the process gases material page.
 
 **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
 Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
@@ -1477,6 +1481,7 @@ the strip category page.
 Also used on the downstream plasma asher page.
 Tier: high-level.
 Also used on the anneal ambients material page.
+Also used on the process gases material page.
 
 **WIKI-ASH3** — Wikipedia, *Arsine*.
 <https://en.wikipedia.org/wiki/Arsine> Arsine, the arsenic source gas
@@ -1620,6 +1625,7 @@ interface passivation. Used on the anneal category page.
 Also used on the vertical-furnace anneal page.
 Tier: high-level.
 Also used on the anneal ambients material page.
+Also used on the process gases material page.
 
 **WIKI-FICK** — Wikipedia, *Fick's laws of diffusion*.
 <https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion> Fick's laws,
@@ -1686,6 +1692,7 @@ channelling, amorphisation and implanter classes. Used on steps 007,
 008, 015, 018, 019, 020, 023, 024, 027, 028, 031, 032, 037, 038 and 045
 and the implant category page, and on the medium-current, high-current
 and high-energy implanter pages. Tier: high-level.
+Also used on the process gases material page.
 
 **WIKI-KEITHLEY** — Wikipedia, *Keithley Instruments*.
 <https://en.wikipedia.org/wiki/Keithley_Instruments> Company article on
@@ -1976,6 +1983,7 @@ consumption, chlorine additions and dry–wet–dry cycles. Used on steps
 002, 010, 038 and 043 and the oxidation category page.
 Also used on the vertical-furnace oxidation and anneal pages.
 Tier: high-level.
+Also used on the process gases material page.
 
 **WIKI-TIN** — Wikipedia, *Titanium nitride*.
 <https://en.wikipedia.org/wiki/Titanium_nitride> Titanium nitride as a
@@ -2712,6 +2720,7 @@ no. 4, pp. 2409–2413, 1994, DOI 10.1116/1.587773. Water-vapour
 addition to downstream ashing.
 Also used on the downstream plasma asher page.
 Tier: deep dive.
+Also used on the process gases material page.
 
 **OHMI-1996** — T. Ohmi, *"Total Room Temperature Wet Cleaning for Si
 Substrate Surface"*, Journal of The Electrochemical Society, vol. 143,
@@ -2936,6 +2945,7 @@ Used on steps 002, 010, 040, 042, 043 and 047 and the oxidation category
 page.
 Also used on the vertical-furnace oxidation page.
 Tier: deep dive.
+Also used on the process gases material page.
 
 **DEAL-1980** — B. E. Deal, "Standardized terminology for oxide charges
 associated with thermally oxidized silicon", *IEEE Transactions on
@@ -3656,6 +3666,7 @@ oxidation category page.
 Also used on the vertical-furnace oxidation page and the plasma
 nitridation chamber page.
 Tier: deep dive.
+Also used on the process gases material page.
 
 **HATTANGADY-1995** — S. V. Hattangady, H. Niimi and G. Lucovsky,
 "Controlled nitrogen incorporation at the gate oxide surface", *Applied
@@ -3690,6 +3701,7 @@ physical model of boron penetration through N₂O oxynitride. Used on step
 Also used on the rapid thermal processor and plasma nitridation chamber
 pages.
 Tier: deep dive.
+Also used on the process gases material page.
 
 **INUKAI-2000** — T. Inukai and T. Hiramoto, "Suppression of Stand-by
 Tunnel Current in Ultra-Thin Gate Oxide MOSFETs by Dual Oxide
@@ -3753,6 +3765,7 @@ G. E. Miner and D. Lopes, "Nitric Oxide Rapid Thermal Nitridation of
 Thin Gate Oxides", *MRS Proceedings* **470**, 381 (1997).
 <https://doi.org/10.1557/PROC-470-381> Nitric oxide rapid thermal
 nitridation of thin gate oxides. Used on step 047. Tier: deep dive.
+Also used on the process gases material page.
 
 **LEE-1999** — S.-W. Lee, "Novel Dual Gate Oxide Process with Improved
 Gate Oxide Integrity Reliability", *Electrochemical and Solid-State
@@ -3930,6 +3943,7 @@ in-situ steam generation in an RTP chamber. Used on steps 040, 043 and
 Also used on the vertical-furnace oxidation page and the rapid thermal
 processor page.
 Tier: deep dive.
+Also used on the process gases material page.
 
 #### Books and book chapters
 
@@ -7068,6 +7082,7 @@ Reactive sputtering model and hysteresis. Used on steps 097, 101 and
 109. Tier: deep dive.
 Also used on the PVD cluster tool page.
 Also used on the sputter targets material page.
+Also used on the process gases material page.
 
 **BIELMANN-1999** — M. Bielmann et al., "Effect of Particle Size during
 Tungsten Chemical Mechanical Polishing", *Electrochemical and
@@ -9798,6 +9813,7 @@ processing*, US 6,179,609 B1, filed 1999-07-02, granted 2001-01-30.
 <https://patents.google.com/patent/US6179609B1/en> A torch used "both to
 produce steam and to perform wet or dry dichlorethylene (DCE) oxidation".
 Used on the vertical-furnace oxidation page. Tier: deep dive (patent).
+Also used on the process gases material page.
 
 **PAT-TORCH-YAMAHA** — T. Yuuki (Yamaha), *Pyrogenic wet thermal
 oxidation of semiconductor wafers*, US 5,633,212 A, filed 1994-07-22,
@@ -13605,6 +13621,271 @@ years, and "Earlier values from 2007" from the IPCC Fourth Assessment
 Report at 100 years, in which hexafluoroethane (PFC-116) is 12,200 and
 nitrogen trifluoride 17,200. Used on the hardware consumables material
 page. Tier: high-level.
+
+#### Process gases (first cited there)
+
+**SEMI-C3** — SEMI, *SEMI C3 — Specification for Gases*, SEMI Standards
+store listing (revision C3-0317), accessed 2026-09-13.
+<https://store-us.semi.org/products/c00300-semi-c3-specification-for-gases>
+The listing's abstract: the Gases Committee "establishes the
+definitions, general procedures, specifications, and analytical
+procedures for the gases listed in the index"; the specifications "are
+intended to serve for gases to be used in the manufacture and processing
+of semiconductors and advanced electronic devices and circuits";
+"originally published in 1981". Used on the process gases material page.
+Tier: cross-check (standard).
+
+**SEMI-C59** — SEMI, *SEMI C59 — Specification for Nitrogen*, SEMI
+Standards store listing (revision C59-0317), accessed 2026-09-13.
+<https://store-us.semi.org/products/c05900-semi-c59-specification-for-nitrogen>
+"a series of specifications for different grades of nitrogen (N2) that
+are used in the semiconductor industry"; covers "all grades of nitrogen
+used in the semiconductor industry". Used on the process gases material
+page. Tier: cross-check (standard).
+
+**SEMI-C54** — SEMI, *SEMI C54 — Specification for Oxygen (O2)*, SEMI
+Standards store listing (revision C54-0624), accessed 2026-09-13.
+<https://store-us.semi.org/products/c05400-semi-c54-specification-for-oxygen>
+"a series of specifications for different grades of oxygen (O2)";
+references SEMI C3.22, C3.23 and "SEMI C3.41 — Standard for Oxygen (O2),
+Bulk, 99.9998% Quality". Used on the process gases material page. Tier:
+cross-check (standard).
+
+**SEMI-C58** — SEMI, *SEMI C58 — Specification for Hydrogen*, SEMI
+Standards store listing (revision C58-1116), accessed 2026-09-13.
+<https://store-us.semi.org/products/c05800-semi-c58-specification-for-hydrogen>
+Specifications for grades of hydrogen; covers "two grades of hydrogen
+used in the semiconductor industry". Used on the process gases material
+page. Tier: cross-check (standard).
+
+**SEMI-C3-20** — SEMI, *SEMI C3.20 — Specification for Helium (He), in
+Cylinders, 99.9995%*, SEMI Standards store listing (revision C3.20-0414
+(Reapproved 0319)E), accessed 2026-09-13.
+<https://store-us.semi.org/products/c00320-semi-c3-20-specification-for-helium-he-in-cylinders-99-9995>
+"specifications for helium (He) that is used in the semiconductor
+industry". Used on the process gases material page. Tier: cross-check
+(standard).
+
+**EPA-GHGRP-SKYWATER** — U.S. Environmental Protection Agency,
+Greenhouse Gas Reporting Program, Envirofacts tables `PUB_DIM_FACILITY`
+and `PUB_FACTS_SUBP_GHG_EMISSION` for facility ID 1000354 ("SKYWATER
+TECHNOLOGY INC", Bloomington, Minnesota), reporting years 2010–2023,
+retrieved 2026-09-13.
+<https://data.epa.gov/efservice/PUB_DIM_FACILITY/FACILITY_ID/1000354/JSON>
+<https://data.epa.gov/efservice/PUB_FACTS_SUBP_GHG_EMISSION/FACILITY_ID/1000354/SUB_PART_ID/43/JSON>
+Public regulatory data (retrieved through the Envirofacts web service).
+The facility table gives reported subparts "C" for 2010 and "C,I" for
+2011–2023, NAICS 334413, and parent company "Cypress Semiconductor
+Corporation (100%)" or "CYPRESS SEMICONDUCTOR CORP (100%)" for 2010–2016,
+"SKYWATER TECHNOLOGY FOUNDRY INC (100%)" for 2017–2019, "OXBOW INDUSTRIES
+LLC (100%)" for 2020–2022 and "SkyWater Technology Inc (100%)" for 2023
+(the facility name field carries the current name for every year). The
+emissions table gives, for subpart I (subpart ID 43, "Electronics
+Manufacture"), CO₂-equivalent values by gas group for each year
+2011–2023: for 2023, PFCs 47106.6, HFCs 6112.6, SF₆ 2302.8, other fully
+fluorinated GHGs 2141, NF₃ 1441.36, N₂O 185.058, HFEs 82.1; PFCs were
+101763.7 in 2011. The tables do not give individual gases, processes or
+tools. Used on the process gases material page. Tier: cross-check
+(regulatory filing data).
+
+**EPA-GHGRP-SUBPART-I** — U.S. Environmental Protection Agency,
+*Electronics Manufacturing: Subpart I, Greenhouse Gas Reporting
+Program*, information sheet, December 2024, accessed 2026-09-13.
+<https://www.epa.gov/system/files/documents/2024-04/i_electronics_infosheet_2024.pdf>
+Defines the source category (plasma etching and chamber cleaning with
+"plasma-generated fluorine (F2) atoms", wafer cleaning, "Processes in
+which the chemical vapor deposition (CVD) process or other production
+processes use nitrous oxide (N2O)", and fluorinated heat transfer
+fluids); facilities report "Fluorinated GHG emissions from electronic
+manufacturing production processes and HTF use", "N2O emissions from
+CVD and other production processes" and "Controlled emissions of GHGs
+from abatement systems, if applicable"; per-fab reporting by process
+type. Used on the process gases material page. Tier: cross-check
+(regulatory guidance).
+
+**NIOSH-HCL** — National Institute for Occupational Safety and Health,
+*NIOSH Pocket Guide to Chemical Hazards: Hydrogen chloride*, CDC; read
+from the Wayback Machine capture of 2025-12-29 (the CDC site refused the
+project's user agent).
+<https://www.cdc.gov/niosh/npg/npgd0332.html>
+<https://web.archive.org/web/20251229130832/https://www.cdc.gov/niosh/npg/npgd0332.html>
+IDLH "50 ppm"; NIOSH REL "C 5 ppm (7 mg/m3)"; OSHA PEL "C 5 ppm (7
+mg/m3)"; "Colorless to slightly yellow gas with a pungent, irritating
+odor. [Note: Shipped as a liquefied compressed gas.]". Used on the
+process gases material page. Tier: cross-check (safety data).
+
+**NIOSH-NO** — National Institute for Occupational Safety and Health,
+*NIOSH Pocket Guide to Chemical Hazards: Nitric oxide*, CDC; read from
+the Wayback Machine capture of 2025-12-07.
+<https://www.cdc.gov/niosh/npg/npgd0448.html>
+<https://web.archive.org/web/20251207003006/https://www.cdc.gov/niosh/npg/npgd0448.html>
+IDLH "100 ppm"; NIOSH REL and OSHA PEL "TWA 25 ppm (30 mg/m3)";
+"Colorless gas. [Note: Shipped as a nonliquefied compressed gas.]". Used
+on the process gases material page. Tier: cross-check (safety data).
+
+**LINDE-SEMI** — Linde, *Supporting digitalization with gases for
+semiconductors*, industry page (Linde US), accessed 2026-09-13.
+<https://www.lindeus.com/industries/electronics/semiconductors>
+Vendor statement: "Linde provides wafer fabs worldwide with
+ultra-high-purity gases and chemicals, specialty equipment, and
+customized services"; "Linde's extensive global network of bulk gas
+production plants ensures a reliable supply of ultra-high-purity
+nitrogen (N₂), oxygen (O₂), argon (Ar), hydrogen (H₂), helium (He), and
+carbon dioxide (CO₂) in the volumes required". Does not name SkyWater.
+Used on the process gases material page. Tier: cross-check (vendor
+statement).
+
+**LINDE-ENG-ELECTRONICS** — Linde Engineering, *Serving the Electronics
+Industry Worldwide*, industry page, accessed 2026-09-13.
+<https://www.linde-engineering.com/industries/electronics>
+Vendor statement: gases "such as nitrogen (N2), oxygen (O2), argon (Ar),
+helium (He), carbon dioxide (CO2) and hydrogen (H2) plus a host of
+electronics specialty gases and mixtures support processes as diverse as
+deposition, etching, doping and chamber cleaning"; bulk delivery "by
+road tanker or ISO container"; SPECTRA on-site plants "deliver ultra-pure
+gaseous and liquid N2 and O2 with less than 1 part per billion (ppb)
+impurities"; NITRON E plants for "less exacting purity requirements (100
+ppb)"; "High-purity hydrogen (H2) is often supplied in liquid form for
+low-volume electronics applications"; on-site fluorine generators as a
+replacement for NF₃, ClF₃ and SF₆ in chamber cleaning. Does not name
+SkyWater. Used on the process gases material page. Tier: cross-check
+(vendor statement).
+
+**KRIEGLER-1972** — R. J. Kriegler, Y. C. Cheng and D. R. Colton, "The
+Effect of HCl and Cl₂ on the Thermal Oxidation of Silicon", *Journal of
+The Electrochemical Society* **119**(3), 388 (1972).
+<https://doi.org/10.1149/1.2404208> A few mole per cent of HCl or Cl₂ in
+dry oxidation (30 min at 1150 °C) improves electrical stability, reduces
+mobile ions and interface states, increases the oxidation rate, and HCl
+in O₂ cleans quartz tubes. Used on the process gases material page.
+Tier: deep dive.
+
+**YONEDA-1995** — K. Yoneda, K. Hagiwara, H. Oishi and Y. Todokoro, "The
+Dielectric Breakdown Characteristics of Thin Silicon Dioxide Prepared by
+trans-1,2-Dichloroethylene Added Oxidation", *Journal of The
+Electrochemical Society* **142**(12), 4304–4309 (1995).
+<https://doi.org/10.1149/1.2048502> trans-1,2-DCE as a substitute for
+1,1,1-trichloroethane in gate oxidation, with lower ozone depletion
+potential and improved breakdown reliability; 5 wt % recommended. Used
+on the process gases material page. Tier: deep dive.
+
+**HWANG-1990** — H. Hwang, W. Ting, B. Maiti, D.-L. Kwong and J. Lee,
+"Electrical characteristics of ultrathin oxynitride gate dielectric
+prepared by rapid thermal oxidation of Si in N₂O", *Applied Physics
+Letters* **57**(10), 1010–1011 (1990).
+<https://doi.org/10.1063/1.103550> About 60 Å oxynitride grown in N₂O by
+rapid thermal oxidation, with higher charge-to-breakdown than RTO oxide
+and a nitrogen-rich layer at the interface. Used on the process gases
+material page. Tier: deep dive.
+
+**TOBIN-1994** — P. J. Tobin, Y. Okada, S. A. Ajuria, V. Lakhotia, W. A.
+Feil and R. I. Hegde, "Furnace formation of silicon oxynitride thin
+dielectrics in nitrous oxide (N₂O): The role of nitric oxide (NO)",
+*Journal of Applied Physics* **75**(3), 1811–1817 (1994).
+<https://doi.org/10.1063/1.356374> In a 950 °C furnace N₂O decomposes to
+N₂, O₂ and NO before the wafers; nitrogen incorporation follows the NO
+concentration, which depends on gas residence time. Used on the process
+gases material page. Tier: deep dive.
+
+**OKADA-1994** — Y. Okada, P. J. Tobin, K. G. Reid, R. I. Hegde, B. Maiti
+and S. A. Ajuria, "Furnace grown gate oxynitride using nitric oxide
+(NO)", *IEEE Transactions on Electron Devices* **41**(9), 1608–1613
+(1994). <https://doi.org/10.1109/16.310113> Gate oxynitride grown in NO,
+with nitrogen near the interface and a much lower thermal budget than an
+N₂O process. Used on the process gases material page. Tier: deep dive.
+
+**LEE-1981-CORROSION** — W.-Y. Lee, J. M. Eldridge and G. C. Schwartz,
+"Reactive ion etching induced corrosion of Al and Al-Cu films", *Journal
+of Applied Physics* **52**(4), 2994–2999 (1981).
+<https://doi.org/10.1063/1.329043> Al and Al–Cu lines etched in chlorine
+plasmas corrode rapidly in air; carbon and chlorine contamination,
+damage and copper enrichment contribute; a thermal oxidation restores the
+protective oxide. Label ↔ key note: the key carries a suffix because
+LEE-1981 is another source. Used on the process gases material page.
+Tier: deep dive.
+
+**OHMI-1993** — T. Ohmi, "ULSI reliability through ultraclean
+processing", *Proceedings of the IEEE* **81**(5), 716–729 (1993).
+<https://doi.org/10.1109/5.220903> The three principles of ultraclean
+technology (wafer surface, processing environment, process-parameter
+control) and their application to oxidation, epitaxy and metallisation.
+Used on the process gases material page. Tier: deep dive.
+
+**GOODMAN-2008** — D. L. Goodman, "Effect of wafer bow on electrostatic
+chucking and back side gas cooling", *Journal of Applied Physics*
+**104**(12), 124902 (2008). <https://doi.org/10.1063/1.3043843> A model
+and measurements of the wafer bow an electrostatic chuck can clamp and
+the backside gas pressure it can then hold. Used on the process gases
+material page. Tier: deep dive.
+
+**WIKI-NITROGEN** — Wikipedia, *Nitrogen*.
+<https://en.wikipedia.org/wiki/Nitrogen> Production ("fractional
+distillation of liquid air, or by mechanical means using gaseous air"),
+uses and the asphyxiation hazard. Used on the process gases material
+page. Tier: high-level.
+
+**WIKI-OXYGEN** — Wikipedia, *Oxygen*.
+<https://en.wikipedia.org/wiki/Oxygen> Production by air separation and
+hazards; "The NFPA 704 standard rates compressed oxygen gas as
+nonhazardous to health, nonflammable, and nonreactive, but an oxidizer".
+Used on the process gases material page. Tier: high-level.
+
+**WIKI-HYDROGEN** — Wikipedia, *Hydrogen*.
+<https://en.wikipedia.org/wiki/Hydrogen> Properties, uses and hazards;
+"Hydrogen gas forms explosive mixtures with air in concentrations from
+4%–74%". Used on the process gases material page. Tier: high-level.
+
+**WIKI-ARGON** — Wikipedia, *Argon*.
+<https://en.wikipedia.org/wiki/Argon> Production as a by-product of
+cryogenic air separation, use "for sputter deposition of thin films as in
+microelectronics", and the asphyxiation hazard. Used on the process gases
+material page. Tier: high-level.
+
+**WIKI-HELIUM** — Wikipedia, *Helium*.
+<https://en.wikipedia.org/wiki/Helium> Extraction from natural gas,
+industrial uses and the history of shortages. Used on the process gases
+material page. Tier: high-level.
+
+**WIKI-AIR-SEPARATION** — Wikipedia, *Air separation*.
+<https://en.wikipedia.org/wiki/Air_separation> Cryogenic and membrane air
+separation; "High purity oxygen, nitrogen, and argon, used for
+semiconductor device fabrication, require cryogenic distillation". Used
+on the process gases material page. Tier: high-level.
+
+**WIKI-N2O** — Wikipedia, *Nitrous oxide*.
+<https://en.wikipedia.org/wiki/Nitrous_oxide> Properties; "At elevated
+temperatures, nitrous oxide is a powerful oxidiser similar to molecular
+oxygen". Used on the process gases material page. Tier: high-level.
+
+**WIKI-NO** — Wikipedia, *Nitric oxide*.
+<https://en.wikipedia.org/wiki/Nitric_oxide> Properties and hazards (the
+infobox classes it "Very toxic, corrosive, oxidizer"). Used on the
+process gases material page. Tier: high-level.
+
+**WIKI-DCE** — Wikipedia, *1,2-Dichloroethylene*.
+<https://en.wikipedia.org/wiki/1,2-Dichloroethylene> The cis and trans
+isomers; "trans-1,2-DCE has applications including electronics cleaning,
+precision cleaning, and certain metal cleaning applications". Used on the
+process gases material page. Tier: high-level.
+
+**WIKI-PRAXAIR** — Wikipedia, *Praxair*.
+<https://en.wikipedia.org/wiki/Praxair> Company history; "In 2018 it
+merged with Linde AG to form Linde plc". Does not mention SkyWater. Used
+on the process gases material page. Tier: high-level.
+
+**WIKI-AIRGAS** — Wikipedia, *Airgas*.
+<https://en.wikipedia.org/wiki/Airgas> "Airgas, an Air Liquide company,
+is an American supplier of industrial, medical and specialty gases";
+acquired by Air Liquide after a 2015 agreement. Used on the process gases
+material page. Tier: high-level.
+
+**WIKI-VERSUM** — Wikipedia, *Versum Materials*.
+<https://en.wikipedia.org/wiki/Versum_Materials> "On October 3, 2016, Air
+Products & Chemicals completed the corporate spin-off of the company";
+"In October 2019, Merck Group acquired the company"; its products include
+"ultra-thin dielectric and metal precursors of film" and "delivery
+equipment for the semiconductor industry". Used on the process gases
+material page. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
