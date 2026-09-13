@@ -18,9 +18,9 @@ oxidation on the {ref}`oxidation category page <category-oxidation>`.
 |---|---|
 | What it does | Heats a single wafer "to temperatures exceeding 1,000°C for not more than a few seconds" with "high intensity lamps or lasers", for "dopant activation, thermal oxidation, metal reflow and chemical vapor deposition".[^wiki-rtp] |
 | Temperature and time | "Recommended steady-state temperature range: 400 – 1200°C" and "Steady-state duration: 1 – 600 seconds per step" for the Heatpulse 8800;[^ag-8800] Applied Materials described RTP as heating "for a short period of time, usually less than 15 seconds".[^amat-1997] |
-| Ramp rate | "Programmable, 1 – 180°C per second" on the reseller's Heatpulse 8800 page;[^ag-8800] "up to 100°C per second with Ceramic Shield; up to 150°C per second without" in the 8800 section of its specification PDF.[^ag-8108] |
+| Ramp rate | "up to 100°C per second with Ceramic Shield; up to 150°C per second without" in the 8800 section of the reseller's PDF;[^ag-8108] the reseller's 8800/8808 web page gives "Programmable, 1 – 180°C per second", the same text as the PDF's 8108 section.[^ag-8800][^ag-8108] |
 | Heating and measurement | Tungsten-halogen lamps "in 2 banks of 14 lamps each, 1 bank above and the other below the process chamber", "10-zone lamp control", "Pyrometer or thermocouple sensing";[^ag-8800] lamps "disposed in a plurality of light pipes" with a "liquid cooled window" in Applied Materials' design.[^pat-rtp-amat] |
-| Uniformity | "+ 5°C across an 8-inch wafer at 1150°C" on the reseller page and "±3°C" in its PDF;[^ag-8800][^ag-8108] "at 1150° C. the center to edge temperature difference on a four inch silicon wafer of approximately 5° C. can induce dislocation formation and slip".[^pat-rtp-amat] |
+| Uniformity | ±3 °C across an 8-inch wafer at 1150 °C in the PDF's 8800 section, ±5 °C in its 8108 section and on the web page;[^ag-8108][^ag-8800] "at 1150° C. the center to edge temperature difference on a four inch silicon wafer of approximately 5° C. can induce dislocation formation and slip".[^pat-rtp-amat] |
 | Wafer handling | Single wafer from cassettes, "approximately 80 wafers per hour (in a null cycle) without flat-finder" on the Heatpulse 8800, with wafer sizes of "5 inches, 6 inches, and 8 inches".[^ag-8800] |
 | 200 mm era | AG Associates Heatpulse 8108 and 8800, later sold by STEAG, Mattson and Metron;[^mattson-metron-2002] Applied Materials' RTP Centura (1995) and RTP XE Centura (1997);[^amat-1997] "15 RTP equipment manufacturers" surveyed in 1990.[^roozeboom-1990] |
 | SkyWater-listed tool | "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] |
@@ -160,9 +160,9 @@ levels as low as 10 parts per million (PPM)".[^plasmatherm-ag]
 * **Applied Materials.** The RTP Centura, with which the company "entered
   the fast-growing RTP market in 1995", and the RTP XE Centura, "its first
   major system enhancement", launched in 1997.[^amat-1997] The lamp and
-  light-pipe design is the Gronet and Gibbons patent.[^pat-rtp-amat]
-* **AST Elektronik.** Named, with AG Associates, in the RTP patent suit
-  Applied Materials filed in April 1997.[^amat-1997]
+  light-pipe design is the Gronet and Gibbons patent.[^pat-rtp-amat] Its
+  April 1997 RTP patent suit named AST Elektronik (spelled "AST
+  Electronik" in the report) and AG Associates.[^amat-1997]
 * **Others.** Roozeboom and Parekh's review lists fifteen manufacturers of
   1990,[^roozeboom-1990] and the {ref}`anneal category page
   <category-anneal>` names the Kokusai and TEL tools of the 130 nm era.
@@ -194,9 +194,9 @@ that apply to every listed tool are under
 {ref}`Reading the SkyWater evidence <machines-reading-evidence>`. For
 this class the listing is specific about the model family but the
 specifications behind it are not SkyWater's: the ramp rates, uniformity
-and throughput quoted for the 8800 come from a reseller and differ
-between its web page and its PDF,[^ag-8800][^ag-8108] and none of them
-describes SkyWater's configuration. It is also the only rapid thermal
+and throughput quoted for the 8800 come from a reseller, whose web page
+repeats the 8108 figures of its own PDF,[^ag-8800][^ag-8108] and none of
+them describes SkyWater's configuration. It is also the only rapid thermal
 tool listed, so every RTA step page assigns its anneal to it by
 elimination, as an inference.
 
@@ -281,8 +281,8 @@ not public.
 * **Ammonia and the nitrided oxide.** The NH₃ line is the only
   nitriding gas on the Heatpulse entry, and the {ref}`LVGOX <step-047>`
   page calls it "the one public hint" of how the "Nitrided gate oxide"
-  module might be run. Direct thermal nitridation in ammonia takes place
-  converts the oxide surface to a graded nitride or oxynitride "At
+  module might be run. Heating an oxide in ammonia converts its surface
+  "directly to silicon nitride or oxynitride", with graded films "At
   temperatures above 900°C",[^ito-1980] and rapid reoxidation of a nitrided
   oxide improves its charge trapping "by the reducing of hydrogen
   concentration".[^hori-1989] Whether SKY130
@@ -320,7 +320,8 @@ not public.
 * SkyWater Technology, *Facilities & Capabilities* — the Heatpulse entry
   and the special modules quoted on this page.[^skw-01]
 * SemiStar, *AG Associates Heatpulse 8800 / 8808* — the reseller's
-  description, applications and specification.[^ag-8800]
+  description and applications, with a specification that repeats the
+  PDF's 8108 section.[^ag-8800]
 * SemiStar, *Heatpulse 4100 / 8108 / 8800 / 8800i Specifications* — the
   reseller PDF's per-model specifications and facilities.[^ag-8108]
 * Plasma-Therm, *Product Spotlight: AG Heatpulse 8800 / 8108 RTP* — the
@@ -382,17 +383,17 @@ not public.
 
 * Whether SkyWater's "Ag Heatpulse 8808" differs from the 8800, and its
   ramp rate, uniformity and wafer handling, are not stated; the reseller's
-  web page and PDF give different 8800 ramp and uniformity
-  figures.[^ag-8800][^ag-8108]
+  web page for the "8800 8808" repeats the PDF's 8108 specifications, not
+  its 8800 ones.[^ag-8800][^ag-8108]
 * Whether SKY130's thin gate oxide and post-gate-etch oxidation run on the
   Heatpulse or in a furnace, and whether the NH₃ line is used for gate-oxide
   nitridation, are not public.
 * How many Heatpulse chambers SkyWater runs, and whether silicide and
   implant anneals share a chamber, is not stated.
-* The model list above is incomplete: it covers the AG Associates, Applied
-  Materials and AST tools for which a public description was found, not
-  every RTP tool of the period; Mattson's own 2000 and 3000 series are
-  named but not described.
+* The model list above is incomplete: it covers the AG Associates and
+  Applied Materials tools for which a public description was found, not
+  every RTP tool of the period; AST Elektronik's tools and Mattson's own
+  2000 and 3000 series are named but not described.
 
 <!-- footnotes -->
 
