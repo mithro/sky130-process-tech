@@ -1,8 +1,8 @@
 (material-cmp-consumables)=
 # CMP consumables
 
-Chemical-mechanical planarisation ({term}`CMP`) is the one process in the
-fab whose consumables wear out as fast as they are used. A polisher
+Chemical-mechanical planarisation ({term}`CMP`) is a process whose
+consumables wear out as fast as they are used. A polisher
 presses the wafer against a rotating pad flooded with slurry — abrasive
 particles in a chemically active liquid — while a diamond disc keeps the
 pad surface open and a carrier head holds the wafer through a membrane
@@ -49,9 +49,8 @@ Zantye, Kumar and Sikder's review cover the whole class.[^steigerwald-1997][^zan
 
 ### Oxide slurries
 
-Oxide polishing inherits the chemistry of glass polishing: Cook showed
-that water hydrolyses the silica surface and that the abrasive bonds to
-and removes the softened layer.[^cook-1990] Production oxide slurries use
+Oxide polishing inherits the chemistry of glass polishing, whose chemical
+processes Cook's paper sets out.[^cook-1990] Production oxide slurries use
 fumed or colloidal silica in an alkaline, KOH- or ammonia-stabilised
 liquid ({ref}`category-cmp`), or ceria, whose mechanism of polishing
 silica Hoshino et al. examined.[^hoshino-2001]
@@ -69,7 +68,7 @@ of the total defect", were minimised by in-situ filtering.[^kim-2002-ceria]
 
 A tungsten slurry must oxidise the metal as well as abrade it. Kaufman et
 al. described tungsten CMP for patterned interconnect
-features;[^kaufman-1991] Cabot's patent claims "a chemical mechanical
+features;[^kaufman-1991] Cabot's patent describes "a chemical mechanical
 polishing composition comprising an oxidizing agent and at least one
 catalyst having multiple oxidation states";[^pat-cmp-cabot] and Stein,
 Hetherington and Cecchi, polishing in potassium iodate slurries with
@@ -131,7 +130,7 @@ named in SkyWater's filings.
   selectivity.[^america-2004][^kim-2002-ceria]
 * **Tungsten slurries.** Alumina or silica with a peroxide, ferric or
   iodate oxidiser at pH 2–4 (typical industry
-  values);[^pat-cmp-cabot][^stein-1999][^steigerwald-1997]
+  values).[^pat-cmp-cabot][^stein-1999][^steigerwald-1997]
 * **Pads.** Stacked polyurethane pads of the IC1000-over-Suba IV class for
   primary polish and soft Politex-type pads for buffing
   ({ref}`category-cmp`). Qnity (the electronics business DuPont planned to
@@ -183,7 +182,8 @@ Materials and announced the close of the transaction on
 and Wikipedia that CMC Materials was "previously known as Cabot
 Microelectronics Corp";[^wiki-entegris] neither names "CMC Chemicals,
 Inc." or SkyWater. SkyWater's maintenance-technician profile mentions "a
-SEZ etcher tool",[^skw-07] which several CMP step pages consider for the
+SEZ etcher tool",[^skw-07] a make that the capabilities page lists under
+"Single Wafer" wet processing ("SEZ223"),[^skw-01] which several CMP step pages consider for the
 post-CMP clean.
 
 ### Strength of the evidence
@@ -222,7 +222,8 @@ These are the twelve steps of the
 oxide slurry serves {ref}`CMPNIT <step-012>` (silica or ceria, stopping on
 nitride), {ref}`CMPP <step-090>` and {ref}`CMPL <step-106>` and the four
 inter-metal oxide polishes; the tungsten slurry serves
-{ref}`WCMPLI <step-100>` and the four via-plug polishes; and every step
+{ref}`WCMPLI <step-100>`, the metal-contact polish
+{ref}`WCMP2 <step-111>` and the three via polishes; and every step
 names pads, conditioners and a post-CMP clean.
 
 ## Supply, handling, safety and facilities
@@ -412,8 +413,9 @@ not public.
     <https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>
 [^wiki-ceria]: Wikipedia, *Cerium(IV) oxide*.
     <https://en.wikipedia.org/wiki/Cerium(IV)_oxide>
-[^pat-cmp-cabot]: Cabot Corporation, *Composition and slurry useful for
-    metal CMP*, US 5,958,288 A, filed 1996-11-26, granted 1999-09-28.
+[^pat-cmp-cabot]: B. L. Mueller, C. C. Streinz and S. K. Grumbine (Cabot
+    Corporation), *Composition and slurry useful for metal CMP*,
+    US 5,958,288 A, filed 1996-11-26, granted 1999-09-28.
     <https://patents.google.com/patent/US5958288A/en>
 [^kakireddy-2010]: R. Kakireddy, A. Galpin, J. Smith and D. Slutz,
     "Effects of CMP Pad Conditioner Properties and Performance on
