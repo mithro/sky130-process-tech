@@ -376,14 +376,17 @@ the `masks.csv` fields from the PDK.[^pdk-05] What the record shows:
 
 ### Mask types and plate labels
 
-A tab headed "Sheet4" gives a mask type, as a coded string, for three
-masks only.[^steps-sheet] The via 2 (`VIM2`) and via 3 (`VIM3`) plates
-are recorded as 4× embedded
-{term}`attenuated phase-shift masks <attenuated PSM>` for 248 nm
-exposure, and the via 4 (`VIM4`) plate as a 4× binary mask for 248 nm
-exposure (our reading of the sheet's mask-type codes). The tab does not
-say to which runs these types apply, and it gives no type for any other
-mask.
+A tab headed "Sheet4" gives a coded mask type for three masks
+only.[^steps-sheet] We read the codes for the via 2 (`VIM2`) and via 3
+(`VIM3`) plates as denoting embedded
+{term}`attenuated phase-shift masks <attenuated PSM>` and the code for
+the via 4 (`VIM4`) plate as denoting a binary (chrome-on-quartz) mask,
+in each case for 248 nm exposure: the codes use the abbreviations mask
+makers and the patent literature use for these
+types.[^photronics-abr][^pat-bim-tsmc] We also read a digit 4 in each
+code as the 4× reduction ratio; the tab does not define its codes. The
+tab does not say to which runs these types apply, and it gives no type
+for any other mask.
 
 The tab "Random Mask Case Label Info" transcribes two plate-case labels
 from Photronics, one for a metal 2 plate and one for a metal 5
@@ -514,11 +517,13 @@ MPW runs.
   µm reading rests on agreement with the periphery rules.
 * No PDK document gives the resist tone, reticle type (binary or
   phase-shift) or exposure tool for any mask. The process-steps sheet
-  gives a reticle type for three masks only: 4× embedded attenuated
-  phase-shift masks for via 2 and via 3 and a 4× binary mask for via 4,
-  all for 248 nm exposure (our reading of the sheet's mask-type
-  codes).[^steps-sheet] It gives no resist tone or exposure tool, and no
-  type for the other masks. `gds_layers.csv` has an
+  gives a coded reticle type for three masks only, which we read as
+  embedded attenuated phase-shift masks for via 2 and via 3 and a
+  binary mask for via 4, all for 248 nm exposure and, less certainly,
+  4×.[^steps-sheet][^photronics-abr] It names no resist tone or
+  exposure tool, and no type for the other masks. The
+  {ref}`VIM4 <step-159>` page's i-line inference predates this record.
+  `gds_layers.csv` has an
   `areaid.op` identifier (81:54, "OPC drop. Block automatic OPC (for
   fab blocks and lithocal structures)"), which implies that automatic
   OPC is applied, but not to which masks;[^pdk-06] the step pages and
@@ -567,6 +572,13 @@ MPW runs.
     labels) and "Sheet1" (step number, code and description), retrieved
     2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^photronics-abr]: Photronics, Inc., *Advanced Binary Reticle*, product
+    page, retrieved 2026-09-13.
+    <https://www.photronics.com/products/advanced-binary-reticle/>
+[^pat-bim-tsmc]: S.-J. Lin and W.-C. Wang (Taiwan Semiconductor
+    Manufacturing Co.), *Method for forming binary intensity masks*,
+    US 6,379,849 B1, filed 2000-10-26, granted 2002-04-30.
+    <https://patents.google.com/patent/US6379849B1/en>
 [^wiki-litho]: Wikipedia, *Photolithography*.
     <https://en.wikipedia.org/wiki/Photolithography>
 [^wiki-opc]: Wikipedia, *Optical proximity correction*.
