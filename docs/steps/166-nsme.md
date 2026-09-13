@@ -164,7 +164,8 @@ public):
   Iridia and Mattson ashers,[^skw-01] would etch the oxide the ash exposes —
   the thin passivation oxide over metal 5 and the walls of the ring — and
   would, we infer, be left out. **Amine or semi-aqueous solvent**
-  (EKC265/EKC270 class) and DI water for the post-etch clean.[^skw-01]
+  (EKC265/EKC270 class; SkyWater lists "EKS265, EKC270
+  solvents"[^skw-01]) and DI water for the post-etch clean.
 * **Chamber consumables** (focus rings, electrodes); **fluorocarbon
   abatement**; **monitor wafers** with a full dielectric stack.
 
