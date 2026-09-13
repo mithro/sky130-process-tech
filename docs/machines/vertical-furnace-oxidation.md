@@ -14,7 +14,7 @@ steps this reference assigns to the class. The oxidation physics
 {ref}`category page <category-oxidation>`; the same furnace platform
 used for deposition and for anneals has pages of its own
 ({ref}`machine-vertical-furnace-lpcvd`,
-Vertical batch furnace: anneal and alloy).
+{ref}`machine-vertical-furnace-anneal`).
 
 | | Vertical batch furnace: oxidation |
 |---|---|
@@ -140,7 +140,7 @@ but that "after a low temperature hydrogen anneal these densities are
 lower than those of comparable oxygen-cooled oxides".[^razouk-1979] An
 oxidation recipe therefore normally ends with an in-tube inert anneal,
 and the interface is finished much later by the hydrogen alloy
-(Vertical batch furnace: anneal and alloy).
+({ref}`machine-vertical-furnace-anneal`).
 
 ## Representative 200 mm-era models
 
@@ -332,7 +332,7 @@ and thicknesses are not public.
 * {ref}`category-oxidation` — oxidation kinetics, oxide quality and the
   six oxidation steps of SKY130.
 * {ref}`machine-vertical-furnace-lpcvd` and
-  Vertical batch furnace: anneal and alloy — the same Aviza furnace group
+  {ref}`machine-vertical-furnace-anneal` — the same Aviza furnace group
   used for deposition, anneals and the alloy.
 * Rapid thermal processor (RTA, RTO) — the single-wafer alternative
   and the Heatpulse entry.
