@@ -839,9 +839,10 @@ non-volatile memory technology". Tier: high-level.
 65-Nanometer SONOS Embedded Flash Technology"*, PR Newswire,
 2011-07-27.
 <https://www.prnewswire.com/news-releases/cypress-and-umc-deliver-ics-on-new-65-nanometer-sonos-embedded-flash-technology-126238008.html>.
-Compares S65 with "the current 130-nanometer S8 process" and states
-the SONOS module "only requires three additional mask layers to a
-standard CMOS process". Tier: cross-check.
+Compares S65 with "the current 130-nanometer S8™ process" and states
+that the S65 process "only requires three additional mask layers to a
+standard CMOS process"; the mask count concerns S65, and no count is
+given for S8. Tier: cross-check.
 
 **CYP-23** — Cypress, *"Cypress Signs Innopower to Enable SONOS-Based
 Embedded Flash Solutions for 130-nm and 65-nm Technology Nodes"*,

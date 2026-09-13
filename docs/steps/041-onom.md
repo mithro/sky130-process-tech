@@ -69,9 +69,10 @@ has to be removed *before* the gate oxidations
 ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`), which is where
 Cypress's flow puts it: the ONO is formed and patterned, then "the
 logic MOS gate insulator" is formed by a thermal process that
-"additionally" reoxidises the ONO.[^pat-03] Cypress's press release
-puts the total cost of the module at "three additional mask
-layers",[^cyp-22] and its 2020 article credits {term}`SONOS` with "the
+"additionally" reoxidises the ONO.[^pat-03] A 2011 Cypress/UMC
+press release puts the cost of the module in the 65 nm S65 process at
+"three additional mask layers" (it gives no count for S8),[^cyp-22] and
+Cypress's 2020 article credits {term}`SONOS` with "the
 simplicity of its integration (fewer extra lithography
 masks)"[^cyp-25] — `ONOM` is the mask that pays for keeping the ONO
 out of the logic.
@@ -183,7 +184,8 @@ etch).
 * Koutny et al. (Cypress), US 8,093,128 — removal of the stack from
   the HV and LV MOS regions; the inorganic spin-on ARC; the
   importance of window alignment.[^pat-03]
-* Cypress/UMC press release — "three additional mask layers".[^cyp-22]
+* Cypress/UMC press release — "three additional mask layers" for the
+  S65 process; no count is given for S8.[^cyp-22]
 * Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest —
   "fewer extra lithography masks".[^cyp-25]
 
