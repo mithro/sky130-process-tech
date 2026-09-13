@@ -26,13 +26,11 @@ Hori,[^hori-1989-latid][^hori-1992] the modern descendant of the lightly
 doped drain.[^ogura-1980]
 
 The PDK gives arsenic as its N-tip species in general ("N Tip
-(As)"),[^pdk-03] consistent with the step code used in this reference.
-Energy and dose are not public. Unlike the 1.8 V tip there is no
-{term}`halo` in the step list used in this reference between this
-implant and its strip
-{ref}`HVASTIS <step-070>`, which is consistent with a device whose
-0.5 µm "HV MOSFET channel length"[^pdk-03] does not need one
-(inference).
+(As)"),[^pdk-03] and this reference describes the step as an arsenic
+implant on that basis. Energy and dose are not public. Unlike the
+1.8 V tip, this reference describes no {term}`halo` for this device
+before its strip {ref}`HVASTIS <step-070>`: a 0.5 µm "HV MOSFET
+channel length"[^pdk-03] is long enough not to need one (inference).
 
 ## Step category
 
@@ -240,8 +238,8 @@ fab (SKY130's energy and dose are not public):
   contemplated, and its *High Voltage Methodology* page says hv
   p-channel devices "get the extra junction grading implant into the
   ringed gate with the HVPDM mask",[^pdk-hv] a mask name absent from
-  the PDK's `masks.csv`[^pdk-05] — is not visible in the step list used
-  in this reference.
+  the PDK's `masks.csv`[^pdk-05] — is not stated publicly; this
+  reference describes none.
 
 <!-- footnotes -->
 

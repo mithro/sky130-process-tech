@@ -18,9 +18,8 @@ after it has masked two implants — the arsenic tip
 cleans the wafer so that the next tip mask, {ref}`HVNTM <step-068>`, can
 be coated on a bare, particle-free surface. It is the first resist strip
 after the gate etch and the first of the three strips in the tip
-module; the step list used in this reference pairs each tip mask with
-such an "…S" step ({ref}`HVASTIS <step-070>`,
-{ref}`LDASTIS <step-074>`).
+module; in this reference each tip mask is followed by such a strip
+({ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`).
 
 The resist being removed is the roughly 1 µm i-line implant resist
 inferred on the {ref}`NTM <step-064>` page (the PDK's nominal

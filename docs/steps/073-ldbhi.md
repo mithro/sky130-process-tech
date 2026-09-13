@@ -17,9 +17,9 @@ transistors — the counterpart of {ref}`BHI <step-066>` made through the
 {ref}`LDNTM <step-071>` resist after the lightly doped arsenic tip of
 {ref}`LDASTI <step-072>`. A tilted boron beam places p-type {term}`pockets <pocket>`
 around the memory transistor's tips, on the channel side of each
-junction, self-aligned to the control-gate line. The step list used in
-this reference pairs this halo only with the `NTM` and `LDNTM` tips: the
-5 V tip ({ref}`HVASTI <step-069>`) has none. The resist is removed at
+junction, self-aligned to the control-gate line. In this reference a
+halo is described only with the `NTM` and `LDNTM` tips; the 5 V tip
+({ref}`HVASTI <step-069>`) is described without one. The resist is removed at
 {ref}`LDASTIS <step-074>` and every tip and halo of the module is
 annealed at {ref}`TIPRTAD <step-075>`.
 

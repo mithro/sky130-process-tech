@@ -23,11 +23,12 @@ ambient for seconds on the industry-typical recipe described below;
 SKY130's own conditions are not public — to a temperature high enough
 to regrow the arsenic-amorphised silicon, put the arsenic and boron
 onto lattice sites, and dissolve the implant damage, while moving the
-junctions as little as possible. The step list used in this reference
-calls it "RTA tip activation"; we read the code as "tip RTA" with a
-trailing qualifier that the later {ref}`RTAD <step-088>` and
-{ref}`RTAD2 <step-092>` share, and the public evidence supports the
-RTA reading (below). After it the {term}`spacer` nitride is deposited at
+junctions as little as possible. This reference describes it as a
+rapid thermal anneal for tip activation, as it does the later
+{ref}`RTAD <step-088>` and {ref}`RTAD2 <step-092>`; the public
+evidence for an RTA is set out below (SkyWater lists a single-wafer
+lamp RTA,[^skw-01] and shallow extensions call for one[^stolk-1997]).
+After it the {term}`spacer` nitride is deposited at
 {ref}`SPNIT <step-076>`.
 
 It is the second of the four activation anneals in the flow, after
@@ -137,7 +138,8 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
   a single-wafer lamp RTA with the inert ambients and the temperature
   reach an extension anneal needs. Strength: **strong** for the tool
   (SkyWater statement); the assignment to `TIPRTAD` is an
-  **inference** from the step name and from the tool being the only
+  **inference** from the shallow-junction anneal this step needs and
+  from the tool being the only
   RTA on the list. Reseller documentation for the Heatpulse 8800/8808
   family gives a "Recommended steady-state temperature range: 400 –
   1200°C", ramp-up "Programmable, 1 – 180°C per second", "2 banks of

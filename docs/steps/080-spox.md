@@ -13,17 +13,17 @@
 ## What this step is
 
 `SPOX` deposits a blanket silicon dioxide film over the wafer after the
-{term}`nitride cut` and immediately before the first source/drain mask. The
-step list used in this reference calls it the *spacer oxide*; the PDK's
+{term}`nitride cut` and immediately before the first source/drain mask. This
+reference describes it as the *spacer oxide*: the PDK's
 assumptions table lists an "oxide spacer" of 0.05 µm (variable
-`SpThickn`),[^pdk-03] and we infer that the two refer to the same film,
+`SpThickn`),[^pdk-03] and we infer that this film is that oxide,
 so that the SKY130 spacer is a composite of the nitride from
 {ref}`SPNIT <step-076>`/{ref}`SPE <step-077>` and this oxide. What the
 PDK does not say is whether the oxide is etched back into a second
-spacer or left as a blanket layer; the step list used here contains no
-oxide spacer etch between `SPOX` and {ref}`PSDM <step-081>`, so on our
-reading the film stays conformal and blanket through the source/drain
-implants, and the deep implants pass through it.
+spacer or left as a blanket layer. This reference treats the film as
+staying conformal and blanket through the source/drain implants, with
+the deep implants passing through it (inference; no public source
+describes an oxide spacer etch before {ref}`PSDM <step-081>`).
 
 The surfaces the oxide lands on are, at this point: the thin oxide
 over the source/drain silicon that the spacer etch stopped on
@@ -122,8 +122,7 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
   are not public.
 * **Sequence.** Post-cut clean (already done at
   {ref}`NPCME <step-079>`); load; deposition to a timed thickness on
-  monitors; unload. No etch-back is shown in the step list used in
-  this reference.
+  monitors; unload. This reference assumes no etch-back (see above).
 * **Metrology.** Thickness and index by ellipsometry on monitors and
   test pads; step coverage by cross-section SEM in development;
   particles.
