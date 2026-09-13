@@ -164,7 +164,7 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
    or ionised,[^rossnagel-1991][^rossnagel-1998] or Ti:W from a 10 wt.%
    Ti target.[^pat-tiw-hitachi]
 4. **Al–0.5%Cu, 7 200 Å (or 21 250 Å).** Sputtered from an
-   Al–0.5 wt.% Cu target at a wafer temperature of roughly 150–300 °C
+   Al–0.5%Cu target at a wafer temperature of roughly 150–300 °C
    (industry-typical[^txt-02]); a thick film is usually deposited in
    several passes or with a cooled pedestal so that the wafer does
    not drift into the hillock and copper-precipitation regime (industry
@@ -204,7 +204,7 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
 
 ## Resources required
 
-* **{ref}`Sputter targets <material-sputter-targets>`** — titanium, Al–0.5 wt.% Cu and Ti:W (10 wt.%
+* **{ref}`Sputter targets <material-sputter-targets>`** — titanium, Al–0.5%Cu and Ti:W (10 wt.%
   Ti[^pat-tiw-hitachi]); SkyWater's filings name Honeywell Electronic
   Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
   as sputter-target suppliers.[^sec-01][^sec-02] A thick metal consumes
