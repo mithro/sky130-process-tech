@@ -126,16 +126,19 @@ resistors need three implant masks ({ref}`RPM <step-049>`,
 {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`); the local interconnect
 needs a contact and a line mask ({ref}`LICM1 <step-093>`,
 {ref}`LI1M <step-102>`); and each MiM capacitor needs a plate mask
-({ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`). The step pages also
-read three features that set SKY130 apart from a typical 130 nm logic
-process of its time, all as inferences from the PDK's numbers: the gates
-and diffusions carry no {term}`salicide`, only a silicide at the bottom of
-each contact ({ref}`CSIL <step-098>`, from the unsilicided poly and
-diffusion sheet resistances[^pdk-08]); the interconnect is
-{term}`subtractive <subtractive metallisation>` aluminium with tungsten
-plugs rather than copper {term}`damascene` ({ref}`TIAL6 <step-112>`,
-{ref}`MM1E <step-114>`); and both NMOS and PMOS gates are n⁺ poly
-({ref}`P1I <step-050>`).
+({ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`). These pairings
+rest on the PDK's descriptions of the corresponding layers, as set out on
+each step page. Three further features set SKY130 apart from a typical
+130 nm logic process of its time. Its interconnect is aluminium ("5:
+Al"[^skw-02]), which the step pages describe as patterned
+{term}`subtractively <subtractive metallisation>` over tungsten plugs
+rather than as copper {term}`damascene` ({ref}`TIAL6 <step-112>`,
+{ref}`MM1E <step-114>`). Its gates and diffusions carry, on the step
+pages' reading of the unsilicided poly and diffusion sheet
+resistances,[^pdk-08] no {term}`salicide`, only a silicide at the bottom
+of each contact ({ref}`CSIL <step-098>`; inference). And both its NMOS
+and PMOS gates are, on the reading of the {ref}`P1I <step-050>` page,
+n⁺ poly (inference).
 
 ### Variants and options
 
@@ -266,6 +269,210 @@ The PDK's process stack diagram, the source of most thicknesses on these
 pages, is marked "(Diagram not to scale!)";[^pdk-04] its labels are
 quoted as labels, and where they do not add up the pages say so.
 
+(overview-modules)=
+## The flow by module
+
+The 171 steps fall into thirteen process modules, each ending where
+one structure of the device is complete. The module boundaries follow
+the phases printed in each step page's summary table, with three of
+them split where the flow changes subject (SONOS stack and gate
+oxides; tips and spacers; the first and second MiM capacitor levels).
+The mask counts are the lithography steps of the step list in each
+module, as listed on the {ref}`masks-index`; all thirteen add up to 171
+steps and 36 masks.
+
+| Module | Steps | Number of steps | Mask steps | Key public facts |
+|--------|-------|-----------------|------------|------------------|
+| Starting material, isolation and deep N-well | {ref}`SMAT <step-001>` – {ref}`NS19 <step-013>` | 13 | 2 (`FOM`, `DNM`) | "Bulk" substrate;[^skw-02] "FOX K=3.9" field oxide, top at 0.3262 µm on the stack diagram,[^pdk-04] 0.07 µm above the silicon under poly[^pdk-03] |
+| Wells and threshold implants | {ref}`LVTNM <step-014>` – {ref}`RTAI <step-034>` | 21 | 5 (`LVTNM`, `NWM`, `HVTPM`, `PWBM`, `PWDEM`) | ten implants and one anneal; N-well peak 6.0 × 10¹⁷ cm⁻³ and baseline vertical dimension 1.1 µm, P-well peak 4 × 10¹⁷ cm⁻³ at 0.42 µm;[^pdk-03] `PWBM` and `PWDEM` not marked as used in SKY130[^pdk-05] |
+| SONOS tunnel window and ONO stack | {ref}`TUNM <step-035>` – {ref}`ONOME <step-042>` | 8 | 2 (`TUNM`, `ONOM`) | ONO thicknesses not public, bounded by Cypress patents;[^pat-01][^pat-02] programmed and erased thresholds 1.44 V and −2.3 V in the e-test table[^pdk-07] |
+| Gate oxides | {ref}`GOX100 <step-043>` – {ref}`LVGOX <step-047>` | 5 | 1 (`LVOM`) | high-voltage devices "use 110A gate oxide thickness";[^pdk-hv] model `toxe` 4.148 nm (1.8 V) and 11.6 nm (5 V)[^pdk-model-nfet01v8][^pdk-model-nfet5v] |
+| Poly gate and poly resistors | {ref}`SAGD <step-048>` – {ref}`IOX45 <step-063>` | 16 | 4 (`RPM`, `RRPM`, `URPM`, `P1M`) | poly 0.18 µm;[^pdk-03][^pdk-04] gate poly 48.2 Ω/sq;[^pdk-08] 300 Ω/sq and 2000 Ω/sq precision resistors;[^pdk-07] poly width 0.150 µm, space 0.210 µm;[^pdk-periph] "poly cap after SPE" 0.2 µm[^pdk-03] |
+| Tips and halos | {ref}`NTM <step-064>` – {ref}`TIPRTAD <step-075>` | 12 | 3 (`NTM`, `HVNTM`, `LDNTM`) | "N Tip (As)"; tip implant angle 7°, HV tip 40° with 23° twist;[^pdk-03] no P-tip mask in the mask table[^pdk-05] |
+| Spacers and source/drain | {ref}`SPNIT <step-076>` – {ref}`RTAD <step-088>` | 13 | 3 (`NPCM`, `PSDM`, `NSDM`) | "SPNIT K=7.5";[^pdk-04] "oxide spacer" 0.05 µm, "N+ or P+ S/D (XJ)" 0.1 µm;[^pdk-03] N- and P-diffusion 120 Ω/sq and 197 Ω/sq[^pdk-08] |
+| Pre-metal dielectric, contact silicide and local interconnect | {ref}`PSG <step-089>` – {ref}`CMPL <step-106>` | 18 | 2 (`LICM1`, `LI1M`) | "PSG K=3.9", 0.6099 µm over the gate and 0.4299 µm over field poly;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm;[^pdk-03] `li` 0.1 µm,[^pdk-04] 12.8 Ω/sq;[^pdk-08] "LINT K=7.3" 0.075 µm and "NILD2 K=4.05" 0.265 µm[^pdk-04] |
+| Metal contact and metal 1 | {ref}`CTM1 <step-107>` – {ref}`NCAPOX3 <step-117>` | 11 | 2 (`CTM1`, `MM1`) | `mcon` 0.170 µm square;[^pdk-periph] S8 metal 1 "100A Ti / 3200A Al-0.5%Cu / 300A TiW";[^cyp-qtp-113005] `met1` 0.36 µm;[^pdk-04] 125 mΩ/sq[^pdk-08] |
+| Via 1, metal 2 and via 2 | {ref}`VIM <step-118>` – {ref}`WTIAL3 <step-134>` | 17 | 3 (`VIM`, `MM2`, `VIM2`) | via 0.150 µm and via 2 0.200 µm squares;[^pdk-periph] via heights 0.27 µm and 0.42 µm, `met2` 0.36 µm[^pdk-04] |
+| First MiM capacitor, metal 3 and via 3 | {ref}`CAPILD <step-135>` – {ref}`WCMP5 <step-148>` | 14 | 3 (`CAPM`, `MM3`, `VIM3`) | 2 fF/µm², top plate 5.8 Ω/sq;[^pdk-07] `met3` 0.845 µm and via-3 height 0.39 µm;[^pdk-04] 47 mΩ/sq;[^pdk-08] `CAPM` not marked as used in SKY130[^pdk-05] |
+| Metal 4, second MiM capacitor, via 4 and metal 5 | {ref}`WTIAL4 <step-149>` – {ref}`MM5E <step-163>` | 15 | 4 (`CAP2M`, `MM4`, `VIM4`, `MM5`) | `met4` 0.845 µm, via-4 height 0.505 µm, `met5` 1.26 µm;[^pdk-04] via 4 0.800 µm square, metal 5 1.600 µm width and space;[^pdk-periph] no tungsten-plug steps after via 4[^steps-sheet] |
+| Passivation, pads, alloy and test | {ref}`NFUSOX <step-164>` – {ref}`HPETEST <step-171>` | 8 | 2 (`NSM`, `PDM`) | "TOPOX K=3.9" 0.09 µm and "TOPNIT K=7.5" 0.54 µm;[^pdk-04] `pad` "Passivation cut (opening over pads)";[^pdk-06] e-test against "EDR (e-test)" specifications[^pdk-07] |
+
+The narrative below walks through the modules. Numbers already in the
+table are not repeated. The order of the steps is the step list's;
+wherever a description goes further — naming a film, a species or the
+purpose of a step — it is the reading of the step page linked, which
+gives its public basis and marks what is inferred.
+
+**Starting material, isolation and deep N-well.** The wafer enters as
+bare p-type silicon — the stack diagram labels the bottom
+"p-substrate"[^pdk-04] — and the first module builds
+{term}`shallow trench isolation <STI>`: a pad oxide and a nitride
+{term}`hard mask` ({ref}`BOX <step-002>`, {ref}`ISONIT <step-003>`), the
+first mask ({ref}`FOM <step-004>`, which on this reference's reading
+also prints the alignment marks for later levels), a nitride etch and a
+silicon trench etch, a liner oxidation, an oxide fill, a polish that
+stops on the nitride, and the nitride strip ({ref}`STINITE <step-005>`
+to {ref}`NS19 <step-013>`). The step list places the deep N-well mask,
+implant and strip ({ref}`DNM <step-007>` to {ref}`DNIS <step-009>`)
+between the trench etch and the liner oxidation, so the implant enters
+through open trenches and is driven by the heat of the isolation module;
+the {ref}`DNM <step-007>` page sets out why that order may have been
+chosen, as inferences. No trench depth is public; about 0.26 µm is the
+{ref}`STIE <step-006>` page's reading of the stack diagram.
+
+**Wells and threshold implants.** Five masks carry ten implants. The
+module opens, unusually, with the low-threshold NMOS implant
+({ref}`LVTNM <step-014>`, {ref}`LVTNI <step-015>`), then prints the
+N-well, through whose resist this reference describes two well implants
+and the PMOS channel implant ({ref}`NWM <step-017>` to
+{ref}`LVTPIS <step-021>`), the high-threshold PMOS pair
+({ref}`HVTPM <step-022>` to {ref}`PCHIS <step-025>`), the P-well, set by
+a {term}`block mask` (the PDK has no drawn P-well layer)
+({ref}`PWBM <step-026>` to {ref}`PWIS <step-029>`), and the lightly
+doped P-well of the 20 V drain-extended devices
+({ref}`PWDEM <step-030>` to {ref}`PWDEIS <step-033>`). A single anneal,
+{ref}`RTAI <step-034>`, activates all ten before any gate dielectric is
+grown. The PDK publishes the resulting well profiles, not the implants,
+so the two-implant wells are read as chained {term}`retrograde wells
+<retrograde well>` (inference).
+
+**SONOS tunnel window and ONO stack.** The tunnel mask opens windows
+over the channels of the memory transistors ({ref}`TUNM <step-035>`);
+two implants set their channel doping ({ref}`PTSI <step-037>`,
+{ref}`DEPI <step-038>`), the oxide in the windows is removed
+({ref}`TUNME <step-039>`), and the {term}`ONO` stack of tunnel oxide,
+{term}`charge-trapping layer` and {term}`blocking oxide` is formed over
+the whole wafer ({ref}`ONO <step-040>`) and then removed from everything
+except the memory cells ({ref}`ONOM <step-041>`,
+{ref}`ONOME <step-042>`). The module comes before the logic gate
+oxides, the order of Cypress's integration patent, in which the logic
+gate oxidation has "the advantage of additionally serving to reoxidize
+the ONO charge trapping dielectric stack".[^pat-03]
+
+**Gate oxides.** SKY130 is a {term}`dual gate oxide` process. The thick
+oxide is grown over every active area ({ref}`GOX100 <step-043>`); the
+low-voltage oxide mask opens the 1.8 V regions ({ref}`LVOM <step-044>`),
+the 1.8 V NMOS channel implant, on this reference's reading, goes in
+through the thick oxide ({ref}`NCHI <step-045>`) and the oxide is stripped there
+({ref}`GOXETCH <step-046>`); the thin oxide is then grown, thickening
+the thick oxide slightly at the same time ({ref}`LVGOX <step-047>`).
+SkyWater lists "Nitrided gate oxide" among its special
+modules;[^skw-01] whether SKY130 uses it is not stated.
+
+**Poly gate and poly resistors.** One undoped amorphous-silicon film is
+deposited ({ref}`SAGD <step-048>`) and doped *before* it is patterned:
+an n-type gate implant everywhere except the resistor bodies
+({ref}`RPM <step-049>`, {ref}`P1I <step-050>`), then p-type implants
+into the 300 Ω/sq and 2000 Ω/sq resistor bodies through two further
+masks ({ref}`RRPM <step-052>` to {ref}`UPRIS <step-057>`). The film is
+capped with nitride and oxide ({ref}`GATENIT <step-058>`,
+{ref}`POC <step-059>`), the wafer backside is cleared
+({ref}`BFR <step-060>`), the gate is printed and etched
+({ref}`P1M <step-061>`, {ref}`P1ME <step-062>`) and the poly is
+re-oxidised ({ref}`IOX45 <step-063>`). The PDK describes the generic
+poly as "N+ doped gate poly",[^pdk-07] which, with the absence of any
+P⁺ poly mask, is the basis for reading SKY130 as a
+{term}`single-work-function gate <single-work-function gate>` process
+(inference, {ref}`P1I <step-050>`).
+
+**Tips and halos.** Three masks each open one transistor family for its
+source/drain {term}`extension`: the 1.8 V NMOS, with an arsenic tip and a
+boron {term}`halo` ({ref}`NTM <step-064>` to {ref}`ASTIS <step-067>`);
+the 5 V-class NMOS, with a steeply tilted arsenic tip
+({ref}`HVNTM <step-068>` to {ref}`HVASTIS <step-070>`); and the SONOS
+memory transistors, with a lightly doped tip and a halo
+({ref}`LDNTM <step-071>` to {ref}`LDASTIS <step-074>`). A rapid thermal
+anneal activates all five implants ({ref}`TIPRTAD <step-075>`). No
+module in the step list forms a PMOS extension, one of the open
+questions below.
+
+**Spacers and source/drain.** A nitride film is deposited and etched
+back into {term}`spacers <spacer>` ({ref}`SPNIT <step-076>`,
+{ref}`SPE <step-077>`); the gate cap is opened where contacts will land
+on poly ({ref}`NPCM <step-078>`, {ref}`NPCME <step-079>`, the
+{term}`nitride cut`); an oxide is deposited, read as the PDK's "oxide
+spacer" ({ref}`SPOX <step-080>`); the P⁺ source/drain mask carries, on this
+reference's reading, two implants and the N⁺ mask one ({ref}`PSDM <step-081>` to
+{ref}`NSDIS <step-087>`); and a rapid thermal anneal activates them
+({ref}`RTAD <step-088>`). After it the front end is electrically
+complete.
+
+**Pre-metal dielectric, contact silicide and local interconnect.** This
+is the {term}`MOL` of this reference. A phosphosilicate glass is
+deposited, polished and capped ({ref}`PSG <step-089>` to
+{ref}`NCAPOX <step-091>`) and annealed a second time
+({ref}`RTAD2 <step-092>`). The local-interconnect contacts are printed
+and etched ({ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>`), cleaned
+and annealed ({ref}`SACETCH <step-095>`, {ref}`ALLY1 <step-096>`), lined
+with Ti/TiN and silicided at their bottoms ({ref}`TI/TIN1 <step-097>`,
+{ref}`CSIL <step-098>`), and filled with tungsten that is polished back
+into {term}`plugs <W plug>` ({ref}`WDEP <step-099>`,
+{ref}`WCMPLI <step-100>`). A titanium-nitride film is deposited and
+patterned into the {term}`local interconnect` ({ref}`LITIN <step-101>`
+to {ref}`LI1ME <step-103>`), sealed with nitride
+({ref}`LINIT <step-104>`) and buried in an oxide that is polished to
+thickness ({ref}`NILD2 <step-105>`, {ref}`CMPL <step-106>`). The step
+list does not explain the purposes of the second anneal, the
+"sacrificial" etch or the alloy before metal; the step pages give
+readings.
+
+**Metal contact and metal 1.** The first back-end level repeats a
+pattern that recurs up the stack. Contact holes are printed, etched,
+lined with TiN, filled with tungsten and polished ({ref}`CTM1 <step-107>`
+to {ref}`WCMP2 <step-111>`); the metal stack is sputtered, printed and
+etched ({ref}`TIAL6 <step-112>` to {ref}`MM1E <step-114>`); and the
+{term}`inter-metal dielectric` is deposited, polished and capped
+({ref}`NILD3 <step-115>` to {ref}`NCAPOX3 <step-117>`). Cypress reports
+for the S8 technology at the same fab describe a Ti/Al–Cu/TiW stack and
+its later change "from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN";[^cyp-qtp-113005][^cyp-qtp-123907]
+the PDK's 0.36 µm matches the first (inference, {ref}`TIAL6 <step-112>`).
+
+**Via 1, metal 2 and via 2.** Via 1 and via 2 each take the five steps
+of mask, etch, TiN liner, tungsten fill and tungsten polish
+({ref}`VIM <step-118>` to {ref}`WCMP3 <step-122>`,
+{ref}`VIM2 <step-129>` to {ref}`WCMP4 <step-133>`), and metal 2 the
+same deposition, mask, etch, dielectric, polish and cap sequence as
+metal 1 ({ref}`TIAL12 <step-123>` to {ref}`NCAPOX4 <step-128>`). The
+module ends with the deposition of the metal-3 stack
+({ref}`WTIAL3 <step-134>`), which stays unpatterned while the first
+capacitor is built on it.
+
+**First MiM capacitor, metal 3 and via 3.** The PDK describes the
+capacitor as "constructed using a thin dielectric over metal, followed
+by a thin conductor layer on top of the dielectric".[^pdk-07] The
+dielectric and the top-plate film are deposited on the blanket metal 3
+({ref}`CAPILD <step-135>`, {ref}`CAPTIW1 <step-136>`), the plates are
+printed and etched ({ref}`CAPM <step-137>`, {ref}`CAPME <step-138>`), and
+only then is metal 3 patterned, cutting the bottom plates with the
+wiring ({ref}`MM3 <step-139>`, {ref}`MM3E <step-140>`). The dielectric's
+material and thickness and the plate's material are not public; the
+step pages read a PECVD oxynitride and a TiW plate (inference). The
+dielectric, polish, cap and via-3 module follow
+({ref}`NILD5 <step-141>` to {ref}`WCMP5 <step-148>`), with vias landing
+both on metal 3 and on capacitor plates.
+
+**Metal 4, second MiM capacitor, via 4 and metal 5.** The second
+capacitor repeats the first on metal 4 ({ref}`WTIAL4 <step-149>` to
+{ref}`MM4E <step-155>`); the PDK says "The constructions are identical,
+and the capacitors may be stacked to maximize total
+capacitance".[^pdk-07] After the via-4 dielectric
+({ref}`NILD6 <step-156>` to {ref}`NCAPOX6 <step-158>`) the step list
+goes straight from the via-4 mask and etch ({ref}`VIM4 <step-159>`,
+{ref}`VIM4E <step-160>`) to the metal-5 stack
+({ref}`WTIAL5 <step-161>`), with no liner, tungsten or polish steps in
+between;[^steps-sheet] the step pages read the 0.8 µm vias as filled
+by the metal-5 aluminium (inference). Metal 5 is then printed and
+etched ({ref}`MM5 <step-162>`, {ref}`MM5E <step-163>`).
+
+**Passivation, pads, alloy and test.** A thin oxide is deposited over
+metal 5 ({ref}`NFUSOX <step-164>`, read as the diagram's TOPOX), a ring
+along each die edge is opened ({ref}`NSM <step-165>`,
+{ref}`NSME <step-166>`, read as a seal-ring opening for the nitride), the
+passivation nitride is deposited ({ref}`NTSD <step-167>`), the pads are
+opened ({ref}`PDM <step-168>`, {ref}`PDME <step-169>`), the wafer
+receives a final {term}`alloy anneal` ({ref}`ALLY <step-170>`) and the
+{term}`e-test` structures are measured ({ref}`HPETEST <step-171>`).
+
 <!-- footnotes -->
 
 [^pdk-02]: SkyWater PDK Authors, *Background*, SkyWater SKY130 PDK
@@ -349,3 +556,46 @@ quoted as labels, and where they do not add up the pages say so.
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     retrieved 2026-09-13; tab "Sheet1" lists the 171 steps (number, code and
     description). <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^pat-01]: K. Ramkumar, M. Rathor, B. Parameshwaran and L. Lancaster
+    (Cypress Semiconductor), *Method of manufacturing an
+    oxide-nitride-oxide (ONO) dielectric for SONOS-type devices*,
+    US 6,969,689 B1, granted 2005-11-29.
+    <https://patents.google.com/patent/US6969689B1/en>
+[^pat-02]: S. Levy, K. Ramkumar, F. Jenne and S. Geha (Cypress
+    Semiconductor), *Oxide-nitride-oxide stack having multiple
+    oxynitride layers*, US 2009/0179253 A1, published 2009-07-16.
+    <https://patents.google.com/patent/US20090179253A1/en>
+[^pat-03]: W. Koutny et al. (Cypress Semiconductor), *Integration of
+    non-volatile charge trap memory devices and logic CMOS devices*, US
+    8,093,128 B2, granted 2012-01-10.
+    <https://patents.google.com/patent/US8093128B2/en>
+[^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
+[^pdk-model-nfet01v8]: SkyWater PDK Authors,
+    `sky130_fd_pr__nfet_01v8__tt.pm3.spice` (typical-corner BSIM4
+    model, parameter `toxe`), google/skywater-pdk-libs-sky130_fd_pr
+    repository.
+    <https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice>
+[^pdk-model-nfet5v]: SkyWater PDK Authors,
+    `sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice` (typical-corner BSIM4
+    model, parameter `toxe`), google/skywater-pdk-libs-sky130_fd_pr
+    repository.
+    <https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice>
+[^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
+    PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
+    `gds_layers.csv`, SkyWater SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
+[^cyp-qtp-113005]: Cypress Semiconductor, *Product Qualification
+    Plan, QTP# 113005: 64K Serial Non-Volatile SRAM Product Family, S8
+    Technology, CMI (Fab 4)*, document 001-85611 Rev. *A, January
+    2013 (copy hosted by Infineon Technologies).
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
+[^cyp-qtp-123907]: Cypress Semiconductor, *Fab Process Qualification
+    Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8
+    Technology, Fab 4 CMI*, document 001-91369 Rev. **, March 2014
+    (copy hosted by Tokyo Electron Device as the attachment to
+    Cypress Product Information Notification PIN145273, 2014-03-13).
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
