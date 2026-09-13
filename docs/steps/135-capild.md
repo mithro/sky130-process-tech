@@ -43,25 +43,27 @@ gives the capacitor an area capacitance `CMIMA` of 2 fF/µm² (limits
 plate voltages of 0–5.0 V.[^pdk-07] Neither the dielectric's
 thickness nor its permittivity is labelled anywhere in the PDK; the
 stack diagram carries no thickness for `capm` or its dielectric.[^pdk-04]
-The step name says *oxynitride*, and SkyWater's capability list
-includes "PECVD silane oxide/nitride/oxynitride, C1 – low temp,
-range of R.I. options".[^skw-01] From the capacitance density one can
+The step name used in this reference reads *oxynitride*; public
+support for such a film is SkyWater's capability list, which includes
+"PECVD silane oxide/nitride/oxynitride, C1 – low temp, range of R.I.
+options".[^skw-01] From the capacitance density one can
 bound the thickness: with {math}`C/A = \varepsilon_0 k / d`, a film
 giving 2 fF/µm² is {math}`d \approx 4.4\,\mathrm{nm} \times k`, so
 about 18 nm for an oxide-like {math}`k = 4`, 22–27 nm for a mid-range
 oxynitride ({math}`k \approx 5`–6) and 33 nm for the {math}`k = 7.5`
 the PDK labels for its nitride films (TOPNIT, SPNIT).[^pdk-04] This
 is our arithmetic with an assumed permittivity, not a published
-number; a few tens of nanometres is also what the published Al-BEOL
-MiM processes of the period used.[^kar-roy-1999][^babcock-2001]
+number; 1–2 fF/µm² is also the density the published Al-BEOL
+PECVD-nitride MiM processes of the period reported.[^kar-roy-1999]
 
 ## Step category
 
 `CAPILD` is a {ref}`Thin-film deposition <category-deposition>` step
 of the *PECVD dielectric* class — the category page's PECVD section
-— but it is the only PECVD film in the flow deposited *as a device
-layer*: its thickness sets a capacitance the models promise, not a
-spacing the design rules merely bound. That changes the priorities.
+— but it is one of the two PECVD films in the flow deposited *as a
+device layer* (with {ref}`CAPILD2 <step-150>`): its thickness sets a
+capacitance the models promise, not a spacing the design rules merely
+bound. That changes the priorities.
 Uniformity, wafer-to-wafer repeatability, low pinhole density,
 breakdown strength at 5 V across some 20–30 nm (a field of order
 2 MV/cm; our arithmetic), low leakage and a small, stable voltage
@@ -77,10 +79,12 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
 
 * **An analogue capacitor with metal plates.** SkyWater and Google
   list MiM capacitors among SKY130's features — "Optional MiM
-  capacitors" in the PDK's README,[^pdk-10] "MiM Capacitor" in the
-  S130 platform table,[^skw-02] and "MiM capacitors" among the
-  "normally optional features" offered as standard on the open
-  shuttles.[^ann-11] A capacitor whose plates are metal has no
+  capacitors" in the PDK's README, which also counts MiM capacitors
+  among the "normally *optional* features" SKY130 includes "as
+  standard";[^pdk-10] "MiM Capacitor" in the S130 platform
+  table;[^skw-02] and "MiM capacitors" among the "normally optional
+  features" offered as standard on the open shuttles.[^ann-11] A
+  capacitor whose plates are metal has no
   depletion layer, so its capacitance barely changes with bias and
   its series resistance is small; the alternatives — a poly–poly or
   MOS capacitor — are slower, more nonlinear and consume front-end
@@ -95,8 +99,9 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   bottom plate with no topography under the thin film and no
   sidewall at which it could thin or leak; the whole sandwich is made
   in three depositions with one extra mask. This is the scheme of the
-  Newport Fab and IBM patents,[^pat-mim-newportfab][^pat-mim-ibm]
-  and, on our reading of the step order, SKY130's. The price is that
+  Newport Fab patent,[^pat-mim-newportfab] and, on our reading of the
+  step order, SKY130's; IBM's patent reaches a planar bottom plate by
+  damascene and CMP instead.[^pat-mim-ibm] The price is that
   the metal-3 etch must later cut through the dielectric wherever it
   remains ({ref}`MM3E <step-140>`).
 * **Oxynitride rather than oxide or nitride.** PECVD silicon nitride
@@ -104,9 +109,9 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   a frequency-dependent ("dispersive") capacitance, as Van
   Huylenbroeck et al. showed;[^van-huylenbroeck-2002] oxide is more
   linear but needs to be thinner for the same density. Ng, Chew and
-  Chu compared PECVD nitride and oxynitride for MiM capacitors and
-  found the oxynitride gave the better linearity and
-  leakage;[^ng-2003] the composition — and hence {math}`k` — of a
+  Chu compared PECVD nitride and oxynitride MiM capacitors and found
+  both gave low leakage, high breakdown field, no dispersion and good
+  linearity;[^ng-2003] the composition — and hence {math}`k` — of a
   PECVD oxynitride is set by the N₂O/NH₃ ratio, as Denisse et al.
   and Bose, Bose and Basa characterised.[^denisse-1986][^bose-2002]
   SkyWater's "range of R.I. options"[^skw-01] is the public trace of
@@ -148,9 +153,10 @@ back end (SKY130's recipe is not public):
 4. **Thickness.** Not public; 18–33 nm by the arithmetic above for
    2 fF/µm²,[^pdk-07] deposited in tens of seconds, and controlled to
    a few per cent because capacitance scales inversely with it.
-   Kar-Roy et al. report 1–2 fF/µm² from a PECVD nitride of a few
-   hundred ångströms,[^kar-roy-1999] Babcock et al. similar values
-   with voltage coefficients of a few tens of ppm/V².[^babcock-2001]
+   Kar-Roy et al. report 1.0–2.0 fF/µm² from a PECVD
+   nitride;[^kar-roy-1999] Babcock et al. found nitride MiM linearity
+   close to that of oxide at 1 MHz but degrading at lower frequencies
+   through dispersion.[^babcock-2001]
 5. **Post-treatment.** Some processes densify or plasma-treat the
    film to reduce hydrogen and traps — the dispersion Van
    Huylenbroeck et al. traced to the nitride[^van-huylenbroeck-2002]
@@ -175,10 +181,10 @@ back end (SKY130's recipe is not public):
 * **PECVD silane "C1" chamber.** SkyWater lists "PECVD silane
   oxide/nitride/oxynitride, C1 – low temp, range of R.I.
   options".[^skw-01] Strength: **strong** for the capability, since
-  it is the only oxynitride process on the list and the step name
-  says oxynitride; the assignment of this chamber to this step and
-  the reading of "C1" as a Novellus Concept One[^novellus-history]
-  are **inferences**.
+  it is the only oxynitride process on the list; the assignment of
+  this chamber to this step is our **inference** from that and from
+  the step name used in this reference, and the reading of "C1" as a
+  Novellus Concept One[^novellus-history] is also an **inference**.
 * **PECVD TEOS "C2 and Producer"**[^skw-01] is not a nitride source
   and is unlikely here (weak).
 
@@ -202,7 +208,7 @@ back end (SKY130's recipe is not public):
 * The second capacitor, over metal 4: {ref}`CAPILD2 <step-150>`,
   {ref}`CAPTIW2 <step-151>`, {ref}`CAP2M <step-152>`,
   {ref}`CAP2ME <step-153>`.
-* Other PECVD nitride films of the flow: {ref}`LINIT <step-104>`.
+* Other nitride films of the flow: {ref}`LINIT <step-104>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 ## References
@@ -218,7 +224,7 @@ back end (SKY130's recipe is not public):
 * SkyWater PDK, *Process stack diagram* — `capm` between `metal3` and
   `metal4`; nitride permittivities 7.3–7.5.[^pdk-04]
 * SkyWater PDK, *Criteria & Assumptions* — `CAPMCD` 2 µm, `CAPMCDSP`
-  0.84 µm; "MiM Capacitor aspect ratio" 20.[^pdk-03]
+  0.84 µm; MiM capacitor aspect ratio 20.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — the `capm` rule set.[^pdk-periph]
 * SkyWater PDK, *Parasitic Layout Extraction* — the `cap_mim_m3`
   extraction notes.[^pdk-08]
@@ -232,7 +238,7 @@ back end (SKY130's recipe is not public):
 ### High-level understanding
 
 * Wikipedia, *Capacitor*, *Silicon oxynitride*, *Silicon nitride*,
-  *Plasma-enhanced chemical vapor deposition*.[^wiki-capacitor][^wiki-sion][^wiki-silicon-nitride][^wiki-pecvd]
+  *Plasma-enhanced chemical vapor deposition*.[^wiki-capacitor][^wiki-sion][^wiki-sin][^wiki-pecvd]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — passive
   components and PECVD dielectrics in the deep-submicron back
   end.[^txt-05]
@@ -281,14 +287,17 @@ back end (SKY130's recipe is not public):
   from the 2 fF/µm² of the PDK[^pdk-07] with an assumed {math}`k`.
 * Whether the film is a single oxynitride or an oxide/nitride stack,
   and whether it receives a plasma treatment or anneal, is not public.
-* The PDK's periphery rules for `capm` list no numeric values and are
-  phrased in terms of `met2` and `via2` ("Minimum enclosure of capm
-  (top_plate) by met2", "Min enclosure of via2 by capm") for a
-  "SKY130DI*" flow,[^pdk-periph] while the device page, the layer
-  table and the stack diagram place `capm` over metal 3 with
-  via 3.[^pdk-07][^pdk-06][^pdk-04] We follow the latter and read the
-  rule text as a legacy of a flow variant in which the capacitor sat
-  one level lower.
+* The PDK is not self-consistent here. The device page, the layer
+  table and the stack diagram place `capm` over metal
+  3,[^pdk-07][^pdk-06][^pdk-04] but the `capm` periphery rules (values
+  "N/A") name `met2` and `via2` ("Minimum enclosure of capm
+  (top_plate) by met2", "Min enclosure of via2 by capm", "Min spacing
+  between capm and via2"), the via2 rule table says via2 connects
+  "met2/capm to met3 in the SKY130DI* flow",[^pdk-periph] and the
+  extraction table describes `cap_mim` with via2, m3 and "capm-m2"
+  terminals.[^pdk-08] We follow the metal-3 reading; the met2/via2
+  wording may come from a flow variant with the capacitor one level
+  lower (inference).
 * Whether voltage and temperature coefficients for `cap_mim` are
   published in the PDK models is not confirmed here.
 * The mask table lists "Capacitor MiM, CAPM" without the "used in
@@ -353,7 +362,7 @@ back end (SKY130's recipe is not public):
     <https://en.wikipedia.org/wiki/Capacitor>
 [^wiki-sion]: Wikipedia, *Silicon oxynitride*.
     <https://en.wikipedia.org/wiki/Silicon_oxynitride>
-[^wiki-silicon-nitride]: Wikipedia, *Silicon nitride*.
+[^wiki-sin]: Wikipedia, *Silicon nitride*.
     <https://en.wikipedia.org/wiki/Silicon_nitride>
 [^wiki-pecvd]: Wikipedia, *Plasma-enhanced chemical vapor deposition*.
     <https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>
