@@ -18,7 +18,7 @@ dielectric over metal 4. After {ref}`CMPM4 <step-157>` the
 metal-4 lines and the `cap2m` plates is whatever the polish left, and
 its surface carries the scratches, slurry residue and hydrated layer of
 a polish. A thin plasma oxide deposited over it seals that surface and,
-on our reading of the step name and its position, brings the dielectric
+on our reading of its position in the flow, brings the dielectric
 above metal 4 to its final thickness before the via-4 mask
 ({ref}`VIM4 <step-159>`) is printed. The finished number is public: the
 PDK's stack diagram labels the via-4 height 0.505 µm, between the top of
