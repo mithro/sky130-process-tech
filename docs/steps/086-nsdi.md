@@ -177,10 +177,10 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Arsine (AsH₃)** for arsenic and, if used, **phosphine (PH₃)** for
+* **{ref}`Arsine <material-dopant-sources>` (AsH₃)** for arsenic and, if used, **phosphine (PH₃)** for
   phosphorus;[^wiki-ash3][^wiki-ph3] both toxic, in sub-atmospheric
   cylinders with gas-cabinet monitoring and {ref}`scrubbed exhaust <material-hardware-consumables>`.
-* **Source-support gases** (argon, xenon); **liquid nitrogen** for
+* **Source-support gases** ({ref}`argon <material-process-gases>`, xenon); **liquid nitrogen** for
   cryopumps; **nitrogen** vent gas; platen cooling water.
 * **Source consumables** — filaments/cathodes, arc-chamber liners
   (arsenic deposits require careful maintenance), extraction

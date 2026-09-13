@@ -167,7 +167,7 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **CF₄, CHF₃, O₂, N₂/Ar** for the nitride and oxide etch; **NF₃** for
+* **{ref}`CF₄ <material-etch-gases>`, CHF₃, {ref}`O₂ <material-process-gases>`, N₂/Ar** for the nitride and oxide etch; **NF₃** for
   a remote-plasma variant or chamber clean.[^skw-01]
 * **Helium** backside cooling.
 * **O₂/N₂/{ref}`forming gas <material-anneal-ambients>`** for the strip; **H₂SO₄/H₂O₂ and SC-1** ({ref}`wet chemicals <material-wet-chemicals>`) for the

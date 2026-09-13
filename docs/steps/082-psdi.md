@@ -189,10 +189,10 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Boron trifluoride (BF₃)** as the source gas for B⁺ and
+* **{ref}`Boron trifluoride <material-dopant-sources>` (BF₃)** as the source gas for B⁺ and
   BF₂⁺;[^wiki-bf3] delivered in sub-atmospheric cylinders with gas
   cabinet monitoring.
-* **Source-support gases** (argon, xenon); **liquid nitrogen** for
+* **Source-support gases** ({ref}`argon <material-process-gases>`, xenon); **liquid nitrogen** for
   cryopumps; high-purity **nitrogen** for venting.
 * **Source consumables** — filaments/cathodes, arc-chamber liners,
   extraction electrodes; **disc pads** and platen cooling water;
