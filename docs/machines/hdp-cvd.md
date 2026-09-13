@@ -190,15 +190,15 @@ performance or reliability".[^chen-2002-psg]
   applications".[^amat-hdp-2001]
 * **Lam Research.** The DSM 9900 CVD tool on which Roche and McVittie
   installed their charging probe.[^roche-1996]
-* **Not HDP: the Trikon Planar 200.** The {ref}`FILOX <step-011>` page
-  also names a Trikon Planar 200. Trikon's annual report for 1996
+* **Not HDP: the Trikon Planar 200.** The {ref}`FILOX <step-011>`,
+  {ref}`PSG <step-089>`, {ref}`NILD3 <step-115>` and {ref}`NILD4 <step-126>`
+  pages mention the Trikon Planar 200 to set it apart from HDP tools. Trikon's annual report for 1996
   describes the Planar 200 Flowfill as a "multi-chambered cluster
   system" in which "The plasma CVD films are deposited in one module and
   the CVD planarizing flow layer is deposited in the Flowfill(TM)
   module", and sets it against HDP gap fill as an alternative for
   inter-metal dielectrics;[^trikon-10k-1996] it is therefore not an
-  HDP-CVD system, and it is listed here only because the step page names
-  it.
+  HDP-CVD system.
 
 ## At SkyWater
 
