@@ -43,7 +43,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Cite the public *S8 / SKY130 Process Steps* sheet (STEPS-SHEET) on the landing page, steps index and every step page — 2026-09-13
 - [~] Use the sheet's mask tabs on the mask index and lithography pages — mask index section "Plates recorded for the MPW runs" reviewed and merged 2026-09-13 (no plate IDs, PO or lot numbers pending owner decision); lithography pages: see the via 2–4 follow-up
 - [x] Consistency sweep part 1 — SkyWater quotations verbatim, vendor names in prose, S65 mask count, alloy hydrogen wording, BEOL/MOL glossary, PSG and li-top stack readings, Cypress report variants, PECVD tungsten on WDEP, novolac, 2.38 % TMAH — reviewed and merged 2026-09-13
-- [~] Consistency sweep part 2 (branch `topic/consistency-sweep-2`) — evidence grades and tool classes for analogous steps (machines index items), chemistries of analogous steps (materials index items), Axcelis GSD entry naming, developer strength on 007/017/022/026/030/055
+- [x] Consistency sweep part 2 — evidence grades and tool-class names for analogous steps, chemistries of analogous steps, supplier statements with filing and year, developer strength on all mask pages — reviewed and merged 2026-09-13. Left open (see machines and materials indexes): metal-etch gas differences, HMDS on MM3/MM4, Iridia on DNIS/LVTPIS, "strong" vs "strong for existence" for overlay/CD tools, EKS265 vs EKC265
 
 ## Phase 2b — Citation conversion (added 2026-08-30)
 
