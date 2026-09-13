@@ -197,7 +197,7 @@ oxidation or clean must remove.
 * **Wet etch**: automated {ref}`wet benches <machine-wet-bench>` with HF, BOE and hot-phosphoric
   tanks (Akrion GAMA;[^akrion-gama] SCP, DNS/Screen and Santa Clara
   Plastics benches); centrifugal {ref}`spray processors <machine-wet-bench>` (FSI Mercury);
-  single-wafer spin etchers for backside film removal and bevel clean
+  {ref}`single-wafer spin etchers <machine-single-wafer-spin-processor>` for backside film removal and bevel clean
   (SEZ, now Lam) — the natural tool class for {ref}`BFR <step-060>`.
 * **Metrology and inspection**: {term}`CD-SEM` after etch, cross-section SEM for
   profiles, optical inspection for residues, and etch-rate monitor

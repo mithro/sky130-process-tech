@@ -140,14 +140,14 @@ values.[^steigerwald-1997][^zantye-2004]
 
 ## Typical equipment
 
-* **Polishers**: Applied Materials Mirra ("the Company announced its
+* **{ref}`Polishers <machine-cmp-polisher>`**: Applied Materials Mirra ("the Company announced its
   entry into the CMP market with the Mirra CMP in December 1995. The
   Mirra CMP system features a unique three-station, four polishing head
   design")[^amat-1997] and Mirra Mesa with integrated cleaner; Ebara
   F-REX 200 (the current F-REX200M2 "polishes 200 mm wafers with high
   k-materials and aluminium layers");[^ebara-frex] IPEC/Westech 372 and
   472 and the SpeedFam-IPEC Auriga; Strasbaugh 6DS-SP; Lam Teres.
-* **Post-CMP cleaners**: OnTrak (later Lam) DSS-200 double-sided brush
+* **{ref}`Post-CMP cleaners <machine-post-cmp-cleaner>`**: OnTrak (later Lam) DSS-200 double-sided brush
   scrubbers; Applied Mesa integrated cleaner.
 * **Metrology**: optical film-thickness mappers (Nanometrics NanoSpec,
   Rudolph, KLA-Tencor), stylus profilers for dishing and step height
