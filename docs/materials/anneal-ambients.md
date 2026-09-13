@@ -83,8 +83,10 @@ multilevel metal/dielectric MOS systems in manufacturing;[^kizilyalli-1998]
 and a University of Illinois patent gives an example anneal "in an
 ambient of 10% deuterium in nitrogen".[^pat-deuterium-uiuc] Hydrogen has
 side-effects that bound the recipe: it deactivates boron acceptors in
-silicon[^sah-1983][^pankove-1983] and changes the retention of
-nitride charge-trapping memories.[^maes-1981] Plasma-deposited nitride
+silicon,[^sah-1983][^pankove-1983] and in nitride charge-trapping
+memories a high-temperature hydrogen anneal after nitridation changed
+(there, improved) the retention of MNOS transistors.[^maes-1981]
+Plasma-deposited nitride
 itself carries hydrogen, some 20–25 at.% in films deposited at
 330–350 °C, which Lanford and Rand measured.[^lanford-1978]
 
@@ -210,8 +212,9 @@ forming-gas supply, gas cabinets or exhaust; the points below are
 industry practice or public reference statements.
 
 * **Flammability.** Hydrogen burns in air between 4 % and 75 % by
-  volume;[^wiki-flammability] typical 5 % forming gas "are not
-  explosive",[^wiki-fg] which is why it is preferred where the tool is not
+  volume;[^wiki-flammability] typical forming-gas formulations (5 % H₂
+  in N₂) "are not explosive",[^wiki-fg] which is why forming gas is
+  preferred where the tool is not
   rated for pure hydrogen (the ALLY pages' reading). Richer hydrogen needs
   the interlocks, purges and exhaust of a flammable gas
   ({ref}`machine-vertical-furnace-anneal`).
@@ -238,11 +241,14 @@ temperatures are not public.
   hydrogen; the Heatpulse lists "NH3, Ar, N2, O2" only.[^skw-01] Whether
   SKY130 uses premixed forming gas, hydrogen blended at the tool, or
   deuterium is not public.
-* **Hydrogen and the SONOS cells.** Hydrogen anneals change the retention
-  of nitride charge-trapping memories,[^maes-1981] and the final alloy
+* **Hydrogen and the SONOS cells.** In Maes, Usmani and Heyns's MNOS
+  transistors, a high-temperature post-nitridation hydrogen anneal
+  improved retention at 125 °C by removing hole back-tunnelling to
+  interface states;[^maes-1981] how the much cooler final alloy, which
   reaches the {term}`SONOS` stack of {ref}`ONO <step-040>` through the
-  whole back end; the ALLY pages treat time and hydrogen content as the
-  recipe's bounds (their reading).
+  whole back end, affects SONOS retention is not public. The ALLY pages
+  treat time and hydrogen content as the recipe's bounds (their
+  reading).
 * **Boron and hydrogen.** Hydrogen deactivates boron acceptors,[^sah-1983]
   and the {ref}`ALLY1 <step-096>` page reads the need not to deactivate
   the boron of the P⁺ source/drains as a limit on the alloy's time and
@@ -251,9 +257,9 @@ temperatures are not public.
   with tungsten plugs or aluminium exposed; hydrogen in an O₂ plasma
   reduces tungsten oxidation,[^xu-2008] one reason the back-end strip
   pages add H₂/N₂ to the ash (our reading).
-* **Hydrogen already in the stack.** The passivation nitride of
-  {ref}`NTSD <step-167>` is plasma nitride, which carries hydrogen of its
-  own;[^lanford-1978] the ALLY page notes that which source dominates the
+* **Hydrogen already in the stack.** On the NTSD page's reading, the
+  passivation nitride of {ref}`NTSD <step-167>` is plasma nitride, which
+  carries hydrogen of its own;[^lanford-1978] the ALLY page notes that which source dominates the
   final passivation of interface traps is not public.
 
 ## Related pages
@@ -350,7 +356,7 @@ temperatures are not public.
     <https://en.wikipedia.org/wiki/Forming_gas>
 [^semistar-iridia]: SemiStar Corp., *Novellus Gasonics PEP Iridia DL
     Plasma Asher* (used-equipment listing), accessed 2026-09-13.
-    <http://www.semistarcorp.com/product/novellus-gasonics-pep-iridia-dl-plasma-asher/>
+    <https://www.semistarcorp.com/product/novellus-gasonics-pep-iridia-dl-plasma-asher/>
 [^wiki-ash]: Wikipedia, *Plasma ashing*.
     <https://en.wikipedia.org/wiki/Plasma_ashing>
 [^reed-1988]: M. L. Reed and J. D. Plummer, "Chemistry of Si-SiO₂
