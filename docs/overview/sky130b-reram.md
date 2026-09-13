@@ -390,9 +390,13 @@ between `Tfilament_min` and `Tfilament_max` in an oxide of thickness
   budget";[^pat-rram-intermolecular] what temperatures the SKY130 cell
   tolerates is not public.
 * **Test.** Because a fresh cell does not switch until
-  formed,[^reram-background] some forming step — on-chip or at wafer
-  test ({ref}`HPETEST <step-171>`) — is part of making a working memory;
-  which SkyWater uses is not public.
+  formed,[^reram-background] some forming step — on-chip, or at wafer
+  probe (not described for the parametric test at
+  {ref}`HPETEST <step-171>`) — is part of making a working memory
+  (inference); Intermolecular's patent likewise says that forming "is
+  considered to be a part of the fabrication of ReRAM
+  cell".[^pat-rram-intermolecular] Which route SkyWater uses is not
+  public.
 
 ## Machines typically used
 
