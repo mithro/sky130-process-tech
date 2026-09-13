@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1118
+written page has exactly one entry here; the inventory holds 1120
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16 and 8.17 were added
@@ -1956,6 +1956,18 @@ LITHIUS™" as "a 300/200mm coater/developer". Used on the machines index
 to explain why SkyWater's "TEL ProZ Lithius track" is not identified
 with a model. Tier: cross-check (vendor statement).
 
+**PHOTRONICS-ABR** — Photronics, Inc., *Advanced Binary Reticle*,
+product page, retrieved 2026-09-13.
+<https://www.photronics.com/products/advanced-binary-reticle/> Describes
+the company's "advanced binary reticles", with the resist pattern
+"transferred to the chrome absorber layer" by dry etch, and, under
+"Specialty Phase-Shift Masks", states "At 248nm and 193nm wavelengths,
+our embedded attenuated phase-shift masks (EAPSM) rely on a
+wavelength-tuned, 6% transmission MoSiON absorber". The page does not state a reduction ratio.
+Used on the mask index for the mask maker's name and abbreviation for
+an embedded attenuated phase-shift mask. Tier: cross-check (vendor
+statement).
+
 ### 8.7 Well and channel-implant module sources
 
 None of these is a SkyWater or Cypress source; the step pages for the
@@ -3879,6 +3891,19 @@ ed., SPIE Press, 2019, ISBN 978-1-5106-2760-4.
 <https://doi.org/10.1117/3.2525393> Tools, resists, overlay and
 metrology in one volume. Used on the lithography category page. Tier:
 high-level.
+
+##### Patents
+
+**PAT-BIM-TSMC** — S.-J. Lin and W.-C. Wang (Taiwan Semiconductor
+Manufacturing Co.), *Method for forming binary intensity masks*, US
+6,379,849 B1, filed 2000-10-26, granted 2002-04-30.
+<https://patents.google.com/patent/US6379849B1/en>,
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6379849>
+A two-step e-beam write for binary masks; its background defines
+"Binary intensity masks (binary masks, chrome-on-glass, BIM)", in which
+"a layer of opaque material, such as chrome, is deposited on a
+transparent substrate material, such as quartz". Used on the mask index
+for the abbreviation for a binary mask. Tier: cross-check.
 
 ##### Vendor, regulatory, marketplace and press pages
 
