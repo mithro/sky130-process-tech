@@ -184,9 +184,9 @@ same sequence.
 
 ## Resources required
 
-* **Cl₂** (or **BCl₃**, **Br₂** or **HBr**) with a small flow of a
+* **{ref}`Cl₂ <material-etch-gases>`** (or **BCl₃**, **Br₂** or **HBr**) with a small flow of a
   fluorine-bearing gas (**CF₄**, **CHF₃**, **CH₂F₂** or **SF₆**) in
-  **Ar**, **He** or **N₂** for the etch (industry
+  **{ref}`Ar <material-process-gases>`**, **He** or **N₂** for the etch (industry
   practice;[^pat-mim-ti-etch][^nojiri-2015] SkyWater lists no gases for
   its metal etchers, but names Cl₂, HBr, CF₄, CHF₃ and SF₆ on its
   poly/silicon etchers[^skw-01]); **He** for backside cooling. The gas

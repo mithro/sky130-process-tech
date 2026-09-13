@@ -250,7 +250,7 @@ fab (SKY130's recipe is not public); the film-by-film account is at
   2023 10-K) as sputter-target suppliers.[^sec-01][^sec-02] A 1.2 µm film
   consumes Al–Cu target material faster per wafer than any other level (our
   arithmetic from the thicknesses[^pdk-04]).
-* **Argon** for sputtering and pre-clean; **nitrogen** for venting.
+* **{ref}`Argon <material-process-gases>`** for sputtering and pre-clean; **nitrogen** for venting.
 * **{ref}`Chamber shields <material-hardware-consumables>`, clamps and electrostatic-chuck consumables**.
 * **{ref}`Monitor wafers <material-substrates>`** for sheet resistance, stress, reflectivity and
   via-fill cross-sections.
