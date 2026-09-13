@@ -23,10 +23,9 @@ brings the dielectric above metal 2 to its final thickness
 before the via-2 mask ({ref}`VIM2 <step-129>`) is printed. The
 finished number is public: the PDK's stack diagram gives the via-2
 height through NILD4 as 0.42 µm.[^pdk-04] The cap's own thickness is
-not. Its suffix makes it the fourth "CAPOX"; it follows
-{ref}`NCAPOX <step-091>` and {ref}`NCAPOX3 <step-117>` (the numbering
-gap is discussed on the latter page), and the cap recurs as
-{ref}`NCAPOX5 <step-143>` and {ref}`NCAPOX6 <step-158>`.
+not. The same cap is described at {ref}`NCAPOX <step-091>` and
+{ref}`NCAPOX3 <step-117>`, and recurs as {ref}`NCAPOX5 <step-143>`
+and {ref}`NCAPOX6 <step-158>`.
 
 The stack diagram again offers a hint. Beside "NILD4 K=4.2" it draws
 a "NILD4_C" of permittivity 3.5 and thickness 0.030 µm,[^pdk-04]

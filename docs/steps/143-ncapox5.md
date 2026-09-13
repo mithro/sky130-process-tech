@@ -24,11 +24,9 @@ via-3 mask ({ref}`VIM3 <step-144>`) is printed. The
 finished number is public: the PDK's stack diagram places the bottom
 of `met4` 1.235 µm above the bottom of `met3`, which with the 0.845 µm
 metal leaves a via-3 height of 0.39 µm.[^pdk-04] The cap's own
-thickness is not. Its suffix makes it the fifth "CAPOX"; it follows
-{ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>` (where the
-numbering gap is discussed) and
-{ref}`NCAPOX4 <step-128>`, and recurs as
-{ref}`NCAPOX6 <step-158>`.
+thickness is not. The same cap is described at
+{ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>` and
+{ref}`NCAPOX4 <step-128>`, and recurs as {ref}`NCAPOX6 <step-158>`.
 
 One public difference from the two levels below is worth noting. At
 NILD3 and NILD4 the stack diagram draws a thin "_C" film of
