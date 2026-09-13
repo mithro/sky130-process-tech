@@ -94,7 +94,9 @@ recipes are not public.
   commonly used for etching silicon" where isotropy is
   acceptable.[^wiki-rie]
 * **Silicon dioxide** (contacts {ref}`CTME <step-108>`, vias {ref}`VIME
-  <step-119>`, oxide hard masks): fluorocarbons — CF₄, CHF₃, C₄F₈, C₂F₆
+  <step-119>`, oxide hard masks, the seal-ring opening
+  {ref}`NSME <step-166>` (mainly oxide on the reading of that page)):
+  fluorocarbons — CF₄, CHF₃, C₄F₈, C₂F₆
   — with Ar and O₂. Fluorine etches oxide as SiF₄ only under ion
   bombardment, while the carbon forms a polymer that deposits on silicon
   and nitride, giving selectivity to the underlying silicon or to a
@@ -102,8 +104,8 @@ recipes are not public.
   variable.[^flamm-1981][^winters-1992] High-aspect-ratio contacts show
   {term}`ARDE`, etch-stop from polymer build-up, and bowing.
 * **Silicon nitride** (STI hard mask {ref}`STINITE <step-005>`, spacer
-  {ref}`SPE <step-077>`, nitride cut {ref}`NPCME <step-079>`, seal
-  {ref}`NSME <step-166>`): CF₄/CHF₃/O₂ or SF₆-based, with the
+  {ref}`SPE <step-077>`, nitride cut {ref}`NPCME <step-079>`, pad
+  opening {ref}`PDME <step-169>`): CF₄/CHF₃/O₂ or SF₆-based, with the
   fluorocarbon content tuned for selectivity to oxide; the spacer etch
   is an unmasked anisotropic etch-back that leaves nitride only on the
   vertical gate sidewalls and must stop on a thin oxide without
