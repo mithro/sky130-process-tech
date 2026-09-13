@@ -119,7 +119,7 @@ composition and thickness of some films — the Ti/Al–Cu/TiW metal
 stacks and the TEOS/nitride passivation[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
 — and the PDK documentation gives thicknesses and permittivities for
 the SKY130 stack.[^pdk-03][^pdk-04] These are the sources of the
-films table below.
+{ref}`films table <materials-films>` below.
 
 ## How to read the index
 
@@ -232,6 +232,59 @@ as typical etch chemistries; describes silicon oxide and nitride for
 encapsulation; and reads the upper vias as using TiN, tungsten and
 WF₆ as the base via 1 does (inference on that page).
 
+(materials-films)=
+## Films and stacks deposited
+
+The table lists every film that a deposition or oxidation step of the
+flow leaves on the wafer, in order of first appearance, with the number the PDK
+gives for it where there is one. The PDK numbers come from two
+sources, which do not always agree: the *Criteria & Assumptions* page
+(nominal thicknesses for antenna-ratio calculations and other design
+assumptions)[^pdk-03] and the process stack diagram `metal_stack.svg`
+(thicknesses, heights and relative permittivities, "Diagram not to
+scale!").[^pdk-04] The labels in the first column (such as "NILD3
+K=4.5") are the diagram's; the step pages match them to steps. The
+fourth column gives other public numbers — patent ranges for comparable
+flows, or Cypress qualification reports for S8-family products from the
+same fab — and the last column summarises the step page's reading,
+with its inferences marked there.
+
+| Film (PDK label) | Formed at | PDK thickness or dimension | Other public numbers or composition | Reading on the step pages |
+|------------------|-----------|----------------------------|-------------------------------------|---------------------------|
+| Pad (base) oxide | {ref}`BOX <step-002>` | none | Cypress SONOS patent: pad oxide "from about 10 nanometers (nm) to about 20 nm"[^pat-04] | Thermal SiO₂ of the order of 10–20 nm (typical) |
+| Isolation nitride | {ref}`ISONIT <step-003>` | none | AmberWave STI patent: mask nitride "500-2000 Å"[^pat-sti-amberwave] | LPCVD Si₃N₄ of the order of 100–200 nm; removed at {ref}`NS19 <step-013>` |
+| Trench liner oxide | {ref}`LINOX <step-010>` | none | Spansion/Cypress-lineage STI patent: liner "to a thickness of approximately 100-300 Å"[^pat-sti-cr] | Thermal SiO₂ of the order of 10–30 nm |
+| Field (fill) oxide, "FOX K=3.9" | {ref}`FILOX <step-011>`, polished at {ref}`CMPNIT <step-012>` | Field-oxide top at 0.3262 µm on the diagram's scale;[^pdk-04] field-oxide step under poly 0.07 µm[^pdk-03] | — | HDP-CVD oxide; fill thickness not public |
+| ONO stack: tunnel oxide, (oxy)nitride, blocking oxide | {ref}`ONO <step-040>` | none | Cypress patent: tunnel oxide "less than about 25 Å", top oxide "less than about 50 Å"[^pat-01] | Furnace oxidation and LPCVD from SiH₂Cl₂, NH₃ and N₂O; SKY130 values not public |
+| Thick gate oxide | {ref}`GOX100 <step-043>`, thickened at {ref}`LVGOX <step-047>` | "All VHV devices use 110A gate oxide thickness just like standard 5.0V Vcc devices";[^pdk-hv] 5 V NMOS model `toxe` 1.16e-08 (11.6 nm)[^pdk-model-nfet5v] | — | Thermal oxide grown somewhat thinner than 11 nm here |
+| Thin gate oxide | {ref}`LVGOX <step-047>` | 1.8 V NMOS model `toxe` 4.148e-09 (4.148 nm)[^pdk-model-nfet01v8] | "Nitrided gate oxide" special module[^skw-01] | Thermal oxide, possibly nitrided |
+| Gate silicon ("poly") | {ref}`SAGD <step-048>` | "poly thickness" 0.18 µm;[^pdk-03] 0.18 µm on the diagram[^pdk-04] | "LPCVD polysilicon (undoped), both amorphous and crystalline"[^skw-01] | One undoped LPCVD amorphous-silicon layer, doped by implant |
+| Gate nitride cap and oxide cap | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>` | "poly cap after SPE" 0.2 µm[^pdk-03] | — | Nitride under oxide; as-deposited thicknesses not public |
+| Re-oxidation (screen) oxide | {ref}`IOX45 <step-063>` | none used on the step page | — | Thin thermal oxide; thickness, ambient and tool not public |
+| Spacer nitride, "SPNIT K=7.5" | {ref}`SPNIT <step-076>`, etched at {ref}`SPE <step-077>` | Permittivity 7.5; no thickness[^pdk-04] | "LPCVD BTBAS low temp nitride" is on the capability list[^skw-01] | Conformal nitride; DCS, BTBAS or PECVD route |
+| Spacer oxide | {ref}`SPOX <step-080>` | "oxide spacer" 0.05 µm[^pdk-03] | — | Blanket oxide left through the source/drain implants |
+| Pre-metal dielectric, "PSG K=3.9", and cap oxide | {ref}`PSG <step-089>`, polished at {ref}`CMPP <step-090>`; cap {ref}`NCAPOX <step-091>` | 0.6099 µm over the gate region and 0.4299 µm over field poly, `li` bottom at 0.9361 µm;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm[^pdk-03] | — | HDP PSG polished close to the gate caps, then an undoped cap of about 0.2–0.3 µm (inferred) |
+| Contact liner Ti/TiN (and titanium silicide) | {ref}`TI/TIN1 <step-097>`; silicide formed at {ref}`CSIL <step-098>` | none | — | IMP Ti and TiN of the order of 10–30 nm each (typical) |
+| Tungsten plugs: `licon1`, `mcon`, `via`, `via2`, `via3` | {ref}`WDEP <step-099>`, {ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>`; polished at {ref}`WCMPLI <step-100>`, {ref}`WCMP2 <step-111>`, {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`, {ref}`WCMP5 <step-148>` | Via heights 0.27 µm (via 1), 0.42 µm (via 2), 0.39 µm (via 3)[^pdk-04] | — | Blanket CVD tungsten; deposited thickness not public |
+| TiN plug liners | {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>`, {ref}`TIN4 <step-131>`, {ref}`TIN5 <step-146>` | none | — | IMP TiN, a few tens of nanometres on the field (typical) |
+| Local interconnect, `li` | {ref}`LITIN <step-101>` | 0.1 µm;[^pdk-04] "LI1 thickness for antenna ratio calculations" 0.1 µm[^pdk-03] | Efabless lecture: "Titanium Nitride (TiN)"[^ann-16] | Sputtered TiN |
+| Local-interconnect nitride, "LINT K=7.3" | {ref}`LINIT <step-104>` | 0.075 µm[^pdk-04] | — | Low-temperature nitride (PECVD or BTBAS) |
+| "NILD2 K=4.05" | {ref}`NILD2 <step-105>`, polished at {ref}`CMPL <step-106>` | 0.265 µm between `li` and `metal1`[^pdk-04] | — | HDP or PECVD TEOS oxide, about 0.5–0.7 µm as deposited (inferred) |
+| Metal 1 | {ref}`TIAL6 <step-112>` | 0.36 µm;[^pdk-04] 0.35 µm antenna value[^pdk-03] | "Metal 1: 100A Ti / 3200A Al-0.5%Cu / 300A TiW";[^cyp-qtp-113005] 2014 change to "150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN"[^cyp-qtp-123907] | Ti/Al–Cu/TiW |
+| "NILD3 K=4.5" with "NILD3_C K=3.5" (0.030 µm) | {ref}`NILD3 <step-115>`, polished at {ref}`CMPM <step-116>`; cap {ref}`NCAPOX3 <step-117>` | Via-1 height 0.27 µm[^pdk-04] | — | Gap-fill oxide (fluorinated option) and cap |
+| Metal 2 | {ref}`TIAL12 <step-123>` | 0.36 µm;[^pdk-04] 0.35 µm antenna value[^pdk-03] | "Metal 2: 100A Ti / 3200A Al-0.5%Cu / 300A TiW"[^cyp-qtp-113005] | As metal 1 |
+| "NILD4 K=4.2" with "NILD4_C K=3.5" (0.030 µm) | {ref}`NILD4 <step-126>`, polished at {ref}`CMPM2 <step-127>`; cap {ref}`NCAPOX4 <step-128>` | Via-2 height 0.42 µm[^pdk-04] | — | As NILD3 |
+| Metal 3 | {ref}`WTIAL3 <step-134>` | 0.845 µm;[^pdk-04] antenna values 0.85, 0.8 or 2 µm by flow[^pdk-03] | "Metal 3: 150A Ti / 7200A Al-0.5%Cu / 300A TiW";[^cyp-qtp-113005] S8DI "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A TiW"[^cyp-qtp-123907] | Ti or TiW underlayer, about 0.8 µm Al–Cu, TiW cap |
+| MiM capacitor dielectric ("CAPILD" on the `cap_mim` cross-section) | {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>` | No thickness; `CMIMA` and `CMIM2A` 2 fF/µm²[^pdk-07] | "PECVD silane oxide/nitride/oxynitride, C1"[^skw-01] | PECVD oxynitride (inference); 18–33 nm for k = 4–7.5 (arithmetic) |
+| MiM top plate, `capm` and `cap2m` | {ref}`CAPTIW1 <step-136>`, {ref}`CAPTIW2 <step-151>` | `RSCAPM` 5.8 Ω/sq and the same for the second plate[^pdk-07] | "TiW"[^skw-01] | TiW of roughly 0.1 µm (inference from sheet resistance) |
+| "NILD5 K=4.1" | {ref}`NILD5 <step-141>`, polished at {ref}`CMPM3 <step-142>`; cap {ref}`NCAPOX5 <step-143>` | Via-3 height 0.39 µm[^pdk-04] | — | Gap-fill oxide and cap |
+| Metal 4 | {ref}`WTIAL4 <step-149>` | 0.845 µm;[^pdk-04] antenna values 0.8 or 2 µm by flow[^pdk-03] | none | Repeat of metal 3 (inference) |
+| "NILD6 K=4.0" | {ref}`NILD6 <step-156>`, polished at {ref}`CMPM4 <step-157>`; cap {ref}`NCAPOX6 <step-158>` | Via-4 height 0.505 µm[^pdk-04] | — | Gap-fill oxide and cap |
+| Metal 5 | {ref}`WTIAL5 <step-161>` | 1.26 µm;[^pdk-04] antenna values 1.2 or 2 µm by flow[^pdk-03] | none | Ti or TiW underlayer, about 1.2 µm Al–Cu, TiW cap; also fills via 4 (inference) |
+| "TOPOX K=3.9" | {ref}`NFUSOX <step-164>` | 0.09 µm on the metal-5 top, 0.070 µm on its sidewall[^pdk-04] | Fab 4 passivation "1000Å TEOS / 9000Å PECVD Nitride"[^cyp-qtp-014807] and "1000A TEOS/9000A Si3N4"[^cyp-qtp-123907] | Thin undoped oxide |
+| "TOPNIT K=7.5" | {ref}`NTSD <step-167>` | 0.54 µm on the metal-5 top, 0.4223 µm on its sidewall[^pdk-04] | As above, and "7000 +/- 2000A Nitride"[^cyp-qtp-113005] | PECVD silicon nitride |
+| "PI1 K=2.94" | no step | Drawn over the passivation, no thickness[^pdk-04] | "Polyimide cure" is a furnace entry[^skw-01] | Not part of the step list |
+
 <!-- footnotes -->
 
 [^txt-07]: M. Quirk and J. Serda, *Semiconductor Manufacturing
@@ -314,3 +367,43 @@ WF₆ as the base via 1 does (inference on that page).
     scheme for RRAM structure*, US 9,431,609 B2, filed 2014-08-14,
     granted 2016-08-30.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9431609>
+[^pat-04]: K. Ramkumar, I. Kouznetsov and V. Prabhakar (Cypress
+    Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098 B1,
+    granted 2014-08-05. <https://patents.google.com/patent/US8796098B1/en>
+[^pat-sti-amberwave]: M. T. Currie and A. J. Lochtefeld (AmberWave
+    Systems Corporation; assigned to Taiwan Semiconductor Manufacturing
+    Co. on 2010-01-26), *Shallow trench isolation process*,
+    US 6,960,781 B2, granted 2005-11-01.
+    <https://patents.google.com/patent/US6960781B2/en>
+[^pat-sti-cr]: U. Kim, Y. Sun, M. S. Chang et al. (Spansion LLC; later
+    Cypress Semiconductor / Infineon), *Shallow trench isolation
+    approach for improved STI corner rounding*, US 7,439,141 B2,
+    priority 2001-12-27, granted 2008-10-21.
+    <https://patents.google.com/patent/US7439141B2/en>
+[^pat-01]: K. Ramkumar, M. Rathor, B. Parameshwaran and L. Lancaster
+    (Cypress Semiconductor), *Method of manufacturing an
+    oxide-nitride-oxide (ONO) dielectric for SONOS-type devices*,
+    US 6,969,689 B1, granted 2005-11-29.
+    <https://patents.google.com/patent/US6969689B1/en>
+[^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
+[^pdk-model-nfet5v]: SkyWater PDK Authors,
+    `sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice` (typical-corner BSIM4
+    model, parameter `toxe`), google/skywater-pdk-libs-sky130_fd_pr
+    repository.
+    <https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice>
+[^pdk-model-nfet01v8]: SkyWater PDK Authors,
+    `sky130_fd_pr__nfet_01v8__tt.pm3.spice` (typical-corner BSIM4
+    model, parameter `toxe`), google/skywater-pdk-libs-sky130_fd_pr
+    repository.
+    <https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice>
+[^ann-16]: T. Edwards (Efabless), *Introduction to the SkyWater PDK —
+    The New Age of Open Source Silicon*, lecture slides, 2021-10-08
+    (UC San Diego BENG 207).
+    <https://isn.ucsd.edu/courses/beng207/lectures/Tim_Edwards_2021_slides.pdf>
+[^pdk-07]: SkyWater PDK Authors, *Device Details* (MiM capacitors),
+    SkyWater SKY130 PDK documentation, and the `cap_mim` cross-section
+    drawing.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/cap_mim/cross-section-cap_mim.svg>
