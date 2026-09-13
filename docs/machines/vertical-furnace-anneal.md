@@ -19,11 +19,11 @@ oxidation is described on the
 | | Vertical batch furnace: anneal and alloy |
 |---|---|
 | What it does | Heats a batch of wafers in an inert or reducing ambient; furnaces "are capable of processing many wafers at a time, but each process can last between several hours and a day".[^wiki-furnace] |
-| Temperature | Alloy anneals typically 350–450 °C (typical industry range);[^txt-02] a published hydrogen and deuterium anneal "at a temperature of about 400° C." for "about 1 hour";[^pat-deuterium-uiuc] a furnace well anneal "at approximately 900° C. in a neutral ambient such as nitrogen for approximately 30 minutes".[^pat-vt-lsi] |
+| Temperature | Alloy anneals typically 350–450 °C (typical industry range);[^txt-02] a published hydrogen and deuterium anneal "at a temperature of about 400° C." for "about 1 hour";[^pat-deuterium-uiuc] a published well anneal "at approximately 900° C. in a neutral ambient such as nitrogen for approximately 30 minutes", a furnace-length soak (our reading).[^pat-vt-lsi] |
 | Ambients | Nitrogen or argon;[^ohashi-2007] forming gas, where "Typical forming gas formulations (5% H₂ in N₂) are not explosive";[^wiki-fg] "10% by volume hydrogen in nitrogen" or 10 % deuterium in nitrogen in a published sinter.[^pat-deuterium-uiuc] |
 | Interface passivation | Molecular hydrogen passivates both interface defects of (100) Si/SiO₂ with activation energies "determined as 1.51 and 1.57±0.04 eV".[^stesmans-1996] |
 | Wafer handling | Batch, on the same vertical platforms as oxidation: TEL's ALPHA-8SE i serves "oxidation/annealing" in "a batch of up to 150";[^tel-telindy] the AVP-8000 lists "anneal and cure from 100 to >1200°C".[^aviza-avp] |
-| 200 mm era | ASM's A400 for "wet oxidation and anneal processes";[^asm-a400] Aviza's AVP/RVP;[^aviza-vert] TEL's Alpha-8 series;[^tel-alpha8se] horizontal furnaces, which Aviza sold to Tetreon Technologies in 2004.[^aviza-news] |
+| 200 mm era | ASM's A400 for "wet oxidation and anneal processes";[^asm-a400] Aviza's AVP/RVP;[^aviza-vert] TEL's Alpha-8 series;[^tel-alpha8se] the Thermco horizontal furnaces, whose line Aviza sold to Tetreon Technologies in 2004.[^tetreon-htr-2004] |
 | SkyWater-listed tool | "Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and forming gas alloy" (Aviza)[^skw-01] |
 | SKY130 steps | 2 steps, plus 2 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-vertical-furnace-anneal-steps>` |
 
@@ -68,7 +68,7 @@ spends time in the temperature range where that diffusion is
 active (category page). A well anneal is the case where the furnace
 remains a reasonable choice, because the wells are meant to diffuse; a
 published flow anneals its wells "at approximately 900° C. … for
-approximately 30 minutes",[^pat-vt-lsi] another "at 1000 C for 10 sec in
+approximately 30 minutes", without naming the tool,[^pat-vt-lsi] another "at 1000 C for 10 sec in
 an RTA (Rapid Thermal Anneal) apparatus".[^pat-well-hynix]
 
 ### The hydrogen alloy
@@ -82,8 +82,9 @@ involving atomic hydrogen dimerization and hydrogen/interface trap
 reactions" that "predicts anneal kinetics over a temperature range of
 170–500 °C".[^reed-1988] Stesmans found that both the P_b0 and P_b1
 defects of (100) silicon passivate in molecular hydrogen with mean
-activation energies near 1.5 eV, so that "All three interface defects thus
-passivate comparably".[^stesmans-1996] The reverse reaction limits the
+activation energies near 1.5 eV, close to the 1.66 eV of the P_b centre
+on (111) silicon, so that "All three interface defects thus passivate
+comparably".[^stesmans-1996] The reverse reaction limits the
 temperature: Brower measured the dissociation of hydrogen-passivated
 defects in vacuum anneals "at temperatures ranging from 500 to 595 °C",
 with "An activation energy of 2.56±0.06 eV".[^brower-1990] Atomic
@@ -116,21 +117,21 @@ passivated with deuterium instead of hydrogen".[^brower-1990]
 
 ### Horizontal and vertical anneal furnaces
 
-Alloy and sinter tubes were long the domain of horizontal furnaces, in
-which "the boat entered the oxidation chamber from the side" and held
-"the wafers vertically, beside each other"; vertical furnaces replaced
-them for oxidation because of convection and particles.[^wiki-thox] A
-low-temperature anneal is less sensitive to either, and horizontal
-furnaces stayed in production: in November 2004 Aviza Technology
-announced the sale of its "THERMCO HORIZONTAL FURNACES" to Tetreon
-Technologies.[^aviza-news]
+Older furnaces were horizontal: "the boat entered the oxidation chamber
+from the side" and held "the wafers vertically, beside each other";
+vertical furnaces replaced them for oxidation because of convection and
+particles.[^wiki-thox] We infer that a low-temperature anneal is less
+sensitive to either; horizontal furnaces certainly stayed in production:
+in November 2004 Aviza sold its Thermco horizontal furnace line, with
+"an estimated installed base of over 8,000 processing tubes", to Tetreon
+Technologies.[^tetreon-htr-2004]
 
 ## Representative 200 mm-era models
 
 * **SVG Thermco, later Aviza Technology.** The AVP-8000, whose listed
   applications include "anneal and cure from 100 to >1200°C";[^aviza-avp]
   the AVP/RVP vertical furnaces;[^aviza-vert] and the Thermco horizontal
-  furnaces sold on to Tetreon Technologies in 2004.[^aviza-news]
+  furnaces sold on to Tetreon Technologies in 2004.[^tetreon-htr-2004]
 * **Tokyo Electron.** The Alpha-8 series;[^tel-alpha8se] its ALPHA-8SE i
   successor lists "oxidation/annealing" among its
   applications.[^tel-telindy]
@@ -177,7 +178,7 @@ apply to every listed tool are under
 Aviza history is on the
 {ref}`oxidation furnace page <machine-vertical-furnace-oxidation>`. For
 this class the weakest point is configuration: Aviza's sale of its
-horizontal Thermco line[^aviza-news] shows that "made by Aviza" does not
+horizontal Thermco line[^tetreon-htr-2004] shows that "made by Aviza" does not
 by itself mean vertical, and the machines index already notes that the
 list "does not say whether any furnace is horizontal".
 
@@ -288,8 +289,9 @@ ambients are not public.
 
 * SkyWater Technology, *Facilities & Capabilities* — the anneal and alloy
   entries quoted on this page.[^skw-01]
-* Aviza Technology, news index (2005) — the 2004 sale of the Thermco
-  horizontal furnaces.[^aviza-news]
+* Tetreon Technologies, press release on Aviza's site (2004) — the sale
+  of the Thermco horizontal furnace line and its installed
+  base.[^tetreon-htr-2004]
 * Moov, *Aviza / SVG / Thermco AVP 8000* listing — the anneal range of
   the vendor's 200 mm furnace.[^aviza-avp]
 * ASM International, A400 DUO press release (2019) — anneal processes on
@@ -298,8 +300,8 @@ ambients are not public.
   and annealing.[^tel-telindy]
 * Lyding and Hess (University of Illinois), US 5,872,387 — hydrogen and
   deuterium sinters at about 400 °C.[^pat-deuterium-uiuc]
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — a furnace well
-  anneal.[^pat-vt-lsi]
+* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — a 30-minute,
+  900 °C well anneal.[^pat-vt-lsi]
 * Lee and Son (Hynix), US 6,455,402 — an RTA well anneal for
   comparison.[^pat-well-hynix]
 
@@ -347,7 +349,10 @@ ambients are not public.
 
 * The temperature, time and hydrogen concentration of SkyWater's "H2 and
   forming gas alloy", and whether it runs in a vertical or a horizontal
-  tube, are not stated.[^skw-01]
+  tube, are not stated.[^skw-01] The Thermco horizontal line had "an
+  estimated installed base of over 8,000 processing tubes" when Aviza
+  sold it in 2004,[^tetreon-htr-2004] but that figure says nothing about
+  SkyWater's tubes.
 * Whether the two SKY130 alloys use the same recipe, and whether either
   uses deuterium, is not public.
 * Whether the trench-fill oxide is densified at all, and in which tool, is
@@ -398,9 +403,11 @@ ambients are not public.
     Alpha-8SE* (Tokyo Electron America product description), undated,
     accessed 2026-09-13.
     <https://www.semiconductoronline.com/doc/thermal-processing-applications-alpha-8se-0001>
-[^aviza-news]: Aviza Technology, *News* (index of press releases and
-    events), web page, 2005; Wayback Machine capture of 2005-12-04.
-    <https://web.archive.org/web/20051204025122/http://www.avizatechnology.com/news/index.htm>
+[^tetreon-htr-2004]: Tetreon Technologies (release hosted by Aviza
+    Technology), *Tetreon Technologies Acquires Thermco Horizontal
+    Furnaces from Aviza Technology*, Business Wire, 2004-11-08; Wayback
+    Machine capture of 2005-03-09.
+    <https://web.archive.org/web/20050309110126/http://www.avizatechnology.com:80/news/pressrel/110804.htm>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30; furnace and RTA entries re-checked 2026-09-13.
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
