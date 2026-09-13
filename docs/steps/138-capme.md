@@ -189,7 +189,7 @@ end (SKY130's recipe is not public):
   TiN, Pt" and "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt".[^skw-01]
   Strength: **strong** for the tools and for TiW as a qualified
   material; which runs this step is not public.
-* **Strip — "Gasonic PEP", Iridia, Mattson Aspen2; clean — batch
+* **Strip — "Gasonic PEP", Iridia, Mattson Aspen II; clean — batch
   rotational tools with "EKS265, EKC270 solvents".**[^skw-01]
   Strength: strong for existence; assignment is an inference.
 

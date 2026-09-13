@@ -137,7 +137,7 @@ recipe is not public); the shared physics is set out at
    the cap, and it fails if the chemistry runs fluorine-rich, since
    TiW then etches as WF₆ and TiF₄.[^petri-1992]
 5. **Strip and clean.** Oxygen or O₂/N₂ downstream {term}`ash` —
-   Gasonics, Iridia or Mattson class in SkyWater's list[^skw-01] —
+   GaSonics, Iridia or Mattson class in SkyWater's list[^skw-01] —
    then a solvent or semi-aqueous clean (the "EKS265, EKC270
    solvents" of SkyWater's wet-bench list,[^skw-01] EKC265/270-class;
    SkyWater writes "EKS265") to remove the
@@ -160,7 +160,7 @@ recipe is not public); the shared physics is set out at
   Applied Materials eMax / MxP+ / Super-e, TEL DRM / Unity
   ({ref}`category-etch`); high-density alternatives (AMAT IPS, Lam
   TCP 9100).
-* **Resist asher** (Gasonics Aura, Mattson Aspen) and **wet bench or
+* **Resist asher** (GaSonics Aura, Mattson Aspen) and **wet bench or
   single-wafer clean** for post-etch residue.
 * **CD-SEM**, **cross-section SEM**, **e-test** for via chains.
 
@@ -174,9 +174,9 @@ recipe is not public); the shared physics is set out at
 * **Lam Exelan.** No public source places an Exelan at SkyWater; it
   appears here only as the era's typical dielectric etcher, a line
   Lam's own 10-K lists.[^lam-10k]
-* **Strip and clean — Gasonics PEP, Iridia, Mattson Aspen2; Akrion
+* **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; Akrion
   Gamma wet bench; batch rotational tools with "EKS265, EKC270
-  solvents"; SEZ223 / DaVinci.**[^skw-01] Strength: strong for
+  solvents"; SEZ 223 / Da Vinci.**[^skw-01] Strength: strong for
   existence.
 
 ## Resources required

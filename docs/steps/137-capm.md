@@ -167,7 +167,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
   Strength: **strong** for existence; the assignment of `CAPM` to
   i-line is an **inference** from the 2 µm / 0.84 µm rules[^pdk-03]
   and the ITRS layer allocation.[^itrs-03] The model is not public.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius.**[^skw-01]
+* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z.**[^skw-01]
   Strength: strong for existence.
 * **CD — AMAT Verity, VeraSEM; overlay — KLA 5200/5300/Archer.**[^skw-01]
   Strength: strong.
