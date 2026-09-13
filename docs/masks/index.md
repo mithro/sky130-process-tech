@@ -394,7 +394,7 @@ the mask; the MPW-4 figures are for the layouts of its original set
 | Via 1 top, RRAM tier, VIMC | *not listed* | all except MPW-6 | `455` | 0, 0, 0, 2, 0, 0, 6, 5 |
 | HVTRM | `X` | not recorded | — | 0 on every run |
 | PBO, CU1M, PMM2 | `X` | not recorded | — | not rendered |
-| NCM, VIPDM, INDM | *blank* | not recorded | — | 40 on every run, from other masks' layers |
+| NCM, VIPDM, INDM | *blank* | not recorded | — | 40 on every run (`VIPDM`, `INDM`: other masks' layers; `NCM`: `ncm` plus the `HVTPM` expression) |
 | OFM, PMM, PMM[E], PDMM[E], UBM, BUMP | *blank* | not recorded | — | not rendered |
 
 The source of both tables is the "Run Mask IDs" tab,[^steps-sheet] with
@@ -422,8 +422,8 @@ renders' per-die metadata.[^mask-renders] What the record shows:
   from MPW-5: the gap may be in the record rather than in the run
   (inference: contact, metal 1, via 1, via 4 and pad masks are needed
   for any working die, so a gap in the record is the likelier
-  explanation). The renders show shapes on `mcon`, `met1`, `via`, `via4`
-  and `pad` on all 40 rendered MPW-5 dies,[^mask-renders] which fits
+  explanation). The renders for `CTM1`, `MM1`, `VIM`, `VIM4` and `PDM`
+  show shapes on all 40 rendered MPW-5 dies,[^mask-renders] which fits
   that reading but shows the drawn layouts, not the plates.
 * **NSM on MPW-6.** Every run has an `NSM` plate, but the MPW-6 plate
   is recorded as `S8014AA616A`, where the `NSM` plates of the other
@@ -457,7 +457,7 @@ code for the via 4 (`VIM4`) plate (`BIM`) as denoting a binary
 (chrome-on-quartz) mask, in each case for 248 nm exposure (`248`): the
 codes use the abbreviations mask makers and the patent literature use
 for these types.[^photronics-abr][^pat-bim-tsmc] We also read the digit
-4 at the start of each code, less certainly, as the 4× reduction ratio;
+4 after the first letter of each code, less certainly, as the 4× reduction ratio;
 the tab does not define its codes. The tab does not say to which runs
 these types apply, and it gives no type for any other mask.
 
@@ -521,7 +521,7 @@ show the following.[^mask-renders][^steps-sheet]
   no die draws the layer 201:20 from which the site renders both. Because the renders leave
   out whatever the fab adds, they cannot show what these plates carry.
 * **Rendered, no plate.** Four renders have no recorded plate on any
-  run, and each reuses another mask's layers: `INDM` is `met3`
+  run, and each reuses, wholly or in its counts, another mask's layers: `INDM` is `met3`
   70:20 ("thick-last-metal flow, not SKY130"), `VIPDM` is `via3` 70:44
   ("pad-via flow, not SKY130") and matches `VIM3` die by die, `NCM` is
   an expression whose die-by-die counts equal those of `HVTPM` on every
@@ -552,7 +552,7 @@ show the following.[^mask-renders][^steps-sheet]
   those dies carry exactly one shape on the layer, and only a few dies
   carry more.
   The die count therefore does not show that most projects use MiM capacitors or the
-  2000 Ω/sq resistor; the site does not say what the single shape is.
+  2000 Ω/sq resistor;[^pdk-06] the site does not say what the single shape is.
   `NSM` likewise has exactly 36 shapes on every die that has any.
 
 (masks-derivations)=
