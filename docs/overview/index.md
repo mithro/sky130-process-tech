@@ -285,7 +285,7 @@ steps and 36 masks.
 |--------|-------|-----------------|------------|------------------|
 | Starting material, isolation and deep N-well | {ref}`SMAT <step-001>` – {ref}`NS19 <step-013>` | 13 | 2 (`FOM`, `DNM`) | "Bulk" substrate;[^skw-02] "FOX K=3.9" field oxide, top at 0.3262 µm on the stack diagram,[^pdk-04] 0.07 µm above the silicon under poly[^pdk-03] |
 | Wells and threshold implants | {ref}`LVTNM <step-014>` – {ref}`RTAI <step-034>` | 21 | 5 (`LVTNM`, `NWM`, `HVTPM`, `PWBM`, `PWDEM`) | ten implants and one anneal; N-well peak 6.0 × 10¹⁷ cm⁻³ and baseline vertical dimension 1.1 µm, P-well peak 4 × 10¹⁷ cm⁻³ at 0.42 µm;[^pdk-03] `PWBM` and `PWDEM` not marked as used in SKY130[^pdk-05] |
-| SONOS tunnel window and ONO stack | {ref}`TUNM <step-035>` – {ref}`ONOME <step-042>` | 8 | 2 (`TUNM`, `ONOM`) | ONO thicknesses not public, bounded by Cypress patents;[^pat-01][^pat-02] programmed and erased thresholds 1.44 V and −2.3 V in the e-test table[^pdk-07] |
+| SONOS tunnel window and ONO stack | {ref}`TUNM <step-035>` – {ref}`ONOME <step-042>` | 8 | 2 (`TUNM`, `ONOM`) | ONO thicknesses not public, bounded by Cypress patents;[^pat-01][^pat-02] programmed and erased thresholds 1.44 V and −2.3 V (0.45/0.22 cell) in the e-test table[^pdk-07] |
 | Gate oxides | {ref}`GOX100 <step-043>` – {ref}`LVGOX <step-047>` | 5 | 1 (`LVOM`) | high-voltage devices "use 110A gate oxide thickness";[^pdk-hv] model `toxe` 4.148 nm (1.8 V) and 11.6 nm (5 V)[^pdk-model-nfet01v8][^pdk-model-nfet5v] |
 | Poly gate and poly resistors | {ref}`SAGD <step-048>` – {ref}`IOX45 <step-063>` | 16 | 4 (`RPM`, `RRPM`, `URPM`, `P1M`) | poly 0.18 µm;[^pdk-03][^pdk-04] gate poly 48.2 Ω/sq;[^pdk-08] 300 Ω/sq and 2000 Ω/sq precision resistors;[^pdk-07] poly width 0.150 µm, space 0.210 µm;[^pdk-periph] "poly cap after SPE" 0.2 µm[^pdk-03] |
 | Tips and halos | {ref}`NTM <step-064>` – {ref}`TIPRTAD <step-075>` | 12 | 3 (`NTM`, `HVNTM`, `LDNTM`) | "N Tip (As)"; tip implant angle 7°, HV tip 40° with 23° twist;[^pdk-03] no P-tip mask in the mask table[^pdk-05] |
@@ -321,7 +321,7 @@ chosen, as inferences. No trench depth is public; about 0.26 µm is the
 {ref}`STIE <step-006>` page's reading of the stack diagram.
 
 **Wells and threshold implants.** Five masks carry ten implants. The
-module opens, unusually, with the low-threshold NMOS implant
+module opens with the low-threshold NMOS implant
 ({ref}`LVTNM <step-014>`, {ref}`LVTNI <step-015>`), then prints the
 N-well, through whose resist this reference describes two well implants
 and the PMOS channel implant ({ref}`NWM <step-017>` to
@@ -382,9 +382,9 @@ the 5 V-class NMOS, with a steeply tilted arsenic tip
 ({ref}`HVNTM <step-068>` to {ref}`HVASTIS <step-070>`); and the SONOS
 memory transistors, with a lightly doped tip and a halo
 ({ref}`LDNTM <step-071>` to {ref}`LDASTIS <step-074>`). A rapid thermal
-anneal activates all five implants ({ref}`TIPRTAD <step-075>`). No
-module in the step list forms a PMOS extension, one of the open
-questions below.
+anneal activates all five implants ({ref}`TIPRTAD <step-075>`). The step
+list has no P-tip mask or implant; where the PMOS extension is formed is
+one of the open questions below.
 
 **Spacers and source/drain.** A nitride film is deposited and etched
 back into {term}`spacers <spacer>` ({ref}`SPNIT <step-076>`,
@@ -394,8 +394,8 @@ on poly ({ref}`NPCM <step-078>`, {ref}`NPCME <step-079>`, the
 spacer" ({ref}`SPOX <step-080>`); the P⁺ source/drain mask carries, on this
 reference's reading, two implants and the N⁺ mask one ({ref}`PSDM <step-081>` to
 {ref}`NSDIS <step-087>`); and a rapid thermal anneal activates them
-({ref}`RTAD <step-088>`). After it the front end is electrically
-complete.
+({ref}`RTAD <step-088>`). Here the front end, as this reference divides
+the flow, ends.
 
 **Pre-metal dielectric, contact silicide and local interconnect.** This
 is the {term}`MOL` of this reference. A phosphosilicate glass is
