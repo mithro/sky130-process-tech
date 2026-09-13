@@ -57,9 +57,9 @@ separate the resist's substrate from the aluminium below.
 step of the *non-critical, large-feature* type. At 2 µm and 0.84 µm
 the process factor {term}`k₁ <k1>` on an i-line (365 nm) stepper of {term}`NA` 0.6
 would be {math}`k_1 = 0.84 \times 0.6 / 0.365 \approx 1.4`, far above
-the resolution limit, and the ITRS 2001 lithography chapter assigns
-such layers to the cheaper exposure tools of the generation;[^itrs-03]
-we therefore infer that `CAPM` is printed on the "ASML I-line
+the resolution limit, and ASML describes older exposure tools that
+"migrate to the lithography of choice for less critical
+layers";[^asml-30] we therefore infer that `CAPM` is printed on the "ASML I-line
 stepper" or "I-line scanner" SkyWater lists,[^skw-01] with a
 conventional DNQ/novolac resist, rather than on the {term}`DUV`
 tools used for the critical layers. Nothing public
@@ -138,7 +138,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
    ASML PAS 5500 family spans i-line and DUV models on one
    platform[^asml-30][^chiphistory-pas5500] — with conventional
    illumination; the large features need no resolution enhancement
-   (inference from the geometry[^itrs-03]).
+   (inference from the geometry).
 4. **Post-exposure bake and develop.** A {term}`PEB` to smooth
    standing waves, then 2.38 % (0.26 N) TMAH develop, rinse and dry.[^txt-02]
 5. **Alignment.** To the {ref}`VIM2 <step-129>` marks beneath the
@@ -165,7 +165,8 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 * **ASML I-line stepper / I-line scanner.** SkyWater lists both.[^skw-01]
   Strength: **strong** for existence; the assignment of `CAPM` to
   i-line is an **inference** from the 2 µm / 0.84 µm rules[^pdk-03]
-  and the ITRS layer allocation.[^itrs-03] The model is not public.
+  and the migration of older exposure tools to "less critical layers"
+  that ASML describes.[^asml-30] The model is not public.
 * **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
   Strength: strong for existence.
 * **CD — AMAT Verity, VeraSEM; overlay — KLA 5200/5300/Archer.**[^skw-01]
@@ -229,8 +230,8 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — exposure-tool allocation by layer and
-  node.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 * Dammel, *Diazonaphthoquinone-based Resists* — the i-line resist
   chemistry in full.[^dammel-1993]
 * Reichmanis and Thompson, *Chem. Rev.* 1989 — polymer materials

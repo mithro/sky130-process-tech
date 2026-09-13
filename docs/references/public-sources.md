@@ -1367,7 +1367,12 @@ Al versus Cu, dielectric k, via/metal dimensions by node. Tier: deep dive.
 
 **ITRS-03** — ITRS 2001, *Lithography*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>.
-Exposure tools and wavelengths (i-line, 248 nm, 193 nm) by node.
+Exposure-tool options by node for critical layers ("248 nm + PSM" and
+"193 nm" at the 130 nm node in Figure 34; "For critical layer imaging,
+optical lithography is represented by three wavelengths—248 nm, 193 nm,
+and 157 nm"); the optical mask table notes "The requirements are for
+critical layers at defined year". It does not mention i-line or
+exposure tools for non-critical layers.
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
 Also used on the DNM, P1M and VIM4 mask pages.
@@ -14542,7 +14547,9 @@ evidence that they are not (or no longer) on the floor.
   (PAT-01 to PAT-04) and generic references.
 * **Lithography generation for S8.** SKW-01 lists i-line, KrF and ArF
   ASML tools; which layers of SKY130 use which wavelength is not stated
-  publicly and must be inferred from feature size (ITRS-03).
+  publicly and must be inferred from feature size (ITRS-03 gives the
+  critical-layer wavelengths only; ASML-30 describes older tools moving
+  to less critical layers).
 * **Tool models behind generic entries.** SKW-01 names vendors but not
   models for PVD ("AMAT PVD Metal") and PECVD ("Producer", "C1", "C2");
   no public source found gives the models.
