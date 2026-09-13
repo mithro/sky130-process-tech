@@ -6,7 +6,10 @@ integrated circuit. For each level a {term}`reticle` — a fused-silica
 plate carrying a chromium image of one layer of the layout, drawn
 four or five times larger than it will print on the wafer[^wiki-mask]
 (4× is the ITRS 2001 mask magnification for the 130 nm
-generation[^itrs-03]) — is projected onto a photoresist-coated wafer.
+generation[^itrs-03]; for SKY130, the process-steps sheet records 4×
+for the via 2, via 3 and via 4 plates, on our reading of its mask-type
+codes, and on the two plate-case labels it transcribes[^steps-sheet]) —
+is projected onto a photoresist-coated wafer.
 The developed resist then serves as a stencil for an etch, or as a
 {term}`block mask` for an implant, and is removed afterwards. The
 coat–expose–develop sequence, its tools and its consumables are
@@ -14,7 +17,8 @@ described on the
 {ref}`Photolithography (mask step) <category-lithography>` category
 page; this page is an index that ties each mask step of the step list
 used in this reference to what the open SKY130 process design kit
-publishes about the mask.
+publishes about the mask, and to the plates that the process-steps
+sheet records for the MPW runs ({ref}`masks-mpw-runs`).
 
 ## What the PDK publishes
 
@@ -80,7 +84,10 @@ mask (lithography) steps, from {ref}`FOM <step-004>` to
 steps that use its resist pattern, before the next deposition,
 oxidation, anneal or mask step. For 33 of the 36, the step code is
 identical to an acronym in `masks.csv`, and that match is what the
-second column reports; three mask steps have no entry.
+second column reports; three mask steps have no entry. The
+process-steps sheet's "Masks" tab lists the same 36 steps and also
+step 82, {ref}`PSDI <step-082>`, which the step list names as an
+implant ({ref}`masks-mpw-runs`).[^steps-sheet]
 
 In the table:
 
@@ -169,7 +176,10 @@ Notes on the table:
   interconnect to metal1", because `licon1` corresponds to `LICM1`;
   `RPM` with `urpm` as well as `rpm`; and `RRPM`, `URPM` and `CAP2M`, which have no
   `masks.csv` entry, with `rpm`, `urpm` and `cap2m` on the readings of
-  their step pages.[^pdk-06] The metal-fuse entry for `MM4` rests on
+  their step pages.[^pdk-06] The process-steps sheet records plates for
+  all three on all eight MPW runs ({ref}`masks-mpw-runs`),[^steps-sheet]
+  so the masks were made; the sheet does not name drawn layers, and
+  those pairings remain inferences. The metal-fuse entry for `MM4` rests on
   rule x.11, "Metal fuses are drawn in met4" (the other two x.11 rows
   name `met2` and `met3`), and the note "For SP8P\*/SKY130P\* (PLM)
   CADflow use MM4 for Metal Fuse";[^pdk-periph]
@@ -181,7 +191,9 @@ Notes on the table:
   {ref}`FOM <step-004>` page reads the "waffles" as dummy fill for
   {term}`CMP` uniformity.
 * **Variants.** For `VIM2`, `MM3` and `PDM`, the row for this
-  reference's step is the variant marked `X`; the
+  reference's step is the variant marked `X`, which is also the only
+  variant for which the process-steps sheet records plates;[^steps-sheet]
+  the
   {ref}`VIM2 <step-129>` and {ref}`MM3 <step-139>` step pages discuss
   the unmarked variants.
 
@@ -195,7 +207,9 @@ The tables below record them with what the PDK says about each.
 Four of the 34 marked entries have no mask step in the step list used
 in this reference, which ends with the pad mask, pad etch, alloy and
 electrical test ({ref}`PDM <step-168>` to {ref}`HPETEST <step-171>`)
-and contains no polyimide, redistribution or bump steps.
+and contains no polyimide, redistribution or bump steps. The
+process-steps sheet records no plate for any of the four on MPW-1 to
+MPW-8 ({ref}`masks-mpw-runs`).[^steps-sheet]
 
 | `masks.csv` entry | Mask-level layer (`gds_layers.csv`) | Drawn layer (`gds_layers.csv`) | Minimum CD, feature / space | Other PDK data |
 |-------------------|-------------------------------------|--------------------------------|-----------------------------|----------------|
@@ -209,7 +223,10 @@ and contains no polyimide, redistribution or bump steps.
 Six of the 36 mask steps have no marked entry: three are listed with
 the `Used in SKY130` field blank, and three are not listed at all.
 None of the six has a mask-level (`c…`) layer in
-`gds_layers.csv`.[^pdk-05][^pdk-06]
+`gds_layers.csv`.[^pdk-05][^pdk-06] The process-steps sheet
+nevertheless records plates for `RRPM`, `URPM`, `CAPM` and `CAP2M` on
+all eight MPW runs, for `PWBM` on MPW-6 and MPW-8, and for `PWDEM` on
+MPW-6 ({ref}`masks-mpw-runs`).[^steps-sheet]
 
 | Step | `masks.csv` | Drawn layer (`gds_layers.csv`) | Minimum CD, feature / space | Other PDK data |
 |------|-------------|--------------------------------|-----------------------------|----------------|
@@ -228,8 +245,10 @@ Details* page.[^pdk-07]
 ### Unmarked `masks.csv` entries with no mask step
 
 For completeness, nine acronyms appear in `masks.csv` only with the
-`Used in SKY130` field blank and have no mask step in this reference;
-the unmarked variants of `VIM2`, `MM3` and `PDM` are in the main table.
+`Used in SKY130` field blank and have no mask step in this reference,
+and the process-steps sheet records no plate for any of them on the MPW
+runs;[^steps-sheet] the unmarked variants of `VIM2`, `MM3` and `PDM`
+are in the main table.
 
 | `masks.csv` entry | Mask-level and drawn layers (`gds_layers.csv`) | Minimum CD, feature / space |
 |-------------------|------------------------------------------------|-----------------------------|
@@ -471,15 +490,22 @@ MPW runs.
   layers their step pages pair them with (`rpm`, `urpm`, `cap2m`) exist
   and, for `PWBM`, `PWDEM` and `CAPM`, rule sets and Table F2b columns
   exist too.[^pdk-05][^pdk-06][^pdk-periph] The PDK does not explain
-  the difference.
+  the difference. The process-steps sheet records plates for `RRPM`,
+  `URPM`, `CAPM` and `CAP2M` on all eight MPW runs, but for `PWBM` only
+  on MPW-6 and MPW-8 and for `PWDEM` only on MPW-6;[^steps-sheet] it
+  does not say why the two P-well masks were made for only some
+  runs.
 * `HVTRM` is marked, with a mask-level layer, a drawn layer and a
   minimum CD, but has no mask step here; the PDK's layer description
   ("High-Vt RF transistor implant") and rule-set function line ("Define
   low VT adjust implant region for pmedlvtrf") do not settle what the
-  implant does.[^pdk-06][^pdk-periph]
+  implant does.[^pdk-06][^pdk-periph] The process-steps sheet records
+  no `HVTRM` plate for any of MPW-1 to MPW-8.[^steps-sheet]
 * The PDK does not say at which stage, or where, the marked `PBO`,
   `CU1M` and `PMM2` masks are used; their rules are published with the
-  WLCSP and redistribution rules.[^pdk-wlcsp][^pdk-periph]
+  WLCSP and redistribution rules,[^pdk-wlcsp][^pdk-periph] and the
+  process-steps sheet records no plate for any of them on MPW-1 to
+  MPW-8.[^steps-sheet]
 * The variant suffixes of `masks.csv` ("TNV", "S8TM", "PLM", "TLM")
   are not defined on the *Masks* page;[^pdk-05] the
   {ref}`VIM2 <step-129>` and {ref}`MM3 <step-139>` pages give
@@ -487,12 +513,22 @@ MPW runs.
 * Table 2 of *Criteria & Assumptions* has no unit column;[^pdk-03] the
   µm reading rests on agreement with the periphery rules.
 * No PDK document gives the resist tone, reticle type (binary or
-  phase-shift) or exposure tool for any mask. `gds_layers.csv` has an
+  phase-shift) or exposure tool for any mask. The process-steps sheet
+  gives a reticle type for three masks only: 4× embedded attenuated
+  phase-shift masks for via 2 and via 3 and a 4× binary mask for via 4,
+  all for 248 nm exposure (our reading of the sheet's mask-type
+  codes).[^steps-sheet] It gives no resist tone or exposure tool, and no
+  type for the other masks. `gds_layers.csv` has an
   `areaid.op` identifier (81:54, "OPC drop. Block automatic OPC (for
   fab blocks and lithocal structures)"), which implies that automatic
   OPC is applied, but not to which masks;[^pdk-06] the step pages and
   the {ref}`lithography category page <category-lithography>` give
   industry-generic readings.
+* The process-steps sheet records no plates for `CTM1`, `MM1`, `VIM`,
+  `VIM4` and `PDM` on MPW-5, and an `NSM` plate on MPW-6 identified
+  differently from those of the other seven runs;[^steps-sheet] it does
+  not say whether these are gaps in the record or differences between
+  the runs.
 
 <!-- footnotes -->
 
