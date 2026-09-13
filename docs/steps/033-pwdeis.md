@@ -114,8 +114,8 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
   acid**[^wiki-rca] (category page); **dilute HF** only if the oxide is
   removed.
 * **Ultrapure DI water**, **isopropanol**, **nitrogen**.
-* Chemical suppliers named by SkyWater: KMG Chemicals, EMD Performance
-  Materials.[^sec-01][^sec-02]
+* Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
+  S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 
