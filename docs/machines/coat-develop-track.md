@@ -258,6 +258,8 @@ nominal photoresist thickness in the design assumptions.[^pdk-03]
   and the step assignments.
 * {ref}`materials-index` — resists, BARC, HMDS, developer and ultrapure
   water.
+* {ref}`machine-cd-sem-overlay-metrology` — the CD and overlay
+  measurements after develop, and the rework they trigger.
 * {ref}`masks-index` — the 36 mask steps the tracks serve.
 
 ## References

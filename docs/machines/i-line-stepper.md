@@ -319,6 +319,8 @@ resist thicknesses per layer are not public.
   levels, and the other side of the mix-and-match.
 * {ref}`machine-coat-develop-track` — the coat, bake and develop around
   each exposure.
+* {ref}`machine-cd-sem-overlay-metrology` — the CD and overlay
+  measurements after develop.
 * {ref}`masks-index` — each mask's PDK entry, minimum CD, plates and the
   mask-type record for vias 2–4.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
