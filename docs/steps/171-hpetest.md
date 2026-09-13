@@ -382,8 +382,9 @@ difference.[^raw-data-lv-mosfets][^raw-data-testtile-pads]
   test-tile data for the 1.8 V transistors, maximum-transconductance
   extrapolation comes within about 0.03 V of most nominals, whereas a
   constant-current criterion of 100 nA × W/L gives thresholds
-  0.05–0.08 V lower for the NMOS types, 0.02–0.09 V lower for the
-  standard and high-Vt PMOS and 0.22–0.33 V lower for the low-Vt PMOS
+  0.05–0.08 V lower for the NMOS types, 0.02–0.11 V lower for the
+  standard and high-Vt PMOS (the largest at 0.42/8 µm, where the
+  criterion current is near the data's noise floor) and 0.22–0.33 V lower for the low-Vt PMOS
   (0.14 V for the smooth 7/0.35 µm structure of module 8426; our
   extraction from the published
   measurements).[^raw-data-lv-mosfets][^pdk-07] The PDK's parameter
