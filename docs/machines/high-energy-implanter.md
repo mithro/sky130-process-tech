@@ -22,6 +22,7 @@ reference assigns to it. The physics of implantation is on the
 | Wafer handling | Batch: the NV-GSD-HE was "the integration of the GSD end station and the LINAC technology";[^axcelis-history] or single-wafer: Varian's VIISta 3000.[^tokoro-2000] |
 | 200 mm era | Eaton's NV-GSD-HE of 1994, "the world's first production high energy system, with a throughput of 210 wph";[^axcelis-history] Genus's Tandetron 1520;[^tokoro-1996] Varian's VIISta 3000 for "200 and 300 mm wafer processes".[^tokoro-2000] |
 | SkyWater-listed tool | "Axcelis GSD High current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15, tilt/twist"[^skw-01] |
+| SKY130 steps | 7 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-high-energy-implanter-steps>` |
 
 ## What the machine class is and how it works
 
@@ -171,15 +172,15 @@ not stated.
 ### Strength of the evidence
 
 On the strength scale of the {ref}`machines index <machines-index>`
-the listing is **strong**: it is a SkyWater statement.[^skw-01] It shows
-that the tool is on the Minnesota floor now, not that it built the first
-S8 wafers. SkyWater's maintenance-technician profile shows technicians
-reviewing schematics "to troubleshoot complex equipment, like an
-implanter", corroboration of in-house implanter maintenance without a
-model.[^skw-07] SkyWater's S-1 mentions Axcelis Technologies only in a
-director's biography, not as a supplier.[^sec-01] The list names no
-step, so every assignment below is this reference's reading.
+the listing is **strong**: it is a SkyWater statement.[^skw-01] The
+caveats that apply to every listed tool are under
+{ref}`Reading the SkyWater evidence <machines-reading-evidence>`. For
+this class the listing is strong for the energy range but not for the
+machine: the GSD/HE model, its batch end station and its RF linac are
+inferred from the 3000 keV ceiling and the model family, not stated by
+SkyWater.[^skw-01][^axcelis-gsd-page]
 
+(machine-high-energy-implanter-steps)=
 ### SKY130 steps assigned to this class
 
 Steps whose "Machines typically used" section names a high-energy
@@ -298,10 +299,6 @@ not public.
 
 * SkyWater Technology, *Facilities & Capabilities* — the "Axcelis GSD
   High current/energy" entry quoted on this page.[^skw-01]
-* SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
-  Technician* — in-house implanter maintenance.[^skw-07]
-* SkyWater Technology, Form S-1 (2021) — Axcelis named only in a
-  biography.[^sec-01]
 * Axcelis Technologies, *GSD Ovation* product page — the GSD/HE and
   GSD/VHE linac stages and energies.[^axcelis-gsd-page]
 * Axcelis Technologies, *GSD Ovation* press release (2021) — the batch
@@ -379,8 +376,9 @@ not public.
   configurations, are not stated.[^skw-01]
 * Whether the tool accelerates with an RF linac, as the GSD/HE does, is
   our inference from the model family, not a SkyWater statement.
-* The energies, doses, tilts and charge states of SKY130's well implants
-  are not public.
+* The model list above is incomplete: it covers the Eaton/Axcelis,
+  Genus and Varian machines for which a public description was found, not
+  every high-energy implanter of the period.
 
 <!-- footnotes -->
 
@@ -474,12 +472,6 @@ not public.
     <https://en.wikipedia.org/wiki/Varian_Semiconductor>
 [^wiki-axcelis]: Wikipedia, *Axcelis Technologies*.
     <https://en.wikipedia.org/wiki/Axcelis_Technologies>
-[^skw-07]: SkyWater Technology, *A Day in the Life of a SkyWater
-    Maintenance Technician*, 2023-12-14.
-    <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
-[^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
-    filed 2021-03-22.
-    <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^wiki-ph3]: Wikipedia, *Phosphine*. <https://en.wikipedia.org/wiki/Phosphine>
 [^pat-sds-atmi]: G. M. Tom and J. V. McManus (Advanced Technology
     Materials), *Storage and delivery system for gaseous hydride, halide,

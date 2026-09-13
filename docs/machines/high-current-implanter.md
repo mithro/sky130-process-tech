@@ -15,12 +15,13 @@ reference assigns to it. The physics of implantation is on the
 | | High-current ion implanter |
 |---|---|
 | What it does | Implants high doses of B⁺, BF₂⁺, P⁺ or As⁺ at low to moderate energy; one of the four implanter types — high current, medium current, high energy and ultra-high dose — into which fabs divide implant work.[^tanjyo-2011] |
-| Beam current | "up to ~30 mA" in Wikipedia's classification;[^wiki-implant] implanters "capable of beam currents as high as 20 mA of Arsenic" by 1996.[^romig-1996] |
 | Energy | Applied Materials' Quantum 80 "offers a range of 2keV to 80keV", the Quantum LEAP "200eV to 80keV", and the Quantum 120 an option "that boosts energy to 120keV";[^amat-quantum-1999] Nova's NV-10 line went from 80 keV to 160 keV in 1983.[^axcelis-history] |
+| Beam current | "up to ~30 mA" in Wikipedia's classification;[^wiki-implant] implanters "capable of beam currents as high as 20 mA of Arsenic" by 1996.[^romig-1996] |
 | Dose | Of order 10¹⁵ cm⁻² and above (typical): Nissin's example CMOS flow puts its high-current boron or BF₂ source/drain at 2 × 10¹⁵ cm⁻² and its arsenic source/drain at 5 × 10¹⁵ cm⁻²;[^tanjyo-2011] above 10¹⁶ cm⁻² Wikipedia counts a separate "very high dose" class.[^wiki-implant] |
 | Wafer handling | Batch: wafers on "a constantly spinning disk the axis of which is translated" across the beam;[^pat-disk-nova] Eaton's NV-GSD batch system had a throughput "of >200wph".[^axcelis-history] Single-wafer high-current tools such as Varian's VIISta 80 had been described by 2000.[^mezack-2000] |
 | 200 mm era | Eaton's NV-GSD/200 (1993) and GSD/200E2 (1996), the second "still being sold today as the GSD Ovation";[^axcelis-history] Applied Materials' "compact 200mm xR LEAP system" and the Quantum that "bridges 150mm, 200mm or 300mm wafers".[^amat-quantum-1999] |
 | SkyWater-listed tool | "Axcelis GSD Hi dose B11, BF2, P, As 2-180kev, 5e12 to 5e16, tilt/twist"[^skw-01] |
+| SKY130 steps | 6 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-high-current-implanter-steps>` |
 
 ## What the machine class is and how it works
 
@@ -173,15 +174,16 @@ implanter,[^axcelis-gsd-page] so we read both entries as batch
 ### Strength of the evidence
 
 On the strength scale of the {ref}`machines index <machines-index>`
-the listing is **strong**: it is a SkyWater statement.[^skw-01] It shows
-that the tool is on the Minnesota floor now, not that it built the first
-S8 wafers. SkyWater's maintenance-technician profile shows technicians
-reviewing schematics "to troubleshoot complex equipment, like an
-implanter", corroboration of in-house implanter maintenance without a
-model.[^skw-07] SkyWater's S-1 mentions Axcelis Technologies only in a
-director's biography, not as a supplier.[^sec-01] The list names no
-step, so every assignment below is this reference's reading.
+the listing is **strong**: it is a SkyWater statement.[^skw-01] The
+caveats that apply to every listed tool are under
+{ref}`Reading the SkyWater evidence <machines-reading-evidence>`. For
+this class the weak point is the split between the two GSD entries:
+placing the "Hi dose" entry here and the "High current/energy" entry in
+the high-energy class is the machines index's reading of their energy
+and dose ranges, and that the "Hi dose" tool is a batch machine is an
+inference from the model family.[^skw-01][^axcelis-gsd-page]
 
+(machine-high-current-implanter-steps)=
 ### SKY130 steps assigned to this class
 
 Steps whose "Machines typically used" section names a high-current
@@ -302,10 +304,6 @@ not public.
 
 * SkyWater Technology, *Facilities & Capabilities* — the two GSD entries
   quoted on this page.[^skw-01]
-* SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
-  Technician* — in-house implanter maintenance.[^skw-07]
-* SkyWater Technology, Form S-1 (2021) — Axcelis named only in a
-  biography.[^sec-01]
 * SkyWater PDK Authors, *Criteria & Assumptions* — the "High current"
   and tip implant angles.[^pdk-03]
 * Axcelis Technologies, *GSD Ovation* product page — the GSD as a batch
@@ -384,8 +382,9 @@ not public.
   which GSD models they are, are not stated.[^skw-01]
 * Which charge-control system and tilt range the "Hi dose" tool has is
   not stated.
-* Which SKY130 implants run on the tool is not public; the list names no
-  step.
+* The model list above is incomplete: Varian's batch high-current tools
+  before the VIISion, and the high-current implanters of vendors other
+  than Nova/Eaton/Axcelis, Applied Materials and Varian, are not covered.
 
 <!-- footnotes -->
 
@@ -475,12 +474,6 @@ not public.
     <https://en.wikipedia.org/wiki/Varian_Semiconductor>
 [^wiki-axcelis]: Wikipedia, *Axcelis Technologies*.
     <https://en.wikipedia.org/wiki/Axcelis_Technologies>
-[^skw-07]: SkyWater Technology, *A Day in the Life of a SkyWater
-    Maintenance Technician*, 2023-12-14.
-    <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
-[^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
-    filed 2021-03-22.
-    <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^wiki-ash3]: Wikipedia, *Arsine*. <https://en.wikipedia.org/wiki/Arsine>
 [^pat-sds-atmi]: G. M. Tom and J. V. McManus (Advanced Technology
     Materials), *Storage and delivery system for gaseous hydride, halide,

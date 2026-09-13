@@ -28,6 +28,28 @@ high-current-implanter
 high-energy-implanter
 ```
 
+(machines-reading-evidence)=
+### Reading the SkyWater evidence
+
+Each machine-class page quotes SkyWater's *Facilities & Capabilities*
+entries for its class, grades them on the inventory's strength scale
+({ref}`below <machines-typically-vs-skywater>`) and adds only what is
+specific to the class. Four caveats apply to every class page and are
+not repeated there:
+
+* A listed tool shows what is on the Minnesota floor now, not what built
+  the first S8 wafers ({ref}`below <machines-skywater-published>`).[^skw-01]
+* SkyWater's maintenance-technician profile shows technicians reviewing
+  equipment schematics "to troubleshoot complex equipment, like an
+  implanter"; it corroborates in-house maintenance of that class but
+  names no model.[^skw-07]
+* The S-1 names semiconductor-equipment companies, Axcelis Technologies
+  among them, only in executive and director biographies, not as
+  suppliers.[^sec-01]
+* The capabilities page names no process step, so every assignment of
+  a SKY130 step to a listed tool is this reference's reading, graded on
+  the step page.
+
 ## Equipment classes in a 200 mm, 130 nm fab
 
 A fab of this kind does not have one tool per step. SkyWater's S-1
@@ -68,6 +90,7 @@ class. The classes follow the unit processes of the category pages:
   wafer inspection belongs with the starting material
   ({ref}`category-substrate`).
 
+(machines-skywater-published)=
 ## What SkyWater has published about its tools
 
 The public basis for naming SkyWater's tools is narrow, and almost all
@@ -119,6 +142,7 @@ of it is one page.
   the tool set: "In 2020, we added deep-trench etching
   capability".[^sec-02]
 
+(machines-typically-vs-skywater)=
 ## "Machines typically used" and "Machines likely used at SkyWater"
 
 Every step page separates two questions, and this page keeps them

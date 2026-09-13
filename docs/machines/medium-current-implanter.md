@@ -15,12 +15,13 @@ it. The physics of implantation (ranges, channelling, damage) is on the
 | | Medium-current ion implanter |
 |---|---|
 | What it does | Implants light to moderate doses of B⁺, BF₂⁺, As⁺ or P⁺ with a precisely set tilt and twist; one of the four implanter types — high current, medium current, high energy and ultra-high dose — into which fabs divide implant work.[^tanjyo-2011] |
-| Beam current | "between 10 μA and ~2 mA" in Wikipedia's classification;[^wiki-implant] "between 4µA and 3,500µA" for the Eaton 8250HT.[^axcelis-8250] |
 | Energy | "3keV to 750keV" for the 8250HT;[^axcelis-8250] 250 keV for singly charged ions on Nissin's EXCEED3000AH, raised to 320 keV (640 keV doubly and 960 keV triply charged) on the EXCEED9600A.[^tanjyo-2011] |
+| Beam current | "between 10 μA and ~2 mA" in Wikipedia's classification;[^wiki-implant] "between 4µA and 3,500µA" for the Eaton 8250HT.[^axcelis-8250] |
 | Dose | Light doses, of order 10¹²–10¹³ cm⁻² for threshold and channel implants (typical);[^txt-01] Nissin's example CMOS flow runs its medium-current steps at 10¹² cm⁻².[^tanjyo-2011] |
 | Wafer handling | Serial (single-wafer): the 8250HT is a "fully automated, serial-processing system" with a "mechanically limited throughput of 210 wafers per hour";[^axcelis-8250] the beam is scanned in one direction and the wafer moved in the other.[^harlan-1998][^olson-1998] |
 | 200 mm era | The Eaton 8250 is "a 200mm system";[^axcelis-8250] Varian's E220 and E500 served 150 mm and 200 mm wafers;[^varian-eseries-2003] Nissin's EXCEED2000A was its 200 mm tool.[^tanjyo-2011] |
 | SkyWater-listed tool | "Axcelis 8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14, 0-60 deg tilt"[^skw-01] |
+| SKY130 steps | 20 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-medium-current-implanter-steps>` |
 
 ## What the machine class is and how it works
 
@@ -203,16 +204,14 @@ Eaton's figure for the 8250HT,[^axcelis-8250] not a SkyWater statement.
 ### Strength of the evidence
 
 On the strength scale of the {ref}`machines index <machines-index>`
-this listing is **strong**: it is a SkyWater statement.[^skw-01] It
-shows that the tool is on the Minnesota floor now, not that it built
-the first S8 wafers. SkyWater's maintenance-technician profile shows
-technicians reviewing schematics "to troubleshoot complex equipment,
-like an implanter", which corroborates in-house implanter maintenance
-but names no model.[^skw-07] SkyWater's S-1 mentions Axcelis
-Technologies only in a director's biography, not as a
-supplier.[^sec-01] The list names no step, so every assignment below is
-this reference's reading.
+this listing is **strong**: it is a SkyWater statement.[^skw-01] The
+caveats that apply to every listed tool are under
+{ref}`Reading the SkyWater evidence <machines-reading-evidence>`. For
+this class the listing is strong for the model family but not for the
+variant or its energy range, so the "3keV to 750keV" of the 8250HT is
+Eaton's figure, not SkyWater's.[^skw-01][^axcelis-8250]
 
+(machine-medium-current-implanter-steps)=
 ### SKY130 steps assigned to this class
 
 Steps whose "Machines typically used" section names a medium-current
@@ -354,10 +353,6 @@ not public.
 
 * SkyWater Technology, *Facilities & Capabilities* — the "Axcelis 8250
   Mid current" entry quoted on this page.[^skw-01]
-* SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
-  Technician* — in-house implanter maintenance.[^skw-07]
-* SkyWater Technology, Form S-1 (2021) — Axcelis named only in a
-  biography.[^sec-01]
 * SkyWater PDK Authors, *Criteria & Assumptions* — the HV tip tilt and
   twist angles.[^pdk-03]
 * Eaton, *8250HT Medium Current Ion Implanter* — energy, beam-current,
@@ -444,8 +439,9 @@ not public.
   energy range, are not stated.[^skw-01]
 * What "E shower" denotes on the tool (an electron shower, a plasma
   flood or another charge-control system) is not stated.
-* Which steps of SKY130 run on the 8250 is not public; the list names no
-  step.
+* The model list above is incomplete: it covers the Eaton/Axcelis,
+  Varian and Nissin tools for which a public description was found, not
+  every medium-current implanter of the period.
 
 <!-- footnotes -->
 
@@ -525,12 +521,6 @@ not public.
     devices: Past, present and future", *Materials Science in
     Semiconductor Processing* **62**, 13–22 (2017).
     <https://doi.org/10.1016/j.mssp.2016.10.045>
-[^skw-07]: SkyWater Technology, *A Day in the Life of a SkyWater
-    Maintenance Technician*, 2023-12-14.
-    <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
-[^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
-    filed 2021-03-22.
-    <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^wiki-ph3]: Wikipedia, *Phosphine*. <https://en.wikipedia.org/wiki/Phosphine>
 [^wiki-ash3]: Wikipedia, *Arsine*. <https://en.wikipedia.org/wiki/Arsine>
 [^wiki-bf3]: Wikipedia, *Boron trifluoride*.
