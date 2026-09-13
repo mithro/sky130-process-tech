@@ -194,7 +194,7 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
 
 ## Resources required
 
-* **Sputter targets** — titanium, Al–0.5 wt.% Cu and Ti:W (10 wt.%
+* **{ref}`Sputter targets <material-sputter-targets>`** — titanium, Al–0.5 wt.% Cu and Ti:W (10 wt.%
   Ti[^pat-tiw-hitachi]); SkyWater's filings name Honeywell Electronic
   Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
   as sputter-target suppliers.[^sec-01][^sec-02]

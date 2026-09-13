@@ -177,7 +177,7 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 
 ## Resources required
 
-* **Titanium sputter targets** (high-purity, bonded to backing plates;
+* **Titanium {ref}`sputter targets <material-sputter-targets>`** (high-purity, bonded to backing plates;
   SkyWater's filings name Honeywell Electronic Materials (2021 S-1 and
   fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K) as sputter-target
   suppliers[^sec-01][^sec-02]).
