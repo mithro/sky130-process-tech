@@ -181,20 +181,20 @@ oxidation or clean must remove.
 
 ## Typical equipment
 
-* **Silicon and poly etch**: Lam TCP 9400 series (Lam's first TCP
+* **{ref}`Silicon and poly etch <machine-plasma-etcher-silicon>`**: Lam TCP 9400 series (Lam's first TCP
   products were introduced in late 1992; the TCP 9400PTX and 9400DFM are
   the 200 mm silicon-etch variants;[^lam-10k] the reactor is described
   in university clean-room guides);[^snf-9400] Applied Materials Silicon
   Etch DPS Centura (introduced in 1996 for 0.35 µm and
   below).[^amat-1997]
-* **Dielectric etch**: Lam 4520XLE and Exelan (the Alliance-based
+* **{ref}`Dielectric etch <machine-plasma-etcher-dielectric>`**: Lam 4520XLE and Exelan (the Alliance-based
   "Exelan High Performance" dielectric etcher was launched in July
   2001);[^lam-exelan] Applied Materials MxP and eMxP+ chambers on the
   Precision 5000 and Centura platforms;[^amat-1997] TEL Unity dielectric
   etchers.
-* **Metal etch**: Lam TCP 9600; Applied Materials Metal Etch DPS Centura
+* **{ref}`Metal etch <machine-plasma-etcher-metal>`**: Lam TCP 9600; Applied Materials Metal Etch DPS Centura
   (1996)[^amat-1997] with integrated passivation and strip chambers.
-* **Wet etch**: automated wet benches with HF, BOE and hot-phosphoric
+* **Wet etch**: automated {ref}`wet benches <machine-wet-bench>` with HF, BOE and hot-phosphoric
   tanks (Akrion GAMA;[^akrion-gama] SCP, DNS/Screen and Santa Clara
   Plastics benches); centrifugal spray processors (FSI Mercury);
   single-wafer spin etchers for backside film removal and bevel clean
