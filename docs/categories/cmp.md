@@ -106,9 +106,11 @@ plates.[^zantye-2004][^rev-02]
 The polish is stopped by one of: a fixed time derived from a measured
 rate; motor-current or friction {term}`endpoint`, which changes when the pad
 reaches a different material (nitride under oxide, oxide under
-tungsten); or in-situ optical or eddy-current thickness sensing. The
-Applied Mirra "was the first CMP system that successfully integrated
-endpoint detection and integrated cleaning".[^chiphistory-mirra] Pre-
+tungsten); or in-situ optical or eddy-current thickness sensing. A Chip History
+Center article calls the Applied Mirra "the first CMP system that
+successfully integrated endpoint detection and integrated
+cleaning";[^chiphistory-mirra] by Applied's own release the integrated
+cleaner came with the Mirra Mesa of 1999.[^amat-mesa-1999] Pre-
 and post-polish thickness maps from an optical thickness gauge give the
 removal and its uniformity, which are put under {term}`SPC`;
 within-wafer non-uniformity is tuned with zoned carrier pressures,
@@ -143,7 +145,7 @@ values.[^steigerwald-1997][^zantye-2004]
 * **{ref}`Polishers <machine-cmp-polisher>`**: Applied Materials Mirra ("the Company announced its
   entry into the CMP market with the Mirra CMP in December 1995. The
   Mirra CMP system features a unique three-station, four polishing head
-  design")[^amat-1997] and Mirra Mesa with integrated cleaner; Ebara
+  design")[^amat-1997] and Mirra Mesa with integrated cleaner (1999);[^amat-mesa-1999] Ebara
   F-REX 200 (the current F-REX200M2 "polishes 200 mm wafers with high
   k-materials and aluminium layers");[^ebara-frex] IPEC/Westech 372 and
   472 and the SpeedFam-IPEC Auriga; Strasbaugh 6DS-SP; Lam Teres.
@@ -303,6 +305,10 @@ values.[^steigerwald-1997][^zantye-2004]
 [^chiphistory-mirra]: Chip History Center, *The Mirra CMP System by
     Applied Materials*.
     <https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>
+[^amat-mesa-1999]: Applied Materials, *Applied Materials Announces New
+    Mirra Mesa System to Address Market Demand for Integrated CMP
+    Solutions*, press release, 1999-06-10, accessed 2026-09-13.
+    <https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-mirra-mesa-system-address-market>
 [^amat-1997]: Applied Materials, Inc., *1997 Annual Report*.
     <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
 [^ebara-frex]: EBARA Precision Machinery Europe, *CMP Tools*
