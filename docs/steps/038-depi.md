@@ -183,10 +183,10 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 
 ## Resources required
 
-* **Arsine (AsH₃)** (or phosphine for phosphorus), delivered in
+* **{ref}`Arsine <material-dopant-sources>` (AsH₃)** (or phosphine for phosphorus), delivered in
   sub-atmospheric cylinders with gas-cabinet monitoring
   ({ref}`category-implant`).
-* **Source consumables**, **helium** platen cooling, **nitrogen**,
+* **Source consumables**, **{ref}`helium <material-process-gases>`** platen cooling, **nitrogen**,
   cryopump regeneration.
 * **{ref}`Monitor wafers <material-substrates>`**.
 * Gas suppliers named in SkyWater's filings: Air Products and Praxair

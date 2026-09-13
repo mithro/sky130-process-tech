@@ -172,7 +172,7 @@ memory (SKY130's recipe is not public):
 
 ## Resources required
 
-* **CF₄, CHF₃, SF₆ and O₂** process gases,[^skw-01] with **Ar** or
+* **{ref}`CF₄ <material-etch-gases>`, CHF₃, SF₆ and {ref}`O₂ <material-process-gases>`** process gases,[^skw-01] with **Ar** or
   **He** as typical diluents; **HBr** if a silicon-selective landing
   step is used.
 * **Oxygen/nitrogen/{ref}`forming gas <material-anneal-ambients>`** for the ash; **{term}`SPM`** for the wet

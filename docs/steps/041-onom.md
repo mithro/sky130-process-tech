@@ -153,7 +153,7 @@ etch).
   suppliers[^sec-01]), **HMDS**, optional **inorganic or organic
   ARC**.[^pat-03]
 * **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, {ref}`DI water <material-ultrapure-water>`,
-  nitrogen.
+  {ref}`nitrogen <material-process-gases>`.
 * **The ONO reticle** — chrome on quartz; relaxed features.
 
 ## Related steps and cross-references

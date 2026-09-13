@@ -158,10 +158,10 @@ memory transistor (SKY130's values are not public):
 
 ## Resources required
 
-* **Boron trifluoride (BF₃)** for ¹¹B⁺ or BF₂⁺; solid indium source
+* **{ref}`Boron trifluoride <material-dopant-sources>` (BF₃)** for ¹¹B⁺ or BF₂⁺; solid indium source
   charge if indium is used ({ref}`category-implant`).
 * **Source-support gases**, source consumables (filaments, arc-chamber
-  liners), high-purity nitrogen for venting.
+  liners), high-purity {ref}`nitrogen <material-process-gases>` for venting.
 * **Helium** for platen cooling; **liquid nitrogen** or cryopump
   regeneration.
 * **{ref}`Monitor wafers <material-substrates>`** for dose control.

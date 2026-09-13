@@ -176,9 +176,9 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
 
 ## Resources required
 
-* **Silane (SiH₄)** — pyrophoric; delivered from a gas cabinet with
+* **{ref}`Silane <material-precursors>` (SiH₄)** — pyrophoric; delivered from a gas cabinet with
   excess-flow and leak monitoring.[^wiki-silane]
-* **Nitrogen** for purge, ramp and back-fill; **hydrogen** is a
+* **{ref}`Nitrogen <material-process-gases>`** for purge, ramp and back-fill; **hydrogen** is a
   by-product handled by the exhaust.
 * **{ref}`Quartz or silicon-carbide tube <material-hardware-consumables>`, boat and baffles**; silicon
   deposits on the furnace ware and is periodically cleaned off (a

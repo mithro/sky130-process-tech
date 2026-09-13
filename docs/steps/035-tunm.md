@@ -181,7 +181,7 @@ and the pre-oxidation clean as part of those steps (see the
 * **Developer** — aqueous 2.38 % (0.26 N) TMAH;[^txt-02] SkyWater's 2021 S-1
   names "Air Products & Chemicals, Inc., Moses Lake (developer)" without
   tying it to a layer.[^sec-01]
-* **Edge-bead remover**, {ref}`DI water <material-ultrapure-water>`, nitrogen.
+* **Edge-bead remover**, {ref}`DI water <material-ultrapure-water>`, {ref}`nitrogen <material-process-gases>`.
 * **The tunnel reticle** — a chrome-on-quartz photomask; with a 0.41 µm
   minimum feature no {term}`OPC` would be needed.
 
