@@ -138,9 +138,11 @@ below are typical or taken from contemporaneous patents.
   dose window (10¹¹–10¹⁴ cm⁻²) and the tilt capability are exactly those
   of a threshold-adjust implant. Strength: **strong** for the tool;
   assignment to `LVTNI` is an **inference** from capability.
-* **Axcelis GSD**[^skw-01] could equally run a keV boron implant, but a
-  batch high-current/high-energy tool is normally reserved for wells and
-  source/drains. Strength: strong for existence, weak for assignment.
+* **Axcelis GSD implanters** — either GSD entry, "High current/energy"
+  or "Hi dose",[^skw-01] could equally run a keV boron implant, but these
+  batch tools are normally reserved for wells and source/drains; which
+  entry would serve is not stated. Strength: strong for existence, weak
+  for assignment.
 * A SkyWater maintenance profile mentions implanter robotics and vacuum
   work[^skw-07] — corroboration that implanters are maintained in house,
   not tool evidence.

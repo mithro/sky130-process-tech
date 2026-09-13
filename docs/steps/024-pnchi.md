@@ -118,7 +118,9 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   an **inference** from capability and from the step immediately
   preceding it ({ref}`PCHI <step-023>`) plausibly running on the same
   tool.
-* **Axcelis GSD** lists BF₂ too.[^skw-01] Strength: strong for
+* **Axcelis GSD implanters** — both GSD entries, "High current/energy"
+  and "Hi dose", list BF₂ too;[^skw-01] which entry would serve is not
+  stated. Strength: strong for
   existence, weak for assignment.
 
 ## Resources required
