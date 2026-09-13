@@ -41,7 +41,12 @@ because the P− resistors share the P+ layout footprints.[^pdk-07] The
 pad documentation of the SKY130 {term}`test tile` names the mask too,
 marking the equivalent shortest 2 kΩ/sq resistors (W = 0.69 µm,
 L = 0.345 µm and W = 0.33 µm, L = 0.33 µm) "(may not work for routes
-using URPM mask)".[^raw-data-testtile-pads]
+using URPM mask)".[^raw-data-testtile-pads] The published measurements
+of the marked structures read 1.33–1.43 kΩ (0.33 µm, one square) and,
+at 0.69 µm and half a square, 0.59 kΩ in one module against 2.8–3.1 kΩ
+in another; the longer resistors of the family give a sheet resistance
+of about 1 960 Ω/sq (our extraction from the published measurements;
+see {ref}`UPRI <step-056>`).[^raw-data-passives]
 
 ## Step category
 
@@ -176,6 +181,9 @@ reading is used throughout these pages and is marked as an inference.
 * SKY130 raw-data repository, test-tile pad documentation — the 2 kΩ/sq
   poly-resistor (URPM note) structures of the published test
   tile.[^raw-data-testtile-pads]
+* SKY130 raw-data repository, measured data — I–V sweeps of the 2 kΩ/sq
+  structures; the resistances and sheet resistance quoted here are our
+  extraction.[^raw-data-passives]
 
 ### High-level understanding
 
@@ -342,3 +350,11 @@ reading is used throughout these pages and is marked as an inference.
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
     retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>

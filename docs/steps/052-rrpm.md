@@ -41,7 +41,13 @@ documentation of the SKY130 {term}`test tile` marks its shortest
 300 Ω/sq poly resistors (W = 0.69 µm, L = 0.345 µm and W = 0.33 µm,
 L = 0.33 µm) "(will not work for any routes using RRPM
 mask)".[^raw-data-testtile-pads] It says nothing about the mask's tone
-or how it is derived.
+or how it is derived. The published measurements of the marked
+structures read 0.49–0.54 kΩ (0.69 µm, half a square) and 0.97 kΩ
+(0.33 µm, one square), inside the limits of the PDK's e-test table for
+0.69 µm half-square and 0.35 µm one-square resistors (our extraction
+from the published measurements);[^raw-data-passives][^pdk-07] the
+files do not say which process route the measured wafer
+followed.
 
 ## Step category
 
@@ -181,6 +187,9 @@ mostly chrome. Neither tone nor resist is stated publicly.
 * SKY130 raw-data repository, test-tile pad documentation — the
   poly-resistor (RRPM note) structures of the published test
   tile.[^raw-data-testtile-pads]
+* SKY130 raw-data repository, measured data — I–V sweeps of those
+  structures; the resistances quoted here are our
+  extraction.[^raw-data-passives]
 
 ### High-level understanding
 
@@ -341,3 +350,11 @@ mostly chrome. Neither tone nor resist is stated publicly.
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
     retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>

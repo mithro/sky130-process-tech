@@ -75,6 +75,24 @@ film is characterised with: eleven modules of "2K ohm/sq P- POLY
 RESISTOR" at the same five widths as the 300 Ω/sq set, from 0.5 to 20
 squares and many as "Mismatch" pairs, and a van der Pauw "RSRP - 2K
 ohm/sq poly resistor sheet resistance: VDP".[^raw-data-testtile-pads]
+Measurements of 88 of those resistors are public: the SKY130 raw-data
+repository publishes their two-terminal current–voltage
+sweeps.[^raw-data-passives] The arithmetic used on
+{ref}`PRI <step-053>` — the difference between the median 20-square and
+4-square resistances at each drawn width taken as 16 squares of body,
+then fitted against width — gives a sheet resistance of about
+1 960 Ω/sq, with an electrical width within about 0.03 µm of drawn,
+and the 20-square resistors 1.41 µm and wider read 39.1–40.2 kΩ (our
+extraction from the published measurements; the files record no
+temperature, date or wafer, so they give no temperature
+coefficient).[^raw-data-passives] The PDK still gives no e-test values
+to compare them with.[^pdk-07] The short structures scatter more than
+their 300 Ω/sq counterparts: among the half- and one-square resistors,
+five read from about twice to more than sixty times the value of the
+same geometry elsewhere on the tile, and, as in the 300 Ω/sq set, the
+2.85 µm pair of module 6224, which the pad list gives four squares,
+measures about one square's resistance (our
+extraction).[^raw-data-passives][^raw-data-testtile-pads]
 
 ## How it is typically performed
 
@@ -157,6 +175,9 @@ An industry-generic light poly-resistor implant for a 200 mm,
 * SKY130 raw-data repository, test-tile pad documentation — the 2 kΩ/sq
   poly-resistor and van der Pauw structures of the published test
   tile.[^raw-data-testtile-pads]
+* SKY130 raw-data repository, measured data — I–V sweeps of the 2 kΩ/sq
+  structures; the sheet resistance and width offset quoted here are our
+  extraction.[^raw-data-passives]
 
 ### High-level understanding
 
@@ -307,3 +328,11 @@ An industry-generic light poly-resistor implant for a 200 mm,
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
     retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
