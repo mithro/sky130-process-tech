@@ -201,9 +201,8 @@ temperature".[^cheung-2000]
   nitrides.[^amat-pecvd-teos-2002][^amat-pecvd-psg-2002][^amat-pecvd-sin-2002]
   In 1997 Applied settled patent litigation with Novellus "concerning
   plasma TEOS and tungsten CVD technology".[^amat-1997]
-* **Trikon Technologies.** The {ref}`NCAPOX <step-091>` page names a
-  Delta PECVD system and credits it to "Lam (Trikon)"; no source
-  retrieved for this page links Trikon to Lam. The Delta 201 was one of
+* **Trikon Technologies.** The {ref}`NCAPOX <step-091>` page names
+  Trikon's Delta PECVD system. The Delta 201 was one of
   the products Trikon "obtained with the acquisition of Electrotech on
   November 15, 1996", described as "a versatile, single-chamber
   production system for producing films, including silicon dioxide or
