@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1443
+written page has exactly one entry here; the inventory holds 1459
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -11962,6 +11962,133 @@ function of thermal history", *IEEE Transactions on Electron Devices*
 **34**(3), 689–699 (1987). <https://doi.org/10.1109/T-ED.1987.22981>
 Stress from wafer curvature measured by laser scanning, through thermal
 cycles. Used on the film thickness and stress metrology page. Tier: deep
+dive.
+
+**TENCOR-RS75-1995** — Tencor Instruments, *Tencor's Film Measurement
+Division Introduces New OmniMap RS75 Resistivity Mapping System*, press
+release, 1995-10-10; Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302035054/http://www.tencor.com:80/press/omnimaprs75.html>
+A four-point-probe mapper based on Prometrix technology for implant,
+metallisation, diffusion, epitaxy and polysilicon: about one second per
+site, over 100 wafers per hour at five sites on 200 mm, and a
+temperature-compensated RS75/tc model. Used on the sheet-resistance and
+dose metrology page. Tier: cross-check (vendor statement).
+
+**TENCOR-RESISTIVITY-1997** — Tencor Instruments, *Resistivity
+Measurement* (OmniMap NC110 and RS75), product page; Wayback Machine
+capture of 1997-03-02.
+<https://web.archive.org/web/19970302033556/http://www.tencor.com:80/products/resistivity.html>
+The NC110 for resistivity on product wafers with aluminium and tungsten
+metallisation (to 10 Ω/sq) and the RS75 four-point probe from implant
+monitoring to thin-film control. Used on the sheet-resistance and dose
+metrology page. Tier: cross-check (vendor statement).
+
+**KLA-RS100** — KLA-Tencor, *RS-100: Advanced Resistivity Metrology*,
+product page; Wayback Machine capture of 2002-08-16.
+<https://web.archive.org/web/20020816223302/http://www.kla-tencor.com:80/products/metrology/rs-100/rs-100.html>
+A 200/300 mm resistivity mapper measuring to within 1 mm of the film edge,
+described as the tool of choice in the metals, CMP and diffusion modules.
+Used on the sheet-resistance and dose metrology page. Tier: cross-check
+(vendor statement).
+
+**TW-IMPLANT** — Therma-Wave, *Ion Implantation Monitoring*
+(applications), web page; Wayback Machine capture of 2001-07-13.
+<https://web.archive.org/web/20010713111006/http://www.thermawave.com:80/apps/implant.htm>
+The thermal-wave implant monitor: sensitivity to damage and dose, to
+energy (varying with depth), to channelling and scanning effects;
+measurement before anneal on product wafers; low-dose monitoring for
+threshold control; and the annealed test-wafer practice it replaces. Used
+on the sheet-resistance and dose metrology page. Tier: cross-check
+(vendor statement).
+
+**TW-TP-2000** — Therma-Wave, *The Therma-Probe Family*, product page;
+Wayback Machine capture of 2000-10-06.
+<https://web.archive.org/web/20001006232958/http://www.thermawave.com:80/prod_tpf.htm>
+The Therma-Probe 500 (introduced July 1996): 10 µm × 10 µm sites on product
+wafers, solid-state lasers, and more than 360 Therma-Probe systems
+installed by April 1998. Used on the sheet-resistance and dose metrology
+page. Tier: cross-check (vendor statement).
+
+**TW-PRODUCTS-1997** — Therma-Wave, *Therma-Wave Products* (Opti-Probe and
+Therma-Probe 500 Series), web page; Wayback Machine capture of 1997-01-26.
+<https://web.archive.org/web/19970126142849/http://www.thermawave.com:80/products.html>
+Presents the Therma-Probe as the industry standard for monitoring implants
+on product wafers. Used on the sheet-resistance and dose metrology page.
+Tier: cross-check (vendor statement).
+
+**PERLOFF-1977** — D. S. Perloff, F. E. Wahl and J. Conragan, "Four-Point
+Sheet Resistance Measurements of Semiconductor Doping Uniformity",
+*Journal of The Electrochemical Society* **124**(4), 582–590 (1977).
+<https://doi.org/10.1149/1.2133355> Automated sheet-resistance maps with
+four-point probes and van der Pauw resistors, shown to be interchangeable
+for uniformity measurements. Used on the sheet-resistance and dose
+metrology page. Tier: deep dive.
+
+**PAT-RSMAP-PROMETRIX** — D. S. Perloff and C. Mallory (Prometrix),
+*Apparatus and methods for resistivity testing*, US 4,703,252 A, filed
+1985-02-22, granted 1987-10-27.
+<https://patents.google.com/patent/US4703252A/en> An automatic sheet
+resistance mapping system with a rotatable stage and a linear four-tip
+probe head, in contour and diameter scan modes. Used on the
+sheet-resistance and dose metrology page. Tier: deep dive.
+
+**SMITH-1986** — A. K. Smith, W. H. Johnson and W. A. Keenan, "Sheet
+Resistance Low Dose Monitoring Using The Double Implant Technique", *Proc.
+SPIE* **0623**, 50 (1986). <https://doi.org/10.1117/12.961194> Direct
+sheet-resistance monitoring down to 2 × 10¹¹ cm⁻² and the double-implant
+technique for low doses. Used on the sheet-resistance and dose metrology
+page. Tier: deep dive.
+
+**HILLARD-2004** — R. J. Hillard, J. Borland and C. W. Ye, "Accurate
+determination of ultra-shallow junction sheet resistance with a
+non-penetrating four point probe", *IWJT 2004*, pp. 98–101.
+<https://doi.org/10.1109/IWJT.2004.1306768> Elastic-material probes
+forming non-penetrating contacts for ultra-shallow junctions. Used on the
+sheet-resistance and dose metrology page. Tier: deep dive.
+
+**MILLER-1976** — G. L. Miller, D. A. H. Robinson and J. D. Wiley,
+"Contactless measurement of semiconductor conductivity by radio
+frequency-free-carrier power absorption", *Review of Scientific
+Instruments* **47**(7), 799–805 (1976). <https://doi.org/10.1063/1.1134756>
+Conductivity from the power a slice absorbs in an oscillating magnetic
+field, for semiconductors to metals. Used on the sheet-resistance and dose
+metrology page. Tier: deep dive.
+
+**PAT-THERMALWAVE-THERMAWAVE** — A. Rosencwaig, J. Opsal, W. L. Smith and
+D. L. Willenborg (Therma-Wave Partners), *Detecting thermal waves to
+evaluate thermal parameters*, US 4,579,463 A, filed 1984-05-21, granted
+1986-04-01. <https://patents.google.com/patent/US4579463A/en> Thermal
+waves detected through the change of reflectivity of a periodically heated
+surface. Used on the sheet-resistance and dose metrology page. Tier: deep
+dive.
+
+**ROSENCWAIG-1985** — A. Rosencwaig, J. Opsal, W. L. Smith and D. L.
+Willenborg, "Detection of thermal waves through optical reflectance",
+*Applied Physics Letters* **46**(11), 1013–1015 (1985).
+<https://doi.org/10.1063/1.95794> Non-contact thermal-wave detection
+through the temperature dependence of reflectance. Used on the
+sheet-resistance and dose metrology page. Tier: deep dive.
+
+**OPSAL-1985** — J. Opsal and A. Rosencwaig, "Thermal and plasma wave depth
+profiling in silicon", *Applied Physics Letters* **47**(5), 498–500 (1985).
+<https://doi.org/10.1063/1.96105> Depth profiling with the plasma wave of
+laser-generated free carriers. Used on the sheet-resistance and dose
+metrology page. Tier: deep dive.
+
+**PAT-PLASMAWAVE-THERMAWAVE** — J. Opsal, A. Rosencwaig and W. L. Smith
+(Therma-Wave), *Method and apparatus for evaluating surface and subsurface
+features in a semiconductor*, US 4,854,710 A, filed 1987-07-23, granted
+1989-08-08. <https://patents.google.com/patent/US4854710A/en> A periodic
+electron–hole plasma monitored through reflectivity to evaluate dopants,
+residues and defects. Used on the sheet-resistance and dose metrology
+page. Tier: deep dive.
+
+**SING-2000** — D. Sing, P. Borden and L. Bechtler, "Low and high dose
+process monitoring using the BX-10 implant monitor system", *2000
+International Conference on Ion Implantation Technology Proceedings*,
+pp. 639–641. <https://doi.org/10.1109/IIT.2000.924234> An in-line
+ultra-shallow-junction tool evaluated as a low- and high-dose implant
+monitor. Used on the sheet-resistance and dose metrology page. Tier: deep
 dive.
 
 ## 9. Evidence about specific tools at SkyWater
