@@ -304,7 +304,7 @@ pressures and thicknesses are not public.
   of SKY130.
 * {ref}`machine-vertical-furnace-oxidation` — the furnace platform, the
   Aviza history and the ONO oxidations.
-* Vertical batch furnace: anneal and alloy — the same furnace group used
+* {ref}`machine-vertical-furnace-anneal` — the same furnace group used
   for anneals and the alloy.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
