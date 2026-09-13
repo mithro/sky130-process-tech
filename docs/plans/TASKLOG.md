@@ -40,6 +40,8 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 135–148: MiM capacitor 1, metal 3, via 3 — reviewed and merged 2026-09-13 (27 inventory entries added as §8.14; PDK capm level inconsistency disclosed)
 - [x] Steps 149–163: metal 4, MiM capacitor 2, via 4, metal 5 — reviewed and merged 2026-09-13 (30 inventory entries added as §8.15; SKY130 read as an S8PIR* flow for metal-5 rules)
 - [x] Steps 164–171: passivation, pad, alloy, test — reviewed and merged 2026-09-13 (25 inventory entries added as §8.16; all 171 step pages written)
+- [x] Cite the public *S8 / SKY130 Process Steps* sheet (STEPS-SHEET) on the landing page, steps index and every step page — 2026-09-13
+- [ ] Use the sheet's mask tabs (masks made per MPW run, mask types, plate labels) on the mask index and lithography pages
 
 ## Phase 2b — Citation conversion (added 2026-08-30)
 
