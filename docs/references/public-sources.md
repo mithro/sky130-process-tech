@@ -426,7 +426,10 @@ niobium, 193 nm scanners, ALD). Tier: cross-check (SkyWater statement).
 core 1.8 V, I/O "3.3V, 5.0V", high voltage "20+V, Drain-Extended CMOS
 (16V)", "MiM Capacitor", "Precision Resistor", "Bulk" substrate; S90LN
 — 90 nm, 7 Al metals, 2 dual-damascene local interconnect, 4 µm epi;
-RH90 — 90 nm FD-SOI. Tier: cross-check.
+RH90 — 90 nm FD-SOI. Re-read 2026-09-13: the S130 column also gives
+top metal "1.2 µm", "Mask Steps" "30 – 34", isolation "STI", gate
+"Poly", precision resistors "2000Ω/□ 300Ω/□ (Both P-poly)", inductor
+"No" and polyimide "Yes" (used on the overview page). Tier: cross-check.
 
 **SKW-03** — SkyWater Technology, *"RH90: The Next-Generation Stateside
 Strategic Rad-Hard by Process Technology"*, 2023-03-14.
