@@ -187,7 +187,7 @@ fab (SKY130's recipe is not public):
 ### Cross-check
 
 * SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP":
-  "tungsten", "high selectivity tungsten"; SEZ/DaVinci
+  "tungsten", "high selectivity tungsten"; SEZ/Da Vinci
   cleaners.[^skw-01]
 * SkyWater PDK, *Periphery rules* — licon.4, li.5.[^pdk-periph]
 * SkyWater PDK, process stack diagram — `li` 0.1 µm.[^pdk-04]

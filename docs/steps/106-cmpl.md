@@ -181,7 +181,7 @@ fab (SKY130's recipe is not public):
   0.75; density boxes.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — ct.1 0.170 µm, ct.2 0.190 µm.[^pdk-periph]
 * SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP" and its
-  film list; SEZ/DaVinci cleaners.[^skw-01]
+  film list; SEZ/Da Vinci cleaners.[^skw-01]
 * Applied Materials, 1997 Annual Report — the Mirra product
   line.[^amat-1997]
 * SkyWater, Form S-1 — chemical suppliers.[^sec-01]

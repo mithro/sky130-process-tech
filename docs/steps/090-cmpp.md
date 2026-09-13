@@ -196,7 +196,7 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 * SkyWater PDK, process stack diagram — PSG labels; `li` 0.1 µm.[^pdk-04]
 * SkyWater PDK, *Periphery rules* — licon.1 0.170 µm.[^pdk-periph]
 * SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP" and its
-  film list; SEZ/DaVinci cleaners.[^skw-01]
+  film list; SEZ/Da Vinci cleaners.[^skw-01]
 * Applied Materials, 1997 Annual Report — the Mirra product
   line.[^amat-1997]
 * SkyWater, Form S-1 — chemical suppliers.[^sec-01]
