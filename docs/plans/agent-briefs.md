@@ -17,7 +17,10 @@ written, reviewed and audited to the same standard.
    and never pair "X is not public" with "the step list shows Y".
    Write "the step list used in this reference does not explain X; we
    read …" and base readings on public sources (PDK, filings,
-   qualification reports).
+   qualification reports). This includes soft forms ("as the name
+   suggests", "the suffix makes it the Nth …", "consistent with the
+   step name"). Material that no reader can retrieve (search-engine
+   snippets, expired or blocked listings) is not cited or mentioned.
 3. **Numbers need a public citation.** Every thickness, temperature,
    dose, energy, pressure or time carries a citation to a public source
    or is explicitly marked as a typical industry value with a textbook
