@@ -106,7 +106,7 @@ accumulation-mode varactors, native NMOS at 3.0 V and 5.0 V,
 "5.0V/10.5V" NMOS and PMOS, a "10V/16V PMOS FET" and an "11V/16V NMOS
 FET", 20 V NMOS and PMOS (including native, zero-threshold and isolated
 NMOS), an ESD NMOS, diodes, NPN and PNP bipolar transistors, SRAM and
-{term}`SONOS` cells, generic and precision ("P+" and "P-") poly resistors,
+{term}`SONOS` cells, generic and precision ("P+" and "P-") {term}`poly resistors <poly resistor>`,
 {term}`MiM capacitors <MiM capacitor>` and vertical parallel-plate
 capacitors.[^pdk-07] SkyWater's S130 platform table, re-read on
 2026-09-13, gives the same process in foundry terms: metal "5: Al",
@@ -118,7 +118,7 @@ substrate.[^skw-02]
 
 Each of these features has a visible cost in the step list, and the
 module table below shows where: the two gate-oxide thicknesses need a
-mask of their own ({ref}`LVOM <step-044>`); the drain-extended devices
+mask of their own ({ref}`LVOM <step-044>`); the {term}`drain-extended <DEMOS>` devices
 need their own P-well mask and blocked regions in the P-well block mask
 ({ref}`PWDEM <step-030>`, {ref}`PWBM <step-026>`); the SONOS cell needs a tunnel window, an ONO
 island and its own tip implant ({ref}`TUNM <step-035>`,
@@ -135,8 +135,9 @@ Al"[^skw-02]), which the step pages describe as patterned
 {term}`subtractively <subtractive metallisation>` over tungsten plugs
 rather than as copper {term}`damascene` ({ref}`TIAL6 <step-112>`,
 {ref}`MM1E <step-114>`). Its gates and diffusions carry, on the step
-pages' reading of the unsilicided poly and diffusion sheet
-resistances,[^pdk-08] no {term}`salicide`, only a silicide at the bottom
+pages' reading of the unsilicided poly and diffusion
+{term}`sheet resistances <sheet resistance>`,[^pdk-08] no
+{term}`salicide`, only a {term}`silicide` at the bottom
 of each contact ({ref}`CSIL <step-098>`; inference). And both its NMOS
 and PMOS gates are, on the reading of the {ref}`P1I <step-050>` page,
 n⁺ poly (inference).
@@ -381,8 +382,8 @@ boron {term}`halo` ({ref}`NTM <step-064>` to {ref}`ASTIS <step-067>`);
 the 5 V-class NMOS, with a steeply tilted arsenic tip
 ({ref}`HVNTM <step-068>` to {ref}`HVASTIS <step-070>`); and the SONOS
 memory transistors, with a lightly doped tip and a halo
-({ref}`LDNTM <step-071>` to {ref}`LDASTIS <step-074>`). A rapid thermal
-anneal activates all five implants ({ref}`TIPRTAD <step-075>`). The step
+({ref}`LDNTM <step-071>` to {ref}`LDASTIS <step-074>`). A
+{term}`rapid thermal anneal <RTA>` activates all five implants ({ref}`TIPRTAD <step-075>`). The step
 list has no P-tip mask or implant; where the PMOS extension is formed is
 one of the open questions below.
 
@@ -398,7 +399,8 @@ reference's reading, two implants and the N⁺ mask one ({ref}`PSDM <step-081>` 
 the flow, ends.
 
 **Pre-metal dielectric, contact silicide and local interconnect.** This
-is the {term}`MOL` of this reference. A phosphosilicate glass is
+is the {term}`MOL` of this reference. A
+{term}`phosphosilicate glass <PSG>` is
 deposited, polished and capped ({ref}`PSG <step-089>` to
 {ref}`NCAPOX <step-091>`) and annealed a second time
 ({ref}`RTAD2 <step-092>`). The local-interconnect contacts are printed
@@ -446,7 +448,7 @@ printed and etched ({ref}`CAPM <step-137>`, {ref}`CAPME <step-138>`), and
 only then is metal 3 patterned, cutting the bottom plates with the
 wiring ({ref}`MM3 <step-139>`, {ref}`MM3E <step-140>`). The dielectric's
 material and thickness and the plate's material are not public; the
-step pages read a PECVD oxynitride and a TiW plate (inference). The
+step pages read a {term}`PECVD` {term}`oxynitride` and a TiW plate (inference). The
 dielectric, polish, cap and via-3 module follow
 ({ref}`NILD5 <step-141>` to {ref}`WCMP5 <step-148>`), with vias landing
 both on metal 3 and on capacitor plates.
@@ -467,7 +469,7 @@ etched ({ref}`MM5 <step-162>`, {ref}`MM5E <step-163>`).
 **Passivation, pads, alloy and test.** A thin oxide is deposited over
 metal 5 ({ref}`NFUSOX <step-164>`, read as the diagram's TOPOX), a ring
 along each die edge is opened ({ref}`NSM <step-165>`,
-{ref}`NSME <step-166>`, read as a seal-ring opening for the nitride), the
+{ref}`NSME <step-166>`, read as a {term}`seal-ring <seal ring>` opening for the nitride), the
 passivation nitride is deposited ({ref}`NTSD <step-167>`), the pads are
 opened ({ref}`PDM <step-168>`, {ref}`PDME <step-169>`), the wafer
 receives a final {term}`alloy anneal` ({ref}`ALLY <step-170>`) and the
@@ -603,7 +605,7 @@ sources, in the order in which the thermal steps occur.
 1. **Isolation.** The pad and liner oxidations ({ref}`BOX <step-002>`,
    {ref}`LINOX <step-010>`) and the nitride hard mask
    ({ref}`ISONIT <step-003>`) are furnace steps: thermal oxidation runs
-   at 800–1200 °C[^wiki-thox] and LPCVD nitride at roughly
+   at 800–1200 °C[^wiki-thox] and {term}`LPCVD` nitride at roughly
    700–800 °C (typical value),[^txt-02] a tube-furnace process that
    Wikipedia describes as working "at rather high
    temperature".[^wiki-sin] On the
@@ -650,7 +652,7 @@ sources, in the order in which the thermal steps occur.
    capacitor films of the back end are described on their step pages as
    low-temperature plasma depositions (inference).
 9. **Final alloy.** The last heat is the alloy anneal
-   ({ref}`ALLY <step-170>`), read as a forming-gas anneal, typically
+   ({ref}`ALLY <step-170>`), read as a {term}`forming-gas <forming gas>` anneal, typically
    350–450 °C.[^txt-02] In the
    `sky130B` variant every thermal step after the ReRAM stack is also
    seen by its 5 nm switching oxide (0.005 µm in the ReRAM tech file,
@@ -670,7 +672,7 @@ public.
   poly",[^pdk-07] its mask table has no separate P⁺ poly
   mask,[^pdk-05] and its rules keep the nitride cut away from
   gates.[^pdk-periph] The step pages therefore read both NMOS and PMOS
-  gates as n⁺ poly, with a counter-doped PMOS channel; no public source
+  gates as n⁺ poly, with a {term}`counter-doped <counter-doping>` PMOS channel; no public source
   says so ({ref}`P1I <step-050>`, {ref}`LVTPI <step-020>`,
   {ref}`PNCHI <step-024>`).
 * **PMOS source/drain extension.** The mask table has only N-tip
@@ -847,7 +849,8 @@ public.
   generation.[^cyp-25]
 * Jones and Ishida, *Mater. Sci. Eng. R* 1998 — shallow-junction doping,
   extensions, halos and rapid thermal annealing.[^rev-05]
-* Hori, IEDM 1989 — the large-tilt-angle implanted drain, the
+* Hori, IEDM 1989 — the large-tilt-angle implanted drain
+  ({term}`LATID`), the
   construction read for SKY130's high-voltage tip.[^hori-1989-latid]
 * Stolk et al., *J. Appl. Phys.* 1997 — transient enhanced diffusion,
   the reason junction anneals are short.[^stolk-1997]
