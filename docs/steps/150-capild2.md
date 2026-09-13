@@ -243,11 +243,11 @@ diagram[^pdk-04]); the aluminium limit of roughly
 
 ## Resources required
 
-* **Silane, nitrous oxide, ammonia**, with **nitrogen or helium**
+* **{ref}`Silane <material-precursors>`, {ref}`nitrous oxide <material-process-gases>`, ammonia**, with **nitrogen or helium**
   diluent.[^denisse-1986][^wiki-pecvd] Gas suppliers named in SkyWater's
   filings: Air Products and Praxair (2021 S-1), Linde and Airgas (fiscal
   2023 10-K).[^sec-01][^sec-02]
-* **NF₃** for the chamber clean; **nitrogen** purge.
+* **{ref}`NF₃ <material-etch-gases>`** for the chamber clean; **nitrogen** purge.
 * **{ref}`Showerhead, heater and liner consumables <material-hardware-consumables>`**; **{ref}`monitor wafers <material-substrates>`** with
   the metal-4 stack for thickness and capacitance checks.
 
