@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1653
+written page has exactly one entry here; the inventory holds 1667
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -505,6 +505,7 @@ Also used on the hardware consumables material page.
 Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
+Also used on the etch and chamber-clean gases material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -688,6 +689,7 @@ Also used on the hardware consumables material page.
 Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
+Also used on the etch and chamber-clean gases material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -715,6 +717,7 @@ Also used on the hardware consumables material page.
 Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
+Also used on the etch and chamber-clean gases material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -2948,6 +2951,7 @@ etching", *Journal of Applied Physics* **50**(5), 3189–3196 (1979).
 bombardment plus reactive gas etches far faster than either alone, the
 basis of anisotropic RIE. Used on steps 005, 036 and 042 and the etch
 category page. Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **COOK-1990** — L. M. Cook, "Chemical processes in glass polishing",
 *Journal of Non-Crystalline Solids* **120**(1–3), 152–171 (1990).
@@ -3018,6 +3022,7 @@ fluorine- and chlorine-containing plasmas", *Pure and Applied Chemistry*
 Mechanisms of silicon etching in fluorine- and chlorine-containing
 plasmas, relevant to the pad-oxide breakthrough and the silicon stop.
 Used on step 005. Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **FUJIMURA-1991** — S. Fujimura, K. Shinagawa, M. T. Suzuki and M.
 Nakamura, "Resist stripping in an O₂+H₂O plasma downstream", *Journal of
@@ -3217,6 +3222,7 @@ versus etching, the mechanism behind sidewall passivation. Used on step
 005 and the etch category page.
 Also used on the dielectric and nitride plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **OHASHI-2007** — T. Ohashi, T. Kubota and A. Nakajima, "Ar Annealing
 for Suppression of Gate Oxide Thinning at Shallow Trench Isolation
@@ -3260,6 +3266,7 @@ silicon nitride with high selectivity to oxide, with the process-window
 data. Used on steps 005 and 042.
 Also used on the dielectric and nitride plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **ROENIGK-1987** — K. F. Roenigk and K. F. Jensen, "Low Pressure CVD of
 Silicon Nitride", *Journal of The Electrochemical Society* **134**(7),
@@ -3932,6 +3939,7 @@ aspects of etching reactions", *Surface Science Reports* **14**(4–6),
 162–269 (1992). <https://doi.org/10.1016/0167-5729(92)90009-Z>
 Surface-science mechanisms of fluorine-based etching. Used on step 042
 and the etch category page. Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **WRIGHT-1990** — P. J. Wright and K. C. Saraswat, "Thickness
 limitations of SiO₂ gate dielectrics for MOS ULSI", *IEEE Transactions
@@ -3995,6 +4003,7 @@ monograph on poly, oxide and metal etch chemistries and endpoint. Used
 on steps 036 and 042 and the etch category page.
 Also used on the silicon and polysilicon plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 #### Patents
 
@@ -4608,6 +4617,7 @@ analysis of HBr/Cl₂/O₂ gate-etch sidewalls under resist and oxide masks.
 Used on the etch category page.
 Also used on the silicon and polysilicon plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **COBURN-1979B** — J. W. Coburn and H. F. Winters, "Plasma etching — A
 discussion of mechanisms", *Journal of Vacuum Science and Technology*
@@ -4623,6 +4633,7 @@ etch category page.
 Also used on the silicon and polysilicon plasma etcher, dielectric and
 nitride plasma etcher and metal plasma etcher pages.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **GOTTSCHO-1992** — R. A. Gottscho, C. W. Jurgensen and D. J. Vitkavage,
 "Microscopic uniformity in plasma etching", *Journal of Vacuum Science &
@@ -4692,6 +4703,7 @@ Profile evolution during Cl₂/HBr/O₂ high-density poly gate etching. Used
 on the etch category page.
 Also used on the silicon and polysilicon plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 ##### Patents
 
@@ -6425,6 +6437,7 @@ CF₄/O₂/N₂. Used on steps 077, 079 and 108.
 Also used on the dielectric and nitride plasma etcher and downstream
 plasma asher pages.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **KRIEGER-1989** — G. Krieger, G. Spadini, P. Cuevas and J. Schuur,
 "Shadowing effects due to tilted arsenic source/drain implant", *IEEE
@@ -7087,6 +7100,7 @@ fluorocarbon plasmas and a comparison with the SiO₂-to-Si mechanism",
 mechanism. Used on steps 094, 104 and 108.
 Also used on the dielectric and nitride plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **STESMANS-1996** — A. Stesmans, "Passivation of P_b0 and P_b1 interface
 defects in thermal (100) Si/SiO₂ with molecular hydrogen", *Applied
@@ -7478,6 +7492,7 @@ etch rates and selectivity in a high-density C₂F₆ plasma. Used on steps
 108, 119, 130 and 145.
 Also used on the dielectric and nitride plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **SHIOYA-1987** — Y. Shioya, T. Ikegami, M. Maeda and K. Yanagida,
 "High-temperature stress measurement on chemical-vapor-deposited
@@ -7577,6 +7592,7 @@ Technology and Metrology*, ASTM STP 990, ASTM International, 1989, pp.
 alloys in BCl₃/Cl₂. Used on step 114.
 Also used on the metal plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **CHENG-2002** — M. Cheng and A. R. Neureuther, "Effects of residual
 aberrations on line-end shortening in 193-nm lithography", *Proc. SPIE*
@@ -8335,6 +8351,7 @@ ion etching of TiW in CF₄/O₂, CF₄/Cl₂ and CF₄/HCl. Used on steps 114,
 125, 136, 138 and 140.
 Also used on the metal plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **MAHNKOPF-1999** — R. Mahnkopf, K.-H. Allers, M. Armacost, A. Augustin
 et al., "'System on a chip' technology platform for 0.18 μm digital,
@@ -8415,6 +8432,7 @@ A selective plasma etch of MiM top electrodes that removes no more than
 100 Å of the dielectric. Used on step 138.
 Also used on the metal plasma etcher page.
 Tier: cross-check.
+Also used on the etch and chamber-clean gases material page.
 
 **TURBAN-1989** — G. Turban, J. F. Coulon and N. Mutsukura, "A
 mechanistic study of SF₆ reactive ion etching of tungsten", *Thin Solid
@@ -8506,6 +8524,7 @@ interconnect etch with N₂ additions in a TCP etcher. Used on steps 155,
 162 and 163.
 Also used on the metal plasma etcher page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **TAGUCHI-1998** — M. Taguchi, K. Maeda and J. Aoyama, "Improvement of
 filling capability by control of water outgassing from via holes in
@@ -10204,6 +10223,7 @@ Also used on the hardware consumables material page.
 and its hazard ("highly corrosive and, if inhaled, can cause lung
 damage"). Used on the silicon and polysilicon plasma etcher page. Tier:
 high-level.
+Also used on the etch and chamber-clean gases material page.
 
 **WIKI-NF3** — Wikipedia, *Nitrogen trifluoride*.
 <https://en.wikipedia.org/wiki/Nitrogen_trifluoride> NF₃ broken down in
@@ -10212,6 +10232,7 @@ oxide, and its use to clean PECVD chambers. Used on the silicon and
 polysilicon plasma etcher page. Tier: high-level.
 Also used on the PECVD, HDP-CVD and tungsten CVD pages.
 Also used on the hardware consumables material page.
+Also used on the etch and chamber-clean gases material page.
 
 **ALLWIN-RAINBOW-4500** — Allwin21, *Lam Rainbow 45XX Plasma Etcher*,
 reseller product description, accessed 2026-09-13.
@@ -10240,6 +10261,7 @@ Technology A* **16**(4), 2047–2056 (1998).
 afterglow of NF₃ and NF₃/O₂ microwave discharges; O₂ injection enhances
 the nitride rate, attributed to NO at the surface. Used on the
 dielectric and nitride plasma etcher page. Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **BLANC-2013** — R. Blanc, F. Leverd, T. David and O. Joubert,
 "Patterning of silicon nitride for CMOS gate spacer technology. I.
@@ -10254,11 +10276,13 @@ nitride plasma etcher page. Tier: deep dive.
 <https://en.wikipedia.org/wiki/Fluoroform> CHF₃ and its use in plasma
 etching of silicon oxide and nitride. Used on the dielectric and nitride
 plasma etcher page. Tier: high-level.
+Also used on the etch and chamber-clean gases material page.
 
 **WIKI-C2F6** — Wikipedia, *Hexafluoroethane*.
 <https://en.wikipedia.org/wiki/Hexafluoroethane> C₂F₆ as an etchant and
 its global warming potential of 9200. Used on the dielectric and nitride
 plasma etcher page. Tier: high-level.
+Also used on the etch and chamber-clean gases material page.
 
 **CHRISTIE-1994** — R. Christie, S. Burns, V. S. Grewal and B. Spuler,
 "Sub 0.5 μm TCP metal etching in the ASTC", *Proceedings of 1994
@@ -10310,6 +10334,7 @@ cross-check (vendor statement).
 <https://en.wikipedia.org/wiki/Boron_trichloride> BCl₃ in semiconductor
 plasma etching, where it etches metal oxides through volatile
 oxychlorides. Used on the metal plasma etcher page. Tier: high-level.
+Also used on the etch and chamber-clean gases material page.
 
 **SEMISTAR-IRIDIA** — SemiStar Corp., *Novellus Gasonics PEP Iridia DL
 Plasma Asher*, used-equipment listing, accessed 2026-09-13.
@@ -10462,6 +10487,7 @@ The Producer "Since its introduction in 1998", and the Producer SE with
 one to three chambers, twin wafer handling and "a new low-flow remote
 clean that reduces gas costs by up to 40 percent". Used on the PECVD
 page. Tier: cross-check (vendor statement).
+Also used on the etch and chamber-clean gases material page.
 
 **AMAT-PECVD-TEOS-2002** — Applied Materials, *Producer PECVD TEOS
 Oxide*, product page; Wayback Machine capture of 2002-07-01.
@@ -10561,6 +10587,7 @@ chamber cleaning plasmas", *Journal of Vacuum Science & Technology B*
 measurements of NF₃/Ar, CF₄/O₂/Ar and C₂F₆/O₂/Ar chamber-clean plasmas in
 a 13.56 MHz capacitive reactor, and the discharge impedance at which power
 is absorbed most efficiently. Used on the PECVD page. Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **ALLGOOD-2003** — C. Allgood, M. Mocella, H. Chae and H. Sawin,
 "Evaluation of Octafluorocyclobutane as a Chamber Clean Gas in a
@@ -13732,6 +13759,7 @@ fluorinated GHGs 2141, NF₃ 1441.36, N₂O 185.058, HFEs 82.1; PFCs were
 101763.7 in 2011. The tables do not give individual gases, processes or
 tools. Used on the process gases material page. Tier: cross-check
 (regulatory filing data).
+Also used on the etch and chamber-clean gases material page.
 
 **EPA-GHGRP-SUBPART-I** — U.S. Environmental Protection Agency,
 *Electronics Manufacturing: Subpart I, Greenhouse Gas Reporting
@@ -13747,6 +13775,7 @@ CVD and other production processes" and "Controlled emissions of GHGs
 from abatement systems, if applicable"; per-fab reporting by process
 type. Used on the process gases material page. Tier: cross-check
 (regulatory guidance).
+Also used on the etch and chamber-clean gases material page.
 
 **NIOSH-HCL** — National Institute for Occupational Safety and Health,
 *NIOSH Pocket Guide to Chemical Hazards: Hydrogen chloride*, CDC; read
@@ -13795,6 +13824,7 @@ low-volume electronics applications"; on-site fluorine generators as a
 replacement for NF₃, ClF₃ and SF₆ in chamber cleaning. Does not name
 SkyWater. Used on the process gases material page. Tier: cross-check
 (vendor statement).
+Also used on the etch and chamber-clean gases material page.
 
 **KRIEGLER-1972** — R. J. Kriegler, Y. C. Cheng and D. R. Colton, "The
 Effect of HCl and Cl₂ on the Thermal Oxidation of Silicon", *Journal of
@@ -13848,6 +13878,7 @@ damage and copper enrichment contribute; a thermal oxidation restores the
 protective oxide. Label ↔ key note: the key carries a suffix because
 LEE-1981 is another source. Used on the process gases material page.
 Tier: deep dive.
+Also used on the etch and chamber-clean gases material page.
 
 **OHMI-1993** — T. Ohmi, "ULSI reliability through ultraclean
 processing", *Proceedings of the IEEE* **81**(5), 716–729 (1993).
@@ -14136,6 +14167,126 @@ material page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Diborane> "a highly toxic, colorless, and
 pyrophoric gas"; investigated "for the p-doping of silicon
 semiconductors". Used on the precursors material page. Tier: high-level.
+
+#### Etch and chamber-clean gases (first cited there)
+
+**SEMI-C3-40** — SEMI, *SEMI C3.40 — Specification for Carbon
+Tetrafluoride (CF4), 99.997% Quality*, SEMI Standards store listing
+(revision C3.40-1011 (Reapproved 0218)), accessed 2026-09-13.
+<https://store-us.semi.org/products/c00340-semi-c3-40-specification-for-carbon-tetrafluoride-cf4-99-997-quality>
+"specification for carbon tetrafluoride (CF4) that is used in the
+semiconductor industry"; "originally published in 1989". Used on the etch
+and chamber-clean gases material page. Tier: cross-check (standard).
+
+**SEMI-C3-24** — SEMI, *SEMI C3.24 — Specification for Sulfur
+Hexafluoride (SF6) in Cylinders, 99.97% Quality*, SEMI Standards store
+listing (revision C3.24-0414 (Reapproved 0319)E), accessed 2026-09-13.
+<https://store-us.semi.org/products/c00324-semi-c3-24-specification-for-sulfur-hexafluoride-sf6-in-cylinders-99-97-quality>
+"specifications for sulfur hexafluoride (SF6) that is used in the
+semiconductor industry". Used on the etch and chamber-clean gases material
+page. Tier: cross-check (standard).
+
+**NIOSH-CL2** — National Institute for Occupational Safety and Health,
+*NIOSH Pocket Guide to Chemical Hazards: Chlorine*, CDC; read from the
+Wayback Machine capture of 2025-11-30.
+<https://www.cdc.gov/niosh/npg/npgd0115.html>
+<https://web.archive.org/web/20251130134447/https://www.cdc.gov/niosh/npg/npgd0115.html>
+IDLH "10 ppm"; NIOSH REL "C 0.5 ppm (1.45 mg/m3) [15-minute]"; OSHA PEL
+"C 1 ppm (3 mg/m3)"; "Greenish-yellow gas with a pungent, irritating
+odor. [Note: Shipped as a liquefied compressed gas.]"; incompatibilities
+include hydrogen, ammonia and finely divided metals. Used on the etch and
+chamber-clean gases material page. Tier: cross-check (safety data).
+
+**NIOSH-HBR** — National Institute for Occupational Safety and Health,
+*NIOSH Pocket Guide to Chemical Hazards: Hydrogen bromide*, CDC; read from
+the Wayback Machine capture of 2025-11-30.
+<https://www.cdc.gov/niosh/npg/npgd0331.html>
+<https://web.archive.org/web/20251130093033/https://www.cdc.gov/niosh/npg/npgd0331.html>
+IDLH "30 ppm"; NIOSH REL "C 3 ppm (10 mg/m3)"; "Colorless gas with a
+sharp, irritating odor. [Note: Shipped as a liquefied compressed gas.]".
+Used on the etch and chamber-clean gases material page. Tier: cross-check
+(safety data).
+
+**NIOSH-NF3** — National Institute for Occupational Safety and Health,
+*NIOSH Pocket Guide to Chemical Hazards: Nitrogen trifluoride*, CDC; read
+from the Wayback Machine capture of 2025-11-30.
+<https://www.cdc.gov/niosh/npg/npgd0455.html>
+<https://web.archive.org/web/20251130135138/https://www.cdc.gov/niosh/npg/npgd0455.html>
+IDLH "1000 ppm"; NIOSH REL and OSHA PEL "TWA 10 ppm (29 mg/m3)";
+"Colorless gas with a moldy odor. [Note: Shipped as a nonliquefied
+compressed gas.]". Used on the etch and chamber-clean gases material page.
+Tier: cross-check (safety data).
+
+**EPA-GHGRP-FGAS** — U.S. Environmental Protection Agency, *Fluorinated
+Greenhouse Gas Emissions and Supplies Reported to the GHGRP*, web page,
+accessed 2026-09-13.
+<https://www.epa.gov/ghgreporting/fluorinated-greenhouse-gas-emissions-and-supplies-reported-ghgrp>
+"The five main types of fluorinated GHGs are hydrofluorocarbons (HFCs),
+perfluorocarbons (PFCs), sulfur hexafluoride (SF6), nitrogen trifluoride
+(NF3), and other fully fluorinated greenhouse gases"; electronics
+manufacturers above the threshold must report; emissions are given in
+metric tons of CO₂ equivalent ("about 7.6 million metric tons of carbon
+dioxide equivalent (MMT CO2e)" for the non-production emitters in 2023).
+Used on the etch and chamber-clean gases material page. Tier: cross-check
+(regulatory data).
+
+**CHAN-2004** — E. M. Chan, G. Loh and C. C. Allgood, "Process
+Optimization and PFC Emission Reduction Using a c-C₄F₈ Chamber Cleaning
+Process on a Novellus Concept 1 Dielectric PECVD Tool", *IEEE
+Transactions on Semiconductor Manufacturing* **17**(4), 497–503 (2004).
+<https://doi.org/10.1109/TSM.2004.835712> A production comparison in a
+150 mm fab of an optimised C₂F₆ clean with c-C₄F₈ cleans on a TEOS PECVD
+tool; the C₄F₈ recipes lowered gas use and PFC emissions. Used on the etch
+and chamber-clean gases material page. Tier: deep dive.
+
+**SELAMOGLU-1991** — N. Selamoglu, C. N. Bredbenner, T. A. Giniecki and
+H. J. Stocker, "Tapered etching of aluminum with CHF₃/Cl₂/BCl₃ and its
+impact on step coverage of plasma-deposited silicon oxide from
+tetraethoxysilane", *Journal of Vacuum Science & Technology B* **9**(5),
+2530–2535 (1991). <https://doi.org/10.1116/1.585687> Sidewall polymer from
+CHF₃ tapers aluminium lines; taper grows with CHF₃ flow and falls with
+Cl₂ flow, improving TEOS oxide step coverage. Used on the etch and
+chamber-clean gases material page. Tier: deep dive.
+
+**RIDGEWAY-1995** — R. G. Ridgeway, "Determination of emissions and
+evaluation of abatement equipment for selected semiconductor processes",
+*Proceedings of SEMI Advanced Semiconductor Manufacturing Conference and
+Workshop* (1995), p. 89. <https://doi.org/10.1109/ASMC.1995.484346>
+Summary of real-time analytical methods for unconsumed process gases,
+by-products (HAPs and PFCs) and abatement effectiveness in production
+fabs. Used on the etch and chamber-clean gases material page. Tier: deep
+dive.
+
+**WIKI-CF4** — Wikipedia, *Carbon tetrafluoride*.
+<https://en.wikipedia.org/wiki/Carbon_tetrafluoride> Use "as a plasma
+etchant for silicon, silicon dioxide, and silicon nitride"; "an
+atmospheric lifetime of 50,000 years". Used on the etch and chamber-clean
+gases material page. Tier: high-level.
+
+**WIKI-SF6** — Wikipedia, *Sulfur hexafluoride*.
+<https://en.wikipedia.org/wiki/Sulfur_hexafluoride> Properties, uses
+including "a silicon etchant for semiconductor manufacturing", a GWP
+"23,500 times greater" than CO₂ and an atmospheric lifetime "of around
+3200 years". Used on the etch and chamber-clean gases material page.
+Tier: high-level.
+
+**WIKI-C4F8** — Wikipedia, *Octafluorocyclobutane*.
+<https://en.wikipedia.org/wiki/Octafluorocyclobutane> "serves mainly as a
+passivation layer material in etching processes". Used on the etch and
+chamber-clean gases material page. Tier: high-level.
+
+**WIKI-CH3F** — Wikipedia, *Fluoromethane*.
+<https://en.wikipedia.org/wiki/Fluoromethane> "a non-toxic, liquefiable,
+and flammable gas"; "used in semiconductor manufacturing processes as an
+etching gas in plasma etch reactors". Used on the etch and chamber-clean
+gases material page. Tier: high-level.
+
+**WIKI-PFC** — Wikipedia, *Perfluorocarbon*.
+<https://en.wikipedia.org/wiki/Perfluorocarbon> Properties of
+fluorocarbons and an extract of IPCC fifth assessment lifetimes and
+100-year GWPs (CF₄ 50,000 years and 6630; C₂F₆ 10,000 years and 11,100;
+c-C₄F₈ 3200 years and 9540). Used on the etch and chamber-clean gases
+material page. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
