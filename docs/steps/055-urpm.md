@@ -129,7 +129,8 @@ reading is used throughout these pages and is marked as an inference.
 * **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
   Strength: strong.
 * **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM.**[^skw-01]
-  Strength: strong.
+  Strength: strong for existence (SkyWater statement); use at this
+  mask is an inference.
 
 ## Resources required
 
