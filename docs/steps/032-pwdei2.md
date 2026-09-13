@@ -88,7 +88,7 @@ An industry-generic second drift-well implant for a 200 mm,
 * **Axcelis 8250** ("B11, BF2, As … 1e11 to 1e14, 0-60 deg
   tilt").[^skw-01] Strength: **strong** for the tool; assignment is an
   **inference**.
-* **Axcelis GSD** ("B11 … 10-3000kev").[^skw-01] Strength: strong for
+* **Axcelis GSD high-current/high-energy implanter** ("B11 … 10-3000kev").[^skw-01] Strength: strong for
   existence, weak for assignment.
 
 ## Resources required

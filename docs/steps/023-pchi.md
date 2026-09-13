@@ -101,8 +101,10 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
   1e11 to 1e14, 0-60 deg tilt".[^skw-01] Arsenic and the dose window
   match. Strength: **strong** for the tool; assignment is an
   **inference**.
-* **Axcelis GSD**[^skw-01] is capable but is the well/source-drain
-  workhorse. Strength: strong for existence, weak for assignment.
+* **Axcelis GSD implanters** — either GSD entry, "High current/energy"
+  or "Hi dose",[^skw-01] is capable, but these are the well and
+  source/drain workhorses; which entry would serve is not stated.
+  Strength: strong for existence, weak for assignment.
 
 ## Resources required
 

@@ -147,8 +147,10 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01] Arsenic and
   the dose range match a depletion implant. Strength: **strong** for
   the tool; **inference** for its assignment to `DEPI`.
-* **Axcelis GSD** ("B11, BF2, P, As")[^skw-01] if phosphorus were the
-  species. Strength: strong for existence; weak for assignment.
+* **Axcelis GSD implanters** — both GSD entries, "High current/energy"
+  and "Hi dose", list "B11, BF2, P, As"[^skw-01] — if phosphorus were
+  the species; which entry would serve is not stated. Strength: strong
+  for existence; weak for assignment.
 
 ## Resources required
 

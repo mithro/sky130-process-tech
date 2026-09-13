@@ -131,8 +131,10 @@ fab (SKY130's values are not public):
   BF₂ at 10¹¹–10¹⁴ cm⁻² is exactly this implant's envelope. Strength:
   **strong** for the tool; **inference** for its assignment to
   `NCHI`.
-* **Axcelis GSD** ("B11, BF2, P, As")[^skw-01] as the alternative.
-  Strength: strong for existence; weak for assignment.
+* **Axcelis GSD implanters** — both GSD entries, "High current/energy"
+  and "Hi dose", list "B11, BF2, P, As"[^skw-01] — as the alternative;
+  which entry would serve is not stated. Strength: strong for existence;
+  weak for assignment.
 
 ## Resources required
 
