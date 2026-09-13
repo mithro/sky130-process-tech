@@ -99,6 +99,17 @@ process-steps sheet's "Masks" tab lists the same 36 steps and also
 step 82, {ref}`PSDI <step-082>`, which the step list names as an
 implant ({ref}`masks-mpw-runs`).[^steps-sheet]
 
+Per-mask pages bring together, for one mask, its PDK entry and layers,
+its plates, its renders, the lithography it needs, the steps that use it
+and its design rules; where a page exists, the acronym in the table's
+second column links to it.
+
+```{toctree}
+:maxdepth: 1
+
+dnm
+```
+
 In the table:
 
 * **PDK mask** gives the `Mask` and `Acronym` fields of `masks.csv`
@@ -120,7 +131,7 @@ In the table:
 | Step | PDK mask (`masks.csv`) | Mask-level layers (`gds_layers.csv`) | Drawn layers (`gds_layers.csv`) | Patterns | Minimum CD, feature / space |
 |------|------------------------|--------------------------------------|---------------------------------|----------|-----------------------------|
 | {ref}`FOM <step-004>` | Field Oxide, FOM — `X` | `cfom` mask 23:0; `cfom` drawing 22:20, mask add 22:21, mask drop 22:22, waffle drop 22:24; `fom` dummy 22:23 | `diff` 65:20 and `tap` 65:44 *(inference)* | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>` | `FOMCD` 0.14 / `FOMCDSP` 0.27 |
-| {ref}`DNM <step-007>` | Deep N-Well, DNM — `X` | `cdnm` mask 48:0 | `dnwell` 64:18 | {ref}`DNI <step-008>`; strip {ref}`DNIS <step-009>` | `DNMCD` 3 / `DNMCDSP` 6.3 |
+| {ref}`DNM <step-007>` | Deep N-Well, {ref}`DNM <mask-dnm>` — `X` | `cdnm` mask 48:0 | `dnwell` 64:18 | {ref}`DNI <step-008>`; strip {ref}`DNIS <step-009>` | `DNMCD` 3 / `DNMCDSP` 6.3 |
 | {ref}`LVTNM <step-014>` | Low Vt Nch\*, LVTNM — `X` | `clvtnm` mask 25:0; drawing 25:44, mask add 25:43, mask drop 25:42 | `lvtn` 125:44 | {ref}`LVTNI <step-015>`; strip {ref}`LVTNIS <step-016>` | `LVTNMCD` 0.38 / `LVTNMCDSP` 0.38 |
 | {ref}`NWM <step-017>` | N-Well\*, NWM — `X` | `cnwm` mask 21:0 | `nwell` 64:20 | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`; strip {ref}`LVTPIS <step-021>` | `NWMCD` 0.84 / `NWMCDSP` 1.27 |
 | {ref}`HVTPM <step-022>` | High Vt PCh\*, HVTPM — `X` | `chvtpm` mask 97:0; drawing 88:44, mask add 97:43, mask drop 97:42 | `hvtp` 78:44 | {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`; strip {ref}`PCHIS <step-025>` | `HVTPMCD` 0.38 / `HVTPMCDSP` 0.38 |

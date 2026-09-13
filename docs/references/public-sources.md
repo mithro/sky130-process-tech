@@ -23,12 +23,12 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1665
+written page has exactly one entry here; the inventory holds 1671
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
-8.20 were added to cover the sources the writers of the step, category,
-overview, machine and material pages introduced; a
+8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
+8.20 and 8.21 were added to cover the sources the writers of the step,
+category, overview, machine, material and mask pages introduced; a
 "Label ↔ key" note marks the few cases where one source has two keys.
 
 :::{note}
@@ -74,6 +74,7 @@ scanner and coat/develop track pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the substrates material page.
+Also used on the DNM mask page.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -111,6 +112,7 @@ NWM, HVTPM, LVTNM, HVTRM, NTM, HVNTM, LDNTM, PSDM, NSDM, TUNM, ONOM,
 LVOM, RPM, NPCM, P1M, LICM1, LI1M, CTM1, MM1–MM5, VIM, VIM2–VIM4, NSM,
 PDM, CU1M, PMM2, …). This is the public basis for the mask index and
 for the order of the lithography steps. Tier: cross-check.
+Also used on the DNM mask page.
 
 **PDK-06** — *Layers Reference* and `gds_layers.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
@@ -118,6 +120,7 @@ for the order of the lithography steps. Tier: cross-check.
 GDS layer/purpose numbers and the process meaning of each drawn layer
 (e.g. `vhvi` "used to identify nodes that operate at 12V nominal (16V
 max)"). No thicknesses. Tier: cross-check.
+Also used on the DNM mask page.
 
 **PDK-07** — *Device Details* pages and per-device cross-section drawings.
 <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>;
@@ -137,6 +140,7 @@ etcher pages.
 Also used on the PECVD and PVD cluster tool pages.
 Tier: cross-check.
 Also used on the sputter targets material page.
+Also used on the DNM mask page.
 
 **PDK-08** — *Parasitic Layout Extraction* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
@@ -187,6 +191,7 @@ dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
 (enclosure rules between deep N-well and N-well); poly.2 (spacing of
 poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
 Tier: cross-check.
+Also used on the DNM mask page.
 
 **PDK-HV** — *High Voltage Methodology* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>.
@@ -382,6 +387,7 @@ Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
 or scanner pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
+Also used on the DNM mask page.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -411,6 +417,7 @@ the same wording as the notes in the process-steps sheet's "Run Mask
 IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
 on the mask index, the HVTPM step page and the sky130B ReRAM overview.
 Tier: cross-check.
+Also used on the DNM mask page.
 
 ## 3. SkyWater Technology corporate sources
 
@@ -506,6 +513,7 @@ Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
 Also used on the etch and chamber-clean gases material page.
+Also used on the DNM mask page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -1272,6 +1280,7 @@ Also used on the sputter targets material page.
 Also used on the anneal ambients material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
+Also used on the DNM mask page.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
 Process Integration*, Lattice Press, 1990, ISBN 978-0-9616721-4-0.
@@ -1360,6 +1369,7 @@ Al versus Cu, dielectric k, via/metal dimensions by node. Tier: deep dive.
 Exposure tools and wavelengths (i-line, 248 nm, 193 nm) by node.
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
+Also used on the DNM mask page.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
@@ -1711,6 +1721,7 @@ and the implant category page, and on the medium-current, high-current
 and high-energy implanter pages. Tier: high-level.
 Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
+Also used on the DNM mask page.
 
 **WIKI-KEITHLEY** — Wikipedia, *Keithley Instruments*.
 <https://en.wikipedia.org/wiki/Keithley_Instruments> Company article on
@@ -1744,6 +1755,7 @@ Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
 Tier: high-level.
 Also used on the lithography materials material page.
+Also used on the DNM mask page.
 
 **WIKI-LOCOS** — Wikipedia, *LOCOS*.
 <https://en.wikipedia.org/wiki/LOCOS> LOCOS isolation, the predecessor
@@ -1754,6 +1766,7 @@ of STI. Used on the oxidation category page. Tier: high-level.
 absorber and pellicles. Used on the lithography category page. Tier:
 high-level.
 Also used on the lithography materials material page.
+Also used on the DNM mask page.
 
 **WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
 <https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
@@ -2111,6 +2124,7 @@ Also used on the HDP-CVD page.
 Transistor Performance for Systems-on-a-Chip Integration"*, ESSDERC
 2002, pp. 251–254, DOI 10.1109/ESSDERC.2002.194917. Deep N-well as a
 substrate-noise isolation structure. Tier: deep dive.
+Also used on the DNM mask page.
 
 **YANG-2005** — M. T. Yang, D. C. W. Kuo, C. W. Kuo, Y. J. Wang,
 P. P. C. Ho, T. J. Yeh and S. Liu, *"Characterization and model of
@@ -2159,6 +2173,7 @@ about 1.6 MeV" and a dose of "about 5×10¹² ions/cm² to about
 1.5×10¹³ ions/cm²", performed after the STI field oxide is formed.
 Also used on the high-energy implanter page.
 Tier: deep dive.
+Also used on the DNM mask page.
 
 ### 8.6 Vendor, facility and marketplace pages for representative tools
 
@@ -2400,6 +2415,7 @@ between 3.8 µm and 4.2 µm" for a 1.3–1.5 MeV phosphorus N-well and a
 600–800 keV boron P-well.
 Also used on the i-line stepper or scanner page.
 Tier: deep dive.
+Also used on the DNM mask page.
 
 **PAT-DEMOS-TI** — US 6,660,603 B2, *"Higher voltage drain extended
 MOS transistors with self-aligned channel and drain extensions"*,
@@ -2532,6 +2548,7 @@ employing high-energy ion implantation"*, IEEE Transactions on Electron
 Devices, vol. 33, no. 4, pp. 450–457, 1986, DOI 10.1109/T-ED.1986.22511.
 The original twin-well CMOS process built entirely with high-energy
 implants. Tier: deep dive.
+Also used on the DNM mask page.
 
 **STOLMEIJER-1989** — A. Stolmeijer, M. Pitt, H. den Blanken, P. van
 der Plas and R. de Werdt, *"Profile engineering for sub-micron CMOS
@@ -2548,6 +2565,7 @@ for ULSI: retrograde wells, buried layers, masking and damage
 annealing.
 Also used on the high-energy implanter page.
 Tier: deep dive.
+Also used on the DNM mask page.
 
 **BOURDELLE-2002** — K. K. Bourdelle, S. Chaudhry and J. Chu, *"The
 effect of triple well implant dose on performance of NMOS
@@ -2689,12 +2707,14 @@ thick-resist imaging.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
+Also used on the DNM mask page.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
 Overlay budgets and non-critical-layer tool choice.
 Also used on the i-line stepper or scanner page.
 Tier: deep dive.
+Also used on the DNM mask page.
 
 **ROCHE-1985** — D. Roche, J. F. Michaud and M. Bruel, *"Outgassing of
 Photoresist During Ion Implantation"*, MRS Proceedings, vol. 45, 1985,
@@ -2710,6 +2730,7 @@ resists during MeV implantation.
 Also used on the high-energy implanter page, and on the downstream
 plasma asher page.
 Tier: deep dive.
+Also used on the DNM mask page.
 
 **HORSKY-1998** — T. N. Horsky, *"Photoresist outgassing in high energy
 and high current ion implantation"*, 1998 International Conference on
@@ -3393,6 +3414,7 @@ Instruments and Methods in Physics Research B* **268**(11–12), 1818–1823
 (2010). <https://doi.org/10.1016/j.nimb.2010.02.091> SRIM, the tool used
 to compute the ion range in resist that sets the mask thickness. Used on
 step 007 and the implant category page. Tier: deep dive.
+Also used on the DNM mask page.
 
 **ZULEHNER-1983** — W. Zulehner, "Czochralski growth of silicon",
 *Journal of Crystal Growth* **65**(1–3), 189–213 (1983).
@@ -10911,6 +10933,7 @@ single-machine overlay ≤ 40 nm and ≤ 80 nm matched to another /275,
 illuminator with conventional and annular modes, and phase-modulated
 TTL alignment. Used on the i-line stepper or scanner page. Tier:
 cross-check (vendor statement).
+Also used on the DNM mask page.
 
 **ASML-PAS5500-450F** — ASML, *PAS 5500/450F i-Line Step-and-Scan*,
 refurbished systems data sheet, 2019.
@@ -14300,6 +14323,77 @@ fluorocarbons and an extract of IPCC fifth assessment lifetimes and
 c-C₄F₈ 3200 years and 9540). Used on the etch and chamber-clean gases
 material page. Tier: high-level.
 Also used on the dielectric and nitride plasma etcher page.
+
+### 8.21 Mask page sources
+
+Sources introduced for the per-mask pages under `docs/masks/` that had
+no entry above. Each label on those pages is the key below in lower case
+and the citation is the one given in the page footnote; the entries are
+grouped by the mask page that first cited the source, and sources
+already listed above record their use on a mask page in an "Also used
+on" line of their own. None of these sources mentions SkyWater, SKY130
+or the Bloomington fab; they describe masks, mask making, lithography,
+implantation and well engineering in general. Every URL was fetched on
+2026-09-13: papers and books were checked through Crossref
+(bibliographic data) and OpenAlex (abstracts or tables of contents), and
+their annotations rest on those. An entry's tier records its first use.
+
+#### DNM mask page (first cited there)
+
+**WONG-1998** — A. K. K. Wong, R. A. Ferguson, L. W. Liebmann,
+S. M. Mansfield, A. F. Molless and M. O. Neisser, "Lithographic effects
+of mask critical dimension error", *Proc. SPIE* **3334**, 106 (1998).
+<https://doi.org/10.1117/12.310718> Quantifies the mask error factor
+(MEF) for lines and holes on chrome-on-glass, attenuated and alternating
+phase-shift masks; the abstract: the MEF "is unity for large features,
+but increases rapidly when the critical dimension (CD) is less than 0.5
+(lambda) /NA for line-space patterns and 0.75 (lambda) /NA for
+contacts", dark-field spaces are more sensitive than light-field lines,
+and attenuated PSMs behave like chrome-on-glass masks. Used on the DNM
+mask page. Tier: deep dive.
+
+**RIZVI-2005** — S. Rizvi (ed.), *Handbook of Photomask Manufacturing
+Technology*, CRC Press, 2005, ISBN 978-1-4200-2878-2.
+<https://doi.org/10.1201/9781420028782> A reference volume whose
+chapters cover mask data preparation, e-beam and laser mask writers,
+conventional and advanced optical masks, mask substrates, resists and
+processing, pellicles, metrology, inspection and repair. Used on the DNM
+mask page. Tier: deep dive.
+
+**BUERGER-1999** — B. Buerger, U. Baetz, K.-D. Kunze and H. Wolf,
+"Hierarchical mask data preparation and special fracturing techniques
+in MGS", *Proc. SPIE* **3665**, 135 (1999).
+<https://doi.org/10.1117/12.346217> A layout post-processor with a
+fracturing engine for e-beam mask writers, and the two data-preparation
+tasks it addresses: processing large, dense layouts and improving mask
+quality by optimised fracturing. Used on the DNM mask page. Tier: deep
+dive.
+
+**HONG-1999** — S.-P. Hong, H.-S. Chun, J.-J. Kim, M.-G. Kang and
+H.-S. Oh, "Fabrication of 0.22 μm triple well CMOS devices by using high
+energy ion implantation", *Proc. IEEE Region 10 Conference (TENCON 99)*,
+vol. 2, pp. 1106–1108 (1999).
+<https://doi.org/10.1109/TENCON.1999.818617> A 0.22 µm triple-well CMOS
+process with deep wells implanted at 1.5–2 MeV and an RTA; the triple
+well gave better leakage, breakdown and latch-up immunity than a twin
+well. Used on the DNM mask page. Tier: deep dive.
+
+**VOLDMAN-2007** — S. H. Voldman, "CMOS Latchup Process Features and
+Solutions – Dual-Well and Triple-Well CMOS", chapter 5 of *Latchup*,
+Wiley, 2007, pp. 257–299, ISBN 978-0-470-01642-8.
+<https://doi.org/10.1002/9780470516171.ch5> A book chapter on process
+solutions to latch-up, with sections on n-wells, p-wells, isolation,
+triple wells and high-dose buried layers. Used on the DNM mask page.
+Tier: deep dive.
+
+**ROSS-1996** — M. F. Ross, W. R. Livesay, V. Starov, K. Ostrowski and
+S. Y. Wong, "Photoresist stabilization for ion implant processing",
+*Proc. SPIE* **2724**, 632 (1996).
+<https://doi.org/10.1117/12.241862> Flood electron-beam stabilisation
+of three i-line resists for implant masking, which reduced post-implant
+shrinkage and CD variation, improved thermal stability and eliminated
+popping during resist removal. Used on the DNM mask page. Tier: deep
+dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
