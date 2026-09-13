@@ -452,7 +452,8 @@ stepper or scanner" and the polisher as "Rotary multi-platen CMP
 polisher". One pair of names is kept on purpose: the oxide contact, via
 and seal-ring etches name a "Dielectric etcher" (Exelan- or MxP-class
 tools), while the nitride etches ({ref}`STINITE <step-005>`,
-{ref}`SPE <step-077>`, {ref}`NPCME <step-079>`) and the pad etch
+{ref}`ONOME <step-042>`, {ref}`SPE <step-077>`,
+{ref}`NPCME <step-079>`) and the pad etch
 ({ref}`PDME <step-169>`) name a "Dielectric/nitride plasma etcher",
 because their representative models include the Lam TCP 9400
 poly/nitride class.
