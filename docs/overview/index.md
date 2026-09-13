@@ -688,8 +688,9 @@ public.
   bottoms is itself an inference from the PDK's sheet
   resistances ({ref}`CSIL <step-098>`).
 * **Metal-stack composition.** Cypress reports for S8 at the same fab
-  describe a Ti/Al–Cu/TiW stack and its 2014 change "from Ti/AlCu/TiW
-  to Ti/TiN/AlCu/Ti/TiN";[^cyp-qtp-113005][^cyp-qtp-123907] which
+  describe a Ti/Al–Cu/TiW stack and a change "from Ti/AlCu/TiW to
+  Ti/TiN/AlCu/Ti/TiN" qualified in 2013–2014, for S8P "excluding top
+  metal layers";[^cyp-qtp-113005][^cyp-qtp-123907] which
   stack SKY130 lots receive is not public, and no public source gives
   the films of metal 4 or metal 5 ({ref}`TIAL6 <step-112>`,
   {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>`).
@@ -719,9 +720,9 @@ public.
   ({ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>`,
   {ref}`CAPILD2 <step-150>`).
 * **Passivation thickness.** The stack diagram gives 0.09 µm of TOPOX
-  and 0.54 µm of TOPNIT;[^pdk-04] Cypress reports for other processes at
-  the same fab give "1000A TEOS/9000A Si3N4" and "7000 +/- 2000A
-  Nitride".[^cyp-qtp-123907][^cyp-qtp-113005] Which applies to SKY130 is
+  and 0.54 µm of TOPNIT;[^pdk-04] Cypress reports for two S8 variants at
+  the same fab give "1000A TEOS/9000A Si3N4" (S8DI) and "7000 +/- 2000A
+  Nitride" (S8TNV-5R).[^cyp-qtp-123907][^cyp-qtp-113005] Which applies to SKY130 is
   not public, and with it the thickness the pad etch must clear
   ({ref}`NTSD <step-167>`, {ref}`PDME <step-169>`); how deep the
   nitride-seal opening goes is not public either
@@ -981,7 +982,9 @@ public.
     Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8
     Technology, Fab 4 CMI*, document 001-91369 Rev. **, March 2014
     (copy hosted by Tokyo Electron Device as the attachment to
-    Cypress Product Information Notification PIN145273, 2014-03-13).
+    Cypress Product Information Notification PIN145273, 2014-03-13,
+    which states the report is attached and available from
+    cypress.com; <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
     <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
 [^wiki-thox]: Wikipedia, *Thermal oxidation*.
     <https://en.wikipedia.org/wiki/Thermal_oxidation>
