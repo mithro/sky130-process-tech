@@ -128,12 +128,12 @@ W/WN".[^skw-01]
 
 ## Machines typically used
 
-* **High-density silicon etcher**, 200 mm single wafer: Applied
+* **{ref}`High-density silicon etcher <machine-plasma-etcher-silicon>`**, 200 mm single wafer: Applied
   Materials Centura DPS / DPS II (decoupled plasma source), Lam {term}`TCP` 9400
   series (transformer-coupled plasma[^snf-9400]), TEL DRM/Unity,
   Hitachi M-series microwave ECR etchers.
-* **Downstream plasma asher** (microwave or RF O₂ plasma).
-* **Wet bench** for post-etch polymer removal.
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** (microwave or RF O₂ plasma).
+* **{ref}`Wet bench <machine-wet-bench>`** for post-etch polymer removal.
 * **Cross-section SEM / CD-SEM** for depth and CD.
 
 ## Machines likely used at SkyWater

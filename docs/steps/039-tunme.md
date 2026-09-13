@@ -137,11 +137,11 @@ fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Automated wet bench** with dilute-HF/BOE, SPM, SC-1 and SC-2
+* **{ref}`Automated wet bench <machine-wet-bench>`** with dilute-HF/BOE, SPM, SC-1 and SC-2
   tanks and a rinser/dryer (Akrion, DNS/SCREEN, SCP), or a **spray
   processor** (FSI Mercury), or a **single-wafer wet tool** (SEZ/Lam
   Da Vinci) ({ref}`category-etch`, {ref}`category-strip`).
-* **Downstream plasma asher** for the strip (GaSonics, Mattson, Axcelis/Fusion).
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** for the strip (GaSonics, Mattson, Axcelis/Fusion).
 * **Ellipsometer** on monitor wafers for etch-rate control; **particle
   scanner** after the clean.
 

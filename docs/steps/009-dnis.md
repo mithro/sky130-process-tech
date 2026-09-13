@@ -91,9 +91,9 @@ fab:
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm single-wafer: GaSonics (Novellus)
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`**, 200 mm single-wafer: GaSonics (Novellus)
   Aura/PEP series, Mattson Aspen, Axcelis/Fusion ES series, PSK.
-* **Batch wet bench** with SPM, SC-1 and SC-2 tanks and a rinser/dryer;
+* **{ref}`Batch wet bench <machine-wet-bench>`** with SPM, SC-1 and SC-2 tanks and a rinser/dryer;
   or a single-wafer spray tool.
 * **Defect inspection** (patterned-wafer optical inspection).
 

@@ -122,7 +122,7 @@ width because of the encroachment under the nitride edge.
   SVG/Thermco–ASML–Aviza AVP/RVP, Kokusai, TEL Alpha-8, ASM A400.
   Some fabs use a {ref}`single-wafer <machine-rapid-thermal-processor>` {term}`RTP` tool for in-situ-steam liner
   oxidation instead.
-* **Wet bench** for the pre-oxidation clean and HF dip.
+* **{ref}`Wet bench <machine-wet-bench>`** for the pre-oxidation clean and HF dip.
 * **Ellipsometer**, **cross-section SEM**.
 
 ## Machines likely used at SkyWater

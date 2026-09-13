@@ -93,10 +93,10 @@ crust stage cannot be hurried.
 
 ## Machines typically used
 
-* **Downstream plasma asher** with a two-step, forming-gas-capable
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** with a two-step, forming-gas-capable
   recipe: GaSonics Aura/PEP, Mattson Aspen, Axcelis/Fusion ES, PSK
   (category page).
-* **Batch wet bench** (SPM, SC-1, SC-2) or **spray processor**.
+* **{ref}`Batch wet bench <machine-wet-bench>`** (SPM, SC-1, SC-2) or **spray processor**.
 * **Surface scanner / patterned inspection**.
 
 ## Machines likely used at SkyWater

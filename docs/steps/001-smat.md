@@ -134,7 +134,7 @@ typically:
   200 mm-era standard.
 * **Wafer laser marker / scribe** for identification.
 * **Wafer sorter** for lot assembly and slot mapping.
-* **Batch wet bench** for the {term}`RCA clean`.
+* **{ref}`Batch wet bench <machine-wet-bench>`** for the {term}`RCA clean`.
 
 ## Machines likely used at SkyWater
 

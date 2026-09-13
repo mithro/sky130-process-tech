@@ -87,9 +87,9 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Machines typically used
 
-* **Downstream plasma asher** (GaSonics Aura/PEP, Mattson Aspen,
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** (GaSonics Aura/PEP, Mattson Aspen,
   Axcelis/Fusion ES, PSK).
-* **Batch wet bench** with SPM, SC-1, SC-2 and rinser/dryer, or a
+* **{ref}`Batch wet bench <machine-wet-bench>`** with SPM, SC-1, SC-2 and rinser/dryer, or a
   **spray/single-wafer processor** for the {term}`RCA clean`.
 * **Surface scanner** (KLA-Tencor Surfscan class).
 
