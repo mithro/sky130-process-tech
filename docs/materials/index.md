@@ -467,16 +467,20 @@ supplier statement. The differences below remain.
 
 * **Different filings, different suppliers.** The step pages now say
   which filing names each supplier: the 2021 S-1 (Air Products, Praxair,
-  KMG Chemicals, Honeywell (also in the 10-K), Dow, JSR, Tokyo Ohka Kogyo and "Air Products
-  & Chemicals, Inc., Moses Lake (developer)") or the fiscal 2023 10-K
-  (Linde, Airgas, EMD Performance Materials, JX Metals, "CMC Chemicals,
-  Inc. (a subsidiary of Entegris)", four photoresist suppliers and
-  "Moses Lake Industries Inc. (developer)").[^sec-01][^sec-02] Pages
-  from {ref}`PSG <step-089>` onwards still cite the S-1 alone for gases,
-  the CMP pages name KMG Chemicals but not CMC Chemicals, and the
-  lithography pages name the S-1's three photoresist suppliers; these
-  are accurate for the filing cited, and neither filing ties a supplier
-  to a step.
+  KMG Chemicals, Honeywell (also in the 10-K), Dow, JSR, Tokyo Ohka
+  Kogyo and "Air Products & Chemicals, Inc., Moses Lake (developer)") or
+  the fiscal 2023 10-K (Linde, Airgas, EMD Performance Materials, JX
+  Metals, "CMC Chemicals, Inc. (a subsidiary of Entegris)", four
+  photoresist suppliers and "Moses Lake Industries Inc.
+  (developer)").[^sec-01][^sec-02] The pages from {ref}`PSG <step-089>`
+  to {ref}`NILD2 <step-105>` other than {ref}`WDEP <step-099>` still
+  cite the 2021 S-1 alone for gases, while the gas pages before and
+  after them and the five tungsten fills name both filings; the CMP
+  pages name KMG Chemicals but not CMC Chemicals; the lithography pages
+  name the 2021 S-1's three photoresist suppliers; and the sputter-target
+  pages name Honeywell and JX Metals from both filings. These are
+  accurate for the filing cited, and neither filing ties a supplier to a
+  step.
 
 ### Spellings against SkyWater's page
 
