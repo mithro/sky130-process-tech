@@ -173,7 +173,8 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
   **dilute HF**, for the post-CMP clean; **PVA brushes**.
 * **Monitor wafers** with blanket PSG and nitride for rate and
   selectivity checks.[^semi-m8]
-* Chemical suppliers named by SkyWater: KMG Chemicals.[^sec-01]
+* Chemical suppliers named in SkyWater's 2021 S-1: KMG
+  Chemicals.[^sec-01]
 
 ## Related steps and cross-references
 

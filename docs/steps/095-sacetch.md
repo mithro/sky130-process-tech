@@ -181,7 +181,8 @@ fab (SKY130's recipe is not public):
 * **O₂, N₂, H₂/N₂** for the strip;[^skw-01] **SPM** (H₂SO₄/H₂O₂)
   if a wet strip is used.[^wiki-piranha]
 * **Etch-rate monitor wafers** with thermal oxide.[^semi-m8]
-* Chemical suppliers named by SkyWater: KMG Chemicals.[^sec-01]
+* Chemical suppliers named in SkyWater's 2021 S-1: KMG
+  Chemicals.[^sec-01]
 
 ## Related steps and cross-references
 

@@ -184,7 +184,8 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 * **Chamber consumables** — silicon or quartz rings, liners,
   electrodes; **monitor wafers** with blanket oxide and nitride for
   rate and selectivity checks.[^semi-m8]
-* Gas suppliers named by SkyWater: Air Products, Praxair.[^sec-01]
+* Gas suppliers named in SkyWater's 2021 S-1: Air Products,
+  Praxair.[^sec-01]
 
 ## Related steps and cross-references
 

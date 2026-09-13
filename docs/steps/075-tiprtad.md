@@ -162,8 +162,8 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
   pyrometer calibration and thermocouple wafers (category page).
 * **Cooling water and CDA/N₂** for lamp and chamber cooling.[^ag-8108]
 * **Monitor wafers** for sheet resistance.
-* Gas suppliers named by SkyWater: Air Products, Praxair, Linde,
-  Airgas.[^sec-01][^sec-02]
+* Gas suppliers named in SkyWater's filings: Air Products and Praxair
+  (2021 S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 
