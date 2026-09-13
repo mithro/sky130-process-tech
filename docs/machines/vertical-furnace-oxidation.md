@@ -80,8 +80,9 @@ growth.[^morita-1990] If the boat then enters a hot tube through room
 air, a further uncontrolled oxide grows during loading, underneath the
 oxide the recipe intends. Furnaces of the 1990s therefore enclosed the
 loading area. TEL's transfer chamber below the furnace circulates
-filtered gas and "can be in the form of a load-lock chamber, and the gas
-streams are nitrogen gas streams";[^pat-vf-transfer-tel] a Kokusai
+filtered gas, and "it is possible that the transfer chamber 3 is in the
+form of a load-lock chamber, and the gas streams are nitrogen gas
+streams";[^pat-vf-transfer-tel] a Kokusai
 design replaces the load-lock atmosphere with inert gas "with oxygen
 concentration less than 1 ppm" and can instead meter oxygen back in to
 grow a native oxide of "1-2 atomic layers" before the wafers enter a
@@ -133,13 +134,15 @@ as the soak. Multi-zone heater control, fast ramping and repeatable
 loading are what make that history the same for every wafer position and
 every run.
 
-The anneal and cool-down ambient also matters. Razouk and Deal found
-that oxides "annealed and cooled from any oxidation temperature in
-nitrogen or argon exhibit large interface state densities as oxidized",
-but that "after a low temperature hydrogen anneal these densities are
-lower than those of comparable oxygen-cooled oxides".[^razouk-1979] An
-oxidation recipe therefore normally ends with an in-tube inert anneal,
-and the interface is finished much later by the hydrogen alloy
+The anneal and cool-down ambient also matters. An oxidation recipe
+commonly ends with a short in-tube inert anneal, which a fab uses to
+lower the fixed oxide charge (typical practice; category
+page).[^txt-01] Razouk and Deal found the price of that step: oxides
+"annealed and cooled from any oxidation temperature in nitrogen or
+argon exhibit large interface state densities as oxidized", but "after
+a low temperature hydrogen anneal these densities are lower than those
+of comparable oxygen-cooled oxides".[^razouk-1979] The interface is
+therefore finished much later by the hydrogen alloy
 ({ref}`machine-vertical-furnace-anneal`).
 
 ## Representative 200 mm-era models
@@ -203,8 +206,12 @@ standard HF/SC1/SC2 rotational",[^skw-01] which the oxidation step pages
 name for their pre-cleans ({ref}`category-strip`).
 
 Aviza Technology was established in October 2003,[^aviza-company] and a
-year later its news page announced "TETREON TECHNOLOGIES ACQUIRES THERMCO
-HORIZONTAL FURNACES FROM AVIZA TECHNOLOGY".[^aviza-news] "Made by Aviza"
+year later it sold the manufacturing rights, intellectual property and
+inventory of its "'Thermco' Horizontal Furnace (HTR) product line" to
+Tetreon Technologies; the release describes those furnaces as
+"originally marketed under the 'Thermco' name and later produced by
+Silicon Valley Group and ASML", with "an estimated installed base of
+over 8,000 processing tubes".[^tetreon-htr-2004] "Made by Aviza"
 therefore describes the vendor as SkyWater names it now; whether any of
 the furnaces were built under the earlier SVG or Thermco names, and
 whether any is horizontal, is not stated.
@@ -218,8 +225,9 @@ to every listed tool are under
 {ref}`Reading the SkyWater evidence <machines-reading-evidence>`. For
 this class the weak points are the model and configuration: that the
 oxidation tubes are vertical AVP/RVP-class furnaces is inferred from the
-vendor's product line, and a used-equipment listing is the only public
-description of that line's 200 mm model.[^aviza-avp] Nothing public
+vendor's product line, which Aviza's own 2005 page describes in one
+short paragraph[^aviza-vert] and a used-equipment listing in slightly
+more detail (batch size and processes).[^aviza-avp] Nothing public
 says how many oxidation tubes there are or which oxide runs in which
 tube.
 
@@ -308,9 +316,12 @@ and thicknesses are not public.
   operations",[^pat-03] and SkyWater lists "LPCVD oxide/nitride/oxide"
   among its furnace processes.[^skw-01] The page therefore spans this
   class and the {ref}`LPCVD class <machine-vertical-furnace-lpcvd>`.
-* **Furnace or rapid thermal oxidation.** Five of the six pages offer a
-  single-wafer rapid thermal oxidation as the alternative and grade the
-  SkyWater Heatpulse for it as weak.[^skw-01] In-situ steam generation,
+* **Furnace or rapid thermal oxidation.** Five of the six pages offer
+  single-wafer rapid thermal oxidation — as an equal option for
+  {ref}`LVGOX <step-047>` and {ref}`IOX45 <step-063>` and as the
+  alternative for {ref}`LINOX <step-010>`, {ref}`ONO <step-040>` and
+  {ref}`GOX100 <step-043>` — and grade the SkyWater Heatpulse for it as
+  weak.[^skw-01] In-situ steam generation,
   the single-wafer counterpart of wet oxidation, reacts hydrogen and
   oxygen in the chamber (category page);[^txt-09][^yu-1999] the Heatpulse
   entry lists "NH3, Ar, N2, O2" and no
@@ -352,8 +363,9 @@ and thicknesses are not public.
   and Thermco origin.[^aviza-company]
 * Aviza Technology, *Vertical Processors* page (2005) — the AVP/RVP
   150/200 mm furnaces.[^aviza-vert]
-* Aviza Technology, news index (2005) — the 2004 sale of the Thermco
-  horizontal furnace line.[^aviza-news]
+* Tetreon Technologies, press release on Aviza's site (2004) — the sale
+  of the Thermco horizontal furnace line and its installed
+  base.[^tetreon-htr-2004]
 * Moov, *Aviza / SVG / Thermco AVP 8000* listing — the vendor's 200 mm
   vertical furnace and its batch size.[^aviza-avp]
 * Expertech, *VTR7000PLUS Thermal Reactor* — the SVG-designed vertical
@@ -496,9 +508,11 @@ and thicknesses are not public.
     <https://web.archive.org/web/20051124224446/http://www.avizatechnology.com/company/index.htm>
 [^asm-vf]: ASM International, *Vertical furnace*, product page, accessed
     2026-09-13. <https://www.asm.com/our-technology-products/vertical-furnace>
-[^aviza-news]: Aviza Technology, *News* (index of press releases and
-    events), web page, 2005; Wayback Machine capture of 2005-12-04.
-    <https://web.archive.org/web/20051204025122/http://www.avizatechnology.com/news/index.htm>
+[^tetreon-htr-2004]: Tetreon Technologies (release hosted by Aviza
+    Technology), *Tetreon Technologies Acquires Thermco Horizontal
+    Furnaces from Aviza Technology*, Business Wire, 2004-11-08; Wayback
+    Machine capture of 2005-03-09.
+    <https://web.archive.org/web/20050309110126/http://www.avizatechnology.com:80/news/pressrel/110804.htm>
 [^pat-03]: W. Koutny et al. (Cypress Semiconductor), *Integration of
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.
