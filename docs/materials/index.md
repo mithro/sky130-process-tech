@@ -591,13 +591,14 @@ decide between them, and the step pages are unchanged.
 * **No materials for many tools.** None of the sources cited here
   names the co-reactant or diluent gases of the CVD tools, the gases of
   the metal etchers or sputtering tools, or the furnace gases beyond
-  what the process names imply ("LPCVD nitride, with NH3 and also DH3", "Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and
-  forming gas alloy"), nor any slurry, pad, BARC or resist product or a
-  developer concentration. The implanter entries give species ("B11,
-  BF2, P, As") but not whether they come from gas or solid sources, and none
-  names indium.[^skw-01]
-* **Which materials SKY130 uses.** None of the public SkyWater sources
-  ties a gas, chemical, target or resist to a step, and the capability
+  what the process names imply ("LPCVD nitride, with NH3 and also
+  DH3", "Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and forming gas
+  alloy"), nor any slurry, pad, BARC or resist product or a developer
+  concentration. The implanter entries give species ("B11, BF2, P, As")
+  but not whether they come from gas or solid sources, and none names
+  indium.[^skw-01]
+* **Which materials SKY130 uses.** None of the SkyWater sources cited
+  here ties a gas, chemical, target or resist to a step, and the capability
   list covers other processes at the fab, including copper, niobium and
   193 nm lithography.[^skw-01] Every *Steps* entry above therefore
   follows the step pages' readings, and every row marked *typical (not
