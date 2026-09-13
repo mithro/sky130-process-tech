@@ -93,9 +93,11 @@ of it is one page.
   America, Inc. (photoresist)" and "Air Products & Chemicals, Inc.,
   Moses Lake (developer)" — and the step pages cite it for wafers,
   targets and resist.[^sec-01] Neither the S-1 nor the 2023 annual
-  report names a process-tool vendor as a supplier; the only
-  equipment-company name in the S-1 appears in a director's
-  biography.[^sec-01][^sec-02] The annual report records one change to
+  report names a process-tool vendor as a supplier;[^sec-01][^sec-02]
+  the semiconductor-equipment company names in the S-1 (Axcelis
+  Technologies, "a semiconductor capital equipment company"; Rudolph
+  Technologies, Nanometrics and Onto Innovation) appear only in executive
+  and director biographies.[^sec-01] The annual report records one change to
   the tool set: "In 2020, we added deep-trench etching
   capability".[^sec-02]
 
