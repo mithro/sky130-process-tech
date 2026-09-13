@@ -134,7 +134,7 @@ an aluminium top metal (SKY130's recipe is not public):
   nitride-capable etchers,[^snf-9400][^lam-10k] Lam Exelan dielectric
   etchers,[^lam-exelan] Applied Materials and TEL equivalents
   ({ref}`category-etch`).
-* **Downstream asher**; **solvent wet bench**.
+* **Downstream plasma asher**; **solvent wet bench**.
 * **Automated pad inspection**, **TOF-SIMS / XPS** for surface
   analysis, **wire-bond pull tester** on monitors.
 

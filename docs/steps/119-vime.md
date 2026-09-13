@@ -160,7 +160,7 @@ recipe is not public); the shared physics is set out at
   Applied Materials eMax / MxP+ / Super-e, TEL DRM / Unity
   ({ref}`category-etch`); high-density alternatives (AMAT IPS, Lam
   TCP 9100).
-* **Resist asher** (GaSonics Aura, Mattson Aspen) and **wet bench or
+* **Downstream plasma asher** (GaSonics Aura, Mattson Aspen) and **wet bench or
   single-wafer clean** for post-etch residue.
 * **CD-SEM**, **cross-section SEM**, **e-test** for via chains.
 
