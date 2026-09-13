@@ -158,7 +158,7 @@ below are typical or taken from contemporaneous patents.
 * **Ion-source consumables** (filaments or cathodes, arc-chamber liners,
   extraction electrodes).
 * **Wafer-cooling** water and backside gas; **monitor wafers**.
-* SkyWater's filings name Air Products, Praxair, Linde and Airgas among
+* SkyWater's filings name Air Products and Praxair (2021 S-1) and Linde and Airgas (fiscal 2023 10-K) among
   its gas suppliers without tying them to a step.[^sec-01][^sec-02]
 
 ## Related steps and cross-references

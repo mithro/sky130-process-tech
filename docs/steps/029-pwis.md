@@ -107,8 +107,8 @@ An industry-generic heavy-implant-resist strip for a 200 mm,
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
   acid**.[^wiki-rca]
 * **DI water, isopropanol, nitrogen**.
-* Chemical suppliers named by SkyWater: KMG Chemicals, EMD Performance
-  Materials.[^sec-01][^sec-02]
+* Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
+  S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 

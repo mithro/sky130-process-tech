@@ -162,8 +162,8 @@ An industry-generic well/channel activation anneal for a 200 mm,
 * **Cooling water and CDA/N₂** for lamp and chamber cooling (facility
   table for the Heatpulse 4100).[^ag-8108]
 * **Monitor wafers** (SEMI M8 class) for sheet resistance.
-* Gas suppliers named by SkyWater: Air Products, Praxair, Linde,
-  Airgas.[^sec-01][^sec-02]
+* Gas suppliers named in SkyWater's filings: Air Products and Praxair
+  (2021 S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 
