@@ -160,7 +160,7 @@ W/WN".[^skw-01]
 * **O₂ / N₂ / {term}`forming gas`** for the ash.
 * **{term}`SC-1`, H₂SO₄/H₂O₂ or dilute HF** ({ref}`wet chemicals <material-wet-chemicals>`) for the post-etch
   clean.[^wiki-rca]
-* Chamber consumables (ceramic liners, focus rings); monitor wafers
+* {ref}`Chamber consumables <material-hardware-consumables>` (ceramic liners, focus rings); {ref}`monitor wafers <material-substrates>`
   for depth calibration.
 
 ## Related steps and cross-references

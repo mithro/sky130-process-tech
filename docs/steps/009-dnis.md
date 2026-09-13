@@ -118,14 +118,14 @@ fab:
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the
+* **Oxygen, nitrogen, {term}`forming gas` ({ref}`H₂/N₂ <material-anneal-ambients>`)** for the
   ash;[^skw-01] **CF₄**, listed on the Iridia and Mattson ashers,[^skw-01]
   attacks the exposed trench silicon and pad oxide and would, we infer,
   be omitted here (category page).
 * **Sulphuric acid and hydrogen peroxide** (SPM; {ref}`wet chemicals <material-wet-chemicals>`).
 * **Ammonium hydroxide, hydrochloric acid, hydrogen peroxide**
   (SC-1/SC-2).[^wiki-rca]
-* **DI water**, **isopropanol** for drying.[^skw-01]
+* **{ref}`DI water <material-ultrapure-water>`**, **isopropanol** for drying.[^skw-01]
 * **Nitrogen** for drying/purge.
 
 ## Related steps and cross-references

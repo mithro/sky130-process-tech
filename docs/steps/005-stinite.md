@@ -118,7 +118,7 @@ Which of the three carries the isolation nitride etch is not public.
   gases.[^skw-01][^txt-02]
 * **Helium** for backside wafer cooling.
 * **Chamber-clean gases** (O₂, NF₃ or SF₆) between wafers or lots.
-* **Consumable chamber parts** — focus rings, liners, electrostatic-
+* **{ref}`Consumable chamber parts <material-hardware-consumables>`** — focus rings, liners, electrostatic-
   chuck surfaces.
 
 ## Related steps and cross-references

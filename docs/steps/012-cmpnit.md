@@ -132,16 +132,16 @@ polisher, which is what this step needs.
 
 ## Resources required
 
-* **Slurry** — silica-based or ceria-based STI
+* **{ref}`Slurry <material-cmp-consumables>`** — silica-based or ceria-based STI
   slurry.[^rev-02][^wiki-cmp]
 * **Polishing pads** (stacked polyurethane, IC1000/Suba IV class;
   category page) and **pad conditioners** (diamond discs).[^wiki-cmp]
-* **DI water** in large volumes; **dilute NH₄OH** (category page) or a
+* **{ref}`DI water <material-ultrapure-water>`** in large volumes; **dilute NH₄OH** (category page) or a
   **surfactant**, as the recipe outline above gives for this
   ceria-capable polish, possibly **dilute HF**, for the post-CMP clean;
   **PVA brushes**.
 * **Carrier-head consumables** — membranes, retaining rings.
-* **Slurry supply and waste treatment** — CMP is one of the largest
+* **Slurry supply and {ref}`waste treatment <material-hardware-consumables>`** — CMP is one of the largest
   water and waste-water consumers in the fab.[^txt-07]
 
 ## Related steps and cross-references
