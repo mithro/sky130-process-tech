@@ -190,10 +190,10 @@ end (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **High-density metal etcher**, 200 mm: Lam TCP 9600 / 2300
+* **{ref}`High-density metal etcher <machine-plasma-etcher-metal>`**, 200 mm: Lam TCP 9600 / 2300
   Versys,[^lam-10k] Applied Materials Centura DPS,[^pat-dps-amat]
   TEL Unity ({ref}`category-etch`).
-* **Downstream plasma asher**; **solvent wet bench**.
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`**; **{ref}`solvent wet bench <machine-wet-bench>`**.
 * **CD-SEM**, **ellipsometer**, **e-test** for capacitor structures.
 
 ## Machines likely used at SkyWater
