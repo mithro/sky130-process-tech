@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 88 of 171 |
+| **Step number** | 88 of 171[^steps-sheet] |
 | **Step code** | `RTAD` |
 | **Category** | {ref}`Anneal / thermal processing <category-anneal>` |
 | **Phase** | FEOL — extensions, spacers, source/drain |
@@ -468,3 +468,6 @@ An industry-generic source/drain activation anneal for a 200 mm,
 [^gibbons-1972]: J. F. Gibbons, "Ion implantation in semiconductors —
     Part II: Damage production and annealing", *Proceedings of the IEEE*
     **60**(9), 1062–1096 (1972). <https://doi.org/10.1109/PROC.1972.8854>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
