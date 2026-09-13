@@ -129,11 +129,11 @@ typically:
 
 * **Crystal pullers, wire saws, lapping/polishing lines** — at the
   wafer vendor, not in the fab.[^wiki-wafer][^txt-07]
-* **Unpatterned-wafer surface scanner** (laser light scattering) for
+* **{ref}`Unpatterned-wafer surface scanner <machine-starting-material>`** (laser light scattering) for
   incoming particle inspection; the KLA-Tencor Surfscan family was the
   200 mm-era standard.
-* **Wafer laser marker / scribe** for identification.
-* **Wafer sorter** for lot assembly and slot mapping.
+* **{ref}`Wafer laser marker / scribe <machine-starting-material>`** for identification.
+* **{ref}`Wafer sorter <machine-starting-material>`** for lot assembly and slot mapping.
 * **{ref}`Batch wet bench <machine-wet-bench>`** for the {term}`RCA clean`.
 
 ## Machines likely used at SkyWater

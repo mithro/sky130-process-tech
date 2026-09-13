@@ -150,10 +150,10 @@ recipe is not public):
 
 ## Machines typically used
 
-* **Rotary multi-platen CMP polisher**, 200 mm: Applied Materials
+* **{ref}`Rotary multi-platen CMP polisher <machine-cmp-polisher>`**, 200 mm: Applied Materials
   Mirra,[^pat-cmp-mirra][^chiphistory-mirra] Ebara EPO/F-REX,[^ebara-frex]
   SpeedFam-IPEC, Strasbaugh ({ref}`category-cmp`).
-* **Post-CMP brush scrubber** (OnTrak/Lam Synergy, SEZ/Lam Da Vinci).
+* **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam Synergy, SEZ/Lam Da Vinci).
 * **Thin-film thickness metrology** (reflectometer, ellipsometer),
   **patterned-wafer inspection**.
 
