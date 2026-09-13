@@ -5,10 +5,13 @@ Rules (see docs/plans/citation-style.md):
 
 * every ``[^label]`` reference has a definition and vice versa;
 * no reference-style link definitions (``[label]: url``) remain;
-* a written step page has at least 8 Deep dive entries, a category page
-  at least 12.
+* a written step page has at least 8 Deep dive entries, a category or
+  index page (machines, materials, masks, overview) at least 12;
+* every footnote label is a key in ``docs/references/public-sources.md``
+  (keys are written there in upper case, e.g. ``**PDK-05**``).
 
-Stub pages (containing "This page is a stub.") are skipped.  Exit status
+Stub pages (containing "This page is a stub." or "This section is a
+stub.") are skipped.  Exit status
 is non-zero on any violation.  Run with ``uv run tools/check_refs.py``.
 """
 
@@ -21,7 +24,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 
-STUB_MARKER = "This page is a stub."
+STUB_MARKERS = ("This page is a stub.", "This section is a stub.")
+INVENTORY = DOCS / "references" / "public-sources.md"
+KEY_RE = re.compile(r"^\*\*([A-Za-z0-9][A-Za-z0-9_-]*)\*\*", re.MULTILINE)
 REF_RE = re.compile(r"\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\](?!:)")
 DEF_RE = re.compile(r"^\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\]:", re.MULTILINE)
 LINKDEF_RE = re.compile(r"^\[(?!\^)[^\]]+\]:\s*\S", re.MULTILINE)
@@ -30,6 +35,10 @@ BULLET_RE = re.compile(r"^\* ", re.MULTILINE)
 TARGETS = [
     (DOCS / "steps", re.compile(r"^\d{3}-[a-z0-9-]+\.md$"), 8),
     (DOCS / "categories", re.compile(r"^(?!index)[a-z-]+\.md$"), 12),
+    (DOCS / "machines", re.compile(r"^[a-z0-9-]+\.md$"), 12),
+    (DOCS / "materials", re.compile(r"^[a-z0-9-]+\.md$"), 12),
+    (DOCS / "masks", re.compile(r"^[a-z0-9-]+\.md$"), 12),
+    (DOCS / "overview", re.compile(r"^[a-z0-9-]+\.md$"), 12),
 ]
 
 
@@ -40,7 +49,11 @@ def deep_dive_count(text: str) -> int:
     return len(BULLET_RE.findall(m.group(1)))
 
 
-def check(path: Path, min_deep: int) -> list[str]:
+def inventory_keys() -> set[str]:
+    return {k.lower() for k in KEY_RE.findall(INVENTORY.read_text())}
+
+
+def check(path: Path, min_deep: int, keys: set[str]) -> list[str]:
     text = path.read_text()
     problems: list[str] = []
     refs = set(REF_RE.findall(text))
@@ -55,6 +68,8 @@ def check(path: Path, min_deep: int) -> list[str]:
         problems.append(f"unreferenced footnotes: {sorted(defset - refs)}")
     if not refs:
         problems.append("no footnote citations")
+    if refs - keys:
+        problems.append(f"labels without inventory key: {sorted(refs - keys)}")
     if LINKDEF_RE.search(text):
         problems.append("reference-style link definitions present")
     n = deep_dive_count(text)
@@ -68,14 +83,18 @@ def check(path: Path, min_deep: int) -> list[str]:
 def main() -> int:
     bad = 0
     checked = 0
+    keys = inventory_keys()
     for directory, pattern, min_deep in TARGETS:
+        if not directory.is_dir():
+            continue
         for page in sorted(directory.iterdir()):
             if not pattern.match(page.name):
                 continue
-            if STUB_MARKER in page.read_text():
+            text = page.read_text()
+            if any(marker in text for marker in STUB_MARKERS):
                 continue
             checked += 1
-            problems = check(page, min_deep)
+            problems = check(page, min_deep, keys)
             if problems:
                 bad += 1
                 for p in problems:
