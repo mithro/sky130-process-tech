@@ -330,8 +330,10 @@ cards are not public.
   achieves.[^chen-2002-rtp][^ag-8800]
 * **Probing the e-test structures.** The public SKY130 test tile
   "consists of a grid of probe points",[^raw-data-testtile-prop] and the
-  open test-tile documentation shows its test interface with the image
-  caption "Probing Card";[^raw-data-testtile-open] the
+  replacement open test tile, a Google, NIST and University of Michigan
+  OpenFASoC design, documents its own test interface with an image whose
+  alternative text is "Probing Card";[^raw-data-testtile-open] neither
+  document describes SkyWater's production e-test probe cards. The
   {ref}`HPETEST <step-171>` page names probe cards laid out for the e-test
   modules. SkyWater lists no production prober.[^skw-01]
 
@@ -373,8 +375,10 @@ cards are not public.
   facilities.[^ag-8800][^ag-8108]
 * Lam Research, TCP 9600DFM release — consumables cost and time between
   cleans.[^lam-9600dfm-2001]
-* SkyWater PDK Authors, raw-data test tiles — probe points and the
-  probing card.[^raw-data-testtile-prop][^raw-data-testtile-open]
+* SkyWater PDK Authors, raw-data test tiles — the proprietary tile's
+  probe points and the open OpenFASoC tile's test-interface image, which
+  do not describe SkyWater's production probe
+  cards.[^raw-data-testtile-prop][^raw-data-testtile-open]
 
 ### High-level understanding
 
