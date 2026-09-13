@@ -8153,9 +8153,12 @@ structure with conductive etch-stop layer*, US 10,003,022 B2, filed
 2014-03-04, granted 2018-06-19.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10003022>
 A conductive etch-stop layer between the lower interconnect and the
-bottom electrode, a two-etch stack patterning with sidewall spacers and
-a conformal dielectric protection layer, to avoid a bottom-electrode via
-mask, CMP and copper etch by-products. Tier: deep dive.
+bottom electrode; a SiON anti-reflective layer on the top electrode; a
+top-electrode etch, SiN sidewall spacers, a second etch through the HfO₂
+and bottom electrode stopping on the etch-stop layer, and a third etch of
+that layer (Cl- or F-based dry etch, or wet); and an enveloping
+dielectric protection layer, reducing mask steps, CMP and copper etch
+by-products. Tier: deep dive.
 
 **PAT-RRAM-INTERMOLECULAR** — M. Lee, T. Chiang and D. Pramanik
 (Intermolecular, Inc.), *Methods of manufacturing embedded bipolar
