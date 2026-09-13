@@ -3,8 +3,9 @@
 
 Dopant sources are the materials that supply the boron, phosphorus and
 arsenic atoms an ion implanter puts into the wafer: boron trifluoride,
-phosphine and arsine gases, solid elements evaporated in a vaporiser
-oven, and the ion-source hardware those species wear out. Phosphine also
+phosphine and arsine gases, solid elements or compounds evaporated in a
+vaporiser oven, and the ion-source hardware those species wear out.
+Phosphine also
 supplies the phosphorus of doped glass. They are among the most
 dangerous materials in a fab, which shapes how they are packaged and
 delivered. This page
@@ -63,8 +64,10 @@ source parts.[^axcelis-gsd-page]
 "Phosphine is used as a dopant in the semiconductor industry", and "is a
 highly toxic respiratory poison, and is immediately dangerous to life or
 health at 50 ppm".[^wiki-ph3] It serves the phosphorus implants and,
-diluted, the doped oxide of an {term}`HDP-CVD` phosphosilicate glass,
-whose thermal behaviour Hsiao et al. studied.[^hsiao-2005] For
+diluted, is a usual phosphorus source for {term}`HDP-CVD`
+phosphosilicate glass (industry practice); Hsiao et al. studied the
+thermal behaviour of HDP PSG made from unnamed "phosphorous-related
+precursors".[^hsiao-2005] For
 atmospheric TEOS–ozone deposition, Fujino et al. used "organic doping
 sources, trimethylphosphate for PSG films".[^fujino-1991] Solid phosphorus in a
 vaporiser oven is the alternative to the gas ({ref}`category-implant`); the ATMI patent notes
@@ -142,7 +145,9 @@ issues.[^current-1996]
 ## Representative materials and grades
 
 Dopant gases are sold by specialty-gas suppliers in cylinders of a few
-litres, usually inside a gas box on the implanter; solid sources are
+litres, usually inside a gas box on the implanter (industry practice; the
+ATMI patent cites "0.44 L or 2.3 L cylinders"[^pat-sds-atmi]); solid
+sources are
 loaded into the vaporiser. SEMI specifies the gases, and suppliers sell
 them in proprietary packages. The statements below describe standards
 and supplier catalogues, not what SkyWater buys, even where the supplier
@@ -246,7 +251,7 @@ vent gas and helium platen cooling of the implants belong to the
 Materials index rows covered:
 
 * `ph3` — phosphine, solid phosphorus and TMPO
-* `bf3` — boron trifluoride and solid boron
+* `bf3` — boron trifluoride
 * `ash3` — arsine and solid arsenic
 * `indium` — indium solid source
 * `ion-source` — ion-source and beam-line consumables
@@ -259,8 +264,8 @@ These are the 25 steps the step pages read as implants, and the doped
 glass at {ref}`PSG <step-089>`. On the step pages' readings, boron trifluoride
 serves the p-well, threshold, halo, punch-through, resistor and P+
 source/drain implants; phosphine the deep N-well, N-well and poly
-implants and the PSG; arsine the tips, depletion implant and N+
-source/drain; and several threshold and channel pages
+implants and the PSG; arsine the tips and N+ source/drain; and several
+threshold and channel pages
 ({ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`,
 {ref}`PCHI <step-023>`, {ref}`DEPI <step-038>`) leave the species open.
 Indium is named only at {ref}`LVTNI <step-015>` and
