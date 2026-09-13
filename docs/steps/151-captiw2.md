@@ -17,15 +17,17 @@ blanket titanium–tungsten layer sputtered over the thin dielectric of
 {ref}`CAPILD2 <step-150>`, which lies on the unpatterned metal-4 stack
 of {ref}`WTIAL4 <step-149>`. For a few steps the wafer carries a
 complete metal–insulator–metal sandwich across its whole surface: the
-metal-4 conductor, the capacitor dielectric and this TiW. The
+metal-4 conductor, the capacitor dielectric and this plate film. The
 {ref}`CAP2M <step-152>` mask and {ref}`CAP2ME <step-153>` etch then
-leave the TiW only where the layout draws `cap2m`, "MiM capacitor plate
+leave the film only where the layout draws `cap2m`, "MiM capacitor plate
 over metal 4" (GDS 97:44),[^pdk-06] and {ref}`MM4 <step-154>` /
 {ref}`MM4E <step-155>` afterwards cut the metal beneath into bottom
-plates and the rest of the metal-4 wiring. This reference's step title
-names the film TiW, consistent with SkyWater's PVD film list ("TiW"[^skw-01]);
-the PDK itself calls the top plate only "a thin conductor layer on top
-of the dielectric".[^pdk-07] The step is the second-level repeat of
+plates and the rest of the metal-4 wiring. The PDK calls the top plate
+only "a thin conductor layer on top of the dielectric" and does not name
+its material;[^pdk-07] this reference describes it as sputtered TiW
+(inference: TiW is on SkyWater's PVD film list[^skw-01] and caps the
+aluminium stacks, and the PDK's sheet resistance fits about 0.1 µm of
+it, as set out below). The step is the second-level repeat of
 {ref}`CAPTIW1 <step-136>`.
 
 The PDK gives this plate a "MiM2 top plate sheet resistance" of
@@ -45,7 +47,7 @@ be buried in the via-4 dielectric of {ref}`NILD6 <step-156>`, 0.505 µm
 thick above metal 4 on the PDK's stack diagram against 0.39 µm for via 3
 above metal 3,[^pdk-04] and it will be contacted by a via-4 opening that
 the rules allow only as a 0.800 µm square (via4.1, via4.3)[^pdk-periph]
-— four times the width of a via 3 — which lands on the TiW as the
+— four times the width of a via 3 — which lands on the plate as the
 {ref}`VIM4E <step-160>` etch finishes. In the PDK's stacked
 cross-section the plate is joined upward to "M5 (plate 1)", the same
 node as "M3 (plate 1)".[^pdk-07]
@@ -67,7 +69,7 @@ stress and deposition energy matter because the layer beneath is thin
 ## Why this step exists
 
 * **A capacitor needs a second plate.** The dielectric alone is an
-  insulator on metal 4; the TiW makes it a capacitor. Because the top
+  insulator on metal 4; the plate makes it a capacitor. Because the top
   plate is deposited over the whole wafer and patterned by its own mask
   *before* the metal beneath is etched, the plate edge sits on a flat,
   continuous dielectric and the capacitance is set by the drawn `cap2m`
@@ -77,7 +79,7 @@ stress and deposition energy matter because the layer beneath is thin
   unpatterned interconnect metal;[^pat-mim-newportfab] Kar-Roy et al.
   and Babcock et al. describe PECVD-nitride MiMs in aluminium back
   ends.[^kar-roy-1999][^babcock-2001]
-* **Why TiW.** The plate must sputter at low temperature onto a
+* **Why TiW, on this reading.** The plate must sputter at low temperature onto a
   dielectric without reacting with it, etch with high {term}`selectivity`
   to that dielectric ({ref}`CAP2ME <step-153>`), survive the chlorine
   metal etch under resist and serve as the stop for the fluorocarbon via

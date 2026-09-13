@@ -16,9 +16,11 @@
 metal–insulator–metal (MiM) capacitor. Straight after the blanket
 metal-4 stack of {ref}`WTIAL4 <step-149>` is sputtered — and before that
 metal is patterned — a thin dielectric film is laid over the whole
-wafer by {term}`PECVD`; this reference's step title describes it as a
-silicon {term}`oxynitride`. A thin titanium–tungsten top-plate film
-follows at {ref}`CAPTIW2 <step-151>`; the two are cut into capacitor top
+wafer by {term}`PECVD`. This reference describes the film as a PECVD
+silicon {term}`oxynitride` (inference: SkyWater lists a PECVD
+oxynitride capability with a range of refractive indices,[^skw-01] and
+PECVD oxynitride is an established MiM dielectric[^ng-2003]); the PDK
+does not name the material. A thin top-plate film follows at {ref}`CAPTIW2 <step-151>`; the two are cut into capacitor top
 plates by the second capacitor mask and etch ({ref}`CAP2M <step-152>`,
 {ref}`CAP2ME <step-153>`), and only then is metal 4 patterned
 ({ref}`MM4 <step-154>`, {ref}`MM4E <step-155>`). The sequence repeats
@@ -147,8 +149,8 @@ difference in thickness or permittivity between this film and
   plate,[^wang-2004-mim] a concern for every plasma step between this
   deposition and the via that finally connects the plate.
 
-Without `CAPILD2` there would be nothing between metal 4 and the TiW of
-{ref}`CAPTIW2 <step-151>`, and the second capacitor mask would define a
+Without `CAPILD2` there would be nothing between metal 4 and the
+top-plate film of {ref}`CAPTIW2 <step-151>`, and the second capacitor mask would define a
 short rather than a capacitor.
 
 ## How it is typically performed

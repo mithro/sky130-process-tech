@@ -23,10 +23,9 @@ above metal 4 to its final thickness before the via-4 mask
 ({ref}`VIM4 <step-159>`) is printed. The finished number is public: the
 PDK's stack diagram labels the via-4 height 0.505 µm, between the top of
 the 0.845 µm `metal4` and the bottom of `metal5`.[^pdk-04] The cap's own
-thickness is not. Its suffix makes it the sixth "CAPOX"; it follows
-{ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>` (where the reasoning
-and the numbering gap are set out), {ref}`NCAPOX4 <step-128>` and
-{ref}`NCAPOX5 <step-143>`.
+thickness is not. The same cap is described at
+{ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`,
+{ref}`NCAPOX4 <step-128>` and {ref}`NCAPOX5 <step-143>`.
 
 The stack diagram offers no hint of the cap: beside "NILD6 K=4.0" it
 draws no "_C" film, as it does not at NILD5.[^pdk-04] What the cap
@@ -82,7 +81,7 @@ via-4 numbers:
   via holes.[^taguchi-1998]
 * **A known surface for lithography and for metal 5.** The
   {ref}`VIM4 <step-159>` resist is tuned to a reproducible oxide thickness
-  over reflective metal and TiW plates, since the swing-curve reflectivity
+  over reflective metal and capacitor plates, since the swing-curve reflectivity
   depends on it;[^brunner-1991] and, on our reading of the step order, the
   metal-5 underlayer is sputtered directly onto this oxide outside the
   vias (inference).
