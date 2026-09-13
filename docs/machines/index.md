@@ -211,8 +211,16 @@ Notes on the table:
 * **Classes with no named SkyWater tool.** The "typically used" sections
   name a post-CMP brush scrubber, a production wafer prober, a plasma
   nitridation chamber, film-thickness, stress and sheet-resistance
-  gauges and cross-section SEMs; apart from the Mirra's "On board
-  metrology", the capabilities page names none of these.[^skw-01] The
+  gauges, a single-wafer poly deposition chamber
+  ({ref}`SAGD <step-048>`), a horizontal alloy furnace
+  ({ref}`ALLY <step-170>`) and surface-analysis and bond-pull tools
+  ({ref}`PDME <step-169>`); the last three have no row above. Apart from
+  the Mirra's "On board metrology", the capabilities page names no tool
+  of these classes, and its "Furnaces are all made by Aviza" does not
+  say whether any furnace is horizontal.[^skw-01] It does list SEMs
+  under "Physical Analysis" ("FEI Dual Beam FIB/SEM", "Hitachi
+  S-4800"), but no step page assigns them the cross-sections that the
+  "typically used" sections call for.[^skw-01] The
   CMP pages record the missing brush scrubber as an open question, and
   the {ref}`HPETEST <step-171>` page notes that no production prober is
   named.
