@@ -697,6 +697,15 @@ mask-proximity effect
     keep matched devices the same distance from mask edges (see
     {ref}`step-081`).
 
+MiM capacitor
+    Metal–insulator–metal capacitor: two metal plates separated by a
+    thin deposited dielectric, built in the back end. Because its
+    plates have no depletion layer its capacitance changes little with
+    bias, and its series resistance is low. In SKY130 the bottom plate
+    is a metal level and the top plate a thin film patterned by the
+    `capm` or `cap2m` mask (see {ref}`step-135` to {ref}`step-138`).
+    Also "MIM capacitor".
+
 MOL
     Middle of line: the contact and local-interconnect steps that bridge
     FEOL and BEOL.
@@ -758,12 +767,14 @@ overlay
     layer, measured on dedicated box-in-box or grating targets.
 
 oxide bias
-    A parameter of the PDK's *Criteria & Assumptions* table ("Oxide Bias
-    for MM1") listed with the pattern-density limits for the oxide
-    polishes. The PDK does not define it; the pages of this reference
-    read it as a density-related allowance for the dielectric
-    {term}`CMP` over metal-1 rather than as a drawn-layer bias (see
-    {ref}`step-116`).
+    A parameter of the PDK's *Criteria & Assumptions* table, given per
+    metal level ("Oxide Bias for MM1" to "Oxide Bias for MM4": 0.6 for
+    metals 1 and 2, 1.15 for metals 3 and 4) and listed with the
+    pattern-density limits for the oxide polishes. The PDK does not
+    define it; the pages of this reference read it as a density-related
+    allowance for the dielectric {term}`CMP` over each metal level
+    rather than as a drawn-layer bias (see {ref}`step-116` and
+    {ref}`step-142`).
 
 oxynitride
     Silicon dioxide containing nitrogen, either grown in a
@@ -952,6 +963,13 @@ quad implant
     sides whatever its orientation on the wafer; the usual way to make
     {term}`halo` and {term}`LATID` implants symmetric. Also
     "quad-rotation" or "four-rotation" implant.
+
+quality factor
+    Q: for a capacitor or inductor, the ratio of the energy it stores
+    to the energy it dissipates per cycle, for a capacitor
+    {math}`1/(\omega R C)` with {math}`R` the series resistance. Plate
+    and contact resistance lower the Q of a {term}`MiM capacitor` at
+    radio frequencies.
 
 queue time
     The maximum time a wafer may wait between two steps, set by how
@@ -1255,6 +1273,13 @@ via poisoning
     hydrogen-rich oxides — are the usual cause; a dense
     {term}`cap oxide` and a {term}`degas` before deposition prevent it
     (see {ref}`step-117`).
+
+voltage coefficient
+    The relative change of a passive component's value with applied
+    voltage. For a capacitor it is written as
+    {math}`C(V) = C_0 (1 + \alpha V + \beta V^2)`, with the linear and
+    quadratic coefficients usually quoted in ppm/V and ppm/V²; a
+    {term}`MiM capacitor` is valued for keeping them small.
 
 Vt
     Threshold voltage: the gate voltage at which a MOSFET turns on; set
