@@ -488,11 +488,11 @@ state:
   {ref}`ASTIS <step-067>`, {ref}`PDIS <step-084>` and
   {ref}`NSDIS <step-087>` single out the Iridia's hydrogen chemistry and
   40 °C floor for the crust of a high-dose implant; the other implant
-  strips, after the pages' lighter implants, make no choice. {ref}`DNIS <step-009>` and
-  {ref}`LVTPIS <step-021>` describe a thick crust from MeV well implants
-  at modest dose and also make no choice; whether that crust calls for
-  the same reading is left open, since no public source ties a crust
-  thickness to these implants.
+  strips, after the pages' lighter implants, make no choice.
+  {ref}`DNIS <step-009>` and {ref}`LVTPIS <step-021>` describe a thick crust
+  from MeV well implants at modest dose and also make no choice; whether
+  that crust calls for the same reading is left open, since no public source
+  ties a crust thickness to these implants.
 * **Strength of the metrology listings.** Most mask pages grade the
   overlay and CD tools "strong", while {ref}`P1M <step-061>`,
   {ref}`NSM <step-165>` and {ref}`PDM <step-168>` write "strong for

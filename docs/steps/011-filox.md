@@ -143,8 +143,9 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
   that "allows more wafers to be processed between plasma
   cleans".[^lam-speed]
 * Chamber consumables — ceramic dome, gas ring, ESC.
-* SkyWater's filings name Air Products and Praxair (2021 S-1) and Linde and Airgas (fiscal 2023 10-K) as gas
-  suppliers[^sec-01][^sec-02] without tying them to a step.
+* SkyWater's filings name Air Products and Praxair (2021 S-1) and Linde and
+  Airgas (fiscal 2023 10-K) as gas suppliers[^sec-01][^sec-02] without tying
+  them to a step.
 
 ## Related steps and cross-references
 
