@@ -11,7 +11,13 @@ written, reviewed and audited to the same standard.
    talks, Wikipedia, reputable industry press.
 2. **Every fact needs a public source.** If a
    fact cannot be found publicly, either leave it out or state it as an
-   inference from public evidence with the reasoning shown.
+   inference from public evidence with the reasoning shown. Step codes and names are this reference's
+   labels: never use them as evidence about SkyWater's actual flow,
+   never call their meaning "not public" or "not explained publicly",
+   and never pair "X is not public" with "the step list shows Y".
+   Write "the step list used in this reference does not explain X; we
+   read …" and base readings on public sources (PDK, filings,
+   qualification reports).
 3. **Numbers need a public citation.** Every thickness, temperature,
    dose, energy, pressure or time carries a citation to a public source
    or is explicitly marked as a typical industry value with a textbook
