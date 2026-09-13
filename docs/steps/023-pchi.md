@@ -194,7 +194,9 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
   channel.[^pat-vt-rrr]
 * Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
   boron at 1e12–1e13 cm⁻² and 50–100 keV, chained {term}`punch-through`
-  barriers, a 900 °C furnace anneal.[^pat-vt-lsi]
+  barriers, and a well anneal "at approximately 900° C. in a neutral
+  ambient such as nitrogen for approximately 30 minutes" (the patent does
+  not name the tool).[^pat-vt-lsi]
 * Shahidi et al. (IBM), *IEEE EDL* 1993 — indium channel implants for
   steep retrograde NMOS channels.[^shahidi-1993]
 * Wei et al., DAC 1998 — the circuit-level case for a second threshold
