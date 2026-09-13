@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1246
+written page has exactly one entry here; the inventory holds 1257
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -10033,6 +10033,108 @@ dive.
 <https://en.wikipedia.org/wiki/Novellus_Systems> The CVD, PECVD and PVD
 equipment maker, its product lines and its acquisition by Lam Research,
 "completed in June 2012". Used on the PECVD page. Tier: high-level.
+
+**NOVELLUS-HDP-2001** — Novellus Systems, *Dielectric – HDP Solutions*,
+product page; Wayback Machine capture of 2001-12-02.
+<https://web.archive.org/web/20011202103556/http://www.novellus.com:80/products/hdp.asp>
+HDP-CVD "provides void-free gap fill of high-quality dielectric films in
+high aspect ratio device structures"; SPEED "captured the heart of the
+marketplace in 1996", with a "patented hemispherical source" of "a single
+excitation frequency and a single coil"; the SPEED/SEQUEL combining two
+SPEED chambers with one SEQUEL chamber; the 300 mm Concept Three SPEED
+with a "bi-polar electrostatic chuck". Used on the HDP-CVD page. Tier:
+cross-check (vendor statement).
+
+**AMAT-HDP-2001** — Applied Materials, *HDP-CVD* (Ultima HDP-CVD Centura
+and Ultima X), product page; Wayback Machine capture of 2001-08-17.
+<https://web.archive.org/web/20010817112354/http://www.appliedmaterials.com:80/products/hdp_cvd.html>
+The Ultima "can deposit both undoped and doped films for numerous
+processes including USG, FSG, PSG, SiN and low k films"; up to three
+Ultima chambers, or Ultima and PECVD chambers, on the Centura platform;
+the Ultima X "for both 200mm and 300mm advanced STI, IMD and PMD
+applications". Used on the HDP-CVD page. Tier: cross-check (vendor
+statement).
+
+**AMAT-HDP-PSG-2002** — Applied Materials, *Ultima HDP-CVD PSG*, product
+page; Wayback Machine capture of 2002-10-21.
+<https://web.archive.org/web/20021021022321/http://www.appliedmaterials.com:80/products/hdp_cvd_psg.html>
+An HDP PSG for 0.18 µm devices and below at the pre-metal dielectric
+level, whose films "provide ion-gettering properties as well as device
+isolation". Used on the HDP-CVD page. Tier: cross-check (vendor
+statement).
+
+**AMAT-HDP-IMD-2002** — Applied Materials, *Ultima HDP-CVD (USG) IMD*,
+product page; Wayback Machine capture of 2002-08-09.
+<https://web.archive.org/web/20020809163156/http://www.appliedmaterials.com:80/products/hdp_cvd_usg_imd.html>
+A "low-temperature USG" for IMD and passivation "with demonstrated gap
+fill down to 0.25 microns in 3:1 aspect ratio structures". Used on the
+HDP-CVD page. Tier: cross-check (vendor statement).
+
+**AMAT-HDP-STI-2002** — Applied Materials, *Ultima HDP-CVD (USG) STI*,
+product page; Wayback Machine capture of 2002-08-09.
+<https://web.archive.org/web/20020809163834/http://www.appliedmaterials.com:80/products/hdp_cvd_usg_sti.html>
+"high-temperature USG" for shallow trench isolation, with void-free fill
+"down to 0.12-micron, 4:1-aspect-ratio spaces for use in 0.18-micron
+device generations and beyond". Used on the HDP-CVD page. Tier:
+cross-check (vendor statement).
+
+**PAT-ICP-NOVELLUS** — J. C. Benzing, E. K. Broadbent and J. K. H. Rough
+(Novellus Systems), *Induction plasma source*, US 5,346,578 A, filed
+1992-11-04, granted 1994-09-13.
+<https://patents.google.com/patent/US5346578A/en> A "hemispherically
+shaped induction coil" around a quartz bell jar, driven at "about 450
+KHz" at "about 0.1-100 mTorr", with a high-frequency source that
+"independently adjusts the bias voltage on the wafer"; the description
+notes that with "careful substrate bias control" the source "is suitable
+for dielectric gap filling". Used on the HDP-CVD page. Tier: cross-check
+(patent).
+
+**PAT-HDP-REACTOR-AMAT** — F. C. Redeker, F. Moghadam, H. Hanawa, T.
+Ishikawa, D. Maydan, S. Li, B. Lue, R. J. Steger, M. Wong, Y. Wong and
+A. K. Sinha (Applied Materials), *Symmetric tunable inductively coupled
+HDP-CVD reactor*, US 6,170,428 B1, filed 1996-07-15, granted 2001-01-09.
+<https://patents.google.com/patent/US6170428B1/en> An HDP-CVD tool with
+simultaneous deposition and sputtering: dual RF zone inductive source,
+dual-zone gas distribution, temperature-controlled dome, turbomolecular
+pumping, "a dual helium cooling zone electrostatic chuck", ceramic and
+aluminium-alloy construction and a remote fluorine plasma clean. Used on
+the HDP-CVD page. Tier: cross-check (patent).
+
+**PAT-HDP-CLEAN-NOVELLUS** — M. D. Kilgore, W. G. M. van den Hoek, C. J.
+Rau, B. J. van Schravendijk, J. A. Tobin, T. W. Mountsier and J. C.
+Oswalt (Novellus Systems), *Chemical vapor deposition system including
+dedicated cleaning gas injection*, US 6,200,412 B1, filed 1996-02-16,
+granted 2001-03-13. <https://patents.google.com/patent/US6200412B1/en>
+A dedicated clean-gas injector in an HDP-CVD chamber with a hemispherical
+coil, and the fluorine residue that "must be removed for safety reasons
+and to insure that the film adheres". Used on the HDP-CVD page. Tier:
+deep dive (patent).
+
+**PAT-SEASONING-AMAT** — K. Rossman, T. Sahin, H. M'Saad and R. Nowak
+(Applied Materials), *Reduction of mobile ion and metal contamination in
+HDP-CVD chambers using chamber seasoning film depositions*, US 6,121,161
+A, filed 1999-01-19, granted 2000-09-19.
+<https://patents.google.com/patent/US6121161A/en> Sodium from the quartz
+dome and alumina nozzles of an HDP-CVD chamber, and a seasoning film
+deposited after each clean to hold it back. Used on the HDP-CVD page.
+Tier: deep dive (patent).
+
+**SCHWARTZ-1992** — G. C. Schwartz and P. Johns, "Gap-Fill with PECVD
+SiO₂ Using Deposition/Sputter Etch Cycles", *Journal of The
+Electrochemical Society* **139**(3), 927–932 (1992).
+<https://doi.org/10.1149/1.2069327> Gap fill between metal lines by
+cycles of PECVD oxide and argon sputter etching: a fast-etching region and
+then voids as the aspect ratio rises. Used on the HDP-CVD page. Tier:
+deep dive.
+
+**LEE-1998-STI** — S.-H. Lee, J.-H. Son, H.-D. Lee, W. Yang and Y.-J.
+Lee, "Shallow Trench Isolation Characteristics with High-Density-Plasma
+Chemical Vapor Deposition Gap-Fill Oxide for Deep-Submicron CMOS
+Technologies", *Japanese Journal of Applied Physics* **37**(3S), 1222
+(1998). <https://doi.org/10.1143/JJAP.37.1222> STI leakage and isolation
+with HDP-CVD fill at different deposition/sputter ratios and liner
+thicknesses, with "negligible sputter effect of HDP" on the trench
+sidewall. Used on the HDP-CVD page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
