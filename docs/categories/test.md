@@ -85,9 +85,9 @@ width, length and the source/drain extent (`sa`,
 the PDK.[^raw-data-readme] Its transistor and gate-capacitor files are
 current–voltage and capacitance–voltage sweeps whose headers give the
 biases, compliance and instrument channels but no temperature, date or
-wafer; {ref}`HPETEST <step-171>` sets thresholds and resistances we
+wafer; {ref}`HPETEST <step-171>` sets thresholds, currents and resistances we
 extracted from them beside the PDK's e-test
-nominals.[^raw-data-hv-mosfets]
+nominals.[^raw-data-hv-mosfets][^raw-data-lv-mosfets]
 
 ### Sheet resistance and van der Pauw
 
@@ -205,7 +205,7 @@ device.
 * Google's SKY130 raw-data repository — the README, the manufacturing
   test tile, its 273-module pad documentation and measured transistor
   and gate-capacitor files, and the open MPW-5 test
-  tile.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open][^raw-data-hv-mosfets]
+  tile.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open][^raw-data-hv-mosfets][^raw-data-lv-mosfets]
 
 ### High-level understanding
 
@@ -435,6 +435,14 @@ device.
     `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
     `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
     `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 1.8 V
+    transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_01v8`, `nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt`,
+    `pfet_01v8_lvt`), `google/skywater-pdk-sky130-raw-data`
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>

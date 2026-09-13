@@ -195,6 +195,41 @@ date, wafer or die, and the drain is swept to at most 5 V (10 V on the
 symmetric 16 V structures), so they do not bear on breakdown or the
 10.5–20 V ratings.[^raw-data-hv-mosfets]
 
+The files for the five 1.8 V transistor types include, in one module
+per type, the geometries of the PDK's e-test thresholds and currents
+(7/8, 7/0.15, 0.42/8 or 0.42/1 and 0.42/0.15 µm; 7/0.35 and 0.42/0.35 µm
+in place of the short devices for the low-Vt PMOS), all except the
+0.42/1 µm `nfet_01v8`.[^raw-data-lv-mosfets][^raw-data-testtile-pads][^pdk-07]
+By the same extrapolation at |V_DS| = 0.1 V, less half the drain bias,
+the 7/8 µm `nfet_01v8` gives 0.534 V against the VTXNL nominal of
+0.541 V and the 7/0.15 µm device 0.707 V against the VTXNS15 nominal
+of 0.700 V. Of the 19 e-test thresholds matched in these modules, 16 of
+the 18 with a usable printed nominal lie within 0.03 V of it; the
+exceptions are two low-Vt PMOS values, 0.668 V against 0.630 V at
+0.42/8 µm and 0.636 V against 0.533 V at 7/0.35 µm, where a second
+7/0.35 µm structure in another module gives 0.536 V. All 18 with usable
+printed limits lie inside them (our extraction from the published
+measurements).[^raw-data-lv-mosfets][^pdk-07] Two entries of the
+PDK's `pfet_01v8_lvt` table cannot be used as printed: the VTCPSN35L
+nominal reads −8.505 V, beside model and limit values between −0.316 V
+and −0.693 V, and the VTCPN42L limits read −1.042 V to −0.845 V, which
+exclude that parameter's own nominal of −0.630 V.[^pdk-07] Taking the
+drain current at |V_GS| = |V_DS| = 1.8 V (the PDK does not state the
+bias), four of the five e-test currents lie inside their limits and
+within 7 % of nominal: 3.40 mA for the 7/0.15 µm `nfet_01v8` (IDSNS15
+3.510 mA), 1.28 mA and 0.94 mA for the 7/0.15 µm `pfet_01v8` and
+`pfet_01v8_hvt` (1.347 mA and 1.003 mA) and 1.24 mA for the 7/0.35 µm
+`pfet_01v8_lvt` (1.22 mA). The fifth, the 7/0.15 µm `nfet_01v8_lvt` of
+that module, carries 3.30 mA, below the 3.527 mA lower limit of
+IDSNS15L, while twelve 7/0.15 µm low-Vt NMOS structures in two other
+modules carry 3.67–4.13 mA, inside it (our extraction from the
+published measurements).[^raw-data-lv-mosfets][^pdk-07] The tile's
+"fet mismatch" modules are not used for these comparisons: their
+thresholds agree with the other modules, but their drain currents per
+drawn width are about two to four times as high, and neither the files
+nor the pad list explain the
+difference.[^raw-data-lv-mosfets][^raw-data-testtile-pads]
+
 ## Machines typically used
 
 * **Parametric tester**: HP/Agilent 4062UX,[^brltest-4062]
@@ -271,6 +306,9 @@ symmetric 16 V structures), so they do not bear on breakdown or the
   transistors and the native, zero-Vt and ESD NMOS — the thresholds, resistances and currents
   compared here with the e-test nominals are our
   extraction.[^raw-data-hv-mosfets]
+* The same repository's files for the five 1.8 V transistor types — the
+  thresholds and drain currents set here beside the e-test nominals are
+  our extraction.[^raw-data-lv-mosfets]
 
 ### High-level understanding
 
@@ -337,6 +375,16 @@ symmetric 16 V structures), so they do not bear on breakdown or the
   extraction from the published measurements).[^raw-data-hv-mosfets]
   Whether the published values refer to another bias or another width
   is not stated.
+* How the e-test thresholds are defined is not published. On the
+  test-tile data for the 1.8 V transistors, maximum-transconductance
+  extrapolation comes within about 0.03 V of most nominals, whereas a
+  constant-current criterion of 100 nA × W/L gives thresholds
+  0.05–0.08 V lower for the NMOS types, 0.02–0.09 V lower for the
+  standard and high-Vt PMOS and 0.22–0.33 V lower for the low-Vt PMOS
+  (our extraction from the published
+  measurements).[^raw-data-lv-mosfets][^pdk-07] The PDK's parameter
+  names mix `VTX…` and, for the low-Vt PMOS, `VTC…` without explaining
+  either.[^pdk-07]
 
 <!-- footnotes -->
 
@@ -473,6 +521,14 @@ symmetric 16 V structures), so they do not bear on breakdown or the
     `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
     `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
     `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 1.8 V
+    transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_01v8`, `nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt`,
+    `pfet_01v8_lvt`), `google/skywater-pdk-sky130-raw-data`
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
