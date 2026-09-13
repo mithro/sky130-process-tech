@@ -112,7 +112,7 @@ fab (SKY130's test plan is not public beyond the parameters above):
    equipment qualification, Wafer Acceptance Testing, and device modeling
    and characterization"[^keithley-s600] — coupled to an automatic wafer
    prober with a temperature-controlled chuck.[^wiki-ate]
-2. **Probe card.** A card laid out to the pad pitch of the e-test modules
+2. **{term}`Probe card <probe card>`.** A card laid out to the pad pitch of the e-test modules
    (Wikipedia classifies probe cards as needle, vertical and MEMS
    types[^wiki-probecard]); the pads are the
    `pad` openings of {ref}`PDM <step-168>`.
