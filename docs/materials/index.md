@@ -140,7 +140,12 @@ the SKY130 stack.[^pdk-03][^pdk-04] These are the sources of the
   the resources sections even where a page's recipe outline mentions
   more. Steps are given by number; the {ref}`steps-index` gives their
   codes. *All except* lists the steps whose resources section does not
-  name the material.
+  name the material. Components of the post-CMP clean mixtures (dilute
+  HF, NH₄OH, TMAH) are indexed only under *Post-CMP clean chemistry*,
+  H₂/N₂ only under forming gas, and liquid nitrogen for cryopumps only
+  under the ion-source row; cooling water is indexed only for the RTP
+  steps, not for the implanters' platen cooling, and wet-bench hardware
+  (bath heaters, quartz tanks) is not indexed.
 * **Coverage.** Each of the 171 steps of the step list[^steps-sheet]
   has a page with a non-empty *Resources required* section, and each
   appears in at least one row.
