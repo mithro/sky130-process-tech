@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 56 of 171 |
+| **Step number** | 56 of 171[^steps-sheet] |
 | **Step code** | `UPRI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
 | **Phase** | FEOL — gate and poly resistors |
@@ -289,3 +289,6 @@ An industry-generic light poly-resistor implant for a 200 mm,
 [^itrs-01]: International Technology Roadmap for Semiconductors, *2001
     Edition: Front End Processes*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

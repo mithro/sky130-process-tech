@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 47 of 171 |
+| **Step number** | 47 of 171[^steps-sheet] |
 | **Step code** | `LVGOX` |
 | **Category** | {ref}`Thermal oxidation <category-oxidation>` |
 | **Phase** | FEOL — SONOS and gate dielectrics |
@@ -405,3 +405,6 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
     680–690 (1998). <https://doi.org/10.1109/16.661229>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
