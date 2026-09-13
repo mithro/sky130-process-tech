@@ -179,8 +179,8 @@ Notes on the table:
   `masks.csv` entry, with `rpm`, `urpm` and `cap2m` on the readings of
   their step pages.[^pdk-06] The process-steps sheet records plates for
   all three on all eight MPW runs ({ref}`masks-mpw-runs`),[^steps-sheet]
-  so the masks were made; the sheet does not name drawn layers, and
-  those pairings remain inferences. The metal-fuse entry for `MM4` rests on
+  but it does not name drawn layers, so those pairings remain
+  inferences. The metal-fuse entry for `MM4` rests on
   rule x.11, "Metal fuses are drawn in met4" (the other two x.11 rows
   name `met2` and `met3`), and the note "For SP8P\*/SKY130P\* (PLM)
   CADflow use MM4 for Metal Fuse";[^pdk-periph]
@@ -274,7 +274,7 @@ reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
 "Pad Via, VIPDM" entry.
 
 (masks-mpw-runs)=
-## Masks made for the MPW runs
+## Plates recorded for the MPW runs
 
 The *S8 / SKY130 Process Steps* sheet, from which the step list used in
 this reference is taken, has a tab "Run Mask IDs" that sets a mask
@@ -497,8 +497,8 @@ MPW runs.
   the difference. The process-steps sheet records plates for `RRPM`,
   `URPM`, `CAPM` and `CAP2M` on all eight MPW runs, but for `PWBM` only
   on MPW-6 and MPW-8 and for `PWDEM` only on MPW-6;[^steps-sheet] it
-  does not say why the two P-well masks were made for only some
-  runs.
+  does not say why plates for the two P-well masks are recorded for
+  only some runs.
 * `HVTRM` is marked, with a mask-level layer, a drawn layer and a
   minimum CD, but has no mask step here; the PDK's layer description
   ("High-Vt RF transistor implant") and rule-set function line ("Define
