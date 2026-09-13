@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1271
+written page has exactly one entry here; the inventory holds 1273
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -4055,7 +4055,9 @@ for sputtering and manufacturing method therefor*, US 5,160,534 A,
 granted 1992-11-03. <https://patents.google.com/patent/US5160534A/en>
 The 10 wt.% Ti composition of Ti:W sputter targets. Used on the
 deposition category page. Tier: cross-check.
-Also used on the PVD cluster tool page.
+Also used on the PVD cluster tool page, whose footnote adds the inventor
+(A. Hiraki) and the filing date (1991-05-31) from Google Patents; the
+patent gives the 10 wt% titanium as the composition of the barrier film.
 
 ##### Vendor, regulatory, marketplace and press pages
 
@@ -10127,6 +10129,28 @@ equipment maker, its product lines and its acquisition by Lam Research,
 "completed in June 2012". Used on the PECVD, HDP-CVD and tungsten CVD
 pages. Tier: high-level.
 
+**TRIKON-10K-1996** — Trikon Technologies, Inc., *Annual Report on Form
+10-K for the fiscal year ended December 31, 1996*; copy on
+GetFilings.com, Wayback Machine capture of 2008-10-12.
+<http://web.archive.org/web/20081012193325/http://www.getfilings.com/o0000898430-97-001539.html>
+Trikon's product lines after it acquired Electrotech "on November 15,
+1996": the Delta 201, "a versatile, single-chamber production system for
+producing films, including silicon dioxide or silicon nitride", and the
+Planar 200 Flowfill, a "multi-chambered cluster system" in which "The
+plasma CVD films are deposited in one module and the CVD planarizing
+flow layer is deposited in the Flowfill(TM) module", offered against SOG
+and HDP gap fill. Used on the PECVD and HDP-CVD pages. Tier: cross-check
+(regulatory filing).
+
+**SEMITODAY-SPTS-2009** — Semiconductor Today, *Sumitomo Precision
+Products completes acquisition of Aviza*, news item, 2009-10-19.
+<https://www.semiconductor-today.com/news_items/2009/OCT/STS_191009.htm>
+The lineage of Newport-based Electrotech "(founded in 1968)", bought in
+1996 by Plasma & Materials Technologies, which became Trikon
+Technologies; "Trikon later merged with Aviza Technology Inc in 2005",
+and SPP's 2009 purchase of Aviza's assets to form SPP Process Technology
+Systems (SPTS). Used on the PECVD page. Tier: high-level (trade press).
+
 **NOVELLUS-HDP-2001** — Novellus Systems, *Dielectric – HDP Solutions*,
 product page; Wayback Machine capture of 2001-12-02.
 <https://web.archive.org/web/20011202103556/http://www.novellus.com:80/products/hdp.asp>
@@ -10319,10 +10343,10 @@ seed chambers. Used on the PVD cluster tool page. Tier: cross-check
 Liner/Barrier*, product page; Wayback Machine capture of 2001-08-07.
 <https://web.archive.org/web/20010807161527/http://www.appliedmaterials.com:80/products/liner_barrier.html>
 The Integrated PVD/CVD Liner/Barrier system on the Endura, and the
-Self-Ionized Plasma (SIP) TiN chamber, "used in volume production for
-advanced devices with aspect ratios of 7:1", with a "biased electrostatic
-chuck". Used on the PVD cluster tool page. Tier: cross-check (vendor
-statement).
+Self-Ionized Plasma (SIP) Ti/TiN ("TTN") chamber, "used in volume
+production for advanced devices with aspect ratios of 7:1", with a
+"biased electrostatic chuck". Used on the PVD cluster tool page. Tier:
+cross-check (vendor statement).
 
 **AMAT-AL-SLAB-2002** — Applied Materials, *Aluminum Slab and Fill*,
 product page; Wayback Machine capture of 2002-06-25.
