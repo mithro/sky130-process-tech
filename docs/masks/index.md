@@ -296,20 +296,21 @@ VIMC".[^steps-sheet][^pdk-05] Each run has an "Exists" column, marked
 
 The tab heads each run's columns with an identifier. The public
 mask-layer renders site ({ref}`masks-renders`) calls the same kind of
-identifier the run's "Reticle set", and adds a fab lot for five runs,
+identifier the run's "Reticle set" and gives the same one as the sheet
+for every run except MPW-4 (below); it adds a fab lot for five runs,
 how confidently it has identified each set, and a project count for
 each shuttle.[^steps-sheet][^mask-renders]
 
-| Run | Sheet column heading | Plate-ID prefix | Renders site: reticle set | Fab lot (site) | Identification (site) | Projects (site) | Run page |
-|-----|----------------------|-----------------|---------------------------|----------------|-----------------------|-----------------|----------|
-| MPW-1 | `7CS8M06AC` | `S8M06AA` | `7CS8M06AC` | 4120787 | "likely" | 37 | `mpw-001.html` |
-| MPW-2 | `5CS8007AC` | `S8007AA` | `5CS8007AC` | 4205819 | "confirmed" | 56 | `mpw-002.html` |
-| MPW-3 | `5CS8008AC` | `S8008AA` | `5CS8008AC` | 4206521 | "confirmed" | 53 | `mpw-003.html` |
-| MPW-4 | `5CS8018AC` | `S8018AA` | `5CS8010AC`, "SKY130 MPW-4 (original)" | 4216266 | "confirmed" | 52 | `mpw-004.html` |
-| MPW-5 | `5CS8011AC` | `S8011AA` | `5CS8011AC` | 4229389 | "confirmed" | 74 | `mpw-005.html` |
-| MPW-6 | `5CS8014AC` | `S8014AA` | `5CS8014AC` | none given | "confirmed" | 85 | `mpw-006.html` |
-| MPW-7 | `5CS8016AC` | `S8016AA` | `5CS8016AC` | none given | "inferred" | 106 | `mpw-007.html` |
-| MPW-8 | `5CS8017AC` | `S8017AA` | `5CS8017AC` | none given | "inferred" | 144 | `mpw-008.html` |
+| Run | Sheet column heading (reticle set) | Fab lot (site) | Identification (site) | Projects (site) | Run page (site) |
+|-----|------------------------------------|----------------|-----------------------|-----------------|-----------------|
+| MPW-1 | `7CS8M06AC` | 4120787 | "likely" | 37 | `mpw-001.html` |
+| MPW-2 | `5CS8007AC` | 4205819 | "confirmed" | 56 | `mpw-002.html` |
+| MPW-3 | `5CS8008AC` | 4206521 | "confirmed" | 53 | `mpw-003.html` |
+| MPW-4 | `5CS8018AC` | 4216266 | "confirmed" | 52 | `mpw-004.html` |
+| MPW-5 | `5CS8011AC` | 4229389 | "confirmed" | 74 | `mpw-005.html` |
+| MPW-6 | `5CS8014AC` | none given | "confirmed" | 85 | `mpw-006.html` |
+| MPW-7 | `5CS8016AC` | none given | "inferred" | 106 | `mpw-007.html` |
+| MPW-8 | `5CS8017AC` | none given | "inferred" | 144 | `mpw-008.html` |
 
 * **MPW-4 has two sets.** The sheet heads its MPW-4 column `5CS8018AC`,
   and every MPW-4 plate ID in it has the prefix
@@ -333,8 +334,10 @@ each shuttle.[^steps-sheet][^mask-renders]
   two characters dropped and its final `AC` replaced by `AA`. A mask's
   number is the same on every run for which a plate is recorded, with
   one exception: the MPW-6 `NSM` plate is `S8014AA616A`, where the
-  other seven runs have `007`.[^steps-sheet] The tables below give that
-  number as "Plate no.". The numbers do not follow process order —
+  other seven runs have `007`; 616 is higher than any other plate
+  number in the tab, and the sheet does not explain the
+  difference.[^steps-sheet] The tables below give that number as
+  "Plate no.". The numbers do not follow process order —
   `NSM` (step 165) is `007`, `NWM` (step 17) `010`, `FOM` (step 4)
   `020`, `HVTPM` (step 22) `317`, and `CAPM` (step 137) `572` comes after
   `MM3` (step 139) `570` — and the sheet does not say what they encode,
@@ -346,8 +349,8 @@ The tables below report the "Exists" marks and plate numbers; *not
 recorded* means no `X` on any of the eight runs. The last column gives,
 from the renders ({ref}`masks-renders`), how many of the 40 rendered
 dies of each run carry shapes on the layers the renders site uses for
-the mask; the MPW-4 figures are for the layouts of its original set
-`5CS8010AC`.
+the mask; the MPW-4 figures are for its original set
+({ref}`masks-mpw-reticle-sets`).
 
 | Step | `masks.csv` (`Used in SKY130`) | Plates recorded | Plate no. | Dies with shapes, MPW-1 to MPW-8 (renders) |
 |------|--------------------------------|-----------------|-----------|----------|
@@ -425,19 +428,17 @@ renders' per-die metadata.[^mask-renders] What the record shows:
   explanation). The renders for `CTM1`, `MM1`, `VIM`, `VIM4` and `PDM`
   show shapes on all 40 rendered MPW-5 dies,[^mask-renders] which fits
   that reading but shows the drawn layouts, not the plates.
-* **NSM on MPW-6.** Every run has an `NSM` plate, but the MPW-6 plate
-  is recorded as `S8014AA616A`, where the `NSM` plates of the other
-  seven runs carry the number `007`; 616 is higher than any other plate
-  number in the tab.[^steps-sheet] The sheet does not explain the
-  difference.
+* **NSM on MPW-6.** Every run has an `NSM` plate; the MPW-6 plate
+  number differs from the others ({ref}`masks-mpw-reticle-sets`).
 * **The sky130B ReRAM masks.** `RRM` has plates recorded on MPW-1 to
-  MPW-4, MPW-7 and MPW-8, and `VIMC` on MPW-1 to MPW-5, MPW-7 and
-  MPW-8; neither has one on MPW-6.[^steps-sheet] The sheet's notes tie
-  both to the ReRAM tier between metal 1 and metal 2 described on the
+  MPW-4, MPW-7 and MPW-8, and `VIMC` on MPW-1 to MPW-5, MPW-7 and MPW-8;
+  neither has one on MPW-6.[^steps-sheet] The sheet's notes tie both to
+  the ReRAM tier between metal 1 and metal 2 described on the
   {ref}`overview-sky130b-reram` page;[^steps-sheet] as that page notes,
   the notes use the PDK files' terms and are not independent evidence.
-  Neither is a step in the step list used here or an entry in `masks.csv`, so neither
-  appears in the main table of this page.[^steps-sheet][^pdk-05]
+  Neither is a step in the step list used here or an entry in
+  `masks.csv`, so neither appears in the main table of this
+  page.[^steps-sheet][^pdk-05]
 * **The "Masks" tab.** A further tab, "Masks", lists 37 rows of step
   number, code and description: the 36 mask steps counted above and
   step 82, `PSDI`, which it describes, like step 81 `PSDM`, as "P+
@@ -448,18 +449,18 @@ renders' per-die metadata.[^mask-renders] What the record shows:
 
 ### Mask types and plate labels
 
-A tab headed "Sheet4" gives a coded mask type for three masks
-only: `F4-248-EAPSM-A43-APRX` for `VIM2` and `VIM3`, and
-`B4-248-BIM-LSR-WET` for `VIM4`.[^steps-sheet] We read the codes for
-the via 2 (`VIM2`) and via 3 (`VIM3`) plates (`EAPSM`) as denoting
-embedded {term}`attenuated phase-shift masks <attenuated PSM>` and the
-code for the via 4 (`VIM4`) plate (`BIM`) as denoting a binary
-(chrome-on-quartz) mask, in each case for 248 nm exposure (`248`): the
-codes use the abbreviations mask makers and the patent literature use
-for these types.[^photronics-abr][^pat-bim-tsmc] We also read the digit
-4 after the first letter of each code, less certainly, as the 4× reduction ratio;
-the tab does not define its codes. The tab does not say to which runs
-these types apply, and it gives no type for any other mask.
+A tab headed "Sheet4" gives a coded mask type for three masks only:
+`F4-248-EAPSM-A43-APRX` for `VIM2` and `VIM3`, and `B4-248-BIM-LSR-WET`
+for `VIM4`.[^steps-sheet] We read the codes for the via 2 (`VIM2`) and
+via 3 (`VIM3`) plates (`EAPSM`) as denoting embedded
+{term}`attenuated phase-shift masks <attenuated PSM>` and the code for
+the via 4 (`VIM4`) plate (`BIM`) as denoting a binary (chrome-on-quartz)
+mask, in each case for 248 nm exposure (`248`): the codes use the
+abbreviations mask makers and the patent literature use for these
+types.[^photronics-abr][^pat-bim-tsmc] We also read the digit 4 after
+the first letter of each code, less certainly, as the 4× reduction
+ratio; the tab does not define its codes. The tab does not say to which
+runs these types apply, and it gives no type for any other mask.
 
 The tab "Random Mask Case Label Info" transcribes two plate-case labels
 from Photronics, one for a metal 2 plate and one for a metal 5
@@ -489,20 +490,21 @@ on MPW-1.[^mask-renders] The run pages are named in the table in
 {ref}`masks-mpw-reticle-sets`; the overview page `masks.html` sets
 every run against every mask.
 
-The site states the limits of its images: "These are renders of
-*drawn* data, not photomask artwork: reticle pitch, 4x reduction,
-mirroring and the frame features the fab adds are not modelled. Empty
-images are real results - several masks are used by no project on a
-given shuttle."[^mask-renders] Its metadata carries no plate ID, so a
-render is tied to a plate in the sheet only by the mask
+The site states the limits of its images: "These are renders of *drawn*
+data, not photomask artwork: reticle pitch, 4x reduction, mirroring and
+the frame features the fab adds are not modelled. Empty images are real
+results - several masks are used by no project on a given
+shuttle."[^mask-renders] Its metadata carries no plate ID, so a render
+is tied to a plate in the sheet only by the mask
 acronym.[^mask-renders][^steps-sheet] Several of its notes describe
-sizing (for example "DNM = dnwell sized by cdnm.3"), but the render
-jobs list only drawn and fill layers, or Boolean expressions over them,
-with no sizing step, so we read the images as unsized drawn data. A render therefore shows whether the tape-out layouts draw on a
-mask's layers, not what the plate carries. The shape totals the site
-prints are not comparable between runs, and this page does not quote
-them: on MPW-1 one die accounts for 99 % of the `FOM` count, and that
-run's `FOM` total is more than 180 times MPW-2's.[^mask-renders]
+sizing (for example "DNM = dnwell sized by cdnm.3"), but the render jobs
+list only drawn and fill layers, or Boolean expressions over them, with
+no sizing step, so we read the images as unsized drawn data. A render
+therefore shows whether the tape-out layouts draw on a mask's layers,
+not what the plate carries. The shape totals the site prints are not
+comparable between runs, and this page does not quote them: on MPW-1 one
+die accounts for 99 % of the `FOM` count, and that run's `FOM` total is
+more than 180 times MPW-2's.[^mask-renders]
 
 ### Plates and drawn shapes
 
@@ -518,17 +520,18 @@ show the following.[^mask-renders][^steps-sheet]
   `pwde` 124:20.
   `RPM` has a plate on MPW-3, where no die draws `rpm` 86:20. `RRM` and
   `VIMC` have plates on MPW-1 to MPW-3, and `VIMC` also on MPW-5, where
-  no die draws the layer 201:20 from which the site renders both. Because the renders leave
-  out whatever the fab adds, they cannot show what these plates carry.
+  no die draws the layer 201:20 from which the site renders both.
+  Because the renders leave out whatever the fab adds, they cannot show
+  what these plates carry.
 * **Rendered, no plate.** Four renders have no recorded plate on any
-  run, and each reuses, wholly or in its counts, another mask's layers: `INDM` is `met3`
-  70:20 ("thick-last-metal flow, not SKY130"), `VIPDM` is `via3` 70:44
-  ("pad-via flow, not SKY130") and matches `VIM3` die by die, `NCM` is
-  an expression whose die-by-die counts equal those of `HVTPM` on every
-  run, and `PSDI` (step 82, which has no row in the tab) is `psdm`
-  94:20, "second P+ implant, same drawn layer as PSDM". They are not
-  evidence of further plates. `HVTRM`, rendered from `hvtr` 18:20, is
-  empty on every run, and no plate is recorded for it.
+  run, and each reuses, wholly or in its counts, another mask's layers:
+  `INDM` is `met3` 70:20 ("thick-last-metal flow, not SKY130"), `VIPDM`
+  is `via3` 70:44 ("pad-via flow, not SKY130") and matches `VIM3` die by
+  die, `NCM` is an expression whose die-by-die counts equal those of
+  `HVTPM` on every run, and `PSDI` (step 82, which has no row in the
+  tab) is `psdm` 94:20, "second P+ implant, same drawn layer as PSDM".
+  They are not evidence of further plates. `HVTRM`, rendered from `hvtr`
+  18:20, is empty on every run, and no plate is recorded for it.
 * **Plate recorded, never rendered.** The site has no `RRPM` render for
   any run, although the sheet records an `RRPM` plate on all eight.
 * **The ReRAM layer.** The site renders `RRM` from the layer 201:20 and
@@ -541,19 +544,18 @@ show the following.[^mask-renders][^steps-sheet]
   | MPW-7 | B3 `nanofabrication_project_using_openfasoc`; B7 `reram_crossbar`; D1 `mixed_signal_circuits-jun13`; D7 `reram-controller-mpw7_v2`; E2 `in_memory_computing_rram`; E3 `rram_imc_v2_flat` |
   | MPW-8 | B1 `nanofabrication_project_using_openfasoc_mpw8`; B3 `reram_crossbar_rerun`; B7 `reram_module_mpw8`; D5 `mixed_signal_circuits_mpw8_dec14`; E5 `mega4_reram` |
 
-  The MPW-4 renders are of the layouts the site ties to the original
-  set `5CS8010AC`; the sheet's MPW-4 plates are those of `5CS8018AC`
-  ({ref}`masks-mpw-reticle-sets`).
+  For MPW-4 the renders and the sheet's plates belong to different
+  reticle sets ({ref}`masks-mpw-reticle-sets`).
 * **Masks used on few dies.** `rpm` 86:20, which the site renders for
   `RPM`, is drawn on 1, 5, 0, 3, 4, 2, 3 and 2 dies of MPW-1 to MPW-8
   in turn.
 * **"40 of 40" is not 40 designs.** `CAPM`, `CAP2M` and `URPM` have
   shapes on 39 or 40 dies of every run, but on each run 33 to 39 of
   those dies carry exactly one shape on the layer, and only a few dies
-  carry more.
-  The die count therefore does not show that most projects use MiM capacitors or the
-  2000 Ω/sq resistor;[^pdk-06] the site does not say what the single shape is.
-  `NSM` likewise has exactly 36 shapes on every die that has any.
+  carry more. The die count therefore does not show that most projects
+  use MiM capacitors or the 2000 Ω/sq resistor;[^pdk-06] the site does
+  not say what the single shape is. `NSM` likewise has exactly 36 shapes
+  on every die that has any.
 
 (masks-derivations)=
 ### Mask derivations in the renders
@@ -590,14 +592,14 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   the note says the mask is "created over (LV nwell = nwell NOT hvi) NOT
   lvtn, plus hvtp only where nwell overlaps a varactor; the fab
   algorithm says do NOT OR hvtp in", naming no source, and the
-  expression omits the varactor term.[^mask-renders] For `LVTNM` the renders add a created part
-  inside `nwell`. For `LVOM` they show `hvi` OR `tunm`, where this page
-  reads the mask as everything outside `hvi`; since the renders show
-  drawn shapes, not photomask artwork, the two may describe the same
-  plate in opposite tone (inference), but the renders also add
-  `tunm`. The `PWBM` render has
-  no `nwell` term, the `RPM` render no `urpm` term and the `MM4` render
-  no fuse purpose.[^mask-renders] The step pages give the reasoning
+  expression omits the varactor term.[^mask-renders] For `LVTNM` the
+  renders add a created part inside `nwell`. For `LVOM` they show `hvi`
+  OR `tunm`, where this page reads the mask as everything outside
+  `hvi`; since the renders show drawn shapes, not photomask artwork, the
+  two may describe the same plate in opposite tone (inference), but the
+  renders also add `tunm`. The `PWBM` render has no `nwell` term, the
+  `RPM` render no `urpm` term and the `MM4` render no fuse
+  purpose.[^mask-renders] The step pages give the reasoning
   behind this page's readings; neither source settles which is right.
 * **Where they agree.** The `NTM` and `HVNTM` expressions are
   consistent in kind with this page's readings; for `HVNTM` the created
@@ -607,12 +609,12 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   `FOM`, `P1M`, `LI1M` and `MM1`–`MM5` they also include a datatype-28
   layer the site lists as fill (23:28, 28:28, 56:28, 36:28, 41:28,
   34:28, 51:28, 59:28), none of which is in
-  `gds_layers.csv`.[^mask-renders][^pdk-06] Both derive from the same public files, so
-  the agreement is not independent confirmation.
+  `gds_layers.csv`.[^mask-renders][^pdk-06] Both derive from the same
+  public files, so the agreement is not independent confirmation.
 * **Notes that contradict the expressions.** The `HVTPM` note ends
   "Rendered as nwell = a superset", but the expression subtracts `hvi`
-  and `lvtn`, and it describes a varactor term that the expression
-  does not include. The `LVTNM`, `HVNTM` and `NCM` notes end "only the drawn
+  and `lvtn`, and it describes a varactor term that the expression does
+  not include. The `LVTNM`, `HVNTM` and `NCM` notes end "only the drawn
   part is rendered", but each expression includes its created part, and
   the `LVTNM` note describes a further term, "(LV nwell over
   varactors)", that is not in the expression.[^mask-renders]
@@ -623,16 +625,17 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   cells; on that reading the renders would leave the bypass vias out
   of `VIMC` (inference).
 
+(masks-renders-sheet-notes)=
 ### Notes shared with the sheet
 
 * **Same wording.** The sheet's "Info" notes for `RRM` and `VIMC`
-  repeat the renders site's wording: "sky130B RRAM tier
-  (met1-met2)" and `r1c` "GDS 201/20" for `RRM`; "r1v, the upper half"
-  of via 1 and "Not CTM1/mcon" (the site: "NOT CTM1/mcon") for `VIMC`. The sheet's level names for the
-  local-interconnect, contact, via and metal masks ("Via 0 (???→M0)",
-  "LI (Metal 0)", …) are identical to the site's.[^steps-sheet][^mask-renders]
-  This page therefore does not cite either source as corroborating the
-  other.
+  repeat the renders site's wording: "sky130B RRAM tier (met1-met2)" and
+  `r1c` "GDS 201/20" for `RRM`; "r1v, the upper half" of via 1 and "Not
+  CTM1/mcon" (the site: "NOT CTM1/mcon") for `VIMC`. The sheet's level
+  names for the local-interconnect, contact, via and metal masks
+  ("Via 0 (???→M0)", "LI (Metal 0)", …) are identical to the
+  site's.[^steps-sheet][^mask-renders] This page therefore does not cite
+  either source as corroborating the other.
 * **Which sets have an RRM plate.** The site's `RRM` note says "Only on
   the later sets 5CS8016AC/17AC/18AC", the sets the sheet heads MPW-7,
   MPW-8 and MPW-4.[^mask-renders][^steps-sheet] The sheet records `RRM`
@@ -795,25 +798,23 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   the {ref}`lithography category page <category-lithography>` give
   industry-generic readings.
 * The process-steps sheet records no plates for `CTM1`, `MM1`, `VIM`,
-  `VIM4` and `PDM` on MPW-5, and an `NSM` plate on MPW-6 numbered
-  `616` where the other seven runs have `007`;[^steps-sheet] it does
-  not say whether these are gaps in the record or differences between
-  the runs. It does not say what the three-digit plate numbers encode.
+  `VIM4` and `PDM` on MPW-5, and a different plate number for `NSM` on
+  MPW-6 ({ref}`masks-mpw-reticle-sets`);[^steps-sheet] it does not say
+  whether these are gaps in the record or differences between the
+  runs. It does not say what the three-digit plate numbers encode.
 * The sheet records plates for masks whose layers no rendered die of the
   run draws — `TUNM`, `ONOM` and `LDNTM` on six runs, `RPM` on MPW-3,
   `RRM` and `VIMC` on the runs without ReRAM layouts — and no public
   source says what those plates carry (the renders omit whatever the
   fab adds to a plate).[^steps-sheet][^mask-renders] The site renders no
   `RRPM` image although a plate is recorded on every run.
-* The renders site's `RRM` note limits the ReRAM mask to the sets
-  `5CS8016AC`, `5CS8017AC` and `5CS8018AC`, while the sheet records `RRM`
-  plates on MPW-1 to MPW-3 as well; neither source explains the
-  difference ({ref}`masks-derivations`).[^mask-renders][^steps-sheet]
-* The sheet's MPW-4 plates belong to `5CS8018AC`, which the renders
-  site calls the re-made MPW-4 set, and the site's MPW-4 renders to the
-  original set `5CS8010AC`;[^steps-sheet][^mask-renders] no public
-  source lists the plates of the original set or says how the two sets
-  differ.
+* Neither the renders site nor the sheet explains why they disagree on
+  which sets carry an `RRM` plate
+  ({ref}`masks-renders-sheet-notes`).[^mask-renders][^steps-sheet]
+* No public source lists the plates of the original MPW-4 set
+  `5CS8010AC`, whose layouts the renders show, or says how it differs
+  from `5CS8018AC`, whose plates the sheet records
+  ({ref}`masks-mpw-reticle-sets`).[^mask-renders][^steps-sheet]
 * The site's project counts for the shuttles (37 to 144) differ from
   the 40 dies it renders for every run, and it does not explain the
   difference.[^mask-renders]
