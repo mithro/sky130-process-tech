@@ -229,8 +229,8 @@ chemistry or brush supply.
 * **Chemicals.** Dilute ammonia for oxide polishes and dilute HF or
   organic acids for tungsten ({ref}`category-cmp`); HF and heated RCA
   chemistries in integrated cleaners;[^amat-mesa-1999] SC-1 in megasonic
-  baths;[^busnaina-1995] SkyWater lists an ammonia clean and an IPA clean
-  with its polisher.[^skw-01]
+  baths;[^busnaina-1995] SkyWater lists "Track ammonia clean" and "IPA
+  clean" under CMP.[^skw-01]
 * **Water.** Ultrapure water for the wet indexer, brush flushing, sprays
   and the final rinse;[^pat-scrubber-ontrak] the SS-3200 for 200 mm is
   promoted as "using less de-ionized (DI) water per
@@ -252,10 +252,11 @@ chemistries are not public.
 * **Oxide and tungsten cleans differ.** The outlines of the oxide polishes
   ({ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`CMPL <step-106>`,
   {ref}`CMPM <step-116>` to {ref}`CMPM4 <step-157>`) scrub in dilute
-  NH₄OH; those of the tungsten polishes add a corrosion-inhibiting
-  chemistry — citric acid on {ref}`WCMPLI <step-100>`, a TMAH-based
-  chemistry after Jolley on {ref}`WCMP2 <step-111>` to
-  {ref}`WCMP5 <step-148>` (industry practice).[^jolley-1998] Ge et al.'s
+  NH₄OH; those of the tungsten polishes offer an alternative to dilute
+  NH₄OH — citric acid on {ref}`WCMPLI <step-100>`, a TMAH-based chemistry
+  on {ref}`WCMP2 <step-111>` to {ref}`WCMP5 <step-148>`, where Jolley
+  studied TMAH as a post-tungsten-CMP clean (industry
+  practice).[^jolley-1998] Ge et al.'s
   130 nm case shows that a tungsten contact clean can itself add
   defects that bridge the first metal.[^ge-2006]
 * **What SkyWater's list allows.** With no brush scrubber listed, the CMP
@@ -346,7 +347,8 @@ chemistries are not public.
 * Ge et al., ICSICT 2006 — a post-tungsten-contact-CMP clean at 130 nm
   and the defects it caused.[^ge-2006]
 * Ollendorf, Cabral and Fuller, ASMC 2004 — tungsten-filled microscratches
-  that a wet clean leaves behind.[^ollendorf-2004]
+  after tungsten CMP and a dry plasma clean that removes the metal from
+  them.[^ollendorf-2004]
 
 ## Open questions
 
