@@ -69,6 +69,23 @@ shallow boron dose in a high-Vt PMOS:
    of implant such as BF2, or Indium" as a second Vt adjustment applied
    in combination with an arsenic first adjustment).[^pat-vt-rrr]
 
+The published test-tile measurements constrain these readings only
+loosely. The high-Vt increment over `pfet_01v8` is about twice as large
+at L = 0.15 µm as at L = 8 µm — 0.119 V against 0.059 V at W = 7 µm and
+0.110 V against 0.064 V at W = 0.42 µm — while the threshold rise for
+1.8 V of reverse body bias at 7/8 µm is almost the same for the two
+devices (0.352 V against 0.341 V; our extraction from the published
+measurements, by maximum-transconductance extrapolation at
+V_DS = −0.1 V).[^raw-data-lv-mosfets] The PDK's e-test nominals show the
+same doubling at W = 7 µm (0.107 V against 0.057 V).[^pdk-07] A
+nearly unchanged long-channel body effect suggests that the extra
+high-Vt doping changes the net doping of the depleted region only
+slightly, as a dose confined close to the surface would, and a larger
+increment at short gate length suggests that it also acts on
+short-channel behaviour. Those are readings of electrical averages: the
+data give neither the depth nor the dose of either implant, and do not
+show which of `PCHI` and `PNCHI` does what (inference).
+
 Whichever applies, the aim is the same: a `pfet_01v8_hvt` with the
 higher threshold, lower leakage and acceptable short-channel behaviour
 that the PDK models,[^pdk-07] delivered through a single extra mask.
@@ -159,6 +176,9 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
 * Axcelis, *GSD Ovation* product page — fluorinated-species source
   costs.[^axcelis-gsd-page]
+* SKY130 raw-data repository, 1.8 V transistor files — the high-Vt
+  threshold increment at two gate lengths and the body effect (our
+  extraction).[^raw-data-lv-mosfets]
 
 ### High-level understanding
 
@@ -291,3 +311,11 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 1.8 V
+    transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_01v8`, `nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt`,
+    `pfet_01v8_lvt`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
