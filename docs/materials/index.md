@@ -417,7 +417,11 @@ decide between them, and the step pages are unchanged.
   omitted" at {ref}`LVTNIS <step-016>`, "is normally omitted" at
   {ref}`LVTPIS <step-021>` and {ref}`ASTIS <step-067>`, and "would be
   omitted, we infer" at {ref}`HVASTIS <step-070>` and
-  {ref}`LDASTIS <step-074>`; the other strips do not mention it. Water
+  {ref}`LDASTIS <step-074>`; the other strips' resources sections do
+  not mention it, although the recipe outlines of
+  {ref}`P1IS <step-051>`, {ref}`PDIS <step-084>` and
+  {ref}`NSDIS <step-087>` say CF₄ is avoided or, by inference, left
+  out. Water
   vapour appears at {ref}`PRIS <step-054>`, {ref}`PDIS <step-084>` and
   {ref}`NSDIS <step-087>`, and NH₃ at the last two only. SkyWater's
   asher entries list NH3 (Iridia) and CF4 (Iridia, Mattson) but no
@@ -463,15 +467,18 @@ decide between them, and the step pages are unchanged.
   VIM4E. Forming gas or CF₄ in the ash appears on CTME, VIME and VIM2E
   but not on VIM3E, VIM4E or NSME, and {ref}`LICM1E <step-094>` lists no
   post-etch solvent, which the other contact and via etches do.
-* **HMDS on BARC levels.** HMDS is listed with BARC at
-  {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`,
+* **HMDS on BARC levels.** HMDS is listed with a BARC or ARC at
+  {ref}`FOM <step-004>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`,
+  {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`,
   {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`,
   {ref}`CTM1 <step-107>`, {ref}`VIM <step-118>`,
   {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>` and
   {ref}`VIM4 <step-159>`, but not at {ref}`MM1 <step-113>`,
   {ref}`MM2 <step-124>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`,
   {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>` or
-  {ref}`MM5 <step-162>`.
+  {ref}`MM5 <step-162>`; the MM1, CAPM and MM5 recipe outlines say
+  HMDS is not used on metal, while MM2, MM3, CAP2M and MM4 give no
+  reason.
 * **Developer strength.** Six resources sections give it as
   "2.38 %" ({ref}`FOM <step-004>`, {ref}`TUNM <step-035>`,
   {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`,
