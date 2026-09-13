@@ -147,7 +147,7 @@ fab (SKY130's recipe is not public):
   Materials MxP/eMax, TEL DRM; remote-plasma NF₃-based tools for a
   low-damage alternative.
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** and **{ref}`wet bench <machine-wet-bench>`** for the strip and clean.
-* **Cross-section SEM**.
+* **{ref}`Cross-section SEM <machine-cross-section-sem-profilers>`**.
 
 ## Machines likely used at SkyWater
 

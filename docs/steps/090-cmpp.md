@@ -142,8 +142,8 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
   SpeedFam-IPEC Avanti 472, Strasbaugh 6DS-SP (category page).
 * **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam DSS-200, Applied Mesa
   integrated cleaner).
-* **Optical film-thickness mapper**; **stylus profiler**;
-  **unpatterned defect inspection**.
+* **{ref}`Optical film-thickness mapper <machine-film-thickness-metrology>`**; **{ref}`stylus profiler <machine-cross-section-sem-profilers>`**;
+  **{ref}`unpatterned defect inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 
