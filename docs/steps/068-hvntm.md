@@ -122,7 +122,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
    0.232 µm "HVNTM shadowing" and 0.1 µm minimum tip-opening
    width[^pdk-03] fix how far a resist edge must stand from a gate for
    the tilted beam to reach it on the intended side.
-5. **Develop** in 0.26 N TMAH,[^txt-02] rinse, dry; a post-develop bake
+5. **Develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse, dry; a post-develop bake
    or UV cure to stabilise the thin film against the implant (industry
    practice).[^txt-02]
 6. **Inspection.** Overlay to poly; {term}`CD`; after-develop defect
@@ -153,7 +153,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
   0.3 µm;[^pdk-03] SkyWater's S-1 names The Dow Chemical Company, JSR
   Corporation and Tokyo Ohka Kogyo America as photoresist
   suppliers.[^sec-01]
-* **HMDS**, **0.26 N TMAH developer**,[^txt-02] edge-bead remover, DI
+* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, DI
   water, nitrogen.
 * **The HVNTM reticle** — generated from the drawn `hvntm` layer OR-ed
   with its computed layer.[^pdk-periph][^pdk-06]

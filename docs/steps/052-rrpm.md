@@ -102,7 +102,7 @@ An industry-generic implant-mask litho sequence, as on
    overlap leaves a strip doped both n⁺ and p, and Hook et al. show how
    lateral {term}`straggle` at a resist edge blurs the boundary
    further.[^hook-2003]
-5. **Post-exposure bake, develop** (2.38 % TMAH[^wiki-tmah]), rinse,
+5. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^wiki-tmah] rinse,
    hard bake or UV cure.
 6. **Inspection.** Overlay to active; open-window check by optical
    inspection.

@@ -124,7 +124,7 @@ An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
    the critical layers[^itrs-03]), aligned to the {term}`STI` pattern; the
    thick/thin boundary must land on field oxide, so {term}`overlay` to active
    is the controlled quantity.
-4. **Post-exposure bake, develop** in 2.38 % TMAH,[^txt-02] rinse.
+4. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse.
 5. **Hard bake.** A firm hard bake improves adhesion and reduces HF
    penetration along the resist–oxide interface at the etch, one of
    the resist/etch couple's known failure modes.[^beverina-2003]
@@ -154,7 +154,7 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 ## Resources required
 
 * **i-line photoresist** (Dow, JSR, TOK[^sec-01]), **HMDS**.
-* **TMAH developer** (2.38 %),[^txt-02] edge-bead remover, DI water,
+* **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, DI water,
   nitrogen.
 * **The LVOM reticle** — chrome on quartz, relaxed features.
 

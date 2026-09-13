@@ -129,7 +129,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
    diffusion enclosure and to poly for the resistor and licon.9
    rules;[^pdk-periph] Levinson treats how such multi-reference
    overlay budgets are allocated.[^levinson-2005]
-5. **Develop** in 0.26 N TMAH,[^txt-02] rinse, dry; then a hard bake
+5. **Develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse, dry; then a hard bake
    or UV cure to harden the resist against the implant and reduce
    outgassing — Lee et al. measured thick-resist outgassing during
    implantation,[^lee-1996] Horsky the outgassing in high-energy and
@@ -163,7 +163,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 * **Positive i-line (DNQ/novolac) photoresist**, about 1 µm
   (inferred; PDK nominal 1.14 µm[^pdk-03]); SkyWater's S-1 names Dow,
   JSR and Tokyo Ohka Kogyo as resist suppliers.[^sec-01]
-* **HMDS**, **0.26 N TMAH developer**,[^txt-02] edge-bead remover,
+* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover,
   rinse solvents, DI water and nitrogen.
 * **The PSDM reticle** — generated from `cpsdm` (32:0) with its
   add/drop corrections.[^pdk-06]

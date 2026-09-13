@@ -130,7 +130,7 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
    budgets and how they are allocated are treated by
    Levinson[^levinson-2005] and, for alignment-mark placement, by
    van Haren et al.[^van-haren-2019]
-5. **Post-exposure bake and develop** in 0.26 N TMAH;[^txt-02]
+5. **Post-exposure bake and develop** in 2.38 % (0.26 N) TMAH;[^txt-02]
    after-develop CD and overlay measurement on box-in-box targets
    against poly; the dose/focus process window is characterised the
    way Bossung[^bossung-1977] and Ausschnitt[^ausschnitt-1999]
@@ -163,7 +163,7 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 * **DUV (chemically amplified) or i-line photoresist** and **organic
   BARC**; SkyWater's S-1 names Dow, JSR and Tokyo Ohka Kogyo as resist
   suppliers.[^sec-01]
-* **HMDS**, **0.26 N TMAH developer**,[^txt-02] edge-bead remover,
+* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover,
   rinse solvents, DI water and nitrogen.
 * **The NPCM reticle** — generated from the `cnpc` mask layer
   (49:0).[^pdk-06]

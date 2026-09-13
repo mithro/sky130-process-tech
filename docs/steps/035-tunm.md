@@ -125,7 +125,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    k₁·λ/NA),[^wiki-litho] comfortably inside the i-line process window,
    so we infer an i-line layer; the 2001 ITRS assigns 248 nm only to the
    critical layers of the 130 nm node.[^itrs-03]
-5. **Post-exposure bake, develop** in 2.38 % TMAH,[^txt-02] rinse,
+5. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse,
    and a hard bake to harden the resist for the implants.
 6. **Inspection.** {term}`Overlay <overlay>` to active and CD on the coarse tunnel
    window; after-develop inspection for residue in the windows, which
@@ -169,7 +169,7 @@ and the pre-oxidation clean as part of those steps (see the
   Company, JSR Corporation and Tokyo Ohka Kogyo America as photoresist
   suppliers.[^sec-01]
 * **Organic BARC** and its solvent; **HMDS** adhesion promoter.
-* **Developer** — aqueous TMAH (2.38 %);[^txt-02] SkyWater's S-1
+* **Developer** — aqueous 2.38 % (0.26 N) TMAH;[^txt-02] SkyWater's S-1
   names Air Products (Moses Lake) as a developer supplier.[^sec-01]
 * **Edge-bead remover**, DI water, nitrogen.
 * **The tunnel reticle** — a chrome-on-quartz photomask; with a 0.41 µm
