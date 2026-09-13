@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 48 of 171 |
+| **Step number** | 48 of 171[^steps-sheet] |
 | **Step code** | `SAGD` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | FEOL — gate and poly resistors |
@@ -409,3 +409,6 @@ suppliers,[^sec-01][^sec-02] without tying them to a process.
 [^snf-lpcvd]: Stanford Nanofabrication Facility, *Tystar LPCVD Tube
     Training*, equipment training page.
     <https://snfguide.stanford.edu/guide/equipment/training/tystar-lpcvd-tube-training>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

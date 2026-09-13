@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 58 of 171 |
+| **Step number** | 58 of 171[^steps-sheet] |
 | **Step code** | `GATENIT` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | FEOL — gate and poly resistors |
@@ -339,3 +339,6 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

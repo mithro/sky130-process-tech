@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 55 of 171 |
+| **Step number** | 55 of 171[^steps-sheet] |
 | **Step code** | `URPM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
 | **Phase** | FEOL — gate and poly resistors |
@@ -315,3 +315,6 @@ reading is used throughout these pages and is marked as an inference.
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
