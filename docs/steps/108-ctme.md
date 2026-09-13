@@ -192,9 +192,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   the Iridia and Mattson ashers,[^skw-01] would attack the exposed TiN and
   would, we infer, be left out. **Amine or semi-aqueous solvent**
   ({ref}`wet chemicals <material-wet-chemicals>`; EKC265/EKC270 class; SkyWater lists "EKS265, EKC270
-  solvents"[^skw-01]) and DI water for the post-etch clean.
-* **Chamber consumables** (liners, focus and edge rings, electrodes),
-  **monitor wafers** with blanket oxide and nitride for rate and
+  solvents"[^skw-01]) and {ref}`DI water <material-ultrapure-water>` for the post-etch clean.
+* **{ref}`Chamber consumables <material-hardware-consumables>`** (liners, focus and edge rings, electrodes),
+  **{ref}`monitor wafers <material-substrates>`** with blanket oxide and nitride for rate and
   selectivity checks.
 
 ## Related steps and cross-references
