@@ -24,10 +24,10 @@ before the via-3 mask ({ref}`VIM3 <step-144>`) is printed. The
 finished number is public: the PDK's stack diagram places the bottom
 of `met4` 1.235 µm above the bottom of `met3`, which with the 0.845 µm
 metal leaves a via-3 height of 0.39 µm.[^pdk-04] The cap's own
-thickness is not. It is the fifth "CAPOX" of the flow, after
+thickness is not. Its suffix makes it the fifth "CAPOX"; it follows
 {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>` (where the
-reasoning and the numbering gap are set out) and
-{ref}`NCAPOX4 <step-128>`, and it recurs as
+numbering gap is discussed) and
+{ref}`NCAPOX4 <step-128>`, and recurs as
 {ref}`NCAPOX6 <step-158>`.
 
 One public difference from the two levels below is worth noting. At
@@ -40,7 +40,7 @@ not show one here, and so offers no hint of this cap's thickness
 (via3.1[^pdk-periph]) etched 0.39 µm deep to metal 3 — an
 {term}`aspect ratio` of about 1.95:1, a little below via 2's 2.1:1 —
 and, over each capacitor, a shallower via to the TiW top plate (the
-PDK's `cap_mim` cross-section draws a "Via3" on "CAPM" as well as on
+PDK's `cap_mim` cross-section draws vias from metal 4 landing on "CAPM" and on
 "M3 (plate 1)"[^pdk-07]).
 
 ## Step category
@@ -177,7 +177,7 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
   film; met3 and met4 bottom levels; `met3` 0.845 µm.[^pdk-04]
 * SkyWater PDK, *Periphery rules* — via3.1 0.200 µm.[^pdk-periph]
 * SkyWater PDK, *Device Details* — the `cap_mim` cross-section with
-  "Via3" on "CAPM" and on "M3 (plate 1)".[^pdk-07]
+  vias landing on "CAPM" and on "M3 (plate 1)".[^pdk-07]
 * SkyWater, *Facilities & Capabilities* — "PECVD TEOS, C2 and Producer
   – low temp options"; "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01]
 * Cypress, QTP 123907/132302/132301 and QTP 014807 — "1000A TEOS" in
