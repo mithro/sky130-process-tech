@@ -144,7 +144,7 @@ fab (SKY130's energy and dose are not public):
 
 ## Machines likely used at SkyWater
 
-* **Axcelis GSD high-current implanters.** SkyWater lists two: "Axcelis
+* **Axcelis GSD implanters (high-current/high-energy and high-dose).** SkyWater lists two: "Axcelis
   GSD High current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15,
   tilt/twist" and "Axcelis GSD Hi dose B11, BF2, P, As 2-180kev, 5e12
   to 5e16, tilt/twist"[^skw-01] — both offer arsenic and reach the
@@ -156,7 +156,7 @@ fab (SKY130's energy and dose are not public):
   0-60 deg tilt".[^skw-01] It offers arsenic, the 7° tilt and
   a 3 keV floor,[^axcelis-8250] but its quoted dose ceiling of
   10¹⁴ cm⁻² would put a heavier tip out of reach. Strength: strong for
-  the tool; weak-to-medium for assignment — which tool runs `ASTI`
+  the tool; **weak** for assignment — which tool runs `ASTI`
   depends on the (non-public) dose.
 
 ## Resources required

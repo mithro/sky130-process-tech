@@ -131,9 +131,10 @@ fab (SKY130's energy and dose are not public):
   0-60 deg tilt".[^skw-01] Arsenic, a dose window that contains an LDD
   dose, and a tilt range that reaches 60° — the published 40° HV tip
   angle[^pdk-03] fits inside it. Strength: **strong** for the tool and
-  its tilt range; **medium** for the assignment, because it is the only
-  listed tool with a *stated* tilt range, and that range covers 40°.
-* **Axcelis GSD high-current implanters** ("10-3000kev, 1e11 to 5e15,
+  its tilt range; **inference** for the assignment, because it is the
+  only listed tool with a *stated* tilt range, and that range covers
+  40°.
+* **Axcelis GSD implanters (high-current/high-energy and high-dose)** ("10-3000kev, 1e11 to 5e15,
   tilt/twist" and "2-180kev, 5e12 to 5e16, tilt/twist")[^skw-01] —
   batch tools listed with tilt and twist capability but with no stated
   tilt range. Strength: strong for existence; weak for assignment.

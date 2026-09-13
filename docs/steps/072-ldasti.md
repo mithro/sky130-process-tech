@@ -117,10 +117,10 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
   8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,
   0-60 deg tilt".[^skw-01] An LDD-class arsenic dose sits inside its
   quoted window, and its 3 keV floor[^axcelis-8250] covers a shallow
-  tip. Strength: **strong** for the tool; **medium** for the
+  tip. Strength: **strong** for the tool; **inference** for the
   assignment, since a "lightly doped" tip is the one tip whose dose
   plausibly fits the medium-current tool.
-* **Axcelis GSD high-current implanters** ("10-3000kev, 1e11 to 5e15,
+* **Axcelis GSD implanters (high-current/high-energy and high-dose)** ("10-3000kev, 1e11 to 5e15,
   tilt/twist" and "2-180kev, 5e12 to 5e16, tilt/twist")[^skw-01] —
   possible; the Hi dose tool's 2 keV floor covers a shallow tip.
   Strength: strong for existence; weak for assignment.

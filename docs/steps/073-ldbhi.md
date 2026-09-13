@@ -125,7 +125,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   0-60 deg tilt".[^skw-01] Boron and BF₂, the halo dose window and a
   tilt range to 60°. Strength: **strong** for the tool; **inference**
   for the assignment to `LDBHI`, as for {ref}`BHI <step-066>`.
-* **Axcelis GSD high-current implanters**[^skw-01] — batch tools listed
+* **Axcelis GSD implanters (high-current/high-energy and high-dose)**[^skw-01] — batch tools listed
   with "tilt/twist" capability; possible, less natural for a low-dose
   halo. Strength: strong for existence; weak for assignment.
 
