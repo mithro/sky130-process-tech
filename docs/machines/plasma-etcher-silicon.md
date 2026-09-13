@@ -5,8 +5,8 @@ A silicon and polysilicon plasma etcher is the single-wafer dry-etch
 tool a fab uses to cut vertical features into silicon: the shallow
 isolation trenches and the polysilicon gates, and, in the same chamber
 type, the thin organic and dielectric films that sit on top of them.
-In the 200 mm, 130 nm era it was almost always a high-density,
-inductively coupled reactor with a separately biased wafer chuck,
+In the 200 mm, 130 nm era it was usually a high-density reactor —
+most often inductively coupled — with a separately biased wafer chuck,
 running halogen chemistries that etch silicon fast while stopping on a
 few nanometres of oxide. This page describes the class in general,
 lists representative 200 mm-era models, and then says what SkyWater
@@ -58,8 +58,8 @@ lower-power supply biases the wafer electrode.[^snf-9400] Applied
 Materials' decoupled plasma source (DPS) has a dome over the chamber;[^amat-dps-plus-1999] a patent
 by Yin et al. describes an "RF coil having plural coil sections" and a
 lid with "an outer insulating annulus and an inner conducting disk
-portion" to reduce capacitive coupling and the sputtering of the
-dielectric it causes.[^pat-dps-amat] Wikipedia summarises the hybrid:
+portion" to reduce capacitive coupling and the sputtering of chamber
+interior surfaces it causes.[^pat-dps-amat] Wikipedia summarises the hybrid:
 "the ICP is employed as a high density source of ions which increases
 the etch rate, whereas a separate RF bias is applied to the substrate …
 to achieve more anisotropic etch profiles".[^wiki-rie] Hopwood's review
@@ -166,9 +166,10 @@ performance for thin gate oxides" on the DPS Plus.[^amat-dps-plus-1999]
   the "Etch Centura II" platform.[^amat-dps-plus-1999] In 2000 Applied
   announced a Silicon Etch DPS 300 on the Centura 300 platform, "derived
   from Applied Materials' production-proven Centura 200mm
-  design".[^amat-300-etch-2000] SkyWater's "AMAT DPSII" is a later
-  generation of the same source; no public Applied document describing
-  the DPS II was retrieved for this page.
+  design".[^amat-300-etch-2000] We read SkyWater's "AMAT DPSII" as a
+  later generation of the same DPS source, an inference from the name;
+  no public Applied document describing the DPS II was retrieved for
+  this page.
 * **Lam Research.** The Rainbow 44XX parallel-plate etchers for 6-inch
   or 8-inch wafers, with applications including "Anisotropic Doped Poly
   Etch: Cl2/HBr Main Etch and Cl2/HBr/O2 Overetch" and a three-step
@@ -306,11 +307,14 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   {ref}`TUNARCE <step-036>` open run over thin oxides; charging damage
   grows with pattern aspect ratio and depends strongly on oxide
   thickness.[^hashimoto-1994][^noguchi-1997]
-* **Strip and clean afterwards.** Every etch on this tool is followed by
-  a resist strip in a
+* **Strip and clean afterwards.** The trench, ONO and gate etches are
+  followed by a resist strip in a
   {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and a
   clean on a {ref}`wet bench <machine-wet-bench>`, which remove the
-  halogenated sidewall residue.[^thung-2016]
+  sidewall polymer and residue;[^thung-2016] the
+  {ref}`TUNARCE <step-036>` open keeps its resist for the
+  {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants and the
+  {ref}`TUNME <step-039>` wet etch.
 
 ## Related pages
 
@@ -321,7 +325,7 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   classes; the dielectric etch pages weigh the three etchers listed
   here.
 * {ref}`machine-downstream-plasma-asher` and {ref}`machine-wet-bench` —
-  the strip and clean after each etch.
+  the strip and clean after most of these etches.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — etch gases and chamber materials.
