@@ -102,7 +102,8 @@ published measurements).[^raw-data-hv-mosfets] The 16 V PMOS behaves
 alike (about 725 Ω against 310 Ω at 20 µm width), and the 20 V NMOS and
 PMOS structures of modules 4441 and 4442 carry 60–70 % of their
 V_DS = 5 V current at 2.5 V.[^raw-data-hv-mosfets] The thresholds of the
-16 V NMOS (0.73–0.79 V by maximum-transconductance extrapolation) and
+16 V NMOS (0.73–0.79 V by maximum-transconductance extrapolation, less
+half the 0.1 V drain bias) and
 its body-effect coefficient at L = 2.425 µm (0.70–0.72 √V) are close to
 those of a 7/8 µm `nfet_g5v0d10v5` (0.79–0.82 V, 0.73 √V), consistent
 with a 5 V channel to which a drain extension has been added; the data
