@@ -36,8 +36,8 @@ What is unusual about this wafer compared with the one at
 the transistors: five aluminium levels, tungsten plugs, the local
 interconnect nitride, and a passivation of oxide and silicon nitride
 ("TOPOX" and "TOPNIT" on the PDK's stack diagram,[^pdk-04] 7000–9000 Å
-of nitride in Cypress reports for other processes at the same
-fab[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]) that is opened
+of nitride in Cypress reports for the R7FT-3R technology and the
+S8DI and S8TNV-5R variants at the same fab[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]) that is opened
 only over the pads. Hydrogen from the
 furnace ambient must reach the gate oxides through that stack, or be
 supplied from within it: plasma nitride deposited at 330–350 °C contains
