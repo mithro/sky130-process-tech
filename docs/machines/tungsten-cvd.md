@@ -255,8 +255,8 @@ delivery, pumps or abatement.
   plasma;[^amat-ism-2000][^wiki-nf3] heaters, ceramic or exclusion rings
   and showerheads, which the clean and the film wear.[^amat-ism-2000][^novellus-wcvd-2002]
 * **Monitor wafers.** Sheet resistance, thickness, stress and particles
-  on blanket wafers, and cross-sections of filled holes, as the step pages
-  describe ({ref}`WDEP2 <step-110>`).
+  on blanket wafers, and cross-sections of filled holes, as the step pages'
+  industry-generic outlines describe ({ref}`WDEP2 <step-110>`).
 
 ## Process-integration notes for SKY130
 
@@ -264,8 +264,8 @@ These notes connect the machine class to the step pages; they add no
 SKY130 conditions of their own. SKY130's tungsten recipes and
 thicknesses are not public.
 
-* **A liner first.** Every fill lands on titanium nitride deposited in the
-  PVD tool before it ({ref}`TI/TIN1 <step-097>`, followed by the
+* **A liner first.** On the step pages' reading, every fill lands on
+  titanium nitride deposited in the PVD tool before it ({ref}`TI/TIN1 <step-097>`, followed by the
   {ref}`CSIL <step-098>` anneal, and {ref}`TIN2 <step-109>` to
   {ref}`TIN5 <step-146>` immediately before each via fill), because WF₆ and its
   HF attack silicon, titanium and oxide and tungsten adheres poorly to

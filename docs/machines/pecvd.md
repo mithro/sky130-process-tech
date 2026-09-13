@@ -320,7 +320,8 @@ the fab's gas delivery, pumps or abatement.
   RF power,[^pat-p5000-amat] and heated pedestals or, for SACVD,
   ceramic heaters.[^amat-sacvd-2000]
 * **Monitor wafers.** Blanket wafers for thickness, refractive index,
-  stress and particles, as the step pages describe
+  stress and particles, as the step pages' industry-generic outlines
+  describe
   ({ref}`NCAPOX3 <step-117>`, {ref}`NTSD <step-167>`).
 
 ## Process-integration notes for SKY130

@@ -306,7 +306,8 @@ logistics.
   bias on IMP chambers;[^amat-ism-2000][^amat-liner-barrier-2001] the
   glossary entry {term}`electrostatic chuck` gives the principle.
 * **Monitor wafers.** Sheet resistance, thickness (XRF), reflectivity and
-  stress on blanket wafers, as the step pages describe
+  stress on blanket wafers, as the step pages' industry-generic outlines
+  describe
   ({ref}`TIAL6 <step-112>`).
 
 ## Process-integration notes for SKY130
@@ -316,8 +317,10 @@ SKY130 conditions of their own. SKY130's sputtering recipes and most of
 its film thicknesses are not public.
 
 * **Liners under tungsten.** The {ref}`TI/TIN1 <step-097>` page reads the
-  contact liner as titanium followed by IMP TiN (inference from "Imp
-  TiN"[^skw-01]); whether the titanium is collimated, as "Collimated Ti"
+  contact liner as titanium followed by IMP TiN, an inference from SkyWater's
+  "Collimated Ti" and "Imp TiN" entries[^skw-01] and from Ti/TiN
+  liner/barrier systems of the period such as the Endura with a Vectra
+  IMP Ti chamber;[^amat-ism-2000] whether the titanium is collimated, as "Collimated Ti"
   would allow, or ionised is not public. The via-liner pages
   ({ref}`TIN2 <step-109>` to {ref}`TIN5 <step-146>`) read their liners as
   IMP TiN. Each liner is followed by a tungsten fill ({ref}`tungsten CVD page
