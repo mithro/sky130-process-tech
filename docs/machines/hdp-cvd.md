@@ -179,8 +179,9 @@ performance or reliability".[^chen-2002-psg]
   processing in high-volume production environments". The same page
   lists the Concept Two SPEED/SEQUEL, which "combines two SPEED HDP
   chambers with one SEQUEL chamber", and the 300 mm Concept Three
-  SPEED.[^novellus-hdp-2001] The SPEED Max of 2009 extended the line "into
-  the 45 and 32 nm technology nodes".[^lam-speed]
+  SPEED.[^novellus-hdp-2001] Novellus's 2009 release on the SPEED Max
+  says the system "extends the HDP-CVD application into the 45 and 32 nm
+  technology nodes".[^lam-speed]
 * **Applied Materials.** A first-generation HDP system in February 1996
   and the Ultima HDP-CVD Centura later that year;[^amat-1997] "Up to three
   Ultima chambers, or various combinations of Ultima and PECVD chambers,
@@ -189,9 +190,15 @@ performance or reliability".[^chen-2002-psg]
   applications".[^amat-hdp-2001]
 * **Lam Research.** The DSM 9900 CVD tool on which Roche and McVittie
   installed their charging probe.[^roche-1996]
-* **Other vendors.** The step pages also name the Trikon Planar 200
-  ({ref}`FILOX <step-011>`); no vendor description of it was retrieved
-  for this page.
+* **Not HDP: the Trikon Planar 200.** The {ref}`FILOX <step-011>` page
+  also names a Trikon Planar 200. Trikon's annual report for 1996
+  describes the Planar 200 Flowfill as a "multi-chambered cluster
+  system" in which "The plasma CVD films are deposited in one module and
+  the CVD planarizing flow layer is deposited in the Flowfill(TM)
+  module", and sets it against HDP gap fill as an alternative for
+  inter-metal dielectrics;[^trikon-10k-1996] it is therefore not an
+  HDP-CVD system, and it is listed here only because the step page names
+  it.
 
 ## At SkyWater
 
@@ -274,7 +281,10 @@ here. None of the SkyWater sources describes the fab's gas delivery,
 pumps or abatement.
 
 * **Process gases.** Silane, oxygen and argon;[^pat-hdp-novellus]
-  phosphine for PSG, "a highly toxic respiratory poison";[^wiki-ph3]
+  a phosphorus precursor for PSG[^hsiao-2005] (typically phosphine,
+  which is "used as a dopant in the semiconductor industry" and is "a
+  highly toxic respiratory poison";[^wiki-ph3] Hsiao et al.'s abstract does
+  not name the precursor);
   SiF₄ for FSG where it is used.[^denison-1996]
 * **Clean and seasoning.** Fluorine clean gases through a remote plasma
   source or dedicated injectors, followed by a seasoning
@@ -366,6 +376,8 @@ thicknesses are not public.
   with varying etch-to-deposition ratios.[^pat-hdp-novellus]
 * SkyWater PDK Authors, `metal_stack.svg` — the FOX, PSG and NILD
   dielectrics.[^pdk-04]
+* Trikon Technologies, Form 10-K for 1996 — the Planar 200 Flowfill
+  system, set against HDP gap fill.[^trikon-10k-1996]
 
 ### High-level understanding
 
@@ -424,7 +436,7 @@ thicknesses are not public.
   public.
 * The model list above is incomplete: it covers the Novellus, Applied
   Materials and Lam systems for which a public description was found,
-  not the Trikon and other HDP systems of the period.
+  not the other HDP systems of the period.
 
 <!-- footnotes -->
 
@@ -553,3 +565,7 @@ thicknesses are not public.
     *HDP-CVD deposition process for filling high aspect ratio gaps*,
     US 6,914,016 B2, granted 2005-07-05.
     <https://patents.google.com/patent/US6914016B2/en>
+[^trikon-10k-1996]: Trikon Technologies, Inc., *Annual Report on Form
+    10-K for the fiscal year ended December 31, 1996*; copy on
+    GetFilings.com, Wayback Machine capture of 2008-10-12.
+    <http://web.archive.org/web/20081012193325/http://www.getfilings.com/o0000898430-97-001539.html>
