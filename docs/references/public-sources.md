@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1126
+written page has exactly one entry here; the inventory holds 1127
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17 and 8.18 were added
@@ -356,6 +356,34 @@ CD specifications); and "Sheet4" (mask types, e.g.
 `VIM4`). Each tab can be exported anonymously as CSV. Used on the
 landing page, the steps index, every step page and the mask index.
 Tier: cross-check.
+
+**MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
+directory), retrieved 2026-09-13.
+<https://data.wafer.space/big-storage/sky130-masks/> (start pages
+<https://data.wafer.space/big-storage/sky130-masks/README.md> and
+<https://data.wafer.space/big-storage/sky130-masks/masks.html>, and one
+page per run, `mpw-001.html` to `mpw-008.html`). Images, for each of
+the open MPW shuttle runs MPW-1 to MPW-8 and each of 42 mask layers, of
+the drawn shapes in the 40 tape-out layouts placed on that run's
+reticle, rendered from the public shuttle repositories under
+<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>
+(each slot's source file, reticle frame position and SHA-1 are named
+in the metadata). Each run × mask directory (`<run>_<mask>/`) holds a
+page, `job.json` and `result.json` (the drawn layers or the Boolean
+`expr` rendered, per-mask notes, and run metadata: reticle-set ID, fab
+lot where given, identification confidence, project count) and one
+JSON file per die slot (die extent, shape count, source path), with a
+PNG per die at 0.125 µm per pixel and a stitched reticle image at
+0.5 µm per pixel. The README warns: "These are renders of *drawn* data,
+not photomask artwork: reticle pitch, 4x reduction, mirroring and the
+frame features the fab adds are not modelled. Empty images are real
+results - several masks are used by no project on a given shuttle."
+Frames A7 and C5 of each reticle are shown as "SkyWater test
+structures" and not rendered. The `expr` definitions and notes are the
+site's own reconstructions, not SkyWater data, and several notes use
+the same wording as the notes in the process-steps sheet's "Run Mask
+IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
+on the mask index. Tier: cross-check.
 
 ## 3. SkyWater Technology corporate sources
 
