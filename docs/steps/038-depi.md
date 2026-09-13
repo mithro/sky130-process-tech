@@ -109,8 +109,10 @@ see {ref}`PWBM <step-026>`) gives −0.12 to
 thresholds is strongly negative. The shift of threshold with body bias
 tells the devices apart: the body-effect coefficient is about 0.47 √V
 for a 10/4 µm `nfet_05v0_nvt`, 0.73 √V for the 7/8 µm `nfet_g5v0d10v5`
-and 0.07 √V for the zero-Vt structure (our extraction, body biases of
-0, −2.5 and −5 V). With the standard uniform-doping expression and the
+and 0.07 √V for the zero-Vt structure (our extraction: a least-squares
+fit of the threshold shifts at body biases of −2.5 V and −5 V to the
+uniform-doping expression, with the surface potential set by the
+implied doping). With the standard uniform-doping expression and the
 thick-oxide capacitance measured on the same tile (see
 {ref}`GOX100 <step-043>`), these correspond to effective body dopings
 of about 6 × 10¹⁶, 1.5 × 10¹⁷ and 1.4 × 10¹⁵ cm⁻³.[^raw-data-hv-mosfets]
