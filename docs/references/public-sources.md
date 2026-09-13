@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1479
+written page has exactly one entry here; the inventory holds 1492
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -12234,6 +12234,100 @@ sidewalls by atomic force microscopy", *Applied Physics Letters*
 profiles and critical dimensions of lines and trenches with a boot-shaped
 AFM tip. Used on the cross-section SEM and profilers page. Tier: deep
 dive.
+
+**EEPOWER-4070** — EE Power, *Agilent Technologies Offers New 4070 Series
+Testers*, new-products item, 2002-12-03.
+<https://eepower.com/new-industry-products/agilent-technologies-offers-new-4070-series-testers/>
+Agilent's 4072B and 4073B parametric testers with a capacitance meter in
+each test head, up to 40 per cent higher throughput, prices including
+on-site calibration, and shipments planned for May 2003. Used on the
+parametric tester and prober page. Tier: cross-check (vendor statement
+reported by trade press).
+
+**ELECTROGLAS-4090** — Electroglas, *The Horizon 4090*, product page;
+Wayback Machine capture of 1998-02-11.
+<https://web.archive.org/web/19980211212301/http://www.electroglas.com:80/products/4090.htm>
+A 200 mm automatic wafer prober with automatic probe-to-pad alignment,
+linear motors, OCR and GEM integration. Used on the parametric tester and
+prober page. Tier: cross-check (vendor statement).
+
+**ELECTROGLAS-4085X** — Electroglas, *Horizon 4085X*, product page;
+Wayback Machine capture of 1998-02-11.
+<https://web.archive.org/web/19980211212526/http://www.electroglas.com:80/products/4085x.htm>
+A high-force 200 mm prober for high-pin-count devices with a Class 1
+internal environment. Used on the parametric tester and prober page.
+Tier: cross-check (vendor statement).
+
+**ELECTROGLAS-4090U** — Electroglas, *Horizon 4090µ*, product page;
+Wayback Machine capture of 2001-07-13.
+<https://web.archive.org/web/20010713004941/http://www.electroglas.com:80/products/4090micro.html>
+A prober with an integrated mini-environment and SMIF for ultra-clean
+parametric test and high-force sort. Used on the parametric tester and
+prober page. Tier: cross-check (vendor statement).
+
+**ELECTROGLAS-1999** — Electroglas, *1999 Annual Report*, "Wafer Probing"
+section, web page; Wayback Machine capture of 2002-05-30.
+<https://web.archive.org/web/20020530031508/http://www.electroglas.com:80/press/pressreleases/reports/1999annual/wafer.htm>
+What a wafer prober does, how it connects to the parametric or functional
+tester through the probe card, and the high-force and 300 mm trends. Used
+on the parametric tester and prober page. Tier: cross-check (vendor
+statement).
+
+**TEL-PROBER** — Tokyo Electron, *P-8XL & P-12XL Series Wafer Prober*
+(Certified Used Equipment), product page, accessed 2026-09-13.
+<https://www.telcertifiedused.com/cue/buy/product-test.jsp> Refurbished
+TEL P-8 and P-12 series probers; the P-8XL handles 100–200 mm wafers.
+Used on the parametric tester and prober page. Tier: cross-check (vendor
+statement).
+
+**FORMFACTOR-SUMMIT200** — FormFactor, *Cascade SUMMIT200 Probe Station*,
+product page, accessed 2026-09-13.
+<https://www.formfactor.com/product/probe-systems/200-mm-systems/summit200/>
+A 200 mm semi- and fully automatic probe system for R&D, device
+characterisation and niche production over −60 °C to 300 °C. Used on the
+parametric tester and prober page. Tier: cross-check (vendor statement).
+
+**FORMFACTOR-PMC200** — FormFactor, *Cascade PMC200 — 200 mm Cryogenic
+Probe Station*, product page, accessed 2026-09-13.
+<https://www.formfactor.com/product/probe-systems/wafer-multi-chip-cryogenic-systems/pmc200/>
+A manual probe system for wafers up to 200 mm in high vacuum, down to 77 K
+with liquid nitrogen or below 7 K with liquid helium. Used on the
+parametric tester and prober page. Tier: cross-check (vendor statement).
+
+**LINHOLM-1994** — L. W. Linholm, R. A. Allen and M. W. Cresswell,
+"Microelectronic test structures for feature placement and electrical
+linewidth metrology", *Proc. SPIE* **10274**, 1027407 (1994).
+<https://doi.org/10.1117/12.187462> A review of electrical test structures
+for feature placement and line width, measured on commercial test
+equipment. Used on the parametric tester and prober page. Tier: deep dive.
+
+**LUKASZEK-1990** — W. Lukaszek, K. G. Grambow and W. J. Yarbrough, "Test
+chip based approach to automated diagnosis of CMOS yield problems", *IEEE
+Transactions on Semiconductor Manufacturing* **3**(1), 18–27 (1990).
+<https://doi.org/10.1109/66.47972> A test chip built by systematic
+structural decomposition for unambiguous diagnosis of electrical faults.
+Used on the parametric tester and prober page. Tier: deep dive.
+
+**BHUSHAN-2006** — M. Bhushan, M. B. Ketchen, S. Polonsky and A. Gattiker,
+"Ring oscillator based technique for measuring variability statistics",
+*2006 IEEE ICMTS*, pp. 87–92. <https://doi.org/10.1109/ICMTS.2006.1614281>
+Threshold-voltage variation from an array of ring oscillators read with a
+frequency counter. Used on the parametric tester and prober page. Tier:
+deep dive.
+
+**SPANOS-1992** — C. J. Spanos, "Statistical process control in
+semiconductor manufacturing", *Proceedings of the IEEE* **80**(6),
+819–830 (1992). <https://doi.org/10.1109/5.149445> A survey of SPC schemes
+with semiconductor examples. Used on the parametric tester and prober
+page. Tier: deep dive.
+
+**BROZ-1999** — J. J. Broz and R. M. Rincon, "Probe contact resistance
+variations during elevated temperature wafer test", *Proc. International
+Test Conference 1999*, pp. 396–405.
+<https://doi.org/10.1109/TEST.1999.805761> Contact resistance of W, WRe,
+BeCu and alloy probes on aluminium pads at 85 °C and the role of oxide
+from local Joule heating. Used on the parametric tester and prober page.
+Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
