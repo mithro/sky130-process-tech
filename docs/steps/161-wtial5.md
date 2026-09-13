@@ -245,11 +245,11 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 ## Resources required
 
 * **Sputter targets** — titanium and/or Ti:W, Al–0.5 wt.% Cu, Ti:W
-  (10 wt.% Ti[^pat-tiw-hitachi]); SkyWater's filings name Honeywell Electronic Materials (2021
-  S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
-  as sputter-target suppliers.[^sec-01][^sec-02] A 1.2 µm film consumes Al–Cu target
-  material faster per wafer than any other level (our arithmetic from the
-  thicknesses[^pdk-04]).
+  (10 wt.% Ti[^pat-tiw-hitachi]); SkyWater's filings name Honeywell
+  Electronic Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal
+  2023 10-K) as sputter-target suppliers.[^sec-01][^sec-02] A 1.2 µm film
+  consumes Al–Cu target material faster per wafer than any other level (our
+  arithmetic from the thicknesses[^pdk-04]).
 * **Argon** for sputtering and pre-clean; **nitrogen** for venting.
 * **Chamber shields, clamps and electrostatic-chuck consumables**.
 * **Monitor wafers** for sheet resistance, stress, reflectivity and
