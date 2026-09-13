@@ -4615,8 +4615,9 @@ high density plasmas. V. Comparison between quantitative chemical
 analysis of photoresist and oxide masked polysilicon gates etched in
 HBr/Cl₂/O₂ plasmas", *Journal of Vacuum Science & Technology B*
 **15**(1), 88–97 (1997). <https://doi.org/10.1116/1.589259> Chemical
-analysis of HBr/Cl₂/O₂ gate-etch sidewalls under resist and oxide masks.
-Used on the etch category page.
+analysis of HBr/Cl₂/O₂ gate-etch sidewalls under resist and oxide masks;
+the passivation layer is "a chlorine rich silicon oxide film". Used on
+the etch category page.
 Also used on the silicon and polysilicon plasma etcher page.
 Tier: deep dive.
 Also used on the etch and chamber-clean gases material page.
@@ -7591,7 +7592,8 @@ on step 115. Tier: deep dive.
 of Aluminum Alloys in BCl₃/Cl₂ Plasmas", in *Semiconductor Fabrication:
 Technology and Metrology*, ASTM STP 990, ASTM International, 1989, pp.
 202–211. <https://doi.org/10.1520/STP26039S> Plasma etching of aluminium
-alloys in BCl₃/Cl₂. Used on step 114.
+alloys in BCl₃/Cl₂, including the etch rate of "native aluminum oxide
+films". Used on step 114.
 Also used on the metal plasma etcher page.
 Tier: deep dive.
 Also used on the etch and chamber-clean gases material page.
