@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 119 of 171 |
+| **Step number** | 119 of 171[^steps-sheet] |
 | **Step code** | `VIME` |
 | **Category** | {ref}`Etch <category-etch>` |
 | **Phase** | BEOL — via 1, metal 2, via 2 |
@@ -422,3 +422,6 @@ recipe is not public); the shared physics is set out at
     apparatus for producing magnetically-coupled planar plasma*,
     US 4,948,458 A, granted 1990-08-14.
     <https://patents.google.com/patent/US4948458A/en>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
