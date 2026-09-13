@@ -388,8 +388,8 @@ only.[^steps-sheet] We read the codes for the via 2 (`VIM2`) and via 3
 the via 4 (`VIM4`) plate as denoting a binary (chrome-on-quartz) mask,
 in each case for 248 nm exposure: the codes use the abbreviations mask
 makers and the patent literature use for these
-types.[^photronics-abr][^pat-bim-tsmc] We also read a digit 4 in each
-code as the 4× reduction ratio; the tab does not define its codes. The
+types.[^photronics-abr][^pat-bim-tsmc] We also read a digit 4 in each code, less
+certainly, as the 4× reduction ratio; the tab does not define its codes. The
 tab does not say to which runs these types apply, and it gives no type
 for any other mask.
 
