@@ -8403,6 +8403,37 @@ derivatives. The second notebook's comments: "the data gets noisy below
 the resolution of the published data, not about the process. Used on
 step 171. Tier: high-level.
 
+**RAW-DATA-HV-MOSFETS** — SkyWater PDK Authors (measurements by CoolCAD
+Electronics LLC), measured data for the 5 V, 10/16 V and 20 V
+transistors, the native and zero-Vt NMOS, the ESD NMOS and the
+thick-oxide gate capacitors: IC-CAP `.mdm` files in the
+`sky130_fd_pr/cells/` directories `nfet_g5v0d10v5`, `pfet_g5v0d10v5`,
+`nfet_g5v0d16v0`, `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
+`nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8` and
+`esd_nfet_g5v0d10v5` of the raw-data repository, 2022 (Apache 2.0).
+<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+576 files: 273 I_D–V_G sweeps (V_DS 0.1 V and the highest drain
+voltage, three body biases), 273 matching I_D–V_D sweeps (gate in 1 V
+steps) and 30 C–V sweeps from −5 V to +5 V. File names give the drawn
+W, L and multiplier and the test-tile module and pad numbers, which
+match the rows of RAW-DATA-TESTTILE-PADS. Headers give only the sweeps,
+compliance and instrument-channel names — no temperature, date, lot,
+wafer, die or measurement frequency. The drain is swept to at most 5 V
+(3 V and 1.8 V on the 3.3 V native and 1.8 V ESD devices, 10 V on the
+symmetric 16 V structures), so the files do not bear on breakdown or on
+the 10.5–20 V ratings. Labelling points that affect readings: the ten
+module-7203 files in `nfet_g5v0d16v0` are swept with negative gate and
+drain voltages and the pad list calls module 7203 "VHV DE PMOS"; the
+`nfet_20v0_nvt` directory holds module 4451, which the pad list calls
+`n20zvtvhv1` at W/L 30/5.5 µm, m = 2 — the geometry of the PDK's
+`nfet_20v0_zvt` e-test structure, not of `nfet_20v0_nvt` (30/1.0 µm);
+one 0.42/0.5 µm `nfet_g5v0d10v5` structure (module 8389, pads 11–12)
+carries no current. Every threshold, current, resistance, body-effect
+coefficient and capacitance quoted from these files on this site is our
+extraction from the published measurements, with the method stated
+where it is quoted. Used on steps 001, 026, 030, 038, 043 and 171, the
+test category page and the overview. Tier: cross-check.
+
 ## 9. Evidence about specific tools at SkyWater
 
 Strength scale: **strong** = a SkyWater or tool-vendor statement;
