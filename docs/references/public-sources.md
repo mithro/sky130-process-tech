@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1149
+written page has exactly one entry here; the inventory holds 1157
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -8714,6 +8714,79 @@ high-dose arsenic implants on multi-species high-current implanters,
 with energetic boron tied to the post-analyser acceleration voltage and
 surface boron sputtered from the beam line. Used on the high-current
 implanter page. Tier: deep dive.
+
+#### High-energy implanter (first cited there)
+
+**VARIAN-VIISTA3000** — Semiconductor Online, *High Energy Ion
+Implantation System* (Varian Semiconductor Equipment product
+description of the VIISta 3000), accessed 2026-09-13.
+<https://www.semiconductoronline.com/doc/high-energy-ion-implantation-system-0001>
+The single-wafer VIISta 3000 with "DC tandem-based high-energy ion
+acceleration", energies to "greater than 3.75 MeV", a claim to be "the
+only high-energy ion implanter that directly measures and interlocks the
+final implant energy", and electrostatic scanning "about 10 times more
+often than alternative (magnetic scan) approaches". Used on the
+high-energy implanter page. Tier: high-level (vendor description
+reproduced by a trade site).
+
+**TOKORO-2000** — N. Tokoro, D. Holbrook and D. Hacker, "Introduction
+of the Varian VIISta 3000 single wafer high-energy ion implanter",
+*Proc. 2000 International Conference on Ion Implantation Technology*,
+pp. 368–371. <https://doi.org/10.1109/IIT.2000.924164> The VIISta 3000
+for "200 and 300 mm wafer processes": a Tandetron DC beam line with the
+VIISta 810's electrostatic scanning and dose control, beam currents,
+uniformity and dose shift from resist outgassing. Used on the
+high-energy implanter page. Tier: deep dive.
+
+**TOKORO-1996** — N. Tokoro, T. Sakase, C. M. Bowen, P. E. Maciejowski
+and J. P. O'Connor, "The beam performance of the Genus Tandetron 1520 MeV
+implanter", *Proc. 11th International Conference on Ion Implantation
+Technology* (1996), pp. 443–446.
+<https://doi.org/10.1109/IIT.1996.586393> Genus's third-generation MeV
+implanter after the G1500 and G1510: beam-line design and boron and
+phosphorus beam performance. Used on the high-energy implanter page.
+Tier: deep dive.
+
+**SUETSUGU-2000** — N. Suetsugu, H. Kariya, M. Kabasawa and M. Sugitani,
+"Energy accuracy and control method of the NV-GSD-HE", *Proc. 2000
+International Conference on Ion Implantation Technology*, pp. 448–451.
+<https://doi.org/10.1109/IIT.2000.924184> Why the energy of an RF-linac
+beam is harder to fix than that of an electrostatic one, and how the
+NV-GSD-HE's Hall-probed final energy magnet measures it. Used on the
+high-energy implanter page. Tier: deep dive.
+
+**WILSON-1996** — S. Wilson and E. McIntyre, "Introducing the
+NV-GSD/VHE very high energy implanter", *Proc. 11th International
+Conference on Ion Implantation Technology* (1996), pp. 375–378.
+<https://doi.org/10.1109/IIT.1996.586351> The linac-based NV-GSD/VHE:
+B⁺ above 1 pmA near 1.7 MeV, B⁺⁺ near 3 MeV and P⁺⁺⁺ near 5 MeV, with
+the source, injector and end station of the NV-GSD/HE. Used on the
+high-energy implanter page. Tier: deep dive.
+
+**NAMAROFF-2000** — M. Namaroff and J. Merrill, "High energy, high
+current performance of the GSD/VHE implanter for the production of high
+dose p-type buried layers", *Proc. 2000 International Conference on Ion
+Implantation Technology*, pp. 411–414.
+<https://doi.org/10.1109/IIT.2000.924175> MeV boron buried layers at
+1.3–1.6 MeV and up to 2 × 10¹⁵ cm⁻² on the GSD/VHE, with source life and
+uniformity from a production test. Used on the high-energy implanter
+page. Tier: deep dive.
+
+**PAT-LINAC-EATON** — H. F. Glavish and A. S. Denholm (Eaton
+Corporation), *Accelerator for ion implantation*, US 4,667,111 A,
+granted 1987-05-19. <https://patents.google.com/patent/US4667111A/en>
+The multi-cell RF ion accelerator for implantation, each cell an
+electrode on an RF resonant tank circuit, giving "energies on the order
+of 1 mev per charge state". Used on the high-energy implanter page.
+Tier: cross-check (patent).
+
+**PAT-LINAC-AXCELIS** — W. F. Divergilio (Axcelis Technologies),
+*Integrated resonator and amplifier system*, US 6,653,803 B1, granted
+2003-11-25. <https://patents.google.com/patent/US6653803B1/en> Linac
+resonator modules for high-energy implanters; its background calls
+1.5 MeV "typical for the deep implants", requires 300–700 keV capability
+and names the "Eaton GSD/HE and GSD/VHE ion implanters". Used on the
+high-energy implanter page. Tier: cross-check (patent).
 
 ## 9. Evidence about specific tools at SkyWater
 
