@@ -70,14 +70,16 @@ shallow boron dose in a high-Vt PMOS:
    in combination with an arsenic first adjustment).[^pat-vt-rrr]
 
 The published test-tile measurements constrain these readings only
-loosely. The high-Vt increment over `pfet_01v8` is about twice as large
-at L = 0.15 µm as at L = 8 µm — 0.119 V against 0.059 V at W = 7 µm and
-0.110 V against 0.064 V at W = 0.42 µm — while the threshold rise for
-1.8 V of reverse body bias at 7/8 µm is almost the same for the two
-devices (0.352 V against 0.341 V; our extraction from the published
+loosely. The high-Vt increment over `pfet_01v8` is larger at
+L = 0.15 µm than at L = 8 µm — 0.119 V against 0.059 V at W = 7 µm
+(twice) and 0.110 V against 0.064 V at W = 0.42 µm (1.7 times) — while
+the threshold rise for 1.8 V of reverse body bias is almost the same for
+the two devices at 7/8 µm (0.352 V against 0.341 V) but not at
+7/0.15 µm (0.233 V against 0.159 V; our extraction from the published
 measurements, by maximum-transconductance extrapolation at
 V_DS = −0.1 V).[^raw-data-lv-mosfets] The PDK's e-test nominals show the
-same doubling at W = 7 µm (0.107 V against 0.057 V).[^pdk-07] A
+same doubling at W = 7 µm (0.107 V against 0.057 V) and a smaller rise
+at W = 0.42 µm (0.114 V against 0.082 V).[^pdk-07] A
 nearly unchanged long-channel body effect suggests that the extra
 high-Vt doping changes the net doping of the depleted region only
 slightly, as a dose confined close to the surface would, and a larger
