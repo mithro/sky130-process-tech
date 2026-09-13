@@ -58,7 +58,7 @@ deep-dive entries per step page and twelve per category page
 
 ## Phase 3 — Cross-cutting pages
 
-- [ ] Machine pages + machine ↔ step index
+- [~] Machine pages + machine ↔ step index (index page on branch `topic/machines-index`)
 - [ ] Materials pages + material ↔ step index
 - [~] Mask pages + mask ↔ step ↔ GDS index — index page reviewed and merged 2026-09-13; per-mask pages not started
 - [~] sky130B ReRAM module page (RRAM tier between met1 and met2: r1c stack, split via; public source: sky130_fd_pr_reram documentation; branch `topic/reram`)
