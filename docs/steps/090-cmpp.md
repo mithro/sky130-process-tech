@@ -24,12 +24,11 @@ and the surface is flat to within the depth of focus of the contact
 lithography that follows.
 
 How far down the polish goes is the crux of the step, and it is not
-public. Two readings are consistent with the PDK and the step names
-used in this reference. On the first, the polish is a
+public. Two readings are consistent with the PDK. On the first, the
+polish is a
 *fixed-removal* oxide planarisation that leaves a controlled thickness
 of {term}`PSG` above the gate caps. On the second — the one the PDK's
-0.2 µm nitride/oxide cap supports and this page follows, in line with
-the "sacrificial" label used in this reference — the polish
+0.2 µm nitride/oxide cap supports and this page follows — the polish
 continues until it reaches the tops of the caps over the densest poly
 arrays, using the {ref}`GATENIT <step-058>` nitride as a
 {term}`CMP` stop in the same way the {ref}`ISONIT <step-003>`
@@ -249,8 +248,7 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 
 * Whether the polish stops on the gate caps or leaves a controlled
   glass thickness above them is not public; the cap-stop reading is
-  our inference from the PDK's 0.2 µm cap entry, and this page
-  follows the "sacrificial" label used in this reference.
+  our inference from the PDK's 0.2 µm cap entry.
 * The slurry, removal amount, endpoint method and {term}`post-CMP clean` are
   not public.
 * Whether SkyWater uses a brush scrubber, and which, is not stated on

@@ -20,17 +20,16 @@ the freshly cleaned silicon and poly at the bottom of each hole,
 where the next step ({ref}`CSIL <step-098>`) will react it into
 titanium disilicide; the titanium nitride covers the titanium and
 the oxide walls of the hole and is the barrier and adhesion layer on
-which the {term}`CVD` tungsten of {ref}`WDEP <step-099>` nucleates. The
-"1" in the code marks it as the first of the flow's liner
-depositions — {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>` and
-later are the TiN-only liners of the contact and {term}`via` levels — and
-"IMP" names the deposition technique.
+which the {term}`CVD` tungsten of {ref}`WDEP <step-099>` nucleates. It
+is the first of the liner depositions described in this reference —
+{ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>` and later are the
+TiN-only liners of the contact and {term}`via` levels.
 
 The public evidence is unusually direct for a tool assignment.
 SkyWater's capability list gives, under "AMAT PVD Metal", "Imp TiN"
 and "Collimated Ti" alongside "ESC TiN", TiW and the aluminium
-alloys,[^skw-01] and the step list used in this reference calls the
-step "IMP Ti/TiN". Ionised {term}`PVD` is the technique Rossnagel and
+alloys,[^skw-01] and this reference describes the liner as deposited
+by that ionised route (inference). Ionised {term}`PVD` is the technique Rossnagel and
 Hopwood introduced for exactly this purpose — filling the bottom of
 a hole that line-of-sight sputtering cannot
 reach[^rossnagel-1993][^rossnagel-1994] — and Applied Materials sold
@@ -166,8 +165,8 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
   the chamber types; the platform (Endura is the AMAT 200 mm PVD
   cluster of the era[^amat-endura]) is an **inference**, as is the
   assignment of this step to the IMP TiN and collimated Ti chambers,
-  with which the step name used in this reference ("IMP Ti/TiN") is
-  consistent. Whether the titanium is deposited by IMP or by collimation
+  from those chamber types and the contact's aspect ratio. Whether the
+  titanium is deposited by IMP or by collimation
   is not public; SkyWater's list names collimation for Ti and IMP for
   TiN.
 * **Sputter targets.** SkyWater's S-1 names Honeywell Electronic
