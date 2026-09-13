@@ -79,9 +79,12 @@ beside the ring.
   lateral path from the saw-cut edge to the circuit. An opening through
   them, lined by nitride, interrupts that path; the moisture and ionic
   contamination it blocks are the drivers of corrosion Comizzoli et al.
-  reviewed,[^comizzoli-1986] and a seal-ring patent describes the
-  passivation nitride as "a very good barrier of moisture and ionic
-  contamination".[^pat-sealring-zeevo] That this is the purpose of
+  reviewed,[^comizzoli-1986] and a seal-ring patent, while calling the
+  passivation nitride "a very good barrier of moisture and ionic
+  contamination", shows "a moisture path … through the passivation
+  oxide" beneath it at the die periphery.[^pat-sealring-zeevo] Even an
+  opening through only the thin passivation oxide would let the nitride
+  close that path (inference). That this is the purpose of
   SKY130's `nsm` ring is our inference ({ref}`NSM <step-165>`).
 * **A crack stop.** A trench through the dielectric along the saw line
   interrupts crack propagation from dicing, the function an IBM patent
