@@ -91,10 +91,77 @@ step provide:
 
 Run `uv run tools/check_steps.py`, `uv run tools/check_refs.py`,
 `uv run tools/check_machines.py` (machine-page headings and step lists),
-`uv run tools/check_materials.py` (material-page headings, index rows covered and step lists) and
+`uv run tools/check_materials.py` (material-page headings, index row
+keys and class-page table, rows covered, step lists and summary table) and
 `uv run sphinx-build -W -q -b html docs docs/_build/html` before
 finishing. Report the branch name, commits, and any claims you were
 unable to source.
+
+## Material-page writer brief
+
+You are writing `docs/materials/<slug>.md` for one consumable class.
+The three pilot pages (wet chemicals, lithography materials, sputter
+targets) are the model; `tools/check_materials.py` enforces the points
+marked *(checked)*.
+
+* **Rows you own.** The class-page table under "How to read the index"
+  in `docs/materials/index.md` assigns every main-table row, by its key,
+  to exactly one class page: the page for the row's primary role, which
+  is the first term of its *Class* cell *(checked)*. Cover exactly your
+  page's keys. A row whose *Class* cell names your class only as a second
+  term (nitrogen as an anneal ambient, say) is discussed with a link to
+  the {ref}`materials index <materials-table>`, not listed. If a row
+  seems misassigned, or mixes two classes, report it; a split or
+  reassignment is a separate index change.
+* **Template** *(checked)*. Label `(material-<slug>)=`; the H2 and H3
+  headings of the checker; a summary table before the first H2 whose
+  first row is "What they do" and whose last two rows are "SkyWater
+  evidence" and "SKY130 steps | N steps; see {ref}`…
+  <material-<slug>-steps>`", with N the number of steps listed.
+* **Steps section** *(checked)*. Under the `(material-<slug>-steps)=`
+  label and "SKY130 steps that use this class": a line reading
+  "Materials index rows covered:", a blank line, and one bullet per
+  owned row in the form `` * `key` — short name `` (no footnotes); then
+  a line reading "Steps:", a blank line, and one paragraph of
+  `{ref}`CODE <step-NNN>`` links, in ascending order, each with the
+  step's code as its text, together the union of the rows' *Steps*
+  cells ("all except" cells count as their complement). Grouping text
+  may follow.
+* **Publishing the page in the index** *(checked)*. Replace
+  `` `slug` (not yet written) `` in the class-page table with
+  `{ref}`slug <material-slug>``, link the *Class* cell of every owned
+  row to the page, add the page to the toctree, and link the class's
+  bullet under "Consumable classes".
+* **Step pages' readings.** Wherever the page says what a SKY130 step
+  uses or does, attribute it: "the NS19 page reads …", "on the step
+  pages' readings". Never let a step code or step-list name stand in for
+  evidence (Common rule 2); where the name is the only evidence, write
+  "the step list calls X "…" and does not explain it; its step page
+  reads …". The same goes for the page's introduction and summary table.
+* **Suppliers.** SkyWater's filings name suppliers, not the products,
+  chemistries or grades SkyWater buys from them. Say so in *At
+  SkyWater*, and where *Representative materials and grades* quotes a
+  supplier's catalogue, say that the statements describe the catalogue,
+  not SkyWater's purchases, even when the supplier is named in a filing.
+  Company-lineage links (Honeywell → Solstice, Air Products → Moses Lake,
+  Praxair → Linde, Versum → EMD, KMG → CMC/Entegris) stay open questions
+  unless a public source joins them. When Cypress reports are used as
+  evidence for the fab, cite the S-1 for the fab's Cypress history.
+* **Standards** are cited through store or catalogue listings, with the
+  revision, status and access date.
+* **Links from other pages.** Link-only edits: on each covered step
+  page, put `{ref}`existing words <material-slug>`` on the first mention
+  of a material of the class in *Resources required*, without adding
+  words ("see", parentheses); on each machine page that consumes the
+  class, one sentence in *Consumables and facilities* and one *Related
+  pages* bullet.
+* **Inventory.** New sources get entries in the material-pages section
+  of `docs/references/public-sources.md`, and the header count must
+  equal the number of `**KEY** —` lines, with no duplicate keys. An
+  existing entry gets a separate line "Also used on the <class> material
+  page." after its "Tier:" text.
+
+Run all four checkers and the `-W` build as in the step-page brief.
 
 ## Reviewer brief (technical accuracy and consistency)
 
