@@ -544,7 +544,7 @@ seal-ring etches (weak) and on the nitride etches (the Lam 9400 TCP
 inferred, the DPS II medium, the Lam 4400 weak); the "C1" oxide medium
 on every cap oxide; the HDP note, a medium TEOS grade and a weak "C1"
 liner on every inter-level oxide; the technician profile graded as a
-SkyWater statement; one Mirra wording, AIT/SP1 inspection and the
+SkyWater statement; one Mirra wording, the posting read as AIT/SP1 inspection and the
 "Track ammonia clean" and "IPA clean" entries on every CMP page;
 *inference* or *weak* on the tilted implants; bench and asher
 assignments graded as inferences on the cleans; and CD metrology on

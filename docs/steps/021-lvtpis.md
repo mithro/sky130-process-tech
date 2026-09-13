@@ -109,8 +109,10 @@ crust stage cannot be hurried.
   strong for existence.
 * **DNS wet bench / FSI Mercury** for HF/SC1/SC2.[^skw-01] Strength:
   strong for existence.
-* **KLA-Tencor SP1 and AIT** ("SEM/AIT/KLA/SP1/EV300/1X")[^job-01] for
-  particle and residue inspection. Strength: medium.
+* **KLA-Tencor SP1 and AIT** for particle and residue inspection,
+  our reading of "SP1" and "AIT"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 

@@ -126,8 +126,9 @@ polisher, which is what this step needs.
   mentions "a SEZ etcher tool".[^skw-07] Strength: strong for
   existence; a brush scrubber is not named on any public page (open
   question).
-* **Defect inspection — KLA AIT / SP1** per a SkyWater job
-  posting.[^job-01] Strength: medium.
+* **Defect inspection — KLA AIT / SP1**, our reading of "AIT" and "SP1"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 

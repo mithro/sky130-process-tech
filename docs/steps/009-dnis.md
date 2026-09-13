@@ -112,8 +112,9 @@ fab:
   clean. Strength: strong for existence; the assignment is an inference
   from their HF/SC1/SC2 chemistry, SC-2 being listed only for these two
   benches.
-* **Patterned-wafer inspection — KLA-Tencor AIT.**[^job-01] Strength:
-  medium.
+* **Patterned-wafer inspection — KLA-Tencor AIT**, our reading of "AIT"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 
