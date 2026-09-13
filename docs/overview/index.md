@@ -603,7 +603,9 @@ sources, in the order in which the thermal steps occur.
    {ref}`LINOX <step-010>`) and the nitride hard mask
    ({ref}`ISONIT <step-003>`) are furnace steps: thermal oxidation runs
    at 800–1200 °C[^wiki-thox] and LPCVD nitride at roughly
-   700–800 °C (typical values).[^wiki-sin][^txt-02] On the
+   700–800 °C (typical value),[^txt-02] a tube-furnace process that
+   Wikipedia describes as working "at rather high
+   temperature".[^wiki-sin] On the
    {ref}`DNM <step-007>` page's reading, this heat also drives the deep
    N-well implanted just before the liner oxidation.
 2. **Well anneal.** {ref}`RTAI <step-034>` activates the ten well and
@@ -618,12 +620,15 @@ sources, in the order in which the thermal steps occur.
    logic gate oxidation also re-oxidises the ONO.[^pat-03]
 5. **Gate film.** Silicon deposited below about 580 °C is amorphous, as
    SKY130's gate film is described ({ref}`SAGD <step-048>`; typical
-   value);[^wiki-poly][^txt-01] the caps and the post-etch re-oxidation
+   value);[^voutsas-1992] the caps and the post-etch re-oxidation
    ({ref}`GATENIT <step-058>`, {ref}`POC <step-059>`,
    {ref}`IOX45 <step-063>`) follow, at conditions that are not public.
-6. **Junction anneals.** Three rapid thermal anneals activate the tips
-   and halos and the source/drains ({ref}`TIPRTAD <step-075>`,
-   {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`); a soak of
+6. **Junction anneals.** Rapid thermal anneals follow the tip and
+   source/drain implants ({ref}`TIPRTAD <step-075>`,
+   {ref}`RTAD <step-088>`), and a second one follows the polished glass
+   ({ref}`RTAD2 <step-092>`, whose two possible purposes — a final
+   source/drain anneal or a dielectric anneal — the step page
+   discusses as inferences); a soak of
    1000–1050 °C for a few seconds, or a spike, is the typical 130 nm-era
    choice.[^txt-05][^txt-10] After them the junctions — 0.1 µm deep in
    the PDK's assumptions[^pdk-03] — must not move, and every later step
@@ -638,14 +643,17 @@ sources, in the order in which the thermal steps occur.
 8. **Back end.** Once aluminium is on the wafer, from
    {ref}`TIAL6 <step-112>` onwards, depositions typically stay below
    about 450 °C;[^txt-02] tungsten CVD for the plugs runs at roughly
-   400–450 °C (typical).[^wiki-wf6][^txt-01] The oxide, nitride and
+   400–450 °C (typical value),[^txt-01] the low end of the "300 and
+   800 °C" that Wikipedia gives for hydrogen reduction of
+   WF₆.[^wiki-wf6] The oxide, nitride and
    capacitor films of the back end are described on their step pages as
    low-temperature plasma depositions (inference).
 9. **Final alloy.** The last heat is the alloy anneal
    ({ref}`ALLY <step-170>`), read as a forming-gas anneal, typically
    350–450 °C.[^txt-02] In the
    `sky130B` variant every thermal step after the ReRAM stack is also
-   seen by its 5 nm switching oxide ({ref}`overview-sky130b-reram`).
+   seen by its 5 nm switching oxide (0.005 µm in the ReRAM tech file,
+   {ref}`overview-sky130b-reram`).
 
 (overview-open-questions)=
 ## Key open questions
@@ -1004,8 +1012,10 @@ public.
     Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
     2000, ISBN 978-0-13-085037-9.
     <https://openlibrary.org/isbn/9780130850379>
-[^wiki-poly]: Wikipedia, *Polycrystalline silicon*.
-    <https://en.wikipedia.org/wiki/Polycrystalline_silicon>
+[^voutsas-1992]: A. T. Voutsas and M. K. Hatalis, "Structure of
+    As-Deposited LPCVD Silicon Films at Low Deposition Temperatures and
+    Pressures", *Journal of The Electrochemical Society* **139**(9),
+    2659–2665 (1992). <https://doi.org/10.1149/1.2221280>
 [^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
     Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
     978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
