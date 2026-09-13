@@ -30,11 +30,14 @@ nitride over 1000 Å of TEOS oxide.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-1
 Under the oxide lies the top of the metal-5 stack. No public source
 gives its films; this reference reads it, with the lower levels, as a
 TiW-capped Al–Cu stack ({ref}`WTIAL5 <step-161>`; inference from the
-300 Å TiW caps of the S8 metal stacks in a Cypress
-report[^cyp-qtp-113005]). If so, the etch — or the clean that follows
-— must also remove the TiW cap over the pad to expose aluminium for
-bonding, or leave a bondable TiW surface; which SKY130 does is not
-public. The openings are large: in SkyWater's GPIO pad cell the
+300 Å TiW caps of the S8 stacks in a Cypress report[^cyp-qtp-113005]
+and from Cypress's 2014 report, which moved the lower levels to Ti/TiN
+caps but qualified the S8P change "excluding top metal layers" and kept
+"300A TiW" on the S8DI top metal[^cyp-qtp-123907]). If so, the etch or
+a following clean must remove the TiW over the pad: Danzl and McLaurin
+report that TiW left on pads causes wire-bond non-sticks and that
+plasma etching alone left a residue.[^danzl-1997] How SKY130 does this
+is not public. The openings are large: in SkyWater's GPIO pad cell the
 opening is 60 µm × 70 µm inside a 65.4 µm × 75.4 µm metal-5
 pad,[^pdk-io-gpiov2] and the smallest allowed opening is 2 µm
 (`PDMCD`[^pdk-03]).
@@ -69,7 +72,7 @@ around every pad.
   TOF-SIMS for measuring fluorine contamination on aluminium bond
   pads.[^teo-2015]
 * **Removing a refractory cap (if present).** A TiW or TiN
-  anti-reflective cap on aluminium is not a good bond surface; Danzl
+  {term}`anti-reflective cap` on aluminium is not a good bond surface; Danzl
   and McLaurin describe using concentrated hydrogen peroxide to remove a
   TiW ARC from aluminium bond pads,[^danzl-1997] and TiW is also etched
   in fluorine-containing plasmas, as Liu and Kuo showed for CF₄-based
@@ -103,12 +106,14 @@ an aluminium top metal (SKY130's recipe is not public):
 3. **Oxide etch.** A fluorocarbon step through the thin oxide, whose
    mechanism Oehrlein et al. and Schaepkens et al.
    describe;[^oehrlein-1994b][^schaepkens-1999] in practice nitride and
-   oxide are often cleared in one chemistry with a timed over-etch.
+   oxide are often cleared in one chemistry with a timed
+   {term}`over-etch`.
 4. **Metal floor.** The etch stops on aluminium (AlF₃ does not
    volatilise[^hess-1982]); a TiW cap, if present, is removed by the
    fluorine over-etch or by a separate wet or plasma step
    (industry practice;[^liu-2007-tiw][^danzl-1997] SKY130's choice is not
-   public). Endpoint by optical emission as the nitride clears; the pad
+   public). {term}`Endpoint <endpoint>` by optical emission as the
+   nitride clears; the pad
    area is a small fraction of the wafer, the low-open-area condition
    Wodecki discusses.[^wodecki-1999]
 5. **Fluorine removal.** An in-situ argon, O₂ or mixed plasma after the
@@ -231,7 +236,7 @@ an aluminium top metal (SKY130's recipe is not public):
 * The etch chemistry, tool, endpoint and any fluorine-removal treatment
   are not public.
 * The passivation thickness to be etched is uncertain: 0.63 µm on the PDK
-  diagram[^pdk-04] against about 0.8–1.0 µm in the Cypress reports for
+  diagram[^pdk-04] against about 0.7–1.0 µm in the Cypress reports for
   other processes.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
 * Whether the same etch opens laser-fuse windows (see
   {ref}`PDM <step-168>`) is not public.
@@ -251,7 +256,8 @@ an aluminium top metal (SKY130's recipe is not public):
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
 [^pdk-io-gpiov2]: SkyWater PDK Authors, *skywater-pdk-libs-sky130_fd_io*
     repository, cell `sky130_fd_io__top_gpiov2`, GDS layout
-    `sky130_fd_io__top_gpiov2.gds`, retrieved 2026-09-13.
+    `sky130_fd_io__top_gpiov2.gds` and LEF abstract
+    `sky130_fd_io__top_gpiov2.lef`, retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-libs-sky130_fd_io/tree/main/cells/top_gpiov2>
 [^cyp-qtp-113005]: Cypress Semiconductor, *Product Qualification
     Plan, QTP# 113005: 64K Serial Non-Volatile SRAM Product Family, S8
@@ -346,7 +352,7 @@ an aluminium top metal (SKY130's recipe is not public):
 [^hunter-2012]: S. Hunter, J. L. Clark, D. Hornberger and L. Rubio, "Use
     of Wire Bonding to Study Bond Pad Damage from Wafer Probe",
     *International Symposium on Microelectronics* **2012**(1), 384–395
-    (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-tp41>
+    (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-TP41>
 [^wodecki-1999]: N. Wodecki, "Low open area multilayered dielectric
     film etch endpoint detection using EndPoint Plus", *Proc. SPIE*
     **3882**, Process, Equipment, and Materials Control in Integrated

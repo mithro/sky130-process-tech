@@ -159,8 +159,8 @@ Metal 5 is the top routing level and the interface to the package:
   aluminium bond pads over SiO₂,[^hunter-2012] Marsh et al. compared
   copper ball bonds on two pad aluminium thicknesses,[^marsh-2016] and
   Hess et al. evaluated the wire-bond and package-stress reliability of
-  bond-over-active pad layouts for 0.13 µm CMOS.[^hess-2003] The TiW cap must be removed from the pad at the
-  opening; Danzl and McLaurin used hydrogen peroxide to remove a TiW
+  bond-over-active pad layouts for 0.13 µm CMOS.[^hess-2003] If the cap is TiW it must be removed from the pad at the
+  opening ({ref}`PDME <step-169>`); Danzl and McLaurin used hydrogen peroxide to remove a TiW
   anti-reflective coating from aluminium bond pads.[^danzl-1997]
 * **Filling via 4 and contacting the second capacitor.** On our reading
   above, this deposition also makes the via-4 connections to metal 4
