@@ -144,12 +144,12 @@ fab (SKY130's energy and dose are not public):
 
 ## Machines likely used at SkyWater
 
-* **Axcelis GSD implanters (high-current/high-energy and high-dose).** SkyWater lists two: "Axcelis
-  GSD High current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15,
-  tilt/twist" and "Axcelis GSD Hi dose B11, BF2, P, As 2-180kev, 5e12
-  to 5e16, tilt/twist"[^skw-01] — both offer arsenic and reach the
-  10¹⁵ cm⁻² decade, and the Hi dose tool's 2 keV floor covers even a
-  very shallow tip. Strength: **strong** for the tools; **inference**
+* **Axcelis GSD implanters (high-current/high-energy and high-dose).**
+  SkyWater lists two: "Axcelis GSD High current/energy B11, BF2, P, As,
+  10-3000kev, 1e11 to 5e15, tilt/twist" and "Axcelis GSD Hi dose B11, BF2,
+  P, As 2-180kev, 5e12 to 5e16, tilt/twist"[^skw-01] — both offer arsenic
+  and reach the 10¹⁵ cm⁻² decade, and the Hi dose tool's 2 keV floor covers
+  even a very shallow tip. Strength: **strong** for the tools; **inference**
   for the assignment.
 * **Axcelis 8250 medium-current implanter.** SkyWater lists "Axcelis
   8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,

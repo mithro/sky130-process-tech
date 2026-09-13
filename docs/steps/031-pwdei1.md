@@ -105,8 +105,9 @@ illustrative.
   1e14"):[^skw-01] boron and the dose window match a light drift-well
   implant. Strength: **strong** for the tool; assignment is an
   **inference**.
-* **Axcelis GSD high-current/high-energy implanter** ("B11 … 10-3000kev")[^skw-01] if the energy is above
-  the 8250's reach. Strength: strong for existence.
+* **Axcelis GSD high-current/high-energy implanter** ("B11 …
+  10-3000kev")[^skw-01] if the energy is above the 8250's reach. Strength:
+  strong for existence.
 
 ## Resources required
 

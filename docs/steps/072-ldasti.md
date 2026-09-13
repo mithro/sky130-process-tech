@@ -120,10 +120,10 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
   tip. Strength: **strong** for the tool; **inference** for the
   assignment, since a "lightly doped" tip is the one tip whose dose
   plausibly fits the medium-current tool.
-* **Axcelis GSD implanters (high-current/high-energy and high-dose)** ("10-3000kev, 1e11 to 5e15,
-  tilt/twist" and "2-180kev, 5e12 to 5e16, tilt/twist")[^skw-01] —
-  possible; the Hi dose tool's 2 keV floor covers a shallow tip.
-  Strength: strong for existence; weak for assignment.
+* **Axcelis GSD implanters (high-current/high-energy and high-dose)**
+  ("10-3000kev, 1e11 to 5e15, tilt/twist" and "2-180kev, 5e12 to 5e16,
+  tilt/twist")[^skw-01] — possible; the Hi dose tool's 2 keV floor covers a
+  shallow tip. Strength: strong for existence; weak for assignment.
 
 ## Resources required
 
