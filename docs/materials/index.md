@@ -82,7 +82,7 @@ Capabilities* page lists, tool by tool, some of the gases, chemistries
 and films each tool is set up for;[^skw-01] the
 {ref}`machines index <machines-index>` lists the steps to which the
 step pages assign those tools. It is the only source that names
-process chemistries at the fab. It lists gases for the ashers,
+process chemistries tool by tool. It lists gases for the ashers,
 the rapid thermal anneal ({term}`RTA`) tool and the poly/silicon etchers —
 for example "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2", "Lam 9400
 TCP, poly/nitride, HBr, CF4, SF6, O2" and "Iridia RF microwave, N2,
@@ -134,18 +134,20 @@ the SKY130 stack.[^pdk-03][^pdk-04] These are the sources of the
 **The EPA greenhouse-gas record.** The U.S. Environmental Protection
 Agency's Greenhouse Gas Reporting Program lists the Bloomington facility
 (ID 1000354, "SKYWATER TECHNOLOGY FOUNDRY INC" in the records for
-2010–2013 and "SKYWATER TECHNOLOGY INC" from 2014) as reporting under
+2010–2013 and "SKYWATER TECHNOLOGY INC" from 2014; names later applied to years when
+the parent company field reads Cypress Semiconductor, to 2016) as
+reporting under
 subpart I, electronics manufacturing, in each year from 2011 to 2023;
 its subpart I entries include N₂O, SF₆ and NF₃ in every one of those
 years, alongside perfluorocarbons, hydrofluorocarbons and other
 fluorinated gases.[^epa-ghgrp-skywater] The record has three limits.
-The public tables give CO₂-equivalent totals by gas or gas group, so
+The two tables cited give CO₂-equivalent totals by gas or gas group, so
 the perfluorocarbon and hydrofluorocarbon totals do not show which of
 CF₄, C₂F₆, CHF₃ or the other gases of those groups is
 emitted.[^epa-ghgrp-skywater] A facility reports each fluorinated gas
 "including each input gas and each by-product
 gas",[^epa-ghgrp-subpart-i] so a reported emission does not by itself
-show that the gas is supplied to a tool. And the tables name no tools,
+show that the gas is supplied to a tool. And the cited tables name no tools,
 processes, steps or abatement systems.[^epa-ghgrp-skywater] The
 {ref}`process gases <material-process-gases>` and
 {ref}`etch and chamber-clean gases <material-etch-gases>` pages discuss
@@ -284,7 +286,7 @@ etch-gases
 | `reticles` | Reticles (chrome on quartz or embedded attenuated phase-shift, with pellicles; SEMI P1 blanks) | {ref}`Lithography <material-lithography-materials>` | One per mask step; the process-steps sheet records a type for three plates only, which we read as embedded attenuated phase-shift masks for vias 2 and 3 and a binary mask for via 4, all for 248 nm exposure;[^steps-sheet] see {ref}`masks-index`. | "Mask GDS to reticle"; "Reticle storage/handler/defect inspection".[^skw-01] | {ref}`004 <step-004>`, {ref}`007 <step-007>`, {ref}`014 <step-014>`, {ref}`017 <step-017>`, {ref}`022 <step-022>`, {ref}`026 <step-026>`, {ref}`030 <step-030>`, {ref}`035 <step-035>`, {ref}`041 <step-041>`, {ref}`044 <step-044>`, {ref}`049 <step-049>`, {ref}`052 <step-052>`, {ref}`055 <step-055>`, {ref}`061 <step-061>`, {ref}`064 <step-064>`, {ref}`068 <step-068>`, {ref}`071 <step-071>`, {ref}`078 <step-078>`, {ref}`081 <step-081>`, {ref}`085 <step-085>`, {ref}`093 <step-093>`, {ref}`102 <step-102>`, {ref}`107 <step-107>`, {ref}`113 <step-113>`, {ref}`118 <step-118>`, {ref}`124 <step-124>`, {ref}`129 <step-129>`, {ref}`137 <step-137>`, {ref}`139 <step-139>`, {ref}`144 <step-144>`, {ref}`152 <step-152>`, {ref}`154 <step-154>`, {ref}`159 <step-159>`, {ref}`162 <step-162>`, {ref}`165 <step-165>`, {ref}`168 <step-168>` |
 | `exposure-consumables` | Exposure-tool consumables: KrF laser gas (Kr, F₂/Ne), mercury lamps | {ref}`Lithography hardware <material-lithography-materials>` | Light sources of the DUV and i-line tools. | typical (not listed) | {ref}`061 <step-061>`, {ref}`107 <step-107>`, {ref}`113 <step-113>`, {ref}`118 <step-118>`, {ref}`124 <step-124>`, {ref}`129 <step-129>`, {ref}`137 <step-137>`, {ref}`139 <step-139>`, {ref}`144 <step-144>`, {ref}`152 <step-152>`, {ref}`154 <step-154>`, {ref}`159 <step-159>`, {ref}`162 <step-162>`, {ref}`165 <step-165>`, {ref}`168 <step-168>` |
 | `ti-target` | Titanium sputter targets (Ti; reactive TiN) | {ref}`Sputter target <material-sputter-targets>` | Contact Ti/TiN liner; TiN local interconnect; TiN via liners; Ti underlayer of the metal stacks. | "Collimated Ti", "ESC TiN", "Imp TiN" under "AMAT PVD Metal";[^skw-01] S-1: "Honeywell Electronic Materials, Inc. (metal sputter targets)";[^sec-01] FY2023 10-K adds "JX Metals USA, Inc. (metal sputtering targets)".[^sec-02] | {ref}`097 <step-097>`, {ref}`101 <step-101>`, {ref}`109 <step-109>`, {ref}`112 <step-112>`, {ref}`120 <step-120>`, {ref}`123 <step-123>`, {ref}`131 <step-131>`, {ref}`134 <step-134>`, {ref}`146 <step-146>`, {ref}`149 <step-149>`, {ref}`161 <step-161>` |
-| `alcu-target` | Aluminium–copper sputter targets (Al–0.5 % Cu) | {ref}`Sputter target <material-sputter-targets>` | Conductor of metals 1–5. | "Aluminum both pure and Cu doped";[^skw-01] Cypress S8 report: "Metal 1: 100A Ti / 3200A Al-0.5%Cu / 300A TiW".[^cyp-qtp-113005] | {ref}`112 <step-112>`, {ref}`123 <step-123>`, {ref}`134 <step-134>`, {ref}`149 <step-149>`, {ref}`161 <step-161>` |
+| `alcu-target` | Aluminium–copper sputter targets (Al–0.5%Cu) | {ref}`Sputter target <material-sputter-targets>` | Conductor of metals 1–5. | "Aluminum both pure and Cu doped";[^skw-01] Cypress S8 report: "Metal 1: 100A Ti / 3200A Al-0.5%Cu / 300A TiW".[^cyp-qtp-113005] | {ref}`112 <step-112>`, {ref}`123 <step-123>`, {ref}`134 <step-134>`, {ref}`149 <step-149>`, {ref}`161 <step-161>` |
 | `tiw-target` | Titanium–tungsten sputter targets (Ti:W, 10 wt.% Ti[^pat-tiw-hitachi]) | {ref}`Sputter target <material-sputter-targets>` | Cap of the metal stacks; MiM top plates; possible underlayer of metals 3–5. | "TiW" under "AMAT PVD Metal" and on both metal etchers.[^skw-01] | {ref}`112 <step-112>`, {ref}`123 <step-123>`, {ref}`134 <step-134>`, {ref}`136 <step-136>`, {ref}`149 <step-149>`, {ref}`151 <step-151>`, {ref}`161 <step-161>` |
 | `oxide-slurry` | Oxide CMP slurry (fumed or colloidal silica in KOH or NH₄OH); ceria or additive slurry for nitride selectivity | {ref}`CMP consumable <material-cmp-consumables>` | STI, pre-metal-dielectric and inter-level oxide polishes. | "AMAT Mirra CMP" with "oxide" and "nitride";[^skw-01] slurry product not named. | {ref}`012 <step-012>`, {ref}`090 <step-090>`, {ref}`106 <step-106>`, {ref}`116 <step-116>`, {ref}`127 <step-127>`, {ref}`142 <step-142>`, {ref}`157 <step-157>` |
 | `w-slurry` | Tungsten CMP slurry (alumina or silica with H₂O₂, Fe(NO₃)₃ or KIO₃) | {ref}`CMP consumable <material-cmp-consumables>` | Removal of field tungsten after each plug fill. | "tungsten" and "high selectivity tungsten" under "AMAT Mirra CMP".[^skw-01] | {ref}`100 <step-100>`, {ref}`111 <step-111>`, {ref}`122 <step-122>`, {ref}`133 <step-133>`, {ref}`148 <step-148>` |

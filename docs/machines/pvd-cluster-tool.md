@@ -338,7 +338,7 @@ its film thicknesses are not public.
   "ESC TiN" chamber (inference).[^skw-01]
 * **The metal stacks.** A 2013 Cypress qualification report for an S8
   variant made in Bloomington gives metals 1 and 2 as 100 Å Ti, 3 200 Å
-  Al–0.5 % Cu and 300 Å TiW, and metal 3 with 7 200 Å of
+  Al–0.5%Cu and 300 Å TiW, and metal 3 with 7 200 Å of
   aluminium;[^cyp-qtp-113005] the {ref}`TIAL6 <step-112>` page notes that
   the first sum matches the PDK's 0.36 µm `met1`.[^pdk-04] In 2014 Cypress
   notified customers that it would align "our internal Cypress Minnesota

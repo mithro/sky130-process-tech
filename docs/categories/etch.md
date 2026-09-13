@@ -55,9 +55,10 @@ bombardment. Coburn and Winters described in 1979 how gas–surface
 reactions that give volatile products can be enhanced by energetic
 radiation, "primarily ions and electrons", examining "the reactions of
 Si, SiO2, and Si3N4 with XeF2, F2, and Cl2";[^coburn-1979] their
-companion review relates this bombardment to phenomena such as etching
-anisotropy.[^coburn-1979b] Because the ions arrive normal to the
-wafer,[^wiki-rie] the enhancement acts on the trench floor rather
+review of the same year relates the adsorption, product-formation and
+desorption steps of etching to phenomena such as etching anisotropy, and
+emphasises the role of ion and electron bombardment.[^coburn-1979b]
+Because the ions arrive mostly normal to the wafer,[^wiki-rie] the enhancement acts on the trench floor rather
 than on the sidewalls (our reading). Steinbrüchel found that the ion-enhanced
 etch yield scales as {math}`Y \propto \sqrt{E} - \sqrt{E_{th}}` at low
 ion energies.[^steinbruchel-1989] Anisotropy is therefore obtained
