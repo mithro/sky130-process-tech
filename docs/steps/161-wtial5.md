@@ -140,7 +140,8 @@ Metal 5 is the top routing level and the interface to the package:
   top metal with different passivation schemes.[^chu-2001] The periphery
   rules' `rdl` table "Defines the Cu Inductor" that "Connects to met5
   through the pad opening",[^pdk-periph] an option built on top of this
-  level.
+  level, which the PDK's nomenclature page lists as "s8phirs", "The base
+  process plus rdl layer and rdl metal inductors".[^pdk-previous]
 * **Bond pads.** Wire bonds and probe needles land on metal 5 through
   the `pad` opening (pad.2 spacing 1.270 µm).[^pdk-periph][^pdk-06] The
   pad metal and the oxide beneath it take the mechanical load of probing
@@ -260,6 +261,8 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 
 * SkyWater PDK, *Background* — "5 levels of metal ( p - penta)";
   "Inductor or Inductor-Capable".[^pdk-02]
+* SkyWater PDK, *Previous Nomenclature* — "s8pfhd", "5 metal layer
+  backend stack"; "s8phirs", rdl metal inductors.[^pdk-previous]
 * SkyWater PDK, *Process stack diagram* — `metal5` 1.26 µm; metal5 bottom
   5.3711 µm; via4 0.505 µm.[^pdk-04]
 * SkyWater PDK, *Criteria & Assumptions* — metal-5 antenna thicknesses
@@ -371,6 +374,9 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 [^pdk-08]: SkyWater PDK Authors, *Parasitic Layout Extraction* page
     (resistance table), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
+[^pdk-previous]: SkyWater PDK Authors, *Previous Nomenclature*,
+    SkyWater SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/previous.html>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>

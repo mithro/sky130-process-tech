@@ -69,10 +69,13 @@ the extraction page lists a two-terminal
 `sky130_fd_pr__model__cap_mim` with via-2, metal-3 and "capm-m2"
 parasitic terms.[^pdk-08] Those texts describe a capacitor one level
 lower than the device page, layer table and stack diagram do, and none
-of them describes `cap2m`. This page follows the device page, layer
-table and stack diagram and reads the other entries as carried over
-from a flow variant with a capacitor over metal 2 (inference); which
-extraction model corresponds to the metal-4 capacitor is not public.
+of them describes `cap2m`. The PDK's *Previous Nomenclature* page sides
+with the device page: it describes an "s8phrc" variant as "The base
+process plus dual MiM cap layers on metal 3 and metal 4".[^pdk-previous]
+This page follows those sources and reads the other entries as carried
+over from a flow variant with a capacitor over metal 2 (inference);
+which extraction model corresponds to the metal-4 capacitor is not
+stated in any public source.
 
 ## Step category
 
@@ -253,6 +256,8 @@ back end (SKY130's recipe is not public); the sequence is that of
 * SkyWater PDK, *Parasitic Layout Extraction* — the
   `sky130_fd_pr__cap_mim_m3_2` and `sky130_fd_pr__model__cap_mim`
   entries.[^pdk-08]
+* SkyWater PDK, *Previous Nomenclature* — "s8phrc": "dual MiM cap
+  layers on metal 3 and metal 4".[^pdk-previous]
 * SkyWater PDK, README — "Optional MiM capacitors".[^pdk-10]
 * SkyWater, S130 platform table — "MiM Capacitor".[^skw-02]
 * SkyWater / Efabless, first MPW shuttle release.[^ann-11]
@@ -318,7 +323,9 @@ back end (SKY130's recipe is not public); the sequence is that of
   entries and the `capm` rules, via-2 function text and extraction
   entries refer to metal 2, via 2 and metal
   3.[^pdk-07][^pdk-06][^pdk-04][^pdk-05][^pdk-03][^pdk-periph][^pdk-08]
-  The level reading on this page is an inference.
+  The level reading on this page is an inference, supported by the
+  "dual MiM cap layers on metal 3 and metal 4" of the nomenclature
+  page.[^pdk-previous]
 * The design rules for `cap2m` — width, spacing, enclosure by metal 4
   and of via 4 — are not published.[^pdk-periph]
 * Whether every SKY130 lot carries the second capacitor module, given
@@ -351,6 +358,9 @@ back end (SKY130's recipe is not public); the sequence is that of
     <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
 [^pdk-10]: SkyWater PDK Authors, *google/skywater-pdk* repository
     README. <https://github.com/google/skywater-pdk>
+[^pdk-previous]: SkyWater PDK Authors, *Previous Nomenclature*,
+    SkyWater SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/previous.html>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
