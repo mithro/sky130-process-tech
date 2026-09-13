@@ -56,6 +56,27 @@ in the frame outside the product dice (our reading of the rules), the
 of testlines in the scribe line area between adjacent wafer
 dies".[^pat-testline-tsmc]
 
+**A published test tile.** A separate structure set is public. Google's
+raw-data repository for the PDK states that "each of the Google MPW runs
+includes two copies of a 'manufacturing test tile'", created by
+SkyWater, which "consists of a grid of probe points"; it calls the tile
+"proprietary" because "The schematics and layout of the circuits
+connected to these probe points are **not** currently
+available".[^raw-data-testtile-prop] Its pad documentation, released in
+the same repository under Apache 2.0, lists 273 numbered test modules
+in four "Die Row" groups, each wired to a line of up to twelve pads
+(`Pin 01`–`Pin 12`), and the photographed tile also carries a
+"Lithographic Calibration Region" and "Alignment
+Marks".[^raw-data-testtile-pads][^raw-data-testtile-prop] The repository
+does not say where on the reticle the two copies sit, nor whether its
+modules are the e-test modules that `areaid.mt` marks in the frame, so
+this page does not treat the tile as SkyWater's production e-test set.
+The repository also documents an open replacement tile by Google, NIST
+and the University of Michigan, whose "first test version … was
+included in the MPW-5 run"; it was built with the OpenFASoC and
+gdsfactory generators, and its die image lists "Over 1400
+Pads".[^raw-data-testtile-open]
+
 ## Step category
 
 `HPETEST` is the only step of the
@@ -129,6 +150,23 @@ fab (SKY130's test plan is not public beyond the parameters above):
 5. **Data.** Results are stored per wafer, site and structure, compared
    with limits and control limits, and released to disposition and SPC.
 
+The test tile's pad list is a public example of such a structure set
+with its connections written out. Resistors and lines are wired for
+four-terminal measurement ("Force 1", "Force 2", "Sense 1", "Sense 2"
+on "M1 sheet resistance and electrical linewidth"); there are van der
+Pauw squares ("10x10 Van der P."), Kelvin contacts, contact strings
+("contact string (6384 contacts; 0.88 sq/ct RSN)"), via chains ("s8p
+via3 (0.2x0.2) contact chain (16500 contacts)"), serpentine/comb pairs,
+MOS, finger and MiM capacitors, and transistors at several widths,
+lengths and source/drain extents (`sa`, `sb`).[^raw-data-testtile-pads]
+The data measured on the tile "was collected under contract by CoolCAD
+Electronics LLC using the manufacturing test tile created by SkyWater"
+to help validate the PDK,[^raw-data-readme] and are stored as IC-CAP
+`.mdm` files whose headers give each terminal a "Source measurement
+unit number on the curve tracer", a "Compliance" and a
+sweep.[^raw-data-mdm] The repository does not describe SkyWater's own
+production test or name its tester.
+
 ## Machines typically used
 
 * **Parametric tester**: HP/Agilent 4062UX,[^brltest-4062]
@@ -195,6 +233,12 @@ fab (SKY130's test plan is not public beyond the parameters above):
 * BRL Test, 4062UX listing; Keithley, *Series S600* data
   sheet.[^brltest-4062][^keithley-s600]
 * ITRS 2001, *Test and Test Equipment* and *Metrology*.[^itrs-2001-test][^itrs-2001-met]
+* Google's SKY130 raw-data repository — the README (data "collected
+  under contract by CoolCAD Electronics LLC using the manufacturing test
+  tile created by SkyWater"), the proprietary test-tile README ("two
+  copies" per MPW run), the 273-module pad documentation, the open
+  MPW-5 test tile and the MDM file
+  format.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open][^raw-data-mdm]
 
 ### High-level understanding
 
@@ -240,7 +284,20 @@ fab (SKY130's test plan is not public beyond the parameters above):
 * Whether `HPETEST` runs on the HP 4062UX SkyWater lists[^skw-01] is not
   stated; the prober and probe-card types are not public.
 * How the e-test modules are distributed in the frame (positions,
-  number per reticle field) is not public.
+  number per reticle field) is not public. The raw-data repository says
+  that two copies of its manufacturing test tile are on each Google MPW
+  run but not where,[^raw-data-testtile-prop] and its pad list carries
+  the note "PLACE IN CENTER, CORNER OF RETICLE" under one
+  module;[^raw-data-testtile-pads] neither says how the tile relates to
+  the `areaid.mt` modules.
+* The pad list's `Group` codes (1–8, 10, `Z`, `s8tet`) are not
+  explained, and the schematics and layout of the tile's structures are
+  not public.[^raw-data-testtile-pads][^raw-data-testtile-prop]
+* The published DC data have limited current resolution: an analysis
+  notebook in the repository notes that "the data gets noisy below 2nA"
+  and that the data "cannot be used to predict the subthreshold slope
+  (digital leakage)".[^raw-data-notebooks] The resolution of the fab's
+  own e-test is not public.
 
 <!-- footnotes -->
 
@@ -336,3 +393,36 @@ fab (SKY130's test plan is not public beyond the parameters above):
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-readme]: SkyWater PDK Authors, *sky130-raw-data - Raw data
+    collected about the SKY130 process technology*, `README.rst`,
+    `google/skywater-pdk-sky130-raw-data` repository, 2022, retrieved
+    2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/README.rst>
+[^raw-data-testtile-prop]: SkyWater PDK Authors, *SkyWater 130nm
+    Proprietary Manufacturing Test Tile*,
+    `docs/sky130-testtile-proprietary/README.rst` and pad-layout image,
+    `google/skywater-pdk-sky130-raw-data` repository, 2022, retrieved
+    2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/README.rst>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-testtile-open]: SkyWater PDK Authors, *SkyWater 130nm Open
+    Manufacturing Test Tile*, `docs/sky130-testtile-open/README.rst` and
+    images, `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-open/README.rst>
+[^raw-data-mdm]: Agilent Technologies, *IC-CAP User's Guide*, "MDM File
+    Structure" (IC-CAP 2008 documentation), retrieved 2026-09-13,
+    <https://people.ece.ubc.ca/robertor/Links_files/Files/ICCAP-2008-doc/icug/icug136.html>;
+    and SkyWater PDK Authors, `docs/_static/mdm-format.png`,
+    `google/skywater-pdk-sky130-raw-data` repository.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/_static/mdm-format.png>
+[^raw-data-notebooks]: Google LLC, *SKY130 plots of {IC,IB,IG}/VG*, and
+    B. Murmann, *SKY130 plots of ID-VG derivatives* (August 2022),
+    Colab notebooks in the `google/skywater-pdk-sky130-raw-data`
+    repository, retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/notebooks>
