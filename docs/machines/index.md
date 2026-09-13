@@ -307,8 +307,8 @@ Notes on the table:
   a capability that only one listed tool has: an energy range to
   "3000kev" only on the "Axcelis GSD High current/energy" entry, doses
   above "1e14" only on the two GSD entries (the 8250 entry, which also
-  lacks phosphorus, stops at "1e14"), the only hydrogen-bearing anneal,
-  the furnaces' "H2 and forming gas alloy", "phosphoric" only on the
+  lacks phosphorus, stops at "1e14"), the only anneal listed with H₂ or
+  forming gas, the furnaces' "H2 and forming gas alloy", "phosphoric" only on the
   Akrion bench, and, among the etchers, TiN only on the two metal
   etchers.[^skw-01] The pages that rely on these say so; the list itself
   still names no step.
@@ -514,6 +514,11 @@ can be made consistent later; no step page has been changed here.
   {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`,
   {ref}`WCMP5 <step-148>` and {ref}`CMPM4 <step-157>` quote "the SEZ
   etcher tool".
+* {ref}`ALLY1 <step-096>` and {ref}`ALLY <step-170>` call the furnaces'
+  "H2 and forming gas alloy" the only hydrogen-bearing anneal on the
+  list, {ref}`ALLY1 <step-096>` adding that "the Heatpulse lists no
+  hydrogen ambient". The "Ag Heatpulse 8808" entry lists no H₂ or
+  forming gas, but it does list NH3, which carries hydrogen.[^skw-01]
 
 ### Different tools or grades for analogous steps
 
