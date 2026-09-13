@@ -137,7 +137,7 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 
 ## Machines typically used
 
-* **Rotary CMP polisher**, 200 mm: Applied Materials Mirra and Mirra
+* **Rotary multi-platen CMP polisher**, 200 mm: Applied Materials Mirra and Mirra
   Mesa,[^amat-1997][^chiphistory-mirra] Ebara F-REX,[^ebara-frex]
   SpeedFam-IPEC Avanti 472, Strasbaugh 6EC (category page).
 * **Post-CMP brush scrubber** (OnTrak/Lam DSS-200, Applied Mesa

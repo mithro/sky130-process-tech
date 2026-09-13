@@ -135,7 +135,7 @@ fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Rotary CMP polisher**, 200 mm: Applied Materials Mirra and Mirra
+* **Rotary multi-platen CMP polisher**, 200 mm: Applied Materials Mirra and Mirra
   Mesa,[^amat-1997][^chiphistory-mirra] Ebara F-REX,[^ebara-frex]
   SpeedFam-IPEC Avanti 472, Strasbaugh 6EC (category page).
 * **Post-CMP brush scrubber** (OnTrak/Lam DSS-200, Applied Mesa
