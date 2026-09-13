@@ -145,7 +145,7 @@ recipe is not public):
    by reflectometry or ellipsometry at many sites; die-level
    thickness maps on density test structures (the method of
    Stine et al.[^stine-1998]); scratch and particle inspection on the
-   KLA AIT class SkyWater's job posting names;[^job-01] via-chain
+   KLA AIT class (our reading of "AIT" in SkyWater's job posting);[^job-01] via-chain
    resistance later at {term}`e-test`.
 
 ## Machines typically used
@@ -168,7 +168,9 @@ recipe is not public):
   Mirra entry also lists "Track ammonia clean" and "IPA clean";[^skw-01]
   a "SEZ etcher tool" on the maintenance page.[^skw-07] A brush
   scrubber is not named (open question).
-* **Defect inspection — KLA AIT / SP1.**[^job-01] Strength: medium.
+* **Defect inspection — KLA AIT / SP1**, our reading of "AIT" and "SP1"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 
