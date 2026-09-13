@@ -108,10 +108,9 @@ a "Dipping Mode" for "high aspect ratio depth monitoring of device size
 features",[^kla-hrp] and its P-15 could "provide CMP dishing and erosion
 data".[^kla-p15] Veeco's Dektak Series V monitored "etch and deposition
 uniformity thickness" on 200 mm and 300 mm wafers.[^veeco-stylus-2000]
-ITRS 2001 notes that stylus instruments "offer 3D measurements that are
-insensitive to the conductivity of the material scanned", but that
-"Flexing of the stylus degrades measurements, however, when the probe is
-too slender".[^itrs-2001-met]
+ITRS 2001 notes that "Stylus profilers and scanned probe (atomic force)
+microscopes can provide local and global flatness information, but the
+throughput of these methods must be improved".[^itrs-2001-met]
 
 ### Atomic force microscopes
 
@@ -126,7 +125,11 @@ Martin and Wickramasinghe imaged sidewalls with "a special boot-shaped
 tip", opening the way to "measurement of critical dimensions (width and
 wall angles) of lines and trenches";[^martin-1994] ITRS 2001 calls CD-AFM
 "an excellent means of verifying line shape and calibrating CD
-measurements".[^itrs-2001-met]
+measurements".[^itrs-2001-met] The same chapter notes that such
+scanning-probe ("stylus") microscopes "offer 3D measurements that are
+insensitive to the conductivity of the material scanned", but that
+"Flexing of the stylus degrades measurements, however, when the probe is
+too slender".[^itrs-2001-met]
 
 ### What the measurements show
 
@@ -234,9 +237,9 @@ sources describes the fab's cross-section or profiling practice.
 * **Cleaving and polishing supplies.** Scribes, polishing films and, on
   SELA's systems, an optional "in-line cryo-cooling option (liquid
   nitrogen)".[^sela-2001]
-* **Styli and tips.** Profiler styli, which wear,[^itrs-2001-met] and AFM
-  tips, replaced
-  automatically on the Dimension 9000.[^veeco-afm-2000]
+* **Styli and tips.** Profiler styli and AFM tips wear and are replaced
+  (industry practice); the Dimension 9000 replaced AFM tips
+  automatically.[^veeco-afm-2000]
 
 ## Process-integration notes for SKY130
 
@@ -295,8 +298,9 @@ dishing and step-height limits are not public.
 
 * SkyWater Technology, *Facilities & Capabilities* — the "Physical
   Analysis" group.[^skw-01]
-* ITRS 2001, *Metrology* — SEM, FIB and stylus microscopy and destructive
-  interconnect measurements.[^itrs-2001-met]
+* ITRS 2001, *Metrology* — SEM, FIB and scanning-probe microscopy,
+  profiler flatness data and destructive interconnect
+  measurements.[^itrs-2001-met]
 * Hitachi High Technologies America, *S-4800 UHR FE-SEM* product page —
   resolution, detectors and specimen size.[^hitachi-s4800]
 * FEI, *FIB 200xP* and *FIB 800xP* product pages (1999) and *DualBeam
