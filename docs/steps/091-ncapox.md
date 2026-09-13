@@ -146,9 +146,11 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 
 ## Resources required
 
-* **TEOS** (liquid source, vaporised) and **oxygen**, or **silane**
-  and **nitrous oxide**; **helium** or **argon**
-  diluent.[^wiki-teos][^wiki-pecvd]
+* **TEOS** (liquid, vaporised) and **oxygen**, or **silane** and
+  **N₂O** for the silane route;[^wiki-teos][^wiki-pecvd] **helium**,
+  **nitrogen** or **argon** as carrier or diluent (typical; the PECVD
+  article describes TEOS deposition "in an oxygen or oxygen-argon
+  plasma"[^wiki-pecvd]).
 * **NF₃** chamber clean (with argon or oxygen); **helium** backside
   cooling.[^txt-09]
 * **Chamber consumables** — showerheads, heater and liner parts.

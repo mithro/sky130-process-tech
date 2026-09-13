@@ -161,9 +161,11 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **TEOS** (liquid, vaporised) and **oxygen** with **helium**
-  carrier,[^wiki-teos] or **silane** and **N₂O** for the silane
-  route;[^wiki-pecvd] gas suppliers per SkyWater's filings.[^sec-01]
+* **TEOS** (liquid, vaporised) and **oxygen**, or **silane** and
+  **N₂O** for the silane route;[^wiki-teos][^wiki-pecvd] **helium**,
+  **nitrogen** or **argon** as carrier or diluent (typical; the PECVD
+  article describes TEOS deposition "in an oxygen or oxygen-argon
+  plasma"[^wiki-pecvd]); gas suppliers per SkyWater's filings.[^sec-01]
 * **NF₃** for the chamber clean; **nitrogen** purge.
 * **Showerhead, heater and liner consumables**; **monitor wafers**.
 
