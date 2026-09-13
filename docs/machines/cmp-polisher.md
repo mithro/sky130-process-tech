@@ -218,8 +218,9 @@ lines without a dash:[^skw-01]
 
 Read term by term: an Applied Materials Mirra, with polishes for oxide
 and tungsten — the films of the SKY130 polishes on the step pages'
-readings — and for nitride, the stop layer of two of them; and for
-niobium, aluminium and copper, which no SKY130 step polishes; the page describes the Minnesota site as
+readings — and for nitride, the stop layer of two of them on those readings; and
+for niobium, aluminium and copper, which no SKY130 step page reads as a
+polish; the page describes the Minnesota site as
 "Recently expanded in 2020 to enable additional capacity and Cu back end
 of line".[^skw-01] "High selectivity tungsten" is not explained. The
 step pages and the {ref}`machines index <machines-index>` read the three
@@ -299,8 +300,8 @@ page and the step pages.
   {ref}`WCMP2 <step-111>` to {ref}`WCMP5 <step-148>` the tungsten
   overburden ({ref}`category-cmp`). SkyWater's list covers all three film
   types.[^skw-01]
-* **Stopping without a stop layer.** The inter-level oxide polishes have
-  no material change to detect,[^wiki-cmp] so they depend on timed
+* **Stopping without a stop layer.** On the step pages' readings the
+  inter-level oxide polishes have no material change to detect,[^wiki-cmp] so they depend on timed
   removal or in-situ thickness measurement; the
   {ref}`CMPM <step-116>` page describes both, and SkyWater's "On board
   metrology with feed forward and backward" is the kind of capability

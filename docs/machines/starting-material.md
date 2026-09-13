@@ -289,8 +289,8 @@ limits and marking scheme are not public.
   and SkyWater lists a
   marker of its own;[^skw-01] whether SKY130 wafers arrive marked, are
   marked at Bloomington, or both, is not public. A mark made before the
-  first oxidation must not seed slip ({ref}`BOX <step-002>` is the first
-  furnace step), the failure Christ and Maurantonio saw after oxidation
+  first oxidation must not seed slip ({ref}`BOX <step-002>`, the first
+  furnace step on this reference's reading), the failure Christ and Maurantonio saw after oxidation
   of unetched marks;[^christ-1983] a soft mark avoids the slag of a hard
   mark.[^pat-softmark-gsi]
 * **Incoming counts and the gate oxides.** COPs are a main cause of
