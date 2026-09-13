@@ -170,7 +170,7 @@ Surfscan AIT".[^tencor-defectdata-1997]
   Surfscan SP1 DLS, described on a 2002 capture of KLA-Tencor's site, which
   "Continues the industry-leading SP1 TBI platform" and added a backside
   inspection module for "fully automated, non-destructive inspection of
-  the backsides of patterned (product) wafers".[^kla-sp1dls]
+  the backsides of patterned (product) wafers".[^kla-sp1dls-2002]
 * **Laser-scanning patterned inspectors.** The Surfscan AIT (1995),
   developed with SEMATECH as an "in-line defect inspection system for
   0.25-micron technology";[^tencor-ait-1995] the Surfscan 7700, which
@@ -275,7 +275,7 @@ defect database.
   results from many tools, such as SwiftAccess;[^tencor-defectdata-1997]
   KLA-Tencor described data products "that manage, correlate, and
   integrate the wealth of defect data and images" from its inspection
-  tools.[^kla-sp1dls]
+  tools.[^kla-sp1dls-2002]
 
 ## Process-integration notes for SKY130
 
@@ -299,7 +299,7 @@ plans and defect limits are not public.
   {ref}`P1M <step-061>` names bright-field inspectors of the KLA-Tencor 2xxx
   class; KLA-Tencor paired the SP1 DLS with "after-develop inspection
   (ADI) for macro and micro defects" in its lithography-module
-  strategy.[^kla-sp1dls]
+  strategy.[^kla-sp1dls-2002]
 * **After depositions and fills.** The cap-oxide, passivation and
   tungsten-fill pages ({ref}`NCAPOX3 <step-117>`, {ref}`NTSD <step-167>`,
   {ref}`WDEP2 <step-110>` and their counterparts) name particle
@@ -309,7 +309,7 @@ plans and defect limits are not public.
   unpatterned surface scanner for incoming wafers, and
   {ref}`BFR <step-060>` a backside inspection tool; KLA-Tencor's backside
   module, described on a 2002 capture of its SP1 DLS page, inspected the
-  backsides of product wafers.[^kla-sp1dls] ITRS 2001 gives backside
+  backsides of product wafers.[^kla-sp1dls-2002] ITRS 2001 gives backside
   particle requirements for 200 mm wafers.[^itrs-2001-yield]
 * **Pads.** {ref}`PDME <step-169>` names automated pad inspection before
   test.
@@ -363,7 +363,7 @@ plans and defect limits are not public.
 * KLA-Tencor, *Surfscan SP1 DLS*, *AIT XP*, *2351* and *eV300* product
   pages and the *Defect Control* menu (2002) — the inspection and review
   line at the 130 nm
-  node.[^kla-sp1dls][^kla-aitxp][^kla-2351][^kla-ev300][^kla-defect-2002]
+  node.[^kla-sp1dls-2002][^kla-aitxp][^kla-2351][^kla-ev300][^kla-defect-2002]
 
 ### High-level understanding
 
@@ -457,7 +457,7 @@ plans and defect limits are not public.
 [^tencor-defectdata-1997]: Tencor Instruments, *Defect Data Analysis*
     (SwiftAccess), product page; Wayback Machine capture of 1997-03-02.
     <https://web.archive.org/web/19970302033417/http://www.tencor.com:80/products/defectdata.html>
-[^kla-sp1dls]: KLA-Tencor, *Surfscan SP1 DLS: Unpatterned surface
+[^kla-sp1dls-2002]: KLA-Tencor, *Surfscan SP1 DLS: Unpatterned surface
     inspection*, product page; Wayback Machine capture of 2002-02-08.
     <https://web.archive.org/web/20020208135136/http://www.kla-tencor.com:80/products/defect_control/surfscan-sp1/surfscan.html>
 [^kla-aitxp]: KLA-Tencor, *AIT XP: High-throughput scanning for patterned

@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1493
+written page has exactly one entry here; the inventory holds 1491
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -11162,6 +11162,7 @@ The SP1 DLS with a backside inspection module, "enhanced sensitivity in
 and "tool-qualification and tool monitoring in 0.13 µm design rules and
 below". Used on the starting-material machine page. Tier: cross-check
 (vendor statement).
+Also used on the defect and particle inspection page.
 
 **THINKLASER-SIGMACLEAN** — Thinklaser USA, *SigmaClean: Debris-Free
 100 - 200 mm Wafer Marking*, product page, accessed 2026-09-13.
@@ -11260,6 +11261,7 @@ microroughness standard", *Proc. SPIE* **2862**, 78–95 (1996).
 instrument dependence of roughness, and a lithographically etched haze
 standard on 150 mm wafers. Used on the starting-material machine page.
 Tier: deep dive.
+Also used on the defect and particle inspection page.
 
 **ISHII-1996** — H. Ishii, S. Shiratake, K. Oka, K. Motonami, T. Koyama
 and J. Izumitani, "Direct Observation of Crystal-Originated Particles on
@@ -11722,15 +11724,6 @@ A fab-wide defect database whose control charts can be shown on the
 Surfscan AIT. Used on the defect and particle inspection page. Tier:
 cross-check (vendor statement).
 
-**KLA-SP1DLS** — KLA-Tencor, *Surfscan SP1 DLS: Unpatterned surface
-inspection*, product page; Wayback Machine capture of 2002-02-08.
-<https://web.archive.org/web/20020208135136/http://www.kla-tencor.com:80/products/defect_control/surfscan-sp1/surfscan.html>
-The SP1 successor for 200 mm and 300 mm, with a backside inspection module
-for product wafers, tool qualification "in 0.13 µm design rules and below"
-and a place in a lithography-module strategy with after-develop
-inspection. Used on the defect and particle inspection page. Tier:
-cross-check (vendor statement).
-
 **KLA-AITXP** — KLA-Tencor, *AIT XP: High-throughput scanning for
 patterned wafer inspection*, product page; Wayback Machine capture of
 2002-06-04.
@@ -11847,12 +11840,6 @@ semiconductor wafer maps", *Proc. SPIE* **3050**, 434 (1997).
 <https://doi.org/10.1117/12.275936> Spatial signature analysis of wafer
 defect maps (SEMATECH and Oak Ridge National Laboratory). Used on the
 defect and particle inspection page. Tier: deep dive.
-
-**SCHEER-1996** — B. W. Scheer, "Development of a physical haze and
-microroughness standard", *Proc. SPIE* **2862**, 78–95 (1996).
-<https://doi.org/10.1117/12.256193> Haze masking particle detection, and a
-standard made of etched features on silicon wafers. Used on the defect and
-particle inspection page. Tier: deep dive.
 
 **ONO-2002** — M. Ono, H. Iwata and K. Watanabe, "Accuracy of yield impact
 calculation based on kill ratio", *ASMC 2002*.
