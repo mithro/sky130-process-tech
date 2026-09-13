@@ -1994,22 +1994,25 @@ Rapid Thermal Processing"* (reseller specification page), accessed
 "Recommended steady-state temperature range: 400 – 1200°C", ramp-up
 "Programmable, 1 – 180°C per second", "2 banks of 14 lamps" with
 "10-zone lamp control", pyrometer or thermocouple sensing, wafer sizes
-to 8 inches, "Implant annealing" among the applications.
+to 8 inches, "Implant annealing" among the applications. Its operating
+specifications are word for word the 8108 section of the same reseller's
+PDF (AG-8108), not its 8800 section (checked 2026-09-13).
 Also used on the rapid thermal processor page.
 Tier: high-level (reseller page for the tool SKW-01 lists as "Ag Heatpulse
 8808").
 
 **AG-8108** — SemiStar Corp., *"AG Associates Heatpulse 4100 / 8108 /
 8800 / 8800i Specifications"* (reseller PDF), accessed 2026-08-30.
-<http://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>.
-Although titled for the whole family, the PDF documents the operating
-specifications of the Heatpulse 4100: 400–1200 °C, maximum ramp
-150 °C/s, ±5 °C uniformity across a 150 mm wafer at 1150 °C, and a
-facility table (cooling water, CDA/N₂). Re-read on 2026-09-13, the PDF
-also carries 8108, 8800 and 8800i sections; its 8800 section gives a
-ramp-up "up to 100°C per second with Ceramic Shield; up to 150°C per
-second without Ceramic Shield", "±3°C across an 8-inch wafer at 1150°C"
-and the 8800 facility connections, and no section names the 8808.
+<https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>.
+Re-read on 2026-09-13, the PDF has operating-specification, dimension
+and facility sections for the Heatpulse 4100 (400–1300 °C; ramp-up
+"10°C to 200°C per second"; ±5 °C across a 150 mm wafer at 1150 °C),
+the 8108 (400–1200 °C; ramp-up "1 - 180°C per second"; ±5 °C across an
+8-inch wafer at 1150 °C) and the 8800 and 8800i (400–1200 °C; ramp-up
+"up to 100°C per second with Ceramic Shield; up to 150°C per second
+without Ceramic Shield"; ±3 °C across an 8-inch wafer at 1150 °C), with
+facility tables (cooling water, CDA/N₂, exhausts). No section names the
+8808.
 Also used on the rapid thermal processor page.
 Tier: high-level (weak for the 8808 itself).
 
@@ -2086,9 +2089,9 @@ S. Aronowitz, L. Khan and J. Kimball (LSI Logic), granted 1999-10-05.
 <https://patents.google.com/patent/US5963801A/en>. Threshold-adjust
 boron "implanted through the sacrificial gate oxide in doses between
 1×10¹² and 1×10¹³ atoms/cm² … at implant energies between 50 and
-100 keV"; chained punch-through barriers at 100, 70 and 50 keV; a
-furnace anneal at "approximately 900 °C … for approximately 30
-minutes".
+100 keV"; chained punch-through barriers at 100, 70 and 50 keV; a well
+anneal "at approximately 900° C. in a neutral ambient such as nitrogen
+for approximately 30 minutes" (the patent does not name the tool).
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
 
@@ -3938,6 +3941,9 @@ cross-check.
 **ASM-A400** — ASM International, *ASM International N.V. launches A400
 DUO vertical furnace system*, press release, 2019-11-11.
 <https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>
+Wayback Machine capture of 2024-10-14 (the live page now serves a script
+shell without the release text; checked 2026-09-13):
+<https://web.archive.org/web/20241014215529/https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>
 The A400 furnace's install base and wet-oxidation/anneal use. Used on
 the deposition and oxidation category pages.
 Also used on the vertical-furnace oxidation, LPCVD and anneal pages.
@@ -8183,8 +8189,9 @@ Tier: deep dive.
 **PAT-DEUTERIUM-UIUC** — J. W. Lyding and K. Hess (Board of Trustees of
 the University of Illinois), *Deuterium-treated semiconductor devices*,
 US 5,872,387 A, filed 1996-01-16, granted 1999-02-16.
-<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5872387>
-Deuterium-treated devices and example anneal conditions. Used on step
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5872387>,
+<https://patents.google.com/patent/US5872387A/en> (the form the pages
+cite). Deuterium-treated devices and example anneal conditions. Used on step
 170.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
@@ -9116,9 +9123,9 @@ vertical-furnace oxidation page. Tier: deep dive (patent).
 Tohoku), *Vertical heat treatment apparatus with a circulation gas
 passage*, US 5,551,984 A, filed 1994-12-05, granted 1996-09-03.
 <https://patents.google.com/patent/US5551984A/en> Filtered gas
-circulation in the transfer chamber below a vertical furnace, which "can
-be in the form of a load-lock chamber, and the gas streams are nitrogen
-gas streams", with PTFE filter material. Used on the vertical-furnace
+circulation in the transfer chamber below a vertical furnace, which, the
+patent says, may be "in the form of a load-lock chamber, and the gas
+streams are nitrogen gas streams", with PTFE filter material. Used on the vertical-furnace
 oxidation page. Tier: deep dive (patent).
 
 **PAT-TORCH-PERSYS** — G. Drimer, L. Mendelovici and N. Borivker (Persys
@@ -9154,13 +9161,20 @@ heater element assemblies", with thermal furnace, ALD and APCVD product
 lines. Used on the vertical-furnace oxidation page. Tier: cross-check
 (vendor statement).
 
-**AVIZA-NEWS** — Aviza Technology, *News* (index of press releases and
-events), web page, 2005; Wayback Machine capture of 2005-12-04.
-<https://web.archive.org/web/20051204025122/http://www.avizatechnology.com/news/index.htm>
-Lists the press release of 2004-11-08 "TETREON TECHNOLOGIES ACQUIRES
-THERMCO HORIZONTAL FURNACES FROM AVIZA TECHNOLOGY" (the release itself is
-not archived). Used on the vertical-furnace oxidation and anneal pages.
-Tier: cross-check (vendor statement).
+**TETREON-HTR-2004** — Tetreon Technologies (release hosted by Aviza
+Technology), *Tetreon Technologies Acquires Thermco Horizontal Furnaces
+from Aviza Technology*, Business Wire, 2004-11-08; Wayback Machine
+capture of 2005-03-09.
+<https://web.archive.org/web/20050309110126/http://www.avizatechnology.com:80/news/pressrel/110804.htm>
+Tetreon buys the manufacturing rights, intellectual property and
+inventory of the "'Thermco' Horizontal Furnace (HTR) product line",
+"originally marketed under the 'Thermco' name and later produced by
+Silicon Valley Group and ASML", with "an estimated installed base of over
+8,000 processing tubes"; Aviza "had elected to not pursue the HTR as part
+of the company's long-term strategy". Replaces the earlier citation of
+Aviza's news index, which only listed the headline. Used on the
+vertical-furnace oxidation and anneal pages. Tier: cross-check (vendor
+statement).
 
 ##### Vertical batch furnace: LPCVD (first cited there)
 
