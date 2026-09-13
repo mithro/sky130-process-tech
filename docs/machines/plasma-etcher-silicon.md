@@ -292,10 +292,15 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   field-oxide step and the slower-etching resistor bodies while the thin
   gate oxide survives; the selectivity of the HBr/O₂ over-etch and the
   landing step set the margin.[^desvoivres-2000][^joubert-1997]
-* **Doped and undoped polysilicon.** SKY130 dopes some polysilicon
-  before the gate etch ({ref}`P1I <step-050>`, and the resistor implants
-  from {ref}`RPM <step-049>`), so regions of the same film etch at
-  different rates in chlorine;[^mogab-1980][^ogryzlo-1990] the
+* **Doped and undoped polysilicon.** The PDK describes the gate poly as
+  "N+ doped gate poly" and says of its P− poly resistors that "a
+  separate implant is used to set the sheet resistance".[^pdk-07] The
+  {ref}`P1I <step-050>`, {ref}`PRI <step-053>` and
+  {ref}`UPRI <step-056>` pages read these as implants into the unetched
+  gate film, from their place in the step list ahead of
+  {ref}`P1ME <step-062>`; if so, regions of the same film reach the etch
+  with different doping, and doping changes the etch rate in
+  chlorine;[^mogab-1980][^ogryzlo-1990] the
   {ref}`P1ME <step-062>` page sets its endpoint and over-etch
   accordingly.
 * **ARC and stack opens.** The {ref}`TUNARCE <step-036>` page opens an
@@ -336,6 +341,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 
 * SkyWater Technology, *Facilities & Capabilities* — the three
   "Poly/Silicon Etch" entries quoted on this page.[^skw-01]
+* SkyWater PDK, *Device Details* — the n-type gate poly and the separate
+  resistor implant.[^pdk-07]
 * Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
   Etcher* — the two RF supplies, planar coil, gas set and gate-etch
   origin of the tool.[^snf-9400]
@@ -462,6 +469,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 [^amat-1997]: Applied Materials, Inc., *1997 Annual Report* (Form 10-K
     for the fiscal year ended 1997-10-26).
     <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
+[^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
+    documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30; etch entries re-checked 2026-09-13.
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
