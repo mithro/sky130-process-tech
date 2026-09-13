@@ -156,10 +156,10 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 * **Dichlorosilane and ammonia** (LPCVD)[^wiki-sin] or **silane,
   ammonia and nitrogen** (PECVD).[^wiki-pecvd]
 * **Nitrogen** purge; **NF₃ or CF₄/O₂** chamber clean for a PECVD tool;
-  HCl-tolerant exhaust and ammonium-chloride trap maintenance for a
+  {ref}`HCl-tolerant exhaust <material-hardware-consumables>` and ammonium-chloride trap maintenance for a
   nitride furnace.[^txt-02]
 * **Quartz ware** (furnace) or **chamber consumables** (PECVD).
-* **Monitor wafers.**
+* **{ref}`Monitor wafers <material-substrates>`.**
 
 ## Related steps and cross-references
 

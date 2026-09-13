@@ -146,7 +146,7 @@ An industry-generic light poly-resistor implant for a 200 mm,
 
 * **Boron trifluoride (BF₃)**[^wiki-bf3] or a solid boron source.
 * **Source consumables**, cooling water and helium, cryopump nitrogen.
-* **Monitor wafers** for sheet resistance.
+* **{ref}`Monitor wafers <material-substrates>`** for sheet resistance.
 
 ## Related steps and cross-references
 

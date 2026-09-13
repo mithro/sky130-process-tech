@@ -180,11 +180,11 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
   excess-flow and leak monitoring.[^wiki-silane]
 * **Nitrogen** for purge, ramp and back-fill; **hydrogen** is a
   by-product handled by the exhaust.
-* **Quartz or silicon-carbide tube, boat and baffles**; silicon
+* **{ref}`Quartz or silicon-carbide tube <material-hardware-consumables>`, boat and baffles**; silicon
   deposits on the furnace ware and is periodically cleaned off (a
   known consumable cost of poly tubes[^txt-02]).
 * **Vacuum pump oil / dry pump maintenance** and exhaust abatement.
-* **Monitor wafers** for thickness and particles.
+* **{ref}`Monitor wafers <material-substrates>`** for thickness and particles.
 
 SkyWater's filings name Air Products and Praxair (2021 S-1) and Linde and
 Airgas (fiscal 2023 10-K) as gas suppliers,[^sec-01][^sec-02] without tying
