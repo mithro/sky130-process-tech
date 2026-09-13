@@ -131,7 +131,7 @@ cleanliness.[^txt-02]
 * **Oxygen, nitrogen, {term}`forming gas` (H₂/N₂)** for the ash; **CF₄**,
   listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
   trench oxide and would, we infer, be omitted here (category page).
-* **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** for
+* **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** ({ref}`wet chemicals <material-wet-chemicals>`) for
   SPM;[^wiki-rca] **ammonium hydroxide** for SC-1; **hydrochloric acid**
   for SC-2[^wiki-rca] (category page).
 * **Ultrapure DI water**, **isopropanol** for drying, **nitrogen**.

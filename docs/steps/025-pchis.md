@@ -106,7 +106,7 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
   listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
   trench oxide and would, we infer, be omitted here (category page).
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric
-  acid**[^wiki-rca] (category page).
+  acid** ({ref}`wet chemicals <material-wet-chemicals>`)[^wiki-rca] (category page).
 * **DI water, isopropanol, nitrogen**.
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
   S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]

@@ -223,8 +223,9 @@ the {ref}`single-wafer spin processor <machine-single-wafer-spin-processor>` cla
 
 ## Consumables and facilities
 
-The wet chemicals are listed in the {ref}`materials index
-<materials-index>`; what is specific to a wet bench is summarised here.
+The wet chemicals are described on the
+{ref}`wet chemicals <material-wet-chemicals>` page and listed in the
+{ref}`materials index <materials-index>`; what is specific to a wet bench is summarised here.
 None of the SkyWater sources describes the fab's chemical supply or
 waste treatment.
 
@@ -294,6 +295,8 @@ not public.
   single-wafer spin processor, SkyWater's listed tools and the step
   assignments.
 * {ref}`materials-index` — wet chemicals and ultrapure water.
+* {ref}`material-wet-chemicals` — the acids, peroxide cleans and solvents,
+  their grades and SkyWater's listed chemistries.
 
 ## References
 
