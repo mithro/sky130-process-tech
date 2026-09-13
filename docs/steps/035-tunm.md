@@ -173,7 +173,7 @@ and the pre-oxidation clean as part of those steps (see the
 
 ## Resources required
 
-* **Photoresist** — i-line DNQ/novolac positive resist
+* **Photoresist** ({ref}`lithography materials <material-lithography-materials>`) — i-line DNQ/novolac positive resist
   ({ref}`category-lithography`); SkyWater names The Dow Chemical
   Company, JSR Corporation and Tokyo Ohka Kogyo America as photoresist
   suppliers.[^sec-01]

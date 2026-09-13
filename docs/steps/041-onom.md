@@ -149,7 +149,7 @@ etch).
 
 ## Resources required
 
-* **i-line photoresist** (Dow, JSR, TOK are SkyWater's named
+* **i-line photoresist** ({ref}`lithography materials <material-lithography-materials>`; Dow, JSR, TOK are SkyWater's named
   suppliers[^sec-01]), **HMDS**, optional **inorganic or organic
   ARC**.[^pat-03]
 * **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, DI water,

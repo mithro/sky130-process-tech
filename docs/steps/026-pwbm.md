@@ -168,7 +168,7 @@ raises NMOS {term}`Vt`.[^hook-2003]
 
 ## Resources required
 
-* **Thick positive i-line implant resist** (~2 µm class, inference);
+* **Thick positive i-line implant resist** ({ref}`lithography materials <material-lithography-materials>`; ~2 µm class, inference);
   suppliers named in SkyWater's 2021 S-1: Dow, JSR, Tokyo Ohka
   Kogyo.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev]

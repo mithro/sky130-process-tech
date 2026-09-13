@@ -154,7 +154,7 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 
 ## Resources required
 
-* **i-line photoresist** (Dow, JSR, TOK[^sec-01]), **HMDS**.
+* **i-line photoresist** ({ref}`lithography materials <material-lithography-materials>`; Dow, JSR, TOK[^sec-01]), **HMDS**.
 * **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, DI water,
   nitrogen.
 * **The LVOM reticle** — chrome on quartz, relaxed features.

@@ -139,7 +139,7 @@ fab:
 
 ## Resources required
 
-* **Positive i-line photoresist** (~1 µm); suppliers named in SkyWater's
+* **Positive i-line photoresist** ({ref}`lithography materials <material-lithography-materials>`; ~1 µm); suppliers named in SkyWater's
   2021 S-1: Dow, JSR, Tokyo Ohka Kogyo.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev]
   edge-bead remover, DI water, nitrogen.
