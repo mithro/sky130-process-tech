@@ -128,7 +128,7 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   ({ref}`category-etch`).
 * **Dielectric etcher** (Lam Exelan, Applied MxP) if the ARC is
   inorganic.
-* **Downstream asher** — some fabs open thin organic ARCs on relaxed
+* **Downstream plasma asher** — some fabs open thin organic ARCs on relaxed
   layers with a timed, isotropic ash rather than a directional etch
   ({ref}`category-strip`).
 * **Optical emission endpoint** on the etcher; **{term}`CD-SEM`** for the

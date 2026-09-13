@@ -142,7 +142,7 @@ memory (SKY130's recipe is not public):
   Applied Materials DPS Centura; or a **dielectric etcher** (Lam
   Exelan, Applied MxP) for a fluorocarbon-only recipe
   ({ref}`category-etch`).
-* **Downstream asher** and **wet bench** for the strip and the
+* **Downstream plasma asher** and **wet bench** for the strip and the
   bottom-oxide clear.
 * **Optical emission endpoint**; **patterned-wafer inspection**.
 
