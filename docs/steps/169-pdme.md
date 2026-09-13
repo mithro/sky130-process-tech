@@ -161,7 +161,7 @@ an aluminium top metal (SKY130's recipe is not public):
   the fluorine-removal plasma (industry practice;[^nojiri-2015] SkyWater
   names CF₄, CHF₃, SF₆ and O₂ on its listed etchers[^skw-01]); **He**
   backside cooling.
-* **O₂/N₂** for the ash;[^skw-01] **aluminium-compatible solvent** and
+* **O₂/N₂** for the ash;[^skw-01] **aluminium-compatible solvent** ({ref}`wet chemicals <material-wet-chemicals>`) and
   DI water; possibly **hydrogen peroxide** if a TiW cap is removed
   wet.[^danzl-1997]
 * **Chamber consumables**; **fluorine abatement**; **monitor wafers**
