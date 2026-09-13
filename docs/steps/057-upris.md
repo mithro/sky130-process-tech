@@ -98,7 +98,7 @@ clean, for a 200 mm, 130 nm-era fab:
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** (GaSonics Aura/PEP, Mattson Aspen,
   Axcelis/Fusion ES, PSK).
 * **{ref}`Batch wet bench <machine-wet-bench>`** with SPM, SC-1, SC-2 and a Marangoni dryer
-  (Akrion, DNS/SCREEN, SCP), or **spray processor** (FSI Mercury).
+  (Akrion, DNS/SCREEN, SCP), or **{ref}`spray processor <machine-wet-bench>`** (FSI Mercury).
 * **Surface particle scanner** (KLA-Tencor Surfscan SP1) and
   **patterned inspection** (AIT).
 

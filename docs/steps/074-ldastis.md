@@ -101,7 +101,7 @@ An industry-generic post-implant strip and pre-anneal clean for a
   (Novellus) Aura/PEP, Mattson Aspen, Axcelis/Fusion ES series, PSK
   ({ref}`category-strip`).
 * **{ref}`Batch wet bench <machine-wet-bench>`** with SPM, SC-1 and SC-2 tanks and a
-  rinser/dryer (Akrion, DNS/SCREEN, SCP), or a **spray processor**
+  rinser/dryer (Akrion, DNS/SCREEN, SCP), or a **{ref}`spray processor <machine-wet-bench>`**
   (FSI Mercury).
 * **Patterned-wafer inspection** (KLA-Tencor 2xxx/AIT class).
 
