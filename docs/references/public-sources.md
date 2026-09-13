@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1418
+written page has exactly one entry here; the inventory holds 1443
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -11765,6 +11765,204 @@ calculation based on kill ratio", *ASMC 2002*.
 <https://doi.org/10.1109/ASMC.2002.1001580> Simulated defect and bin maps
 showing when kill-ratio yield-impact estimates fail. Used on the defect
 and particle inspection page. Tier: deep dive.
+
+**TENCOR-THINFILM-1997** — Tencor Instruments, *Thin Film Measurement*
+(Prometrix UV-1250SE, UV-1270SE, UV-1050, FT-750 and SpectraMap SM300),
+product page; Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302033547/http://www.tencor.com:80/products/thinfilmmesaurement.html>
+Spectroscopic ellipsometry combined with UV spectrophotometry for
+thickness, refractive index and extinction coefficient of single films and
+stacks; a broadband reflectometer for resists and ARCs; a visible
+spectrophotometer for films down to about 150 Å; and a mapper for
+dielectric films from 200 Å to 4 µm on monitor wafers. Used on the film
+thickness and stress metrology page. Tier: cross-check (vendor
+statement).
+
+**TENCOR-STRESS-1997** — Tencor Instruments, *Thin Film Stress
+Measurement* (FLX-5400, FLX-2320, FLX-2350fp and FLX-2900), product page;
+Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302033500/http://www.tencor.com:80/products/thinfilmstress.html>
+Dual-wavelength stress gauges: radial stress maps (FLX-5400), measurements
+from −65 °C to 500 °C (FLX-2320) and in-situ measurements up to 900 °C
+(FLX-2900). Used on the film thickness and stress metrology page. Tier:
+cross-check (vendor statement).
+
+**TENCOR-UV1270SE-1996** — Tencor Instruments, *Tencor Instruments
+Introduces Next-Generation Film Measurement System with Advanced
+Automation Capabilities* (Prometrix UV-1270SE), press release, 1996-06-06;
+Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302033849/http://www.tencor.com:80/press/uv-1270s.html>
+A UV spectrophotometry and spectroscopic ellipsometry film gauge with an
+integrated SMIF minienvironment and measurement areas smaller than
+50 µm. Used on the film thickness and stress metrology page. Tier:
+cross-check (vendor statement).
+
+**KLA-FLX2320** — KLA-Tencor, *FLX-2320: Thin Film Stress Metrology*,
+product page; Wayback Machine capture of 2002-08-20.
+<https://web.archive.org/web/20020820125852/http://www.kla-tencor.com:80/products/metrology/FLX-2320/FLX-2320.html>
+Stress measurement on all film types for production monitoring of
+cracking, voiding and lifting, with dual-wavelength switching for
+transparent films such as silicon nitride; lists the ASET-F5x and Quantox
+XP beside it. Used on the film thickness and stress metrology page. Tier:
+cross-check (vendor statement).
+
+**TW-OP3260** — Therma-Wave, *The Opti-Probe 3260*, product page; Wayback
+Machine capture of 1998-12-05.
+<https://web.archive.org/web/19981205083736/http://www.thermawave.com:80/op3260.htm>
+Beam profile ellipsometry, beam profile reflectometry and spectrometry in
+one gauge: dielectric films from 0 to 150,000 Å, better than 0.1 Å
+precision in a 0.9 µm spot, ONO and OPO stacks, simultaneous thickness and
+index of PECVD nitrides, subtractive etch-rate maps, and its light
+sources. Used on the film thickness and stress metrology page. Tier:
+cross-check (vendor statement).
+
+**TW-OP5000** — Therma-Wave, *Opti-Probe 5000 Product Family*, product
+page; Wayback Machine capture of 1998-12-06.
+<https://web.archive.org/web/19981206005043/http://www.thermawave.com:80/op5000.htm>
+The Opti-Probe 5240, adding deep-UV spectroscopic and absolute
+ellipsometry to beam profile reflectometry. Used on the film thickness and
+stress metrology page. Tier: cross-check (vendor statement).
+
+**TW-HISTORY** — Therma-Wave, *Therma-Wave Corporate History*, web page;
+Wayback Machine capture of 2001-07-13.
+<https://web.archive.org/web/20010713111217/http://www.thermawave.com:80/aboutus/corphistory.htm>
+The company's two product lines: the Therma-Probe implant monitor
+(introduced 1985) and the Opti-Probe film gauge (introduced 1992). Used
+on the film thickness and stress metrology page. Tier: cross-check
+(vendor statement).
+
+**RUDOLPH-1999** — Rudolph Technologies, Inc., *1999 Annual Report*
+(including the Form 10-K for 1999); Wayback Machine capture of 2000-08-30.
+<https://web.archive.org/web/20000830152419/http://www.rudolphtech.com:80/ir/6859Rudolph99AR.pdf>
+Describes the AutoEL of 1977, the four-laser SpectraLASER ellipsometers,
+the MatrixMetrology line (1999), reflectometry for thicker films, and the
+MetaPULSE optical-acoustic gauges for up to six opaque layers from under
+20 Å to over 5 µm at 60 wafers per hour. Used on the film thickness and
+stress metrology page. Tier: cross-check (vendor statement).
+
+**NANOMETRICS-2000** — Nanometrics Incorporated, Form 10-K for the fiscal
+year ended 2000-12-31; Wayback Machine capture of 2003-03-23.
+<https://web.archive.org/web/20030323070701/http://www.nanometrics.com:80/Downloads/10k_2000.pdf>
+Microscope-based spectroscopic reflectometry with ellipsometry and FTIR
+options (NanoSpec 8000X, 9100 and others), integrated metrology for
+deposition, CMP and etch tools, and OEM supply for Applied Materials'
+Mirra Mesa (1998) and Producer QA (1999). Used on the film thickness and
+stress metrology page. Tier: cross-check (vendor statement).
+
+**WIKI-ELLIPSOMETRY** — Wikipedia, *Ellipsometry*.
+<https://en.wikipedia.org/wiki/Ellipsometry> The change of polarisation
+on reflection, compared with a model, to characterise thin films. Used on
+the film thickness and stress metrology page. Tier: high-level.
+
+**WIKI-PICOSECOND** — Wikipedia, *Picosecond ultrasonics*.
+<https://en.wikipedia.org/wiki/Picosecond_ultrasonics> Laser-generated
+acoustic echoes used as a thin-film metrology technique in semiconductor
+processing. Used on the film thickness and stress metrology page. Tier:
+high-level.
+
+**WIKI-FTIR** — Wikipedia, *Fourier-transform infrared spectroscopy*.
+<https://en.wikipedia.org/wiki/Fourier-transform_infrared_spectroscopy>
+The infrared method behind composition measurements of dielectric films.
+Used on the film thickness and stress metrology page. Tier: high-level.
+
+**PAT-BPR-THERMAWAVE** — N. Gold, D. L. Willenborg, J. Opsal and A.
+Rosencwaig (Therma-Wave), *Method and apparatus for measuring thickness of
+thin films*, US 4,999,014 A, filed 1989-05-04, granted 1991-03-12.
+<https://patents.google.com/patent/US4999014A/en> Thickness from the
+reflected intensity against angle of incidence within a beam focused by a
+high-numerical-aperture lens. Used on the film thickness and stress
+metrology page. Tier: deep dive.
+
+**PAT-MAIWL-RUDOLPH** — R. F. Spanier, R. G. Wolf, R. M. Loiterman and
+M. E. Haller (Rudolph Technologies), *Simultaneous multiple angle/multiple
+wavelength ellipsometer and method*, US 5,166,752 A, filed 1990-01-11,
+granted 1992-11-24. <https://patents.google.com/patent/US5166752A/en>
+Illumination over a range of angles from one focused beam, detected on an
+array without scanning. Used on the film thickness and stress metrology
+page. Tier: deep dive.
+
+**PAT-PICOSECOND-BROWN** — J. Tauc, H. J. Maris and C. Thomsen (Brown
+University Research Foundation), *Optical generator and detector of
+stress pulses*, US 4,710,030 A, filed 1985-05-17, granted 1987-12-01.
+<https://patents.google.com/patent/US4710030A/en> A pump beam generates a
+stress pulse and a probe beam detects the change of optical constants it
+causes. Used on the film thickness and stress metrology page. Tier: deep
+dive.
+
+**ROSENCWAIG-1992** — A. Rosencwaig, J. Opsal, D. L. Willenborg, S. M.
+Kelso and J. T. Fanton, "Beam profile reflectometry: A new technique for
+dielectric film measurements", *Applied Physics Letters* **60**(11),
+1301–1303 (1992). <https://doi.org/10.1063/1.107323> Thickness and optical
+constants of films from 30 Å to 20,000 Å with a submicron spot. Used on
+the film thickness and stress metrology page. Tier: deep dive.
+
+**FANTON-1993** — J. T. Fanton, J. Opsal, D. L. Willenborg, S. M. Kelso
+and A. Rosencwaig, "Multiparameter measurements of thin films using
+beam-profile reflectometry", *Journal of Applied Physics* **73**(11),
+7035–7040 (1993). <https://doi.org/10.1063/1.352421> S- and
+P-polarisation reflectivities over a range of angles, fitting up to three
+film parameters. Used on the film thickness and stress metrology page.
+Tier: deep dive.
+
+**CHANDLER-HOROWITZ-2003** — D. Chandler-Horowitz, "Assessment of
+Ultra-Thin SiO2 Film Thickness Measurement Precision by Ellipsometry",
+*AIP Conference Proceedings* **683**, 326–330 (2003).
+<https://doi.org/10.1063/1.1622490> The factors behind instrument-to-
+instrument and lab-to-lab differences in ellipsometric thickness of
+oxides of 10 nm and below. Used on the film thickness and stress metrology
+page. Tier: deep dive.
+
+**KAISER-1991** — A. M. Kaiser, "Semiconductor thin-film optical constant
+determination and thin-film thickness measurement equipment correlation",
+*Proc. SPIE* **1464**, 386 (1991). <https://doi.org/10.1117/12.44451>
+Correlating thickness gauges by refining optical constants rather than
+applying offsets. Used on the film thickness and stress metrology page.
+Tier: deep dive.
+
+**STOUT-1989** — P. J. Stout and K. Krishnan, "A Comparison Of
+Multicomponent Quantitative Analysis Methods For The Determination Of
+Boron And Phosphorous In BPSG Films On Silicon", *Proc. SPIE* **1145**,
+494 (1989). <https://doi.org/10.1117/12.969563> Infrared bands for
+phosphorus (about 1335 cm⁻¹) and boron (about 1420 cm⁻¹) in doped glass,
+substrate requirements and calibration. Used on the film thickness and
+stress metrology page. Tier: deep dive.
+
+**SHIRAIWA-1968** — T. Shiraiwa and N. Fujino, "Theoretical Formulas for
+Film Thickness Measurement by Means of Fluorescence X-Rays", *Advances in
+X-ray Analysis* **12**, 446–456 (1968).
+<https://doi.org/10.1154/S0376030800005917> Fluorescence X-ray intensities
+from coating and substrate as functions of coating thickness. Used on the
+film thickness and stress metrology page. Tier: deep dive.
+
+**WINDOVER-2001** — D. Windover, "Development of an in-line X-ray
+reflectivity technique for metal film thickness measurement", *AIP
+Conference Proceedings* **550**, 243–248 (2001).
+<https://doi.org/10.1063/1.1354405> Fixed-angle energy-dispersive X-ray
+reflectivity for tantalum films below 10 nm. Used on the film thickness
+and stress metrology page. Tier: deep dive.
+
+**THOMSEN-1986** — C. Thomsen, H. T. Grahn, H. J. Maris and J. Tauc,
+"Surface generation and detection of phonons by picosecond light pulses",
+*Physical Review B* **34**(6), 4129–4138 (1986).
+<https://doi.org/10.1103/PhysRevB.34.4129> Generation and optical
+detection of picosecond stress pulses. Used on the film thickness and
+stress metrology page. Tier: deep dive.
+
+**STONER-1998** — R. J. Stoner, C. J. Morath, G. Tas, G. Antonelli and
+H. J. Maris, "Picosecond ultrasonics: A new approach for control of thin
+metal processes", *Characterization and Metrology for ULSI Technology:
+1998 International Conference*, pp. 385–394 (AIP, 1998).
+<https://doi.org/10.1063/1.56821> Applications to PVD TiN, CVD WNx and W,
+Ti/TiN stacks and five-layer interconnect stacks. Used on the film
+thickness and stress metrology page. Tier: deep dive.
+
+**FLINN-1987** — P. A. Flinn, D. S. Gardner and W. D. Nix, "Measurement
+and interpretation of stress in aluminum-based metallization as a
+function of thermal history", *IEEE Transactions on Electron Devices*
+**34**(3), 689–699 (1987). <https://doi.org/10.1109/T-ED.1987.22981>
+Stress from wafer curvature measured by laser scanning, through thermal
+cycles. Used on the film thickness and stress metrology page. Tier: deep
+dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
