@@ -17,15 +17,16 @@ blanket, low-temperature oxide laid over the freshly etched metal-5
 lines, pads and the {ref}`NCAPOX6 <step-158>` oxide between them. It
 opens the *passivation* module — the insulating "glass" that seals the
 finished circuit — which continues with the silicon nitride of
-{ref}`NTSD <step-167>` and is cut open over the bond pads at
-{ref}`PDM <step-168>` / {ref}`PDME <step-169>`.
+{ref}`NTSD <step-167>` and is cut open over the
+{term}`bond pads <bond pad>` at {ref}`PDM <step-168>` /
+{ref}`PDME <step-169>`.
 
 The PDK's process stack diagram draws exactly such a film. Directly on
 `metal5` (1.26 µm thick on the diagram) it shows a thin layer labelled
 "TOPOX K=3.9", dimensioned 0.09 µm on the top of the metal and
 0.070 µm on its sidewall, and over that a thicker "TOPNIT K=7.5"
 nitride dimensioned 0.54 µm on top and 0.4223 µm on the sidewall;
-a "glass cut" is drawn through both over the metal, and an optional
+a "glass cut" is drawn through both over the metal, and a
 polyimide ("PI1 K=2.94") tops the stack.[^pdk-04] The Cypress
 qualification reports for other processes at the same Bloomington fab
 describe their passivation in the same two-layer form: "1000Å TEOS /
@@ -37,20 +38,8 @@ The step list used in this reference does not explain what the oxide
 is for; we read `NFUSOX` as the
 deposition of the thin undoped oxide the PDK labels TOPOX (inference:
 it is the only oxide the diagram draws between metal 5 and the
-nitride, and its 0.09 µm matches the 1000 Å TEOS film of the Cypress
-reports within the diagram's rounding[^pdk-04][^cyp-qtp-123907]).
-
-The PDK also documents laser-programmable metal fuses. Its layer table
-lists `target` (76:44), "Metal fuse target", on the same GDS layer
-number as `pad` (76:20, "Passivation cut (opening over
-pads)"),[^pdk-06] its periphery rules define metal fuses 0.800 µm wide
-and 7.200 µm long (mf.1, mf.2) with the note "For SP8P*/SKY130P* (PLM)
-CADflow use MM4 for Metal Fuse",[^pdk-periph] and its assumptions page
-has a "Laser Fuse Criteria" table (a nominal effective laser spot
-diameter of 3.5 µm, a fuse melting radius of 3.6 µm, a "Melting related
-crack size in ILD" of 0.36 µm) and a polyimide rule, "Enclosure of fuses
-by polyimide", of 12.[^pdk-03] Whether this oxide plays any part in the
-fuse windows is not stated publicly (see *Open questions*).
+nitride, and its 0.09 µm is close to the 1000 Å TEOS film of the
+Cypress reports[^pdk-04][^cyp-qtp-123907]).
 
 ## Step category
 
@@ -106,21 +95,6 @@ reasons for the oxide in SKY130 specifically are inferred.
   a known oxide between nitride and metal gives that etch a change in
   emission and rate before the aluminium is reached (industry practice;
   inference for this flow).
-* **Controlled dielectric over laser fuses (possible).** Laser
-  programmable redundancy, demonstrated by Smith et al. on a 64K
-  DRAM,[^smith-1981] depends on the transparent dielectric over the
-  link: Scarfone and Chlipala modelled how the films encapsulating a
-  link create "important optical interference effects modifying the
-  laser flux absorbed" and how the link must build enough pressure
-  "to rupture the dielectric above the link".[^scarfone-1986] Fuse
-  patents therefore control the oxide left over a fuse — an IBM patent
-  gives "<2000 Å" as crack-prone and ">8000 Å" as needing too much
-  laser energy,[^pat-fuse-ibm] a Vanguard patent targets "about 0.35
-  microns" under a silicon oxide/silicon nitride
-  passivation,[^pat-fuse-vanguard] and a TSMC patent opens a shallow
-  window in an oxide/nitride blanket so that the remaining oxide "can be
-  moderated and controlled within a narrow window".[^pat-fuse-tsmc]
-  Whether TOPOX has such a role in SKY130 is not public.
 
 Without this oxide, on our reading, the nitride would be deposited
 directly on the aluminium and on the cap oxide, and the pad etch would
@@ -257,14 +231,6 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   dielectrics.[^yue-1985][^chaudhari-1974]
 * Paulson and Kirk, IRPS 1974 — why the glass next to aluminium is
   undoped.[^paulson-1974]
-* Smith et al., *IEEE JSSC* 1981 — laser
-  programmable redundancy on a 64K DRAM.[^smith-1981]
-* Scarfone and Chlipala, *J. Mater. Res.* 1986 — optical interference
-  and dielectric rupture in laser link cutting.[^scarfone-1986]
-* Lee, Klaasen and Mitwalsky (IBM), US 5,872,390; Tzeng, Chen and Wang
-  (Vanguard), US 6,294,474; Yang and Su (TSMC), US 6,835,642 — controlling
-  the oxide left over a laser fuse under an oxide/nitride
-  passivation.[^pat-fuse-ibm][^pat-fuse-vanguard][^pat-fuse-tsmc]
 * Bothra, McKay and Jhota (Zeevo), US 6,492,716 — a seal ring under a
   passivation oxide and nitride.[^pat-sealring-zeevo]
 * Cheung, P2ID 2000 — charging during plasma-enhanced dielectric
@@ -277,17 +243,26 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   thickness and deposition conditions are not public; 0.09 µm is the
   diagram's label[^pdk-04] and 1000 Å the Cypress reports' value for
   other processes.[^cyp-qtp-123907][^cyp-qtp-014807]
-* Whether this oxide is involved in laser-fuse windows over the metal-4
-  fuses, and how the fuse `target` layer on GDS layer 76[^pdk-06] is
-  turned into an opening (with the pad mask or otherwise), is not
-  public.
+* The PDK documents laser-programmable {term}`metal fuses <metal fuse>`
+  — the mf.\* rules with the note "For SP8P\*/SKY130P\* (PLM) CADflow
+  use MM4 for Metal Fuse",[^pdk-periph] a "Laser Fuse Criteria" table and
+  an "Enclosure of fuses by polyimide" rule,[^pdk-03] and a `target`
+  layer (76:44, "Metal fuse target") on the GDS layer number of
+  `pad`[^pdk-06] — and SkyWater lists "Fuse GSI M325" under
+  sort.[^skw-01] No public source describes the dielectric left over
+  those fuses or whether this oxide is part of it; fuse patents show why
+  that thickness is normally
+  controlled.[^pat-fuse-ibm][^pat-fuse-vanguard][^pat-fuse-tsmc]
 * The Cypress reports disagree on whether an oxide lies under the
   nitride (S8TNV-5R lists nitride only[^cyp-qtp-113005]); which
   description applies to SKY130 lots is not public beyond the PDK
   diagram.
-* The stack diagram also dimensions 0.3777 µm beside metal 5;[^pdk-04]
-  what film thicknesses that label combines in the field between lines
-  is not stated.
+* The stack diagram dimensions 0.3777 µm from the bottom of metal 5 to
+  the top of the TOPNIT beside the line, where it draws no separate
+  TOPOX (our reading of the drawing: 5.3711 µm + 0.3777 µm equals the
+  11.8834 µm polyimide top less the 6.1346 µm polyimide dimension
+  there[^pdk-04]); whether the passivation is really thinner between
+  lines is not stated.
 
 <!-- footnotes -->
 
@@ -385,15 +360,6 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
     dielectric deposition charging damage", *Proc. 2000 5th
     International Symposium on Plasma Process-Induced Damage (P2ID)*,
     pp. 161–163. <https://doi.org/10.1109/PPID.2000.870658>
-[^smith-1981]: R. T. Smith, J. D. Chlipala, J. F. M. Bindels,
-    R. G. Nelson, F. H. Fischer and T. F. Mantz, "Laser programmable
-    redundancy and yield improvement in a 64K DRAM", *IEEE Journal of
-    Solid-State Circuits* **16**(5), 506–514 (1981).
-    <https://doi.org/10.1109/JSSC.1981.1051630>
-[^scarfone-1986]: L. M. Scarfone and J. D. Chlipala, "Computer
-    simulation of target link explosion in laser programmable
-    redundancy for silicon memory", *Journal of Materials Research*
-    **1**(2), 368–381 (1986). <https://doi.org/10.1557/JMR.1986.0368>
 [^pat-fuse-ibm]: P.-I. P. Lee, W. A. Klaasen and A. Mitwalsky
     (International Business Machines), *Fuse window with controlled fuse
     oxide thickness*, US 5,872,390 A, filed 1997-08-14, granted
@@ -410,4 +376,5 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 [^pat-sealring-zeevo]: S. Bothra, T. G. McKay and R. Jhota (Zeevo),
     *Seal ring structure for IC containing integrated digital/RF/analog
     circuits and functions*, US 6,492,716 B1, filed 2001-04-30, granted
-    2002-12-10. <https://patents.google.com/patent/US6492716B1/en>
+    2002-12-10.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6492716>
