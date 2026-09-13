@@ -1084,8 +1084,8 @@ reflow
 
 ReRAM
     Resistive random-access memory, also RRAM: a non-volatile memory
-    whose cell is a thin metal-oxide film between two electrodes — a
-    metal–insulator–metal structure like a {term}`MiM capacitor` — and
+    whose cell is typically a thin metal-oxide film between two
+    electrodes — a metal–insulator–metal structure like a {term}`MiM capacitor` — and
     whose resistance is switched between a low and a high state by
     voltage pulses that move oxygen vacancies and so make or break a
     conductive filament. Because it is built from thin films between
