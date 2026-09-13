@@ -244,7 +244,7 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 
 ## Resources required
 
-* **{ref}`Sputter targets <material-sputter-targets>`** — titanium and/or Ti:W, Al–0.5 wt.% Cu, Ti:W
+* **{ref}`Sputter targets <material-sputter-targets>`** — titanium and/or Ti:W, Al–0.5%Cu, Ti:W
   (10 wt.% Ti[^pat-tiw-hitachi]); SkyWater's filings name Honeywell
   Electronic Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal
   2023 10-K) as sputter-target suppliers.[^sec-01][^sec-02] A 1.2 µm film
