@@ -10,7 +10,9 @@ For every ``docs/machines/*.md`` page except ``index.md``:
   the same steps as the page's row in the main table of
   ``docs/machines/index.md`` (the row whose first cell links the page's
   label), separately for the main list, the "*alternative:*" list and
-  the "*also …:*" lists, so a step moved between lists is caught.
+  the "*also …:*" lists, so a step moved between lists is caught; a
+  step listed twice in one list, and "*also …:*" marker wording that
+  differs between page and index, are reported too.
 
 Exit status is non-zero on any problem.  Run with
 ``uv run tools/check_machines.py``.
@@ -44,10 +46,12 @@ H3 = {
     "References": ["Cross-check", "High-level understanding", "Deep dive"],
 }
 STEPS_H3 = "SKY130 steps assigned to this class"
-STEP_RE = re.compile(r"\{ref\}`[^`<]*<(step-\d{3})>`")
+# Both {ref}`text <step-NNN>` and the bare {ref}`step-NNN` form.
+STEP_RE = re.compile(r"\{ref\}`(?:[^`<]*<)?(step-\d{3})>?`")
 LABEL_RE = re.compile(r"^\((machine-[a-z0-9-]+)\)=$", re.MULTILINE)
 # "*alternative:*" or "*also for a clean:*" (any "*also …:*" wording).
-MARKER_RE = re.compile(r"(\*alternative:\*|\*also\b[^*\n]*:\*)")
+MARKER_RE = re.compile(r"(\*alternative:\*|\*also\b[^*]*:\*)")
+LISTS = ("steps", "alternative", "also")
 
 
 def sections(text: str, level: str) -> dict[str, str]:
@@ -56,20 +60,28 @@ def sections(text: str, level: str) -> dict[str, str]:
     return {parts[i].strip(): parts[i + 1] for i in range(1, len(parts), 2)}
 
 
-def step_sets(text: str) -> tuple[set[str], set[str], set[str]]:
+def step_lists(text: str) -> tuple[dict[str, list[str]], list[str]]:
     """Main, "*alternative:*" and "*also …:*" steps in a paragraph or cell.
 
     Each marker starts a new list that runs to the next marker, so the
     lists may appear in any order; several "*also …:*" lists are merged.
+    Whitespace is collapsed first, so a marker may wrap across lines.
+    Also returns the "*also …:*" marker texts, in order.
     """
-    buckets: dict[str, set[str]] = {"steps": set(), "alternative": set(),
-                                    "also": set()}
-    parts = MARKER_RE.split(text)
-    buckets["steps"] |= set(STEP_RE.findall(parts[0]))
+    parts = MARKER_RE.split(re.sub(r"\s+", " ", text))
+    lists: dict[str, list[str]] = {name: [] for name in LISTS}
+    lists["steps"] += STEP_RE.findall(parts[0])
+    also_markers = []
     for i in range(1, len(parts), 2):
         name = "alternative" if parts[i].startswith("*alternative") else "also"
-        buckets[name] |= set(STEP_RE.findall(parts[i + 1]))
-    return buckets["steps"], buckets["alternative"], buckets["also"]
+        if name == "also":
+            also_markers.append(parts[i])
+        lists[name] += STEP_RE.findall(parts[i + 1])
+    return lists, also_markers
+
+
+def duplicates(steps: list[str]) -> list[str]:
+    return sorted({s for s in steps if steps.count(s) > 1})
 
 
 def index_rows() -> dict[str, str]:
@@ -108,12 +120,19 @@ def check(page: Path, rows: dict[str, str]) -> list[str]:
     # paragraph may itself start with the emphasis "*alternative:*").
     paragraph = next((p for p in steps_body.split("\n\n") if STEP_RE.search(p)
                       and not re.match(r"\*\s", p.lstrip())), "")
-    for name, got, want in zip(("steps", "alternative", "also"),
-                               step_sets(paragraph), step_sets(row)):
+    page_lists, page_markers = step_lists(paragraph)
+    row_lists, row_markers = step_lists(row)
+    for name in LISTS:
+        got, want = set(page_lists[name]), set(row_lists[name])
         if got != want:
             problems.append(
                 f"{name}: page only {sorted(got - want)}, index only {sorted(want - got)}"
             )
+        for where, steps in (("page", page_lists[name]), ("index", row_lists[name])):
+            if duplicates(steps):
+                problems.append(f"{name}: {where} lists {duplicates(steps)} twice")
+    if page_markers != row_markers:
+        problems.append(f"'also' markers differ: page {page_markers}, index {row_markers}")
     return problems
 
 
