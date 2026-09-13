@@ -183,9 +183,9 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
   suppliers[^sec-01][^sec-02]).
 * **Argon** (sputter gas) and **nitrogen** (reactive gas for
   TiN);[^wiki-sputter] **helium** backside cooling.
-* **Chamber consumables** — shields, coils, clamp or {term}`ESC` rings,
+* **{ref}`Chamber consumables <material-hardware-consumables>`** — shields, coils, clamp or {term}`ESC` rings,
   collimators (for the collimated chamber), pasting targets.
-* **Monitor wafers** (SEMI M8 class)[^semi-m8] for sheet resistance,
+* **{ref}`Monitor wafers <material-substrates>`** (SEMI M8 class)[^semi-m8] for sheet resistance,
   thickness and particles.
 * Gas suppliers named in SkyWater's 2021 S-1: Air Products,
   Praxair.[^sec-01]

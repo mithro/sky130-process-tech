@@ -177,9 +177,9 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
   Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
   as sputter-target suppliers[^sec-01][^sec-02]); **argon** and
   **nitrogen**.[^wiki-sputter]
-* **Helium** backside cooling; chamber shields, clamp/ESC parts,
+* **Helium** backside cooling; {ref}`chamber shields <material-hardware-consumables>`, clamp/ESC parts,
   pasting cycles.
-* **Monitor wafers** (SEMI M8 class)[^semi-m8] for sheet resistance,
+* **{ref}`Monitor wafers <material-substrates>`** (SEMI M8 class)[^semi-m8] for sheet resistance,
   thickness and particle control.
 * Gas suppliers named in SkyWater's 2021 S-1: Air Products,
   Praxair.[^sec-01]

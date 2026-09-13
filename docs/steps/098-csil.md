@@ -177,8 +177,8 @@ fab (SKY130's recipe is not public):
   the Heatpulse's gases, "NH3, Ar, N2, O2", but no ambient for any
   step);[^skw-01] the titanium and TiN were consumed at
   {ref}`TI/TIN1 <step-097>`.
-* **Tungsten-halogen lamps, quartz window and chamber, edge rings**;
-  pyrometer calibration and thermocouple wafers (category page).
+* **{ref}`Tungsten-halogen lamps <material-hardware-consumables>`, quartz window and chamber, edge rings**;
+  pyrometer calibration and {ref}`thermocouple wafers <material-substrates>` (category page).
 * **Cooling water and CDA/N₂** for lamp and chamber cooling.[^ag-8108]
 * **Monitor wafers** (SEMI M8 class)[^semi-m8] with blanket Ti/TiN on
   silicon for sheet-resistance tracking.

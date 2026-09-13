@@ -166,8 +166,8 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
   and ammonia** (low-temperature {term}`LPCVD`).[^gumpher-2004]
 * **NF₃** (with argon or oxygen) chamber clean; **helium** or
   **argon** diluent.[^txt-09]
-* **Chamber consumables** — showerheads, heater and liner parts.
-* **Monitor wafers** (SEMI M8 class)[^semi-m8] for thickness, stress
+* **{ref}`Chamber consumables <material-hardware-consumables>`** — showerheads, heater and liner parts.
+* **{ref}`Monitor wafers <material-substrates>`** (SEMI M8 class)[^semi-m8] for thickness, stress
   and particle control.
 * Gas suppliers named in SkyWater's 2021 S-1: Air Products,
   Praxair.[^sec-01]

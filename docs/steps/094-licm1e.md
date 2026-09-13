@@ -186,8 +186,8 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   listed on this page: the solvent clean (EKC265/EKC270 class) is described
   at {ref}`SACETCH <step-095>`, which this reference reads as the clean
   after this etch.
-* **Chamber consumables** — silicon or quartz rings, liners,
-  electrodes; **monitor wafers** with blanket oxide and nitride for
+* **{ref}`Chamber consumables <material-hardware-consumables>`** — silicon or quartz rings, liners,
+  electrodes; **{ref}`monitor wafers <material-substrates>`** with blanket oxide and nitride for
   rate and selectivity checks.[^semi-m8]
 * Gas suppliers named in SkyWater's 2021 S-1: Air Products,
   Praxair.[^sec-01]
