@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1554
+written page has exactly one entry here; the inventory holds 1565
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -498,6 +498,7 @@ Also used on the wet chemicals material page.
 Also used on the lithography materials material page.
 Also used on the sputter targets material page.
 Also used on the substrates material page.
+Also used on the CMP consumables material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -553,6 +554,7 @@ etcher tool") and "the pneumatic controls of a vacuum system". Tier:
 cross-check (tool naming).
 Also used on the HDP-CVD page.
 Also used on the single-wafer spin processor machine page.
+Also used on the CMP consumables material page.
 
 **SKW-08** — SkyWater Technology, *"Maintenance Technician Job
 Overview"* and *"Careers & Jobs"* pages.
@@ -672,6 +674,7 @@ Also used on the sputter targets material page, which also quotes the
 was owned and operated by Cypress Semiconductor Corporation, or Cypress,
 as a captive manufacturing facility for 20 years".
 Also used on the substrates material page.
+Also used on the CMP consumables material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -692,6 +695,7 @@ Also used on the wet chemicals material page.
 Also used on the lithography materials material page.
 Also used on the sputter targets material page.
 Also used on the substrates material page.
+Also used on the CMP consumables material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -1276,6 +1280,7 @@ Also used on the defect and particle inspection and film thickness and
 stress metrology pages.
 Tier: high-level.
 Also used on the substrates material page.
+Also used on the CMP consumables material page.
 
 **TXT-08** — H. Xiao, *Introduction to Semiconductor Manufacturing
 Technology*, 2nd ed., SPIE Press, 2012, ISBN 978-0-8194-9092-6.
@@ -1348,6 +1353,7 @@ Mechanisms"*, Chemical Reviews, vol. 110, no. 1, pp. 178–204, 2010,
 DOI 10.1021/cr900170z. Oxide, tungsten and copper CMP chemistry. Tier:
 deep dive.
 Also used on the CMP polisher machine page.
+Also used on the CMP consumables material page.
 
 **REV-03** — E. K. Broadbent and C. L. Ramiller, *"Selective Low
 Pressure Chemical Vapor Deposition of Tungsten"*, Journal of The
@@ -1503,6 +1509,7 @@ Tier: high-level.
 <https://en.wikipedia.org/wiki/Cerium(IV)_oxide> Cerium(IV) oxide, the
 abrasive in high-selectivity STI slurries. Used on the cmp category
 page. Tier: high-level.
+Also used on the CMP consumables material page.
 
 **WIKI-CHANNEL** — Wikipedia, *Channelling (physics)*.
 <https://en.wikipedia.org/wiki/Channelling_(physics)> Ion channelling
@@ -1518,11 +1525,13 @@ NMOS on the p-substrate, PMOS in an N-well. Used on steps 017, 018 and
 conditioners, abrasives, endpoint and REB + CMP for STI. Used on step
 012 and the cmp category page. Tier: high-level.
 Also used on the CMP polisher machine page.
+Also used on the CMP consumables material page.
 
 **WIKI-COLLOIDAL-SILICA** — Wikipedia, *Colloidal silica*.
 <https://en.wikipedia.org/wiki/Colloidal_silica> Colloidal silica, the
 abrasive in conventional oxide slurries. Used on the cmp category page.
 Tier: high-level.
+Also used on the CMP consumables material page.
 
 **WIKI-CTF** — Wikipedia, *Charge trap flash*.
 <https://en.wikipedia.org/wiki/Charge_trap_flash> Why trapped charge
@@ -2812,6 +2821,7 @@ Effects on the Suppression of Silicon Nitride Removal during CMP",
 <https://doi.org/10.1149/1.1817870> Slurry additives that suppress
 silicon nitride removal, i.e. how a self-stopping STI slurry is made.
 Used on step 012. Tier: deep dive.
+Also used on the CMP consumables material page.
 
 **BASSETT-2016** — D. W. Bassett and A. L. P. Rotondaro, "Silica
 Formation during Etching of Silicon Nitride in Phosphoric Acid", *Solid
@@ -2891,6 +2901,7 @@ category page. Tier: deep dive.
 <https://doi.org/10.1016/0022-3093(90)90200-6> The chemical mechanism of
 glass (oxide) polishing that oxide CMP inherits. Used on step 012 and
 the cmp category page. Tier: deep dive.
+Also used on the CMP consumables material page.
 
 **DEAL-1965** — B. E. Deal and A. S. Grove, "General Relationship for
 the Thermal Oxidation of Silicon", *Journal of Applied Physics*
@@ -2972,6 +2983,7 @@ etch behaviour. Used on step 003. Tier: deep dive.
 Non-Crystalline Solids* **283**(1–3), 129–136 (2001).
 <https://doi.org/10.1016/S0022-3093(01)00364-7> The mechanism by which
 ceria particles polish SiO₂. Used on step 012. Tier: deep dive.
+Also used on the CMP consumables material page.
 
 **HU-1991** — S. M. Hu, "Stress-related problems in silicon technology",
 *Journal of Applied Physics* **70**(6), R53–R80 (1991).
@@ -3349,6 +3361,7 @@ Springer, 2004, ISBN 978-3-540-43181-9.
 dielectric CMP, endpoint and post-CMP cleaning. Used on step 012 and the
 cmp category page. Tier: deep dive.
 Also used on the CMP polisher machine page.
+Also used on the CMP consumables material page.
 
 **REINHARDT-2008** — K. A. Reinhardt and W. Kern (eds.), *Handbook of
 Silicon Wafer Cleaning Technology*, 2nd ed., William Andrew, 2008, ISBN
@@ -3390,6 +3403,7 @@ Materials*, Wiley, 1997, ISBN 978-0-471-13827-6.
 Preston's law, pads, slurries and process control. Used on step 012 and
 the cmp category page. Tier: deep dive.
 Also used on the CMP polisher machine page.
+Also used on the CMP consumables material page.
 
 **SUN-2017** — T. Sun, Z. Han and M. Keswani, "Brush Scrubbing for
 Post-CMP Cleaning", in *Developments in Surface Contamination and
@@ -3430,6 +3444,7 @@ chemical mechanical polishing apparatus*, US 5,893,796 A, granted
 transparent window in the pad for in-situ optical endpoint detection.
 Used on step 012. Tier: deep dive.
 Also used on the CMP polisher machine page.
+Also used on the CMP consumables material page.
 
 **PAT-CORNER-TOSHIBA** — K. Horioka, H. Okano and H. Nishino (Toshiba
 Corporation), *Method of manufacturing semiconductor devices including
@@ -4945,6 +4960,7 @@ Metal Features as Chip Interconnects", *Journal of The Electrochemical
 Society* **138**(11), 3460–3465 (1991).
 <https://doi.org/10.1149/1.2085434> Tungsten CMP by oxidation and
 abrasion. Used on the cmp category page. Tier: cross-check.
+Also used on the CMP consumables material page.
 
 **LUO-2001** — J. Luo and D. A. Dornfeld, "Material removal mechanism in
 chemical mechanical polishing: theory and modeling", *IEEE Transactions
@@ -4952,6 +4968,7 @@ on Semiconductor Manufacturing* **14**(2), 112–133 (2001).
 <https://doi.org/10.1109/66.920723> The abrasive-contact model of
 material removal. Used on the cmp category page. Tier: deep dive.
 Also used on the CMP polisher machine page.
+Also used on the CMP consumables material page.
 
 **OUMA-2002** — D. O. Ouma, D. S. Boning, J. E. Chung, W. G. Easter et
 al., "Characterization and modeling of oxide chemical-mechanical
@@ -4982,6 +4999,7 @@ Iodate", *Journal of The Electrochemical Society* **146**(1), 376–381
 the roles of alumina abrasive and oxidiser. Used on the cmp category
 page. Tier: deep dive.
 Also used on the CMP polisher machine page.
+Also used on the CMP consumables material page.
 
 **ZANTYE-2004** — P. B. Zantye, A. Kumar and A. K. Sikder, "Chemical
 mechanical planarization for microelectronics applications", *Materials
@@ -4990,6 +5008,7 @@ Science and Engineering: R* **45**(3–6), 89–220 (2004).
 microelectronics, including Preston deviations and slurry consumption.
 Used on the cmp category page. Tier: deep dive.
 Also used on the CMP polisher machine page.
+Also used on the CMP consumables material page.
 
 ##### Books and book chapters
 
@@ -7302,6 +7321,7 @@ Phenomena* **65–66**, 105–108 (1998).
 <https://doi.org/10.4028/www.scientific.net/SSP.65-66.105> TMAH as a
 post-tungsten-CMP clean. Used on step 111. Tier: deep dive.
 Also used on the post-CMP cleaner machine page.
+Also used on the CMP consumables material page.
 
 **KNEER-1997** — E. A. Kneer, C. Raghunath, V. Mathew, S. Raghavan and
 J. S. Jeon, "Electrochemical Measurements during the Chemical Mechanical
@@ -7347,6 +7367,7 @@ for metal CMP*, US 5,958,288 A, filed 1996-11-26, granted 1999-09-28.
 peroxide/ferric-catalyst tungsten slurry. Used on step 111. Tier:
 cross-check.
 Also used on the CMP polisher machine page.
+Also used on the CMP consumables material page.
 
 **PAT-HCM-NOVELLUS** — K. F. Lai et al. (Novellus Systems), *Apparatus and
 method for controlling plasma uniformity across a substrate*, US
@@ -7674,6 +7695,7 @@ Letters* **12**(3), H84 (2009). <https://doi.org/10.1149/1.3058994>
 Brush design for post-ILD-CMP scrubbing. Used on steps 116 and 117.
 Also used on the post-CMP cleaner machine page.
 Tier: deep dive.
+Also used on the CMP consumables material page.
 
 **ROCKE-1988** — M. Rocke and M. Schneegans, "Titanium nitride for
 antireflection control and hillock suppression on aluminum silicon
@@ -11554,6 +11576,7 @@ megasonic module. Used on the CMP polisher machine page. Tier:
 cross-check (vendor statement).
 Also used on the post-CMP cleaner machine page, the CMP category page and
 the CMPP, WCMPLI and CMPL step pages.
+Also used on the CMP consumables material page.
 
 **IPEC-472-1997** — IPEC-Planar, *AVANTI 472*, product page; Wayback
 Machine capture of 1997-06-26.
@@ -11563,6 +11586,7 @@ for wafers up to 200 mm, oxide and metal processes, APP1000 pad profiling,
 slurries of pH 2–12, slurry pumps to 1000 ml/min, platen temperature
 control and a two-platen buff. Used on the CMP polisher machine page.
 Tier: cross-check (vendor statement).
+Also used on the CMP consumables material page.
 
 **IPEC-676-1997** — IPEC-Planar, *IPEC AvantGaard 676 Highlights*,
 product page; Wayback Machine capture of 1997-06-26.
@@ -11632,6 +11656,7 @@ granted 2001-02-06. <https://patents.google.com/patent/US6183354B1/en>
 Why a non-uniform carrier load gives non-uniform removal, and a carrier
 head with a flexure-mounted flexible membrane, gimbal and retaining ring.
 Used on the CMP polisher machine page. Tier: deep dive.
+Also used on the CMP consumables material page.
 
 **PAT-LINEAR-LAM** — A. K. Pant, D. W. Young, G. Travis, K. Volodarsky,
 A. Nagengast et al. (Lam Research), *Polishing head for chemical
@@ -11649,6 +11674,7 @@ formation and its mechanism in chemical mechanical planarization (CMP)",
 against process conditions and consumables, scratch inspection, and
 filtration and water-jet spraying to reduce scratches. Used on the CMP
 polisher machine page. Tier: deep dive.
+Also used on the CMP consumables material page.
 
 **OLLENDORF-2004** — H. Ollendorf, S. Cabral and R. Fuller, "Reduction of
 CMP μ-scratch induced metal shorts by introduction of a post CMP tungsten
@@ -11659,6 +11685,7 @@ Tungsten-filled microscratches from tungsten CMP shorting lines, removed
 by a plasma etch after the polish. Used on the CMP polisher machine page.
 Tier: deep dive.
 Also used on the post-CMP cleaner machine page.
+Also used on the CMP consumables material page.
 
 **SCREEN-SS3200** — SCREEN Semiconductor Solutions, *Launch of 200mm
 Wafer Cleaning System — New SS-3200 for 200mm expands SCREEN SPE's
@@ -11677,6 +11704,7 @@ double-sided scrubbers for bare-silicon and post-CMP cleaning; why slurry
 must not dry; brush stations with hollow-core, water-flushed nylon or PVA
 brushes; a spin-dry station; a wet indexer that keeps wafers submerged.
 Used on the post-CMP cleaner machine page. Tier: deep dive.
+Also used on the CMP consumables material page.
 
 **PAT-MEGASONIC-RCA** — A. Mayer and S. Shwartzman (RCA), *Megasonic
 cleaning system*, US 3,893,869 A, granted 1975-07-08.
@@ -11715,6 +11743,7 @@ post-CMP cleaning", *Journal of Vacuum Science & Technology B* **17**(5),
 contamination (particulate, metallic, organic), slurry additives and
 approaches to post-CMP cleaning. Used on the post-CMP cleaner machine
 page. Tier: deep dive.
+Also used on the CMP consumables material page.
 
 **BUSNAINA-2002** — A. A. Busnaina, H. Lin, N. Moumen, J.-W. Feng and J.
 Taylor, "Particle adhesion and removal mechanisms in post-CMP cleaning
@@ -11732,6 +11761,7 @@ Science & Technology B* **22**(6), 2844–2852 (2004).
 34 nm silica particles: rolling, not lifting, removes them, in a
 hydrodynamic lubrication regime. Used on the post-CMP cleaner machine
 page. Tier: deep dive.
+Also used on the CMP consumables material page.
 
 **GE-2006** — D.-W. Ge, B.-C. Qiu, L.-R. Chen, F.-Y. He, J.-N. Liu,
 C.-X. Zhi and X. Cheng, "Optimizing post cleaning of Tungsten contact CMP
@@ -11742,6 +11772,7 @@ Technology (ICSICT)*, pp. 351–353.
 post-tungsten-contact-CMP brush station with HF spray causing metal-1
 bridges in sub-130 nm logic, and the brush and megasonic changes that
 reduced them. Used on the post-CMP cleaner machine page. Tier: deep dive.
+Also used on the CMP consumables material page.
 
 #### Metrology and test machine pages (first cited there)
 
@@ -13090,6 +13121,109 @@ Reduction", *ASMC 2024*, pp. 1–7.
 reclaim of test wafers with CMP and wet processes that "met with the
 global reclaim specifications". Used on the substrates material page.
 Tier: deep dive.
+
+#### CMP consumables (first cited there)
+
+**ENTEGRIS-CMC-2022** — Entegris, Inc., *CMC Materials | July 2022*,
+acquisition information page, accessed 2026-09-13.
+<https://www.entegris.com/en/home/brands/cmc-materials-july-2022.html>
+Entegris and CMC Materials announced the acquisition on 2021-12-15 and
+"The close of the transaction was announced on July 6, 2022"; CMC
+Materials' "leading CMP slurries and pads" join Entegris' "liquid
+filtration, post-CMP cleaning chemistries and brushes, CMP pad
+conditioners, chemical monitoring, and chemical packaging products"; CMC's
+"CMP Slurries, CMP Pads, and Electronic Chemicals businesses" form the
+Advanced Planarization Solutions division. Names neither "CMC Chemicals,
+Inc.", KMG Chemicals nor SkyWater. Used on the CMP consumables material
+page. Tier: cross-check (company statement).
+
+**ENTEGRIS-POST-CMP** — Entegris, Inc., *Semiconductor Cleaning
+Solutions*, post-CMP cleaning solutions product page, accessed
+2026-09-13.
+<https://www.entegris.com/en/home/products/chemistries/specialty-chemicals/post-cmp-cleaning-solutions/semiconductor-cleaning-solutions.html>
+"We offer a complete range of solutions for the post chemical mechanical
+planarization (Post-CMP) cleaning process", with "excellent corrosion
+control, surface contamination removal"; the PlanarClean® and ESC
+families. Used on the CMP consumables material page. Tier: cross-check
+(vendor statement).
+
+**WIKI-ENTEGRIS** — Wikipedia, *Entegris*.
+<https://en.wikipedia.org/wiki/Entegris> "In July 2022, Entegris acquired
+another U.S. semiconductor chemicals company, CMC Materials Inc.", which
+was "previously known as Cabot Microelectronics Corp". Used on the CMP
+consumables material page. Tier: high-level.
+
+**QNITY-CMP-PADS** — Qnity Electronics, *CMP Pads*, product page,
+accessed 2026-09-13. <https://www.qnityelectronics.com/cmp-pads.html>
+An application chart of the company's pad lines: "IC1000™" listed for
+copper bulk, tungsten, STI/ceria and oxide polishing, "Politex™,
+Politex™ AT" for buff polishing, with the Ikonic™, Visionpad™,
+Optivision™ and Emblem™ families. Does not name SkyWater. Used on the
+CMP consumables material page. Tier: cross-check (vendor statement).
+
+**QNITY-STORY** — Qnity Electronics, *Our story*, company page, accessed
+2026-09-13. <https://www.qnityelectronics.com/our-story.html> FAQ: DuPont
+"is targeting November 1, 2025, to complete the separation of its
+Electronics business with the intention to create a new independent,
+publicly traded company, Qnity Electronics, Inc.". Used on the CMP
+consumables material page. Tier: high-level (company statement).
+
+**PAT-PAD-RODEL** — H. F. Reinhardt, J. V. H. Roberts, H. G. McClain,
+W. D. Budinger and E. W. Jensen (Rodel Inc.), *Polymeric polishing pad
+containing hollow polymeric microelements*, US 5,578,362 A, priority
+1992-08-19, granted 1996-11-26.
+<https://patents.google.com/patent/US5578362A/en> Abstract: "a polymeric
+matrix impregnated with a plurality of polymeric microelements, each
+polymeric microelement having a void space therein", whose work surface
+"may be continuously regenerated" as it is abraded, for "polishing or
+planarizing a semiconductor device". Used on the CMP consumables
+material page. Tier: deep dive.
+
+**KAKIREDDY-2010** — R. Kakireddy, A. Galpin, J. Smith and D. Slutz,
+"Effects of CMP Pad Conditioner Properties and Performance on Polishing
+Pad, Process and Wafer Removal Rate", *ECS Transactions* **33**(10),
+157–163 (2010). <https://doi.org/10.1149/1.3489056> Abstract: diamond
+"shape, size, density and protrusion" set "pad cut rate, pad surface
+roughness and wafer removal rate"; uneven diamonds "exhibited high drop
+in pad cut rate and wafer removal rate"; diamonds found "missing or
+sheared off". Used on the CMP consumables material page. Tier: deep
+dive.
+
+**CASTILLO-MEJIA-2004** — D. Castillo-Mejia, J. Kelchner and S.
+Beaudoin, "Polishing Pad Surface Morphology and Chemical Mechanical
+Planarization", *Journal of The Electrochemical Society* **151**(4), G271
+(2004). <https://doi.org/10.1149/1.1649751> A Greenwood–Williamson model
+of the pad asperity layer that improves removal-rate and uniformity
+prediction against a commercial CMP system. Used on the CMP consumables
+material page. Tier: deep dive.
+
+**KIM-2002-CERIA** — S.-D. Kim, I.-S. Hwang, H.-M. Park, J.-K. Rhee and
+C.-W. Nam, "Chemical mechanical polishing of shallow trench isolation
+using the ceria-based high selectivity slurry for sub-0.18 μm
+complementary metal–oxide–semiconductor fabrication", *Journal of Vacuum
+Science & Technology B* **20**(3), 918–923 (2002).
+<https://doi.org/10.1116/1.1475984> Abstract: with a CeO₂ high-selectivity
+slurry, variations of remaining pad nitride and field-oxide erosion "are
+significantly reduced to ∼150 and ∼400 Å"; scratches, "∼80% of the total
+defect", minimised by in-situ filtering, which improved the gate-oxide
+integrity of MOS capacitors. Used on the CMP consumables material page.
+Tier: deep dive.
+
+**BENNETT-2014** — J. Bennett and M. A. Fury, "Correlation of large
+particle count data in CMP slurry with production wafer defects", *ICPT
+2014*, pp. 50–53. <https://doi.org/10.1109/ICPT.2014.7017243> A
+SlurryScope at the point of use and in the slurry distribution loop of a
+production fab: "A strong correlation was found between defects and the
+total particle count in the smallest (1.0-1.2μm) particle bin". Used on
+the CMP consumables material page. Tier: deep dive.
+
+**LAI-2003** — C. L. Lai and S. H. Lin, "Electrocoagulation of chemical
+mechanical polishing (CMP) wastewater from semiconductor fabrication",
+*Chemical Engineering Journal* **95**(1–3), 205–211 (2003).
+<https://doi.org/10.1016/S1385-8947(03)00106-2> Treatment of CMP waste
+water by electrocoagulation (no abstract in Crossref or OpenAlex; the
+annotation rests on the title). Used on the CMP consumables material
+page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
