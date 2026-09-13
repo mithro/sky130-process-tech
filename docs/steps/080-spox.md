@@ -142,8 +142,8 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
   <references-public-sources>` reads "C2" as a Novellus Concept Two
   class tool (inference). Strength: strong for the capability; weak
   for assignment to this step.
-* **"C1" PECVD silane oxide** — "PECVD silane oxide/nitride/
-  oxynitride, C1".[^skw-01] Strength: strong for existence.
+* **"C1" PECVD silane oxide** — "PECVD silane
+  oxide/nitride/oxynitride, C1".[^skw-01] Strength: strong for existence.
 * **Aviza furnaces, LPCVD silane oxide** — "LPCVD silane oxide" is among the
   furnace processes.[^skw-01] Strength: strong for existence.
 * Which of the three deposits the spacer oxide is not public; the

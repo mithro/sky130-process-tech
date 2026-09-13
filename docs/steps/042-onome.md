@@ -155,7 +155,7 @@ memory (SKY130's recipe is not public):
   clean-room describes the 9400 as a TCP etcher "for selective etching
   of silicon and polysilicon" with tetrafluoromethane and oxygen in
   its gas list.[^snf-9400]
-* **Applied Materials DPS II** ("HBr, Cl2, NF3, CF4, CHF3, O2 – gate,
+* **Applied Materials DPS II** ("HBR, Cl2, NF3, CF4, CHF3, O2 – gate,
   trench")[^skw-01] — has CHF₃ for the oxide layers. Strength: strong
   for existence; inference for assignment.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,

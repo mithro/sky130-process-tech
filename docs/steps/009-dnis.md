@@ -82,7 +82,7 @@ fab:
    reason,[^pat-sti-cr] but that belongs to the liner-oxidation
    preparation and is discussed at {ref}`LINOX <step-010>`).
 3. **Rinse and dry.** DI-water rinse and spin or IPA (Marangoni) dry —
-   SkyWater describes both spin and IPA drying on its Akrion
+   SkyWater lists "spin or IPA dry" for its Akrion
    bench.[^skw-01]
 4. **Inspection.** Bright-field or laser-scatter inspection for resist
    residue and particles; sometimes a monitor check of the nitride

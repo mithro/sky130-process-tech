@@ -168,7 +168,8 @@ same sequence.
   Strength: **strong** for the tools and for TiW as a qualified
   material; which runs this step is not public.
 * **Strip — "Gasonic PEP", "Iridia RF microwave", "Mattson Aspen2";
-  clean — "Batch Rotational (EKS265, EKC270 solvents …)".**[^skw-01]
+  clean — "Batch Rotational", "EKS265, EKC270 solvents, CO2 injected
+  DI".**[^skw-01]
   Strength: strong for existence; assignment is an inference.
 
 ## Resources required
