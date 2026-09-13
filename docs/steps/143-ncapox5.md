@@ -18,9 +18,9 @@ dielectric over metal 3. After {ref}`CMPM3 <step-142>` the
 metal-3 lines and above the {term}`MiM capacitor` plates is whatever the
 polish left, and its surface carries the scratches, slurry residue and
 hydrated layer of a polish. A thin plasma oxide deposited over it
-seals that surface and, on our reading of the step name and its
-position, brings the dielectric above metal 3 to its final thickness
-before the via-3 mask ({ref}`VIM3 <step-144>`) is printed. The
+seals that surface and, we infer (as at {ref}`NCAPOX3 <step-117>`),
+brings the dielectric above metal 3 to its final thickness before the
+via-3 mask ({ref}`VIM3 <step-144>`) is printed. The
 finished number is public: the PDK's stack diagram places the bottom
 of `met4` 1.235 µm above the bottom of `met3`, which with the 0.845 µm
 metal leaves a via-3 height of 0.39 µm.[^pdk-04] The cap's own
