@@ -11116,7 +11116,8 @@ Marking of Silicon Wafers*, SEMI Standards store listing, accessed
 Scope of the standard: a coded alphanumeric mark that "links the
 properties of the wafer stored in an appropriate database system to each
 individual wafer", its geometric and spatial limits for flatted and
-notched wafers, and consistency that simplifies OCR equipment; marking
+notched wafers, and consistency of marking "performed by silicon
+manufacturers" that simplifies OCR equipment; marking
 techniques are not addressed. Used on the starting-material machine
 page. Tier: cross-check (standard).
 
@@ -11380,9 +11381,12 @@ The Momentum (orbital and rotational heritage, four platens, zonal
 carrier, integrated metrology with predictive process adjustment,
 integrated cleaner) for 0.18 µm and 0.13 µm; the Auriga family with
 optical endpoint, dual-station box cleaner, PVA brush boxes, megasonic
-option and spin rinse dryer; the AvantGaard 776. Used on the CMP polisher
-machine page. Tier: cross-check (vendor statement).
+option and spin rinse dryer; the AvantGaard 676 with "a unique orbital
+polishing technique" and "Endpoint detection capability -- motor current
+or optical"; the AvantGaard 776. Used on the CMP polisher machine page.
+Tier: cross-check (vendor statement).
 Also used on the post-CMP cleaner machine page.
+Also used on step 090.
 
 **STRASBAUGH-6DS-1999** — Strasbaugh, *The 6DS-SP Series Planarizers*,
 product page; Wayback Machine capture of 1999-02-10.
@@ -11454,8 +11458,8 @@ plasma clean process in a high volume DRAM manufacturing environment",
 Workshop*, pp. 1–4. <https://doi.org/10.1109/ASMC.2004.1309523>
 Tungsten-filled microscratches from tungsten CMP shorting lines, removed
 by a plasma etch after the polish. Used on the CMP polisher machine page.
-Also used on the post-CMP cleaner machine page.
 Tier: deep dive.
+Also used on the post-CMP cleaner machine page.
 
 **SCREEN-SS3200** — SCREEN Semiconductor Solutions, *Launch of 200mm
 Wafer Cleaning System — New SS-3200 for 200mm expands SCREEN SPE's
