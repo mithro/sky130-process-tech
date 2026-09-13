@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1229
+written page has exactly one entry here; the inventory holds 1246
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -9875,6 +9875,164 @@ production of the MERCURY batch spray cleaner for 75–200 mm wafers, with
 "over 1,000 systems installed"; a 2024 notice on the page transfers the
 product line to another supplier. Used on the wet bench and spray
 processor page. Tier: cross-check (vendor statement).
+
+#### Deposition machine pages (first cited there)
+
+The entries below were introduced by the PECVD, HDP-CVD, tungsten CVD
+and PVD cluster tool pages, and are grouped in that order by the page
+that first cited them. The vendor pages of 1998–2003 were read from the
+Wayback Machine captures named in each entry, the patents through Google
+Patents (bibliographic data, abstract and the passages quoted), and the
+papers through Crossref and OpenAlex, all on 2026-09-13; the annotations
+of papers rest on their abstracts.
+
+**NOVELLUS-PECVD-1998** — Novellus Systems, *Dielectric – PECVD
+Solutions*, product page; Wayback Machine capture of 1998-06-11.
+<https://web.archive.org/web/19980611202815/http://www.novellus.com:80/products/pecvd.htm>
+Novellus's PECVD line: the Concept One ("Introduced in 1987", "150/200mm"),
+the Concept One MAXUS with "an enhanced dual frequency design", the
+Concept Two Sequel, which "integrates the production-proven Concept One
+process chamber on Concept Two's modular platform", and the Dual Sequel,
+which "combines two process chambers with 12 deposition stations". Used
+on the PECVD page. Tier: cross-check (vendor statement).
+
+**NOVELLUS-PECVD-2002** — Novellus Systems, *Dielectric – PECVD
+Solutions*, product page; Wayback Machine capture of 2002-06-02.
+<https://web.archive.org/web/20020602073706/http://www.novellus.com:80/products/pecvd.asp>
+The Sequel Express and Dual Sequel Express, the 300 mm Concept Three
+Sequel, whose "multistation sequential deposition" "offers superior
+reproducibility because every wafer sees the same environment", and the
+VECTOR, "Introduced in 2000" as "a 200mm/300mm bridge tool". Used on the
+PECVD page. Tier: cross-check (vendor statement).
+
+**AMAT-PRODUCER-2001** — Applied Materials, *PECVD* (Producer), product
+page; Wayback Machine capture of 2001-08-17.
+<https://web.archive.org/web/20010817124824/http://www.appliedmaterials.com:80/products/pecvd.html>
+The Producer as "the first 200mm system to be upgradable to meet future
+300mm needs", with "single-wafer twin process chambers that permit
+simultaneous processing of two wafers side-by-side in separate
+compartments with identical environments" and up to three twin chambers.
+Used on the PECVD page. Tier: cross-check (vendor statement).
+
+**AMAT-PRODUCER-SE-2001** — Applied Materials, *Producer SE*, product
+page; Wayback Machine capture of 2001-08-17.
+<https://web.archive.org/web/20010817134045/http://www.appliedmaterials.com:80/products/producer_se.html>
+The Producer "Since its introduction in 1998", and the Producer SE with
+one to three chambers, twin wafer handling and "a new low-flow remote
+clean that reduces gas costs by up to 40 percent". Used on the PECVD
+page. Tier: cross-check (vendor statement).
+
+**AMAT-PECVD-TEOS-2002** — Applied Materials, *Producer PECVD TEOS
+Oxide*, product page; Wayback Machine capture of 2002-07-01.
+<https://web.archive.org/web/20020701042739/http://www.appliedmaterials.com:80/products/pecvd_teos_oxide.html>
+PECVD TEOS oxides that "can be used as liners or cap layers for HDP-CVD
+applications and as the dielectric for damascene schemes", "available in
+single and mixed frequency". Used on the PECVD page. Tier: cross-check
+(vendor statement).
+
+**AMAT-PECVD-PSG-2002** — Applied Materials, *Producer PECVD TEOS PSG*,
+product page; Wayback Machine capture of 2002-07-05.
+<https://web.archive.org/web/20020705144451/http://www.appliedmaterials.com:80/products/pecvd_teos_psg.html>
+PECVD TEOS PSG films "for PMD applications, demonstrating outstanding
+gettering properties, which prevent device damage". Used on the PECVD
+page. Tier: cross-check (vendor statement).
+
+**AMAT-PECVD-SIN-2002** — Applied Materials, *Producer PECVD Nitride*,
+product page; Wayback Machine capture of 2002-07-01.
+<https://web.archive.org/web/20020701050143/http://www.appliedmaterials.com:80/products/pecvd_nitride.html>
+PECVD nitrides from "single-wafer, twin chamber" hardware: UV-transparent,
+passivation and damascene nitrides. Used on the PECVD page. Tier:
+cross-check (vendor statement).
+
+**AMAT-SACVD-2000** — Applied Materials, *SACVD* (Giga-Fill SACVD
+Centura), product page; Wayback Machine capture of 2000-07-09.
+<https://web.archive.org/web/20000709131617/http://www.appliedmaterials.com:80/products/sacvd.html>
+SACVD introduced "in 1994 on its Precision 5000® platform", "Using TEOS
+(tetraethylorthosilicate) and Ozone (O3) chemistry at near-atmospheric
+pressure"; the Giga-Fill chamber's "ceramic heater" at ">550°C" for
+"BPSG and STI applications", remote plasma clean and ">40,000" mean wafers
+between cleans. Used on the PECVD page. Tier: cross-check (vendor
+statement).
+
+**AMAT-SIN-WP** — L. D'Cruz, C. Bencher and C. Ngai (Applied Materials),
+*PECVD SiN performance as barrier/etch stop for Damascene copper
+interconnects*, white paper, undated; Wayback Machine capture of
+2003-03-08.
+<https://web.archive.org/web/20030308041708/http://www.appliedmaterials.com:80/products/assets/dielectric/pecvd_sin_performance.pdf>
+Thin 400 °C PECVD nitrides as etch stops and copper barriers; a
+"400°C (LDR) nitride with thickness between 500Å and 1000Å" for MIM
+capacitors "switching from oxide to nitride for increased specific
+capacitance". Used on the PECVD page. Tier: deep dive (vendor white
+paper).
+
+**PAT-P5000-AMAT** — D. N. Wang, J. M. White, K. S. Law, C. Leung, S. P.
+Umotoy, K. S. Collins, J. A. Adamik, I. Perlov and D. Maydan (Applied
+Materials), *Thermal CVD/PECVD reactor and use for thermal chemical vapor
+deposition of silicon dioxide and in-situ multi-step planarized process*,
+US 5,000,113 A, filed 1986-12-19, granted 1991-03-19.
+<https://patents.google.com/patent/US5000113A/en> A single-wafer reactor
+"capable of thermal CVD, plasma-enhanced CVD, plasma-assisted etchback,
+plasma self-cleaning, and deposition topography modification by
+sputtering", with RF applied to the gas inlet manifold; plasma TEOS oxide
+at "about 1 to 50 torr" and ozone–TEOS oxide at "10 torr to 200 torr".
+Used on the PECVD page. Tier: cross-check (patent).
+
+**PAT-RPC-AMAT** — G. Fong, L.-Q. Xia, S. Nemani and E. Yieh (Applied
+Materials), *Methods and apparatus for cleaning surfaces in a substrate
+processing system*, US 5,812,403 A, filed 1996-11-13, granted
+1998-09-22. <https://patents.google.com/patent/US5812403A/en> A chamber
+clean with reactive species from "a clean gas that is input to a remote
+microwave plasma system", with the ceramic heater kept above about
+500 °C. Used on the PECVD page. Tier: deep dive (patent).
+
+**VAN-DE-VEN-1990** — E. P. van de Ven, I.-W. Connick and A. S. Harrus,
+"Advantages of dual frequency PECVD for deposition of ILD and passivation
+films", *Proc. Seventh International IEEE VLSI Multilevel Interconnection
+Conference (VMIC 1990)*, pp. 194–201.
+<https://doi.org/10.1109/VMIC.1990.127865> Dual-frequency PECVD of
+nitride, oxynitride and TEOS oxide: the high frequency generates the
+reactive species, the low frequency controls ion bombardment and with it
+step coverage, stress and density. Used on the PECVD page. Tier: deep
+dive.
+
+**PEARCE-1992** — C. W. Pearce, R. F. Fetcho, M. D. Gross, R. F. Koefer
+and R. A. Pudliner, "Characteristics of silicon nitride deposited by
+plasma-enhanced chemical vapor deposition using a dual frequency
+radio-frequency source", *Journal of Applied Physics* **71**(4),
+1838–1841 (1992). <https://doi.org/10.1063/1.351396> Nitride deposited
+with 270 kHz and 13.56 MHz sources; stress varied through the power split,
+and low-frequency excitation favouring N–H bonds. Used on the PECVD page.
+Tier: deep dive.
+
+**COTLER-1993** — T. J. Cotler and J. Chapple-Sokol, "High Quality
+Plasma-Enhanced Chemical Vapor Deposited Silicon Nitride Films", *Journal
+of The Electrochemical Society* **140**(7), 2071–2075 (1993).
+<https://doi.org/10.1149/1.2220766> PECVD nitride against LPCVD nitride:
+stress shifting "from tensile to compressive with increasing temperature
+and power", and all properties but conformality comparable. Used on the
+PECVD page. Tier: deep dive.
+
+**SOBOLEWSKI-1998** — M. A. Sobolewski, J. G. Langan and B. S. Felker,
+"Electrical optimization of plasma-enhanced chemical vapor deposition
+chamber cleaning plasmas", *Journal of Vacuum Science & Technology B*
+**16**(1), 173–182 (1998). <https://doi.org/10.1116/1.589774> Electrical
+measurements of NF₃/Ar, CF₄/O₂/Ar and C₂F₆/O₂/Ar chamber-clean plasmas in
+a 13.56 MHz capacitive reactor, and the discharge impedance at which power
+is absorbed most efficiently. Used on the PECVD page. Tier: deep dive.
+
+**ALLGOOD-2003** — C. Allgood, M. Mocella, H. Chae and H. Sawin,
+"Evaluation of Octafluorocyclobutane as a Chamber Clean Gas in a
+Plasma-Enhanced Silicon Dioxide Chemical Vapor Deposition Reactor",
+*Journal of The Electrochemical Society* **150**(2), G122 (2003).
+<https://doi.org/10.1149/1.1535911> Clean time and perfluorocompound
+emissions of a C₄F₈-based chamber clean "in a Novellus Concept One 200, a
+widely used commercial PECVD tool". Used on the PECVD page. Tier: deep
+dive.
+
+**WIKI-NOVELLUS** — Wikipedia, *Novellus Systems*.
+<https://en.wikipedia.org/wiki/Novellus_Systems> The CVD, PECVD and PVD
+equipment maker, its product lines and its acquisition by Lam Research,
+"completed in June 2012". Used on the PECVD page. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
