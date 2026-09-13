@@ -15,7 +15,7 @@ but a sacrificial inorganic film, most notably the {term}`STI` nitride
 Precisely, a post-implant strip in a 130 nm flow is usually three
 operations in one travelling group: a plasma ash in a downstream
 microwave or RF oxygen plasma at 200–300 °C (a typical industry value;
-the Gasonics L3510's platen range is 100–300 °C),[^gasonics-l3510] often
+the GaSonics L3510's platen range is 100–300 °C),[^gasonics-l3510] often
 with a low-power first stage to break through the hardened "crust" that
 a high-dose implant leaves on the resist surface; a wet strip in
 sulfuric acid–hydrogen peroxide ({term}`SPM`, "piranha") which "is used
@@ -41,7 +41,7 @@ known as a reactive species is generated. Oxygen or fluorine are the
 most common reactive species".[^wiki-ash] Atomic oxygen oxidises the
 resist's carbon and hydrogen to CO, CO₂ and H₂O, which are pumped away;
 the rate is thermally activated, so ashers run hot for bulk removal —
-typically 200–300 °C; the Gasonics L3510 platen spans 100–300
+typically 200–300 °C; the GaSonics L3510 platen spans 100–300
 °C[^gasonics-l3510] and the Aura 1000 150–300 °C[^gasonics-aura] — and
 cool for "descum". To avoid charging and ion damage to gate oxides,
 "many machines now use a downstream plasma configuration, where plasma
@@ -126,9 +126,9 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 
 ## Typical equipment
 
-* **Ashers**: downstream microwave strippers such as the Gasonics L3510
+* **Ashers**: downstream microwave strippers such as the GaSonics L3510
   (a "production-proven downstream plasma photoresist ashing system" for
-  75–200 mm wafers)[^gasonics-l3510] and the Gasonics Aura series;
+  75–200 mm wafers)[^gasonics-l3510] and the GaSonics Aura series;
   Mattson Aspen (ICP-based strip); Axcelis/Fusion ES and RadiantStrip;
   single-wafer RF ashers integrated onto etch platforms (Applied
   Materials ASP and Lam). University clean-room guides describe the
@@ -191,9 +191,9 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
   stripping.[^kern-handbook]
 * ITRS 2001, *Front End Processes* — surface preparation
   requirements.[^itrs-01]
-* SemiStar, Gasonics L3510 description — platen temperature
+* SemiStar, GaSonics L3510 description — platen temperature
   100–300 °C.[^gasonics-l3510]
-* Allwin21, Gasonics Aura 1000 specification — 150–300 °C.[^gasonics-aura]
+* Allwin21, GaSonics Aura 1000 specification — 150–300 °C.[^gasonics-aura]
 * Stanford Nanofabrication Facility, *Downstream/Remote Plasma Resist
   Removal*.[^snf-strip]
 * C2MI, *Akrion GAMA acid bench*.[^akrion-gama]

@@ -69,8 +69,8 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
    until the crust is gone, then a hotter bulk stage.[^pat-strip-mosel]
    The remote configuration lets "electrically charged particles time to
    recombine before they reach the wafer surface".[^wiki-ash] SkyWater's
-   ashers span "120C – 270C" (Gasonic PEP), "40C-270C" (Iridia) and "up
-   to 250C" (Mattson Aspen2), with N₂, O₂, H₂/N₂ and CF₄
+   ashers span "120C – 270C" (GaSonics PEP), "40C-270C" (Iridia) and "up
+   to 250C" (Mattson Aspen II), with N₂, O₂, H₂/N₂ and CF₄
    options.[^skw-01]
 2. **Wet strip.** {term}`SPM` (H₂SO₄:H₂O₂) — "used to clean organic residues off
    substrates" (category page, citing Wikipedia) — on a batch bench;
@@ -83,14 +83,14 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm single-wafer (Gasonics
+* **Downstream plasma asher**, 200 mm single-wafer (GaSonics
   Aura/PEP, Mattson Aspen, Axcelis/Fusion ES, PSK) (category page).
 * **Batch wet bench** (SPM, SC-1, SC-2) or **spray processor**.
 * **Surface scanner** (KLA-Tencor Surfscan class) for particles.
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia RF microwave, Mattson Aspen 2**.[^skw-01]
+* **GaSonics PEP, Iridia RF microwave, Mattson Aspen II**.[^skw-01]
   Strength: **strong** for existence; assignment is an inference.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1").[^skw-01] Strength:
   strong for existence.

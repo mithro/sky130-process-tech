@@ -90,7 +90,7 @@ fab:
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm single-wafer: Gasonics (Novellus)
+* **Downstream plasma asher**, 200 mm single-wafer: GaSonics (Novellus)
   Aura/PEP series, Mattson Aspen, Axcelis/Fusion ES series, PSK.
 * **Batch wet bench** with SPM, SC-1 and SC-2 tanks and a rinser/dryer;
   or a single-wafer spray tool.
@@ -98,7 +98,7 @@ fab:
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP** and **Mattson Aspen 2** ashers — both named by
+* **GaSonics PEP** and **Mattson Aspen II** ashers — both named by
   SkyWater with their gases and temperatures.[^skw-01] Strength: strong
   for existence; assignment to this step is inference.
 * **Iridia RF microwave** — also listed under resist removal by
@@ -136,7 +136,7 @@ fab:
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Gasonic PEP; Mattson Aspen2;
+* SkyWater, *Facilities & Capabilities* — GaSonics PEP; Mattson Aspen II;
   Iridia; Akrion Gamma with sulphuric/SC1/phosphoric/BOE and spin/IPA
   dry; DNS and FSI Mercury HF/SC1/SC2.[^skw-01]
 * Indeed, SkyWater Defect Technician 2 posting —

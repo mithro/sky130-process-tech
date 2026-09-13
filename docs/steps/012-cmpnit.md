@@ -109,7 +109,7 @@ polisher, which is what this step needs.
   200 mm-era multi-platen standard; SkyWater lists it for oxide and
   nitride[^skw-01]), Ebara EPO-222/EPO-300, Strasbaugh 6EC,
   SpeedFam-IPEC Avanti 472, Lam Teres.
-* **Post-CMP brush scrubber** (OnTrak/Lam Synergy, SEZ/Lam DaVinci).
+* **Post-CMP brush scrubber** (OnTrak/Lam Synergy, SEZ/Lam Da Vinci).
 * **Film-thickness metrology** (Nanometrics, KLA-Tencor, Rudolph)
   and **profilometer/AFM**.
 
@@ -153,8 +153,8 @@ polisher, which is what this step needs.
 ### Cross-check
 
 * SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP – oxide –
-  nitride – niobium – aluminum – tungsten …"; SEZ223 /
-  DaVinci.[^skw-01]
+  nitride – niobium – aluminum – tungsten …"; SEZ 223 /
+  Da Vinci.[^skw-01]
 * SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
   "a SEZ etcher tool".[^skw-07]
 * SkyWater PDK, *Criteria & Assumptions* — field oxide 0.07 µm above

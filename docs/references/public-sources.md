@@ -4065,13 +4065,13 @@ Tier: deep dive.
 **GASONICS-AURA** — Allwin21, *Gasonics Aura 1000 Plasma Asher*
 (specification summary; temperature 150–300 °C typical).
 <https://allwin21.com/gasonics-aura-1000-plasma-asher-2/> Specification
-summary for the Gasonics Aura 1000 downstream asher (150–300 °C
+summary for the GaSonics Aura 1000 downstream asher (150–300 °C
 typical). Used on the strip category page. Tier: cross-check.
 
 **GASONICS-L3510** — SemiStar Corp., *Gasonics L3510 plasma asher* (tool
 description; platen temperature 100–300 °C).
 <http://www.semistarcorp.com/product/gasonics-l3510-asher/> Tool
-description for the Gasonics L3510 asher (platen temperature 100–300
+description for the GaSonics L3510 asher (platen temperature 100–300
 °C). Used on the strip category page. Tier: cross-check.
 
 ##### University and course pages
@@ -8217,7 +8217,7 @@ on the floor today, not necessarily what built the first S8 wafers.
 | Lithography | ASML DUV (KrF, 248 nm) stepper and scanner | SKW-01 | strong |
 | Lithography | ASML 193 nm single-stage scanner ("90nm CD") and twin-stage scanner ("sub 65nm CD") † | SKW-01; SKW-06 names "the ASML TWINSCAN lithography tool" | strong |
 | Lithography | Multibeam multicolumn e-beam (MEBL) † | SKW-14, SKW-06, GOV-01 context | strong |
-| Coat/develop tracks | DNS (SCREEN) 80B; Sokudo RF3; TEL ProZ / Lithius | SKW-01 | strong |
+| Coat/develop tracks | DNS (SCREEN) 80B; Sokudo RF3; TEL Lithius Pro Z | SKW-01 | strong |
 | Photo metrology | AMAT Verity (CD-SEM), AMAT VeraSEM; KLA 5200/5300/Archer overlay | SKW-01 | strong |
 | Defect inspection | KLA-Tencor AIT, SP1 (Surfscan); EV300 review; SEM | JOB-01 ("SEM/AIT/KLA/SP1/EV300/1X") | medium |
 | CVD dielectrics | "C1"/"C2" PECVD (inferred to be Novellus Concept One/Two; SKW-01 gives only the abbreviations); AMAT Producer PECVD TEOS; Lam/Novellus HDP-CVD (doped and PSG) | SKW-01; SKW-07 ("Novellus high density plasma tool") | strong |
@@ -8227,8 +8227,8 @@ on the floor today, not necessarily what built the first S8 wafers.
 | ALD † | (vendor not named) AlN, TiN, SiO₂, Al₂O₃, HfO₂, TiO₂, ZrO₂ | SKW-01 | strong (capability), no vendor |
 | Metal etch | Lam 9600 (Al, TiW, TiN, Pt); Lam 2300 Versys (Al, TiW, TiN, Nb, Pt) | SKW-01 | strong |
 | Poly/oxide/trench etch | AMAT DPS II (HBr/Cl₂/NF₃/CF₄/CHF₃/O₂ — gate, trench, W/WN); Lam 9400 TCP (poly/nitride); Lam 4400 | SKW-01 | strong |
-| Resist strip | Gasonics PEP (remote microwave); Iridia RF microwave; Mattson Aspen 2 | SKW-01 | strong |
-| Wet clean / wet etch | Akrion Gamma batch bench (H₂SO₄, SC1, H₃PO₄, BOE); DNS wet bench (HF/SC1/SC2); FSI Mercury rotational; SEZ 223 and Lam DaVinci single-wafer (HF, DSP) | SKW-01; SKW-07 ("SEZ etcher tool") | strong |
+| Resist strip | GaSonics PEP (remote microwave); Iridia RF microwave; Mattson Aspen II | SKW-01 | strong |
+| Wet clean / wet etch | Akrion Gamma batch bench (H₂SO₄, SC1, H₃PO₄, BOE); DNS wet bench (HF/SC1/SC2); FSI Mercury rotational; SEZ 223 and Da Vinci single-wafer (HF, DSP) | SKW-01; SKW-07 ("SEZ etcher tool") | strong |
 | Batch solvent | Rotational EKC265/EKC270 solvent strip | SKW-01 | strong |
 | Furnaces | Aviza — wet/dry oxidation to 1150 °C, LPCVD nitride/poly/oxide/ONO, BTBAS nitride, forming-gas alloy | SKW-01 ("Furnaces are all made by Aviza") | strong |
 | RTA | AG Associates Heatpulse 8808 (NH₃, Ar, N₂, O₂, to 1200 °C) | SKW-01 | strong |
