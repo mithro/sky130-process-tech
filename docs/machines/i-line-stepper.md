@@ -7,24 +7,26 @@ blocks, relaxed etch masks, capacitor plates, the thick upper metal and
 the pad opening. It images a reticle onto resist-coated wafers with the
 365 nm line of a mercury lamp, either a whole field at a time (a
 {term}`stepper`) or through a scanned slit (a step-and-scan system, or
-scanner). In a 200 mm, 130 nm-era fab it shares the line with {ref}`KrF tools <machine-duv-krf-stepper>`, which print the critical levels, and the two must overlay each other.
-This page describes the class in general, lists representative
-200 mm-era models, and then says what SkyWater has published about its
-own tools of this class and which SKY130 steps this reference assigns to
-them. The optics, resists and overlay of lithography in general are on
-the {ref}`category page <category-lithography>`.
+scanner). In a 200 mm, 130 nm-era fab it shares the line with
+{ref}`KrF tools <machine-duv-krf-stepper>`, which print the critical
+levels, and the two must overlay each other. This page describes the
+class in general, lists representative 200 mm-era models, and then says
+what SkyWater has published about its own tools of this class and which
+SKY130 steps this reference assigns to them. The optics, resists and
+overlay of lithography in general are on the
+{ref}`category page <category-lithography>`.
 
 | | i-line stepper or scanner |
 |---|---|
 | What it does | Projects a reticle image onto resist at 365 nm, the mercury "i-line";[^wiki-litho] a stepper exposes one field and steps the wafer to the next ("the stepper imaged only one chip at a time"),[^wiki-stepper] a step-and-scan system scans reticle and wafer through a slit on separate, synchronised stages.[^buckley-1989] |
 | Light source | A super-high-pressure mercury lamp, whose spectrum "is filtered to select a single spectral line";[^wiki-litho] Ushio's lithography lamps are built to use "three ultraviolet wavelengths (436, 405 and 365 nm)".[^ushio-uv-lamps] ASML gives a "1.5-kW illuminator" for the PAS 5500/100D and a "3.5-kW AERIAL Illuminator" for the /275D.[^asml-pas5500-100d][^asml-pas5500-275d] |
-| NA and resolution | NA "0.48—0.60 (variable)" and "Resolution: 0.40 µm" (PAS 5500/100D);[^asml-pas5500-100d] "Resolution: ≤ 0.28 µm" at the same NA range (/275D);[^asml-pas5500-275d] NA "0.45-0.63 Variable", resolution "Less than 0.35 micron" (Canon FPA-3000i5+).[^canon-fpa3000i5plus-1998] |
+| NA and resolution | NA "0.48—0.60 (variable)" and "Resolution: 0.40 µm" (PAS 5500/100D);[^asml-pas5500-100d] "Resolution: ≤ 0.28 µm" at the same NA range (/275D);[^asml-pas5500-275d] NA "0.45-0.63 Variable", resolution "Less than 0.35 micron" (Canon FPA-3000i5+);[^canon-fpa3000i5plus-1998] "Resolution: ≤ 220 nm" (/450F scanner).[^asml-pas5500-450f] |
 | Field and reduction | Stepper field "Max X: 22.0 mm", "Max Y: 27.4 mm" (/275D);[^asml-pas5500-275d] "Exposure Field 22 x 22mm" at "5:1" (FPA-3000i5+);[^canon-fpa3000i5plus-1998] scanner field "Max X: 26.0 mm", "Max Y: 33.0 mm" with a "4X reduction lens" (PAS 5500/450F).[^asml-pas5500-450f] |
-| Overlay | "Single-machine: ≤ 40 nm" and "Matched to PAS 5500/275: ≤ 80 nm" (/275D);[^asml-pas5500-275d] "Less than 40nm (\|m\|+3sigma)" (FPA-3000i5+).[^canon-fpa3000i5plus-1998] |
+| Overlay | "Single-machine: ≤ 40 nm" and "Matched to PAS 5500/275: ≤ 80 nm" (/275D);[^asml-pas5500-275d] "Less than 40nm (\|m\|+3sigma)" alignment accuracy (FPA-3000i5+).[^canon-fpa3000i5plus-1998] |
 | Throughput | "200-mm wafers, 70 shots: ≥ 100 wph" at 200 mJ/cm² (/275D);[^asml-pas5500-275d] "200-mm wafers, 46 shots: ≥ 150 wph" (/450F scanner);[^asml-pas5500-450f] "100 WPH (8-inch wafer, 90mJ/cm2)" (FPA-3000i5+).[^canon-fpa3000i5plus-1998] |
 | 200 mm era | ASML's PAS 5500 platform, launched in 1991 and with i-line systems "down to 0.28 µm";[^asml-30] Canon's FPA-3000i5+ of 1998;[^canon-fpa3000i5plus-1998] Nikon's NSR-S102B i-line scanning stepper for "less critical layers".[^nikon-s202a-s102b] |
 | SkyWater-listed tool | "ASML I-line stepper", "ASML I-line scanner"[^skw-01] |
-| SKY130 steps | 24 steps, plus 2 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-i-line-stepper-steps>` |
+| SKY130 steps | 24 steps, plus 3 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-i-line-stepper-steps>` |
 
 ## What the machine class is and how it works
 
@@ -41,11 +43,11 @@ evolved.[^bruning-2007]
 
 ### Mercury lamp and illuminator
 
-From the early 1960s "Hg lamps had been used in lithography for their
-spectral lines at 436 nm ("g-line"), 405 nm ("h-line") and 365 nm
-("i-line")", and the lamp spectrum "is filtered to select a single
-spectral line".[^wiki-litho] The lamps are short-arc, super-high-pressure
-mercury lamps; Ushio describes its lithography lamps as "high-intensity
+From the early 1960s through the mid-1980s, "Hg lamps had been used in
+lithography for their spectral lines at 436 nm ("g-line"), 405 nm
+("h-line") and 365 nm ("i-line")", and the lamp spectrum "is filtered
+to select a single spectral line".[^wiki-litho] The lamps are short-arc,
+super-high-pressure mercury lamps; Ushio describes its lithography lamps as "high-intensity
 light sources with stable irradiance and long lifespan" whose arc is
 "nearly that of a point light source".[^ushio-uv-lamps] Kato's chronology
 calls Ushio "the leading supplier of Mercury arc lamps for g- and i-line
@@ -64,16 +66,17 @@ Its numerical aperture is variable, so that each layer can trade
 resolution against depth of focus: ASML's i-line steppers run at NA
 0.48–0.60, Canon's FPA-3000i5+ at 0.45–0.63, and ASML's /450F scanner at
 0.48–0.65.[^asml-pas5500-275d][^canon-fpa3000i5plus-1998][^asml-pas5500-450f]
-At a wavelength of 365 nm and NA 0.6, λ/NA is about 610 nm, so the
-0.35 µm resolution Canon quotes corresponds to a process factor
-{term}`k1` of about 0.58 and ASML's 0.28 µm to about 0.46 (our
-arithmetic with the relation on the
+At a wavelength of 365 nm and NA 0.6, λ/NA is about 610 nm; the
+0.35 µm resolution Canon quotes at NA 0.63 corresponds to a process
+factor {term}`k1` of about 0.60, and ASML's 0.28 µm at NA 0.60 to about
+0.46 (our arithmetic with the relation on the
 {ref}`category page <category-lithography>`). The high-NA i-line lenses
 came in the late 1980s: Suwa, Ushida and Lin described a high-NA
 i-line lens resolving "better than 0.65 μm" with a field-by-field
-levelling system,[^suwa-1988] and Katz et al. a high-NA i-line stepper with phase grating alignment
-supporting 0.5 µm "with good process latitude and CD control without
-adverse effects due to lens heating", extended to 0.41 µm.[^katz-1990]
+levelling system,[^suwa-1988] and Katz et al. a high-NA i-line stepper
+with phase grating alignment supporting 0.5 µm "with good process
+latitude and CD control without adverse effects due to lens heating",
+extended to 0.41 µm.[^katz-1990]
 Depth of focus is the price of NA: ASML specifies "Usable depth of
 focus: ≥ 1.1 µm" at 0.40 µm on the /100D and "≥ 0.8 µm" at 0.28 µm with
 annular illumination on the /275D,[^asml-pas5500-100d][^asml-pas5500-275d]
@@ -256,17 +259,24 @@ the fab's lamp supply, reticle handling or tool environment.
 * **Environment.** A temperature-controlled chamber;[^wiki-stepper] the
   /100D has "Built-In CLASS 1 Laminar Airflow" that "Enhances
   interferometer stability".[^asml-pas5500-100d]
-* **Track and metrology.** The tool is linked in line to a {ref}`coat/develop track <machine-coat-develop-track>`, and overlay and CD are measured after develop ({ref}`machine-cd-sem-overlay-metrology`).
+* **Track and metrology.** The tool is linked in line to a
+  {ref}`coat/develop track <machine-coat-develop-track>`, and overlay and
+  CD are measured after develop
+  ({ref}`machine-cd-sem-overlay-metrology`).
 
 ## Process-integration notes for SKY130
 
 These notes connect the machine class to the step pages; they add no
-SKY130 conditions of their own. SKY130's exposure tools, doses and
-resist thicknesses per layer are not public.
+SKY130 conditions of their own. SKY130's exposure tools and doses per
+layer are not public, and its resist thicknesses per layer are not
+public beyond the two photoresist thicknesses of the PDK design
+assumptions: a nominal 1.14 µm and 0.3 µm for HV tip
+implants.[^pdk-03]
 
 * **Most mask levels, few critical ones.** On the step pages' readings
   this class prints 24 of the 36 mask steps and the KrF class 14, with
-  metal 3 and metal 4 counted in both. The mix is the one ASML describes
+  metal 3 and metal 4 counted in both; the step pages name this class
+  as an alternative for three more. The mix is the one ASML describes
   for older tools that move to "less critical
   layers".[^asml-30] Which physical tool prints which layer is not public.
 * **Implant blocks and thick resist.** The well, deep N-well and
@@ -291,23 +301,28 @@ resist thicknesses per layer are not public.
   i-line tools designed to match their KrF
   tools.[^asml-800][^canon-fpa3000i5plus-1998][^nikon-s202a-s102b] The
   alignment tree of SKY130 is not public.
-* **Alignment on polished and metal levels.** The upper i-line levels,
-  from {ref}`CAPM <step-137>` to {ref}`PDM <step-168>`, are printed over
-  the back end's tungsten-plug and oxide CMP levels; Prasad et al.
-  qualified alignment on i-line steppers over tungsten CMP, where marks
-  are hard to read.[^prasad-2001]
+* **Alignment on polished and metal levels.** The upper i-line levels
+  from {ref}`CAPM <step-137>` to {ref}`MM4 <step-154>` are printed over
+  polished oxide and tungsten-plug levels; Prasad et al. qualified
+  alignment on i-line steppers over tungsten CMP, where marks are hard
+  to read.[^prasad-2001] {ref}`MM5 <step-162>` is printed over via 4 and
+  the metal-5 stack, and {ref}`NSM <step-165>` and {ref}`PDM <step-168>`
+  over the fuse oxide and the passivation.
 * **Metal 3, metal 4 and via 4.** The {ref}`MM3 <step-139>` page gives
   {math}`k_1 \approx 0.49` for the 0.3 µm line on an i-line tool of NA 0.6
-  and leaves the class open. The 0.8 µm via 4 ({ref}`VIM4 <step-159>`)
+  and leaves the class open; ASML's /450F i-line scanner is specified to
+  220 nm,[^asml-pas5500-450f] so geometry alone does not exclude i-line
+  for the 0.3 µm metals. The 0.8 µm via 4 ({ref}`VIM4 <step-159>`)
   would be an i-line level on geometry alone, but the process-steps
   sheet records for its plate a mask type that we read as a binary mask
   for 248 nm exposure,[^steps-sheet] so the step page assigns it to the
   KrF class as an inference ({ref}`masks-index`).
-* **Tunnel mask resist.** The {ref}`TUNM <step-035>` resist is kept
-  through the {ref}`TUNARCE <step-036>` ARC etch, the
+* **Tunnel mask resist.** On the step pages' reading
+  ({ref}`masks-index`, *Patterns*), the {ref}`TUNM <step-035>` resist is
+  kept through the {ref}`TUNARCE <step-036>` ARC etch, the
   {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants and the
-  {ref}`TUNME <step-039>` wet etch, so one i-line exposure serves four
-  steps.
+  {ref}`TUNME <step-039>` wet etch, so one i-line exposure would serve
+  four steps.
 
 ## Related pages
 
@@ -420,9 +435,10 @@ resist thicknesses per layer are not public.
 * Whether the "Overlay down to single digit nm" and "Max field size 26mm
   x 32mm" lines of the lithography group apply to the i-line tools is not
   stated.[^skw-01]
-* The model list above is incomplete: it covers the ASML, Canon, Nikon
-  and Ultratech i-line tools for which a public description was found,
-  not every i-line exposure tool of the period.
+* The model list above is incomplete: it covers the ASML, Canon and
+  Nikon i-line tools, and one other large-field model, for which a
+  public description was found, not every i-line exposure tool of the
+  period.
 
 <!-- footnotes -->
 
@@ -509,7 +525,7 @@ resist thicknesses per layer are not public.
     5500/800), press release, 2001-01-31.
     <https://www.asml.com/en/news/press-releases/2001/asml-introduces-new-krf-step-and-scan-system-that-extends>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
-    SKY130 PDK documentation (Table 2).
+    SKY130 PDK documentation (Tables 2 and 4).
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
 [^dammel-1993]: R. R. Dammel, *Diazonaphthoquinone-based Resists*, SPIE
     Tutorial Texts TT11, SPIE Press, 1993.
