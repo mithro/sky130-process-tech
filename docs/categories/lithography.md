@@ -82,7 +82,12 @@ typically runs a *mixed* line: KrF scanners for the critical layers
 (active, poly, contact, metal 1, via 1) and cheaper i-line steppers for
 the non-critical implant-block, upper-metal and pad layers, whose
 features are 0.5 µm or larger. Which of SKY130's 36 masks are on which
-tool is not public.
+tool is not public. The process-steps sheet records a mask type for
+three plates only, which we read as embedded attenuated phase-shift
+masks for vias 2 and 3 and a binary mask for via 4, all for 248 nm
+exposure ({ref}`masks-index`);[^steps-sheet] it names no exposure
+tool, so the step pages' reading that these vias, the 0.8 µm via 4
+included, are printed on KrF tools remains an inference.
 
 ### Steppers and scanners
 
@@ -253,6 +258,8 @@ alignment corrections.
   bias.[^itrs-01]
 * SkyWater PDK, *Criteria & Assumptions* — the nominal photoresist
   thickness.[^pdk-03]
+* *S8 / SKY130 Process Steps* sheet, tab "Sheet4" — the mask types
+  recorded for the via 2, via 3 and via 4 plates.[^steps-sheet]
 * ASML, PAS 5500/750E press release (2000) — 130 nm resolution at
   248 nm, NA 0.7, 120 wafers per hour.[^asml-750e]
 * ASML, PAS 5500/800 press release (2001) — NA 0.80, 120 nm
@@ -358,6 +365,9 @@ alignment corrections.
 
 <!-- footnotes -->
 
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet4" (mask types), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^wiki-litho]: Wikipedia, *Photolithography*.
     <https://en.wikipedia.org/wiki/Photolithography>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
