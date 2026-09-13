@@ -107,10 +107,10 @@ fab (SKY130 values are not public):
 
 ## Machines typically used
 
-* **Medium-current implanter** with serial end station and tilt: Axcelis
+* **{ref}`Medium-current implanter <machine-medium-current-implanter>`** with serial end station and tilt: Axcelis
   (Eaton) 8250/8250HT ("3keV to 750keV"),[^axcelis-8250] Varian
   E220/E500, Nissin (category page).
-* If the batch high-energy tool has just run `NWI`/`NWI2`, some fabs run
+* If the batch {ref}`high-energy tool <machine-high-energy-implanter>` has just run `NWI`/`NWI2`, some fabs run
   the channel implant on it too to avoid a cassette move; both tool
   classes cover tens of keV.
 * **Thermal-wave** metrology for dose control.

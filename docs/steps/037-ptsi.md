@@ -135,7 +135,7 @@ memory transistor (SKY130's values are not public):
 
 ## Machines typically used
 
-* **Medium-current ion implanter**, 200 mm, single-wafer: Axcelis
+* **{ref}`Medium-current ion implanter <machine-medium-current-implanter>`**, 200 mm, single-wafer: Axcelis
   (Eaton) 8250 class, Varian E220/E500, Applied Materials xR
   ({ref}`category-implant`). The 8250HT covers "3keV to 750keV" with
   beam currents "between 4µA and 3,500µA".[^axcelis-8250]

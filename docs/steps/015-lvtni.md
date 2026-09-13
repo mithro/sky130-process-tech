@@ -140,7 +140,7 @@ below are typical or taken from contemporaneous patents.
 
 ## Machines typically used
 
-* **Medium-current implanter**, 200 mm, serial end station with
+* **{ref}`Medium-current implanter <machine-medium-current-implanter>`**, 200 mm, serial end station with
   tilt/twist: Axcelis (Eaton) NV-8250/8250HT, Varian E220/E500,
   Nissin[^txt-09] (category page). The Eaton 8250HT is described as
   covering "3keV to 750keV" with beam currents "between 4µA and
