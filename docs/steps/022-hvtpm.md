@@ -72,6 +72,27 @@ channel dose; `HVTPM` is that mask. Without it the PDK's `_hvt` PMOS and
 high-Vt varactor would not exist, and low-leakage standard-cell
 libraries built on them could not be offered.
 
+The varactor shows what the high-Vt implants change. The device page's
+e-test table gives the high-Vt option, at the same size, about twice
+the minimum capacitance of the low-Vt one (`VC2_CMIN_5_5` 4.197 pF
+against `VC_CMIN_5_5` 2.058 pF) and almost the same maximum (20.37 pF
+against 20.26 pF); we read the parameter names, because the table's
+descriptions do not match them.[^pdk-07] Published
+capacitance–voltage sweeps of the test tile's two options, which the
+pad list maps to `cap_var_lvt` and `cap_var_hvt`, show the same
+pattern: for 98 devices of 5 × 5 µm, 4.60 pF against 2.41 pF at 1.8 V
+into depletion and 21.04 pF against 21.14 pF at 1.8 V into
+accumulation, and, over five sizes, an area capacitance of about 1.66
+against 0.80 fF/µm² at 1.8 V into depletion (our extraction from the
+published measurements; the files record no measurement frequency,
+temperature, date or
+wafer).[^raw-data-passives][^raw-data-testtile-pads] A larger
+depletion capacitance at the same bias means a thinner depletion
+layer, consistent with a higher net donor concentration near the well
+surface under the high-Vt implants (inference; the data do not show
+how {ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>` divide that
+effect).
+
 There is no NMOS equivalent: the PDK's
 NMOS come in standard, low-Vt and native flavours only,[^pdk-07] so the
 high-Vt option is PMOS-only in SKY130.
@@ -147,7 +168,10 @@ fab:
 * SkyWater PDK, *Periphery rules* — `hvtp` function text; hvtp.1–hvtp.6;
   lvtn.9.[^pdk-periph]
 * SkyWater PDK, *Device Details* — `pfet_01v8_hvt`;
-  `cap_var_hvt`.[^pdk-07]
+  `cap_var_hvt`; the varactor e-test table.[^pdk-07]
+* SKY130 raw-data repository — C–V sweeps of the test tile's low- and
+  high-Vt varactors and the pad list that names them; the capacitances
+  quoted here are our extraction.[^raw-data-passives][^raw-data-testtile-pads]
 * SkyWater PDK, *Criteria & Assumptions* — photoresist
   thickness.[^pdk-03]
 * SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
@@ -305,3 +329,17 @@ fab:
     repositories under
     <https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>.
     <https://data.wafer.space/big-storage/sky130-masks/>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the poly, diffusion
+    and well resistors, MiM capacitors, varactors and bipolar
+    transistors of the test tile, IC-CAP `.mdm` files in
+    `sky130_fd_pr/cells/unsorted/`, `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
