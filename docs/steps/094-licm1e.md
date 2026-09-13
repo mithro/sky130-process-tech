@@ -132,10 +132,11 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    trenching the silicon or breaching the spacers.
 5. **Post-etch treatment.** An in-situ O₂ or H₂/N₂ plasma removes
    the fluorocarbon polymer from the hole walls (the step SkyWater's
-   "Mattson Aspen2, RF plasma, O2, CF4, H2>N2" or "Gasonic PEP"
-   ashers could also perform[^skw-01]); the resist itself is
-   stripped and the wafer wet-cleaned — this reference treats the
-   strip as part of this step or of {ref}`SACETCH <step-095>`.
+   "Mattson Aspen2, RF plasma, O2, CF4, H2>N2" — without its CF₄,
+   which would attack the silicon at the contact floor (inference) —
+   or "Gasonic PEP" ashers could also perform[^skw-01]); the resist
+   itself is stripped and the wafer wet-cleaned — this reference treats
+   the strip as part of this step or of {ref}`SACETCH <step-095>`.
 6. **Metrology.** Contact {term}`CD` top and bottom by {term}`CD-SEM`; cross-section
    SEM for profile, taper and residue during development; electrical
    contact-chain resistance at {ref}`category-test` structures
