@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1565
+written page has exactly one entry here; the inventory holds 1567
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -499,6 +499,7 @@ Also used on the lithography materials material page.
 Also used on the sputter targets material page.
 Also used on the substrates material page.
 Also used on the CMP consumables material page.
+Also used on the anneal ambients material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -675,6 +676,7 @@ was owned and operated by Cypress Semiconductor Corporation, or Cypress,
 as a captive manufacturing facility for 20 years".
 Also used on the substrates material page.
 Also used on the CMP consumables material page.
+Also used on the anneal ambients material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -696,6 +698,7 @@ Also used on the lithography materials material page.
 Also used on the sputter targets material page.
 Also used on the substrates material page.
 Also used on the CMP consumables material page.
+Also used on the anneal ambients material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -1227,6 +1230,7 @@ and nitride plasma etcher pages.
 Also used on the PECVD, HDP-CVD and tungsten CVD pages.
 Tier: high-level.
 Also used on the substrates material page.
+Also used on the anneal ambients material page.
 
 **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
 Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
@@ -1241,6 +1245,7 @@ nitride plasma etcher and metal plasma etcher pages.
 Also used on the PECVD and PVD cluster tool pages.
 Tier: high-level.
 Also used on the sputter targets material page.
+Also used on the anneal ambients material page.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
 Process Integration*, Lattice Press, 1990, ISBN 978-0-9616721-4-0.
@@ -1297,6 +1302,7 @@ Also used on the vertical-furnace oxidation page and the rapid thermal
 processor page.
 Also used on the HDP-CVD page.
 Tier: high-level.
+Also used on the anneal ambients material page.
 
 **TXT-10** — R. B. Fair (ed.), *Rapid Thermal Processing: Science and
 Technology*, Academic Press, 1993, ISBN 978-0-12-247690-7.
@@ -1461,6 +1467,7 @@ implanted-resist problems. Used on steps 016, 021, 025, 029 and 033 and
 the strip category page.
 Also used on the downstream plasma asher page.
 Tier: high-level.
+Also used on the anneal ambients material page.
 
 **WIKI-ASH3** — Wikipedia, *Arsine*.
 <https://en.wikipedia.org/wiki/Arsine> Arsine, the arsenic source gas
@@ -1603,6 +1610,7 @@ Also used on the lithography materials material page.
 interface passivation. Used on the anneal category page.
 Also used on the vertical-furnace anneal page.
 Tier: high-level.
+Also used on the anneal ambients material page.
 
 **WIKI-FICK** — Wikipedia, *Fick's laws of diffusion*.
 <https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion> Fick's laws,
@@ -2156,6 +2164,7 @@ diffusion, oxidation, and LPCVD processes … can handle 150-200mm
 wafers." A dealer listing rather than a vendor data sheet.
 Also used on the vertical-furnace oxidation, LPCVD and anneal pages.
 Tier: high-level (weak).
+Also used on the anneal ambients material page.
 
 **AXCELIS-GSD-PAGE** — Axcelis Technologies, *"GSD Ovation — High
 Current & High Energy Batch Ion Implanters"*, product page, accessed
@@ -2223,6 +2232,7 @@ for the spelling of the platform name.
 Also used on the downstream plasma asher page.
 Tier: cross-check (vendor
 statement).
+Also used on the anneal ambients material page.
 
 **SEZ-2005** — SEZ Group, *World-Leading Korean Manufacturer Places
 Multi-System Order for SEZ Da Vinci Tools*, press release, 2005-03-02,
@@ -2924,6 +2934,7 @@ thermal oxide. Used on steps 002, 043 and 047 and the anneal and
 oxidation category pages.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **DECKERT-1978** — C. A. Deckert, "Etching of CVD Si₃N₄ in Acidic
 Fluoride Media", *Journal of The Electrochemical Society* **125**(2),
@@ -2970,6 +2981,7 @@ Vacuum Science & Technology B* **9**(2), 357–361 (1991).
 <https://doi.org/10.1116/1.585575> Resist stripping in an O₂ + H₂O
 downstream plasma, a low-damage alternative. Used on step 009. Tier:
 deep dive.
+Also used on the anneal ambients material page.
 
 **HABRAKEN-1994** — F. H. P. M. Habraken and A. E. T. Kuiper, "Silicon
 nitride and oxynitride films", *Materials Science and Engineering: R:
@@ -3169,6 +3181,7 @@ suppresses gate-oxide thinning at the STI edge, a later view of the same
 problem. Used on step 010.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **ORVEK-1985** — K. J. Orvek and C. Huffman, "Carbonized layer formation
 in ion implanted photoresist masks", *Nuclear Instruments and Methods in
@@ -4823,6 +4836,7 @@ passivation and depassivation of interface dangling bonds. Used on the
 anneal category page.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **CSEPREGI-1978** — L. Csepregi, E. F. Kennedy, J. W. Mayer and T. W.
 Sigmon, "Substrate-orientation dependence of the epitaxial regrowth rate
@@ -4851,6 +4865,7 @@ Si/SiO₂ interface-trap annealing in hydrogen. Used on the anneal
 category page.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **SEDGWICK-1983** — T. O. Sedgwick, "Short Time Annealing", *Journal of
 The Electrochemical Society* **130**(2), 484–493 (1983).
@@ -4924,6 +4939,7 @@ product page for its vertical furnace family (A400/A412). Used on the
 anneal and oxidation category pages.
 Also used on the vertical-furnace oxidation and LPCVD pages.
 Tier: cross-check.
+Also used on the anneal ambients material page.
 
 **PLASMATHERM-AG** — Plasma-Therm, *Product Spotlight: AG Heatpulse 8800
 / 8108 RTP*, blog post.
@@ -6904,6 +6920,7 @@ hydrogen-passivated interface defects. Used on step 096.
 Also used on the vertical-furnace anneal page.
 Tier: deep
 dive.
+Also used on the anneal ambients material page.
 
 **CHEN-1999-PSM** — Y.-T. Chen, Y.-C. Wang and R. Chu, "Optimization of
 attenuated phase-shift mask for contact hole printing", *Proc. SPIE*
@@ -6944,6 +6961,7 @@ metal-nitride-oxide-silicon transistors at elevated temperatures",
 retention. Used on step 096.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **MORITA-1990** — M. Morita, T. Ohmi, E. Hasegawa, M. Kawakami and M.
 Ohwada, "Growth of native oxide on a silicon surface", *Journal of
@@ -6968,6 +6986,7 @@ Atomic Hydrogen", *Physical Review Letters* **51**(24), 2224–2225
 (1983). <https://doi.org/10.1103/PhysRevLett.51.2224> Hydrogen
 deactivation of boron, the side-effect that bounds the recipe. Used on
 step 096. Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **RANGAN-1998** — S. Rangan, S. Krishnan and S. Ashok, "Process-induced
 damage — a study of hydrogen and deuterium passivation", *Proc. 1998 3rd
@@ -6975,6 +6994,7 @@ International Symposium on Plasma Process-Induced Damage*, pp. 213–216.
 <https://doi.org/10.1109/PPID.1998.725612> Hydrogen and deuterium
 passivation of process-induced damage. Used on step 096. Tier: deep
 dive.
+Also used on the anneal ambients material page.
 
 **RUEGER-1997** — N. R. Rueger, J. J. Beulens, M. Schaepkens, M. F.
 Doemling, J. M. Mirza, T. E. F. M. Standaert and G. S. Oehrlein, "Role
@@ -6991,6 +7011,7 @@ deactivation of boron, the side-effect that bounds the recipe. Used on
 step 096.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **SCHAEPKENS-1999** — M. Schaepkens, T. E. F. M. Standaert, N. R.
 Rueger, P. G. M. Sebel, G. S. Oehrlein and J. M. Cook, "Study of the
@@ -7009,6 +7030,7 @@ Physics Letters* **68**(15), 2076–2078 (1996).
 by molecular hydrogen. Used on step 096.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **YANG-1998** — C.-H. Yang and C.-M. Dai, "Resist and oxide thickness
 effect on process window for 0.2-μm contact patterns with off-axis
@@ -7596,6 +7618,7 @@ charging during plasma processing", *IEEE Electron Device Letters*
 **13**(5), 288–290 (1992). <https://doi.org/10.1109/55.145056>
 Thin-oxide damage from gate charging during plasma processing. Used on
 step 114. Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **FISCHL-1987** — D. S. Fischl and D. W. Hess, "Plasma-Enhanced Etching
 of Tungsten and Tungsten Silicide in Chlorine-Containing Discharges",
@@ -8638,6 +8661,7 @@ in plasma nitride, its infrared calibration, and hydrogen in a plasma
 oxide deposited at 300 °C. Used on steps 164, 167 and 170. Tier: deep
 dive.
 Also used on the PECVD page.
+Also used on the anneal ambients material page.
 
 **PAT-CRACKSTOP-IBM** — A. R. Mitwalsky and T.-C. Chen (Siemens
 Aktiengesellschaft / International Business Machines), *Crack stops*,
@@ -8780,6 +8804,7 @@ anneals for manufacturing multilevel metal/dielectric MOS systems. Used
 on step 170.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **LEARN-1976** — A. J. Learn, "Evolution and Current Status of Aluminum
 Metallization", *Journal of The Electrochemical Society* **123**(6),
@@ -8793,6 +8818,7 @@ deuterium processing", *Applied Physics Letters* **68**(18), 2526–2528
 and hot-electron degradation. Used on step 170.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **PAT-DEUTERIUM-UIUC** — J. W. Lyding and K. Hess (Board of Trustees of
 the University of Illinois), *Deuterium-treated semiconductor devices*,
@@ -8803,6 +8829,7 @@ cite). Deuterium-treated devices and example anneal conditions. Used on step
 170.
 Also used on the vertical-furnace anneal page.
 Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **SAYAH-1988** — H. R. Sayah and M. G. Buehler, "Comb/serpentine/cross-bridge
 test structure for fabrication process evaluation", *Proc. 1988 IEEE
@@ -9763,6 +9790,7 @@ oxidation ambient, anneal and cooling ambient, temperature and
 orientation; oxides cooled in nitrogen or argon show large densities that
 a low-temperature hydrogen anneal reduces. Used on the vertical-furnace
 oxidation and anneal pages. Tier: deep dive.
+Also used on the anneal ambients material page.
 
 **AVIZA-COMPANY** — Aviza Technology, *Company*, web page, 2005; Wayback
 Machine capture of 2005-11-24.
@@ -10199,6 +10227,7 @@ A dual-module PEP 4800DL system whose modules each carry an "Astex
 Microwave Generator" and an "ENI ACG-5XL RF Generator", with gas lines
 including CF₄, N₂, O₂ and 4 % H₂/N₂. Used on the downstream plasma asher
 page. Tier: high-level (dealer listing).
+Also used on the anneal ambients material page.
 
 **SNF-AURA** — Stanford Nanofabrication Facility, *Gasonics Aura Asher
 (gasonics)*, equipment page, accessed 2026-09-13.
@@ -13224,6 +13253,22 @@ mechanical polishing (CMP) wastewater from semiconductor fabrication",
 water by electrocoagulation (no abstract in Crossref or OpenAlex; the
 annotation rests on the title). Used on the CMP consumables material
 page. Tier: deep dive.
+
+#### Anneal ambients (first cited there)
+
+**WIKI-FLAMMABILITY** — Wikipedia, *Flammability limit*.
+<https://en.wikipedia.org/wiki/Flammability_limit> Table of flammability
+limits in air; the hydrogen row gives a lower limit of 4 % and an upper
+limit of 75 % by volume. Used on the anneal ambients material page.
+Tier: high-level.
+
+**XU-2008** — S. Xu and L. Diao, "Study of tungsten oxidation in
+O₂/H₂/N₂ downstream plasma", *Journal of Vacuum Science & Technology A*
+**26**(3), 360–364 (2008). <https://doi.org/10.1116/1.2897316>
+Abstract: tungsten oxidises rapidly to WO₃ in an O₂ downstream plasma at
+up to 300 °C; "oxidation can be reduced effectively by adding H2"; adding
+N₂ lowers the efficiency of the hydrogen. Used on the anneal ambients
+material page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
