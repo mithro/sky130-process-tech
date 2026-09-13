@@ -306,10 +306,19 @@ In mask order the tier thus puts two levels between
 {ref}`VIM <step-118>` and {ref}`MM2 <step-124>`: `cviam` → `r1c` → `r1v`
 → `cmm2` (order from the cross-section; inference). Neither mask is in
 `masks.csv` or `gds_layers.csv`,[^pdk-05][^pdk-06] which is why neither
-appears in this reference's {ref}`masks-index`. Both via masks come from
-the one drawn `via` layer, separated "during mask generation";[^reram-ug]
-whether `r1v` is identical to `cviam` or is sized or selected
-differently is not public.
+has a row in the main table of this reference's {ref}`masks-index`. Both
+via masks come from the one drawn `via` layer, separated "during mask
+generation";[^reram-ug] whether `r1v` is identical to `cviam` or is
+sized or selected differently is not public.
+
+This page reads `r1v` as covering the upper vias over bypasses as well
+as over cells. One public set of mask-layer renders of the MPW tape-out
+layouts, which cites no source for its derivations, renders `VIMC` as
+`68:44 AND 201:20` — `via` only where it overlaps 201:20
+({ref}`masks-derivations`).[^mask-renders] Since a bypass has no RRAM
+stack, that derivation would leave the bypass vias out of `VIMC`
+(inference). SkyWater's description does not settle which is right,
+and both remain inferences.
 
 ## Electrical operation
 
@@ -516,6 +525,8 @@ the tier needs:[^skw-01]
 * *S8 / SKY130 Process Steps* sheet — the step list, and in "Run Mask
   IDs" the RRM and VIMC masks and the runs for which they
   exist.[^steps-sheet]
+* *SKY130 Open MPW mask-layer renders* — one public derivation of
+  `VIMC` from the drawn `via` and 201:20 layers.[^mask-renders]
 * SkyWater, *Facilities & Capabilities* — ALD HfO₂ and TiN, PVD TiN,
   TiN metal etch.[^skw-01]
 * SkyWater, Weebit Nano ReRAM press release — a ReRAM bitcell "between
@@ -677,6 +688,16 @@ the tier needs:[^skw-01]
     (rows "RRAM Mask, RRM" and "Via 1 top, RRAM tier, VIMC"), retrieved
     2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
+    directory: `README.md`, `masks.html`, the run pages `mpw-001.html` to
+    `mpw-008.html`, and for each run × mask directory the page,
+    `job.json`, `result.json` and per-die slot JSON files, retrieved
+    2026-09-13. Run pages are `mpw-00N.html`; each render's page is
+    `<run>_<mask>/<run>_<mask>.html` (for example
+    `mpw-001_TUNM/mpw-001_TUNM.html`). Rendered from the public shuttle
+    repositories under
+    <https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>.
+    <https://data.wafer.space/big-storage/sky130-masks/>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
