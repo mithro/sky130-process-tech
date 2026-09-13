@@ -93,7 +93,8 @@ Run `uv run tools/check_steps.py`, `uv run tools/check_refs.py`,
 `uv run tools/check_machines.py` (machine-page headings and step lists),
 `uv run tools/check_materials.py` (material-page headings, index row
 keys and class-page table, rows covered, step lists and summary table),
-`uv run tools/check_masks.py` (mask-page headings, plates and step lists) and
+`uv run tools/check_masks.py` (mask-page titles, headings, quick facts, plates,
+step lists and links) and
 `uv run sphinx-build -W -q -b html docs docs/_build/html` before
 finishing. Report the branch name, commits, and any claims you were
 unable to source.
@@ -170,61 +171,174 @@ You are writing `docs/masks/<code>.md` for one mask step. The three
 pilot pages (DNM, P1M, VIM4) are the model; `tools/check_masks.py`
 enforces the points marked *(checked)*.
 
-* **Template** *(checked)*. Label `(mask-<code in lower case>)=` on the
-  first line, matching the file name; title `# CODE — <Mask field of
-  masks.csv>` (for a mask step without a `masks.csv` entry, the step
-  list's description); the H2 and H3 headings of the checker; a
-  quick-facts table before the first H2 whose first row is "Mask step"
-  (one link, `{ref}`CODE <step-NNN>``, to the mask step the index's
-  "Mask steps in this reference" table gives), with rows "Plates
-  recorded", "Plate no." and "Dies with shapes, MPW-1 to MPW-8
-  (renders)" that read exactly as the mask's cells in the index's
-  "Plates by mask" table, and whose last row is "Steps that use the
-  pattern | N steps; see {ref}`… <mask-<code>-steps>`". Between them
-  give the PDK `masks.csv` entry, mask-level and drawn layers, minimum
-  CD, polarity and tone, exposure class with its basis, and the
-  mask-type reading of the process-steps sheet, as the index gives them.
+* **Title** *(checked)*. Label `(mask-<code in lower case>)=` on the
+  first line, matching the file name, and title `# CODE — <name>`:
+  * a mask with a `masks.csv` entry takes the `Mask` field of the
+    variant marked `X`, or of its only entry when none is marked
+    (`PWBM`, `PWDEM`, `CAPM`); for `VIM2`, `MM3` and `PDM` that is the
+    `X` variant ("Via 2-PLM", "Metal 3-PLM", "Pad (scribe protect)");
+  * a mask without one (`RRPM`, `URPM`, `CAP2M`) takes the name of its
+    row in the sheet's "Run Mask IDs" tab, as the masks index quotes it
+    ("Rev Resistor Protect", "Ultra-High Resistor Poly", "Capacitor
+    MiM 2"), not the step list's description (which calls both `CAPM`
+    and `CAP2M` "Capacitor mask");
+  * escape Markdown characters as the index does (`Low Vt Nch\*`).
+* **Headings** *(checked)*. The H2 and H3 headings of the checker.
+  "Plates and reticle sets" may carry the optional H3 "The mask-type
+  record" (the via 2, via 3 and via 4 masks); no other H3 is allowed.
+* **Quick facts** *(checked)*. A table before the first H2 headed
+  `| | CODE — <name> |` with exactly these rows, in this order
+  (footnotes go at the end of a cell):
+  * "Mask step" — one link, `{ref}`CODE <step-NNN>``, to the mask step
+    the index's "Mask steps in this reference" table gives, then "step
+    N of 171".
+  * "PDK mask (`masks.csv`)" — every variant in the index's *PDK mask*
+    cell, as `"Mask", `CODE`, marked `X` in `Used in SKY130`` or
+    `"Mask", `CODE`, unmarked`; for a mask without an entry, "not
+    listed; the name is the "Run Mask IDs" tab's "<name>"".
+  * "Mask-level layer (`gds_layers.csv`)" (singular even where there
+    are several purposes), "Drawn layer (`gds_layers.csv`)" and
+    "Minimum CD, feature / space" — every code span, quotation,
+    layer:datatype, value and "N/A" of the index cell, in the index's
+    order, with the layer descriptions added; "none" and "none listed"
+    exactly as the index gives them; "inference" kept where the index
+    marks one. For variants, give every variant's values, as the index
+    does.
+  * "Polarity and tone" — "Not published." and the reading, marked as
+    such.
+  * "Exposure class" — the step page's reading with its basis and a
+    link to the machine page.
+  * "Mask type (process-steps sheet)" — the "Sheet4" code as a code
+    span followed by the index's reading, or exactly "None recorded;
+    the sheet codes a type for the via 2, via 3 and via 4 plates only".
+  * "Plates recorded", "Plate no." and "Dies with shapes, MPW-1 to
+    MPW-8 (renders)" — exactly the mask's cells in the index's "Plates
+    by mask" table ("not rendered" for `RRPM`).
+  * "Steps that use the pattern" — "N steps; see
+    {ref}`Steps that use this mask <mask-<code>-steps>`", with N the
+    number of steps listed.
 * **Plates** *(checked)*. Under "Plates and reticle sets", a table
   `| Run | Reticle set (sheet column heading) | Plate ID |` with one row
   per run, MPW-1 to MPW-8 in order: the index's reticle set, and the
-  plate ID from the sheet, or "none recorded". Plate IDs, reticle-set
-  IDs, lot IDs and mask-type codes may be cited. Do not name projects,
-  people or lot records beyond what the masks index already uses, and
-  cite the renders site only for its images, layer and note metadata and
-  per-die shape counts.
+  plate ID from the sheet, or "none recorded".
+  * **Variants** (`VIM2`, `MM3`, `PDM`): the table covers the `X`
+    variant only; add one sentence saying the sheet records no plates
+    for the unmarked variants.
+  * **Partial records** (`PWBM`, `PWDEM`, and the MPW-5 gaps): keep the
+    "none recorded" rows and add a bullet repeating the index's
+    non-conclusion (the page reports what is recorded and does not
+    conclude that the mask was absent). For `PWBM` and `PWDEM` also say
+    that no rendered die draws `pwbm` or `pwde`, so that the page does
+    not imply use.
+  * **Anomalous plate numbers** (`NSM` on MPW-6, `S8014AA616A`): one
+    bullet quoting the plate ID and saying the sheet does not explain
+    it.
+  * Before writing, run `uv run tools/check_masks.py --sheet <file>`
+    once with a local CSV export of the "Run Mask IDs" tab (saved under
+    the worktree's `tmp/`, which is deleted afterwards) to compare the
+    index-derived plate IDs with the sheet.
 * **Steps that use this mask** *(checked)*. Under the
   `(mask-<code>-steps)=` label, a line "Steps:", a blank line and one
-  paragraph of `{ref}`CODE <step-NNN>`` links: the mask step and the
-  consecutive steps after it, before the next mask step, that the step
-  pages read as using its resist pattern — the mask's *Patterns* cell on
-  the index, in step order, each linked page linking the mask step.
-  Explain each step in bullets below, say where the list stops, and
-  record any exception to the rule. If the step pages' reading
-  changes, change the index's *Patterns* cell in the same branch.
-* **Evidence.** State which facts come from the PDK, which from the
-  sheet and which from the renders. The renders show drawn tape-out
-  data, not photomask artwork; their layer choices, expressions and
-  notes are one public derivation, not SkyWater's recipe; the sheet's
-  notes and the site's notes share wording and do not corroborate each
-  other. Exposure class, tone, resist and reticle type are readings,
-  marked as such, with their basis (design rules, the sheet's
-  mask-type codes as read on the index); step names and codes are not
-  evidence (Common rule 2).
-* **Design rules** are quoted from the periphery rules and *Criteria &
-  Assumptions* with their names, flags and values as published.
+  paragraph of `{ref}`CODE <step-NNN>`` links, each with the step's code
+  as its text: the mask step and the consecutive steps after it, before
+  the next mask step, that the step pages read as using its resist
+  pattern — the mask's *Patterns* cell on the index, in step order, each
+  linked page linking the mask step. Explain each step in bullets
+  below. Close with three sentences: what the next step does, attributed
+  ("on its step page's reading, …"); the next mask step; and "no
+  exception" or the exception. If the step pages' reading changes,
+  change the index's *Patterns* cell in the same branch. Known cases:
+  for `TUNM`, say that ONO (step 40) is not listed because it does not
+  use the resist; for `NWM`, that LVTPI uses the `NWM` resist on the
+  step pages' reading; for `PSDM`, that the "Masks" tab repeats the
+  mask's description for `PSDI`.
+* **Evidence.**
+  * State which facts come from the PDK, which from the sheet and which
+    from the renders.
+  * The renders show drawn tape-out data, not photomask artwork: quote
+    the site's "renders of *drawn* data" *(checked)*. Their layer
+    choices, `expr` expressions and notes are one public derivation,
+    "not SkyWater's" recipe *(checked)*. For a mask rendered from an
+    expression (`LVTNM`, `HVTPM`, `NTM`, `HVNTM`) or from layers that
+    differ from the index's pairing (`LVOM`, `PWBM`, `RPM`, `MM4`), quote
+    the `expr` or the layers verbatim with layer names, and repeat the
+    index's note contradictions for the mask. The sheet's notes and the site's notes share wording and do
+    not corroborate each other.
+  * For a mask used on few dies (`TUNM`, `ONOM`, `LDNTM`, `RPM`), give
+    dies by run and frame only ("MPW-1, frame A4"), and say where a plate
+    is recorded on a run on which no die draws the layer. For a mask with
+    shapes on 39 or 40 dies of every run (`CAPM`, `CAP2M`, `URPM`,
+    `NSM`, `DNM`, `VIM4`), give the minimum per-die shape count and,
+    where counts repeat, the number of dies with a repeated count, and
+    read repeated counts as common to the dies (inference), as the DNM
+    and VIM4 pages do.
+  * Exposure class, tone, resist and reticle type are readings, marked
+    as such, with their basis (design rules, the sheet's mask-type codes
+    as read on the index); step names and codes are not evidence
+    (Common rule 2).
+  * Attribute every description of an adjacent step to its step page.
+  * Do not state a design rule's or criterion's purpose (a margin, a
+    budget) as fact; mark it as a reading.
+  * Claims about a paper go no further than its abstract (or, for a
+    book, its table of contents) unless marked as the paper's or book's
+    content not checked.
+* **Design rules.** Quote the periphery rules and *Criteria &
+  Assumptions* with their names, flags and values as published. Head
+  the rule table's description column "Description (published wording,
+  abridged where marked "[…]")" and end a cut-short quotation with
+  "[…]" inside the quotation marks (an ellipsis in the published text
+  stays as printed). Give each rule's flag in parentheses and quote the
+  flag legend verbatim, escaping asterisks (`\*`). Before writing, grep
+  every *Criteria & Assumptions* CSV (`01` to `10`), not only Table 2,
+  for the mask's acronym and its drawn layer's name; mask-named criteria
+  are easy to miss (for example `P1MCDcontrol`, `PdmCD_tol`,
+  `NSMKeepout`, `NwellCvxSerif`, `LI1PROXSpace`, `NCM_0LVL`, the
+  photoresist thickness for HV tip implants). Quote the periphery rules
+  that name mask data: x.1a (the `p1m`, `met1`, `via` and `met2` mask
+  data, on the MM1, VIM and MM2 pages as well as P1M), x.7, x.9 and
+  x.15a, and any rule flagged `DNF` or `A`, on the page of the mask it
+  belongs to.
+* **Implant masks.** The DNM page's "Lithography and pattern transfer"
+  is the model: resist stopping power, thickness and outgassing, and
+  "Nothing is etched through this resist". Reuse its sources through
+  "Also used on" lines rather than new keys. For the thin tip-implant
+  masks (`NTM`, `HVNTM`, `LDNTM`), quote Table 4's "Photoresist
+  thickness for HV Tip Implants" (0.3, `PrThickImplant`) and the
+  `ntmShadowing` and `hvntmShadowing` values.
+* **Owner constraints.** The renders site and the sheet may be cited
+  for plate IDs, reticle-set IDs, lot IDs, mask-type codes, images,
+  layer and note metadata, and per-die and per-run shape and render
+  counts. Do not:
+  * name any project, design, customer, person or recipient taken from
+    the renders site or the sheet (the site's per-die `project` field,
+    shuttle product names, lot `customer` fields and the like);
+  * report any lot status, custody, shipping or ownership information
+    from either source;
+  * name, link or cite the software that generated the renders or any related software repository;
+  * link the sheet's photo albums or cite order or job numbers.
 * **Links.** Publishing the page is a link-only change to the index:
   add the page to the toctree and link the mask acronym in the page's
-  row of "Mask steps in this reference" (`{ref}`CODE <mask-code>``;
-  for a row without a `masks.csv` entry, add the link in the Step
-  cell). Link the page from its mask step page (a *Related steps*
-  bullet) and, where natural, from the exposure machine page's
-  *Related pages*.
+  row of "Mask steps in this reference" as `{ref}`CODE <mask-code>``
+  *(checked)*; for a row without a `masks.csv` entry, add "mask page
+  {ref}`CODE <mask-code>`" after the link in the Step cell.
+  Link the page from its mask step page with a *Related steps* bullet
+  containing `{ref}`CODE <mask-code>`` *(checked)* and, where natural,
+  from the exposure machine page's *Related pages*, symmetrically for
+  a class that is the mask's alternative.
 * **Inventory.** New sources go in §8.21 of
   `docs/references/public-sources.md` under the page's `####`
   sub-section; the header count must equal the number of `**KEY** —`
   lines, with no duplicate keys; an existing entry gets a separate line
   "Also used on the <CODE> mask page." after its "Tier:" text. A mask
   page needs at least eight Deep dive entries (`tools/check_refs.py`).
+* **Before committing**, check the page and every commit message:
+  * no project, design, customer, person or recipient names from the
+    renders site or the sheet; dies by run and frame only;
+  * no lot status, custody, shipping or ownership fields;
+  * no mention of the software that generated the renders or of any related software repository;
+  * the renders are described as drawn data, and `expr` and notes as
+    one public derivation, not SkyWater's;
+  * sheet and site notes are not cited as corroborating each other.
 
 Run all five checkers (`check_steps.py`, `check_refs.py`,
 `check_machines.py`, `check_materials.py`, `check_masks.py`) and the
@@ -266,7 +380,17 @@ has no public source. Scan every tracked file **and the full git log
 * specific numeric process values (thickness, dose, energy, temperature,
   time, pressure) that carry no public citation and no "typical" label;
 * identifiers such as plate, lot, wafer, order or serial numbers, or
-  personal names of staff.
+  personal names of staff. Plate IDs, reticle-set IDs, MPW lot IDs and
+  mask-type codes taken from the public process-steps sheet or the
+  public mask-layer renders, and citations of the renders site
+  (`[^mask-renders]`, `https://data.wafer.space/big-storage/sky130-masks/`),
+  are approved by the owner and are not findings;
+* names of projects, designs, customers or recipients taken from the
+  renders site or the sheet (the site's per-die project names, shuttle
+  product names, lot customer fields), any lot status, custody,
+  shipping or ownership information from either source, and any
+  mention of the software that generated the renders or of any related software repository — these are findings wherever they appear, including
+  commit messages.
 
 Report every hit with file path, line (or commit hash), the offending
 text, and a proposed remediation. Return `clean` only if nothing is
