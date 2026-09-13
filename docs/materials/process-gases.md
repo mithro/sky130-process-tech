@@ -191,7 +191,8 @@ not what SkyWater buys; the purity of SKY130's gases is not public.
   compressed gas";[^niosh-hcl] trans-1,2-dichloroethylene is a liquid
   with "applications including electronics cleaning, precision cleaning,
   and certain metal cleaning applications",[^wiki-dce] delivered to a
-  furnace as vapour.[^yoneda-1995]
+  furnace as vapour (industry practice); Yoneda et al. added it to gate
+  oxidation.[^yoneda-1995]
 * **N₂O and NO.** Nitrous oxide in cylinders; nitric oxide, a "Colorless
   gas" "Shipped as a nonliquefied compressed gas".[^niosh-no]
 * **Water vapour.** Generated at the tool from ultrapure water or, in a
@@ -311,13 +312,14 @@ The steps fall into groups, as the index rows describe them:
 
 * **Nitrogen almost everywhere.** 142 steps name nitrogen, for purging,
   venting and drying, for reactive TiN sputtering, and as an ash or
-  diluent gas; the 29 that do not are CMP steps, most implants, two mask
-  steps, four HDP depositions and the electrical test.
-* **Oxidations and anneals.** Oxygen, hydrogen (steam or radical
-  oxidation), the chlorine additions and N₂O or NO at
-  {ref}`BOX <step-002>`, {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`,
+  diluent gas; the 29 that do not are twelve CMP steps, ten implants, two
+  mask steps, four HDP depositions and the electrical test.
+* **Oxidations and anneals.** Oxygen at {ref}`BOX <step-002>`,
+  {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`,
   {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>` and
-  {ref}`IOX45 <step-063>`; argon and nitrogen as the likely RTA ambients
+  {ref}`IOX45 <step-063>`, with hydrogen (steam or radical oxidation),
+  the chlorine additions or N₂O or NO at various of them (see the rows);
+  argon and nitrogen as the likely RTA ambients
   at {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`,
   {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>` and
   {ref}`CSIL <step-098>` (inference on those pages).
@@ -341,10 +343,11 @@ practice, standards and supplier statements.
   plants or delivery "by road tanker or ISO container for storage on your
   site".[^linde-eng-electronics] Helium comes from natural gas and is
   subject to supply swings.[^wiki-helium]
-* **Purity at the point of use.** Grades are specified at delivery by
-  standards such as SEMI C59 and C54;[^semi-c59][^semi-c54] what reaches
-  the wafer also depends on the piping and valves between, the concern of
-  Ohmi's ultraclean gas systems.[^ohmi-1993]
+* **Purity at the point of use.** Grades are specified by standards such
+  as SEMI C59 and C54;[^semi-c59][^semi-c54] what reaches the wafer also
+  depends on the piping and valves between (industry practice), part of
+  the "ultraclean processing environment" of Ohmi's
+  programme.[^ohmi-1993]
 * **Asphyxiation.** Nitrogen, argon and helium displace oxygen; argon
   "is 38% more dense than air and therefore considered a dangerous
   asphyxiant in closed areas".[^wiki-argon] Liquid-nitrogen and bulk-gas
