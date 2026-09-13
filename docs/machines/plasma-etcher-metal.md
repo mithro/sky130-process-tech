@@ -239,10 +239,13 @@ fab's gas delivery or abatement.
 These notes connect the machine class to the step pages; they add no
 SKY130 conditions of their own. SKY130's etch recipes are not public.
 
-* **Three kinds of metal etch.** The class covers the TiN local
-  interconnect ({ref}`LI1ME <step-103>`), five aluminium stacks with
-  refractory layers ({ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`)
-  and two capacitor top plates ({ref}`CAPME <step-138>`,
+* **Three kinds of metal etch.** The class covers the local
+  interconnect ({ref}`LI1ME <step-103>`), titanium nitride in Edwards's
+  PDK lecture;[^ann-16] the five metal levels ({ref}`MM1E <step-114>`
+  to {ref}`MM5E <step-163>`),[^pdk-10] "5 layers of aluminum metal" in
+  the same lecture,[^ann-16] which a Cypress qualification report
+  describes, for metals 1 to 3, as Ti/Al–Cu/TiW
+  stacks;[^cyp-qtp-113005] and the two capacitor top plates ({ref}`CAPME <step-138>`,
   {ref}`CAP2ME <step-153>`). The PDK calls the top plate only "a thin
   conductor layer on top of the dielectric";[^pdk-07] this reference
   reads it as TiW (inference, set out on the {ref}`CAPTIW1 <step-136>`
@@ -251,8 +254,9 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   evidence would equally allow TiN. SkyWater's two entries name Al, TiN
   and TiW.[^skw-01]
 * **Stopping on tungsten plugs and thin dielectrics.** The aluminium
-  over-etch lands on oxide and on the tops of tungsten plugs, with
-  selectivity to the plugs ({ref}`MM1E <step-114>`); chlorine etched
+  over-etch lands on oxide and on the tops of the tungsten plugs
+  (SkyWater lists "Lam/Novellus PECVD Tungsten – plug fill"[^skw-01]),
+  with selectivity to the plugs ({ref}`MM1E <step-114>`); chlorine etched
   tungsten at no more than 90 nm/min in Fischl and Hess's
   conditions;[^fischl-1987] the capacitor
   top-plate etches, whatever the plate material, land on the thin MiM
@@ -296,6 +300,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   conductor layer", its material unnamed.[^pdk-07]
 * Cypress, QTP 113005 — the Ti/Al–Cu/TiW composition of the S8 metal
   stacks.[^cyp-qtp-113005]
+* SkyWater PDK, *google/skywater-pdk* README — "1 level of local
+  interconnect" and "5 levels of metal".[^pdk-10]
 * Lam Research, TCP 9600SE microwave stripper announcement (1998) — the
   TCP metal etcher, its integrated downstream stripper and corrosion
   tests.[^lam-9600se-stripper-1998]
@@ -318,6 +324,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 
 ### High-level understanding
 
+* Edwards (Efabless), *Introduction to the SkyWater PDK* — the TiN
+  local interconnect and the five aluminium metal layers.[^ann-16]
 * Wikipedia, *Reactive-ion etching*.[^wiki-rie]
 * Wikipedia, *Plasma etching*.[^wiki-plasma-etch]
 * Wikipedia, *Boron trichloride* — the oxide-scavenging etch
@@ -431,6 +439,12 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
     Technology, CMI (Fab 4)*, document 001-85611 Rev. *A, January
     2013 (copy hosted by Infineon Technologies).
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
+[^pdk-10]: SkyWater PDK Authors, *google/skywater-pdk* repository
+    README. <https://github.com/google/skywater-pdk>
+[^ann-16]: T. Edwards (Efabless), *Introduction to the SkyWater PDK —
+    The New Age of Open Source Silicon*, lecture slides, 2021-10-08
+    (UC San Diego BENG 207).
+    <https://isn.ucsd.edu/courses/beng207/lectures/Tim_Edwards_2021_slides.pdf>
 [^schaible-1978]: P. M. Schaible, W. C. Metzger and J. P. Anderson,
     "Reactive ion etching of aluminum and aluminum alloys in an rf plasma
     containing halogen species", *Journal of Vacuum Science and
