@@ -23,10 +23,10 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1026
+written page has exactly one entry here; the inventory holds 1056
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10, 8.11, 8.12, 8.13 and 8.14 were added to cover the
+8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14 and 8.15 were added to cover the
 sources the writers of the step and category pages introduced; a
 "Label ↔ key" note marks the few cases where one source has two keys.
 
@@ -7429,6 +7429,243 @@ on Electron Devices* **51**(6), 1017–1024 (2004).
 <https://doi.org/10.1109/TED.2004.829518> Plasma-charging damage of
 floating MiM capacitors, its dependence on antenna areas and layout rules
 against it. Used on steps 140, 141, 143 and 145. Tier: deep dive.
+
+### 8.15 Metal-4, second MiM-capacitor, via-4 and metal-5 module sources
+
+Sources introduced by the writers of the metal-4 stack and second
+MiM-capacitor module (steps 149–153), the metal-4 patterning, ILD6, CMP
+and cap-oxide steps (steps 154–158), the via-4 module (steps 159–160)
+and the metal-5 module (steps 161–163) that had no entry above. As in
+§8.14, each label on those pages is the key below in lower case, the
+citation is the one given in the page footnote, and the annotation is
+taken from the citing page's reading list; entries are grouped by the
+sub-module that first cited the source and name every page that uses
+it. Apart from PDK-PREVIOUS, none of these sources describes SkyWater,
+SKY130 or the Bloomington fab.
+
+#### Metal 4 stack and second MiM capacitor (steps 149–153)
+
+**PAT-MIM-STACK-NEWPORTFAB** — A. Kar-Roy, M. Racanelli and P. Kempf
+(Newport Fab, LLC), *Method for fabricating a high density composite MIM
+capacitor with flexible routing in semiconductor dies*, US 7,078,310 B1,
+filed 2004-05-19, granted 2006-07-18.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7078310>
+A composite of two stacked MiM capacitors sharing a middle electrode and
+joined in parallel. Used on steps 149, 150, 151 and 152. Tier: deep dive.
+
+**PAT-MIM-STACK-TSMC** — K.-L. Chang, C.-Y. Lee and C.-H. Chen (Taiwan
+Semiconductor Manufacturing Co.), *High density MIM capacitor structure
+and fabrication process*, US 7,317,221 B2, filed 2003-12-04, granted
+2008-01-08.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7317221>
+Stacked MiM capacitor plates cross-connected through filled vias. Used on
+steps 149, 150 and 152. Tier: deep dive.
+
+**PDK-PREVIOUS** — SkyWater PDK Authors, *Previous Nomenclature*, SkyWater
+SKY130 PDK documentation.
+<https://skywater-pdk.readthedocs.io/en/main/previous.html> The older S8
+process names, among them "s8phrc" with "dual MiM cap layers on metal 3
+and metal 4", "s8pfhd" with a "5 metal layer backend stack" and
+"s8phirs" with rdl metal inductors. Used on steps 150 and 161. Tier:
+cross-check.
+
+**SUL-2014** — W. S. Sul and S. G. Pyo, "RF Characteristic Analysis Model
+Extraction on the Stacked Metal–Insulator–Metal Capacitors for Radio
+Frequency Applications", *IEEE Transactions on Electron Devices*
+**61**(8), 3011–3013 (2014). <https://doi.org/10.1109/TED.2014.2330842>
+RF model extraction for stacked MiM capacitors. Used on step 150. Tier:
+deep dive.
+
+#### Metal 4: mask, etch, ILD6, CMP and cap oxide (steps 154–158)
+
+**ALLEN-1994** — L. R. Allen and R. Rickard, "Tapered aluminum
+interconnect etch", *Journal of Vacuum Science & Technology A* **12**(4),
+1265–1268 (1994). <https://doi.org/10.1116/1.579306> A tapered aluminium
+interconnect etch with N₂ additions in a TCP etcher. Used on steps 155,
+162 and 163. Tier: deep dive.
+
+**TAGUCHI-1998** — M. Taguchi, K. Maeda and J. Aoyama, "Improvement of
+filling capability by control of water outgassing from via holes in
+high-pressure aluminum reflow technology", in *Fourth International
+Workshop on Stress Induced Phenomena in Metallization*, AIP, 1998, pp.
+407–412. <https://doi.org/10.1063/1.54662> Water outgassing from via
+holes and the filling of vias by high-pressure aluminium reflow. Used on
+steps 158, 160 and 161. Tier: deep dive.
+
+#### Via 4: mask and etch (steps 159–160)
+
+**BAR-2002** — E. Bär, J. Lorenz and H. Ryssel, "Simulation of the
+influence of via sidewall tapering on step coverage of sputter-deposited
+barrier layers", *Microelectronic Engineering* **64**(1–4), 321–328
+(2002). <https://doi.org/10.1016/S0167-9317(02)00805-5> The simulated
+effect of via sidewall taper on the coverage of sputtered films. Used on
+steps 159 and 160. Tier: deep dive.
+
+**KIM-2011** — C.-G. Kim and W.-J. Lee, "Quantitative study on the
+enhancement of sidewall coverage of sputter-deposited film by partially
+tapering the sidewall of via holes", *Journal of Vacuum Science &
+Technology B* **29**(2), 020604 (2011).
+<https://doi.org/10.1116/1.3567184> Partially tapered vias and the
+sidewall coverage of sputtered films. Used on steps 159 and 160. Tier:
+deep dive.
+
+**PAT-SLOPED-MOTOROLA** — R. K. Berglund, K. E. Mautz and R. Tyldesley
+(Motorola), *Sloped contact etch process*, US 4,698,128 A, filed
+1986-11-17, granted 1987-10-06.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4698128>
+Sloped contact walls made by alternating oxide and resist etching, for
+metal step coverage. Used on steps 159, 160 and 161. Tier: deep dive.
+
+**PAT-TAPER-CHARTERED** — E.-N. Chou (Chartered Semiconductor
+Manufacturing), *Enhancing step coverage by creating a tapered profile
+through three dimensional resist pull back*, US 5,308,415 A, filed
+1992-12-31, granted 1994-05-03.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5308415>
+A tapered via profile made by three-dimensional resist pull-back. Used on
+steps 159, 160 and 161. Tier: deep dive.
+
+**SKELLY-1986** — D. W. Skelly and L. A. Gruenke, "Significant improvement
+in step coverage using bias sputtered aluminum", *Journal of Vacuum
+Science & Technology A* **4**(3), 457–460 (1986).
+<https://doi.org/10.1116/1.573905> The step coverage of bias-sputtered
+aluminium in straight-walled vias. Used on steps 159, 160 and 161. Tier:
+deep dive.
+
+#### Metal 5: stack, mask and etch (steps 161–163)
+
+**CHANG-2004** — F.-Y. Chang, H.-C. Huang, S.-H. Yang and S. W. Kuo,
+"Metal corrosion and passivation swelling defect study of ultra low
+pattern density thick metal etch process", *2004 Semiconductor
+Manufacturing Technology Workshop Proceedings*, pp. 153–155.
+<https://doi.org/10.1109/SMTW.2004.1393753> Corrosion and
+passivation-swelling defects in an ultra-low pattern-density thick-metal
+etch. Used on steps 162 and 163. Tier: deep dive.
+
+**DESHMUKH-2003** — A. R. Deshmukh, "The effect of ratio of deposition
+times and via density on via fill in aluminum multilayer metallization",
+*Thin Solid Films* **444**(1–2), 132–137 (2003).
+<https://doi.org/10.1016/j.tsf.2003.08.041> Deposition-time ratio and via
+density in aluminium via fill. Used on step 161. Tier: deep dive.
+
+**DIRKS-1999** — A. G. Dirks, M. N. Webster, P. Turner, P. Rich and D. C.
+Butler, "On the mechanism of aluminum via fill by reflow and forcefill as
+studied by transmission electron microscopy", *Journal of Applied
+Physics* **85**(1), 571–577 (1999). <https://doi.org/10.1063/1.369491>
+The mechanisms of aluminium via fill by reflow and forcefill. Used on
+step 161. Tier: deep dive.
+
+**HARIU-1989** — T. Hariu, K. Watanabe, M. Inoue, T. Takada and H.
+Tsuchikawa, "The Properties of Al-Cu/Ti Films Sputter Deposited at
+Elevated Temperatures and High DC Bias", *27th International Reliability
+Physics Symposium (IRPS 1989)*, pp. 210–214.
+<https://doi.org/10.1109/IRPS.1989.363388> The electromigration lifetime
+of Al–Cu/Ti films sputtered at 500 °C with substrate bias. Used on step
+161. Tier: deep dive.
+
+**HESS-2003** — K. J. Hess, S. H. Downey, G. B. Halt, T. Lee, L. L.
+Mercado, J. W. Miter, W. C. Ng and D. G. Wontor, "Reliability of bond
+over active pad structures for 0.13-μm CMOS technology", *53rd
+Electronic Components and Technology Conference (ECTC 2003)*, pp.
+1344–1349. <https://doi.org/10.1109/ECTC.2003.1216469> Wire-bond and
+package-stress reliability of bond-over-active pad layouts for 0.13 µm
+CMOS. Used on steps 161 and 162. Tier: deep dive.
+
+**HUNTER-2012** — S. Hunter, J. L. Clark, D. Hornberger and L. Rubio,
+"Use of Wire Bonding to Study Bond Pad Damage from Wafer Probe",
+*International Symposium on Microelectronics* **2012**(1), 384–395
+(IMAPS, 2012). <https://doi.org/10.4071/isom-2012-TP41> Wire bonding used
+to reveal probe damage in aluminium bond pads. Used on step 161. Tier:
+deep dive.
+
+**JANSSEN-1998** — G. C. A. M. Janssen, J. F. Jongste, J. P. Lokker, A.
+H. Verbruggen and S. Radelaar, "Aluminium via-fill at elevated pressure
+and temperature", in *Fourth International Workshop on Stress Induced
+Phenomena in Metallization*, AIP, 1998, pp. 349–358.
+<https://doi.org/10.1063/1.54655> Aluminium via fill at elevated
+pressure and temperature. Used on step 161. Tier: deep dive.
+
+**KIKUTA-1995** — K. Kikuta, "Aluminum Reflow Sputtering", *MRS Bulletin*
+**20**(11), 53–56 (1995). <https://doi.org/10.1557/S0883769400045577> A
+short review of aluminium reflow sputtering. Used on step 161. Tier:
+high-level.
+
+**KROGH-1987** — O. Krogh, H. Slomowitz, Y. Melaku and H.-O. Blom,
+"Spectroscopic Diagnostics of Photoresist Erosion in an Aluminum Etch
+Plasma", *Journal of The Electrochemical Society* **134**(8), 2045–2048
+(1987). <https://doi.org/10.1149/1.2100816> Spectroscopic diagnostics of
+photoresist erosion in an aluminium etch plasma. Used on steps 162 and
+163. Tier: deep dive.
+
+**LEE-2003** — W.-J. Lee and S.-K. Rha, "Effect of Underlayer on the Via
+Filling and the Microstructure of the Aluminum Film in Aluminum Plug
+Process", *Japanese Journal of Applied Physics* **42**(6A), 3372–3376
+(2003). <https://doi.org/10.1143/JJAP.42.3372> The underlayer's effect on
+via fill and texture in a CVD–PVD aluminium plug process. Used on step
+161. Tier: deep dive.
+
+**MARSH-2016** — J. Marsh, A. Doutre, K. Syndergaard, P. Brown, K. I.
+Hoo, E. De Jesus and S. Hunter, "Copper Ball Bond over a Variety of Probe
+Marks in Two Pad Aluminum Thicknesses", *2016 IEEE 66th Electronic
+Components and Technology Conference (ECTC)*, pp. 2228–2232.
+<https://doi.org/10.1109/ECTC.2016.382> Copper ball bonds over probe
+marks on two pad aluminium thicknesses. Used on step 161. Tier: deep
+dive.
+
+**MATSUOKA-1990** — F. Matsuoka, H. Iwai, K. Hama, H. Itoh, R. Nakata, T.
+Nakakubo, K. Maeguchi and K. Kanzaki, "Electromigration reliability for
+a tungsten-filled via hole structure", *IEEE Transactions on Electron
+Devices* **37**(3), 562–568 (1990). <https://doi.org/10.1109/16.47758>
+Electromigration reliability of tungsten-filled against unfilled via
+holes. Used on step 161. Tier: deep dive.
+
+**NISHIMURA-1991** — H. Nishimura, T. Yamada and S. Ogawa, "Reliable
+submicron vias using aluminum alloy high temperature sputter filling",
+*Proc. Eighth International IEEE VLSI Multilevel Interconnection
+Conference (VMIC 1991)*, pp. 170–176.
+<https://doi.org/10.1109/VMIC.1991.152982> High-temperature Al–Si–Cu
+sputter filling of submicron vias. Used on step 161. Tier: deep dive.
+
+**ONO-1990** — H. Ono, Y. Ushiku and T. Yoda, "Development of a
+planarized Al-Si contact filling technology", *Proc. Seventh
+International IEEE VLSI Multilevel Interconnection Conference (VMIC
+1990)*, pp. 76–82. <https://doi.org/10.1109/VMIC.1990.127847> Al–Si
+contact filling by sputtering at 500–550 °C. Used on step 161. Tier:
+deep dive.
+
+**PAT-AL-MULTISTEP-AMAT** — C.-R. Wang (Applied Materials), *Multistep
+sputtering process for forming aluminum layer over stepped semiconductor
+wafer*, US 5,108,570 A, filed 1990-03-30, granted 1992-04-28.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5108570>
+A multistep, biased, heated aluminium sputter process for stepped wafers.
+Used on step 161. Tier: deep dive.
+
+**PAT-FORCEFILL-ELECTROTECH** — C. D. Dobson (Electrotech Ltd), *Method
+for filing [sic] substrate recesses using elevated temperature and
+pressure*, US 5,527,561 A, priority 1991-05-28, filed 1994-08-16, granted
+1996-06-18.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5527561>
+Filling recesses by high pressure and temperature after closing them
+with sputtered metal. Used on step 161. Tier: deep dive.
+
+**PRAMANIK-1990** — D. Pramanik and V. Jain, "Effect of underlayer on
+sputtered aluminum grain structure and its correlation with step
+coverage in submicron vias", *Proc. Seventh International IEEE VLSI
+Multilevel Interconnection Conference (VMIC 1990)*, pp. 332–334.
+<https://doi.org/10.1109/VMIC.1990.127888> The underlayer's effect on
+sputtered aluminium grain structure and via step coverage. Used on step
+161. Tier: deep dive.
+
+**TAYLOR-1998** — D. S. Taylor, M. K. Jain and T. S. Cale, "Deposition
+rate dependence of step coverage of sputter deposited aluminum-(1.5%)
+copper films", *Journal of Vacuum Science & Technology A* **16**(5),
+3123–3126 (1998). <https://doi.org/10.1116/1.581476> Temperature and
+rate dependence of Al–Cu step coverage. Used on step 161. Tier: deep
+dive.
+
+**WIKI-WIRE-BONDING** — Wikipedia, *Wire bonding*.
+<https://en.wikipedia.org/wiki/Wire_bonding> Wire bonding to aluminium
+pads, an entry point for the bond-pad discussion. Used on step 161. Tier:
+high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
