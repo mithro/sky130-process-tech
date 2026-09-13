@@ -106,14 +106,14 @@ chemical oxide is thin and will be buried under the
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)**, possibly **NH₃** (listed
+* **Oxygen, nitrogen, {ref}`forming gas <material-anneal-ambients>` (H₂/N₂)**, possibly **NH₃** (listed
   for the Iridia) or **water vapour** (not among SkyWater's listed asher
   gases), for the ash;[^skw-01][^fujimura-1991] **CF₄**, listed on the
   Iridia and Mattson ashers,[^skw-01] would etch the exposed silicon
   film and would, we infer, be omitted here.
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide** ({ref}`wet chemicals <material-wet-chemicals>`) for
   SPM/SC-1; **hydrochloric acid** for an optional SC-2.[^wiki-rca]
-* **DI water, isopropanol, nitrogen.**
+* **{ref}`DI water <material-ultrapure-water>`, isopropanol, nitrogen.**
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
   S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 
