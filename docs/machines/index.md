@@ -450,10 +450,11 @@ can be made consistent later; no step page has been changed here.
   vendor for the second tool.[^skw-01] Five pages write "SEZ 223"
   ({ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`,
   {ref}`GOXETCH <step-046>`, {ref}`BFR <step-060>`,
-  {ref}`SACETCH <step-095>`), most write "DaVinci", and
-  {ref}`BFR <step-060>` and {ref}`SACETCH <step-095>` name the tool
-  "Lam DaVinci" in their SkyWater sections, citing only the
-  capabilities page in that bullet.
+  {ref}`SACETCH <step-095>`). In their SkyWater sections, 12 pages
+  write "DaVinci" and 10 keep SkyWater's "Davinci"
+  ({ref}`BFR <step-060>` uses both), and {ref}`BFR <step-060>` and
+  {ref}`SACETCH <step-095>` name the tool "Lam DaVinci", citing only
+  the capabilities page in that bullet.
 * **"Ag Heatpulse 8808".** SkyWater writes "Ag Heatpulse
   8808".[^skw-01] The anneal and oxidation pages expand this to "AG
   Associates Heatpulse 8808" (nine pages) or "AG Heatpulse 8808"
