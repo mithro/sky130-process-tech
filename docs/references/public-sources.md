@@ -9795,9 +9795,11 @@ downstream plasma asher page. Tier: high-level.
 **SST-GASONICS-2000** — Solid State Technology, *Novellus Acquires
 Gasonics*, 2000-10-27.
 <https://sst.semiconductor-digest.com/2000/10/novellus-acquires-gasonics/>
-Novellus's stock-for-stock acquisition of GaSonics International, "a
-supplier of dry resist removal and surface preparation equipment",
-valued at about $347 million. Used on the downstream plasma asher page.
+Reports that Novellus "is acquiring" GaSonics International, "a
+supplier of dry resist removal and surface preparation equipment", in a
+stock-for-stock merger "valued at approximately $347 million": the deal
+as announced in October 2000 (SST-NOVELLUS-SPEC-2006 dates the purchase
+to 2001). Used on the downstream plasma asher page.
 Tier: high-level (trade press).
 
 **SST-NOVELLUS-SPEC-2006** — Solid State Technology, *Novellus
@@ -9805,7 +9807,8 @@ licenses–not sells–legacy strip tools to SPEC*, 2006-10-19.
 <https://sst.semiconductor-digest.com/2006/10/novellus-licenses-not-sells-legacy-strip-tools-to-spec/>
 Novellus licensed the GaSonics Aura 1000/2000LL, AE 2001/2000LL and L3510
 strip systems to a refurbisher, while the Gamma and PEP Iridia lines from
-its 2001 GaSonics purchase stayed with Novellus. Used on the downstream
+what the article calls "Novellus' 2001 purchase of GaSonics" stayed with
+Novellus (the deal was announced in October 2000, SST-GASONICS-2000). Used on the downstream
 plasma asher page. Tier: high-level (trade press).
 
 **AKRION-GAMA-SERIES** — Akrion Technologies, *GAMA Automated Wet
