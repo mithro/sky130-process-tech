@@ -120,7 +120,7 @@ clean, for a 200 mm, 130 nm-era fab:
   listed on the Iridia and Mattson ashers,[^skw-01] would etch the
   exposed silicon film and would, we infer, be omitted here.
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide,
-  hydrochloric acid** for SPM/SC-1/SC-2.[^wiki-rca]
+  hydrochloric acid** ({ref}`wet chemicals <material-wet-chemicals>`) for SPM/SC-1/SC-2.[^wiki-rca]
 * **Ultrapure DI water, isopropanol, nitrogen.**
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
   S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
