@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 68 of 171 |
+| **Step number** | 68 of 171[^steps-sheet] |
 | **Step code** | `HVNTM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
 | **Phase** | FEOL — extensions, spacers, source/drain |
@@ -353,3 +353,6 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
     The Science of Microfabrication*, Wiley, 2007, ISBN
     978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
     (companion site <https://www.lithoguru.com/textbook/>)
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

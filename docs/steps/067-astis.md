@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 67 of 171 |
+| **Step number** | 67 of 171[^steps-sheet] |
 | **Step code** | `ASTIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
 | **Phase** | FEOL — extensions, spacers, source/drain |
@@ -333,3 +333,6 @@ practice).[^txt-02]
     Cleaning in Semiconductor Manufacturing: Fundamental and
     Applications*, Wiley, 2010, ISBN 978-0-470-62595-8.
     <https://doi.org/10.1002/9781118071748>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

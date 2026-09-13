@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 65 of 171 |
+| **Step number** | 65 of 171[^steps-sheet] |
 | **Step code** | `ASTI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
 | **Phase** | FEOL — extensions, spacers, source/drain |
@@ -358,3 +358,6 @@ fab (SKY130's energy and dose are not public):
     implant monitoring with thermal wave technology", *Applied Physics
     Letters* **47**(6), 584–586 (1985).
     <https://doi.org/10.1063/1.96079>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
