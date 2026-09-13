@@ -130,7 +130,7 @@ an aluminium top metal (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Plasma etcher for nitride and oxide**, 200 mm: Lam TCP 9400-class
+* **Dielectric/nitride plasma etcher**, 200 mm: Lam TCP 9400-class
   nitride-capable etchers,[^snf-9400][^lam-10k] Lam Exelan dielectric
   etchers,[^lam-exelan] Applied Materials and TEL equivalents
   ({ref}`category-etch`).

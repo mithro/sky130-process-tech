@@ -142,7 +142,7 @@ fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Dielectric/nitride etcher**, 200 mm single-wafer: Lam TCP 9400
+* **Dielectric/nitride plasma etcher**, 200 mm single-wafer: Lam TCP 9400
   (poly/nitride class[^snf-9400]), Lam Exelan/4520XLE, Applied
   Materials MxP/eMax, TEL DRM; remote-plasma NF₃-based tools for a
   low-damage alternative.

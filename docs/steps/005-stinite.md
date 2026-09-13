@@ -87,7 +87,7 @@ page[^pdk-03] is comfortable for a ~200 nm stack).
 
 ## Machines typically used
 
-* **Dielectric / nitride plasma etcher**, 200 mm single-wafer,
+* **Dielectric/nitride plasma etcher**, 200 mm single-wafer,
   fluorocarbon chemistry: Lam 4520/4420 and 9400 {term}`TCP` (with CF₄/O₂),
   AMAT Centura DPS or MxP/eMax dielectric chambers, TEL DRM / Unity.
 * **Optical emission endpoint** system on the chamber.
