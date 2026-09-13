@@ -116,7 +116,8 @@ mostly chrome. Neither tone nor resist is stated publicly.
 
 * **i-line {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i), or a KrF tool (category page).
-* **Coat/develop track**; **overlay metrology**.
+* **Coat/develop track**; **overlay metrology** and a {term}`CD-SEM` for
+  periodic checks.
 
 ## Machines likely used at SkyWater
 
@@ -124,7 +125,8 @@ mostly chrome. Neither tone nor resist is stated publicly.
   the tools; **inference** for the assignment of this layer.
 * **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
   Strength: strong.
-* **Overlay — KLA 5200/5300/Archer.**[^skw-01] Strength: strong.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM.**[^skw-01]
+  Strength: strong.
 
 ## Resources required
 

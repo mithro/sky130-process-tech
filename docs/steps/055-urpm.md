@@ -114,7 +114,8 @@ reading is used throughout these pages and is marked as an inference.
 
 * **i-line stepper**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i), or a KrF tool (category page).
-* **Coat/develop track**; **overlay metrology**.
+* **Coat/develop track**; **overlay metrology** and a {term}`CD-SEM` for
+  periodic checks.
 
 ## Machines likely used at SkyWater
 
@@ -122,7 +123,8 @@ reading is used throughout these pages and is marked as an inference.
   the tools; **inference** for the layer assignment.
 * **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
   Strength: strong.
-* **Overlay — KLA 5200/5300/Archer.**[^skw-01] Strength: strong.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM.**[^skw-01]
+  Strength: strong.
 
 ## Resources required
 

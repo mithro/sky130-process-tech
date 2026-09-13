@@ -107,7 +107,8 @@ An industry-generic drain-extension well lithography for a 200 mm,
 
 * **i-line {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i).[^txt-05]
-* **Coat/develop track** with thick-resist capability; **overlay tool**.
+* **Coat/develop track** with thick-resist capability; **overlay tool**
+  and a {term}`CD-SEM` for periodic checks.
 
 ## Machines likely used at SkyWater
 
@@ -115,7 +116,8 @@ An industry-generic drain-extension well lithography for a 200 mm,
   existence; assignment is an **inference** from the coarse geometry.
 * **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01] Strength:
   strong for existence.
-* **Overlay — KLA 5200/5300/Archer**.[^skw-01] Strength: strong.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
+  Strength: strong.
 
 ## Resources required
 
