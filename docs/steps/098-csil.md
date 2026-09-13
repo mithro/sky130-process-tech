@@ -173,7 +173,7 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Nitrogen and argon** (likely ambient, our inference; SkyWater lists
+* **{ref}`Nitrogen <material-process-gases>` and argon** (likely ambient, our inference; SkyWater lists
   the Heatpulse's gases, "NH3, Ar, N2, O2", but no ambient for any
   step);[^skw-01] the titanium and TiN were consumed at
   {ref}`TI/TIN1 <step-097>`.

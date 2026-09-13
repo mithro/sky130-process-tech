@@ -175,7 +175,7 @@ fab (SKY130's recipe is not public):
 ## Resources required
 
 * **Dilute HF** (or **BOE**; {ref}`wet chemicals <material-wet-chemicals>`),[^wiki-hf][^wiki-boe] **{ref}`DI water <material-ultrapure-water>`**,
-  **IPA** or nitrogen for drying.
+  **IPA** or {ref}`nitrogen <material-process-gases>` for drying.
 * **SC-1 chemicals** (NH₄OH, H₂O₂)[^wiki-rca] and/or a
   **post-etch-residue remover** (EKC265/EKC270 class;
   SkyWater lists "EKS265, EKC270 solvents"[^skw-01]).

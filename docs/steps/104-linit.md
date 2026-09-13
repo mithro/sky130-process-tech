@@ -162,9 +162,9 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
 
 ## Resources required
 
-* **Silane, ammonia and nitrogen** (PECVD),[^wiki-pecvd] or **BTBAS
+* **{ref}`Silane <material-precursors>`, ammonia and {ref}`nitrogen <material-process-gases>`** (PECVD),[^wiki-pecvd] or **BTBAS
   and ammonia** (low-temperature {term}`LPCVD`).[^gumpher-2004]
-* **NF₃** (with argon or oxygen) chamber clean; **helium** or
+* **{ref}`NF₃ <material-etch-gases>`** (with argon or oxygen) chamber clean; **helium** or
   **argon** diluent.[^txt-09]
 * **{ref}`Chamber consumables <material-hardware-consumables>`** — showerheads, heater and liner parts.
 * **{ref}`Monitor wafers <material-substrates>`** (SEMI M8 class)[^semi-m8] for thickness, stress
