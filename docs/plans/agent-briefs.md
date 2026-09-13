@@ -41,6 +41,9 @@ written, reviewed and audited to the same standard.
    to `main`. Commit messages must obey rule 2 as strictly as page text.
 8. Work in a git worktree under `.worktrees/<branch>`; never touch other
    worktrees.
+9. **Do not launch sub-agents of your own.** Do all the work yourself,
+   sequentially; the coordinator keeps at most two agents running at
+   once.
 
 ## Writer brief (step pages)
 
