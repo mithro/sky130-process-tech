@@ -164,7 +164,7 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Tungsten slurry** — alumina or silica with H₂O₂, Fe(NO₃)₃ or
+* **Tungsten slurry** — alumina or silica with H₂O₂ ({ref}`wet chemicals <material-wet-chemicals>`), Fe(NO₃)₃ or
   KIO₃ oxidiser (typical industry chemistry[^rev-02][^stein-1999]).
 * **Polishing pads** (stacked polyurethane, IC1000/Suba IV class), **diamond
   conditioners**, **carrier films, membranes and retaining
