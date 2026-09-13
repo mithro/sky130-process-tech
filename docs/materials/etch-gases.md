@@ -390,7 +390,7 @@ public.
 * Wikipedia, *Carbon tetrafluoride*, *Fluoroform*, *Hexafluoroethane*
   and *Octafluorocyclobutane* — fluorocarbon etch
   gases.[^wiki-cf4][^wiki-chf3][^wiki-c2f6][^wiki-c4f8]
-* Wikipedia, *Fluoromethane* and *Perfluorocarbon* — an additive and the
+* Wikipedia, *Fluoromethane* and *Fluorocarbon* — an additive and the
   greenhouse properties of PFCs.[^wiki-ch3f][^wiki-pfc]
 * Wikipedia, *Sulfur hexafluoride* and *Nitrogen trifluoride* — the
   carbon-free fluorides.[^wiki-sf6][^wiki-nf3]
@@ -602,8 +602,8 @@ public.
     Greenhouse Gas Emissions and Supplies Reported to the GHGRP*, web
     page, accessed 2026-09-13.
     <https://www.epa.gov/ghgreporting/fluorinated-greenhouse-gas-emissions-and-supplies-reported-ghgrp>
-[^wiki-pfc]: Wikipedia, *Perfluorocarbon*.
-    <https://en.wikipedia.org/wiki/Perfluorocarbon>
+[^wiki-pfc]: Wikipedia, *Fluorocarbon*.
+    <https://en.wikipedia.org/wiki/Fluorocarbon>
 [^ridgeway-1995]: R. G. Ridgeway, "Determination of emissions and
     evaluation of abatement equipment for selected semiconductor
     processes", *Proceedings of SEMI Advanced Semiconductor Manufacturing
