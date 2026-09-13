@@ -355,7 +355,10 @@ the `masks.csv` fields from the PDK.[^pdk-05] What the record shows:
   against 36 for each of MPW-1 to MPW-4, MPW-6 and MPW-7 and 37 for
   MPW-8.[^steps-sheet] The sheet gives no reason. This page reports
   what is recorded and does not conclude that those masks were absent
-  from MPW-5: the gap may be in the record rather than in the run.
+  from MPW-5: the gap may be in the record rather than in the run
+  (inference: contact, metal 1, via 1, via 4 and pad masks are needed
+  for any working die, so a gap in the record is the likelier
+  explanation).
 * **NSM on MPW-6.** Every run has an `NSM` plate, but the identifier
   recorded for the MPW-6 plate does not follow the pattern shared by
   the `NSM` plates of the other seven runs.[^steps-sheet] The sheet
