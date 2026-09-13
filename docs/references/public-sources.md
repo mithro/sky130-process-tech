@@ -7913,9 +7913,15 @@ Crossref on that date.
 
 #### SkyWater ReRAM documentation and library
 
+**RERAM-INDEX** — SkyWater PDK Authors, *sky130_fd_pr_reram - SKY130
+ReRAM (SkyWater Provided)*, documentation index page.
+<https://sky130-fd-pr-reram.readthedocs.io/en/latest/>
+The library title "SKY130 ReRAM (SkyWater Provided)" and the note
+"Initial documentation only release."; a contents list of the User Guide,
+Background and Technology Specifications pages. Tier: cross-check.
+
 **RERAM-BACKGROUND** — SkyWater PDK Authors, *Background*,
-`sky130_fd_pr_reram` — SKY130 ReRAM (SkyWater Provided) documentation
-("Initial documentation only release").
+`sky130_fd_pr_reram` documentation.
 <https://sky130-fd-pr-reram.readthedocs.io/en/latest/background.html>
 States that "a HfO2-based RRAM layer is fabricated within the BEOL process
 at multiple points as described in the physical design rules"; describes
