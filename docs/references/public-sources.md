@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1459
+written page has exactly one entry here; the inventory holds 1479
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -12089,6 +12089,150 @@ International Conference on Ion Implantation Technology Proceedings*,
 pp. 639–641. <https://doi.org/10.1109/IIT.2000.924234> An in-line
 ultra-shallow-junction tool evaluated as a low- and high-dose implant
 monitor. Used on the sheet-resistance and dose metrology page. Tier: deep
+dive.
+
+**HITACHI-S4800** — Hitachi High Technologies America, *S-4800 UHR
+FE-SEM*, product page; Wayback Machine capture of 2009-10-21.
+<https://web.archive.org/web/20091021203654/http://www.hitachi-hta.com:80/products/electron-microscopes-and-focused-ion-beam/field-emission-sem/s-4800-uhr-fe-sem>
+Secondary-electron resolution of 1.0 nm at 15 kV and 2.0 nm at 1 kV
+(1.4 nm with beam deceleration), 200 mm specimens, a semi in-lens detector
+with signal separation, and EDX options. Used on the cross-section SEM and
+profilers page. Tier: cross-check (vendor statement).
+
+**FEI-FIB200XP-1999** — FEI Company, *FIB workstations: FIB 200xP*, product
+page; Wayback Machine capture of 1999-01-28.
+<https://web.archive.org/web/19990128142220/http://www.feic.com:80/products/fib200xp.htm>
+A gallium focused-ion-beam workstation for milling, deposition and imaging,
+including SEM/TEM cross-section preparation on small specimens. Used on the
+cross-section SEM and profilers page. Tier: cross-check (vendor statement).
+
+**FEI-FIB800-1999** — FEI Company, *FIB workstations: FIB 800xP*, product
+page; Wayback Machine capture of 1999-04-17.
+<https://web.archive.org/web/19990417131418/http://www.feic.com:80/products/fib800xp.htm>
+A FIB for packaged parts and 8-inch wafers that sections submicron
+features, deposits metal and dielectric, and navigates by inspection-tool
+particle maps. Used on the cross-section SEM and profilers page. Tier:
+cross-check (vendor statement).
+
+**FEI-DUALBEAM-2006** — FEI Company, *DualBeam Systems*, product-type page;
+Wayback Machine capture of 2006-11-01.
+<https://web.archive.org/web/20061101125513/http://www.fei.com:80/Products/ProdTypes/DualBeamFIB/tabid/69/Default.aspx>
+The Nova, Quanta, Helios and Strata FIB/SEM families and their
+site-specific cross-sectioning and TEM preparation. Used on the
+cross-section SEM and profilers page. Tier: cross-check (vendor
+statement).
+
+**SELA-2001** — SELA, *Company Background* (conventional, automated SEM and
+automated TEM sample preparation), web page; Wayback Machine capture of
+2001-10-31. <https://web.archive.org/web/20011031233400/http://sela.com:80/about.htm>
+Cleave-and-polish cross-sections and their drawbacks, automated
+microcleaving through a targeted feature in about ten minutes, and FIB
+pre-thinning for TEM. Used on the cross-section SEM and profilers page.
+Tier: cross-check (vendor statement).
+
+**TENCOR-PROFILING-1997** — Tencor Instruments, *Surface Profiling*
+(HRP-200, P-22, P-30 SMIF, P-10, P-11, P-12, FP-20 and Alpha-Step 500),
+product page; Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302033450/http://www.tencor.com:80/products/surfaceprof.html>
+Stylus profilers for wafers and other substrates, with low-force heads,
+and the HRP-200 combining a stylus profiler with AFM-like imaging. Used on
+the cross-section SEM and profilers page. Tier: cross-check (vendor
+statement).
+
+**TENCOR-HRP200-1996** — Tencor Instruments, *Tencor Instruments Unveils
+Advanced Metrology Product for Production-Level Wafer Surface
+Characterization* (HRP-200 High Resolution Profiler), press release,
+1996-10-14; Wayback Machine capture of 1997-03-02.
+<https://web.archive.org/web/19970302033817/http://www.tencor.com:80/press/HRP_200PR.html>
+A production profiler for metal CMP (tungsten plug recess, erosion,
+dishing, ILD scratches) with 205 mm scans, 8 Å step-height repeatability
+and a 0.05 mg stylus force. Used on the cross-section SEM and profilers
+page. Tier: cross-check (vendor statement).
+
+**KLA-HRP** — KLA-Tencor, *HRPs 240/340: Automated high-resolution surface
+metrology*, product page; Wayback Machine capture of 2002-06-04.
+<https://web.archive.org/web/20020604105300/http://www.kla-tencor.com:80/products/metrology/hrps/hrps.html>
+Long-scan profilometry and high-resolution imaging for CMP and etch, with
+a dipping mode for high-aspect-ratio depths. Used on the cross-section SEM
+and profilers page. Tier: cross-check (vendor statement).
+
+**KLA-P15** — KLA-Tencor, *Profilers P-15: High Performance Surface
+Metrology*, product page; Wayback Machine capture of 2002-06-04.
+<https://web.archive.org/web/20020604110248/http://www.kla-tencor.com:80/products/metrology/profilers/profilers.html>
+A stylus profiler with 7.5 Å (1σ) repeatability that reports CMP dishing
+and erosion. Used on the cross-section SEM and profilers page. Tier:
+cross-check (vendor statement).
+
+**VEECO-STYLUS-2000** — Veeco Instruments, *Dektak Stylus Profilers*,
+product page; Wayback Machine capture of 2000-05-23.
+<https://web.archive.org/web/20000523020041/http://www.veeco.com:80/body_stylus_profilers.html>
+Dektak profilers for step heights, planarity and roughness, and etch and
+deposition uniformity on 200 mm and 300 mm wafers. Used on the
+cross-section SEM and profilers page. Tier: cross-check (vendor
+statement).
+
+**VEECO-AFM-2000** — Veeco Instruments, *Digital Instruments Atomic Force
+Microscopes (AFMs)*, product page; Wayback Machine capture of 2000-05-21.
+<https://web.archive.org/web/20000521223941/http://www.veeco.com:80/body_di_afm.html>
+The Dimension 3100, 5000 and 9000 AFMs, the last fully automated for
+in-fab metrology on 200 mm wafers. Used on the cross-section SEM and
+profilers page. Tier: cross-check (vendor statement).
+
+**WIKI-FIB** — Wikipedia, *Focused ion beam*.
+<https://en.wikipedia.org/wiki/Focused_ion_beam> Ion-beam milling,
+deposition and imaging, dual-beam FIB/SEM systems and TEM sample
+preparation. Used on the cross-section SEM and profilers page. Tier:
+high-level.
+
+**WIKI-AFM** — Wikipedia, *Atomic force microscopy*.
+<https://en.wikipedia.org/wiki/Atomic_force_microscopy> The AFM and its
+history. Used on the cross-section SEM and profilers page. Tier:
+high-level.
+
+**WIKI-PROFILOMETER** — Wikipedia, *Profilometer*.
+<https://en.wikipedia.org/wiki/Profilometer> Contact and non-contact
+surface profiling. Used on the cross-section SEM and profilers page. Tier:
+high-level.
+
+**REUSS-1985** — R. H. Reuss, "Potential applications of focused ion beam
+technology for the semiconductor industry", *Nuclear Instruments and
+Methods in Physics Research B* **10–11**, 515–521 (1985).
+<https://doi.org/10.1016/0168-583X(85)90299-X> An early survey of FIB uses
+in the semiconductor industry (bibliographic data only checked). Used on
+the cross-section SEM and profilers page. Tier: deep dive.
+
+**NIKAWA-1991** — K. Nikawa, "Applications of focused ion beam technique to
+failure analysis of very large scale integrations: A review", *Journal of
+Vacuum Science & Technology B* **9**(5), 2566–2577 (1991).
+<https://doi.org/10.1116/1.585694> FIB cross-sections of VLSI failures and
+FIB preparation methods for further analysis. Used on the cross-section
+SEM and profilers page. Tier: deep dive.
+
+**GIANNUZZI-1999** — L. A. Giannuzzi and F. A. Stevie, "A review of focused
+ion beam milling techniques for TEM specimen preparation", *Micron*
+**30**(3), 197–204 (1999). <https://doi.org/10.1016/S0968-4328(99)00005-0>
+A review of FIB milling for TEM specimens (bibliographic data only
+checked). Used on the cross-section SEM and profilers page. Tier: deep
+dive.
+
+**BENNETT-1981** — J. M. Bennett and J. H. Dancy, "Stylus profiling
+instrument for measuring statistical properties of smooth optical
+surfaces", *Applied Optics* **20**(10), 1785 (1981).
+<https://doi.org/10.1364/AO.20.001785> A stylus instrument with 1–2 Å
+height resolution and adjustable, non-marking stylus loading. Used on the
+cross-section SEM and profilers page. Tier: deep dive.
+
+**BINNIG-1986** — G. Binnig, C. F. Quate and Ch. Gerber, "Atomic Force
+Microscope", *Physical Review Letters* **56**(9), 930–933 (1986).
+<https://doi.org/10.1103/PhysRevLett.56.930> The atomic force microscope,
+combining the scanning tunnelling microscope and the stylus profilometer.
+Used on the cross-section SEM and profilers page. Tier: deep dive.
+
+**MARTIN-1994** — Y. Martin and H. K. Wickramasinghe, "Method for imaging
+sidewalls by atomic force microscopy", *Applied Physics Letters*
+**64**(19), 2498–2500 (1994). <https://doi.org/10.1063/1.111578> Sidewall
+profiles and critical dimensions of lines and trenches with a boot-shaped
+AFM tip. Used on the cross-section SEM and profilers page. Tier: deep
 dive.
 
 ## 9. Evidence about specific tools at SkyWater
