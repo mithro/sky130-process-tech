@@ -6,9 +6,10 @@ contact and via holes with tungsten. The wafer sits on a heated pedestal
 while tungsten hexafluoride is reduced first by silane, to nucleate a
 thin layer on the liner, and then by hydrogen, to grow a blanket film
 that closes every hole from its walls inward; the film on the field is
-polished away afterwards, leaving the plugs. The tools of the 200 mm era
-were either single-wafer chambers on a cluster platform or multi-station
-chambers that pass each wafer under several pedestals in turn. This page
+polished away afterwards, leaving the plugs. The main tools of the
+200 mm era were single-wafer chambers on a cluster platform and
+multi-station chambers that pass each wafer under several pedestals in
+turn. This page
 describes the class in general, lists representative 200 mm-era models,
 and then says what SkyWater has published about its own tool of this
 class and which SKY130 steps this reference assigns to it. The tungsten
@@ -34,8 +35,8 @@ technology of 1987 used "CVD-tungsten (W) and planarization", with
 "Vertical W studs" that "maximize density by reducing contact/via ground
 rules",[^kaanta-1987] and the scheme — a blanket fill followed by removal
 from the field — became the standard contact and via process of the
-aluminium generations (category page). A tungsten CVD reactor is a
-cold-wall chamber with a resistively heated pedestal, a showerhead for
+aluminium generations (category page). A tungsten CVD reactor is
+typically a cold-wall chamber with a resistively heated pedestal, a showerhead for
 WF₆, H₂, SiH₄, argon and nitrogen, and a way of keeping tungsten off the
 wafer's edge and back. What makes a machine a production tungsten tool is
 nucleation that starts reliably on the liner, a bulk fill that closes
@@ -67,9 +68,9 @@ coldwall reactors are very important".[^kleijn-1991]
 Tungsten does not start growing evenly on every surface. McConica and
 Cooper found that on oxide "The observed nucleation is autocatalytic and
 initiated by an intermediate diffusing from areas of tungsten
-deposition".[^mcconica-1988] On a contact liner the nucleation layer is
-therefore grown separately, by silane reduction, before the hydrogen
-fill (category page). Hegde et al. compared nucleation layers
+deposition".[^mcconica-1988] In a plug fill a nucleation layer is grown
+first, by silane reduction, before the hydrogen fill (category
+page). Hegde et al. compared nucleation layers
 "approximately 1000 Å thick" grown on "the TiN/Ti glue layer stack" at
 two gas-flow ratios, and found one "far smoother and less porous" and "a
 better diffusion barrier".[^hegde-1997] The liner and nucleation together

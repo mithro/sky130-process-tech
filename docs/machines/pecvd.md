@@ -318,11 +318,11 @@ These notes connect the machine class to the step pages; they add no
 SKY130 conditions of their own. SKY130's deposition temperatures,
 pressures, thicknesses and chemistries are not public.
 
-* **Thermal budget sets the class.** The step pages that choose PECVD
-  do so because of what is already on the wafer: the tips annealed
-  before the spacer oxide ({ref}`SPOX <step-080>`), TiN and tungsten
-  under the local-interconnect nitride cap ({ref}`LINIT <step-104>`)
-  and aluminium under every later film. The category page gives the
+* **Thermal budget sets the class.** Where the step pages give a
+  reason for PECVD, it is what is already on the wafer: the annealed
+  tips under the spacer oxide ({ref}`SPOX <step-080>`), TiN and tungsten
+  under the local-interconnect nitride cap ({ref}`LINIT <step-104>`),
+  and aluminium under the films from {ref}`NILD3 <step-115>` on. The category page gives the
   usual ceiling as "below about 450 °C once aluminium is
   present";[^txt-02] plasma films are made well below it, silane oxide
   at 100–340 °C in Adams et al.'s work.[^adams-1981-pecvd]
