@@ -87,6 +87,28 @@ NMOS" and "VHV DE PMOS" transistors with lengths labelled "L=0.7" and
 The `pwde` in that name matches the drawn layer of this
 mask;[^pdk-06] the pad list itself does not explain the name.
 
+The measurements of those structures published in the raw-data
+repository show the electrical behaviour expected of a lightly doped
+drift region in series with the channel, although the drain was swept to
+no more than 5 V (10 V on the symmetric 16 V structures), so they say
+nothing about breakdown. Ten 20 µm-wide `nfet_g5v0d16v0` structures with
+a 0.925 µm drawn gate ("L=0.7") have a median resistance of about 470 Ω
+at V_GS = 5 V and V_DS = 0.1 V, against 119 Ω for a 20/0.5 µm
+`nfet_g5v0d10v5`; at V_DS = 2.5 V they carry 62–71 % of their
+V_DS = 5 V current, against 95 % for the 5 V device; and their
+threshold, taken at a constant current of 100 nA × W/L, moves by
+1–6 mV per volt of drain bias against 28 mV/V (our extraction from the
+published measurements).[^raw-data-hv-mosfets] The 16 V PMOS behaves
+alike (about 725 Ω against 310 Ω at 20 µm width), and the 20 V NMOS and
+PMOS structures of modules 4441 and 4442 carry 60–70 % of their
+V_DS = 5 V current at 2.5 V.[^raw-data-hv-mosfets] The thresholds of the
+16 V NMOS (0.73–0.79 V by maximum-transconductance extrapolation) and
+its body-effect coefficient at L = 2.425 µm (0.70–0.72 √V) are close to
+those of a 7/8 µm `nfet_g5v0d10v5` (0.79–0.82 V, 0.73 √V), consistent
+with a 5 V channel to which a drain extension has been added; the data
+contain nothing about the implants that form the
+extension.[^raw-data-hv-mosfets]
+
 ## How it is typically performed
 
 An industry-generic drain-extension well lithography for a 200 mm,
@@ -174,6 +196,10 @@ An industry-generic drain-extension well lithography for a 200 mm,
 * SKY130 raw-data repository, test-tile pad documentation — the
   drain-extended transistor structures of the published test
   tile.[^raw-data-testtile-pads]
+* SKY130 raw-data repository, measured data — I–V sweeps of the 5 V,
+  16 V and 20 V transistors on the test tile; the resistances, current
+  ratios, thresholds and body-effect coefficients quoted here are our
+  extraction.[^raw-data-hv-mosfets]
 
 ### High-level understanding
 
@@ -222,7 +248,14 @@ An industry-generic drain-extension well lithography for a 200 mm,
 
 * Whether `pwde` defines the body of the 20 V NMOS, the drift region
   of the 20 V PMOS, or both, is inferred from the rule geometry; the
-  PDK's 20 V cross-section drawings are not labelled in text form.
+  PDK's 20 V cross-section drawings are not labelled in text form. The
+  test-tile pad list names the 20 V PMOS structures
+  `s8tet_s_hvp_pwde_stdnw_sti_1p5_2f_60um_IP_LVS` and variants, with
+  `pwde` in the name, and the 20 V NMOS structures (for example
+  `s8tet_s_hvn_nw_dnw_sti_3p0_IP` and
+  `s8tet_s_hvn_iso_nw_dnw_sti_2p0_esd_IP`) without it;[^raw-data-testtile-pads]
+  names need not list every layer, so this supports the PMOS reading
+  without settling the NMOS one.
 * The blank "Used in SKY130" entry for PWDEM in the PDK mask table sits
   oddly with the existence of the `pwde` layer and its rules; we treat
   it as a documentation inconsistency that cannot be resolved publicly.
@@ -329,3 +362,14 @@ An industry-generic drain-extension well lithography for a 200 mm,
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
     retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V,
+    20 V, native, zero-Vt and ESD transistors and the thick-oxide gate
+    capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_g5v0d10v5`, `pfet_g5v0d10v5`, `nfet_g5v0d16v0`,
+    `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
+    `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
+    `esd_nfet_g5v0d10v5`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
