@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1642
+written page has exactly one entry here; the inventory holds 1653
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -504,6 +504,7 @@ Also used on the ultrapure water material page.
 Also used on the hardware consumables material page.
 Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
+Also used on the precursors material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -686,6 +687,7 @@ Also used on the ultrapure water material page.
 Also used on the hardware consumables material page.
 Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
+Also used on the precursors material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -712,6 +714,7 @@ Also used on the ultrapure water material page.
 Also used on the hardware consumables material page.
 Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
+Also used on the precursors material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -1263,6 +1266,7 @@ Tier: high-level.
 Also used on the sputter targets material page.
 Also used on the anneal ambients material page.
 Also used on the dopant gases and implant sources material page.
+Also used on the precursors material page.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
 Process Integration*, Lattice Press, 1990, ISBN 978-0-9616721-4-0.
@@ -1971,6 +1975,7 @@ SUMCO. Used on the substrate category page. Tier: high-level.
 orthosilicate, the liquid precursor for CVD oxide. Used on the
 deposition category page. Tier: high-level.
 Also used on the PECVD page.
+Also used on the precursors material page.
 
 **WIKI-TERADYNE** — Wikipedia, *Teradyne*.
 <https://en.wikipedia.org/wiki/Teradyne> Company article on the
@@ -2051,6 +2056,7 @@ Also used on the substrates material page.
 hexafluoride, the CVD tungsten precursor. Used on the deposition
 category page. Tier: high-level.
 Also used on the tungsten CVD page.
+Also used on the precursors material page.
 
 ### 8.5 Papers and patents used for era-typical isolation-module values
 
@@ -3191,6 +3197,7 @@ silicon-based dielectrics: reactor design, film properties and gap-fill
 mechanisms. Used on step 011 and the deposition category page. Tier:
 deep dive.
 Also used on the HDP-CVD page.
+Also used on the precursors material page.
 
 **OCONNOR-1996** — J. P. O'Connor and N. Tokoro, "End station and beam
 line design considerations for photoresist outgassing with high energy
@@ -3261,6 +3268,7 @@ LPCVD nitride from DCS/NH₃, explaining thickness uniformity along a
 hot-wall tube. Used on step 003.
 Also used on the vertical-furnace LPCVD page.
 Tier: deep dive.
+Also used on the precursors material page.
 
 **RYUTA-1990** — J. Ryuta, E. Morita, T. Tanaka and Y. Shimanuki,
 "Crystal-Originated Singularities on Si Wafer Surface after SC1
@@ -4229,6 +4237,7 @@ properties of LPCVD silicon films as a function of deposition
 temperature. Used on the deposition category page.
 Also used on the vertical-furnace LPCVD page.
 Tier: deep dive.
+Also used on the precursors material page.
 
 **RAUPP-1992** — G. B. Raupp, T. S. Cale and H. P. W. Hey, "The role of
 oxygen excitation and loss in plasma-enhanced deposition of silicon
@@ -5539,6 +5548,7 @@ suppress. Used on step 050. Tier: high-level.
 <https://en.wikipedia.org/wiki/Silane> Silane, the poly deposition
 precursor, and its hazards. Used on step 048. Tier: high-level.
 Also used on the PECVD page.
+Also used on the precursors material page.
 
 **WONG-1988** — C. Y. Wong, J. Y. Sun, Y. Taur, C. S. Oh, R. Angelucci
 and B. Davari, "Doping of n⁺ and p⁺ polysilicon in a dual-gate CMOS
@@ -5707,6 +5717,7 @@ tetraethylorthosilicate", *Journal of Vacuum Science & Technology B*
 Low-pressure TEOS oxide deposition. Used on step 059.
 Also used on the vertical-furnace LPCVD page.
 Tier: deep dive.
+Also used on the precursors material page.
 
 **BELL-1996** — F. H. Bell and O. Joubert, "Polysilicon gate etching in
 high density plasmas. III. X-ray photoelectron spectroscopy
@@ -6367,6 +6378,7 @@ Electrochemical Society* **151**(5), G353 (2004).
 Used on steps 076 and 104.
 Also used on the vertical-furnace LPCVD page.
 Tier: deep dive.
+Also used on the precursors material page.
 
 **HUGHEY-2003** — M. P. Hughey and R. F. Cook, "Irreversible Tensile
 Stress Development in PECVD Silicon Nitride Films", *MRS Proceedings*
@@ -6796,6 +6808,7 @@ E. Smith, "Characterization of Plasma-Deposited Silicon Dioxide",
 <https://doi.org/10.1149/1.2127680> Characterisation of plasma-deposited
 silicon dioxide. Used on steps 091, 092, 096 and 105. Tier: deep dive.
 Also used on the PECVD page.
+Also used on the precursors material page.
 
 **ALVI-1986** — N. S. Alvi and D. L. Kwong, "Reflow of Phosphosilicate
 Glass by Rapid Thermal Annealing", *Journal of The Electrochemical
@@ -6858,6 +6871,7 @@ CVD Using TEOS and Ozone", *Journal of The Electrochemical Society*
 TEOS/ozone oxide at atmospheric pressure. Used on step 091. Tier: deep
 dive.
 Also used on the PECVD page.
+Also used on the precursors material page.
 
 **FUJINO-1991** — K. Fujino, Y. Nishimoto, N. Tokumasu and K. Maeda,
 "Doped Silicon Oxide Deposition by Atmospheric Pressure and Low
@@ -6866,6 +6880,7 @@ Ozone", *Journal of The Electrochemical Society* **138**(10), 3019–3024
 (1991). <https://doi.org/10.1149/1.2085358> Doped oxide from TEOS and
 ozone. Used on step 089. Tier: deep dive.
 Also used on the dopant gases and implant sources material page.
+Also used on the precursors material page.
 
 **HASHIMOTO-1977** — N. Hashimoto, Y. Yatsuda and S. Mutoh, "Glass Flow
 Mechanism of Phosphosilicate Glass and Its Application in MOS Devices",
@@ -6895,6 +6910,7 @@ Electrochemical Society* **141**(8), 2172–2177 (1994).
 <https://doi.org/10.1149/1.2055081> Integrated PECVD/ozone-TEOS films
 and their surface effects. Used on steps 091 and 105. Tier: deep dive.
 Also used on the PECVD page.
+Also used on the precursors material page.
 
 **LAN-2004** — J. K. Lan and Y. L. Wang, "Mechanism of high density
 plasma chemical vapor deposition phosphosilicate glass process without
@@ -7133,6 +7149,7 @@ Single-Wafer Reactor", *Journal of The Electrochemical Society*
 Transport phenomena in a single-wafer tungsten reactor. Used on step
 099. Tier: deep dive.
 Also used on the tungsten CVD page.
+Also used on the precursors material page.
 
 **KOERNER-1993** — H. Koerner, H. P. Erb and H. Melzner, "Evaluation of
 Ti and TiN thicknesses for tungsten plug contact metallization",
@@ -7161,6 +7178,7 @@ Electrochemical Society* **133**(12), 2542–2548 (1986).
 <https://doi.org/10.1149/1.2108468> Kinetics of LPCVD tungsten in a
 single-wafer reactor. Used on steps 099 and 110. Tier: deep dive.
 Also used on the tungsten CVD page.
+Also used on the precursors material page.
 
 **MCCONICA-1988** — C. M. McConica and K. Cooper, "Tungsten Nucleation
 on Thermal Oxide during LPCVD of Tungsten by the Hydrogen Reduction of
@@ -7194,6 +7212,7 @@ coverage*, US 6,635,965 B1, filed 2001-10-09, granted 2003-10-21.
 <https://patents.google.com/patent/US6635965B1/en> The pulsed nucleation
 layer. Used on steps 099 and 110. Tier: cross-check.
 Also used on the tungsten CVD page.
+Also used on the precursors material page.
 
 **PETRI-1998** — R. Petri, H. Hauf, D. Berenbaum, J. C. Favreau and P.
 Mazet, "Nitrogen effect on post-nucleation tungsten CVD film growth",
@@ -7598,6 +7617,7 @@ Infineon Technologies).
 R7FT-3R "Hot Al" derivative at Fab 4: 150 Å Ti / 4 200 Å Al / 300 Å TiW.
 Used on steps 112 and 117. Tier: cross-check.
 Also used on the PECVD page.
+Also used on the precursors material page.
 
 **CYP-QTP-030204** — Cypress Semiconductor, *Automotive Product
 Qualification Report, QTP# 030204: 256K Static RAM Automotive Devices,
@@ -7646,6 +7666,7 @@ dielectric constant, fluorine-doped SiO₂ for intermetal dielectric",
 low-permittivity inter-metal dielectric. Used on step 115. Tier: deep
 dive.
 Also used on the HDP-CVD page.
+Also used on the precursors material page.
 
 **DEVRIENDT-1998** — K. Devriendt, E. Vrancken, N. Heylen, J. Grillaert,
 M. Meuris, M. M. Heyns and Z. C. Lin, "Relation between Oxide-CMP
@@ -8277,6 +8298,7 @@ F. H. P. M. Habraken, W. F. van der Weg and M. Hendriks,
 composition of PECVD silicon oxynitride. Used on step 135. Tier: deep
 dive.
 Also used on the PECVD page.
+Also used on the precursors material page.
 
 **DIRKS-1992** — A. G. Dirks, R. A. M. Wolters and A. E. M. De Veirman,
 "Columnar microstructures in magnetron-sputtered refractory metal thin
@@ -9889,6 +9911,7 @@ fine powder" that deposits on cold surfaces and "may be syphoned back
 into the furnace". Used on the vertical-furnace LPCVD page. Tier:
 cross-check (patent).
 Also used on the hardware consumables material page.
+Also used on the precursors material page.
 
 **PAT-NH4CL-VLSI** — O. L. Caton, C. A. Bellows, C. M. Hebert, Jr. and
 S. J. Schaper (VLSI Technology), *Thermal trap for gaseous materials*,
@@ -9900,6 +9923,7 @@ and pumps; a trap with walls at about 140 °C and a water-cooled
 collection surface. Used on the vertical-furnace LPCVD page. Tier: deep
 dive (patent).
 Also used on the hardware consumables material page.
+Also used on the precursors material page.
 
 **PAT-LPCVD-SONY** — S. C. Persyn (Sony), *Vertical LPCVD furnace with
 reversible manifold collar and method of retrofitting same*, US 5,800,616
@@ -10470,6 +10494,7 @@ pressure"; the Giga-Fill chamber's "ceramic heater" at ">550°C" for
 "BPSG and STI applications", remote plasma clean and ">40,000" mean wafers
 between cleans. Used on the PECVD page. Tier: cross-check (vendor
 statement).
+Also used on the precursors material page.
 
 **AMAT-SIN-WP** — L. D'Cruz, C. Bencher and C. Ngai (Applied Materials),
 *PECVD SiN performance as barrier/etch stop for Damascene copper
@@ -14029,6 +14054,88 @@ industrial gases; "Toxic or flammable gas cylinders are often stored by
 end users in gas cabinets for protection from external fire or from any
 leak". Used on the dopant gases and implant sources material page. Tier:
 high-level.
+Also used on the precursors material page.
+
+#### Precursors (first cited there)
+
+**SEMI-C3-55** — SEMI, *SEMI C3.55 — Specification for Silane (SiH4),
+Bulk, 99.994% Quality*, SEMI Standards store listing (revision C3.55-1011
+(Reapproved 0218)), accessed 2026-09-13.
+<https://store-us.semi.org/products/c00355-semi-c3-55-specification-for-silane-sih4-bulk-99-994-quality>
+"specifications for silane (SiH4) that is used in the semiconductor
+industry"; covers "requirements for bulk silane (SiH4)"; "originally
+published February 2000". Used on the precursors material page. Tier:
+cross-check (standard).
+
+**SEMI-C3-12** — SEMI, *SEMI C3.12 — Specification for Ammonia (NH3) in
+Cylinders, 99.998% Quality*, SEMI Standards store listing (revision
+C3.12-0116 (Reapproved 0922)), accessed 2026-09-13.
+<https://store-us.semi.org/products/c00312-semi-c3-12-specification-for-ammonia-nh3-in-cylinders-99-998-quality>
+"specification for ammonia (NH3) that is used in the semiconductor
+industry"; revision history from "SEMI C3.12-83 (first published)". Used
+on the precursors material page. Tier: cross-check (standard).
+
+**SEMI-C70** — SEMI, *SEMI C70 — Specification for Tungsten Hexafluoride
+(WF6)*, SEMI Standards store listing (revision C70-0924), accessed
+2026-09-13.
+<https://store-us.semi.org/products/c0700-semi-c70-specification-for-tungsten-hexafluoride>
+"specifications for tungsten hexafluoride (WF6) that are used in the
+semiconductor industry"; first published as C70-0611. Used on the
+precursors material page. Tier: cross-check (standard).
+
+**NIOSH-NH3** — National Institute for Occupational Safety and Health,
+*NIOSH Pocket Guide to Chemical Hazards: Ammonia*, CDC; read from the
+Wayback Machine capture of 2026-01-08.
+<https://www.cdc.gov/niosh/npg/npgd0028.html>
+<https://web.archive.org/web/20260108051903/https://www.cdc.gov/niosh/npg/npgd0028.html>
+IDLH "300 ppm"; NIOSH REL "TWA 25 ppm (18 mg/m3) ST 35 ppm (27 mg/m3)";
+OSHA PEL "TWA 50 ppm (35 mg/m3)". Used on the precursors material page.
+Tier: cross-check (safety data).
+
+**NIOSH-DIBORANE** — National Institute for Occupational Safety and
+Health, *NIOSH Pocket Guide to Chemical Hazards: Diborane*, CDC; read from
+the Wayback Machine capture of 2026-01-22.
+<https://www.cdc.gov/niosh/npg/npgd0183.html>
+<https://web.archive.org/web/20260122103710/https://www.cdc.gov/niosh/npg/npgd0183.html>
+IDLH "15 ppm"; REL and PEL "TWA 0.1 ppm (0.1 mg/m3)"; "[Note: Usually
+shipped in pressurized cylinders diluted with hydrogen, argon, nitrogen,
+or helium.]". Used on the precursors material page. Tier: cross-check
+(safety data).
+
+**BRITTON-1990** — L. G. Britton, "Combustion hazards of silane and its
+chlorides", *Plant/Operations Progress* **9**(1), 16–38 (1990).
+<https://doi.org/10.1002/prsb.720090107> Review and new experiments on
+the combustion of silane and chlorosilanes, including sudden releases
+into air, ignition sensitivity and flame acceleration. Used on the
+precursors material page. Tier: deep dive.
+
+**WIKI-DCS** — Wikipedia, *Dichlorosilane*.
+<https://en.wikipedia.org/wiki/Dichlorosilane> "In its major use, it is
+mixed with ammonia (NH3) in LPCVD chambers to grow silicon nitride in
+semiconductor processing"; purity and toxicity. Used on the precursors
+material page. Tier: high-level.
+
+**WIKI-AMMONIA** — Wikipedia, *Ammonia*.
+<https://en.wikipedia.org/wiki/Ammonia> Properties, production and
+hazards; "regulated in the US as a non-flammable gas, but it meets the
+definition of a material that is toxic by inhalation". Used on the
+precursors material page. Tier: high-level.
+
+**WIKI-OZONE** — Wikipedia, *Ozone*. <https://en.wikipedia.org/wiki/Ozone>
+Properties, generation ("Ozone is produced in the corona discharge"),
+toxicity "above concentrations of about 0.1 ppm" and catalytic
+decomposition. Used on the precursors material page. Tier: high-level.
+
+**WIKI-SIF4** — Wikipedia, *Silicon tetrafluoride*.
+<https://en.wikipedia.org/wiki/Silicon_tetrafluoride> Properties; "This
+volatile compound finds limited use in microelectronics and organic
+synthesis"; infobox hazards "toxic, corrosive". Used on the precursors
+material page. Tier: high-level.
+
+**WIKI-DIBORANE** — Wikipedia, *Diborane*.
+<https://en.wikipedia.org/wiki/Diborane> "a highly toxic, colorless, and
+pyrophoric gas"; investigated "for the p-doping of silicon
+semiconductors". Used on the precursors material page. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
