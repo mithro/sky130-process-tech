@@ -140,7 +140,7 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Oxygen, nitrogen, forming gas (H₂/N₂)**, possibly **NH₃** (listed
+* **Oxygen, nitrogen, {ref}`forming gas <material-anneal-ambients>` (H₂/N₂)**, possibly **NH₃** (listed
   for the Iridia) or **water vapour** (not among SkyWater's listed asher
   gases), for the two-step ash;[^skw-01][^fujimura-1994] **CF₄**, listed
   on the Iridia and Mattson ashers,[^skw-01] attacks the oxide and would,
@@ -148,7 +148,7 @@ fab (SKY130's recipe is not public):
 * **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** ({ref}`wet chemicals <material-wet-chemicals>`) for SPM;
   **ammonium hydroxide** for SC-1; **hydrochloric acid** for
   SC-2.[^wiki-rca]
-* **Ultrapure DI water**, **isopropanol**, **nitrogen**.
+* **{ref}`Ultrapure DI water <material-ultrapure-water>`**, **isopropanol**, **nitrogen**.
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
   S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 

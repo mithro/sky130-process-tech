@@ -153,9 +153,9 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
 
 * **TEOS** (liquid, vaporised) with **O₂**, or **silane and
   N₂O**;[^wiki-teos][^wiki-pecvd] helium or nitrogen carrier.
-* **NF₃ or CF₄/O₂** chamber clean (PECVD); quartz ware and
+* **NF₃ or CF₄/O₂** chamber clean (PECVD); {ref}`quartz ware <material-hardware-consumables>` and
   **nitrogen** purge (LPCVD).
-* **Monitor wafers**.
+* **{ref}`Monitor wafers <material-substrates>`**.
 
 ## Related steps and cross-references
 

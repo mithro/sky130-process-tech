@@ -150,7 +150,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
   nominal 1.14 µm[^pdk-03]); suppliers named in SkyWater's 2021 S-1: Dow,
   JSR, Tokyo Ohka Kogyo.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover,
-  rinse solvents, DI water and nitrogen.
+  rinse solvents, {ref}`DI water <material-ultrapure-water>` and nitrogen.
 * **The NSDM reticle** — generated from `cnsdm` (30:0) with its
   add/drop corrections.[^pdk-06]
 
