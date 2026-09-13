@@ -106,8 +106,9 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
   BOE")[^skw-01] for SPM/SC-1. Strength: strong for existence.
 * **DNS wet bench and FSI Mercury** ("industry standard
   HF/SC1/SC2").[^skw-01] Strength: strong for existence.
-* **KLA-Tencor AIT** patterned-wafer inspection, from a SkyWater job
-  posting.[^job-01] Strength: medium.
+* **KLA-Tencor AIT** patterned-wafer inspection, our reading of "AIT"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 

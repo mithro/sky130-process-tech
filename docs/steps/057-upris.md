@@ -110,8 +110,9 @@ clean, for a 200 mm, 130 nm-era fab:
 * **DNS wet bench or FSI Mercury** ("industry standard HF/SC1/SC2")
   for a full RCA sequence, or the **Akrion Gamma** bench.[^skw-01]
   Strength: strong for existence.
-* **KLA-Tencor SP1 and AIT** inspection, from a SkyWater job
-  posting.[^job-01] Strength: medium.
+* **KLA-Tencor SP1 and AIT** inspection, our reading of "SP1" and "AIT"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 

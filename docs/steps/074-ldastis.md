@@ -117,8 +117,9 @@ An industry-generic post-implant strip and pre-anneal clean for a
   HF/SC1/SC2")[^skw-01] — the tools with the SC-2 chemistry the
   pre-anneal clean needs. Strength: strong for existence; the
   assignment is an inference from the chemistry list.
-* **KLA-Tencor AIT** patterned-wafer inspection, from a SkyWater job
-  posting.[^job-01] Strength: medium.
+* **KLA-Tencor AIT** patterned-wafer inspection, our reading of "AIT"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 
