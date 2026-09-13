@@ -101,7 +101,14 @@ variations as small as ±0.5 degrees".[^rathmell-1998]
 
 The dose is "the integral over time of the ion current", collected so
 that it "can be measured in a continuous fashion and the implant process
-stopped at the desired dose level".[^wiki-implant] In the 8250,
+stopped at the desired dose level".[^wiki-implant] The current is read
+on a Faraday cup, and ions striking the cup knock out electrons: "Escape
+of secondary and tertiary electrons from the Faraday cup body … causes a
+measurement error", so a suppression electrode is placed at the cup's
+entrance — "By negatively charging the electrostatic suppression
+electrode, the escape of electrons from the Faraday cup is inhibited",
+as a Varian patent describes the established approach, to which it adds
+magnetic suppression.[^pat-faraday-varian] In the 8250,
 "dosimetry is based on robust measurements of beam flux at the plane of
 the wafer";[^harlan-1998] the EXCEED line measures the scanned beam on
 Faraday arrays in front of and behind the wafer position and iterates
@@ -365,6 +372,8 @@ not public.
 * Tom and McManus (ATMI), US 5,518,528 — sub-atmospheric hydride
   storage for implanters, with the cylinder practice it
   replaced.[^pat-sds-atmi]
+* Bisson et al. (Varian), US 6,723,998 — Faraday cups for implanters and
+  the suppression of secondary electrons.[^pat-faraday-varian]
 
 ### High-level understanding
 
@@ -530,6 +539,10 @@ not public.
     Materials), *Storage and delivery system for gaseous hydride, halide,
     and organometallic group V compounds*, US 5,518,528 A, granted
     1996-05-21. <https://patents.google.com/patent/US5518528A/en>
+[^pat-faraday-varian]: J. Bisson, Z. Zhao, G. Gammel, D. Alvarado and
+    C. Walker (Varian Semiconductor Equipment Associates), *Faraday system
+    for ion implanters*, US 6,723,998 B2, granted 2004-04-20.
+    <https://patents.google.com/patent/US6723998B2/en>
 [^fabsurplus-e500]: Fabsurplus (SDI), *Varian E500 HP Medium Current
     Implanter* (used-equipment specification sheet, item 44950),
     accessed 2026-09-13.

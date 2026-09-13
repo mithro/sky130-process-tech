@@ -92,13 +92,15 @@ for many generations of NV-10, GSD, HE, HE3" and later
 machines.[^axcelis-history] At MeV energies residual gas does more than
 neutralise the beam: "at higher energies stripping of electrons from
 ions within the beam becomes more likely than charge neutralization",
-and stripped ions make the Faraday cup read high, so Eaton's dose
+and stripped ions make the Faraday cup (with the electron suppression
+described on the {ref}`medium-current page
+<machine-medium-current-implanter>`) read high, so Eaton's dose
 controller compensates for both effects; its examples include "P⁺¹
 850 keV at 550 µA".[^pat-dose-eaton] Single-wafer machines scan the beam:
 the VIISta 3000's electrostatic scan sweeps the beam "about 10 times
 more often than alternative (magnetic scan) approaches".[^varian-viista3000]
 
-### Resist outgassing and the end station
+### Resist outgassing, angle and charge at the end station
 
 Well implants run through thick resist and deposit their energy deep
 in it. O'Connor and Tokoro note that "special attention needs to be paid
@@ -112,6 +114,18 @@ chamber pressure is kept below 3.0 E-5 torr no observable dose shift
 could be detected".[^lee-1996] In high-energy implants "up to 50% of
 the evolved gas consists of species other than hydrogen".[^horsky-1998]
 End stations are therefore designed around the gas load.[^oconnor-1996]
+
+The end stations themselves come from other implanter lines. The batch
+NV-GSD-HE combined "the GSD end station and the LINAC
+technology";[^axcelis-history] the NV-GSD/VHE uses the "source,
+injector and end station" of the NV-GSD/HE, and Eaton claimed for both
+"excellent control over differential channeling";[^wilson-1996] the single-wafer VIISta 3000 uses "the common
+endstation and control system developed for VIISta series ion
+implanters".[^tokoro-2000] None of the high-energy sources cited here
+describes a charge-control system. Charge-up damage grows with beam
+current,[^tanjyo-2011] and well implants run at "less than a few hundred
+particle micro-amperes",[^oconnor-1996] so we infer that charging is a
+smaller concern here than on high-current tools.
 
 ## Representative 200 mm-era models
 
