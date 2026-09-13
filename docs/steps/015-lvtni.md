@@ -80,8 +80,10 @@ differences of 0.102 V and 0.095 V, against 0.101 V and 0.089 V between
 the PDK's e-test nominals. For two 7/0.15 µm structures with the same
 source/drain extent (2.5 µm) the low-Vt device carries 3.84 mA against
 3.39 mA at V_GS = V_DS = 1.8 V, 13 % more; the PDK's nominal currents
-differ by 14 % (our extraction from the published
-measurements).[^raw-data-lv-mosfets][^raw-data-testtile-pads][^pdk-07]
+differ by 14 %. In the modules that hold the e-test geometries, however,
+the 7/0.15 µm low-Vt device carries 3.30 mA against 3.40 mA (our
+extraction from the published measurements; see
+{ref}`HPETEST <step-171>`).[^raw-data-lv-mosfets][^raw-data-testtile-pads][^pdk-07]
 The low-Vt device also shows the smaller body effect: its threshold
 rises by 0.245 V for 1.8 V of reverse body bias at 7/8 µm, against
 0.299 V (our extraction).[^raw-data-lv-mosfets] Lower net channel
