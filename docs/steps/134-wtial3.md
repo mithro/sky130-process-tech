@@ -61,20 +61,16 @@ inference. The metal-3 rules are coarser than the levels
 below: 0.300 µm width and space (m3.1, m3.2), 0.240 µm² minimum area
 (m3.6), and 0.065 µm enclosure of via 2 (m3.4).[^pdk-periph]
 
-**On the name.** The step list used in this reference calls this step
-"AlCu 2/TiW deposition" — the wording it uses for every level above
-metal 1 ({ref}`TIAL12 <step-123>` discusses "AlCu 2") — but gives it
-the code `WTIAL3` where metal 2's is `TIAL12`, and the upper metals
-follow as {ref}`WTIAL4 <step-149>` and {ref}`WTIAL5 <step-161>`. The
-step list used in this reference does not explain the "W" prefix. One
-reading consistent with the public evidence is that it marks a stack
-whose bottom layer is TiW
-rather than Ti — the S8DI thick metal 3 of the 2014 report is
-"500A TiW/…/300A TiW",[^cyp-qtp-123907] and an older Fab 4 process
-used "TiW, AlCu, TiW" at 500/6 000/300 Å[^cyp-qtp-030204] — while the
-S8TNV report's 150 Å Ti bottom layer[^cyp-qtp-113005] argues the
-other way for the thin version. We record the reading as an
-inference and describe the bottom layer as "Ti or TiW".
+**On the bottom layer.** The public evidence allows a TiW bottom
+layer as well as a Ti one: the S8DI thick metal 3 of the 2014 report
+is "500A TiW/…/300A TiW",[^cyp-qtp-123907] and an older Fab 4 process
+used "TiW, AlCu, TiW" at 500/6 000/300 Å,[^cyp-qtp-030204] while the
+S8TNV report's 150 Å Ti bottom layer[^cyp-qtp-113005] points to
+titanium for the thin version. The step list used in this reference
+does not explain its labels for this and the upper metal stacks
+({ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>`), and they are not
+taken here as evidence either way. We describe the bottom layer as
+"Ti or TiW" (inference).
 
 ## Step category
 
@@ -315,8 +311,8 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
 
 ## Open questions
 
-* The step list used in this reference does not explain the "W"
-  prefix of `WTIAL3` (and `WTIAL4`, `WTIAL5`); a TiW bottom layer is
+* Whether the metal-3 bottom layer is Ti or TiW is not public; the
+  S8TNV report gives Ti,[^cyp-qtp-113005] and a TiW bottom layer is
   our inference from the S8DI and RAM42HA stack
   descriptions.[^cyp-qtp-123907][^cyp-qtp-030204]
 * Whether the SKY130 metal 3 is the 0.765 µm Ti/AlCu/TiW stack of the

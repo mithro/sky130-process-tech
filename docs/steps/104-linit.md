@@ -15,8 +15,8 @@
 `LINIT` deposits a thin, conformal silicon nitride over the patterned
 {term}`local interconnect`: over the tops and sidewalls of the TiN lines of
 {ref}`LI1ME <step-103>`, the exposed {term}`cap oxide` between them, and any
-tungsten-plug tops the lines leave uncovered. The step code reads
-"LI nitride", and the PDK names the film: the process stack diagram
+tungsten-plug tops the lines leave uncovered. The PDK names the
+film: the process stack diagram
 labels the dielectric directly above `li` "LINT K=7.3" and
 dimensions it 0.075 µm.[^pdk-04] The relative permittivity is that
 of silicon nitride (7–7.5; the {ref}`SPNIT <step-076>` {term}`spacer` nitride
@@ -243,8 +243,8 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
   PECVD reading is an inference from the materials present and
   SkyWater's capability list.
 * Whether the film is opened by the `mcon` etch itself or by a
-  separate nitride step is not shown by the step list used in this
-  reference (see {ref}`CTME <step-108>`).
+  separate nitride etch is not stated publicly (see
+  {ref}`CTME <step-108>`).
 * Whether a pre-treatment removes the TiN surface oxide before the
   nitride is deposited is not public.
 
