@@ -129,7 +129,7 @@ fab (SKY130's recipe is not public):
 
 * **{ref}`Rotary multi-platen CMP polisher <machine-cmp-polisher>`**, 200 mm: Applied Materials Mirra and Mirra
   Mesa,[^amat-1997][^chiphistory-mirra] Ebara F-REX,[^ebara-frex]
-  SpeedFam-IPEC Avanti 472, Strasbaugh 6EC (category page).
+  SpeedFam-IPEC Avanti 472, Strasbaugh 6DS-SP (category page).
 * **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam DSS-200, Applied Mesa
   integrated cleaner).
 * **Optical film-thickness mapper**; **stylus profiler**;
