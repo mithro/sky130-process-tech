@@ -134,9 +134,8 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    the fluorocarbon polymer from the hole walls (the step SkyWater's
    "Mattson Aspen2, RF plasma, O2, CF4, H2>N2" or "Gasonic PEP"
    ashers could also perform[^skw-01]); the resist itself is
-   stripped and the wafer wet-cleaned — the step list used in this
-   reference has no separate strip step here, so we read the strip
-   as part of this step or of {ref}`SACETCH <step-095>`.
+   stripped and the wafer wet-cleaned — this reference treats the
+   strip as part of this step or of {ref}`SACETCH <step-095>`.
 6. **Metrology.** Contact {term}`CD` top and bottom by {term}`CD-SEM`; cross-section
    SEM for profile, taper and residue during development; electrical
    contact-chain resistance at {ref}`category-test` structures
@@ -258,9 +257,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 * The etch chemistry, tool, endpoint and over-etch are not public;
   SkyWater's list names no dedicated dielectric etcher, so which
   tool performs the contact etch is an open question.
-* Whether the resist strip and post-etch clean are part of this
-  step, of {ref}`SACETCH <step-095>`, or of a step not separately
-  listed, is not stated by the step list used in this reference.
+* Whether the resist strip and post-etch clean are done in this
+  step, in {ref}`SACETCH <step-095>`, or separately is not stated
+  publicly.
 * The oxide thickness at the bottom of the diffusion contacts
   ({ref}`SPOX <step-080>` plus any {ref}`IOX45 <step-063>` residue)
   that the over-etch must clear is not public.

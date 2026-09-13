@@ -34,11 +34,9 @@ tables give poly 48 200 mΩ/sq (48.2 Ω/sq), N-diffusion
 heavily doped but *unsilicided* poly and diffusion — and a per-contact
 resistance of 15 000 mΩ (15 Ω) for a licon.[^pdk-08] The
 {ref}`P1I <step-050>` page draws the same conclusion from the poly
-value. Combined with the step name, the position of the anneal —
-after the {term}`liner` and before the tungsten — and the absence of any
-silicide-metal deposition or selective strip elsewhere in the step
-list used in this reference, we infer a *contact-only* titanium
-silicide. SkyWater lists "Ti and Co Silicide" among its special
+value. On that evidence this reference describes a *contact-only*
+titanium silicide, formed by an anneal after the {term}`liner` and
+before the tungsten (inference). SkyWater lists "Ti and Co Silicide" among its special
 modules,[^skw-01] which shows the capability without saying which
 metal or which scheme SKY130 uses.
 
@@ -147,8 +145,8 @@ fab (SKY130's recipe is not public):
   ({ref}`category-test`) as the electrical proof.
 * **Alternative.** Some flows omit a separate silicide anneal and let
   the tungsten deposition temperature (400–450 °C) and later
-  anneals form the silicide in place; the existence of a named step
-  here argues against that for SKY130 (inference).
+  anneals form the silicide in place; which SKY130 does is not stated
+  publicly, and this reference describes a separate anneal.
 
 ## Machines typically used
 
@@ -163,9 +161,10 @@ fab (SKY130's recipe is not public):
 
 * **AG Associates Heatpulse 8808.** SkyWater lists "Ag Heatpulse
   8808 NH3, Ar, N2, O2, up to 1200C".[^skw-01] Strength: **strong**
-  for the tool; assignment to `CSIL` is an **inference** from the
-  step code, though silicide formation is a listed application of
-  the family: reseller documentation gives a 400–1200 °C range and
+  for the tool; assignment to `CSIL` is an **inference** from its
+  being the only RTA on SkyWater's list, and silicide formation is a
+  listed application of the family: reseller documentation gives a
+  400–1200 °C range and
   "Programmable, 1 – 180°C per second" ramp-up,[^ag-8800] the family
   specification PDF the same range for the 8108,[^ag-8108] and a
   vendor blog post describes the 8800/8108 family.[^plasmatherm-ag]
@@ -260,9 +259,7 @@ fab (SKY130's recipe is not public):
 ## Open questions
 
 * That SKY130 uses a contact-only titanium silicide rather than a
-  salicide is our inference from the PDK's sheet resistances; the
-  step names and order used in this reference are consistent with
-  it.
+  salicide is our inference from the PDK's sheet resistances.
 * The anneal temperature, time, ambient and whether it is one or two
   soaks are not public.
 * The silicide thickness and its consumption of the 0.1 µm junction

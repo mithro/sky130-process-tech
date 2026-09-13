@@ -20,14 +20,11 @@ structural — to seal the doped glass, to re-bury whatever the polish
 exposed, and to provide the clean, undoped oxide that the
 local-interconnect contacts ({ref}`LICM1E <step-094>`) will be
 etched through first and that the {term}`local interconnect`
-({ref}`LITIN <step-101>`) will lie on. The step-name pattern recurs
-at every metal level of the flow — {ref}`NCAPOX3 <step-117>`,
-{ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`,
-{ref}`NCAPOX6 <step-158>` each follow an inter-level oxide and its
-polish — so we read the "N" prefix as the dielectric-level naming
-the PDK uses for `NILD2`…`NILD6`[^pdk-04] and "CAPOX" as "cap oxide"
-(inference; the step list used in this reference does not expand
-the code).
+({ref}`LITIN <step-101>`) will lie on. This reference describes a
+similar cap after each inter-level oxide and its polish at the metal
+levels — {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`,
+{ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>` — above the
+dielectrics the PDK names `NILD2`…`NILD6`.[^pdk-04]
 
 The PDK does not name the cap separately. On our reading of the
 stack diagram, the cap is part of the interval it labels "PSG" —
@@ -141,8 +138,8 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
   the abbreviation; SkyWater gives only "C2") and an Applied
   Materials Producer.[^skw-01] Strength: **strong** for the
   existence of a PECVD TEOS process on those tools; assignment to
-  `NCAPOX` is an **inference** from the step name and the film's
-  role.
+  `NCAPOX` is an **inference** from the film's role (an undoped oxide
+  over doped glass) and industry practice.
 * **"C1" PECVD silane oxide.**[^skw-01] Strength: strong for
   existence; medium for this step — a silane oxide is an equally
   plausible cap.
@@ -230,8 +227,6 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 * Whether the cap is deposited directly on the polished gate caps
   (the {ref}`CMPP <step-090>` cap-stop reading) or on residual PSG
   is not public.
-* The expansion of the step code `NCAPOX` as "cap oxide" at
-  dielectric level N is our reading of the code.
 
 <!-- footnotes -->
 

@@ -21,13 +21,12 @@ recipe described below; SKY130's own conditions are not public — so that
 the amorphous layers regrow, the dopant moves onto lattice sites, the
 end-of-range damage is dissolved as far as it can be, and the
 junctions reach their designed depth — the PDK's 0.1 µm for "N+ or P+
-S/D (XJ)"[^pdk-03] — and no further. The step code reads as "RTA,
-drain", by analogy with {ref}`RTAI <step-034>` and
-{ref}`TIPRTAD <step-075>`, and the public evidence for a rapid
-thermal anneal is good (below). It is the third of the four RTAs in
-the flow; the fourth, {ref}`RTAD2 <step-092>`, is a second
-"RTA source drain anneal" that the step list used in this reference
-places after the sacrificial PSG, the polish and the {term}`cap oxide`.
+S/D (XJ)"[^pdk-03] — and no further. This reference describes it,
+like {ref}`RTAI <step-034>` and {ref}`TIPRTAD <step-075>`, as a rapid
+thermal anneal, and the public evidence for that is good (below). It
+is the third of the four RTAs described in this reference; the
+fourth, {ref}`RTAD2 <step-092>`, is a second source/drain anneal
+placed after the sacrificial PSG, the polish and the {term}`cap oxide`.
 
 On the reading of the {ref}`NPCM <step-078>` page, the anneal is also
 the thermal step that finishes the doping of the poly heads opened at
@@ -85,8 +84,8 @@ temperature and time a compromise, as the category page explains:
   highest activation is obtained by annealing hot and fast; the most
   *stable* activation may not be, which is one reading of why a second
   source/drain anneal ({ref}`RTAD2 <step-092>`) exists in this flow
-  (inference from the step order used in this reference; no public
-  source explains it). Camillo-Castillo et al. studied what a two-step
+  (inference; no public source describes a second anneal).
+  Camillo-Castillo et al. studied what a two-step
   anneal does to end-of-range defects.[^camillo-castillo-2002]
 
 Josse et al. describe optimising the spike anneal for a 0.13 µm CMOS
@@ -148,8 +147,8 @@ An industry-generic source/drain activation anneal for a 200 mm,
   of minutes[^txt-01] would activate the dopant but drive the
   junctions far beyond 0.1 µm and defeat the extensions;
   "Increasingly, furnace anneals are being supplanted by Rapid
-  Thermal Anneal".[^wiki-furnace] The step code and the evidence
-  below make an RTA the only plausible reading.
+  Thermal Anneal".[^wiki-furnace] The 0.1 µm junction depth and the
+  evidence below make an RTA the only plausible reading (inference).
 
 ## Machines typically used
 
@@ -166,9 +165,10 @@ An industry-generic source/drain activation anneal for a 200 mm,
   Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] — a
   single-wafer RTA with the inert ambients and the temperature reach
   this step needs. Strength: **strong** for the tool (SkyWater
-  statement); assignment to `RTAD` is an **inference** from the step
-  code, though a source/drain activation is the archetypal use of
-  such a tool: reseller documentation for the Heatpulse 8800/8808
+  statement); assignment to `RTAD` is an **inference** from its being
+  the only RTA on SkyWater's list, and a source/drain activation is
+  the archetypal use of such a tool: reseller documentation for the
+  Heatpulse 8800/8808
   family gives "Recommended steady-state temperature range: 400 –
   1200°C", ramp-up "Programmable, 1 – 180°C per second", "2 banks of
   14 lamps" with "10-zone lamp control" and lists "Implant annealing"
@@ -296,9 +296,8 @@ An industry-generic source/drain activation anneal for a 200 mm,
   {ref}`RTAD2 <step-092>` after the PSG and polish — is not public;
   the activation-stability reading above is an inference.
 * Whether the Heatpulse 8808 runs this step is inferred from the
-  step code and the tool's published capability.[^skw-01][^ag-8800]
-* The expansion of `RTAD` ("RTA, drain"?) is our reading of the
-  code.
+  tool's published capability and its being the only RTA on
+  SkyWater's list.[^skw-01][^ag-8800]
 * The reseller's specification PDF cited for the Heatpulse
   family[^ag-8108] documents the Heatpulse 4100, 8108, 8800 and 8800i, not the 8808 itself;
   the 8808's own data sheet is not public.

@@ -26,8 +26,8 @@ implanted before the spacer ({ref}`ASTI <step-065>`,
 stripped at {ref}`NSDIS <step-087>` and the dopant activated at
 {ref}`RTAD <step-088>`.
 
-Unlike the p-type side, the n-type side has a single implant in the
-step list used in this reference. What the PDK says about the result
+Unlike the p-type side, the n-type side is described in this
+reference with a single implant. What the PDK says about the result
 is the same as for the P⁺ junction: an "N+ or P+ S/D (XJ)" vertical
 feature of 0.1 µm and a vertical space of 0.06 µm,[^pdk-03] a
 high-current implant angle of 0°,[^pdk-03] and an N-diffusion sheet

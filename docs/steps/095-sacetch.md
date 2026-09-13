@@ -14,10 +14,10 @@
 
 `SACETCH` — "sacrificial etch" — sits between the contact etch
 ({ref}`LICM1E <step-094>`) and the {term}`alloy anneal` ({ref}`ALLY1 <step-096>`)
-that precedes the titanium {term}`liner`. Its name says that something
-*sacrificial* is removed; the step list used in this reference does
-not say what. No public source describes it. What is certain is its
-position: the contact holes are open, the resist has been (or is
+that precedes the titanium {term}`liner`. The step list used in this
+reference does not explain what the etch removes; we read it from its
+position and from public cleaning practice. At this point in the
+sequence the contact holes are open, the resist has been (or is
 being) stripped, and the next two steps are a hydrogen anneal and
 the sputtering of titanium onto the silicon and poly at the bottom
 of every hole. Whatever this etch removes, it is the last wet or dry
@@ -26,8 +26,8 @@ treatment those surfaces receive before metal meets them, and the
 before silicidation" performed in dilute HF, the same class as
 {ref}`TUNME <step-039>` and {ref}`GOXETCH <step-046>`.
 
-Three readings fit the name and position; we set them out and mark
-all three as inferences:
+Three readings fit that position; we set them out and mark all three
+as inferences:
 
 1. **Removal of the sacrificial oxide at the contact bottoms.** On
    the reading of the {ref}`SPOX <step-080>` and {ref}`LICM1E <step-094>`
@@ -49,9 +49,8 @@ all three as inferences:
    but a low-temperature chemical oxide is possible.
 3. **A sacrificial-layer etch in the resist sense.** The resist and
    the {term}`BARC` of {ref}`LICM1 <step-093>` are also sacrificial,
-   and if the step list folds their removal into this step — no
-   separate strip step is listed — the name could cover the
-   strip-and-clean sequence. This reading is compatible with either
+   and if their removal is folded into this step, the step could
+   cover the strip-and-clean sequence. This reading is compatible with either
    of the first two.
 
 On all three readings the chemistry that matters is a dilute
@@ -160,7 +159,9 @@ fab (SKY130's recipe is not public):
   industry standard HF/SC1/SC2" and "FSI Mercury industry standard
   HF/SC1/SC2 rotational" under pre-clean.[^skw-01] Strength:
   **strong** for the existence of dilute-HF cleaning; assignment to
-  `SACETCH` is an **inference** from the step name and position.
+  `SACETCH` is an **inference** from its position before the liner
+  and from the HF-last pre-metal clean of the cleaning
+  literature.[^kern-1990]
 * **SEZ 223 / Lam DaVinci.** Single-wafer "HF, DSP+HF, titration
   controlled".[^skw-01] Strength: strong for existence; medium for a
   contact-hole clean.
@@ -245,9 +246,10 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* What "sacrificial" refers to — the {term}`screen oxide` at the contact
+* What this etch removes — the {term}`screen oxide` at the contact
   bottoms, a deliberately formed post-etch oxide, or the resist and
-  BARC — is not public; all three readings above are inferences.
+  BARC — is not stated publicly; all three readings above are
+  inferences.
 * The chemistry (dilute HF or BOE, concentration, time), the tool
   and whether the step includes the resist strip are not public.
 * Whether a chemical oxide is deliberately left on the contact
