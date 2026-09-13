@@ -120,7 +120,7 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
    Overlay budgets and how alignment-mark placement limits them are
    treated by Levinson[^levinson-2005] and by van Haren et
    al.[^van-haren-2019]
-5. **Post-exposure bake, develop** in 2.38 % TMAH,[^txt-02] rinse,
+5. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse,
    hard bake.
 6. **Inspection.** Overlay to `TUNM` (inferred), {term}`CD` of the islands, and
    after-develop inspection for resist residue on the open stack, which
@@ -151,7 +151,7 @@ etch).
 * **i-line photoresist** (Dow, JSR, TOK are SkyWater's named
   suppliers[^sec-01]), **HMDS**, optional **inorganic or organic
   ARC**.[^pat-03]
-* **TMAH developer** (2.38 %),[^txt-02] edge-bead remover, DI water,
+* **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, DI water,
   nitrogen.
 * **The ONO reticle** — chrome on quartz; relaxed features.
 

@@ -117,7 +117,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
    enclosure) and, for the butting edges and the resistor rule, to
    poly and to the `PSDM` pattern; Levinson treats the allocation of
    such multi-reference overlay budgets.[^levinson-2005]
-5. **Develop** in 0.26 N TMAH,[^txt-02] rinse, dry; hard bake or UV
+5. **Develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse, dry; hard bake or UV
    cure against the implant, the outgassing of thick resist under
    implantation having been measured by Lee et al.[^lee-1996] and
    Horsky.[^horsky-1998]
@@ -148,7 +148,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 * **Positive i-line (DNQ/novolac) photoresist**, about 1 µm (PDK
   nominal 1.14 µm[^pdk-03]); suppliers named in SkyWater's S-1: Dow,
   JSR, Tokyo Ohka Kogyo.[^sec-01]
-* **HMDS**, **0.26 N TMAH developer**,[^txt-02] edge-bead remover,
+* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover,
   rinse solvents, DI water and nitrogen.
 * **The NSDM reticle** — generated from `cnsdm` (30:0) with its
   add/drop corrections.[^pdk-06]

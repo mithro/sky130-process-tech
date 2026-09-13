@@ -114,7 +114,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
    the resist edge at the array boundary must stand back from the
    outermost gates by the tip's shadowing allowance (compare the
    0.16 µm "NTM shadowing").[^pdk-03]
-5. **Develop** in 0.26 N TMAH,[^txt-02] rinse, dry; a post-develop
+5. **Develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse, dry; a post-develop
    bake or UV cure to stabilise the resist against two implants
    (industry practice).[^txt-02]
 6. **Inspection.** {term}`Overlay <overlay>` to poly; after-develop defect inspection.
@@ -142,7 +142,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   (inferred); SkyWater's S-1 names The Dow Chemical Company, JSR
   Corporation and Tokyo Ohka Kogyo America as photoresist
   suppliers.[^sec-01]
-* **HMDS**, **0.26 N TMAH developer**,[^txt-02] edge-bead remover, DI
+* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, DI
   water, nitrogen.
 * **The LDNTM {term}`reticle`** — generated from the drawn `ldntm` layer as
   `cldntm`.[^pdk-06]
