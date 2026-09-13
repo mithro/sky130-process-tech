@@ -4,15 +4,16 @@
 A *mask level* is one pattern in the stack of patterns that builds an
 integrated circuit. For each level a {term}`reticle` — a fused-silica
 plate carrying a chromium image of one layer of the layout, drawn
-larger than it will print on the wafer (4× is the ITRS 2001 mask
-magnification for the 130 nm generation)[^wiki-mask][^itrs-03] — is
-projected onto a photoresist-coated wafer. The developed resist then
-serves as a stencil for an etch, or as a {term}`block mask` for an
-implant, and is removed afterwards. The coat–expose–develop sequence,
+four or five times larger than it will print on the wafer[^wiki-mask]
+(4× is the ITRS 2001 mask magnification for the 130 nm
+generation[^itrs-03]) — is projected onto a photoresist-coated wafer.
+The developed resist then serves as a stencil for an etch, or as a
+{term}`block mask` for an implant, and is removed afterwards. The coat–expose–develop sequence,
 its tools and its consumables are described on the
 {ref}`Photolithography (mask step) <category-lithography>` category
-page; this page is an index that ties each mask step of the flow to
-what the open SKY130 process design kit publishes about the mask.
+page; this page is an index that ties each mask step of the step list
+used in this reference to what the open SKY130 process design kit
+publishes about the mask.
 
 ## What the PDK publishes
 
@@ -76,9 +77,9 @@ The step list used in this reference ({ref}`steps-index`) contains 36
 mask (lithography) steps, from {ref}`FOM <step-004>` to
 {ref}`PDM <step-168>`. Each is followed by the etch, implant and strip
 steps that use its resist pattern, before the next deposition,
-oxidation or mask step. For 33 of the 36, the step code is identical
-to an acronym in `masks.csv`, and that match is what the second column
-reports; three mask steps have no entry.
+oxidation, anneal or mask step. For 33 of the 36, the step code is
+identical to an acronym in `masks.csv`, and that match is what the
+second column reports; three mask steps have no entry.
 
 In the table:
 
@@ -333,15 +334,16 @@ reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
   the drawn layers (apart from the `hvntm` note), nor what the
   `drawing`, `mask add`, `mask drop` and `waffle drop` purposes
   contribute when they sit on a different layer number from the `mask`
-  purpose (`cp1m` 28:0 against 33:42–33:43, for example).[^pdk-06] The pairings marked *(inference)* rest on the
-  step pages' readings.
+  purpose (`cp1m` 28:0 against 33:42–33:43, for example).[^pdk-06] The
+  pairings marked *(inference)* rest on the step pages' readings.
 * `masks.csv` leaves the `Used in SKY130` field blank for `PWBM`,
-  `PWDEM` and `CAPM` and has no entry for the masks of
+  `PWDEM` and `CAPM` and has no entry matching the
   {ref}`RRPM <step-052>`, {ref}`URPM <step-055>` and
-  {ref}`CAP2M <step-152>`, although the drawn layers exist and, for
-  the first three, rule sets and Table F2b columns do
-  too.[^pdk-05][^pdk-06][^pdk-periph] The PDK does not explain the
-  difference.
+  {ref}`CAP2M <step-152>` mask steps of this reference, although the
+  layers their step pages pair them with (`rpm`, `urpm`, `cap2m`) exist
+  and, for `PWBM`, `PWDEM` and `CAPM`, rule sets and Table F2b columns
+  exist too.[^pdk-05][^pdk-06][^pdk-periph] The PDK does not explain
+  the difference.
 * `HVTRM` is marked, with a mask-level layer, a drawn layer and a
   minimum CD, but has no mask step here; the PDK's layer description
   ("High-Vt RF transistor implant") and rule-set function line ("Define
@@ -357,9 +359,12 @@ reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
 * Table 2 of *Criteria & Assumptions* has no unit column;[^pdk-03] the
   µm reading rests on agreement with the periphery rules.
 * No PDK document gives the resist tone, reticle type (binary or
-  phase-shift), use of OPC or exposure tool for any mask; the step
-  pages and the {ref}`lithography category page <category-lithography>`
-  give industry-generic readings.
+  phase-shift) or exposure tool for any mask. `gds_layers.csv` has an
+  `areaid.op` identifier (81:54, "OPC drop. Block automatic OPC (for
+  fab blocks and lithocal structures)"), which implies that automatic
+  OPC is applied, but not to which masks;[^pdk-06] the step pages and
+  the {ref}`lithography category page <category-lithography>` give
+  industry-generic readings.
 
 <!-- footnotes -->
 
