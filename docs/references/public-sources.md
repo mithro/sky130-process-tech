@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1368
+written page has exactly one entry here; the inventory holds 1381
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -481,6 +481,7 @@ Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner, coat/develop track and CD-SEM and overlay metrology pages.
 Also used on the starting-material machine page.
 Also used on the single-wafer spin processor machine page.
+Also used on the CMP polisher machine page.
 Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
@@ -646,6 +647,7 @@ Also used on the PVD cluster tool page.
 Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
 Also used on the starting-material machine page.
+Also used on the CMP polisher machine page.
 Tier: cross-check.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
@@ -1305,6 +1307,7 @@ Mechanical Planarization: Slurry Chemistry, Materials, and
 Mechanisms"*, Chemical Reviews, vol. 110, no. 1, pp. 178–204, 2010,
 DOI 10.1021/cr900170z. Oxide, tungsten and copper CMP chemistry. Tier:
 deep dive.
+Also used on the CMP polisher machine page.
 
 **REV-03** — E. K. Broadbent and C. L. Ramiller, *"Selective Low
 Pressure Chemical Vapor Deposition of Tungsten"*, Journal of The
@@ -1467,6 +1470,7 @@ NMOS on the p-substrate, PMOS in an N-well. Used on steps 017, 018 and
 <https://en.wikipedia.org/wiki/Chemical-mechanical_polishing> Pads,
 conditioners, abrasives, endpoint and REB + CMP for STI. Used on step
 012 and the cmp category page. Tier: high-level.
+Also used on the CMP polisher machine page.
 
 **WIKI-COLLOIDAL-SILICA** — Wikipedia, *Colloidal silica*.
 <https://en.wikipedia.org/wiki/Colloidal_silica> Colloidal silica, the
@@ -3134,6 +3138,7 @@ Manufacturing* **11**(1), 129–140 (1998).
 <https://doi.org/10.1109/66.661292> Rapid characterisation and modelling
 of pattern-dependent CMP variation, the basis of density-based fill
 rules. Used on step 012 and the cmp category page. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **STONEY-1909** — G. G. Stoney, "The tension of metallic films deposited
 by electrolysis", *Proceedings of the Royal Society of London A*
@@ -3248,6 +3253,7 @@ Springer, 2004, ISBN 978-3-540-43181-9.
 <https://doi.org/10.1007/978-3-662-06234-0> Chapter-level treatments of
 dielectric CMP, endpoint and post-CMP cleaning. Used on step 012 and the
 cmp category page. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **REINHARDT-2008** — K. A. Reinhardt and W. Kern (eds.), *Handbook of
 Silicon Wafer Cleaning Technology*, 2nd ed., William Andrew, 2008, ISBN
@@ -3286,6 +3292,7 @@ Materials*, Wiley, 1997, ISBN 978-0-471-13827-6.
 <https://doi.org/10.1002/9783527617746> The standard CMP textbook:
 Preston's law, pads, slurries and process control. Used on step 012 and
 the cmp category page. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **SUN-2017** — T. Sun, Z. Han and M. Keswani, "Brush Scrubbing for
 Post-CMP Cleaning", in *Developments in Surface Contamination and
@@ -3316,6 +3323,7 @@ system for chemical mechanical polishing*, US 5,738,574 A, granted
 1998-04-14. <https://patents.google.com/patent/US5738574A/en> The
 multi-platen "continuous processing" CMP architecture of the Mirra
 family. Used on step 012. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **PAT-CMP-WINDOW** — M. Birang, A. Gleason and W. L. Guthrie (Applied
 Materials), *Forming a transparent window in a polishing pad for a
@@ -3323,6 +3331,7 @@ chemical mechanical polishing apparatus*, US 5,893,796 A, granted
 1999-04-13. <https://patents.google.com/patent/US5893796A/en> A
 transparent window in the pad for in-situ optical endpoint detection.
 Used on step 012. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **PAT-CORNER-TOSHIBA** — K. Horioka, H. Okano and H. Nishino (Toshiba
 Corporation), *Method of manufacturing semiconductor devices including
@@ -4774,6 +4783,7 @@ nitride plasma etcher and metal plasma etcher pages.
 Also used on the PECVD, HDP-CVD, tungsten CVD and PVD cluster tool
 pages.
 Also used on the CD-SEM and overlay metrology page.
+Also used on the CMP polisher machine page.
 Tier: cross-check.
 
 **AMAT-RTP** — EDN, *Applied dedicates RTP with Vantage*, 2002-09-23
@@ -4830,6 +4840,7 @@ chemical mechanical polishing: theory and modeling", *IEEE Transactions
 on Semiconductor Manufacturing* **14**(2), 112–133 (2001).
 <https://doi.org/10.1109/66.920723> The abrasive-contact model of
 material removal. Used on the cmp category page. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **OUMA-2002** — D. O. Ouma, D. S. Boning, J. E. Chung, W. G. Easter et
 al., "Characterization and modeling of oxide chemical-mechanical
@@ -4843,12 +4854,14 @@ Used on the cmp category page. Tier: deep dive.
 polishing machines", *Journal of the Society of Glass Technology*
 **11**, 214–256 (1927). The Preston removal-rate law; no online copy is
 known. Used on the cmp category page. Tier: cross-check.
+Also used on the CMP polisher machine page.
 
 **RUNNELS-1994** — S. R. Runnels and L. M. Eyman, "Tribology Analysis of
 Chemical-Mechanical Polishing", *Journal of The Electrochemical Society*
 **141**(6), 1698–1701 (1994). <https://doi.org/10.1149/1.2054985> A
 tribology (fluid-film) analysis of the wafer–pad contact. Used on the
 cmp category page. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **STEIN-1999** — D. Stein, D. L. Hetherington and J. L. Cecchi,
 "Investigation of the Kinetics of Tungsten Chemical Mechanical Polishing
@@ -4857,6 +4870,7 @@ Iodate", *Journal of The Electrochemical Society* **146**(1), 376–381
 (1999). <https://doi.org/10.1149/1.1391617> Kinetics of tungsten CMP:
 the roles of alumina abrasive and oxidiser. Used on the cmp category
 page. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **ZANTYE-2004** — P. B. Zantye, A. Kumar and A. K. Sikder, "Chemical
 mechanical planarization for microelectronics applications", *Materials
@@ -4864,6 +4878,7 @@ Science and Engineering: R* **45**(3–6), 89–220 (2004).
 <https://doi.org/10.1016/j.mser.2004.06.002> A long review of CMP for
 microelectronics, including Preston deviations and slurry consumption.
 Used on the cmp category page. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 ##### Books and book chapters
 
@@ -4881,6 +4896,7 @@ apparatus for chemical-mechanical polishing*, US 5,433,651 A, granted
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5433651>
 In-situ optical endpoint detection through a window in the platen. Used
 on the cmp category page. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **PAT-CMP-IBM-1988** — M. M. Chow, J. E. Cronin, W. L. Guthrie, C. W.
 Kaanta et al. (IBM), *Method for producing coplanar multi-level
@@ -4904,11 +4920,13 @@ Applied Materials*.
 <https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>
 The Mirra polisher in its historical context: integrated endpoint and
 cleaning. Used on the cmp category page. Tier: cross-check.
+Also used on the CMP polisher machine page.
 
 **EBARA-FREX** — EBARA Precision Machinery Europe, *CMP Tools*
 (F-REX200M2). <https://www.ebara-pm.eu/systems/cmp-tools/> The
 F-REX200M2 200 mm CMP tool. Used on the cmp category page. Tier:
 cross-check.
+Also used on the CMP polisher machine page.
 
 ##### University and course pages
 
@@ -6575,6 +6593,7 @@ Used on step 089. Tier: deep dive.
 *Journal of Electronic Materials* **27**(10), 1073–1081 (1998).
 <https://doi.org/10.1007/s11664-998-0140-1> Endpoint detection for CMP.
 Used on steps 090, 100 and 106. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **CHEN-2002-PSG** — S. Chen, C.-Y. Fu, S.-M. Jang, C.-H. Yu and M.-S.
 Liang, "Plasma damage reduction for high density plasma CVD
@@ -6679,6 +6698,7 @@ chemical-mechanical polishing: a review", *IEEE Transactions on
 Semiconductor Manufacturing* **8**(4), 382–389 (1995).
 <https://doi.org/10.1109/66.475179> The removal-rate law and a review of
 CMP models. Used on steps 090 and 106. Tier: deep dive.
+Also used on the CMP polisher machine page.
 
 **NGUYEN-1990** — S. Nguyen, D. Dobuzinsky, D. Harmon, R. Gleason and S.
 Fridmann, "Reaction Mechanisms of Plasma- and Thermal-Assisted Chemical
@@ -7168,6 +7188,7 @@ for metal CMP*, US 5,958,288 A, filed 1996-11-26, granted 1999-09-28.
 <https://patents.google.com/patent/US5958288A/en> A
 peroxide/ferric-catalyst tungsten slurry. Used on step 111. Tier:
 cross-check.
+Also used on the CMP polisher machine page.
 
 **PAT-HCM-NOVELLUS** — K. F. Lai et al. (Novellus Systems), *Apparatus and
 method for controlling plasma uniformity across a substrate*, US
@@ -11302,6 +11323,123 @@ Processes", *IEEE Transactions on Semiconductor Manufacturing* **24**(4),
 charging in a single-wafer wet spin tool modelled as charge advection by
 the liquid's shear flow. Used on the single-wafer spin processor machine
 page. Tier: deep dive.
+
+**AMAT-MIRRA-500-2000** — Applied Materials, *Applied Materials Ships
+500th Mirra CMP System; Success of the Mirra System Ranks Applied
+Materials as the World's Leading Supplier of CMP Systems*, press release,
+2000-02-22.
+<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-ships-500th-mirra-cmp-system-success-mirra/>
+The 500th Mirra, "the industry's largest installed base of multi-platen
+CMP tools", introduced in December 1995, with Mesa cleaning and film
+metrology added and the Mirra Mesa introduced in 1999. Used on the CMP
+polisher machine page. Tier: cross-check (vendor statement).
+
+**AMAT-MESA-1999** — Applied Materials, *Applied Materials Announces New
+Mirra Mesa System to Address Market Demand for Integrated CMP Solutions*,
+press release, 1999-06-10.
+<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-mirra-mesa-system-address-market>
+The Mirra Mesa, polishing and cleaning on one dry-in/dry-out system; the
+Mesa cleaner's megasonic module, two double-sided brush scrubber stations
+and spin rinse dryer, vertical edge-gripped wafers, on-board chemical
+mixing, HF in the brush modules and heated RCA chemistries in the
+megasonic module. Used on the CMP polisher machine page. Tier:
+cross-check (vendor statement).
+
+**IPEC-472-1997** — IPEC-Planar, *AVANTI 472*, product page; Wayback
+Machine capture of 1997-06-26.
+<https://web.archive.org/web/19970626104141/http://www.ipec.com:80/planar/472.html>
+IPEC-Planar's third-generation polisher: single-wafer, two-step polishing
+for wafers up to 200 mm, oxide and metal processes, APP1000 pad profiling,
+slurries of pH 2–12, slurry pumps to 1000 ml/min, platen temperature
+control and a two-platen buff. Used on the CMP polisher machine page.
+Tier: cross-check (vendor statement).
+
+**IPEC-676-1997** — IPEC-Planar, *IPEC AvantGaard 676 Highlights*,
+product page; Wayback Machine capture of 1997-06-26.
+<https://web.archive.org/web/19970626104827/http://www.ipec.com:80/planar/676-spec.html>
+Feature list of the AvantGaard 676: four polishing modules, integrated
+post-CMP spray-box cleaning, through-the-pad slurry delivery and endpoint
+capability. Used on the CMP polisher machine page. Tier: cross-check
+(vendor statement).
+
+**SPEEDFAM-IPEC-2001** — SpeedFam-IPEC CMP Group, *Products* (Momentum,
+Auriga, AvantGaard), product page; Wayback Machine capture of 2001-04-12.
+<https://web.archive.org/web/20010412141846/http://www.ipec.com:80/cmp/products.htm>
+The Momentum (orbital and rotational heritage, four platens, zonal
+carrier, integrated metrology with predictive process adjustment,
+integrated cleaner) for 0.18 µm and 0.13 µm; the Auriga family with
+optical endpoint, dual-station box cleaner, PVA brush boxes, megasonic
+option and spin rinse dryer; the AvantGaard 776. Used on the CMP polisher
+machine page. Tier: cross-check (vendor statement).
+
+**STRASBAUGH-6DS-1999** — Strasbaugh, *The 6DS-SP Series Planarizers*,
+product page; Wayback Machine capture of 1999-02-10.
+<https://web.archive.org/web/19990210100559/http://www.strasbaugh.com:80/cmp1.htm>
+A dual-spindle production polisher processing two wafers at once, with
+polish force to 500 lb, integrated cleaning options and optional dual
+tables, post-CMP scrubber and on-line thickness measurement. Used on the
+CMP polisher machine page. Tier: cross-check (vendor statement).
+
+**STRASBAUGH-6EC-1999** — Strasbaugh, *The Model 6EC Laboratory
+Planarizer*, product page; Wayback Machine capture of 1999-02-10.
+<https://web.archive.org/web/19990210113246/http://www.strasbaugh.com:80/cmp2.htm>
+The 6EC as a semi-automatic "Laboratory Planarizer" for CMP research and
+small-quantity production, sharing carriers and conditioner with the
+production tool. Used on the CMP polisher machine page. Tier: cross-check
+(vendor statement).
+
+**LAM-INTEGRA-1999** — Lam Research, *Lam Research Corporation Ships
+100th Synergy Integra Integrated CMP Cleaning System*, press release,
+1999-06-17.
+<https://newsroom.lamresearch.com/1999-06-17-Lam-Research-Corporation-Ships-100th-Synergy-IntegraTM-Integrated-CMP-Cleaning-System>
+The Synergy Integra (introduced 1997) combining polisher and cleaner on
+one platform to avoid slurry drying on the wafer, integrated with six
+polisher suppliers including Lam's Teres; chemical mechanical cleaning
+technology; more than 750 OnTrak cleaners installed. Used on the CMP
+polisher machine page. Tier: cross-check (vendor statement).
+
+**LAM-CLEAN-1000-2001** — Lam Research, *Lam Research Ships 1,000th
+Post-CMP Clean System To Philips*, press release, 2001-02-14.
+<https://investor.lamresearch.com/2001-02-14-Lam-Research-Ships-1,000th-Post-CMP-Clean-System-To-Philips>
+A Synergy Integra on a Teres polisher for post-CMP clean after
+direct-polish STI; all Synergy Integra systems use double-sided scrubbing
+and chemical mechanical cleaning, with an open architecture for other
+polishers. Used on the CMP polisher machine page. Tier: cross-check
+(vendor statement).
+
+**PAT-CARRIER-AMAT** — S. M. Zuniga, M. Birang, H. Chen and S.-H. Ko
+(Applied Materials), *Carrier head with a flexible membrane for a
+chemical mechanical polishing system*, US 6,183,354 B1, filed 1997-05-21,
+granted 2001-02-06. <https://patents.google.com/patent/US6183354B1/en>
+Why a non-uniform carrier load gives non-uniform removal, and a carrier
+head with a flexure-mounted flexible membrane, gimbal and retaining ring.
+Used on the CMP polisher machine page. Tier: deep dive.
+
+**PAT-LINEAR-LAM** — A. K. Pant, D. W. Young, G. Travis, K. Volodarsky,
+A. Nagengast et al. (Lam Research), *Polishing head for chemical
+mechanical polishing using linear planarization technology*, US 6,425,812
+B1, filed 1999-12-30, granted 2002-07-30.
+<https://patents.google.com/patent/US6425812B1/en> Rotary and linear
+polishers compared, the Teres as the example of a linear belt polisher
+with a fluid platen, and a diaphragm head that limits horizontal carrier
+movement. Used on the CMP polisher machine page. Tier: deep dive.
+
+**KWON-2013** — T.-Y. Kwon, M. Ramachandran and J.-G. Park, "Scratch
+formation and its mechanism in chemical mechanical planarization (CMP)",
+*Friction* **1**(4), 279–305 (2013).
+<https://doi.org/10.1007/s40544-013-0026-y> A review of scratch formation
+against process conditions and consumables, scratch inspection, and
+filtration and water-jet spraying to reduce scratches. Used on the CMP
+polisher machine page. Tier: deep dive.
+
+**OLLENDORF-2004** — H. Ollendorf, S. Cabral and R. Fuller, "Reduction of
+CMP μ-scratch induced metal shorts by introduction of a post CMP tungsten
+plasma clean process in a high volume DRAM manufacturing environment",
+*2004 IEEE/SEMI Advanced Semiconductor Manufacturing Conference and
+Workshop*, pp. 1–4. <https://doi.org/10.1109/ASMC.2004.1309523>
+Tungsten-filled microscratches from tungsten CMP shorting lines, removed
+by a plasma etch after the polish. Used on the CMP polisher machine page.
+Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
