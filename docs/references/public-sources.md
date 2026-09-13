@@ -69,6 +69,8 @@ the silicon surface under poly, oxide spacer 0.05 µm, pre-LI ILD
 0.5 µm, photoresist 1.14 µm, metal 1 minimum width/space 0.14 µm,
 contact (`mcon`) drawn CD 0.17 µm and "standard contact bottom CD" 0.09 µm, licon bottom CD 0.08 µm, via 0.15 µm.
 Also used on the medium-current and high-current implanter pages.
+Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
+scanner and coat/develop track pages.
 Tier: cross-check.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
@@ -369,7 +371,10 @@ landing page, the steps index and every step page; the mask index uses
 "Run Mask IDs" for the reticle-set IDs, plate IDs and plate numbers of
 each run, "Masks" for the mask-step list, "Sheet4" for the mask-type
 codes and "Random Mask Case Label Info" for the blank size and "4X"
-type field. Tier: cross-check.
+type field.
+Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
+or scanner pages.
+Tier: cross-check.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -472,6 +477,8 @@ nitride plasma etcher, metal plasma etcher, downstream plasma asher and
 wet bench and spray processor pages.
 Also used on the PECVD, HDP-CVD, tungsten CVD and PVD cluster tool
 pages.
+Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
+scanner, coat/develop track and CD-SEM and overlay metrology pages.
 Tier: cross-check (SkyWater statement).
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
@@ -512,7 +519,9 @@ Tier: high-level.
 Engineer"* (R&D/OPC engineer profile), 2024-09-04.
 <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-engineer/>.
 Names "the ASML TWINSCAN lithography tool" and "the game-changing
-Multibeam direct-write tool". Tier: cross-check (tool naming).
+Multibeam direct-write tool".
+Also used on the DUV (KrF, 248 nm) stepper or scanner page.
+Tier: cross-check (tool naming).
 
 **SKW-07** — SkyWater Technology, *"A Day in the Life of a SkyWater
 Maintenance Technician"*, 2023-12-14.
@@ -631,6 +640,8 @@ millimeter Wafer Fabs". Note: SEC.gov rejects fetches without a
 descriptive `User-Agent`.
 Also used on the dielectric and nitride plasma etcher page.
 Also used on the PVD cluster tool page.
+Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
+scanner and coat/develop track pages.
 Tier: cross-check.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
@@ -1202,6 +1213,7 @@ generations.
 Also used on the rapid thermal processor and plasma nitridation chamber
 pages.
 Also used on the tungsten CVD page.
+Also used on the DUV (KrF, 248 nm) stepper or scanner page.
 Tier: high-level.
 
 **TXT-06** — S. M. Sze (ed.), *VLSI Technology*, 2nd ed., McGraw-Hill,
@@ -1257,7 +1269,9 @@ Al versus Cu, dielectric k, via/metal dimensions by node. Tier: deep dive.
 
 **ITRS-03** — ITRS 2001, *Lithography*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>.
-Exposure tools and wavelengths (i-line, 248 nm, 193 nm) by node. Tier:
+Exposure tools and wavelengths (i-line, 248 nm, 193 nm) by node.
+Also used on the CD-SEM and overlay metrology page.
+Tier:
 deep dive.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
@@ -1425,7 +1439,9 @@ high-level.
 **WIKI-CD** — Wikipedia, *Critical dimension*.
 <https://en.wikipedia.org/wiki/Critical_dimension> Critical dimension:
 the smallest printed feature and how it is measured. Used on the
-lithography category page. Tier: high-level.
+lithography category page.
+Also used on the CD-SEM and overlay metrology page.
+Tier: high-level.
 
 **WIKI-CERIA** — Wikipedia, *Cerium(IV) oxide*.
 <https://en.wikipedia.org/wiki/Cerium(IV)_oxide> Cerium(IV) oxide, the
@@ -1478,7 +1494,9 @@ and the oxidation category page. Tier: high-level.
 **WIKI-DNQ** — Wikipedia, *Diazonaphthoquinone*.
 <https://en.wikipedia.org/wiki/Diazonaphthoquinone> Diazonaphthoquinone,
 the photoactive compound of i-line novolac resists. Used on the
-lithography category page. Tier: high-level.
+lithography category page.
+Also used on the i-line stepper or scanner page.
+Tier: high-level.
 
 **WIKI-DOPANT** — Wikipedia, *Dopant*.
 <https://en.wikipedia.org/wiki/Dopant> Dopants in silicon: group III and
@@ -1507,7 +1525,9 @@ the etch category page. Tier: high-level.
 **WIKI-EXCIMER** — Wikipedia, *Excimer laser*.
 <https://en.wikipedia.org/wiki/Excimer_laser> Excimer lasers, the KrF
 (248 nm) and ArF (193 nm) sources of DUV steppers. Used on the
-lithography category page and step 159. Tier: high-level.
+lithography category page and step 159.
+Also used on the DUV (KrF, 248 nm) stepper or scanner page.
+Tier: high-level.
 
 **WIKI-FG** — Wikipedia, *Forming gas*.
 <https://en.wikipedia.org/wiki/Forming_gas> The 5 % H₂ in N₂ mixture and
@@ -1585,6 +1605,7 @@ category page. Tier: high-level.
 **WIKI-KLA** — Wikipedia, *KLA Corporation*.
 <https://en.wikipedia.org/wiki/KLA_Corporation> The inspection and
 metrology vendor. Used on the lithography and substrate category pages.
+Also used on the CD-SEM and overlay metrology page.
 Tier: high-level.
 
 **WIKI-LATCHUP** — Wikipedia, *Latch-up*.
@@ -1600,6 +1621,8 @@ implants. Used on steps 030, 031 and 032. Tier: high-level.
 <https://en.wikipedia.org/wiki/Photolithography> The process sequence,
 the resolution equation and wavelengths. Used on steps 004, 007, 014,
 017, 022, 026, 030, 035, 041 and 044 and the lithography category page.
+Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
+scanner and coat/develop track pages.
 Tier: high-level.
 
 **WIKI-LOCOS** — Wikipedia, *LOCOS*.
@@ -1804,7 +1827,10 @@ on the implant category page. Tier: high-level.
 **WIKI-STEPPER** — Wikipedia, *Stepper*.
 <https://en.wikipedia.org/wiki/Stepper> Steppers and step-and-scan
 systems: reduction optics, alignment and overlay. Used on the
-lithography category page. Tier: high-level.
+lithography category page.
+Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
+or scanner pages.
+Tier: high-level.
 
 **WIKI-STI** — Wikipedia, *Shallow trench isolation*.
 <https://en.wikipedia.org/wiki/Shallow_trench_isolation> The three STI
@@ -1864,7 +1890,9 @@ Tier: high-level.
 **WIKI-TMAH** — Wikipedia, *Tetramethylammonium hydroxide*.
 <https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>
 Tetramethylammonium hydroxide, the standard aqueous resist developer.
-Used on the lithography category page. Tier: high-level.
+Used on the lithography category page.
+Also used on the coat/develop track page.
+Tier: high-level.
 
 **WIKI-VARIAN** — Wikipedia, *Varian Semiconductor*.
 <https://en.wikipedia.org/wiki/Varian_Semiconductor> Company article on
@@ -2118,7 +2146,9 @@ LITHIUS Pro™ Z" as "TEL's most advanced 300mm coater/developer for the
 10nm technology node and beyond" and the original "CLEAN TRACK™
 LITHIUS™" as "a 300/200mm coater/developer". Used on the machines index
 to explain why SkyWater's "TEL ProZ Lithius track" is not identified
-with a model. Tier: cross-check (vendor statement).
+with a model.
+Also used on the coat/develop track page.
+Tier: cross-check (vendor statement).
 
 **PHOTRONICS-ABR** — Photronics, Inc., *Advanced Binary Reticle*,
 product page, retrieved 2026-09-13.
@@ -2218,7 +2248,9 @@ and J. L. Adams (Zilog), granted 2003-06-10.
 <https://patents.google.com/patent/US6576405B1/en>. Resist "minimum
 thicknesses of 3.4 µm … with the preferred thickness for the resist
 between 3.8 µm and 4.2 µm" for a 1.3–1.5 MeV phosphorus N-well and a
-600–800 keV boron P-well. Tier: deep dive.
+600–800 keV boron P-well.
+Also used on the i-line stepper or scanner page.
+Tier: deep dive.
 
 **PAT-DEMOS-TI** — US 6,660,603 B2, *"Higher voltage drain extended
 MOS transistors with self-aligned channel and drain extensions"*,
@@ -2501,11 +2533,15 @@ Tier: deep dive.
 **MACK-2007** — C. Mack, *Fundamental Principles of Optical
 Lithography: The Science of Microfabrication*, Wiley, 2007,
 ISBN 978-0-470-01893-4, DOI 10.1002/9780470723876. k₁, resist profiles,
-thick-resist imaging. Tier: deep dive.
+thick-resist imaging.
+Also used on the i-line stepper or scanner and coat/develop track pages.
+Tier: deep dive.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
-Overlay budgets and non-critical-layer tool choice. Tier: deep dive.
+Overlay budgets and non-critical-layer tool choice.
+Also used on the i-line stepper or scanner page.
+Tier: deep dive.
 
 **ROCHE-1985** — D. Roche, J. F. Michaud and M. Bruel, *"Outgassing of
 Photoresist During Ion Implantation"*, MRS Proceedings, vol. 45, 1985,
@@ -4109,18 +4145,25 @@ category page. Tier: deep dive.
 holding", *Proc. SPIE* **6520**, 652004 (2007).
 <https://doi.org/10.1117/12.720631> A history of optical lithography
 tools from contact printers to scanners. Used on the lithography
-category page. Tier: deep dive.
+category page.
+Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
+or scanner pages.
+Tier: deep dive.
 
 **BRUNNER-1991** — T. A. Brunner, "Optimization of optical properties of
 resist processes", *Proc. SPIE* **1466**, 297–308 (1991).
 <https://doi.org/10.1117/12.46410> Optimising resist-stack optical
 properties: swing curves and anti-reflective layers. Used on the
-lithography category page. Tier: deep dive.
+lithography category page.
+Also used on the coat/develop track page.
+Tier: deep dive.
 
 **DAMMEL-1993** — R. R. Dammel, *Diazonaphthoquinone-based Resists*,
 SPIE Tutorial Texts TT11, SPIE Press, 1993.
 <https://doi.org/10.1117/3.2265072> The SPIE tutorial text on i-line
-resist chemistry. Used on the lithography category page. Tier: deep
+resist chemistry. Used on the lithography category page.
+Also used on the i-line stepper or scanner and coat/develop track pages.
+Tier: deep
 dive.
 
 **ITO-1983** — H. Ito and C. G. Willson, "Chemical amplification in the
@@ -4134,7 +4177,10 @@ Photoinitiators to the Design of Resists for Semiconductor
 Manufacturing", *ACS Symposium Series* **242**, 11–23 (1984).
 <https://doi.org/10.1021/bk-1984-0242.ch002> The chemically amplified
 resist concept applied to semiconductor manufacturing. Used on the
-lithography category page. Tier: deep dive.
+lithography category page.
+Also used on the DUV (KrF, 248 nm) stepper or scanner and coat/develop
+track pages.
+Tier: deep dive.
 
 **LEVENSON-1982** — M. D. Levenson, N. S. Viswanathan and R. A. Simpson,
 "Improving resolution in photolithography with a phase-shifting mask",
@@ -4147,7 +4193,9 @@ critical parameter for submicron lithography", *Journal of Vacuum
 Science & Technology B* **5**(1), 293–298 (1987).
 <https://doi.org/10.1116/1.583886> Focus as the critical parameter for
 submicron lithography, and its budget. Used on the lithography category
-page. Tier: deep dive.
+page.
+Also used on the i-line stepper or scanner page.
+Tier: deep dive.
 
 **LIN-1986** — B. J. Lin, "Where Is The Lost Resolution?", *Proc. SPIE*
 **633**, 44 (1986). <https://doi.org/10.1117/12.963701> Where the
@@ -4158,6 +4206,7 @@ Used on the lithography category page. Tier: deep dive.
 Circuits and Devices Magazine* **9**(2), 28–35 (1993).
 <https://doi.org/10.1109/101.200850> A tutorial on alternating and
 attenuated phase-shift masks. Used on the lithography category page.
+Also used on the DUV (KrF, 248 nm) stepper or scanner page.
 Tier: deep dive.
 
 **LIN-2002** — B. J. Lin, "The k₃ coefficient in nonparaxial λ/NA
@@ -4165,7 +4214,9 @@ scaling equations for resolution, depth of focus, and immersion
 lithography", *Journal of Micro/Nanolithography, MEMS, and MOEMS*
 **1**(1), 7–12 (2002). <https://doi.org/10.1117/1.1445798> The k₁ and k₃
 coefficients and the nonparaxial scaling equations for resolution and
-depth of focus. Used on the lithography category page. Tier: deep dive.
+depth of focus. Used on the lithography category page.
+Also used on the DUV (KrF, 248 nm) stepper or scanner page.
+Tier: deep dive.
 
 **MACK-1988** — C. A. Mack, "Understanding Focus Effects In
 Submicrometer Optical Lithography", *Optical Engineering* **27**(12)
@@ -4189,14 +4240,18 @@ Tier: deep dive.
 and mark asymmetry effects", *Optical Engineering* **31**(6), 1298
 (1992). <https://doi.org/10.1117/12.56172> Accuracy of overlay
 measurements and tool-induced shift. Used on the lithography category
-page. Tier: deep dive.
+page.
+Also used on the CD-SEM and overlay metrology page.
+Tier: deep dive.
 
 **TOLPYGO-2014** — S. K. Tolpygo et al., "Fabrication Process and
 Properties of Fully-Planarized Deep-Submicron Nb/Al-AlOx/Nb Josephson
 Junctions for VLSI Circuits", arXiv:1408.5829 (2014) — describes a Canon
 FPA-3000EX4 248 nm stepper with 5× reduction and NA 0.6.
 <https://arxiv.org/abs/1408.5829> A Canon FPA-3000EX4 described in use.
-Used on the lithography category page. Tier: cross-check.
+Used on the lithography category page.
+Also used on the DUV (KrF, 248 nm) stepper or scanner page.
+Tier: cross-check.
 
 **WALLRAFF-1999** — G. M. Wallraff and W. D. Hinsberg, "Lithographic
 Imaging Techniques for the Formation of Nanoscopic Features", *Chemical
@@ -4210,7 +4265,10 @@ lithography category page. Tier: deep dive.
 **LEVINSON-2019** — H. J. Levinson, *Principles of Lithography*, 4th
 ed., SPIE Press, 2019, ISBN 978-1-5106-2760-4.
 <https://doi.org/10.1117/3.2525393> Tools, resists, overlay and
-metrology in one volume. Used on the lithography category page. Tier:
+metrology in one volume. Used on the lithography category page.
+Also used on the DUV (KrF, 248 nm) stepper or scanner and CD-SEM and
+overlay metrology pages.
+Tier:
 high-level.
 
 ##### Patents
@@ -4231,18 +4289,25 @@ and steps 129, 144 and 159 for the abbreviation for a binary mask. Tier: cross-c
 **ASML-30** — ASML, *Three decades of PAS 5500*, 2021.
 <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 ASML's own account of the PAS 5500 platform's three-decade lifetime.
-Used on the lithography category page. Tier: cross-check.
+Used on the lithography category page.
+Also used on the i-line stepper or scanner page.
+Tier: cross-check.
 
 **ASML-750E** — ASML, *ASML introduces KrF lithography scanner* (PAS
 5500/750E), press release, 2000-04-04.
 <https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>
 130 nm resolution at 248 nm, NA 0.7, 120 wafers per hour. Used on the
-lithography category page. Tier: cross-check.
+lithography category page.
+Also used on the DUV (KrF, 248 nm) stepper or scanner page.
+Tier: cross-check.
 
 **ASML-800** — ASML, *ASML introduces new KrF Step & Scan system* (PAS
 5500/800), press release, 2001-01-31.
 <https://www.asml.com/en/news/press-releases/2001/asml-introduces-new-krf-step-and-scan-system-that-extends>
-NA 0.80, 120 nm resolution. Used on the lithography category page. Tier:
+NA 0.80, 120 nm resolution. Used on the lithography category page.
+Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
+or scanner pages.
+Tier:
 cross-check.
 
 **CHIPHISTORY-PAS5500** — Chip History Center, *PAS 5500/400 Step & Scan
@@ -4256,13 +4321,17 @@ summary).
 <https://www.gcemarket.com/gce/gce.nsf/products/kla-tencor-8100xp-cd-sem-7expup>
 Marketplace specification summary for the KLA-Tencor 8100XP CD-SEM
 (accelerating voltage and resolution). Used on the lithography category
-page. Tier: cross-check.
+page.
+Also used on the CD-SEM and overlay metrology page.
+Tier: cross-check.
 
 **MICROCHEMICALS-DEV** — MicroChemicals, *Development of photoresists*,
 application note.
 <https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>
 TMAH developer strength and practice. Used on the lithography category
-page. Tier: cross-check.
+page.
+Also used on the coat/develop track page.
+Tier: cross-check.
 
 **NIKON-S204B** — Nikon, *NSR-S204B 248 nm Scanner Exposure System
 Overview* (specification summary, reseller copy), attached to the
@@ -4271,7 +4340,10 @@ listing Tara Semiconductor Technology, *Used 2002 NIKON S204 Scanner*
 <https://f.machineryhost.com/fc49306d97602c8ed1be1dfbf0835ead/aa008f2897d7d4a224ff92839b4299e9/SpecSummary_LITV25-01_NSR-S204B.pdf>,
 <https://www.tarasemi.com/listings/5223879-used-2002-nikon-s204-scanner>
 Field size, NA and wavelength of the NSR-S204B KrF scanner. Used on the
-lithography category page. Tier: cross-check.
+lithography category page.
+Also used on the DUV (KrF, 248 nm) stepper or scanner and coat/develop
+track pages.
+Tier: cross-check.
 
 **SEMIMARKET-S9200** — Legacy Semi, *Hitachi S-9200 CD-SEM* (listing).
 <https://www.semimarket.com/item/hitachi-s-9200-cd-sem/42724>
@@ -4282,13 +4354,16 @@ cross-check.
 **TEL-ACT** — Tokyo Electron, *Coater/Developer ACT Series*, product
 page. <https://www.tel.com/product/act.html> TEL product page for the
 ACT coater/developer family. Used on the lithography category page.
+Also used on the coat/develop track page.
 Tier: cross-check.
 
 **TEL-ACT8** — Semiconductor Online, *CLEAN TRACK ACT 8 System for
 Spin-On Dielectric (SOD) Applications*.
 <https://www.semiconductoronline.com/doc/clean-track-act-8-system-for-spin-on-dielectr-0001>
 Introduction date and throughput of the CLEAN TRACK ACT 8. Used on the
-lithography category page. Tier: cross-check.
+lithography category page.
+Also used on the coat/develop track page.
+Tier: cross-check.
 
 ##### University and course pages
 
@@ -4679,6 +4754,7 @@ Also used on the silicon and polysilicon plasma etcher, dielectric and
 nitride plasma etcher and metal plasma etcher pages.
 Also used on the PECVD, HDP-CVD, tungsten CVD and PVD cluster tool
 pages.
+Also used on the CD-SEM and overlay metrology page.
 Tier: cross-check.
 
 **AMAT-RTP** — EDN, *Applied dedicates RTP with Vantage*, 2002-09-23
