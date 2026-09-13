@@ -44,9 +44,10 @@ two (lvtn.9).[^pdk-periph] Unlike `lvtn`, whose rule heading says it
 *blocks* an implant, `hvtp` is described as the *region that receives*
 the implant, so we read the reticle polarity as straightforward: resist
 is removed over `hvtp`. That reading is an inference from the layer
-description; one public derivation of the mask from the MPW tape-out
-layouts builds it from `nwell`, `hvi` and `lvtn` without `hvtp`
-({ref}`masks-derivations`).
+description; one public reconstruction of the mask from the MPW
+tape-out layouts, which cites no source, renders it as (`nwell` NOT
+`hvi`) NOT `lvtn`, without `hvtp`
+({ref}`masks-derivations`).[^mask-renders]
 
 ## Step category
 
@@ -150,6 +151,9 @@ fab:
 * SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
 * SkyWater, Form S-1 (2021) — photoresist, gas and chemical
   suppliers.[^sec-01]
+* *SKY130 Open MPW mask-layer renders* — one public reconstruction of
+  the `HVTPM` mask from the MPW tape-out layouts, without
+  `hvtp`.[^mask-renders]
 
 ### High-level understanding
 
@@ -287,3 +291,13 @@ fab:
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
+    directory: `README.md`, `masks.html`, the run pages `mpw-001.html` to
+    `mpw-008.html`, and for each run × mask directory the page,
+    `job.json`, `result.json` and per-die slot JSON files, retrieved
+    2026-09-13. Run pages are `mpw-00N.html`; each render's page is
+    `<run>_<mask>/<run>_<mask>.html` (for example
+    `mpw-001_TUNM/mpw-001_TUNM.html`). Rendered from the public shuttle
+    repositories under
+    <https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>.
+    <https://data.wafer.space/big-storage/sky130-masks/>
