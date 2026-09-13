@@ -165,7 +165,8 @@ and the pre-oxidation clean as part of those steps (see the
   Strength: strong for existence; which track serves the i-line tools
   is not public.
 * **Metrology — AMAT Verity/VeraSEM CD-SEM; KLA 5200/5300/Archer
-  overlay.**[^skw-01] Strength: strong.
+  overlay.**[^skw-01] Strength: strong for
+  existence (SkyWater statement); use at this mask is an inference.
 * **Defect inspection — KLA-Tencor AIT**, from a SkyWater job
   posting.[^job-01] Strength: medium.
 

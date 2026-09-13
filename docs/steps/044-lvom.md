@@ -149,7 +149,8 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 * **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
   Strength: strong for existence.
 * **KLA 5200/5300/Archer overlay; AMAT Verity/VeraSEM CD.**[^skw-01]
-  Strength: strong.
+  Strength: strong for existence (SkyWater statement); use at this
+  mask is an inference.
 
 ## Resources required
 
