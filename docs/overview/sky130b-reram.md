@@ -11,7 +11,7 @@ support is what distinguishes variant B from variant A".[^opdks-makefile]
 The variant has existed since open_pdks version 1.0.269.[^opdks-readme]
 SkyWater's own description of the device is a separate documentation
 set and library, `sky130_fd_pr_reram`, marked "SkyWater Provided" and
-"Initial documentation only release", which states that "a HfO2-based
+"Initial documentation only release",[^reram-index] which states that "a HfO2-based
 RRAM layer is fabricated within the BEOL process" and that "This
 technology is still under development".[^reram-background]
 
@@ -485,6 +485,8 @@ the tier needs:[^skw-01]
 
 ### Cross-check
 
+* SkyWater, `sky130_fd_pr_reram` documentation index — "SkyWater
+  Provided", "Initial documentation only release".[^reram-index]
 * SkyWater, `sky130_fd_pr_reram` *Background* — HfO₂-based RRAM in the
   BEOL; FORM, SET, RESET, read; the 1T1R cell.[^reram-background]
 * SkyWater, `sky130_fd_pr_reram` *Technology Specifications* — forming
@@ -618,6 +620,9 @@ the tier needs:[^skw-01]
     1293–1301, 4194, 4821–4842, 5303–5336 and 5421–5547, commit 1689ac3,
     accessed 2026-09-13.
     <https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/magic/sky130.tech>
+[^reram-index]: SkyWater PDK Authors, *sky130_fd_pr_reram - SKY130
+    ReRAM (SkyWater Provided)*, documentation index page, accessed
+    2026-09-13. <https://sky130-fd-pr-reram.readthedocs.io/en/latest/>
 [^reram-background]: SkyWater PDK Authors, *Background*,
     `sky130_fd_pr_reram` — SKY130 ReRAM (SkyWater Provided)
     documentation, accessed 2026-09-13.
