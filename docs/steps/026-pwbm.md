@@ -92,7 +92,9 @@ two well edges meet in the isolation between NMOS and PMOS.
 
 CMOS needs a P-type body for its NMOS: "The N device is manufactured on
 a p-type substrate",[^wiki-cmos] but a 130 nm process cannot use the
-lightly doped substrate (8 × 10¹⁴ cm⁻³ background)[^pdk-03] as it comes
+lightly doped substrate (the PDK lists an 8 × 10¹⁴ cm⁻³ background
+concentration among its n-well entries, without calling it the wafer
+doping)[^pdk-03] as it comes
 — it needs a *{term}`retrograde P-well <retrograde well>`* with a peak of 4 × 10¹⁷ cm⁻³ at 0.42 µm
 depth[^pdk-03] for {term}`punch-through`, isolation and latch-up control (see
 {ref}`PWI <step-027>`). That implant must be kept out of the N-wells,
