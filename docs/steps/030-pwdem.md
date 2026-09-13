@@ -93,7 +93,7 @@ drift region in series with the channel, although the drain was swept to
 no more than 5 V (10 V on the symmetric 16 V structures), so they say
 nothing about breakdown. Ten 20 µm-wide `nfet_g5v0d16v0` structures with
 a 0.925 µm drawn gate ("L=0.7") have a median resistance of about 470 Ω
-at V_GS = 5 V and V_DS = 0.1 V, against 119 Ω for a 20/0.5 µm
+at V_GS = 5 V and V_DS = 0.1 V (from the I_D–V_D sweeps), against 119 Ω for a 20/0.5 µm
 `nfet_g5v0d10v5`; at V_DS = 2.5 V they carry 62–71 % of their
 V_DS = 5 V current, against 95 % for that device and 96 % for a
 1/1 µm `nfet_g5v0d10v5`, whose 3.2 kΩ at the same bias corresponds to
