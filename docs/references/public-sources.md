@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1317
+written page has exactly one entry here; the inventory holds 1338
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -10545,11 +10545,12 @@ scanning repeatability. Used on the i-line stepper or scanner page. Tier:
 deep dive.
 
 **CHU-1999** — R. Chu, C. Hsu and T. Hwang, "Characterizing lens
-distortion to overlay accuracy by using fine measurement pattern", *Proc.
-SPIE* **3677**, 83 (1999). <https://doi.org/10.1117/12.350790> Fine-pattern
-overlay targets against box-in-box targets; lens aberration causing over
-15 nm of overlay displacement. Used on the i-line stepper or scanner page.
-Tier: deep dive.
+distortion to overlay accuracy by using fine measurement pattern",
+*Proc. SPIE* **3677**, 83 (1999).
+<https://doi.org/10.1117/12.350790> Fine-pattern overlay targets against
+box-in-box targets; lens aberration causing over 15 nm of overlay
+displacement. Used on the i-line stepper or scanner and CD-SEM and
+overlay metrology pages. Tier: deep dive.
 
 **NORTON-2000** — C. Norton, D. Marshall, M. Ameen, D. Whiteside, J.
 Hallock and A. Becknell, "Photoresist properties during high current
@@ -10752,6 +10753,170 @@ track and immersion lithography tool", *Proc. SPIE* **6154**, 61544L
 (2006). <https://doi.org/10.1117/12.656303> Wafer handling between an
 in-line coat/developer and an immersion scanner before the post-exposure
 bake. Used on the coat/develop track page. Tier: deep dive.
+
+**HITACHI-2011** — T. Ikegami, A. Yamaguchi, M. Tanaka, S. Takami, Y.
+Hojo and A. Sugimoto, "Evolution and Future of Critical Dimension
+Measurement System for Semiconductor Processes", *Hitachi Review*
+**60**(5), 203–209 (2011).
+<https://www.hitachihyoron.com/rev/pdf/2011/r2011_05_104.pdf> Hitachi's
+CD-SEMs from the S-6000 of 1984 to the CG4100: design aims (in-lens
+detection, low-energy beams, field-emission gun, recipes), pitch
+calibration standards, and the resolution, repeatability, throughput and
+wafer sizes of the S-6000, S-8820, S-9200 and CG4000. Used on the CD-SEM
+and overlay metrology page. Tier: cross-check (vendor statement).
+
+**KLA-5200XP** — KLA-Tencor, *5200XP Overlay Metrology System*, product
+page; Wayback Machine capture of 2001-08-07.
+<https://web.archive.org/web/20010807104430/http://www.kla-tencor.com:80/products/semicon_process_para_ctrl/overlay/5200xp-overlay-met_sys.html>
+Fully automated overlay measurement on product and test wafers for
+0.18 µm technology, with coherence probe measurement optimised for
+planarised layers. Used on the CD-SEM and overlay metrology page. Tier:
+cross-check (vendor statement).
+
+**CLASSONE-KLA5200XP** — ClassOne Equipment, *KLA-Tencor 5200XP Overlay
+Registration System*, refurbished-equipment listing.
+<https://www.classoneequipment.com/KLA-Tencor-5200XP-Overlay-Registration-System>
+A 200 mm overlay and CD measurement system: non-contact box-in-box overlay
+measurement, coherence probe microscopy, CD measurement recommended for
+1.5 µm and above, and KLASS stepper set-up software. Used on the CD-SEM
+and overlay metrology page. Tier: cross-check (reseller description).
+
+**KLA-ARCHER10** — KLA-Tencor, *Archer 10: Automated Optical Overlay
+Metrology*, product page; Wayback Machine capture of 2003-02-19.
+<https://web.archive.org/web/20030219061753/http://www.kla-tencor.com:80/products/archer10/archer10.html>
+An optical overlay tool for 300 mm manufacturing at the sub-0.13 µm node
+with 30 % more throughput than its predecessors, low-contrast target
+measurement, transfer of overlay data to ASML PAS 5500 steppers and
+analysis for lot disposition and stepper correction. Used on the CD-SEM
+and overlay metrology page. Tier: cross-check (vendor statement).
+
+**AMAT-VERASEM-1999** — Applied Materials, *Applied Materials Introduces
+New CD-SEM System for Sub-0.15 Micron Metrology*, press release,
+1999-02-01.
+<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-introduces-new-cd-sem-system-sub-015-micron/>
+The VeraSEM for 200 mm and 300 mm wafers: Process Variation Monitoring
+(line edge roughness, line edge width variation, open and closed contact
+holes), high throughput and system matching with shared libraries. Used
+on the CD-SEM and overlay metrology page. Tier: cross-check (vendor
+statement).
+
+**AMAT-VERITYSEM-2004** — Applied Materials, *Applied Materials Shatters
+Metrology Roadblocks for 65-45nm Production with Applied VeritySEM
+System*, press release, 2004-02-23.
+<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-shatters-metrology-roadblocks-65-45nm>
+The VeritySEM: less than 1.8 nm resolution at 200 eV, less than 0.5 nm
+precision on ArF resist and gate features, and tool matching within 1 nm.
+Used on the CD-SEM and overlay metrology page. Tier: cross-check (vendor
+statement).
+
+**KLA-ARCHER300-2010** — KLA-Tencor, *KLA-Tencor Launches the Archer(TM)
+300 LCM Overlay Metrology System*, press release, 2010-06-22.
+<https://ir.kla.com/news-events/press-releases/detail/269/kla-tencor-launches-the-archertm-300-lcm-overlay>
+The Archer 300 LCM, successor of the Archer 200, with in-die overlay
+measurement and upgrades from existing Archer tools. Used on the CD-SEM
+and overlay metrology page. Tier: cross-check (vendor statement).
+
+**WIKI-SEM** — Wikipedia, *Scanning electron microscope*.
+<https://en.wikipedia.org/wiki/Scanning_electron_microscope>
+Secondary-electron imaging, electron sources and specimen charging. Used
+on the CD-SEM and overlay metrology page. Tier: high-level.
+
+**POSTEK-1994** — M. T. Postek, "Scanning electron microscope metrology",
+*Proc. SPIE* **10274**, 1027405 (1994).
+<https://doi.org/10.1117/12.187461> A review of SEM metrology of
+submicrometre integrated-circuit structures and its recent improvements.
+Used on the CD-SEM and overlay metrology page. Tier: high-level.
+
+**ROSENFIELD-1986** — M. G. Rosenfield, "Linewidth measurement using the
+low voltage SEM", *Proceedings, Annual Meeting, Electron Microscopy
+Society of America* **44**, 652–653 (1986).
+<https://doi.org/10.1017/S0424820100144681> Non-destructive linewidth
+measurement in resist with the low-voltage SEM and the choice of
+peak-to-peak or threshold edge methods. Used on the CD-SEM and overlay
+metrology page. Tier: deep dive.
+
+**SINGH-1988** — B. Singh and W. H. Arnold, "Linewidth measurement by low
+voltage SEM", *Proc. SPIE* **0921**, 16 (1988).
+<https://doi.org/10.1117/12.968347> Low-voltage SEM linewidths compared
+with physical and electrical widths; the threshold method's sensitivity
+to beam energy, diameter and defocus. Used on the CD-SEM and overlay
+metrology page. Tier: deep dive.
+
+**POSTEK-1988** — M. T. Postek, W. J. Keery and R. D. Larrabee, "The
+relationship between accelerating voltage and electron detection modes to
+linewidth measurement in an SEM", *Scanning* **10**(1), 10–18 (1988).
+<https://doi.org/10.1002/sca.4950100104> How beam–specimen interaction and
+detector type distort SEM linewidths, and why edge errors add in width
+but cancel in pitch. Used on the CD-SEM and overlay metrology page. Tier:
+deep dive.
+
+**LOWNEY-1995** — J. R. Lowney, "Use of Monte Carlo modeling for
+interpreting scanning electron microscope linewidth measurements",
+*Scanning* **17**(5), 281–286 (1995).
+<https://doi.org/10.1002/sca.4950170503> A Monte Carlo code for extracting
+line edge positions from SEM signals. Used on the CD-SEM and overlay
+metrology page. Tier: deep dive.
+
+**SOLECKY-2002** — E. P. Solecky, J. Mayer and C. N. Archie, "Improving
+sub-150-nm lithography and etch CD-SEM correlations to AFM and electrical
+test", *Proc. SPIE* **4689**, 473 (2002).
+<https://doi.org/10.1117/12.473486> CD-SEM waveforms and algorithm settings
+at gate develop and etch, correlated with AFM and electrical
+measurements. Used on the CD-SEM and overlay metrology page. Tier: deep
+dive.
+
+**YOU-2002** — T.-J. You, C.-K. Bok and K.-S. Shin, "CD metrology for
+avoiding shrinkage of ArF resist patterns in 100 nm ArF lithography",
+*Proc. SPIE* **4689**, 724 (2002). <https://doi.org/10.1117/12.473516>
+Shrinkage of ArF resist lines under repeated SEM measurement and ways to
+avoid it. Used on the CD-SEM and overlay metrology page. Tier: deep dive.
+
+**MARSCHNER-2006** — T. Marschner et al., "Challenges and Methodology of
+Fab-to-fab CD-SEM Matching", *17th Annual SEMI/IEEE ASMC* (2006), pp.
+228–232. <https://doi.org/10.1109/ASMC.2006.1638758> Matching CD-SEMs in
+fabs on different continents, correcting for changes to the matching
+wafers in shipment. Used on the CD-SEM and overlay metrology page. Tier:
+deep dive.
+
+**DOCKREY-1989** — J. W. Dockrey and D. Hendricks, "The application of
+coherence probe microscopy for submicron critical dimension linewidth
+measurement", *Proc. SPIE* **1087**, 120 (1989).
+<https://doi.org/10.1117/12.953086> Coherence probe imaging with a Linnik
+interferometer and broadband illumination for linewidths, compared with
+in-line SEM. Used on the CD-SEM and overlay metrology page. Tier: deep
+dive.
+
+**PLAMBECK-1995** — B. F. Plambeck, N. Knoll and P. J. Lord,
+"Characterization of chemical-mechanical polished overlay targets using
+coherence probe microscopy", *Proc. SPIE* **2439**, 298 (1995).
+<https://doi.org/10.1117/12.209213> Overlay measurement on CMP-planarised
+targets with coherence probe microscopy. Used on the CD-SEM and overlay
+metrology page. Tier: deep dive.
+
+**HOSHI-2002** — K. Hoshi, E. Kawamura, H. Morohoshi, H. Ina, T.
+Fujimura, H. Kurita and J. L. Seligson, "TIS-WIS interaction
+characterization on overlay measurement tool", *Proc. SPIE* **4689**, 715
+(2002). <https://doi.org/10.1117/12.473514> Tool-induced shift calibration
+and residual TIS on overlay metrology tools. Used on the CD-SEM and
+overlay metrology page. Tier: deep dive.
+
+**DEN-BOEF-2016** — A. J. den Boef, "Optical wafer metrology sensors for
+process-robust CD and overlay control in semiconductor device
+manufacturing", *Surface Topography: Metrology and Properties* **4**(2),
+023001 (2016). <https://doi.org/10.1088/2051-672X/4/2/023001> A review of
+level, alignment and scatterometry sensors in lithography. Used on the
+CD-SEM and overlay metrology page. Tier: deep dive.
+
+**DEMOOR-2000** — S. J. DeMoor, S. Hilbun, G. P. Beck III, K. L. Bushman,
+R. D. Fields, R. M. Peters and T. E. Calvert, "Enhancing Overlay Metrology
+Productivity and Stability Using an Off-line Recipe Database Manager",
+*Yield Management Solutions* (KLA-Tencor), Summer 2000, pp. 44–48;
+Wayback Machine capture of 2004-02-28.
+<https://web.archive.org/web/20040228101521/http://www.kla-tencor.com:80/company/magazine/summer00/enhancing_overlay.pdf>
+Recipe creation and management for overlay metrology in a high-volume
+ASIC fab with many active reticles, using standard targets and an
+off-line recipe database. Used on the CD-SEM and overlay metrology page.
+Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 

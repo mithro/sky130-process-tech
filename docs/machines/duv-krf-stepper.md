@@ -314,6 +314,8 @@ settings and resists per layer are not public.
   and the mix-and-match between classes.
 * {ref}`machine-coat-develop-track` — the linked track that coats, bakes
   and develops the KrF resist.
+* {ref}`machine-cd-sem-overlay-metrology` — the CD and overlay
+  measurements that feed corrections back to the exposure tool.
 * {ref}`masks-index` — each mask's PDK entry, minimum CD, plates and the
   mask-type record for vias 2–4.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
