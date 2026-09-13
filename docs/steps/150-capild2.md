@@ -121,10 +121,12 @@ difference in thickness or permittivity between this film and
 * **Why the dielectric goes on unpatterned metal 4.** Depositing the
   dielectric on the blanket metal and defining the top plate before the
   bottom metal is etched gives a planar bottom plate with no sidewall
-  under the thin film. The Newport Fab and Freescale MiM patents build
-  their capacitors on the interconnect metal in this top-plate-first
-  order,[^pat-mim-newportfab][^pat-mim-freescale] and on our reading of
-  the step order so does SKY130. The price is that the metal-4 etch must
+  under the thin film. The Newport Fab patent deposits its dielectric
+  and top-plate metal on the unpatterned interconnect metal and etches
+  the top plate before the bottom plate,[^pat-mim-newportfab] and on
+  our reading of the step order SKY130 builds its capacitors in the
+  same order; Freescale's patent, by contrast, builds a separate MiM
+  stack over a planarised dielectric.[^pat-mim-freescale] The price is that the metal-4 etch must
   later cut through whatever dielectric remains ({ref}`MM4E <step-155>`).
 * **Oxynitride, oxide or nitride.** PECVD silicon nitride gives the most
   capacitance per thickness, but Van Huylenbroeck et al. showed that
@@ -293,8 +295,9 @@ back end (SKY130's recipe is not public); the sequence is that of
   floating MiM capacitors.[^wang-2004-mim]
 * Kar-Roy and Racanelli (Newport Fab), US 6,430,028; Roberts and
   Huffman (Freescale), US 7,375,002; Olewine and Saiz (Philips),
-  US 6,717,193 — MiM constructions on aluminium interconnect from
-  three assignees.[^pat-mim-newportfab][^pat-mim-freescale][^pat-mim-philips]
+  US 6,717,193 — three MiM constructions: on unpatterned interconnect
+  metal, as a separate stack over planarised dielectric, and with an
+  ammonia-plasma-treated TiN bottom electrode.[^pat-mim-newportfab][^pat-mim-freescale][^pat-mim-philips]
 * Chapple-Sokol, Tierney and Batey (IBM), MRS 1989 — RF-power
   dependence of PECVD film properties.[^chapple-sokol-1989]
 * Lieberman and Lichtenberg — the plasma physics of the
