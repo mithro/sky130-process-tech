@@ -24,7 +24,7 @@ etched through first and that the {term}`local interconnect`
 similar cap after each inter-level oxide and its polish at the metal
 levels — {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`,
 {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>` — above the
-dielectrics the PDK names `NILD2`…`NILD6`.[^pdk-04]
+dielectrics the PDK names `NILD3`…`NILD6`.[^pdk-04]
 
 The PDK does not name the cap separately. On our reading of the
 stack diagram, the cap is part of the interval it labels "PSG" —
