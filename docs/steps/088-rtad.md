@@ -122,7 +122,7 @@ An industry-generic source/drain activation anneal for a 200 mm,
   choices;[^txt-05][^txt-10] ITRS 2001 sets the junction depth,
   abruptness and sheet resistance that the anneal must meet
   together.[^itrs-01] Ramp rates of "1 – 180°C per second" are the
-  range of the AG Heatpulse 8800-class tools.[^ag-8800]
+  range of the AG Associates Heatpulse 8800-class tools.[^ag-8800]
 * **Sequence.** Pre-anneal clean (at {ref}`NSDIS <step-087>`); load;
   purge; a low-temperature stabilisation step for pyrometer lock;
   ramp; soak or spike; controlled ramp-down; unload.

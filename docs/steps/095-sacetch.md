@@ -150,7 +150,7 @@ fab (SKY130's recipe is not public):
 
 * **Automated wet bench** with dilute-HF, SC-1 and solvent tanks
   (Akrion, DNS/SCREEN, SCP), a **spray processor** (FSI Mercury) or a
-  **single-wafer wet tool** (SEZ, Lam DaVinci) ({ref}`category-etch`).
+  **single-wafer wet tool** (SEZ/Lam Da Vinci) ({ref}`category-etch`).
 * **Downstream asher** for the strip ({ref}`category-strip`).
 * **Ellipsometer** for etch-rate monitors; **particle scanner**.
 
@@ -163,13 +163,13 @@ fab (SKY130's recipe is not public):
   `SACETCH` is an **inference** from its place in the sequence this
   reference describes, before the liner, and from the HF-last
   pre-metal clean of the cleaning literature.[^kern-1990]
-* **SEZ 223 / Lam DaVinci.** Single-wafer "HF, DSP+HF, titration
+* **SEZ 223 / Da Vinci.** Single-wafer "HF, DSP+HF, titration
   controlled".[^skw-01] Strength: strong for existence; medium for a
   contact-hole clean.
 * **Akrion Gamma batch bench** ("Sulfuric, SC1, phosphoric, BOE,
   spin or IPA dry") and the **EKC265/EKC270** solvent bench.[^skw-01]
   Strength: strong for existence.
-* Ashers: **Gasonic PEP, Iridia, Mattson Aspen2**.[^skw-01]
+* Ashers: **GaSonics PEP, Iridia, Mattson Aspen II**.[^skw-01]
   Strength: strong for existence.
 
 ## Resources required
@@ -205,7 +205,7 @@ fab (SKY130's recipe is not public):
   CD" 0.08 µm; "Pre-LI ILD thickness" 0.5 µm; S/D junction
   0.1 µm.[^pdk-03]
 * SkyWater, *Facilities & Capabilities* — DNS wet bench, FSI
-  Mercury, SEZ 223/DaVinci, Akrion Gamma, EKC solvents,
+  Mercury, SEZ 223/Da Vinci, Akrion Gamma, EKC solvents,
   ashers.[^skw-01]
 * SkyWater, Form S-1 — chemical suppliers.[^sec-01]
 

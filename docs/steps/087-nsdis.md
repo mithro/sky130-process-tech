@@ -121,7 +121,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm single-wafer: Gasonics
+* **Downstream plasma asher**, 200 mm single-wafer: GaSonics
   (Novellus) Aura/PEP, Mattson Aspen, Axcelis/Fusion ES,
   PSK;[^pat-asher-axcelis][^pat-asher-fusion] Stanford's user guide
   describes the downstream class.[^snf-strip]
@@ -131,7 +131,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia RF microwave and Mattson Aspen 2 ashers**
+* **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers**
   — named on SkyWater's facilities page with their gases and
   temperatures.[^skw-01] Strength: **strong** for existence;
   assignment of this strip to any one is an inference, the Iridia's
@@ -169,8 +169,8 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Gasonic PEP, Iridia and
-  Mattson Aspen2 with gases and temperatures; Akrion Gamma; DNS and
+* SkyWater, *Facilities & Capabilities* — GaSonics PEP, Iridia and
+  Mattson Aspen II with gases and temperatures; Akrion Gamma; DNS and
   FSI benches.[^skw-01]
 * Indeed, SkyWater listings — defect-metrology tools including
   AIT.[^job-01]

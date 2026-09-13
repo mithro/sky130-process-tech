@@ -138,7 +138,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    reading of the stack), with selectivity to the TiN below
    ({ref}`category-etch`); Kastenmeier et al. give the nitride
    chemistry.[^kastenmeier-1996] The bottom CD is set here.
-6. **Strip and clean.** Oxygen plasma {term}`ash` — Gasonics, Mattson
+6. **Strip and clean.** Oxygen plasma {term}`ash` — GaSonics, Mattson
    or Iridia class in SkyWater's list[^skw-01] — followed by a solvent
    or semi-aqueous clean (EKC265/270-type amine solvents are on
    SkyWater's wet-bench list[^skw-01]) to remove the fluorocarbon
@@ -156,7 +156,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   Applied Materials eMax / MxP+ / Super-e, TEL DRM / Unity
   ({ref}`category-etch`); high-density alternatives (AMAT IPS, Lam
   {term}`TCP` 9100).
-* **Resist asher** (Gasonics Aura, Mattson Aspen) and **wet bench or
+* **Resist asher** (GaSonics Aura, Mattson Aspen) and **wet bench or
   single-wafer clean** for post-etch residue.
 * **CD-SEM**, **cross-section SEM**, **e-test** for contact chains.
 
@@ -171,9 +171,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 * **Lam Exelan.** No public source places an Exelan at SkyWater; it
   appears here only as the era's typical dielectric etcher, a line
   Lam's own 10-K lists.[^lam-10k]
-* **Strip and clean — Gasonics PEP, Iridia, Mattson Aspen2; Akrion
+* **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; Akrion
   Gamma wet bench; batch rotational tools with "EKS265, EKC270
-  solvents"; SEZ223 / DaVinci.**[^skw-01] Strength: strong for
+  solvents"; SEZ 223 / Da Vinci.**[^skw-01] Strength: strong for
   existence.
 
 ## Resources required

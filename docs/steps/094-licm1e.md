@@ -164,7 +164,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 * **Lam Exelan.** No public source places an Exelan at SkyWater; it
   appears here only as the era's typical dielectric etcher, a line
   Lam's own 10-K lists.[^lam-10k]
-* Resist strip and polymer removal: **Mattson Aspen2, Gasonics PEP,
+* Resist strip and polymer removal: **Mattson Aspen II, GaSonics PEP,
   Iridia** ashers;[^skw-01] wet clean: **DNS wet bench, FSI Mercury,
   Akrion Gamma**.[^skw-01] Strength: strong for existence.
 
