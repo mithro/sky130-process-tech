@@ -5,6 +5,15 @@ Terms and acronyms used throughout this reference. Each entry is
 referenced from the pages that use it with the `{term}` role.
 
 ```{glossary}
+1T1R
+    One transistor, one resistor: a resistive memory cell in which an
+    access transistor is connected in series with the resistive element
+    of a {term}`ReRAM`. The transistor selects the cell in an array and,
+    through its gate voltage, limits the current that flows during
+    {term}`electroforming`, set and reset. Arrays in which one
+    transistor serves several resistive elements are written 1T*n*R
+    (for example 1T4R).
+
 2-T cell
     The two-transistor non-volatile memory cell of SKY130: a
     {term}`SONOS` memory transistor, whose gate is the
@@ -13,6 +22,15 @@ referenced from the pages that use it with the `{term}` role.
     memory transistor to the bit line only when the cell is addressed,
     so that reading and programming one cell do not disturb its
     neighbours, at the cost of more area than a one-transistor cell.
+
+ALD
+    Atomic layer deposition: a form of {term}`CVD` in which two
+    precursors are admitted one after the other, separated by purges,
+    so that each reacts with the surface in a self-limiting way and the
+    film grows by a fixed amount per cycle. It gives very thin, uniform
+    and conformal films — high-κ oxides such as hafnium oxide, and
+    nitrides such as titanium nitride — at the cost of a low deposition
+    rate.
 
 alloy anneal
     A low-temperature (typically 350–450 °C; see {ref}`category-anneal`)
@@ -403,6 +421,14 @@ EBR
     Edge-bead removal: dissolving the thick rim of resist that forms at
     the wafer edge during spin coating, using a solvent stream or an
     exposure of the edge.
+
+electroforming
+    The first, higher-voltage operation applied to a fresh metal-oxide
+    resistive memory cell ({term}`ReRAM`). It creates a conductive
+    filament through the insulating oxide and takes the cell from a very
+    high resistance to a low one; lower set and reset voltages then
+    switch the filament. Also "forming" or "FORM"; unrelated to
+    {term}`forming gas`.
 
 electromigration
     The slow transport of metal atoms along a conductor by the momentum
@@ -1055,6 +1081,16 @@ reflow
     reflow: aluminium deposited onto, or heated on, a wafer at several
     hundred degrees Celsius so that it flows into contact and via holes
     (see {term}`aluminium via fill`, {ref}`step-161`).
+
+ReRAM
+    Resistive random-access memory, also RRAM: a non-volatile memory
+    whose cell is a thin metal-oxide film between two electrodes — a
+    metal–insulator–metal structure like a {term}`MiM capacitor` — and
+    whose resistance is switched between a low and a high state by
+    voltage pulses that move oxygen vacancies and so make or break a
+    conductive filament. Because it is built from thin films between
+    metal levels, it can be added to the {term}`BEOL` without changing
+    the transistors. See {term}`1T1R` and {term}`electroforming`.
 
 resist trim
     A short isotropic plasma etch of the developed resist before the
