@@ -231,8 +231,9 @@ memory (SKY130's recipe is not public):
   of fluorocarbon plasma etchants.[^flamm-1981]
 * Winters and Coburn, *Surf. Sci. Rep.* 1992 — surface-science
   mechanisms of fluorine-based etching.[^winters-1992]
-* Coburn and Winters, *J. Appl. Phys.* 1979 — ion-assisted etching, the
-  origin of {term}`anisotropy`.[^coburn-1979]
+* Coburn and Winters, *J. Appl. Phys.* 1979 — ion- and
+  electron-enhanced gas–surface reactions of Si, SiO₂ and Si₃N₄, and
+  their implications for plasma etching.[^coburn-1979]
 * Nojiri, *Dry Etching Technology for Semiconductors* — endpoint,
   selectivity and stack-etch practice.[^nojiri-2015]
 * Kern, *J. Electrochem. Soc.* 1990 — the wet-clean chemistry used

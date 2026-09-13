@@ -51,11 +51,14 @@ maintained in a range between a few millitorr and a few hundred
 millitorr".[^wiki-rie]
 
 Etching then proceeds by a synergy between chemistry and ion
-bombardment. Coburn and Winters showed in 1979 that silicon exposed to
-XeF₂ *and* an argon-ion beam etches roughly an order of magnitude faster
-than under either alone;[^coburn-1979] the ions break bonds, clear
-inhibiting films and volatilise reaction products only where they
-strike, which is straight down. Steinbrüchel found that the ion-enhanced
+bombardment. Coburn and Winters described in 1979 how gas–surface
+reactions that give volatile products can be enhanced by energetic
+radiation, "primarily ions and electrons", examining "the reactions of
+Si, SiO2, and Si3N4 with XeF2, F2, and Cl2";[^coburn-1979] their
+companion review relates this bombardment to phenomena such as etching
+anisotropy.[^coburn-1979b] Because the ions arrive normal to the
+wafer,[^wiki-rie] the enhancement acts on the trench floor rather
+than on the sidewalls (our reading). Steinbrüchel found that the ion-enhanced
 etch yield scales as {math}`Y \propto \sqrt{E} - \sqrt{E_{th}}` at low
 ion energies.[^steinbruchel-1989] Anisotropy is therefore obtained
 either by making the reaction ion-driven or by passivating the sidewalls
@@ -255,8 +258,8 @@ oxidation or clean must remove.
 
 ### Cross-check
 
-* Coburn and Winters, *JAP* 1979 — the XeF₂ + Ar⁺ synergy
-  experiment.[^coburn-1979]
+* Coburn and Winters, *JAP* 1979 — ion- and electron-enhanced reactions of
+  Si, SiO₂ and Si₃N₄ with XeF₂, F₂ and Cl₂.[^coburn-1979]
 * Steinbrüchel, *APL* 1989 — the square-root energy dependence of
   ion-enhanced etch yields.[^steinbruchel-1989]
 * ITRS 2001, *Front End Processes* — the gate etch bias.[^itrs-01]
