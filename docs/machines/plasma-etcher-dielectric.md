@@ -18,7 +18,7 @@ etching are on the {ref}`category page <category-etch>`.
 | | Plasma etcher: dielectric and nitride |
 |---|---|
 | What it does | Anisotropic etching of SiO₂ and Si₃N₄ in fluorocarbon plasmas, selective to the layer underneath; selective etching of "a SiO2 layer over a Si or Si3N4 underlayer" is "a process of vital importance to modern integrated circuit fabrication technology".[^schaepkens-1999] |
-| Plasma source | Capacitive: Lam's Exelan uses "Dual Frequency Confined (DFC) technology";[^lam-exelan] Applied's MxP+ is a "MERIE chamber";[^regis-1997] Lam's Rainbow 45XX is a parallel-plate "plasma/RIE" etcher "mainly for Oxide Etch".[^allwin-rainbow-4500] High-density inductive dielectric etchers were also sold, such as Applied's IPS Centura.[^amat-1997] |
+| Plasma source | Capacitive: Lam's Exelan uses "Dual Frequency Confined (DFC) technology";[^lam-exelan] Applied's MxP+ is a "MERIE chamber";[^regis-1997] Lam's Rainbow 45XX is a parallel-plate "plasma/RIE" etcher "mainly for Oxide Etch".[^allwin-rainbow-4500] High-density dielectric etchers were also sold, such as Applied's IPS Centura.[^amat-1997] |
 | Chemistry | CF₄, CHF₃ or C₂F₆[^perry-2001] with Ar and O₂; the Rainbow 45XX runs "A contact oxide etch process with high selectivity to polysilicon (Ar/CF4/CHF3)";[^allwin-rainbow-4500] CH₃F/O₂ for nitride over-etch stopping on oxide.[^regis-1997] |
 | Selectivity | Set by a steady-state fluorocarbon film: under 1.5 nm on oxide, about 1–4 nm on nitride and about 2–7 nm on silicon in Schaepkens et al.'s inductive plasmas;[^schaepkens-1999] SiO₂-to-Si selectivity of about 15 in CHF₃ against about 5 in CF₄ in Oehrlein et al.'s ECR study.[^oehrlein-1994b] |
 | Endpoint | Optical emission; for nitride "a strong peak at 387 nm indicates that CN is present in the plasma";[^pat-endpoint-tel] contact layers need detection of films with "low exposure area (less than 3%)".[^wodecki-1999] |
@@ -63,7 +63,7 @@ capacitive geometry. Lam describes the Exelan family's "Dual Frequency
 Confined (DFC) technology", in which "Confining the plasma … enables
 damage-free processing, allows Clean Mode operation without chamber
 wall contamination, and retains a consistent RF path inside the
-chamber".[^lam-exelan] Inductive sources were used for dielectrics too:
+chamber".[^lam-exelan] High-density sources were used for dielectrics too:
 Applied launched the Dielectric Etch IPS Centura in April 1997 as its
 "most advanced, high-density plasma system for etching dielectric
 films".[^amat-1997] Perry et al. mapped such a regime in an inductive
@@ -251,7 +251,7 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   oxide etches that stop on a conductor or on nitride
   ({ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, the four via
   etches, {ref}`NSME <step-166>`). The first rely on a CH₃F/O₂ over-etch or a
-  fluorine-rich downstream chemistry,[^regis-1997][^kastenmeier-1999] the second on the
+  fluorine-lean O₂/N₂ downstream chemistry,[^regis-1997][^kastenmeier-1999] the second on the
   thicker fluorocarbon film that nitride and silicon carry.[^schaepkens-1999]
 * **Spacer etch without a mask.** The {ref}`SPE <step-077>` page's
   etch-back must clear nitride from flat areas while leaving the
