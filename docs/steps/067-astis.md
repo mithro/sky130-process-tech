@@ -146,8 +146,8 @@ practice).[^txt-02]
   SPM;[^wiki-piranha] **ammonium hydroxide** for SC-1; **hydrochloric
   acid** for SC-2.[^wiki-rca]
 * **{ref}`Ultrapure DI water <material-ultrapure-water>`**, **isopropanol** for drying, **nitrogen**.
-* Arsenic-bearing resist ash and spent acid go to the fab's hazardous
-  exhaust and {ref}`waste-acid systems <material-hardware-consumables>` (general practice).
+* Arsenic-bearing resist ash and spent acid go to the fab's
+  {ref}`hazardous exhaust and waste-acid systems <material-hardware-consumables>` (general practice).
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
   S-1), EMD Performance Materials (fiscal 2023 10-K).[^sec-01][^sec-02]
 

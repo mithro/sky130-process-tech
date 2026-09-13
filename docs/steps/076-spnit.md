@@ -196,7 +196,7 @@ fab (SKY130's recipe is not public):
   and ammonia** (low-temperature route);[^gumpher-2004] **silane,
   ammonia and nitrogen** for PECVD.[^wiki-pecvd]
 * **Nitrogen** purge; **NF₃ or CF₄/O₂** chamber clean for a PECVD
-  tool; ammonium-chloride trap maintenance and {ref}`HCl-tolerant exhaust <material-hardware-consumables>`
+  tool; {ref}`ammonium-chloride trap maintenance <material-hardware-consumables>` and HCl-tolerant exhaust
   for a DCS furnace.[^txt-02]
 * **Quartz ware** (furnace) or chamber consumables (PECVD).
 * **{ref}`Monitor wafers <material-substrates>`** (SEMI M8 class)[^semi-m8] for thickness, stress
