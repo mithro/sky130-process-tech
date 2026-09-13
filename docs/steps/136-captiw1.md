@@ -155,7 +155,7 @@ back end (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **PVD cluster tool with a Ti:W chamber**, 200 mm: Applied Materials
+* **{ref}`PVD cluster tool <machine-pvd-cluster-tool>` with a Ti:W chamber**, 200 mm: Applied Materials
   Endura,[^amat-endura] Novellus INOVA, Ulvac and Anelva sputtering
   systems ({ref}`category-deposition`).
 * **Degas chamber** on the same platform.
