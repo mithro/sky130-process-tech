@@ -245,8 +245,9 @@ assumptions)[^pdk-03] and the process stack diagram `metal_stack.svg`
 scale!").[^pdk-04] The labels in the first column (such as "NILD3
 K=4.5") are the diagram's; the step pages match them to steps. The
 fourth column gives other public numbers — patent ranges for comparable
-flows, or Cypress qualification reports for S8-family products from the
-same fab — and the last column summarises the step page's reading,
+flows, or Cypress qualification reports for products from the same fab
+(S8 technology in QTP 113005 and 123907, the R7FT-3R derivative in
+QTP 014807) — and the last column summarises the step page's reading,
 with its inferences marked there.
 
 | Film (PDK label) | Formed at | PDK thickness or dimension | Other public numbers or composition | Reading on the step pages |
@@ -291,8 +292,8 @@ Several consumables of the flow are hazardous in ways that shape how
 they are delivered and exhausted. Silane is "a colorless, pyrophoric
 gas";[^wiki-silane] phosphine is "a highly toxic respiratory
 poison";[^wiki-ph3] arsine is described as "flammable, pyrophoric, and
-highly toxic";[^wiki-ash3] boron trifluoride is "toxic" and
-"corrosive";[^wiki-bf3] and tungsten hexafluoride is "a toxic,
+highly toxic";[^wiki-ash3] boron trifluoride is a "pungent,
+colourless, and toxic gas" that "is corrosive";[^wiki-bf3] and tungsten hexafluoride is "a toxic,
 corrosive, colorless gas".[^wiki-wf6] Typical forming-gas
 formulations, by contrast, "are not explosive".[^wiki-fg] The step
 pages describe the implant gases as delivered in sub-atmospheric or dilute
