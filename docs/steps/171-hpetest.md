@@ -177,13 +177,18 @@ width, the median resistance at V_GS = 5 V and V_DS = 0.1 V is 469 Ω
 for ten 0.925 µm ("L=0.7") structures and 695 Ω for eight 2.425 µm
 ("L=2.2") structures, against RDS nominals of 458.5 Ω and 703.8 Ω at
 W/L 20/0.7 and 20/2.2 (our extraction from the published
-measurements).[^raw-data-hv-mosfets][^pdk-07] Of the 24 e-test
-threshold parameters we compared for the 5 V, 16 V, 20 V, native,
-zero-Vt and ESD transistors, 23 have every working test-tile structure
-inside the published minimum–maximum limits; the exception, VTXPN42H, is
-a 0.42/20 µm PMOS whose current (at most about 4 µA) is too small for
-the method, and one 0.42/0.5 µm NMOS structure carries no current at
-all.[^raw-data-hv-mosfets][^pdk-07] The files record the sweeps,
+measurements).[^raw-data-hv-mosfets][^pdk-07] The PDK lists 24 e-test
+threshold parameters for the 5 V, 16 V and 20 V NMOS and PMOS and the
+native, zero-Vt and ESD NMOS. Of the 23 for which the tile has a matching structure
+(none matches the 20 V native NMOS, VTXN20VHV1L, at 2 × 30/1.0 µm), 22
+have every working test-tile structure inside the published
+minimum–maximum limits. The exception, VTXPN42H, is a single
+0.42/20 µm PMOS whose linear-region sweep (at most 0.23 µA at
+V_DS = −0.1 V) rises irregularly, so that its extrapolated threshold
+depends on how the transconductance is smoothed (magnitudes of
+0.86–1.55 V against limits of 0.87–1.00 V); one 0.42/0.5 µm NMOS
+structure carries no current at all (our extraction from the published
+measurements).[^raw-data-hv-mosfets][^pdk-07] The files record the sweeps,
 compliance and instrument channels but no temperature, measurement
 date, wafer or die, and the drain is swept to at most 5 V (10 V on the
 symmetric 16 V structures), so they do not bear on breakdown or the
