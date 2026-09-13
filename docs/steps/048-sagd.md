@@ -158,8 +158,7 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
 * **Single-wafer poly deposition** (e.g. Applied Materials Centura
   Poly-Gen) was an alternative used by some 130 nm fabs for
   thin-gate-stack control, at lower throughput.
-* **Spectroscopic ellipsometer** and **unpatterned-wafer particle
-  scanner**.
+* **{ref}`Spectroscopic ellipsometer <machine-film-thickness-metrology>`** and **{ref}`unpatterned-wafer particle scanner <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 

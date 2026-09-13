@@ -136,7 +136,7 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
   TEL Alpha-8S, ASM A400) with DCS/NH₃ gas panel, *or*
 * **{ref}`PECVD system <machine-pecvd>`** (Novellus Concept One/Two and Sequel, Applied
   Materials Precision 5000 / Centura DxZ / Producer) with SiH₄/NH₃/N₂.
-* **Spectroscopic ellipsometer**; **stress gauge**.
+* **{ref}`Spectroscopic ellipsometer <machine-film-thickness-metrology>`**; **stress gauge**.
 
 ## Machines likely used at SkyWater
 
