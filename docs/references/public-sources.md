@@ -151,7 +151,8 @@ cross-check.
 (1.8 V core with 5.0 V I/O, "1 level of local interconnect", "5 levels
 of metal", high sheet-rho poly resistor, optional MiM, "SONOS shrunken
 cell", 10 V regulated supply, HV extended-drain NMOS/PMOS), Apache 2.0
-licence, links to documentation and the announcement list. Tier:
+licence, links to documentation and the announcement list.
+Also used on the metal plasma etcher page. Tier:
 cross-check.
 
 **PDK-11** — *SkyWater SKY130 Process Design Rules* index page.
@@ -324,7 +325,8 @@ give "5 layers of aluminum metal", local interconnect as "Titanium
 Nitride (TiN)", metal thicknesses metal5 1.26 µm, metal4 0.845 µm,
 metal3 0.845 µm, metal2 0.36 µm, metal1 0.36 µm, local interconnect
 0.1 µm, the MiM `capm`/`cap2m` placement, and the copper
-redistribution layer (4.0 µm RDL, 5.25 µm polyimide via). Tier:
+redistribution layer (4.0 µm RDL, 5.25 µm polyimide via).
+Also used on the metal plasma etcher page. Tier:
 high-level (numbers should be cross-checked against PDK-04).
 
 **ANN-17** — Wikipedia, *"130 nm process"*.
