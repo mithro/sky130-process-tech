@@ -21,8 +21,9 @@ written, reviewed and audited to the same standard.
    read …" and base readings on public sources (PDK, filings,
    qualification reports). This includes soft forms ("as the name
    suggests", "the suffix makes it the Nth …", "consistent with the
-   step name"). Material that no reader can retrieve (search-engine
-   snippets, expired or blocked listings) is not cited or mentioned.
+   step name"). Search-engine snippets and pages that were never
+   retrieved are not cited or mentioned. A public page that was
+   retrieved (e.g. a job listing) may be cited with its retrieval date.
 3. **Numbers need a public citation.** Every thickness, temperature,
    dose, energy, pressure or time carries a citation to a public source
    or is explicitly marked as a typical industry value with a textbook
