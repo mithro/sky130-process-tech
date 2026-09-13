@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1211
+written page has exactly one entry here; the inventory holds 1217
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -9519,6 +9519,56 @@ plasma etcher page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Hexafluoroethane> C₂F₆ as an etchant and
 its global warming potential of 9200. Used on the dielectric and nitride
 plasma etcher page. Tier: high-level.
+
+**CHRISTIE-1994** — R. Christie, S. Burns, V. S. Grewal and B. Spuler,
+"Sub 0.5 μm TCP metal etching in the ASTC", *Proceedings of 1994
+IEEE/SEMI Advanced Semiconductor Manufacturing Conference and Workshop
+(ASMC)*, p. 224. <https://doi.org/10.1109/ASMC.1994.588254> Sub-0.5 µm
+aluminium etching "in a 200 mm LAM TCP 9600 Etch Chamber" and post-etch
+treatment against corrosion, with resist selectivity, RIE lag, profile
+uniformity and hardware life optimised (summary only). Used on the metal
+plasma etcher page. Tier: deep dive.
+
+**LAM-9600SE-STRIPPER-1998** — Lam Research Corporation, *Lam Research
+Introduces Microwave Stripper for High-Density Metal Etch System*, news
+item, Semiconductor Online, 1998-01-09.
+<https://www.semiconductoronline.com/doc/lam-research-introduces-microwave-stripper-fo-0001>
+A microwave stripper option for the TCP 9600SE, which etches aluminium
+and tungsten in one chamber: a downstream source that avoids
+charge-induced gate-oxide damage, polymer removal and "no corrosion
+during 48-hour wet box tests". Used on the metal plasma etcher and
+downstream plasma asher pages. Tier: cross-check (vendor statement).
+
+**LAM-9600PTX-1999** — Lam Research, *Lam Research Corporation Gaining
+Momentum In Metal Etch With Multiple Wins*, press release, 1999-02-16.
+<https://newsroom.lamresearch.com/1999-02-16-Lam-Research-Corporation-Gaining-Momentum-In-Metal-Etch-With-Multiple-Wins>
+Orders for the TCP 9600PTX metal etcher, claimed at 45 wafers per hour
+against 35 for the competition, qualified for 0.18 µm aluminium etch
+with 0.13 µm capability demonstrated. Used on the metal plasma etcher
+page. Tier: cross-check (vendor statement).
+
+**LAM-9600DFM-2001** — Lam Research, *Lam Research Corporation Takes
+Metal Processing To New Level With New TCP 9600DFM*, press release,
+2001-06-18.
+<https://investor.lamresearch.com/2001-06-18-Lam-Research-Corporation-Takes-Metal-Processing-To-New-Level-With-New-TCP-R-9600DFM>
+The TCP 9600DFM metal etcher for sub-150 nm applications, designed to cut
+consumables cost, with a customer reporting a mean time between cleans
+above 300 RF hours after moving from the 9600PTX. Used on the metal
+plasma etcher page. Tier: cross-check (vendor statement).
+
+**AMAT-METAL-DPS-PLUS-1999** — Applied Materials, *Applied Materials
+Introduces the Metal Etch DPS Plus Centura for Sub-0.18 Micron Metal
+Etch*, press release, 1999-04-13.
+<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-introduces-metal-etch-dps-plus-centura-sub-018/>
+The Metal Etch DPS Plus: throughput above 50 wafers per hour, uptime
+above 90 %, lower defect densities, and "more than 200 Metal Etch DPS
+Centura systems installed". Used on the metal plasma etcher page. Tier:
+cross-check (vendor statement).
+
+**WIKI-BCL3** — Wikipedia, *Boron trichloride*.
+<https://en.wikipedia.org/wiki/Boron_trichloride> BCl₃ in semiconductor
+plasma etching, where it etches metal oxides through volatile
+oxychlorides. Used on the metal plasma etcher page. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
