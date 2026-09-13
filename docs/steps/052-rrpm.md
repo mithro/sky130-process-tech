@@ -36,6 +36,13 @@ their own ({ref}`URPM <step-055>`, {ref}`UPRI <step-056>`); the PDK says
 only that for the 2000 Ω/sq resistors "a separate implant is used to set
 the sheet resistance".[^pdk-07]
 
+Beyond the step list, one public document names the mask: the pad
+documentation of the SKY130 {term}`test tile` marks its shortest
+300 Ω/sq poly resistors (W = 0.69 µm, L = 0.345 µm and W = 0.33 µm,
+L = 0.33 µm) "(will not work for any routes using RRPM
+mask)".[^raw-data-testtile-pads] It says nothing about the mask's tone
+or how it is derived.
+
 ## Step category
 
 `RRPM` is a {ref}`Photolithography (mask step) <category-lithography>`
@@ -169,6 +176,9 @@ mostly chrome. Neither tone nor resist is stated publicly.
 * SkyWater, *Facilities & Capabilities* — i-line tools, tracks,
   overlay metrology.[^skw-01]
 * SkyWater, Form S-1 — resist suppliers.[^sec-01]
+* SKY130 raw-data repository, test-tile pad documentation — the
+  poly-resistor (RRPM note) structures of the published test
+  tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -323,3 +333,9 @@ mostly chrome. Neither tone nor resist is stated publicly.
 [^microchemicals-dev]: MicroChemicals, *Development of photoresists*,
     application note.
     <https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>

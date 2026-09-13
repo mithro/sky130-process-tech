@@ -79,6 +79,14 @@ devices "similar construction to the 11V/16V NMOS FET, with several
 differences: Longer drift region, Longer poly gate, Larger W/L, Devices
 placed in pairs".[^pdk-07]
 
+The published SKY130 {term}`test tile` includes such devices: "VHV DE
+NMOS" and "VHV DE PMOS" transistors with lengths labelled "L=0.7" and
+"L=2.2" (NMOS) and "L=0.66" and "L=2.16" (PMOS), and a PMOS listed as
+`p20vhv1` with the cell name
+"s8tet_s_hvp_pwde_stdnw_sti_1p5_2f_60um_IP_LVS".[^raw-data-testtile-pads]
+The `pwde` in that name matches the drawn layer of this
+mask;[^pdk-06] the pad list itself does not explain the name.
+
 ## How it is typically performed
 
 An industry-generic drain-extension well lithography for a 200 mm,
@@ -163,6 +171,9 @@ An industry-generic drain-extension well lithography for a 200 mm,
   Drain-Extended CMOS (16V)".[^skw-02]
 * SkyWater, Form S-1 (2021) — photoresist, gas and chemical
   suppliers.[^sec-01]
+* SKY130 raw-data repository, test-tile pad documentation — the
+  drain-extended transistor structures of the published test
+  tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -312,3 +323,9 @@ An industry-generic drain-extension well lithography for a 200 mm,
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>

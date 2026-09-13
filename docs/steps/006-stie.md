@@ -77,6 +77,16 @@ isolation module:
 * **Bottom-corner shape** controls stress and dislocation generation
   during the liner oxidation.[^rev-01]
 
+The published SKY130 {term}`test tile` shows how the result is checked
+electrically: field-oxide FETs, 1000 µm wide, whose poly-1 or metal-1
+gates cross the isolation between two diffusions ("poly1 gate w/l =
+1000/0.17, diff spacing = 0.27"; "(diff spacing =0.48)" for the
+high-voltage version), 0.29 µm n⁺ and p⁺ diffusion lines at 0.3 µm space for "line
+integrity", and gate-oxide capacitors that are "field-edge intensive"
+at "FOM w/s = 0.14/0.27"[^raw-data-testtile-pads] — the minimum width
+and space the PDK's CD table gives for the field-oxide mask
+(`FOMCD` 0.14 µm, `FOMCDSP` 0.27 µm).[^pdk-03]
+
 ## How it is typically performed
 
 An industry-generic recipe for a 200 mm, 130 nm-era fab:
@@ -181,6 +191,9 @@ W/WN".[^skw-01]
   3000–4000 Å.[^pat-sti-amberwave]
 * Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
   Etcher* page — the TCP etcher and its gas set.[^snf-9400]
+* SKY130 raw-data repository, test-tile pad documentation — the
+  field-oxide FET, diffusion-line and field-edge capacitor structures of
+  the published test tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -348,3 +361,9 @@ W/WN".[^skw-01]
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
