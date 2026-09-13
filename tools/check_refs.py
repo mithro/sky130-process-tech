@@ -5,8 +5,9 @@ Rules (see docs/plans/citation-style.md):
 
 * every ``[^label]`` reference has a definition and vice versa;
 * no reference-style link definitions (``[label]: url``) remain;
-* a written step page has at least 8 Deep dive entries, a category or
-  index page (machines, materials, masks, overview) at least 12;
+* a written step page or per-mask page has at least 8 Deep dive
+  entries, a category, machine, material or overview page and the masks
+  index at least 12;
 * every footnote label is a key in ``docs/references/public-sources.md``
   (keys are written there in upper case, e.g. ``**PDK-05**``).
 
@@ -37,7 +38,8 @@ TARGETS = [
     (DOCS / "categories", re.compile(r"^(?!index)[a-z-]+\.md$"), 12),
     (DOCS / "machines", re.compile(r"^[a-z0-9-]+\.md$"), 12),
     (DOCS / "materials", re.compile(r"^[a-z0-9-]+\.md$"), 12),
-    (DOCS / "masks", re.compile(r"^[a-z0-9-]+\.md$"), 12),
+    (DOCS / "masks", re.compile(r"^index\.md$"), 12),
+    (DOCS / "masks", re.compile(r"^(?!index\.md$)[a-z0-9-]+\.md$"), 8),
     (DOCS / "overview", re.compile(r"^[a-z0-9-]+\.md$"), 12),
 ]
 

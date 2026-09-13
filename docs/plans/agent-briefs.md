@@ -92,7 +92,8 @@ step provide:
 Run `uv run tools/check_steps.py`, `uv run tools/check_refs.py`,
 `uv run tools/check_machines.py` (machine-page headings and step lists),
 `uv run tools/check_materials.py` (material-page headings, index row
-keys and class-page table, rows covered, step lists and summary table) and
+keys and class-page table, rows covered, step lists and summary table),
+`uv run tools/check_masks.py` (mask-page headings, plates and step lists) and
 `uv run sphinx-build -W -q -b html docs docs/_build/html` before
 finishing. Report the branch name, commits, and any claims you were
 unable to source.
@@ -161,7 +162,73 @@ marked *(checked)*.
   existing entry gets a separate line "Also used on the <class> material
   page." after its "Tier:" text.
 
-Run all four checkers and the `-W` build as in the step-page brief.
+Run all five checkers and the `-W` build as in the step-page brief.
+
+## Mask-page writer brief
+
+You are writing `docs/masks/<code>.md` for one mask step. The three
+pilot pages (DNM, P1M, VIM4) are the model; `tools/check_masks.py`
+enforces the points marked *(checked)*.
+
+* **Template** *(checked)*. Label `(mask-<code in lower case>)=` on the
+  first line, matching the file name; title `# CODE — <Mask field of
+  masks.csv>` (for a mask step without a `masks.csv` entry, the step
+  list's description); the H2 and H3 headings of the checker; a
+  quick-facts table before the first H2 whose first row is "Mask step"
+  (one link, `{ref}`CODE <step-NNN>``, to the mask step the index's
+  "Mask steps in this reference" table gives), with rows "Plates
+  recorded", "Plate no." and "Dies with shapes, MPW-1 to MPW-8
+  (renders)" that read exactly as the mask's cells in the index's
+  "Plates by mask" table, and whose last row is "Steps that use the
+  pattern | N steps; see {ref}`… <mask-<code>-steps>`". Between them
+  give the PDK `masks.csv` entry, mask-level and drawn layers, minimum
+  CD, polarity and tone, exposure class with its basis, and the
+  mask-type reading of the process-steps sheet, as the index gives them.
+* **Plates** *(checked)*. Under "Plates and reticle sets", a table
+  `| Run | Reticle set (sheet column heading) | Plate ID |` with one row
+  per run, MPW-1 to MPW-8 in order: the index's reticle set, and the
+  plate ID from the sheet, or "none recorded". Plate IDs, reticle-set
+  IDs, lot IDs and mask-type codes may be cited. Do not name projects,
+  people or lot records beyond what the masks index already uses, and
+  cite the renders site only for its images, layer and note metadata and
+  per-die shape counts.
+* **Steps that use this mask** *(checked)*. Under the
+  `(mask-<code>-steps)=` label, a line "Steps:", a blank line and one
+  paragraph of `{ref}`CODE <step-NNN>`` links: the mask step and the
+  consecutive steps after it, before the next mask step, that the step
+  pages read as using its resist pattern — the mask's *Patterns* cell on
+  the index, in step order, each linked page linking the mask step.
+  Explain each step in bullets below, say where the list stops, and
+  record any exception to the rule. If the step pages' reading
+  changes, change the index's *Patterns* cell in the same branch.
+* **Evidence.** State which facts come from the PDK, which from the
+  sheet and which from the renders. The renders show drawn tape-out
+  data, not photomask artwork; their layer choices, expressions and
+  notes are one public derivation, not SkyWater's recipe; the sheet's
+  notes and the site's notes share wording and do not corroborate each
+  other. Exposure class, tone, resist and reticle type are readings,
+  marked as such, with their basis (design rules, the sheet's
+  mask-type codes as read on the index); step names and codes are not
+  evidence (Common rule 2).
+* **Design rules** are quoted from the periphery rules and *Criteria &
+  Assumptions* with their names, flags and values as published.
+* **Links.** Publishing the page is a link-only change to the index:
+  add the page to the toctree and link the mask acronym in the page's
+  row of "Mask steps in this reference" (`{ref}`CODE <mask-code>``;
+  for a row without a `masks.csv` entry, add the link in the Step
+  cell). Link the page from its mask step page (a *Related steps*
+  bullet) and, where natural, from the exposure machine page's
+  *Related pages*.
+* **Inventory.** New sources go in §8.21 of
+  `docs/references/public-sources.md` under the page's `####`
+  sub-section; the header count must equal the number of `**KEY** —`
+  lines, with no duplicate keys; an existing entry gets a separate line
+  "Also used on the <CODE> mask page." after its "Tier:" text. A mask
+  page needs at least eight Deep dive entries (`tools/check_refs.py`).
+
+Run all five checkers (`check_steps.py`, `check_refs.py`,
+`check_machines.py`, `check_materials.py`, `check_masks.py`) and the
+`-W` build as in the step-page brief.
 
 ## Reviewer brief (technical accuracy and consistency)
 
