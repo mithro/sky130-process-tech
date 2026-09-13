@@ -152,15 +152,15 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **AMAT DPS II.** SkyWater lists "AMAT DPSII, HBR, Cl2, NF3, CF4,
-  CHF3, O2 – gate, trench, W/WN".[^skw-01] Strength: **strong** for
-  the tool and for a CF₄/CHF₃/O₂ gas set; assignment to the contact
-  etch is an **inference** — the list names gate, trench and
-  tungsten applications but no dedicated dielectric etcher, which is
-  itself an open question (below).
-* **Lam 9400 TCP** ("poly/nitride, HBr, CF4, SF6, O2"[^skw-01]) and
-  **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01]) carry
-  fluorocarbon gases and could etch oxide. Strength: medium/weak.
+* **No dielectric etcher is named on SkyWater's public list.** The
+  list gives, under poly/silicon etch, "AMAT DPSII, HBR, Cl2, NF3,
+  CF4, CHF3, O2 – gate, trench, W/WN", "Lam 9400 TCP, poly/nitride,
+  HBr, CF4, SF6, O2" and "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
+  O2".[^skw-01] All three carry fluorine-bearing gases that can etch
+  oxide; strength: **weak** for assignment of any of them to the
+  contact etch, as on the metal-contact and via etches
+  ({ref}`CTME <step-108>`). Which tool performs the etch is an open
+  question (below).
 * **Lam Exelan.** No public source places an Exelan at SkyWater; it
   appears here only as the era's typical dielectric etcher, a line
   Lam's own 10-K lists.[^lam-10k]

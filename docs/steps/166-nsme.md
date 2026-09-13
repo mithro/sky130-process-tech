@@ -145,8 +145,9 @@ public):
 * **No dielectric etcher is named on SkyWater's public list.** It gives,
   under poly/silicon etch, "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2",
   "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" and "Lam 4400, HBr,
-  Cl2, C2F6, CF4, SF6, O2".[^skw-01] All carry fluorine-bearing gases;
-  strength: **weak** for assignment to this etch.
+  Cl2, C2F6, CF4, SF6, O2".[^skw-01] All three carry fluorine-bearing
+  gases that can etch oxide; strength: **weak** for assignment of any
+  of them to this etch.
 * **Lam Exelan.** No public source places one at SkyWater; it appears
   here as the era's typical dielectric etcher.[^lam-exelan]
 * **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; batch
