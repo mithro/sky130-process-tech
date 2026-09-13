@@ -250,10 +250,12 @@ product pages quoted above describe its catalogue, not SkyWater's
 purchases.[^linde-semi][^linde-eng-electronics]
 
 One further public record bears on this class. The U.S. Environmental
-Protection Agency's Greenhouse Gas Reporting Program lists a facility
-named "SKYWATER TECHNOLOGY INC" in Bloomington, Minnesota, reporting
-under subparts C and I in each year from 2011 to 2023, with "CYPRESS
-SEMICONDUCTOR CORP (100%)" as parent company in the years to 2016; its
+Protection Agency's Greenhouse Gas Reporting Program lists facility
+1000354 at 2401 E. 86th St., Bloomington, Minnesota — named "SKYWATER
+TECHNOLOGY FOUNDRY INC" in the records for 2010–2013 and "SKYWATER
+TECHNOLOGY INC" from 2014 — reporting under subparts C and I in each
+year from 2011 to 2023, with "CYPRESS SEMICONDUCTOR CORP (100%)" as
+parent company in the years to 2016; its
 subpart I entries include N₂O emissions in every one of those
 years.[^epa-ghgrp-skywater] Subpart I is the electronics-manufacturing
 category, under which facilities report "N2O emissions from CVD and other
@@ -562,8 +564,9 @@ not public.
     <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
 [^epa-ghgrp-skywater]: U.S. Environmental Protection Agency, Greenhouse
     Gas Reporting Program, Envirofacts tables `PUB_DIM_FACILITY` and
-    `PUB_FACTS_SUBP_GHG_EMISSION` for facility ID 1000354 ("SKYWATER
-    TECHNOLOGY INC", Bloomington, Minnesota), reporting years 2010–2023,
+    `PUB_FACTS_SUBP_GHG_EMISSION` for facility ID 1000354 (Bloomington,
+    Minnesota; "SKYWATER TECHNOLOGY FOUNDRY INC" for 2010–2013 and
+    "SKYWATER TECHNOLOGY INC" from 2014), reporting years 2010–2023,
     retrieved 2026-09-13.
     <https://data.epa.gov/efservice/PUB_DIM_FACILITY/FACILITY_ID/1000354/JSON>
     <https://data.epa.gov/efservice/PUB_FACTS_SUBP_GHG_EMISSION/FACILITY_ID/1000354/SUB_PART_ID/43/JSON>

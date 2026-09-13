@@ -13740,8 +13740,9 @@ industry". Used on the process gases material page. Tier: cross-check
 
 **EPA-GHGRP-SKYWATER** — U.S. Environmental Protection Agency,
 Greenhouse Gas Reporting Program, Envirofacts tables `PUB_DIM_FACILITY`
-and `PUB_FACTS_SUBP_GHG_EMISSION` for facility ID 1000354 ("SKYWATER
-TECHNOLOGY INC", Bloomington, Minnesota), reporting years 2010–2023,
+and `PUB_FACTS_SUBP_GHG_EMISSION` for facility ID 1000354 (Bloomington,
+Minnesota; "SKYWATER TECHNOLOGY FOUNDRY INC" for 2010–2013 and
+"SKYWATER TECHNOLOGY INC" from 2014), reporting years 2010–2023,
 retrieved 2026-09-13.
 <https://data.epa.gov/efservice/PUB_DIM_FACILITY/FACILITY_ID/1000354/JSON>
 <https://data.epa.gov/efservice/PUB_FACTS_SUBP_GHG_EMISSION/FACILITY_ID/1000354/SUB_PART_ID/43/JSON>
@@ -13750,8 +13751,10 @@ The facility table gives reported subparts "C" for 2010 and "C,I" for
 2011–2023, NAICS 334413, and parent company "Cypress Semiconductor
 Corporation (100%)" or "CYPRESS SEMICONDUCTOR CORP (100%)" for 2010–2016,
 "SKYWATER TECHNOLOGY FOUNDRY INC (100%)" for 2017–2019, "OXBOW INDUSTRIES
-LLC (100%)" for 2020–2022 and "SkyWater Technology Inc (100%)" for 2023
-(the facility name field carries the current name for every year). The
+LLC (100%)" for 2020–2022 and "SkyWater Technology Inc (100%)" for 2023;
+the facility name field reads "SKYWATER TECHNOLOGY FOUNDRY INC" for
+2010–2013 and "SKYWATER TECHNOLOGY INC" for 2014–2023, later names
+applied to the Cypress years, and the address is "2401 E. 86TH ST.". The
 emissions table gives, for subpart I (subpart ID 43, "Electronics
 Manufacture"), CO₂-equivalent values by gas group for each year
 2011–2023: for 2023, PFCs 47106.6, HFCs 6112.6, SF₆ 2302.8, other fully
