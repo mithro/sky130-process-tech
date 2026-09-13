@@ -200,8 +200,7 @@ system" among its accreditations.[^skw-certs] SkyWater's maintenance
 technician profile describes work on tool robots and "the pneumatic
 controls of a vacuum system".[^skw-07]
 
-Two public regulator sources describe emissions control at the Bloomington
-site. The EPA's Greenhouse Gas Reporting Program lists the facility at
+Two public regulator sources bear on emissions at the Bloomington site. The EPA's Greenhouse Gas Reporting Program lists the facility at
 2401 E. 86th St., Bloomington, as reporting under subparts "C,I" in each
 year from 2011 to 2023;[^epa-ghgrp-skywater] subpart I covers electronics
 manufacturing, whose reports include "Controlled emissions of GHGs from
@@ -226,8 +225,8 @@ names no abatement system, so that the site claims abatement is not shown
 by it.[^epa-ghgrp-skywater][^epa-subpart-i] The MPCA release refers to
 greenhouse-gas "emissions control equipment" in a permit context; it
 does not say what the equipment is, which gases or tools it serves, or
-whether it is in service (our reading).[^mpca-2025] Quartzware, chamber kits, lamps, probe cards
-and traps at SkyWater appear in no public source cited here; their
+whether it is in service (our reading).[^mpca-2025] Quartzware, chamber
+kits, lamps, probe cards and traps at SkyWater appear in no public source cited here; their
 descriptions on the step pages are industry practice.
 
 (material-hardware-consumables-steps)=
@@ -292,8 +291,8 @@ practice or supplier, literature and regulator statements.
 * **Greenhouse-gas reporting.** Electronics facilities that report under
   subpart I report fluorinated-gas and N₂O emissions and describe the
   abatement systems for which they claim destruction or removal
-  efficiency;[^epa-subpart-i] the Bloomington facility has
-  reported under that subpart since 2011.[^epa-ghgrp-skywater]
+  efficiency;[^epa-subpart-i] the Bloomington facility's records show
+  subpart I reports for each year from 2011 to 2023.[^epa-ghgrp-skywater]
 * **Probe-card care.** Tips are cleaned to restore contact
   resistance,[^wiki-probecard] and contact resistance varies with probe
   material and temperature.[^broz-1999]
