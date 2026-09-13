@@ -120,7 +120,7 @@ polisher, which is what this step needs.
   (SkyWater statement).
 * **Post-CMP clean** — SkyWater lists the "SEZ223, Davinci"
   single-wafer tools (HF, DSP+HF)[^skw-01] and the technician profile
-  mentions "the SEZ etcher tool".[^skw-07] Strength: strong for
+  mentions "a SEZ etcher tool".[^skw-07] Strength: strong for
   existence; a brush scrubber is not named on any public page (open
   question).
 
@@ -156,7 +156,7 @@ polisher, which is what this step needs.
   nitride – niobium – aluminum – tungsten …"; SEZ223 /
   DaVinci.[^skw-01]
 * SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
-  "the SEZ etcher tool".[^skw-07]
+  "a SEZ etcher tool".[^skw-07]
 * SkyWater PDK, *Criteria & Assumptions* — field oxide 0.07 µm above
   silicon under poly.[^pdk-03]
 * SkyWater PDK, *Layers Reference* — "fom_waffles".[^pdk-06]

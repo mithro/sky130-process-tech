@@ -164,7 +164,7 @@ recipe is not public):
   (SkyWater statement); assignment to this step follows from the
   film.
 * **Post-CMP clean — SEZ223 / DaVinci** single-wafer tools;[^skw-01]
-  "the SEZ etcher tool" of the maintenance page.[^skw-07] A brush
+  a "SEZ etcher tool" on the maintenance page.[^skw-07] A brush
   scrubber is not named (open question).
 * **Defect inspection — KLA AIT / SP1.**[^job-01] Strength: medium.
 
@@ -200,7 +200,7 @@ recipe is not public):
 * SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP – oxide";
   SEZ223 / DaVinci.[^skw-01]
 * SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
-  "the SEZ etcher tool".[^skw-07]
+  "a SEZ etcher tool".[^skw-07]
 * Indeed, SkyWater *Defect Technician 2* posting — inspection
   tools.[^job-01]
 * SkyWater PDK, *Periphery rules* — m1.pd.1 (0.7), the `cmm1`

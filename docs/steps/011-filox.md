@@ -108,7 +108,7 @@ An industry-generic HDP-CVD {term}`STI` fill for a 200 mm, 130 nm-era fab:
 SkyWater lists the capability directly: "Lam/Novellus High Density
 Plasma (HDP) doped and phos doped with sputter etch" among its film
 deposition tools,[^skw-01] and a SkyWater maintenance technician's
-profile refers to "the Novellus high density plasma tool".[^skw-07]
+profile refers to "a Novellus high density plasma tool".[^skw-07]
 
 ## Machines typically used
 
@@ -124,7 +124,7 @@ profile refers to "the Novellus high density plasma tool".[^skw-07]
 
 * **Novellus (now Lam) HDP-CVD.** SkyWater names "Lam/Novellus High
   Density Plasma (HDP)" with sputter etch,[^skw-01] and the technician
-  profile names "the Novellus high density plasma tool".[^skw-07]
+  profile names "a Novellus high density plasma tool".[^skw-07]
   Strength: strong (two SkyWater statements). The model (SPEED is the
   Novellus HDP product line) is our inference, not a SkyWater
   statement.
