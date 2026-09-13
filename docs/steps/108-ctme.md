@@ -184,9 +184,10 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   for the oxide and nitride etch steps (industry practice;[^nojiri-2015]
   SkyWater lists CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]).
 * **Helium** for backside cooling; **NF₃** or O₂-based chamber clean.
-* **O₂/N₂** (and {term}`forming gas` or CF₄) for the ash;[^skw-01]
-  **amine or semi-aqueous solvent** (EKC265/EKC270 class) and DI water
-  for the post-etch clean.[^skw-01]
+* **O₂/N₂** (and {term}`forming gas`) for the ash;[^skw-01] CF₄, listed on
+  the Iridia and Mattson ashers,[^skw-01] would attack the exposed TiN and
+  would, we infer, be left out. **Amine or semi-aqueous solvent**
+  (EKC265/EKC270 class) and DI water for the post-etch clean.[^skw-01]
 * **Chamber consumables** (liners, focus and edge rings, electrodes),
   **monitor wafers** with blanket oxide and nitride for rate and
   selectivity checks.
