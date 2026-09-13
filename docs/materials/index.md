@@ -285,6 +285,225 @@ with its inferences marked there.
 | "TOPNIT K=7.5" | {ref}`NTSD <step-167>` | 0.54 µm on the metal-5 top, 0.4223 µm on its sidewall[^pdk-04] | As above, and "7000 +/- 2000A Nitride"[^cyp-qtp-113005] | PECVD silicon nitride |
 | "PI1 K=2.94" | no step | Drawn over the passivation, no thickness[^pdk-04] | "Polyimide cure" is a furnace entry[^skw-01] | Not part of the step list |
 
+## Safety and abatement
+
+Several consumables of the flow are hazardous in ways that shape how
+they are delivered and exhausted. Silane is "a colorless, pyrophoric
+gas";[^wiki-silane] phosphine is "a highly toxic respiratory
+poison";[^wiki-ph3] arsine is described as "flammable, pyrophoric, and
+highly toxic";[^wiki-ash3] boron trifluoride is "toxic" and
+"corrosive";[^wiki-bf3] and tungsten hexafluoride is "a toxic,
+corrosive, colorless gas".[^wiki-wf6] Typical forming-gas
+formulations, by contrast, "are not explosive".[^wiki-fg] The step
+pages describe the implant gases as delivered in sub-atmospheric or dilute
+cylinders from monitored gas cabinets ({ref}`category-implant`). They
+also list the by-products that need abatement: the HCl and ammonium
+chloride of dichlorosilane nitride furnaces
+({ref}`ISONIT <step-003>`[^txt-02]), the HF and SiF₄ of tungsten CVD
+({ref}`WDEP <step-099>`[^txt-09]), arsenic-bearing ash and spent acid
+after arsenic implants ({ref}`ASTIS <step-067>`), chlorine from the
+metal etches ({ref}`MM1E <step-114>`), fluorocarbons from the
+dielectric etches ({ref}`NSME <step-166>`), and the metal-laden slurry
+waste of the tungsten polishes ({ref}`WCMP2 <step-111>`[^txt-07]).
+No public SkyWater source describes the fab's gas delivery, abatement
+or waste treatment.
+
+(materials-open-questions)=
+## Open questions and inconsistencies
+
+The step pages were written separately, and their *Resources
+required* sections do not always describe analogous steps in the same
+way. The differences below are recorded as found; this page does not
+decide between them, and the step pages are unchanged.
+
+### Chemistries of analogous steps
+
+* **Implant-strip wet cleans.** Eleven of the fourteen implant-strip
+  pages list SC-2 (or its hydrochloric acid) after SPM and SC-1
+  ({ref}`DNIS <step-009>`,
+  {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`,
+  {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`,
+  {ref}`PWDEIS <step-033>`, {ref}`UPRIS <step-057>`,
+  {ref}`ASTIS <step-067>`, {ref}`LDASTIS <step-074>`,
+  {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`); three list SPM and
+  SC-1 only ({ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`,
+  {ref}`HVASTIS <step-070>`). Only {ref}`PWDEIS <step-033>` lists dilute
+  HF ("only if the oxide is removed").
+* **Ash additions after implants.** A small CF₄ addition is used
+  "for some recipes" at {ref}`DNIS <step-009>`; it "would normally be
+  omitted" at {ref}`LVTNIS <step-016>`, "is normally omitted" at
+  {ref}`LVTPIS <step-021>` and {ref}`ASTIS <step-067>`, and "would be
+  omitted, we infer" at {ref}`HVASTIS <step-070>` and
+  {ref}`LDASTIS <step-074>`; the other strips do not mention it. Water
+  vapour appears at {ref}`PRIS <step-054>`, {ref}`PDIS <step-084>` and
+  {ref}`NSDIS <step-087>`, and NH₃ at the last two only. SkyWater's
+  asher entries list NH3 (Iridia) and CF4 (Iridia, Mattson) but no
+  water vapour.[^skw-01]
+* **Post-CMP cleans.** For oxide polishes the listed chemistry is
+  "dilute NH₄OH / surfactant / dilute HF" ({ref}`CMPNIT <step-012>`),
+  "dilute NH₄OH, dilute HF" ({ref}`CMPP <step-090>`), "dilute NH₄OH"
+  alone ({ref}`CMPL <step-106>`) and "dilute NH₄OH, possibly dilute
+  HF" ({ref}`CMPM <step-116>` to {ref}`CMPM4 <step-157>`). For tungsten
+  polishes it is "dilute NH₄OH, citric acid, dilute HF"
+  ({ref}`WCMPLI <step-100>`), "dilute NH₄OH or TMAH, possibly dilute
+  HF" ({ref}`WCMP2 <step-111>` to {ref}`WCMP4 <step-133>`) and "dilute
+  NH₄OH or TMAH" without HF ({ref}`WCMP5 <step-148>`). Pads are
+  "IC1000/Suba IV class" on {ref}`CMPP <step-090>`,
+  {ref}`WCMPLI <step-100>` and {ref}`CMPL <step-106>`, "polyurethane"
+  or "stacked polyurethane" on six other polish pages, and unqualified
+  on {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>` and
+  {ref}`CMPM4 <step-157>`.
+* **The two MiM plate etches.** {ref}`CAPME <step-138>` lists "SF₆ or
+  CF₄, Cl₂ and/or BCl₃, Ar or N₂"; {ref}`CAP2ME <step-153>` lists "Cl₂
+  or Br₂ (or HBr), a small flow of CHF₃, CF₄ or CH₂F₂, and Ar or He".
+  Both pages read the plate as TiW, and the PDK calls the two
+  capacitor constructions "identical".[^pdk-07] The two pages also
+  quote different subsets of SkyWater's poly/silicon etcher gases
+  (Cl₂, CF₄ and SF₆ against Cl₂, HBr, CF₄ and CHF₃).
+* **Metal etches.** The cap breakthrough is "CF₄ or SF₆" at
+  {ref}`MM1E <step-114>` and {ref}`MM2E <step-125>`, "CF₄ or CHF₃" at
+  {ref}`MM3E <step-140>` and {ref}`MM4E <step-155>`, and "a fluorine-
+  or chlorine-bearing mixture" at {ref}`MM5E <step-163>`; the ash is
+  "O₂/N₂ and H₂/N₂" on the first two and "O₂/N₂" on the last three; CH₄
+  is a possible additive on the first two only. {ref}`MM1E <step-114>`
+  and {ref}`MM2E <step-125>` say "SkyWater names Cl₂ and CF₄ on its
+  etchers", while the metal-3 to metal-5 pages add that "SkyWater lists
+  no gases for its metal etchers"; the capability list's metal-etch
+  entries ("Lam 9600, Al, TiW, TiN, Pt"; "Lam 2300 Versys, Al, TiW, TiN,
+  Nb, Pt") carry no gases.[^skw-01]
+* **Contact, via and seal-ring oxide etches.** C₂F₆ is a possible
+  addition at {ref}`LICM1E <step-094>` but a listed gas at
+  {ref}`CTME <step-108>`, {ref}`VIME <step-119>`,
+  {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`,
+  {ref}`VIM4E <step-160>` and {ref}`NSME <step-166>`. The optional
+  additions are "CO or N₂" on CTME, VIME and VIM2E and "CO" on VIM3E and
+  VIM4E. Forming gas or CF₄ in the ash appears on CTME, VIME and VIM2E
+  but not on VIM3E, VIM4E or NSME, and {ref}`LICM1E <step-094>` lists no
+  post-etch solvent, which the other contact and via etches do.
+* **HMDS on BARC levels.** HMDS is listed with BARC at
+  {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`,
+  {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`,
+  {ref}`CTM1 <step-107>`, {ref}`VIM <step-118>`,
+  {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>` and
+  {ref}`VIM4 <step-159>`, but not at {ref}`MM1 <step-113>`,
+  {ref}`MM2 <step-124>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`,
+  {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>` or
+  {ref}`MM5 <step-162>`.
+* **Developer strength.** Six resources sections give it as
+  "2.38 %" ({ref}`FOM <step-004>`, {ref}`TUNM <step-035>`,
+  {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`,
+  {ref}`RPM <step-049>`, {ref}`P1M <step-061>`), 23 as "0.26 N", and
+  seven without a strength. These are two expressions of one solution:
+  the {ref}`lithography category page <category-lithography>` gives the
+  industry-standard strength as "0.26 N (2.38 wt.%)".
+* **Cap-oxide carriers.** The pages give "helium or argon diluent"
+  ({ref}`NCAPOX <step-091>`), "helium or nitrogen carrier"
+  ({ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`) and "helium
+  carrier" ({ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`,
+  {ref}`NFUSOX <step-164>`) for what the pages describe as the same
+  kind of film.
+* **RTA ambient.** {ref}`RTAI <step-034>`, {ref}`RTAD2 <step-092>` and
+  {ref}`CSIL <step-098>` cite SkyWater for nitrogen and argon as the
+  process ambient; {ref}`TIPRTAD <step-075>` and {ref}`RTAD <step-088>`
+  write "likely ambient; SkyWater's list gives the tool's gases". The
+  list gives the tool's gases, "NH3, Ar, N2, O2", and no
+  ambient for any step.[^skw-01]
+
+### Supplier statements
+
+* **Developer.** {ref}`P1M <step-061>` says the developer is "supplied
+  by Air Products"; other pages say "Air Products per the S-1" or that
+  the S-1 "names Air Products (Moses Lake) as a developer supplier".
+  The S-1 names "Air Products & Chemicals, Inc., Moses Lake
+  (developer)" and the fiscal 2023 10-K "Moses Lake Industries Inc.
+  (developer)"; neither ties a developer to a layer.[^sec-01][^sec-02]
+* **Dates of supplier lists.** Most front-end pages cite both filings
+  for gas suppliers (Air Products, Praxair, Linde, Airgas), while most
+  pages from {ref}`PSG <step-089>` onwards cite the S-1 alone (Air
+  Products, Praxair). The CMP pages that name a chemical supplier
+  ({ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`,
+  {ref}`CMPL <step-106>`) name KMG Chemicals from the S-1; none cites
+  the 10-K's "CMC Chemicals, Inc. (a subsidiary of Entegris) (process
+  and chemical mechanical polishing chemicals)".[^sec-02] The
+  lithography pages name the S-1's three photoresist suppliers, not the
+  10-K's four. {ref}`TI/TIN1 <step-097>` and {ref}`LITIN <step-101>`
+  name Honeywell as the target supplier; the later PVD pages add JX
+  Metals from the 10-K.
+
+### Spellings and transcriptions against SkyWater's page
+
+* SkyWater writes "Gasonic PEP"; 31 step pages write "Gasonics PEP"
+  (some pages use both forms).
+* SkyWater writes "EKS265, EKC270 solvents"; 15 pages quote that, and
+  seven describe the chemistry as "EKC265/270" or "EKC265/EKC270"
+  class. The page does not say whether "EKS265" and "EKC265" are the
+  same product.
+* SkyWater writes "Mattson Aspen2", "Davinci" and "TEL ProZ Lithius
+  track"; many pages write "Aspen 2", "DaVinci" and "TEL ProZ/Lithius".
+* SkyWater writes "HBR" in the DPSII entry and "HBr" elsewhere;
+  {ref}`TUNARCE <step-036>` and {ref}`ONOME <step-042>` quote the DPSII
+  entry with "HBr".
+* SkyWater writes "Sulfuric"; the step pages use "sulphuric" outside
+  quotations, following this reference's British spelling. The pages
+  themselves use both "novolac" ({ref}`FOM <step-004>`,
+  {ref}`DNM <step-007>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`)
+  and "novolak" (the other pages and the lithography category page).
+* {ref}`DNIS <step-009>` describes the Akrion bench as having "spin
+  and IPA drying"; SkyWater writes "spin or IPA dry". Some pages join
+  sub-items of the list into one quotation — {ref}`GOX100 <step-043>`
+  quotes "Furnaces are all made by Aviza: wet oxidation to 1150C, dry
+  oxidation to 1150C", where the page has separate lines and no colon,
+  and {ref}`CAP2ME <step-153>` quotes "Batch Rotational (EKS265, EKC270
+  solvents …)".[^skw-01]
+
+### Open questions
+
+* **Entries not explained.** SkyWater's LPCVD nitride entry reads
+  "with NH3 and also DH3", and its single-wafer entry lists "DSP+HF";
+  the page expands neither, and no step page discusses "DH3".[^skw-01]
+  The step pages describe furnace nitride from dichlorosilane and
+  ammonia, a precursor the list does not name.
+* **"PECVD Tungsten".** SkyWater lists "Lam/Novellus PECVD
+  Tungsten";[^skw-01] the step pages describe the plug fill as chemical
+  vapour deposition from WF₆ reduced by hydrogen, with a silane or
+  diborane nucleation layer. {ref}`WDEP2 <step-110>` to
+  {ref}`WDEP5 <step-147>` read the wording as a label for the tungsten
+  CVD tool rather than evidence of a plasma-assisted deposition;
+  {ref}`WDEP <step-099>` quotes it without comment. No public source
+  clarifies it.
+* **Listed but unused.** The list names "Cobalt" among the PVD films,
+  "Polyimide cure" and "Atmospheric selective oxidation" among the
+  furnace processes, and "CO2 injected DI" and "IPA clean" among the
+  cleans.[^skw-01] No step page's resources section lists a cobalt
+  target, a polyimide or a selective oxidation; the
+  {ref}`TIAL6 <step-112>` page mentions the cobalt entry and the
+  {ref}`NTSD <step-167>` page the polyimide cure, no step page mentions
+  the two cleans, and only {ref}`CMPM4 <step-157>` quotes the Mirra's
+  "Track ammonia clean". The PDK stack diagram draws a polyimide, "PI1
+  K=2.94", for which the step list has no step.[^pdk-04]
+* **Diagram labels without a step reading.** The stack diagram also
+  carries an "IOX K=3.9" label and dimensions of 0.006 µm, 0.0431 µm
+  and 0.121 µm that no step page, including {ref}`IOX45 <step-063>`,
+  uses.[^pdk-04]
+* **What "doped" means.** SkyWater's HDP entry reads "doped and phos
+  doped"; the dopant of the first is not given. The fluorinated-oxide
+  option of {ref}`NILD3 <step-115>` and {ref}`NILD4 <step-126>` rests on
+  the PDK's "_C" films, not on this entry.[^skw-01]
+* **No materials for many tools.** No public source names the gases of
+  the metal etchers or the sputtering and CVD tools, or the furnace
+  gases beyond what the process names imply ("LPCVD nitride, with NH3
+  and also DH3", "Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and
+  forming gas alloy"), nor any slurry, pad, BARC or resist product or a
+  developer concentration. The implanter entries give species ("B11,
+  BF2, P, As") but not whether they come from gas or solid sources, and none
+  names indium.[^skw-01]
+* **Which materials SKY130 uses.** None of the public SkyWater sources
+  ties a gas, chemical, target or resist to a step, and the capability
+  list covers other processes at the fab, including copper, niobium and
+  193 nm lithography.[^skw-01] Every *Steps* entry above therefore
+  follows the step pages' readings, and every row marked *typical (not
+  listed)* is industry practice, not a SkyWater statement.
+
 <!-- footnotes -->
 
 [^txt-07]: M. Quirk and J. Serda, *Semiconductor Manufacturing
@@ -407,3 +626,13 @@ with its inferences marked there.
     drawing.
     <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/cap_mim/cross-section-cap_mim.svg>
+[^wiki-silane]: Wikipedia, *Silane*. <https://en.wikipedia.org/wiki/Silane>
+[^wiki-ph3]: Wikipedia, *Phosphine*. <https://en.wikipedia.org/wiki/Phosphine>
+[^wiki-ash3]: Wikipedia, *Arsine*. <https://en.wikipedia.org/wiki/Arsine>
+[^wiki-bf3]: Wikipedia, *Boron trifluoride*.
+    <https://en.wikipedia.org/wiki/Boron_trifluoride>
+[^wiki-wf6]: Wikipedia, *Tungsten hexafluoride*.
+    <https://en.wikipedia.org/wiki/Tungsten_hexafluoride>
+[^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
+    Manufacturing Technology*, 2nd ed., CRC Press, 2007,
+    ISBN 978-1-57444-675-3. <https://openlibrary.org/isbn/9781574446753>
