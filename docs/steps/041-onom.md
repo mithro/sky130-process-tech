@@ -113,9 +113,9 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
    (the PDK's generic 1.14 µm[^pdk-03]); etch {term}`selectivity`, not implant
    stopping, sets the thickness here.
 4. **Exposure.** Through the ONO {term}`reticle` on an i-line {term}`stepper` (our
-   inference from feature size, as on {ref}`TUNM <step-035>`; the 2001
-   ITRS reserves 248 nm for the critical layers of the 130 nm
-   node[^itrs-03]). Overlay would be measured to the `TUNM` layer,
+   inference from feature size, as on {ref}`TUNM <step-035>`; ASML
+   describes older exposure tools that "migrate to the lithography of
+   choice for less critical layers"[^asml-30]). Overlay would be measured to the `TUNM` layer,
    because the island-to-window enclosure is the quantity that matters.
    Overlay budgets and how alignment-mark placement limits them are
    treated by Levinson[^levinson-2005] and by van Haren et
@@ -200,8 +200,8 @@ etch).
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — wavelength by layer criticality at the
-  130 nm node.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 * Levinson, *Principles of Lithography* — overlay budgets and
   non-critical-layer tool choice.[^levinson-2005]
 * van Haren et al., SPIE 2019 — alignment-mark placement and
@@ -266,6 +266,8 @@ etch).
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
+    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
     SPIE Press, 2005, ISBN 978-0-8194-5660-1.
     <https://doi.org/10.1117/3.601520>

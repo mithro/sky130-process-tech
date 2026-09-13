@@ -107,8 +107,9 @@ An industry-generic implant-block lithography sequence for a 200 mm,
    and tens-of-keV halo are stopped with a wide margin.[^txt-02]
 3. **Exposure.** The openings are memory-array sized; even the
    smallest, over an isolated test cell, is far above i-line
-   resolution.[^wiki-litho] With ITRS 2001 reserving 248 nm for the
-   critical layers,[^itrs-03] we infer an i-line exposure.
+   resolution.[^wiki-litho] With older exposure tools migrating, in
+   ASML's words, "to the lithography of choice for less critical
+   layers",[^asml-30] we infer an i-line exposure.
 4. **Alignment.** To poly. Because the array is dense — cells at
    0.15–0.22 µm gate length with shared source/drain lines[^pdk-07] —
    the resist edge at the array boundary must stand back from the
@@ -214,7 +215,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   implants for different transistors on one chip.[^pat-multi-ldd-amd]
 * Hook et al. (IBM), *IEEE TED* 2003 — mask-proximity effects at the
   array edge.[^hook-2003]
-* ITRS 2001, *Lithography* — wavelength by layer criticality.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 * Levinson, *Principles of Lithography* — overlay and non-critical
   layer tooling.[^levinson-2005]
 
@@ -269,6 +271,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
+    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^pap-01]: M. H. White, D. A. Adams and J. Bu, "On the go with SONOS",
     *IEEE Circuits and Devices Magazine* **16**(4), 22–31 (2000).
     <https://doi.org/10.1109/101.857747>

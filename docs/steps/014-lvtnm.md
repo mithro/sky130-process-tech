@@ -118,8 +118,9 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 3. **Exposure.** The 0.380 µm minimum width and space[^pdk-periph] are
    comfortably within reach of an i-line (365 nm) {term}`stepper`: at {term}`NA` 0.6 the
    process factor is {term}`k₁ <k1>` = 0.38 × 0.6 / 0.365 ≈ 0.62, well above the "0.4
-   for production" level.[^wiki-litho] ITRS 2001 reserves 248 nm for the
-   critical layers of the 130 nm node.[^itrs-03] We therefore infer that
+   for production" level.[^wiki-litho] ASML describes older exposure
+   tools that "migrate to the lithography of choice for less critical
+   layers".[^asml-30] We therefore infer that
    `LVTNM` is an **i-line layer**, like the other implant-block masks of
    this module and unlike {ref}`FOM <step-004>`.
 4. **Alignment.** To the STI pattern. The tightest coupling of this
@@ -298,6 +299,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
+    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
     Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
     978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>

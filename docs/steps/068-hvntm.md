@@ -114,9 +114,10 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
    penetration" of 0.02 µm[^pdk-03] acknowledges that the resist edge
    is not a perfect wall to a 40° beam.
 3. **Exposure.** The 0.7 µm width and space rules[^pdk-periph] are far
-   above i-line resolution ({term}`k₁ <k1>` ≈ 1.2 at {term}`NA` 0.6);[^wiki-litho] with ITRS
-   2001 reserving 248 nm for critical layers,[^itrs-03] we infer an
-   i-line exposure.
+   above i-line resolution ({term}`k₁ <k1>` ≈ 1.2 at {term}`NA` 0.6);[^wiki-litho] with older
+   exposure tools migrating, in ASML's words, "to the lithography of
+   choice for less critical layers",[^asml-30] we infer an i-line
+   exposure.
 4. **Alignment.** To poly (inferred; the alignment tree is not public).
    The {term}`overlay` requirement comes from the shadowing geometry: the
    0.232 µm "HVNTM shadowing" and 0.1 µm minimum tip-opening
@@ -232,7 +233,8 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
   self-aligned channel and drain extensions.[^pat-demos-ti]
 * Gardner, Hause and Fulford (AMD), US 5,793,090 — separate LDD
   implants for different transistors on one chip.[^pat-multi-ldd-amd]
-* ITRS 2001, *Lithography* — wavelength by layer criticality.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 * Mack, *Fundamental Principles of Optical Lithography* — thin-resist
   imaging and reflective notching.[^mack-2007]
 
@@ -298,6 +300,8 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
+    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^hori-1989-latid]: T. Hori, "1/4-μm LATID (LArge-Tilt-angle Implanted
     Drain) technology for 3.3-V operation", *IEDM 1989 Technical
     Digest*, pp. 777–780. <https://doi.org/10.1109/IEDM.1989.74169>

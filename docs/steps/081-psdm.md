@@ -122,8 +122,9 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
    implanter,[^romig-1996] describe what goes wrong when it does not.
 3. **Exposure.** At 0.380 µm minimum width and space,[^pdk-periph] an
    i-line stepper at NA 0.6 works at k₁ = 0.38 × 0.6 / 0.365 ≈ 0.62,
-   well above the "0.4 for production" limit;[^wiki-litho] ITRS 2001
-   reserves 248 nm for the critical layers.[^itrs-03] We infer an
+   well above the "0.4 for production" limit;[^wiki-litho] ASML
+   describes older exposure tools that "migrate to the lithography of
+   choice for less critical layers".[^asml-30] We infer an
    **i-line** exposure, as for the earlier implant-block masks.
 4. **Alignment.** To the active/STI pattern for the 0.125 µm
    diffusion enclosure and to poly for the resistor and licon.9
@@ -213,7 +214,8 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — wavelength by layer and node.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 * Hook et al. (IBM), *IEEE TED* 2003 — lateral straggle and the
   implant mask-proximity effect.[^hook-2003]
 * Sheu et al. (TSMC), *IEEE TED* 2006 — well-edge proximity
@@ -290,6 +292,8 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
+    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^hook-2003]: T. B. Hook, J. Brown, P. Cottrell, E. Adler, D. Hoyniak,
     J. Johnson and R. Mann, "Lateral Ion Implant Straggle and Mask
     Proximity Effect", *IEEE Transactions on Electron Devices*
