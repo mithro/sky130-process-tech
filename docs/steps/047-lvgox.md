@@ -145,7 +145,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **Aviza vertical furnaces** — "wet oxidation to 1150C, dry
+* **Aviza vertical furnaces** — "wet oxidation to 1150C", "dry
   oxidation to 1150C".[^skw-01] Strength: **strong** for the tool;
   **inference** for the assignment to `LVGOX`.
 * **AG Associates Heatpulse 8808** — "NH3, Ar, N2, O2, up to

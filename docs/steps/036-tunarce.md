@@ -136,7 +136,7 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **Applied Materials DPS II.** SkyWater lists "AMAT DPSII, HBr, Cl2,
+* **Applied Materials DPS II.** SkyWater lists "AMAT DPSII, HBR, Cl2,
   NF3, CF4, CHF3, O2 – gate, trench, W/WN".[^skw-01] The HBr/O₂ gas set
   is exactly an organic-ARC-open chemistry. Strength: **strong** for
   the tool; **inference** for its assignment to `TUNARCE`.

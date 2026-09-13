@@ -151,8 +151,8 @@ fab (SKY130's recipe is not public):
   phosphoric, BOE, spin or IPA dry".[^skw-01] BOE is the chemistry the
   Cypress patent names for this etch.[^pat-04] Strength: **strong** for
   the tool; **inference** for the assignment.
-* **DNS wet bench** — "industry standard HF/SC1/SC2, dilute HF-last
-  with IPA dry"[^skw-01] — the natural home of the pre-oxidation clean.
+* **DNS wet bench** — "industry standard HF/SC1/SC2" and "dilute
+  HF-last with IPA dry"[^skw-01] — the natural home of the pre-oxidation clean.
   Strength: strong for existence; inference for assignment.
 * **FSI Mercury** ("HF/SC1/SC2 rotational") and **SEZ 223 / DaVinci
   single-wafer** ("HF, DSP+HF, titration controlled").[^skw-01]
