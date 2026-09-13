@@ -42,6 +42,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done ·
 - [x] Steps 164–171: passivation, pad, alloy, test — reviewed and merged 2026-09-13 (25 inventory entries added as §8.16; all 171 step pages written)
 - [x] Cite the public *S8 / SKY130 Process Steps* sheet (STEPS-SHEET) on the landing page, steps index and every step page — 2026-09-13
 - [ ] Use the sheet's mask tabs (masks made per MPW run, mask types, plate labels) on the mask index and lithography pages
+- [ ] Tool-name and grade consistency sweep across step pages (inconsistencies listed on the machine index: SkyWater spellings such as "Gasonic PEP", "Aspen2", "ProZ Lithius", "SEZ223, Davinci", "Ag Heatpulse"; differing etcher, cap-oxide, CMP and implanter grades for analogous steps)
 
 ## Phase 2b — Citation conversion (added 2026-08-30)
 
