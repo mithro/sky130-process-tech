@@ -161,7 +161,7 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 ## Resources required
 
 * **DUV (chemically amplified) or i-line photoresist** and **organic
-  BARC**; SkyWater's S-1 names Dow, JSR and Tokyo Ohka Kogyo as resist
+  BARC**; SkyWater's 2021 S-1 names Dow, JSR and Tokyo Ohka Kogyo as resist
   suppliers.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover,
   rinse solvents, DI water and nitrogen.

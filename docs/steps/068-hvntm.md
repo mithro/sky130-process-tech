@@ -150,7 +150,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 ## Resources required
 
 * **Positive i-line photoresist** at a thin-film viscosity, about
-  0.3 µm;[^pdk-03] SkyWater's S-1 names The Dow Chemical Company, JSR
+  0.3 µm;[^pdk-03] SkyWater's 2021 S-1 names The Dow Chemical Company, JSR
   Corporation and Tokyo Ohka Kogyo America as photoresist
   suppliers.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, DI
