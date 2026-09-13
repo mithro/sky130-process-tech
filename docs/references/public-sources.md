@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1542
+written page has exactly one entry here; the inventory holds 1554
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -73,6 +73,7 @@ Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
+Also used on the substrates material page.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -100,6 +101,7 @@ labels 5.2523, 6.1346, 0.4223 and 0.070 µm dimension the
 metal5/passivation region). Tier: cross-check.
 Also used on the PECVD, HDP-CVD and PVD cluster tool pages.
 Also used on the sputter targets material page.
+Also used on the substrates material page.
 
 **PDK-05** — *Masks* page and `masks.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -495,6 +497,7 @@ Tier: cross-check (SkyWater statement).
 Also used on the wet chemicals material page.
 Also used on the lithography materials material page.
 Also used on the sputter targets material page.
+Also used on the substrates material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -508,6 +511,7 @@ top metal "1.2 µm", "Mask Steps" "30 – 34", isolation "STI", gate
 "Poly", precision resistors "2000Ω/□ 300Ω/□ (Both P-poly)", inductor
 "No" and polyimide "Yes" (all used on the overview page). Tier:
 cross-check.
+Also used on the substrates material page.
 
 **SKW-03** — SkyWater Technology, *"RH90: The Next-Generation Stateside
 Strategic Rad-Hard by Process Technology"*, 2023-03-14.
@@ -667,6 +671,7 @@ Also used on the sputter targets material page, which also quotes the
 "Business" section: "Before we began independent operations, our fab
 was owned and operated by Cypress Semiconductor Corporation, or Cypress,
 as a captive manufacturing facility for 20 years".
+Also used on the substrates material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -686,6 +691,7 @@ Also used on the PVD cluster tool page.
 Also used on the wet chemicals material page.
 Also used on the lithography materials material page.
 Also used on the sputter targets material page.
+Also used on the substrates material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -850,6 +856,7 @@ Minnesota" — the clearest public statement that **S8 was a Fab 4
 process** — and the starting-wafer supplier qualification. Tier:
 cross-check.
 Also used on the starting-material machine page.
+Also used on the substrates material page.
 
 **CYP-07** — Cypress Semiconductor Corp., Form 10-Q/A for Q1 2003.
 <https://www.sec.gov/Archives/edgar/data/0000791915/000120677403000508/d12840.htm>.
@@ -1025,6 +1032,7 @@ tunnel dielectric 1.0–4.0 nm, oxynitride charge-trapping layers
 oxide 1–3 nm, indium channel doping.
 Also used on the wet bench page. Tier: deep dive.
 Also used on the wet chemicals material page.
+Also used on the substrates material page.
 
 **PAT-STI-CR** — US 7,439,141 B2, *"Shallow trench isolation approach
 for improved STI corner rounding"*, U. Kim, Y. Sun, M. S. Chang et al.;
@@ -1214,6 +1222,7 @@ Also used on the silicon and polysilicon plasma etcher and dielectric
 and nitride plasma etcher pages.
 Also used on the PECVD, HDP-CVD and tungsten CVD pages.
 Tier: high-level.
+Also used on the substrates material page.
 
 **TXT-02** — S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
 Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
@@ -1266,6 +1275,7 @@ Also used on the starting-material machine page.
 Also used on the defect and particle inspection and film thickness and
 stress metrology pages.
 Tier: high-level.
+Also used on the substrates material page.
 
 **TXT-08** — H. Xiao, *Introduction to Semiconductor Manufacturing
 Technology*, 2nd ed., SPIE Press, 2012, ISBN 978-0-8194-9092-6.
@@ -1300,6 +1310,7 @@ The chapters most useful for a 130 nm flow (all verified PDFs):
 **ITRS-01** — ITRS 2001, *Front End Processes*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>.
 Starting material, STI, gate stack, junctions, contacts. Tier: deep dive.
+Also used on the substrates material page.
 
 **ITRS-02** — ITRS 2001, *Interconnect*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>.
@@ -1618,6 +1629,7 @@ category page. Tier: high-level.
 <https://en.wikipedia.org/wiki/GlobalWafers> Company article on
 GlobalWafers, a wafer supplier named in SkyWater's Form S-1 (SEC-01).
 Used on the substrate category page. Tier: high-level.
+Also used on the substrates material page.
 
 **WIKI-H3PO4** — Wikipedia, *Phosphoric acid*.
 <https://en.wikipedia.org/wiki/Phosphoric_acid> Phosphoric acid, the hot
@@ -1986,6 +1998,7 @@ parameter containing the channel doping. Used on steps 015, 020, 023 and
 thickness, notch, orientation and doping ranges. Used on step 001 and
 the substrate category page. Tier: high-level.
 Also used on the starting-material machine page.
+Also used on the substrates material page.
 
 **WIKI-WF6** — Wikipedia, *Tungsten hexafluoride*.
 <https://en.wikipedia.org/wiki/Tungsten_hexafluoride> Tungsten
@@ -2835,6 +2848,7 @@ on steps 006 and 011. Tier: deep dive.
 of oxygen precipitation in CZ silicon, the basis of internal gettering
 and a driver of wafer warpage through the thermal budget. Used on step
 001 and the substrate category page. Tier: deep dive.
+Also used on the substrates material page.
 
 **BRYANT-1994** — A. Bryant, W. Hänsch and T. Mii, "Characteristics of
 CMOS device isolation for the ULSI age", *Proc. 1994 IEEE International
@@ -2923,6 +2937,7 @@ Science and Engineering: B* **73**(1–3), 87–94 (2000).
 point defects in crystals and wafers, the basis of "perfect silicon" and
 controlled precipitation. Used on step 001 and the substrate category
 page. Tier: deep dive.
+Also used on the substrates material page.
 
 **FAZAN-1993** — P. C. Fazan and V. K. Mathews, "A highly manufacturable
 trench isolation process for deep submicron DRAMs", *Proc. IEEE
@@ -2992,6 +3007,7 @@ step 004. Tier: deep dive.
 (intrinsic and extrinsic) that a bulk-wafer process relies on to keep
 metals away from junctions. Used on step 001 and the substrate category
 page. Tier: deep dive.
+Also used on the substrates material page.
 
 **KASTENMEIER-1999** — B. E. E. Kastenmeier, P. J. Matsuo and G. S.
 Oehrlein, "Highly selective etching of silicon nitride over silicon and
@@ -3191,6 +3207,7 @@ identified "crystal-originated singularities" (COPs) revealed by SC-1
 cleaning, the defect class that gate-oxide yield depends on. Used on
 step 001 and the substrate category page. Tier: deep dive.
 Also used on the starting-material machine page.
+Also used on the substrates material page.
 
 **STAFFA-1995** — J. Staffa, D. Hwang, B. Luther, J. Ruzyllo and R.
 Grant, "Temperature dependence of the etch rate and selectivity of
@@ -3296,6 +3313,7 @@ step 007 and the implant category page. Tier: deep dive.
 Czochralski silicon growth: pulling, oxygen and carbon incorporation,
 dopant segregation. Used on step 001 and the substrate category page.
 Tier: deep dive.
+Also used on the substrates material page.
 
 #### Books and book chapters
 
@@ -3355,6 +3373,7 @@ Technology*, Academic Press, 1989, ISBN 978-0-12-640045-8.
 CZ growth, dopant and oxygen incorporation, and wafer characterisation.
 Used on step 001 and the substrate category page. Tier: deep dive.
 Also used on the starting-material machine page.
+Also used on the substrates material page.
 
 **SMITH-1983** — T. C. Smith, "Wafer Cooling and Photoresist Masking
 Problems in Ion Implantation", in *Ion Implantation: Equipment and
@@ -3472,6 +3491,7 @@ The industry standard that defines the diameter, thickness, notch,
 flatness and resistivity classes a fab orders against. Used on step 001
 and the substrate category page. Tier: cross-check.
 Also used on the starting-material machine page.
+Also used on the substrates material page.
 
 **SEMI-P1** — SEMI, *SEMI P1 — Specification for Hard Surface Photomask
 Substrates*, SEMI Standards store listing (revision P1-0708E, inactive),
@@ -3997,6 +4017,7 @@ oxygen out-diffusion-less process therefor*, US 5,994,761 A, granted
 The "magic denuded zone" rapid-thermal treatment that sets precipitation
 behaviour without an oxygen out-diffusion anneal. Used on the substrate
 category page. Tier: deep dive.
+Also used on the substrates material page.
 
 ##### Standards and roadmaps
 
@@ -4005,6 +4026,7 @@ SEMI.
 <https://store-us.semi.org/products/m06200-semi-m62-specification-for-silicon-epitaxial-wafers>
 The specification for epitaxial wafers. Used on the substrate category
 page. Tier: cross-check.
+Also used on the substrates material page.
 
 **SEMI-M8** — SEMI M8, *Specification for Polished Monocrystalline
 Silicon Test Wafers*, SEMI.
@@ -4012,6 +4034,7 @@ Silicon Test Wafers*, SEMI.
 The looser specification for polished test wafers. Used on the substrate
 category page. Tier: cross-check.
 Also used on the starting-material machine page.
+Also used on the substrates material page.
 
 #### Oxidation
 
@@ -6534,6 +6557,7 @@ Advanced Thermal Processing of Semiconductors (RTP 2002)*, pp. 59–67.
 emissivity in RTP. Used on steps 088 and 092.
 Also used on the rapid thermal processor page.
 Tier: deep dive.
+Also used on the substrates material page.
 
 **CURRENT-1996-IIT** — M. I. Current, M. Vella and W. Lukaszek,
 "Beam-plasma concepts for wafer charging control during ion
@@ -9111,6 +9135,7 @@ Marks". No position on the reticle is given. Used on step 171 and the
 test category page.
 Also used on the parametric tester and prober page.
 Tier: cross-check.
+Also used on the substrates material page.
 
 **RAW-DATA-TESTTILE-PADS** — SkyWater PDK Authors, *Manufacturing Test
 Tile Pad Documentation* (PDF title "Pad documentation for SKY130 MPW
@@ -9215,6 +9240,7 @@ coefficient and capacitance quoted from these files on this site is our
 extraction from the published measurements, with the method stated
 where it is quoted. Used on steps 001, 026, 030, 038, 043 and 171, the
 test category page and the overview. Tier: cross-check.
+Also used on the substrates material page.
 
 **RAW-DATA-LV-MOSFETS** — SkyWater PDK Authors (measurements by CoolCAD
 Electronics LLC), measured data for the 1.8 V transistors: IC-CAP
@@ -9615,6 +9641,7 @@ loading door", loads of "150 product, test, and filler wafers" and a
 heating element of "600-1200° C (Up to 1250° C for > 4 Hours)". Used on
 the vertical-furnace oxidation, LPCVD and anneal pages. Tier:
 cross-check (vendor statement).
+Also used on the substrates material page.
 
 **PAT-TORCH-DRIMER** — G. Drimer, A. Glaser and D. M. Rowell, *Fast,
 safe, pyrogenic external torch assembly*, US 5,257,926 A, filed
@@ -11285,6 +11312,7 @@ notched wafers, and consistency of marking "performed by silicon
 manufacturers" that simplifies OCR equipment; marking
 techniques are not addressed. Used on the starting-material machine
 page. Tier: cross-check (standard).
+Also used on the substrates material page.
 
 **SEMI-M13** — SEMI, *SEMI M13 — Specification for Alphanumeric Marking
 of Silicon Wafers*, SEMI Standards store listing, accessed 2026-09-13.
@@ -11294,6 +11322,7 @@ resistivity, dopant species, and crystal growth orientation in addition
 to a wafer identification number" for marking "performed by silicon
 manufacturers"; marking techniques are not addressed. Used on the
 starting-material machine page. Tier: cross-check (standard).
+Also used on the substrates material page.
 
 **PAT-SOFTMARK-GSI** — B. Gu and J. S. Ehrmann (GSI Group), *Method and
 system for laser soft marking*, US 7,705,268 B2, filed 2005-11-09,
@@ -11352,6 +11381,7 @@ Reliability", *Japanese Journal of Applied Physics* **35**(11A), L1385
 (1996). <https://doi.org/10.1143/JJAP.35.L1385> Single and pair COP pits
 and their effect on the TDDB of about 10 nm gate oxides. Used on the
 starting-material machine page. Tier: deep dive.
+Also used on the substrates material page.
 
 **MIYAZAKI-1997** — M. Miyazaki, S. Miyazaki, T. Kitamura, Y. Yanase, T.
 Ochiai and H. Tsuya, "Influence of Crystal-Originated 'Particle'
@@ -11361,6 +11391,7 @@ Journal of Applied Physics* **36**(10R), 6187 (1997).
 failure, their shape after SC-1, anneal and repolish, and the octahedral
 void behind them. Used on the starting-material machine page. Tier: deep
 dive.
+Also used on the substrates material page.
 
 **CHRIST-1983** — M. H. Christ and B. S. Maurantonio, "Influence of Laser
 Marking on Silicon Wafer Properties", in *Silicon Processing*, ASTM STP
@@ -12950,6 +12981,115 @@ US 5,215,639 A, priority 1984-10-09, granted 1993-06-01.
 profiled to its known end-of-life erosion shape, bonded to a matching
 backing plate by isostatic pressing. Used on the sputter targets material
 page. Tier: deep dive.
+
+#### Substrates and test wafers (first cited there)
+
+**SEMI-M24** — SEMI, *SEMI M24 — Specification for Polished
+Monocrystalline Silicon Premium Wafers*, SEMI Standards store listing
+(revision M24-0612, inactive), accessed 2026-09-13.
+<https://store-us.semi.org/products/m02400-semi-m24-specification-for-polished-monocrystalline-silicon-premium-wafers>
+The listing's abstract: requirements "for virgin silicon premium wafers
+with nominal diameter from 150–300 mm used for particle counting, metal
+contamination monitoring, and measuring pattern resolution in the
+photolithography process", with "tighter specification values in some
+specific items for the specific usage" than a prime wafer. Used on the
+substrates material page. Tier: cross-check (standard).
+
+**SEMI-M38** — SEMI, *SEMI M38 — Specification for Polished Reclaimed
+Silicon Wafers*, SEMI Standards store listing (revision M38-0312,
+reapproved 1023, current), accessed 2026-09-13.
+<https://store-us.semi.org/products/m03800-semi-m38-specification-for-polished-reclaimed-silicon-wafers>
+The abstract "divides reclaimed wafers into four application categories:
+Mechanical, Furnace, Particle, and Lithography", includes requirements
+for "devices in the 180 and 130 nm technology generations", and cautions
+against sources "with unknown thermal histories, unknown bulk
+contamination, or unknown deposits". Used on the substrates material
+page. Tier: cross-check (standard).
+
+**GW-PRODUCTS** — GlobalWafers, *Products*, product page, accessed
+2026-09-13. <https://www.gw-semi.com/products/> Application tables and
+product descriptions: the "prime polished wafer" as "Our principal
+product"; MDZ wafers "with built-in denuding and nucleation"; argon
+annealed wafers with a "COP-free surface zone"; "Test and Monitor
+Wafers", which "are substantially the same as prime polished wafers with
+respect to cleanliness, and in some cases flatness" while "other
+specifications are generally less rigorous"; and CMOS substrate
+resistivities "from a low of about 5 mohm-cm on heavily doped epi
+substrates to a high of around 30 ohm-cm on polished wafers". Does not
+name SkyWater. Used on the substrates material page. Tier: cross-check
+(vendor statement).
+
+**GW-HOME** — GlobalWafers, *Silicon Wafer Manufacturing*, home page,
+accessed 2026-09-13. <https://www.gw-semi.com/> States "we serve 100% of
+the top 25 customers in the semiconductor industry". Used on the
+substrates material page. Tier: high-level (vendor statement).
+
+**SEH-PRODUCTS** — SEH America, *Products*, product page, accessed
+2026-09-13. <https://sehamerica.com/products/> Polished wafers "in
+orientations <100>, <111>, and <110>" with boron or phosphorus; a 200 mm
+range of "standard CZ polished wafers, COP free polished wafers, epi
+wafers of all types, argon annealed wafers, FZ wafers" and SOI; epitaxial
+"P/P-, P/P+, N/N-, and N/N+ wafers"; nitrogen-doped, argon-annealed
+wafers. Does not name SkyWater. Used on the substrates material page.
+Tier: cross-check (vendor statement).
+
+**ENTEGRIS-SUPERSIC** — Entegris, Inc., *SUPERSiC® Silicon Carbide:
+Products for semiconductor front end processes*, brochure 6116, accessed
+2026-09-13.
+<https://www.entegris.com/content/dam/shared-product-assets/specialty-shared/brochure-supersic-semiconductor-front-end-6116.pdf>
+Silicon carbide converted from graphite, with contamination "typically
+below 5 ppm"; horizontal-furnace carriers, "baffle assemblies", "LTO
+cages" and pickup tools; SiC dummy and baffle wafers that "can be cleaned
+and reused indefinitely in LPCVD or diffusion processes" (200 mm, "0.724
+mm" thick); and the statement that "It is still common for silicon dummy
+wafers to be made from reclaimed Si material". Used on the substrates
+material page. Tier: cross-check (vendor statement).
+
+**KAO-2021** — I. Kao and C. Chung, *Wafer Manufacturing: Shaping of
+Single Crystal Silicon Wafers*, Wiley, 2021, ISBN 978-0-470-06121-3.
+<https://doi.org/10.1002/9781118696224> A textbook on the wafering
+chain: slicing, lapping, grinding, polishing and wafer metrology (chapter
+titles in Crossref). Used on the substrates material page. Tier:
+high-level.
+
+**POPOVICH-1997** — S. B. Popovich, S. R. Chilton and B. Kilgore,
+"Implementation of a test wafer inventory tracking system to increase
+efficiency in monitor wafer usage", *ASMC 97*, pp. 440–443.
+<https://doi.org/10.1109/ASMC.1997.630777> Abstract: manufacturers
+"spend millions of dollars annually on the purchase of test wafers",
+used "to qualify tools, monitor processes, and develop new process
+techniques"; many "use reclaim to polish off the top surface"; Motorola
+MOS12's system tracks and forces internal reuse. Used on the substrates
+material page. Tier: deep dive.
+
+**OZELKAN-2006** — E. C. Ozelkan and M. Cakanyildirim, "Test Wafer
+Management for Semiconductor Manufacturing", *IEEE Transactions on
+Semiconductor Manufacturing* **19**(2), 241–251 (2006).
+<https://doi.org/10.1109/TSM.2006.873401> A network model for buying,
+downgrading and holding test wafers, whose "yearly TW costs add up to
+several million dollars for a typical semiconductor fab". Used on the
+substrates material page. Tier: deep dive.
+
+**WATANABE-1999** — A. Watanabe, T. Kobayashi, T. Egi and T. Yoshida,
+"Continuous and independent monitor wafer reduction in DRAM fab", *ISSM
+1999*, pp. 303–306. <https://doi.org/10.1109/ISSM.1999.808796> Abstract:
+more vendor-reclaimed wafers, in-house recycling and fewer measurements
+cut "the ratio of monitor wafer to wafer start" from "1.5 (1993) to 0.5
+(1999)". Used on the substrates material page. Tier: deep dive.
+
+**FARUQI-2008** — A. Faruqi, R. Goss, D. Adhikari and T. Kowtsch, "Test
+Wafer Management and Automated Wafer Sorting", *ASMC 2008*, pp. 322–326.
+<https://doi.org/10.1109/ASMC.2008.4529062> An automated test-wafer
+management and sorting system for a 300 mm fab. Used on the substrates
+material page. Tier: deep dive.
+
+**DONG-2024** — X. Dong, S. Mukherjee, M. Asokan, Y. Yang and V.
+Duvvuru, "In-house Test Wafer Reclaim for Fab Cost and Wastage
+Reduction", *ASMC 2024*, pp. 1–7.
+<https://doi.org/10.1109/ASMC61125.2024.10545463> Micron's in-house
+reclaim of test wafers with CMP and wet processes that "met with the
+global reclaim specifications". Used on the substrates material page.
+Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
