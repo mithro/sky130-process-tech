@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1257
+written page has exactly one entry here; the inventory holds 1263
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -10135,6 +10135,63 @@ Technologies", *Japanese Journal of Applied Physics* **37**(3S), 1222
 with HDP-CVD fill at different deposition/sputter ratios and liner
 thicknesses, with "negligible sputter effect of HDP" on the trench
 sidewall. Used on the HDP-CVD page. Tier: deep dive.
+
+**NOVELLUS-WCVD-1998** — Novellus Systems, *Tungsten Product Solutions*
+(metal CVD), product page; Wayback Machine capture of 1998-06-11.
+<https://web.archive.org/web/19980611202803/http://www.novellus.com:80/products/cvd.htm>
+Blanket tungsten "for plug fill and low-stress composite interconnects"
+with "high-pressure nucleation, resistive heating, vacuum wafer clamping
+and full-coverage deposition, using patented wafer backside exclusion
+technology"; the Concept Two Altus, "Integrating the Concept One tungsten
+process chamber on the modular Concept Two platform", and the Dual Altus
+with "a total of 10 stations". Used on the tungsten CVD page. Tier:
+cross-check (vendor statement).
+
+**NOVELLUS-WCVD-2002** — Novellus Systems, *Tungsten Product Solutions*
+(metal CVD), product page; Wayback Machine capture of 2002-02-10.
+<https://web.archive.org/web/20020210183923/http://www.novellus.com:80/products/cvd.asp>
+The Altus and Dual Altus, the PRISM MOCVD TiN system and the 300 mm
+Concept Three Altus with "a new exclusion ring reference design". Used on
+the tungsten CVD page. Tier: cross-check (vendor statement).
+
+**AMAT-ISM-2000** — Applied Materials, *Interconnect Systems & Modules*
+(liner/barrier and tungsten CVD systems), product page; Wayback Machine
+capture of 2000-08-15.
+<https://web.archive.org/web/20000815075033/http://www.appliedmaterials.com:80/products/ism_liner.html>
+The WxZ Centura as "the industry's leading tungsten chemical vapor
+deposition (WCVD) tool for plug fill and interconnects", with a remote
+microwave clean; the Sprint Centura, which "operates at 300 Torr" at
+">60 wph"; and the Endura Integrated PVD/CVD Liner/Barrier system with a
+Vectra IMP Ti chamber, a CVD TiN TxZ chamber and a Preclean II chamber,
+and the Vectra IMP chamber's bottom coverage and chamber count. Used on
+the tungsten CVD page. Tier: cross-check (vendor statement).
+
+**PAT-BACKSIDE-NOVELLUS** — E. P. van de Ven, E. K. Broadbent, J. C.
+Benzing, B. L. Chin and C. W. Burkhart (Novellus Systems), *Gas-based
+backside protection during substrate processing*, US 5,374,594 A, filed
+1993-01-22, granted 1994-12-20.
+<https://patents.google.com/patent/US5374594A/en> Argon or argon–hydrogen
+backside gas at each station of a tungsten CVD reactor, fed at the edge of
+a vacuum chuck at a pressure above the chamber's so that process gas does
+not reach the wafer backside. Used on the tungsten CVD page. Tier:
+cross-check (patent).
+
+**PAT-MULTISTATION-NOVELLUS** — E. J. McInerney, T. M. Pratt and S. D.
+Hancock (Novellus Systems), *Isolation of incompatible processes in a
+multi-station processing chamber*, US 6,319,553 B1, filed 2000-02-28,
+granted 2001-11-20. <https://patents.google.com/patent/US6319553B1/en>
+Pedestals in wells under flush showerheads, an indexing plate and an
+argon purge plate, so that silane initiation and WF₆ nucleation or
+hydrogen reduction can run at different stations of one chamber. Used on
+the tungsten CVD page. Tier: cross-check (patent).
+
+**RILEY-1991** — P. E. Riley and T. E. Clark, "Integrated Chemical Vapor
+Deposition and Plasma Etchback of Tungsten in a Multichamber,
+Single-Wafer System", *Journal of The Electrochemical Society*
+**138**(10), 3008–3013 (1991). <https://doi.org/10.1149/1.2085356>
+Tungsten plugs by deposition at 80 torr and 475 °C and a two-step
+magnetron-enhanced etchback on an Applied Materials P5000 WCVD system for
+150 mm wafers. Used on the tungsten CVD page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
