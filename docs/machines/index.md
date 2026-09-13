@@ -21,7 +21,7 @@ registration statement says that the Bloomington fab "can produce up to
 522 well-maintained fab and sort tools",[^sec-01] and its annual report
 for 2023 that "CMOS process flows for a number of different node
 dimensions are offered ranging from 90 nm—350 nm" in the same 200 mm
-fab.[^sec-02] The 171 steps of SKY130 therefore share tools with one
+fab.[^sec-02] The 171 steps of SKY130[^steps-sheet] therefore share tools with one
 another and with other flows, and the step pages describe equipment by
 class. The classes follow the unit processes of the category pages:
 
@@ -628,6 +628,9 @@ can be made consistent later; no step page has been changed here.
 
 <!-- footnotes -->
 
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    retrieved 2026-09-13; tab "Sheet1" lists the 171 steps (number, code and
+    description). <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
