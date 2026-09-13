@@ -11,15 +11,17 @@ written, reviewed and audited to the same standard.
    talks, Wikipedia, reputable industry press.
 2. **Every fact needs a public source.** If a
    fact cannot be found publicly, either leave it out or state it as an
-   inference from public evidence with the reasoning shown. Step codes and names are this reference's
-   labels: never use them as evidence about SkyWater's actual flow,
-   never call their meaning "not public" or "not explained publicly",
-   and never pair "X is not public" with "the step list shows Y".
-   Write "the step list used in this reference does not explain X; we
-   read …" and base readings on public sources (PDK, filings,
-   qualification reports). This includes soft forms ("as the name
-   suggests", "the suffix makes it the Nth …", "consistent with the
-   step name"). Search-engine snippets and pages that were never
+   inference from public evidence with the reasoning shown. The step
+   list comes from the public *S8 / SKY130 Process Steps* sheet, cited
+   as `[^steps-sheet]` (inventory key STEPS-SHEET); its mask tabs may be
+   cited too. The sheet records step codes, names and order, not process
+   conditions: a step name is evidence of what the sheet calls a step,
+   not of films, chemistries, tools or doses, so do not use it alone as
+   evidence for those, and do not call a name's meaning "not public".
+   Write "the step list does not explain X; we read …" and base readings
+   on public sources (PDK, filings, qualification reports). This
+   includes soft forms ("as the name suggests", "the suffix makes it
+   the Nth …", "consistent with the step name"). Search-engine snippets and pages that were never
    retrieved are not cited or mentioned. A public page that was
    retrieved (e.g. a job listing) may be cited with its retrieval date.
 3. **Numbers need a public citation.** Every thickness, temperature,

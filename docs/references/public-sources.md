@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1082
+written page has exactly one entry here; the inventory holds 1083
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15 and 8.16 were added to cover the
@@ -336,6 +336,23 @@ Symposium presentations by SkyWater staff on the SKY130 process itself
 returned only the items above; Crossref lists several 2024 conference
 papers that *use* the PDK (e.g. standard-cell characterisation) but
 none that describe the process flow.
+
+**STEPS-SHEET** — *[external] S8 / SKY130 Process Steps* (public Google
+Sheet), retrieved 2026-09-13.
+<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>.
+The source of the 171-step list used in this reference (tab "Sheet1":
+step number, code and description, `SMAT` to `HPETEST`). Further tabs:
+"Masks" (the mask steps with their step numbers); "Run Mask IDs" (the
+PDK mask table set against MPW-1 to MPW-8, recording for each run
+whether a plate exists for each mask, its plate ID, and notes including
+the sky130B ReRAM masks `RRM` and `VIMC`); "SKY130 MPW-3 Mask
+Information" (photographs of via-2 and via-3 plates); "Random Mask Case
+Label Info" (Photronics plate-case labels: 6 × 6 × 0.25 in blanks, 4×,
+CD specifications); and "Sheet4" (mask types, e.g.
+`F4-248-EAPSM-A43-APRX` for `VIM2`/`VIM3` and `B4-248-BIM-LSR-WET` for
+`VIM4`). Each tab can be exported anonymously as CSV. Used on the
+landing page, the steps index, every step page and the mask index.
+Tier: cross-check.
 
 ## 3. SkyWater Technology corporate sources
 
