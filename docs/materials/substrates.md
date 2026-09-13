@@ -52,11 +52,12 @@ defects.[^shimura-1989] The 200 mm wafer, introduced in 1992, is
 small notch to convey wafer orientation, with no visual indication of
 doping type".[^wiki-wafer] Two properties of the crystal matter to the
 process beyond its doping. Oxygen from the crucible precipitates during
-the hot steps and can trap metals away from the surface
-(gettering);[^borghesi-1995][^kang-1989] a MEMC patent describes wafers
-whose precipitation behaviour is set by a rapid thermal treatment at the
-wafer maker,[^pat-mdz-memc] and GlobalWafers, which acquired SunEdison
-Semiconductor (renamed MEMC) in 2016,[^wiki-gw] offers a "Starting
+the hot steps.[^borghesi-1995] A MEMC patent's background states that
+precipitates in the bulk "are capable of trapping undesired metal
+impurities", which it calls "internal or intrinsic gettering", and the
+patent describes wafers whose precipitation behaviour is set by a rapid
+thermal treatment at the wafer maker;[^pat-mdz-memc] GlobalWafers, which
+acquired SunEdison Semiconductor in 2016,[^wiki-gw] offers a "Starting
 polished wafer with built-in denuding and nucleation that does not rely
 on long thermal treatments in the IC fab process".[^gw-products] And
 vacancy clusters from growth open as pits: Ryuta et al. showed that SC-1
@@ -374,8 +375,8 @@ are not public.
   integrity.[^miyazaki-1997]
 * Borghesi et al., *JAP* 1995 — oxygen precipitation in
   silicon.[^borghesi-1995]
-* Kang and Schroder, *JAP* 1989 — intrinsic and extrinsic
-  gettering.[^kang-1989]
+* Kang and Schroder, *JAP* 1989 — experiments and a segregation model
+  for phosphorus-diffusion and other extrinsic gettering.[^kang-1989]
 * Falster et al. (MEMC), US 5,994,761 — wafers with pre-set oxygen
   precipitation.[^pat-mdz-memc]
 * ITRS 2001, *Front End Processes* — starting-material targets and the
