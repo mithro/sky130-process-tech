@@ -157,7 +157,7 @@ an aluminium top metal (SKY130's recipe is not public):
 
 ## Resources required
 
-* **CF₄**, **CHF₃**, **SF₆**, **O₂**, **N₂** and **Ar** for the etch and
+* **{ref}`CF₄ <material-etch-gases>`**, **CHF₃**, **SF₆**, **{ref}`O₂ <material-process-gases>`**, **N₂** and **Ar** for the etch and
   the fluorine-removal plasma (industry practice;[^nojiri-2015] SkyWater
   names CF₄, CHF₃, SF₆ and O₂ on its listed etchers[^skw-01]); **He**
   backside cooling.

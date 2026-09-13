@@ -156,7 +156,7 @@ public):
 
 ## Resources required
 
-* **C₄F₈, C₂F₆, CHF₃, CF₄**, **Ar**, **O₂** (and possibly CO or N₂)
+* **{ref}`C₄F₈ <material-etch-gases>`, C₂F₆, CHF₃, CF₄**, **{ref}`Ar <material-process-gases>`**, **O₂** (and possibly CO or N₂)
   for the oxide etch (industry practice;[^nojiri-2015] SkyWater lists
   CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]); **He** backside
   cooling.
