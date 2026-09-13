@@ -300,6 +300,12 @@ counter-doping
     ({term}`buried-channel PMOS`) or to make a {term}`depletion-mode`
     transistor.
 
+crack stop
+    A break in the dielectric stack, or a continuous metal ring, at the
+    edge of a die that stops cracks started by the dicing saw from
+    running into the circuit; often built together with the
+    {term}`seal ring` (see {ref}`step-165`, {ref}`step-166`).
+
 CVD
     Chemical vapour deposition: growth of a solid film from gaseous
     precursors that react on or near a heated surface.
@@ -454,7 +460,8 @@ etch-stop layer
     CMP stop layer plays the same part for a polish.
 
 e-test
-    Electrical test: automated DC measurement of transistors, resistors,
+    Electrical test: automated DC and capacitance measurement of
+    transistors, resistors,
     capacitors and interconnect test structures on the wafer using a
     parametric tester and a probe card. Also called parametric test or
     {term}`WAT`.
@@ -812,6 +819,13 @@ oxynitride
     deposited film silicon oxynitride serves as an inorganic
     {term}`BARC` and as a {term}`hard mask`. Also "nitrided oxide".
 
+passivation
+    The final dielectric layers deposited over the top metal — in SKY130
+    a thin oxide under a silicon nitride — that protect the finished
+    circuit from moisture, mobile ions and scratches. They are opened
+    only over the {term}`bond pads <bond pad>` (see {ref}`step-164`,
+    {ref}`step-167`, {ref}`step-169`).
+
 pattern density
     The fraction of the area within some window that is covered by
     raised features — metal lines, or the oxide over them. Because a
@@ -941,6 +955,11 @@ Preston equation
     The empirical {term}`CMP` removal-rate law {math}`R = k_p\,P\,v`, in
     which removal rate is proportional to applied pressure and to
     relative pad–wafer velocity.
+
+probe card
+    The board carrying the needles or other contact elements that touch
+    the pads of a wafer during parametric or functional test and connect
+    them, through the prober, to the tester (see {ref}`step-171`).
 
 program inhibit
     The bias condition applied to memory cells that share a word line
@@ -1111,6 +1130,13 @@ screen oxide
 scribe line
     The streets between dies on a wafer that will be cut by the dicing
     saw; used to hold {term}`PCM` structures and alignment targets.
+
+seal ring
+    A continuous ring of structures around the edge of each die that
+    keeps moisture and ionic contamination from entering the dielectric
+    stack at the saw-cut edge and helps stop dicing cracks. The SKY130
+    PDK marks its area with `areaid.sl`, "Seal ring identifier" (see
+    {ref}`step-165`).
 
 select gate
     The gate of the ordinary transistor in series with the memory

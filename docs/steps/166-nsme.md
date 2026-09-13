@@ -85,7 +85,7 @@ beside the ring.
   opening through only the thin passivation oxide would let the nitride
   close that path (inference). That this is the purpose of
   SKY130's `nsm` ring is our inference ({ref}`NSM <step-165>`).
-* **A crack stop.** A trench through the dielectric along the saw line
+* **A {term}`crack stop`.** A trench through the dielectric along the saw line
   interrupts crack propagation from dicing, the function a Siemens and IBM patent
   obtains from "discontinuities in the thickness of the dielectric
   layer" near the edges of the active regions (inference for
