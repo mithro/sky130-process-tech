@@ -179,6 +179,18 @@ channel lengths of 1.055 µm and 1.050 µm for the 16 V VHV NMOS and
 PMOS; "Under no circumstances the poly/extended drain overlap and
 field oxide length should be changed". Tier: cross-check.
 
+**PDK-WLCSP** — *WLCSP Rules* page.
+<https://skywater-pdk.readthedocs.io/en/main/rules/wlcsp.html>
+(tables: <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/wlcsp/amkor.csv>,
+<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/wlcsp/deca.csv>).
+Two tables of wafer-level chip-scale package rules. The Amkor table
+has `pi1`, `rdl`, `pi2`, `ubm` and `bump` rule sets at 400 µm and
+500 µm pitch; the DECA table has `cpbo` ("1st polyimide (mask)"),
+`rdl`, `cpmm2` ("2nd polyimide"), `ubm` and `bump` rule sets, each with
+a function line (for `rdl`, "Re-distribution layer connects the top
+metal from the customer to the bumps"). The masks index cites it for
+the `PBO`, `CU1M` and `PMM2` entries of PDK-05. Tier: cross-check.
+
 **PDK-12** — *Sky130 Technology Library* (Hammer VLSI documentation).
 <https://hammer-vlsi.readthedocs.io/en/latest/Technology/Sky130.html>.
 Third-party (UC Berkeley) description of how the open PDK is consumed
