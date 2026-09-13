@@ -12,9 +12,10 @@
 
 ## What this step is
 
-`TUNARCE` is a short plasma etch that removes the anti-reflective
-coating from the bottom of the windows that {ref}`TUNM <step-035>`
-opened in the photoresist. A bottom anti-reflective coating
+The step list describes `TUNARCE` as "Tunnel mask ARC etch" and does not
+explain it;[^steps-sheet] we read it as a short plasma etch that removes
+the anti-reflective coating from the bottom of the windows that
+{ref}`TUNM <step-035>` opened in the photoresist. A bottom anti-reflective coating
 ({term}`BARC`) is spun on *under* the resist and is not photosensitive:
 after develop the resist is gone from the tunnel windows but the {term}`ARC`
 film still covers the oxide inside them — the pad oxide from
@@ -156,7 +157,7 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   the DPS II and 9400 gas sets are public.[^skw-01] SkyWater's filings name
   Air Products and Praxair (2021 S-1) and Linde and Airgas (fiscal 2023
   10-K) as gas suppliers.[^sec-01][^sec-02]
-* **CF₄/CHF₃** only if the ARC ({ref}`lithography materials <material-lithography-materials>`) is inorganic.[^skw-01]
+* **CF₄/CHF₃** only if the {ref}`ARC <material-lithography-materials>` is inorganic.[^skw-01]
 * **Helium backside cooling**, chamber consumables (electrostatic
   chuck, liners, focus ring).
 * **Endpoint optics** and their windows.
