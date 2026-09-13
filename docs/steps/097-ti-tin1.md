@@ -150,7 +150,7 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 
 ## Machines typically used
 
-* **Cluster PVD system**, 200 mm, with degas, pre-clean, Ti and TiN
+* **{ref}`Cluster PVD system <machine-pvd-cluster-tool>`**, 200 mm, with degas, pre-clean, Ti and TiN
   chambers: Applied Materials Endura with IMP
   chambers,[^amat-endura][^amat-1997] Novellus INOVA (hollow-cathode
   magnetron), Varian/Novellus M2i, MRC Eclipse (category page).

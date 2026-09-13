@@ -129,7 +129,7 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
 
 ## Machines typically used
 
-* **PECVD system** (Applied Materials Producer/Centura DxZ, Novellus
+* **{ref}`PECVD system <machine-pecvd>`** (Applied Materials Producer/Centura DxZ, Novellus
   Concept Two/Sequel) with TEOS or silane oxide.
 * **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** (Aviza/SVG, TEL, ASM, Kokusai) with
   TEOS or SiH₄/O₂ for the batch alternative.

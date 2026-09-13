@@ -137,7 +137,7 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 
 ## Machines typically used
 
-* **CVD tungsten reactor**, 200 mm: Novellus Concept Two Altus and
+* **{ref}`CVD tungsten reactor <machine-tungsten-cvd>`**, 200 mm: Novellus Concept Two Altus and
   Altus with {term}`PNL`,[^novellus-history] Applied Materials Centura WxZ,
   Genus and Ulvac tungsten systems (category page).
 * **Four-point probe**, **XRF**, **stress gauge**, **cross-section

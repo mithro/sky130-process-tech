@@ -153,7 +153,7 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 
 ## Machines typically used
 
-* **Cluster PVD system**, 200 mm, with degas, pre-clean and reactive
+* **{ref}`Cluster PVD system <machine-pvd-cluster-tool>`**, 200 mm, with degas, pre-clean and reactive
   TiN chambers: Applied Materials Endura,[^amat-endura][^amat-1997]
   Novellus INOVA, MRC Eclipse, Varian M2i (category page).
 * **Four-point probe**, **XRF**, **stress gauge**, **reflectometer**.
