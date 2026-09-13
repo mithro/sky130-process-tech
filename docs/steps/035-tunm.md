@@ -76,10 +76,12 @@ the nitride; the PDK offers it as a two-transistor cell, "a SONOS
 Control Gate (CG) in series with a CMOS Select Gate", in which
 "Charge injected from the Si substrate across the thin tunnel oxide
 by Fowler-Nordheim tunneling is trapped in the Nitride (N)
-layer".[^cyp-25] A Cypress press release states that the SONOS module
-"only requires three additional mask layers to a standard CMOS
-process";[^cyp-22] we read `TUNM`, `ONOM` and `LDNTM` in the PDK's
-mask table[^pdk-05] as the three SONOS masks — and `TUNM` is the first.
+layer".[^cyp-25] A 2011 Cypress/UMC press release says that the
+65 nm S65 SONOS process "only requires three additional mask layers to
+a standard CMOS process";[^cyp-22] it gives no mask count for the
+130 nm S8 process. We read `TUNM`, `ONOM` and `LDNTM` in the PDK's
+mask table[^pdk-05] as the SONOS masks of SKY130 — and `TUNM` is the
+first.
 
 The tunnel window has to be a separate mask because the memory
 transistor's channel is engineered differently from every logic
@@ -210,8 +212,8 @@ and the pre-oxidation clean as part of those steps (see the
   tracks, CD-SEM and overlay metrology.[^skw-01]
 * SkyWater, first MPW shuttle press release — SONOS offered as a
   standard feature.[^ann-11]
-* Cypress/UMC press release — "only requires three additional mask
-  layers".[^cyp-22]
+* Cypress/UMC press release — the S65 process "only requires three
+  additional mask layers"; no count is given for S8.[^cyp-22]
 * Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest — the
   2T cell and its {term}`Fowler–Nordheim <Fowler–Nordheim tunnelling>` programming.[^cyp-25]
 
