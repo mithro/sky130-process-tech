@@ -37,7 +37,7 @@ SkyWater and Weebit Nano announced Weebit's ReRAM IP "in SkyWater's
 130nm CMOS (S130) process", with a photograph captioned "Weebit ReRAM
 bitcell is shown integrated into the S130 technology between Metal1 and
 Metal2";[^skw-04] and IEEE Spectrum reported in 2018 that SkyWater would
-develop a production process flow for a DARPA-funded project based on
+develop and test a high-yield "process flow" for a DARPA-funded project based on
 technology that allows "carbon nanotube transistors and resistive RAM
 memory to be built on top of ordinary CMOS logic chips".[^press-05]
 Whether either uses the same process module as `sky130_fd_pr_reram` is
