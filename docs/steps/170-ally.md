@@ -25,9 +25,10 @@ page[^txt-01][^wiki-fg]). SkyWater lists "H2 and forming gas alloy" among
 the processes of its furnaces, which "are all made by Aviza",[^skw-01]
 but does not say at which points of a flow the process is used. The
 step list used in this reference does not give conditions; we read
-`ALLY` as the conventional final forming-gas anneal (inference from its
-position after the last plasma step and the pad opening, and from the
-furnace alloy process SkyWater lists[^skw-01]), and the
+`ALLY` as the conventional final forming-gas anneal (inference:
+textbooks describe a final forming-gas anneal at the end of the process
+as standard practice,[^txt-01][^txt-02] and SkyWater lists a furnace
+alloy process[^skw-01]), and the
 earlier {ref}`ALLY1 <step-096>` as a second, pre-metal use of the same
 kind of anneal.
 
@@ -37,8 +38,8 @@ the transistors: five aluminium levels, tungsten plugs, the local
 interconnect nitride, and a passivation of oxide and silicon nitride
 ("TOPOX" and "TOPNIT" on the PDK's stack diagram,[^pdk-04] 7000–9000 Å
 of nitride in Cypress reports for other processes at the same
-fab[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]) that is opened only
-over the pads and, on our reading, at the seal ring. Hydrogen from the
+fab[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]) that is opened
+only over the pads. Hydrogen from the
 furnace ambient must reach the gate oxides through that stack, or be
 supplied from within it: plasma nitride deposited at 330–350 °C contains
 some 20–25 at.% hydrogen, as Lanford and Rand measured.[^lanford-1978]
@@ -51,13 +52,13 @@ of the *alloy / forming-gas* type. As the category page sets out, the
 alloy anneal comes last because later plasma exposure would undo the
 passivation, and its temperature is capped by the aluminium
 metallisation (Plummer, Deal and Griffin and Wolf and Tauber treat the
-practice[^txt-01][^txt-02]). Its thermal budget is
+practice[^txt-01][^txt-02]). Its {term}`thermal budget` is
 negligible for dopants and junctions. What it changes is hydrogen
 bonding at interfaces and in the dielectrics, the microstructure and
 stress of the aluminium lines and the interfaces between aluminium,
-TiW and tungsten, and the stress of the passivation nitride. Of the
-anneals in the flow it is the only one performed on a wafer with open
-bond pads (inference from the order of the flow).
+TiW and tungsten, and the stress of the passivation nitride. In the
+sequence this reference describes it is the only anneal performed on a
+wafer with open {term}`bond pads <bond pad>`.
 
 ## Why this step exists
 
@@ -100,7 +101,8 @@ conditions in SKY130 are not public.
   aluminium (industry practice;[^txt-02] Learn reviewed the aluminium
   metallisation of the preceding decades[^learn-1976]). It also has
   costs: thermal cycling of
-  aluminium under a stiff passivation drives stress-induced voiding (Yue,
+  aluminium under a stiff passivation drives
+  {term}`stress-induced voiding` (Yue,
   Funsten and Taylor[^yue-1985]), and PECVD nitride shows an
   irreversible tensile stress change on heating (Hughey and
   Cook[^hughey-2003]).
@@ -127,7 +129,7 @@ an aluminium back end (SKY130's recipe is not public):
   oxidised further (inference).
 * **Temperature and time.** 350–450 °C for tens of minutes (typical
   industry values;[^txt-02] category page), below the temperatures at
-  which aluminium hillocks and voids grow rapidly and far below the
+  which aluminium {term}`hillocks <hillock>` and voids grow rapidly and far below the
   Al–Si eutectic; the University of Illinois example of about 400 °C for
   about 1 hour is of this kind.[^pat-deuterium-uiuc]
 * **Sequence.** Load; nitrogen purge; ramp; hydrogen-bearing gas at
