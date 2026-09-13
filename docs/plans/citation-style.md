@@ -48,7 +48,8 @@ once.[^pdk-04][^txt-02]
 
    Do not repeat URLs in the bullets; the footnote has them.
 6. **Deep dive must be substantial.** Minimum eight entries on a step
-   page and twelve on a category page, drawn from several kinds of
+   page or per-mask page, and twelve on a category, machine, material or
+   overview page or the masks index, drawn from several kinds of
    source: peer-reviewed papers (IEDM, VLSI, TED, JES/ECS, JVST, JAP),
    review articles, theses/dissertations, patents from several
    assignees, book chapters, standards (SEMI, ITRS), vendor application
