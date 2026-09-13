@@ -8185,8 +8185,8 @@ Tier: high-level.
 
 **WIKI-HFO2** — Wikipedia, *Hafnium(IV) oxide*.
 <https://en.wikipedia.org/wiki/Hafnium(IV)_oxide> Hafnia as a high-κ
-dielectric ("4–6 times higher than that of SiO2") and as a candidate for
-resistive-switching memories. Tier: high-level.
+dielectric ("4–6 times higher than that of SiO2, which is 3.9") and as a
+candidate for resistive-switching memories. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 

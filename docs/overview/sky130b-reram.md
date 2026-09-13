@@ -80,7 +80,8 @@ ReRAM.[^opdks-magic-tech] The oxide thickness agrees with the default
 Whether the tech-file thicknesses are physical film thicknesses or
 values chosen for extraction and routing is not stated; the dielectric
 constant of 10 given for the oxide is lower than the "4–6 times" that of
-SiO₂ quoted for hafnium oxide,[^wiki-hfo2] and the slide marks the
+SiO₂ (3.9) quoted for hafnium oxide,[^wiki-hfo2] that is about 16–23
+(our arithmetic), and the slide marks the
 oxide as "not in .ict", the file whose layers its table
 lists.[^reram-ug]
 
