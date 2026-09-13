@@ -109,9 +109,9 @@ recipes are not public.
   vertical gate sidewalls and must stop on a thin oxide without
   trenching the silicon.[^txt-01]
 * **Aluminium–copper with Ti/TiN or Ti:W caps** (metal 1–5,
-  {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`; SKY130's stacks
-  carry a Ti:W cap on the public description of the S8 metal
-  stacks[^cyp-qtp-113005]): Cl₂/BCl₃ with N₂ or CHF₃ for sidewall
+  {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`; the Cypress S8
+  qualification report gives a TiW cap on metals 1–3,[^cyp-qtp-113005]
+  and this reference describes SKY130's stacks the same way): Cl₂/BCl₃ with N₂ or CHF₃ for sidewall
   passivation. AlCl₃ is volatile at room temperature, so aluminium
   etches spontaneously in chlorine and anisotropy depends entirely on
   the passivation film; BCl₃ scavenges water and reduces the native

@@ -287,8 +287,8 @@ end (SKY130's recipe is not public):
 * The chemistry, endpoint, over-etch and dielectric loss of the etch
   are not public.
 * Whether the plate edge receives a spacer or other edge treatment,
-  as in the Newport Fab patent,[^pat-mim-newportfab] is not stated in
-  any public source; this reference describes none.
+  as in the Newport Fab patent,[^pat-mim-newportfab] is not stated
+  publicly for SKY130; this reference describes none.
 * Which of the two listed Lam metal etchers runs the step is not
   public.[^skw-01]
 * This page treats the resist strip and clean as part of the etch.

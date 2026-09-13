@@ -30,7 +30,7 @@ page calls the top plate "a thin conductor layer on top of the
 dielectric" and gives its {term}`sheet resistance`, `RSCAPM`, as
 5.8 Ω/sq (limits 4.8–6.8);[^pdk-07] this reference describes it as
 TiW (inference: TiW is among SkyWater's PVD films and its metal
-etchers' qualified materials,[^skw-01] and is the cap of the
+etchers' listed materials,[^skw-01] and is the cap of the
 aluminium stacks[^cyp-qtp-113005]).
 {ref}`CAPTIW2 <step-151>` is the corresponding step for the second
 capacitor.
@@ -256,8 +256,9 @@ back end (SKY130's recipe is not public):
 ## Open questions
 
 * The PDK names the top plate only "a thin conductor layer";[^pdk-07]
-  TiW is this reference's inference from SkyWater's film and etcher
-  lists.[^skw-01]
+  TiW is this reference's inference from the Cypress metal-stack
+  caps[^cyp-qtp-113005] and SkyWater's film and etcher lists,[^skw-01]
+  which would equally allow TiN.
 * The top-plate thickness, composition (Ti fraction, nitrogen
   content) and deposition conditions are not public; ~0.1 µm is our
   estimate from `RSCAPM`[^pdk-07] with an assumed resistivity.
