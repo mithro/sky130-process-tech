@@ -51,11 +51,14 @@ not repeated there:
   the first S8 wafers ({ref}`below <machines-skywater-published>`).[^skw-01]
 * SkyWater's maintenance-technician profile shows technicians reviewing
   equipment schematics "to troubleshoot complex equipment, like an
-  implanter"; it corroborates in-house maintenance of that class but
-  names no model.[^skw-07]
+  implanter", and has captions naming "a Novellus high density plasma
+  tool" and "a SEZ etcher tool"; it corroborates in-house maintenance
+  of those tools but names no model; this index groups the SEZ tool
+  with the single-wafer spin processors, not the plasma
+  etchers.[^skw-07]
 * The S-1 names semiconductor-equipment companies, Axcelis Technologies
   among them, only in executive and director biographies, not as
-  suppliers.[^sec-01]
+  suppliers, and names no etch, strip or wet-bench vendor.[^sec-01]
 * The capabilities page names no process step, so every assignment of
   a SKY130 step to a listed tool is this reference's reading, graded on
   the step page.
@@ -183,11 +186,9 @@ apart.
 
 In the table:
 
-* **Machine class** links to the machine-class page where there is one
-  (the three ion-implanter classes, the three vertical-furnace classes,
-  the rapid thermal processor and the plasma nitridation chamber), and
-  otherwise to the category page
-  that describes the class and its physics.
+* **Machine class** links to the machine-class page for the classes
+  that have one, and otherwise to the category page that describes the
+  class and its physics.
 * **What it does in SKY130** summarises the step pages; the films and
   purposes are as the step pages describe them, including the readings
   they mark as inferences.
