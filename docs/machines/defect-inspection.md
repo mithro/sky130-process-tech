@@ -46,7 +46,13 @@ early patents describe "A scanning laser contaminant and defect detector
 for reflective surfaces, having a light collector for increasing
 sensitivity to scattered light",[^pat-scan-tencor] and then "A two-stage
 light collector" that re-images the scattered light onto a
-detector.[^pat-collector-tencor] The scattered signal is converted into
+detector.[^pat-collector-tencor] A later KLA-Tencor patent, aimed at
+inspecting "not only bare or unpatterned wafers but also rough films",
+collects the light scattered from a normal and an oblique beam with a
+curved mirror, compares the two signals "to distinguish between particles
+and COPs" (crystal-originated particles), and uses "Butterfly-shaped
+spatial filters" to restrict detection to certain azimuthal
+angles.[^pat-oblique-kla] The scattered signal is converted into
 a size: in Tencor's description of the Surfscan SP1, the amplitude of the
 signal "corresponds to the size of the defect detected".[^tencor-sp1-wp]
 Sizes are therefore equivalents, not dimensions; ITRS 2001 states its
@@ -84,10 +90,7 @@ comparing adjacent repeating patterns", with the surface height tracked
 to keep neighbouring patterns registered.[^pat-inspect-kla] Tencor's Surfscan AIT of 1995,
 "the first in the industry to provide high-speed capture of both pattern
 defects and particles for in-line process monitoring", built on Tencor's
-"other laser scattering tools";[^tencor-ait-1995] a KLA-Tencor patent of
-the period collects the light scattered from a normal and an oblique beam
-with a curved mirror and uses "Butterfly-shaped spatial filters" to
-restrict detection to certain azimuthal angles.[^pat-oblique-kla]
+"other laser scattering tools".[^tencor-ait-1995]
 KLA-Tencor's own product lines of 2002 set "High-throughput scanning for
 patterned wafer inspection" (AIT XP) beside "High-resolution imaging for
 patterned wafer inspection" (the 2351), and described its 23xx, AIT
@@ -379,8 +382,8 @@ plans and defect limits are not public.
 * Jordan, Nikoonahad and Wells (KLA-Tencor), US 5,864,394 — patterned-wafer
   inspection by comparing adjacent repeating patterns.[^pat-inspect-kla]
 * Vaez-Iravani, Stokowski and Zhao (KLA-Tencor), US 6,201,601 — normal and
-  oblique illumination with curved-mirror collection and spatial
-  filters.[^pat-oblique-kla]
+  oblique illumination with curved-mirror collection and spatial filters
+  for bare wafers and rough films.[^pat-oblique-kla]
 * Alumot et al. (Orbot Instruments), US 5,699,447 — two-phase optical
   inspection.[^pat-twophase-orbot]
 * Radin, *Proc. SPIE* 1988 — defect reduction with an automated KLA-2020
