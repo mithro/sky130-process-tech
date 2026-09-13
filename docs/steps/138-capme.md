@@ -217,8 +217,8 @@ end (SKY130's recipe is not public):
   gas set is the one given at {ref}`CAP2ME <step-153>`, since the PDK
   calls the two capacitor constructions identical.[^pdk-07]
 * **O₂/N₂** for the ash;[^skw-01] **amine or semi-aqueous solvent** ({ref}`wet chemicals <material-wet-chemicals>`)
-  and DI water for the clean.[^skw-01]
-* **Chamber consumables** and **monitor wafers** carrying the plate
+  and {ref}`DI water <material-ultrapure-water>` for the clean.[^skw-01]
+* **{ref}`Chamber consumables <material-hardware-consumables>`** and **{ref}`monitor wafers <material-substrates>`** carrying the plate
   film over the capacitor dielectric for rate and selectivity checks.
 
 ## Related steps and cross-references

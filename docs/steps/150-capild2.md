@@ -248,7 +248,7 @@ diagram[^pdk-04]); the aluminium limit of roughly
   filings: Air Products and Praxair (2021 S-1), Linde and Airgas (fiscal
   2023 10-K).[^sec-01][^sec-02]
 * **NF₃** for the chamber clean; **nitrogen** purge.
-* **Showerhead, heater and liner consumables**; **monitor wafers** with
+* **{ref}`Showerhead, heater and liner consumables <material-hardware-consumables>`**; **{ref}`monitor wafers <material-substrates>`** with
   the metal-4 stack for thickness and capacitance checks.
 
 ## Related steps and cross-references
