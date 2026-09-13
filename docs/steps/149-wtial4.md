@@ -57,9 +57,8 @@ metal 4 are the public basis for describing this stack as a repeat of
 metal 3 (inference). With 0.8 µm of Al–Cu, 47 mΩ/sq corresponds to a
 resistivity of about 3.8 µΩ·cm, within the range expected for
 sputtered Al–0.5%Cu (typical industry value;[^txt-02] our arithmetic).
-The step list used in this reference gives this step the same title as
-{ref}`WTIAL3 <step-134>`, where the reading of its bottom layer as Ti
-or TiW is discussed; this page does not repeat it.
+The reading of the bottom layer as Ti or TiW is discussed at
+{ref}`WTIAL3 <step-134>` and applies here unchanged.
 
 ## Step category
 
