@@ -99,8 +99,9 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   bottom plate with no topography under the thin film and no
   sidewall at which it could thin or leak; the whole sandwich is made
   in three depositions with one extra mask. This is the scheme of the
-  Newport Fab patent,[^pat-mim-newportfab] and, on our reading of the
-  step order, SKY130's; IBM's patent reaches a planar bottom plate by
+  Newport Fab patent,[^pat-mim-newportfab] and, we infer from the PDK's
+  description of a thin dielectric over metal followed by a thin
+  conductor,[^pdk-07] SKY130's; IBM's patent reaches a planar bottom plate by
   damascene and CMP instead.[^pat-mim-ibm] The price is that
   the metal-3 etch must later cut through the dielectric wherever it
   remains ({ref}`MM3E <step-140>`).

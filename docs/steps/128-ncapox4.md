@@ -18,8 +18,8 @@ dielectric over metal 2. After {ref}`CMPM2 <step-127>` the
 metal-2 lines is whatever the polish left — a target with a
 tolerance — and its surface carries the scratches, slurry residue and
 hydrated layer of a polish. A thin plasma oxide deposited over it
-seals that surface and, on our reading of the step name and its
-position, brings the dielectric above metal 2 to its final thickness
+seals that surface and, we infer (as at {ref}`NCAPOX3 <step-117>`),
+brings the dielectric above metal 2 to its final thickness
 before the via-2 mask ({ref}`VIM2 <step-129>`) is printed. The
 finished number is public: the PDK's stack diagram gives the via-2
 height through NILD4 as 0.42 µm.[^pdk-04] The cap's own thickness is

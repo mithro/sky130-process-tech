@@ -87,8 +87,8 @@ model form[^pdk-07]).
   topography under the dielectric; the plate edge lands on
   dielectric-over-metal everywhere. This is the construction of the
   Newport Fab and Freescale
-  patents[^pat-mim-newportfab][^pat-mim-freescale] and, on our
-  reading of the step order, SKY130's; IBM's patent instead forms a
+  patents[^pat-mim-newportfab][^pat-mim-freescale] and, we infer from the
+  PDK's description of the construction,[^pdk-07] SKY130's; IBM's patent instead forms a
   planar bottom plate by damascene and CMP.[^pat-mim-ibm] The alternative —
   etching the bottom metal first and depositing the dielectric and
   plate over its edges — puts the thin dielectric on a sidewall.
