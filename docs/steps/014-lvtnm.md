@@ -164,7 +164,7 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   photoresist suppliers.[^sec-01]
 * **HMDS** adhesion promoter; **2.38 % (0.26 N) TMAH developer**, the industry
   standard;[^txt-02] edge-bead remover and rinse solvents; {ref}`DI water <material-ultrapure-water>` and
-  nitrogen.
+  {ref}`nitrogen <material-process-gases>`.
 * **The LVTNM reticle** — a chrome-on-quartz plate generated from the
   `clvtnm` layer with its add/drop corrections.[^pdk-06]
 

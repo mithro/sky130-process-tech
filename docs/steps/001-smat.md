@@ -169,7 +169,7 @@ at `SMAT`; the association is our inference from the tool's function.
 * **SC-1 chemicals** ({ref}`wet chemicals <material-wet-chemicals>`) — ammonium hydroxide, hydrogen peroxide.
 * **SC-2 chemicals** — hydrochloric acid, hydrogen peroxide.
 * **Dilute HF** for the optional native-oxide strip.[^wiki-rca]
-* **Nitrogen** for drying and cassette purging.
+* **{ref}`Nitrogen <material-process-gases>`** for drying and cassette purging.
 
 SkyWater's filings name its chemical and gas suppliers (Air Products,
 Praxair, KMG Chemicals in the 2021 S-1;[^sec-01] Linde, Airgas, EMD

@@ -114,7 +114,7 @@ Which of the three carries the isolation nitride etch is not public.
 
 ## Resources required
 
-* **CF₄, CHF₃, O₂** (and possibly Ar or N₂) process
+* **{ref}`CF₄ <material-etch-gases>`, CHF₃, {ref}`O₂ <material-process-gases>`** (and possibly Ar or N₂) process
   gases.[^skw-01][^txt-02]
 * **Helium** for backside wafer cooling.
 * **Chamber-clean gases** (O₂, NF₃ or SF₆) between wafers or lots.

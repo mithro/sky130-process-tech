@@ -156,11 +156,11 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 
 ## Resources required
 
-* **Silane (SiH₄)** — pyrophoric, delivered through gas
+* **{ref}`Silane <material-precursors>` (SiH₄)** — pyrophoric, delivered through gas
   cabinets.[^wiki-pecvd]
-* **Oxygen** and **argon**.[^wiki-pecvd]
+* **{ref}`Oxygen <material-process-gases>`** and **argon**.[^wiki-pecvd]
 * **Helium** for backside cooling; **nitrogen** purge.
-* **NF₃** (with argon/oxygen) for the remote-plasma chamber clean —
+* **{ref}`NF₃ <material-etch-gases>`** (with argon/oxygen) for the remote-plasma chamber clean —
   the Novellus release refers to the "enlarged remote plasma source"
   that "allows more wafers to be processed between plasma
   cleans".[^lam-speed]
