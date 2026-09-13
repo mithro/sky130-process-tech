@@ -140,7 +140,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
    illumination; the large features need no resolution enhancement
    (inference from the geometry[^itrs-03]).
 4. **Post-exposure bake and develop.** A {term}`PEB` to smooth
-   standing waves, then 0.26 N TMAH develop, rinse and dry.[^txt-02]
+   standing waves, then 2.38 % (0.26 N) TMAH develop, rinse and dry.[^txt-02]
 5. **Alignment.** To the {ref}`VIM2 <step-129>` marks beneath the
    metal (the metal-3 stack is opaque, so the marks are read as
    topography or through cleared windows; industry practice[^levinson-2005]).
@@ -177,7 +177,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 * **i-line positive photoresist** (DNQ/novolac); SkyWater's S-1
   names Dow, JSR and Tokyo Ohka Kogyo as photoresist
   suppliers.[^sec-01]
-* **Organic BARC** or dyed resist, **0.26 N TMAH developer** (Air
+* **Organic BARC** or dyed resist, **2.38 % (0.26 N) TMAH developer** (Air
   Products per the S-1[^sec-01]), edge-bead remover, rinse solvents,
   DI water and nitrogen.[^txt-02]
 * **The CAPM {term}`reticle`**, generated from the drawn `capm` layer
