@@ -94,7 +94,8 @@ function is to "block Vt adjust implant for low Vt LV PMOS/NMOS, SONOS
 FETs and Native NMOS"[^pdk-periph]), not by adding one. We therefore
 infer that `DEPI` is specific to the SONOS cells and plays no part in
 the native or zero-Vt transistors; their thresholds are those of
-channels without threshold-adjust implants.
+channels without threshold-adjust implants (and, for the zero-Vt device,
+without the P-well).
 
 Measurements published in the SKY130 raw-data repository are consistent
 with that reading. By maximum-transconductance extrapolation of the
