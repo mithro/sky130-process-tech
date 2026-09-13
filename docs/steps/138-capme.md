@@ -195,11 +195,14 @@ end (SKY130's recipe is not public):
 
 ## Resources required
 
-* **SF₆ or CF₄**, **Cl₂ and/or BCl₃**, **Ar or N₂** for the etch
-  (industry practice;[^nojiri-2015][^pat-mim-ti-etch] SkyWater lists
-  no gases for its metal etchers, but names Cl₂, CF₄ and SF₆ on its
-  poly/silicon etchers[^skw-01]); **He** for backside
-  cooling.
+* **Cl₂** (or **BCl₃**, **Br₂** or **HBr**) with a small flow of a
+  fluorine-bearing gas (**CF₄**, **CHF₃**, **CH₂F₂** or **SF₆**) in
+  **Ar**, **He** or **N₂** for the etch (industry
+  practice;[^nojiri-2015][^pat-mim-ti-etch] SkyWater lists no gases
+  for its metal etchers, but names Cl₂, HBr, CF₄, CHF₃ and SF₆ on its
+  poly/silicon etchers[^skw-01]); **He** for backside cooling. The
+  gas set is the one given at {ref}`CAP2ME <step-153>`, since the PDK
+  calls the two capacitor constructions identical.[^pdk-07]
 * **O₂/N₂** for the ash;[^skw-01] **amine or semi-aqueous solvent**
   and DI water for the clean.[^skw-01]
 * **Chamber consumables** and **monitor wafers** carrying the plate
