@@ -152,10 +152,10 @@ of a hole of aspect ratio above about 2:1. Ionised-metal-plasma
 ({term}`IMP`) PVD adds a secondary RF coil that ionises the sputtered
 metal; a wafer bias then draws the ions vertically down the hole, so
 bottom coverage rises to tens of per cent. IMP Ti/TiN is the standard
-liner under CVD tungsten at this node, which is why SKY130's liner steps
-are named "IMP Ti/TiN" ({ref}`TI/TIN1 <step-097>`) and "IMP TiN"
-({ref}`TIN2 <step-109>`) (see, for example, an Applied Materials
-IMP patent).[^txt-09][^pat-imp-amat]
+liner under CVD tungsten at this node (see, for example, an Applied
+Materials IMP patent),[^txt-09][^pat-imp-amat] and this reference
+describes SKY130's contact and via liners as IMP Ti/TiN
+({ref}`TI/TIN1 <step-097>`) and IMP TiN ({ref}`TIN2 <step-109>`).
 
 ### CVD tungsten
 

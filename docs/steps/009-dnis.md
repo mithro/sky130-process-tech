@@ -15,11 +15,10 @@
 `DNIS` removes the thick photoresist that masked the deep N-well
 implant at {ref}`DNI <step-008>`, and cleans the wafer so that it can
 go into the liner-oxidation furnace at {ref}`LINOX <step-010>`. It is
-the first of the many *implant strip* steps in SKY130 (the step list
-used in this reference pairs almost every implant mask with an "…IS"
-strip). The step name we use, "High V deep N-well implant strip",
-indicates that the
-deep N-well is associated with the high-voltage device family (see
+the first of the many *implant strip* steps in this reference, which
+pairs almost every implant mask with a strip step. The deep N-well is
+associated with the high-voltage device family on the evidence of the
+PDK's isolated 20 V NMOS and a Cypress SONOS patent (see
 {ref}`DNM <step-007>`).
 
 What makes this strip different from an ordinary post-etch strip is
@@ -196,8 +195,7 @@ fab:
   wet sequence are not public.
 * Whether the post-trench-etch polymer clean (see
   {ref}`STIE <step-006>`) is performed here, at `STIE`, or before
-  {ref}`DNM <step-007>` is not distinguishable from the step list used
-  in this reference.
+  {ref}`DNM <step-007>` is not stated publicly.
 * Whether `DNIS` includes the pre-liner-oxidation HF treatment or
   whether that belongs to {ref}`LINOX <step-010>` is unknown.
 

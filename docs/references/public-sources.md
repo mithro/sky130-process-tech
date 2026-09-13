@@ -6654,7 +6654,7 @@ CMI (Fab 4)*, document 001-85611 Rev. *A, January 2013 (copy hosted by
 Infineon Technologies).
 <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
 S8TNV-5R metal composition at Bloomington: Metal 1 "100A Ti / 3200A
-Al-0.5%Cu / 300A TiW". Used on steps 112, 113 and 114. Tier:
+Al-0.5%Cu / 300A TiW". Used on steps 112, 113 and 114 and on the etch category page. Tier:
 cross-check.
 
 **CYP-QTP-123907** — Cypress Semiconductor, *Fab Process Qualification
