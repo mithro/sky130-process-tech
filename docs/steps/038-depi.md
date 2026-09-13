@@ -98,7 +98,8 @@ channels without threshold-adjust implants.
 
 Measurements published in the SKY130 raw-data repository are consistent
 with that reading. By maximum-transconductance extrapolation of the
-drain current at a drain bias of 0.1 V (our extraction from the
+drain current at a drain bias of 0.1 V, less half that bias (our
+extraction from the
 published measurements), the `nfet_05v0_nvt` structures have thresholds
 of 0.05–0.12 V and the `nfet_03v3_nvt` structures −0.05 to +0.05 V,
 against 0.79–0.82 V for two 7/8 µm `nfet_g5v0d10v5` devices; the 20 V

@@ -55,7 +55,7 @@ files it under `nfet_20v0_nvt`, but its geometry is that of the PDK's
 `nfet_20v0_zvt` e-test structure ("2\* 30/5.5") rather than the
 "2\* 30/1.0" listed for `nfet_20v0_nvt`.[^pdk-07] Five instances give a
 threshold of −0.12 to −0.13 V by maximum-transconductance extrapolation
-at a drain bias of 0.1 V, against an e-test nominal of −0.1224 V, and a
+at a drain bias of 0.1 V (less half that bias), against an e-test nominal of −0.1224 V, and a
 body-effect coefficient of 0.070–0.072 √V from the threshold shift at
 substrate biases of −2.5 V and −5 V (our extraction from the published
 measurements).[^raw-data-hv-mosfets][^pdk-07] With the standard

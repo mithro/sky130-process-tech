@@ -172,7 +172,7 @@ although the PDK states neither the bias conditions nor the extraction
 methods behind them. For the 5 V NMOS, whose nominal VTXNLH at W/L 7/8
 is 0.811 V,[^pdk-07] two 7/8 µm test-tile devices give 0.79 V and
 0.82 V by maximum-transconductance extrapolation of the drain current at
-V_DS = 0.1 V. For the 16 V {term}`drain-extended <DEMOS>` NMOS at 20 µm
+V_DS = 0.1 V, less half that drain bias. For the 16 V {term}`drain-extended <DEMOS>` NMOS at 20 µm
 width, the median resistance at V_GS = 5 V and V_DS = 0.1 V is 469 Ω
 for ten 0.925 µm ("L=0.7") structures and 695 Ω for eight 2.425 µm
 ("L=2.2") structures, against RDS nominals of 458.5 Ω and 703.8 Ω at
