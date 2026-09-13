@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 138 of 171 |
+| **Step number** | 138 of 171[^steps-sheet] |
 | **Step code** | `CAPME` |
 | **Category** | {ref}`Etch <category-etch>` |
 | **Phase** | BEOL — MiM capacitors, metal 3–5, via 3–4 |
@@ -394,3 +394,6 @@ end (SKY130's recipe is not public):
     Materials), *Plasma reactor with multi-section RF coil and isolated
     conducting lid*, US 5,540,824 A, granted 1996-07-30.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

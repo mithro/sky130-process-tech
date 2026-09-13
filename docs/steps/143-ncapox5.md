@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 143 of 171 |
+| **Step number** | 143 of 171[^steps-sheet] |
 | **Step code** | `NCAPOX5` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | BEOL — MiM capacitors, metal 3–5, via 3–4 |
@@ -336,3 +336,6 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
     "Plasma-charging damage of floating MIM capacitors", *IEEE
     Transactions on Electron Devices* **51**(6), 1017–1024 (2004).
     <https://doi.org/10.1109/TED.2004.829518>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

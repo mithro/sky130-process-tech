@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 136 of 171 |
+| **Step number** | 136 of 171[^steps-sheet] |
 | **Step code** | `CAPTIW1` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | BEOL — MiM capacitors, metal 3–5, via 3–4 |
@@ -392,3 +392,6 @@ back end (SKY130's recipe is not public):
     with sidewall spacers and aluminum cap (ALCAP) top electrode*,
     US 7,250,334 B2, filed 2004-07-31, granted 2007-07-31.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7250334>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
