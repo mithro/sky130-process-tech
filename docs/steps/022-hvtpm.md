@@ -200,7 +200,8 @@ fab:
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — exposure wavelength by node.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 * ITRS 2001, *Process Integration, Devices, and Structures* — "Multiple
   Vt".[^itrs-04]
 * Wei et al., DAC 1998 — the circuit-level case for a second PMOS/NMOS

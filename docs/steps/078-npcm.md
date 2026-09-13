@@ -222,8 +222,8 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
   the transistor, the film this mask cuts.[^ito-2000]
 * Tsang et al., *IEEE TSM* 2014 — resistance variation across
   high-value poly resistor banks, whose ends the cut defines.[^tsang-2014]
-* ITRS 2001, *Lithography* — exposure wavelength and overlay
-  requirements by node.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers, and overlay requirements by year.[^itrs-03]
 * Mack, *Fundamental Principles of Optical Lithography* — k₁, BARC
   and process windows.[^mack-2007]
 * Levinson, *Principles of Lithography* — overlay budgets and layer
