@@ -35,7 +35,7 @@ inspected them before shipment: the same scanner family serves the
 vendor's outgoing and the fab's incoming quality control.[^kla-sp1-2021]
 The fab's own tools therefore do three things before the wafers enter
 the process flow: they confirm that the surface is clean and undamaged,
-they give each wafer an identity that survives every later step, and
+they give each wafer an identity that lasts through the flow, and
 they assemble wafers into lots in a known order. The tools share one
 constraint: they handle bare, polished wafers, so they must add no
 particles, scratches or metal to a surface that no later step will
