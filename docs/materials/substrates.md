@@ -66,7 +66,8 @@ see as particles, presuming their origin to be "some kind of defect in
 the melt-grown crystals";[^ryuta-1990] Miyazaki et al. concluded that
 the original COP in a crystal is "an octahedral void";[^miyazaki-1997]
 and Ishii et al. found that pair pits of this kind caused gate-oxide
-failure at oxide thicknesses around 10 nm.[^ishii-1996] Falster and Voronkov describe how growth conditions
+failure at oxide thicknesses around 10 nm.[^ishii-1996] Falster and
+Voronkov describe how growth conditions
 control these point defects.[^falster-2000]
 
 ### Epitaxial and other substrates
