@@ -198,9 +198,11 @@ precursor.[^sec-01][^sec-02]
 
 For the films, SkyWater's S-1 states that "our fab was owned and operated
 by Cypress Semiconductor Corporation, or Cypress, as a captive
-manufacturing facility for 20 years",[^sec-01] and a 2005 Cypress report
-for a product from that fab gives its passivation as "1000Å TEOS / 9000Å
-PECVD Nitride".[^cyp-qtp-014807]
+manufacturing facility for 20 years",[^sec-01] and Cypress's 2017
+release on its sale describes "its semiconductor wafer fabrication
+facility in Bloomington, Minnesota" and calls it "Fab 4 in
+Minnesota";[^cyp-01] a 2005 Cypress report for a "Fab4" product gives its
+passivation as "1000Å TEOS / 9000Å PECVD Nitride".[^cyp-qtp-014807]
 
 ### Strength of the evidence
 
@@ -353,6 +355,8 @@ not public.
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   compressed gases, gas suppliers and the fab's Cypress
   history.[^sec-01][^sec-02]
+* Cypress Semiconductor, *Cypress Closes Sale of Minnesota Wafer
+  Fabrication Facility* (2017) — the Bloomington fab as Fab 4.[^cyp-01]
 * Cypress Semiconductor, QTP 014807 — a TEOS and PECVD nitride
   passivation at the fab in 2005.[^cyp-qtp-014807]
 * SEMI C3.55, C3.12 and C70 — specifications for silane, ammonia and
@@ -534,6 +538,9 @@ not public.
 [^amat-sacvd-2000]: Applied Materials, *SACVD* (Giga-Fill SACVD Centura),
     product page; Wayback Machine capture of 2000-07-09.
     <https://web.archive.org/web/20000709131617/http://www.appliedmaterials.com:80/products/sacvd.html>
+[^cyp-01]: Cypress Semiconductor, *Cypress Closes Sale of Minnesota Wafer
+    Fabrication Facility*, PR Newswire, 2017-03-01, accessed 2026-09-13.
+    <https://www.prnewswire.com/news-releases/cypress-closes-sale-of-minnesota-wafer-fabrication-facility-300416287.html>
 [^cyp-qtp-014807]: Cypress Semiconductor, *Technology Derivative
     Qualification Report, QTP# 014807 Version 2.0: Technology
     Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM*, June 2005

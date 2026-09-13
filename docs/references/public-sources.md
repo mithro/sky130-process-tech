@@ -825,9 +825,11 @@ not be captured. Tier: high-level.
 **CYP-01** — Cypress Semiconductor, *"Cypress Closes Sale of Minnesota
 Wafer Fabrication Facility"*, PR Newswire, 2017-03-01.
 <https://www.prnewswire.com/news-releases/cypress-closes-sale-of-minnesota-wafer-fabrication-facility-300416287.html>.
-Sale of "Fab 4 in Bloomington, Minnesota" for $30 M to SkyWater
-Technology Foundry (Oxbow Industries); wafer-supply agreement. Tier:
-cross-check.
+Sale of "the subsidiary that owns its semiconductor wafer fabrication
+facility in Bloomington, Minnesota" for $30 M to SkyWater Technology
+Foundry (Oxbow Industries), which the CEO's quotation calls "The sale of
+Fab 4 in Minnesota"; wafer-supply agreement. Tier: cross-check.
+Also used on the precursors material page.
 
 **CYP-02** — Alex Van Abbema, Star Tribune, *"Twin Cities tech
 executives form new company, buy Cypress chip plant in Bloomington"*,
