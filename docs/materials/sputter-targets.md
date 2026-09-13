@@ -17,7 +17,7 @@ film physics on the {ref}`deposition category page <category-deposition>`.
 
 | | Sputter targets |
 |---|---|
-| What they are | "A sputtering target is the object of the ion bombardment when sputtering takes place."[^jx-sputtering] |
+| What they do | Supply the atoms of a sputtered film: "A sputtering target is the object of the ion bombardment when sputtering takes place."[^jx-sputtering] |
 | Materials in the SKY130 steps | Titanium (also sputtered {term}`reactively <reactive sputtering>` to TiN), aluminium–copper, titanium–tungsten; a Cypress report for the fab gives "Metal 1: 100A Ti / 3200A Al-0.5%Cu / 300A TiW".[^cyp-qtp-113005] |
 | Purity | Titanium "4N5 (Ti 99.995% or above) 5N 5N5";[^jx-semi-targets] Al–Cu and Al–Si–Cu "99.99% (4N)-99.9995% (5N5)".[^solstice-targets] |
 | Microstructure | Grain size and "crystallographic orientation and surface relief affect the I–V characteristics" of aluminium alloy targets.[^leybovich-1993] |
@@ -226,14 +226,14 @@ current products in general.
 ### SKY130 steps that use this class
 
 This page covers the rows of the {ref}`materials index <materials-table>`
-listed below; the steps are those whose *Resources required* section
+listed below by key; the steps are those whose *Resources required* section
 names one of them (the union of the rows' *Steps* cells).
 
 Materials index rows covered:
 
-* Titanium sputter targets (Ti; reactive TiN)
-* Aluminium–copper sputter targets (Al–0.5 wt.% Cu)
-* Titanium–tungsten sputter targets (Ti:W, 10 wt.% Ti[^pat-tiw-hitachi])
+* `ti-target` — titanium sputter targets
+* `alcu-target` — aluminium–copper sputter targets
+* `tiw-target` — titanium–tungsten sputter targets
 
 Steps:
 
