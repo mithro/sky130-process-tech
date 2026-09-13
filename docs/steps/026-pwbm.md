@@ -136,7 +136,8 @@ fab:
    well-to-well junction position and hence the n⁺/p⁺ spacing
    rules.[^rubin-2002]
 5. **Develop, hard bake, inspect.** 2.38 % TMAH[^microchemicals-dev]
-   (0.26 N; our arithmetic from TMAH's molar mass of 91.15 g/mol)
+   (0.26 N; our arithmetic from TMAH's molar mass of 91.15 g/mol,[^wiki-tmah]
+   taking the solution's density as about 1 g/mL)
    develop; resist hardening for
    the high-energy implant; overlay to STI.
 
@@ -274,6 +275,8 @@ raises NMOS {term}`Vt`.[^hook-2003]
 
 <!-- footnotes -->
 
+[^wiki-tmah]: Wikipedia, *Tetramethylammonium hydroxide*.
+    <https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>
 [^microchemicals-dev]: MicroChemicals, *Development of photoresists*,
     application note.
     <https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>
