@@ -7964,14 +7964,16 @@ to RRAM cell (when via is enclosed by r1c), or connects met1 and met2";
 "defines top part of contacts to RRAM tier1 cell". Tier: cross-check.
 
 **RERAM-CELL** — SkyWater PDK Authors, `cells/reram_cell/`
-(`sky130_fd_pr_reram__reram_cell.gds`, `.va`, `.spice`),
-google/skywater-pdk-libs-sky130_fd_pr_reram repository, commit d6d2a3c.
-<https://github.com/google/skywater-pdk-libs-sky130_fd_pr_reram/tree/d6d2a3c6960aac0a0b12fc21221c31777bbf284d/cells/reram_cell>
+(`sky130_fd_pr_reram__reram_cell.gds`, `.va`, `.spice`) and
+`cells/reram_test_drc/`, google/skywater-pdk-libs-sky130_fd_pr_reram
+repository, commit d6d2a3c.
+<https://github.com/google/skywater-pdk-libs-sky130_fd_pr_reram/tree/d6d2a3c6960aac0a0b12fc21221c31777bbf284d/cells>
 The cell layout carries a 0.32 µm × 0.32 µm shape on GDS 201:20, a
 0.15 µm `via` (68:44) square, `met1` (68:20) and `met2` (69:20) with
 labels BE and TE; the Verilog-A model's defaults are `area_ox` 0.1024e-12
-m² and `Tox` 5.0e-9 m with filament-thickness parameters. Tier:
-cross-check.
+m² and `Tox` 5.0e-9 m with filament-thickness parameters; the DRC test
+layout carries rule labels `RR1_CELL.1` to `RR1_CELL.12` with values but
+no descriptions. Tier: cross-check.
 
 **RERAM-REFS** — SkyWater PDK Authors, *References*, `sky130_fd_pr_reram`
 documentation.
@@ -8002,12 +8004,12 @@ Under `#ifdef RERAM`: a `reram` contact type between metal 1 and metal 2
 written to GDS as `via` squares on 68:44 plus "layer RERAM reram / calma
 201 20" (lines 1293–1301) and read back with "calma RERAM 201 20" (line
 4194); DRC "width reram 260 "ReRAM width < %d (rr1.1)"", "spacing reram
-reram 55 … (rr1.2)" and "no_overlap reram v1" (lines 4835–4842);
+reram 55 … (rr1.2)" and "no_overlap reram v1" (lines 4835–4842; the via-1 width rule, line 4821, is annotated "(via.1a + 2 * via.4a)");
 extraction heights `v1` 1.7361/0.565, `allm2` 2.3011/0.36, `allm3`
 3.0811, `mimcap` 2.7611 against `v1` 1.7361/0.27, `allm2` 2.0061 and
-`mimcap` 2.4661 without ReRAM (lines 5303–5352); via-1 contact resistance
+`mimcap` 2.4661 without ReRAM (lines 5303–5336); via-1 contact resistance
 `m2c` 9000 against 4500 (nominal), 30000 against 15000 and 4000 against
-2000 (corner variants) (lines 5420–5423, 5482–5485, 5544–5547). Tier:
+2000 (corner variants) (lines 5421–5423, 5483–5485, 5545–5547). Tier:
 cross-check.
 
 #### RRAM devices, integration and the 3DSoC work
