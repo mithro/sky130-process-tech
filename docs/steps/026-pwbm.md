@@ -16,8 +16,8 @@
 is coated, exposed through the PWBM {term}`reticle` and developed so that resist
 *remains* over every region that must not receive the P-well and is
 removed everywhere else. The two P-well implants {ref}`PWI <step-027>`
-and {ref}`PWI2 <step-028>` follow (through the same openings, we infer
-from the step order), and the resist is stripped at
+and {ref}`PWI2 <step-028>` follow (through the same openings in the
+sequence this reference describes), and the resist is stripped at
 {ref}`PWIS <step-029>`. The PDK's name for the mask, "P-Well Block
 Mask",[^pdk-05] says how the layer is used: this is a
 *block* mask, the negative of the {ref}`NWM <step-017>` N-well mask in

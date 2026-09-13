@@ -54,8 +54,8 @@ and LPCVD nitride's tensile stress of order 1 GPa[^temple-boyer-1998] is
 one of the film-stress problems Hu reviews,[^hu-1991] so the surface it
 is deposited on should at least be clean and uniform. The clean here is
 therefore designed to leave that oxide, not remove it — an inference
-from the step order, since no public source describes the SKY130 surface
-state before the cap.
+from the cap's requirements, since no public source describes the
+SKY130 surface state before the cap.
 
 Metallic contamination is the other concern. The three implants of the module
 have sputtered beam-line material onto the resist and the open film, and the

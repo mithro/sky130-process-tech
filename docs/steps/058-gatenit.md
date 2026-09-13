@@ -238,7 +238,7 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 * Whether it functions as the anti-reflective layer for
   {ref}`P1M <step-061>`, as a hard mask for {ref}`P1ME <step-062>`, as
   a polish stop for {ref}`CMPP <step-090>`, or as all three, is
-  inferred from the step order and the PDK rules, not stated.
+  this reference's inference from the PDK rules, not stated.
 * The meaning of the PDK's "poly cap after SPE" (0.2 µm) entry is our
   reading; the table does not define it.
 * Whether the gate is ever doped through or around the cap by later

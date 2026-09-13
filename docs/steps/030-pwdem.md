@@ -17,7 +17,8 @@ the well and channel module. A photoresist (thick, we infer) is coated,
 exposed and developed to open windows over the regions of the 20 V
 devices that are to receive a purpose-built, lightly doped P-well; the
 two implants {ref}`PWDEI1 <step-031>` and {ref}`PWDEI2 <step-032>`
-follow (through the same resist, we infer from the step order), and the
+follow (through the same resist in the sequence this reference
+describes), and the
 resist is stripped at {ref}`PWDEIS <step-033>`.
 
 The drawn layer is `pwde` (GDS 124:20), "Regions to receive p-well
