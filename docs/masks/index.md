@@ -6,9 +6,10 @@ integrated circuit. For each level a {term}`reticle` — a fused-silica
 plate carrying a chromium image of one layer of the layout, drawn
 four or five times larger than it will print on the wafer[^wiki-mask]
 (4× is the ITRS 2001 mask magnification for the 130 nm
-generation[^itrs-03]; for SKY130, the process-steps sheet records 4×
-for the via 2, via 3 and via 4 plates, on our reading of its mask-type
-codes, and on the two plate-case labels it transcribes[^steps-sheet]) —
+generation;[^itrs-03] the two Photronics plate-case labels transcribed
+in the process-steps sheet carry "4X" in their type field, and we read
+the sheet's mask-type codes for the via 2, via 3 and via 4 plates as 4×
+too[^steps-sheet]) —
 is projected onto a photoresist-coated wafer.
 The developed resist then serves as a stencil for an etch, or as a
 {term}`block mask` for an implant, and is removed afterwards. The
