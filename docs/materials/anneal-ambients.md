@@ -10,9 +10,9 @@ Hydrogen is often supplied diluted in nitrogen as
 {term}`forming gas`, and the same mixture is used in downstream plasma
 ashers to strip resist. The materials index assigns forming gas to this
 page; nitrogen, argon and oxygen belong to the process-gas class and
-ammonia to the precursor class, which have pages of their own in the
-{ref}`materials index <materials-index>`, and they are discussed here
-only in their role as anneal ambients. On the step pages' readings,
+ammonia to the precursor class, which the
+{ref}`materials index <materials-index>` assigns to class pages of their
+own, and they are discussed here only in their role as anneal ambients. On the step pages' readings,
 SKY130 uses forming gas in the two {term}`alloy anneals <alloy anneal>`
 and in the ash of thirty resist strips. This page describes the class in
 general, lists representative mixtures, and then says what SkyWater has
