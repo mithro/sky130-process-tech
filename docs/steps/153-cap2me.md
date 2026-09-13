@@ -79,8 +79,8 @@ What is specific to this instance is the history of the wafer. Under
 the metal-4 stack lies a finished first capacitor whose plates connect,
 through via 3, to metal-4 shapes that are still one continuous sheet;
 every `capm` top plate on the wafer is electrically tied to the blanket
-metal 4 during this etch (inference from the PDK's stacked
-cross-section[^pdk-07] and the step order).
+metal 4 during this etch (inference from the PDK's stacked cross-section,[^pdk-07] in the sequence
+described in this reference, where metal 4 is patterned after this etch).
 
 ## Why this step exists
 

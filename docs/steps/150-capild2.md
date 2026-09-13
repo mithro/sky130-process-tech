@@ -130,9 +130,7 @@ difference in thickness or permittivity between this film and
   bottom metal is etched gives a planar bottom plate with no sidewall
   under the thin film. The Newport Fab patent deposits its dielectric
   and top-plate metal on the unpatterned interconnect metal and etches
-  the top plate before the bottom plate,[^pat-mim-newportfab] and on
-  our reading of the step order SKY130 builds its capacitors in the
-  same order; Freescale's patent, by contrast, builds a separate MiM
+  the top plate before the bottom plate,[^pat-mim-newportfab] and the sequence described in this reference builds its capacitors in the same order; Freescale's patent, by contrast, builds a separate MiM
   stack over a planarised dielectric.[^pat-mim-freescale] The price is that the metal-4 etch must
   later cut through whatever dielectric remains ({ref}`MM4E <step-155>`).
 * **Oxynitride, oxide or nitride.** PECVD silicon nitride gives the most
@@ -186,7 +184,8 @@ back end (SKY130's recipe is not public); the sequence is that of
    specification[^pdk-07]).
 5. **Thermal budget.** By this step the first capacitor has already
    been through the via-3 dielectric, tungsten and metal-4 depositions
-   (inference from the step order); the aluminium limit of roughly
+   (the first capacitor lies below via 3 and metal 4 on the PDK's stack
+diagram[^pdk-04]); the aluminium limit of roughly
    400–450 °C (industry-typical[^txt-05]) bounds this deposition and
    every later one.
 6. **Metrology.** Thickness and refractive index by ellipsometry on

@@ -129,8 +129,8 @@ are those of metals 1–3:
   width of 0.800 µm and length of 7.200 µm (mf.1, mf.2), and the layer
   table carries a `met4` "fuse" purpose (71:17).[^pdk-periph][^pdk-06]
   On that reading some metal-4 shapes are fuse links, which this stack
-  must also serve (inference; the passivation module that follows the
-  top metal begins at {ref}`NFUSOX <step-164>`).
+  must also serve (inference from the PDK's metal-fuse note and the `met4` fuse
+  purpose[^pdk-periph][^pdk-06]).
 
 Without `WTIAL4` there is no metal 4, no bottom plate for the second
 MiM capacitor, and the via-3 plugs would end in air.
@@ -166,8 +166,7 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
    analogy with the metal-3 descriptions[^cyp-qtp-113005] (inference).
    Its surface receives the second MiM dielectric at
    {ref}`CAPILD2 <step-150>`, so particle and queue-time control
-   matter as at {ref}`WTIAL3 <step-134>` (inference from the module
-   order).
+   matter as at {ref}`WTIAL3 <step-134>` (inference).
 6. **Metrology.** Sheet resistance by {term}`four-point probe` (the
    PDK's 47 mΩ/sq[^pdk-07] is what a finished stack reads after the
    back-end anneals); thickness by XRF or profilometry; reflectivity;
