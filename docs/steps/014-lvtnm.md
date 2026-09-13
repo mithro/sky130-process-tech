@@ -153,7 +153,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   strong for existence; which track serves which exposure tool is not
   public.
 * **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
-  Strength: strong.
+  Strength: strong for existence (SkyWater statement); use at this mask
+  is an inference.
 
 ## Resources required
 
