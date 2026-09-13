@@ -22,20 +22,20 @@ wherever the layout draws `capm`, "MiM capacitor plate over metal 3"
 {ref}`CAPME <step-138>` etch then removes the exposed TiW, stopping on
 or in the dielectric, and leaves the plates. The PDK's mask table
 lists "Capacitor MiM, CAPM",[^pdk-05] so the step code is the mask
-name; it is the only mask in the flow whose pattern is a *device*
-rather than a wiring, contact or implant layer, and the only one
-printed on a metal that will itself be patterned afterwards
-({ref}`MM3 <step-139>`).
+name; with {ref}`CAP2M <step-152>`, it is one of two masks in the
+flow whose pattern is a *device* rather than a wiring, contact or
+implant layer, and one of two printed on a metal that will itself be
+patterned afterwards (here at {ref}`MM3 <step-139>`).
 
 The public geometry is coarse. The PDK's minimum-CD table gives the
 capacitor mask a `CAPMCD` of 2 µm and a `CAPMCDSP` of
-0.84 µm,[^pdk-03] its physical-criteria table a maximum "MiM
-Capacitor aspect ratio" of 20,[^pdk-03] and the periphery rules a
+0.84 µm,[^pdk-03] its physical-criteria table a maximum MiM
+capacitor aspect ratio of 20,[^pdk-03] and the periphery rules a
 set of twelve `capm` rules — minimum width, spacing to `capm` and to
 the bottom plate, enclosure of the plate by the metal beneath,
 enclosure of the via that contacts it, a maximum aspect ratio, a
 rectangles-only rule, a rule that `capm` must not straddle wells,
-diffusion, poly, local interconnect or metal 1, and a maximum
+diffusion, tap, poly, local interconnect or metal 1, and a maximum
 area — all with their numeric values shown as "N/A" on the public
 page.[^pdk-periph] The capacitance the plate defines is the PDK's
 2 fF/µm² of area plus 0.19 fF/µm of periphery.[^pdk-07] A 2 µm
@@ -76,25 +76,27 @@ model form[^pdk-07]).
 * **The plate area is the capacitance.** The capacitor is drawn as
   `capm` and its value is `CMIMA` × area + `CMIMP` × perimeter;[^pdk-07]
   this mask, and the etch that follows, fix that area on the wafer.
-  The PDK's "MiM Capacitor aspect ratio" of 20[^pdk-03] and the
-  rectangles-only rule (capm.7)[^pdk-periph] keep the periphery term
-  and the plate resistance within what the model was fitted for;
-  Ng et al. discuss why plate geometry matters for the capacitor's
-  series resistance and quality factor.[^ng-2005]
+  The PDK's maximum MiM capacitor aspect ratio of 20[^pdk-03] and the
+  rectangles-only rule (capm.7)[^pdk-periph] keep, we infer, the
+  periphery term and the plate resistance within what the model was
+  fitted for; Ng et al. review MiM integration in Al–Cu and Cu back
+  ends.[^ng-2005]
 * **Top plate first, bottom plate later.** Printing `capm` on the
   unpatterned metal means the resist sits on a flat, continuous film
   with no metal edges to reflect light into the plate corners and no
   topography under the dielectric; the plate edge lands on
   dielectric-over-metal everywhere. This is the construction of the
-  IBM, Newport Fab and Freescale
-  patents[^pat-mim-ibm][^pat-mim-newportfab][^pat-mim-freescale] and,
-  on our reading of the step order, SKY130's. The alternative —
+  Newport Fab and Freescale
+  patents[^pat-mim-newportfab][^pat-mim-freescale] and, on our
+  reading of the step order, SKY130's; IBM's patent instead forms a
+  planar bottom plate by damascene and CMP.[^pat-mim-ibm] The alternative —
   etching the bottom metal first and depositing the dielectric and
   plate over its edges — puts the thin dielectric on a sidewall.
 * **Alignment and enclosure.** The plate must later be enclosed by
-  the metal-3 bottom plate (the enclosure rule capm.3[^pdk-periph])
-  and contacted by a via-3 that the plate must enclose (capm.4,
-  capm.5[^pdk-periph]). Because metal 3 has not yet been printed,
+  the metal-3 bottom plate and contacted by a via-3 that the plate
+  encloses — the rules capm.3–capm.5,[^pdk-periph] whose text names
+  `met2` and `via2`, read here for metal 3 and via 3 (inference; see
+  {ref}`CAPILD <step-135>`). Because metal 3 has not yet been printed,
   `CAPM` is aligned to the last patterned layer — the via-2 holes of
   {ref}`VIM2 <step-129>` under the metal — and {ref}`MM3 <step-139>`
   is then aligned either to the same marks or to `capm` itself
@@ -238,12 +240,13 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
   alignment through opaque films.[^levinson-2005]
 * Ausschnitt, SPIE 1999 — separating dose from defocus in
   production.[^ausschnitt-1999]
-* Ng et al. (Chartered), *IEEE TED* 2005 — plate geometry, series
-  resistance and quality factor in MiM integration.[^ng-2005]
+* Ng et al. (Chartered), *IEEE TED* 2005 — a review of MiM integration
+  in Al–Cu and Cu back ends.[^ng-2005]
 * Brabazon et al. (IBM), US 5,708,559; Kar-Roy and Racanelli
   (Newport Fab), US 6,430,028; Roberts and Huffman (Freescale),
-  US 7,375,002 — three top-plate-first MiM constructions and their
-  mask sequences.[^pat-mim-ibm][^pat-mim-newportfab][^pat-mim-freescale]
+  US 7,375,002 — two top-plate-first MiM constructions and a
+  damascene-plate one, with their mask
+  sequences.[^pat-mim-ibm][^pat-mim-newportfab][^pat-mim-freescale]
 * Kim and Demm (Infineon), US 7,112,507 — a plate formed in the full
   thickness of a metallisation level, the other way round.[^pat-mim-infineon]
 
@@ -257,9 +260,10 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 * Which layer `CAPM` is aligned to, and which layer `MM3` is then
   aligned to, is not public.
 * The mask table does not flag "Capacitor MiM, CAPM" as used in
-  SKY130,[^pdk-05] while the README calls MiM capacitors
-  "optional"[^pdk-10] and the shuttle announcements offer them as
-  standard;[^ann-11] whether the mask is run on every lot is not
+  SKY130,[^pdk-05] while the README lists "Optional MiM capacitors"
+  yet also counts them among the "normally *optional* features"
+  included "as standard",[^pdk-10] and the shuttle announcements
+  offer them as standard;[^ann-11] whether the mask is run on every lot is not
   public.
 
 <!-- footnotes -->
