@@ -12,7 +12,8 @@ ashers to strip resist. The materials index assigns forming gas to this
 page; nitrogen, argon and oxygen belong to the process-gas class and
 ammonia to the precursor class, which the
 {ref}`materials index <materials-index>` assigns to class pages of their
-own, and they are discussed here only in their role as anneal ambients. On the step pages' readings,
+own, and they are discussed here only in their role as anneal ambients.
+On the step pages' readings,
 SKY130 uses forming gas in the two {term}`alloy anneals <alloy anneal>`
 and in the ash of thirty resist strips. This page describes the class in
 general, lists representative mixtures, and then says what SkyWater has

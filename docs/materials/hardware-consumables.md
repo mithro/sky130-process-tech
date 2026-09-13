@@ -120,7 +120,8 @@ TSMC patent describes it as "a fine powder" that "may be syphoned back
 into the furnace".[^pat-nh4cl-tsmc] Fluorinated gases are potent
 greenhouse gases — in the IPCC Fourth Assessment Report values that
 Wikipedia tabulates, NF₃ has a 100-year global warming potential (GWP)
-of 17,200 and C₂F₆ one of 12,200[^wiki-gwp] — and are destroyed by combustion, electric heating or plasma: Fiala et al.
+of 17,200 and C₂F₆ one of 12,200[^wiki-gwp] — and are destroyed by
+combustion, electric heating or plasma: Fiala et al.
 modelled point-of-use plasma abatement between the turbomolecular and
 backing pumps;[^fiala-1999] Hu et al. studied NF₃ decomposition in
 point-of-use "wet-thermal-wet abatement" of PECVD chamber
@@ -214,7 +215,8 @@ system" among its accreditations.[^skw-certs] SkyWater's maintenance
 technician profile describes work on tool robots and "the pneumatic
 controls of a vacuum system".[^skw-07]
 
-Two public regulator sources bear on emissions at the Bloomington site. The EPA's Greenhouse Gas Reporting Program lists the facility at
+Two public regulator sources bear on emissions at the Bloomington site.
+The EPA's Greenhouse Gas Reporting Program lists the facility at
 2401 E. 86th St., Bloomington, as reporting under subparts "C,I" in each
 year from 2011 to 2023;[^epa-ghgrp-skywater] subpart I covers electronics
 manufacturing, whose reports include "Controlled emissions of GHGs from
@@ -240,7 +242,8 @@ by it.[^epa-ghgrp-skywater][^epa-subpart-i] The MPCA release refers to
 greenhouse-gas "emissions control equipment" in a permit context; it
 does not say what the equipment is, which gases or tools it serves, or
 whether it is in service (our reading).[^mpca-2025] Quartzware, chamber
-kits, lamps, probe cards and traps at SkyWater appear in no public source cited here; their
+kits, lamps, probe cards and traps at SkyWater appear in no public source
+cited here; their
 descriptions on the step pages are industry practice.
 
 (material-hardware-consumables-steps)=
@@ -325,7 +328,8 @@ cards are not public.
   ONO page quartz ware periodically cleaned of nitride.
 * **Chamber walls and gate CD.** On its page's reading, the gate etch at
   {ref}`P1ME <step-062>` runs in HBr/Cl₂/O₂, a chemistry in which wall
-  coatings change with oxygen addition;[^cunge-2005] the step page names chamber consumables
+  coatings change with oxygen addition;[^cunge-2005] the step page names
+  chamber consumables
   and monitor wafers together, since chamber state and CD drift are
   controlled together (our reading).
 * **Metal etches and chlorine.** The metal etches from
