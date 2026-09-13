@@ -29,7 +29,8 @@ polish is on the {ref}`post-CMP cleaner page <machine-post-cmp-cleaner>`.
 
 ## What the machine class is and how it works
 
-Every CMP polisher has the same elements. Wikipedia's description is of
+A CMP polisher has a few basic elements. Wikipedia's description of
+typical tools is of
 "rotating an extremely flat plate which is covered by a pad", with the
 wafer "mounted upside-down in a carrier/spindle on a backing film" and
 "The retaining ring" keeping it "in the correct horizontal position"; a
@@ -104,9 +105,10 @@ The polishers of the period used four arrangements.
 
 * **Rotary, multi-platen carousel.** In the Mirra patent the heads hang
   from a carousel that "provides circumferential positioning of the heads
-  relative to the polishing pads"; one head is always over "a transfer
-  and washing station" so that loading and washing "can be performed
-  concurrently with wafer polishing", and "The multiple polishing pads can
+  relative to the polishing pads". One head sits over "a transfer and
+  washing station" while the others polish, so that loading and washing
+  "can be performed concurrently with wafer polishing", and "The multiple
+  polishing pads can
   be used to sequentially polish a wafer held in a wafer head in a step of
   multiple steps".[^pat-cmp-mirra]
 * **Rotary, one or two heads.** The AVANTI 472 polished one wafer at a
@@ -309,8 +311,9 @@ page and the step pages.
   that fills with tungsten can short neighbouring
   lines;[^ollendorf-2004] the tungsten polish pages list inspection for
   residual tungsten among their monitors.
-* **The clean that follows.** Every polish is followed by a post-CMP
-  clean before the slurry dries;[^lam-integra-1999] the CMP pages find no
+* **The clean that follows.** The step pages' outlines follow each polish
+  with a post-CMP clean, which must come before the slurry
+  dries;[^lam-integra-1999] the CMP pages find no
   brush scrubber on SkyWater's list and name the single-wafer SEZ tools
   instead ({ref}`machine-post-cmp-cleaner`,
   {ref}`machine-single-wafer-spin-processor`).
