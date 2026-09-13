@@ -95,7 +95,8 @@ chemical oxide is thin and will be buried under the
 ## Machines likely used at SkyWater
 
 * **GaSonics PEP, Iridia and Mattson Aspen II ashers.**[^skw-01]
-  Strength: **strong** for existence; assignment not stated.
+  Strength: **strong** for existence; the assignment of this strip to
+  any one of them is an inference.
 * **Akrion Gamma batch bench; DNS bench; FSI Mercury.**[^skw-01]
   Strength: strong for existence.
 * **KLA-Tencor AIT** inspection (job posting).[^job-01] Strength:

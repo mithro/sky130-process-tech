@@ -149,7 +149,9 @@ typically:
 * **Pre-furnace clean — DNS or FSI Mercury wet bench.** SkyWater's
   capability list names "DNS wet bench industry standard HF/SC1/SC2"
   and "FSI Mercury industry standard HF/SC1/SC2 rotational" under
-  pre-clean.[^skw-01] Strength: strong.
+  pre-clean.[^skw-01] Strength: strong for existence; the assignment
+  is an inference (below) from their HF/SC1/SC2 chemistry, SC-2 being
+  listed only for these two benches.
 * **Wafers themselves — GlobalWafers and SEH America**,[^sec-01][^sec-02]
   with GlobalWafers qualified for S8 at Fab 4 in 2015.[^cyp-06]
   Strength: strong.

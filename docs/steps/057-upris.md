@@ -105,7 +105,8 @@ clean, for a 200 mm, 130 nm-era fab:
 ## Machines likely used at SkyWater
 
 * **GaSonics PEP, Iridia and Mattson Aspen II ashers.**[^skw-01]
-  Strength: **strong** for existence; assignment not stated.
+  Strength: **strong** for existence; the assignment of this strip to
+  any one of them is an inference.
 * **DNS wet bench or FSI Mercury** ("industry standard HF/SC1/SC2")
   for a full RCA sequence, or the **Akrion Gamma** bench.[^skw-01]
   Strength: strong for existence.

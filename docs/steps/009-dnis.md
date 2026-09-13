@@ -98,17 +98,19 @@ fab:
 
 ## Machines likely used at SkyWater
 
-* **GaSonics PEP** and **Mattson Aspen II** ashers — both named by
-  SkyWater with their gases and temperatures.[^skw-01] Strength: strong
-  for existence; assignment to this step is inference.
-* **Iridia RF microwave** — also listed under resist removal by
-  SkyWater.[^skw-01] Strength: strong for existence.
+* **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** —
+  named on SkyWater's facilities page with their gases and
+  temperatures.[^skw-01] Strength: **strong** for existence; the
+  assignment of this strip to any one of them is an inference.
 * **Akrion Gamma batch wet bench** — SkyWater lists it with sulphuric,
   SC1, phosphoric and {term}`BOE` chemistries and spin and IPA
-  drying.[^skw-01] Strength: strong. A sulphuric (SPM) + SC-1 sequence
-  on this bench is the natural post-implant clean.
+  drying.[^skw-01] Strength: strong for existence. A sulphuric (SPM) +
+  SC-1 sequence on this bench is the natural post-implant clean
+  (inference).
 * **DNS / FSI Mercury** HF/SC1/SC2 benches[^skw-01] as the pre-furnace
-  clean. Strength: strong for existence.
+  clean. Strength: strong for existence; the assignment is an inference
+  from their HF/SC1/SC2 chemistry, SC-2 being listed only for these two
+  benches.
 * **Patterned-wafer inspection — KLA-Tencor AIT.**[^job-01] Strength:
   medium.
 

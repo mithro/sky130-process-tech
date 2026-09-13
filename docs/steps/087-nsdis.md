@@ -138,8 +138,10 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   40 °C floor and hydrogen chemistries fitting a crust step best.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
   BOE"),[^skw-01] **DNS wet bench and FSI Mercury** ("industry
-  standard HF/SC1/SC2").[^skw-01] Strength: strong for existence;
-  which bench runs the pre-anneal clean is not public.
+  standard HF/SC1/SC2").[^skw-01] Strength: strong for existence; the
+  DNS and FSI Mercury benches, the only ones listed with SC-2, are the
+  natural pre-anneal clean stations (inference), as at
+  {ref}`PWDEIS <step-033>` and {ref}`LDASTIS <step-074>`.
 * **KLA-Tencor AIT** inspection, from a SkyWater job posting.[^job-01]
   Strength: medium.
 

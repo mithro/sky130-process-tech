@@ -132,9 +132,12 @@ width because of the encroachment under the nitride edge.
   the furnace fleet; assignment of `LINOX` to a furnace rather than an
   RTP tool is our inference (SkyWater's RTP tool, the "Ag Heatpulse
   8808", is listed with NH₃/Ar/N₂/O₂ to 1200 °C,[^skw-01] so an RTP
-  liner is not excluded).
+  liner is not excluded; strength: weak for the Heatpulse as an
+  alternative).
 * **DNS / FSI Mercury HF/SC1/SC2 bench** for the pre-oxidation
-  clean.[^skw-01] Strength: strong for existence.
+  clean.[^skw-01] Strength: strong for existence; the assignment is an
+  inference from their HF/SC1/SC2 chemistry, SC-2 being listed only for
+  these two benches.
 
 ## Resources required
 
