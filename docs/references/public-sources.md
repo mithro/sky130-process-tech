@@ -23,12 +23,12 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1493
+written page has exactly one entry here; the inventory holds 1510
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
-were added to cover the sources the writers of the step, category,
-overview and machine pages introduced; a
+8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
+8.20 were added to cover the sources the writers of the step, category,
+overview, machine and material pages introduced; a
 "Label ↔ key" note marks the few cases where one source has two keys.
 
 :::{note}
@@ -420,6 +420,7 @@ wafers/month", "90 nm + feature geometries", and that the site was
 "recently expanded in 2020 to enable additional capacity and Cu back
 end of line". The "SkyWater Process Integration Tools & Capabilities"
 list then names tools and chemistries by area:
+Also used on the wet chemicals material page.
 
 * *Lithography* — "ASML I-line stepper", "ASML I-line scanner", "ASML
   DUV stepper", "ASML DUV scanner", "ASML 193nm single stage scanner –
@@ -653,6 +654,7 @@ scanner and coat/develop track pages.
 Also used on the starting-material machine page.
 Also used on the CMP polisher machine page.
 Tier: cross-check.
+Also used on the wet chemicals material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -669,6 +671,7 @@ supplier list (GlobalWafers, SEH America, Honeywell and JX Metals
 targets, Linde and Airgas gases, EMD Performance Materials). Tier:
 cross-check.
 Also used on the PVD cluster tool page.
+Also used on the wet chemicals material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -1007,6 +1010,7 @@ tunnel dielectric 1.0–4.0 nm, oxynitride charge-trapping layers
 2.0–5.0 nm, blocking oxide ~3–4.5 nm, HV gate oxide 5–7 nm, LV gate
 oxide 1–3 nm, indium channel doping.
 Also used on the wet bench page. Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **PAT-STI-CR** — US 7,439,141 B2, *"Shallow trench isolation approach
 for improved STI corner rounding"*, U. Kim, Y. Sun, M. S. Chang et al.;
@@ -1459,6 +1463,7 @@ etch rate. Used on steps 039 and 046 and the etch category page.
 Also used on the wet bench and spray processor page.
 Tier:
 high-level.
+Also used on the wet chemicals material page.
 
 **WIKI-CD** — Wikipedia, *Critical dimension*.
 <https://en.wikipedia.org/wiki/Critical_dimension> Critical dimension:
@@ -1600,6 +1605,7 @@ Used on the substrate category page. Tier: high-level.
 nitride-strip chemistry. Used on the etch and strip category pages.
 Also used on the wet bench and spray processor page.
 Tier: high-level.
+Also used on the wet chemicals material page.
 
 **WIKI-HF** — Wikipedia, *Hydrofluoric acid*.
 <https://en.wikipedia.org/wiki/Hydrofluoric_acid> Hydrofluoric acid, the
@@ -1608,6 +1614,7 @@ pages.
 Also used on the wet bench and spray processor page.
 Also used on the single-wafer spin processor machine page.
 Tier: high-level.
+Also used on the wet chemicals material page.
 
 **WIKI-ICP** — Wikipedia, *Inductively coupled plasma*.
 <https://en.wikipedia.org/wiki/Inductively_coupled_plasma> Inductively
@@ -1720,6 +1727,7 @@ Also used on the HDP-CVD page.
 temperature. Used on the strip category page.
 Also used on the wet bench and spray processor page.
 Tier: high-level.
+Also used on the wet chemicals material page.
 
 **WIKI-PLASMA-ETCH** — Wikipedia, *Plasma etching*.
 <https://en.wikipedia.org/wiki/Plasma_etching> Plasma etching mechanisms
@@ -1771,6 +1779,7 @@ temperatures. Used on steps 001, 002, 006, 009, 010, 013, 016, 021, 025,
 Also used on the wet bench and spray processor page.
 Also used on the post-CMP cleaner machine page.
 Tier: high-level.
+Also used on the wet chemicals material page.
 
 **WIKI-RESIST** — Wikipedia, *Photoresist*.
 <https://en.wikipedia.org/wiki/Photoresist> Photoresist chemistry, tone
@@ -1975,6 +1984,7 @@ acid etch rates of silicon nitride, silicon dioxide and silicon, i.e.
 the selectivity behind every wet nitride strip.
 Also used on the wet bench and spray processor page.
 Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **THUNG-2016** — B. J. Thung, K. Ibrahim, N. A. Manap and
 F. Salehuddin, *"Challenges for 0.13µm Generation Shallow Trench
@@ -2636,6 +2646,7 @@ no. 9, pp. 2957–2964, 1996, DOI 10.1149/1.1837133. A room-temperature
 alternative to the hot RCA sequence.
 Also used on the wet bench and spray processor page.
 Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **KERN-1990** — W. Kern, *"The Evolution of Silicon Wafer Cleaning
 Technology"*, Journal of The Electrochemical Society, vol. 137, no. 6,
@@ -2645,6 +2656,7 @@ Also used on the downstream plasma asher and wet bench and spray
 processor pages.
 Also used on the starting-material machine page.
 Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **KERN-HANDBOOK** — W. Kern, *"Overview and Evolution of Silicon Wafer
 Cleaning Technology"*, ch. 1 in K. A. Reinhardt and W. Kern (eds.),
@@ -2655,6 +2667,7 @@ chemistry and contamination.
 Also used on the wet bench and spray processor page.
 Also used on the single-wafer spin processor machine page.
 Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **REINHARDT-2010** — K. A. Reinhardt and R. F. Reidy (eds.), *Handbook
 of Cleaning in Semiconductor Manufacturing: Fundamental and
@@ -2969,6 +2982,7 @@ dip. Used on step 013.
 Also used on the wet bench and spray processor page.
 Also used on the single-wafer spin processor machine page.
 Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **KOOI-1976** — E. Kooi, J. G. van Lierop and J. A. Appels, "Formation
 of Silicon Nitride at a Si–SiO₂ Interface during Local Oxidation of
@@ -3012,6 +3026,7 @@ selectivity stable in a production hot phosphoric bath, from Akrion, the
 wet-bench vendor SKW-01 names. Used on step 013.
 Also used on the wet bench and spray processor page.
 Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **LIU-2020** — P. Liu, M. Garcia-Sciveres, T. Heim, A. Krieger and D.
 Gnani, "Measured Effectiveness of Deep N-well Substrate Isolation in a
@@ -3220,6 +3235,7 @@ Electrochemical Society* **153**(7), G591 (2006).
 <https://doi.org/10.1149/1.2195884> Liquid formulations for stripping
 high-dose implanted resist when ashing alone is insufficient. Used on
 step 009. Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **WATANABE-1996** — H. Watanabe, K. Shimizu, Y. Takeuchi and S. Aritome,
 "Corner-rounded shallow trench isolation technology to reduce the
@@ -3296,6 +3312,7 @@ separately as KERN-HANDBOOK. Used on steps 009 and 013.
 Also used on the wet bench and spray processor page.
 Also used on the single-wafer spin processor machine page.
 Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **SESHAN-2012** — K. Seshan (ed.), *Handbook of Thin Film Deposition*,
 3rd ed., William Andrew, 2012, ISBN 978-1-4377-7873-1.
@@ -3619,6 +3636,7 @@ Also used on the wet bench and spray processor page.
 Also used on the single-wafer spin processor machine page.
 Tier: deep
 dive.
+Also used on the wet chemicals material page.
 
 **KIM-2001** — S.-H. Kim, S.-H. Kim, S.-E. Kim, M.-S. Kim, J.-H. Park
 and E.-S. Kim, "New STI Scheme to Compensate Gate Oxide Thinning at STI
@@ -4588,6 +4606,7 @@ Review* **31**, 187–206 (1970). The original SC-1/SC-2 paper. Used on
 the strip category page.
 Also used on the wet bench and spray processor page.
 Tier: cross-check.
+Also used on the wet chemicals material page.
 
 ##### Patents
 
@@ -5861,6 +5880,7 @@ Society* **123**(12), 1903–1909 (1976).
 <https://doi.org/10.1149/1.2132721> HF/HNO₃ etching of silicon: rates,
 mechanisms and technology. Used on step 060. Tier: deep dive.
 Also used on the single-wafer spin processor machine page.
+Also used on the wet chemicals material page.
 
 **SEZ-223-MOOV** — Moov used-equipment marketplace, *Lam Research / SEZ
 SP223* listing, accessed 2026-09-12.
@@ -6848,6 +6868,7 @@ Applied Physics* **68**(3), 1272–1281 (1990).
 queue-time constraint. Used on steps 095 and 096.
 Also used on the vertical-furnace oxidation page.
 Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **OEHRLEIN-1994-II** — G. S. Oehrlein, Y. Zhang, D. Vender and O.
 Joubert, "Fluorocarbon high-density plasmas. II. Silicon dioxide and
@@ -10123,6 +10144,7 @@ Oekel, "Marangoni drying: A new extremely clean drying process",
 Marangoni drying (no abstract in Crossref or OpenAlex; the annotation
 rests on the title). Used on the wet bench and spray processor page.
 Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **PAT-DICO2-MKS** — C. Gottschalk, U. Brammer, J. Lohr and J. Seiwert
 (MKS Instruments), *System and method for carbonation of deionized
@@ -10139,6 +10161,7 @@ US 5,334,332 A, filed 1992-07-09, granted 1994-08-02.
 removers of hydroxylamine and an alkanolamine, with a chelating agent
 such as 1,2-dihydroxybenzene. Used on the wet bench and spray processor
 page. Tier: cross-check (patent).
+Also used on the wet chemicals material page.
 
 **PAT-SPRAY-SEMITOOL** — C. Meuchel, M. Bernt and T. Henke (Semitool),
 *Centrifugal spray processor and retrofit kit*, US 7,305,999 B2, filed
@@ -11388,6 +11411,7 @@ Electrochemical Society* **145**(9), 3278–3284 (1998).
 <https://doi.org/10.1149/1.1838798> Room-temperature spin cleaning with
 alternating 10 s doses of ozonised water and dilute HF. Used on the
 single-wafer spin processor machine page. Tier: deep dive.
+Also used on the wet chemicals material page.
 
 **HATTORI-2007** — T. Hattori, H. Hirano, T. Osaka and H. Kuniyasu,
 "Environmentally Benign Single-Wafer Spin Cleaning Using Ultra-Diluted
@@ -12440,6 +12464,157 @@ Test Conference 1999*, pp. 396–405.
 BeCu and alloy probes on aluminium pads at 85 °C and the role of oxide
 from local Joule heating. Used on the parametric tester and prober page.
 Tier: deep dive.
+
+### 8.20 Material-class page sources
+
+Sources introduced for the material-class pages under `docs/materials/`
+that had no entry above. Each label on those pages is the key below in
+lower case and the citation is the one given in the page footnote; the
+entries are grouped by the material page that first cited the source,
+and sources already listed above record their use on a material page in
+an "Also used on" line of their own. None of these sources mentions
+SkyWater, SKY130 or the Bloomington fab; they describe materials,
+grades, suppliers and their products in general. Every URL was fetched on 2026-09-13:
+papers were checked through Crossref (bibliographic data) and OpenAlex
+(abstracts) and their annotations rest on their abstracts; patents were
+checked through Google Patents (bibliographic data and abstract); SEMI
+and ASTM standards through their store or catalogue listings (the ASTM
+listings through the Wayback Machine capture named in the entry); and
+Wikipedia articles through the text of the current article. An entry's
+tier records its first use.
+
+#### Wet chemicals (first cited there)
+
+**SEMI-C28** — SEMI, *SEMI C28 — Specification and Guide for
+Hydrofluoric Acid*, SEMI Standards store listing (revision C28-0618,
+inactive), accessed 2026-09-13.
+<https://store-us.semi.org/products/c02800-semi-c28-specification-and-guide-for-hydrofluoric-acid>
+The listing's abstract: the purpose "is to standardize requirements for
+hydrofluoric acid used in the semiconductor industry", and the scope is
+"grades of hydrofluoric acid used in the semiconductor industry". Used on
+the wet chemicals material page. Tier: cross-check (standard).
+
+**SEMI-C23** — SEMI, *SEMI C23 — Specification for Buffered Oxide
+Etchants*, SEMI Standards store listing (revision C23-0714, reapproved
+0620), accessed 2026-09-13.
+<https://store-us.semi.org/products/c02300-semi-c23-specifications-for-buffered-oxide-etchants>
+Standardises requirements for buffered oxide etchants; scope "grades of
+buffered oxide etchants used in the semiconductor industry". Used on the
+wet chemicals material page. Tier: cross-check (standard).
+
+**SEMI-C30** — SEMI, *SEMI C30 — Specification and Guide for Hydrogen
+Peroxide*, SEMI Standards store listing (revision C30-1223), accessed
+2026-09-13.
+<https://store-us.semi.org/products/c03000-semi-c30-specification-for-hydrogen-peroxide>
+Standardises requirements for grades of hydrogen peroxide and guides a
+higher-purity tier; scope "five Grades and one Tier of hydrogen peroxide
+used in the semiconductor industry". Used on the wet chemicals material
+page. Tier: cross-check (standard).
+
+**SEMI-C44** — SEMI, *SEMI C44 — Specification and Guide for Sulfuric
+Acid*, SEMI Standards store listing (revision C44-1223), accessed
+2026-09-13.
+<https://store-us.semi.org/products/c04400-semi-c44-specification-and-guide-for-sulfuric-acid>
+Standardises grades of sulphuric acid and "provides assay and impurity
+limits for higher purity Tiers"; scope "two Grades and three Tiers of
+sulfuric acid used in the semiconductor industry". Used on the wet
+chemicals material page. Tier: cross-check (standard).
+
+**SEMI-C41** — SEMI, *SEMI C41 — Specification and Guide for
+2-Propanol*, SEMI Standards store listing (revision C41-0618), accessed
+2026-09-13.
+<https://store-us.semi.org/products/c04100-semi-c41-specification-and-guide-for-2-propanol>
+Covers "all grades of 2-propanol used in the semiconductor industry";
+"The VLSI grade purity level is typically required by semiconductor
+devices with geometries of 0.8 to 1.2 microns". Used on the wet
+chemicals material page. Tier: cross-check (standard).
+
+**WIKI-H2O2** — Wikipedia, *Hydrogen peroxide*.
+<https://en.wikipedia.org/wiki/Hydrogen_peroxide> Properties, decomposition
+("decomposes slowly into water and elemental oxygen when exposed to
+light, and rapidly in the presence of organic or reactive compounds")
+and storage with a stabiliser. Used on the wet chemicals material page.
+Tier: high-level.
+
+**WIKI-H2SO4** — Wikipedia, *Sulfuric acid*.
+<https://en.wikipedia.org/wiki/Sulfuric_acid> Properties, the heat
+released on dilution and its use in piranha solution. Used on the wet
+chemicals material page. Tier: high-level.
+
+**WIKI-HNO3** — Wikipedia, *Nitric acid*.
+<https://en.wikipedia.org/wiki/Nitric_acid> Properties; "Most commercially
+available nitric acid has a concentration of 68% in water". Used on the
+wet chemicals material page. Tier: high-level.
+
+**WIKI-IPA** — Wikipedia, *Isopropyl alcohol*.
+<https://en.wikipedia.org/wiki/Isopropyl_alcohol> Properties, uses and
+flammability ("a flammability range of between 2% and 12.7% in air").
+Used on the wet chemicals material page. Tier: high-level.
+
+**HIGASHI-1990** — G. S. Higashi, Y. J. Chabal, G. W. Trucks and K.
+Raghavachari, "Ideal hydrogen termination of the Si (111) surface",
+*Applied Physics Letters* **56**(7), 656–658 (1990).
+<https://doi.org/10.1063/1.102728> Aqueous HF removes the oxide and
+leaves silicon terminated by hydrogen; basic solutions give ideally
+terminated Si(111). Used on the wet chemicals material page. Tier: deep
+dive.
+
+**ITANO-1993** — M. Itano, F. W. Kern, M. Miyashita and T. Ohmi,
+"Particle removal from silicon wafer surface in wet cleaning process",
+*IEEE Transactions on Semiconductor Manufacturing* **6**(3), 258–267
+(1993). <https://doi.org/10.1109/66.238174> Alkaline cleans remove
+particles better than acid ones by etching and electrostatic repulsion;
+an etch rate of at least 0.25 nm/min lifts particles off; a mixing ratio
+of 0.05:1:5 is suggested. Used on the wet chemicals material page. Tier:
+deep dive.
+
+**NORGA-1997** — G. J. Norga, M. Platero, K. A. Black, A. J. Reddy, J.
+Michel and L. C. Kimerling, "Mechanism of Copper Deposition on Silicon
+from Dilute Hydrofluoric Acid Solution", *Journal of The Electrochemical
+Society* **144**(8), 2801–2810 (1997).
+<https://doi.org/10.1149/1.1837898> Electrochemical reduction of metal
+ions on silicon in HF; copper nucleates as nanometre-sized precipitates;
+tested in 1:100 HF. Used on the wet chemicals material page. Tier: deep
+dive.
+
+**ROBBINS-1959** — H. Robbins and B. Schwartz, "Chemical Etching of
+Silicon", *Journal of The Electrochemical Society* **106**(6), 505
+(1959). <https://doi.org/10.1149/1.2427397> The kinetics of silicon
+etching in HF–HNO₃–H₂O at 25 °C over the composition triangle: oxidation
+followed by dissolution of the oxide, with the rate-limiting step
+depending on composition. Used on the wet chemicals material page. Tier:
+deep dive.
+
+**CHEN-2003-EKC** — B.-H. Chen, H. Zhang, Chooi, L. Chan, Y. Xu and J. H.
+Ye, "Corrosive Behavior of Tungsten in Post Dry-Etch Residue Remover",
+*Industrial & Engineering Chemistry Research* **42**(24), 6096–6103
+(2003). <https://doi.org/10.1021/ie030025h> Electrochemical study of
+blanket tungsten in EKC265 at 65 °C: the solution is aggressive to
+tungsten, and water and chloride increase corrosion and pitting. Used on
+the wet chemicals material page. Tier: deep dive.
+
+**PAT-BHF-HASHIMOTO** — T. Ohmi, N. Miki and H. Kikuyama (Hashimoto
+Chemical Industries), *Surface treating composition for micro
+processing*, US 4,795,582 A, priority 1986-09-29, granted 1989-01-03.
+<https://patents.google.com/patent/US4795582A/en> Hydrofluoric acid,
+ammonium fluoride and water with aliphatic carboxylic acid, amine or
+alcohol surfactants. Used on the wet chemicals material page. Tier: deep
+dive.
+
+**PAT-BHF-DAIKIN** — N. Enjo and K. Tamura (Daikin Industries),
+*Etchant composition*, US 4,582,624 A, filed 1984-08-09, granted
+1986-04-15. <https://patents.google.com/patent/US4582624A/en> HF,
+ammonium fluoride and a fluorinated carboxylic-acid surfactant for
+etching fine patterns in oxide. Used on the wet chemicals material page.
+Tier: deep dive.
+
+**PAT-BHF-STARTEC** — J. G. Hoffman and R. S. Clark (Startec Ventures),
+*On-site generation of ultra-high-purity buffered-HF for semiconductor
+processing*, US 5,722,442 A, priority 1994-01-07, filed 1996-07-01,
+granted 1998-03-03. <https://patents.google.com/patent/US5722442A/en>
+Buffered HF made at the fab from scrubbed ammonia and purified aqueous
+HF, with density monitoring to control pH and buffering. Used on the
+wet chemicals material page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
