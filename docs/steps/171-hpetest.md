@@ -267,8 +267,8 @@ symmetric 16 V structures), so they do not bear on breakdown or the
   copies" per MPW run), the 273-module pad documentation, the open
   MPW-5 test tile and the MDM file
   format.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open][^raw-data-mdm]
-* The same repository's measured files for the 5 V, 16 V, 20 V, native,
-  zero-Vt and ESD transistors — the thresholds, resistances and currents
+* The same repository's measured files for the 5 V, 16 V and 20 V
+  transistors and the native, zero-Vt and ESD NMOS — the thresholds, resistances and currents
   compared here with the e-test nominals are our
   extraction.[^raw-data-hv-mosfets]
 
@@ -466,9 +466,9 @@ symmetric 16 V structures), so they do not bear on breakdown or the
     repository, retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/notebooks>
 [^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
-    Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V,
-    20 V, native, zero-Vt and ESD transistors and the thick-oxide gate
-    capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V and
+    20 V transistors, the native, zero-Vt and ESD NMOS and the thick-oxide
+    gate capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
     (`nfet_g5v0d10v5`, `pfet_g5v0d10v5`, `nfet_g5v0d16v0`,
     `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
     `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
