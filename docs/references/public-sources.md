@@ -10228,8 +10228,9 @@ Also used on the etch and chamber-clean gases material page.
 **WIKI-NF3** — Wikipedia, *Nitrogen trifluoride*.
 <https://en.wikipedia.org/wiki/Nitrogen_trifluoride> NF₃ broken down in
 a plasma to fluorine radicals that attack polysilicon, nitride and
-oxide, and its use to clean PECVD chambers. Used on the silicon and
-polysilicon plasma etcher page. Tier: high-level.
+oxide, and its use to clean PECVD chambers; a GWP "17,200 times greater
+than that of CO2", citing the IPCC fourth assessment (AR4). Used on the
+silicon and polysilicon plasma etcher page. Tier: high-level.
 Also used on the PECVD, HDP-CVD and tungsten CVD pages.
 Also used on the hardware consumables material page.
 Also used on the etch and chamber-clean gases material page.
@@ -10274,14 +10275,16 @@ nitride plasma etcher page. Tier: deep dive.
 
 **WIKI-CHF3** — Wikipedia, *Fluoroform*.
 <https://en.wikipedia.org/wiki/Fluoroform> CHF₃ and its use in plasma
-etching of silicon oxide and nitride. Used on the dielectric and nitride
-plasma etcher page. Tier: high-level.
+etching of silicon oxide and nitride; a 100-year GWP of "14,800 for
+HFC-23", citing the IPCC fourth assessment (AR4). Used on the dielectric
+and nitride plasma etcher page. Tier: high-level.
 Also used on the etch and chamber-clean gases material page.
 
 **WIKI-C2F6** — Wikipedia, *Hexafluoroethane*.
 <https://en.wikipedia.org/wiki/Hexafluoroethane> C₂F₆ as an etchant and
-its global warming potential of 9200. Used on the dielectric and nitride
-plasma etcher page. Tier: high-level.
+its global warming potential of 9200, given without naming an IPCC
+assessment. Used on the dielectric and nitride plasma etcher page. Tier:
+high-level.
 Also used on the etch and chamber-clean gases material page.
 
 **CHRISTIE-1994** — R. Christie, S. Burns, V. S. Grewal and B. Spuler,
@@ -14229,8 +14232,12 @@ perfluorocarbons (PFCs), sulfur hexafluoride (SF6), nitrogen trifluoride
 (NF3), and other fully fluorinated greenhouse gases"; electronics
 manufacturers above the threshold must report; emissions are given in
 metric tons of CO₂ equivalent ("about 7.6 million metric tons of carbon
-dioxide equivalent (MMT CO2e)" for the non-production emitters in 2023).
-Used on the etch and chamber-clean gases material page. Tier: cross-check
+dioxide equivalent (MMT CO2e)" for the non-production emitters in 2023);
+the CO₂e figures "reflect the global warming potential (GWP) values from
+Table A-1, which is generally based on the IPCC’s Fourth Assessment
+Report (AR4), with the addition of GWPs from the IPCC’s Fifth Assessment
+Report for fluorinated GHGs that did not have GWPs in the AR4". Used on
+the etch and chamber-clean gases material page. Tier: cross-check
 (regulatory data).
 
 **CHAN-2004** — E. M. Chan, G. Loh and C. C. Allgood, "Process
@@ -14269,9 +14276,10 @@ gases material page. Tier: high-level.
 **WIKI-SF6** — Wikipedia, *Sulfur hexafluoride*.
 <https://en.wikipedia.org/wiki/Sulfur_hexafluoride> Properties, uses
 including "a silicon etchant for semiconductor manufacturing", a GWP
-"23,500 times greater" than CO₂ and an atmospheric lifetime "of around
-3200 years". Used on the etch and chamber-clean gases material page.
-Tier: high-level.
+"23,500 times greater" than CO₂ (citing the IPCC fifth assessment, AR5),
+a GWP of 23,900 (citing the fourth assessment, AR4) and an atmospheric
+lifetime "of around 3200 years". Used on the etch and chamber-clean
+gases material page. Tier: high-level.
 
 **WIKI-C4F8** — Wikipedia, *Octafluorocyclobutane*.
 <https://en.wikipedia.org/wiki/Octafluorocyclobutane> "serves mainly as a
@@ -14290,6 +14298,7 @@ fluorocarbons and an extract of IPCC fifth assessment lifetimes and
 100-year GWPs (CF₄ 50,000 years and 6630; C₂F₆ 10,000 years and 11,100;
 c-C₄F₈ 3200 years and 9540). Used on the etch and chamber-clean gases
 material page. Tier: high-level.
+Also used on the dielectric and nitride plasma etcher page.
 
 ## 9. Evidence about specific tools at SkyWater
 
