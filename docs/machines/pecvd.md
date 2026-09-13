@@ -319,8 +319,8 @@ the fab's gas delivery, pumps or abatement.
   matching networks,[^pearce-1992] gas inlet manifolds that carry the
   RF power,[^pat-p5000-amat] and heated pedestals or, for SACVD,
   ceramic heaters.[^amat-sacvd-2000]
-* **Monitor wafers.** Blanket wafers for thickness, refractive index,
-  stress and particles, as the step pages' industry-generic outlines
+* **Monitor wafers.** Blanket wafers for {ref}`thickness, refractive
+  index, stress <machine-film-thickness-metrology>` and {ref}`particles <machine-defect-inspection>`, as the step pages' industry-generic outlines
   describe
   ({ref}`NCAPOX3 <step-117>`, {ref}`NTSD <step-167>`).
 

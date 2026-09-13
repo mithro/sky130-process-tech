@@ -254,8 +254,9 @@ delivery, pumps or abatement.
 * **Clean gases and kit.** Fluorine from a remote or in-situ
   plasma;[^amat-ism-2000][^wiki-nf3] heaters, ceramic or exclusion rings
   and showerheads, which the clean and the film wear.[^amat-ism-2000][^novellus-wcvd-2002]
-* **Monitor wafers.** Sheet resistance, thickness, stress and particles
-  on blanket wafers, and cross-sections of filled holes, as the step pages'
+* **Monitor wafers.** {ref}`Sheet resistance <machine-sheet-resistance-metrology>`,
+  {ref}`thickness, stress <machine-film-thickness-metrology>` and {ref}`particles <machine-defect-inspection>` on blanket
+  wafers, and {ref}`cross-sections <machine-cross-section-sem-profilers>` of filled holes, as the step pages'
   industry-generic outlines describe ({ref}`WDEP2 <step-110>`).
 
 ## Process-integration notes for SKY130

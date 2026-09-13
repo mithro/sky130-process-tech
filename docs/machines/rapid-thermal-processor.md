@@ -256,7 +256,8 @@ the SkyWater sources describes the fab's RTP facilities.
   8800.[^ag-8108]
 * **Calibration wafers.** Instrumented thermocouple wafers for the
   temperature calibration the specifications assume,[^ag-8800] and monitor
-  wafers for sheet resistance or oxide thickness after each qualification.
+  wafers for {ref}`sheet resistance <machine-sheet-resistance-metrology>` or
+  {ref}`oxide thickness <machine-film-thickness-metrology>` after each qualification.
 
 ## Process-integration notes for SKY130
 

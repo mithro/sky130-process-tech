@@ -321,6 +321,11 @@ plans and defect limits are not public.
 * {ref}`category-substrate` — incoming wafer inspection.
 * {ref}`machine-cd-sem-overlay-metrology` — the metrology tools of the
   lithography area.
+* {ref}`machine-film-thickness-metrology` — the thickness and stress gauges run on the same monitor
+  wafers.
+* {ref}`machine-cross-section-sem-profilers` — sectioning and review of defects in physical analysis.
+* {ref}`machine-parametric-tester` — the electrical defect structures measured at
+  e-test.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 

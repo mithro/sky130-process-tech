@@ -297,8 +297,9 @@ pumps or abatement.
 * **Chuck and cooling.** An electrostatic chuck with helium backside
   cooling,[^pat-hdp-reactor-amat] and the turbomolecular pumping that
   holds millitorr pressures at high gas flows.[^pat-hdp-reactor-amat]
-* **Monitor wafers.** Blanket wafers for thickness, uniformity and
-  particles, and patterned wafers cross-sectioned for voids, as the step
+* **Monitor wafers.** Blanket wafers for {ref}`thickness <machine-film-thickness-metrology>`,
+  uniformity and {ref}`particles <machine-defect-inspection>`, and patterned wafers
+  {ref}`cross-sectioned <machine-cross-section-sem-profilers>` for voids, as the step
   pages' industry-generic outlines describe ({ref}`FILOX <step-011>`, {ref}`NILD3 <step-115>`).
 
 ## Process-integration notes for SKY130

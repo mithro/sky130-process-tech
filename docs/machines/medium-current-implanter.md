@@ -277,8 +277,8 @@ describes the fab's gas delivery or abatement.
   gas mixtures during regeneration of cryopumps" among implanter vacuum
   issues;[^current-1996] residues of arsenic and phosphorus are met in
   "vacuum pump hardware" during servicing.[^wiki-implant]
-* **Monitor wafers.** Bare wafers for thermal-wave and sheet-resistance
-  checks of dose and uniformity.[^smith-1985]
+* **Monitor wafers.** Bare wafers for {ref}`thermal-wave and sheet-resistance
+  checks <machine-sheet-resistance-metrology>` of dose and uniformity.[^smith-1985]
 
 ## Process-integration notes for SKY130
 

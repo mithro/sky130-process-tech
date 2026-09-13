@@ -324,6 +324,10 @@ targets, limits and sampling plans are not public.
   the end of the flow.
 * {ref}`machine-defect-inspection` — the particle scans run on the same
   monitor wafers.
+* {ref}`machine-sheet-resistance-metrology` — the four-point probe beside XRF on metal monitors.
+* {ref}`machine-cross-section-sem-profilers` — cross-sections and profilers for what a thickness gauge
+  cannot see.
+* {ref}`machine-parametric-tester` — the C–V monitors beside the ellipsometer.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 

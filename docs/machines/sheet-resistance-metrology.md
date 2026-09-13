@@ -262,6 +262,8 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
   monitored.
 * {ref}`machine-film-thickness-metrology` — the other gauges run on metal
   monitor wafers.
+* {ref}`machine-parametric-tester` — the sheet resistances measured on test structures at
+  e-test.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 
