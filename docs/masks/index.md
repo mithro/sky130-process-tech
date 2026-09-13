@@ -143,8 +143,7 @@ Notes on the table:
   The `drawing`, `mask add`, `mask drop` and `waffle drop` purposes of
   a mask-level layer do not always share its layer number: `cfom` is
   23:0 as a mask but 22:20, 22:21, 22:22 and 22:24 otherwise, `cp1m`
-  28:0 against 33:x,
-  `cli1m` 56:0 against 115:x.[^pdk-06]
+  28:0 against 33:x, `cli1m` 56:0 against 115:x.[^pdk-06]
 * **Shared layer numbers.** Several GDS layer numbers carry unrelated
   layers under different datatypes, which is worth knowing when
   reading the table: 22 (`cnsm` 22:0 and the `cfom` purposes), 44
@@ -171,14 +170,14 @@ Notes on the table:
   {ref}`FOM <step-004>` page reads the "waffles" as dummy fill for
   {term}`CMP` uniformity.
 * **Variants.** For `VIM2`, `MM3` and `PDM`, the row for this
-  reference's step is the variant marked `X`; the {ref}`VIM2 <step-129>` and
-  {ref}`MM3 <step-139>` step pages discuss the unmarked variants.
+  reference's step is the variant marked `X`; the
+  {ref}`VIM2 <step-129>` and {ref}`MM3 <step-139>` step pages discuss
+  the unmarked variants.
 
 ## PDK masks and mask steps that do not correspond
 
 Comparing the two lists leaves entries on each side without a partner.
-The tables record them with what the PDK says about each; they do not
-imply that either list is incomplete.
+The tables below record them with what the PDK says about each.
 
 ### Marked in `masks.csv`, with no mask step in this reference
 
@@ -239,6 +238,117 @@ two mask-level layers that have no mask step in this
 reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
 "Pad Via, VIPDM" entry.
 
+## References
+
+### Cross-check
+
+* SkyWater PDK, *Masks* page and `masks.csv` — every mask name,
+  acronym and `Used in SKY130` mark on this page.[^pdk-05]
+* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — drawn and
+  mask-level layers with layer:datatype and description; Table F2b,
+  the mask generation table.[^pdk-06]
+* SkyWater PDK, *Criteria & Assumptions*, Table 2 — minimum feature
+  and space per mask with variable names.[^pdk-03]
+* SkyWater PDK, *Periphery rules* — rules x.9 and x.15a on mask-level
+  layers, the rule-set function lines and the metal-fuse note.[^pdk-periph]
+* SkyWater PDK, *WLCSP Rules* — the DECA `cpbo`, `rdl` and `cpmm2`
+  rule sets.[^pdk-wlcsp]
+
+### High-level understanding
+
+* Wikipedia, *Photomask* — reticles, substrates, absorbers and
+  pellicles.[^wiki-mask]
+* Wikipedia, *Photolithography* — the mask step in the process
+  sequence.[^wiki-litho]
+* Wikipedia, *Optical proximity correction* and *Phase-shift mask* —
+  why mask shapes differ from drawn shapes.[^wiki-opc][^wiki-psm]
+* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+  pattern becomes a resist pattern.[^mack-2007]
+* Levinson, *Principles of Lithography*, 4th ed. — masks, overlay and
+  metrology in one volume.[^levinson-2019]
+* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+  lithography chapters.[^txt-02]
+* Quirk and Serda, *Semiconductor Manufacturing Technology* — the
+  fab-floor view of masks and photolithography.[^txt-07]
+* Campbell, *Fabrication Engineering at the Micro- and Nanoscale* —
+  lithography chapters.[^campbell-2013]
+
+### Deep dive
+
+* ITRS 2001, *Lithography* — mask magnification, PSM choices and
+  overlay targets for the 130 nm generation.[^itrs-03]
+* Levenson, Viswanathan and Simpson (IBM), *IEEE TED* 1982 — the
+  original phase-shifting mask.[^levenson-1982]
+* Lin, *IEEE Circuits and Devices* 1993 — a tutorial on alternating
+  and attenuated phase-shift masks.[^lin-1993]
+* Otto et al., *Proc. SPIE* 1994 — rules-based optical proximity
+  correction, one way drawn data become mask data.[^otto-1994]
+* Rieger and Stirniman, *Proc. SPIE* 1994 — model-based proximity
+  correction.[^rieger-1994]
+* Cobb and Zakhor, *Proc. SPIE* 1995 — fast aerial-image calculation
+  for model-based OPC.[^cobb-1995]
+* Yamamoto et al., MNC 2000 — hierarchical OPC on contact-hole layers,
+  the data-volume side of mask preparation.[^yamamoto-2000]
+* Wong, *Resolution Enhancement Techniques in Optical Lithography* —
+  the SPIE text on PSM, OPC and off-axis illumination.[^wong-2001]
+* Kahng and Samadi, *IEEE TCAD* 2008 — a survey of CMP dummy-fill
+  synthesis, the design-side view of waffle and fill
+  layers.[^kahng-2008]
+* Stine et al., *IEEE TSM* 1998 — pattern-dependent CMP variation, the
+  basis of density-driven fill rules.[^stine-1998]
+* Chiou and Jang (TSMC), US 6,849,549 — dummy structures for CMP
+  planarity with reduced added capacitance.[^pat-dummy-tsmc]
+* Buffat and Adams (Zilog), US 6,576,405 — thick-resist masking for
+  high-energy implants, the demand an implant block mask
+  meets.[^pat-resist-zilog]
+* Edmark and Ausschnitt, *Proc. SPIE* 1985 — stepper overlay
+  calibration by aligning to a latent image, relevant to the first
+  mask level.[^edmark-1985]
+* Starikov, *Opt. Eng.* 1992 — accuracy of overlay measurement between
+  mask levels.[^starikov-1992]
+* van Haren et al., *Proc. SPIE* 2019 — how alignment-mark placement
+  on the reticle limits layer-to-layer overlay.[^van-haren-2019]
+* Levinson, *Principles of Lithography*, 2nd ed. — overlay budgets and
+  the choice of tools for non-critical levels.[^levinson-2005]
+* SEMI P1 — the specification for hard-surface photomask
+  substrates.[^semi-p1]
+* Bruning, *Proc. SPIE* 2007 — forty years of optical lithography
+  tools that print masks onto wafers.[^bruning-2007]
+
+## Open questions
+
+* The PDK does not publish the operations that generate each mask from
+  the drawn layers, nor what the `drawing`, `mask add`, `mask drop` and
+  `waffle drop` purposes contribute when they sit on a different layer
+  number from the `mask` purpose (`cp1m` 28:0 against 33:42–33:43, for
+  example).[^pdk-06] The pairings marked *(inference)* rest on the
+  step pages' readings.
+* `masks.csv` leaves the `Used in SKY130` field blank for `PWBM`,
+  `PWDEM` and `CAPM` and has no entry for the masks of
+  {ref}`RRPM <step-052>`, {ref}`URPM <step-055>` and
+  {ref}`CAP2M <step-152>`, although the drawn layers exist and, for
+  the first three, rule sets and Table F2b columns do
+  too.[^pdk-05][^pdk-06][^pdk-periph] The PDK does not explain the
+  difference.
+* `HVTRM` is marked, with a mask-level layer, a drawn layer and a
+  minimum CD, but has no mask step here; the PDK's layer description
+  ("High-Vt RF transistor implant") and rule-set function line ("Define
+  low VT adjust implant region for pmedlvtrf") do not settle what the
+  implant does.[^pdk-06][^pdk-periph]
+* The PDK does not say at which stage, or where, the marked `PBO`,
+  `CU1M` and `PMM2` masks are used; their rules are published with the
+  WLCSP and redistribution rules.[^pdk-wlcsp][^pdk-periph]
+* The variant suffixes of `masks.csv` ("TNV", "S8TM", "PLM", "TLM")
+  are not defined on the *Masks* page;[^pdk-05] the
+  {ref}`VIM2 <step-129>` and {ref}`MM3 <step-139>` pages give
+  readings.
+* Table 2 of *Criteria & Assumptions* has no unit column;[^pdk-03] the
+  µm reading rests on agreement with the periphery rules.
+* No PDK document gives the resist tone, reticle type (binary or
+  phase-shift), use of OPC or exposure tool for any mask; the step
+  pages and the {ref}`lithography category page <category-lithography>`
+  give industry-generic readings.
+
 <!-- footnotes -->
 
 [^wiki-mask]: Wikipedia, *Photomask*.
@@ -264,3 +374,91 @@ reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
     tables), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/wlcsp.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/wlcsp/deca.csv>
+[^wiki-litho]: Wikipedia, *Photolithography*.
+    <https://en.wikipedia.org/wiki/Photolithography>
+[^wiki-opc]: Wikipedia, *Optical proximity correction*.
+    <https://en.wikipedia.org/wiki/Optical_proximity_correction>
+[^wiki-psm]: Wikipedia, *Phase-shift mask*.
+    <https://en.wikipedia.org/wiki/Phase-shift_mask>
+[^mack-2007]: C. Mack, *Fundamental Principles of Optical Lithography:
+    The Science of Microfabrication*, Wiley, 2007, ISBN
+    978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
+    (companion site <https://www.lithoguru.com/textbook/>)
+[^levinson-2019]: H. J. Levinson, *Principles of Lithography*, 4th ed.,
+    SPIE Press, 2019, ISBN 978-1-5106-2760-4.
+    <https://doi.org/10.1117/3.2525393>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+    ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^txt-07]: M. Quirk and J. Serda, *Semiconductor Manufacturing
+    Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
+    <https://openlibrary.org/isbn/9780130815200>
+[^campbell-2013]: S. A. Campbell, *Fabrication Engineering at the Micro-
+    and Nanoscale*, 4th ed., Oxford University Press, 2013,
+    ISBN 978-0-19-986122-4. <https://openlibrary.org/isbn/9780199861224>
+[^levenson-1982]: M. D. Levenson, N. S. Viswanathan and R. A. Simpson,
+    "Improving resolution in photolithography with a phase-shifting
+    mask", *IEEE Transactions on Electron Devices* **29**(12),
+    1828–1836 (1982). <https://doi.org/10.1109/T-ED.1982.21037>
+[^lin-1993]: B. J. Lin, "Phase-shifting masks gain an edge", *IEEE
+    Circuits and Devices Magazine* **9**(2), 28–35 (1993).
+    <https://doi.org/10.1109/101.200850>
+[^otto-1994]: O. W. Otto, J. G. Garofalo, K. K. Low, C.-M. Yuan,
+    R. C. Henderson, C. Pierrat, R. L. Kostelak, S. Vaidya and
+    P. K. Vasudev, "Automated optical proximity correction: a
+    rules-based approach", *Proc. SPIE* **2197**, Optical/Laser
+    Microlithography VII, 278–293 (1994).
+    <https://doi.org/10.1117/12.175422>
+[^rieger-1994]: M. L. Rieger and J. P. Stirniman, "Using behavior
+    modeling for proximity correction", *Proc. SPIE* **2197**, 371–376
+    (1994). <https://doi.org/10.1117/12.175431>
+[^cobb-1995]: N. B. Cobb and A. Zakhor, "Fast sparse aerial-image
+    calculation for OPC", *Proc. SPIE* **2621**, 534–545 (1995).
+    <https://doi.org/10.1117/12.228208>
+[^yamamoto-2000]: K. Yamamoto, S. Kobayashi, T. Uno and T. Kotani,
+    "Hierarchical optical proximity correction on contact hole layers",
+    *Digest of Papers, Microprocesses and Nanotechnology 2000*,
+    pp. 40–41. <https://doi.org/10.1109/IMNC.2000.872612>
+[^wong-2001]: A. K.-K. Wong, *Resolution Enhancement Techniques in
+    Optical Lithography*, SPIE Tutorial Texts TT47, SPIE Press, 2001,
+    ISBN 978-0-8194-7881-8. <https://doi.org/10.1117/3.401208>
+[^kahng-2008]: A. B. Kahng and K. Samadi, "CMP Fill Synthesis: A Survey
+    of Recent Studies", *IEEE Transactions on Computer-Aided Design of
+    Integrated Circuits and Systems* **27**(1), 3–19 (2008).
+    <https://doi.org/10.1109/TCAD.2007.907061>
+[^stine-1998]: B. E. Stine, D. O. Ouma, R. R. Divecha, D. S. Boning,
+    J. E. Chung, D. L. Hetherington, C. R. Harwood, O. S. Nakagawa and
+    S.-Y. Oh, "Rapid characterization and modeling of pattern-dependent
+    variation in chemical-mechanical polishing", *IEEE Transactions on
+    Semiconductor Manufacturing* **11**(1), 129–140 (1998).
+    <https://doi.org/10.1109/66.661292>
+[^pat-dummy-tsmc]: W.-C. Chiou and S.-M. Jang (Taiwan Semiconductor
+    Manufacturing Co.), *Method for forming dummy structures for improved
+    CMP and reduced capacitance*, US 6,849,549 B1, filed 2003-12-04,
+    granted 2005-02-01.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6849549>
+[^pat-resist-zilog]: S. J. Buffat and J. L. Adams (Zilog), *High aspect
+    ratio photolithographic method for high energy implantation*, US
+    6,576,405 B1, granted 2003-06-10.
+    <https://patents.google.com/patent/US6576405B1/en>
+[^edmark-1985]: K. W. Edmark and C. P. Ausschnitt, "Stepper Overlay
+    Calibration Using Alignment To A Latent Image", *Proc. SPIE*
+    **0538**, Optical Microlithography IV, 91 (1985).
+    <https://doi.org/10.1117/12.947752>
+[^starikov-1992]: A. Starikov, "Accuracy of overlay measurements: tool
+    and mark asymmetry effects", *Optical Engineering* **31**(6), 1298
+    (1992). <https://doi.org/10.1117/12.56172>
+[^van-haren-2019]: R. J. F. van Haren, S. Steinert, O. Mouraille,
+    K. D'havé, L. van Dijk, J. Hermans and D. Beyer, "Wafer alignment
+    mark placement accuracy impact on the layer-to-layer overlay
+    performance", *Proc. SPIE* **11148**, Photomask Technology 2019, 37
+    (2019). <https://doi.org/10.1117/12.2536270>
+[^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
+    SPIE Press, 2005, ISBN 978-0-8194-5660-1.
+    <https://doi.org/10.1117/3.601520>
+[^semi-p1]: SEMI, *SEMI P1 — Specification for Hard Surface Photomask
+    Substrates*, SEMI Standards store listing.
+    <https://store-us.semi.org/products/p00100-semi-p1-specification-for-hard-surface-photomask-substrates>
+[^bruning-2007]: J. H. Bruning, "Optical lithography: 40 years and
+    holding", *Proc. SPIE* **6520**, 652004 (2007).
+    <https://doi.org/10.1117/12.720631>
