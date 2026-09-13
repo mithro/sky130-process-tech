@@ -151,7 +151,7 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
 
 ## Machines typically used
 
-* **Vertical LPCVD furnace** with silane gas panel, vacuum pumping and
+* **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** with silane gas panel, vacuum pumping and
   exhaust abatement for pyrophoric silane. Representative 200 mm-era
   tools: SVG/Thermco–ASML–Aviza AVP/RVP series, Kokusai DD/Vertron,
   TEL Alpha-8S, ASM A400 (category page).

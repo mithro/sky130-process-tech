@@ -166,7 +166,7 @@ fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Vertical LPCVD furnace** (SVG/Thermco–ASML–Aviza AVP/RVP, Kokusai
+* **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** (SVG/Thermco–ASML–Aviza AVP/RVP, Kokusai
   Vertron, TEL Alpha-8S, ASM A400) with DCS/NH₃ or BTBAS/NH₃ gas
   panels.
 * **PECVD system** (Novellus Concept One/Sequel, Applied Materials

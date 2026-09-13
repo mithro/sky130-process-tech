@@ -150,12 +150,12 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 
 ## Machines typically used
 
-* **Vertical oxidation furnace**, 200 mm, with dry O₂, N₂O/NO and
+* **{ref}`Vertical oxidation furnace <machine-vertical-furnace-oxidation>`**, 200 mm, with dry O₂, N₂O/NO and
   NH₃ capability: ASM A400, TEL Alpha-8, Aviza/Thermco
   ({ref}`category-oxidation`).
-* **Single-wafer RTP/RTO/RTN** chamber: Applied Materials RTP
+* **{ref}`Single-wafer RTP/RTO/RTN <machine-rapid-thermal-processor>`** chamber: Applied Materials RTP
   Centura, AG Associates Heatpulse.[^nulman-1985]
-* **Plasma nitridation** chamber (decoupled or remote plasma) if the
+* **{ref}`Plasma nitridation <machine-plasma-nitridation-chamber>`** chamber (decoupled or remote plasma) if the
   oxide is plasma-nitrided.[^kraft-1997][^hattangady-1995]
 * **Spectroscopic ellipsometer**; **C–V** test.
 

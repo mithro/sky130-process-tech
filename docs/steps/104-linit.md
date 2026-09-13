@@ -146,7 +146,7 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
 * **PECVD system**, 200 mm: Novellus Concept One/Two and Sequel
   (multi-station),[^novellus-history] Applied Materials Producer or
   Centura DxZ (category page).
-* **Vertical LPCVD furnace** with BTBAS/NH₃ as the alternative.
+* **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** with BTBAS/NH₃ as the alternative.
 * **Spectroscopic ellipsometer**, **stress gauge**, **cross-section
   SEM**.
 

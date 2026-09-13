@@ -100,7 +100,7 @@ which is a different (later-generation) precursor.
 
 ## Machines typically used
 
-* **Vertical LPCVD furnace** with vacuum pumping, DCS and NH₃ gas
+* **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** with vacuum pumping, DCS and NH₃ gas
   panel and HCl-tolerant exhaust scrubbing. Representative 200 mm-era
   tools: SVG/Thermco–ASML–Aviza AVP/RVP series, Kokusai DD/Vertron,
   TEL Alpha-8S, ASM A400.
