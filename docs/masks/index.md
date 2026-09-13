@@ -596,8 +596,8 @@ expressions (below). The layer names are those of
   inside `nwell`. For `LVOM` they show `hvi` OR `tunm`, where this page
   reads the mask as everything outside `hvi`; since the renders show
   drawn shapes, not photomask artwork, the two may describe the same
-  plate in opposite tone
-  (inference), but the renders also add `tunm`. The `PWBM` render has
+  plate in opposite tone (inference), but the renders also add
+  `tunm`. The `PWBM` render has
   no `nwell` term, the `RPM` render no `urpm` term and the `MM4` render
   no fuse purpose.[^mask-renders] The step pages give the reasoning
   behind this page's readings; neither source settles which is right.
@@ -739,7 +739,11 @@ expressions (below). The layer names are those of
   `drawing`, `mask add`, `mask drop` and `waffle drop` purposes
   contribute when they sit on a different layer number from the `mask`
   purpose (`cp1m` 28:0 against 33:42–33:43, for example).[^pdk-06] The
-  pairings marked *(inference)* rest on the step pages' readings.
+  pairings marked *(inference)* rest on the step pages' readings. The
+  public renders use one derivation that differs from several of them,
+  and from the `HVTPM` and `LVTNM` pairings, and cite no source for it
+  ({ref}`masks-derivations`);[^mask-renders] which reading matches the
+  plates is not public.
 * `masks.csv` leaves the `Used in SKY130` field blank for `PWBM`,
   `PWDEM` and `CAPM` and has no entry matching the
   {ref}`RRPM <step-052>`, {ref}`URPM <step-055>` and
@@ -751,13 +755,16 @@ expressions (below). The layer names are those of
   `URPM`, `CAPM` and `CAP2M` on all eight MPW runs, but for `PWBM` only
   on MPW-6 and MPW-8 and for `PWDEM` only on MPW-6;[^steps-sheet] it
   does not say why plates for the two P-well masks are recorded for
-  only some runs.
+  only some runs. No rendered die on any run draws `pwbm` or
+  `pwde`,[^mask-renders] so the renders do not show what those plates
+  carry.
 * `HVTRM` is marked, with a mask-level layer, a drawn layer and a
   minimum CD, but has no mask step here; the PDK's layer description
   ("High-Vt RF transistor implant") and rule-set function line ("Define
   low VT adjust implant region for pmedlvtrf") do not settle what the
   implant does.[^pdk-06][^pdk-periph] The process-steps sheet records
-  no `HVTRM` plate for any of MPW-1 to MPW-8.[^steps-sheet]
+  no `HVTRM` plate for any of MPW-1 to MPW-8,[^steps-sheet] and no
+  rendered die on those runs draws `hvtr`.[^mask-renders]
 * The PDK does not say at which stage, or where, the marked `PBO`,
   `CU1M` and `PMM2` masks are used; their rules are published with the
   WLCSP and redistribution rules,[^pdk-wlcsp][^pdk-periph] and the
@@ -790,7 +797,25 @@ expressions (below). The layer names are those of
   `VIM4` and `PDM` on MPW-5, and an `NSM` plate on MPW-6 numbered
   `616` where the other seven runs have `007`;[^steps-sheet] it does
   not say whether these are gaps in the record or differences between
-  the runs.
+  the runs. It does not say what the three-digit plate numbers encode.
+* The sheet records plates for masks whose layers no rendered die of the
+  run draws — `TUNM`, `ONOM` and `LDNTM` on six runs, `RPM` on MPW-3,
+  `RRM` and `VIMC` on the runs without ReRAM layouts — and no public
+  source says what those plates carry (the renders omit whatever the
+  fab adds to a plate).[^steps-sheet][^mask-renders] The site renders no
+  `RRPM` image although a plate is recorded on every run.
+* The renders site's `RRM` note limits the ReRAM mask to the sets
+  `5CS8016AC`, `5CS8017AC` and `5CS8018AC`, while the sheet records `RRM`
+  plates on MPW-1 to MPW-3 as well; neither source explains the
+  difference ({ref}`masks-derivations`).[^mask-renders][^steps-sheet]
+* The sheet's MPW-4 plates belong to `5CS8018AC`, which the renders
+  site calls the re-made MPW-4 set, and the site's MPW-4 renders to the
+  original set `5CS8010AC`;[^steps-sheet][^mask-renders] no public
+  source lists the plates of the original set or says how the two sets
+  differ.
+* The site's project counts for the shuttles (37 to 144) differ from
+  the 40 dies it renders for every run, and it does not explain the
+  difference.[^mask-renders]
 
 <!-- footnotes -->
 
