@@ -95,7 +95,7 @@ plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
   TiW in CF₄-based mixtures[^liu-2007-tiw]) and in hydrogen peroxide, which
   Danzl and McLaurin used to strip a TiW anti-reflective cap from
   aluminium pads,[^danzl-1997] and the fab's metal etchers are
-  list it ("Lam 9600, Al, TiW, TiN, Pt"[^skw-01]). The
+  listed for it ("Lam 9600, Al, TiW, TiN, Pt"[^skw-01]). The
   published alternatives — TiN top plates in the Conexant/Newport
   Fab and TI processes,[^kar-roy-1999][^pat-mim-newportfab][^babcock-2001]
   an aluminium cap over a Ta/TaN top electrode on a copper back end
