@@ -23,10 +23,10 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1056
+written page has exactly one entry here; the inventory holds 1081
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14 and 8.15 were added to cover the
+8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15 and 8.16 were added to cover the
 sources the writers of the step and category pages introduced; a
 "Label ↔ key" note marks the few cases where one source has two keys.
 
@@ -82,12 +82,13 @@ SPNIT (7.5), plus the MiM layers `capm` and `cap2m`. It also labels
 the inter-level dielectric / via heights directly: li top to met1
 bottom (NILD2) 0.265 µm, via1 (NILD3) 0.27 µm, via2 (NILD4) 0.42 µm,
 via3 (NILD5) 0.39 µm, via4 (NILD6) 0.505 µm, LINT 0.075 µm, TOPOX
-0.09 µm, TOPNIT 0.3777 µm, NILD3_C/NILD4_C liners 0.030 µm, PSG
+0.09 µm, TOPNIT 0.54 µm on metal (0.3777 µm from the metal-5 bottom to
+its top in the field), NILD3_C/NILD4_C liners 0.030 µm, PSG
 0.6099 µm over the gate and 0.4299 µm over field poly; and levels
 above the substrate: FOX top 0.3262, li bottom 0.9361, li top 1.0111,
 met1 bottom 1.3761, met2 bottom 2.0061, met3 bottom 2.7861, met4
 bottom 4.0211, met5 bottom 5.3711, and PI1 top 11.8834 µm (further
-labels 0.54, 5.2523, 6.1346, 0.4223 and 0.070 µm dimension the
+labels 5.2523, 6.1346, 0.4223 and 0.070 µm dimension the
 metal5/passivation region). Tier: cross-check.
 
 **PDK-05** — *Masks* page and `masks.csv`.
@@ -7678,6 +7679,204 @@ dive.
 <https://en.wikipedia.org/wiki/Wire_bonding> Wire bonding to aluminium
 pads, an entry point for the bond-pad discussion. Used on step 161. Tier:
 high-level.
+
+### 8.16 Passivation, seal-ring, pad, alloy and electrical-test module sources
+
+Sources introduced by the writers of the passivation oxide and seal-ring
+steps (steps 164–166), the passivation nitride (step 167), the pad mask
+and etch (steps 168–169) and the final alloy and electrical test (steps
+170–171) that had no entry above. As in §8.15, each label on those pages
+is the key below in lower case, the citation is the one given in the
+page footnote, and the annotation is taken from the citing page's
+reading list; entries are grouped by the sub-module that first cited the
+source and name every page that uses it. Apart from CARAVEL-SEALRING and
+PDK-IO-GPIOV2, none of these sources describes SkyWater, SKY130 or the
+Bloomington fab.
+
+#### Passivation oxide and seal-ring mask and etch (steps 164–166)
+
+**CARAVEL-SEALRING** — Efabless Corporation, *caravel* repository,
+`gds/advSeal_6um_gen.gds.gz` (seal-ring cell for SKY130 shuttle
+designs), retrieved 2026-09-13.
+<https://github.com/efabless/caravel/blob/main/gds/advSeal_6um_gen.gds.gz>
+A published SKY130 seal-ring layout: a 6 µm `areaid.sl` band with a
+5 µm `nsm` band over four 0.3 µm diffusion rings and no drawn metal or
+via rings. Used on steps 165 and 166. Tier: cross-check.
+
+**COMIZZOLI-1986** — R. B. Comizzoli, R. P. Frankenthal, P. C. Milner and
+J. D. Sinclair, "Corrosion of Electronic Materials and Devices",
+*Science* **234**(4774), 340–345 (1986).
+<https://doi.org/10.1126/science.234.4774.340> Corrosion of electronic
+materials and devices by humidity and ionic contamination. Used on steps
+165, 166, 167, 168 and 169. Tier: deep dive.
+
+**LANFORD-1978** — W. A. Lanford and M. J. Rand, "The hydrogen content of
+plasma-deposited silicon nitride", *Journal of Applied Physics*
+**49**(4), 2473–2477 (1978). <https://doi.org/10.1063/1.325095> Hydrogen
+in plasma nitride, its infrared calibration, and hydrogen in a plasma
+oxide deposited at 300 °C. Used on steps 164, 167 and 170. Tier: deep
+dive.
+
+**PAT-CRACKSTOP-IBM** — A. R. Mitwalsky and T.-C. Chen (Siemens
+Aktiengesellschaft / International Business Machines), *Crack stops*,
+US 5,789,302 A, filed 1997-03-24, granted 1998-08-04.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5789302>
+Dielectric discontinuities in the dicing channel as crack stops. Used on
+steps 165 and 166. Tier: deep dive.
+
+**PAT-EDGESEAL-GF** — A. K. Stamper, V. J. McGahay and Z.-X. He
+(GlobalFoundries), *Segmented guard-ring and chip edge seals*,
+US 10,062,748 B1, filed 2017-02-27, granted 2018-08-28.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10062748>
+An edge seal etched through the dielectrics and lined with passivation,
+made with one mask. Used on steps 165, 166 and 167. Tier: deep dive.
+
+**PAT-FUSE-IBM** — P.-I. P. Lee, W. A. Klaasen and A. Mitwalsky
+(International Business Machines), *Fuse window with controlled fuse
+oxide thickness*, US 5,872,390 A, filed 1997-08-14, granted 1999-02-16.
+<https://patents.google.com/patent/US5872390A/en> Controlling the oxide
+left over a laser fuse. Used on step 164. Tier: deep dive.
+
+**PAT-FUSE-TSMC** — C.-H. Yang and C.-M. Su (Taiwan Semiconductor
+Manufacturing Co.), *Method of forming a metal fuse on semiconductor
+devices*, US 6,835,642 B2, filed 2002-12-18, granted 2004-12-28.
+<https://patents.google.com/patent/US6835642B2/en> A shallow fuse window
+in an oxide/nitride blanket that controls the remaining oxide. Used on
+step 164. Tier: deep dive.
+
+**PAT-FUSE-VANGUARD** — W.-T. Tzeng, Y.-F. Chen and K.-J. Wang (Vanguard
+International Semiconductor), *Process for controlling oxide thickness
+over a fusible link using transient etch stops*, US 6,294,474 B1, filed
+1999-10-25, granted 2001-09-25.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6294474>
+An oxide/nitride passivation stack with stated thicknesses, and bond-pad
+and fuse openings made with one mask. Used on steps 164, 167 and 168.
+Tier: deep dive.
+
+**PAT-FUSEWIN-TSMC** — S. Ying and S.-C. Hung (Taiwan Semiconductor
+Manufacturing Co.), *Method for etching fuse windows in IC devices and
+devices made*, US 6,300,252 B1, filed 1999-10-01, granted 2001-10-09.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6300252>
+Thick resist and a two-step window etch through a passivation and
+several inter-metal dielectrics. Used on steps 165 and 166. Tier: deep
+dive.
+
+**PAT-SEALRING-ZEEVO** — S. Bothra, T. G. McKay and R. Jhota (Zeevo),
+*Seal ring structure for IC containing integrated digital/RF/analog
+circuits and functions*, US 6,492,716 B1, filed 2001-04-30, granted
+2002-12-10.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6492716>
+A seal ring under a passivation oxide and nitride, and the moisture path
+around it. Used on steps 164, 165, 166 and 167. Tier: deep dive.
+
+**PECK-1986** — D. S. Peck, "Comprehensive Model for Humidity Testing
+Correlation", *24th International Reliability Physics Symposium* (1986),
+pp. 44–50. <https://doi.org/10.1109/IRPS.1986.362110> A humidity-test
+acceleration model for plastic packages. Used on steps 165 and 167.
+Tier: deep dive.
+
+**SINHA-1978** — A. K. Sinha, H. J. Levinstein, T. E. Smith, G. Quintana
+and S. E. Haszko, "Reactive Plasma Deposited Si-N Films for MOS-LSI
+Passivation", *Journal of The Electrochemical Society* **125**(4),
+601–608 (1978). <https://doi.org/10.1149/1.2131509> Reactive-plasma
+Si–N films for MOS-LSI passivation. Used on steps 164 and 167. Tier:
+deep dive.
+
+#### Passivation nitride (step 167)
+
+**CHOW-1982** — R. Chow, W. A. Lanford, K.-M. Wang and R. S. Rosler,
+"Hydrogen content of a variety of plasma-deposited silicon nitrides",
+*Journal of Applied Physics* **53**(8), 5630–5633 (1982).
+<https://doi.org/10.1063/1.331445> Hydrogen and etch rate across nine
+commercial plasma-nitride reactors. Used on step 167. Tier: deep dive.
+
+**SNOW-1965** — E. H. Snow, A. S. Grove, B. E. Deal and C. T. Sah, "Ion
+Transport Phenomena in Insulating Films", *Journal of Applied Physics*
+**36**(5), 1664–1673 (1965). <https://doi.org/10.1063/1.1703105>
+Alkali-ion transport in oxide, the contamination the nitride blocks.
+Used on step 167. Tier: deep dive.
+
+#### Pad mask and etch (steps 168–169)
+
+**PAT-PAD-FLUORINE-MICRON** — C. S. Jones, W. J. Crane, R. L. Gilchrist
+and R. C. Langley (Micron Technology), *Method to remove fluorine
+residues from bond pads*, US 5,380,401 A, filed 1993-01-14, granted
+1995-01-10.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5380401>
+Fluorine residues on bond pads after the nitride pad etch and their
+in-situ plasma removal. Used on step 169. Tier: deep dive.
+
+**PAT-PAD-FLUORINE-TSMC** — H.-C. Tsai and H.-H. Liu (Taiwan
+Semiconductor Manufacturing Co.), *Method to remove fluorine residue
+from bond pads*, US 7,055,532 B2, filed 2003-12-18, granted 2006-06-06.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7055532>
+Reactive ion etching of Al–F–O deposits on bond pads. Used on step 169.
+Tier: deep dive.
+
+**PAT-TESTLINE-TSMC** — H.-W. Chen, S.-H. Hsu, H.-Y. Tsai and S.-P. Jeng
+(Taiwan Semiconductor Manufacturing Co.), *Parametric testline with
+increased test pattern areas*, US 7,679,384 B2, filed 2007-06-08,
+granted 2010-03-16.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7679384>
+Parametric testlines and their probe pads in the scribe line. Used on
+steps 168 and 171. Tier: deep dive.
+
+**PDK-IO-GPIOV2** — SkyWater PDK Authors, *skywater-pdk-libs-sky130_fd_io*
+repository, cell `sky130_fd_io__top_gpiov2`, GDS layout
+`sky130_fd_io__top_gpiov2.gds` and LEF abstract
+`sky130_fd_io__top_gpiov2.lef`, retrieved 2026-09-13.
+<https://github.com/google/skywater-pdk-libs-sky130_fd_io/tree/main/cells/top_gpiov2>
+The SKY130 GPIO pad cell: an 80 µm × 200 µm LEF abstract and, in the GDS,
+a chamfered 60 µm × 70 µm `pad` opening over a 65.4 µm × 75.4 µm metal-5
+pad. Used on steps 168 and 169. Tier: cross-check.
+
+**TEO-2015** — H. W. Teo, Y. Yang, Y. Wang, L. Zhu, Z. Q. Mo, S. P. Zhao
+and J. Lam, "Feasibility study of TOF-SIMS surface measurement for
+Aluminum bond pad fluorine contamination", *Proc. 2015 IEEE 22nd
+International Symposium on the Physical and Failure Analysis of
+Integrated Circuits (IPFA)*, pp. 61–63.
+<https://doi.org/10.1109/IPFA.2015.7224333> TOF-SIMS measurement of
+fluorine on aluminium bond pads. Used on step 169. Tier: deep dive.
+
+#### Alloy and electrical test (steps 170–171)
+
+**BUEHLER-1974** — M. G. Buehler, *Microelectronic Test Patterns*, NBS
+Special Publication 400-6, National Bureau of Standards, 1974.
+<https://doi.org/10.6028/NBS.SP.400-6> An early NBS publication on test
+patterns. Used on step 171. Tier: deep dive.
+
+**KIZILYALLI-1998** — I. C. Kizilyalli, G. C. Abeln, Z. Chen, J. Lee,
+G. Weber, B. Kotzias, S. Chetlur, J. W. Lyding and K. Hess, "Improvement
+of hot carrier reliability with deuterium anneals for manufacturing
+multilevel metal/dielectric MOS systems", *IEEE Electron Device Letters*
+**19**(11), 444–446 (1998). <https://doi.org/10.1109/55.728907> Deuterium
+anneals for manufacturing multilevel metal/dielectric MOS systems. Used
+on step 170. Tier: deep dive.
+
+**LEARN-1976** — A. J. Learn, "Evolution and Current Status of Aluminum
+Metallization", *Journal of The Electrochemical Society* **123**(6),
+894–906 (1976). <https://doi.org/10.1149/1.2132964> Aluminium
+metallisation and its processing. Used on step 170. Tier: deep dive.
+
+**LYDING-1996** — J. W. Lyding, K. Hess and I. C. Kizilyalli, "Reduction
+of hot electron degradation in metal oxide semiconductor transistors by
+deuterium processing", *Applied Physics Letters* **68**(18), 2526–2528
+(1996). <https://doi.org/10.1063/1.116172> Deuterium in the final sinter
+and hot-electron degradation. Used on step 170. Tier: deep dive.
+
+**PAT-DEUTERIUM-UIUC** — J. W. Lyding and K. Hess (Board of Trustees of
+the University of Illinois), *Deuterium-treated semiconductor devices*,
+US 5,872,387 A, filed 1996-01-16, granted 1999-02-16.
+<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5872387>
+Deuterium-treated devices and example anneal conditions. Used on step
+170. Tier: deep dive.
+
+**SAYAH-1988** — H. R. Sayah and M. G. Buehler, "Comb/serpentine/cross-bridge
+test structure for fabrication process evaluation", *Proc. 1988 IEEE
+International Conference on Microelectronic Test Structures (ICMTS)*,
+pp. 23–28. <https://doi.org/10.1109/ICMTS.1988.672923> A
+comb/serpentine/cross-bridge structure for process evaluation. Used on
+step 171. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
