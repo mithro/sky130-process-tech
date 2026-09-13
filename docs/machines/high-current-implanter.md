@@ -205,6 +205,8 @@ the "Hi dose" entry alone reaches "5e16".[^skw-01]
 
 ## Consumables and facilities
 
+The dopant sources are described on the
+{ref}`dopant gases and implant sources <material-dopant-sources>` page.
 The dopant gases and ion-source parts are listed in the
 {ref}`materials index <materials-index>`; what is specific to a
 high-current tool is summarised here. None of the SkyWater sources
@@ -303,6 +305,8 @@ not public.
   implants.
 * {ref}`material-substrates` — monitor wafers for dose and uniformity.
 * {ref}`material-hardware-consumables` — exhaust abatement.
+* {ref}`material-dopant-sources` — dopant gases, solid sources,
+  sub-atmospheric packages and ion-source parts.
 
 ## References
 

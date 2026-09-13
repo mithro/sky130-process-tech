@@ -246,6 +246,9 @@ only on the DPS II entry, "poly/nitride" only on the 9400 entry, and the
 
 ## Consumables and facilities
 
+The etch gases and process gases are described on the
+{ref}`etch and chamber-clean gases <material-etch-gases>` and
+{ref}`process gases <material-process-gases>` pages.
 The etch gases and chamber parts are listed in the
 {ref}`materials index <materials-index>`; what is specific to a silicon
 etcher is summarised here. None of the SkyWater sources describes the
@@ -339,6 +342,11 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 * {ref}`materials-index` — etch gases and chamber materials.
 * {ref}`material-hardware-consumables` — chamber parts and exhaust
   abatement.
+* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases.
+* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+  helium and the oxidation additives, their grades and SkyWater's listed
+  gases.
 
 ## References
 
