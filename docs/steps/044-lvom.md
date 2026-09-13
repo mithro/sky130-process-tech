@@ -137,10 +137,10 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 
 ## Machines typically used
 
-* **i-line stepper**, 200 mm: ASML PAS 5500/100–/275, Nikon
+* **{ref}`i-line stepper <machine-i-line-stepper>`**, 200 mm: ASML PAS 5500/100–/275, Nikon
   NSR-2205i, Canon FPA-3000i ({ref}`category-lithography`).
-* **Coat/develop track** (TEL, DNS/SCREEN, Sokudo).
-* **Overlay metrology** and **{term}`CD-SEM`**.
+* **{ref}`Coat/develop track <machine-coat-develop-track>`** (TEL, DNS/SCREEN, Sokudo).
+* **{ref}`Overlay metrology <machine-cd-sem-overlay-metrology>`** and **{term}`CD-SEM`**.
 
 ## Machines likely used at SkyWater
 

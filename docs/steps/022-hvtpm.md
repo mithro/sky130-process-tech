@@ -122,9 +122,9 @@ fab:
 
 ## Machines typically used
 
-* **i-line {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
+* **{ref}`i-line <machine-i-line-stepper>` {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i).[^txt-05]
-* **Coat/develop track**; **overlay tool**; **{term}`CD-SEM`** for sampling.
+* **{ref}`Coat/develop track <machine-coat-develop-track>`**; **{ref}`overlay tool <machine-cd-sem-overlay-metrology>`**; **{term}`CD-SEM`** for sampling.
 
 ## Machines likely used at SkyWater
 

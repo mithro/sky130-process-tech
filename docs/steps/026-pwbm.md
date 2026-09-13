@@ -150,10 +150,10 @@ raises NMOS {term}`Vt`.[^hook-2003]
 
 ## Machines typically used
 
-* **i-line {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
+* **{ref}`i-line <machine-i-line-stepper>` {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i).[^txt-05]
-* **Coat/develop track** with thick-resist capability.
-* **Overlay metrology** and a {term}`CD-SEM` for periodic checks.
+* **{ref}`Coat/develop track <machine-coat-develop-track>`** with thick-resist capability.
+* **{ref}`Overlay metrology <machine-cd-sem-overlay-metrology>`** and a {term}`CD-SEM` for periodic checks.
 
 ## Machines likely used at SkyWater
 

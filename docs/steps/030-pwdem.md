@@ -145,9 +145,9 @@ An industry-generic drain-extension well lithography for a 200 mm,
 
 ## Machines typically used
 
-* **i-line {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
+* **{ref}`i-line <machine-i-line-stepper>` {term}`stepper`**, 200 mm (ASML PAS 5500/100–/275, Nikon NSR-2205i,
   Canon FPA-3000i).[^txt-05]
-* **Coat/develop track** with thick-resist capability; **overlay tool**
+* **{ref}`Coat/develop track <machine-coat-develop-track>`** with thick-resist capability; **{ref}`overlay tool <machine-cd-sem-overlay-metrology>`**
   and a {term}`CD-SEM` for periodic checks.
 
 ## Machines likely used at SkyWater
