@@ -230,7 +230,7 @@ IDSNS15L, while twelve 7/0.15 µm low-Vt NMOS structures in two other
 modules carry 3.67–4.13 mA, inside it (our extraction from the
 published measurements).[^raw-data-lv-mosfets][^pdk-07] The tile's
 "fet mismatch" modules are not used for these comparisons: their
-thresholds agree with the other modules, but their drain currents per
+thresholds agree with the other modules to within about 0.05 V, but their drain currents per
 drawn width are about two to four times as high, and neither the files
 nor the pad list explain the
 difference.[^raw-data-lv-mosfets][^raw-data-testtile-pads]
