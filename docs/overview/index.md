@@ -553,6 +553,93 @@ NILD2 and LINT together ({ref}`CTM1 <step-107>`,
 disagree with other public sources; those differences are among the
 open questions below.
 
+(overview-phases)=
+## Front end, middle of line and back end
+
+Every step page's summary table gives the step a phase and a module
+name. The boundaries are this reference's, drawn where the kind of work
+changes:
+
+| Phase | Steps | Number of steps | Modules as named on the step pages |
+|-------|-------|-----------------|------------------------------------|
+| {term}`FEOL` | {ref}`SMAT <step-001>` – {ref}`RTAD <step-088>` | 88 | isolation; wells and channel implants; SONOS and gate dielectrics; gate and poly resistors; extensions, spacers, source/drain |
+| {term}`MOL` | {ref}`PSG <step-089>` – {ref}`CMPL <step-106>` | 18 | silicide and local interconnect |
+| {term}`BEOL` | {ref}`CTM1 <step-107>` – {ref}`HPETEST <step-171>` | 65 | contact and metal 1; via 1, metal 2, via 2; MiM capacitors, metal 3–5, via 3–4; passivation, pads, alloy, test |
+
+The front end ends with the last source/drain anneal, when every
+junction is in place. The middle of line runs from the pre-metal glass
+to the polished dielectric over the local interconnect, so it contains
+the first contacts (`licon`) and the local interconnect itself. The back
+end starts with the metal-contact mask and, in this reference, includes
+the passivation, the final alloy and electrical test. Two consequences
+of these choices are worth knowing when comparing with other sources:
+the glossary's general definition of the back end runs "from the first
+contact through the final passivation", whereas this reference counts
+the first contact level as middle of line; and the test category page
+quotes the general description of wafer testing as a step performed
+"after back end of line (BEOL)", whereas the step pages file
+{ref}`HPETEST <step-171>` under BEOL ({ref}`glossary`,
+{ref}`category-test`). The deposition of the metal-3 stack,
+{ref}`WTIAL3 <step-134>`, is also filed with via 2 rather than with the
+capacitor and metal-3 steps that follow it.
+
+### Thermal budget
+
+The order of a CMOS flow is set largely by {term}`thermal budget`: once a
+junction or film is in place, every later step must stay within what it
+tolerates, so the hottest steps broadly come first and the flow cools
+as it goes. The step list gives no temperatures, and SKY130's are not public;
+the values below are typical ones from the category pages and their
+sources, in the order in which the thermal steps occur.
+
+1. **Isolation.** The pad and liner oxidations ({ref}`BOX <step-002>`,
+   {ref}`LINOX <step-010>`) and the nitride hard mask
+   ({ref}`ISONIT <step-003>`) are furnace steps: thermal oxidation runs
+   at 800–1200 °C[^wiki-thox] and LPCVD nitride at roughly
+   700–800 °C (typical values).[^wiki-sin][^txt-02] On the
+   {ref}`DNM <step-007>` page's reading, this heat also drives the deep
+   N-well implanted just before the liner oxidation.
+2. **Well anneal.** {ref}`RTAI <step-034>` activates the ten well and
+   channel implants at once; the step page reads it as a rapid thermal
+   anneal, for which seconds at 1000–1100 °C is typical.[^stolk-1997]
+3. **SONOS stack.** Cypress's first ONO patent forms all three layers in
+   one furnace window of "about 700° C. to about 875° C."
+   ({ref}`ONO <step-040>`).[^pat-01]
+4. **Gate oxides.** Gate oxides of this era are typically grown dry at
+   750–950 °C ({ref}`GOX100 <step-043>`,
+   {ref}`LVGOX <step-047>`);[^txt-01] in Cypress's integration patent the
+   logic gate oxidation also re-oxidises the ONO.[^pat-03]
+5. **Gate film.** Silicon deposited below about 580 °C is amorphous, as
+   SKY130's gate film is described ({ref}`SAGD <step-048>`; typical
+   value);[^wiki-poly][^txt-01] the caps and the post-etch re-oxidation
+   ({ref}`GATENIT <step-058>`, {ref}`POC <step-059>`,
+   {ref}`IOX45 <step-063>`) follow, at conditions that are not public.
+6. **Junction anneals.** Three rapid thermal anneals activate the tips
+   and halos and the source/drains ({ref}`TIPRTAD <step-075>`,
+   {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`); a soak of
+   1000–1050 °C for a few seconds, or a spike, is the typical 130 nm-era
+   choice.[^txt-05][^txt-10] After them the junctions — 0.1 µm deep in
+   the PDK's assumptions[^pdk-03] — must not move, and every later step
+   is cooler (inference from the order).
+7. **Contact module.** An anneal that the step page reads as a
+   hydrogen-bearing alloy anneal, typically 350–450 °C,[^txt-02] precedes
+   the contact liner ({ref}`ALLY1 <step-096>`), and the anneal read as the
+   contact silicidation follows it ({ref}`CSIL <step-098>`); titanium disilicide is typically formed by a
+   first anneal at roughly 600–700 °C and converted to its
+   low-resistance phase at roughly 800–900 °C.[^maex-1993] How SKY130's
+   silicidation is done is not public.
+8. **Back end.** Once aluminium is on the wafer, from
+   {ref}`TIAL6 <step-112>` onwards, depositions typically stay below
+   about 450 °C;[^txt-02] tungsten CVD for the plugs runs at roughly
+   400–450 °C (typical).[^wiki-wf6][^txt-01] The oxide, nitride and
+   capacitor films of the back end are described on their step pages as
+   low-temperature plasma depositions (inference).
+9. **Final alloy.** The last heat is the alloy anneal
+   ({ref}`ALLY <step-170>`), read as a forming-gas anneal, typically
+   350–450 °C.[^txt-02] In the
+   `sky130B` variant every thermal step after the ReRAM stack is also
+   seen by its 5 nm switching oxide ({ref}`overview-sky130b-reram`).
+
 <!-- footnotes -->
 
 [^pdk-02]: SkyWater PDK Authors, *Background*, SkyWater SKY130 PDK
@@ -679,3 +766,34 @@ open questions below.
     (copy hosted by Tokyo Electron Device as the attachment to
     Cypress Product Information Notification PIN145273, 2014-03-13).
     <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
+[^wiki-thox]: Wikipedia, *Thermal oxidation*.
+    <https://en.wikipedia.org/wiki/Thermal_oxidation>
+[^wiki-sin]: Wikipedia, *Silicon nitride*.
+    <https://en.wikipedia.org/wiki/Silicon_nitride>
+[^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
+    Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
+    ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^stolk-1997]: P. A. Stolk, H.-J. Gossmann, D. J. Eaglesham, D. C.
+    Jacobson, C. S. Rafferty, G. H. Gilmer, M. Jaraíz, J. M. Poate, H.
+    S. Luftman and T. E. Haynes, "Physical mechanisms of transient
+    enhanced dopant diffusion in ion-implanted silicon", *Journal of
+    Applied Physics* **81**(9), 6031–6050 (1997).
+    <https://doi.org/10.1063/1.364452>
+[^txt-01]: J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+    Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
+    2000, ISBN 978-0-13-085037-9.
+    <https://openlibrary.org/isbn/9780130850379>
+[^wiki-poly]: Wikipedia, *Polycrystalline silicon*.
+    <https://en.wikipedia.org/wiki/Polycrystalline_silicon>
+[^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
+    Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
+    978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^txt-10]: R. B. Fair (ed.), *Rapid Thermal Processing: Science and
+    Technology*, Academic Press, 1993, ISBN 978-0-12-247690-7; R. B.
+    Fair, "Junction Formation in Silicon by Rapid Thermal Annealing",
+    pp. 169–226. <https://doi.org/10.1016/b978-0-12-247690-7.50009-3>
+[^maex-1993]: K. Maex, "Silicides for integrated circuits: TiSi₂ and
+    CoSi₂", *Materials Science and Engineering: R* **11**(2–3), vii–153
+    (1993). <https://doi.org/10.1016/0927-796X(93)90001-J>
+[^wiki-wf6]: Wikipedia, *Tungsten hexafluoride*.
+    <https://en.wikipedia.org/wiki/Tungsten_hexafluoride>
