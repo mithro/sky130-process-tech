@@ -38,10 +38,10 @@ etch, or any other similar hydrofluoric-based wet etching
 chemistry."[^pat-04] The same patent notes that "A photoresist tunnel
 mask 220 can be ashed or stripped using oxygen plasma."[^pat-04]
 
-Because the step list used in this reference has no separate strip
-between `TUNME` and {ref}`ONO <step-040>`, we infer that the resist
-strip and the pre-oxidation clean are carried out as the tail of this
-step (or the head of the next); the sequence below includes them.
+This reference treats the resist strip (by oxygen-plasma ash in the
+Cypress patent[^pat-04]) and the pre-oxidation clean as the tail of
+this step; they could equally be the head of the next. The sequence
+below includes them.
 
 ## Step category
 
@@ -247,11 +247,11 @@ fab (SKY130's recipe is not public):
   inferred; its retention after {ref}`NS19 <step-013>` is not public.
 * Whether the pad oxide is removed only inside the tunnel windows or
   everywhere after the resist is stripped is an open question; this
-  page reads the step name used in this reference as a masked etch,
-  and the Cypress patent text can be read either way.[^pat-04]
+  page describes a masked etch, and the Cypress patent text can be
+  read either way.[^pat-04]
 * Where the resist strip and the pre-oxidation clean sit — in this
-  step or in {ref}`ONO <step-040>` — is inferred from the absence of a
-  separate strip step.
+  step or in {ref}`ONO <step-040>` — is not stated publicly; this page
+  treats them as part of this step.
 * The HF dilution, etch time, over-etch and final surface state
   (HF-last or chemical oxide) are not public.
 

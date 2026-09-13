@@ -33,21 +33,20 @@ labels the poly with the same 0.18 µm.[^pdk-04] The drawn layer is
 `resistor` purpose (66:13).[^pdk-06] SkyWater's own capability list is
 unusually specific about this film: its furnace processes include
 "LPCVD polysilicon (undoped), both amorphous and
-crystalline".[^skw-01] The step name in the step list used in this
-reference — *single a-Si gate deposition* — and SkyWater's "undoped …
-amorphous" together are the basis for reading `SAGD` as one undoped
-amorphous layer. That the resistor-protect mask {ref}`RPM <step-049>`
+crystalline".[^skw-01] SkyWater's "undoped … amorphous" is the public
+basis for describing `SAGD` as one undoped amorphous layer
+(inference). That the resistor-protect mask {ref}`RPM <step-049>`
 immediately follows is consistent with it: an in-situ-doped film would
 leave nothing for a resistor mask to protect.
 
-**Why "single"?** Two other gate constructions were common at the
+**One layer, not a stack.** Two other gate constructions were common at the
 130 nm node and both use more than one silicon layer: a polycide gate
 (poly under tungsten {term}`silicide`, used by DRAM makers to cut gate
 resistance) and a stacked-amorphous-silicon gate, in which two thin a-Si
 layers are deposited with an interface between them to block boron
-penetration through the gate oxide.[^wu-1993] We infer that "single"
-distinguishes the SKY130 gate from such stacks: one layer, one
-deposition. The PDK's {term}`sheet resistance` for poly, 48.2 Ω/sq,[^pdk-08] is
+penetration through the gate oxide.[^wu-1993] This reference describes
+the SKY130 gate as neither: one layer, one deposition (inference; the
+PDK's stack diagram draws a single poly layer[^pdk-04]). The PDK's {term}`sheet resistance` for poly, 48.2 Ω/sq,[^pdk-08] is
 far above the few Ω/sq of a silicided or polycide gate[^txt-05] and is
 what a heavily doped, unsilicided 0.18 µm poly film gives, so there is
 no silicide strap on the gate either.
@@ -138,8 +137,8 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
   resistor-protect mask impossible; implant doping after deposition is
   the norm for a process with several poly doping levels (category
   page).
-* **Crystallisation.** No dedicated anneal is listed in the step list
-  used in this reference. Solid-phase crystallisation of a-Si on oxide
+* **Crystallisation.** This reference describes no dedicated anneal.
+  Solid-phase crystallisation of a-Si on oxide
   proceeds at 600 °C over hours and much faster at higher
   temperatures;[^iverson-1987] the later furnace and {term}`RTA` steps
   ({ref}`IOX45 <step-063>`, {ref}`TIPRTAD <step-075>`,
@@ -169,7 +168,8 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
   amorphous and crystalline" among the furnace processes.[^skw-01]
   Strength: **strong** for the tool vendor and for the existence of an
   undoped amorphous LPCVD silicon process; the assignment to this step
-  is an inference from the step name. Whether the furnaces are vertical
+  is an inference from that capability and the undoped amorphous gate
+  film described here. Whether the furnaces are vertical
   is not stated on SkyWater's page; a used-equipment listing describes
   the Aviza/SVG/Thermco AVP-8000 as a vertical batch furnace for
   150–200 mm wafers (weak).[^aviza-avp]
@@ -289,13 +289,11 @@ suppliers,[^sec-01][^sec-02] without tying them to a process.
 * The deposition temperature, pressure, precursor (silane or
   disilane) and rate are not public; the amorphous regime below about
   580 °C is an era-typical value from the cited literature.
-* This page reads the "single" in the step name used in this
-  reference as one layer deposited in one furnace run; an in-situ
-  seed or interface layer would also be consistent with the public
-  sources.
-* No dedicated crystallisation anneal appears in the step list used in
-  this reference; we assume the later thermal steps crystallise the
-  film.
+* This page describes the gate as one layer deposited in one furnace
+  run; an in-situ seed or interface layer would also be consistent
+  with the public sources.
+* No public source describes a dedicated crystallisation anneal; we
+  assume the later thermal steps crystallise the film.
 * Whether the film is deposited in a batch furnace or a single-wafer
   chamber is not stated; SkyWater's capability list places LPCVD
   polysilicon under its Aviza furnaces.[^skw-01]

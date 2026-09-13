@@ -32,8 +32,8 @@ layer is `ctunm` (GDS 20:0, "Tunnel mask"), and the drawn layer is
 `tunm` (GDS 80:20), which the layer list describes as "SONOS device
 tunnel implant".[^pdk-06] That description — an *implant* layer rather
 than an oxide layer — is the strongest hint in the PDK about what the
-following steps do, and matches the two implants that the step list used
-in this reference places between this mask and its etch. The `tunm`
+following steps do, and this reference accordingly describes two
+implants between this mask and its etch. The `tunm`
 rules (function: "Defines SONOS FETs") give the geometry: minimum width
 0.410 µm (tunm.1), minimum spacing 0.500 µm (tunm.2), an extension of
 `tunm` beyond the poly-over-active gate of 0.095 µm (tunm.3) and the
@@ -132,10 +132,8 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 The resist is *not* stripped at the end of this step: it is opened
 through the ARC at {ref}`TUNARCE <step-036>`, used as the implant
 mask at {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>`, and as the
-etch mask at {ref}`TUNME <step-039>`. The step list used in this
-reference has no separate strip step between `TUNME` and
-{ref}`ONO <step-040>`, so we infer that the strip and the
-pre-oxidation clean are folded into those steps (see the
+etch mask at {ref}`TUNME <step-039>`. This reference treats the strip
+and the pre-oxidation clean as part of those steps (see the
 {ref}`TUNME <step-039>` page).
 
 ## Machines typically used
@@ -270,7 +268,8 @@ pre-oxidation clean are folded into those steps (see the
   published, so the real cell pitch cannot be derived from the `tunm`
   rules alone.
 * Where the resist is stripped after {ref}`TUNME <step-039>` is not
-  resolvable from the step list used in this reference.
+  stated publicly; this reference treats the strip as part of that
+  etch.
 
 <!-- footnotes -->
 
