@@ -170,7 +170,8 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 * **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
   Strength: strong for existence.
 * **CD — AMAT Verity, VeraSEM; overlay — KLA 5200/5300/Archer.**[^skw-01]
-  Strength: strong.
+  Strength: strong for existence (SkyWater statement); use at this
+  mask is an inference.
 
 ## Resources required
 
