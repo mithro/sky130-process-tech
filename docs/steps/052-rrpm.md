@@ -102,7 +102,8 @@ An industry-generic implant-mask litho sequence, as on
    overlap leaves a strip doped both n⁺ and p, and Hook et al. show how
    lateral {term}`straggle` at a resist edge blurs the boundary
    further.[^hook-2003]
-5. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^wiki-tmah] rinse,
+5. **Post-exposure bake, develop** in 2.38 % TMAH[^microchemicals-dev] (0.26 N; our arithmetic from TMAH's
+   molar mass of 91.15 g/mol), rinse,
    hard bake or UV cure.
 6. **Inspection.** Overlay to active; open-window check by optical
    inspection.
@@ -317,3 +318,6 @@ mostly chrome. Neither tone nor resist is stated publicly.
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^microchemicals-dev]: MicroChemicals, *Development of photoresists*,
+    application note.
+    <https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>

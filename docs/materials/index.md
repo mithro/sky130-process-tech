@@ -414,7 +414,7 @@ required* sections do not always describe analogous steps in the same
 way. The differences below are recorded as found; this page does not
 decide between them. Items that a consistency pass over the step pages
 on 2026-09-13 resolved (spellings and quotations of SkyWater's entries,
-developer strength, the metal-etch gas wording, the PSG dimension labels
+developer strength on the pages that give one, the metal-etch gas wording, the PSG dimension labels
 and the discussion of "PECVD Tungsten") have been removed.
 
 ### Chemistries of analogous steps
