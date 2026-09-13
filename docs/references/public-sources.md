@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1529
+written page has exactly one entry here; the inventory holds 1542
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -99,6 +99,7 @@ bottom 4.0211, met5 bottom 5.3711, and PI1 top 11.8834 µm (further
 labels 5.2523, 6.1346, 0.4223 and 0.070 µm dimension the
 metal5/passivation region). Tier: cross-check.
 Also used on the PECVD, HDP-CVD and PVD cluster tool pages.
+Also used on the sputter targets material page.
 
 **PDK-05** — *Masks* page and `masks.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -133,6 +134,7 @@ Also used on the silicon and polysilicon plasma etcher and metal plasma
 etcher pages.
 Also used on the PECVD and PVD cluster tool pages.
 Tier: cross-check.
+Also used on the sputter targets material page.
 
 **PDK-08** — *Parasitic Layout Extraction* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
@@ -335,6 +337,7 @@ redistribution layer (4.0 µm RDL, 5.25 µm polyimide via).
 Also used on the metal plasma etcher page. Tier:
 high-level (numbers should be cross-checked against PDK-04).
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 **ANN-17** — Wikipedia, *"130 nm process"*.
 <https://en.wikipedia.org/wiki/130_nm_process>. Context for the node
@@ -424,6 +427,7 @@ end of line". The "SkyWater Process Integration Tools & Capabilities"
 list then names tools and chemistries by area:
 Also used on the wet chemicals material page.
 Also used on the lithography materials page.
+Also used on the sputter targets material page.
 
 * *Lithography* — "ASML I-line stepper", "ASML I-line scanner", "ASML
   DUV stepper", "ASML DUV scanner", "ASML 193nm single stage scanner –
@@ -659,6 +663,7 @@ Also used on the CMP polisher machine page.
 Tier: cross-check.
 Also used on the wet chemicals material page.
 Also used on the lithography materials page.
+Also used on the sputter targets material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -677,6 +682,7 @@ cross-check.
 Also used on the PVD cluster tool page.
 Also used on the wet chemicals material page.
 Also used on the lithography materials page.
+Also used on the sputter targets material page.
 
 **SEC-03** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2025, filed 2026.
@@ -1218,6 +1224,7 @@ Also used on the silicon and polysilicon plasma etcher, dielectric and
 nitride plasma etcher and metal plasma etcher pages.
 Also used on the PECVD and PVD cluster tool pages.
 Tier: high-level.
+Also used on the sputter targets material page.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
 Process Integration*, Lattice Press, 1990, ISBN 978-0-9616721-4-0.
@@ -1549,6 +1556,7 @@ high-level.
 <https://en.wikipedia.org/wiki/Electromigration> Electromigration in
 interconnects and the Al–Cu remedy. Used on the deposition category
 page. Tier: high-level.
+Also used on the sputter targets material page.
 
 **WIKI-EPITAXY** — Wikipedia, *Epitaxy*.
 <https://en.wikipedia.org/wiki/Epitaxy> Epitaxial growth and its
@@ -1776,6 +1784,7 @@ Tier: high-level.
 vapour deposition overview. Used on the deposition category page. Tier:
 high-level.
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 **WIKI-RC** — Wikipedia, *Contact resistance*.
 <https://en.wikipedia.org/wiki/Contact_resistance> Contact resistance
@@ -1872,6 +1881,7 @@ high-level.
 magnetron sources, targets and step coverage. Used on the deposition
 category page. Tier: high-level.
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 **WIKI-SRIM** — Wikipedia, *Stopping and Range of Ions in Matter*.
 <https://en.wikipedia.org/wiki/Stopping_and_Range_of_Ions_in_Matter>
@@ -1929,6 +1939,7 @@ Tier: high-level.
 barrier and local-interconnect material. Used on the deposition category
 page. Tier: high-level.
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 **WIKI-TISI2** — Wikipedia, *Titanium disilicide*.
 <https://en.wikipedia.org/wiki/Titanium_disilicide> Titanium disilicide
@@ -4092,6 +4103,7 @@ Research and Development* **14**(4), 461–463 (1970).
 <https://doi.org/10.1147/rd.144.0461> The original demonstration that
 copper doping suppresses aluminium electromigration. Used on the
 deposition category page. Tier: deep dive.
+Also used on the sputter targets material page.
 
 **BLECH-1976** — I. A. Blech, "Electromigration in thin aluminum films
 on titanium nitride", *Journal of Applied Physics* **47**(4), 1203–1208
@@ -4153,6 +4165,7 @@ coatings", *Journal of Vacuum Science and Technology* **11**(4), 666–670
 for sputtered films versus pressure and temperature. Used on the
 deposition category page. Tier: deep dive.
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 ##### Books and book chapters
 
@@ -4162,6 +4175,7 @@ Academic Press, 2002.
 regimes, step coverage and the structure-zone model. Used on the
 deposition category page. Tier: deep dive.
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 **SESHAN-2002** — K. Seshan (ed.), *Handbook of Thin-Film Deposition
 Processes and Techniques: Principles, Methods, Equipment and
@@ -4170,6 +4184,7 @@ Applications*, 2nd ed., Noyes Publications / William Andrew, 2002, ISBN
 Chapter-per-technique reference on CVD, PECVD, PVD and their equipment.
 Used on the deposition category page. Tier: deep dive.
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 ##### Patents
 
@@ -4190,6 +4205,7 @@ deposition category page. Tier: cross-check.
 Also used on the PVD cluster tool page, whose footnote adds the inventor
 (A. Hiraki) and the filing date (1991-05-31) from Google Patents; the
 patent gives the 10 wt% titanium as the composition of the barrier film.
+Also used on the sputter targets material page.
 
 ##### Vendor, regulatory, marketplace and press pages
 
@@ -6963,6 +6979,7 @@ modeling of reactive sputtering processes", *Thin Solid Films*
 Reactive sputtering model and hysteresis. Used on steps 097, 101 and
 109. Tier: deep dive.
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 **BIELMANN-1999** — M. Bielmann et al., "Effect of Particle Size during
 Tungsten Chemical Mechanical Polishing", *Electrochemical and
@@ -7044,6 +7061,7 @@ nitrogen. Used on step 098. Tier: deep dive.
 *Thin Solid Films* **52**(3), 415–443 (1978).
 <https://doi.org/10.1016/0040-6090(78)90184-0> Diffusion barriers in
 microelectronics in general. Used on step 097. Tier: deep dive.
+Also used on the sputter targets material page.
 
 **OHTO-1996** — K. Ohto, K. Urabe, T. Taguwa, S. Chikaki and T. Kikkawa,
 "A novel TiN/Ti contact plug technology for gigabit scale DRAM using
@@ -7077,6 +7095,7 @@ Science & Technology A* **9**(2), 261–265 (1991).
 <https://doi.org/10.1116/1.577531> Collimated magnetron sputter
 deposition. Used on steps 097, 109 and 112. Tier: deep dive.
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 **ROSSNAGEL-1993** — S. M. Rossnagel and J. Hopwood, "Magnetron sputter
 deposition with high levels of metal ionization", *Applied Physics
@@ -7282,6 +7301,7 @@ of titanium nitride: A deposition model", *Journal of Applied Physics*
 deposition model for ionised PVD of titanium nitride. Used on step 109.
 Also used on the PVD cluster tool page.
 Tier: deep dive.
+Also used on the sputter targets material page.
 
 **OEHRLEIN-1994B** — G. S. Oehrlein, Y. Zhang, D. Vender and O. Joubert,
 "Fluorocarbon high-density plasmas. II. Silicon dioxide and silicon
@@ -7446,6 +7466,7 @@ The product-change notification that carries the QTP 123907 report and
 describes the TiW-based stack as Cypress's Minnesota process. Used on
 steps 112 and 123. Tier: cross-check.
 Also used on the PVD cluster tool page.
+Also used on the sputter targets material page.
 
 **CYP-QTP-014807** — Cypress Semiconductor, *Technology Derivative
 Qualification Report, QTP# 014807 Version 2.0: Technology Derivative
@@ -7476,6 +7497,7 @@ Al-0.5%Cu / 300A TiW". Used on steps 112–114, 118–121, 123–125,
 Also used on the metal plasma etcher page.
 Also used on the PVD cluster tool page.
 Tier: cross-check.
+Also used on the sputter targets material page.
 
 **CYP-QTP-123907** — Cypress Semiconductor, *Fab Process Qualification
 Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8 Technology,
@@ -7487,6 +7509,7 @@ and available from cypress.com;
 <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
 S8 "Metal Stack Change from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN in CMI Fab
 4". Used on steps 112 and 117. Tier: cross-check.
+Also used on the sputter targets material page.
 
 **DALTON-1990** — C. M. Dalton, "Enhanced selective tungsten
 encapsulation of TiW capped aluminum interconnect", *Proc. Seventh
@@ -10534,6 +10557,7 @@ Vectra IMP Ti chamber, a CVD TiN TxZ chamber and a Preclean II chamber,
 and the Vectra IMP chamber's bottom coverage and chamber count. Used on
 the tungsten CVD and PVD cluster tool pages. Tier: cross-check (vendor
 statement).
+Also used on the sputter targets material page.
 
 **PAT-BACKSIDE-NOVELLUS** — E. P. van de Ven, E. K. Broadbent, J. C.
 Benzing, B. L. Chin and C. W. Burkhart (Novellus Systems), *Gas-based
@@ -10634,6 +10658,7 @@ coupled sputtering chamber, a "pasting" step with no coil power coats the
 coil with target material, repeated after a number of wafers, so that
 material sputtered off the coil does not contaminate the film. Used on
 the PVD cluster tool page. Tier: deep dive (patent).
+Also used on the sputter targets material page.
 
 #### Lithography machine pages (first cited there)
 
@@ -12795,6 +12820,132 @@ manufacturing of semiconductor devices*, US 6,159,646 A, priority
 ethyl-3-ethoxy propionate and γ-butyrolactone thinners for edge and
 backside rinse and for rework. Used on the lithography materials page.
 Tier: deep dive.
+
+#### Sputter targets (first cited there)
+
+**SOLSTICE-TARGETS** — Solstice Advanced Materials, *PVD Sputtering
+Targets and Coil Sets*, brochure 7610006-esm-sls-sputtering-targets
+(08/26), accessed 2026-09-13.
+<https://www.solstice.com/content/dam/advancedmaterials/solstice/events/semicon-tw-2026/sputtering-targets.pdf>
+Current specifications for Cu and CuMn (ECAE and diffusion-bonded), Al
+and Al alloy (AlCu and AlSiCu at "99.99% (4N)-99.9995% (5N5)", with grain
+size and precipitate size by design), Ti (4N5, 5N, 5N5), powder-metallurgy
+WTi ("3N~4N8", density "Above 99%"), W, Mo and Ru targets with diffusion,
+"Nano" or indium bonding, and Ti, Cu and Ta coils that "support ion metal
+plasma sputtering technology". Used on the sputter targets material page.
+Tier: cross-check (vendor statement).
+
+**SOLSTICE-HISTORY** — Solstice Advanced Materials, *Solstice Advanced
+Materials: History and Brand Transition*, company page, accessed
+2026-09-13.
+<https://www.solstice.com/us/en/about-us/solstice-advanced-materials-history-and-brand-transition>
+Solstice "was created through the spin-off of the former Advanced
+Materials business of Honeywell International Inc.", announced on
+2024-10-08 and completed on 2025-10-30; the business had worked on
+"electronic materials" among other products. Does not name Honeywell
+Electronic Materials, Inc. Used on the sputter targets material page.
+Tier: cross-check (company statement).
+
+**JX-SEMI-TARGETS** — JX Advanced Metals Corporation, *Sputtering Target
+(PVD) for Semiconductor*, product page, accessed 2026-09-13.
+<https://www.jx-nmm.com/english/products/sputtering/semiconductor_st/>
+Titanium targets "widely used ... such as barrier layers for Al
+interconnects, and hard masks" at "4N5 (Ti 99.995% or above) 5N 5N5",
+with fine-grain and sputter-ready finishes against particles and
+burn-in; 6N copper, tantalum, sintered tungsten with diffusion bonding;
+and Ti, Cu and Ta coils and parts sets for Applied Materials chambers as
+"an officially authorized supplier". Used on the sputter targets material
+page. Tier: cross-check (vendor statement).
+
+**JX-SPUTTERING** — JX Advanced Metals Corporation, *What Is
+Sputtering?*, sputtering targets page, accessed 2026-09-13.
+<https://www.jx-nmm.com/english/products/sputtering/about_sputtering.html>
+A short explanation: the target "is bombarded with argon ions", emits
+atoms that form the film, and "is the object of the ion bombardment when
+sputtering takes place". Used on the sputter targets material page.
+Tier: high-level.
+
+**ASTM-F1512** — ASTM International, *F1512-94(2011) Standard Practice
+for Ultrasonic C-Scan Bond Evaluation of Sputtering Target-Backing Plate
+Assemblies* (withdrawn 2020), catalogue page; read from the Wayback
+Machine capture of 2025-01-14 because the live site refused the request.
+<https://www.astm.org/f1512-94r11.html>,
+<https://web.archive.org/web/20250114231553/https://www.astm.org/f1512-94r11.html>
+The significance statement: the target–backing plate bond "is a critical
+reliability element in a sputter deposition system", needs high thermal
+conductivity and shear strength, and may otherwise fail with
+"catastrophic separation of the target from the backing plate". Used on
+the sputter targets material page. Tier: deep dive (standard).
+
+**ASTM-F3166** — ASTM International, *F3166-16 Standard Specification for
+High-Purity Titanium Sputtering Target Used for Through-Silicon Vias
+(TSV) Metallization* (withdrawn 2023), catalogue page; read from the
+Wayback Machine capture of 2025-01-17.
+<https://www.astm.org/f3166-16.html>,
+<https://web.archive.org/web/20250117070227/https://www.astm.org/f3166-16.html>
+The scope lists target "purity, grain size, inner quality, bonding,
+dimension, and appearance" requirements, with qualification test
+methods. Used on the sputter targets material page. Tier: deep dive
+(standard).
+
+**LEYBOVICH-1993** — A. Leybovich and T. Kuniya, "Effects of aluminum
+sputtering target surface grain relief and crystallographic orientation
+on sputtering I–V characteristics", *Journal of Vacuum Science &
+Technology A* **11**(4), 1553–1557 (1993).
+<https://doi.org/10.1116/1.578504> Single-crystal and polycrystalline
+Al–Si and Al–Cu targets: orientation and surface relief both change the
+magnetron I–V characteristics. Used on the sputter targets material page.
+Tier: deep dive.
+
+**WICKERSHAM-2001** — C. E. Wickersham, J. E. Poole, A. Leybovich and L.
+Zhu, "Measurements of the critical inclusion size for arcing and
+macroparticle ejection from aluminum sputtering targets", *Journal of
+Vacuum Science & Technology A* **19**(6), 2767–2772 (2001).
+<https://doi.org/10.1116/1.1403719> A critical Al₂O₃ inclusion size of
+440 ± 160 µm for arcing in aluminium targets, independent of power
+density. Used on the sputter targets material page. Tier: deep dive.
+
+**WATERMAN-1990** — E. Waterman, J. Dunlop and T. Brat, "Tungsten-titanium
+sputtering target processing effects on particle generation and thin
+film properties for VLSI applications", *Proc. Seventh International
+IEEE VLSI Multilevel Interconnection Conference (VMIC 1990)*,
+pp. 329–331. <https://doi.org/10.1109/VMIC.1990.127887> W–Ti targets made
+three ways: manufacturing technique and purity change film defect
+density. Used on the sputter targets material page. Tier: deep dive.
+
+**PAT-TARGET-TEXTURE-PRAXAIR** — A. C. Perry, P. S. Gilman and J. Van den
+Sype (Praxair S.T. Technology), *Textured-metastable aluminum alloy
+sputter targets and method of manufacture*, US 6,605,199 B2, filed
+2001-11-14, granted 2003-08-12.
+<https://patents.google.com/patent/US6605199B2/en> Aluminium alloy
+targets with at least 35 % (200) orientation and grains below 5 µm,
+made by deforming a blank cooled below −50 °C. Used on the sputter
+targets material page. Tier: deep dive.
+
+**PAT-TARGET-BOND-MRC** — T. J. Hunt and P. S. Gilman (Materials Research
+Corp. and Sony Corp.), *Sputter target/backing plate assembly and method
+of making same*, US 5,836,506 A, filed 1995-04-21, granted 1998-11-17.
+<https://patents.google.com/patent/US5836506A/en> Bonding a target to a
+backing plate by roughening or drilling one bonding surface, then heating
+and pressing in a controlled atmosphere. Used on the sputter targets
+material page. Tier: deep dive.
+
+**PAT-TARGET-BOND-JAPANENERGY** — T. Ohhashi, H. Fukuyo, I. Sawamura, K.
+Nakamura, A. Fukushima and M. Nagasawa (Japan Energy Corp.), *Sputtering
+target assembly having solid-phase bonded interface*, US 5,693,203 A,
+priority 1992-09-29, granted 1997-12-02.
+<https://patents.google.com/patent/US5693203A/en> Low-temperature
+solid-phase bonding of target and backing plate that preserves the
+target's microstructure and orientation. Used on the sputter targets
+material page. Tier: deep dive.
+
+**PAT-TARGET-PROFILE-GENUS** — D. R. Boys (Genus), *Composite sputtering
+target structures and process for producing such structures*,
+US 5,215,639 A, priority 1984-10-09, granted 1993-06-01.
+<https://patents.google.com/patent/US5215639A/en> A target whose back is
+profiled to its known end-of-life erosion shape, bonded to a matching
+backing plate by isostatic pressing. Used on the sputter targets material
+page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
