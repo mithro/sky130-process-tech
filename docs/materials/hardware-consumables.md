@@ -112,9 +112,9 @@ chloride from nitride furnaces "forms a solid condensate at temperatures
 below about 125° C." in exhaust lines and pumps,[^pat-nh4cl-vlsi] and a
 TSMC patent describes it as "a fine powder" that "may be syphoned back
 into the furnace".[^pat-nh4cl-tsmc] Fluorinated gases are potent
-greenhouse gases — NF₃ has "a global warming potential (GWP) 17,200 times
-greater than that of CO2"[^wiki-nf3] and C₂F₆ a GWP of 9200[^wiki-c2f6] —
-and are destroyed by combustion, electric heating or plasma: Fiala et al.
+greenhouse gases — in the IPCC Fourth Assessment Report values that
+Wikipedia tabulates, NF₃ has a 100-year global warming potential (GWP)
+of 17,200 and C₂F₆ one of 12,200[^wiki-gwp] — and are destroyed by combustion, electric heating or plasma: Fiala et al.
 modelled point-of-use plasma abatement between the turbomolecular and
 backing pumps;[^fiala-1999] Hu et al. studied NF₃ decomposition in
 point-of-use "wet-thermal-wet abatement" of PECVD chamber
@@ -382,9 +382,9 @@ cards are not public.
 
 ### High-level understanding
 
-* Wikipedia, *Probe card*, *Nitrogen trifluoride* and *Hexafluoroethane* —
-  probe cards and the greenhouse potential of clean and etch
-  gases.[^wiki-probecard][^wiki-nf3][^wiki-c2f6]
+* Wikipedia, *Probe card*, *Nitrogen trifluoride* and *Global warming
+  potential* — probe cards, NF₃ chamber cleaning and the greenhouse
+  potential of clean and etch gases.[^wiki-probecard][^wiki-nf3][^wiki-gwp]
 * Wikipedia, *ISO 14000 series* — the environmental-management standards
   and what ISO 14001 and ISO 14004 each cover.[^wiki-iso14000]
 * Sherer, *Semiconductor Industry: Wafer Fab Exhaust Management* —
@@ -576,8 +576,10 @@ cards are not public.
     <https://patents.google.com/patent/US20040069224A1/en>
 [^wiki-nf3]: Wikipedia, *Nitrogen trifluoride*.
     <https://en.wikipedia.org/wiki/Nitrogen_trifluoride>
-[^wiki-c2f6]: Wikipedia, *Hexafluoroethane*.
-    <https://en.wikipedia.org/wiki/Hexafluoroethane>
+[^wiki-gwp]: Wikipedia, *Global warming potential*, table "Earlier
+    values from 2007" (IPCC Fourth Assessment Report, 100-year values),
+    accessed 2026-09-13.
+    <https://en.wikipedia.org/wiki/Global_warming_potential>
 [^hu-2018]: S.-C. Hu, A. Shiue, W.-T. Tseng and G. Leggett,
     "Perfluorocompound Emissions Control and Kinetic Characteristics in
     Point-of-Use Wet-Thermal-Wet Abatement of Plasma-Enhanced Chemical

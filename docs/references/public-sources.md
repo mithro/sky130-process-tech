@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1594
+written page has exactly one entry here; the inventory holds 1595
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -10199,7 +10199,6 @@ plasma etcher page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Hexafluoroethane> C₂F₆ as an etchant and
 its global warming potential of 9200. Used on the dielectric and nitride
 plasma etcher page. Tier: high-level.
-Also used on the hardware consumables material page.
 
 **CHRISTIE-1994** — R. Christie, S. Burns, V. S. Grewal and B. Spuler,
 "Sub 0.5 μm TCP metal etching in the ASTC", *Proceedings of 1994
@@ -13570,6 +13569,14 @@ gives "ISO 14001 Environmental management systems - Requirements with
 guidance for use" and "ISO 14004 Environmental management systems -
 General guidelines on implementation". Used on the hardware consumables
 material page. Tier: high-level.
+
+**WIKI-GWP** — Wikipedia, *Global warming potential*, accessed
+2026-09-13. <https://en.wikipedia.org/wiki/Global_warming_potential>
+Tables of GWPs: IPCC Sixth Assessment Report values at 20, 100 and 500
+years, and "Earlier values from 2007" from the IPCC Fourth Assessment
+Report at 100 years, in which hexafluoroethane (PFC-116) is 12,200 and
+nitrogen trifluoride 17,200. Used on the hardware consumables material
+page. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
