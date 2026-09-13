@@ -253,7 +253,9 @@ practice or supplier and literature statements.
   pages for a separate treatment line for metal-laden acidic
   waste;[^txt-07] Lai and Lin treated CMP waste water from semiconductor fabrication by
   electrocoagulation.[^lai-2003] Ultrapure water and waste treatment are
-  separate classes in the {ref}`materials index <materials-index>`.
+  described on the {ref}`ultrapure water <material-ultrapure-water>` and
+  {ref}`hardware consumables and abatement <material-hardware-consumables>`
+  pages.
 * **Tungsten defects.** Tungsten-filled micro-scratches can short lines;
   Ollendorf, Cabral and Fuller removed them with a post-CMP tungsten
   plasma clean in a DRAM fab.[^ollendorf-2004]
@@ -302,8 +304,8 @@ not public.
 * {ref}`machine-post-cmp-cleaner` — brushes and post-CMP clean chemistry.
 * {ref}`material-wet-chemicals` — hydrogen peroxide, HF and ammonia as
   bulk chemicals.
-* {ref}`materials-index` — all consumable classes, including ultrapure
-  water.
+* {ref}`material-ultrapure-water` — the water of the polish and clean.
+* {ref}`materials-index` — all consumable classes.
 
 ## References
 
