@@ -142,9 +142,11 @@ typically:
   names "Lumonics Superclean" under scribe.[^skw-01] Strength: strong
   (a SkyWater statement), though the page does not say which step uses
   it.
-* **Unpatterned-wafer inspection — KLA-Tencor SP1.** A SkyWater Defect
+* **Unpatterned-wafer inspection — KLA-Tencor SP1 (our reading).** A SkyWater Defect
   Technician posting reads "General operation of semiconductor defect
-  metrology tools: SEM/AIT/KLA/SP1/EV300/1X".[^job-01] Strength: medium
+  metrology tools: SEM/AIT/KLA/SP1/EV300/1X";[^job-01] we read "SP1" as
+  KLA-Tencor's Surfscan SP1, and the posting expands none of the
+  abbreviations. Strength: medium
   (a job listing retrieved 2026-08-30; listings expire).
 * **Pre-furnace clean — DNS or FSI Mercury wet bench.** SkyWater's
   capability list names "DNS wet bench industry standard HF/SC1/SC2"
@@ -287,8 +289,8 @@ any product to a step.
 * **Wafer vendor at the time of development.** The 2015 Cypress notice
   shows GlobalWafers being *added* alongside "other qualified
   suppliers";[^cyp-06] who the original supplier was is not public.
-* **Incoming-inspection tooling.** The KLA SP1 reference is a job
-  posting,[^job-01] and the Lumonics scribe[^skw-01] is not tied to any
+* **Incoming-inspection tooling.** The KLA SP1 is our reading of a job
+  posting that expands none of its abbreviations,[^job-01] and the Lumonics scribe[^skw-01] is not tied to any
   step.
 
 <!-- footnotes -->

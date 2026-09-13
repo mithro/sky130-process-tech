@@ -96,8 +96,9 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
   strong for existence.
 * **DNS wet bench / FSI Mercury**.[^skw-01] Strength: strong for
   existence.
-* **KLA-Tencor SP1** unpatterned surface scanner.[^job-01] Strength:
-  medium.
+* **KLA-Tencor SP1** unpatterned surface scanner, our reading of "SP1"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 

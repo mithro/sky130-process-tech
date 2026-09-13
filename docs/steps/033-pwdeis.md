@@ -103,7 +103,9 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
   pre-anneal RCA clean. Strength: strong for existence; the SC-2
   capability is explicitly listed only for these two tools, which makes
   them the natural pre-anneal clean stations (inference).
-* **KLA-Tencor SP1** surface scanner.[^job-01] Strength: medium.
+* **KLA-Tencor SP1** surface scanner, our reading of "SP1"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 

@@ -400,8 +400,8 @@ limits and marking scheme are not public.
 * Whether SKY130 wafers are marked by the vendor, at Bloomington or both,
   and to which SEMI mark standard, is not public.
 * No incoming surface scanner, flatness or resistivity gauge or wafer
-  sorter is named on the capabilities page; the SP1 rests on a job
-  posting.[^skw-01][^job-01]
+  sorter is named on the capabilities page; the SP1 reading rests on a
+  job posting.[^skw-01][^job-01]
 * The incoming limits for particles, haze and COPs on the SKY130 wafer
   are not public.
 * The model list above is incomplete: it covers the Tencor/KLA-Tencor

@@ -97,7 +97,9 @@ An industry-generic heavy-implant-resist strip for a 200 mm,
   strong for existence.
 * **DNS wet bench / FSI Mercury**.[^skw-01] Strength: strong for
   existence.
-* **KLA-Tencor SP1 / AIT**.[^job-01] Strength: medium.
+* **KLA-Tencor SP1 / AIT**, our reading of "SP1" and "AIT"
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  Strength: medium.
 
 ## Resources required
 
