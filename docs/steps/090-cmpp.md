@@ -38,8 +38,8 @@ The {ref}`POC <step-059>` and {ref}`IOX45 <step-063>` pages read the
 cap as the polish stop; we adopt that reading here and mark it as an
 inference. On it, the PDK's "Pre-LI ILD thickness" of 0.5 µm[^pdk-03]
 is the cap-plus-cap-oxide-plus-residual-glass thickness between the
-poly top and the {term}`local interconnect`, and the 0.4299 µm "over field
-poly" label of the stack diagram[^pdk-04] is the same interval drawn
+poly top and the {term}`local interconnect`, and the 0.4299 µm label that the stack diagram draws from the
+field-poly top to the `li` bottom[^pdk-04] is the same interval drawn
 not to scale.
 
 ## Step category
