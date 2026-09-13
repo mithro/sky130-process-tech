@@ -231,7 +231,10 @@ page.
   for nitride over-etch, CH₃F;[^regis-1997][^allwin-rainbow-4500] CHF₃
   "is used in the semiconductor industry in plasma etching of silicon
   oxide and silicon nitride".[^wiki-chf3] Perfluorocarbons are potent
-  greenhouse gases: C₂F₆ has "a global warming potential (GWP) of 9200".[^wiki-c2f6]
+  greenhouse gases: C₂F₆ has "a global warming potential (GWP) of 9200",
+  a figure Wikipedia's *Hexafluoroethane* article gives without naming an
+  IPCC assessment;[^wiki-c2f6] the table of fifth-assessment values in
+  its *Fluorocarbon* article gives 11,100.[^wiki-pfc]
 * **Backside cooling.** Helium between wafer and chuck; the Rainbow
   45XX configuration includes a controller "for Helium Backside
   cooling",[^allwin-rainbow-4500] and Applied's MERIE patent a
@@ -514,6 +517,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
     <https://en.wikipedia.org/wiki/Fluoroform>
 [^wiki-c2f6]: Wikipedia, *Hexafluoroethane*.
     <https://en.wikipedia.org/wiki/Hexafluoroethane>
+[^wiki-pfc]: Wikipedia, *Fluorocarbon*.
+    <https://en.wikipedia.org/wiki/Fluorocarbon>
 [^lee-chen-1983]: Y. H. Lee and M.-M. Chen, "Silicon etching mechanism
     and anisotropy in CF₄+O₂ plasma", *Journal of Applied Physics*
     **54**(10), 5966–5973 (1983). <https://doi.org/10.1063/1.331774>

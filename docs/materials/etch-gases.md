@@ -23,7 +23,7 @@ its fab and which SKY130 steps name them. The etch mechanisms are on the
 | What they do | Supply halogen atoms and ions that form volatile products with the film; ion bombardment and reactive gas together etch far faster than either alone.[^coburn-1979] |
 | Gases in the SKY130 steps | CF₄, CHF₃, C₂F₆, C₄F₈, CH₃F, CH₂F₂, CO, CH₄, SF₆, NF₃, HBr, Cl₂, BCl₃ (step-page readings). |
 | Grades | SEMI C3.40 (carbon tetrafluoride) and C3.24 (sulphur hexafluoride).[^semi-c3-40][^semi-c3-24] |
-| Climate | CF₄ "persists in the atmosphere for 50,000 years";[^wiki-cf4] NF₃ has "a global warming potential (GWP) 17,200 times greater than that of CO2";[^wiki-nf3] SF₆ "is the most potent greenhouse gas".[^wiki-sf6] |
+| Climate | CF₄ "persists in the atmosphere for 50,000 years";[^wiki-cf4] NF₃ has "a global warming potential (GWP) 17,200 times greater than that of CO2" (a fourth-assessment value);[^wiki-nf3] SF₆ "is the most potent greenhouse gas".[^wiki-sf6] |
 | Hazards | NIOSH IDLH "10 ppm" for chlorine, "30 ppm" for hydrogen bromide and "1000 ppm" for nitrogen trifluoride.[^niosh-cl2][^niosh-hbr][^niosh-nf3] |
 | SkyWater evidence | "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2"; "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2"; "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2"; CF4 on two ashers;[^skw-01] fluorinated-gas emissions reported to the EPA for the Bloomington fab[^epa-ghgrp-skywater] |
 | SKY130 steps | 64 steps; see {ref}`SKY130 steps that use this class <material-etch-gases-steps>` |
@@ -187,7 +187,9 @@ values of about 47,100 for perfluorocarbons, 6,110 for
 hydrofluorocarbons, 2,300 for SF₆, 2,140 for other fully fluorinated
 gases and 1,440 for NF₃, against about 101,800 for perfluorocarbons in
 2011;[^epa-ghgrp-skywater] the programme expresses emissions in metric
-tons of CO₂ equivalent.[^epa-ghgrp-fgas] The tables do not give the
+tons of CO₂ equivalent, computed with GWPs "generally based on the
+IPCC’s Fourth Assessment Report (AR4)", with fifth-assessment values for
+fluorinated gases that have none in AR4.[^epa-ghgrp-fgas] The tables do not give the
 individual gases, processes or tools, and heat-transfer fluids may
 account for some of the fully fluorinated total (our reading).
 
@@ -278,11 +280,17 @@ safety data and regulatory context.
   with leak detection (industry practice).
 * **Greenhouse gases.** Lifetimes and warming potentials are long and
   large: CF₄ "has an atmospheric lifetime of 50,000 years";[^wiki-cf4]
-  Wikipedia's extract of the IPCC fifth assessment gives 100-year GWPs of
-  6630 for CF₄, 11,100 for C₂F₆ and 9540 for c-C₄F₈;[^wiki-pfc] CHF₃'s is
-  given as "14,800 for HFC-23",[^wiki-chf3] NF₃'s as 17,200[^wiki-nf3]
-  and SF₆'s as "23,500 times greater" than CO₂'s.[^wiki-sf6] The
-  figures differ between assessments.
+  Wikipedia's extract of the IPCC fifth assessment (AR5) gives 100-year
+  GWPs of 6630 for CF₄, 11,100 for C₂F₆ and 9540 for c-C₄F₈;[^wiki-pfc]
+  Wikipedia gives CHF₃'s as "14,800 for HFC-23" and NF₃'s as 17,200, both
+  citing the fourth assessment (AR4),[^wiki-chf3][^wiki-nf3] and SF₆'s as
+  "23,500 times greater" than CO₂'s, citing AR5, beside the AR4 figure of
+  23,900.[^wiki-sf6] Values differ between assessments: Wikipedia's
+  *Hexafluoroethane* article gives C₂F₆ "a global warming potential
+  (GWP) of 9200" without naming an assessment, the figure the
+  {ref}`dielectric etcher page <machine-plasma-etcher-dielectric>`
+  quotes.[^wiki-c2f6] The EPA's CO₂-equivalent figures quoted on this
+  page rest on GWPs generally based on AR4 (see *At SkyWater*).[^epa-ghgrp-fgas]
 * **Reporting and abatement.** Electronics facilities above the
   programme's threshold report fluorinated-gas emissions by process type
   and "Controlled emissions of GHGs from abatement systems, if
