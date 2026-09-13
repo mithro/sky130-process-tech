@@ -57,8 +57,8 @@ from:
 8. General 130 nm-era process references: textbooks, ITRS roadmaps,
    review papers, encyclopaedia articles, and the papers, patents and
    vendor pages gathered module by module as the step pages were
-   written (sections 8.5 to 8.17, the last covering the sky130B ReRAM
-   module).
+   written (sections 8.5 to 8.18: 8.17 covers the sky130B ReRAM
+   module, 8.18 the SkyWater PDK raw measurement data and test tile).
 9. Evidence about specific tools at SkyWater, weighed by strength.
 10. Gaps and open questions: what the public record does not say.
 
