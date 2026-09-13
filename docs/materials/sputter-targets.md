@@ -5,10 +5,13 @@ A sputter target is the block of metal that a physical vapour deposition
 ({term}`PVD`) chamber erodes to coat the wafer: argon ions from a plasma
 strike it, and the atoms they knock out condense as a film. Each chamber
 holds one target, usually bonded to a cooled backing plate, and erodes
-it wafer by wafer until it is replaced. SKY130's metal back end is sputtered from three:
-titanium, which with nitrogen in the chamber also gives titanium nitride;
-aluminium–copper for the wiring; and titanium–tungsten for caps and
-capacitor plates. This page describes the class in general, lists
+it wafer by wafer until it is replaced. On the step pages' readings,
+SKY130's metal back end is sputtered from three targets: titanium, which
+with nitrogen in the chamber also gives titanium nitride;
+aluminium–copper for the wiring; and titanium–tungsten for the stack caps
+and the capacitor plates. SkyWater lists films of all three
+metals;[^skw-01] which cap SKY130 lots use is not public (see the
+process-integration notes below). This page describes the class in general, lists
 representative targets and the purities and structures they are made to,
 and then says what SkyWater has published about targets and sputtered
 films at its fab and which SKY130 steps name them. The sputtering tool is
@@ -18,9 +21,9 @@ film physics on the {ref}`deposition category page <category-deposition>`.
 | | Sputter targets |
 |---|---|
 | What they do | Supply the atoms of a sputtered film: "A sputtering target is the object of the ion bombardment when sputtering takes place."[^jx-sputtering] |
-| Materials in the SKY130 steps | Titanium (also sputtered {term}`reactively <reactive sputtering>` to TiN), aluminium–copper, titanium–tungsten; a Cypress report for the fab gives "Metal 1: 100A Ti / 3200A Al-0.5%Cu / 300A TiW".[^cyp-qtp-113005] |
+| Materials in the SKY130 steps | Titanium (also sputtered {term}`reactively <reactive sputtering>` to TiN), aluminium–copper, titanium–tungsten (step-page readings); a report by Cypress, which ran the fab before SkyWater,[^sec-01] gives "Metal 1: 100A Ti / 3200A Al-0.5%Cu / 300A TiW".[^cyp-qtp-113005] |
 | Purity | Titanium "4N5 (Ti 99.995% or above) 5N 5N5";[^jx-semi-targets] Al–Cu and Al–Si–Cu "99.99% (4N)-99.9995% (5N5)".[^solstice-targets] |
-| Microstructure | Grain size and "crystallographic orientation and surface relief affect the I–V characteristics" of aluminium alloy targets.[^leybovich-1993] |
+| Microstructure | Grain size and "crystallographic orientation and surface relief affect the I–V characteristics" of aluminium targets.[^leybovich-1993] |
 | Construction | Monolithic or bonded to a backing plate; "The bond between sputtering target and its supporting backing plate is a critical reliability element in a sputter deposition system".[^astm-f1512] |
 | Wear and defects | A "'racetrack' erosion profile may appear on the surface of the target";[^wiki-sputter] "Arcing during sputtering is a significant cause of defect generation".[^wickersham-2001] |
 | SkyWater evidence | "AMAT PVD Metal": "Aluminum both pure and Cu doped", "TiW", "ESC TiN", "Imp TiN", "Collimated Ti";[^skw-01] "high-purity metals for film deposition processes"; Honeywell and JX Metals as target suppliers[^sec-01][^sec-02] |
@@ -59,9 +62,10 @@ processes.[^berg-2005] In an ionised chamber the nitrogen reaching the
 bottom of a hole matters as well; Mao and Hopwood's model predicts
 "nitrogen deficient films at the bottom of trenches under metal-mode
 deposition conditions".[^mao-2004] Titanium for contacts is also
-sputtered through a collimator, which captures the off-normal flux:
-"Atoms whose trajectory is more than 5° from normal are deposited on the
-inner surfaces of the collimators".[^rossnagel-1991] Ionised-metal-plasma
+sputtered through a collimator, which captures the off-normal flux; in
+Rossnagel et al.'s lift-off system, "Atoms whose trajectory is more than
+5° from normal are deposited on the inner surfaces of the
+collimators".[^rossnagel-1991] Ionised-metal-plasma
 chambers add a coil of the target metal inside the chamber; one supplier
 states that in Applied Materials' 200 mm and 300 mm equipment "coils and
 parts sets of the same material as the target are used inside the
@@ -79,10 +83,13 @@ precipitates, and target makers control them: one supplier lists Al–Cu
 targets with no precipitates in a monolithic, fine-grained design, and
 precipitates below 5 microns in a standard diffusion-bonded
 design.[^solstice-targets] The target's grain structure affects the
-discharge: Leybovich and Kuniya tested "three polycrystalline Al-1 wt %
-Cu targets with grain sizes of 0.25, 0.95, and 5.5 mm" and found "that
-both crystallographic orientation and surface relief affect the I–V
-characteristics".[^leybovich-1993] A Praxair patent describes aluminium
+discharge: Leybovich and Kuniya compared aluminium single crystals, some
+machined to mimic grain relief, with "three polycrystalline Al-1 wt % Cu
+targets with grain sizes of 0.25, 0.95, and 5.5 mm". The single crystals
+showed "that both crystallographic orientation and surface relief affect
+the I–V characteristics", and among the polycrystalline targets the
+lowest target voltage came with the least (111) orientation and the
+0.95 mm grain size.[^leybovich-1993] A Praxair patent describes aluminium
 alloy targets with "a grain orientation ratio of at least 35 percent
 (200) orientation" and "a grain size of less than 5 μm" that stay
 "stable during sputtering".[^pat-target-texture-praxair] Inclusions
@@ -146,8 +153,9 @@ supplier statements, not the targets SkyWater buys.
 * **Aluminium–copper.** Solstice lists "AlCu" and "AlSiCu" at "99.99%
   (4N)-99.9995% (5N5)" purity, in monolithic and diffusion-bonded
   designs, and notes that "Al alloy composition can be tuned to customer
-  request".[^solstice-targets] The Cypress reports for the fab give the
-  alloy as "Al-0.5%Cu" and "Al 0.5% Cu".[^cyp-qtp-113005][^cyp-qtp-123907]
+  request".[^solstice-targets] The Cypress reports for the fab (see
+  *At SkyWater*) give the alloy as "Al-0.5%Cu" and "Al 0.5%
+  Cu".[^sec-01][^cyp-qtp-113005][^cyp-qtp-123907]
 * **Titanium–tungsten.** Powder-metallurgy WTi at "3N~4N8" purity and
   density "Above 99%", with diffusion, "Nano" or indium
   bonding;[^solstice-targets] 10 wt.% titanium in the Hitachi Metals
@@ -196,8 +204,12 @@ business that worked on "electronic materials";[^solstice-history] its
 current brochure offers the titanium, aluminium alloy and WTi targets
 listed above.[^solstice-targets] The Solstice pages do not name
 Honeywell Electronic Materials, Inc., and neither Solstice nor JX names
-SkyWater. For the films themselves, a 2013 Cypress qualification report
-for an S8 product from the fab gives "Metal 1: 100A Ti / 3200A
+SkyWater. For the films themselves, SkyWater's S-1 states that "Before
+we began independent operations, our fab was owned and operated by
+Cypress Semiconductor Corporation, or Cypress, as a captive
+manufacturing facility for 20 years",[^sec-01] and Cypress's documents
+name that fab "Cypress Minnesota" and "CMI (Fab 4)".[^cyp-pin145273][^cyp-qtp-113005] A 2013 Cypress
+qualification report for an S8 product from the fab gives "Metal 1: 100A Ti / 3200A
 Al-0.5%Cu / 300A TiW",[^cyp-qtp-113005] and a 2014 notification
 announced aligning "our internal Cypress Minnesota process, Titanium
 Tungsten (TiW) based metal stack, with the industry-wide Best Known Method
@@ -260,8 +272,8 @@ statements or industry practice.
   cooled backing plate, and bonds are inspected ultrasonically; ASTM
   F1512 standardised that inspection until its withdrawal in
   2020.[^astm-f1512]
-* **Process kits.** Collimators collect the metal that misses the
-  wafer,[^rossnagel-1991] coils are made of the target
+* **Process kits.** Collimators collect the off-normal metal
+  flux,[^rossnagel-1991] coils are made of the target
   metal[^jx-semi-targets] and pasted with it,[^pat-imp-coil-amat] and
   shields, coils and collimators are replaced on a schedule tied to
   target life (industry practice).
@@ -344,7 +356,8 @@ sputtering recipes are not public.
 * JX Advanced Metals, *Sputtering Target (PVD) for Semiconductor* and
   *What Is Sputtering?* — titanium targets, coils and parts
   sets.[^jx-semi-targets][^jx-sputtering]
-* Applied Materials, *Interconnect Systems & Modules* (2000) — the IMP
+* Applied Materials, *Interconnect Systems & Modules* (product page,
+  Wayback capture of 2000-08-15) — the IMP
   chamber's target and coil as consumables.[^amat-ism-2000]
 
 ### High-level understanding
@@ -451,9 +464,9 @@ sputtering recipes are not public.
     2026-09-13.
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
-    statement), filed 2021-03-22; "Raw materials." run-in paragraph
-    under "Manufacturing"; read from a Wayback Machine copy on
-    2026-09-13.
+    statement), filed 2021-03-22; the "Business" overview and the "Raw
+    materials." run-in paragraph under "Manufacturing"; read from a
+    Wayback Machine copy on 2026-09-13.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
     filed 2024; "Raw materials" paragraph; read from a Wayback Machine
