@@ -315,9 +315,10 @@ silicon trench etch, a liner oxidation, an oxide fill, a polish that
 stops on the nitride, and the nitride strip ({ref}`STINITE <step-005>`
 to {ref}`NS19 <step-013>`). The step list places the deep N-well mask,
 implant and strip ({ref}`DNM <step-007>` to {ref}`DNIS <step-009>`)
-between the trench etch and the liner oxidation, so the implant enters
-through open trenches and is driven by the heat of the isolation module;
-the {ref}`DNM <step-007>` page sets out why that order may have been
+between the trench etch and the liner oxidation. On the {ref}`DNM <step-007>`
+page's reading, the implant therefore enters through open trenches and is
+driven by the heat of the isolation module (inference); that page also sets
+out why that order may have been
 chosen, as inferences. No trench depth is public; about 0.26 µm is the
 {ref}`STIE <step-006>` page's reading of the stack diagram.
 
@@ -332,8 +333,8 @@ a {term}`block mask` (the PDK has no drawn P-well layer)
 ({ref}`PWBM <step-026>` to {ref}`PWIS <step-029>`), and the lightly
 doped P-well of the 20 V drain-extended devices
 ({ref}`PWDEM <step-030>` to {ref}`PWDEIS <step-033>`). A single anneal,
-{ref}`RTAI <step-034>`, activates all ten before any gate dielectric is
-grown. The PDK publishes the resulting well profiles, not the implants,
+{ref}`RTAI <step-034>`, read on its page as activating all ten, comes
+before any gate dielectric is grown. The PDK publishes the resulting well profiles, not the implants,
 so the two-implant wells are read as chained {term}`retrograde wells
 <retrograde well>` (inference).
 
@@ -355,13 +356,13 @@ oxide is grown over every active area ({ref}`GOX100 <step-043>`); the
 low-voltage oxide mask opens the 1.8 V regions ({ref}`LVOM <step-044>`),
 the 1.8 V NMOS channel implant, on this reference's reading, goes in
 through the thick oxide ({ref}`NCHI <step-045>`) and the oxide is stripped there
-({ref}`GOXETCH <step-046>`); the thin oxide is then grown, thickening
-the thick oxide slightly at the same time ({ref}`LVGOX <step-047>`).
+({ref}`GOXETCH <step-046>`); the thin oxide is then grown, on the {ref}`LVGOX <step-047>` page's reading
+thickening the thick oxide slightly at the same time.
 SkyWater lists "Nitrided gate oxide" among its special
 modules;[^skw-01] whether SKY130 uses it is not stated.
 
-**Poly gate and poly resistors.** One undoped amorphous-silicon film is
-deposited ({ref}`SAGD <step-048>`) and doped *before* it is patterned:
+**Poly gate and poly resistors.** One silicon film, read on the {ref}`SAGD <step-048>`
+page as undoped amorphous silicon (inference), is deposited and doped *before* it is patterned:
 an n-type gate implant everywhere except the resistor bodies
 ({ref}`RPM <step-049>`, {ref}`P1I <step-050>`), then p-type implants
 into the 300 Ω/sq and 2000 Ω/sq resistor bodies through two further
@@ -382,8 +383,9 @@ boron {term}`halo` ({ref}`NTM <step-064>` to {ref}`ASTIS <step-067>`);
 the 5 V-class NMOS, with a steeply tilted arsenic tip
 ({ref}`HVNTM <step-068>` to {ref}`HVASTIS <step-070>`); and the SONOS
 memory transistors, with a lightly doped tip and a halo
-({ref}`LDNTM <step-071>` to {ref}`LDASTIS <step-074>`). A
-{term}`rapid thermal anneal <RTA>` activates all five implants ({ref}`TIPRTAD <step-075>`). The step
+({ref}`LDNTM <step-071>` to {ref}`LDASTIS <step-074>`). An anneal, read as a
+{term}`rapid thermal anneal <RTA>`, then activates all five implants
+({ref}`TIPRTAD <step-075>`; inference). The step
 list has no P-tip mask or implant; where the PMOS extension is formed is
 one of the open questions below.
 
@@ -394,7 +396,7 @@ on poly ({ref}`NPCM <step-078>`, {ref}`NPCME <step-079>`, the
 {term}`nitride cut`); an oxide is deposited, read as the PDK's "oxide
 spacer" ({ref}`SPOX <step-080>`); the P⁺ source/drain mask carries, on this
 reference's reading, two implants and the N⁺ mask one ({ref}`PSDM <step-081>` to
-{ref}`NSDIS <step-087>`); and a rapid thermal anneal activates them
+{ref}`NSDIS <step-087>`); and an anneal read as a rapid thermal activation follows
 ({ref}`RTAD <step-088>`). Here the front end, as this reference divides
 the flow, ends.
 
@@ -604,7 +606,7 @@ sources, in the order in which the thermal steps occur.
 
 1. **Isolation.** The pad and liner oxidations ({ref}`BOX <step-002>`,
    {ref}`LINOX <step-010>`) and the nitride hard mask
-   ({ref}`ISONIT <step-003>`) are furnace steps: thermal oxidation runs
+   ({ref}`ISONIT <step-003>`) are read on their step pages as furnace steps: thermal oxidation runs
    at 800–1200 °C[^wiki-thox] and {term}`LPCVD` nitride at roughly
    700–800 °C (typical value),[^txt-02] a tube-furnace process that
    Wikipedia describes as working "at rather high
@@ -621,9 +623,10 @@ sources, in the order in which the thermal steps occur.
    750–950 °C ({ref}`GOX100 <step-043>`,
    {ref}`LVGOX <step-047>`);[^txt-01] in Cypress's integration patent the
    logic gate oxidation also re-oxidises the ONO.[^pat-03]
-5. **Gate film.** Silicon deposited below about 580 °C is amorphous, as
-   SKY130's gate film is described ({ref}`SAGD <step-048>`; typical
-   value);[^voutsas-1992] the caps and the post-etch re-oxidation
+5. **Gate film.** Silicon deposited below about 580 °C is amorphous
+   (typical value);[^voutsas-1992] the {ref}`SAGD <step-048>` page reads
+   SKY130's gate film as amorphous from SkyWater's "LPCVD polysilicon
+   (undoped), both amorphous and crystalline"[^skw-01] (inference); the caps and the post-etch re-oxidation
    ({ref}`GATENIT <step-058>`, {ref}`POC <step-059>`,
    {ref}`IOX45 <step-063>`) follow, at conditions that are not public.
 6. **Junction anneals.** Rapid thermal anneals follow the tip and
