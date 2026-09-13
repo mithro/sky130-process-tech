@@ -223,7 +223,8 @@ reading is used throughout these pages and is marked as an inference.
 * Bossung, SPIE 1977 — the exposure–focus process window.[^bossung-1977]
 * Levinson, *Principles of Lithography* — resist processing and
   overlay.[^levinson-2005]
-* ITRS 2001, *Lithography* — tool classes by layer.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 
 ## Open questions
 

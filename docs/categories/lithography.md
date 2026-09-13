@@ -79,9 +79,11 @@ Mercury arc lamps supplied the g-line (436 nm) and i-line (365 nm) used
 through the 1980s and early 1990s; excimer lasers then took over, KrF at
 248 nm and ArF at 193 nm.[^wiki-litho][^wiki-excimer] A 130 nm-era fab
 typically runs a *mixed* line: KrF scanners for the critical layers
-(active, poly, contact, metal 1, via 1) and cheaper i-line steppers for
+(active, poly, contact, metal 1, via 1) and older i-line steppers for
 the non-critical implant-block, upper-metal and pad layers, whose
-features are 0.5 µm or larger. Which of SKY130's 36 masks are on which
+features are a few hundred nanometres or larger (industry practice:
+ASML describes older systems that "migrate to the lithography of choice
+for less critical layers"[^asml-30]). Which of SKY130's 36 masks are on which
 tool is not public. The process-steps sheet records a mask type for
 three plates only, which we read as embedded attenuated phase-shift
 masks for vias 2 and 3 and a binary mask for via 4, all for 248 nm

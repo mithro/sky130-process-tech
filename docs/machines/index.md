@@ -492,8 +492,8 @@ Notes on the table:
   multi-station CMP system of the Mirra.[^pat-cmp-mirra]
 * Keithley Instruments, *Series S600 Parametric Test Systems* — the
   parametric tester class used for electrical test.[^keithley-s600]
-* ITRS 2001, *Lithography* — the roadmap the mask pages use to allocate
-  layers to i-line and DUV exposure.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 
 (machines-inconsistencies)=
 ## Open questions and inconsistencies

@@ -233,8 +233,8 @@ mostly chrome. Neither tone nor resist is stated publicly.
   mask layer, however relaxed, is qualified against.[^bossung-1977]
 * Levinson, *Principles of Lithography*, 4th ed. — mask tone, resist
   polarity and overlay in one reference.[^levinson-2019]
-* ITRS 2001, *Lithography* — tool classes by layer at the
-  node.[^itrs-03]
+* ITRS 2001, *Lithography* — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 
 ## Open questions
 
