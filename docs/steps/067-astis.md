@@ -111,7 +111,7 @@ practice).[^txt-02]
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm single-wafer: Gasonics
+* **Downstream plasma asher**, 200 mm single-wafer: GaSonics
   (Novellus) Aura/PEP, Mattson Aspen, Axcelis/Fusion ES series, PSK
   ({ref}`category-strip`).
 * **Batch wet bench** with SPM, SC-1, SC-2 tanks and a rinser/dryer
@@ -120,7 +120,7 @@ practice).[^txt-02]
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia RF microwave and Mattson Aspen 2 ashers** —
+* **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** —
   all named on SkyWater's facilities page with their gases and
   temperatures.[^skw-01] Strength: **strong** for existence; the
   assignment of this strip to any one of them is an inference. The
@@ -165,8 +165,8 @@ practice).[^txt-02]
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Gasonic PEP; Iridia; Mattson
-  Aspen2; Akrion Gamma; DNS and FSI Mercury benches.[^skw-01]
+* SkyWater, *Facilities & Capabilities* — GaSonics PEP; Iridia; Mattson
+  Aspen II; Akrion Gamma; DNS and FSI Mercury benches.[^skw-01]
 * SkyWater PDK, *Criteria & Assumptions* — photoresist thickness
   1.14 µm; 0.3 µm resist and 40° angle for the HV tip that
   follows.[^pdk-03]

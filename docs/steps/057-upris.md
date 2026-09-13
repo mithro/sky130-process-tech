@@ -95,7 +95,7 @@ clean, for a 200 mm, 130 nm-era fab:
 
 ## Machines typically used
 
-* **Downstream plasma asher** (Gasonics Aura/PEP, Mattson Aspen,
+* **Downstream plasma asher** (GaSonics Aura/PEP, Mattson Aspen,
   Axcelis/Fusion ES, PSK).
 * **Batch wet bench** with SPM, SC-1, SC-2 and a Marangoni dryer
   (Akrion, DNS/SCREEN, SCP), or **spray processor** (FSI Mercury).
@@ -104,7 +104,7 @@ clean, for a 200 mm, 130 nm-era fab:
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia and Mattson Aspen 2 ashers.**[^skw-01]
+* **GaSonics PEP, Iridia and Mattson Aspen II ashers.**[^skw-01]
   Strength: **strong** for existence; assignment not stated.
 * **DNS wet bench or FSI Mercury** ("industry standard HF/SC1/SC2")
   for a full RCA sequence, or the **Akrion Gamma** bench.[^skw-01]

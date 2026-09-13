@@ -130,7 +130,7 @@ fab (SKY130's recipe is not public):
    windows[^pdk-periph] dominate the uniformity, as Gottscho,
    Jurgensen and Vitkavage analysed.[^gottscho-1992]
 7. **Strip and clean.** In-situ O₂ plasma or a downstream asher
-   (SkyWater lists Gasonics PEP, Iridia and Mattson Aspen 2[^skw-01])
+   (SkyWater lists GaSonics PEP, Iridia and Mattson Aspen II[^skw-01])
    for the resist, then SPM/SC-1 on a wet bench;[^wiki-rca] we infer
    no HF, because the thin oxide over the source/drain is still needed
    as the implant screen and the PSG/CMP module has not yet begun.
@@ -157,7 +157,7 @@ fab (SKY130's recipe is not public):
 * **AMAT DPS II** ("HBR, Cl2, NF3, CF4, CHF3, O2 – gate, trench,
   W/WN"[^skw-01]) — carries CF₄/CHF₃ and, being the gate etcher, has
   the poly-stop chemistries in hand. Strength: medium.
-* **Ashers — Gasonics PEP, Iridia, Mattson Aspen 2; wet benches —
+* **Ashers — GaSonics PEP, Iridia, Mattson Aspen II; wet benches —
   Akrion Gamma, DNS, FSI Mercury.**[^skw-01] Strength: strong for
   existence.
 

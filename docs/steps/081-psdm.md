@@ -153,7 +153,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 * **ASML i-line stepper / i-line scanner.** SkyWater lists both.[^skw-01]
   Strength: **strong** for existence; assignment of `PSDM` to i-line
   is an **inference** from the 0.38 µm rules.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius**.[^skw-01]
+* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z**.[^skw-01]
   Strength: strong for existence.
 * **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
   Strength: strong.

@@ -142,7 +142,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 * **ASML i-line stepper / i-line scanner.** SkyWater lists "ASML I-line
   stepper" and "ASML I-line scanner".[^skw-01] Strength: **strong** for
   the tools; **inference** for the assignment of `HVNTM` to them.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ/Lithius**.[^skw-01] Strength:
+* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z**.[^skw-01] Strength:
   strong for existence.
 * **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
   Strength: strong.
