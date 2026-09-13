@@ -227,8 +227,8 @@ fab (SKY130's recipe is not public); the film-by-film account is at
   high-pressure fill modules,[^pat-forcefill-electrotech] Ulvac and Anelva
   sputtering systems ({ref}`category-deposition`).
 * **Degas and sputter-etch pre-clean chambers**.
-* **Four-point probe**, **XRF**, **reflectometer**, **stress gauge**,
-  **cross-section SEM**.
+* **{ref}`Four-point probe <machine-sheet-resistance-metrology>`**, **{ref}`XRF <machine-film-thickness-metrology>`**, **reflectometer**, **stress gauge**,
+  **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**.
 
 ## Machines likely used at SkyWater
 

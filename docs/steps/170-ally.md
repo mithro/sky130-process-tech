@@ -150,7 +150,7 @@ an aluminium back end (SKY130's recipe is not public):
   Kokusai Vertron ({ref}`category-anneal`).
 * **Horizontal furnace** (older alloy tubes); **{ref}`RTP <machine-rapid-thermal-processor>`** as the
   single-wafer alternative.
-* **C–V / charge-pumping test set** for interface-trap monitors.
+* **{ref}`C–V / charge-pumping test set <machine-parametric-tester>`** for interface-trap monitors.
 
 ## Machines likely used at SkyWater
 

@@ -135,7 +135,7 @@ an aluminium top metal (SKY130's recipe is not public):
   etchers,[^lam-exelan] Applied Materials and TEL equivalents
   ({ref}`category-etch`).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`**; **{ref}`solvent wet bench <machine-wet-bench>`**.
-* **Automated pad inspection**, **TOF-SIMS / XPS** for surface
+* **{ref}`Automated pad inspection <machine-defect-inspection>`**, **TOF-SIMS / XPS** for surface
   analysis, **wire-bond pull tester** on monitors.
 
 ## Machines likely used at SkyWater
