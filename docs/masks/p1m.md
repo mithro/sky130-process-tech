@@ -21,7 +21,7 @@ page; every mask is indexed on the {ref}`masks index <masks-index>`.
 | PDK mask (`masks.csv`) | "Poly 1", `P1M`, marked `X` in `Used in SKY130`[^pdk-05] |
 | Mask-level layer (`gds_layers.csv`) | `cp1m` mask 28:0, "Poly 1 mask"; mask add 33:43, mask drop 33:42, waffle drop 33:24[^pdk-06] |
 | Drawn layer (`gds_layers.csv`) | `poly` drawing 66:20, "Polysilicon", with gate 66:9 and resistor 66:13 purposes[^pdk-06] |
-| Minimum CD, feature / space | "Endcap/Gap" `P1G` 0.15 / 0.21; `P1MCD` N/A / `P1MCDSP` 0.14[^pdk-03] |
+| Minimum CD, feature / space | `P1MCD` N/A / `P1MCDSP` 0.14; "Endcap/Gap" `P1G` 0.15 / 0.21[^pdk-03] |
 | Polarity and tone | Not published. Poly is drawn where it remains, so with a positive resist the plate would be clear-field (the step page's reading). |
 | Exposure class | KrF (248 nm), an inference on the step page from the 0.150 µm poly width; no public source names the tool ({ref}`machine-duv-krf-stepper`) |
 | Mask type (process-steps sheet) | None recorded; the sheet codes a type for the via 2, via 3 and via 4 plates only[^steps-sheet] |
@@ -61,9 +61,10 @@ is laid down by earlier steps ({ref}`LVGOX <step-047>`,
 {ref}`POC <step-059>`), and the poly doping that distinguishes gates
 from resistor bodies comes from the resistor masks before it
 ({ref}`RPM <step-049>`, {ref}`RRPM <step-052>`,
-{ref}`URPM <step-055>`), on the step pages' readings. The tip, halo
-and source/drain implants that follow take the etched poly, not this
-resist, as their edge.
+{ref}`URPM <step-055>`), on the step pages' readings. On the same
+readings, the tip and halo implants take the etched poly, and the
+source/drain implants the spacers formed on it, as their edge, not this
+resist.
 
 ## Drawn layers and derivation
 
@@ -79,8 +80,8 @@ layers. Rule x.9: "Shapes on maskAdd or maskDrop layers (“serifs”) are
 allowed in core only", and rule x.15a, which confines mask and
 waffle-drop layers to test modules, seal ring and frame, makes one
 exception: "FOM/P1M/Metal waffle drop are allowed inside the
-die".[^pdk-periph] The {ref}`FOM <step-004>` page reads the "waffles"
-as dummy fill for {term}`pattern density`; the PDK does not say whether
+die" (flag P, periphery only).[^pdk-periph] The {ref}`FOM <step-004>`
+page reads the "waffles" as dummy fill for {term}`pattern density`; the PDK does not say whether
 a waffle-drop shape places fill or keeps it out, and the purpose name
 does not settle it.
 
@@ -198,8 +199,8 @@ and across several scanners.[^zheng-2003] Rules-based
 OPC,[^otto-1994] the phase-shifting mask[^levenson-1982] and its
 attenuated form[^lin-1993] are the techniques the step page names as
 likely but unconfirmed for this level; the endcap rule poly.8, 0.130
-beyond diffusion,[^pdk-periph] is the margin line-end shortening
-consumes.
+beyond diffusion,[^pdk-periph] is the margin that line-end shortening
+would consume (our reading).
 
 **Resist and tone.** The step page reads a chemically amplified positive
 KrF resist over an anti-reflective scheme, and a clear-field plate as
@@ -214,8 +215,9 @@ transferred by {ref}`P1ME <step-062>` through the oxide cap, the nitride
 cap and the poly, stopping on the gate oxides, on the
 {ref}`silicon and polysilicon plasma etcher <machine-plasma-etcher-silicon>`
 class, and the resist is stripped within that step. Orshansky, Milor and
-Hu characterised the spatial intrafield gate-CD variation that
-lithography leaves and its correction at mask level.[^orshansky-2004]
+Hu characterised spatial intrafield gate-CD variation, which they found
+"strongly dependent on the local layout patterns", and proposed a
+mask-level correction for it.[^orshansky-2004]
 
 **Overlay.** The step page infers that `P1M` aligns to the STI marks of
 {ref}`FOM <step-004>`. The placement margins against active are
@@ -243,8 +245,9 @@ Steps:
   step list used in this reference has no separate strip step, and the
   step page treats the resist strip as part of the etch.
 
-The next step, {ref}`IOX45 <step-063>`, re-oxidises the etched poly and
-exposed silicon after the resist is gone, and the next mask step is
+On its step page's reading, the next step, {ref}`IOX45 <step-063>`,
+grows a thin oxide on the etched poly and exposed silicon after the
+resist is gone, and the next mask step is
 {ref}`NTM <step-064>`. The only departure from a mask–etch–strip pattern
 is that the strip has no step of its own; the rule itself needs no
 exception. The later steps that self-align to the gate
@@ -259,11 +262,11 @@ periphery only (outside areaid.ce). A corresponding core rule may or may
 not exist.", and the unit column of poly.7 and poly.8 is blank in the
 published table.[^pdk-periph]
 
-| Rule | Description (as published) | Value |
-|------|----------------------------|-------|
+| Rule | Description (published wording, abridged where marked "[…]") | Value |
+|------|--------------------------------------------------------------|-------|
 | poly.1a | "Width of poly" | 0.150 µm |
-| poly.1b | "Min channel length (poly width) for pfet overlapping lvtn" | 0.350 µm |
-| poly.2 | "Spacing of poly to poly except for poly.c2 and poly.c3" | 0.210 µm |
+| poly.1b | "Min channel length (poly width) for pfet overlapping lvtn […]" | 0.350 µm |
+| poly.2 | "Spacing of poly to poly except for poly.c2 and poly.c3 […]" | 0.210 µm |
 | poly.3 | "Min poly resistor width" | 0.330 µm |
 | poly.4 | "Spacing of poly on field to diff (parallel edges only)" (P) | 0.075 µm |
 | poly.5 | "Spacing of poly on field to tap" (P) | 0.055 µm |
@@ -271,7 +274,7 @@ published table.[^pdk-periph]
 | poly.7 | "Extension of diff beyond poly (min drain)" (P) | 0.250 |
 | poly.8 | "Extension of poly beyond diffusion (endcap)" (P) | 0.130 |
 | poly.9 | "Poly resistor spacing to poly or spacing (no overlap) to diff/tap" | 0.480 µm |
-| poly.10 | "Poly can’t overlap inner corners of diff" | — |
+| poly.10 | "Poly can't overlap inner corners of diff" | — |
 | poly.11 | "No 90 deg turns of poly on diff" | — |
 | x.1a | "p1m.md (OPC), DECA and AMKOR layers (pi1.dg, pmm.dg, rdl.dg, pi2.dg, ubm.dg, bump.dg) and mask data for p1m, met1, via, met2 must be on a grid of mm" | 0.001 (unit "mm") |
 | x.1b | "Data for SKY130 layout and mask on all layers except those mentioned in 1a must be on a grid of mm (except inside Seal ring)" | 0.005 (unit "mm") |
