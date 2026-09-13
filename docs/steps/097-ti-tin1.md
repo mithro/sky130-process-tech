@@ -183,7 +183,8 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
   collimators (for the collimated chamber), pasting targets.
 * **Monitor wafers** (SEMI M8 class)[^semi-m8] for sheet resistance,
   thickness and particles.
-* Gas suppliers named by SkyWater: Air Products, Praxair.[^sec-01]
+* Gas suppliers named in SkyWater's 2021 S-1: Air Products,
+  Praxair.[^sec-01]
 
 ## Related steps and cross-references
 

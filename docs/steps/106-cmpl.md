@@ -159,7 +159,8 @@ fab (SKY130's recipe is not public):
 * **DI water** in quantity; **dilute NH₄OH** (category page), possibly
   **dilute HF**, for the post-CMP clean; **PVA brushes**.
 * **Monitor wafers** with blanket oxide for rate checks.[^semi-m8]
-* Chemical suppliers named by SkyWater: KMG Chemicals.[^sec-01]
+* Chemical suppliers named in SkyWater's 2021 S-1: KMG
+  Chemicals.[^sec-01]
 
 ## Related steps and cross-references
 

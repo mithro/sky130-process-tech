@@ -175,7 +175,8 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
   pasting cycles.
 * **Monitor wafers** (SEMI M8 class)[^semi-m8] for sheet resistance,
   thickness and particle control.
-* Gas suppliers named by SkyWater: Air Products, Praxair.[^sec-01]
+* Gas suppliers named in SkyWater's 2021 S-1: Air Products,
+  Praxair.[^sec-01]
 
 ## Related steps and cross-references
 
