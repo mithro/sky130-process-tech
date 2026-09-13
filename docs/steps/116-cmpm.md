@@ -162,8 +162,7 @@ recipe is not public):
 * **Applied Materials Mirra CMP.** SkyWater lists "AMAT Mirra CMP"
   with "oxide" among its applications.[^skw-01] Strength: **strong**
   (SkyWater statement); assignment to this step follows from the
-  film. Unverified job-board snippets recorded in the public-sources
-  inventory mention "AMAT Mirra and Mirra Mesa" (weak).
+  film.
 * **Post-CMP clean — SEZ223 / DaVinci** single-wafer tools;[^skw-01]
   "the SEZ etcher tool" of the maintenance page.[^skw-07] A brush
   scrubber is not named (open question).

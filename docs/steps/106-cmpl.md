@@ -139,8 +139,7 @@ fab (SKY130's recipe is not public):
 * **Applied Materials Mirra CMP.** SkyWater lists "AMAT Mirra CMP"
   for oxide among its films.[^skw-01] Strength: **strong** for the
   tool and for an oxide polish capability; assignment to `CMPL` is
-  an **inference** (the list names no steps). Unverified job-board
-  snippets mention "AMAT Mirra and Mirra Mesa" (weak).
+  an **inference** (the list names no steps).
 * **Post-CMP cleaning.** SkyWater lists the "SEZ223, Davinci"
   single-wafer tools with HF and DSP+HF chemistries;[^skw-01] a
   brush scrubber is not named on any public page (open question).

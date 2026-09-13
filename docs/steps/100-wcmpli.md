@@ -151,8 +151,7 @@ fab (SKY130's recipe is not public):
   its processes.[^skw-01] Strength: **strong** for the tool and for
   a tungsten polish capability; assignment to `WCMPLI` is an
   **inference** (the list names no steps), though a tungsten polish
-  has no other purpose in this flow than the plug levels. Unverified
-  job-board snippets mention "AMAT Mirra and Mirra Mesa" (weak).
+  has no other purpose in this flow than the plug levels.
 * **Post-CMP cleaning.** SkyWater lists the "SEZ223, Davinci"
   single-wafer tools with HF and DSP+HF chemistries;[^skw-01] a
   brush scrubber is not named on any public page (open question).
