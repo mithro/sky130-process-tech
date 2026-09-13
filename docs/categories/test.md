@@ -68,6 +68,23 @@ is applied to two probes, and the potential on the other two probes is
 measured with a high-impedance voltmeter", so that probe and lead
 resistance drop out.[^wiki-rs][^wiki-4t]
 
+For SKY130 one such structure list is public, although it is not stated
+to be the fab's production PCM. Google's raw-data repository publishes
+the pad documentation of the SkyWater "manufacturing test tile" carried
+on Google's MPW runs: 273 numbered modules, each a line of up to twelve
+pads with the terminal on each pad written
+out.[^raw-data-testtile-pads][^raw-data-testtile-prop] By our count
+they include 36 finger-capacitor ("VPP") modules, 28 poly-resistor
+modules at 300 Ω/sq and 2 kΩ/sq (many as "Mismatch" pairs), 7 MiM
+capacitor modules, 9 diode, 6 bipolar-transistor and 6 ring-oscillator
+modules, together with licon and mcon contact strings, via chains from
+via 1 to via 4, comb/serpentine and line-integrity structures, and SRAM,
+SONOS, 2T-flash and antifuse structures; the transistor modules sweep
+width, length and the source/drain extent (`sa`,
+`sb`).[^raw-data-testtile-pads] The data measured on the tile were
+"collected under contract by CoolCAD Electronics LLC" to help validate
+the PDK.[^raw-data-readme]
+
 ### Sheet resistance and van der Pauw
 
 The resistance of a square of a thin film is its {term}`sheet
@@ -134,7 +151,10 @@ device.
 * **Wafer probers**: Electroglas 4090 and 4085X, TEL P-8 and P-12, Tokyo
   Seimitsu UF-series, with temperature-controlled chucks.[^wiki-ate]
 * **Probe cards**: cantilever needle cards laid out to the PCM pad
-  ring.[^wiki-probecard]
+  ring.[^wiki-probecard] The open test tile that Google, NIST and the
+  University of Michigan placed on MPW-5 is documented with a pad-grid
+  drawing marked "40 µm" pads and "60 µm" and "80 µm" dimensions,
+  beside a photograph of a needle "Probe Card".[^raw-data-testtile-open]
 * **Bench characterisation**: HP/Agilent 4155/4156 semiconductor
   parameter analysers and manual probe stations for engineering work.
 * **{term}`Wafer sort <wafer sort>`** (customer or product step): Teradyne, Advantest,
@@ -178,6 +198,10 @@ device.
   requirements.[^itrs-2001-test]
 * SkyWater PDK documentation — the device models and corners that
   e-test checks a wafer against.[^pdk-01]
+* Google's SKY130 raw-data repository — the README, the manufacturing
+  test tile and its 273-module pad documentation, and the open MPW-5
+  test
+  tile.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open]
 
 ### High-level understanding
 
@@ -377,3 +401,25 @@ device.
 [^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
     Manufacturing Technology*, 2nd ed., CRC Press, 2007,
     ISBN 978-1-57444-675-3. <https://openlibrary.org/isbn/9781574446753>
+[^raw-data-readme]: SkyWater PDK Authors, *sky130-raw-data - Raw data
+    collected about the SKY130 process technology*, `README.rst`,
+    `google/skywater-pdk-sky130-raw-data` repository, 2022, retrieved
+    2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/README.rst>
+[^raw-data-testtile-prop]: SkyWater PDK Authors, *SkyWater 130nm
+    Proprietary Manufacturing Test Tile*,
+    `docs/sky130-testtile-proprietary/README.rst` and pad-layout image,
+    `google/skywater-pdk-sky130-raw-data` repository, 2022, retrieved
+    2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/README.rst>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^raw-data-testtile-open]: SkyWater PDK Authors, *SkyWater 130nm Open
+    Manufacturing Test Tile*, `docs/sky130-testtile-open/README.rst` and
+    images, `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-open/README.rst>

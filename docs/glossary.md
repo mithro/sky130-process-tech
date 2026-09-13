@@ -1332,6 +1332,15 @@ TEOS
     deposit conformal silicon dioxide by {term}`LPCVD` (around 700 °C)
     or {term}`PECVD` (around 400 °C); see {ref}`category-deposition`.
 
+test tile
+    In the SKY130 raw-data repository that Google publishes beside the
+    PDK, a block of numbered test modules and probe pads placed on a
+    multi-project wafer run: the SkyWater "manufacturing test tile", two
+    copies of which are included on each Google MPW run, and an open
+    replacement first placed on MPW-5. The repository does not say
+    that it is the fab's production {term}`PCM`; see
+    {ref}`HPETEST <step-171>`.
+
 thermal budget
     The combined time-at-temperature of all the heat treatments a wafer
     receives after a given dopant or film is in place, which sets how

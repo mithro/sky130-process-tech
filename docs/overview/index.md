@@ -86,6 +86,15 @@ thicknesses are drawn or tabulated for design, extraction and antenna
 calculations — which is why the step pages read each number for what
 it is.
 
+Measured silicon data are published too, in a separate raw-data
+repository: DC measurements "collected under contract by CoolCAD
+Electronics LLC using the manufacturing test tile created by
+SkyWater",[^raw-data-readme] and the pad documentation of that
+{term}`test tile`, whose 273 modules name contact and via chains,
+resistors, capacitors and transistors layer by layer and are quoted on
+the step pages as examples of what is measured at
+{ref}`HPETEST <step-171>`.[^raw-data-testtile-pads]
+
 ### What the process offers
 
 The PDK repository summarises the technology stack as "Support for
@@ -729,7 +738,10 @@ public.
   level: its device page, layer table and stack diagram put `capm` over
   metal 3,[^pdk-07][^pdk-06][^pdk-04] while its `capm` rules and
   extraction entries name metal 2 and via 2,[^pdk-periph][^pdk-08] and
-  `cap2m` has no rules and no mask-table entry[^pdk-periph][^pdk-05]
+  `cap2m` has no rules and no mask-table entry[^pdk-periph][^pdk-05].
+  The test tile's pad documentation describes "CAPM on M3" and "CAP2M
+  over M4" MiM capacitors with via-3 and via-4 chains to the
+  plates,[^raw-data-testtile-pads] which agrees with the device page
   ({ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>`,
   {ref}`CAPILD2 <step-150>`).
 * **Passivation thickness.** The stack diagram gives 0.09 µm of TOPOX
@@ -766,6 +778,9 @@ public.
   names.[^pdk-02][^pdk-previous]
 * SkyWater PDK, repository README — the technology-stack summary and the
   licence.[^pdk-10]
+* SKY130 raw-data repository, README and test-tile pad documentation —
+  the CoolCAD measurements and the 273 test modules, including the MiM
+  capacitor structures.[^raw-data-readme][^raw-data-testtile-pads]
 * SkyWater PDK, *Criteria & Assumptions* — poly, cap, spacer and pre-LI
   dielectric thicknesses, well and junction depths, implant angles and
   the antenna thicknesses by flow.[^pdk-03]
@@ -1110,3 +1125,14 @@ public.
 [^ann-15]: R. T. Edwards (Efabless), "Google/SkyWater and the Promise of
     the Open PDK", *Workshop on Open-Source EDA Technology (WOSET)
     2020*. <https://woset-workshop.github.io/PDFs/2020/a03.pdf>
+[^raw-data-readme]: SkyWater PDK Authors, *sky130-raw-data - Raw data
+    collected about the SKY130 process technology*, `README.rst`,
+    `google/skywater-pdk-sky130-raw-data` repository, 2022, retrieved
+    2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/README.rst>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
