@@ -131,7 +131,7 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
 
 ## Resources required
 
-* **Arsine (AsH₃)** or **phosphine (PH₃)** source gas.[^wiki-implant]
+* **{ref}`Arsine <material-dopant-sources>` (AsH₃)** or **phosphine (PH₃)** source gas.[^wiki-implant]
 * Support gases, cryopump and ion-source consumables, {ref}`monitor wafers <material-substrates>`
   (category page).
 * No new resist: the {ref}`HVTPM <step-022>` resist is reused for

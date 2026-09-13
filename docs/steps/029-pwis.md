@@ -103,7 +103,7 @@ An industry-generic heavy-implant-resist strip for a 200 mm,
 
 ## Resources required
 
-* **Oxygen, nitrogen, {ref}`forming gas <material-anneal-ambients>` (H₂/N₂)** for the ash; **CF₄**,
+* **{ref}`Oxygen <material-process-gases>`, nitrogen, {ref}`forming gas <material-anneal-ambients>` (H₂/N₂)** for the ash; **{ref}`CF₄ <material-etch-gases>`**,
   listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
   trench oxide and would, we infer, be omitted here (category page).
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide, hydrochloric

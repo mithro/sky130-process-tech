@@ -111,7 +111,7 @@ illustrative.
 
 ## Resources required
 
-* **Boron trifluoride (BF₃)**; support gases; cryopump and source
+* **{ref}`Boron trifluoride <material-dopant-sources>` (BF₃)**; support gases; cryopump and source
   consumables; {ref}`monitor wafers <material-substrates>` (category page).
 * No new resist: the {ref}`PWDEM <step-030>` resist is reused.
 
