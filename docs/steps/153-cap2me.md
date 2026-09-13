@@ -151,7 +151,13 @@ same sequence.
 6. **Metrology.** Plate {term}`CD` by {term}`CD-SEM`; remaining
    dielectric outside the plates by ellipsometry on monitors; residue
    inspection; capacitance, leakage and breakdown on test structures at
-   {term}`e-test` against `CMIM2A` and `CMIM2P`.[^pdk-07]
+   {term}`e-test` against `CMIM2A` and `CMIM2P`.[^pdk-07] The published
+   SKY130 {term}`test tile` repeats the capacitor set of
+   {ref}`CAPME <step-138>` for "CAP2M over M4" — large, periphery- and
+   area-intensive capacitors with the same expected values, "CAP2M
+   linewidth" and "CAP2M sheet rho" lines, a "Kelvin via-4, M5-CAP2M
+   over M4" and "M4-M4" and "CAP2M-CAP2M serp/comb"
+   structures.[^raw-data-testtile-pads]
 
 ## Machines typically used
 
@@ -214,6 +220,9 @@ same sequence.
 * Lam Research, Form 10-K (2003) — the 9600 and 2300 lines.[^lam-10k]
 * Cathey et al. (TI), US 8,110,414 — a top-electrode etch removing
   ≦100 Å of a silicon-based dielectric.[^pat-mim-ti-etch]
+* SKY130 raw-data repository, test-tile pad documentation — the CAP2M
+  capacitor, linewidth and serpentine/comb structures of the published
+  test tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -377,3 +386,9 @@ same sequence.
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>

@@ -173,7 +173,17 @@ end (SKY130's recipe is not public):
    dielectric thickness outside the plates by ellipsometry on
    monitors; particle and residue inspection; capacitance, leakage,
    breakdown and {math}`C(V)` on test structures at {term}`e-test`
-   against the PDK's `CMIMA`/`CMIMP` limits.[^pdk-07]
+   against the PDK's `CMIMA`/`CMIMP` limits.[^pdk-07] The published
+   SKY130 {term}`test tile` has a "Large MiM capacitor, CAPM on M3, 11
+   plates, each 40x40" with "Total expected capacitance 35.5 pF", a
+   "Periphery-intensive" one of 72 plates of 2 × 35 µm (11.1 pF) and an
+   "Area-intensive" one of 5 plates of 35 × 35 µm (12.4 pF), "CAPM
+   linewidth" and "CAPM sheet rho" lines, and "M3-M3" and "CAPM-CAPM
+   serp/comb" structures.[^raw-data-testtile-pads] Solving the first
+   two expected values for an area and a perimeter term gives about
+   2.0 fF/µm² and 0.19 fF/µm, which reproduces the third and equals the
+   PDK's nominal `CMIMA` and `CMIMP`[^pdk-07] (our arithmetic; the
+   values are expected design values, not measurements).
 
 ## Machines typically used
 
@@ -238,6 +248,9 @@ end (SKY130's recipe is not public):
 * Lam Research, Form 10-K (2003) — the 9600 and 2300 lines.[^lam-10k]
 * Cathey et al. (TI), US 8,110,414 — a TiN top-electrode etch that
   removes no more than 100 Å of the dielectric.[^pat-mim-ti-etch]
+* SKY130 raw-data repository, test-tile pad documentation — the MiM
+  capacitor, plate linewidth, sheet-resistance and serpentine/comb
+  structures of the published test tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -400,3 +413,9 @@ end (SKY130's recipe is not public):
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
