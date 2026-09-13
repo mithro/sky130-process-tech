@@ -387,7 +387,8 @@ structures" and not rendered. The `expr` definitions and notes are the
 site's own reconstructions, not SkyWater data, and several notes use
 the same wording as the notes in the process-steps sheet's "Run Mask
 IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
-on the mask index. Tier: cross-check.
+on the mask index, the HVTPM step page and the sky130B ReRAM overview.
+Tier: cross-check.
 
 ## 3. SkyWater Technology corporate sources
 
