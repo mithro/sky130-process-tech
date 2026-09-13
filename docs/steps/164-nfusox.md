@@ -34,7 +34,7 @@ describe their passivation in the same two-layer form: "1000Å TEOS /
 metal-stack-change report of 2014,[^cyp-qtp-123907] while the 2013
 S8TNV-5R report gives only "7000 +/- 2000A Nitride".[^cyp-qtp-113005]
 The step list used in this reference does not explain what the oxide
-is for or how it relates to the metal fuses; we read `NFUSOX` as the
+is for; we read `NFUSOX` as the
 deposition of the thin undoped oxide the PDK labels TOPOX (inference:
 it is the only oxide the diagram draws between metal 5 and the
 nitride, and its 0.09 µm matches the 1000 Å TEOS film of the Cypress
