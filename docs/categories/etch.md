@@ -196,7 +196,8 @@ oxidation or clean must remove.
   (1996)[^amat-1997] with integrated passivation and strip chambers.
 * **Wet etch**: automated {ref}`wet benches <machine-wet-bench>` with HF, BOE and hot-phosphoric
   tanks (Akrion GAMA;[^akrion-gama] SCP, DNS/Screen and Santa Clara
-  Plastics benches); centrifugal {ref}`spray processors <machine-wet-bench>` (FSI Mercury);
+  Plastics benches); batch {ref}`spray processors <machine-wet-bench>` (FSI Mercury, which
+  TEL describes as a "batch spray cleaning system"[^tel-mercury-2018]);
   {ref}`single-wafer spin etchers <machine-single-wafer-spin-processor>` for backside film removal and bevel clean
   (SEZ, now Lam) — the natural tool class for {ref}`BFR <step-060>`.
 * **Metrology and inspection**: {term}`CD-SEM` after etch, {ref}`cross-section SEM <machine-cross-section-sem-profilers>` for
@@ -342,6 +343,10 @@ oxidation or clean must remove.
   etching.[^ocw-6152]
 
 <!-- footnotes -->
+[^tel-mercury-2018]: Tokyo Electron, *TEL announces the relaunch of
+    MERCURY MP, a Batch Spray Cleaning System*, news release, 2018-07-10,
+    accessed 2026-09-13.
+    <https://www.tel.com/news/product/2018/20180710_001.html>
 
 [^wiki-rie]: Wikipedia, *Reactive-ion etching*.
     <https://en.wikipedia.org/wiki/Reactive-ion_etching>

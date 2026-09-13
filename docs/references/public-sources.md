@@ -10166,7 +10166,9 @@ accessed 2026-09-13.
 production of the MERCURY batch spray cleaner for 75–200 mm wafers, with
 "over 1,000 systems installed"; a 2024 notice on the page transfers the
 product line to another supplier. Used on the wet bench and spray
-processor page. Tier: cross-check (vendor statement).
+processor page.
+Also used on the etch and strip category pages.
+Tier: cross-check (vendor statement).
 
 #### Deposition machine pages (first cited there)
 

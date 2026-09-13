@@ -136,7 +136,8 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 * **{ref}`Wet benches <machine-wet-bench>`**: automated multi-tank benches with SPM, SC-1, SC-2, HF
   and hot-phosphoric tanks, quick-dump rinsers and IPA dryers — Akrion
   GAMA,[^akrion-gama] SCP, DNS/Screen, Santa Clara Plastics, Semitool.
-* **{ref}`Spray processors <machine-wet-bench>`** (FSI Mercury centrifugal spray) and
+* **{ref}`Spray processors <machine-wet-bench>`** (FSI Mercury, which TEL describes as a "batch spray cleaning
+  system"[^tel-mercury-2018]) and
   **{ref}`single-wafer spin processors <machine-single-wafer-spin-processor>`** (SEZ, later Lam; DNS) for HF-based
   and solvent strips with better chemical freshness and no
   cross-contamination between wafers.
@@ -256,6 +257,10 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
   stripping.[^txt-09]
 
 <!-- footnotes -->
+[^tel-mercury-2018]: Tokyo Electron, *TEL announces the relaunch of
+    MERCURY MP, a Batch Spray Cleaning System*, news release, 2018-07-10,
+    accessed 2026-09-13.
+    <https://www.tel.com/news/product/2018/20180710_001.html>
 
 [^gasonics-l3510]: SemiStar Corp., *Gasonics L3510 plasma asher* (tool
     description; platen temperature 100–300 °C).
