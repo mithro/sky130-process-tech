@@ -176,8 +176,8 @@ memory (SKY130's recipe is not public):
   **He** as typical diluents; **HBr** if a silicon-selective landing
   step is used.
 * **Oxygen/nitrogen/{term}`forming gas`** for the ash; **{term}`SPM`** for the wet
-  strip ({ref}`category-strip`).
-* **BOE or dilute HF** ({ref}`wet chemicals <material-wet-chemicals>`) for the bottom oxide;[^pat-03][^pat-04]
+  strip ({ref}`category-strip`; {ref}`wet chemicals <material-wet-chemicals>`).
+* **BOE or dilute HF** for the bottom oxide;[^pat-03][^pat-04]
   **hot phosphoric acid** only for the all-wet alternative.[^vgh-1967]
 * **DI water, isopropanol, nitrogen**; chamber consumables.
 * Gas and chemical suppliers named in SkyWater's filings: Air
