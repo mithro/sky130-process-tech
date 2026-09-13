@@ -126,7 +126,7 @@ fab (SKY130's recipe is not public):
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen
   (or argon), strictly oxygen-free: "a few ppm of O₂ oxidises the
   metal before it can react" (category page). SkyWater's Heatpulse
-  8808 lists NH₃, Ar, N₂ and O₂ ambients.[^skw-01]
+  8808 entry lists NH₃, Ar, N₂ and O₂.[^skw-01]
 * **Temperature and time.** A soak of tens of seconds at 600–750 °C
   to form C49 TiSi₂ under the TiN, with or without a second soak at
   800–900 °C for the C54 transformation — typical industry values
@@ -174,8 +174,10 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Nitrogen and argon** as process ambient;[^skw-01] the titanium
-  and TiN were consumed at {ref}`TI/TIN1 <step-097>`.
+* **Nitrogen and argon** (likely ambient, our inference; SkyWater lists
+  the Heatpulse's gases, "NH3, Ar, N2, O2", but no ambient for any
+  step);[^skw-01] the titanium and TiN were consumed at
+  {ref}`TI/TIN1 <step-097>`.
 * **Tungsten-halogen lamps, quartz window and chamber, edge rings**;
   pyrometer calibration and thermocouple wafers (category page).
 * **Cooling water and CDA/N₂** for lamp and chamber cooling.[^ag-8108]

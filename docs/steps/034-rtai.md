@@ -154,8 +154,9 @@ An industry-generic well/channel activation anneal for a 200 mm,
 
 ## Resources required
 
-* **Nitrogen and argon** (process ambient);[^skw-01] **oxygen** if a
-  minor addition is used.
+* **Nitrogen and argon** (likely ambient, our inference; SkyWater lists
+  the Heatpulse's gases, "NH3, Ar, N2, O2", but no ambient for any
+  step);[^skw-01] **oxygen** if a minor addition is used.
 * **Tungsten-halogen lamps, quartz chamber/window, edge rings**;
   pyrometer calibration and thermocouple wafers (category page).
 * **Cooling water and CDA/N₂** for lamp and chamber cooling (facility
