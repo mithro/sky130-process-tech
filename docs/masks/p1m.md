@@ -172,7 +172,10 @@ PAS 5500/300 at 0.25 µm, separated a reticle CD error component of
 10 nm (3σ), from 32 nm (3σ) mask CD uniformity and a reticle sensitivity
 factor of 1.3, from an exposure-tool component of 8 nm,[^kuijten-1998]
 and Arthur and Martin followed the mask error factor through CD budgets
-into reticle procurement specifications.[^arthur-1999] How tightly
+into reticle procurement specifications.[^arthur-1999] ITRS 2001's
+optical mask requirements, which are "for critical layers", ask in the
+130 nm year for a mask CD uniformity of 7.4 nm (3σ) on isolated MPU gate
+lines on a binary mask, at 4× magnification.[^itrs-03] How tightly
 SkyWater specifies the `P1M` plate is not public; the PDK's 0.02
 `PHP1TOL` is the only published poly bias tolerance.[^pdk-03]
 
@@ -347,8 +350,8 @@ feature the plate must resolve is therefore the 0.150 µm gate line on a
   measurement.[^starikov-1992]
 * Rizvi (ed.), *Handbook of Photomask Manufacturing Technology* — mask
   writing, advanced optical masks and mask metrology.[^rizvi-2005]
-* ITRS 2001, *Lithography* — mask magnification and gate CD targets at
-  130 nm.[^itrs-03]
+* ITRS 2001, *Lithography* — gate CD targets and the optical mask
+  requirements for critical layers at 130 nm.[^itrs-03]
 
 ## Open questions
 
