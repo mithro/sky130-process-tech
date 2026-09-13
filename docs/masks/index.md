@@ -87,7 +87,7 @@ In the table:
   listed* means no entry.[^pdk-05]
 * **Mask-level layers** gives the `c…` layers of `gds_layers.csv`
   whose description names the mask, as name, purpose and
-  layer:datatype.[^pdk-06]
+  layer:datatype (and, for FOM, the `fom` dummy purpose).[^pdk-06]
 * **Drawn layers** gives the drawn layer(s) of `gds_layers.csv` that
   correspond to the mask, as name and layer:datatype; the descriptions
   are on the step pages.[^pdk-06]
@@ -144,17 +144,19 @@ Notes on the table:
   `cdnm` "Deep nwell mask", `chvtpm` "High Vt Pch mask", `ctm1`
   "Contact mask", `cviam4` "Via 4 mask", `cpdm` "Pad mask".[^pdk-06]
   The `drawing`, `mask add`, `mask drop` and `waffle drop` purposes of
-  a mask-level layer do not always share its layer number: `cfom` is
-  23:0 as a mask but 22:20, 22:21, 22:22 and 22:24 otherwise, `cp1m`
-  28:0 against 33:x, `cli1m` 56:0 against 115:x.[^pdk-06]
+  a mask-level layer rarely share its layer number — only `clvtnm`
+  (25:x) and the `chvtpm` mask add/drop (97:42/43) do: `cfom` is 23:0
+  as a mask but 22:20, 22:21, 22:22 and 22:24 otherwise, `cp1m` 28:0
+  against 33:x, `cli1m` 56:0 against 115:x.[^pdk-06]
 * **Shared layer numbers.** Several GDS layer numbers carry unrelated
   layers under different datatypes, which is worth knowing when
   reading the table: 22 (`cnsm` 22:0 and the `cfom` purposes), 44
   (`cviam2` 44:0, `cnpc` drawing 44:20, `pwelliso` label 44:5), 88
   (`conom` 88:0, `chvtpm` drawing 88:44), 96 (`crpm` 96:0, `cncm`
   drawing 96:44), 97 (`chvtpm` 97:0/42/43, `cap2m` 97:44), 112
-  (`cviam3` drawing 112:20, `cmm4` waffle drop 112:4) and 117
-  (`cviam4` drawing 117:20, `cmm5` waffle drop 117:4).[^pdk-06]
+  (`cviam3` drawing 112:20, `cmm4` waffle drop 112:4), 117
+  (`cviam4` drawing 117:20, `cmm5` waffle drop 117:4) and 125
+  (`hvntm` 125:20, `lvtn` 125:44).[^pdk-06]
 * **The "(inference)" entries.** `FOM` is paired with the active
   layers `diff` and `tap` on its step page; `PWBM` with `nwell` as
   well as `pwbm`, since `gds_layers.csv` has no drawn P-well layer;
