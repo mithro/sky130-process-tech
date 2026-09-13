@@ -102,7 +102,7 @@ An industry-generic well/channel activation anneal for a 200 mm,
   such as nitrogen for approximately 30 minutes".[^pat-vt-lsi] A
   1000–1050 °C, 10–30 s RTA is the typical 130 nm-era
   choice.[^txt-05][^txt-10] Ramp rates of "1 – 180°C per second" are the
-  range of the AG Heatpulse 8800-class tools.[^ag-8800]
+  range of the AG Associates Heatpulse 8800-class tools.[^ag-8800]
 * **Sequence.** Pre-anneal clean (at {ref}`PWDEIS <step-033>`); load;
   purge; ramp; soak; ramp-down; unload. The pad oxide, if retained, caps
   the surface during the soak.

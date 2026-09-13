@@ -68,8 +68,8 @@ An industry-generic post-implant strip on a bare poly surface, for a
    that O₂ + H₂O downstream ashing is free of the sodium contamination
    that some older ashers introduced,[^fujimura-1994] which matters when
    the next film to be deposited is a gate cap. SkyWater's three ashers
-   cover this range — the Iridia and Mattson Aspen 2 list H₂ or H₂/N₂
-   additions and the Gasonic PEP N₂/O₂ only, at 40–270 °C between
+   cover this range — the Iridia and Mattson Aspen II list H₂ or H₂/N₂
+   additions and the GaSonics PEP N₂/O₂ only, at 40–270 °C between
    them.[^skw-01] A "cold" process for stripping implanted resist is
    also described in the patent literature.[^pat-strip-ulvac]
 2. **Wet clean.** {term}`SPM` (H₂SO₄/H₂O₂) for residual organics, then SC-1
@@ -86,7 +86,7 @@ chemical oxide is thin and will be buried under the
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm (Gasonics Aura/PEP, Mattson
+* **Downstream plasma asher**, 200 mm (GaSonics Aura/PEP, Mattson
   Aspen, Axcelis/Fusion ES, PSK).
 * **Batch wet bench** (Akrion, DNS/SCREEN, SCP) or **spray processor**
   (FSI Mercury) with SPM and SC-1.
@@ -94,7 +94,7 @@ chemical oxide is thin and will be buried under the
 
 ## Machines likely used at SkyWater
 
-* **Gasonics PEP, Iridia and Mattson Aspen 2 ashers.**[^skw-01]
+* **GaSonics PEP, Iridia and Mattson Aspen II ashers.**[^skw-01]
   Strength: **strong** for existence; assignment not stated.
 * **Akrion Gamma batch bench; DNS bench; FSI Mercury.**[^skw-01]
   Strength: strong for existence.
