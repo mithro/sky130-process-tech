@@ -208,7 +208,11 @@ the "Hi dose" entry alone reaches "5e16".[^skw-01]
 The dopant gases and ion-source parts are listed in the
 {ref}`materials index <materials-index>`; what is specific to a
 high-current tool is summarised here. None of the SkyWater sources
-describes the fab's gas delivery or abatement.
+describes the fab's gas delivery or abatement. Monitor wafers are
+described on the {ref}`substrates and test wafers <material-substrates>`
+page, and exhaust abatement on the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
+page.
 
 * **Source gases.** Boron trifluoride, phosphine and arsine, the last
   "flammable, pyrophoric, and highly toxic" in the words the materials
@@ -297,6 +301,8 @@ not public.
   hazards.
 * {ref}`category-strip` — removal of the crusted resist after high-dose
   implants.
+* {ref}`material-substrates` — monitor wafers for dose and uniformity.
+* {ref}`material-hardware-consumables` — exhaust abatement.
 
 ## References
 

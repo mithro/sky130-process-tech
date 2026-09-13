@@ -226,6 +226,9 @@ The wet chemicals are described on the
 here. None of the SkyWater sources describes the tool's chemical supply
 or exhaust. Ultrapure water, its standards and its quality parameters
 are described on the {ref}`ultrapure water <material-ultrapure-water>`
+page, and the chuck and nozzle consumables and acid waste that the BFR
+page names are among the rows of the
+{ref}`hardware consumables and abatement <material-hardware-consumables>`
 page.
 
 * **Acids and oxidisers.** Dilute HF;[^skw-01][^kikuyama-1994] sulfuric
@@ -300,6 +303,8 @@ public.
   their grades and SkyWater's listed chemistries.
 * {ref}`material-ultrapure-water` — rinse water, its standards and
   quality.
+* {ref}`material-hardware-consumables` — chamber parts and waste
+  treatment, including BFR's chuck and nozzle consumables.
 
 ## References
 
