@@ -287,7 +287,7 @@ thicknesses are not public.
   say is not public.[^skw-01] A seam left where the walls meet is the
   category page's description of a conformal fill.
 * **Plug tops under aluminium.** After the polish, each metal stack of
-  the PVD page is sputtered onto the
+  the {ref}`PVD page <machine-pvd-cluster-tool>` is sputtered onto the
   plug tops, and the metal etch lands on them
   ({ref}`metal etcher page <machine-plasma-etcher-metal>`).
 * **The special module.** SkyWater's "W plug dual damascene" special
@@ -299,6 +299,8 @@ thicknesses are not public.
 
 * {ref}`category-deposition` — CVD tungsten chemistry and the deposition
   steps of SKY130.
+* {ref}`machine-pvd-cluster-tool` — the liner deposition before each fill
+  and the metal stacks that land on the plugs.
 * {ref}`machine-plasma-etcher-metal` — the aluminium etch that stops on
   the plug tops.
 * {ref}`category-cmp` — the tungsten polishes that follow each fill.

@@ -223,8 +223,8 @@ likely used at SkyWater"), as collected on the machines index:
   {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`; *strong for
   existence:* {ref}`SPOX <step-080>`; *weak:* {ref}`SPNIT <step-076>`.
   "PECVD TEOS, C2 and Producer": *not public which of the candidates:*
-  {ref}`POC <step-059>`; *weak:* {ref}`SPOX <step-080>`. See
-  {ref}`category-deposition`.
+  {ref}`POC <step-059>`; *weak:* {ref}`SPOX <step-080>`. See the
+  {ref}`PECVD page <machine-pecvd>`.
 
 The furnace row covers all three furnace classes, because SkyWater
 lists its furnaces as one group; the LPCVD steps are those in the
@@ -308,6 +308,8 @@ pressures and thicknesses are not public.
   Aviza history and the ONO oxidations.
 * {ref}`machine-vertical-furnace-anneal` — the same furnace group used
   for anneals and the alloy.
+* {ref}`machine-pecvd` — the single-wafer plasma alternative for the gate
+  nitride, oxide cap, spacer oxide and local-interconnect nitride cap.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — the precursor gases and their hazards.
