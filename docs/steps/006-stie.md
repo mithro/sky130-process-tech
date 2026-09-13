@@ -157,7 +157,7 @@ W/WN".[^skw-01]
 * **Helium** backside cooling; **N₂** purge.
 * **NF₃ or SF₆/O₂** chamber clean (SkyWater lists NF₃ on the
   DPSII[^skw-01]).
-* **O₂ / N₂ / {term}`forming gas`** for the ash.
+* **O₂ / N₂ / {ref}`forming gas <material-anneal-ambients>`** for the ash.
 * **{term}`SC-1`, H₂SO₄/H₂O₂ or dilute HF** ({ref}`wet chemicals <material-wet-chemicals>`) for the post-etch
   clean.[^wiki-rca]
 * {ref}`Chamber consumables <material-hardware-consumables>` (ceramic liners, focus rings); {ref}`monitor wafers <material-substrates>`
