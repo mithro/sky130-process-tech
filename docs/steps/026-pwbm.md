@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 26 of 171 |
+| **Step number** | 26 of 171[^steps-sheet] |
 | **Step code** | `PWBM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
 | **Phase** | FEOL — wells and channel implants |
@@ -332,3 +332,6 @@ raises NMOS {term}`Vt`.[^hook-2003]
     formation down to 0.18 μm design rules", *Proc. 1998 International
     Conference on Ion Implantation Technology*, vol. 1, pp. 67–70.
     <https://doi.org/10.1109/IIT.1999.812053>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

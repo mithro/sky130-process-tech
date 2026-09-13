@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 25 of 171 |
+| **Step number** | 25 of 171[^steps-sheet] |
 | **Step code** | `PCHIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
 | **Phase** | FEOL — wells and channel implants |
@@ -233,3 +233,6 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
     processes for cleaning and stripping photoresist from surfaces of
     semiconductor wafers*, US 5,795,831 A, granted 1998-08-18.
     <https://patents.google.com/patent/US5795831A/en>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

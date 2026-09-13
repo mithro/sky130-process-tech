@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 24 of 171 |
+| **Step number** | 24 of 171[^steps-sheet] |
 | **Step code** | `PNCHI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
 | **Phase** | FEOL — wells and channel implants |
@@ -286,3 +286,6 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
     of forming retrograde well structures and punch-through barriers
     using low energy implants*, US 5,963,801 A, granted 1999-10-05.
     <https://patents.google.com/patent/US5963801A/en>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
