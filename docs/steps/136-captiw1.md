@@ -174,9 +174,9 @@ back end (SKY130's recipe is not public):
 
 ## Resources required
 
-* **Ti:W sputter target** (10 wt.% Ti[^pat-tiw-hitachi]); SkyWater's
-  filings name Honeywell Electronic Materials and JX Metals as
-  sputter-target suppliers.[^sec-01][^sec-02]
+* **Ti:W sputter target** (10 wt.% Ti[^pat-tiw-hitachi]); SkyWater's filings name Honeywell Electronic Materials (2021
+  S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
+  as sputter-target suppliers.[^sec-01][^sec-02]
 * **Argon** for sputtering; **nitrogen** for venting.
 * **Chamber shields and clamp/chuck consumables**; **monitor wafers**
   for sheet resistance, stress and particles.
