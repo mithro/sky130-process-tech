@@ -8273,8 +8273,7 @@ test tile placed on Google's MPW runs and data measured on it to help
 validate the open PDK; it does not say that the tile's modules are the
 production e-test modules of the SKY130 frame, and the pages do not
 present them as such. Per-category module counts quoted on the pages
-are our own classification of the pad table. The community notes linked
-from the test-tile README were not used. Every URL was fetched on
+are our own classification of the pad table. Every URL was fetched on
 2026-09-13.
 
 **RAW-DATA-README** — SkyWater PDK Authors, *sky130-raw-data - Raw data

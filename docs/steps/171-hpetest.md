@@ -59,10 +59,10 @@ dies".[^pat-testline-tsmc]
 **A published test tile.** A separate structure set is public. Google's
 raw-data repository for the PDK states that "each of the Google MPW runs
 includes two copies of a 'manufacturing test tile'", created by
-SkyWater, which "consists of a grid of probe points"; it calls the tile
-"proprietary" because "The schematics and layout of the circuits
-connected to these probe points are **not** currently
-available".[^raw-data-testtile-prop] Its pad documentation, released in
+SkyWater,[^raw-data-readme] which "consists of a grid of probe points";
+its README is titled "Proprietary Manufacturing Test Tile" and states
+that "The schematics and layout of the circuits connected to these
+probe points are **not** currently available".[^raw-data-testtile-prop] Its pad documentation, released in
 the same repository under Apache 2.0, lists 273 numbered test modules
 in four "Die Row" groups, each wired to a line of up to twelve pads
 (`Pin 01`–`Pin 12`), and the photographed tile also carries a
@@ -290,10 +290,10 @@ production test or name its tester.
   the note "PLACE IN CENTER, CORNER OF RETICLE" under one
   module;[^raw-data-testtile-pads] neither says how the tile relates to
   the `areaid.mt` modules.
-* The pad list's `Group` codes (1–8, 10, `Z`, `s8tet`) are not
-  explained, and the schematics and layout of the tile's structures are
+* The pad list's `Group` codes (1–8, 10, `Z`, `s8tet`; blank for most
+  modules) are not explained, and the schematics and layout of the tile's structures are
   not public.[^raw-data-testtile-pads][^raw-data-testtile-prop]
-* The published DC data have limited current resolution: an analysis
+* The published transistor I–V data have limited current resolution: an analysis
   notebook in the repository notes that "the data gets noisy below 2nA"
   and that the data "cannot be used to predict the subthreshold slope
   (digital leakage)".[^raw-data-notebooks] The resolution of the fab's

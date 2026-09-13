@@ -87,12 +87,13 @@ calculations — which is why the step pages read each number for what
 it is.
 
 Measured silicon data are published too, in a separate raw-data
-repository: DC measurements "collected under contract by CoolCAD
+repository: current–voltage and capacitance–voltage measurements
+"collected under contract by CoolCAD
 Electronics LLC using the manufacturing test tile created by
 SkyWater",[^raw-data-readme] and the pad documentation of that
 {term}`test tile`, whose 273 modules name contact and via chains,
 resistors, capacitors and transistors layer by layer and are quoted on
-the step pages as examples of what is measured at
+the step pages as public examples of the kind of structure measured at
 {ref}`HPETEST <step-171>`.[^raw-data-testtile-pads]
 
 ### What the process offers
@@ -738,12 +739,12 @@ public.
   level: its device page, layer table and stack diagram put `capm` over
   metal 3,[^pdk-07][^pdk-06][^pdk-04] while its `capm` rules and
   extraction entries name metal 2 and via 2,[^pdk-periph][^pdk-08] and
-  `cap2m` has no rules and no mask-table entry[^pdk-periph][^pdk-05].
+  `cap2m` has no rules and no mask-table entry.[^pdk-periph][^pdk-05]
   The test tile's pad documentation describes "CAPM on M3" and "CAP2M
   over M4" MiM capacitors with via-3 and via-4 chains to the
-  plates,[^raw-data-testtile-pads] which agrees with the device page
-  ({ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>`,
-  {ref}`CAPILD2 <step-150>`).
+  plates,[^raw-data-testtile-pads] which agrees with the device page; see
+  {ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>` and
+  {ref}`CAPILD2 <step-150>`.
 * **Passivation thickness.** The stack diagram gives 0.09 µm of TOPOX
   and 0.54 µm of TOPNIT;[^pdk-04] Cypress reports for two S8 variants at
   the same fab give "1000A TEOS/9000A Si3N4" (S8DI) and "7000 +/- 2000A
