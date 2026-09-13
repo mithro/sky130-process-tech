@@ -99,9 +99,10 @@ measured files are sweeps of the 5 V, 16 V and 20 V transistors, the
 native and zero-threshold NMOS, the ESD transistors and the thick-oxide
 gate capacitors. Thresholds, resistances, body-effect coefficients and
 oxide capacitance extracted from them are quoted on the step pages for
-the gate oxide ({ref}`GOX100 <step-043>`), the P-well block and
-drain-extended wells ({ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`)
-and electrical test ({ref}`HPETEST <step-171>`), each marked as our
+the substrate ({ref}`SMAT <step-001>`), the gate oxide
+({ref}`GOX100 <step-043>`), the P-well block, drain-extended wells and
+depletion implant ({ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`,
+{ref}`DEPI <step-038>`) and electrical test ({ref}`HPETEST <step-171>`), each marked as our
 extraction rather than a published value; the files record no
 temperature, date or wafer.[^raw-data-hv-mosfets]
 
