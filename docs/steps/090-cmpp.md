@@ -124,8 +124,8 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 4. **Endpoint.** For a fixed removal, time plus post-polish
    thickness measurement (the "blind polishing" Wikipedia
    describes[^wiki-cmp]); for a stop-on-nitride, in-situ optical
-   {term}`endpoint` through a pad window[^pat-cmp-window] or motor-current
-   detection[^pat-cmp-endpoint-ibm] — Bibby and Holland review the
+   {term}`endpoint` through a pad or table window[^pat-cmp-window][^pat-cmp-endpoint-ibm] or motor-current
+   detection[^speedfam-ipec-2001] — Bibby and Holland review the
    options.[^bibby-1998]
 5. **Post-CMP clean.** Double-sided brush scrub in dilute NH₄OH,
    spin-rinse-dry; a short dilute-HF touch is common before the next
@@ -380,6 +380,11 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
     apparatus for chemical-mechanical polishing*, US 5,433,651 A,
     granted 1995-07-18.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5433651>
+[^speedfam-ipec-2001]: SpeedFam-IPEC CMP Group, *Products* (Momentum,
+    Auriga, AvantGaard), product page; Wayback Machine capture of
+    2001-04-12; lists "Endpoint detection capability -- motor current or
+    optical" for the AvantGaard 676.
+    <https://web.archive.org/web/20010412141846/http://www.ipec.com:80/cmp/products.htm>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
