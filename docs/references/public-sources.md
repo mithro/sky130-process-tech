@@ -14171,8 +14171,8 @@ decomposition. Used on the precursors material page. Tier: high-level.
 **WIKI-SIF4** — Wikipedia, *Silicon tetrafluoride*.
 <https://en.wikipedia.org/wiki/Silicon_tetrafluoride> Properties; "This
 volatile compound finds limited use in microelectronics and organic
-synthesis"; infobox hazards "toxic, corrosive". Used on the precursors
-material page. Tier: high-level.
+synthesis"; infobox hazards "toxic, corrosive"; "It is fatal if
+inhaled". Used on the precursors material page. Tier: high-level.
 
 **WIKI-DIBORANE** — Wikipedia, *Diborane*.
 <https://en.wikipedia.org/wiki/Diborane> "a highly toxic, colorless, and

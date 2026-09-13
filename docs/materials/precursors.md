@@ -45,8 +45,11 @@ Silane "has one dominant application, as a precursor to elemental
 silicon, particularly in the semiconductor industry".[^wiki-silane] In a
 furnace it gives amorphous or polycrystalline silicon, whose structure
 Kamins related to deposition temperature;[^kamins-1980] with oxygen or
-N₂O it gives oxide in HDP and PECVD tools, and with ammonia it gives
-nitride.[^adams-1981-pecvd][^nguyen-1999] Its hazard is ignition: silane
+N₂O it gives oxide in HDP and PECVD
+tools,[^adams-1981-pecvd][^nguyen-1999] and with ammonia it gives
+nitride: Denisse et al. covered "the entire range of compositions from
+silicon oxide to silicon nitride" from SiH₄, N₂O and
+NH₃.[^denisse-1986] Its hazard is ignition: silane
 "undergoes spontaneous combustion in air, without the need for external
 ignition",[^wiki-silane] and Britton's paper on "the unusual combustion
 hazards of silane and its chlorides" gives "new experimental data
@@ -280,8 +283,9 @@ practice, standards and safety data.
   ventilated gas cabinets, which Wikipedia describes as storage "for
   protection from external fire or from any leak".[^wiki-industrial-gas]
 * **Toxic and corrosive gases.** Ammonia's NIOSH IDLH is "300
-  ppm";[^niosh-nh3] diborane's is "15 ppm";[^niosh-diborane] WF₆ and SiF₄
-  are corrosive and give HF with moisture.[^wiki-wf6][^wiki-sif4]
+  ppm";[^niosh-nh3] diborane's is "15 ppm";[^niosh-diborane] WF₆
+  "gives HF on contact with water",[^wiki-wf6] and SiF₄ is corrosive and "fatal if
+  inhaled".[^wiki-sif4]
 * **By-products and exhaust.** Dichlorosilane nitride furnaces make
   ammonium chloride, which condenses below about 125 °C, and trap
   efficiency "is therefore an important factor in the successful
