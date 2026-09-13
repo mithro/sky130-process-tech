@@ -139,7 +139,9 @@ memory (SKY130's recipe is not public):
 ## Machines typically used
 
 * **{ref}`Dielectric/nitride plasma etcher <machine-plasma-etcher-dielectric>`**, 200 mm: Lam {term}`TCP` 9400
-  series, Applied Materials DPS Centura; or a **dielectric etcher** (Lam
+  series, Applied Materials DPS Centura
+  ({ref}`silicon and polysilicon etcher class <machine-plasma-etcher-silicon>`);
+  or a **{ref}`dielectric etcher <machine-plasma-etcher-dielectric>`** (Lam
   Exelan, Applied MxP) for a fluorocarbon-only recipe
   ({ref}`category-etch`).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** and **{ref}`wet bench <machine-wet-bench>`** for the strip and the
