@@ -120,9 +120,9 @@ The end stations themselves come from other implanter lines. The batch
 NV-GSD-HE combined "the GSD end station and the LINAC
 technology";[^axcelis-history] the NV-GSD/VHE uses the "source,
 injector and end station" of the NV-GSD/HE, and Eaton claimed for both
-"excellent control over differential channeling";[^wilson-1996] the single-wafer VIISta 3000 uses "the common
-endstation and control system developed for VIISta series ion
-implanters".[^tokoro-2000] None of the high-energy sources cited here
+"excellent control over differential channeling";[^wilson-1996] the
+single-wafer VIISta 3000 uses "the common endstation and control system
+developed for VIISta series ion implanters".[^tokoro-2000] None of the high-energy sources cited here
 describes a charge-control system. Charge-up damage grows with beam
 current,[^tanjyo-2011] and well implants run at "less than a few hundred
 particle micro-amperes",[^oconnor-1996] so we infer that charging is a

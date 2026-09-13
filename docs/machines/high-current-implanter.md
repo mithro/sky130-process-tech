@@ -136,10 +136,10 @@ al. present Varian's VIISta 80 for "Large Angle Tilt Implants (LATI,
   and 200 keV machines presented at IIT 1996 that "autotune and implant
   high doses with high beam currents";[^lundquist-1996] Todorov et al.
   studied the energy purity of a VIISion 80 PLUS as a function of,
-  among other things, its "disc tilt angle", which we read as a batch
-  disc end station.[^todorov-1998] The VIISta 80 single-wafer
-  high-current implanter followed.[^mezack-2000] Varian Semiconductor was acquired by Applied
-  Materials in 2011.[^wiki-varian]
+  among other things, its "disc tilt angle"; we read the disc as a batch
+  end station.[^todorov-1998] The VIISta 80 single-wafer high-current
+  implanter followed.[^mezack-2000] Varian Semiconductor was acquired by
+  Applied Materials in 2011.[^wiki-varian]
 
 Eaton spun its implanter business off as Axcelis Technologies in
 2000.[^wiki-axcelis] The {ref}`category page <category-implant>` lists
