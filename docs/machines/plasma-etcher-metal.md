@@ -255,7 +255,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   and TiW.[^skw-01]
 * **Stopping on tungsten plugs and thin dielectrics.** The aluminium
   over-etch lands on oxide and on the tops of the tungsten plugs
-  (SkyWater lists "Lam/Novellus PECVD Tungsten – plug fill"[^skw-01]),
+  (SkyWater lists "Lam/Novellus PECVD Tungsten – plug fill"[^skw-01];
+  {ref}`tungsten CVD page <machine-tungsten-cvd>`),
   with selectivity to the plugs ({ref}`MM1E <step-114>`); chlorine etched
   tungsten at no more than 90 nm/min in Fischl and Hess's
   conditions;[^fischl-1987] the capacitor

@@ -232,7 +232,7 @@ Applied's Producer; these are readings of the names, and the vendor
 line lists Lam, Novellus and AMAT together.[^skw-01] No SACVD tool, no
 doped PECVD oxide and no deposition temperatures are listed; the only
 doped oxide on the page is the HDP entry, "doped and phos doped"
-(HDP-CVD page).[^skw-01]
+({ref}`HDP-CVD page <machine-hdp-cvd>`).[^skw-01]
 
 ### Strength of the evidence
 
@@ -273,7 +273,7 @@ likely used at SkyWater"), as collected on the machines index:
   {ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`,
   {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`,
   {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>`; see the
-  HDP-CVD page.
+  {ref}`HDP-CVD page <machine-hdp-cvd>`.
 
 The grades follow the film each page describes. The TEOS entry is the
 inference for the cap and fuse oxides, on the TEOS oxide under the
@@ -379,6 +379,8 @@ pressures, thicknesses and chemistries are not public.
 
 * {ref}`category-deposition` — PECVD film chemistry and the deposition
   steps of SKY130.
+* {ref}`machine-hdp-cvd` — the gap-fill class that shares the
+  inter-level oxide steps.
 * {ref}`machine-vertical-furnace-lpcvd` — the batch alternative for the
   front-end nitrides and oxides.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
