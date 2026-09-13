@@ -18,7 +18,8 @@ opening windows over the PMOS channels that are to have a raised
 threshold. Two implants follow, in the sequence this reference
 describes, through
 the same resist — the P-channel implant {ref}`PCHI <step-023>` and the
-P-channel BF₂ implant {ref}`PNCHI <step-024>` — and the resist is
+second P-channel implant {ref}`PNCHI <step-024>` (BF₂ on this
+reference's reading) — and the resist is
 stripped at {ref}`PCHIS <step-025>`.
 
 A note on the name. The step list used in this reference gives the name

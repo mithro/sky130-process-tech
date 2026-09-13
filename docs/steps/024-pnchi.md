@@ -16,8 +16,10 @@
 {ref}`HVTPM <step-022>`, following {ref}`PCHI <step-023>` without a
 strip in between. This reference describes it as a boron difluoride
 implant; no public document states the species, and the reading is an
-inference from practice and from SkyWater's implanter species list,
-which includes "BF2" (below).[^skw-01]
+inference from the Round Rock/Micron multi-Vt patent, which follows an
+arsenic Vt adjustment with "a boron type of implant such as
+BF2",[^pat-vt-rrr] and from SkyWater's implanter species list, which
+includes "BF2".[^skw-01]
 Boron difluoride (BF₂⁺) is the standard way to put boron very close to
 the silicon surface, because the molecular ion breaks up on impact and
 "only 11/49 of its energy is carried by the boron atom", so a beam
@@ -64,7 +66,7 @@ shallow boron dose in a high-Vt PMOS:
    dose at the channel surface changes the source/drain extension
    junction abruptness and the gate-edge field; some high-Vt devices are
    tuned this way (the Round Rock/Micron patent describes a "boron type
-   of implant such as BF₂, or Indium" as a second Vt adjustment applied
+   of implant such as BF2, or Indium" as a second Vt adjustment applied
    in combination with an arsenic first adjustment).[^pat-vt-rrr]
 
 Whichever applies, the aim is the same: a `pfet_01v8_hvt` with the
