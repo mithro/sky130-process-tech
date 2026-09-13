@@ -169,8 +169,9 @@ and the pre-oxidation clean as part of those steps (see the
   Company, JSR Corporation and Tokyo Ohka Kogyo America as photoresist
   suppliers.[^sec-01]
 * **Organic BARC** and its solvent; **HMDS** adhesion promoter.
-* **Developer** — aqueous 2.38 % (0.26 N) TMAH;[^txt-02] SkyWater's S-1
-  names Air Products (Moses Lake) as a developer supplier.[^sec-01]
+* **Developer** — aqueous 2.38 % (0.26 N) TMAH;[^txt-02] SkyWater's 2021 S-1
+  names "Air Products & Chemicals, Inc., Moses Lake (developer)" without
+  tying it to a layer.[^sec-01]
 * **Edge-bead remover**, DI water, nitrogen.
 * **The tunnel reticle** — a chrome-on-quartz photomask; with a 0.41 µm
   minimum feature no {term}`OPC` would be needed.
