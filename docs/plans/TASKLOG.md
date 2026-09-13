@@ -67,7 +67,7 @@ deep-dive entries per step page and twelve per category page
 - [x] Process overview page (`docs/overview/index.md`) — reviewed and merged 2026-09-13
 - [x] References landing page (`docs/references/index.md`) — 2026-09-13
 - [x] (2026-09-13) Materials index: cite or label the typical values flagged by the 2026-09-13 review (Si₃N₄/SiO₂ thickness ranges, IMP Ti/TiN thickness, H₃PO₄ 85 %, H₂O₂ 30 %, TMAH 2.38 wt.%, Ti:W 10 wt.%); the sheet's "Masks" tab lists 37 rows (incl. PSDI) vs 36 mask steps
-- [ ] Lithography of vias 2–4 after the sheet's mask-type record (Sheet4: 248 nm attenuated PSM for VIM2/VIM3, 248 nm binary for VIM4, our reading): update VIM4 (159) i-line inference and mercury-lamp bullet, VIM2 (129) and VIM3 (144) reticle-type open questions, and the machines index VIM4 i-line assignment — after sweep part 2 merges
+- [~] (branch `topic/via-litho`) Lithography of vias 2–4 after the sheet's mask-type record (Sheet4: 248 nm attenuated PSM for VIM2/VIM3, 248 nm binary for VIM4, our reading): update VIM4 (159) i-line inference and mercury-lamp bullet, VIM2 (129) and VIM3 (144) reticle-type open questions, and the machines index VIM4 i-line assignment — after sweep part 2 merges
 - [x] Glossary: 144 terms, linked on first use across all written pages; inventory keyed for every label (748 entries) — merged 2026-09-12
 - [x] Glossary and inventory top-up for steps 076–117 (204 terms; 951 inventory entries) — merged 2026-09-12
 - [ ] References / bibliography
