@@ -497,8 +497,8 @@ given shuttle."[^mask-renders] Its metadata carries no plate ID, so a
 render is tied to a plate in the sheet only by the mask
 acronym.[^mask-renders][^steps-sheet] Several of its notes describe
 sizing (for example "DNM = dnwell sized by cdnm.3"), but the render
-jobs list only drawn layers, so we read the images as unsized drawn
-data. A render therefore shows whether the tape-out layouts draw on a
+jobs list only drawn and fill layers, or Boolean expressions over them,
+with no sizing step, so we read the images as unsized drawn data. A render therefore shows whether the tape-out layouts draw on a
 mask's layers, not what the plate carries. The shape totals the site
 prints are not comparable between runs, and this page does not quote
 them: on MPW-1 one die accounts for 99 % of the `FOM` count, and that
@@ -567,8 +567,9 @@ README names "fab-derived masks (HVTPM, LVTNM, NCM, NTM, HVNTM)";
 the drawn data, not SkyWater's mask-generation recipe: the site gives
 no source for them, and some of its notes contradict its own
 expressions (below). The layer names are those of
-`gds_layers.csv`;[^pdk-06] 201:20 is not in that file, and the
-{ref}`overview-sky130b-reram` page reads it as `r1c`.
+`gds_layers.csv`;[^pdk-06] 201:20 and the datatype-28 fill layers are
+not in that file, and the {ref}`overview-sky130b-reram` page reads
+201:20 as `r1c`.
 
 | Mask | This page's pairing (from the PDK files) | Renders site (`expr` verbatim, or layers rendered) | In layer names |
 |------|------------------------------------------|----------------------------------------------------|----------------|
@@ -578,16 +579,18 @@ expressions (below). The layer names are those of
 | {ref}`HVNTM <step-068>` | `hvntm` 125:20, "OR-ed with the CL" | `125:20 OR ((65:20 AND 93:44 AND 75:20) NOT 81:2)` | `hvntm` OR ((`diff` AND `nsdm` AND `hvi`) NOT `areaid.ce`) |
 | NCM (no mask step) | `ncm` 92:44 | `92:44 OR ((64:20 NOT 75:20) NOT 125:44)` | `ncm` OR the `HVTPM` expression |
 | VIMC (no mask step) | none; `r1v` on the {ref}`overview-sky130b-reram` page | `68:44 AND 201:20` | `via` AND 201:20 |
-| {ref}`LVOM <step-044>` | the complement of `hvi` 75:20 *(inference)* | layers 75:20 and 80:20; note "LVOM = hvi OR tunm" | `hvi` and `tunm` |
+| {ref}`LVOM <step-044>` | the complement of `hvi` 75:20 *(inference)* | layers 75:20 and 80:20; note "LVOM = hvi OR tunm and the SKY130 layer sheet" | `hvi` and `tunm` |
 | {ref}`PWBM <step-026>` | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | layer 19:44 | `pwbm` |
 | {ref}`RPM <step-049>` | `rpm` 86:20; `urpm` 79:20 *(inference)* | layer 86:20 | `rpm` |
-| {ref}`MM4 <step-154>` | `met4` 71:20; `met4` fuse 71:17 | layers 71:20 and 51:28 | `met4` and a fill layer the site lists for the mask; no fuse purpose |
+| {ref}`MM4 <step-154>` | `met4` 71:20; `met4` fuse 71:17 | layers 71:20 and 51:28 | `met4` and the fill layer 51:28; no fuse purpose |
 
 * **Where the readings differ.** For `HVTPM` this page follows the
   PDK's description of `hvtp`, "High-Vt LVPMOS implant";[^pdk-06] the
-  renders build the mask from `nwell`, `hvi` and `lvtn` without `hvtp`,
-  and the note says "the fab algorithm says do NOT OR hvtp in", naming
-  no source.[^mask-renders] For `LVTNM` the renders add a created part
+  renders build the mask from `nwell`, `hvi` and `lvtn` without `hvtp`;
+  the note says the mask is "created over (LV nwell = nwell NOT hvi) NOT
+  lvtn, plus hvtp only where nwell overlaps a varactor; the fab
+  algorithm says do NOT OR hvtp in", naming no source, and the
+  expression omits the varactor term.[^mask-renders] For `LVTNM` the renders add a created part
   inside `nwell`. For `LVOM` they show `hvi` OR `tunm`, where this page
   reads the mask as everything outside `hvi`; since the renders show
   drawn shapes, not photomask artwork, the two may describe the same
@@ -599,13 +602,17 @@ expressions (below). The layer names are those of
 * **Where they agree.** The `NTM` and `HVNTM` expressions are
   consistent in kind with this page's readings; for `HVNTM` the created
   part is one reading of the PDK's unexpanded "CL". The renders use the
-  same layers as this page for `FOM` (`diff` and `tap`), `ONOM`
-  (`tunm`), `CTM1` (`mcon`), `URPM` (`urpm`) and `CAP2M`
-  (`cap2m`).[^mask-renders] Both derive from the same public files, so
+  same drawn layers as this page for `FOM` (`diff` and `tap`), `ONOM`
+  (`tunm`), `CTM1` (`mcon`), `URPM` (`urpm`) and `CAP2M` (`cap2m`); for
+  `FOM`, `P1M`, `LI1M` and `MM1`–`MM5` they also include a datatype-28
+  layer the site lists as fill (23:28, 28:28, 56:28, 36:28, 41:28,
+  34:28, 51:28, 59:28), none of which is in
+  `gds_layers.csv`.[^mask-renders][^pdk-06] Both derive from the same public files, so
   the agreement is not independent confirmation.
 * **Notes that contradict the expressions.** The `HVTPM` note ends
   "Rendered as nwell = a superset", but the expression subtracts `hvi`
-  and `lvtn`. The `LVTNM`, `HVNTM` and `NCM` notes end "only the drawn
+  and `lvtn`, and it describes a varactor term that the expression
+  does not include. The `LVTNM`, `HVNTM` and `NCM` notes end "only the drawn
   part is rendered", but each expression includes its created part, and
   the `LVTNM` note describes a further term, "(LV nwell over
   varactors)", that is not in the expression.[^mask-renders]
@@ -618,11 +625,10 @@ expressions (below). The layer names are those of
 
 ### Notes shared with the sheet
 
-* **Same wording.** The sheet's "Info" notes for `RRM`, `VIMC` and
-  `CAP2M` repeat the renders site's wording: "sky130B RRAM tier
+* **Same wording.** The sheet's "Info" notes for `RRM` and `VIMC`
+  repeat the renders site's wording: "sky130B RRAM tier
   (met1-met2)" and `r1c` "GDS 201/20" for `RRM`; "r1v, the upper half"
-  of via 1 and "Not CTM1/mcon" (the site: "NOT CTM1/mcon") for `VIMC`;
-  "Capacitor mask" for `CAP2M`. The sheet's level names for the
+  of via 1 and "Not CTM1/mcon" (the site: "NOT CTM1/mcon") for `VIMC`. The sheet's level names for the
   local-interconnect, contact, via and metal masks ("Via 0 (???→M0)",
   "LI (Metal 0)", …) are identical to the site's.[^steps-sheet][^mask-renders]
   This page therefore does not cite either source as corroborating the
