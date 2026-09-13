@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 101 of 171 |
+| **Step number** | 101 of 171[^steps-sheet] |
 | **Step code** | `LITIN` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | MOL — silicide and local interconnect |
@@ -358,3 +358,6 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
     and Reduction of VIA Contact Resistance using a Modern Plasma
     Asher", *MRS Proceedings* **495** (1997).
     <https://doi.org/10.1557/PROC-495-345>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

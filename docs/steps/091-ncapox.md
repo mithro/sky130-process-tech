@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 91 of 171 |
+| **Step number** | 91 of 171[^steps-sheet] |
 | **Step code** | `NCAPOX` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | MOL — silicide and local interconnect |
@@ -305,3 +305,6 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
     deposition of silicon-based dielectric films for integrated
     circuits", *IBM Journal of Research and Development* **43**(1.2),
     109–126 (1999). <https://doi.org/10.1147/rd.431.0109>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 100 of 171 |
+| **Step number** | 100 of 171[^steps-sheet] |
 | **Step code** | `WCMPLI` |
 | **Category** | {ref}`Chemical-mechanical planarisation <category-cmp>` |
 | **Phase** | MOL — silicide and local interconnect |
@@ -340,3 +340,6 @@ fab (SKY130's recipe is not public):
     apparatus for chemical-mechanical polishing*, US 5,433,651 A,
     granted 1995-07-18.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5433651>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

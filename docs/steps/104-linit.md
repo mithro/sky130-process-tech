@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 104 of 171 |
+| **Step number** | 104 of 171[^steps-sheet] |
 | **Step code** | `LINIT` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
 | **Phase** | MOL — silicide and local interconnect |
@@ -336,3 +336,6 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
     Dichlorosilane and Ammonia by Single Wafer Rapid Thermal
     Processing", *Electrochemical and Solid-State Letters* **4**(5),
     F11 (2001). <https://doi.org/10.1149/1.1359056>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

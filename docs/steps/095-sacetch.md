@@ -3,7 +3,7 @@
 
 | | |
 |---|---|
-| **Step number** | 95 of 171 |
+| **Step number** | 95 of 171[^steps-sheet] |
 | **Step code** | `SACETCH` |
 | **Category** | {ref}`Etch <category-etch>` |
 | **Phase** | MOL — silicide and local interconnect |
@@ -330,3 +330,6 @@ fab (SKY130's recipe is not public):
 [^berger-1972]: H. H. Berger, "Models for contacts to planar devices",
     *Solid-State Electronics* **15**(2), 145–158 (1972).
     <https://doi.org/10.1016/0038-1101(72)90048-2>
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
