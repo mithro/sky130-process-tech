@@ -7,7 +7,11 @@ each class does in the SKY130 flow, quotes what SkyWater has published
 about its own tools of that class, and lists the steps that use it. It
 is compiled from the two machine sections that every step page carries,
 "Machines typically used" and "Machines likely used at SkyWater", read
-on all 171 pages; it adds no evidence of its own.
+on all 171 pages; it adds no evidence of its own. Where the step pages
+differ from each other or from the sources they quote, the differences
+are listed under
+{ref}`Open questions and inconsistencies <machines-inconsistencies>`
+rather than resolved here.
 
 ## Equipment classes in a 200 mm, 130 nm fab
 
@@ -299,6 +303,228 @@ Notes on the table:
   Akrion bench, and, among the etchers, TiN only on the two metal
   etchers.[^skw-01] The pages that rely on these say so; the list itself
   still names no step.
+
+(machines-inconsistencies)=
+## Open questions and inconsistencies
+
+The items below were found while extracting the machine sections of all
+171 step pages and comparing the tool names they quote with SkyWater's
+capabilities page and maintenance-technician profile, both re-read on
+2026-09-13.[^skw-01][^skw-07] They are recorded so that the step pages
+can be made consistent later; no step page has been changed here.
+
+### Tool names written differently
+
+* **"Gasonic PEP".** SkyWater writes "Gasonic PEP".[^skw-01] The
+  SkyWater sections of 31 step pages write "Gasonics PEP" (from
+  {ref}`STIE <step-006>` to {ref}`PDME <step-169>`), and 7 write
+  "Gasonic PEP" ({ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`,
+  {ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>`,
+  {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`,
+  {ref}`MM5E <step-163>`); several implant-strip pages use both, one in
+  the machine section and the other in their reference lists.
+* **"Mattson Aspen2".** SkyWater writes "Mattson Aspen2".[^skw-01] The
+  machine sections from {ref}`STIE <step-006>` to
+  {ref}`NSDIS <step-087>` (21 pages) write "Mattson Aspen 2"; those
+  from {ref}`LICM1E <step-094>` to {ref}`PDME <step-169>` (17 pages)
+  write "Aspen2".
+* **"EKS265, EKC270".** SkyWater writes "EKS265, EKC270
+  solvents".[^skw-01] {ref}`SACETCH <step-095>` and
+  {ref}`LI1ME <step-103>` write "EKC265/EKC270"; the 14 etch pages from
+  {ref}`CTME <step-108>` onwards quote "EKS265, EKC270". The
+  {ref}`public-sources inventory <references-public-sources>` has
+  "EKS265, EKC270" in its SKW-01 entry and "EKC265/EKC270" in its
+  section 9 table.
+* **"TEL ProZ Lithius track".** SkyWater writes "TEL ProZ Lithius
+  track".[^skw-01] The mask pages from {ref}`FOM <step-004>` to
+  {ref}`CAPM <step-137>` (28 pages) write "TEL ProZ/Lithius", those
+  from {ref}`MM3 <step-139>` to {ref}`PDM <step-168>` (8 pages) "TEL
+  ProZ Lithius"; the inventory's section 9 table writes "TEL ProZ /
+  Lithius".
+* **"SEZ223, Davinci".** SkyWater writes "SEZ223, Davinci", with no
+  vendor for the second tool.[^skw-01] Five pages write "SEZ 223"
+  ({ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`,
+  {ref}`GOXETCH <step-046>`, {ref}`BFR <step-060>`,
+  {ref}`SACETCH <step-095>`), most write "DaVinci", and
+  {ref}`BFR <step-060>` and {ref}`SACETCH <step-095>` name the tool
+  "Lam DaVinci" in their SkyWater sections, citing only the
+  capabilities page in that bullet.
+* **"Ag Heatpulse 8808".** SkyWater writes "Ag Heatpulse
+  8808".[^skw-01] The anneal and oxidation pages expand this to "AG
+  Associates Heatpulse 8808" (nine pages) or "AG Heatpulse 8808"
+  ({ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>`); the expansion
+  matches the reseller documentation cited on several of them but is
+  not SkyWater's wording.
+* **The two Axcelis GSD entries.** SkyWater lists "Axcelis GSD High
+  current/energy …" and "Axcelis GSD Hi dose …" as separate
+  entries.[^skw-01] The pages call the first "Axcelis GSD high-energy
+  implanter" ({ref}`DNI <step-008>`) or "Axcelis GSD
+  high-current/high-energy implanter" ({ref}`NWI <step-018>`), the
+  second "Axcelis GSD high-dose implanter" ({ref}`P1I <step-050>`,
+  {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>`), and both together
+  "Axcelis GSD high-current implanters" ({ref}`ASTI <step-065>`,
+  {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`,
+  {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`). Five pages write
+  only "Axcelis GSD" without saying which entry they mean
+  ({ref}`LVTNI <step-015>`, {ref}`PCHI <step-023>`,
+  {ref}`PNCHI <step-024>`, {ref}`DEPI <step-038>`,
+  {ref}`NCHI <step-045>`).
+* **Tool-class names.** The "typically used" sections name the same
+  class in different words, which a future set of machine pages would
+  need to settle: "Downstream plasma asher", "Downstream asher" and
+  "Resist asher"; "Dielectric etcher", "Dielectric / nitride plasma
+  etcher", "Dielectric/nitride etcher" and "Plasma etcher for nitride
+  and oxide"; "DUV (KrF, 248 nm) stepper or scanner", "248 nm (KrF)
+  stepper or scanner", "KrF (248 nm) step-and-scan systems" and "KrF
+  step-and-scan or stepper"; "Rotary CMP polisher" and "Rotary
+  multi-platen CMP polisher".
+
+### Quotations that differ from the source
+
+* {ref}`TUNARCE <step-036>` and {ref}`ONOME <step-042>` quote the DPS II
+  entry as "HBr, Cl2, NF3, …"; SkyWater's entry reads "AMAT DPSII, HBR,
+  Cl2, NF3, CF4, CHF3, O2", as the other etch pages quote
+  it.[^skw-01]
+* Some quotations join separate list items of the capabilities page
+  into one quoted string: "Furnaces are all made by Aviza: wet oxidation
+  to 1150C, dry oxidation to 1150C" ({ref}`GOX100 <step-043>`); "wet
+  oxidation to 1150C, dry oxidation to 1150C" ({ref}`ONO <step-040>`,
+  {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`); and "industry
+  standard HF/SC1/SC2, dilute HF-last with IPA dry"
+  ({ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`). On the
+  capabilities page each of these is a separate line, without the colon
+  or commas.[^skw-01]
+* {ref}`CAP2ME <step-153>` puts "Batch Rotational (EKS265, EKC270
+  solvents …)" in quotation marks; SkyWater gives "Batch Rotational" and
+  "– EKS265, EKC270 solvents, CO2 injected DI" as separate
+  lines.[^skw-01]
+* {ref}`SPOX <step-080>` breaks the quotation "PECVD silane
+  oxide/nitride/oxynitride, C1" across a line after a slash, so that it
+  renders as "oxide/nitride/ oxynitride".
+* The maintenance-technician profile's captions read "a Novellus high
+  density plasma tool" and "a SEZ etcher tool".[^skw-07]
+  {ref}`FILOX <step-011>` quotes "the Novellus high density plasma
+  tool", and {ref}`CMPNIT <step-012>`, {ref}`NS19 <step-013>`,
+  {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`,
+  {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`,
+  {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`,
+  {ref}`WCMP5 <step-148>` and {ref}`CMPM4 <step-157>` quote "the SEZ
+  etcher tool".
+
+### Different tools or grades for analogous steps
+
+* **Contact and via etches.** {ref}`LICM1E <step-094>` names the DPS II
+  as the likely tool by inference and grades the Lam 9400 TCP and Lam
+  4400 "medium/weak"; the metal-contact and via 1–3 etches
+  ({ref}`CTME <step-108>`, {ref}`VIME <step-119>`,
+  {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`) grade the DPS II
+  and Lam 4400 "weak" and do not mention the Lam 9400 TCP;
+  {ref}`VIM4E <step-160>` and {ref}`NSME <step-166>` grade all three
+  "weak"; {ref}`PDME <step-169>` grades the Lam 9400 TCP "medium".
+* **Nitride etches.** {ref}`STINITE <step-005>` and
+  {ref}`ONOME <step-042>` mark the DPS II and the Lam 9400 TCP both as
+  inferences; {ref}`SPE <step-077>` and {ref}`NPCME <step-079>` prefer
+  the Lam 9400 TCP and grade the DPS II "medium"; the Lam 4400 is a
+  "possible legacy home" on {ref}`STINITE <step-005>`, "weak" on
+  {ref}`SPE <step-077>` and absent from {ref}`NPCME <step-079>` and
+  {ref}`ONOME <step-042>`.
+* **Cap oxides.** The silane "C1" oxide as the alternative to the TEOS
+  cap is graded "medium" on {ref}`NCAPOX <step-091>`,
+  {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`,
+  {ref}`NCAPOX5 <step-143>` and {ref}`NFUSOX <step-164>`, but "weak" on
+  {ref}`NCAPOX6 <step-158>`.
+* **Inter-level oxides.** {ref}`NILD2 <step-105>` grades PECVD TEOS
+  "medium" and notes that the HDP entry "mentions only doped films";
+  {ref}`NILD3 <step-115>` to {ref}`NILD6 <step-156>` give the TEOS tool
+  no grade for the step and do not repeat the note. The "C1" silane
+  oxide appears as a weak liner candidate on {ref}`NILD3 <step-115>`,
+  {ref}`NILD4 <step-126>` and {ref}`NILD5 <step-141>` but not on
+  {ref}`NILD2 <step-105>` or {ref}`NILD6 <step-156>`.
+* **The strength of the technician profile.** {ref}`FILOX <step-011>`
+  counts the profile as one of "two SkyWater statements" and grades the
+  HDP tool "strong"; {ref}`PSG <step-089>` grades the same profile
+  "medium". The inventory's scale gives "medium" to job postings and
+  interviews with named employees and "strong" to SkyWater
+  statements.
+* **CMP pages.** The Mirra is graded "strong (SkyWater statement)" on
+  {ref}`CMPNIT <step-012>` and the four tungsten polishes
+  {ref}`WCMP2 <step-111>` to {ref}`WCMP5 <step-148>`; "assignment … follows
+  from the film" on {ref}`CMPM <step-116>`, {ref}`CMPM2 <step-127>`,
+  {ref}`CMPM3 <step-142>` and {ref}`CMPM4 <step-157>`; and an
+  inference "(the list names no steps)" on {ref}`CMPP <step-090>`,
+  {ref}`WCMPLI <step-100>` and {ref}`CMPL <step-106>`. KLA-Tencor AIT
+  and SP1 inspection is named on seven CMP pages but not on
+  {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`,
+  {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>` or
+  {ref}`CMPM4 <step-157>`. Only {ref}`CMPM4 <step-157>` quotes the Mirra
+  entry's "Track ammonia clean"; no page quotes its "IPA clean", while
+  the CMP pages record that no brush scrubber is named.[^skw-01]
+* **Tilted tip and halo implants.** The Axcelis 8250 is the inferred
+  tool on {ref}`BHI <step-066>` and {ref}`LDBHI <step-073>`, graded
+  "medium" on {ref}`HVASTI <step-069>` and {ref}`LDASTI <step-072>` and
+  "weak-to-medium" on {ref}`ASTI <step-065>`; the GSD entries are the
+  inferred tools on {ref}`ASTI <step-065>` and "weak" on the other four.
+  The grades rest on each page's reading of dose and tilt, but the
+  scale words differ.
+* **Cleans before anneals and furnaces.** The DNS and FSI Mercury
+  benches are graded "strong" for the pre-furnace clean on
+  {ref}`SMAT <step-001>` and {ref}`BOX <step-002>` but "strong for
+  existence" on {ref}`LINOX <step-010>`; they are the inferred
+  pre-anneal clean on {ref}`PWDEIS <step-033>` and
+  {ref}`LDASTIS <step-074>`, while {ref}`NSDIS <step-087>`, before the
+  source/drain anneal, says "which bench runs the pre-anneal clean is
+  not public". The Akrion bench is graded "strong" on
+  {ref}`DNIS <step-009>` and "strong for existence" on the other implant
+  strips.
+* **Ashers after crusted implants.** {ref}`ASTIS <step-067>`,
+  {ref}`PDIS <step-084>` and {ref}`NSDIS <step-087>` single out the
+  Iridia's hydrogen chemistry and low temperature for the implant
+  crust; other strips after high-dose or high-energy implants, such as
+  {ref}`DNIS <step-009>` and {ref}`P1IS <step-051>`, make no choice.
+* **Alternatives left ungraded.** Every oxidation page that names the
+  Heatpulse as an alternative grades it "weak" except
+  {ref}`LINOX <step-010>`, which says only that "an RTP liner is not
+  excluded".
+* **Metrology on mask pages.** CD metrology (AMAT Verity and VeraSEM) is
+  named on most mask pages but not on {ref}`DNM <step-007>`,
+  {ref}`NWM <step-017>`, {ref}`PWBM <step-026>`,
+  {ref}`PWDEM <step-030>`, {ref}`RRPM <step-052>`,
+  {ref}`URPM <step-055>`, {ref}`NSM <step-165>` or
+  {ref}`PDM <step-168>`, where the pages name overlay only.
+
+### Open questions
+
+* **"PECVD Tungsten".** SkyWater lists "Lam/Novellus PECVD
+  Tungsten";[^skw-01] the five tungsten-fill pages quote the entry but
+  describe a WF₆-based blanket CVD (reading pulsed nucleation from the
+  "PNL option") and head their bullet "CVD tungsten" or "tungsten CVD".
+  None of them discusses the word "PECVD", and the capabilities page
+  does not explain it.
+* **The dielectric etcher.** No dielectric etcher appears on the
+  capabilities page;[^skw-01] whether the contact, via, nitride-seal and
+  pad etches run on the listed poly/silicon etchers or on a tool the
+  page does not list is not public.
+* **Models behind generic entries.** "C1", "C2 and Producer", "AMAT PVD
+  Metal", the Lam/Novellus HDP and the "PECVD Tungsten" system are read
+  on the step pages as Novellus Concept One and Concept Two, an Applied
+  Materials Producer, an Endura-class PVD platform, a SPEED-class HDP
+  system and an Altus-class tungsten system; SkyWater states none of
+  these models.[^skw-01]
+* **Which exposure class and which track.** Whether metal 3 and metal 4
+  are printed on i-line or DUV tools, and which of the three tracks
+  serves which exposure tool, are not public.
+* **The two GSD entries.** Whether "Axcelis GSD High current/energy" and
+  "Axcelis GSD Hi dose" are two machines or two configurations is not
+  stated;[^skw-01] several implant pages depend on which entry reaches
+  which dose and energy.
+* **Tools with no named SkyWater model.** No post-CMP brush scrubber,
+  production wafer prober, plasma nitridation chamber or in-line
+  film-thickness, stress or sheet-resistance gauge is named in any
+  public SkyWater source the step pages found.
+* **Age of the list.** The capabilities page is a current list for a
+  fab that also runs 90 nm and other flows and was expanded in
+  2020;[^skw-01][^sec-02] which of the listed tools, if any, were used
+  when the S8 process was set up at Cypress is not public.
 
 <!-- footnotes -->
 
