@@ -119,14 +119,14 @@ which is a different (later-generation) precursor.
 
 ## Resources required
 
-* **Dichlorosilane (SiH₂Cl₂)** and **ammonia (NH₃)** process
+* **{ref}`Dichlorosilane <material-precursors>` (SiH₂Cl₂)** and **ammonia (NH₃)** process
   gases.[^wiki-sin]
-* **Nitrogen** for purge and ramp.
+* **{ref}`Nitrogen <material-process-gases>`** for purge and ramp.
 * **{ref}`HCl-tolerant exhaust <material-hardware-consumables>` / scrubber** — the reaction by-product is HCl
   and ammonium chloride condenses in the pump lines, a well-known
   maintenance load on nitride tubes.[^txt-02]
 * **Quartz or silicon-carbide tube and boat**; tube-cleaning
-  chemistry (typically NF₃ or a wet {ref}`HF clean <material-wet-chemicals>`).[^txt-02]
+  chemistry (typically {ref}`NF₃ <material-etch-gases>` or a wet {ref}`HF clean <material-wet-chemicals>`).[^txt-02]
 * **{ref}`Monitor wafers <material-substrates>`.**
 
 ## Related steps and cross-references

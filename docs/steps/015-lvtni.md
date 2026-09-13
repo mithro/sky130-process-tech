@@ -167,11 +167,11 @@ below are typical or taken from contemporaneous patents.
 
 ## Resources required
 
-* **Boron trifluoride (BF₃)** as the source gas for B⁺ and
+* **{ref}`Boron trifluoride <material-dopant-sources>` (BF₃)** as the source gas for B⁺ and
   BF₂⁺[^wiki-implant] (category page); **arsine (AsH₃)** or **phosphine
   (PH₃)** if the implant is n-type; **solid indium** in a vaporiser oven
   if indium is used (category page).
-* **Source support gases** (argon, xenon, hydrogen); **liquid nitrogen /
+* **Source support gases** ({ref}`argon <material-process-gases>`, xenon, hydrogen); **liquid nitrogen /
   cryopump** consumables; high-purity nitrogen vent gas.
 * **Ion-source consumables** (filaments or cathodes, arc-chamber liners,
   extraction electrodes).

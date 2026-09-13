@@ -118,8 +118,8 @@ fab:
 
 ## Resources required
 
-* **Oxygen, nitrogen, {term}`forming gas` ({ref}`H₂/N₂ <material-anneal-ambients>`)** for the
-  ash;[^skw-01] **CF₄**, listed on the Iridia and Mattson ashers,[^skw-01]
+* **{ref}`Oxygen <material-process-gases>`, nitrogen, {term}`forming gas` ({ref}`H₂/N₂ <material-anneal-ambients>`)** for the
+  ash;[^skw-01] **{ref}`CF₄ <material-etch-gases>`**, listed on the Iridia and Mattson ashers,[^skw-01]
   attacks the exposed trench silicon and pad oxide and would, we infer,
   be omitted here (category page).
 * **Sulphuric acid and hydrogen peroxide** (SPM; {ref}`wet chemicals <material-wet-chemicals>`).

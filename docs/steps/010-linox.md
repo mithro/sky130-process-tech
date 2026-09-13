@@ -141,10 +141,10 @@ width because of the encroachment under the nitride edge.
 
 ## Resources required
 
-* **Oxygen** (dry) and possibly **hydrogen** for steam.[^wiki-thox]
+* **{ref}`Oxygen <material-process-gases>`** (dry) and possibly **hydrogen** for steam.[^wiki-thox]
 * **Nitrogen** for purge and ramp.
 * **Optional HCl or trans-dichloroethylene (DCE)** for chlorine
-  gettering; **NH₃ or NO** if a nitridation is used.[^txt-01]
+  gettering; **{ref}`NH₃ <material-precursors>` or NO** if a nitridation is used.[^txt-01]
 * **Dilute HF, SC-1, SC-2 chemicals** ({ref}`wet chemicals <material-wet-chemicals>`) for the pre-clean.[^wiki-rca]
 * {ref}`Quartz consumables <material-hardware-consumables>` and {ref}`monitor wafers <material-substrates>`.
 

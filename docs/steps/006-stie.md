@@ -152,7 +152,7 @@ W/WN".[^skw-01]
 
 ## Resources required
 
-* **HBr, Cl₂, O₂** main-etch gases; **CF₄** for
+* **{ref}`HBr <material-etch-gases>`, Cl₂, {ref}`O₂ <material-process-gases>`** main-etch gases; **CF₄** for
   breakthrough.[^skw-01][^txt-05]
 * **Helium** backside cooling; **N₂** purge.
 * **NF₃ or SF₆/O₂** chamber clean (SkyWater lists NF₃ on the
