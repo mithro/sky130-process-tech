@@ -238,7 +238,9 @@ range stops at "1e14".[^skw-01]
 The dopant gases and the ion-source parts of an implanter are listed in
 the {ref}`materials index <materials-index>`; what is specific to a
 medium-current tool is summarised here. None of the SkyWater sources
-describes the fab's gas delivery or abatement.
+describes the fab's gas delivery or abatement. Monitor wafers are
+described on the {ref}`substrates and test wafers <material-substrates>`
+page.
 
 * **Source gases.** Boron trifluoride for B⁺ and BF₂⁺, arsine and
   phosphine for As⁺ and P⁺.[^wiki-implant] Phosphine is "a highly toxic
@@ -346,6 +348,7 @@ not public.
   hazards.
 * {ref}`category-strip` — removal of the implant resist after each
   implant.
+* {ref}`material-substrates` — monitor wafers for dose and uniformity.
 
 ## References
 

@@ -260,7 +260,9 @@ than {ref}`TUNM <step-035>` — cites the posting.
 What is specific to inspection is summarised here; the
 {ref}`materials index <materials-index>` lists monitor wafers. None of
 the SkyWater sources describes the fab's inspection standards, recipes or
-defect database.
+defect database. Test, monitor and premium particle-counting wafers and
+their standards are described on the
+{ref}`substrates and test wafers <material-substrates>` page.
 
 * **Calibration standards.** Wafers carrying deposited polystyrene-latex
   spheres of known size, against which sensitivity is
@@ -343,6 +345,8 @@ plans and defect limits are not public.
   lithography area.
 * {ref}`machine-film-thickness-metrology` — the thickness and stress gauges run on the same monitor
   wafers.
+* {ref}`material-substrates` — test, monitor and particle-counting
+  wafers and their standards.
 * {ref}`machine-cross-section-sem-profilers` — sectioning and review of defects in physical analysis.
 * {ref}`machine-parametric-tester` — the electrical defect structures measured at
   e-test.

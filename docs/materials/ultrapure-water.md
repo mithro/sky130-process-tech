@@ -204,8 +204,8 @@ standards and literature statements.
   actually improve final water quality by using a cleaner stream for the
   feed".[^itrs-2001-yield] Cartwright described a semiconductor plant
   where "over 90% of the rinse water is purified back to 18 megohm/cm
-  quality for reuse" (sic, for megohm·cm);[^cartwright-1985] Ohmi's clean reduced chemical and
-  ultrapure water use to "less than 1% and 5%,
+  quality for reuse" (sic, for megohm·cm);[^cartwright-1985] Ohmi's clean
+  reduced chemical and ultrapure water use to "less than 1% and 5%,
   respectively".[^ohmi-1996] Tool makers promote lower DI water use per
   wafer.[^screen-ss3200]
 * **Waste water.** Rinse water carries acids, fluoride, solvent and

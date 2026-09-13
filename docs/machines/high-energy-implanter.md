@@ -205,7 +205,9 @@ medium-current 8250.[^skw-01]
 The dopant gases and ion-source parts are listed in the
 {ref}`materials index <materials-index>`; what is specific to a
 high-energy tool is summarised here. None of the SkyWater sources
-describes the fab's gas delivery, abatement or radiation protection.
+describes the fab's gas delivery, abatement or radiation protection. The
+monitor wafers the well-implant step pages name are described on the
+{ref}`substrates and test wafers <material-substrates>` page.
 
 * **Source gases.** Phosphine for the n-type wells and boron trifluoride
   for the p-type wells;[^wiki-implant] phosphine is "a highly toxic
@@ -292,6 +294,7 @@ not public.
 * {ref}`materials-index` — dopant gases, ion-source parts and their
   hazards.
 * {ref}`category-strip` — removal of the thick well-implant resist.
+* {ref}`material-substrates` — monitor wafers.
 
 ## References
 

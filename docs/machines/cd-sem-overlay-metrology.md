@@ -233,7 +233,9 @@ that overlay "is measured only from the second layer onwards".
 What is specific to CD and overlay metrology is summarised here; the
 {ref}`materials index <materials-index>` lists reference and monitor
 wafers. None of the SkyWater sources describes the fab's metrology
-standards or recipe management.
+standards or recipe management. Reference and monitor wafers are
+described on the {ref}`substrates and test wafers <material-substrates>`
+page.
 
 * **Electron source and vacuum.** A field-emission electron gun (the
   8100XP lists a "Schottky Electron source"[^gce-kla8100]) in a
@@ -300,6 +302,7 @@ sampling plans are not public.
   and the step assignments.
 * {ref}`masks-index` — the 36 masks and their minimum CDs.
 * {ref}`category-etch` — the etches measured after etch.
+* {ref}`material-substrates` — reference and monitor wafers.
 
 ## References
 
