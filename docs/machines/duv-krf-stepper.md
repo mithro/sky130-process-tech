@@ -267,8 +267,9 @@ the fab's laser gases, laser service or tool environment.
   to a level.[^sec-01] The throughput figures above assume doses of
   30–50 mJ/cm².[^asml-pas5500-350c][^asml-750e]
 * **Reticles.** Six-inch reticles, binary or attenuated phase-shift; the
-  process-steps sheet records 248 nm mask types for the via 2, via 3 and
-  via 4 plates only ({ref}`masks-index`).[^steps-sheet] SkyWater lists
+  process-steps sheet records mask-type codes for the via 2, via 3 and
+  via 4 plates that we read as 248 nm types, and for no other plates
+  ({ref}`masks-index`).[^steps-sheet] SkyWater lists
   "Mask GDS to reticle" and "OPC modeling" among its
   services.[^skw-01]
 * **Track link.** The NSR-S204B lists an "In-Line Track
@@ -303,9 +304,10 @@ settings and resists per layer are not public.
   {ref}`VIM4 <step-159>` page infers from its plate record, the i-line
   {ref}`MM5 <step-162>` level above it overlays a KrF level, and matched
   overlay between classes applies ({ref}`machine-i-line-stepper`). Why a
-  0.8 µm via has a 248 nm reticle is not stated.[^steps-sheet]
-* **Alignment on polished levels.** From {ref}`LICM1 <step-093>` upward
-  the KrF levels are printed over polished surfaces: the
+  0.8 µm via would have a mask type we read as 248 nm is not stated.[^steps-sheet]
+* **Alignment on polished levels.** On this reference's readings
+  ({ref}`category-cmp`), from {ref}`LICM1 <step-093>` upward the KrF
+  levels are printed over polished surfaces: the
   local-interconnect and metal masks over polished tungsten plugs, the
   contact and via masks over polished oxide — the cases ATHENA alignment
   was meant to widen latitude on.[^asml-750e][^laidler-2002]
@@ -413,7 +415,8 @@ settings and resists per layer are not public.
   stated.[^skw-01]
 * Which SKY130 levels are printed on the KrF stepper and which on the KrF
   scanner, whether metal 3 and metal 4 are KrF or i-line levels, and why
-  the 0.8 µm via 4 has a 248 nm reticle, are not public.
+  the 0.8 µm via 4 would have a mask type we read as 248 nm, are not
+  public.
 * Whether any SKY130 level is now printed on the 193 nm scanners, and
   which tool the "Overlay down to single digit nm" and "Max field size
   26mm x 32mm" lines describe, are not stated.[^skw-01]

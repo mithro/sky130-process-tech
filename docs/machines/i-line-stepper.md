@@ -303,11 +303,13 @@ implants.[^pdk-03]
   alignment tree of SKY130 is not public.
 * **Alignment on polished and metal levels.** The upper i-line levels
   from {ref}`CAPM <step-137>` to {ref}`MM4 <step-154>` are printed over
-  polished oxide and tungsten-plug levels; Prasad et al. qualified
+  polished oxide and tungsten-plug levels (our reading;
+  {ref}`category-cmp`); Prasad et al. qualified
   alignment on i-line steppers over tungsten CMP, where marks are hard
   to read.[^prasad-2001] {ref}`MM5 <step-162>` is printed over via 4 and
   the metal-5 stack, and {ref}`NSM <step-165>` and {ref}`PDM <step-168>`
-  over the fuse oxide and the passivation.
+  over the films the step pages read as the fuse oxide and the
+  passivation.
 * **Metal 3, metal 4 and via 4.** The {ref}`MM3 <step-139>` page gives
   {math}`k_1 \approx 0.49` for the 0.3 µm line on an i-line tool of NA 0.6
   and leaves the class open; ASML's /450F i-line scanner is specified to
