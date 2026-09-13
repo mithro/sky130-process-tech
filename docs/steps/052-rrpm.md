@@ -131,7 +131,7 @@ mostly chrome. Neither tone nor resist is stated publicly.
 ## Resources required
 
 * **i-line positive photoresist** (DNQ/novolac[^wiki-dnq]) from the
-  suppliers named in SkyWater's S-1 (Dow, JSR, Tokyo Ohka
+  suppliers named in SkyWater's 2021 S-1 (Dow, JSR, Tokyo Ohka
   Kogyo).[^sec-01]
 * **HMDS**, **edge-bead remover**, **developer** (TMAH[^wiki-tmah]),
   DI water, nitrogen.
