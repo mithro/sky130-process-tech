@@ -8108,8 +8108,8 @@ yield (abstract). Tier: deep dive.
 **GOLONZKA-2019** — O. Golonzka, U. Arslan, P. Bai, M. Bohr, O. Baykan et
 al., "Non-Volatile RRAM Embedded into 22FFL FinFET Technology", *2019
 Symposium on VLSI Technology*, pp. T230–T231.
-<https://doi.org/10.23919/VLSIT.2019.8776570> An embedded RRAM in a
-production logic process: bit-cell integration into the logic flow,
+<https://doi.org/10.23919/VLSIT.2019.8776570> An embedded RRAM in Intel's
+22FFL logic technology: bit-cell integration into the logic flow,
 endurance, retention and yield on 7.2 Mbit arrays (abstract). Tier: deep
 dive.
 
