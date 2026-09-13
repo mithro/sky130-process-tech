@@ -153,7 +153,7 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
   stepper" and "ASML DUV scanner" beside its i-line tools.[^skw-01]
   Strength: **strong** for the existence of the tools; the assignment
   of `NPCM` to DUV is an **inference** from the design rules.
-* **Tracks — DNS 80B, Sokudo RF3, TEL Lithius Pro Z**.[^skw-01]
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01]
   Strength: strong for existence.
 * **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
   Strength: strong.
