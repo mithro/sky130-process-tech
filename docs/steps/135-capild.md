@@ -15,15 +15,17 @@
 `CAPILD` deposits the dielectric of SKY130's first
 {term}`metal–insulator–metal (MiM) capacitor <MiM capacitor>`. Straight after the blanket
 metal-3 stack of {ref}`WTIAL3 <step-134>` is sputtered — and before
-that metal is patterned — a thin silicon {term}`oxynitride` film is
-laid over the whole wafer by {term}`PECVD`. A thin titanium–tungsten
-film follows at {ref}`CAPTIW1 <step-136>`; the two are then cut into
+that metal is patterned — a thin dielectric film, described in this
+reference as a silicon {term}`oxynitride` (inference, see below), is
+laid over the whole wafer by {term}`PECVD`. A thin conductor film
+(titanium–tungsten on this reference's reading) follows at
+{ref}`CAPTIW1 <step-136>`; the two are then cut into
 capacitor *top plates* by the `capm` mask and etch
 ({ref}`CAPM <step-137>`, {ref}`CAPME <step-138>`), and only then is
 metal 3 itself patterned ({ref}`MM3 <step-139>`,
 {ref}`MM3E <step-140>`). The capacitor's *bottom plate* is therefore
-metal 3, its dielectric is this film, and its top plate is the TiW of
-the next step. The PDK's device documentation describes exactly this
+metal 3, its dielectric is this film, and its top plate is the
+conductor of the next step. The PDK's device documentation describes exactly this
 construction: "The MiM capacitor is constructed using a thin
 dielectric over metal, followed by a thin conductor layer on top of
 the dielectric", with "CAPM over Metal-3" and "CAP2M over Metal-4" as
@@ -43,10 +45,12 @@ gives the capacitor an area capacitance `CMIMA` of 2 fF/µm² (limits
 plate voltages of 0–5.0 V.[^pdk-07] Neither the dielectric's
 thickness nor its permittivity is labelled anywhere in the PDK; the
 stack diagram carries no thickness for `capm` or its dielectric.[^pdk-04]
-The step name used in this reference reads *oxynitride*; public
-support for such a film is SkyWater's capability list, which includes
-"PECVD silane oxide/nitride/oxynitride, C1 – low temp, range of R.I.
-options".[^skw-01] From the capacitance density one can
+The PDK does not name the dielectric. This reference describes it as
+a PECVD silicon oxynitride (inference): SkyWater's capability list
+includes "PECVD silane oxide/nitride/oxynitride, C1 – low temp, range
+of R.I. options",[^skw-01] and PECVD nitride and oxynitride were the
+MiM dielectrics of the period.[^kar-roy-1999][^ng-2003] From the
+capacitance density one can
 bound the thickness: with {math}`C/A = \varepsilon_0 k / d`, a film
 giving 2 fF/µm² is {math}`d \approx 4.4\,\mathrm{nm} \times k`, so
 about 18 nm for an oxide-like {math}`k = 4`, 22–27 nm for a mid-range
@@ -152,7 +156,8 @@ back end (SKY130's recipe is not public):
    composition.[^denisse-1986][^bose-2002] Lieberman and Lichtenberg
    treat the discharge physics.[^lieberman-2005]
 4. **Thickness.** Not public; 18–33 nm by the arithmetic above for
-   2 fF/µm²,[^pdk-07] deposited in tens of seconds, and controlled to
+   2 fF/µm²,[^pdk-07] deposited in tens of seconds (industry-typical
+   for PECVD rates[^txt-05]), and controlled to
    a few per cent because capacitance scales inversely with it.
    Kar-Roy et al. report 1.0–2.0 fF/µm² from a PECVD
    nitride;[^kar-roy-1999] Babcock et al. found nitride MiM linearity
@@ -183,8 +188,8 @@ back end (SKY130's recipe is not public):
   oxide/nitride/oxynitride, C1 – low temp, range of R.I.
   options".[^skw-01] Strength: **strong** for the capability, since
   it is the only oxynitride process on the list; the assignment of
-  this chamber to this step is our **inference** from that and from
-  the step name used in this reference, and the reading of "C1" as a
+  this chamber to this step is an **inference** from the film type
+  described here and the low-temperature option, and the reading of "C1" as a
   Novellus Concept One[^novellus-history] is also an **inference**.
 * **PECVD TEOS "C2 and Producer"**[^skw-01] is not a nitride source
   and is unlikely here (weak).

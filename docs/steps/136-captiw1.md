@@ -13,8 +13,9 @@
 ## What this step is
 
 `CAPTIW1` deposits the *top plate* of the first {term}`MiM capacitor`: a
-blanket titanium–tungsten film sputtered over the thin oxynitride of
-{ref}`CAPILD <step-135>`, which itself lies on the unpatterned
+blanket conductor film — titanium–tungsten on this reference's
+reading, as set out below — sputtered over the thin capacitor
+dielectric of {ref}`CAPILD <step-135>`, which itself lies on the unpatterned
 metal-3 stack of {ref}`WTIAL3 <step-134>`. At this moment the wafer
 carries, from the bottom, the metal-3 conductor (Ti/Al–Cu/TiW on the
 public description of the S8 metal stacks[^cyp-qtp-113005]), the
@@ -27,8 +28,12 @@ plate over metal 3" (GDS 89:44),[^pdk-06] and {ref}`MM3 <step-139>` /
 bottom plates and the rest of the metal-3 wiring. The PDK's device
 page calls the top plate "a thin conductor layer on top of the
 dielectric" and gives its {term}`sheet resistance`, `RSCAPM`, as
-5.8 Ω/sq (limits 4.8–6.8);[^pdk-07] the "1" in the step code
-distinguishes it from the second plate, {ref}`CAPTIW2 <step-151>`.
+5.8 Ω/sq (limits 4.8–6.8);[^pdk-07] this reference describes it as
+TiW (inference: TiW is among SkyWater's PVD films and its metal
+etchers' qualified materials,[^skw-01] and is the cap of the
+aluminium stacks[^cyp-qtp-113005]).
+{ref}`CAPTIW2 <step-151>` is the corresponding step for the second
+capacitor.
 
 The film's thickness is not public, but the sheet resistance bounds
 it. Sputtered Ti:W has a resistivity of some tens of µΩ·cm — Ghate et
@@ -66,8 +71,8 @@ plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
 
 ## Why this step exists
 
-* **A capacitor needs a second plate.** The oxynitride alone is a
-  dielectric on a metal; the TiW makes it a capacitor. Because the
+* **A capacitor needs a second plate.** The dielectric alone is a
+  film on a metal; the plate makes it a capacitor. Because the
   top plate is deposited over the whole wafer and patterned by its
   own mask *before* the metal beneath is etched, the plate edge sits
   on a flat, continuous dielectric and the capacitance is set by the
@@ -76,7 +81,7 @@ plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
   top-plate-first construction of the Newport Fab and Freescale
   patents,[^pat-mim-newportfab][^pat-mim-freescale] and of the Al-BEOL MiM
   processes Kar-Roy et al. and Babcock et al. describe.[^kar-roy-1999][^babcock-2001]
-* **Why TiW.** The plate must be a metal that (i) sputters at low
+* **Why TiW (as assumed here).** The plate must be a metal that (i) sputters at low
   temperature onto a dielectric without reacting with it, (ii) can
   be etched with high {term}`selectivity` to that dielectric
   ({ref}`CAPME <step-138>`), (iii) withstands the chlorine chemistry
@@ -250,6 +255,9 @@ back end (SKY130's recipe is not public):
 
 ## Open questions
 
+* The PDK names the top plate only "a thin conductor layer";[^pdk-07]
+  TiW is this reference's inference from SkyWater's film and etcher
+  lists.[^skw-01]
 * The top-plate thickness, composition (Ti fraction, nitrogen
   content) and deposition conditions are not public; ~0.1 µm is our
   estimate from `RSCAPM`[^pdk-07] with an assumed resistivity.
