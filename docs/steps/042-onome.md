@@ -157,8 +157,8 @@ memory (SKY130's recipe is not public):
   its gas list.[^snf-9400]
 * **Applied Materials DPS II** ("HBR, Cl2, NF3, CF4, CHF3, O2 – gate,
   trench")[^skw-01] — has CHF₃ for the oxide layers. Strength: strong
-  for existence; **medium** for assignment, as the entry names no
-  nitride application.
+  for existence; **medium** for this step, since its CF₄ and CHF₃ etch
+  nitride although the entry names no nitride application.
 * **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2").[^skw-01] Strength:
   strong for existence; **weak** for assignment, as the entry names no
   application.

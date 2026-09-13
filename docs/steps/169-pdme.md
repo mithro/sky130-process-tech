@@ -141,11 +141,14 @@ an aluminium top metal (SKY130's recipe is not public):
 ## Machines likely used at SkyWater
 
 * **Lam 9400 TCP.** SkyWater lists "Lam 9400 TCP, poly/nitride, HBr,
-  CF4, SF6, O2".[^skw-01] Strength: **medium** — the list ties this
-  etcher to nitride and gives it CF₄, SF₆ and O₂; assignment to the pad
-  etch is an **inference**, since the list names no steps.
-* **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2") and **AMAT DPSII**
-  ("HBR, Cl2, NF3, CF4, CHF3, O2").[^skw-01] Strength: weak.
+  CF4, SF6, O2".[^skw-01] Strength: **strong** for the tool and the
+  word "nitride"; assignment to the pad etch is an **inference**, the
+  entry being the only one on the list that names nitride.
+* **AMAT DPSII** ("HBR, Cl2, NF3, CF4, CHF3, O2").[^skw-01] Strength:
+  **medium**, since its CF₄ and CHF₃ etch nitride although the entry
+  names no nitride application.
+* **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2").[^skw-01] Strength:
+  **weak**, as the entry names no application.
 * **Lam 9600 / Lam 2300 Versys**, listed for "TiW",[^skw-01] if a
   separate cap removal is done by plasma (weak).
 * **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; batch

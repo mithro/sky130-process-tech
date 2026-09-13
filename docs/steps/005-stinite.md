@@ -103,8 +103,9 @@ page[^pdk-03] is comfortable for a ~200 nm stack).
   for polysilicon.[^snf-9400]
 * **AMAT DPS II (Centura).** SkyWater lists it with CF₄ and CHF₃ among
   its gases and "trench" among its applications.[^skw-01] Strength:
-  strong that the tool and gases exist; **medium** for this step, as
-  the entry names no nitride application.
+  strong that the tool and gases exist; **medium** for this step,
+  since its CF₄ and CHF₃ etch nitride although the entry names no
+  nitride application.
 * **Lam 4400.** SkyWater lists "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
   O2".[^skw-01] Strength: strong for existence; **weak** for this
   step, as the entry names no application.
