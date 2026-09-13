@@ -181,7 +181,7 @@ alignment corrections.
   90S and Dainippon Screen (DNS) tracks.
 * **{ref}`Metrology <machine-cd-sem-overlay-metrology>`**: KLA-Tencor 8100/8100XP CD-SEM (accelerating voltage
   0.4–1.5 kV, resolution below 4 nm)[^gce-kla8100] and Hitachi
-  S-9200/S-9260 CD-SEMs;[^semimarket-s9200] KLA-Tencor 5xxx/Archer
+  S-9200 CD-SEMs (released 1998, for 6- and 8-inch wafers);[^hitachi-2011] KLA-Tencor 5xxx/Archer
   optical overlay tools; {ref}`after-develop inspection <machine-defect-inspection>` on KLA-Tencor 2xxx
   bright-field inspectors.[^wiki-kla]
 * **Reticles** are made at a mask shop (Photronics, DNP, Toppan, or a
@@ -275,7 +275,8 @@ alignment corrections.
   throughput.[^tel-act8]
 * GCE Market, KLA-Tencor 8100XP CD-SEM specification
   summary.[^gce-kla8100]
-* Legacy Semi, Hitachi S-9200 CD-SEM listing.[^semimarket-s9200]
+* Ikegami et al., *Hitachi Review* 2011 — release dates and
+  specifications of Hitachi CD-SEMs, including the S-9200.[^hitachi-2011]
 * MicroChemicals, *Development of photoresists* — TMAH developer
   strength and practice.[^microchemicals-dev]
 
@@ -438,8 +439,11 @@ alignment corrections.
 [^gce-kla8100]: GCE Market, *KLA-Tencor 8100XP CD-SEM* (specification
     summary).
     <https://www.gcemarket.com/gce/gce.nsf/products/kla-tencor-8100xp-cd-sem-7expup>
-[^semimarket-s9200]: Legacy Semi, *Hitachi S-9200 CD-SEM* (listing).
-    <https://www.semimarket.com/item/hitachi-s-9200-cd-sem/42724>
+[^hitachi-2011]: T. Ikegami, A. Yamaguchi, M. Tanaka, S. Takami, Y. Hojo
+    and A. Sugimoto, "Evolution and Future of Critical Dimension
+    Measurement System for Semiconductor Processes", *Hitachi Review*
+    **60**(5), 203–209 (2011), accessed 2026-09-13.
+    <https://www.hitachihyoron.com/rev/pdf/2011/r2011_05_104.pdf>
 [^wiki-kla]: Wikipedia, *KLA Corporation*.
     <https://en.wikipedia.org/wiki/KLA_Corporation>
 [^wiki-tmah]: Wikipedia, *Tetramethylammonium hydroxide*.
