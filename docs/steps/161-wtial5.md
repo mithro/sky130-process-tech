@@ -61,12 +61,11 @@ Cu doped", "TiW" and "Collimated Ti",[^skw-01] the Cypress stacks at
 the same fab are built this way,[^cyp-qtp-113005][^cyp-qtp-123907] and
 the PDK's thickness and sheet resistance fit such a stack).
 
-**How is via 4 filled?** In the step list used in this reference, no
-TiN liner, tungsten fill or plug polish follows the via-4 etch, as they
-follow vias 1–3 ({ref}`TIN5 <step-146>`, {ref}`WDEP5 <step-147>`,
-{ref}`WCMP5 <step-148>`); this deposition comes next. The step list used
-in this reference does not show how the via-4 holes are filled; we read
-them as filled by the metal-5 stack itself, on the following evidence
+**How is via 4 filled?** No public source states how via 4 is filled.
+This reference describes no TiN liner, tungsten fill or plug polish for
+via 4, unlike vias 1–3 ({ref}`TIN5 <step-146>`, {ref}`WDEP5 <step-147>`,
+{ref}`WCMP5 <step-148>`); this deposition comes next. We read the via-4
+holes as filled by the metal-5 stack itself, on the following evidence
 and reasoning (all inference):
 
 * *The geometry suits it.* Via 4 is allowed only as a 0.800 µm square

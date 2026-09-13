@@ -18,7 +18,7 @@ dielectric over metal 4. After {ref}`CMPM4 <step-157>` the
 metal-4 lines and the `cap2m` plates is whatever the polish left, and
 its surface carries the scratches, slurry residue and hydrated layer of
 a polish. A thin plasma oxide deposited over it seals that surface and,
-on our reading of its position in the flow, brings the dielectric
+on the reading this reference applies to each cap oxide (see {ref}`NCAPOX3 <step-117>`), brings the dielectric
 above metal 4 to its final thickness before the via-4 mask
 ({ref}`VIM4 <step-159>`) is printed. The finished number is public: the
 PDK's stack diagram labels the via-4 height 0.505 µm, between the top of
@@ -32,10 +32,8 @@ draws no "_C" film, as it does not at NILD5.[^pdk-04] What the cap
 prepares for is different from the levels below. The via-4 opening is a
 0.800 µm square (via4.1) on a 0.800 µm space (via4.2),[^pdk-periph]
 etched 0.505 µm deep — an {term}`aspect ratio` of about 0.63:1 (our
-arithmetic) — and, in the step list used in this reference, no tungsten
-liner, fill or {term}`plug <W plug>` polish follows: the next deposition after the via
-etch is the metal-5 stack of {ref}`WTIAL5 <step-161>`. On our reading,
-then, the surface this cap leaves is also the surface on which metal 5 is
+arithmetic) — and, on the via-4 fill reading set out at {ref}`WTIAL5 <step-161>`,
+the surface this cap leaves is also the surface on which metal 5 is
 sputtered wherever there is no via, and the wall of every via-4 hole
 into which that metal must go (inference).
 
@@ -82,9 +80,8 @@ via-4 numbers:
 * **A known surface for lithography and for metal 5.** The
   {ref}`VIM4 <step-159>` resist is tuned to a reproducible oxide thickness
   over reflective metal and capacitor plates, since the {term}`swing-curve <swing curve>` reflectivity
-  depends on it;[^brunner-1991] and, on our reading of the step order, the
-  metal-5 underlayer is sputtered directly onto this oxide outside the
-  vias (inference).
+  depends on it;[^brunner-1991] and, on the reading at {ref}`WTIAL5 <step-161>`, the metal-5 underlayer is
+sputtered directly onto this oxide outside the vias (inference).
 
 Without `NCAPOX6` the via-4 lithography and etch would work on a surface
 whose thickness varied with the polish, and the oxide over some capacitor
