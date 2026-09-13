@@ -158,8 +158,8 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 * **Nitrogen and argon** (likely ambient, our inference; SkyWater lists
   the Heatpulse's gases, "NH3, Ar, N2, O2", but no ambient for any
   step);[^skw-01] **oxygen** if a minor addition is used.
-* **Tungsten-halogen lamps, quartz chamber/window, edge rings**;
-  pyrometer calibration and thermocouple wafers (category page).
+* **{ref}`Tungsten-halogen lamps <material-hardware-consumables>`, quartz chamber/window, edge rings**;
+  pyrometer calibration and {ref}`thermocouple wafers <material-substrates>` (category page).
 * **Cooling water and CDA/N₂** for lamp and chamber cooling.[^ag-8108]
 * **Monitor wafers** for sheet resistance.
 * Gas suppliers named in SkyWater's filings: Air Products and Praxair
