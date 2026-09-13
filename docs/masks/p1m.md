@@ -342,8 +342,8 @@ feature the plate must resolve is therefore the 0.150 µm gate line on a
   why mask shapes differ from drawn shapes.[^wiki-psm][^wiki-opc]
 * Mack, *Fundamental Principles of Optical Lithography* — imaging at
   low {math}`k_1`.[^mack-2007]
-* Levinson, *Principles of Lithography* — CD control, masks and
-  overlay.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — deep-submicron
   gate lithography.[^txt-05]
 

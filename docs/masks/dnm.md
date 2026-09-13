@@ -327,8 +327,8 @@ the plate is placed against other layers.
   implant masking by resist.[^txt-02]
 * Mack, *Fundamental Principles of Optical Lithography* — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — resist thickness, overlay and
-  non-critical levels.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on photoresists,
+  masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 

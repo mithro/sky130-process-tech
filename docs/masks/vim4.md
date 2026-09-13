@@ -317,8 +317,8 @@ via4.1 and via4.2).
 * Wikipedia, *Via (electronics)* — what a via is.[^wiki-via]
 * Mack, *Fundamental Principles of Optical Lithography* — imaging of
   contact holes.[^mack-2007]
-* Levinson, *Principles of Lithography* — masks, overlay and tool
-  choice for non-critical levels.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on masks and
+  reticles, overlay and lithography costs.[^levinson-2005]
 
 ### Deep dive
 
