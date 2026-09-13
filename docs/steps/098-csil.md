@@ -161,8 +161,8 @@ fab (SKY130's recipe is not public):
 
 * **AG Associates Heatpulse 8808.** SkyWater lists "Ag Heatpulse
   8808 NH3, Ar, N2, O2, up to 1200C".[^skw-01] Strength: **strong**
-  for the tool; assignment to `CSIL` is an **inference** from its
-  being the only RTA on SkyWater's list, and silicide formation is a
+  for the tool; assignment to `CSIL` is an **inference** from the
+  Heatpulse being the only RTA on SkyWater's list, and silicide formation is a
   listed application of the family: reseller documentation gives a
   400–1200 °C range and
   "Programmable, 1 – 180°C per second" ramp-up,[^ag-8800] the family
