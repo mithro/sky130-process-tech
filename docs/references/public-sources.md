@@ -1377,7 +1377,7 @@ and the oxidation category page. Tier: high-level.
 
 **WIKI-DNQ** — Wikipedia, *Diazonaphthoquinone*.
 <https://en.wikipedia.org/wiki/Diazonaphthoquinone> Diazonaphthoquinone,
-the photoactive compound of i-line novolak resists. Used on the
+the photoactive compound of i-line novolac resists. Used on the
 lithography category page. Tier: high-level.
 
 **WIKI-DOPANT** — Wikipedia, *Dopant*.
@@ -3809,7 +3809,7 @@ page. Tier: deep dive.
 **REICHMANIS-1989** — E. Reichmanis and L. F. Thompson, "Polymer
 materials for microlithography", *Chemical Reviews* **89**(6), 1273–1289
 (1989). <https://doi.org/10.1021/cr00096a001> Polymer materials for
-microlithography, DNQ/novolak included. Used on the lithography category
+microlithography, DNQ/novolac included. Used on the lithography category
 page. Tier: deep dive.
 
 **RIEGER-1994** — M. L. Rieger and J. P. Stirniman, "Using behavior

@@ -61,7 +61,7 @@ the resolution limit, and the ITRS 2001 lithography chapter assigns
 such layers to the cheaper exposure tools of the generation;[^itrs-03]
 we therefore infer that `CAPM` is printed on the "ASML I-line
 stepper" or "I-line scanner" SkyWater lists,[^skw-01] with a
-conventional DNQ/novolak resist, rather than on the {term}`DUV`
+conventional DNQ/novolac resist, rather than on the {term}`DUV`
 tools used for the critical layers. Nothing public
 states the tool or resist. What the layer shares with the metal masks
 is the substrate problem — a reflective refractory film that
@@ -126,7 +126,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
    Rocke and Schneegans documented the anti-reflective role of a
    refractory cap on aluminium[^rocke-1988]). No {term}`HMDS` is
    needed on a metal.
-2. **Resist coat.** A positive i-line DNQ/novolak resist — the
+2. **Resist coat.** A positive i-line DNQ/novolac resist — the
    chemistry Dammel's tutorial text and Reichmanis and
    Thompson's review describe[^dammel-1993][^reichmanis-1989][^wiki-dnq]
    — at around 1 µm (industry-typical for i-line
@@ -174,7 +174,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Resources required
 
-* **i-line positive photoresist** (DNQ/novolak); SkyWater's S-1
+* **i-line positive photoresist** (DNQ/novolac); SkyWater's S-1
   names Dow, JSR and Tokyo Ohka Kogyo as photoresist
   suppliers.[^sec-01]
 * **Organic BARC** or dyed resist, **0.26 N TMAH developer** (Air
@@ -233,7 +233,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 * Dammel, *Diazonaphthoquinone-based Resists* — the i-line resist
   chemistry in full.[^dammel-1993]
 * Reichmanis and Thompson, *Chem. Rev.* 1989 — polymer materials
-  for microlithography, DNQ/novolak included.[^reichmanis-1989]
+  for microlithography, DNQ/novolac included.[^reichmanis-1989]
 * Brunner, SPIE 1991 — swing curves and anti-reflection on
   reflective substrates.[^brunner-1991]
 * Rocke and Schneegans (Siemens), *JVST B* 1988 — a refractory cap

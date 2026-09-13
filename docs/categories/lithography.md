@@ -99,9 +99,9 @@ and per field and prints to it.
 
 ### Photoresist chemistry
 
-* **i-line resists** are diazonaphthoquinone (DNQ)/novolak: DNQ is a
+* **i-line resists** are diazonaphthoquinone (DNQ)/novolac: DNQ is a
   dissolution inhibitor that, on exposure, photolyses to an indene
-  carboxylic acid, making the exposed novolak soluble in
+  carboxylic acid, making the exposed novolac soluble in
   base.[^wiki-resist][^wiki-dnq]
 * **Deep-UV resists** are chemically amplified ({term}`CAR`): a
   photo-acid generator releases an acid that, during the PEB,
@@ -185,7 +185,7 @@ alignment corrections.
 
 ## Typical consumables
 
-* **Photoresists**: i-line DNQ/novolak positive resists (Shipley/Rohm
+* **Photoresists**: i-line DNQ/novolac positive resists (Shipley/Rohm
   and Haas, TOK, JSR, Sumitomo, Clariant/AZ); KrF chemically amplified
   positive resists (Shipley UV-series, TOK, JSR, Shin-Etsu).
 * **BARC**: organic bottom anti-reflective coatings (Brewer Science
@@ -323,7 +323,7 @@ alignment corrections.
   amplified resists, including KrF poly(hydroxystyrene)
   systems.[^ito-2005]
 * Reichmanis and Thompson, *Chem. Rev.* 1989 — polymer materials for
-  microlithography, DNQ/novolak included.[^reichmanis-1989]
+  microlithography, DNQ/novolac included.[^reichmanis-1989]
 * Wallraff and Hinsberg, *Chem. Rev.* 1999 — lithographic imaging
   techniques and resist chemistry for sub-quarter-micron
   features.[^wallraff-1999]
