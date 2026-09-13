@@ -134,10 +134,11 @@ fab (SKY130's energy and dose are not public):
   its tilt range; **inference** for the assignment, because it is the
   only listed tool with a *stated* tilt range, and that range covers
   40°.
-* **Axcelis GSD implanters (high-current/high-energy and high-dose)** ("10-3000kev, 1e11 to 5e15,
-  tilt/twist" and "2-180kev, 5e12 to 5e16, tilt/twist")[^skw-01] —
-  batch tools listed with tilt and twist capability but with no stated
-  tilt range. Strength: strong for existence; weak for assignment.
+* **Axcelis GSD implanters (high-current/high-energy and high-dose)**
+  ("10-3000kev, 1e11 to 5e15, tilt/twist" and "2-180kev, 5e12 to 5e16,
+  tilt/twist")[^skw-01] — batch tools listed with tilt and twist capability
+  but with no stated tilt range. Strength: strong for existence; weak for
+  assignment.
 
 ## Resources required
 

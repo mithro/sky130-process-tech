@@ -125,7 +125,8 @@ An industry-generic drain-extension well lithography for a 200 mm,
 
 * **Thick positive i-line implant resist** (inference); suppliers named
   in SkyWater's 2021 S-1: Dow, JSR, Tokyo Ohka Kogyo.[^sec-01]
-* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev] edge-bead remover, DI water, nitrogen.
+* **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^microchemicals-dev]
+  edge-bead remover, DI water, nitrogen.
 * **The PWDEM {term}`reticle`** (from `pwde`).[^pdk-06]
 
 ## Related steps and cross-references
@@ -175,7 +176,8 @@ An industry-generic drain-extension well lithography for a 200 mm,
   tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
 * MicroChemicals, *Development of photoresists* — practical
-  develop-process notes, including the 2.38 % TMAH developers.[^microchemicals-dev]
+  develop-process notes, including the 2.38 % TMAH
+  developers.[^microchemicals-dev]
 
 ### Deep dive
 

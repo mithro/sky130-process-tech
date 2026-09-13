@@ -96,9 +96,9 @@ fab, as on {ref}`RRPM <step-052>`:
    public); the resistor body will later be cut from the poly by
    {ref}`P1M <step-061>`, so the window must enclose the drawn body with
    {term}`overlay` margin on every side.
-5. **Post-exposure bake, develop** in 2.38 % TMAH[^wiki-tmah][^microchemicals-dev]
-   (0.26 N; our arithmetic from TMAH's molar mass of 91.15 g/mol), rinse, hard
-   bake.
+5. **Post-exposure bake, develop** in 2.38 %
+   TMAH[^wiki-tmah][^microchemicals-dev] (0.26 N; our arithmetic from TMAH's
+   molar mass of 91.15 g/mol), rinse, hard bake.
 6. **Inspection.** Overlay to active; window presence by optical
    inspection.
 
@@ -131,8 +131,8 @@ reading is used throughout these pages and is marked as an inference.
 
 * **i-line positive photoresist**[^wiki-dnq] from the suppliers named
   in SkyWater's 2021 S-1 (Dow, JSR, Tokyo Ohka Kogyo).[^sec-01]
-* **HMDS**, **edge-bead remover**, **developer** (2.38 % (0.26 N) TMAH[^wiki-tmah][^microchemicals-dev]),
-  DI water, nitrogen.
+* **HMDS**, **edge-bead remover**, **developer** (2.38 % (0.26 N)
+  TMAH[^wiki-tmah][^microchemicals-dev]), DI water, nitrogen.
 * **The URPM reticle** — chrome-on-quartz,[^wiki-mask] relaxed
   geometry, derived from `urpm`.
 
@@ -178,7 +178,8 @@ reading is used throughout these pages and is marked as an inference.
 * Kamins, *Polycrystalline Silicon for Integrated Circuits and
   Displays* — lightly doped poly.[^kamins-1998]
 * MicroChemicals, *Development of photoresists* — practical
-  develop-process notes, including the 2.38 % TMAH developers.[^microchemicals-dev]
+  develop-process notes, including the 2.38 % TMAH
+  developers.[^microchemicals-dev]
 
 ### Deep dive
 
