@@ -186,10 +186,7 @@ four deep-UV exposure tools:[^skw-01]
 followed by "Overlay down to single digit nm" and "Max field size 26mm x
 32mm", and, in the "Special Modules" group, "Photo stitching in both X
 and Y directions, sub-20nm stitching errors".[^skw-01] Read term by term:
-"DUV" names no wavelength; the step pages read "ASML DUV stepper" and
-"ASML DUV scanner" as 248 nm (KrF) tools, because the list gives the two
-193 nm scanners separately (our reading, as on the
-{ref}`machines index <machines-index>`). The 193 nm entries give a CD
+"DUV" names no wavelength; the step pages read "ASML DUV stepper" and "ASML DUV scanner" as 248 nm (KrF) tools, as the {ref}`machines index <machines-index>` records, and that the list gives the two 193 nm scanners as separate entries is consistent with that reading (our reading). The 193 nm entries give a CD
 each and distinguish a "single stage" from a "twin stage" scanner; ASML's
 TWINSCAN platform was introduced in 2000,[^kato-2007] and SkyWater's
 engineer profile names "the ASML TWINSCAN" among "More advanced tools"
@@ -209,8 +206,7 @@ capacity and Cu back end of line" with "90 nm + feature
 geometries",[^skw-01] the 193 nm entries give 90 nm and sub-65 nm CDs,
 and the
 {ref}`P1M <step-061>` page sets them aside as "not evidence for how the
-130 nm gate was, or is, printed". The engineer profile corroborates an
-ASML scanner on the floor but not its wavelength or use.[^skw-06]
+130 nm gate was, or is, printed". The engineer profile corroborates an ASML TWINSCAN tool on the floor but not its wavelength or use.[^skw-06]
 
 (machine-duv-krf-stepper-steps)=
 ### SKY130 steps assigned to this class
