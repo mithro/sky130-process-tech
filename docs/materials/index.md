@@ -264,7 +264,7 @@ with its inferences marked there.
 | Re-oxidation (screen) oxide | {ref}`IOX45 <step-063>` | none used on the step page | — | Thin thermal oxide; thickness, ambient and tool not public |
 | Spacer nitride, "SPNIT K=7.5" | {ref}`SPNIT <step-076>`, etched at {ref}`SPE <step-077>` | Permittivity 7.5; no thickness[^pdk-04] | "LPCVD BTBAS low temp nitride" is on the capability list[^skw-01] | Conformal nitride; DCS, BTBAS or PECVD route |
 | Spacer oxide | {ref}`SPOX <step-080>` | "oxide spacer" 0.05 µm[^pdk-03] | — | Blanket oxide left through the source/drain implants |
-| Pre-metal dielectric, "PSG K=3.9", and cap oxide | {ref}`PSG <step-089>`, polished at {ref}`CMPP <step-090>`; cap {ref}`NCAPOX <step-091>` | 0.6099 µm over the gate region and 0.4299 µm over field poly, `li` bottom at 0.9361 µm;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm[^pdk-03] | — | HDP PSG polished close to the gate caps, then an undoped cap of about 0.2–0.3 µm (inferred) |
+| Pre-metal dielectric, "PSG K=3.9", and cap oxide | {ref}`PSG <step-089>`, polished at {ref}`CMPP <step-090>`; cap {ref}`NCAPOX <step-091>` | 0.6099 µm and 0.4299 µm labels, matching field-oxide top (0.3262 µm) to `li` bottom (0.9361 µm) and field-poly top to `li` bottom (our arithmetic);[^pdk-04] "Pre-LI ILD thickness" 0.5 µm[^pdk-03] | — | HDP PSG polished close to the gate caps, then an undoped cap of about 0.2–0.3 µm (inferred) |
 | Contact liner Ti/TiN (and titanium silicide) | {ref}`TI/TIN1 <step-097>`; silicide formed at {ref}`CSIL <step-098>` | none | — | IMP Ti and TiN of the order of 10–30 nm each (typical) |
 | Tungsten plugs: `licon1`, `mcon`, `via`, `via2`, `via3` | {ref}`WDEP <step-099>`, {ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>`; polished at {ref}`WCMPLI <step-100>`, {ref}`WCMP2 <step-111>`, {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`, {ref}`WCMP5 <step-148>` | Via heights 0.27 µm (via 1), 0.42 µm (via 2), 0.39 µm (via 3)[^pdk-04] | — | Blanket CVD tungsten; deposited thickness not public |
 | TiN plug liners | {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>`, {ref}`TIN4 <step-131>`, {ref}`TIN5 <step-146>` | none | — | IMP TiN, a few tens of nanometres on the field (typical) |
@@ -572,6 +572,12 @@ decide between them, and the step pages are unchanged.
   the two cleans, and only {ref}`CMPM4 <step-157>` quotes the Mirra's
   "Track ammonia clean". The PDK stack diagram draws a polyimide, "PI1
   K=2.94", for which the step list has no step.[^pdk-04]
+* **The PSG dimension labels.** {ref}`PSG <step-089>` describes the
+  stack diagram's 0.6099 µm label as the dielectric "over the gate
+  region". The diagram gives no region for it; the value equals the
+  distance from the field-oxide top (0.3262 µm) to the `li` bottom
+  (0.9361 µm), and 0.4299 µm equals the distance from the top of the
+  0.18 µm field poly to the `li` bottom (our arithmetic).[^pdk-04]
 * **Diagram labels without a step reading.** The stack diagram also
   carries an "IOX K=3.9" label and dimensions of 0.006 µm, 0.0431 µm
   and 0.121 µm that no step page, including {ref}`IOX45 <step-063>`,
