@@ -117,7 +117,7 @@ fab (SKY130's energy and dose are not public):
 
 ## Machines typically used
 
-* **Medium-current ion implanter**, 200 mm, single-wafer with a
+* **{ref}`Medium-current ion implanter <machine-medium-current-implanter>`**, 200 mm, single-wafer with a
   tilting, rotating platen: Axcelis (Eaton) 8250 class, Varian
   E220/E500 and VIISta 810, Applied Materials xR LEAP
   ({ref}`category-implant`). The 8250HT covers "3keV to 750keV" with

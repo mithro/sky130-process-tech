@@ -103,11 +103,11 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
 
 ## Machines typically used
 
-* **Medium-current ion implanter**, 200 mm, single-wafer: Axcelis
+* **{ref}`Medium-current ion implanter <machine-medium-current-implanter>`**, 200 mm, single-wafer: Axcelis
   (Eaton) 8250 class, Varian E220/E500, Applied Materials xR
   ({ref}`category-implant`); the 8250HT covers "3keV to 750keV" with
   beam currents "between 4µA and 3,500µA".[^axcelis-8250]
-* **High-current implanter** (Axcelis GSD, Varian VIISta 80) as the
+* **{ref}`High-current implanter <machine-high-current-implanter>`** (Axcelis GSD, Varian VIISta 80) as the
   alternative if the dose is at the upper end.
 * **Thermal-wave** and **four-point-probe** metrology.
 
