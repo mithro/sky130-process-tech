@@ -28,7 +28,8 @@ The public evidence is unusually direct for a tool assignment.
 SkyWater's capability list gives, under "AMAT PVD Metal", "Imp TiN"
 and "Collimated Ti" alongside "ESC TiN", TiW and the aluminium
 alloys,[^skw-01] and this reference reads the liner as titanium followed
-by ionised-metal-plasma ({term}`IMP`) TiN, from "Imp TiN" (inference);
+by ionised-metal-plasma ({term}`IMP`) TiN, from "Imp TiN" (inference); the step list's description, "IMP Ti/TiN
+deposition", does not explain the titanium route,[^steps-sheet] and
 whether the titanium is collimated, as "Collimated Ti" would allow, or
 ionised is not public. Ionised {term}`PVD` is the technique Rossnagel and
 Hopwood introduced for exactly this purpose — filling the bottom of
