@@ -146,7 +146,7 @@ memory (SKY130's recipe is not public):
   ({ref}`category-etch`).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** and **{ref}`wet bench <machine-wet-bench>`** for the strip and the
   bottom-oxide clear.
-* **Optical emission endpoint**; **patterned-wafer inspection**.
+* **Optical emission endpoint**; **{ref}`patterned-wafer inspection <machine-defect-inspection>`**.
 
 ## Machines likely used at SkyWater
 

@@ -142,8 +142,7 @@ fab (SKY130's recipe is not public):
   **{ref}`spray processor <machine-wet-bench>`** (FSI Mercury), or a **{ref}`single-wafer wet tool <machine-single-wafer-spin-processor>`** (SEZ/Lam
   Da Vinci) ({ref}`category-etch`, {ref}`category-strip`).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** for the strip (GaSonics, Mattson, Axcelis/Fusion).
-* **Ellipsometer** on monitor wafers for etch-rate control; **particle
-  scanner** after the clean.
+* **{ref}`Ellipsometer <machine-film-thickness-metrology>`** on monitor wafers for etch-rate control; **{ref}`particle scanner <machine-defect-inspection>`** after the clean.
 
 ## Machines likely used at SkyWater
 

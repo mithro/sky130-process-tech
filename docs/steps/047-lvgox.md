@@ -157,7 +157,7 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
   Centura, AG Associates Heatpulse.[^nulman-1985]
 * **{ref}`Plasma nitridation <machine-plasma-nitridation-chamber>`** chamber (decoupled or remote plasma) if the
   oxide is plasma-nitrided.[^kraft-1997][^hattangady-1995]
-* **Spectroscopic ellipsometer**; **C–V** test.
+* **{ref}`Spectroscopic ellipsometer <machine-film-thickness-metrology>`**; **{ref}`C–V <machine-parametric-tester>`** test.
 
 ## Machines likely used at SkyWater
 

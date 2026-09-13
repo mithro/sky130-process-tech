@@ -91,7 +91,7 @@ chemical oxide is thin and will be buried under the
   Aspen, Axcelis/Fusion ES, PSK).
 * **{ref}`Batch wet bench <machine-wet-bench>`** (Akrion, DNS/SCREEN, SCP) or **{ref}`spray processor <machine-wet-bench>`**
   (FSI Mercury) with SPM and SC-1.
-* **Patterned-wafer inspection** (KLA-Tencor AIT class).
+* **{ref}`Patterned-wafer inspection <machine-defect-inspection>`** (KLA-Tencor AIT class).
 
 ## Machines likely used at SkyWater
 

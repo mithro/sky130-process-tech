@@ -126,7 +126,7 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   Mercury) or a **{ref}`single-wafer wet tool <machine-single-wafer-spin-processor>`** (SEZ/Lam Da Vinci)
   ({ref}`category-etch`, {ref}`category-strip`).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** for the strip.
-* **Ellipsometer** for etch-rate monitors; **particle scanner**
+* **{ref}`Ellipsometer <machine-film-thickness-metrology>`** for etch-rate monitors; **{ref}`particle scanner <machine-defect-inspection>`**
   after the clean.
 
 ## Machines likely used at SkyWater

@@ -131,7 +131,7 @@ An industry-generic light poly-resistor implant for a 200 mm,
 * **{ref}`Medium-current implanter <machine-medium-current-implanter>`** (Axcelis/Eaton 8250, Varian E220/E500,
   Applied Materials xR80) — the natural tool for a light, precise
   dose (category page).
-* **{term}`Four-point probe <four-point probe>`** for monitor sheet resistance.
+* **{term}`Four-point probe <four-point probe>`** ({ref}`sheet-resistance metrology <machine-sheet-resistance-metrology>`) for monitor sheet resistance.
 
 ## Machines likely used at SkyWater
 
