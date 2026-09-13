@@ -97,7 +97,7 @@ crust stage cannot be hurried.
   recipe: GaSonics Aura/PEP, Mattson Aspen, Axcelis/Fusion ES, PSK
   (category page).
 * **{ref}`Batch wet bench <machine-wet-bench>`** (SPM, SC-1, SC-2) or **{ref}`spray processor <machine-wet-bench>`**.
-* **Surface scanner / patterned inspection**.
+* **{ref}`Surface scanner <machine-defect-inspection>` / patterned inspection**.
 
 ## Machines likely used at SkyWater
 

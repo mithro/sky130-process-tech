@@ -131,7 +131,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
 
 * **{ref}`Medium-current implanter <machine-medium-current-implanter>`** with BF₂ capability: Axcelis (Eaton)
   8250/8250HT,[^axcelis-8250] Varian E220/E500, Nissin (category page).
-* **Thermal-wave** dose monitor.
+* **{ref}`Thermal-wave <machine-sheet-resistance-metrology>`** dose monitor.
 
 ## Machines likely used at SkyWater
 

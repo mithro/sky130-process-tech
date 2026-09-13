@@ -116,7 +116,7 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
 * **{ref}`Medium-current implanter <machine-medium-current-implanter>`** with serial end station: Axcelis (Eaton)
   8250/8250HT ("3keV to 750keV", "between 4µA and
   3,500µA"),[^axcelis-8250] Varian E220/E500, Nissin (category page).
-* **Thermal-wave** dose monitor.
+* **{ref}`Thermal-wave <machine-sheet-resistance-metrology>`** dose monitor.
 
 ## Machines likely used at SkyWater
 

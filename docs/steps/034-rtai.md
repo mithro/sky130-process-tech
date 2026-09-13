@@ -124,7 +124,7 @@ An industry-generic well/channel activation anneal for a 200 mm,
   (later Mattson) RTP, Kokusai and TEL RTP (category page).
 * **{ref}`Vertical furnaces <machine-vertical-furnace-anneal>`** (ASM A400, TEL Alpha-8, Aviza/Thermco) as the
   batch alternative.
-* **{term}`Four-point probe <four-point probe>`** for {term}`sheet resistance`; **thermocouple wafers**
+* **{term}`Four-point probe <four-point probe>`** ({ref}`sheet-resistance metrology <machine-sheet-resistance-metrology>`) for {term}`sheet resistance`; **thermocouple wafers**
   for calibration.
 
 ## Machines likely used at SkyWater
