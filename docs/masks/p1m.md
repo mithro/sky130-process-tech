@@ -184,7 +184,9 @@ optical mask requirements, which are "for critical layers", ask in the
 130 nm year for a mask CD uniformity of 7.4 nm (3σ) on isolated MPU gate
 lines on a binary mask, at 4× magnification.[^itrs-03] How tightly
 SkyWater specifies the `P1M` plate is not public; the PDK's 0.02
-`PHP1TOL` is the only published poly bias tolerance.[^pdk-03]
+`PHP1TOL` and Table 7's "P1M additional CD control" of 0.011
+(`P1MCDcontrol`) are the only published poly CD figures, and neither
+says what it is measured on (plate or wafer).[^pdk-03]
 
 **Proximity and line ends.** Gate levels suffer line-end shortening,
 which "reduces the wafer process latitude and in some cases even
@@ -280,7 +282,12 @@ Table 2 of *Criteria & Assumptions* gives two "Poly 1" rows: an
 and 0.14 under `P1MCD` and `P1MCDSP`, which the table does not
 explain.[^pdk-03] Table 4 gives the poly thickness as 0.18
 (`POLYTH`) and the "Channel length for low Vt PMOS" as 0.35
-(`lvtpmos_poly`), matching poly.1b.[^pdk-03][^pdk-periph] The smallest
+(`lvtpmos_poly`), matching poly.1b.[^pdk-03][^pdk-periph] Table 7,
+"Other criteria and parameters", has a row named for this mask, "P1M
+additional CD control", 0.011 (`P1MCDcontrol`), and the same table gives
+a "Field oxide etchback after P1ME before implants" of 0.04
+(`WFDEL`);[^pdk-03] neither row has a unit or says what the value
+applies to. The smallest
 feature the plate must resolve is therefore the 0.150 µm gate line on a
 0.210 µm space.
 
@@ -311,7 +318,8 @@ feature the plate must resolve is therefore the 0.150 µm gate line on a
   its purposes, `cp1m` and its purposes, `areaid.op`, and the `P1M`
   column of Table F2b.[^pdk-06]
 * SkyWater PDK, *Criteria & Assumptions* — `P1G`, `P1MCD`/`P1MCDSP`,
-  `PHP1TOL`, `POLYTH` and the poly resistor CD criteria.[^pdk-03]
+  `PHP1TOL`, `P1MCDcontrol`, `POLYTH` and the poly resistor CD
+  criteria.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — the `poly` rules, x.1a, x.1b, x.2,
   x.9, x.15a and the flag legend.[^pdk-periph]
 * *S8 / SKY130 Process Steps* sheet — the step, the `P1M` plates of
@@ -399,8 +407,8 @@ feature the plate must resolve is therefore the 0.150 µm gate line on a
     documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
-[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions* (Tables 2 and
-    4), SkyWater SKY130 PDK documentation.
+[^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions* (Tables 2, 4
+    and 7), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
