@@ -131,7 +131,7 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Machines typically used
 
-* **PECVD oxide system**, 200 mm: Applied Materials Producer or
+* **{ref}`PECVD oxide system <machine-pecvd>`**, 200 mm: Applied Materials Producer or
   Centura DxZ,[^amat-10k] Novellus Concept One/Two,
   Sequel[^novellus-history] ({ref}`category-deposition`).
 * **Ellipsometer / reflectometer**, **stress gauge**, **particle

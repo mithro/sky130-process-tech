@@ -222,7 +222,7 @@ diagram[^pdk-04]); the aluminium limit of roughly
 
 ## Machines typically used
 
-* **PECVD dielectric system**, 200 mm: Novellus Concept One/Two or
+* **{ref}`PECVD dielectric system <machine-pecvd>`**, 200 mm: Novellus Concept One/Two or
   Sequel,[^novellus-history] Applied Materials Producer or Centura
   DxZ[^amat-10k] ({ref}`category-deposition`).
 * **Spectroscopic ellipsometer** for thickness and index; **C–V and
