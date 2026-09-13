@@ -8303,7 +8303,8 @@ test tile'", which "consists of a grid of probe points"; "The schematics
 and layout of the circuits connected to these probe points are **not**
 currently available". The pad-layout photograph labels "Row 1"–"Row 4",
 pin numbers 01–12, a "Lithographic Calibration Region" and "Alignment
-Marks". No position on the reticle is given. Used on step 171. Tier: cross-check.
+Marks". No position on the reticle is given. Used on step 171 and the
+test category page. Tier: cross-check.
 
 **RAW-DATA-TESTTILE-PADS** — SkyWater PDK Authors, *Manufacturing Test
 Tile Pad Documentation* (PDF title "Pad documentation for SKY130 MPW
@@ -8324,8 +8325,8 @@ bipolar transistors; ring oscillators; SRAM, SONOS, 2T-flash and
 antifuse structures. One continuation row reads "PLACE IN CENTER,
 CORNER OF RETICLE"; several poly-resistor rows name an "RRPM mask" and a
 "URPM mask". Used on step 171, the test category page, the overview and
-the well, isolation, poly-resistor, poly, contact, via, metal and MiM
-step pages. Tier: cross-check.
+the well, isolation, poly-resistor, poly, SONOS, drain-extended-well,
+contact, via, metal and MiM step pages. Tier: cross-check.
 
 **RAW-DATA-TESTTILE-OPEN** — SkyWater PDK Authors, *SkyWater 130nm Open
 Manufacturing Test Tile*, `docs/sky130-testtile-open/README.rst` with
