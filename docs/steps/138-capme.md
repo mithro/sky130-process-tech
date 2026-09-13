@@ -194,7 +194,7 @@ end (SKY130's recipe is not public):
   Versys,[^lam-10k] Applied Materials Centura DPS,[^pat-dps-amat]
   TEL Unity ({ref}`category-etch`).
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`**; **{ref}`solvent wet bench <machine-wet-bench>`**.
-* **{ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **ellipsometer**, **e-test** for capacitor structures.
+* **{ref}`CD-SEM <machine-cd-sem-overlay-metrology>`**, **{ref}`ellipsometer <machine-film-thickness-metrology>`**, **{ref}`e-test <machine-parametric-tester>`** for capacitor structures.
 
 ## Machines likely used at SkyWater
 
