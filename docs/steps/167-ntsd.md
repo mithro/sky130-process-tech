@@ -162,10 +162,10 @@ public):
 
 ## Resources required
 
-* **Silane**, **ammonia** and **nitrogen**.[^wiki-silane][^wiki-pecvd] Gas
+* **{ref}`Silane <material-precursors>`**, **ammonia** and **{ref}`nitrogen <material-process-gases>`**.[^wiki-silane][^wiki-pecvd] Gas
   suppliers named in SkyWater's filings: Air Products and Praxair (2021
   S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
-* **NF₃** for the chamber clean.
+* **{ref}`NF₃ <material-etch-gases>`** for the chamber clean.
 * **{ref}`Showerhead, heater and liner consumables <material-hardware-consumables>`**; **{ref}`monitor wafers <material-substrates>`** for
   thickness, index, stress and hydrogen checks.
 

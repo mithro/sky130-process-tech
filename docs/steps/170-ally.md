@@ -169,7 +169,7 @@ an aluminium back end (SKY130's recipe is not public):
 ## Resources required
 
 * **{ref}`Forming gas <material-anneal-ambients>`** (H₂ in N₂; "5% H2 in N2" is the typical formulation
-  Wikipedia gives[^wiki-fg]) or **hydrogen** and **nitrogen** supplied
+  Wikipedia gives[^wiki-fg]) or **{ref}`hydrogen <material-process-gases>`** and **nitrogen** supplied
   separately. Gas suppliers named in SkyWater's filings: Air Products and
   Praxair (2021 S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 * **{ref}`Quartz tube <material-hardware-consumables>`, boats and baffles**; a hydrogen-rated gas panel with
