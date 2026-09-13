@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1273
+written page has exactly one entry here; the inventory holds 1293
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -10383,6 +10383,184 @@ coupled sputtering chamber, a "pasting" step with no coil power coats the
 coil with target material, repeated after a number of wafers, so that
 material sputtered off the coil does not contaminate the film. Used on
 the PVD cluster tool page. Tier: deep dive (patent).
+
+#### Lithography machine pages (first cited there)
+
+The entries below were introduced by the i-line stepper or scanner, DUV
+(KrF, 248 nm) stepper or scanner, coat/develop track and CD-SEM and
+overlay metrology pages, and are grouped in that order by the page that
+first cited them. The vendor data sheets, product pages and press
+releases were fetched on 2026-09-13; the papers were checked through
+Crossref and OpenAlex on that date, and their annotations rest on their
+abstracts.
+
+**ASML-PAS5500-100D** — ASML, *PAS 5500/100D i-Line Stepper*, refurbished
+systems data sheet, 2019.
+<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-100d.pdf>
+An i-line stepper "designed for mass production at 0.4 µm": wavelength
+365 nm, NA "0.48—0.60 (variable)", field 31.1 mm diameter and 22.0 mm ×
+27.4 mm, usable depth of focus ≥ 1.1 µm, overlay < 60 nm, ≥ 72 wafers per
+hour on 200 mm, a 1.5 kW illuminator, field-by-field levelling and
+through-the-lens phase-grating alignment. Used on the i-line stepper or
+scanner page. Tier: cross-check (vendor statement).
+
+**ASML-PAS5500-275D** — ASML, *PAS 5500/275D High Productivity i-Line
+Stepper*, refurbished systems data sheet, 2019.
+<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>
+An i-line stepper "stretching resolution down to 0.28 µm": NA 0.48–0.60,
+single-machine overlay ≤ 40 nm and ≤ 80 nm matched to another /275,
+≥ 100 wafers per hour on 200 mm at 200 mJ/cm², a 3.5 kW AERIAL
+illuminator with conventional and annular modes, and phase-modulated
+TTL alignment. Used on the i-line stepper or scanner page. Tier:
+cross-check (vendor statement).
+
+**ASML-PAS5500-450F** — ASML, *PAS 5500/450F i-Line Step-and-Scan*,
+refurbished systems data sheet, 2019.
+<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-450f.pdf>
+The i-line scanner "successor of the PAS 5500/400 for non-critical
+applications": a 0.48–0.65 NA 4× lens, 26.0 mm × 33.0 mm field,
+resolution ≤ 220 nm, ≥ 150 wafers per hour on 200 mm, and commonality
+with the PAS 5500 DUV and 193 nm scanners "Optimized for
+mix-and-matching". Used on the i-line stepper or scanner page. Tier:
+cross-check (vendor statement).
+
+**CANON-FPA3000I5PLUS-1998** — Semiconductor Online, *High Productivity
+i-Line Lithography Stepper* (Canon U.S.A. announcement of the FPA-3000i5+
+for SEMICON/Europa '98).
+<https://www.semiconductoronline.com/doc/high-productivity-i-line-lithography-stepper-0001>
+A 5:1 i-line stepper with NA 0.45–0.63, resolution below 0.35 µm, a
+22 mm × 22 mm field, alignment accuracy below 40 nm and 100 wafers per
+hour on 200 mm at 90 mJ/cm², designed "as a mix-and-match companion for
+its FPA-3000EX5 DUV stepper". Used on the i-line stepper or scanner page.
+Tier: cross-check (vendor statement).
+
+**CANON-FPA3030I5PLUS** — Canon U.S.A., *FPA-3030i5+ Stepper Product
+Specifications*, 2015.
+<http://downloads.canon.com/nw/pdfs/industrial/fpa-3030i5-plus-stepper-specs.pdf>
+A current 200 mm/150 mm i-line stepper: resolution ≤ 0.35 µm, NA
+0.45–0.63, 5:1, 22 mm × 22 mm field, overlay ≤ 40 nm, ≥ 104 wafers per
+hour on 200 mm. Used on the i-line stepper or scanner page. Tier:
+cross-check (vendor statement).
+
+**NIKON-S202A-S102B** — Semiconductor Online, *Two Scanning Steppers*
+(Nikon Precision Europe announcement of the NSR-S202A and NSR-S102B),
+undated.
+<https://www.semiconductoronline.com/doc/two-scanning-steppers-0001>
+Two scanning steppers "designed for 256M DRAM mass production" with
+25 mm × 33 mm fields, synchronised reticle and wafer stages and designs
+that accommodate mix-and-match: the KrF NSR-S202A (80 wafers per hour on
+8-inch wafers) and the i-line NSR-S102B ("0.35 micron or better
+resolution") for "less critical layers". Used on the i-line stepper or
+scanner page. Tier: cross-check (vendor statement).
+
+**NIKON-2205IL1** — Nikon, *NSR-2205iL1 5x Reduction i-line Stepper*,
+product page (announced 2023-08-31).
+<https://www.nikon.com/business/semi/sp_nsr-2205il1/> A current 5×
+i-line stepper for 2- to 8-inch wafers: resolution ≤ 350 nm, NA 0.45,
+22 mm × 22 mm field, single-machine overlay ≤ 70 nm, compatible with
+existing Nikon i-line recipes and photomasks. Used on the i-line stepper
+or scanner page. Tier: cross-check (vendor statement).
+
+**USHIO-UV-LAMPS** — Ushio Inc., *Super high-pressure UV lamps
+(500W~35kW)*, product page.
+<https://www.ushio.co.jp/en/products/1010.html> Lithography mercury
+lamps using "three ultraviolet wavelengths (436, 405 and 365 nm)", with a
+near-point arc, from 500 W to 35 kW class. Used on the i-line stepper or
+scanner page. Tier: cross-check (vendor statement).
+
+**KATO-2007** — A. Kato, *Chronology of Lithography Milestones*, version
+0.9, May 2007, hosted on lithoguru.com.
+<https://www.lithoguru.com/scientist/litho_history/Kato_Litho_History.pdf>
+A dated list of exposure-tool milestones: the first i-line steppers of
+Nikon (1984), ASML (1987) and Canon (1990), the first KrF steppers and
+scanners (Nikon NSR-1505EX 1988, ASML PAS 5000/70 1991, SVGL Micrascan
+1990 and Micrascan III 1996, Nikon NSR-S201A 1995, ASML PAS 5500/500 and
+Canon FPA-4000ES1 1997), Cymer's market share and first solid-state KrF
+laser, Ushio as the leading mercury-lamp supplier and Cobilt as the
+origin of Tokyo Electron's tracks. Used on the i-line stepper or scanner
+page. Tier: high-level (industry chronology).
+
+**BUCKLEY-1989** — J. D. Buckley, D. N. Galburt and C. Karatzas,
+"Step-and-scan lithography using reduction optics", *Journal of Vacuum
+Science & Technology B* **7**(6), 1607–1612 (1989).
+<https://doi.org/10.1116/1.584499> A step-and-scan tool sequentially
+scanning 20 mm × 32.5 mm subfields through 4:1 ring-field optics, with
+reticle and wafer on separate synchronised stages. Used on the i-line
+stepper or scanner page. Tier: deep dive.
+
+**BUCKLEY-KARATZAS-1989** — J. D. Buckley and C. Karatzas, "Step and
+scan: a systems overview of a new lithography tool", *Proc. SPIE*
+**1088**, 424 (1989). <https://doi.org/10.1117/12.953171> The Micrascan I,
+a 0.5 µm step-and-scan tool with catadioptric 4:1 optics and a
+mercury-xenon lamp; the concept "enables very large field sizes and high
+system productivity". Used on the i-line stepper or scanner page. Tier:
+deep dive.
+
+**SUWA-1988** — K. Suwa, K. Ushida and B. J. Lin, "The optical stepper
+with a high numerical aperture i-line lens and a field-by-field leveling
+system", *Proc. SPIE* **0922**, 270–276 (1988).
+<https://doi.org/10.1117/12.968424> A high-NA i-line lens resolving
+better than 0.65 µm and a field-by-field levelling system. Used on the
+i-line stepper or scanner page. Tier: deep dive.
+
+**KATZ-1990** — B. A. Katz, J. S. Greeneich, M. G. Bigelow, A. Katz, F. J.
+van Hout and J. F. Coolsen, "High-numerical-aperture I-line stepper",
+*Proc. SPIE* **1264**, 94 (1990). <https://doi.org/10.1117/12.20183> A
+high-NA i-line stepper with phase grating alignment supporting 0.5 µm
+without lens-heating effects, overlay below 100 nm and extension to
+0.41 µm. Used on the i-line stepper or scanner page. Tier: deep dive.
+
+**WITTEKOEK-1986** — S. Wittekoek, H. Linders, H. Stover, G. Johnson, D.
+Gallagher and R. Fergusson, "Precision wafer-stepper alignment and
+metrology using diffraction gratings and laser interferometry", *Proc.
+SPIE* **0565**, 22 (1986). <https://doi.org/10.1117/12.949728> The ASM
+Lithography stepper's grating alignment and interferometer metrology used
+in machine assembly, test and matching. Used on the i-line stepper or
+scanner page. Tier: deep dive.
+
+**WISE-1992** — L. Wise, R. Mahany and L. Wang, "New ultra large field
+submicron i-line stepper for advanced mix-and-match applications",
+*ASMC '92 Proceedings*, pp. 75–78 (1992).
+<https://doi.org/10.1109/ASMC.1992.253841> A 22 mm × 44 mm-field i-line
+stepper of 0.8 µm production resolution for non-critical levels, with
+cost-of-ownership models for mix-and-match lithography. Used on the
+i-line stepper or scanner page. Tier: deep dive.
+
+**PRASAD-2001** — K. J. Prasad et al., "W-CMP alignment using ASML's
+ATHENA system on an I-line stepper", *Proc. SPIE* **4344**, 79 (2001).
+<https://doi.org/10.1117/12.436730> Mark selection, alignment recipes and
+long-term overlay of ATHENA alignment on i-line steppers over tungsten
+CMP for a 0.35 µm device. Used on the i-line stepper or scanner page.
+Tier: deep dive.
+
+**DEMOOR-2004** — S. J. DeMoor, J. M. Brown, J. C. Robinson, S. Chang and
+C. Tan, "Scanner overlay mix and match matrix generation: capturing all
+sources of variation", *Proc. SPIE* **5375**, 66 (2004).
+<https://doi.org/10.1117/12.534359> Mix-and-match overlay matrices between
+exposure tools, combining lens distortion signatures with stepping and
+scanning repeatability. Used on the i-line stepper or scanner page. Tier:
+deep dive.
+
+**CHU-1999** — R. Chu, C. Hsu and T. Hwang, "Characterizing lens
+distortion to overlay accuracy by using fine measurement pattern", *Proc.
+SPIE* **3677**, 83 (1999). <https://doi.org/10.1117/12.350790> Fine-pattern
+overlay targets against box-in-box targets; lens aberration causing over
+15 nm of overlay displacement. Used on the i-line stepper or scanner page.
+Tier: deep dive.
+
+**NORTON-2000** — C. Norton, D. Marshall, M. Ameen, D. Whiteside, J.
+Hallock and A. Becknell, "Photoresist properties during high current
+implantation: an I-line vs. DUV resist comparison", *Proc. 2000
+International Conference on Ion Implantation Technology*, pp. 813–816.
+<https://doi.org/10.1109/IIT.2000.924278> DUV and i-line resists compared
+under high-current, high-dose implants, the DUV resist found equivalent.
+Used on the i-line stepper or scanner page. Tier: deep dive.
+
+**NAKAGAWA-1990** — K. Nakagawa, M. Taguchi and T. Ema, "Fabrication of
+64 M DRAM with i-line phase-shift lithography", *IEDM Technical Digest*
+1990, pp. 817–820. <https://doi.org/10.1109/IEDM.1990.237037> Phase-shift
+lithography making 0.3 µm patterns with i-line exposure. Used on the
+i-line stepper or scanner page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
