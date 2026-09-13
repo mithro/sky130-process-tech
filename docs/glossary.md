@@ -22,6 +22,16 @@ alloy anneal
     Si/SiO₂ interface with hydrogen. Also called a sinter or
     forming-gas anneal.
 
+aluminium via fill
+    Filling a via with the aluminium alloy of the wiring level above it
+    instead of with a separate tungsten plug. The aluminium is made to
+    enter the hole by sputtering it onto a hot or biased wafer, by a
+    cool seed layer followed by a hot deposition, or by closing the hole
+    over and then forcing the metal in at high pressure and temperature.
+    It avoids the Al/W interface and the plug steps but suits only vias
+    of modest {term}`aspect ratio`. This reference reads SKY130's via 4
+    as filled this way (see {ref}`step-161`).
+
 anisotropy
     The degree to which an etch proceeds in one direction (normally
     vertically, into the wafer) rather than equally in all directions.
@@ -116,6 +126,14 @@ BOE
     Buffered oxide etch: hydrofluoric acid buffered with ammonium
     fluoride (NH₄F), giving a stable, controlled etch rate for silicon
     dioxide.
+
+bond pad
+    An area of top-level metal, left exposed by an opening in the
+    passivation, to which a bond wire is attached and on which probe
+    needles land during wafer test. The pad metal and the dielectric
+    beneath it must survive the mechanical load of probing and bonding.
+    In SKY130 the pads are drawn in metal 5 and opened by the `pad`
+    layer (see {ref}`step-161`, {ref}`step-162`).
 
 borderless contact
     A contact that is allowed to overlap the edge of the diffusion, gate
@@ -698,13 +716,21 @@ mask-proximity effect
     keep matched devices the same distance from mask edges (see
     {ref}`step-081`).
 
+metal fuse
+    A narrow link in a metal wiring level that can be blown open after
+    fabrication — by a laser through the passivation or by a current
+    pulse — to trim a circuit or select redundant elements. The SKY130
+    PDK's metal-fuse rules name metal 4 as the fuse level for the
+    SKY130P* flow (see {ref}`step-149`, {ref}`step-154`).
+
 MiM capacitor
     Metal–insulator–metal capacitor: two metal plates separated by a
     thin deposited dielectric, built in the back end. Because its
     plates have no depletion layer its capacitance changes little with
     bias, and its series resistance is low. In SKY130 the bottom plate
     is a metal level and the top plate a thin film patterned by the
-    `capm` or `cap2m` mask (see {ref}`step-135` to {ref}`step-138`).
+    `capm` or `cap2m` mask (see {ref}`step-135` to {ref}`step-138` and
+    {ref}`step-150` to {ref}`step-153`).
     Also "MIM capacitor".
 
 MOL
@@ -1006,7 +1032,10 @@ reflow
     the constraint is the {term}`thermal budget` of the junctions
     beneath. {term}`CMP` has largely replaced reflow as the way of
     planarising, but a short reflow can still be used for gap fill (see
-    {ref}`step-092`).
+    {ref}`step-092`). In metallisation the word also names aluminium
+    reflow: aluminium deposited onto, or heated on, a wafer at several
+    hundred degrees Celsius so that it flows into contact and via holes
+    (see {term}`aluminium via fill`, {ref}`step-161`).
 
 resist trim
     A short isotropic plasma etch of the developed resist before the
@@ -1261,9 +1290,11 @@ van der Pauw structure
 
 via
     A hole through an {term}`inter-metal dielectric`, filled with metal,
-    that connects one level of wiring to the next. In SKY130 the vias,
-    like the contacts, are tungsten-filled, and the word "contact" is
-    kept for the connections from metal-1 down to the local interconnect
+    that connects one level of wiring to the next. In SKY130 vias 1–3
+    are tungsten-filled ({term}`W plug`); via 4 is 0.8 µm wide, this
+    reference describes no tungsten plug for it, and it is read here as
+    filled by the metal-5 aluminium (see {ref}`step-161`). The word
+    "contact" is kept for the connections from metal-1 down to the local interconnect
     and from the local interconnect down to silicon and poly.
 
 via poisoning
