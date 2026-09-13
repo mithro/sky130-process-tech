@@ -223,7 +223,7 @@ manufacturing, whose reports include "Controlled emissions of GHGs from
 abatement systems, if applicable" and an "Inventory and description of
 all abatement systems through which fluorinated GHGs or N2O flow at the
 facility and for which destruction or removal efficiency is
-claimed".[^epa-subpart-i] The Minnesota Pollution Control Agency's
+claimed".[^epa-ghgrp-subpart-i] The Minnesota Pollution Control Agency's
 enforcement release of 2025-02-04 on SkyWater's air permit lists, among
 its findings, "Taking credit for greenhouse gas emissions control
 equipment that was not allowed in permit", and records that SkyWater
@@ -238,7 +238,7 @@ for the tools whose parts this page describes, on the scale of the
 part.[^skw-01] The EPA record is **strong** that the site reported as an
 electronics-manufacturing facility under subpart I; the record retrieved
 names no abatement system, so that the site claims abatement is not shown
-by it.[^epa-ghgrp-skywater][^epa-subpart-i] The MPCA release refers to
+by it.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i] The MPCA release refers to
 greenhouse-gas "emissions control equipment" in a permit context; it
 does not say what the equipment is, which gases or tools it serves, or
 whether it is in service (our reading).[^mpca-2025] Quartzware, chamber
@@ -308,7 +308,7 @@ practice or supplier, literature and regulator statements.
 * **Greenhouse-gas reporting.** Electronics facilities that report under
   subpart I report fluorinated-gas and N₂O emissions and describe the
   abatement systems for which they claim destruction or removal
-  efficiency;[^epa-subpart-i] the Bloomington facility's records show
+  efficiency;[^epa-ghgrp-subpart-i] the Bloomington facility's records show
   subpart I reports for each year from 2011 to 2023.[^epa-ghgrp-skywater]
 * **Probe-card care.** Tips are cleaned to restore contact
   resistance,[^wiki-probecard] and contact resistance varies with probe
@@ -381,7 +381,7 @@ cards are not public.
   work.[^skw-07]
 * US EPA, GHGRP facility record and *Subpart I Information Sheet* —
   electronics-manufacturing reporting and abatement
-  systems.[^epa-ghgrp-skywater][^epa-subpart-i]
+  systems.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i]
 * Minnesota Pollution Control Agency, 2025 enforcement release — a permit
   finding that mentions greenhouse-gas control equipment.[^mpca-2025]
 * Heraeus Covantics, *Fused Quartz and Silica Tubes*; Entegris,
@@ -668,7 +668,7 @@ cards are not public.
 [^skw-07]: SkyWater Technology, *A Day in the Life of a SkyWater
     Maintenance Technician*, 2023-12-14; caption re-checked 2026-09-13.
     <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
-[^epa-subpart-i]: US Environmental Protection Agency, *Electronics
+[^epa-ghgrp-subpart-i]: US Environmental Protection Agency, *Electronics
     Manufacturing: Subpart I, Greenhouse Gas Reporting Program*,
     information sheet, December 2024, accessed 2026-09-13.
     <https://www.epa.gov/system/files/documents/2024-04/i_electronics_infosheet_2024.pdf>

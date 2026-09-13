@@ -9,10 +9,10 @@ passivate interfaces and keep metals and silicon from oxidising.
 Hydrogen is often supplied diluted in nitrogen as
 {term}`forming gas`, and the same mixture is used in downstream plasma
 ashers to strip resist. The materials index assigns forming gas to this
-page; nitrogen, argon and oxygen belong to the process-gas class and
-ammonia to the precursor class, which the
-{ref}`materials index <materials-index>` assigns to class pages of their
-own, and they are discussed here only in their role as anneal ambients.
+page; nitrogen, argon and oxygen belong to the
+{ref}`process gases <material-process-gases>` page and ammonia to the
+{ref}`precursors <material-precursors>` page, and they are discussed
+here only in their role as anneal ambients.
 On the step pages' readings,
 SKY130 uses forming gas in the two {term}`alloy anneals <alloy anneal>`
 and in the ash of thirty resist strips. This page describes the class in
@@ -272,6 +272,8 @@ temperatures are not public.
 * {ref}`machine-downstream-plasma-asher` — the ashers that use forming gas.
 * {ref}`machine-rapid-thermal-processor` — the lamp anneals and their
   gases.
+* {ref}`material-process-gases` — nitrogen, argon and oxygen.
+* {ref}`material-precursors` — ammonia.
 * {ref}`materials-index` — nitrogen, argon, oxygen and ammonia rows and
   all consumable classes.
 
