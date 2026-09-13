@@ -140,7 +140,7 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 
 ## Machines typically used
 
-* **248 nm (KrF) stepper or scanner**, 200 mm: ASML PAS 5500/300–/750
+* **DUV (KrF, 248 nm) stepper or scanner**, 200 mm: ASML PAS 5500/300–/750
   series, Nikon NSR-S20x, Canon FPA-3000EX ({ref}`category-lithography`);
   an **i-line stepper** is the alternative if the layer is relaxed.
 * **Coat/develop track** (TEL, DNS/SCREEN, Sokudo) with BARC and DUV
