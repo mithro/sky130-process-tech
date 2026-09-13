@@ -25,3 +25,4 @@ uv.lock
 
 # Browser MCP scratch
 .playwright-mcp/
+*.pdf
