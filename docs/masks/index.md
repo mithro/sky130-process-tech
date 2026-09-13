@@ -481,7 +481,10 @@ abbreviations mask makers and the patent literature use for these
 types.[^photronics-abr][^pat-bim-tsmc] We also read the digit 4 after
 the first letter of each code, less certainly, as the 4× reduction
 ratio; the tab does not define its codes. The tab does not say to which
-runs these types apply, and it gives no type for any other mask.
+runs these types apply, and it gives no type for any other mask. The
+{ref}`VIM4 mask page <mask-vim4>` reads the last two fields of the
+via 4 code, `LSR` and `WET`, less certainly still, as a laser-written,
+wet-etched plate.
 
 The tab "Random Mask Case Label Info" transcribes two plate-case labels
 from Photronics, one for a metal 2 plate and one for a metal 5
