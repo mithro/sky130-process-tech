@@ -284,55 +284,108 @@ SKY130` marks, plus five rows the PDK table does not have: "Rev
 Resistor Protect, RRPM", "Ultra-High Resistor Poly, URPM", "Capacitor
 MiM 2, CAP2M", "RRAM Mask, RRM" and "Via 1 top, RRAM tier,
 VIMC".[^steps-sheet][^pdk-05] Each run has an "Exists" column, marked
-`X` where the sheet records a plate for that mask on that
-run.[^steps-sheet] The tables below report those marks; *not recorded*
-means no `X` on any of the eight runs.
+`X` where the sheet records a plate for that mask on that run, and a
+"Plate ID" column.[^steps-sheet]
 
-| Step | `masks.csv` (`Used in SKY130`) | Plates recorded |
-|------|--------------------------------|-----------------|
-| {ref}`FOM <step-004>` | `X` | all eight |
-| {ref}`DNM <step-007>` | `X` | all eight |
-| {ref}`LVTNM <step-014>` | `X` | all eight |
-| {ref}`NWM <step-017>` | `X` | all eight |
-| {ref}`HVTPM <step-022>` | `X` | all eight |
-| {ref}`PWBM <step-026>` | *blank* | MPW-6 and MPW-8 |
-| {ref}`PWDEM <step-030>` | *blank* | MPW-6 |
-| {ref}`TUNM <step-035>` | `X` | all eight |
-| {ref}`ONOM <step-041>` | `X` | all eight |
-| {ref}`LVOM <step-044>` | `X` | all eight |
-| {ref}`RPM <step-049>` | `X` | all eight |
-| {ref}`RRPM <step-052>` | *not listed* | all eight |
-| {ref}`URPM <step-055>` | *not listed* | all eight |
-| {ref}`P1M <step-061>` | `X` | all eight |
-| {ref}`NTM <step-064>` | `X` | all eight |
-| {ref}`HVNTM <step-068>` | `X` | all eight |
-| {ref}`LDNTM <step-071>` | `X` | all eight |
-| {ref}`NPCM <step-078>` | `X` | all eight |
-| {ref}`PSDM <step-081>` | `X` | all eight |
-| {ref}`NSDM <step-085>` | `X` | all eight |
-| {ref}`LICM1 <step-093>` | `X` | all eight |
-| {ref}`LI1M <step-102>` | `X` | all eight |
-| {ref}`CTM1 <step-107>` | `X` | all except MPW-5 |
-| {ref}`MM1 <step-113>` | `X` | all except MPW-5 |
-| {ref}`VIM <step-118>` | `X` | all except MPW-5 |
-| {ref}`MM2 <step-124>` | `X` | all eight |
-| {ref}`VIM2 <step-129>` | Via 2-PLM `X`; Via 2-TNV and Via 2-S8TM *blank* | Via 2-PLM: all eight; Via 2-TNV and Via 2-S8TM: not recorded |
-| {ref}`CAPM <step-137>` | *blank* | all eight |
-| {ref}`MM3 <step-139>` | Metal 3-PLM `X`; Metal 3-TLM and Metal 3-S8TM *blank* | Metal 3-PLM: all eight; Metal 3-TLM and Metal 3-S8TM: not recorded |
-| {ref}`VIM3 <step-144>` | `X` | all eight |
-| {ref}`CAP2M <step-152>` | *not listed* | all eight |
-| {ref}`MM4 <step-154>` | `X` | all eight |
-| {ref}`VIM4 <step-159>` | `X` | all except MPW-5 |
-| {ref}`MM5 <step-162>` | `X` | all eight |
-| {ref}`NSM <step-165>` | `X` | all eight (MPW-6 plate identified differently) |
-| {ref}`PDM <step-168>` | Pad (scribe protect) `X`; Pad (scribe unprotect) *blank* | scribe protect: all except MPW-5; scribe unprotect: not recorded |
+(masks-mpw-reticle-sets)=
+### Runs, reticle sets and plate IDs
 
-| Entry with no mask step in this reference | `masks.csv` (`Used in SKY130`) | Plates recorded |
-|-------------------------------------------|--------------------------------|-----------------|
-| RRAM Mask, RRM | *not listed* | all except MPW-5 and MPW-6 |
-| Via 1 top, RRAM tier, VIMC | *not listed* | all except MPW-6 |
-| HVTRM, PBO, CU1M, PMM2 | `X` | not recorded |
-| NCM, OFM, VIPDM, INDM, PMM, PMM[E], PDMM[E], UBM, BUMP | *blank* | not recorded |
+The tab heads each run's columns with an identifier. The public
+mask-layer renders site described below calls the same kind of
+identifier the run's "Reticle set", and adds a fab lot for five runs,
+how confidently it has identified each set, and a project count for
+each shuttle.[^steps-sheet][^mask-renders]
+
+| Run | Sheet column heading | Plate-ID prefix | Renders site: reticle set | Fab lot (site) | Identification (site) | Projects (site) | Run page |
+|-----|----------------------|-----------------|---------------------------|----------------|-----------------------|-----------------|----------|
+| MPW-1 | `7CS8M06AC` | `S8M06AA` | `7CS8M06AC` | 4120787 | "likely" | 37 | [mpw-001](https://data.wafer.space/big-storage/sky130-masks/mpw-001.html) |
+| MPW-2 | `5CS8007AC` | `S8007AA` | `5CS8007AC` | 4205819 | "confirmed" | 56 | [mpw-002](https://data.wafer.space/big-storage/sky130-masks/mpw-002.html) |
+| MPW-3 | `5CS8008AC` | `S8008AA` | `5CS8008AC` | 4206521 | "confirmed" | 53 | [mpw-003](https://data.wafer.space/big-storage/sky130-masks/mpw-003.html) |
+| MPW-4 | `5CS8018AC` | `S8018AA` | `5CS8010AC`, "SKY130 MPW-4 (original)" | 4216266 | "confirmed" | 52 | [mpw-004](https://data.wafer.space/big-storage/sky130-masks/mpw-004.html) |
+| MPW-5 | `5CS8011AC` | `S8011AA` | `5CS8011AC` | 4229389 | "confirmed" | 74 | [mpw-005](https://data.wafer.space/big-storage/sky130-masks/mpw-005.html) |
+| MPW-6 | `5CS8014AC` | `S8014AA` | `5CS8014AC` | none given | "confirmed" | 85 | [mpw-006](https://data.wafer.space/big-storage/sky130-masks/mpw-006.html) |
+| MPW-7 | `5CS8016AC` | `S8016AA` | `5CS8016AC` | none given | "inferred" | 106 | [mpw-007](https://data.wafer.space/big-storage/sky130-masks/mpw-007.html) |
+| MPW-8 | `5CS8017AC` | `S8017AA` | `5CS8017AC` | none given | "inferred" | 144 | [mpw-008](https://data.wafer.space/big-storage/sky130-masks/mpw-008.html) |
+
+* **MPW-4 has two sets.** The sheet heads its MPW-4 column `5CS8018AC`,
+  and every MPW-4 plate ID in it has the prefix
+  `S8018AA`.[^steps-sheet] The renders site's MPW-4 page is for the set
+  `5CS8010AC` (fab lot 4216266), which it labels "SKY130 MPW-4
+  (original)", and its MPW-7 and MPW-8 pages note "(8018 is the re-made
+  MPW-4 set)".[^mask-renders] The renders are drawn from the MPW-4
+  tape-out layouts; the plates in the sheet's MPW-4 column are those of
+  `5CS8018AC`.
+* **Identification.** For MPW-7 and MPW-8 the site infers the set from
+  the numbering of the set before it ("Sequence after 5CS8014AC=MPW-6",
+  "Sequence after 8016=MPW-7"); for the other six it gives lot records
+  as its basis.[^mask-renders]
+* **Projects and dies.** The project count is the site's figure for the
+  shuttle; every reticle it renders carries 40 project dies, and it does
+  not explain the difference (for MPW-1, 37 projects against 40
+  dies).[^mask-renders]
+* **Plate IDs.** Every plate ID in the tab is the run's prefix, a
+  three-digit number and a final `A`, for example `S8M06AA020A` for
+  the MPW-1 `FOM` plate. The prefix is the column heading with its first
+  two characters dropped and its final `AC` replaced by `AA`. A mask's
+  number is the same on every run for which a plate is recorded, with
+  one exception: the MPW-6 `NSM` plate is `S8014AA616A`, where the
+  other seven runs have `007`.[^steps-sheet] The tables below give that
+  number as "Plate no.". The numbers do not follow process order —
+  `NSM` (step 165) is `007`, `NWM` (step 17) `010`, `FOM` (step 4)
+  `020`, `HVTPM` (step 22) `317`, and `CAPM` (step 137) `572` comes after
+  `MM3` (step 139) `570` — and the sheet does not say what they encode,
+  so this page reads no process position from them.[^steps-sheet]
+
+### Plates by mask
+
+The tables below report the "Exists" marks and plate numbers; *not
+recorded* means no `X` on any of the eight runs.
+
+| Step | `masks.csv` (`Used in SKY130`) | Plates recorded | Plate no. |
+|------|--------------------------------|-----------------|-----------|
+| {ref}`FOM <step-004>` | `X` | all eight | `020` |
+| {ref}`DNM <step-007>` | `X` | all eight | `150` |
+| {ref}`LVTNM <step-014>` | `X` | all eight | `038` |
+| {ref}`NWM <step-017>` | `X` | all eight | `010` |
+| {ref}`HVTPM <step-022>` | `X` | all eight | `317` |
+| {ref}`PWBM <step-026>` | *blank* | MPW-6 and MPW-8 | `024` |
+| {ref}`PWDEM <step-030>` | *blank* | MPW-6 | `026` |
+| {ref}`TUNM <step-035>` | `X` | all eight | `190` |
+| {ref}`ONOM <step-041>` | `X` | all eight | `230` |
+| {ref}`LVOM <step-044>` | `X` | all eight | `125` |
+| {ref}`RPM <step-049>` | `X` | all eight | `175` |
+| {ref}`RRPM <step-052>` | *not listed* | all eight | `177` |
+| {ref}`URPM <step-055>` | *not listed* | all eight | `178` |
+| {ref}`P1M <step-061>` | `X` | all eight | `210` |
+| {ref}`NTM <step-064>` | `X` | all eight | `255` |
+| {ref}`HVNTM <step-068>` | `X` | all eight | `257` |
+| {ref}`LDNTM <step-071>` | `X` | all eight | `238` |
+| {ref}`NPCM <step-078>` | `X` | all eight | `180` |
+| {ref}`PSDM <step-081>` | `X` | all eight | `260` |
+| {ref}`NSDM <step-085>` | `X` | all eight | `250` |
+| {ref}`LICM1 <step-093>` | `X` | all eight | `265` |
+| {ref}`LI1M <step-102>` | `X` | all eight | `370` |
+| {ref}`CTM1 <step-107>` | `X` | all except MPW-5 | `400` |
+| {ref}`MM1 <step-113>` | `X` | all except MPW-5 | `450` |
+| {ref}`VIM <step-118>` | `X` | all except MPW-5 | `500` |
+| {ref}`MM2 <step-124>` | `X` | all eight | `550` |
+| {ref}`VIM2 <step-129>` | Via 2-PLM `X`; Via 2-TNV and Via 2-S8TM *blank* | Via 2-PLM: all eight; Via 2-TNV and Via 2-S8TM: not recorded | `560` |
+| {ref}`CAPM <step-137>` | *blank* | all eight | `572` |
+| {ref}`MM3 <step-139>` | Metal 3-PLM `X`; Metal 3-TLM and Metal 3-S8TM *blank* | Metal 3-PLM: all eight; Metal 3-TLM and Metal 3-S8TM: not recorded | `570` |
+| {ref}`VIM3 <step-144>` | `X` | all eight | `575` |
+| {ref}`CAP2M <step-152>` | *not listed* | all eight | `582` |
+| {ref}`MM4 <step-154>` | `X` | all eight | `580` |
+| {ref}`VIM4 <step-159>` | `X` | all except MPW-5 | `585` |
+| {ref}`MM5 <step-162>` | `X` | all eight | `590` |
+| {ref}`NSM <step-165>` | `X` | all eight | `007`; MPW-6: `616` |
+| {ref}`PDM <step-168>` | Pad (scribe protect) `X`; Pad (scribe unprotect) *blank* | scribe protect: all except MPW-5; scribe unprotect: not recorded | `600` |
+
+| Entry with no mask step in this reference | `masks.csv` (`Used in SKY130`) | Plates recorded | Plate no. |
+|-------------------------------------------|--------------------------------|-----------------|-----------|
+| RRAM Mask, RRM | *not listed* | all except MPW-5 and MPW-6 | `430` |
+| Via 1 top, RRAM tier, VIMC | *not listed* | all except MPW-6 | `455` |
+| HVTRM, PBO, CU1M, PMM2 | `X` | not recorded | — |
+| NCM, OFM, VIPDM, INDM, PMM, PMM[E], PDMM[E], UBM, BUMP | *blank* | not recorded | — |
 
 The source of both tables is the "Run Mask IDs" tab,[^steps-sheet] with
 the `masks.csv` fields from the PDK.[^pdk-05] What the record shows:
@@ -359,10 +412,11 @@ the `masks.csv` fields from the PDK.[^pdk-05] What the record shows:
   (inference: contact, metal 1, via 1, via 4 and pad masks are needed
   for any working die, so a gap in the record is the likelier
   explanation).
-* **NSM on MPW-6.** Every run has an `NSM` plate, but the identifier
-  recorded for the MPW-6 plate does not follow the pattern shared by
-  the `NSM` plates of the other seven runs.[^steps-sheet] The sheet
-  does not explain the difference.
+* **NSM on MPW-6.** Every run has an `NSM` plate, but the MPW-6 plate
+  is recorded as `S8014AA616A`, where the `NSM` plates of the other
+  seven runs carry the number `007`; 616 is higher than any other plate
+  number in the tab.[^steps-sheet] The sheet does not explain the
+  difference.
 * **The sky130B ReRAM masks.** `RRM` has plates recorded on MPW-1 to
   MPW-4, MPW-7 and MPW-8, and `VIMC` on MPW-1 to MPW-5, MPW-7 and
   MPW-8; neither has one on MPW-6.[^steps-sheet] The sheet's notes tie
@@ -382,16 +436,17 @@ the `masks.csv` fields from the PDK.[^pdk-05] What the record shows:
 ### Mask types and plate labels
 
 A tab headed "Sheet4" gives a coded mask type for three masks
-only.[^steps-sheet] We read the codes for the via 2 (`VIM2`) and via 3
-(`VIM3`) plates as denoting embedded
-{term}`attenuated phase-shift masks <attenuated PSM>` and the code for
-the via 4 (`VIM4`) plate as denoting a binary (chrome-on-quartz) mask,
-in each case for 248 nm exposure: the codes use the abbreviations mask
-makers and the patent literature use for these
-types.[^photronics-abr][^pat-bim-tsmc] We also read a digit 4 in each code, less
-certainly, as the 4× reduction ratio; the tab does not define its codes. The
-tab does not say to which runs these types apply, and it gives no type
-for any other mask.
+only: `F4-248-EAPSM-A43-APRX` for `VIM2` and `VIM3`, and
+`B4-248-BIM-LSR-WET` for `VIM4`.[^steps-sheet] We read the codes for
+the via 2 (`VIM2`) and via 3 (`VIM3`) plates (`EAPSM`) as denoting
+embedded {term}`attenuated phase-shift masks <attenuated PSM>` and the
+code for the via 4 (`VIM4`) plate (`BIM`) as denoting a binary
+(chrome-on-quartz) mask, in each case for 248 nm exposure (`248`): the
+codes use the abbreviations mask makers and the patent literature use
+for these types.[^photronics-abr][^pat-bim-tsmc] We also read the digit
+4 at the start of each code, less certainly, as the 4× reduction ratio;
+the tab does not define its codes. The tab does not say to which runs
+these types apply, and it gives no type for any other mask.
 
 The tab "Random Mask Case Label Info" transcribes two plate-case labels
 from Photronics, one for a metal 2 plate and one for a metal 5
@@ -538,8 +593,8 @@ MPW runs.
   the {ref}`lithography category page <category-lithography>` give
   industry-generic readings.
 * The process-steps sheet records no plates for `CTM1`, `MM1`, `VIM`,
-  `VIM4` and `PDM` on MPW-5, and an `NSM` plate on MPW-6 identified
-  differently from those of the other seven runs;[^steps-sheet] it does
+  `VIM4` and `PDM` on MPW-5, and an `NSM` plate on MPW-6 numbered
+  `616` where the other seven runs have `007`;[^steps-sheet] it does
   not say whether these are gaps in the record or differences between
   the runs.
 
@@ -580,6 +635,13 @@ MPW runs.
     labels) and "Sheet1" (step number, code and description), retrieved
     2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
+    directory: `README.md`, `masks.html`, the run pages `mpw-001.html` to
+    `mpw-008.html`, and for each run × mask directory the page,
+    `job.json`, `result.json` and per-die slot JSON files, retrieved
+    2026-09-13. Rendered from the public shuttle repositories under
+    <https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>.
+    <https://data.wafer.space/big-storage/sky130-masks/>
 [^photronics-abr]: Photronics, Inc., *Advanced Binary Reticle*, product
     page, retrieved 2026-09-13.
     <https://www.photronics.com/products/advanced-binary-reticle/>
