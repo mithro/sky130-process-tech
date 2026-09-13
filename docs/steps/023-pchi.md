@@ -49,6 +49,16 @@ speed-critical.[^itrs-04][^wei-1998] The PDK's inverter-delay tables for
 `nfet_01v8`/`pfet_01v8_hvt` combinations[^pdk-07] quantify the speed
 that is traded for it.
 
+The published test-tile measurements include both devices at the PDK's
+e-test geometries. By maximum-transconductance extrapolation at
+V_DS = −0.1 V, less half the drain bias, we extract threshold magnitudes
+of 1.124 V for `pfet_01v8_hvt` against 1.065 V for `pfet_01v8` at
+7/8 µm (+0.059 V) and 0.917 V against 0.798 V at 7/0.15 µm (+0.119 V);
+at 7/0.15 µm the drain current at V_GS = V_DS = −1.8 V falls from
+1.28 mA to 0.94 mA (our extraction from the published measurements).
+The PDK's e-test nominals differ by +0.057 V and +0.107 V, and their
+currents fall from 1.347 mA to 1.003 mA.[^raw-data-lv-mosfets][^pdk-07]
+
 A second, more physical reason to split the high-Vt adjust into two
 implants is profile shaping. A single shallow implant that raises the
 surface concentration enough to move the threshold also raises the body
@@ -136,6 +146,9 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
   implants.[^pat-04]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
+* SKY130 raw-data repository, 1.8 V transistor files — `pfet_01v8_hvt`
+  and `pfet_01v8` thresholds and drain currents side by side (our
+  extraction).[^raw-data-lv-mosfets]
 
 ### High-level understanding
 
@@ -266,3 +279,11 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 1.8 V
+    transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_01v8`, `nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt`,
+    `pfet_01v8_lvt`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>

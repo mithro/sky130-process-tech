@@ -87,6 +87,18 @@ opening. Which reading is right is not public; see *Open questions*.
 Without this mask every 1.8 V NMOS would have the same threshold, and
 the low-Vt, native and SONOS device options in the PDK would not exist.
 
+The published test-tile measurements show the low-Vt devices of both
+polarities with lower thresholds than their standard counterparts. At
+7/8 µm we extract 0.432 V for `nfet_01v8_lvt` against 0.534 V for
+`nfet_01v8`, and a magnitude of 0.672 V for `pfet_01v8_lvt` against
+1.065 V for `pfet_01v8` (maximum-transconductance extrapolation at
+|V_DS| = 0.1 V, less half the drain bias; our extraction from the
+published measurements). The PMOS shift is thus about four times the
+NMOS shift, as between the PDK's e-test nominals (0.399 V and
+0.101 V).[^raw-data-lv-mosfets][^pdk-07] Measured thresholds do not
+show whether the reticle covers or opens the drawn regions, nor how
+many implants produce the two shifts.
+
 ## How it is typically performed
 
 An industry-generic implant-block lithography sequence for a 200 mm,
@@ -190,6 +202,9 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 * SkyWater, *Facilities & Capabilities* — ASML i-line stepper and
   scanner; tracks; overlay and CD tools.[^skw-01]
 * SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
+* SKY130 raw-data repository, 1.8 V transistor files — low-Vt and
+  standard thresholds of both polarities (our
+  extraction).[^raw-data-lv-mosfets]
 
 ### High-level understanding
 
@@ -332,3 +347,11 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 1.8 V
+    transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_01v8`, `nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt`,
+    `pfet_01v8_lvt`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>

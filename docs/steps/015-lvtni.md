@@ -72,6 +72,22 @@ devices and the SONOS cells,[^pdk-periph] so this step (or its absence)
 also underlies the zero-Vt-class devices whose value to analogue
 designers is a threshold near 0 V.
 
+The published test-tile measurements show the size of the separation.
+By maximum-transconductance extrapolation at V_DS = 0.1 V, less half
+the drain bias, we extract 0.432 V for `nfet_01v8_lvt` against 0.534 V
+for `nfet_01v8` at 7/8 µm, and 0.612 V against 0.707 V at 7/0.15 µm —
+differences of 0.102 V and 0.095 V, against 0.101 V and 0.089 V between
+the PDK's e-test nominals. For two 7/0.15 µm structures with the same
+source/drain extent (2.5 µm) the low-Vt device carries 3.84 mA against
+3.39 mA at V_GS = V_DS = 1.8 V, 13 % more; the PDK's nominal currents
+differ by 14 % (our extraction from the published
+measurements).[^raw-data-lv-mosfets][^raw-data-testtile-pads][^pdk-07]
+The low-Vt device also shows the smaller body effect: its threshold
+rises by 0.245 V for 1.8 V of reverse body bias at 7/8 µm, against
+0.299 V (our extraction).[^raw-data-lv-mosfets] Lower net channel
+doping would give that, and both readings above lower the net doping,
+so it does not decide between them (inference).[^wiki-vt]
+
 The trade is leakage: "Typical high Vth devices reduce static leakage by
 10 times compared with low Vth devices".[^wiki-mtcmos] A process without
 `LVTNI` would still make working logic, but only at one threshold.
@@ -193,6 +209,10 @@ below are typical or taken from contemporaneous patents.
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — Eaton
   Semiconductor Equipment Operations product description; 3–750 keV,
   4–3500 µA.[^axcelis-8250]
+* SKY130 raw-data repository, 1.8 V transistor files and test-tile pad
+  documentation — thresholds, currents and body effect of
+  `nfet_01v8` and `nfet_01v8_lvt` (our
+  extraction).[^raw-data-lv-mosfets][^raw-data-testtile-pads]
 
 ### High-level understanding
 
@@ -354,3 +374,17 @@ below are typical or taken from contemporaneous patents.
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 1.8 V
+    transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_01v8`, `nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt`,
+    `pfet_01v8_lvt`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
+[^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
+    Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
+    E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
+    and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
+    retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>

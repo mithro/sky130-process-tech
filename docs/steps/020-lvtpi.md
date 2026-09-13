@@ -67,6 +67,14 @@ from it — `pfet_01v8_hvt` by the additional implants of
 {ref}`HVTPM <step-022>`, and `pfet_01v8_lvt` through the `lvtn` blocking
 layer[^pdk-07][^pdk-periph] (see {ref}`LVTNM <step-014>`).
 
+In the published test-tile measurements the standard PMOS has a
+threshold magnitude of 1.065 V at 7/8 µm and 0.798 V at 7/0.15 µm
+(maximum-transconductance extrapolation at V_DS = −0.1 V, less half
+the drain bias; our extraction from the published measurements),
+within 0.02 V of the PDK's e-test nominals of −1.050 V and
+−0.781 V.[^raw-data-lv-mosfets][^pdk-07] The measurements show where
+the baseline threshold lies, not which implant sets it.
+
 ## How it is typically performed
 
 An industry-generic PMOS threshold implant for a 200 mm, 130 nm-era
@@ -156,6 +164,9 @@ fab (SKY130 values are not public):
   pad oxide.[^pat-04]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
+* SKY130 raw-data repository, 1.8 V transistor files — measured
+  `pfet_01v8` thresholds at the e-test geometries (our
+  extraction).[^raw-data-lv-mosfets]
 
 ### High-level understanding
 
@@ -296,3 +307,11 @@ fab (SKY130 values are not public):
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
+    Electronics LLC), measured I–V and C–V data for the 1.8 V
+    transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    (`nfet_01v8`, `nfet_01v8_lvt`, `pfet_01v8`, `pfet_01v8_hvt`,
+    `pfet_01v8_lvt`), `google/skywater-pdk-sky130-raw-data`
+    repository, 2022, retrieved 2026-09-13; values quoted from them are
+    our extraction.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>
