@@ -72,10 +72,11 @@ and a `drawing` purpose at 117:20, a layer number that also carries the
 names and descriptions, as on the {ref}`masks index <masks-index>`, and
 the PDK publishes no operation from `via4` to the plate. Rule x.15a
 confines mask layers to test modules, seal ring and frame, and its
-exception names only "FOM/P1M/Metal waffle drop",[^pdk-periph] so a
-design inside the die draws `via4` (our reading of x.15a). Rule x.2
-permits angles of "n x 90" degrees only on "via3 and via4. Anchors are
-exempted."[^pdk-periph]
+exception names only "FOM/P1M/Metal waffle drop" (flag P, periphery
+only),[^pdk-periph] so a design inside the die draws `via4` (our reading
+of x.15a, which does not say what applies in the core). One row of rule
+x.2 limits via3 and via4 to "n x 90" degrees: "Angles permitted on: via3
+and via4. Anchors are exempted."[^pdk-periph]
 
 ### In the public renders
 
@@ -250,8 +251,8 @@ flag CU means "Rules applicable only to Cu BE flows" and IR "IR drop
 check compering Al database and slotted Cu database for the same product
 (2 gds files) must be clean".[^pdk-periph]
 
-| Rule | Description (as published) | Value |
-|------|----------------------------|-------|
+| Rule | Description (published wording, abridged where marked "[…]") | Value |
+|------|--------------------------------------------------------------|-------|
 | via4.1 | "Min and max L and W of via4" | 0.800 µm |
 | via4.2 | "Spacing of via4 to via4" | 0.800 µm |
 | via4.3 | "Only min. square via4s are allowed except die seal ring where via4s are (Via4 CD)\*L" | 0.8\*L |

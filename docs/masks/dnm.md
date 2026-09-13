@@ -52,7 +52,8 @@ The PDK's mask generation table, Table F2b, marks the `DNM` column `C`
 the HV varactor, two SONOS FET rows, the 5/16 V drain-extended PMOS,
 the five 5/20 V drain-extended device rows, eight diode rows (seven
 named for the deep N-well, and the photodiode) and the parasitic
-NPN.[^pdk-06] The 1.8 V NMOS row does not mark it, which fits the device page's "with or
+NPN.[^pdk-06] The 1.8 V NMOS row marks it `+`, "Layer allowed to
+overlap", rather than `C`, which fits the device page's "with or
 without" (our reading of the two tables together).[^pdk-06][^pdk-07]
 The deep N-well is therefore a module that designers opt into rather
 than a layer every die needs; the {ref}`DNM <step-007>` page leaves open
@@ -85,9 +86,10 @@ x.15a restricts where a designer may draw mask layers: "Drawn
 compatible, mask, and waffle-drop layers are allowed only inside
 areaid:mt (i.e., etest modules)", the seal ring or the frame, with the
 exception that "FOM/P1M/Metal waffle drop are allowed inside the
-die".[^pdk-periph] Since `DNM` is not among the exceptions, a design
-inside the die draws `dnwell`, and the `cdnm` layer is for test
-modules, seal ring and frame (our reading of x.15a).
+die" (flag P, periphery only).[^pdk-periph] Since `DNM` is not among the
+exceptions, a design inside the die draws `dnwell`, and the `cdnm` layer
+is for test modules, seal ring and frame (our reading of x.15a, which
+does not say what applies in the core).
 
 Three criteria in two tables hint that the plate is not the drawn layer
 copied unchanged, without saying how it differs. Table 4 of *Criteria &
@@ -241,9 +243,9 @@ Steps:
 * {ref}`DNIS <step-009>` — strips the implanted resist before the liner
   oxidation.
 
-The next step, {ref}`LINOX <step-010>`, starts from the wafer cleaned
-after that strip, and no step between it and the next mask step,
-{ref}`LVTNM <step-014>`, uses the `DNM` resist. There is no exception
+On its step page's reading, the next step, {ref}`LINOX <step-010>`,
+grows the thermal liner oxide in the isolation trenches, and no step
+between it and the next mask step, {ref}`LVTNM <step-014>`, uses the `DNM` resist. There is no exception
 to the rule for this mask. The N-well ring that completes the tub is a
 separate mask, {ref}`NWM <step-017>`.
 
@@ -251,20 +253,20 @@ separate mask, {ref}`NWM <step-017>`.
 
 The `dnwell` rules of the periphery rules, with the N-well rules that
 refer to it; flag TC means "Rule not checked for cell name
-“_tech_CD_top”".[^pdk-periph]
+“\*_tech_CD_top\*”".[^pdk-periph]
 
-| Rule | Description (as published) | Value |
-|------|----------------------------|-------|
+| Rule | Description (published wording, abridged where marked "[…]") | Value |
+|------|--------------------------------------------------------------|-------|
 | dnwell.2 | "Min width of deep nwell" | 3.000 µm |
 | dnwell.3 | "Min spacing between deep nwells. Rule exempt inside UHVI." | 6.300 µm |
 | dnwell.3a–3d | Spacings inside UHVI | N/A |
 | dnwell.4 | "Dnwell can not overlap pnp:dg" | — |
 | dnwell.5 | "P+_diff can not straddle Dnwell" | — |
-| dnwell.6 | "RF NMOS must be enclosed by deep nwell" | — |
+| dnwell.6 | "RF NMOS must be enclosed by deep nwell […]" | — |
 | dnwell.7 | "Dnwell can not straddle areaid:substratecut" | — |
-| nwell.5 | "Deep nwell must be enclosed by nwell by atleast…" (TC) | 0.400 µm |
+| nwell.5 | "Deep nwell must be enclosed by nwell by atleast... […]" (TC) | 0.400 µm |
 | nwell.6 | "Min enclosure of nwell hole by deep nwell outside UHVI" (TC) | 1.030 µm |
-| nwell.7 | "Min spacing between nwell and deep nwell on separate nets" (TC) | 4.500 µm |
+| nwell.7 | "Min spacing between nwell and deep nwell on separate nets […]" (TC) | 4.500 µm |
 
 Table 2 of *Criteria & Assumptions* repeats the width and space as
 `DNMCD` 3 and `DNMCDSP` 6.3, and Table 4 gives a "Min spacing between
