@@ -64,14 +64,19 @@ variations in beam intensity".[^pat-disk-nova] Axcelis's history of the
 first NV-10-60 of 1979 names the same "dosimetry slot in the disk" and
 notes that "the velocity was proportional to 1/R"; the concept "was
 carried forward successfully for many generations of NV-10, GSD, HE,
-HE3, HC3, Ultra, and Paradigm".[^axcelis-history] Neutralised ions
-still implant but are not counted — "Such Faraday cages do not measure
-neutral atoms in the ion beam" — so an Eaton patent compensates the dose
-for the gas pressure in the beam path, noting that dose tolerances "are
-now at the 1% level in many applications".[^pat-dose-eaton] Kraupner et
-al. discuss this pressure compensation on the Axcelis GSD, where "neutralization of ions by charge
-changing interactions with gas … may lead to wrong dose and bad
-uniformity".[^kraupner-2002]
+HE3, HC3, Ultra, and Paradigm".[^axcelis-history] In an Eaton patent
+the detector behind the slot is a Faraday cage; the patent notes that
+"Faraday cages trap and measure the ion beam current while blocking the
+electrons which might accompany the ion beam" (electron suppression is
+described on the {ref}`medium-current page
+<machine-medium-current-implanter>`), but that neutralised ions, which
+still implant, are not counted: "Such Faraday cages do not measure
+neutral atoms in the ion beam". It therefore compensates the dose for
+the gas pressure in the beam path, noting that dose tolerances "are now
+at the 1% level in many applications".[^pat-dose-eaton] Kraupner et al.
+discuss this pressure compensation on the Axcelis GSD, where
+"neutralization of ions by charge changing interactions with gas … may
+lead to wrong dose and bad uniformity".[^kraupner-2002]
 
 ### Charge neutralisation and wafer cooling
 
@@ -86,7 +91,10 @@ with this approach", and
 configured with plasma based flood guns";[^mehta-1996] Eaton instead
 introduced a "back biased Secondary Electron Flood (SEF)" in 1996, "to
 provide charge control with low risk of emitting high energy primary
-electrons".[^axcelis-history] Resist changes the charging: photoresist on a
+electrons".[^axcelis-history] On Varian's VIISion 80 and VIISion 200,
+"When implanting with high currents, a plasma flood gun system is used
+to prevent wafer charging problems".[^lundquist-1996] Resist changes the
+charging: photoresist on a
 charge-collection electrode "increases positive charging
 dramatically",[^dixon-1996] and a wafer half covered with resist shows
 high negative potentials on the bare part and high positive potentials
@@ -123,8 +131,13 @@ al. present Varian's VIISta 80 for "Large Angle Tilt Implants (LATI,
   Materials implant systems using the xR80(TM) and xR LEAP … technology
   are currently in use", 1999), and the Quantum LEAP, Quantum 80 and
   Quantum 120 announced in July 1999.[^amat-quantum-1999]
-* **Varian.** The VIISta 80 single-wafer high-current
-  implanter.[^mezack-2000] Varian Semiconductor was acquired by Applied
+* **Varian.** The VIISion 80 and VIISion 200 high-current systems, 80 keV
+  and 200 keV machines presented at IIT 1996 that "autotune and implant
+  high doses with high beam currents";[^lundquist-1996] Todorov et al.
+  studied the energy purity of a VIISion 80 PLUS as a function of,
+  among other things, its "disc tilt angle", which we read as a batch
+  disc end station.[^todorov-1998] The VIISta 80 single-wafer
+  high-current implanter followed.[^mezack-2000] Varian Semiconductor was acquired by Applied
   Materials in 2011.[^wiki-varian]
 
 Eaton spun its implanter business off as Axcelis Technologies in
@@ -329,6 +342,10 @@ not public.
   an example flow with the implanter type of each implant.[^tanjyo-2011]
 * Mezack et al., IIT 2000 — the VIISta 80 single-wafer high-current
   implanter and large-angle tilt.[^mezack-2000]
+* Lundquist et al., IIT 1996 — the Varian VIISion 80 and VIISion 200
+  high-current systems and their plasma flood gun.[^lundquist-1996]
+* Todorov et al., IIT 1998 — energy purity of low-energy boron on a
+  VIISion 80 PLUS disc implanter.[^todorov-1998]
 * Kraupner et al., IIT 2002 — dosimetry and pressure compensation on the
   Axcelis GSD.[^kraupner-2002]
 * Xu and Lee, IIT 1996 — boron cross-contamination in high-dose arsenic
@@ -397,6 +414,17 @@ not public.
     advanced device fabrication", *Proc. 2000 International Conference on
     Ion Implantation Technology*, pp. 431–434.
     <https://doi.org/10.1109/IIT.2000.924180>
+[^lundquist-1996]: P. Lundquist, B. Pedersen, D. Ackerman and D. Brown,
+    "The VIISion 80 and VIISion 200: high current ion implantation
+    systems for greater throughput with excellent performance at low to
+    high doses", *Proc. 11th International Conference on Ion Implantation
+    Technology* (1996), pp. 466–469.
+    <https://doi.org/10.1109/IIT.1996.586401>
+[^todorov-1998]: S. S. Todorov, G. B. Latona, J. J. Cummings and M. Kase,
+    "Investigation of energy purity of sub-10 keV B⁺ implants on a Varian
+    VIISion PLUS ion implanter", *Proc. 1998 International Conference on
+    Ion Implantation Technology*, vol. 1, pp. 650–653.
+    <https://doi.org/10.1109/IIT.1999.812200>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30; implanter entries re-checked 2026-09-13.
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>

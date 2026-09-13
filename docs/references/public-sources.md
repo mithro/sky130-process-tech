@@ -8666,6 +8666,17 @@ box, a "Type II Bernas ion source w/ tungsten arc chamber", CTI
 cryopumps, Pfeiffer turbopumps and Edwards dry pumps. Used on the
 medium-current implanter page. Tier: high-level (dealer listing).
 
+**PAT-FARADAY-VARIAN** — J. Bisson, Z. Zhao, G. Gammel, D. Alvarado and
+C. Walker (Varian Semiconductor Equipment Associates), *Faraday system
+for ion implanters*, US 6,723,998 B2, granted 2004-04-20.
+<https://patents.google.com/patent/US6723998B2/en> A Faraday cup with an
+electrostatic suppression electrode and a magnet assembly; its
+background records that "Escape of secondary and tertiary electrons
+from the Faraday cup body … causes a measurement error" and the
+established negatively biased suppression electrode at the cup
+entrance. Used on the medium-current implanter page. Tier: cross-check
+(patent).
+
 #### High-current implanter (first cited there)
 
 **AMAT-QUANTUM-1999** — Applied Materials, *Applied Materials Announces
@@ -8714,6 +8725,25 @@ high-dose arsenic implants on multi-species high-current implanters,
 with energetic boron tied to the post-analyser acceleration voltage and
 surface boron sputtered from the beam line. Used on the high-current
 implanter page. Tier: deep dive.
+
+**LUNDQUIST-1996** — P. Lundquist, B. Pedersen, D. Ackerman and D.
+Brown, "The VIISion 80 and VIISion 200: high current ion implantation
+systems for greater throughput with excellent performance at low to high
+doses", *Proc. 11th International Conference on Ion Implantation
+Technology* (1996), pp. 466–469. <https://doi.org/10.1109/IIT.1996.586401>
+Varian's 80 keV and 200 keV VIISion high-current systems, which
+"autotune and implant high doses with high beam currents" and use a
+plasma flood gun against wafer charging. Used on the high-current
+implanter page. Tier: deep dive.
+
+**TODOROV-1998** — S. S. Todorov, G. B. Latona, J. J. Cummings and M.
+Kase, "Investigation of energy purity of sub-10 keV B⁺ implants on a
+Varian VIISion PLUS ion implanter", *Proc. 1998 International Conference
+on Ion Implantation Technology*, vol. 1, pp. 650–653.
+<https://doi.org/10.1109/IIT.1999.812200> Energy purity of 2 and 5 keV
+B⁺ on a VIISion 80 PLUS with a dual Einzel lens, against photoresist
+load, dose and "disc tilt angle". Used on the high-current implanter
+page. Tier: deep dive.
 
 #### High-energy implanter (first cited there)
 
