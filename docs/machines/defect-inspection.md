@@ -123,7 +123,12 @@ to determine whether a defect is located under, within or on top of a
 film or metal layer".[^tencor-crs-1997] KLA-Tencor's eV300 ("E-beam
 defect review") "Reads defect files from inspection and optical review
 systems" and "Features integrated automatic defect classification
-(ADC)".[^kla-ev300] Classification was the bottleneck: Breaux and Singh
+(ADC)".[^kla-ev300] Electron-beam tools also find defects that optics
+miss: KLA-Tencor described e-beam review that redetects "hard-to-find
+yield-killers such as electrical and HAR defects",[^kla-defect-2002] and
+ITRS 2001 notes that high-aspect-ratio inspection for process verification
+"usually refers to SEM-type tools" and "includes voltage contrast
+capability".[^itrs-2001-yield] Classification was the bottleneck: Breaux and Singh
 note that it "is typically a manual process limited in its effectiveness
 by human factors",[^breaux-1995] and Sherman, Tirosh and Smilansky call
 automated classification "one of the biggest challenges to successful
