@@ -117,8 +117,8 @@ fab (SKY130's recipe is not public):
   Axcelis's asher patent describes a design aimed at raising the
   removal rate of implanted resist,[^pat-asher-axcelis] and the
   Fusion microwave asher is the downstream archetype.[^pat-asher-fusion]
-* **{ref}`Batch wet bench <machine-wet-bench>`** (Akrion, DNS/SCREEN, SCP) or **spray
-  processor** (FSI Mercury) with SPM, SC-1, SC-2.
+* **{ref}`Batch wet bench <machine-wet-bench>`** (Akrion, DNS/SCREEN, SCP) or
+  **{ref}`spray processor <machine-wet-bench>`** (FSI Mercury) with SPM, SC-1, SC-2.
 * **Patterned-wafer inspection** (KLA-Tencor AIT class).
 
 ## Machines likely used at SkyWater

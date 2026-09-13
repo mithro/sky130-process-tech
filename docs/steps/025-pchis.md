@@ -85,7 +85,7 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`**, 200 mm single-wafer (GaSonics
   Aura/PEP, Mattson Aspen, Axcelis/Fusion ES, PSK) (category page).
-* **{ref}`Batch wet bench <machine-wet-bench>`** (SPM, SC-1, SC-2) or **spray processor**.
+* **{ref}`Batch wet bench <machine-wet-bench>`** (SPM, SC-1, SC-2) or **{ref}`spray processor <machine-wet-bench>`**.
 * **Surface scanner** (KLA-Tencor Surfscan class) for particles.
 
 ## Machines likely used at SkyWater

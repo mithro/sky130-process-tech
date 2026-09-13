@@ -136,7 +136,7 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 * **{ref}`Wet benches <machine-wet-bench>`**: automated multi-tank benches with SPM, SC-1, SC-2, HF
   and hot-phosphoric tanks, quick-dump rinsers and IPA dryers — Akrion
   GAMA,[^akrion-gama] SCP, DNS/Screen, Santa Clara Plastics, Semitool.
-* **Spray processors** (FSI Mercury centrifugal spray) and
+* **{ref}`Spray processors <machine-wet-bench>`** (FSI Mercury centrifugal spray) and
   **single-wafer spin processors** (SEZ, later Lam; DNS) for HF-based
   and solvent strips with better chemical freshness and no
   cross-contamination between wafers.
