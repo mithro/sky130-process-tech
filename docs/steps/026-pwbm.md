@@ -18,7 +18,8 @@ is coated, exposed through the PWBM {term}`reticle` and developed so that resist
 removed everywhere else. The two P-well implants {ref}`PWI <step-027>`
 and {ref}`PWI2 <step-028>` follow (through the same openings, we infer
 from the step order), and the resist is stripped at
-{ref}`PWIS <step-029>`. The name says how the layer is used: this is a
+{ref}`PWIS <step-029>`. The PDK's name for the mask, "P-Well Block
+Mask",[^pdk-05] says how the layer is used: this is a
 *block* mask, the negative of the {ref}`NWM <step-017>` N-well mask in
 spirit, and the P-well is implanted into all silicon that it does not
 cover.
@@ -39,10 +40,10 @@ except into N-wells and into the special 20 V regions.
 
 The PDK's mask table lists "P-Well Block Mask, PWBM" but — unlike `NWM`,
 `LVTNM` and `HVTPM` — does *not* tick it as "Used in SKY130".[^pdk-05]
-The step list used in this reference nevertheless contains the step, and
-the `pwbm` layer and its rules exist, so we treat the unticked box as a
-documentation inconsistency rather than as evidence that the mask is
-absent (see *Open questions*).
+The `pwbm` layer and its rules exist, and the 20 V zero-Vt NMOS
+depends on the block,[^pdk-07] so this reference treats the unticked
+box as a documentation inconsistency rather than as evidence that the
+mask is absent (see *Open questions*).
 
 The `pwbm` rules (pwbm.1–pwbm.5) have no public numeric values ("N/A")
 but describe the geometry: `pwbm` regions live inside the 20 V
@@ -226,7 +227,7 @@ raises NMOS {term}`Vt`.[^hook-2003]
 
 * The PDK mask table leaves the "Used in SKY130" column blank for PWBM
   (and for PWDEM) although the `pwbm`/`pwde` layers and their rules
-  exist and the step list used in this reference includes both steps; in
+  exist and the 20 V devices depend on them;[^pdk-07] in
   `masks.csv` these two `pwbm`/`pwde`-backed masks are the only
   well-module masks left blank — DNM, NWM, HVTPM and LVTNM are all
   ticked.[^pdk-05] We treat the blank as a documentation inconsistency.

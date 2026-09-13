@@ -237,8 +237,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 ## Open questions
 
 * **Reticle polarity.** The PDK says `lvtn` *blocks* a Vt-adjust
-  implant, yet the step list used in this reference pairs the mask with
-  an implant ({ref}`LVTNI <step-015>`). Whether the reticle opens *over*
+  implant, while this reference describes an implant through the
+  `LVTNM` resist ({ref}`LVTNI <step-015>`). Whether the reticle opens *over*
   `lvtn` (and `LVTNI` is a {term}`counter-doping` implant) or *everywhere
   except* `lvtn` (and `LVTNI` is the baseline Vt-adjust implant that
   low-Vt devices skip) cannot be settled from public data; the "mask

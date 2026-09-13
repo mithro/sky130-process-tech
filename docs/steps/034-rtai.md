@@ -23,10 +23,10 @@ implant {ref}`LVTPI <step-020>`, the high-Vt PMOS pair
 been annealed. `RTAI` heats the wafer, in an inert ambient, to repair
 the lattice damage they left, move the dopant atoms onto substitutional
 sites where they are electrically active, and settle the well and
-channel profiles before the first gate dielectric is grown. The step
-list used in this reference calls it the "Pre-gate oxide anneal"; the
-code `RTAI` reads as "RTA, implant" — a rapid thermal anneal — and the
-public evidence supports that reading (below). After it, the flow enters
+channel profiles before the first gate dielectric is grown. This
+reference labels it "Pre-gate oxide anneal" and describes it as a
+rapid thermal anneal — an inference from the Cypress integration
+patent and SkyWater's RTA tool (below). After it, the flow enters
 the {term}`SONOS` module ({ref}`TUNM <step-035>`) and then gate oxidation
 ({ref}`GOX100 <step-043>`).
 
@@ -134,7 +134,8 @@ An industry-generic well/channel activation anneal for a 200 mm,
   a single-wafer RTA with the inert ambients (Ar, N₂) and the
   temperature reach this step needs. Strength: **strong** for the tool
   (SkyWater statement); assignment to `RTAI` is an **inference** from
-  the step name and from the Cypress integration patent.[^pat-03]
+  the Cypress integration patent's rapid thermal anneal after the well
+  implants.[^pat-03]
   Reseller documentation for the Heatpulse 8800/8808 family gives a
   "Recommended steady-state temperature range: 400 – 1200°C", ramp-up
   "Programmable, 1 – 180°C per second", "2 banks of 14 lamps" with
@@ -149,7 +150,7 @@ An industry-generic well/channel activation anneal for a 200 mm,
   all made by Aviza"[^skw-01] with "Ar anneal to 1150C" and "N2 anneal
   to 1150C" — the batch alternative if the fab chose a furnace well
   anneal. Strength: strong for existence; weak for assignment, since the
-  step code says RTA.
+  Cypress integration patent describes an RTA at this point.[^pat-03]
 
 ## Resources required
 
@@ -236,12 +237,11 @@ An industry-generic well/channel activation anneal for a 200 mm,
   1000 °C/10 s figure is from a contemporaneous third-party patent.
 * Whether `RTAI` is a single RTA or an RTA plus a short furnace step,
   and whether the Heatpulse 8808 or an Aviza furnace runs it, is
-  inferred from the step code and SkyWater's tool list.[^skw-01]
+  inferred from the Cypress integration patent[^pat-03] and SkyWater's
+  tool list.[^skw-01]
 * Whether the pad oxide is present during the anneal, and where the
-  sacrificial oxide before gate oxidation is removed, is not resolvable
-  from the step list used in this reference (see {ref}`NS19 <step-013>`
-  and {ref}`PWDEIS <step-033>`).
-* The expansion of `RTAI` ("RTA, implant"?) is our reading of the code.
+  sacrificial oxide before gate oxidation is removed, is not stated
+  publicly (see {ref}`NS19 <step-013>` and {ref}`PWDEIS <step-033>`).
 * The reseller's specification PDF cited for the Heatpulse
   family[^ag-8108] documents the Heatpulse 4100, 8108, 8800 and 8800i, not the 8808
   itself; the two share a family but the

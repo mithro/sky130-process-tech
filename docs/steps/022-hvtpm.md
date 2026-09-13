@@ -66,7 +66,7 @@ channel dose; `HVTPM` is that mask. Without it the PDK's `_hvt` PMOS and
 high-Vt varactor would not exist, and low-leakage standard-cell
 libraries built on them could not be offered.
 
-There is no NMOS equivalent in the step list used in this reference:
+There is no NMOS equivalent: the PDK's
 NMOS come in standard, low-Vt and native flavours only,[^pdk-07] so the
 high-Vt option is PMOS-only in SKY130.
 
@@ -186,9 +186,9 @@ fab:
 
 * The PDK mask table also flags "HLow VT PCh Radio*, HVTRM" as used in
   SKY130,[^pdk-05] with a drawn layer `hvtr` (GDS 18:20, "High-Vt RF
-  transistor implant"),[^pdk-06] yet the step list used in this
-  reference has no HVTRM step. Whether that mask is absent, folded into
-  `HVTPM`, or belongs to an option not in the baseline flow is unknown.
+  transistor implant").[^pdk-06] The PDK does not say whether that mask
+  is absent from the baseline flow, folded into `HVTPM`, or belongs to
+  an option; this reference describes no separate step for it.
 * Resist thickness and exposure tool are inferred.
 
 <!-- footnotes -->
