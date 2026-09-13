@@ -112,12 +112,12 @@ fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Downstream plasma asher**, 200 mm single-wafer: GaSonics
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`**, 200 mm single-wafer: GaSonics
   (Novellus) Aura/PEP, Mattson Aspen, Axcelis/Fusion ES, PSK;
   Axcelis's asher patent describes a design aimed at raising the
   removal rate of implanted resist,[^pat-asher-axcelis] and the
   Fusion microwave asher is the downstream archetype.[^pat-asher-fusion]
-* **Batch wet bench** (Akrion, DNS/SCREEN, SCP) or **spray
+* **{ref}`Batch wet bench <machine-wet-bench>`** (Akrion, DNS/SCREEN, SCP) or **spray
   processor** (FSI Mercury) with SPM, SC-1, SC-2.
 * **Patterned-wafer inspection** (KLA-Tencor AIT class).
 

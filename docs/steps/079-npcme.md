@@ -142,11 +142,11 @@ fab (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Dielectric/nitride plasma etcher**, 200 mm single-wafer: Lam TCP 9400
+* **{ref}`Dielectric/nitride plasma etcher <machine-plasma-etcher-dielectric>`**, 200 mm single-wafer: Lam TCP 9400
   (poly/nitride class[^snf-9400]), Lam Exelan/4520XLE, Applied
   Materials MxP/eMax, TEL DRM; remote-plasma NF₃-based tools for a
   low-damage alternative.
-* **Downstream plasma asher** and **wet bench** for the strip and clean.
+* **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** and **{ref}`wet bench <machine-wet-bench>`** for the strip and clean.
 * **Cross-section SEM**.
 
 ## Machines likely used at SkyWater
