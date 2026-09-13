@@ -181,7 +181,7 @@ alignment corrections.
   90S and Dainippon Screen (DNS) tracks.
 * **{ref}`Metrology <machine-cd-sem-overlay-metrology>`**: KLA-Tencor 8100/8100XP CD-SEM (accelerating voltage
   0.4–1.5 kV, resolution below 4 nm)[^gce-kla8100] and Hitachi
-  S-9200 CD-SEMs (released 1998, for 6- and 8-inch wafers);[^hitachi-2011] KLA-Tencor 5xxx/Archer
+  S-9200 CD-SEMs (released 1998; for 150 mm and 200 mm wafers, given as 6 and 8 inch);[^hitachi-2011] KLA-Tencor 5xxx/Archer
   optical overlay tools; {ref}`after-develop inspection <machine-defect-inspection>` on KLA-Tencor 2xxx
   bright-field inspectors.[^wiki-kla]
 * **Reticles** are made at a mask shop (Photronics, DNP, Toppan, or a
