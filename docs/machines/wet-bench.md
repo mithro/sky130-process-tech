@@ -176,7 +176,7 @@ acid, phosphoric acid and BOE; the DNS bench and the FSI Mercury are the
 only entries with SC-2; the Batch Rotational tool is a solvent tool with
 CO₂-injected rinse water; and the "Single Wafer" entry that follows the
 Batch Rotational, "SEZ223, Davinci, HF, DSP+HF, titration controlled",
-is a single-wafer spin processor, a separate class.[^skw-01] SkyWater
+is a {ref}`single-wafer spin processor <machine-single-wafer-spin-processor>`, a separate class.[^skw-01] SkyWater
 gives no model, tank count or vendor for the Batch Rotational tool. We
 read "Akrion Gamma" as Akrion's GAMA wet station,[^akrion-gama-series]
 "DNS" as Dainippon Screen, now SCREEN,[^screen-ws820] and "rotational"
@@ -219,7 +219,7 @@ The {ref}`NS19 <step-013>` grade is one of the few *strong* assignments
 on the machines index, because the Akrion bench is "the only phosphoric
 tank listed".[^skw-01] The single-wafer "SEZ223, Davinci" entry, which
 several of these pages also name for HF etches and cleans, belongs to
-the single-wafer spin processor class ({ref}`machines-index`).
+the single-wafer spin processor class ({ref}`machine-single-wafer-spin-processor`).
 
 ## Consumables and facilities
 

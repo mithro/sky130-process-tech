@@ -137,7 +137,7 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
   and hot-phosphoric tanks, quick-dump rinsers and IPA dryers — Akrion
   GAMA,[^akrion-gama] SCP, DNS/Screen, Santa Clara Plastics, Semitool.
 * **{ref}`Spray processors <machine-wet-bench>`** (FSI Mercury centrifugal spray) and
-  **single-wafer spin processors** (SEZ, later Lam; DNS) for HF-based
+  **{ref}`single-wafer spin processors <machine-single-wafer-spin-processor>`** (SEZ, later Lam; DNS) for HF-based
   and solvent strips with better chemical freshness and no
   cross-contamination between wafers.
 * **Metrology**: laser surface scanners for particles (KLA-Tencor
