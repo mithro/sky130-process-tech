@@ -8,8 +8,9 @@ four or five times larger than it will print on the wafer[^wiki-mask]
 (4× is the ITRS 2001 mask magnification for the 130 nm
 generation[^itrs-03]) — is projected onto a photoresist-coated wafer.
 The developed resist then serves as a stencil for an etch, or as a
-{term}`block mask` for an implant, and is removed afterwards. The coat–expose–develop sequence,
-its tools and its consumables are described on the
+{term}`block mask` for an implant, and is removed afterwards. The
+coat–expose–develop sequence, its tools and its consumables are
+described on the
 {ref}`Photolithography (mask step) <category-lithography>` category
 page; this page is an index that ties each mask step of the step list
 used in this reference to what the open SKY130 process design kit
@@ -161,12 +162,12 @@ Notes on the table:
 * **The "(inference)" entries.** `FOM` is paired with the active
   layers `diff` and `tap` on its step page; `PWBM` with `nwell` as
   well as `pwbm`, since `gds_layers.csv` has no drawn P-well layer;
-  `ONOM` with `tunm` oversized; `LVOM` with the complement of the thick-oxide layer
-  `hvi`, since designers draw `hvi` rather than `lvom`; `NTM` with a
-  Boolean combination of the device layers, since there is no drawn
-  `ntm`; `CTM1` with `mcon`, "Contact from local interconnect to
-  metal1", because `licon1` corresponds to `LICM1`; `RPM` with `urpm`
-  as well as `rpm`; and `RRPM`, `URPM` and `CAP2M`, which have no
+  `ONOM` with `tunm` oversized; `LVOM` with the complement of the
+  thick-oxide layer `hvi`, since designers draw `hvi` rather than
+  `lvom`; `NTM` with a Boolean combination of the device layers, since
+  there is no drawn `ntm`; `CTM1` with `mcon`, "Contact from local
+  interconnect to metal1", because `licon1` corresponds to `LICM1`;
+  `RPM` with `urpm` as well as `rpm`; and `RRPM`, `URPM` and `CAP2M`, which have no
   `masks.csv` entry, with `rpm`, `urpm` and `cap2m` on the readings of
   their step pages.[^pdk-06] The metal-fuse entry for `MM4` rests on
   rule x.11, "Metal fuses are drawn in met4" (the other two x.11 rows
@@ -244,7 +245,10 @@ the unmarked variants of `VIM2`, `MM3` and `PDM` are in the main table.
 
 `NCM` is the only one of the nine with layers in `gds_layers.csv`; its
 rule set's function is "Define Vt adjust implant region for LV NMOS in
-the core of NVSRAM".[^pdk-periph] With `chvtrm`, `cncm` is one of the
+the core of NVSRAM".[^pdk-periph] `INDM` has no layers, but the
+periphery rules have an `indm` rule set whose function line begins
+"Defines third level of metal interconnects, buses and
+inductor".[^pdk-periph] With `chvtrm`, `cncm` is one of the
 two mask-level layers that have no mask step in this
 reference.[^pdk-06] The {ref}`VIM4 <step-159>` page discusses the
 "Pad Via, VIPDM" entry.
