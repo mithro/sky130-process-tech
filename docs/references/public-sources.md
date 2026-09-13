@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1578
+written page has exactly one entry here; the inventory holds 1593
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19 and
@@ -501,6 +501,7 @@ Also used on the substrates material page.
 Also used on the CMP consumables material page.
 Also used on the anneal ambients material page.
 Also used on the ultrapure water material page.
+Also used on the hardware consumables material page.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -557,6 +558,7 @@ cross-check (tool naming).
 Also used on the HDP-CVD page.
 Also used on the single-wafer spin processor machine page.
 Also used on the CMP consumables material page.
+Also used on the hardware consumables material page.
 
 **SKW-08** — SkyWater Technology, *"Maintenance Technician Job
 Overview"* and *"Careers & Jobs"* pages.
@@ -679,6 +681,7 @@ Also used on the substrates material page.
 Also used on the CMP consumables material page.
 Also used on the anneal ambients material page.
 Also used on the ultrapure water material page.
+Also used on the hardware consumables material page.
 
 **SEC-02** — SkyWater Technology, Inc., Form 10-K for fiscal year
 2023, filed 2024.
@@ -1307,6 +1310,7 @@ processor page.
 Also used on the HDP-CVD page.
 Tier: high-level.
 Also used on the anneal ambients material page.
+Also used on the hardware consumables material page.
 
 **TXT-10** — R. B. Fair (ed.), *Rapid Thermal Processing: Science and
 Technology*, Academic Press, 1993, ISBN 978-0-12-247690-7.
@@ -1804,6 +1808,7 @@ material. Used on the cmp category page. Tier: high-level.
 Used on the test category page.
 Also used on the parametric tester and prober page.
 Tier: high-level.
+Also used on the hardware consumables material page.
 
 **WIKI-PSG** — Wikipedia, *Phosphosilicate glass*.
 <https://en.wikipedia.org/wiki/Phosphosilicate_glass> Phosphosilicate
@@ -2203,6 +2208,7 @@ PDF (AG-8108), not its 8800 section (checked 2026-09-13).
 Also used on the rapid thermal processor page.
 Tier: high-level (reseller page for the tool SKW-01 lists as "Ag Heatpulse
 8808").
+Also used on the hardware consumables material page.
 
 **AG-8108** — SemiStar Corp., *"AG Associates Heatpulse 4100 / 8108 /
 8800 / 8800i Specifications"* (reseller PDF), accessed 2026-08-30.
@@ -2218,6 +2224,7 @@ facility tables (cooling water, CDA/N₂, exhausts). No section names the
 8808.
 Also used on the rapid thermal processor page.
 Tier: high-level (weak for the 8808 itself).
+Also used on the hardware consumables material page.
 
 **GASONICS-2000** — GaSonics International, home page, Wayback Machine
 capture of 2000-03-01.
@@ -5681,6 +5688,7 @@ passivation of silicon etched with an oxide hard mask. Used on steps 059
 and 062.
 Also used on the silicon and polysilicon plasma etcher page.
 Tier: deep dive.
+Also used on the hardware consumables material page.
 
 **BRUNNER-1997** — T. A. Brunner, "Impact of lens aberrations on optical
 lithography", *IBM Journal of Research and Development* **41**(1.2),
@@ -6601,6 +6609,7 @@ emissivity in RTP. Used on steps 088 and 092.
 Also used on the rapid thermal processor page.
 Tier: deep dive.
 Also used on the substrates material page.
+Also used on the hardware consumables material page.
 
 **CURRENT-1996-IIT** — M. I. Current, M. Vella and W. Lukaszek,
 "Beam-plasma concepts for wafer charging control during ion
@@ -7174,6 +7183,7 @@ Science & Technology A* **9**(2), 261–265 (1991).
 deposition. Used on steps 097, 109 and 112. Tier: deep dive.
 Also used on the PVD cluster tool page.
 Also used on the sputter targets material page.
+Also used on the hardware consumables material page.
 
 **ROSSNAGEL-1993** — S. M. Rossnagel and J. Hopwood, "Magnetron sputter
 deposition with high levels of metal ionization", *Applied Physics
@@ -9194,6 +9204,7 @@ test category page.
 Also used on the parametric tester and prober page.
 Tier: cross-check.
 Also used on the substrates material page.
+Also used on the hardware consumables material page.
 
 **RAW-DATA-TESTTILE-PADS** — SkyWater PDK Authors, *Manufacturing Test
 Tile Pad Documentation* (PDF title "Pad documentation for SKY130 MPW
@@ -9236,6 +9247,7 @@ Structures", "24 Ring Oscillators", "18 line and via chain modules" and
 with "40 µm" pads, "60 µm" and "80 µm" dimensions and a photograph of a
 needle "Probe Card". Used on step 171 and the test category page. Tier:
 cross-check.
+Also used on the hardware consumables material page.
 
 **RAW-DATA-MDM** — Agilent Technologies, *IC-CAP User's Guide*, "MDM
 File Structure" (IC-CAP 2008 documentation, copy linked from the
@@ -9700,6 +9712,7 @@ heating element of "600-1200° C (Up to 1250° C for > 4 Hours)". Used on
 the vertical-furnace oxidation, LPCVD and anneal pages. Tier:
 cross-check (vendor statement).
 Also used on the substrates material page.
+Also used on the hardware consumables material page.
 
 **PAT-TORCH-DRIMER** — G. Drimer, A. Glaser and D. M. Rowell, *Fast,
 safe, pyrogenic external torch assembly*, US 5,257,926 A, filed
@@ -9719,6 +9732,7 @@ opening (furnace throat)" through a heat-insulation structure of "thin
 heat insulation plates"; describes the load, nitrogen purge, heat-up and
 process sequence. Used on the vertical-furnace oxidation page. Tier: deep
 dive (patent).
+Also used on the hardware consumables material page.
 
 **PAT-LOADLOCK-KOKUSAI** — M. Shimada (Kokusai Electric), *Semiconductor
 fabricating apparatus, method for controlling oxygen concentration within
@@ -9766,6 +9780,7 @@ US 5,820,367 A, filed 1996-09-18, granted 1998-10-13.
 with annular ring supports so that "a surface defect called a slip
 generated when the wafer is heat treated can be eliminated". Used on the
 vertical-furnace oxidation page. Tier: deep dive (patent).
+Also used on the hardware consumables material page.
 
 **PAT-VF-TRANSFER-TEL** — T. Tanahashi (Tokyo Electron; Tokyo Electron
 Tohoku), *Vertical heat treatment apparatus with a circulation gas
@@ -9836,6 +9851,7 @@ hundred m Torr", and its ammonium chloride by-product "in the form of a
 fine powder" that deposits on cold surfaces and "may be syphoned back
 into the furnace". Used on the vertical-furnace LPCVD page. Tier:
 cross-check (patent).
+Also used on the hardware consumables material page.
 
 **PAT-NH4CL-VLSI** — O. L. Caton, C. A. Bellows, C. M. Hebert, Jr. and
 S. J. Schaper (VLSI Technology), *Thermal trap for gaseous materials*,
@@ -9846,6 +9862,7 @@ solid condensate at temperatures below about 125° C." in exhaust pipes
 and pumps; a trap with walls at about 140 °C and a water-cooled
 collection surface. Used on the vertical-furnace LPCVD page. Tier: deep
 dive (patent).
+Also used on the hardware consumables material page.
 
 **PAT-LPCVD-SONY** — S. C. Persyn (Sony), *Vertical LPCVD furnace with
 reversible manifold collar and method of retrofitting same*, US 5,800,616
@@ -9865,6 +9882,7 @@ and inner tubes, gas inlet and annular exhaust of a vertical CVD furnace,
 and a boat cover that splits the gas into "branched streams" so that the
 film "is improved in uniformity and homogeneity". Used on the
 vertical-furnace LPCVD page. Tier: deep dive (patent).
+Also used on the hardware consumables material page.
 
 **PAT-LPCVD-NEC** — T. Usami (NEC), *Vertical low pressure CVD apparatus
 with an adjustable nozzle*, US 5,503,678 A, filed 1994-11-04, granted
@@ -10118,6 +10136,7 @@ Technology* **14**(2), S42–S52 (2005).
 reactor-wall deposits in gate-etch plasmas: walls "stay clean" without
 O₂, and a silicon oxychloride layer grows on them as O₂ is added. Used
 on the silicon and polysilicon plasma etcher page. Tier: deep dive.
+Also used on the hardware consumables material page.
 
 **WIKI-HBR** — Wikipedia, *Hydrogen bromide*.
 <https://en.wikipedia.org/wiki/Hydrogen_bromide> The silicon etch gas
@@ -10131,6 +10150,7 @@ a plasma to fluorine radicals that attack polysilicon, nitride and
 oxide, and its use to clean PECVD chambers. Used on the silicon and
 polysilicon plasma etcher page. Tier: high-level.
 Also used on the PECVD, HDP-CVD and tungsten CVD pages.
+Also used on the hardware consumables material page.
 
 **ALLWIN-RAINBOW-4500** — Allwin21, *Lam Rainbow 45XX Plasma Etcher*,
 reseller product description, accessed 2026-09-13.
@@ -10178,6 +10198,7 @@ plasma etcher page. Tier: high-level.
 <https://en.wikipedia.org/wiki/Hexafluoroethane> C₂F₆ as an etchant and
 its global warming potential of 9200. Used on the dielectric and nitride
 plasma etcher page. Tier: high-level.
+Also used on the hardware consumables material page.
 
 **CHRISTIE-1994** — R. Christie, S. Burns, V. S. Grewal and B. Spuler,
 "Sub 0.5 μm TCP metal etching in the ASTC", *Proceedings of 1994
@@ -10214,6 +10235,7 @@ The TCP 9600DFM metal etcher for sub-150 nm applications, designed to cut
 consumables cost, with a customer reporting a mean time between cleans
 above 300 RF hours after moving from the 9600PTX. Used on the metal
 plasma etcher page. Tier: cross-check (vendor statement).
+Also used on the hardware consumables material page.
 
 **AMAT-METAL-DPS-PLUS-1999** — Applied Materials, *Applied Materials
 Introduces the Metal Etch DPS Plus Centura for Sub-0.18 Micron Metal
@@ -10583,6 +10605,7 @@ dual-zone gas distribution, temperature-controlled dome, turbomolecular
 pumping, "a dual helium cooling zone electrostatic chuck", ceramic and
 aluminium-alloy construction and a remote fluorine plasma clean. Used on
 the HDP-CVD page. Tier: cross-check (patent).
+Also used on the hardware consumables material page.
 
 **PAT-HDP-CLEAN-NOVELLUS** — M. D. Kilgore, W. G. M. van den Hoek, C. J.
 Rau, B. J. van Schravendijk, J. A. Tobin, T. W. Mountsier and J. C.
@@ -10602,6 +10625,7 @@ A, filed 1999-01-19, granted 2000-09-19.
 dome and alumina nozzles of an HDP-CVD chamber, and a seasoning film
 deposited after each clean to hold it back. Used on the HDP-CVD page.
 Tier: deep dive (patent).
+Also used on the hardware consumables material page.
 
 **SCHWARTZ-1992** — G. C. Schwartz and P. Johns, "Gap-Fill with PECVD
 SiO₂ Using Deposition/Sputter Etch Cycles", *Journal of The
@@ -10637,6 +10661,7 @@ cross-check (vendor statement).
 The Altus and Dual Altus, the PRISM MOCVD TiN system and the 300 mm
 Concept Three Altus with "a new exclusion ring reference design". Used on
 the tungsten CVD page. Tier: cross-check (vendor statement).
+Also used on the hardware consumables material page.
 
 **AMAT-ISM-2000** — Applied Materials, *Interconnect Systems & Modules*
 (liner/barrier and tungsten CVD systems), product page; Wayback Machine
@@ -10651,6 +10676,7 @@ and the Vectra IMP chamber's bottom coverage and chamber count. Used on
 the tungsten CVD and PVD cluster tool pages. Tier: cross-check (vendor
 statement).
 Also used on the sputter targets material page.
+Also used on the hardware consumables material page.
 
 **PAT-BACKSIDE-NOVELLUS** — E. P. van de Ven, E. K. Broadbent, J. C.
 Benzing, B. L. Chin and C. W. Burkhart (Novellus Systems), *Gas-based
@@ -10752,6 +10778,7 @@ coil with target material, repeated after a number of wafers, so that
 material sputtered off the coil does not contaminate the film. Used on
 the PVD cluster tool page. Tier: deep dive (patent).
 Also used on the sputter targets material page.
+Also used on the hardware consumables material page.
 
 #### Lithography machine pages (first cited there)
 
@@ -12568,6 +12595,7 @@ What a wafer prober does, how it connects to the parametric or functional
 tester through the probe card, and the high-force and 300 mm trends. Used
 on the parametric tester and prober page. Tier: cross-check (vendor
 statement).
+Also used on the hardware consumables material page.
 
 **TEL-PROBER** — Tokyo Electron, *P-8XL & P-12XL Series Wafer Prober*
 (Certified Used Equipment), product page, accessed 2026-09-13.
@@ -12624,6 +12652,7 @@ Test Conference 1999*, pp. 396–405.
 BeCu and alloy probes on aluminium pads at 85 °C and the role of oxide
 from local Joule heating. Used on the parametric tester and prober page.
 Tier: deep dive.
+Also used on the hardware consumables material page.
 
 ### 8.20 Material-class page sources
 
@@ -13118,6 +13147,7 @@ and reused indefinitely in LPCVD or diffusion processes" (200 mm, "0.724
 mm" thick); and the statement that "It is still common for silicon dummy
 wafers to be made from reclaimed Si material". Used on the substrates
 material page. Tier: cross-check (vendor statement).
+Also used on the hardware consumables material page.
 
 **KAO-2021** — I. Kao and C. Chung, *Wafer Manufacturing: Shaping of
 Single Crystal Silicon Wafers*, Wiley, 2021, ISBN 978-0-470-06121-3.
@@ -13179,6 +13209,7 @@ conditioners, chemical monitoring, and chemical packaging products"; CMC's
 Advanced Planarization Solutions division. Names neither "CMC Chemicals,
 Inc.", KMG Chemicals nor SkyWater. Used on the CMP consumables material
 page. Tier: cross-check (company statement).
+Also used on the hardware consumables material page.
 
 **ENTEGRIS-POST-CMP** — Entegris, Inc., *Semiconductor Cleaning
 Solutions*, post-CMP cleaning solutions product page, accessed
@@ -13384,6 +13415,150 @@ dioxide", *ISSM 2016*, pp. 1–4. <https://doi.org/10.1109/ISSM.2016.7934544>
 A model of particle adsorption onto silicon in UPW from spin-cleaning and
 impurity experiments. Used on the ultrapure water material page. Tier:
 deep dive.
+
+#### Hardware consumables and abatement (first cited there)
+
+**HERAEUS-TUBES** — Heraeus Covantics, *Fused Quartz and Silica Tubes for
+Semiconductor Applications*, product page, accessed 2026-09-13.
+<https://www.heraeus-covantics.com/products-and-solutions/products-by-shape/tubes/fused-quartz-and-silica-tubes-for-semiconductor-applications>
+Tubes "needed in the semiconductor industry for the manufacturing of
+batch processing equipment used in CVD, Diffusion and Annealing tools",
+serving "as chemically pure reaction chambers, as gas or liquid inlets or
+as transportation pipes"; electrically fused HSQ®100 to HSQ®330S grades,
+stabilised HSQ®400 and synthetic HSQ®900 of "parts per billion class
+purity". Used on the hardware consumables material page. Tier:
+cross-check (vendor statement).
+
+**SKW-CERTS** — SkyWater Technology, *Certifications & Policies*, company
+page, accessed 2026-09-13.
+<https://www.skywatertechnology.com/certifications-policies/> Lists for
+SkyWater Minnesota "ISO9001", "AS9100", "IATF16949", "ISO13485" and
+"ISO14004 Environmental Management system"; for SkyWater Texas
+"ISO14001 Environmental Management System" among others. Used on the
+hardware consumables material page. Tier: cross-check (SkyWater
+statement).
+
+**EPA-GHGRP-SKYWATER** — US Environmental Protection Agency, Greenhouse
+Gas Reporting Program, Envirofacts `pub_dim_facility` records matching
+"SKYWATER", retrieved 2026-09-13.
+<https://data.epa.gov/efservice/pub_dim_facility/facility_name/CONTAINING/SKYWATER/JSON>
+Facility 1000354, "SKYWATER TECHNOLOGY FOUNDRY INC" (to 2013) and
+"SKYWATER TECHNOLOGY INC" (from 2014), 2401 E. 86th St., Bloomington,
+MN, NAICS 334413; reported subparts "C" for 2010 and "C,I" for each year
+2011–2023. Names no abatement system. Used on the hardware consumables
+material page. Tier: cross-check (regulator data).
+
+**EPA-SUBPART-I** — US Environmental Protection Agency, *Electronics
+Manufacturing: Subpart I, Greenhouse Gas Reporting Program*, information
+sheet, December 2024, accessed 2026-09-13.
+<https://www.epa.gov/system/files/documents/2024-04/i_electronics_infosheet_2024.pdf>
+Defines the source category (fluorine plasma etch, chamber clean and
+wafer clean, N₂O in CVD, fluorinated heat-transfer fluids); facilities
+report fluorinated GHG and N₂O emissions, "Controlled emissions of GHGs
+from abatement systems, if applicable", and an "Inventory and
+description of all abatement systems" for which destruction or removal
+efficiency is claimed. Used on the hardware consumables material page.
+Tier: cross-check (regulator guidance).
+
+**MPCA-2025** — Minnesota Pollution Control Agency, *SkyWater Technology
+fined more than $97,000 for violations with their air permit, federal
+regulations and Minnesota rules*, news release, 2025-02-04, accessed
+2026-09-13.
+<https://www.pca.state.mn.us/news-and-stories/skywater-technology-fined-more-than-97000-for-air-permit-violations>
+SkyWater "was fined $97,130 for operating without an air permit" at its
+Bloomington semiconductor plant; violations include "Taking credit for
+greenhouse gas emissions control equipment that was not allowed in
+permit" and "Failure to comply with federal semiconductor regulations
+after becoming subject to them"; SkyWater "has taken corrective action
+and has submitted a complete permit application". Used on the hardware
+consumables material page. Tier: cross-check (regulator statement).
+
+**EISELE-1978** — K. M. Eisele and R. Ruthardt, "Stabilized Fused-Quartz
+Tubes with Reduced Sodium Diffusion for Semiconductor Device Technology",
+*Journal of The Electrochemical Society* **125**(7), 1188–1190 (1978).
+<https://doi.org/10.1149/1.2131646> Stabilised quartz furnace tubes that
+pass less sodium (no abstract in Crossref or OpenAlex; the annotation
+rests on the title). Used on the hardware consumables material page.
+Tier: deep dive.
+
+**JOUBERT-2004** — O. Joubert, G. Cunge, B. Pelissier, L. Vallier, M.
+Kogelschatz and E. Pargon, "Monitoring chamber walls coating deposited
+during plasma processes: Application to silicon gate etch processes",
+*Journal of Vacuum Science & Technology A* **22**(3), 553–563 (2004).
+<https://doi.org/10.1116/1.1697484> Abstract: wall layers "cause large
+and uncontrolled shifts in the etch process"; an XPS technique with a
+floating Al₂O₃ sample on a 200 mm wafer shows silicon oxychloride wall
+layers in HBr/Cl₂/O₂, changed by CF₄ and by resist on the wafer. Used on
+the hardware consumables material page. Tier: deep dive.
+
+**ITO-2008** — N. Ito, T. Moriya, F. Uesugi, M. Matsumoto, S. Liu and Y.
+Kitayama, "Reduction of Particle Contamination in Plasma-Etching
+Equipment by Dehydration of Chamber Wall", *Japanese Journal of Applied
+Physics* **47**(5R), 3630 (2008). <https://doi.org/10.1143/JJAP.47.3630>
+Abstract: AlF₃ particles formed from the "coating material Al2O3 on the
+etching chamber wall" with fluorine and adsorbed water in WSi/poly
+etching, suppressed by plasma dehydration of chamber parts. Used on the
+hardware consumables material page. Tier: deep dive.
+
+**PAT-YTTRIA** — J. Y. Sun, S. J. Wu, S. Thach, A. H. Kumar, R. W. Wu,
+H. Wang, Y. Lin and C. C. Stow, *Yttrium oxide based surface coating for
+semiconductor IC processing vacuum chambers*, US 6,776,873 B1, filed
+2002-02-14, granted 2004-08-17.
+<https://patents.google.com/patent/US6776873B1/en> Abstract: "a
+ceramic-based surface coating, high purity yttrium oxide coating" on
+anodised aluminium chamber parts "against fluorine and oxygen plasma
+attack". Google Patents lists the assignee as "Individual". Used on the
+hardware consumables material page. Tier: deep dive.
+
+**FIALA-1999** — A. Fiala, M. Kiehlbauch, S. Mahnovski and D. B. Graves,
+"Model of point-of-use plasma abatement of perfluorinated compounds with
+an inductively coupled plasma", *Journal of Applied Physics* **86**(1),
+152–162 (1999). <https://doi.org/10.1063/1.370711> Abstract: a high
+density plasma "between the process tool turbomolecular pump and the
+backing pump", with oxygen added, converts PFCs "to products that can be
+scrubbed downstream of the backing pump"; a C₂F₆/O₂ model. Used on the
+hardware consumables material page. Tier: deep dive.
+
+**HU-2018** — S.-C. Hu, A. Shiue, W.-T. Tseng and G. Leggett,
+"Perfluorocompound Emissions Control and Kinetic Characteristics in
+Point-of-Use Wet-Thermal-Wet Abatement of Plasma-Enhanced Chemical Vapor
+Deposition Chamber Cleaning", *IEEE Transactions on Semiconductor
+Manufacturing* **31**(2), 302–308 (2018).
+<https://doi.org/10.1109/TSM.2018.2808173> Electric thermal oxidation of
+NF₃ from PECVD chamber cleans in wet-thermal-wet point-of-use abatement,
+with first-order kinetics against NF₃ and N₂ flow and temperature. Used
+on the hardware consumables material page. Tier: deep dive.
+
+**MANGYOU-2005** — H. Mangyou, N. Watanabe, K. Hattori, T. Watanabe, Y.
+Sugimori, K. Shibuya and S. Hasaka, "High performance atmospheric plasma
+abatement system for PFC reduction", *ISSM 2005*, pp. 263–266.
+<https://doi.org/10.1109/ISSM.2005.1513352> Abstract: a microwave
+atmospheric plasma abatement system for a single oxide etcher or PECVD
+tool that treats "up to 80 L/min of CF4 exhaust with 95% of DRE" at
+5.9 kW. Used on the hardware consumables material page. Tier: deep dive.
+
+**JOHNSON-2004** — A. D. Johnson, R. G. Ridgeway and P. J. Maroulis,
+"Reduction of PFC emissions to the environment through advances in CVD
+and etch processes", *IEEE Transactions on Semiconductor Manufacturing*
+**17**(4), 491–496 (2004). <https://doi.org/10.1109/TSM.2004.835700>
+Abstract: two strategies for reducing PFC emissions from CVD chamber
+cleaning and plasma etch while improving process performance. Used on
+the hardware consumables material page. Tier: deep dive.
+
+**SHERER-2005** — J. M. Sherer, *Semiconductor Industry: Wafer Fab
+Exhaust Management*, CRC Press, 2005.
+<https://doi.org/10.1201/9781420027198> Exhaust types, point-of-use
+devices, exhaust lines, central acid and ammonia wet scrubbers, VOC
+control and emergency releases (book description in OpenAlex). Used on
+the hardware consumables material page. Tier: high-level.
+
+**ROGGEI-1999** — A. Roggei and K. Seshan, "Reduction of probe to pad
+contact resistance: technology development targeted for cost
+effectiveness Pentium II(R) processors testing", *ISSM 1999*,
+pp. 217–219. <https://doi.org/10.1109/ISSM.1999.808775> Abstract: probing
+problems from "resistance increase between probes and pads during the
+probing process" removed by a fab process improvement at Intel. Used on
+the hardware consumables material page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
