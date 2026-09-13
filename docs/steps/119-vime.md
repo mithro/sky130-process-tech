@@ -359,10 +359,10 @@ recipe is not public); the shared physics is set out at
     etching using CF₄ and CHF₃", *Journal of Vacuum Science &
     Technology A* **12**(2), 333–344 (1994).
     <https://doi.org/10.1116/1.578877>
-[^perry-2001]: A. J. Perry, R. W. Waters, T. J. Barela and H. M.
-    Anderson, "Oxide etch behavior in a high-density, low-pressure,
-    inductively coupled C₂F₆ plasma: Etch rates, selectivity to
-    photoresist, and the effect of dc bias", *Journal of Vacuum Science
+[^perry-2001]: W. L. Perry, K. Waters, M. Barela and H. M. Anderson,
+    "Oxide etch behavior in a high-density, low-pressure, inductively
+    coupled C₂F₆ plasma: Etch rates, selectivity to photoresist, plasma
+    parameters, and CFx radical densities", *Journal of Vacuum Science
     & Technology A* **19**(5), 2272–2281 (2001).
     <https://doi.org/10.1116/1.1382874>
 [^standaert-1998]: T. E. F. M. Standaert, M. Schaepkens, N. R. Rueger,

@@ -6515,13 +6515,13 @@ method for controlling plasma uniformity across a substrate*, US
 hollow-cathode-magnetron ionised PVD source, a competing design. Used on
 step 109. Tier: deep dive.
 
-**PERRY-2001** — A. J. Perry, R. W. Waters, T. J. Barela and H. M.
-Anderson, "Oxide etch behavior in a high-density, low-pressure,
-inductively coupled C₂F₆ plasma: Etch rates, selectivity to photoresist,
-and the effect of dc bias", *Journal of Vacuum Science & Technology A*
+**PERRY-2001** — W. L. Perry, K. Waters, M. Barela and H. M. Anderson,
+"Oxide etch behavior in a high-density, low-pressure, inductively coupled
+C₂F₆ plasma: Etch rates, selectivity to photoresist, plasma parameters,
+and CFx radical densities", *Journal of Vacuum Science & Technology A*
 **19**(5), 2272–2281 (2001). <https://doi.org/10.1116/1.1382874> Oxide
-etch rates and selectivity in a high-density C₂F₆ plasma. Used on step
-108. Tier: deep dive.
+etch rates and selectivity in a high-density C₂F₆ plasma. Used on steps
+108, 119, 130 and 145. Tier: deep dive.
 
 **SHIOYA-1987** — Y. Shioya, T. Ikegami, M. Maeda and K. Yanagida,
 "High-temperature stress measurement on chemical-vapor-deposited
