@@ -23,12 +23,12 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1130
+written page has exactly one entry here; the inventory holds 1144
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17 and 8.18 were added
-to cover the sources the writers of the step, category and overview
-pages introduced; a
+8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
+were added to cover the sources the writers of the step, category,
+overview and machine pages introduced; a
 "Label ↔ key" note marks the few cases where one source has two keys.
 
 :::{note}
@@ -8515,6 +8515,156 @@ extraction from the published measurements, with the method stated
 where it is quoted. Used on steps 007, 008, 018, 022, 023, 024, 027,
 047, 052, 053, 055, 056, 082, 086, 135, 138, 150, 153 and 171, the test
 category page and the overview. Tier: cross-check.
+
+### 8.19 Machine-class page sources
+
+Sources introduced for the machine-class pages under `docs/machines/`
+that had no entry above. Each label on those pages is the key below in
+lower case and the citation is the one given in the page footnote; the
+entries are grouped by the machine page that first cited the source and
+name every page that uses it. None of these sources mentions SkyWater,
+SKY130 or the Bloomington fab; they describe equipment classes and
+models in general. Every URL was fetched on 2026-09-13, and the IEEE and
+AIP papers were checked through Crossref (bibliographic data) and
+OpenAlex (abstracts) on that date; the annotations of papers rest on
+their abstracts.
+
+#### Medium-current implanter (first cited there)
+
+**AXCELIS-HISTORY** — Axcelis Technologies, *Our History* ("45 Years of
+Innovation"), company web page, accessed 2026-09-13.
+<https://www.axcelis.com/about/our-history/> Year-by-year history of
+Nova, Eaton and Axcelis implanters: the NV-10 "Slot Disk" with a
+"dosimetry slot in the disk", the NV-GSD of 1990 with a "Gyroscopic end
+station" and ">600 units shipped", the NV-6200AV with "tilt angles from
+0 to 60 degrees", the 1994 NV-GSD-HE combining "the GSD end station and
+the LINAC technology", the "back biased Secondary Electron Flood (SEF)"
+of 1996, the NV-8250HT of 2000 and the spin-off as Axcelis in 2000. Used
+on the medium-current, high-current and high-energy implanter pages.
+Tier: cross-check (vendor statement).
+
+**TANJYO-2011** — M. Tanjyo and M. Naito, "History of Ion Implanter and
+Its Future Perspective", *SEI Technical Review* No. 73, October 2011,
+pp. 22–30. <https://global-sei.com/technology/tr/bn73/pdf/73-03.pdf>
+Nissin Ion Equipment's account of its medium-current EXCEED line: the
+four implanter types (HC, MC, HE, UHD), an example CMOS flow with the
+energy, dose and implanter type of each implant, the energy filter
+magnet, magnetic beam scan and collimator, Faraday arrays, the
+filament-type plasma flood gun for 200 mm, graphite shields, IHC
+sources and tilt/twist control to ±0.1°. Used on the medium-current,
+high-current and high-energy implanter pages. Tier: deep dive (vendor
+technical paper).
+
+**GLAVISH-2018** — H. Glavish and M. Farley, "Review of Major
+Innovations in Beam Line Design", *2018 22nd International Conference
+on Ion Implantation Technology (IIT)*, pp. 9–18.
+<https://doi.org/10.1109/IIT.2018.8807986> Review of implanter beam-line
+design from 1970: uniformity, species and energy purity, particles,
+angle control in medium-current machines and "the transition from high
+current and high energy batch implanters to serial implanters". Used on
+the medium-current, high-current and high-energy implanter pages. Tier:
+deep dive.
+
+**HORSKY-1998-IHC** — T. N. Horsky, "Indirectly heated cathode arc
+discharge source for ion implantation of semiconductors", *Review of
+Scientific Instruments* **69**(4), 1688–1690 (1998).
+<https://doi.org/10.1063/1.1148866> An indirectly heated cathode source
+with "several times the lifetime of commercial Bernas sources", cathode
+lives "from 70 h … to over 500 h" and doubly charged fractions of 15 %
+for phosphorus and 2 % for boron. Distinct from HORSKY-1998 (resist
+outgassing). Used on the medium-current and high-energy implanter
+pages. Tier: deep dive.
+
+**PAT-SDS-ATMI** — G. M. Tom and J. V. McManus (Advanced Technology
+Materials), *Storage and delivery system for gaseous hydride, halide,
+and organometallic group V compounds*, US 5,518,528 A, granted
+1996-05-21. <https://patents.google.com/patent/US5518528A/en> The
+sorbent-based sub-atmospheric gas source for implanter arsine and
+phosphine; its background records dilute (10–15 %) hydride cylinders at
+400–1800 psig and species-change times for solid and gas sources. Used
+on the medium-current, high-current and high-energy implanter pages.
+Tier: cross-check (patent).
+
+**SWENSON-1996** — D. R. Swenson, D. F. Downey, S. R. Walther, A. Renau,
+G. Gammel and M. E. Mack, "Metals-contamination-reduction program for
+the Varian EHP-220/500 medium-current ion implanter", *Proc. 11th
+International Conference on Ion Implantation Technology* (1996), pp.
+139–142. <https://doi.org/10.1109/IIT.1996.586154> "Additional graphite
+and Si-coated shields were added to the beamline" to cut Al, Fe and Cr
+contamination of arsenic implants. Used on the medium-current and
+high-current implanter pages. Tier: deep dive.
+
+**SWENSON-1996-BERNAS** — D. R. Swenson, A. Renau, S. R. Walther and M.
+E. Mack, "Enhanced Bernas ion source for the Varian EHP-500
+medium-current ion implanter", *Proc. 11th International Conference on
+Ion Implantation Technology* (1996), pp. 283–286.
+<https://doi.org/10.1109/IIT.1996.586263> A higher-current arc supply
+and reversible source magnet for more multiply charged beam, operating
+"at lower arc voltages to reduce sputter erosion of the filament". Used
+on the medium-current implanter page. Tier: deep dive.
+
+**HARLAN-1998** — J. M. Harlan and K. Petry, "Overview of the Eaton 8250
+medium current implanter", *Proc. 1998 International Conference on Ion
+Implantation Technology*, vol. 1, pp. 266–269 (Crossref title spells
+"Eaten"). <https://doi.org/10.1109/IIT.1999.812103> The 8250's hybrid
+scanning with "a novel electrostatic scan angle correction lens",
+parallelism "better than +/-0.2 degrees", an indirectly heated cathode
+source, dosimetry "at the plane of the wafer" and an electrostatic
+clamp. Used on the medium-current implanter page. Tier: deep dive.
+
+**RATHMELL-1998** — R. D. Rathmell, D. E. Kamenitsa, M. L. King and A. M.
+Ray, "Beam parallelism in the 8250 medium current implanter", *Proc.
+1998 International Conference on Ion Implantation Technology*, vol. 1,
+pp. 392–395. <https://doi.org/10.1109/IIT.1999.812136> How beam-angle
+variations as small as ±0.5° change channelled profiles and monitor
+readings, and how the 8250's scan lens keeps angles within 0.2°. Used
+on the medium-current implanter page. Tier: deep dive.
+
+**CURELLO-1998** — G. Curello and T. McWilliams, "Charge exchange in
+Eaton's NV-8250 medium current ion implanter", *Proc. 1998 International
+Conference on Ion Implantation Technology*, vol. 1, pp. 543–545.
+<https://doi.org/10.1109/IIT.1999.812173> Dose error from charge
+exchange measured by raising the chamber pressure of an 8250 from 5E-7
+to 7E-5 Torr, for low-dose BF₂⁺ and higher-dose B⁺. Used on the
+medium-current implanter page. Tier: deep dive.
+
+**OLSON-1998** — J. C. Olson, A. Renau and J. Buff, "Scanned beam
+uniformity control in the VIISta 810 ion implanter", *Proc. 1998
+International Conference on Ion Implantation Technology*, vol. 1, pp.
+169–172. <https://doi.org/10.1109/IIT.1999.812079> The VIISta 810, "a
+200 mm/300 mm serial medium current ion implanter": a 1 kHz
+electrostatic scanner, a 45° angle-corrector magnet and mechanical
+wafer scan. Used on the medium-current implanter page. Tier: deep dive.
+
+**KUBO-1996** — T. Kubo, T. Hisaeda, T. Miyake, T. Ishigaki, M. Kase, K.
+Watanabe and T. Fukuda, "Energy contamination from multiple-charged ion
+implantation in conventional implanter", *Proc. 11th International
+Conference on Ion Implantation Technology* (1996), pp. 100–103.
+<https://doi.org/10.1109/IIT.1996.586141> Low-energy contamination of
+P⁺⁺ implants from charge exchange with resist outgassing — 12 % of the
+dose at 400 pμA, 5 % at 200 pμA — and its effect on a retrograde n-well
+device. Used on the medium-current and high-energy implanter pages.
+Tier: deep dive.
+
+**VARIAN-ESERIES-2003** — Varian Semiconductor Equipment Associates,
+*Productivity Plus Option / Upgrade, E220 / E500 Series Implanter*,
+presentation, July 2003, hosted by the AVS Northern California Chapter
+user groups.
+<https://nccavs-usergroups.avs.org/wp-content/uploads/JTG2003/WCJTG_07_2003_Varian.pdf>
+A vendor upgrade presentation for Varian's "E-series medium current
+implanter" install base (E220, E500 and their HP, EHP and EHPi
+versions), for "150mm and 200mm electrostatic-clamp" wafers, with
+mechanical throughput figures. Used on the medium-current implanter
+page. Tier: cross-check (vendor document).
+
+**FABSURPLUS-E500** — Fabsurplus (SDI), *Varian E500 HP Medium Current
+Implanter* (used-equipment specification sheet, item 44950), accessed
+2026-09-13. <https://www.fabsurplus.com/sdicatalog/download?id=44950> A
+dealer sheet for a 1995 E500 HP "Medium Current Implanter" used for
+150 mm production: SDS PH₃, AsH₃ and BF₃ bottles and argon in the gas
+box, a "Type II Bernas ion source w/ tungsten arc chamber", CTI
+cryopumps, Pfeiffer turbopumps and Edwards dry pumps. Used on the
+medium-current implanter page. Tier: high-level (dealer listing).
 
 ## 9. Evidence about specific tools at SkyWater
 
