@@ -25,7 +25,7 @@ by-products are abated are in the {ref}`materials index <materials-index>`.
 | RTP parts | Tungsten-halogen lamps "arranged in 2 banks of 14 lamps each";[^ag-8800] quartzware, cooling water and CDA or nitrogen.[^ag-8108] |
 | Abatement | Traps, scrubbers, thermal and plasma abatement; point-of-use plasma abatement converts PFCs "to products that can be scrubbed downstream of the backing pump".[^fiala-1999] |
 | Probe cards | Needles "made of tungsten or tungsten/rhenium alloys or advanced palladium based alloys"; "contamination builds up on the tips".[^wiki-probecard] |
-| SkyWater evidence | "Furnaces are all made by Aviza"; "Ag Heatpulse 8808"; "HP 4062UX" parametric test; "Engineering manual Probe Station";[^skw-01] "essential materials, tools and maintenance parts";[^sec-01] EPA records of the site's electronics-manufacturing (subpart I) greenhouse-gas reports;[^epa-ghgrp-skywater] the MPCA's "greenhouse gas emissions control equipment"[^mpca-2025] |
+| SkyWater evidence | "Furnaces are all made by Aviza"; "Ag Heatpulse 8808"; "HP 4062UX" parametric test; "Engineering manual Probe Station";[^skw-01] "essential materials, tools and maintenance parts";[^sec-01] EPA records of the site's electronics-manufacturing (subpart I) greenhouse-gas reports[^epa-ghgrp-skywater] |
 | SKY130 steps | 92 steps; see {ref}`SKY130 steps that use this class <material-hardware-consumables-steps>` |
 
 ## What the class is and what it does
@@ -208,12 +208,12 @@ manufacturing, whose reports include "Controlled emissions of GHGs from
 abatement systems, if applicable" and an "Inventory and description of
 all abatement systems through which fluorinated GHGs or N2O flow at the
 facility and for which destruction or removal efficiency is
-claimed".[^epa-subpart-i] And the Minnesota Pollution Control Agency
-announced on 2025-02-04 that SkyWater was fined for air-permit
-violations, among them "Taking credit for greenhouse gas emissions
-control equipment that was not allowed in permit" and "Failure to comply
-with federal semiconductor regulations after becoming subject to
-them".[^mpca-2025]
+claimed".[^epa-subpart-i] The Minnesota Pollution Control Agency's
+enforcement release of 2025-02-04 on SkyWater's air permit lists, among
+its findings, "Taking credit for greenhouse gas emissions control
+equipment that was not allowed in permit", and records that SkyWater
+"has taken corrective action and has submitted a complete permit
+application".[^mpca-2025]
 
 ### Strength of the evidence
 
@@ -223,10 +223,10 @@ for the tools whose parts this page describes, on the scale of the
 part.[^skw-01] The EPA record is **strong** that the site reported as an
 electronics-manufacturing facility under subpart I; the record retrieved
 names no abatement system, so that the site claims abatement is not shown
-by it.[^epa-ghgrp-skywater][^epa-subpart-i] The MPCA release is a
-regulator's statement that greenhouse-gas "emissions control equipment"
-exists at the site; it does not describe the equipment, the gases or the
-tools it serves.[^mpca-2025] Quartzware, chamber kits, lamps, probe cards
+by it.[^epa-ghgrp-skywater][^epa-subpart-i] The MPCA release refers to
+greenhouse-gas "emissions control equipment" in a permit context; it
+does not say what the equipment is, which gases or tools it serves, or
+whether it is in service (our reading).[^mpca-2025] Quartzware, chamber kits, lamps, probe cards
 and traps at SkyWater appear in no public source cited here; their
 descriptions on the step pages are industry practice.
 
@@ -294,9 +294,6 @@ practice or supplier, literature and regulator statements.
   abatement systems for which they claim destruction or removal
   efficiency;[^epa-subpart-i] the Bloomington facility has
   reported under that subpart since 2011.[^epa-ghgrp-skywater]
-* **Permits.** The MPCA's 2025 release records that SkyWater "has taken
-  corrective action and has submitted a complete permit
-  application".[^mpca-2025]
 * **Probe-card care.** Tips are cleaned to restore contact
   resistance,[^wiki-probecard] and contact resistance varies with probe
   material and temperature.[^broz-1999]
@@ -366,8 +363,8 @@ cards are not public.
 * US EPA, GHGRP facility record and *Subpart I Information Sheet* —
   electronics-manufacturing reporting and abatement
   systems.[^epa-ghgrp-skywater][^epa-subpart-i]
-* Minnesota Pollution Control Agency, 2025 enforcement release — permit
-  violations and emissions control equipment.[^mpca-2025]
+* Minnesota Pollution Control Agency, 2025 enforcement release — a permit
+  finding that mentions greenhouse-gas control equipment.[^mpca-2025]
 * Heraeus Covantics, *Fused Quartz and Silica Tubes*; Entegris,
   *SUPERSiC* brochure and *CMC Materials | July 2022* — quartz, SiC and
   probe-card cleaning products.[^heraeus-tubes][^entegris-supersic][^entegris-cmc-2022]

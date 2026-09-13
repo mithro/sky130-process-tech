@@ -13468,8 +13468,7 @@ regulations and Minnesota rules*, news release, 2025-02-04, accessed
 SkyWater "was fined $97,130 for operating without an air permit" at its
 Bloomington semiconductor plant; violations include "Taking credit for
 greenhouse gas emissions control equipment that was not allowed in
-permit" and "Failure to comply with federal semiconductor regulations
-after becoming subject to them"; SkyWater "has taken corrective action
+permit"; SkyWater "has taken corrective action
 and has submitted a complete permit application". Used on the hardware
 consumables material page. Tier: cross-check (regulator statement).
 
