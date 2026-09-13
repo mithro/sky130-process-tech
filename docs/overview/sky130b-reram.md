@@ -358,8 +358,10 @@ between `Tfilament_min` and `Tfilament_max` in an oxide of thickness
 
 * **Stack height.** Everything from metal 2 upwards is built 0.295 µm
   higher. In the open_pdks extraction heights, metal 3 moves from
-  2.7861 µm to 3.0811 µm and the metal-3 MiM capacitor from 2.4661 µm to
-  2.7611 µm;[^opdks-magic-tech] the film thicknesses above metal 2 are
+  2.7861 µm to 3.0811 µm and Magic's `mimcap` extraction layer from
+  2.4661 µm to 2.7611 µm[^opdks-magic-tech] (an extraction value, not the
+  capacitor's physical level, which is over metal 3 —
+  {ref}`CAPILD <step-135>` to {ref}`CAPME <step-138>`); the film thicknesses above metal 2 are
   unchanged.[^reram-ug][^opdks-magic-tech] The added height is one more
   dielectric layer and one more via level to build (inference).
 * **Via-1 resistance.** Every metal-1-to-metal-2 connection outside a
