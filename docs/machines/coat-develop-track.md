@@ -190,9 +190,7 @@ likely used at SkyWater"), as collected on the machines index:
 
 * **"DNS 80B track", "Sokudo RF3 track", "TEL ProZ Lithius track"** — *strong, or strong for existence (some pages add that which track serves which exposure tool is not public):* {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`P1M <step-061>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>`
 
-Every mask step needs a coat and a develop, so the assignment of the
-class is not in doubt; which of the three tracks runs a given level is,
-and no step page grades that.
+The {ref}`category page <category-lithography>` describes every mask step as a coat, expose and develop sequence, so the class assignment follows from the category; which of the three tracks runs a given level is not stated, and no step page grades that.
 
 ## Consumables and facilities
 
@@ -245,8 +243,7 @@ nominal photoresist thickness in the design assumptions.[^pdk-03]
   and re-coated rather than etched ({ref}`category-lithography`), so the
   track also runs rework lots.
 * **Resist kept through several steps.** The {ref}`TUNM <step-035>`
-  resist serves an ARC etch, two implants and a wet etch, so its coat and
-  bakes must survive all four ({ref}`category-lithography`).
+  resist serves an ARC etch, two implants and a wet etch ({ref}`machine-plasma-etcher-silicon`), so its coat and bakes must survive all four (our reading).
 
 ## Related pages
 

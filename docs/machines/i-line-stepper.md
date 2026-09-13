@@ -128,7 +128,7 @@ W-CMP processes" at 0.35 µm.[^prasad-2001]
 
 ### Cost and the equipment cascade
 
-The class persists because it is cheap per layer. ASML notes that an
+The class persists largely on cost. ASML notes that an
 exposure tool may give "10 to 15 years of service" to a leading-edge
 customer "at different layers of criticality", that older systems
 "migrate to the lithography of choice for less critical layers", and
@@ -256,9 +256,7 @@ the fab's lamp supply, reticle handling or tool environment.
 * **Environment.** A temperature-controlled chamber;[^wiki-stepper] the
   /100D has "Built-In CLASS 1 Laminar Airflow" that "Enhances
   interferometer stability".[^asml-pas5500-100d]
-* **Track and metrology.** The tool is linked in line to a coat/develop
-  track, and overlay and CD are measured after develop
-  ({ref}`category-lithography`).
+* **Track and metrology.** The tool is linked in line to a {ref}`coat/develop track <machine-coat-develop-track>`, and overlay and CD are measured after develop ({ref}`machine-cd-sem-overlay-metrology`).
 
 ## Process-integration notes for SKY130
 

@@ -197,8 +197,7 @@ the listings are **strong**: they are SkyWater
 statements.[^skw-01] The caveats that apply to every listed tool are
 under {ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
 The step pages grade them "strong for existence" and treat their use at
-a given mask as an inference, since the list names no step; as the
-machines index notes, that is the one grade the mask pages share. The
+a given mask as an inference, since the list names no step; the machines index records that grade on nearly every mask page. The
 VeritySEM press release dates that product to 2004, after the 130 nm
 generation,[^amat-veritysem-2004] which fits the caveat that the list
 shows today's floor, not the tools that first ran S8.
@@ -254,22 +253,18 @@ sampling plans are not public.
   overlay metrology at all 36 masks and a CD-SEM at every mask and at the
   isolation-nitride, trench, tunnel-mask ARC, gate, local-interconnect, contact, via, metal and capacitor etches. For scale, ITRS 2001 put the overlay requirement at 46 nm in the year it set the DRAM half-pitch at 130 nm.[^itrs-03]
 * **Mixed exposure classes.** The i-line and KrF levels
-  ({ref}`machine-i-line-stepper`, {ref}`machine-duv-krf-stepper`) are
-  measured on the same overlay tools; where a level is printed on a
+  ({ref}`machine-i-line-stepper`, {ref}`machine-duv-krf-stepper`) share one overlay entry in SkyWater's list, which does not say whether separate tools serve the two classes; where a level is printed on a
   different tool from its reference, the tool corrections the
   measurements feed back must cover matched-machine errors (inference
   from the exposure-tool specifications on those pages). SkyWater lists
   APC "feed forward and backwards" without saying where it is
   applied.[^skw-01]
-* **Planarised levels.** From the first CMP onward, and especially over
-  tungsten CMP, overlay marks lose contrast; the coherence-probe option of
-  the 5200XP was "optimized for planarized layers".[^kla-5200xp][^plambeck-1995]
+* **Planarised levels.** SKY130 polishes its trench fill, pre-metal dielectric, tungsten plugs and inter-level oxides ({ref}`category-cmp`), and Plambeck, Knoll and Lord note that "planarized metrology targets can cause overlay measurements to be inaccurate as well as imprecise"; the coherence-probe option of the 5200XP was "optimized for planarized layers".[^plambeck-1995][^kla-5200xp]
 * **After develop and after etch.** Measuring the gate at
   {ref}`P1M <step-061>` and again after {ref}`P1ME <step-062>` gives the
   etch bias the category page describes; how well the two agree depends on
   the CD algorithm.[^solecky-2002]
-* **Many reticle sets.** SkyWater's shuttle runs each have their own
-  reticle set ({ref}`masks-mpw-runs`), so every set needs its own
+* **Many reticle sets.** The process-steps sheet heads each of the MPW runs it records with its own reticle-set identifier ({ref}`masks-mpw-runs`), so every set needs its own
   exposure and metrology recipes in the way DeMoor et al. describe for
   ASIC fabs (inference).[^demoor-2000]
 * **Rework.** A lot that fails CD or overlay is stripped and re-exposed
