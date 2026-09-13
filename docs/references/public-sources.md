@@ -1271,8 +1271,7 @@ Al versus Cu, dielectric k, via/metal dimensions by node. Tier: deep dive.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>.
 Exposure tools and wavelengths (i-line, 248 nm, 193 nm) by node.
 Also used on the CD-SEM and overlay metrology page.
-Tier:
-deep dive.
+Tier: deep dive.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
@@ -4163,8 +4162,7 @@ SPIE Tutorial Texts TT11, SPIE Press, 1993.
 <https://doi.org/10.1117/3.2265072> The SPIE tutorial text on i-line
 resist chemistry. Used on the lithography category page.
 Also used on the i-line stepper or scanner and coat/develop track pages.
-Tier: deep
-dive.
+Tier: deep dive.
 
 **ITO-1983** — H. Ito and C. G. Willson, "Chemical amplification in the
 design of dry developing resist materials", *Polymer Engineering &
@@ -4268,8 +4266,7 @@ ed., SPIE Press, 2019, ISBN 978-1-5106-2760-4.
 metrology in one volume. Used on the lithography category page.
 Also used on the DUV (KrF, 248 nm) stepper or scanner and CD-SEM and
 overlay metrology pages.
-Tier:
-high-level.
+Tier: high-level.
 
 ##### Patents
 
@@ -4307,8 +4304,7 @@ Tier: cross-check.
 NA 0.80, 120 nm resolution. Used on the lithography category page.
 Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
 or scanner pages.
-Tier:
-cross-check.
+Tier: cross-check.
 
 **CHIPHISTORY-PAS5500** — Chip History Center, *PAS 5500/400 Step & Scan
 Alignment System from ASML*.
@@ -4323,6 +4319,9 @@ Marketplace specification summary for the KLA-Tencor 8100XP CD-SEM
 (accelerating voltage and resolution). Used on the lithography category
 page.
 Also used on the CD-SEM and overlay metrology page.
+The address now redirects to
+<https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>
+(checked 2026-09-13).
 Tier: cross-check.
 
 **MICROCHEMICALS-DEV** — MicroChemicals, *Development of photoresists*,
