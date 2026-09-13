@@ -105,9 +105,9 @@ high-resolution examination of "only the suspected
 locations".[^pat-twophase-orbot]
 
 The case for automation was sensitivity and consistency. Radin, using a
-KLA-2020 automated wafer inspector, found that operator inspections
-lacked reproducibility and that "operator sensitivity declines to very low
-levels for defect sizes approaching linewidths".[^radin-1988] Tencor
+KLA-2020 automated wafer inspector, noted that operator inspections "show
+lack of reproducibility" and that "operator sensitivity declines to very
+low levels for defect sizes approaching linewidths".[^radin-1988] Tencor
 presented the Surfscan AIT's speed as "making inspection practical
 beyond only the most critical process steps".[^tencor-ait-1995]
 
