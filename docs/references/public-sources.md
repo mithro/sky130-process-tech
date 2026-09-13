@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1180
+written page has exactly one entry here; the inventory holds 1185
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -9085,6 +9085,53 @@ An LPCVD nitride "at approximately 500 degrees C" on the RVP-500, set
 against dichlorosilane–ammonia nitride "above 630 degrees C" and BTBAS
 "at 570 degrees C or above". Used on the vertical-furnace LPCVD page.
 Tier: cross-check (vendor statement).
+
+##### Rapid thermal processor (first cited there)
+
+**MATTSON-METRON-2002** — Mattson Technology, Inc. and Metron Technology
+N.V., *Mattson Technology Inc. and Metron Technology N.V. Announce the
+Sale of Mattson's AG Associates RTP Product Line to Metron*, press
+release, 2002-02-27; Wayback Machine capture of 2003-07-13.
+<https://web.archive.org/web/20030713065644/http://mattson.com/news/pr020227.html>
+Mattson, which "obtained" the AG Associates RTP line "through its
+acquisition last year of the semiconductor division of STEAG Electronic
+Systems AG", sells the "4000 and 8000 series RTP product line" to Metron
+and keeps its "2000 and 3000 series RTP products". Used on the rapid
+thermal processor page. Tier: cross-check (vendor statement).
+
+**HEBB-1996** — J. P. Hebb and K. F. Jensen, "The Effect of Multilayer
+Patterns on Temperature Uniformity during Rapid Thermal Processing",
+*Journal of The Electrochemical Society* **143**(3), 1142–1151 (1996).
+<https://doi.org/10.1149/1.1836598> Radiative properties of patterned
+wafers coupled to a reactor model; pattern-induced temperature
+non-uniformity in shallow-junction anneals and titanium silicidation.
+Used on the rapid thermal processor page. Tier: deep dive.
+
+**DEATON-1991** — R. Deaton and H. Z. Massoud, "Effect of thermally
+induced stresses on the rapid-thermal oxidation of silicon", *Journal of
+Applied Physics* **70**(7), 3588–3592 (1991).
+<https://doi.org/10.1063/1.349254> Edge radiative loss in uniformly
+irradiated wafers creates a radial gradient and a stress distribution,
+largest along the slip directions, that affects rapid thermal oxidation
+kinetics. Used on the rapid thermal processor page. Tier: deep dive.
+
+**SCHAPER-1994** — C. D. Schaper, M. M. Moslehi, K. C. Saraswat and T.
+Kailath, "Modeling, Identification, and Control of Rapid Thermal
+Processing Systems", *Journal of The Electrochemical Society*
+**141**(11), 3200–3209 (1994). <https://doi.org/10.1149/1.2059302>
+Model-based multivariable control of multizone RTP systems, with ramps at
+45 °C/s and "less than ±1°C average nonuniformity during steady state".
+Used on the rapid thermal processor page. Tier: deep dive.
+
+**YOO-2002** — W. S. Yoo, T. Fukada, I. Yokoyama, K. Kang and N.
+Takahashi, "Thermal Behavior of Large-Diameter Silicon Wafers during
+High-Temperature Rapid Thermal Processing in Single Wafer Furnace",
+*Japanese Journal of Applied Physics* **41**(7A), 4442–4449 (2002).
+<https://doi.org/10.1143/JJAP.41.4442> Deformation and slip of 200 mm and
+300 mm wafers in a single-wafer furnace, with slip "frequently observed in
+wafers processed above 1050°C" and slip-free results after optimising
+wafer handling. Used on the rapid thermal processor page. Tier: deep
+dive.
 
 ## 9. Evidence about specific tools at SkyWater
 

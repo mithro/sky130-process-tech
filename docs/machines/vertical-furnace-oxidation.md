@@ -240,7 +240,7 @@ likely used at SkyWater"), as collected on the machines index:
 * **"Ag Heatpulse 8808 …" instead** — *weak:* {ref}`LINOX <step-010>`,
   {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`,
   {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`; see
-  Rapid thermal processor (RTA, RTO).
+  {ref}`machine-rapid-thermal-processor`.
 
 The furnace row covers all three furnace classes, because SkyWater
 lists its furnaces as one group; the oxidation steps are
@@ -334,7 +334,7 @@ and thicknesses are not public.
 * {ref}`machine-vertical-furnace-lpcvd` and
   {ref}`machine-vertical-furnace-anneal` — the same Aviza furnace group
   used for deposition, anneals and the alloy.
-* Rapid thermal processor (RTA, RTO) — the single-wafer alternative
+* {ref}`machine-rapid-thermal-processor` — the single-wafer alternative
   and the Heatpulse entry.
 * Plasma nitridation chamber — nitridation of the thin
   gate oxide.

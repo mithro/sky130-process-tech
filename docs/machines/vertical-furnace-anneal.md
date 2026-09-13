@@ -197,7 +197,7 @@ likely used at SkyWater"), as collected on the machines index:
   above)** — *strong:* {ref}`BOX <step-002>`, {ref}`ISONIT <step-003>`; *inference:* {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`IOX45 <step-063>`, {ref}`SPNIT <step-076>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>`; *strong for existence (batch alternative):* {ref}`FILOX <step-011>`, {ref}`POC <step-059>`, {ref}`SPOX <step-080>`; *weak:* {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`LINIT <step-104>`; *excluded on thermal grounds (inference):* {ref}`NTSD <step-167>`
 * **"Ag Heatpulse 8808 …" instead** — *inference:* {ref}`RTAI <step-034>`;
   *weak:* {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>`; see
-  Rapid thermal processor (RTA, RTO).
+  {ref}`machine-rapid-thermal-processor`.
 
 The furnace row covers all three furnace classes, because SkyWater
 lists its furnaces as one group; the anneal and alloy steps are those in
@@ -275,7 +275,7 @@ ambients are not public.
   the Aviza history.
 * {ref}`machine-vertical-furnace-lpcvd` — the same furnace group used for
   deposition.
-* Rapid thermal processor (RTA, RTO) — the single-wafer anneal tool
+* {ref}`machine-rapid-thermal-processor` — the single-wafer anneal tool
   and the Heatpulse entry.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
