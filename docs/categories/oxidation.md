@@ -161,7 +161,7 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
 
 ## Typical equipment
 
-* **Vertical batch furnaces** for 200 mm wafers, with quartz tube,
+* **{ref}`Vertical batch furnaces <machine-vertical-furnace-oxidation>`** for 200 mm wafers, with quartz tube,
   quartz boat, load-lock or nitrogen-purged loading, mass-flow
   controlled O₂/H₂/N₂/HCl (or DCE) delivery and, for wet oxidation, a
   pyrogenic torch burning H₂ in O₂ ahead of the tube. Representative
@@ -170,7 +170,7 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
   processes");[^asm-a400][^asm-vf] TEL Alpha-8 series; and the
   Aviza/Thermco (formerly Silicon Valley Group) vertical furnaces of the
   same era.
-* **Rapid thermal processors** for RTO and ISSG: AG Associates Heatpulse
+* **{ref}`Rapid thermal processors <machine-rapid-thermal-processor>`** for RTO and ISSG: AG Associates Heatpulse
   8108 (first shipped in 1992 and "targeted for volume production
   processes that utilize wafer sizes from 125 to 200
   millimeters"),[^ag-10k] Applied Materials Centura RTP

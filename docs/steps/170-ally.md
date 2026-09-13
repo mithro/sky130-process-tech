@@ -145,10 +145,10 @@ an aluminium back end (SKY130's recipe is not public):
 
 ## Machines typically used
 
-* **Vertical furnace** with forming-gas or hydrogen capability:
+* **{ref}`Vertical furnace <machine-vertical-furnace-anneal>`** with forming-gas or hydrogen capability:
   Aviza/SVG/Thermco AVP,[^aviza-avp] ASM A400,[^asm-vf] TEL Alpha-8,
   Kokusai Vertron ({ref}`category-anneal`).
-* **Horizontal furnace** (older alloy tubes); **RTP** as the
+* **Horizontal furnace** (older alloy tubes); **{ref}`RTP <machine-rapid-thermal-processor>`** as the
   single-wafer alternative.
 * **C–V / charge-pumping test set** for interface-trap monitors.
 

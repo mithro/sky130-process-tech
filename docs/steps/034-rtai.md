@@ -119,10 +119,10 @@ An industry-generic well/channel activation anneal for a 200 mm,
 
 ## Machines typically used
 
-* **Rapid thermal processors**, 200 mm: AG Associates Heatpulse
+* **{ref}`Rapid thermal processors <machine-rapid-thermal-processor>`**, 200 mm: AG Associates Heatpulse
   8108/8800 series, Applied Materials RTP Centura (XE/Radiance), Steag
   (later Mattson) RTP, Kokusai and TEL RTP (category page).
-* **Vertical furnaces** (ASM A400, TEL Alpha-8, Aviza/Thermco) as the
+* **{ref}`Vertical furnaces <machine-vertical-furnace-anneal>`** (ASM A400, TEL Alpha-8, Aviza/Thermco) as the
   batch alternative.
 * **{term}`Four-point probe <four-point probe>`** for {term}`sheet resistance`; **thermocouple wafers**
   for calibration.

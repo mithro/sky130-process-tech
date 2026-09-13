@@ -140,7 +140,7 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
 
 ## Typical equipment
 
-* **Rapid thermal processors**: AG Associates Heatpulse 8108 ("first
+* **{ref}`Rapid thermal processors <machine-rapid-thermal-processor>`**: AG Associates Heatpulse 8108 ("first
   shipped in October 1992" as the "flagship product targeted for volume
   production processes that utilize wafer sizes from 125 to 200
   millimeters"),[^ag-10k] later sold by Steag and Mattson; Applied
@@ -148,7 +148,7 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
   Vantage successors (which measure "the temperature 100 times per
   second at seven different places on the wafer");[^amat-rtp] Mattson
   RTP 3000; Kokusai and TEL RTP tools.
-* **Vertical furnaces** for well drive, densification and alloy: ASM
+* **{ref}`Vertical furnaces <machine-vertical-furnace-anneal>`** for well drive, densification and alloy: ASM
   A400,[^asm-vf] TEL Alpha-8, Aviza/Thermco, Kokusai; older horizontal
   Thermco and BTU tubes for alloy.
 * **Metrology**: {term}`four-point probe` sheet resistance after every

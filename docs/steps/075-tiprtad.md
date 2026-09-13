@@ -125,7 +125,7 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 
 ## Machines typically used
 
-* **Rapid thermal processors**, 200 mm: AG Associates Heatpulse
+* **{ref}`Rapid thermal processors <machine-rapid-thermal-processor>`**, 200 mm: AG Associates Heatpulse
   8108/8800 series, Applied Materials RTP Centura (XE/Radiance), Steag
   (later Mattson) RTP, Kokusai and TEL RTP ({ref}`category-anneal`).
 * **{term}`Four-point probe <four-point probe>`** for {term}`sheet resistance`; **thermocouple wafers**
