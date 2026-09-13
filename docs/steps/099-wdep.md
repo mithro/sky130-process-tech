@@ -171,8 +171,8 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 * **Chamber consumables** — pedestal heaters, showerheads, liners.
 * **Monitor wafers** (SEMI M8 class)[^semi-m8] with TiN for
   thickness, resistance and particle control.
-* Gas suppliers named in SkyWater's 2021 S-1: Air Products,
-  Praxair.[^sec-01]
+* Gas suppliers named in SkyWater's filings: Air Products and Praxair (2021
+  S-1), Linde and Airgas (fiscal 2023 10-K).[^sec-01][^sec-02]
 
 ## Related steps and cross-references
 
@@ -205,7 +205,8 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
   layer.[^pat-pnl-novellus]
 * Encyclopedia.com, *Novellus Systems, Inc.* — the Altus
   line.[^novellus-history]
-* SkyWater, Form S-1 — gas suppliers.[^sec-01]
+* SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
+  suppliers.[^sec-01][^sec-02]
 
 ### High-level understanding
 
@@ -261,6 +262,9 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
+[^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,
+    filed 2024.
+    <https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>
 [^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
     `gds_layers.csv`, SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
