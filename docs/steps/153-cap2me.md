@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`CAP2ME` etches the top plates of the second MiM capacitor. Through the
+`CAP2ME` etches the top plates of the second {term}`MiM capacitor`. Through the
 resist islands of {ref}`CAP2M <step-152>` a plasma removes the blanket
 top-plate film of {ref}`CAPTIW2 <step-151>` — described in this reference
 as TiW of the order of 0.1 µm, an inference from the PDK's 5.8 Ω/sq
@@ -102,7 +102,7 @@ cross-section[^pdk-07] and the step order).
   pattern-dependent charging produces in high-density
   plasmas,[^hwang-1997] Fang and McVittie the thin-oxide damage that
   charging causes,[^fang-1992] and Wang, Ackaert et al. the
-  plasma-charging damage of floating MiM capacitors;[^wang-2004-mim]
+  {term}`plasma-charging <plasma charging>` damage of floating MiM capacitors;[^wang-2004-mim]
   Cheung analysed charging during plasma-enhanced dielectric
   deposition, which follows at {ref}`NILD6 <step-156>`.[^cheung-2000]
   The final etch stage is run at low bias for this reason (industry
@@ -135,7 +135,7 @@ same sequence.
    (typically 1 800–3 000 Å/min)[^pat-mim-ti-etch] — so that about 0.1 µm
    of TiW clears in well under a minute (our arithmetic; the patent
    describes TiN, not TiW).
-4. **Endpoint and over-etch.** Optical emission as the plate film clears; the
+4. **Endpoint and {term}`over-etch`.** Optical emission as the plate film clears; the
    open area is most of the wafer, so the signal is strong — the reverse
    of the low-open-area problem Wodecki describes for via
    etches.[^wodecki-1999] The over-etch is short and at reduced bias,

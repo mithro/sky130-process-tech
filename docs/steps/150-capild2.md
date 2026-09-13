@@ -13,7 +13,7 @@
 ## What this step is
 
 `CAPILD2` deposits the dielectric of SKY130's second
-metal–insulator–metal (MiM) capacitor. Straight after the blanket
+{term}`metal–insulator–metal (MiM) capacitor <MiM capacitor>`. Straight after the blanket
 metal-4 stack of {ref}`WTIAL4 <step-149>` is sputtered — and before that
 metal is patterned — a thin dielectric film is laid over the whole
 wafer by {term}`PECVD`. This reference describes the film as a PECVD
@@ -87,8 +87,8 @@ flow — with {ref}`CAPILD <step-135>` — deposited as a device layer, whose
 thickness sets a capacitance the models promise rather than a spacing
 the design rules bound. Uniformity, repeatability, pinhole density,
 breakdown at 5 V across some 20–30 nm (a field of order 2 MV/cm; our
-arithmetic from the 0–5.0 V model range[^pdk-07]), leakage and voltage
-coefficient matter as they would for a gate oxide, and
+arithmetic from the 0–5.0 V model range[^pdk-07]), leakage and
+{term}`voltage coefficient` matter as they would for a gate oxide, and
 {term}`step coverage` does not, because the film lies on a blanket,
 planar metal surface.
 
@@ -150,7 +150,7 @@ difference in thickness or permittivity between this film and
   5 V;[^pdk-07] Blonkowski and Gonon and Vallée give the physics of the
   {math}`C(V)` curvature in amorphous dielectrics.[^blonkowski-2007][^gonon-2007]
   Wang, Ackaert et al. showed that floating MiM capacitors are damaged by
-  plasma charging according to the antenna areas connected to each
+  {term}`plasma charging` according to the antenna areas connected to each
   plate,[^wang-2004-mim] a concern for every plasma step between this
   deposition and the via that finally connects the plate.
 

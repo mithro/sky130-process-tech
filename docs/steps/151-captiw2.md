@@ -12,7 +12,7 @@
 
 ## What this step is
 
-`CAPTIW2` deposits the top-plate film of the second MiM capacitor: a
+`CAPTIW2` deposits the top-plate film of the second {term}`MiM capacitor`: a
 blanket titanium–tungsten layer sputtered over the thin dielectric of
 {ref}`CAPILD2 <step-150>`, which lies on the unpatterned metal-4 stack
 of {ref}`WTIAL4 <step-149>`. For a few steps the wafer carries a
@@ -122,7 +122,7 @@ An industry-generic MiM top-plate deposition for a 200 mm aluminium
 back end (SKY130's recipe is not public); the sequence is that of
 {ref}`CAPTIW1 <step-136>`.
 
-1. **Queue time.** The dielectric surface should not sit long in air;
+1. **{term}`Queue time <queue time>`.** The dielectric surface should not sit long in air;
    moisture and hydrocarbons at the interface raise leakage (industry
    practice[^txt-05]). SkyWater's PECVD and PVD tools are listed
    separately,[^skw-01] so on our reading the transfer is governed by a

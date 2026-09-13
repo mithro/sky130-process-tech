@@ -14,11 +14,11 @@
 
 `WTIAL4` deposits the metal-4 film stack. Onto the polished cap oxide
 and tungsten via-3 plugs left by {ref}`WCMP5 <step-148>` a sputtering
-cluster tool lays down, in one vacuum sequence on our reading, a thin
+{term}`cluster tool` lays down, in one vacuum sequence on our reading, a thin
 refractory bottom layer, a thick aluminium–copper alloy and a
 titanium–tungsten cap — the construction described for metal 3 at
 {ref}`WTIAL3 <step-134>`. The stack is blanket, and like metal 3 it
-stays blanket while a MiM capacitor is built on it: the second
+stays blanket while a {term}`MiM capacitor` is built on it: the second
 capacitor module — {ref}`CAPILD2 <step-150>`,
 {ref}`CAPTIW2 <step-151>`, {ref}`CAP2M <step-152>` and
 {ref}`CAP2ME <step-153>` — comes before {ref}`MM4 <step-154>` and
@@ -69,7 +69,7 @@ of the *PVD, multi-layer metal* class; {ref}`TIAL6 <step-112>` sets out
 the sputtering of Ti, Al–Cu and Ti:W films, {ref}`TIAL12 <step-123>`
 what a via level adds and {ref}`WTIAL3 <step-134>` what a thick film
 changes — longer deposition, more wafer heating, larger grains, more
-stored stress and more hillock risk. What is specific here is the
+stored stress and more {term}`hillock` risk. What is specific here is the
 position of the stack in the capacitor structure. The PDK's `cap_mim`
 cross-section, drawn for the "stacked" arrangement, shows metal 4
 split into two shapes: one, "M4 (plate 2)", lies under `CAP2M` and is
@@ -98,7 +98,7 @@ are those of metals 1–3:
   the ITRS 2001 interconnect chapter[^itrs-02] are the context; the
   PDK's extraction tables give a metal-4-to-metal-5 plate capacitance of
   68.33 aF/µm², against 84.03 aF/µm² from metal 3 to metal 4.[^pdk-08]
-* **Electromigration in thick Al–Cu between tungsten studs.** Below
+* **{term}`Electromigration <electromigration>` in thick Al–Cu between tungsten studs.** Below
   each metal-4 line sit tungsten via-3 plugs; copper doping,[^ames-1970]
   the (111) texture a refractory underlayer promotes,[^knorr-1996][^kamoshida-1997]
   Blech's critical length[^blech-1976] and the short-length effect with
@@ -124,7 +124,7 @@ are those of metals 1–3:
   as at {ref}`WTIAL3 <step-134>`; Greenwood and Prasad describe the
   alternative of a TiN-only bottom plate for a MiM capacitor in an
   aluminium back end.[^greenwood-2007]
-* **A fuse level.** The PDK's metal-fuse rules say that the
+* **A fuse level.** The PDK's {term}`metal-fuse <metal fuse>` rules say that the
   "SP8P*/SKY130P* (PLM) CADflow" uses "MM4 for Metal Fuse", with a fuse
   width of 0.800 µm and length of 7.200 µm (mf.1, mf.2), and the layer
   table carries a `met4` "fuse" purpose (71:17).[^pdk-periph][^pdk-06]
@@ -143,11 +143,11 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
 {ref}`WTIAL3 <step-134>`):
 
 1. **Cluster tool.** A multi-chamber PVD platform — SkyWater's "AMAT
-   PVD Metal" with "Sputter etch, degas"[^skw-01] — so that degas,
+   PVD Metal" with "Sputter etch, degas"[^skw-01] — so that {term}`degas`,
    pre-clean and the depositions happen without an air break; the
    Endura is the 200 mm-era Applied Materials platform.[^amat-endura]
-2. **Degas and pre-clean.** A vacuum bake, then a light argon sputter
-   etch to remove the tungsten oxide from the via-3 plug tops and any
+2. **Degas and pre-clean.** A vacuum bake, then a light argon
+   {term}`sputter etch` to remove the tungsten oxide from the via-3 plug tops and any
    post-CMP residue (industry practice[^txt-05]).
 3. **Bottom layer.** A thin Ti or TiW film — collimated or ionised
    titanium[^rossnagel-1991][^rossnagel-1998] or Ti:W from a 10 wt.% Ti

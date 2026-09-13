@@ -33,7 +33,7 @@ prepares for is different from the levels below. The via-4 opening is a
 0.800 µm square (via4.1) on a 0.800 µm space (via4.2),[^pdk-periph]
 etched 0.505 µm deep — an {term}`aspect ratio` of about 0.63:1 (our
 arithmetic) — and, in the step list used in this reference, no tungsten
-liner, fill or plug polish follows: the next deposition after the via
+liner, fill or {term}`plug <W plug>` polish follows: the next deposition after the via
 etch is the metal-5 stack of {ref}`WTIAL5 <step-161>`. On our reading,
 then, the surface this cap leaves is also the surface on which metal 5 is
 sputtered wherever there is no via, and the wall of every via-4 hole
@@ -81,7 +81,7 @@ via-4 numbers:
   via holes.[^taguchi-1998]
 * **A known surface for lithography and for metal 5.** The
   {ref}`VIM4 <step-159>` resist is tuned to a reproducible oxide thickness
-  over reflective metal and capacitor plates, since the swing-curve reflectivity
+  over reflective metal and capacitor plates, since the {term}`swing-curve <swing curve>` reflectivity
   depends on it;[^brunner-1991] and, on our reading of the step order, the
   metal-5 underlayer is sputtered directly onto this oxide outside the
   vias (inference).
