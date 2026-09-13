@@ -42,8 +42,11 @@ meant to be high-Vt 0.180 µm (hvtp.4), minimum area 0.265 µm² (hvtp.5,
 hvtp.6), and no overlap with `lvtn`, with 0.380 µm spacing between the
 two (lvtn.9).[^pdk-periph] Unlike `lvtn`, whose rule heading says it
 *blocks* an implant, `hvtp` is described as the *region that receives*
-the implant, so the reticle polarity here is straightforward: resist is
-removed over `hvtp`.
+the implant, so we read the reticle polarity as straightforward: resist
+is removed over `hvtp`. That reading is an inference from the layer
+description; one public derivation of the mask from the MPW tape-out
+layouts builds it from `nwell`, `hvi` and `lvtn` without `hvtp`
+({ref}`masks-derivations`).
 
 ## Step category
 

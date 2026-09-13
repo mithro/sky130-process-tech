@@ -187,7 +187,9 @@ Notes on the table:
   name `met2` and `met3`), and the note "For SP8P\*/SKY130P\* (PLM)
   CADflow use MM4 for Metal Fuse";[^pdk-periph]
   the {ref}`MM4 <step-154>` page reads the fuse links as printed by
-  this mask (inference from the note).
+  this mask (inference from the note). One public derivation from the
+  MPW layouts differs from several of these pairings, and from the
+  `HVTPM` and `LVTNM` rows; see {ref}`masks-derivations`.
 * **Waffle drop.** `waffle drop` purposes exist for `cfom`, `cp1m` and
   `cmm1`–`cmm5`,[^pdk-06] the levels that x.15a allows to carry
   waffle-drop shapes inside the die;[^pdk-periph] the
@@ -557,6 +559,92 @@ show the following.[^mask-renders][^steps-sheet]
   therefore does not show that most projects use MiM capacitors or the
   2000 Ω/sq resistor; the site does not say what the single shape is.
   `NSM` likewise has exactly 36 shapes on every die that has any.
+
+(masks-derivations)=
+### Mask derivations in the renders
+
+For six masks the site renders a Boolean expression (`expr`) over
+drawn layers rather than drawn layers alone, and for several others it
+chooses layers that differ from this page's pairings; the expressions
+and layer choices are the same on all eight runs.[^mask-renders] Its
+README names "fab-derived masks (HVTPM, LVTNM, NCM, NTM, HVNTM)";
+`VIMC` also has an expression. They are one public derivation from
+the drawn data, not SkyWater's mask-generation recipe: the site gives
+no source for them, and some of its notes contradict its own
+expressions (below). The layer names are those of
+`gds_layers.csv`;[^pdk-06] 201:20 is not in that file, and the
+{ref}`overview-sky130b-reram` page reads it as `r1c`.
+
+| Mask | This page's pairing (from the PDK files) | Renders site (`expr` verbatim, or layers rendered) | In layer names |
+|------|------------------------------------------|----------------------------------------------------|----------------|
+| {ref}`LVTNM <step-014>` | `lvtn` 125:44 | `125:44 OR (64:20 AND (78:44 OR 81:2))` | `lvtn` OR (`nwell` AND (`hvtp` OR `areaid.ce`)) |
+| {ref}`HVTPM <step-022>` | `hvtp` 78:44 | `(64:20 NOT 75:20) NOT 125:44` | (`nwell` NOT `hvi`) NOT `lvtn` |
+| {ref}`NTM <step-064>` | derived from the device layers *(inference)* | `64:20 OR 11:44 OR (75:20 NOT 81:2)` | `nwell` OR `ldntm` OR (`hvi` NOT `areaid.ce`) |
+| {ref}`HVNTM <step-068>` | `hvntm` 125:20, "OR-ed with the CL" | `125:20 OR ((65:20 AND 93:44 AND 75:20) NOT 81:2)` | `hvntm` OR ((`diff` AND `nsdm` AND `hvi`) NOT `areaid.ce`) |
+| NCM (no mask step) | `ncm` 92:44 | `92:44 OR ((64:20 NOT 75:20) NOT 125:44)` | `ncm` OR the `HVTPM` expression |
+| VIMC (no mask step) | none; `r1v` on the {ref}`overview-sky130b-reram` page | `68:44 AND 201:20` | `via` AND 201:20 |
+| {ref}`LVOM <step-044>` | the complement of `hvi` 75:20 *(inference)* | layers 75:20 and 80:20; note "LVOM = hvi OR tunm" | `hvi` and `tunm` |
+| {ref}`PWBM <step-026>` | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | layer 19:44 | `pwbm` |
+| {ref}`RPM <step-049>` | `rpm` 86:20; `urpm` 79:20 *(inference)* | layer 86:20 | `rpm` |
+| {ref}`MM4 <step-154>` | `met4` 71:20; `met4` fuse 71:17 | layers 71:20 and 51:28 | `met4` and a fill layer the site lists for the mask; no fuse purpose |
+
+* **Where the readings differ.** For `HVTPM` this page follows the
+  PDK's description of `hvtp`, "High-Vt LVPMOS implant";[^pdk-06] the
+  renders build the mask from `nwell`, `hvi` and `lvtn` without `hvtp`,
+  and the note says "the fab algorithm says do NOT OR hvtp in", naming
+  no source.[^mask-renders] For `LVTNM` the renders add a created part
+  inside `nwell`. For `LVOM` they show `hvi` OR `tunm`, where this page
+  reads the mask as everything outside `hvi`; since the renders show
+  drawn shapes, not photomask artwork, the two may describe the same
+  plate in opposite tone
+  (inference), but the renders also add `tunm`. The `PWBM` render has
+  no `nwell` term, the `RPM` render no `urpm` term and the `MM4` render
+  no fuse purpose.[^mask-renders] The step pages give the reasoning
+  behind this page's readings; neither source settles which is right.
+* **Where they agree.** The `NTM` and `HVNTM` expressions are
+  consistent in kind with this page's readings; for `HVNTM` the created
+  part is one reading of the PDK's unexpanded "CL". The renders use the
+  same layers as this page for `FOM` (`diff` and `tap`), `ONOM`
+  (`tunm`), `CTM1` (`mcon`), `URPM` (`urpm`) and `CAP2M`
+  (`cap2m`).[^mask-renders] Both derive from the same public files, so
+  the agreement is not independent confirmation.
+* **Notes that contradict the expressions.** The `HVTPM` note ends
+  "Rendered as nwell = a superset", but the expression subtracts `hvi`
+  and `lvtn`. The `LVTNM`, `HVNTM` and `NCM` notes end "only the drawn
+  part is rendered", but each expression includes its created part, and
+  the `LVTNM` note describes a further term, "(LV nwell over
+  varactors)", that is not in the expression.[^mask-renders]
+* **VIMC.** `via` AND 201:20 keeps only the vias that overlap 201:20.
+  The {ref}`overview-sky130b-reram` page reads SkyWater's description
+  of `r1v`, which also "defines top part of connection between met1 and
+  met2", as covering the upper vias over bypasses as well as over
+  cells; on that reading the renders would leave the bypass vias out
+  of `VIMC` (inference).
+
+### Notes shared with the sheet
+
+* **Same wording.** The sheet's "Info" notes for `RRM`, `VIMC` and
+  `CAP2M` repeat the renders site's wording: "sky130B RRAM tier
+  (met1-met2)" and `r1c` "GDS 201/20" for `RRM`; "r1v, the upper half"
+  of via 1 and "Not CTM1/mcon" (the site: "NOT CTM1/mcon") for `VIMC`;
+  "Capacitor mask" for `CAP2M`. Its level names for the
+  local-interconnect, contact, via and metal masks ("Via 0 (???→M0)",
+  "LI (Metal 0)", …) are identical to the site's.[^steps-sheet][^mask-renders]
+  This page therefore does not cite either source as corroborating the
+  other.
+* **Which sets have an RRM plate.** The site's `RRM` note says "Only on
+  the later sets 5CS8016AC/17AC/18AC", the sets the sheet heads MPW-7,
+  MPW-8 and MPW-4.[^mask-renders][^steps-sheet] The sheet records `RRM`
+  plates on MPW-1 (`S8M06AA430A`), MPW-2 (`S8007AA430A`) and MPW-3
+  (`S8008AA430A`) as well.[^steps-sheet] The note matches the runs on
+  which the renders show shapes on 201:20 rather than the runs for
+  which the sheet records plates, and the site's own MPW-4 renders,
+  which it ties to `5CS8010AC`, show such shapes although that set is
+  not among those it names. Neither source explains the difference.
+* **Plate-number arguments.** The `VIMC` note argues from plate
+  numbers ("455 sits above MM1 (450) while mcon is below
+  met1");[^mask-renders] as noted in {ref}`masks-mpw-reticle-sets`, the
+  numbers do not follow process order.
 
 ## References
 
