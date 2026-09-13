@@ -12,7 +12,8 @@ each step needs, sets it against what SkyWater Technology has said in
 public about the materials at its Minnesota fab, and lists the films
 the flow deposits with the thicknesses the process design kit (PDK)
 gives. The physics and typical recipes are on the
-{ref}`category pages <categories-index>`.
+{ref}`category pages <categories-index>`, and the tools that consume
+these materials are indexed on the {ref}`machines page <machines-index>`.
 
 ## Consumable classes in a 200 mm, 130 nm fab
 
@@ -77,8 +78,10 @@ SkyWater's Bloomington fab. None of them ties a material to a step.
 
 **SkyWater's capability list.** SkyWater's *Facilities &
 Capabilities* page lists, tool by tool, some of the gases, chemistries
-and films each tool is set up for.[^skw-01] It is the only source that
-names process chemistries at the fab. It lists gases for the ashers,
+and films each tool is set up for;[^skw-01] the
+{ref}`machines index <machines-index>` lists the steps to which the
+step pages assign those tools. It is the only source that names
+process chemistries at the fab. It lists gases for the ashers,
 the rapid thermal anneal ({term}`RTA`) tool and the poly/silicon etchers —
 for example "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2", "Lam 9400
 TCP, poly/nitride, HBr, CF4, SF6, O2" and "Iridia RF microwave, N2,
