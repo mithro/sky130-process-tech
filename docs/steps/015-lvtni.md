@@ -145,7 +145,7 @@ below are typical or taken from contemporaneous patents.
   Nissin[^txt-09] (category page). The Eaton 8250HT is described as
   covering "3keV to 750keV" with beam currents "between 4µA and
   3,500µA".[^axcelis-8250]
-* **Therma-Wave** modulated-reflectance monitor; {term}`four-point probe` on
+* **{ref}`Therma-Wave <machine-sheet-resistance-metrology>`** modulated-reflectance monitor; {term}`four-point probe` on
   monitor wafers after a monitor anneal.
 
 ## Machines likely used at SkyWater

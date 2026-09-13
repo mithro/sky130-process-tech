@@ -139,7 +139,7 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
   SPEED platform was the market's long-running STI fill
   tool.[^lam-speed]
 * **{ref}`Furnace <machine-vertical-furnace-anneal>` or {ref}`RTP <machine-rapid-thermal-processor>`** for optional densification.
-* **Reflectometer / ellipsometer**; **cross-section SEM**.
+* **{ref}`Reflectometer <machine-film-thickness-metrology>` / ellipsometer**; **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**.
 
 ## Machines likely used at SkyWater
 

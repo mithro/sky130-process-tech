@@ -95,7 +95,7 @@ fab:
   Aura/PEP series, Mattson Aspen, Axcelis/Fusion ES series, PSK.
 * **{ref}`Batch wet bench <machine-wet-bench>`** with SPM, SC-1 and SC-2 tanks and a rinser/dryer;
   or a single-wafer spray tool.
-* **Defect inspection** (patterned-wafer optical inspection).
+* **{ref}`Defect inspection <machine-defect-inspection>`** (patterned-wafer optical inspection).
 
 ## Machines likely used at SkyWater
 

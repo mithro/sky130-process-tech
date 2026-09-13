@@ -134,7 +134,7 @@ W/WN".[^skw-01]
   Hitachi M-series microwave ECR etchers.
 * **{ref}`Downstream plasma asher <machine-downstream-plasma-asher>`** (microwave or RF O₂ plasma).
 * **{ref}`Wet bench <machine-wet-bench>`** for post-etch polymer removal.
-* **Cross-section SEM / {ref}`CD-SEM <machine-cd-sem-overlay-metrology>`** for depth and CD.
+* **{ref}`Cross-section SEM <machine-cross-section-sem-profilers>` / {ref}`CD-SEM <machine-cd-sem-overlay-metrology>`** for depth and CD.
 
 ## Machines likely used at SkyWater
 
