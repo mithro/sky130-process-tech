@@ -23,10 +23,10 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1120
+written page has exactly one entry here; the inventory holds 1126
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
-8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16 and 8.17 were added
+8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17 and 8.18 were added
 to cover the sources the writers of the step, category and overview
 pages introduced; a
 "Label ↔ key" note marks the few cases where one source has two keys.
@@ -8262,6 +8262,113 @@ Tier: high-level.
 <https://en.wikipedia.org/wiki/Hafnium(IV)_oxide> Hafnia as a high-κ
 dielectric ("4–6 times higher than that of SiO2, which is 3.9") and as a
 candidate for resistive-switching memories. Tier: high-level.
+
+### 8.18 SkyWater PDK raw measurement data
+
+Sources introduced for the pages that describe the public test tile and
+its measured data: the `google/skywater-pdk-sky130-raw-data`
+repository (public, archived; checked at commit `1f7214f`) and the
+IC-CAP file-format page its README links to. The repository describes a
+test tile placed on Google's MPW runs and data measured on it to help
+validate the open PDK; it does not say that the tile's modules are the
+production e-test modules of the SKY130 frame, and the pages do not
+present them as such. Per-category module counts quoted on the pages
+are our own classification of the pad table. The community notes linked
+from the test-tile README were not used. Every URL was fetched on
+2026-09-13.
+
+**RAW-DATA-README** — SkyWater PDK Authors, *sky130-raw-data - Raw data
+collected about the SKY130 process technology*, `README.rst` and
+`AUTHORS` of the `skywater-pdk-sky130-raw-data` repository, 2022
+(Apache 2.0).
+<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/README.rst>
+States that the repository "contains the raw data that has been
+collected about SkyWater's 130nm bulk process technology to help
+validate" the open PDK, that "The initial data … was collected under
+contract by CoolCAD Electronics LLC using the manufacturing test tile
+created by SkyWater", and that the data are "stored in the `.mdm` file
+format"; separates a "**Current** proprietary SkyWater Test Tile" from a
+"**Future** fully open source Test Tile" (Google, NIST and the
+University of Michigan). `AUTHORS` lists Google LLC, SkyWater Technology
+Foundry and CoolCAD Electronics LLC. Used on step 171, the test category
+page and the overview. Tier: cross-check.
+
+**RAW-DATA-TESTTILE-PROP** — SkyWater PDK Authors, *SkyWater 130nm
+Proprietary Manufacturing Test Tile*,
+`docs/sky130-testtile-proprietary/README.rst` and
+`sky130-testtile-pad-layout.png`, raw-data repository, 2022.
+<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/README.rst>
+"each of the Google MPW runs includes two copies of a 'manufacturing
+test tile'", which "consists of a grid of probe points"; "The schematics
+and layout of the circuits connected to these probe points are **not**
+currently available". The pad-layout photograph labels "Row 1"–"Row 4",
+pin numbers 01–12, a "Lithographic Calibration Region" and "Alignment
+Marks". No position on the reticle is given. Used on step 171. Tier: cross-check.
+
+**RAW-DATA-TESTTILE-PADS** — SkyWater PDK Authors, *Manufacturing Test
+Tile Pad Documentation* (PDF title "Pad documentation for SKY130 MPW
+Manufacturing E-Test Tile"), `sky130-testtile-pad-documentation.csv`,
+`.ods` and `.pdf`, raw-data repository, "Public Release - Apache 2.0",
+2022.
+<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+A table of 273 numbered modules (columns `Mod #`, `Group`, new- and
+old-style device names, `Description`, `Pin 01`–`Pin 12`, `Die Row`)
+naming the terminal on each pad: transistor families swept in W, L and
+source/drain extent; field-oxide FETs; well and deep-N-well isolation
+and resistors; diffusion and 300 Ω/sq and 2 kΩ/sq poly resistors with
+four-terminal and van der Pauw wiring; licon and mcon contact strings
+and Kelvin contacts; via-1 to via-4 chains; comb/serpentine structures
+on diffusion, poly, LI and metals 1–5; finger (VPP), charge-based,
+varactor, MOS and MiM capacitors with their expected values; diodes;
+bipolar transistors; ring oscillators; SRAM, SONOS, 2T-flash and
+antifuse structures. One continuation row reads "PLACE IN CENTER,
+CORNER OF RETICLE"; several poly-resistor rows name an "RRPM mask" and a
+"URPM mask". Used on step 171, the test category page, the overview and
+the well, isolation, poly-resistor, poly, contact, via, metal and MiM
+step pages. Tier: cross-check.
+
+**RAW-DATA-TESTTILE-OPEN** — SkyWater PDK Authors, *SkyWater 130nm Open
+Manufacturing Test Tile*, `docs/sky130-testtile-open/README.rst` with
+`resultanttestdie.png` and `testinterface.png`, raw-data repository,
+2022.
+<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-open/README.rst>
+An open test tile by Google, NIST and the University of Michigan built
+with OpenFASoC and gdsfactory generators (ring oscillators; line and
+via-chain resistance; MIM capacitor and diode modules); "The first test
+version of this tile was included in the MPW-5 run". The die image
+lists "Over 1400 Pads", "400+ Transistor Structures", "30 Capacitor Test
+Structures", "24 Ring Oscillators", "18 line and via chain modules" and
+"7 Diode Test Structures"; the test-interface figure shows a pad grid
+with "40 µm" pads, "60 µm" and "80 µm" dimensions and a photograph of a
+needle "Probe Card". Used on step 171 and the test category page. Tier:
+cross-check.
+
+**RAW-DATA-MDM** — Agilent Technologies, *IC-CAP User's Guide*, "MDM
+File Structure" (IC-CAP 2008 documentation, copy linked from the
+raw-data README), with the raw-data repository's annotated figure
+`docs/_static/mdm-format.png`.
+<https://people.ece.ubc.ca/robertor/Links_files/Files/ICCAP-2008-doc/icug/icug136.html>,
+<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/_static/mdm-format.png>
+The MDM format is "ASCII based" and "Table-based"; "The file extension
+for the data files is .mdm (measured data management)"; the header's
+mandatory `ICCAP_INPUTS` and `ICCAP_OUTPUTS` sections describe the
+sweeps and outputs. The raw-data figure annotates a transistor file:
+"Aliases given to each source measurement unit", "Source measurement
+unit number on the curve tracer", "Compliance", "Linear sweep, constant,
+etc.", "Sweep order", "Start value", "Final value", "Number of steps",
+"Step size". Used on step 171. Tier: cross-check.
+
+**RAW-DATA-NOTEBOOKS** — Google LLC, *SKY130 plots of {IC,IB,IG}/VG*
+(`sky130_plot_current.ipynb`), and B. Murmann, *SKY130 plots of ID-VG
+derivatives* (`sky130_plot_gm.ipynb`, August 2022), Colab notebooks in
+the raw-data repository.
+<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/notebooks>
+Load `.mdm` files with DMT-core and plot transistor currents and
+derivatives. The second notebook's comments: "the data gets noisy below
+2nA" and the data "cannot be used to predict the subthreshold slope
+(digital leakage) or peak gm/ID (for low power analog)". Evidence about
+the resolution of the published data, not about the process. Used on
+step 171. Tier: high-level.
 
 ## 9. Evidence about specific tools at SkyWater
 
