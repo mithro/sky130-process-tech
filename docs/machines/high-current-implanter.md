@@ -46,11 +46,11 @@ species".[^axcelis-gsd-page] A beam of many milliamperes at a few keV
 spreads under its own space charge, so a short path helps: Applied
 Materials describes the Quantum's "extremely short source-to-wafer beam
 path, which minimizes beam 'blow up' and energy contamination".[^amat-quantum-1999]
-Where the beam is accelerated after the analysing magnet, ions sputtered
-from the beam line travel with it: Xu and Lee found boron from earlier
-recipes in arsenic implants, with a contaminant energy "directly related
-to the post-analyzer acceleration voltage" and surface boron "generated
-in the beamline by ion beam sputtering".[^xu-1996]
+Species changes leave contamination in the beam line: in arsenic
+implants run straight after boron processes, Xu and Lee found both
+energetic boron, whose energy was "directly related to the post-analyzer
+acceleration voltage", and surface boron "generated in the beamline by
+ion beam sputtering".[^xu-1996]
 
 ### Batch disc scanning and dosimetry
 
@@ -83,9 +83,10 @@ flood guns helped against positive charging, but "the risk of negative
 charging persists due to the inherent high energy electrons present
 with this approach", and
 "commercial high current implanters are now being increasingly
-configured with plasma based flood guns";[^mehta-1996] Eaton introduced
-its "back biased Secondary Electron Flood (SEF)" in
-1996.[^axcelis-history] Resist changes the charging: photoresist on a
+configured with plasma based flood guns";[^mehta-1996] Eaton instead
+introduced a "back biased Secondary Electron Flood (SEF)" in 1996, "to
+provide charge control with low risk of emitting high energy primary
+electrons".[^axcelis-history] Resist changes the charging: photoresist on a
 charge-collection electrode "increases positive charging
 dramatically",[^dixon-1996] and a wafer half covered with resist shows
 high negative potentials on the bare part and high positive potentials
@@ -236,19 +237,19 @@ not public.
   concluded that "0 degrees tilt should be used for both n⁻ (LDD) and n⁺
   (source/drain) implants";[^krieger-1989] on a spinning disc, however,
   the angle varies across the wafer and near 0° that variation changes
-  channelling,[^jones-1996] which both step pages note.
+  channelling,[^jones-1996] which both step pages note. Yoneda and
+  Niwayama measured drain-current asymmetry at 130 nm from this error
+  even with tilt and twist set to 0°.[^yoneda-2002]
 * **Tilted tips on a high-current tool.** The PDK records a 7° "Angle
-  for tip implant".[^pdk-03] The {ref}`ASTI <step-065>` page cites
-  Yoneda and Niwayama's measurement of drain-current asymmetry at 130 nm
-  from extension shadowing caused by "mechanical angle error in high
-  current implanter".[^yoneda-2002] Whether SKY130's tip runs on the
-  "Hi dose" GSD or on the 8250 depends on a dose that is not
-  public.[^skw-01]
+  for tip implant",[^pdk-03] and the {ref}`ASTI <step-065>` page works
+  out the shadowing of such a beam by the gate stack. Whether SKY130's
+  tip runs on the "Hi dose" GSD or on the 8250 depends on a dose that is
+  not public.[^skw-01]
 * **Charging.** The source/drain, tip and gate implants run through
   resist over thin gate oxide. The {ref}`ASTI <step-065>`,
-  {ref}`PSDI <step-082>` and {ref}`NSDI <step-086>` pages cite the
-  charging studies above;[^lukaszek-1996][^dixon-1996][^mehta-1996]
-  the SkyWater entry does not describe the charge-control
+  {ref}`PSDI <step-082>` and {ref}`NSDI <step-086>` pages cite charging
+  studies of high-current implants through resist, among them those
+  above;[^lukaszek-1996][^dixon-1996][^mehta-1996] the SkyWater entry does not describe the charge-control
   system.[^skw-01]
 * **Resist heating, outgassing and dose.** The {ref}`P1I <step-050>`
   page notes that a 10¹⁵–10¹⁶ cm⁻² implant "deposits enough energy to
@@ -384,7 +385,7 @@ not public.
 [^amat-quantum-1999]: Applied Materials, *Applied Materials Announces New
     Quantum System for All High Current Sub-0.18 Micron Ion Implantation
     Applications*, press release (Business Wire), 1999-07-12.
-    <https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-quantum-system-all-high-current>
+    <https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-quantum-system-all-high-current/>
 [^axcelis-history]: Axcelis Technologies, *Our History* ("45 Years of
     Innovation"), company web page, accessed 2026-09-13.
     <https://www.axcelis.com/about/our-history/>

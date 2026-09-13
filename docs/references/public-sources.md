@@ -8671,7 +8671,7 @@ medium-current implanter page. Tier: high-level (dealer listing).
 **AMAT-QUANTUM-1999** — Applied Materials, *Applied Materials Announces
 New Quantum System for All High Current Sub-0.18 Micron Ion Implantation
 Applications*, press release (Business Wire), 1999-07-12.
-<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-quantum-system-all-high-current>
+<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-quantum-system-all-high-current/>
 The Quantum LEAP ("200eV to 80keV"), Quantum 80 ("2keV to 80keV") and
 Quantum 120 high-current implanters on a platform that "bridges 150mm,
 200mm or 300mm wafers"; "Nearly 100" xR80 and xR LEAP systems in use;
