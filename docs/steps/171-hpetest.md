@@ -31,11 +31,11 @@ the threshold voltage of a 7/8 µm device (`VTXNL`) has an EDR nominal of
 0.541 V with limits 0.515–0.567 V, and the drain current of a
 7/0.15 µm device (`IDSNS15`) a nominal 3.510 mA with limits
 3.039–3.981 mA.[^pdk-07] Tables with nominal, lower and upper spec limits
-(NOM, LSL, USL) follow for the passive devices — N+ diffusion sheet
-resistance `RSN` 120 Ω/sq (108–132), local-interconnect sheet resistance
+(NOM, LSL, USL) follow for the passive devices — N+ diffusion
+{term}`sheet resistance` `RSN` 120 Ω/sq (108–132), local-interconnect sheet resistance
 `RSLI` 12.8 Ω/sq (9.2–17.0), metal-3 sheet resistance `RSM3` 0.047 Ω/sq
 (0.038–0.056), electrical line widths such as `WN` 0.157 µm for a drawn
-0.14 µm N+ line, and the MiM capacitor's `CMIMA` 2 fF/µm² (1.8–2.2); the
+0.14 µm N+ line, and the {term}`MiM capacitor`'s `CMIMA` 2 fF/µm² (1.8–2.2); the
 page says of the NPN transistors "E-test specs for the NPN devices are
 shown in the table below", of the precision poly resistors that "several
 fixed-value resistors are measured at e-test", and of the SONOS memory
@@ -61,7 +61,7 @@ dies".[^pat-testline-tsmc]
 `HPETEST` is the only step of the
 {ref}`Electrical test / metrology <category-test>` category in the flow,
 and the category page's account of the process control monitor
-({term}`PCM`), van der Pauw and Kelvin structures and transistor
+({term}`PCM`), van der Pauw and {term}`Kelvin structures <Kelvin structure>` and transistor
 parameter extraction applies to it directly. What is specific to SKY130
 is that the specifications are public: the PDK's device page gives, for
 dozens of devices, the e-test parameter names, test-structure
@@ -113,11 +113,13 @@ fab (SKY130's test plan is not public beyond the parameters above):
    and characterization"[^keithley-s600] — coupled to an automatic wafer
    prober with a temperature-controlled chuck.[^wiki-ate]
 2. **Probe card.** A card laid out to the pad pitch of the e-test modules
-   (cantilever needles are typical[^wiki-probecard]); the pads are the
+   (Wikipedia classifies probe cards as needle, vertical and MEMS
+   types[^wiki-probecard]); the pads are the
    `pad` openings of {ref}`PDM <step-168>`.
 3. **Sites.** A fixed set of modules at "a few locations on each
    wafer"[^wiki-test], with the full parameter list at each.
-4. **Measurements.** Four-terminal resistance measurements ("a constant
+4. **Measurements.** Four-terminal ({term}`four-point probe`)
+   resistance measurements ("a constant
    current is applied to two probes, and the potential on the other two
    probes is measured"[^wiki-rs]) for sheet and contact resistance;
    transistor sweeps for threshold voltage, saturation and leakage
@@ -140,15 +142,20 @@ fab (SKY130's test plan is not public beyond the parameters above):
 ## Machines likely used at SkyWater
 
 * **HP 4062UX.** SkyWater lists "HP 4062UX" as its parametric
-  tester.[^skw-01] Strength: **strong** — it is the only parametric
+  tester, with "DC, capacitance, pulse generator, frequency counter" and
+  "automatic data upload, SPC, analysis, disposition".[^skw-01] Strength: **strong** — it is the only parametric
   tester named, and a dealer listing describes the 4062UX as a
   Keysight/Agilent parametric test system.[^brltest-4062] That `HPETEST`
   runs on it is an **inference**.
 * **Sort and reliability equipment** — "Advantest T5365P", "Verigy V3308,
-  V4108", "Credence Duo", "Credence LT", "Verigy 93000"; "Qualitau" in the
-  reliability lab.[^skw-01] Strength: strong for existence; these serve
+  V4108", "Credence Duo", "Credence LT", "Fuse GSI M325", "Verigy 93000",
+  "Camtek Falcon (outgoing QA)"; "Qualitau" in the reliability
+  lab.[^skw-01] Strength: strong for existence; these serve
   functional sort and reliability rather than e-test (inference).
-* **Probers** are not named on the public list.
+* **Probers.** No production wafer prober is named; SkyWater lists an
+  "Engineering manual Probe Station" under parametric test and a "Summit
+  200 Prober/Tester" and "PMC200 Cryo Probe" in its reliability
+  lab.[^skw-01]
 
 ## Resources required
 
@@ -325,4 +332,4 @@ fab (SKY130's test plan is not public beyond the parameters above):
 [^hunter-2012]: S. Hunter, J. L. Clark, D. Hornberger and L. Rubio, "Use
     of Wire Bonding to Study Bond Pad Damage from Wafer Probe",
     *International Symposium on Microelectronics* **2012**(1), 384–395
-    (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-tp41>
+    (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-TP41>
