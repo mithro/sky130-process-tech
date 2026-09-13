@@ -527,7 +527,10 @@ MPW runs.
   binary mask for via 4, all for 248 nm exposure and, less certainly,
   4×.[^steps-sheet][^photronics-abr] It names no resist tone or
   exposure tool, and no type for the other masks. The
-  {ref}`VIM4 <step-159>` page's i-line inference predates this record.
+  {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>` and
+  {ref}`VIM4 <step-159>` pages take up this reading; that the three
+  levels are exposed on KrF tools, via 4 included despite its 0.8 µm
+  size, remains an inference from the reticle types.
   `gds_layers.csv` has an
   `areaid.op` identifier (81:54, "OPC drop. Block automatic OPC (for
   fab blocks and lithocal structures)"), which implies that automatic
