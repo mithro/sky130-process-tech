@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1263
+written page has exactly one entry here; the inventory holds 1271
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18 and 8.19
@@ -10192,6 +10192,79 @@ Single-Wafer System", *Journal of The Electrochemical Society*
 Tungsten plugs by deposition at 80 torr and 475 °C and a two-step
 magnetron-enhanced etchback on an Applied Materials P5000 WCVD system for
 150 mm wafers. Used on the tungsten CVD page. Tier: deep dive.
+
+**NOVELLUS-PVD-1998** — Novellus Systems, *Metal – PVD Solutions*,
+product page; Wayback Machine capture of 1998-06-11.
+<https://web.archive.org/web/19980611202757/http://www.novellus.com:80/products/pvd.htm>
+The INOVA, "made possible through the acquisition of the Thin Film
+Systems business of Varian Associates, Inc.", delivering "Maxfill™
+aluminum and superior Ti/Ti-nitride film quality"; a Ti/TiN process "in
+production with Controlled Divergence Technology" ahead of the ionised
+HCM source. Used on the PVD cluster tool page. Tier: cross-check (vendor
+statement).
+
+**NOVELLUS-PVD-2001** — Novellus Systems, *Metal PVD Solutions*, product
+page; Wayback Machine capture of 2001-12-14.
+<https://web.archive.org/web/20011214001648/http://www.novellus.com:80/products/pvd.asp>
+The INOVA with the Hollow Cathode Magnetron source, whose "HCM Ti/TiN
+films make an excellent diffusion barrier for CVD W applications", the
+"MaxFill™ low pressure aluminum plug solution", and the 300 mm INOVA xT
+of 2000. Used on the PVD cluster tool page. Tier: cross-check (vendor
+statement).
+
+**AMAT-ISM-CU-2000** — Applied Materials, *Interconnect Systems & Modules*
+(copper and aluminium systems, Endura SL), product page; Wayback Machine
+capture of 2000-08-16.
+<https://web.archive.org/web/20000816055835/http://www.appliedmaterials.com:80/products/ism_coppalum.html>
+The Endura SL with "dual VHP+ robots" and "up to six process chambers"
+at "greater than 60 wph", and Applied's IMP and SIP copper barrier and
+seed chambers. Used on the PVD cluster tool page. Tier: cross-check
+(vendor statement).
+
+**AMAT-LINER-BARRIER-2001** — Applied Materials, *Aluminum
+Liner/Barrier*, product page; Wayback Machine capture of 2001-08-07.
+<https://web.archive.org/web/20010807161527/http://www.appliedmaterials.com:80/products/liner_barrier.html>
+The Integrated PVD/CVD Liner/Barrier system on the Endura, and the
+Self-Ionized Plasma (SIP) TiN chamber, "used in volume production for
+advanced devices with aspect ratios of 7:1", with a "biased electrostatic
+chuck". Used on the PVD cluster tool page. Tier: cross-check (vendor
+statement).
+
+**AMAT-AL-SLAB-2002** — Applied Materials, *Aluminum Slab and Fill*,
+product page; Wayback Machine capture of 2002-06-25.
+<https://web.archive.org/web/20020625163718/http://www.appliedmaterials.com:80/products/aluminum_slab_and_fill.html>
+The Endura PVD aluminium slab system, which "deposits aluminum over
+tungsten plugs in logic and DRAM devices to form metal wiring", and the
+ALPS+ aluminium fill source with "low-fill temperatures (<430°C)". Used
+on the PVD cluster tool page. Tier: cross-check (vendor statement).
+
+**PAT-STAGED-VACUUM-AMAT** — A. Tepman, H. Grunes, S. Somekh and D.
+Maydan (Applied Materials), *Staged-vacuum wafer processing system and
+method*, US 5,186,718 A, filed 1991-04-15 (priority 1989-05-19), granted
+1993-02-16. <https://patents.google.com/patent/US5186718A/en> A
+multi-chamber platform with isolated vacuum stages and a vacuum gradient
+from the load locks to the process chambers, separate buffer and transfer
+robots, and pre-clean and cool-down chambers in the paths between them.
+Used on the PVD cluster tool page. Tier: cross-check (patent).
+
+**PAT-COLLIMATOR-VARIAN** — R. E. Demaray, V. E. Hoffman, J. C. Helmer,
+Y. H. Park and R. R. Cochran (Varian Associates), *Collimated deposition
+apparatus and method*, US 5,330,628 A, filed 1991-10-23 (priority
+1990-01-29), granted 1994-07-19.
+<https://patents.google.com/patent/US5330628A/en> Sputtering at a
+pressure low enough to avoid gas scattering, through "a collimating filter
+having a plurality of transmissive cells with a length to diameter ratio
+on the order of 1:1 to 3:1", for step coverage in holes. Used on the PVD
+cluster tool page. Tier: cross-check (patent).
+
+**PAT-IMP-COIL-AMAT** — K. K.-T. Ngan (Applied Materials), *Avoiding
+contamination from induction coil in ionized sputtering*, US 5,707,498 A,
+filed 1996-07-12, granted 1998-01-13.
+<https://patents.google.com/patent/US5707498A/en> In an inductively
+coupled sputtering chamber, a "pasting" step with no coil power coats the
+coil with target material, repeated after a number of wafers, so that
+material sputtered off the coil does not contaminate the film. Used on
+the PVD cluster tool page. Tier: deep dive (patent).
 
 ## 9. Evidence about specific tools at SkyWater
 
