@@ -125,8 +125,10 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
    thickness measurement (the "blind polishing" Wikipedia
    describes[^wiki-cmp]); for a stop-on-nitride, in-situ optical
    {term}`endpoint` through a pad or table window[^pat-cmp-window][^pat-cmp-endpoint-ibm] or motor-current
-   detection[^speedfam-ipec-2001] — Bibby and Holland review the
-   options.[^bibby-1998]
+   detection.[^speedfam-ipec-2001] Bibby and Holland's 1998 paper, by its
+   abstract, discusses "many of the approaches that have been
+   published", grouped as global or local and as direct or indirect
+   methods.[^bibby-1998]
 5. **Post-CMP clean.** Double-sided brush scrub in dilute NH₄OH,
    spin-rinse-dry; a short dilute-HF touch is common before the next
    deposition. Slurry residue must be gone before the wafer dries.
