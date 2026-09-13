@@ -254,19 +254,19 @@ are design assumptions, not process specifications.[^pdk-03]
 ### SKY130 steps that use this class
 
 This page covers the rows of the {ref}`materials index <materials-table>`
-listed below; the steps are those whose *Resources required* section
+listed below by key; the steps are those whose *Resources required* section
 names one of them (the union of the rows' *Steps* cells).
 
 Materials index rows covered:
 
-* i-line positive photoresist (DNQ/novolac), including thick implant resist
-* KrF (248 nm) chemically amplified positive photoresist
-* Organic BARC, inorganic ARC or dyed resist
-* HMDS adhesion promoter
-* TMAH developer, 2.38 %[^microchemicals-dev] (0.26 N; our arithmetic from TMAH's molar mass of 91.15 g/mol,[^wiki-tmah] taking the solution's density as about 1 g/mL)
-* Edge-bead remover and rinse solvents (PGMEA, ethyl lactate, cyclohexanone)
-* Reticles (chrome on quartz or embedded attenuated phase-shift, with pellicles; SEMI P1 blanks)
-* Exposure-tool consumables: KrF laser gas (Kr, F₂/Ne), mercury lamps
+* `i-line-resist` — i-line positive photoresist
+* `krf-resist` — KrF chemically amplified positive photoresist
+* `arc` — anti-reflective coatings
+* `hmds` — HMDS adhesion promoter
+* `tmah` — TMAH developer
+* `ebr-solvents` — edge-bead remover and rinse solvents
+* `reticles` — reticles and pellicles
+* `exposure-consumables` — exposure-tool consumables
 
 Steps:
 

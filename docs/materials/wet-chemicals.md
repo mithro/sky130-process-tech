@@ -259,24 +259,24 @@ that the step pages supply, not SkyWater statements.
 ### SKY130 steps that use this class
 
 This page covers the rows of the {ref}`materials index <materials-table>`
-listed below; the steps are those whose *Resources required* section
+listed below by key; the steps are those whose *Resources required* section
 names one of them (the union of the rows' *Steps* cells). The post-CMP
 clean mixtures, which also contain dilute HF, belong to the CMP
 consumables row, and ultrapure water to its own row.
 
 Materials index rows covered:
 
-* Hydrofluoric acid (49 % and dilute HF)
-* Buffered oxide etch (NH₄F/HF), with surfactant
-* SC-1 (NH₄OH + H₂O₂ + H₂O)
-* SC-2 (HCl + H₂O₂ + H₂O)
-* SPM, piranha (H₂SO₄ + H₂O₂)
-* Hot phosphoric acid (H₃PO₄, 85 %[^wiki-h3po4])
-* Hydrogen peroxide (H₂O₂, 30 %[^wiki-rca][^wiki-piranha])
-* Nitric acid (HF/HNO₃); titration reagents
-* Ozonated water (O₃ in water)
-* Isopropanol (IPA)
-* Amine or semi-aqueous post-etch residue removers (EKC265/EKC270 class)
+* `hf` — hydrofluoric acid
+* `boe` — buffered oxide etch
+* `sc1` — SC-1
+* `sc2` — SC-2
+* `spm` — SPM (piranha)
+* `h3po4` — hot phosphoric acid
+* `h2o2` — hydrogen peroxide
+* `hno3` — nitric acid and titration reagents
+* `ozonated-water` — ozonated water
+* `ipa` — isopropanol
+* `residue-removers` — post-etch residue removers
 
 Steps:
 
