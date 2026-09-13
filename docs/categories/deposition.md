@@ -420,8 +420,10 @@ must hit.
     for sputtering and manufacturing method therefor*, US 5,160,534 A,
     granted 1992-11-03.
     <https://patents.google.com/patent/US5160534A/en>
-[^pat-imp-amat]: Applied Materials, *Alternate steps of IMP and
-    sputtering process to improve sidewall coverage*, US 6,350,353 B2.
+[^pat-imp-amat]: P. Gopalraja, S. Edelstein, A. Tepman, P. Ding,
+    D. Ghosh and N. Maity (Applied Materials), *Alternate steps of IMP
+    and sputtering process to improve sidewall coverage*,
+    US 6,350,353 B2, filed 1999-11-24, granted 2002-02-26.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>
 [^wiki-wf6]: Wikipedia, *Tungsten hexafluoride*.
     <https://en.wikipedia.org/wiki/Tungsten_hexafluoride>

@@ -286,7 +286,7 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 [^pat-imp-amat]: P. Gopalraja, S. Edelstein, A. Tepman, P. Ding,
     D. Ghosh and N. Maity (Applied Materials), *Alternate steps of IMP
     and sputtering process to improve sidewall coverage*,
-    US 6,350,353 B2, granted 2002-02-26.
+    US 6,350,353 B2, filed 1999-11-24, granted 2002-02-26.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>
 [^wiki-tin]: Wikipedia, *Titanium nitride*.
     <https://en.wikipedia.org/wiki/Titanium_nitride>
