@@ -1,10 +1,6 @@
 (step-171)=
 # Step 171 — HPETEST: Electrical test
 
-:::{warning}
-This page is a stub. Content has not yet been researched and reviewed.
-:::
-
 | | |
 |---|---|
 | **Step number** | 171 of 171 |
@@ -16,50 +12,317 @@ This page is a stub. Content has not yet been researched and reviewed.
 
 ## What this step is
 
-*To be written.*
+`HPETEST` is the end of the flow: the finished, annealed wafers
+({ref}`ALLY <step-170>`) are placed on a prober, needles are lowered
+onto the pads opened at {ref}`PDME <step-169>`, and a parametric tester
+measures test structures — transistors, resistors, capacitors, diodes,
+contact and via chains — to decide whether each wafer was built to
+specification. This is the {term}`e-test` or wafer acceptance test
+({term}`WAT`) described on the category page; product functional test
+({term}`wafer sort`) is a separate, later operation. The step list used
+in this reference does not describe the test; what follows rests on the
+PDK, SkyWater's capability list and industry practice.
+
+**What the PDK says is tested.** The SKY130 device documentation
+publishes the e-test specifications directly. For each MOSFET it states
+that "Major model output parameters are shown below and compared against
+the EDR (e-test) specs": for the 1.8 V NMOS `nfet_01v8`, for example,
+the threshold voltage of a 7/8 µm device (`VTXNL`) has an EDR nominal of
+0.541 V with limits 0.515–0.567 V, and the drain current of a
+7/0.15 µm device (`IDSNS15`) a nominal 3.510 mA with limits
+3.039–3.981 mA.[^pdk-07] Tables with nominal, lower and upper spec limits
+(NOM, LSL, USL) follow for the passive devices — N+ diffusion sheet
+resistance `RSN` 120 Ω/sq (108–132), local-interconnect sheet resistance
+`RSLI` 12.8 Ω/sq (9.2–17.0), metal-3 sheet resistance `RSM3` 0.047 Ω/sq
+(0.038–0.056), electrical line widths such as `WN` 0.157 µm for a drawn
+0.14 µm N+ line, and the MiM capacitor's `CMIMA` 2 fF/µm² (1.8–2.2); the
+page says of the NPN transistors "E-test specs for the NPN devices are
+shown in the table below", of the precision poly resistors that "several
+fixed-value resistors are measured at e-test", and of the SONOS memory
+that "E-test parameters are summarized below"; the SRAM cell "is
+monitored at e-test through the use of 'pinned out' devices within the
+specific arrays".[^pdk-07]
+
+**Where the structures are.** The layer table defines `areaid.mt`
+(81:10), "Location of e-test modules within the frame", and `areaid.et`
+(81:101), "e-test module identifier";[^pdk-06] the periphery rules state
+that the "Die must not overlap areaid.mt" and that drawn compatible, mask
+and waffle-drop layers are allowed "only inside areaid:mt (i.e., etest
+modules)", inside the seal ring or in the frame, and they allow larger
+via sizes inside `areaid.mt` (for example 0.200 µm and 0.800 µm via3
+squares, via3.1a).[^pdk-periph] The e-test modules are therefore placed
+in the frame outside the product dice (our reading of the rules), the
+{term}`scribe line` arrangement a TSMC patent describes as "a plurality
+of testlines in the scribe line area between adjacent wafer
+dies".[^pat-testline-tsmc]
 
 ## Step category
 
-*To be written.*
+`HPETEST` is the only step of the
+{ref}`Electrical test / metrology <category-test>` category in the flow,
+and the category page's account of the process control monitor
+({term}`PCM`), van der Pauw and Kelvin structures and transistor
+parameter extraction applies to it directly. What is specific to SKY130
+is that the specifications are public: the PDK's device page gives, for
+dozens of devices, the e-test parameter names, test-structure
+geometries, nominal values and limits, and places them beside the SPICE
+model corners (TT, FF, SS, FS, SF) they are compared with.[^pdk-07] The
+wafer leaves the step physically unchanged apart from probe marks on the
+test pads.
 
 ## Why this step exists
 
-*To be written.*
+* **Disposition.** The wafer is accepted, held or scrapped on its e-test
+  results against the limits; the PDK's LSL/USL columns[^pdk-07] are
+  that kind of limit. Parametric test is performed at "a few locations
+  on each wafer" to verify that fabrication succeeded.[^wiki-test]
+* **Process control.** Each parameter is a sensor for particular steps:
+  well and diffusion sheet resistances for the implants and anneals,
+  electrical line widths for lithography and etch
+  (Buehler, Grant and Thurber's bridge and van der Pauw
+  structures[^buehler-1978][^vdp-1958]), contact and via resistance for the
+  plug modules (Proctor, Linholm and Mazer[^proctor-1983]), threshold
+  voltage for the gate stack and channel implants (extraction methods
+  reviewed by Ortiz-Conde et al.[^ortiz-conde-2002]), and comb/serpentine
+  structures for shorts and opens (Sayah and Buehler[^sayah-1988]). The
+  results feed {term}`SPC` charts and correlation with tool history.
+* **The PDK's models.** Compact models are fitted to and checked against
+  parametric data (Cheng and Hu describe the BSIM3 extraction[^cheng-1999]);
+  the PDK's model-versus-EDR tables are the public face of that
+  loop.[^pdk-07]
+* **Yield learning.** Test structures also measure defect densities and
+  critical-area sensitivities (Stapper;[^stapper-1983] Hess and
+  Weiland[^hess-1999]) and support design for manufacturability
+  (Maly[^maly-1990]).
+* **Checking the passivation, anneal and pads.** This is the first
+  electrical measurement after {ref}`ALLY <step-170>`, whose interface-trap
+  passivation the transistor parameters reflect, and the first probing of
+  the openings made at {ref}`PDME <step-169>`; Hunter et al. show that
+  probing can crack the oxide under aluminium pads.[^hunter-2012]
 
 ## How it is typically performed
 
-*To be written.*
+An industry-generic wafer acceptance test for a 200 mm, 130 nm-era CMOS
+fab (SKY130's test plan is not public beyond the parameters above):
+
+1. **Tester and prober.** A parametric tester — source-measure units, a
+   capacitance meter and a switching matrix under test-plan software,
+   such as the HP/Agilent 4062UX[^brltest-4062] or Keithley S600, designed
+   for "process control, process and equipment tuning and optimization,
+   equipment qualification, Wafer Acceptance Testing, and device modeling
+   and characterization"[^keithley-s600] — coupled to an automatic wafer
+   prober with a temperature-controlled chuck.[^wiki-ate]
+2. **Probe card.** A card laid out to the pad pitch of the e-test modules
+   (cantilever needles are typical[^wiki-probecard]); the pads are the
+   `pad` openings of {ref}`PDM <step-168>`.
+3. **Sites.** A fixed set of modules at "a few locations on each
+   wafer"[^wiki-test], with the full parameter list at each.
+4. **Measurements.** Four-terminal resistance measurements ("a constant
+   current is applied to two probes, and the potential on the other two
+   probes is measured"[^wiki-rs]) for sheet and contact resistance;
+   transistor sweeps for threshold voltage, saturation and leakage
+   currents; C–V for capacitors and oxide thickness; breakdown voltages
+   for junctions and dielectrics; gain for bipolar devices. Schroder's
+   text covers the methods.[^schroder-2006]
+5. **Data.** Results are stored per wafer, site and structure, compared
+   with limits and control limits, and released to disposition and SPC.
 
 ## Machines typically used
 
-*To be written.*
+* **Parametric tester**: HP/Agilent 4062UX,[^brltest-4062]
+  Keithley S600[^keithley-s600] ({ref}`category-test`).
+* **Automatic wafer prober** with a hot/cold chuck (Electroglas, TEL,
+  Tokyo Seimitsu[^wiki-ate]).
+* **Probe cards** and probe-tip cleaning media.[^wiki-probecard]
+* **Bench parameter analysers and manual probe stations** for
+  engineering analysis.
 
 ## Machines likely used at SkyWater
 
-*To be written.*
+* **HP 4062UX.** SkyWater lists "HP 4062UX" as its parametric
+  tester.[^skw-01] Strength: **strong** — it is the only parametric
+  tester named, and a dealer listing describes the 4062UX as a
+  Keysight/Agilent parametric test system.[^brltest-4062] That `HPETEST`
+  runs on it is an **inference**.
+* **Sort and reliability equipment** — "Advantest T5365P", "Verigy V3308,
+  V4108", "Credence Duo", "Credence LT", "Verigy 93000"; "Qualitau" in the
+  reliability lab.[^skw-01] Strength: strong for existence; these serve
+  functional sort and reliability rather than e-test (inference).
+* **Probers** are not named on the public list.
 
 ## Resources required
 
-*To be written.*
+* **Probe cards** laid out for the e-test modules, and replacement
+  needles; **probe-tip cleaning media**.[^wiki-probecard]
+* **Calibration standards** for source-measure units and capacitance
+  meters; **reference wafers** for tester correlation.
+* **Test-plan software and a data system** holding the specifications
+  (the PDK's EDR parameters[^pdk-07]).
+* No process gases or chemicals.
 
 ## Related steps and cross-references
 
-*To be written.*
+* Previous: {ref}`ALLY <step-170>` (the anneal whose effect the transistor
+  parameters include). This is the last step of the flow.
+* The pads probed: {ref}`PDM <step-168>`, {ref}`PDME <step-169>`.
+* Examples of steps whose results are measured here: the MiM capacitor
+  ({ref}`CAPILD <step-135>`, `CMIMA`), metal 3 ({ref}`MM3E <step-140>`,
+  `RSM3`), the local interconnect ({ref}`LI1ME <step-103>`, `RSLI`).
+* The first step of the flow: {ref}`SMAT <step-001>`.
+* Category page: {ref}`Electrical test / metrology <category-test>`.
 
 ## References
 
 ### Cross-check
 
-*To be written.*
+* SkyWater PDK, *Device Details* — "compared against the EDR (e-test)
+  specs"; `VTXNL`, `IDSNS15`, `RSN`, `RSLI`, `RSM3`, `WN`, `CMIMA` with
+  limits; NPN, poly-resistor, SONOS and SRAM e-test statements.[^pdk-07]
+* SkyWater PDK, *Layers Reference* — `areaid.mt` "Location of e-test
+  modules within the frame"; `areaid.et`.[^pdk-06]
+* SkyWater PDK, *Periphery rules* — "Die must not overlap areaid.mt";
+  layers allowed "only inside areaid:mt (i.e., etest modules)";
+  via3.1a.[^pdk-periph]
+* SkyWater, *Facilities & Capabilities* — "HP 4062UX"; sort testers;
+  "Qualitau".[^skw-01]
+* BRL Test, 4062UX listing; Keithley, *Series S600* data
+  sheet.[^brltest-4062][^keithley-s600]
+* ITRS 2001, *Test and Test Equipment* and *Metrology*.[^itrs-2001-test][^itrs-2001-met]
 
 ### High-level understanding
 
-*To be written.*
+* Wikipedia, *Wafer testing*, *Sheet resistance*, *Van der Pauw method*,
+  *Probe card*, *Automatic test equipment*, *Statistical process
+  control*.[^wiki-test][^wiki-rs][^wiki-vdp][^wiki-probecard][^wiki-ate][^wiki-spc]
+* Quirk and Serda, *Semiconductor Manufacturing Technology* — process
+  monitoring and wafer test.[^txt-07]
 
 ### Deep dive
 
-*To be written.*
+* van der Pauw, *Philips Res. Rep.* 1958 — the four-contact
+  sheet-resistance theorem.[^vdp-1958]
+* Buehler, *Microelectronic Test Patterns*, NBS Special Publication
+  400-6, 1974 — an early NBS publication on test patterns.[^buehler-1974]
+* Buehler, Grant and Thurber (NBS), *J. Electrochem. Soc.* 1978 — bridge
+  and van der Pauw resistors for electrical line width.[^buehler-1978]
+* Proctor, Linholm and Mazer (NBS), *IEEE TED* 1983 — Kelvin contact
+  resistance structures.[^proctor-1983]
+* Sayah and Buehler, ICMTS 1988 — a comb/serpentine/cross-bridge
+  structure for process evaluation.[^sayah-1988]
+* Ortiz-Conde et al., *Microelectron. Reliab.* 2002 — threshold-voltage
+  extraction methods.[^ortiz-conde-2002]
+* Cheng and Hu, *MOSFET Modeling & BSIM3 User's Guide* — from parametric
+  data to model parameters.[^cheng-1999]
+* Stapper (IBM), *IBM J. Res. Dev.* 1983, and Hess and Weiland, *IEEE
+  TSM* 1999 — defect sensitivities and defect-density extraction from
+  test structures.[^stapper-1983][^hess-1999]
+* Maly, *Proc. IEEE* 1990 — design for manufacturability.[^maly-1990]
+* Chen, Hsu, Tsai and Jeng (TSMC), US 7,679,384 — parametric testlines
+  in the scribe line.[^pat-testline-tsmc]
+* Hunter et al., IMAPS 2012 — probe damage in aluminium pads.[^hunter-2012]
+* Schroder, *Semiconductor Material and Device Characterization* — the
+  measurement methods.[^schroder-2006]
 
 ## Open questions
 
-*To be written.*
+* The test plan — which structures, how many sites per wafer, the
+  sampling across a lot and the disposition rules — is not public beyond
+  the PDK's parameter tables.[^pdk-07]
+* What "EDR" stands for in the PDK's "EDR (e-test)" columns is not
+  explained on the page.
+* Whether `HPETEST` runs on the HP 4062UX SkyWater lists[^skw-01] is not
+  stated; the prober and probe-card types are not public.
+* How the e-test modules are distributed in the frame (positions,
+  number per reticle field) is not public.
+
+<!-- footnotes -->
+
+[^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
+    `gds_layers.csv`, SkyWater SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
+[^pdk-07]: SkyWater PDK Authors, *Device Details* (device e-test and
+    model parameter tables), SkyWater SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
+[^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
+    PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
+    2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^brltest-4062]: BRL Test, *4062UX — Keysight / Agilent Parametric
+    Testers* (listing).
+    <https://www.brltest.com/index.php?main_page=product_info&products_id=7874>
+[^keithley-s600]: Keithley Instruments, *Series S600 Parametric Test
+    Systems*, data sheet.
+    <https://download.tek.com/datasheet/SeriesS600_DataSht.pdf>
+[^itrs-2001-test]: International Technology Roadmap for Semiconductors,
+    *2001 Edition: Test and Test Equipment*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Test.pdf>
+[^itrs-2001-met]: International Technology Roadmap for Semiconductors,
+    *2001 Edition: Metrology*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>
+[^wiki-test]: Wikipedia, *Wafer testing*.
+    <https://en.wikipedia.org/wiki/Wafer_testing>
+[^wiki-rs]: Wikipedia, *Sheet resistance*.
+    <https://en.wikipedia.org/wiki/Sheet_resistance>
+[^wiki-vdp]: Wikipedia, *Van der Pauw method*.
+    <https://en.wikipedia.org/wiki/Van_der_Pauw_method>
+[^wiki-probecard]: Wikipedia, *Probe card*.
+    <https://en.wikipedia.org/wiki/Probe_card>
+[^wiki-ate]: Wikipedia, *Automatic test equipment*.
+    <https://en.wikipedia.org/wiki/Automatic_test_equipment>
+[^wiki-spc]: Wikipedia, *Statistical process control*.
+    <https://en.wikipedia.org/wiki/Statistical_process_control>
+[^txt-07]: M. Quirk and J. Serda, *Semiconductor Manufacturing
+    Technology*, Prentice Hall, 2001, ISBN 978-0-13-081520-0.
+    <https://openlibrary.org/isbn/9780130815200>
+[^vdp-1958]: L. J. van der Pauw, "A method of measuring specific
+    resistivity and Hall effect of discs of arbitrary shape", *Philips
+    Research Reports* **13**, 1–9 (1958); reprinted in S. M. Sze (ed.),
+    *Semiconductor Devices: Pioneering Papers*, World Scientific, 1991,
+    pp. 174–182. <https://doi.org/10.1142/9789814503464_0017>
+[^buehler-1974]: M. G. Buehler, *Microelectronic Test Patterns*, NBS
+    Special Publication 400-6, National Bureau of Standards, 1974.
+    <https://doi.org/10.6028/NBS.SP.400-6>
+[^buehler-1978]: M. G. Buehler, S. D. Grant and W. R. Thurber, "Bridge
+    and van der Pauw Sheet Resistors for Characterizing the Line Width
+    of Conducting Layers", *Journal of The Electrochemical Society*
+    **125**(4), 650–654 (1978). <https://doi.org/10.1149/1.2131517>
+[^proctor-1983]: S. J. Proctor, L. W. Linholm and J. A. Mazer, "Direct
+    measurements of interfacial contact resistance, end contact
+    resistance, and interfacial contact layer uniformity", *IEEE
+    Transactions on Electron Devices* **30**(11), 1535–1542 (1983).
+    <https://doi.org/10.1109/T-ED.1983.21334>
+[^sayah-1988]: H. R. Sayah and M. G. Buehler, "Comb/serpentine/cross-bridge
+    test structure for fabrication process evaluation", *Proc. 1988 IEEE
+    International Conference on Microelectronic Test Structures
+    (ICMTS)*, pp. 23–28. <https://doi.org/10.1109/ICMTS.1988.672923>
+[^ortiz-conde-2002]: A. Ortiz-Conde, F. J. García Sánchez, J. J. Liou,
+    A. Cerdeira, M. Estrada and Y. Yue, "A review of recent MOSFET
+    threshold voltage extraction methods", *Microelectronics
+    Reliability* **42**(4–5), 583–596 (2002).
+    <https://doi.org/10.1016/S0026-2714(02)00027-6>
+[^cheng-1999]: Y. Cheng and C. Hu, *MOSFET Modeling & BSIM3 User's
+    Guide*, Kluwer Academic, 1999. <https://doi.org/10.1007/b117400>
+[^stapper-1983]: C. H. Stapper, "Modeling of Integrated Circuit Defect
+    Sensitivities", *IBM Journal of Research and Development* **27**(6),
+    549–557 (1983). <https://doi.org/10.1147/rd.276.0549>
+[^hess-1999]: C. Hess and L. H. Weiland, "Extraction of wafer-level
+    defect density distributions to improve yield prediction", *IEEE
+    Transactions on Semiconductor Manufacturing* **12**(2), 175–183
+    (1999). <https://doi.org/10.1109/66.762875>
+[^maly-1990]: W. Maly, "Computer-aided design for VLSI circuit
+    manufacturability", *Proceedings of the IEEE* **78**(2), 356–392
+    (1990). <https://doi.org/10.1109/5.52217>
+[^schroder-2006]: D. K. Schroder, *Semiconductor Material and Device
+    Characterization*, 3rd ed., Wiley, 2006.
+    <https://doi.org/10.1002/0471749095>
+[^pat-testline-tsmc]: H.-W. Chen, S.-H. Hsu, H.-Y. Tsai and S.-P. Jeng
+    (Taiwan Semiconductor Manufacturing Co.), *Parametric testline with
+    increased test pattern areas*, US 7,679,384 B2, filed 2007-06-08,
+    granted 2010-03-16.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7679384>
+[^hunter-2012]: S. Hunter, J. L. Clark, D. Hornberger and L. Rubio, "Use
+    of Wire Bonding to Study Bond Pad Damage from Wafer Probe",
+    *International Symposium on Microelectronics* **2012**(1), 384–395
+    (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-tp41>
