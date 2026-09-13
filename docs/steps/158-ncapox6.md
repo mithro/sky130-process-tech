@@ -146,9 +146,12 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Resources required
 
-* **TEOS and oxygen** (helium carrier) or **silane and nitrous
-  oxide**;[^wiki-teos][^wiki-pecvd] gas and chemical suppliers per
-  SkyWater's filings.[^sec-01]
+* **TEOS** (liquid, vaporised) and **oxygen**, or **silane** and
+  **N₂O** for the silane route;[^wiki-teos][^wiki-pecvd] **helium**,
+  **nitrogen** or **argon** as carrier or diluent (typical; the PECVD
+  article describes TEOS deposition "in an oxygen or oxygen-argon
+  plasma"[^wiki-pecvd]); gas and chemical suppliers per SkyWater's
+  filings.[^sec-01]
 * **NF₃** for the chamber clean; **nitrogen** purge.
 * **Chamber consumables**; **monitor wafers** for thickness, index and
   stress.
