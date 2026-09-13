@@ -364,8 +364,9 @@ the `masks.csv` fields from the PDK.[^pdk-05] What the record shows:
   MPW-4, MPW-7 and MPW-8, and `VIMC` on MPW-1 to MPW-5, MPW-7 and
   MPW-8; neither has one on MPW-6.[^steps-sheet] The sheet's notes tie
   both to the ReRAM tier between metal 1 and metal 2 described on the
-  {ref}`overview-sky130b-reram` page.[^steps-sheet] Neither is a step
-  in the step list used here or an entry in `masks.csv`, so neither
+  {ref}`overview-sky130b-reram` page;[^steps-sheet] as that page notes,
+  the notes use the PDK files' terms and are not independent evidence.
+  Neither is a step in the step list used here or an entry in `masks.csv`, so neither
   appears in the main table of this page.[^steps-sheet][^pdk-05]
 * **The "Masks" tab.** A further tab, "Masks", lists 37 rows of step
   number, code and description: the 36 mask steps counted above and
