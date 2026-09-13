@@ -65,9 +65,11 @@ system as
 "the high-end system of the HP4062 Semiconductor Parametric Test System
 family", for "both process monitoring and process
 development".[^brltest-4062] Long cables and relay matrices add leakage and
-capacitance, which Keithley's Series S600 addressed with "active
-electronics on each tester pin inside a test head that mounts on top of
-the prober", where "Each probing pin has its own amplifier for
+capacitance: Keithley describes "the parasitic capacitances and leakage
+currents inherent in systems with long cables and a reed-relay-based
+switch matrix between the DUT and the measurement circuitry", which its
+Series S600 minimised with "active electronics on each tester pin inside a
+test head that mounts on top of the prober", where "Each probing pin has its own amplifier for
 bi-directional scaling of currents".[^keithley-s600] Keithley lists its
 uses as "process control, process and equipment tuning and optimization,
 equipment qualification, Wafer Acceptance Testing, and device modeling and
@@ -202,8 +204,9 @@ likely used at SkyWater"), as collected on the machines index:
 * **"HP 4062UX"** — *inference:* {ref}`CAPILD2 <step-150>`, {ref}`HPETEST <step-171>`
 * **"Engineering manual Probe Station"; sort and reliability-lab tools** — *named; no production prober, and the sort and reliability tools serve other purposes (inference):* {ref}`HPETEST <step-171>`
 
-**Published measurements of a SkyWater test tile.** The one public body of SKY130 parametric data does not come from
-SkyWater's production test. Google's raw-data repository states that its
+**Published measurements of a SkyWater test tile.** The one public body
+of measured SKY130 parametric data was not collected by SkyWater's
+production test, on the repository's own account. Google's raw-data repository states that its
 initial data "was collected under contract by CoolCAD Electronics LLC
 using the manufacturing test tile created by SkyWater",[^raw-data-readme]
 of which "each of the Google MPW runs includes two
@@ -225,9 +228,9 @@ sources describes the fab's probe cards, calibration or test data system.
   with needles of tungsten, tungsten–rhenium, beryllium–copper or other
   alloys, whose contact resistance depends on material and cleaning
   frequency.[^broz-1999][^wiki-probecard]
-* **Calibration.** Source-measure units and capacitance meters are
-  calibrated on site; Agilent's 4072B and 4073B prices included "one-time,
-  on-site calibration".[^eepower-4070]
+* **Calibration.** Instruments are calibrated periodically (industry
+  practice); Agilent's 4072B and 4073B prices included "one-time, on-site
+  calibration".[^eepower-4070]
 * **Chuck temperature control.** Hot and cold chucks for tests over
   temperature, such as the −60 °C to 300 °C range of the
   SUMMIT200,[^formfactor-summit200] and liquid nitrogen or helium for
