@@ -107,7 +107,7 @@ polisher, which is what this step needs.
 
 * **{ref}`Rotary multi-platen CMP polisher <machine-cmp-polisher>`**, 200 mm: Applied Materials Mirra (the
   200 mm-era multi-platen standard; SkyWater lists it for oxide and
-  nitride[^skw-01]), Ebara EPO-222/EPO-300, Strasbaugh 6EC,
+  nitride[^skw-01]), Ebara EPO-222/EPO-300, Strasbaugh 6DS-SP,
   SpeedFam-IPEC Avanti 472, Lam Teres.
 * **{ref}`Post-CMP brush scrubber <machine-post-cmp-cleaner>`** (OnTrak/Lam Synergy, SEZ/Lam Da Vinci).
 * **Film-thickness metrology** (Nanometrics, KLA-Tencor, Rudolph)
