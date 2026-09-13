@@ -117,9 +117,9 @@ maps and get an accurate picture of their manufacturing
 process".[^tencor-rs75-1995] Therma-Wave argued for measuring before any
 anneal, because the conventional check of implanting, "quickly annealing"
 and electrically testing monitor wafers takes time and because "annealing
-can conceal implanter malfunctions".[^tw-implant] The sheet resistances
-that decide whether a finished wafer passes are measured again, on test
-structures, at electrical test ({ref}`HPETEST <step-171>`).
+can conceal implanter malfunctions".[^tw-implant] Sheet resistance is
+typically measured again on test structures at electrical test (industry
+practice; {ref}`HPETEST <step-171>`).
 
 ## Representative 200 mm-era models
 
@@ -221,10 +221,11 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
   four-point probe; Therma-Wave presented the method for "low dose
   (E11-E12 ions/cm2)" implants that set threshold voltages.[^tw-implant]
   Because the signal "is also sensitive to channeling", a change of beam
-  angle on the tilted implants of this group would show in it (inference
+  angle on the tilted implants of this group (as their step pages describe)
+  would show in it (inference
   from the vendor statement).[^tw-implant]
 * **Wells.** The deep N-well, N-well and P-well pages name a four-point
-  probe, a thermal-wave monitor or both. For MeV implants the thermal-wave
+  probe, a thermal-wave monitor or both. For MeV implants (as the well step pages describe them) the thermal-wave
   sensitivity depends on how deep the ions go,[^tw-implant] so a
   sheet-resistance monitor after anneal is the more direct check (our
   reading).
@@ -246,9 +247,9 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
   {math}`t = \rho/R_s`,[^wiki-rs] which is why KLA-Tencor aimed the RS-100
   at "the metals, CMP, and diffusion modules".[^kla-rs100]
 * **Monitors and e-test.** In-line monitors run on blanket wafers; the
-  e-test sheet resistances of the PDK (for example N⁺ diffusion, local
-  interconnect and metal 3) are measured on test structures of the
-  finished wafer, and the public test tile described on the
+  sheet resistances the PDK tabulates (for example N⁺ diffusion, local
+  interconnect and metal 3) are, on this reference's reading, measured on
+  test structures of the finished wafer, and the public test tile described on the
   {ref}`HPETEST <step-171>` page carries van der Pauw and four-terminal
   structures, the two kinds Perloff et al. found interchangeable for
   uniformity measurements.[^perloff-1977]

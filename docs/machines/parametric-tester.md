@@ -6,8 +6,9 @@ wafer prober loads it, aligns it under a probe card whose needles land on
 the pads of test structures in the scribe lines or drop-in sites, and a
 parametric tester — source-measure units, a capacitance meter and a
 switching matrix under test-plan software — measures transistors,
-resistors, capacitors and chains site by site. The results decide whether
-the wafer is shipped and feed statistical process control. The same kind
+resistors, capacitors and chains site by site. In a fab of this kind the results decide
+whether the wafer is shipped and feed statistical process control
+(industry practice). The same kind
 of instrument, on a manual probe station, serves engineering work, and
 some step pages name electrical monitors earlier in the flow. This page
 describes the classes, lists representative 200 mm-era models, and then
@@ -127,9 +128,9 @@ Parametric data are used through statistics. Spanos surveys "standard SPC
 contamination control to "the monitoring of continuous process
 parameters".[^spanos-1992] ITRS 2001 asks integrated data management to
 merge "parametric data, and electrical test information" with defect data
-"to recognize process trends and excursions".[^itrs-2001-yield] The wafer
-leaves test with a disposition against limits, and the same data feed
-model extraction.[^cheng-1999]
+"to recognize process trends and excursions".[^itrs-2001-yield] In such a flow the
+wafer leaves test with a disposition against limits (industry practice),
+and the same data feed model extraction.[^cheng-1999]
 
 ## Representative 200 mm-era models
 
@@ -204,9 +205,9 @@ likely used at SkyWater"), as collected on the machines index:
 * **"HP 4062UX"** — *inference:* {ref}`CAPILD2 <step-150>`, {ref}`HPETEST <step-171>`
 * **"Engineering manual Probe Station"; sort and reliability-lab tools** — *named; no production prober, and the sort and reliability tools serve other purposes (inference):* {ref}`HPETEST <step-171>`
 
-**Published measurements of a SkyWater test tile.** The one public body
-of measured SKY130 parametric data was not collected by SkyWater's
-production test, on the repository's own account. Google's raw-data repository states that its
+**Published measurements of a SkyWater test tile.** Google's raw-data
+repository does not describe SkyWater's own production test or name its
+tester. It states that its
 initial data "was collected under contract by CoolCAD Electronics LLC
 using the manufacturing test tile created by SkyWater",[^raw-data-readme]
 of which "each of the Google MPW runs includes two
