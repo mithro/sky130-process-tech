@@ -3081,9 +3081,13 @@ step 004. Tier: deep dive.
 
 **KANG-1989** — J. S. Kang and D. K. Schroder, "Gettering in silicon",
 *Journal of Applied Physics* **65**(8), 2974–2985 (1989).
-<https://doi.org/10.1063/1.342714> A review of gettering mechanisms
-(intrinsic and extrinsic) that a bulk-wafer process relies on to keep
-metals away from junctions. Used on step 001 and the substrate category
+<https://doi.org/10.1063/1.342714> Gettering experiments: per the
+abstract, oxidation and oxynitridation "do not getter metallic
+impurities such as Au, Cu, Fe, and Ni while phosphorus (P) diffusion
+does"; P diffusion, Ar ion implantation and Ni-film gettering show an
+optimum gettering temperature; and a model based on impurity segregation
+is proposed. The abstract does not discuss oxygen-precipitate
+(intrinsic) gettering. Used on step 001 and the substrate category
 page. Tier: deep dive.
 Also used on the substrates material page.
 

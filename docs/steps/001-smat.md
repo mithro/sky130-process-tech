@@ -257,9 +257,10 @@ any product to a step.
 * Borghesi et al., *J. Appl. Phys.* 1995 — a review of oxygen
   precipitation in CZ silicon, the basis of internal {term}`gettering` and a
   driver of wafer warpage through the thermal budget.[^borghesi-1995]
-* Kang and Schroder, *J. Appl. Phys.* 1989 — a review of gettering
-  mechanisms (intrinsic and extrinsic) that a bulk-wafer process relies
-  on to keep metals away from junctions.[^kang-1989]
+* Kang and Schroder, *J. Appl. Phys.* 1989 — gettering experiments in
+  which phosphorus diffusion getters Au, Cu, Fe and Ni while oxidation
+  and oxynitridation do not, with a segregation model of the
+  mechanism.[^kang-1989]
 * Troutman, *Latchup in CMOS Technology* — the monograph on why
   substrate resistance matters and how epitaxial substrates, guard
   rings and wells suppress latch-up.[^troutman-1986]
