@@ -6,7 +6,9 @@ time: the photoresist that records the pattern, the anti-reflective
 coating and adhesion promoter under it, the developer that dissolves the
 exposed resist, the solvents that clean the wafer edge and back, the
 reticle that carries the pattern, and the lamps and laser gas of the
-exposure tools. Every one of SKY130's 36 mask steps uses most of them.
+exposure tools. A mask step typically uses most of them (industry
+practice), and the step pages read each of SKY130's 36 mask steps as
+doing so.
 This page describes the class in general, lists representative materials
 and the grades and standards they are bought to, and then says what
 SkyWater has published about lithography materials at its fab and which
@@ -121,9 +123,8 @@ in breathing, muscular paralysis and possibly death".[^wiki-tmah]
 ### Solvents
 
 Resists are cast from organic solvents, and the same solvents clean the
-wafer. "In the semiconductor industry, PGMEA is a commonly used solvent,
-primarily for the application of surface adherents such as
-bis(trimethylsilyl)amine (HMDS) on silicon wafers".[^wiki-pgmea] Spin
+wafer: "In the semiconductor industry, PGMEA is a commonly used
+solvent".[^wiki-pgmea] Spin
 coating leaves a thick rim: "Edge bead removal (EBR) is carried out,
 usually with a nozzle, to remove this extra resist as it could otherwise
 cause particulate contamination".[^wiki-litho] A Clariant patent uses
@@ -166,7 +167,10 @@ Resists, coatings and developers are proprietary formulations sold by
 product name; the families below are those the step pages describe.
 SKY130's products, thicknesses and bake and develop conditions are not
 public, apart from two photoresist thicknesses in the PDK's design
-assumptions.[^pdk-03]
+assumptions.[^pdk-03] The supplier product lines quoted below are
+current company statements about their catalogues; none says what
+SkyWater buys, although Tokyo Ohka Kogyo, JSR and Moses Lake Industries
+are among the suppliers SkyWater's filings name.[^sec-01][^sec-02]
 
 * **i-line positive resists.** DNQ/novolac, including thick grades for
   implant masks;[^wiki-resist] Tokyo Ohka Kogyo lists "g/i-Line
@@ -272,9 +276,11 @@ Steps:
 
 {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`TUNARCE <step-036>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`P1M <step-061>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>`
 
-All 36 mask steps name developer, edge-bead solvent and a reticle; the
-remaining step, {ref}`TUNARCE <step-036>`, is the etch that opens the
-anti-reflective coating under the {ref}`TUNM <step-035>` resist. Which
+All 36 mask steps name developer, edge-bead solvent and a reticle. The
+step list calls the remaining step, {ref}`TUNARCE <step-036>`, a
+"Tunnel mask ARC etch" and does not explain it;[^steps-sheet] its step
+page reads it as the etch that opens an anti-reflective coating under
+the {ref}`TUNM <step-035>` resist. Which
 mask steps name i-line or KrF resist, a BARC, HMDS, or laser gas or
 lamps follows each step page's reading, as recorded in the index rows.
 
@@ -325,23 +331,24 @@ conditions of their own.
 * **Resist thickness.** The PDK assumes 1.14 µm of photoresist in
   general and 0.3 µm for the HV tip implants;[^pdk-03] the
   {ref}`HVNTM <step-068>` page reads the thin film as a thin-viscosity
-  i-line resist, and the deep-well and top-metal masks
-  ({ref}`DNM <step-007>`, {ref}`MM5 <step-162>`) call for thick
-  grades.
+  i-line resist, and the {ref}`DNM <step-007>` and
+  {ref}`MM5 <step-162>` pages read thick grades for the deep-well and
+  top-metal masks (inference).
 * **Resist as an implant mask.** Resist exposed to high-dose implants
   forms a crust that the strip steps must remove
   ({ref}`category-strip`); Norton et al. compared i-line and DUV resists
   under high-current implantation.[^norton-2000]
 * **HMDS on metal.** {ref}`MM1 <step-113>` and {ref}`CAPM <step-137>`
-  leave out HMDS because it is not needed on metal, and
+  leave out HMDS, on those pages' reasoning that it is not needed on
+  metal, and
   {ref}`MM3 <step-139>` and {ref}`MM4 <step-154>` list an organic BARC
   without HMDS; the {ref}`materials index <materials-open-questions>`
   records that the reason does not clearly apply at the capacitor
   levels.
-* **An anti-reflective coating that is etched.**
-  {ref}`TUNARCE <step-036>` opens the ARC under the tunnel-window resist
-  before the implants and wet etch that the same resist
-  serves.[^wiki-arc]
+* **An anti-reflective coating that is etched.** The step list does not
+  explain {ref}`TUNARCE <step-036>` beyond its name;[^steps-sheet] its
+  step page reads it as opening an ARC under the tunnel-window resist
+  before the implants and wet etch that resist serves.
 * **Reticle types.** The masks page reads the three plates whose type
   the step list records as attenuated phase-shift masks for vias 2 and 3
   and a binary mask for via 4;[^steps-sheet] the other reticles' types
@@ -355,7 +362,7 @@ conditions of their own.
   bakes and develops.
 * {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
   exposure tools and their light sources.
-* {ref}`masks-index` — the 36 masks and their reticles.
+* {ref}`masks-index` — the 36 mask steps and their reticles.
 * {ref}`category-strip` — removing the resist after etch or implant.
 * {ref}`materials-index` — all consumable classes.
 
@@ -486,7 +493,8 @@ conditions of their own.
     bead remover for photoresists*, US 5,814,433 A, priority 1996-05-17,
     granted 1998-09-29. <https://patents.google.com/patent/US5814433A/en>
 [^semi-p1]: SEMI, *SEMI P1 — Specification for Hard Surface Photomask
-    Substrates*, SEMI Standards store listing.
+    Substrates*, SEMI Standards store listing (revision P1-0708E,
+    inactive), accessed 2026-09-13.
     <https://store-us.semi.org/products/p00100-semi-p1-specification-for-hard-surface-photomask-substrates>
 [^semi-p5]: SEMI, *SEMI P5 — Specification for Pellicles*, SEMI
     Standards store listing (revision P5-0416, reapproved 1221), accessed
