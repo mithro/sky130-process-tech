@@ -7,7 +7,7 @@ It generates an oxygen-based plasma away from the wafer and lets only
 the neutral reactive species reach it, so that the resist is oxidised
 without the ion bombardment and charging that a plasma in contact with
 the wafer would bring. It is one of the most heavily used tools in a
-fab: a strip follows every masked implant and every masked etch. This
+fab: a strip follows nearly every masked implant and etch. This
 page describes the class in general, lists representative 200 mm-era
 models, and then says what SkyWater has published about its own tools
 of this class and which SKY130 steps this reference assigns to it. The
@@ -21,7 +21,7 @@ chemistry of ashing and of the implant crust is on the
 | Gases | O₂ and N₂, with forming gas, H₂, CF₄ or water vapour for particular residues; 10 % N₂ doubled both the atomic-oxygen density and the ashing rate in Fujimura et al.'s downstream study.[^fujimura-1990] |
 | Wafer temperature | Lamp or platen heated: "Platen Temperature: 100–300°C" on the L3510;[^gasonics-l3510] "150-300" °C (typical) on the Aura 1000, with "Three 1KW lamps".[^gasonics-aura] |
 | Wafer handling and throughput | Single wafer or two wafers per chamber: the Aura 1000 is a "single-wafer photoresist asher" at "Up to 90 wph";[^gasonics-aura] on the Aspen II Strip "Each chamber processes two wafers at a time", at 90–130 wafers per hour with one chamber.[^mattson-2001] |
-| 200 mm era | GaSonics Aura and L3510 (the L3510 for 75–200 mm wafers)[^gasonics-l3510][^gasonics-aura] and PEP Iridia lines, continued by Novellus after it bought GaSonics;[^sst-novellus-spec-2006] Mattson Aspen II Strip.[^mattson-2001] |
+| 200 mm era | GaSonics Aura (the Aura 1000 for 75–150 mm wafers) and L3510 (75–200 mm)[^gasonics-l3510][^gasonics-aura] and PEP Iridia lines, continued by Novellus after it bought GaSonics;[^sst-novellus-spec-2006] Mattson Aspen II Strip.[^mattson-2001] |
 | SkyWater-listed tool | Under "Resist removal/cleans": "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C", "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C"[^skw-01] |
 | SKY130 steps | 14 steps, plus 1 where the class is an alternative and 22 where it strips the resist after an etch; see {ref}`SKY130 steps assigned to this class <machine-downstream-plasma-asher-steps>` |
 
@@ -87,9 +87,10 @@ Resist that has masked a high-dose implant carbonises; Fujimura et al.
 found that "A decrease in the etching rate of the high-dose
 ion-implanted resist was caused by carbonization", that residues were
 "oxide of the implanted species", and developed a two-step process of
-"H₂ RIE and downstream ashing".[^fujimura-1989] Horsky relates the change
-to resist amorphisation above a critical dose, which he measured at
-4.5 × 10¹⁴ cm⁻² for a 150 kV phosphorus implant.[^horsky-1998] Water
+"H₂ RIE and downstream ashing".[^fujimura-1989] Horsky traced an abrupt
+change in resist outgassing to amorphisation above a critical dose,
+which he put at 4.5 × 10¹⁴ cm⁻² for a 150 kV phosphorus source/drain
+implant.[^horsky-1998] Water
 vapour protects the gate oxide from the resist's sodium: an O₂ + H₂O
 downstream ash left sodium in the oxide "nearly the same as that in the
 SiO₂ layer as grown", most effectively at 40–60 % H₂O.[^fujimura-1994]
@@ -117,7 +118,7 @@ consumed".[^wiki-ash]
 
 * **GaSonics International** ("Photoresist removal and wafer cleaning
   processes" among its applications in 2000[^gasonics-2000]). The Aura
-  1000, with ">320 systems in production" in a reseller's
+  1000 for 75–150 mm wafers, with ">320 systems in production" in a reseller's
   description;[^gasonics-aura] the L3510, "a production-proven downstream
   plasma photoresist ashing system" for 75–200 mm wafers;[^gasonics-l3510]
   and the PEP Iridia line, whose modules pair microwave and RF
@@ -156,7 +157,8 @@ Read term by term: the PEP entry is a remote microwave plasma with N₂
 and O₂ from 120 °C to 270 °C; the Iridia entry adds H₂, CF₄, NH₃ and
 H₂/N₂ and reaches down to 40 °C; the Aspen entry is an RF plasma with O₂,
 CF₄ and hydrogen in nitrogen, to 250 °C.[^skw-01] SkyWater spells the
-vendor "Gasonic" and writes "Aspen2"; it names no vendor for the
+vendor "Gasonic" and writes "Aspen2", which we read as the Aspen II
+Strip (an inference from the name); it names no vendor for the
 Iridia. A trade report lists the "PEP Iridia" among the GaSonics lines
 Novellus kept,[^sst-novellus-spec-2006] so we read the PEP and Iridia
 entries as GaSonics tools, possibly of one family; that is an inference.
@@ -238,14 +240,17 @@ SKY130 conditions of their own. SKY130's strip recipes are not public.
 * **Crust from deep implants.** The {ref}`DNIS <step-009>` and
   {ref}`LVTPIS <step-021>` pages describe a crust from MeV implants
   through thick resist; implant outgassing studies relate resist
-  change to dose, energy and thickness,[^horsky-1998][^lee-1996] but no
+  outgassing to dose, energy, beam current and thickness,[^horsky-1998][^lee-1996] but no
   public source ties a crust thickness to these implants.
 * **Fluorine in the ash.** CF₄ in a downstream plasma etches nitride
   and oxide,[^kastenmeier-1996] and the {ref}`LICM1E <step-094>` page
   reads the post-etch polymer clean on the Aspen without its CF₄, which
   would attack the silicon at the contact floor (inference).
-* **Strips after etch.** After every masked etch the step pages name
-  the three ashers for the resist strip; after a metal etch the strip
+* **Strips after etch.** After the masked etches the step pages name
+  the three ashers for the resist strip, except after
+  {ref}`TUNARCE <step-036>`, whose resist stays on for the
+  {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants and the
+  {ref}`TUNME <step-039>` wet etch; after a metal etch the strip
   also removes chlorine-bearing polymer, a job that some metal-etch platforms do in an
   integrated downstream chamber.[^lam-9600se-stripper-1998][^amat-300-etch-2000]
 * **The organic ARC option.** The {ref}`TUNARCE <step-036>` page names
