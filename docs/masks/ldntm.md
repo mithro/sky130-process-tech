@@ -369,8 +369,8 @@ HV tip and the other two tip masks.[^pdk-03] For the plate the published figures
   and halo engineering.[^txt-04]
 * Mack, *Fundamental Principles of Optical Lithography* — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — overlay budgets and
-  non-critical-layer tool choice.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
