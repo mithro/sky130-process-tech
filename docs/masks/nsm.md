@@ -107,7 +107,8 @@ turns `nsm` into the plate. Rule x.15a confines "Drawn compatible, mask,
 and waffle-drop layers" to test modules, the space "inside areaid:sl
 (i.e., between the outer and inner areaid:sl edges, but not in the die)"
 and the frame (flag P),[^pdk-periph] so `cnsm` shapes may sit in the seal
-ring itself, and a design draws `nsm` (our reading of x.15a).
+ring itself, and a design draws `nsm` (our reading of x.15a); with no add
+or drop purpose, rule x.9's "serifs" have no `cnsm` layer to sit on.
 
 The PDK's *Error Messages* page, which describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance criteria
@@ -298,6 +299,7 @@ DRC. It should be used as a guideline only."[^pdk-periph]
 | nsm.3b | "Min spacing between areaid.dt to diff.dg, tap.dg, fom.dy, cfom.dg, cfom.mk, poly.dg, p1m.mk, li1.dg, cli1m.mk, metX.dg (X=1 to 5) and cmmX.mk (X=1 to 5). Exempt the following from the check: (a) blankings in the frame (rule uses areaid.dt for exemption)" | 3.000 µm |
 | x.1b | "Data for SKY130 layout and mask on all layers except those mentioned in 1a must be on a grid of mm (except inside Seal ring)" | 0.005 (unit "mm") |
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
+| x.9 | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. PMM/PDMM inside areaid:sl are excluded." | N/A |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), or inside areaid:sl (i.e., between the outer and inner areaid:sl edges, but not in the die) or inside areaid:ft (i.e., frame, blankings). Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
 | x.19 | "Lower left corner of the seal ring should be at origin i.e (0,0)" | — |
 | x.23c | "areaid.sl must not overlap tap, poly, li1 and metX" | — |
@@ -349,7 +351,7 @@ from nsm.1 and nsm.2), kept 1.000 µm from all wiring.
 * SkyWater PDK, *Criteria & Assumptions* — `NSMCD`/`NSMCDSP`,
   `NSMKeepout`, `NSMKeepout_3um`, `scribew` and `TBOWINGSEAL`.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — the `nsm` rules and function line,
-  x.1b, x.7, x.15a, x.19, x.23c, x.23e, x.26, x.28 and the flag
+  x.1b, x.7, x.9, x.15a, x.19, x.23c, x.23e, x.26, x.28 and the flag
   legend.[^pdk-periph]
 * SkyWater PDK, *Error Messages* page — the `nsm`, seal-ring, scribe and
   `cnsm.nikon` checks.[^pdk-errors]

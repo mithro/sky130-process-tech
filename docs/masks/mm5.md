@@ -110,7 +110,8 @@ drawn layer to the plate. Rule x.15a confines "Drawn compatible, mask,
 and waffle-drop layers" to test modules, seal ring and frame, "Exception:
 FOM/P1M/Metal waffle drop are allowed inside the die" (flag P),[^pdk-periph]
 so a die may carry `cmm5` waffle-drop shapes as well as `met5` (our
-reading). Unlike metals 1 to 4, metal 5 has no waffle-drop density rule
+reading); with no add or drop purpose, rule x.9's "serifs" have no
+`cmm5` layer to sit on. Unlike metals 1 to 4, metal 5 has no waffle-drop density rule
 in the periphery rules, and the Error Messages page lists waffle-drop
 density checks for metals 1 to 4 (`m1.x.1` to `m4.x.1`) and none for
 metal 5;[^pdk-periph][^pdk-errors] Table 4's "Waffling / Pattern Density"
@@ -327,6 +328,7 @@ as a guideline only."[^pdk-periph]
 | nsm.3b | "Min spacing between areaid.dt to […] metX.dg (X=1 to 5) and cmmX.mk (X=1 to 5). […]" | 3.000 µm |
 | x.1b | "Data for SKY130 layout and mask on all layers except those mentioned in 1a must be on a grid of mm (except inside Seal ring)" | 0.005 (unit "mm") |
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
+| x.9 | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. PMM/PDMM inside areaid:sl are excluded." | N/A |
 | x.12d | "Spacing of areaid.mt to huge_metX (Exempt met5.dg)" (F) | — |
 | x.12e | "Enclosure of huge_metX by areaid.mt (Exempt met5.dg)" (F) | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
@@ -385,7 +387,7 @@ them.
   antenna thicknesses, `MMPDrange`, `PD_FrameWP`, `HugeM` and
   `pmmM5RDLpadEnc`.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — the `m5` rules, pad.3, nsm.3–nsm.3b,
-  x.1b, x.7, x.12d, x.12e, x.15a, x.22, x.23c and the flag
+  x.1b, x.7, x.9, x.12d, x.12e, x.15a, x.22, x.23c and the flag
   legend.[^pdk-periph]
 * SkyWater PDK, *Error Messages* page — the `m5`, pad, scribe and
   `cmm5.nikon` checks.[^pdk-errors]
