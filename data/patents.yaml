@@ -5271,6 +5271,8 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-FORCEFILL-ELECTROTECH.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5527561A/en
+  notes:
+  - The title's "filing" (for "filling") is as shown by Google Patents; the inventory entry marks it [sic].
 - id: GP25202080
   family:
     source: Google Patents family ID
@@ -12085,6 +12087,9 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-BILLI-GENUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5821589A/en
+  notes:
+  - Google Patents shows the title with "laternal isolation"; the inventory entry PAT-BILLI-GENUS gives
+    "lateral isolation"; the printed patent was not checked.
 - id: GP25239372
   family:
     source: Google Patents family ID
@@ -13841,6 +13846,9 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-WELL-HYNIX.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6455402B2/en
+  notes:
+  - Google Patents shows the title as "Method of forming retrograde doping file in twin well CMOS device";
+    the inventory entry PAT-WELL-HYNIX gives "doping profile"; the printed patent was not checked.
 - id: GP23113681
   family:
     source: Google Patents family ID
