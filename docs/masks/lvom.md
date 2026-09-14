@@ -378,8 +378,8 @@ from any active area.
   resolution.[^wiki-litho]
 * Mack, *Fundamental Principles of Optical Lithography* — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — overlay budgets and the tool
-  choice for non-critical levels.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 

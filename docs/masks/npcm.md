@@ -369,8 +369,8 @@ gates.
   resolution equation.[^wiki-litho]
 * Mack, *Fundamental Principles of Optical Lithography* — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — overlay budgets and tool
-  choice.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — DUV lithography
   of the 0.25–0.13 µm generations.[^txt-05]
 
