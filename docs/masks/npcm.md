@@ -72,7 +72,8 @@ laid down at {ref}`GATENIT <step-058>` and {ref}`POC <step-059>` and,
 on the `SPE` page's reading, partly consumed at {ref}`SPE <step-077>`;
 the contact holes, which {ref}`mask-licm1` prints much later; or the
 doping of the opened poly, which on the step pages' readings comes from
-the source/drain implants through the {ref}`PSDM <step-081>` and {ref}`NSDM <step-085>` resists.
+the source/drain implants through the {ref}`PSDM <mask-psdm>` and
+{ref}`NSDM <step-085>` resists.
 
 ## Drawn layers and derivation
 
@@ -310,7 +311,8 @@ gates.
   cap the cut opens.
 * {ref}`mask-p1m` — the poly pattern the cut is placed against;
   {ref}`mask-licm1` — the contact mask whose poly contacts land in the
-  cuts.
+  cuts; {ref}`mask-psdm` — the P+ implant mask whose implant reaches the
+  opened resistor heads.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the tables this page's plate facts are taken from.
 * {ref}`machine-duv-krf-stepper` and {ref}`machine-i-line-stepper` — the
