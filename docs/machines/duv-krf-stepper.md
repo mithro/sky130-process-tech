@@ -345,6 +345,8 @@ settings and resists per layer are not public.
 * {ref}`mask-mm3` and {ref}`mask-mm4` — per-mask pages for the metal-3 and
   metal-4 masks, for which the step pages leave the class open between
   this one and i-line.
+* {ref}`mask-rpm`, {ref}`mask-rrpm` and {ref}`mask-urpm` — per-mask pages
+  for the three poly-resistor masks, for which it is the alternative.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, anti-reflective coatings, developer

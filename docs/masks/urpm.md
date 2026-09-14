@@ -202,9 +202,8 @@ SkyWater's resist is not public; the consumables are on the
 **Pattern transfer.** Nothing is etched through this resist. On the step
 pages' readings the pattern is transferred into the 2000 Ω/sq bodies as
 dopant by {ref}`UPRI <step-056>`, on the
-{ref}`medium-current implanter <machine-medium-current-implanter>` class
-with the {ref}`high-current implanter <machine-high-current-implanter>`
-as the alternative, and the resist is removed at
+{ref}`medium-current implanter <machine-medium-current-implanter>` class,
+and the resist is removed at
 {ref}`UPRIS <step-057>` on the
 {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
 {ref}`wet bench <machine-wet-bench>` classes, which also serves as the

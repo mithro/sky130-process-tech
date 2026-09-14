@@ -355,7 +355,7 @@ implants.[^pdk-03]
 * {ref}`mask-tunm`, {ref}`mask-onom`, {ref}`mask-lvom`, {ref}`mask-rpm`,
   {ref}`mask-rrpm` and {ref}`mask-urpm` — per-mask pages for the tunnel,
   ONO, low-voltage oxide and three poly-resistor masks, assigned to this
-  class.
+  class, with KrF as the alternative for the three resistor masks.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, developer and exposure-tool
