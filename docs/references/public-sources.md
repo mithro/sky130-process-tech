@@ -2841,7 +2841,11 @@ Also used on the NTM, PSDM and NSDM mask pages.
 **FUJIMURA-1989** — S. Fujimura, J. Konno, K. Hikazutani and H. Yano,
 *"Ashing of Ion-Implanted Resist Layer"*, Japanese Journal of Applied
 Physics, vol. 28, no. 10R, p. 2130, 1989, DOI 10.1143/JJAP.28.2130. The
-crust and popping mechanism of implanted resist, measured.
+chemical structure of the carbonised layer that high-dose implantation
+forms in resist (solid NMR), the residues of O₂ plasma ashing, mainly
+oxides of the implanted species (XPS), and a two-step H₂ RIE and
+downstream ashing process (abstract); the abstract does not discuss
+popping.
 Also used on the downstream plasma asher and wet bench and spray
 processor pages.
 Tier: deep

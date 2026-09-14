@@ -200,8 +200,9 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ### Deep dive
 
-* Fujimura et al. (Fujitsu), *JJAP* 1989 — the crust-and-popping
-  mechanism.[^fujimura-1989]
+* Fujimura et al. (Fujitsu), *JJAP* 1989 — the carbonised layer of
+  high-dose implanted resist and a two-step ashing process
+  (abstract).[^fujimura-1989]
 * Fujimura et al. (Fujitsu), *JJAP* 1990 — nitrogen in downstream
   ashing.[^fujimura-1990]
 * Fujimura et al. (Fujitsu), *JVST B* 1994 — O₂+H₂O ashing without
