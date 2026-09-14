@@ -235,8 +235,8 @@ fab:
   of proximity effects for analogue layout.[^drennan-2006]
 * Mack, *Fundamental Principles of Optical Lithography* — k₁ and
   resist-profile fundamentals behind the i-line assignment.[^mack-2007]
-* Levinson, *Principles of Lithography* — overlay budgets and tool
-  choice for non-critical layers.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — multiple
   thresholds made with masked Vt-adjust implants.[^pat-vt-rrr]
 * Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds by
