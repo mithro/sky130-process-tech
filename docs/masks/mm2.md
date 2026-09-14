@@ -228,9 +228,10 @@ the {ref}`lithography materials <material-lithography-materials>` page.
 wafer topography varies according to pattern density",[^kahng-2008] and
 Stine et al. found pattern density "a strongly dominant factor" in
 interlevel-dielectric polishing.[^stine-1998] The PDK's "Oxide Bias for
-MM2" of 0.6 (`BiasMM2`) sits with the pattern-density criteria in Table
-4;[^pdk-03] the {term}`oxide bias` glossary entry records the step pages'
-reading of it.
+MM2" of 0.6 (`BiasMM2`) sits in Table 4's first block, headed "Material
+Thicknesses" with a column headed "Value (um)", not with its "Waffling /
+Pattern Density" criteria;[^pdk-03] the {term}`oxide bias` glossary entry
+records the step pages' reading of it.
 
 **Pattern transfer.** On the step pages' readings the resist pattern is
 transferred by {ref}`MM2E <step-125>`, a chlorine etch of the whole

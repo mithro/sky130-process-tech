@@ -223,9 +223,11 @@ oxide polish, not the lithography. Kahng and Samadi note that "Post-CMP
 wafer topography varies according to pattern density",[^kahng-2008] and
 Stine et al. found pattern density "a strongly dominant factor" in
 interlevel-dielectric polishing.[^stine-1998] The PDK's "Oxide Bias for
-MM1" of 0.6 (`BiasMM1`) sits with the pattern-density criteria in Table
-4;[^pdk-03] the {term}`oxide bias` glossary entry records the step pages'
-reading of it as a density-related polish allowance.
+MM1" of 0.6 (`BiasMM1`) sits in Table 4's first block, headed "Material
+Thicknesses" with a column headed "Value (um)", not with its "Waffling /
+Pattern Density" criteria;[^pdk-03] the {term}`oxide bias` glossary entry
+records the step pages' reading of it as a density-related polish
+allowance, which the PDK does not state.
 
 **Pattern transfer.** On the step pages' readings the resist pattern is
 transferred by {ref}`MM1E <step-114>`, a chlorine etch of the whole metal
