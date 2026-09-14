@@ -41,8 +41,8 @@ FETs".[^pdk-06][^pdk-periph] The devices are the memory transistors of
 the SONOS cells, of which the PDK says: "The SKY130 process currently
 supports two SONOS flash memory cells", an "original cell" and a "“star”
 cell" whose "cell size is approximately 25% smaller than the original
-cell".[^pdk-07] The rules place each window tightly around one memory
-gate: `tunm` extends 0.095 beyond the poly-over-diffusion gate (tunm.3),
+cell".[^pdk-07] The rules place the windows tightly around the memory
+gates: `tunm` extends 0.095 beyond the poly-over-diffusion gate (tunm.3),
 keeps 0.095 µm from gates outside it (tunm.4), may not be straddled by a
 gate (tunm.5), must lie in deep N-well (tunm.6a) and must be enclosed by
 `areaid.ce` (tunm.8), the "Memory (SRAM) core cell identifier".[^pdk-periph][^pdk-06]
@@ -62,9 +62,11 @@ two "NV SONOS fet" rows and the "NV SONOS Diode" row.[^pdk-06] It marks
 rows, and `+` ("Layer allowed to overlap") in the other 31, among them
 the poly and local-interconnect resistors, the capacitors, the inductors
 and most diode rows.[^pdk-06] We read the table as tying the plate's
-created data to the memory transistor alone: the "Flash npass" select
-transistor of the cell does not receive them (our reading of the rows;
-the table does not explain its marks).
+created data to the SONOS devices — the memory transistor rows and the NV
+SONOS diode — and not to the two "Flash npass" rows, which we take to be
+the cell's pass transistor, the "NPASS gate" that the
+{ref}`DEPI <step-038>` page reads as the second transistor of the 2-T
+cell (our reading of the rows; the table does not explain its marks).
 
 What the mask does not define is also worth stating. On the step pages'
 readings the {term}`ONO` stack is confined to the cells by a separate
@@ -199,7 +201,12 @@ patent's flow, not a statement about SKY130.
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998]
 at 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
-NA 0.60 (our arithmetic), so the 0.41 µm windows lie just above it.
+NA 0.60 (our arithmetic), so as line-space features the 0.41 µm windows
+would lie just above it. For contacts the abstract gives 0.75 (lambda)
+/NA, about 0.57 µm at NA 0.48 and 0.46 µm at NA 0.60 (our arithmetic),
+and it finds dark-field spaces more sensitive than light-field lines, so
+if the windows print like holes their mask error factor would already be
+above unity (inference).
 
 **Resist.** On the step pages' reading the resist sits on an organic
 anti-reflective coating — the separate ARC etch at

@@ -40,9 +40,11 @@ with a tunnel oxide, a nitride or oxynitride trapping layer and a
 blocking oxide, and the {ref}`ONOM <step-041>` resist keeps that stack
 only as islands over the memory transistors, each enclosing a tunnel
 window opened at {ref}`TUNM <step-035>` (inference on the step page).
-A Cypress patent gives the order of magnitude of such a stack: a tunnel
-oxide "less than about 25 Å", a nitride "less than about 200 Å …
-preferably less than about 100 Å" and a top oxide "less than about
+A Cypress patent gives the order of magnitude of such a stack: in one
+embodiment a tunnel dielectric of "less than about 25 Å" and a charge
+storing layer of "less than about 200 Å, preferably less than about
+150 Å, more preferably less than about 100 Å", and in another a top
+insulating layer of "about 100 Å, preferably less than about
 50 Å";[^pat-01] SKY130's thicknesses are not public.
 
 The PDK's mask generation table, Table F2b, marks the `ONOM` column
