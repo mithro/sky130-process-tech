@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1681
+written page has exactly one entry here; the inventory holds 1683
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -75,7 +75,7 @@ Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the substrates material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -104,6 +104,7 @@ metal5/passivation region). Tier: cross-check.
 Also used on the PECVD, HDP-CVD and PVD cluster tool pages.
 Also used on the sputter targets material page.
 Also used on the substrates material page.
+Also used on the LI1M mask page.
 
 **PDK-05** — *Masks* page and `masks.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -114,7 +115,7 @@ LVOM, RPM, NPCM, P1M, LICM1, LI1M, CTM1, MM1–MM5, VIM, VIM2–VIM4, NSM,
 PDM, CU1M, PMM2, …). This is the public basis for the mask index and
 for the order of the lithography steps. Tier: cross-check.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **PDK-06** — *Layers Reference* and `gds_layers.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
@@ -123,7 +124,7 @@ GDS layer/purpose numbers and the process meaning of each drawn layer
 (e.g. `vhvi` "used to identify nodes that operate at 12V nominal (16V
 max)"). No thicknesses. Tier: cross-check.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **PDK-07** — *Device Details* pages and per-device cross-section drawings.
 <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>;
@@ -195,7 +196,7 @@ dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
 poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
 Tier: cross-check.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **PDK-HV** — *High Voltage Methodology* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>.
@@ -392,7 +393,7 @@ or scanner pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -423,7 +424,7 @@ IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
 on the mask index, the HVTPM step page and the sky130B ReRAM overview.
 Tier: cross-check.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 ## 3. SkyWater Technology corporate sources
 
@@ -520,7 +521,7 @@ Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
 Also used on the etch and chamber-clean gases material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -1392,7 +1393,7 @@ measurement precision to process tolerance metric" "somewhat relaxed".
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
@@ -1790,7 +1791,7 @@ absorber and pellicles. Used on the lithography category page. Tier:
 high-level.
 Also used on the lithography materials material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
 <https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
@@ -1830,7 +1831,7 @@ Tier: high-level.
 proximity correction of mask shapes. Used on the lithography category
 page. Tier: high-level.
 Also used on the P1M mask page.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **WIKI-PECVD** — Wikipedia, *Plasma-enhanced chemical vapor deposition*.
 <https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>
@@ -2737,7 +2738,7 @@ Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
@@ -2745,7 +2746,7 @@ Overlay budgets and non-critical-layer tool choice.
 Also used on the i-line stepper or scanner page.
 Tier: deep dive.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **ROCHE-1985** — D. Roche, J. F. Michaud and M. Bruel, *"Outgassing of
 Photoresist During Ion Implantation"*, MRS Proceedings, vol. 45, 1985,
@@ -3312,6 +3313,7 @@ proximity correction method of the kind applied to active-layer
 reticles. Used on step 004 and the lithography category page. Tier: deep
 dive.
 Also used on the P1M mask page.
+Also used on the LI1M mask page.
 
 **PEEV-1990** — G. Peev, L. Zambov and Y. Yanakiev, "Kinetics of the
 chemical reaction between dichlorosilane and ammonia during silicon
@@ -4533,6 +4535,7 @@ modeling for proximity correction", *Proc. SPIE* **2197**, 371–376
 (1994). <https://doi.org/10.1117/12.175431> Model-based ("behaviour
 modelling") proximity correction. Used on the lithography category page.
 Tier: deep dive.
+Also used on the LI1M mask page.
 
 **STARIKOV-1992** — A. Starikov, "Accuracy of overlay measurements: tool
 and mark asymmetry effects", *Optical Engineering* **31**(6), 1298
@@ -4603,7 +4606,7 @@ lithography category page.
 Also used on the DUV (KrF, 248 nm) stepper or scanner page.
 Tier: cross-check.
 Also used on the P1M mask page.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **ASML-800** — ASML, *ASML introduces new KrF Step & Scan system* (PAS
 5500/800), press release, 2001-01-31.
@@ -5897,6 +5900,7 @@ deep-UV lithography", *Proc. SPIE* **3334**, Optical Microlithography
 XI, 337 (1998). <https://doi.org/10.1117/12.310763> An inorganic ARC
 process for deep-UV in production. Used on steps 058 and 059. Tier: deep
 dive.
+Also used on the LI1M mask page.
 
 **HINSBERG-1992** — W. D. Hinsberg, S. A. MacDonald, N. J. Clecak and C.
 D. Snyder, "Quantitation of airborne chemical contamination of
@@ -6047,6 +6051,7 @@ Microlithography VII, 770–780 (1994).
 <https://doi.org/10.1117/12.175469> Substrate contamination effects on
 chemically amplified DUV resists, the case for an inert cap under the
 resist. Used on step 059. Tier: deep dive.
+Also used on the LI1M mask page.
 
 **VALLIER-2003** — L. Vallier, J. Foucher, X. Detter, E. Pargon, O.
 Joubert, G. Cunge and T. Lill, "Chemical topography analyses of silicon
@@ -6664,6 +6669,7 @@ technology for VLSI", *IEEE Transactions on Electron Devices* **34**(3),
 local-interconnect scheme in which a nitride over poly is opened only
 where contacts are made. Used on steps 078, 079, 101, 102 and 103. Tier:
 deep dive.
+Also used on the LI1M mask page.
 
 **TSANG-1982** — P. J. Tsang, S. Ogura, W. W. Walker, J. F. Shepard and
 D. L. Critchlow, "Fabrication of high-performance LDDFET's with oxide
@@ -7088,6 +7094,7 @@ Also used on the LICM1 mask page.
 calculation for OPC", *Proc. SPIE* **2621**, 534–545 (1995).
 <https://doi.org/10.1117/12.228208> Rules-based, model-based and fast
 aerial-image OPC. Used on steps 093 and 102. Tier: deep dive.
+Also used on the LI1M mask page.
 
 **DOEMLING-1996** — M. F. Doemling, N. R. Rueger and G. S. Oehrlein,
 "Observation of inverse reactive ion etching lag for silicon dioxide
@@ -14403,7 +14410,7 @@ contacts", dark-field spaces are more sensitive than light-field lines,
 and attenuated PSMs behave like chrome-on-glass masks. Used on the DNM
 mask page. Tier: deep dive.
 Also used on the P1M and VIM4 mask pages.
-Also used on the LICM1 mask page.
+Also used on the LICM1 and LI1M mask pages.
 
 **RIZVI-2005** — S. Rizvi (ed.), *Handbook of Photomask Manufacturing
 Technology*, CRC Press, 2005, ISBN 978-1-4200-2878-2.
@@ -14459,6 +14466,7 @@ PROLITH/2 simulation study of the mask error factor against pitch,
 linewidth, OPC, focus, aberrations, partial coherence and resist, carried
 through process windows and CD budgets to reticle procurement
 specifications. Used on the P1M mask page. Tier: deep dive.
+Also used on the LI1M mask page.
 
 **KUIJTEN-1998** — J. P. Kuijten, F. Duray and T. der Kinderen, "Reticle
 contributions to CD uniformity for 0.25-μm DUV lithography", *Proc.
@@ -14477,6 +14485,7 @@ geometries on ASIC gate levels, which "reduces the wafer process
 latitude and in some cases even eliminates the level-to-level overlay
 margin", and its reduction by mask compensation and modified
 illumination. Used on the P1M mask page. Tier: deep dive.
+Also used on the LI1M mask page.
 
 **ZHENG-2003** — S. Zheng, G. Zhang, C. Wang and S. F. Detweiler,
 "Characterization of optical proximity matching for 130-nm node gate
@@ -14537,6 +14546,7 @@ nominal and do not apply to butting edges or corners") and Table F4,
 each pair of conducting layers: "Licon1" from `li1` to diff and tap,
 "Licon1 AND Npc" from `li1` to poly, "Mcon" from met1 to `li1` and "Via"
 from met2 to met1. Used on the LICM1 mask page. Tier: cross-check.
+Also used on the LI1M mask page.
 
 **CHOO-2000** — L. C. Choo, O. Park, M. J. Sack and S. C. Tam,
 "Integration of attenuated phase-shift mask to 0.13-μm technology
@@ -14550,6 +14560,30 @@ mask with 0.16, 0.18 and 0.20 µm hole patterns biased by 0.04, 0.06 and
 0.08 µm was exposed at moderate and low partial coherence, with the
 effect on the mask error enhancement factor discussed. Used on the LICM1
 mask page. Tier: deep dive.
+
+#### LI1M mask page (first cited there)
+
+**SHI-2002** — X. Shi, S. Hsu, J. F. Chen, C. M. Hsu, R. J. Socha and
+M. V. Dusa, "Understanding the forbidden pitch phenomenon and assist
+feature placement", *Proc. SPIE* **4689**, Metrology, Inspection, and
+Process Control for Microlithography XVI, 985 (2002).
+<https://doi.org/10.1117/12.473427> Shows that the change of a main
+feature's CD and exposure latitude with its neighbours is a consequence
+of light-field interference; "the forbidden pitch lies in the location
+where the field produced by the neighboring features interferes with the
+field of the main feature destructively", which gives a basis for
+illumination design and scattering-bar placement. Used on the LI1M mask
+page. Tier: deep dive.
+
+**SEKIGUCHI-1998** — A. Sekiguchi, F. Uesawa, K. Takeuchi and T. Oda,
+"Influence of underlayer reflection on optical proximity effects in
+sub-quarter-micron lithography", *Proc. SPIE* **3334**, Optical
+Microlithography XI, 347 (1998). <https://doi.org/10.1117/12.310764>
+Relates the optical proximity effect to underlayer reflection for
+negative and positive resists: the effect of underlayer reflection on
+the isolated–dense CD bias is significant for the negative resist and
+small for the positive resist, for which the partial coherence is the
+lever. Used on the LI1M mask page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
