@@ -77,4 +77,5 @@ tool to a particular step graded separately; the
 :maxdepth: 1
 
 public-sources
+papers/index
 ```
