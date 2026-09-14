@@ -17877,10 +17877,10 @@ families:
   expiry:
     date: 2023-03-06
     estimated: true
-    basis: 'not bounded from the records retrieved: US7176094B2; latest estimate US7176094B2 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of JP2003309260A (estimated: 20 years from the filing date shown; no
+      term remains for any grant on it)'
+  expired: true
   members:
   - number: US20030170956A1
     country: US
@@ -17900,56 +17900,70 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2007-02-13
-    status: null
+    title: Ultra-thin gate oxide through post decoupled plasma nitridation anneal
+    application_number: US10/091,983
+    filing_date: 2002-03-06
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-05-25
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7176094B2
       google_patents: https://patents.google.com/patent/US7176094B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20030170956A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1343198A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2003-09-10
-    status: null
+    title: Process of forming an ultra-thin gate oxide through decoupled plasma nitridation anneal
+    application_number: EP03368017A
+    filing_date: 2003-03-05
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1343198A2
       google_patents: https://patents.google.com/patent/EP1343198A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20030170956A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2003309260A
     country: JP
     kind: A
     document_type: application
     publication_date: 2003-10-31
-    status: null
+    title: How to improve the integrity of ultra-thin gate oxides
+    application_number: JP2003059321A
+    filing_date: 2003-03-06
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2003309260A
       google_patents: https://patents.google.com/patent/JP2003309260A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20030170956A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: SG108313A1
     country: SG
     kind: A1
     document_type: application
     publication_date: 2005-01-28
+    title: Improved ultra-thin gate oxide through post decoupled plasma nitridation anneal
+    application_number: SG200300699A
+    filing_date: 2003-02-21
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DSG108313A1
       google_patents: https://patents.google.com/patent/SG108313A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20030170956A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200304177A
     country: TW
     kind: A
     document_type: application
     publication_date: 2003-09-16
+    title: Improved ultra-thin gate oxide through post decoupled plasma nitridation anneal
+    application_number: TW092104145A
+    filing_date: 2003-02-27
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200304177A
       google_patents: https://patents.google.com/patent/TW200304177A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20030170956A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-plasma-nitridation-chamber
     relation: cited-on-page
@@ -17984,12 +17998,12 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US6677213B1, retrieved 2026-09-14
   expiry:
-    date: 2023-03-08
+    date: 2022-06-30
     estimated: true
-    basis: 'not bounded from the records retrieved: US7042054B1; latest estimate US7042054B1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7042054B1 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US6677213B1
     country: US
@@ -18013,11 +18027,18 @@ families:
     kind: B1
     document_type: granted-patent
     publication_date: 2006-05-09
-    status: null
+    title: SONOS structure including a deuterated oxide-silicon interface and method for making the same
+    application_number: US10/740,205
+    filing_date: 2003-12-18
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-06-30
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7042054B1
       google_patents: https://patents.google.com/patent/US7042054B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6677213B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -18055,23 +18076,26 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6667205B2, retrieved 2026-09-14
   expiry:
-    date: 2023-04-19
+    date: 2023-11-26
     estimated: true
-    basis: 'not bounded from the records retrieved: US20030197227A1, US20040157418A1, US6967380B2; latest
-      estimate US6967380B2 (estimated upper bound: earliest priority date + 21 years (12-month priority
-      period + 20-year term); US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US20040157418A1 (estimated: 20 years from the filing date shown;
+      no term remains for any grant on it)'
+  expired: true
   members:
   - number: US20030197227A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2003-10-23
-    status: null
+    title: Method of forming retrograde n-well and p-well
+    application_number: US10/063,406
+    filing_date: 2002-04-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030197227A1
       google_patents: https://patents.google.com/patent/US20030197227A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6667205B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6667205B2
     country: US
     kind: B2
@@ -18094,21 +18118,31 @@ families:
     kind: A1
     document_type: application
     publication_date: 2004-08-12
-    status: null
+    title: CMOS device having retrograde n-well and p-well
+    application_number: US10/722,867
+    filing_date: 2003-11-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040157418A1
       google_patents: https://patents.google.com/patent/US20040157418A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6667205B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6967380B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2005-11-22
-    status: null
+    title: CMOS device having retrograde n-well and p-well
+    application_number: US10/722,867
+    filing_date: 2003-11-26
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-09-22
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6967380B2
       google_patents: https://patents.google.com/patent/US6967380B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6667205B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-implant
     relation: cited-on-page
@@ -18197,23 +18231,26 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6806133B2, retrieved 2026-09-14
   expiry:
-    date: 2023-05-16
+    date: 2022-12-30
     estimated: true
-    basis: 'not bounded from the records retrieved: US20030216016A1; latest estimate US20030216016A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6806133B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Fee Related)'
+  expired: true
   members:
   - number: US20030216016A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2003-11-20
-    status: null
+    title: Method for fabricating semiconductor device with triple well structure
+    application_number: US10/330,250
+    filing_date: 2002-12-30
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030216016A1
       google_patents: https://patents.google.com/patent/US20030216016A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6806133B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6806133B2
     country: US
     kind: B2
@@ -18236,41 +18273,61 @@ families:
     kind: A
     document_type: application
     publication_date: 2003-11-21
-    status: null
+    title: Method for manufacturing semiconductor device having triple well structure
+    application_number: JP2002379437A
+    filing_date: 2002-12-27
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2003332461A
       google_patents: https://patents.google.com/patent/JP2003332461A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6806133B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP4045373B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2008-02-13
-    status: null
+    title: Manufacturing method of semiconductor device having triple well structure
+    application_number: JP2002379437A
+    filing_date: 2002-12-27
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-12-27
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP4045373B2
       google_patents: https://patents.google.com/patent/JP4045373B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6806133B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20030089075A
     country: KR
     kind: A
     document_type: application
     publication_date: 2003-11-21
-    status: null
+    title: Method for fabricating semiconductor device with triple well structure
+    application_number: KR1020020027110A
+    filing_date: 2002-05-16
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20030089075A
       google_patents: https://patents.google.com/patent/KR20030089075A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6806133B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR100445055B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2004-08-21
-    status: null
+    title: Method for fabricating semiconductor device with triple well structure
+    application_number: KR10-2002-0027110A
+    filing_date: 2002-05-16
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-05-16
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR100445055B1
       google_patents: https://patents.google.com/patent/KR100445055B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6806133B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-implant
     relation: cited-on-page
@@ -18434,11 +18491,9 @@ families:
   expiry:
     date: 2030-07-12
     estimated: true
-    basis: 'not bounded from the records retrieved: US20040005752A1, US6849492B2, US20050026352A1, US20050227427A1,
-      US20060003513A1, US7189607B2, US20070093016A1, US20070093017A1, US7265012B2, US7304353B2, US20080042216A1,
-      US7413946B2, US7439140B2, US20090286366A1, US7696579B2, US7755146B2, US20110006372A1, US8053321B2;
-      latest estimate US20110006372A1 (application; any grant would expire at the latest about 20 years
-      from filing (estimated))'
+    basis: 'not bounded from the records retrieved: US20070093016A1, US20070093017A1, US20080042216A1,
+      US20090286366A1, US20110006372A1; latest estimate US20110006372A1 (application; any grant would
+      expire at the latest about 20 years from filing (estimated))'
   expired: unknown
   members:
   - number: US20040005752A1
@@ -18446,177 +18501,241 @@ families:
     kind: A1
     document_type: application
     publication_date: 2004-01-08
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US10/191,337
+    filing_date: 2002-07-08
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040005752A1
       google_patents: https://patents.google.com/patent/US20040005752A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6849492B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2005-02-01
-    status: null
+    title: Method for forming standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US10/191,337
+    filing_date: 2002-07-08
+    status: Expired - Fee Related
+    expiry:
+      date: 2023-02-19
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6849492B2
       google_patents: https://patents.google.com/patent/US6849492B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20050026352A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2005-02-03
-    status: null
+    title: Formation of standard voltage threshold and low voltge threshold MOSFET devices
+    application_number: US10/931,891
+    filing_date: 2004-09-01
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050026352A1
       google_patents: https://patents.google.com/patent/US20050026352A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20050227427A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2005-10-13
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US11/146,812
+    filing_date: 2005-06-07
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050227427A1
       google_patents: https://patents.google.com/patent/US20050227427A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20060003513A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2006-01-05
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US11/216,632
+    filing_date: 2005-08-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060003513A1
       google_patents: https://patents.google.com/patent/US20060003513A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7189607B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2007-03-13
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US10/931,891
+    filing_date: 2004-09-01
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-11-14
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7189607B2
       google_patents: https://patents.google.com/patent/US7189607B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20070093016A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2007-04-26
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold mosfet devices
+    application_number: US11/566,350
+    filing_date: 2006-12-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20070093016A1
       google_patents: https://patents.google.com/patent/US20070093016A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20070093017A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2007-04-26
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold mosfet devices
+    application_number: US11/566,355
+    filing_date: 2006-12-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20070093017A1
       google_patents: https://patents.google.com/patent/US20070093017A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7265012B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2007-09-04
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US11/216,632
+    filing_date: 2005-08-31
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-07-18
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7265012B2
       google_patents: https://patents.google.com/patent/US7265012B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7304353B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2007-12-04
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US11/146,812
+    filing_date: 2005-06-07
+    status: Expired - Fee Related
+    expiry:
+      date: 2023-06-30
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7304353B2
       google_patents: https://patents.google.com/patent/US7304353B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20080042216A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2008-02-21
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold mosfet devices
+    application_number: US11/877,744
+    filing_date: 2007-10-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080042216A1
       google_patents: https://patents.google.com/patent/US20080042216A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7413946B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2008-08-19
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US11/566,355
+    filing_date: 2006-12-04
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-09-25
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7413946B2
       google_patents: https://patents.google.com/patent/US7413946B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7439140B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2008-10-21
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US11/566,350
+    filing_date: 2006-12-04
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-07-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7439140B2
       google_patents: https://patents.google.com/patent/US7439140B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20090286366A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2009-11-19
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold mosfet devices
+    application_number: US12/512,631
+    filing_date: 2009-07-30
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090286366A1
       google_patents: https://patents.google.com/patent/US20090286366A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7696579B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2010-04-13
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US11/877,744
+    filing_date: 2007-10-24
+    status: Expired - Fee Related
+    expiry:
+      date: 2023-03-12
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7696579B2
       google_patents: https://patents.google.com/patent/US7696579B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7755146B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2010-07-13
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US12/512,631
+    filing_date: 2009-07-30
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-07-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7755146B2
       google_patents: https://patents.google.com/patent/US7755146B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20110006372A1
     country: US
     kind: A1
@@ -18635,12 +18754,18 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2011-11-08
-    status: null
+    title: Formation of standard voltage threshold and low voltage threshold MOSFET devices
+    application_number: US12/834,231
+    filing_date: 2010-07-12
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-07-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8053321B2
       google_patents: https://patents.google.com/patent/US8053321B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20110006372A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: mask-hvtpm
     relation: cited-on-page
@@ -18707,23 +18832,26 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6803297B2, retrieved 2026-09-14
   expiry:
-    date: 2023-09-20
+    date: 2023-02-25
     estimated: true
-    basis: 'not bounded from the records retrieved: US20040058512A1; latest estimate US20040058512A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6803297B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Fee Related)'
+  expired: true
   members:
   - number: US20040058512A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2004-03-25
-    status: null
+    title: Optimal spike anneal ambient
+    application_number: US10/251,440
+    filing_date: 2002-09-20
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040058512A1
       google_patents: https://patents.google.com/patent/US20040058512A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6803297B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6803297B2
     country: US
     kind: B2
@@ -18779,23 +18907,26 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6897131B2, retrieved 2026-09-14
   expiry:
-    date: 2023-09-20
+    date: 2023-09-22
     estimated: true
-    basis: 'not bounded from the records retrieved: US20040126999A1; latest estimate US20040126999A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6897131B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Fee Related)'
+  expired: true
   members:
   - number: US20040126999A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2004-07-01
-    status: null
+    title: Advances in spike anneal processes for ultra shallow junctions
+    application_number: US10/668,682
+    filing_date: 2003-09-22
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040126999A1
       google_patents: https://patents.google.com/patent/US20040126999A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6897131B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6897131B2
     country: US
     kind: B2
@@ -18849,12 +18980,12 @@ families:
     status: Granted
     source: Google Patents (IFI Claims) status of US20040069224A1, retrieved 2026-09-14
   expiry:
-    date: 2023-10-11
+    date: 2023-06-23
     estimated: true
-    basis: 'not bounded from the records retrieved: US6908499B2; latest estimate US6908499B2 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6908499B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Fee Related)'
+  expired: true
   members:
   - number: US20040069224A1
     country: US
@@ -18874,12 +19005,18 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2005-06-21
-    status: null
+    title: Cold trap for CVD furnace
+    application_number: US10/269,943
+    filing_date: 2002-10-11
+    status: Expired - Fee Related
+    expiry:
+      date: 2023-06-23
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6908499B2
       google_patents: https://patents.google.com/patent/US6908499B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20040069224A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-vertical-furnace-lpcvd
     relation: cited-on-page
@@ -18985,23 +19122,26 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US6835642B2, retrieved 2026-09-14
   expiry:
-    date: 2023-12-18
+    date: 2022-12-18
     estimated: true
-    basis: 'not bounded from the records retrieved: US20040119138A1; latest estimate US20040119138A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6835642B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US20040119138A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2004-06-24
-    status: null
+    title: Method of forming a metal fuse on semiconductor devices
+    application_number: US10/323,350
+    filing_date: 2002-12-18
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040119138A1
       google_patents: https://patents.google.com/patent/US20040119138A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6835642B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6835642B2
     country: US
     kind: B2
@@ -19110,11 +19250,10 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US6960781B2, retrieved 2026-09-14
   expiry:
-    date: 2024-03-07
+    date: 2030-08-03
     estimated: true
-    basis: 'not bounded from the records retrieved: US20040173812A1, US20050205859A1, US7504704B2; latest
-      estimate US7504704B2 (estimated upper bound: earliest priority date + 21 years (12-month priority
-      period + 20-year term); US patent term adjustment possible, not known without the record)'
+    basis: 'not bounded from the records retrieved: JP2011009760A; latest estimate JP2011009760A (application;
+      any grant would expire at the latest about 20 years from filing (estimated))'
   expired: unknown
   members:
   - number: US20040173812A1
@@ -19122,21 +19261,27 @@ families:
     kind: A1
     document_type: application
     publication_date: 2004-09-09
-    status: null
+    title: Shallow trench isolation process
+    application_number: US10/794,010
+    filing_date: 2004-03-05
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040173812A1
       google_patents: https://patents.google.com/patent/US20040173812A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20050205859A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2005-09-22
-    status: null
+    title: Shallow trench isolation process
+    application_number: US11/130,584
+    filing_date: 2005-05-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050205859A1
       google_patents: https://patents.google.com/patent/US20050205859A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6960781B2
     country: US
     kind: B2
@@ -19159,131 +19304,194 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2009-03-17
-    status: null
+    title: Shallow trench isolation process
+    application_number: US11/130,584
+    filing_date: 2005-05-17
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-10-25
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7504704B2
       google_patents: https://patents.google.com/patent/US7504704B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN1774799A
     country: CN
     kind: A
     document_type: application
     publication_date: 2006-05-17
-    status: null
+    title: Shallow trench isolation process
+    application_number: CNA2004800101670A
+    filing_date: 2004-03-05
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN1774799A
       google_patents: https://patents.google.com/patent/CN1774799A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN100437970C
     country: CN
     kind: C
     document_type: granted-patent
     publication_date: 2008-11-26
-    status: null
+    title: A structure and method for forming a semiconductor structure
+    application_number: CNB2004800101670A
+    filing_date: 2004-03-05
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-03-05
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN100437970C
       google_patents: https://patents.google.com/patent/CN100437970C/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1602125A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2005-12-07
-    status: null
+    title: Shallow trench isolation process
+    application_number: EP04718094A
+    filing_date: 2004-03-05
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1602125A2
       google_patents: https://patents.google.com/patent/EP1602125A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1602125B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 2019-06-26
-    status: null
+    title: Shallow trench isolation process
+    application_number: EP04718094.8A
+    filing_date: 2004-03-05
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-03-05
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1602125B1
       google_patents: https://patents.google.com/patent/EP1602125B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2006521026A
     country: JP
     kind: A
     document_type: application
     publication_date: 2006-09-14
-    status: null
+    title: Shallow trench isolation process
+    application_number: JP2006509191A
+    filing_date: 2004-03-05
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2006521026A
       google_patents: https://patents.google.com/patent/JP2006521026A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP4585510B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2010-11-24
-    status: null
+    title: Shallow trench isolation process
+    application_number: JP2006509191A
+    filing_date: 2004-03-05
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-03-05
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP4585510B2
       google_patents: https://patents.google.com/patent/JP4585510B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2011009760A
     country: JP
     kind: A
     document_type: application
     publication_date: 2011-01-13
-    status: null
+    title: Shallow trench isolation process
+    application_number: JP2010174203A
+    filing_date: 2010-08-03
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2011009760A
       google_patents: https://patents.google.com/patent/JP2011009760A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP5508982B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2014-06-04
-    status: null
+    title: Shallow trench isolation process
+    application_number: JP2010174203A
+    filing_date: 2010-08-03
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-03-05
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP5508982B2
       google_patents: https://patents.google.com/patent/JP5508982B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20050115894A
     country: KR
     kind: A
     document_type: application
     publication_date: 2005-12-08
-    status: null
+    title: Shallow trench isolation process
+    application_number: KR1020057016595A
+    filing_date: 2004-03-05
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20050115894A
       google_patents: https://patents.google.com/patent/KR20050115894A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR100728173B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2007-06-13
-    status: null
+    title: shallow trench isolation process
+    application_number: KR1020057016595A
+    filing_date: 2004-03-05
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-03-05
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR100728173B1
       google_patents: https://patents.google.com/patent/KR100728173B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2004081982A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2004-09-23
-    status: null
+    title: Shallow trench isolation process
+    application_number: PCT/US2004/006844
+    filing_date: 2004-03-05
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2004081982A2
       google_patents: https://patents.google.com/patent/WO2004081982A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2004081982A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2004-12-16
-    status: null
+    title: Shallow trench isolation process
+    application_number: PCT/US2004/006844
+    filing_date: 2004-03-05
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2004081982A3
       google_patents: https://patents.google.com/patent/WO2004081982A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6960781B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: materials-index
     relation: cited-on-page
@@ -19332,11 +19540,10 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US7605041B2, retrieved 2026-09-14
   expiry:
-    date: 2024-04-10
+    date: 2027-12-07
     estimated: true
-    basis: 'not bounded from the records retrieved: US20050230781A1, US7323754B2, US20080090364A1; latest
-      estimate US7323754B2 (estimated upper bound: earliest priority date + 21 years (12-month priority
-      period + 20-year term); US patent term adjustment possible, not known without the record)'
+    basis: 'not bounded from the records retrieved: US20080090364A1; latest estimate US20080090364A1 (application;
+      any grant would expire at the latest about 20 years from filing (estimated))'
   expired: unknown
   members:
   - number: US20050230781A1
@@ -19344,31 +19551,44 @@ families:
     kind: A1
     document_type: application
     publication_date: 2005-10-20
-    status: null
+    title: Semiconductor device and its manufacture method
+    application_number: US11/168,553
+    filing_date: 2005-06-29
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050230781A1
       google_patents: https://patents.google.com/patent/US20050230781A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7323754B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2008-01-29
-    status: null
+    title: Semiconductor device and its manufacture method
+    application_number: US11/168,553
+    filing_date: 2005-06-29
+    status: Expired - Lifetime
+    expiry:
+      date: 2023-04-10
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7323754B2
       google_patents: https://patents.google.com/patent/US7323754B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20080090364A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2008-04-17
-    status: null
+    title: Semiconductor device and its manufacture method
+    application_number: US12/000,047
+    filing_date: 2007-12-07
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080090364A1
       google_patents: https://patents.google.com/patent/US20080090364A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7605041B2
     country: US
     kind: B2
@@ -19391,111 +19611,156 @@ families:
     kind: A1
     document_type: application
     publication_date: 2004-11-04
-    status: null
+    title: Semiconductor device and its manufacturing method
+    application_number: AU2003236078A
+    filing_date: 2003-04-10
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DAU2003236078A1
       google_patents: https://patents.google.com/patent/AU2003236078A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN1701442A
     country: CN
     kind: A
     document_type: application
     publication_date: 2005-11-23
-    status: null
+    title: Semiconductor device and its manufacture method
+    application_number: CNA038253836A
+    filing_date: 2003-04-10
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN1701442A
       google_patents: https://patents.google.com/patent/CN1701442A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN100514650C
     country: CN
     kind: C
     document_type: granted-patent
     publication_date: 2009-07-15
-    status: null
+    title: Semiconductor device and its manufacture method
+    application_number: CNB038253836A
+    filing_date: 2003-04-10
+    status: Expired - Fee Related
+    expiry:
+      date: 2023-04-10
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN100514650C
       google_patents: https://patents.google.com/patent/CN100514650C/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1612861A1
     country: EP
     kind: A1
     document_type: application
     publication_date: 2006-01-04
-    status: null
+    title: Semiconductor device and its manufacturing method
+    application_number: EP03816642A
+    filing_date: 2003-04-10
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1612861A1
       google_patents: https://patents.google.com/patent/EP1612861A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1612861A4
     country: EP
     kind: A4
     document_type: search-report
     publication_date: 2008-09-17
-    status: null
+    title: SEMICONDUCTOR DEVICE AND METHOD FOR MANUFACTURING THE SAME
+    application_number: EP03816642A
+    filing_date: 2003-04-10
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1612861A4
       google_patents: https://patents.google.com/patent/EP1612861A4/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1612861B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 2018-10-03
-    status: null
+    title: Semiconductor device and its manufacturing method
+    application_number: EP03816642.7A
+    filing_date: 2003-04-10
+    status: Expired - Lifetime
+    expiry:
+      date: 2023-04-10
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1612861B1
       google_patents: https://patents.google.com/patent/EP1612861B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPWO2004093192A1
     country: JP
     kind: A1
     document_type: application
     publication_date: 2006-07-06
-    status: null
+    title: Semiconductor device and manufacturing method thereof
+    application_number: JP2004570847A
+    filing_date: 2003-04-10
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPWO2004093192A1
       google_patents: https://patents.google.com/patent/JPWO2004093192A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP4942009B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2012-05-30
-    status: null
+    title: Semiconductor device
+    application_number: JP2004570847A
+    filing_date: 2003-04-10
+    status: Expired - Fee Related
+    expiry:
+      date: 2023-04-10
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP4942009B2
       google_patents: https://patents.google.com/patent/JP4942009B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200423398A
     country: TW
     kind: A
     document_type: application
     publication_date: 2004-11-01
+    title: Semiconductor device and the manufacturing method thereof
+    application_number: TW092108945A
+    filing_date: 2003-04-17
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200423398A
       google_patents: https://patents.google.com/patent/TW200423398A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI229450B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2005-03-11
+    title: Semiconductor device and the manufacturing method thereof
+    application_number: TW092108945A
+    filing_date: 2003-04-17
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI229450B
       google_patents: https://patents.google.com/patent/TWI229450B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2004093192A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2004-10-28
-    status: null
+    title: Semiconductor device and its manufacturing method
+    application_number: PCT/JP2003/004589
+    filing_date: 2003-04-10
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2004093192A1
       google_patents: https://patents.google.com/patent/WO2004093192A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7605041B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-027
     relation: cited-on-page
@@ -19640,23 +19905,30 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7078310B1, retrieved 2026-09-14
   expiry:
-    date: 2024-05-28
+    date: 2023-08-07
     estimated: true
-    basis: 'not bounded from the records retrieved: US6777777B1; latest estimate US6777777B1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7078310B1 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US6777777B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2004-08-17
-    status: null
+    title: High density composite MIM capacitor with flexible routing in semiconductor dies
+    application_number: US10/447,397
+    filing_date: 2003-05-28
+    status: Expired - Lifetime
+    expiry:
+      date: 2023-05-28
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6777777B1
       google_patents: https://patents.google.com/patent/US6777777B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7078310B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7078310B1
     country: US
     kind: B1
@@ -19721,11 +19993,10 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7514373B2, retrieved 2026-09-14
   expiry:
-    date: 2024-05-28
+    date: 2034-08-07
     estimated: true
-    basis: 'not bounded from the records retrieved: US20040242021A1, US20060216944A1, US7179754B2; latest
-      estimate US7179754B2 (estimated upper bound: earliest priority date + 21 years (12-month priority
-      period + 20-year term); US patent term adjustment possible, not known without the record)'
+    basis: 'not bounded from the records retrieved: JP2015043421A; latest estimate JP2015043421A (application;
+      any grant would expire at the latest about 20 years from filing (estimated))'
   expired: unknown
   members:
   - number: US20040242021A1
@@ -19733,31 +20004,47 @@ families:
     kind: A1
     document_type: application
     publication_date: 2004-12-02
-    status: null
+    title: Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency
+      energy
+    application_number: US10/819,392
+    filing_date: 2004-04-06
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040242021A1
       google_patents: https://patents.google.com/patent/US20040242021A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20060216944A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2006-09-28
-    status: null
+    title: Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency
+      energy
+    application_number: US11/421,163
+    filing_date: 2006-05-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060216944A1
       google_patents: https://patents.google.com/patent/US20060216944A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7179754B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2007-02-20
-    status: null
+    title: Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency
+      energy
+    application_number: US10/819,392
+    filing_date: 2004-04-06
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-12-01
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7179754B2
       google_patents: https://patents.google.com/patent/US7179754B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7514373B2
     country: US
     kind: B2
@@ -19781,81 +20068,121 @@ families:
     kind: A1
     document_type: application
     publication_date: 2006-03-15
-    status: null
+    title: Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency
+      energy
+    application_number: EP04753198A
+    filing_date: 2004-05-25
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1634324A1
       google_patents: https://patents.google.com/patent/EP1634324A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2007516605A
     country: JP
     kind: A
     document_type: application
     publication_date: 2007-06-21
-    status: null
+    title: Method and apparatus for plasma nitriding a gate dielectric using amplitude modulated high
+      frequency energy
+    application_number: JP2006533375A
+    filing_date: 2004-05-25
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2007516605A
       google_patents: https://patents.google.com/patent/JP2007516605A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2012256900A
     country: JP
     kind: A
     document_type: application
     publication_date: 2012-12-27
-    status: null
+    title: Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency
+      energy
+    application_number: JP2012161707A
+    filing_date: 2012-07-20
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2012256900A
       google_patents: https://patents.google.com/patent/JP2012256900A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2015043421A
     country: JP
     kind: A
     document_type: application
     publication_date: 2015-03-05
-    status: null
+    title: Method and apparatus for plasma nitriding a gate dielectric using amplitude modulated high
+      frequency energy
+    application_number: JP2014161655A
+    filing_date: 2014-08-07
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2015043421A
       google_patents: https://patents.google.com/patent/JP2015043421A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP5988317B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2016-09-07
-    status: null
+    title: Method and apparatus for plasma nitriding a gate dielectric using amplitude modulated high
+      frequency energy
+    application_number: JP2014161655A
+    filing_date: 2014-08-07
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-05-25
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP5988317B2
       google_patents: https://patents.google.com/patent/JP5988317B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20060014424A
     country: KR
     kind: A
     document_type: application
     publication_date: 2006-02-15
-    status: null
+    title: Plasma Nitriding Method and Apparatus for Gate Dielectric Using Amplitude Modulated Radiofrequency
+      Energy
+    application_number: KR1020057022448A
+    filing_date: 2004-05-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20060014424A
       google_patents: https://patents.google.com/patent/KR20060014424A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR101062057B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2011-09-02
-    status: null
+    title: Plasma Nitriding Method and Apparatus for Gate Dielectric Using Amplitude Modulated Radiofrequency
+      Energy
+    application_number: KR1020057022448A
+    filing_date: 2004-05-25
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-05-25
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR101062057B1
       google_patents: https://patents.google.com/patent/KR101062057B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2004107420A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2004-12-09
-    status: null
+    title: Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency
+      energy
+    application_number: PCT/US2004/016326
+    filing_date: 2004-05-25
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2004107420A1
       google_patents: https://patents.google.com/patent/WO2004107420A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7514373B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-plasma-nitridation-chamber
     relation: cited-on-page
@@ -19889,23 +20216,26 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7112507B2, retrieved 2026-09-14
   expiry:
-    date: 2024-11-24
+    date: 2026-06-13
     estimated: true
-    basis: 'not bounded from the records retrieved: US20050112836A1, US20060231920A1, US7235454B2; latest
-      estimate US7235454B2 (estimated upper bound: earliest priority date + 21 years (12-month priority
-      period + 20-year term); US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US20060231920A1 (estimated: 20 years from the filing date shown;
+      no term remains for any grant on it)'
+  expired: true
   members:
   - number: US20050112836A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2005-05-26
-    status: null
+    title: MIM capacitor structure and method of fabrication
+    application_number: US10/720,450
+    filing_date: 2003-11-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050112836A1
       google_patents: https://patents.google.com/patent/US20050112836A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7112507B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7112507B2
     country: US
     kind: B2
@@ -19928,61 +20258,87 @@ families:
     kind: A1
     document_type: application
     publication_date: 2006-10-19
-    status: null
+    title: MIM capacitor structure and method of fabrication
+    application_number: US11/452,159
+    filing_date: 2006-06-13
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060231920A1
       google_patents: https://patents.google.com/patent/US20060231920A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7112507B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7235454B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2007-06-26
-    status: null
+    title: MIM capacitor structure and method of fabrication
+    application_number: US11/452,159
+    filing_date: 2006-06-13
+    status: Expired - Lifetime
+    expiry:
+      date: 2023-11-24
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7235454B2
       google_patents: https://patents.google.com/patent/US7235454B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7112507B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1687840A1
     country: EP
     kind: A1
     document_type: application
     publication_date: 2006-08-09
-    status: null
+    title: Mim capacitor structure and method of fabrication
+    application_number: EP04819679A
+    filing_date: 2004-11-17
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1687840A1
       google_patents: https://patents.google.com/patent/EP1687840A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7112507B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2007512697A
     country: JP
     kind: A
     document_type: application
     publication_date: 2007-05-17
-    status: null
+    title: MIM capacitor structure and manufacturing method thereof
+    application_number: JP2006540452A
+    filing_date: 2004-11-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2007512697A
       google_patents: https://patents.google.com/patent/JP2007512697A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7112507B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP4431580B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2010-03-17
-    status: null
+    title: MIM capacitor structure and manufacturing method thereof
+    application_number: JP2006540452A
+    filing_date: 2004-11-17
+    status: Expired - Fee Related
+    expiry:
+      date: 2024-11-17
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP4431580B2
       google_patents: https://patents.google.com/patent/JP4431580B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7112507B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2005055292A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2005-06-16
-    status: null
+    title: Mim capacitor structure and method of fabrication
+    application_number: PCT/EP2004/052992
+    filing_date: 2004-11-17
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2005055292A1
       google_patents: https://patents.google.com/patent/WO2005055292A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7112507B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-137
     relation: cited-on-page
@@ -20110,23 +20466,26 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7317221B2, retrieved 2026-09-14
   expiry:
-    date: 2024-12-04
+    date: 2024-04-03
     estimated: true
-    basis: 'not bounded from the records retrieved: US20050121744A1; latest estimate US20050121744A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7317221B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US20050121744A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2005-06-09
-    status: null
+    title: High density MIM capacitor structure and fabrication process
+    application_number: US10/729,034
+    filing_date: 2003-12-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050121744A1
       google_patents: https://patents.google.com/patent/US20050121744A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7317221B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7317221B2
     country: US
     kind: B2
@@ -20187,21 +20546,24 @@ families:
   expiry:
     date: 2024-12-18
     estimated: true
-    basis: 'not bounded from the records retrieved: US20050136662A1; latest estimate US20050136662A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of TWI333673B (estimated upper bound: earliest priority date + 21 years
+      (12-month priority period + 20-year term))'
+  expired: true
   members:
   - number: US20050136662A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2005-06-23
-    status: null
+    title: Method to remove fluorine residue from bond pads
+    application_number: US10/741,321
+    filing_date: 2003-12-18
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050136662A1
       google_patents: https://patents.google.com/patent/US20050136662A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7055532B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7055532B2
     country: US
     kind: B2
@@ -20224,21 +20586,27 @@ families:
     kind: A
     document_type: application
     publication_date: 2005-07-01
+    title: Method to remove fluorine residue from bond pads
+    application_number: TW093136662A
+    filing_date: 2004-11-26
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200522193A
       google_patents: https://patents.google.com/patent/TW200522193A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7055532B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI333673B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2010-11-21
+    title: Method to remove fluorine residue from bond pads
+    application_number: TW093136662A
+    filing_date: 2004-11-26
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI333673B
       google_patents: https://patents.google.com/patent/TWI333673B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7055532B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-169
     relation: cited-on-page
@@ -20271,12 +20639,12 @@ families:
     status: Granted
     source: Google Patents (IFI Claims) status of US20060006461A1, retrieved 2026-09-14
   expiry:
-    date: 2025-07-08
+    date: 2024-07-08
     estimated: true
-    basis: 'not bounded from the records retrieved: US7560324B2; latest estimate US7560324B2 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7560324B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US20060006461A1
     country: US
@@ -20296,34 +20664,44 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2009-07-14
-    status: null
+    title: Drain extended MOS transistors and methods for making the same
+    application_number: US10/886,842
+    filing_date: 2004-07-08
+    status: Expired - Lifetime
+    expiry:
+      date: 2024-07-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7560324B2
       google_patents: https://patents.google.com/patent/US7560324B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20060006461A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2006010055A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2006-01-26
-    status: null
+    title: Drain extended mos transistors and methods for making the same
+    application_number: PCT/US2005/024371
+    filing_date: 2005-07-08
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2006010055A2
       google_patents: https://patents.google.com/patent/WO2006010055A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20060006461A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2006010055A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2007-02-01
-    status: null
+    title: Drain extended mos transistors and methods for making the same
+    application_number: PCT/US2005/024371
+    filing_date: 2005-07-08
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2006010055A3
       google_patents: https://patents.google.com/patent/WO2006010055A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20060006461A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-030
     relation: cited-on-page
@@ -20374,23 +20752,27 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7250334B2, retrieved 2026-09-14
   expiry:
-    date: 2025-07-31
+    date: 2025-01-20
     estimated: true
-    basis: 'not bounded from the records retrieved: US20060024899A1; latest estimate US20060024899A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7250334B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US20060024899A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2006-02-02
-    status: null
+    title: Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP)
+      top electrode
+    application_number: US10/909,648
+    filing_date: 2004-07-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060024899A1
       google_patents: https://patents.google.com/patent/US20060024899A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7250334B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7250334B2
     country: US
     kind: B2
@@ -20447,11 +20829,10 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US7449416B2, retrieved 2026-09-14
   expiry:
-    date: 2025-09-01
+    date: 2032-07-02
     estimated: true
-    basis: 'not bounded from the records retrieved: US20060046470A1; latest estimate US20060046470A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
+    basis: 'not bounded from the records retrieved: JP2012191242A; latest estimate JP2012191242A (application;
+      any grant would expire at the latest about 20 years from filing (estimated))'
   expired: unknown
   members:
   - number: US20060046470A1
@@ -20459,11 +20840,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2006-03-02
-    status: null
+    title: Apparatus and plasma ashing process for increasing photoresist removal rate
+    application_number: US11/217,247
+    filing_date: 2005-09-01
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060046470A1
       google_patents: https://patents.google.com/patent/US20060046470A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7449416B2
     country: US
     kind: B2
@@ -20486,141 +20870,203 @@ families:
     kind: A
     document_type: application
     publication_date: 2007-10-10
-    status: null
+    title: Apparatus and plasma ashing method for increasing photoresist removal rate
+    application_number: CNA2005800379286A
+    filing_date: 2005-09-01
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101053063A
       google_patents: https://patents.google.com/patent/CN101053063A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN102610481A
     country: CN
     kind: A
     document_type: application
     publication_date: 2012-07-25
-    status: null
+    title: Apparatus and plasma ashing process for increasing photoresist removal rate
+    application_number: CN2012100736514A
+    filing_date: 2005-09-01
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN102610481A
       google_patents: https://patents.google.com/patent/CN102610481A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101053063B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2012-10-03
-    status: null
+    title: Apparatus and plasma ashing method for increasing photoresist removal rate
+    application_number: CN2005800379286A
+    filing_date: 2005-09-01
+    status: Expired - Fee Related
+    expiry:
+      date: 2025-09-01
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101053063B
       google_patents: https://patents.google.com/patent/CN101053063B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN102610481B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2016-04-13
-    status: null
+    title: For increasing device and the plasma ashing method of photoresistance removal rate
+    application_number: CN201210073651.4A
+    filing_date: 2005-09-01
+    status: Expired - Fee Related
+    expiry:
+      date: 2025-09-01
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN102610481B
       google_patents: https://patents.google.com/patent/CN102610481B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1784690A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2007-05-16
-    status: null
+    title: Plasma ashing process for increasing photoresist removal rate and plasma apparatus with cooling
+      means
+    application_number: EP05795946A
+    filing_date: 2005-09-01
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1784690A2
       google_patents: https://patents.google.com/patent/EP1784690A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2008512004A
     country: JP
     kind: A
     document_type: application
     publication_date: 2008-04-17
-    status: null
+    title: Apparatus and plasma ashing method for increasing photoresist removal rate
+    application_number: JP2007530435A
+    filing_date: 2005-09-01
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008512004A
       google_patents: https://patents.google.com/patent/JP2008512004A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2012191242A
     country: JP
     kind: A
     document_type: application
     publication_date: 2012-10-04
-    status: null
+    title: Plasma ashing process for increasing photoresist removal rate
+    application_number: JP2012148592A
+    filing_date: 2012-07-02
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2012191242A
       google_patents: https://patents.google.com/patent/JP2012191242A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP5115798B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2013-01-09
-    status: null
+    title: Apparatus and plasma ashing method for increasing photoresist removal rate
+    application_number: JP2007530435A
+    filing_date: 2005-09-01
+    status: Expired - Fee Related
+    expiry:
+      date: 2025-09-01
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP5115798B2
       google_patents: https://patents.google.com/patent/JP5115798B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20070060104A
     country: KR
     kind: A
     document_type: application
     publication_date: 2007-06-12
-    status: null
+    title: Apparatus having plasma ashing process and cooling means to increase photoresist removal rate
+    application_number: KR1020077007512A
+    filing_date: 2005-09-01
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20070060104A
       google_patents: https://patents.google.com/patent/KR20070060104A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR101170861B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2012-08-03
-    status: null
+    title: Plasma ashing process for increasing photoresist removal rate and plasma apparatus with cooling
+      means
+    application_number: KR1020077007512A
+    filing_date: 2005-09-01
+    status: Expired - Fee Related
+    expiry:
+      date: 2025-09-01
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR101170861B1
       google_patents: https://patents.google.com/patent/KR101170861B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200611335A
     country: TW
     kind: A
     document_type: application
     publication_date: 2006-04-01
+    title: Apparatus and plasma ashing process for increasing photoresist removal rate
+    application_number: TW094130076A
+    filing_date: 2005-09-02
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200611335A
       google_patents: https://patents.google.com/patent/TW200611335A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI376748B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2012-11-11
+    title: Apparatus and plasma ashing process for increasing photoresist removal rate
+    application_number: TW094130076A
+    filing_date: 2005-09-02
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI376748B
       google_patents: https://patents.google.com/patent/TWI376748B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2006026765A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2006-03-09
-    status: null
+    title: Plasma ashing process for increasing photoresist removal rate and plasma apparatus wuth cooling
+      means
+    application_number: PCT/US2005/031492
+    filing_date: 2005-09-01
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2006026765A2
       google_patents: https://patents.google.com/patent/WO2006026765A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2006026765A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2006-06-29
-    status: null
+    title: Plasma ashing process for increasing photoresist removal rate and plasma apparatus wuth cooling
+      means
+    application_number: PCT/US2005/031492
+    filing_date: 2005-09-01
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2006026765A3
       google_patents: https://patents.google.com/patent/WO2006026765A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7449416B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-strip
     relation: cited-on-page
@@ -20697,11 +21143,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2006-05-25
-    status: null
+    title: Method and system for laser soft marking
+    application_number: US11/270,109
+    filing_date: 2005-11-09
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060108337A1
       google_patents: https://patents.google.com/patent/US20060108337A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7705268B2
     country: US
     kind: B2
@@ -20724,121 +21173,173 @@ families:
     kind: A
     document_type: application
     publication_date: 2008-01-02
-    status: null
+    title: Method and system for laser soft marking
+    application_number: CNA2005800460697A
+    filing_date: 2005-11-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101098769A
       google_patents: https://patents.google.com/patent/CN101098769A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101098769B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2011-06-01
-    status: null
+    title: Method and system for laser soft marking
+    application_number: CN2005800460697A
+    filing_date: 2005-11-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2025-11-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101098769B
       google_patents: https://patents.google.com/patent/CN101098769B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1819478A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2007-08-22
-    status: null
+    title: Method and system for laser soft marking
+    application_number: EP05820752A
+    filing_date: 2005-11-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1819478A2
       google_patents: https://patents.google.com/patent/EP1819478A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1819478A4
     country: EP
     kind: A4
     document_type: search-report
     publication_date: 2009-11-25
-    status: null
+    title: METHOD AND SYSTEM FOR LASER SURFACE MARKING
+    application_number: EP05820752A
+    filing_date: 2005-11-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1819478A4
       google_patents: https://patents.google.com/patent/EP1819478A4/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1819478B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 2017-09-27
-    status: null
+    title: Method and system for laser soft marking
+    application_number: EP05820752.3A
+    filing_date: 2005-11-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2025-11-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1819478B1
       google_patents: https://patents.google.com/patent/EP1819478B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2008520112A
     country: JP
     kind: A
     document_type: application
     publication_date: 2008-06-12
-    status: null
+    title: Laser soft marking method and system
+    application_number: JP2007541395A
+    filing_date: 2005-11-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008520112A
       google_patents: https://patents.google.com/patent/JP2008520112A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP5102041B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2012-12-19
-    status: null
+    title: Laser soft marking method and system
+    application_number: JP2007541395A
+    filing_date: 2005-11-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2025-11-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP5102041B2
       google_patents: https://patents.google.com/patent/JP5102041B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20070090180A
     country: KR
     kind: A
     document_type: application
     publication_date: 2007-09-05
-    status: null
+    title: Laser soft marking method and system
+    application_number: KR1020077012710A
+    filing_date: 2005-11-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20070090180A
       google_patents: https://patents.google.com/patent/KR20070090180A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR101332124B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2013-11-26
-    status: null
+    title: Method and system for laser soft marking
+    application_number: KR1020077012710A
+    filing_date: 2005-11-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2025-11-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR101332124B1
       google_patents: https://patents.google.com/patent/KR101332124B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: PT1819478T
     country: PT
     kind: T
     document_type: translation-of-granted-patent
     publication_date: 2017-10-20
+    title: METHOD AND SYSTEM FOR SOFT LASER MARKING
+    application_number: PT58207523T
+    filing_date: 2005-11-11
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DPT1819478T
       google_patents: https://patents.google.com/patent/PT1819478T/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2006053288A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2006-05-18
-    status: null
+    title: Method and system for laser soft marking
+    application_number: PCT/US2005/041144
+    filing_date: 2005-11-11
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2006053288A2
       google_patents: https://patents.google.com/patent/WO2006053288A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2006053288A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2007-01-04
-    status: null
+    title: Method and system for laser soft marking
+    application_number: PCT/US2005/041144
+    filing_date: 2005-11-11
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2006053288A3
       google_patents: https://patents.google.com/patent/WO2006053288A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7705268B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-starting-material
     relation: cited-on-page
@@ -20877,23 +21378,26 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US7501352B2, retrieved 2026-09-14
   expiry:
-    date: 2026-03-30
+    date: 2026-03-22
     estimated: true
-    basis: 'not bounded from the records retrieved: US20060228902A1; latest estimate US20060228902A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of TW200641997A (estimated: 20 years from the filing date shown; no
+      term remains for any grant on it)'
+  expired: true
   members:
   - number: US20060228902A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2006-10-12
-    status: null
+    title: Method and system for forming an oxynitride layer
+    application_number: US11/093,260
+    filing_date: 2005-03-30
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060228902A1
       google_patents: https://patents.google.com/patent/US20060228902A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7501352B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7501352B2
     country: US
     kind: B2
@@ -20916,61 +21420,83 @@ families:
     kind: A
     document_type: application
     publication_date: 2008-03-26
-    status: null
+    title: Method and system for forming an oxynitride layer
+    application_number: CNA2006800108823A
+    filing_date: 2006-02-16
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101151718A
       google_patents: https://patents.google.com/patent/CN101151718A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7501352B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2008535243A
     country: JP
     kind: A
     document_type: application
     publication_date: 2008-08-28
-    status: null
+    title: Method and system for forming an oxynitride layer
+    application_number: JP2008504042A
+    filing_date: 2006-02-16
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008535243A
       google_patents: https://patents.google.com/patent/JP2008535243A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7501352B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP4995807B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2012-08-08
-    status: null
+    title: Method and system for forming an oxynitride layer
+    application_number: JP2008504042A
+    filing_date: 2006-02-16
+    status: Expired - Fee Related
+    expiry:
+      date: 2026-02-16
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP4995807B2
       google_patents: https://patents.google.com/patent/JP4995807B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7501352B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20080003383A
     country: KR
     kind: A
     document_type: application
     publication_date: 2008-01-07
-    status: null
+    title: Method and system for forming oxynitride layer
+    application_number: KR1020077025080A
+    filing_date: 2006-02-16
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20080003383A
       google_patents: https://patents.google.com/patent/KR20080003383A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7501352B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200641997A
     country: TW
     kind: A
     document_type: application
     publication_date: 2006-12-01
+    title: Method and system for forming an oxynitride layer
+    application_number: TW095109788A
+    filing_date: 2006-03-22
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200641997A
       google_patents: https://patents.google.com/patent/TW200641997A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7501352B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2006107415A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2006-10-12
-    status: null
+    title: Method and system for forming an oxynitride layer
+    application_number: PCT/US2006/005418
+    filing_date: 2006-02-16
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2006107415A1
       google_patents: https://patents.google.com/patent/WO2006107415A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7501352B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-plasma-nitridation-chamber
     relation: cited-on-page
@@ -21005,21 +21531,24 @@ families:
   expiry:
     date: 2026-06-27
     estimated: true
-    basis: 'not bounded from the records retrieved: US20060292844A1; latest estimate US20060292844A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of TWI343604B (estimated upper bound: earliest priority date + 21 years
+      (12-month priority period + 20-year term))'
+  expired: true
   members:
   - number: US20060292844A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2006-12-28
-    status: null
+    title: Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric
+    application_number: US11/167,526
+    filing_date: 2005-06-27
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060292844A1
       google_patents: https://patents.google.com/patent/US20060292844A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7429538B2
     country: US
     kind: B2
@@ -21042,101 +21571,149 @@ families:
     kind: A
     document_type: application
     publication_date: 2008-06-25
-    status: null
+    title: Method for post-nitridation two-stage annealing of plasma-nitrided gate dielectric layers
+    application_number: CNA2006800229813A
+    filing_date: 2006-05-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101208782A
       google_patents: https://patents.google.com/patent/CN101208782A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101208782B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2010-05-19
-    status: null
+    title: Method for post-nitridation two-stage annealing of plasma-nitrided gate dielectric layers
+    application_number: CN2006800229813A
+    filing_date: 2006-05-26
+    status: Active
+    expiry:
+      date: 2026-05-26
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101208782B
       google_patents: https://patents.google.com/patent/CN101208782B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2008547220A
     country: JP
     kind: A
     document_type: application
     publication_date: 2008-12-25
-    status: null
+    title: Improved manufacturing method for annealing a plasma-nitrided gate dielectric in two steps
+      after nitridation
+    application_number: JP2008518181A
+    filing_date: 2006-05-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008547220A
       google_patents: https://patents.google.com/patent/JP2008547220A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP5072837B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2012-11-14
-    status: null
+    title: Improved manufacturing method for annealing a plasma-nitrided gate dielectric in two steps
+      after nitridation
+    application_number: JP2008518181A
+    filing_date: 2006-05-26
+    status: Active
+    expiry:
+      date: 2026-05-26
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP5072837B2
       google_patents: https://patents.google.com/patent/JP5072837B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20080047322A
     country: KR
     kind: A
     document_type: application
     publication_date: 2008-05-28
-    status: null
+    title: Improved Manufacturing Method for Two-Stage Post Nitriding of Plasma Nitrided Gate Dielectrics
+    application_number: KR1020077031042A
+    filing_date: 2006-05-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20080047322A
       google_patents: https://patents.google.com/patent/KR20080047322A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR100993124B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2010-11-08
-    status: null
+    title: Improved Manufacturing Method for Two-Stage Post Nitriding of Plasma Nitrided Gate Dielectrics
+    application_number: KR1020077031042A
+    filing_date: 2006-05-26
+    status: Active
+    expiry:
+      date: 2026-05-26
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR100993124B1
       google_patents: https://patents.google.com/patent/KR100993124B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200703514A
     country: TW
     kind: A
     document_type: application
     publication_date: 2007-01-16
+    title: Improved manufacturing method for two-step post nitridation annealing of plasma nitrided gate
+      dielectric
+    application_number: TW095119255A
+    filing_date: 2006-05-30
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200703514A
       google_patents: https://patents.google.com/patent/TW200703514A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI343604B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2011-06-11
+    title: Improved manufacturing method for two-step post nitridation annealing of plasma nitrided gate
+      dielectric
+    application_number: TW095119255A
+    filing_date: 2006-05-30
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI343604B
       google_patents: https://patents.google.com/patent/TWI343604B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2007001709A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2007-01-04
-    status: null
+    title: Improved manufacturing method for two-step post nitridation annealing of plasma nitrided gate
+      dielectric
+    application_number: PCT/US2006/020508
+    filing_date: 2006-05-26
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2007001709A2
       google_patents: https://patents.google.com/patent/WO2007001709A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2007001709A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2007-11-29
-    status: null
+    title: Improved manufacturing method for two-step post nitridation annealing of plasma nitrided gate
+      dielectric
+    application_number: PCT/US2006/020508
+    filing_date: 2006-05-26
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2007001709A3
       google_patents: https://patents.google.com/patent/WO2007001709A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7429538B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-plasma-nitridation-chamber
     relation: cited-on-page
@@ -21170,23 +21747,26 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US7375002B2, retrieved 2026-09-14
   expiry:
-    date: 2026-06-28
+    date: 2026-07-07
     estimated: true
-    basis: 'not bounded from the records retrieved: US20060292815A1; latest estimate US20060292815A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7375002B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment))
+  expired: true
   members:
   - number: US20060292815A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2006-12-28
-    status: null
+    title: MIM capacitor in a semiconductor device and method therefor
+    application_number: US11/168,579
+    filing_date: 2005-06-28
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060292815A1
       google_patents: https://patents.google.com/patent/US20060292815A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7375002B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7375002B2
     country: US
     kind: B2
@@ -21209,61 +21789,83 @@ families:
     kind: A
     document_type: application
     publication_date: 2008-07-02
-    status: null
+    title: MIM capacitor in semiconductor device and method for the same
+    application_number: CNA200680023703XA
+    filing_date: 2006-06-08
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101213641A
       google_patents: https://patents.google.com/patent/CN101213641A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7375002B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101213641B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2011-01-05
-    status: null
+    title: MIM capacitor in semiconductor device and method for the same
+    application_number: CN200680023703XA
+    filing_date: 2006-06-08
+    status: Expired - Fee Related
+    expiry:
+      date: 2026-06-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101213641B
       google_patents: https://patents.google.com/patent/CN101213641B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7375002B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200707706A
     country: TW
     kind: A
     document_type: application
     publication_date: 2007-02-16
+    title: MIM capacitor in a semiconductor device and method therefor
+    application_number: TW095122211A
+    filing_date: 2006-06-21
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200707706A
       google_patents: https://patents.google.com/patent/TW200707706A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7375002B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI389297B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2013-03-11
+    title: Metal-insulator-metal (MIM) capacitor in semiconductor device and method thereof
+    application_number: TW095122211A
+    filing_date: 2006-06-21
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI389297B
       google_patents: https://patents.google.com/patent/TWI389297B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7375002B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2007001783A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2007-01-04
-    status: null
+    title: Mim capacitor in a semiconductor device and method therefor
+    application_number: PCT/US2006/022280
+    filing_date: 2006-06-08
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2007001783A2
       google_patents: https://patents.google.com/patent/WO2007001783A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7375002B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2007001783A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2007-11-15
-    status: null
+    title: Mim capacitor in a semiconductor device and method therefor
+    application_number: PCT/US2006/022280
+    filing_date: 2006-06-08
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2007001783A3
       google_patents: https://patents.google.com/patent/WO2007001783A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7375002B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-135
     relation: cited-on-page
@@ -21326,23 +21928,26 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7985656B1, retrieved 2026-09-14
   expiry:
-    date: 2027-05-18
+    date: 2026-05-18
     estimated: true
-    basis: 'not bounded from the records retrieved: US20070267715A1, US7989911B1; latest estimate US7989911B1
-      (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term);
-      US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7989911B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US20070267715A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2007-11-22
-    status: null
+    title: Shallow trench isolation (STI) with trench liner of increased thickness
+    application_number: US11/436,503
+    filing_date: 2006-05-18
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20070267715A1
       google_patents: https://patents.google.com/patent/US20070267715A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7985656B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7985656B1
     country: US
     kind: B1
@@ -21365,11 +21970,18 @@ families:
     kind: B1
     document_type: granted-patent
     publication_date: 2011-08-02
-    status: null
+    title: Shallow trench isolation (STI) with trench liner of increased thickness
+    application_number: US12/607,868
+    filing_date: 2009-10-28
+    status: Expired - Lifetime
+    expiry:
+      date: 2026-05-18
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7989911B1
       google_patents: https://patents.google.com/patent/US7989911B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7985656B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-oxidation
     relation: cited-on-page
@@ -21413,9 +22025,10 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of EP2104648B1, retrieved 2026-09-14
   expiry:
-    date: 2027-10-17
+    date: 2028-05-14
     estimated: true
-    basis: EP2104648B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: US7731161B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
   expired: false
   members:
   - number: US20080257738A1
@@ -21423,51 +22036,70 @@ families:
     kind: A1
     document_type: application
     publication_date: 2008-10-23
-    status: null
+    title: Devices, Systems, and Methods for Carbonation of Deionized Water
+    application_number: US11/873,776
+    filing_date: 2007-10-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080257738A1
       google_patents: https://patents.google.com/patent/US20080257738A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7731161B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2010-06-08
-    status: null
+    title: Devices, systems, and methods for carbonation of deionized water
+    application_number: US11/873,776
+    filing_date: 2007-10-17
+    status: Active
+    expiry:
+      date: 2028-05-14
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7731161B2
       google_patents: https://patents.google.com/patent/US7731161B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101528612A
     country: CN
     kind: A
     document_type: application
     publication_date: 2009-09-09
-    status: null
+    title: Apparatus, system and method for carbonation of deionized water
+    application_number: CNA2007800387811A
+    filing_date: 2007-10-17
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101528612A
       google_patents: https://patents.google.com/patent/CN101528612A/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN105036284A
     country: CN
     kind: A
     document_type: application
     publication_date: 2015-11-11
-    status: null
+    title: Devices, systems, and methods for carbonation of deionized water
+    application_number: CN201510299061.7A
+    filing_date: 2007-10-17
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105036284A
       google_patents: https://patents.google.com/patent/CN105036284A/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP2104648A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2009-09-30
-    status: null
+    title: Devices, systems, and methods for carbonation of deionized water
+    application_number: EP07854132A
+    filing_date: 2007-10-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP2104648A2
       google_patents: https://patents.google.com/patent/EP2104648A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP2104648B1
     country: EP
     kind: B1
@@ -21490,61 +22122,87 @@ families:
     kind: A
     document_type: application
     publication_date: 2010-03-04
-    status: null
+    title: Apparatus, system and method for carbonating deionized water
+    application_number: JP2009533502A
+    filing_date: 2007-10-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2010506725A
       google_patents: https://patents.google.com/patent/JP2010506725A/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP4920751B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2012-04-18
-    status: null
+    title: Apparatus, system and method for carbonating deionized water
+    application_number: JP2009533502A
+    filing_date: 2007-10-17
+    status: Active
+    expiry:
+      date: 2027-10-17
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP4920751B2
       google_patents: https://patents.google.com/patent/JP4920751B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20090071597A
     country: KR
     kind: A
     document_type: application
     publication_date: 2009-07-01
-    status: null
+    title: Carbonization Device, System and Method of Deionized Water
+    application_number: KR1020097007875A
+    filing_date: 2007-10-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20090071597A
       google_patents: https://patents.google.com/patent/KR20090071597A/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR101406411B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2014-06-13
-    status: null
+    title: Systems and methods for carbonation of deionized water
+    application_number: KR1020097007875A
+    filing_date: 2007-10-17
+    status: Active
+    expiry:
+      date: 2027-10-17
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR101406411B1
       google_patents: https://patents.google.com/patent/KR101406411B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2008049001A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2008-04-24
-    status: null
+    title: Devices, systems, and methods for carbonation of deionized water
+    application_number: PCT/US2007/081633
+    filing_date: 2007-10-17
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008049001A2
       google_patents: https://patents.google.com/patent/WO2008049001A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2008049001A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2008-06-05
-    status: null
+    title: Devices, systems, and methods for carbonation of deionized water
+    application_number: PCT/US2007/081633
+    filing_date: 2007-10-17
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008049001A3
       google_patents: https://patents.google.com/patent/WO2008049001A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of EP2104648B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-wet-bench
     relation: cited-on-page
@@ -21584,33 +22242,43 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US9583501B1, retrieved 2026-09-14
   expiry:
-    date: 2027-12-22
+    date: 2026-12-22
     estimated: true
-    basis: 'not bounded from the records retrieved: US20080150002A1, US8222111B1; latest estimate US8222111B1
-      (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term);
-      US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: US8222111B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
   members:
   - number: US20080150002A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2008-06-26
-    status: null
+    title: Simultaneous Formation of a Top Oxide Layer in a Silicon-Oxide-Nitride-Oxide-Silicon (SONOS)
+      Transistor and a Gate Oxide in a Metal Oxide Semiconductor (MOS)
+    application_number: US11/615,683
+    filing_date: 2006-12-22
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080150002A1
       google_patents: https://patents.google.com/patent/US20080150002A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9583501B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8222111B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2012-07-17
-    status: null
+    title: Simultaneous formation of a top oxide layer in a silicon-oxide-nitride-oxide-silicon (SONOS)
+      transistor and a gate oxide in a metal oxide semiconductor (MOS)
+    application_number: US12/782,699
+    filing_date: 2010-05-18
+    status: Active
+    expiry:
+      date: 2026-12-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8222111B1
       google_patents: https://patents.google.com/patent/US8222111B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9583501B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9583501B1
     country: US
     kind: B1
@@ -21670,9 +22338,10 @@ families:
     status: Abandoned
     source: Google Patents (IFI Claims) status of US20090179253A1, retrieved 2026-09-14
   expiry:
-    date: 2027-06-13
+    date: 2027-06-17
     estimated: true
-    basis: US9355849B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: US12266521B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
   expired: false
   members:
   - number: US20090179253A1
@@ -21710,56 +22379,74 @@ families:
     kind: A1
     document_type: application
     publication_date: 2016-10-13
-    status: null
+    title: Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers
+    application_number: US15/099,025
+    filing_date: 2016-04-14
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160300724A1
       google_patents: https://patents.google.com/patent/US20160300724A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20090179253A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10903068B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2021-01-26
-    status: null
+    title: Oxide-nitride-oxide stack having multiple oxynitride layers
+    application_number: US15/099,025
+    filing_date: 2016-04-14
+    status: Active
+    expiry:
+      date: 2027-06-13
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10903068B2
       google_patents: https://patents.google.com/patent/US10903068B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20090179253A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20210249254A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2021-08-12
-    status: null
+    title: Oxide-nitride-oxide stack having multiple oxynitride layers
+    application_number: US17/157,704
+    filing_date: 2021-01-25
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210249254A1
       google_patents: https://patents.google.com/patent/US20210249254A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20090179253A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20230017648A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2023-01-19
-    status: null
+    title: Oxide-nitride-oxide stack having multiple oxynitride layers
+    application_number: US17/945,793
+    filing_date: 2022-09-15
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20230017648A1
       google_patents: https://patents.google.com/patent/US20230017648A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20090179253A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US12266521B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2025-04-01
-    status: null
+    title: Oxide-nitride-oxide stack having multiple oxynitride layers
+    application_number: US17/945,793
+    filing_date: 2022-09-15
+    status: Active
+    expiry:
+      date: 2027-06-17
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS12266521B2
       google_patents: https://patents.google.com/patent/US12266521B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20090179253A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: overview-index
     relation: cited-on-page
@@ -21824,9 +22511,9 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US7670963B2, retrieved 2026-09-14
   expiry:
-    date: 2027-09-26
+    date: 2027-09-28
     estimated: true
-    basis: US7670963B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: CN101548385B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US20080293254A1
@@ -21834,11 +22521,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2008-11-27
-    status: null
+    title: Single-wafer process for fabricating a nonvolatile charge trap memory device
+    application_number: US11/904,513
+    filing_date: 2007-09-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080293254A1
       google_patents: https://patents.google.com/patent/US20080293254A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7670963B2
     country: US
     kind: B2
@@ -21861,41 +22551,57 @@ families:
     kind: A
     document_type: application
     publication_date: 2009-09-30
-    status: null
+    title: Single Crystal Silicon Fabrication Process for Nonvolatile Charge Trap Memory Devices
+    application_number: CNA200780037848XA
+    filing_date: 2007-09-28
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101548385A
       google_patents: https://patents.google.com/patent/CN101548385A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101548385B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2013-03-27
-    status: null
+    title: Single-wafer process for fabricating nonvolatile charge trap memory device
+    application_number: CN200780037848XA
+    filing_date: 2007-09-28
+    status: Active
+    expiry:
+      date: 2027-09-28
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101548385B
       google_patents: https://patents.google.com/patent/CN101548385B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200847344A
     country: TW
     kind: A
     document_type: application
     publication_date: 2008-12-01
+    title: Single-wafer process for fabricating a nonvolatile charge trap memory device
+    application_number: TW096136689A
+    filing_date: 2007-09-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200847344A
       google_patents: https://patents.google.com/patent/TW200847344A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI455251B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2014-10-01
+    title: Single-wafer process for fabricating a nonvolatile charge trap memory device
+    application_number: TW096136689A
+    filing_date: 2007-09-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI455251B
       google_patents: https://patents.google.com/patent/TWI455251B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2008147388A1
     country: WO
     kind: A1
@@ -22361,33 +23067,37 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US8614124B2, retrieved 2026-09-14
   expiry:
-    date: 2028-05-25
+    date: 2027-12-27
     estimated: true
-    basis: 'not bounded from the records retrieved: US20080290400A1, US20090032863A1, US8637921B2, US9349877B1,
-      CN101517714A, CN101517714B, TW200847343A, TWI436455B, WO2008147386A1; latest estimate WO2008147386A1
-      (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))'
-  expired: unknown
+    basis: US9349877B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
   members:
   - number: US20080290400A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2008-11-27
-    status: null
+    title: SONOS ONO stack scaling
+    application_number: US11/904,506
+    filing_date: 2007-09-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080290400A1
       google_patents: https://patents.google.com/patent/US20080290400A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20090032863A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2009-02-05
-    status: null
+    title: Nitridation oxidation of tunneling layer for improved SONOS speed and retention
+    application_number: US12/005,813
+    filing_date: 2007-12-27
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090032863A1
       google_patents: https://patents.google.com/patent/US20090032863A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8614124B2
     country: US
     kind: B2
@@ -22410,71 +23120,105 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2014-01-28
-    status: null
+    title: Nitridation oxidation of tunneling layer for improved SONOS speed and retention
+    application_number: US12/005,813
+    filing_date: 2007-12-27
+    status: Expired - Fee Related
+    expiry:
+      date: 2029-05-08
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8637921B2
       google_patents: https://patents.google.com/patent/US8637921B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9349877B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2016-05-24
-    status: null
+    title: Nitridation oxidation of tunneling layer for improved SONOS speed and retention
+    application_number: US14/166,608
+    filing_date: 2014-01-28
+    status: Active
+    expiry:
+      date: 2027-12-27
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9349877B1
       google_patents: https://patents.google.com/patent/US9349877B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101517714A
     country: CN
     kind: A
     document_type: application
     publication_date: 2009-08-26
-    status: null
+    title: Scaling of SONOS ONO stacks
+    application_number: CNA2007800359633A
+    filing_date: 2007-09-28
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101517714A
       google_patents: https://patents.google.com/patent/CN101517714A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101517714B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2012-09-05
-    status: null
+    title: SONOS ONO stack shrinks proportionally
+    application_number: CN2007800359633A
+    filing_date: 2007-09-28
+    status: Active
+    expiry:
+      date: 2027-09-28
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101517714B
       google_patents: https://patents.google.com/patent/CN101517714B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200847343A
     country: TW
     kind: A
     document_type: application
     publication_date: 2008-12-01
+    title: SONOS ONO stack scaling
+    application_number: TW096136630A
+    filing_date: 2007-09-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200847343A
       google_patents: https://patents.google.com/patent/TW200847343A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI436455B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2014-05-01
+    title: Semiconductor-Oxide-Nitride-Oxide-Semiconductor (SONOS) Oxide-Nitride-Oxide (ONO) Stacking
+      Scaling
+    application_number: TW096136630A
+    filing_date: 2007-09-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI436455B
       google_patents: https://patents.google.com/patent/TWI436455B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2008147386A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2008-12-04
-    status: null
+    title: Sonos ono stack scaling
+    application_number: PCT/US2007/020966
+    filing_date: 2007-09-28
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008147386A1
       google_patents: https://patents.google.com/patent/WO2008147386A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -22612,24 +23356,25 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US8680601B2, retrieved 2026-09-14
   expiry:
-    date: 2028-05-25
+    date: 2027-09-28
     estimated: true
-    basis: 'not bounded from the records retrieved: US20080290399A1, US20140264550A1, US10079314B2, CN101636845A,
-      CN101636845B, TW200847408A, TWI481013B, TW201519414A, TWI572015B, WO2008147385A1; latest estimate
-      WO2008147385A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period
-      + 20-year term))'
-  expired: unknown
+    basis: CN101636845B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
   members:
   - number: US20080290399A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2008-11-27
-    status: null
+    title: Nonvolatile charge trap memory device having a deuterated layer in a multi-layer charge-trapping
+      region
+    application_number: US11/904,475
+    filing_date: 2007-09-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080290399A1
       google_patents: https://patents.google.com/patent/US20080290399A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8680601B2
     country: US
     kind: B2
@@ -22653,91 +23398,134 @@ families:
     kind: A1
     document_type: application
     publication_date: 2014-09-18
-    status: null
+    title: Nonvolatile Charge Trap Memory Device Having a Deuterated Layer in a Multi-Layer Charge-Trapping
+      Region
+    application_number: US14/225,152
+    filing_date: 2014-03-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140264550A1
       google_patents: https://patents.google.com/patent/US20140264550A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10079314B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2018-09-18
-    status: null
+    title: Nonvolatile charge trap memory device having a deuterated layer in a multi-layer charge-trapping
+      region
+    application_number: US14/225,152
+    filing_date: 2014-03-25
+    status: Active
+    expiry:
+      date: 2027-09-26
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10079314B2
       google_patents: https://patents.google.com/patent/US10079314B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101636845A
     country: CN
     kind: A
     document_type: application
     publication_date: 2010-01-27
-    status: null
+    title: Nonvolatile charge trap memory device having a deuterated layer in a multi-layer charge-trapping
+      region
+    application_number: CN200780035965A
+    filing_date: 2007-09-28
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101636845A
       google_patents: https://patents.google.com/patent/CN101636845A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101636845B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2013-06-12
-    status: null
+    title: Nonvolatile charge-trapping memory with deuterated layers in multilayer charge-trapping regions
+    application_number: CN2007800359652A
+    filing_date: 2007-09-28
+    status: Active
+    expiry:
+      date: 2027-09-28
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101636845B
       google_patents: https://patents.google.com/patent/CN101636845B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200847408A
     country: TW
     kind: A
     document_type: application
     publication_date: 2008-12-01
+    title: Nonvolatile charge trap memory device having a deuterated layer in a multi-layer charge-trapping
+      region
+    application_number: TW096136678A
+    filing_date: 2007-09-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200847408A
       google_patents: https://patents.google.com/patent/TW200847408A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI481013B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2015-04-11
+    title: Non-volatile charge trap memory device having a deuterated layer in a multilayer charge trap
+      region
+    application_number: TW096136678A
+    filing_date: 2007-09-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI481013B
       google_patents: https://patents.google.com/patent/TWI481013B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201519414A
     country: TW
     kind: A
     document_type: application
     publication_date: 2015-05-16
+    title: Non-volatile charge trap memory device having a deuterated layer in a multilayer charge trap
+      region
+    application_number: TW104101261A
+    filing_date: 2007-09-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201519414A
       google_patents: https://patents.google.com/patent/TW201519414A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI572015B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2017-02-21
+    title: Non-volatile charge trap memory device having deuterated layer in multilayer charge trap region
+      and manufacturing method thereof
+    application_number: TW104101261A
+    filing_date: 2007-09-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI572015B
       google_patents: https://patents.google.com/patent/TWI572015B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2008147385A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2008-12-04
-    status: null
+    title: Nonvolatile charge trap memory device having a deuterated layer in a multi-layer charge-trapping
+      region
+    application_number: PCT/US2007/020965
+    filing_date: 2007-09-28
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008147385A1
       google_patents: https://patents.google.com/patent/WO2008147385A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -23832,11 +24620,10 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US9076523B2, retrieved 2026-09-14
   expiry:
-    date: 2033-12-13
+    date: 2032-12-13
     estimated: true
-    basis: 'not bounded from the records retrieved: US20140169062A1, US20150262663A1; latest estimate
-      US20150262663A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period
-      + 20-year term); US patent term adjustment possible, not known without the record)'
+    basis: 'not bounded from the records retrieved: US20140169062A1; latest estimate US20140169062A1 (application;
+      any grant would expire at the latest about 20 years from filing (estimated))'
   expired: unknown
   members:
   - number: US20140169062A1
@@ -23844,11 +24631,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2014-06-19
-    status: null
+    title: Methods of Manufacturing Embedded Bipolar Switching Resistive Memory
+    application_number: US13/714,173
+    filing_date: 2012-12-13
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140169062A1
       google_patents: https://patents.google.com/patent/US20140169062A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9076523B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9076523B2
     country: US
     kind: B2
@@ -23871,11 +24661,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2015-09-17
-    status: null
+    title: Methods of Manufacturing Embedded Bipolar Switching Resistive Memory
+    application_number: US14/728,448
+    filing_date: 2015-06-02
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150262663A1
       google_patents: https://patents.google.com/patent/US20150262663A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9076523B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: overview-sky130b-reram
     relation: cited-on-page
@@ -24222,35 +25015,46 @@ families:
     status: Abandoned
     source: Google Patents (IFI Claims) status of US20190355583A1, retrieved 2026-09-14
   expiry:
-    date: 2034-07-22
+    date: 2034-01-04
     estimated: true
-    basis: 'not bounded from the records retrieved: US9123642B1, US10217639B1; latest estimate US9123642B1
-      (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term);
-      US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: US9123642B1 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
   members:
   - number: US9123642B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2015-09-01
-    status: null
+    title: Method of forming drain extended MOS transistors for high voltage circuits
+    application_number: US14/108,967
+    filing_date: 2013-12-17
+    status: Active
+    expiry:
+      date: 2034-01-04
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9123642B1
       google_patents: https://patents.google.com/patent/US9123642B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20190355583A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10217639B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2019-02-26
-    status: null
+    title: Method of forming drain extended MOS transistors for high voltage circuits
+    application_number: US14/842,326
+    filing_date: 2015-09-01
+    status: Active
+    expiry:
+      date: 2033-12-17
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10217639B1
       google_patents: https://patents.google.com/patent/US10217639B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20190355583A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20190355583A1
     country: US
     kind: A1
@@ -24444,11 +25248,11 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US10103244B2, retrieved 2026-09-14
   expiry:
-    date: 2035-01-10
+    date: 2036-02-17
     estimated: true
-    basis: 'not bounded from the records retrieved: US20150200295A1, US20160247897A1, CN105830214A, CN105830214B,
-      TW201530732A, WO2015105904A1; latest estimate WO2015105904A1 (estimated upper bound: earliest priority
-      date + 21 years (12-month priority period + 20-year term))'
+    basis: 'not bounded from the records retrieved: US20160247897A1, CN105830214A, TW201530732A; latest
+      estimate US20160247897A1 (application; any grant would expire at the latest about 20 years from
+      filing (estimated))'
   expired: unknown
   members:
   - number: US20150200295A1
@@ -24456,21 +25260,27 @@ families:
     kind: A1
     document_type: application
     publication_date: 2015-07-16
-    status: null
+    title: Drain Extended MOS Transistors With Split Channel
+    application_number: US14/494,917
+    filing_date: 2014-09-24
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150200295A1
       google_patents: https://patents.google.com/patent/US20150200295A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20160247897A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2016-08-25
-    status: null
+    title: Drain Extended MOS Transistors With Split Channel
+    application_number: US15/045,608
+    filing_date: 2016-02-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160247897A1
       google_patents: https://patents.google.com/patent/US20160247897A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10103244B2
     country: US
     kind: B2
@@ -24493,41 +25303,57 @@ families:
     kind: A
     document_type: application
     publication_date: 2016-08-03
-    status: null
+    title: Drain-extended MOS transistor with split channel
+    application_number: CN201580003146.4A
+    filing_date: 2015-01-07
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105830214A
       google_patents: https://patents.google.com/patent/CN105830214A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN105830214B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2020-03-13
-    status: null
+    title: Drain extended MOS transistor with separated channel
+    application_number: CN201580003146.4A
+    filing_date: 2015-01-07
+    status: Expired - Fee Related
+    expiry:
+      date: 2035-01-07
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105830214B
       google_patents: https://patents.google.com/patent/CN105830214B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201530732A
     country: TW
     kind: A
     document_type: application
     publication_date: 2015-08-01
+    title: Pole-extending MOS transistor with separation channel
+    application_number: TW103146513A
+    filing_date: 2014-12-31
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201530732A
       google_patents: https://patents.google.com/patent/TW201530732A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2015105904A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2015-07-16
-    status: null
+    title: Drain extended mos transistors with split channel
+    application_number: PCT/US2015/010516
+    filing_date: 2015-01-07
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015105904A1
       google_patents: https://patents.google.com/patent/WO2015105904A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-030
     relation: same-lineage-assignee
@@ -24929,24 +25755,24 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US9431609B2, retrieved 2026-09-14
   expiry:
-    date: 2035-08-14
+    date: 2034-12-08
     estimated: true
-    basis: 'not bounded from the records retrieved: US20160049584A1, CN106159083A, CN106159083B, KR20160021005A,
-      KR101626222B1; latest estimate US20160049584A1 (estimated upper bound: earliest priority date +
-      21 years (12-month priority period + 20-year term); US patent term adjustment possible, not known
-      without the record)'
-  expired: unknown
+    basis: KR101626222B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
   members:
   - number: US20160049584A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2016-02-18
-    status: null
+    title: Oxide film scheme for rram structure
+    application_number: US14/459,361
+    filing_date: 2014-08-14
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160049584A1
       google_patents: https://patents.google.com/patent/US20160049584A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9431609B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9431609B2
     country: US
     kind: B2
@@ -24969,41 +25795,61 @@ families:
     kind: A
     document_type: application
     publication_date: 2016-11-23
-    status: null
+    title: Oxidation film scheme for RRAM structure
+    application_number: CN201510148817.8A
+    filing_date: 2015-03-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN106159083A
       google_patents: https://patents.google.com/patent/CN106159083A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9431609B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN106159083B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2019-08-30
-    status: null
+    title: Oxide film solution for RRAM structure
+    application_number: CN201510148817.8A
+    filing_date: 2015-03-31
+    status: Expired - Fee Related
+    expiry:
+      date: 2035-03-31
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN106159083B
       google_patents: https://patents.google.com/patent/CN106159083B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9431609B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20160021005A
     country: KR
     kind: A
     document_type: application
     publication_date: 2016-02-24
-    status: null
+    title: Oxide film scheme for rram structure
+    application_number: KR1020140174844A
+    filing_date: 2014-12-08
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20160021005A
       google_patents: https://patents.google.com/patent/KR20160021005A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9431609B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR101626222B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2016-05-31
-    status: null
+    title: Oxide film scheme for rram structure
+    application_number: KR1020140174844A
+    filing_date: 2014-12-08
+    status: Active
+    expiry:
+      date: 2034-12-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR101626222B1
       google_patents: https://patents.google.com/patent/KR101626222B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9431609B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: materials-index
     relation: cited-on-page
