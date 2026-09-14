@@ -66,7 +66,7 @@ DOC_TYPES = {
 }
 RELATIONS = {"cited-on-page", "same-lineage-assignee", "technique-class"}
 DISCOVERY = {"cited-in-docs", "assignee-search", "family-resolution",
-             "citation-of-seed", "cited-by-seed"}
+             "cited-by-seed", "citing-seed"}
 ENDED = {"Expired - Lifetime", "Expired - Fee Related", "Abandoned",
          "Ceased", "Withdrawn", "Revoked", "Expired"}
 IN_FORCE = {"Active"}
