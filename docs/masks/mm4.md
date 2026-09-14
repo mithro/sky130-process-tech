@@ -403,7 +403,8 @@ arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
   the metal etch; {ref}`WTIAL4 <step-149>` — the stack patterned.
 * {ref}`mask-cap2m` — the capacitor mask whose plates metal 4 must
   enclose; {ref}`mask-vim3` and {ref}`mask-vim4` — the via masks below and
-  above; {ref}`mask-mm3` — the metal mask one level down.
+  above; {ref}`mask-mm3` and {ref}`mask-mm5` — the metal masks one level
+  down and up.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
   derivation table that records the `MM4` render's layers.
 * {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the

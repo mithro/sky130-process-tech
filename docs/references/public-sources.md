@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1717
+written page has exactly one entry here; the inventory holds 1718
 keyed entries as of 2026-09-14, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -59,7 +59,7 @@ that "the technology is the 8th generation SONOS technology node
 inductor-capable (`i`), poly resistor (`r`), SONOS shrunken cell (`s`)
 and 10 V regulated supply (`10R`). This is the public origin of the
 "S8" ↔ SKY130 identification. Tier: cross-check.
-Also used on the URPM mask page.
+Also used on the URPM and MM5 mask pages.
 
 **PDK-03** — *Criteria & Assumptions* page (contains the process stack
 diagram).
@@ -107,7 +107,8 @@ metal5/passivation region). Tier: cross-check.
 Also used on the PECVD, HDP-CVD and PVD cluster tool pages.
 Also used on the sputter targets material page.
 Also used on the substrates material page.
-Also used on the LI1M, VIM, VIM2, MM3, VIM3, CAP2M and MM4 mask pages.
+Also used on the LI1M, VIM, VIM2, MM3, VIM3, CAP2M, MM4 and MM5 mask
+pages.
 
 **PDK-05** — *Masks* page and `masks.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -164,8 +165,7 @@ metal 3–4 47 mΩ/sq, metal 5 29 mΩ/sq, poly 48 200 mΩ/sq, XHR poly
 120 000 mΩ/sq, P-diffusion 197 000 mΩ/sq) and contact/via resistances.
 Useful for inferring film thicknesses and materials (e.g. the 0.36 µm
 and 0.845 µm aluminium metals). Tier: cross-check.
-Also used on the RPM, RRPM, URPM, PSDM, NSDM, CTM1, MM1, VIM, MM2, VIM2,
-MM3, VIM3 and MM4 mask pages.
+Also used on the RPM, RRPM, URPM, CTM1, MM1, VIM, MM2, VIM2, MM3, VIM3, MM4, PSDM, NSDM and MM5 mask pages.
 
 **PDK-09** — *"SKY130 (SkyWater PDK) — Stackup Capacitance Data
 [public]"* spreadsheet, linked from PDK-08.
@@ -1818,8 +1818,7 @@ Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
 Tier: high-level.
 Also used on the lithography materials material page.
-Also used on the FOM, DNM, LVOM, NPCM, CAPM, MM3, CAP2M and MM4 mask
-pages.
+Also used on the FOM, DNM, LVOM, CAPM, MM3, CAP2M, MM4, NPCM and MM5 mask pages.
 
 **WIKI-LOCOS** — Wikipedia, *LOCOS*.
 <https://en.wikipedia.org/wiki/LOCOS> LOCOS isolation, the predecessor
@@ -3208,7 +3207,7 @@ of Integrated Circuits and Systems* **27**(1), 3–19 (2008).
 <https://doi.org/10.1109/TCAD.2007.907061> A survey of dummy-fill
 synthesis for CMP, the design-side view of the FOM "waffles". Used on
 step 004. Tier: deep dive.
-Also used on the FOM, MM1, MM2, MM3 and MM4 mask pages.
+Also used on the FOM, MM1, MM2, MM3, MM4 and MM5 mask pages.
 
 **KANG-1989** — J. S. Kang and D. K. Schroder, "Gettering in silicon",
 *Journal of Applied Physics* **65**(8), 2974–2985 (1989).
@@ -4390,7 +4389,7 @@ high performance ULSI", *IEDM 1995 Technical Digest*, pp. 241–244.
 <https://doi.org/10.1109/IEDM.1995.499187> Why interconnect, not the
 transistor, limits performance, motivating the metallisation stack. Used
 on the deposition category page. Tier: deep dive.
-Also used on the MM3 and MM4 mask pages.
+Also used on the MM3, MM4 and MM5 mask pages.
 
 **KAANTA-1987** — C. Kaanta, W. Cote, J. Cronin, K. Holland et al.,
 "Submicron wiring technology with tungsten and planarization", *IEDM
@@ -4549,8 +4548,7 @@ lithography category page.
 Also used on the coat/develop track page.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the NPCM, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M and
-MM4 mask pages.
+Also used on the MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, MM4, NPCM and MM5 mask pages.
 
 **DAMMEL-1993** — R. R. Dammel, *Diazonaphthoquinone-based Resists*,
 SPIE Tutorial Texts TT11, SPIE Press, 1993.
@@ -4559,7 +4557,7 @@ resist chemistry. Used on the lithography category page.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the CAPM and CAP2M mask pages.
+Also used on the CAPM, CAP2M and MM5 mask pages.
 
 **ITO-1983** — H. Ito and C. G. Willson, "Chemical amplification in the
 design of dry developing resist materials", *Polymer Engineering &
@@ -4696,8 +4694,7 @@ not about SKY130).
 Used on the lithography category page.
 Also used on the i-line stepper or scanner page.
 Tier: cross-check.
-Also used on the NTM, HVNTM, LDNTM, PSDM, NSDM, CAPM, MM3, CAP2M and MM4
-mask pages.
+Also used on the CAPM, MM3, CAP2M, MM4, NTM, HVNTM, LDNTM, PSDM, NSDM and MM5 mask pages.
 
 **ASML-750E** — ASML, *ASML introduces KrF lithography scanner* (PAS
 5500/750E), press release, 2000-04-04.
@@ -8056,7 +8053,7 @@ metallization", *Journal of Vacuum Science & Technology B* **6**(4),
 1113–1115 (1988). <https://doi.org/10.1116/1.584306> A refractory cap
 for anti-reflection and hillock suppression on aluminium. Used on steps
 112 and 113. Tier: deep dive.
-Also used on the MM1, MM2, CAPM, MM3, CAP2M and MM4 mask pages.
+Also used on the MM1, MM2, CAPM, MM3, CAP2M, MM4 and MM5 mask pages.
 
 **ROSENBERG-2000** — R. Rosenberg, D. C. Edelstein, C.-K. Hu and K. P.
 Rodbell, "Copper Metallization for High Performance Silicon Technology",
@@ -8449,7 +8446,7 @@ wiring RC delay issues for sub-0.25-micron generation CMOS", *Proc. IEEE
 62–64. <https://doi.org/10.1109/IITC.1998.704752> RC-delay issues of
 aluminium wiring at the sub-0.25 µm generation. Used on steps 123, 126
 and 134. Tier: deep dive.
-Also used on the MM3 and MM4 mask pages.
+Also used on the MM3, MM4 and MM5 mask pages.
 
 **WIKI-INTERCONNECT** — Wikipedia, *Interconnect (integrated circuits)*.
 <https://en.wikipedia.org/wiki/Interconnect_(integrated_circuits)>
@@ -8472,6 +8469,7 @@ Systems, and Applications (VLSI-TSA)*, pp. 154–157.
 <https://doi.org/10.1109/VTSA.2001.934506> Thick top metal for
 high-quality-factor spiral inductors on silicon. Used on step 134. Tier:
 deep dive.
+Also used on the MM5 mask page.
 
 **GREENWOOD-2007** — B. B. Greenwood and J. Prasad, "Integrating TiN
 only bottom plate metal-insulator metal capacitor (MIMC) for
@@ -8781,6 +8779,7 @@ interconnect etch with N₂ additions in a TCP etcher. Used on steps 155,
 Also used on the metal plasma etcher page.
 Tier: deep dive.
 Also used on the etch and chamber-clean gases material page.
+Also used on the MM5 mask page.
 
 **TAGUCHI-1998** — M. Taguchi, K. Maeda and J. Aoyama, "Improvement of
 filling capability by control of water outgassing from via holes in
@@ -8839,6 +8838,7 @@ Manufacturing Technology Workshop Proceedings*, pp. 153–155.
 <https://doi.org/10.1109/SMTW.2004.1393753> Corrosion and
 passivation-swelling defects in an ultra-low pattern-density thick-metal
 etch. Used on steps 162 and 163. Tier: deep dive.
+Also used on the MM5 mask page.
 
 **DESHMUKH-2003** — A. R. Deshmukh, "The effect of ratio of deposition
 times and via density on via fill in aluminum multilayer metallization",
@@ -8870,6 +8870,7 @@ Electronic Components and Technology Conference (ECTC 2003)*, pp.
 1344–1349. <https://doi.org/10.1109/ECTC.2003.1216469> Wire-bond and
 package-stress reliability of bond-over-active pad layouts for 0.13 µm
 CMOS. Used on steps 161 and 162. Tier: deep dive.
+Also used on the MM5 mask page.
 
 **HUNTER-2012** — S. Hunter, J. L. Clark, D. Hornberger and L. Rubio,
 "Use of Wire Bonding to Study Bond Pad Damage from Wafer Probe",
@@ -8897,6 +8898,7 @@ Plasma", *Journal of The Electrochemical Society* **134**(8), 2045–2048
 (1987). <https://doi.org/10.1149/1.2100816> Spectroscopic diagnostics of
 photoresist erosion in an aluminium etch plasma. Used on steps 162 and
 163. Tier: deep dive.
+Also used on the MM5 mask page.
 
 **LEE-2003** — W.-J. Lee and S.-K. Rha, "Effect of Underlayer on the Via
 Filling and the Microstructure of the Aluminum Film in Aluminum Plug
@@ -8912,6 +8914,7 @@ Components and Technology Conference (ECTC)*, pp. 2228–2232.
 <https://doi.org/10.1109/ECTC.2016.382> Copper ball bonds over probe
 marks on two pad aluminium thicknesses. Used on step 161. Tier: deep
 dive.
+Also used on the MM5 mask page.
 
 **MATSUOKA-1990** — F. Matsuoka, H. Iwai, K. Hama, H. Itoh, R. Nakata, T.
 Nakakubo, K. Maeguchi and K. Kanzaki, "Electromigration reliability for
@@ -8994,6 +8997,7 @@ designs), retrieved 2026-09-13.
 A published SKY130 seal-ring layout: a 6 µm `areaid.sl` band with a
 5 µm `nsm` band over four 0.3 µm diffusion rings and no drawn metal or
 via rings. Used on steps 165 and 166. Tier: cross-check.
+Also used on the MM5 mask page.
 
 **COMIZZOLI-1986** — R. B. Comizzoli, R. P. Frankenthal, P. C. Milner and
 J. D. Sinclair, "Corrosion of Electronic Materials and Devices",
@@ -9560,8 +9564,8 @@ gate-oxidation, source/drain-implant, contact, via, metal and MiM step
 pages.
 Also used on the parametric tester and prober page.
 Tier: cross-check.
-Also used on the FOM, NWM, PWBM, PWDEM, RRPM, URPM, CAPM, VIM3 and CAP2M
-mask pages.
+Also used on the FOM, NWM, PWBM, PWDEM, RRPM, URPM, CAPM, VIM3, CAP2M
+and MM5 mask pages.
 
 **RAW-DATA-TESTTILE-OPEN** — SkyWater PDK Authors, *SkyWater 130nm Open
 Manufacturing Test Tile*, `docs/sky130-testtile-open/README.rst` with
@@ -14564,8 +14568,8 @@ SkyWater, SKY130 or the Bloomington fab; they describe masks, mask
 making and inspection, phase-shift masks, lithography and proximity
 correction, implantation, well engineering, CMP fill, layout-dependent
 effects, embedded SONOS flash, dual gate oxides, polysilicon resistors,
-and multi-threshold, varactor and high-voltage devices in general. Every
-URL was fetched on 2026-09-13 or 2026-09-14: papers and books were checked through Crossref
+multi-threshold, varactor and high-voltage devices, and bond pads in
+general. Every URL was fetched on 2026-09-13 or 2026-09-14: papers and books were checked through Crossref
 (bibliographic data) and OpenAlex (abstracts or tables of contents), and
 their annotations rest on those. An entry's tier records its first use.
 
@@ -14724,8 +14728,7 @@ are nominal and do not apply to butting edges or corners") and Table F4,
 each pair of conducting layers: "Licon1" from `li1` to diff and tap,
 "Licon1 AND Npc" from `li1` to poly, "Mcon" from met1 to `li1` and "Via"
 from met2 to met1. Used on the LICM1 mask page. Tier: cross-check.
-Also used on the LVOM, NPCM, PSDM, NSDM, LI1M, CTM1, MM1, VIM, MM2,
-VIM2, CAPM, MM3, VIM3 and MM4 mask pages.
+Also used on the LVOM, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, MM4, NPCM, PSDM, NSDM and MM5 mask pages.
 
 **CHOO-2000** — L. C. Choo, O. Park, M. J. Sack and S. C. Tam,
 "Integration of attenuated phase-shift mask to 0.13-μm technology
@@ -14841,7 +14844,7 @@ a particular mask level"; a model built from designed experiments
 predicts the settings for any level and was verified on production mask
 levels of varying pattern density. Used on the MM2 mask page. Tier: deep
 dive.
-Also used on the MM3 and MM4 mask pages.
+Also used on the MM3, MM4 and MM5 mask pages.
 
 #### FOM mask page (first cited there)
 
@@ -15193,6 +15196,20 @@ circuit simulation", its dependence on processing parameters "such as
 doping or deposition techniques" is investigated and explained, and
 design guidelines and a noise model for circuit simulation are given.
 Used on the URPM mask page. Tier: deep dive.
+
+#### MM5 mask page (first cited there)
+
+**CHING-1988** — T. B. Ching and W. H. Schroen, "Bond Pad Structure
+Reliability", *26th International Reliability Physics Symposium* (1988),
+pp. 64–70. <https://doi.org/10.1109/IRPS.1988.362201> Bond-pad cracking
+under bonding loads; the abstract: oxides below the pad metallisation
+"are seen to have varying tolerance to the associated mechanical loading
+and ultrasonic scrubbing, resulting in bond pad cracking", a study
+characterised various oxides and "different metal systems consisting of
+aluminum and titanium tungsten alloy", and "The proper choice of
+metallization was found to give significant improvement in tolerance of
+bond-process-induced stresses". Used on the MM5 mask page. Tier: deep
+dive.
 
 ## 9. Evidence about specific tools at SkyWater
 

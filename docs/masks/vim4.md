@@ -277,6 +277,8 @@ via4.1 and via4.2).
 
 * {ref}`VIM4 <step-159>` and {ref}`VIM4E <step-160>` — the mask step
   and the via etch; {ref}`WTIAL5 <step-161>` — the metal that follows.
+* {ref}`mask-mm4` and {ref}`mask-mm5` — the metal masks below and above,
+  whose lines must enclose the vias.
 * {ref}`masks-index` — every mask's PDK entry, plates, renders and the
   mask-type record for vias 2–4.
 * {ref}`machine-duv-krf-stepper` and {ref}`machine-i-line-stepper` — the
