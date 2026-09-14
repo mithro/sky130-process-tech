@@ -259,8 +259,9 @@ raises NMOS {term}`Vt`.[^hook-2003]
   on.[^levinson-2005]
 * Lee et al. (Genus), IIT 1996 — outgassing of thick resists during MeV
   implantation.[^lee-1996]
-* Stolmeijer, *IEEE TED* 1986 — the original twin-well CMOS process
-  built with high-energy implants through resist.[^stolmeijer-1986]
+* Stolmeijer, *IEEE TED* 1986 — a twin-well CMOS process using implants of
+  up to 1 MeV, with an N-type isolation well and retrograde
+  wells.[^stolmeijer-1986]
 * Lee and Son (Hyundai/Hynix), US 6,455,402 — chained retrograde P-well
   implants placed through a resist mask.[^pat-well-hynix]
 * Borland, Cho and Kim, IIT 1998 — latch-up with MeV-implanted wells
