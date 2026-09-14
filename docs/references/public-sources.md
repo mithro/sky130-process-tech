@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1714
+written page has exactly one entry here; the inventory holds 1715
 keyed entries as of 2026-09-14, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -74,7 +74,7 @@ scanner and coat/develop track pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the substrates material page.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -114,7 +114,7 @@ NWM, HVTPM, LVTNM, HVTRM, NTM, HVNTM, LDNTM, PSDM, NSDM, TUNM, ONOM,
 LVOM, RPM, NPCM, P1M, LICM1, LI1M, CTM1, MM1–MM5, VIM, VIM2–VIM4, NSM,
 PDM, CU1M, PMM2, …). This is the public basis for the mask index and
 for the order of the lithography steps. Tier: cross-check.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 **PDK-06** — *Layers Reference* and `gds_layers.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
@@ -122,7 +122,7 @@ Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM
 GDS layer/purpose numbers and the process meaning of each drawn layer
 (e.g. `vhvi` "used to identify nodes that operate at 12V nominal (16V
 max)"). No thicknesses. Tier: cross-check.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 **PDK-07** — *Device Details* pages and per-device cross-section drawings.
 <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>;
@@ -142,7 +142,7 @@ etcher pages.
 Also used on the PECVD and PVD cluster tool pages.
 Tier: cross-check.
 Also used on the sputter targets material page.
-Also used on the DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, VIM4, CAPM, MM3, VIM3, CAP2M, MM4 and TUNM mask pages.
+Also used on the DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, VIM4, TUNM, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 **PDK-08** — *Parasitic Layout Extraction* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
@@ -153,7 +153,7 @@ metal 3–4 47 mΩ/sq, metal 5 29 mΩ/sq, poly 48 200 mΩ/sq, XHR poly
 120 000 mΩ/sq, P-diffusion 197 000 mΩ/sq) and contact/via resistances.
 Useful for inferring film thicknesses and materials (e.g. the 0.36 µm
 and 0.845 µm aluminium metals). Tier: cross-check.
-Also used on the CTM1, MM1, VIM and MM2 mask pages.
+Also used on the RPM, CTM1, MM1, VIM and MM2 mask pages.
 Also used on the VIM2, MM3, VIM3 and MM4 mask pages.
 
 **PDK-09** — *"SKY130 (SkyWater PDK) — Stackup Capacitance Data
@@ -196,7 +196,7 @@ dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
 (enclosure rules between deep N-well and N-well); poly.2 (spacing of
 poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
 Tier: cross-check.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 **PDK-HV** — *High Voltage Methodology* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>.
@@ -393,7 +393,7 @@ Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
 or scanner pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -423,7 +423,7 @@ the same wording as the notes in the process-steps sheet's "Run Mask
 IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
 on the mask index, the HVTPM step page and the sky130B ReRAM overview.
 Tier: cross-check.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 ## 3. SkyWater Technology corporate sources
 
@@ -440,7 +440,7 @@ wafers/month", "90 nm + feature geometries", and that the site was
 "recently expanded in 2020 to enable additional capacity and Cu back
 end of line". The "SkyWater Process Integration Tools & Capabilities"
 list then names tools and chemistries by area:
-Also used on the TUNM, ONOM and LVOM mask pages.
+Also used on the TUNM, ONOM, LVOM and RPM mask pages.
 
 * *Lithography* — "ASML I-line stepper", "ASML I-line scanner", "ASML
   DUV stepper", "ASML DUV scanner", "ASML 193nm single stage scanner –
@@ -1404,7 +1404,7 @@ large mask error factors", and the metrology crosscut calls the "20%
 measurement precision to process tolerance metric" "somewhat relaxed".
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, MM4 and LVOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, MM4 and RPM mask pages.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
@@ -1759,6 +1759,7 @@ Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM and TUNM mask
 pages.
+Also used on the RPM mask page.
 
 **WIKI-KEITHLEY** — Wikipedia, *Keithley Instruments*.
 <https://en.wikipedia.org/wiki/Keithley_Instruments> Company article on
@@ -1804,7 +1805,7 @@ of STI. Used on the oxidation category page. Tier: high-level.
 absorber and pellicles. Used on the lithography category page. Tier:
 high-level.
 Also used on the lithography materials material page.
-Also used on the FOM, DNM, LVTNM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
+Also used on the FOM, DNM, LVTNM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 **WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
 <https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
@@ -1947,6 +1948,7 @@ Tier: high-level.
 the ohms-per-square convention. Used on the test category page.
 Also used on the sheet-resistance and dose metrology page.
 Tier: high-level.
+Also used on the RPM mask page.
 
 **WIKI-RTP** — Wikipedia, *Rapid thermal processing*.
 <https://en.wikipedia.org/wiki/Rapid_thermal_processing> Lamp heating,
@@ -2558,7 +2560,7 @@ over a lateral distance on the order of a micrometer"; models a
 "2.3 µm-thick pwell mask".
 Also used on the high-energy implanter page.
 Tier: deep dive.
-Also used on the LVTNM, NWM, HVTPM, PWBM and TUNM mask pages.
+Also used on the LVTNM, NWM, HVTPM, PWBM, TUNM and RPM mask pages.
 
 **SHEU-2006** — Y.-M. Sheu, K.-W. Su, S. Tian, S.-J. Yang, C.-C. Wang,
 M.-J. Chen and S. Liu, *"Modeling the Well-Edge Proximity Effect in
@@ -2768,7 +2770,7 @@ thick-resist imaging.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the FOM, DNM, LVTNM, HVTPM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
+Also used on the FOM, DNM, LVTNM, HVTPM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
@@ -3339,6 +3341,7 @@ Physics Research B* **7–8**, 501–506 (1985).
 <https://doi.org/10.1016/0168-583X(85)90421-5> The carbonised layer that
 forms on ion-implanted photoresist, the reason implant strips are hard.
 Used on step 009. Tier: deep dive.
+Also used on the RPM mask page.
 
 **OTTO-1994** — O. W. Otto, J. G. Garofalo, K. K. Low, C.-M. Yuan, R. C.
 Henderson, C. Pierrat, R. L. Kostelak, S. Vaidya and P. K. Vasudev,
@@ -5576,6 +5579,7 @@ Circuits and Displays*, 2nd ed., Kluwer Academic, 1998.
 structure, doping, oxidation and electrical properties of poly films.
 Used on steps 048, 050, 053, 055, 056 and 063. Tier: high-level / deep
 dive.
+Also used on the RPM mask page.
 
 **KINSBRON-1983** — E. Kinsbron, M. Sternheim and R. Knoell,
 "Crystallization of amorphous silicon films during low pressure chemical
@@ -5616,6 +5620,7 @@ Transactions on Electron Devices* **28**(10), 1163–1171 (1981).
 <https://doi.org/10.1109/T-ED.1981.20504> Grain-boundary trapping and
 dopant segregation in doped poly, the model behind poly resistor and
 gate doping. Used on steps 048, 050, 052, 053 and 056. Tier: deep dive.
+Also used on the RPM mask page.
 
 **MEYERSON-1984** — B. S. Meyerson and W. Olbricht, "Phosphorus-Doped
 Polycrystalline Silicon via LPCVD: I. Process Characterization",
@@ -5748,6 +5753,7 @@ Electron Devices* **36**(4), 738–744 (1989).
 <https://doi.org/10.1109/16.22479> The design of thin-film poly
 resistors for analogue ICs. Used on steps 049, 053 and 056. Tier: deep
 dive.
+Also used on the RPM mask page.
 
 **LU-1981** — N. C.-C. Lu, L. Gerzberg, C.-Y. Lu and J. D. Meindl,
 "Modeling and optimization of monolithic polycrystalline silicon
@@ -5755,6 +5761,7 @@ resistors", *IEEE Transactions on Electron Devices* **28**(7), 818–830
 (1981). <https://doi.org/10.1109/T-ED.1981.20437> Modelling and
 optimisation of monolithic poly resistors: why the doping level sets
 everything. Used on steps 049, 053, 055 and 056. Tier: deep dive.
+Also used on the RPM mask page.
 
 **LU-1982** — N. C.-C. Lu, L. Gerzberg and J. D. Meindl, "Scaling
 limitations of monolithic polycrystalline-silicon resistors in VLSI
@@ -5769,6 +5776,7 @@ resistor matching performance of polysilicon films in a CMOS process",
 80–83. <https://doi.org/10.1109/RME.2009.5201322> Matching performance
 of different poly resistor films in a CMOS process. Used on steps 049
 and 052. Tier: deep dive.
+Also used on the RPM mask page.
 
 **SETO-1975** — J. Y. W. Seto, "The electrical properties of
 polycrystalline silicon films", *Journal of Applied Physics* **46**(12),
@@ -5776,6 +5784,7 @@ polycrystalline silicon films", *Journal of Applied Physics* **46**(12),
 trapping theory of poly conduction that explains the steep dependence of
 resistance on dose. Used on steps 049, 052, 053, 055 and 056. Tier: deep
 dive.
+Also used on the RPM mask page.
 
 **TSANG-2014** — Y. Tsang, R. Shiono, G. Pfeffer and S. Kwan,
 "Characterization and Understanding of High Valued Polysilicon Resistor
@@ -5785,6 +5794,7 @@ Fingers", *IEEE Transactions on Semiconductor Manufacturing* **27**(2),
 variation across banks of high-value poly resistors, a modern
 manufacturing view. Used on steps 049, 052, 055 and 056. Tier: deep
 dive.
+Also used on the RPM mask page.
 
 **UPRETI-1991** — N. K. Upreti and S. Singh, "Grain boundary effect on
 the electrical properties of boron-doped polysilicon films", *Bulletin
@@ -5800,6 +5810,7 @@ coefficient of resistance resistor films for integrated circuits",
 <https://doi.org/10.1116/1.3466531> High-sheet-resistance, low-TCR
 resistor films for ICs. Used on steps 049, 053, 055 and 056. Tier: deep
 dive.
+Also used on the RPM mask page.
 
 #### Resist strips after the poly and tip implants (steps 051, 054, 057, 067, 070 and 074)
 
@@ -11064,7 +11075,8 @@ single-machine overlay ≤ 40 nm and ≤ 80 nm matched to another /275,
 illuminator with conventional and annular modes, and phase-modulated
 TTL alignment. Used on the i-line stepper or scanner page. Tier:
 cross-check (vendor statement).
-Also used on the DNM, LVTNM, NWM, HVTPM, TUNM, ONOM and LVOM mask pages.
+Also used on the DNM, LVTNM, NWM, HVTPM, TUNM, ONOM, LVOM and RPM mask
+pages.
 
 **ASML-PAS5500-450F** — ASML, *PAS 5500/450F i-Line Step-and-Scan*,
 refurbished systems data sheet, 2019.
@@ -14485,7 +14497,7 @@ but increases rapidly when the critical dimension (CD) is less than 0.5
 contacts", dark-field spaces are more sensitive than light-field lines,
 and attenuated PSMs behave like chrome-on-glass masks. Used on the DNM
 mask page. Tier: deep dive.
-Also used on the FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
+Also used on the FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and RPM mask pages.
 
 **RIZVI-2005** — S. Rizvi (ed.), *Handbook of Photomask Manufacturing
 Technology*, CRC Press, 2005, ISBN 978-1-4200-2878-2.
@@ -14791,7 +14803,7 @@ cross-check.
 Also used on the LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM and ONOM mask
 pages.
 Also used on the VIM2, CAPM, MM3, VIM3, CAP2M and MM4 mask pages.
-Also used on the LVOM mask page.
+Also used on the LVOM and RPM mask pages.
 
 #### LVTNM mask page (first cited there)
 
@@ -15054,6 +15066,19 @@ edge of STI"; a new process prevents the thinning "mainly by a
 combination of a thick sidewall oxide with SiN pullback", avoiding a
 double hump in the subthreshold characteristics. Used on the LVOM mask
 page. Tier: deep dive.
+
+#### RPM mask page (first cited there)
+
+**LIU-2001** — W.-C. Liu, K.-B. Thei, H.-M. Chuang, K.-W. Lin,
+C.-C. Cheng, Y.-S. Ho, C.-W. Su, S.-C. Wong, C.-H. Lin and C. H. Diaz,
+"Characterization of polysilicon resistors in sub-0.25 μm CMOS ULSI
+applications", *IEEE Electron Device Letters* **22**(7), 318–320 (2001).
+<https://doi.org/10.1109/55.930677> n⁺ and p⁺ poly resistors with Ti- and
+Co-salicide at their ends in a sub-0.25 µm CMOS process with borderless
+contacts; the abstract proposes "A simple and useful model" to extract
+the electrical width reduction (ΔW), the interface resistance and the
+"pure sheet resistance" of the resistors. Used on the RPM mask page.
+Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
