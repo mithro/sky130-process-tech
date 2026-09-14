@@ -1069,12 +1069,14 @@ recipe and of where the SONOS module sits in a 130 nm logic flow.
 oxide-nitride-oxide (ONO) dielectric for SONOS-type devices"*,
 K. Ramkumar, M. Rathor, B. Parameshwaran, L. Lancaster; filed
 2002-06-28, granted 2005-11-29.
-<https://patents.google.com/patent/US6969689B1/en>. Tunnel oxide
-"less than about 25 Å", charge-storing nitride "less than about 200 Å
-… preferably less than about 100 Å", top oxide "less than about 50 Å";
-all three layers formed in one furnace window of "about 700° C. to
-about 875° C." using NH₃, dichlorosilane and N₂O by LPCVD. Tier:
-deep dive.
+<https://patents.google.com/patent/US6969689B1/en>. Several
+embodiments, not one recipe: in one, a tunnel dielectric of "less than
+about 25 Å" and a charge storing layer of "less than about 200 Å,
+preferably less than about 150 Å, more preferably less than about
+100 Å"; in another, a top insulating layer of "about 100 Å, preferably
+less than about 50 Å"; in a third, the three layers formed at
+temperatures "from about 700° C. to about 875° C.", with LPCVD base
+materials including dichlorosilane and nitrous oxide. Tier: deep dive.
 Also used on the ONOM mask page.
 
 **PAT-02** — US 2009/0179253 A1, *"Oxide-nitride-oxide stack having
