@@ -60,6 +60,7 @@ families:
   - PAT-SHOCKLEY
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SHOCKLEY.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US2787564A/en
 - id: GP23886506
   family:
@@ -296,6 +297,7 @@ families:
   - PAT-MEGASONIC-RCA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MEGASONIC-RCA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US3893869A/en
 - id: GP25400807
   family:
@@ -382,6 +384,7 @@ families:
   - PAT-PHOTOMASK-KLA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-PHOTOMASK-KLA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4247203A/en
 - id: GP21918419
   family:
@@ -456,6 +459,7 @@ families:
   - PAT-DISK-NOVA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DISK-NOVA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4234797A/en
 - id: GP22942562
   family:
@@ -531,6 +535,7 @@ families:
   - PAT-SCAN-TENCOR
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SCAN-TENCOR.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4378159A/en
 - id: GP27029211
   family:
@@ -588,6 +593,7 @@ families:
   - PAT-ARC-BREWER
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-ARC-BREWER.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4910122A/en
 - id: GP6203424
   family:
@@ -706,6 +712,7 @@ families:
   - PAT-LASERMARK-WACKER
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LASERMARK-WACKER.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4522656A/en
 - id: GP15425124
   family:
@@ -832,6 +839,7 @@ families:
   - PAT-BHF-DAIKIN
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-BHF-DAIKIN.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4582624A/en
 - id: GP24235560
   family:
@@ -917,6 +925,7 @@ families:
   - PAT-COLLECTOR-TENCOR
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-COLLECTOR-TENCOR.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4601576A/en
 - id: GP27541944
   family:
@@ -993,6 +1002,7 @@ families:
   - PAT-RTP-TAMARACK
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RTP-TAMARACK.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4649261A/en
 - id: GP24451614
   family:
@@ -1111,6 +1121,7 @@ families:
   - PAT-THERMALWAVE-THERMAWAVE
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-THERMALWAVE-THERMAWAVE.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4579463A/en
 - id: GP27493788
   family:
@@ -1167,6 +1178,7 @@ families:
   - PAT-TARGET-PROFILE-GENUS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TARGET-PROFILE-GENUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5215639A/en
 - id: GP24828889
   family:
@@ -1274,6 +1286,7 @@ families:
   - PAT-RSMAP-PROMETRIX
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RSMAP-PROMETRIX.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4703252A/en
 - id: GP24841884
   family:
@@ -1361,6 +1374,7 @@ families:
   - PAT-PLASMAWAVE-THERMAWAVE
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-PLASMAWAVE-THERMAWAVE.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4854710A/en
 - id: GP27111847
   family:
@@ -1424,6 +1438,7 @@ families:
   - PAT-LI-TI-HOLLOWAY
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LI-TI-HOLLOWAY.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4657628A/en
 - id: GP24930502
   family:
@@ -1520,6 +1535,7 @@ families:
   - PAT-LI-TI-HAKEN
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LI-TI-HAKEN.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4821085A/en
 - id: GP24955302
   family:
@@ -1655,6 +1671,7 @@ families:
   - PAT-LINAC-EATON
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LINAC-EATON.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4667111A/en
 - id: GP24957338
   family:
@@ -1712,6 +1729,7 @@ families:
   - PAT-PICOSECOND-BROWN
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-PICOSECOND-BROWN.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4710030A/en
 - id: GP15976485
   family:
@@ -1842,6 +1860,7 @@ families:
   - PAT-RESIST-TOK
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RESIST-TOK.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4731319A/en
 - id: GP25155097
   family:
@@ -2029,6 +2048,7 @@ families:
   - PAT-CMP-IBM-1988
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CMP-IBM-1988.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4789648A/en
 - id: GP25155001
   family:
@@ -2215,6 +2235,7 @@ families:
   - PAT-CMP-IBM-1990
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CMP-IBM-1990.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4944836A/en
 - id: GP27357991
   family:
@@ -2300,6 +2321,7 @@ families:
   - PAT-TWIN-HARRIS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TWIN-HARRIS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5247199A/en
 - id: GP25274513
   family:
@@ -2359,6 +2381,7 @@ families:
   - PAT-TIN-ETCH-TI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TIN-ETCH-TI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4675073A/en
 - id: GP16907918
   family:
@@ -2456,6 +2479,7 @@ families:
   - PAT-BHF-HASHIMOTO
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-BHF-HASHIMOTO.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4795582A/en
 - id: GP25460564
   family:
@@ -2581,6 +2605,7 @@ families:
   - PAT-SLOPED-MOTOROLA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SLOPED-MOTOROLA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4698128A/en
 - id: GP22680079
   family:
@@ -2735,6 +2760,7 @@ families:
   - PAT-MERIE-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MERIE-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4842683A/en
 - id: GP25481509
   family:
@@ -3000,6 +3026,7 @@ families:
   - PAT-P5000-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-P5000-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5000113A/en
 - id: GP27553885
   family:
@@ -3058,6 +3085,7 @@ families:
   - PAT-CORNER-TOSHIBA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CORNER-TOSHIBA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5258332A/en
 - id: GP3543072
   family:
@@ -3303,6 +3331,7 @@ families:
   - PAT-SPIN-SEZ
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SPIN-SEZ.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4903717A/en
 - id: GP23365380
   family:
@@ -3432,6 +3461,7 @@ families:
   - PAT-BPR-THERMAWAVE
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-BPR-THERMAWAVE.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4999014A/en
 - id: GP26998663
   family:
@@ -3490,6 +3520,7 @@ families:
   - PAT-STAGED-VACUUM-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-STAGED-VACUUM-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5186718A/en
 - id: GP23476680
   family:
@@ -3601,6 +3632,7 @@ families:
   - PAT-TAPER-ATT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TAPER-ATT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4919748A/en
 - id: GP23554962
   family:
@@ -3860,6 +3892,7 @@ families:
   - PAT-TCP-LAM
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TCP-LAM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US4948458A/en
 - id: GP23576244
   family:
@@ -4080,6 +4113,7 @@ families:
   - PAT-WCVD-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-WCVD-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5028565A/en
 - id: GP24566844
   family:
@@ -4139,6 +4173,7 @@ families:
   - PAT-MAIWL-RUDOLPH
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MAIWL-RUDOLPH.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5166752A/en
 - id: GP27042189
   family:
@@ -4337,6 +4372,7 @@ families:
   - PAT-RTP-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RTP-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5155336A/en
 - id: GP23870722
   family:
@@ -4456,6 +4492,7 @@ families:
   - PAT-COLLIMATOR-VARIAN
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-COLLIMATOR-VARIAN.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5330628A/en
 - id: GP23997467
   family:
@@ -4581,6 +4618,7 @@ families:
   - PAT-AL-MULTISTEP-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-AL-MULTISTEP-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5108570A/en
 - id: GP27460980
   family:
@@ -4686,6 +4724,7 @@ families:
   - PAT-TIW-HITACHI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TIW-HITACHI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5160534A/en
 - id: GP24212535
   family:
@@ -4755,6 +4794,7 @@ families:
   - PAT-BACKSIDE-NOVELLUS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-BACKSIDE-NOVELLUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5374594A/en
 - id: GP24443399
   family:
@@ -5014,6 +5054,7 @@ families:
   - PAT-EKC-HYDROXYLAMINE
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-EKC-HYDROXYLAMINE.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5334332A/en
 - id: GP26322164
   family:
@@ -5172,6 +5213,7 @@ families:
   - PAT-TWOPHASE-ORBOT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TWOPHASE-ORBOT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5699447A/en
 - id: GP27450687
   family:
@@ -5227,6 +5269,7 @@ families:
   - PAT-FORCEFILL-ELECTROTECH
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-FORCEFILL-ELECTROTECH.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5527561A/en
 - id: GP25202080
   family:
@@ -5285,6 +5328,7 @@ families:
   - PAT-TORCH-DRIMER
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TORCH-DRIMER.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5257926A/en
   notes:
   - Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows
@@ -5464,6 +5508,7 @@ families:
   - PAT-RESURF-TI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RESURF-TI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5406110A/en
 - id: GP25448458
   family:
@@ -5527,6 +5572,7 @@ families:
   - PAT-NH4CL-VLSI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-NH4CL-VLSI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5303558A/en
 - id: GP25461879
   family:
@@ -5876,6 +5922,7 @@ families:
   - PAT-PAD-RODEL
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-PAD-RODEL.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5578362A/en
 - id: GP27479272
   family:
@@ -5937,6 +5984,7 @@ families:
   - PAT-TARGET-BOND-JAPANENERGY
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TARGET-BOND-JAPANENERGY.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5693203A/en
 - id: GP25518280
   family:
@@ -6066,6 +6114,7 @@ families:
   - PAT-ICP-NOVELLUS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-ICP-NOVELLUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5346578A/en
 - id: GP25529547
   family:
@@ -6139,6 +6188,7 @@ families:
   - PAT-SCRUBBER-ONTRAK
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SCRUBBER-ONTRAK.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5442828A/en
 - id: GP25546287
   family:
@@ -6203,6 +6253,7 @@ families:
   - PAT-TAPER-CHARTERED
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TAPER-CHARTERED.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5308415A/en
 - id: GP21710466
   family:
@@ -6261,6 +6312,7 @@ families:
   - PAT-PAD-FLUORINE-MICRON
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-PAD-FLUORINE-MICRON.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5380401A/en
 - id: GP19355404
   family:
@@ -6380,6 +6432,7 @@ families:
   - PAT-HALO-GOLDSTAR
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HALO-GOLDSTAR.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5364807A/en
 - id: GP22246938
   family:
@@ -6449,6 +6502,7 @@ families:
   - PAT-QUAD-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-QUAD-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5372957A/en
 - id: GP12697185
   family:
@@ -6524,6 +6578,7 @@ families:
   - PAT-TORCH-YAMAHA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TORCH-YAMAHA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5633212A/en
 - id: GP17554170
   family:
@@ -6610,6 +6665,7 @@ families:
   - PAT-LPCVD-NEC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LPCVD-NEC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5503678A/en
 - id: GP26377048
   family:
@@ -6696,6 +6752,7 @@ families:
   - PAT-VF-TRANSFER-TEL
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-VF-TRANSFER-TEL.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5551984A/en
 - id: GP22631367
   family:
@@ -6859,6 +6916,7 @@ families:
   - PAT-CMP-ENDPOINT-IBM
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CMP-ENDPOINT-IBM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5433651A/en
 - id: GP46252077
   family:
@@ -6916,6 +6974,7 @@ families:
   - PAT-BHF-STARTEC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-BHF-STARTEC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5722442A/en
 - id: GP22748832
   family:
@@ -7060,6 +7119,7 @@ families:
   - PAT-ASHER-FUSION
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-ASHER-FUSION.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5498308A/en
 - id: GP22834355
   family:
@@ -7136,6 +7196,7 @@ families:
   - PAT-UMC-DC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-UMC-DC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5393679A/en
 - id: GP27502820
   family:
@@ -7444,6 +7505,7 @@ families:
   - PAT-INSPECT-KLA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-INSPECT-KLA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5864394A/en
 - id: GP23061269
   family:
@@ -7652,6 +7714,7 @@ families:
   - PAT-DPS-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DPS-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5540824A/en
 - id: GP23253952
   family:
@@ -8061,6 +8124,7 @@ families:
   - PAT-SDS-ATMI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SDS-ATMI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5518528A/en
 - id: GP24770421
   family:
@@ -8360,6 +8424,7 @@ families:
   - PAT-CMP-WINDOW
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CMP-WINDOW.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5893796A/en
 - id: GP23689967
   family:
@@ -8498,6 +8563,7 @@ families:
   - PAT-TARGET-BOND-MRC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TARGET-BOND-MRC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5836506A/en
 - id: GP26456233
   family:
@@ -8606,6 +8672,7 @@ families:
   - PAT-LOADLOCK-KOKUSAI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LOADLOCK-KOKUSAI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5735961A/en
 - id: GP23905130
   family:
@@ -8663,6 +8730,7 @@ families:
   - PAT-OXIME-AMD
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-OXIME-AMD.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5710067A/en
 - id: GP24070664
   family:
@@ -8761,6 +8829,7 @@ families:
   - PAT-FUSE-IBM
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-FUSE-IBM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5872390A/en
 - id: GP17268321
   family:
@@ -8868,6 +8937,7 @@ families:
   - PAT-VF-INSULATION-TEL
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-VF-INSULATION-TEL.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5709543A/en
 - id: GP17432179
   family:
@@ -8949,6 +9019,7 @@ families:
   - PAT-BOAT-TEL
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-BOAT-TEL.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5820367A/en
 - id: GP24193081
   family:
@@ -9066,6 +9137,7 @@ families:
   - PAT-MIM-IBM
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MIM-IBM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5708559A/en
 - id: GP24192580
   family:
@@ -9340,6 +9412,7 @@ families:
   - PAT-CMP-MIRRA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CMP-MIRRA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5738574A/en
 - id: GP18429343
   family:
@@ -9443,6 +9516,7 @@ families:
   - PAT-LPCVD-KOKUSAI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LPCVD-KOKUSAI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5902103A/en
 - id: GP24345606
   family:
@@ -9617,6 +9691,7 @@ families:
   - PAT-DEUTERIUM-UIUC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DEUTERIUM-UIUC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5872387A/en
 - id: GP24412185
   family:
@@ -9768,6 +9843,7 @@ families:
   - PAT-HDP-CLEAN-NOVELLUS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HDP-CLEAN-NOVELLUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6200412B1/en
 - id: GP24414167
   family:
@@ -9837,6 +9913,7 @@ families:
   - PAT-HALO-CHARTERED
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HALO-CHARTERED.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5595919A/en
 - id: GP26689885
   family:
@@ -9893,6 +9970,7 @@ families:
   - PAT-EBR-CLARIANT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-EBR-CLARIANT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5814433A/en
 - id: GP27361220
   family:
@@ -9950,6 +10028,7 @@ families:
   - PAT-RPN-TI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RPN-TI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6136654A/en
 - id: GP24652841
   family:
@@ -10029,6 +10108,7 @@ families:
   - PAT-HOTPHOS-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HOTPHOS-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5830375A/en
 - id: GP25134219
   family:
@@ -10158,6 +10238,7 @@ families:
   - PAT-DOSE-EATON
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DOSE-EATON.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5760409A/en
 - id: GP24741421
   family:
@@ -10221,6 +10302,7 @@ families:
   - PAT-IMP-COIL-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-IMP-COIL-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5707498A/en
 - id: GP24728963
   family:
@@ -10410,6 +10492,7 @@ families:
   - PAT-HDP-REACTOR-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HDP-REACTOR-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6170428B1/en
 - id: GP24820519
   family:
@@ -10475,6 +10558,7 @@ families:
   - PAT-DGOX-AMD
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DGOX-AMD.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6033943A/en
 - id: GP26794054
   family:
@@ -10588,6 +10672,7 @@ families:
   - PAT-STRIP-ULVAC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-STRIP-ULVAC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5795831A/en
 - id: GP24997773
   family:
@@ -10982,6 +11067,7 @@ families:
   - PAT-CARRIER-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CARRIER-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6183354B1/en
 - id: GP25007997
   family:
@@ -11091,6 +11177,7 @@ families:
   - PAT-RPC-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RPC-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5812403A/en
 - id: GP25030826
   family:
@@ -11242,6 +11329,7 @@ families:
   - PAT-CMP-CABOT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CMP-CABOT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5958288A/en
 - id: GP25087511
   family:
@@ -11341,6 +11429,7 @@ families:
   - PAT-VT-LSI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-VT-LSI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5963801A/en
 - id: GP25102092
   family:
@@ -11458,6 +11547,7 @@ families:
   - PAT-STRIP-MOSEL
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-STRIP-MOSEL.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5811358A/en
 - id: GP25122771
   family:
@@ -11534,6 +11624,7 @@ families:
   - PAT-MULTI-LDD-AMD
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MULTI-LDD-AMD.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5793090A/en
 - id: GP25194044
   family:
@@ -11876,6 +11967,7 @@ families:
   - PAT-MDZ-MEMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MDZ-MEMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5994761A/en
 - id: GP25236318
   family:
@@ -11991,6 +12083,7 @@ families:
   - PAT-BILLI-GENUS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-BILLI-GENUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5821589A/en
 - id: GP25239372
   family:
@@ -12153,6 +12246,7 @@ families:
   - PAT-CRACKSTOP-IBM
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CRACKSTOP-IBM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5789302A/en
 - id: GP46276600
   family:
@@ -12212,6 +12306,7 @@ families:
   - PAT-LINEAR-LAM
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LINEAR-LAM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6425812B1/en
 - id: GP25360177
   family:
@@ -12358,6 +12453,7 @@ families:
   - PAT-SEASONING-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SEASONING-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6121161A/en
 - id: GP26729228
   family:
@@ -12427,6 +12523,7 @@ families:
   - PAT-ETCHSTOP-TI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-ETCHSTOP-TI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6090697A/en
 - id: GP26633062
   family:
@@ -12534,6 +12631,7 @@ families:
   - PAT-THINNER-SAMSUNG
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-THINNER-SAMSUNG.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6159646A/en
 - id: GP25464477
   family:
@@ -12910,6 +13008,7 @@ families:
   - PAT-OBLIQUE-KLA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-OBLIQUE-KLA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6201601B1/en
 - id: GP25536403
   family:
@@ -12967,6 +13066,7 @@ families:
   - PAT-LPCVD-SONY
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LPCVD-SONY.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5800616A/en
 - id: GP21950172
   family:
@@ -13022,6 +13122,7 @@ families:
   - PAT-WORLEY-2000
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-WORLEY-2000.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6020614A/en
 - id: GP22109576
   family:
@@ -13111,6 +13212,7 @@ families:
   - PAT-HDP-NOVELLUS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HDP-NOVELLUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6030881A/en
 - id: GP21630827
   family:
@@ -13197,6 +13299,7 @@ families:
   - PAT-VIA-POISON-UMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-VIA-POISON-UMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6013581A/en
 - id: GP26323689
   family:
@@ -13308,6 +13411,7 @@ families:
   - PAT-TORCH-PERSYS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TORCH-PERSYS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6179609B1/en
 - id: GP22616474
   family:
@@ -13375,6 +13479,7 @@ families:
   - PAT-MULTISTATION-NOVELLUS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MULTISTATION-NOVELLUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6319553B1/en
 - id: GP22689334
   family:
@@ -13432,6 +13537,7 @@ families:
   - PAT-HALO-AMD-ZERO
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HALO-AMD-ZERO.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6232166B1/en
 - id: GP22722349
   family:
@@ -13510,6 +13616,7 @@ families:
   - PAT-DUMMY-UMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DUMMY-UMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6214745B1/en
 - id: GP26812562
   family:
@@ -13599,6 +13706,7 @@ families:
   - PAT-HCM-NOVELLUS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HCM-NOVELLUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6179973B1/en
 - id: GP19572018
   family:
@@ -13731,6 +13839,7 @@ families:
   - PAT-WELL-HYNIX
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-WELL-HYNIX.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6455402B2/en
 - id: GP23113681
   family:
@@ -13819,6 +13928,7 @@ families:
   - PAT-VT-AMD
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-VT-AMD.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6238982B1/en
 - id: GP23358573
   family:
@@ -13927,6 +14037,7 @@ families:
   - PAT-RESIST-ZILOG
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RESIST-ZILOG.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6576405B1/en
 - id: GP23626242
   family:
@@ -13987,6 +14098,7 @@ families:
   - PAT-FUSEWIN-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-FUSEWIN-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6300252B1/en
 - id: GP23688532
   family:
@@ -14052,6 +14164,7 @@ families:
   - PAT-FUSE-VANGUARD
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-FUSE-VANGUARD.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6294474B1/en
 - id: GP23783296
   family:
@@ -14214,6 +14327,7 @@ families:
   - PAT-IMP-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-IMP-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6350353B2/en
 - id: GP24331908
   family:
@@ -14361,6 +14475,7 @@ families:
   - PAT-LINAC-AXCELIS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LINAC-AXCELIS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6653803B1/en
 - id: GP24449421
   family:
@@ -14490,6 +14605,7 @@ families:
   - PAT-SPRAY-SEMITOOL
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SPRAY-SEMITOOL.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7305999B2/en
 - id: GP24538683
   family:
@@ -14557,6 +14673,7 @@ families:
   - PAT-SPE-AMD
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SPE-AMD.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6521502B1/en
 - id: GP24577983
   family:
@@ -14666,6 +14783,7 @@ families:
   - PAT-LDD-MICRON
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-LDD-MICRON.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6759288B2/en
 - id: GP26926543
   family:
@@ -14794,6 +14912,7 @@ families:
   - PAT-FARADAY-VARIAN
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-FARADAY-VARIAN.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6723998B2/en
 - id: GP22880690
   family:
@@ -14937,6 +15056,7 @@ families:
   - PAT-DEMOS-TI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DEMOS-TI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6660603B2/en
 - id: GP24795638
   family:
@@ -15004,6 +15124,7 @@ families:
   - PAT-BIM-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-BIM-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6379849B1/en
 - id: GP24897586
   family:
@@ -15104,6 +15225,7 @@ families:
   - PAT-MIM-NEWPORTFAB
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MIM-NEWPORTFAB.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6430028B1/en
 - id: GP24961682
   family:
@@ -15193,6 +15315,7 @@ families:
   - PAT-SPIKE-IBM
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SPIKE-IBM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6518136B2/en
 - id: GP28675849
   family:
@@ -15252,6 +15375,7 @@ families:
   - PAT-HALO-AMD-DIFF
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HALO-AMD-DIFF.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6630385B1/en
 - id: GP25297601
   family:
@@ -15322,6 +15446,7 @@ families:
   - PAT-SEALRING-ZEEVO
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SEALRING-ZEEVO.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6492716B1/en
 - id: GP25317682
   family:
@@ -15462,6 +15587,7 @@ families:
   - PAT-HDP-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HDP-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6914016B2/en
 - id: GP46204269
   family:
@@ -15546,6 +15672,7 @@ families:
   - PAT-PNL-NOVELLUS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-PNL-NOVELLUS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6635965B1/en
 - id: GP25360011
   family:
@@ -15625,6 +15752,7 @@ families:
   - PAT-ENDPOINT-TEL
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-CN-TEL, PAT-ENDPOINT-TEL.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6376262B1/en
 - id: GP25418952
   family:
@@ -15690,7 +15818,89 @@ families:
   - PAT-HV-GRADED-CYP
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-HV-GRADED-CYP.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6531366B1/en
+- id: GP31979047
+  family:
+    source: Google Patents family ID
+    google_family_id: '31979047'
+  representative: US6818558B1
+  title: Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS)
+    type devices
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Manuj Rathor
+  - Krishnaswamy Ramkumar
+  - Fred Jenne
+  - Loren Lancaster
+  dates:
+    priority: 2001-07-31
+    filing: 2002-06-28
+    grant: 2004-11-16
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6818558B1, retrieved 2026-09-14
+  expiry:
+    date: 2021-09-18
+    estimated: true
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6818558B1 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US6709928B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2004-03-23
+    title: Semiconductor device having silicon-rich layer and method of manufacturing such a device
+    application_number: US09/920,378
+    filing_date: 2001-07-31
+    status: Expired - Lifetime
+    expiry:
+      date: 2021-07-31
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6709928B1
+      google_patents: https://patents.google.com/patent/US6709928B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US6818558B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2004-11-16
+    title: Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS)
+      type devices
+    application_number: US10/185,470
+    filing_date: 2002-06-28
+    status: Expired - Lifetime
+    expiry:
+      date: 2021-09-18
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6818558B1
+      google_patents: https://patents.google.com/patent/US6818558B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns depositing a SONOS charge-storing nitride in
+      portions with changing gas-flow ratios, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority
+    before 2010-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide),
+    priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow
+    trench isolation), priority before 2016-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6818558B1/en
 - id: GP7697942
   family:
     source: Google Patents family ID
@@ -15776,6 +15986,7 @@ families:
   - PAT-SORTER-INFINEON
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SORTER-INFINEON.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6747230B2/en
 - id: GP25521092
   family:
@@ -16006,7 +16217,66 @@ families:
   - PAT-MIM-PHILIPS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MIM-PHILIPS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6717193B2/en
+- id: GP33476239
+  family:
+    source: Google Patents family ID
+    google_family_id: '33476239'
+  representative: US6828201B1
+  title: Method of manufacturing a top insulating layer for a sonos-type device
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Krishnaswamy Ramkumar
+  dates:
+    priority: 2001-10-22
+    filing: 2001-10-22
+    grant: 2004-12-07
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6828201B1, retrieved 2026-09-14
+  expiry:
+    date: 2021-10-22
+    estimated: true
+    basis: 'all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6828201B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US6828201B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2004-12-07
+    title: Method of manufacturing a top insulating layer for a sonos-type device
+    application_number: US10/054,515
+    filing_date: 2001-10-22
+    status: Expired - Lifetime
+    expiry:
+      date: 2021-10-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6828201B1
+      google_patents: https://patents.google.com/patent/US6828201B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns growing the top oxide of a SONOS-type stack by
+      in-situ steam generation from the charge-storing nitride, and it is not evidence that the technique
+      is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide),
+    priority before 2016-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6828201B1/en
 - id: GP25537645
   family:
     source: Google Patents family ID
@@ -16224,6 +16494,7 @@ families:
   - PAT-TARGET-TEXTURE-PRAXAIR
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TARGET-TEXTURE-PRAXAIR.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6605199B2/en
 - id: GP26708682
   family:
@@ -16453,6 +16724,7 @@ families:
   - PAT-STI-CR
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-STI-CR.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7439141B2/en
 - id: GP32848879
   family:
@@ -16516,6 +16788,7 @@ families:
   - PAT-YTTRIA
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-YTTRIA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6776873B1/en
   notes:
   - Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows
@@ -16629,7 +16902,78 @@ families:
   - PAT-DPN-ANNEAL-CHARTERED
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DPN-ANNEAL-CHARTERED.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US20030170956A1/en
+- id: GP29778448
+  family:
+    source: Google Patents family ID
+    google_family_id: '29778448'
+  representative: US6677213B1
+  title: SONOS structure including a deuterated oxide-silicon interface and method for making the same
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  - Frederick B. Jenne
+  dates:
+    priority: 2002-03-08
+    filing: 2002-03-08
+    grant: 2004-01-13
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6677213B1, retrieved 2026-09-14
+  expiry:
+    date: 2023-03-08
+    estimated: true
+    basis: 'not bounded from the records retrieved: US7042054B1; latest estimate US7042054B1 (estimated
+      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
+      term adjustment possible, not known without the record)'
+  expired: unknown
+  members:
+  - number: US6677213B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2004-01-13
+    title: SONOS structure including a deuterated oxide-silicon interface and method for making the same
+    application_number: US10/094,108
+    filing_date: 2002-03-08
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-03-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6677213B1
+      google_patents: https://patents.google.com/patent/US6677213B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US7042054B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2006-05-09
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7042054B1
+      google_patents: https://patents.google.com/patent/US7042054B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US6677213B1 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns diffusing deuterium into the interfaces of a
+      SONOS structure during the reflow of an overlying dielectric, and it is not evidence that the technique
+      is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - cited-by-seed
+  - citing-seed
+  discovery_note: cited by US20090179253A1, US8940645B2 (Google Patents citation tables); cites US5872387A
+    (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6677213B1/en
 - id: GP29214361
   family:
     source: Google Patents family ID
@@ -16772,6 +17116,7 @@ families:
   - PAT-WELL-IBM
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-WELL-IBM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6667205B2/en
 - id: GP29417389
   family:
@@ -16913,6 +17258,7 @@ families:
   - PAT-DNW-HYNIX
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DNW-HYNIX.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6806133B2/en
 - id: GP35405131
   family:
@@ -17001,6 +17347,7 @@ families:
   - PAT-01
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-01.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6969689B1/en
   notes:
   - Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows
@@ -17277,6 +17624,7 @@ families:
   - PAT-VT-RRR
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-VT-RRR.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US20110006372A1/en
 - id: GP31992738
   family:
@@ -17344,6 +17692,7 @@ families:
   - PAT-SPIKE-AMAT-AMBIENT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SPIKE-AMAT-AMBIENT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6803297B2/en
 - id: GP32659145
   family:
@@ -17415,6 +17764,7 @@ families:
   - PAT-SPIKE-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SPIKE-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6897131B2/en
 - id: GP32068901
   family:
@@ -17486,6 +17836,7 @@ families:
   - PAT-NH4CL-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-NH4CL-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US20040069224A1/en
 - id: GP32593189
   family:
@@ -17552,6 +17903,7 @@ families:
   - PAT-FUSE-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-FUSE-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6835642B2/en
 - id: GP32990685
   family:
@@ -17772,6 +18124,7 @@ families:
   - PAT-STI-AMBERWAVE
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-STI-AMBERWAVE.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6960781B2/en
 - id: GP33193196
   family:
@@ -17969,6 +18322,7 @@ families:
   - PAT-FUJ
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-FUJ.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7605041B2/en
 - id: GP33298522
   family:
@@ -18076,6 +18430,7 @@ families:
   - PAT-STRIP-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-STRIP-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US20040214448A1/en
 - id: GP32851038
   family:
@@ -18158,6 +18513,7 @@ families:
   - PAT-MIM-STACK-NEWPORTFAB
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MIM-STACK-NEWPORTFAB.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7078310B1/en
 - id: GP33457548
   family:
@@ -18326,6 +18682,7 @@ families:
   - PAT-DPN-RF-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DPN-RF-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7514373B2/en
 - id: GP34591550
   family:
@@ -18452,6 +18809,7 @@ families:
   - PAT-MIM-INFINEON
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MIM-INFINEON.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7112507B2/en
 - id: GP34080863
   family:
@@ -18544,6 +18902,7 @@ families:
   - PAT-DUMMY-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DUMMY-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6849549B1/en
 - id: GP34633830
   family:
@@ -18619,6 +18978,7 @@ families:
   - PAT-MIM-STACK-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MIM-STACK-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7317221B2/en
 - id: GP34678118
   family:
@@ -18705,6 +19065,7 @@ families:
   - PAT-PAD-FLUORINE-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-PAD-FLUORINE-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7055532B2/en
 - id: GP35540402
   family:
@@ -18797,6 +19158,7 @@ families:
   - PAT-DEMOS-TI2
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DEMOS-TI2.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US20060006461A1/en
   notes:
   - Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows
@@ -18877,6 +19239,7 @@ families:
   - PAT-MIM-TI-ALCAP
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MIM-TI-ALCAP.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7250334B2/en
 - id: GP35448183
   family:
@@ -19116,6 +19479,7 @@ families:
   - PAT-ASHER-AXCELIS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-ASHER-AXCELIS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7449416B2/en
 - id: GP36337293
   family:
@@ -19301,6 +19665,7 @@ families:
   - PAT-SOFTMARK-GSI
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SOFTMARK-GSI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7705268B2/en
 - id: GP37073778
   family:
@@ -19432,6 +19797,7 @@ families:
   - PAT-SPA-TEL
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-SPA-TEL.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7501352B2/en
 - id: GP37568096
   family:
@@ -19597,6 +19963,7 @@ families:
   - PAT-PNA-AMAT
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-PNA-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7429538B2/en
 - id: GP37568077
   family:
@@ -19751,6 +20118,7 @@ families:
   - PAT-MIM-FREESCALE
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MIM-FREESCALE.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7375002B2/en
 - id: GP38711248
   family:
@@ -19836,6 +20204,7 @@ families:
   - PAT-STI-LATTICE
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-STI-LATTICE.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7985656B1/en
 - id: GP39203155
   family:
@@ -20008,7 +20377,92 @@ families:
   - PAT-DICO2-MKS
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-DICO2-MKS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/EP2104648B1/en
+- id: GP39541580
+  family:
+    source: Google Patents family ID
+    google_family_id: '39541580'
+  representative: US9583501B1
+  title: Simultaneous formation of a top oxide layer in a silicon-oxide-nitride-oxide-silicon (SONOS)
+    transistor and a gate oxide in a metal oxide semiconductor (MOS)
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Jeong-Mo Hwang
+  dates:
+    priority: 2006-12-22
+    filing: 2015-01-16
+    grant: 2017-02-28
+  legal_status:
+    status: Expired - Fee Related
+    source: Google Patents (IFI Claims) status of US9583501B1, retrieved 2026-09-14
+  expiry:
+    date: 2027-12-22
+    estimated: true
+    basis: 'not bounded from the records retrieved: US20080150002A1, US8222111B1; latest estimate US8222111B1
+      (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term);
+      US patent term adjustment possible, not known without the record)'
+  expired: unknown
+  members:
+  - number: US20080150002A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2008-06-26
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080150002A1
+      google_patents: https://patents.google.com/patent/US20080150002A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9583501B1 (record page not fetched)
+  - number: US8222111B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2012-07-17
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8222111B1
+      google_patents: https://patents.google.com/patent/US8222111B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9583501B1 (record page not fetched)
+  - number: US9583501B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2017-02-28
+    title: Simultaneous formation of a top oxide layer in a silicon-oxide-nitride-oxide-silicon (SONOS)
+      transistor and a gate oxide in a metal oxide semiconductor (MOS)
+    application_number: US14/599,157
+    filing_date: 2015-01-16
+    status: Expired - Fee Related
+    expiry:
+      date: 2026-12-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9583501B1
+      google_patents: https://patents.google.com/patent/US9583501B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns forming the SONOS top oxide and a logic gate
+      oxide in the same oxidation, and it is not evidence that the technique is used in SKY130.
+  - target: step-043
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns forming the SONOS top oxide and a logic gate
+      oxide in the same oxidation, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before
+    2016-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US9583501B1/en
 - id: GP40849883
   family:
     source: Google Patents family ID
@@ -20033,13 +20487,10 @@ families:
     status: Abandoned
     source: Google Patents (IFI Claims) status of US20090179253A1, retrieved 2026-09-14
   expiry:
-    date: 2028-05-25
+    date: 2027-06-13
     estimated: true
-    basis: 'not bounded from the records retrieved: US9355849B1, US20160300724A1, US10903068B2, US20210249254A1,
-      US20230017648A1, US12266521B2; latest estimate US9355849B1 (estimated upper bound: earliest priority
-      date + 21 years (12-month priority period + 20-year term); US patent term adjustment possible, not
-      known without the record)'
-  expired: unknown
+    basis: US9355849B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
   members:
   - number: US20090179253A1
     country: US
@@ -20059,12 +20510,18 @@ families:
     kind: B1
     document_type: granted-patent
     publication_date: 2016-05-31
-    status: null
+    title: Oxide-nitride-oxide stack having multiple oxynitride layers
+    application_number: US13/917,500
+    filing_date: 2013-06-13
+    status: Active
+    expiry:
+      date: 2027-06-13
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9355849B1
       google_patents: https://patents.google.com/patent/US9355849B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20090179253A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20160300724A1
     country: US
     kind: A1
@@ -20156,7 +20613,194 @@ families:
   - PAT-02
   discovery:
   - cited-in-docs
+  - assignee-search
+  - citing-seed
+  discovery_note: 'Cited on docs pages; inventory PAT-02. Also reached through member US9355849B1: Google
+    Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01 (retrieved
+    2026-09-14); cites US20090179253A1, US6136654A, US8093128B2 (Google Patents citation tables).'
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US20090179253A1/en
+- id: GP40072821
+  family:
+    source: Google Patents family ID
+    google_family_id: '40072821'
+  representative: US7670963B2
+  title: Single-wafer process for fabricating a nonvolatile charge trap memory device
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  - Sagy Levy
+  dates:
+    priority: 2007-05-25
+    filing: 2007-09-26
+    grant: 2010-03-02
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US7670963B2, retrieved 2026-09-14
+  expiry:
+    date: 2027-09-26
+    estimated: true
+    basis: US7670963B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
+  members:
+  - number: US20080293254A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2008-11-27
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080293254A1
+      google_patents: https://patents.google.com/patent/US20080293254A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+  - number: US7670963B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2010-03-02
+    title: Single-wafer process for fabricating a nonvolatile charge trap memory device
+    application_number: US11/904,513
+    filing_date: 2007-09-26
+    status: Active
+    expiry:
+      date: 2027-09-26
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7670963B2
+      google_patents: https://patents.google.com/patent/US7670963B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: CN101548385A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2009-09-30
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101548385A
+      google_patents: https://patents.google.com/patent/CN101548385A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+  - number: CN101548385B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2013-03-27
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101548385B
+      google_patents: https://patents.google.com/patent/CN101548385B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+  - number: TW200847344A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2008-12-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200847344A
+      google_patents: https://patents.google.com/patent/TW200847344A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+  - number: TWI455251B
+    country: TW
+    kind: B
+    document_type: granted-patent
+    publication_date: 2014-10-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI455251B
+      google_patents: https://patents.google.com/patent/TWI455251B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+  - number: WO2008147388A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2008-12-04
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008147388A1
+      google_patents: https://patents.google.com/patent/WO2008147388A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns forming the tunnel dielectric, charge-trapping
+      layer and top dielectric of a charge-trap stack in the chambers of one single-wafer cluster tool,
+      and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  - cited-by-seed
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before
+    2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority
+    before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8940645B2 (Google Patents citation
+    tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7670963B2/en
+- id: GP44994327
+  family:
+    source: Google Patents family ID
+    google_family_id: '44994327'
+  representative: US8067284B1
+  title: Oxynitride bilayer formed using a precursor inducing a high charge trap density in a top layer
+    of the bilayer
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Sagy Levy
+  dates:
+    priority: 2007-05-25
+    filing: 2008-01-08
+    grant: 2011-11-29
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US8067284B1, retrieved 2026-09-14
+  expiry:
+    date: 2029-04-30
+    estimated: true
+    basis: US8067284B1 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
+  members:
+  - number: US8067284B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2011-11-29
+    title: Oxynitride bilayer formed using a precursor inducing a high charge trap density in a top layer
+      of the bilayer
+    application_number: US12/006,961
+    filing_date: 2008-01-08
+    status: Active
+    expiry:
+      date: 2029-04-30
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8067284B1
+      google_patents: https://patents.google.com/patent/US8067284B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a bilayer oxynitride charge-storing layer whose
+      top layer is trap-rich, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  - cited-by-seed
+  - citing-seed
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before
+    2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority
+    before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8940645B2 (Google Patents citation
+    tables); cites US20090179253A1, US5872387A (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8067284B1/en
 - id: GP40072804
   family:
     source: Google Patents family ID
@@ -20382,7 +21026,546 @@ families:
   - PAT-03
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-03.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8093128B2/en
+- id: GP40072822
+  family:
+    source: Google Patents family ID
+    google_family_id: '40072822'
+  representative: US8283261B2
+  title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  dates:
+    priority: 2007-05-25
+    filing: 2008-05-21
+    grant: 2012-10-09
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US8283261B2, retrieved 2026-09-14
+  expiry:
+    date: 2028-08-16
+    estimated: true
+    basis: US8283261B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
+  members:
+  - number: US20080293255A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2008-11-27
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080293255A1
+      google_patents: https://patents.google.com/patent/US20080293255A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+  - number: US20090011609A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2009-01-08
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090011609A1
+      google_patents: https://patents.google.com/patent/US20090011609A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+  - number: US8283261B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2012-10-09
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: US12/124,855
+    filing_date: 2008-05-21
+    status: Active
+    expiry:
+      date: 2028-08-16
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8283261B2
+      google_patents: https://patents.google.com/patent/US8283261B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US8318608B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2012-11-27
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8318608B2
+      google_patents: https://patents.google.com/patent/US8318608B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+  - number: US8993453B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2015-03-31
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8993453B1
+      google_patents: https://patents.google.com/patent/US8993453B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+  - number: CN101558481A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2009-10-14
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101558481A
+      google_patents: https://patents.google.com/patent/CN101558481A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+  - number: CN101558481B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2012-05-30
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101558481B
+      google_patents: https://patents.google.com/patent/CN101558481B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+  - number: WO2008147541A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2008-12-04
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008147541A1
+      google_patents: https://patents.google.com/patent/WO2008147541A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns forming the blocking dielectric of a charge-trap
+      stack by radical oxidation of the trapping layer, and it is not evidence that the technique is used
+      in SKY130.
+  inventory_keys: []
+  discovery:
+  - cited-by-seed
+  - citing-seed
+  discovery_note: cited by US20090179253A1, US8093128B2 (Google Patents citation tables); cites US8940645B2
+    (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8283261B2/en
+- id: GP40071593
+  family:
+    source: Google Patents family ID
+    google_family_id: '40071593'
+  representative: US8614124B2
+  title: SONOS ONO stack scaling
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Fredrick B. Jenne
+  - Sagy Charel Levy
+  dates:
+    priority: 2007-05-25
+    filing: 2007-09-26
+    grant: 2013-12-24
+  legal_status:
+    status: Expired - Fee Related
+    source: Google Patents (IFI Claims) status of US8614124B2, retrieved 2026-09-14
+  expiry:
+    date: 2028-05-25
+    estimated: true
+    basis: 'not bounded from the records retrieved: US20080290400A1, US20090032863A1, US8637921B2, US9349877B1,
+      CN101517714A, CN101517714B, TW200847343A, TWI436455B, WO2008147386A1; latest estimate WO2008147386A1
+      (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))'
+  expired: unknown
+  members:
+  - number: US20080290400A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2008-11-27
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080290400A1
+      google_patents: https://patents.google.com/patent/US20080290400A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+  - number: US20090032863A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2009-02-05
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090032863A1
+      google_patents: https://patents.google.com/patent/US20090032863A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+  - number: US8614124B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2013-12-24
+    title: SONOS ONO stack scaling
+    application_number: US11/904,506
+    filing_date: 2007-09-26
+    status: Expired - Fee Related
+    expiry:
+      date: 2031-06-02
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8614124B2
+      google_patents: https://patents.google.com/patent/US8614124B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US8637921B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2014-01-28
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8637921B2
+      google_patents: https://patents.google.com/patent/US8637921B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+  - number: US9349877B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2016-05-24
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9349877B1
+      google_patents: https://patents.google.com/patent/US9349877B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+  - number: CN101517714A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2009-08-26
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101517714A
+      google_patents: https://patents.google.com/patent/CN101517714A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+  - number: CN101517714B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2012-09-05
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101517714B
+      google_patents: https://patents.google.com/patent/CN101517714B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+  - number: TW200847343A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2008-12-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200847343A
+      google_patents: https://patents.google.com/patent/TW200847343A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+  - number: TWI436455B
+    country: TW
+    kind: B
+    document_type: granted-patent
+    publication_date: 2014-05-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI436455B
+      google_patents: https://patents.google.com/patent/TWI436455B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+  - number: WO2008147386A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2008-12-04
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008147386A1
+      google_patents: https://patents.google.com/patent/WO2008147386A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8614124B2 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns scaling a SONOS stack with an oxidised and nitrided
+      tunnel layer and a graded oxynitride trapping layer, and it is not evidence that the technique is
+      used in SKY130.
+  inventory_keys: []
+  discovery:
+  - cited-by-seed
+  - citing-seed
+  discovery_note: cited by US20090179253A1, US8796098B1 (Google Patents citation tables); cites US7514373B2
+    (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8614124B2/en
+- id: GP44760304
+  family:
+    source: Google Patents family ID
+    google_family_id: '44760304'
+  representative: US8643124B2
+  title: Oxide-nitride-oxide stack having multiple oxynitride layers
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Sagy Levy
+  - Krishnaswamy Ramkumar
+  - Fredrick Jenne
+  - Sam Geha
+  dates:
+    priority: 2007-05-25
+    filing: 2011-01-14
+    grant: 2014-02-04
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US8643124B2, retrieved 2026-09-14
+  expiry:
+    date: 2027-06-13
+    estimated: true
+    basis: US9349824B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
+  members:
+  - number: US20110248332A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2011-10-13
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20110248332A1
+      google_patents: https://patents.google.com/patent/US20110248332A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8643124B2 (record page not fetched)
+  - number: US8643124B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2014-02-04
+    title: Oxide-nitride-oxide stack having multiple oxynitride layers
+    application_number: US13/007,533
+    filing_date: 2011-01-14
+    status: Active
+    expiry:
+      date: 2027-06-13
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8643124B2
+      google_patents: https://patents.google.com/patent/US8643124B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20140284696A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2014-09-25
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140284696A1
+      google_patents: https://patents.google.com/patent/US20140284696A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8643124B2 (record page not fetched)
+  - number: US9349824B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2016-05-24
+    title: Oxide-nitride-oxide stack having multiple oxynitride layers
+    application_number: US14/172,775
+    filing_date: 2014-02-04
+    status: Active
+    expiry:
+      date: 2027-06-13
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9349824B2
+      google_patents: https://patents.google.com/patent/US9349824B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns an ONO stack whose charge-storing layer has an
+      oxygen-rich and an oxygen-lean oxynitride layer, and it is not evidence that the technique is used
+      in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  - cited-by-seed
+  - citing-seed
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide),
+    priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8093128B2 (Google Patents
+    citation tables); cites US20090179253A1, US5872387A, US8093128B2 (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8643124B2/en
+- id: GP40071592
+  family:
+    source: Google Patents family ID
+    google_family_id: '40071592'
+  representative: US8680601B2
+  title: Nonvolatile charge trap memory device having a deuterated layer in a multi-layer charge-trapping
+    region
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Sagy Levy
+  - Fredrick B. Jenne
+  - Krishnaswamy Ramkumar
+  dates:
+    priority: 2007-05-25
+    filing: 2007-09-26
+    grant: 2014-03-25
+  legal_status:
+    status: Expired - Fee Related
+    source: Google Patents (IFI Claims) status of US8680601B2, retrieved 2026-09-14
+  expiry:
+    date: 2028-05-25
+    estimated: true
+    basis: 'not bounded from the records retrieved: US20080290399A1, US20140264550A1, US10079314B2, CN101636845A,
+      CN101636845B, TW200847408A, TWI481013B, TW201519414A, TWI572015B, WO2008147385A1; latest estimate
+      WO2008147385A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period
+      + 20-year term))'
+  expired: unknown
+  members:
+  - number: US20080290399A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2008-11-27
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080290399A1
+      google_patents: https://patents.google.com/patent/US20080290399A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  - number: US8680601B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2014-03-25
+    title: Nonvolatile charge trap memory device having a deuterated layer in a multi-layer charge-trapping
+      region
+    application_number: US11/904,475
+    filing_date: 2007-09-26
+    status: Expired - Fee Related
+    expiry:
+      date: 2029-08-12
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8680601B2
+      google_patents: https://patents.google.com/patent/US8680601B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20140264550A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2014-09-18
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140264550A1
+      google_patents: https://patents.google.com/patent/US20140264550A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  - number: US10079314B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2018-09-18
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10079314B2
+      google_patents: https://patents.google.com/patent/US10079314B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  - number: CN101636845A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2010-01-27
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101636845A
+      google_patents: https://patents.google.com/patent/CN101636845A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  - number: CN101636845B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2013-06-12
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101636845B
+      google_patents: https://patents.google.com/patent/CN101636845B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  - number: TW200847408A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2008-12-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200847408A
+      google_patents: https://patents.google.com/patent/TW200847408A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  - number: TWI481013B
+    country: TW
+    kind: B
+    document_type: granted-patent
+    publication_date: 2015-04-11
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI481013B
+      google_patents: https://patents.google.com/patent/TWI481013B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  - number: TW201519414A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2015-05-16
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201519414A
+      google_patents: https://patents.google.com/patent/TW201519414A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  - number: TWI572015B
+    country: TW
+    kind: B
+    document_type: granted-patent
+    publication_date: 2017-02-21
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI572015B
+      google_patents: https://patents.google.com/patent/TWI572015B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  - number: WO2008147385A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2008-12-04
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008147385A1
+      google_patents: https://patents.google.com/patent/WO2008147385A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8680601B2 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a charge-trapping region of several layers that
+      includes a deuterated layer, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - cited-by-seed
+  discovery_note: cited by US20090179253A1 (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8680601B2/en
 - id: GP49581632
   family:
     source: Google Patents family ID
@@ -20464,11 +21647,18 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2019-05-28
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: US14/605,231
+    filing_date: 2015-01-26
+    status: Active
+    expiry:
+      date: 2028-05-21
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10304968B2
       google_patents: https://patents.google.com/patent/US10304968B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8940645B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10593812B2
     country: US
     kind: B2
@@ -20514,6 +21704,10 @@ families:
   - PAT-RADOX-CYP
   discovery:
   - cited-in-docs
+  - assignee-search
+  discovery_note: 'Cited on docs pages; inventory PAT-RADOX-CYP. Also reached through member US10304968B2:
+    Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before
+    2016-01-01 (retrieved 2026-09-14).'
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8940645B2/en
 - id: GP40095286
   family:
@@ -20625,7 +21819,468 @@ families:
   - PAT-TESTLINE-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-TESTLINE-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7679384B2/en
+- id: GP56507299
+  family:
+    source: Google Patents family ID
+    google_family_id: '56507299'
+  representative: US10319733B2
+  title: Oxide formation in a plasma process
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Jeong Soo Byun
+  - Krishnaswamy Ramkumar
+  dates:
+    priority: 2007-08-09
+    filing: 2018-09-19
+    grant: 2019-06-11
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US10319733B2, retrieved 2026-09-14
+  expiry:
+    date: 2027-08-09
+    estimated: true
+    basis: US10319733B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
+  members:
+  - number: US9406574B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2016-08-02
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9406574B1
+      google_patents: https://patents.google.com/patent/US9406574B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+  - number: US9460974B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2016-10-04
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9460974B1
+      google_patents: https://patents.google.com/patent/US9460974B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+  - number: US20170005108A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2017-01-05
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170005108A1
+      google_patents: https://patents.google.com/patent/US20170005108A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+  - number: US10128258B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2018-11-13
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10128258B2
+      google_patents: https://patents.google.com/patent/US10128258B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+  - number: US20190088669A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2019-03-21
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190088669A1
+      google_patents: https://patents.google.com/patent/US20190088669A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+  - number: US10319733B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2019-06-11
+    title: Oxide formation in a plasma process
+    application_number: US16/135,897
+    filing_date: 2018-09-19
+    status: Active
+    expiry:
+      date: 2027-08-09
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10319733B2
+      google_patents: https://patents.google.com/patent/US10319733B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20200161324A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2020-05-21
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200161324A1
+      google_patents: https://patents.google.com/patent/US20200161324A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a blocking structure formed by plasma oxidation
+      over a two-layer charge-storage stack, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before
+    2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority
+    before 2016-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US10319733B2/en
+- id: GP41115772
+  family:
+    source: Google Patents family ID
+    google_family_id: '41115772'
+  representative: US7799670B2
+  title: Plasma oxidation of a memory layer to form a blocking layer in non-volatile charge trap memory
+    devices
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  - Sagy Levy
+  - Jeong Byun
+  dates:
+    priority: 2008-03-31
+    filing: 2008-03-31
+    grant: 2010-09-21
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US7799670B2, retrieved 2026-09-14
+  expiry:
+    date: 2028-12-04
+    estimated: true
+    basis: US7799670B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
+  members:
+  - number: US20090242962A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2009-10-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090242962A1
+      google_patents: https://patents.google.com/patent/US20090242962A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US7799670B2 (record page not fetched)
+  - number: US7799670B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2010-09-21
+    title: Plasma oxidation of a memory layer to form a blocking layer in non-volatile charge trap memory
+      devices
+    application_number: US12/080,175
+    filing_date: 2008-03-31
+    status: Active
+    expiry:
+      date: 2028-12-04
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7799670B2
+      google_patents: https://patents.google.com/patent/US7799670B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns forming the blocking oxide of a charge-trap stack
+      by plasma oxidation of the trapping layer, and it is not evidence that the technique is used in
+      SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority
+    before 2010-01-01; Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority
+    before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation),
+    priority before 2016-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7799670B2/en
+- id: GP41115802
+  family:
+    source: Google Patents family ID
+    google_family_id: '41115802'
+  representative: US8088683B2
+  title: Sequential deposition and anneal of a dielectic layer in a charge trapping memory device
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  - Sagy Levy
+  dates:
+    priority: 2008-03-31
+    filing: 2008-03-31
+    grant: 2012-01-03
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US8088683B2, retrieved 2026-09-14
+  expiry:
+    date: 2029-01-17
+    estimated: true
+    basis: US8088683B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
+  members:
+  - number: US20090243001A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2009-10-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090243001A1
+      google_patents: https://patents.google.com/patent/US20090243001A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8088683B2 (record page not fetched)
+  - number: US8088683B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2012-01-03
+    title: Sequential deposition and anneal of a dielectic layer in a charge trapping memory device
+    application_number: US12/080,166
+    filing_date: 2008-03-31
+    status: Active
+    expiry:
+      date: 2029-01-17
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8088683B2
+      google_patents: https://patents.google.com/patent/US8088683B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns sequential deposition and anneal cycles for a
+      charge-trap dielectric layer, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  - citing-seed
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before
+    2016-01-01 (retrieved 2026-09-14); cites US5872387A (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8088683B2/en
+- id: GP41681547
+  family:
+    source: Google Patents family ID
+    google_family_id: '41681547'
+  representative: US8163660B2
+  title: SONOS type stacks for nonvolatile change trap memory devices and methods to form the same
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Helmut Puchner
+  - Igor Polishchuk
+  - Sagy Levy
+  dates:
+    priority: 2008-05-15
+    filing: 2009-03-27
+    grant: 2012-04-24
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US8163660B2, retrieved 2026-09-14
+  expiry:
+    date: 2029-09-23
+    estimated: true
+    basis: US8163660B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
+  members:
+  - number: US20100041222A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2010-02-18
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20100041222A1
+      google_patents: https://patents.google.com/patent/US20100041222A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+  - number: US8163660B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2012-04-24
+    title: SONOS type stacks for nonvolatile change trap memory devices and methods to form the same
+    application_number: US12/413,389
+    filing_date: 2009-03-27
+    status: Active
+    expiry:
+      date: 2029-09-23
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8163660B2
+      google_patents: https://patents.google.com/patent/US8163660B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20140103418A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2014-04-17
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140103418A1
+      google_patents: https://patents.google.com/patent/US20140103418A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+  - number: US9105740B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2015-08-11
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9105740B2
+      google_patents: https://patents.google.com/patent/US9105740B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+  - number: US20160104789A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2016-04-14
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160104789A1
+      google_patents: https://patents.google.com/patent/US20160104789A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+  - number: US9553175B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2017-01-24
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9553175B2
+      google_patents: https://patents.google.com/patent/US9553175B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns plasma nitridation of the tunnel oxide and trapping
+      layer of a SONOS-type stack, and it is not evidence that the technique is used in SKY130.
+  - target: machine-plasma-nitridation-chamber
+    relation: technique-class
+    reason: The patent describes decoupled plasma nitridation of a tunnel oxide and a charge-trapping
+      layer at two different bias settings; it is listed as an example of the technique class, not as
+      evidence of SKY130 practice.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  - cited-by-seed
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide),
+    priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1 (Google Patents citation
+    tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8163660B2/en
+- id: GP45034384
+  family:
+    source: Google Patents family ID
+    google_family_id: '45034384'
+  representative: US8071453B1
+  title: Method of ONO integration into MOS flow
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  - Bo Jin
+  - Fredrick B. Jenne
+  dates:
+    priority: 2009-04-24
+    filing: 2009-10-29
+    grant: 2011-12-06
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US8071453B1, retrieved 2026-09-14
+  expiry:
+    date: 2030-05-21
+    estimated: true
+    basis: US9023707B1 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
+  members:
+  - number: US8071453B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2011-12-06
+    title: Method of ONO integration into MOS flow
+    application_number: US12/608,886
+    filing_date: 2009-10-29
+    status: Active
+    expiry:
+      date: 2030-02-24
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8071453B1
+      google_patents: https://patents.google.com/patent/US8071453B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US9023707B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2015-05-05
+    title: Simultaneously forming a dielectric layer in MOS and ONO device regions
+    application_number: US13/312,964
+    filing_date: 2011-12-06
+    status: Active
+    expiry:
+      date: 2030-05-21
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9023707B1
+      google_patents: https://patents.google.com/patent/US9023707B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns forming the lower ONO layers before the logic
+      channel implants and the top ONO layer with the logic gate oxide, and it is not evidence that the
+      technique is used in SKY130.
+  - target: step-043
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns forming the lower ONO layers before the logic
+      channel implants and the top ONO layer with the logic gate oxide, and it is not evidence that the
+      technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  - cited-by-seed
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority
+    before 2010-01-01; Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority
+    before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide),
+    priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow
+    trench isolation), priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8796098B1,
+    US8940645B2 (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8071453B1/en
 - id: GP43029761
   family:
     source: Google Patents family ID
@@ -20709,7 +22364,268 @@ families:
   - PAT-MIM-TI-ETCH
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-MIM-TI-ETCH.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8110414B2/en
+- id: GP48743334
+  family:
+    source: Google Patents family ID
+    google_family_id: '48743334'
+  representative: US8772059B2
+  title: Inline method to monitor ONO stack quality
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Yu Yang
+  - Krishnaswamy Ramkumar
+  dates:
+    priority: 2011-05-13
+    filing: 2012-03-26
+    grant: 2014-07-08
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US8772059B2, retrieved 2026-09-14
+  expiry:
+    date: 2031-08-02
+    estimated: true
+    basis: US8772059B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
+  members:
+  - number: US20130175599A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2013-07-11
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175599A1
+      google_patents: https://patents.google.com/patent/US20130175599A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8772059B2 (record page not fetched)
+  - number: US8772059B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2014-07-08
+    title: Inline method to monitor ONO stack quality
+    application_number: US13/430,631
+    filing_date: 2012-03-26
+    status: Active
+    expiry:
+      date: 2031-08-02
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8772059B2
+      google_patents: https://patents.google.com/patent/US8772059B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns an in-line test structure and method for monitoring
+      the quality of a SONOS ONO stack, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  - citing-seed
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before
+    2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority
+    before 2016-01-01 (retrieved 2026-09-14); cites US20090179253A1 (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8772059B2/en
+- id: GP48945910
+  family:
+    source: Google Patents family ID
+    google_family_id: '48945910'
+  representative: US8685813B2
+  title: Method of integrating a charge-trapping gate stack into a CMOS flow
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  dates:
+    priority: 2012-02-15
+    filing: 2012-03-23
+    grant: 2014-04-01
+  legal_status:
+    status: Expired - Fee Related
+    source: Google Patents (IFI Claims) status of US8685813B2, retrieved 2026-09-14
+  expiry:
+    date: 2032-03-23
+    estimated: true
+    basis: US10079243B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
+  members:
+  - number: US20130210209A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2013-08-15
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130210209A1
+      google_patents: https://patents.google.com/patent/US20130210209A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: US8685813B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2014-04-01
+    title: Method of integrating a charge-trapping gate stack into a CMOS flow
+    application_number: US13/428,201
+    filing_date: 2012-03-23
+    status: Expired - Fee Related
+    expiry:
+      date: 2032-06-05
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8685813B2
+      google_patents: https://patents.google.com/patent/US8685813B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20140235046A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2014-08-21
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140235046A1
+      google_patents: https://patents.google.com/patent/US20140235046A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: US9196496B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2015-11-24
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9196496B2
+      google_patents: https://patents.google.com/patent/US9196496B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: US20160099253A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2016-04-07
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160099253A1
+      google_patents: https://patents.google.com/patent/US20160099253A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: US10079243B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2018-09-18
+    title: Method of integrating a charge-trapping gate stack into a CMOS flow
+    application_number: US14/920,713
+    filing_date: 2015-10-22
+    status: Active
+    expiry:
+      date: 2032-03-23
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10079243B2
+      google_patents: https://patents.google.com/patent/US10079243B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20190067313A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2019-02-28
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190067313A1
+      google_patents: https://patents.google.com/patent/US20190067313A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: US10424592B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2019-09-24
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10424592B2
+      google_patents: https://patents.google.com/patent/US10424592B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: US20200020710A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2020-01-16
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200020710A1
+      google_patents: https://patents.google.com/patent/US20200020710A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: US10854625B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2020-12-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10854625B2
+      google_patents: https://patents.google.com/patent/US10854625B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: CN103258798A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2013-08-21
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN103258798A
+      google_patents: https://patents.google.com/patent/CN103258798A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: CN103258798B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2015-05-20
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN103258798B
+      google_patents: https://patents.google.com/patent/CN103258798B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: TW201334120A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2013-08-16
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201334120A
+      google_patents: https://patents.google.com/patent/TW201334120A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  - number: TWI546896B
+    country: TW
+    kind: B
+    document_type: granted-patent
+    publication_date: 2016-08-21
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI546896B
+      google_patents: https://patents.google.com/patent/TWI546896B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns integrating a charge-trapping gate stack with
+      a cap layer into a CMOS flow, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - citing-seed
+  discovery_note: cites US5872387A, US6136654A, US8093128B2 (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8685813B2/en
 - id: GP50930700
   family:
     source: Google Patents family ID
@@ -20786,6 +22702,7 @@ families:
   - PAT-RRAM-INTERMOLECULAR
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RRAM-INTERMOLECULAR.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US9076523B2/en
 - id: GP51229009
   family:
@@ -20812,7 +22729,7 @@ families:
   expiry:
     date: 2033-09-04
     estimated: true
-    basis: US8796098B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: US9620516B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US8796098B1
@@ -20857,11 +22774,18 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2016-05-31
-    status: null
+    title: Embedded SONOS based memory cells
+    application_number: US14/451,341
+    filing_date: 2014-08-04
+    status: Active
+    expiry:
+      date: 2033-09-04
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9356035B2
       google_patents: https://patents.google.com/patent/US9356035B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20160260730A1
     country: US
     kind: A1
@@ -20877,11 +22801,18 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2017-04-11
-    status: null
+    title: Embedded SONOS based memory cells
+    application_number: US15/146,753
+    filing_date: 2016-05-04
+    status: Active
+    expiry:
+      date: 2033-09-04
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9620516B2
       google_patents: https://patents.google.com/patent/US9620516B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20170263622A1
     country: US
     kind: A1
@@ -21080,7 +23011,547 @@ families:
   - PAT-04
   discovery:
   - cited-in-docs
+  - assignee-search
+  discovery_note: 'Cited on docs pages; inventory PAT-04. Also reached through member US9620516B2: Google
+    Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01 (retrieved
+    2026-09-14).'
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8796098B1/en
+- id: GP53939072
+  family:
+    source: Google Patents family ID
+    google_family_id: '53939072'
+  representative: US20190355583A1
+  title: Method of forming drain extended mos transistors for high voltage circuits
+  assignees:
+    original:
+    - Longitude Flash Memory Solutions Ltd
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Sungkwon Lee
+  - Igor G. Kouznetsov
+  - Gyu-Chul Kim
+  dates:
+    priority: 2013-07-22
+    filing: 2019-02-14
+    grant: null
+  legal_status:
+    status: Abandoned
+    source: Google Patents (IFI Claims) status of US20190355583A1, retrieved 2026-09-14
+  expiry:
+    date: 2034-07-22
+    estimated: true
+    basis: 'not bounded from the records retrieved: US9123642B1, US10217639B1; latest estimate US9123642B1
+      (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term);
+      US patent term adjustment possible, not known without the record)'
+  expired: unknown
+  members:
+  - number: US9123642B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2015-09-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9123642B1
+      google_patents: https://patents.google.com/patent/US9123642B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US20190355583A1 (record page not
+      fetched)
+  - number: US10217639B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2019-02-26
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10217639B1
+      google_patents: https://patents.google.com/patent/US10217639B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US20190355583A1 (record page not
+      fetched)
+  - number: US20190355583A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2019-11-21
+    title: Method of forming drain extended mos transistors for high voltage circuits
+    application_number: US16/275,521
+    filing_date: 2019-02-14
+    status: Abandoned
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190355583A1
+      google_patents: https://patents.google.com/patent/US20190355583A1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-030
+    relation: technique-class
+    reason: The patent describes drain-extended MOS transistors whose drain implants are shared with the
+      threshold-adjust implants of low-voltage transistors; it is listed as an example of the technique
+      class, not as evidence of SKY130 practice.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation),
+    priority before 2016-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US20190355583A1/en
+- id: GP53369470
+  family:
+    source: Google Patents family ID
+    google_family_id: '53369470'
+  representative: US10002878B2
+  title: Complementary SONOS integration into CMOS flow
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Venkatraman Prabhakar
+  - Krishnaswamy Ramkumar
+  - Igor Kouznetsov
+  dates:
+    priority: 2013-12-12
+    filing: 2017-09-18
+    grant: 2018-06-19
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US10002878B2, retrieved 2026-09-14
+  expiry:
+    date: 2034-06-16
+    estimated: true
+    basis: US9997528B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
+  members:
+  - number: US20150171104A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2015-06-18
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150171104A1
+      google_patents: https://patents.google.com/patent/US20150171104A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+  - number: US20160204120A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2016-07-14
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160204120A1
+      google_patents: https://patents.google.com/patent/US20160204120A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+  - number: US20180040625A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2018-02-08
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180040625A1
+      google_patents: https://patents.google.com/patent/US20180040625A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+  - number: US9997528B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2018-06-12
+    title: Complimentary SONOS integration into CMOS flow
+    application_number: US15/077,021
+    filing_date: 2016-03-22
+    status: Active
+    expiry:
+      date: 2034-06-16
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9997528B2
+      google_patents: https://patents.google.com/patent/US9997528B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US10002878B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2018-06-19
+    title: Complementary SONOS integration into CMOS flow
+    application_number: US15/708,008
+    filing_date: 2017-09-18
+    status: Active
+    expiry:
+      date: 2034-06-16
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10002878B2
+      google_patents: https://patents.google.com/patent/US10002878B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: CN105531828A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2016-04-27
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105531828A
+      google_patents: https://patents.google.com/patent/CN105531828A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+  - number: CN105531828B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2019-12-06
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105531828B
+      google_patents: https://patents.google.com/patent/CN105531828B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+  - number: TW201535486A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2015-09-16
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201535486A
+      google_patents: https://patents.google.com/patent/TW201535486A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+  - number: WO2015088731A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2015-06-18
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015088731A1
+      google_patents: https://patents.google.com/patent/WO2015088731A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns integrating complementary n- and p-channel SONOS
+      devices into a CMOS flow, with their channel and well implants, and it is not evidence that the
+      technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before
+    2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation),
+    priority before 2016-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US10002878B2/en
+- id: GP53522052
+  family:
+    source: Google Patents family ID
+    google_family_id: '53522052'
+  representative: US10103244B2
+  title: Drain extended MOS transistors with split channel
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Venkatraman Prabhakar
+  - Igor Kouznetsov
+  dates:
+    priority: 2014-01-10
+    filing: 2016-02-17
+    grant: 2018-10-16
+  legal_status:
+    status: Expired - Fee Related
+    source: Google Patents (IFI Claims) status of US10103244B2, retrieved 2026-09-14
+  expiry:
+    date: 2035-01-10
+    estimated: true
+    basis: 'not bounded from the records retrieved: US20150200295A1, US20160247897A1, CN105830214A, CN105830214B,
+      TW201530732A, WO2015105904A1; latest estimate WO2015105904A1 (estimated upper bound: earliest priority
+      date + 21 years (12-month priority period + 20-year term))'
+  expired: unknown
+  members:
+  - number: US20150200295A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2015-07-16
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150200295A1
+      google_patents: https://patents.google.com/patent/US20150200295A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+  - number: US20160247897A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2016-08-25
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160247897A1
+      google_patents: https://patents.google.com/patent/US20160247897A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+  - number: US10103244B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2018-10-16
+    title: Drain extended MOS transistors with split channel
+    application_number: US15/045,608
+    filing_date: 2016-02-17
+    status: Expired - Fee Related
+    expiry:
+      date: 2034-12-13
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10103244B2
+      google_patents: https://patents.google.com/patent/US10103244B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: CN105830214A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2016-08-03
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105830214A
+      google_patents: https://patents.google.com/patent/CN105830214A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+  - number: CN105830214B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2020-03-13
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105830214B
+      google_patents: https://patents.google.com/patent/CN105830214B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+  - number: TW201530732A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2015-08-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201530732A
+      google_patents: https://patents.google.com/patent/TW201530732A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+  - number: WO2015105904A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2015-07-16
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015105904A1
+      google_patents: https://patents.google.com/patent/WO2015105904A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10103244B2 (record page not fetched)
+  relevance:
+  - target: step-030
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns drain-extended MOS transistors whose channel
+      spans a well and a deep well, built alongside logic transistors, and it is not evidence that the
+      technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before
+    2016-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US10103244B2/en
+- id: GP52101816
+  family:
+    source: Google Patents family ID
+    google_family_id: '52101816'
+  representative: US8916432B1
+  title: Methods to integrate SONOS into CMOS flow
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  - Venkatraman Prabhakar
+  dates:
+    priority: 2014-01-21
+    filing: 2014-06-16
+    grant: 2014-12-23
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US8916432B1, retrieved 2026-09-14
+  expiry:
+    date: 2034-06-23
+    estimated: true
+    basis: US9893172B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
+  members:
+  - number: US8916432B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2014-12-23
+    title: Methods to integrate SONOS into CMOS flow
+    application_number: US14/305,137
+    filing_date: 2014-06-16
+    status: Active
+    expiry:
+      date: 2034-06-16
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8916432B1
+      google_patents: https://patents.google.com/patent/US8916432B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20150287811A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2015-10-08
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150287811A1
+      google_patents: https://patents.google.com/patent/US20150287811A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: US9893172B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2018-02-13
+    title: Methods to integrate SONOS into CMOS flow
+    application_number: US14/576,657
+    filing_date: 2014-12-19
+    status: Active
+    expiry:
+      date: 2034-06-23
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9893172B2
+      google_patents: https://patents.google.com/patent/US9893172B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: CN105981158A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2016-09-28
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105981158A
+      google_patents: https://patents.google.com/patent/CN105981158A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: CN105981158B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2020-01-10
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105981158B
+      google_patents: https://patents.google.com/patent/CN105981158B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: DE112014006222T5
+    country: DE
+    kind: T5
+    document_type: translation-of-granted-patent
+    publication_date: 2016-11-03
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112014006222T5
+      google_patents: https://patents.google.com/patent/DE112014006222T5/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: DE112014006222T9
+    country: DE
+    kind: T9
+    document_type: translation-of-granted-patent
+    publication_date: 2016-12-29
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112014006222T9
+      google_patents: https://patents.google.com/patent/DE112014006222T9/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: DE112014006222B4
+    country: DE
+    kind: B4
+    document_type: granted-patent
+    publication_date: 2022-06-23
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112014006222B4
+      google_patents: https://patents.google.com/patent/DE112014006222B4/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: KR20160108308A
+    country: KR
+    kind: A
+    document_type: application
+    publication_date: 2016-09-19
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20160108308A
+      google_patents: https://patents.google.com/patent/KR20160108308A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: KR101878696B1
+    country: KR
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2018-08-16
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR101878696B1
+      google_patents: https://patents.google.com/patent/KR101878696B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: TW201530696A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2015-08-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201530696A
+      google_patents: https://patents.google.com/patent/TW201530696A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: TWI656608B
+    country: TW
+    kind: B
+    document_type: granted-patent
+    publication_date: 2019-04-11
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI656608B
+      google_patents: https://patents.google.com/patent/TWI656608B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: TW201923982A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2019-06-16
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201923982A
+      google_patents: https://patents.google.com/patent/TW201923982A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  - number: WO2015112245A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2015-07-30
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015112245A1
+      google_patents: https://patents.google.com/patent/WO2015112245A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns integrating a SONOS gate stack into a CMOS flow,
+      with the dielectric stack thinned over the memory transistor's source and drain, and it is not evidence
+      that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - citing-seed
+  discovery_note: cites US8093128B2, US8796098B1 (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8916432B1/en
 - id: GP54018263
   family:
     source: Google Patents family ID
@@ -21248,6 +23719,7 @@ families:
   - PAT-RRAM-ETCHSTOP-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RRAM-ETCHSTOP-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US10003022B2/en
 - id: GP55302792
   family:
@@ -21360,7 +23832,269 @@ families:
   - PAT-RRAM-OXIDE-TSMC
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-RRAM-OXIDE-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US9431609B2/en
+- id: GP54848024
+  family:
+    source: Google Patents family ID
+    google_family_id: '54848024'
+  representative: US9218978B1
+  title: Method of ONO stack formation
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  dates:
+    priority: 2015-03-09
+    filing: 2015-06-19
+    grant: 2015-12-22
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US9218978B1, retrieved 2026-09-14
+  expiry:
+    date: 2035-06-19
+    estimated: true
+    basis: US9218978B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
+  members:
+  - number: US9218978B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2015-12-22
+    title: Method of ONO stack formation
+    application_number: US14/745,217
+    filing_date: 2015-06-19
+    status: Active
+    expiry:
+      date: 2035-06-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9218978B1
+      google_patents: https://patents.google.com/patent/US9218978B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US9793284B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2017-10-17
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9793284B1
+      google_patents: https://patents.google.com/patent/US9793284B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: US20180083024A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2018-03-22
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180083024A1
+      google_patents: https://patents.google.com/patent/US20180083024A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: US10153294B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2018-12-11
+    title: Method of ONO stack formation
+    application_number: US15/721,132
+    filing_date: 2017-09-29
+    status: Active
+    expiry:
+      date: 2035-06-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10153294B2
+      google_patents: https://patents.google.com/patent/US10153294B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20190157286A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2019-05-23
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190157286A1
+      google_patents: https://patents.google.com/patent/US20190157286A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: US10418373B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2019-09-17
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10418373B2
+      google_patents: https://patents.google.com/patent/US10418373B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: US20200111805A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2020-04-09
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200111805A1
+      google_patents: https://patents.google.com/patent/US20200111805A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: CN106471615A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2017-03-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN106471615A
+      google_patents: https://patents.google.com/patent/CN106471615A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: CN106471615B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2019-05-17
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN106471615B
+      google_patents: https://patents.google.com/patent/CN106471615B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: CN110246805A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2019-09-17
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN110246805A
+      google_patents: https://patents.google.com/patent/CN110246805A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: CN110246805B
+    country: CN
+    kind: B
+    document_type: granted-patent
+    publication_date: 2023-05-23
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN110246805B
+      google_patents: https://patents.google.com/patent/CN110246805B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: DE112015006291T5
+    country: DE
+    kind: T5
+    document_type: translation-of-granted-patent
+    publication_date: 2017-11-30
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112015006291T5
+      google_patents: https://patents.google.com/patent/DE112015006291T5/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: DE112015006291B4
+    country: DE
+    kind: B4
+    document_type: granted-patent
+    publication_date: 2022-09-08
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112015006291B4
+      google_patents: https://patents.google.com/patent/DE112015006291B4/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: JP2017523595A
+    country: JP
+    kind: A
+    document_type: application
+    publication_date: 2017-08-17
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2017523595A
+      google_patents: https://patents.google.com/patent/JP2017523595A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: JP6248212B2
+    country: JP
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2017-12-13
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP6248212B2
+      google_patents: https://patents.google.com/patent/JP6248212B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: JP2018041977A
+    country: JP
+    kind: A
+    document_type: application
+    publication_date: 2018-03-15
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2018041977A
+      google_patents: https://patents.google.com/patent/JP2018041977A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: JP6873890B2
+    country: JP
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2021-05-19
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP6873890B2
+      google_patents: https://patents.google.com/patent/JP6873890B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: TW201707147A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2017-02-16
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201707147A
+      google_patents: https://patents.google.com/patent/TW201707147A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: TWI696246B
+    country: TW
+    kind: B
+    document_type: granted-patent
+    publication_date: 2020-06-11
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI696246B
+      google_patents: https://patents.google.com/patent/TWI696246B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  - number: WO2016144397A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2016-09-15
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2016144397A1
+      google_patents: https://patents.google.com/patent/WO2016144397A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a two-step gate oxidation that forms the SONOS
+      blocking oxide from a cap layer together with the logic gate oxide, and it is not evidence that
+      the technique is used in SKY130.
+  - target: step-043
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a two-step gate oxidation that forms the SONOS
+      blocking oxide from a cap layer together with the logic gate oxide, and it is not evidence that
+      the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  - cited-by-seed
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before
+    2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority
+    before 2016-01-01 (retrieved 2026-09-14); cited by US9824895B1 (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US9218978B1/en
 - id: GP60303236
   family:
     source: Google Patents family ID
@@ -21449,6 +24183,7 @@ families:
   - PAT-ONO-THICK-CYP
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-ONO-THICK-CYP.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US9824895B1/en
 - id: GP63208306
   family:
@@ -21562,4 +24297,266 @@ families:
   - PAT-EDGESEAL-GF
   discovery:
   - cited-in-docs
+  discovery_note: Cited on docs pages; inventory PAT-EDGESEAL-GF.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US10062748B1/en
+- id: GP63208150
+  family:
+    source: Google Patents family ID
+    google_family_id: '63208150'
+  representative: US10062573B1
+  title: Embedded SONOS with triple gate oxide and manufacturing method of the same
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Longitude Flash Memory Solutions Ltd
+  inventors:
+  - Krishnaswamy Ramkumar
+  - Igor Kouznetsov
+  - Venkatraman Prabhakar
+  - Ali Keshavarzi
+  dates:
+    priority: 2017-06-14
+    filing: 2017-08-22
+    grant: 2018-08-28
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US10062573B1, retrieved 2026-09-14
+  expiry:
+    date: 2037-08-22
+    estimated: true
+    basis: US10062573B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+  expired: false
+  members:
+  - number: US10062573B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2018-08-28
+    title: Embedded SONOS with triple gate oxide and manufacturing method of the same
+    application_number: US15/683,274
+    filing_date: 2017-08-22
+    status: Active
+    expiry:
+      date: 2037-08-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10062573B1
+      google_patents: https://patents.google.com/patent/US10062573B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20190088487A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2019-03-21
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190088487A1
+      google_patents: https://patents.google.com/patent/US20190088487A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+  - number: US10784356B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2020-09-22
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10784356B2
+      google_patents: https://patents.google.com/patent/US10784356B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+  - number: US20210074821A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2021-03-11
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210074821A1
+      google_patents: https://patents.google.com/patent/US20210074821A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+  - number: TW201913880A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2019-04-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201913880A
+      google_patents: https://patents.google.com/patent/TW201913880A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+  - number: TWI761505B
+    country: TW
+    kind: B
+    document_type: granted-patent
+    publication_date: 2022-04-21
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI761505B
+      google_patents: https://patents.google.com/patent/TWI761505B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+  - number: WO2018231410A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2018-12-20
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2018231410A1
+      google_patents: https://patents.google.com/patent/WO2018231410A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns integrating SONOS transistors into a CMOS flow
+      with three gate-oxide thicknesses, and it is not evidence that the technique is used in SKY130.
+  - target: step-043
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns integrating SONOS transistors into a CMOS flow
+      with three gate-oxide thicknesses, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - citing-seed
+  discovery_note: cites US8796098B1 (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US10062573B1/en
+- id: GP90359049
+  family:
+    source: Google Patents family ID
+    google_family_id: '90359049'
+  representative: US12232324B2
+  title: Method of forming oxide-nitride-oxide stack of non-volatile memory and integration to CMOS process
+    flow
+  assignees:
+    original:
+    - Infineon Technologies LLC
+    current:
+    - Infineon Technologies LLC
+  inventors:
+  - Michael Allen
+  - Krishnaswamy Ramkumar
+  dates:
+    priority: 2022-09-27
+    filing: 2022-09-27
+    grant: 2025-02-18
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US12232324B2, retrieved 2026-09-14
+  expiry:
+    date: 2043-04-07
+    estimated: true
+    basis: US12232324B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
+  expired: false
+  members:
+  - number: US20240107771A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2024-03-28
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240107771A1
+      google_patents: https://patents.google.com/patent/US20240107771A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+  - number: US12232324B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2025-02-18
+    title: Method of forming oxide-nitride-oxide stack of non-volatile memory and integration to CMOS
+      process flow
+    application_number: US17/954,141
+    filing_date: 2022-09-27
+    status: Active
+    expiry:
+      date: 2043-04-07
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS12232324B2
+      google_patents: https://patents.google.com/patent/US12232324B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US20250185250A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2025-06-05
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250185250A1
+      google_patents: https://patents.google.com/patent/US20250185250A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+  - number: CN120052068A
+    country: CN
+    kind: A
+    document_type: application
+    publication_date: 2025-05-27
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN120052068A
+      google_patents: https://patents.google.com/patent/CN120052068A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+  - number: DE112023004011T5
+    country: DE
+    kind: T5
+    document_type: translation-of-granted-patent
+    publication_date: 2025-07-17
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112023004011T5
+      google_patents: https://patents.google.com/patent/DE112023004011T5/en
+    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+  - number: JP2025531476A
+    country: JP
+    kind: A
+    document_type: application
+    publication_date: 2025-09-19
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2025531476A
+      google_patents: https://patents.google.com/patent/JP2025531476A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+  - number: JP7846308B2
+    country: JP
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2026-04-14
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP7846308B2
+      google_patents: https://patents.google.com/patent/JP7846308B2/en
+    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+  - number: TW202418399A
+    country: TW
+    kind: A
+    document_type: application
+    publication_date: 2024-05-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW202418399A
+      google_patents: https://patents.google.com/patent/TW202418399A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+  - number: WO2024072806A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: 2024-04-04
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2024072806A1
+      google_patents: https://patents.google.com/patent/WO2024072806A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+  relevance:
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Infineon Technologies LLC; SkyWater's Form S-1 (SEC-01) refers to "Cypress
+      (now Infineon)", the company that owned and operated the fab before SkyWater; the patent concerns
+      forming an oxide-nitride-oxide stack in an in-situ atomic-layer-deposition tool and integrating
+      it into a CMOS flow, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - citing-seed
+  discovery_note: cites US9824895B1 (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US12232324B2/en
