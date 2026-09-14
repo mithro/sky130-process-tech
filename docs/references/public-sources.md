@@ -7540,6 +7540,7 @@ Technology and Processing XVI, 923 (1999).
 <https://doi.org/10.1117/12.350280> Choosing contact-hole resists
 compatible with an attenuated PSM at KrF. Used on step 107. Tier: deep
 dive.
+Also used on steps 118 and 129.
 Also used on the LICM1 and CTM1 mask pages.
 
 **MAO-2004** — D. Mao and J. Hopwood, "Ionized physical vapor deposition
@@ -7615,6 +7616,7 @@ lithography by resolution enhancement lithography assisted by chemical
 shrink (RELACS)", *IEDM 1998 Technical Digest*, pp. 333–336.
 <https://doi.org/10.1109/IEDM.1998.746367> Chemical shrink (RELACS) for
 0.1 µm-class holes with KrF. Used on step 107. Tier: deep dive.
+Also used on step 118.
 Also used on the CTM1 and VIM mask pages.
 
 **VLASSAK-2001** — J. J. Vlassak, "A Contact-Mechanics Based Model for
@@ -14553,8 +14555,9 @@ SkyWater SKY130 PDK documentation, retrieved 2026-09-13.
 <https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>,
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/summary/table-f4-connectivity-of-drawn-and-mask.csv>.
 Summary tables of widths, spacings and enclosures for the front-end and
-back-end layers (Tables F3a–F3d, noting "All enclosures in tables are
-nominal and do not apply to butting edges or corners") and Table F4,
+back-end layers (Tables F3a–F3d; F3c, "Back end layers for S8D\* flow",
+and F3d, "Back end layers for S8T\* flow", note "All enclosures in tables
+are nominal and do not apply to butting edges or corners") and Table F4,
 "Connectivity of Drawn and Mask Layers", which names the layer joining
 each pair of conducting layers: "Licon1" from `li1` to diff and tap,
 "Licon1 AND Npc" from `li1` to poly, "Mcon" from met1 to `li1` and "Via"
