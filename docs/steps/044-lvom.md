@@ -223,8 +223,8 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
   oxides.[^itrs-01]
 * ITRS 2001, *Lithography* — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* Levinson, *Principles of Lithography* — overlay and resist
-  processing for non-critical layers.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on photoresists and
+  overlay.[^levinson-2005]
 
 ## Open questions
 

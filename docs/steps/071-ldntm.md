@@ -226,8 +226,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   array edge.[^hook-2003]
 * ITRS 2001, *Lithography* — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* Levinson, *Principles of Lithography* — overlay and non-critical
-  layer tooling.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 
 ## Open questions
 
