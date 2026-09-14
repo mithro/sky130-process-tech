@@ -24,7 +24,7 @@ refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
 written page has exactly one entry here; the inventory holds 1711
-keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
+keyed entries as of 2026-09-14, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
 8.20 and 8.21 were added to cover the sources the writers of the step,
@@ -433,7 +433,6 @@ Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, M
 (Manufacturing → Facilities & Capabilities), live page, accessed
 2026-08-30.
 <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>.
-Also used on the VIM2, CAPM, MM3, VIM3, CAP2M and MM4 mask pages.
 **The most valuable single public source for the tool set.** For the
 Minnesota fab it states "200 mm equipment", "91,000 sq ft cleanroom
 (class 10)", "Capacity: 10,000 30 ML CMOS wafers/month or 50,000 MOSFET
@@ -522,6 +521,7 @@ Also used on the precursors material page.
 Also used on the etch and chamber-clean gases material page.
 Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, P1M, LICM1,
 LI1M, CTM1, MM1, VIM, MM2 and VIM4 mask pages.
+Also used on the VIM2, CAPM, MM3, VIM3, CAP2M and MM4 mask pages.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -7110,11 +7110,11 @@ Also used on the anneal ambients material page.
 
 **CHEN-1999-PSM** — Y.-T. Chen, Y.-C. Wang and R. Chu, "Optimization of
 attenuated phase-shift mask for contact hole printing", *Proc. SPIE*
-Also used on the VIM2 and VIM3 mask pages.
 **3679**, Optical Microlithography XII, 812 (1999).
 <https://doi.org/10.1117/12.354399> Attenuated PSM optimisation for
 contact holes. Used on step 093. Tier: deep dive.
 Also used on the LICM1, VIM and VIM4 mask pages.
+Also used on the VIM2 and VIM3 mask pages.
 
 **COBB-1995** — N. B. Cobb and A. Zakhor, "Fast sparse aerial-image
 calculation for OPC", *Proc. SPIE* **2621**, 534–545 (1995).
@@ -14685,7 +14685,6 @@ Also used on the VIM and MM2 mask pages.
 
 **MA-ANDERSSON-1998** — Z. M. Ma and A. Andersson, "Preventing sidelobe
 printing in applying attenuated phase-shift reticles", *Proc. SPIE*
-Also used on the VIM2 and VIM3 mask pages.
 **3334**, Optical Microlithography XI, 543 (1998).
 <https://doi.org/10.1117/12.310783> "One major limitation of applying
 attenuated phase shift mask (PSM) is sidelobe printing", "caused by
@@ -14695,6 +14694,7 @@ materials in the surrounding area"; the effects of defocus, lens
 aberration and layout, the need to qualify a stepper for PSM use, and an
 attenuated rim-shifter plate that prevents side lobes. Used on the VIM
 mask page. Tier: deep dive.
+Also used on the VIM2 and VIM3 mask pages.
 
 **IWASAKI-1998** — H. Iwasaki, K. Hoshi and H. Tanabe,
 "High-transmittance rim-type attenuated phase-shift masks for
@@ -14766,6 +14766,7 @@ CLHVTPM" and `clvtnm.1` "0.38 min. width of clvtnm in periphery", and
 nikon cross has the wrong polarity"). Used on the FOM mask page. Tier:
 cross-check.
 Also used on the LVTNM, NWM, HVTPM, PWBM and PWDEM mask pages.
+Also used on the VIM2, CAPM, MM3, VIM3, CAP2M and MM4 mask pages.
 
 #### LVTNM mask page (first cited there)
 
