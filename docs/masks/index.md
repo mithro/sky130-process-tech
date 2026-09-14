@@ -116,6 +116,7 @@ pwbm
 pwdem
 tunm
 onom
+lvom
 p1m
 licm1
 li1m
@@ -161,7 +162,7 @@ In the table:
 | {ref}`PWDEM <step-030>` | P-Well Drain Extended, {ref}`PWDEM <mask-pwdem>` — *blank* | none | `pwde` 124:20 | {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; strip {ref}`PWDEIS <step-033>` | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 |
 | {ref}`TUNM <step-035>` | Tunnel Mask, {ref}`TUNM <mask-tunm>` — `X` | `ctunm` mask 20:0 | `tunm` 80:20 | {ref}`TUNARCE <step-036>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`TUNME <step-039>` | `TUNMCD` 0.41 / `TUNMCDSP` 0.5 |
 | {ref}`ONOM <step-041>` | ONO Mask, {ref}`ONOM <mask-onom>` — `X` | `conom` mask 88:0; drawing 87:44 | no drawn `onom` layer; from `tunm` 80:20 *(inference)* | {ref}`ONOME <step-042>` | `ONOMCD` 0.41 / `ONOMCDSP` 0.5 |
-| {ref}`LVOM <step-044>` | Low Voltage Oxide, LVOM — `X` | `clvom` mask 46:0; drawing 45:20 | no drawn `lvom` layer; the complement of `hvi` 75:20 *(inference)* | {ref}`NCHI <step-045>`, {ref}`GOXETCH <step-046>` | `LVOMCD` 0.6 / `LVOMCDSPCSMC` 0.7 |
+| {ref}`LVOM <step-044>` | Low Voltage Oxide, {ref}`LVOM <mask-lvom>` — `X` | `clvom` mask 46:0; drawing 45:20 | no drawn `lvom` layer; the complement of `hvi` 75:20 *(inference)* | {ref}`NCHI <step-045>`, {ref}`GOXETCH <step-046>` | `LVOMCD` 0.6 / `LVOMCDSPCSMC` 0.7 |
 | {ref}`RPM <step-049>` | Resistor Protect, RPM — `X` | `crpm` mask 96:0 | `rpm` 86:20; `urpm` 79:20 *(inference)* | {ref}`P1I <step-050>`; strip {ref}`P1IS <step-051>` | `RPMCD` 1.27 / `RPMCDSP` 0.84 |
 | {ref}`RRPM <step-052>` | *not listed* | none | `rpm` 86:20, alone or less `urpm` 79:20 *(inference)* | {ref}`PRI <step-053>`; strip {ref}`PRIS <step-054>` | none listed |
 | {ref}`URPM <step-055>` | *not listed* | none | `urpm` 79:20 *(inference)* | {ref}`UPRI <step-056>`; strip {ref}`UPRIS <step-057>` | none listed |

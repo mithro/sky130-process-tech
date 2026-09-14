@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1712
+written page has exactly one entry here; the inventory holds 1714
 keyed entries as of 2026-09-14, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -74,7 +74,7 @@ scanner and coat/develop track pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the substrates material page.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -114,7 +114,7 @@ NWM, HVTPM, LVTNM, HVTRM, NTM, HVNTM, LDNTM, PSDM, NSDM, TUNM, ONOM,
 LVOM, RPM, NPCM, P1M, LICM1, LI1M, CTM1, MM1–MM5, VIM, VIM2–VIM4, NSM,
 PDM, CU1M, PMM2, …). This is the public basis for the mask index and
 for the order of the lithography steps. Tier: cross-check.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 **PDK-06** — *Layers Reference* and `gds_layers.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
@@ -122,7 +122,7 @@ Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1
 GDS layer/purpose numbers and the process meaning of each drawn layer
 (e.g. `vhvi` "used to identify nodes that operate at 12V nominal (16V
 max)"). No thicknesses. Tier: cross-check.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 **PDK-07** — *Device Details* pages and per-device cross-section drawings.
 <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>;
@@ -196,7 +196,7 @@ dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
 (enclosure rules between deep N-well and N-well); poly.2 (spacing of
 poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
 Tier: cross-check.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 **PDK-HV** — *High Voltage Methodology* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>.
@@ -207,7 +207,7 @@ by lightly doped Nwells and Pwells respectively"; "All VHV devices use
 channel lengths of 1.055 µm and 1.050 µm for the 16 V VHV NMOS and
 PMOS; "Under no circumstances the poly/extended drain overlap and
 field oxide length should be changed". Tier: cross-check.
-Also used on the NWM and PWDEM mask pages.
+Also used on the NWM, PWDEM and LVOM mask pages.
 
 **PDK-WLCSP** — *WLCSP Rules* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/wlcsp.html>
@@ -393,7 +393,7 @@ Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
 or scanner pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -423,7 +423,7 @@ the same wording as the notes in the process-steps sheet's "Run Mask
 IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
 on the mask index, the HVTPM step page and the sky130B ReRAM overview.
 Tier: cross-check.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 ## 3. SkyWater Technology corporate sources
 
@@ -440,7 +440,7 @@ wafers/month", "90 nm + feature geometries", and that the site was
 "recently expanded in 2020 to enable additional capacity and Cu back
 end of line". The "SkyWater Process Integration Tools & Capabilities"
 list then names tools and chemistries by area:
-Also used on the TUNM and ONOM mask pages.
+Also used on the TUNM, ONOM and LVOM mask pages.
 
 * *Lithography* — "ASML I-line stepper", "ASML I-line scanner", "ASML
   DUV stepper", "ASML DUV scanner", "ASML 193nm single stage scanner –
@@ -1072,7 +1072,7 @@ module relative to the logic well/channel implants, gate oxidation at
 3.0–5.0 nm.
 Also used on the vertical-furnace oxidation and LPCVD pages.
 Tier: deep dive.
-Also used on the TUNM and ONOM mask pages.
+Also used on the TUNM, ONOM and LVOM mask pages.
 
 **PAT-04** — US 8,796,098 B1, *"Embedded SONOS based memory cells"*,
 K. Ramkumar, I. Kouznetsov, V. Prabhakar (Cypress); filed 2013-09-04,
@@ -1085,7 +1085,7 @@ Also used on the wet bench page. Tier: deep dive.
 Also used on the wet chemicals material page.
 Also used on the substrates material page.
 Also used on the dopant gases and implant sources material page.
-Also used on the TUNM mask page.
+Also used on the TUNM and LVOM mask pages.
 
 **PAT-STI-CR** — US 7,439,141 B2, *"Shallow trench isolation approach
 for improved STI corner rounding"*, U. Kim, Y. Sun, M. S. Chang et al.;
@@ -1379,6 +1379,7 @@ The chapters most useful for a 130 nm flow (all verified PDFs):
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>.
 Starting material, STI, gate stack, junctions, contacts. Tier: deep dive.
 Also used on the substrates material page.
+Also used on the LVOM mask page.
 
 **ITRS-02** — ITRS 2001, *Interconnect*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>.
@@ -1403,7 +1404,7 @@ large mask error factors", and the metrology crosscut calls the "20%
 measurement precision to process tolerance metric" "somewhat relaxed".
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, MM4 and LVOM mask pages.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
@@ -1792,7 +1793,7 @@ Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
 Tier: high-level.
 Also used on the lithography materials material page.
-Also used on the DNM, CAPM, MM3, CAP2M, FOM and MM4 mask pages.
+Also used on the FOM, DNM, CAPM, MM3, CAP2M, MM4 and LVOM mask pages.
 
 **WIKI-LOCOS** — Wikipedia, *LOCOS*.
 <https://en.wikipedia.org/wiki/LOCOS> LOCOS isolation, the predecessor
@@ -1803,7 +1804,7 @@ of STI. Used on the oxidation category page. Tier: high-level.
 absorber and pellicles. Used on the lithography category page. Tier:
 high-level.
 Also used on the lithography materials material page.
-Also used on the FOM, DNM, LVTNM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 **WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
 <https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
@@ -2767,14 +2768,14 @@ thick-resist imaging.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the FOM, DNM, LVTNM, HVTPM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, HVTPM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
 Overlay budgets and non-critical-layer tool choice.
 Also used on the i-line stepper or scanner page.
 Tier: deep dive.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 **ROCHE-1985** — D. Roche, J. F. Michaud and M. Bruel, *"Outgassing of
 Photoresist During Ion Implantation"*, MRS Proceedings, vol. 45, 1985,
@@ -3733,6 +3734,7 @@ Couple for Dual Gate Oxide", *Solid State Phenomena* **92**, 235–238
 (2003). <https://doi.org/10.4028/www.scientific.net/SSP.92.235> The
 resist / wet-etch couple for dual gate oxide. Used on steps 044 and 046.
 Tier: deep dive.
+Also used on the LVOM mask page.
 
 **BU-2001** — J. Bu and M. H. White, "Design considerations in scaled
 SONOS nonvolatile memory devices", *Solid-State Electronics* **45**(1),
@@ -3884,6 +3886,7 @@ Abstracts of the 2001 International Conference on Solid State Devices
 and Materials (SSDM)*, 2001. <https://doi.org/10.7567/SSDM.2001.A-6-6>
 An STI scheme that compensates thinning at the STI corner for thick dual
 gate oxides. Used on steps 044 and 046. Tier: deep dive.
+Also used on the LVOM mask page.
 
 **KRAFT-1997** — R. Kraft, T. P. Schneider, W. W. Dostalik and S.
 Hattangady, "Surface nitridation of silicon dioxide with a high density
@@ -3905,6 +3908,7 @@ Gate Oxide Integrity Reliability", *Electrochemical and Solid-State
 Letters* **3**(1), 56 (1999). <https://doi.org/10.1149/1.1390957> A dual
 gate oxide process with improved gate-oxide integrity. Used on steps
 043, 044 and 046. Tier: deep dive.
+Also used on the LVOM mask page.
 
 **LEE-1999-ICVC** — S.-W. Lee, I. H. Cho, S. H. Park, H. G. Choi, N. G.
 Kim, J.-K. Kim, S. B. Han and K. Lee, "Gate oxide thinning effects at
@@ -3913,6 +3917,7 @@ the edge of shallow trench isolation in the dual gate oxide process",
 <https://doi.org/10.1109/ICVC.1999.820895> Gate oxide thinning at the
 STI edge in the dual gate oxide process. Used on steps 043, 044 and 046.
 Tier: deep dive.
+Also used on the LVOM mask page.
 
 **LIBSCH-1990** — F. R. Libsch and M. H. White, "Charge transport and
 storage of low programming voltage SONOS/MONOS memory devices",
@@ -4023,6 +4028,7 @@ high-performance logic-embedded DRAMs", *IEDM 1998 Technical Digest*,
 pp. 347–350. <https://doi.org/10.1109/IEDM.1998.746371>
 Multiple-thickness gate oxide and dual-gate technologies for embedded
 DRAM. Used on steps 043 and 044. Tier: deep dive.
+Also used on the LVOM mask page.
 
 **TSENG-1998** — H.-H. Tseng, D. L. O'Meara, P. J. Tobin, V. S. Wang, X.
 Guo, R. Hegde, I. Y. Yang, P. Gilbert et al. (Motorola), "Reduced gate
@@ -4141,6 +4147,7 @@ parameter `toxe`), google/skywater-pdk-libs-sky130_fd_pr repository.
 <https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice>
 The BSIM4 `toxe` parameter of the 1.8 V NMOS model, a public electrical
 oxide thickness. Used on steps 043, 044, 046 and 047. Tier: cross-check.
+Also used on the LVOM mask page.
 
 **PDK-MODEL-NFET5V** — SkyWater PDK Authors,
 `sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice` (typical-corner BSIM4
@@ -4149,6 +4156,7 @@ repository.
 <https://raw.githubusercontent.com/google/skywater-pdk-libs-sky130_fd_pr/main/cells/nfet_g5v0d10v5/sky130_fd_pr__nfet_g5v0d10v5__tt.pm3.spice>
 The BSIM4 `toxe` parameter of the 5 V NMOS model, a public electrical
 oxide thickness. Used on steps 043, 044 and 047. Tier: cross-check.
+Also used on the LVOM mask page.
 
 **PDK-SONOS-XS** — SkyWater PDK Authors, `cross-section-sonos-cell.svg`
 (2-T SONOS cell cross-section drawing), google/skywater-pdk repository,
@@ -11056,7 +11064,7 @@ single-machine overlay ≤ 40 nm and ≤ 80 nm matched to another /275,
 illuminator with conventional and annular modes, and phase-modulated
 TTL alignment. Used on the i-line stepper or scanner page. Tier:
 cross-check (vendor statement).
-Also used on the DNM, LVTNM, NWM, HVTPM, TUNM and ONOM mask pages.
+Also used on the DNM, LVTNM, NWM, HVTPM, TUNM, ONOM and LVOM mask pages.
 
 **ASML-PAS5500-450F** — ASML, *PAS 5500/450F i-Line Step-and-Scan*,
 refurbished systems data sheet, 2019.
@@ -14477,7 +14485,7 @@ but increases rapidly when the critical dimension (CD) is less than 0.5
 contacts", dark-field spaces are more sensitive than light-field lines,
 and attenuated PSMs behave like chrome-on-glass masks. Used on the DNM
 mask page. Tier: deep dive.
-Also used on the FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and ONOM mask pages.
+Also used on the FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4 and LVOM mask pages.
 
 **RIZVI-2005** — S. Rizvi (ed.), *Handbook of Photomask Manufacturing
 Technology*, CRC Press, 2005, ISBN 978-1-4200-2878-2.
@@ -14617,7 +14625,7 @@ are nominal and do not apply to butting edges or corners") and Table F4,
 each pair of conducting layers: "Licon1" from `li1` to diff and tap,
 "Licon1 AND Npc" from `li1` to poly, "Mcon" from met1 to `li1` and "Via"
 from met2 to met1. Used on the LICM1 mask page. Tier: cross-check.
-Also used on the LI1M, CTM1, MM1, VIM and MM2 mask pages.
+Also used on the LVOM, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 Also used on the VIM2, CAPM, MM3, VIM3 and MM4 mask pages.
 
 **CHOO-2000** — L. C. Choo, O. Park, M. J. Sack and S. C. Tam,
@@ -14783,6 +14791,7 @@ cross-check.
 Also used on the LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM and ONOM mask
 pages.
 Also used on the VIM2, CAPM, MM3, VIM3, CAP2M and MM4 mask pages.
+Also used on the LVOM mask page.
 
 #### LVTNM mask page (first cited there)
 
@@ -15020,6 +15029,31 @@ masks are needed", and "The SONOS based technology has been successfully
 embedded into 0.35μm ~ 65nm CMOS logic process". Used on the TUNM mask
 page. Tier: deep dive.
 Also used on the ONOM mask page.
+
+#### LVOM mask page (first cited there)
+
+**DIAZ-1999** — C. H. Diaz, K. L. Young, J. H. Hsu, J. C. H. Lin,
+C. S. Hou et al., "A 0.18 μm CMOS logic technology with dual gate oxide
+and low-k interconnect for high-performance and low-power applications",
+*1999 Symposium on VLSI Technology, Digest of Technical Papers*,
+pp. 11–12. <https://doi.org/10.1109/VLSIT.1999.799315> A 0.18 µm CMOS
+logic foundry technology; the abstract: "Robust dual-gate oxides were
+developed to support 1.5-2 V core logic as well as 3.3 V periphery (I/O)
+circuitry", with 32 Å and 27 Å core oxides, a 4.4 µm² embedded SRAM cell
+and a low-k (HSQ)/AlCu interconnect. Used on the LVOM mask page. Tier:
+deep dive.
+
+**KIM-2002** — S.-H. Kim, S.-H. Kim, S.-E. Kim, M.-S. Kim, J.-H. Park,
+E.-S. Kim and J.-T. Kim, "Process Design for Preventing the Gate Oxide
+Thinning in the Integration of Dual Gate Oxide Transistor", *Japanese
+Journal of Applied Physics* **41**(4B), 2404–2409 (2002).
+<https://doi.org/10.1143/JJAP.41.2404> With conventional dual-gate-oxide
+and STI processes, "severe GOX thinning occurs from 320 Å (in active
+area) to 79 Å (at STI top edge) and a dent profile exists at the top
+edge of STI"; a new process prevents the thinning "mainly by a
+combination of a thick sidewall oxide with SiN pullback", avoiding a
+double hump in the subthreshold characteristics. Used on the LVOM mask
+page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
