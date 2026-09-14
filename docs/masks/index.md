@@ -794,8 +794,9 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   mask levels.[^starikov-1992]
 * van Haren et al., *Proc. SPIE* 2019 — how alignment-mark placement
   on the reticle limits layer-to-layer overlay.[^van-haren-2019]
-* Levinson, *Principles of Lithography*, 2nd ed. — overlay budgets and
-  the choice of tools for non-critical levels.[^levinson-2005]
+* Levinson, *Principles of Lithography*, 2nd ed. — chapters on wafer
+  steppers, overlay, masks and reticles, and lithography
+  costs.[^levinson-2005]
 * SEMI P1 — the specification for hard-surface photomask
   substrates.[^semi-p1]
 * Bruning, *Proc. SPIE* 2007 — forty years of optical lithography
