@@ -156,7 +156,10 @@ Recorded per record in `discovery`:
 Not available on 2026-09-14: the arXiv export API and arXiv web search
 returned HTTP 429 throughout (arXiv abs pages were fetchable and are
 used for verification; arXiv papers indexed by OpenAlex were found
-through it), and DBLP refused connections. Google Scholar was not used.
+through it), DBLP refused connections, and from mid-session OpenAlex
+search answered HTTP 429, so the hyphenated variants ("sky130-based",
+"skywater-130", "skywater 130-nm", "130-nm skywater", "skywater cmos",
+"skywater process") were not run. Google Scholar was not used.
 The next batch should rerun arXiv and DBLP searches and add FSiC,
 ESSCIRC, CICC and MWSCAS proceedings pages and the IEEE Xplore public
 search pages.
