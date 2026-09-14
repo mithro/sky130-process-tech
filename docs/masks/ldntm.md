@@ -223,8 +223,8 @@ for `NTM` (0.16) and `HVNTM` (0.232) but none for `LDNTM`, and a single
 tip as well (inference).[^pdk-03] The step page reads the array
 boundary as the edge that matters: the resist must stand back from the
 outermost gates of a dense array by the tip's shadowing allowance. Chen
-et al. described ion-beam shadowing of tilted drain implants by adjacent
-structures,[^chen-1995] and Hook et al. the threshold shifts of devices
+et al. studied ion-beam shadowing in submicrometre LATID MOSFETs
+(title),[^chen-1995] and Hook et al. the threshold shifts of devices
 near a resist edge from ions scattered out of it;[^hook-2003] the
 {ref}`LDBHI <step-073>` page notes that the halo's tilt is not public.
 
@@ -272,7 +272,8 @@ Steps:
 On its step page's reading, the next step, {ref}`TIPRTAD <step-075>`, is
 the rapid thermal anneal that activates all the tips and halos of the
 module with no resist on the wafer. The next mask step is
-{ref}`NPCM <step-078>`, after the spacer deposition and etch. There is no
+{ref}`NPCM <step-078>`, after the spacer deposition and etch on the step
+pages' readings. There is no
 exception to the rule for this mask.
 
 ## Design rules and critical dimensions
@@ -316,7 +317,7 @@ HV tip and the other two tip masks.[^pdk-03] For the plate the published figures
   the tip and halo implants and the strip.
 * {ref}`mask-ntm` and {ref}`mask-hvntm` — the two other tip masks of the
   module; {ref}`TIPRTAD <step-075>` — the anneal of all three tips.
-* {ref}`TUNM <step-035>` and {ref}`ONOM <step-041>` — the other memory
+* {ref}`mask-tunm` and {ref}`mask-onom` — the other memory
   masks, whose layer the renders find on the same two dies.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the runs with plates but no drawn shapes.
@@ -387,8 +388,8 @@ HV tip and the other two tip masks.[^pdk-03] For the plate the published figures
 * Gardner, Hause and Fulford (AMD), US 5,793,090 — separate LDD and
   source/drain implant steps for different transistors on one
   chip.[^pat-multi-ldd-amd]
-* Chen et al., *Solid-State Electronics* 1995 — ion-beam shadowing of
-  tilted drain implants by adjacent structures.[^chen-1995]
+* Chen et al., *Solid-State Electronics* 1995 — ion-beam shadowing in
+  large-angle-tilt implanted drain MOSFETs (title).[^chen-1995]
 * Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
   the threshold shifts they cause.[^hook-2003]
 * Ross et al., *Proc. SPIE* 1996 — electron-beam stabilisation of i-line

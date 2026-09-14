@@ -70,12 +70,13 @@ nitride cap over poly, and the papers' full text was not checked. The
 step page also cites Cacciato et al.'s charging damage, when a contact etch met a conductive
 borderless nitride, as a reason to open the nitride before the contact
 etch.[^cacciato-2003] What the mask does not define is the cap it cuts,
-laid down at {ref}`GATENIT <step-058>` and {ref}`POC <step-059>` and,
-on the `SPE` page's reading, partly consumed at {ref}`SPE <step-077>`;
+laid down, on the step pages' readings, at {ref}`GATENIT <step-058>` and
+{ref}`POC <step-059>` and, on the `SPE` page's reading, partly consumed
+at {ref}`SPE <step-077>`;
 the contact holes, which {ref}`mask-licm1` prints much later; or the
 doping of the opened poly, which on the step pages' readings comes from
 the source/drain implants through the {ref}`PSDM <mask-psdm>` and
-{ref}`NSDM <step-085>` resists.
+{ref}`NSDM <mask-nsdm>` resists.
 
 ## Drawn layers and derivation
 
@@ -213,9 +214,11 @@ where `npc` is, the plate would be dark-field (inference). Neither the
 resist nor the tone is published; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page and
 the coat and develop on the
-{ref}`coat/develop track <machine-coat-develop-track>` page. For the process window the step page points to Bossung's
-focus–exposure characterisation[^bossung-1977] and Ausschnitt's
-separation of dose from defocus.[^ausschnitt-1999]
+{ref}`coat/develop track <machine-coat-develop-track>` page. For the
+process window the step page points to Bossung's projection-printing
+characterisation, the source of the focus–exposure "Bossung" plot (the
+paper's content not checked),[^bossung-1977] and Ausschnitt's separation
+of dose from defocus.[^ausschnitt-1999]
 
 **Pattern transfer.** On the step pages' readings the pattern is
 transferred by {ref}`NPCME <step-079>` through whatever remains of the
@@ -302,7 +305,8 @@ opens.[^pdk-03] Table F3a of the *Summary of Key Periphery Rules* gives
 and "Yes" in the "Manual" (merge) column, and gives the enclosure of
 `poly_licon` by `npc` as 0.100 and the spacing of `licon` to `npc` as
 0.090 (our reading of the columns, whose spacing and enclosure labels
-sit in the table's first row).[^pdk-summary] The Error Messages page adds the core enclosure of
+sit in the row below the heading).[^pdk-summary] The Error Messages page
+adds the core enclosure of
 0.045 (`npcon.c6`).[^pdk-errors] For the plate the smallest features are
 0.270 µm openings on a 0.270 µm space, placed to within 0.090 µm of the
 gates.
@@ -383,8 +387,9 @@ gates.
   and contacts and the sizes below which it rises.[^wong-1998]
 * Brunner, *Proc. SPIE* 1991 — swing curves and anti-reflective
   layers.[^brunner-1991]
-* Bossung, *Proc. SPIE* 1977 — focus–exposure plots for projection
-  printing.[^bossung-1977]
+* Bossung, *Proc. SPIE* 1977 — projection-printing process
+  characterisation, the source of the focus–exposure "Bossung" plot
+  (paper content not checked).[^bossung-1977]
 * Ausschnitt, *Proc. SPIE* 1999 — distinguishing dose from defocus for
   in-line lithography control.[^ausschnitt-1999]
 * Kastenmeier, Matsuo and Oehrlein, *JVST A* 1999 — etching silicon

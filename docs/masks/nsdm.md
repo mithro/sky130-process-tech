@@ -62,8 +62,9 @@ three varactors, the four SONOS rows, every 110 Å NMOS row from the
 5/10.5 V device and the flash pass gates to the four UHV 5/20 V NMOS rows,
 six n-type and photo diode rows, both parasitic bipolar rows and the
 three ESD NMOS.[^pdk-06] It marks `-`, "Layer not created for the
-device", in 22 rows, the p-diffusion and p+ poly resistors, the PMOS and
-the p-type diodes, and `+` in 21.[^pdk-06] On our reading the created
+device", in 22 rows, the p-diffusion and p+ poly resistors, the PMOS,
+the p-type diodes and the HV PMOS ESD transistor, and `+` in
+21.[^pdk-06] On our reading the created
 shapes follow the n-type devices and the varactors, whose taps are n+ in
 N-well; the table does not say what the created shapes add to the drawn
 layer. The varactor rows are marked `-` in the `PSDM` column and `C` here,
@@ -219,7 +220,8 @@ burning in a high-current implanter,[^romig-1996] Lukaszek, Reno and
 Bammi the influence of photoresist on wafer charging during a high-current
 arsenic implant,[^lukaszek-1996] Lee et al. and Horsky resist
 outgassing,[^lee-1996][^horsky-1998] and Rubin et al. UV
-photostabilisation of resist before high-dose implants.[^rubin-2000]
+photostabilisation of resist before high-dose, high-energy
+implants.[^rubin-2000]
 SkyWater's resist, its thickness and any hardening are not public; the
 consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
@@ -230,8 +232,9 @@ al. measured[^hook-2003] and Sheu et al. modelled,[^sheu-2006] whose
 implications for analogue layout Drennan, Kniffin and Locascio
 describe;[^drennan-2006] the PDK does not state their purpose. Table 3f
 gives "High current" implants an angle of 0° (`HCIMPA`),[^pdk-03] and
-Krieger et al. described the shadowing of a tilted arsenic source/drain
-implant by the gate and spacer.[^krieger-1989]
+Krieger et al. found that the LDD oxide sidewall spacer shadows an n+
+source/drain implant at the commonly used 7° tilt and recommended 0°
+(our comparison: the PDK's 0° fits that advice).[^krieger-1989]
 
 **Pattern transfer.** On the step pages' readings the pattern is
 transferred into the silicon, and into the poly contact heads opened by
@@ -276,8 +279,9 @@ Steps:
 
 On its step page's reading, the next step, {ref}`RTAD <step-088>`, is the
 rapid thermal anneal that activates the source/drain implants with no
-resist on the wafer. The next mask step is {ref}`LICM1 <step-093>`, after
-the sacrificial PSG, the polish and the cap oxide. There is no exception
+resist on the wafer. The next mask step is {ref}`LICM1 <step-093>`, after,
+on the step pages' readings, the sacrificial PSG, the polish and the cap
+oxide. There is no exception
 to the rule for this mask.
 
 ## Design rules and critical dimensions
@@ -321,7 +325,8 @@ same for "6 V reg. devices" (0.05, `LDST5`) describe the junction the
 implant forms.[^pdk-03] Table 3d gives punch-through spacings "n+ - n+ or
 p+-p+" of 0.23 (`DPTS`) and "n+ in pwell to nwell" of 0.15 (`PNPTS`), and
 Table 3e a "Minimum n+ or p+ - nwell spacing to prevent latch-up" of 0.23
-(`NPNWLU`).[^pdk-03] Table F3a of the *Summary of Key Periphery Rules*
+(`NPNWLU`; the row the published table shows as its
+heading).[^pdk-03] Table F3a of the *Summary of Key Periphery Rules*
 gives `n/psdm` a width of 0.380, a spacing of 0.380 and "Yes" in the
 "Manual" (merge) column, and, in its diff and tap columns, spacings of 0.130 and
 enclosures of 0.130, against the 0.125 µm of nsd.5a and nsd.5b (our
@@ -409,8 +414,8 @@ width and spacing checks without saying which applies where (0.38
   it.[^fujimura-1989]
 * Lukaszek, Reno and Bammi, IIT 1996 — the influence of photoresist on
   wafer charging during high-current arsenic implants.[^lukaszek-1996]
-* Krieger et al., *IEEE TED* 1989 — shadowing of a tilted arsenic
-  source/drain implant by gate and spacer.[^krieger-1989]
+* Krieger et al., *IEEE TED* 1989 — shadowing of a 7°-tilted arsenic
+  source/drain implant by the sidewall spacer.[^krieger-1989]
 * Smith, in *Ion Implantation: Equipment and Techniques*, 1983 — wafer
   cooling and resist masking problems in implantation.[^smith-1983]
 * Romig, Bishop and Rio, IIT 1996 — resist burning in a high-current
@@ -420,7 +425,7 @@ width and spacing checks without saying which applies where (0.38
 * Horsky, IIT 1998 — resist outgassing in high-energy and high-current
   implanters.[^horsky-1998]
 * Rubin et al., IIT 2000 — UV photostabilisation of resist before
-  high-dose implants.[^rubin-2000]
+  high-dose, high-energy implants.[^rubin-2000]
 * Hook et al., *IEEE TED* 2003 — lateral straggle and the mask-proximity
   effect at a resist edge.[^hook-2003]
 * Sheu et al., *IEEE TED* 2006 — a compact model of the well-edge

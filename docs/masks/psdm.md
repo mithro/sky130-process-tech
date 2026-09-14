@@ -10,7 +10,7 @@ diffusion resistors, the p-type diodes and the precision-resistor heads —
 the implants {ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>` pass
 through the same openings, and the resist is stripped at
 {ref}`PDIS <step-084>`. It is the first of the two source/drain implant
-{term}`block masks <block mask>` and, with {ref}`NSDM <step-085>`, nearly
+{term}`block masks <block mask>` and, with {ref}`NSDM <mask-nsdm>`, nearly
 the complement of the other across the active area. Its drawn layer
 also appears in the PDK's definitions of the precision resistor and the
 PNP emitter, and its public record has a quirk: the process-steps sheet
@@ -50,10 +50,11 @@ inside `psdm` from the PDK's device pages — PMOS source/drains, p+ taps,
 PNP emitters and collectors and NPN bases, the P+ diffusion resistor,
 p-type diodes and the precision poly resistors — and the PDK's
 resistance table gives "P-diffusion" 197000 in a column headed
-"Resistivity (mohms/sq)".[^pdk-07][^pdk-08] Two of the PDK's layout
+"Resistivity (mohms/sq)".[^pdk-07][^pdk-08] Three of the PDK's layout
 definitions use the layer: Table C3 of the *Layers Reference* defines
-`prec_resistor` as "rpm AND (poly overlapping poly.rs) AND psdm" and
-`pnp_emitter` as "diff AND pnp.dg AND psdm".[^pdk-06]
+`prec_resistor` as "rpm AND (poly overlapping poly.rs) AND psdm",
+`pnp_emitter` as "diff AND pnp.dg AND psdm", and `psdmHoles` as "Hole(
+psdm )" for the hole-area rule.[^pdk-06]
 
 The PDK's mask generation table, Table F2b, marks the `PSDM` column `C`
 ("CREATED") in 24 of its 80 device rows: the four p-diffusion and p+
@@ -61,7 +62,8 @@ poly resistor rows, the seven 1.8 V PMOS rows, the 5/10.5 V, 16 V and
 20 V PMOS, seven p-type diode rows, both parasitic bipolar rows and the
 HV PMOS ESD transistor.[^pdk-06] It marks `-`, "Layer not created for the
 device", in 35 rows, among them every NMOS, SONOS and varactor row and
-the n-type diodes.[^pdk-06] On our reading the created shapes follow the
+most of the n-type diodes.[^pdk-06] On our reading the created shapes
+follow the
 p-type devices, as the drawn-layer rules do; the table does not say what
 the created shapes add to the drawn layer. The two layers of the
 source/drain pair are close to complementary: they meet with zero
@@ -223,7 +225,7 @@ problems in implantation,[^smith-1983] Romig, Bishop and Rio resist
 burning in a high-current implanter,[^romig-1996] Lee et al., Horsky and
 Carpenter and Fecteau resist outgassing and its cost to
 productivity,[^lee-1996][^horsky-1998][^carpenter-2002] and Rubin et al.
-UV photostabilisation of resist before high-dose
+UV photostabilisation of resist before high-dose, high-energy
 implants;[^rubin-2000] Fujimura et al. analysed the carbonised layer that
 such a dose leaves for {ref}`PDIS <step-084>` to remove.[^fujimura-1989]
 SkyWater's resist, its thickness and any hardening are not public; the
@@ -237,9 +239,10 @@ version[^sheu-2006] and Drennan, Kniffin and Locascio set out its
 meaning for analogue layout[^drennan-2006] — and the step page reads the
 0.125–0.130 µm enclosure and spacing rules as reflecting such effects;
 the PDK does not state their purpose. Table 3f gives "High current"
-implants an angle of 0° (`HCIMPA`),[^pdk-03] and Krieger et al. described
-the shadowing of a tilted source/drain implant by the gate and
-spacer;[^krieger-1989] the step pages leave the angle of
+implants an angle of 0° (`HCIMPA`),[^pdk-03] and Krieger et al. found
+that the LDD oxide sidewall spacer shadows an n+ source/drain implant at
+the commonly used 7° tilt and recommended 0° (our comparison: the PDK's
+0° fits that advice);[^krieger-1989] the step pages leave the angle of
 {ref}`2PSDI <step-083>` open.
 
 **Pattern transfer.** On the step pages' readings the pattern is
@@ -259,7 +262,8 @@ space of 0.06 µm (`JCTD` / `LD`); the species, energies and doses are not publi
 to the active pattern for the 0.125 µm diffusion enclosure and to poly
 for the resistor and licon.9 rules.[^pdk-periph] Where `psdm` and `nsdm`
 butt at a diffusion/tap edge the enclosure is 0.000 µm (psd.6), so the
-two plates' placement errors meet there (our reading). ASML specifies
+`PSDM` and `NSDM` plates meet there and their placement errors add (our
+reading). ASML specifies
 "≤ 40 nm" single-machine overlay for the /275D
 stepper[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
 margin is not public).
@@ -338,7 +342,8 @@ reg. devices" (0.05, `LDST5`) describe the junction the implant
 forms.[^pdk-03] Table 3d gives punch-through spacings "n+ - n+ or p+-p+"
 of 0.23 (`DPTS`) and "p+ in nwell to pwell" of 0.05 (`PPTS`), and Table
 3e a "Minimum n+ or p+ - nwell spacing to prevent latch-up" of 0.23
-(`NPNWLU`) and a "Max. overlap of n-well by p+ tap" of 0.06
+(`NPNWLU`; the row the published table shows as its heading) and a
+"Max. overlap of n-well by p+ tap" of 0.06
 (`XNWPTS`).[^pdk-03] Table F3a of the *Summary of Key Periphery Rules*
 gives `n/psdm` a width of 0.380, a spacing of 0.380 and "Yes" in the
 "Manual" (merge) column, and, in its diff and tap columns, spacings of 0.130 and
@@ -440,12 +445,12 @@ width and spacing checks without saying which applies where (0.38
 * Carpenter and Fecteau, IIT 2002 — productivity during high-pressure
   resist outgassing.[^carpenter-2002]
 * Rubin et al., IIT 2000 — UV photostabilisation of resist before
-  high-dose implants.[^rubin-2000]
+  high-dose, high-energy implants.[^rubin-2000]
 * Fujimura et al., *JJAP* 1989 — the carbonised layer of high-dose
   implanted resist and a two-step ashing process to remove
   it.[^fujimura-1989]
-* Krieger et al., *IEEE TED* 1989 — shadowing of a tilted source/drain
-  implant by gate and spacer.[^krieger-1989]
+* Krieger et al., *IEEE TED* 1989 — shadowing of a 7°-tilted arsenic
+  source/drain implant by the sidewall spacer.[^krieger-1989]
 * Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
   in resist.[^ziegler-2010]
 * Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
