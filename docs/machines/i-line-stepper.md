@@ -347,6 +347,8 @@ implants.[^pdk-03]
   low-Vt N-channel, N-well, high-Vt P-channel, P-well block and
   drain-extended P-well masks, assigned to this class; {ref}`mask-fom`
   for the field-oxide mask, for which it is the alternative.
+* {ref}`mask-capm` — the per-mask page for the first MiM capacitor
+  mask, assigned to this class.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, developer and exposure-tool
