@@ -323,7 +323,8 @@ a memory array cannot be derived from these rules alone (the
   {ref}`TUNME <step-039>` — the mask step, the ARC etch, the two
   implants and the oxide etch.
 * {ref}`ONO <step-040>` and {ref}`ONOM <step-041>` — the stack grown in
-  the windows and the mask that confines it.
+  the windows and the mask that confines it; {ref}`mask-onom` — the ONO
+  mask's page.
 * {ref}`mask-dnm` — the deep N-well mask; tunm.6a keeps the windows
   inside deep N-well.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders,
