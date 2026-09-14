@@ -313,8 +313,9 @@ commercial implanters is given by Current.[^current-2017]
   paper.[^macpherson-1971]
 * Tsukamoto et al., *NIM B* 1991 — review of high-energy implantation
   for {term}`retrograde wells <retrograde well>` and buried layers.[^tsukamoto-1991]
-* Morris and Rubin, IIT 2000 — why MeV retrograde wells replaced
-  diffused wells, with cost trade-offs.[^morris-2000]
+* Morris and Rubin, IIT 2000 — batch high-energy against serial
+  medium-current implanters for multiple modulated well implants, in
+  device performance and cost.[^morris-2000]
 * Rubin, Morris and Jasper, IIT 2002 — process-control issues for
   well implants.[^rubin-2002]
 * Hook et al. (IBM), *IEEE TED* 2003 — lateral straggle and the mask
