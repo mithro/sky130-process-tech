@@ -196,9 +196,9 @@ fab (SKY130 values are not public):
   barriers, and a well anneal "at approximately 900° C. in a neutral
   ambient such as nitrogen for approximately 30 minutes" (the patent does
   not name the tool).[^pat-vt-lsi]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds by
-  laterally doped channel implants self-aligned to the gate
-  pillars.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+  gate length, with a laterally doped channel implant self-aligned to
+  the gate pillars.[^pat-vt-amd]
 * MacPherson, *Appl. Phys. Lett.* 1971 — the original
   threshold-adjust-by-implantation paper.[^macpherson-1971]
 * Taur et al., *Proc. IEEE* 1997 — super-steep retrograde channels and
