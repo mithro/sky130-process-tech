@@ -1,0 +1,250 @@
+# Financial and corporate filings about the SKY130 lineage.
+# Schema: docs/plans/filings-index-design.md; check with
+# `uv run tools/check_filings.py` (add --online to re-check quotes).
+# sec.gov is never fetched directly: every EDGAR document was read
+# through the Wayback Machine copy given in urls.wayback.
+schema_version: 1
+retrieved: 2026-09-14
+filings:
+
+- id: skywater-s-1-2021-03-22
+  company: SkyWater Technology, Inc.
+  company_key: skywater
+  form: S-1
+  document_type: registration-statement
+  parent: null
+  title: Form S-1 registration statement (initial public offering), Registration No. 333-254580
+  period:
+    label: fiscal years 2019 and 2020 (financial statements to 2021-01-03)
+    start: null
+    end: 2021-01-03
+  filed: 2021-03-22
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001193125-21-089687
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm
+    wayback: https://web.archive.org/web/20210323222220/https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm
+    ir: null
+  about:
+    summary: >-
+      SkyWater's IPO registration statement. It says the Bloomington fab was
+      a Cypress captive fab for 20 years, that Oxbow Industries acquired the
+      business from Cypress in March 2017, that a foundry services agreement
+      with Cypress ran to June 2020, that Cypress (acquired by Infineon in
+      April 2020) was 29 % of 2020 revenue, and that S130 base design IP from
+      Cypress was licensed in 2017; the exhibit index lists the Process
+      Technology License Agreement with Cypress (exhibit 10.6).
+    quotes:
+    - text: >-
+        Before we began independent operations, our fab was owned and operated
+        by Cypress Semiconductor Corporation, or Cypress, as a captive
+        manufacturing facility for 20 years.
+      location: Prospectus Summary
+    - text: >-
+        the base design IP portfolio for S130 technologies originating from
+        Cypress (now Infineon) was licensed via a technology license agreement
+        in 2017
+      location: Business
+  auditor_report: null
+  relationships:
+  - skywater-ipo
+  - skywater-fab-history
+  - cypress-fab-sale
+  - cypress-technology-license
+  - cypress-foundry-services
+  - oxbow-related-party
+  - skywater-suppliers
+  related_docs:
+  - label: step-001
+    relation: cites
+    reason: The starting-material step page cites the registration statement as SEC-01 for the wafer suppliers SkyWater names.
+  - label: machines-index
+    relation: cites
+    reason: The machines index cites SEC-01 for the fab's tool count and process platforms.
+  - label: materials-index
+    relation: cites
+    reason: The materials index cites SEC-01 for the raw-material suppliers SkyWater names.
+  inventory_key: SEC-01
+  discovery:
+  - inventory-seed
+  - wayback-cdx
+  discovery_note: >-
+    Inventory entry SEC-01; Wayback CDX listing of EDGAR folder
+    1819974/000119312521089687 (15 captured documents, 2026-09-14).
+  verified: 2026-09-14 Wayback capture 20210323222220 of the EDGAR document fetched; quotes checked
+
+- id: skywater-s-1-a-2021-04-12
+  company: SkyWater Technology, Inc.
+  company_key: skywater
+  form: S-1/A
+  document_type: registration-statement
+  parent: null
+  title: Amendment No. 1 to Form S-1 registration statement, Registration No. 333-254580
+  period:
+    label: fiscal years 2019 and 2020 (financial statements to 2021-01-03)
+    start: null
+    end: 2021-01-03
+  filed: 2021-04-12
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001193125-21-112378
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/1819974/000119312521112378/d26688ds1a.htm
+    wayback: https://web.archive.org/web/20210412120508/https://www.sec.gov/Archives/edgar/data/1819974/000119312521112378/d26688ds1a.htm
+    ir: null
+  about:
+    summary: >-
+      First amendment to the IPO registration statement, with the same
+      Cypress history. Its exhibit index adds Amendment No. 1 (2020-03-19)
+      and Amendment No. 2 (2020-04-16) to the Process Technology License
+      Agreement between Cypress Semiconductor Corporation and SkyWater
+      Technology Foundry (formerly Cypress Semiconductor (Minnesota) Inc.),
+      and lists the management fee agreement with Oxbow. It contains
+      Deloitte & Touche LLP's audit report on CMI Acquisition, LLC.
+    quotes:
+    - text: >-
+        Amendment No. 1 to the Process Technology License Agreement, dated as of
+        March 19, 2020, by and between Cypress Semiconductor Corporation and
+        SkyWater Technology Foundry, Inc. (f/k/a Cypress Semiconductor
+        (Minnesota) Inc.)
+      location: Exhibit index, exhibit 10.7
+    - text: >-
+        We became an independent company in March 2017 when we were acquired by
+        Oxbow Industries, LLC, or Oxbow, as part of a divestiture from Cypress.
+      location: Prospectus Summary
+  auditor_report:
+    firm: Deloitte & Touche LLP
+    subject: consolidated financial statements of CMI Acquisition, LLC and subsidiaries, fiscal years 2019 and 2020
+    date: 2021-03-22
+    quote: /s/ Deloitte & Touche LLP Minneapolis, Minnesota March 22, 2021
+  relationships:
+  - skywater-ipo
+  - skywater-fab-history
+  - cypress-technology-license
+  - oxbow-related-party
+  related_docs:
+  - label: machines-index
+    relation: cites
+    reason: The machines index cites the S-1 and its amendment together as SEC-01.
+  inventory_key: SEC-01
+  discovery:
+  - inventory-seed
+  - wayback-cdx
+  discovery_note: >-
+    Inventory entry SEC-01 (which names the S-1/A); Wayback CDX listing of
+    EDGAR folder 1819974/000119312521112378 (2026-09-14).
+  verified: 2026-09-14 Wayback capture 20210412120508 of the EDGAR document fetched; quotes checked
+
+- id: skywater-424b4-2021-04-22
+  company: SkyWater Technology, Inc.
+  company_key: skywater
+  form: 424B4
+  document_type: prospectus
+  parent: null
+  title: Final prospectus for the initial public offering of 6,960,000 shares of common stock
+  period:
+    label: fiscal years 2019 and 2020 (financial statements to 2021-01-03)
+    start: null
+    end: 2021-01-03
+  filed: 2021-04-22
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001193125-21-126725
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/1819974/000119312521126725/d26688d424b4.htm
+    wayback: https://web.archive.org/web/20230805173604/https://www.sec.gov/Archives/edgar/data/1819974/000119312521126725/d26688d424b4.htm
+    ir: null
+  about:
+    summary: >-
+      The final IPO prospectus (registration nos. 333-254580 and 333-255385).
+      It repeats the Cypress captive-fab history and the 2017 S130 IP
+      licence, and names Infineon as Cypress's acquirer when giving Cypress's
+      share of revenue.
+    quotes:
+    - text: >-
+        Cypress, which was acquired in April 2020 by Infineon Technologies AG,
+        accounted for approximately 29% and 48% of our revenue for the fiscal
+        years ended January 3, 2021 and December 29, 2019, respectively.
+      location: Risk Factors
+    - text: This is our initial public offering.
+      location: Cover page
+  auditor_report: null
+  relationships:
+  - skywater-ipo
+  - skywater-fab-history
+  - cypress-foundry-services
+  - cypress-technology-license
+  related_docs:
+  - label: materials-index
+    relation: cites
+    reason: The materials index cites the S-1 family, including the final prospectus, as SEC-01.
+  inventory_key: SEC-01
+  discovery:
+  - inventory-seed
+  - edgar-listing-wayback
+  discovery_note: >-
+    Named in inventory entry SEC-01; filing date from the Wayback capture
+    (2025-05-08) of SkyWater's EDGAR company filing list.
+  verified: 2026-09-14 Wayback capture 20230805173604 of the EDGAR document fetched; quotes checked
+
+- id: skywater-def-14a-2022-04-19
+  company: SkyWater Technology, Inc.
+  company_key: skywater
+  form: DEF 14A
+  document_type: proxy-statement
+  parent: null
+  title: Definitive proxy statement for the 2022 annual meeting of stockholders
+  period:
+    label: fiscal year 2021
+    start: null
+    end: 2022-01-02
+  filed: 2022-04-19
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001140361-22-015022
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/1819974/000114036122015022/ny20002114x1_def14a.htm
+    wayback: https://web.archive.org/web/20250403124257/https://www.sec.gov/Archives/edgar/data/1819974/000114036122015022/ny20002114x1_def14a.htm
+    ir: null
+  about:
+    summary: >-
+      SkyWater's first proxy statement. Its related-party section describes
+      the management fee agreement with Oxbow entered into at the 2017
+      divestiture from Cypress, and the 2020 sale of the Bloomington office
+      and manufacturing facility (2401 and 2411 East 86th Street) to Oxbow
+      Realty Partners for $39 million.
+    quotes:
+    - text: >-
+        In connection with our divestiture from Cypress Semiconductor
+        Corporation on March 1, 2017, our wholly-owned subsidiary, SkyWater
+        Technology Foundry, entered into a management fee agreement with Oxbow
+      location: Certain Relationships and Related Party Transactions
+    - text: >-
+        we sold our property, consisting of our office and manufacturing
+        facility, located at 2401 and 2411 East 86th Street, in Bloomington,
+        Minnesota, to Oxbow Realty for a purchase price of $39 million
+      location: Certain Relationships and Related Party Transactions
+  auditor_report: null
+  relationships:
+  - oxbow-related-party
+  - cypress-fab-sale
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The overview's account of the fab's ownership is complemented by the proxy's description of the 2020 sale-leaseback of the Bloomington site.
+  inventory_key: null
+  discovery:
+  - edgar-listing-wayback
+  discovery_note: >-
+    Listed in the Wayback capture (2025-05-08) of SkyWater's EDGAR company
+    filing list; document found through a CDX listing of its folder.
+  verified: 2026-09-14 Wayback capture 20250403124257 of the EDGAR document fetched; quotes checked
