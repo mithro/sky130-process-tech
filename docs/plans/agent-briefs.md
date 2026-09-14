@@ -94,7 +94,9 @@ Run `uv run tools/check_steps.py`, `uv run tools/check_refs.py`,
 `uv run tools/check_materials.py` (material-page headings, index row
 keys and class-page table, rows covered, step lists and summary table),
 `uv run tools/check_masks.py` (mask-page titles, headings, quick facts, plates,
-step lists and links) and
+step lists and links), `uv run tools/check_papers.py` (the academic paper
+index dataset), `uv run tools/gen_papers.py --check` (the generated paper
+index pages are up to date and no published label changed) and
 `uv run sphinx-build -W -q -b html docs docs/_build/html` before
 finishing. Report the branch name, commits, and any claims you were
 unable to source.
@@ -163,7 +165,8 @@ marked *(checked)*.
   existing entry gets a separate line "Also used on the <class> material
   page." after its "Tier:" text.
 
-Run all five checkers and the `-W` build as in the step-page brief.
+Run all the checkers (including `check_papers.py` and
+`gen_papers.py --check`) and the `-W` build as in the step-page brief.
 
 ## Mask-page writer brief
 
@@ -340,9 +343,10 @@ enforces the points marked *(checked)*.
     one public derivation, not SkyWater's;
   * sheet and site notes are not cited as corroborating each other.
 
-Run all five checkers (`check_steps.py`, `check_refs.py`,
-`check_machines.py`, `check_materials.py`, `check_masks.py`) and the
-`-W` build as in the step-page brief.
+Run all the checkers (`check_steps.py`, `check_refs.py`,
+`check_machines.py`, `check_materials.py`, `check_masks.py`,
+`check_papers.py` and `gen_papers.py --check`) and the `-W` build as in
+the step-page brief.
 
 ## Reviewer brief (technical accuracy and consistency)
 
@@ -364,7 +368,8 @@ them. Check, and report with file and line references:
 5. **Template, citations and build** — mandatory headings present;
    citations follow `docs/plans/citation-style.md` (footnotes, no
    reference-style links, Deep dive at or above the minimum length and
-   genuinely varied); `tools/check_refs.py` and the `-W` build pass.
+   genuinely varied); `tools/check_refs.py`, `tools/check_papers.py`,
+   `tools/gen_papers.py --check` and the `-W` build pass.
 
 Return a verdict (`approve`, `approve with fixes`, `reject`) and an
 itemised list of required fixes.
