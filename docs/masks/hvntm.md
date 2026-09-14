@@ -26,7 +26,7 @@ step is performed is on the step page; every mask is indexed on the
 | Mask-level layer (`gds_layers.csv`) | `chvntm` mask 39:0, "High voltage N-tip implant mask"; drawing 38:20, without a description[^pdk-06] |
 | Drawn layer (`gds_layers.csv`) | `hvntm` drawing 125:20, "High voltage N-tip implant"; "OR-ed with the CL" (the `hvntm` rules)[^pdk-06][^pdk-periph] |
 | Minimum CD, feature / space | `HVNTMCD` 0.7 / `HVNTMCDSP` 0.7[^pdk-03] |
-| Polarity and tone | Not published. The step page reads the resist as opened over the high-voltage NMOS; the drawn layer "Defines tip implants", and the `chvntm` checks keep the created layer over n+ diffusion inside `hvi` and off p+ diffusion and taps, so the data mark the openings (our reading); with a positive resist the plate would be clear over them (inference). |
+| Polarity and tone | Not published. The step page reads the resist as opened over the high-voltage NMOS; the drawn layer "Defines tip implants", and the `chvntm` checks keep the combined mask layer over n+ diffusion inside `hvi` and off p+ diffusion and taps, so the data mark the openings (our reading); with a positive resist the plate would be clear over them (inference). |
 | Exposure class | i-line, an inference on the step page from the 0.7 µm width and space; no public source names the tool ({ref}`machine-i-line-stepper`) |
 | Mask type (process-steps sheet) | None recorded; the sheet codes a type for the via 2, via 3 and via 4 plates only[^steps-sheet] |
 | Plates recorded | all eight[^steps-sheet] |
@@ -93,9 +93,14 @@ layer is `hvntm` at 125:20, a layer number it shares with `lvtn`
 125:44.[^pdk-06] This is the one mask for which the PDK states an
 operation. Rule X.1 of the `hvntm` set reads "Hvntm can be drawn inside
 HVI. Drawn layer will be OR-ed with the CL and rechecked for
-CLDRC".[^pdk-periph] The PDK does not expand "CL" or "CLDRC"; the
-{ref}`HVNTM <step-068>` page reads the reticle as the union of what the
-designer draws and a computed layer. Rule x.15a confines mask layers to
+CLDRC".[^pdk-periph] The PDK does not expand "CL" or "CLDRC". Its only
+other use of the abbreviation is in the periphery rules' flag legend,
+where A means "Rule documents a functionality implemented in CL
+algorithms and may not be checked by DRC." and AD "Rule documents a
+functionality implemented in CL algorithms and checked by
+DRC.";[^pdk-periph] that fits a reading of CL as the mask-generation
+computation (our reading). The {ref}`HVNTM <step-068>` page reads the
+reticle as the union of what the designer draws and a computed layer. Rule x.15a confines mask layers to
 test modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P),[^pdk-periph] so a design inside the
 die draws `hvntm` (our reading of x.15a).
@@ -113,11 +118,11 @@ NDIFFnoHV" and "CLHVNTM must not overlap PDIFF_noENID", each with a
 by CLHVNTM" (`chvntm.7`); and two `chvntm.nikon` checks, "HVNTMmk in the
 nikon cross has the wrong polarity" and "HVNTMmk is missing from the
 nikon cross in the layout".[^pdk-errors] It does not define `CLHVNTM`.
-We read it as the created `HVNTM` data, the "CL" of rule X.1, and its
-checks as the "CLDRC" there (inference from the names): the checks mirror
-the drawn-layer rules hvntm.1 to hvntm.7 on the created layer, and they
-describe openings over n+ diffusion in `hvi`, not the operation that makes
-them. The same page has its own versions of the drawn-layer rules, in
+We read `CLHVNTM` as the mask data after the drawn layer has been OR-ed
+with the computed part, and its checks as the "CLDRC" of rule X.1
+(inference from the names): the checks mirror the drawn-layer rules
+hvntm.1 to hvntm.7 on the combined layer, and they describe openings
+over n+ diffusion in `hvi`, not the operation that makes them. The same page has its own versions of the drawn-layer rules, in
 which X.1 reads "hvntm must be drawn inside hvi" (`hvntm.x.1`) where the
 periphery rules say "can be drawn", and a module-cut check, "0.19 min.
 spacing of moduleCutAREA & q0hvntmnotBuildSpace" (x.12a).[^pdk-errors]
@@ -142,8 +147,8 @@ data, not SkyWater's mask-generation recipe; for the index, the created
 part is one reading of the PDK's unexpanded "CL".
 
 The created part is consistent in kind with the `chvntm` checks, which
-place the created layer over n+ diffusion inside `hvi`, and with the
-Table F2b rows above (our comparison).[^pdk-errors][^pdk-06] It differs
+place the combined mask layer over n+ diffusion inside `hvi`, and with
+the Table F2b rows above (our comparison).[^pdk-errors][^pdk-06] It differs
 in detail: it takes n-type diffusion as `diff` AND `nsdm`, where Table
 C3 of the *Layers Reference* defines `N+_diff` as "Diff NOT Nwell", and it
 has no sizing, where `chvntm.3` asks for a 0.185 enclosure.[^pdk-06]
@@ -327,7 +332,8 @@ blank in the published table.[^pdk-periph]
 
 Table 2 of *Criteria & Assumptions* repeats the width and space as
 `HVNTMCD` 0.7 and `HVNTMCDSP` 0.7, and the Error Messages page checks the
-created layer at the same pair (`chvntm.1`, `chvntm.2a`).[^pdk-03][^pdk-errors]
+combined mask layer at the same pair (`chvntm.1`,
+`chvntm.2a`).[^pdk-03][^pdk-errors]
 The other criteria that name the mask or its implant are those quoted
 above: Table 3f's 40° tilt and 23° twist; Table 4's "Photoresist
 thickness for HV Tip Implants" (0.3), "HVNTM shadowing" (0.232) and "Min
