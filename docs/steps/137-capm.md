@@ -199,6 +199,8 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 * Previous mask: {ref}`VIM2 <step-129>`; next mask:
   {ref}`MM3 <step-139>`; the second capacitor's mask:
   {ref}`CAP2M <step-152>`.
+* Mask page: {ref}`CAPM <mask-capm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
