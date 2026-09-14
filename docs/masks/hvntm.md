@@ -347,7 +347,7 @@ active pattern.
   {ref}`HVASTIS <step-070>` — the mask step, the tilted implant and the
   strip.
 * {ref}`mask-ntm` — the standard tip mask before it;
-  {ref}`LDNTM <step-071>` — the SONOS tip mask after it;
+  {ref}`mask-ldntm` — the SONOS tip mask after it;
   {ref}`TIPRTAD <step-075>` — the anneal of all three tips.
 * {ref}`LVOM <step-044>` and {ref}`GOX100 <step-043>` — where the `hvi`
   thick oxide the mask follows is defined and grown.
