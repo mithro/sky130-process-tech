@@ -5806,7 +5806,9 @@ Dunbar and C. D. Wilson, "High sheet resistance, low temperature
 coefficient of resistance resistor films for integrated circuits",
 *Journal of Vacuum Science & Technology B* **28**(4), 834–840 (2010).
 <https://doi.org/10.1116/1.3466531> High-sheet-resistance, low-TCR
-resistor films for ICs. Used on steps 049, 053, 055 and 056. Tier: deep
+resistor films for ICs: rf-sputtered films of the Cr–Si–B–SiO₂/Al₂O₃
+system, not polysilicon, reaching 20 kΩ/sq with a TCR below
+200 ppm/°C at 40 nm thickness (abstract). Used on steps 049, 053, 055 and 056. Tier: deep
 dive.
 Also used on the RPM and URPM mask pages.
 
@@ -14471,9 +14473,10 @@ on" line of their own. Apart from PDK-SUMMARY and PDK-ERRORS, pages of
 the SkyWater SKY130 PDK documentation, none of these sources mentions
 SkyWater, SKY130 or the Bloomington fab; they describe masks, mask
 making and inspection, phase-shift masks, lithography and proximity
-correction, implantation, well engineering, CMP fill, layout-dependent effects, multi-threshold,
-varactor and high-voltage devices in general. Every URL was fetched on 2026-09-13 or
-2026-09-14: papers and books were checked through Crossref
+correction, implantation, well engineering, CMP fill, layout-dependent
+effects, embedded SONOS flash, dual gate oxides, polysilicon resistors,
+and multi-threshold, varactor and high-voltage devices in general. Every
+URL was fetched on 2026-09-13 or 2026-09-14: papers and books were checked through Crossref
 (bibliographic data) and OpenAlex (abstracts or tables of contents), and
 their annotations rest on those. An entry's tier records its first use.
 
