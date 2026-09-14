@@ -1544,12 +1544,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4667111A, retrieved 2026-09-14
   expiry:
-    date: 2018-04-10
+    date: null
     estimated: true
-    basis: 'all 9 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US4667111A (Google Patents ''Anticipated expiration'' (IFI Claims
-      estimate); status shown: Expired - Lifetime)'
-  expired: true
+    basis: 'not bounded from the records retrieved: US4667111C1; latest estimate US4667111C1 (reexamination
+      certificate; no term of its own (the term is that of the patent it amends))'
+  expired: unknown
   members:
   - number: US4667111A
     country: US
@@ -5287,6 +5286,9 @@ families:
   discovery:
   - cited-in-docs
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5257926A/en
+  notes:
+  - Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows
+    name Persys Technology as the first assignee of the inventors' interest.
 - id: GP25218688
   family:
     source: Google Patents family ID
@@ -15678,6 +15680,12 @@ families:
     relation: cited-on-page
     reason: 'Cited on this page as PAT-HV-GRADED-CYP; the inventory describes it as: A high-voltage device
       with self-aligned graded junctions in a CMOS flow.'
+  - target: step-068
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns high-voltage transistors with self-aligned graded
+      junctions, the devices this page's mask serves on its reading, and it is not evidence that the technique
+      is used in SKY130.
   inventory_keys:
   - PAT-HV-GRADED-CYP
   discovery:
@@ -16509,6 +16517,9 @@ families:
   discovery:
   - cited-in-docs
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6776873B1/en
+  notes:
+  - Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows
+    name Applied Materials as the first assignee of the inventors' interest.
 - id: GP27754013
   family:
     source: Google Patents family ID
@@ -16980,11 +16991,20 @@ families:
     relation: cited-on-page
     reason: Cited on this page as PAT-01, a patent titled "Method of manufacturing an oxide-nitride-oxide
       (ONO) dielectric for SONOS-type devices".
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Assigned by its inventors to Cypress Semiconductor, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming a SONOS oxide-nitride-oxide
+      dielectric, the subject of this page on its reading, and it is not evidence that the technique is
+      used in SKY130.
   inventory_keys:
   - PAT-01
   discovery:
   - cited-in-docs
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6969689B1/en
+  notes:
+  - Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows
+    name Cypress Semiconductor Corporation as the first assignee of the inventors' interest.
 - id: GP29999977
   family:
     source: Google Patents family ID
@@ -18778,6 +18798,9 @@ families:
   discovery:
   - cited-in-docs
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US20060006461A1/en
+  notes:
+  - Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows
+    name Texas Instruments Incorporated as the first assignee of the inventors' interest.
 - id: GP35732850
   family:
     source: Google Patents family ID
@@ -20123,6 +20146,12 @@ families:
     reason: 'Cited on this page as PAT-02; the inventory describes it as: Tunnel oxide "from about 15
       Å to about 22 Å", multi-layer charge-trapping layer "about 70 Å to about 150 Å", blocking oxide
       "about 30 Å to about 70 Å".'
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a SONOS oxide-nitride-oxide stack with oxynitride
+      layers, the subject of this page on its reading, and it is not evidence that the technique is used
+      in SKY130.
   inventory_keys:
   - PAT-02
   discovery:
@@ -20343,6 +20372,12 @@ families:
     relation: cited-on-page
     reason: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory
       devices and logic CMOS devices".
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns integrating a SONOS charge-trap stack with logic
+      CMOS, the subject of this page on its reading, and it is not evidence that the technique is used
+      in SKY130.
   inventory_keys:
   - PAT-03
   discovery:
@@ -20469,6 +20504,12 @@ families:
     relation: cited-on-page
     reason: 'Cited on this page as PAT-RADOX-CYP; the inventory describes it as: A radical oxidation process
       for the ONO stack with trap-free and trap-dense oxynitride layers.'
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a radical oxidation process for a charge-trap
+      ONO stack, the subject of this page on its reading, and it is not evidence that the technique is
+      used in SKY130.
   inventory_keys:
   - PAT-RADOX-CYP
   discovery:
@@ -21029,6 +21070,12 @@ families:
   - target: step-072
     relation: cited-on-page
     reason: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
+  - target: step-040
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns embedded SONOS memory cells built in a CMOS flow
+      with an ONO stack, the subject of this page on its reading, and it is not evidence that the technique
+      is used in SKY130.
   inventory_keys:
   - PAT-04
   discovery:
@@ -21392,6 +21439,12 @@ families:
     relation: cited-on-page
     reason: 'Cited on this page as PAT-ONO-THICK-CYP; the inventory describes it as: The alternative ordering
       with the thick gate oxide before the ONO, and why.'
+  - target: step-043
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns the order of ONO stack formation and thick gate
+      oxidation, the subject of this page on its reading, and it is not evidence that the technique is
+      used in SKY130.
   inventory_keys:
   - PAT-ONO-THICK-CYP
   discovery:
