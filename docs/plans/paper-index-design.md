@@ -1,10 +1,11 @@
 # Academic paper index — design
 
-Status: proposal, 2026-09-14, revised after the independent review of
-the dataset phase. Dataset phase done (`data/papers.yaml`,
-`data/papers-excluded.yaml`, `tools/check_papers.py`); pages not yet
-written. This file lives in `docs/plans/`, which the Sphinx build
-excludes.
+Status: 2026-09-14. Dataset, generator and pages done and reviewed twice
+(`data/papers.yaml`, `data/papers-excluded.yaml`, `data/papers-labels.yaml`,
+`tools/check_papers.py`, `tools/gen_papers.py`, `docs/references/papers/`).
+Not yet done: links to the paper pages from pages outside
+`docs/references/` (deferred on instruction; see §7). This file lives in
+`docs/plans/`, which the Sphinx build excludes.
 
 ## 1. Purpose and scope
 
@@ -77,7 +78,7 @@ It is the single source of truth; pages are generated from it.
 | `title` | as registered (Crossref, arXiv abs page or proceedings page); used by `--online` |
 | `title_display` | the title for pages: inline TeX converted to Unicode ("4 × 8"), backticks and U+2010 hyphens normalised, ASMC track tags (" : YE: …") removed |
 | `authors`, `year` | as published; the conference year where the Crossref date is the later online date |
-| `venue`, `venue_series`, `venue_type` | container title as registered; a normalised series for grouping (`ASMC`, `ISSM`, `IEDM`, `VLSI Symposium`, `ISCAS`, `ICM`, `IEEE Design & Test`, `WOSET`, `arXiv`, …); one of journal, magazine, conference, workshop, preprint, report |
+| `venue`, `venue_series`, `venue_type` | container title as registered (pages drop catalogue numbers such as "(Cat. No.01CH37203)" and trailing punctuation); a normalised series for grouping — the full name for journals and magazines ("IEEE Transactions on Electron Devices"), the usual acronym for conferences and workshops (`ASMC`, `ISSM`, `IEDM`, `VLSI Symposium`, `ISCAS`, `ICM`, `WOSET`), and `arXiv`; one of journal, magazine, conference, workshop, preprint, report |
 | `volume`, `issue`, `pages`, `article_number` | from Crossref where registered, otherwise `null`, so that every entry is a full citation |
 | `doi`, `landing_url` | DOI as registered; publisher landing page from the Crossref `resource.primary.URL` (https) |
 | `arxiv` | `null` or `{id, url}` |
@@ -86,7 +87,7 @@ It is the single source of truth; pages are generated from it.
 | `topics` | controlled list (§3) |
 | `basis` | §1 |
 | `institutions` | every institution named in the raw affiliation strings (OpenAlex) or on the paper itself (arXiv HTML, OSTI record, proceedings page), with OpenAlex display names used only for spelling; never empty |
-| `fabrication` | `null` or `{quote, source}`: an **exact** quotation from the paper naming the run, shuttle or foundry (omissions marked "[…]"), and `source` one of `abstract`, `full text (HTML)`, `full text (PDF)` |
+| `fabrication` | `null` or `{quote, source}`: an **exact** quotation from the paper naming the process, foundry, run or shuttle, or stating the fabrication or silicon result (omissions marked "[…]"); shown on pages as "Process and fabrication (quoted from …)", and `source` one of `abstract`, `full text (HTML)`, `full text (PDF)` |
 | `related_docs` | `{label, reason}` pairs: a `{ref}` label under `docs/` and one sentence that claims no more than the paper says |
 | `inventory_key` | the `public-sources.md` key when the paper is already in the inventory |
 | `discovery` | how the paper was found (§5) |
@@ -102,7 +103,18 @@ the process and the publisher refuses scripted requests). An id may not
 appear in both files. A held paper moves to `papers.yaml` when its full
 text is read and names the process.
 
-### 2.3 Rules
+### 2.3 `data/papers-labels.yaml`
+
+An append-only YAML list of `{label, id, previous_ids, published}`, one
+entry for every page label ever published. `check_papers.py` requires
+every record's label to be in the map with its id and every mapped label
+to be still used by the same paper, so a label cannot be dropped, renamed
+or reused; an id correction adds the old id to `previous_ids`.
+`gen_papers.py --check` also compares the map with its versions at the
+merge base with `main` and at `HEAD`, so a change that is already
+committed on a branch still fails.
+
+### 2.4 Rules
 
 * Claims in `notes`, `fabrication` and `related_docs` go no further than
   the abstract or the full text actually retrieved; anything else is
@@ -133,7 +145,7 @@ Process, PDK and devices: `pdk-models`, `device-characterisation`,
 `high-temperature`, `rram`, `sonos`, `floating-gate`,
 `beol-integration`, `photonics`, `mems`.
 
-Circuits fabricated on the process: `analog-rf`, `mixed-signal`,
+Circuits designed for or fabricated on the process: `analog-rf`, `mixed-signal`,
 `power-management`, `digital`, `memory`, `sensors`, `quantum`,
 `security`.
 
@@ -142,49 +154,63 @@ shuttle programme or its educational use, not every paper that used a
 shuttle), `fab-manufacturing`, `lineage-s8`.
 
 The one-line definitions live in `tools/check_papers.py` (`TOPICS`),
-which the generator will also use for section introductions. Adding a
+which the generator uses for section introductions and checks against its
+display names. The circuit topics describe what a paper is about, not
+whether it has silicon results; the inclusion rules in §1 and the entry's
+quotation and notes say that. Adding a
 topic means adding it there and to the page mapping in §4. A derived
 shuttle grouping, if wanted, is taken only from `fabrication.quote`.
 
-## 4. Proposed pages
+## 4. Pages
 
 All pages live under `docs/references/papers/`, are listed in a toctree
 from `docs/references/index.md`, and are generated.
 
 | Page | Label | Grouping |
 |---|---|---|
-| `index.md` | `papers-index` | Landing page: scope, `basis` and inclusion rules (§1), counts by topic, year and access, how to read an entry, links to the other views, and **the only full entry for each paper**, sorted by first author, each under its stored `label` |
-| `fab-publications.md` | `papers-fab-publications` | "Fab publications (Bloomington)": the `fab-manufacturing` records (Cypress Fab 4 and SkyWater-era manufacturing, yield and process-control papers, all `affiliation-inference`), grouped Cypress era then SkyWater era, with the basis explained once at the top; linked from `index.md` and from the related machine pages. These records appear on no topic or device page other than this one |
-| `by-topic.md` | `papers-by-topic` | One section per topic in §3 order (except `fab-manufacturing`), grouped under three headings (process, PDK and devices; circuits; ecosystem and lineage); each section opens with the topic definition and links to the process pages it relates to |
-| `by-module.md` | `papers-by-module` | Entries grouped by the `related_docs` labels they carry: overview modules (for example the sky130B ReRAM page), steps, masks, machines and material classes, each heading linking the page; entries without related pages are listed at the end |
-| `by-year.md` | `papers-by-year` | Newest year first |
-| `by-venue.md` | `papers-by-venue` | `venue_type`, then `venue_series` (IEDM, VLSI Symposium, ISCAS, ASMC, ISSM, IEEE Design & Test, arXiv, WOSET, …) |
-| `by-institution.md` | `papers-by-institution` | Institution name, alphabetical; SkyWater Technology and Cypress Semiconductor first, as the fab's own publications |
-| `by-device.md` | `papers-by-device` | Device or circuit type derived from topics: MOSFET models and cryogenic devices; RRAM; SONOS and floating-gate NVM; BEOL-integrated devices; analog and RF; data converters; power; digital and memory; sensors and quantum interfaces |
+| `index.md` | `papers-index` | Landing page: scope (`papers-scope`), basis and inclusion rules (§1), access counts, year counts linking the by-year sections, a topic table (non-fab papers, with a column for fab publications that share the topic, and a row for the fab page), how to read an entry, links to the other views, and **the only full entry for each paper**, sorted by label (first author's family name, then year) |
+| `fab-publications.md` | `papers-fab-publications` | "Fab publications (Bloomington)": the `fab-manufacturing` records, all `affiliation-inference`, grouped by the company named in their institutions (a name containing "Cypress" or "SkyWater"; the generator fails if a record names neither or both) |
+| `by-topic.md` | `papers-by-topic` | One section per topic with papers, in §3 order under three headings, each opening with the topic definition and, for RRAM, BEOL integration, SONOS and PDK models, links to the related process pages; fab publications are not listed but counted ("Also N fab publications with this topic"); topics without papers are named in one closing line |
+| `by-module.md` | `papers-by-module` | "Papers by related page": entries grouped by their `related_docs` labels (overview, step, mask, category, machine and material pages) with the reasons; papers without a related page at the end |
+| `by-device.md` | `papers-by-device` | PDK and process overviews; transistor models, characterisation and cryogenic operation (excluding work on memory devices); RRAM; SONOS and floating-gate NVM; BEOL-integrated devices; test structures, reliability and radiation; analog and RF; data converters; power; digital logic, memory and security; sensors and quantum interfaces — fab publications counted as on the topic page |
+| `by-year.md` | `papers-by-year` | Newest year first, each year labelled `papers-year-<year>` |
+| `by-venue.md` | `papers-by-venue` | `venue_type`, then `venue_series` |
+| `by-institution.md` | `papers-by-institution` | Cypress Semiconductor and SkyWater Technology sections first; the other institutions in one alphabetical table with links to their papers |
 
 Full entry format (on `index.md` only):
 
 ```markdown
 (paper-hsieh-2019a)=
-* **Title (title_display).** A. Author, B. Author and C. Author.
-  *Venue*, vol. V, no. N, pp. P, 2019. DOI
-  [10.1109/…](https://doi.org/10.1109/…) · [publisher page](https://…) ·
-  free copy: [arXiv](https://arxiv.org/abs/…) · paywalled.
-  Basis: affiliation inference. Topics: {ref}`RRAM <papers-topic-rram>`, … ·
-  Fabrication (quoted from the abstract): "…" ·
-  Related pages: {ref}`sky130B ReRAM <overview-sky130b-reram>` — reason.
-  Note: … (when `notes` is set).
+### Title (title_display)
+
+A. Author, B. Author and C. Author. "Title." *Venue*, vol. V, no. N,
+pp. P, 2019.
+
+* **Publication:** [IEEE Xplore](https://…) (paywalled) · DOI [10.1109/…](https://doi.org/10.1109/…) · arXiv […](https://arxiv.org/abs/…)
+* **Free copies:** [arXiv](https://…) — preprint; … (or "none located")
+* **Basis:** process named (see {ref}`papers-scope`).  — or, for inferred records: affiliation inference — definition. Note explaining the inference.
+* **Topics:** {ref}`RRAM (ReRAM) <papers-topic-rram>`, …
+* **Institutions:** …
+* **Process and fabrication (quoted from the abstract):** "…"
+* **Related pages:** {ref}`overview-sky130b-reram` — reason.
+* **Note:** … (named-process records with notes)
+* **Checked:** 2026-09-14 against the Crossref record.
 ```
 
-Grouping pages list one line per paper — "Title — First author et al.,
-Venue series Year" with a `{ref}` to the full entry, a free-copy mark
-and, for inferred records, the basis — so a record change touches one
-place in the generated diff and pages stay small as the index grows. A
-free-copy link equal to the landing page is not repeated. Topic sections
-get `papers-topic-<topic>` labels. The pages use inline links rather than
-footnotes: each full entry is itself a citation, the inventory stays the
-store of cited sources, and `tools/check_refs.py` (which targets step,
-category, machine, material, mask and overview pages) is unaffected.
+For arXiv-only records the Publication line gives the arXiv id as a free
+preprint and the Free copies line lists only other copies. The title
+appears both as the heading and in the citation so that the citation
+line is complete when copied.
+
+Grouping pages list one line per paper — a `{ref}` to the full entry
+(its text is the title), first author et al., venue series and year, and
+marks for a free copy and an inferred basis — so a record change touches
+one place in the generated diff and pages stay small as the index grows.
+The pages use inline links rather than footnotes: each full entry is
+itself a citation, the inventory stays the store of cited sources, and
+`tools/check_refs.py` (which targets step, category, machine, material,
+mask and overview pages) is unaffected. Text is escaped for Markdown and
+single-line fields are enforced by the checker.
 
 ## 5. Discovery
 
@@ -252,13 +278,15 @@ retry DBLP, and read the full texts of the held papers.
 
 ## 6. Generation and checks
 
-* `tools/gen_papers.py` (to write) reads `data/papers.yaml` and writes
-  the pages in §4, overwriting them; each page starts with a comment
-  "Generated from data/papers.yaml by tools/gen_papers.py — do not edit".
-  `--check` regenerates into memory and fails if a committed page
-  differs, so a stale page cannot be merged; it also refuses to change
-  or drop a `label` that exists in git. It joins the five page checkers
-  in the pre-merge checklist.
+* `tools/gen_papers.py` reads `data/papers.yaml` and writes the pages in
+  §4, overwriting them; each page starts with a comment "Generated from
+  data/papers.yaml by tools/gen_papers.py; do not edit". It first runs
+  `check_papers.py`'s offline record and label-map checks and stops on
+  any problem. `--check` regenerates into memory and fails if a committed
+  page differs, is missing or is not generated, and if the label map lost
+  or changed an entry since the merge base with `main` or `HEAD` (§2.3).
+  `check_papers.py` and `gen_papers.py --check` are in the pre-merge
+  checklists of `docs/plans/agent-briefs.md`.
 * `tools/check_papers.py` validates both files offline: schema and key
   order; sort order; string ids and their formats; unique ids across both
   files and unique DOIs, arXiv ids and labels; label form and year;
@@ -268,7 +296,8 @@ retry DBLP, and read the full texts of the held papers.
   references anywhere; enumerated `basis`, `fabrication.source` and
   exclusion `status`; controlled topics; existing `docs/` labels with
   one-sentence reasons; existing inventory keys; non-empty institutions;
-  dated `verified`, `checked` and `decided`; and consistency of
+  dated `verified`, `checked` and `decided`; single-line titles, notes,
+  quotes and reasons; the label map (§2.3); and consistency of
   `paywalled` with the listed copies. It prints "N papers checked, M
   problems".
 * `--online` re-fetches every DOI from Crossref and compares title,
@@ -310,6 +339,22 @@ Owner decisions (2026-09-14):
   publications (Bloomington)" page.
 * The Stanford RRAM papers with a SkyWater co-author are kept, with the
   inference marked in `basis` and `notes`.
+
+Deferred and not adopted:
+
+* Links to the paper pages from outside `docs/references/` (the fab page
+  from the related machine pages, paper labels from step or overview
+  pages) are deferred: this phase adds the pages only to the references
+  landing page.
+* A "silicon" mark on grouping lines is not adopted: silicon status is
+  not a data field, and deriving it from quotations or notes would claim
+  more than the records say.
+* The page review suggested dropping the title from the citation line;
+  it is kept so that the citation is complete (§4).
+* Commit 4204e04 (the generated pages) does not build under `-W` on its
+  own because the toctree entry landed one commit later (41e6694); the
+  branch history is not rewritten, and the two can be squashed when
+  merging.
 
 Open questions:
 
