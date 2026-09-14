@@ -245,9 +245,9 @@ below are typical or taken from contemporaneous patents.
   BF₂/indium {term}`Vt` adjusts; counter-doped low-Vt channel.[^pat-vt-rrr]
 * Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
   boron 1e12–1e13 cm⁻² at 50–100 keV.[^pat-vt-lsi]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds by
-  laterally doped channel implants self-aligned to the gate
-  pillars.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+  gate length, with a laterally doped channel implant self-aligned to
+  the gate pillars.[^pat-vt-amd]
 * Shahidi et al. (IBM), *IEEE EDL* 1993 — indium channel implants for
   steep retrograde NMOS channels.[^shahidi-1993]
 * Huang et al., *IEEE TED* 2000 — an 80 nm DTMOS with an indium
