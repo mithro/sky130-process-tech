@@ -52,7 +52,7 @@ Family:
 | `members` | list (below) |
 | `relevance` | list of `{target, relation, reason}` |
 | `inventory_keys` | keys in `docs/references/public-sources.md` (`PAT-…`) for a family the docs cite |
-| `discovery` | how the family was found (below) |
+| `discovery`, `discovery_note` | how the family was found (below) |
 | `verified` | date and the record page fetched |
 | `notes` | optional list of plain-language caveats |
 
@@ -150,8 +150,13 @@ not evidence).
   assignee (Cypress Semiconductor, SkyWater Technology, Infineon
   Technologies) and a process-module keyword, then fetched and read.
 * `family-resolution` — reached through a seed's family table.
-* `citation-of-seed`, `cited-by-seed` — in a seed record's citation
-  tables, kept only where the patent concerns the same module.
+* `cited-by-seed`, `citing-seed` — in a seed record's citation tables
+  (cited by a seed, or citing one), kept only where the patent concerns
+  the same module.
+
+A `discovery_note` records the searches (assignee, query, date limit,
+retrieval date) and the seed records through which the family was
+reached.
 
 Search result lists are used only to find candidates; nothing is
 recorded from a result list without fetching the record page.
