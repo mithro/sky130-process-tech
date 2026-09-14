@@ -342,6 +342,8 @@ settings and resists per layer are not public.
 * {ref}`mask-vim2` — the per-mask page for the via-2 mask, assigned to
   this class, whose recorded mask type reads as a 248 nm attenuated
   phase-shift mask.
+* {ref}`mask-mm3` — the per-mask page for the metal-3 mask, for which the
+  step pages leave the class open between this one and i-line.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, anti-reflective coatings, developer
