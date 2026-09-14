@@ -1,0 +1,1791 @@
+# Academic papers related to the SKY130 process technology.
+# Generated from public bibliographic records (Crossref, OpenAlex, arXiv,
+# WOSET proceedings); checked by tools/check_papers.py.  See
+# docs/plans/paper-index-design.md for the schema and page plan.
+- id: doi:10.1109/issm.2001.962975
+  title: Polymer control in aluminum etch chambers to achieve <450 hours MTBC
+  authors:
+  - C. Grenci
+  - V. Sauers
+  - R. King
+  - D. Dodge
+  - M. Schlecht
+  - K. Gray
+  - R. Foley
+  year: 2002
+  venue: 2001 IEEE International Symposium on Semiconductor Manufacturing. ISSM 2001. Conference Proceedings
+    (Cat. No.01CH37203)
+  venue_type: conference
+  doi: 10.1109/issm.2001.962975
+  landing_url: http://ieeexplore.ieee.org/document/962975/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - fab-manufacturing
+  institutions:
+  - Cypress Semiconductor Corporation (United States)
+  fabrication: null
+  related_docs:
+  - label: machine-plasma-etcher-metal
+    reason: The paper reports polymer control and mean time between cleans in aluminium etch chambers.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Cypress co-authors affiliated with Cypress Semiconductor, Bloomington, MN (OpenAlex). The abstract
+    does not name a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/issm.2001.962975 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/issm.1999.808813
+  title: Inspection optimization for excursion and baseline defect monitoring in a manufacturing environment
+  authors:
+  - D. Sajoto
+  - A. Gordon
+  - A. McCauley
+  year: 2003
+  venue: 1999 IEEE International Symposium on Semiconductor Manufacturing Conference Proceedings (Cat
+    No.99CH36314)
+  venue_type: conference
+  doi: 10.1109/issm.1999.808813
+  landing_url: http://ieeexplore.ieee.org/document/808813/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - fab-manufacturing
+  institutions:
+  - Cypress Semiconductor Corporation (United States)
+  fabrication: null
+  related_docs:
+  - label: machine-defect-inspection
+    reason: The paper optimises in-line defect inspection against end-of-line bit failures.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Authors affiliated with Cypress Semiconductor, Bloomington, MN (OpenAlex). The abstract does
+    not name a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/issm.1999.808813 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/issm.2005.1513324
+  title: Simple implementation of a first order advanced process control engine for thin film applications
+  authors:
+  - E. Smith
+  - A. Raviswaran
+  year: 2005
+  venue: ISSM 2005, IEEE International Symposium on Semiconductor Manufacturing, 2005.
+  venue_type: conference
+  doi: 10.1109/issm.2005.1513324
+  landing_url: http://ieeexplore.ieee.org/document/1513324/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - fab-manufacturing
+  institutions:
+  - Cypress Semiconductor Corporation (United States)
+  - Cypress Semiconductor Corporation (Japan)
+  fabrication: null
+  related_docs:
+  - label: machine-pecvd
+    reason: The paper describes run-to-run control of PECVD dielectric deposition.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Authors affiliated with Cypress Semiconductor Minnesota, Bloomington, MN (OpenAlex). The abstract
+    does not name a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/issm.2005.1513324 resolved; title matches OpenAlex
+    record
+- id: doi:10.1116/1.2166859
+  title: Electrical conductivity of high aspect ratio trenches in chemical-vapor deposition W technology
+  authors:
+  - Ivan P. Ivanov
+  - Indradeep Sen
+  - Peter Keswick
+  year: 2006
+  venue: 'Journal of Vacuum Science &amp; Technology B: Microelectronics and Nanometer Structures Processing,
+    Measurement, and Phenomena'
+  venue_type: journal
+  doi: 10.1116/1.2166859
+  landing_url: https://pubs.aip.org/jvb/article/24/2/523/930553/Electrical-conductivity-of-high-aspect-ratio
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - fab-manufacturing
+  institutions:
+  - Cypress Semiconductor Corporation (United States)
+  fabrication: null
+  related_docs:
+  - label: machine-tungsten-cvd
+    reason: The paper studies CVD tungsten trench fills with a TiN barrier, nucleation W and bulk W.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Authors affiliated with Cypress Semiconductor, 2401 East 86th Street, Bloomington, Minnesota
+    (the fab's address; OpenAlex). The abstract does not name the S8 process.
+  verified: 2026-09-14 Crossref REST API works/10.1116/1.2166859 resolved; title matches OpenAlex record
+- id: doi:10.1109/irws.2005.1609576
+  title: One Time Programming Device Yield Study Based On Anti-Fuse Gate Oxide Breakdown on P-type and
+    N-type Substrates
+  authors:
+  - N. Mathur
+  - Y. Ahn
+  - I. Kouznetov
+  - F. Jenne
+  - J. Fulford
+  year: 2006
+  venue: 2005 IEEE International Integrated Reliability Workshop
+  venue_type: workshop
+  doi: 10.1109/irws.2005.1609576
+  landing_url: http://ieeexplore.ieee.org/document/1609576/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - reliability
+  - device-characterisation
+  institutions:
+  - Cypress Semiconductor Corporation (United States)
+  fabrication: null
+  related_docs:
+  - label: category-oxidation
+    reason: The one-time-programmable device studied relies on gate-oxide breakdown.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Authors affiliated with Cypress Semiconductor, Bloomington, MN (OpenAlex). The abstract does
+    not name a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/irws.2005.1609576 resolved; title matches OpenAlex
+    record
+- id: doi:10.1017/s1431927606063112
+  title: Precise Ion Milling and 3D TEM technique to Deal with Feature Blocking in TEM Viewing Semiconductor
+    Devices
+  authors:
+  - N Wang
+  - W Gruenewald
+  - S Miller
+  year: 2006
+  venue: Microscopy and Microanalysis
+  venue_type: journal
+  doi: 10.1017/s1431927606063112
+  landing_url: https://academic.oup.com/mam/article/12/S02/1240/6916148
+  arxiv: null
+  paywalled: false
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - fab-manufacturing
+  institutions:
+  - Cancer Prevention Institute of California
+  - Cypress Semiconductor Corporation (United States)
+  - Cypress Semiconductor Corporation (Japan)
+  fabrication: null
+  related_docs:
+  - label: machine-cross-section-sem-profilers
+    reason: The paper concerns ion-milling sample preparation for TEM cross-sections of semiconductor
+      devices.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Borderline inclusion. Extended abstract; one author affiliation is Cypress Semiconductor, 2401
+    E. 86th St, Bloomington (OpenAlex). No process is named.
+  verified: 2026-09-14 Crossref REST API works/10.1017/s1431927606063112 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/issm.2006.4493038
+  title: Using a `Z' Tool Controller for APC Applications
+  authors:
+  - Eugene Smith
+  - Russell Elias
+  year: 2006
+  venue: 2006 IEEE International Symposium on Semiconductor Manufacturing
+  venue_type: conference
+  doi: 10.1109/issm.2006.4493038
+  landing_url: http://ieeexplore.ieee.org/document/4493038/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - fab-manufacturing
+  institutions:
+  - Cypress Semiconductor Corporation (United States)
+  - Cypress Semiconductor Corporation (Japan)
+  fabrication: null
+  related_docs:
+  - label: machine-cmp-polisher
+    reason: The paper describes advanced process control applied to steps such as CMP.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Authors affiliated with Cypress Semiconductor, 2401 East 86th Street, Bloomington, MN (OpenAlex).
+    The abstract mentions CMP control at the 130 nm node without naming a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/issm.2006.4493038 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/nvsmw.2008.30
+  title: A 15ns 4Mb NVSRAM in 0.13u SONOS Technology
+  authors:
+  - Michael Fliesler
+  - David Still
+  - Jeong-Mo Hwang
+  year: 2008
+  venue: 2008 Joint Non-Volatile Semiconductor Memory Workshop and International Conference on Memory
+    Technology and Design
+  venue_type: workshop
+  doi: 10.1109/nvsmw.2008.30
+  landing_url: http://ieeexplore.ieee.org/document/4531830/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - sonos
+  - memory
+  institutions:
+  - Cypress Semiconductor Corporation (United States)
+  - Cypress Semiconductor Corporation (Japan)
+  - University of Colorado Colorado Springs
+  fabrication: null
+  related_docs:
+  - label: step-040
+    reason: The ONO step page covers the SONOS charge-trapping stack used by the nvSRAM's nonvolatile
+      cells.
+  inventory_key: null
+  discovery:
+  - OpenAlex search of Cypress Semiconductor (US) works for SONOS and nonvolatile memory
+  notes: The abstract describes a SONOS-based 4 Mb nvSRAM in "0.13u SONOS technology" from Cypress and
+    Simtek authors; that this is the S8 process is an inference from Cypress press coverage of its 4-Mbit
+    nvSRAMs (inventory CYP-20), not a statement of the paper.
+  verified: 2026-09-14 Crossref REST API works/10.1109/nvsmw.2008.30 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/iedm19573.2019.8993514
+  title: High-Density Multiple Bits-per-Cell 1T4R RRAM Array with Gradual SET/RESET and its Effectiveness
+    for Deep Learning
+  authors:
+  - E.R. Hsieh
+  - M. Giordano
+  - B. Hodson
+  - A. Levy
+  - S.K. Osekowsky
+  - R.M. Radway
+  - Y.C. Shih
+  - W. Wan
+  - T. F. Wu
+  - X. Zheng
+  - M. Nelson
+  - B.Q. Le
+  - H.-S.P. Wong
+  - S. Mitra
+  - S. Wong
+  year: 2019
+  venue: 2019 IEEE International Electron Devices Meeting (IEDM)
+  venue_type: conference
+  doi: 10.1109/iedm19573.2019.8993514
+  landing_url: https://ieeexplore.ieee.org/document/8993514/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - rram
+  - device-characterisation
+  institutions:
+  - Stanford University
+  - SkyWater Technology
+  - ARC Technology (United States)
+  fabrication: null
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The SkyWater ReRAM documentation cited on the overview page reproduces a figure from this
+      paper.
+  inventory_key: HSIEH-2019
+  discovery:
+  - seed entry in docs/references/public-sources.md
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: The abstract says only "a logic foundry technology"; OpenAlex lists SkyWater Technology Foundry
+    among the raw affiliations, and the SkyWater ReRAM documentation reproduces a figure from this paper
+    (inventory HSIEH-2019).
+  verified: 2026-09-14 Crossref REST API works/10.1109/iedm19573.2019.8993514 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/asmc.2019.8791800
+  title: 'Optimization of Metal Photo Rework Dry Strip Scheme for Yield Improvement : YE: Yield Enhancement/Learning'
+  authors:
+  - Sidhant Grover
+  - Philip Thompson
+  year: 2019
+  venue: 2019 30th Annual SEMI Advanced Semiconductor Manufacturing Conference (ASMC)
+  venue_type: conference
+  doi: 10.1109/asmc.2019.8791800
+  landing_url: https://ieeexplore.ieee.org/document/8791800/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - fab-manufacturing
+  institutions:
+  - SkyWater Technology
+  fabrication: null
+  related_docs:
+  - label: machine-downstream-plasma-asher
+    reason: The paper changes the dry strip chamber temperature used to rework patterned Al-0.5 wt% Cu
+      metal wafers.
+  - label: category-strip
+    reason: Resist strip on metal layers is the step the rework scheme modifies.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Authors affiliated with Fab Module Engineering, SkyWater Technology Foundry, Bloomington (OpenAlex).
+    The abstract covers 90-130 nm technology nodes without naming a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/asmc.2019.8791800 resolved; title matches OpenAlex
+    record
+- id: doi:10.1145/3400302.3415735
+  title: Building OpenLANE
+  authors:
+  - Mohamed Shalan
+  - Tim Edwards
+  year: 2020
+  venue: Proceedings of the 39th International Conference on Computer-Aided Design
+  venue_type: conference
+  doi: 10.1145/3400302.3415735
+  landing_url: https://dl.acm.org/doi/10.1145/3400302.3415735
+  arxiv: null
+  paywalled: false
+  free_full_text: []
+  topics:
+  - tooling
+  - digital
+  institutions:
+  - American University in Cairo
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: Borderline inclusion. A flow paper; included because the abstract reports taking an SoC "from
+    concept to silicon validation" with an open-source PDK and IP.
+  verified: 2026-09-14 Crossref REST API works/10.1145/3400302.3415735 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/asmc49169.2020.9185229
+  title: Effect of Sparse or Asymmetric Sampling on the Estimation of Photolithography Overlay Regression
+    Parameters
+  authors:
+  - Tim Conway
+  year: 2020
+  venue: 2020 31st Annual SEMI Advanced Semiconductor Manufacturing Conference (ASMC)
+  venue_type: conference
+  doi: 10.1109/asmc49169.2020.9185229
+  landing_url: https://ieeexplore.ieee.org/document/9185229/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - fab-manufacturing
+  institutions:
+  - SkyWater Technology
+  fabrication: null
+  related_docs:
+  - label: machine-cd-sem-overlay-metrology
+    reason: The paper studies metrology sampling plans for photolithography overlay feedback control.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Borderline inclusion. Author affiliated with SkyWater Technology (OpenAlex); the abstract does
+    not name a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/asmc49169.2020.9185229 resolved; title matches
+    OpenAlex record
+- id: web:woset-2020-a03
+  title: Google/SkyWater and the Promise of the Open PDK
+  authors:
+  - Tim Edwards
+  year: 2020
+  venue: Workshop on Open-Source EDA Technology (WOSET 2020)
+  venue_type: workshop
+  doi: null
+  landing_url: https://woset-workshop.github.io/WOSET2020.html
+  arxiv: null
+  paywalled: false
+  free_full_text:
+  - url: https://woset-workshop.github.io/PDFs/2020/a03.pdf
+    host: woset-workshop.github.io
+    oa_type: conference open-access page
+    located_via: WOSET proceedings page
+  topics:
+  - pdk-models
+  - tooling
+  institutions:
+  - Open Circuit Design
+  - Efabless
+  fabrication: null
+  related_docs:
+  - label: overview-cross-section
+    reason: The paper's Fig. 1 is a process stack of the SkyWater 130 nm open process, the subject of
+      the overview's cross-section.
+  inventory_key: ANN-15
+  discovery:
+  - WOSET proceedings pages (woset-workshop.github.io)
+  - seed entry in docs/references/public-sources.md
+  notes: null
+  verified: 2026-09-14 WOSET proceedings page (HTTP 200) lists the title; PDF fetched (HTTP 200)
+- id: doi:10.1109/vlsitechnology18217.2020.9265083
+  title: 'Heterogeneous Integration of BEOL Logic and Memory in a Commercial Foundry: Multi-Tier Complementary
+    Carbon Nanotube Logic and Resistive RAM at a 130 nm node'
+  authors:
+  - T. Srimani
+  - G. Hills
+  - M. Bishop
+  - C. Lau
+  - P. Kanhaiya
+  - R. Ho
+  - A. Amer
+  - M. Chao
+  - A. Yu
+  - A. Wright
+  - A. Ratkovich
+  - D. Aguilar
+  - A. Bramer
+  - C. Cecman
+  - A. Chov
+  - G. Clark
+  - G. Michaelson
+  - M. Johnson
+  - K. Kelley
+  - P. Manos
+  - K. Mi
+  - U. Suriono
+  - S. Vuntangboon
+  - H. Xue
+  - J. Humes
+  - S. Soares
+  - B. Jones
+  - S. Burack
+  - Arvind
+  - A. Chandrakasan
+  - B. Ferguson
+  - M. Nelson
+  - M. M. Shulaker
+  year: 2020
+  venue: 2020 IEEE Symposium on VLSI Technology
+  venue_type: conference
+  doi: 10.1109/vlsitechnology18217.2020.9265083
+  landing_url: https://ieeexplore.ieee.org/document/9265083/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - beol-integration
+  - rram
+  institutions:
+  - IIT@MIT
+  - SkyWater Technology
+  - Intrinsix (United States)
+  fabrication: null
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The page's ReRAM section cites this BEOL RRAM integration work.
+  inventory_key: SRIMANI-2020
+  discovery:
+  - seed entry in docs/references/public-sources.md
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: The abstract says "a commercial foundry" at a 130 nm node; OpenAlex lists SkyWater Technology
+    among the raw affiliations (inventory SRIMANI-2020).
+  verified: 2026-09-14 Crossref REST API works/10.1109/vlsitechnology18217.2020.9265083 resolved; title
+    matches OpenAlex record
+- id: doi:10.1109/asmc51741.2021.9435686
+  title: 'Fab Fingerprint for Proactive Yield Management : YE: Yield Enhancement/Learning'
+  authors:
+  - David Gross
+  - Katherine Gramling
+  - Prasad L. Bachiraju
+  year: 2021
+  venue: 2021 32nd Annual SEMI Advanced Semiconductor Manufacturing Conference (ASMC)
+  venue_type: conference
+  doi: 10.1109/asmc51741.2021.9435686
+  landing_url: https://ieeexplore.ieee.org/document/9435686/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - fab-manufacturing
+  institutions:
+  - SkyWater Technology
+  - Onto Innovation (United States)
+  fabrication: null
+  related_docs:
+  - label: machine-defect-inspection
+    reason: The paper links spatial yield patterns to process steps and tools for yield management.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Borderline inclusion. Authors affiliated with SkyWater Technology and Onto Innovation (OpenAlex);
+    the abstract does not name a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/asmc51741.2021.9435686 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/led.2021.3055017
+  title: Four-Bits-Per-Memory One-Transistor-and-Eight-Resistive-Random-Access-Memory (1T8R) Array
+  authors:
+  - E. R. Hsieh
+  - X. Zheng
+  - B. Q. Le
+  - Y. C. Shih
+  - R. M. Radway
+  - M. Nelson
+  - S. Mitra
+  - S. Wong
+  year: 2021
+  venue: IEEE Electron Device Letters
+  venue_type: journal
+  doi: 10.1109/led.2021.3055017
+  landing_url: https://ieeexplore.ieee.org/document/9336666/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - rram
+  - device-characterisation
+  institutions:
+  - National Central University
+  - Stanford University
+  - San Jose State University
+  - Taiwan Semiconductor Manufacturing Company (Taiwan)
+  - SkyWater Technology
+  fabrication: null
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The overview page describes the HfO2 ReRAM module that SkyWater offers in sky130B.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: The abstract says "a foundry logic technology"; OpenAlex lists SkyWater Technology Foundry among
+    the raw affiliations. That the foundry is SkyWater is not stated in the abstract.
+  verified: 2026-09-14 Crossref REST API works/10.1109/led.2021.3055017 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/ted.2021.3097975
+  title: 'RADAR: A Fast and Energy-Efficient Programming Technique for Multiple Bits-Per-Cell RRAM Arrays'
+  authors:
+  - Binh Q. Le
+  - Akash Levy
+  - Tony F. Wu
+  - Robert M. Radway
+  - E. Ray Hsieh
+  - Xin Zheng
+  - Mark Nelson
+  - Priyanka Raina
+  - H.-S. Philip Wong
+  - Simon Wong
+  - Subhasish Mitra
+  year: 2021
+  venue: IEEE Transactions on Electron Devices
+  venue_type: journal
+  doi: 10.1109/ted.2021.3097975
+  landing_url: https://ieeexplore.ieee.org/document/9497347/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - rram
+  - device-characterisation
+  institutions:
+  - San Jose State University
+  - Stanford University
+  - Menlo School
+  - Meta (United States)
+  - National Central University
+  - SkyWater Technology
+  fabrication: null
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The overview page describes the HfO2 ReRAM module that SkyWater offers in sky130B.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: The abstract reports arrays "fabricated in a 130-nm CMOS process"; OpenAlex lists SkyWater Technology
+    Foundry among the raw affiliations. The foundry is not named in the abstract.
+  verified: 2026-09-14 Crossref REST API works/10.1109/ted.2021.3097975 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/lssc.2022.3188925
+  title: An Open-Source and Autonomous Temperature Sensor Generator Verified With 64 Instances in SkyWater
+    130 nm for Comprehensive Design Space Exploration
+  authors:
+  - Qirui Zhang
+  - Wenbo Duan
+  - Tim Edwards
+  - Tim Ansell
+  - David Blaauw
+  - Dennis Sylvester
+  - Mehdi Saligane
+  year: 2022
+  venue: IEEE Solid-State Circuits Letters
+  venue_type: journal
+  doi: 10.1109/lssc.2022.3188925
+  landing_url: https://ieeexplore.ieee.org/document/9816083/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - sensors
+  - mixed-signal
+  - tooling
+  institutions:
+  - University of Michigan
+  - Google (United States)
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/lssc.2022.3188925 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/icm56065.2022.10005367
+  title: RRAM, Device, Model and Memory
+  authors:
+  - Abdulaziz Alshaya
+  - Qihao Han
+  - Christos Papavassiliou
+  year: 2022
+  venue: 2022 International Conference on Microelectronics (ICM)
+  venue_type: conference
+  doi: 10.1109/icm56065.2022.10005367
+  landing_url: https://ieeexplore.ieee.org/document/10005367/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - rram
+  - pdk-models
+  institutions:
+  - Imperial College London
+  fabrication: null
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The overview page describes the sky130B ReRAM module whose device model this paper exercises.
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: Borderline inclusion. Simulation of the SkyWater memristor model (1R and 1T1R read/write); included
+    because it examines the PDK's RRAM model rather than merely using it.
+  verified: 2026-09-14 Crossref REST API works/10.1109/icm56065.2022.10005367 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/access.2023.3336408
+  title: A 130-nm Fusion-Based Deconvolution Kernel Generator IC for Real-Time mmWave Radar Motion Compensation
+  authors:
+  - Nikhil Poole
+  - Amin Arbabian
+  year: 2023
+  venue: IEEE Access
+  venue_type: journal
+  doi: 10.1109/access.2023.3336408
+  landing_url: https://ieeexplore.ieee.org/document/10328566/
+  arxiv: null
+  paywalled: false
+  free_full_text:
+  - url: https://ieeexplore.ieee.org/ielx7/6287639/6514899/10328566.pdf
+    host: ieeexplore.ieee.org
+    oa_type: gold (publisher version)
+    located_via: OpenAlex location (IEEE Access)
+  topics:
+  - digital
+  - sensors
+  institutions:
+  - Stanford University
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/access.2023.3336408 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/iscas46773.2023.10182052
+  title: An Open-Source $4 \times 8$ Coarse-Grained Reconfigurable Array Using SkyWater 130 nm Technology
+    and Agile Hardware Design Flow
+  authors:
+  - Po-Han Chen
+  - Charles Tsao
+  - Priyanka Raina
+  year: 2023
+  venue: 2023 IEEE International Symposium on Circuits and Systems (ISCAS)
+  venue_type: conference
+  doi: 10.1109/iscas46773.2023.10182052
+  landing_url: https://ieeexplore.ieee.org/document/10182052/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - digital
+  institutions:
+  - Stanford University
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/iscas46773.2023.10182052 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/bcicts54660.2023.10310944
+  title: Cryogenic Modeling for Open-Source Process Design Kit Technology
+  authors:
+  - Akin Akturk
+  - Ayushman Tripathi
+  - Mehdi Saligane
+  year: 2023
+  venue: 2023 IEEE BiCMOS and Compound Semiconductor Integrated Circuits and Technology Symposium (BCICTS)
+  venue_type: conference
+  doi: 10.1109/bcicts54660.2023.10310944
+  landing_url: https://ieeexplore.ieee.org/document/10310944/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - cryogenic
+  - pdk-models
+  - device-characterisation
+  institutions:
+  - CoolCad Electronics (United States)
+  - University of Michigan
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/bcicts54660.2023.10310944 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/fpl60245.2023.00070
+  title: 'FABulous Demo: Open Source FPGA on Sky130'
+  authors:
+  - Myrtle Shah
+  - Jakob Ternes
+  - Dirk Koch
+  year: 2023
+  venue: 2023 33rd International Conference on Field-Programmable Logic and Applications (FPL)
+  venue_type: conference
+  doi: 10.1109/fpl60245.2023.00070
+  landing_url: https://ieeexplore.ieee.org/document/10296224/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - digital
+  - tooling
+  institutions:
+  - Heidelberg University
+  fabrication:
+    statement: First silicon taped out on Skywater 130nm with shuttle runs sponsored by Google.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: Borderline inclusion. A demonstration paper; the abstract reports fabric functionality working
+    on first silicon.
+  verified: 2026-09-14 Crossref REST API works/10.1109/fpl60245.2023.00070 resolved; title matches OpenAlex
+    record
+- id: doi:10.23919/vlsitechnologyandcir57934.2023.10185414
+  title: 'Foundry Monolithic 3D BEOL Transistor + Memory Stack: Iso-performance and Iso-footprint BEOL
+    Carbon Nanotube FET+RRAM vs. FEOL Silicon FET+RRAM'
+  authors:
+  - T. Srimani
+  - A. C. Yu
+  - R. M. Radway
+  - D. T. Rich
+  - M. Nelson
+  - S. Wong
+  - D. Murphy
+  - S. Fuller
+  - G. Hills
+  - S. Mitra
+  - M. M. Shulaker
+  year: 2023
+  venue: 2023 IEEE Symposium on VLSI Technology and Circuits (VLSI Technology and Circuits)
+  venue_type: conference
+  doi: 10.23919/vlsitechnologyandcir57934.2023.10185414
+  landing_url: https://ieeexplore.ieee.org/document/10185414/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - beol-integration
+  - rram
+  institutions:
+  - Stanford University
+  - IIT@MIT
+  - ARC Technology (United States)
+  - SkyWater Technology
+  - Analog Devices (United States)
+  - Harvard University Press
+  fabrication:
+    statement: Process established within SkyWater Technology Foundry (90/130 nm technology node on 200
+      mm Si wafers).
+    source: abstract
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The overview page describes the BEOL ReRAM tier; this work stacks RRAM in the BEOL at SkyWater.
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.23919/vlsitechnologyandcir57934.2023.10185414 resolved;
+    title matches OpenAlex record
+- id: doi:10.1109/iscas46773.2023.10181702
+  title: Open-Source, End-to-End Auditable Tapeout of Hardware Cryptography Module
+  authors:
+  - Anish Singhani
+  year: 2023
+  venue: 2023 IEEE International Symposium on Circuits and Systems (ISCAS)
+  venue_type: conference
+  doi: 10.1109/iscas46773.2023.10181702
+  landing_url: https://ieeexplore.ieee.org/document/10181702/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - security
+  - digital
+  institutions:
+  - Carnegie Mellon University
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/iscas46773.2023.10181702 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/iolts59296.2023.10224899
+  title: 'Space Shuttle: A Test Vehicle for the Reliability of the SkyWater 130nm PDK for Future Space
+    Processors'
+  authors:
+  - Ivan Rodriguez-Ferrandez
+  - Leonidas Kosmidis
+  - Maris Tali
+  - David Steenari
+  year: 2023
+  venue: 2023 IEEE 29th International Symposium on On-Line Testing and Robust System Design (IOLTS)
+  venue_type: conference
+  doi: 10.1109/iolts59296.2023.10224899
+  landing_url: https://ieeexplore.ieee.org/document/10224899/
+  arxiv: null
+  paywalled: true
+  free_full_text:
+  - url: https://upcommons.upc.edu/bitstreams/0df9d4ec-b398-4934-b55e-79709208e1df/download
+    host: upcommons.upc.edu
+    oa_type: preprint
+    located_via: OpenAlex location (UPCommons institutional repository (Universitat Politècnica de Catalunya))
+  topics:
+  - radiation
+  - reliability
+  - test-structures
+  institutions:
+  - Universitat Politècnica de Catalunya
+  - Barcelona Supercomputing Center
+  - European Space Research and Technology Centre
+  fabrication:
+    statement: Taped out using the Google/Efabless shuttle run.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - Semantic Scholar public search API
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/iolts59296.2023.10224899 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/iscas46773.2023.10181379
+  title: SRAM Design with OpenRAM in SkyWater 130nm
+  authors:
+  - Jesse Cirimelli-Low
+  - Muhammad Hadir Khan
+  - Samuel Crow
+  - Amogh Lonkar
+  - Bugra Onal
+  - Andrew D. Zonenberg
+  - Matthew R. Guthaus
+  year: 2023
+  venue: 2023 IEEE International Symposium on Circuits and Systems (ISCAS)
+  venue_type: conference
+  doi: 10.1109/iscas46773.2023.10181379
+  landing_url: https://ieeexplore.ieee.org/document/10181379/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - memory
+  - digital
+  institutions:
+  - University of California, Santa Cruz
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/iscas46773.2023.10181379 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/isqed57927.2023.10129298
+  title: 'Testbench on a Chip: A Yield Test Vehicle for Resistive Memory Devices'
+  authors:
+  - Luke R. Upton
+  - Guénolé Lallement
+  - Michael D. Scott
+  - Joyce Taylor
+  - Robert M. Radway
+  - Dennis Rich
+  - Mark Nelson
+  - Subhasish Mitra
+  - Boris Murmann
+  year: 2023
+  venue: 2023 24th International Symposium on Quality Electronic Design (ISQED)
+  venue_type: conference
+  doi: 10.1109/isqed57927.2023.10129298
+  landing_url: https://ieeexplore.ieee.org/document/10129298/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - rram
+  - test-structures
+  institutions:
+  - Stanford University
+  - Intrinsix (United States)
+  - Bethany Global University
+  - SkyWater Technology
+  fabrication: null
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The yield test vehicle characterises RRAM arrays in SkyWater's 130 nm technology, the module
+      the overview page describes.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/isqed57927.2023.10129298 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/tcsi.2024.3355070
+  title: A 130nm CMOS Programmable Analog Standard Cell Library
+  authors:
+  - Jennifer Hasler
+  - Praveen Raj Ayyappan
+  - Afolabi Ige
+  - Pranav Mathews
+  year: 2024
+  venue: 'IEEE Transactions on Circuits and Systems I: Regular Papers'
+  venue_type: journal
+  doi: 10.1109/tcsi.2024.3355070
+  landing_url: https://ieeexplore.ieee.org/document/10431551/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - floating-gate
+  - analog-rf
+  institutions:
+  - Georgia Institute of Technology
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - Semantic Scholar public search API
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/tcsi.2024.3355070 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/cicc60959.2024.10529028
+  title: A 65nm and 130nm CMOS Programmable Analog Standard Cell Library for Scalable System Synthesis
+  authors:
+  - Pranav Mathews
+  - Praveen Raj Ayyappan
+  - Afolabi Ige
+  - Swagat Bhattacharyya
+  - Linhao Yang
+  - Jennifer Hasler
+  year: 2024
+  venue: 2024 IEEE Custom Integrated Circuits Conference (CICC)
+  venue_type: conference
+  doi: 10.1109/cicc60959.2024.10529028
+  landing_url: https://ieeexplore.ieee.org/document/10529028/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - floating-gate
+  - analog-rf
+  institutions:
+  - Georgia Institute of Technology
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: Borderline inclusion. The abstract names a library developed in 65 nm CMOS and SkyWater 130 nm
+    with floating-gate devices but does not state silicon results.
+  verified: 2026-09-14 Crossref REST API works/10.1109/cicc60959.2024.10529028 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/mdat.2024.3444728
+  title: An Open-Source 12-bit 10-kS/s Incremental ADC in 130-nm CMOS
+  authors:
+  - Raymond H. Yang
+  - Yaqing Xia
+  year: 2024
+  venue: IEEE Design &amp; Test
+  venue_type: journal
+  doi: 10.1109/mdat.2024.3444728
+  landing_url: https://ieeexplore.ieee.org/document/10637433/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - mixed-signal
+  institutions:
+  - Apple (United States)
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/mdat.2024.3444728 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/lad62341.2024.10691811
+  title: Evaluating LLMs for Hardware Design and Test
+  authors:
+  - Jason Blocklove
+  - Siddharth Garg
+  - Ramesh Karri
+  - Hammond Pearce
+  year: 2024
+  venue: 2024 IEEE LLM Aided Design Workshop (LAD)
+  venue_type: workshop
+  doi: 10.1109/lad62341.2024.10691811
+  landing_url: https://ieeexplore.ieee.org/document/10691811/
+  arxiv:
+    id: '2405.02326'
+    url: https://arxiv.org/abs/2405.02326
+  paywalled: true
+  free_full_text:
+  - url: https://arxiv.org/abs/2405.02326
+    host: arxiv.org
+    oa_type: preprint (arXiv)
+    located_via: arXiv abs page
+  topics:
+  - digital
+  - tooling
+  institutions:
+  - New York University
+  - UNSW Sydney
+  fabrication:
+    statement: Benchmarks taped out on a Skywater 130nm shuttle; functional chip received.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: Borderline inclusion. An LLM benchmarking paper; included because the abstract reports a functional
+    chip from a SkyWater 130 nm shuttle.
+  verified: 2026-09-14 Crossref REST API works/10.1109/lad62341.2024.10691811 resolved; title matches
+    OpenAlex record and arXiv abs page 2405.02326
+- id: doi:10.1109/mdat.2024.3405892
+  title: Open-Source Multilevel Converter Power IC Design and Test
+  authors:
+  - Jorge Marin
+  - Christian A. Rojas
+  - Alan H. Wilson-Veas
+  - Nelson Salvador
+  - Joel Gak
+  - Nicolas Calarco
+  - Matias Miguez
+  - Alejandro R. Oliva
+  year: 2024
+  venue: IEEE Design &amp; Test
+  venue_type: journal
+  doi: 10.1109/mdat.2024.3405892
+  landing_url: https://ieeexplore.ieee.org/document/10539610/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - power-management
+  institutions:
+  - Federico Santa María Technical University
+  - Consejo Nacional de Investigaciones Científicas y Técnicas
+  - Universidad Nacional del Sur
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/mdat.2024.3405892 resolved; title matches OpenAlex
+    record
+- id: doi:10.1049/ell2.70036
+  title: Open‐source floating‐gate cell for analogue synapses
+  authors:
+  - Matthew Chen
+  - Charana Sonnadara
+  - Sahil Shah
+  year: 2024
+  venue: Electronics Letters
+  venue_type: journal
+  doi: 10.1049/ell2.70036
+  landing_url: https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ell2.70036
+  arxiv: null
+  paywalled: false
+  free_full_text: []
+  topics:
+  - floating-gate
+  - device-characterisation
+  institutions:
+  - University of Maryland, College Park
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1049/ell2.70036 resolved; title matches OpenAlex record
+- id: doi:10.1109/mssc.2024.3385734
+  title: 'Unlocking Circuits for Quantum With Open Source Silicon: A first look at measured open source
+    silicon results at 4 K'
+  authors:
+  - Anhang Li
+  - Tuohang Zeng
+  - Lei Zhang
+  - Joseph Riem
+  - Gina C. Adam
+  - David L. Fleischer
+  - Alex Zaslavsky
+  - William R. Patterson
+  - Tim Ansell
+  - Akin Akturk
+  - Brian Hoskins
+  - Pragya R. Shrestha
+  - Mehdi Saligane
+  year: 2024
+  venue: IEEE Solid-State Circuits Magazine
+  venue_type: magazine
+  doi: 10.1109/mssc.2024.3385734
+  landing_url: https://ieeexplore.ieee.org/document/10584405/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - cryogenic
+  - device-characterisation
+  - quantum
+  institutions:
+  - University of Michigan
+  - George Washington University
+  - Brown University
+  - CoolCad Electronics (United States)
+  - National Institute of Standards and Technology
+  - Physical Measurement Laboratory
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/mssc.2024.3385734 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/ispacs68724.2025.11383342
+  title: A Silicon-Proven Wide-Range Voltage Controlled Oscillator Designed Using Open-Source CMOS 130nm
+    PDK
+  authors:
+  - Astria Nur Irfansyah
+  year: 2025
+  venue: 2025 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)
+  venue_type: conference
+  doi: 10.1109/ispacs68724.2025.11383342
+  landing_url: https://ieeexplore.ieee.org/document/11383342/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - analog-rf
+  - education-shuttles
+  institutions:
+  - Institut Teknologi Sepuluh Nopember
+  fabrication:
+    statement: Included in a test chip fabricated through the Tiny Tapeout community-driven shuttle service.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/ispacs68724.2025.11383342 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/austrochip67945.2025.11183685
+  title: An 8.1-µW 12-bit Non-Binary Self-Clocked SAR-ADC in 130 nm Open-Source PDK
+  authors:
+  - Ali Olyanasab
+  - Patrick Fath
+  - Leonhard Schreiner
+  - Christoph Guger
+  - Harald Pretl
+  year: 2025
+  venue: 2025 Austrochip Workshop on Microelectronics (Austrochip)
+  venue_type: workshop
+  doi: 10.1109/austrochip67945.2025.11183685
+  landing_url: https://ieeexplore.ieee.org/document/11183685/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - mixed-signal
+  institutions:
+  - Guger Technologies (Austria)
+  - Johannes Kepler University of Linz
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/austrochip67945.2025.11183685 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/hswtech64936.2025.11277421
+  title: 'An Open-Source Nanoelectronic Analog Front-End in 130 nm CMOS: Design, Fabrication and Characterization
+    of a Low-Noise Inverter-Based Neural-Interface Amplifier'
+  authors:
+  - Srisa Pranavi Medicharla
+  year: 2025
+  venue: 2025 International Conference on Sustainable Technologies for Humanity and Smart World (HSWTech)
+  venue_type: conference
+  doi: 10.1109/hswtech64936.2025.11277421
+  landing_url: https://ieeexplore.ieee.org/document/11277421/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - analog-rf
+  - sensors
+  institutions:
+  - Visvesvaraya National Institute of Technology
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/hswtech64936.2025.11277421 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/iedm50572.2025.11353729
+  title: 'Foundry Monolithic 3D Unlocks Large Throughput Benefits: 3D Memory with Tucked Sense Amplifiers
+    + Logic using Heterogeneous Silicon CMOS + Resistive RAM + Carbon Nanotube FETs'
+  authors:
+  - S. Choi
+  - A. Raut
+  - T. Wu
+  - S. Dayo
+  - A. Bechdolt
+  - G. Dutta
+  - S. Li
+  - D. T. Rich
+  - R. H. Yang
+  - A. C. Yu
+  - M. Nelson
+  - M. M. Shulaker
+  - R. M. Radway
+  - S. Mitra
+  - T. Srimani
+  year: 2025
+  venue: 2025 IEEE International Electron Devices Meeting (IEDM)
+  venue_type: conference
+  doi: 10.1109/iedm50572.2025.11353729
+  landing_url: https://ieeexplore.ieee.org/document/11353729/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - beol-integration
+  - rram
+  institutions:
+  - Stanford University
+  - University of Pittsburgh
+  - Carnegie Mellon University
+  - IIT@MIT
+  - SkyWater Technology
+  fabrication:
+    statement: Achieved at SkyWater Technology Foundry using a 90/130 nm process on 200 mm wafers.
+    source: abstract
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The overview page describes the BEOL ReRAM tier; this work integrates RRAM and CNFETs in the
+      BEOL at SkyWater.
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/iedm50572.2025.11353729 resolved; title matches
+    OpenAlex record
+- id: doi:10.3390/electronics14061162
+  title: 'Heuristic Enz–Krummenacher–Vittoz (EKV) Model Fitting for Low-Power Integrated Circuit Design:
+    An Open-Source Implementation'
+  authors:
+  - Michele Dei
+  year: 2025
+  venue: Electronics
+  venue_type: journal
+  doi: 10.3390/electronics14061162
+  landing_url: https://www.mdpi.com/2079-9292/14/6/1162
+  arxiv: null
+  paywalled: false
+  free_full_text: []
+  topics:
+  - pdk-models
+  - device-characterisation
+  institutions:
+  - University of Pisa
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.3390/electronics14061162 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/icm66518.2025.11322496
+  title: Hybrid Integration of Rram and Cmos Circuits Using Open-Source 130-nm PDK
+  authors:
+  - Maryam Atia
+  - Mohammed Ismail
+  - Mohammad Alhawari
+  year: 2025
+  venue: 2025 37th International Conference on Microelectronics (ICM)
+  venue_type: conference
+  doi: 10.1109/icm66518.2025.11322496
+  landing_url: https://ieeexplore.ieee.org/document/11322496/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - rram
+  - pdk-models
+  institutions:
+  - Wayne State University
+  fabrication: null
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The overview page describes the sky130B ReRAM module that an open 130 nm PDK with RRAM devices
+      provides.
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: Borderline inclusion. A design-flow paper whose abstract includes model calibration and parameter
+    extraction for the RRAM devices of an open 130 nm PDK.
+  verified: 2026-09-14 Crossref REST API works/10.1109/icm66518.2025.11322496 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/isqed65160.2025.11014456
+  title: 'Open-ALOE: An Analog Layout Automation Flow for the Open-Source Ecosystem'
+  authors:
+  - Yueting Li
+  - Xingyu Ni
+  - Sara Achour
+  - Boris Murmann
+  year: 2025
+  venue: 2025 26th International Symposium on Quality Electronic Design (ISQED)
+  venue_type: conference
+  doi: 10.1109/isqed65160.2025.11014456
+  landing_url: https://ieeexplore.ieee.org/document/11014456/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - analog-rf
+  - tooling
+  institutions:
+  - University of California, Berkeley
+  - Stanford University
+  - University of Hawaiʻi at Mānoa
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/isqed65160.2025.11014456 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/vlsi-soc64688.2025.11421773
+  title: 'Open-Source 4 K CMOS Calibration: Integrating IceMOS and Sky130 PDK'
+  authors:
+  - Mauricio Montanares
+  - V.H. Arzate Palma
+  - Kevin G. McCarthy
+  - Gerardo Molina Salgado
+  year: 2025
+  venue: 2025 IFIP/IEEE 33rd International Conference on Very Large Scale Integration (VLSI-SoC)
+  venue_type: conference
+  doi: 10.1109/vlsi-soc64688.2025.11421773
+  landing_url: https://ieeexplore.ieee.org/document/11421773/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - cryogenic
+  - pdk-models
+  institutions:
+  - National Microelectronics Applications Centre (Ireland)
+  - University College Cork
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/vlsi-soc64688.2025.11421773 resolved; title matches
+    OpenAlex record
+- id: arxiv:2511.15922
+  title: Selective Shuttling of Electrons on Helium Using a CMOS Control Platform
+  authors:
+  - K. E. Castoria
+  - H. Byeon
+  - N. R. Beysengulov
+  - E. O. Glen
+  - M. Sammon
+  - J. Pollanen
+  - D. G. Rees
+  - S. A. Lyon
+  year: 2025
+  venue: arXiv
+  venue_type: preprint
+  doi: null
+  landing_url: https://arxiv.org/abs/2511.15922
+  arxiv:
+    id: '2511.15922'
+    url: https://arxiv.org/abs/2511.15922
+  paywalled: false
+  free_full_text:
+  - url: https://arxiv.org/abs/2511.15922
+    host: arxiv.org
+    oa_type: preprint (arXiv)
+    located_via: arXiv abs page
+  topics:
+  - quantum
+  - cryogenic
+  - sensors
+  institutions: []
+  fabrication:
+    statement: The CMOS control chip was fabricated using the SKY130 130 nm CMOS process at the SkyWater
+      foundry.
+    source: arXiv HTML full text
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex full-text search for sky130
+  notes: null
+  verified: 2026-09-14 arXiv abs page 2511.15922 resolved; title matches OpenAlex record for DOI 10.48550/arXiv.2511.15922
+- id: doi:10.1109/iceee67194.2025.11261982
+  title: Silicon-Proven Chaos-Based Random Number Generator Using the Sky130 PDK
+  authors:
+  - Onur Karataş
+  - Sezen Bal
+  - Hayriye Korkmaz
+  year: 2025
+  venue: 2025 12th International Conference on Electrical and Electronics Engineering (ICEEE)
+  venue_type: conference
+  doi: 10.1109/iceee67194.2025.11261982
+  landing_url: https://ieeexplore.ieee.org/document/11261982/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - digital
+  - security
+  institutions:
+  - Marmara University
+  fabrication:
+    statement: Fabricated and validated via the Efabless Open Multi-Project Wafer (MPW) shuttle program,
+      integrated in the Caravel SoC platform.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/iceee67194.2025.11261982 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/sbcci66862.2025.11218693
+  title: Silicon-Proven Synchronous and Asynchronous Frequency-to-Digital Converters Using Open-Source
+    EDA Tools
+  authors:
+  - Byron Tarabata
+  - Eduardo Holguín
+  - Martín Gavilánez
+  - Esteban Astudillo
+  - Ana Salcedo
+  - Luis Miguel Prócel
+  year: 2025
+  venue: 2025 38th SBC/SBMicro/IEEE Symposium on Integrated Circuits and Systems Design (SBCCI)
+  venue_type: conference
+  doi: 10.1109/sbcci66862.2025.11218693
+  landing_url: https://ieeexplore.ieee.org/document/11218693/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - digital
+  - education-shuttles
+  institutions:
+  - National Polytechnic School
+  - Universidad San Francisco de Quito
+  fabrication:
+    statement: Fabricated via the Tiny Tapeout multi-project wafer (MPW) service using the SKY130 PDK.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/sbcci66862.2025.11218693 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/sensors59705.2025.11330220
+  title: Towards A Modular Digital Sensor Interface for Resilient Sensor Measurements
+  authors:
+  - Ryan M. Price
+  - Gabriel Saucedo
+  - Emilio Jackson
+  - Zander Lin Cox
+  - John Perez
+  - Robert C. Roberts
+  year: 2025
+  venue: 2025 IEEE SENSORS
+  venue_type: conference
+  doi: 10.1109/sensors59705.2025.11330220
+  landing_url: https://ieeexplore.ieee.org/document/11330220/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - sensors
+  - digital
+  institutions:
+  - The University of Texas at El Paso
+  - Texas A&M University
+  - Amarillo College
+  fabrication:
+    statement: Selected for fabrication on ChipIgnite shuttle CI 2309.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/sensors59705.2025.11330220 resolved; title matches
+    OpenAlex record
+- id: doi:10.1109/jxcdc.2026.3670667
+  title: Characterization and Modeling of Multilevel Analog ReRAM Synapses in the Sky130 Process
+  authors:
+  - Irem Didin
+  - Carl Brando
+  - Ching-Yi Lin
+  - Sahil Shah
+  year: 2026
+  venue: IEEE Journal on Exploratory Solid-State Computational Devices and Circuits
+  venue_type: journal
+  doi: 10.1109/jxcdc.2026.3670667
+  landing_url: https://ieeexplore.ieee.org/document/11421367/
+  arxiv: null
+  paywalled: false
+  free_full_text:
+  - url: https://doi.org/10.1109/jxcdc.2026.3670667
+    host: doi.org
+    oa_type: gold (publisher version)
+    located_via: OpenAlex location (IEEE Journal on Exploratory Solid-State Computational Devices and
+      Circuits)
+  topics:
+  - rram
+  - device-characterisation
+  - pdk-models
+  institutions:
+  - University of Maryland, College Park
+  fabrication: null
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The paper characterises ReRAM devices fabricated in the SkyWater 130 nm process, the module
+      the overview page describes.
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/jxcdc.2026.3670667 resolved; title matches OpenAlex
+    record
+- id: arxiv:2604.21625
+  title: DC Cryogenic Modeling of Open-Source SkyWater 130 nm MOSFETs at 77 K Using BSIM4
+  authors:
+  - F. Beall
+  - A. Rimal
+  - O. Seidel
+  - Y. Mei
+  - A. D. McDonald
+  - I. Parmaksiz
+  - V. A. Chirayath
+  - J. Asaadi
+  - D. Braga
+  - J. B. R. Battat
+  year: 2026
+  venue: arXiv
+  venue_type: preprint
+  doi: null
+  landing_url: https://arxiv.org/abs/2604.21625
+  arxiv:
+    id: '2604.21625'
+    url: https://arxiv.org/abs/2604.21625
+  paywalled: false
+  free_full_text:
+  - url: https://arxiv.org/abs/2604.21625
+    host: arxiv.org
+    oa_type: preprint (arXiv)
+    located_via: arXiv abs page
+  topics:
+  - cryogenic
+  - pdk-models
+  - device-characterisation
+  institutions: []
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 arXiv abs page 2604.21625 resolved; title matches OpenAlex record for DOI 10.48550/arXiv.2604.21625
+- id: doi:10.1109/lascas67804.2026.11457090
+  title: Design, Implementation and Verification of an Open-Source ASIC for Grayscale and Sobel Edge Detection
+  authors:
+  - Diana N. Maldonado R.
+  - Sebastián Eslava G.
+  - Kevin D. Patino-Sosa
+  year: 2026
+  venue: 2026 IEEE 17th Latin America Symposium on Circuits and System (LASCAS)
+  venue_type: conference
+  doi: 10.1109/lascas67804.2026.11457090
+  landing_url: https://ieeexplore.ieee.org/document/11457090/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - digital
+  - education-shuttles
+  institutions:
+  - Universidad Nacional de Colombia
+  - Georgia Institute of Technology
+  fabrication:
+    statement: Fabricated via TinyTapeout.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/lascas67804.2026.11457090 resolved; title matches
+    OpenAlex record
+- id: arxiv:2603.12415
+  title: 'Ising-ReRAM: A Low Power Ising Machine ReRAM Crossbar for NP Problems'
+  authors:
+  - Everest Bloomer
+  - Irem Didin
+  - Ching-Yi Lin
+  - Sahil Shah
+  year: 2026
+  venue: arXiv
+  venue_type: preprint
+  doi: null
+  landing_url: https://arxiv.org/abs/2603.12415
+  arxiv:
+    id: '2603.12415'
+    url: https://arxiv.org/abs/2603.12415
+  paywalled: false
+  free_full_text:
+  - url: https://arxiv.org/abs/2603.12415
+    host: arxiv.org
+    oa_type: preprint (arXiv)
+    located_via: arXiv abs page
+  topics:
+  - rram
+  - device-characterisation
+  institutions: []
+  fabrication: null
+  related_docs:
+  - label: overview-sky130b-reram
+    reason: The crossbar is a ReRAM array fabricated in the SkyWater 130 nm process, the module the overview
+      page describes.
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 arXiv abs page 2603.12415 resolved; title matches OpenAlex record for DOI 10.48550/arXiv.2603.12415
+- id: arxiv:2606.24916
+  title: 'SPORT: Spherical-PSNR-Optimized tRuncaTion for Power-Efficient 360-Degree Video Systems'
+  authors:
+  - Md. Sajjad Hossain
+  - Hasibur Rahman Hemel
+  - Kyle Mooney
+  - Yiwen Xu
+  - William Oswald
+  - Mario Renteria-Pinon
+  - Hritom Das
+  - Zhenlin Pei
+  - Jinhui Wang
+  - Na Gong
+  year: 2026
+  venue: arXiv
+  venue_type: preprint
+  doi: null
+  landing_url: https://arxiv.org/abs/2606.24916
+  arxiv:
+    id: '2606.24916'
+    url: https://arxiv.org/abs/2606.24916
+  paywalled: false
+  free_full_text:
+  - url: https://arxiv.org/abs/2606.24916
+    host: arxiv.org
+    oa_type: preprint (arXiv)
+    located_via: arXiv abs page
+  topics:
+  - memory
+  - digital
+  institutions: []
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: Borderline inclusion. A video-system paper validated on an SRAM ASIC fabricated in SkyWater 130
+    nm CMOS.
+  verified: 2026-09-14 arXiv abs page 2606.24916 resolved; title matches OpenAlex record for DOI 10.48550/arXiv.2606.24916
+- id: doi:10.1109/cae69023.2026.11450324
+  title: Testbed for Custom Open-Source Power Management Integrated Circuit in Harsh Space Environments
+  authors:
+  - Ítalo Muñoz
+  - Jorge Marin
+  - Felipe Illanes
+  - Marcos Díaz Quezada
+  - Christian A. Rojas
+  year: 2026
+  venue: 2026 Argentine Conference on Electronics (CAE)
+  venue_type: conference
+  doi: 10.1109/cae69023.2026.11450324
+  landing_url: https://ieeexplore.ieee.org/document/11450324/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - power-management
+  - reliability
+  institutions:
+  - Federico Santa María Technical University
+  - Federico II University Hospital
+  - X-Fab (Germany)
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  notes: null
+  verified: 2026-09-14 Crossref REST API works/10.1109/cae69023.2026.11450324 resolved; title matches
+    OpenAlex record
