@@ -102,7 +102,8 @@ model form[^pdk-07]).
   {ref}`VIM2 <step-129>` under the metal — and {ref}`MM3 <step-139>`
   is then aligned either to the same marks or to `capm` itself
   (inference; the choice sets which enclosure carries the
-  {term}`overlay` error, and Levinson treats the budgeting[^levinson-2005]).
+  {term}`overlay` error; Levinson's book has a chapter on
+  overlay[^levinson-2005]).
 * **Protecting the dielectric.** Everywhere the resist is cleared,
   the {ref}`CAPME <step-138>` etch will expose the capacitor dielectric; where
   it remains, the plate and the dielectric under it are the finished
@@ -143,7 +144,9 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
    standing waves, then 2.38 % (0.26 N) TMAH develop, rinse and dry.[^txt-02]
 5. **Alignment.** To the {ref}`VIM2 <step-129>` marks beneath the
    metal (the metal-3 stack is opaque, so the marks are read as
-   topography or through cleared windows; industry practice[^levinson-2005]).
+   topography or through cleared windows; our reading of industry
+   practice, and Levinson's book has a chapter on
+   overlay[^levinson-2005]).
 6. **Inspection and metrology.** Plate {term}`CD` by optical CD or
    {term}`CD-SEM` on the AMAT Verity/VeraSEM class SkyWater
    lists;[^skw-01] overlay on the KLA 5200/5300/Archer class;[^skw-01]
@@ -242,8 +245,8 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
   reflective substrates.[^brunner-1991]
 * Rocke and Schneegans (Siemens), *JVST B* 1988 — a refractory cap
   as an anti-reflective layer on aluminium.[^rocke-1988]
-* Levinson, *Principles of Lithography* — overlay budgets and
-  alignment through opaque films.[^levinson-2005]
+* Levinson, *Principles of Lithography* — the chapter on
+  overlay.[^levinson-2005]
 * Ausschnitt, SPIE 1999 — separating dose from defocus in
   production.[^ausschnitt-1999]
 * Ng et al. (Chartered), *IEEE TED* 2005 — a review of MiM integration
