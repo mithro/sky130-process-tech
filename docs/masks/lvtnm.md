@@ -10,7 +10,8 @@ and is stripped again at {ref}`LVTNIS <step-016>`. It is an implant
 channel module. What makes it unusual is that the public record does not
 settle what its openings are: the PDK describes the drawn layer as
 blocking an implant, the step pages leave the polarity open, and one
-public reconstruction of the plate adds created shapes to the drawn layer.
+public derivation from the drawn tape-out data adds created shapes to the
+drawn layer.
 This page gathers what public sources say about the mask itself — its
 PDK entry and layers, the plates the process-steps sheet records for the
 MPW runs, what the public renders of those runs show, the lithography it
@@ -65,8 +66,8 @@ not devices the `lvtn` function line names, and on the table the three
 receive: the standard PMOS `HVTPM` only, the low-Vt PMOS `LVTNM` only
 and the high-Vt PMOS both ({ref}`mask-hvtpm`; our reading of the
 rows).[^pdk-06] The table does not say what the implants through the
-two masks do, so it does not settle the polarity either; it does show
-that the plate is not the drawn `lvtn` alone.
+two masks do, so it does not settle the polarity either; on our reading,
+it shows that the plate is not the drawn `lvtn` alone.
 
 What the mask does not define is the baseline threshold of the other
 devices: on the step pages' readings the P-channel threshold implant
@@ -111,7 +112,7 @@ them.[^pdk-06]
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. `LVTNM` is one of the masks the site's README
-calls "fab-derived" and renders "as a boolean expression over drawn
+calls "fab-derived" and evaluates "as a boolean expression over drawn
 layers": on all eight runs the expression is
 `125:44 OR (64:20 AND (78:44 OR 81:2))`, which in the layer names of
 `gds_layers.csv` is `lvtn` OR (`nwell` AND (`hvtp` OR

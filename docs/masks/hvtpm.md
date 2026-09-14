@@ -10,9 +10,9 @@ threshold, the implants {ref}`PCHI <step-023>` and
 is stripped at {ref}`PCHIS <step-025>`. The "V" in its name is a
 threshold, not a voltage class. The public record disagrees about what
 the plate carries: the step page follows the PDK's description of the
-drawn layer `hvtp`, while the PDK's mask generation table and one public
-reconstruction of the plate both point to openings over most low-voltage
-N-well. This page gathers what public sources say about the mask itself
+drawn layer `hvtp`, while, on our reading, the PDK's mask generation
+table and one public derivation from the drawn tape-out data both point
+to openings over most low-voltage N-well. This page gathers what public sources say about the mask itself
 — its PDK entry and layers, the plates the process-steps sheet records
 for the MPW runs, what the public renders of those runs show, the
 lithography it needs and the rules that constrain it. How the step is
