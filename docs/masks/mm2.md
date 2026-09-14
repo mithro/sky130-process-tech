@@ -6,8 +6,8 @@ aluminium wiring level: on the {ref}`MM2 <step-124>` page's reading, the
 resist printed through it at step 124 stays wherever `met2` is drawn,
 and the {ref}`MM2E <step-125>` etch removes the metal stack everywhere
 else. Its rules repeat metal 1's 0.14 µm lines and spaces, the step pages
-read it as a critical KrF level, and it is one of the four masks whose
-data the PDK puts on its finest grid. With metal 5, it is also one of
+read it as a critical KrF level, and it is one of the four masks whose "mask data" rule
+x.1a names for its 0.001 grid. With metal 5, it is also one of
 the two masks for which a transcribed plate-case label is public,
 although the label is not tied to an MPW run. This page gathers
 what public sources say about the mask itself — its PDK entry and
@@ -159,10 +159,10 @@ is the heading of the run's columns in the tab
   transcribes a Photronics plate-case label whose part-number field names
   `MM2` and the number 550. It gives the material as a 6 × 6 × 0.25 in
   blank, the type as "4X Beam Final", a "Percent Clear" of 56.64 and a
-  "Level" of 4, and a CD specification for a scribe-line feature in X and
-  Y, nominal 0.568 with tolerances of 0.02 either way, measured at means
+  "Level" of 4, and a CD specification for patterns it names "Scribe FA DI X
+  / LINE / X" and "Scribe FA DI Y / LINE / Y", nominal 0.568 with tolerances of 0.02 either way, measured at means
   of 0.5497 (X) and 0.5588 (Y), in no stated unit.[^steps-sheet] The tab
-  does not tie the label to one of the MPW runs (the masks index), or
+  does not tie the label to one of the MPW runs ({ref}`masks-mpw-runs`) or
   define its fields; we read "4X" as the reduction ratio and "Percent
   Clear" as the transmitting share of the plate area (inference from the
   field names alone). Hochmuth, Ruhl and Coleman found that with chrome
@@ -319,8 +319,8 @@ calculations (S8D\*)" of 0.35 (`Met2Thick`) and the same 0.35 for
 "(SP8T/S8T\*)" (`Met2_Qthick`), and the pattern-density criteria it
 shares with metal 1; Table 5, the laser-fuse criteria, gives a "Max.
 extension of met2 beyond fuse boundary" of 0.005 (`FEXT`), and Table 7 a
-"Huge metal X min. W and L" of 3 (`HugeM`).[^pdk-03] The summary Table
-F3c repeats metal 2 as 0.140 wide on a 0.140 space, enclosing the via by
+"Huge metal X min. W and L" of 3 (`HugeM`).[^pdk-03] The summary Table F3c, "Back end layers for S8D\*
+flow", repeats metal 2 as 0.140 wide on a 0.140 space, enclosing the via by
 "0.055 / 0.085" and via 2 by 0.040.[^pdk-summary] For the plate the
 decisive figures are 0.140 µm lines on a 0.28 µm pitch (our arithmetic
 from m2.1 and m2.2).
