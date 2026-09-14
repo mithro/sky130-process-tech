@@ -352,6 +352,8 @@ implants.[^pdk-03]
 * {ref}`mask-mm3` and {ref}`mask-mm4` — per-mask pages for the metal-3 and
   metal-4 masks, for which the step pages leave the class open between
   this one and KrF.
+* {ref}`mask-tunm` — the per-mask page for the tunnel mask, assigned to
+  this class.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, developer and exposure-tool
