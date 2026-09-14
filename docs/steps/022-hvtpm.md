@@ -57,8 +57,8 @@ CLHVTPM" (`chvtpm.3`) and "0 min. enclosure of ((LVnwell overlapping
 Var_channel) AND hvtp) by CLHVTPM" (`chvtpm.4`).[^pdk-errors] The
 {ref}`HVTPM mask page <mask-hvtpm>` reads `CLHVTPM` as the created
 `HVTPM` data (inference from the rule names); on that reading the
-openings cover low-voltage N-well outside varactor channels and `lvtn`,
-and `hvtp` only where low-voltage N-well overlaps a varactor channel,
+openings cover low-voltage N-well that does not overlap a varactor
+channel, outside `lvtn`, and `hvtp` within low-voltage N-well that does,
 rather than drawn `hvtp` alone. Openings over `hvtp`, as above, and
 openings over most low-voltage N-well are both readings; the PDK does
 not say which matches the plate, and the checks state what the created
