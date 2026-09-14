@@ -258,6 +258,16 @@ this level are those of the poly rules against diffusion — 0.130 of
 poly beyond diffusion (poly.8) and 0.250 of diffusion beyond poly
 (poly.7), whose unit cells are blank in the published table — and of the implant and well rules against it, such as
 difftap.8's 0.180 µm N-well enclosure of p+ diffusion.[^pdk-periph]
+The PDK's *Error Messages* page, which describes "many of the automated
+DRC rules that are checked by SkyWater as part of the acceptance
+criteria for GDS data", lists two checks named `cfom.nikon`, "FOMmk in
+the nikon cross has the wrong polarity" and "FOMmk is missing from the
+nikon cross in the layout", and the same pair for most other mask
+layers.[^pdk-errors] The page does not say what the "nikon cross" is or
+where it sits; we read it as a structure on these mask layers whose mask
+data must have the right polarity (inference from the
+message wording), which does not settle whether `FOM` carries the
+zero-level alignment marks.
 
 (mask-fom-steps)=
 ## Steps that use this mask
@@ -368,6 +378,8 @@ space.
 * SkyWater PDK, *Periphery rules* — the `difftap` rules, x.1a, x.1b,
   x.2, x.9, x.15a, the poly placement rules and the flag
   legend.[^pdk-periph]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the
+  `cfom.nikon` checks.[^pdk-errors]
 * SkyWater PDK Authors, test-tile pad documentation — the "FOM w/s"
   values of the gate-oxide capacitors.[^raw-data-testtile-pads]
 * *S8 / SKY130 Process Steps* sheet — the step, the `FOM` plates of
@@ -432,7 +444,8 @@ space.
   magnification, the resist and the exposure tool are not public; the
   KrF reading rests on the 0.150 µm rule.
 * Whether the plate also carries the zero-level alignment marks, or a
-  separate zero-mark step does, is not public.
+  separate zero-mark step does, is not public, and the Error Messages
+  page does not explain its "nikon cross" checks.[^pdk-errors]
 * The renders do not say how much of each die's shape count is fill,
   and the fill layer 23:28 is not in `gds_layers.csv`.[^mask-renders][^pdk-06]
 * What the plate number `020` encodes is not stated, and no public
@@ -463,6 +476,10 @@ space.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
     Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
     E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
