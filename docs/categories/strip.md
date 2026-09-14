@@ -57,9 +57,11 @@ followed by a timed over-ash.
 ### The post-implant crust
 
 Resist that has masked a high-dose implant is a different material from
-freshly developed resist. The ions deposit their energy in the top
-100–200 nm,[^fujimura-1989] cross-linking and carbonising it and
-embedding the implanted species; problems arise "when this photoresist
+freshly developed resist. Fujimura et al. traced the lower etching rate
+of high-dose ion-implanted resist to "carbonization of polymers of the
+resist", and found that the residues left by O₂ plasma ashing were
+mainly "oxide of the implanted species";[^fujimura-1989] problems arise
+"when this photoresist
 has undergone an implant step previously and heavy metal are embedded in
 the photoresist and it has experienced high temperatures causing it to
 be resistant to oxidizing".[^wiki-ash] If the crusted wafer is heated

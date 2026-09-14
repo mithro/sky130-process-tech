@@ -43,9 +43,11 @@ nsdm" of 0.200 µm (rpm.6),[^pdk-periph] and the minimum-CD table gives
 `NSDM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant-block* type, printed on the same topography and
 to the same rules as {ref}`PSDM <step-081>`. The differences are in
-what the resist must withstand — arsenic is a heavier ion than boron
-or BF₂, so at the same dose it deposits more energy in the resist
-surface and forms a harder crust[^fujimura-1989] — and in the fact
+what the resist must withstand — high-dose implantation carbonises the
+resist's polymers and lowers its etching rate,[^fujimura-1989] and
+arsenic is a heavier ion than boron or BF₂, so we infer that at the
+same dose it leaves a harder crust (the paper's abstract does not
+compare species) — and in the fact
 that its windows are, to a first approximation, the complement of
 the P⁺ windows across the active area: nsd.7 and nsd.8 keep the two
 layers apart except where they butt at a diff/tap edge with zero
@@ -214,8 +216,9 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 * Levinson, *Principles of Lithography* — overlay budgets.[^levinson-2005]
 * Mack, *Fundamental Principles of Optical Lithography* — thick-resist
   imaging.[^mack-2007]
-* Fujimura et al. (Fujitsu), *JJAP* 1989 — what an implant does to
-  the resist surface.[^fujimura-1989]
+* Fujimura et al. (Fujitsu), *JJAP* 1989 — the carbonised layer of
+  high-dose implanted resist, the residues of O₂ ashing and a two-step
+  ashing process (abstract).[^fujimura-1989]
 * Smith, 1983 — wafer cooling and resist masking in
   implantation.[^smith-1983]
 * Romig, Bishop and Rio, IIT 1996 — resist burning in a high-current

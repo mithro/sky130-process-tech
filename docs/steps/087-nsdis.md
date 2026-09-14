@@ -24,10 +24,12 @@ arsenic-bearing crust (the species we infer on {ref}`NSDI <step-086>`)
 
 The resist it removes has taken an arsenic dose of the order of
 10¹⁵ cm⁻² (industry-typical for a source/drain[^txt-01]). Arsenic is
-the heaviest ion the resists of this flow meet, so at a given dose
-it deposits more energy in the top 100–200 nm of the film and forms
-the hardest crust of any implant strip in the process, of the kind
-Fujimura et al. characterised.[^fujimura-1989] The surface under the
+the heaviest ion the resists of this flow meet, so we infer that at a
+given dose it leaves the hardest crust of any implant strip in the
+process. Fujimura et al. traced the lower etching rate of high-dose
+ion-implanted resist to "carbonization of polymers of the resist"; the
+abstract does not compare implanted species.[^fujimura-1989] The
+surface under the
 resist is, on our reading of the flow, the {ref}`SPOX <step-080>`
 oxide throughout — over the source/drain silicon, the spacers and
 caps, the field, and the poly opened at {ref}`NPCME <step-079>` —

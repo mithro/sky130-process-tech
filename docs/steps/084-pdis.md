@@ -37,8 +37,8 @@ must not be stripped or seriously thinned here.
 
 `PDIS` is a {ref}`Resist strip / clean <category-strip>` step of the
 *post-high-dose-implant* type. The category page explains the crust:
-ions deposit their energy in the top 100–200 nm of the resist,
-cross-linking and carbonising it,[^fujimura-1989] and if the wafer is
+high-dose implantation carbonises the resist's polymers, which lowers
+its etching rate,[^fujimura-1989] and if the wafer is
 heated quickly the volatile bulk beneath "build[s] up pressure
 beneath the implant-hardened surface layer" until the crust
 pops.[^pat-strip-mosel] At 10¹⁵ cm⁻² the crust is at its thickest
