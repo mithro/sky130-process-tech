@@ -24,7 +24,9 @@ checker verifies:
   marked ``false`` has an expiry date after today and a member shown as
   in force; a family marked ``true`` has no member shown as in force
   whose own expiry date is after today, and an expiry date after today
-  only if every member is shown as lapsed, expired or abandoned.
+  only if every member is shown as lapsed, expired or abandoned (or is
+  a published application shown as granted, whose term is that of the
+  resulting patent).
 * **Cross-references.** Every relevance ``target`` is a label defined in
   ``docs/`` as ``(label)=``; a ``cited-on-page`` target's page mentions a
   member's number; every inventory key exists in
@@ -70,6 +72,7 @@ DISCOVERY = {"cited-in-docs", "assignee-search", "family-resolution",
 ENDED = {"Expired - Lifetime", "Expired - Fee Related", "Abandoned",
          "Ceased", "Withdrawn", "Revoked", "Expired"}
 IN_FORCE = {"Active"}
+APPLICATION_TYPES = {"application", "international-application", "search-report"}
 LINK_HOSTS = (
     "https://worldwide.espacenet.com/", "https://patents.google.com/",
     "https://patentscope.wipo.int/", "https://ppubs.uspto.gov/",
@@ -294,7 +297,9 @@ def check_family(f: dict, labels: dict[str, Path], inventory: dict[str, str],
         if live_future:
             problems.append(f"{fid}: expired: true but {live_future[0]['number']} is shown as in force")
         if edate and edate > TODAY and not all(
-                (m.get("status") in ENDED) or m.get("document_type") == "reexamination-certificate"
+                m.get("status") in ENDED
+                or m.get("document_type") == "reexamination-certificate"
+                or (m.get("document_type") in APPLICATION_TYPES and m.get("status") == "Granted")
                 for m in members if isinstance(m, dict)):
             problems.append(f"{fid}: expired: true but expiry date {edate} is after today")
     elif expired is False:

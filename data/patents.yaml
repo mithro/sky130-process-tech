@@ -5118,11 +5118,12 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US5699447A, retrieved 2026-09-14
   expiry:
-    date: 2029-01-15
+    date: 2014-12-16
     estimated: true
-    basis: 'not bounded from the records retrieved: US20090148033A1; latest estimate US20090148033A1 (application;
-      any grant would expire at the latest about 20 years from filing (estimated))'
-  expired: unknown
+    basis: 'all 11 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US5699447A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US5699447A
     country: US
@@ -15457,11 +15458,11 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6759288B2, retrieved 2026-09-14
   expiry:
-    date: 2022-08-01
+    date: 2020-08-22
     estimated: true
     basis: 'all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US20020195626A1 (estimated: 20 years from the filing date shown;
-      no term remains for any grant on it)'
+      the latest estimate is that of US6759288B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Fee Related)'
   expired: true
   members:
   - number: US20020068395A1
@@ -16073,11 +16074,11 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6518136B2, retrieved 2026-09-14
   expiry:
-    date: 2022-06-14
+    date: 2020-12-14
     estimated: true
     basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US20020151145A1 (estimated: 20 years from the filing date shown;
-      no term remains for any grant on it)'
+      the latest estimate is that of US6743686B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Fee Related)'
   expired: true
   members:
   - number: US20020076889A1
@@ -16367,11 +16368,11 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6914016B2, retrieved 2026-09-14
   expiry:
-    date: 2025-03-30
+    date: 2021-07-28
     estimated: true
     basis: 'all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US20050181632A1 (estimated: 20 years from the filing date shown;
-      no term remains for any grant on it)'
+      the latest estimate is that of US7196021B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Fee Related)'
   expired: true
   members:
   - number: US20020187655A1
@@ -16942,11 +16943,12 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US6717193B2, retrieved 2026-09-14
   expiry:
-    date: 2028-10-24
+    date: 2022-10-09
     estimated: true
-    basis: 'not bounded from the records retrieved: US20090267184A1; latest estimate US20090267184A1 (application;
-      any grant would expire at the latest about 20 years from filing (estimated))'
-  expired: unknown
+    basis: 'all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of TW586130B (estimated upper bound: earliest priority date + 21 years
+      (12-month priority period + 20-year term))'
+  expired: true
   members:
   - number: US20030067023A1
     country: US
@@ -18129,11 +18131,11 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6667205B2, retrieved 2026-09-14
   expiry:
-    date: 2023-11-26
+    date: 2022-09-22
     estimated: true
     basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US20040157418A1 (estimated: 20 years from the filing date shown;
-      no term remains for any grant on it)'
+      the latest estimate is that of US6967380B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Fee Related)'
   expired: true
   members:
   - number: US20030197227A1
@@ -18542,12 +18544,12 @@ families:
     status: Granted
     source: Google Patents (IFI Claims) status of US20110006372A1, retrieved 2026-09-14
   expiry:
-    date: 2030-07-12
+    date: 2023-06-30
     estimated: true
-    basis: 'not bounded from the records retrieved: US20070093016A1, US20070093017A1, US20080042216A1,
-      US20090286366A1, US20110006372A1; latest estimate US20110006372A1 (application; any grant would
-      expire at the latest about 20 years from filing (estimated))'
-  expired: unknown
+    basis: 'all 18 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7304353B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Fee Related)'
+  expired: true
   members:
   - number: US20040005752A1
     country: US
@@ -19303,11 +19305,12 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US6960781B2, retrieved 2026-09-14
   expiry:
-    date: 2030-08-03
+    date: 2024-10-25
     estimated: true
-    basis: 'not bounded from the records retrieved: JP2011009760A; latest estimate JP2011009760A (application;
-      any grant would expire at the latest about 20 years from filing (estimated))'
-  expired: unknown
+    basis: 'all 16 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7504704B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US20040173812A1
     country: US
@@ -19593,11 +19596,12 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US7605041B2, retrieved 2026-09-14
   expiry:
-    date: 2027-12-07
+    date: 2024-04-10
     estimated: true
-    basis: 'not bounded from the records retrieved: US20080090364A1; latest estimate US20080090364A1 (application;
-      any grant would expire at the latest about 20 years from filing (estimated))'
-  expired: unknown
+    basis: 'all 15 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of TWI229450B (estimated upper bound: earliest priority date + 21 years
+      (12-month priority period + 20-year term))'
+  expired: true
   members:
   - number: US20050230781A1
     country: US
@@ -20050,11 +20054,12 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7514373B2, retrieved 2026-09-14
   expiry:
-    date: 2034-08-07
+    date: 2025-02-21
     estimated: true
-    basis: 'not bounded from the records retrieved: JP2015043421A; latest estimate JP2015043421A (application;
-      any grant would expire at the latest about 20 years from filing (estimated))'
-  expired: unknown
+    basis: 'all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7514373B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US20040242021A1
     country: US
@@ -20273,11 +20278,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7112507B2, retrieved 2026-09-14
   expiry:
-    date: 2026-06-13
+    date: 2024-11-17
     estimated: true
     basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US20060231920A1 (estimated: 20 years from the filing date shown;
-      no term remains for any grant on it)'
+      the latest estimate is that of JP4431580B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Fee Related)'
   expired: true
   members:
   - number: US20050112836A1
@@ -24925,11 +24930,12 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US9076523B2, retrieved 2026-09-14
   expiry:
-    date: 2032-12-13
+    date: 2033-07-18
     estimated: true
-    basis: 'not bounded from the records retrieved: US20140169062A1; latest estimate US20140169062A1 (application;
-      any grant would expire at the latest about 20 years from filing (estimated))'
-  expired: unknown
+    basis: 'all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US9076523B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Fee Related)'
+  expired: true
   members:
   - number: US20140169062A1
     country: US
@@ -25630,11 +25636,10 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US10103244B2, retrieved 2026-09-14
   expiry:
-    date: 2036-02-17
+    date: 2034-12-31
     estimated: true
-    basis: 'not bounded from the records retrieved: US20160247897A1, CN105830214A, TW201530732A; latest
-      estimate US20160247897A1 (application; any grant would expire at the latest about 20 years from
-      filing (estimated))'
+    basis: 'not bounded from the records retrieved: TW201530732A; latest estimate TW201530732A (application;
+      any grant would expire at the latest about 20 years from filing (estimated))'
   expired: unknown
   members:
   - number: US20150200295A1
