@@ -123,6 +123,7 @@ vim
 mm2
 vim2
 capm
+mm3
 vim4
 ```
 
@@ -174,7 +175,7 @@ In the table:
 | {ref}`MM2 <step-124>` | Metal 2, {ref}`MM2 <mask-mm2>` — `X` | `cmm2` mask 41:0; waffle drop 105:52 | `met2` 69:20 | {ref}`MM2E <step-125>` | `MM2CD` 0.14 / `MM2CDSP` 0.14 |
 | {ref}`VIM2 <step-129>` | Via 2-PLM, {ref}`VIM2 <mask-vim2>` — `X`; Via 2-TNV, VIM2 — *blank*; Via 2-S8TM, VIM2 — *blank* | `cviam2` mask 44:0 | `via2` 69:44 | {ref}`VIM2E <step-130>` | `VIM2CD` / `VIM2CDSP`: "Via 2-PLM" 0.2 / 0.2; "Via 2-TNV" 0.28 / 0.28; "Via 2-S8TM" 0.8 / 0.8 |
 | {ref}`CAPM <step-137>` | Capacitor MiM, {ref}`CAPM <mask-capm>` — *blank* | none | `capm` 89:44 | {ref}`CAPME <step-138>` | `CAPMCD` 2 / `CAPMCDSP` 0.84 |
-| {ref}`MM3 <step-139>` | Metal 3-PLM, MM3 — `X`; Metal 3-TLM, MM3 — *blank*; Metal 3-S8TM, MM3 — *blank* | `cmm3` mask 34:0; waffle drop 107:24 | `met3` 70:20 | {ref}`MM3E <step-140>` | `MM3CD` / `MM3CDSP`: "Metal 3-PLM" 0.3 / 0.3; "Metal 3-TLM" 0.36 / 0.36; "Metal 3-S8TM" 0.8 / 0.8 |
+| {ref}`MM3 <step-139>` | Metal 3-PLM, {ref}`MM3 <mask-mm3>` — `X`; Metal 3-TLM, MM3 — *blank*; Metal 3-S8TM, MM3 — *blank* | `cmm3` mask 34:0; waffle drop 107:24 | `met3` 70:20 | {ref}`MM3E <step-140>` | `MM3CD` / `MM3CDSP`: "Metal 3-PLM" 0.3 / 0.3; "Metal 3-TLM" 0.36 / 0.36; "Metal 3-S8TM" 0.8 / 0.8 |
 | {ref}`VIM3 <step-144>` | Via3-PLM, VIM3 — `X` | `cviam3` mask 50:0; drawing 112:20 | `via3` 70:44 | {ref}`VIM3E <step-145>` | `VIM3CD` 0.2 / `VIM3CDSP` 0.2 |
 | {ref}`CAP2M <step-152>` | *not listed* | none | `cap2m` 97:44 *(inference)* | {ref}`CAP2ME <step-153>` | none listed |
 | {ref}`MM4 <step-154>` | Metal 4, MM4 — `X` | `cmm4` mask 51:0; waffle drop 112:4 | `met4` 71:20; `met4` fuse 71:17 (the metal-fuse note names MM4) | {ref}`MM4E <step-155>` | `MM4CD` 0.3 / `MM4CDSP` 0.3 |

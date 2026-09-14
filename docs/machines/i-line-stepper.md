@@ -349,6 +349,8 @@ implants.[^pdk-03]
   for the field-oxide mask, for which it is the alternative.
 * {ref}`mask-capm` — the per-mask page for the first MiM capacitor
   mask, assigned to this class.
+* {ref}`mask-mm3` — the per-mask page for the metal-3 mask, for which the
+  step pages leave the class open between this one and KrF.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, developer and exposure-tool
