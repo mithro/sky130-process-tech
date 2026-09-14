@@ -141,6 +141,7 @@ cap2m
 mm4
 vim4
 mm5
+nsm
 ```
 
 In the table:
@@ -197,7 +198,7 @@ In the table:
 | {ref}`MM4 <step-154>` | Metal 4, {ref}`MM4 <mask-mm4>` — `X` | `cmm4` mask 51:0; waffle drop 112:4 | `met4` 71:20; `met4` fuse 71:17 (the metal-fuse note names MM4) | {ref}`MM4E <step-155>` | `MM4CD` 0.3 / `MM4CDSP` 0.3 |
 | {ref}`VIM4 <step-159>` | Via4, {ref}`VIM4 <mask-vim4>` — `X` | `cviam4` mask 58:0; drawing 117:20 | `via4` 71:44 | {ref}`VIM4E <step-160>` | `VIM4CD` 0.8 / `VIM4CDSP` 0.8 |
 | {ref}`MM5 <step-162>` | Metal 5, {ref}`MM5 <mask-mm5>` — `X` | `cmm5` mask 59:0; waffle drop 117:4 | `met5` 72:20 | {ref}`MM5E <step-163>` | `MM5CD` / `MM5CDSP`: "All flows except S8PF\*/S8PIR\*" 0.8 / 0.8; "S8PF\*/S8PIR\*" 1.6 / 1.6 |
-| {ref}`NSM <step-165>` | Nitride Seal Mask, NSM — `X` | `cnsm` mask 22:0 | `nsm` 61:20 | {ref}`NSME <step-166>` | `NSMCD` 3 / `NSMCDSP` 4 |
+| {ref}`NSM <step-165>` | Nitride Seal Mask, {ref}`NSM <mask-nsm>` — `X` | `cnsm` mask 22:0 | `nsm` 61:20 | {ref}`NSME <step-166>` | `NSMCD` 3 / `NSMCDSP` 4 |
 | {ref}`PDM <step-168>` | Pad (scribe protect), PDM — `X`; Pad (scribe unprotect), PDM — *blank* | `cpdm` mask 37:0 | `pad` 76:20 | {ref}`PDME <step-169>` | "Pad (scribe protect)" `PDMCD` 2 / `PDMCDSP` 1.27 |
 
 Notes on the table:

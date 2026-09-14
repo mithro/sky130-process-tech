@@ -92,7 +92,7 @@ with a column headed "Value (um)";[^pdk-03] the
 (inference). The mask does not define the metal stack it patterns,
 which {ref}`WTIAL5 <step-161>` deposits, the via-4 holes beneath
 ({ref}`mask-vim4`), or the passivation openings above
-({ref}`NSM <step-165>`, {ref}`PDM <step-168>`).
+({ref}`mask-nsm`, {ref}`PDM <step-168>`).
 
 ## Drawn layers and derivation
 
@@ -356,7 +356,7 @@ them.
 * {ref}`MM5 <step-162>` and {ref}`MM5E <step-163>` — the mask step and
   the metal etch; {ref}`WTIAL5 <step-161>` — the stack patterned.
 * {ref}`mask-vim4` — the via mask below; {ref}`mask-mm4` — the metal mask
-  one level down; {ref}`NSM <step-165>` and {ref}`PDM <step-168>` — the two masks
+  one level down; {ref}`mask-nsm` and {ref}`PDM <step-168>` — the two masks
   printed over this level.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
   plate-case labels.

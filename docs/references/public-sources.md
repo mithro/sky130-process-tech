@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1718
+written page has exactly one entry here; the inventory holds 1719
 keyed entries as of 2026-09-14, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -107,8 +107,8 @@ metal5/passivation region). Tier: cross-check.
 Also used on the PECVD, HDP-CVD and PVD cluster tool pages.
 Also used on the sputter targets material page.
 Also used on the substrates material page.
-Also used on the LI1M, VIM, VIM2, MM3, VIM3, CAP2M, MM4 and MM5 mask
-pages.
+Also used on the LI1M, VIM, VIM2, MM3, VIM3, CAP2M, MM4, MM5 and NSM
+mask pages.
 
 **PDK-05** — *Masks* page and `masks.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -1818,7 +1818,7 @@ Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
 Tier: high-level.
 Also used on the lithography materials material page.
-Also used on the FOM, DNM, LVOM, CAPM, MM3, CAP2M, MM4, NPCM and MM5 mask pages.
+Also used on the FOM, DNM, LVOM, CAPM, MM3, CAP2M, MM4, MM5, NPCM and NSM mask pages.
 
 **WIKI-LOCOS** — Wikipedia, *LOCOS*.
 <https://en.wikipedia.org/wiki/LOCOS> LOCOS isolation, the predecessor
@@ -4557,7 +4557,7 @@ resist chemistry. Used on the lithography category page.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the CAPM, CAP2M and MM5 mask pages.
+Also used on the CAPM, CAP2M, MM5 and NSM mask pages.
 
 **ITO-1983** — H. Ito and C. G. Willson, "Chemical amplification in the
 design of dry developing resist materials", *Polymer Engineering &
@@ -4694,7 +4694,7 @@ not about SKY130).
 Used on the lithography category page.
 Also used on the i-line stepper or scanner page.
 Tier: cross-check.
-Also used on the CAPM, MM3, CAP2M, MM4, NTM, HVNTM, LDNTM, PSDM, NSDM and MM5 mask pages.
+Also used on the CAPM, MM3, CAP2M, MM4, MM5, NTM, HVNTM, LDNTM, PSDM, NSDM and NSM mask pages.
 
 **ASML-750E** — ASML, *ASML introduces KrF lithography scanner* (PAS
 5500/750E), press release, 2000-04-04.
@@ -7778,6 +7778,7 @@ Circuit Manufacturing V, 231 (1999). <https://doi.org/10.1117/12.361313>
 Endpoint detection on low-open-area dielectric etches. Used on step 108.
 Also used on the dielectric and nitride plasma etcher page.
 Tier: deep dive.
+Also used on the NSM mask page.
 
 **WONG-2001** — A. K.-K. Wong, *Resolution Enhancement Techniques in
 Optical Lithography*, SPIE Tutorial Texts TT47, SPIE Press, 2001, ISBN
@@ -8997,7 +8998,7 @@ designs), retrieved 2026-09-13.
 A published SKY130 seal-ring layout: a 6 µm `areaid.sl` band with a
 5 µm `nsm` band over four 0.3 µm diffusion rings and no drawn metal or
 via rings. Used on steps 165 and 166. Tier: cross-check.
-Also used on the MM5 mask page.
+Also used on the MM5 and NSM mask pages.
 
 **COMIZZOLI-1986** — R. B. Comizzoli, R. P. Frankenthal, P. C. Milner and
 J. D. Sinclair, "Corrosion of Electronic Materials and Devices",
@@ -9005,6 +9006,7 @@ J. D. Sinclair, "Corrosion of Electronic Materials and Devices",
 <https://doi.org/10.1126/science.234.4774.340> Corrosion of electronic
 materials and devices by humidity and ionic contamination. Used on steps
 165, 166, 167, 168 and 169. Tier: deep dive.
+Also used on the NSM mask page.
 
 **LANFORD-1978** — W. A. Lanford and M. J. Rand, "The hydrogen content of
 plasma-deposited silicon nitride", *Journal of Applied Physics*
@@ -9021,6 +9023,7 @@ US 5,789,302 A, filed 1997-03-24, granted 1998-08-04.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5789302>
 Dielectric discontinuities in the dicing channel as crack stops. Used on
 steps 165 and 166. Tier: deep dive.
+Also used on the NSM mask page.
 
 **PAT-EDGESEAL-GF** — A. K. Stamper, V. J. McGahay and Z.-X. He
 (GlobalFoundries), *Segmented guard-ring and chip edge seals*,
@@ -9028,6 +9031,7 @@ US 10,062,748 B1, filed 2017-02-27, granted 2018-08-28.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10062748>
 An edge seal etched through the dielectrics and lined with passivation,
 made with one mask. Used on steps 165, 166 and 167. Tier: deep dive.
+Also used on the NSM mask page.
 
 **PAT-FUSE-IBM** — P.-I. P. Lee, W. A. Klaasen and A. Mitwalsky
 (International Business Machines), *Fuse window with controlled fuse
@@ -9058,6 +9062,7 @@ devices made*, US 6,300,252 B1, filed 1999-10-01, granted 2001-10-09.
 Thick resist and a two-step window etch through a passivation and
 several inter-metal dielectrics. Used on steps 165 and 166. Tier: deep
 dive.
+Also used on the NSM mask page.
 
 **PAT-SEALRING-ZEEVO** — S. Bothra, T. G. McKay and R. Jhota (Zeevo),
 *Seal ring structure for IC containing integrated digital/RF/analog
@@ -9066,12 +9071,14 @@ circuits and functions*, US 6,492,716 B1, filed 2001-04-30, granted
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6492716>
 A seal ring under a passivation oxide and nitride, and the moisture path
 around it. Used on steps 164, 165, 166 and 167. Tier: deep dive.
+Also used on the NSM mask page.
 
 **PECK-1986** — D. S. Peck, "Comprehensive Model for Humidity Testing
 Correlation", *24th International Reliability Physics Symposium* (1986),
 pp. 44–50. <https://doi.org/10.1109/IRPS.1986.362110> A humidity-test
 acceleration model for plastic packages. Used on steps 165 and 167.
 Tier: deep dive.
+Also used on the NSM mask page.
 
 **SINHA-1978** — A. K. Sinha, H. J. Levinstein, T. E. Smith, G. Quintana
 and S. E. Haszko, "Reactive Plasma Deposited Si-N Films for MOS-LSI
@@ -14568,8 +14575,9 @@ SkyWater, SKY130 or the Bloomington fab; they describe masks, mask
 making and inspection, phase-shift masks, lithography and proximity
 correction, implantation, well engineering, CMP fill, layout-dependent
 effects, embedded SONOS flash, dual gate oxides, polysilicon resistors,
-multi-threshold, varactor and high-voltage devices, and bond pads in
-general. Every URL was fetched on 2026-09-13 or 2026-09-14: papers and books were checked through Crossref
+multi-threshold, varactor and high-voltage devices, and bond pads and
+seal rings in general. Every URL was fetched on 2026-09-13 or
+2026-09-14: papers and books were checked through Crossref
 (bibliographic data) and OpenAlex (abstracts or tables of contents), and
 their annotations rest on those. An entry's tier records its first use.
 
@@ -14695,7 +14703,7 @@ that let the ALTA 3700 laser reticle writer "address the needs of
 maskmakers in the 180 nm and 150 nm technology nodes", with
 print-quality and throughput results. Used on the VIM4 mask page. Tier:
 deep dive.
-Also used on the CAPM and CAP2M mask pages.
+Also used on the CAPM, CAP2M and NSM mask pages.
 
 **BUCK-1994** — P. D. Buck and B. J. Grenon, "Comparison of wet and dry
 chrome etching with the CORE-2564", *Proc. SPIE* **2087**, 42–49 (1994).
@@ -14705,7 +14713,7 @@ isotropic etch undercuts the chrome by about 150 nm per edge, which is
 compensated by sizing the data; wet and dry chrome etch compared on
 plates printed with the CORE-2564. Used on the VIM4 mask page. Tier:
 deep dive.
-Also used on the CAPM and CAP2M mask pages.
+Also used on the CAPM, CAP2M and NSM mask pages.
 
 **FLACK-1993** — W. W. Flack, K. E. Tokunaga and K. D. Edwards, "Chrome
 dry-etching for photomask fabrication", *Proc. SPIE* **1809**, 85
@@ -14728,7 +14736,7 @@ are nominal and do not apply to butting edges or corners") and Table F4,
 each pair of conducting layers: "Licon1" from `li1` to diff and tap,
 "Licon1 AND Npc" from `li1` to poly, "Mcon" from met1 to `li1` and "Via"
 from met2 to met1. Used on the LICM1 mask page. Tier: cross-check.
-Also used on the LVOM, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, MM4, NPCM, PSDM, NSDM and MM5 mask pages.
+Also used on the LVOM, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, MM4, MM5, NPCM, PSDM, NSDM and NSM mask pages.
 
 **CHOO-2000** — L. C. Choo, O. Park, M. J. Sack and S. C. Tam,
 "Integration of attenuated phase-shift mask to 0.13-μm technology
@@ -14844,7 +14852,7 @@ a particular mask level"; a model built from designed experiments
 predicts the settings for any level and was verified on production mask
 levels of varying pattern density. Used on the MM2 mask page. Tier: deep
 dive.
-Also used on the MM3, MM4 and MM5 mask pages.
+Also used on the MM3, MM4, MM5 and NSM mask pages.
 
 #### FOM mask page (first cited there)
 
@@ -15210,6 +15218,20 @@ aluminum and titanium tungsten alloy", and "The proper choice of
 metallization was found to give significant improvement in tolerance of
 bond-process-induced stresses". Used on the MM5 mask page. Tier: deep
 dive.
+
+#### NSM mask page (first cited there)
+
+**GAMBINO-2014** — J. P. Gambino, R. S. Graf, J. C. Malinowski,
+A. R. Cote, W. H. Guthrie, K. M. Watson, P. F. Chapman, K. K. Sims,
+M. D. Levy, T. Aoki, G. A. Mason and M. D. Jaffe, "Reliability of
+segmented edge seal ring for RF devices", *2014 IEEE International
+Interconnect Technology Conference / Advanced Metallization Conference
+(IITC/AMC)*, pp. 367–370. <https://doi.org/10.1109/IITC.2014.6831836>
+Edge seal rings and noise coupling in RF technologies; the abstract:
+"One source of coupling is the edge seal ring. We propose using a
+segmented guard ring to reduce coupling between devices. We demonstrate
+that the segmented guard ring is reliable for a 0.18 μm RF technology."
+Used on the NSM mask page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
