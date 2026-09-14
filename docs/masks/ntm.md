@@ -88,8 +88,11 @@ to a gate to shadow a tilted beam (below).
 number, the three without descriptions; there is no `ntm` drawing
 layer.[^pdk-06] The {ref}`NTM <step-064>` page infers from that absence
 that the reticle is derived by Boolean operations from the drawn device
-layers, with the add and drop purposes for manual corrections; the masks
-index marks the pairing as an inference. Rule x.9 allows "Shapes on
+layers, which it lists as active, poly, `nsdm` and `hvi`, with the add
+and drop purposes for manual corrections; the Error Messages checks below
+and the renders' expression instead name `nwell`, `hvi` (as `hvitmp` in
+the checks) and `ldntm`, so only `hvi` is common to the two lists. The
+masks index marks the pairing as an inference. Rule x.9 allows "Shapes on
 maskAdd or maskDrop layers ("serifs")" in the core only, and x.15a
 confines "Drawn compatible, mask, and waffle-drop layers" to test
 modules, seal ring and frame, with an exception that names only
