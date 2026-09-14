@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1702
+written page has exactly one entry here; the inventory holds 1703
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -14720,6 +14720,26 @@ parameter-extraction method and predictions of the effect of pre-CMP
 step height, pattern density, polish time, pad hardness and slurry
 selectivity on dishing and nitride erosion. Used on the FOM mask page.
 Tier: deep dive.
+
+**PDK-ERRORS** — SkyWater PDK Authors, *Error Messages* page and
+`errors.csv`, SkyWater SKY130 PDK documentation, retrieved 2026-09-14.
+<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>.
+A table of DRC message IDs, rule names and descriptions; the page says
+the file "provides a raw description for many of the automated DRC
+rules that are checked by SkyWater as part of the acceptance criteria
+for GDS data". Several descriptions give values for rules the periphery
+tables list as "N/A" — `pwbm.5` "0.84 min. spacing of pwbm_holes",
+`pwde.6` "1.00 min. enclosure of pwde_uhvi by dnwell_uhvi", `rpm.10` "2
+min. spacing of rpmNotXmt & pwbm" — and some differ from them (`lvtn.3b`
+"0.19 min spacing of lvtn(peri) to pfet along S/D direction"). It lists
+checks on created layers, such as `chvtpm.3` "0 min. enclosure of
+((LVnwell not overlapping Var_channel) NOT lvtn) by CLHVTPM", `chvtpm.4`
+"0 min. enclosure of ((LVnwell overlapping Var_channel) AND hvtp) by
+CLHVTPM" and `clvtnm.1` "0.38 min. width of clvtnm in periphery", and
+"nikon cross" checks for most mask layers (`cfom.nikon` "FOMmk in the
+nikon cross has the wrong polarity"). Used on the FOM mask page. Tier:
+cross-check.
 
 #### LVTNM mask page (first cited there)
 
