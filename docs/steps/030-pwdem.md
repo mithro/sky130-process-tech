@@ -178,6 +178,8 @@ An industry-generic drain-extension well lithography for a 200 mm,
   drift regions of the DE NMOS: {ref}`NWM <step-017>`.
 * Previous mask: {ref}`PWBM <step-026>`; next mask:
   {ref}`TUNM <step-035>`.
+* Mask page: {ref}`PWDEM <mask-pwdem>` — the mask's layer, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References

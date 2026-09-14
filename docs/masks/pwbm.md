@@ -289,6 +289,8 @@ N-well rules nwell.1 and nwell.2a would set the smallest features
   strip.
 * {ref}`mask-nwm` — the N-well mask, whose drawn layer the step page
   pairs with this mask.
+* {ref}`mask-pwdem` — the drain-extended P-well mask, which puts a
+  lighter P-well back into part of the blocked regions.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the partial plate record of the two P-well masks.
 * {ref}`machine-i-line-stepper` — the exposure class the step page
