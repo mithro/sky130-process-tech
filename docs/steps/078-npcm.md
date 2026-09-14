@@ -72,9 +72,12 @@ being a separate mask rather than part of the contact etch:
   gate-edge charging that Cacciato et al. saw when a borderless
   nitride became conductive.[^cacciato-2003] Opening the nitride
   first, with a dedicated mask, lets the contact etch stop on oxide
-  and poly alike. The concept of a nitride layer over poly that is
-  opened only under contacts goes back to the titanium-nitride local
-  interconnect processes of Tang et al.[^tang-1985][^tang-1987]
+  and poly alike. Local interconnect of the era was also built from
+  titanium nitride: Tang et al. patterned the TiN layer that forms during
+  self-aligned silicidation into connections between gates and
+  junctions;[^tang-1985][^tang-1987] their abstracts do not describe a
+  nitride cap over poly opened at contacts, and the papers' full text was
+  not checked.
 * **Doping the poly under the cut.** `NPCM` comes *before* the
   source/drain implants. Poly exposed by the cut is therefore
   implanted by {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>` where
@@ -215,9 +218,10 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 
 ### Deep dive
 
-* Tang et al. (Texas Instruments), IEDM 1985 and *IEEE TED* 1987 —
-  the TiN local-interconnect scheme in which a nitride over poly is
-  opened only where contacts are made.[^tang-1985][^tang-1987]
+* Tang et al. (Texas Instruments), IEDM 1985 and *IEEE TED* 1987 — a
+  TiN local-interconnect layer formed during self-aligned silicidation
+  and patterned between gates and junctions
+  (abstracts).[^tang-1985][^tang-1987]
 * Cacciato et al., P2ID 2003 — charging damage when a contact etch
   meets a borderless nitride.[^cacciato-2003]
 * Ito et al. (NEC), IEDM 2000 — what a nitride over the gate does to

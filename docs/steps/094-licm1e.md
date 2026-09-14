@@ -35,8 +35,7 @@ needs {term}`selectivity` to nitride as well as to silicon. A poly
 contact lands on poly that the nitride cut has already exposed
 (licon.15, licon.18[^pdk-periph]), so there is no nitride to open at
 the bottom — that is the point of doing the cut first, as the
-{ref}`NPCM <step-078>` page argues from the scheme Tang et al. used
-for a TiN {term}`local interconnect`.[^tang-1985] And every hole passes
+{ref}`NPCM <step-078>` page argues. And every hole passes
 through two chemically different oxides, cap and {term}`PSG`, whose etch
 rates differ, and — if the {ref}`CMPP <step-090>` polish landed on
 the gate caps — the holes over poly are shallower than those over
@@ -263,8 +262,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   reactor.[^pat-dps-amat]
 * Tokyo Electron, US 6,376,262 — double endpoint detection for
   layered stacks.[^pat-cn-tel]
-* Tang et al. (TI), IEDM 1985 — the local-interconnect scheme in
-  which nitride over poly is removed only at contact sites.[^tang-1985]
+* Tang et al. (TI), IEDM 1985 — a TiN {term}`local interconnect` formed
+  during self-aligned silicidation and patterned between gates and
+  junctions (abstract).[^tang-1985]
 
 ## Open questions
 

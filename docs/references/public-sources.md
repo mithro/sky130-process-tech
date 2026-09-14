@@ -6786,18 +6786,24 @@ Tier: deep dive.
 **TANG-1985** — T. E. Tang, C.-C. Wei, R. A. Haken, T. C. Holloway,
 C.-F. Wan and M. A. Douglas, "VLSI local interconnect level using
 titanium nitride", *IEDM 1985 Technical Digest*, pp. 590–593.
-<https://doi.org/10.1109/IEDM.1985.191041> The TiN local-interconnect
-scheme in which a nitride over poly is opened only where contacts are
-made. Used on steps 078, 079, 094 and 101. Tier: deep dive.
+<https://doi.org/10.1109/IEDM.1985.191041> A local interconnect made
+from the 0.1 µm TiN layer "that forms during the self-aligned titanium
+silicide process", patterned and etched "to provide local connections
+between gates and N+ and P+ junctions" (abstract); the abstract does not
+describe a nitride cap over poly. Used on steps 078, 079, 094 and 101.
+Tier: deep dive.
 Also used on the NPCM mask page.
 
 **TANG-1987** — T. E. Tang, C.-C. Wei, R. A. Haken, T. C. Holloway, L.
 R. Hite and T. G. W. Blake, "Titanium nitride local interconnect
 technology for VLSI", *IEEE Transactions on Electron Devices* **34**(3),
-682–688 (1987). <https://doi.org/10.1109/T-ED.1987.22980> The TiN
-local-interconnect scheme in which a nitride over poly is opened only
-where contacts are made. Used on steps 078, 079, 101, 102 and 103. Tier:
-deep dive.
+682–688 (1987). <https://doi.org/10.1109/T-ED.1987.22980> The full
+account of the TiN local interconnect: the TiN layer "that forms during
+the gate and junction silicidation process" is patterned into
+connections between polysilicon gates and n+ and p+ junctions, with
+20–25 % lower inverter delay and SRAM applications (abstract); the
+abstract does not describe a nitride cap over poly. Used on steps 078,
+079, 101, 102 and 103. Tier: deep dive.
 Also used on the NPCM and LI1M mask pages.
 
 **TSANG-1982** — P. J. Tsang, S. Ogura, W. W. Walker, J. F. Shepard and
