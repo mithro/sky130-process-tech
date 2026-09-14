@@ -334,7 +334,9 @@ thickness for HV Tip Implants" (0.3), "HVNTM shadowing" (0.232) and "Min
 width of tip implant opening" (0.1); and Table 8's "Photoresist tilted
 implant penetration" (0.02), "Photoresist tilted implant blocking
 distance" (0.013), "Min size of HVTip" (0.1) and "Extra CD tol for HVNTM
-to match Ram7 process" (0.015).[^pdk-03] Table 8 also gives an "HV MOSFET
+to match Ram7 process" (0.015); Table 4 gives the standard tip's "NTM
+shadowing" as 0.16 (`ntmShadowing`) beside this mask's 0.232
+(`hvntmShadowing`) ({ref}`mask-ntm`).[^pdk-03] Table 8 also gives an "HV MOSFET
 channel length" of 0.5 (`HVPCD`), which the {ref}`HVASTI <step-069>`
 page reads as long enough not to need a halo.[^pdk-03] For the plate,
 hvntm.1 and hvntm.2 set the smallest features, 0.700 µm lines and
