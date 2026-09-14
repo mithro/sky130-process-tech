@@ -36,21 +36,21 @@ on the step page; every mask is indexed on the
 
 ## What the mask defines
 
-`gds_layers.csv` describes the drawn layer `pwde` as "Regions to
-receive p-well drain-extended implants", and the rule set's function
-line reads, as published, "Defines Pwdem (FIXME)".[^pdk-06][^pdk-periph]
-The rules give no values but fix where the layer may be: `pwde` "must
-be enclosed by UHVI" (pwdem.4), the 20 V node identifier; inside UHVI it
-"must be enclosed by deep nwell" (pwdem.5); and it has a minimum
-enclosure by `pwbm` (pwdem.3).[^pdk-periph] The
-{ref}`PWDEM <step-030>` page reads these together with the `pwbm`
-description: the standard P-well is kept out of the 20 V device area at
-{ref}`PWBM <step-026>`, and `PWDEM` puts a different, lighter P-well
-back into part of it, inside a deep-N-well tub. The PDK's high-voltage
-methodology says that its very-high-voltage devices, the 16 V class,
-"need to be designed with drain extentions (DE) fabricated by lightly
-doped Nwells" and P-wells;[^pdk-hv] it does not describe the 20 V
-devices, and the step page applies the statement to them by analogy.
+`gds_layers.csv` describes the drawn layer `pwde` as "Regions to receive
+p-well drain-extended implants", and the rule set's function line reads,
+as published, "Defines Pwdem (FIXME)".[^pdk-06][^pdk-periph] The
+periphery rules give no values but fix where the layer may be: `pwde`
+"must be enclosed by UHVI" (pwdem.4), the 20 V node identifier; inside
+UHVI it "must be enclosed by deep nwell" (pwdem.5); and it has a minimum
+enclosure by `pwbm` (pwdem.3).[^pdk-periph] The {ref}`PWDEM <step-030>`
+page reads these together with the `pwbm` description: the standard
+P-well is kept out of the 20 V device area at {ref}`PWBM <step-026>`,
+and `PWDEM` puts a different, lighter P-well back into part of it,
+inside a deep-N-well tub. The PDK's high-voltage methodology says that
+its very-high-voltage devices, the 16 V class, "need to be designed with
+drain extentions (DE) fabricated by lightly doped Nwells" and
+P-wells;[^pdk-hv] it does not describe the 20 V devices, and the step
+page applies the statement to them by analogy.
 
 Which device the lighter P-well serves is an open question on the step
 pages, which read it as the drift region of the 20 V PMOS and, less
@@ -181,12 +181,13 @@ about 0.38 µm at 365 nm and NA 0.48 (our arithmetic), well below it.
 plate leaves it. The {ref}`PWDEM <step-030>` page reads a 2 µm-class
 implant resist like that of `PWBM`, on the grounds that a drift well is
 lighter but not necessarily shallower than the main well. An IBM
-retrograde-well patent uses resist "typically 1800–2500 nm in
-thickness" for its 150 keV and 45 keV P-well boron, while its 550 keV
-boron goes through a 200 nm polysilicon mask;[^pat-well-ibm] the ion range that sets the thickness is what
-SRIM computes,[^ziegler-2010] and Lee et al. measured the outgassing of
-thick resists under MeV implantation.[^lee-1996] SkyWater's resist and
-its thickness are not public. The consumables are on the
+retrograde-well patent uses resist "typically 1800–2500 nm in thickness"
+for its 150 keV and 45 keV P-well boron, while its 550 keV boron goes
+through a 200 nm polysilicon mask;[^pat-well-ibm] the ion range that
+sets the thickness is what SRIM computes,[^ziegler-2010] and Lee et al.
+measured the outgassing of thick resists under MeV
+implantation.[^lee-1996] SkyWater's resist and its thickness are not
+public. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
 **Pattern transfer.** Nothing is etched through this resist. On the

@@ -101,11 +101,11 @@ the core, and names `cfom` among its exemptions: "cfom md/mp inside
 "advSeal_6um\* OR cuPillarAdvSeal_6um\*" pcell".[^pdk-periph] The `cfom`
 add and drop purposes are therefore used, at least in those seal-ring
 cells (our reading of "md/mp" as mask drop and mask add); the PDK does
-not say what they add or remove elsewhere. Table 7
-of *Criteria & Assumptions* has two sizing rows for an emitter, "pnp_emitter sizing (S8P GSMC
-flow)" 0.05 (`PnpEmitterSzGSMC`) and "pnp_emitter sizing (other flows)"
-0.03 (`PnpEmitterSz`), without saying on which layer the sizing
-acts.[^pdk-03]
+not say what they add or remove elsewhere. Table 7 of *Criteria &
+Assumptions* has two sizing rows for an emitter, "pnp_emitter sizing
+(S8P GSMC flow)" 0.05 (`PnpEmitterSzGSMC`) and "pnp_emitter sizing
+(other flows)" 0.03 (`PnpEmitterSz`), without saying on which layer the
+sizing acts.[^pdk-03]
 
 ### In the public renders
 
@@ -132,15 +132,15 @@ or MPW-8, and on no run do more than seven dies have a count that
 another die shares — so they vary with the projects. We read the large
 minimum as fill and structures that every die of these runs carries,
 which the site counts together with the drawn active (inference; the
-site does not break the count down by layer).[^mask-renders] On MPW-1 one die accounts for 99 % of the run's
-`FOM` shapes, so the site's run totals are not comparable between runs
-({ref}`masks-renders`). The site states the limits of its images:
-"These are renders of *drawn* data, not photomask artwork: reticle
-pitch, 4x reduction, mirroring and the frame features the fab adds are
-not modelled."[^mask-renders] Its metadata carries no plate ID, so a
-render is tied to a plate in the process-steps sheet only by the
-acronym `FOM`, and the MPW-4 renders come from a different reticle set
-from the one whose plates the sheet records
+site does not break the count down by layer).[^mask-renders] On MPW-1
+one die accounts for 99 % of the run's `FOM` shapes, so the site's run
+totals are not comparable between runs ({ref}`masks-renders`). The site
+states the limits of its images: "These are renders of *drawn* data, not
+photomask artwork: reticle pitch, 4x reduction, mirroring and the frame
+features the fab adds are not modelled."[^mask-renders] Its metadata
+carries no plate ID, so a render is tied to a plate in the process-steps
+sheet only by the acronym `FOM`, and the MPW-4 renders come from a
+different reticle set from the one whose plates the sheet records
 ({ref}`masks-mpw-reticle-sets`).[^mask-renders][^steps-sheet]
 
 ## Plates and reticle sets
@@ -194,19 +194,20 @@ for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns", and that
 dark-field spaces are more sensitive than light-field lines.[^wong-1998]
 At 248 nm that threshold is about 207 nm at NA 0.6 and 177 nm at NA 0.7
-(our arithmetic): the 0.150 µm active line lies below it and the
-0.270 µm trench space above it, so on the KrF reading a CD error on the
-plate would print enlarged on the narrowest active lines and about one
-to one on the trenches (inference). *Criteria & Assumptions* gives a
-general "Min process bias 3s tolerance" of 0.032 (`PHTOL`) and no
+(our arithmetic): the 0.150 µm active line lies below it and the 0.270
+µm trench space above it, so on the KrF reading a CD error on the plate
+would print enlarged on the narrowest active lines and about one to one
+on the trenches (inference). *Criteria & Assumptions* gives a general
+"Min process bias 3s tolerance" of 0.032 (`PHTOL`) and no
 active-specific CD tolerance.[^pdk-03] Thung et al. evaluated
 "re-designs of the STI layout with Optical Proximity Correction (OPC)
 tagging" among the changes that removed defects when 0.13 µm STI was run
 on 0.18 µm-generation tools;[^thung-2016] rules-based correction of the
 kind Otto et al. describe[^otto-1994] is one form of proximity
-correction, and the PDK does not say whether `FOM` data are corrected. Unlike P1M, `FOM` is not among the layers of the finer grid
-rule x.1a, whose 0.001 ("mm") grid is for "p1m.md (OPC)" and the
-"mask data for p1m, met1, via, met2"; x.1b gives 0.005 for all other
+correction, and the PDK does not say whether `FOM` data are corrected.
+Unlike P1M, `FOM` is not among the layers of the finer grid rule x.1a,
+whose 0.001 ("mm") grid is for "p1m.md (OPC)" and the "mask data for
+p1m, met1, via, met2"; x.1b gives 0.005 for all other
 layers.[^pdk-periph]
 
 **Pattern density.** The plate is also a density map for the polish
@@ -246,28 +247,28 @@ happens as an open question.
 
 **Alignment.** On the {ref}`FOM <step-004>` page's reading there is no
 earlier pattern to align to, and the plate prints the marks that later
-levels register to; the step page leaves a separate zero-mark step
-open. The implant masks that follow align to the trenches on their step
-pages' readings ({ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`), and
-the poly mask to the same marks ({ref}`mask-p1m`). Edmark and
-Ausschnitt calibrated stepper overlay by aligning to a latent
-image,[^edmark-1985] and van Haren et al. show how the placement
-accuracy of wafer alignment marks limits layer-to-layer
-overlay.[^van-haren-2019] The margins that depend on the placement of
-this level are those of the poly rules against diffusion — 0.130 of
-poly beyond diffusion (poly.8) and 0.250 of diffusion beyond poly
-(poly.7), whose unit cells are blank in the published table — and of the implant and well rules against it, such as
-difftap.8's 0.180 µm N-well enclosure of p+ diffusion.[^pdk-periph]
-The PDK's *Error Messages* page, which describes "many of the automated
-DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", lists two checks named `cfom.nikon`, "FOMmk in
-the nikon cross has the wrong polarity" and "FOMmk is missing from the
-nikon cross in the layout", and the same pair for most other mask
+levels register to; the step page leaves a separate zero-mark step open.
+The implant masks that follow align to the trenches on their step pages'
+readings ({ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`), and the poly
+mask to the same marks ({ref}`mask-p1m`). Edmark and Ausschnitt
+calibrated stepper overlay by aligning to a latent image,[^edmark-1985]
+and van Haren et al. show how the placement accuracy of wafer alignment
+marks limits layer-to-layer overlay.[^van-haren-2019] The margins that
+depend on the placement of this level are those of the poly rules
+against diffusion — 0.130 of poly beyond diffusion (poly.8) and 0.250 of
+diffusion beyond poly (poly.7), whose unit cells are blank in the
+published table — and of the implant and well rules against it, such as
+difftap.8's 0.180 µm N-well enclosure of p+ diffusion.[^pdk-periph] The
+PDK's *Error Messages* page, which describes "many of the automated DRC
+rules that are checked by SkyWater as part of the acceptance criteria
+for GDS data", lists two checks named `cfom.nikon`, "FOMmk in the nikon
+cross has the wrong polarity" and "FOMmk is missing from the nikon cross
+in the layout", and the same pair for most other mask
 layers.[^pdk-errors] The page does not say what the "nikon cross" is or
 where it sits; we read it as a structure on these mask layers whose mask
-data must have the right polarity (inference from the
-message wording), which does not settle whether `FOM` carries the
-zero-level alignment marks.
+data must have the right polarity (inference from the message wording),
+which does not settle whether `FOM` carries the zero-level alignment
+marks.
 
 (mask-fom-steps)=
 ## Steps that use this mask
@@ -285,9 +286,9 @@ Steps:
 * {ref}`STINITE <step-005>` — etches the nitride and pad oxide through
   the resist windows, stopping on silicon.
 * {ref}`STIE <step-006>` — etches the trenches into the silicon, on its
-  page's reading commonly with the resist still on top, and strips the resist
-  and cleans the trench; the step list used in this reference has no
-  separate strip step.
+  page's reading commonly with the resist still on top, and strips the
+  resist and cleans the trench; the step list used in this reference has
+  no separate strip step.
 
 The next step, {ref}`DNM <step-007>`, is itself the next mask step: on
 its step page's reading it coats a new resist on the etched but unfilled
@@ -446,8 +447,9 @@ space.
 * Whether the plate also carries the zero-level alignment marks, or a
   separate zero-mark step does, is not public, and the Error Messages
   page does not explain its "nikon cross" checks.[^pdk-errors]
-* The renders do not say how much of each die's shape count is fill,
-  and the fill layer 23:28 is not in `gds_layers.csv`.[^mask-renders][^pdk-06]
+* The renders do not say how much of each die's shape count is fill, and
+  the fill layer 23:28 is not in
+  `gds_layers.csv`.[^mask-renders][^pdk-06]
 * What the plate number `020` encodes is not stated, and no public
   source lists the `FOM` plate of the original MPW-4 set
   `5CS8010AC`.[^steps-sheet][^mask-renders]

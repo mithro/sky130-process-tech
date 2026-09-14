@@ -323,9 +323,9 @@ power rails (requirement based on exp data)" of 0.28
 (`LvtEnc_forPowerRail`).[^pdk-03][^pdk-periph] The Error Messages page
 adds `clvtnm.1` and `clvtnm.2` at 0.38 for the created layer and gives
 lvtn.3b as 0.19 (above).[^pdk-errors] For the plate, lvtn.1a, lvtn.2 and
-the two area rules set the smallest features — 0.380 µm lines, spaces and islands of
-0.265 µm² — and the gate spacing and enclosure rules set where its edges
-may fall relative to the active and poly patterns.
+the two area rules set the smallest features — 0.380 µm lines, spaces
+and islands of 0.265 µm² — and the gate spacing and enclosure rules set
+where its edges may fall relative to the active and poly patterns.
 
 ## Related pages
 
@@ -419,10 +419,10 @@ may fall relative to the active and poly patterns.
   implant, is not public; the step pages favour the block reading.
 * The operation that makes the `clvtnm` plate data is not published.
   Table F2b marks created `LVTNM` shapes in rows the `lvtn` function
-  line does not name,[^pdk-06] the Error Messages page checks a
-  created layer it does not define,[^pdk-errors] and the renders site renders one expression for
-  them whose note contradicts it;[^mask-renders] which, if either,
-  matches the plate is not public.
+  line does not name,[^pdk-06] the Error Messages page checks a created
+  layer it does not define,[^pdk-errors] and the renders site renders
+  one expression for them whose note contradicts it;[^mask-renders]
+  which, if either, matches the plate is not public.
 * The plate's tone, blank, absorber and magnification, the resist and
   its thickness, and the exposure tool are not public; the i-line
   reading rests on the 0.380 µm rules.

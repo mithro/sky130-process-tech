@@ -2,18 +2,18 @@
 # HVTPM — High Vt PCh\*
 
 The high-Vt P-channel mask is the {term}`reticle` of the second
-threshold implant of SKY130's 1.8 V PMOS: on the
-{ref}`HVTPM <step-022>` page's reading, the resist printed through it at
-step 22 is opened over the PMOS channels that are to have a raised
-threshold, the implants {ref}`PCHI <step-023>` and
-{ref}`PNCHI <step-024>` pass through the same openings, and the resist
-is stripped at {ref}`PCHIS <step-025>`. The "V" in its name is a
-threshold, not a voltage class. The public record disagrees about what
-the plate carries: the step page follows the PDK's description of the
-drawn layer `hvtp`, while, on our reading, the PDK's mask generation
-table, its DRC error messages and one public derivation from the drawn
-tape-out data all point to openings over most low-voltage N-well. This
-page gathers what public sources say about the mask itself — its PDK entry and layers, the plates the process-steps sheet records
+threshold implant of SKY130's 1.8 V PMOS: on the {ref}`HVTPM <step-022>`
+page's reading, the resist printed through it at step 22 is opened over
+the PMOS channels that are to have a raised threshold, the implants
+{ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>` pass through the same
+openings, and the resist is stripped at {ref}`PCHIS <step-025>`. The "V"
+in its name is a threshold, not a voltage class. The public record
+disagrees about what the plate carries: the step page follows the PDK's
+description of the drawn layer `hvtp`, while, on our reading, the PDK's
+mask generation table, its DRC error messages and one public derivation
+from the drawn tape-out data all point to openings over most low-voltage
+N-well. This page gathers what public sources say about the mask itself
+— its PDK entry and layers, the plates the process-steps sheet records
 for the MPW runs, what the public renders of those runs show, the
 lithography it needs and the rules that constrain it. How the step is
 performed is on the step page; every mask is indexed on the
