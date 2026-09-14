@@ -349,9 +349,10 @@ implants.[^pdk-03]
   for the field-oxide mask, for which it is the alternative.
 * {ref}`mask-capm` and {ref}`mask-cap2m` — per-mask pages for the two
   MiM capacitor masks, both assigned to this class.
-* {ref}`mask-ntm`, {ref}`mask-hvntm`, {ref}`mask-ldntm` and
-  {ref}`mask-psdm` — per-mask pages for the N-tip, high-voltage N-tip,
-  lightly doped N-tip and P+ implant masks, assigned to this class; {ref}`mask-npcm` for the nitride poly
+* {ref}`mask-ntm`, {ref}`mask-hvntm`, {ref}`mask-ldntm`,
+  {ref}`mask-psdm` and {ref}`mask-nsdm` — per-mask pages for the N-tip,
+  high-voltage N-tip, lightly doped N-tip, P+ and N+ implant masks,
+  assigned to this class; {ref}`mask-npcm` for the nitride poly
   cut mask, for which it is the alternative.
 * {ref}`mask-mm3` and {ref}`mask-mm4` — per-mask pages for the metal-3 and
   metal-4 masks, for which the step pages leave the class open between

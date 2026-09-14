@@ -350,7 +350,7 @@ smallest periphery features, 0.380 µm lines and spaces with islands of
 * {ref}`PSDM <step-081>`, {ref}`PSDI <step-082>`,
   {ref}`2PSDI <step-083>` and {ref}`PDIS <step-084>` — the mask step, the
   two implants and the strip.
-* {ref}`NSDM <step-085>` — the complementary N+ mask;
+* {ref}`mask-nsdm` — the complementary N+ mask;
   {ref}`RTAD <step-088>` — the source/drain anneal.
 * {ref}`mask-npcm` — the nitride cut through which the implant reaches the
   poly heads; {ref}`mask-ntm` — the tip mask of the same module.
