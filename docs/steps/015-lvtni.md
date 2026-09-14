@@ -120,8 +120,12 @@ below are typical or taken from contemporaneous patents.
   sacrificial gate oxide in doses between 1×10¹² and 1×10¹³ atoms/cm² …
   at implant energies between 50 and 100 keV";[^pat-vt-lsi] an AMD
   patent gives "approximately 10-20 KeV for boron or 45-90 KeV for BF₂
-  at a concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a channel
-  implant.[^pat-vt-amd]
+  at a concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a laterally
+  doped channel implant made after gate formation with the gate pillars
+  as a self-aligned mask — a different placement from this pre-gate
+  implant — and describes a prior-art threshold adjust implant at "about
+  5-to-15 KeV at a concentration of about 8×10¹²
+  ions/cm²".[^pat-vt-amd]
 * **Tilt and twist.** A few degrees of tilt with twist to suppress
   {term}`channelling` — "most implantation is carried out a few degrees
   off-axis";[^wiki-implant] the PDK's assumptions table records 7° as
@@ -241,8 +245,9 @@ below are typical or taken from contemporaneous patents.
   BF₂/indium {term}`Vt` adjusts; counter-doped low-Vt channel.[^pat-vt-rrr]
 * Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
   boron 1e12–1e13 cm⁻² at 50–100 keV.[^pat-vt-lsi]
-* Krivokapic and Milic (AMD), US 6,238,982 — channel implant
-  energies/doses.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds by
+  laterally doped channel implants self-aligned to the gate
+  pillars.[^pat-vt-amd]
 * Shahidi et al. (IBM), *IEEE EDL* 1993 — indium channel implants for
   steep retrograde NMOS channels.[^shahidi-1993]
 * Huang et al., *IEEE TED* 2000 — an 80 nm DTMOS with an indium

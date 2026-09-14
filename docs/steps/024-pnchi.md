@@ -110,11 +110,12 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   of a few keV and a {term}`projected range` of tens of nanometres. Public
   examples: BF₂ "at an energy of from about 10 to about 100
   kilo-electron volts (keV)" for a channel implant in a Cypress {term}`SONOS`
-  patent;[^pat-04] "45-90 KeV for BF₂" in an AMD channel-implant
-  example.[^pat-vt-amd]
+  patent;[^pat-04] "45-90 KeV for BF₂" in an AMD laterally doped
+  channel implant made after gate formation with the gate pillars as a
+  self-aligned mask (a different placement).[^pat-vt-amd]
 * **Dose.** Light: "a dose of from about 1e12 cm⁻² to about 1e14 cm⁻²"
   in the Cypress example;[^pat-04] "about 1.0 to 2.5×10¹³ ions/cm²" in
-  the AMD example.[^pat-vt-amd] A compensating trim in a high-Vt device
+  the AMD laterally doped channel implant.[^pat-vt-amd] A compensating trim in a high-Vt device
   would sit at the bottom of these ranges (inference).
 * **Tilt and twist.** 7° with twist;[^wiki-implant] with BF₂ the
   self-amorphisation makes channelling less of a concern than with bare
@@ -207,7 +208,8 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   trade-offs of super-steep retrograde channels.[^thompson-1996]
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — "boron type of
   implant such as BF2, or Indium".[^pat-vt-rrr]
-* Krivokapic and Milic (AMD), US 6,238,982 — BF₂ 45–90 keV, 1–2.5 ×
+* Krivokapic and Milic (AMD), US 6,238,982 — a laterally doped channel
+  implant self-aligned to the gate pillars, BF₂ 45–90 keV, 1–2.5 ×
   10¹³ cm⁻².[^pat-vt-amd]
 * Wang et al., *J. Electrochem. Soc.* 1997 — fluorine's effect on boron
   diffusion after BF₂ implantation through oxide and {term}`RTA`, directly
