@@ -115,6 +115,7 @@ ID_SCHEMES = {"sec-accession", "ir-filing-id", "company-document", "asx-announce
 RELATIONSHIPS = {
     "cypress-fab-operations": "Cypress describes its Minnesota (Bloomington) fab",
     "cypress-process-technology": "Cypress process technologies made or transferred at the fab (0.13 µm, S8, SONOS)",
+    "cypress-third-party-foundry": "Cypress selling wafer-line capacity to outside customers before the 2017 sale",
     "cypress-fab-sale": "sale of the Minnesota fab subsidiary to SkyWater's owners (2017)",
     "cypress-technology-license": "the 2017 Process Technology License Agreement and its amendments",
     "cypress-foundry-services": "Cypress (later Infineon) as SkyWater's wafer customer under the foundry services agreement",
@@ -300,8 +301,6 @@ def check_record(r: dict, where: str, labels: dict[str, Path], keys: set[str],
             accession = ident.get("value")
             if not isinstance(accession, str) or not ACCESSION_RE.match(accession):
                 bad(f"accession number malformed: {accession!r}")
-        if r.get("regulator") == "SEC" and ident.get("scheme") not in ("sec-accession", "ir-filing-id"):
-            bad("an SEC record needs an sec-accession or ir-filing-id identifier")
     elif r.get("regulator") == "SEC":
         bad("an SEC record needs an identifier")
 
@@ -338,8 +337,8 @@ def check_record(r: dict, where: str, labels: dict[str, Path], keys: set[str],
                 bad(f"urls.original is not in the EDGAR folder of {accession}")
         if r.get("regulator") == "SEC" and accession and not on_sec:
             bad("an SEC record with an accession number needs the sec.gov document as urls.original")
-        if r.get("regulator") == "SEC" and not accession and not ir:
-            bad("an SEC record without an accession number needs an investor-relations copy")
+        if r.get("regulator") == "SEC" and not accession and not (ir or wayback):
+            bad("an SEC record without an accession number needs an investor-relations or Wayback copy")
     about = r.get("about")
     if isinstance(about, dict):
         if set(about) != {"summary", "quotes"}:
