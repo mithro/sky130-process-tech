@@ -162,9 +162,9 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 * Kern, *J. Electrochem. Soc.* 1990 — the history and chemistry of the
   RCA clean.[^kern-1990]
 * ITRS 2001, *Front End Processes* — surface preparation.[^itrs-01]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the measured
-  crust-and-popping mechanism of ion-implanted resist that every implant
-  strip has to defeat.[^fujimura-1989]
+* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the carbonised
+  layer of high-dose implanted resist, the residues of O₂ ashing and a
+  two-step ashing process (abstract).[^fujimura-1989]
 * Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990 — why nitrogen
   is added to oxygen in downstream ashing.[^fujimura-1990]
 * Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1994 —
