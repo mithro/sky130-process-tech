@@ -273,7 +273,8 @@ and rpm.2 would set their smallest features (inference).
   strip.
 * {ref}`mask-rpm` — the resistor protect mask, whose drawn layer the step
   page derives this mask from and whose islands it complements.
-* {ref}`URPM <step-055>` — the ultra-high-resistor mask that follows.
+* {ref}`URPM <step-055>` and {ref}`mask-urpm` — the ultra-high-resistor
+  mask that follows and its page.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the masks without a `masks.csv` entry and the plate that was
   never rendered.
