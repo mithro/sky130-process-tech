@@ -321,8 +321,8 @@ implant forms.[^pdk-03] Table 3d gives punch-through spacings "n+ - n+ or
 p+-p+" of 0.23 (`DPTS`) and "n+ in pwell to nwell" of 0.15 (`PNPTS`), and
 Table 3e a "Minimum n+ or p+ - nwell spacing to prevent latch-up" of 0.23
 (`NPNWLU`).[^pdk-03] Table F3a of the *Summary of Key Periphery Rules*
-gives `n/psdm` a width of 0.380, a spacing of 0.380 and "Yes" under
-"Manual merge ?", and, in its diff and tap columns, spacings of 0.130 and
+gives `n/psdm` a width of 0.380, a spacing of 0.380 and "Yes" in the
+"Manual" (merge) column, and, in its diff and tap columns, spacings of 0.130 and
 enclosures of 0.130, against the 0.125 µm of nsd.5a and nsd.5b (our
 reading of the columns; the PDK does not reconcile
 them).[^pdk-summary][^pdk-periph] For the plate, nsd.1 and nsd.2 set the

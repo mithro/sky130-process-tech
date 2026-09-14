@@ -297,9 +297,10 @@ mask; Table 4's "poly cap after SPE" of 0.2 and "poly thickness" of 0.18,
 in its column headed "Value (um)", describe the stack the cut
 opens.[^pdk-03] Table F3a of the *Summary of Key Periphery Rules* gives
 `npc` a width of 0.270, a spacing of 0.270 to itself and 0.090 to poly
-and "Yes" under "Manual merge ?", and gives the enclosure of `poly_licon`
-by `npc` as 0.100 and the spacing of `licon` to `npc` as
-0.090.[^pdk-summary] The Error Messages page adds the core enclosure of
+and "Yes" in the "Manual" (merge) column, and gives the enclosure of
+`poly_licon` by `npc` as 0.100 and the spacing of `licon` to `npc` as
+0.090 (our reading of the columns, whose spacing and enclosure labels
+sit in the table's first row).[^pdk-summary] The Error Messages page adds the core enclosure of
 0.045 (`npcon.c6`).[^pdk-errors] For the plate the smallest features are
 0.270 µm openings on a 0.270 µm space, placed to within 0.090 µm of the
 gates.
