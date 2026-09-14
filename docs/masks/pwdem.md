@@ -47,9 +47,10 @@ enclosure by `pwbm` (pwdem.3).[^pdk-periph] The
 description: the standard P-well is kept out of the 20 V device area at
 {ref}`PWBM <step-026>`, and `PWDEM` puts a different, lighter P-well
 back into part of it, inside a deep-N-well tub. The PDK's high-voltage
-methodology says that the very-high-voltage devices "need to be designed
-with drain extentions (DE) fabricated by lightly doped Nwells" and
-P-wells.[^pdk-hv]
+methodology says that its very-high-voltage devices, the 16 V class,
+"need to be designed with drain extentions (DE) fabricated by lightly
+doped Nwells" and P-wells;[^pdk-hv] it does not describe the 20 V
+devices, and the step page applies the statement to them by analogy.
 
 Which device the lighter P-well serves is an open question on the step
 pages, which read it as the drift region of the 20 V PMOS and, less
@@ -90,7 +91,11 @@ since the layer and its rules exist. Table 2 of *Criteria & Assumptions*
 gives `PWDEMCD` 0.84 and `PWDEMCDSP` 1.27, the same values as the
 N-well and P-well block rows,[^pdk-03] while the `pwdem` rules
 themselves give "N/A" for every value;[^pdk-periph] the PDK does not say
-which of the two applies to the plate. No periphery rule outside the
+which of the two applies to the plate. The PDK's *Error Messages* page,
+which describes "many of the automated DRC rules that are checked by
+SkyWater as part of the acceptance criteria for GDS data", gives one
+value, under the rule name `pwde.6`: "1.00 min. enclosure of pwde_uhvi
+by dnwell_uhvi".[^pdk-errors] No periphery rule outside the
 `pwdem` set, and no criterion of *Criteria & Assumptions* besides Table
 2's row, names `pwde` or `PWDEM`,[^pdk-periph][^pdk-03] and the PDK
 publishes no operation from
@@ -201,10 +206,12 @@ public.
 **Overlay.** The {ref}`PWDEM <step-030>` page reads the drift-well edge
 against the trench and, later, the poly as reliability-critical, citing
 the PDK's instruction that "Under no circumstances the poly/extended
-drain overlap and field oxide length should be changed".[^pdk-hv] The
-PDK publishes no value for the placement of `pwde` against those layers
-(the `pwdem` rules are "N/A").[^pdk-periph] Ludikhuize reviews how
-RESURF drift regions are dimensioned.[^ludikhuize-2000]
+drain overlap and field oxide length should be changed" (said of the
+16 V devices).[^pdk-hv] The PDK publishes no value for the placement of
+`pwde` against those layers (the `pwdem` rules are "N/A");[^pdk-periph]
+its one published `pwde` value, in the Error Messages page, is the
+1.00 enclosure by deep N-well.[^pdk-errors] Ludikhuize reviews RESURF
+technology, including breakdown and on-resistance.[^ludikhuize-2000]
 
 (mask-pwdem-steps)=
 ## Steps that use this mask
@@ -234,8 +241,8 @@ ambient, with the resist already gone. The next mask step is
 
 ## Design rules and critical dimensions
 
-The `pwdem` rules of the periphery rules; none carries a published
-value.[^pdk-periph]
+The `pwdem` rules of the periphery rules, which give no values
+("N/A").[^pdk-periph]
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -246,8 +253,11 @@ value.[^pdk-periph]
 | pwdem.5 | "pwdem.dg inside UHVI must be enclosed by deep nwell" | N/A |
 | pwdem.6 | "Min enclosure of pwdem:dg by deep nwell inside UHVI" | N/A |
 
-Table 2 of *Criteria & Assumptions* gives `PWDEMCD` 0.84 and
-`PWDEMCDSP` 1.27, under the layer name "P-Well Drain Extended".[^pdk-03]
+The Error Messages page gives a value for the last of them, under the
+name `pwde.6`: "1.00 min. enclosure of pwde_uhvi by
+dnwell_uhvi".[^pdk-errors] Table 2 of *Criteria & Assumptions* gives
+`PWDEMCD` 0.84 and `PWDEMCDSP` 1.27, under the layer name "P-Well Drain
+Extended".[^pdk-03]
 The published drain-extended PMOS rules (`depmos`) are headed "Defines
 rules for the 16V Drain extended NMOS devices" and place the drain in an
 N-well hole — for example "Min enclosure of de_pFet_drain by nwell hole"
@@ -255,9 +265,9 @@ N-well hole — for example "Min enclosure of de_pFet_drain by nwell hole"
 as rules for the 16 V PMOS, not the 20 V device that Table F2b ties to
 this mask (inference from the rule wording). The uhvi rules require that
 "UHVI must enclose dnwell" (uhvi.6.-), the tub that pwdem.5 puts the
-layer in.[^pdk-periph] For the plate, then, the PDK publishes only
-Table 2's pair; the `pwdem` geometry that would set its features is not
-public.
+layer in.[^pdk-periph] For the plate, then, the PDK publishes Table 2's
+pair and the 1.00 enclosure by deep N-well; it gives no minimum width or
+spacing for `pwde` itself.
 
 ## Related pages
 
@@ -289,8 +299,10 @@ public.
 * SkyWater PDK, *Criteria & Assumptions* — `PWDEMCD`/`PWDEMCDSP`.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — the `pwdem` rules, the `depmos` and
   `uhvi` rules.[^pdk-periph]
-* SkyWater PDK, *High Voltage Methodology* — drain extensions made of
-  lightly doped wells.[^pdk-hv]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the `pwde.6`
+  value.[^pdk-errors]
+* SkyWater PDK, *High Voltage Methodology* — drain extensions of the
+  16 V devices made of lightly doped wells.[^pdk-hv]
 * SkyWater PDK, *Device Details* — the 20 V PMOS.[^pdk-07]
 * SkyWater PDK Authors, test-tile pad documentation — the 20 V PMOS
   structures and their cell names.[^raw-data-testtile-pads]
@@ -319,11 +331,12 @@ public.
 * Mei et al., VLSI Symposium 1994 — N- and P-channel extended-drain
   RESURF devices in one CMOS process.[^mei-1994]
 * Appels and Vaes, IEDM 1979 — the RESURF principle.[^appels-1979]
-* Ludikhuize, ISPSD 2000 — a review of RESURF technology.[^ludikhuize-2000]
+* Ludikhuize, ISPSD 2000 — a review of RESURF technology, including
+  breakdown and on-resistance.[^ludikhuize-2000]
 * Mitros et al., *IEEE TED* 2001 — drain-extended MOS transistors in a
   0.18 µm logic process.[^mitros-2001]
-* Efland, Tsai and Pendharkar, IEDM 1998 — integrating LDMOS into logic
-  CMOS.[^efland-1998]
+* Efland, Tsai and Pendharkar, IEDM 1998 — a review of LDMOS structures
+  in BiCMOS power technologies.[^efland-1998]
 * Mitros (Texas Instruments), US 6,660,603 — drain extensions made from
   lightly doped wells, with implant conditions.[^pat-demos-ti]
 * Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde wells
@@ -347,9 +360,10 @@ public.
   why;[^steps-sheet] whether the other runs had one is not public, and
   no rendered die draws `pwde`, so the renders cannot
   tell.[^mask-renders]
-* The `pwdem` rules publish no values, so the plate's minimum features
-  and placement margins are not known beyond Table 2's
-  pair.[^pdk-periph][^pdk-03]
+* The periphery rules publish no values for `pwdem`; beyond Table 2's
+  pair and the Error Messages page's 1.00 enclosure by deep N-well, the
+  PDK does not state the plate's minimum features or placement
+  margins.[^pdk-periph][^pdk-03][^pdk-errors]
 * The plate's tone, blank, absorber and magnification, the resist and
   its thickness, and the exposure tool are not public.
 * What the plate number `026` encodes is not stated.[^steps-sheet]
@@ -377,6 +391,10 @@ public.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
