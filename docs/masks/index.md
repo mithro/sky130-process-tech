@@ -123,6 +123,7 @@ urpm
 p1m
 ntm
 hvntm
+ldntm
 licm1
 li1m
 ctm1
@@ -174,7 +175,7 @@ In the table:
 | {ref}`P1M <step-061>` | Poly 1, {ref}`P1M <mask-p1m>` — `X` | `cp1m` mask 28:0; mask add 33:43, mask drop 33:42, waffle drop 33:24 | `poly` 66:20 (also purposes gate 66:9, resistor 66:13) | {ref}`P1ME <step-062>` | `P1MCD` N/A / `P1MCDSP` 0.14; "Endcap/Gap" `P1G` 0.15 / 0.21 |
 | {ref}`NTM <step-064>` | N-tip Implant, {ref}`NTM <mask-ntm>` — `X` | `cntm` mask 27:0; drawing 26:20, mask add 26:21, mask drop 26:22 | no drawn `ntm` layer; derived from the device layers *(inference)* | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`; strip {ref}`ASTIS <step-067>` | `NTMCD` 0.84 / `NTMCDSP` 0.7 |
 | {ref}`HVNTM <step-068>` | High Volt. N-tip, {ref}`HVNTM <mask-hvntm>` — `X` | `chvntm` mask 39:0; drawing 38:20 | `hvntm` 125:20, "OR-ed with the CL" (the `hvntm` rules)[^pdk-periph] | {ref}`HVASTI <step-069>`; strip {ref}`HVASTIS <step-070>` | `HVNTMCD` 0.7 / `HVNTMCDSP` 0.7 |
-| {ref}`LDNTM <step-071>` | Lightly Doped N-tip, LDNTM — `X` | `cldntm` mask 11:0 | `ldntm` 11:44 | {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`; strip {ref}`LDASTIS <step-074>` | `LDNTMCD` 0.7 / `LDNTMCDSP` 0.7 |
+| {ref}`LDNTM <step-071>` | Lightly Doped N-tip, {ref}`LDNTM <mask-ldntm>` — `X` | `cldntm` mask 11:0 | `ldntm` 11:44 | {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`; strip {ref}`LDASTIS <step-074>` | `LDNTMCD` 0.7 / `LDNTMCDSP` 0.7 |
 | {ref}`NPCM <step-078>` | Nitride Poly Cut, NPCM — `X` | `cnpc` mask 49:0; drawing 44:20 | `npc` 95:20 | {ref}`NPCME <step-079>` | `NPCMCD` 0.27 / `NPCMCDSP` 0.27 |
 | {ref}`PSDM <step-081>` | P+ Implant, PSDM — `X` | `cpsdm` mask 32:0; drawing 31:20, mask add 31:21, mask drop 31:22 | `psdm` 94:20 | {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`; strip {ref}`PDIS <step-084>` | `PSDMCD` 0.38 / `PSDMCDSP` 0.38 |
 | {ref}`NSDM <step-085>` | N+ Implant, NSDM — `X` | `cnsdm` mask 30:0; drawing 29:20, mask add 29:21, mask drop 29:22 | `nsdm` 93:44 | {ref}`NSDI <step-086>`; strip {ref}`NSDIS <step-087>` | `NSDMCD` 0.38 / `NSDMCDSP` 0.38 |

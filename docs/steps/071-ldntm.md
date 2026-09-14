@@ -161,6 +161,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   {ref}`SAGD <step-048>` and {ref}`P1ME <step-062>`.
 * Sibling tip masks: {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`;
   activation: {ref}`TIPRTAD <step-075>`.
+* Mask page: {ref}`LDNTM <mask-ldntm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
