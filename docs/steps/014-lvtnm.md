@@ -183,6 +183,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   activated at {ref}`RTAI <step-034>`.
 * Previous mask: {ref}`DNM <step-007>`; next mask:
   {ref}`NWM <step-017>`.
+* Mask page: {ref}`LVTNM <mask-lvtnm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References

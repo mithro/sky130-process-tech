@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1691
+written page has exactly one entry here; the inventory holds 1693
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -74,7 +74,7 @@ scanner and coat/develop track pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the substrates material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -113,7 +113,7 @@ NWM, HVTPM, LVTNM, HVTRM, NTM, HVNTM, LDNTM, PSDM, NSDM, TUNM, ONOM,
 LVOM, RPM, NPCM, P1M, LICM1, LI1M, CTM1, MM1–MM5, VIM, VIM2–VIM4, NSM,
 PDM, CU1M, PMM2, …). This is the public basis for the mask index and
 for the order of the lithography steps. Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **PDK-06** — *Layers Reference* and `gds_layers.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
@@ -121,7 +121,7 @@ Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask p
 GDS layer/purpose numbers and the process meaning of each drawn layer
 (e.g. `vhvi` "used to identify nodes that operate at 12V nominal (16V
 max)"). No thicknesses. Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **PDK-07** — *Device Details* pages and per-device cross-section drawings.
 <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>;
@@ -141,7 +141,7 @@ etcher pages.
 Also used on the PECVD and PVD cluster tool pages.
 Tier: cross-check.
 Also used on the sputter targets material page.
-Also used on the DNM and VIM4 mask pages.
+Also used on the DNM, VIM4 and LVTNM mask pages.
 
 **PDK-08** — *Parasitic Layout Extraction* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
@@ -193,7 +193,7 @@ dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
 (enclosure rules between deep N-well and N-well); poly.2 (spacing of
 poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
 Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **PDK-HV** — *High Voltage Methodology* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>.
@@ -389,7 +389,7 @@ Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
 or scanner pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -419,7 +419,7 @@ the same wording as the notes in the process-steps sheet's "Run Mask
 IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
 on the mask index, the HVTPM step page and the sky130B ReRAM overview.
 Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 ## 3. SkyWater Technology corporate sources
 
@@ -515,7 +515,7 @@ Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
 Also used on the etch and chamber-clean gases material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -1386,7 +1386,7 @@ large mask error factors", and the metrology crosscut calls the "20%
 measurement precision to process tolerance metric" "somewhat relaxed".
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
@@ -1738,7 +1738,7 @@ and the implant category page, and on the medium-current, high-current
 and high-energy implanter pages. Tier: high-level.
 Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
-Also used on the DNM mask page.
+Also used on the DNM and LVTNM mask pages.
 
 **WIKI-KEITHLEY** — Wikipedia, *Keithley Instruments*.
 <https://en.wikipedia.org/wiki/Keithley_Instruments> Company article on
@@ -1783,7 +1783,7 @@ of STI. Used on the oxidation category page. Tier: high-level.
 absorber and pellicles. Used on the lithography category page. Tier:
 high-level.
 Also used on the lithography materials material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
 <https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
@@ -1805,6 +1805,7 @@ Tier: high-level.
 <https://en.wikipedia.org/wiki/Multi-threshold_CMOS> Why several
 thresholds are offered and how they are set. Used on steps 014, 015,
 020, 022, 023 and 045. Tier: high-level.
+Also used on the LVTNM mask page.
 
 **WIKI-NA** — Wikipedia, *Numerical aperture*.
 <https://en.wikipedia.org/wiki/Numerical_aperture> Numerical aperture
@@ -2370,6 +2371,7 @@ and PMOS defined by masked Vt-adjust implants: "an implant of Arsenic"
 as a first adjustment, a "boron type of implant such as BF2, or
 Indium" as a second, and a "counter-doped channel region". Tier: deep
 dive.
+Also used on the LVTNM mask page.
 
 **PAT-VT-LSI** — US 5,963,801 A, *"Method of forming retrograde well
 structures and punch-through barriers using low energy implants"*,
@@ -2531,18 +2533,21 @@ over a lateral distance on the order of a micrometer"; models a
 "2.3 µm-thick pwell mask".
 Also used on the high-energy implanter page.
 Tier: deep dive.
+Also used on the LVTNM mask page.
 
 **SHEU-2006** — Y.-M. Sheu, K.-W. Su, S. Tian, S.-J. Yang, C.-C. Wang,
 M.-J. Chen and S. Liu, *"Modeling the Well-Edge Proximity Effect in
 Highly Scaled MOSFETs"*, IEEE Transactions on Electron Devices,
 vol. 53, no. 11, pp. 2792–2798, 2006, DOI 10.1109/TED.2006.884070. A
 compact model of the well-edge proximity effect. Tier: deep dive.
+Also used on the LVTNM mask page.
 
 **DRENNAN-2006** — P. G. Drennan, M. Kniffin and D. Locascio,
 *"Implications of Proximity Effects for Analog Design"*, IEEE Custom
 Integrated Circuits Conference 2006, pp. 169–176,
 DOI 10.1109/CICC.2006.320869. Designer-side consequences of the well
 proximity effect. Tier: deep dive.
+Also used on the LVTNM mask page.
 
 **MORRIS-2000** — W. Morris and L. Rubin, *"Technical and economic
 considerations for retrograde well and channel implants"*, 2000
@@ -2690,6 +2695,7 @@ Devices*, 2nd ed., Cambridge University Press, 2009,
 ISBN 978-0-521-83294-6, DOI 10.1017/CBO9781139195065. Threshold voltage
 versus channel doping, retrograde channels, body effect. Tier: deep
 dive.
+Also used on the LVTNM mask page.
 
 **WEI-1998** — L. Wei, Z. Chen, M. Johnson, K. Roy and V. De, *"Design
 and optimization of low voltage high performance dual threshold CMOS
@@ -2731,14 +2737,14 @@ thick-resist imaging.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
 Overlay budgets and non-critical-layer tool choice.
 Also used on the i-line stepper or scanner page.
 Tier: deep dive.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the DNM, P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **ROCHE-1985** — D. Roche, J. F. Michaud and M. Bruel, *"Outgassing of
 Photoresist During Ion Implantation"*, MRS Proceedings, vol. 45, 1985,
@@ -3446,7 +3452,7 @@ Instruments and Methods in Physics Research B* **268**(11–12), 1818–1823
 (2010). <https://doi.org/10.1016/j.nimb.2010.02.091> SRIM, the tool used
 to compute the ion range in resist that sets the mask thickness. Used on
 step 007 and the implant category page. Tier: deep dive.
-Also used on the DNM mask page.
+Also used on the DNM and LVTNM mask pages.
 
 **ZULEHNER-1983** — W. Zulehner, "Czochralski growth of silicon",
 *Journal of Crystal Growth* **65**(1–3), 189–213 (1983).
@@ -11001,7 +11007,7 @@ single-machine overlay ≤ 40 nm and ≤ 80 nm matched to another /275,
 illuminator with conventional and annular modes, and phase-modulated
 TTL alignment. Used on the i-line stepper or scanner page. Tier:
 cross-check (vendor statement).
-Also used on the DNM mask page.
+Also used on the DNM and LVTNM mask pages.
 
 **ASML-PAS5500-450F** — ASML, *PAS 5500/450F i-Line Step-and-Scan*,
 refurbished systems data sheet, 2019.
@@ -14419,7 +14425,7 @@ but increases rapidly when the critical dimension (CD) is less than 0.5
 contacts", dark-field spaces are more sensitive than light-field lines,
 and attenuated PSMs behave like chrome-on-glass masks. Used on the DNM
 mask page. Tier: deep dive.
-Also used on the P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2 and FOM mask pages.
+Also used on the P1M, VIM4, FOM, LICM1, LI1M, CTM1, MM1, VIM, MM2 and LVTNM mask pages.
 
 **RIZVI-2005** — S. Rizvi (ed.), *Handbook of Photomask Manufacturing
 Technology*, CRC Press, 2005, ISBN 978-1-4200-2878-2.
@@ -14464,6 +14470,7 @@ of three i-line resists for implant masking, which reduced post-implant
 shrinkage and CD variation, improved thermal stability and eliminated
 popping during resist removal. Used on the DNM mask page. Tier: deep
 dive.
+Also used on the LVTNM mask page.
 
 #### P1M mask page (first cited there)
 
@@ -14695,6 +14702,27 @@ parameter-extraction method and predictions of the effect of pre-CMP
 step height, pattern density, polish time, pad hardness and slurry
 selectivity on dishing and nitride erosion. Used on the FOM mask page.
 Tier: deep dive.
+
+#### LVTNM mask page (first cited there)
+
+**MUTOH-1995** — S. Mutoh, T. Douseki, Y. Matsuya, T. Aoki,
+S. Shigematsu and J. Yamada, "1-V power supply high-speed digital
+circuit technology with multithreshold-voltage CMOS", *IEEE Journal of
+Solid-State Circuits* **30**(8), 847–854 (1995).
+<https://doi.org/10.1109/4.400426> Multithreshold-voltage CMOS
+(MTCMOS) at 0.5 µm, which "features both low-threshold voltage and
+high-threshold voltage MOSFET's in a single LSI": the low-threshold
+devices give speed at a supply of 1 V or less, the high-threshold ones
+suppress stand-by leakage during sleep; with a standard-cell library
+and a PLL demonstrator. Used on the LVTNM mask page. Tier: deep dive.
+
+**FARICELLI-2010** — J. V. Faricelli, "Layout-dependent proximity
+effects in deep nanoscale CMOS", *IEEE Custom Integrated Circuits
+Conference 2010*, pp. 1–8. <https://doi.org/10.1109/CICC.2010.5617407>
+A review of the process technology features that make device behaviour
+depend on layout details and the surrounding neighbourhood, including
+stress engineering, and of how to account for them in circuit and layout
+design. Used on the LVTNM mask page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
