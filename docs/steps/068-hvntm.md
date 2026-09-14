@@ -27,8 +27,9 @@ generated mask layer `chvntm` (39:0, "High voltage N-tip implant
 mask") with a drawing purpose at 38:20.[^pdk-06] Its design rules are
 headed "Defines tip implants for the HV NMOS" and begin with "Hvntm can
 be drawn inside HVI. Drawn layer will be OR-ed with the CL and
-rechecked for CLDRC" — that is, the {term}`reticle` is the union of what the
-designer draws and a computed layer.[^pdk-periph] The rules are coarse:
+rechecked for CLDRC" — which we read as: the {term}`reticle` is the
+union of what the designer draws and a computed layer (the PDK does not
+expand "CL").[^pdk-periph] The rules are coarse:
 width 0.700 µm (hvntm.1), spacing 0.700 µm (hvntm.2), enclosure of n⁺
 diffusion inside `hvi` by 0.185 µm (hvntm.3), a 0.185 µm space to n⁺
 diffusion outside `hvi` and to p⁺ diffusion (hvntm.4, hvntm.5), "Hvntm
@@ -157,7 +158,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
   suppliers.[^sec-01]
 * **HMDS**, **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, {ref}`DI water <material-ultrapure-water>`, {ref}`nitrogen <material-process-gases>`.
 * **The HVNTM reticle** — generated from the drawn `hvntm` layer OR-ed
-  with its computed layer.[^pdk-periph][^pdk-06]
+  with "the CL" (read as a computed layer).[^pdk-periph][^pdk-06]
 
 ## Related steps and cross-references
 
@@ -249,7 +250,8 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
   only the symmetric 5 V devices — is not public.
 * The resist chemistry used at 0.3 µm (an i-line resist thinned, or a
   dedicated thin-film product) is not public.
-* Whether the "CL" computed layer OR-ed with the drawn `hvntm`[^pdk-periph]
+* Whether "the CL" (read here as a computed layer) OR-ed with the drawn
+  `hvntm`[^pdk-periph]
   is derived from `hvi` and `nsdm`, as we assume, is not stated in the
   periphery rules or on the Error Messages page; the latter's checks on
   an undefined `CLHVNTM` layer, such as "0.185 Min Enclosure of ndiff

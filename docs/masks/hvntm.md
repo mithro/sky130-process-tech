@@ -94,9 +94,9 @@ layer is `hvntm` at 125:20, a layer number it shares with `lvtn`
 125:44.[^pdk-06] This is the one mask for which the PDK states an
 operation. Rule X.1 of the `hvntm` set reads "Hvntm can be drawn inside
 HVI. Drawn layer will be OR-ed with the CL and rechecked for
-CLDRC".[^pdk-periph] The PDK does not expand "CL" or "CLDRC". Its only
-other use of the abbreviation is in the periphery rules' flag legend,
-where A means "Rule documents a functionality implemented in CL
+CLDRC".[^pdk-periph] The PDK does not expand "CL" or "CLDRC". The
+periphery rules use the abbreviation again in their flag legend, where
+A means "Rule documents a functionality implemented in CL
 algorithms and may not be checked by DRC." and AD "Rule documents a
 functionality implemented in CL algorithms and checked by
 DRC.";[^pdk-periph] that fits a reading of CL as the mask-generation
