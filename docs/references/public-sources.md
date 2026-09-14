@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1707
+written page has exactly one entry here; the inventory holds 1709
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -74,7 +74,7 @@ scanner and coat/develop track pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the substrates material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -104,7 +104,7 @@ Also used on the PECVD, HDP-CVD and PVD cluster tool pages.
 Also used on the sputter targets material page.
 Also used on the substrates material page.
 Also used on the LI1M and VIM mask pages.
-Also used on the VIM2 and MM3 mask pages.
+Also used on the VIM2, MM3 and VIM3 mask pages.
 
 **PDK-05** — *Masks* page and `masks.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -114,7 +114,7 @@ NWM, HVTPM, LVTNM, HVTRM, NTM, HVNTM, LDNTM, PSDM, NSDM, TUNM, ONOM,
 LVOM, RPM, NPCM, P1M, LICM1, LI1M, CTM1, MM1–MM5, VIM, VIM2–VIM4, NSM,
 PDM, CU1M, PMM2, …). This is the public basis for the mask index and
 for the order of the lithography steps. Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 **PDK-06** — *Layers Reference* and `gds_layers.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
@@ -122,7 +122,7 @@ Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, F
 GDS layer/purpose numbers and the process meaning of each drawn layer
 (e.g. `vhvi` "used to identify nodes that operate at 12V nominal (16V
 max)"). No thicknesses. Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 **PDK-07** — *Device Details* pages and per-device cross-section drawings.
 <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>;
@@ -142,7 +142,7 @@ etcher pages.
 Also used on the PECVD and PVD cluster tool pages.
 Tier: cross-check.
 Also used on the sputter targets material page.
-Also used on the DNM, VIM4, CAPM, LVTNM, NWM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the DNM, VIM4, CAPM, MM3, LVTNM, NWM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 **PDK-08** — *Parasitic Layout Extraction* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
@@ -154,7 +154,7 @@ metal 3–4 47 mΩ/sq, metal 5 29 mΩ/sq, poly 48 200 mΩ/sq, XHR poly
 Useful for inferring film thicknesses and materials (e.g. the 0.36 µm
 and 0.845 µm aluminium metals). Tier: cross-check.
 Also used on the CTM1, MM1, VIM and MM2 mask pages.
-Also used on the VIM2 and MM3 mask pages.
+Also used on the VIM2, MM3 and VIM3 mask pages.
 
 **PDK-09** — *"SKY130 (SkyWater PDK) — Stackup Capacitance Data
 [public]"* spreadsheet, linked from PDK-08.
@@ -196,7 +196,7 @@ dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
 (enclosure rules between deep N-well and N-well); poly.2 (spacing of
 poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
 Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 **PDK-HV** — *High Voltage Methodology* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>.
@@ -393,7 +393,7 @@ Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
 or scanner pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -423,7 +423,7 @@ the same wording as the notes in the process-steps sheet's "Run Mask
 IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
 on the mask index, the HVTPM step page and the sky130B ReRAM overview.
 Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 ## 3. SkyWater Technology corporate sources
 
@@ -433,7 +433,7 @@ Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, F
 (Manufacturing → Facilities & Capabilities), live page, accessed
 2026-08-30.
 <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>.
-Also used on the VIM2, CAPM and MM3 mask pages.
+Also used on the VIM2, CAPM, MM3 and VIM3 mask pages.
 **The most valuable single public source for the tool set.** For the
 Minnesota fab it states "200 mm equipment", "91,000 sq ft cleanroom
 (class 10)", "Capacity: 10,000 30 ML CMOS wafers/month or 50,000 MOSFET
@@ -1392,7 +1392,7 @@ large mask error factors", and the metrology crosscut calls the "20%
 measurement precision to process tolerance metric" "somewhat relaxed".
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
@@ -1791,7 +1791,7 @@ of STI. Used on the oxidation category page. Tier: high-level.
 absorber and pellicles. Used on the lithography category page. Tier:
 high-level.
 Also used on the lithography materials material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 **WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
 <https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
@@ -1886,7 +1886,7 @@ Tier: high-level.
 <https://en.wikipedia.org/wiki/Phase-shift_mask> Phase-shift masks as a
 resolution-enhancement technique. Used on the lithography category page.
 Tier: high-level.
-Also used on the P1M, LICM1, CTM1, VIM and VIM2 mask pages.
+Also used on the P1M, LICM1, CTM1, VIM, VIM2 and VIM3 mask pages.
 
 **WIKI-PVD** — Wikipedia, *Physical vapor deposition*.
 <https://en.wikipedia.org/wiki/Physical_vapor_deposition> Physical
@@ -2356,7 +2356,7 @@ name and abbreviation for an embedded attenuated phase-shift mask. Tier: cross-c
 statement).
 Also used on the lithography materials material page.
 Also used on the VIM4 mask page.
-Also used on the VIM2 mask page.
+Also used on the VIM2 and VIM3 mask pages.
 
 ### 8.7 Well and channel-implant module sources
 
@@ -2755,14 +2755,14 @@ thick-resist imaging.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, HVTPM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, HVTPM and VIM3 mask pages.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
 Overlay budgets and non-critical-layer tool choice.
 Also used on the i-line stepper or scanner page.
 Tier: deep dive.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, NWM, HVTPM and MM3 mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, NWM, HVTPM and VIM3 mask pages.
 
 **ROCHE-1985** — D. Roche, J. F. Michaud and M. Bruel, *"Outgassing of
 Photoresist During Ion Implantation"*, MRS Proceedings, vol. 45, 1985,
@@ -4477,7 +4477,7 @@ Also used on the coat/develop track page.
 Tier: deep dive.
 Also used on the lithography materials material page.
 Also used on the MM1, VIM and MM2 mask pages.
-Also used on the VIM2, CAPM and MM3 mask pages.
+Also used on the VIM2, CAPM, MM3 and VIM3 mask pages.
 
 **DAMMEL-1993** — R. R. Dammel, *Diazonaphthoquinone-based Resists*,
 SPIE Tutorial Texts TT11, SPIE Press, 1993.
@@ -7110,7 +7110,7 @@ Also used on the anneal ambients material page.
 
 **CHEN-1999-PSM** — Y.-T. Chen, Y.-C. Wang and R. Chu, "Optimization of
 attenuated phase-shift mask for contact hole printing", *Proc. SPIE*
-Also used on the VIM2 mask page.
+Also used on the VIM2 and VIM3 mask pages.
 **3679**, Optical Microlithography XII, 812 (1999).
 <https://doi.org/10.1117/12.354399> Attenuated PSM optimisation for
 contact holes. Used on step 093. Tier: deep dive.
@@ -7674,7 +7674,7 @@ deep dive.
 <https://doi.org/10.1109/IMNC.2000.872612> Hierarchical OPC on
 contact-hole layers. Used on step 107. Tier: deep dive.
 Also used on the LICM1, CTM1 and VIM mask pages.
-Also used on the VIM2 mask page.
+Also used on the VIM2 and VIM3 mask pages.
 
 
 #### Metal-1 stack, mask, etch, ILD3, CMP and cap oxide (steps 112–117)
@@ -8099,7 +8099,7 @@ Technology* **11**(6), 858–864 (1996).
 electromigration depends on the via size. Used on steps 118, 121, 129
 and 132. Tier: deep dive.
 Also used on the VIM mask page.
-Also used on the VIM2 mask page.
+Also used on the VIM2 and VIM3 mask pages.
 
 **NGUYEN-2000** — V. H. Nguyen, P. Van Der Velden, R. Daamen, H. Van
 Kranenburg and P. H. Woerlee, "Modelling of dishing for metal chemical
@@ -8190,7 +8190,7 @@ Plug Technology", *MRS Proceedings* **427** (1996).
 <https://en.wikipedia.org/wiki/Via_(electronics)> Vias between wiring
 levels, an entry point for the via mask, etch and fill pages. Used on
 steps 118, 119, 121, 129, 130 and 132. Tier: high-level.
-Also used on the VIM4, VIM and VIM2 mask pages.
+Also used on the VIM4, VIM, VIM2 and VIM3 mask pages.
 
 #### Metal-2 stack, mask, etch, ILD4, CMP and cap oxide (steps 123–128)
 
@@ -8514,7 +8514,7 @@ therefor*, US 7,375,002 B2, filed 2005-06-28, granted 2008-05-20.
 A MiM capacitor over planarised interconnect, with a via etch that stops
 on the plates and the interconnect together. Used on steps 135, 136,
 137, 144 and 145. Tier: deep dive.
-Also used on the CAPM mask page.
+Also used on the CAPM and VIM3 mask pages.
 
 **PAT-MIM-IBM** — T. J. Brabazon, B. El-Kareh, S. R. Martin, M. J. Rutten
 and C. W. Kaanta (International Business Machines), *Precision analog
@@ -9442,8 +9442,7 @@ gate-oxidation, source/drain-implant, contact, via, metal and MiM step
 pages.
 Also used on the parametric tester and prober page.
 Tier: cross-check.
-Also used on the FOM, NWM, PWBM and PWDEM mask pages.
-Also used on the CAPM mask page.
+Also used on the CAPM, FOM, NWM, PWBM, PWDEM and VIM3 mask pages.
 
 **RAW-DATA-TESTTILE-OPEN** — SkyWater PDK Authors, *SkyWater 130nm Open
 Manufacturing Test Tile*, `docs/sky130-testtile-open/README.rst` with
@@ -14461,7 +14460,7 @@ but increases rapidly when the critical dimension (CD) is less than 0.5
 contacts", dark-field spaces are more sensitive than light-field lines,
 and attenuated PSMs behave like chrome-on-glass masks. Used on the DNM
 mask page. Tier: deep dive.
-Also used on the P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and MM3 mask pages.
+Also used on the P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM and VIM3 mask pages.
 
 **RIZVI-2005** — S. Rizvi (ed.), *Handbook of Photomask Manufacturing
 Technology*, CRC Press, 2005, ISBN 978-1-4200-2878-2.
@@ -14558,7 +14557,7 @@ rapidly near the resolution limit, larger for dense than for isolated
 contacts, and smaller on attenuated masks because of their positive mask
 bias. Used on the VIM4 mask page. Tier: deep dive.
 Also used on the LICM1, CTM1 and VIM mask pages.
-Also used on the VIM2 mask page.
+Also used on the VIM2 and VIM3 mask pages.
 
 **MORGANTE-2000** — C. G. Morgante and H. C. Hamaker, "ALTA 3700:
 extending the application space of the ALTA 3500 laser reticle writer",
@@ -14602,7 +14601,7 @@ each pair of conducting layers: "Licon1" from `li1` to diff and tap,
 "Licon1 AND Npc" from `li1` to poly, "Mcon" from met1 to `li1` and "Via"
 from met2 to met1. Used on the LICM1 mask page. Tier: cross-check.
 Also used on the LI1M, CTM1, MM1, VIM and MM2 mask pages.
-Also used on the VIM2, CAPM and MM3 mask pages.
+Also used on the VIM2, CAPM, MM3 and VIM3 mask pages.
 
 **CHOO-2000** — L. C. Choo, O. Park, M. J. Sack and S. C. Tam,
 "Integration of attenuated phase-shift mask to 0.13-μm technology
@@ -14684,7 +14683,7 @@ Also used on the VIM and MM2 mask pages.
 
 **MA-ANDERSSON-1998** — Z. M. Ma and A. Andersson, "Preventing sidelobe
 printing in applying attenuated phase-shift reticles", *Proc. SPIE*
-Also used on the VIM2 mask page.
+Also used on the VIM2 and VIM3 mask pages.
 **3334**, Optical Microlithography XI, 543 (1998).
 <https://doi.org/10.1117/12.310783> "One major limitation of applying
 attenuated phase shift mask (PSM) is sidelobe printing", "caused by
@@ -14896,6 +14895,7 @@ the geometry restrictions but does not increase focus latitude, and "a
 halftone phase-shifting mask is suitable for printing isolated patterns
 and it gives wider focus latitude than conventional mask technology".
 Used on the VIM2 mask page. Tier: deep dive.
+Also used on the VIM3 mask page.
 
 **SMITH-1996** — B. W. Smith, S. Butt, Z. Alam, S. Kurinec and
 R. L. Lane, "Attenuated phase shift mask materials for 248 and 193 nm
@@ -14907,6 +14907,7 @@ silicon nitride, and a tantalum silicon oxide composite" — each shown
 capable of 4 %–15 % transmission at 193 nm at a thickness giving a π
 phase shift, with etch and long-wavelength transmission evaluated. Used
 on the VIM2 mask page. Tier: deep dive.
+Also used on the VIM3 mask page.
 
 #### CAPM mask page (first cited there)
 
@@ -14934,6 +14935,30 @@ multilevel density analysis and linear-programming fill synthesis for
 the "fixed-dissection regime"; notes that "only foundries and special
 mask data processing tools perform layout post-processing for density
 control". Used on the MM3 mask page. Tier: deep dive.
+
+#### VIM3 mask page (first cited there)
+
+**ABBOUD-1998** — F. E. Abboud, C. A. Sauer, M. Vernon, T. P. Coleman,
+R. L. Dean, W. Wang, R. Prior, M. Lu and S. Weaver, "Further advances in
+electron-beam pattern generation technology for 180-nm masks", *Proc.
+SPIE* **3412**, Photomask and X-Ray Mask Technology V, 20 (1998).
+<https://doi.org/10.1117/12.328815> The electron-beam pattern-generation
+work "necessary to meet 180 nm mask requirements": multipass gray writing
+introduced with the MEBES 4500S, a resist and process supporting dry
+etching, and "a data path capable of supporting addressing to 10 nm",
+with registration, butting and CD-uniformity results. Used on the VIM3
+mask page. Tier: deep dive.
+
+**KURIHARA-1993** — M. Kurihara, M. Arai, H. Fujita, H. Moro-oka,
+Y. Takahashi and H. Sano, "Primary processes in e-beam and laser
+lithographies for phase-shift mask manufacturing II", *Proc. SPIE*
+**1809**, 12th Annual BACUS Symposium on Photomask Technology and
+Management, 50 (1993). <https://doi.org/10.1117/12.142150> E-beam and laser
+lithography processes for phase-shift mask manufacturing: charge
+dissipation with conductive polymers, resists for patterning the shifter
+layer, alignment of the shifter level to the chrome level for several
+writer combinations (HL-600, WW6000, MEBES III), and a comparison of
+e-beam and laser writers. Used on the VIM3 mask page. Tier: deep dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
