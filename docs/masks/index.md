@@ -113,6 +113,7 @@ lvtnm
 nwm
 hvtpm
 pwbm
+pwdem
 p1m
 licm1
 li1m
@@ -149,7 +150,7 @@ In the table:
 | {ref}`NWM <step-017>` | N-Well\*, {ref}`NWM <mask-nwm>` — `X` | `cnwm` mask 21:0 | `nwell` 64:20 | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`; strip {ref}`LVTPIS <step-021>` | `NWMCD` 0.84 / `NWMCDSP` 1.27 |
 | {ref}`HVTPM <step-022>` | High Vt PCh\*, {ref}`HVTPM <mask-hvtpm>` — `X` | `chvtpm` mask 97:0; drawing 88:44, mask add 97:43, mask drop 97:42 | `hvtp` 78:44 | {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`; strip {ref}`PCHIS <step-025>` | `HVTPMCD` 0.38 / `HVTPMCDSP` 0.38 |
 | {ref}`PWBM <step-026>` | P-Well Block Mask, {ref}`PWBM <mask-pwbm>` — *blank* | none | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`; strip {ref}`PWIS <step-029>` | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 |
-| {ref}`PWDEM <step-030>` | P-Well Drain Extended, PWDEM — *blank* | none | `pwde` 124:20 | {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; strip {ref}`PWDEIS <step-033>` | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 |
+| {ref}`PWDEM <step-030>` | P-Well Drain Extended, {ref}`PWDEM <mask-pwdem>` — *blank* | none | `pwde` 124:20 | {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; strip {ref}`PWDEIS <step-033>` | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 |
 | {ref}`TUNM <step-035>` | Tunnel Mask, TUNM — `X` | `ctunm` mask 20:0 | `tunm` 80:20 | {ref}`TUNARCE <step-036>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`TUNME <step-039>` | `TUNMCD` 0.41 / `TUNMCDSP` 0.5 |
 | {ref}`ONOM <step-041>` | ONO Mask, ONOM — `X` | `conom` mask 88:0; drawing 87:44 | no drawn `onom` layer; from `tunm` 80:20 *(inference)* | {ref}`ONOME <step-042>` | `ONOMCD` 0.41 / `ONOMCDSP` 0.5 |
 | {ref}`LVOM <step-044>` | Low Voltage Oxide, LVOM — `X` | `clvom` mask 46:0; drawing 45:20 | no drawn `lvom` layer; the complement of `hvi` 75:20 *(inference)* | {ref}`NCHI <step-045>`, {ref}`GOXETCH <step-046>` | `LVOMCD` 0.6 / `LVOMCDSPCSMC` 0.7 |
