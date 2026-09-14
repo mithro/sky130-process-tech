@@ -2854,11 +2854,10 @@ chemical structure of the carbonised layer that high-dose implantation
 forms in resist (solid NMR), the residues of O₂ plasma ashing, mainly
 oxides of the implanted species (XPS), and a two-step H₂ RIE and
 downstream ashing process (abstract); the abstract does not discuss
-popping.
+popping. Authors' affiliation (OpenAlex): Process Development Division,
+Fujitsu Limited. Tier: deep dive.
 Also used on the downstream plasma asher and wet bench and spray
 processor pages.
-Tier: deep
-dive.
 Also used on the PSDM and NSDM mask pages.
 
 **FUJIMURA-1990** — S. Fujimura, K. Shinagawa, M. Nakamura and

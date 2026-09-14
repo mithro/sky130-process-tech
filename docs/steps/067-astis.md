@@ -39,8 +39,9 @@ because two more tip implants will be made through it.
 `ASTIS` is a {ref}`Resist strip / clean <category-strip>` step of the
 *post-implant* type, at the difficult end of that class. The category
 page explains that implanted resist is "a different material from
-freshly developed resist": the ions deposit their energy in the top
-100–200 nm,[^fujimura-1989] cross-linking and carbonising it, and if
+freshly developed resist": Fujimura et al. traced the lower etching
+rate of high-dose ion-implanted resist to "carbonization of polymers of
+the resist",[^fujimura-1989] and, on the category page's account, if
 the crusted wafer is heated quickly the soft resist underneath blows
 the crust off in flakes ("popping"). The channel-implant strips of the
 well module ({ref}`LVTNIS <step-016>`) saw doses a hundred times

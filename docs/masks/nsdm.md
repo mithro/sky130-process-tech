@@ -211,10 +211,11 @@ thickness" of 1.14 µm, which stops an arsenic source/drain implant of
 tens of keV with a wide margin, and argues that the thickness is again
 set by coverage over the capped gates and by the resist's endurance under
 a dose of the order of 10¹⁵ cm⁻².[^pdk-03] The ion range in resist is
-what SRIM computes.[^ziegler-2010] The step page adds that arsenic, a
-heavier ion than boron or BF₂, deposits more energy in the resist surface
-at the same dose and forms a harder crust, of the kind Fujimura et al.
-analysed;[^fujimura-1989] Smith treated wafer cooling and resist masking
+what SRIM computes.[^ziegler-2010] The step page infers that arsenic, a
+heavier ion than boron or BF₂, leaves a harder crust at the same dose;
+Fujimura et al. traced the lower etching rate of high-dose implanted
+resist to "carbonization of polymers of the resist", without comparing
+species in the abstract;[^fujimura-1989] Smith treated wafer cooling and resist masking
 problems in implantation,[^smith-1983] Romig, Bishop and Rio resist
 burning in a high-current implanter,[^romig-1996] Lukaszek, Reno and
 Bammi the influence of photoresist on wafer charging during a high-current
