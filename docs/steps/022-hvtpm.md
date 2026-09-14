@@ -44,7 +44,7 @@ two (lvtn.9).[^pdk-periph] Unlike `lvtn`, whose rule heading says it
 *blocks* an implant, `hvtp` is described as the *region that receives*
 the implant, so we read the reticle polarity as straightforward: resist
 is removed over `hvtp`. That reading is an inference from the layer
-description; one public reconstruction of the mask from the MPW
+description; one public derivation from the drawn MPW
 tape-out layouts, which cites no source, renders it as (`nwell` NOT
 `hvi`) NOT `lvtn`, without `hvtp`
 ({ref}`masks-derivations`).[^mask-renders]
@@ -180,8 +180,8 @@ fab:
 * SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
 * SkyWater, Form S-1 (2021) — photoresist, gas and chemical
   suppliers.[^sec-01]
-* *SKY130 Open MPW mask-layer renders* — one public reconstruction of
-  the `HVTPM` mask from the MPW tape-out layouts, without
+* *SKY130 Open MPW mask-layer renders* — one public derivation of
+  the `HVTPM` layer from the drawn MPW tape-out layouts, without
   `hvtp`.[^mask-renders]
 
 ### High-level understanding
