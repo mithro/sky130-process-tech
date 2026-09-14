@@ -113,181 +113,235 @@ families:
     kind: B1
     document_type: reexamination-certificate
     publication_date: 1988-09-27
-    status: null
+    title: ''
+    application_number: ''
+    filing_date: 1974-05-31
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS3893869B1
       google_patents: https://patents.google.com/patent/US3893869B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: AU8153175A
     country: AU
     kind: A
     document_type: application
     publication_date: 1976-12-02
-    status: null
+    title: Megasonic cleaning method and system
+    application_number: AU81531/75A
+    filing_date: 1975-05-26
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DAU8153175A
       google_patents: https://patents.google.com/patent/AU8153175A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: BE829543A
     country: BE
     kind: A
     document_type: application
     publication_date: 1975-09-15
+    title: VERY HIGH FREQUENCY ULTRA-SOUND CLEANING SYSTEM AND METHOD
+    application_number: BE156754A
+    filing_date: 1975-05-27
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DBE829543A
       google_patents: https://patents.google.com/patent/BE829543A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CA1034467A
     country: CA
     kind: A
     document_type: application
     publication_date: 1978-07-11
-    status: null
+    title: Megasonic cleaning method and system
+    application_number: CA226,467A
+    filing_date: 1975-05-07
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCA1034467A
       google_patents: https://patents.google.com/patent/CA1034467A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE2523631A1
     country: DE
     kind: A1
     document_type: application
     publication_date: 1975-12-11
-    status: null
+    title: METHOD AND DEVICE FOR ULTRASONIC CLEANING
+    application_number: DE19752523631
+    filing_date: 1975-05-28
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE2523631A1
       google_patents: https://patents.google.com/patent/DE2523631A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE2523631B2
     country: DE
     kind: B2
     document_type: granted-patent
     publication_date: 1980-04-03
-    status: null
+    title: Method and device for ultrasonic cleaning
+    application_number: DE2523631A
+    filing_date: 1975-05-28
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE2523631B2
       google_patents: https://patents.google.com/patent/DE2523631B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE2523631C3
     country: DE
     kind: C3
     document_type: granted-patent
     publication_date: 1980-12-04
-    status: null
+    title: Method and device for ultrasonic cleaning
+    application_number: DE2523631A
+    filing_date: 1975-05-28
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE2523631C3
       google_patents: https://patents.google.com/patent/DE2523631C3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: FR2272755A1
     country: FR
     kind: A1
     document_type: application
     publication_date: 1975-12-26
-    status: null
+    title: ''
+    application_number: FR7516330A
+    filing_date: 1975-05-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DFR2272755A1
       google_patents: https://patents.google.com/patent/FR2272755A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: FR2272755B1
     country: FR
     kind: B1
     document_type: granted-patent
     publication_date: 1983-01-14
-    status: null
+    title: ''
+    application_number: FR7516330A
+    filing_date: 1975-05-26
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DFR2272755B1
       google_patents: https://patents.google.com/patent/FR2272755B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: GB1499739A
     country: GB
     kind: A
     document_type: application
     publication_date: 1978-02-01
-    status: null
+    title: Ultrasonic cleaning method and apparatus
+    application_number: GB20614/75A
+    filing_date: 1975-05-15
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DGB1499739A
       google_patents: https://patents.google.com/patent/GB1499739A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: IN144099B
     country: IN
     kind: B
     document_type: granted-patent
     publication_date: 1978-03-25
+    title: ''
+    application_number: IN851/CAL/75A
+    filing_date: 1975-04-28
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DIN144099B
       google_patents: https://patents.google.com/patent/IN144099B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: IT1037683B
     country: IT
     kind: B
     document_type: granted-patent
     publication_date: 1979-11-20
+    title: METHOD AND SYSTEM FOR MEGASONIC CLEANING
+    application_number: IT22799/75A
+    filing_date: 1975-04-28
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DIT1037683B
       google_patents: https://patents.google.com/patent/IT1037683B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS512264A
     country: JP
     kind: A
     document_type: application
     publication_date: 1976-01-09
-    status: null
+    title: Butsupinno hyomenosenjosuruhoho
+    application_number: JP50063389A
+    filing_date: 1975-05-26
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS512264A
       google_patents: https://patents.google.com/patent/JPS512264A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: NL7506443A
     country: NL
     kind: A
     document_type: application
     publication_date: 1975-12-02
+    title: PROCEDURE FOR CLEANING A SURFACE OF AN ARTICLE AND DEVICE FOR APPLYING THIS PROCEDURE.
+    application_number: NL7506443A
+    filing_date: 1975-05-30
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DNL7506443A
       google_patents: https://patents.google.com/patent/NL7506443A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: SE7506134L
     country: SE
     kind: L
     document_type: application
     publication_date: 1975-12-01
+    title: WAY TO CLEAN A SURFACE.
+    application_number: SE7506134A
+    filing_date: 1975-05-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DSE7506134L
       google_patents: https://patents.google.com/patent/SE7506134L/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: SE418698B
     country: SE
     kind: B
     document_type: granted-patent
     publication_date: 1981-06-22
+    title: MAKE CLEANING A SURFACE WITH A FLAT ARTICLE
+    application_number: SE7506134A
+    filing_date: 1975-05-29
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DSE418698B
       google_patents: https://patents.google.com/patent/SE418698B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: YU135775A
     country: YU
     kind: A
     document_type: application
     publication_date: 1982-05-31
+    title: Cleaning device
+    application_number: YU01357/75A
+    filing_date: 1975-05-27
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DYU135775A
       google_patents: https://patents.google.com/patent/YU135775A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: YU40887B
     country: YU
     kind: B
     document_type: granted-patent
     publication_date: 1986-08-31
+    title: Claning device
+    application_number: YU1357/75A
+    filing_date: 1975-05-27
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DYU40887B
       google_patents: https://patents.google.com/patent/YU40887B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US3893869A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-post-cmp-cleaner
     relation: cited-on-page
@@ -324,7 +378,7 @@ families:
     date: 1999-04-03
     estimated: true
     basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of WO1979000876A1 (estimated upper bound: earliest priority date + 21
+      the latest estimate is that of JPH0150844B2 (estimated upper bound: earliest priority date + 21
       years (12-month priority period + 20-year term))'
   expired: true
   members:
@@ -350,31 +404,40 @@ families:
     kind: A
     document_type: application
     publication_date: 1980-08-14
-    status: null
+    title: ''
+    application_number: JP50064579A
+    filing_date: 1979-04-02
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS55500510A
       google_patents: https://patents.google.com/patent/JPS55500510A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4247203A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0150844B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1989-10-31
-    status: null
+    title: ''
+    application_number: JP54500645A
+    filing_date: 1979-04-02
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0150844B2
       google_patents: https://patents.google.com/patent/JPH0150844B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4247203A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO1979000876A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 1979-11-01
-    status: null
+    title: Automatic photomask inspection system and apparatus
+    application_number: PCT/US1979/000207
+    filing_date: 1979-04-02
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO1979000876A1
       google_patents: https://patents.google.com/patent/WO1979000876A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4247203A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-defect-inspection
     relation: cited-on-page
@@ -407,11 +470,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4234797A, retrieved 2026-09-14
   expiry:
-    date: 2000-05-23
+    date: 1999-05-23
     estimated: true
     basis: 'all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPS55160427A (estimated upper bound: earliest priority date + 21
-      years (12-month priority period + 20-year term))'
+      the latest estimate is that of US4234797A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4234797A
@@ -436,21 +499,27 @@ families:
     kind: A
     document_type: application
     publication_date: 1980-12-13
-    status: null
+    title: Beam machining apparatus
+    application_number: JP6877980A
+    filing_date: 1980-05-23
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS55160427A
       google_patents: https://patents.google.com/patent/JPS55160427A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4234797A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0351050B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1991-08-05
-    status: null
+    title: ''
+    application_number: JP55068779A
+    filing_date: 1980-05-23
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0351050B2
       google_patents: https://patents.google.com/patent/JPH0351050B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4234797A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-high-current-implanter
     relation: cited-on-page
@@ -511,21 +580,27 @@ families:
     kind: A
     document_type: application
     publication_date: 1982-10-12
-    status: null
+    title: Scanning type pollution/flaw detector
+    application_number: JP56206007A
+    filing_date: 1981-12-18
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS57165743A
       google_patents: https://patents.google.com/patent/JPS57165743A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4378159A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS632459B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1988-01-19
-    status: null
+    title: ''
+    application_number: JP56206007A
+    filing_date: 1981-12-18
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS632459B2
       google_patents: https://patents.google.com/patent/JPS632459B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4378159A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-defect-inspection
     relation: cited-on-page
@@ -621,8 +696,8 @@ families:
     date: 2004-07-07
     estimated: true
     basis: 'all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPS6037716A (estimated upper bound: earliest priority date + 21 years
-      (12-month priority period + 20-year term))'
+      the latest estimate is that of JPH0141245B2 (estimated upper bound: earliest priority date + 21
+      years (12-month priority period + 20-year term))'
   expired: true
   members:
   - number: US4522656A
@@ -647,61 +722,79 @@ families:
     kind: A1
     document_type: application
     publication_date: 1985-01-17
-    status: null
+    title: METHOD FOR LABELING SEMICONDUCTOR SURFACES BY LASER RADIATION
+    application_number: DE19833324551
+    filing_date: 1983-07-07
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3324551A1
       google_patents: https://patents.google.com/patent/DE3324551A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4522656A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3462365D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 1987-03-12
-    status: null
+    title: Method of marking semiconductor surfaces using laser radiation
+    application_number: DE8484107743T
+    filing_date: 1984-07-04
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3462365D1
       google_patents: https://patents.google.com/patent/DE3462365D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4522656A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0134469A1
     country: EP
     kind: A1
     document_type: application
     publication_date: 1985-03-20
-    status: null
+    title: Method of marking semiconductor surfaces using laser radiation
+    application_number: EP84107743A
+    filing_date: 1984-07-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0134469A1
       google_patents: https://patents.google.com/patent/EP0134469A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4522656A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0134469B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1987-02-04
-    status: null
+    title: Method of marking semiconductor surfaces using laser radiation
+    application_number: EP84107743A
+    filing_date: 1984-07-04
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0134469B1
       google_patents: https://patents.google.com/patent/EP0134469B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4522656A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS6037716A
     country: JP
     kind: A
     document_type: application
     publication_date: 1985-02-27
-    status: null
+    title: Method of characterizing semiconductor surface by laser beam
+    application_number: JP59084180A
+    filing_date: 1984-04-27
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS6037716A
       google_patents: https://patents.google.com/patent/JPS6037716A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4522656A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0141245B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1989-09-04
-    status: null
+    title: ''
+    application_number: JP59084180A
+    filing_date: 1984-04-27
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0141245B2
       google_patents: https://patents.google.com/patent/JPH0141245B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4522656A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-starting-material
     relation: cited-on-page
@@ -765,71 +858,92 @@ families:
     kind: D1
     document_type: application
     publication_date: 1988-08-04
-    status: null
+    title: Etchant composition
+    application_number: DE8484109546T
+    filing_date: 1984-08-10
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3472421D1
       google_patents: https://patents.google.com/patent/DE3472421D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4582624A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0133584A1
     country: EP
     kind: A1
     document_type: application
     publication_date: 1985-02-27
-    status: null
+    title: Etchant composition
+    application_number: EP84109546A
+    filing_date: 1984-08-10
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0133584A1
       google_patents: https://patents.google.com/patent/EP0133584A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4582624A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0133584B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1988-06-29
-    status: null
+    title: Etchant composition
+    application_number: EP84109546A
+    filing_date: 1984-08-10
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0133584B1
       google_patents: https://patents.google.com/patent/EP0133584B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4582624A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS6039176A
     country: JP
     kind: A
     document_type: application
     publication_date: 1985-02-28
-    status: null
+    title: Etching agent composition
+    application_number: JP58147213A
+    filing_date: 1983-08-10
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS6039176A
       google_patents: https://patents.google.com/patent/JPS6039176A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4582624A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS6219509B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1987-04-28
-    status: null
+    title: ''
+    application_number: JP58147213A
+    filing_date: 1983-08-10
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS6219509B2
       google_patents: https://patents.google.com/patent/JPS6219509B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4582624A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR850001915A
     country: KR
     kind: A
     document_type: application
     publication_date: 1985-04-10
-    status: null
+    title: Caustic composition
+    application_number: KR1019840004691A
+    filing_date: 1984-08-07
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR850001915A
       google_patents: https://patents.google.com/patent/KR850001915A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4582624A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR900000739B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 1990-02-10
-    status: null
+    title: Etchant composition
+    application_number: KR1019840004691A
+    filing_date: 1984-08-07
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR900000739B1
       google_patents: https://patents.google.com/patent/KR900000739B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4582624A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: material-wet-chemicals
     relation: cited-on-page
@@ -862,11 +976,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4601576A, retrieved 2026-09-14
   expiry:
-    date: 2004-12-09
+    date: 2003-12-09
     estimated: true
     basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US4597665A (estimated upper bound: earliest priority date + 21 years
-      (12-month priority period + 20-year term))'
+      the latest estimate is that of US4601576A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4597665A
@@ -874,11 +988,18 @@ families:
     kind: A
     document_type: granted-patent
     publication_date: 1986-07-01
-    status: null
+    title: Dual collector optical flaw detector
+    application_number: US06/610,101
+    filing_date: 1984-05-14
+    status: Expired - Fee Related
+    expiry:
+      date: 2003-12-09
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS4597665A
       google_patents: https://patents.google.com/patent/US4597665A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4601576A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US4601576A
     country: US
     kind: A
@@ -901,21 +1022,27 @@ families:
     kind: A
     document_type: application
     publication_date: 1985-07-27
-    status: null
+    title: Condenser for inspecting surface
+    application_number: JP59259856A
+    filing_date: 1984-12-07
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS60142238A
       google_patents: https://patents.google.com/patent/JPS60142238A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4601576A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0435026B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1992-06-09
-    status: null
+    title: ''
+    application_number: JP59259856A
+    filing_date: 1984-12-07
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0435026B2
       google_patents: https://patents.google.com/patent/JPH0435026B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4601576A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-defect-inspection
     relation: cited-on-page
@@ -950,11 +1077,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4649261A, retrieved 2026-09-14
   expiry:
-    date: 2005-02-28
+    date: 2004-03-10
     estimated: true
     basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of WO1992021147A1 (estimated upper bound: earliest priority date + 21
-      years (12-month priority period + 20-year term))'
+      the latest estimate is that of US4649261A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4649261A
@@ -980,11 +1107,14 @@ families:
     kind: A1
     document_type: international-application
     publication_date: 1992-11-26
-    status: null
+    title: Pyrometer temperature measurement of plural wafers stacked in a processing chamber
+    application_number: PCT/US1992/004066
+    filing_date: 1992-05-14
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO1992021147A1
       google_patents: https://patents.google.com/patent/WO1992021147A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4649261A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-anneal
     relation: cited-on-page
@@ -1028,11 +1158,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4579463A, retrieved 2026-09-14
   expiry:
-    date: 2005-05-21
+    date: 2005-05-20
     estimated: true
     basis: 'all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPS612046A (estimated upper bound: earliest priority date + 21 years
-      (12-month priority period + 20-year term))'
+      the latest estimate is that of EP0165711B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4579463A
@@ -1057,61 +1187,83 @@ families:
     kind: D1
     document_type: application
     publication_date: 1991-09-12
-    status: null
+    title: METHOD AND DEVICE FOR DETECTING THERMAL WAVES.
+    application_number: DE8585303511T
+    filing_date: 1985-05-20
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3583705D1
       google_patents: https://patents.google.com/patent/DE3583705D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4579463A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0165711A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1985-12-27
-    status: null
+    title: Method and apparatus for detecting thermal waves
+    application_number: EP85303511A
+    filing_date: 1985-05-20
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0165711A2
       google_patents: https://patents.google.com/patent/EP0165711A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4579463A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0165711A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1987-10-28
-    status: null
+    title: Method and apparatus for detecting thermal waves
+    application_number: EP85303511A
+    filing_date: 1985-05-20
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0165711A3
       google_patents: https://patents.google.com/patent/EP0165711A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4579463A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0165711B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1991-08-07
-    status: null
+    title: Method and apparatus for detecting thermal waves
+    application_number: EP85303511A
+    filing_date: 1985-05-20
+    status: Expired - Lifetime
+    expiry:
+      date: 2005-05-20
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0165711B1
       google_patents: https://patents.google.com/patent/EP0165711B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4579463A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS612046A
     country: JP
     kind: A
     document_type: application
     publication_date: 1986-01-08
-    status: null
+    title: Method and device for detecting heat wave
+    application_number: JP60105731A
+    filing_date: 1985-05-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS612046A
       google_patents: https://patents.google.com/patent/JPS612046A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4579463A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0347703B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1991-07-22
-    status: null
+    title: ''
+    application_number: JP60105731A
+    filing_date: 1985-05-17
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0347703B2
       google_patents: https://patents.google.com/patent/JPH0347703B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4579463A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-sheet-resistance-metrology
     relation: cited-on-page
@@ -1205,7 +1357,7 @@ families:
     date: 2006-02-22
     estimated: true
     basis: 'all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPS61247046A (estimated upper bound: earliest priority date + 21
+      the latest estimate is that of JPH0357620B2 (estimated upper bound: earliest priority date + 21
       years (12-month priority period + 20-year term))'
   expired: true
   members:
@@ -1231,51 +1383,66 @@ families:
     kind: D1
     document_type: application
     publication_date: 1990-12-13
-    status: null
+    title: DEVICE AND METHOD FOR TESTING THE SPECIFIC RESISTANCE.
+    application_number: DE8686301044T
+    filing_date: 1986-02-14
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3675413D1
       google_patents: https://patents.google.com/patent/DE3675413D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4703252A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0196158A1
     country: EP
     kind: A1
     document_type: application
     publication_date: 1986-10-01
-    status: null
+    title: Apparatus and methods for resistivity testing
+    application_number: EP86301044A
+    filing_date: 1986-02-14
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0196158A1
       google_patents: https://patents.google.com/patent/EP0196158A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4703252A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0196158B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1990-11-07
-    status: null
+    title: Apparatus and methods for resistivity testing
+    application_number: EP86301044A
+    filing_date: 1986-02-14
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0196158B1
       google_patents: https://patents.google.com/patent/EP0196158B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4703252A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS61247046A
     country: JP
     kind: A
     document_type: application
     publication_date: 1986-11-04
-    status: null
+    title: Apparatus and method for testing natural resistance
+    application_number: JP61037183A
+    filing_date: 1986-02-21
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS61247046A
       google_patents: https://patents.google.com/patent/JPS61247046A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4703252A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0357620B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1991-09-02
-    status: null
+    title: ''
+    application_number: JP61037183A
+    filing_date: 1986-02-21
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0357620B2
       google_patents: https://patents.google.com/patent/JPH0357620B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4703252A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-sheet-resistance-metrology
     relation: cited-on-page
@@ -1340,31 +1507,40 @@ families:
     kind: A1
     document_type: application
     publication_date: 1986-11-05
-    status: null
+    title: Method and apparatus for evaluating surface and subsurface features in a semiconductor
+    application_number: EP86301289A
+    filing_date: 1986-02-24
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0200301A1
       google_patents: https://patents.google.com/patent/EP0200301A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4854710A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS61223543A
     country: JP
     kind: A
     document_type: application
     publication_date: 1986-10-04
-    status: null
+    title: Method and device for evaluating characteristic of surface and under surface of semiconductor
+    application_number: JP61042052A
+    filing_date: 1986-02-28
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS61223543A
       google_patents: https://patents.google.com/patent/JPS61223543A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4854710A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0572975B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1993-10-13
-    status: null
+    title: ''
+    application_number: JP8642052A
+    filing_date: 1986-02-28
+    status: Expired - Fee Related
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0572975B2
       google_patents: https://patents.google.com/patent/JPH0572975B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4854710A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-sheet-resistance-metrology
     relation: cited-on-page
@@ -1465,8 +1641,8 @@ families:
     date: 2011-04-12
     estimated: true
     basis: 'all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US5302539A (estimated upper bound: grant date + 17 years (US application
-      filed before 1995-06-08))'
+      the latest estimate is that of US5302539A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4821085A
@@ -1491,41 +1667,65 @@ families:
     kind: A
     document_type: granted-patent
     publication_date: 1991-11-12
-    status: null
+    title: Metal-to-polysilicon capacitor and method for making the same
+    application_number: US07/189,930
+    filing_date: 1988-05-03
+    status: Expired - Lifetime
+    expiry:
+      date: 2008-11-12
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5065220A
       google_patents: https://patents.google.com/patent/US5065220A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4821085A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5302539A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1994-04-12
-    status: null
+    title: VLSI interconnect method and structure
+    application_number: US07/530,492
+    filing_date: 1990-05-29
+    status: Expired - Lifetime
+    expiry:
+      date: 2011-04-12
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5302539A
       google_patents: https://patents.google.com/patent/US5302539A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4821085A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR890017734A
     country: KR
     kind: A
     document_type: application
     publication_date: 1989-12-18
-    status: null
+    title: Metal plate capacitors and manufacturing method thereof
+    application_number: KR1019890005127A
+    filing_date: 1989-04-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR890017734A
       google_patents: https://patents.google.com/patent/KR890017734A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4821085A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR0157044B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 1998-10-15
-    status: null
+    title: Metal plate capacitor and method for making the same
+    application_number: KR1019890005127A
+    filing_date: 1989-04-19
+    status: Expired - Fee Related
+    expiry:
+      date: 2009-04-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR0157044B1
       google_patents: https://patents.google.com/patent/KR0157044B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4821085A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-101
     relation: cited-on-page
@@ -1794,11 +1994,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4731319A, retrieved 2026-09-14
   expiry:
-    date: 2006-08-09
+    date: 2009-07-20
     estimated: true
     basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPS6235347A (estimated upper bound: earliest priority date + 21 years
-      (12-month priority period + 20-year term))'
+      the latest estimate is that of JPH0654384B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4731319A
@@ -1823,71 +2023,96 @@ families:
     kind: A1
     document_type: application
     publication_date: 1987-02-12
-    status: null
+    title: POSITIVELY WORKING PHOTORESIST COMPOSITION
+    application_number: DE19863626578
+    filing_date: 1986-08-06
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3626578A1
       google_patents: https://patents.google.com/patent/DE3626578A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4731319A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3626578C2
     country: DE
     kind: C2
     document_type: granted-patent
     publication_date: 1989-03-23
-    status: null
+    title: ''
+    application_number: DE3626578A
+    filing_date: 1986-08-06
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3626578C2
       google_patents: https://patents.google.com/patent/DE3626578C2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4731319A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: GB8619367D0
     country: GB
     kind: D0
     document_type: application
     publication_date: 1986-09-17
-    status: null
+    title: Photoresist composition
+    application_number: GB868619367A
+    filing_date: 1986-08-08
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DGB8619367D0
       google_patents: https://patents.google.com/patent/GB8619367D0/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4731319A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: GB2181441A
     country: GB
     kind: A
     document_type: application
     publication_date: 1987-04-23
-    status: null
+    title: A positive-working photoresist composition
+    application_number: GB08619367A
+    filing_date: 1986-08-08
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DGB2181441A
       google_patents: https://patents.google.com/patent/GB2181441A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4731319A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: GB2181441B
     country: GB
     kind: B
     document_type: granted-patent
     publication_date: 1988-07-13
-    status: null
+    title: A positive-working photoresist composition
+    application_number: GB08619367A
+    filing_date: 1986-08-08
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DGB2181441B
       google_patents: https://patents.google.com/patent/GB2181441B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4731319A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS6235347A
     country: JP
     kind: A
     document_type: application
     publication_date: 1987-02-16
-    status: null
+    title: Composition for photoresist
+    application_number: JP60174314A
+    filing_date: 1985-08-09
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS6235347A
       google_patents: https://patents.google.com/patent/JPS6235347A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4731319A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0654384B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1994-07-20
-    status: null
+    title: Positive photoresist composition
+    application_number: JP60174314A
+    filing_date: 1985-08-09
+    status: Expired - Lifetime
+    expiry:
+      date: 2009-07-20
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0654384B2
       google_patents: https://patents.google.com/patent/JPH0654384B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4731319A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: material-lithography-materials
     relation: cited-on-page
@@ -1932,8 +2157,8 @@ families:
     date: 2006-10-28
     estimated: true
     basis: 'all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPS62102544A (estimated upper bound: earliest priority date + 21
-      years (12-month priority period + 20-year term))'
+      the latest estimate is that of ATE50379T1 (estimated upper bound: earliest priority date + 21 years
+      (12-month priority period + 20-year term))'
   expired: true
   members:
   - number: US4789648A
@@ -1959,91 +2184,124 @@ families:
     kind: T1
     document_type: translation-of-granted-patent
     publication_date: 1990-02-15
+    title: PROCESS FOR FABRICATION OF COPLANAR MULTILAYER METAL INSULATOR LAYERS ON A SUBSTRATE.
+    application_number: AT86114396T
+    filing_date: 1986-10-17
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DATE50379T1
       google_patents: https://patents.google.com/patent/ATE50379T1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4789648A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: BR8604547A
     country: BR
     kind: A
     document_type: application
     publication_date: 1987-05-26
+    title: METHOD OF PRODUCTION OF INSULATING METAL COPLANE FILMS IN MULTIPLE LEVELS ON A SUBSTRATE AND
+      FOR THE FORMATION OF CONDUCTING LINES IN CONFIGURATION SIMULTANEOUSLY WITH PASSAGE PIN CONNECTIONS
+    application_number: BR8604547A
+    filing_date: 1986-09-23
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DBR8604547A
       google_patents: https://patents.google.com/patent/BR8604547A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4789648A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CA1248641A
     country: CA
     kind: A
     document_type: application
     publication_date: 1989-01-10
-    status: null
+    title: Method for producing coplanar multi-level metal/insulator films on a substrate and for forming
+      patterned conductive lines simultaneously with stud vias
+    application_number: CA000514222A
+    filing_date: 1986-07-21
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCA1248641A
       google_patents: https://patents.google.com/patent/CA1248641A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4789648A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3669016D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 1990-03-15
-    status: null
+    title: METHOD FOR PRODUCING COPLANAR VIELLAGE METAL ISOLATOR LAYERS ON A SUBSTRATE.
+    application_number: DE8686114396T
+    filing_date: 1986-10-17
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3669016D1
       google_patents: https://patents.google.com/patent/DE3669016D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4789648A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0224013A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1987-06-03
-    status: null
+    title: Method for producing coplanar multi-level metal/insulator films on a substrate
+    application_number: EP86114396A
+    filing_date: 1986-10-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0224013A2
       google_patents: https://patents.google.com/patent/EP0224013A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4789648A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0224013A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1987-09-30
-    status: null
+    title: Method for producing coplanar multi-level metal/insulator films on a substrate
+    application_number: EP86114396A
+    filing_date: 1986-10-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0224013A3
       google_patents: https://patents.google.com/patent/EP0224013A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4789648A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0224013B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1990-02-07
-    status: null
+    title: Method for producing coplanar multi-level metal/insulator films on a substrate
+    application_number: EP86114396A
+    filing_date: 1986-10-17
+    status: Expired - Lifetime
+    expiry:
+      date: 2006-10-17
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0224013B1
       google_patents: https://patents.google.com/patent/EP0224013B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4789648A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS62102544A
     country: JP
     kind: A
     document_type: application
     publication_date: 1987-05-13
-    status: null
+    title: Formation of multilayer metal/insulator structure
+    application_number: JP61219904A
+    filing_date: 1986-09-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS62102544A
       google_patents: https://patents.google.com/patent/JPS62102544A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4789648A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0546983B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1993-07-15
-    status: null
+    title: ''
+    application_number: JP61219904A
+    filing_date: 1986-09-19
+    status: Expired - Fee Related
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0546983B2
       google_patents: https://patents.google.com/patent/JPH0546983B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4789648A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-cmp
     relation: cited-on-page
@@ -2117,10 +2375,10 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4944836A, retrieved 2026-09-14
   expiry:
-    date: 2007-07-31
+    date: 2012-09-30
     estimated: true
     basis: 'all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US4944836A (Google Patents ''Anticipated expiration'' (IFI Claims
+      the latest estimate is that of JP2659918B2 (Google Patents ''Anticipated expiration'' (IFI Claims
       estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
@@ -2146,91 +2404,130 @@ families:
     kind: A
     document_type: application
     publication_date: 1988-11-29
-    status: null
+    title: Chem-mech polishing method for producing coplanar metal/insulator films on a substrate
+    application_number: CA000509373A
+    filing_date: 1986-05-16
+    status: Expired
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCA1245517A
       google_patents: https://patents.google.com/patent/CA1245517A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4944836A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3676458D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 1991-02-07
-    status: null
+    title: METHOD FOR CHEMICAL POLISHING FOR PRODUCING A COPLANAR LAYER OF INSULATOR METAL ON A SUBSTRATE.
+    application_number: DE8686110461T
+    filing_date: 1986-07-29
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3676458D1
       google_patents: https://patents.google.com/patent/DE3676458D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4944836A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0223920A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1987-06-03
-    status: null
+    title: Chem-mech polishing method for producing coplanar metal/insulator films on a substrate
+    application_number: EP86110461A
+    filing_date: 1986-07-29
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0223920A2
       google_patents: https://patents.google.com/patent/EP0223920A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4944836A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0223920A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1987-09-23
-    status: null
+    title: Chem-mech polishing method for producing coplanar metal/insulator films on a substrate
+    application_number: EP86110461A
+    filing_date: 1986-07-29
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0223920A3
       google_patents: https://patents.google.com/patent/EP0223920A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4944836A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0223920B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1991-01-02
-    status: null
+    title: Chem-mech polishing method for producing coplanar metal/insulator films on a substrate
+    application_number: EP86110461A
+    filing_date: 1986-07-29
+    status: Expired - Lifetime
+    expiry:
+      date: 2006-07-29
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0223920B1
       google_patents: https://patents.google.com/patent/EP0223920B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4944836A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS62102543A
     country: JP
     kind: A
     document_type: application
     publication_date: 1987-05-13
-    status: null
+    title: Formation of conductive film and insulating film with same flat surface
+    application_number: JP61214224A
+    filing_date: 1986-09-12
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS62102543A
       google_patents: https://patents.google.com/patent/JPS62102543A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4944836A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0777218B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1995-08-16
-    status: null
+    title: Method for forming metal layer and insulating layer on the same flat surface
+    application_number: JP61214224A
+    filing_date: 1986-09-12
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-08-16
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0777218B2
       google_patents: https://patents.google.com/patent/JPH0777218B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4944836A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0817831A
     country: JP
     kind: A
     document_type: application
     publication_date: 1996-01-19
-    status: null
+    title: Method for forming metal layer and silicon dioxide layer on flat surface
+    application_number: JP6291012A
+    filing_date: 1994-11-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0817831A
       google_patents: https://patents.google.com/patent/JPH0817831A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4944836A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2659918B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1997-09-30
-    status: null
+    title: Method for forming metal layer and silicon dioxide layer on flat surface
+    application_number: JP6291012A
+    filing_date: 1994-11-25
+    status: Expired - Lifetime
+    expiry:
+      date: 2012-09-30
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2659918B2
       google_patents: https://patents.google.com/patent/JP2659918B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4944836A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-cmp
     relation: cited-on-page
@@ -2298,8 +2595,8 @@ families:
     date: 2012-07-04
     estimated: true
     basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US5429958A (estimated upper bound: grant date + 17 years (US application
-      filed before 1995-06-08))'
+      the latest estimate is that of US5429958A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US5247199A
@@ -2324,11 +2621,18 @@ families:
     kind: A
     document_type: granted-patent
     publication_date: 1995-07-04
-    status: null
+    title: Process for forming twin well CMOS integrated circuits
+    application_number: US08/080,744
+    filing_date: 1993-06-22
+    status: Expired - Lifetime
+    expiry:
+      date: 2012-07-04
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5429958A
       google_patents: https://patents.google.com/patent/US5429958A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5247199A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: mask-pwbm
     relation: cited-on-page
@@ -2443,11 +2747,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4795582A, retrieved 2026-09-14
   expiry:
-    date: 2007-09-29
+    date: 2007-09-28
     estimated: true
     basis: 'all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of KR960013146B1 (estimated upper bound: earliest priority date + 21
-      years (12-month priority period + 20-year term))'
+      the latest estimate is that of KR960013146B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4795582A
@@ -2472,41 +2776,57 @@ families:
     kind: A
     document_type: application
     publication_date: 1988-11-18
-    status: null
+    title: Treating agent for fine working surface
+    application_number: JP61230439A
+    filing_date: 1986-09-29
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS63283028A
       google_patents: https://patents.google.com/patent/JPS63283028A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4795582A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0317372B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1991-03-07
-    status: null
+    title: ''
+    application_number: JP61230439A
+    filing_date: 1986-09-29
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0317372B2
       google_patents: https://patents.google.com/patent/JPH0317372B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4795582A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR880004557A
     country: KR
     kind: A
     document_type: application
     publication_date: 1988-06-07
-    status: null
+    title: Surface Treatment Compositions for Micro Processing
+    application_number: KR1019870010754A
+    filing_date: 1987-09-28
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR880004557A
       google_patents: https://patents.google.com/patent/KR880004557A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4795582A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR960013146B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 1996-09-30
-    status: null
+    title: Surface Treatment Compositions for Micro Processing
+    application_number: KR1019870010754A
+    filing_date: 1987-09-28
+    status: Expired - Lifetime
+    expiry:
+      date: 2007-09-28
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR960013146B1
       google_patents: https://patents.google.com/patent/KR960013146B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4795582A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: material-wet-chemicals
     relation: cited-on-page
@@ -2541,11 +2861,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4698128A, retrieved 2026-09-14
   expiry:
-    date: 2007-11-17
+    date: 2013-02-10
     estimated: true
     basis: 'all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of KR970007109B1 (estimated upper bound: earliest priority date + 21
-      years (12-month priority period + 20-year term))'
+      the latest estimate is that of JP2711538B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Fee Related)'
   expired: true
   members:
   - number: US4698128A
@@ -2570,61 +2890,87 @@ families:
     kind: A2
     document_type: application
     publication_date: 1988-05-25
-    status: null
+    title: Sloped contact etch process
+    application_number: EP87111722A
+    filing_date: 1987-08-13
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0268021A2
       google_patents: https://patents.google.com/patent/EP0268021A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4698128A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0268021A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1989-01-18
-    status: null
+    title: Sloped contact etch process
+    application_number: EP87111722A
+    filing_date: 1987-08-13
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0268021A3
       google_patents: https://patents.google.com/patent/EP0268021A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4698128A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS63173330A
     country: JP
     kind: A
     document_type: application
     publication_date: 1988-07-16
-    status: null
+    title: Slant contact etching
+    application_number: JP62261896A
+    filing_date: 1987-10-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS63173330A
       google_patents: https://patents.google.com/patent/JPS63173330A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4698128A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2711538B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1998-02-10
-    status: null
+    title: Inclined contact etch method
+    application_number: JP62261896A
+    filing_date: 1987-10-19
+    status: Expired - Fee Related
+    expiry:
+      date: 2013-02-10
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2711538B2
       google_patents: https://patents.google.com/patent/JP2711538B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4698128A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR880006767A
     country: KR
     kind: A
     document_type: application
     publication_date: 1988-07-25
-    status: null
+    title: Incline Contact Corrosion Treatment
+    application_number: KR870012902A
+    filing_date: 1987-11-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR880006767A
       google_patents: https://patents.google.com/patent/KR880006767A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4698128A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR970007109B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 1997-05-02
-    status: null
+    title: Inclined contact etching method
+    application_number: KR1019870012902A
+    filing_date: 1987-11-17
+    status: Expired - Fee Related
+    expiry:
+      date: 2007-11-17
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR970007109B1
       google_patents: https://patents.google.com/patent/KR970007109B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4698128A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-159
     relation: cited-on-page
@@ -2674,11 +3020,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4842683A, retrieved 2026-09-14
   expiry:
-    date: 2007-12-19
+    date: 2018-07-10
     estimated: true
     basis: 'all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPH11111700A (estimated upper bound: earliest priority date + 21
-      years (12-month priority period + 20-year term))'
+      the latest estimate is that of JPH11111700A (estimated: 20 years from the filing date shown; no
+      term remains for any grant on it)'
   expired: true
   members:
   - number: US4842683A
@@ -2703,91 +3049,126 @@ families:
     kind: T1
     document_type: translation-of-granted-patent
     publication_date: 1995-03-15
+    title: VACUUM MACHINING REACTOR.
+    application_number: AT89107484T
+    filing_date: 1989-04-25
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DATE118923T1
       google_patents: https://patents.google.com/patent/ATE118923T1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4842683A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE68921234D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 1995-03-30
-    status: null
+    title: Vacuum processing reactor.
+    application_number: DE68921234T
+    filing_date: 1989-04-25
+    status: Expired - Fee Related
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE68921234D1
       google_patents: https://patents.google.com/patent/DE68921234D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4842683A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE68921234T2
     country: DE
     kind: T2
     document_type: translation-of-granted-patent
     publication_date: 1995-06-22
-    status: null
+    title: Vacuum processing reactor.
+    application_number: DE68921234T
+    filing_date: 1989-04-25
+    status: Expired - Fee Related
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE68921234T2
       google_patents: https://patents.google.com/patent/DE68921234T2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4842683A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0339580A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1989-11-02
-    status: null
+    title: A vacuum processing reactor
+    application_number: EP89107484A
+    filing_date: 1989-04-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0339580A2
       google_patents: https://patents.google.com/patent/EP0339580A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4842683A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0339580A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1990-11-22
-    status: null
+    title: A vacuum processing reactor
+    application_number: EP19890107484
+    filing_date: 1989-04-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0339580A3
       google_patents: https://patents.google.com/patent/EP0339580A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4842683A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0339580B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1995-02-22
-    status: null
+    title: A vacuum processing reactor
+    application_number: EP89107484A
+    filing_date: 1989-04-25
+    status: Expired - Lifetime
+    expiry:
+      date: 2009-04-25
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0339580B1
       google_patents: https://patents.google.com/patent/EP0339580B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4842683A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0215623A
     country: JP
     kind: A
     document_type: application
     publication_date: 1990-01-19
-    status: null
+    title: Magnetic field enhancing plasma etching reactor
+    application_number: JP1104374A
+    filing_date: 1989-04-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0215623A
       google_patents: https://patents.google.com/patent/JPH0215623A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4842683A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2824079B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1998-11-11
-    status: null
+    title: Magnetic field enhanced type plasma etch reactor
+    application_number: JP1104374A
+    filing_date: 1989-04-24
+    status: Expired - Fee Related
+    expiry:
+      date: 2013-11-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2824079B2
       google_patents: https://patents.google.com/patent/JP2824079B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4842683A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH11111700A
     country: JP
     kind: A
     document_type: application
     publication_date: 1999-04-23
-    status: null
+    title: Magnetic field enhanced type plasma etch reactor
+    application_number: JP10195244A
+    filing_date: 1998-07-10
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH11111700A
       google_patents: https://patents.google.com/patent/JPH11111700A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4842683A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-plasma-etcher-dielectric
     relation: cited-on-page
@@ -2832,8 +3213,8 @@ families:
     date: 2018-01-02
     estimated: true
     basis: 'all 21 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US6167834B1 (estimated upper bound: grant date + 17 years (US application
-      filed before 1995-06-08))'
+      the latest estimate is that of US6167834B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Fee Related)'
   expired: true
   members:
   - number: US5000113A
@@ -2859,201 +3240,303 @@ families:
     kind: A
     document_type: granted-patent
     publication_date: 1994-10-11
-    status: null
+    title: Thermal chemical vapor deposition of silicon dioxide and in-situ multi-step planarized process
+    application_number: US07/861,719
+    filing_date: 1992-04-01
+    status: Expired - Lifetime
+    expiry:
+      date: 2011-10-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5354715A
       google_patents: https://patents.google.com/patent/US5354715A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5362526A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1994-11-08
-    status: null
+    title: Plasma-enhanced CVD process using TEOS for depositing silicon oxide
+    application_number: US07/645,999
+    filing_date: 1991-01-23
+    status: Expired - Lifetime
+    expiry:
+      date: 2011-11-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5362526A
       google_patents: https://patents.google.com/patent/US5362526A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6167834B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2001-01-02
-    status: null
+    title: Thermal CVD/PECVD reactor and use for thermal chemical vapor deposition of silicon dioxide
+      and in-situ multi-step planarized process
+    application_number: US07/928,642
+    filing_date: 1992-08-13
+    status: Expired - Fee Related
+    expiry:
+      date: 2018-01-02
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6167834B1
       google_patents: https://patents.google.com/patent/US6167834B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: ATE101879T1
     country: AT
     kind: T1
     document_type: translation-of-granted-patent
     publication_date: 1994-03-15
+    title: PLASMA ASSISTED CVD PROCESS BASED ON TEOS FOR THE MANUFACTURE OF SILICON DIOXIDE.
+    application_number: AT87311193T
+    filing_date: 1987-12-18
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DATE101879T1
       google_patents: https://patents.google.com/patent/ATE101879T1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3789142D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 1994-03-31
-    status: null
+    title: Plasma-assisted CVD process based on TEOS for the production of silicon dioxide.
+    application_number: DE87311193T
+    filing_date: 1987-12-18
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3789142D1
       google_patents: https://patents.google.com/patent/DE3789142D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3789142T2
     country: DE
     kind: T2
     document_type: translation-of-granted-patent
     publication_date: 1994-05-26
-    status: null
+    title: Plasma-assisted CVD process based on TEOS for the production of silicon dioxide.
+    application_number: DE3789142T
+    filing_date: 1987-12-18
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3789142T2
       google_patents: https://patents.google.com/patent/DE3789142T2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0272140A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1988-06-22
-    status: null
+    title: TEOS based plasma enhanced chemical vapor deposition process for deposition of silicon dioxide
+      films.
+    application_number: EP87311193A
+    filing_date: 1987-12-18
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0272140A2
       google_patents: https://patents.google.com/patent/EP0272140A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0272140A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1990-11-14
-    status: null
+    title: Thermal cvd/pecvd reactor and use for thermal chemical vapor deposition of silicon dioxide
+      and in-situ multi-step planarized process
+    application_number: EP19870311193
+    filing_date: 1987-12-18
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0272140A3
       google_patents: https://patents.google.com/patent/EP0272140A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0272140B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1994-02-23
-    status: null
+    title: TEOS based plasma enhanced chemical vapor deposition process for deposition of silicon dioxide
+      films.
+    application_number: EP87311193A
+    filing_date: 1987-12-18
+    status: Expired - Lifetime
+    expiry:
+      date: 2007-12-18
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0272140B1
       google_patents: https://patents.google.com/patent/EP0272140B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: ES2049729T3
     country: ES
     kind: T3
     document_type: translation-of-granted-patent
     publication_date: 1994-05-01
-    status: null
+    title: CHEMICAL DEPOSITION PROCEDURE IN STEAM PHASE, IMPROVED BY PLASMA BASED ON TEOS, FOR THE DEPOSITION
+      OF SILICON DIOXIDE FILMS.
+    application_number: ES87311193T
+    filing_date: 1987-12-18
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DES2049729T3
       google_patents: https://patents.google.com/patent/ES2049729T3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS63246829A
     country: JP
     kind: A
     document_type: application
     publication_date: 1988-10-13
-    status: null
+    title: Application and on-site multistage planaring process for hot cvd/pecvd reactor and thermochemically
+      evaporation of silicon oxide
+    application_number: JP62321181A
+    filing_date: 1987-12-18
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS63246829A
       google_patents: https://patents.google.com/patent/JPS63246829A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0613367A
     country: JP
     kind: A
     document_type: application
     publication_date: 1994-01-21
-    status: null
+    title: TEOS thermal CVD method
+    application_number: JP5038905A
+    filing_date: 1993-02-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0613367A
       google_patents: https://patents.google.com/patent/JPH0613367A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0613368A
     country: JP
     kind: A
     document_type: application
     publication_date: 1994-01-21
-    status: null
+    title: Semiconductor processing reactor
+    application_number: JP5038904A
+    filing_date: 1993-02-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0613368A
       google_patents: https://patents.google.com/patent/JPH0613368A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0612771B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1994-02-16
-    status: null
+    title: TEOS plasma CVD method
+    application_number: JP62321181A
+    filing_date: 1987-12-18
+    status: Expired - Lifetime
+    expiry:
+      date: 2009-02-16
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0612771B2
       google_patents: https://patents.google.com/patent/JPH0612771B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0855843A
     country: JP
     kind: A
     document_type: application
     publication_date: 1996-02-27
-    status: null
+    title: Semiconductor processing reactor
+    application_number: JP7201143A
+    filing_date: 1995-08-07
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0855843A
       google_patents: https://patents.google.com/patent/JPH0855843A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0870035A
     country: JP
     kind: A
     document_type: application
     publication_date: 1996-03-12
-    status: null
+    title: Semiconductor processing reactor
+    application_number: JP7201144A
+    filing_date: 1995-08-07
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0870035A
       google_patents: https://patents.google.com/patent/JPH0870035A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2584960B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1997-02-26
-    status: null
+    title: Semiconductor processing reactor
+    application_number: JP20114495A
+    filing_date: 1995-08-07
+    status: Expired - Lifetime
+    expiry:
+      date: 2015-08-07
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2584960B2
       google_patents: https://patents.google.com/patent/JP2584960B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2651102B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1997-09-10
-    status: null
+    title: Semiconductor processing reactor
+    application_number: JP5038904A
+    filing_date: 1993-02-26
+    status: Expired - Lifetime
+    expiry:
+      date: 2012-09-10
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2651102B2
       google_patents: https://patents.google.com/patent/JP2651102B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2716642B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1998-02-18
-    status: null
+    title: Method of forming thin film using TEOS and flattening method
+    application_number: JP5038905A
+    filing_date: 1993-02-26
+    status: Expired - Lifetime
+    expiry:
+      date: 2013-02-18
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2716642B2
       google_patents: https://patents.google.com/patent/JP2716642B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2723845B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1998-03-09
-    status: null
+    title: Semiconductor processing reactor
+    application_number: JP7201143A
+    filing_date: 1995-08-07
+    status: Expired - Lifetime
+    expiry:
+      date: 2015-08-07
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2723845B2
       google_patents: https://patents.google.com/patent/JP2723845B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5000113A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-pecvd
     relation: cited-on-page
@@ -3145,10 +3628,10 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4903717A, retrieved 2026-09-14
   expiry:
-    date: 2008-11-09
+    date: 2010-02-22
     estimated: true
     basis: 'all 20 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US4903717A (Google Patents ''Anticipated expiration'' (IFI Claims
+      the latest estimate is that of JPH0715150B2 (Google Patents ''Anticipated expiration'' (IFI Claims
       estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
@@ -3174,191 +3657,268 @@ families:
     kind: A
     document_type: application
     publication_date: 1989-07-15
+    title: DEVICE FOR SETTING DISC-SHAPED OBJECTS, ESPECIALLY SILICONE DISC
+    application_number: AT872958A
+    filing_date: 1987-11-09
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DATA295887A
       google_patents: https://patents.google.com/patent/ATA295887A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: AT389959B
     country: AT
     kind: B
     document_type: granted-patent
     publication_date: 1990-02-26
+    title: DEVICE FOR SETTING DISC-SHAPED OBJECTS, ESPECIALLY SILICONE DISC
+    application_number: AT0295887A
+    filing_date: 1987-11-09
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DAT389959B
       google_patents: https://patents.google.com/patent/AT389959B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: ATE104470T1
     country: AT
     kind: T1
     document_type: translation-of-granted-patent
     publication_date: 1994-04-15
+    title: SUPPORT FOR DISC-FORM OBJECTS AND DEVICE FOR ETCHING SILICON DISCS WITH SUCH SUPPORT.
+    application_number: AT88890271T
+    filing_date: 1988-10-31
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DATE104470T1
       google_patents: https://patents.google.com/patent/ATE104470T1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: ATE105972T1
     country: AT
     kind: T1
     document_type: translation-of-granted-patent
     publication_date: 1994-06-15
+    title: DEVICE FOR TREATMENT OF DISC-SHAPED OBJECTS.
+    application_number: AT91104986T
+    filing_date: 1988-10-31
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DATE105972T1
       google_patents: https://patents.google.com/patent/ATE105972T1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CA1309929C
     country: CA
     kind: C
     document_type: application
     publication_date: 1992-11-10
-    status: null
+    title: Carrier for use in etching disk-shaped objects
+    application_number: CA000582633A
+    filing_date: 1988-11-09
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCA1309929C
       google_patents: https://patents.google.com/patent/CA1309929C/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3889073D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 1994-05-19
-    status: null
+    title: Carrier for disk-shaped objects and device for etching silicon wafers with such a carrier.
+    application_number: DE3889073T
+    filing_date: 1988-10-31
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3889073D1
       google_patents: https://patents.google.com/patent/DE3889073D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3889672D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 1994-06-23
-    status: null
+    title: Device for treating disc-shaped objects.
+    application_number: DE3889672T
+    filing_date: 1988-10-31
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3889672D1
       google_patents: https://patents.google.com/patent/DE3889672D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0316296A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1989-05-17
-    status: null
+    title: Holder for disc-like articles, and device for etching silicon chips with such a holder
+    application_number: EP88890271A
+    filing_date: 1988-10-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0316296A2
       google_patents: https://patents.google.com/patent/EP0316296A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0316296A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1990-09-19
-    status: null
+    title: Holder for disc-like articles, and device for etching silicon chips with such a holder
+    application_number: EP19880890271
+    filing_date: 1988-10-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0316296A3
       google_patents: https://patents.google.com/patent/EP0316296A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0444714A1
     country: EP
     kind: A1
     document_type: application
     publication_date: 1991-09-04
-    status: null
+    title: Holder device for processing disc-like articles
+    application_number: EP91104986A
+    filing_date: 1988-10-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0444714A1
       google_patents: https://patents.google.com/patent/EP0444714A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0316296B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1994-04-13
-    status: null
+    title: Holder for disc-like articles, and device for etching silicon chips with such a holder
+    application_number: EP88890271A
+    filing_date: 1988-10-31
+    status: Expired - Lifetime
+    expiry:
+      date: 2008-10-31
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0316296B1
       google_patents: https://patents.google.com/patent/EP0316296B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0444714B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1994-05-18
-    status: null
+    title: Holder device for processing disc-like articles
+    application_number: EP91104986A
+    filing_date: 1988-10-31
+    status: Expired - Lifetime
+    expiry:
+      date: 2008-10-31
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0444714B1
       google_patents: https://patents.google.com/patent/EP0444714B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH01240682A
     country: JP
     kind: A
     document_type: application
     publication_date: 1989-09-26
-    status: null
+    title: Support device for disc shaped object and apparatus for etching silicon disc using said device
+    application_number: JP63283515A
+    filing_date: 1988-11-09
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH01240682A
       google_patents: https://patents.google.com/patent/JPH01240682A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0514791B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1993-02-25
-    status: null
+    title: ''
+    application_number: JP63283515A
+    filing_date: 1988-11-09
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0514791B2
       google_patents: https://patents.google.com/patent/JPH0514791B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH05283395A
     country: JP
     kind: A
     document_type: application
     publication_date: 1993-10-29
-    status: null
+    title: Thin material cleaning device
+    application_number: JP3251845A
+    filing_date: 1991-09-30
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH05283395A
       google_patents: https://patents.google.com/patent/JPH05283395A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0715150B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1995-02-22
-    status: null
+    title: Thin material cleaning equipment
+    application_number: JP3251845A
+    filing_date: 1991-09-30
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-02-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0715150B2
       google_patents: https://patents.google.com/patent/JPH0715150B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR890008014A
     country: KR
     kind: A
     document_type: application
     publication_date: 1989-07-08
-    status: null
+    title: Disc Workpiece Carrier and Silicon Disc Corrosion Device Having Such Carrier
+    application_number: KR1019880014743A
+    filing_date: 1988-11-09
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR890008014A
       google_patents: https://patents.google.com/patent/KR890008014A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR970001008B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 1997-01-25
-    status: null
+    title: Carrier for supporting disk workpiece
+    application_number: KR1019880014743A
+    filing_date: 1988-11-09
+    status: Expired - Lifetime
+    expiry:
+      date: 2008-11-09
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR970001008B1
       google_patents: https://patents.google.com/patent/KR970001008B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR0120321B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 1997-10-22
-    status: null
+    title: Device for etching disc-like articles
+    application_number: KR1019960060979A
+    filing_date: 1996-12-02
+    status: Ceased
+    expiry:
+      date: 2008-11-09
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR0120321B1
       google_patents: https://patents.google.com/patent/KR0120321B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4903717A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-single-wafer-spin-processor
     relation: cited-on-page
@@ -3394,11 +3954,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4999014A, retrieved 2026-09-14
   expiry:
-    date: 2010-05-04
+    date: 2011-07-10
     estimated: true
     basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPH0317505A (estimated upper bound: earliest priority date + 21 years
-      (12-month priority period + 20-year term))'
+      the latest estimate is that of JP2514099B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4999014A
@@ -3423,71 +3983,100 @@ families:
     kind: D1
     document_type: application
     publication_date: 1995-04-27
-    status: null
+    title: Method and device for measuring the thickness of thin films.
+    application_number: DE69017947T
+    filing_date: 1990-05-02
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE69017947D1
       google_patents: https://patents.google.com/patent/DE69017947D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4999014A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE69017947T2
     country: DE
     kind: T2
     document_type: translation-of-granted-patent
     publication_date: 1995-11-16
-    status: null
+    title: Method and device for measuring the thickness of thin films.
+    application_number: DE69017947T
+    filing_date: 1990-05-02
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE69017947T2
       google_patents: https://patents.google.com/patent/DE69017947T2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4999014A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0397388A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1990-11-14
-    status: null
+    title: Method and apparatus for measuring thickness of thin films
+    application_number: EP90304800A
+    filing_date: 1990-05-02
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0397388A2
       google_patents: https://patents.google.com/patent/EP0397388A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4999014A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0397388A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1992-01-02
-    status: null
+    title: Method and apparatus for measuring thickness of thin films
+    application_number: EP19900304800
+    filing_date: 1990-05-02
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0397388A3
       google_patents: https://patents.google.com/patent/EP0397388A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4999014A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0397388B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1995-03-22
-    status: null
+    title: Method and apparatus for measuring thickness of thin films
+    application_number: EP90304800A
+    filing_date: 1990-05-02
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-05-02
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0397388B1
       google_patents: https://patents.google.com/patent/EP0397388B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4999014A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0317505A
     country: JP
     kind: A
     document_type: application
     publication_date: 1991-01-25
-    status: null
+    title: Method and device for measuring thickness of thin-film
+    application_number: JP2116410A
+    filing_date: 1990-05-02
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0317505A
       google_patents: https://patents.google.com/patent/JPH0317505A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4999014A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2514099B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1996-07-10
-    status: null
+    title: Method and apparatus for measuring thin film thickness
+    application_number: JP2116410A
+    filing_date: 1990-05-02
+    status: Expired - Lifetime
+    expiry:
+      date: 2011-07-10
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2514099B2
       google_patents: https://patents.google.com/patent/JP2514099B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4999014A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-film-thickness-metrology
     relation: cited-on-page
@@ -3584,11 +4173,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4919748A, retrieved 2026-09-14
   expiry:
-    date: 2010-06-30
+    date: 2011-06-12
     estimated: true
     basis: 'all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPH0344030A (estimated upper bound: earliest priority date + 21 years
-      (12-month priority period + 20-year term))'
+      the latest estimate is that of JP2505914B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4919748A
@@ -3613,41 +4202,57 @@ families:
     kind: A2
     document_type: application
     publication_date: 1991-01-02
-    status: null
+    title: Method and apparatus for tapered etching
+    application_number: EP90306832A
+    filing_date: 1990-06-22
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0405848A2
       google_patents: https://patents.google.com/patent/EP0405848A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4919748A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0405848A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1991-03-06
-    status: null
+    title: Method and apparatus for tapered etching
+    application_number: EP19900306832
+    filing_date: 1990-06-22
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0405848A3
       google_patents: https://patents.google.com/patent/EP0405848A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4919748A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0344030A
     country: JP
     kind: A
     document_type: application
     publication_date: 1991-02-25
-    status: null
+    title: Inclined etching method and device
+    application_number: JP2170356A
+    filing_date: 1990-06-29
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0344030A
       google_patents: https://patents.google.com/patent/JPH0344030A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4919748A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2505914B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1996-06-12
-    status: null
+    title: Method of manufacturing semiconductor device
+    application_number: JP2170356A
+    filing_date: 1990-06-29
+    status: Expired - Lifetime
+    expiry:
+      date: 2011-06-12
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2505914B2
       google_patents: https://patents.google.com/patent/JP2505914B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4919748A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-plasma-etcher-metal
     relation: cited-on-page
@@ -3692,11 +4297,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4948458A, retrieved 2026-09-14
   expiry:
-    date: 2010-08-14
+    date: 2019-07-19
     estimated: true
     basis: 'all 15 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of KR910005733A (estimated upper bound: earliest priority date + 21
-      years (12-month priority period + 20-year term))'
+      the latest estimate is that of JP3224529B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US4948458A
@@ -3721,141 +4326,200 @@ families:
     kind: T1
     document_type: translation-of-granted-patent
     publication_date: 1998-01-15
+    title: METHOD AND DEVICE FOR GENERATING A FLAT PLASMA USING A MAGNETIC COUPLING
+    application_number: AT90115478T
+    filing_date: 1990-08-11
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DATE161357T1
       google_patents: https://patents.google.com/patent/ATE161357T1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE69031820D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 1998-01-29
-    status: null
+    title: Method and device for generating a flat plasma by means of magnetic coupling
+    application_number: DE69031820T
+    filing_date: 1990-08-11
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE69031820D1
       google_patents: https://patents.google.com/patent/DE69031820D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE69031820T2
     country: DE
     kind: T2
     document_type: translation-of-granted-patent
     publication_date: 1998-06-25
-    status: null
+    title: Method and device for generating a flat plasma by means of magnetic coupling
+    application_number: DE69031820T
+    filing_date: 1990-08-11
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE69031820T2
       google_patents: https://patents.google.com/patent/DE69031820T2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DK0413282T3
     country: DK
     kind: T3
     document_type: translation-of-granted-patent
     publication_date: 1998-08-24
+    title: Method and apparatus for providing magnetically coupled flat plasma
+    application_number: DK90115478T
+    filing_date: 1990-08-11
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDK0413282T3
       google_patents: https://patents.google.com/patent/DK0413282T3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0413282A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1991-02-20
-    status: null
+    title: Method and apparatus for producing magnetically-coupled planar plasma
+    application_number: EP90115478A
+    filing_date: 1990-08-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0413282A2
       google_patents: https://patents.google.com/patent/EP0413282A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0413282A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1991-07-24
-    status: null
+    title: Method and apparatus for producing magnetically-coupled planar plasma
+    application_number: EP19900115478
+    filing_date: 1990-08-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0413282A3
       google_patents: https://patents.google.com/patent/EP0413282A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0413282B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1997-12-17
-    status: null
+    title: Method and apparatus for producing magnetically-coupled planar plasma
+    application_number: EP90115478A
+    filing_date: 1990-08-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-08-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0413282B1
       google_patents: https://patents.google.com/patent/EP0413282B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: ES2110955T3
     country: ES
     kind: T3
     document_type: translation-of-granted-patent
     publication_date: 1998-03-01
-    status: null
+    title: METHOD AND APPARATUS FOR PRODUCING MAGNETICALLY COUPLED PLANAR PLASMA.
+    application_number: ES90115478T
+    filing_date: 1990-08-11
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DES2110955T3
       google_patents: https://patents.google.com/patent/ES2110955T3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0379025A
     country: JP
     kind: A
     document_type: application
     publication_date: 1991-04-04
-    status: null
+    title: Device for creating magnetically-coupled plane-shaped plasma and method and device for processing
+      products with this plasma
+    application_number: JP2205302A
+    filing_date: 1990-08-03
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0379025A
       google_patents: https://patents.google.com/patent/JPH0379025A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2000058297A
     country: JP
     kind: A
     document_type: application
     publication_date: 2000-02-25
-    status: null
+    title: Plasma processing system
+    application_number: JP11205255A
+    filing_date: 1999-07-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2000058297A
       google_patents: https://patents.google.com/patent/JP2000058297A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP3114873B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2000-12-04
-    status: null
+    title: Plasma processing apparatus and method of vapor deposition or etching
+    application_number: JP02205302A
+    filing_date: 1990-08-03
+    status: Expired - Lifetime
+    expiry:
+      date: 2015-12-04
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP3114873B2
       google_patents: https://patents.google.com/patent/JP3114873B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP3224529B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2001-10-29
-    status: null
+    title: Plasma processing system
+    application_number: JP20525599A
+    filing_date: 1999-07-19
+    status: Expired - Lifetime
+    expiry:
+      date: 2019-07-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP3224529B2
       google_patents: https://patents.google.com/patent/JP3224529B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR910005733A
     country: KR
     kind: A
     document_type: application
     publication_date: 1991-03-30
-    status: null
+    title: Method and apparatus for making magnetic coupler planner plasma
+    application_number: KR1019900012506A
+    filing_date: 1990-08-14
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR910005733A
       google_patents: https://patents.google.com/patent/KR910005733A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR100188076B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 1999-06-01
-    status: null
+    title: Method and apparatus for producing magnetically-coupled planar plasma
+    application_number: KR1019900012506A
+    filing_date: 1990-08-14
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-08-14
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR100188076B1
       google_patents: https://patents.google.com/patent/KR100188076B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4948458A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-etch
     relation: cited-on-page
@@ -3955,11 +4619,11 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US5028565A, retrieved 2026-09-14
   expiry:
-    date: 2010-08-25
+    date: 2018-03-25
     estimated: true
     basis: 'all 16 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of KR910005397A (estimated upper bound: earliest priority date + 21
-      years (12-month priority period + 20-year term))'
+      the latest estimate is that of JP3094004B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Fee Related)'
   expired: true
   members:
   - number: US5028565A
@@ -3984,151 +4648,212 @@ families:
     kind: D1
     document_type: application
     publication_date: 1997-05-28
-    status: null
+    title: Method for applying a layer of tungsten on a semiconductor wafer
+    application_number: DE69030541T
+    filing_date: 1990-08-24
+    status: Expired - Fee Related
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE69030541D1
       google_patents: https://patents.google.com/patent/DE69030541D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE69030541T2
     country: DE
     kind: T2
     document_type: translation-of-granted-patent
     publication_date: 1997-09-11
-    status: null
+    title: Method for applying a layer of tungsten on a semiconductor wafer
+    application_number: DE69030541T
+    filing_date: 1990-08-24
+    status: Expired - Fee Related
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE69030541T2
       google_patents: https://patents.google.com/patent/DE69030541T2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0414267A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1991-02-27
-    status: null
+    title: Process for deposition of a tungsten layer on a semiconductor wafer
+    application_number: EP90116274A
+    filing_date: 1990-08-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0414267A2
       google_patents: https://patents.google.com/patent/EP0414267A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0414267A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1991-12-27
-    status: null
+    title: Process for deposition of a tungsten layer on a semiconductor wafer
+    application_number: EP19900116274
+    filing_date: 1990-08-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0414267A3
       google_patents: https://patents.google.com/patent/EP0414267A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0689231A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1995-12-27
-    status: null
+    title: Process for deposition of a tungsten layer on a semi-conductor wafer
+    application_number: EP95114144A
+    filing_date: 1990-08-24
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0689231A2
       google_patents: https://patents.google.com/patent/EP0689231A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0689232A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1995-12-27
-    status: null
+    title: Process for deposition of a tungsten layer on a semiconductor wafer
+    application_number: EP95114145A
+    filing_date: 1990-08-24
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0689232A2
       google_patents: https://patents.google.com/patent/EP0689232A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0414267B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1997-04-23
-    status: null
+    title: Process for deposition of a tungsten layer on a semiconductor wafer
+    application_number: EP90116274A
+    filing_date: 1990-08-24
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-08-24
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0414267B1
       google_patents: https://patents.google.com/patent/EP0414267B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0689231A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1997-06-04
-    status: null
+    title: Method for depositing a layer of tungsten on a semiconductor wafer
+    application_number: EP95114144A
+    filing_date: 1990-08-24
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0689231A3
       google_patents: https://patents.google.com/patent/EP0689231A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0689232A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1997-06-04
-    status: null
+    title: Method for depositing a layer of tungsten on a semiconductor wafer
+    application_number: EP95114145A
+    filing_date: 1990-08-24
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0689232A3
       google_patents: https://patents.google.com/patent/EP0689232A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0390572A
     country: JP
     kind: A
     document_type: application
     publication_date: 1991-04-16
-    status: null
+    title: Cvd vapor deposition method for forming tungsten layer on semiconductor wafer
+    application_number: JP2211455A
+    filing_date: 1990-08-09
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0390572A
       google_patents: https://patents.google.com/patent/JPH0390572A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0765174B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1995-07-12
-    status: null
+    title: Method for CVD deposition of tungsten layer on semiconductor wafer
+    application_number: JP2211455A
+    filing_date: 1990-08-09
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-07-12
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0765174B2
       google_patents: https://patents.google.com/patent/JPH0765174B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH10275784A
     country: JP
     kind: A
     document_type: application
     publication_date: 1998-10-13
-    status: null
+    title: Cvd method for depositing tungsten layer on semiconductor wafer
+    application_number: JP10077363A
+    filing_date: 1998-03-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10275784A
       google_patents: https://patents.google.com/patent/JPH10275784A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP3094004B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2000-10-03
-    status: null
+    title: Method for CVD deposition of tungsten layer on semiconductor wafer
+    application_number: JP10077363A
+    filing_date: 1998-03-25
+    status: Expired - Fee Related
+    expiry:
+      date: 2018-03-25
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP3094004B2
       google_patents: https://patents.google.com/patent/JP3094004B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR910005397A
     country: KR
     kind: A
     document_type: application
     publication_date: 1991-03-30
-    status: null
+    title: Method of CVD Deposition of Tungsten Layer on Semiconductor Wafer
+    application_number: KR1019900013073A
+    filing_date: 1990-08-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR910005397A
       google_patents: https://patents.google.com/patent/KR910005397A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR0174543B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 1999-04-01
-    status: null
+    title: How to deposit a tungsten layer on a semiconductor wafer
+    application_number: KR1019900013073A
+    filing_date: 1990-08-24
+    status: Expired - Fee Related
+    expiry:
+      date: 2010-08-24
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR0174543B1
       google_patents: https://patents.google.com/patent/KR0174543B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5028565A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-tungsten-cvd
     relation: cited-on-page
@@ -4234,11 +4959,11 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US5155336A, retrieved 2026-09-14
   expiry:
-    date: 2019-08-13
+    date: 2013-01-23
     estimated: true
     basis: 'all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of US6434327B1 (estimated upper bound: grant date + 17 years (US application
-      filed before 1995-06-08))'
+      the latest estimate is that of US5487127A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
   expired: true
   members:
   - number: US5155336A
@@ -4263,111 +4988,192 @@ families:
     kind: A
     document_type: granted-patent
     publication_date: 1994-05-31
-    status: null
+    title: Rapid thermal heating apparatus and method
+    application_number: US07/882,656
+    filing_date: 1992-05-13
+    status: Expired - Lifetime
+    expiry:
+      date: 2011-05-31
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5317492A
       google_patents: https://patents.google.com/patent/US5317492A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5487127A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1996-01-23
-    status: null
+    title: Rapid thermal heating apparatus and method utilizing plurality of light pipes
+    application_number: US08/131,830
+    filing_date: 1993-10-05
+    status: Expired - Lifetime
+    expiry:
+      date: 2013-01-23
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5487127A
       google_patents: https://patents.google.com/patent/US5487127A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5683173A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1997-11-04
-    status: null
+    title: Cooling chamber for a rapid thermal heating apparatus
+    application_number: US08/508,499
+    filing_date: 1995-07-28
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-01-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5683173A
       google_patents: https://patents.google.com/patent/US5683173A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5689614A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1997-11-18
-    status: null
+    title: Rapid thermal heating apparatus and control therefor
+    application_number: US08/509,392
+    filing_date: 1995-07-31
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-01-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5689614A
       google_patents: https://patents.google.com/patent/US5689614A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5708755A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1998-01-13
-    status: null
+    title: Rapid thermal heating apparatus and method
+    application_number: US08/626,893
+    filing_date: 1996-04-03
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-01-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5708755A
       google_patents: https://patents.google.com/patent/US5708755A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5743643A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1998-04-28
-    status: null
+    title: Rapid thermal heating apparatus and method
+    application_number: US08/732,020
+    filing_date: 1996-10-16
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-01-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5743643A
       google_patents: https://patents.google.com/patent/US5743643A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5767486A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1998-06-16
-    status: null
+    title: Rapid thermal heating apparatus including a plurality of radiant energy sources and a source
+      of processing gas
+    application_number: US08/782,839
+    filing_date: 1997-01-13
+    status: Expired - Lifetime
+    expiry:
+      date: 2010-01-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5767486A
       google_patents: https://patents.google.com/patent/US5767486A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5790751A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1998-08-04
-    status: null
+    title: Rapid thermal heating apparatus including a plurality of light pipes and a pyrometer for measuring
+      substrate temperature
+    application_number: US08/782,840
+    filing_date: 1997-01-13
+    status: Expired - Fee Related
+    expiry:
+      date: 2010-01-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5790751A
       google_patents: https://patents.google.com/patent/US5790751A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US5840125A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 1998-11-24
-    status: null
+    title: Rapid thermal heating apparatus including a substrate support and an external drive to rotate
+      the same
+    application_number: US08/508,601
+    filing_date: 1995-07-28
+    status: Expired - Fee Related
+    expiry:
+      date: 2010-01-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5840125A
       google_patents: https://patents.google.com/patent/US5840125A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6122439A
     country: US
     kind: A
     document_type: granted-patent
     publication_date: 2000-09-19
-    status: null
+    title: Rapid thermal heating apparatus and method
+    application_number: US08/922,998
+    filing_date: 1997-09-03
+    status: Expired - Fee Related
+    expiry:
+      date: 2010-01-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6122439A
       google_patents: https://patents.google.com/patent/US6122439A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6434327B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2002-08-13
-    status: null
+    title: Rapid thermal heating apparatus and method including an infrared camera to measure substrate
+      temperature
+    application_number: US08/508,638
+    filing_date: 1995-07-28
+    status: Expired - Fee Related
+    expiry:
+      date: 2010-01-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6434327B1
       google_patents: https://patents.google.com/patent/US6434327B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5155336A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-anneal
     relation: cited-on-page
@@ -4465,61 +5271,83 @@ families:
     kind: A1
     document_type: application
     publication_date: 1991-07-30
-    status: null
+    title: Collimated deposition apparatus and method
+    application_number: CA002035106A
+    filing_date: 1991-01-28
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCA2035106A1
       google_patents: https://patents.google.com/patent/CA2035106A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5330628A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE69129081D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 1998-04-23
-    status: null
+    title: Device and method for precipitation by a collimator
+    application_number: DE69129081T
+    filing_date: 1991-01-24
+    status: Expired - Fee Related
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE69129081D1
       google_patents: https://patents.google.com/patent/DE69129081D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5330628A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE69129081T2
     country: DE
     kind: T2
     document_type: translation-of-granted-patent
     publication_date: 1998-07-02
-    status: null
+    title: Device and method for precipitation by a collimator
+    application_number: DE69129081T
+    filing_date: 1991-01-24
+    status: Expired - Fee Related
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE69129081T2
       google_patents: https://patents.google.com/patent/DE69129081T2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5330628A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0440377A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 1991-08-07
-    status: null
+    title: Collimated deposition apparatus and method
+    application_number: EP91300567A
+    filing_date: 1991-01-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0440377A2
       google_patents: https://patents.google.com/patent/EP0440377A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5330628A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0440377A3
     country: EP
     kind: A3
     document_type: search-report
     publication_date: 1992-01-29
-    status: null
+    title: Collimated deposition apparatus and method
+    application_number: EP19910300567
+    filing_date: 1991-01-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0440377A3
       google_patents: https://patents.google.com/patent/EP0440377A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5330628A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP0440377B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 1998-03-18
-    status: null
+    title: Collimated deposition apparatus and method
+    application_number: EP91300567A
+    filing_date: 1991-01-24
+    status: Expired - Lifetime
+    expiry:
+      date: 2011-01-24
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP0440377B1
       google_patents: https://patents.google.com/patent/EP0440377B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5330628A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-pvd-cluster-tool
     relation: cited-on-page
