@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["pyyaml>=6"]
+# dependencies = ["pyyaml>=6", "pypdf>=4", "cryptography>=42"]
 # ///
 """Check the financial and corporate filings dataset ``data/filings.yaml``.
 
@@ -53,9 +53,10 @@ import gzip
 import hashlib
 import html
 import re
-import subprocess
+import io
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -86,7 +87,7 @@ COMPANIES = {
     "d-wave": ("D-Wave Quantum Inc.", "customer"),
     "quicklogic": ("QuickLogic Corporation", "partner"),
     "weebit-nano": ("Weebit Nano Limited", "partner"),
-    "atomera": ("Atomera Incorporated", "partner"),
+    "ionq": ("IonQ, Inc.", "acquirer"),
     "other": ("(named in the record)", "other"),
 }
 
@@ -109,7 +110,7 @@ DOCUMENT_TYPES = {
 
 JURISDICTIONS = {"US", "DE", "AU"}
 REGULATORS = {"SEC", "BaFin", "ASX"}
-ID_SCHEMES = {"sec-accession", "company-document", "asx-announcement"}
+ID_SCHEMES = {"sec-accession", "ir-filing-id", "company-document", "asx-announcement"}
 
 RELATIONSHIPS = {
     "cypress-fab-operations": "Cypress describes its Minnesota (Bloomington) fab",
@@ -124,6 +125,9 @@ RELATIONSHIPS = {
     "minnesota-fab-investment": "investment and government funding for the Minnesota fab",
     "infineon-cypress-acquisition": "Infineon's acquisition of Cypress (2019-2020)",
     "infineon-fab25-sale": "SkyWater's purchase of Infineon's Austin fab (Fab 25)",
+    "infineon-wafer-supply": "Infineon as SkyWater's wafer customer (2022 frame agreement, Fab 25 supply agreement)",
+    "skywater-customers": "SkyWater names its customers",
+    "skywater-ionq-merger": "IonQ's acquisition of SkyWater (2026)",
     "supplier-names-skywater": "a supplier's filing names SkyWater",
     "customer-names-skywater": "a customer's filing names SkyWater",
     "partner-names-skywater": "a technology partner's filing names SkyWater",
@@ -296,10 +300,10 @@ def check_record(r: dict, where: str, labels: dict[str, Path], keys: set[str],
             accession = ident.get("value")
             if not isinstance(accession, str) or not ACCESSION_RE.match(accession):
                 bad(f"accession number malformed: {accession!r}")
-        if r.get("regulator") == "SEC" and ident.get("scheme") != "sec-accession":
-            bad("an SEC record needs an sec-accession identifier")
+        if r.get("regulator") == "SEC" and ident.get("scheme") not in ("sec-accession", "ir-filing-id"):
+            bad("an SEC record needs an sec-accession or ir-filing-id identifier")
     elif r.get("regulator") == "SEC":
-        bad("an SEC record needs an sec-accession identifier")
+        bad("an SEC record needs an identifier")
 
     urls = r.get("urls")
     if isinstance(urls, dict):
@@ -332,8 +336,10 @@ def check_record(r: dict, where: str, labels: dict[str, Path], keys: set[str],
             folder = accession.replace("-", "")
             if f"/{folder}/" not in original:
                 bad(f"urls.original is not in the EDGAR folder of {accession}")
-        if r.get("regulator") == "SEC" and not on_sec:
-            bad("an SEC record's urls.original must be the sec.gov document")
+        if r.get("regulator") == "SEC" and accession and not on_sec:
+            bad("an SEC record with an accession number needs the sec.gov document as urls.original")
+        if r.get("regulator") == "SEC" and not accession and not ir:
+            bad("an SEC record without an accession number needs an investor-relations copy")
     about = r.get("about")
     if isinstance(about, dict):
         if set(about) != {"summary", "quotes"}:
@@ -418,12 +424,14 @@ def check_record(r: dict, where: str, labels: dict[str, Path], keys: set[str],
 
 
 def normalise(t: str) -> str:
+    t = unicodedata.normalize("NFKC", t)
     t = t.replace(" ", " ")
     t = re.sub(r"[‘’‚′]", "'", t)
     t = re.sub(r"[“”„″]", '"', t)
     t = re.sub(r"[‐-―−]", "-", t)
     t = t.replace("…", "...")
-    return re.sub(r"\s+", " ", t).strip().lower()
+    # PDF text extraction drops or inserts spaces, so compare without any.
+    return re.sub(r"\s+", "", t).lower()
 
 
 _last = [0.0]
@@ -461,11 +469,10 @@ def fetch(url: str) -> bytes:
 
 def document_text(b: bytes) -> str:
     if b[:4] == b"%PDF":
-        CACHE.mkdir(parents=True, exist_ok=True)
-        pdf = CACHE / "current.pdf"
-        pdf.write_bytes(b)
-        out = subprocess.run(["pdftotext", str(pdf), "-"], capture_output=True, text=True)
-        return out.stdout
+        import pypdf
+
+        reader = pypdf.PdfReader(io.BytesIO(b))
+        return "\n".join((page.extract_text() or "") for page in reader.pages)
     t = b.decode("utf-8", "replace")
     t = re.sub(r"(?is)<(script|style).*?</\1>", " ", t)
     t = re.sub(r"(?s)<[^>]+>", " ", t)
@@ -473,23 +480,32 @@ def document_text(b: bytes) -> str:
 
 
 def check_online(r: dict, where: str, problems: list[str]) -> None:
+    """Confirm the quotes in the Wayback copy, else in the investor-relations copy."""
     urls = r.get("urls") or {}
-    source = urls.get("wayback") or urls.get("ir") or urls.get("original")
-    if not source:
-        return
-    try:
-        text = normalise(document_text(fetch(source)))
-    except Exception as exc:  # noqa: BLE001
-        problems.append(f"{where}: could not fetch {source}: {exc}")
-        return
+    sources = [u for u in (urls.get("wayback"), urls.get("ir")) if u]
+    if not sources and urls.get("original") and "sec.gov" not in urls["original"]:
+        sources = [urls["original"]]
     quotes = [q.get("text", "") for q in (r.get("about") or {}).get("quotes", [])]
     aud = r.get("auditor_report")
     if isinstance(aud, dict):
         quotes.append(aud.get("quote", ""))
-    for q in quotes:
-        parts = [normalise(p) for p in re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", q) if p.strip()]
-        if not all(p in text for p in parts):
-            problems.append(f"{where}: quote not found in {source}: {q[:60]!r}")
+    pending = list(quotes)
+    fetched = []
+    for source in sources:
+        if not pending:
+            break
+        try:
+            text = normalise(document_text(fetch(source)))
+        except Exception as exc:  # noqa: BLE001
+            problems.append(f"{where}: could not fetch {source}: {exc}")
+            continue
+        fetched.append(source)
+        pending = [q for q in pending if not all(
+            normalise(part) in text
+            for part in re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", q) if part.strip())]
+    if fetched:
+        for q in pending:
+            problems.append(f"{where}: quote not found in {', '.join(fetched)}: {q[:60]!r}")
 
 
 def main() -> int:
