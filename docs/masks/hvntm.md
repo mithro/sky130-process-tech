@@ -64,7 +64,7 @@ out. The two `C` rows for native NMOS match the step page's reading that
 the native 5 V device takes this tip.
 
 The step page reads the implant as a large-angle-tilt implanted drain
-({term}`LATID`) from the 40° angle: Hori introduced the quarter-micron
+({term}`LATID`) from the 40° angle: Hori demonstrated the quarter-micron
 LATID transistor for 3.3 V operation and gave the full account of the
 technology,[^hori-1989-latid][^hori-1992] Rafí and Campabadal compared
 the hot-carrier degradation of LDD and LATID NMOS,[^rafi-2001] and the
@@ -75,10 +75,11 @@ patent describes a high-voltage device with self-aligned graded
 junctions in a CMOS flow;[^pat-hv-graded-cyp] the step page treats it
 as circumstantial evidence of lineage and no more.
 
-What the mask does not define is the thick oxide or the tip's edge. The
-`hvi` regions are set at {ref}`LVOM <step-044>` and oxidised at
-{ref}`GOX100 <step-043>`, and on the step pages' readings the implant is
-self-aligned to the gates of the {ref}`P1M <mask-p1m>` pattern; the
+What the mask does not define is the thick oxide or the tip's edge. On
+the step pages' readings the `hvi` regions are set at
+{ref}`LVOM <step-044>` and oxidised at {ref}`GOX100 <step-043>`, and the
+implant is self-aligned to the gates of the {ref}`P1M <mask-p1m>`
+pattern; the
 standard tip over the other NMOS is placed by {ref}`mask-ntm`, whose
 created data, on that page's reading, cover `hvi` rather than open it.
 
@@ -252,8 +253,8 @@ size of HVTip" of 0.1 (`HVTipMinSize`).[^pdk-03] The
 {ref}`HVNTM <step-068>` page finds them consistent: a 0.3 µm wall
 shadows a 40° beam for 0.3 µm × tan 40° ≈ 0.25 µm, which less the 0.02 µm
 penetration gives the 0.232 µm allowance. The PDK does not say how the
-0.013 blocking distance enters. Chen et al. described ion-beam shadowing
-of tilted drain implants by adjacent structures,[^chen-1995] a Taiwan
+0.013 blocking distance enters. Chen et al. studied ion-beam shadowing
+in submicrometre LATID MOSFETs (title),[^chen-1995] a Taiwan
 Semiconductor patent splits tilted LDD implants into several wafer
 rotations,[^pat-quad-tsmc] and the {ref}`HVASTI <step-069>` page infers
 rotations here; ions scattered out of a resist edge also alter nearby
@@ -357,7 +358,7 @@ active pattern.
 * {ref}`mask-ntm` — the standard tip mask before it;
   {ref}`mask-ldntm` — the SONOS tip mask after it;
   {ref}`TIPRTAD <step-075>` — the anneal of all three tips.
-* {ref}`LVOM <step-044>` and {ref}`GOX100 <step-043>` — where the `hvi`
+* {ref}`mask-lvom` and {ref}`GOX100 <step-043>` — where the `hvi`
   thick oxide the mask follows is defined and grown.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the derivations the renders use.
@@ -433,8 +434,8 @@ active pattern.
   self-aligned graded junctions in a CMOS flow.[^pat-hv-graded-cyp]
 * Lin, Yoo and Liang (TSMC), US 5,372,957 — multiple tilted-angle
   implantation with wafer rotation for LDD devices.[^pat-quad-tsmc]
-* Chen et al., *Solid-State Electronics* 1995 — ion-beam shadowing of
-  tilted drain implants by adjacent structures.[^chen-1995]
+* Chen et al., *Solid-State Electronics* 1995 — ion-beam shadowing in
+  large-angle-tilt implanted drain MOSFETs (title).[^chen-1995]
 * Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
   the threshold shifts they cause.[^hook-2003]
 * Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range

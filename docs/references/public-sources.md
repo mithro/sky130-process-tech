@@ -4525,9 +4525,11 @@ Also used on the PECVD, HDP-CVD and tungsten CVD pages.
 
 **BOSSUNG-1977** — J. W. Bossung, "Projection Printing
 Characterization", *Proc. SPIE* **100**, 80–85 (1977).
-<https://doi.org/10.1117/12.955357> The focus–exposure ("Bossung") plots
-used to characterise projection printing. Used on the lithography
-category page. Tier: deep dive.
+<https://doi.org/10.1117/12.955357> Projection-printing characterisation:
+photoresist choices, procedures to determine process variables, and mask
+costs and quality (abstract); the paper is the usual attribution of the
+focus–exposure ("Bossung") plot, which the abstract does not mention.
+Used on the lithography category page. Tier: deep dive.
 Also used on the NPCM mask page.
 
 **BRUNING-2007** — J. H. Bruning, "Optical lithography: 40 years and
@@ -5886,9 +5888,11 @@ strippability. Used on step 051. Tier: deep dive.
 Ukah, "Improved photoresist integrity by UV photostabilization for high
 dose, high energy ion implants", *Proc. 2000 International Conference on
 Ion Implantation Technology*, pp. 817–820.
-<https://doi.org/10.1109/IIT.2000.924279> UV photostabilisation of
-resist before high-dose implants, the implant-side remedy for resist
-popping. Used on step 067. Tier: deep dive.
+<https://doi.org/10.1109/IIT.2000.924279> Heat and UV pretreatment of
+2.7–3.5 µm resist before high-dose MeV phosphorus implants, which
+greatly raised the dose the resist withstood before hardening or
+lifting; softbaked resist is "very susceptible to lifting and popping"
+at such doses (abstract). Used on step 067. Tier: deep dive.
 Also used on the PSDM and NSDM mask pages.
 
 **YEGNASUBRAMANIAN-1992** — S. Yegnasubramanian, C. W. Draper and C. W.
@@ -6298,10 +6302,11 @@ dive.
 **CHEN-1995** — H.-S. Chen, C.-S. Teng, L. Moberly and R. Lahri, "Ion
 beam shadowing effect in submicrometer large-angle-tilt implanted drain
 (LATID) MOSFETs", *Solid-State Electronics* **38**(7), 1321–1323 (1995).
-<https://doi.org/10.1016/0038-1101(94)00256-F> Ion-beam shadowing of
-tilted drain implants by adjacent structures, the effect behind the
-PDK's shadowing allowances. Used on steps 064, 066, 068, 069, 072 and
-073, and on the medium-current implanter page. Tier: deep dive.
+<https://doi.org/10.1016/0038-1101(94)00256-F> Ion-beam shadowing in
+submicrometre large-angle-tilt implanted drain MOSFETs (title; no
+abstract was available, and the paper's content was not checked). Used
+on steps 064, 066, 068, 069, 072 and 073, and on the medium-current
+implanter page. Tier: deep dive.
 Also used on the NTM, HVNTM and LDNTM mask pages.
 
 **CODELLA-1985** — C. F. Codella and S. Ogura, "Halo doping effects in
@@ -6655,9 +6660,11 @@ Also used on the etch and chamber-clean gases material page.
 **KRIEGER-1989** — G. Krieger, G. Spadini, P. Cuevas and J. Schuur,
 "Shadowing effects due to tilted arsenic source/drain implant", *IEEE
 Transactions on Electron Devices* **36**(11), 2458–2461 (1989).
-<https://doi.org/10.1109/16.43667> Shadowing of a tilted source/drain
-implant by the gate and spacer. Used on steps 077, 082, 083 and 086, and
-on the high-current implanter page.
+<https://doi.org/10.1109/16.43667> Shadowing of an n+ source/drain
+implant by the LDD oxide sidewall spacer at "the commonly used 7
+degrees" tilt, with a recommendation of 0° tilt for both the LDD and
+source/drain implants (abstract). Used on steps 077, 082, 083 and 086,
+and on the high-current implanter page.
 Tier: deep dive.
 Also used on the PSDM and NSDM mask pages.
 

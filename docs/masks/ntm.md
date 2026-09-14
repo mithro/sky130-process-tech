@@ -250,8 +250,8 @@ beside an "HVNTM shadowing" of 0.232, all in the column headed "Value
 assumes or what "pseudo-shadowing" is. The {ref}`BHI <step-066>` page
 compares the 0.16 with 1.14 µm × tan 7° ≈ 0.14 µm and reads the
 allowance as sized for the 7° tip; with the 0.3 µm film the same geometry
-gives about 0.04 µm (our arithmetic). Chen et al. described ion-beam
-shadowing of tilted drain implants by adjacent structures,[^chen-1995]
+gives about 0.04 µm (our arithmetic). Chen et al. studied ion-beam
+shadowing in submicrometre LATID MOSFETs (title),[^chen-1995]
 and Yoneda and Niwayama traced a drain-current asymmetry in 130 nm
 MOSFETs to extension-implant shadowing from an implanter angle
 error.[^yoneda-2002] Ions also scatter out of a resist edge, "altering
@@ -420,8 +420,8 @@ tip-implant opening of 0.1.
 * Gardner, Hause and Fulford (AMD), US 5,793,090 — separate LDD and
   source/drain implant steps for different transistors on one
   chip.[^pat-multi-ldd-amd]
-* Chen et al., *Solid-State Electronics* 1995 — ion-beam shadowing of
-  tilted drain implants by adjacent structures.[^chen-1995]
+* Chen et al., *Solid-State Electronics* 1995 — ion-beam shadowing in
+  large-angle-tilt implanted drain MOSFETs (title).[^chen-1995]
 * Yoneda and Niwayama, IWJT 2002 — drain-current asymmetry at 130 nm from
   extension-implant shadowing.[^yoneda-2002]
 * Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
