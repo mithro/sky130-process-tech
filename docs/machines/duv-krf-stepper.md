@@ -337,6 +337,8 @@ settings and resists per layer are not public.
   {ref}`mask-vim` and {ref}`mask-mm2` — per-mask pages for the
   local-interconnect contact, local-interconnect, contact, metal-1, via-1
   and metal-2 masks, all assigned to this class.
+* {ref}`mask-fom` — the per-mask page for the field-oxide mask, assigned
+  to this class.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, anti-reflective coatings, developer
