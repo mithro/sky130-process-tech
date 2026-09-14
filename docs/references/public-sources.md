@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1719
+written page has exactly one entry here; the inventory holds 1720
 keyed entries as of 2026-09-14, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -107,8 +107,8 @@ metal5/passivation region). Tier: cross-check.
 Also used on the PECVD, HDP-CVD and PVD cluster tool pages.
 Also used on the sputter targets material page.
 Also used on the substrates material page.
-Also used on the LI1M, VIM, VIM2, MM3, VIM3, CAP2M, MM4, MM5 and NSM
-mask pages.
+Also used on the LI1M, VIM, VIM2, MM3, VIM3, CAP2M, MM4, MM5, NSM and
+PDM mask pages.
 
 **PDK-05** — *Masks* page and `masks.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
@@ -234,6 +234,7 @@ has `pi1`, `rdl`, `pi2`, `ubm` and `bump` rule sets at 400 µm and
 a function line (for `rdl`, "Re-distribution layer connects the top
 metal from the customer to the bumps"). The masks index cites it for
 the `PBO`, `CU1M` and `PMM2` entries of PDK-05. Tier: cross-check.
+Also used on the PDM mask page.
 
 **PDK-12** — *Sky130 Technology Library* (Hammer VLSI documentation).
 <https://hammer-vlsi.readthedocs.io/en/latest/Technology/Sky130.html>.
@@ -1818,7 +1819,7 @@ Also used on the i-line stepper or scanner, DUV (KrF, 248 nm) stepper or
 scanner and coat/develop track pages.
 Tier: high-level.
 Also used on the lithography materials material page.
-Also used on the FOM, DNM, LVOM, CAPM, MM3, CAP2M, MM4, MM5, NPCM and NSM mask pages.
+Also used on the FOM, DNM, LVOM, CAPM, MM3, CAP2M, MM4, MM5, NSM, NPCM and PDM mask pages.
 
 **WIKI-LOCOS** — Wikipedia, *LOCOS*.
 <https://en.wikipedia.org/wiki/LOCOS> LOCOS isolation, the predecessor
@@ -4548,7 +4549,7 @@ lithography category page.
 Also used on the coat/develop track page.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, MM4, NPCM and MM5 mask pages.
+Also used on the MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, MM4, MM5, NPCM and PDM mask pages.
 
 **DAMMEL-1993** — R. R. Dammel, *Diazonaphthoquinone-based Resists*,
 SPIE Tutorial Texts TT11, SPIE Press, 1993.
@@ -4557,7 +4558,7 @@ resist chemistry. Used on the lithography category page.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the CAPM, CAP2M, MM5 and NSM mask pages.
+Also used on the CAPM, CAP2M, MM5, NSM and PDM mask pages.
 
 **ITO-1983** — H. Ito and C. G. Willson, "Chemical amplification in the
 design of dry developing resist materials", *Polymer Engineering &
@@ -4694,7 +4695,7 @@ not about SKY130).
 Used on the lithography category page.
 Also used on the i-line stepper or scanner page.
 Tier: cross-check.
-Also used on the CAPM, MM3, CAP2M, MM4, MM5, NTM, HVNTM, LDNTM, PSDM, NSDM and NSM mask pages.
+Also used on the CAPM, MM3, CAP2M, MM4, MM5, NSM, NTM, HVNTM, LDNTM, PSDM, NSDM and PDM mask pages.
 
 **ASML-750E** — ASML, *ASML introduces KrF lithography scanner* (PAS
 5500/750E), press release, 2000-04-04.
@@ -8553,6 +8554,7 @@ cap from aluminium pads, the wet chemistry that etches TiW. Used on
 steps 136, 138 and 145.
 Also used on the metal plasma etcher page.
 Tier: deep dive.
+Also used on the PDM mask page.
 
 **DENISSE-1986** — C. M. M. Denisse, K. Z. Troost, J. B. Oude Elferink,
 F. H. P. M. Habraken, W. F. van der Weg and M. Hendriks,
@@ -8880,6 +8882,7 @@ Also used on the MM5 mask page.
 to reveal probe damage in aluminium bond pads. Used on step 161.
 Also used on the parametric tester and prober page.
 Tier: deep dive.
+Also used on the PDM mask page.
 
 **JANSSEN-1998** — G. C. A. M. Janssen, J. F. Jongste, J. P. Lokker, A.
 H. Verbruggen and S. Radelaar, "Aluminium via-fill at elevated pressure
@@ -8998,7 +9001,7 @@ designs), retrieved 2026-09-13.
 A published SKY130 seal-ring layout: a 6 µm `areaid.sl` band with a
 5 µm `nsm` band over four 0.3 µm diffusion rings and no drawn metal or
 via rings. Used on steps 165 and 166. Tier: cross-check.
-Also used on the MM5 and NSM mask pages.
+Also used on the MM5, NSM and PDM mask pages.
 
 **COMIZZOLI-1986** — R. B. Comizzoli, R. P. Frankenthal, P. C. Milner and
 J. D. Sinclair, "Corrosion of Electronic Materials and Devices",
@@ -9006,7 +9009,7 @@ J. D. Sinclair, "Corrosion of Electronic Materials and Devices",
 <https://doi.org/10.1126/science.234.4774.340> Corrosion of electronic
 materials and devices by humidity and ionic contamination. Used on steps
 165, 166, 167, 168 and 169. Tier: deep dive.
-Also used on the NSM mask page.
+Also used on the NSM and PDM mask pages.
 
 **LANFORD-1978** — W. A. Lanford and M. J. Rand, "The hydrogen content of
 plasma-deposited silicon nitride", *Journal of Applied Physics*
@@ -9054,6 +9057,7 @@ over a fusible link using transient etch stops*, US 6,294,474 B1, filed
 An oxide/nitride passivation stack with stated thicknesses, and bond-pad
 and fuse openings made with one mask. Used on steps 164, 167 and 168.
 Tier: deep dive.
+Also used on the PDM mask page.
 
 **PAT-FUSEWIN-TSMC** — S. Ying and S.-C. Hung (Taiwan Semiconductor
 Manufacturing Co.), *Method for etching fuse windows in IC devices and
@@ -9112,6 +9116,7 @@ residues from bond pads*, US 5,380,401 A, filed 1993-01-14, granted
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5380401>
 Fluorine residues on bond pads after the nitride pad etch and their
 in-situ plasma removal. Used on step 169. Tier: deep dive.
+Also used on the PDM mask page.
 
 **PAT-PAD-FLUORINE-TSMC** — H.-C. Tsai and H.-H. Liu (Taiwan
 Semiconductor Manufacturing Co.), *Method to remove fluorine residue
@@ -9119,6 +9124,7 @@ from bond pads*, US 7,055,532 B2, filed 2003-12-18, granted 2006-06-06.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7055532>
 Reactive ion etching of Al–F–O deposits on bond pads. Used on step 169.
 Tier: deep dive.
+Also used on the PDM mask page.
 
 **PAT-TESTLINE-TSMC** — H.-W. Chen, S.-H. Hsu, H.-Y. Tsai and S.-P. Jeng
 (Taiwan Semiconductor Manufacturing Co.), *Parametric testline with
@@ -9127,6 +9133,7 @@ granted 2010-03-16.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7679384>
 Parametric testlines and their probe pads in the scribe line. Used on
 steps 168 and 171. Tier: deep dive.
+Also used on the PDM mask page.
 
 **PDK-IO-GPIOV2** — SkyWater PDK Authors, *skywater-pdk-libs-sky130_fd_io*
 repository, cell `sky130_fd_io__top_gpiov2`, GDS layout
@@ -9136,6 +9143,7 @@ repository, cell `sky130_fd_io__top_gpiov2`, GDS layout
 The SKY130 GPIO pad cell: an 80 µm × 200 µm LEF abstract and, in the GDS,
 a chamfered 60 µm × 70 µm `pad` opening over a 65.4 µm × 75.4 µm metal-5
 pad. Used on steps 168 and 169. Tier: cross-check.
+Also used on the PDM mask page.
 
 **TEO-2015** — H. W. Teo, Y. Yang, Y. Wang, L. Zhu, Z. Q. Mo, S. P. Zhao
 and J. Lam, "Feasibility study of TOF-SIMS surface measurement for
@@ -14575,9 +14583,9 @@ SkyWater, SKY130 or the Bloomington fab; they describe masks, mask
 making and inspection, phase-shift masks, lithography and proximity
 correction, implantation, well engineering, CMP fill, layout-dependent
 effects, embedded SONOS flash, dual gate oxides, polysilicon resistors,
-multi-threshold, varactor and high-voltage devices, and bond pads and
-seal rings in general. Every URL was fetched on 2026-09-13 or
-2026-09-14: papers and books were checked through Crossref
+multi-threshold, varactor and high-voltage devices, bond pads, seal
+rings and scribe-line passivation in general. Every URL was fetched on
+2026-09-13 or 2026-09-14: papers and books were checked through Crossref
 (bibliographic data) and OpenAlex (abstracts or tables of contents), and
 their annotations rest on those. An entry's tier records its first use.
 
@@ -14703,7 +14711,7 @@ that let the ALTA 3700 laser reticle writer "address the needs of
 maskmakers in the 180 nm and 150 nm technology nodes", with
 print-quality and throughput results. Used on the VIM4 mask page. Tier:
 deep dive.
-Also used on the CAPM, CAP2M and NSM mask pages.
+Also used on the CAPM, CAP2M, NSM and PDM mask pages.
 
 **BUCK-1994** — P. D. Buck and B. J. Grenon, "Comparison of wet and dry
 chrome etching with the CORE-2564", *Proc. SPIE* **2087**, 42–49 (1994).
@@ -14713,7 +14721,7 @@ isotropic etch undercuts the chrome by about 150 nm per edge, which is
 compensated by sizing the data; wet and dry chrome etch compared on
 plates printed with the CORE-2564. Used on the VIM4 mask page. Tier:
 deep dive.
-Also used on the CAPM, CAP2M and NSM mask pages.
+Also used on the CAPM, CAP2M, NSM and PDM mask pages.
 
 **FLACK-1993** — W. W. Flack, K. E. Tokunaga and K. D. Edwards, "Chrome
 dry-etching for photomask fabrication", *Proc. SPIE* **1809**, 85
@@ -14736,7 +14744,7 @@ are nominal and do not apply to butting edges or corners") and Table F4,
 each pair of conducting layers: "Licon1" from `li1` to diff and tap,
 "Licon1 AND Npc" from `li1` to poly, "Mcon" from met1 to `li1` and "Via"
 from met2 to met1. Used on the LICM1 mask page. Tier: cross-check.
-Also used on the LVOM, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, MM4, MM5, NPCM, PSDM, NSDM and NSM mask pages.
+Also used on the LVOM, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, MM4, MM5, NSM, NPCM, PSDM, NSDM and PDM mask pages.
 
 **CHOO-2000** — L. C. Choo, O. Park, M. J. Sack and S. C. Tam,
 "Integration of attenuated phase-shift mask to 0.13-μm technology
@@ -15218,6 +15226,7 @@ aluminum and titanium tungsten alloy", and "The proper choice of
 metallization was found to give significant improvement in tolerance of
 bond-process-induced stresses". Used on the MM5 mask page. Tier: deep
 dive.
+Also used on the PDM mask page.
 
 #### NSM mask page (first cited there)
 
@@ -15232,6 +15241,19 @@ Edge seal rings and noise coupling in RF technologies; the abstract:
 segmented guard ring to reduce coupling between devices. We demonstrate
 that the segmented guard ring is reliable for a 0.18 μm RF technology."
 Used on the NSM mask page. Tier: deep dive.
+
+#### PDM mask page (first cited there)
+
+**LEE-2018** — S.-M. Lee, "Pattern Design to Prevent Sawing-Induced
+Passivation Damage on Scribe Region During Semiconductor Wafer
+Separation", *Materials Transactions* **59**(12), 1887–1891 (2018).
+<https://doi.org/10.2320/matertrans.M2018221> Sawing damage to the
+silicon nitride passivation in the scribe region; the abstract: Si3N4
+damage "can grow up to the active region" because "inappropriate Si3N4
+coverage in the scribe region can be a carrier for damage propagation
+during sawing", and "appropriate design of the amorphous Si3N4 layer in
+the scribe region is essential". Used on the PDM mask page. Tier: deep
+dive.
 
 ## 9. Evidence about specific tools at SkyWater
 

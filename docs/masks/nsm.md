@@ -90,7 +90,7 @@ no device.[^pdk-06][^pdk-summary] The mask does not define the films it
 opens ({ref}`NFUSOX <step-164>` and, on the deep reading, the inter-level
 dielectrics beneath), the nitride that lines the opening
 ({ref}`NTSD <step-167>`) or the pad openings cut after it
-({ref}`PDM <step-168>`).
+({ref}`PDM <step-168>`, {ref}`mask-pdm`).
 
 ## Drawn layers and derivation
 
@@ -323,8 +323,9 @@ from nsm.1 and nsm.2), kept 1.000 µm from all wiring.
   the ring etch; {ref}`NFUSOX <step-164>` — the oxide it is printed on;
   {ref}`NTSD <step-167>` — the nitride that lines the opening.
 * {ref}`mask-mm5` — the metal mask printed before it, whose `cmm5.nikon`
-  checks match this mask's; {ref}`mask-dnm` — the repeated-count reading
-  of the renders.
+  checks match this mask's; {ref}`mask-pdm` — the pad mask printed after
+  the nitride; {ref}`mask-dnm` — the repeated-count reading of the
+  renders.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
   plate-number anomaly of MPW-6.
 * {ref}`machine-i-line-stepper` — the exposure class the step page
