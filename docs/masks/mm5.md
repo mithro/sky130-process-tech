@@ -65,7 +65,8 @@ as part of the acceptance criteria for GDS data", checks "2.7 min.
 enclosure of bondpadNormal by met5" (pad.4/4a) and "2.5 min. enclosure
 of UTESTPAD by met5" (scribe.17), neither of which the periphery rules
 list.[^pdk-errors][^pdk-periph] The {ref}`PDM <step-168>` page reports
-the same 2.7 µm margin, per side, in SkyWater's GPIO pad cell.
+the same 2.7 µm margin, per side, in SkyWater's GPIO pad cell
+({ref}`mask-pdm`).
 Marsh et al. bonded copper wire over probe marks on pads of 0.8 µm and
 3 µm aluminium,[^marsh-2016] and Ching and Schroen found that the choice
 between aluminium and titanium-tungsten metal systems changed a pad's
@@ -92,7 +93,7 @@ with a column headed "Value (um)";[^pdk-03] the
 (inference). The mask does not define the metal stack it patterns,
 which {ref}`WTIAL5 <step-161>` deposits, the via-4 holes beneath
 ({ref}`mask-vim4`), or the passivation openings above
-({ref}`mask-nsm`, {ref}`PDM <step-168>`).
+({ref}`mask-nsm`, {ref}`mask-pdm`).
 
 ## Drawn layers and derivation
 
@@ -356,7 +357,7 @@ them.
 * {ref}`MM5 <step-162>` and {ref}`MM5E <step-163>` — the mask step and
   the metal etch; {ref}`WTIAL5 <step-161>` — the stack patterned.
 * {ref}`mask-vim4` — the via mask below; {ref}`mask-mm4` — the metal mask
-  one level down; {ref}`mask-nsm` and {ref}`PDM <step-168>` — the two masks
+  one level down; {ref}`mask-nsm` and {ref}`mask-pdm` — the two masks
   printed over this level.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
   plate-case labels.
