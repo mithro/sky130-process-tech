@@ -114,8 +114,8 @@ enclosure of nwell by hvtp", with no value, and two `chvtpm.nikon`
 checks.[^pdk-errors] The page does not define `CLHVTPM`. We read it as
 the created `HVTPM` data (inference from the rule names); on that
 reading the PDK requires the created layer to cover low-voltage N-well
-outside varactor channels and `lvtn`, and `hvtp` where low-voltage
-N-well overlaps a varactor channel — openings over most low-voltage
+that does not overlap a varactor channel, outside `lvtn`, and `hvtp`
+within low-voltage N-well that does — openings over most low-voltage
 N-well rather than over drawn `hvtp` alone, consistent with the Table
 F2b rows above. The checks state what the layer must cover, not the
 operation that makes it.
