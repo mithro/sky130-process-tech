@@ -188,6 +188,8 @@ raises NMOS {term}`Vt`.[^hook-2003]
   N-well.
 * Previous mask: {ref}`HVTPM <step-022>`; next mask:
   {ref}`PWDEM <step-030>`.
+* Mask page: {ref}`PWBM <mask-pwbm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
