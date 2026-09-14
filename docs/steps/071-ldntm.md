@@ -25,9 +25,14 @@ N-tip, LDNTM" as a mask used in SKY130,[^pdk-05] and its layer table
 describes the drawn layer `ldntm` (GDS 11:44) as "N-tip implant on
 SONOS devices", with the generated mask layer `cldntm` (11:0,
 "Lightly-doped N-tip implant mask").[^pdk-06] The public periphery rule
-set contains no `ldntm` rules;[^pdk-periph] the layer belongs to the
-memory-cell rules, which the PDK documents only through the cell
-itself. The earlier pages of this reference on the SONOS module
+set contains no `ldntm` rules;[^pdk-periph] the PDK's *Error Messages*
+page, however, lists core checks on the layer, `ldntm.c1` to `ldntm.c6`:
+"0.7 min. width of ldntmCore", "0.7 min. spacing/notch of ldntmCore",
+"enclosure of ndiff by ldntm must be more than  0.180", "0.125 min.
+enclosure of nFet by ldntmCore", "ldntm not allowed outside areaid.ce"
+and "0.18 min. spacing of ldntmCoreExempt & pdiff".[^pdk-errors] The
+layer is therefore checked as a core layer, inside the memory-cell
+identifier. The earlier pages of this reference on the SONOS module
 ({ref}`TUNM <step-035>`, {ref}`PTSI <step-037>`,
 {ref}`DEPI <step-038>`, {ref}`ONO <step-040>`) already point here as
 the cell's tip implant.
@@ -175,6 +180,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   11:44 "N-tip implant on SONOS devices"; `cldntm` 11:0.[^pdk-06]
 * SkyWater PDK, *Periphery rules* — no `ldntm` rules in the public
   periphery set.[^pdk-periph]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the `ldntm.c1`
+  to `ldntm.c6` core checks.[^pdk-errors]
 * SkyWater PDK, *Criteria & Assumptions* — 7° tip angle; shadowing
   allowances for NTM and HVNTM only; photoresist 1.14 µm.[^pdk-03]
 * SkyWater PDK, *Device Details* — SONOS cell W/L, programme/erase
@@ -225,7 +232,13 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 ## Open questions
 
 * Whether the select transistor of the {term}`2-T cell`, as well as the memory
-  transistor, is inside the `ldntm` opening is not public.
+  transistor, is inside the `ldntm` opening is not stated. The Error
+  Messages page requires `ldntm` to enclose an "nFet" by 0.125
+  (`ldntm.c4`) without naming the device,[^pdk-errors] and Table F2b of
+  the *Layers Reference* marks `LDNTM` as created for both "Flash npass"
+  rows and both `nmos_core NV` rows as well as the SONOS
+  rows;[^pdk-06] on our reading these may include the select
+  transistor, but neither source says so.
 * The resist thickness and the tilt at which the lightly doped tip is
   implanted are inferred; the PDK publishes no `LDNTM` shadowing
   parameter.[^pdk-03]
@@ -246,6 +259,10 @@ An industry-generic implant-block lithography sequence for a 200 mm,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
