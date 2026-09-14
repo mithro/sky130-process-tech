@@ -11,9 +11,9 @@ is stripped at {ref}`PCHIS <step-025>`. The "V" in its name is a
 threshold, not a voltage class. The public record disagrees about what
 the plate carries: the step page follows the PDK's description of the
 drawn layer `hvtp`, while, on our reading, the PDK's mask generation
-table and one public derivation from the drawn tape-out data both point
-to openings over most low-voltage N-well. This page gathers what public sources say about the mask itself
-— its PDK entry and layers, the plates the process-steps sheet records
+table, its DRC error messages and one public derivation from the drawn
+tape-out data all point to openings over most low-voltage N-well. This
+page gathers what public sources say about the mask itself — its PDK entry and layers, the plates the process-steps sheet records
 for the MPW runs, what the public renders of those runs show, the
 lithography it needs and the rules that constrain it. How the step is
 performed is on the step page; every mask is indexed on the
@@ -26,7 +26,7 @@ performed is on the step page; every mask is indexed on the
 | Mask-level layer (`gds_layers.csv`) | `chvtpm` mask 97:0, "High Vt Pch mask"; drawing 88:44, mask add 97:43, mask drop 97:42[^pdk-06] |
 | Drawn layer (`gds_layers.csv`) | `hvtp` drawing 78:44, "High-Vt LVPMOS implant"[^pdk-06] |
 | Minimum CD, feature / space | `HVTPMCD` 0.38 / `HVTPMCDSP` 0.38[^pdk-03] |
-| Polarity and tone | Not published. The step page reads the resist as removed over `hvtp`, from the layer's description (inference); Table F2b's rows and the renders' expression point to a different set of openings (below), and the plate's tone is not public. |
+| Polarity and tone | Not published. The step page reads the resist as removed over `hvtp`, from the layer's description (inference); on our reading, Table F2b's rows, the Error Messages page's `chvtpm` checks and the renders' expression point to a different set of openings (below), and the plate's tone is not public. |
 | Exposure class | i-line, an inference on the step page from the 0.38 µm width and space; no public source names the tool ({ref}`machine-i-line-stepper`) |
 | Mask type (process-steps sheet) | None recorded; the sheet codes a type for the via 2, via 3 and via 4 plates only[^steps-sheet] |
 | Plates recorded | all eight[^steps-sheet] |
@@ -58,12 +58,13 @@ the `HVTPM` column `C` ("CREATED") in 15 of its 80 device rows: the two
 p-diffusion resistor rows, the standard 1.8 V PMOS rows, the high-Vt
 PMOS rows, the `pmos_core` rows, the high-Vt varactor, the `pDiode`,
 high-Vt `pDiode` and photodiode rows and the parasitic PNP.[^pdk-06] It
-marks `-`, "Layer not created for the device", in the rows of the
-low-Vt PMOS, the low-Vt and HV varactors, the 5/10.5 V, 16 V and 20 V
-PMOS and the HV p-diffusion resistor, and in every NMOS
-row.[^pdk-06] On the table, then, the standard 1.8 V PMOS receives created `HVTPM` shapes and the low-Vt PMOS
-does not, and the three 1.8 V PMOS flavours differ in which of the two
-threshold masks they receive: the standard PMOS `HVTPM` only, the low-Vt
+marks `-`, "Layer not created for the device", in, among others, the
+rows of the low-Vt PMOS, the low-Vt and HV varactors, the 5/10.5 V,
+16 V and 20 V PMOS and the HV p-diffusion resistor, and in every NMOS
+row.[^pdk-06] On the table, then, the standard 1.8 V PMOS receives
+created `HVTPM` shapes and the low-Vt PMOS does not, and the three
+1.8 V PMOS flavours differ in which of the two threshold masks they
+receive: the standard PMOS `HVTPM` only, the low-Vt
 PMOS `LVTNM` only and the high-Vt PMOS both
 ({ref}`mask-lvtnm`; our reading of the rows).[^pdk-06] That pattern
 is hard to square with a plate opened over drawn `hvtp` alone, and it
@@ -100,6 +101,24 @@ modules, seal ring and frame, with an exception that names only
 `Var_channel` as "poly AND tap AND (nwell NOT hvi) NOT
 areaid.ce";[^pdk-06] it uses neither to define the plate.
 
+The PDK's *Error Messages* page, which describes "many of the automated
+DRC rules that are checked by SkyWater as part of the acceptance
+criteria for GDS data", uses both. It lists four checks on a layer it
+calls `CLHVTPM`, under the rule names `chvtpm.1` to `chvtpm.4`: "0.38
+min. width of CLHVTPM", "0.38 min. spacing/notch of CLHVTPM", "0 min.
+enclosure of ((LVnwell not overlapping Var_channel) NOT lvtn) by
+CLHVTPM" and "0 min. enclosure of ((LVnwell overlapping Var_channel)
+AND hvtp) by CLHVTPM"; it also has a check `hvtp.c1`, "Min/Max
+enclosure of nwell by hvtp", with no value, and two `chvtpm.nikon`
+checks.[^pdk-errors] The page does not define `CLHVTPM`. We read it as
+the created `HVTPM` data (inference from the rule names); on that
+reading the PDK requires the created layer to cover low-voltage N-well
+outside varactor channels and `lvtn`, and `hvtp` where low-voltage
+N-well overlaps a varactor channel — openings over most low-voltage
+N-well rather than over drawn `hvtp` alone, consistent with the Table
+F2b rows above. The checks state what the layer must cover, not the
+operation that makes it.
+
 `masks.csv` also marks "HLow VT PCh Radio\*, HVTRM" as used in SKY130,
 with a mask-level layer `chvtrm` 98:0 and a drawn layer `hvtr` 18:20,
 "High-Vt RF transistor implant", whose one spacing rule to this layer is
@@ -133,8 +152,12 @@ page's pairing of the mask with `hvtp`.
 The expression's first term is the Boolean the PDK calls `LVnwell`, and
 its rows agree with Table F2b's `C` marks above — standard and high-Vt
 PMOS in, low-Vt and 5 V PMOS out (our comparison).[^pdk-06][^mask-renders]
-Since the site names no source, the agreement may only mean that both
-start from the same public table; neither source says what the implants
+The note's wording, "(LV nwell = nwell NOT hvi) NOT lvtn, plus hvtp only
+where nwell overlaps a varactor", matches the two enclosure checks of the
+Error Messages page, which the expression implements only in part (it
+has no varactor term).[^pdk-errors][^mask-renders] Since the site names
+no source, the agreement may only mean that both start from the same
+public PDK pages; neither source says what the implants
 through the openings do, and neither settles which reading matches the
 plate. The {ref}`masks index <masks-renders>` also records that the
 site's `NCM` render, an expression that includes this one, has the same
@@ -238,9 +261,12 @@ transferred into the N-well surface as dopant by
 class, and the resist is removed at {ref}`PCHIS <step-025>` on the
 {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
 {ref}`wet bench <machine-wet-bench>` classes. The species, energies and
-doses are not public; an AMD multi-threshold patent gives a channel
-implant of "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a
-concentration of about 1.0 to 2.5×10¹³ ions/cm²".[^pat-vt-amd]
+doses are not public; an AMD multi-threshold patent gives a laterally
+doped channel implant, made after gate formation with the gate pillars
+as a self-aligned mask, of "approximately 10-20 KeV for boron or 45-90
+KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
+ions/cm²"[^pat-vt-amd] — a different placement from the pre-gate
+implants read here.
 
 **Overlay.** The {ref}`HVTPM <step-022>` page reads the mask as aligned
 to the trench pattern and names the 0.180 µm enclosure of a PMOS by
@@ -297,10 +323,12 @@ not exist.".[^pdk-periph]
 Table 2 of *Criteria & Assumptions* repeats the width and space as
 `HVTPMCD` 0.38 and `HVTPMCDSP` 0.38;[^pdk-03] no other criterion of
 *Criteria & Assumptions* names `hvtp` or the mask. For a plate opened
-over `hvtp`, hvtp.1, hvtp.2 and the area rules set the smallest features; for the
-plate the renders' expression describes, the smallest features would
-also follow the `nwell`, `hvi` and `lvtn` rules (our reading), which the
-PDK does not state as rules for this mask.
+over `hvtp`, hvtp.1, hvtp.2 and the area rules set the smallest
+features; for a plate that covers low-voltage N-well, as the `chvtpm`
+checks describe, the smallest features would also follow the `nwell`,
+`hvi` and `lvtn` rules (our reading). The Error Messages page gives the
+created layer the same 0.38 width and spacing (`chvtpm.1`,
+`chvtpm.2`).[^pdk-errors]
 
 ## Related pages
 
@@ -336,6 +364,9 @@ PDK does not state as rules for this mask.
 * SkyWater PDK, *Periphery rules* — the `hvtp` rules and function line,
   lvtn.9, varac.3, varac.8, hvtr.2, x.9, x.15a and the flag
   legend.[^pdk-periph]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the `chvtpm`
+  checks on `CLHVTPM`, `hvtp.c1` and the "nikon cross"
+  checks.[^pdk-errors]
 * SkyWater PDK, *Device Details* — the high-Vt PMOS and the high-Vt
   varactor option.[^pdk-07]
 * *S8 / SKY130 Process Steps* sheet — the step, the `HVTPM` plates of
@@ -373,7 +404,7 @@ PDK does not state as rules for this mask.
 * Andreani and Mattisson, *IEEE JSSC* 2000 — inversion- and
   accumulation-mode MOS varactors.[^andreani-2000]
 * Krivokapic and Milic (AMD), US 6,238,982 — multiple-threshold devices
-  by masked channel implants.[^pat-vt-amd]
+  by laterally doped channel implants.[^pat-vt-amd]
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — masked
   Vt-adjust implants for standard and low-Vt devices.[^pat-vt-rrr]
 * Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
@@ -395,11 +426,15 @@ PDK does not state as rules for this mask.
 
 * Whether the plate is opened over drawn `hvtp`, as the step page reads
   it, or over low-voltage N-well outside the low-Vt devices, as Table
-  F2b's rows and the renders' expression suggest, is not
-  public;[^pdk-06][^mask-renders] the renders' note contradicts its own
-  expression and names no source for its "fab algorithm".
+  F2b's rows, the `chvtpm` checks and the renders' expression suggest,
+  is not stated in the PDK;[^pdk-06][^pdk-errors][^mask-renders] the
+  Error Messages page does not define `CLHVTPM`, and the renders' note
+  contradicts its own expression and names no source for its "fab
+  algorithm".
 * The operation that makes the `chvtpm` plate data, and what its add,
-  drop and drawing purposes contribute, are not published.[^pdk-06]
+  drop and drawing purposes contribute, are not published; the
+  Error Messages page gives only what the created layer must
+  cover.[^pdk-06][^pdk-errors]
 * How `PCHI` and `PNCHI` divide the threshold shift, and their species,
   energies and doses, are not public.
 * Whether the marked `HVTRM` mask is absent from the baseline flow or
@@ -436,6 +471,10 @@ PDK does not state as rules for this mask.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
     documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
 [^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
