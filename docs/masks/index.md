@@ -84,7 +84,12 @@ reasoning than that it is marked *(inference)* and explained on the
 step page. The one operation the PDK does state is for `hvntm`: "Drawn
 layer will be OR-ed with the CL and rechecked for CLDRC".[^pdk-periph]
 The PDK does not expand "CL"; the {ref}`HVNTM <step-068>` page reads it
-as a computed layer.
+as a computed layer. The PDK's *Error Messages* page lists checks on
+layers it calls `CLHVTPM`, `CLLVTNM`, `CLNTM` and `CLHVNTM` without
+defining them; the mask pages read them as created mask data
+(inference from the names), and the checks say what those layers must
+cover or avoid, not how they are made
+({ref}`masks-derivations`).[^pdk-errors]
 
 ## Mask steps in this reference
 
@@ -649,7 +654,17 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   the note says the mask is "created over (LV nwell = nwell NOT hvi) NOT
   lvtn, plus hvtp only where nwell overlaps a varactor; the fab
   algorithm says do NOT OR hvtp in", naming no source, and the
-  expression omits the varactor term.[^mask-renders] For `LVTNM` the
+  expression omits the varactor term.[^mask-renders] The PDK's *Error
+  Messages* page lists checks on a layer it calls `CLHVTPM` but does not
+  define, including "0 min. enclosure of ((LVnwell not overlapping
+  Var_channel) NOT lvtn) by CLHVTPM" (`chvtpm.3`) and "0 min. enclosure
+  of ((LVnwell overlapping Var_channel) AND hvtp) by CLHVTPM"
+  (`chvtpm.4`);[^pdk-errors] the {ref}`HVTPM mask page <mask-hvtpm>`
+  reads `CLHVTPM` as the created `HVTPM` data (inference from the rule
+  names), on which reading the openings cover most low-voltage N-well
+  rather than drawn `hvtp` alone. That reading and this page's `hvtp`
+  pairing are both readings; the checks state what the created layer
+  must cover, not the operation that makes it. For `LVTNM` the
   renders add a created part inside `nwell`. For `LVOM` they show `hvi`
   OR `tunm`, where this page reads the mask as everything outside
   `hvi`; since the renders show drawn shapes, not photomask artwork, the
@@ -725,6 +740,9 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
 * SkyWater PDK, *Periphery rules* — rules x.9 and x.15a on mask-level
   layers, the grid rules x.1a and x.1b, the rule-set function lines and
   the metal-fuse note.[^pdk-periph]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the checks on
+  the undefined `CLHVTPM`, `CLLVTNM`, `CLNTM` and `CLHVNTM`
+  layers.[^pdk-errors]
 * SkyWater PDK, *WLCSP Rules* — the DECA `cpbo`, `rdl` and `cpmm2`
   rule sets.[^pdk-wlcsp]
 * SkyWater PDK, *Device Details* — the two MiM capacitor constructions,
@@ -805,7 +823,11 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
 ## Open questions
 
 * The PDK does not publish the operations that generate each mask from
-  the drawn layers (apart from the `hvntm` note), nor what the
+  the drawn layers (apart from the `hvntm` note); the Error Messages
+  page's checks on the undefined `CLHVTPM`, `CLLVTNM`, `CLNTM` and
+  `CLHVNTM` layers give widths, spacings and what those layers must
+  enclose or avoid, not the operations.[^pdk-errors] Nor does it
+  publish what the
   `drawing`, `mask add`, `mask drop` and `waffle drop` purposes
   contribute when they sit on a different layer number from the `mask`
   purpose (`cp1m` 28:0 against 33:42–33:43, for example).[^pdk-06] The
@@ -911,6 +933,10 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-wlcsp]: SkyWater PDK Authors, *WLCSP Rules* (Amkor and DECA
     tables), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/wlcsp.html>,

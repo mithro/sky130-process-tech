@@ -185,6 +185,8 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
   125:20; `chvntm` 39:0, 38:20; `hvi` 75:20.[^pdk-06]
 * SkyWater PDK, *Periphery rules* — hvntm.X.1, hvntm.1–hvntm.10, the
   "Defines tip implants for the HV NMOS" heading.[^pdk-periph]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the `chvntm`
+  checks on the undefined `CLHVNTM` layer.[^pdk-errors]
 * SkyWater PDK, *Criteria & Assumptions* — 40° HV tip angle, 23°
   twist, 0.3 µm HV-tip resist, 0.232 µm HVNTM shadowing, 0.02 µm
   penetration, 0.013 µm blocking distance, 0.1 µm minimum HV tip.[^pdk-03]
@@ -248,7 +250,13 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 * The resist chemistry used at 0.3 µm (an i-line resist thinned, or a
   dedicated thin-film product) is not public.
 * Whether the "CL" computed layer OR-ed with the drawn `hvntm`[^pdk-periph]
-  is derived from `hvi` and `nsdm`, as we assume, is not stated.
+  is derived from `hvi` and `nsdm`, as we assume, is not stated in the
+  periphery rules or on the Error Messages page; the latter's checks on
+  an undefined `CLHVNTM` layer, such as "0.185 Min Enclosure of ndiff
+  inside hvi by chvntm" (`chvntm.3`) and "0.7 min. width of CLHVNTM"
+  (`chvntm.1`), state what the layer must cover and its width and
+  spacing, not the operation that makes it; the
+  {ref}`HVNTM mask page <mask-hvntm>` reads them.[^pdk-errors]
 * No public source places `HVNTM` on a particular exposure tool; the
   i-line assignment follows from the 0.7 µm rules.
 
@@ -267,6 +275,10 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
