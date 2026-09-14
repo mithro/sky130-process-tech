@@ -189,11 +189,13 @@ dopant by {ref}`PRI <step-053>`, on the
 {ref}`high-current implanter <machine-high-current-implanter>` or
 {ref}`medium-current implanter <machine-medium-current-implanter>` class,
 and the resist is removed at {ref}`PRIS <step-054>` on the
-{ref}`downstream plasma asher <machine-downstream-plasma-asher>` class.
-The sheet resistance the implant sets is a steep function of dose:
-Seto's grain-boundary trapping model shows the resistivity of doped poly
-falling by orders of magnitude over a narrow doping range,[^seto-1975]
-and Mandurah, Saraswat and Kamins refined it with dopant segregation to
+{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
+{ref}`wet bench <machine-wet-bench>` classes. The sheet resistance the
+implant sets is a steep function of dose on the step pages' reading:
+Seto found the carrier concentration of boron-implanted poly "very small
+at doping levels below 5×10¹⁷/cm³" and increasing "rapidly as the doping
+concentration was increased", and proposed a grain-boundary trapping
+model for it,[^seto-1975] and Mandurah, Saraswat and Kamins refined it with dopant segregation to
 the grain boundaries.[^mandurah-1981]
 
 **Overlay with `RPM`.** The {ref}`RRPM <step-052>` page infers that
@@ -280,9 +282,9 @@ and rpm.2 would set their smallest features (inference).
   never rendered.
 * {ref}`machine-i-line-stepper` — the exposure class the step page
   assigns.
-* {ref}`machine-high-current-implanter` and
-  {ref}`machine-medium-current-implanter` — the implant classes that use
-  the pattern.
+* {ref}`machine-high-current-implanter`,
+  {ref}`machine-medium-current-implanter` and {ref}`machine-wet-bench` —
+  the implant and strip classes that use the pattern.
 * {ref}`material-lithography-materials` — resists, developer and
   reticles.
 * {ref}`category-lithography` and {ref}`category-implant` — the mask

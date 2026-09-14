@@ -27,7 +27,7 @@ the step page; every mask is indexed on the
 | Mask-level layer (`gds_layers.csv`) | `clvom` mask 46:0, "Low Voltage oxide mask"; drawing 45:20, with no description[^pdk-06] |
 | Drawn layer (`gds_layers.csv`) | no drawn `lvom` layer; the complement of `hvi` drawing 75:20, "High voltage (5.0V) thick oxide gate regions" — an inference of the step page[^pdk-06] |
 | Minimum CD, feature / space | `LVOMCD` 0.6 / `LVOMCDSPCSMC` 0.7[^pdk-03] |
-| Polarity and tone | Not published. On the step page's reading the resist is opened outside `hvi` and remains over it, which with a positive resist would put the absorber over the thick-oxide regions (inference); Table F2b and the renders describe the plate's data as those regions (below), which fits either tone. |
+| Polarity and tone | Not published. On the step page's reading the resist is opened outside `hvi` and remains over it, which with a positive resist would put the absorber over the thick-oxide regions (inference); on our reading, Table F2b's rows and the renders' layers describe the plate's data as those regions (below), which fits either tone. |
 | Exposure class | i-line, an inference on the step page from the 0.600 µm `hvi` width rule; no public source names the tool ({ref}`machine-i-line-stepper`) |
 | Mask type (process-steps sheet) | None recorded; the sheet codes a type for the via 2, via 3 and via 4 plates only[^steps-sheet] |
 | Plates recorded | all eight[^steps-sheet] |
@@ -279,8 +279,9 @@ Steps:
 
 On its step page's reading, the next step, {ref}`LVGOX <step-047>`, grows
 the thin gate oxide on the cleared silicon after the resist is gone. The
-next mask step is {ref}`RPM <step-049>`, after the gate deposition
-{ref}`SAGD <step-048>`. There is no exception to the rule for this mask.
+next mask step is {ref}`RPM <step-049>`, after {ref}`SAGD <step-048>`,
+which deposits the amorphous-silicon gate film on its step page's
+reading. There is no exception to the rule for this mask.
 
 ## Design rules and critical dimensions
 

@@ -106,7 +106,10 @@ give as "N/A".[^pdk-errors][^pdk-periph] It has no message under the names
 rpm.1a or rpm.2; under the names urpm.1a, urpm.2 and urpm.3 it lists
 "1.27 min. width of urpm", "0.84 min. spacing/notch of urpm" and "0.2
 min. enclosure of precResistor by rpm", the values of rpm.1a, rpm.2 and
-rpm.3 (our comparison).[^pdk-errors] The periphery rules have no `urpm`
+rpm.3 (our comparison), and they sit, in the page's numbering,
+immediately before the rpm.3 message, so they may be the missing `rpm`
+checks filed under `urpm` names or checks applying the same geometry to
+`urpm` (our reading).[^pdk-errors] The periphery rules have no `urpm`
 rule set, and the page does not say how the `urpm` checks relate to the
 `rpm` rules.
 
@@ -201,7 +204,8 @@ At NA 0.48, the low end of ASML's PAS 5500/275D,[^asml-pas5500-275d] the
 al.'s mask error factor "is unity for large features",[^wong-1998] so a
 CD error on this plate would print at about its own size (inference).
 
-**Resist.** The resist is coated on bare amorphous silicon. The
+**Resist.** On the step page's reading the resist is coated on bare
+amorphous silicon. The
 {ref}`RPM <step-049>` page reads a conventional positive i-line resist of
 about 1 µm, the PDK's generic "Photoresist thickness" being
 1.14 µm,[^pdk-03] as ample for a shallow poly-doping implant of tens of
@@ -220,9 +224,10 @@ by {ref}`P1I <step-050>`, on the
 the resist is removed at {ref}`P1IS <step-051>` on the
 {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
 {ref}`wet bench <machine-wet-bench>` classes. The PDK gives the result
-only as sheet resistances: 48.2 Ω/sq for the implanted poly and, after
-the later implants, 319.8 Ω/sq and 2000 Ω/sq for the protected
-bodies.[^pdk-08] Liu et al. separate a poly resistor's value into an
+only as sheet resistances — 48.2 Ω/sq for "Poly", 319.8 Ω/sq for the
+"XHR poly resistor" and 2000 Ω/sq for the "UHR poly resistor"[^pdk-08] —
+which the step pages read as the gate-implanted film and the two
+protected, later-implanted bodies. Liu et al. separate a poly resistor's value into an
 electrical width reduction, an interface resistance at its ends and a
 "pure sheet resistance";[^liu-2001] the {ref}`RRPM <step-052>` page reads
 part of the SKY130 resistor's end resistance as set where the doped body
