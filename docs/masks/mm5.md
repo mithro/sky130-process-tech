@@ -4,7 +4,7 @@
 The metal-5 mask is the {term}`reticle` that draws SKY130's top metal:
 on the {ref}`MM5 <step-162>` page's reading, the resist printed through
 it at step 162 stays wherever `met5` is drawn — the top-level supply
-grid and wide buses, the bond and probe pads that the pad mask later
+grid and wide buses, the bond pads that the pad mask later
 opens, inductor turns and the landings of every via 4 — and the
 {ref}`MM5E <step-163>` etch removes the 1.26 µm metal-5 stack everywhere
 else. It is the coarsest of the five metal masks, with 1.6 µm lines on
@@ -62,15 +62,16 @@ areaid:ft".[^pdk-06] The mask therefore draws, on the step page's reading,
 the pads that {ref}`PDM <step-168>` opens: the Error Messages page, which
 describes "many of the automated DRC rules that are checked by SkyWater
 as part of the acceptance criteria for GDS data", checks "2.7 min.
-enclosure of bondpadNormal by met5" (pad.4/4a) and "2.5 min. enclosure
-of UTESTPAD by met5" (scribe.17), neither of which the periphery rules
+enclosure of bondpadNormal by met5" (pad.4/4a) (and cupad.3 for pad
+openings inside an inductor) and "2.5 min. enclosure
+of UTESTPAD by met5" (scribe.17), none of which the periphery rules
 list.[^pdk-errors][^pdk-periph] The {ref}`PDM <step-168>` page reports
 the same 2.7 µm margin, per side, in SkyWater's GPIO pad cell
 ({ref}`mask-pdm`).
 Marsh et al. bonded copper wire over probe marks on pads of 0.8 µm and
 3 µm aluminium,[^marsh-2016] and Ching and Schroen found that the choice
-between aluminium and titanium-tungsten metal systems changed a pad's
-tolerance of bonding stresses;[^ching-1988] Hess et al. studied pads
+of pad metallisation, among systems of aluminium and titanium-tungsten
+alloy, changed a pad's tolerance of bonding stresses;[^ching-1988] Hess et al. studied pads
 with circuitry under them at 0.13 µm.[^hess-2003]
 
 The PDK's mask generation table, Table F2b, has an `MM5` column, marked
@@ -133,7 +134,8 @@ does not say what the "nikon cross" is. The seal-ring cell
 each of its four corners, a sub-cell named `nikon_sealring_shape` that
 draws inside a 4 µm square a cross of three rectangles, 2.4 µm across
 with 0.5 µm arms, on `cmm5` 59:0 and 23 other mask-level layers, and the
-square less the cross on seven more, among them `cpdm` 37:0 (our reading
+square, with its corners cut at 45°, less the cross on seven more, among
+them `cpdm` 37:0 (our reading
 of the GDS file).[^caravel-sealring] We read that sub-cell as a "nikon
 cross" of the kind the checks name, and the two drawn forms as the
 "polarity" they test (inference from the names); rule nsm.3 exempts cells
@@ -390,7 +392,7 @@ them.
 * SkyWater PDK, *Periphery rules* — the `m5` rules, pad.3, nsm.3–nsm.3b,
   x.1b, x.7, x.9, x.12d, x.12e, x.15a, x.22, x.23c and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page — the `m5`, pad, scribe and
+* SkyWater PDK, *Error Messages* page — the `m5`, pad, cupad.3, scribe and
   `cmm5.nikon` checks.[^pdk-errors]
 * SkyWater PDK, *Summary of Key Periphery Rules* — Table F4.[^pdk-summary]
 * SkyWater PDK, *Background* — the flow letters.[^pdk-02]
@@ -424,7 +426,7 @@ them.
 ### Deep dive
 
 * Ching and Schroen, IRPS 1988 — oxides under bond pads and the choice of
-  aluminium and titanium-tungsten metal systems.[^ching-1988]
+  metallisation.[^ching-1988]
 * Marsh et al., ECTC 2016 — copper ball bonds over probe marks on pads of
   two aluminium thicknesses.[^marsh-2016]
 * Hess et al., ECTC 2003 — bond-over-active pad structures for 0.13 µm
