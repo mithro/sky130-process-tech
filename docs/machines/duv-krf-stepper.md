@@ -333,10 +333,10 @@ settings and resists per layer are not public.
 * {ref}`mask-p1m` and {ref}`mask-vim4` — per-mask pages for the gate
   mask and the via-4 mask, both assigned to this class; {ref}`mask-dnm`
   for the deep N-well mask, for which it is the alternative.
-* {ref}`mask-licm1`, {ref}`mask-li1m`, {ref}`mask-ctm1`, {ref}`mask-mm1` and
-  {ref}`mask-vim` — per-mask pages for the local-interconnect contact,
-  local-interconnect, contact, metal-1 and via-1 masks, all assigned to
-  this class.
+* {ref}`mask-licm1`, {ref}`mask-li1m`, {ref}`mask-ctm1`, {ref}`mask-mm1`,
+  {ref}`mask-vim` and {ref}`mask-mm2` — per-mask pages for the
+  local-interconnect contact, local-interconnect, contact, metal-1, via-1
+  and metal-2 masks, all assigned to this class.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
 * {ref}`materials-index` — resists, anti-reflective coatings, developer
