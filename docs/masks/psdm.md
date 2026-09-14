@@ -337,8 +337,8 @@ of 0.23 (`DPTS`) and "p+ in nwell to pwell" of 0.05 (`PPTS`), and Table
 3e a "Minimum n+ or p+ - nwell spacing to prevent latch-up" of 0.23
 (`NPNWLU`) and a "Max. overlap of n-well by p+ tap" of 0.06
 (`XNWPTS`).[^pdk-03] Table F3a of the *Summary of Key Periphery Rules*
-gives `n/psdm` a width of 0.380, a spacing of 0.380 and "Yes" under
-"Manual merge ?", and, in its diff and tap columns, spacings of 0.130 and
+gives `n/psdm` a width of 0.380, a spacing of 0.380 and "Yes" in the
+"Manual" (merge) column, and, in its diff and tap columns, spacings of 0.130 and
 enclosures of 0.130, against the 0.125 µm of psd.5a and psd.5b (our
 reading of the columns; the PDK does not reconcile
 them).[^pdk-summary][^pdk-periph] For the plate, psd.1 and psd.2 set the
