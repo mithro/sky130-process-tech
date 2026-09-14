@@ -7,8 +7,8 @@ resist printed through it at step 113 stays wherever `met1` is drawn,
 and the {ref}`MM1E <step-114>` etch removes the metal stack everywhere
 else. With 0.14 µm lines on 0.14 µm spaces it is, with metal 2, the
 tightest line pattern of the back end, the step pages read it as a
-critical KrF level, and it is one of the four masks whose data the PDK
-puts on its finest grid. It is also one of the levels on which the PDK
+critical KrF level, and it is one of the four masks whose "mask data" rule x.1a
+names for its 0.001 grid. It is also one of the levels on which the PDK
 allows waffle-drop shapes inside the die. This page gathers what public
 sources say
 about the mask itself — its PDK entry and layers, the plates the
@@ -404,8 +404,8 @@ m1.2).
   on the site alone.[^mask-renders][^pdk-06]
 * The PDK prints the x.1a and x.1b grids with the unit "mm" and does
   not say why the `met1` mask data need the finer one.[^pdk-periph]
-* Whether the missing MPW-5 plate is a gap in the record is not
-  stated,[^steps-sheet] and no public source lists the `MM1` plate of the
+* Whether the absent MPW-5 record is a gap in the record or a difference
+  in the run is not stated,[^steps-sheet] and no public source lists the `MM1` plate of the
   original MPW-4 set `5CS8010AC`.[^mask-renders]
 
 <!-- footnotes -->

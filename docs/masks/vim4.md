@@ -355,8 +355,8 @@ via4.1 and via4.2).
 * Why a 0.8 µm via level has a mask type for 248 nm, and whether it is
   exposed on a KrF or an i-line tool, is not public; nor are the tone,
   the resist or the plate's CD specification.
-* Whether the missing MPW-5 plate is a gap in the record is not
-  stated,[^steps-sheet] and no public source lists the `VIM4` plate of
+* Whether the absent MPW-5 record is a gap in the record or a difference
+  in the run is not stated,[^steps-sheet] and no public source lists the `VIM4` plate of
   the original MPW-4 set `5CS8010AC`.[^mask-renders]
 * The PDK publishes no operation from `via4` to the `cviam4` plate data,
   and does not say what the `cviam4` drawing purpose at 117:20 is

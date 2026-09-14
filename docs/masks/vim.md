@@ -7,8 +7,8 @@ resist printed through it at step 118 is opened over every drawn `via`,
 and the {ref}`VIME <step-119>` etch cuts the holes through the
 inter-metal oxide down to the metal-1 lines. At 0.150 µm its holes are
 the smallest drawn holes in the flow, the step pages read it as a
-critical KrF level, and it is one of the four masks whose data the PDK
-puts on its finest grid. On the reading of this reference's sky130B
+critical KrF level, and it is one of the four masks whose "mask data" rule x.1a
+names for its 0.001 grid. On the reading of this reference's sky130B
 overview, the same mask prints the lower half of a split via 1 in that
 variant of the process. This page gathers what
 public sources say about the mask itself — its PDK entry and layers, the
@@ -90,8 +90,9 @@ arithmetic); Samuels, Maurer and Farrell examined "how fine a grid size
 is needed in the manufacture of the mask" once OPC is
 applied.[^samuels-1995] The PDK does not say why the via data need the
 finer grid. Table 4 of *Criteria & Assumptions* adds a "min. etch and
-fill capability for via" of 0.18 (`VEFC`) and a "Via1 slope" of 0.02
-(`Via1Slope`), neither with a unit or an explanation.[^pdk-03]
+fill capability for via" of 0.18 (`VEFC`) and a "Via1 slope" of 0.02 (`Via1Slope`), both in a
+column headed "Value (um)" and neither explained; a slope given in µm
+is itself unexplained.[^pdk-03]
 
 ### In the public renders
 
@@ -108,8 +109,8 @@ data, not SkyWater's mask-generation recipe; the site renders `VIMC` as
 image includes the vias that its `VIMC` image repeats (our reading of the
 two layer choices)
 ({ref}`masks-derivations`). The sheet's "Info" note for the `VIM` row has
-the same level name, and its `VIMC` note has "(via_bot = cviam = VIM)";
-the two sources share this wording, so neither is cited as corroborating
+the same level name, and its `VIMC` note has "(via_bot = cviam = VIM)", close to
+the site's "via_bot (cviam = VIM)"; the two sources share this wording, so neither is cited as corroborating
 the other ({ref}`masks-renders-sheet-notes`).[^steps-sheet][^mask-renders]
 
 Every rendered die of every run carries `via` shapes — at least
@@ -183,7 +184,7 @@ critical layers.[^itrs-03]
 **Mask errors.** Wong et al. found the mask error factor rising "rapidly
 when the critical dimension (CD) is less than […] 0.75 (lambda) /NA for
 contacts";[^wong-1998] at 248 nm and NA 0.7 that is about 0.27 µm (our
-arithmetic), nearly twice the 0.150 µm via, so plate CD errors would
+arithmetic), about 1.8 times the 0.150 µm via, so plate CD errors would
 print magnified (inference). Kim et al. found the factor rising near the
 resolution limit, larger for dense than for isolated contacts and smaller
 on attenuated masks than on binary ones, because the attenuated plates
@@ -311,7 +312,7 @@ and via.12, for a back end SKY130's aluminium flow does not
 use.[^pdk-03][^pdk-periph] Via.3 gives the seal-ring via width as
 "0.2\*L" where via.1a gives 0.150 µm, and the irdrop rules speak of "mcon
 area" although they are via rules; the PDK explains neither. The summary
-Table F3c repeats the via as 0.150 wide on a 0.170 space, enclosed by
+Table F3c, "Back end layers for S8D\* flow", repeats the via as 0.150 wide on a 0.170 space, enclosed by
 metal 1 and by metal 2 by "0.055 / 0.085".[^pdk-summary] For the plate
 the decisive figures are one 0.150 µm square on a 0.32 µm pitch (our
 arithmetic from via.1a and via.2), the smallest hole in the flow.
@@ -406,10 +407,10 @@ arithmetic from via.1a and via.2), the smallest hole in the flow.
   specification, the resist and the exposure tool are not public; the
   KrF reading rests on the 0.150 µm rule.
 * The PDK does not explain why the "min. etch and fill capability for
-  via" (0.18) exceeds the drawn via, what the "Via1 slope" of 0.02
-  measures, or why via.3 gives "0.2\*L".[^pdk-03][^pdk-periph]
-* Whether the missing MPW-5 plate is a gap in the record is not
-  stated,[^steps-sheet] and no public source lists the `VIM` plate of the
+  via" (0.18) exceeds the drawn via, what the "Via1 slope" of 0.02, printed in a µm
+  column, measures, or why via.3 gives "0.2\*L".[^pdk-03][^pdk-periph]
+* Whether the absent MPW-5 record is a gap in the record or a difference
+  in the run is not stated,[^steps-sheet] and no public source lists the `VIM` plate of the
   original MPW-4 set `5CS8010AC`.[^mask-renders]
 * The sheet and the renders site give both `CTM1` and `VIM` the level
   name "Via 1"; neither explains it.[^steps-sheet][^mask-renders]
