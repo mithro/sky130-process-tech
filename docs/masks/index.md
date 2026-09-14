@@ -107,6 +107,7 @@ second column links to it.
 ```{toctree}
 :maxdepth: 1
 
+fom
 dnm
 p1m
 licm1
@@ -138,7 +139,7 @@ In the table:
 
 | Step | PDK mask (`masks.csv`) | Mask-level layers (`gds_layers.csv`) | Drawn layers (`gds_layers.csv`) | Patterns | Minimum CD, feature / space |
 |------|------------------------|--------------------------------------|---------------------------------|----------|-----------------------------|
-| {ref}`FOM <step-004>` | Field Oxide, FOM — `X` | `cfom` mask 23:0; `cfom` drawing 22:20, mask add 22:21, mask drop 22:22, waffle drop 22:24; `fom` dummy 22:23 | `diff` 65:20 and `tap` 65:44 *(inference)* | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>` | `FOMCD` 0.14 / `FOMCDSP` 0.27 |
+| {ref}`FOM <step-004>` | Field Oxide, {ref}`FOM <mask-fom>` — `X` | `cfom` mask 23:0; `cfom` drawing 22:20, mask add 22:21, mask drop 22:22, waffle drop 22:24; `fom` dummy 22:23 | `diff` 65:20 and `tap` 65:44 *(inference)* | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>` | `FOMCD` 0.14 / `FOMCDSP` 0.27 |
 | {ref}`DNM <step-007>` | Deep N-Well, {ref}`DNM <mask-dnm>` — `X` | `cdnm` mask 48:0 | `dnwell` 64:18 | {ref}`DNI <step-008>`; strip {ref}`DNIS <step-009>` | `DNMCD` 3 / `DNMCDSP` 6.3 |
 | {ref}`LVTNM <step-014>` | Low Vt Nch\*, LVTNM — `X` | `clvtnm` mask 25:0; drawing 25:44, mask add 25:43, mask drop 25:42 | `lvtn` 125:44 | {ref}`LVTNI <step-015>`; strip {ref}`LVTNIS <step-016>` | `LVTNMCD` 0.38 / `LVTNMCDSP` 0.38 |
 | {ref}`NWM <step-017>` | N-Well\*, NWM — `X` | `cnwm` mask 21:0 | `nwell` 64:20 | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`; strip {ref}`LVTPIS <step-021>` | `NWMCD` 0.84 / `NWMCDSP` 1.27 |
