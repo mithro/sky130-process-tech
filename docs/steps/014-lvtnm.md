@@ -241,9 +241,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 * Mack, *Fundamental Principles of Optical Lithography* — k₁, resist
   profiles and thick-resist imaging, the optics behind the i-line
   assignment.[^mack-2007]
-* Levinson, *Principles of Lithography* — overlay budgets and how
-  non-critical layers are assigned to older exposure
-  tools.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 * Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
   voltage as a function of channel doping, the physics a Vt-adjust mask
   exists to exploit.[^taur-2009]

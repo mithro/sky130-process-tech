@@ -268,8 +268,8 @@ and the pre-oxidation clean as part of those steps (see the
   implants before the tunnel dielectric is formed.[^pat-04]
 * Baker and Capsuto, SPIE 1996 — CD control for an i-line 0.35 µm
   device using a new anti-reflective coating.[^baker-1996]
-* Levinson, *Principles of Lithography* — non-critical-layer tool
-  choice and overlay budgets.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 * Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge
   shift the threshold of devices near an implant-mask edge, relevant
   to the 0.095 µm `tunm` clearances.[^hook-2003]
