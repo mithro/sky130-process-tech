@@ -657,8 +657,8 @@ sources, in the order in which the thermal steps occur.
 2. **Well anneal.** {ref}`RTAI <step-034>` activates the ten well and
    channel implants at once; the step page reads it as a rapid thermal
    anneal, for which seconds at 1000–1100 °C is typical.[^stolk-1997]
-3. **SONOS stack.** Cypress's first ONO patent forms all three layers in
-   one furnace window of "about 700° C. to about 875° C."
+3. **SONOS stack.** One embodiment of a Cypress ONO patent forms all
+   three layers at temperatures "from about 700° C. to about 875° C."
    ({ref}`ONO <step-040>`).[^pat-01]
 4. **Gate oxides.** Gate oxides of this era are typically grown dry at
    750–950 °C ({ref}`GOX100 <step-043>`,
