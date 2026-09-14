@@ -2440,9 +2440,12 @@ Tier: deep dive.
 **PAT-VT-AMD** — US 6,238,982 B1, *"Multiple threshold voltage
 semiconductor device fabrication technology"*, Z. Krivokapic and
 O. Milic (AMD), granted 2001-05-29.
-<https://patents.google.com/patent/US6238982B1/en>. Channel implant
-"approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a
-concentration of about 1.0 to 2.5×10¹³ ions/cm²". Tier: deep dive.
+<https://patents.google.com/patent/US6238982B1/en>. A laterally doped
+channel (LDC) implant, made after gate formation with the gate pillars
+as a self-aligned mask, at "approximately 10-20 KeV for boron or 45-90
+KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²"; its
+prior-art threshold adjust implant is "about 5-to-15 KeV at a
+concentration of about 8×10¹² ions/cm²". Tier: deep dive.
 Also used on the HVTPM mask page.
 
 **PAT-WELL-IBM** — US 6,667,205 B2, *"Method of forming retrograde

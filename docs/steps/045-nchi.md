@@ -98,14 +98,17 @@ fab (SKY130's values are not public):
   the later {term}`RTA`.[^wang-1997] Cypress's flow uses BF₂;[^pat-04] an AMD
   patent of the era gives "approximately 10-20 KeV for boron or
   45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
-  ions/cm²".[^pat-vt-amd]
+  ions/cm²" for a laterally doped channel implant made after gate
+  formation with the gate pillars as a self-aligned mask, a different
+  placement from this pre-gate implant.[^pat-vt-amd]
 * **Energy.** Tens of keV for BF₂ (10–100 keV in the Cypress
   patent[^pat-04]), set so that the peak lies just under the eventual
   gate oxide after allowing for the ~10 nm {term}`screen oxide`[^pdk-hv] the
   ions must cross — the screen also randomises the beam and reduces
   {term}`channelling`.[^txt-02]
 * **Dose.** Of order 10¹²–10¹³ cm⁻²: "1e12 cm⁻² to about 1e14
-  cm⁻²"[^pat-04] and 1.0–2.5 × 10¹³ cm⁻²[^pat-vt-amd] in the patents.
+  cm⁻²" in the Cypress patent[^pat-04] and 1.0–2.5 × 10¹³ cm⁻² for the
+  AMD laterally doped channel implant.[^pat-vt-amd]
 * **Tilt and twist.** 7° with twist, the textbook
   convention.[^txt-02][^wiki-implant]
 * **Wafer handling.** Single-wafer end station, electrostatic chuck,
@@ -200,8 +203,9 @@ fab (SKY130's values are not public):
   implantation.[^macpherson-1971]
 * Peressini and Johnson, IEDM 1973 — threshold adjustment of n-channel
   enhancement FETs.[^peressini-1973]
-* Krivokapic and Milic (AMD), US 6,238,982 — channel-implant energies
-  and doses of the era.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds by
+  laterally doped channel implants self-aligned to the gate
+  pillars.[^pat-vt-amd]
 * Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 —
   threshold-adjust boron through a sacrificial oxide.[^pat-vt-lsi]
 * Wang et al., *J. Electrochem. Soc.* 1997 — fluorine's effect on

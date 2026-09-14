@@ -85,10 +85,11 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   the cell's channel,[^cyp-25] but SkyWater lists no indium
   source.[^skw-01]
 * **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻²
-  (typical);[^txt-01] an AMD channel-engineering patent of the era
+  (typical);[^txt-01] an AMD multi-threshold patent of the era
   gives "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a
-  concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a channel
-  implant,[^pat-vt-amd] and a halo sits in the same range.
+  concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a laterally doped
+  channel implant made with the gate pillars as a self-aligned
+  mask,[^pat-vt-amd] and a halo sits in the same range.
 * **Tilt and rotation.** Large tilt with two or four rotations to make
   the pocket symmetric[^pat-quad-tsmc] (20–45° is typical[^txt-04]); in
   the dense memory array the neighbouring control-gate lines {term}`shadow <shadowing>` a
@@ -168,8 +169,9 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   cell.[^cyp-25]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
   tool class.[^axcelis-8250]
-* Krivokapic and Milic (AMD), US 6,238,982 — era-typical boron and BF₂
-  channel-implant energies and doses.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — boron and BF₂ energies
+  and doses for a laterally doped channel implant self-aligned to the
+  gate pillars.[^pat-vt-amd]
 
 ### High-level understanding
 
