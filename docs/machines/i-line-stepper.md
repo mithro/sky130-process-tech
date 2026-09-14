@@ -349,8 +349,8 @@ implants.[^pdk-03]
   for the field-oxide mask, for which it is the alternative.
 * {ref}`mask-capm` and {ref}`mask-cap2m` — per-mask pages for the two
   MiM capacitor masks, both assigned to this class.
-* {ref}`mask-ntm` — the per-mask page for the N-tip implant mask,
-  assigned to this class.
+* {ref}`mask-ntm` and {ref}`mask-hvntm` — per-mask pages for the N-tip
+  and high-voltage N-tip implant masks, assigned to this class.
 * {ref}`mask-mm3` and {ref}`mask-mm4` — per-mask pages for the metal-3 and
   metal-4 masks, for which the step pages leave the class open between
   this one and KrF.
