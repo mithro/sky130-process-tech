@@ -59,9 +59,10 @@ bodies were covered at {ref}`RPM <step-049>` and not opened at
 they receive; it gives the alternative — one reticle for both resistor
 implants — as also consistent with the public sources. Why the film needs
 its own mask is, on the step page's reading, the steepness of poly
-resistance against doping: Seto's grain-boundary trapping model shows the
-resistivity falling by orders of magnitude over a narrow doping
-range,[^seto-1975] so the 300 Ω/sq and 2000 Ω/sq films need separately
+resistance against doping — Seto found the carrier concentration of
+boron-implanted poly "very small at doping levels below 5×10¹⁷/cm³" and
+increasing "rapidly as the doping concentration was increased", and
+proposed a grain-boundary trapping model for it[^seto-1975] — so the 300 Ω/sq and 2000 Ω/sq films need separately
 controlled doses. Brederlow et al. found the low-frequency noise of
 integrated poly resistors "much higher than predicted" by common
 simulation models and examined its dependence on doping and deposition
@@ -97,7 +98,11 @@ width of urpm" (urpm.1a), "0.84 min. spacing/notch of urpm" (urpm.2) and
 "0.2 min. enclosure of precResistor by rpm" (urpm.3).[^pdk-errors] The
 first two give `urpm` the width and spacing that rules rpm.1a and rpm.2
 give `rpm`, which fits the step page's application of the `rpm` geometry
-to this layer (our comparison), and the third is worded for `rpm`.
+to this layer (our comparison), and the third is worded for `rpm`. The
+three checks also sit, in the page's numbering, immediately before the
+rpm.3 message, where the rpm.1a and rpm.2 messages the page lacks would
+be, so they may equally be the `rpm` checks filed under `urpm` names (our
+reading).
 Table C3 of the *Layers Reference* defines the `prec_resistor` of the
 rules as "rpm AND (poly overlapping poly.rs) AND psdm", naming `rpm`
 and not `urpm`;[^pdk-06] the PDK does not say whether a 2000 Ω/sq
@@ -207,9 +212,10 @@ and the resist is removed at
 {ref}`UPRIS <step-057>` on the
 {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
 {ref}`wet bench <machine-wet-bench>` classes, which also serves as the
-clean before the gate cap. Wright et al. describe what it takes to make
-high-sheet-resistance resistor films with a low temperature
-coefficient,[^wright-2010] and Chen et al. treat the voltage coefficient
+clean before the gate cap. Wright et al. describe rf-sputtered films of
+the Cr–Si–B–SiO₂/Al₂O₃ system that reach 20 kΩ/sq with a temperature
+coefficient below 200 ppm/°C, an alternative to poly for high-value
+resistors,[^wright-2010] and Chen et al. treat the voltage coefficient
 of poly resistors in a high-voltage CMOS technology.[^chen-2000]
 
 **Overlay.** The {ref}`URPM <step-055>` page infers alignment to the
@@ -290,8 +296,8 @@ and 0.84 spacing of the `urpm` checks would set their smallest features
   {ref}`UPRIS <step-057>` — the mask step, the resistor implant and the
   strip.
 * {ref}`mask-rpm` and {ref}`mask-rrpm` — the other two resistor masks,
-  which on the step pages' reading cover the `urpm` bodies and leave them
-  closed.
+  which on the URPM step page's reading cover the `urpm` bodies and leave
+  them closed.
 * {ref}`mask-p1m` — the poly mask that cuts the resistor bodies.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the masks without a `masks.csv` entry.
