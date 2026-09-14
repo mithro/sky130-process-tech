@@ -158,6 +158,7 @@
   inventory_key: null
   discovery:
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  - OpenAlex search of Cypress Semiconductor (US) works for SONOS and nonvolatile memory
   notes: Authors affiliated with Cypress Semiconductor, 2401 East 86th Street, Bloomington, Minnesota
     (the fab's address; OpenAlex). The abstract does not name the S8 process.
   verified: 2026-09-14 Crossref REST API works/10.1116/1.2166859 resolved; title matches OpenAlex record
@@ -218,6 +219,7 @@
   inventory_key: null
   discovery:
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  - OpenAlex search of Cypress Semiconductor (US) works for SONOS and nonvolatile memory
   notes: Authors affiliated with Cypress Semiconductor, 2401 East 86th Street, Bloomington, MN (OpenAlex).
     The abstract mentions CMP control at the 130 nm node without naming a process.
   verified: 2026-09-14 Crossref REST API works/10.1109/issm.2006.4493038 resolved; title matches OpenAlex
@@ -297,8 +299,8 @@
       paper.
   inventory_key: HSIEH-2019
   discovery:
-  - seed entry in docs/references/public-sources.md
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  - seed entry in docs/references/public-sources.md
   notes: The abstract says only "a logic foundry technology"; OpenAlex lists SkyWater Technology Foundry
     among the raw affiliations, and the SkyWater ReRAM documentation reproduces a figure from this paper
     (inventory HSIEH-2019).
@@ -455,8 +457,8 @@
     reason: The page's ReRAM section cites this BEOL RRAM integration work.
   inventory_key: SRIMANI-2020
   discovery:
-  - seed entry in docs/references/public-sources.md
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  - seed entry in docs/references/public-sources.md
   notes: The abstract says "a commercial foundry" at a 130 nm node; OpenAlex lists SkyWater Technology
     among the raw affiliations (inventory SRIMANI-2020).
   verified: 2026-09-14 Crossref REST API works/10.1109/vlsitechnology18217.2020.9265083 resolved; title
@@ -526,6 +528,7 @@
   inventory_key: null
   discovery:
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  - OpenAlex works citing an included paper
   notes: The abstract says "a foundry logic technology"; OpenAlex lists SkyWater Technology Foundry among
     the raw affiliations. That the foundry is SkyWater is not stated in the abstract.
   verified: 2026-09-14 Crossref REST API works/10.1109/led.2021.3055017 resolved; title matches OpenAlex
@@ -568,6 +571,7 @@
   inventory_key: null
   discovery:
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  - OpenAlex works citing an included paper
   notes: The abstract reports arrays "fabricated in a 130-nm CMOS process"; OpenAlex lists SkyWater Technology
     Foundry among the raw affiliations. The foundry is not named in the abstract.
   verified: 2026-09-14 Crossref REST API works/10.1109/ted.2021.3097975 resolved; title matches OpenAlex
@@ -603,6 +607,9 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
+  - Semantic Scholar public search API
+  - Crossref REST API bibliographic search
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/lssc.2022.3188925 resolved; title matches OpenAlex
     record
@@ -632,6 +639,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex works citing an included paper
   notes: Borderline inclusion. Simulation of the SkyWater memristor model (1R and 1T1R read/write); included
     because it examines the PDK's RRAM model rather than merely using it.
   verified: 2026-09-14 Crossref REST API works/10.1109/icm56065.2022.10005367 resolved; title matches
@@ -664,6 +672,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/access.2023.3336408 resolved; title matches OpenAlex
     record
@@ -691,6 +700,10 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
+  - Semantic Scholar public search API
+  - Crossref REST API bibliographic search
+  - OpenAlex works citing an included paper
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/iscas46773.2023.10182052 resolved; title matches
     OpenAlex record
@@ -720,6 +733,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - Semantic Scholar public search API
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/bcicts54660.2023.10310944 resolved; title matches
     OpenAlex record
@@ -749,6 +763,9 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
+  - Semantic Scholar public search API
+  - Crossref REST API bibliographic search
   notes: Borderline inclusion. A demonstration paper; the abstract reports fabric functionality working
     on first silicon.
   verified: 2026-09-14 Crossref REST API works/10.1109/fpl60245.2023.00070 resolved; title matches OpenAlex
@@ -796,6 +813,7 @@
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  - Semantic Scholar public search API
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.23919/vlsitechnologyandcir57934.2023.10185414 resolved;
     title matches OpenAlex record
@@ -821,6 +839,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/iscas46773.2023.10181702 resolved; title matches
     OpenAlex record
@@ -860,7 +879,9 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   - Semantic Scholar public search API
+  - Crossref REST API bibliographic search
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/iolts59296.2023.10224899 resolved; title matches
     OpenAlex record
@@ -897,6 +918,9 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
+  - Semantic Scholar public search API
+  - Crossref REST API bibliographic search
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/iscas46773.2023.10181379 resolved; title matches
     OpenAlex record
@@ -935,6 +959,7 @@
   inventory_key: null
   discovery:
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  - OpenAlex works citing an included paper
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/isqed57927.2023.10129298 resolved; title matches
     OpenAlex record
@@ -993,6 +1018,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - Semantic Scholar public search API
   notes: Borderline inclusion. The abstract names a library developed in 65 nm CMOS and SkyWater 130 nm
     with floating-gate devices but does not state silicon results.
   verified: 2026-09-14 Crossref REST API works/10.1109/cicc60959.2024.10529028 resolved; title matches
@@ -1019,6 +1045,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/mdat.2024.3444728 resolved; title matches OpenAlex
     record
@@ -1057,6 +1084,8 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
+  - Semantic Scholar public search API
   notes: Borderline inclusion. An LLM benchmarking paper; included because the abstract reports a functional
     chip from a SkyWater 130 nm shuttle.
   verified: 2026-09-14 Crossref REST API works/10.1109/lad62341.2024.10691811 resolved; title matches
@@ -1091,6 +1120,8 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
+  - OpenAlex works citing an included paper
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/mdat.2024.3405892 resolved; title matches OpenAlex
     record
@@ -1129,6 +1160,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1049/ell2.70036 resolved; title matches OpenAlex record
 - id: doi:10.1109/ispacs68724.2025.11383342
@@ -1156,6 +1188,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - Semantic Scholar public search API
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/ispacs68724.2025.11383342 resolved; title matches
     OpenAlex record
@@ -1184,6 +1217,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/austrochip67945.2025.11183685 resolved; title matches
     OpenAlex record
@@ -1210,6 +1244,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: Borderline inclusion. The abstract reports a measured gain, noise and power but also describes
     post-layout verification of a fabrication-ready layout; the silicon status is not clear from the abstract.
   verified: 2026-09-14 Crossref REST API works/10.1109/hswtech64936.2025.11277421 resolved; title matches
@@ -1327,6 +1362,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex works citing an included paper
   notes: Borderline inclusion. A design-flow paper whose abstract includes model calibration and parameter
     extraction for the RRAM devices of an open 130 nm PDK.
   verified: 2026-09-14 Crossref REST API works/10.1109/icm66518.2025.11322496 resolved; title matches
@@ -1387,6 +1423,9 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
+  - Crossref REST API bibliographic search
+  - OpenAlex works citing an included paper
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/vlsi-soc64688.2025.11421773 resolved; title matches
     OpenAlex record
@@ -1458,6 +1497,8 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
+  - Crossref REST API bibliographic search
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/iceee67194.2025.11261982 resolved; title matches
     OpenAlex record
@@ -1491,6 +1532,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/sbcci66862.2025.11218693 resolved; title matches
     OpenAlex record
@@ -1569,6 +1611,9 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
+  - Semantic Scholar public search API
+  - Crossref REST API bibliographic search
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/jxcdc.2026.3670667 resolved; title matches OpenAlex
     record
@@ -1610,6 +1655,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 arXiv abs page 2604.21625 resolved; title matches OpenAlex record for DOI 10.48550/arXiv.2604.21625
 - id: doi:10.1109/lascas67804.2026.11457090
@@ -1639,6 +1685,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/lascas67804.2026.11457090 resolved; title matches
     OpenAlex record
@@ -1676,6 +1723,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 arXiv abs page 2603.12415 resolved; title matches OpenAlex record for DOI 10.48550/arXiv.2603.12415
 - id: arxiv:2606.24916
@@ -1715,6 +1763,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: Borderline inclusion. A video-system paper validated on an SRAM ASIC fabricated in SkyWater 130
     nm CMOS.
   verified: 2026-09-14 arXiv abs page 2606.24916 resolved; title matches OpenAlex record for DOI 10.48550/arXiv.2606.24916
@@ -1744,6 +1793,7 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
+  - OpenAlex full-text search for sky130
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/cae69023.2026.11450324 resolved; title matches
     OpenAlex record
