@@ -14898,41 +14898,57 @@ families:
     kind: A
     document_type: application
     publication_date: 2001-08-03
-    status: null
+    title: Method of forming metallization structure in integrated circuit
+    application_number: JP2000383228A
+    filing_date: 2000-12-18
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001210647A
       google_patents: https://patents.google.com/patent/JP2001210647A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6969448B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20010067391A
     country: KR
     kind: A
     document_type: application
     publication_date: 2001-07-12
-    status: null
+    title: Method for forming a metallization structure in an integrated circuit
+    application_number: KR1020000077624A
+    filing_date: 2000-12-18
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20010067391A
       google_patents: https://patents.google.com/patent/KR20010067391A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6969448B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR100748144B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2007-08-09
-    status: null
+    title: Method for forming a metallization structure in an integrated circuit
+    application_number: KR1020000077624A
+    filing_date: 2000-12-18
+    status: Expired - Fee Related
+    expiry:
+      date: 2020-12-18
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR100748144B1
       google_patents: https://patents.google.com/patent/KR100748144B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6969448B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW540136B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2003-07-01
+    title: Method for forming a metallization structure in an integrated circuit
+    application_number: TW089127709A
+    filing_date: 2000-12-22
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW540136B
       google_patents: https://patents.google.com/patent/TW540136B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6969448B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-112
     relation: same-lineage-assignee
@@ -15004,91 +15020,122 @@ families:
     kind: A1
     document_type: application
     publication_date: 2001-12-11
-    status: null
+    title: Integrated resonator and amplifier system
+    application_number: AU2001258595A
+    filing_date: 2001-05-22
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DAU2001258595A1
       google_patents: https://patents.google.com/patent/AU2001258595A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6653803B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1290927A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2003-03-12
-    status: null
+    title: Integrated resonator and amplifier system
+    application_number: EP01931904A
+    filing_date: 2001-05-22
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1290927A2
       google_patents: https://patents.google.com/patent/EP1290927A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6653803B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2003535439A
     country: JP
     kind: A
     document_type: application
     publication_date: 2003-11-25
-    status: null
+    title: Integrated resonator and amplifier system
+    application_number: JP2001588298A
+    filing_date: 2001-05-22
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2003535439A
       google_patents: https://patents.google.com/patent/JP2003535439A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6653803B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP5007870B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2012-08-22
-    status: null
+    title: Integrated system of resonator and amplifier
+    application_number: JP2001588298A
+    filing_date: 2001-05-22
+    status: Expired - Lifetime
+    expiry:
+      date: 2021-05-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP5007870B2
       google_patents: https://patents.google.com/patent/JP5007870B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6653803B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20030007808A
     country: KR
     kind: A
     document_type: application
     publication_date: 2003-01-23
-    status: null
+    title: Integrated resonator and amplifier system
+    application_number: KR1020027016331A
+    filing_date: 2001-05-22
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20030007808A
       google_patents: https://patents.google.com/patent/KR20030007808A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6653803B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: NZ522808A
     country: NZ
     kind: A
     document_type: application
     publication_date: 2004-06-25
+    title: Integrated resonator and amplifier system for use in an ion accelerator or ion implanter
+    application_number: NZ522808A
+    filing_date: 2001-05-22
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DNZ522808A
       google_patents: https://patents.google.com/patent/NZ522808A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6653803B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI234419B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2005-06-11
+    title: Integrated resonator and amplifier system
+    application_number: TW090111799A
+    filing_date: 2001-05-17
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI234419B
       google_patents: https://patents.google.com/patent/TWI234419B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6653803B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2001093646A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2001-12-06
-    status: null
+    title: Integrated resonator and amplifier system
+    application_number: PCT/GB2001/002274
+    filing_date: 2001-05-22
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2001093646A2
       google_patents: https://patents.google.com/patent/WO2001093646A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6653803B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2001093646A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2002-03-28
-    status: null
+    title: Integrated resonator and amplifier system
+    application_number: PCT/GB2001/002274
+    filing_date: 2001-05-22
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2001093646A3
       google_patents: https://patents.google.com/patent/WO2001093646A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6653803B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-high-energy-implanter
     relation: cited-on-page
@@ -17730,21 +17777,27 @@ families:
     kind: A2
     document_type: international-application
     publication_date: 2003-07-17
-    status: null
+    title: Method for forming a shallow trench isolation structure with improved corner rounding
+    application_number: PCT/US2002/039739
+    filing_date: 2002-12-11
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2003058709A2
       google_patents: https://patents.google.com/patent/WO2003058709A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2003058709A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2004-02-19
-    status: null
+    title: Method for forming a shallow trench isolation structure with improved corner rounding
+    application_number: PCT/US2002/039739
+    filing_date: 2002-12-11
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2003058709A3
       google_patents: https://patents.google.com/patent/WO2003058709A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: materials-index
     relation: cited-on-page
@@ -19820,23 +19873,27 @@ families:
     kind: A
     document_type: application
     publication_date: 2004-11-01
+    title: Method of removing photoresist
+    application_number: TW093110082A
+    filing_date: 2004-04-12
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200423254A
       google_patents: https://patents.google.com/patent/TW200423254A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20040214448A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI252538B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2006-04-01
+    title: Method of removing photoresist
+    application_number: TW093110082A
+    filing_date: 2004-04-12
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI252538B
       google_patents: https://patents.google.com/patent/TWI252538B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US20040214448A1 (record page not
-      fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-strip
     relation: cited-on-page
@@ -20401,21 +20458,27 @@ families:
     kind: A
     document_type: application
     publication_date: 2005-06-16
+    title: A method for forming dummy structures for improved CMP and reduced capacitance
+    application_number: TW093118493A
+    filing_date: 2004-06-25
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200520150A
       google_patents: https://patents.google.com/patent/TW200520150A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6849549B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI241682B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2005-10-11
+    title: A method for forming dummy structures for improved CMP and reduced capacitance
+    application_number: TW093118493A
+    filing_date: 2004-06-25
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI241682B
       google_patents: https://patents.google.com/patent/TWI241682B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6849549B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: mask-fom
     relation: cited-on-page
@@ -22607,11 +22670,14 @@ families:
     kind: A1
     document_type: international-application
     publication_date: 2008-12-04
-    status: null
+    title: Single-wafer process for fabricating nonvolatile charge trap memory device
+    application_number: PCT/US2007/020988
+    filing_date: 2007-09-28
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008147388A1
       google_patents: https://patents.google.com/patent/WO2008147388A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7670963B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -22718,9 +22784,10 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US8093128B2, retrieved 2026-09-14
   expiry:
-    date: 2028-05-22
+    date: 2028-10-22
     estimated: true
-    basis: US8093128B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: US8679927B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+      includes term adjustment)
   expired: false
   members:
   - number: US20080293207A1
@@ -22728,31 +22795,40 @@ families:
     kind: A1
     document_type: application
     publication_date: 2008-11-27
-    status: null
+    title: Integration of non-volatile charge trap memory devices and logic cmos devices
+    application_number: US12/125,864
+    filing_date: 2008-05-22
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080293207A1
       google_patents: https://patents.google.com/patent/US20080293207A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8093128B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20080296661A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2008-12-04
-    status: null
+    title: Integration of non-volatile charge trap memory devices and logic cmos devices
+    application_number: US12/185,747
+    filing_date: 2008-08-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080296661A1
       google_patents: https://patents.google.com/patent/US20080296661A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8093128B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20080296664A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2008-12-04
-    status: null
+    title: Integration of non-volatile charge trap memory devices and logic cmos devices
+    application_number: US12/185,751
+    filing_date: 2008-08-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080296664A1
       google_patents: https://patents.google.com/patent/US20080296664A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8093128B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8093128B2
     country: US
     kind: B2
@@ -22775,51 +22851,78 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2012-03-27
-    status: null
+    title: Integration of non-volatile charge trap memory devices and logic CMOS devices
+    application_number: US12/185,747
+    filing_date: 2008-08-04
+    status: Active
+    expiry:
+      date: 2028-06-27
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8143129B2
       google_patents: https://patents.google.com/patent/US8143129B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8093128B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8679927B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2014-03-25
-    status: null
+    title: Integration of non-volatile charge trap memory devices and logic CMOS devices
+    application_number: US12/185,751
+    filing_date: 2008-08-04
+    status: Active
+    expiry:
+      date: 2028-10-22
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8679927B2
       google_patents: https://patents.google.com/patent/US8679927B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8093128B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101606236A
     country: CN
     kind: A
     document_type: application
     publication_date: 2009-12-16
-    status: null
+    title: Integrated device of non-volatile charge trap memory device and logic CMOS device
+    application_number: CNA2008800009193A
+    filing_date: 2008-05-23
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101606236A
       google_patents: https://patents.google.com/patent/CN101606236A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8093128B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101606236B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2015-07-08
-    status: null
+    title: Integration of non-volatile charge trap memory devices and logic cmos devices
+    application_number: CN200880000919.3A
+    filing_date: 2008-05-23
+    status: Active
+    expiry:
+      date: 2028-05-23
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101606236B
       google_patents: https://patents.google.com/patent/CN101606236B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8093128B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2008147529A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2008-12-04
-    status: null
+    title: Integration of non-volatile charge trap memory devices and logic cmos devices
+    application_number: PCT/US2008/006597
+    filing_date: 2008-05-23
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008147529A1
       google_patents: https://patents.google.com/patent/WO2008147529A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8093128B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-vertical-furnace-lpcvd
     relation: cited-on-page
@@ -22938,9 +23041,9 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US8283261B2, retrieved 2026-09-14
   expiry:
-    date: 2028-08-16
+    date: 2030-03-29
     estimated: true
-    basis: US8283261B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
+    basis: US8318608B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
       includes term adjustment)
   expired: false
   members:
@@ -22949,21 +23052,27 @@ families:
     kind: A1
     document_type: application
     publication_date: 2008-11-27
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: US12/124,855
+    filing_date: 2008-05-21
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080293255A1
       google_patents: https://patents.google.com/patent/US20080293255A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20090011609A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2009-01-08
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: US12/197,466
+    filing_date: 2008-08-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090011609A1
       google_patents: https://patents.google.com/patent/US20090011609A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8283261B2
     country: US
     kind: B2
@@ -22986,51 +23095,78 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2012-11-27
-    status: null
+    title: Method of fabricating a nonvolatile charge trap memory device
+    application_number: US12/197,466
+    filing_date: 2008-08-25
+    status: Active
+    expiry:
+      date: 2030-03-29
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8318608B2
       google_patents: https://patents.google.com/patent/US8318608B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8993453B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2015-03-31
-    status: null
+    title: Method of fabricating a nonvolatile charge trap memory device
+    application_number: US13/620,071
+    filing_date: 2012-09-14
+    status: Active
+    expiry:
+      date: 2028-05-21
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8993453B1
       google_patents: https://patents.google.com/patent/US8993453B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101558481A
     country: CN
     kind: A
     document_type: application
     publication_date: 2009-10-14
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: CNA2008800008203A
+    filing_date: 2008-05-23
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101558481A
       google_patents: https://patents.google.com/patent/CN101558481A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101558481B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2012-05-30
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: CN2008800008203A
+    filing_date: 2008-05-23
+    status: Active
+    expiry:
+      date: 2028-05-23
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101558481B
       google_patents: https://patents.google.com/patent/CN101558481B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2008147541A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2008-12-04
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: PCT/US2008/006627
+    filing_date: 2008-05-23
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2008147541A1
       google_patents: https://patents.google.com/patent/WO2008147541A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8283261B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -23267,11 +23403,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2011-10-13
-    status: null
+    title: Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers
+    application_number: US13/007,533
+    filing_date: 2011-01-14
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20110248332A1
       google_patents: https://patents.google.com/patent/US20110248332A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8643124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8643124B2
     country: US
     kind: B2
@@ -23294,11 +23433,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2014-09-25
-    status: null
+    title: Oxide-nitride-oxide stack having multiple oxynitride layers
+    application_number: US14/172,775
+    filing_date: 2014-02-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140284696A1
       google_patents: https://patents.google.com/patent/US20140284696A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8643124B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9349824B2
     country: US
     kind: B2
@@ -23571,11 +23713,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2013-11-21
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: US13/539,458
+    filing_date: 2012-07-01
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130309826A1
       google_patents: https://patents.google.com/patent/US20130309826A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8940645B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8940645B2
     country: US
     kind: B2
@@ -23598,21 +23743,27 @@ families:
     kind: A1
     document_type: application
     publication_date: 2015-07-02
-    status: null
+    title: Radical Oxidation Process For Fabricating A Nonvolatile Charge Trap Memory Device
+    application_number: US14/605,231
+    filing_date: 2015-01-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150187960A1
       google_patents: https://patents.google.com/patent/US20150187960A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8940645B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20180351004A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2018-12-06
-    status: null
+    title: Radical Oxidation Process For Fabricating A Nonvolatile Charge Trap Memory Device
+    application_number: US16/000,015
+    filing_date: 2018-06-05
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180351004A1
       google_patents: https://patents.google.com/patent/US20180351004A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8940645B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10304968B2
     country: US
     kind: B2
@@ -23635,31 +23786,44 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2020-03-17
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: US16/000,015
+    filing_date: 2018-06-05
+    status: Active
+    expiry:
+      date: 2028-05-21
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10593812B2
       google_patents: https://patents.google.com/patent/US10593812B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8940645B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20200161478A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2020-05-21
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: US16/422,215
+    filing_date: 2019-05-24
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200161478A1
       google_patents: https://patents.google.com/patent/US20200161478A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8940645B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20200287056A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2020-09-10
-    status: null
+    title: Radical oxidation process for fabricating a nonvolatile charge trap memory device
+    application_number: US16/820,411
+    filing_date: 2020-03-16
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200287056A1
       google_patents: https://patents.google.com/patent/US20200287056A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8940645B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: cited-on-page
@@ -23715,11 +23879,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2008-12-11
-    status: null
+    title: Parametric testline with increased test pattern areas
+    application_number: US11/811,135
+    filing_date: 2007-06-08
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20080303539A1
       google_patents: https://patents.google.com/patent/US20080303539A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7679384B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7679384B2
     country: US
     kind: B2
@@ -23742,41 +23909,61 @@ families:
     kind: A1
     document_type: application
     publication_date: 2010-07-01
-    status: null
+    title: Parametric Testline with Increased Test Pattern Areas
+    application_number: US12/704,252
+    filing_date: 2010-02-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20100164521A1
       google_patents: https://patents.google.com/patent/US20100164521A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7679384B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8125233B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2012-02-28
-    status: null
+    title: Parametric testline with increased test pattern areas
+    application_number: US12/704,252
+    filing_date: 2010-02-11
+    status: Expired - Fee Related
+    expiry:
+      date: 2027-06-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8125233B2
       google_patents: https://patents.google.com/patent/US8125233B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7679384B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101320725A
     country: CN
     kind: A
     document_type: application
     publication_date: 2008-12-10
-    status: null
+    title: Parametric test lines with increased test pattern area
+    application_number: CN200810109397.2A
+    filing_date: 2008-06-06
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101320725A
       google_patents: https://patents.google.com/patent/CN101320725A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7679384B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN101320725B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2011-04-20
-    status: null
+    title: Parametric testline with increased test pattern areas
+    application_number: CN200810109397.2A
+    filing_date: 2008-06-06
+    status: Expired - Fee Related
+    expiry:
+      date: 2028-06-06
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN101320725B
       google_patents: https://patents.google.com/patent/CN101320725B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7679384B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-168
     relation: cited-on-page
@@ -23816,7 +24003,7 @@ families:
   expiry:
     date: 2027-08-09
     estimated: true
-    basis: US10319733B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: US9460974B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US9406574B1
@@ -23824,51 +24011,78 @@ families:
     kind: B1
     document_type: granted-patent
     publication_date: 2016-08-02
-    status: null
+    title: Oxide formation in a plasma process
+    application_number: US14/562,462
+    filing_date: 2014-12-05
+    status: Active
+    expiry:
+      date: 2027-08-09
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9406574B1
       google_patents: https://patents.google.com/patent/US9406574B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9460974B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2016-10-04
-    status: null
+    title: Oxide formation in a plasma process
+    application_number: US14/969,468
+    filing_date: 2015-12-15
+    status: Active
+    expiry:
+      date: 2027-08-09
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9460974B1
       google_patents: https://patents.google.com/patent/US9460974B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20170005108A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2017-01-05
-    status: null
+    title: Oxide formation in a plasma process
+    application_number: US15/266,239
+    filing_date: 2016-09-15
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170005108A1
       google_patents: https://patents.google.com/patent/US20170005108A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10128258B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2018-11-13
-    status: null
+    title: Oxide formation in a plasma process
+    application_number: US15/266,239
+    filing_date: 2016-09-15
+    status: Active
+    expiry:
+      date: 2027-08-09
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10128258B2
       google_patents: https://patents.google.com/patent/US10128258B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20190088669A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2019-03-21
-    status: null
+    title: Oxide formation in a plasma process
+    application_number: US16/135,897
+    filing_date: 2018-09-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190088669A1
       google_patents: https://patents.google.com/patent/US20190088669A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10319733B2
     country: US
     kind: B2
@@ -23891,11 +24105,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2020-05-21
-    status: null
+    title: Oxide formation in a plasma process
+    application_number: US16/434,856
+    filing_date: 2019-06-07
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200161324A1
       google_patents: https://patents.google.com/patent/US20200161324A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10319733B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -23944,11 +24161,15 @@ families:
     kind: A1
     document_type: application
     publication_date: 2009-10-01
-    status: null
+    title: Plasma oxidation of a memory layer to form a blocking layer in non-volatile charge trap memory
+      devices
+    application_number: US12/080,175
+    filing_date: 2008-03-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090242962A1
       google_patents: https://patents.google.com/patent/US20090242962A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7799670B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7799670B2
     country: US
     kind: B2
@@ -24015,11 +24236,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2009-10-01
-    status: null
+    title: Sequential deposition and anneal of a dielectic layer in a charge trapping memory device
+    application_number: US12/080,166
+    filing_date: 2008-03-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090243001A1
       google_patents: https://patents.google.com/patent/US20090243001A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8088683B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8088683B2
     country: US
     kind: B2
@@ -24084,11 +24308,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2010-02-18
-    status: null
+    title: SONOS Type Stacks for Nonvolatile ChangeTrap Memory Devices and Methods to Form the Same
+    application_number: US12/413,389
+    filing_date: 2009-03-27
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20100041222A1
       google_patents: https://patents.google.com/patent/US20100041222A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8163660B2
     country: US
     kind: B2
@@ -24111,41 +24338,61 @@ families:
     kind: A1
     document_type: application
     publication_date: 2014-04-17
-    status: null
+    title: Sonos type stacks for nonvolatile changetrap memory devices and methods to form the same
+    application_number: US14/105,041
+    filing_date: 2013-12-12
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140103418A1
       google_patents: https://patents.google.com/patent/US20140103418A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9105740B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2015-08-11
-    status: null
+    title: SONOS type stacks for nonvolatile changetrap memory devices and methods to form the same
+    application_number: US14/105,041
+    filing_date: 2013-12-12
+    status: Active
+    expiry:
+      date: 2029-03-27
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9105740B2
       google_patents: https://patents.google.com/patent/US9105740B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20160104789A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2016-04-14
-    status: null
+    title: SONOS Type Stacks for Nonvolatile ChangeTrap Memory Devices and Methods to Form the Same
+    application_number: US14/824,023
+    filing_date: 2015-08-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160104789A1
       google_patents: https://patents.google.com/patent/US20160104789A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9553175B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2017-01-24
-    status: null
+    title: SONOS type stacks for nonvolatile charge trap memory devices and methods to form the same
+    application_number: US14/824,023
+    filing_date: 2015-08-11
+    status: Active
+    expiry:
+      date: 2029-03-27
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9553175B2
       google_patents: https://patents.google.com/patent/US9553175B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8163660B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -24291,11 +24538,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2010-11-04
-    status: null
+    title: Selective plasma etch of top electrodes for metal-insulator-metal (mim) capacitors
+    application_number: US12/433,042
+    filing_date: 2009-04-30
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20100276783A1
       google_patents: https://patents.google.com/patent/US20100276783A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8110414B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8110414B2
     country: US
     kind: B2
@@ -24370,11 +24620,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2013-07-11
-    status: null
+    title: Inline method to monitor ono stack quality
+    application_number: US13/430,631
+    filing_date: 2012-03-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175599A1
       google_patents: https://patents.google.com/patent/US20130175599A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8772059B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8772059B2
     country: US
     kind: B2
@@ -24427,9 +24680,9 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US8685813B2, retrieved 2026-09-14
   expiry:
-    date: 2032-03-23
+    date: 2032-09-06
     estimated: true
-    basis: US10079243B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: CN103258798B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US20130210209A1
@@ -24437,11 +24690,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2013-08-15
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a cmos flow
+    application_number: US13/428,201
+    filing_date: 2012-03-23
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130210209A1
       google_patents: https://patents.google.com/patent/US20130210209A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8685813B2
     country: US
     kind: B2
@@ -24464,31 +24720,44 @@ families:
     kind: A1
     document_type: application
     publication_date: 2014-08-21
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a cmos flow
+    application_number: US14/201,456
+    filing_date: 2014-03-07
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140235046A1
       google_patents: https://patents.google.com/patent/US20140235046A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9196496B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2015-11-24
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a CMOS flow
+    application_number: US14/201,456
+    filing_date: 2014-03-07
+    status: Active
+    expiry:
+      date: 2032-03-23
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9196496B2
       google_patents: https://patents.google.com/patent/US9196496B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20160099253A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2016-04-07
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a cmos flow
+    application_number: US14/920,713
+    filing_date: 2015-10-22
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160099253A1
       google_patents: https://patents.google.com/patent/US20160099253A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10079243B2
     country: US
     kind: B2
@@ -24511,81 +24780,117 @@ families:
     kind: A1
     document_type: application
     publication_date: 2019-02-28
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a cmos flow
+    application_number: US16/043,411
+    filing_date: 2018-07-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190067313A1
       google_patents: https://patents.google.com/patent/US20190067313A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10424592B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2019-09-24
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a CMOS flow
+    application_number: US16/043,411
+    filing_date: 2018-07-24
+    status: Active
+    expiry:
+      date: 2032-03-23
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10424592B2
       google_patents: https://patents.google.com/patent/US10424592B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20200020710A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2020-01-16
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a cmos flow
+    application_number: US16/578,850
+    filing_date: 2019-09-23
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200020710A1
       google_patents: https://patents.google.com/patent/US20200020710A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10854625B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2020-12-01
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a CMOS flow
+    application_number: US16/578,850
+    filing_date: 2019-09-23
+    status: Active
+    expiry:
+      date: 2032-03-23
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10854625B2
       google_patents: https://patents.google.com/patent/US10854625B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN103258798A
     country: CN
     kind: A
     document_type: application
     publication_date: 2013-08-21
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a cmos flow
+    application_number: CN2012103277712A
+    filing_date: 2012-09-06
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN103258798A
       google_patents: https://patents.google.com/patent/CN103258798A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN103258798B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2015-05-20
-    status: null
+    title: Method of integrating a charge-trapping gate stack into a cmos flow
+    application_number: CN201210327771.2A
+    filing_date: 2012-09-06
+    status: Active
+    expiry:
+      date: 2032-09-06
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN103258798B
       google_patents: https://patents.google.com/patent/CN103258798B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201334120A
     country: TW
     kind: A
     document_type: application
     publication_date: 2013-08-16
+    title: Method of integrating a charge trapping gate stack into a CMOS process
+    application_number: TW101134262A
+    filing_date: 2012-09-19
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201334120A
       google_patents: https://patents.google.com/patent/TW201334120A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI546896B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2016-08-21
+    title: Method of integrating a charge trapping gate stack into a CMOS process
+    application_number: TW101134262A
+    filing_date: 2012-09-19
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI546896B
       google_patents: https://patents.google.com/patent/TWI546896B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8685813B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -24703,9 +25008,9 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US8796098B1, retrieved 2026-09-14
   expiry:
-    date: 2033-09-04
+    date: 2034-02-25
     estimated: true
-    basis: US9620516B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: CN110349963B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US8796098B1
@@ -24730,21 +25035,27 @@ families:
     kind: A1
     document_type: application
     publication_date: 2014-08-28
-    status: null
+    title: Embedded sonos based memory cells
+    application_number: US14/018,026
+    filing_date: 2013-09-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140239374A1
       google_patents: https://patents.google.com/patent/US20140239374A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20150041881A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2015-02-12
-    status: null
+    title: Embedded SONOS Based Memory Cells
+    application_number: US14/451,341
+    filing_date: 2014-08-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150041881A1
       google_patents: https://patents.google.com/patent/US20150041881A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9356035B2
     country: US
     kind: B2
@@ -24767,11 +25078,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2016-09-08
-    status: null
+    title: Embedded SONOS Based Memory Cells
+    application_number: US15/146,753
+    filing_date: 2016-05-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160260730A1
       google_patents: https://patents.google.com/patent/US20160260730A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9620516B2
     country: US
     kind: B2
@@ -24794,101 +25108,143 @@ families:
     kind: A1
     document_type: application
     publication_date: 2017-09-14
-    status: null
+    title: Embedded SONOS Based Memory Cells
+    application_number: US15/451,093
+    filing_date: 2017-03-06
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170263622A1
       google_patents: https://patents.google.com/patent/US20170263622A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9922988B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2018-03-20
-    status: null
+    title: Embedded SONOS based memory cells
+    application_number: US15/451,093
+    filing_date: 2017-03-06
+    status: Active
+    expiry:
+      date: 2033-09-04
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9922988B2
       google_patents: https://patents.google.com/patent/US9922988B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN104009005A
     country: CN
     kind: A
     document_type: application
     publication_date: 2014-08-27
-    status: null
+    title: Embedded SONOS-based storage unit
+    application_number: CN201410064510.5A
+    filing_date: 2014-02-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN104009005A
       google_patents: https://patents.google.com/patent/CN104009005A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN104009005B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2019-08-16
-    status: null
+    title: Embedded SONOS-based storage unit
+    application_number: CN201410064510.5A
+    filing_date: 2014-02-25
+    status: Active
+    expiry:
+      date: 2034-02-25
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN104009005B
       google_patents: https://patents.google.com/patent/CN104009005B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN110349963A
     country: CN
     kind: A
     document_type: application
     publication_date: 2019-10-18
-    status: null
+    title: The storage unit based on SONOS of insertion
+    application_number: CN201910654614.4A
+    filing_date: 2014-02-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN110349963A
       google_patents: https://patents.google.com/patent/CN110349963A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN110349963B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2023-08-08
-    status: null
+    title: Embedded SONOS-based storage unit
+    application_number: CN201910654614.4A
+    filing_date: 2014-02-25
+    status: Active
+    expiry:
+      date: 2034-02-25
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN110349963B
       google_patents: https://patents.google.com/patent/CN110349963B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201440178A
     country: TW
     kind: A
     document_type: application
     publication_date: 2014-10-16
+    title: Memory unit based on embedded xenon oxide semiconductor
+    application_number: TW103105582A
+    filing_date: 2014-02-20
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201440178A
       google_patents: https://patents.google.com/patent/TW201440178A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI630703B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2018-07-21
+    title: Memory unit based on embedded xenon oxide semiconductor
+    application_number: TW103105582A
+    filing_date: 2014-02-20
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI630703B
       google_patents: https://patents.google.com/patent/TWI630703B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201836126A
     country: TW
     kind: A
     document_type: application
     publication_date: 2018-10-01
+    title: Memory unit based on embedded xenon oxide semiconductor
+    application_number: TW107120393A
+    filing_date: 2014-02-20
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201836126A
       google_patents: https://patents.google.com/patent/TW201836126A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI661541B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2019-06-01
+    title: Embedded sonos based memory cells
+    application_number: TW107120393A
+    filing_date: 2014-02-20
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI661541B
       google_patents: https://patents.google.com/patent/TWI661541B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8796098B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-wet-bench
     relation: cited-on-page
@@ -25103,9 +25459,9 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US10002878B2, retrieved 2026-09-14
   expiry:
-    date: 2034-06-16
+    date: 2034-11-20
     estimated: true
-    basis: US9997528B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: CN105531828B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US20150171104A1
@@ -25113,31 +25469,40 @@ families:
     kind: A1
     document_type: application
     publication_date: 2015-06-18
-    status: null
+    title: Complementary sonos integration into cmos flow
+    application_number: US14/305,122
+    filing_date: 2014-06-16
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150171104A1
       google_patents: https://patents.google.com/patent/US20150171104A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20160204120A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2016-07-14
-    status: null
+    title: Complimentary sonos integration into cmos flow
+    application_number: US15/077,021
+    filing_date: 2016-03-22
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160204120A1
       google_patents: https://patents.google.com/patent/US20160204120A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20180040625A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2018-02-08
-    status: null
+    title: Complementary sonos integration into cmos flow
+    application_number: US15/708,008
+    filing_date: 2017-09-18
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180040625A1
       google_patents: https://patents.google.com/patent/US20180040625A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9997528B2
     country: US
     kind: B2
@@ -25177,41 +25542,58 @@ families:
     kind: A
     document_type: application
     publication_date: 2016-04-27
-    status: null
+    title: Complementary SONOS integration flow into CMOS
+    application_number: CN201480050479.8A
+    filing_date: 2014-11-20
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105531828A
       google_patents: https://patents.google.com/patent/CN105531828A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN105531828B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2019-12-06
-    status: null
+    title: Complementary SONOS integration flow into CMOS
+    application_number: CN201480050479.8A
+    filing_date: 2014-11-20
+    status: Active
+    expiry:
+      date: 2034-11-20
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105531828B
       google_patents: https://patents.google.com/patent/CN105531828B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201535486A
     country: TW
     kind: A
     document_type: application
     publication_date: 2015-09-16
+    title: Complementary xenon oxide semiconductor integrated into a complementary metal oxide semiconductor
+      process
+    application_number: TW103139545A
+    filing_date: 2014-11-14
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201535486A
       google_patents: https://patents.google.com/patent/TW201535486A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2015088731A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2015-06-18
-    status: null
+    title: Complementary sonos integration into cmos flow
+    application_number: PCT/US2014/066545
+    filing_date: 2014-11-20
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015088731A1
       google_patents: https://patents.google.com/patent/WO2015088731A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10002878B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -25389,10 +25771,10 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US8916432B1, retrieved 2026-09-14
   expiry:
-    date: 2034-06-23
+    date: 2034-11-20
     estimated: true
-    basis: US9893172B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
-      includes term adjustment)
+    basis: DE112014006222B4 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims
+      estimate)
   expired: false
   members:
   - number: US8916432B1
@@ -25417,11 +25799,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2015-10-08
-    status: null
+    title: Methods to integrate SONOS into CMOS Flow
+    application_number: US14/576,657
+    filing_date: 2014-12-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150287811A1
       google_patents: https://patents.google.com/patent/US20150287811A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US9893172B2
     country: US
     kind: B2
@@ -25444,111 +25829,159 @@ families:
     kind: A
     document_type: application
     publication_date: 2016-09-28
-    status: null
+    title: Methods to integrate SONOS into CMOS flow
+    application_number: CN201480068500.7A
+    filing_date: 2014-11-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105981158A
       google_patents: https://patents.google.com/patent/CN105981158A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN105981158B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2020-01-10
-    status: null
+    title: Method for integrating SONOS into CMOS flow
+    application_number: CN201480068500.7A
+    filing_date: 2014-11-19
+    status: Active
+    expiry:
+      date: 2034-11-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN105981158B
       google_patents: https://patents.google.com/patent/CN105981158B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE112014006222T5
     country: DE
     kind: T5
     document_type: translation-of-granted-patent
     publication_date: 2016-11-03
-    status: null
+    title: Method for integrating SONOS into CMOS flow
+    application_number: DE112014006222.7T
+    filing_date: 2014-11-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112014006222T5
       google_patents: https://patents.google.com/patent/DE112014006222T5/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE112014006222T9
     country: DE
     kind: T9
     document_type: translation-of-granted-patent
     publication_date: 2016-12-29
-    status: null
+    title: Method for integrating SONOS into CMOS flow
+    application_number: DE112014006222.7T
+    filing_date: 2014-11-19
+    status: Active
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112014006222T9
       google_patents: https://patents.google.com/patent/DE112014006222T9/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE112014006222B4
     country: DE
     kind: B4
     document_type: granted-patent
     publication_date: 2022-06-23
-    status: null
+    title: Method of forming SONOS memory transistors and CMOS transistors
+    application_number: DE112014006222.7T
+    filing_date: 2014-11-19
+    status: Active
+    expiry:
+      date: 2034-11-20
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112014006222B4
       google_patents: https://patents.google.com/patent/DE112014006222B4/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20160108308A
     country: KR
     kind: A
     document_type: application
     publication_date: 2016-09-19
-    status: null
+    title: Methods to integrate sonos into cmos flow
+    application_number: KR1020167015253A
+    filing_date: 2014-11-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20160108308A
       google_patents: https://patents.google.com/patent/KR20160108308A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR101878696B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2018-08-16
-    status: null
+    title: Methods to integrate sonos into cmos flow
+    application_number: KR1020167015253A
+    filing_date: 2014-11-19
+    status: Active
+    expiry:
+      date: 2034-11-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR101878696B1
       google_patents: https://patents.google.com/patent/KR101878696B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201530696A
     country: TW
     kind: A
     document_type: application
     publication_date: 2015-08-01
+    title: Method for integrating a xenon oxide semiconductor to a complementary metal oxide semiconductor
+      process
+    application_number: TW103140574A
+    filing_date: 2014-11-24
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201530696A
       google_patents: https://patents.google.com/patent/TW201530696A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI656608B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2019-04-11
+    title: Method for integrating a xenon oxide semiconductor to a complementary metal oxide semiconductor
+      process
+    application_number: TW103140574A
+    filing_date: 2014-11-24
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI656608B
       google_patents: https://patents.google.com/patent/TWI656608B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201923982A
     country: TW
     kind: A
     document_type: application
     publication_date: 2019-06-16
+    title: Method for integrating a xenon oxide semiconductor to a complementary metal oxide semiconductor
+      process
+    application_number: TW108105294A
+    filing_date: 2014-11-24
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201923982A
       google_patents: https://patents.google.com/patent/TW201923982A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2015112245A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2015-07-30
-    status: null
+    title: Methods to integrate sonos into cmos flow
+    application_number: PCT/US2014/066397
+    filing_date: 2014-11-19
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015112245A1
       google_patents: https://patents.google.com/patent/WO2015112245A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US8916432B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -25586,10 +26019,9 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US10003022B2, retrieved 2026-09-14
   expiry:
-    date: 2034-06-09
+    date: 2034-12-17
     estimated: true
-    basis: US10003022B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
-      includes term adjustment)
+    basis: KR101770456B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US20150255718A1
@@ -25597,11 +26029,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2015-09-10
-    status: null
+    title: Rram cell structure with conductive etch-stop layer
+    application_number: US14/196,361
+    filing_date: 2014-03-04
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150255718A1
       google_patents: https://patents.google.com/patent/US20150255718A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10003022B2
     country: US
     kind: B2
@@ -25624,101 +26059,147 @@ families:
     kind: A1
     document_type: application
     publication_date: 2018-10-25
-    status: null
+    title: Rram cell structure with conductive etch-stop layer
+    application_number: US16/009,327
+    filing_date: 2018-06-15
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180309055A1
       google_patents: https://patents.google.com/patent/US20180309055A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20200020856A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2020-01-16
-    status: null
+    title: Rram cell structure with conductive etch-stop layer
+    application_number: US16/578,304
+    filing_date: 2019-09-21
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200020856A1
       google_patents: https://patents.google.com/patent/US20200020856A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US11158797B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2021-10-26
-    status: null
+    title: RRAM cell structure with conductive etch-stop layer
+    application_number: US16/009,327
+    filing_date: 2018-06-15
+    status: Active
+    expiry:
+      date: 2034-03-04
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS11158797B2
       google_patents: https://patents.google.com/patent/US11158797B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US11430956B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2022-08-30
-    status: null
+    title: RRAM cell structure with conductive etch-stop layer
+    application_number: US16/578,304
+    filing_date: 2019-09-21
+    status: Active
+    expiry:
+      date: 2034-03-31
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS11430956B2
       google_patents: https://patents.google.com/patent/US11430956B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN104900804A
     country: CN
     kind: A
     document_type: application
     publication_date: 2015-09-09
-    status: null
+    title: Rram cell structure with conductive etch-stop layer
+    application_number: CN201410373097.0A
+    filing_date: 2014-07-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN104900804A
       google_patents: https://patents.google.com/patent/CN104900804A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN104900804B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2020-01-03
-    status: null
+    title: RRAM cell structure with conductive etch stop layer
+    application_number: CN201410373097.0A
+    filing_date: 2014-07-31
+    status: Active
+    expiry:
+      date: 2034-07-31
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN104900804B
       google_patents: https://patents.google.com/patent/CN104900804B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20150104019A
     country: KR
     kind: A
     document_type: application
     publication_date: 2015-09-14
-    status: null
+    title: Rram cell structure with conductive etch-stop layer
+    application_number: KR1020140182444A
+    filing_date: 2014-12-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20150104019A
       google_patents: https://patents.google.com/patent/KR20150104019A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR101770456B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2017-09-05
-    status: null
+    title: Rram cell structure with conductive etch-stop layer
+    application_number: KR1020140182444A
+    filing_date: 2014-12-17
+    status: Active
+    expiry:
+      date: 2034-12-17
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR101770456B1
       google_patents: https://patents.google.com/patent/KR101770456B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201539730A
     country: TW
     kind: A
     document_type: application
     publication_date: 2015-10-16
+    title: RRAM cell structure with conductive etch-stop layer
+    application_number: TW103146487A
+    filing_date: 2014-12-31
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201539730A
       google_patents: https://patents.google.com/patent/TW201539730A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI631698B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2018-08-01
+    title: Resistive random access memory device and method for manufacturing the same
+    application_number: TW103146487A
+    filing_date: 2014-12-31
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI631698B
       google_patents: https://patents.google.com/patent/TWI631698B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10003022B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: overview-sky130b-reram
     relation: cited-on-page
@@ -25884,9 +26365,10 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US9218978B1, retrieved 2026-09-14
   expiry:
-    date: 2035-06-19
+    date: 2035-11-25
     estimated: true
-    basis: US9218978B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: DE112015006291B4 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims
+      estimate)
   expired: false
   members:
   - number: US9218978B1
@@ -25911,21 +26393,31 @@ families:
     kind: B1
     document_type: granted-patent
     publication_date: 2017-10-17
-    status: null
+    title: Method of ONO stack formation
+    application_number: US14/942,773
+    filing_date: 2015-11-16
+    status: Active
+    expiry:
+      date: 2035-06-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9793284B1
       google_patents: https://patents.google.com/patent/US9793284B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20180083024A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2018-03-22
-    status: null
+    title: Method of ONO Stack Formation
+    application_number: US15/721,132
+    filing_date: 2017-09-29
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180083024A1
       google_patents: https://patents.google.com/patent/US20180083024A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10153294B2
     country: US
     kind: B2
@@ -25948,161 +26440,235 @@ families:
     kind: A1
     document_type: application
     publication_date: 2019-05-23
-    status: null
+    title: Method of ONO Stack Formation
+    application_number: US16/189,319
+    filing_date: 2018-11-13
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190157286A1
       google_patents: https://patents.google.com/patent/US20190157286A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10418373B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2019-09-17
-    status: null
+    title: Method of ONO stack formation
+    application_number: US16/189,319
+    filing_date: 2018-11-13
+    status: Active
+    expiry:
+      date: 2035-06-19
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10418373B2
       google_patents: https://patents.google.com/patent/US10418373B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20200111805A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2020-04-09
-    status: null
+    title: Method of ONO Stack Formation
+    application_number: US16/572,463
+    filing_date: 2019-09-16
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200111805A1
       google_patents: https://patents.google.com/patent/US20200111805A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN106471615A
     country: CN
     kind: A
     document_type: application
     publication_date: 2017-03-01
-    status: null
+    title: ONO stack formation method
+    application_number: CN201580036095.5A
+    filing_date: 2015-11-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN106471615A
       google_patents: https://patents.google.com/patent/CN106471615A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN106471615B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2019-05-17
-    status: null
+    title: ONO stack formation method
+    application_number: CN201580036095.5A
+    filing_date: 2015-11-24
+    status: Active
+    expiry:
+      date: 2035-11-24
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN106471615B
       google_patents: https://patents.google.com/patent/CN106471615B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN110246805A
     country: CN
     kind: A
     document_type: application
     publication_date: 2019-09-17
-    status: null
+    title: ONO stacks forming method
+    application_number: CN201910345681.8A
+    filing_date: 2015-11-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN110246805A
       google_patents: https://patents.google.com/patent/CN110246805A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN110246805B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2023-05-23
-    status: null
+    title: ONO stack formation method
+    application_number: CN201910345681.8A
+    filing_date: 2015-11-24
+    status: Active
+    expiry:
+      date: 2035-11-24
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN110246805B
       google_patents: https://patents.google.com/patent/CN110246805B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE112015006291T5
     country: DE
     kind: T5
     document_type: translation-of-granted-patent
     publication_date: 2017-11-30
-    status: null
+    title: Process for ONO stack formation
+    application_number: DE112015006291.2T
+    filing_date: 2015-11-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112015006291T5
       google_patents: https://patents.google.com/patent/DE112015006291T5/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE112015006291B4
     country: DE
     kind: B4
     document_type: granted-patent
     publication_date: 2022-09-08
-    status: null
+    title: Method of forming a non-volatile gate stack of a transistor in a first region and a MOS transistor
+      in a second region of a wafer by a two-step gate oxidation process
+    application_number: DE112015006291.2T
+    filing_date: 2015-11-24
+    status: Active
+    expiry:
+      date: 2035-11-25
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112015006291B4
       google_patents: https://patents.google.com/patent/DE112015006291B4/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2017523595A
     country: JP
     kind: A
     document_type: application
     publication_date: 2017-08-17
-    status: null
+    title: ОNO stack formation method
+    application_number: JP2016568437A
+    filing_date: 2015-11-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2017523595A
       google_patents: https://patents.google.com/patent/JP2017523595A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP6248212B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2017-12-13
-    status: null
+    title: ОNO stack formation method
+    application_number: JP2016568437A
+    filing_date: 2015-11-24
+    status: Active
+    expiry:
+      date: 2035-11-24
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP6248212B2
       google_patents: https://patents.google.com/patent/JP6248212B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2018041977A
     country: JP
     kind: A
     document_type: application
     publication_date: 2018-03-15
-    status: null
+    title: Formation method of ono stack
+    application_number: JP2017221467A
+    filing_date: 2017-11-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2018041977A
       google_patents: https://patents.google.com/patent/JP2018041977A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP6873890B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2021-05-19
-    status: null
+    title: ОNO Stack formation method
+    application_number: JP2017221467A
+    filing_date: 2017-11-17
+    status: Active
+    expiry:
+      date: 2035-11-24
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP6873890B2
       google_patents: https://patents.google.com/patent/JP6873890B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201707147A
     country: TW
     kind: A
     document_type: application
     publication_date: 2017-02-16
+    title: Method for forming oxygen-oxygen oxygen stack
+    application_number: TW104140726A
+    filing_date: 2015-12-04
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201707147A
       google_patents: https://patents.google.com/patent/TW201707147A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI696246B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2020-06-11
+    title: Method of controlling a blocking oxide thickness of a sonos transistor, method of manufacturing
+      a semiconductor device, semiconductor device and memory apparatus
+    application_number: TW104140726A
+    filing_date: 2015-12-04
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI696246B
       google_patents: https://patents.google.com/patent/TWI696246B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2016144397A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2016-09-15
-    status: null
+    title: Method of ono stack formation
+    application_number: PCT/US2015/062490
+    filing_date: 2015-11-24
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2016144397A1
       google_patents: https://patents.google.com/patent/WO2016144397A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9218978B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -26172,31 +26738,42 @@ families:
     kind: A
     document_type: application
     publication_date: 2018-07-16
+    title: Method of integrating oxide-nitride-oxide stack construction to thick gate oxide complementary
+      metal oxide semiconductor process
+    application_number: TW106115612A
+    filing_date: 2017-05-11
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201826352A
       google_patents: https://patents.google.com/patent/TW201826352A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9824895B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI683354B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2020-01-21
+    title: Method of fabricating a memory cell and method of integration of ono stack formation into thick
+      gate oxide cmos baseline process and process flow
+    application_number: TW106115612A
+    filing_date: 2017-05-11
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI683354B
       google_patents: https://patents.google.com/patent/TWI683354B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9824895B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2018063459A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2018-04-05
-    status: null
+    title: Method of integration of ono stack formation into thick gate oxide cmos flow
+    application_number: PCT/US2017/038136
+    filing_date: 2017-06-19
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2018063459A1
       google_patents: https://patents.google.com/patent/WO2018063459A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US9824895B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-043
     relation: cited-on-page
@@ -26237,9 +26814,9 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US10062748B1, retrieved 2026-09-14
   expiry:
-    date: 2037-02-27
+    date: 2038-02-13
     estimated: true
-    basis: US10062748B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: CN108511386B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US10062748B1
@@ -26264,51 +26841,70 @@ families:
     kind: A1
     document_type: application
     publication_date: 2018-08-30
-    status: null
+    title: Segmented guard-ring and chip edge seals
+    application_number: US15/443,276
+    filing_date: 2017-02-27
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180248001A1
       google_patents: https://patents.google.com/patent/US20180248001A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062748B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN108511386A
     country: CN
     kind: A
     document_type: application
     publication_date: 2018-09-07
-    status: null
+    title: Segmented protective ring and chip edge sealing element
+    application_number: CN201810150657.4A
+    filing_date: 2018-02-13
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN108511386A
       google_patents: https://patents.google.com/patent/CN108511386A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062748B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN108511386B
     country: CN
     kind: B
     document_type: granted-patent
     publication_date: 2023-06-16
-    status: null
+    title: Segmented guard ring and chip edge seal
+    application_number: CN201810150657.4A
+    filing_date: 2018-02-13
+    status: Active
+    expiry:
+      date: 2038-02-13
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN108511386B
       google_patents: https://patents.google.com/patent/CN108511386B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062748B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201841311A
     country: TW
     kind: A
     document_type: application
     publication_date: 2018-11-16
+    title: Segmented guard ring and wafer edge seal
+    application_number: TW106114621A
+    filing_date: 2017-05-03
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201841311A
       google_patents: https://patents.google.com/patent/TW201841311A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062748B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI696249B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2020-06-11
+    title: Segmented guard-ring and chip edge seals and methods of forming the same
+    application_number: TW106114621A
+    filing_date: 2017-05-03
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI696249B
       google_patents: https://patents.google.com/patent/TWI696249B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062748B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-165
     relation: cited-on-page
@@ -26354,7 +26950,7 @@ families:
   expiry:
     date: 2037-08-22
     estimated: true
-    basis: US10062573B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    basis: US10784356B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US10062573B1
@@ -26379,61 +26975,84 @@ families:
     kind: A1
     document_type: application
     publication_date: 2019-03-21
-    status: null
+    title: Embedded sonos with triple gate oxide and manufacturing method of the same
+    application_number: US16/058,310
+    filing_date: 2018-08-08
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190088487A1
       google_patents: https://patents.google.com/patent/US20190088487A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US10784356B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2020-09-22
-    status: null
+    title: Embedded sonos with triple gate oxide and manufacturing method of the same
+    application_number: US16/058,310
+    filing_date: 2018-08-08
+    status: Active
+    expiry:
+      date: 2037-08-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10784356B2
       google_patents: https://patents.google.com/patent/US10784356B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20210074821A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2021-03-11
-    status: null
+    title: Embedded sonos with triple gate oxide and manufacturing method of the same
+    application_number: US17/026,820
+    filing_date: 2020-09-21
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210074821A1
       google_patents: https://patents.google.com/patent/US20210074821A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW201913880A
     country: TW
     kind: A
     document_type: application
     publication_date: 2019-04-01
+    title: Embedded xenon oxynitride semiconductor having three gate oxides and method of fabricating
+      the same
+    application_number: TW107114889A
+    filing_date: 2018-05-02
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW201913880A
       google_patents: https://patents.google.com/patent/TW201913880A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI761505B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2022-04-21
+    title: Methods of manufacturing a semiconductor device
+    application_number: TW107114889A
+    filing_date: 2018-05-02
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI761505B
       google_patents: https://patents.google.com/patent/TWI761505B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2018231410A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2018-12-20
-    status: null
+    title: Embedded sonos with triple gate oxide and manufacturing method of the same
+    application_number: PCT/US2018/032813
+    filing_date: 2018-05-15
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2018231410A1
       google_patents: https://patents.google.com/patent/WO2018231410A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US10062573B1 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
@@ -26473,10 +27092,9 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US12232324B2, retrieved 2026-09-14
   expiry:
-    date: 2043-04-07
+    date: 2043-09-26
     estimated: true
-    basis: US12232324B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate,
-      includes term adjustment)
+    basis: JP7846308B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
   expired: false
   members:
   - number: US20240107771A1
@@ -26484,11 +27102,15 @@ families:
     kind: A1
     document_type: application
     publication_date: 2024-03-28
-    status: null
+    title: Method of forming oxide-nitride-oxide stack of non-volatile memory and integration to cmos
+      process flow
+    application_number: US17/954,141
+    filing_date: 2022-09-27
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240107771A1
       google_patents: https://patents.google.com/patent/US20240107771A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US12232324B2
     country: US
     kind: B2
@@ -26512,71 +27134,103 @@ families:
     kind: A1
     document_type: application
     publication_date: 2025-06-05
-    status: null
+    title: Method of forming oxide-nitride-oxide stack of non-volatile memory and integration to cmos
+      process flow
+    application_number: US19/046,916
+    filing_date: 2025-02-06
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250185250A1
       google_patents: https://patents.google.com/patent/US20250185250A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN120052068A
     country: CN
     kind: A
     document_type: application
     publication_date: 2025-05-27
-    status: null
+    title: Method of forming an oxide-nitride-oxide stack for a non-volatile memory and integration with
+      a CMOS process flow
+    application_number: CN202380068614.0A
+    filing_date: 2023-09-26
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN120052068A
       google_patents: https://patents.google.com/patent/CN120052068A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE112023004011T5
     country: DE
     kind: T5
     document_type: translation-of-granted-patent
     publication_date: 2025-07-17
-    status: null
+    title: Method for forming an oxide-nitride-oxide stack of a non-volatile memory and integration into
+      a CMOS process flow
+    application_number: DE112023004011.7T
+    filing_date: 2023-09-26
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE112023004011T5
       google_patents: https://patents.google.com/patent/DE112023004011T5/en
-    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2025531476A
     country: JP
     kind: A
     document_type: application
     publication_date: 2025-09-19
-    status: null
+    title: Method for forming oxide-nitride-oxide stacks for non-volatile memory and integration into
+      CMOS process flow
+    application_number: JP2025518171A
+    filing_date: 2023-09-26
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2025531476A
       google_patents: https://patents.google.com/patent/JP2025531476A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP7846308B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2026-04-14
-    status: null
+    title: Methods for forming oxide, nitride, and oxide stacks for non-volatile memory and their integration
+      into the CMOS process flow.
+    application_number: JP2025518171A
+    filing_date: 2023-09-26
+    status: Active
+    expiry:
+      date: 2043-09-26
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP7846308B2
       google_patents: https://patents.google.com/patent/JP7846308B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW202418399A
     country: TW
     kind: A
     document_type: application
     publication_date: 2024-05-01
+    title: Method of forming oxide-nitride-oxide stack of non-volatile memory and integration to cmos
+      process flow
+    application_number: TW112135553A
+    filing_date: 2023-09-18
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW202418399A
       google_patents: https://patents.google.com/patent/TW202418399A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2024072806A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2024-04-04
-    status: null
+    title: Method of forming oxide-nitride-oxide stack of non-volatile memory and integration to cmos
+      process flow
+    application_number: PCT/US2023/033728
+    filing_date: 2023-09-26
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2024072806A1
       google_patents: https://patents.google.com/patent/WO2024072806A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US12232324B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-040
     relation: same-lineage-assignee
