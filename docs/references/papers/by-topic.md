@@ -14,7 +14,6 @@ full entry on {ref}`papers-index`.
 ### PDK models and parameter extraction
 
 Compact models, parameter extraction and model calibration for the PDK's devices.
-Related pages: {ref}`overview-cross-section`.
 
 * {ref}`paper-edwards-2020a` — Tim Edwards, WOSET 2020 (free copy)
 * {ref}`paper-alshaya-2022a` — Abdulaziz Alshaya et al., ICM 2022
