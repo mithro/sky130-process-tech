@@ -96,7 +96,7 @@ oxidation, anneal or mask step. For 33 of the 36, the step code is
 identical to an acronym in `masks.csv`, and that match is what the
 second column reports; three mask steps have no entry. The
 process-steps sheet's "Masks" tab lists the same 36 steps and also
-step 82, {ref}`PSDI <step-082>`, which the step list names as an
+step 82, {ref}`PSDI <step-082>`, which this reference treats as an
 implant ({ref}`masks-mpw-runs`).[^steps-sheet]
 
 Per-mask pages bring together, for one mask, its PDK entry and layers,
@@ -493,10 +493,10 @@ renders' per-die metadata.[^mask-renders] What the record shows:
 * **The "Masks" tab.** A further tab, "Masks", lists 37 rows of step
   number, code and description: the 36 mask steps counted above and
   step 82, `PSDI`, which it describes, like step 81 `PSDM`, as "P+
-  source drain implant mask".[^steps-sheet] The step list itself calls
-  step 82 "P+ source drain implant", and this reference treats it as
-  the implant through the `PSDM` resist
-  ({ref}`PSDI <step-082>`).[^steps-sheet]
+  source drain implant mask".[^steps-sheet] The sheet's "Sheet1" tab
+  gives step 82 only its code, "PSDI", as a description; this reference
+  names the step "P+ source drain implant" and treats it as the implant
+  through the `PSDM` resist ({ref}`PSDI <step-082>`).[^steps-sheet]
 
 ### Mask types and plate labels
 

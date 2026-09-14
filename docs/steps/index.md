@@ -3,8 +3,12 @@
 
 The SKY130 flow is documented here as 171 numbered steps, in the
 order in which a wafer experiences them. Each step has its own page.
-The step numbers, codes and names are those of the public
-*S8 / SKY130 Process Steps* sheet.[^steps-sheet]
+The step numbers and codes are those of the public
+*S8 / SKY130 Process Steps* sheet, and the names follow its
+descriptions,[^steps-sheet] lightly edited for 20 steps: typing slips
+are corrected ("Low Vt NOMOS mask" becomes "Low Vt NMOS mask"),
+abbreviations are spelt out, and step 82, which the sheet describes only
+by its code "PSDI", is named "P+ source drain implant".
 
 | # | Code | Step | Category |
 |---|------|------|----------|
