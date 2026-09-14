@@ -49,6 +49,21 @@ tape-out layouts, which cites no source, renders it as (`nwell` NOT
 `hvi`) NOT `lvtn`, without `hvtp`
 ({ref}`masks-derivations`).[^mask-renders]
 
+The PDK's *Error Messages* page lists checks on a layer it calls
+`CLHVTPM` but does not define: "0.38 min. width of CLHVTPM"
+(`chvtpm.1`), "0.38 min. spacing/notch of CLHVTPM" (`chvtpm.2a`), "0
+min. enclosure of ((LVnwell not overlapping Var_channel) NOT lvtn) by
+CLHVTPM" (`chvtpm.3`) and "0 min. enclosure of ((LVnwell overlapping
+Var_channel) AND hvtp) by CLHVTPM" (`chvtpm.4`).[^pdk-errors] The
+{ref}`HVTPM mask page <mask-hvtpm>` reads `CLHVTPM` as the created
+`HVTPM` data (inference from the rule names); on that reading the
+openings cover low-voltage N-well outside varactor channels and `lvtn`,
+and `hvtp` only where low-voltage N-well overlaps a varactor channel,
+rather than drawn `hvtp` alone. Openings over `hvtp`, as above, and
+openings over most low-voltage N-well are both readings; the PDK does
+not say which matches the plate, and the checks state what the created
+layer must cover, not the operation that makes it.
+
 ## Step category
 
 `HVTPM` is a {ref}`Photolithography (mask step) <category-lithography>`
@@ -170,6 +185,9 @@ fab:
   "High-Vt LVPMOS implant"; `chvtpm` 97:0, 97:43, 97:42.[^pdk-06]
 * SkyWater PDK, *Periphery rules* — `hvtp` function text; hvtp.1–hvtp.6;
   lvtn.9.[^pdk-periph]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the
+  `chvtpm.1` to `chvtpm.4` checks on the undefined `CLHVTPM`
+  layer.[^pdk-errors]
 * SkyWater PDK, *Device Details* — `pfet_01v8_hvt`;
   `cap_var_hvt`; the varactor e-test table.[^pdk-07]
 * SKY130 raw-data repository — C–V sweeps of the test tile's low- and
@@ -235,6 +253,11 @@ fab:
   transistor implant").[^pdk-06] The PDK does not say whether that mask
   is absent from the baseline flow, folded into `HVTPM`, or belongs to
   an option; this reference describes no separate step for it.
+* Whether the plate is opened over drawn `hvtp`, as this page reads the
+  layer description, or over low-voltage N-well outside `lvtn`, as the
+  {ref}`HVTPM mask page <mask-hvtpm>` reads the `chvtpm` checks, is not
+  stated in the PDK; the Error Messages page does not define
+  `CLHVTPM`.[^pdk-periph][^pdk-errors]
 * Resist thickness and exposure tool are inferred.
 
 <!-- footnotes -->
@@ -255,6 +278,10 @@ fab:
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
     documentation, and the `nfet_01v8` cross-section drawing.
     <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,

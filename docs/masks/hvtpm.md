@@ -104,7 +104,8 @@ areaid.ce";[^pdk-06] it uses neither to define the plate.
 The PDK's *Error Messages* page, which describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
 criteria for GDS data", uses both. It lists four checks on a layer it
-calls `CLHVTPM`, under the rule names `chvtpm.1` to `chvtpm.4`: "0.38
+calls `CLHVTPM`, under the rule names `chvtpm.1`, `chvtpm.2a`,
+`chvtpm.3` and `chvtpm.4`: "0.38
 min. width of CLHVTPM", "0.38 min. spacing/notch of CLHVTPM", "0 min.
 enclosure of ((LVnwell not overlapping Var_channel) NOT lvtn) by
 CLHVTPM" and "0 min. enclosure of ((LVnwell overlapping Var_channel)
@@ -328,7 +329,7 @@ features; for a plate that covers low-voltage N-well, as the `chvtpm`
 checks describe, the smallest features would also follow the `nwell`,
 `hvi` and `lvtn` rules (our reading). The Error Messages page gives the
 created layer the same 0.38 width and spacing (`chvtpm.1`,
-`chvtpm.2`).[^pdk-errors]
+`chvtpm.2a`).[^pdk-errors]
 
 ## Related pages
 

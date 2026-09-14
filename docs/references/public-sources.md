@@ -14916,7 +14916,7 @@ CLHVTPM" and `clvtnm.1` "0.38 min. width of clvtnm in periphery", and
 "nikon cross" checks for most mask layers (`cfom.nikon` "FOMmk in the
 nikon cross has the wrong polarity"). Used on the FOM mask page. Tier:
 cross-check.
-Also used on steps 064, 071 and 168.
+Also used on the mask index and steps 022, 064, 068, 071 and 168.
 Also used on the LVTNM, NWM, HVTPM, PWBM, PWDEM, TUNM, ONOM, LVOM, RPM,
 RRPM, URPM, NTM, HVNTM, LDNTM, NPCM, PSDM, NSDM, VIM2, CAPM, MM3, VIM3,
 CAP2M, MM4, MM5, NSM and PDM mask pages.
