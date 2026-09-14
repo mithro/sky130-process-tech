@@ -83,8 +83,13 @@ of names and descriptions across the files, and where it needs more
 reasoning than that it is marked *(inference)* and explained on the
 step page. The one operation the PDK does state is for `hvntm`: "Drawn
 layer will be OR-ed with the CL and rechecked for CLDRC".[^pdk-periph]
-The PDK does not expand "CL"; the {ref}`HVNTM <step-068>` page reads it
-as a computed layer. The PDK's *Error Messages* page lists checks on
+The PDK does not expand "CL" or "CLDRC". The periphery rules use the
+abbreviation again in their flag legend, where A means "Rule documents
+a functionality implemented in CL algorithms and may not be checked by
+DRC." and AD "Rule documents a functionality implemented in CL
+algorithms and checked by DRC.";[^pdk-periph] that fits a reading of CL
+as the mask-generation computation (our reading), and the
+{ref}`HVNTM <step-068>` page reads it as a computed layer. The PDK's *Error Messages* page lists checks on
 layers it calls `CLHVTPM`, `CLLVTNM`, `CLNTM` and `CLHVNTM` without
 defining them; the mask pages read them as created mask data
 (inference from the names), and the checks say what those layers must
