@@ -9000,7 +9000,7 @@ Bloomington fab.
 
 **CARAVEL-SEALRING** — Efabless Corporation, *caravel* repository,
 `gds/advSeal_6um_gen.gds.gz` (seal-ring cell for SKY130 shuttle
-designs), retrieved 2026-09-13.
+designs), retrieved 2026-09-13; re-checked 2026-09-14.
 <https://github.com/efabless/caravel/blob/main/gds/advSeal_6um_gen.gds.gz>
 A published SKY130 seal-ring layout: a 6 µm `areaid.sl` band with a
 5 µm `nsm` band over four 0.3 µm diffusion rings and no drawn metal or

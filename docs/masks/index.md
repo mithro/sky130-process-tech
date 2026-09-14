@@ -674,7 +674,11 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   not include. The `LVTNM`, `HVNTM` and `NCM` notes end "only the drawn
   part is rendered", but each expression includes its created part, and
   the `LVTNM` note describes a further term, "(LV nwell over
-  varactors)", that is not in the expression.[^mask-renders]
+  varactors)", that is not in the expression.[^mask-renders] The `PDM`
+  note, "PDM = pad OR (cpmm AND areaid.mt) sized by cpdm.4", names a
+  `cpmm AND areaid.mt` term and a `cpdm.4` sizing that the render,
+  76:20 alone, does not include, and the periphery rules contain no rule
+  named `cpdm.4` ({ref}`mask-pdm`).[^mask-renders][^pdk-periph]
 * **VIMC.** `via` AND 201:20 keeps only the vias that overlap 201:20.
   The {ref}`overview-sky130b-reram` page reads SkyWater's description
   of `r1v`, which also "defines top part of connection between met1 and
