@@ -1632,51 +1632,74 @@ families:
     kind: D0
     document_type: application
     publication_date: 1986-05-21
-    status: null
+    title: Accelerator
+    application_number: GB868609395A
+    filing_date: 1986-04-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DGB8609395D0
       google_patents: https://patents.google.com/patent/GB8609395D0/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4667111A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: GB2175741A
     country: GB
     kind: A
     document_type: application
     publication_date: 1986-12-03
-    status: null
+    title: Accelerator for ion implantation
+    application_number: GB08609395A
+    filing_date: 1986-04-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DGB2175741A
       google_patents: https://patents.google.com/patent/GB2175741A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4667111A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: GB2175741B
     country: GB
     kind: B
     document_type: granted-patent
     publication_date: 1990-01-17
-    status: null
+    title: Accelerator for ion implantation
+    application_number: GB8609395A
+    filing_date: 1986-04-17
+    status: Expired - Lifetime
+    expiry:
+      date: 2006-04-17
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DGB2175741B
       google_patents: https://patents.google.com/patent/GB2175741B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4667111A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPS61264650A
     country: JP
     kind: A
     document_type: application
     publication_date: 1986-11-22
-    status: null
+    title: Ion implantation apparatus
+    application_number: JP61112431A
+    filing_date: 1986-05-16
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPS61264650A
       google_patents: https://patents.google.com/patent/JPS61264650A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4667111A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JPH0628146B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 1994-04-13
-    status: null
+    title: Ion implanter
+    application_number: JP61112431A
+    filing_date: 1986-05-16
+    status: Expired - Fee Related
+    expiry:
+      date: 2009-04-13
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0628146B2
       google_patents: https://patents.google.com/patent/JPH0628146B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4667111A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-high-energy-implanter
     relation: cited-on-page
@@ -5095,10 +5118,10 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US5699447A, retrieved 2026-09-14
   expiry:
-    date: 2027-09-14
+    date: 2029-01-15
     estimated: true
-    basis: 'not bounded from the records retrieved: US7796807B2; latest estimate US7796807B2 (estimated
-      upper bound: grant date + 17 years (US application filed before 1995-06-08))'
+    basis: 'not bounded from the records retrieved: US20090148033A1; latest estimate US20090148033A1 (application;
+      any grant would expire at the latest about 20 years from filing (estimated))'
   expired: unknown
   members:
   - number: US5699447A
@@ -5123,101 +5146,151 @@ families:
     kind: A
     document_type: granted-patent
     publication_date: 1999-11-09
-    status: null
+    title: Optical inspection method and apparatus
+    application_number: US08/984,558
+    filing_date: 1997-12-03
+    status: Expired - Lifetime
+    expiry:
+      date: 2011-11-12
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5982921A
       google_patents: https://patents.google.com/patent/US5982921A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6178257B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2001-01-23
-    status: null
+    title: Substrate inspection method and apparatus
+    application_number: US09/298,501
+    filing_date: 1999-04-23
+    status: Expired - Fee Related
+    expiry:
+      date: 2011-11-12
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6178257B1
       google_patents: https://patents.google.com/patent/US6178257B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20020039436A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2002-04-04
-    status: null
+    title: Optical inspection apparatus for defect detection
+    application_number: US09/765,995
+    filing_date: 2001-01-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020039436A1
       google_patents: https://patents.google.com/patent/US20020039436A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20040218807A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2004-11-04
-    status: null
+    title: Optical inspection method for substrate defect detection
+    application_number: US10/852,996
+    filing_date: 2004-05-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040218807A1
       google_patents: https://patents.google.com/patent/US20040218807A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20040263834A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2004-12-30
-    status: null
+    title: Optical inspection apparatus for substrate defect detection
+    application_number: US10/852,798
+    filing_date: 2004-05-24
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040263834A1
       google_patents: https://patents.google.com/patent/US20040263834A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6952491B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2005-10-04
-    status: null
+    title: Optical inspection apparatus for substrate defect detection
+    application_number: US09/765,995
+    filing_date: 2001-01-19
+    status: Expired - Fee Related
+    expiry:
+      date: 2013-01-03
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6952491B2
       google_patents: https://patents.google.com/patent/US6952491B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7499583B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2009-03-03
-    status: null
+    title: Optical inspection method for substrate defect detection
+    application_number: US10/852,996
+    filing_date: 2004-05-24
+    status: Expired - Fee Related
+    expiry:
+      date: 2013-02-16
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7499583B2
       google_patents: https://patents.google.com/patent/US7499583B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20090148033A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2009-06-11
-    status: null
+    title: Optical inspection apparatus for substrate defect detection
+    application_number: US12/354,555
+    filing_date: 2009-01-15
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090148033A1
       google_patents: https://patents.google.com/patent/US20090148033A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7796807B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2010-09-14
-    status: null
+    title: Optical inspection apparatus for substrate defect detection
+    application_number: US12/354,555
+    filing_date: 2009-01-15
+    status: Expired - Fee Related
+    expiry:
+      date: 2011-11-12
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7796807B2
       google_patents: https://patents.google.com/patent/US7796807B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: IL99823A0
     country: IL
     kind: A0
     document_type: application
     publication_date: 1992-08-18
+    title: Optical inspection method and apparatus
+    application_number: IL99823A
+    filing_date: 1991-10-23
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DIL99823A0
       google_patents: https://patents.google.com/patent/IL99823A0/en
-    verified: 2026-09-14 listed in the Google Patents family table of US5699447A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-defect-inspection
     relation: cited-on-page
@@ -14619,21 +14692,24 @@ families:
   expiry:
     date: 2020-11-24
     estimated: true
-    basis: 'not bounded from the records retrieved: US20010003607A1, US20020084181A1; latest estimate
-      US20020084181A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period
-      + 20-year term); US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of TW492074B (estimated upper bound: earliest priority date + 21 years
+      (12-month priority period + 20-year term))'
+  expired: true
   members:
   - number: US20010003607A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2001-06-14
-    status: null
+    title: Alternate steps of imp and sputtering process to improve sidewall coverage
+    application_number: US09/449,202
+    filing_date: 1999-11-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010003607A1
       google_patents: https://patents.google.com/patent/US20010003607A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6350353B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6350353B2
     country: US
     kind: B2
@@ -14656,61 +14732,79 @@ families:
     kind: A1
     document_type: application
     publication_date: 2002-07-04
-    status: null
+    title: Alternate steps of IMP and sputtering process to improve sidewall coverage
+    application_number: US10/037,172
+    filing_date: 2001-11-07
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020084181A1
       google_patents: https://patents.google.com/patent/US20020084181A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6350353B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1103631A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2001-05-30
-    status: null
+    title: Apparatus and method for depositing material on a substrate
+    application_number: EP00310335A
+    filing_date: 2000-11-21
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1103631A2
       google_patents: https://patents.google.com/patent/EP1103631A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6350353B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2001303247A
     country: JP
     kind: A
     document_type: application
     publication_date: 2001-10-31
-    status: null
+    title: Alternating steps of IMP and sputtering process to improve sidewall coverage
+    application_number: JP2000357896A
+    filing_date: 2000-11-24
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001303247A
       google_patents: https://patents.google.com/patent/JP2001303247A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6350353B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20010051943A
     country: KR
     kind: A
     document_type: application
     publication_date: 2001-06-25
-    status: null
+    title: Alternate steps of imp and sputtering process to improve sidewall coverage
+    application_number: KR1020000070500A
+    filing_date: 2000-11-24
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20010051943A
       google_patents: https://patents.google.com/patent/KR20010051943A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6350353B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: SG86448A1
     country: SG
     kind: A1
     document_type: application
     publication_date: 2002-02-19
+    title: Alternate steps of imp and sputtering process to improve sidewall coverage
+    application_number: SG200006755A
+    filing_date: 2000-11-21
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DSG86448A1
       google_patents: https://patents.google.com/patent/SG86448A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6350353B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW492074B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2002-06-21
+    title: Alternates steps of IMP and sputtering process to improve sidewall coverage
+    application_number: TW089124705A
+    filing_date: 2000-11-21
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW492074B
       google_patents: https://patents.google.com/patent/TW492074B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6350353B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: category-deposition
     relation: cited-on-page
@@ -15030,53 +15124,73 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7305999B2, retrieved 2026-09-14
   expiry:
-    date: 2021-07-07
+    date: 2023-08-06
     estimated: true
-    basis: 'not bounded from the records retrieved: US6418945B1, US20020179122A1, US20030102019A1, US6660104B2;
-      latest estimate US6660104B2 (estimated upper bound: earliest priority date + 21 years (12-month
-      priority period + 20-year term); US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7305999B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US6418945B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2002-07-16
-    status: null
+    title: Dual cassette centrifugal processor
+    application_number: US09/611,537
+    filing_date: 2000-07-07
+    status: Expired - Lifetime
+    expiry:
+      date: 2020-07-07
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6418945B1
       google_patents: https://patents.google.com/patent/US6418945B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7305999B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20020179122A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2002-12-05
-    status: null
+    title: Dual cassette centrifugal processor
+    application_number: US10/164,164
+    filing_date: 2002-06-05
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020179122A1
       google_patents: https://patents.google.com/patent/US20020179122A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7305999B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20030102019A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2003-06-05
-    status: null
+    title: Centrifugal spray processor and retrofit kit
+    application_number: US10/199,998
+    filing_date: 2002-07-19
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030102019A1
       google_patents: https://patents.google.com/patent/US20030102019A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7305999B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6660104B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2003-12-09
-    status: null
+    title: Dual cassette centrifugal processor
+    application_number: US10/164,164
+    filing_date: 2002-06-05
+    status: Expired - Fee Related
+    expiry:
+      date: 2020-07-07
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6660104B2
       google_patents: https://patents.google.com/patent/US6660104B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7305999B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7305999B2
     country: US
     kind: B2
@@ -15099,31 +15213,40 @@ families:
     kind: A1
     document_type: application
     publication_date: 2002-01-21
-    status: null
+    title: Dual cassette centrifugal processor
+    application_number: AU2001269798A
+    filing_date: 2001-06-11
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DAU2001269798A1
       google_patents: https://patents.google.com/patent/AU2001269798A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7305999B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW512408B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2002-12-01
+    title: Machine for processing flat media and method of processing wafers
+    application_number: TW090116619A
+    filing_date: 2001-07-06
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW512408B
       google_patents: https://patents.google.com/patent/TW512408B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7305999B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2002004136A1
     country: WO
     kind: A1
     document_type: international-application
     publication_date: 2002-01-17
-    status: null
+    title: Dual cassette centrifugal processor
+    application_number: PCT/US2001/018899
+    filing_date: 2001-06-11
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2002004136A1
       google_patents: https://patents.google.com/patent/WO2002004136A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7305999B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-wet-bench
     relation: cited-on-page
@@ -15287,53 +15410,73 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6759288B2, retrieved 2026-09-14
   expiry:
-    date: 2021-08-22
+    date: 2022-08-01
     estimated: true
-    basis: 'not bounded from the records retrieved: US20020068395A1, US6455362B1, US20020195626A1, US6580149B2;
-      latest estimate US6580149B2 (estimated upper bound: earliest priority date + 21 years (12-month
-      priority period + 20-year term); US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US20020195626A1 (estimated: 20 years from the filing date shown;
+      no term remains for any grant on it)'
+  expired: true
   members:
   - number: US20020068395A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2002-06-06
-    status: null
+    title: Double LDD devices for improved DRAM refresh
+    application_number: US10/046,737
+    filing_date: 2002-01-17
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020068395A1
       google_patents: https://patents.google.com/patent/US20020068395A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6759288B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6455362B1
     country: US
     kind: B1
     document_type: granted-patent
     publication_date: 2002-09-24
-    status: null
+    title: Double LDD devices for improved dram refresh
+    application_number: US09/642,780
+    filing_date: 2000-08-22
+    status: Expired - Lifetime
+    expiry:
+      date: 2020-08-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6455362B1
       google_patents: https://patents.google.com/patent/US6455362B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6759288B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20020195626A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2002-12-26
-    status: null
+    title: Double LDD devices for improved DRAM refresh
+    application_number: US10/208,830
+    filing_date: 2002-08-01
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020195626A1
       google_patents: https://patents.google.com/patent/US20020195626A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6759288B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6580149B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2003-06-17
-    status: null
+    title: Double LDD devices for improved DRAM refresh
+    application_number: US10/046,737
+    filing_date: 2002-01-17
+    status: Expired - Lifetime
+    expiry:
+      date: 2020-08-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6580149B2
       google_patents: https://patents.google.com/patent/US6580149B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6759288B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6759288B2
     country: US
     kind: B2
@@ -15399,23 +15542,26 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6723998B2, retrieved 2026-09-14
   expiry:
-    date: 2021-09-15
+    date: 2021-09-23
     estimated: true
-    basis: 'not bounded from the records retrieved: US20020070347A1; latest estimate US20020070347A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6723998B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Fee Related)'
+  expired: true
   members:
   - number: US20020070347A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2002-06-13
-    status: null
+    title: Faraday system for ion implanters
+    application_number: US09/950,940
+    filing_date: 2001-09-12
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020070347A1
       google_patents: https://patents.google.com/patent/US20020070347A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6723998B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6723998B2
     country: US
     kind: B2
@@ -15438,61 +15584,79 @@ families:
     kind: A2
     document_type: application
     publication_date: 2003-06-11
-    status: null
+    title: Faraday system for ion implanters
+    application_number: EP01970935A
+    filing_date: 2001-09-14
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1317764A2
       google_patents: https://patents.google.com/patent/EP1317764A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6723998B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2004509436A
     country: JP
     kind: A
     document_type: application
     publication_date: 2004-03-25
-    status: null
+    title: Faraday system for ion implantation
+    application_number: JP2002527536A
+    filing_date: 2001-09-14
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2004509436A
       google_patents: https://patents.google.com/patent/JP2004509436A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6723998B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20030064752A
     country: KR
     kind: A
     document_type: application
     publication_date: 2003-08-02
-    status: null
+    title: Faraday system for ion implanters
+    application_number: KR10-2003-7003735A
+    filing_date: 2001-09-14
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20030064752A
       google_patents: https://patents.google.com/patent/KR20030064752A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6723998B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2002023582A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2002-03-21
-    status: null
+    title: Faraday system for ion implanters
+    application_number: PCT/US2001/028671
+    filing_date: 2001-09-14
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2002023582A2
       google_patents: https://patents.google.com/patent/WO2002023582A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6723998B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2002023582A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2002-08-15
-    status: null
+    title: Faraday system for ion implanters
+    application_number: PCT/US2001/028671
+    filing_date: 2001-09-14
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2002023582A3
       google_patents: https://patents.google.com/patent/WO2002023582A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6723998B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2002023582A9
     country: WO
     kind: A9
     document_type: international-application
     publication_date: 2004-03-04
-    status: null
+    title: Faraday system for ion implanters
+    application_number: PCT/US2001/028671
+    filing_date: 2001-09-14
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2002023582A9
       google_patents: https://patents.google.com/patent/WO2002023582A9/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6723998B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-medium-current-implanter
     relation: cited-on-page
@@ -15526,21 +15690,24 @@ families:
   expiry:
     date: 2021-09-21
     estimated: true
-    basis: 'not bounded from the records retrieved: US20020055233A1; latest estimate US20020055233A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of ATE448567T1 (estimated upper bound: earliest priority date + 21 years
+      (12-month priority period + 20-year term))'
+  expired: true
   members:
   - number: US20020055233A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2002-05-09
-    status: null
+    title: Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions
+    application_number: US09/952,404
+    filing_date: 2001-09-14
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020055233A1
       google_patents: https://patents.google.com/patent/US20020055233A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6660603B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6660603B2
     country: US
     kind: B2
@@ -15563,51 +15730,70 @@ families:
     kind: T1
     document_type: translation-of-granted-patent
     publication_date: 2009-11-15
+    title: MOSFET TRANSISTOR AND METHOD FOR PRODUCING THE SAME
+    application_number: AT01000491T
+    filing_date: 2001-09-20
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DATE448567T1
       google_patents: https://patents.google.com/patent/ATE448567T1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6660603B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE60140415D1
     country: DE
     kind: D1
     document_type: application
     publication_date: 2009-12-24
-    status: null
+    title: MOSFET transistor and method of making the same
+    application_number: DE60140415T
+    filing_date: 2001-09-20
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE60140415D1
       google_patents: https://patents.google.com/patent/DE60140415D1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6660603B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1191577A1
     country: EP
     kind: A1
     document_type: application
     publication_date: 2002-03-27
-    status: null
+    title: MOSFET transistor
+    application_number: EP01000491A
+    filing_date: 2001-09-20
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1191577A1
       google_patents: https://patents.google.com/patent/EP1191577A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6660603B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1191577B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 2009-11-11
-    status: null
+    title: MOSFET transistor and method for producing the same
+    application_number: EP01000491A
+    filing_date: 2001-09-20
+    status: Expired - Lifetime
+    expiry:
+      date: 2021-09-20
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1191577B1
       google_patents: https://patents.google.com/patent/EP1191577B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6660603B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2002176175A
     country: JP
     kind: A
     document_type: application
     publication_date: 2002-06-21
-    status: null
+    title: High voltage drain extension transistor with self-aligned channel and drain extension
+    application_number: JP2001286941A
+    filing_date: 2001-09-20
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2002176175A
       google_patents: https://patents.google.com/patent/JP2002176175A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6660603B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: mask-nwm
     relation: cited-on-page
@@ -15840,33 +16026,41 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6518136B2, retrieved 2026-09-14
   expiry:
-    date: 2021-12-14
+    date: 2022-06-14
     estimated: true
-    basis: 'not bounded from the records retrieved: US20020076889A1, US20020151145A1, US6743686B2; latest
-      estimate US6743686B2 (estimated upper bound: earliest priority date + 21 years (12-month priority
-      period + 20-year term); US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US20020151145A1 (estimated: 20 years from the filing date shown;
+      no term remains for any grant on it)'
+  expired: true
   members:
   - number: US20020076889A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2002-06-20
-    status: null
+    title: Sacrificial polysilicon sidewall process and rapid thermal spike annealing for advance CMOS
+      fabrication
+    application_number: US09/736,877
+    filing_date: 2000-12-14
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020076889A1
       google_patents: https://patents.google.com/patent/US20020076889A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6518136B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20020151145A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2002-10-17
-    status: null
+    title: Sacrificial polysilicon sidewall process and rapid thermal spike annealing for advance CMOS
+      fabrication
+    application_number: US10/172,262
+    filing_date: 2002-06-14
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020151145A1
       google_patents: https://patents.google.com/patent/US20020151145A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6518136B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6518136B2
     country: US
     kind: B2
@@ -15890,11 +16084,19 @@ families:
     kind: B2
     document_type: granted-patent
     publication_date: 2004-06-01
-    status: null
+    title: Sacrificial polysilicon sidewall process and rapid thermal spike annealing for advance CMOS
+      fabrication
+    application_number: US10/172,262
+    filing_date: 2002-06-14
+    status: Expired - Fee Related
+    expiry:
+      date: 2020-12-14
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6743686B2
       google_patents: https://patents.google.com/patent/US6743686B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6518136B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-075
     relation: cited-on-page
@@ -16118,44 +16320,56 @@ families:
     status: Expired - Fee Related
     source: Google Patents (IFI Claims) status of US6914016B2, retrieved 2026-09-14
   expiry:
-    date: 2022-05-11
+    date: 2025-03-30
     estimated: true
-    basis: 'not bounded from the records retrieved: US20020187655A1, US6740601B2, US20040152341A1, US20050181632A1,
-      US7196021B2; latest estimate US7196021B2 (estimated upper bound: earliest priority date + 21 years
-      (12-month priority period + 20-year term); US patent term adjustment possible, not known without
-      the record)'
-  expired: unknown
+    basis: 'all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US20050181632A1 (estimated: 20 years from the filing date shown;
+      no term remains for any grant on it)'
+  expired: true
   members:
   - number: US20020187655A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2002-12-12
-    status: null
+    title: HDP-CVD deposition process for filling high aspect ratio gaps
+    application_number: US09/854,083
+    filing_date: 2001-05-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020187655A1
       google_patents: https://patents.google.com/patent/US20020187655A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6914016B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6740601B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2004-05-25
-    status: null
+    title: HDP-CVD deposition process for filling high aspect ratio gaps
+    application_number: US09/854,083
+    filing_date: 2001-05-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2021-05-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6740601B2
       google_patents: https://patents.google.com/patent/US6740601B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6914016B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20040152341A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2004-08-05
-    status: null
+    title: HDP-CVD deposition process for filling high aspect ratio gaps
+    application_number: US10/763,018
+    filing_date: 2004-01-21
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040152341A1
       google_patents: https://patents.google.com/patent/US20040152341A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6914016B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6914016B2
     country: US
     kind: B2
@@ -16178,21 +16392,31 @@ families:
     kind: A1
     document_type: application
     publication_date: 2005-08-18
-    status: null
+    title: HDP-CVD deposition process for filling high aspect ratio gaps
+    application_number: US11/095,704
+    filing_date: 2005-03-30
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050181632A1
       google_patents: https://patents.google.com/patent/US20050181632A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6914016B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7196021B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2007-03-27
-    status: null
+    title: HDP-CVD deposition process for filling high aspect ratio gaps
+    application_number: US11/095,704
+    filing_date: 2005-03-30
+    status: Expired - Fee Related
+    expiry:
+      date: 2021-07-28
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7196021B2
       google_patents: https://patents.google.com/patent/US7196021B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6914016B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-hdp-cvd
     relation: cited-on-page
@@ -16570,23 +16794,26 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US6747230B2, retrieved 2026-09-14
   expiry:
-    date: 2022-08-31
+    date: 2022-11-23
     estimated: true
-    basis: 'not bounded from the records retrieved: US20030069664A1; latest estimate US20030069664A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6747230B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US20030069664A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2003-04-10
-    status: null
+    title: Method and device for sorting wafers
+    application_number: US10/234,077
+    filing_date: 2002-09-03
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030069664A1
       google_patents: https://patents.google.com/patent/US20030069664A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6747230B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6747230B2
     country: US
     kind: B2
@@ -16609,21 +16836,31 @@ families:
     kind: A1
     document_type: application
     publication_date: 2003-03-27
-    status: null
+    title: Method and appliance for sorting wafers employs direct sorting system using two robots
+    application_number: DE10143722A
+    filing_date: 2001-08-31
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE10143722A1
       google_patents: https://patents.google.com/patent/DE10143722A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6747230B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE10143722C2
     country: DE
     kind: C2
     document_type: granted-patent
     publication_date: 2003-07-03
-    status: null
+    title: Method and device for sorting wafers
+    application_number: DE10143722A
+    filing_date: 2001-08-31
+    status: Expired - Fee Related
+    expiry:
+      date: 2021-09-01
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE10143722C2
       google_patents: https://patents.google.com/patent/DE10143722C2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6747230B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: machine-starting-material
     relation: cited-on-page
@@ -16658,12 +16895,10 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US6717193B2, retrieved 2026-09-14
   expiry:
-    date: 2022-10-09
+    date: 2028-10-24
     estimated: true
-    basis: 'not bounded from the records retrieved: US20030067023A1, US20040219757A1, US7084042B2, US20060216901A1,
-      US7456072B2, US20090267184A1, US8178404B2; latest estimate US8178404B2 (estimated upper bound: earliest
-      priority date + 21 years (12-month priority period + 20-year term); US patent term adjustment possible,
-      not known without the record)'
+    basis: 'not bounded from the records retrieved: US20090267184A1; latest estimate US20090267184A1 (application;
+      any grant would expire at the latest about 20 years from filing (estimated))'
   expired: unknown
   members:
   - number: US20030067023A1
@@ -16671,11 +16906,14 @@ families:
     kind: A1
     document_type: application
     publication_date: 2003-04-10
-    status: null
+    title: Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same
+    application_number: US09/973,640
+    filing_date: 2001-10-09
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030067023A1
       google_patents: https://patents.google.com/patent/US20030067023A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6717193B2
     country: US
     kind: B2
@@ -16698,151 +16936,216 @@ families:
     kind: A1
     document_type: application
     publication_date: 2004-11-04
-    status: null
+    title: Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same
+    application_number: US10/788,057
+    filing_date: 2004-02-25
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040219757A1
       google_patents: https://patents.google.com/patent/US20040219757A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7084042B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2006-08-01
-    status: null
+    title: Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same
+    application_number: US10/788,057
+    filing_date: 2004-02-25
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-02-07
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7084042B2
       google_patents: https://patents.google.com/patent/US7084042B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20060216901A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2006-09-28
-    status: null
+    title: Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same
+    application_number: US11/445,841
+    filing_date: 2006-05-30
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060216901A1
       google_patents: https://patents.google.com/patent/US20060216901A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7456072B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2008-11-25
-    status: null
+    title: Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same
+    application_number: US11/445,841
+    filing_date: 2006-05-30
+    status: Expired - Lifetime
+    expiry:
+      date: 2021-10-09
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS7456072B2
       google_patents: https://patents.google.com/patent/US7456072B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US20090267184A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2009-10-29
-    status: null
+    title: Metal-insulator-metal (mim) capacitor structure and methods of fabricating same
+    application_number: US12/257,582
+    filing_date: 2008-10-24
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20090267184A1
       google_patents: https://patents.google.com/patent/US20090267184A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US8178404B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2012-05-15
-    status: null
+    title: Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same
+    application_number: US12/257,582
+    filing_date: 2008-10-24
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-01-12
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8178404B2
       google_patents: https://patents.google.com/patent/US8178404B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN1568535A
     country: CN
     kind: A
     document_type: application
     publication_date: 2005-01-19
-    status: null
+    title: Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same
+    application_number: CNA028200012A
+    filing_date: 2002-10-08
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN1568535A
       google_patents: https://patents.google.com/patent/CN1568535A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN100524613C
     country: CN
     kind: C
     document_type: granted-patent
     publication_date: 2009-08-05
-    status: null
+    title: Metal-insulator-metal (MIM) capacitor structure and method of making same
+    application_number: CNB028200012A
+    filing_date: 2002-10-08
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-10-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN100524613C
       google_patents: https://patents.google.com/patent/CN100524613C/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1474823A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2004-11-10
-    status: null
+    title: Metal-insulator-metal (mim) capacitor structure and methods of fabricating same
+    application_number: EP02772702A
+    filing_date: 2002-10-08
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1474823A2
       google_patents: https://patents.google.com/patent/EP1474823A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2005505934A
     country: JP
     kind: A
     document_type: application
     publication_date: 2005-02-24
-    status: null
+    title: Metal-insulating film-metal (MIM) capacitor structure and manufacturing method thereof
+    application_number: JP2003535236A
+    filing_date: 2002-10-08
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2005505934A
       google_patents: https://patents.google.com/patent/JP2005505934A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20040054709A
     country: KR
     kind: A
     document_type: application
     publication_date: 2004-06-25
-    status: null
+    title: Metal-insulator-metal(mim) capacitor structure and methods of fabricating same
+    application_number: KR10-2004-7005256A
+    filing_date: 2002-10-08
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20040054709A
       google_patents: https://patents.google.com/patent/KR20040054709A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR100904611B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2009-06-25
-    status: null
+    title: MIM capacitor structure and method for manufacturing MIM capacitor structure
+    application_number: KR1020047005256A
+    filing_date: 2002-10-08
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-10-08
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR100904611B1
       google_patents: https://patents.google.com/patent/KR100904611B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW586130B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2004-05-01
+    title: Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same
+    application_number: TW091123289A
+    filing_date: 2002-10-09
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW586130B
       google_patents: https://patents.google.com/patent/TW586130B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2003032366A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2003-04-17
-    status: null
+    title: Metal-insulator-metal (mim) capacitor structure and methods of fabricating same
+    application_number: PCT/IB2002/004120
+    filing_date: 2002-10-08
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2003032366A2
       google_patents: https://patents.google.com/patent/WO2003032366A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2003032366A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2003-10-02
-    status: null
+    title: Metal-insulator-metal (mim) capacitor structure and methods of fabricating same
+    application_number: PCT/IB2002/004120
+    filing_date: 2002-10-08
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2003032366A3
       google_patents: https://patents.google.com/patent/WO2003032366A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6717193B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: step-135
     relation: cited-on-page
@@ -16947,23 +17250,26 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US6605199B2, retrieved 2026-09-14
   expiry:
-    date: 2022-11-14
+    date: 2024-05-03
     estimated: true
-    basis: 'not bounded from the records retrieved: US20030089430A1, US20030205463A1, US6942763B2; latest
-      estimate US6942763B2 (estimated upper bound: earliest priority date + 21 years (12-month priority
-      period + 20-year term); US patent term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of IL161750A (estimated: 20 years from the filing date shown; no term
+      remains for any grant on it)'
+  expired: true
   members:
   - number: US20030089430A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2003-05-15
-    status: null
+    title: Textured-metastable aluminum alloy sputter targets and method of manufacture
+    application_number: US09/991,851
+    filing_date: 2001-11-14
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030089430A1
       google_patents: https://patents.google.com/patent/US20030089430A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6605199B2
     country: US
     kind: B2
@@ -16986,151 +17292,208 @@ families:
     kind: A1
     document_type: application
     publication_date: 2003-11-06
-    status: null
+    title: Textured-metastable aluminum alloy sputter targets and method of manufacture
+    application_number: US10/411,212
+    filing_date: 2003-04-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030205463A1
       google_patents: https://patents.google.com/patent/US20030205463A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US6942763B2
     country: US
     kind: B2
     document_type: granted-patent
     publication_date: 2005-09-13
-    status: null
+    title: Textured-metastable aluminum alloy sputter targets and method of manufacture
+    application_number: US10/411,212
+    filing_date: 2003-04-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-03-01
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6942763B2
       google_patents: https://patents.google.com/patent/US6942763B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: AU2002365427A1
     country: AU
     kind: A1
     document_type: application
     publication_date: 2003-09-02
-    status: null
+    title: Textured-metastable aluminum alloy sputter targets
+    application_number: AU2002365427A
+    filing_date: 2002-10-23
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DAU2002365427A1
       google_patents: https://patents.google.com/patent/AU2002365427A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1444378A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2004-08-11
-    status: null
+    title: Textured-metastable aluminum alloy sputter targets
+    application_number: EP02805699A
+    filing_date: 2002-10-23
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1444378A2
       google_patents: https://patents.google.com/patent/EP1444378A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1444378A4
     country: EP
     kind: A4
     document_type: search-report
     publication_date: 2008-04-02
-    status: null
+    title: Textured-metastable aluminum alloy sputter targets
+    application_number: EP02805699A
+    filing_date: 2002-10-23
+    status: Withdrawn
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1444378A4
       google_patents: https://patents.google.com/patent/EP1444378A4/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: IL161750A0
     country: IL
     kind: A0
     document_type: application
     publication_date: 2005-11-20
+    title: Textured-metastable aluminum alloy sputter targets
+    application_number: IL16175002A
+    filing_date: 2002-10-23
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DIL161750A0
       google_patents: https://patents.google.com/patent/IL161750A0/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: IL161750A
     country: IL
     kind: A
     document_type: application
     publication_date: 2009-09-22
+    title: Textured-metastable aluminum alloy sputter targets
+    application_number: IL161750A
+    filing_date: 2004-05-03
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DIL161750A
       google_patents: https://patents.google.com/patent/IL161750A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2005517088A
     country: JP
     kind: A
     document_type: application
     publication_date: 2005-06-09
-    status: null
+    title: Textured metastable aluminum alloy sputtering target
+    application_number: JP2003566270A
+    filing_date: 2002-10-23
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2005517088A
       google_patents: https://patents.google.com/patent/JP2005517088A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP4351910B2
     country: JP
     kind: B2
     document_type: granted-patent
     publication_date: 2009-10-28
-    status: null
+    title: Textured metastable aluminum alloy sputtering target
+    application_number: JP2003566270A
+    filing_date: 2002-10-23
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-10-23
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP4351910B2
       google_patents: https://patents.google.com/patent/JP4351910B2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20040058280A
     country: KR
     kind: A
     document_type: application
     publication_date: 2004-07-03
-    status: null
+    title: Textured-Metastable Aluminum Alloy Sputter Targets
+    application_number: KR10-2004-7007243A
+    filing_date: 2002-10-23
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20040058280A
       google_patents: https://patents.google.com/patent/KR20040058280A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR100993967B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2010-11-11
-    status: null
+    title: Aluminum alloy sputter targets and how to form them
+    application_number: KR1020047007243A
+    filing_date: 2002-10-23
+    status: Expired - Fee Related
+    expiry:
+      date: 2022-10-23
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR100993967B1
       google_patents: https://patents.google.com/patent/KR100993967B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200300176A
     country: TW
     kind: A
     document_type: application
     publication_date: 2003-05-16
+    title: Textured-metastable aluminum alloy sputter targets
+    application_number: TW091133156A
+    filing_date: 2002-11-12
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200300176A
       google_patents: https://patents.google.com/patent/TW200300176A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI287046B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2007-09-21
+    title: Textured-metastable aluminum alloy sputter targets
+    application_number: TW091133156A
+    filing_date: 2002-11-12
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI287046B
       google_patents: https://patents.google.com/patent/TWI287046B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2003066929A2
     country: WO
     kind: A2
     document_type: international-application
     publication_date: 2003-08-14
-    status: null
+    title: Textured-metastable aluminum alloy sputter targets
+    application_number: PCT/US2002/033717
+    filing_date: 2002-10-23
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2003066929A2
       google_patents: https://patents.google.com/patent/WO2003066929A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2003066929A3
     country: WO
     kind: A3
     document_type: international-application
     publication_date: 2003-10-23
-    status: null
+    title: Textured-metastable aluminum alloy sputter targets
+    application_number: PCT/US2002/033717
+    filing_date: 2002-10-23
+    status: Ceased
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2003066929A3
       google_patents: https://patents.google.com/patent/WO2003066929A3/en
-    verified: 2026-09-14 listed in the Google Patents family table of US6605199B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   relevance:
   - target: material-sputter-targets
     relation: cited-on-page
@@ -17170,23 +17533,26 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US7439141B2, retrieved 2026-09-14
   expiry:
-    date: 2022-12-27
+    date: 2025-12-05
     estimated: true
-    basis: 'not bounded from the records retrieved: US20030176043A1; latest estimate US20030176043A1 (estimated
-      upper bound: earliest priority date + 21 years (12-month priority period + 20-year term); US patent
-      term adjustment possible, not known without the record)'
-  expired: unknown
+    basis: 'all 15 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7439141B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US20030176043A1
     country: US
     kind: A1
     document_type: application
     publication_date: 2003-09-18
-    status: null
+    title: Shallow trench isolation approach for improved STI corner rounding
+    application_number: US10/277,395
+    filing_date: 2002-10-22
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030176043A1
       google_patents: https://patents.google.com/patent/US20030176043A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: US7439141B2
     country: US
     kind: B2
@@ -17209,111 +17575,156 @@ families:
     kind: A1
     document_type: application
     publication_date: 2003-07-24
-    status: null
+    title: Method for forming a shallow trench isolation structure with improved corner rounding
+    application_number: AU2002357172A
+    filing_date: 2002-12-11
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DAU2002357172A1
       google_patents: https://patents.google.com/patent/AU2002357172A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: AU2002357172A8
     country: AU
     kind: A8
     document_type: application
     publication_date: 2003-07-24
-    status: null
+    title: Method for forming a shallow trench isolation structure with improved corner rounding
+    application_number: AU2002357172A
+    filing_date: 2002-12-11
+    status: Abandoned
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DAU2002357172A8
       google_patents: https://patents.google.com/patent/AU2002357172A8/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN1610968A
     country: CN
     kind: A
     document_type: application
     publication_date: 2005-04-27
-    status: null
+    title: A shallow trench isolation approach for improved STI corner rounding
+    application_number: CNA028263804A
+    filing_date: 2002-12-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN1610968A
       google_patents: https://patents.google.com/patent/CN1610968A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: CN100349279C
     country: CN
     kind: C
     document_type: granted-patent
     publication_date: 2007-11-14
-    status: null
+    title: A shallow trench isolation approach for improved STI corner rounding
+    application_number: CNB028263804A
+    filing_date: 2002-12-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-12-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DCN100349279C
       google_patents: https://patents.google.com/patent/CN100349279C/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1459374A2
     country: EP
     kind: A2
     document_type: application
     publication_date: 2004-09-22
-    status: null
+    title: A shallow trench isolation approach for improved sti corner rounding
+    application_number: EP02806155A
+    filing_date: 2002-12-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1459374A2
       google_patents: https://patents.google.com/patent/EP1459374A2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: EP1459374B1
     country: EP
     kind: B1
     document_type: granted-patent
     publication_date: 2010-03-17
-    status: null
+    title: A shallow trench isolation approach for improved sti corner rounding
+    application_number: EP02806155A
+    filing_date: 2002-12-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-12-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP1459374B1
       google_patents: https://patents.google.com/patent/EP1459374B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: JP2005514791A
     country: JP
     kind: A
     document_type: application
     publication_date: 2005-05-19
-    status: null
+    title: Shallow trench isolation method for improving roundness of corner of STI
+    application_number: JP2003558921A
+    filing_date: 2002-12-11
+    status: Pending
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2005514791A
       google_patents: https://patents.google.com/patent/JP2005514791A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR20040071266A
     country: KR
     kind: A
     document_type: application
     publication_date: 2004-08-11
-    status: null
+    title: A shallow trench isolation approach for improved sti corner rounding
+    application_number: KR10-2004-7010183A
+    filing_date: 2002-12-11
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20040071266A
       google_patents: https://patents.google.com/patent/KR20040071266A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: KR100951463B1
     country: KR
     kind: B1
     document_type: granted-patent
     publication_date: 2010-04-07
-    status: null
+    title: A shallow trench isolation approach for improved sti corner rounding
+    application_number: KR1020047010183A
+    filing_date: 2002-12-11
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-12-11
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR100951463B1
       google_patents: https://patents.google.com/patent/KR100951463B1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TW200303596A
     country: TW
     kind: A
     document_type: application
     publication_date: 2003-09-01
+    title: A shallow trench isolation approach for improved STI corner rounding
+    application_number: TW091136617A
+    filing_date: 2002-12-19
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW200303596A
       google_patents: https://patents.google.com/patent/TW200303596A/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: TWI278959B
     country: TW
     kind: B
     document_type: granted-patent
     publication_date: 2007-04-11
+    title: A shallow trench isolation approach and a transistor structure for improved STI corner rounding
+    application_number: TW091136617A
+    filing_date: 2002-12-19
     status: null
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTWI278959B
       google_patents: https://patents.google.com/patent/TWI278959B/en
-    verified: 2026-09-14 listed in the Google Patents family table of US7439141B2 (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: WO2003058709A2
     country: WO
     kind: A2
