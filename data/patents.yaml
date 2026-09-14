@@ -1560,11 +1560,12 @@ families:
     status: Expired - Lifetime
     source: Google Patents (IFI Claims) status of US4667111A, retrieved 2026-09-14
   expiry:
-    date: null
+    date: 2018-04-10
     estimated: true
-    basis: 'not bounded from the records retrieved: US4667111C1; latest estimate US4667111C1 (reexamination
-      certificate; no term of its own (the term is that of the patent it amends))'
-  expired: unknown
+    basis: 'all 9 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US4667111A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US4667111A
     country: US
@@ -1588,31 +1589,44 @@ families:
     kind: C1
     document_type: reexamination-certificate
     publication_date: 2001-04-10
-    status: null
+    title: Accelerator for ion implantation
+    application_number: ''
+    filing_date: 1985-05-17
+    status: Expired - Lifetime
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS4667111C1
       google_patents: https://patents.google.com/patent/US4667111C1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4667111A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3616569A1
     country: DE
     kind: A1
     document_type: application
     publication_date: 1986-11-20
-    status: null
+    title: ACCELERATION DEVICE FOR THE ION IMPLANTATION
+    application_number: DE19863616569
+    filing_date: 1986-05-16
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3616569A1
       google_patents: https://patents.google.com/patent/DE3616569A1/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4667111A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: DE3616569C2
     country: DE
     kind: C2
     document_type: granted-patent
     publication_date: 1998-07-16
-    status: null
+    title: Ion implantation device
+    application_number: DE3616569A
+    filing_date: 1986-05-16
+    status: Expired - Fee Related
+    expiry:
+      date: 2006-05-17
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DDE3616569C2
       google_patents: https://patents.google.com/patent/DE3616569C2/en
-    verified: 2026-09-14 listed in the Google Patents family table of US4667111A (record page not fetched)
+    verified: 2026-09-14 Google Patents record page fetched
   - number: GB8609395D0
     country: GB
     kind: D0
@@ -9416,6 +9430,153 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-CMP-MIRRA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5738574A/en
+- id: GP24244177
+  family:
+    source: Google Patents family ID
+    google_family_id: '24244177'
+  representative: US5965924A
+  title: Metal plug local interconnect
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - DSS Technology Management Inc
+  inventors:
+  - Ting P. Yen
+  dates:
+    priority: 1995-11-22
+    filing: 1997-07-24
+    grant: 1999-10-12
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US5965924A, retrieved 2026-09-14
+  expiry:
+    date: 2015-11-22
+    estimated: true
+    basis: 'all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US5965924A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US5965924A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: 1999-10-12
+    title: Metal plug local interconnect
+    application_number: US08/900,047
+    filing_date: 1997-07-24
+    status: Expired - Lifetime
+    expiry:
+      date: 2015-11-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5965924A
+      google_patents: https://patents.google.com/patent/US5965924A/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-093
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a conducting plug in an insulator opening that
+      joins a polysilicon gate to a nearby diffusion, a local-interconnect structure, and it is not evidence
+      that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"),
+    priority before 2006-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5965924A/en
+- id: GP24310003
+  family:
+    source: Google Patents family ID
+    google_family_id: '24310003'
+  representative: US6784552B2
+  title: Structure having reduced lateral spacer erosion
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - DSS Technology Management Inc
+  inventors:
+  - James E. Nulty
+  - Christopher J. Petti
+  dates:
+    priority: 1995-12-22
+    filing: 2000-03-31
+    grant: 2004-08-31
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6784552B2, retrieved 2026-09-14
+  expiry:
+    date: 2016-12-22
+    estimated: true
+    basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6066555A (estimated upper bound: earliest priority date + 21 years
+      (12-month priority period + 20-year term))'
+  expired: true
+  members:
+  - number: US6066555A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: 2000-05-23
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6066555A
+      google_patents: https://patents.google.com/patent/US6066555A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US6784552B2 (record page not fetched)
+  - number: US20020146897A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: 2002-10-10
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020146897A1
+      google_patents: https://patents.google.com/patent/US20020146897A1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US6784552B2 (record page not fetched)
+  - number: US6784552B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: 2004-08-31
+    title: Structure having reduced lateral spacer erosion
+    application_number: US09/540,610
+    filing_date: 2000-03-31
+    status: Expired - Lifetime
+    expiry:
+      date: 2015-12-22
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6784552B2
+      google_patents: https://patents.google.com/patent/US6784552B2/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: JPH09181181A
+    country: JP
+    kind: A
+    document_type: application
+    publication_date: 1997-07-11
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09181181A
+      google_patents: https://patents.google.com/patent/JPH09181181A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US6784552B2 (record page not fetched)
+  relevance:
+  - target: step-077
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns rectangular insulating spacers and an etch-stop
+      layer that limit spacer erosion during a contact etch, and it is not evidence that the technique
+      is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"),
+    priority before 2006-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6784552B2/en
 - id: GP18429343
   family:
     source: Google Patents family ID
@@ -12313,6 +12474,67 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-LINEAR-LAM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6425812B1/en
+- id: GP25314008
+  family:
+    source: Google Patents family ID
+    google_family_id: '25314008'
+  representative: US5851892A
+  title: Fabrication sequence employing an oxide formed with minimized inducted charge and/or maximized
+    breakdown voltage
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Bohumil Lojek
+  - Joseph M. McRae
+  dates:
+    priority: 1997-05-07
+    filing: 1997-05-07
+    grant: 1998-12-22
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US5851892A, retrieved 2026-09-14
+  expiry:
+    date: 2017-05-07
+    estimated: true
+    basis: 'all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US5851892A (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US5851892A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: 1998-12-22
+    title: Fabrication sequence employing an oxide formed with minimized inducted charge and/or maximized
+      breakdown voltage
+    application_number: US08/852,695
+    filing_date: 1997-05-07
+    status: Expired - Lifetime
+    expiry:
+      date: 2017-05-07
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5851892A
+      google_patents: https://patents.google.com/patent/US5851892A/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-047
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns growing a thin, low-charge oxide with controlled
+      ambients before and after oxidation and a post-oxidation anneal, and it is not evidence that the
+      technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority
+    before 2010-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5851892A/en
 - id: GP25360177
   family:
     source: Google Patents family ID
@@ -13015,6 +13237,76 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-OBLIQUE-KLA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6201601B1/en
+- id: GP25516451
+  family:
+    source: Google Patents family ID
+    google_family_id: '25516451'
+  representative: US6140228A
+  title: Low temperature metallization process
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Ende Shan
+  - Gorley Lau
+  - Sam Geha
+  dates:
+    priority: 1997-11-13
+    filing: 1997-11-13
+    grant: 2000-10-31
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6140228A, retrieved 2026-09-14
+  expiry:
+    date: 2018-11-13
+    estimated: true
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6756302B1 (estimated upper bound: earliest priority date + 21 years
+      (12-month priority period + 20-year term))'
+  expired: true
+  members:
+  - number: US6140228A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: 2000-10-31
+    title: Low temperature metallization process
+    application_number: US08/970,107
+    filing_date: 1997-11-13
+    status: Expired - Lifetime
+    expiry:
+      date: 2017-11-13
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6140228A
+      google_patents: https://patents.google.com/patent/US6140228A/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: US6756302B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2004-06-29
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6756302B1
+      google_patents: https://patents.google.com/patent/US6756302B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US6140228A (record page not fetched)
+  relevance:
+  - target: step-112
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns metal deposition in a cold seed step followed
+      by slow and rapid hot deposition steps to fill vias, and it is not evidence that the technique is
+      used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"),
+    priority before 2006-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6140228A/en
 - id: GP25536403
   family:
     source: Google Patents family ID
@@ -13073,6 +13365,67 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-LPCVD-SONY.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5800616A/en
+- id: GP34632364
+  family:
+    source: Google Patents family ID
+    google_family_id: '34632364'
+  representative: US6906421B1
+  title: Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising
+    the same
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Ende Shan
+  - Gorley Lau
+  - Anthony Chung
+  dates:
+    priority: 1998-01-14
+    filing: 1998-01-14
+    grant: 2005-06-14
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6906421B1, retrieved 2026-09-14
+  expiry:
+    date: 2019-08-31
+    estimated: true
+    basis: 'all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6906421B1 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US6906421B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2005-06-14
+    title: Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising
+      the same
+    application_number: US09/006,958
+    filing_date: 1998-01-14
+    status: Expired - Lifetime
+    expiry:
+      date: 2019-08-31
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6906421B1
+      google_patents: https://patents.google.com/patent/US6906421B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-101
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a titanium-containing local interconnect on a
+      thin barrier layer over oxide, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"),
+    priority before 2006-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6906421B1/en
 - id: GP21950172
   family:
     source: Google Patents family ID
@@ -13623,6 +13976,70 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-DUMMY-UMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6214745B1/en
+- id: GP33449343
+  family:
+    source: Google Patents family ID
+    google_family_id: '33449343'
+  representative: US6825544B1
+  title: Method for shallow trench isolation and shallow trench isolation structure
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Bo Jin
+  dates:
+    priority: 1998-12-09
+    filing: 1998-12-09
+    grant: 2004-11-30
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6825544B1, retrieved 2026-09-14
+  expiry:
+    date: 2018-12-09
+    estimated: true
+    basis: 'all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6825544B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US6825544B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2004-11-30
+    title: Method for shallow trench isolation and shallow trench isolation structure
+    application_number: US09/207,713
+    filing_date: 1998-12-09
+    status: Expired - Lifetime
+    expiry:
+      date: 2018-12-09
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6825544B1
+      google_patents: https://patents.google.com/patent/US6825544B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-006
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns rounding the silicon edges of a shallow trench
+      with a sacrificial oxidation before the trench etch, and it is not evidence that the technique is
+      used in SKY130.
+  - target: step-010
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns rounding the silicon edges of a shallow trench
+      with a sacrificial oxidation before the trench etch, and it is not evidence that the technique is
+      used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority
+    before 2010-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6825544B1/en
 - id: GP26812562
   family:
     source: Google Patents family ID
@@ -14337,6 +14754,110 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-IMP-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6350353B2/en
+- id: GP23892778
+  family:
+    source: Google Patents family ID
+    google_family_id: '23892778'
+  representative: US6969448B1
+  title: Method for forming a metallization structure in an integrated circuit
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Gorley L. Lau
+  dates:
+    priority: 1999-12-30
+    filing: 1999-12-30
+    grant: 2005-11-29
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6969448B1, retrieved 2026-09-14
+  expiry:
+    date: 2022-03-25
+    estimated: true
+    basis: 'all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6969448B1 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US6969448B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2005-11-29
+    title: Method for forming a metallization structure in an integrated circuit
+    application_number: US09/476,669
+    filing_date: 1999-12-30
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-03-25
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6969448B1
+      google_patents: https://patents.google.com/patent/US6969448B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  - number: JP2001210647A
+    country: JP
+    kind: A
+    document_type: application
+    publication_date: 2001-08-03
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001210647A
+      google_patents: https://patents.google.com/patent/JP2001210647A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US6969448B1 (record page not fetched)
+  - number: KR20010067391A
+    country: KR
+    kind: A
+    document_type: application
+    publication_date: 2001-07-12
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR20010067391A
+      google_patents: https://patents.google.com/patent/KR20010067391A/en
+    verified: 2026-09-14 listed in the Google Patents family table of US6969448B1 (record page not fetched)
+  - number: KR100748144B1
+    country: KR
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2007-08-09
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DKR100748144B1
+      google_patents: https://patents.google.com/patent/KR100748144B1/en
+    verified: 2026-09-14 listed in the Google Patents family table of US6969448B1 (record page not fetched)
+  - number: TW540136B
+    country: TW
+    kind: B
+    document_type: granted-patent
+    publication_date: 2003-07-01
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DTW540136B
+      google_patents: https://patents.google.com/patent/TW540136B/en
+    verified: 2026-09-14 listed in the Google Patents family table of US6969448B1 (record page not fetched)
+  relevance:
+  - target: step-112
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a titanium wetting layer deposited by ion metal
+      plasma followed by sputtered bulk metal filling a cavity in one chamber, and it is not evidence
+      that the technique is used in SKY130.
+  - target: machine-pvd-cluster-tool
+    relation: technique-class
+    reason: The patent describes an ionised-metal-plasma titanium wetting layer and a sputtered bulk metal
+      fill in one deposition chamber; it is listed as an example of the technique class, not as evidence
+      of SKY130 practice.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  - citing-seed
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"),
+    priority before 2006-01-01 (retrieved 2026-09-14); cites US5108570A (Google Patents citation tables).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6969448B1/en
 - id: GP24331908
   family:
     source: Google Patents family ID
@@ -14683,6 +15204,66 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-SPE-AMD.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6521502B1/en
+- id: GP33418789
+  family:
+    source: Google Patents family ID
+    google_family_id: '33418789'
+  representative: US6817903B1
+  title: Process for reducing leakage in an integrated circuit with shallow trench isolated active areas
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Krishnaswamy Ramkumar
+  - Kaichiu Wong
+  - Venuka Jayatilaka
+  dates:
+    priority: 2000-08-09
+    filing: 2000-08-09
+    grant: 2004-11-16
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6817903B1, retrieved 2026-09-14
+  expiry:
+    date: 2021-01-15
+    estimated: true
+    basis: 'all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6817903B1 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US6817903B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2004-11-16
+    title: Process for reducing leakage in an integrated circuit with shallow trench isolated active areas
+    application_number: US09/635,507
+    filing_date: 2000-08-09
+    status: Expired - Lifetime
+    expiry:
+      date: 2021-01-15
+      estimated: true
+      basis: Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6817903B1
+      google_patents: https://patents.google.com/patent/US6817903B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-010
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns reducing leakage between shallow-trench-isolated
+      active areas through the trench liner oxidation and fill, and it is not evidence that the technique
+      is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority
+    before 2010-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6817903B1/en
 - id: GP24577983
   family:
     source: Google Patents family ID
@@ -15325,6 +15906,64 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-SPIKE-IBM.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6518136B2/en
+- id: GP25130177
+  family:
+    source: Google Patents family ID
+    google_family_id: '25130177'
+  representative: US6593208B1
+  title: Method of uniform polish in shallow trench isolation process
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Bo Jin
+  dates:
+    priority: 2001-02-14
+    filing: 2001-02-14
+    grant: 2003-07-15
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6593208B1, retrieved 2026-09-14
+  expiry:
+    date: 2021-02-14
+    estimated: true
+    basis: 'all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6593208B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US6593208B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2003-07-15
+    title: Method of uniform polish in shallow trench isolation process
+    application_number: US09/783,716
+    filing_date: 2001-02-14
+    status: Expired - Lifetime
+    expiry:
+      date: 2021-02-14
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6593208B1
+      google_patents: https://patents.google.com/patent/US6593208B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-012
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns shallow trench isolation whose final thickness
+      does not depend on chemical-mechanical polishing non-uniformity, and it is not evidence that the
+      technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority
+    before 2010-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6593208B1/en
 - id: GP28675849
   family:
     source: Google Patents family ID
@@ -17846,6 +18485,73 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-NH4CL-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US20040069224A1/en
+- id: GP32823623
+  family:
+    source: Google Patents family ID
+    google_family_id: '32823623'
+  representative: US6774033B1
+  title: Metal stack for local interconnect layer
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Hd Silicon Solutions LLC
+  inventors:
+  - Mira Ben-Tzur
+  - Dafna Beery
+  - Gorley L. Lau
+  - Krishnaswamy Ramkumar
+  dates:
+    priority: 2002-11-04
+    filing: 2002-11-04
+    grant: 2004-08-10
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6774033B1, retrieved 2026-09-14
+  expiry:
+    date: 2022-11-04
+    estimated: true
+    basis: 'all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6774033B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US6774033B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2004-08-10
+    title: Metal stack for local interconnect layer
+    application_number: US10/287,258
+    filing_date: 2002-11-04
+    status: Expired - Lifetime
+    expiry:
+      date: 2022-11-04
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6774033B1
+      google_patents: https://patents.google.com/patent/US6774033B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-101
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a local-interconnect stack of sputtered titanium
+      nitride and tungsten, the tungsten etched with the nitride as etch stop, and it is not evidence
+      that the technique is used in SKY130.
+  - target: step-103
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a local-interconnect stack of sputtered titanium
+      nitride and tungsten, the tungsten etched with the nitride as etch stop, and it is not evidence
+      that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"),
+    priority before 2006-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6774033B1/en
 - id: GP32593189
   family:
     source: Google Patents family ID
@@ -17913,6 +18619,64 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-FUSE-TSMC.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6835642B2/en
+- id: GP32681640
+  family:
+    source: Google Patents family ID
+    google_family_id: '32681640'
+  representative: US6764890B1
+  title: Method of adjusting the threshold voltage of a mosfet
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Monterey Research LLC
+  inventors:
+  - Yanzhong Xu
+  dates:
+    priority: 2003-01-29
+    filing: 2003-01-29
+    grant: 2004-07-20
+  legal_status:
+    status: Expired - Lifetime
+    source: Google Patents (IFI Claims) status of US6764890B1, retrieved 2026-09-14
+  expiry:
+    date: 2023-01-29
+    estimated: true
+    basis: 'all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US6764890B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
+  members:
+  - number: US6764890B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: 2004-07-20
+    title: Method of adjusting the threshold voltage of a mosfet
+    application_number: US10/353,553
+    filing_date: 2003-01-29
+    status: Expired - Lifetime
+    expiry:
+      date: 2023-01-29
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6764890B1
+      google_patents: https://patents.google.com/patent/US6764890B1/en
+    verified: 2026-09-14 Google Patents record page fetched
+  relevance:
+  - target: step-014
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a threshold-adjust implant through a resist mask
+      of chosen thickness that also forms a well elsewhere, and it is not evidence that the technique
+      is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority
+    before 2010-01-01 (retrieved 2026-09-14).
+  verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6764890B1/en
 - id: GP32990685
   family:
     source: Google Patents family ID
