@@ -7,6 +7,668 @@ schema_version: 1
 retrieved: 2026-09-14
 filings:
 
+- id: cypress-annual-report-fy2003
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report (with Form 10-K)
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2003 Annual Report, including the Form 10-K for the fiscal year ended 2003-12-28
+  period:
+    label: fiscal year 2003
+    start: null
+    end: 2003-12-28
+  filed: 2004-02-27
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2003
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2003.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2003.pdf
+  about:
+    summary: >-
+      Cypress's 2003 annual report. It names its two sub-micron fabs (Fab 2 in
+      Texas, Fab 4 in Minnesota), lists the CMOS, BiCMOS and 0.35 µm SONOS
+      processes they run, says 0.13 µm and 0.15 µm CMOS were about 65 % of Fab
+      4's output in 2003, and describes a 0.13 µm silicon-on-insulator
+      development programme with Honeywell in Fab 4.
+    quotes:
+    - text: In 2003 these processes accounted for approximately 65% of the output of Fab 4.
+      location: Form 10-K, Item 1, Manufacturing
+    - text: >-
+        Fab 2, located in Texas and Fab 4, located in Minnesota. These
+        fabrication facilities utilize our proprietary 0.13 through 0.8-micron
+        CMOS, 0.25 and 0.8-micron BiCMOS, and 0.35-micron Silicon Nitride Oxide
+        Silicon (SONOS) processes.
+      location: Form 10-K, Item 1, Manufacturing
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2003
+    date: 2004-02-27
+    quote: /s/ PricewaterhouseCoopers LLP San Jose, California February 27, 2004
+  relationships:
+  - cypress-fab-operations
+  - cypress-process-technology
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report dates the 0.13 µm ramp in Fab 4 that the overview's history cites from the 2003 10-Q/A.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (file names
+    NASDAQ_CY_2002 to NASDAQ_CY_2018 answer; 2019 does not), probed after
+    the inventory's 2004 entry (CYP-08).
+  verified: 2026-09-14 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number of the 10-K were not
+    retrieved; filed gives the date of the auditor's report printed in the
+    copy, so the document was published on or after it.
+
+- id: cypress-annual-report-fy2004
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report (with Form 10-K)
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2004 Annual Report, including the Form 10-K for the fiscal year ended 2005-01-02
+  period:
+    label: fiscal year 2004
+    start: null
+    end: 2005-01-02
+  filed: 2005-03-18
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2004
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2004.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2004.pdf
+  about:
+    summary: >-
+      Cypress's 2004 annual report (inventory CYP-08). It says 90 nm
+      technology is in production at the Minnesota facility, lists the fabs'
+      CMOS, BiCMOS and SONOS processes, and says an image sensor was made in
+      Fab 4 in Bloomington.
+    quotes:
+    - text: Our 90-nanometer technology is now in production at our Minnesota facility.
+      location: Form 10-K, Item 1, Research and development
+    - text: >-
+        The Belgian team has already produced a working image sensor in
+        Cypress's Fab 4 wafer fabrication plant in Bloomington, Minn.
+      location: Letter to shareholders
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2004
+    date: 2005-03-17
+    quote: /s/ PricewaterhouseCoopers LLP San Jose, California March 17, 2005
+  relationships:
+  - cypress-fab-operations
+  - cypress-process-technology
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report places Cypress's 90 nm production in the Minnesota fab whose history the overview gives.
+  inventory_key: CYP-08
+  discovery:
+  - inventory-seed
+  - annualreports-com
+  discovery_note: >-
+    Inventory entry CYP-08 (annualreports.com copy). A Wayback capture of
+    the PDF (2024-06-18) exists but is truncated and does not parse.
+  verified: 2026-09-14 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number of the 10-K were not
+    retrieved; filed gives the date of the 10-K signatures printed in the
+    copy.
+
+- id: cypress-annual-report-fy2006
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report (with Form 10-K and proxy statement)
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2006 Annual Report and 2007 Proxy Statement, including the Form 10-K for the fiscal year ended 2006-12-31
+  period:
+    label: fiscal year 2006
+    start: null
+    end: 2006-12-31
+  filed: 2007-03-28
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2006
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2006.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2006.pdf
+  about:
+    summary: >-
+      Cypress's 2006 annual report. The shareholder letter says 0.35 µm
+      production moved to Grace Semiconductor in Shanghai, freeing Fab 4 in
+      Minnesota for 90 nm technologies; the 10-K lists the 90 nm to 0.8 µm
+      CMOS, BiCMOS and 0.35 µm SONOS processes of the Round Rock and
+      Bloomington fabs.
+    quotes:
+    - text: >-
+        Grace Semiconductor Manufacturing Corp. (GSMC) in Shanghai to produce
+        0.35-micron wafers, freeing up capacity in our Minnesota Fab 4 plant
+      location: Letter to shareholders
+    - text: >-
+        These fabrication facilities utilize our proprietary 90-nanometer and
+        0.13 through 0.8-micron CMOS, 0.25 and 0.8-micron BiCMOS, and
+        0.35-micron Silicon Nitride Oxide Silicon ("SONOS") processes.
+      location: Form 10-K, Item 1, Manufacturing
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2006
+    date: 2007-03-01
+    quote: /s/ PricewaterhouseCoopers LLP San Jose, California March 1, 2007
+  relationships:
+  - cypress-fab-operations
+  - cypress-process-technology
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report records moving 0.35 µm wafer production to an outside foundry to free the Minnesota fab for 90 nm technologies.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: annualreports.com archive of Cypress annual reports (NASDAQ_CY_2006).
+  verified: 2026-09-14 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing dates and accession numbers were not retrieved; filed
+    gives the latest date printed in the combined document (the proxy
+    statement's), so the copy was published on or after it.
+
+- id: cypress-10-k-2008-03-03
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Annual report on Form 10-K for the fiscal year ended 2007-12-30
+  period:
+    label: fiscal year 2007
+    start: null
+    end: 2007-12-30
+  filed: 2008-03-03
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001047469-08-002122
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/791915/000104746908002122/a2182468z10-k.htm
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2007.pdf
+  about:
+    summary: >-
+      Cypress's fiscal 2007 10-K (inventory CYP-09), read in the 2007 annual
+      report that wraps it. It records the plan to exit the Texas fab and move
+      production to Minnesota and outside foundries, and the transfers of the
+      0.35 µm SONOS (2006) and 0.13 µm SRAM and logic (2007) processes to
+      Grace Semiconductor.
+    quotes:
+    - text: >-
+        In December 2007, Cypress's Board of Directors approved a plan to exit
+        its manufacturing facility in Texas and transfer production to its more
+        cost-competitive facility in Minnesota and outside foundries.
+      location: Item 1, Manufacturing
+    - text: During fiscal 2006, Cypress completed the transfer of its 0.35-micron SONOS process to Grace
+      location: Item 1, Manufacturing
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2007
+    date: 2008-03-02
+    quote: /s/ PricewaterhouseCoopers LLP
+  relationships:
+  - cypress-fab-operations
+  - cypress-process-technology
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report explains why production was concentrated in the Minnesota fab from 2008.
+  inventory_key: CYP-09
+  discovery:
+  - inventory-seed
+  - edgar-listing-wayback
+  - annualreports-com
+  discovery_note: >-
+    Inventory entry CYP-09; filing date from the Wayback capture
+    (2017-05-08) of Cypress's EDGAR 10-K/10-Q list; the EDGAR document has
+    no Wayback capture, so it was read in the annualreports.com copy of the
+    2007 annual report (NASDAQ_CY_2007), which contains the 10-K.
+  verified: 2026-09-14 annualreports.com PDF fetched; quotes checked
+
+- id: cypress-10-k-2016-03-02
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Annual report on Form 10-K for the fiscal year ended 2016-01-03
+  period:
+    label: fiscal year 2015
+    start: null
+    end: 2016-01-03
+  filed: 2016-03-02
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001564590-16-013820
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/791915/000156459016013820/cy-10k_20160103.htm
+    wayback: https://web.archive.org/web/20160314155334/https://www.sec.gov/Archives/edgar/data/791915/000156459016013820/cy-10k_20160103.htm
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2015.pdf
+  about:
+    summary: >-
+      Cypress's last 10-K before the decision to sell the Minnesota fab. It
+      says about half of its products were made in its Bloomington and Austin
+      wafer fabs and lists the 337,000 square foot Bloomington property.
+    quotes:
+    - text: >-
+        We currently manufacture approximately 50% of our semiconductor
+        products at our wafer manufacturing facilities in Bloomington,
+        Minnesota and Austin, Texas.
+      location: Item 1, Manufacturing
+    - text: Bloomington, Minnesota 337,000 Manufacturing, research and development
+      location: Item 2, Properties
+  auditor_report: null
+  relationships:
+  - cypress-fab-operations
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report gives the size and role of the Minnesota fab shortly before its sale.
+  inventory_key: null
+  discovery:
+  - edgar-listing-wayback
+  - wayback-cdx
+  discovery_note: >-
+    Listed in the Wayback capture (2017-05-08) of Cypress's EDGAR 10-K/10-Q
+    list; document found through a CDX listing of its folder.
+  verified: 2026-09-14 Wayback capture 20160314155334 of the EDGAR document fetched; quotes checked
+
+- id: cypress-10-k-2017-03-01
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Annual report on Form 10-K for the fiscal year ended 2017-01-01
+  period:
+    label: fiscal year 2016
+    start: null
+    end: 2017-01-01
+  filed: 2017-03-01
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0000791915-17-000007
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/791915/000079191517000007/cy-01012017x10xk.htm
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2016.pdf
+  about:
+    summary: >-
+      Cypress's fiscal 2016 10-K (inventory CYP-10), read in the 2016 annual
+      report that wraps it. It records the 2016 plan to sell the Bloomington
+      fab, the completed sale in March 2017, and the purchaser's intention to
+      run it as a stand-alone foundry for Cypress and others.
+    quotes:
+    - text: >-
+        The purchaser intends to operate the fab as a stand-alone business that
+        will manufacture wafers for Cypress and for other semiconductor
+        manufacturers.
+      location: Item 1A, Risk factors
+    - text: >-
+        During fiscal 2016, we committed to a plan to sell our wafer
+        manufacturing facility located in Bloomington, Minnesota
+      location: Item 7, Management's discussion and analysis
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2016
+    date: 2017-03-01
+    quote: /s/ PricewaterhouseCoopers LLP San Jose, California March 1, 2017
+  relationships:
+  - cypress-fab-sale
+  - cypress-fab-operations
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report is Cypress's own account of the 2017 sale that the overview cites from the press release CYP-01.
+  inventory_key: CYP-10
+  discovery:
+  - inventory-seed
+  - edgar-listing-wayback
+  - annualreports-com
+  discovery_note: >-
+    Inventory entry CYP-10; accession and filing date confirmed in the
+    Wayback capture (2017-05-08) of Cypress's EDGAR 10-K/10-Q list; the EDGAR
+    document has no Wayback capture, so it was read in the annualreports.com
+    copy of the 2016 annual report (NASDAQ_CY_2016), which contains the 10-K.
+  verified: 2026-09-14 annualreports.com PDF fetched; quotes checked
+
+- id: cypress-10-q-2017-05-02
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: 10-Q
+  document_type: quarterly-report
+  parent: null
+  title: Quarterly report on Form 10-Q for the quarter ended 2017-04-02
+  period:
+    label: first quarter of fiscal 2017
+    start: null
+    end: 2017-04-02
+  filed: 2017-05-02
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0000791915-17-000030
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/791915/000079191517000030/cy-04022017x10xq.htm
+    wayback: https://web.archive.org/web/20170503100919/https://www.sec.gov/Archives/edgar/data/791915/000079191517000030/cy-04022017x10xq.htm
+    ir: null
+  about:
+    summary: >-
+      The quarterly report for the quarter in which the Minnesota fab was sold;
+      it reports the sale as completed with a small gain against the 2016
+      impairment.
+    quotes:
+    - text: >-
+        The sales of the wafer fabrication facility in Minnesota and the sale of
+        the building in Austin were completed during the first quarter of
+        fiscal 2017.
+      location: Notes to the condensed consolidated financial statements, assets held for sale
+    - text: >-
+        In the third quarter of fiscal 2016, the Company committed to a plan to
+        sell its wafer manufacturing facility located in Bloomington, Minnesota
+      location: Notes to the condensed consolidated financial statements, assets held for sale
+  auditor_report: null
+  relationships:
+  - cypress-fab-sale
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report dates the completion of the sale that the overview cites from the press release CYP-01.
+  inventory_key: null
+  discovery:
+  - edgar-listing-wayback
+  - wayback-cdx
+  discovery_note: >-
+    Listed in the Wayback capture (2017-05-08) of Cypress's EDGAR 10-K/10-Q
+    list; document found through a CDX listing of its folder.
+  verified: 2026-09-14 Wayback capture 20170503100919 of the EDGAR document fetched; quotes checked
+
+- id: cypress-10-k-2018-02-26
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Annual report on Form 10-K for the fiscal year ended 2017-12-31
+  period:
+    label: fiscal year 2017
+    start: null
+    end: 2017-12-31
+  filed: 2018-02-26
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0000791915-18-000007
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/791915/000079191518000007/cy-12312017x10xk.htm
+    wayback: https://web.archive.org/web/20180304113258/https://www.sec.gov/Archives/edgar/data/791915/000079191518000007/cy-12312017x10xk.htm
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2017.pdf
+  about:
+    summary: >-
+      Cypress's fiscal 2017 10-K. It reports the sale of the Minnesota fab
+      subsidiary (headed "Sale of CMI") for gross proceeds of $30.5 million
+      and repeats that the purchaser makes wafers for Cypress and others.
+    quotes:
+    - text: >-
+        In fiscal 2017, we completed the sale of our wafer fabrication facility
+        in Minnesota for gross proceeds from the sale of $30.5 million.
+      location: Item 7, Management's discussion and analysis, Sale of CMI
+    - text: >-
+        The purchaser intends to operate the fabrication facility as a
+        stand-alone business that will manufacture wafers for Cypress and for
+        other semiconductor manufacturers.
+      location: Item 1A, Risk factors
+  auditor_report: null
+  relationships:
+  - cypress-fab-sale
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report gives Cypress's proceeds from the sale of the fab whose history the overview gives.
+  inventory_key: null
+  discovery:
+  - wayback-cdx
+  - edgar-listing-wayback
+  discovery_note: >-
+    Found through a CDX listing of Cypress's 2018 EDGAR folders; filing date
+    from the Wayback capture (2019-03-01) of Cypress's EDGAR filing list
+    (XML output).
+  verified: 2026-09-14 Wayback capture 20180304113258 of the EDGAR document fetched; quotes checked
+
+- id: cypress-10-k-2019-02-27
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Annual report on Form 10-K for the fiscal year ended 2018-12-30
+  period:
+    label: fiscal year 2018
+    start: null
+    end: 2018-12-30
+  filed: 2019-02-27
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0000791915-19-000006
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/791915/000079191519000006/0000791915-19-000006-index.htm
+    wayback: https://web.archive.org/web/20190228130230/https://www.sec.gov/Archives/edgar/data/791915/000079191519000006/0000791915-19-000006-index.htm
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2018.pdf
+  about:
+    summary: >-
+      Cypress's fiscal 2018 10-K. It says Cypress still buys manufacturing
+      services from the Bloomington fab it divested in March 2017 and reports
+      the "Sale of Cypress Minnesota Incorporated".
+    quotes:
+    - text: >-
+        In March 2017, we divested a wafer fabrication facility (commonly called
+        a fab or foundry) located in Bloomington, Minnesota, which reduced our
+        internal manufacturing capacity though we continue to outsource
+        manufacturing services from this facility.
+      location: Item 1, Manufacturing
+    - text: >-
+        Sale of Cypress Minnesota Incorporated In fiscal 2017, we completed the
+        sale of our wafer fabrication facility in Minnesota for gross proceeds
+        of $30.5 million.
+      location: Item 7, Management's discussion and analysis
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2018
+    date: 2019-02-27
+    quote: /s/ PricewaterhouseCoopers LLP San Jose, California February 27, 2019
+  relationships:
+  - cypress-fab-sale
+  - cypress-foundry-services
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report confirms that Cypress remained a customer of the fab after the sale.
+  inventory_key: null
+  discovery:
+  - edgar-listing-wayback
+  - annualreports-com
+  discovery_note: >-
+    Filing index page captured by the Wayback Machine (2019-02-28) and
+    listed in the 2019-03-01 capture of Cypress's EDGAR filing list; the
+    primary document has no capture, so it was read in the annualreports.com
+    copy (NASDAQ_CY_2018), which reproduces the 10-K.
+  verified: 2026-09-14 annualreports.com PDF fetched; quotes checked
+
+- id: infineon-annual-report-fy2019
+  company: Infineon Technologies AG
+  company_key: infineon
+  form: Annual Report
+  document_type: annual-report
+  parent: null
+  title: Infineon Technologies Annual Report 2019
+  period:
+    label: fiscal year 2019 (1 October 2018 to 30 September 2019)
+    start: 2018-10-01
+    end: 2019-09-30
+  filed: 2019-11-22
+  jurisdiction: DE
+  regulator: BaFin
+  identifier: null
+  urls:
+    original: https://www.infineon.com/assets/row/public/documents/corporate/investors/annual-reports/2019/infineon-annual-report-report-v09-00-en.pdf
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Infineon's first annual report after agreeing to acquire Cypress. The
+      management's letter calls the planned acquisition the most significant
+      event of the year, and the strategy section introduces Cypress as a
+      company founded in 1982 in San José.
+    quotes:
+    - text: the most significant event is the planned acquisition of Cypress
+      location: Letter from the Management Board
+    - text: Cypress Semiconductor Corporation was founded in 1982 in San José (USA)
+      location: Business focus and strategy
+  auditor_report: null
+  relationships:
+  - infineon-cypress-acquisition
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report documents Infineon becoming the successor to Cypress, which SkyWater's filings name as the origin of the S130 IP.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: Infineon investor-relations annual reports page (reports-presentations/annual-reports), retrieved 2026-09-14.
+  verified: 2026-09-14 Infineon investor-relations PDF fetched; quotes checked
+  notes: >-
+    filed gives the latest signature date printed in the report (the
+    responsibility statement, Neubiberg, 22 November 2019); the publication
+    date was not retrieved.
+
+- id: cypress-8-k-2020-04-16
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: 8-K
+  document_type: current-report
+  parent: null
+  title: 'Current report: completion of the merger with IFX Merger Sub (Infineon)'
+  period:
+    label: event of 2020-04-16
+    start: null
+    end: 2020-04-16
+  filed: 2020-04-16
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001104659-20-047540
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/791915/000110465920047540/0001104659-20-047540-index.htm
+    wayback: https://web.archive.org/web/20250414174141/https://www.sec.gov/Archives/edgar/data/791915/000110465920047540/0001104659-20-047540-index.htm
+    ir: https://www.infineon.com/assets/row/public/documents/corporate/investors/infineon-8k-cypress-legaldocument-v50-00-en.pdf
+  about:
+    summary: >-
+      Cypress's current report on the closing of its acquisition by Infineon
+      on 2020-04-16, including the termination of its credit agreement and
+      employee stock purchase plan; Infineon hosts a copy on its investor
+      site.
+    quotes:
+    - text: On the Closing Date, Infineon completed the acquisition of Cypress through the Merger.
+      location: Item 2.01
+    - text: 'Date of Report (Date of the earliest event reported): April 16, 2020'
+      location: Cover page
+  auditor_report: null
+  relationships:
+  - infineon-cypress-acquisition
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The filing dates the change of ownership of the Cypress process IP that SkyWater licenses.
+  inventory_key: null
+  discovery:
+  - wayback-cdx
+  - web-search
+  discovery_note: >-
+    Filing index page found through a Wayback CDX listing of Cypress's
+    EDGAR folders (form and date read from it); the Infineon-hosted copy was
+    found by a web search and fetched.
+  verified: 2026-09-14 Wayback capture 20250414174141 of the EDGAR index page and the Infineon-hosted copy fetched; quotes checked
+
+- id: infineon-annual-report-fy2020
+  company: Infineon Technologies AG
+  company_key: infineon
+  form: Annual Report
+  document_type: annual-report
+  parent: null
+  title: Infineon Technologies Annual Report 2020
+  period:
+    label: fiscal year 2020 (1 October 2019 to 30 September 2020)
+    start: 2019-10-01
+    end: 2020-09-30
+  filed: 2020-11-20
+  jurisdiction: DE
+  regulator: BaFin
+  identifier: null
+  urls:
+    original: https://www.infineon.com/assets/row/public/documents/corporate/investors/annual-reports/2020/infineon-annual-report-report-v10-00-en.pdf
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Infineon's annual report for the year in which the Cypress acquisition
+      closed (2020-04-16); it describes the integration of Cypress's
+      manufacturing sites, with Austin, Texas as the front-end site.
+    quotes:
+    - text: The acquisition of Cypress was completed on 16 April 2020.
+      location: Combined management report
+    - text: >-
+        Infineon integrated the Cypress sites into its manufacturing landscape:
+        Austin (Texas, USA)
+      location: Combined management report, manufacturing
+  auditor_report: null
+  relationships:
+  - infineon-cypress-acquisition
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report shows the Austin fab passing to Infineon, five years before SkyWater bought it.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  - web-search
+  discovery_note: Infineon investor-relations annual reports page, retrieved 2026-09-14; also returned by a web search.
+  verified: 2026-09-14 Infineon investor-relations PDF fetched; quotes checked
+  notes: >-
+    filed gives the signature date printed in the report (Neubiberg, 20
+    November 2020); the publication date was not retrieved.
+
 - id: skywater-s-1-2021-03-22
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -256,6 +918,54 @@ filings:
     page was captured).
   verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
 
+- id: d-wave-s-4-2022-03-15
+  company: D-Wave Quantum Inc.
+  company_key: d-wave
+  form: S-4
+  document_type: registration-statement
+  parent: null
+  title: Form S-4 registration statement for the business combination of D-Wave Systems and DPCM Capital
+  period: null
+  filed: 2022-03-15
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: ir-filing-id
+    value: '15660313'
+  urls:
+    original: https://ir.dwavequantum.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=15660313
+    wayback: null
+    ir: https://d18rn0p25nwr6d.cloudfront.net/CIK-0001907982/ab041b6c-cbb7-46ac-ad70-9bb9e2d6754e.pdf
+  about:
+    summary: >-
+      D-Wave's registration statement for its listing. The filing includes an
+      amendment to its 2012 Agreement for Semiconductor Line Operation that
+      records Cypress's assignment of the agreement to SkyWater Technology
+      Foundry in 2017.
+    quotes:
+    - text: >-
+        On September 30, 2017, Cypress assigned the 2012 Agreement to SkyWater
+        Technology Foundry, Inc. ("SkyWater"), which assignment D-Wave consented
+        to on November 9, 2017
+      location: Exhibit, amendment to the Agreement for Semiconductor Line Operation (recitals)
+  auditor_report: null
+  relationships:
+  - customer-names-skywater
+  - cypress-third-party-foundry
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The agreement shows a Cypress wafer-line contract with an outside customer passing to SkyWater after the 2017 sale.
+  inventory_key: null
+  discovery:
+  - web-search
+  - ir-archive
+  discovery_note: >-
+    SkyWater's 10-K for fiscal 2021 names D-Wave as a customer; D-Wave's
+    investor-relations SEC filings feed (filing id 15660313) lists the S-4.
+    Accession number not retrieved.
+  verified: 2026-09-14 investor-relations PDF copy fetched; quote checked
+
 - id: skywater-8-k-2022-04-04
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -363,6 +1073,60 @@ filings:
     filing list; document found through a CDX listing of its folder.
   verified: 2026-09-14 Wayback capture 20250403124257 of the EDGAR document fetched; quotes checked
 
+- id: d-wave-8-k-2023-03-03
+  company: D-Wave Quantum Inc.
+  company_key: d-wave
+  form: 8-K
+  document_type: current-report
+  parent: null
+  title: 'Current report: Thirteenth Amendment to the Agreement for Semiconductor Line Operation with SkyWater Technology Foundry'
+  period:
+    label: event of 2023-03-01
+    start: null
+    end: 2023-03-01
+  filed: 2023-03-03
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: ir-filing-id
+    value: '16461334'
+  urls:
+    original: https://ir.dwavequantum.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=16461334
+    wayback: null
+    ir: https://d18rn0p25nwr6d.cloudfront.net/CIK-0001907982/50391077-e63b-41de-b592-5e0f37ea99fe.pdf
+  about:
+    summary: >-
+      D-Wave files the Thirteenth Amendment (2023-03-01) to its 2012
+      semiconductor line operation agreement, originally with Cypress and
+      assigned to SkyWater Technology Foundry, revising SkyWater's activity
+      billing rates.
+    quotes:
+    - text: >-
+        Thirteenth Amendment, dated March 1, 2023, between D-Wave Systems Inc.
+        and SkyWater Technology Foundry, Inc. to the Agreement for
+        Semiconductor Line Operation, dated as of December 23, 2012, by and
+        between Cypress Semiconductor Corporation and D-Wave Systems Inc.
+      location: Item 9.01, exhibit 10.1
+    - text: to address the SkyWater's revised Activity Billing rates as of January 2022
+      location: Exhibit 10.1, recitals
+  auditor_report: null
+  relationships:
+  - customer-names-skywater
+  - cypress-third-party-foundry
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The exhibit is a public contract between SkyWater and a foundry customer inherited from Cypress.
+  inventory_key: null
+  discovery:
+  - web-search
+  - ir-archive
+  discovery_note: >-
+    A web search returned a third-party EDGAR mirror of the exhibit; the
+    filing was then located in D-Wave's investor-relations SEC filings feed
+    (filing id 16461334) and fetched there.
+  verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
+
 - id: skywater-10-k-2023-03-15
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -421,6 +1185,101 @@ filings:
     filing list; document found through a CDX listing of its folder.
   verified: 2026-09-14 Wayback capture 20230329202011 of the EDGAR document fetched; quotes checked
 
+- id: d-wave-10-k-2023-04-18
+  company: D-Wave Quantum Inc.
+  company_key: d-wave
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Annual report on Form 10-K for the fiscal year ended 2022-12-31
+  period:
+    label: fiscal year 2022
+    start: null
+    end: 2022-12-31
+  filed: 2023-04-18
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: ir-filing-id
+    value: '16570514'
+  urls:
+    original: https://ir.dwavequantum.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=16570514
+    wayback: null
+    ir: https://d18rn0p25nwr6d.cloudfront.net/CIK-0001907982/f08a6a0c-2ea5-4a3f-bda0-4eb7769ed224.pdf
+  about:
+    summary: >-
+      D-Wave's first 10-K. Its "Operation Agreements" section describes a 2006
+      agreement to buy capacity on a Cypress 8-inch wafer pilot line, the 2012
+      Semiconductor Line Operation Agreement, and Cypress's 2017 assignment of
+      that agreement to SkyWater Technology Foundry.
+    quotes:
+    - text: >-
+        On July 31, 2006, we entered into an agreement with Cypress
+        Semiconductor Corporation ("Cypress") for the purchase of available
+        capacity of Cypress' 8" wafer pilot line
+      location: Management's discussion and analysis, Operation Agreements
+    - text: >-
+        On September 30, 2017, Cypress assigned the Semiconductor Line Operation
+        Agreement to SkyWater Technology Foundry, Inc., to which we consented on
+        November 9, 2017.
+      location: Management's discussion and analysis, Operation Agreements
+  auditor_report: null
+  relationships:
+  - customer-names-skywater
+  - cypress-third-party-foundry
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report shows Cypress selling wafer-line capacity to an outside customer from 2006, before the fab became a foundry.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: D-Wave investor-relations SEC filings feed (filing id 16570514). Accession number not retrieved.
+  verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
+
+- id: weebit-nano-announcement-2023-06-29
+  company: Weebit Nano Limited
+  company_key: weebit-nano
+  form: ASX announcement
+  document_type: market-announcement
+  parent: null
+  title: WBT's ReRAM IP now fully qualified in SkyWater S130 process
+  period: null
+  filed: 2023-06-29
+  jurisdiction: AU
+  regulator: ASX
+  identifier: null
+  urls:
+    original: https://investors.weebit-nano.com/site/pdf/d613063e-b334-434d-b33a-d120ca071bd9/WBTs-ReRAM-IP-now-fully-qualified-in-SkyWater-S130-process.pdf
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Weebit Nano's market announcement, issued jointly with SkyWater, that
+      its ReRAM IP was fully qualified for industrial temperatures in
+      SkyWater's 130 nm CMOS (S130) process, using demo chips SkyWater
+      produced.
+    quotes:
+    - text: >-
+        confirm Weebit Resistive Random-Access Memory (ReRAM) IP has been fully
+        qualified for industrial temperatures employing SkyWater's 130nm CMOS
+        (S130) process
+      location: First paragraph
+    - text: The qualification used demo chips produced by SkyWater which integrate Weebit ReRAM IP.
+      location: Second paragraph
+  auditor_report: null
+  relationships:
+  - partner-names-skywater
+  related_docs:
+  - label: overview-sky130b-reram
+    relation: context
+    reason: The announcement is the partner's own record of qualifying its ReRAM in the S130 process that the ReRAM page discusses.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: Weebit Nano website ASX announcements archive (WordPress search API, post 13905), retrieved 2026-09-14.
+  verified: 2026-09-14 Weebit Nano investor PDF fetched; quotes checked
+
 - id: skywater-8-k-2023-08-04
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -473,6 +1332,51 @@ filings:
     Wayback capture of the EDGAR inline-XBRL viewer URL; read through the
     investor-relations PDF copy (filing id 16836821).
   verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
+
+- id: weebit-nano-annual-report-fy2023
+  company: Weebit Nano Limited
+  company_key: weebit-nano
+  form: Appendix 4E and Annual Report
+  document_type: annual-report
+  parent: null
+  title: Appendix 4E and Annual Report for the year ended 30 June 2023
+  period:
+    label: financial year ended 30 June 2023
+    start: 2022-07-01
+    end: 2023-06-30
+  filed: 2023-08-25
+  jurisdiction: AU
+  regulator: ASX
+  identifier: null
+  urls:
+    original: https://investors.weebit-nano.com/site/pdf/6036278c-d1ec-4ecf-be9c-dc8ba1e945a9/Appendix-4E-and-Annual-Report.pdf
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Weebit Nano's FY2023 annual report says its embedded ReRAM IP is
+      commercially available in SkyWater's 130 nm CMOS process, lists full
+      qualification in S130 among the year's highlights and calls SkyWater a
+      partner instrumental to its progress.
+    quotes:
+    - text: >-
+        Our proven embedded ReRAM intellectual property (IP) is now
+        commercially available in SkyWater Technology's 130nm CMOS process
+      location: Chair's and CEO's letter
+    - text: Weebit ReRAM fully qualified in SkyWater S130 process
+      location: 2022-2023 highlights
+  auditor_report: null
+  relationships:
+  - partner-names-skywater
+  related_docs:
+  - label: overview-sky130b-reram
+    relation: context
+    reason: The report describes the commercial status of the ReRAM IP offered in SkyWater's S130 process.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: Weebit Nano website ASX announcements archive (post 14125, dated 2023-08-25), retrieved 2026-09-14.
+  verified: 2026-09-14 Weebit Nano investor PDF fetched; quotes checked
 
 - id: skywater-10-k-2024-03-15
   company: SkyWater Technology, Inc.
@@ -538,6 +1442,102 @@ filings:
     Inventory entry SEC-02; Wayback CDX listing of EDGAR folder
     1819974/000181997424000008 (2026-09-14).
   verified: 2026-09-14 Wayback capture 20240323004216 of the EDGAR document fetched; quotes checked
+
+- id: d-wave-10-k-2024-03-29
+  company: D-Wave Quantum Inc.
+  company_key: d-wave
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Annual report on Form 10-K for the fiscal year ended 2023-12-31
+  period:
+    label: fiscal year 2023
+    start: null
+    end: 2023-12-31
+  filed: 2024-03-29
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: ir-filing-id
+    value: '17413336'
+  urls:
+    original: https://ir.dwavequantum.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=17413336
+    wayback: null
+    ir: https://d18rn0p25nwr6d.cloudfront.net/CIK-0001907982/eb4559fa-d0e8-4374-8651-901c2dbd7e29.pdf
+  about:
+    summary: >-
+      D-Wave's fiscal 2023 10-K, which repeats the operation-agreement history
+      and files the Fourteenth Amendment (2023-12-26) with SkyWater Technology
+      Foundry as an exhibit.
+    quotes:
+    - text: >-
+        Fourteenth Amendment, dated December 26, 2023, between D-Wave Systems
+        Inc. and SkyWater Technology Foundry, Inc. to the Agreement for
+        Semiconductor Line Operation
+      location: Item 15, exhibit 10.65
+    - text: >-
+        On September 30, 2017, Cypress assigned the Semiconductor Line Operation
+        Agreement to SkyWater Technology Foundry, Inc., to which we consented on
+        November 9, 2017.
+      location: Management's discussion and analysis, Operation Agreements
+  auditor_report: null
+  relationships:
+  - customer-names-skywater
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report keeps the SkyWater line-operation agreement inherited from Cypress on the public record.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: D-Wave investor-relations SEC filings feed (filing id 17413336). Accession number not retrieved.
+  verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
+
+- id: weebit-nano-annual-report-fy2024
+  company: Weebit Nano Limited
+  company_key: weebit-nano
+  form: Appendix 4E and Annual Report
+  document_type: annual-report
+  parent: null
+  title: Appendix 4E and 2024 Annual Report for the year ended 30 June 2024
+  period:
+    label: financial year ended 30 June 2024
+    start: 2023-07-01
+    end: 2024-06-30
+  filed: 2024-08-28
+  jurisdiction: AU
+  regulator: ASX
+  identifier: null
+  urls:
+    original: https://investors.weebit-nano.com/site/pdf/ff240513-07ab-46f3-a651-17a5cb22204b/Appendix-4E-and-2024-Annual-Report.pdf
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Weebit Nano's FY2024 annual report lists qualification at 125 °C in
+      SkyWater S130 among its highlights and says missing IP in SkyWater's
+      foundry offering delayed licensing agreements with companies wanting to
+      manufacture at SkyWater.
+    quotes:
+    - text: >-
+        Factors beyond our control, such as missing IPs in SkyWater's foundry
+        offering, have delayed licensing agreements with product companies
+        wanting to manufacture at SkyWater
+      location: Chair's and CEO's letter
+    - text: Weebit ReRAM qualified 125⁰C in SkyWater S130
+      location: Highlights
+  auditor_report: null
+  relationships:
+  - partner-names-skywater
+  related_docs:
+  - label: overview-sky130b-reram
+    relation: context
+    reason: The report gives the partner's view of adoption of the ReRAM IP in SkyWater's S130 process.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: Weebit Nano website ASX announcements archive (post 15303, dated 2024-08-28), retrieved 2026-09-14.
+  verified: 2026-09-14 Weebit Nano investor PDF fetched; quotes checked
 
 - id: skywater-8-k-2025-02-26
   company: SkyWater Technology, Inc.
@@ -821,6 +1821,57 @@ filings:
     through the investor-relations PDF copy (filing id 18775936).
   verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
 
+- id: infineon-annual-report-fy2025
+  company: Infineon Technologies AG
+  company_key: infineon
+  form: Annual Report
+  document_type: annual-report
+  parent: null
+  title: Infineon Technologies Annual Report 2025
+  period:
+    label: fiscal year 2025 (1 October 2024 to 30 September 2025)
+    start: 2024-10-01
+    end: 2025-09-30
+  filed: 2025-11-27
+  jurisdiction: DE
+  regulator: BaFin
+  identifier: null
+  urls:
+    original: https://www.infineon.com/assets/row/public/documents/corporate/investors/annual-reports/2025/2025-annual-report-v01-00-en.pdf
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Infineon's account of the sale of its 200 mm Austin fab to SkyWater on
+      2025-06-30 with a long-term supply agreement, including the €149
+      million impairment it recorded on the disposal.
+    quotes:
+    - text: >-
+        In June 2025, we sold our 200-millimeter fab in Austin (Texas, USA) to
+        the U.S.-based company SkyWater and entered into a long-term supply
+        agreement.
+      location: Letter from the Management Board
+    - text: >-
+        On 30 June 2025, the 200-millimeter fab in Austin (USA) was sold to
+        SkyWater Technology, Inc. ("SkyWater").
+      location: Notes to the consolidated financial statements, note 7
+  auditor_report: null
+  relationships:
+  - infineon-fab25-sale
+  - infineon-wafer-supply
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report is the seller's side of the 2025 transaction that joined the Austin fab to the owner of the Minnesota fab.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: Infineon investor-relations annual reports page, retrieved 2026-09-14.
+  verified: 2026-09-14 Infineon investor-relations PDF fetched; quotes checked
+  notes: >-
+    filed gives the latest signature date printed in the report (Neubiberg,
+    27 November 2025); the publication date was not retrieved.
+
 - id: skywater-8-k-2026-01-26
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -923,6 +1974,57 @@ filings:
   discovery_note: Exhibit 99.1 of the 8-K filed 2026-01-26, found in the same Wayback CDX folder listing.
   verified: 2026-09-14 Wayback capture 20260126163552 of the EDGAR document fetched; quotes checked
 
+- id: ionq-10-k-2026-02-25
+  company: IonQ, Inc.
+  company_key: ionq
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Annual report on Form 10-K for the fiscal year ended 2025-12-31
+  period:
+    label: fiscal year 2025
+    start: null
+    end: 2025-12-31
+  filed: 2026-02-25
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: ir-filing-id
+    value: '19184000'
+  urls:
+    original: https://investors.ionq.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=19184000
+    wayback: null
+    ir: https://d18rn0p25nwr6d.cloudfront.net/CIK-0001824920/b593e7b3-f252-422f-b4f0-ded524a5d58a.pdf
+  about:
+    summary: >-
+      IonQ's annual report written while the SkyWater acquisition was pending;
+      it presents the acquisition as giving IonQ embedded access to a secure
+      quantum foundry and lists its completion and integration among
+      forward-looking risks.
+    quotes:
+    - text: >-
+        we announced the currently-pending acquisition, which we refer to as the
+        SkyWater Acquisition, of SkyWater Technologies, Inc., which we refer to
+        as SkyWater
+      location: Item 1, Business
+    - text: including the pending acquisition of SkyWater Technology, Inc.
+      location: Forward-looking statements
+  auditor_report: null
+  relationships:
+  - skywater-ionq-merger
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The acquirer's annual report states why it is buying the company that runs the Minnesota fab.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: >-
+    IonQ investor-relations SEC filings feed (filing id 19184000), searched
+    after SkyWater's merger filings named IonQ. Accession number not
+    retrieved.
+  verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
+
 - id: skywater-10-k-2026-03-11
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -986,6 +2088,54 @@ filings:
     investor-relations PDF copy (filing id 19240628).
   verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
 
+- id: ionq-s-4-2026-03-20
+  company: IonQ, Inc.
+  company_key: ionq
+  form: S-4
+  document_type: registration-statement
+  parent: null
+  title: Form S-4 registration statement (proxy statement/prospectus) for the acquisition of SkyWater Technology
+  period: null
+  filed: 2026-03-20
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: ir-filing-id
+    value: '19273247'
+  urls:
+    original: https://investors.ionq.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=19273247
+    wayback: null
+    ir: https://d18rn0p25nwr6d.cloudfront.net/CIK-0001824920/5eb66363-f41e-4a4d-a84d-a80608d25100.pdf
+  about:
+    summary: >-
+      IonQ's registration statement for the shares issued to SkyWater
+      stockholders, containing the joint proxy statement/prospectus. It says
+      IonQ expects to keep SkyWater's lease of the Minnesota facility from
+      Oxbow Realty Partners and the related $39 million loan of Oxbow Realty.
+    quotes:
+    - text: >-
+        IonQ expects to retain (i) SkyWater's lease agreement for the SkyWater
+        Minnesota facility with Oxbow Realty Partners, LLC ("Oxbow Realty"), a
+        consolidated variable interest entity of SkyWater
+      location: Unaudited pro forma condensed combined financial information, notes
+    - text: >-
+        Its principal executive offices are located at 2401 East 86th Street,
+        Bloomington, Minnesota 55425
+      location: Summary, the parties
+  auditor_report: null
+  relationships:
+  - skywater-ionq-merger
+  - oxbow-related-party
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The prospectus records how the Minnesota fab's site is held under its new owner.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: IonQ investor-relations SEC filings feed (filing id 19273247). Accession number not retrieved.
+  verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
+
 - id: skywater-defm14a-2026-03-31
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -1032,6 +2182,49 @@ filings:
     Wayback capture of the EDGAR filing was found and its accession number
     was not retrieved.
   verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
+
+- id: ionq-8-k-2026-07-31
+  company: IonQ, Inc.
+  company_key: ionq
+  form: 8-K
+  document_type: current-report
+  parent: null
+  title: 'Current report: completion of the acquisition of SkyWater Technology'
+  period:
+    label: event of 2026-07-31
+    start: null
+    end: 2026-07-31
+  filed: 2026-07-31
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: ir-filing-id
+    value: '19650888'
+  urls:
+    original: https://investors.ionq.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=19650888
+    wayback: null
+    ir: https://d18rn0p25nwr6d.cloudfront.net/CIK-0001824920/530109bf-a75a-43c0-bf8f-e757dffff526.pdf
+  about:
+    summary: >-
+      IonQ's current report on completing the two-step merger by which
+      SkyWater became a wholly owned subsidiary of IonQ.
+    quotes:
+    - text: >-
+        Merger Sub 1 merged with and into SkyWater, with SkyWater surviving as a
+        wholly owned subsidiary of the Company (the "First Merger")
+      location: Introductory note
+  auditor_report: null
+  relationships:
+  - skywater-ionq-merger
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The acquirer's filing dates the change of ownership of the fab whose history the overview gives.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: IonQ investor-relations SEC filings feed (filing id 19650888). Accession number not retrieved.
+  verified: 2026-09-14 investor-relations PDF copy fetched; quote checked
 
 - id: skywater-8-k-2026-07-31
   company: SkyWater Technology, Inc.
