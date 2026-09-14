@@ -2,53 +2,18 @@
 # Generated from public bibliographic records (Crossref, OpenAlex, arXiv,
 # WOSET proceedings); checked by tools/check_papers.py.  See
 # docs/plans/paper-index-design.md for the schema and page plan.
-- id: doi:10.1109/issm.2001.962975
-  title: Polymer control in aluminum etch chambers to achieve <450 hours MTBC
-  authors:
-  - C. Grenci
-  - V. Sauers
-  - R. King
-  - D. Dodge
-  - M. Schlecht
-  - K. Gray
-  - R. Foley
-  year: 2002
-  venue: 2001 IEEE International Symposium on Semiconductor Manufacturing. ISSM 2001. Conference Proceedings
-    (Cat. No.01CH37203)
-  venue_type: conference
-  doi: 10.1109/issm.2001.962975
-  landing_url: http://ieeexplore.ieee.org/document/962975/
-  arxiv: null
-  paywalled: true
-  free_full_text: []
-  topics:
-  - lineage-s8
-  - fab-manufacturing
-  institutions:
-  - Cypress Semiconductor Corporation (United States)
-  fabrication: null
-  related_docs:
-  - label: machine-plasma-etcher-metal
-    reason: The paper reports polymer control and mean time between cleans in aluminium etch chambers.
-  inventory_key: null
-  discovery:
-  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
-  notes: Cypress co-authors affiliated with Cypress Semiconductor, Bloomington, MN (OpenAlex). The abstract
-    does not name a process.
-  verified: 2026-09-14 Crossref REST API works/10.1109/issm.2001.962975 resolved; title matches OpenAlex
-    record
 - id: doi:10.1109/issm.1999.808813
   title: Inspection optimization for excursion and baseline defect monitoring in a manufacturing environment
   authors:
   - D. Sajoto
   - A. Gordon
   - A. McCauley
-  year: 2003
+  year: 1999
   venue: 1999 IEEE International Symposium on Semiconductor Manufacturing Conference Proceedings (Cat
     No.99CH36314)
   venue_type: conference
   doi: 10.1109/issm.1999.808813
-  landing_url: http://ieeexplore.ieee.org/document/808813/
+  landing_url: https://ieeexplore.ieee.org/document/808813/
   arxiv: null
   paywalled: true
   free_full_text: []
@@ -68,6 +33,75 @@
     not name a process.
   verified: 2026-09-14 Crossref REST API works/10.1109/issm.1999.808813 resolved; title matches OpenAlex
     record
+- id: doi:10.1109/issm.2001.962975
+  title: Polymer control in aluminum etch chambers to achieve <450 hours MTBC
+  authors:
+  - C. Grenci
+  - V. Sauers
+  - R. King
+  - D. Dodge
+  - M. Schlecht
+  - K. Gray
+  - R. Foley
+  year: 2001
+  venue: 2001 IEEE International Symposium on Semiconductor Manufacturing. ISSM 2001. Conference Proceedings
+    (Cat. No.01CH37203)
+  venue_type: conference
+  doi: 10.1109/issm.2001.962975
+  landing_url: https://ieeexplore.ieee.org/document/962975/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - fab-manufacturing
+  institutions:
+  - Cypress Semiconductor Corporation (United States)
+  fabrication: null
+  related_docs:
+  - label: machine-plasma-etcher-metal
+    reason: The paper reports polymer control and mean time between cleans in aluminium etch chambers.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Cypress co-authors affiliated with Cypress Semiconductor, Bloomington, MN (OpenAlex). The abstract
+    does not name a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/issm.2001.962975 resolved; title matches OpenAlex
+    record
+- id: doi:10.1109/irws.2005.1609576
+  title: One Time Programming Device Yield Study Based On Anti-Fuse Gate Oxide Breakdown on P-type and
+    N-type Substrates
+  authors:
+  - N. Mathur
+  - Y. Ahn
+  - I. Kouznetov
+  - F. Jenne
+  - J. Fulford
+  year: 2005
+  venue: 2005 IEEE International Integrated Reliability Workshop
+  venue_type: workshop
+  doi: 10.1109/irws.2005.1609576
+  landing_url: https://ieeexplore.ieee.org/document/1609576/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - lineage-s8
+  - reliability
+  - device-characterisation
+  institutions:
+  - Cypress Semiconductor Corporation (United States)
+  fabrication: null
+  related_docs:
+  - label: category-oxidation
+    reason: The one-time-programmable device studied relies on gate-oxide breakdown.
+  inventory_key: null
+  discovery:
+  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
+  notes: Authors affiliated with Cypress Semiconductor, Bloomington, MN (OpenAlex). The abstract does
+    not name a process.
+  verified: 2026-09-14 Crossref REST API works/10.1109/irws.2005.1609576 resolved; title matches OpenAlex
+    record
 - id: doi:10.1109/issm.2005.1513324
   title: Simple implementation of a first order advanced process control engine for thin film applications
   authors:
@@ -77,7 +111,7 @@
   venue: ISSM 2005, IEEE International Symposium on Semiconductor Manufacturing, 2005.
   venue_type: conference
   doi: 10.1109/issm.2005.1513324
-  landing_url: http://ieeexplore.ieee.org/document/1513324/
+  landing_url: https://ieeexplore.ieee.org/document/1513324/
   arxiv: null
   paywalled: true
   free_full_text: []
@@ -86,7 +120,6 @@
   - fab-manufacturing
   institutions:
   - Cypress Semiconductor Corporation (United States)
-  - Cypress Semiconductor Corporation (Japan)
   fabrication: null
   related_docs:
   - label: machine-pecvd
@@ -105,7 +138,7 @@
   - Indradeep Sen
   - Peter Keswick
   year: 2006
-  venue: 'Journal of Vacuum Science &amp; Technology B: Microelectronics and Nanometer Structures Processing,
+  venue: 'Journal of Vacuum Science & Technology B: Microelectronics and Nanometer Structures Processing,
     Measurement, and Phenomena'
   venue_type: journal
   doi: 10.1116/1.2166859
@@ -128,40 +161,6 @@
   notes: Authors affiliated with Cypress Semiconductor, 2401 East 86th Street, Bloomington, Minnesota
     (the fab's address; OpenAlex). The abstract does not name the S8 process.
   verified: 2026-09-14 Crossref REST API works/10.1116/1.2166859 resolved; title matches OpenAlex record
-- id: doi:10.1109/irws.2005.1609576
-  title: One Time Programming Device Yield Study Based On Anti-Fuse Gate Oxide Breakdown on P-type and
-    N-type Substrates
-  authors:
-  - N. Mathur
-  - Y. Ahn
-  - I. Kouznetov
-  - F. Jenne
-  - J. Fulford
-  year: 2006
-  venue: 2005 IEEE International Integrated Reliability Workshop
-  venue_type: workshop
-  doi: 10.1109/irws.2005.1609576
-  landing_url: http://ieeexplore.ieee.org/document/1609576/
-  arxiv: null
-  paywalled: true
-  free_full_text: []
-  topics:
-  - lineage-s8
-  - reliability
-  - device-characterisation
-  institutions:
-  - Cypress Semiconductor Corporation (United States)
-  fabrication: null
-  related_docs:
-  - label: category-oxidation
-    reason: The one-time-programmable device studied relies on gate-oxide breakdown.
-  inventory_key: null
-  discovery:
-  - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
-  notes: Authors affiliated with Cypress Semiconductor, Bloomington, MN (OpenAlex). The abstract does
-    not name a process.
-  verified: 2026-09-14 Crossref REST API works/10.1109/irws.2005.1609576 resolved; title matches OpenAlex
-    record
 - id: doi:10.1017/s1431927606063112
   title: Precise Ion Milling and 3D TEM technique to Deal with Feature Blocking in TEM Viewing Semiconductor
     Devices
@@ -175,15 +174,13 @@
   doi: 10.1017/s1431927606063112
   landing_url: https://academic.oup.com/mam/article/12/S02/1240/6916148
   arxiv: null
-  paywalled: false
+  paywalled: true
   free_full_text: []
   topics:
   - lineage-s8
   - fab-manufacturing
   institutions:
-  - Cancer Prevention Institute of California
   - Cypress Semiconductor Corporation (United States)
-  - Cypress Semiconductor Corporation (Japan)
   fabrication: null
   related_docs:
   - label: machine-cross-section-sem-profilers
@@ -205,7 +202,7 @@
   venue: 2006 IEEE International Symposium on Semiconductor Manufacturing
   venue_type: conference
   doi: 10.1109/issm.2006.4493038
-  landing_url: http://ieeexplore.ieee.org/document/4493038/
+  landing_url: https://ieeexplore.ieee.org/document/4493038/
   arxiv: null
   paywalled: true
   free_full_text: []
@@ -214,7 +211,6 @@
   - fab-manufacturing
   institutions:
   - Cypress Semiconductor Corporation (United States)
-  - Cypress Semiconductor Corporation (Japan)
   fabrication: null
   related_docs:
   - label: machine-cmp-polisher
@@ -237,7 +233,7 @@
     Technology and Design
   venue_type: workshop
   doi: 10.1109/nvsmw.2008.30
-  landing_url: http://ieeexplore.ieee.org/document/4531830/
+  landing_url: https://ieeexplore.ieee.org/document/4531830/
   arxiv: null
   paywalled: true
   free_full_text: []
@@ -247,8 +243,7 @@
   - memory
   institutions:
   - Cypress Semiconductor Corporation (United States)
-  - Cypress Semiconductor Corporation (Japan)
-  - University of Colorado Colorado Springs
+  - Simtek Corporation
   fabrication: null
   related_docs:
   - label: step-040
@@ -295,7 +290,6 @@
   institutions:
   - Stanford University
   - SkyWater Technology
-  - ARC Technology (United States)
   fabrication: null
   related_docs:
   - label: overview-sky130b-reram
@@ -353,7 +347,12 @@
   landing_url: https://dl.acm.org/doi/10.1145/3400302.3415735
   arxiv: null
   paywalled: false
-  free_full_text: []
+  free_full_text:
+  - url: https://dl.acm.org/doi/10.1145/3400302.3415735
+    host: dl.acm.org
+    oa_type: gold (publisher version)
+    located_via: OpenAlex location (no source name)
+    checked: 2026-09-14 HTTP 403 to the scripted request (site refuses automated access)
   topics:
   - tooling
   - digital
@@ -412,6 +411,7 @@
     host: woset-workshop.github.io
     oa_type: conference open-access page
     located_via: WOSET proceedings page
+    checked: 2026-09-14 HTTP 200
   topics:
   - pdk-models
   - tooling
@@ -421,8 +421,8 @@
   fabrication: null
   related_docs:
   - label: overview-cross-section
-    reason: The paper's Fig. 1 is a process stack of the SkyWater 130 nm open process, the subject of
-      the overview's cross-section.
+    reason: The paper's first figure is a process stack of the SkyWater 130 nm open process, the subject
+      of the overview's cross-section.
   inventory_key: ANN-15
   discovery:
   - WOSET proceedings pages (woset-workshop.github.io)
@@ -478,7 +478,7 @@
   - beol-integration
   - rram
   institutions:
-  - IIT@MIT
+  - Massachusetts Institute of Technology
   - SkyWater Technology
   - Intrinsix (United States)
   fabrication: null
@@ -590,7 +590,6 @@
   institutions:
   - San Jose State University
   - Stanford University
-  - Menlo School
   - Meta (United States)
   - National Central University
   - SkyWater Technology
@@ -686,6 +685,7 @@
     host: ieeexplore.ieee.org
     oa_type: gold (publisher version)
     located_via: OpenAlex location (IEEE Access)
+    checked: 2026-09-14 HTTP 200
   topics:
   - digital
   - sensors
@@ -813,11 +813,10 @@
   - rram
   institutions:
   - Stanford University
-  - IIT@MIT
-  - ARC Technology (United States)
+  - Massachusetts Institute of Technology
   - SkyWater Technology
   - Analog Devices (United States)
-  - Harvard University Press
+  - Harvard University
   fabrication:
     statement: Process established within SkyWater Technology Foundry (90/130 nm technology node on 200
       mm Si wafers).
@@ -877,6 +876,7 @@
     host: upcommons.upc.edu
     oa_type: preprint
     located_via: OpenAlex location (UPCommons institutional repository (Universitat Politècnica de Catalunya))
+    checked: 2026-09-14 HTTP 200
   topics:
   - radiation
   - reliability
@@ -913,7 +913,12 @@
   landing_url: https://ieeexplore.ieee.org/document/10181379/
   arxiv: null
   paywalled: true
-  free_full_text: []
+  free_full_text:
+  - url: https://escholarship.org/uc/item/9dc0v8g3
+    host: escholarship.org
+    oa_type: preprint
+    located_via: OpenAlex location (eScholarship (California Digital Library))
+    checked: 2026-09-14 HTTP 403 to the scripted request (site refuses automated access)
   topics:
   - memory
   - digital
@@ -953,7 +958,6 @@
   institutions:
   - Stanford University
   - Intrinsix (United States)
-  - Bethany Global University
   - SkyWater Technology
   fabrication: null
   related_docs:
@@ -1031,7 +1035,7 @@
   - Raymond H. Yang
   - Yaqing Xia
   year: 2024
-  venue: IEEE Design &amp; Test
+  venue: IEEE Design & Test
   venue_type: journal
   doi: 10.1109/mdat.2024.3444728
   landing_url: https://ieeexplore.ieee.org/document/10637433/
@@ -1071,6 +1075,7 @@
     host: arxiv.org
     oa_type: preprint (arXiv)
     located_via: arXiv abs page
+    checked: 2026-09-14 HTTP 200
   topics:
   - digital
   - tooling
@@ -1100,7 +1105,7 @@
   - Matias Miguez
   - Alejandro R. Oliva
   year: 2024
-  venue: IEEE Design &amp; Test
+  venue: IEEE Design & Test
   venue_type: journal
   doi: 10.1109/mdat.2024.3405892
   landing_url: https://ieeexplore.ieee.org/document/10539610/
@@ -1134,7 +1139,18 @@
   landing_url: https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ell2.70036
   arxiv: null
   paywalled: false
-  free_full_text: []
+  free_full_text:
+  - url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1049/ell2.70036
+    host: onlinelibrary.wiley.com
+    oa_type: gold (publisher version)
+    located_via: OpenAlex location (Electronics Letters)
+    checked: 2026-09-14 HTTP 403 to the scripted request (site refuses automated access)
+  - url: https://www.authorea.com/doi/full/10.22541/au.172413095.53999511/v1
+    host: www.authorea.com
+    oa_type: preprint
+    located_via: OpenAlex record of preprint DOI 10.22541/au.172413095.53999511/v1; Crossref record title
+      matches
+    checked: 2026-09-14 HTTP 403 to the scripted request (site refuses automated access)
   topics:
   - floating-gate
   - device-characterisation
@@ -1238,7 +1254,6 @@
   topics:
   - mixed-signal
   institutions:
-  - Guger Technologies (Austria)
   - Johannes Kepler University of Linz
   fabrication: null
   related_docs: []
@@ -1307,8 +1322,7 @@
   institutions:
   - Stanford University
   - University of Pittsburgh
-  - Carnegie Mellon University
-  - IIT@MIT
+  - Massachusetts Institute of Technology
   - SkyWater Technology
   fabrication:
     statement: Achieved at SkyWater Technology Foundry using a 90/130 nm process on 200 mm wafers.
@@ -1336,7 +1350,18 @@
   landing_url: https://www.mdpi.com/2079-9292/14/6/1162
   arxiv: null
   paywalled: false
-  free_full_text: []
+  free_full_text:
+  - url: https://www.mdpi.com/2079-9292/14/6/1162
+    host: www.mdpi.com
+    oa_type: gold (publisher version)
+    located_via: OpenAlex location (Electronics)
+    checked: 2026-09-14 HTTP 403 to the scripted request (site refuses automated access)
+  - url: https://hdl.handle.net/11568/1318167
+    host: hdl.handle.net
+    oa_type: preprint
+    located_via: OpenAlex location (CINECA IRIS Institutial research information system (University of
+      Pisa))
+    checked: 2026-09-14 HTTP 403 to the scripted request (site refuses automated access)
   topics:
   - pdk-models
   - device-characterisation
@@ -1465,6 +1490,7 @@
     host: arxiv.org
     oa_type: preprint (arXiv)
     located_via: arXiv abs page
+    checked: 2026-09-14 HTTP 200
   topics:
   - quantum
   - cryogenic
@@ -1532,7 +1558,6 @@
   - digital
   - education-shuttles
   institutions:
-  - National Polytechnic School
   - Universidad San Francisco de Quito
   fabrication:
     statement: Fabricated via the Tiny Tapeout multi-project wafer (MPW) service using the SKY130 PDK.
@@ -1593,11 +1618,18 @@
   arxiv: null
   paywalled: false
   free_full_text:
-  - url: https://doi.org/10.1109/jxcdc.2026.3670667
-    host: doi.org
+  - url: https://ieeexplore.ieee.org/document/11421367/
+    host: ieeexplore.ieee.org
     oa_type: gold (publisher version)
     located_via: OpenAlex location (IEEE Journal on Exploratory Solid-State Computational Devices and
       Circuits)
+    checked: 2026-09-14 HTTP 200
+  - url: https://www.techrxiv.org/doi/full/10.36227/techrxiv.176539494.47601473/v1
+    host: www.techrxiv.org
+    oa_type: preprint
+    located_via: OpenAlex record of preprint DOI 10.36227/techrxiv.176539494.47601473/v1; Crossref record
+      title matches
+    checked: 2026-09-14 HTTP 403 to the scripted request (site refuses automated access)
   topics:
   - rram
   - device-characterisation
@@ -1642,6 +1674,7 @@
     host: arxiv.org
     oa_type: preprint (arXiv)
     located_via: arXiv abs page
+    checked: 2026-09-14 HTTP 200
   topics:
   - cryogenic
   - pdk-models
@@ -1705,6 +1738,7 @@
     host: arxiv.org
     oa_type: preprint (arXiv)
     located_via: arXiv abs page
+    checked: 2026-09-14 HTTP 200
   topics:
   - rram
   - device-characterisation
@@ -1746,6 +1780,7 @@
     host: arxiv.org
     oa_type: preprint (arXiv)
     located_via: arXiv abs page
+    checked: 2026-09-14 HTTP 200
   topics:
   - memory
   - digital
@@ -1779,8 +1814,6 @@
   - reliability
   institutions:
   - Federico Santa María Technical University
-  - Federico II University Hospital
-  - X-Fab (Germany)
   fabrication: null
   related_docs: []
   inventory_key: null
