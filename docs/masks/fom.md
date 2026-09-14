@@ -100,7 +100,8 @@ Rule x.9 confines "Shapes on maskAdd or maskDrop layers ("serifs")" to
 the core, and names `cfom` among its exemptions: "cfom md/mp inside
 "advSeal_6um\* OR cuPillarAdvSeal_6um\*" pcell".[^pdk-periph] The `cfom`
 add and drop purposes are therefore used, at least in those seal-ring
-cells; the PDK does not say what they add or remove elsewhere. Table 7
+cells (our reading of "md/mp" as mask drop and mask add); the PDK does
+not say what they add or remove elsewhere. Table 7
 of *Criteria & Assumptions* has two sizing rows for an emitter, "pnp_emitter sizing (S8P GSMC
 flow)" 0.05 (`PnpEmitterSzGSMC`) and "pnp_emitter sizing (other flows)"
 0.03 (`PnpEmitterSz`), without saying on which layer the sizing
@@ -128,11 +129,10 @@ carries at least 1 438 841 shapes, and the per-die minimum on each run
 lies between 1 438 841 and 1 579 678.[^mask-renders] Unlike the `DNM`
 counts, these rarely repeat — no two dies share a count on MPW-1, MPW-4
 or MPW-8, and on no run do more than seven dies have a count that
-another die shares — so we read the
-large common minimum as fill and structures that every die of these
-runs carries, which the site counts together with the drawn active
-(inference; the site does not break the count down by
-layer).[^mask-renders] On MPW-1 one die accounts for 99 % of the run's
+another die shares — so they vary with the projects. We read the large
+minimum as fill and structures that every die of these runs carries,
+which the site counts together with the drawn active (inference; the
+site does not break the count down by layer).[^mask-renders] On MPW-1 one die accounts for 99 % of the run's
 `FOM` shapes, so the site's run totals are not comparable between runs
 ({ref}`masks-renders`). The site states the limits of its images:
 "These are renders of *drawn* data, not photomask artwork: reticle
@@ -199,13 +199,12 @@ At 248 nm that threshold is about 207 nm at NA 0.6 and 177 nm at NA 0.7
 plate would print enlarged on the narrowest active lines and about one
 to one on the trenches (inference). *Criteria & Assumptions* gives a
 general "Min process bias 3s tolerance" of 0.032 (`PHTOL`) and no
-active-specific CD tolerance.[^pdk-03] Thung et al. report that 0.13 µm
-STI on 0.18 µm-generation tools needed "re-designs of the STI layout
-with Optical Proximity Correction (OPC) tagging" (the
-{ref}`FOM <step-004>` page's quotation);[^thung-2016] rules-based
-correction of the kind Otto et al. describe[^otto-1994] is one way such
-tagging is applied, and the PDK does not say whether `FOM` data are
-corrected. Unlike P1M, `FOM` is not among the layers of the finer grid
+active-specific CD tolerance.[^pdk-03] Thung et al. evaluated
+"re-designs of the STI layout with Optical Proximity Correction (OPC)
+tagging" among the changes that removed defects when 0.13 µm STI was run
+on 0.18 µm-generation tools;[^thung-2016] rules-based correction of the
+kind Otto et al. describe[^otto-1994] is one form of proximity
+correction, and the PDK does not say whether `FOM` data are corrected. Unlike P1M, `FOM` is not among the layers of the finer grid
 rule x.1a, whose 0.001 ("mm") grid is for "p1m.md (OPC)" and the
 "mask data for p1m, met1, via, met2"; x.1b gives 0.005 for all other
 layers.[^pdk-periph]
@@ -230,8 +229,9 @@ the waffling "background" as the "Area where waffling grid is defined,
 sized to avoid waffle shift between runs".[^pdk-06]
 
 **Resist and tone.** The step page reads a chemically amplified KrF
-resist over a bottom anti-reflective coating on the nitride, and leaves
-the reticle tone open; neither is published. The consumables are on
+resist over an organic bottom anti-reflective coating or an inorganic
+anti-reflective cap on the nitride, and leaves the choice and the
+reticle tone open; neither is published. The consumables are on
 the {ref}`lithography materials <material-lithography-materials>` page.
 
 **Pattern transfer.** On the step pages' readings the resist pattern is
@@ -254,9 +254,9 @@ Ausschnitt calibrated stepper overlay by aligning to a latent
 image,[^edmark-1985] and van Haren et al. show how the placement
 accuracy of wafer alignment marks limits layer-to-layer
 overlay.[^van-haren-2019] The margins that depend on the placement of
-this level are those of the poly rules against diffusion — 0.130 µm of
-poly beyond diffusion (poly.8) and 0.250 µm of diffusion beyond poly
-(poly.7) — and of the implant and well rules against it, such as
+this level are those of the poly rules against diffusion — 0.130 of
+poly beyond diffusion (poly.8) and 0.250 of diffusion beyond poly
+(poly.7), whose unit cells are blank in the published table — and of the implant and well rules against it, such as
 difftap.8's 0.180 µm N-well enclosure of p+ diffusion.[^pdk-periph]
 
 (mask-fom-steps)=
@@ -274,8 +274,8 @@ Steps:
 * {ref}`FOM <step-004>` — coats, exposes and develops the resist.
 * {ref}`STINITE <step-005>` — etches the nitride and pad oxide through
   the resist windows, stopping on silicon.
-* {ref}`STIE <step-006>` — etches the trenches into the silicon, with
-  the resist still on top on its page's reading, and strips the resist
+* {ref}`STIE <step-006>` — etches the trenches into the silicon, on its
+  page's reading commonly with the resist still on top, and strips the resist
   and cleans the trench; the step list used in this reference has no
   separate strip step.
 
