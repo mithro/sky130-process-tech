@@ -346,7 +346,7 @@ tip-implant opening of 0.1.
 * {ref}`NTM <step-064>`, {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`
   and {ref}`ASTIS <step-067>` — the mask step, the tip and halo implants
   and the strip.
-* {ref}`HVNTM <step-068>` and {ref}`LDNTM <step-071>` — the two other tip
+* {ref}`mask-hvntm` and {ref}`LDNTM <step-071>` — the two other tip
   masks of the module; {ref}`TIPRTAD <step-075>` — the anneal of all
   three tips.
 * {ref}`mask-p1m` — the gate pattern the tips self-align to;

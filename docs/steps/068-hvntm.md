@@ -171,6 +171,8 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 * The drain-extended devices' N-well drift regions:
   {ref}`NWM <step-017>`, {ref}`PWDEM <step-030>`; activation:
   {ref}`TIPRTAD <step-075>`.
+* Mask page: {ref}`HVNTM <mask-hvntm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
