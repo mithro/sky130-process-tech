@@ -889,8 +889,9 @@ public.
   thermal oxidation in the flow.[^deal-1965]
 * White, Adams and Bu, *IEEE Circuits and Devices* 2000 — a review of
   scaled SONOS memory.[^pap-01]
-* Ramkumar et al. (Cypress), US 6,969,689 — the ONO stack formed in one
-  furnace window.[^pat-01]
+* Ramkumar et al. (Cypress), US 6,969,689 — ONO layers formed in one
+  reaction chamber, with thickness and temperature ranges from several
+  embodiments.[^pat-01]
 * Koutny et al. (Cypress), US 8,093,128 — where a SONOS module sits
   relative to the logic wells and gate oxides.[^pat-03]
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — an
