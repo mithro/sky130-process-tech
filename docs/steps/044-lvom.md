@@ -169,6 +169,8 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 * Devices inside `hvi`: the 5 V family and the 10–20 V drain-extended
   devices ({ref}`PWDEM <step-030>`).
 * The memory cells' relationship to `hvi` (hvi.4): {ref}`TUNM <step-035>`.
+* Mask page: {ref}`LVOM <mask-lvom>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`;
   dual-oxide background: {ref}`category-oxidation`.
 
