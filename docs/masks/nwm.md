@@ -83,7 +83,7 @@ modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P),[^pdk-periph] so a design inside
 the die draws `nwell` (our reading of x.15a).
 
-Several published criteria say that the plate is not the drawn layer
+Several published criteria suggest that the plate is not the drawn layer
 unchanged, without giving the whole operation. Table 7 of *Criteria &
 Assumptions* gives a "Serif added to nwell convex corner (SXX-572, 573)"
 of 0.22 (`NwellCvxSerif`), a "Serif added to nwell concave corner
@@ -96,7 +96,12 @@ cnwm.3f applies only to GSMC flows", and its `nwellDnwellHoles` and
 `photoArray` definitions say that the "Die+frame utility will use the
 mask data of nwell and dnwell".[^pdk-06] So the PDK names a rule
 `cnwm.3f` and speaks of "mask data of nwell", but the periphery rules
-contain no `cnwm` rule set,[^pdk-periph] and the serif and extension
+contain no `cnwm` rule set;[^pdk-periph] the *Error Messages* page,
+which describes "many of the automated DRC rules that are checked by
+SkyWater as part of the acceptance criteria for GDS data", names only
+two `cnwm.nikon` checks, "NWMmk in the nikon cross has the wrong
+polarity" and "NWMmk is missing from the nikon cross in the
+layout",[^pdk-errors] and the serif and extension
 rows name other flows and references that the PDK does not explain. We
 read the serifs as corner corrections added to the drawn outline and
 the extension as flow-specific (inference from the row wording).
@@ -110,8 +115,9 @@ no Boolean expression and no fill layer, on all eight runs; its mask
 record gives the mask-level layer 21:0 and the note "NWM = nwell sized
 (cnwm.3a outside hvi / 3b inside), with DEPMOS/pwell-resistor
 exemptions".[^mask-renders] The periphery rules have no `cnwm.3a` or
-`cnwm.3b`, the only `cnwm` rule the PDK names being Table C3's
-`cnwm.3f`,[^pdk-periph][^pdk-06] and the site gives no source for the
+`cnwm.3b`; the only other `cnwm` names in the PDK are Table C3's
+`cnwm.3f` and the Error Messages page's `cnwm.nikon`
+checks,[^pdk-periph][^pdk-06][^pdk-errors] and the site gives no source for the
 note. The render job lists only the drawn layer, with no sizing step,
 so, as the {ref}`masks index <masks-renders>` reads the site in general,
 the images are unsized drawn data. The note and the choice of layer are
@@ -125,8 +131,7 @@ at least 352 206 shapes, the minimum on each run lies between 352 206
 the run's shapes.[^mask-renders] Counts rarely repeat — on no run do
 more than nine dies have a count that another die shares — so we read
 the large minimum as `nwell` shapes that every die of these runs
-carries, such as those of shared circuitry, rather than as project
-content (inference; the site does not say what they are). The site
+carries rather than as project content (inference; the site does not say what they are). The site
 states the limits of its images: "These are renders of *drawn* data,
 not photomask artwork: reticle pitch, 4x reduction, mirroring and the
 frame features the fab adds are not modelled."[^mask-renders] Its
@@ -230,8 +235,9 @@ rather than the conditions: an "n-well peak concentration" of
 6.00E+017 cm⁻³ over a "background concentration" of 8.00E+14 cm⁻³, a
 baseline N-well vertical dimension of 1.1 µm and a "min n-well width to
 guarantee 90 % peak concentr." of 0.55 µm (Tables 3a and 3b).[^pdk-03]
-Morris and Rubin set out the technical and economic case for retrograde
-wells and channel implants of this kind.[^morris-2000]
+Morris and Rubin compared batch high-energy and serial medium-current
+implanters for multiple modulated well implants, in device performance
+and cost.[^morris-2000]
 
 **Overlay.** The {ref}`NWM <step-017>` page reads the mask as aligned to
 the trench pattern of {ref}`FOM <step-004>`, and points to Table 3b's
@@ -272,9 +278,9 @@ Steps:
 The next step, {ref}`HVTPM <step-022>`, is itself the next mask step:
 on its step page's reading it coats a new resist for the high-Vt PMOS
 implants on the cleaned surface. The one point that needs stating is
-{ref}`LVTPI <step-020>`: it is a channel implant rather than a well
-implant, and the step list names the strip after it, but the step pages
-read it as using the `NWM` resist — the arrangement of an IBM
+{ref}`LVTPI <step-020>`: on its step page it is a channel implant
+rather than a well implant, and the strip follows it in the step list,
+but the step pages read it as using the `NWM` resist — the arrangement of an IBM
 retrograde-well patent cited there[^pat-well-ibm] — and no public
 document says so. On that reading the rule needs no exception for this
 mask.
@@ -314,7 +320,10 @@ Table 2 of *Criteria & Assumptions* repeats the width and space as
 `NWMCD` 0.84 and `NWMCDSP` 1.27; Table 3d gives a punch-through spacing
 for "n-well - n-well" of 0.835 µm (`NWPTS`), below the 1.270 µm of
 nwell.2a; Table 3e gives a "Min n-well enclos. of tap to ensure bkdwn
-N-w/P-w before N+/P-w (ESD)" of 0.04 µm (`XNWESD`); Table 7 gives an
+N-w/P-w before N+/P-w (ESD)" of 0.04 µm (`XNWESD`); Table 4 gives, for
+photo diodes, a "Min/Max width of nwell inside deep nwell" of 0.84
+(`PDNwmCD`) and a "Min/Max enclosure of nwell by deep nwell" of 1.08
+(`PDNwmDnwEnc`); Table 7 gives an
 "Enclosure of tap by nwell for pwell res" of 0.22 (`PTAP_NWL_SP`); and
 Table 8 a "Min HVNwell to any nwell space" of 2 (`HVNwell_Nwell_SP`),
 the value of hvnwell.8.[^pdk-03][^pdk-periph] The SKY130
@@ -354,11 +363,14 @@ nwell.2a set the smallest features: a 0.84 µm line on a 1.27 µm space.
   `cnwm`, the Table C3 definitions and the `NWM` column of Table
   F2b.[^pdk-06]
 * SkyWater PDK, *Criteria & Assumptions* — `NWMCD`/`NWMCDSP`, the N-well
-  profile, junction, punch-through and latch-up criteria, the serif and
-  extension rows and the photoresist thickness.[^pdk-03]
+  profile, junction, punch-through and latch-up criteria, the photo-diode
+  `PDNwmCD` and `PDNwmDnwEnc` rows, the serif and extension rows and the
+  photoresist thickness.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — the `nwell` rules, the diffusion and
   high-voltage rules against N-well, x.15a and the flag
   legend.[^pdk-periph]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the
+  `cnwm.nikon` checks.[^pdk-errors]
 * SkyWater PDK, *Device Details* and *High Voltage Methodology* — the
   devices built in N-well and the drain extensions made of
   it.[^pdk-07][^pdk-hv]
@@ -408,8 +420,8 @@ nwell.2a set the smallest features: a 0.84 µm line on a 1.27 µm space.
   implantation.[^lee-1996]
 * Ross et al., *Proc. SPIE* 1996 — electron-beam stabilisation of i-line
   implant resists.[^ross-1996]
-* Morris and Rubin, IIT 2000 — technical and economic considerations for
-  retrograde well and channel implants.[^morris-2000]
+* Morris and Rubin, IIT 2000 — batch high-energy against serial
+  medium-current implanters for modulated well implants.[^morris-2000]
 * Rubin, Morris and Jasper, IIT 2002 — retrograde-well implant control
   and narrow n+/p+ isolation.[^rubin-2002]
 * Tsukamoto et al., *NIM B* 1991 — a review of high-energy implantation
@@ -423,9 +435,10 @@ nwell.2a set the smallest features: a 0.84 µm line on a 1.27 µm space.
 
 * The operation that makes the `cnwm` plate data from `nwell` is not
   published. Table 7's serif and extension rows and Table C3's
-  `cnwm.3f` show that it is not a copy,[^pdk-03][^pdk-06] and the renders
-  site's note names `cnwm.3a` and `cnwm.3b` rules that the periphery
-  rules do not contain.[^pdk-periph][^mask-renders]
+  `cnwm.3f` suggest that it is not a copy,[^pdk-03][^pdk-06] and the
+  renders site's note names `cnwm.3a` and `cnwm.3b` rules that neither
+  the periphery rules nor the Error Messages page
+  contains.[^pdk-periph][^pdk-errors][^mask-renders]
 * That `NWI`, `NWI2` and `LVTPI` share this resist is the step pages'
   reading; no public document says so.
 * The plate's tone, blank, absorber and magnification, the resist and
@@ -464,6 +477,10 @@ nwell.2a set the smallest features: a 0.84 µm line on a 1.27 µm space.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
