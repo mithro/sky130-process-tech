@@ -73,6 +73,10 @@ employee) and **weak** (indirect evidence), with the assignment of a
 tool to a particular step graded separately; the
 {ref}`machines index <machines-index>` explains the wording in full.
 
+The {ref}`academic paper index <papers-index>` catalogues papers about
+SKY130, devices and circuits made on it, and its Cypress lineage; a paper
+enters the inventory only when a page cites it.
+
 ```{toctree}
 :maxdepth: 1
 
