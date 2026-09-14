@@ -54,7 +54,8 @@ The PDK's *Error Messages* page, which describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance criteria
 for GDS data", has many more pad checks than the periphery rules. It
 requires "padPL pcells should be used for bondpad" (pad.1) and "2.7 min.
-enclosure of bondpadNormal by met5" (pad.4/4a); it gives a bond pad
+enclosure of bondpadNormal by met5" (pad.4/4a), and the same 2.7 for
+"pad opening inside inductor by met5" (cupad.3); it gives a bond pad
 chamfered corners — "Bondpad should have only 4 45 degree corner"
 (pad.11), "7.0 Min length of 45 degree bevel on Bond pad" (pad.12) and
 "8.8 Max length of 45 degree bevel on Bond pad" (pad.13) — a "150.0um Max
@@ -163,8 +164,8 @@ straddle areaid:ModuleCut" (scribe.7) and "pad inside frame or moduleCut
 without text label" (scribe.6a).[^pdk-errors] The page does not say what
 the "nikon cross" is. In the seal-ring cell `advSeal_6um_gen` of
 Efabless's caravel repository, a sub-cell named `nikon_sealring_shape`
-draws inside a 4 µm square, on `cpdm` 37:0, the square less a cross of
-three rectangles, 2.4 µm across with 0.5 µm arms — the opposite form from
+draws inside a 4 µm square, on `cpdm` 37:0, the square, with its corners
+cut at 45°, less a cross of three rectangles, 2.4 µm across with 0.5 µm arms — the opposite form from
 the cross it draws on `cnsm` 22:0 and `cmm5` 59:0 (our reading of the GDS
 file).[^caravel-sealring] We read that sub-cell as a "nikon cross" of the
 kind the checks name (inference from the names). On the step pages'
@@ -306,7 +307,7 @@ pads,[^danzl-1997] and leaves open whether SKY130's pads carry such a
 cap. The opening defines the part of the pad that probe needles and wire
 bonds reach; Hunter et al. used wire bonding to study probe damage in
 aluminium pads,[^hunter-2012] Ching and Schroen related bond-pad cracking
-to the oxides and metal systems under the pad,[^ching-1988] and
+to the oxides under the pad and studied the pad metallisation,[^ching-1988] and
 Comizzoli et al. reviewed the corrosion of electronic materials and
 devices.[^comizzoli-1986]
 
@@ -336,8 +337,8 @@ Steps:
 On its step page's reading, the next step, {ref}`ALLY <step-170>`,
 anneals the finished wafers at low temperature in a hydrogen-bearing
 ambient after the resist is gone. There is no next mask step: `PDM` is
-the last of the 36 mask steps, and the step list ends with the anneal and
-electrical test ({ref}`HPETEST <step-171>`). The rule needs no exception
+the last of the 36 mask steps, and the step list ends with
+{ref}`ALLY <step-170>` and {ref}`HPETEST <step-171>`. The rule needs no exception
 for this mask.
 
 ## Design rules and critical dimensions
@@ -410,7 +411,7 @@ pitch (our arithmetic from Table 2), and product openings of the order of
 * SkyWater PDK, *Periphery rules* — the `pad` rules and function line,
   m4.13, m4.16, rdl.3, rdl.6, x.1b, x.7, x.9, x.15a, x.15b and the
   flag legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page — the pad, scribe and `cpdm.nikon`
+* SkyWater PDK, *Error Messages* page — the pad, cupad.3, scribe and `cpdm.nikon`
   checks.[^pdk-errors]
 * SkyWater PDK, *Summary of Key Periphery Rules* — Table F4 and its
   footnotes.[^pdk-summary]
@@ -455,8 +456,8 @@ pitch (our arithmetic from Table 2), and product openings of the order of
   aluminium bond pads.[^danzl-1997]
 * Hunter et al., IMAPS 2012 — wire bonding as a probe of pad damage from
   wafer probing.[^hunter-2012]
-* Ching and Schroen, IRPS 1988 — bond-pad cracking and the metal systems
-  under the pad.[^ching-1988]
+* Ching and Schroen, IRPS 1988 — bond-pad cracking, the oxides under the pad
+  and the pad metallisation.[^ching-1988]
 * Comizzoli et al., *Science* 1986 — corrosion of electronic materials and
   devices.[^comizzoli-1986]
 * Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
@@ -527,7 +528,8 @@ pitch (our arithmetic from Table 2), and product openings of the order of
 [^pdk-wlcsp]: SkyWater PDK Authors, *WLCSP Rules* (Amkor and DECA
     tables), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/wlcsp.html>,
-    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/wlcsp/deca.csv>
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/wlcsp/deca.csv>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/wlcsp/amkor.csv>
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
     diagram), google/skywater-pdk repository.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>

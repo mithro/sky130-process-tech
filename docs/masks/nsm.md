@@ -130,8 +130,8 @@ layout".[^pdk-errors][^pdk-periph] The page does not say what the "nikon
 cross" is. In the caravel seal-ring cell a sub-cell named
 `nikon_sealring_shape`, placed in each corner, draws inside a 4 µm square
 a cross of three rectangles, 2.4 µm across with 0.5 µm arms, on `cnsm`
-22:0 and 23 other mask-level layers, and the square less the cross on
-seven more, among them `cpdm` 37:0 (our reading of the GDS
+22:0 and 23 other mask-level layers, and the square, with its corners
+cut at 45°, less the cross on seven more, among them `cpdm` 37:0 (our reading of the GDS
 file).[^caravel-sealring] We read that sub-cell as a "nikon cross" of the
 kind the checks name (inference from the names); the exemption of cells
 named "nikon\*" in nsm.3 fits that reading. None of this states the tone
