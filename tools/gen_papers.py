@@ -92,7 +92,6 @@ TOPIC_PAGES = {
     "rram": ["overview-sky130b-reram"],
     "beol-integration": ["overview-sky130b-reram"],
     "sonos": ["step-040"],
-    "pdk-models": ["overview-cross-section"],
 }
 MEMORY_DEVICES = {"rram", "sonos", "floating-gate", "beol-integration"}
 BASIS_TEXT = {
