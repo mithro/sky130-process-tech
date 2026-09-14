@@ -57,10 +57,12 @@ were still under it, the contact etch would have to change chemistry
 at the bottom of a 0.17 µm hole[^pdk-periph] and would stop unevenly
 on gates, resistor ends and interconnect. Cutting the nitride now, on
 a flat, resist-defined pattern, is easier to control and lets the
-contact etch stop on a uniform surface. The scheme is the one Tang et
-al. used for the titanium-nitride {term}`local interconnect` at Texas
-Instruments, where the nitride over poly was removed only at contact
-sites.[^tang-1985][^tang-1987]
+contact etch stop on a uniform surface. Tang et al. built a
+titanium-nitride {term}`local interconnect` at Texas Instruments from the
+TiN layer that forms during self-aligned silicidation, patterned to join
+gates and junctions;[^tang-1985][^tang-1987] their abstracts do not
+describe a nitride cap over poly removed at contact sites, and the
+papers' full text was not checked.
 
 The order relative to the source/drain implants is deliberate on our
 reading (inference from the PDK rules, {ref}`NPCM <step-078>`): the
@@ -218,9 +220,10 @@ fab (SKY130's recipe is not public):
 
 ### Deep dive
 
-* Tang et al. (Texas Instruments), IEDM 1985 and *IEEE TED* 1987 —
-  nitride over poly opened only at contacts, in a TiN local
-  interconnect process.[^tang-1985][^tang-1987]
+* Tang et al. (Texas Instruments), IEDM 1985 and *IEEE TED* 1987 — a
+  TiN local-interconnect layer formed during self-aligned silicidation
+  and patterned between gates and junctions
+  (abstracts).[^tang-1985][^tang-1987]
 * Kastenmeier, Matsuo, Beulens and Oehrlein, *JVST A* 1996 — nitride
   and oxide etch rates in CF₄/O₂/N₂.[^kastenmeier-1996]
 * Kastenmeier, Matsuo and Oehrlein, *JVST A* 1999 — nitride etching

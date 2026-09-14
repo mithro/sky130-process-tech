@@ -62,10 +62,12 @@ reading of the table the openings over poly contacts are drawn by the
 designer, and only the precision resistors receive created ones, which
 fits rpm.5; the table does not explain its marks.
 
-The approach has a published ancestry: in the titanium-nitride local
-interconnect of Tang et al. a nitride over poly is opened only where
-contacts are made,[^tang-1985][^tang-1987] and the step page cites
-Cacciato et al.'s charging damage, when a contact etch met a conductive
+The {ref}`NPCM <step-078>` and {ref}`NPCME <step-079>` pages set the
+cut beside the titanium-nitride local interconnect of Tang et al., a TiN
+layer formed during self-aligned silicidation and patterned to join gates
+and junctions;[^tang-1985][^tang-1987] the abstracts do not describe a
+nitride cap over poly, and the papers' full text was not checked. The
+step page also cites Cacciato et al.'s charging damage, when a contact etch met a conductive
 borderless nitride, as a reason to open the nitride before the contact
 etch.[^cacciato-2003] What the mask does not define is the cap it cuts,
 laid down at {ref}`GATENIT <step-058>` and {ref}`POC <step-059>` and,
@@ -370,10 +372,11 @@ gates.
 
 ### Deep dive
 
-* Tang et al., IEDM 1985 — the TiN local interconnect in which a
-  nitride over poly is opened only where contacts are made.[^tang-1985]
-* Tang et al., *IEEE TED* 1987 — the same local-interconnect
-  technology in full.[^tang-1987]
+* Tang et al., IEDM 1985 — a TiN local-interconnect layer formed during
+  self-aligned silicidation and patterned between gates and junctions
+  (abstract).[^tang-1985]
+* Tang et al., *IEEE TED* 1987 — the same TiN local interconnect, with
+  its delay and SRAM applications (abstract).[^tang-1987]
 * Cacciato et al., PPID 2003 — charging damage when a contact etch meets
   a borderless nitride.[^cacciato-2003]
 * Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of spaces
