@@ -156,9 +156,9 @@ An industry-generic heavy-implant-resist strip for a 200 mm,
 * Kern, in Reinhardt and Kern (eds.), *Handbook of Silicon Wafer
   Cleaning Technology* — overview chapter on wet-cleaning chemistry and
   contamination.[^kern-handbook]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the measured
-  crust-and-popping mechanism of ion-implanted resist that every implant
-  strip has to defeat.[^fujimura-1989]
+* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the carbonised
+  layer of high-dose implanted resist, the residues of O₂ ashing and a
+  two-step ashing process (abstract).[^fujimura-1989]
 * Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990 — why nitrogen
   is added to oxygen in downstream ashing.[^fujimura-1990]
 * Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1994 —

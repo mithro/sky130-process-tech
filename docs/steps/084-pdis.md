@@ -195,8 +195,9 @@ fab (SKY130's recipe is not public):
 
 ### Deep dive
 
-* Fujimura et al. (Fujitsu), *JJAP* 1989 — the crust-and-popping
-  mechanism of implanted resist.[^fujimura-1989]
+* Fujimura et al. (Fujitsu), *JJAP* 1989 — the carbonised layer of
+  high-dose implanted resist, the residues of O₂ ashing and a two-step
+  ashing process (abstract).[^fujimura-1989]
 * Fujimura et al. (Fujitsu), *JJAP* 1990 — nitrogen addition in
   downstream ashing.[^fujimura-1990]
 * Fujimura et al. (Fujitsu), *JVST B* 1994 — O₂+H₂O downstream ashing

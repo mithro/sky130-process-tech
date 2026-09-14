@@ -62,7 +62,7 @@ An industry-generic post-implant strip on a bare poly surface, for a
 
 1. **Plasma ash.** Downstream O₂ plasma with N₂ or {term}`forming gas`,
    beginning at low temperature to remove the crust without
-   popping[^fujimura-1989][^pat-strip-mosel] and finishing hot for the
+   popping[^pat-strip-mosel] and finishing hot for the
    bulk; water-vapour or H₂-containing chemistries penetrate a crust
    faster than dry oxygen.[^fujimura-1991] Fujimura et al. also showed
    that O₂ + H₂O downstream ashing is free of the sodium contamination
@@ -148,8 +148,9 @@ chemical oxide is thin and will be buried under the
 
 * Orvek and Huffman, *NIM B* 1985 — carbonised-layer formation in
   implanted resist.[^orvek-1985]
-* Fujimura et al., *Jpn. J. Appl. Phys.* 1989 — ashing of implanted
-  resist and popping.[^fujimura-1989]
+* Fujimura et al., *Jpn. J. Appl. Phys.* 1989 — the carbonised layer
+  of high-dose implanted resist, the residues of O₂ ashing and a
+  two-step ashing process (abstract).[^fujimura-1989]
 * Fujimura et al., *J. Vac. Sci. Technol. B* 1991 — O₂ + H₂O downstream
   stripping, the water-vapour chemistry.[^fujimura-1991]
 * Fujimura et al., *J. Vac. Sci. Technol. B* 1994 — sodium-free

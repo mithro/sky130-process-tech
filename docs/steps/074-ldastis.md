@@ -70,7 +70,7 @@ An industry-generic post-implant strip and pre-anneal clean for a
 1. **Plasma ash.** Downstream microwave or RF oxygen plasma with
    nitrogen[^fujimura-1990] or water vapour[^fujimura-1994] additions;
    a cooler first stage — "low-temperature (<220 °C)"[^pat-strip-mosel]
-   — to open the crust without {term}`popping`,[^fujimura-1989] then a hot
+   — to open the crust without {term}`popping`,[^pat-strip-mosel] then a hot
    stage to clear the bulk, with optical-emission {term}`endpoint` and a timed
    over-ash. SkyWater's ashers offer these chemistries: "Gasonic PEP,
    remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF
@@ -185,8 +185,9 @@ An industry-generic post-implant strip and pre-anneal clean for a
   replaces the hot RCA sequence.[^ohmi-1996]
 * ITRS 2001, *Front End Processes* — surface-preparation
   requirements for metallic and particle contamination.[^itrs-01]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the crust
-  and popping mechanism.[^fujimura-1989]
+* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the carbonised
+  layer of high-dose implanted resist, the residues of O₂ ashing and a
+  two-step ashing process (abstract).[^fujimura-1989]
 * Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990 — nitrogen in
   downstream ashing.[^fujimura-1990]
 * Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1994 —
