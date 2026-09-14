@@ -24,25 +24,25 @@ Papers by type of venue, then by venue series.
 
 * {ref}`paper-hsieh-2021a` — E. R. Hsieh et al., IEEE Electron Device Letters 2021 (affiliation inference)
 
-### IEEE JXCDC
+### IEEE Journal on Exploratory Solid-State Computational Devices and Circuits
 
-* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE JXCDC 2026 (free copy)
+* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 2026 (free copy)
 
 ### IEEE Solid-State Circuits Letters
 
 * {ref}`paper-zhang-2022a` — Qirui Zhang et al., IEEE Solid-State Circuits Letters 2022
 
-### IEEE TCAS-I
+### IEEE Transactions on Circuits and Systems I
 
-* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE TCAS-I 2024
+* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE Transactions on Circuits and Systems I 2024
 
 ### IEEE Transactions on Electron Devices
 
 * {ref}`paper-le-2021a` — Binh Q. Le et al., IEEE Transactions on Electron Devices 2021 (affiliation inference)
 
-### JVST B
+### Journal of Vacuum Science & Technology B
 
-* {ref}`paper-ivanov-2006a` — Ivan P. Ivanov et al., JVST B 2006 (affiliation inference)
+* {ref}`paper-ivanov-2006a` — Ivan P. Ivanov et al., Journal of Vacuum Science & Technology B 2006 (affiliation inference)
 
 ### Microscopy and Microanalysis
 

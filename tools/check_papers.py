@@ -8,6 +8,8 @@
 ``data/papers.yaml`` holds the included papers and
 ``data/papers-excluded.yaml`` the papers that were considered and
 excluded or held, so that they are not rediscovered and re-argued.
+``data/papers-labels.yaml`` is the append-only map of every published
+page label to its paper id.
 
 Offline checks (always run):
 
@@ -36,7 +38,11 @@ Offline checks (always run):
   ``docs/references/public-sources.md``;
 * ``verified``, every link's ``checked`` and every exclusion's
   ``decided`` start with an ISO 8601 date that is not in the future;
-* ``paywalled`` agrees with the listed free copies.
+* ``paywalled`` agrees with the listed free copies;
+* titles, notes, quotes and reasons are single lines;
+* every record's label is in the label map with its id, and every label
+  in the map is still used by the same paper (a published label may not be
+  dropped, renamed or reused; an id correction goes in ``previous_ids``).
 
 ``--online`` re-fetches every DOI from the Crossref REST API and compares
 title, author family names, year (a record may carry an earlier
@@ -73,6 +79,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "papers.yaml"
 EXCLUDED = ROOT / "data" / "papers-excluded.yaml"
+LABELS = ROOT / "data" / "papers-labels.yaml"
 DOCS = ROOT / "docs"
 INVENTORY = DOCS / "references" / "public-sources.md"
 UA = "sky130-process-tech docs checker"
@@ -93,10 +100,10 @@ TOPICS = {
     "photonics": "photonic or optoelectronic devices",
     "mems": "MEMS or post-processed mechanical structures",
     # circuits fabricated on the process
-    "analog-rf": "analog and RF circuits with silicon results",
-    "mixed-signal": "data converters and other mixed-signal circuits with silicon results",
-    "power-management": "power converters and regulators with silicon results",
-    "digital": "digital logic, processors and accelerators with silicon results",
+    "analog-rf": "analog and RF circuits designed for or fabricated on the process",
+    "mixed-signal": "data converters and other mixed-signal circuits designed for or fabricated on the process",
+    "power-management": "power converters and regulators designed for or fabricated on the process",
+    "digital": "digital logic, processors and accelerators designed for or fabricated on the process",
     "memory": "SRAM and other memory macros",
     "sensors": "sensor front ends and sensing systems",
     "quantum": "circuits for quantum computing or quantum devices",
@@ -125,6 +132,7 @@ KEYS = [
 ]
 LINK_KEYS = ["url", "host", "oa_type", "located_via", "checked"]
 EXCLUDED_KEYS = ["id", "title", "year", "status", "reason", "decided"]
+LABEL_KEYS = ["label", "id", "previous_ids", "published"]
 
 # Hosts accepted for free full-text copies (fails closed on new hosts).
 ALLOWED_FREE_HOSTS = {
@@ -386,6 +394,16 @@ def check_record(i: int, r: object, labels: set[str], inv_keys: set[str], today:
         probs.append(f"{where}: discovery must be a non-empty list")
     if not str_or_null(r.get("notes")):
         probs.append(f"{where}: notes must be null or text")
+    single_line = [("title", r.get("title")), ("title_display", r.get("title_display")), ("notes", r.get("notes")),
+                   ("venue", r.get("venue")), ("verified", r.get("verified"))]
+    if isinstance(fab, dict):
+        single_line.append(("fabrication.quote", fab.get("quote")))
+    for dd in rel if isinstance(rel, list) else []:
+        if isinstance(dd, dict):
+            single_line.append((f"related_docs reason for {dd.get('label')}", dd.get("reason")))
+    for fld, val in single_line:
+        if isinstance(val, str) and re.search(r"[\n\r\t]", val):
+            probs.append(f"{where}: {fld} must be a single line (no newlines or tabs)")
     if not date_ok(r.get("verified"), today) or len(str(r.get("verified"))) < 12:
         probs.append(f"{where}: verified must be '<ISO date> <source fetched>' with a date not in the future")
     return probs
@@ -416,6 +434,47 @@ def check_excluded(i: int, r: object, today: dt.date) -> list[str]:
     if not date_ok(r.get("decided"), today):
         probs.append(f"{where}: decided must be an ISO date not in the future")
     probs += scan_text(where, json.dumps(r, ensure_ascii=False))
+    return probs
+
+
+def check_labels(entries: object, data: list, excluded: list, today: dt.date) -> list[str]:
+    """The label map is append-only: every published label keeps its id for good."""
+    if not isinstance(entries, list):
+        return [f"{LABELS.name}: top level must be a list"]
+    probs: list[str] = []
+    records = {r.get("id"): r for r in data if isinstance(r, dict)}
+    excluded_ids = {r.get("id") for r in excluded if isinstance(r, dict)}
+    seen_labels: set[str] = set()
+    seen_ids: dict[str, str] = {}
+    for i, e in enumerate(entries):
+        where = f"{LABELS.name} entry {i}"
+        if not isinstance(e, dict) or list(e.keys()) != LABEL_KEYS:
+            probs.append(f"{where}: keys must be {LABEL_KEYS}")
+            continue
+        lab, pid, prev = e["label"], e["id"], e["previous_ids"]
+        if not isinstance(lab, str) or not LABEL_ID_RE.match(lab):
+            probs.append(f"{where}: malformed label {lab!r}")
+        if not isinstance(prev, list) or not all(isinstance(x, str) for x in prev):
+            probs.append(f"{where}: previous_ids must be a list of ids")
+            prev = []
+        if not date_ok(e["published"], today):
+            probs.append(f"{where}: published must be an ISO date not in the future")
+        if lab in seen_labels:
+            probs.append(f"{where}: label {lab!r} listed twice (labels may never be reused)")
+        seen_labels.add(lab)
+        for x in [pid, *prev]:
+            if x in seen_ids and seen_ids[x] != lab:
+                probs.append(f"{where}: id {x!r} already has label {seen_ids[x]!r}")
+            seen_ids[x] = lab
+        rec = records.get(pid)
+        if rec is None:
+            probs.append(f"{where}: published label {lab!r} ({pid}) is not in papers.yaml; a published label "
+                         f"may not be dropped" + (" (the id is in the exclusions file)" if pid in excluded_ids else ""))
+        elif rec.get("label") != lab:
+            probs.append(f"{where}: {pid} has label {rec.get('label')!r}, but its published label is {lab!r}")
+    for pid, rec in records.items():
+        if isinstance(pid, str) and seen_ids.get(pid) != rec.get("label"):
+            probs.append(f"{pid}: label {rec.get('label')!r} is not recorded in {LABELS.name}")
     return probs
 
 
@@ -535,12 +594,13 @@ def main() -> int:
     ap.add_argument("--links", action="store_true", help="re-fetch free full-text links")
     ap.add_argument("--file", type=Path, default=DATA)
     ap.add_argument("--excluded", type=Path, default=EXCLUDED)
+    ap.add_argument("--labels", type=Path, default=LABELS)
     args = ap.parse_args()
 
     data, err = load(args.file)
     if err:
         print(err)
-        print("0 papers checked, 1 problems")
+        print("0 papers checked, 1 problem")
         return 1
     excluded, err = load(args.excluded)
     problems: list[str] = []
@@ -581,6 +641,8 @@ def main() -> int:
             problems += online_check(r)
         if args.links:
             problems += links_check(r)
+    labels_map, err = load(args.labels)
+    problems += [err] if err else check_labels(labels_map, data, excluded, today)
     included_ids = {r.get("id") for r in data if isinstance(r, dict)}
     ex_seen: set[str] = set()
     for i, r in enumerate(excluded):
@@ -593,7 +655,8 @@ def main() -> int:
             ex_seen.add(r["id"])
     for p in problems:
         print(p)
-    print(f"{len(data)} papers checked, {len(problems)} problems ({len(excluded)} excluded or held papers checked)")
+    noun = "problem" if len(problems) == 1 else "problems"
+    print(f"{len(data)} papers checked, {len(problems)} {noun} ({len(excluded)} excluded or held papers checked)")
     return 1 if problems else 0
 
 

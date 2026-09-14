@@ -1,7 +1,7 @@
 <!-- Generated from data/papers.yaml by tools/gen_papers.py; do not edit. -->
 
 (papers-by-module)=
-# Papers by process module
+# Papers by related page
 
 Papers grouped by the pages of this reference they relate to, with the
 reason for each link. Papers without a related page are listed at the end.
@@ -15,11 +15,11 @@ reason for each link. Papers without a related page are listed at the end.
   * {ref}`paper-srimani-2020a` — T. Srimani et al., VLSI Symposium 2020 (affiliation inference) — The page's ReRAM section cites this BEOL RRAM integration work.
   * {ref}`paper-hsieh-2021a` — E. R. Hsieh et al., IEEE Electron Device Letters 2021 (affiliation inference) — The paper reports RRAM arrays in a foundry process with a SkyWater co-author; the overview page describes the sky130B ReRAM module, and that these arrays use it is not stated.
   * {ref}`paper-le-2021a` — Binh Q. Le et al., IEEE Transactions on Electron Devices 2021 (affiliation inference) — The paper reports HfO2-based RRAM arrays in a 130 nm process with a SkyWater co-author; the overview page describes the sky130B ReRAM module, and that these arrays use it is not stated.
-  * {ref}`paper-alshaya-2022a` — Abdulaziz Alshaya et al., ICM 2022 — The overview page describes the sky130B ReRAM module whose device model this paper exercises.
+  * {ref}`paper-alshaya-2022a` — Abdulaziz Alshaya et al., ICM 2022 — The abstract describes SkyWater's memristor device and model; the overview page describes the sky130B ReRAM module, and that this is its PDK model is our reading.
   * {ref}`paper-srimani-2023a` — T. Srimani et al., VLSI Symposium 2023 — The overview page describes the BEOL ReRAM tier; this work stacks RRAM in the BEOL at SkyWater.
   * {ref}`paper-upton-2023a` — Luke R. Upton et al., ISQED 2023 — The yield test vehicle characterises RRAM in SkyWater's 130 nm technology; the overview page describes the sky130B ReRAM module.
   * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025 — The overview page describes the BEOL ReRAM tier; this work integrates RRAM and CNFETs in the BEOL at SkyWater.
-  * {ref}`paper-didin-2026a` — Irem Didin et al., IEEE JXCDC 2026 (free copy) — The paper characterises ReRAM devices fabricated in the SkyWater 130 nm process; the overview page describes the sky130B ReRAM module.
+  * {ref}`paper-didin-2026a` — Irem Didin et al., IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 2026 (free copy) — The paper characterises ReRAM devices fabricated in the SkyWater 130 nm process; the overview page describes the sky130B ReRAM module.
   * {ref}`paper-bloomer-2026a` — Everest Bloomer et al., arXiv 2026 (free copy) — The crossbar is a ReRAM array fabricated in the Skywater 130 nm process; the overview page describes the sky130B ReRAM module.
 
 ## Step pages
@@ -32,7 +32,7 @@ reason for each link. Papers without a related page are listed at the end.
 * {ref}`category-oxidation`
   * {ref}`paper-mathur-2005a` — N. Mathur et al., IIRW 2005 (affiliation inference) — The OTP device's programming relies on breakdown of the gate oxide that the oxidation category covers.
 * {ref}`category-strip`
-  * {ref}`paper-grover-2019a` — Sidhant Grover and Philip Thompson, ASMC 2019 (affiliation inference) — Resist strip on metal layers is the step the rework scheme modifies.
+  * {ref}`paper-grover-2019a` — Sidhant Grover and Philip Thompson, ASMC 2019 (affiliation inference) — The rework scheme strips resist from metal-layer wafers in a dry strip chamber before they are recoated.
 
 ## Machine pages
 
@@ -45,13 +45,13 @@ reason for each link. Papers without a related page are listed at the end.
 * {ref}`machine-defect-inspection`
   * {ref}`paper-sajoto-1999a` — D. Sajoto et al., ISSM 1999 (affiliation inference) — The paper optimises in-line defect inspection against end-of-line bit failures.
 * {ref}`machine-downstream-plasma-asher`
-  * {ref}`paper-grover-2019a` — Sidhant Grover and Philip Thompson, ASMC 2019 (affiliation inference) — The paper changes the dry strip chamber temperature used to rework patterned Al-0.5 wt% Cu metal wafers.
+  * {ref}`paper-grover-2019a` — Sidhant Grover and Philip Thompson, ASMC 2019 (affiliation inference) — The paper changes the dry strip chamber temperature (270 °C to 300 °C) used in photo rework of metal-layer wafers with 0.5 wt% Cu.
 * {ref}`machine-pecvd`
-  * {ref}`paper-smith-2005a` — E. Smith and A. Raviswaran, ISSM 2005 (affiliation inference) — The paper describes run-to-run control of PECVD dielectric deposition.
+  * {ref}`paper-smith-2005a` — E. Smith and A. Raviswaran, ISSM 2005 (affiliation inference) — The paper describes an APC engine that compensates PECVD dielectric deposition for tool rate drift and pattern density.
 * {ref}`machine-plasma-etcher-metal`
   * {ref}`paper-grenci-2001a` — C. Grenci et al., ISSM 2001 (affiliation inference) — The paper reports polymer control and mean time between cleans in aluminium etch chambers.
 * {ref}`machine-tungsten-cvd`
-  * {ref}`paper-ivanov-2006a` — Ivan P. Ivanov et al., JVST B 2006 (affiliation inference) — The paper studies CVD tungsten trench fills with a TiN barrier, nucleation W and bulk W.
+  * {ref}`paper-ivanov-2006a` — Ivan P. Ivanov et al., Journal of Vacuum Science & Technology B 2006 (affiliation inference) — The paper studies CVD tungsten trench fills with a TiN barrier, nucleation W and bulk W.
 
 ## Papers without a related page
 
@@ -64,7 +64,7 @@ reason for each link. Papers without a related page are listed at the end.
 * {ref}`paper-singhani-2023a` — Anish Singhani, ISCAS 2023
 * {ref}`paper-rodriguez-ferrandez-2023a` — Ivan Rodriguez-Ferrandez et al., IOLTS 2023 (free copy)
 * {ref}`paper-cirimelli-low-2023a` — Jesse Cirimelli-Low et al., ISCAS 2023 (free copy)
-* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE TCAS-I 2024
+* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE Transactions on Circuits and Systems I 2024
 * {ref}`paper-mathews-2024a` — Pranav Mathews et al., CICC 2024
 * {ref}`paper-yang-2024a` — Raymond H. Yang and Yaqing Xia, IEEE Design & Test 2024
 * {ref}`paper-blocklove-2024a` — Jason Blocklove et al., LAD 2024 (free copy)
