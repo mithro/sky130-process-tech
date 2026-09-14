@@ -37,8 +37,8 @@ is on the step page; every mask is indexed on the
 ## What the mask defines
 
 The PDK has no drawn P-well layer: `gds_layers.csv` lists `pwell` only
-with `resistor`, `label`, `pin` and `cut` purposes, and Table C3 of the *Layers
-Reference* defines `pwell` as "NOT nwell (default substrate
+with `resistor`, `label`, `pin` and `cut` purposes, and Table C3 of the
+*Layers Reference* defines `pwell` as "NOT nwell (default substrate
 area)".[^pdk-06] The drawn layer that carries this mask's name is
 `pwbm`, "Regions (in UHVI) blocked from p-well implant (DE MOS devices
 only)", whose rule set's function line is "Define p-well
@@ -71,12 +71,12 @@ Tee et al. describe the opposite choice in another process — using the
 baseline P-well implant in a high-voltage LDNMOS "to avoid an additional
 mask and process step".[^tee-2010]
 
-The SKY130 {term}`test tile`'s pad documentation names one 20 V
-zero-Vt structure `n20zvtvhv1`, "w/l=30/5.5; m=2", with the cell name
+The SKY130 {term}`test tile`'s pad documentation names one 20 V zero-Vt
+structure `n20zvtvhv1`, "w/l=30/5.5; m=2", with the cell name
 `s8defet_ccgx_hvn_nw_dnw_native_sti_2p0_nopw_L5p0_W60`;[^raw-data-testtile-pads]
 the pad list does not explain the name. The {ref}`PWBM <step-026>`
-page's analysis of that structure's published measurements finds an effective body doping far
-below the P-well peak.
+page's analysis of that structure's published measurements finds an
+effective body doping far below the P-well peak.
 
 ## Drawn layers and derivation
 
@@ -116,16 +116,16 @@ and neither source settles which is right.
 No rendered die on any of the eight runs draws `pwbm`: every image is
 empty, including those of MPW-6 and MPW-8, the two runs for which the
 sheet records a plate.[^mask-renders][^steps-sheet] The site says that
-"Empty images are real results - several masks are used by no project
-on a given shuttle", and states the limits of its images: "These are
+"Empty images are real results - several masks are used by no project on
+a given shuttle", and states the limits of its images: "These are
 renders of *drawn* data, not photomask artwork: reticle pitch, 4x
 reduction, mirroring and the frame features the fab adds are not
 modelled."[^mask-renders] The renders therefore cannot show what the
 MPW-6 and MPW-8 plates carry, and on the step page's reading, in which
 the plate also covers N-wells, a render of `pwbm` alone would be empty
-even for a plate with shapes (inference). The site's metadata carries no plate
-ID, and the MPW-4 renders come from a different reticle set from the one
-whose plates the sheet records
+even for a plate with shapes (inference). The site's metadata carries no
+plate ID, and the MPW-4 renders come from a different reticle set from
+the one whose plates the sheet records
 ({ref}`masks-mpw-reticle-sets`).[^mask-renders][^steps-sheet]
 
 ## Plates and reticle sets
@@ -161,9 +161,9 @@ is the heading of the run's columns in the tab
   page does not read the two recorded plates as evidence that any
   project used the 20 V devices.[^mask-renders][^steps-sheet]
 * **Plate number.** `024` lies between `020` for `FOM` and `026` for
-  `PWDEM`, and a few numbers above `010` for `NWM`; the numbers do not follow
-  process order elsewhere, and the sheet does not say what they encode,
-  so no process position is read from it
+  `PWDEM`, and a few numbers above `010` for `NWM`; the numbers do not
+  follow process order elsewhere, and the sheet does not say what they
+  encode, so no process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type and magnification.** The sheet's "Sheet4" tab gives no
   type for `PWBM`,[^steps-sheet] and no public source gives this
@@ -283,16 +283,16 @@ The Error Messages page's messages give values for two of these rules:
 `pwbm.5`, "0.84 min. spacing of pwbm_holes", and `rpm.10`, "2 min.
 spacing of rpmNotXmt & pwbm" (with "rpmNotXmt must not overlap
 pwbm").[^pdk-errors] Table 2 of *Criteria & Assumptions* gives `PWBMCD`
-0.84 and `PWBMCDSP` 1.27.[^pdk-03] Table 3d gives punch-through spacings of "p+ in nwell to
-pwell" 0.05 µm (`PPTS`) and "n+ in pwell to nwell" 0.15 µm (`PNPTS`),
-and Table 7 a "spacing of p-well outside deep n-well to deep n-well
-mask edge" of 0.12 (`NWDNWENCL`) and a "p-well in deep n-well to p-sub"
-of 1.2 (`NWDNWOL`).[^pdk-03] The test tile's pad documentation has
-"Pwell to Pwell Isolation in DNW" structures at spaces of 1.40, 1.20,
-1.00 and 0.84 µm.[^raw-data-testtile-pads] None of these is stated
-as a rule for this mask; for the plate on the step page's reading, the
-N-well rules nwell.1 and nwell.2a would set the smallest features
-(inference).
+0.84 and `PWBMCDSP` 1.27.[^pdk-03] Table 3d gives punch-through spacings
+of "p+ in nwell to pwell" 0.05 µm (`PPTS`) and "n+ in pwell to nwell"
+0.15 µm (`PNPTS`), and Table 7 a "spacing of p-well outside deep n-well
+to deep n-well mask edge" of 0.12 (`NWDNWENCL`) and a "p-well in deep
+n-well to p-sub" of 1.2 (`NWDNWOL`).[^pdk-03] The test tile's pad
+documentation has "Pwell to Pwell Isolation in DNW" structures at spaces
+of 1.40, 1.20, 1.00 and 0.84 µm.[^raw-data-testtile-pads] None of these
+is stated as a rule for this mask; for the plate on the step page's
+reading, the N-well rules nwell.1 and nwell.2a would set the smallest
+features (inference).
 
 ## Related pages
 

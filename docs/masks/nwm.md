@@ -117,11 +117,11 @@ record gives the mask-level layer 21:0 and the note "NWM = nwell sized
 exemptions".[^mask-renders] The periphery rules have no `cnwm.3a` or
 `cnwm.3b`; the only other `cnwm` names in the PDK are Table C3's
 `cnwm.3f` and the Error Messages page's `cnwm.nikon`
-checks,[^pdk-periph][^pdk-06][^pdk-errors] and the site gives no source for the
-note. The render job lists only the drawn layer, with no sizing step,
-so, as the {ref}`masks index <masks-renders>` reads the site in general,
-the images are unsized drawn data. The note and the choice of layer are
-one public derivation from the drawn data, not SkyWater's
+checks,[^pdk-periph][^pdk-06][^pdk-errors] and the site gives no source
+for the note. The render job lists only the drawn layer, with no sizing
+step, so, as the {ref}`masks index <masks-renders>` reads the site in
+general, the images are unsized drawn data. The note and the choice of
+layer are one public derivation from the drawn data, not SkyWater's
 mask-generation recipe.
 
 All 40 rendered dies of every run carry `nwell` shapes, but that says
@@ -130,15 +130,16 @@ at least 352 206 shapes, the minimum on each run lies between 352 206
 (MPW-5) and 463 378 (MPW-8), and on MPW-1 one die accounts for 99 % of
 the run's shapes.[^mask-renders] Counts rarely repeat — on no run do
 more than nine dies have a count that another die shares — so we read
-the large minimum as `nwell` shapes that every die of these runs
-carries rather than as project content (inference; the site does not say what they are). The site
-states the limits of its images: "These are renders of *drawn* data,
-not photomask artwork: reticle pitch, 4x reduction, mirroring and the
-frame features the fab adds are not modelled."[^mask-renders] Its
-metadata carries no plate ID, so a render is tied to a plate in the
-process-steps sheet only by the acronym `NWM`, and the MPW-4 renders
-come from a different reticle set from the one whose plates the sheet
-records ({ref}`masks-mpw-reticle-sets`).[^mask-renders][^steps-sheet]
+the large minimum as `nwell` shapes that every die of these runs carries
+rather than as project content (inference; the site does not say what
+they are). The site states the limits of its images: "These are renders
+of *drawn* data, not photomask artwork: reticle pitch, 4x reduction,
+mirroring and the frame features the fab adds are not
+modelled."[^mask-renders] Its metadata carries no plate ID, so a render
+is tied to a plate in the process-steps sheet only by the acronym `NWM`,
+and the MPW-4 renders come from a different reticle set from the one
+whose plates the sheet records
+({ref}`masks-mpw-reticle-sets`).[^mask-renders][^steps-sheet]
 
 ## Plates and reticle sets
 
@@ -275,12 +276,12 @@ Steps:
 * {ref}`LVTPIS <step-021>` — strips the resist after all three implants
   and cleans the wafer.
 
-The next step, {ref}`HVTPM <step-022>`, is itself the next mask step:
-on its step page's reading it coats a new resist for the high-Vt PMOS
+The next step, {ref}`HVTPM <step-022>`, is itself the next mask step: on
+its step page's reading it coats a new resist for the high-Vt PMOS
 implants on the cleaned surface. The one point that needs stating is
-{ref}`LVTPI <step-020>`: on its step page it is a channel implant
-rather than a well implant, and the strip follows it in the step list,
-but the step pages read it as using the `NWM` resist — the arrangement of an IBM
+{ref}`LVTPI <step-020>`: on its step page it is a channel implant rather
+than a well implant, and the strip follows it in the step list, but the
+step pages read it as using the `NWM` resist — the arrangement of an IBM
 retrograde-well patent cited there[^pat-well-ibm] — and no public
 document says so. On that reading the rule needs no exception for this
 mask.

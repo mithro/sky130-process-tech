@@ -2568,8 +2568,11 @@ Also used on the LVTNM and HVTPM mask pages.
 **MORRIS-2000** — W. Morris and L. Rubin, *"Technical and economic
 considerations for retrograde well and channel implants"*, 2000
 International Conference on Ion Implantation Technology, pp. 73–76,
-DOI 10.1109/IIT.2000.924093. Why MeV retrograde wells replaced diffused
-wells, with the cost trade-offs.
+DOI 10.1109/IIT.2000.924093. Compares batch high-energy with serial
+medium-current implanters for a CMOS process with multiple modulated
+well implants, in device performance and cost (batch tools lower total
+capital cost, footprint and cost per wafer out), and models quad
+implants for retrograde wells in narrow STI structures.
 Also used on the medium-current and high-energy implanter pages.
 Tier: deep dive.
 Also used on the NWM mask page.
@@ -14425,10 +14428,12 @@ no entry above. Each label on those pages is the key below in lower case
 and the citation is the one given in the page footnote; the entries are
 grouped by the mask page that first cited the source, and sources
 already listed above record their use on a mask page in an "Also used
-on" line of their own. None of these sources mentions SkyWater, SKY130
-or the Bloomington fab; they describe masks, mask making, lithography,
-implantation, well engineering, CMP fill, multi-threshold and
-high-voltage devices in general. Every URL was fetched on 2026-09-13 or
+on" line of their own. Apart from PDK-SUMMARY and PDK-ERRORS, pages of
+the SkyWater SKY130 PDK documentation, none of these sources mentions
+SkyWater, SKY130 or the Bloomington fab; they describe masks, mask
+making and inspection, phase-shift masks, lithography and proximity
+correction, implantation, well engineering, CMP fill, layout-dependent effects, multi-threshold,
+varactor and high-voltage devices in general. Every URL was fetched on 2026-09-13 or
 2026-09-14: papers and books were checked through Crossref
 (bibliographic data) and OpenAlex (abstracts or tables of contents), and
 their annotations rest on those. An entry's tier records its first use.
