@@ -2,8 +2,9 @@
 # LI1M — Local Intrcnct 1
 
 The local-interconnect mask is the {term}`reticle` that draws SKY130's
-lowest wiring level, the titanium nitride {term}`local interconnect`
-that joins transistors, taps and poly below metal 1: on the
+lowest wiring level, the {term}`local interconnect` (titanium nitride on
+the {ref}`LITIN <step-101>` page's reading) that joins transistors, taps
+and poly below metal 1: on the
 {ref}`LI1M <step-102>` page's reading, the resist printed through it at
 step 102 stays wherever `li1` is drawn and protects the TiN that the
 {ref}`LI1ME <step-103>` etch leaves standing as lines and pads. It prints
@@ -149,10 +150,10 @@ set is the heading of the run's columns in the tab
 | MPW-7 | `5CS8016AC` | `S8016AA370A` |
 | MPW-8 | `5CS8017AC` | `S8017AA370A` |
 
-* **Plate number.** The sheet does not say what `370` encodes. It falls
-  between `265` for `LICM1` and `400` for `CTM1`, but the numbers do not
-  follow process order elsewhere (`NSDM`, step 85, is `250` and `PSDM`,
-  step 81, `260`), so no process position is read from it
+* **Plate number.** The sheet does not say what `370` encodes. Its
+  neighbours in the tab are `317` for `HVTPM` (step 22) and `400` for
+  `CTM1` (step 107), so the numbers do not follow process order, and no
+  process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type.** The sheet's "Sheet4" tab gives no type for
   `LI1M`.[^steps-sheet] Whether the plate is binary, with or without
@@ -200,17 +201,18 @@ describe such a rules-based correction, whose "edge rules and corner
 rules" bias feature edges and add sub-resolution assist
 features;[^otto-1994] Rieger and Stirniman generate behaviour models
 that serve as the correction rules;[^rieger-1994] and Cobb and Zakhor
-made the aerial-image calculation fast enough for model-based
-correction.[^cobb-1995] Shi et al. showed that the "forbidden pitch" lies
+made aerial-image calculation fast for the mask perturbations OPC
+produces.[^cobb-1995] Shi et al. showed that the "forbidden pitch" lies
 where the fields of neighbouring features interfere destructively with
-the main feature's, which illumination design and scattering-bar
-placement can suppress.[^shi-2002] Line ends matter on a wiring level:
+the main feature's, which illumination design can suppress, with
+scattering bars placed for best performance.[^shi-2002] Line ends matter on a wiring level:
 Garofalo et al. found that line-end shortening "reduces the wafer process
 latitude and in some cases even eliminates the level-to-level overlay
 margin",[^garofalo-1995] and the `li` rules need 0.080 µm of LI beyond a
 licon on one of two adjacent sides (li.5).[^pdk-periph]
 
-**Substrate and tone.** The resist is coated on TiN. Sturtevant et al.
+**Substrate and tone.** On the step pages' readings the resist is
+coated on TiN. Sturtevant et al.
 examined DUV resists on substrates including titanium nitride and found a
 "substrate contamination" effect "which results in distorted photoresist
 profiles at the substrate/resist interface", with organic
@@ -302,7 +304,8 @@ calculations" as 0.1 (`LiThick`) and a "Li resistor width (to drop one
 Licon w/o dogbones)" of 0.29 (`LIRESCD`), the value of li.7; Table 7
 gives, besides the add/drop and proximity rows, a "Keepout of active,
 poly, li and metal to NSM (TCS-2253)" of 1 (`NSMKeepout`), the value of
-nsm.3.[^pdk-03] The summary Table F3c repeats li1 width and spacing as
+nsm.3.[^pdk-03] The summary Table F3c, "Back end layers for S8D\*
+flow", repeats li1 width and spacing as
 0.170 and 0.170 with 0.000 for its enclosure of licon, noting that "All
 enclosures in tables are nominal and do not apply to butting edges or
 corners".[^pdk-summary] For the plate the smallest features are the
@@ -371,8 +374,8 @@ pitch, and elsewhere 0.170 µm on a 0.34 µm pitch (our arithmetic).
   features.[^otto-1994]
 * Rieger and Stirniman, *Proc. SPIE* 1994 — behaviour models as
   correction rules.[^rieger-1994]
-* Cobb and Zakhor, *Proc. SPIE* 1995 — fast aerial-image calculation for
-  model-based OPC.[^cobb-1995]
+* Cobb and Zakhor, *Proc. SPIE* 1995 — fast aerial-image calculation suited
+  to the mask perturbations of OPC.[^cobb-1995]
 * Shi et al., *Proc. SPIE* 2002 — the forbidden-pitch phenomenon and
   assist-feature placement.[^shi-2002]
 * Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of dense
