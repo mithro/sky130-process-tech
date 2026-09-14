@@ -24,7 +24,7 @@ mask is indexed on the {ref}`masks index <masks-index>`.
 | Mask-level layer (`gds_layers.csv`) | `cmm4` mask 51:0, "Metal 4 mask"; waffle drop 112:4[^pdk-06] |
 | Drawn layer (`gds_layers.csv`) | `met4` drawing 71:20, "Metal 4"; `met4` fuse 71:17, without a description (the metal-fuse note names MM4)[^pdk-06][^pdk-periph] |
 | Minimum CD, feature / space | `MM4CD` 0.3 / `MM4CDSP` 0.3[^pdk-03] |
-| Polarity and tone | Not published. On the step page's reading the resist remains where `met4` is drawn, which with a positive resist would make the plate clear-field (inference). |
+| Polarity and tone | Not published; the PDK's `cmm4.nikon` checks name a polarity but not the plate's tone. On the step page's reading the resist remains where `met4` is drawn, which with a positive resist would make the plate clear-field (inference). |
 | Exposure class | i-line or KrF (248 nm): the step page finds either plausible for the 0.3 µm line and leaves the class open; no public source names the tool ({ref}`machine-i-line-stepper`, {ref}`machine-duv-krf-stepper`) |
 | Mask type (process-steps sheet) | None recorded; the sheet codes a type for the via 2, via 3 and via 4 plates only[^steps-sheet] |
 | Plates recorded | all eight[^steps-sheet] |
@@ -70,28 +70,44 @@ met4.fe for S8P\*/SP8P\*" and "fuse_metal" as "met3 for
 S8TEE\*/S8TNV/S8Q\*/SP8TEE-5R/SP8Q\*; met2 for S8D\*/S8TM\*, met4 for
 S8P\*/SP8P\*", and `gds_layers.csv` has a `met4` fuse purpose at 71:17
 and a `target` drawing layer at 76:44, "Metal fuse target".[^pdk-06] The
-fuse rules give a fuse a width of 0.800 µm, "Min. and max width of fuse" (mf.1), and a
-length of 7.200 µm (mf.2), on centres 2.760 µm apart (mf.3), with
-"Only one fuse per metal line allowed" (mf.20).[^pdk-periph] The
+fuse rules give a fuse a width of 0.800 µm, "Min. and max width of
+fuse" (mf.1), and a length of 7.200 µm (mf.2), on centres 2.760 µm apart
+(mf.3), with "Only one fuse per metal line allowed"
+(mf.20).[^pdk-periph] SkyWater's published DRC checks name the level:
+the PDK's *Error Messages* page, which describes "many of the automated
+DRC rules that are checked by SkyWater as part of the acceptance criteria
+for GDS data", lists "metal4 fuse should be rectangular", "0.8 min. width
+of metal4 fuse", "7.2 min. length of metal4 fuse" and "0.83 max extension
+of met4 beyond fuse boundary" (mf.5, whose periphery-rule value is printed
+without a unit), with target spacings of 2.75 (mf.3) and 3.295 (mf.4)
+against the periphery tables' 2.760 and 3.300.[^pdk-errors] The
 {ref}`MM4 <step-154>` page reads the fuse links as printed by this mask
-with the wiring (inference from the note), and PLM as the label of the
+with the wiring (inference from the note, supported by the metal-4 fuse
+checks), and PLM as the label of the
 flow this reference follows (inference). Table F2b, the mask generation
 table, has columns for `MM1`, `MM2`, `MM3` and `MM5` but none for `MM4`,
 and marks its two "metal fuse" rows `C` in the `MM2` and `MM3`
 columns;[^pdk-06] the PDK does not explain the missing column.
 
-The PDK's criteria describe how such fuses are opened. Table 5 of
-*Criteria & Assumptions*, "Laser Fuse Criteria", lists in a column headed
+Table 5 of *Criteria & Assumptions*, "Laser Fuse Criteria", bears on how
+such fuses may be opened. It lists in a column headed
 "Value (um)" a "Max. width of a metal fuse line that can be removed
 reliably" of 0.8 (`FSW`), the width of mf.1; a "Min. L of met. fuse at
 which damage doesn't extend beyond ends" of 6.605 (`FSLE`), below the
 7.200 µm of mf.2; a "Nominal effective laser spot diameter" of 3.5
 (`LASSPT`); a "Positioning tolerance of laser spot (3 s)" of 0.3
 (`LASMA`); and a "Fuse melting radius" of 3.6 (`MELTRAD`); Table 9 gives
-an "Enclosure of fuses by polyimide" of 12 (`PimFuseEnc`).[^pdk-03] We
-read the metal-4 fuses as laser-opened links whose drawn width this mask
-fixes (inference from Table 5's title and the equal widths); the PDK does
-not tie Table 5 to a metal level. Smith et al. described the
+an "Enclosure of fuses by polyimide" of 12 (`PimFuseEnc`) and an
+"Enclosure of laser targets in the die by polyimide" of 30
+(`PimLaserEnc`).[^pdk-03] Table 5 also gives a "Max. extension of met2
+beyond fuse boundary" of 0.005 (`FEXT`), which names metal 2, where rule
+mf.5 allows 0.830 of fuse metal and the Error Messages page checks "0.83
+max extension of met4 beyond fuse boundary".[^pdk-03][^pdk-periph][^pdk-errors]
+We read the metal-4 fuses as laser-opened links whose drawn width this
+mask fixes (inference from Table 5's title, the equal 0.8 widths, the
+laser-target criterion and the mf rules' "target"); Table 5's one
+metal-named row is for metal 2, so its criteria may describe a metal-2
+fuse flow. Smith et al. described the
 laser-programmed redundancy of a 64K DRAM, whose polysilicon links were
 blown by laser pulses, "in relation to the target geometry, laser spot
 size and targeting accuracy".[^smith-1981]
@@ -140,7 +156,13 @@ whether a waffle-drop shape places fill or keeps it out; the
 as existing for the {ref}`CMPM4 <step-157>` polish. Metal 4 falls under
 the 0.005 grid of rule x.1b, and rule nsm.3 lists "metX.dg (X=1 to 5)
 and cmmX.mk (X=1 to 5)" among the layers kept 1.000 µm from the
-nitride-seal keep-out (flag AL).[^pdk-periph]
+nitride-seal keep-out (flag AL).[^pdk-periph] The *Error Messages* page
+lists two checks named `cmm4.nikon`, "MM4mk in the nikon cross has the
+wrong polarity" and "MM4mk is missing from the nikon cross in the
+layout";[^pdk-errors] it does not say what the "nikon cross" is, and we
+read the checks as concerning a structure on the mask layer whose data
+must have the right polarity (inference from the message wording), not
+as stating the plate's tone.
 
 ### In the public renders
 
@@ -196,11 +218,14 @@ is the heading of the run's columns in the tab
   recorded for MPW-5; the masks index reads the MPW-5 gap of `VIM4` as
   more likely a gap in the record than in the run
   ({ref}`masks-mpw-runs`).[^steps-sheet]
-* **Plate number.** The sheet does not say what `580` encodes. It falls
-  between `575` for `VIM3` and `582` for `CAP2M`, and is lower than
-  `CAP2M`'s although `MM4` (step 154) comes after `CAP2M` (step 152), so
-  the numbers do not follow process order here, and no process position
-  is read from them ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
+* **Plate number.** The sheet does not say what `580` encodes. From
+  `500` to `590` the via and metal numbers rise in step order, but each
+  capacitor mask is numbered 2 above the metal mask that follows it:
+  `CAP2M` (step 152) is `582` against `MM4` (step 154) `580`, as `CAPM`
+  (step 137) is `572` against `MM3` (step 139) `570` (our comparison).
+  Elsewhere the numbers do not follow process order, and no process
+  position is read from them
+  ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type.** The sheet's "Sheet4" tab gives no type for
   `MM4`.[^steps-sheet] 4× is the ITRS 2001 mask magnification for the
   130 nm generation.[^itrs-03]
@@ -236,7 +261,9 @@ whether the `MM4` plate is dry-etched is not public.
 **Thick metal, capacitors and the resist.** On the step pages' readings
 the resist is coated over the 0.845 µm metal-4 stack,[^pdk-04] which
 carries the thin capacitor dielectric and, over each second-level
-capacitor, a plate island of the order of 0.1 µm, so it sees two
+capacitor, a plate island of the order of 0.1 µm high (the
+{ref}`MM4 <step-154>` page's reading at {ref}`CAPTIW2 <step-151>`), so it
+sees two
 thin-film stacks of different reflectivity and a step at every plate
 edge. Brunner showed that the swing ratio scales with the square root of
 the substrate reflectivity, which an anti-reflective coating
@@ -352,8 +379,11 @@ used as a guideline only."[^pdk-periph]
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
 
 The other fuse rules, mf.6 to mf.19, mf.21, mf.22 and mf.24, set the
-spacings of a fuse centre to the other layers and the fuse shields; mf.5
-is printed without a unit, and mf.23, the spacing to metal 4, has the
+spacings of a fuse centre to other layers and the size, placement and
+spacing of fuse shields and fuse contacts; the Error Messages page gives
+their target spacings slightly below the periphery values (for example
+3.295 for mf.6, mf.7, mf.19 and mf.24, against 3.300).[^pdk-periph][^pdk-errors]
+Rule mf.5 is printed without a unit, and mf.23, the spacing to metal 4, has the
 value "N/A" (our reading: the fuse is itself metal 4 in this
 flow).[^pdk-periph] Table 2 of *Criteria & Assumptions* gives `MM4CD` and
 `MM4CDSP` as 0.3 and 0.3, and the same for a "Metal 4-Cu" row
@@ -362,7 +392,8 @@ flow does not use; Table 4 adds, in its "Material Thicknesses" block,
 the "Oxide Bias for MM4" of 1.15 (`BiasMM4`) and the metal-4 antenna
 thicknesses of 0.8 and 2; Table 5 gives the laser-fuse criteria quoted
 above; Table 7 a "Huge metal X min. W and L" of 3 (`HugeM`), in its column
-headed "CD"; and Table 9 the 12 of polyimide around fuses.[^pdk-03] For
+headed "CD"; and Table 9 the 12 of polyimide around fuses and the 30
+around laser targets.[^pdk-03] For
 the plate the decisive figures are 0.300 µm lines on a 0.6 µm pitch (our
 arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
 
@@ -397,11 +428,13 @@ arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
   columns of Table F2b.[^pdk-06]
 * SkyWater PDK, *Criteria & Assumptions* — `MM4CD`/`MM4CDSP`,
   `MM4_CuCD`/`MM4_CuCDSP`, `BiasMM4`, the metal-4 antenna thicknesses, the
-  laser-fuse criteria, `HugeM` and `PimFuseEnc`.[^pdk-03]
+  laser-fuse criteria, `HugeM`, `PimFuseEnc` and `PimLaserEnc`.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — the `m4` rules, via4.4, the fuse note
   and `mf` rules, nsm.3, x.1a, x.1b, x.7, x.9, x.11, x.15a and the flag
   legend.[^pdk-periph]
 * SkyWater PDK, *Summary of Key Periphery Rules* — Table F4.[^pdk-summary]
+* SkyWater PDK, *Error Messages* page — the metal-4 fuse checks and the
+  `cmm4.nikon` checks.[^pdk-errors]
 * SkyWater PDK, *Process stack diagram* — the 0.845 µm `metal4`.[^pdk-04]
 * SkyWater PDK, *Device Details* — the stacked MiM cross-section with its
   two metal-4 plates.[^pdk-07]
@@ -461,10 +494,13 @@ arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
   waffle-drop shape places fill or keeps it out; the renders' fill layer
   51:28 is not in `gds_layers.csv`, and the renders leave out the fuse
   purpose.[^pdk-06][^pdk-periph][^mask-renders]
-* Table F2b has no `MM4` column, and the PDK does not tie its laser-fuse
-  criteria to metal 4; that the metal-4 fuses of the PLM flow are
-  laser-opened links printed by this mask is an
-  inference.[^pdk-06][^pdk-03][^pdk-periph]
+* Table F2b has no `MM4` column; Table 5 names metal 2 in its `FEXT` row,
+  and whether its laser-fuse criteria apply to the metal-4 fuses of the
+  PLM flow is not stated; that those fuses are laser-opened links printed
+  by this mask is an inference.[^pdk-06][^pdk-03][^pdk-periph] The Error
+  Messages page's target spacings differ from the periphery tables by
+  0.005 to 0.010 without explanation, and it does not explain its "nikon cross"
+  checks.[^pdk-errors]
 * Whether the level is exposed on an i-line or a KrF tool, and the
   plate's type, tone and CD specification, the resist and anti-reflective
   scheme, are not public.
@@ -498,6 +534,10 @@ arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-summary]: SkyWater PDK Authors, *Summary of Key Periphery Rules*
     (Table F4), SkyWater SKY130 PDK documentation, retrieved 2026-09-14.
     <https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>
