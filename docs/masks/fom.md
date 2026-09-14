@@ -235,7 +235,7 @@ the reticle tone open; neither is published. The consumables are on
 the {ref}`lithography materials <material-lithography-materials>` page.
 
 **Pattern transfer.** On the step pages' readings the resist pattern is
-transferred by {ref}`STINITE <step-005>` through the anti-reflective
+transferred by {ref}`STINITE <step-005>` through any anti-reflective
 coating, the isolation nitride and the pad oxide on the
 {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>`
 class, and by {ref}`STIE <step-006>` into the silicon on the
