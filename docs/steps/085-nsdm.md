@@ -169,6 +169,8 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
   {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`.
 * Previous mask: {ref}`PSDM <step-081>`; next mask:
   {ref}`LICM1 <step-093>`.
+* Mask page: {ref}`NSDM <mask-nsdm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
