@@ -128,7 +128,8 @@ An industry-generic drain-extension well lithography for a 200 mm,
    but not necessarily shallower — a deep, graded drift region gives the
    best breakdown — so a 2 µm-class implant resist like that of
    {ref}`PWBM <step-026>` is plausible (inference;[^txt-02] compare
-   IBM's 1800–2500 nm for 550 keV boron[^pat-well-ibm]).
+   IBM's 1800–2500 nm resist for 150 keV and 45 keV boron, its 550 keV
+   boron going through a 200 nm polysilicon mask[^pat-well-ibm]).
 3. **Exposure.** i-line; the layer's features are
    micrometre-scale[^pdk-hv] and its {term}`overlay` requirements are set by the
    drift-region length rather than by a sub-micrometre {term}`CD`. We infer an

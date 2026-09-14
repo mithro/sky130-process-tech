@@ -119,8 +119,10 @@ fab:
 1. **Track preparation.** {term}`HMDS` prime; no {term}`BARC` for a coarse layer
    (inference).[^wiki-litho]
 2. **Thick resist coat.** The resist must stop the deepest P-well boron.
-   IBM's retrograde p-well used boron at 550 keV behind a resist
-   "typically 1800–2500 nm in thickness";[^pat-well-ibm] Hook's IBM
+   IBM's retrograde-well patent implants its deepest P-well boron, at
+   550 keV, through a 200 nm polysilicon mask to avoid boron scattering,
+   and masks its 150 keV and 45 keV boron with a resist "between
+   1800-2500 nm";[^pat-well-ibm] Hook's IBM
    study modelled a "2.3 µm-thick pwell mask" against 600 keV
    boron;[^hook-2003] Zilog's 600–800 keV p-well needed at least
    3.4 µm.[^pat-resist-zilog] For a P-well whose peak is at 0.42 µm and

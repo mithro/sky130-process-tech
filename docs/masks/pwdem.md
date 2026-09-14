@@ -175,9 +175,10 @@ about 0.38 µm at 365 nm and NA 0.48 (our arithmetic), well below it.
 **Resist.** The resist must stop the drain-extension boron wherever the
 plate leaves it. The {ref}`PWDEM <step-030>` page reads a 2 µm-class
 implant resist like that of `PWBM`, on the grounds that a drift well is
-lighter but not necessarily shallower than the main well, and compares
-IBM's resist "typically 1800–2500 nm in thickness" for boron at up to
-550 keV;[^pat-well-ibm] the ion range that sets the thickness is what
+lighter but not necessarily shallower than the main well. An IBM
+retrograde-well patent uses resist "typically 1800–2500 nm in
+thickness" for its 150 keV and 45 keV P-well boron, while its 550 keV
+boron goes through a 200 nm polysilicon mask;[^pat-well-ibm] the ion range that sets the thickness is what
 SRIM computes,[^ziegler-2010] and Lee et al. measured the outgassing of
 thick resists under MeV implantation.[^lee-1996] SkyWater's resist and
 its thickness are not public. The consumables are on the
