@@ -25,7 +25,7 @@ the step page; every mask is indexed on the
 | Mask-level layer (`gds_layers.csv`) | `cmm3` mask 34:0, "Metal 3 mask"; waffle drop 107:24[^pdk-06] |
 | Drawn layer (`gds_layers.csv`) | `met3` drawing 70:20, "Metal 3"[^pdk-06] |
 | Minimum CD, feature / space | `MM3CD` / `MM3CDSP`: "Metal 3-PLM" 0.3 / 0.3; "Metal 3-TLM" 0.36 / 0.36; "Metal 3-S8TM" 0.8 / 0.8[^pdk-03] |
-| Polarity and tone | Not published. On the step page's reading the resist remains where `met3` is drawn, which with a positive resist would make the plate clear-field (inference). |
+| Polarity and tone | Not published; the PDK's `cmm3.nikon` checks name a polarity but not the plate's tone. On the step page's reading the resist remains where `met3` is drawn, which with a positive resist would make the plate clear-field (inference). |
 | Exposure class | i-line or KrF (248 nm): the step page finds either plausible for the 0.3 µm line and leaves the class open; no public source names the tool ({ref}`machine-i-line-stepper`, {ref}`machine-duv-krf-stepper`) |
 | Mask type (process-steps sheet) | None recorded; the sheet codes a type for the via 2, via 3 and via 4 plates only[^steps-sheet] |
 | Plates recorded | Metal 3-PLM: all eight; Metal 3-TLM and Metal 3-S8TM: not recorded[^steps-sheet] |
@@ -37,8 +37,9 @@ the step page; every mask is indexed on the
 
 The periphery rules give the function of the `m3` rule set as "Defines
 third level of metal interconnects, buses etc", and the PDK's Table F4
-shows metal 3 joined to metal 2 and to `capm` by "Via2" and to metal 4
-by "Via3".[^pdk-periph][^pdk-summary] The mask carries lines at the
+shows metal 3 joined to metal 2 by "Via2" and to metal 4 by "Via3"; its
+entry joining `capm` to metal 3 by "Via2" is part of the metal-2/via-2
+wording discussed below.[^pdk-periph][^pdk-summary] The mask carries lines at the
 0.300 µm minimum width and space (m3.1, m3.2), pads that enclose the
 via-2 plugs below by 0.065 µm (m3.4) and the via-3 plugs above by
 0.060 µm (via3.4), wide "huge_met3" features that need 0.400 µm of space
@@ -63,7 +64,8 @@ text: met2) in the flow described here.
 Table F2b, the mask generation table, marks the `MM3` column `C`
 ("CREATED") in two of its 80 device rows — "metal fuse_D" and "VPP (with
 met3 shield)" — and `+`, "Layer allowed to overlap", in the other
-78.[^pdk-06] One row of rule x.11 reads "Metal fuses are drawn in met3",
+78, including the "MiM" row, whose `C` marks are in the `CAPM` and `MM2`
+columns ({ref}`mask-mm2`).[^pdk-06] One row of rule x.11 reads "Metal fuses are drawn in met3",
 with values "N/A", beside rows naming met2 and met4; Table C3 gives the
 "fuse_metal" as "met3 for S8TEE\*/S8TNV/S8Q\*/SP8TEE-5R/SP8Q\*; met2 for
 S8D\*/S8TM\*, met4 for S8P\*/SP8P\*"; and the note above the fuse rules
@@ -129,7 +131,14 @@ met4.dg OR mm4.mk (for SP8Q/S8Q\*); met5.dg OR mm5.mk (for SP8P\*/S8P\*)",
 a notation (`mm3.mk`) that `gds_layers.csv` does not use for the
 mask.[^pdk-06] Rule nsm.3 lists "metX.dg (X=1 to 5) and cmmX.mk (X=1 to
 5)" among the layers kept 1.000 µm from the nitride-seal keep-out (flag
-AL).[^pdk-periph]
+AL).[^pdk-periph] The PDK's *Error Messages* page, which describes "many
+of the automated DRC rules that are checked by SkyWater as part of the
+acceptance criteria for GDS data", lists two checks named `cmm3.nikon`,
+"MM3mk in the nikon cross has the wrong polarity" and "MM3mk is missing
+from the nikon cross in the layout";[^pdk-errors] it does not say what
+the "nikon cross" is, and we read the checks as concerning a structure on
+the mask layer whose data must have the right polarity (inference from
+the message wording), not as stating the plate's tone.
 
 ### In the public renders
 
@@ -185,9 +194,12 @@ rows.[^steps-sheet]
 | MPW-8 | `5CS8017AC` | `S8017AA570A` |
 
 * **Plate number.** The sheet does not say what `570` encodes. It falls
-  between `560` for `VIM2` and `572` for `CAPM`, and is lower than `CAPM`'s
-  although `MM3` (step 139) comes after `CAPM` (step 137), so the numbers
-  do not follow process order here, and no process position is read from
+  between `560` for `VIM2` and `572` for `CAPM`. From `500` to `590` the
+  via and metal numbers rise in step order, but each capacitor mask is
+  numbered 2 above the metal mask that follows it: `MM3` (step 139) is
+  `570` against `CAPM` (step 137) `572`, as `MM4` (step 154) is `580`
+  against `CAP2M` (step 152) `582` (our comparison). Elsewhere the numbers
+  do not follow process order, and no process position is read from
   them ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type.** The sheet's "Sheet4" tab gives no type for
   `MM3`.[^steps-sheet] 4× is the ITRS 2001 mask magnification for the
@@ -226,7 +238,8 @@ public.
 **Thick metal, capacitors and the resist.** On the step pages' readings
 the resist is coated over the 0.845 µm metal-3 stack,[^pdk-04] which
 carries the thin capacitor dielectric and, over each capacitor, a plate
-island of the order of 0.1 µm, so it sees two thin-film stacks of
+island of the order of 0.1 µm high (the {ref}`MM3 <step-139>` page's
+reading of {ref}`CAPTIW1 <step-136>`), so it sees two thin-film stacks of
 different reflectivity and a step at every plate edge. Brunner showed
 that the swing ratio scales with the square root of the substrate
 reflectivity, which an anti-reflective coating reduces,[^brunner-1991]
@@ -396,6 +409,8 @@ must be divisible by 4", 7.2 (`waffle_large`), both in its column headed
   x.11, x.15a and the flag legend.[^pdk-periph]
 * SkyWater PDK, *Summary of Key Periphery Rules* — Tables F3c, F3d and
   F4.[^pdk-summary]
+* SkyWater PDK, *Error Messages* page — the `cmm3.nikon`
+  checks.[^pdk-errors]
 * SkyWater PDK, *Process stack diagram* — the 0.845 µm `met3`.[^pdk-04]
 * SkyWater PDK, *Device Details* — the stacked MiM cross-section with "M3
   (plate 1)".[^pdk-07]
@@ -493,6 +508,10 @@ must be divisible by 4", 7.2 (`waffle_large`), both in its column headed
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-summary]: SkyWater PDK Authors, *Summary of Key Periphery Rules*
     (Tables F3c, F3d and F4), SkyWater SKY130 PDK documentation,
     retrieved 2026-09-14.
