@@ -213,7 +213,7 @@ a dose of the order of 10¹⁵ cm⁻².[^pdk-03] The ion range in resist is
 what SRIM computes.[^ziegler-2010] The step page adds that arsenic, a
 heavier ion than boron or BF₂, deposits more energy in the resist surface
 at the same dose and forms a harder crust, of the kind Fujimura et al.
-measured;[^fujimura-1989] Smith treated wafer cooling and resist masking
+analysed;[^fujimura-1989] Smith treated wafer cooling and resist masking
 problems in implantation,[^smith-1983] Romig, Bishop and Rio resist
 burning in a high-current implanter,[^romig-1996] Lukaszek, Reno and
 Bammi the influence of photoresist on wafer charging during a high-current
@@ -404,8 +404,9 @@ width and spacing checks without saying which applies where (0.38
 
 ### Deep dive
 
-* Fujimura et al., *JJAP* 1989 — the crust and popping of implanted
-  resist.[^fujimura-1989]
+* Fujimura et al., *JJAP* 1989 — the carbonised layer of high-dose
+  implanted resist and a two-step ashing process to remove
+  it.[^fujimura-1989]
 * Lukaszek, Reno and Bammi, IIT 1996 — the influence of photoresist on
   wafer charging during high-current arsenic implants.[^lukaszek-1996]
 * Krieger et al., *IEEE TED* 1989 — shadowing of a tilted arsenic

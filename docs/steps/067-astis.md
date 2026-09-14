@@ -198,8 +198,9 @@ practice).[^txt-02]
 
 * Orvek and Huffman, *NIM B* 1985 — the carbonised layer formed in
   ion-implanted resist masks.[^orvek-1985]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the crust and
-  popping mechanism, measured.[^fujimura-1989]
+* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the
+  carbonised layer of high-dose implanted resist and a two-step ashing
+  process (abstract).[^fujimura-1989]
 * Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990 — why nitrogen
   is added to oxygen in downstream ashing.[^fujimura-1990]
 * Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1991 — resist

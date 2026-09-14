@@ -222,8 +222,9 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 
 ### Deep dive
 
-* Fujimura et al., *JJAP* 1989 — the crust and {term}`popping` mechanism of
-  implanted resist, measured.[^fujimura-1989]
+* Fujimura et al., *JJAP* 1989 — the carbonised layer of high-dose
+  implanted resist, the residues of O₂ ashing and a two-step ashing
+  process (abstract).[^fujimura-1989]
 * Fujimura et al., *JJAP* 1990 — why nitrogen is added to oxygen
   downstream ashing.[^fujimura-1990]
 * Fujimura et al., *JVST B* 1994 — water-vapour downstream ashing to

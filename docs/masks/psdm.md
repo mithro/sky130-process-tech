@@ -224,8 +224,8 @@ burning in a high-current implanter,[^romig-1996] Lee et al., Horsky and
 Carpenter and Fecteau resist outgassing and its cost to
 productivity,[^lee-1996][^horsky-1998][^carpenter-2002] and Rubin et al.
 UV photostabilisation of resist before high-dose
-implants;[^rubin-2000] Fujimura et al. measured the crust that such a
-dose leaves for {ref}`PDIS <step-084>` to remove.[^fujimura-1989]
+implants;[^rubin-2000] Fujimura et al. analysed the carbonised layer that
+such a dose leaves for {ref}`PDIS <step-084>` to remove.[^fujimura-1989]
 SkyWater's resist, its thickness and any hardening are not public; the
 consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
@@ -441,8 +441,9 @@ width and spacing checks without saying which applies where (0.38
   resist outgassing.[^carpenter-2002]
 * Rubin et al., IIT 2000 — UV photostabilisation of resist before
   high-dose implants.[^rubin-2000]
-* Fujimura et al., *JJAP* 1989 — the crust and popping of implanted
-  resist.[^fujimura-1989]
+* Fujimura et al., *JJAP* 1989 — the carbonised layer of high-dose
+  implanted resist and a two-step ashing process to remove
+  it.[^fujimura-1989]
 * Krieger et al., *IEEE TED* 1989 — shadowing of a tilted source/drain
   implant by gate and spacer.[^krieger-1989]
 * Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
