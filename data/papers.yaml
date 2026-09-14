@@ -524,7 +524,8 @@
   fabrication: null
   related_docs:
   - label: overview-sky130b-reram
-    reason: The overview page describes the HfO2 ReRAM module that SkyWater offers in sky130B.
+    reason: The overview page describes the HfO2-based ReRAM tier of sky130B, whose SkyWater documentation
+      reproduces a figure from this group's 2019 IEDM paper.
   inventory_key: null
   discovery:
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
@@ -567,7 +568,8 @@
   fabrication: null
   related_docs:
   - label: overview-sky130b-reram
-    reason: The overview page describes the HfO2 ReRAM module that SkyWater offers in sky130B.
+    reason: The overview page describes the HfO2-based ReRAM tier of sky130B, whose SkyWater documentation
+      reproduces a figure from this group's 2019 IEDM paper.
   inventory_key: null
   discovery:
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
