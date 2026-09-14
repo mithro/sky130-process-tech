@@ -160,10 +160,10 @@ set is the heading of the run's columns in the tab
 | MPW-8 | `5CS8017AC` | `S8017AA265A` |
 
 * **Plate number.** The sheet does not say what `265` encodes. It falls
-  between `260` for `PSDM` (step 81) and `370` for `LI1M` (step 102),
-  but `NSDM` (step 85) is `250`, below `PSDM`, and the numbers do not
-  follow process order elsewhere, so no process position is read from
-  it ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
+  Its neighbours in the tab are `260` for `PSDM` (step 81) and `317` for
+  `HVTPM` (step 22), so the numbers do not follow process order, and no
+  process position is read from it
+  ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type.** The sheet's "Sheet4" tab gives no type for
   `LICM1`.[^steps-sheet] Whether the plate is binary or an
   {term}`attenuated phase-shift mask <attenuated PSM>` — the latter the
@@ -270,17 +270,19 @@ Steps:
   resist; its page treats the resist strip "as part of this step or of
   SACETCH".
 * {ref}`SACETCH <step-095>` — the step list's "Sacrificial etch", which
-  the step list does not explain; its page sets out three readings, of
-  which the third folds the strip of the `LICM1` resist and
-  anti-reflective coating into it, and the other two make it the
-  dilute-HF clean of the contact bottoms.
+  the step list does not explain; its page sets out three readings:
+  removal of the oxide at the contact bottoms, the strip of a
+  deliberately grown sacrificial oxide, and, compatible with either, the
+  removal of the `LICM1` resist and anti-reflective coating folded into
+  the step.
 
 On its step page's reading, the next step, {ref}`ALLY1 <step-096>`, is
 a hydrogen-bearing anneal with the contact holes open and no metal yet
 on the wafer, and the next mask step is {ref}`LI1M <step-102>`. The
 exception is `SACETCH`: it is listed because the step pages leave the
-resist strip either to the etch or to it, and on two of its page's three
-readings it treats the holes rather than the resist.
+resist strip either to the etch or to it; on its page's third reading,
+which is compatible with the other two, it also removes the resist, and
+on the first two it treats the holes rather than the resist.
 
 ## Design rules and critical dimensions
 
@@ -303,19 +305,24 @@ only."[^pdk-periph]
 | licon.3 | "Only min. square licons are allowed except die seal ring where licons are (licon CD)\*L" | 0.170 \*L |
 | licon.4 | "Licon1 must overlap li1 and (poly or diff or tap)" | — |
 | licon.5a | "Enclosure of licon by diff" (P) | 0.040 µm |
+| licon.5b | "Min space between tap_licon and diff-abutting tap edge" (P) | 0.060 µm |
 | licon.5c | "Enclosure of licon by diff on one of two adjacent sides" (P) | 0.060 µm |
+| licon.6 | "Licon cannot straddle tap" (P) | — |
 | licon.7 | "Enclosure of licon by one of two adjacent edges of isolated tap" (P) | 0.120 µm |
 | licon.8 | "Enclosure of poly_licon by poly" (P) | 0.050 µm |
 | licon.8a | "Enclosure of poly_licon by poly on one of two adjacent sides" (P) | 0.080 µm |
+| licon.9 | "Spacing, no overlap, between poly_licon and psdm; […]" (P) | 0.110 µm |
+| licon.10 | "Spacing of licon on (tap AND (nwell NOT hvi)) to Var_channel" (P) | 0.250 µm |
 | licon.11 | "Spacing of licon on diff or tap to poly on diff (except for all FETs inside areaid.sc […])" (P) | 0.055 µm |
 | licon.11a–11d | The same spacing for FETs inside `areaid.sc` and for named cells (P) | 0.040–0.050 µm |
 | licon.12 | "Max SD width without licon" (NC) | 5.700 µm |
 | licon.13 | "Spacing (no overlap) of NPC to licon on diff or tap" (P) | 0.090 µm |
 | licon.14 | "Spacing of poly_licon to diff or tap" (P) | 0.190 µm |
 | licon.15 | "poly_licon must be enclosed by npc by…" (P) | 0.100 µm |
-| licon.16 | "Every source_diff and every tap must enclose at least one licon1, including the diff/tap straddling areaid:ce." (P) | — |
+| licon.16 | "Every source_diff and every tap must enclose at least one licon1, including the diff/tap straddling areaid:ce. […]" (P) | — |
 | licon.17 | "Licons may not overlap both poly and (diff or tap)" | — |
 | licon.18 | "Npc must enclose poly_licon" | — |
+| licon.19 | "poly of the HV varactor must not interact with licon" (P) | — |
 | npc.5 | "Max enclosure of poly overlapping slotted_licon by npcm […]" | 0.095 µm |
 | li.5 | "Enclosure of licon by one of two adjacent LI sides" (P) | 0.080 µm |
 | x.2 | "Angles permitted on: tap (except inside areaid.en), poly […], li1(periphery), licon1, capm, mcon, via, via2. Anchors are exempted." | n x 90 deg |
