@@ -92,7 +92,8 @@ fab (SKY130 values are not public):
 * **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻² are typical for
   threshold adjusts (category page; an LSI Logic patent gives 1 × 10¹²–1
   × 10¹³ cm⁻² for the boron equivalent,[^pat-vt-lsi] an AMD patent
-  1.0–2.5 × 10¹³ cm⁻²[^pat-vt-amd]).
+  1.0–2.5 × 10¹³ cm⁻² for a laterally doped channel implant made after
+  gate formation, self-aligned to the gate pillars[^pat-vt-amd]).
 * **Tilt and twist.** 7° with twist;[^wiki-implant][^txt-02] the implant
   is symmetric, so no rotation is needed.
 * **{term}`Screen oxide <screen oxide>`.** Through the pad oxide of 10–20 nm that a Cypress
@@ -195,8 +196,9 @@ fab (SKY130 values are not public):
   barriers, and a well anneal "at approximately 900° C. in a neutral
   ambient such as nitrogen for approximately 30 minutes" (the patent does
   not name the tool).[^pat-vt-lsi]
-* Krivokapic and Milic (AMD), US 6,238,982 — channel-implant energies
-  and doses for boron and BF₂.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds by
+  laterally doped channel implants self-aligned to the gate
+  pillars.[^pat-vt-amd]
 * MacPherson, *Appl. Phys. Lett.* 1971 — the original
   threshold-adjust-by-implantation paper.[^macpherson-1971]
 * Taur et al., *Proc. IEEE* 1997 — super-steep retrograde channels and

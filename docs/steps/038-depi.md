@@ -146,8 +146,9 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   surface[^wiki-thox]), which the target must allow for.
 * **Dose.** Of order 10¹² cm⁻²: enough to swing the threshold by a
   volt or two against the p-well surface doping, in line with
-  {term}`threshold-adjust <threshold-adjust implant>` practice[^macpherson-1971] and with the 10¹²–10¹³
-  cm⁻² channel-implant range of the era's patents.[^pat-vt-amd]
+  {term}`threshold-adjust <threshold-adjust implant>` practice[^macpherson-1971] and with the "about 8×10¹²
+  ions/cm²" prior-art threshold adjust implant that an AMD patent
+  describes.[^pat-vt-amd]
 * **Tilt and twist.** 7° with twist,[^txt-02][^wiki-implant] through
   the (inferred) pad oxide, which randomises the beam and reduces
   {term}`channelling`.
@@ -254,8 +255,9 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — arsenic
   channel adjustment and {term}`counter-doped <counter-doping>` channels in a multi-Vt
   flow.[^pat-vt-rrr]
-* Krivokapic and Milic (AMD), US 6,238,982 — channel-implant energies
-  and doses of the era.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — a prior-art threshold
+  adjust implant, and multiple thresholds by laterally doped channel
+  implants self-aligned to the gate pillars.[^pat-vt-amd]
 * Bu and White, *Solid-State Electronics* 2001 — design considerations
   in scaled SONOS devices, including the memory window.[^bu-2001]
 * French and White, *Solid-State Electronics* 1994 — scaling of
