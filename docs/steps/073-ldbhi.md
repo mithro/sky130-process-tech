@@ -87,8 +87,8 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 * **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻²
   (typical);[^txt-01] an AMD multi-threshold patent of the era
   gives "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a
-  concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a laterally doped
-  channel implant made with the gate pillars as a self-aligned
+  concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a zero-tilt laterally
+  doped channel implant made with the gate pillars as a self-aligned
   mask,[^pat-vt-amd] and a halo sits in the same range.
 * **Tilt and rotation.** Large tilt with two or four rotations to make
   the pocket symmetric[^pat-quad-tsmc] (20–45° is typical[^txt-04]); in

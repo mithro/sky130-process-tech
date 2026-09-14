@@ -404,8 +404,9 @@ created layer the same 0.38 width and spacing (`chvtpm.1`,
   trade-off of n+-poly buried-channel PMOS.[^kizilyalli-1995]
 * Andreani and Mattisson, *IEEE JSSC* 2000 — inversion- and
   accumulation-mode MOS varactors.[^andreani-2000]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple-threshold devices
-  by laterally doped channel implants.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+  gate length, with a laterally doped channel implant self-aligned to
+  the gate pillars.[^pat-vt-amd]
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — masked
   Vt-adjust implants for standard and low-Vt devices.[^pat-vt-rrr]
 * Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold

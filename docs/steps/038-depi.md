@@ -256,8 +256,9 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   channel adjustment and {term}`counter-doped <counter-doping>` channels in a multi-Vt
   flow.[^pat-vt-rrr]
 * Krivokapic and Milic (AMD), US 6,238,982 — a prior-art threshold
-  adjust implant, and multiple thresholds by laterally doped channel
-  implants self-aligned to the gate pillars.[^pat-vt-amd]
+  adjust implant, and multiple thresholds set by gate length, with a
+  laterally doped channel implant self-aligned to the gate
+  pillars.[^pat-vt-amd]
 * Bu and White, *Solid-State Electronics* 2001 — design considerations
   in scaled SONOS devices, including the memory window.[^bu-2001]
 * French and White, *Solid-State Electronics* 1994 — scaling of

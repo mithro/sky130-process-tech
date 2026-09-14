@@ -203,9 +203,9 @@ fab (SKY130's values are not public):
   implantation.[^macpherson-1971]
 * Peressini and Johnson, IEDM 1973 — threshold adjustment of n-channel
   enhancement FETs.[^peressini-1973]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds by
-  laterally doped channel implants self-aligned to the gate
-  pillars.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+  gate length, with a laterally doped channel implant self-aligned to
+  the gate pillars.[^pat-vt-amd]
 * Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 —
   threshold-adjust boron through a sacrificial oxide.[^pat-vt-lsi]
 * Wang et al., *J. Electrochem. Soc.* 1997 — fluorine's effect on

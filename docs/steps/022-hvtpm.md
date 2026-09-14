@@ -239,9 +239,9 @@ fab:
   masks and reticles, and overlay.[^levinson-2005]
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — multiple
   thresholds made with masked Vt-adjust implants.[^pat-vt-rrr]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds by
-  laterally doped channel implants self-aligned to the gate
-  pillars.[^pat-vt-amd]
+* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+  gate length, with a laterally doped channel implant self-aligned to
+  the gate pillars.[^pat-vt-amd]
 * Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
   voltage as a function of channel doping, what the extra mask
   buys.[^taur-2009]
