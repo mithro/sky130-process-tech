@@ -182,12 +182,16 @@ arithmetic), far below these features.
 
 **Resist.** The resist must stop the P-well boron wherever the plate
 leaves it. The {ref}`PWBM <step-026>` page reads a resist of roughly
-2 µm from published examples: an IBM retrograde-well patent uses resist
-"typically 1800–2500 nm in thickness" for boron at up to
-550 keV,[^pat-well-ibm] Hook et al. model a "2.3 µm-thick pwell
-mask",[^hook-2003] and a Zilog patent needs at least 3.4 µm for a
-600–800 keV P-well;[^pat-resist-zilog] the PDK's P-well peak at 0.42 µm
-(Table 3a) implies lower energies than those examples.[^pdk-03] The ion
+2 µm from published examples. An IBM retrograde-well patent masks its
+phosphorus N-well implants of up to 850 keV with resist "typically
+1800–2500 nm in thickness", but implants its 550 keV P-well boron
+through a 200 nm polysilicon mask, which it says substantially
+eliminates boron scattering, and uses a resist of the same thickness
+only for its 150 keV and 45 keV boron;[^pat-well-ibm] Hook et al. model a
+"2.3 µm-thick pwell mask",[^hook-2003] and a Zilog patent needs at least
+3.4 µm for a 600–800 keV P-well.[^pat-resist-zilog] The PDK's P-well
+peak at 0.42 µm (Table 3a) implies lower energies than the deepest of
+those examples (inference).[^pdk-03] The ion
 range that sets the thickness is what SRIM computes,[^ziegler-2010] and
 Lee et al. measured the outgassing of thick resists under MeV
 implantation.[^lee-1996] SkyWater's resist and its thickness are not
