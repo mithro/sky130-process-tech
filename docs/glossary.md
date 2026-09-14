@@ -837,8 +837,9 @@ overlay
 oxide bias
     A parameter of the PDK's *Criteria & Assumptions* table, given per
     metal level ("Oxide Bias for MM1" to "Oxide Bias for MM4": 0.6 for
-    metals 1 and 2, 1.15 for metals 3 and 4) and listed with the
-    pattern-density limits for the oxide polishes. The PDK does not
+    metals 1 and 2, 1.15 for metals 3 and 4) and listed in Table 4's
+    "Material Thicknesses" block, in a column headed "Value (um)", not
+    with its "Waffling / Pattern Density" limits. The PDK does not
     define it; the pages of this reference read it as a density-related
     allowance for the dielectric {term}`CMP` over each metal level
     rather than as a drawn-layer bias (see {ref}`step-116` and
