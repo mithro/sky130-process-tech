@@ -2,7 +2,8 @@
 # CTM1 — Contact
 
 The contact mask is the {term}`reticle` that places every connection
-from the titanium nitride {term}`local interconnect` up to metal 1: on
+from the {term}`local interconnect` (titanium nitride on the
+{ref}`LITIN <step-101>` page's reading) up to metal 1: on
 the {ref}`CTM1 <step-107>` page's reading, the resist printed through it
 at step 107 is opened over every drawn `mcon`, and the
 {ref}`CTME <step-108>` etch cuts the holes through the planarised oxide
@@ -302,7 +303,8 @@ Table 2 of *Criteria & Assumptions* repeats the size and space as
 (`mconLiEnclosure`) and a "Bowing of rectangular contact (per edge) --
 seal ring sizing" of 0.015 (`TBOWINGSEAL`), which does not say which
 contact layer it means; Table 5 gives the 0.09 bottom CD without a
-variable name.[^pdk-03] The summary Table F3c repeats `mcon` as 0.170
+variable name.[^pdk-03] The summary Table F3c, "Back end layers for S8D\*
+flow", repeats `mcon` as 0.170
 wide on a 0.190 space, enclosed by `li1` by 0.000 and by metal 1 by
 "0.03/ 0.06".[^pdk-summary] For the plate the decisive figures are one
 0.170 µm square on a 0.36 µm pitch (our arithmetic from ct.1 and ct.2),
@@ -400,8 +402,8 @@ with the flag warning that neither is the final size.
 * The pairing of `ctm1` with `mcon` is an inference from names and
   descriptions; the PDK publishes no operation from drawn layer to
   plate.[^pdk-06]
-* Whether the missing MPW-5 plate is a gap in the record is not
-  stated,[^steps-sheet] and no public source lists the `CTM1` plate of
+* Whether the absent MPW-5 record is a gap in the record or a difference
+  in the run is not stated,[^steps-sheet] and no public source lists the `CTM1` plate of
   the original MPW-4 set `5CS8010AC`.[^mask-renders]
 * The sheet and the renders site give both `CTM1` and `VIM` the level
   name "Via 1"; neither explains it.[^steps-sheet][^mask-renders]
