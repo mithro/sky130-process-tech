@@ -339,9 +339,9 @@ settings and resists per layer are not public.
   and metal-2 masks, all assigned to this class.
 * {ref}`mask-fom` — the per-mask page for the field-oxide mask, assigned
   to this class.
-* {ref}`mask-vim2` — the per-mask page for the via-2 mask, assigned to
-  this class, whose recorded mask type reads as a 248 nm attenuated
-  phase-shift mask.
+* {ref}`mask-vim2` and {ref}`mask-vim3` — per-mask pages for the via-2
+  and via-3 masks, both assigned to this class, whose recorded mask type
+  reads as a 248 nm attenuated phase-shift mask.
 * {ref}`mask-mm3` — the per-mask page for the metal-3 mask, for which the
   step pages leave the class open between this one and i-line.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
