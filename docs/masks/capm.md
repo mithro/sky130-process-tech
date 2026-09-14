@@ -41,7 +41,11 @@ The periphery rules give the function of the `capm` rule set as
 "Defines MIM capacitor", and publish twelve rules for it — minimum
 width, spacings, enclosures, a maximum aspect ratio, a rectangles-only
 rule, a no-straddle rule and a maximum area — every one with the value
-"N/A".[^pdk-periph] The *Device Details* page describes the device the
+"N/A".[^pdk-periph] The PDK's *Error Messages* page, which describes "many
+of the automated DRC rules that are checked by SkyWater as part of the
+acceptance criteria for GDS data", gives one check naming `capm` with a
+value, "0.42 min. enclosure of capm by moduleCutAREA" (x.18b), which
+gives no plate geometry.[^pdk-errors] The *Device Details* page describes the device the
 mask draws: "The MiM capacitor is constructed using a thin dielectric
 over metal, followed by a thin conductor layer on top of the dielectric.
 There are two possible constructions:" "CAPM over Metal-3" and "CAP2M
@@ -64,7 +68,8 @@ Table C4b lists a "capm_2t.dg" layer, "MIM caps (2 terminal model)", an
 "ID layer for MIMCAP that will be treated as 2T device"; Table F2b, the
 mask generation table, marks the `CAPM` column `C` ("CREATED") in the
 "MiM" row only, `-` in the two VPP capacitor rows and `+`, "Layer allowed
-to overlap", in the other 77.[^pdk-06] Table F4 of the *Summary of Key
+to overlap", in the other 77; in that row the `MM2` column is also `C`
+and the `MM3` column `+` ({ref}`mask-mm2`).[^pdk-06] Table F4 of the *Summary of Key
 Periphery Rules* gives "Via2" as the connection between `Capm` and
 `Met3`.[^pdk-summary] These definitions and rules capm.3–capm.5 name
 metal 2 and via 2, while the layer description, the device page and the
@@ -72,8 +77,13 @@ test tile put the plate over metal 3;[^pdk-06][^pdk-07][^raw-data-testtile-pads]
 the {ref}`CAPM <step-137>` page reads the rules for metal 3 and via 3
 in the flow described here, and the {ref}`CAPILD <step-135>` page
 suggests that the metal-2 wording may come from a flow variant with the
-capacitor one level lower (both inferences); the function line of the via-2 rules names a "SKY130DI\*" flow in which
-via 2 connects "met2/capm to met3".[^pdk-periph]
+capacitor one level lower (both inferences); the function line of the
+via-2 rules names a "SKY130DI\*" flow in which via 2 connects "met2/capm
+to met3".[^pdk-periph] The test tile's second large capacitor, "Same
+capacitor as 4530", notes "Caps have seas of via-2's placed under
+M3/CAPM", so via-2 plugs do lie under some metal-3 plates; the step
+pages' reading of the capm rules for via 3 does not rest on their
+absence.[^raw-data-testtile-pads]
 
 The published SKY130 {term}`test tile` shows what the mask is expected
 to print on test structures: a "Large MiM capacitor, CAPM on M3, 11
@@ -170,11 +180,13 @@ is the heading of the run's columns in the tab
   `CAPM` level was recorded for each MPW set, not that every die uses
   it (see the renders above).
 * **Plate number.** The sheet does not say what `572` encodes. It falls
-  between `570` for `MM3` and `575` for `VIM3`, and is higher than `570`
-  although `CAPM` (step 137) comes before `MM3` (step 139); `CAP2M`
-  (step 152) is likewise `582` against `MM4` (step 154) `580` (our
-  comparison).[^steps-sheet] The numbers do not follow process order,
-  and no process position is read from them
+  between `570` for `MM3` and `575` for `VIM3`. From `500` to `590` the
+  via and metal numbers rise in step order, but each capacitor mask is
+  numbered 2 above the metal mask that follows it: `CAPM` (step 137) is
+  `572` against `MM3` (step 139) `570`, and `CAP2M` (step 152) `582`
+  against `MM4` (step 154) `580` (our comparison).[^steps-sheet]
+  Elsewhere the numbers do not follow process order, and no process
+  position is read from them
   ({ref}`masks-mpw-reticle-sets`).
 * **Mask type.** The sheet's "Sheet4" tab gives no type for
   `CAPM`.[^steps-sheet] The {ref}`CAPM <step-137>` page reads the plate
@@ -225,8 +237,9 @@ expected capacitances, are the structures from which the
 terms.[^raw-data-testtile-pads]
 
 **Reflective substrate.** On the step pages' readings the resist sits on
-the plate film over a few tens of nanometres of dielectric on the
-TiW-capped metal-3 stack. Brunner showed that the swing ratio scales with
+the plate film over a few tens of nanometres of dielectric (the
+{ref}`CAPILD <step-135>` page's estimate) on the TiW-capped metal-3
+stack. Brunner showed that the swing ratio scales with
 the square root of the substrate reflectivity;[^brunner-1991] Rocke and
 Schneegans used titanium nitride on aluminium as an anti-reflection
 layer.[^rocke-1988] The step page reads an organic {term}`BARC` or dyed
@@ -352,6 +365,8 @@ as it is wide (our reading of `MiM_AR` with capm.6 and capm.7).
   line, x.1b, x.2, x.7, x.9, x.15a, x.22 and the flag
   legend.[^pdk-periph]
 * SkyWater PDK, *Summary of Key Periphery Rules* — Table F4.[^pdk-summary]
+* SkyWater PDK, *Error Messages* page — the module-cut check naming
+  `capm`.[^pdk-errors]
 * SkyWater PDK, *Device Details* — the MiM constructions, `CMIMA`,
   `CMIMP`, `RSCAPM` and the stacked cross-section.[^pdk-07]
 * SkyWater PDK Authors, test-tile pad documentation — the `CAPM`
@@ -451,6 +466,10 @@ as it is wide (our reading of `MiM_AR` with capm.6 and capm.7).
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-summary]: SkyWater PDK Authors, *Summary of Key Periphery Rules*
     (Table F4), SkyWater SKY130 PDK documentation, retrieved 2026-09-14.
     <https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>
