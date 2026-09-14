@@ -204,8 +204,8 @@ etch).
 
 * ITRS 2001, *Lithography* — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* Levinson, *Principles of Lithography* — overlay budgets and
-  non-critical-layer tool choice.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 * van Haren et al., SPIE 2019 — alignment-mark placement and
   layer-to-layer overlay.[^van-haren-2019]
 * Mack, *Fundamental Principles of Optical Lithography* — imaging
