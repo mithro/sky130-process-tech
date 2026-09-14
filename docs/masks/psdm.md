@@ -39,9 +39,8 @@ performed is on the step page; every mask is indexed on the
 
 ## What the mask defines
 
-The periphery rules give `nsdm` and `psdm` one rule set, "N+/P+
-Source/Drain Implants (Nsdm and Psdm)", whose function is "Defines opening for N+/P+
-implants", and the layer table describes `psdm` as "P+ source/drain
+The periphery rules give `nsdm` and `psdm` one rule set, headed "(n/
+psd.-)", whose function is "Defines opening for N+/P+ implants", and the layer table describes `psdm` as "P+ source/drain
 implant".[^pdk-periph][^pdk-06] The rules tie the layer to the active
 pattern: "Diff and tap must be enclosed by their corresponding implant
 layers" (psd.9), by 0.125 µm except at a butting edge (psd.5a, psd.5b),
@@ -323,9 +322,9 @@ only."[^pdk-periph]
 | x.9 | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. Exempted are: […]" | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
 
-The periphery table heads the set "(n/ psd.-)" and numbers its rules
-without a layer prefix; the names above are those of the Error Messages
-page.[^pdk-periph][^pdk-errors] Table 2 of *Criteria & Assumptions*
+The periphery rules name the shared rules "(n/ psd.1)" to "(n/
+psd.11)"; the `psd` prefix above is that of the Error Messages page,
+which has no message for rules 3 and 6.[^pdk-periph][^pdk-errors] Table 2 of *Criteria & Assumptions*
 repeats the width and space as `PSDMCD` 0.38 and `PSDMCDSP` 0.38, Table 7
 gives "Min Psdm area" as 0.255 (`MinPsdmArea`) and "Min N/Psdm hole area"
 as 0.265 (`MinNPsdmHole`) in its column headed "CD", matching psd.10b and
