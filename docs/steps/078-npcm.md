@@ -232,8 +232,8 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
   critical layers, and overlay requirements by year.[^itrs-03]
 * Mack, *Fundamental Principles of Optical Lithography* — k₁, BARC
   and process windows.[^mack-2007]
-* Levinson, *Principles of Lithography* — overlay budgets and layer
-  assignment.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 * Bossung, SPIE 1977 — the focus–exposure process window.[^bossung-1977]
 * Ausschnitt, SPIE 1999 — separating dose from defocus in
   production.[^ausschnitt-1999]

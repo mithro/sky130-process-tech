@@ -224,8 +224,8 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
   model.[^sheu-2006]
 * Drennan, Kniffin and Locascio, CICC 2006 — proximity effects in
   analogue layout.[^drennan-2006]
-* Levinson, *Principles of Lithography* — overlay budgets and
-  non-critical layer assignment.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+  masks and reticles, and overlay.[^levinson-2005]
 * Mack, *Fundamental Principles of Optical Lithography* — imaging in
   thick resist.[^mack-2007]
 * Smith, *Ion Implantation: Equipment and Techniques* 1983 — wafer
