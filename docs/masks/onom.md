@@ -342,7 +342,8 @@ marked `areaid.ce`.
 ### Deep dive
 
 * Ramkumar et al. (Cypress), US 6,969,689 — the ONO stack this mask
-  confines, formed in one furnace sequence.[^pat-01]
+  confines, its layers formed in one reaction chamber (several
+  embodiments).[^pat-01]
 * White, Adams and Bu, *IEEE Circuits and Devices* 2000 — a review of
   scaled SONOS.[^pap-01]
 * Seo et al. (Samsung), *IEEE JSSC* 2005 — a 130 nm local-SONOS embedded
