@@ -2638,8 +2638,9 @@ LOCOS and STI. Tier: deep dive.
 **STOLMEIJER-1986** — A. Stolmeijer, *"A twin-well CMOS process
 employing high-energy ion implantation"*, IEEE Transactions on Electron
 Devices, vol. 33, no. 4, pp. 450–457, 1986, DOI 10.1109/T-ED.1986.22511.
-The original twin-well CMOS process built entirely with high-energy
-implants. Tier: deep dive.
+A twin-well CMOS process using implants of up to 1 MeV, with an n-type
+isolation well and retrograde wells (from the abstract). Tier: deep
+dive.
 Also used on the DNM and NWM mask pages.
 
 **STOLMEIJER-1989** — A. Stolmeijer, M. Pitt, H. den Blanken, P. van
