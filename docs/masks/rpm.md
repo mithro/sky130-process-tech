@@ -316,8 +316,8 @@ to this plate.
 * {ref}`RPM <step-049>`, {ref}`P1I <step-050>` and
   {ref}`P1IS <step-051>` — the mask step, the gate implant and the strip.
 * {ref}`RRPM <step-052>` and {ref}`URPM <step-055>` — the reverse and
-  ultra-high resistor masks that follow; {ref}`mask-rrpm` — the reverse
-  mask's page.
+  ultra-high resistor masks that follow; {ref}`mask-rrpm` and
+  {ref}`mask-urpm` — their mask pages.
 * {ref}`mask-p1m` — the poly mask that cuts the resistor bodies.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the derivations the renders use.

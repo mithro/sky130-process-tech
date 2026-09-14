@@ -158,6 +158,8 @@ reading is used throughout these pages and is marked as an inference.
   {ref}`NPCM <step-078>` and {ref}`LICM1 <step-093>`.
 * Previous mask step: {ref}`RRPM <step-052>`; next mask step:
   {ref}`P1M <step-061>`.
+* Mask page: {ref}`URPM <mask-urpm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
