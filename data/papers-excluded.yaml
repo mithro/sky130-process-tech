@@ -1,0 +1,260 @@
+# Papers considered for data/papers.yaml and excluded (outside the scope in
+# docs/plans/paper-index-design.md) or held (pending a full-text check).
+# Checked by tools/check_papers.py; an id may not appear in both files.
+- id: doi:10.1145/3400302.3415735
+  title: Building OpenLANE
+  year: 2020
+  status: held
+  reason: Flow paper reporting an SoC taken "from concept to silicon validation"; the reference list cites
+    the SKY130 PDK, but the retrievable text does not say the silicon was made in SKY130.
+  decided: '2026-09-14'
+- id: web:woset-2021-a11
+  title: A CMOS Programmable Analog Standard Cell Library in Skywater 130nm Open-Source Process
+  year: 2021
+  status: excluded
+  reason: Workshop precursor of the included IEEE TCAS-I 2024 library paper; the PDF says the cells "are
+    in process for fabrication", so it has no silicon results.
+  decided: '2026-09-14'
+- id: web:woset-2021-a15
+  title: 'FABulous: an Open-Everything Framework for Embedded FPGAs'
+  year: 2021
+  status: excluded
+  reason: FABulous framework paper; the PDF compares CLB area with OpenFPGA for a SKY130 MPW tape-out
+    but reports no silicon measurements.
+  decided: '2026-09-14'
+- id: doi:10.1109/iscas46773.2023.10181884
+  title: An Open Source Compatible Framework to Fully Autonomous Digital LDO Generation
+  year: 2023
+  status: excluded
+  reason: LDO generator; silicon measurements are from a 65 nm process, and designs in SkyWater 130 nm
+    are reported as fabricated without results.
+  decided: '2026-09-14'
+- id: doi:10.1109/mlcad58807.2023.10299874
+  title: 'Chip-Chat: Challenges and Opportunities in Conversational Hardware Design'
+  year: 2023
+  status: excluded
+  reason: LLM-written processor sent to a SkyWater 130 nm shuttle; no silicon results in the abstract.
+  decided: '2026-09-14'
+- id: doi:10.1109/lascas56464.2023.10108228
+  title: Compact Time-Based Sensor-to-Digital Converters in Skywater 130nm Open-Source Technology
+  year: 2023
+  status: excluded
+  reason: Sensor-to-digital converters in SkyWater 130 nm; the abstract reports simulated results only.
+  decided: '2026-09-14'
+- id: doi:10.1109/nssmicrtsd49126.2023.10338630
+  title: Development of a hybrid amorphous Selenium/CMOS detector for the Selena Neutrino Experiment
+  year: 2023
+  status: excluded
+  reason: Selena detector development; the abstract gives only the development status of the next detector
+    version fabricated in the SkyWater 130 nm process, and its results come from the Topmetal-II- sensor.
+  decided: '2026-09-14'
+- id: doi:10.1109/tcsii.2022.3207378
+  title: Fully Binarized, Parallel, RRAM-Based Computing Primitive for In-Memory Similarity Search
+  year: 2023
+  status: excluded
+  reason: RRAM arrays from another process; the SkyWater 130 nm PDK is used only for SPICE simulation.
+  decided: '2026-09-14'
+- id: doi:10.1145/3569052.3580028
+  title: Google Investment in Open Source Custom Hardware Development Including No-Cost Shuttle Program
+  year: 2023
+  status: excluded
+  reason: ISPD talk abstract on Google's open hardware investment and no-cost shuttle programme; the abstract
+    names neither the process nor silicon results.
+  decided: '2026-09-14'
+- id: arxiv:2302.01015
+  title: 'OpenSpike: An OpenRAM SNN Accelerator'
+  year: 2023
+  status: excluded
+  reason: Accelerator "taped out in the 130 nm SkyWater process"; the abstract gives no silicon measurements.
+  decided: '2026-09-14'
+- id: doi:10.1109/iscas46773.2023.10182182
+  title: 'OpenSpike: An OpenRAM SNN Accelerator'
+  year: 2023
+  status: excluded
+  reason: ISCAS version of OpenSpike; taped out in the SkyWater 130 nm process with no silicon measurements
+    in the abstract.
+  decided: '2026-09-14'
+- id: doi:10.1109/iirw59383.2023.10477707
+  title: TID Effects on Random Telegraph Signals in Bulk 90 nm MOSFET Devices
+  year: 2023
+  status: excluded
+  reason: TID effects on random telegraph signals in SkyWater 90 nm bulk devices, a different process
+    from SKY130.
+  decided: '2026-09-14'
+- id: doi:10.1109/radecs61975.2024.11017554
+  title: Built-In Self-Test Measurement of Single Event Transients in the Skywater S90ln 90 Nm Process
+  year: 2024
+  status: excluded
+  reason: Single-event transients measured in the SkyWater S90LN 90 nm process, a different process from
+    SKY130.
+  decided: '2026-09-14'
+- id: doi:10.1109/lascas60203.2024.10506161
+  title: Design and Automated Layout Generation of a PMIC Core in Skywater 130nm Open-Source Technology
+  year: 2024
+  status: excluded
+  reason: PMIC core with automated layout in SkyWater 130 nm; the abstract reports designed and simulated
+    results only.
+  decided: '2026-09-14'
+- id: doi:10.1109/redw61286.2024.10759147
+  title: Heavy-Ion SET and SEL Response of a Wide-Band Operational Amplifier Fabricated in the Sky Water
+    S90LN 90 nm Process
+  year: 2024
+  status: excluded
+  reason: Heavy-ion SET and SEL results for the SkyWater S90LN 90 nm process, a different process from
+    SKY130.
+  decided: '2026-09-14'
+- id: arxiv:2412.08017
+  title: Integrated probabilistic computer using voltage-controlled magnetic tunnel junctions as its entropy
+    source
+  year: 2024
+  status: excluded
+  reason: Probabilistic-computer ASIC "in 130 nm foundry CMOS"; the abstract does not name the foundry
+    and no HTML full text was available.
+  decided: '2026-09-14'
+- id: doi:10.1109/access.2024.3393479
+  title: Macro Memory Cell Generator for SKY130 PDK
+  year: 2024
+  status: excluded
+  reason: Memory-generator framework built on the SKY130 SRAM macros; the full text reports a variant
+    "currently in the fabrication phase" and no silicon results.
+  decided: '2026-09-14'
+- id: doi:10.1109/irps48228.2024.10529354
+  title: On-Chip Characterization of Random Telegraph Signal Noise in Bulk 90 nm CMOS
+  year: 2024
+  status: excluded
+  reason: On-chip RTN characterisation in SkyWater's 90 nm bulk CMOS process, a different process from
+    SKY130.
+  decided: '2026-09-14'
+- id: doi:10.22323/1.441.0163
+  title: R&D status of the Selena Neutrino Experiment
+  year: 2024
+  status: excluded
+  reason: Selena R&D status; the abstract does not name the process of the CMOS sensors.
+  decided: '2026-09-14'
+- id: doi:10.1109/mwscas60917.2024.10658692
+  title: 'RISC- Vcito: A Multicycle Tiny Processor Implemented with SKY130 PDK'
+  year: 2024
+  status: excluded
+  reason: Processor taken to a GDSII file with the SKY130 PDK "ready for the manufacturing process"; no
+    silicon results.
+  decided: '2026-09-14'
+- id: doi:10.1109/southeastcon52093.2024.10500120
+  title: Single Event Transient Pulse Propagation Analysis in Complex Skywater 130nm Logic Gates
+  year: 2024
+  status: excluded
+  reason: Single-event transient propagation analysis for SkyWater 130 nm logic gates; the abstract reports
+    no irradiation or silicon measurements.
+  decided: '2026-09-14'
+- id: doi:10.1109/mssc.2024.3381097
+  title: 'Tiny Tapeout: A shared silicon tape out platform accessible to everyone'
+  year: 2024
+  status: held
+  reason: Tiny Tapeout platform article; the abstract does not name the process and the full text could
+    not be retrieved.
+  decided: '2026-09-14'
+- id: doi:10.36227/techrxiv.172055642.27780676/v1
+  title: 'Tiny Tapeout: A Shared Silicon Tapeout Platform Accessible To Everyone'
+  year: 2024
+  status: held
+  reason: Preprint of the Tiny Tapeout platform article; the abstract refers to open-source PDKs without
+    naming the process, and the TechRxiv full text refuses scripted requests.
+  decided: '2026-09-14'
+- id: doi:10.1109/mssc.2024.3385734
+  title: 'Unlocking Circuits for Quantum With Open Source Silicon: A first look at measured open source
+    silicon results at 4 K'
+  year: 2024
+  status: held
+  reason: Measured open-source-silicon results at 4 K, but the process is not named in the abstract and
+    the full text could not be retrieved (IEEE, paywalled).
+  decided: '2026-09-14'
+- id: doi:10.1109/les.2023.3267341
+  title: Vector Accelerator Unit for Caravel
+  year: 2024
+  status: excluded
+  reason: Vector accelerator for the Caravel SoC template; the abstract reports area only, with no fabrication
+    or silicon results.
+  decided: '2026-09-14'
+- id: doi:10.1109/hswtech64936.2025.11277421
+  title: 'An Open-Source Nanoelectronic Analog Front-End in 130 nm CMOS: Design, Fabrication and Characterization
+    of a Low-Noise Inverter-Based Neural-Interface Amplifier'
+  year: 2025
+  status: held
+  reason: The abstract reports a measured mid-band gain but also describes post-layout verification of
+    a "fabricated-ready layout"; held until the full text confirms silicon.
+  decided: '2026-09-14'
+- id: doi:10.37665/kvva5054
+  title: Development of Si-Interposers for 3D Heterogeneous Integration
+  year: 2025
+  status: excluded
+  reason: Silicon interposers with the foundry operator SkyWater; not the SKY130 process.
+  decided: '2026-09-14'
+- id: doi:10.1109/tencon66050.2025.11375089
+  title: Guidelines and Logistics for Manufacturing RISC-V Vanilla Silicon Chips Using SkyWater 130nm
+    OpenPDK
+  year: 2025
+  status: excluded
+  reason: Methodology from setup to GDSII layout for RISC-V chips with the SkyWater 130 nm PDK; no silicon
+    results.
+  decided: '2026-09-14'
+- id: doi:10.3390/electronics14061162
+  title: 'Heuristic Enz–Krummenacher–Vittoz (EKV) Model Fitting for Low-Power Integrated Circuit Design:
+    An Open-Source Implementation'
+  year: 2025
+  status: excluded
+  reason: A generic EKV model-fitting method with a SKY130 case study; the full text's Figure 3 caption
+    labels the fitted data "experimental data (SPICE)" for nfet_01v8 devices, so it fits the PDK model
+    rather than measured silicon.
+  decided: '2026-09-14'
+- id: doi:10.1109/icm66518.2025.11322496
+  title: Hybrid Integration of Rram and Cmos Circuits Using Open-Source 130-nm PDK
+  year: 2025
+  status: excluded
+  reason: The abstract says "a commercial 130-nm PDK that includes RRAM devices" and the title "Open-Source
+    130-nm PDK"; the PDK is not named, SKY130 is not the only open 130 nm PDK, and the silicon status
+    is unclear. Reconsider if the full text names SKY130 or sky130B.
+  decided: '2026-09-14'
+- id: doi:10.1109/vlsi-soc64688.2025.11421739
+  title: Implementation of a 16:1 Multiplexer and 1:16 Demultiplexer on a Single Chip Using Sky130 PDK
+    and Open-Source EDA Tools for Silicluster
+  year: 2025
+  status: excluded
+  reason: Multiplexer and demultiplexer for Silicluster on SKY130; the abstract does not state that the
+    reported figures are silicon measurements.
+  decided: '2026-09-14'
+- id: doi:10.1109/sbcci66862.2025.11218682
+  title: Process Variation Sensing and Compensation Employing a Ring Oscillator-Based Architecture in
+    SkyWater 130nm Technology
+  year: 2025
+  status: excluded
+  reason: Process-variation sensing and compensation in SkyWater 130 nm; the abstract reports simulations
+    across corners and post-layout conditions, not silicon.
+  decided: '2026-09-14'
+- id: doi:10.2172/3385109
+  title: Tiny Tapeout Laser Scan
+  year: 2025
+  status: excluded
+  reason: Poster on laser scanning microscopy of Tiny Tapeout chips; the OSTI PDF does not name the process.
+  decided: '2026-09-14'
+- id: arxiv:2509.24075
+  title: Wafer-Level Prototyping Tools for CMOS Bioelectronic Sensors
+  year: 2025
+  status: excluded
+  reason: Wafer-level biosensor prototyping on open-source MPW wafers; neither the abstract nor the HTML
+    full text names the foundry or process.
+  decided: '2026-09-14'
+- id: doi:10.1109/access.2026.3698053
+  title: 'Silicluster v2: A Scalable Open-Source Multi-Project SoC Architecture in Sky130 CMOS Enabling
+    High-Density Modular Integration'
+  year: 2026
+  status: excluded
+  reason: Silicluster v2 multi-project SoC on SKY130; the full text reports design verification, and its
+    fabricated and measured predecessor (v1) was made in a 180 nm process.
+  decided: '2026-09-14'
+- id: doi:10.2139/ssrn.7289627
+  title: Silicon Verification of Novel CMOS Image Sensor Architectures Using Tiny Tapeout Fabrication
+    and Open-Source Simulation Tools
+  year: 2026
+  status: held
+  reason: Measurements from two Tiny Tapeout silicon prototypes, but the abstract does not name the process
+    and the SSRN full text refuses scripted requests.
+  decided: '2026-09-14'
