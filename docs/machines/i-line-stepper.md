@@ -342,8 +342,8 @@ implants.[^pdk-03]
 * {ref}`mask-dnm` and {ref}`mask-vim4` — per-mask pages for the deep
   N-well mask, assigned to this class, and the via-4 mask, for which it
   is the alternative.
-* {ref}`mask-lvtnm` — the per-mask page for the low-Vt N-channel mask,
-  assigned to this class; {ref}`mask-fom` for the field-oxide mask, for
+* {ref}`mask-lvtnm` and {ref}`mask-nwm` — per-mask pages for the low-Vt
+  N-channel and N-well masks, assigned to this class; {ref}`mask-fom` for the field-oxide mask, for
   which it is the alternative.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
