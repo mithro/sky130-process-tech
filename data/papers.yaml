@@ -335,38 +335,6 @@
     The abstract covers 90-130 nm technology nodes without naming a process.
   verified: 2026-09-14 Crossref REST API works/10.1109/asmc.2019.8791800 resolved; title matches OpenAlex
     record
-- id: doi:10.1145/3400302.3415735
-  title: Building OpenLANE
-  authors:
-  - Mohamed Shalan
-  - Tim Edwards
-  year: 2020
-  venue: Proceedings of the 39th International Conference on Computer-Aided Design
-  venue_type: conference
-  doi: 10.1145/3400302.3415735
-  landing_url: https://dl.acm.org/doi/10.1145/3400302.3415735
-  arxiv: null
-  paywalled: false
-  free_full_text:
-  - url: https://dl.acm.org/doi/10.1145/3400302.3415735
-    host: dl.acm.org
-    oa_type: gold (publisher version)
-    located_via: OpenAlex location (no source name)
-    checked: 2026-09-14 HTTP 403 to the scripted request (site refuses automated access)
-  topics:
-  - tooling
-  - digital
-  institutions:
-  - American University in Cairo
-  fabrication: null
-  related_docs: []
-  inventory_key: null
-  discovery:
-  - OpenAlex title/abstract search for SKY130 and SkyWater terms
-  notes: Borderline inclusion. A flow paper; included because the abstract reports taking an SoC "from
-    concept to silicon validation" with an open-source PDK and IP.
-  verified: 2026-09-14 Crossref REST API works/10.1145/3400302.3415735 resolved; title matches OpenAlex
-    record
 - id: doi:10.1109/asmc49169.2020.9185229
   title: Effect of Sparse or Asymmetric Sampling on the Estimation of Photolithography Overlay Regression
     Parameters
@@ -986,8 +954,8 @@
   paywalled: true
   free_full_text: []
   topics:
-  - floating-gate
   - analog-rf
+  - tooling
   institutions:
   - Georgia Institute of Technology
   fabrication: null
@@ -1163,50 +1131,6 @@
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1049/ell2.70036 resolved; title matches OpenAlex record
-- id: doi:10.1109/mssc.2024.3385734
-  title: 'Unlocking Circuits for Quantum With Open Source Silicon: A first look at measured open source
-    silicon results at 4 K'
-  authors:
-  - Anhang Li
-  - Tuohang Zeng
-  - Lei Zhang
-  - Joseph Riem
-  - Gina C. Adam
-  - David L. Fleischer
-  - Alex Zaslavsky
-  - William R. Patterson
-  - Tim Ansell
-  - Akin Akturk
-  - Brian Hoskins
-  - Pragya R. Shrestha
-  - Mehdi Saligane
-  year: 2024
-  venue: IEEE Solid-State Circuits Magazine
-  venue_type: magazine
-  doi: 10.1109/mssc.2024.3385734
-  landing_url: https://ieeexplore.ieee.org/document/10584405/
-  arxiv: null
-  paywalled: true
-  free_full_text: []
-  topics:
-  - cryogenic
-  - device-characterisation
-  - quantum
-  institutions:
-  - University of Michigan
-  - George Washington University
-  - Brown University
-  - CoolCad Electronics (United States)
-  - National Institute of Standards and Technology
-  - Physical Measurement Laboratory
-  fabrication: null
-  related_docs: []
-  inventory_key: null
-  discovery:
-  - OpenAlex title/abstract search for SKY130 and SkyWater terms
-  notes: null
-  verified: 2026-09-14 Crossref REST API works/10.1109/mssc.2024.3385734 resolved; title matches OpenAlex
-    record
 - id: doi:10.1109/ispacs68724.2025.11383342
   title: A Silicon-Proven Wide-Range Voltage Controlled Oscillator Designed Using Open-Source CMOS 130nm
     PDK
@@ -1286,7 +1210,8 @@
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
-  notes: null
+  notes: Borderline inclusion. The abstract reports a measured gain, noise and power but also describes
+    post-layout verification of a fabrication-ready layout; the silicon status is not clear from the abstract.
   verified: 2026-09-14 Crossref REST API works/10.1109/hswtech64936.2025.11277421 resolved; title matches
     OpenAlex record
 - id: doi:10.1109/iedm50572.2025.11353729
