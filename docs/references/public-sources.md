@@ -2808,7 +2808,8 @@ VIM2, CAPM, MM3, VIM3, CAP2M, MM4, VIM4, MM5, NSM and PDM mask pages.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
-Overlay budgets and non-critical-layer tool choice.
+A lithography monograph whose chapters include "Photoresists", "Wafer
+Steppers", "Overlay", "Masks and Reticles" and "Lithography Costs".
 Also used on the i-line stepper or scanner page.
 Tier: deep dive.
 Also used on the FOM, DNM, LVTNM, NWM, HVTPM, TUNM, ONOM, LVOM, P1M,
