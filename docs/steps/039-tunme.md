@@ -57,8 +57,10 @@ retention, so the etch is the gentlest available.
 ## Why this step exists
 
 The tunnel oxide is the thinnest and most critical film in the SONOS
-cell: the Cypress patents put it at "less than about 25 Å"[^pat-01] and
-"from about 15 Å to about 22 Å",[^pat-02] and it has to pass
+cell: one embodiment of a Cypress patent puts it at "less than about
+25 Å" (another embodiment of the same patent at "less than about
+50 Å")[^pat-01] and a later Cypress patent at "from about 15 angstrom (Å) to about
+22 Å",[^pat-02] and it has to pass
 programming current by {term}`Fowler–Nordheim tunnelling` for 100 000 cycles
 (the PDK guarantees "100K cycles")[^pdk-07] while blocking leakage for
 years. Three things follow:
@@ -197,7 +199,8 @@ fab (SKY130's recipe is not public):
 * Koutny et al. (Cypress), US 8,093,128 — oxide loss per resist
   strip, and the ozonated-water alternative to SC-1.[^pat-03]
 * Ramkumar et al. (Cypress), US 6,969,689 and Levy et al. (Cypress),
-  US 2009/0179253 — tunnel-oxide thickness ranges.[^pat-01][^pat-02]
+  US 2009/0179253 — tunnel-oxide thickness ranges from several
+  embodiments.[^pat-01][^pat-02]
 * SkyWater PDK, *Device Details* — programme/erase voltages and the
   100K-cycle endurance.[^pdk-07]
 * SkyWater PDK, *Periphery rules* — tunm.3.[^pdk-periph]
