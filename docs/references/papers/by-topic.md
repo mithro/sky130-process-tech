@@ -4,8 +4,9 @@
 # Papers by topic
 
 Papers grouped by topic; a paper can appear under several topics. The
-fab-manufacturing papers are listed only on {ref}`papers-fab-publications`.
-Each line links the paper's full entry on {ref}`papers-index`.
+fab publications are listed on {ref}`papers-fab-publications`, and each
+topic with fab publications says how many. Each line links the paper's
+full entry on {ref}`papers-index`.
 
 ## Process, PDK and devices
 
@@ -13,12 +14,13 @@ Each line links the paper's full entry on {ref}`papers-index`.
 ### PDK models and parameter extraction
 
 Compact models, parameter extraction and model calibration for the PDK's devices.
+Related pages: {ref}`overview-cross-section`.
 
 * {ref}`paper-edwards-2020a` — Tim Edwards, WOSET 2020 (free copy)
 * {ref}`paper-alshaya-2022a` — Abdulaziz Alshaya et al., ICM 2022
 * {ref}`paper-akturk-2023a` — Akin Akturk et al., BCICTS 2023
 * {ref}`paper-montanares-2025a` — Mauricio Montanares et al., VLSI-SoC 2025
-* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE JXCDC 2026 (free copy)
+* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 2026 (free copy)
 * {ref}`paper-beall-2026a` — F. Beall et al., arXiv 2026 (free copy)
 
 (papers-topic-device-characterisation)=
@@ -32,9 +34,11 @@ Measured behaviour of devices fabricated in the process.
 * {ref}`paper-akturk-2023a` — Akin Akturk et al., BCICTS 2023
 * {ref}`paper-chen-2024a` — Matthew Chen et al., Electronics Letters 2024 (free copy)
 * {ref}`paper-montanares-2025a` — Mauricio Montanares et al., VLSI-SoC 2025
-* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE JXCDC 2026 (free copy)
+* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 2026 (free copy)
 * {ref}`paper-beall-2026a` — F. Beall et al., arXiv 2026 (free copy)
 * {ref}`paper-bloomer-2026a` — Everest Bloomer et al., arXiv 2026 (free copy)
+
+Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
 
 (papers-topic-test-structures)=
 ### Test structures and test vehicles
@@ -51,6 +55,8 @@ Reliability, yield, harsh-environment operation and wear-out.
 
 * {ref}`paper-rodriguez-ferrandez-2023a` — Ivan Rodriguez-Ferrandez et al., IOLTS 2023 (free copy)
 * {ref}`paper-munoz-2026a` — Ítalo Muñoz et al., CAE 2026
+
+Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
 
 (papers-topic-radiation)=
 ### Radiation effects
@@ -69,32 +75,28 @@ Operation, measurement or modelling below room temperature.
 * {ref}`paper-castoria-2025a` — K. E. Castoria et al., arXiv 2025 (free copy)
 * {ref}`paper-beall-2026a` — F. Beall et al., arXiv 2026 (free copy)
 
-(papers-topic-high-temperature)=
-### High-temperature operation
-
-Operation, measurement or modelling at elevated temperature.
-
-No papers yet.
-
 (papers-topic-rram)=
 ### RRAM (ReRAM)
 
 Resistive RAM devices, arrays and models (sky130B ReRAM and its lineage).
+Related pages: {ref}`overview-sky130b-reram`.
 
 * {ref}`paper-hsieh-2019a` — E.R. Hsieh et al., IEDM 2019 (affiliation inference)
 * {ref}`paper-srimani-2020a` — T. Srimani et al., VLSI Symposium 2020 (affiliation inference)
 * {ref}`paper-hsieh-2021a` — E. R. Hsieh et al., IEEE Electron Device Letters 2021 (affiliation inference)
 * {ref}`paper-le-2021a` — Binh Q. Le et al., IEEE Transactions on Electron Devices 2021 (affiliation inference)
+* {ref}`paper-alshaya-2022a` — Abdulaziz Alshaya et al., ICM 2022
 * {ref}`paper-srimani-2023a` — T. Srimani et al., VLSI Symposium 2023
 * {ref}`paper-upton-2023a` — Luke R. Upton et al., ISQED 2023
 * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025
-* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE JXCDC 2026 (free copy)
+* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 2026 (free copy)
 * {ref}`paper-bloomer-2026a` — Everest Bloomer et al., arXiv 2026 (free copy)
 
 (papers-topic-sonos)=
 ### SONOS memory
 
 SONOS charge-trap memory.
+Related pages: {ref}`step-040`.
 
 * {ref}`paper-fliesler-2008a` — Michael Fliesler et al., NVSMW/ICMTD 2008 (lineage inference)
 
@@ -110,34 +112,21 @@ Floating-gate devices built in the standard process.
 ### BEOL-integrated devices
 
 Devices or tiers integrated in the back end of line.
+Related pages: {ref}`overview-sky130b-reram`.
 
 * {ref}`paper-srimani-2020a` — T. Srimani et al., VLSI Symposium 2020 (affiliation inference)
 * {ref}`paper-srimani-2023a` — T. Srimani et al., VLSI Symposium 2023
 * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025
 
-(papers-topic-photonics)=
-### Photonics
-
-Photonic or optoelectronic devices.
-
-No papers yet.
-
-(papers-topic-mems)=
-### MEMS
-
-MEMS or post-processed mechanical structures.
-
-No papers yet.
-
-## Circuits fabricated on the process
+## Circuits designed for or fabricated on the process
 
 (papers-topic-analog-rf)=
 ### Analog and RF circuits
 
-Analog and RF circuits with silicon results.
+Analog and RF circuits designed for or fabricated on the process.
 
 * {ref}`paper-akturk-2023a` — Akin Akturk et al., BCICTS 2023
-* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE TCAS-I 2024
+* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE Transactions on Circuits and Systems I 2024
 * {ref}`paper-mathews-2024a` — Pranav Mathews et al., CICC 2024
 * {ref}`paper-irfansyah-2025a` — Astria Nur Irfansyah, ISPACS 2025
 * {ref}`paper-li-2025a` — Yueting Li et al., ISQED 2025
@@ -145,7 +134,7 @@ Analog and RF circuits with silicon results.
 (papers-topic-mixed-signal)=
 ### Data converters and mixed-signal circuits
 
-Data converters and other mixed-signal circuits with silicon results.
+Data converters and other mixed-signal circuits designed for or fabricated on the process.
 
 * {ref}`paper-zhang-2022a` — Qirui Zhang et al., IEEE Solid-State Circuits Letters 2022
 * {ref}`paper-poole-2023a` — Nikhil Poole and Amin Arbabian, IEEE Access 2023 (free copy)
@@ -155,7 +144,7 @@ Data converters and other mixed-signal circuits with silicon results.
 (papers-topic-power-management)=
 ### Power management
 
-Power converters and regulators with silicon results.
+Power converters and regulators designed for or fabricated on the process.
 
 * {ref}`paper-marin-2024a` — Jorge Marin et al., IEEE Design & Test 2024
 * {ref}`paper-munoz-2026a` — Ítalo Muñoz et al., CAE 2026
@@ -163,7 +152,7 @@ Power converters and regulators with silicon results.
 (papers-topic-digital)=
 ### Digital circuits
 
-Digital logic, processors and accelerators with silicon results.
+Digital logic, processors and accelerators designed for or fabricated on the process.
 
 * {ref}`paper-poole-2023a` — Nikhil Poole and Amin Arbabian, IEEE Access 2023 (free copy)
 * {ref}`paper-chen-2023a` — Po-Han Chen et al., ISCAS 2023
@@ -223,7 +212,7 @@ Open-source design flows and generators as they relate to the process.
 * {ref}`paper-zhang-2022a` — Qirui Zhang et al., IEEE Solid-State Circuits Letters 2022
 * {ref}`paper-shah-2023a` — Myrtle Shah et al., FPL 2023
 * {ref}`paper-cirimelli-low-2023a` — Jesse Cirimelli-Low et al., ISCAS 2023 (free copy)
-* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE TCAS-I 2024
+* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE Transactions on Circuits and Systems I 2024
 * {ref}`paper-blocklove-2024a` — Jason Blocklove et al., LAD 2024 (free copy)
 * {ref}`paper-jagielski-2024a` — Thomas Jagielski et al., WOSET 2024 (free copy)
 * {ref}`paper-li-2025a` — Yueting Li et al., ISQED 2025
@@ -241,3 +230,9 @@ Papers about a shuttle programme or its educational use.
 The Cypress S8 / SONOS 130 nm lineage and Cypress-era work at the fab.
 
 * {ref}`paper-fliesler-2008a` — Michael Fliesler et al., NVSMW/ICMTD 2008 (lineage inference)
+
+Also 7 fab publications with this topic: see {ref}`papers-fab-publications`.
+
+## Topics without papers
+
+No papers yet on: High-temperature operation, Photonics, MEMS.

@@ -161,7 +161,8 @@
   fabrication: null
   related_docs:
   - label: machine-pecvd
-    reason: The paper describes run-to-run control of PECVD dielectric deposition.
+    reason: The paper describes an APC engine that compensates PECVD dielectric deposition for tool rate
+      drift and pattern density.
   inventory_key: null
   discovery:
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
@@ -181,7 +182,7 @@
   year: 2006
   venue: 'Journal of Vacuum Science & Technology B: Microelectronics and Nanometer Structures Processing,
     Measurement, and Phenomena'
-  venue_series: JVST B
+  venue_series: Journal of Vacuum Science & Technology B
   venue_type: journal
   volume: '24'
   issue: '2'
@@ -419,10 +420,11 @@
   fabrication: null
   related_docs:
   - label: machine-downstream-plasma-asher
-    reason: The paper changes the dry strip chamber temperature used to rework patterned Al-0.5 wt% Cu
-      metal wafers.
+    reason: The paper changes the dry strip chamber temperature (270 °C to 300 °C) used in photo rework
+      of metal-layer wafers with 0.5 wt% Cu.
   - label: category-strip
-    reason: Resist strip on metal layers is the step the rework scheme modifies.
+    reason: The rework scheme strips resist from metal-layer wafers in a dry strip chamber before they
+      are recoated.
   inventory_key: null
   discovery:
   - OpenAlex raw-affiliation search (SkyWater; Cypress Semiconductor, Bloomington)
@@ -498,7 +500,9 @@
   institutions:
   - Open Circuit Design
   - Efabless
-  fabrication: null
+  fabrication:
+    quote: Fig. 1. Process stack of the SkyWater 130nm open process
+    source: full text (PDF)
   related_docs:
   - label: overview-cross-section
     reason: The paper's first figure is a process stack of the SkyWater 130 nm open process, the subject
@@ -757,7 +761,10 @@
   - University of Michigan
   - Efabless
   - Google
-  fabrication: null
+  fabrication:
+    quote: Verified with 64 instances in SkyWater 130 nm, the generator also enables low-effort silicon-proven
+      design space exploration
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -791,13 +798,18 @@
   free_full_text: []
   topics:
   - pdk-models
+  - rram
   basis: named-process
   institutions:
   - Imperial College London
-  fabrication: null
+  fabrication:
+    quote: we present a comprehensive presentation and illustration about SkyWater memristor device and
+      model
+    source: abstract
   related_docs:
   - label: overview-sky130b-reram
-    reason: The overview page describes the sky130B ReRAM module whose device model this paper exercises.
+    reason: The abstract describes SkyWater's memristor device and model; the overview page describes
+      the sky130B ReRAM module, and that this is its PDK model is our reading.
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
@@ -839,7 +851,9 @@
   basis: named-process
   institutions:
   - Stanford University
-  fabrication: null
+  fabrication:
+    quote: The custom IC, implemented in the open-source SkyWater 130-nm technology
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -876,7 +890,10 @@
   basis: named-process
   institutions:
   - Stanford University
-  fabrication: null
+  fabrication:
+    quote: This is the first CGRA chip designed using the open-source SkyWater 130nm technology and OpenRAM
+      memory compiler.
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -918,7 +935,10 @@
   institutions:
   - CoolCAD Electronics
   - University of Michigan
-  fabrication: null
+  fabrication:
+    quote: we measure and SPICE-type compact model CMOS devices from the 130nm Skywater technology node,
+      at the ubiquitously used quantum computing temperature of 4K
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1050,7 +1070,10 @@
   basis: named-process
   institutions:
   - Carnegie Mellon University
-  fabrication: null
+  fabrication:
+    quote: a successful tapeout of our chip on the SKY130 process node using an open-source RTL-to-GDS
+      pipeline
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1150,7 +1173,10 @@
   institutions:
   - University of California, Santa Cruz
   - IOActive
-  fabrication: null
+  fabrication:
+    quote: The first silicon in SkyWater […] has been successfully verified which includes a 32-bit 1-kilobyte
+      dual-port SRAM macro.
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1196,7 +1222,10 @@
   - Stanford University
   - Intrinsix
   - SkyWater Technology
-  fabrication: null
+  fabrication:
+    quote: a Yield Test Vehicle (YTV) for characterizing resistive RAM (RRAM) at the array level in SkyWater’s
+      130 nm technology
+    source: abstract
   related_docs:
   - label: overview-sky130b-reram
     reason: The yield test vehicle characterises RRAM in SkyWater's 130 nm technology; the overview page
@@ -1219,7 +1248,7 @@
   - Pranav Mathews
   year: 2024
   venue: 'IEEE Transactions on Circuits and Systems I: Regular Papers'
-  venue_series: IEEE TCAS-I
+  venue_series: IEEE Transactions on Circuits and Systems I
   venue_type: journal
   volume: '71'
   issue: '6'
@@ -1236,7 +1265,10 @@
   basis: named-process
   institutions:
   - Georgia Institute of Technology
-  fabrication: null
+  fabrication:
+    quote: an experimentally measured, implemented, openly-available programmable analog standard cell
+      library in Skywater’s 130nm CMOS process
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1274,7 +1306,9 @@
   basis: named-process
   institutions:
   - Georgia Institute of Technology
-  fabrication: null
+  fabrication:
+    quote: developed in both 65nm CMOS and Skywater (open-source) 130nm CMOS
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1310,13 +1344,17 @@
   institutions:
   - Apple
   - Cannan Inc.
-  fabrication: null
+  fabrication:
+    quote: using open-source tools and the Skywater 130-nm CMOS process, with an emphasis on systemlevel
+      design, circuit implementation, and performance results from silicon measurements
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
   - OpenAlex full-text search for sky130
-  notes: null
+  notes: The process is named in the editor's note published with the article (the only abstract text
+    in the public records); the title says only "130-nm CMOS".
   verified: 2026-09-14 Crossref REST API works/10.1109/mdat.2024.3444728 resolved; title matches Crossref
     and OpenAlex
 - id: doi:10.1109/lad62341.2024.10691811
@@ -1401,7 +1439,9 @@
   basis: named-process
   institutions:
   - Yale University
-  fabrication: null
+  fabrication:
+    quote: we have taped-out an asynchronous MD5 hashing accelerator in the SKY130 process
+    source: full text (PDF)
   related_docs: []
   inventory_key: null
   discovery:
@@ -1446,7 +1486,10 @@
   - Universidad Católica del Uruguay
   - Universidad Nacional del Sur
   - CONICET
-  fabrication: null
+  fabrication:
+    quote: implemented in 6.27mm2of active area using the Skywater 130nm standard CMOS technology open-source
+      PDK
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1494,7 +1537,9 @@
   basis: named-process
   institutions:
   - University of Maryland, College Park
-  fabrication: null
+  fabrication:
+    quote: specifically fabricated using the open‐source Skywater 130 nm process
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1570,7 +1615,10 @@
   institutions:
   - g.tec Medical Engineering GmbH
   - Johannes Kepler University Linz
-  fabrication: null
+  fabrication:
+    quote: designed using open-source circuit design tools and the open-source SKY130 PDK, is presented.
+      […] the power consumption has been measured at 8.1 µW
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1667,7 +1715,10 @@
   - University of California, Berkeley
   - Stanford University
   - University of Hawaiʻi at Mānoa
-  fabrication: null
+  fabrication:
+    quote: The bandgap design generated by our flow is fabricated in SkyWater's 130-nm CMOS technology,
+      tested
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1705,7 +1756,9 @@
   institutions:
   - Microelectronics Circuits Centre Ireland (MCCI)
   - University College Cork
-  fabrication: null
+  fabrication:
+    quote: We present an open-source calibration methodology for Sky130 CMOS
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -1904,7 +1957,7 @@
   - Sahil Shah
   year: 2026
   venue: IEEE Journal on Exploratory Solid-State Computational Devices and Circuits
-  venue_series: IEEE JXCDC
+  venue_series: IEEE Journal on Exploratory Solid-State Computational Devices and Circuits
   venue_type: journal
   volume: '12'
   issue: null
@@ -1934,7 +1987,10 @@
   basis: named-process
   institutions:
   - University of Maryland, College Park
-  fabrication: null
+  fabrication:
+    quote: the characterization and compact modeling of ReRAM devices fabricated in the SkyWater 130 nm
+      CMOS process
+    source: abstract
   related_docs:
   - label: overview-sky130b-reram
     reason: The paper characterises ReRAM devices fabricated in the SkyWater 130 nm process; the overview
@@ -1998,7 +2054,9 @@
   - Rice University
   - Fermi National Accelerator Laboratory
   - Wellesley College
-  fabrication: null
+  fabrication:
+    quote: we characterize and model SKY130 low-threshold voltage transistors at 77 K
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
@@ -2081,7 +2139,9 @@
   basis: named-process
   institutions:
   - University of Maryland, College Park
-  fabrication: null
+  fabrication:
+    quote: a ReRAM crossbar fabricated in the Skywater 130 nm CMOS process
+    source: abstract
   related_docs:
   - label: overview-sky130b-reram
     reason: The crossbar is a ReRAM array fabricated in the Skywater 130 nm process; the overview page
@@ -2136,14 +2196,18 @@
   - University of Alabama
   - New Mexico State University
   - Oklahoma State University
-  fabrication: null
+  fabrication:
+    quote: As the proposed chip has not yet been fabricated, the fabricated TrunMEM ASIC in Sky130 technology
+      is used for evaluation
+    source: full text (HTML)
   related_docs: []
   inventory_key: null
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
   - OpenAlex full-text search for sky130
-  notes: Borderline inclusion. A video-system paper validated on an SRAM ASIC fabricated in SkyWater 130
-    nm CMOS.
+  notes: Borderline inclusion. A video-system paper; the abstract says SPORT is validated on the TrunMEM360
+    ASIC "fabricated in SkyWater 130 nm CMOS", but the full text says the proposed TrunMEM360 chip "has
+    not yet been fabricated"; validation uses the earlier TrunMEM ASIC in Sky130.
   verified: 2026-09-14 arXiv abs page 2606.24916 resolved; title matches arXiv and the OpenAlex record
     for DOI 10.48550/arXiv.2606.24916
 - id: doi:10.1109/cae69023.2026.11450324
@@ -2176,7 +2240,9 @@
   institutions:
   - Universidad Técnica Federico Santa María
   - Universidad de Chile
-  fabrication: null
+  fabrication:
+    quote: The device, fabricated in SkyWater 130 nm technology
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:

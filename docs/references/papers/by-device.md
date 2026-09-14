@@ -4,18 +4,22 @@
 # Papers by device or circuit type
 
 Papers grouped by the kind of device or circuit they study, derived from
-their topics; a paper can appear in several groups. The fab-manufacturing
-papers are listed only on {ref}`papers-fab-publications`.
+their topics; a paper can appear in several groups. Transistor models and
+cryogenic work on memory devices are listed under the memory device. The
+fab publications are listed on {ref}`papers-fab-publications`.
 
-## MOSFET models and cryogenic devices
+## PDK and process overviews
 
 * {ref}`paper-edwards-2020a` — Tim Edwards, WOSET 2020 (free copy)
-* {ref}`paper-alshaya-2022a` — Abdulaziz Alshaya et al., ICM 2022
+
+## Transistor models, characterisation and cryogenic operation
+
 * {ref}`paper-akturk-2023a` — Akin Akturk et al., BCICTS 2023
 * {ref}`paper-montanares-2025a` — Mauricio Montanares et al., VLSI-SoC 2025
 * {ref}`paper-castoria-2025a` — K. E. Castoria et al., arXiv 2025 (free copy)
-* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE JXCDC 2026 (free copy)
 * {ref}`paper-beall-2026a` — F. Beall et al., arXiv 2026 (free copy)
+
+Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
 
 ## RRAM
 
@@ -23,10 +27,11 @@ papers are listed only on {ref}`papers-fab-publications`.
 * {ref}`paper-srimani-2020a` — T. Srimani et al., VLSI Symposium 2020 (affiliation inference)
 * {ref}`paper-hsieh-2021a` — E. R. Hsieh et al., IEEE Electron Device Letters 2021 (affiliation inference)
 * {ref}`paper-le-2021a` — Binh Q. Le et al., IEEE Transactions on Electron Devices 2021 (affiliation inference)
+* {ref}`paper-alshaya-2022a` — Abdulaziz Alshaya et al., ICM 2022
 * {ref}`paper-srimani-2023a` — T. Srimani et al., VLSI Symposium 2023
 * {ref}`paper-upton-2023a` — Luke R. Upton et al., ISQED 2023
 * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025
-* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE JXCDC 2026 (free copy)
+* {ref}`paper-didin-2026a` — Irem Didin et al., IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 2026 (free copy)
 * {ref}`paper-bloomer-2026a` — Everest Bloomer et al., arXiv 2026 (free copy)
 
 ## SONOS and floating-gate nonvolatile memory
@@ -47,10 +52,12 @@ papers are listed only on {ref}`papers-fab-publications`.
 * {ref}`paper-upton-2023a` — Luke R. Upton et al., ISQED 2023
 * {ref}`paper-munoz-2026a` — Ítalo Muñoz et al., CAE 2026
 
+Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
+
 ## Analog and RF circuits
 
 * {ref}`paper-akturk-2023a` — Akin Akturk et al., BCICTS 2023
-* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE TCAS-I 2024
+* {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE Transactions on Circuits and Systems I 2024
 * {ref}`paper-mathews-2024a` — Pranav Mathews et al., CICC 2024
 * {ref}`paper-irfansyah-2025a` — Astria Nur Irfansyah, ISPACS 2025
 * {ref}`paper-li-2025a` — Yueting Li et al., ISQED 2025
