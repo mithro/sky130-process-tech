@@ -111,6 +111,7 @@ fom
 dnm
 lvtnm
 nwm
+hvtpm
 p1m
 licm1
 li1m
@@ -145,7 +146,7 @@ In the table:
 | {ref}`DNM <step-007>` | Deep N-Well, {ref}`DNM <mask-dnm>` — `X` | `cdnm` mask 48:0 | `dnwell` 64:18 | {ref}`DNI <step-008>`; strip {ref}`DNIS <step-009>` | `DNMCD` 3 / `DNMCDSP` 6.3 |
 | {ref}`LVTNM <step-014>` | Low Vt Nch\*, {ref}`LVTNM <mask-lvtnm>` — `X` | `clvtnm` mask 25:0; drawing 25:44, mask add 25:43, mask drop 25:42 | `lvtn` 125:44 | {ref}`LVTNI <step-015>`; strip {ref}`LVTNIS <step-016>` | `LVTNMCD` 0.38 / `LVTNMCDSP` 0.38 |
 | {ref}`NWM <step-017>` | N-Well\*, {ref}`NWM <mask-nwm>` — `X` | `cnwm` mask 21:0 | `nwell` 64:20 | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`; strip {ref}`LVTPIS <step-021>` | `NWMCD` 0.84 / `NWMCDSP` 1.27 |
-| {ref}`HVTPM <step-022>` | High Vt PCh\*, HVTPM — `X` | `chvtpm` mask 97:0; drawing 88:44, mask add 97:43, mask drop 97:42 | `hvtp` 78:44 | {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`; strip {ref}`PCHIS <step-025>` | `HVTPMCD` 0.38 / `HVTPMCDSP` 0.38 |
+| {ref}`HVTPM <step-022>` | High Vt PCh\*, {ref}`HVTPM <mask-hvtpm>` — `X` | `chvtpm` mask 97:0; drawing 88:44, mask add 97:43, mask drop 97:42 | `hvtp` 78:44 | {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`; strip {ref}`PCHIS <step-025>` | `HVTPMCD` 0.38 / `HVTPMCDSP` 0.38 |
 | {ref}`PWBM <step-026>` | P-Well Block Mask, PWBM — *blank* | none | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`; strip {ref}`PWIS <step-029>` | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 |
 | {ref}`PWDEM <step-030>` | P-Well Drain Extended, PWDEM — *blank* | none | `pwde` 124:20 | {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; strip {ref}`PWDEIS <step-033>` | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 |
 | {ref}`TUNM <step-035>` | Tunnel Mask, TUNM — `X` | `ctunm` mask 20:0 | `tunm` 80:20 | {ref}`TUNARCE <step-036>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`TUNME <step-039>` | `TUNMCD` 0.41 / `TUNMCDSP` 0.5 |

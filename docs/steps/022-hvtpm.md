@@ -156,6 +156,8 @@ fab:
   may not overlap `hvtp`).
 * Previous mask: {ref}`NWM <step-017>`; next mask:
   {ref}`PWBM <step-026>`.
+* Mask page: {ref}`HVTPM <mask-hvtpm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References

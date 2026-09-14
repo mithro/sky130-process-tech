@@ -10,7 +10,7 @@ and is stripped again at {ref}`LVTNIS <step-016>`. It is an implant
 channel module. What makes it unusual is that the public record does not
 settle what its openings are: the PDK describes the drawn layer as
 blocking an implant, the step pages leave the polarity open, and one
-public reconstruction of the plate adds shapes the designer never draws.
+public reconstruction of the plate adds created shapes to the drawn layer.
 This page gathers what public sources say about the mask itself — its
 PDK entry and layers, the plates the process-steps sheet records for the
 MPW runs, what the public renders of those runs show, the lithography it
@@ -63,7 +63,7 @@ NMOS and PMOS rows.[^pdk-06] The high-Vt PMOS and `pmos_core` rows are
 not devices the `lvtn` function line names, and on the table the three
 1.8 V PMOS flavours differ in which of the two threshold masks they
 receive: the standard PMOS `HVTPM` only, the low-Vt PMOS `LVTNM` only
-and the high-Vt PMOS both ({ref}`HVTPM <step-022>`; our reading of the
+and the high-Vt PMOS both ({ref}`mask-hvtpm`; our reading of the
 rows).[^pdk-06] The table does not say what the implants through the
 two masks do, so it does not settle the polarity either; it does show
 that the plate is not the drawn `lvtn` alone.
@@ -314,7 +314,7 @@ may fall relative to the active and poly patterns.
 
 * {ref}`LVTNM <step-014>`, {ref}`LVTNI <step-015>` and
   {ref}`LVTNIS <step-016>` — the mask step, the implant and the strip.
-* {ref}`HVTPM <step-022>` — the other threshold mask of the module,
+* {ref}`mask-hvtpm` — the other threshold mask of the module,
   which the high-Vt PMOS rows of Table F2b pair with this one.
 * {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the derivations the renders use.
