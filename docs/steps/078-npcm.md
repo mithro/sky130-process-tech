@@ -130,10 +130,9 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
    than by its CD. Whether the tool is a stepper or a scanner is not
    public; SkyWater lists both.[^skw-01]
 4. **Alignment.** To the poly layer ({ref}`P1M <step-061>`), since
-   npc.4 and licon.15 are both poly-referenced.[^pdk-periph] Overlay
-   budgets and how they are allocated are treated by
-   Levinson[^levinson-2005] and, for alignment-mark placement, by
-   van Haren et al.[^van-haren-2019]
+   npc.4 and licon.15 are both poly-referenced.[^pdk-periph] Levinson's
+   book has a chapter on overlay,[^levinson-2005] and van Haren et
+   al. treat alignment-mark placement.[^van-haren-2019]
 5. **Post-exposure bake and develop** in 2.38 % (0.26 N) TMAH;[^txt-02]
    after-develop CD and overlay measurement on box-in-box targets
    against poly; the dose/focus process window is characterised the

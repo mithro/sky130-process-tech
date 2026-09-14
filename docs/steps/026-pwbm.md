@@ -254,9 +254,8 @@ raises NMOS {term}`Vt`.[^hook-2003]
   consequences of the well proximity effect.[^drennan-2006]
 * Mack, *Fundamental Principles of Optical Lithography* — thick-resist
   imaging and k₁ margins behind the i-line choice.[^mack-2007]
-* Levinson, *Principles of Lithography* — overlay budgets: the
-  N-well/P-well mutual overlay is what this mask is judged
-  on.[^levinson-2005]
+* Levinson, *Principles of Lithography* — the chapter on
+  overlay.[^levinson-2005]
 * Lee et al. (Genus), IIT 1996 — outgassing of thick resists during MeV
   implantation.[^lee-1996]
 * Stolmeijer, *IEEE TED* 1986 — a twin-well CMOS process using implants of

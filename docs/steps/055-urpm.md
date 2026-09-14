@@ -223,7 +223,7 @@ reading is used throughout these pages and is marked as an inference.
 * Buffat and Adams (Zilog), US 6,576,405 — implant-mask lithography
   design space.[^pat-resist-zilog]
 * Bossung, SPIE 1977 — the exposure–focus process window.[^bossung-1977]
-* Levinson, *Principles of Lithography* — resist processing and
+* Levinson, *Principles of Lithography* — chapters on photoresists and
   overlay.[^levinson-2005]
 * ITRS 2001, *Lithography* — the exposure options it lists by node for
   critical layers.[^itrs-03]

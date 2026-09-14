@@ -66,13 +66,13 @@ window is for.
   an ARC removes the substrate from the exposure equation. A 1996
   study on an i-line 0.35 µm device is the classic demonstration that
   a new anti-reflective coating tightens CD control.[^baker-1996]
-* **Why the ARC must be opened before implanting.** A 130 nm-era BARC
-  is of the order of 100 nm thick (industry-typical value; Levinson,
-  ch. on resist processing).[^levinson-2005] The channel-type implants
-  that follow are at tens of keV, whose {term}`projected range` in an
-  organic film is comparable to that thickness
-  ({ref}`category-implant`), so an unopened ARC would absorb a large,
-  poorly controlled fraction of the dose and shift the profile of the
+* **Why the ARC must be opened before implanting.** The thickness of
+  the ARC is not public, and this reference has no checked figure for
+  it. The channel-type implants that follow are at tens of keV
+  ({ref}`category-implant`); an unopened organic film in their path
+  would absorb part of the dose, by an amount that depends on its
+  thickness and the ions' {term}`projected range` in it (inference),
+  and shift the profile of the
   memory transistor's channel — precisely the parameter these implants
   exist to set.
 * **Why it must be opened before the oxide etch.** The (inferred)
@@ -196,8 +196,8 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
   basics.[^wiki-rie]
 * Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
   plasma etching and resist processing.[^txt-02]
-* Levinson, *Principles of Lithography* — anti-reflective coatings and
-  resist processing.[^levinson-2005]
+* Levinson, *Principles of Lithography* — chapters on photoresists and
+  on modeling and thin film effects.[^levinson-2005]
 
 ### Deep dive
 

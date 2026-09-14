@@ -418,8 +418,8 @@ implants.[^pdk-03]
   chemistry.[^wiki-dnq]
 * Mack, *Fundamental Principles of Optical Lithography* — imaging,
   resolution and focus.[^mack-2007]
-* Levinson, *Principles of Lithography*, 2nd ed. — exposure tools and
-  overlay in a production context.[^levinson-2005]
+* Levinson, *Principles of Lithography*, 2nd ed. — chapters on wafer
+  steppers and overlay.[^levinson-2005]
 
 ### Deep dive
 
