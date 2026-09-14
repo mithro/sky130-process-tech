@@ -351,7 +351,8 @@ implants.[^pdk-03]
   MiM capacitor masks, both assigned to this class.
 * {ref}`mask-ntm`, {ref}`mask-hvntm` and {ref}`mask-ldntm` — per-mask
   pages for the N-tip, high-voltage N-tip and lightly doped N-tip implant
-  masks, assigned to this class.
+  masks, assigned to this class; {ref}`mask-npcm` for the nitride poly
+  cut mask, for which it is the alternative.
 * {ref}`mask-mm3` and {ref}`mask-mm4` — per-mask pages for the metal-3 and
   metal-4 masks, for which the step pages leave the class open between
   this one and KrF.
