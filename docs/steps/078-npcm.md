@@ -184,6 +184,8 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
   {ref}`URPM <step-055>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`.
 * Previous mask: {ref}`LDNTM <step-071>`; next mask:
   {ref}`PSDM <step-081>`.
+* Mask page: {ref}`NPCM <mask-npcm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References

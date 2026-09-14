@@ -339,6 +339,8 @@ settings and resists per layer are not public.
   and metal-2 masks, all assigned to this class.
 * {ref}`mask-fom` — the per-mask page for the field-oxide mask, assigned
   to this class.
+* {ref}`mask-npcm` — the per-mask page for the nitride poly cut mask,
+  assigned to this class with i-line as the alternative.
 * {ref}`mask-vim2` and {ref}`mask-vim3` — per-mask pages for the via-2
   and via-3 masks, both assigned to this class, whose recorded mask type
   reads as a 248 nm attenuated phase-shift mask.
