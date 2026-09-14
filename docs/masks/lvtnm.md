@@ -107,6 +107,20 @@ F2b in rows that the `lvtn` function line does not name (above) point to
 created shapes, but the PDK does not give the operation that makes
 them.[^pdk-06]
 
+The PDK's *Error Messages* page, which describes "many of the automated
+DRC rules that are checked by SkyWater as part of the acceptance
+criteria for GDS data", names checks on the mask data that the rule
+tables do not: `clvtnm.1`, "0.38 min. width of clvtnm in periphery",
+`clvtnm.2`, "0.38 min. spacing/notch of CLLVTNM", and two `clvtnm.nikon`
+checks, "LVTNMmk in the nikon cross has the wrong polarity" and
+"LVTNMmk is missing from the nikon cross in the layout".[^pdk-errors] It
+does not define `CLLVTNM`; we read it as the created `LVTNM` data
+(inference from the rule name), so the PDK checks the created layer at
+the same 0.38 µm as the drawn one without saying how it is made. The
+page's message for lvtn.3b gives "0.19 min spacing of lvtn(peri) to
+pfet along S/D direction", against the 0.235 µm of the periphery
+rules;[^pdk-errors][^pdk-periph] the PDK does not reconcile the two.
+
 ### In the public renders
 
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
@@ -306,8 +320,10 @@ Table 2 of *Criteria & Assumptions* repeats the width and space as
 for low Vt PMOS" of 0.35 (`lvtpmos_poly`), matching poly.1b, and a
 "Width of the Low Leakage gate on each side of LowVt Pmos connected to
 power rails (requirement based on exp data)" of 0.28
-(`LvtEnc_forPowerRail`).[^pdk-03][^pdk-periph] For the plate, lvtn.1a, lvtn.2 and the two area
-rules set the smallest features — 0.380 µm lines, spaces and islands of
+(`LvtEnc_forPowerRail`).[^pdk-03][^pdk-periph] The Error Messages page
+adds `clvtnm.1` and `clvtnm.2` at 0.38 for the created layer and gives
+lvtn.3b as 0.19 (above).[^pdk-errors] For the plate, lvtn.1a, lvtn.2 and
+the two area rules set the smallest features — 0.380 µm lines, spaces and islands of
 0.265 µm² — and the gate spacing and enclosure rules set where its edges
 may fall relative to the active and poly patterns.
 
@@ -342,6 +358,9 @@ may fall relative to the active and poly patterns.
   thickness.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — the `lvtn` rules and function line,
   poly.1b, ncm.5, x.9, x.15a and the flag legend.[^pdk-periph]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the `clvtnm`
+  width, spacing and "nikon cross" checks and the lvtn.3b
+  message.[^pdk-errors]
 * SkyWater PDK, *Device Details* — the low-Vt and native devices and
   their "VT adjust implants".[^pdk-07]
 * *S8 / SKY130 Process Steps* sheet — the step, the `LVTNM` plates of
@@ -399,13 +418,16 @@ may fall relative to the active and poly patterns.
   else, and so whether `LVTNI` is a counter-doping or a baseline
   implant, is not public; the step pages favour the block reading.
 * The operation that makes the `clvtnm` plate data is not published.
-  Table F2b marks created `LVTNM` shapes in devices without drawn
-  `lvtn`,[^pdk-06] and the renders site renders one expression for
+  Table F2b marks created `LVTNM` shapes in rows the `lvtn` function
+  line does not name,[^pdk-06] the Error Messages page checks a
+  created layer it does not define,[^pdk-errors] and the renders site renders one expression for
   them whose note contradicts it;[^mask-renders] which, if either,
   matches the plate is not public.
 * The plate's tone, blank, absorber and magnification, the resist and
   its thickness, and the exposure tool are not public; the i-line
   reading rests on the 0.380 µm rules.
+* The Error Messages page's 0.19 for lvtn.3b and the periphery rules'
+  0.235 µm are not reconciled in the PDK.[^pdk-errors][^pdk-periph]
 * The renders do not say what the shapes common to many dies of a run
   are, so how many projects on each shuttle use low-Vt or native devices
   is not shown.[^mask-renders]
@@ -437,6 +459,10 @@ may fall relative to the active and poly patterns.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
     documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
 [^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
