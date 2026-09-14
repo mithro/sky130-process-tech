@@ -74,10 +74,8 @@ mask and process step".[^tee-2010]
 The SKY130 {term}`test tile`'s pad documentation names one 20 V
 zero-Vt structure `n20zvtvhv1`, "w/l=30/5.5; m=2", with the cell name
 `s8defet_ccgx_hvn_nw_dnw_native_sti_2p0_nopw_L5p0_W60`;[^raw-data-testtile-pads]
-the pad list does not explain the name, and we read "nopw" as "no
-P-well" (inference from the name alone, which is not evidence of the
-process). The {ref}`PWBM <step-026>` page's analysis of that
-structure's published measurements finds an effective body doping far
+the pad list does not explain the name. The {ref}`PWBM <step-026>`
+page's analysis of that structure's published measurements finds an effective body doping far
 below the P-well peak.
 
 ## Drawn layers and derivation
@@ -93,8 +91,14 @@ devices that depend on it exist. Table 2 of *Criteria & Assumptions*
 gives `PWBMCD` 0.84 and `PWBMCDSP` 1.27, the same values as `NWMCD` and
 `NWMCDSP`;[^pdk-03] we read the match as consistent with a plate whose
 smallest features are N-well outlines (inference; the table does not
-say so). The `pwbm` rules themselves carry no values ("N/A"), and the
-PDK publishes no operation that combines `nwell` and `pwbm` into a
+say so), though `PWDEM`, which the step pages do not pair with `nwell`,
+has the same pair, so the values may be a common well-mask minimum. The
+periphery rules give no values for `pwbm` ("N/A"),[^pdk-periph] but the
+PDK's *Error Messages* page, which describes "many of the automated DRC
+rules that are checked by SkyWater as part of the acceptance criteria
+for GDS data", gives `pwbm.5` as "0.84 min. spacing of pwbm_holes" and
+`rpm.10` as "2 min. spacing of rpmNotXmt & pwbm".[^pdk-errors] The PDK
+publishes no operation that combines `nwell` and `pwbm` into a
 plate.[^pdk-periph]
 
 ### In the public renders
@@ -157,7 +161,7 @@ is the heading of the run's columns in the tab
   page does not read the two recorded plates as evidence that any
   project used the 20 V devices.[^mask-renders][^steps-sheet]
 * **Plate number.** `024` lies between `020` for `FOM` and `026` for
-  `PWDEM`, and next to `010` for `NWM`; the numbers do not follow
+  `PWDEM`, and a few numbers above `010` for `NWM`; the numbers do not follow
   process order elsewhere, and the sheet does not say what they encode,
   so no process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
@@ -258,7 +262,8 @@ exception to the rule for this mask.
 ## Design rules and critical dimensions
 
 The `pwbm` rules of the periphery rules, with the rules of other layers
-that name `pwbm`; none of them carries a published value.[^pdk-periph]
+that name `pwbm`; the periphery rules give no values ("N/A"), but the
+Error Messages page's messages give some (after the table).[^pdk-periph]
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -274,8 +279,11 @@ that name `pwbm`; none of them carries a published value.[^pdk-periph]
 | rpm.11 | "rpm should not overlap or straddle pwbm except cells […]" | N/A |
 | ulvt-.2 | "areaid.low_vt must enclose pwbm.dg for the UHV dnw-psub diode texted "condiodeHvPsub"" | NA |
 
-Table 2 of *Criteria & Assumptions* gives `PWBMCD` 0.84 and `PWBMCDSP`
-1.27.[^pdk-03] Table 3d gives punch-through spacings of "p+ in nwell to
+The Error Messages page's messages give values for two of these rules:
+`pwbm.5`, "0.84 min. spacing of pwbm_holes", and `rpm.10`, "2 min.
+spacing of rpmNotXmt & pwbm" (with "rpmNotXmt must not overlap
+pwbm").[^pdk-errors] Table 2 of *Criteria & Assumptions* gives `PWBMCD`
+0.84 and `PWBMCDSP` 1.27.[^pdk-03] Table 3d gives punch-through spacings of "p+ in nwell to
 pwell" 0.05 µm (`PPTS`) and "n+ in pwell to nwell" 0.15 µm (`PNPTS`),
 and Table 7 a "spacing of p-well outside deep n-well to deep n-well
 mask edge" of 0.12 (`NWDNWENCL`) and a "p-well in deep n-well to p-sub"
@@ -319,6 +327,8 @@ N-well rules nwell.1 and nwell.2a would set the smallest features
   P-well profile, junction and spacing criteria.[^pdk-03]
 * SkyWater PDK, *Periphery rules* — the `pwbm` rules and function line
   and the rules of other layers that name `pwbm`.[^pdk-periph]
+* SkyWater PDK, *Error Messages* page and `errors.csv` — the values in
+  the `pwbm.5` and `rpm.10` messages.[^pdk-errors]
 * SkyWater PDK, *Device Details* — the 20 V zero-Vt NMOS with its P-well
   blocked.[^pdk-07]
 * SkyWater PDK Authors, test-tile pad documentation — the 20 V zero-Vt
@@ -384,8 +394,10 @@ N-well rules nwell.1 and nwell.2a would set the smallest features
   why;[^steps-sheet] whether the other runs had a plate is not public,
   and no rendered die draws `pwbm`, so the renders cannot
   tell.[^mask-renders]
-* The `pwbm` rules publish no values, so the plate's minimum features
-  under the `pwbm` part are not known.[^pdk-periph]
+* The periphery rules publish no values for `pwbm`; the Error Messages
+  page gives 0.84 for the spacing of `pwbm` holes but no minimum width,
+  so the plate's minimum features under the `pwbm` part are not fully
+  stated.[^pdk-periph][^pdk-errors]
 * The plate's tone, blank, absorber and magnification, the resist and
   its thickness, and the exposure tool are not public.
 * What the plate number `024` encodes is not stated.[^steps-sheet]
@@ -414,6 +426,10 @@ N-well rules nwell.1 and nwell.2a would set the smallest features
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
     documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
 [^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
