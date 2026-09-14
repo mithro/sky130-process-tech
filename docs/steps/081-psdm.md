@@ -182,6 +182,8 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
   {ref}`NPCM <step-078>`.
 * Previous mask: {ref}`NPCM <step-078>`; next mask:
   {ref}`NSDM <step-085>`.
+* Mask page: {ref}`PSDM <mask-psdm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References

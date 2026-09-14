@@ -75,7 +75,7 @@ scanner and coat/develop track pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the substrates material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -114,7 +114,7 @@ NWM, HVTPM, LVTNM, HVTRM, NTM, HVNTM, LDNTM, PSDM, NSDM, TUNM, ONOM,
 LVOM, RPM, NPCM, P1M, LICM1, LI1M, CTM1, MM1–MM5, VIM, VIM2–VIM4, NSM,
 PDM, CU1M, PMM2, …). This is the public basis for the mask index and
 for the order of the lithography steps. Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **PDK-06** — *Layers Reference* and `gds_layers.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
@@ -122,7 +122,7 @@ Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, M
 GDS layer/purpose numbers and the process meaning of each drawn layer
 (e.g. `vhvi` "used to identify nodes that operate at 12V nominal (16V
 max)"). No thicknesses. Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **PDK-07** — *Device Details* pages and per-device cross-section drawings.
 <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>;
@@ -142,7 +142,7 @@ etcher pages.
 Also used on the PECVD and PVD cluster tool pages.
 Tier: cross-check.
 Also used on the sputter targets material page.
-Also used on the DNM, VIM4, CAPM, MM3, VIM3, CAP2M, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, TUNM, RPM, RRPM, URPM and LDNTM mask pages.
+Also used on the DNM, VIM4, CAPM, MM3, VIM3, CAP2M, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, LDNTM, TUNM, RPM, RRPM, URPM and PSDM mask pages.
 
 **PDK-08** — *Parasitic Layout Extraction* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
@@ -153,8 +153,7 @@ metal 3–4 47 mΩ/sq, metal 5 29 mΩ/sq, poly 48 200 mΩ/sq, XHR poly
 120 000 mΩ/sq, P-diffusion 197 000 mΩ/sq) and contact/via resistances.
 Useful for inferring film thicknesses and materials (e.g. the 0.36 µm
 and 0.845 µm aluminium metals). Tier: cross-check.
-Also used on the RPM, RRPM, URPM, CTM1, MM1, VIM, MM2, VIM2, MM3, VIM3
-and MM4 mask pages.
+Also used on the CTM1, MM1, VIM, MM2, VIM2, MM3, VIM3, MM4, RPM, RRPM, URPM and PSDM mask pages.
 
 **PDK-09** — *"SKY130 (SkyWater PDK) — Stackup Capacitance Data
 [public]"* spreadsheet, linked from PDK-08.
@@ -196,7 +195,7 @@ dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
 (enclosure rules between deep N-well and N-well); poly.2 (spacing of
 poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
 Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **PDK-HV** — *High Voltage Methodology* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>.
@@ -394,7 +393,7 @@ Also used on the i-line stepper or scanner and DUV (KrF, 248 nm) stepper
 or scanner pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -424,7 +423,7 @@ the same wording as the notes in the process-steps sheet's "Run Mask
 IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
 on the mask index, the HVTPM step page and the sky130B ReRAM overview.
 Tier: cross-check.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 ## 3. SkyWater Technology corporate sources
 
@@ -520,7 +519,7 @@ Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
 Also used on the etch and chamber-clean gases material page.
-Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the FOM, DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, P1M, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM4, VIM2, CAPM, MM3, VIM3, CAP2M, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -1298,7 +1297,7 @@ Also used on the sputter targets material page.
 Also used on the anneal ambients material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
-Also used on the DNM, NWM, PWBM and PWDEM mask pages.
+Also used on the DNM, NWM, PWBM, PWDEM and PSDM mask pages.
 
 **TXT-03** — S. Wolf, *Silicon Processing for the VLSI Era, Vol. 2:
 Process Integration*, Lattice Press, 1990, ISBN 978-0-9616721-4-0.
@@ -1404,7 +1403,7 @@ large mask error factors", and the metrology crosscut calls the "20%
 measurement precision to process tolerance metric" "somewhat relaxed".
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
@@ -1602,7 +1601,7 @@ implant category page. Tier: high-level.
 **WIKI-CMOS** — Wikipedia, *CMOS*. <https://en.wikipedia.org/wiki/CMOS>
 NMOS on the p-substrate, PMOS in an N-well. Used on steps 017, 018 and
 026. Tier: high-level.
-Also used on the NWM and PWBM mask pages.
+Also used on the NWM, PWBM and PSDM mask pages.
 
 **WIKI-CMP** — Wikipedia, *Chemical-mechanical polishing*.
 <https://en.wikipedia.org/wiki/Chemical-mechanical_polishing> Pads,
@@ -1757,7 +1756,7 @@ and the implant category page, and on the medium-current, high-current
 and high-energy implanter pages. Tier: high-level.
 Also used on the process gases material page.
 Also used on the dopant gases and implant sources material page.
-Also used on the DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, NTM, HVNTM, TUNM, RPM, RRPM and LDNTM mask pages.
+Also used on the DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, NTM, HVNTM, LDNTM, TUNM, RPM, RRPM and PSDM mask pages.
 
 **WIKI-KEITHLEY** — Wikipedia, *Keithley Instruments*.
 <https://en.wikipedia.org/wiki/Keithley_Instruments> Company article on
@@ -1803,7 +1802,7 @@ of STI. Used on the oxidation category page. Tier: high-level.
 absorber and pellicles. Used on the lithography category page. Tier:
 high-level.
 Also used on the lithography materials material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
 <https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
@@ -2558,21 +2557,21 @@ over a lateral distance on the order of a micrometer"; models a
 "2.3 µm-thick pwell mask".
 Also used on the high-energy implanter page.
 Tier: deep dive.
-Also used on the LVTNM, NWM, HVTPM, PWBM, NTM, HVNTM, TUNM, RPM, RRPM, URPM and LDNTM mask pages.
+Also used on the LVTNM, NWM, HVTPM, PWBM, NTM, HVNTM, LDNTM, TUNM, RPM, RRPM, URPM and PSDM mask pages.
 
 **SHEU-2006** — Y.-M. Sheu, K.-W. Su, S. Tian, S.-J. Yang, C.-C. Wang,
 M.-J. Chen and S. Liu, *"Modeling the Well-Edge Proximity Effect in
 Highly Scaled MOSFETs"*, IEEE Transactions on Electron Devices,
 vol. 53, no. 11, pp. 2792–2798, 2006, DOI 10.1109/TED.2006.884070. A
 compact model of the well-edge proximity effect. Tier: deep dive.
-Also used on the LVTNM, NWM, HVTPM and PWBM mask pages.
+Also used on the LVTNM, NWM, HVTPM, PWBM and PSDM mask pages.
 
 **DRENNAN-2006** — P. G. Drennan, M. Kniffin and D. Locascio,
 *"Implications of Proximity Effects for Analog Design"*, IEEE Custom
 Integrated Circuits Conference 2006, pp. 169–176,
 DOI 10.1109/CICC.2006.320869. Designer-side consequences of the well
 proximity effect. Tier: deep dive.
-Also used on the LVTNM and HVTPM mask pages.
+Also used on the LVTNM, HVTPM and PSDM mask pages.
 
 **MORRIS-2000** — W. Morris and L. Rubin, *"Technical and economic
 considerations for retrograde well and channel implants"*, 2000
@@ -2768,14 +2767,14 @@ thick-resist imaging.
 Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, HVTPM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, HVTPM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM and PSDM mask pages.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
 Overlay budgets and non-critical-layer tool choice.
 Also used on the i-line stepper or scanner page.
 Tier: deep dive.
-Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM and NPCM mask pages.
+Also used on the DNM, P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM and PSDM mask pages.
 
 **ROCHE-1985** — D. Roche, J. F. Michaud and M. Bruel, *"Outgassing of
 Photoresist During Ion Implantation"*, MRS Proceedings, vol. 45, 1985,
@@ -2791,7 +2790,7 @@ resists during MeV implantation.
 Also used on the high-energy implanter page, and on the downstream
 plasma asher page.
 Tier: deep dive.
-Also used on the DNM, NWM, PWBM and PWDEM mask pages.
+Also used on the DNM, NWM, PWBM, PWDEM and PSDM mask pages.
 
 **HORSKY-1998** — T. N. Horsky, *"Photoresist outgassing in high energy
 and high current ion implantation"*, 1998 International Conference on
@@ -2801,7 +2800,7 @@ high-current implanters.
 Also used on the medium-current, high-current and high-energy implanter
 pages, and on the downstream plasma asher page.
 Tier: deep dive.
-Also used on the NTM mask page.
+Also used on the NTM and PSDM mask pages.
 
 **FUJIMURA-1989** — S. Fujimura, J. Konno, K. Hikazutani and H. Yano,
 *"Ashing of Ion-Implanted Resist Layer"*, Japanese Journal of Applied
@@ -2811,6 +2810,7 @@ Also used on the downstream plasma asher and wet bench and spray
 processor pages.
 Tier: deep
 dive.
+Also used on the PSDM mask page.
 
 **FUJIMURA-1990** — S. Fujimura, K. Shinagawa, M. Nakamura and
 H. Yano, *"Additive Nitrogen Effects on Oxygen Plasma Downstream
@@ -3490,7 +3490,7 @@ Instruments and Methods in Physics Research B* **268**(11–12), 1818–1823
 (2010). <https://doi.org/10.1016/j.nimb.2010.02.091> SRIM, the tool used
 to compute the ion range in resist that sets the mask thickness. Used on
 step 007 and the implant category page. Tier: deep dive.
-Also used on the DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, NTM, HVNTM and LDNTM mask pages.
+Also used on the DNM, LVTNM, NWM, HVTPM, PWBM, PWDEM, NTM, HVNTM, LDNTM and PSDM mask pages.
 
 **ZULEHNER-1983** — W. Zulehner, "Czochralski growth of silicon",
 *Journal of Crystal Growth* **65**(1–3), 189–213 (1983).
@@ -3568,6 +3568,7 @@ Techniques*, Springer Series in Electrophysics, Springer, 1983, pp.
 and photoresist masking problems (flow, crust, popping) in implantation.
 Used on steps 007 and 009, and on the high-current implanter page. Tier:
 deep dive.
+Also used on the PSDM mask page.
 
 **STEIGERWALD-1997** — J. M. Steigerwald, S. P. Murarka and R. J.
 Gutmann, *Chemical Mechanical Planarization of Microelectronic
@@ -4651,7 +4652,7 @@ not about SKY130).
 Used on the lithography category page.
 Also used on the i-line stepper or scanner page.
 Tier: cross-check.
-Also used on the CAPM, MM3, CAP2M, MM4, NTM, HVNTM and LDNTM mask pages.
+Also used on the CAPM, MM3, CAP2M, MM4, NTM, HVNTM, LDNTM and PSDM mask pages.
 
 **ASML-750E** — ASML, *ASML introduces KrF lithography scanner* (PAS
 5500/750E), press release, 2000-04-04.
@@ -5845,6 +5846,7 @@ Ion Implantation Technology*, pp. 817–820.
 <https://doi.org/10.1109/IIT.2000.924279> UV photostabilisation of
 resist before high-dose implants, the implant-side remedy for resist
 popping. Used on step 067. Tier: deep dive.
+Also used on the PSDM mask page.
 
 **YEGNASUBRAMANIAN-1992** — S. Yegnasubramanian, C. W. Draper and C. W.
 Pearce, "Tem Investigation of Implanted Photoresist Residues Remaining
@@ -6614,6 +6616,7 @@ Transactions on Electron Devices* **36**(11), 2458–2461 (1989).
 implant by the gate and spacer. Used on steps 077, 082, 083 and 086, and
 on the high-current implanter page.
 Tier: deep dive.
+Also used on the PSDM mask page.
 
 **LEE-CHEN-1983** — Y. H. Lee and M.-M. Chen, "Silicon etching mechanism
 and anisotropy in CF₄+O₂ plasma", *Journal of Applied Physics*
@@ -6823,6 +6826,7 @@ productivity improvements during high pressure photoresist outgassing",
 (2002), pp. 507–510. <https://doi.org/10.1109/IIT.2002.1258053>
 Productivity during high-pressure resist outgassing. Used on steps 081
 and 084. Tier: deep dive.
+Also used on the PSDM mask page.
 
 **CHEN-2002-RTP** — D. Chen, D. DeWitt, B. Tsai, K. Kreider and W.
 Kimes, "Effects of wafer emissivity on rapid thermal processing
@@ -6952,6 +6956,7 @@ prevention of photo resist burning in a high current ion implanter",
 (1996), pp. 190–193. <https://doi.org/10.1109/IIT.1996.586181> Resist
 burning in a high-current implanter. Used on steps 081, 082, 084, 085
 and 086, and on the high-current implanter page. Tier: deep dive.
+Also used on the PSDM mask page.
 
 **ROUSSEAU-1996** — P. M. Rousseau, P. B. Griffin, S. C. Kuehne and J.
 D. Plummer, "Enhanced diffusion by electrical deactivation of arsenic
@@ -11098,7 +11103,7 @@ single-machine overlay ≤ 40 nm and ≤ 80 nm matched to another /275,
 illuminator with conventional and annular modes, and phase-modulated
 TTL alignment. Used on the i-line stepper or scanner page. Tier:
 cross-check (vendor statement).
-Also used on the DNM, LVTNM, NWM, HVTPM, NTM, HVNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and LDNTM mask pages.
+Also used on the DNM, LVTNM, NWM, HVTPM, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **ASML-PAS5500-450F** — ASML, *PAS 5500/450F i-Line Step-and-Scan*,
 refurbished systems data sheet, 2019.
@@ -14520,7 +14525,7 @@ but increases rapidly when the critical dimension (CD) is less than 0.5
 contacts", dark-field spaces are more sensitive than light-field lines,
 and attenuated PSMs behave like chrome-on-glass masks. Used on the DNM
 mask page. Tier: deep dive.
-Also used on the P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the P1M, VIM4, LICM1, LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, FOM, LVTNM, NWM, HVTPM, PWBM, PWDEM, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 **RIZVI-2005** — S. Rizvi (ed.), *Handbook of Photomask Manufacturing
 Technology*, CRC Press, 2005, ISBN 978-1-4200-2878-2.
@@ -14659,7 +14664,7 @@ are nominal and do not apply to butting edges or corners") and Table F4,
 each pair of conducting layers: "Licon1" from `li1` to diff and tap,
 "Licon1 AND Npc" from `li1` to poly, "Mcon" from met1 to `li1` and "Via"
 from met2 to met1. Used on the LICM1 mask page. Tier: cross-check.
-Also used on the LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, MM4, LVOM and NPCM mask pages.
+Also used on the LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, MM4, NPCM, LVOM and PSDM mask pages.
 
 **CHOO-2000** — L. C. Choo, O. Park, M. J. Sack and S. C. Tam,
 "Integration of attenuated phase-shift mask to 0.13-μm technology
@@ -14821,7 +14826,7 @@ CLHVTPM" and `clvtnm.1` "0.38 min. width of clvtnm in periphery", and
 "nikon cross" checks for most mask layers (`cfom.nikon` "FOMmk in the
 nikon cross has the wrong polarity"). Used on the FOM mask page. Tier:
 cross-check.
-Also used on the LVTNM, NWM, HVTPM, PWBM, PWDEM, VIM2, CAPM, MM3, VIM3, CAP2M, MM4, NTM, HVNTM, LDNTM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and NPCM mask pages.
+Also used on the LVTNM, NWM, HVTPM, PWBM, PWDEM, VIM2, CAPM, MM3, VIM3, CAP2M, MM4, NTM, HVNTM, LDNTM, NPCM, TUNM, ONOM, LVOM, RPM, RRPM, URPM and PSDM mask pages.
 
 #### LVTNM mask page (first cited there)
 
