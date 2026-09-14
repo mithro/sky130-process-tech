@@ -111,6 +111,7 @@ dnm
 p1m
 licm1
 li1m
+ctm1
 vim4
 ```
 
@@ -156,7 +157,7 @@ In the table:
 | {ref}`NSDM <step-085>` | N+ Implant, NSDM — `X` | `cnsdm` mask 30:0; drawing 29:20, mask add 29:21, mask drop 29:22 | `nsdm` 93:44 | {ref}`NSDI <step-086>`; strip {ref}`NSDIS <step-087>` | `NSDMCD` 0.38 / `NSDMCDSP` 0.38 |
 | {ref}`LICM1 <step-093>` | Local Intr Cont.1, {ref}`LICM1 <mask-licm1>` — `X` | `clicm1` mask 43:0; mask add 106:43, mask drop 106:42 | `licon1` 66:44 | {ref}`LICM1E <step-094>`, followed by {ref}`SACETCH <step-095>` | "Core" `LICM1CD` 0.19 / `LICM1CDSP` 0.35; "Slotted" `LICM1SLCD` 0.17 / `LICM1SLCDSP` 0.17 |
 | {ref}`LI1M <step-102>` | Local Intrcnct 1, {ref}`LI1M <mask-li1m>` — `X` | `cli1m` mask 56:0; drawing 115:44, mask add 115:43, mask drop 115:42 | `li1` 67:20 | {ref}`LI1ME <step-103>` | `LI1MCD` 0.17 / `LI1MCDSP` 0.17; "Core" 0.14 / 0.14 |
-| {ref}`CTM1 <step-107>` | Contact, CTM1 — `X` | `ctm1` mask 35:0 | `mcon` 67:44 *(inference)* | {ref}`CTME <step-108>` | `CTM1CD` 0.17 / `CTM1CDSP` 0.19 |
+| {ref}`CTM1 <step-107>` | Contact, {ref}`CTM1 <mask-ctm1>` — `X` | `ctm1` mask 35:0 | `mcon` 67:44 *(inference)* | {ref}`CTME <step-108>` | `CTM1CD` 0.17 / `CTM1CDSP` 0.19 |
 | {ref}`MM1 <step-113>` | Metal 1, MM1 — `X` | `cmm1` mask 36:0; waffle drop 62:24 | `met1` 68:20 | {ref}`MM1E <step-114>` | `MM1CD` 0.14 / `MM1CDSP` 0.14 |
 | {ref}`VIM <step-118>` | Via, VIM — `X` | `cviam` mask 40:0 | `via` 68:44 | {ref}`VIME <step-119>` | `VIMCD` 0.15 / `VIMCDSP` 0.17 |
 | {ref}`MM2 <step-124>` | Metal 2, MM2 — `X` | `cmm2` mask 41:0; waffle drop 105:52 | `met2` 69:20 | {ref}`MM2E <step-125>` | `MM2CD` 0.14 / `MM2CDSP` 0.14 |
