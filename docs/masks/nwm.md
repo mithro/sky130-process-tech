@@ -405,8 +405,9 @@ nwell.2a set the smallest features: a 0.84 µm line on a 1.27 µm space.
   by a deep implant and a brief anneal.[^rung-1981]
 * Martin and Chen, *IEEE JSSC* 1986 — optimising a high-energy
   implanted N-well for 1 µm CMOS.[^martin-1986]
-* Stolmeijer, *IEEE TED* 1986 — a twin-well CMOS process built with
-  high-energy implants.[^stolmeijer-1986]
+* Stolmeijer, *IEEE TED* 1986 — a twin-well CMOS process using implants
+  of up to 1 MeV, with an N-type isolation well and retrograde
+  wells.[^stolmeijer-1986]
 * Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde N- and
   P-wells with the resist thickness and implant energies.[^pat-well-ibm]
 * Buffat and Adams (Zilog), US 6,576,405 — resist thickness for MeV well
