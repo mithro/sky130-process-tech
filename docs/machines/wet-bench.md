@@ -275,8 +275,9 @@ not public.
   IPA dry" is the option the {ref}`GOXETCH <step-046>`
   page matches to its HF-last pre-gate clean.[^skw-01]
 * **Cleans after implant strips.** The implant-strip pages follow the
-  ash with SPM and SC-1 on the Akrion bench, which removes the inorganic
-  residue ashing leaves.[^fujimura-1989][^skw-01]
+  ash with SPM and SC-1 on the Akrion bench to remove the residue that
+  ashing leaves;[^skw-01] Fujimura et al. found that residue to be
+  mainly "oxide of the implanted species".[^fujimura-1989]
 * **Solvent cleans over metal.** After the local-interconnect, metal,
   via, capacitor and pad etches, the pages name the "Batch Rotational"
   solvent tool rather than acid benches, because SPM attacks aluminium

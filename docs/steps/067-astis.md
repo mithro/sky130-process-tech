@@ -27,7 +27,8 @@ photoresist thickness is 1.14 µm).[^pdk-03] It has received a heavy
 arsenic dose — of order 10¹⁴–10¹⁵ cm⁻² (typical of an {term}`extension`
 implant)[^txt-01] — and a light, tilted boron dose. That makes it a
 *hard* strip by the standards of the flow: the arsenic has turned the
-top of the resist into a carbonised {term}`crust <implant crust>`,[^orvek-1985][^fujimura-1989]
+top of the resist into a carbonised {term}`crust <implant crust>`,[^orvek-1985]
+the kind of carbonised layer high-dose implantation forms,[^fujimura-1989]
 and the crust contains arsenic. The surface under the resist is, we
 infer, the thin {term}`screen oxide` from {ref}`IOX45 <step-063>` over silicon
 and over the capped polysilicon gates; no metal is present, so the full
