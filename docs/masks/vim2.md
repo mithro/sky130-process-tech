@@ -25,7 +25,7 @@ step is performed is on the step page; every mask is indexed on the
 | Mask-level layer (`gds_layers.csv`) | `cviam2` mask 44:0, "Via 2 mask"[^pdk-06] |
 | Drawn layer (`gds_layers.csv`) | `via2` drawing 69:44, "Contact from metal 2 to metal 3"[^pdk-06] |
 | Minimum CD, feature / space | `VIM2CD` / `VIM2CDSP`: "Via 2-PLM" 0.2 / 0.2; "Via 2-TNV" 0.28 / 0.28; "Via 2-S8TM" 0.8 / 0.8[^pdk-03] |
-| Polarity and tone | Not published. The holes are opened where `via2` is drawn, which with a positive resist would make the plate dark-field (inference). |
+| Polarity and tone | Not published; the PDK's `cviam2.nikon` checks name a polarity but not the plate's tone. The holes are opened where `via2` is drawn, which with a positive resist would make the plate dark-field (inference). |
 | Exposure class | KrF (248 nm), an inference on the step page from the 0.2 µm hole and from the 248 nm mask type the sheet records for the plate; no public source names the tool ({ref}`machine-duv-krf-stepper`) |
 | Mask type (process-steps sheet) | `F4-248-EAPSM-A43-APRX`, read on the masks index as an embedded attenuated phase-shift mask for 248 nm exposure and, less certainly, 4×[^steps-sheet] |
 | Plates recorded | Via 2-PLM: all eight; Via 2-TNV and Via 2-S8TM: not recorded[^steps-sheet] |
@@ -38,8 +38,10 @@ step is performed is on the step page; every mask is indexed on the
 The periphery rules give the function of the `via2` rule set as "Via2
 connects met2 to met3 in the SKY130T\*/SKY130P\*/SP8Q/SP8P\* flows and
 met2/capm to met3 in the SKY130DI\* flow", and the PDK's Table F4 names
-"Via2" as the layer joining metal 3 to metal 2 and to
-`capm`.[^pdk-periph][^pdk-summary] The mask carries one product feature,
+"Via2" as the layer joining metal 3 to metal 2 and to `capm` — the
+latter, like the function line's "SKY130DI\*" flow, a construction with
+the capacitor under metal 3, not the one the step pages read
+here.[^pdk-periph][^pdk-summary] The mask carries one product feature,
 a square: "Min and max L and W of via2 (except for rule
 via2.1b/1c/1d/1e/1f)" 0.200 µm (via2.1a), with "Only min. square via2s
 are allowed except die seal ring […]" (via2.3).[^pdk-periph] Rules via2.1b
@@ -47,7 +49,12 @@ to via2.1e allow sets of square sizes — drawn from 0.2, 0.280, 0.8, 1.2
 and 1.5 µm — inside `areaid.mt`, which `gds_layers.csv` describes as the
 "Location of e-test modules within the frame", and via2.1f "Two sizes
 of square Vias allowed outside areaid:mt: 0.8um and 1.2 um"; all five
-carry no value ("N/A" or blank) and name no flow.[^pdk-periph][^pdk-06]
+carry flag AL but no value ("N/A" or blank), and none names a product
+flow.[^pdk-periph][^pdk-06] The PDK's *Error Messages* page, which
+describes "many of the automated DRC rules that are checked by SkyWater
+as part of the acceptance criteria for GDS data", checks only the via2.1d
+set, "via size inside module cut must be 0.200, 0.280, 1.200, OR
+1.500".[^pdk-errors]
 The PDK's extraction table lists "VIA2" at 3410 in a column headed
 "Resistivity (mohms/sq)", against 4500 for "VIA";[^pdk-08] the step page
 reads these as 3.4 Ω and 4.5 Ω per plug.
@@ -104,7 +111,13 @@ data for p1m, met1, via, met2" that rule x.1a puts on a 0.001 grid, so
 its data fall under x.1b's 0.005 for "all layers except those mentioned
 in 1a", both printed with the unit "mm".[^pdk-periph] One row of rule
 x.2 permits only "n x 90" degree angles on, among other layers, "capm,
-mcon, via, via2".[^pdk-periph]
+mcon, via, via2".[^pdk-periph] The *Error Messages* page lists two checks
+named `cviam2.nikon`, "VIM2mk in the nikon cross has the wrong polarity"
+and "VIM2mk is missing from the nikon cross in the layout";[^pdk-errors]
+it does not say what the "nikon cross" is, and we read the checks as
+concerning a structure on the mask layer whose data must have the right
+polarity (inference from the message wording), not as stating the
+plate's tone.
 
 ### In the public renders
 
@@ -153,14 +166,16 @@ rows.[^steps-sheet]
 | MPW-7 | `5CS8016AC` | `S8016AA560A` |
 | MPW-8 | `5CS8017AC` | `S8017AA560A` |
 
-* **MPW-5.** Unlike `VIM` and `VIM4`, the via masks below and above it,
+* **MPW-5.** Unlike `VIM` and `VIM4`, the via-1 and via-4 masks,
   a `VIM2` plate is recorded for MPW-5; the masks index reads the MPW-5
   gaps of those masks as more likely gaps in the record than in the run
   ({ref}`masks-mpw-runs`).[^steps-sheet]
 * **Plate number.** The sheet does not say what `560` encodes. It falls
-  between `550` for `MM2` and `570` for `MM3`, but the numbers do not
-  follow process order elsewhere (`CAPM`, step 137, is `572` against
-  `MM3`, step 139, `570`), so no process position is read from it
+  between `550` for `MM2` and `570` for `MM3`; from `500` to `590` the via
+  and metal numbers rise in step order, but each capacitor mask is
+  numbered 2 above the metal mask that follows it (`CAPM`, step 137, is
+  `572` against `MM3`, step 139, `570`), and elsewhere the numbers do not
+  follow process order, so no process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **MPW-4.** The sheet's MPW-4 plate is from the set `5CS8018AC`; the
   renders are from the original set `5CS8010AC`
@@ -210,7 +225,7 @@ level from the hole size and from the mask type the sheet records; the
 steps for which SkyWater's i-line tools are "listed, not assigned". SkyWater lists "ASML DUV
 stepper" and "ASML DUV scanner" beside its i-line tools but assigns no
 layer to any of them.[^skw-01] ITRS 2001 lists "248 nm + PSM" and
-"193 nm" as the exposure options for critical layers at the 130 nm node,
+"193 nm" as the exposure options for the 130 nm node,
 and names "attenuated shifter and alternating aperture" as the primary
 phase-shift mask choices.[^itrs-03]
 
@@ -222,8 +237,8 @@ masks;[^wong-1998] at 248 nm and NA 0.7 that threshold is about 0.27 µm
 magnified (inference). Kim et al. found the factor rising near the
 resolution limit, larger for dense than for isolated contacts and smaller
 on attenuated masks than on binary ones, because of the attenuated
-plates' positive bias.[^kim-1999] ITRS 2001 asks in 2001 for a mask CD
-uniformity of 8.0 nm (3σ) on contacts and vias at 4× magnification,
+plates' positive bias.[^kim-1999] ITRS 2001 asks, for its 2001 (130 nm)
+column, for a mask CD uniformity of 8.0 nm (3σ) on contacts and vias at 4× magnification,
 requirements that are "for critical layers".[^itrs-03] How tightly
 SkyWater specifies the `VIM2` plate is not public.
 
@@ -249,8 +264,10 @@ substrate reflectivity, which an anti-reflective coating
 reduces.[^brunner-1991] The step page reads a positive chemically
 amplified KrF resist over an organic {term}`BARC`; with the holes opened
 where `via2` is drawn, the plate would be dark-field, and on the
-attenuated reading its "dark" field would be the partially transmitting
-shifter film rather than opaque chrome (inference). Neither is
+attenuated reading its "dark" field within the pattern would be the
+partially transmitting shifter film rather than opaque chrome
+(inference); Photronics leaves "The mask fiducials, barcode and titles"
+of its attenuated plates "in high-contrast chrome".[^photronics-abr] Neither is
 published. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
@@ -262,7 +279,8 @@ down to the TiW cap of the metal-2 lines, and the resist is stripped
 within that step. Le, Banerjee and McPherson found that via size strongly
 affects the electromigration failure-time spread of tungsten-plug vias
 for one direction of electron flow with a TiN-capped metallisation, and
-not for the other,[^le-1996] one reason the printed size matters.
+not for the other,[^le-1996] one reason the printed size matters (our
+reading).
 
 **Overlay.** Metal 2 must enclose the via by 0.040 µm (via2.4) and by
 0.085 µm on one of two adjacent sides (via2.5), and metal 3 by 0.065 µm
@@ -377,6 +395,8 @@ neither. For the plate the decisive figures are one 0.200 µm square on a
   legend.[^pdk-periph]
 * SkyWater PDK, *Summary of Key Periphery Rules* — Tables F3c, F3d and
   F4.[^pdk-summary]
+* SkyWater PDK, *Error Messages* page — the via2.1d check and the
+  `cviam2.nikon` checks.[^pdk-errors]
 * SkyWater PDK, *Process stack diagram* — the 0.42 µm via-2
   height.[^pdk-04]
 * SkyWater PDK, *Parasitic Layout Extraction* — the via resistance
@@ -429,9 +449,10 @@ neither. For the plate the decisive figures are one 0.200 µm square on a
 
 ## Open questions
 
-* The PDK does not define "TNV", "S8TM" or "PLM", nor say for which flow
-  the via2.1b–via2.1f size sets apply; the step page's readings of S8TM
-  and PLM are inferences.[^pdk-05][^pdk-periph]
+* The PDK does not define "TNV", "S8TM" or "PLM", nor say for which
+  product flows the via2.1b–via2.1f size sets are written, of which only
+  via2.1d is among the published checks; the step page's readings of S8TM
+  and PLM are inferences.[^pdk-05][^pdk-periph][^pdk-errors]
 * The "Sheet4" codes are not defined in the sheet; the attenuated and
   248 nm readings rest on a mask maker's abbreviation, the 4× reading is
   less certain, and the fields `F`, `A43` and `APRX` are not read. The tab
@@ -468,6 +489,10 @@ neither. For the plate the decisive figures are one 0.200 µm square on a
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/assumptions/02-mins.csv>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-summary]: SkyWater PDK Authors, *Summary of Key Periphery Rules*
     (Tables F3c, F3d and F4), SkyWater SKY130 PDK documentation,
     retrieved 2026-09-14.
