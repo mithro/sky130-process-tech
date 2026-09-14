@@ -359,7 +359,8 @@ guideline only."[^pdk-periph]
 | rdl.6 | "Min spacing of rdl to pad, except rdl interacting with bump" | 19.660 µm |
 | x.1b | "Data for SKY130 layout and mask on all layers except those mentioned in 1a must be on a grid of mm (except inside Seal ring)" | 0.005 (unit "mm") |
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
-| x.9 | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. PMM/PDMM inside areaid:sl are excluded." | N/A |
+| x.9 (first row) | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. Exempted are: […] cfom md/mp inside "advSeal_6um\* OR cuPillarAdvSeal_6um\*" pcell […] diff rings around the die at min total L>1000 um and W=0.3 um, and PMM/PDMM inside areaid:sl" | — |
+| x.9 (second row) | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. PMM/PDMM inside areaid:sl are excluded." | N/A |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
 | x.15b | "Rule X.15a exempted for cpmm.dg inside cellnames "PadPLfp", "padPLhp", "padPLstg" and "padPLwlbi" (for the SKY130di-5r-gsmc flow)" (EXEMPT) | — |
 
