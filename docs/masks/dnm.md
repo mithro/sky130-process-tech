@@ -340,8 +340,9 @@ the plate is placed against other layers.
 * Buerger et al., *Proc. SPIE* 1999 — hierarchical mask data
   preparation and fracturing, the step between drawn layers and a
   mask writer.[^buerger-1999]
-* Stolmeijer, *IEEE TED* 1986 — a twin-well CMOS process with an
-  N-type isolation well made by MeV implantation.[^stolmeijer-1986]
+* Stolmeijer, *IEEE TED* 1986 — a twin-well CMOS process using implants
+  of up to 1 MeV, with an N-type isolation well and retrograde
+  wells.[^stolmeijer-1986]
 * Hong et al., TENCON 1999 — triple-well CMOS at 0.22 µm by high-energy
   implantation.[^hong-1999]
 * Voldman, *Latchup*, chapter 5 — dual-well and triple-well CMOS as
