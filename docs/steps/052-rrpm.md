@@ -165,6 +165,8 @@ mostly chrome. Neither tone nor resist is stated publicly.
   contacted through {ref}`NPCM <step-078>` and {ref}`LICM1 <step-093>`.
 * Previous mask step: {ref}`RPM <step-049>`; next mask step:
   {ref}`URPM <step-055>`.
+* Mask page: {ref}`RRPM <mask-rrpm>` — the mask's layers, plates,
+  renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
