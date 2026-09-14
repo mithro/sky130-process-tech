@@ -23,7 +23,7 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1688
+written page has exactly one entry here; the inventory holds 1689
 keyed entries as of 2026-09-13, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
@@ -75,7 +75,7 @@ Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the substrates material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **PDK-04** — *Process stack diagram* (`metal_stack.svg` / `metal_stack.ps`).
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -115,7 +115,7 @@ LVOM, RPM, NPCM, P1M, LICM1, LI1M, CTM1, MM1–MM5, VIM, VIM2–VIM4, NSM,
 PDM, CU1M, PMM2, …). This is the public basis for the mask index and
 for the order of the lithography steps. Tier: cross-check.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **PDK-06** — *Layers Reference* and `gds_layers.csv`.
 <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
@@ -124,7 +124,7 @@ GDS layer/purpose numbers and the process meaning of each drawn layer
 (e.g. `vhvi` "used to identify nodes that operate at 12V nominal (16V
 max)"). No thicknesses. Tier: cross-check.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **PDK-07** — *Device Details* pages and per-device cross-section drawings.
 <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>;
@@ -155,7 +155,7 @@ metal 3–4 47 mΩ/sq, metal 5 29 mΩ/sq, poly 48 200 mΩ/sq, XHR poly
 120 000 mΩ/sq, P-diffusion 197 000 mΩ/sq) and contact/via resistances.
 Useful for inferring film thicknesses and materials (e.g. the 0.36 µm
 and 0.845 µm aluminium metals). Tier: cross-check.
-Also used on the CTM1, MM1 and VIM mask pages.
+Also used on the CTM1, MM1, VIM and MM2 mask pages.
 
 **PDK-09** — *"SKY130 (SkyWater PDK) — Stackup Capacitance Data
 [public]"* spreadsheet, linked from PDK-08.
@@ -197,7 +197,7 @@ dnwell.6 (RF NMOS enclosure by deep N-well); nwell.5 and nwell.6
 poly to poly) 0.210 µm; licon.2 (spacing of licon to licon) 0.170 µm.
 Tier: cross-check.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **PDK-HV** — *High Voltage Methodology* page.
 <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>.
@@ -394,7 +394,7 @@ or scanner pages.
 Tier: cross-check.
 Also used on the lithography materials material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
 directory), retrieved 2026-09-13.
@@ -425,7 +425,7 @@ IDs" tab (STEPS-SHEET), so the two are not independent sources. Used
 on the mask index, the HVTPM step page and the sky130B ReRAM overview.
 Tier: cross-check.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 ## 3. SkyWater Technology corporate sources
 
@@ -522,7 +522,7 @@ Also used on the dopant gases and implant sources material page.
 Also used on the precursors material page.
 Also used on the etch and chamber-clean gases material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
 (ROIC)"* platform page, accessed 2026-08-30.
@@ -1394,7 +1394,7 @@ measurement precision to process tolerance metric" "somewhat relaxed".
 Also used on the CD-SEM and overlay metrology page.
 Tier: deep dive.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **ITRS-04** — ITRS 2001, *Process Integration, Devices, and Structures*.
 <https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>.
@@ -1792,7 +1792,7 @@ absorber and pellicles. Used on the lithography category page. Tier:
 high-level.
 Also used on the lithography materials material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **WIKI-MEMC** — Wikipedia, *MEMC Electronic Materials*.
 <https://en.wikipedia.org/wiki/MEMC_Electronic_Materials> Company
@@ -1832,7 +1832,7 @@ Tier: high-level.
 proximity correction of mask shapes. Used on the lithography category
 page. Tier: high-level.
 Also used on the P1M mask page.
-Also used on the LICM1, LI1M and MM1 mask pages.
+Also used on the LICM1, LI1M, MM1 and MM2 mask pages.
 
 **WIKI-PECVD** — Wikipedia, *Plasma-enhanced chemical vapor deposition*.
 <https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>
@@ -2739,7 +2739,7 @@ Also used on the i-line stepper or scanner and coat/develop track pages.
 Tier: deep dive.
 Also used on the lithography materials material page.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **LEVINSON-2005** — H. J. Levinson, *Principles of Lithography*, 2nd
 ed., SPIE Press, 2005, ISBN 978-0-8194-5660-1, DOI 10.1117/3.601520.
@@ -2747,7 +2747,7 @@ Overlay budgets and non-critical-layer tool choice.
 Also used on the i-line stepper or scanner page.
 Tier: deep dive.
 Also used on the DNM, P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **ROCHE-1985** — D. Roche, J. F. Michaud and M. Bruel, *"Outgassing of
 Photoresist During Ion Implantation"*, MRS Proceedings, vol. 45, 1985,
@@ -3133,7 +3133,7 @@ of Integrated Circuits and Systems* **27**(1), 3–19 (2008).
 <https://doi.org/10.1109/TCAD.2007.907061> A survey of dummy-fill
 synthesis for CMP, the design-side view of the FOM "waffles". Used on
 step 004. Tier: deep dive.
-Also used on the MM1 mask page.
+Also used on the MM1 and MM2 mask pages.
 
 **KANG-1989** — J. S. Kang and D. K. Schroder, "Gettering in silicon",
 *Journal of Applied Physics* **65**(8), 2974–2985 (1989).
@@ -3373,7 +3373,7 @@ rules. Used on step 012 and the cmp category page.
 Also used on the CMP polisher machine page.
 Also used on the cross-section SEM and profilers page.
 Tier: deep dive.
-Also used on the MM1 mask page.
+Also used on the MM1 and MM2 mask pages.
 
 **STONEY-1909** — G. G. Stoney, "The tension of metallic films deposited
 by electrolysis", *Proceedings of the Royal Society of London A*
@@ -4454,7 +4454,7 @@ lithography category page.
 Also used on the coat/develop track page.
 Tier: deep dive.
 Also used on the lithography materials material page.
-Also used on the MM1 and VIM mask pages.
+Also used on the MM1, VIM and MM2 mask pages.
 
 **DAMMEL-1993** — R. R. Dammel, *Diazonaphthoquinone-based Resists*,
 SPIE Tutorial Texts TT11, SPIE Press, 1993.
@@ -7912,7 +7912,7 @@ metallization", *Journal of Vacuum Science & Technology B* **6**(4),
 1113–1115 (1988). <https://doi.org/10.1116/1.584306> A refractory cap
 for anti-reflection and hillock suppression on aluminium. Used on steps
 112 and 113. Tier: deep dive.
-Also used on the MM1 mask page.
+Also used on the MM1 and MM2 mask pages.
 
 **ROSENBERG-2000** — R. Rosenberg, D. C. Edelstein, C.-K. Hu and K. P.
 Rodbell, "Copper Metallization for High Performance Silicon Technology",
@@ -7934,7 +7934,7 @@ Magome, "New imaging technique for 64M-DRAM", *Proc. SPIE* **1674**,
 Optical/Laser Microlithography V, 741 (1992).
 <https://doi.org/10.1117/12.130364> Off-axis illumination for dense
 lines. Used on step 113. Tier: deep dive.
-Also used on the MM1 mask page.
+Also used on the MM1 and MM2 mask pages.
 
 **SIVARAM-1992** — S. Sivaram, R. Tolles, H. Bath, E. Lee and R.
 Leggett, "Chemical Mechanical Polishing of Interlevel Dielectrics:
@@ -8207,6 +8207,7 @@ Interconnection Conference (VMIC 1991)*, pp. 393–395.
 <https://doi.org/10.1109/VMIC.1991.153035> Sputtered TiN as a back-end
 anti-reflective coating for sub-micrometre i-line lithography. Used on
 steps 123 and 124. Tier: deep dive.
+Also used on the MM2 mask page.
 
 **FILIPPI-1993** — R. G. Filippi, G. A. Biery and M. H. Wood, "Evidence
 of the Electromigration Short-Length Effect in Aluminum-Based Metallurgy
@@ -14422,7 +14423,7 @@ contacts", dark-field spaces are more sensitive than light-field lines,
 and attenuated PSMs behave like chrome-on-glass masks. Used on the DNM
 mask page. Tier: deep dive.
 Also used on the P1M and VIM4 mask pages.
-Also used on the LICM1, LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LICM1, LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **RIZVI-2005** — S. Rizvi (ed.), *Handbook of Photomask Manufacturing
 Technology*, CRC Press, 2005, ISBN 978-1-4200-2878-2.
@@ -14558,7 +14559,7 @@ nominal and do not apply to butting edges or corners") and Table F4,
 each pair of conducting layers: "Licon1" from `li1` to diff and tap,
 "Licon1 AND Npc" from `li1` to poly, "Mcon" from met1 to `li1` and "Via"
 from met2 to met1. Used on the LICM1 mask page. Tier: cross-check.
-Also used on the LI1M, CTM1, MM1 and VIM mask pages.
+Also used on the LI1M, CTM1, MM1, VIM and MM2 mask pages.
 
 **CHOO-2000** — L. C. Choo, O. Park, M. J. Sack and S. C. Tam,
 "Integration of attenuated phase-shift mask to 0.13-μm technology
@@ -14587,6 +14588,7 @@ where the field produced by the neighboring features interferes with the
 field of the main feature destructively", which gives a basis for
 illumination design and scattering-bar placement. Used on the LI1M mask
 page. Tier: deep dive.
+Also used on the MM2 mask page.
 
 **SEKIGUCHI-1998** — A. Sekiguchi, F. Uesawa, K. Takeuchi and T. Oda,
 "Influence of underlayer reflection on optical proximity effects in
@@ -14622,6 +14624,7 @@ Technology"; sub-resolution assist features with optimised illumination
 give a manufacturable process window for all pitches, including the
 "forbidden pitch" zone, shown in simulation and confirmed by experiment.
 Used on the MM1 mask page. Tier: deep dive.
+Also used on the MM2 mask page.
 
 **SAMUELS-1995** — D. J. Samuels, W. Maurer and T. R. Farrell, "Good OPC,
 where will this drive mask CD tolerance and mask grid size", *Proc.
@@ -14632,7 +14635,7 @@ OPC mask at low k₁, giving the expected aerial-image CD variation for
 each, "how fine an OPC can realistically be obtained, and how fine a grid
 size is needed in the manufacture of the mask". Used on the MM1 mask
 page. Tier: deep dive.
-Also used on the VIM mask page.
+Also used on the VIM and MM2 mask pages.
 
 #### VIM mask page (first cited there)
 
@@ -14657,6 +14660,20 @@ structures "to eliminate side lobes" and a chromium-fluoride shifter
 under an opaque chromium layer, compared for 0.15 µm hole patterns; both
 performed "high enough for 0.15 micrometers hole patterns". Used on the
 VIM mask page. Tier: deep dive.
+
+#### MM2 mask page (first cited there)
+
+**HOCHMUTH-1999** — J. Hochmuth, G. G. Ruhl and T. P. Coleman, "Control
+methodology of off-target for varying pattern densities with chrome dry
+etch", *Proc. SPIE* **3873**, 19th Annual Symposium on Photomask
+Technology, 297 (1999). <https://doi.org/10.1117/12.373324> With ZEP 7000
+resist and ICP chrome dry etch, "the deviation of the CD from the target
+value is a function of the chrome loading on the plate", so CD control
+varies the exposure dose or develop time "based on the pattern loading of
+a particular mask level"; a model built from designed experiments
+predicts the settings for any level and was verified on production mask
+levels of varying pattern density. Used on the MM2 mask page. Tier: deep
+dive.
 
 ## 9. Evidence about specific tools at SkyWater
 
