@@ -98,12 +98,14 @@ column headed "space", without saying which layer is sized.[^pdk-03]
 The PDK's *Error Messages* page, which describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
 criteria for GDS data", checks the drawn layer under `psd` names and
-adds core values the periphery rules do not give: "0.29 min. width of
-psdm in COREID" (`psd.c1b`), "0.29 min. spacing/notch of "psdm" in core"
-(`psd.c2b`) and "0.12 min. enclosure of p+ tap in core by psdm"
-(`psd.c5b`), beside "0.38 min. width of psdm (opposite parallel)"
-(`psd.c1a`) and "0.38 min. spacing/notch of "psdm" in core"
-(`psd.c2a`).[^pdk-errors] It gives psd.9 as "pdiff/ptap (source of
+lists core checks the periphery rules do not give, with two values each
+for width and spacing: "0.38 min. width of psdm (opposite parallel)"
+(`psd.c1a`) and "0.29 min. width of psdm in COREID" (`psd.c1b`), "0.38
+min. spacing/notch of "psdm" in core" (`psd.c2a`) and "0.29 min.
+spacing/notch of "psdm" in core" (`psd.c2b`), and "0.12 min. enclosure
+of p+ tap in core by psdm" (`psd.c5b`).[^pdk-errors] It does not say
+which of the two core values applies where, nor what "opposite parallel"
+means. It gives psd.9 as "pdiff/ptap (source of
 extendedDrain fet exempted) must be enclosed by psdmZENERID", checks
 licon.9 only against poly contacts outside `rpm` ("0.11 min. spacing of
 polyLicon1OutRpm & psdm"), and lists "PSDMdrop must be enclosed by
@@ -192,10 +194,11 @@ tools "migrate to the lithography of choice for less critical
 layers",[^asml-30] and infers an i-line level; the
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there. At
 the NA 0.48 low end of ASML's PAS 5500/275D[^asml-pas5500-275d] the same
-feature has {math}`k_1 \approx 0.50`, and the Error Messages page's
-0.29 core width and spacing[^pdk-errors] would be at
-{math}`k_1 \approx 0.48` at NA 0.6 and 0.38 at NA 0.48 (our arithmetic);
-the step page does not discuss the core values. SkyWater lists "ASML
+feature has {math}`k_1 \approx 0.50`. If the Error Messages page's
+0.29 core width and spacing apply,[^pdk-errors] those features would be
+at {math}`k_1 \approx 0.48` at NA 0.6 and 0.38 at NA 0.48 (our
+arithmetic and our reading); the step page does not discuss the core
+values. SkyWater lists "ASML
 I-line stepper" and "ASML I-line scanner" among its tools but assigns no
 layer to them.[^skw-01]
 
@@ -205,7 +208,8 @@ for large features, but increases rapidly when the critical dimension
 at 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
 NA 0.60 (our arithmetic), so the 0.38 µm periphery features lie at or
 above it and would print a plate CD error at about its own size, while
-0.29 µm core features would magnify it (inference).
+0.29 µm core features, if the 0.29 checks apply, would magnify it
+(inference).
 
 **Resist.** Nothing is etched through this resist; it must stop the
 high-dose p-type implants wherever the plate leaves it. The step page
@@ -342,7 +346,9 @@ enclosures of 0.130, against the 0.125 µm of psd.5a and psd.5b (our
 reading of the columns; the PDK does not reconcile
 them).[^pdk-summary][^pdk-periph] For the plate, psd.1 and psd.2 set the
 smallest periphery features, 0.380 µm lines and spaces with islands of
-0.255 µm², and the Error Messages page's core checks allow 0.29.
+0.255 µm², and the Error Messages page lists both 0.38 and 0.29 core
+width and spacing checks without saying which applies where (0.38
+"(opposite parallel)" and "in core", 0.29 "in COREID" and "in core").
 
 ## Related pages
 
@@ -455,9 +461,12 @@ smallest periphery features, 0.380 µm lines and spaces with islands of
   source.[^pdk-06][^pdk-03][^mask-renders]
 * What `2PSDI` implants through this resist is not public.
 * Table F3a's 0.130 enclosures of diffusion and tap and the periphery
-  rules' 0.125 µm are not reconciled, and the Error Messages page's 0.29
-  core width and spacing have no counterpart in the periphery
+  rules' 0.125 µm are not reconciled, and the Error Messages page's core
+  checks have no counterpart in the periphery
   rules.[^pdk-summary][^pdk-periph][^pdk-errors]
+* The Error Messages page's two core spacing values, 0.38 (`psd.c2a`)
+  and 0.29 (`psd.c2b`), and its two core width values, 0.38 (`psd.c1a`)
+  and 0.29 (`psd.c1b`), are not reconciled.[^pdk-errors]
 * The plate's tone, blank, absorber and magnification, the resist and
   its thickness, and the exposure tool are not public; the i-line
   reading rests on the 0.380 µm rules.

@@ -99,12 +99,14 @@ and defines `N+_diff` as "Diff NOT Nwell", not by `nsdm`.[^pdk-06]
 The PDK's *Error Messages* page, which describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
 criteria for GDS data", checks the drawn layer under `nsd` names and
-adds core values the periphery rules do not give: "0.29 min. width of
-nsdm in COREID" (`nsd.c1b`), "0.29 min. spacing/notch of "nsdm" in core"
-(`nsd.c2b`) and "0.13 min. enclosure of n+ tap in core by nsdm"
-(`nsd.c5a`), beside "0.38 min. width of nsdm (opposite parallel)"
-(`nsd.c1a`) and "0.38 min. spacing/notch of "nsdm" in core"
-(`nsd.c2a`).[^pdk-errors] It gives nsd.9 as "ndiff/ntap (source of
+lists core checks the periphery rules do not give, with two values each
+for width and spacing: "0.38 min. width of nsdm (opposite parallel)"
+(`nsd.c1a`) and "0.29 min. width of nsdm in COREID" (`nsd.c1b`), "0.38
+min. spacing/notch of "nsdm" in core" (`nsd.c2a`) and "0.29 min.
+spacing/notch of "nsdm" in core" (`nsd.c2b`), and "0.13 min. enclosure
+of n+ tap in core by nsdm" (`nsd.c5a`).[^pdk-errors] It does not say
+which of the two core values applies where, nor what "opposite parallel"
+means. It gives nsd.9 as "ndiff/ntap (source of
 extendedDrain fet and gated_npn exempted) must be enclosed by
 nsdmZENERID", rpm.6 as "rpm must not overlap nsdm" with a 0.2 spacing,
 and lists "NSDMdrop must be enclosed by COREID" and "NSDMadd must be
@@ -187,10 +189,10 @@ the lithography of choice for less critical layers",[^asml-30] and
 infers an i-line level, as for `PSDM`; the
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there. At
 the NA 0.48 low end of ASML's PAS 5500/275D[^asml-pas5500-275d] the same
-feature has {math}`k_1 \approx 0.50`, and the Error Messages page's 0.29
-core width and spacing[^pdk-errors] would be at {math}`k_1 \approx 0.48`
-at NA 0.6 (our arithmetic); the step page does not discuss the core
-values. SkyWater lists "ASML I-line stepper" and "ASML I-line scanner"
+feature has {math}`k_1 \approx 0.50`. If the Error Messages page's 0.29
+core width and spacing apply,[^pdk-errors] those features would be at
+{math}`k_1 \approx 0.48` at NA 0.6 (our arithmetic and our reading); the
+step page does not discuss the core values. SkyWater lists "ASML I-line stepper" and "ASML I-line scanner"
 among its tools but assigns no layer to them.[^skw-01]
 
 **Mask errors.** Wong et al. found that the mask error factor "is unity
@@ -198,8 +200,8 @@ for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998]
 at 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
 NA 0.60 (our arithmetic), so the 0.38 µm periphery features lie at or
-above it, while 0.29 µm core features would magnify a plate CD error
-(inference).
+above it, while 0.29 µm core features, if the 0.29 checks apply, would
+magnify a plate CD error (inference).
 
 **Resist.** Nothing is etched through this resist; it must stop the
 heavy n-type implant wherever the plate leaves it. The step page reads a
@@ -326,7 +328,9 @@ enclosures of 0.130, against the 0.125 µm of nsd.5a and nsd.5b (our
 reading of the columns; the PDK does not reconcile
 them).[^pdk-summary][^pdk-periph] For the plate, nsd.1 and nsd.2 set the
 smallest periphery features, 0.380 µm lines and spaces with islands of
-0.265 µm², and the Error Messages page's core checks allow 0.29.
+0.265 µm², and the Error Messages page lists both 0.38 and 0.29 core
+width and spacing checks without saying which applies where (0.38
+"(opposite parallel)" and "in core", 0.29 "in COREID" and "in core").
 
 ## Related pages
 
@@ -438,9 +442,12 @@ smallest periphery features, 0.380 µm lines and spaces with islands of
   from the device type; Table F2b's `C` marks in the SONOS rows fit it but
   do not say what the created shapes are.[^pdk-06]
 * Table F3a's 0.130 enclosures of diffusion and tap and the periphery
-  rules' 0.125 µm are not reconciled, and the Error Messages page's 0.29
-  core width and spacing and 0.13 core tap enclosure have no counterpart
-  in the periphery rules.[^pdk-summary][^pdk-periph][^pdk-errors]
+  rules' 0.125 µm are not reconciled, and the Error Messages page's core
+  checks, including the 0.13 core tap enclosure, have no counterpart in
+  the periphery rules.[^pdk-summary][^pdk-periph][^pdk-errors]
+* The Error Messages page's two core spacing values, 0.38 (`nsd.c2a`)
+  and 0.29 (`nsd.c2b`), and its two core width values, 0.38 (`nsd.c1a`)
+  and 0.29 (`nsd.c1b`), are not reconciled.[^pdk-errors]
 * The implant species, energy and dose, the plate's tone, blank, absorber
   and magnification, the resist and its thickness, and the exposure tool
   are not public; the i-line reading rests on the 0.380 µm rules.
