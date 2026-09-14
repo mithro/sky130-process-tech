@@ -97,7 +97,12 @@ Per member:
    a status of `Expired - Lifetime`, `Expired - Fee Related`,
    `Abandoned` or `Ceased` marks it ended whatever the date.
 2. A fetched application with no expiry event is ended if it is shown
-   as abandoned, or if 20 years from its filing date have passed.
+   as abandoned, withdrawn or ceased, or if 20 years from its filing
+   date have passed. One shown as `Granted` is covered by its patent,
+   which is a member of the same family, and has no term of its own.
+   An application still pending (for example a Japanese divisional)
+   is bounded by 20 years from the filing date shown, which may be
+   later than the parent's; the family then stays `unknown`.
 3. A listed-only member is bounded by the family's earliest priority
    date + 21 years (12-month priority period + 20-year term); for a US
    grant on an application filed before 1995-06-08 the bound is the
