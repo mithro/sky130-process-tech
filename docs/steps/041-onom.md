@@ -117,9 +117,9 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
    describes older exposure tools that "migrate to the lithography of
    choice for less critical layers"[^asml-30]). Overlay would be measured to the `TUNM` layer,
    because the island-to-window enclosure is the quantity that matters.
-   Overlay budgets and how alignment-mark placement limits them are
-   treated by Levinson[^levinson-2005] and by van Haren et
-   al.[^van-haren-2019]
+   Levinson's book has a chapter on overlay,[^levinson-2005] and van
+   Haren et al. treat how alignment-mark placement limits
+   overlay.[^van-haren-2019]
 5. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse,
    hard bake.
 6. **Inspection.** Overlay to `TUNM` (inferred), {term}`CD` of the islands, and

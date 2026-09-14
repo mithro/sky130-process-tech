@@ -118,8 +118,8 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
    layers".[^asml-30]
 4. **Alignment.** To the active/STI pattern (0.125 µm diffusion
    enclosure) and, for the butting edges and the resistor rule, to
-   poly and to the `PSDM` pattern; Levinson treats the allocation of
-   such multi-reference overlay budgets.[^levinson-2005]
+   poly and to the `PSDM` pattern; Levinson's book has a chapter on
+   overlay.[^levinson-2005]
 5. **Develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse, dry; hard bake or UV
    cure against the implant, the outgassing of thick resist under
    implantation having been measured by Lee et al.[^lee-1996] and
@@ -213,7 +213,8 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
   model.[^sheu-2006]
 * Drennan, Kniffin and Locascio, CICC 2006 — proximity effects in
   analogue design.[^drennan-2006]
-* Levinson, *Principles of Lithography* — overlay budgets.[^levinson-2005]
+* Levinson, *Principles of Lithography* — the chapter on
+  overlay.[^levinson-2005]
 * Mack, *Fundamental Principles of Optical Lithography* — thick-resist
   imaging.[^mack-2007]
 * Fujimura et al. (Fujitsu), *JJAP* 1989 — the carbonised layer of

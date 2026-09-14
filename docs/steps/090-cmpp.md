@@ -67,7 +67,7 @@ The reasons it is needed here:
 * **Lithography depth of focus.** The contact mask
   ({ref}`LICM1 <step-093>`) prints 0.17 µm holes (licon.1[^pdk-periph])
   and, we infer, needs deep-UV exposure whose usable depth of focus
-  is a few hundred nanometres (category page[^levinson-2005]) — less
+  is a few hundred nanometres ({ref}`category page <category-lithography>`) — less
   than the 0.4 µm step the un-polished glass would carry.
 * **Uniform contact depth.** Every `licon1` must reach its landing
   surface — poly head, diffusion or tap — through the same oxide
@@ -218,8 +218,8 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
   CMP.[^txt-05]
 * Steigerwald, Murarka and Gutmann, *Chemical Mechanical
   Planarization of Microelectronic Materials*.[^steigerwald-1997]
-* Levinson, *Principles of Lithography* — depth of focus and why
-  planarity matters.[^levinson-2005]
+* Levinson, *Principles of Lithography* — the chapter on optical pattern
+  formation.[^levinson-2005]
 * Chip History Center, *The Mirra CMP System*.[^chiphistory-mirra]
 
 ### Deep dive

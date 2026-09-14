@@ -128,8 +128,8 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
    **i-line** exposure, as for the earlier implant-block masks.
 4. **Alignment.** To the active/STI pattern for the 0.125 µm
    diffusion enclosure and to poly for the resistor and licon.9
-   rules;[^pdk-periph] Levinson treats how such multi-reference
-   overlay budgets are allocated.[^levinson-2005]
+   rules;[^pdk-periph] Levinson's book has a chapter on
+   overlay.[^levinson-2005]
 5. **Develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse, dry; then a hard bake
    or UV cure to harden the resist against the implant and reduce
    outgassing — Lee et al. measured thick-resist outgassing during
