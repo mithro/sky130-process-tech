@@ -54,8 +54,8 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 159-M1 | Medium | fixed | Skelly & Gruenke via-fill analogy ignores non-monotonic 2.8 µm result (159:90-97, 161:73-79); verified abstract via Crossref |
 | 159-L1 | Low | fixed | Le, Banerjee & McPherson EM finding is conditional, cited as unconditional (159:137-141); verified abstract via OpenAlex |
 | 159-L2 | Low | fixed | via4/via3 resistance-per-area residual left uncomputed (159:47-51), fixed alongside 151-L1 |
-| 160-M1 | Medium | open | Bui et al. cited beyond its published abstract (160:76-79) |
-| 160-L1 | Low | open | EKS265 silently read as "EKC265" without marking the reading (160:194-196) |
+| 160-M1 | Medium | fixed, corrected | Bui et al. citation misapplied to a residue claim (160:76-83); own fresh Crossref check found the abstract IS published (contrary to the review's claim), so used its actual content (TiN ARC thickness vs EM lifetime) rather than the review's "not publicly readable" wording — see note below |
+| 160-L1 | Low | fixed | EKS265 silently read as "EKC265" without marking the reading (160:200-204) |
 | 161-L1 | Low | deferred | metal-cap/barrier sweep — 300 Å TiW analogue is top not lower metal (161:214-215) |
 | 161-L2 | Low | open | Kikuta review cited beyond its published abstract (161:87-89) |
 | 161-L3 | Low | deferred | plural "reports" with a single footnote — line 51-53 sits inside the range finding X2 concerns (51-62); left for the metal-cap sweep |
@@ -65,7 +65,22 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 163-M1 | Medium | fixed | same as 155-M1, second page (163:134-137) |
 | 163-L1 | Low | open | via-4 aluminium-fill relationship asserted without explanation (163:186-187) |
 | 163-L2 | Low | open | 155/163 aluminium etch-rate implied rates inconsistent (163:119-122) |
-| EKC-ATTACH | (site-wide, in range) | open | EKC/EKS solvents unattached to "Batch Rotational" entry, within 149-163 (155:147, 160:145, 163:136, 160:195) — review §0 item, not excluded by coordinator, so checked/fixed here |
+| EKC-ATTACH | (site-wide, in range) | fixed | EKC/EKS solvents unattached to "Batch Rotational" entry, within 149-163 (155, 160, 163) — review §0 item, not excluded by coordinator, so checked/fixed here |
+
+### Note on 160-M1
+
+The review said Bui et al. 1994 (`[^bui-1994]`, DOI 10.1557/PROC-338-471)
+has "no abstract published (checked at Crossref and OpenAlex)". A fresh
+`curl -A "sky130-process-tech docs checker" https://api.crossref.org/works/10.1557/PROC-338-471`
+in this branch returns a full publisher abstract. Rather than the
+review's proposed fix (drop the citation, or note the content is not
+readable), the sentence was rewritten to state what the abstract
+actually says: a thinner TiN ARC cap cut Kelvin-via EM lifetime by
+about an order of magnitude versus a thicker one, under one current
+direction — a finding about cap *thickness*, not etch residue, which
+is still not quite what the original sentence claimed (residue
+degrading EM performance), so the citation is still corrected, just
+with real content instead of a "content not readable" hedge.
 
 ## Site-wide items from the review left alone (per coordinator instruction)
 
