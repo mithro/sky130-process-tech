@@ -10,10 +10,10 @@ whole `docs/` tree, not just 118-134).
 
 | id | severity | status | note |
 |---|---|---|---|
-| 118-H1 | High | open | via narrower not wider (118-vim.md:44-49) |
-| 120-H1 | High | open | via narrower not wider (120-tin3.md:39-43) |
-| 118-M1 | Medium | open | via resistance presented as measured, not PDK table value (5 sites: 118, 122-wcmp3, 130-vim2e x2, 133-wcmp4) |
-| 119-M1 | Medium | open | EKS265/EKC270 solvents misattributed to wet-bench line, not batch-rotational (119-vime, 125-mm2e, 130-vim2e) |
+| 118-H1 | High | fixed | via narrower not wider (118-vim.md:44-49) — commit b4f1068 |
+| 120-H1 | High | fixed | via narrower not wider (120-tin3.md:39-43) — commit b4f1068 |
+| 118-M1 | Medium | fixed | via resistance presented as measured, not PDK table value (5 sites: 118, 122-wcmp3, 130-vim2e, 133-wcmp4 x2) — commit 64c40dd |
+| 119-M1 | Medium | fixed | EKS265/EKC270 solvents misattributed to wet-bench line, not batch-rotational (119-vime, 125-mm2e, 130-vim2e) — commit 5a806bb |
 | 122-M1 | Medium | open | Common rule 2 soft form: step-code digit "3" used as evidence for ordinal (122-wcmp3.md:24-27) |
 | 123-M1 | Medium | declined | Blech 1976 TiAl3 shunt misattribution — handled on topic/p4-107-117 (overlap instruction) |
 | 118-L1 | Low | open | design-rule quotation cut short without [...] (118-vim, 129-vim2) |
@@ -45,8 +45,8 @@ attribution, or the step-name ordinal soft form recur elsewhere in
 
 | pattern | status | note |
 |---|---|---|
-| "wider" via/contact-vs-via miscomparison | pending | grep whole docs/ tree beyond 118/120 |
-| solvent wrongly attributed to "wet bench" / EKS265/EKC270 | pending | grep whole docs/ tree beyond 119/125/130 |
+| "wider" via/contact-vs-via miscomparison | done | found and fixed one more instance, 119-vime.md:70 (mcon vs via) — commit b4f1068 |
+| solvent wrongly attributed to "wet bench" / EKS265/EKC270 | done | found and fixed four more instances outside 118-134: 108-ctme.md, 114-mm1e.md, 138-capme.md, 140-mm3e.md — commit 5a806bb |
 | step-name ordinal soft form ("the digit/suffix makes it the Nth") | pending | grep whole docs/ tree beyond 122 |
 
 ## Checkers / build
