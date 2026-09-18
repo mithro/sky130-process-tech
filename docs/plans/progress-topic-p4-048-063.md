@@ -44,9 +44,9 @@ before being fixed or declined.
 | 055-L1 | Low | fixed | Redid the arithmetic: 2000/300 = 6.67, 2000/319.8 = 6.25, not 7. Fixed both occurrences ("factor of seven" and "seven times higher"). |
 | 055-L2 | Low | fixed | Confirmed 052 and 049 leave the question open; softened the "used throughout these pages" overstatement and cross-referenced 052's open question. |
 | 055-L3 | Low | fixed | Added Lane & Wrixon's published poly design space to Why this step exists, as a second independent source alongside SkyWater's own documentation. |
-| 056-L1 | Low | open | |
+| 056-L1 | Low | fixed | Fixed the backwards description ("dose x thickness" -> concentration x thickness), matching 053's correct wording. |
 | 056-L2 | Low | fixed | = 053-L1 |
-| 056-L3 | Low | open | |
+| 056-L3 | Low | fixed | Downloaded all 88 pminus_poly_res half/one-square .mdm files from GitHub and re-ran slope.py myself (script in scratchpad); found the actual outliers (module 6222 pads 1-2/1-3, module 6219 pad 10-12 and its D2 device, module 6222 pad 7-9) spanning 2.2x to 69x, matching the page's "twice to more than sixty times" claim, and named them. |
 | 057-L1 | Low | open | |
 | 057-L2 | Low | fixed | = 051-M1 |
 | 057-L3 | Low | fixed | = 051-L3; also removed fujimura-1989 from the in-text "two-step sequence" sentence, keeping only pat-strip-mosel (the actual source of that sequence). |

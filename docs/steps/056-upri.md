@@ -31,8 +31,8 @@ about 36 mΩ·cm, which on the published resistivity-versus-doping
 curves for boron-doped poly lies in the region just above the
 grain-boundary trap-filling threshold — the steepest part of the
 curve[^seto-1975][^kamins-1998] — and to a dose of order 10¹⁴ cm⁻² or
-somewhat below (an illustrative estimate by dose × thickness, not a
-SkyWater number).
+somewhat below (an illustrative estimate — the average concentration
+multiplied by the 0.18 µm film thickness — not a SkyWater number).
 
 ## Step category
 
@@ -90,8 +90,15 @@ temperature, date or wafer, so they give no temperature
 coefficient).[^raw-data-passives] The PDK still gives no e-test values
 to compare them with.[^pdk-07] The short structures scatter more than
 their 300 Ω/sq counterparts: among the half- and one-square resistors,
-five read from about twice to more than sixty times the value of the
-same geometry elsewhere on the tile, and, as in the 300 Ω/sq set, the
+five — module 6222 pads 1-2 and 1-3 (0.69 µm, half square, 2.8–3.0 kΩ
+against 0.59 kΩ for the same geometry in module 6215), module 6219
+pad 10-12 and its "D2" device at pad 10-11 (1.41 µm, one square,
+4.1 kΩ and 56.2 kΩ against 1.9 kΩ in module 6215), and module 6222
+pad 7-9 (2.85 µm, half square, 64.8 kΩ against about 1 kΩ elsewhere on
+the tile) — read from about twice to more than sixty times the value
+of the same geometry elsewhere on the tile (our extraction from the
+published measurements; the files are named by module and pad in the
+repository),[^raw-data-passives] and, as in the 300 Ω/sq set, the
 2.85 µm pair of module 6224, which the pad list gives four squares,
 measures about one square's resistance (our
 extraction).[^raw-data-passives][^raw-data-testtile-pads]
