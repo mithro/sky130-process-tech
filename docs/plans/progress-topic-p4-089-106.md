@@ -22,7 +22,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 103-M1 | Medium | fixed | Confirmed lam-10k footnote's own text lists only "TCP 9400PTX/DFM, 2300, Exelan" for FY2003 -- no 9600. Recited the 9600 to skw-01 (which does name it) and kept lam-10k only for the 2300. |
 | 105-M1 | Medium | fixed | The 0.5-0.7 um as-deposited NILD2 figure carried no reference at all (unlike 089's equivalent PMD claim, which cites [^txt-05]); added the same [^txt-05] citation (footnote definition added to the page) at both occurrences. |
 | 089-L1 | Low | fixed | Confirmed skw-facilities.txt:109 sub-bullet "high aspect (5:1) fill capability" under the HDP entry (105-nild2.md already quotes it). Added the same quotation to 089. |
-| 090-L1 | Low | open | |
+| 090-L1 | Low | fixed | Confirmed no DOI/online copy of Preston 1927 exists; found a public Google Books catalogue record for the cited volume (Journal of the Society of Glass Technology v.11, Society of Glass Technology, Sheffield, published 1927) and added it as a library-record URL, with a note that the article itself has no online copy. |
 | 090-L2 | Low | fixed | See 091-L1 (090-L2 was itself just a forward pointer to 091-L1's fix). |
 | 091-L1 | Low | fixed | Confirmed pdk-rcx.txt has both "Resistance Values" (Table 91) and "Capacitance Values" (Table 93 ff.); the parenthetical said only "sheet-resistance table" though the footnote is also cited for capacitance (091, 104). Fixed the parenthetical on all 8 in-range pages that actually cite pdk-08 (091, 092, 093, 098, 099, 101, 104, 105) -- 100 and 103 do not cite pdk-08 despite the review listing them, so left untouched. |
 | 091-L2 | Low | fixed | Fixed at 105 per the review's own guidance (105:29-30 is the fuller list and the better place); see 105-L1. |
@@ -36,9 +36,9 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 098-L2 | Low | fixed | Added [^txt-01] (already used site-wide for this figure, e.g. 099-wdep.md) and a cross-reference to step-099 for the 400-450C tungsten deposition temperature. |
 | 098-L3 | Low | fixed | Fixed together with 092-M1: dropped the ramp-rate clause on 098 (a silicide soak is not ramp-limited) and kept only the 400-1200C range and "Silicide formation and annealing". |
 | 099-L1 | Low | fixed | Confirmed pi-US6635965.txt abstract has no hyphen ("tungsten containing gases"); removed the added hyphen. |
-| 100-L1 | Low | open | duplicate of 090-L1 |
+| 100-L1 | Low | fixed | Same fix as 090-L1, applied to 100. |
 | 101-L1 | Low | fixed | Confirmed pdk-assumptions.txt:993-995: LIRESCD ("Li resistor width...", 0.29 um) sits in the Table 4 "Other" physical-criteria section, not the minimum-CD table. Named the correct table and added the matching li.7 periphery value (0.290 um). |
 | 103-L1 | Low | fixed | Confirmed no page-cited public source ties US 4,948,458 to the 9600 specifically; reworded the Deep dive bullet to mark the product-family link as an inference. |
 | 103-L2 | Low | fixed | Confirmed testtile-pads.csv:78-79 gives no unit for the two line dimensions, and :213's cell text continues "; 9520 cells" beyond what was quoted. Added the no-unit reading and an ellipsis. |
 | 105-L1 | Low | fixed | Confirmed metal_stack.svg:266,281 carry "NILD3_C K=3.5" and "NILD4_C K=3.5" alongside NILD3-6; added a sentence noting the drawing does not explain them. |
-| 106-L1 | Low | open | duplicate of 090-L1 |
+| 106-L1 | Low | fixed | Same fix as 090-L1, applied to 106. |

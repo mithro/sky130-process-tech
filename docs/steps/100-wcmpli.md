@@ -350,7 +350,9 @@ fab (SKY130's recipe is not public):
     <https://doi.org/10.1007/s11664-998-0140-1>
 [^preston-1927]: F. W. Preston, "The theory and design of plate glass
     polishing machines", *Journal of the Society of Glass Technology*
-    **11**, 214–256 (1927).
+    **11**, 214–256 (1927). No DOI or online copy of the article
+    itself is public; library record for the volume:
+    <https://books.google.com/books/about/Journal_of_the_Society_of_Glass_Technolo.html?id=3CTyAAAAMAAJ>
 [^pat-cmp-mirra]: R. D. Tolles, N. Shendon, S. Somekh, I. Perlov,
     E. Gantvarg and H. Q. Lee (Applied Materials), *Continuous
     processing system for chemical mechanical polishing*,
