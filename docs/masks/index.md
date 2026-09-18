@@ -91,9 +91,11 @@ algorithms and checked by DRC.";[^pdk-periph] that fits a reading of CL
 as the mask-generation computation (our reading), and the
 {ref}`HVNTM <step-068>` page reads it as a computed layer. The PDK's *Error Messages* page lists checks on
 layers it calls `CLHVTPM`, `CLLVTNM`, `CLNTM` and `CLHVNTM` without
-defining them; the mask pages read them as created mask data
-(inference from the names), and the checks say what those layers must
-cover or avoid, not how they are made
+defining them; for `CLHVTPM`, `CLLVTNM` and `CLHVNTM` the mask pages
+read them as created mask data (inference from the names), while for
+`CLNTM` the LDNTM page reads the checks only as constraints on the
+layer without saying how it is made. Either way, the checks say what
+those layers must cover or avoid, not how they are made
 ({ref}`masks-derivations`).[^pdk-errors]
 
 ## Mask steps in this reference
