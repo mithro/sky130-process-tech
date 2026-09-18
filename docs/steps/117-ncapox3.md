@@ -32,11 +32,12 @@ described at {ref}`NCAPOX <step-091>` over the
 The stack diagram offers one further public hint. Beside "NILD3
 K=4.5" it draws a "NILD3_C" of permittivity 3.5 and thickness
 0.030 µm,[^pdk-04] and the same pairing recurs as NILD4/NILD4_C at the
-next level.[^pdk-04] The suffix, the thinness and the placement are
-consistent with this {term}`cap oxide`, as they are with a {term}`liner` under the
-{term}`gap fill` ({ref}`NILD3 <step-115>`); the diagram does not say which,
-and a permittivity of 3.5 is lower than a plain plasma oxide's
-(inference; see *Open questions*).
+next level.[^pdk-04] The thinness and the placement are consistent
+with this {term}`cap oxide`, as they are with a {term}`liner` under the
+{term}`gap fill` ({ref}`NILD3 <step-115>`); the "_C" suffix is
+suggestive but the diagram does not say what it stands for, and a
+permittivity of 3.5 is lower than a plain plasma oxide's (inference;
+see *Open questions*).
 
 ## Step category
 

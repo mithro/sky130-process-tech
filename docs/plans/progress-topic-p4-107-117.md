@@ -46,8 +46,8 @@ occurrence is checked and fixed if needed.
 | 116-L1 | Low | fixed | Confirmed the page's own line 199 and 111-wcmp2.md:41 both treat CMPP/CMPL as earlier oxide polishes. Reworded the opening sentence to "first of the inter-metal oxide polishes" and named CMPP/CMPL as the earlier ones, matching the rest of the page. |
 | 116-L2 | Low | fixed | Added [^zantye-2004] (already on the page, retrievable) beside preston-1927, and reworded the footnote to note the 1927 original is not online. |
 | 116-L3 | Low | declined | Same JOB-01 site-wide sweep item as 111-L1; left alone per the coordinator's explicit instruction. |
-| 117-L1 | Low | open | "_C" suffix used as inference evidence from a name (Common rule 2). |
-| 117-L2 | Low | declined | amat-10k uncheckable but independently documented; no fix required per review, note only. |
+| 117-L1 | Low | fixed | Reworded so the "_C" suffix is noted as suggestive but not used as evidence in the inference argument itself, per review's fix (Common rule 2). |
+| 117-L2 | Low | declined | amat-10k stays uncheckable (SEC 403, no Wayback) but the Producer platform is independently documented on Applied Materials' own site; review says no fix required, note only. |
 
 Checks to run before finishing (foreground): check_steps.py, check_refs.py,
 check_machines.py, check_materials.py, check_masks.py, check_papers.py,
