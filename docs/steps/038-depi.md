@@ -49,9 +49,11 @@ confined to the memory cells.
 
 The reason is the way the 2-T cell is read. The PDK's programme/erase
 table shows the read condition as 0 V on the {term}`control gate`, +1.1 V on
-the drain and +1.8 V on the word line (the {term}`select gate`), and the
-threshold measurement likewise at 2.05 µA with the gate at
-0 V.[^pdk-07] The memory transistor therefore has to conduct with its
+the drain and +1.8 V on the word line (the {term}`select gate`), and
+defines the threshold on the same bias conditions as the gate voltage
+at which the drain current reaches 2.05 µA — the e-test parameters are
+named "SONOS erased VT (VG@2.05uA)" and "SONOS programmed VT
+(VG@2.05uA)".[^pdk-07] The memory transistor therefore has to conduct with its
 gate *grounded* when erased and be cut off with its gate grounded when
 programmed. The {term}`e-test` table gives exactly that: a nominal "SONOS
 erased VT" of −2.3 V (specification −3.648 to −0.952 V), a "SONOS

@@ -8,7 +8,7 @@ arithmetic before being fixed or declined.
 
 | Finding | Page(s) | Status | Note |
 |---|---|---|---|
-| 038-H1 | 038-depi.md | open | PDK "VT meas" row misread — gate is swept, not held at 0 V |
+| 038-H1 | 038-depi.md | fixed | PDK "VT meas" row misread — gate is swept, not held at 0 V; verified against `pdk-device-details.txt` (V_G swept, V_D +1.1, V_B 0, V_S 0, V_WL +1.8) |
 | 035-M1 | 035-tunm.md | open | Cypress quotation put inside a PDK attribution |
 | 036-M1 | 036-tunarce.md | open | unsupported/contradictory "few nm resist loss" figure |
 | 036-M2 | 036-tunarce.md | open | "tens of keV" narrower than cited analogues |
