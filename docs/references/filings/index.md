@@ -15,7 +15,7 @@ name SkyWater or the Cypress fab. It complements the
 the inventory only when a page cites it. See
 `docs/plans/filings-index-design.md` for the inclusion rules.
 
-The index holds 70 filings.
+The index holds 71 filings.
 
 ## Other views
 
@@ -65,11 +65,11 @@ canonical citation but was not itself fetched by this project.
 
 ## Counts
 
-By company: Cypress Semiconductor Corporation (10), Infineon Technologies AG (7), SkyWater Technology, Inc. (42), Weebit Nano Limited (4), D-Wave Quantum Inc. (4), IonQ, Inc. (3).
+By company: Cypress Semiconductor Corporation (10), Infineon Technologies AG (7), SkyWater Technology, Inc. (42), Weebit Nano Limited (4), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), IonQ, Inc. (3).
 
-By type: Annual reports (25), Quarterly and half-year reports (18), Current reports and exhibits (11), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
+By type: Annual reports (26), Quarterly and half-year reports (18), Current reports and exhibits (11), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
 
-By year: 2004 (1), 2005 (1), 2007 (1), 2008 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (9), 2022 (8), 2023 (11), 2024 (8), 2025 (9), 2026 (12).
+By year: 2004 (1), 2005 (1), 2007 (1), 2008 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (9), 2022 (8), 2023 (11), 2024 (9), 2025 (9), 2026 (12).
 
 ## All filings
 
@@ -397,6 +397,14 @@ Sorted by filing date, then id.
   Relationships: {ref}`SkyWater describes the fab's Cypress origin <filings-rel-skywater-fab-history>` · {ref}`the 2017 Process Technology License Agreement and its amendments <filings-rel-cypress-technology-license>` · {ref}`Infineon as SkyWater's wafer customer (2022 frame agreement, Fab 25 supply agreement) <filings-rel-infineon-wafer-supply>` · {ref}`SkyWater names its suppliers <filings-rel-skywater-suppliers>`.
   Inventory: SEC-02.
   Related pages: {ref}`overview-index` — The process overview cites the annual report as SEC-02 for the Minnesota fab's node range.; {ref}`machines-index` — The machines index cites SEC-02 for the fab's capabilities.; {ref}`materials-index` — The materials index cites SEC-02 for the updated supplier list..
+
+(filing-quicklogic-10-k-2024-03-27)=
+* **QuickLogic Corporation — Annual report on Form 10-K for the fiscal year ended 2023-12-31** (filed 2024-03-27; SEC accession 0001437749-24-009469).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/882508/000143774924009469/quicklo20231127_10k.htm) · [investor-relations copy](https://ir.quicklogic.com/sec-filings/content/0001437749-24-009469/0001437749-24-009469.pdf).
+  QuickLogic's FY2023 10-K names SkyWater (spelled "SkyWater Technologies" in the filing) among the foundries it depends on to manufacture its hardware products, alongside GlobalFoundries and TSMC; QuickLogic's own FY2022 10-K, filed a year earlier, does not mention SkyWater at all. "We depend upon GlobalFoundries, TSMC, SkyWater Technologies, Honeywell Aerospace, Amkor Technology, Inc., Integra Specialty Products, JCET Group Co. Ltd., and Golden Altos Corp. to manufacture our new hardware products" (Item 1A, Risk Factors)
+  Relationships: {ref}`a customer's filing names SkyWater <filings-rel-customer-names-skywater>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+  Note: QuickLogic's prior 10-K (FY2022, accession 0001437749-23-008214, filed 2023) was fetched and grepped for "SkyWater" with zero matches, even though QuickLogic's March 2022 press releases name the RH90 rad-hard eFPGA partnership; this FY2023 10-K is the first of QuickLogic's own annual reports found to name SkyWater.
 
 (filing-d-wave-10-k-2024-03-29)=
 * **D-Wave Quantum Inc. — Annual report on Form 10-K for the fiscal year ended 2023-12-31** (filed 2024-03-29; investor-relations filing 17413336; SEC accession not retrieved).

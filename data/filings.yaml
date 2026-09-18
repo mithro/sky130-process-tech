@@ -2280,6 +2280,61 @@ filings:
     1819974/000181997424000008 (2026-09-14).
   verified: 2026-09-14 Wayback capture 20240323004216 of the EDGAR document fetched; quotes checked
 
+- id: quicklogic-10-k-2024-03-27
+  company: QuickLogic Corporation
+  company_key: quicklogic
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Annual report on Form 10-K for the fiscal year ended 2023-12-31
+  period:
+    label: fiscal year 2023
+    start: null
+    end: 2023-12-31
+  filed: 2024-03-27
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001437749-24-009469
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/882508/000143774924009469/quicklo20231127_10k.htm
+    wayback: null
+    ir: https://ir.quicklogic.com/sec-filings/content/0001437749-24-009469/0001437749-24-009469.pdf
+  about:
+    summary: >-
+      QuickLogic's FY2023 10-K names SkyWater (spelled "SkyWater Technologies"
+      in the filing) among the foundries it depends on to manufacture its
+      hardware products, alongside GlobalFoundries and TSMC; QuickLogic's own
+      FY2022 10-K, filed a year earlier, does not mention SkyWater at all.
+    quotes:
+    - text: >-
+        We depend upon GlobalFoundries, TSMC, SkyWater Technologies, Honeywell
+        Aerospace, Amkor Technology, Inc., Integra Specialty Products, JCET
+        Group Co. Ltd., and Golden Altos Corp. to manufacture our new hardware
+        products
+      location: Item 1A, Risk Factors
+  auditor_report: null
+  relationships:
+  - customer-names-skywater
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on.
+  inventory_key: null
+  discovery:
+  - ir-archive
+  discovery_note: >-
+    Found in SkyWater's investor-relations SEC filings feed
+    (ir.skywatertechnology.com/feed/SECFiling.svc/GetEdgarFilingList), which
+    lists every EDGAR filing with a PDF copy hosted off sec.gov.
+  verified: 2026-09-18 investor-relations PDF copy fetched; quotes checked
+  notes: >-
+    QuickLogic's prior 10-K (FY2022, accession 0001437749-23-008214, filed
+    2023) was fetched and grepped for "SkyWater" with zero matches, even
+    though QuickLogic's March 2022 press releases name the RH90 rad-hard eFPGA
+    partnership; this FY2023 10-K is the first of QuickLogic's own annual
+    reports found to name SkyWater.
 - id: d-wave-10-k-2024-03-29
   company: D-Wave Quantum Inc.
   company_key: d-wave

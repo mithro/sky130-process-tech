@@ -27,6 +27,7 @@ name and date; the full audit reports are collected on
 * Weebit Nano Limited, Appendix 4E and Annual Report, filed 2023-08-25: Appendix 4E and Annual Report for the year ended 30 June 2023 ({ref}`full entry <filing-weebit-nano-annual-report-fy2023>`)
 * Infineon Technologies AG, Annual Report, filed 2023-11-23: Infineon Technologies Annual Report 2023 ({ref}`full entry <filing-infineon-annual-report-fy2023>`)
 * SkyWater Technology, Inc., 10-K, filed 2024-03-15: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-skywater-10-k-2024-03-15>`) (auditor: Deloitte & Touche LLP, 2024-03-15)
+* QuickLogic Corporation, 10-K, filed 2024-03-27: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-quicklogic-10-k-2024-03-27>`)
 * D-Wave Quantum Inc., 10-K, filed 2024-03-29: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-d-wave-10-k-2024-03-29>`)
 * Weebit Nano Limited, Appendix 4E and Annual Report, filed 2024-08-28: Appendix 4E and 2024 Annual Report for the year ended 30 June 2024 ({ref}`full entry <filing-weebit-nano-annual-report-fy2024>`)
 * Infineon Technologies AG, Annual Report, filed 2024-11-26: Infineon Technologies Annual Report 2024 ({ref}`full entry <filing-infineon-annual-report-fy2024>`)
