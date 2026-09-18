@@ -106,7 +106,7 @@ than its own {term}`over-etch` would normally consume.
   Because fluorine etches TiW, punching through would thin the cap
   of every metal-3 line (the film {ref}`VIM3E <step-145>` later
   stops on) and expose aluminium to a fluorine plasma, which forms
-  involatile AlF₃ rather than etching it[^hess-1982] — a residue the
+  involatile AlF₃ rather than etching it[^hess-1982][^pat-mim-ti-etch] — a residue the
   {ref}`MM3E <step-140>` chlorine etch would then have to break
   through. The ≤100 Å loss the TI patent allows[^pat-mim-ti-etch] is
   the scale of the margin.
@@ -279,7 +279,11 @@ end (SKY130's recipe is not public):
 * Flamm and Donnelly, 1981, and Winters and Coburn, 1992 — the
   surface chemistry behind metal-to-dielectric selectivity.[^flamm-1981][^winters-1992]
 * Hess, *Plasma Chem. Plasma Process.* 1982 — why fluorine does not
-  etch aluminium, the hazard of punching through.[^hess-1982]
+  etch aluminium, the hazard of punching through (paywalled beyond
+  the title; the TI patent states the same mechanism in publicly
+  readable text — "fluorine … cannot generally damage the underlying
+  aluminum comprising layer by forming non-volatile aluminum
+  fluoride").[^hess-1982][^pat-mim-ti-etch]
 * Hwang and Giapis, *JVST B* 1997; Fang and McVittie, *IEEE EDL*
   1992; Cheung, P2ID 2000 — plasma charging and thin-dielectric
   damage.[^hwang-1997][^fang-1992][^cheung-2000]
