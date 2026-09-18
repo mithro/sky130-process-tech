@@ -164,7 +164,9 @@ An industry-generic PECVD MiM-dielectric deposition on an aluminium
 back end (SKY130's recipe is not public):
 
 1. **Surface.** The wafer comes from the {term}`PVD` cluster with its
-   TiW cap ({ref}`WTIAL3 <step-134>`); the cap is the actual bottom
+   refractory cap exposed ({ref}`WTIAL3 <step-134>`; TiW or TiN, which
+   the public record does not settle,
+   {ref}`overview-metal-cap`); the cap is the actual bottom
    electrode surface, and its smoothness and cleanliness set the
    leakage. Some flows pre-treat the electrode in an NH₃ or N₂
    plasma — the Philips patent claims an ammonia-plasma treatment of

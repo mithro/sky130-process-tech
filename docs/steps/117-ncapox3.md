@@ -65,7 +65,7 @@ A polish alone does not give a {term}`via` level what it needs:
   thickness is the standard way to tighten the final dielectric
   thickness (industry practice[^txt-05]), which in turn tightens the
   {term}`over-etch` the {ref}`VIME <step-119>` via etch needs to reach every
-  TiW cap. The PDK's "Via1 slope" of 0.02 and via {term}`CD` of 0.15 µm[^pdk-03]
+  metal-1 cap ({ref}`overview-metal-cap`). The PDK's "Via1 slope" of 0.02 and via {term}`CD` of 0.15 µm[^pdk-03]
   are the geometry that thickness control serves.
 * **Sealing the polished surface.** Oxide CMP leaves micro-scratches
   and embedded slurry particles — Devriendt et al. relate those
