@@ -65,10 +65,13 @@ method: "a threshold is selected to determine the distance between the
 edges of the video profile at that threshold", a technique "critically
 sensitive to various SEM parameters including the primary electron
 energy, the beam diameter, and the defocus of the beam".[^singh-1988]
-Rosenfield noted that "the peak to peak method may be used to accurately
-measure the linewidth of an isolated resist line; but, a threshold
-technique may be required for an isolated space in
-resist".[^rosenfield-1986] Postek, Keery and Larrabee showed why width
+Rosenfield's 1986 paper is likewise understood to have distinguished
+which edge-detection method suits an isolated resist line versus an
+isolated space (retrieved 2026-08-30 per the inventory; the DOI now
+redirects to a Cambridge Core page that returns an error and no
+archived copy could be found, so the wording above is not
+independently re-checkable; evidence weak).[^rosenfield-1986] Postek,
+Keery and Larrabee showed why width
 is harder than pitch: edge location errors cancel in a pitch
 measurement, but "in linewidth measurement applications, the effects of
 edge location uncertainty are additive and thus give twice the edge
@@ -441,7 +444,11 @@ sampling plans are not public.
     <https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-shatters-metrology-roadblocks-65-45nm>
 [^rosenfield-1986]: M. G. Rosenfield, "Linewidth measurement using the low
     voltage SEM", *Proceedings, Annual Meeting, Electron Microscopy
-    Society of America* **44**, 652–653 (1986).
+    Society of America* **44**, 652–653 (1986). The DOI resolves (a
+    redirect to Cambridge Core) but the destination returns HTTP 400
+    for both this User-Agent and a browser one (checked 2026-09-19);
+    no Wayback Machine copy exists. Retrieved 2026-08-30, no longer
+    online, not archived; evidence weak.
     <https://doi.org/10.1017/S0424820100144681>
 [^postek-1988]: M. T. Postek, W. J. Keery and R. D. Larrabee, "The
     relationship between accelerating voltage and electron detection modes

@@ -354,9 +354,12 @@ Status and expiry are estimates from public records and are not legal advice.
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^merckel-1977]: G. Merckel, "Ion Implanted MOS Transistors — Depletion
     Mode Devices", in *Process and Device Modeling for Integrated
-    Circuit Design*, Springer, 1977, pp. 677–688 (chapter landing page
-    404s at the publisher; the Crossref record carries the
-    bibliographic detail; the book's own DOI resolves).
+    Circuit Design*, Springer, 1977, pp. 677–688. Neither DOI resolves
+    to a live page (both redirect to a link.springer.com URL that
+    404s, checked 2026-09-19); no Wayback Machine or other public copy
+    could be found. The Crossref record carries only the bibliographic
+    detail (title, book, pages), not the text, so this citation is not
+    independently checkable beyond that record; evidence weak.
     <https://doi.org/10.1007/978-94-011-7583-8_24>,
     <https://doi.org/10.1007/978-94-011-7583-8>
 [^pat-vt-rrr]: M. Helm and X. Zhou (Round Rock Research), *Formation of
