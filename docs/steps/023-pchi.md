@@ -107,13 +107,19 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
   so its dose is at the low end of the range — a few 10¹² cm⁻² is
   illustrative.
 * **Tilt and twist.** 7° with twist.[^wiki-implant][^txt-02]
-* **Screen oxide.** The pad oxide (10–20 nm in the Cypress {term}`SONOS`
-  patent)[^pat-04] randomises the beam and traps recoils.
+* **Screen oxide.** The pad oxide randomises the beam and traps recoils;
+  the thickness the Cypress {term}`SONOS` patent gives it — that patent
+  may still be in force — is in the collapsed note below this list.
 * **Charge control.** Electron shower on a cooled electrostatic chuck
   (SkyWater lists "ESC chuck, E shower").[^skw-01]
 * **Anneal.** None until {ref}`RTAI <step-034>`.
 * **Monitoring.** Thermal-wave on product; {term}`sheet resistance` on monitors
   after a monitor anneal.
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The Cypress {term}`SONOS` patent gives the pad oxide as
+10–20 nm.[^pat-04]
+:::
 
 ## Machines typically used
 

@@ -32,10 +32,14 @@ tunnel-mask resist in place, the wafer is exposed to an oxygen-based
 plasma, we infer, that {term}`ashes <ash>` the organic ARC in the open windows (the
 resist is attacked at a similar rate but is many times thicker), with
 the etch run to an optical-emission {term}`endpoint` plus a timed {term}`over-etch`, and
-stopping on the oxide beneath — 10–20 nm of pad oxide in the Cypress
-patent.[^pat-04] This reference describes the film only as an ARC;
-whether it is an organic BARC or an inorganic dielectric ARC is
-discussed under *Open questions*.
+stopping on the pad oxide beneath, whose thickness in a Cypress patent
+that may still be in force is in the collapsed note below. This
+reference describes the film only as an ARC; whether it is an organic
+BARC or an inorganic dielectric ARC is discussed under *Open questions*.
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The pad oxide beneath is 10–20 nm in the Cypress patent.[^pat-04]
+:::
 
 ## Step category
 
