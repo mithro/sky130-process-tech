@@ -59,7 +59,7 @@ programmed. The {term}`e-test` table gives exactly that: a nominal "SONOS
 erased VT" of −2.3 V (specification −3.648 to −0.952 V), a "SONOS
 programmed VT" of 1.44 V, and a "program inhibit VT" of
 −1.132 V.[^pdk-07] A transistor whose erased threshold is −2.3 V is a
-depletion-mode device — "For an N-type FET, enhancement-mode devices
+depletion-mode device — "[f]or an N-type FET, enhancement-mode devices
 have positive thresholds, and depletion-mode devices have negative
 thresholds", and such a device "is normally on at zero gate–source
 voltage".[^wiki-depletion]
@@ -104,12 +104,16 @@ with that reading. By maximum-transconductance extrapolation of the
 drain current at a drain bias of 0.1 V, less half that bias (our
 extraction from the
 published measurements), the `nfet_05v0_nvt` structures have thresholds
-of 0.05–0.12 V (one 1/25 µm structure with a noisy low-current sweep
+of 0.05–0.13 V (one 1/25 µm structure with a noisy low-current sweep
 excluded) and the `nfet_03v3_nvt` structures −0.05 to +0.05 V,
 against 0.79–0.82 V for two 7/8 µm `nfet_g5v0d10v5` devices; the 20 V
-zero-Vt structure on the {term}`test tile` (pad-list name `n20zvtvhv1`;
-see {ref}`PWBM <step-026>`) gives −0.12 to
-−0.13 V.[^raw-data-hv-mosfets][^raw-data-testtile-pads] None of these
+zero-Vt structure on the {term}`test tile` (pad-list name
+`n20zvtvhv1`; see {ref}`PWBM <step-026>`; the raw-data repository files
+its sweeps under `nfet_20v0_nvt`, but their `w30_l5p5_m2` geometry is
+the zero-Vt e-test geometry "2* 30/5.5" of `VTXNZVT1`, not the 20 V
+native device's "2* 30/1.0", and the extracted value matches the
+published `VTXNZVT1` nominal of −0.1224 V) gives −0.12 to
+−0.13 V.[^pdk-07][^raw-data-hv-mosfets][^raw-data-testtile-pads] None of these
 thresholds is strongly negative. The shift of threshold with body bias
 tells the devices apart: the body-effect coefficient is about 0.47 √V
 for a 10/4 µm `nfet_05v0_nvt`, 0.73 √V for the 7/8 µm `nfet_g5v0d10v5`
@@ -132,7 +136,8 @@ themselves.
 An industry-generic depletion-mode channel implant for a 200 mm,
 130 nm-era memory transistor (SKY130's values are not public):
 
-* **Species.** Arsenic (⁷⁵As⁺, from AsH₃) for a shallow, abrupt
+* **Species.** On our arsenic reading (see above; the species is not
+  public), arsenic (⁷⁵As⁺, from AsH₃) for a shallow, abrupt
   n-layer; phosphorus is the lighter alternative with a longer tail.
   The original ion-implanted depletion-mode IGFET work established the
   implanted n-layer approach,[^edwards-1971] and Merckel's modelling
@@ -142,10 +147,10 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   "counter-doped channel region".[^pat-vt-rrr]
 * **Energy.** Low — tens of keV for arsenic — so that the n-layer is
   confined to the top few tens of nanometres above the `PTSI` barrier;
-  the {term}`tunnel oxide` grown at {ref}`ONO <step-040>` consumes about 1 nm
-  for a 2 nm oxide of the kind the Cypress patents describe[^pat-04]
-  (46 % of the oxide thickness lies below the original
-  surface[^wiki-thox]), which the target must allow for.
+  the {term}`tunnel oxide` grown at {ref}`ONO <step-040>` consumes 46 %
+  of its own thickness of silicon[^wiki-thox] — of order 1 nm for a
+  tunnel oxide in the 1.0–4.0 nm range the Cypress patent
+  gives[^pat-04] — which the target must allow for.
 * **Dose.** Of order 10¹² cm⁻²: enough to swing the threshold by a
   volt or two against the p-well surface doping, in line with
   {term}`threshold-adjust <threshold-adjust implant>` practice[^macpherson-1971] and with the "about 8×10¹²
@@ -158,10 +163,10 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   two implants does not matter physically and is presumably chosen for
   implanter scheduling.
 * **Anneal.** By the furnace steps that follow, beginning with the
-  tunnel oxidation at {ref}`ONO <step-040>`; arsenic's slow diffusion
-  keeps the layer shallow through the ONO and gate-oxide thermal
-  budget, which Cypress notes must be kept low after the stack is
-  formed.[^cyp-25]
+  tunnel oxidation at {ref}`ONO <step-040>`; if the species is
+  arsenic, its slow diffusion keeps the layer shallow through the ONO
+  and gate-oxide thermal budget, which Cypress notes must be kept low
+  after the stack is formed.[^cyp-25]
 * **Monitoring.** Thermal-wave measurement on product; the cell
   threshold itself is monitored at e-test (the `VTE`/`VTP` parameters
   above[^pdk-07]).
@@ -334,8 +339,11 @@ An industry-generic depletion-mode channel implant for a 200 mm,
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^merckel-1977]: G. Merckel, "Ion Implanted MOS Transistors — Depletion
     Mode Devices", in *Process and Device Modeling for Integrated
-    Circuit Design*, Springer, 1977, pp. 677–688.
-    <https://doi.org/10.1007/978-94-011-7583-8_24>
+    Circuit Design*, Springer, 1977, pp. 677–688 (chapter landing page
+    404s at the publisher; the Crossref record carries the
+    bibliographic detail; the book's own DOI resolves).
+    <https://doi.org/10.1007/978-94-011-7583-8_24>,
+    <https://doi.org/10.1007/978-94-011-7583-8>
 [^pat-vt-rrr]: M. Helm and X. Zhou (Round Rock Research), *Formation of
     standard voltage threshold and low voltage threshold MOSFET
     devices*, US 2011/0006372 A1, published 2011-01-13 (priority
@@ -393,8 +401,10 @@ An industry-generic depletion-mode channel implant for a 200 mm,
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
 [^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V and
-    20 V transistors, the native, zero-Vt and ESD NMOS and the thick-oxide
-    gate capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
+    20 V transistors, the NMOS devices the repository files under `_nvt`
+    (which, at 20 V, holds the zero-Vt e-test geometry rather than the
+    native device — see the reading on this page), the ESD NMOS and the
+    thick-oxide gate capacitors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
     (`nfet_g5v0d10v5`, `pfet_g5v0d10v5`, `nfet_g5v0d16v0`,
     `pfet_g5v0d16v0`, `nfet_g5v0d20v0`, `pfet_g5v0d20v0`,
     `nfet_03v3_nvt`, `nfet_05v0_nvt`, `nfet_20v0_nvt`, `esd_nfet_01v8`,
