@@ -50,9 +50,10 @@ or SkyWater.
 
 ## 2. Dataset
 
-`data/filings.yaml` is a mapping with `schema_version: 1`, `retrieved`
-and `filings`, a list sorted by filing date and id. It is the single
-source of truth; pages are generated from it.
+`data/filings.yaml` is a mapping with `schema_version: 1`, `retrieved`,
+`filings` (a list sorted by filing date and id), and an optional
+`known_gaps` list (FIL-R1-13). It is the single source of truth; pages
+are generated from it.
 
 | Field | Content |
 |---|---|
@@ -74,6 +75,16 @@ source of truth; pages are generated from it.
 | `discovery`, `discovery_note` | how the document was found (§5) |
 | `verified` | `<ISO date> <source fetched>` |
 | `notes` | optional caveats (dates taken from the copy, truncated captures) |
+
+`known_gaps` (each `{company_key, description, reason}`) lists filings
+known to exist -- named in another filing's exhibit index, an inventory
+entry already cited elsewhere in this reference, or this project's own
+discovery notes -- for which no copy could be found or read that is not
+`sec.gov` itself. It renders as a "Known gaps" section on `index.md`
+(grouped by company) so the shortfall is visible to a reader instead of
+living only in this design doc and the progress file (FIL-R1-13, raised
+after the round-1 independent review found the index silently missing
+most of the Cypress Minnesota-fab era, FIL-R1-01).
 
 Rules that follow from the common agent rules:
 
@@ -118,7 +129,7 @@ toctree from `docs/references/index.md`, and are generated.
 
 | Page | Label | Grouping |
 |---|---|---|
-| `index.md` | `filings-index` | Landing page: scope (§1), a short timeline of the lineage events with links to the defining filings (fab sale 2017, IPO 2021, Fab 25 2025, IonQ 2026), counts by company, type and year, how to read an entry, the EDGAR access note, links to the other views, and the canonical entry for every document in date order, each under a label `filing-<id>` |
+| `index.md` | `filings-index` | Landing page: scope (§1), a short timeline of the lineage events with links to the defining filings (fab sale 2017, IPO 2021, Fab 25 2025, IonQ 2026), counts by company, type and year, how to read an entry, the EDGAR access note, a "Known gaps" section listing `known_gaps` by company, links to the other views, and the canonical entry for every document in date order, each under a label `filing-<id>` |
 | `by-company.md` | `filings-by-company` | Cypress, SkyWater, Infineon first (the lineage), then acquirer, customers and partners; within a company, by date |
 | `by-year.md` | `filings-by-year` | Year of filing, newest first |
 | `by-type.md` | `filings-by-type` | Annual reports (with auditor), quarterly reports, current reports and exhibits, registration statements and prospectuses, proxy statements, announcements |
@@ -202,28 +213,36 @@ and the `-W` build.
 
 ## 7. Gaps and open questions
 
-* **Not retrievable without EDGAR** (no Wayback capture and no company
-  copy found): Cypress's 10-Q/A for Q1 2003 (inventory CYP-07, cited on
-  the overview and step 001), its 8-K and definitive merger proxy
-  (DEFM14A) for the Infineon merger (2019), its fiscal 2019 10-K (2020)
-  and 10-K/A, and its 15-12B (2020); SkyWater's confidential draft
-  registration statements (DRS, 2020) and the Process Technology License
-  Agreement exhibit itself (exhibit 10.6/10.7 of the S-1/A). These are
-  known from other filings' exhibit indexes or search results and can be
-  added when a public copy is found or a contact-free EDGAR route is
-  agreed.
+Filings known to exist but not retrievable from a non-`sec.gov` copy are
+recorded in the dataset's `known_gaps` list (§2) and rendered on
+`index.md`, so that shortfall is visible on the page itself rather than
+only here; see that section for the current list (Cypress's 10-Q/A for
+Q1 2003 (inventory CYP-07), its 2019 8-K and DEFM14A for the Infineon
+merger, its fiscal 2019 10-K and 10-K/A, its 15-12B, three Cypress
+annual-report years whose text could not be extracted or that say
+nothing about the Minnesota fab, and SkyWater's DRS/A No. 1 text and the
+Process Technology License Agreement exhibit itself). The Cypress
+Minnesota-fab era (fiscal 1991-2002, 2005, 2008-2014) that round-1
+independent review finding FIL-R1-01 found largely missing has since
+been filled from annualreports.com; see
+`docs/plans/progress-index-filings.md` for the fiscal-year-by-fiscal-year
+checklist.
+
+Other open items, not yet resolved:
+
 * **Accession numbers** are missing for records read only from
   investor-relations feeds (2026 SkyWater merger filings, D-Wave, IonQ);
   the feed filing id is recorded instead.
 * **Dates of annual reports to shareholders and German annual reports**
-  are the latest signature date printed in the copy, not a filing date.
-* **Not yet searched:** QuickLogic's and other partners' 10-Ks (named in
-  SkyWater press releases), equipment and materials suppliers naming
-  SkyWater as a customer, SkyWater's DEF 14A proxies for 2023–2026
-  (related-party Oxbow disclosures beyond 2022), SkyWater's 10-Q series,
-  Infineon's half-year reports and the German company register, Weebit
-  Nano's 2021 SkyWater agreement announcement and FY2022 annual report
-  (older than its website archive), and Cypress's 2019 merger
-  communications beyond the one captured DEFA14A.
+  are the latest signature date printed in the copy, not a filing date;
+  `by-year.md` says so in its introduction (FIL-R1-14).
+* **Not yet searched:** equipment and materials suppliers naming
+  SkyWater as a customer (the `supplier-names-skywater` tag has no
+  records yet), QuickLogic's and D-Wave's 10-Qs, further Weebit Nano
+  annual reports older than FY2023, Infineon's half-year/quarterly
+  statements and ad-hoc (Art. 17 MAR) announcements (the
+  `ad-hoc-announcement` document type has no records yet), the German
+  company register, and Cypress's 2019 merger communications beyond the
+  one captured DEFA14A.
 * Whether exhibits (purchase agreements, the line-operation amendments)
   should be separate records or folded into their parent filing.
