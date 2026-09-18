@@ -68,8 +68,9 @@ window is for.
   a new anti-reflective coating tightens CD control.[^baker-1996]
 * **Why the ARC must be opened before implanting.** The thickness of
   the ARC is not public, and this reference has no checked figure for
-  it. The channel-type implants that follow are at tens of keV
-  ({ref}`category-implant`); an unopened organic film in their path
+  it. The channel-type implants that follow are at tens to several
+  hundred keV on the published analogues
+  ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`); an unopened organic film in their path
   would absorb part of the dose, by an amount that depends on its
   thickness and the ions' {term}`projected range` in it (inference),
   and shift the profile of the
@@ -80,9 +81,10 @@ window is for.
   film; the window has to be clear down to the oxide.
 
 Without `TUNARCE` the tunnel window would be printed but not usable. Its
-cost is typically a few nanometres of resist loss[^nojiri-2015] and a
-plasma exposure of the (inferred) pad oxide, both of which the recipe
-must budget for.
+cost is resist loss of the order of the ARC thickness plus the
+over-etch, because the two films etch at similar rates (see
+*Selectivity* below), and a plasma exposure of the (inferred) pad
+oxide; both have to be budgeted in the resist thickness.
 
 ## How it is typically performed
 
