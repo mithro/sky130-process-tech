@@ -1311,10 +1311,14 @@ Status and expiry are estimates from public records and are not legal advice.
     Semiconductor), *Oxide-nitride-oxide stack having multiple
     oxynitride layers*, US 2009/0179253 A1, published 2009-07-16.
     <https://patents.google.com/patent/US20090179253A1/en>
+    Shown as in force; estimated expiry 2027-06-17 (estimate from public
+    records, not legal advice).
 [^pat-03]: W. Koutny et al. (Cypress Semiconductor), *Integration of
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.
     <https://patents.google.com/patent/US8093128B2/en>
+    Shown as in force; estimated expiry 2028-10-22 (estimate from public
+    records, not legal advice).
 [^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
@@ -1463,6 +1467,8 @@ Status and expiry are estimates from public records and are not legal advice.
 [^pat-04]: K. Ramkumar, I. Kouznetsov and V. Prabhakar (Cypress
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098 B1,
     granted 2014-08-05. <https://patents.google.com/patent/US8796098B1/en>
+    Shown as in force; estimated expiry 2034-02-26 (estimate from public
+    records, not legal advice).
 [^cyp-25]: K. Ramkumar, V. Prabhakar and R. Kapre (Cypress
     Semiconductor), *Scalable SONOS based embedded non-volatile memory
     technology*, Semiconductor Digest, 2020-02.

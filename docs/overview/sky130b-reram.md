@@ -817,11 +817,15 @@ Status and expiry are estimates from public records and are not legal advice.
     scheme for RRAM structure*, US 9,431,609 B2, filed 2014-08-14,
     granted 2016-08-30.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9431609>
+    Shown as in force; estimated expiry 2035-03-31 (estimate from public
+    records, not legal advice).
 [^pat-rram-etchstop-tsmc]: M. C. Liu, Y.-T. Tseng, C.-Y. Hsu, S.-C. Liu
     and C.-S. Tsai (Taiwan Semiconductor Manufacturing Co.), *RRAM cell
     structure with conductive etch-stop layer*, US 10,003,022 B2, filed
     2014-03-04, granted 2018-06-19.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10003022>
+    Shown as in force; estimated expiry 2035-03-04 (estimate from public
+    records, not legal advice).
 [^pat-rram-intermolecular]: M. Lee, T. Chiang and D. Pramanik
     (Intermolecular, Inc.), *Methods of manufacturing embedded bipolar
     switching resistive memory*, US 9,076,523 B2, filed 2012-12-13,

@@ -575,6 +575,8 @@ pitch (our arithmetic from Table 2), and product openings of the order of
     increased test pattern areas*, US 7,679,384 B2, filed 2007-06-08,
     granted 2010-03-16.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7679384>
+    Shown as in force; estimated expiry 2028-06-06 (estimate from public
+    records, not legal advice).
 [^pat-fuse-vanguard]: W.-T. Tzeng, Y.-F. Chen and K.-J. Wang (Vanguard
     International Semiconductor), *Process for controlling oxide
     thickness over a fusible link using transient etch stops*,

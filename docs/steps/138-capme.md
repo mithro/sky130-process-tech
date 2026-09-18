@@ -493,6 +493,8 @@ Status and expiry are estimates from public records and are not legal advice.
     metal-insulator-metal capacitors using selective etch of top
     electrodes*, US 8,110,414 B2, filed 2009-04-30, granted 2012-02-07.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8110414>
+    Shown as in force; estimated expiry 2030-01-02 (estimate from public
+    records, not legal advice).
 [^pat-mim-philips]: M. C. Olewine and K. F. Saiz (Koninklijke Philips
     Electronics), *Metal-insulator-metal (MIM) capacitor structure and
     methods of fabricating same*, US 6,717,193 B2, filed 2001-10-09,

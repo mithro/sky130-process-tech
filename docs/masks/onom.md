@@ -439,6 +439,8 @@ marked `areaid.ce`.
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.
     <https://patents.google.com/patent/US8093128B2/en>
+    Shown as in force; estimated expiry 2028-10-22 (estimate from public
+    records, not legal advice).
 [^cyp-26]: Wikipedia, *SONOS*. <https://en.wikipedia.org/wiki/SONOS>
 [^wiki-mask]: Wikipedia, *Photomask*.
     <https://en.wikipedia.org/wiki/Photomask>

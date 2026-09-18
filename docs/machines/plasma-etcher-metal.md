@@ -539,6 +539,8 @@ Status and expiry are estimates from public records and are not legal advice.
     capacitors using selective etch of top electrodes*, US 8,110,414 B2,
     filed 2009-04-30, granted 2012-02-07.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8110414>
+    Shown as in force; estimated expiry 2030-01-02 (estimate from public
+    records, not legal advice).
 [^wai-2017]: W. T. Wai and N. C. Ling, "Al-Cu interconnect corrosion
     prevention in post metal etch and wet polymer clean wafers: CFM:
     Contamination free manufacturing", *2017 28th Annual SEMI Advanced

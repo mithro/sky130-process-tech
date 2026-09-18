@@ -337,6 +337,8 @@ Status and expiry are estimates from public records and are not legal advice.
     (GlobalFoundries), *Segmented guard-ring and chip edge seals*,
     US 10,062,748 B1, filed 2017-02-27, granted 2018-08-28.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10062748>
+    Shown as in force; estimated expiry 2038-02-27 (estimate from public
+    records, not legal advice).
 [^pat-crackstop-ibm]: A. R. Mitwalsky and T.-C. Chen (Siemens
     Aktiengesellschaft / International Business Machines), *Crack stops*,
     US 5,789,302 A, filed 1997-03-24, granted 1998-08-04.

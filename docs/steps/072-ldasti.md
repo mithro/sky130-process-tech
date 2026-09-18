@@ -304,6 +304,8 @@ Status and expiry are estimates from public records and are not legal advice.
 [^pat-04]: K. Ramkumar, I. Kouznetsov and V. Prabhakar (Cypress
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098 B1,
     granted 2014-08-05. <https://patents.google.com/patent/US8796098B1/en>
+    Shown as in force; estimated expiry 2034-02-26 (estimate from public
+    records, not legal advice).
 [^pat-ldd-micron]: L. C. Tran, M. McQueen and R. Kerr (Micron
     Technology), *Double LDD devices for improved DRAM refresh*, US
     6,759,288 B2, granted 2004-07-06.

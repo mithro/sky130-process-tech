@@ -565,6 +565,8 @@ Status and expiry are estimates from public records and are not legal advice.
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098
     B1, granted 2014-08-05.
     <https://patents.google.com/patent/US8796098B1/en>
+    Shown as in force; estimated expiry 2034-02-26 (estimate from public
+    records, not legal advice).
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>

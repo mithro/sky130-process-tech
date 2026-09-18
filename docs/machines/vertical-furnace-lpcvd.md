@@ -442,6 +442,8 @@ Status and expiry are estimates from public records and are not legal advice.
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.
     <https://patents.google.com/patent/US8093128B2/en>
+    Shown as in force; estimated expiry 2028-10-22 (estimate from public
+    records, not legal advice).
 [^becker-1987]: F. S. Becker, D. Pawlik, H. Anzinger and A. Spitzer,
     "Low-pressure deposition of high-quality SiO₂ films by pyrolysis of
     tetraethylorthosilicate", *Journal of Vacuum Science & Technology B*

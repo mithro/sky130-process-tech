@@ -255,6 +255,8 @@ Status and expiry are estimates from public records and are not legal advice.
     Semiconductor), *Oxide-nitride-oxide stack having multiple
     oxynitride layers*, US 2009/0179253 A1, published 2009-07-16.
     <https://patents.google.com/patent/US20090179253A1/en>
+    Shown as in force; estimated expiry 2027-06-17 (estimate from public
+    records, not legal advice).
 [^pat-sti-amberwave]: M. T. Currie and A. J. Lochtefeld (AmberWave
     Systems Corporation; assigned to Taiwan Semiconductor Manufacturing
     Co. on 2010-01-26), *Shallow trench isolation process*,

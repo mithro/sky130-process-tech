@@ -280,6 +280,8 @@ Status and expiry are estimates from public records and are not legal advice.
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.
     <https://patents.google.com/patent/US8093128B2/en>
+    Shown as in force; estimated expiry 2028-10-22 (estimate from public
+    records, not legal advice).
 [^wiki-rtp]: Wikipedia, *Rapid thermal processing*.
     <https://en.wikipedia.org/wiki/Rapid_thermal_processing>
 [^pat-well-hynix]: J.-H. Lee and J.-H. Son (Hyundai/Hynix), *Method of

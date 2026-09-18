@@ -291,6 +291,8 @@ Status and expiry are estimates from public records and are not legal advice.
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098
     B1, granted 2014-08-05.
     <https://patents.google.com/patent/US8796098B1/en>
+    Shown as in force; estimated expiry 2034-02-26 (estimate from public
+    records, not legal advice).
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^wiki-sce]: Wikipedia, *Short-channel effect*.
@@ -339,6 +341,8 @@ Status and expiry are estimates from public records and are not legal advice.
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.
     <https://patents.google.com/patent/US8093128B2/en>
+    Shown as in force; estimated expiry 2028-10-22 (estimate from public
+    records, not legal advice).
 [^axcelis-8250]: Semiconductor Online, *8250HT Medium Current Ion
     Implanter* (Eaton Semiconductor Equipment Operations product
     description).

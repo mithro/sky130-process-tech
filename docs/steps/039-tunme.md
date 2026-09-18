@@ -290,6 +290,8 @@ Status and expiry are estimates from public records and are not legal advice.
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098
     B1, granted 2014-08-05.
     <https://patents.google.com/patent/US8796098B1/en>
+    Shown as in force; estimated expiry 2034-02-26 (estimate from public
+    records, not legal advice).
 [^pat-01]: K. Ramkumar, M. Rathor, B. Parameshwaran and L. Lancaster
     (Cypress Semiconductor), *Method of manufacturing an
     oxide-nitride-oxide (ONO) dielectric for SONOS-type devices*,
@@ -299,6 +301,8 @@ Status and expiry are estimates from public records and are not legal advice.
     Semiconductor), *Oxide-nitride-oxide stack having multiple
     oxynitride layers*, US 2009/0179253 A1, published 2009-07-16.
     <https://patents.google.com/patent/US20090179253A1/en>
+    Shown as in force; estimated expiry 2027-06-17 (estimate from public
+    records, not legal advice).
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
     documentation, and the `nfet_01v8` cross-section drawing.
     <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,
@@ -307,6 +311,8 @@ Status and expiry are estimates from public records and are not legal advice.
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.
     <https://patents.google.com/patent/US8093128B2/en>
+    Shown as in force; estimated expiry 2028-10-22 (estimate from public
+    records, not legal advice).
 [^cerofolini-1998]: G. F. Cerofolini, "A study of the ionic route for
     hydrogen terminations resulting after SiO₂ etching by concentrated
     aqueous solutions of HF", *Applied Surface Science* **133**(1–2),

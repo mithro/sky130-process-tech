@@ -642,6 +642,8 @@ Status and expiry are estimates from public records and are not legal advice.
     capacitors using selective etch of top electrodes*, US 8,110,414 B2,
     filed 2009-04-30, granted 2012-02-07.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8110414>
+    Shown as in force; estimated expiry 2030-01-02 (estimate from public
+    records, not legal advice).
 [^donnelly-2013]: V. M. Donnelly and A. Kornblit, "Plasma etching:
     Yesterday, today, and tomorrow", *Journal of Vacuum Science &
     Technology A* **31**(5), 050825 (2013).

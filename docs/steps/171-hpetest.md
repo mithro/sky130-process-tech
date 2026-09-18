@@ -512,6 +512,8 @@ Status and expiry are estimates from public records and are not legal advice.
     increased test pattern areas*, US 7,679,384 B2, filed 2007-06-08,
     granted 2010-03-16.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7679384>
+    Shown as in force; estimated expiry 2028-06-06 (estimate from public
+    records, not legal advice).
 [^hunter-2012]: S. Hunter, J. L. Clark, D. Hornberger and L. Rubio, "Use
     of Wire Bonding to Study Bond Pad Damage from Wafer Probe",
     *International Symposium on Microelectronics* **2012**(1), 384–395
