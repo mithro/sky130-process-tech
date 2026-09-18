@@ -12,7 +12,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 090-M1 | Medium (job-01) | left alone | Site-wide sweep item per coordinator instructions; not touched. |
 | 100-M1 | Medium (job-01) | left alone | Same as 090-M1. |
 | 106-M1 | Medium (job-01) | left alone | Same as 090-M1. |
-| 089-M1 | Medium | open | |
+| 089-M1 | Medium | fixed | Confirmed pdk-assumptions.txt: oxide spacer (SpThickn) = 0.05 um, poly 0.18 um + cap 0.2 um = 0.38 um capped gate. 0.38 minus two 0.05 um spacers leaves ~0.28 um narrowed gap against 0.21 um poly.2 pitch -- narrowed aspect ratio is well above 2:1, not "approaches 2:1". Reworded per review's required fix. |
 | 092-M1 | Medium | open | |
 | 092-M2 | Medium | open | |
 | 093-M1 | Medium | open | |
@@ -21,7 +21,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 096-M1 | Medium | open | |
 | 103-M1 | Medium | open | |
 | 105-M1 | Medium | open | |
-| 089-L1 | Low | open | |
+| 089-L1 | Low | fixed | Confirmed skw-facilities.txt:109 sub-bullet "high aspect (5:1) fill capability" under the HDP entry (105-nild2.md already quotes it). Added the same quotation to 089. |
 | 090-L1 | Low | open | |
 | 090-L2 | Low | open | duplicate of 091-L1 (repo-wide pdk-08 parenthetical); tracked there |
 | 091-L1 | Low | open | |
