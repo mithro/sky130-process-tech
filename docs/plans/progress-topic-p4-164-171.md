@@ -32,12 +32,12 @@ left untouched.
 | 164-L2 | Low | fixed | Zeevo quote drops HDP-doping-difficulty reason (164:84-87) |
 | 164-L3 | Low | fixed | "compliant layer under a stiff film" unsourced (164:74-76) |
 | 164-L4 | Low | fixed | R7FT-3R is 0.18 um tech, not flagged in machines-inference section (164:150-153) |
-| 165-M1 | Medium | open | TSMC patent has three IMD layers not "three or four" (165:136-139) |
-| 165-M2 | Medium | open | "5.3711 um above the substrate" contradicts overview's datum note (165:77-78; also fix 166:31-32) |
-| 165-L1 | Low | open | nsm.3a is enclosure not spacing rule, paraphrase conflates with nsm.3b (165:33-35) |
-| 165-L2 | Low | open | two different areaid.sl layers (81:1 vs 81:7) not distinguished (165:37-39,263,267-269) |
-| 165-L3 | Low | open | seal-ring cell reading omits areaid.cr/areaid.cd stress-DRC layers (165:43-46) |
-| 165-L4 | Low | open | GF "one mask" sentence is about nitride/polyimide film, word dropped (165:100-102) |
+| 165-M1 | Medium | fixed | TSMC patent has three IMD layers not "three or four" (165:136-139) |
+| 165-M2 | Medium | fixed | "5.3711 um above the substrate" contradicts overview's datum note (165:77-78; also fix 166:31-32) |
+| 165-L1 | Low | fixed | nsm.3a is enclosure not spacing rule, paraphrase conflates with nsm.3b (165:33-35) |
+| 165-L2 | Low | fixed | two different areaid.sl layers (81:1 vs 81:7) not distinguished (165:37-39,263,267-269) |
+| 165-L3 | Low | fixed | seal-ring cell reading omits areaid.cr/areaid.cd stress-DRC layers (165:43-46) |
+| 165-L4 | Low | fixed | GF "one mask" sentence is about nitride/polyimide film, word dropped (165:100-102) |
 | 166-M1 | Medium | open | LINIT/LINT name split never bridged (166:29-30,47-48,179; also 167:48) |
 | 166-L1 | Low | open | Kastenmeier 1996 is downstream/remote etch, cited for biased breakthrough step (166:119-121,218-219; also 169:100-102) |
 | 166-L2 | Low | open | Wodecki cited for inference his paper argues against (166:124-127,220) |
