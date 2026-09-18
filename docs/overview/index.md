@@ -471,9 +471,11 @@ to {ref}`WCMP2 <step-111>`); the metal stack is sputtered, printed and
 etched ({ref}`TIAL6 <step-112>` to {ref}`MM1E <step-114>`); and the
 {term}`inter-metal dielectric` is deposited, polished and capped
 ({ref}`NILD3 <step-115>` to {ref}`NCAPOX3 <step-117>`). Cypress reports
-for the S8 technology at the same fab describe a Ti/Al–Cu/TiW stack and
-its later change "from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN";[^cyp-qtp-113005][^cyp-qtp-123907]
-the PDK's 0.36 µm matches the first (inference, {ref}`TIAL6 <step-112>`).
+for the S8 technologies at the same fab describe a Ti/Al–Cu/TiW stack
+and its later change "from Ti/AlCu/TiW to
+Ti/TiN/AlCu/Ti/TiN";[^cyp-qtp-113005][^cyp-qtp-123907] which of the two
+SKY130 carries at any level is not public, and the evidence is set out
+under {ref}`overview-metal-cap`.
 
 **Via 1, metal 2 and via 2.** Via 1 and via 2 each take the five steps
 of mask, etch, TiN liner, tungsten fill and tungsten polish
@@ -520,6 +522,220 @@ passivation nitride is deposited ({ref}`NTSD <step-167>`), the pads are
 opened ({ref}`PDM <step-168>`, {ref}`PDME <step-169>`), the wafer
 receives a final {term}`alloy anneal` ({ref}`ALLY <step-170>`) and the
 {term}`e-test` structures are measured ({ref}`HPETEST <step-171>`).
+
+(overview-metal-cap)=
+## The metal cap and barrier question
+
+Every aluminium level of this flow is described on its step page as a
+sandwich: a thin refractory film under the aluminium–copper alloy, and a
+thin refractory film over it. The under-layer is a diffusion barrier and
+a wetting layer over the plug and via floors; the over-layer, the
+{term}`cap <anti-reflective cap>`, is the {term}`ARC` for the metal
+lithography, the {term}`hillock` suppressor, and — at every level but
+the top — the film that the via etch above it lands on. Which refractory
+films these are is not public for SKY130, and two different answers are
+on the public record for the fab that runs it. This section sets both
+out; the pages that depend on the choice link here rather than repeating
+the argument.
+
+### The two stacks
+
+**The TiW stack.** A January 2013 Cypress qualification plan for a 64 K
+serial nvSRAM family describes the technology as "S8TNV-5R", the fab as
+"Cypress Semiconductor -- Bloomington, MN", the wafer process as
+"Fab4 / S8TNV-5" and the design rule as "S8TNV-5R/0.13m", and gives
+"Metal 1: 100A Ti / 3200A Al -0.5%Cu / 300A TiW", the same for metal 2,
+and "Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW".[^cyp-qtp-113005]
+Two older reports for the same fab show the sandwich's lineage: a 0.18 µm
+derivative with "Metal 1: 150Å Ti / 4,200Å Al / 300Å TiW" and
+"Metal 3: 150Å Ti / 8,000Å Al / 300Å TiW",[^cyp-qtp-014807] and a 0.42 µm
+process with "TiW, AlCu, TiW / 500A, 6000A, 300A".[^cyp-qtp-030204]
+
+**The TiN stack.** A March 2014 Cypress report records three
+qualifications at the same fab, all of them changes away from that
+sandwich:[^cyp-qtp-123907]
+
+> 123907 Qualification of S8DI Technology Metal Stack Change from
+> Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN in CMI Fab 4 — June 2013
+>
+> 132302 Qualification of S8TNV Technology Metal Stack Change from
+> Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN in CMI Fab 4 — July 2013
+>
+> 132301 Qualification of S8P Metal Stack Change from Ti/AlCu/TiW to
+> Ti/TiN/ALCu/Ti/TiN, excluding top metal layers — Feb 2014
+
+The report's only process description is the S8DI one ("Die Fab Line
+ID/Wafer Process ID: S8DIN-5R", "1P3M, 0.15 um"), and it gives
+"Metal 1: 150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN", the same
+for metal 2, and "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A
+TiW".[^cyp-qtp-123907] The customer notification that carries the report
+puts the change in plain words: it "aligns our internal Cypress
+Minnesota process, Titanium Tungsten (TiW) based metal stack, with the
+industry-wide Best Known Method Titanium Nitride (TiN) based metal
+stack", for the "130nm SONOS Product Families", effective from its date
+of 2014-03-13, and says the integration "is tuned to ensure that there
+are no electrical changes".[^cyp-pin145273]
+
+Three things follow from the reports themselves.
+
+* The 2013 report describes **S8TNV-5R**, a three-metal 0.13 µm sibling
+  of S8P, and not S8P — and that technology's own stack was qualified
+  away from TiW in July 2013, six months after the report was
+  issued.[^cyp-qtp-113005][^cyp-qtp-123907] It is a description of the
+  fab's metallisation as it stood before the change, not of SKY130's.
+* The only line in the public record that speaks about **S8P** — the
+  family this reference reads SKY130 as, since the PDK's *Background*
+  page lists "5 levels of metal (p - penta)" and its via-3 rules are
+  headed "Via3 connects met3 to met4 in the
+  SKY130Q\*/SKY130P\*/SP8Q/SP8P\* flow"[^pdk-02][^pdk-periph] — says
+  that its metal stack changed in February 2014, six years before the
+  first SKY130 MPW wafers, with an exclusion for "top metal
+  layers".[^cyp-qtp-123907]
+* The one worked example of that exclusion, in the same document, is
+  S8DI's metal 3: the two thin levels take the five-film TiN stack while
+  the 2.125 µm top level keeps TiW **both** under and over the
+  aluminium.[^cyp-qtp-123907] Note also that the aluminium is 3 200 Å in
+  both S8DI stacks, so the change moves the film total from 3 600 Å to
+  4 190 Å without moving the conductor thickness (our arithmetic) —
+  which is what "no electrical changes"[^cyp-pin145273] would require.
+
+### Which levels are "top metal layers"
+
+Nothing public says. "Layers" is plural, and two readings survive:
+
+* it is plural because the sentence covers several S8P sub-flows — the
+  PDK's assumptions table gives both a 1.2 µm and a 2 µm metal 5 for
+  S8P\*/SP8P\*[^pdk-03] — each with one top level, in which case only
+  metal 5 kept TiW and metals 1 to 4 moved to the TiN stack; or
+* it is plural because more than one level of a five-metal flow is
+  excluded, in which case the thick upper levels kept TiW as S8DI's did.
+
+On this reference's reading of SKY130 as a five-metal S8P flow, metal 3
+and metal 4 are **not** top metal layers: a via connects each of them to
+a metal level above.[^pdk-periph]
+
+### What the PDK's own numbers do and do not settle
+
+The PDK never names a metal film. Its *Background*, *Criteria &
+Assumptions*, *Masks*, *Layers Reference*, *Device Details*, *Parasitic
+Layout Extraction*, periphery and high-voltage documents, its
+`gds_layers.csv` and `masks.csv` and its process stack diagram carry no
+occurrence of titanium, tungsten, nitride, aluminium, "barrier", "ARC"
+or "anti-reflective" in any metal-stack
+context.[^pdk-02][^pdk-03][^pdk-05][^pdk-06][^pdk-07][^pdk-08][^pdk-periph][^pdk-hv][^pdk-04]
+What it publishes are thicknesses, and two of them are suggestive.
+
+* **The totals.** The stack diagram labels `metal1` and `metal2`
+  0.36 µm.[^pdk-04] The 2013 Ti/Al–Cu/TiW recipe sums to exactly
+  3 600 Å; the 2014 Ti/TiN/AlCu/Ti/TiN recipe sums to 4 190 Å (our
+  arithmetic).[^cyp-qtp-113005][^cyp-qtp-123907] Likewise `metal3` and
+  `metal4` are 0.845 µm,[^pdk-04] which is exactly the 8 450 Å of the
+  0.18 µm Fab 4 derivative's "150Å Ti / 8,000Å Al / 300Å TiW" metal
+  3.[^cyp-qtp-014807]
+* **The differences.** The assumptions table's "thickness for antenna
+  ratio calculation" is 0.8 µm for metal 3 and for metal 4 in the
+  S8P\*/SP8P\* flows,[^pdk-03] against the diagram's 0.845 µm — a
+  difference of 450 Å, exactly the 150 Å of titanium plus 300 Å of TiW
+  that clad those Cypress stacks.[^cyp-qtp-014807] The 2014 stack's
+  cladding is 150 + 250 + 90 + 500 = 990 Å, more than twice as much, and
+  cannot be reconciled with a 450 Å difference at any aluminium
+  thickness (our arithmetic).[^cyp-qtp-123907]
+
+Both are inferences, and both carry counter-checks that this reference
+records rather than suppresses. The obvious objection to the second —
+that 0.8 is only 0.845 rounded — is answerable from the same table, which
+writes "Metal 3 thickness for antenna ratio calculations (S8T\* other
+than S8TM\*)" as 0.85 and is therefore capable of two decimals.[^pdk-03]
+Against that, the same table's "Metal 1 thickness for antenna ratio
+calculations (S8D\*)" of 0.35 µm, set against a 0.36 µm metal 1, leaves
+only 100 Å, which fits no titanium-plus-cap cladding; so "antenna
+thickness = the aluminium alone" is not a uniform rule, and that entry is
+flagged for S8D\* flows rather than S8P\*.[^pdk-03][^pdk-04] Metal 5's
+1.26 µm against a 1.2 µm antenna thickness leaves 600 Å, which matches
+neither published cladding — S8DI's top metal is clad 500 + 300 =
+800 Å (our arithmetic).[^pdk-03][^pdk-04][^cyp-qtp-123907]
+
+What the PDK's electrical numbers do **not** do is discriminate. The
+published sheet resistances — 125 mΩ/sq at metals 1 and 2, 47 mΩ/sq at
+metals 3 and 4 and 29 mΩ/sq at metal 5[^pdk-08] — are set by the
+aluminium, which is 3 200 Å in both the 2013 and the 2014
+stack;[^cyp-qtp-113005][^cyp-qtp-123907] 750–990 Å of titanium and
+titanium nitride conducting in parallel with 0.125 Ω/sq shifts the sheet
+resistance by well under one per cent (our arithmetic). Neither does
+SkyWater's capability list discriminate: its {term}`PVD` films include
+"Aluminum both pure and Cu doped", "TiW", "ESC TiN", "Imp TiN" and
+"Collimated Ti", and both metal etchers are qualified for "Al, TiW,
+TiN",[^skw-01] so the fab as publicly described can build and etch either
+stack. The one public SKY130 talk that names titanium nitride names it as
+the {term}`local interconnect`, not as a metal cap.[^ann-16]
+
+(overview-metal-cap-reading)=
+### The reading used in this reference
+
+| Level | What the step pages describe | Basis and confidence |
+|---|---|---|
+| Metal 1, metal 2 | Both stacks; the recipes are written for the TiW one | Genuinely undecided. The 2014 change is positive evidence about the fab's own 130 nm stack and no published exclusion covers the thin levels; against that, the diagram's 0.36 µm matches the TiW sum exactly and not the TiN sum. **Low confidence either way** |
+| Metal 3, metal 4 | Both stacks; the recipes are written for the TiW one | Undecided. The 450 Å difference favours a two-film cladding, with the counter-checks above; but metals 3 and 4 are not top metal on this reference's reading, so the February 2014 exclusion need not reach them. **Low confidence** |
+| Metal 5 | A TiW-capped stack | On the reading that SKY130's metal 5 is a "top metal layer", the February 2014 change did not touch it, and the worked example in the same report keeps TiW above and below a thick top metal.[^cyp-qtp-123907] **Moderate confidence** |
+
+Where a statement is true of either stack — that the cap is a refractory
+film, that it is an anti-reflective surface, that the via etch must land
+on it without punching through, that the metal etch has to break through
+it before reaching the aluminium — the step pages say so without naming a
+film. Where the choice changes the answer, both cases are given. These
+are the places where it changes the answer.
+
+* **What the capacitor-plate etch can stop on.** The MiM top plate sits
+  on a thin dielectric on the unpatterned metal below. If that metal's
+  cap is the same refractory film as the plate, an etch that cleared the
+  dielectric would have no selective layer left to stop on; if the cap
+  and the plate are different films, a through-etch has a stop — which is
+  what the Philips process does, where "the etch is controlled to stop in
+  the TiN ARC film that coats the M5 layer and forms the bottom
+  electrode"[^pat-mim-philips] ({ref}`CAPME <step-138>`,
+  {ref}`CAP2ME <step-153>`).
+* **The via landing layer.** Vias 1 to 4 land on the cap of the metal
+  below. Both films etch in fluorine to volatile fluorides, so a
+  fluorine-rich over-etch thins either; but a TiN floor is the ordinary
+  case of the via-etch literature and of the contemporaneous patents,
+  which measure oxide-to-stop selectivities against TiN — 28.4:1 for an
+  Ar/CF₄/CHF₃ etch in Texas Instruments' etch-stop patent — while nothing
+  public gives the corresponding figure for TiW,[^pat-etchstop-ti]
+  whereas a TiW floor is the less common one ({ref}`VIME <step-119>`,
+  {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`,
+  {ref}`VIM4E <step-160>`).
+* **The metal-etch breakthrough.** A chlorine-based aluminium etch must
+  first open the cap. Liu and Kuo etched TiW in CF₄/O₂, CF₄/Cl₂ and
+  CF₄/HCl and report that "Both F and Cl are effective etchants for the
+  titanium tungsten film";[^liu-2007-tiw] Min et al. characterise TiN
+  removal in a Cl₂/Ar plasma.[^min-2008] Either cap can therefore be
+  opened on the same etcher, but a TiW cap is usually opened with a
+  fluorine step and a TiN cap can be cleared in the chlorine chemistry
+  that follows it ({ref}`MM1E <step-114>`, {ref}`MM3E <step-140>`,
+  {ref}`MM5E <step-163>`).
+* **Anti-reflective behaviour.** Both films are used as ARCs on
+  aluminium at 365 nm and at 248 nm and neither is as good as an organic
+  {term}`BARC`; their optical constants differ, so the resist thickness
+  at the swing-curve minimum differs ({ref}`MM1 <step-113>`,
+  {ref}`MM4 <step-154>`).
+* **Which targets and gases the fab needs.** A TiW cap needs a Ti:W
+  target and a fluorine-bearing breakthrough; a Ti/TiN stack needs a
+  titanium target and nitrogen for reactive sputtering. SkyWater lists
+  both kinds of film,[^skw-01] so its public capability list settles
+  nothing ({ref}`sputter targets <material-sputter-targets>`,
+  {ref}`etch gases <material-etch-gases>`).
+* **Thickness arithmetic.** Any sum that uses "300 Å of TiW" as the cap
+  — a via over-etch budget, a breakthrough time, a pad-etch depth — is a
+  sum over the 2013 stack, not over the 2014 one, whose cap is 500 Å of
+  TiN over 90 Å of titanium.[^cyp-qtp-123907]
+
+### What would settle it
+
+A public SKY130 or S8P process description that names the metal films; a
+SkyWater or Cypress document that says which levels of a five-metal S8P
+flow the February 2014 exclusion covers; a published cross-section or
+materials analysis of a SKY130 die; or a PDK release that adds film
+materials to the process stack diagram. None of these is public.
 
 (overview-cross-section)=
 ## A simplified cross-section
@@ -747,12 +963,16 @@ public.
   {ref}`ALLY1 <step-096>`). That the only silicide is at the contact
   bottoms is itself an inference from the PDK's sheet
   resistances ({ref}`CSIL <step-098>`).
-* **Metal-stack composition.** Cypress reports for S8 at the same fab
-  describe a Ti/Al–Cu/TiW stack and a change "from Ti/AlCu/TiW to
-  Ti/TiN/AlCu/Ti/TiN" qualified in 2013–2014, for S8P "excluding top
-  metal layers";[^cyp-qtp-113005][^cyp-qtp-123907] which
-  stack SKY130 lots receive is not public, and no public source gives
-  the films of metal 4 or metal 5 ({ref}`TIAL6 <step-112>`,
+* **Metal cap and barrier composition.** Cypress reports for the S8
+  technologies at the same fab describe a Ti/Al–Cu/TiW stack and a
+  change "from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN" qualified in
+  2013–2014, for S8P "excluding top metal
+  layers";[^cyp-qtp-113005][^cyp-qtp-123907] which stack SKY130 lots
+  receive at any level is not public, nor is it public which levels of a
+  five-metal S8P flow the exclusion covers. The whole of the evidence,
+  the reading taken at each level and the statements that depend on it
+  are set out under {ref}`overview-metal-cap`
+  ({ref}`TIAL6 <step-112>`, {ref}`WTIAL3 <step-134>`,
   {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>`).
 * **Metal-3 and metal-4 thickness.** The stack diagram labels both
   0.845 µm;[^pdk-04] the antenna table gives 0.8 µm for the S8P flows and
@@ -1102,6 +1322,33 @@ public.
     Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM*, June 2005
     (copy hosted by Infineon Technologies).
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
+[^cyp-pin145273]: Cypress Semiconductor, *Product Information
+    Notification PIN145273: Improvement of Cypress Minnesota
+    Back-End-of-Line Integration for 130nm SONOS Product Families*,
+    document 001-11741 Rev. *H, 2014-03-13 (copy hosted by Tokyo
+    Electron Device). <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>
+[^cyp-qtp-030204]: Cypress Semiconductor, *Automotive Product
+    Qualification Report, QTP# 030204: 256K Static RAM Automotive
+    Devices, RAM42HA Technology, Fab 4*, document 001-88023 Rev. **,
+    June 2013 (copy hosted by Infineon Technologies).
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>
+[^pat-mim-philips]: M. C. Olewine and K. F. Saiz (Koninklijke Philips
+    Electronics), *Metal-insulator-metal (MIM) capacitor structure and
+    methods of fabricating same*, US 6,717,193 B2, filed 2001-10-09,
+    granted 2004-04-06.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6717193>
+[^pat-etchstop-ti]: G. Xing, G. A. Cerny and M. R. Visokay (Texas
+    Instruments), *Etchstop for integrated circuits*, US 6,090,697 A,
+    filed 1998-06-26, granted 2000-07-18.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6090697>
+[^liu-2007-tiw]: G. Liu and Y. Kuo, "Reactive Ion Etching of Titanium
+    Tungsten Thin Films", *Journal of The Electrochemical Society*
+    **154**(7), H653 (2007). <https://doi.org/10.1149/1.2737631>
+[^min-2008]: S. R. Min, H. N. Cho, Y. L. Li, S. K. Lim, S. P. Choi and
+    C. W. Chung, "Inductively coupled plasma reactive ion etching of
+    titanium nitride thin films in a Cl₂/Ar plasma", *Journal of
+    Industrial and Engineering Chemistry* **14**(3), 297–302 (2008).
+    <https://doi.org/10.1016/j.jiec.2008.01.001>
 [^cyp-26]: Wikipedia, *SONOS*. <https://en.wikipedia.org/wiki/SONOS>
 [^wiki-sti]: Wikipedia, *Shallow trench isolation*.
     <https://en.wikipedia.org/wiki/Shallow_trench_isolation>
