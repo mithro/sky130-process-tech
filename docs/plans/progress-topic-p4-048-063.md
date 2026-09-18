@@ -33,9 +33,9 @@ before being fixed or declined.
 | 050-L1 | Low | fixed | [^axcelis-8250] (no dose spec) dropped from the 1e14 sentence as part of the 050-M1 rewrite; it remains correctly used in Cross-check for the medium-current tool class. |
 | 050-L2 | Low | fixed | Confirmed via OpenAlex: Kamins 1972 says poly diffusion is "more rapid" with lower activation energy, no order-of-magnitude figure. Reworded. |
 | 050-L3 | Low | fixed | Added the NGNIT e-test cross-reference to 050, pointing at 058's npc-mask reading. |
-| 051-L1 | Low | open | |
-| 051-L2 | Low | open | |
-| 051-L3 | Low | open | shared with 057-L3 |
+| 051-L1 | Low | fixed | Confirmed via OpenAlex: Kern 1990 gives no oxide thickness. Reworded as a typical-industry figure. |
+| 051-L2 | Low | fixed | Added the missing citation/typical-value label for the SPM temperature. |
+| 051-L3 | Low | fixed | Confirmed via OpenAlex: Fujimura 1989's two-step process is H2-RIE-plus-downstream, a different sequence from the cold-then-hot O2 one this page describes (from pat-strip-mosel). Fixed the Deep dive annotation. Shared with 057-L3. |
 | 052-L1 | Low | open | |
 | 053-L1 | Low | open | shared with 056-L2 |
 | 053-L2 | Low | open | |
@@ -49,7 +49,7 @@ before being fixed or declined.
 | 056-L3 | Low | open | |
 | 057-L1 | Low | open | |
 | 057-L2 | Low | fixed | = 051-M1 |
-| 057-L3 | Low | open | = 051-L3 |
+| 057-L3 | Low | fixed | = 051-L3; also removed fujimura-1989 from the in-text "two-step sequence" sentence, keeping only pat-strip-mosel (the actual source of that sequence). |
 | 058-L1 | Low | fixed | Added the PDK's NGNIT e-test corroboration and the Tsang et al. nitride-cap corroboration (with correct mechanism) to What this step is / Resistor protection. |
 | 059-L1 | Low | open | |
 | 059-L2 | Low | open | |
