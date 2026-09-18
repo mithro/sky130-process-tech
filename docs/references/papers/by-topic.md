@@ -163,6 +163,7 @@ Digital logic, processors and accelerators designed for or fabricated on the pro
 * {ref}`paper-karatas-2025a` — Onur Karataş et al., ICEEE 2025
 * {ref}`paper-tarabata-2025a` — Byron Tarabata et al., SBCCI 2025
 * {ref}`paper-price-2025a` — Ryan M. Price et al., IEEE SENSORS 2025
+* {ref}`paper-dubey-2026a` — Anuj Dubey et al., IEEE Design & Test 2026
 * {ref}`paper-maldonado-2026a` — Diana N. Maldonado R. et al., LASCAS 2026
 * {ref}`paper-hossain-2026a` — Md. Sajjad Hossain et al., arXiv 2026 (free copy)
 
@@ -199,6 +200,7 @@ Hardware security and cryptographic circuits.
 
 * {ref}`paper-singhani-2023a` — Anish Singhani, ISCAS 2023
 * {ref}`paper-karatas-2025a` — Onur Karataş et al., ICEEE 2025
+* {ref}`paper-dubey-2026a` — Anuj Dubey et al., IEEE Design & Test 2026
 
 ## Ecosystem and lineage
 

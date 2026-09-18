@@ -1946,6 +1946,45 @@
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/sensors59705.2025.11330220 resolved; title matches
     Crossref and OpenAlex
+- id: doi:10.1109/mdat.2026.3670063
+  label: paper-dubey-2026a
+  title: ASIC Tape-Out of the First Side-Channel-Protected Neural Network Design
+  title_display: ASIC Tape-Out of the First Side-Channel-Protected Neural Network Design
+  authors:
+  - Anuj Dubey
+  - Aydin Aysu
+  - Rosario Cammarota
+  year: 2026
+  venue: IEEE Design & Test
+  venue_series: IEEE Design & Test
+  venue_type: magazine
+  volume: '43'
+  issue: '3'
+  pages: 14-22
+  article_number: null
+  doi: 10.1109/mdat.2026.3670063
+  landing_url: https://ieeexplore.ieee.org/document/11419083/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - security
+  - digital
+  basis: named-process
+  institutions:
+  - North Carolina State University
+  - University of California, Irvine
+  fabrication:
+    quote: We fabricated the ASIC using the SkyWater 130nm technology node and a fully open-source design
+      flow.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex title_and_abstract.search for "Efabless"
+  notes: null
+  verified: 2026-09-19 Crossref REST API works/10.1109/mdat.2026.3670063 resolved; title, authors, year,
+    volume, issue and pages match Crossref and OpenAlex
 - id: doi:10.1109/jxcdc.2026.3670667
   label: paper-didin-2026a
   title: Characterization and Modeling of Multilevel Analog ReRAM Synapses in the Sky130 Process

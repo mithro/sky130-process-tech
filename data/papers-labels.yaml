@@ -50,6 +50,10 @@
   id: doi:10.1109/jxcdc.2026.3670667
   previous_ids: []
   published: '2026-09-14'
+- label: paper-dubey-2026a
+  id: doi:10.1109/mdat.2026.3670063
+  previous_ids: []
+  published: '2026-09-19'
 - label: paper-edwards-2020a
   id: web:woset-2020-a03
   previous_ids: []

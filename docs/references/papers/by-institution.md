@@ -71,6 +71,7 @@ table.
 | National Central University | {ref}`paper-hsieh-2021a`, {ref}`paper-le-2021a` |
 | New Mexico State University | {ref}`paper-hossain-2026a` |
 | New York University | {ref}`paper-blocklove-2024a` |
+| North Carolina State University | {ref}`paper-dubey-2026a` |
 | Oklahoma State University | {ref}`paper-hossain-2026a` |
 | Onto Innovation | {ref}`paper-gross-2021a` |
 | Open Circuit Design | {ref}`paper-edwards-2020a` |
@@ -91,6 +92,7 @@ table.
 | University College Cork | {ref}`paper-montanares-2025a` |
 | University of Alabama | {ref}`paper-hossain-2026a` |
 | University of California, Berkeley | {ref}`paper-li-2025a` |
+| University of California, Irvine | {ref}`paper-dubey-2026a` |
 | University of California, Santa Cruz | {ref}`paper-cirimelli-low-2023a` |
 | University of Hawaiʻi at Mānoa | {ref}`paper-li-2025a` |
 | University of Maryland, College Park | {ref}`paper-chen-2024a`, {ref}`paper-didin-2026a`, {ref}`paper-bloomer-2026a` |

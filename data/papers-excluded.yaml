@@ -178,10 +178,11 @@
   title: 'An Open-Source Nanoelectronic Analog Front-End in 130 nm CMOS: Design, Fabrication and Characterization
     of a Low-Noise Inverter-Based Neural-Interface Amplifier'
   year: 2025
-  status: held
-  reason: The abstract reports a measured mid-band gain but also describes post-layout verification of
-    a "fabricated-ready layout"; held until the full text confirms silicon.
-  decided: '2026-09-14'
+  status: excluded
+  reason: Re-read 2026-09-19 (same OpenAlex abstract as round 1, IEEE Xplore still paywalled with no
+    free copy) — the "measured" gain, noise and power figures are from "comprehensive post-layout extraction
+    and parasitic-aware simulations" of a "fabricated-ready" (not yet fabricated) layout; no silicon measurement.
+  decided: '2026-09-19'
 - id: doi:10.37665/kvva5054
   title: Development of Si-Interposers for 3D Heterogeneous Integration
   year: 2025
@@ -258,3 +259,416 @@
   reason: Measurements from two Tiny Tapeout silicon prototypes, but the abstract does not name the process
     and the SSRN full text refuses scripted requests.
   decided: '2026-09-14'
+- id: doi:10.1109/mpot.2026.3718625
+  title: Open source chip design using Efabless [Beyond the Degree]
+  year: 2026
+  status: excluded
+  reason: IEEE Potentials "Beyond the Degree" career/education column, not a research paper.
+  decided: '2026-09-19'
+- id: doi:10.48550/arxiv.2405.02329
+  title: 'Digital ASIC Design with Ongoing LLMs: Strategies and Prospects'
+  year: 2024
+  status: excluded
+  reason: A three-phase PWM generator fabricated through the Efabless AI-Generated Open-Source Chip Design
+    Challenge (Caravel SoC peripheral); neither the abstract nor the arXiv PDF full text names SkyWater
+    or SKY130.
+  decided: '2026-09-19'
+- id: doi:10.1109/peds63958.2025.11144900
+  title: Digital Pulse-Width Modulation Circuit Design Using Large Language Models
+  year: 2025
+  status: excluded
+  reason: Companion study to arxiv:2405.02329 (same Efabless AI-Generated Chip Design Challenge PWM design);
+    the abstract reports fabrication and a DRC pass but does not name the process, and the paper is paywalled
+    with no retrievable free copy.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.17536015
+  title: 'SoM-Memristor v3: Plastic Refusal-Driven Neuromorphic Hardware for Phenomenal Efficiency and
+    Internal Binding'
+  year: 2025
+  status: excluded
+  reason: Self-published design-file release describing a GDSII layout "ready for EFabless" (not yet
+    submitted or fabricated); the abstract's process claim is internally inconsistent ("Sky130 GDSII
+    (8×8 crossbar, 180 nm)") and reports no measured silicon.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.20594749
+  title: Analysis of Floorplan Utilization and Routing Congestion in RTL-to-GDSII Implementation of the
+    PicoRV32 RISC-V Core Using SKY130 Technology
+  year: 2026
+  status: excluded
+  reason: An OpenLane floorplan-utilisation and routing-congestion study reporting tool-derived area,
+    timing and power metrics only; no fabrication or silicon measurement.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.22071452
+  title: 'SBGR: A Surrogate Bandgap-Reference Benchmark for Constrained Metaheuristic Optimization, with
+    a Transistor-Level SKY130 Cross-Check'
+  year: 2026
+  status: excluded
+  reason: A software and data release (benchmark code and ngspice simulation-campaign data) for a paper
+    under review elsewhere, not itself a paper; the SKY130 "cross-check" is simulation, not silicon.
+  decided: '2026-09-19'
+- id: doi:10.1109/icmi68585.2026.11539888
+  title: 'Unified Mixed-Signal Design: Integrating Memristor-Based Ternary Logic with an Open-Source Sky130
+    CMOS Non-Inverting Op-AMP'
+  year: 2026
+  status: held
+  reason: No abstract is publicly available (IEEE Xplore, closed access; no Crossref or OpenAlex abstract);
+    held pending a full-text check.
+  decided: '2026-09-19'
+- id: doi:10.2139/ssrn.7021152
+  title: A Low-Power 256-Point FFT Processor on SkyWater 130 nm PDK for Edge DSP Applications
+  year: 2026
+  status: held
+  reason: No abstract is publicly available; the SSRN landing page refuses scripted requests (HTTP 403).
+  decided: '2026-09-19'
+- id: doi:10.1109/icvcs69586.2026.11683180
+  title: CMOS Inverter Standard Cell Library – Design and Characterization Using SKY130 PDK
+  year: 2026
+  status: held
+  reason: No abstract is publicly available (IEEE Xplore, closed access; no Crossref or OpenAlex abstract);
+    held pending a full-text check.
+  decided: '2026-09-19'
+- id: doi:10.1109/sbmicro70495.2026.11684413
+  title: A Design-Oriented Open-Source Cryogenic SPICE Model for Sky130 CMOS with Automated Calibration
+    Using Experimental 4 K Data
+  year: 2026
+  status: held
+  reason: No abstract is publicly available (IEEE Xplore, closed access; no Crossref or OpenAlex abstract);
+    the title implies measured 4 K data on SKY130 devices, so this is held pending a full-text check rather
+    than excluded.
+  decided: '2026-09-19'
+- id: doi:10.23919/mixdes58562.2023.10203216
+  title: Design and Implementation of Integrated Circuits Using Open Source Tools and SKY130 Free PDK
+  year: 2023
+  status: held
+  reason: The abstract says three designs were "taped-out under the new alliance between Google and Skywater"
+    but reports no measured results; IEEE Xplore is paywalled with no free copy, so held pending a full-text
+    check.
+  decided: '2026-09-19'
+- id: doi:10.1109/apccas67402.2025.11378356
+  title: 'Analog Blocks for 8-Bit SAR ADC: Rail-to-Rail Comparator and Two-Stage Operational Amplifier
+    Designed with Open-Source Tools and Sky130 PDK'
+  year: 2025
+  status: excluded
+  reason: Simulation results and layout designs only; the abstract reports no fabrication or measurement.
+  decided: '2026-09-19'
+- id: doi:10.1109/icicm66614.2025.11315948
+  title: Design of a Bandgap Voltage Reference for an 8-bit SAR-ADC for Powerline Monitoring using SKY130
+    PDK
+  year: 2025
+  status: excluded
+  reason: The abstract describes design and simulation of a bandgap reference; no fabrication or measurement
+    is reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/vlsi-soc64688.2025.11421767
+  title: A Low-Power 4-bit Tracking-Type Analog-to-Digital Converter in SKY130 Process
+  year: 2025
+  status: excluded
+  reason: A full-custom layout evaluated only by simulation ("Simulations show..."); no fabrication is
+    reported.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.18008454
+  title: Design and Integration of Multiple Open-Source Analog Circuits Fabricated in SKY130 Technology
+    within Silicluster v2
+  year: 2025
+  status: excluded
+  reason: An 18-page MOS-AK LA2025 conference slide deck (not a paper); its closing slides give measured
+    values for two blocks (comparator gain, oscillator frequency) but no fabricated paper describing the
+    portfolio was found, consistent with the exclusion of the related Silicluster v2 SoC paper (design
+    verification stage).
+  decided: '2026-09-19'
+- id: doi:10.1109/vlsi-soc64688.2025.11421732
+  title: PVT-Robust Analog Control Stage for Buck DC-DC Converters in Open-Source SKY130
+  year: 2025
+  status: excluded
+  reason: The abstract describes a "tape-out ready" (not yet fabricated) design validated only by post-layout
+    simulation across PVT corners.
+  decided: '2026-09-19'
+- id: doi:10.1109/devic63749.2025.11012450
+  title: Design of a 3-bit Full Custom Flash ADC Using Skywater 130nm PDK for Real Time Control Systems
+  year: 2025
+  status: excluded
+  reason: The abstract describes a layout ("silicon area of 500 uM x 300 uM") with no measured or simulated
+    performance results reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/iscas56072.2025.11044259
+  title: Memristive Implementation of Variable Pixel MRI Imaging Using Skywater 130nm PDK
+  year: 2025
+  status: excluded
+  reason: Describes a ReRAM/CMOS pixel-sampling concept for MRI image analysis with no fabrication or
+    measurement reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/qpain66474.2025.11172073
+  title: Physical Design Implementation of 41 Tap FIR Filter Using Open-Source Tools and Skywater 130nm
+    PDK
+  year: 2025
+  status: excluded
+  reason: A DRC/LVS-clean GDSII layout; the reported frequency and power figures are post-layout simulation,
+    not silicon measurement.
+  decided: '2026-09-19'
+- id: doi:10.1109/icsc64553.2025.10968602
+  title: 'Exploring SRAM Layout Using Open-Source Tools: A Case Study with Skywater 130nm PDK, Magic,
+    Xschem, ngSpice, and OpenRAM'
+  year: 2025
+  status: excluded
+  reason: '"Simulation results validate the functionality" of an SRAM layout case study; no fabrication
+    is reported.'
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.18087094
+  title: IAIONEX ASIC 32×32 — Fully Offline Mobile ASIC Design Flow (Sky130A)
+  year: 2025
+  status: excluded
+  reason: A software and documentation record (ASIC design-flow artefacts and a prior-art disclosure),
+    not a paper.
+  decided: '2026-09-19'
+- id: doi:10.1109/ispacs68724.2025.11383160
+  title: A Ring-Oscillator-Based 2.4 GHz Integer-N PLL Design in SkyWater 130nm Open-Source Technology
+  year: 2025
+  status: excluded
+  reason: '"Simulation results show" phase noise and power for a ring-oscillator PLL; no fabrication is
+    reported.'
+  decided: '2026-09-19'
+- id: doi:10.1109/ispacs68724.2025.11383220
+  title: A Time-Domain Comparator-Based 10-Bit SAR-ADC Design for Photoplethysmogram Signal Recording
+    using Skywater 130 nm and Open-Source Tools
+  year: 2025
+  status: excluded
+  reason: A "tape-out-ready design"; the reported ENOB, DNL and INL are post-layout simulation results,
+    not silicon measurements.
+  decided: '2026-09-19'
+- id: doi:10.1109/iceeict62016.2024.10534506
+  title: Standard Cell Library Characterization Flow Using Open Source Tools with Google + SkyWater 130nm
+    PDK
+  year: 2024
+  status: excluded
+  reason: A SPICE-based standard-cell library characterisation flow; no fabricated or measured device
+    data is reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/atc63255.2024.10908312
+  title: Implementation of Spiking Neural Network's Components on SKY130 CMOS Process
+  year: 2024
+  status: excluded
+  reason: Spiking-neuron and synapse circuits described on the SKY130 process with no statement of fabrication
+    or measurement; the reported findings read as simulated.
+  decided: '2026-09-19'
+- id: doi:10.1109/melecon56669.2024.10608632
+  title: 'Open Skywater130nm PDK-based IP Development Platform: A PWM Peripheral Case Study'
+  year: 2024
+  status: excluded
+  reason: Compares FPGA and ASIC synthesis results for a PWM peripheral submitted to Tiny Tapeout; no
+    measured chip results are reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/iemecon62401.2024.10846687
+  title: Timing and Power characterization of Standard cell with Google + SkyWater 130nm PDK using Open-Source
+    Tools
+  year: 2024
+  status: excluded
+  reason: A SPICE-based timing/power characterisation flow validated against a commercial tool; no fabricated
+    or measured device data.
+  decided: '2026-09-19'
+- id: doi:10.1145/3649476.3658779
+  title: Comprehensive Analysis of Generated Single Event Transients in Most Common Logic Cells of Skywater's
+    130-nm Technology
+  year: 2024
+  status: excluded
+  reason: SPICE simulations of single-event transients in SKY130 logic cells; no irradiation or silicon
+    measurement.
+  decided: '2026-09-19'
+- id: doi:10.1109/icaia57370.2023.10169547
+  title: Design of 4-bit servo tracking type ADC using Sky-Water SKY130 PDK and eSim
+  year: 2023
+  status: excluded
+  reason: An ADC designed and simulated in the eSim EDA tool; no fabrication is reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/iccad57390.2023.10323720
+  title: Design and Optimization of Low-Dropout Voltage Regulator Using Relational Graph Neural Network
+    and Reinforcement Learning in Open-Source SKY130 Process
+  year: 2023
+  status: excluded
+  reason: A reinforcement-learning circuit-sizing framework demonstrated "as a proof-of-concept" on an
+    LDO; no fabrication or measurement is reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/smacd58065.2023.10192202
+  title: Design of Low Power & Low Noise On-Chip BioAmplifier in Cooperation with Analog IC Synthesis
+    at 130nm Skywater Technology
+  year: 2023
+  status: excluded
+  reason: '"Post-layout simulations" of a bioamplifier; no fabrication is reported.'
+  decided: '2026-09-19'
+- id: doi:10.37934/sej.3.1.1421b
+  title: Integrating Design for Testability Technique into OpenLane with Skywater 130-Nanometer Process
+    Design Kit
+  year: 2023
+  status: excluded
+  reason: A design-for-testability case study reporting DRC, LVS and static-timing results from OpenLane;
+    no fabrication or measurement.
+  decided: '2026-09-19'
+- id: doi:10.1109/atc55345.2022.9943011
+  title: A Low-Power CT Second-Order VCO-Based ΔΣADC for Audio Recording on Skywater 130-nm
+  year: 2022
+  status: excluded
+  reason: '"Verified by SPICE simulation"; no fabrication is reported.'
+  decided: '2026-09-19'
+- id: doi:10.1109/nics54270.2021.9701515
+  title: A Highly Digital VCO-based ADC for IoT Applications on Skywater 130nm
+  year: 2021
+  status: excluded
+  reason: '"Implemented and verified by fully open-source tools" reads as simulation-only; no fabrication
+    or measurement is stated.'
+  decided: '2026-09-19'
+- id: doi:10.20944/preprints202607.0137.v1
+  title: 'Automated Parameter Tuning for Timing Closure in OpenROAD/OpenLane: A Comprehensive Multi-Design
+    Grid Search Framework on the SkyWater 130 nm PDK'
+  year: 2026
+  status: excluded
+  reason: An automated OpenROAD/OpenLane parameter-tuning study reporting tool-derived timing, power and
+    area metrics for three benchmark designs; no fabrication, and the findings are about the flow rather
+    than the process. Also posted as an SSRN preprint (10.2139/ssrn.7055760).
+  decided: '2026-09-19'
+- id: doi:10.1007/978-3-031-92108-7_3
+  title: Process Design Kit
+  year: 2025
+  status: excluded
+  reason: Chapter of a SpringerBriefs hands-on OpenLane/SKY130 lab manual; a textbook, not a paper.
+  decided: '2026-09-19'
+- id: doi:10.1007/978-3-031-92108-7_4
+  title: Introduction to OpenLane
+  year: 2025
+  status: excluded
+  reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
+    not a paper.
+  decided: '2026-09-19'
+- id: doi:10.1007/978-3-031-92108-7_5
+  title: Macro-Cells and RAM-Cells with OpenLane
+  year: 2025
+  status: excluded
+  reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
+    not a paper.
+  decided: '2026-09-19'
+- id: doi:10.1007/978-3-031-92108-7_6
+  title: Exploring OpenLane through Case Studies and Exercises
+  year: 2025
+  status: excluded
+  reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
+    not a paper.
+  decided: '2026-09-19'
+- id: doi:10.1007/978-3-031-92108-7_7
+  title: Caravel
+  year: 2025
+  status: excluded
+  reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
+    not a paper.
+  decided: '2026-09-19'
+- id: arxiv:2608.26206
+  title: 'Ankhdjet: An Open-Source Compiler for Mask-Programmed Ternary Compute-in-ROM on an Open PDK'
+  year: 2026
+  status: excluded
+  reason: A compute-in-ROM macro compiled for a future SKY130 Tiny Tapeout/ChipFoundry shuttle ("silicon
+    expected 2027"); the abstract's own reported numbers are from extracted-parasitic simulation and
+    it states no energy measurements are claimed.
+  decided: '2026-09-19'
+- id: arxiv:2507.00755
+  title: 'LearnAFE: Circuit-Algorithm Co-design Framework for Learnable Audio Analog Front-End'
+  year: 2025
+  status: excluded
+  reason: An audio analog-front-end design in the SKY130 process; the arXiv PDF full text marks the reported
+    accuracy, power and area results "based on post-layout simulation", with no statement of fabrication.
+  decided: '2026-09-19'
+- id: arxiv:2111.14535
+  title: Enabling Reusable Physical Design Flows with Modular Flow Generators
+  year: 2021
+  status: excluded
+  reason: A flow-reuse tooling paper (mflowgen) evaluated across five technology nodes (TSMC16/28/40,
+    SKY130, IBM180); the abstract reports no SKY130-specific process or silicon findings. Also published
+    as doi:10.1145/3489517.3530633 (ICCAD 2022).
+  decided: '2026-09-19'
+- id: arxiv:2512.22435
+  title: 'AnalogSAGE: Self-evolving Analog Design Multi-Agents with Stratified Memory and Grounded Experience'
+  year: 2025
+  status: excluded
+  reason: An LLM analog-design agent framework "evaluated under the open-source SKY130 PDK with ngspice";
+    simulation only, no fabrication.
+  decided: '2026-09-19'
+- id: arxiv:2605.31141
+  title: Compact and Energy-Efficient Memristive Spiking Neuromorphic Accelerator for Bio-inspired Interception
+    Tasks
+  year: 2026
+  status: excluded
+  reason: A memristive neuron "implemented in the SkyWater SKY130 PDK" and evaluated by Verilog-A/SPICE
+    circuit simulation; the abstract's "measured" read-noise data is drawn from a cited prior experimental
+    study of a different device, not a SKY130 fabrication of this design.
+  decided: '2026-09-19'
+- id: arxiv:2602.02849
+  title: 'AutoSizer: Automatic Sizing of Analog and Mixed-Signal Circuits via Large Language Model (LLM)
+    Agents'
+  year: 2026
+  status: excluded
+  reason: Introduces AMS-SizingBench, a simulator-based (not silicon) benchmark of 24 SKY130 circuits
+    for sizing-optimization agents; no fabrication reported.
+  decided: '2026-09-19'
+- id: doi:10.1002/aisy.202500351
+  title: 'Harnessing Nonidealities in Analog In-Memory Computing Circuits: A Physical Modeling Approach
+    for Neuromorphic Systems'
+  year: 2025
+  status: excluded
+  reason: The method is "validated through the post-layout SPICE simulations on the IMC circuit ... using
+    the sky130 process"; no fabrication or measurement. Also posted as arxiv:2412.09010.
+  decided: '2026-09-19'
+- id: arxiv:2609.16244
+  title: The World Model Hardware Accelerator
+  year: 2026
+  status: excluded
+  reason: A diffusion-transformer accelerator with five engines "taken to routed layout in sky130 with
+    parasitic-annotated timing and measured-activity power"; this is simulated switching-activity power
+    estimation from place-and-route, not a fabricated or measured chip.
+  decided: '2026-09-19'
+- id: arxiv:2608.16953
+  title: 'DTX: A Throughput-First Training Accelerator for Diffusion and Transformer Models'
+  year: 2026
+  status: excluded
+  reason: A "sky130 campaign hardens the systolic array to DRC-clean GDS at 83.3 MHz post-route"; DRC-clean
+    post-route synthesis only, no fabrication.
+  decided: '2026-09-19'
+- id: arxiv:2607.16632
+  title: 'CLOSER-Bench: Evaluating Budgeted Cross-Stage Design Closure for Hardware Agents'
+  year: 2026
+  status: excluded
+  reason: An RTL-to-GDS hardware-agent benchmark built on open-source Sky130 tooling; a tool-evaluation
+    benchmark with no fabrication or process-specific findings.
+  decided: '2026-09-19'
+- id: arxiv:2608.23582
+  title: 'Transformer Accelerator (TFA): A Macro-Op INT8 Hardware Chip for Transformer Inference and
+    Machine Translation'
+  year: 2026
+  status: excluded
+  reason: '"Completed design-rule-clean synthesis and place-and-route on SkyWater sky130"; no fabrication
+    or measurement reported.'
+  decided: '2026-09-19'
+- id: arxiv:2606.05253
+  title: 'Alpha-RTL: Test-Time Training for RTL Hardware Optimization'
+  year: 2026
+  status: excluded
+  reason: Reports an area-delay-product reduction "under Sky130" from synthesis-derived PPA rewards in
+    an RTL-optimization agent; no fabrication.
+  decided: '2026-09-19'
+- id: arxiv:2604.05983
+  title: 'Arch: An AI-Native Hardware Description Language for Register-Transfer Clocked Hardware Design'
+  year: 2026
+  status: excluded
+  reason: Case studies (L1 cache, AXI DMA) synthesized and statically timed with Yosys/OpenSTA on Sky130;
+    a hardware-description-language paper with no fabrication or SKY130-specific findings.
+  decided: '2026-09-19'
+- id: doi:10.3390/computers13010009
+  title: Custom ASIC Design for SHA-256 Using Open-Source Tools
+  year: 2023
+  status: excluded
+  reason: A SHA-256 accelerator "synthesized using SkyWater SKY130 130 nm process technology through
+    the OpenLANE automated workflow"; the reported area and clock frequency are post-synthesis/place-and-route
+    figures, not silicon measurements.
+  decided: '2026-09-19'
+- id: doi:10.3390/electronics15051048
+  title: 'From RTL to Fabrication: Survey of Open-Source EDA Tools and PDKs'
+  year: 2026
+  status: excluded
+  reason: A general survey of the open-source EDA/PDK ecosystem, not a study specific to SKY130 or the
+    SkyWater process.
+  decided: '2026-09-19'
