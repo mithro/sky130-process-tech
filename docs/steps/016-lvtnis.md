@@ -71,7 +71,7 @@ fab:
    "build up pressure beneath the implant-hardened surface layer" until
    it pops.[^pat-strip-mosel] The standard countermeasure is a two-step
    recipe: a first step at low temperature — "removed by oxygen and
-   nitrogen/hydrogen plasma in a low-temperature (<220 °C)
+   nitrogen/hydrogen plasma in a low-temperature (<220° C.)
    environment"[^pat-strip-mosel] — until the crust is gone, then a
    hotter bulk step. For a low-dose channel implant like `LVTNI` many
    fabs use a single-step recipe, because the crust is thin (industry

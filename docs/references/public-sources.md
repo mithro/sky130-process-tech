@@ -2555,7 +2555,7 @@ M.-S. Tseng, F.-H. Chao and N.-Y. Tsai (Mosel Vitelic), granted
 popping mechanism — volatile bulk resist that can "build up pressure
 beneath the implant-hardened surface layer" during a conventional
 "high temperature (>200° C.) dry ashing" — and a first stage "removed
-by oxygen and nitrogen/hydrogen plasma in a low-temperature (<220 °C)
+by oxygen and nitrogen/hydrogen plasma in a low-temperature (<220° C.)
 environment".
 Also used on the downstream plasma asher page.
 Tier: deep dive.

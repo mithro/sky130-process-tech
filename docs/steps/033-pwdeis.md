@@ -61,7 +61,7 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 1. **Plasma {term}`ash`.** Downstream oxygen plasma with a forming-gas addition;
    a two-stage recipe if the fab runs one for all implant strips — first
-   stage "in a low-temperature (<220 °C) environment" with "oxygen and
+   stage "in a low-temperature (<220° C.) environment" with "oxygen and
    nitrogen/hydrogen plasma" until the crust is gone,[^pat-strip-mosel]
    then a hotter bulk stage. SkyWater's ashers cover this range:
    "Gasonic PEP … N2, O2, 120C – 270C", "Iridia … H2/N2, 40C-270C",

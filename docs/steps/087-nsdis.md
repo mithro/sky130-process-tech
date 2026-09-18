@@ -86,7 +86,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 1. **Plasma ash, two steps.** Downstream microwave or RF oxygen
    plasma; a first step at low temperature — "removed by oxygen and
-   nitrogen/hydrogen plasma in a low-temperature (<220 °C)
+   nitrogen/hydrogen plasma in a low-temperature (<220° C.)
    environment"[^pat-strip-mosel] — takes the crust off without
    popping, then a hotter step removes the bulk. Nitrogen raises
    the ash rate,[^fujimura-1990] and forming gas or water vapour

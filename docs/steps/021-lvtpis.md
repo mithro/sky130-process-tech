@@ -66,7 +66,7 @@ fab:
 
 1. **Two-stage plasma {term}`ash`.** A first stage below the popping threshold —
    "removed by oxygen and nitrogen/hydrogen plasma in a low-temperature
-   (<220 °C) environment", preferably 150–220 °C[^pat-strip-mosel] —
+   (<220° C.) environment", preferably 150–220 °C[^pat-strip-mosel] —
    until the crust is consumed, then a hotter oxygen stage for the bulk
    of the 2–3 µm film. The forming-gas addition helps because hydrogen
    penetrates and reduces the carbonised layer (category page).
