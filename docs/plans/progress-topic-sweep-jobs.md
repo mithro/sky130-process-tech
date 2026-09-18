@@ -110,4 +110,73 @@ in the sweep ended this task with a tool resting on JOB-01/JOB-02 alone.
 
 ## Task B — vendor/tool spelling
 
-(to be filled in)
+### Audit method
+
+For each pair, counted occurrences (`grep -rho`), then checked every
+occurrence of the "wrong-looking" or minority spelling for whether it
+sits inside a direct quotation (SkyWater's capabilities page, or a
+third-party title/press release) vs. our own prose, using both manual
+`grep -n` context reads and a small Python script
+(`tmp/check_aspen2_quotes.py`, not committed) that flags any
+`Aspen2`/`GaSonics` occurrence that is not inside an open quote on its
+paragraph (checked against the surrounding lines by hand since Markdown
+wraps quotes across lines).
+
+### Findings: already consistent, no edits needed
+
+* **GaSonics / Gasonic(s).** Our own prose uses "GaSonics" (matching
+  the vendor's own style, "GaSonics International" — cited
+  `[^gasonics-2000]` on `docs/machines/downstream-plasma-asher.md`).
+  Every occurrence of the singular "Gasonic" (no final s) is inside a
+  quotation of SkyWater's *Facilities & Capabilities* wording ("Gasonic
+  PEP, remote microwave plasma…", `[^skw-01]`) — checked all ~40
+  occurrences by hand/grep. The plural, non-camel-case "Gasonics" (19
+  occurrences) appears only inside the *titles* of third-party sources
+  (SemiStar/Allwin21/Stanford listings, e.g. "*Gasonics L3510 plasma
+  asher*") — kept verbatim as those sources title themselves, not our
+  prose and not attributed to SkyWater.
+  An earlier branch (`docs/plans/progress-topic-p4-076-088.md`, finding
+  079-L1) had found a real split at that point in time (38×
+  mis-quoted "GaSonics PEP" vs. 34× correctly-quoted "Gasonic PEP") and
+  deferred it to this site-wide sweep; a later merge already fixed it
+  before this branch started — `grep -rn '"GaSonics' docs/` today finds
+  zero mis-quotations. Nothing left to do.
+* **Aspen II / Aspen2 / Aspen 2.** Our prose reads "Aspen II" (Mattson's
+  own product name — Mattson's *Aspen Strip* product page names the
+  "Aspen II Strip"/"Aspen II platform", `[^mattson-2001]`). Every
+  "Aspen2" occurrence (42) is inside the SkyWater quotation ("Mattson
+  Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C"); confirmed none sit
+  outside a quote. "Aspen 2" (with a space) does not occur anywhere.
+* **Novellus / Novelus.** No misspelling ("Novelus", "Novellius",
+  "Novellous") found anywhere in `docs/`.
+* **AG Associates / Heatpulse.** Vendor's own legal name confirmed as
+  "AG Associates, Inc." (its Form 10-K, inventory key `AG-10K`). Our
+  prose consistently uses "AG Associates"; the abbreviated "Ag
+  Heatpulse 8808…" only ever appears inside the SkyWater capabilities
+  quotation. No unquoted "Ag Associates"/"Ag Heatpulse" found.
+* **Mattson, Axcelis, KLA-Tencor, Lam Research.** All-caps forms
+  ("MATTSON", "AXCELIS", "LAM") occur only in inventory keys (e.g.
+  `AXCELIS-GSD`, `PAT-TCP-LAM`) or inside direct quotations of
+  third-party text (e.g. "a LAM TCP9600 etcher" from a 1999 paper,
+  "LAM TCP 9600 Etch Chamber" from a 1994 ASMC paper) — both proper.
+  "KLA Tencor" without the hyphen occurs only inside
+  `docs/references/patents/` (generated pages, assignee-name field from
+  patent-office records — out of scope per the citation-style.md
+  generated-index exception, not written prose). No unhyphenated
+  "KLA Tencor" or "Kla-Tencor" in any written page.
+* **Tegal.** Not mentioned anywhere in `docs/`; nothing to check.
+
+### Convention page
+
+`docs/machines/downstream-plasma-asher.md` (lines ~152–166) already
+documents the rule correctly (vendor's own spelling in our prose,
+SkyWater's exact wording preserved in quotes, with a worked example for
+"Gasonic"/"Aspen2"). The convention has not changed, so it was left as
+is; the glossary (`docs/glossary.md`) does not cover vendor/tool names
+so has nothing to make consistent; `docs/machines/index.md` and
+`docs/materials/index.md` were checked and already follow the same
+rule throughout.
+
+**No files changed for Task B** — the spelling split flagged in the
+task brief had already been resolved by earlier merged work before this
+branch started; this pass re-verified it and found no regressions.
