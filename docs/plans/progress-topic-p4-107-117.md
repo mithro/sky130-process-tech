@@ -27,9 +27,9 @@ occurrence is checked and fixed if needed.
 | 108-L1 | Low | fixed | Lam 10-K stays uncheckable (SEC 403, no contact address permitted, no Wayback copy) but is now paired with the retrievable lam-exelan 2001 press release already cited elsewhere on the page. |
 | 109-L1 | Low | fixed | Confirmed skw-facilities.txt:113-123 lists a further film "SiO2" after "Niobium" under the same heading. Appended it to the quoted lists on 109 and 112. |
 | 109-L2 | Low | fixed | Confirmed the live page 403s (curl -A) and the Wayback capture (20260916190905) returns 200. Added the Wayback URL to the footnote on 109 and 112, and reworded both "200 mm-era" framings as an explicit reading since the source itself does not date the platform. |
-| 110-L1 | Low | open | "multi-station Altus family" — source doesn't say "multi-station" (that's the Concept One-W). |
+| 110-L1 | Low | fixed | Confirmed novellus-history.html: "the company combined the modular architecture of the Concept Two and the tungsten CVD process chamber, resulting in ... Concept Two-ALTUS" -- no "multi-station"; that six-wafer-chamber description belongs to Concept One-W. Reworded per review's fix. |
 | 110-L2 | Low | fixed | Added [^domenicucci-1996] (Ti-AlCu-Ti lifetimes over two-level W stud structures, already the citation used for the same literature on 112/123) with the footnote definition added to the page. |
-| 110-L3 | Low | open | "qualified down to" is an unmarked reading of the PDK's CEFC value. |
+| 110-L3 | Low | fixed | The PDK gives CEFC/0.14um with no explanation of "qualified down to"; marked the reading explicitly per review's fix. |
 | 111-L1 | declined | open | JOB-01 site-wide sweep item; left alone per coordinator instruction. |
 | 111-L2 | Low | fixed | Same as 107-L2; added the same pointing-back cross-reference here. |
 | 112-L1 | Low | open | "excluding top metal" belongs to the S8P row only, not all three technologies. |
