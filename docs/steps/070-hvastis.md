@@ -271,10 +271,10 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
 [^pat-strip-mosel]: M.-S. Tseng, F.-H. Chao and N.-Y. Tsai (Mosel
     Vitelic), *Low temperature dry process for stripping photoresist
     after high dose ion implantation*, US 5,811,358 A, granted
-    1998-09-22. <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5811358>
+    1998-09-22. <https://patents.google.com/patent/US5811358A/en>
 [^pat-strip-tsmc]: B.-W. Chan, Y.-H. Chiu and H.-J. Tao (TSMC), *Method
     of ashing a photoresist*, US 2004/0214448 A1, published 2004-10-28.
-    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20040214448>
+    <https://patents.google.com/patent/US20040214448A1/en>
 [^pat-asher-fusion]: M. Kamarehi and J. E. Simpson (Fusion Systems),
     *Plasma asher with microwave trap*, US 5,498,308 A, granted
     1996-03-12.
