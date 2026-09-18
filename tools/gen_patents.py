@@ -229,8 +229,11 @@ def family_body(fam: dict) -> list[str]:
     fields.append(f"**Legal status (representative):** {esc(fam['legal_status']['status'])} "
                   f"({esc(fam['legal_status']['source'])})")
     fields.append(f"**Estimated expiry:** {fam['expiry']['date'] or 'not bounded'} — {esc(fam['expiry']['basis'])}")
-    fields.append(f"**Google Patents family ID:** `{fam['family']['google_family_id']}` "
-                  f"(family section of the representative's own record page, linked below)")
+    if fam["family"]["source"] == "Google Patents family ID":
+        fields.append(f"**Google Patents family ID:** `{fam['family']['google_family_id']}` "
+                      f"(family section of the representative's own record page, linked below)")
+    else:
+        fields.append(f"**Family ID:** `{fam['family']['google_family_id']}` ({esc(fam['family']['source'])})")
     body: list[str] = []
     for line in fields:
         body += [line, ""]
@@ -342,7 +345,11 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
     n = len(fams)
     nmembers = sum(len(f["members"]) for f in fams)
     status = Counter(status_word(f) for f in fams)
-    fetched = sum(1 for f in fams for m in f["members"] if "record page fetched" in m["verified"])
+    google_fetched = sum(1 for f in fams for m in f["members"] if "record page fetched" in m["verified"])
+    ppubs_fetched = sum(1 for f in fams for m in f["members"]
+                         if "USPTO Patent Public Search record" in m["verified"])
+    fetched = google_fetched + ppubs_fetched
+    ppubs_fams = [f for f in fams if f["family"]["source"] != "Google Patents family ID"]
     verified_dates = sorted({
         m2.group(1) for f in fams
         for v in [f["verified"]] + [m["verified"] for m in f["members"]]
@@ -352,17 +359,29 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
     listed = nmembers - fetched
     fams_with_listed = [
         f for f in fams
-        if any("record page fetched" not in m["verified"] for m in f["members"])
+        if any("record page fetched" not in m["verified"]
+               and "USPTO Patent Public Search record" not in m["verified"]
+               for m in f["members"])
     ]
     fams_listed_expired = [f for f in fams_with_listed if f["expired"] is True]
     fams_listed_not_expired = [f for f in fams_with_listed if f["expired"] is not True]
     listed_in_expired = sum(
         1 for f in fams_listed_expired for m in f["members"]
-        if "record page fetched" not in m["verified"])
+        if "record page fetched" not in m["verified"]
+        and "USPTO Patent Public Search record" not in m["verified"])
     listed_not_expired = listed - listed_in_expired
+    ppubs_clause = (
+        [f" {plural(len(ppubs_fams), 'family')} of these rest on USPTO Patent Public Search",
+         "instead of Google Patents, which stayed unreachable while they were found (see",
+         "\"PPUBS fallback\" in `docs/plans/patent-index-design.md`); each says so in its",
+         "own *Legal status* and *Verified* lines and carries no legal status or",
+         "adjusted-expiration date, only a conservative term-arithmetic bound."]
+        if ppubs_fams else []
+    )
     fetched_note = (
         [f"record page was fetched; {fetched} of the {nmembers} members have their own record page",
-         f"fetched. The remaining {listed} are listed in the fetched family table of",
+         f"fetched ({google_fetched} from Google Patents, {ppubs_fetched} from USPTO Patent Public",
+         "Search).", f"The remaining {listed} are listed in the fetched Google Patents family table of",
          "their representative but were not fetched separately: a",
          "time-budgeted departure from this index's rule of fetching every",
          "member of a family whose earliest priority is on or after",
@@ -376,9 +395,10 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
          f"on other grounds; the remaining {plural(listed_not_expired, 'member')}, in "
          f"{plural(len(fams_listed_not_expired), 'family')} **not** shown expired, are each bounded",
          "conservatively (the family's earliest priority date + 21 years)",
-         "rather than assumed ended, per the design's rule 3."]
+         "rather than assumed ended, per the design's rule 3.",
+         *ppubs_clause]
         if fetched < nmembers else
-        [f"record page was fetched, and so has every one of the {nmembers} members."]
+        [f"record page was fetched, and so has every one of the {nmembers} members.", *ppubs_clause]
     )
     body = [
         "A worldwide index of patents and published applications related to",

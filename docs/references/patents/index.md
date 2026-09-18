@@ -20,9 +20,11 @@ Patents' own record page, linked alongside it, is the working
 full-text link this index relies on for every member.
 
 Records were retrieved 2026-09-14 to 2026-09-19 (individual records carry their own
-`verified` date). The index holds 228 families (1519 members in total). Every family's representative
-record page was fetched; 1460 of the 1519 members have their own record page
-fetched. The remaining 59 are listed in the fetched family table of
+`verified` date). The index holds 252 families (1543 members in total). Every family's representative
+record page was fetched; 1484 of the 1543 members have their own record page
+fetched (1460 from Google Patents, 24 from USPTO Patent Public
+Search).
+The remaining 59 are listed in the fetched Google Patents family table of
 their representative but were not fetched separately: a
 time-budgeted departure from this index's rule of fetching every
 member of a family whose earliest priority is on or after
@@ -33,6 +35,11 @@ publication date from the representative's own family table, says
 so in its *Verified* column, and shows no status. 15 members of these sit in 2 families already shown expired on other grounds; the remaining 44 members, in 6 families **not** shown expired, are each bounded
 conservatively (the family's earliest priority date + 21 years)
 rather than assumed ended, per the design's rule 3.
+ 24 families of these rest on USPTO Patent Public Search
+instead of Google Patents, which stayed unreachable while they were found (see
+"PPUBS fallback" in `docs/plans/patent-index-design.md`); each says so in its
+own *Legal status* and *Verified* lines and carries no legal status or
+adjusted-expiration date, only a conservative term-arithmetic bound.
 
 ## Legal caveat
 
@@ -74,16 +81,16 @@ relation:
 
 | | Families | Members |
 |---|---|---|
-| Total | 228 | 1519 |
-| Shown as expired | 178 | 1090 |
+| Total | 252 | 1543 |
+| Shown as expired | 184 | 1096 |
 | Shown as in force | 47 | 419 |
-| Status unknown | 3 | 10 |
+| Status unknown | 21 | 28 |
 
 ## Scope and completeness
 
-This index began as every patent already cited on a docs page (169 families of the total entered this way and no other), then widened by following each seed's Google Patents family table and citation lists, by a handful of assignee+keyword searches for specific process modules, and by an `assignee="Weebit Nano"` search once ReRAM was brought into scope. It is **not** the result of an exhaustive, systematic sweep of every process module against every lineage assignee: a round-1 independent review of this dataset (recorded in the planning files) found at least a dozen absent Cypress/Infineon families from just three more searches, named six process modules never searched at all, and notes that the index holds 52 Cypress Semiconductor families and 4 Infineon Technologies families but only 1 SkyWater Technology family, though SkyWater is named in this index's own scope. Treat this index as a starting point for the SKY130/Cypress/SkyWater/Infineon patent landscape, not as proof that a family absent from it does not exist.
+This index began as every patent already cited on a docs page (169 families of the total entered this way and no other), then widened by following each seed's Google Patents family table and citation lists, by a handful of assignee+keyword searches for specific process modules, and by an `assignee="Weebit Nano"` search once ReRAM was brought into scope. It is **not** the result of an exhaustive, systematic sweep of every process module against every lineage assignee: a round-1 independent review of this dataset (recorded in the planning files) found at least a dozen absent Cypress/Infineon families from just three more searches, named six process modules never searched at all, and notes that the index holds 70 Cypress Semiconductor families and 5 Infineon Technologies families but only 1 SkyWater Technology family, though SkyWater is named in this index's own scope. Treat this index as a starting point for the SKY130/Cypress/SkyWater/Infineon patent landscape, not as proof that a family absent from it does not exist.
 
-Discovery methods recorded across the 228 families: 172 families `cited-in-docs`; 47 families `assignee-search`; 13 families `citing-seed`; 10 families `cited-by-seed`; 4 families `continuation-search`. A family can carry more than one method (reached more than one way), so these do not sum to the family count.
+Discovery methods recorded across the 252 families: 172 families `cited-in-docs`; 71 families `assignee-search`; 13 families `citing-seed`; 10 families `cited-by-seed`; 4 families `continuation-search`. A family can carry more than one method (reached more than one way), so these do not sum to the family count.
 
 ## Other views
 

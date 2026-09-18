@@ -43,9 +43,11 @@ first, and then by status.
 * {ref}`US 5,000,113 A <patent-gp25481509>` — Thermal CVD/PECVD reactor and use for thermal chemical vapor deposition of silicon dioxide and in-situ multi-step planarized process (1986-12-19)
 * {ref}`US 5,258,332 A <patent-gp27553885>` — Method of manufacturing semiconductor devices including rounding of corner portions by etching (1987-08-28)
 * {ref}`US 4,903,717 A <patent-gp3543072>` — Support for slice-shaped articles and device for etching silicon wafers with such a support (1987-11-09)
+* {ref}`US 4,986,878 A <patent-gp22827270>` — Process for improved planarization of the passivation layers for semiconductor devices (1988-07-19)
 * {ref}`US 4,999,014 A <patent-gp23365380>` — Method and apparatus for measuring thickness of thin films (1989-05-04)
 * {ref}`US 5,186,718 A <patent-gp26998663>` — Staged-vacuum wafer processing system and method (1989-05-19)
 * {ref}`US 4,919,748 A <patent-gp23476680>` — Method for tapered etching (1989-06-30)
+* {ref}`US 5,443,998 A <patent-gp27012173>` — Method of forming a chlorinated silicon nitride barrier layer (1989-08-01)
 * {ref}`US 4,948,458 A <patent-gp23554962>` — Method and apparatus for producing magnetically-coupled planar plasma (1989-08-14)
 * {ref}`US 5,028,565 A <patent-gp23576244>` — Process for CVD deposition of tungsten layer on semiconductor wafer (1989-08-25)
 
@@ -96,10 +98,12 @@ first, and then by status.
 * {ref}`US 5,872,387 A <patent-gp24345606>` — Deuterium-treated semiconductor devices (1996-01-16)
 * {ref}`US 6,200,412 B1 <patent-gp24412185>` — Chemical vapor deposition system including dedicated cleaning gas injection (1996-02-16)
 * {ref}`US 5,595,919 A <patent-gp24414167>` — Method of making self-aligned halo process for reducing junction capacitance (1996-02-20)
+* {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
 * {ref}`US 5,814,433 A <patent-gp26689885>` — Use of mixtures of ethyl lactate and N-methyl pyrollidone as an edge bead remover for photoresists (1996-05-17)
 * {ref}`US 6,136,654 A <patent-gp27361220>` — Method of forming thin silicon nitride or silicon oxynitride gate dielectrics (1996-06-07)
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
+* {ref}`US 6,707,112 B2 <patent-gp24694701>` — MOS transistor with ramped gate oxide thickness (1996-06-27)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
 * {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
 * {ref}`US 6,033,943 A <patent-gp24820519>` — Dual gate oxide thickness integrated circuit and process for making same (1996-08-23)
@@ -124,6 +128,7 @@ first, and then by status.
 * {ref}`US 6,906,421 B1 <patent-gp34632364>` — Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same (1998-01-14)
 * {ref}`US 6,020,614 A <patent-gp21950172>` — Method of reducing substrate noise coupling in mixed signal integrated circuits (1998-03-25)
 * {ref}`US 6,030,881 A <patent-gp22109576>` — High throughput chemical vapor deposition process capable of filling high aspect ratio structures (1998-05-05)
+* {ref}`US 6,255,180 B1 <patent-gp22147006>` — Semiconductor device with outwardly tapered sidewall spacers and method for forming same (1998-05-14)
 * {ref}`US 6,013,581 A <patent-gp21630827>` — Method for preventing poisoned vias and trenches (1998-07-28)
 * {ref}`US 6,179,609 B1 <patent-gp26323689>` — Compact external torch assembly for semiconductor processing (1998-08-05)
 * {ref}`US 6,319,553 B1 <patent-gp22616474>` — Isolation of incompatible processes in a multi-station processing chamber (1998-10-08)
@@ -132,9 +137,12 @@ first, and then by status.
 * {ref}`US 6,825,544 B1 <patent-gp33449343>` — Method for shallow trench isolation and shallow trench isolation structure (1998-12-09)
 * {ref}`US 6,179,973 B1 <patent-gp26812562>` — Apparatus and method for controlling plasma uniformity across a substrate (1999-01-05)
 * {ref}`US 6,455,402 B2 <patent-gp19572018>` — Method of forming retrograde doping file in twin well CMOS device (1999-01-22)
+* {ref}`US 6,242,299 B1 <patent-gp23084824>` — Barrier layer to protect a ferroelectric capacitor after contact has been made to the capacitor electrode (1999-04-01)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
 * {ref}`US 6,300,252 B1 <patent-gp23626242>` — Method for etching fuse windows in IC devices and devices made (1999-10-01)
+* {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
+* {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
 * {ref}`US 6,294,474 B1 <patent-gp23688532>` — Process for controlling oxide thickness over a fusible link using transient etch stops (1999-10-25)
 * {ref}`US 6,350,353 B2 <patent-gp23783296>` — Alternate steps of IMP and sputtering process to improve sidewall coverage (1999-11-24)
 * {ref}`US 6,969,448 B1 <patent-gp23892778>` — Method for forming a metallization structure in an integrated circuit (1999-12-30)
@@ -142,6 +150,7 @@ first, and then by status.
 ## 2000s
 
 * {ref}`US 6,653,803 B1 <patent-gp24331908>` — Integrated resonator and amplifier system (2000-05-30)
+* {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
 * {ref}`US 7,305,999 B2 <patent-gp24449421>` — Centrifugal spray processor and retrofit kit (2000-07-07)
 * {ref}`US 6,521,502 B1 <patent-gp24538683>` — Solid phase epitaxy activation process for source/drain junction extensions and halo regions (2000-08-07)
 * {ref}`US 6,817,903 B1 <patent-gp33418789>` — Process for reducing leakage in an integrated circuit with shallow trench isolated active areas (2000-08-09)
@@ -167,6 +176,7 @@ first, and then by status.
 * {ref}`US 6,776,873 B1 <patent-gp32848879>` — Yttrium oxide based surface coating for semiconductor IC processing vacuum chambers (2002-02-14)
 * {ref}`US 2003/0170956 A1 <patent-gp27754013>` — Ultra-thin gate oxide through post decoupled plasma nitridation anneal (2002-03-06)
 * {ref}`US 6,677,213 B1 <patent-gp29778448>` — SONOS structure including a deuterated oxide-silicon interface and method for making the same (2002-03-08)
+* {ref}`US 7,151,048 B1 <patent-gp37526559>` — unknown
 * {ref}`US 6,667,205 B2 <patent-gp29214361>` — Method of forming retrograde n-well and p-well (2002-04-19)
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
@@ -176,6 +186,7 @@ first, and then by status.
 * {ref}`US 2004/0069224 A1 <patent-gp32068901>` — Cold trap for CVD furnace (2002-10-11)
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,977,217 B1 <patent-gp35465546>` — Aluminum-filled via structure with barrier layer (2002-12-03)
+* {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
 * {ref}`US 6,835,642 B2 <patent-gp32593189>` — Method of forming a metal fuse on semiconductor devices (2002-12-18)
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
 * {ref}`US 6,960,781 B2 <patent-gp32990685>` — Shallow trench isolation process (2003-03-07)
@@ -189,21 +200,29 @@ first, and then by status.
 * {ref}`US 7,317,221 B2 <patent-gp34633830>` — High density MIM capacitor structure and fabrication process (2003-12-04)
 * {ref}`US 7,055,532 B2 <patent-gp34678118>` — Method to remove fluorine residue from bond pads (2003-12-18)
 * {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
+* {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — Photodiode having a buried well region (2004-09-14)
 * {ref}`US 7,705,268 B2 <patent-gp36337293>` — in force
+* {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
 * {ref}`US 7,501,352 B2 <patent-gp37073778>` — Method and system for forming an oxynitride layer (2005-03-30)
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
+* {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)
+* {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
+* {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
 * {ref}`EP 2 104 648 B1 <patent-gp39203155>` — in force
+* {ref}`US 7,989,328 B2 <patent-gp39526963>` — unknown
+* {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
 * {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 2018/0366563 A1 <patent-gp48743295>` — in force
 * {ref}`US 7,670,963 B2 <patent-gp40072821>` — in force
+* {ref}`US 7,880,219 B2 <patent-gp40071591>` — unknown
 * {ref}`US 8,067,284 B1 <patent-gp44994327>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 8,283,261 B2 <patent-gp40072822>` — in force
@@ -222,9 +241,11 @@ first, and then by status.
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
 * {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
+* {ref}`US 9,543,262 B1 <patent-gp57705840>` — unknown
 
 ## 2010s
 
+* {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
@@ -233,6 +254,7 @@ first, and then by status.
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
 * {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
+* {ref}`US 9,466,496 B2 <patent-gp52808978>` — unknown
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
@@ -244,8 +266,10 @@ first, and then by status.
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
+* {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
 * {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
+* {ref}`US 11,610,820 B2 <patent-gp73016725>` — unknown
 * {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
 * {ref}`US 11,810,616 B2 <patent-gp75974473>` — in force
 
@@ -288,9 +312,11 @@ first, and then by status.
 * {ref}`US 5,000,113 A <patent-gp25481509>` — Thermal CVD/PECVD reactor and use for thermal chemical vapor deposition of silicon dioxide and in-situ multi-step planarized process (1986-12-19)
 * {ref}`US 5,258,332 A <patent-gp27553885>` — Method of manufacturing semiconductor devices including rounding of corner portions by etching (1987-08-28)
 * {ref}`US 4,903,717 A <patent-gp3543072>` — Support for slice-shaped articles and device for etching silicon wafers with such a support (1987-11-09)
+* {ref}`US 4,986,878 A <patent-gp22827270>` — Process for improved planarization of the passivation layers for semiconductor devices (1988-07-19)
 * {ref}`US 4,999,014 A <patent-gp23365380>` — Method and apparatus for measuring thickness of thin films (1989-05-04)
 * {ref}`US 5,186,718 A <patent-gp26998663>` — Staged-vacuum wafer processing system and method (1989-05-19)
 * {ref}`US 4,919,748 A <patent-gp23476680>` — Method for tapered etching (1989-06-30)
+* {ref}`US 5,443,998 A <patent-gp27012173>` — Method of forming a chlorinated silicon nitride barrier layer (1989-08-01)
 * {ref}`US 4,948,458 A <patent-gp23554962>` — Method and apparatus for producing magnetically-coupled planar plasma (1989-08-14)
 * {ref}`US 5,028,565 A <patent-gp23576244>` — Process for CVD deposition of tungsten layer on semiconductor wafer (1989-08-25)
 * {ref}`US 5,166,752 A <patent-gp24566844>` — Simultaneous multiple angle/multiple wavelength ellipsometer and method (1990-01-11)
@@ -338,10 +364,12 @@ first, and then by status.
 * {ref}`US 5,872,387 A <patent-gp24345606>` — Deuterium-treated semiconductor devices (1996-01-16)
 * {ref}`US 6,200,412 B1 <patent-gp24412185>` — Chemical vapor deposition system including dedicated cleaning gas injection (1996-02-16)
 * {ref}`US 5,595,919 A <patent-gp24414167>` — Method of making self-aligned halo process for reducing junction capacitance (1996-02-20)
+* {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
 * {ref}`US 5,814,433 A <patent-gp26689885>` — Use of mixtures of ethyl lactate and N-methyl pyrollidone as an edge bead remover for photoresists (1996-05-17)
 * {ref}`US 6,136,654 A <patent-gp27361220>` — Method of forming thin silicon nitride or silicon oxynitride gate dielectrics (1996-06-07)
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
+* {ref}`US 6,707,112 B2 <patent-gp24694701>` — MOS transistor with ramped gate oxide thickness (1996-06-27)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
 * {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
 * {ref}`US 6,033,943 A <patent-gp24820519>` — Dual gate oxide thickness integrated circuit and process for making same (1996-08-23)
@@ -366,6 +394,7 @@ first, and then by status.
 * {ref}`US 6,906,421 B1 <patent-gp34632364>` — Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same (1998-01-14)
 * {ref}`US 6,020,614 A <patent-gp21950172>` — Method of reducing substrate noise coupling in mixed signal integrated circuits (1998-03-25)
 * {ref}`US 6,030,881 A <patent-gp22109576>` — High throughput chemical vapor deposition process capable of filling high aspect ratio structures (1998-05-05)
+* {ref}`US 6,255,180 B1 <patent-gp22147006>` — Semiconductor device with outwardly tapered sidewall spacers and method for forming same (1998-05-14)
 * {ref}`US 6,013,581 A <patent-gp21630827>` — Method for preventing poisoned vias and trenches (1998-07-28)
 * {ref}`US 6,179,609 B1 <patent-gp26323689>` — Compact external torch assembly for semiconductor processing (1998-08-05)
 * {ref}`US 6,319,553 B1 <patent-gp22616474>` — Isolation of incompatible processes in a multi-station processing chamber (1998-10-08)
@@ -374,6 +403,7 @@ first, and then by status.
 * {ref}`US 6,825,544 B1 <patent-gp33449343>` — Method for shallow trench isolation and shallow trench isolation structure (1998-12-09)
 * {ref}`US 6,179,973 B1 <patent-gp26812562>` — Apparatus and method for controlling plasma uniformity across a substrate (1999-01-05)
 * {ref}`US 6,455,402 B2 <patent-gp19572018>` — Method of forming retrograde doping file in twin well CMOS device (1999-01-22)
+* {ref}`US 6,242,299 B1 <patent-gp23084824>` — Barrier layer to protect a ferroelectric capacitor after contact has been made to the capacitor electrode (1999-04-01)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
 * {ref}`US 6,300,252 B1 <patent-gp23626242>` — Method for etching fuse windows in IC devices and devices made (1999-10-01)
@@ -490,6 +520,24 @@ first, and then by status.
 
 ### Status unknown
 
+* {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
+* {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
+* {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
+* {ref}`US 7,151,048 B1 <patent-gp37526559>` — unknown
+* {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
+* {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
+* {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
+* {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
+* {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
+* {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
+* {ref}`US 7,989,328 B2 <patent-gp39526963>` — unknown
+* {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
+* {ref}`US 7,880,219 B2 <patent-gp40071591>` — unknown
+* {ref}`US 9,543,262 B1 <patent-gp57705840>` — unknown
+* {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
+* {ref}`US 9,466,496 B2 <patent-gp52808978>` — unknown
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
+* {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
+* {ref}`US 11,610,820 B2 <patent-gp73016725>` — unknown
 * {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown

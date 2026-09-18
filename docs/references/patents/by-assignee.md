@@ -68,6 +68,27 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 
+## Cypress Semiconductor Corp.
+
+* {ref}`US 4,986,878 A <patent-gp22827270>` — Process for improved planarization of the passivation layers for semiconductor devices (1988-07-19)
+* {ref}`US 5,443,998 A <patent-gp27012173>` — Method of forming a chlorinated silicon nitride barrier layer (1989-08-01)
+* {ref}`US 6,707,112 B2 <patent-gp24694701>` — MOS transistor with ramped gate oxide thickness (1996-06-27)
+* {ref}`US 6,255,180 B1 <patent-gp22147006>` — Semiconductor device with outwardly tapered sidewall spacers and method for forming same (1998-05-14)
+* {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
+* {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
+* {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
+* {ref}`US 7,151,048 B1 <patent-gp37526559>` — unknown
+* {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
+* {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
+* {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
+* {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
+* {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
+* {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
+* {ref}`US 7,880,219 B2 <patent-gp40071591>` — unknown
+* {ref}`US 9,543,262 B1 <patent-gp57705840>` — unknown
+* {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
+* {ref}`US 9,466,496 B2 <patent-gp52808978>` — unknown
+
 ## SkyWater Technology Foundry Inc
 
 * {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
@@ -79,6 +100,7 @@ heading here is not necessarily the name printed on the patent.
 
 ## Infineon Technologies LLC (now Cypress Semiconductor Corp)
 
+* {ref}`US 11,610,820 B2 <patent-gp73016725>` — unknown
 * {ref}`US 11,810,616 B2 <patent-gp75974473>` — in force
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
 
@@ -300,6 +322,10 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
 
+## Longitude Flash Memory Solutions Ltd.
+
+* {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
+
 ## LSI Logic Corp (now Bell Semiconductor LLC)
 
 * {ref}`US 5,963,801 A <patent-gp25087511>` — Method of forming retrograde well structures and punch-through barriers using low energy implants (1996-12-19)
@@ -376,6 +402,11 @@ heading here is not necessarily the name printed on the patent.
 
 * {ref}`US 4,703,252 A <patent-gp24828889>` — Apparatus and methods for resistivity testing (1985-02-22)
 
+## Ramtron International Corp.
+
+* {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
+* {ref}`US 6,242,299 B1 <patent-gp23084824>` — Barrier layer to protect a ferroelectric capacitor after contact has been made to the capacitor electrode (1999-04-01)
+
 ## RCA Corp
 
 * {ref}`US 3,893,869 A <patent-gp23886506>` — Megasonic cleaning system (1974-05-31)
@@ -417,6 +448,8 @@ heading here is not necessarily the name printed on the patent.
 
 * {ref}`US 7,439,141 B2 <patent-gp26708682>` — Shallow trench isolation approach for improved STI corner rounding (2001-12-27)
 * {ref}`US 6,963,106 B1 <patent-gp32825106>` — Memory array with memory cells having reduced short channel effects (2003-05-03)
+* {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
+* {ref}`US 7,989,328 B2 <patent-gp39526963>` — unknown
 
 ## Startec Ventures Inc (now LAir Liquide SA pour lEtude et lExploitation des Procedes Georges Claude)
 

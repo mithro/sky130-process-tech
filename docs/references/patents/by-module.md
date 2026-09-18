@@ -30,7 +30,9 @@ Steps 1–13.
 * {ref}`US 7,439,141 B2 <patent-gp26708682>` — Shallow trench isolation approach for improved STI corner rounding (2001-12-27)
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
+* {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
 * {ref}`US 6,960,781 B2 <patent-gp32990685>` — Shallow trench isolation process (2003-03-07)
+* {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
@@ -61,6 +63,8 @@ Steps 14–34.
 * {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — Photodiode having a buried well region (2004-09-14)
+* {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
+* {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
@@ -73,6 +77,7 @@ Steps 35–42.
 * {ref}`US 5,963,801 A <patent-gp25087511>` — Method of forming retrograde well structures and punch-through barriers using low energy implants (1996-12-19)
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
+* {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
 * {ref}`US 6,818,558 B1 <patent-gp31979047>` — Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS) type devices (2001-07-31)
 * {ref}`US 6,828,201 B1 <patent-gp33476239>` — Method of manufacturing a top insulating layer for a sonos-type device (2001-10-22)
@@ -84,6 +89,7 @@ Steps 35–42.
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 2018/0366563 A1 <patent-gp48743295>` — in force
 * {ref}`US 7,670,963 B2 <patent-gp40072821>` — in force
+* {ref}`US 7,880,219 B2 <patent-gp40071591>` — unknown
 * {ref}`US 8,067,284 B1 <patent-gp44994327>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 8,283,261 B2 <patent-gp40072822>` — in force
@@ -100,6 +106,7 @@ Steps 35–42.
 * {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
 * {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
+* {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
@@ -110,6 +117,8 @@ Steps 35–42.
 * {ref}`TW I640082 B <patent-gp52707807>` — in force
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
+* {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
+* {ref}`US 11,610,820 B2 <patent-gp73016725>` — unknown
 * {ref}`US 11,810,616 B2 <patent-gp75974473>` — in force
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
 
@@ -117,6 +126,7 @@ Steps 35–42.
 
 Steps 43–47.
 
+* {ref}`US 6,707,112 B2 <patent-gp24694701>` — MOS transistor with ramped gate oxide thickness (1996-06-27)
 * {ref}`US 5,963,801 A <patent-gp25087511>` — Method of forming retrograde well structures and punch-through barriers using low energy implants (1996-12-19)
 * {ref}`US 5,851,892 A <patent-gp25314008>` — Fabrication sequence employing an oxide formed with minimized inducted charge and/or maximized breakdown voltage (1997-05-07)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
@@ -140,6 +150,7 @@ Steps 48–63.
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
+* {ref}`US 7,151,048 B1 <patent-gp37526559>` — unknown
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
@@ -180,10 +191,12 @@ Steps 76–88.
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
+* {ref}`US 6,255,180 B1 <patent-gp22147006>` — Semiconductor device with outwardly tapered sidewall spacers and method for forming same (1998-05-14)
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
+* {ref}`US 9,466,496 B2 <patent-gp52808978>` — unknown
 
 ## Pre-metal dielectric, contact silicide and local interconnect
 
@@ -201,9 +214,11 @@ Steps 89–106.
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
 * {ref}`US 5,738,574 A <patent-gp24192580>` — Continuous processing system for chemical mechanical polishing (1995-10-27)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
+* {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
 * {ref}`US 6,906,421 B1 <patent-gp34632364>` — Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same (1998-01-14)
 * {ref}`US 6,030,881 A <patent-gp22109576>` — High throughput chemical vapor deposition process capable of filling high aspect ratio structures (1998-05-05)
 * {ref}`US 6,350,353 B2 <patent-gp23783296>` — Alternate steps of IMP and sputtering process to improve sidewall coverage (1999-11-24)
+* {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
@@ -230,6 +245,7 @@ Steps 107–117.
 * {ref}`US 6,969,448 B1 <patent-gp23892778>` — Method for forming a metallization structure in an integrated circuit (1999-12-30)
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
+* {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
 
 ## Via 1, metal 2 and via 2
 
@@ -251,6 +267,8 @@ Steps 118–134.
 * {ref}`US 6,013,581 A <patent-gp21630827>` — Method for preventing poisoned vias and trenches (1998-07-28)
 * {ref}`US 6,214,745 B1 <patent-gp22722349>` — Method of improving surface planarity of chemical-mechanical polishing operation by forming shallow dummy pattern (1998-11-19)
 * {ref}`US 6,179,973 B1 <patent-gp26812562>` — Apparatus and method for controlling plasma uniformity across a substrate (1999-01-05)
+* {ref}`US 6,242,299 B1 <patent-gp23084824>` — Barrier layer to protect a ferroelectric capacitor after contact has been made to the capacitor electrode (1999-04-01)
+* {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
 * {ref}`US 6,350,353 B2 <patent-gp23783296>` — Alternate steps of IMP and sputtering process to improve sidewall coverage (1999-11-24)
 * {ref}`US 6,379,849 B1 <patent-gp24795638>` — Method for forming binary intensity masks (2000-10-26)
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
@@ -289,6 +307,8 @@ Steps 135–148.
 * {ref}`US 6,849,549 B1 <patent-gp34080863>` — Method for forming dummy structures for improved CMP and reduced capacitance (2003-12-04)
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
+* {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
+* {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
 
 ## Metal 4, second MiM capacitor, via 4 and metal 5
@@ -324,6 +344,7 @@ Steps 149–163.
 
 Steps 164–171.
 
+* {ref}`US 4,986,878 A <patent-gp22827270>` — Process for improved planarization of the passivation layers for semiconductor devices (1988-07-19)
 * {ref}`US 5,380,401 A <patent-gp21710466>` — Method to remove fluorine residues from bond pads (1993-01-14)
 * {ref}`US 5,872,390 A <patent-gp24070664>` — Fuse window with controlled fuse oxide thickness (1995-08-28)
 * {ref}`US 5,872,387 A <patent-gp24345606>` — Deuterium-treated semiconductor devices (1996-01-16)
@@ -334,10 +355,12 @@ Steps 164–171.
 * {ref}`US 6,835,642 B2 <patent-gp32593189>` — Method of forming a metal fuse on semiconductor devices (2002-12-18)
 * {ref}`US 7,055,532 B2 <patent-gp34678118>` — Method to remove fluorine residue from bond pads (2003-12-18)
 * {ref}`US 7,679,384 B2 <patent-gp40095286>` — in force
+* {ref}`US 9,543,262 B1 <patent-gp57705840>` — unknown
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
 
 ## sky130B ReRAM module
 
+* {ref}`US 7,989,328 B2 <patent-gp39526963>` — unknown
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
 * {ref}`US 10,003,022 B2 <patent-gp54018263>` — in force
 * {ref}`US 9,431,609 B2 <patent-gp55302792>` — in force
@@ -496,6 +519,7 @@ that are not specific to one step.
 * {ref}`US 4,789,648 A <patent-gp25155097>` — Method for producing coplanar multi-level metal/insulator films on a substrate and for forming patterned conductive lines simultaneously with stud vias (1985-10-28)
 * {ref}`US 4,944,836 A <patent-gp25155001>` — Chem-mech polishing method for producing coplanar metal/insulator films on a substrate (1985-10-28)
 * {ref}`US 5,247,199 A <patent-gp27357991>` — Process for forming twin well CMOS integrated circuits (1986-01-15)
+* {ref}`US 5,443,998 A <patent-gp27012173>` — Method of forming a chlorinated silicon nitride barrier layer (1989-08-01)
 * {ref}`US 4,948,458 A <patent-gp23554962>` — Method and apparatus for producing magnetically-coupled planar plasma (1989-08-14)
 * {ref}`US 5,155,336 A <patent-gp27042189>` — Rapid thermal heating apparatus and method (1990-01-19)
 * {ref}`US 5,160,534 A <patent-gp27460980>` — Titanium-tungsten target material for sputtering and manufacturing method therefor (1990-06-15)
