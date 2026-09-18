@@ -95,7 +95,7 @@ fab:
    particles.
 
 We infer that the pad oxide is left in place: a dilute-HF "oxide-last"
-step is avoided here because the same oxide must still screen the four
+step is avoided here because the same oxide must still screen the three
 implants that follow ({ref}`NWI <step-018>` to {ref}`LVTPI <step-020>`);
 some flows accept a small oxide loss in SC-1 as the price of
 cleanliness.[^txt-02]
