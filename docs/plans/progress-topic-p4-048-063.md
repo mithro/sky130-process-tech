@@ -51,8 +51,8 @@ before being fixed or declined.
 | 057-L2 | Low | fixed | = 051-M1 |
 | 057-L3 | Low | fixed | = 051-L3; also removed fujimura-1989 from the in-text "two-step sequence" sentence, keeping only pat-strip-mosel (the actual source of that sequence). |
 | 058-L1 | Low | fixed | Added the PDK's NGNIT e-test corroboration and the Tsang et al. nitride-cap corroboration (with correct mechanism) to What this step is / Resistor protection. |
-| 059-L1 | Low | open | |
-| 059-L2 | Low | open | |
+| 059-L1 | Low | fixed | Confirmed via OpenAlex: Hinsberg 1992 measured N-methylpyrrolidone (an amide), not amines specifically. Reworded to "amines and amides". |
+| 059-L2 | Low | fixed | Duplicated the four primary-source citations (sturtevant-1994, dijkstra-1993, he-1998, bell-1996) into Cross-check, per citation-style.md rule 5. |
 | 060-L1 | Low | open | |
 | 060-L2 | Low | open | |
 | 060-L3 | Low | open | |
