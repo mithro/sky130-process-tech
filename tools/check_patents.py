@@ -34,6 +34,11 @@ checker verifies:
   member's number.
 * **Wording.** Relevance reasons are one sentence and do not say that
   SkyWater uses a patent.
+* **Status vocabulary.** No application-type member is recorded
+  ``Active`` (the design reserves that status for a granted patent's own
+  Legal-status field; a parser reading the page's first
+  ``itemprop="ifiStatus"`` span instead of ``legalStatusIfi`` > ``status``
+  produces this on a published-application page).
 
 Run with ``uv run tools/check_patents.py [path]``; the exit status is non-zero
 when a problem is found.
@@ -338,6 +343,22 @@ def check_member(m: dict, fam_id: str, problems: list[str]) -> None:
             problems.append(f"{where}: link '{name}' is not on a public patent database host")
     if not VERIFIED_RE.match(str(m.get("verified", ""))):
         problems.append(f"{where}: 'verified' must start with an ISO date and name the source")
+    if m.get("document_type") in APPLICATION_TYPES and m.get("status") == "Active":
+        # H1 regression guard: the design's status vocabulary reserves
+        # "Active" for a granted patent's own Legal-status field
+        # (itemprop="legalStatusIfi" > "status"); a published application
+        # is "Granted" once its patent issues (rule 2) and otherwise
+        # "Pending"/"Abandoned"/"Withdrawn"/etc. "Active" on an
+        # application-type member means a parser read the wrong field —
+        # e.g. the first itemprop="ifiStatus" span in the page, which on
+        # an application page belongs to the "Worldwide applications"
+        # table, not the page's own Legal-status field, and can disagree
+        # with it (round-3 verification finding H1, 2026-09-19).
+        problems.append(
+            f"{where}: status 'Active' on an application-type member — "
+            f"the design vocabulary reserves 'Active' for a granted patent; "
+            f"re-check the source against itemprop=\"legalStatusIfi\" > \"status\", "
+            f"not the first itemprop=\"ifiStatus\" span in the page")
     if "expiry" in m:
         e = m["expiry"]
         if not isinstance(e, dict) or set(e) != {"date", "estimated", "basis"}:
