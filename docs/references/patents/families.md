@@ -2774,7 +2774,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5820367A, retrieved 2026-09-14)
 
-**Estimated expiry:** 2016-09-20 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0992625A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+**Estimated expiry:** 2016-09-20 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0992625A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 
 **Google Patents family ID:** `17432179` (family section of the representative's own record page, linked below)
 
@@ -2927,7 +2927,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6784552B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2016-12-22 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH09181181A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+**Estimated expiry:** 2016-12-22 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH09181181A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 
 **Google Patents family ID:** `24310003` (family section of the representative's own record page, linked below)
 
@@ -3084,7 +3084,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5595919A, retrieved 2026-09-14)
 
-**Estimated expiry:** 2017-02-20 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of SG66330A1 (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+**Estimated expiry:** 2017-02-20 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of SG66330A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 
 **Google Patents family ID:** `24414167` (family section of the representative's own record page, linked below)
 
@@ -3512,7 +3512,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5958288A, retrieved 2026-09-14)
 
-**Estimated expiry:** 2017-11-26 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL153843A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+**Estimated expiry:** 2017-11-26 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL153843A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 
 **Google Patents family ID:** `25030826` (family section of the representative's own record page, linked below)
 
@@ -5437,7 +5437,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6605199B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2022-11-14 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL161750A0 (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+**Estimated expiry:** 2022-11-14 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL161750A0 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 
 **Google Patents family ID:** `25537645` (family section of the representative's own record page, linked below)
 
@@ -6524,7 +6524,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US7501352B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2026-03-30 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of CN101151718A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+**Estimated expiry:** 2026-03-30 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of CN101151718A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 
 **Google Patents family ID:** `37073778` (family section of the representative's own record page, linked below)
 
@@ -6811,7 +6811,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US7670963B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2028-05-25 — the latest recorded or estimated term among all members belongs to TW200847344A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2028-05-25; CN101548385B is the most recent member still shown as in force, with estimated expiry 2027-09-28
+**Estimated expiry:** 2028-05-25 — the latest recorded or estimated term among all members belongs to TW200847344A (status shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2028-05-25; CN101548385B is the most recent member still shown as in force, with estimated expiry 2027-09-28
 
 **Google Patents family ID:** `40072821` (family section of the representative's own record page, linked below)
 
@@ -7408,7 +7408,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US8685813B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2033-02-15 — the latest recorded or estimated term among all members belongs to TW201334120A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2033-02-15; CN103258798B is the most recent member still shown as in force, with estimated expiry 2032-09-06
+**Estimated expiry:** 2033-02-15 — the latest recorded or estimated term among all members belongs to TW201334120A (status shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2033-02-15; CN103258798B is the most recent member still shown as in force, with estimated expiry 2032-09-06
 
 **Google Patents family ID:** `48945910` (family section of the representative's own record page, linked below)
 
@@ -7491,7 +7491,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8796098B1, retrieved 2026-09-14)
 
-**Estimated expiry:** 2034-02-26 — the latest recorded or estimated term among all members belongs to TW201440178A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2034-02-26; CN104009005B is the most recent member still shown as in force, with estimated expiry 2034-02-25
+**Estimated expiry:** 2034-02-26 — the latest recorded or estimated term among all members belongs to TW201440178A (status shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2034-02-26; CN104009005B is the most recent member still shown as in force, with estimated expiry 2034-02-25
 
 **Google Patents family ID:** `51229009` (family section of the representative's own record page, linked below)
 
@@ -7575,7 +7575,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10002878B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2034-12-12 — the latest recorded or estimated term among all members belongs to TW201535486A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2034-12-12; CN105531828B is the most recent member still shown as in force, with estimated expiry 2034-11-20
+**Estimated expiry:** 2034-12-12 — the latest recorded or estimated term among all members belongs to TW201535486A (status shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2034-12-12; CN105531828B is the most recent member still shown as in force, with estimated expiry 2034-11-20
 
 **Google Patents family ID:** `53369470` (family section of the representative's own record page, linked below)
 
@@ -7615,7 +7615,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US10103244B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2035-01-10 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to TW201530732A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2035-01-10
+**Estimated expiry:** 2035-01-10 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to TW201530732A (status shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2035-01-10
 
 **Google Patents family ID:** `53522052` (family section of the representative's own record page, linked below)
 
@@ -7698,7 +7698,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10003022B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2035-03-04 — the latest recorded or estimated term among all members belongs to TW201539730A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2035-03-04; KR101770456B1 is the most recent member still shown as in force, with estimated expiry 2034-12-17
+**Estimated expiry:** 2035-03-04 — the latest recorded or estimated term among all members belongs to TW201539730A (status shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2035-03-04; KR101770456B1 is the most recent member still shown as in force, with estimated expiry 2034-12-17
 
 **Google Patents family ID:** `54018263` (family section of the representative's own record page, linked below)
 
@@ -7833,7 +7833,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US9824895B1, retrieved 2026-09-14)
 
-**Estimated expiry:** 2037-09-27 — the latest recorded or estimated term among all members belongs to TW201826352A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2037-09-27; US9824895B1 is the most recent member still shown as in force, with estimated expiry 2036-12-06
+**Estimated expiry:** 2037-09-27 — the latest recorded or estimated term among all members belongs to TW201826352A (status shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2037-09-27; US9824895B1 is the most recent member still shown as in force, with estimated expiry 2036-12-06
 
 **Google Patents family ID:** `60303236` (family section of the representative's own record page, linked below)
 
@@ -7871,7 +7871,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10062748B1, retrieved 2026-09-14)
 
-**Estimated expiry:** 2038-02-27 — the latest recorded or estimated term among all members belongs to TW201841311A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2038-02-27; CN108511386B is the most recent member still shown as in force, with estimated expiry 2038-02-13
+**Estimated expiry:** 2038-02-27 — the latest recorded or estimated term among all members belongs to TW201841311A (status shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2038-02-27; CN108511386B is the most recent member still shown as in force, with estimated expiry 2038-02-13
 
 **Google Patents family ID:** `63208306` (family section of the representative's own record page, linked below)
 
@@ -7910,7 +7910,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10062573B1, retrieved 2026-09-14)
 
-**Estimated expiry:** 2038-06-14 — the latest recorded or estimated term among all members belongs to TW201913880A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2038-06-14; US10062573B1 is the most recent member still shown as in force, with estimated expiry 2037-08-22
+**Estimated expiry:** 2038-06-14 — the latest recorded or estimated term among all members belongs to TW201913880A (status shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2038-06-14; US10062573B1 is the most recent member still shown as in force, with estimated expiry 2037-08-22
 
 **Google Patents family ID:** `63208150` (family section of the representative's own record page, linked below)
 
@@ -7986,7 +7986,7 @@ families and members are counted.
 
 **Legal status (representative):** Pending (Google Patents (IFI Claims) status of US20220122660A1, retrieved 2026-09-18)
 
-**Estimated expiry:** 2040-07-22 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US20220122660A1 (status shown: Pending; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2040-07-22
+**Estimated expiry:** 2040-07-22 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US20220122660A1 (status shown: Pending; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2040-07-22
 
 **Google Patents family ID:** `74192490` (family section of the representative's own record page, linked below)
 
@@ -8062,7 +8062,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US12232324B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2043-09-27 — the latest recorded or estimated term among all members belongs to US20250185250A1 (status shown: Pending; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2043-09-27; JP7846308B2 is the most recent member still shown as in force, with estimated expiry 2043-09-26
+**Estimated expiry:** 2043-09-27 — the latest recorded or estimated term among all members belongs to US20250185250A1 (status shown: Pending; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2043-09-27; JP7846308B2 is the most recent member still shown as in force, with estimated expiry 2043-09-26
 
 **Google Patents family ID:** `90359049` (family section of the representative's own record page, linked below)
 
