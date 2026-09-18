@@ -135,8 +135,13 @@ fab (SKY130's recipe is not public):
   values, category page[^txt-02][^wiki-sin]); Roenigk and Jensen model
   the reactor,[^roenigk-1987] Habraken and Kuiper review the film
   properties.[^habraken-1994] The film is stoichiometric, dense,
-  nearly perfectly conformal, about 1 GPa tensile,[^temple-boyer-1998]
-  and deposits on both wafer faces. The drawback is thermal budget:
+  nearly perfectly conformal and under tensile stress of order 1 GPa
+  (typical industry value, category page[^wiki-sin][^txt-02]), and
+  deposits on both wafer faces; Temple-Boyer et al. measured the
+  stress of LPCVD SiNₓ from silane and ammonia across deposition
+  temperature, pressure and gas ratio and obtained ≈600 MPa for their
+  lowest-stress Si₃N₄ condition.[^temple-boyer-1998] The drawback is
+  thermal budget:
   minutes at 750 °C after the tips are annealed is a real diffusion
   step, and part of the reason the tip anneal precedes the spacer
   rather than following it.
