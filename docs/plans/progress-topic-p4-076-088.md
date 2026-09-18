@@ -31,6 +31,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | id | status | note |
 |---|---|---|
 | verify-1 | fixed | Re-confirmed via Crossref abstract of 10.1116/1.582097: with NF3, Kastenmeier 1999 reports a nitride-to-oxide ratio of ~70, not "not etched at all" (that phrase applies only to the CF4 process, where SiO2 is not etched at all). Fixed 079-npcme.md:131-132 to state both cases correctly. |
+| verify-2 | fixed | Fetched the Gumpher 2004 abstract myself via OpenAlex (api.openalex.org/works/doi:10.1149/1.1690294), since Crossref carries none and IOP bot-blocks direct fetches: confirms 550-600 C, 200 mm vertical batch furnace, 4-30 A/min deposition rate. Replaced the "typical industry value" hedge (which also wrongly said the paper's title confirms only "low-temperature") with the sourced figures on 076-spnit.md. |
 
 ## Final status
 
