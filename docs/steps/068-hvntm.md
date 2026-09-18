@@ -79,8 +79,8 @@ compared the hot-carrier behaviour of {term}`LDD` and LATID
 devices directly.[^rafi-2001] The PDK's 40° HV tip angle[^pdk-03] is
 the signature of exactly this kind of drain, and the PDK's Table F2b
 marks `HVNTM` "created" for `nfet_g5v0d10v5`, the ESD NMOS built on it,
-the 5 V and 3.3 V native NMOS, the 16 V drain-extended NMOS and several
-HV diodes, resistors and varactors,[^pdk-06] so this is where those
+the 5 V and 3.3 V native NMOS, the 16 V drain-extended NMOS, four HV
+diodes, an HV n-diffusion resistor and an HV varactor,[^pdk-06] so this is where those
 devices' n-type extension is defined; how the implant is placed
 relative to a drain-extended device's drift well is not stated. The
 {term}`drain-extended <DEMOS>` 20 V
