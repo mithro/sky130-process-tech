@@ -311,15 +311,21 @@ a module, and its materials are kept out of the table above for that
 reason. SkyWater's documentation for the device states that "a
 HfO2-based RRAM layer is fabricated within the BEOL
 process";[^reram-background] it does not name the electrodes or the
-deposition chemistry. A typical atomic-layer-deposition route for the
-hafnium oxide uses HfCl₄ and water,[^pat-rram-oxide-tsmc] and
-SkyWater's capability list includes ALD of "HfO2" and of "TiN".[^skw-01]
+deposition chemistry. A TSMC patent that may still be in force gives a
+typical atomic-layer-deposition route for the hafnium oxide, in the
+collapsed note below this paragraph; SkyWater's capability list includes
+ALD of "HfO2" and of "TiN".[^skw-01]
 The ReRAM page notes that the published hafnium-oxide cells it cites
 use TiN electrodes, some with a thin Ti or Hf layer next to the oxide;
 gives BCl₃/O₂ plasma, fluorine- or argon-based plasmas and dilute HF
 as typical etch chemistries; describes silicon oxide and nitride for
 encapsulation; and reads the upper vias as using TiN, tungsten and
 WF₆ as the base via 1 does (inference on that page).
+
+:::{dropdown} From a patent shown as in force (US 9,431,609; estimated expiry 2035-03-31) — open to read
+A typical atomic-layer-deposition route for the hafnium oxide uses
+HfCl₄ and water.[^pat-rram-oxide-tsmc]
+:::
 
 (materials-films)=
 ## Films and stacks deposited
@@ -341,7 +347,7 @@ with its inferences marked there.
 
 | Film (PDK label) | Formed at | PDK thickness or dimension | Other public numbers or composition | Reading on the step pages |
 |------------------|-----------|----------------------------|-------------------------------------|---------------------------|
-| Pad (base) oxide | {ref}`BOX <step-002>` | none | Cypress {term}`SONOS` patent: pad oxide "from about 10 nanometers (nm) to about 20 nm"[^pat-04] | Thermal SiO₂ of the order of 10–20 nm (typical) |
+| Pad (base) oxide | {ref}`BOX <step-002>` | none | A Cypress {term}`SONOS` patent that may still be in force; see the collapsed note under this table | Thermal SiO₂ of the order of 10–20 nm (typical) |
 | Isolation nitride | {ref}`ISONIT <step-003>` | none | AmberWave STI patent: mask nitride "500-2000 Å"[^pat-sti-amberwave] | LPCVD Si₃N₄ of the order of 50–200 nm from the cited patent;[^pat-sti-amberwave] the step pages use 150 nm as a working figure; removed at {ref}`NS19 <step-013>` |
 | Trench liner oxide | {ref}`LINOX <step-010>` | none | Spansion/Cypress-lineage STI patent: liner "to a thickness of approximately 100-300 Å"[^pat-sti-cr] | Thermal SiO₂ of the order of 10–30 nm (typical)[^pat-sti-cr] |
 | Field (fill) oxide, "FOX K=3.9" | {ref}`FILOX <step-011>`, polished at {ref}`CMPNIT <step-012>` | Field-oxide top at 0.3262 µm on the diagram's scale;[^pdk-04] "field oxide (above silicon surface) ... underneath poly" 0.07 µm[^pdk-03] | — | HDP-CVD oxide; fill thickness not public |
@@ -374,6 +380,12 @@ with its inferences marked there.
 | "TOPOX K=3.9" | {ref}`NFUSOX <step-164>` | 0.09 µm on the metal-5 top, 0.070 µm on its sidewall[^pdk-04] | Fab 4 passivation "1000Å TEOS / 9000Å PECVD Nitride"[^cyp-qtp-014807] and "1000A TEOS/9000A Si3N4"[^cyp-qtp-123907] | Thin undoped oxide |
 | "TOPNIT K=7.5" | {ref}`NTSD <step-167>` | 0.54 µm on the metal-5 top, 0.4223 µm on its sidewall[^pdk-04] | As above, and "7000 +/- 2000A Nitride"[^cyp-qtp-113005] | PECVD silicon nitride |
 | "PI1 K=2.94" | no step | Drawn over the passivation, no thickness[^pdk-04] | "Polyimide cure" is a furnace entry[^skw-01] | Not part of the step list |
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The *Pad (base) oxide* row above: the Cypress {term}`SONOS` patent gives
+the pad oxide as "from about 10 nanometers (nm) to about
+20 nm".[^pat-04]
+:::
 
 ## Safety and abatement
 

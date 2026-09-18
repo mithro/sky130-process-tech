@@ -84,11 +84,17 @@ dioxide.[^nakata-2016]
 
 ### Carbon dioxide in rinse water
 
-Ultrapure water is highly resistive, and an MKS patent dissolves carbon
-dioxide in it for cleaning fragile devices: "The dissolved
-CO2 reduces the resistivity of the DI water to a level that prevents
-surface charging".[^pat-dico2-mks] SkyWater lists "CO2 injected DI" on
-its batch rotational solvent tool (see *At SkyWater*).[^skw-01]
+Ultrapure water is highly resistive. An MKS patent that may still be in
+force dissolves carbon dioxide in it for cleaning fragile devices, and
+says what that does to the water; its wording is in the collapsed note
+below. SkyWater lists "CO2 injected DI" on its batch rotational solvent
+tool (see *At SkyWater*).[^skw-01]
+
+:::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read
+An MKS patent dissolves carbon dioxide in ultrapure water for cleaning
+fragile devices: "The dissolved CO2 reduces the resistivity of the DI
+water to a level that prevents surface charging".[^pat-dico2-mks]
+:::
 
 ## Representative materials and grades
 
@@ -116,7 +122,12 @@ standards below. SKY130's water specification is not public.
   resistivity cells, TOC by resistivity or CO₂, ICP-MS, ion chromatography
   and light scattering).[^itrs-2001-yield]
 * **Carbonated DI water** — CO₂-dissolved water for rinsing where charging
-  matters.[^pat-dico2-mks]
+  matters; the patent describing it may still be in force, and is in the
+  collapsed note below this list.
+
+:::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read
+Carbonated DI water is the subject of an MKS patent.[^pat-dico2-mks]
+:::
 
 ## At SkyWater
 
@@ -129,7 +140,8 @@ SkyWater's *Facilities & Capabilities* page mentions water once, under
 
 Read term by term, the batch rotational tool rinses with DI water into
 which carbon dioxide is injected, which we read as carbonated rinse water
-of the kind the MKS patent describes;[^pat-dico2-mks] SkyWater does not
+of the kind the MKS patent describes (that patent may still be in force;
+it is cited in the collapsed notes above and below); SkyWater does not
 explain it. The page describes no UPW plant, water quality or water use,
 and no other tool entry mentions water.[^skw-01] SkyWater's filings list
 no water supplier among raw materials.[^sec-01][^sec-02] The S-1's
@@ -199,7 +211,8 @@ standards and literature statements.
   use.[^itrs-2001-yield]
 * **Point-of-use treatment.** Final filters at the tool, as Gaudet
   described for rinse water,[^gaudet-1984] and CO₂ injection where rinse
-  charging matters.[^pat-dico2-mks][^skw-01]
+  charging matters[^skw-01] (the MKS patent, which may still be in force,
+  is in the collapsed note below this list).
 * **Conservation and reclaim.** "A well-implemented recycle program can
   actually improve final water quality by using a cleaner stream for the
   feed".[^itrs-2001-yield] Cartwright described a semiconductor plant
@@ -211,6 +224,11 @@ standards and literature statements.
 * **Waste water.** Rinse water carries acids, fluoride, solvent and
   slurry to waste treatment; CMP is among the largest water users (the
   CMP step pages' reading of Quirk and Serda).[^txt-07]
+
+:::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read
+CO₂ injection at the point of use is the subject of an MKS
+patent.[^pat-dico2-mks]
+:::
 
 ## Process-integration notes for SKY130
 
@@ -226,8 +244,9 @@ conditions of their own. SKY130's water specification is not public.
 * **Rinse charging on the back end.** The post-etch solvent cleans of the
   contact, via and metal etches rinse wafers carrying isolated metal and
   thin dielectrics; SkyWater's "CO2 injected DI" on its solvent tool
-  matches the use of carbonated water against surface
-  charging.[^skw-01][^pat-dico2-mks]
+  matches the use of carbonated water against surface charging[^skw-01]
+  (the MKS patent, which may still be in force, is in the collapsed note
+  below this list).
 * **Developer rinse.** The mask-step pages name DI water beside the TMAH
   developer and rinse solvents; rinsing the developer off with water is
   industry practice ({ref}`material-lithography-materials`).
@@ -237,6 +256,11 @@ conditions of their own. SKY130's water specification is not public.
 * **Water in the baths.** The RCA cleans, SPM and dilute HF of the wet
   chemicals class are made up with DI water to their working
   concentrations ({ref}`material-wet-chemicals`).[^wiki-rca]
+
+:::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read
+The carbonated water used against surface charging is the subject of an
+MKS patent.[^pat-dico2-mks]
+:::
 
 ## Related pages
 

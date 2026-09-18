@@ -94,11 +94,17 @@ short-channel behavior of submicrometer NMOSFETs",[^shahidi-1993] and
 Momiyama et al. used "a tilted In implantation" for 60 nm nMOSFETs,
 citing "its steeper lateral profile" against boron, and reported "no penalties with use of In from device or reliability points
 of view".[^momiyama-1999] Indium has no convenient gas and is among the
-elements "often implanted from solid sources".[^wiki-implant] A Cypress
-embedded-SONOS patent implants a memory-transistor channel "with Indium
-(In) at an energy of from about 50 to about 500 kilo-electron volts
-(keV)",[^pat-04] and a 2020 Cypress article recommends "deeper channel
-implants with heavier species such as Indium".[^cyp-25]
+elements "often implanted from solid sources".[^wiki-implant] A 2020
+Cypress article recommends "deeper channel implants with heavier species
+such as Indium",[^cyp-25] and a Cypress embedded-SONOS patent that may
+still be in force gives an implant energy range, in the collapsed note
+below.
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The Cypress embedded-SONOS patent implants a memory-transistor channel
+"with Indium (In) at an energy of from about 50 to about 500
+kilo-electron volts (keV)".[^pat-04]
+:::
 
 ### Sub-atmospheric delivery
 
@@ -319,8 +325,10 @@ public beyond the ranges SkyWater lists for its tools.[^skw-01]
   pages note from Axcelis's statement about fluorinated
   species.[^axcelis-gsd-page]
 * **Indium as an option.** The {ref}`LVTNI <step-015>` and
-  {ref}`PTSI <step-037>` pages name indium because Cypress's SONOS patent
-  and article use it for memory-transistor channels;[^pat-04][^cyp-25]
+  {ref}`PTSI <step-037>` pages name indium because a 2020 Cypress article
+  recommends it for memory-transistor channels,[^cyp-25] as does a
+  Cypress patent that may still be in force (collapsed note below this
+  list);
   SkyWater lists no indium, so an indium implant would need a solid
   source on a tool whose entry does not mention one (our
   reading).[^skw-01]
@@ -333,6 +341,11 @@ public beyond the ranges SkyWater lists for its tools.[^skw-01]
   names phosphine for HDP PSG and TMPO or phosphine for a TEOS route, and
   the HDP page notes that Hsiao et al.'s abstract does not name the
   precursor.[^skw-01][^hsiao-2005]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+Cypress's SONOS patent uses indium for memory-transistor
+channels.[^pat-04]
+:::
 
 ## Related pages
 
