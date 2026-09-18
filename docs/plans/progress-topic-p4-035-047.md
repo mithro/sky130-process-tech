@@ -21,8 +21,8 @@ arithmetic before being fixed or declined.
 | 041-M1 | 041-onom.md | fixed | ONOM-from-tunm-by-oversizing inference overstated |
 | 041-M2 | 041-onom.md | fixed | overlay-to-TUNM inference stated with mixed hedging |
 | 042-M1 | 042-onome.md | fixed | 7-15 nm trapping layer merges two different quantities |
-| 043-M1 | 043-gox100.md | open | ONO-first ordering rationale not given |
-| 043-M2 | 043-gox100.md | open | "somewhat thinner than 11 nm" left unquantified |
+| 043-M1 | 043-gox100.md | fixed | ONO-first ordering rationale not given |
+| 043-M2 | 043-gox100.md | fixed | "somewhat thinner than 11 nm" left unquantified |
 | 044-M1 | 044-lvom.md | open | NOT-hvi inference marked once, used as fact elsewhere |
 | 045-M1 | 045-nchi.md | open | 7 deg tilt asserted; cited analogue specifies zero tilt |
 | 045-M2 | 045-nchi.md | open | "last channel implant" claim too strong |
@@ -50,7 +50,7 @@ arithmetic before being fixed or declined.
 | 041-L1 | 041-onom.md | fixed | ARC-etch question left in confusing order |
 | 042-L1 | 042-onome.md | fixed | two quotation slips (DPS II, SNF gas list) |
 | 043-L1 | 043-gox100.md | fixed | dropped word "oxide" (same as 040-L1) |
-| 043-L2 | 043-gox100.md | open | "5.0V I/O" quoted differently than step 044 |
+| 043-L2 | 043-gox100.md | fixed | "5.0V I/O" quoted differently than step 044 |
 | 044-L1 | 044-lvom.md, 045-nchi.md, 046-goxetch.md | open | "~10 nm" cited to finished-thickness source |
 | 044-L2 | 044-lvom.md | open | beverina-2003 used beyond abstract |
 | 045-L1 | 045-nchi.md | open | AMD quotation drops "zero tilt" clause (same as 045-M1) |
