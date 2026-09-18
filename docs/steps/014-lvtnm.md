@@ -112,9 +112,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
    keV, which a resist of about 1 µm stops with a wide margin
    (industry-typical).[^txt-02] The PDK's own assumptions table gives a
    nominal "Photoresist thickness" of 1.14 µm,[^pdk-03] so we take that
-   as the plausible order of thickness. No anti-reflective coating is
-   needed for a layer whose features are more than twice the wavelength
-   (inference from the 0.380 µm rules).[^wiki-litho]
+   as the plausible order of thickness. No {term}`BARC` is needed for
+   0.38 µm features at i-line (inference).[^wiki-litho]
 3. **Exposure.** The 0.380 µm minimum width and space[^pdk-periph] are
    comfortably within reach of an i-line (365 nm) {term}`stepper`: at {term}`NA` 0.6 the
    process factor is {term}`k₁ <k1>` = 0.38 × 0.6 / 0.365 ≈ 0.62, well above the "0.4
