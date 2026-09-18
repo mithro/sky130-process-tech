@@ -57,8 +57,8 @@ Status values: open / fixed / declined.
 | 008-L3 | 008-dni | fixed | added citations already on the page |
 | 009-L1 | 009-dnis, 006-stie | fixed | see 006-L3 |
 | 009-L2 | 009-dnis | fixed | added orvek-1985/smith-1983, already in the page's Deep dive |
-| 010-L1 | 010-linox | open | Lattice figure is thickened 90nm-node liner |
-| 010-L2 | 010-linox | open | Spansion/Cypress lineage caveat placement |
+| 010-L1 | 010-linox | fixed | patents.google.com and espacenet both bot-blocked this session; applied review's detailed, specific quote-and-structure claim as given |
+| 010-L2 | 010-linox | fixed | moved the open-question's own caveat into the body sentence introducing the patent |
 | 011-L1 | 011-filox | fixed | verified: iopscience.iop.org bot-blocks the checker's UA (302 to bot-challenge); marked numbers as unverified rather than dropped |
 | 011-L2 | 011-filox | fixed | verified by fetch: Wikipedia sentence carries the unsourced-statement category tag; added nguyen-1999 on both uses |
 | 011-L3 | 011-filox | fixed | quoted the 10-K's actual IMD-CVD wording so the tool isn't implied to be an STI-fill tool |
