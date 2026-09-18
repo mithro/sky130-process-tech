@@ -32166,10 +32166,13 @@ families:
     verified: 2026-09-19 USPTO Patent Public Search record (Google Patents unreachable)
   relevance:
   - target: step-084
-    relation: same-lineage-assignee
-    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before SkyWater (SkyWater's
-      Form S-1, SEC-01); the patent concerns forming a gate sidewall spacer with a straight sidewall profile, a spacer-module
-      technique, and it is not evidence that the technique is used in SKY130.
+    relation: technique-class
+    reason: Applicant Spansion LLC (PPUBS applicantName), the AMD-Fujitsu NOR-flash joint venture; Cypress Semiconductor
+      Corporation is the assignee printed at grant only because the 2015 Cypress-Spansion merger completed between this
+      application's 2013 filing and its 2016 grant, not because Cypress was the original filer, so no public source ties
+      this patent's own fab lineage to Bloomington (the round-1 M4 standard); recorded as general prior art (technique-class),
+      not same-lineage-assignee. The patent concerns forming a gate sidewall spacer with a straight sidewall profile, a
+      spacer-module technique, and it is not evidence of SKY130 practice or of any lineage connection.
   inventory_keys: []
   discovery:
   - assignee-search
@@ -32177,6 +32180,12 @@ families:
     for the exact query text), title field restricted to process-module keywords, retrieved 2026-09-19; found while Google
     Patents remained unreachable (patent-index-design.md's "PPUBS fallback").
   notes:
+  - 'Round-4 (r2) verification finding N2: this family was originally recorded same-lineage-assignee on the strength
+    of PPUBS''s assigneeName field alone (Cypress Semiconductor Corporation), the exact inference round-1 M4 rejected
+    for GP32825106. PPUBS''s own applicantName field, not previously checked for this family, gives "Spansion LLC" —
+    confirming the application was filed by Spansion (2013-10-11) and only became a Cypress-assigned record after the
+    2015 merger, before grant (2016-10-11). Corrected to technique-class, matching GP39047941 and GP39526963, the
+    other two Spansion-filed families in this index.'
   - Built from USPTO Patent Public Search, not Google Patents (unreachable this round; tmp/patent-cache/.blocked). Only
     the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
