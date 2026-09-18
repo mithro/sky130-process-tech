@@ -89,7 +89,7 @@ deep-dive entries per step page and twelve per category page
 
 - [~] Technical accuracy review of every step page (independent agent) — per module batch: review report, fix branch `topic/p4-<range>`, verification of the fixes, merge
   - [x] 001–013 — reviewed, 45 findings fixed (trench depth re-derived from the PDK metal-stack drawing, substrate-doping device name), 3 declined with evidence, verified and merged 2026-09-18
-  - [~] 014–034 — reviewed, fixed, in verification
+  - [x] 014–034 — reviewed, 23 findings fixed (a truncated patent quotation, a tool class the patent never names, an RTP uniformity figure for the wrong wafer size, the HVTPM reading kept open on 020, 023 and 024), verified and merged 2026-09-18
   - [~] 035–047 — reviewed, fix round running
   - [~] 048–063 — review running
   - [ ] 064–075
