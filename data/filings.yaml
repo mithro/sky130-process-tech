@@ -6,6 +6,453 @@
 schema_version: 1
 retrieved: 2026-09-14
 filings:
+- id: cypress-annual-report-fy1993
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: 10-K
+  document_type: annual-report
+  parent: null
+  title: Cypress Semiconductor Form 10-K for the fiscal year ended 1994-01-03 (fiscal year 1993)
+  period:
+    label: fiscal year 1993
+    start: null
+    end: 1994-01-03
+  filed: 1994-03-16
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_1994
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1994.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1994.pdf
+  about:
+    summary: >-
+      The earliest Cypress filing in this index. This bare Form 10-K for
+      fiscal year 1993 names the Minnesota plant "Fab 3", says it commenced
+      operations in 1991 (the year SkyWater's later 10-Ks use for a 26-year
+      captive period, at odds with the 20-year figure in SkyWater's IPO
+      filings), and gives its size as 170,000 square feet on 17 acres in
+      Bloomington. The Company's three fabs then ran 0.65-1.2 µm CMOS,
+      0.5-0.8 µm BiCMOS and 0.65 µm Flash processes.
+    quotes:
+    - text: >-
+        Cypress Minnesota (Fab 3), which commenced operations in 1991, is the
+        Company's newest wafer fabrication facility.
+      location: Form 10-K, Item 1, Business, Manufacturing
+    - text: >-
+        an approximately 170,000 square foot wafer fabrication facility (Fab
+        3) on 17 acres of land in Bloomington, Minnesota
+      location: Form 10-K, Item 2, Properties
+  auditor_report:
+    firm: Price Waterhouse
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 1993
+    date: 1994-01-25
+    quote: PRICE WATERHOUSE San Jose, California January 25, 1994
+  relationships:
+  - cypress-fab-operations
+  - minnesota-fab-investment
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The 10-K is the earliest filing in this index to date the Minnesota fab's 1991 start, the year later cited for a 26-year captive period.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_1994, a
+    bare EDGAR-Online reproduction of the Form 10-K rather than a glossy
+    annual report); added to close the FY1991-2002 coverage gap identified
+    in independent review finding FIL-R1-01. annualreports.com does not
+    answer for NASDAQ_CY_1991, 1992 or 1993 (HTTP 404).
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; the cover
+    page of this copy prints "Filed 03/16/94 for the Period Ending 01/03/94",
+    which is used as filed.
+
+- id: cypress-annual-report-fy1995
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 1995 Annual Report to shareholders, for the fiscal year ended 1996-01-01
+  period:
+    label: fiscal year 1995
+    start: null
+    end: 1996-01-01
+  filed: 1996-01-19
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_1995
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
+  about:
+    summary: >-
+      Cypress's 1995 annual report. It records that a new, second Minnesota
+      plant, "Fab IV" (an 8-inch wafer fab, distinct from the original 1991
+      "Fab III"), broke ground in August 1994 and shipped first revenue
+      wafers in 1995, and that the Company invested $194.9 million in capital
+      equipment in 1995, mainly to expand the Minnesota, Texas and San Jose
+      fabs.
+    quotes:
+    - text: >-
+        Fab IV in Bloomington, Minnesota, produced its first revenue wafers
+        in only 11 months, and contributed over $18 million to Cypress's
+        1995 revenue.
+      location: Annual report, "Capacity to Grow" section
+    - text: >-
+        The Company opens its new, state-of-the-art 8-inch wafer
+        manufacturing plant in Bloomington, Minnesota, which offers enough
+        additional manufacturing capacity to permit growth to the $1 billion
+        revenue level.
+      location: Annual report, 1995 highlights timeline
+  auditor_report:
+    firm: Price Waterhouse LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 1995
+    date: 1996-01-19
+    quote: Price Waterhouse LLP San Jose, California January 19, 1996
+  relationships:
+  - cypress-fab-operations
+  - minnesota-fab-investment
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report records the 1995 addition of a second, 8-inch Minnesota fab (Fab IV) alongside the original 1991 fab, by then called Fab III.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_1995);
+    added to close the FY1991-2002 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it.
+
+- id: cypress-annual-report-fy1996
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 1996 Annual Report to shareholders, for the fiscal year ended 1996-12-30
+  period:
+    label: fiscal year 1996
+    start: null
+    end: 1996-12-30
+  filed: 1997-02-25
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_1996
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
+  about:
+    summary: >-
+      Cypress's 1996 annual report. It says the Company manufactured its
+      products at four wafer fabs in California, Minnesota and Texas, and
+      records restructuring charges that transferred equipment to the
+      Texas and Minnesota production fabs.
+    quotes:
+    - text: >-
+        Cypress manufactures its products at four wafer manufacturing plants
+        in California, Minnesota, and Texas.
+      location: Annual report, corporate overview
+  auditor_report:
+    firm: Price Waterhouse LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 1996
+    date: 1997-02-25
+    quote: >-
+      Price Waterhouse LLP San Jose, California January 20, 1997, except as
+      to Note 8, which is as of February 25, 1997
+  relationships:
+  - cypress-fab-operations
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_1996);
+    added to close the FY1991-2002 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the later of the two dates in the auditor's report (a note-specific
+    qualification), so the document was published on or after it.
+
+- id: cypress-annual-report-fy1997
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 1997 Annual Report to shareholders, for the fiscal year ended 1997-12-29
+  period:
+    label: fiscal year 1997
+    start: null
+    end: 1997-12-29
+  filed: 1998-03-06
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_1997
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
+  about:
+    summary: >-
+      Cypress's 1997 annual report. It is the first report in this index to
+      name the 8-inch Minnesota plant "Fab 4" (distinct from the original,
+      6-inch "Fab 3"), producing 1.78 times more chips per wafer, and says
+      the Company's primary production facilities were Texas Fab 2 and
+      Minnesota Fabs 3 and 4, running 0.6 µm processes with a planned ramp
+      of sub-0.5 µm processes in Fab 4.
+    quotes:
+    - text: >-
+        Our newest wafer fabrication facility, Fab 4 in Bloomington,
+        Minnesota, produces 8-inch wafers with 1.78 times more chips per
+        wafer than the 6-inch wafers manufactured in Minnesota Fab 3 and
+        Fab 2 in Round Rock, Texas.
+      location: Annual report, shareholder letter
+    - text: Cypress's primary production facilities are Texas Fab 2 and Minnesota Fabs 3 and 4.
+      location: Annual report, shareholder letter
+  auditor_report:
+    firm: Price Waterhouse LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 1997
+    date: 1998-03-06
+    quote: >-
+      Price Waterhouse LLP San Jose, California January 20, 1998, except as
+      to Note 9, which is as of March 6, 1998
+  relationships:
+  - cypress-fab-operations
+  - cypress-process-technology
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report is the first in this index to name "Fab 4" as the 8-inch Minnesota plant, alongside the original, 6-inch "Fab 3".
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_1997);
+    added to close the FY1991-2002 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the later of the two dates in the auditor's report (a note-specific
+    qualification), so the document was published on or after it.
+
+- id: cypress-annual-report-fy1998
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 1998 Annual Report to shareholders, for the fiscal year ended 1999-01-03
+  period:
+    label: fiscal year 1998
+    start: null
+    end: 1999-01-03
+  filed: 1999-01-25
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_1998
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
+  about:
+    summary: >-
+      Cypress's 1998 annual report. During 1998 Cypress shut down the
+      original, 6-inch Minnesota "Fab 3" and consolidated its assets into
+      the 8-inch "Fab 4", and separately upgraded its San Jose R&D fab
+      (Fab 1) to eight-inch capability to match Fab 4, as part of a
+      $58.9 million restructuring described as a "major and rapid move away
+      from six-inch to eight-inch manufacturing capability".
+    quotes:
+    - text: >-
+        The shutdown of Fab 3, located in Bloomington, Minnesota and
+        consolidation of parts of Fab 3 operations with other operations of
+        Cypress.
+      location: Annual report, Management's Discussion and Analysis, restructuring
+    - text: >-
+        The conversion of an existing research and development fab located
+        in San Jose (Fab 1) to eight-inch capability in order to be
+        compatible with the state of the art eight-inch Minnesota
+        manufacturing facility.
+      location: Annual report, Management's Discussion and Analysis, restructuring
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 1998
+    date: 1999-01-25
+    quote: PricewaterhouseCoopers LLP San Jose, California January 25, 1999
+  relationships:
+  - cypress-fab-operations
+  - cypress-process-technology
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report records the 1998 shutdown of the original 6-inch Minnesota Fab 3 and the consolidation of Minnesota manufacturing into the 8-inch Fab 4.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_1998);
+    added to close the FY1991-2002 coverage gap identified in independent
+    review finding FIL-R1-01. This is the first report in the index where
+    the auditor's report is signed "PricewaterhouseCoopers LLP" rather than
+    "Price Waterhouse LLP", consistent with the 1998 Price Waterhouse /
+    Coopers & Lybrand merger.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it.
+
+- id: cypress-annual-report-fy2001
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2001 Annual Report to shareholders, for the fiscal year ended 2001-12-30
+  period:
+    label: fiscal year 2001
+    start: null
+    end: 2001-12-30
+  filed: 2002-02-28
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2001
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf
+  about:
+    summary: >-
+      Cypress's 2001 annual report. It records the transfer of 0.12-micron
+      technology from the San Jose R&D fab to the Minnesota manufacturing
+      fab (Fab 4), notes that the San Jose R&D fab was itself converted from
+      six-inch to eight-inch wafers in fiscal 2000 to match Minnesota, and
+      describes Fab 4 as Cypress's "technologically advanced, eight-inch
+      wafer production facility located in Minnesota".
+    quotes:
+    - text: >-
+        0.12-micron technology from our eight-inch R&D Fab in San Jose,
+        California to our eight-inch manufacturing fab in Minnesota
+      location: Notes to Consolidated Financial Statements
+    - text: >-
+        Cypress's technologically advanced, eight-inch wafer production
+        facility located in Minnesota (Fab 4).
+      location: Notes to Consolidated Financial Statements, Segment Information
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2001
+    date: 2002-02-28
+    quote: >-
+      PricewaterhouseCoopers LLP San Jose, California January 23, 2002,
+      except as to Notes 15 and 18, which are as of February 28, 2002
+  relationships:
+  - cypress-process-technology
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_2001);
+    added to close the FY1991-2002 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the later of the two dates in the auditor's report (a note-specific
+    qualification), so the document was published on or after it.
+
+- id: cypress-annual-report-fy2002
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2002 Annual Report, including the Form 10-K for the fiscal year ended 2002-12-29
+  period:
+    label: fiscal year 2002
+    start: null
+    end: 2002-12-29
+  filed: 2003-03-07
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2002
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
+  about:
+    summary: >-
+      Cypress's 2002 annual report. In October 2002 the Company entered into
+      an agreement with Honeywell to jointly develop a 0.13-micron
+      Silicon-On-Insulator process in Fab 4 (the earliest dated record of
+      this partnership in this index; the FY2003 report already in the
+      inventory describes the continuing programme). It also records
+      manufacturing at two sub-micron fabs, Fab 4 and Fab 2, running 0.13
+      through 0.8 µm CMOS, 0.25 and 0.8 µm BiCMOS and 0.35 µm SONOS
+      processes.
+    quotes:
+    - text: >-
+        In October 2002, we entered into an agreement with Honeywell to
+        jointly develop a 0.13-micron Silicon-On-Insulator ("SOI") process
+        technology in Fab 4.
+      location: Form 10-K, Item 1, Business, Manufacturing
+    - text: >-
+        In fiscal 2002, we continued to manufacture our products at two
+        sub-micron wafer fabrication facilities located in Fab 4 and Fab 2.
+      location: Form 10-K, Item 1, Business, Manufacturing
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2002
+    date: 2003-03-07
+    quote: PricewaterhouseCoopers LLP San Jose, California March 7, 2003
+  relationships:
+  - cypress-process-technology
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report dates the start of the Honeywell 0.13 µm silicon-on-insulator programme in Fab 4 to October 2002, a year earlier than the FY2003 report already in the inventory.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_2002);
+    added to close the FY1991-2002 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it.
+
 - id: cypress-annual-report-fy2003
   company: Cypress Semiconductor Corporation
   company_key: cypress
@@ -127,6 +574,79 @@ filings:
     retrieved; filed gives the date of the 10-K signatures printed in the
     copy.
 
+- id: cypress-annual-report-fy2005
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2005 Annual Report, including the Form 10-K for the fiscal year ended 2006-01-01
+  period:
+    label: fiscal year 2005
+    start: null
+    end: 2006-01-01
+  filed: 2006-03-17
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2005
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2005.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2005.pdf
+  about:
+    summary: >-
+      Cypress's 2005 annual report. It records the December 2005 strategic
+      foundry partnership with China's Grace Semiconductor Manufacturing
+      Corporation (which the FY2006 report already in the inventory
+      describes as taking effect), continued transition of the Bloomington,
+      Minnesota facility to 90 nm and 0.13 µm CMOS, and gives the leased
+      Bloomington building's size as 108,000 square feet (one of several
+      differing footprint figures for the site across this index's Cypress
+      annual reports; see the fy1993, fy2008 and existing fy2016 records).
+    quotes:
+    - text: >-
+        During fiscal 2005, we continued our transition to more advanced
+        process technologies in our facility in Bloomington, Minnesota
+        including our 90-nanometer and 0.13-micron CMOS process
+        technologies.
+      location: Form 10-K, Item 1, Business, Manufacturing
+    - text: >-
+        In December 2005, we entered into a strategic foundry partnership
+        with China's Grace Semiconductor Manufacturing Corporation
+        ("Grace"). Under the terms of the agreement, we will transfer
+        certain of our proprietary process technologies to Grace.
+      location: Form 10-K, Item 1, Business, Manufacturing
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2005
+    date: 2006-03-17
+    quote: PricewaterhouseCoopers LLP San Jose, California March 17, 2006
+  relationships:
+  - cypress-process-technology
+  - cypress-third-party-foundry
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report is the original December 2005 announcement of the Grace Semiconductor foundry partnership that the FY2006 report already in the inventory describes as in effect.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_2005);
+    added to close the FY2005 coverage gap identified in independent review
+    finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it. The Item 2 Properties table
+    gives the leased Bloomington, Minnesota building as 108,000 square
+    feet, one of several buildings at the site under a synthetic lease
+    (compare the owned-property figure in cypress-annual-report-fy2008);
+    these figures are not straightforwardly comparable across years.
+
 - id: cypress-annual-report-fy2006
   company: Cypress Semiconductor Corporation
   company_key: cypress
@@ -247,6 +767,393 @@ filings:
     2007 annual report (NASDAQ_CY_2007), which contains the 10-K.
   verified: 2026-09-14 annualreports.com PDF fetched; quotes checked
 
+- id: cypress-annual-report-fy2008
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2008 Annual Report, including the Form 10-K for the fiscal year ended 2008-12-28
+  period:
+    label: fiscal year 2008
+    start: null
+    end: 2008-12-28
+  filed: 2009-02-26
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2008
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf
+  about:
+    summary: >-
+      Cypress's 2008 annual report. In December 2007 Cypress's board
+      approved exiting its Round Rock, Texas fab and transferring
+      production to the more cost-competitive Minnesota fab and outside
+      foundries, substantially completed in December 2008; from this point
+      Minnesota (Fab 4) was Cypress's only US wafer fab. The Item 2
+      Properties table gives the owned Bloomington, Minnesota building as
+      278,000 square feet.
+    quotes:
+    - text: >-
+        In December 2007, Cypress's Board of Directors approved a plan to
+        exit its manufacturing facility in Texas and transfer production to
+        its more cost-competitive facility in Minnesota and outside
+        foundries.
+      location: Form 10-K, Item 7, Management's Discussion and Analysis, Manufacturing
+    - text: Bloomington, Minnesota 278,000 Manufacturing, research and development
+      location: Form 10-K, Item 2, Properties
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2008
+    date: 2009-02-26
+    quote: PricewaterhouseCoopers LLP San Jose, California February 26, 2009
+  relationships:
+  - cypress-fab-operations
+  - cypress-third-party-foundry
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report records the 2007-2008 exit of the Texas fab that left Minnesota (Fab 4) as Cypress's only US wafer fab.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_2008);
+    added to close the FY2008-2014 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it.
+
+- id: cypress-annual-report-fy2009
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2009 Annual Report, including the Form 10-K for the fiscal year ended 2010-01-03
+  period:
+    label: fiscal year 2009
+    start: null
+    end: 2010-01-03
+  filed: 2010-03-03
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2009
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf
+  about:
+    summary: >-
+      Cypress's 2009 annual report. The shareholder letter says Cypress sold
+      its San Jose R&D fab (Fab 1) in 2007 and closed the Round Rock, Texas
+      fab (Fab 2) in 2008, leaving Fab 4 in Bloomington, Minnesota as its
+      sole wafer fab; the Form 10-K section says 65% of products were made
+      internally at Fab 4, the balance by external foundries.
+    quotes:
+    - text: >-
+        While we maintained our Fab 4 facility in Bloomington, Minn., to
+        develop and manufacture new technologies, we sold our Fab 1 R&D
+        plant in San Jose, Calif., in 2007 and closed our Fab 2 facility in
+        Round Rock, Texas, in 2008.
+      location: Annual report, shareholder letter
+    - text: >-
+        During fiscal 2009, we manufactured approximately 65% of our
+        semiconductor products at our wafer manufacturing facility in
+        Bloomington, Minnesota. External wafer foundries manufactured the
+        balance of our products.
+      location: Form 10-K, Item 1, Business, Manufacturing
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2009
+    date: 2010-03-03
+    quote: PricewaterhouseCoopers LLP San Jose, California March 3, 2010
+  relationships:
+  - cypress-fab-operations
+  - cypress-third-party-foundry
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_2009);
+    added to close the FY2008-2014 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it.
+
+- id: cypress-annual-report-fy2010
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2010 Annual Report, including the Form 10-K for the fiscal year ended 2011-01-02
+  period:
+    label: fiscal year 2010
+    start: null
+    end: 2011-01-02
+  filed: 2011-02-25
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2010
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
+  about:
+    summary: >-
+      Cypress's 2010 annual report. It says Cypress decided in 2005 to stop
+      investing in Moore's Law in its internal fabs and adopt a "flex fab"
+      strategy of running and improving Fab 4 while expanding capacity
+      externally with foundry partners, and names "S8" as its 0.13-micron,
+      nonvolatile PSoC wafer fabrication process at Fab 4 -- the process
+      name this reference's step pages trace to SKY130.
+    quotes:
+    - text: >-
+        Cypress decided to stop investing in Moore's Law in our internal
+        wafer fabs in 2005 and switch to a "flex fab" strategy, meaning that
+        we would continue to run and improve our Fab 4 wafer fabrication
+        plant in Bloomington, Minnesota, but expand our fab capacity
+        externally with foundry partners.
+      location: Annual report, "Manufacturing" section
+    - text: >-
+        The rapid rise in demand for PSoC has filled our capacity to
+        manufacture wafers in S8, our 0.13-micron, nonvolatile PSoC wafer
+        fabrication process.
+      location: Annual report, "Manufacturing" section
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2010
+    date: 2011-02-25
+    quote: PricewaterhouseCoopers LLP San Jose, California February 25, 2011
+  relationships:
+  - cypress-process-technology
+  - cypress-third-party-foundry
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report is the earliest filing in this index to name Cypress's "S8" process, the 0.13 µm SONOS lineage this reference traces to SKY130.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_2010);
+    added to close the FY2008-2014 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it.
+
+- id: cypress-annual-report-fy2011
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2011 Annual Report, including the Form 10-K for the fiscal year ended 2012-01-01
+  period:
+    label: fiscal year 2011
+    start: null
+    end: 2012-01-01
+  filed: 2012-02-24
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2011
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2011.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2011.pdf
+  about:
+    summary: >-
+      Cypress's 2011 annual report. It attributes anomalously high 2011
+      capital expenditure to the final build-out of the Minnesota fab to
+      its maximum capacity to support PSoC growth, and says the Company
+      then manufactured approximately 42% of its products internally at
+      Bloomington, Minnesota, the balance by external foundries mainly in
+      Asia -- a lower internal share than the FY2009 (65%) and FY2012 (69%)
+      reports in this index.
+    quotes:
+    - text: >-
+        The anomalously high capital expenditures in 2011 are due to the
+        final build out of our Minnesota wafer fabrication plant to its
+        maximum capacity to support PSoC growth.
+      location: Annual report, capital expenditures discussion
+    - text: >-
+        We currently manufacture approximately 42% of our semiconductor
+        products at our wafer manufacturing facility in Bloomington,
+        Minnesota. External wafer foundries, mainly in Asia, manufactured
+        the balance of our products
+      location: Form 10-K, Item 1, Business, Manufacturing
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2011
+    date: 2012-02-24
+    quote: PricewaterhouseCoopers LLP San Jose, California February 24, 2012
+  relationships:
+  - cypress-fab-operations
+  - minnesota-fab-investment
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_2011);
+    added to close the FY2008-2014 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it. The 42% internal-manufacturing
+    share is markedly lower than the 65% (FY2009), 69% (FY2012) and 62%
+    (FY2013) figures elsewhere in this index; the report attributes the
+    dip to the Minnesota fab's capacity build-out that year, not to a
+    change in strategy.
+
+- id: cypress-annual-report-fy2012
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2012 Annual Report, including the Form 10-K for the fiscal year ended 2012-12-30
+  period:
+    label: fiscal year 2012
+    start: null
+    end: 2012-12-30
+  filed: 2013-02-28
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2012
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2012.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2012.pdf
+  about:
+    summary: >-
+      Cypress's 2012 annual report. It says the Company manufactured
+      approximately 69% of its products internally at Bloomington,
+      Minnesota (Fab 4), the balance by external foundries mainly in Asia,
+      and that 2012 gross margin reflected underloading in both Fab 4 and
+      the Philippines assembly and test plant.
+    quotes:
+    - text: >-
+        We currently manufacture approximately 69% of our semiconductor
+        products at our wafer manufacturing facility in Bloomington,
+        Minnesota. External wafer foundries, mainly in Asia, manufactured
+        the balance of our products
+      location: Form 10-K, Item 1, Business, Manufacturing
+    - text: >-
+        underloading in both our wafer fabrication plant (Fab 4 in
+        Minnesota) and our assembly and test plant (CML in Manila)
+      location: Annual report, gross margin discussion
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2012
+    date: 2013-02-28
+    quote: PricewaterhouseCoopers LLP San Jose, California February 28, 2013
+  relationships:
+  - cypress-fab-operations
+  - cypress-third-party-foundry
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_2012);
+    added to close the FY2008-2014 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it.
+
+- id: cypress-annual-report-fy2013
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 2013 Annual Report, including the Form 10-K for the fiscal year ended 2013-12-29
+  period:
+    label: fiscal year 2013
+    start: null
+    end: 2013-12-29
+  filed: 2014-02-27
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_2013
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2013.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2013.pdf
+  about:
+    summary: >-
+      Cypress's 2013 annual report. It says the Company manufactured
+      approximately 62% of its products internally at Bloomington,
+      Minnesota, the balance by external foundries mainly in Asia, and that
+      during 2013 Cypress completed the sale of the Round Rock, Texas fab
+      whose production it had transferred to Minnesota and outside
+      foundries back in 2008.
+    quotes:
+    - text: >-
+        We currently manufacture approximately 62% of our semiconductor
+        products at our wafer manufacturing facility in Bloomington,
+        Minnesota. External wafer foundries, mainly in Asia, manufactured
+        the balance of our products
+      location: Form 10-K, Item 1, Business, Manufacturing
+    - text: >-
+        in fiscal 2008 we substantially completed the exit of our
+        manufacturing facility in Texas and transferred production to our
+        more cost-competitive facility in Minnesota and outside foundries.
+        During 2013 we completed the sale of this manufacturing facility.
+      location: Form 10-K, Item 7, Management's Discussion and Analysis
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2013
+    date: 2014-02-27
+    quote: PricewaterhouseCoopers LLP San Jose, California February 27, 2014
+  relationships:
+  - cypress-fab-operations
+  - cypress-third-party-foundry
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_2013);
+    added to close the FY2008-2014 coverage gap identified in independent
+    review finding FIL-R1-01.
+  verified: 2026-09-18 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the date of the auditor's report printed in the copy, so the
+    document was published on or after it.
+
 - id: cypress-10-k-2016-03-02
   company: Cypress Semiconductor Corporation
   company_key: cypress
@@ -281,7 +1188,11 @@ filings:
       location: Item 1, Business, Manufacturing
     - text: Bloomington, Minnesota 337,000 Manufacturing, research and development
       location: Item 2, Properties
-  auditor_report: null
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2015
+    date: 2016-03-01
+    quote: /s/ PricewaterhouseCoopers LLP San Jose, California March 1, 2016
   relationships:
   - cypress-fab-operations
   related_docs:
@@ -446,7 +1357,11 @@ filings:
         stand-alone business that will manufacture wafers for Cypress and for
         other semiconductor manufacturers.
       location: Item 1A, Risk factors
-  auditor_report: null
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2017
+    date: 2018-02-26
+    quote: /s/ PricewaterhouseCoopers LLP San Jose, California February 26, 2018 We have served as the Company’s auditor since 1982.
   relationships:
   - cypress-fab-sale
   related_docs:
@@ -554,7 +1469,11 @@ filings:
       location: Introductory section
     - text: Cypress Semiconductor Corporation was founded in 1982 in San José (USA)
       location: Introductory section
-  auditor_report: null
+  auditor_report:
+    firm: KPMG AG Wirtschaftsprüfungsgesellschaft
+    subject: separate and consolidated financial statements of Infineon Technologies AG, fiscal year 2019
+    date: 2019-11-22
+    quote: Munich, 22 November 2019 KPMG AG Wirtschaftsprüfungsgesellschaft
   relationships:
   - infineon-cypress-acquisition
   related_docs:
@@ -681,7 +1600,10 @@ filings:
   notes: >-
     The cover legend says the draft "has not been publicly filed"; that
     describes its status when submitted. The SEC has since released it on
-    EDGAR, and it is cited here from that public copy.
+    EDGAR, and it is cited here from that public copy. This "20 years"
+    figure disagrees with SkyWater's later 10-Ks (skywater-10-k-2025-03-14,
+    skywater-10-k-2026-03-11), which give the Cypress captive period as 26
+    years.
 
 - id: infineon-annual-report-fy2020
   company: Infineon Technologies AG
@@ -714,7 +1636,11 @@ filings:
         Infineon integrated the Cypress sites into its manufacturing landscape:
         Austin (Texas, USA)
       location: Combined management report, manufacturing
-  auditor_report: null
+  auditor_report:
+    firm: KPMG AG Wirtschaftsprüfungsgesellschaft
+    subject: separate and consolidated financial statements of Infineon Technologies AG, fiscal year 2020
+    date: 2020-11-20
+    quote: Munich, 20 November 2020 KPMG AG Wirtschaftsprüfungsgesellschaft
   relationships:
   - infineon-cypress-acquisition
   related_docs:
@@ -860,6 +1786,10 @@ filings:
     Inventory entry SEC-01; Wayback CDX listing of EDGAR folder
     1819974/000119312521089687 (15 captured documents, 2026-09-14).
   verified: 2026-09-14 Wayback capture 20210323222220 of the EDGAR document fetched; quotes checked
+  notes: >-
+    This "20 years" figure disagrees with SkyWater's later 10-Ks
+    (skywater-10-k-2025-03-14, skywater-10-k-2026-03-11), which give the
+    Cypress captive period as 26 years.
 
 - id: skywater-s-1-a-2021-04-12
   company: SkyWater Technology, Inc.
@@ -1220,7 +2150,11 @@ filings:
       location: Introductory section
     - text: the aftermath of the winter storm in Austin (Texas, USA) held down revenue growth
       location: Combined management report
-  auditor_report: null
+  auditor_report:
+    firm: KPMG AG Wirtschaftsprüfungsgesellschaft
+    subject: separate and consolidated financial statements of Infineon Technologies AG, fiscal year 2021
+    date: 2021-11-25
+    quote: Munich, 25 November 2021 KPMG AG Wirtschaftsprüfungsgesellschaft
   relationships:
   - infineon-cypress-acquisition
   related_docs:
@@ -1644,7 +2578,11 @@ filings:
         integration of Cypress and accelerated the digitalization of sales
         and marketing
       location: Introductory section
-  auditor_report: null
+  auditor_report:
+    firm: KPMG AG Wirtschaftsprüfungsgesellschaft
+    subject: separate and consolidated financial statements of Infineon Technologies AG, fiscal year 2022
+    date: 2022-11-25
+    quote: Munich, 25 November 2022 KPMG AG Wirtschaftsprüfungsgesellschaft
   relationships:
   - infineon-cypress-acquisition
   related_docs:
@@ -1811,7 +2749,11 @@ filings:
         Agreement to SkyWater Technology Foundry, Inc., to which we consented on
         November 9, 2017.
       location: Item 1, Business, Operation Agreements
-  auditor_report: null
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of D-Wave Quantum Inc., fiscal year 2022
+    date: 2023-04-18
+    quote: /s/ PricewaterhouseCoopers LLP Chartered Professional Accountants Vancouver, Canada April 18, 2023 We have served as the Company's auditor since 2010.
   relationships:
   - customer-names-skywater
   - cypress-third-party-foundry
@@ -2106,7 +3048,11 @@ filings:
       location: Introductory section
     - text: Weebit ReRAM fully qualified in SkyWater S130 process
       location: 2022-2023 highlights
-  auditor_report: null
+  auditor_report:
+    firm: Nexia Perth Audit Services Pty Ltd
+    subject: financial report of Weebit Nano Limited, fiscal year 2023
+    date: 2023-08-24
+    quote: Nexia Perth Audit Services Pty Ltd M. Janse Van Nieuwenhuizen Director Perth 24 August 2023
   relationships:
   - partner-names-skywater
   related_docs:
@@ -2198,7 +3144,11 @@ filings:
         through the acquisitions of Cypress, Industrial Analytics and
         Imagimob
       location: Combined management report, Group strategy
-  auditor_report: null
+  auditor_report:
+    firm: KPMG AG Wirtschaftsprüfungsgesellschaft
+    subject: separate and consolidated financial statements of Infineon Technologies AG, fiscal year 2023
+    date: 2023-11-23
+    quote: Munich, 23 November 2023 KPMG AG Wirtschaftsprüfungsgesellschaft
   relationships:
   - infineon-cypress-acquisition
   related_docs:
@@ -2314,7 +3264,11 @@ filings:
         Group Co. Ltd., and Golden Altos Corp. to manufacture our new hardware
         products
       location: Item 1A, Risk Factors
-  auditor_report: null
+  auditor_report:
+    firm: Moss Adams LLP
+    subject: consolidated financial statements of QuickLogic Corporation, fiscal year 2023
+    date: 2024-03-26
+    quote: /s/ Moss Adams LLP San Francisco, California March 26, 2024 We have served as the Company’s auditor since 2016.
   relationships:
   - customer-names-skywater
   related_docs:
@@ -2372,7 +3326,11 @@ filings:
         Agreement to SkyWater Technology Foundry, Inc., to which we consented on
         November 9, 2017.
       location: Item 1, Business, Operation Agreements
-  auditor_report: null
+  auditor_report:
+    firm: Grant Thornton LLP
+    subject: consolidated financial statements of D-Wave Quantum Inc., fiscal year 2023
+    date: 2024-03-29
+    quote: /s/ GRANT THORNTON LLP We have served as the Company’s auditor since 2023. Bellevue, Washington March 29, 2024
   relationships:
   - customer-names-skywater
   related_docs:
@@ -2568,7 +3526,11 @@ filings:
       location: Introductory section
     - text: Weebit ReRAM qualified 125⁰C in SkyWater S130
       location: Highlights
-  auditor_report: null
+  auditor_report:
+    firm: Nexia Perth Audit Services Pty Ltd
+    subject: financial report of Weebit Nano Limited, fiscal year 2024
+    date: 2024-08-27
+    quote: Nexia Perth Audit Services Pty Ltd Michael Fay Director Perth, Western Australia 27 August 2024
   relationships:
   - partner-names-skywater
   related_docs:
@@ -2660,7 +3622,11 @@ filings:
         through the acquisitions of Cypress, Industrial Analytics and
         Imagimob
       location: Combined management report, Group strategy
-  auditor_report: null
+  auditor_report:
+    firm: Deloitte GmbH Wirtschaftsprüfungsgesellschaft
+    subject: separate and consolidated financial statements of Infineon Technologies AG, fiscal year 2024
+    date: 2024-11-26
+    quote: Munich/Germany, 26 November 2024 Deloitte GmbH Wirtschaftsprüfungsgesellschaft
   relationships:
   - infineon-cypress-acquisition
   related_docs:
@@ -2793,6 +3759,11 @@ filings:
     Listed in the Wayback capture (2025-05-08) of SkyWater's EDGAR company
     filing list; document found through a CDX listing of its folder.
   verified: 2026-09-14 Wayback capture 20250319191155 of the EDGAR document fetched; quotes checked
+  notes: >-
+    This "26 years" figure disagrees with SkyWater's earlier IPO filings
+    (skywater-drs-2020-08-12, skywater-s-1-2021-03-22), which gave the
+    Cypress captive period as 20 years; 26 years (1991-2017) is the figure
+    consistent with the fab's Control Data origin.
 
 - id: skywater-def-14a-2025-04-08
   company: SkyWater Technology, Inc.
@@ -3147,7 +4118,11 @@ filings:
         On 30 June 2025, the 200-millimeter fab in Austin (USA) was sold to
         SkyWater Technology, Inc. ("SkyWater").
       location: Notes to the consolidated financial statements, note 7
-  auditor_report: null
+  auditor_report:
+    firm: Deloitte GmbH Wirtschaftsprüfungsgesellschaft
+    subject: separate and consolidated financial statements of Infineon Technologies AG, fiscal year 2025
+    date: 2025-11-27
+    quote: Munich/Germany, 27 November 2025 Deloitte GmbH Wirtschaftsprüfungsgesellschaft
   relationships:
   - infineon-fab25-sale
   - infineon-wafer-supply
@@ -3301,7 +4276,11 @@ filings:
       location: Item 1, Business
     - text: including the pending acquisition of SkyWater Technology, Inc.
       location: Forward-looking statements
-  auditor_report: null
+  auditor_report:
+    firm: Ernst & Young LLP
+    subject: consolidated financial statements of IonQ, Inc., fiscal year 2025
+    date: 2026-02-25
+    quote: /s/ Ernst & Young LLP We have served as the Company’s auditor since 2020. Tysons, Virginia February 25, 2026
   relationships:
   - skywater-ionq-merger
   related_docs:
@@ -3379,6 +4358,11 @@ filings:
     document has no Wayback capture, so it was read through the
     investor-relations PDF copy (filing id 19240628).
   verified: 2026-09-14 investor-relations PDF copy fetched; quotes checked
+  notes: >-
+    This "26 years" figure disagrees with SkyWater's earlier IPO filings
+    (skywater-drs-2020-08-12, skywater-s-1-2021-03-22), which gave the
+    Cypress captive period as 20 years; 26 years (1991-2017) is the figure
+    consistent with the fab's Control Data origin.
 
 - id: ionq-s-4-2026-03-20
   company: IonQ, Inc.
@@ -3782,3 +4766,80 @@ filings:
     (ir.skywatertechnology.com/feed/SECFiling.svc/GetEdgarFilingList), which
     lists every EDGAR filing with a PDF copy hosted off sec.gov.
   verified: 2026-09-18 investor-relations PDF copy fetched; quotes checked
+
+# Filings known to exist (named in another filing's exhibit index, an inventory
+# entry already cited elsewhere, or the design's own discovery notes) but for
+# which no copy could be found or read that is not sec.gov itself (FIL-R1-13:
+# the index should say so, not fall silent). See docs/plans/filings-index-design.md
+# section 7.
+known_gaps:
+- company_key: cypress
+  description: Form 10-Q/A for the quarter ended 2003-03-30
+  reason: >-
+    No Wayback capture of the EDGAR folder exists; the document is EDGAR-only.
+    Cited elsewhere in this reference as inventory key CYP-07.
+- company_key: cypress
+  description: 8-K announcing the 2019 merger agreement with Infineon (~June 2019)
+  reason: >-
+    No Wayback capture and no non-EDGAR copy found; only a DEFA14A capture
+    from the same period has been located.
+- company_key: cypress
+  description: DEFM14A, definitive merger proxy statement for the 2019-2020 Infineon acquisition
+  reason: No Wayback capture and no non-EDGAR copy found.
+- company_key: cypress
+  description: Form 10-K for fiscal year 2019 (last Cypress 10-K, filed in early 2020)
+  reason: >-
+    annualreports.com has no NASDAQ_CY_2019 file (confirmed HTTP 404 again in
+    this session); no Wayback capture found either.
+- company_key: cypress
+  description: Form 10-K/A, 2020
+  reason: No Wayback capture and no non-EDGAR copy found.
+- company_key: cypress
+  description: Form 15-12B, deregistration following the Infineon merger (2020)
+  reason: No Wayback capture and no non-EDGAR copy found.
+- company_key: cypress
+  description: Annual reports to shareholders for fiscal years 1991-1993
+  reason: >-
+    annualreports.com's Cypress archive begins at fiscal 1994
+    (NASDAQ_CY_1991, _1992 and _1993 each answer HTTP 404, confirmed in this
+    session); no other public copy of these years was found.
+- company_key: cypress
+  description: A standalone annual report to shareholders for fiscal year 1994
+  reason: >-
+    annualreports.com's archive has no NASDAQ_CY file of its own for fiscal
+    1994; that year's figures appear only as prior-year comparatives inside
+    the fiscal-1995 report (cypress-annual-report-fy1995).
+- company_key: cypress
+  description: Annual report to shareholders for fiscal year 1999 (NASDAQ_CY_1999.pdf)
+  reason: >-
+    A public copy exists and was fetched, but its embedded font encoding
+    could not be extracted as text with the tools available in this
+    project's environment (pypdf, with and without fontTools, and PyMuPDF
+    all returned garbled or empty text for the document body); no quotation
+    from it could be verified, so no record was added.
+- company_key: cypress
+  description: Annual report to shareholders for fiscal year 2000 (NASDAQ_CY_2000.pdf)
+  reason: >-
+    A public copy exists and was fetched, but every page returned zero
+    extractable characters of body text with the tools available in this
+    project's environment (pypdf and PyMuPDF); no quotation from it could be
+    verified, so no record was added.
+- company_key: cypress
+  description: Annual report to shareholders for fiscal year 2014 (NASDAQ_CY_2014.pdf)
+  reason: >-
+    A public copy exists and its text was fully readable, but this
+    particular edition is a short "highlights" booklet that does not
+    mention Bloomington, Minnesota, Fab 4 or wafer manufacturing anywhere
+    in its 8 pages; it does not meet the design's inclusion rule (section
+    1) of saying something specific about the Minnesota fab, so no record
+    was added.
+- company_key: skywater
+  description: Confidential draft registration statement DRS/A No. 1 (2020-09-30)
+  reason: >-
+    Only the EDGAR filing-index page was captured by the Wayback Machine;
+    the document text itself was not found there or elsewhere.
+- company_key: skywater
+  description: Process Technology License Agreement (exhibit 10.6/10.7 of the S-1/A)
+  reason: >-
+    Not retrievable without EDGAR; known only from the S-1/A's own exhibit
+    index, which is not itself a copy of the exhibit.

@@ -3,7 +3,11 @@
 (filings-by-year)=
 # Filings by year
 
-Filings by year of filing, newest first.
+Filings by year of filing, newest first. For most records `filed` is the
+EDGAR filing date; for some annual reports to shareholders and German annual
+reports it is instead the latest signature or auditor's-report date printed
+in the copy (each such record's `Note:` on {ref}`filings-index` says so), so
+a handful of records are grouped by that date rather than a true filing date.
 
 (filings-year-2026)=
 ## 2026
@@ -116,6 +120,36 @@ Filings by year of filing, newest first.
 
 * Cypress Semiconductor Corporation, 10-K, filed 2016-03-02: Annual report on Form 10-K for the fiscal year ended 2016-01-03 ({ref}`full entry <filing-cypress-10-k-2016-03-02>`)
 
+(filings-year-2014)=
+## 2014
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2014-02-27: Cypress Semiconductor 2013 Annual Report, including the Form 10-K for the fiscal year ended 2013-12-29 ({ref}`full entry <filing-cypress-annual-report-fy2013>`)
+
+(filings-year-2013)=
+## 2013
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2013-02-28: Cypress Semiconductor 2012 Annual Report, including the Form 10-K for the fiscal year ended 2012-12-30 ({ref}`full entry <filing-cypress-annual-report-fy2012>`)
+
+(filings-year-2012)=
+## 2012
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2012-02-24: Cypress Semiconductor 2011 Annual Report, including the Form 10-K for the fiscal year ended 2012-01-01 ({ref}`full entry <filing-cypress-annual-report-fy2011>`)
+
+(filings-year-2011)=
+## 2011
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2011-02-25: Cypress Semiconductor 2010 Annual Report, including the Form 10-K for the fiscal year ended 2011-01-02 ({ref}`full entry <filing-cypress-annual-report-fy2010>`)
+
+(filings-year-2010)=
+## 2010
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2010-03-03: Cypress Semiconductor 2009 Annual Report, including the Form 10-K for the fiscal year ended 2010-01-03 ({ref}`full entry <filing-cypress-annual-report-fy2009>`)
+
+(filings-year-2009)=
+## 2009
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2009-02-26: Cypress Semiconductor 2008 Annual Report, including the Form 10-K for the fiscal year ended 2008-12-28 ({ref}`full entry <filing-cypress-annual-report-fy2008>`)
+
 (filings-year-2008)=
 ## 2008
 
@@ -126,6 +160,11 @@ Filings by year of filing, newest first.
 
 * Cypress Semiconductor Corporation, Annual Report (with Form 10-K and proxy statement), filed 2007-03-28: Cypress Semiconductor 2006 Annual Report and 2007 Proxy Statement, including the Form 10-K for the fiscal year ended 2006-12-31 ({ref}`full entry <filing-cypress-annual-report-fy2006>`)
 
+(filings-year-2006)=
+## 2006
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2006-03-17: Cypress Semiconductor 2005 Annual Report, including the Form 10-K for the fiscal year ended 2006-01-01 ({ref}`full entry <filing-cypress-annual-report-fy2005>`)
+
 (filings-year-2005)=
 ## 2005
 
@@ -135,3 +174,38 @@ Filings by year of filing, newest first.
 ## 2004
 
 * Cypress Semiconductor Corporation, Annual Report (with Form 10-K), filed 2004-02-27: Cypress Semiconductor 2003 Annual Report, including the Form 10-K for the fiscal year ended 2003-12-28 ({ref}`full entry <filing-cypress-annual-report-fy2003>`)
+
+(filings-year-2003)=
+## 2003
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2003-03-07: Cypress Semiconductor 2002 Annual Report, including the Form 10-K for the fiscal year ended 2002-12-29 ({ref}`full entry <filing-cypress-annual-report-fy2002>`)
+
+(filings-year-2002)=
+## 2002
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2002-02-28: Cypress Semiconductor 2001 Annual Report to shareholders, for the fiscal year ended 2001-12-30 ({ref}`full entry <filing-cypress-annual-report-fy2001>`)
+
+(filings-year-1999)=
+## 1999
+
+* Cypress Semiconductor Corporation, Annual Report, filed 1999-01-25: Cypress Semiconductor 1998 Annual Report to shareholders, for the fiscal year ended 1999-01-03 ({ref}`full entry <filing-cypress-annual-report-fy1998>`)
+
+(filings-year-1998)=
+## 1998
+
+* Cypress Semiconductor Corporation, Annual Report, filed 1998-03-06: Cypress Semiconductor 1997 Annual Report to shareholders, for the fiscal year ended 1997-12-29 ({ref}`full entry <filing-cypress-annual-report-fy1997>`)
+
+(filings-year-1997)=
+## 1997
+
+* Cypress Semiconductor Corporation, Annual Report, filed 1997-02-25: Cypress Semiconductor 1996 Annual Report to shareholders, for the fiscal year ended 1996-12-30 ({ref}`full entry <filing-cypress-annual-report-fy1996>`)
+
+(filings-year-1996)=
+## 1996
+
+* Cypress Semiconductor Corporation, Annual Report, filed 1996-01-19: Cypress Semiconductor 1995 Annual Report to shareholders, for the fiscal year ended 1996-01-01 ({ref}`full entry <filing-cypress-annual-report-fy1995>`)
+
+(filings-year-1994)=
+## 1994
+
+* Cypress Semiconductor Corporation, 10-K, filed 1994-03-16: Cypress Semiconductor Form 10-K for the fiscal year ended 1994-01-03 (fiscal year 1993) ({ref}`full entry <filing-cypress-annual-report-fy1993>`)
