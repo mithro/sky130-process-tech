@@ -330,8 +330,8 @@ commercial implanters is given by Current.[^current-2017]
   energies and doses.[^pat-dnw-hynix]
 * Borland (Genus), US 5,821,589 — the BILLI buried-layer approach to
   latch-up suppression.[^pat-billi-genus]
-* Yang (UMC), US 5,393,679 — doubly charged phosphorus for a retrograde
-  well on a medium-current tool.[^pat-umc-dc]
+* Yang (UMC), US 5,393,679 — doubly charged phosphorus at 380–400 keV
+  for a retrograde-process punch-through implant.[^pat-umc-dc]
 * Ryssel and Ruge, *Ion Implantation* — the classic monograph on
   range theory, damage, annealing and equipment.[^ryssel-1986]
 * Hössinger, PhD thesis (TU Wien, 2000) — Monte Carlo simulation of

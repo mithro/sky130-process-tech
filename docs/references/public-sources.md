@@ -2491,7 +2491,7 @@ Also used on the PWBM mask page.
 improve retrograde process PMOS punch through voltage"*, S.-H. Yang
 (United Microelectronics), granted 1995-02-28.
 <https://patents.google.com/patent/US5393679A/en>. Retrograde well by
-"double charge … P++ … at an energy within a range from about 380 keV
+"double charge … P++ … with an energy within a range from about 380 keV
 to about 400 keV" on a medium-current implanter.
 Also used on the medium-current and high-energy implanter pages.
 Tier: deep dive.
