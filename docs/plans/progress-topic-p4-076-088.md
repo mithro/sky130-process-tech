@@ -26,4 +26,20 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 088-L1 | Low | fixed | Confirmed docs/categories/anneal.md:58-59 gives the "800-1000 C" statement unquoted with [^gibbons-1972][^txt-01], not as a quotation. Dropped the quotation marks here (txt-01 already defined on this page) so it doesn't read as Gibbons's own words. |
 | job-01 (rule 11) | — | left alone | Per coordinator instruction: a separate site-wide sweep under Common rule 11 handles `[^job-01]` everywhere; not touched in this branch. |
 
-Checkers/build not yet run to completion; will run before finishing.
+## Final status
+
+All 16 findings resolved: 1 High fixed, 4 Medium fixed, 9 Low fixed,
+2 Low declined (079-L1, 087-L1 — repo-wide vendor-spelling split,
+matching the review's own "no change required" conclusion; left for
+the coordinator's site-wide pass). `[^job-01]` left untouched per
+instruction. One out-of-range gap noted but not fixed: 016-lvtnis.md
+and 067-astis.md carry the same unsourced "96-98%" sulfuric acid
+figure as 084-L1 but are outside steps 076-088 and this review.
+
+Checkers run in the foreground from the worktree, all passing:
+`check_steps.py` (171 pages, 0 problems), `check_refs.py` (264, 0),
+`check_machines.py` (30, 0), `check_materials.py` (12, 0),
+`check_masks.py` (36, 0), `check_papers.py` (49, 0),
+`gen_papers.py --check` (8, 0), and
+`sphinx-build -W -q -b html docs tmp/build-topic-p4-076-088` (clean,
+no warnings/errors).
