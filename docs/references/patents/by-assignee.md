@@ -29,6 +29,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,828,201 B1 <patent-gp33476239>` — Method of manufacturing a top insulating layer for a sonos-type device (2001-10-22)
 * {ref}`US 6,677,213 B1 <patent-gp29778448>` — SONOS structure including a deuterated oxide-silicon interface and method for making the same (2002-03-08)
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
+* {ref}`US 6,977,217 B1 <patent-gp35465546>` — Aluminum-filled via structure with barrier layer (2002-12-03)
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
 * {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — Photodiode having a buried well region (2004-09-14)

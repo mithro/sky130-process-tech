@@ -5923,6 +5923,37 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6774033B1/en
 
+(patent-gp35465546)=
+## US 6,977,217 B1 — Aluminum-filled via structure with barrier layer
+
+**Title:** Aluminum-filled via structure with barrier layer
+
+**Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
+**Inventors:** Mira Ben-Tzur; Gorley L. Lau; Ivan P. Ivanov; Feng Dai; Chan-Lon Yang
+
+**Dates:** priority 2002-12-03, filing 2002-12-03, grant 2005-12-20
+
+**Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6977217B1, retrieved 2026-09-19)
+
+**Estimated expiry:** 2023-01-21 — all 1 members are shown as expired, lapsed, abandoned or ceased, or are past their estimated term; the latest estimate is that of US6977217B1 (status shown: Expired - Lifetime; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment))
+
+**Google Patents family ID:** `35465546` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 6,977,217 B1 | granted patent | 2005-12-20 | Expired - Lifetime | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6977217B1) · [Google Patents](https://patents.google.com/patent/US6977217B1/en) |
+
+**Relevance:**
+
+* {ref}`step-123` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns filling a via with aluminium over a barrier layer, a metallisation/via-fill technique, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search (xhr/query), assignee "Cypress Semiconductor", query "tungsten plug" (21 hits, first page examined), retrieved 2026-09-19; this is the W-plug-module search the progress log listed as outstanding (H1). The top on-topic hit was an aluminium-via/barrier-layer family, not a tungsten-plug-specific one; recorded as such rather than mischaracterised.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US6977217B1/en
+
 (patent-gp32593189)=
 ## US 6,835,642 B2 — Method of forming a metal fuse on semiconductor devices
 
