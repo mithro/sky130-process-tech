@@ -686,13 +686,13 @@ the tier needs:[^skw-01]
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tabs "Sheet1" (step number, code and description) and "Run Mask IDs"
     (rows "RRAM Mask, RRM" and "Via 1 top, RRAM tier, VIMC"), retrieved
-    2026-09-13.
+    2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
     directory: `README.md`, `masks.html`, the run pages `mpw-001.html` to
     `mpw-008.html`, and for each run × mask directory the page,
     `job.json`, `result.json` and per-die slot JSON files, retrieved
-    2026-09-13. Run pages are `mpw-00N.html`; each render's page is
+    2026-09-14. Run pages are `mpw-00N.html`; each render's page is
     `<run>_<mask>/<run>_<mask>.html` (for example
     `mpw-001_TUNM/mpw-001_TUNM.html`). Rendered from the public shuttle
     repositories under

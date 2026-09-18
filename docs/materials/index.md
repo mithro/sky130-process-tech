@@ -627,7 +627,8 @@ supplier statement. The differences below remain.
     Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
     ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
 [^semi-m1]: SEMI, *SEMI M1 — Specification for Polished Single Crystal
-    Silicon Wafers*, SEMI Standards store listing.
+    Silicon Wafers*, SEMI Standards store listing, accessed
+    2026-09-18.
     <https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>
 [^semi-m8]: SEMI M8, *Specification for Polished Monocrystalline Silicon
     Test Wafers*, SEMI.
@@ -697,7 +698,7 @@ supplier statement. The differences below remain.
     diagram), google/skywater-pdk repository.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    retrieved 2026-09-13; tab "Sheet1" lists the 171 steps (number, code and
+    retrieved 2026-09-14; tab "Sheet1" lists the 171 steps (number, code and
     description) and tab "Sheet4" gives mask types for three masks.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^wiki-fg]: Wikipedia, *Forming gas*.

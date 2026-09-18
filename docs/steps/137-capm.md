@@ -379,5 +379,5 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
     B2, filed 2003-11-24, granted 2006-09-26.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7112507>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

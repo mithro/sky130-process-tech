@@ -335,5 +335,5 @@ fab (SKY130's recipe is not public):
     *Solid-State Electronics* **15**(2), 145–158 (1972).
     <https://doi.org/10.1016/0038-1101(72)90048-2>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

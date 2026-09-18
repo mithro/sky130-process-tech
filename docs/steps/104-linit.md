@@ -337,5 +337,5 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
     Processing", *Electrochemical and Solid-State Letters* **4**(5),
     F11 (2001). <https://doi.org/10.1149/1.1359056>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

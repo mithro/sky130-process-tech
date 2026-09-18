@@ -392,13 +392,13 @@ An industry-generic depletion-mode channel implant for a 200 mm,
     B1, granted 2014-08-05.
     <https://patents.google.com/patent/US8796098B1/en>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
     Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
     E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
-    retrieved 2026-09-13.
+    retrieved 2026-09-14.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
 [^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V and

@@ -307,7 +307,7 @@ any product to a step.
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^skw-02]: SkyWater Technology, *Mixed-Signal CMOS & ROIC*, platform
-    table, accessed 2026-08-30. <https://www.skywatertechnology.com/cmos/>
+    table, accessed 2026-09-13. <https://www.skywatertechnology.com/cmos/>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22; "Raw materials." run-in paragraph
     under "Manufacturing". <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
@@ -382,7 +382,7 @@ any product to a step.
     Technology", *Journal of The Electrochemical Society* **137**(6),
     1887–1892 (1990). <https://doi.org/10.1149/1.2086825>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
     SKY130 PDK documentation.

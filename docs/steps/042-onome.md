@@ -333,5 +333,5 @@ memory (SKY130's recipe is not public):
     for the Thermal Oxidation of Silicon", *Journal of Applied Physics*
     **36**(12), 3770–3778 (1965). <https://doi.org/10.1063/1.1713945>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

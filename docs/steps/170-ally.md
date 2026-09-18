@@ -399,5 +399,5 @@ an aluminium back end (SKY130's recipe is not public):
     *Journal of Applied Physics* **45**(10), 4339–4346 (1974).
     <https://doi.org/10.1063/1.1663054>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

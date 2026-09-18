@@ -435,7 +435,8 @@ limits and marking scheme are not public.
     (WHS-T4) 200 mm (8")*, product page, accessed 2026-09-13.
     <https://www.waferhandlingsystems.com/product/2-cassette-automation-sorter-with-ocr-whs-t4-200-mm-8/287/>
 [^semi-m1]: SEMI, *SEMI M1 — Specification for Polished Single Crystal
-    Silicon Wafers*, SEMI Standards store listing.
+    Silicon Wafers*, SEMI Standards store listing, accessed
+    2026-09-18.
     <https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>
 [^semi-m13]: SEMI, *SEMI M13 — Specification for Alphanumeric Marking of
     Silicon Wafers*, SEMI Standards store listing, accessed 2026-09-13.

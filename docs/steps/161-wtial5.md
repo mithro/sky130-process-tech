@@ -621,7 +621,7 @@ fab (SKY130's recipe is not public); the film-by-film account is at
     sputtered coatings", *Journal of Vacuum Science and Technology*
     **11**(4), 666–670 (1974). <https://doi.org/10.1116/1.1312732>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^cyp-qtp-014807]: Cypress Semiconductor, *Technology Derivative
     Qualification Report, QTP# 014807 Version 2.0: Technology Derivative

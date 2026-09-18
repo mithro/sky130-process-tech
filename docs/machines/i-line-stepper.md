@@ -574,7 +574,7 @@ implants.[^pdk-03]
     International Conference on Ion Implantation Technology*, pp. 813–816.
     <https://doi.org/10.1109/IIT.2000.924278>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google
-    Sheet, tab "Sheet4" (mask types), retrieved 2026-09-13.
+    Sheet, tab "Sheet4" (mask types), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^mack-2007]: C. Mack, *Fundamental Principles of Optical Lithography:
     The Science of Microfabrication*, Wiley, 2007, ISBN

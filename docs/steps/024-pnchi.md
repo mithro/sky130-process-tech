@@ -329,7 +329,7 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
     using low energy implants*, US 5,963,801 A, granted 1999-10-05.
     <https://patents.google.com/patent/US5963801A/en>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the 1.8 V

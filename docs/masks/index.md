@@ -957,20 +957,20 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
     Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
     E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
-    retrieved 2026-09-13.
+    retrieved 2026-09-14.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tabs "Run Mask IDs" (the mask table set against MPW-1 to MPW-8, with
     an "Exists" column per run), "Masks" (mask steps with step numbers),
     "Sheet4" (mask types), "Random Mask Case Label Info" (plate-case
     labels) and "Sheet1" (step number, code and description), retrieved
-    2026-09-13.
+    2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
     directory: `README.md`, `masks.html`, the run pages `mpw-001.html` to
     `mpw-008.html`, and for each run × mask directory the page,
     `job.json`, `result.json` and per-die slot JSON files, retrieved
-    2026-09-13. Run pages are `mpw-00N.html`; each render's page is
+    2026-09-14. Run pages are `mpw-00N.html`; each render's page is
     `<run>_<mask>/<run>_<mask>.html` (for example
     `mpw-001_TUNM/mpw-001_TUNM.html`). Rendered from the public shuttle
     repositories under

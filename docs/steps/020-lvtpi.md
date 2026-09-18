@@ -328,7 +328,7 @@ fab (SKY130 values are not public):
     Letters* **47**(6), 584–586 (1985).
     <https://doi.org/10.1063/1.96079>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the 1.8 V

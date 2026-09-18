@@ -371,7 +371,7 @@ via4.1 and via4.2).
     Sheet, tabs "Sheet1" (step number, code and description), "Masks"
     (mask steps with step numbers), "Run Mask IDs" (the mask table set
     against MPW-1 to MPW-8, with "Exists", "Plate ID" and "Info" columns)
-    and "Sheet4" (mask types), retrieved 2026-09-13.
+    and "Sheet4" (mask types), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
     SKY130 PDK documentation.
@@ -396,7 +396,7 @@ via4.1 and via4.2).
 [^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
     directory: `README.md` and, for each run, the `mpw-00N_VIM4/`
     directory with its page, `job.json`, `result.json` and per-die slot
-    JSON files, retrieved 2026-09-13. Rendered from the public shuttle
+    JSON files, retrieved 2026-09-14. Rendered from the public shuttle
     repositories under
     <https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>.
     <https://data.wafer.space/big-storage/sky130-masks/>

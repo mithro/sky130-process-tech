@@ -259,7 +259,7 @@ public):
     <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^caravel-sealring]: Efabless Corporation, *caravel* repository,
     `gds/advSeal_6um_gen.gds.gz` (seal-ring cell for SKY130 shuttle
-    designs), retrieved 2026-09-13.
+    designs), retrieved 2026-09-14.
     <https://github.com/efabless/caravel/blob/main/gds/advSeal_6um_gen.gds.gz>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
@@ -337,5 +337,5 @@ public):
     2001-10-09.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6300252>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

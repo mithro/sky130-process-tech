@@ -372,7 +372,7 @@ alignment corrections.
 <!-- footnotes -->
 
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet4" (mask types), retrieved 2026-09-13.
+    tab "Sheet4" (mask types), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^wiki-litho]: Wikipedia, *Photolithography*.
     <https://en.wikipedia.org/wiki/Photolithography>
@@ -390,7 +390,7 @@ alignment corrections.
 [^nikon-s204b]: Nikon, *NSR-S204B 248 nm Scanner Exposure System
     Overview* (specification summary, reseller copy), attached to the
     listing Tara Semiconductor Technology, *Used 2002 NIKON S204
-    Scanner* (listing LITV25-01), accessed 2026-09-12.
+    Scanner* (listing LITV25-01), accessed 2026-09-13.
     <https://f.machineryhost.com/fc49306d97602c8ed1be1dfbf0835ead/aa008f2897d7d4a224ff92839b4299e9/SpecSummary_LITV25-01_NSR-S204B.pdf>,
     <https://www.tarasemi.com/listings/5223879-used-2002-nikon-s204-scanner>
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001

@@ -415,7 +415,7 @@ m1.2).
     Sheet, tabs "Sheet1" (step number, code and description), "Masks"
     (mask steps with step numbers), "Run Mask IDs" (the mask table set
     against MPW-1 to MPW-8, with "Exists", "Plate ID" and "Info" columns)
-    and "Sheet4" (mask types), retrieved 2026-09-13.
+    and "Sheet4" (mask types), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
     SKY130 PDK documentation.
@@ -433,7 +433,7 @@ m1.2).
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
 [^pdk-summary]: SkyWater PDK Authors, *Summary of Key Periphery Rules*
-    (Table F4), SkyWater SKY130 PDK documentation, retrieved 2026-09-13.
+    (Table F4), SkyWater SKY130 PDK documentation, retrieved 2026-09-14.
     <https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>
 [^pdk-08]: SkyWater PDK Authors, *Parasitic Layout Extraction* page
     (resistance tables), SkyWater SKY130 PDK documentation.
@@ -441,7 +441,7 @@ m1.2).
 [^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
     directory: `README.md` and, for each run, the `mpw-00N_MM1/`
     directory with its page, `job.json`, `result.json` and per-die slot
-    JSON files, retrieved 2026-09-13. Rendered from the public shuttle
+    JSON files, retrieved 2026-09-14. Rendered from the public shuttle
     repositories under
     <https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>.
     <https://data.wafer.space/big-storage/sky130-masks/>

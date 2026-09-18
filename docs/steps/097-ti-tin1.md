@@ -372,5 +372,5 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
     CoSi₂", *Materials Science and Engineering: R* **11**(2–3), vii–153
     (1993). <https://doi.org/10.1016/0927-796X(93)90001-J>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

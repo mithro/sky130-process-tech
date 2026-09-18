@@ -355,5 +355,5 @@ fab (SKY130's recipe is not public):
     chemical mechanical polishing apparatus*, US 5,893,796 A, granted
     1999-04-13. <https://patents.google.com/patent/US5893796A/en>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

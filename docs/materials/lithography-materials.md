@@ -601,7 +601,7 @@ conditions of their own.
 [^mli-about]: Moses Lake Industries, *About MLI*, company page, accessed
     2026-09-13. <https://mlindustries.com/about-mli/>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    retrieved 2026-09-13; tab "Sheet1" lists the 171 steps (number, code and
+    retrieved 2026-09-14; tab "Sheet1" lists the 171 steps (number, code and
     description) and tab "Sheet4" gives mask types for three masks.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^wang-2013-tmah]: Y. Wang, Z. Zhang, C. Jiang and T. Xu, "Electrodialysis

@@ -382,7 +382,7 @@ below are typical or taken from contemporaneous patents.
     Technology A* **14**(3), 1115–1123 (1996).
     <https://doi.org/10.1116/1.580279>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the 1.8 V
@@ -396,5 +396,5 @@ below are typical or taken from contemporaneous patents.
     Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
     E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
-    retrieved 2026-09-13.
+    retrieved 2026-09-14.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>

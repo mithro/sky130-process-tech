@@ -408,7 +408,7 @@ features (inference).
     Sheet, tabs "Sheet1" (step number, code and description), "Masks"
     (mask steps with step numbers), "Run Mask IDs" (the mask table set
     against MPW-1 to MPW-8, with "Exists" and "Plate ID" columns per run)
-    and "Sheet4" (mask types), retrieved 2026-09-13.
+    and "Sheet4" (mask types), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^pdk-05]: SkyWater PDK Authors, *Masks* page and `masks.csv`, SkyWater
     SKY130 PDK documentation.

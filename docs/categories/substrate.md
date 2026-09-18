@@ -259,7 +259,8 @@ The substrate category has no process tool in the fab itself; the
     Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
     ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
 [^semi-m1]: SEMI, *SEMI M1 — Specification for Polished Single Crystal
-    Silicon Wafers*, SEMI Standards store listing.
+    Silicon Wafers*, SEMI Standards store listing, accessed
+    2026-09-18.
     <https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>
 [^semi-m62]: SEMI M62, *Specification for Silicon Epitaxial Wafers*,
     SEMI.

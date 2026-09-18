@@ -506,7 +506,7 @@ poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
     *International Symposium on Microelectronics* **2012**(1), 384–395
     (IMAPS, 2012). <https://doi.org/10.4071/isom-2012-TP41>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^raw-data-readme]: SkyWater PDK Authors, *sky130-raw-data - Raw data
     collected about the SKY130 process technology*, `README.rst`,
@@ -523,7 +523,7 @@ poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
     Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
     E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
-    retrieved 2026-09-13.
+    retrieved 2026-09-14.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
 [^raw-data-testtile-open]: SkyWater PDK Authors, *SkyWater 130nm Open
     Manufacturing Test Tile*, `docs/sky130-testtile-open/README.rst` and

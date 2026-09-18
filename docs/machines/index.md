@@ -620,7 +620,7 @@ state:
 <!-- footnotes -->
 
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    retrieved 2026-09-13; tab "Sheet1" lists the 171 steps (number, code and
+    retrieved 2026-09-14; tab "Sheet1" lists the 171 steps (number, code and
     description) and tab "Sheet4" gives mask types for three masks.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),

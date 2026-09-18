@@ -1279,7 +1279,7 @@ public.
     <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
     <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    retrieved 2026-09-13; tab "Sheet1" lists the 171 steps (number, code and
+    retrieved 2026-09-14; tab "Sheet1" lists the 171 steps (number, code and
     description). <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^pat-01]: K. Ramkumar, M. Rathor, B. Parameshwaran and L. Lancaster
     (Cypress Semiconductor), *Method of manufacturing an
@@ -1471,7 +1471,7 @@ public.
     Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
     E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
-    retrieved 2026-09-13.
+    retrieved 2026-09-14.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
 [^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V and
