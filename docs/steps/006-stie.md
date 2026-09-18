@@ -27,21 +27,29 @@ silicon, depositing one or more dielectric materials (such as silicon
 dioxide) to fill the trenches, and removing the excess
 dielectric";[^wiki-sti] `STIE` is the first of those three operations.
 
-**How deep?** No SkyWater document gives the SKY130 trench depth. Two
-public numbers constrain it. The PDK process-stack drawing places the
-top of the field oxide ("FOX K=3.9") at 0.3262 µm on its vertical
-scale,[^pdk-04] and the assumptions page gives the field-oxide step
-above the silicon surface under poly as 0.07 µm.[^pdk-03] If the
-drawing's zero is the trench floor — which is our reading of the
-diagram, not a documented fact — the trench would be about 0.26 µm
-deep. That is in line with era practice: an AmberWave Systems STI
-patent (now TSMC-owned) gives "a depth d1 within a range of, for
-example, 3000-4000 Å",[^pat-sti-amberwave] and the 2001 ITRS notes that
-STI {term}`aspect ratios <aspect ratio>` rise node on node as spacing shrinks.[^itrs-01] With
-a minimum trench width of 0.27 µm (difftap.3)[^pdk-periph] and a
-nitride of ~150 nm, the fill aspect ratio (depth + nitride) / width
-would be about 1.5 : 1 (Thung et al. define the ratio that
-way[^thung-2016]).
+**How deep?** No SkyWater document gives the SKY130 trench depth, and
+the PDK stack drawing does not settle it. The drawing's vertical ladder
+starts at `0.0` and puts the next level at 0.3262 µm, where it labels
+"FOX K=3.9";[^pdk-04] its two `licon` dimensions (0.6099 µm over
+`diffusion` and 0.4299 µm over the 0.18 µm `field poly`, both ending at
+the `li` bottom at 0.9361 µm) put the diffusion surface
+(0.9361 − 0.6099 = 0.3262 µm) and the field-oxide top
+(0.9361 − 0.4299 − 0.18 = 0.3262 µm) at the same level — so the drawing
+shows no field-oxide step, and the 0.07 µm `FOXSTEP` of the assumptions
+table[^pdk-03] cannot be combined with it to derive a trench depth. If
+the drawing's zero is the trench floor — our reading, not a documented
+fact, and the drawing itself says "Diagram not to scale!" — the trench
+would be about 0.33 µm deep; if the zero is the substrate surface, as
+the {ref}`PSG <step-089>` page reads the same labels, the drawing says
+nothing about trench depth.[^pdk-04] Era practice brackets the same
+range: an AmberWave Systems STI patent (now TSMC-owned) gives "a depth
+d1 within a range of, for example, 3000-4000 Å" for a strained-Si/
+relaxed-SiGe module,[^pat-sti-amberwave] and Thung et al. record that
+the STI "aspect ratio is increased by 66% from 0.18µm technology to
+0.13µm technology".[^thung-2016] On a 0.3 µm depth and a ~150 nm
+nitride, a 0.27 µm minimum trench width (difftap.3)[^pdk-periph] gives a
+fill aspect ratio of roughly 1.7 : 1 by Thung et al.'s
+definition.[^thung-2016]
 
 ## Step category
 
@@ -251,10 +259,12 @@ W/WN".[^skw-01]
 
 ## Open questions
 
-* **Trench depth.** The ~0.26 µm figure is an inference from the PDK
-  stack drawing and assumptions page[^pdk-04][^pdk-03] whose datum is
-  not documented; the drawing says "not to scale". No measured
-  cross-section of SKY130 STI is public.
+* **Trench depth.** No SkyWater document states it, and the PDK stack
+  drawing does not settle it either way: its datum (whether `0.0` is
+  the trench floor or the substrate surface) is not documented, and the
+  drawing says "not to scale". A ~0.3 µm figure follows only if the
+  zero is the trench floor.[^pdk-04][^pdk-03] No measured cross-section
+  of SKY130 STI is public.
 * **Where the FOM resist is stripped** — inside `STIE`, or before the
   silicon etch — is not stated publicly.
 * Whether SkyWater's DPSII or a Lam tool carries this etch is not

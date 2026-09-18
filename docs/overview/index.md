@@ -362,8 +362,9 @@ between the trench etch and the liner oxidation. On the {ref}`DNM <step-007>`
 page's reading, the implant therefore enters through open trenches and is
 driven by the heat of the isolation module (inference); that page also sets
 out why that order may have been
-chosen, as inferences. No trench depth is public; about 0.26 µm is the
-{ref}`STIE <step-006>` page's reading of the stack diagram.
+chosen, as inferences. No trench depth is public; the {ref}`STIE <step-006>`
+page reads the stack diagram as consistent with roughly 0.3 µm and
+explains why the drawing cannot fix it.
 
 **Wells and threshold implants.** Five masks carry ten implants. The
 module opens with the low-threshold NMOS implant
