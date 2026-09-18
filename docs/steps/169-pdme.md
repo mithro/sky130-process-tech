@@ -45,8 +45,9 @@ pad,[^pdk-io-gpiov2] and the smallest allowed opening is 2 µm
 ## Step category
 
 `PDME` is an {ref}`Etch <category-etch>` step of the *dielectric,
-fluorine-chemistry* class — the category page's silicon nitride and
-silicon dioxide entries in sequence — ending on a metal. What is
+fluorine-chemistry* class — the category page's dielectric entries,
+silicon nitride then silicon dioxide, run one after the other here —
+ending on a metal. What is
 specific to this instance is the floor. Every earlier dielectric etch
 through to metal (the via etches, such as {ref}`VIM3E <step-145>`)
 lands on a refractory cap and is followed by a liner, plug or next
@@ -84,8 +85,10 @@ around every pad.
   corrosion that exposed aluminium suffers[^comizzoli-1986]).
 * **Undamaged pads for test.** Probing at {ref}`HPETEST <step-171>`
   and bonding at assembly load the pad and the oxide beneath it; Hunter
-  et al. describe how probe cracks in the oxide under aluminium pads
-  can be hidden and later grow during bonding.[^hunter-2012] A pad that
+  et al. used harsh wire bonding to reveal probe cracks in the oxide
+  under aluminium pads that routine inspection misses, and report that
+  such latent cracks are a reliability risk for circuit-under-pad
+  designs.[^hunter-2012] A pad that
   has been thinned or roughened by the etch is less tolerant (inference).
 
 ## How it is typically performed
@@ -98,8 +101,13 @@ an aluminium top metal (SKY130's recipe is not public):
    coupled dielectric etcher ({ref}`category-etch`); helium backside
    cooling to protect the resist.
 2. **Nitride etch.** CF₄/O₂ (with N₂ or CHF₃) or SF₆-based chemistry;
-   Kastenmeier et al. give nitride and oxide rates in CF₄/O₂/N₂ and the
-   conditions for high nitride selectivity.[^kastenmeier-1996][^kastenmeier-1999]
+   Kastenmeier et al. measured nitride and oxide rates in CF₄/O₂/N₂ in a
+   downstream reactor (small N₂ additions raise the nitride rate
+   sevenfold while leaving the oxide rate unchanged) and, separately,
+   "highly selective" nitride etching over silicon and silicon
+   dioxide — again in a remote discharge, and the wrong selectivity pair
+   for a pad etch that must stop on
+   metal.[^kastenmeier-1996][^kastenmeier-1999]
    The Micron and TSMC patents name "fluorine containing gases, such as
    CHF3" and "CHF3, CF4, C2F6, C2F2, C4F8" for the passivation nitride
    etch.[^pat-pad-fluorine-micron][^pat-pad-fluorine-tsmc]
@@ -113,9 +121,10 @@ an aluminium top metal (SKY130's recipe is not public):
    fluorine over-etch or by a separate wet or plasma step
    (industry practice;[^liu-2007-tiw][^danzl-1997] SKY130's choice is not
    public). {term}`Endpoint <endpoint>` by optical emission as the
-   nitride clears; the pad
-   area is a small fraction of the wafer, the low-open-area condition
-   Wodecki discusses.[^wodecki-1999]
+   nitride clears, where the emission change is small because the pad
+   area is a small fraction of the wafer; narrow-band systems were
+   nonetheless demonstrated on 200 mm dielectric etchers at under 3 %
+   open area.[^wodecki-1999]
 5. **Fluorine removal.** An in-situ argon, O₂ or mixed plasma after the
    main etch to remove Al–F–O residue from the pads, the methods of the
    Micron and TSMC patents.[^pat-pad-fluorine-micron][^pat-pad-fluorine-tsmc]
@@ -207,8 +216,9 @@ an aluminium top metal (SKY130's recipe is not public):
 
 ### Deep dive
 
-* Kastenmeier et al., *JVST A* 1996 and 1999 — nitride and oxide etching
-  in fluorine plasmas and nitride selectivity.[^kastenmeier-1996][^kastenmeier-1999]
+* Kastenmeier et al., *JVST A* 1996 and 1999 — nitride and oxide etch
+  rates and nitride-over-silicon/oxide selectivity, both in downstream
+  or remote reactors.[^kastenmeier-1996][^kastenmeier-1999]
 * Oehrlein et al., *JVST A* 1994, and Schaepkens et al., *JVST A* 1999 —
   fluorocarbon etching of oxide and the oxide/nitride selectivity
   mechanism.[^oehrlein-1994b][^schaepkens-1999]
@@ -227,7 +237,8 @@ an aluminium top metal (SKY130's recipe is not public):
   bond pads.[^teo-2015]
 * Hunter et al., IMAPS 2012 — probe and bond damage in aluminium
   pads.[^hunter-2012]
-* Wodecki, SPIE 1999 — endpoint at low open area.[^wodecki-1999]
+* Wodecki, SPIE 1999 — endpoint detection demonstrated at low open
+  area.[^wodecki-1999]
 * Comizzoli et al., *Science* 1986 — corrosion of electronic
   metallisation.[^comizzoli-1986]
 
@@ -238,11 +249,13 @@ an aluminium top metal (SKY130's recipe is not public):
   public.
 * The etch chemistry, tool, endpoint and any fluorine-removal treatment
   are not public.
-* The passivation thickness to be etched is uncertain: 0.63 µm (0.54
-  µm TOPNIT plus 0.09 µm TOPOX, our arithmetic) on the PDK
-  diagram[^pdk-04] against about 0.7–1.0 µm in the Cypress reports for
-  the R7FT-3R technology and the S8DI and S8TNV-5R
-  variants.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
+* The passivation thickness to be etched is uncertain: 0.63 µm on the
+  PDK diagram (0.54 µm TOPNIT plus 0.09 µm TOPOX, our
+  arithmetic)[^pdk-04] against 1.0 µm in the two Cypress reports that
+  give both films (1000 Å TEOS plus 9000 Å nitride, for the S8DI
+  variant and the R7FT-3R technology)[^cyp-qtp-123907][^cyp-qtp-014807]
+  and 0.7 ± 0.2 µm of nitride, with no oxide stated, for
+  S8TNV-5R.[^cyp-qtp-113005]
 * Whether the same etch opens laser-fuse windows (see
   {ref}`PDM <step-168>`) is not public.
 * This page treats the resist strip and clean as part of the etch.
