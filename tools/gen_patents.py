@@ -96,6 +96,17 @@ JURISDICTIONS = [
     ("JP", "Japan"), ("CN", "China"), ("KR", "South Korea"), ("TW", "Taiwan"),
     ("DE", "Germany"), ("GB", "United Kingdom"), ("FR", "France"),
 ]
+# Other ISO 3166-1 alpha-2 codes seen in the dataset's members, for a
+# readable "others" section heading; a code not listed here falls back
+# to the bare code (still correct, just less readable).
+OTHER_COUNTRY_NAMES = {
+    "AT": "Austria", "AU": "Australia", "BE": "Belgium", "BR": "Brazil", "CA": "Canada",
+    "CH": "Switzerland", "DK": "Denmark", "ES": "Spain", "FI": "Finland", "GR": "Greece",
+    "HK": "Hong Kong", "IE": "Ireland", "IL": "Israel", "IN": "India", "IT": "Italy",
+    "LU": "Luxembourg", "MX": "Mexico", "MY": "Malaysia", "NL": "Netherlands",
+    "NO": "Norway", "NZ": "New Zealand", "PT": "Portugal", "RU": "Russia",
+    "SE": "Sweden", "SG": "Singapore", "YU": "Yugoslavia (historical)", "ZA": "South Africa",
+}
 
 _ESC = re.compile(r"([\\`*_\[\]<>|#${}])")
 
@@ -489,7 +500,7 @@ def gen_by_jurisdiction(fams: list[dict]) -> str:
             by_cc[m["country"]].append((m, f))
     seen_codes = {cc for cc, _ in JURISDICTIONS}
     others = sorted(set(by_cc) - seen_codes)
-    for cc, name in JURISDICTIONS + [(c, c) for c in others]:
+    for cc, name in JURISDICTIONS + [(c, OTHER_COUNTRY_NAMES.get(c, c)) for c in others]:
         items = by_cc.get(cc)
         if not items:
             continue
