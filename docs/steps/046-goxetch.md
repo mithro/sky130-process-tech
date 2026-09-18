@@ -16,7 +16,9 @@
 from the low-voltage regions. With the {ref}`LVOM <step-044>` resist
 still in place — it has just served as the mask for
 {ref}`NCHI <step-045>` — the wafer is dipped in dilute hydrofluoric acid
-or buffered HF until the roughly 10 nm oxide[^pdk-hv] in the windows is
+or buffered HF until the thick oxide — thinner than the PDK's 110 Å
+finished thick-oxide figure[^pdk-hv] by an amount that is not public
+(see {ref}`GOX100 <step-043>`) — in the windows is
 gone and bare silicon is exposed; under the resist, over the 5 V and
 high-voltage transistors, the oxide stays. The resist is then stripped
 and the wafer cleaned for the thin gate oxidation at
@@ -56,7 +58,9 @@ the two gate oxides.
 
 The 1.8 V transistors need a ~4 nm gate oxide (the 1.8 V NMOS model
 carries `toxe = 4.148e-9`[^pdk-model-nfet01v8]); the thick oxide on
-their active areas is ~10 nm[^pdk-hv] and must be removed before the
+their active areas — thinner than the PDK's 110 Å finished
+thick-oxide figure[^pdk-hv] by an amount that is not public — must be
+removed before the
 thin one can be grown. A thin oxide cannot simply be grown on top:
 oxidation adds to an existing oxide by the {term}`Deal–Grove <Deal–Grove model>` law rather than
 replacing it ({ref}`category-oxidation`). The removal has to be:

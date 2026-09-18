@@ -28,8 +28,8 @@ implant, and the PDK says its cross-section "is identical to the std
 NMOS FET except for the VT adjust implants".[^pdk-07]
 
 The implant passes through the thick gate oxide grown at
-{ref}`GOX100 <step-043>` — roughly 10 nm of fresh thermal oxide (the
-PDK's 110 Å final value[^pdk-hv] less the later increment) — and through
+{ref}`GOX100 <step-043>` — thinner than the PDK's 110 Å finished
+thick-oxide figure[^pdk-hv] by an amount that is not public — and through
 the resist windows; the 5 V and high-voltage regions are covered. That
 the oxide it goes through is about to be etched away is not incidental:
 Cypress notes that implanted oxide is degraded and loses more in every
@@ -103,7 +103,9 @@ fab (SKY130's values are not public):
   placement from this pre-gate implant.[^pat-vt-amd]
 * **Energy.** Tens of keV for BF₂ (10–100 keV in the Cypress
   patent[^pat-04]), set so that the peak lies just under the eventual
-  gate oxide after allowing for the ~10 nm {term}`screen oxide`[^pdk-hv] the
+  gate oxide after allowing for the {term}`screen oxide` — thinner
+  than the PDK's 110 Å finished thick-oxide figure[^pdk-hv] by an
+  amount that is not public (see {ref}`GOX100 <step-043>`) — the
   ions must cross — the screen also randomises the beam and reduces
   {term}`channelling`.[^txt-02]
 * **Dose.** Of order 10¹²–10¹³ cm⁻²: "1e12 cm⁻² to about 1e14

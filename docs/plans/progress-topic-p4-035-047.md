@@ -23,7 +23,7 @@ arithmetic before being fixed or declined.
 | 042-M1 | 042-onome.md | fixed | 7-15 nm trapping layer merges two different quantities |
 | 043-M1 | 043-gox100.md | fixed | ONO-first ordering rationale not given |
 | 043-M2 | 043-gox100.md | fixed | "somewhat thinner than 11 nm" left unquantified |
-| 044-M1 | 044-lvom.md | open | NOT-hvi inference marked once, used as fact elsewhere |
+| 044-M1 | 044-lvom.md | fixed | NOT-hvi inference marked once, used as fact elsewhere |
 | 045-M1 | 045-nchi.md | open | 7 deg tilt asserted; cited analogue specifies zero tilt |
 | 045-M2 | 045-nchi.md | open | "last channel implant" claim too strong |
 | 046-M1 | 046-goxetch.md | open | category-page quote drops its inference marker |
@@ -51,12 +51,12 @@ arithmetic before being fixed or declined.
 | 042-L1 | 042-onome.md | fixed | two quotation slips (DPS II, SNF gas list) |
 | 043-L1 | 043-gox100.md | fixed | dropped word "oxide" (same as 040-L1) |
 | 043-L2 | 043-gox100.md | fixed | "5.0V I/O" quoted differently than step 044 |
-| 044-L1 | 044-lvom.md, 045-nchi.md, 046-goxetch.md | open | "~10 nm" cited to finished-thickness source |
-| 044-L2 | 044-lvom.md | open | beverina-2003 used beyond abstract |
+| 044-L1 | 044-lvom.md, 045-nchi.md, 046-goxetch.md | fixed | "~10 nm" cited to finished-thickness source |
+| 044-L2 | 044-lvom.md | fixed | beverina-2003 used beyond abstract |
 | 045-L1 | 045-nchi.md | open | AMD quotation drops "zero tilt" clause (same as 045-M1) |
 | 045-L2 | 045-nchi.md | open | e-test values don't say how sweeps were combined |
 | 046-L1 | 046-goxetch.md | open | uncited/wider HF dilution range vs 039 |
-| 046-L2 | 046-goxetch.md | open | "~10 nm" (same as 044-L1) |
+| 046-L2 | 046-goxetch.md | fixed | resolved together with 044-L1 | "~10 nm" (same as 044-L1) |
 | 047-L1 | 047-lvgox.md | open | "the one public hint" overstates evidence |
 | 047-L2 | 047-lvgox.md | open | raw-data module-to-device mapping not given |
 
