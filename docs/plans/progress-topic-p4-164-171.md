@@ -76,6 +76,24 @@ left untouched.
 
 ## Checks
 
-Run before finishing: `check_steps.py`, `check_refs.py`, `check_machines.py`,
-`check_materials.py`, `check_masks.py`, `check_papers.py`,
-`gen_papers.py --check`, `sphinx-build -W`. Not yet run.
+All run from the worktree, in the foreground, after all findings above
+were fixed/declined/deferred:
+
+* `uv run python tools/check_steps.py` — 171 pages, 171 written, 0 stubs,
+  0 missing headings.
+* `uv run python tools/check_refs.py` — 264 written pages checked, 0 with
+  problems.
+* `uv run python tools/check_machines.py` — 30 machine pages checked, 0
+  problems.
+* `uv run python tools/check_materials.py` — 12 material pages checked, 0
+  problems.
+* `uv run python tools/check_masks.py` — 36 mask pages checked, 0
+  problems.
+* `uv run python tools/check_papers.py` — 49 papers checked, 0 problems.
+* `uv run python tools/gen_papers.py --check` — 8 pages checked, 0
+  problems.
+* `uv run sphinx-build -W -q -b html docs
+  /home/admin/github/mithro/sky130-process-tech/tmp/build-topic-p4-164-171`
+  — exit 0, no warnings.
+
+All pass.
