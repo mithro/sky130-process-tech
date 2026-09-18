@@ -294,11 +294,11 @@ An industry-generic post-implant strip and pre-anneal clean for a
 [^pat-strip-mosel]: M.-S. Tseng, F.-H. Chao and N.-Y. Tsai (Mosel
     Vitelic), *Low temperature dry process for stripping photoresist
     after high dose ion implantation*, US 5,811,358 A, granted
-    1998-09-22. <https://patents.google.com/patent/US5811358A/en>
+    1998-09-22. <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5811358>
 [^pat-strip-ulvac]: I. Nakayama et al. (ULVAC Technologies), *Cold
     processes for cleaning and stripping photoresist from surfaces of
     semiconductor wafers*, US 5,795,831 A, granted 1998-08-18.
-    <https://patents.google.com/patent/US5795831A/en>
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5795831>
 [^pat-asher-axcelis]: A. F. Becknell, P. Hammar and D. Ferris (Axcelis
     Technologies), *Apparatus and plasma ashing process for increasing
     photoresist removal rate*, US 7,449,416 B2, granted 2008-11-11.

@@ -11,7 +11,7 @@ before being fixed or declined.
 | 064-M1 | Medium | fixed | Confirmed pdk-assumptions.txt 915-917: pseudoShadowing has no name/description tying it to NTM, unlike its four tip-named neighbours. Marked the connection as a reading. |
 | 065-M1 | Medium | fixed | Confirmed wiki-implant.txt gives no arsenic dose threshold (only a yttrium/sapphire example). Cited the threshold to txt-01/rev-05 as a typical value, kept the quotation on wiki-implant. |
 | 065-M2 | Medium | fixed | Confirmed pdk-assumptions.html Table 5 column is headed "Vertical Space", not "lateral"; the reading is supported by the JCTD/LD row but was unmarked. Applied the marked formulation on 065-asti.md (both instances) and 075-tiprtad.md; 064-ntm.md already states it neutrally. |
-| 066-M1 | Medium | open | |
+| 066-M1 | Medium | fixed | Confirmed pdk-assumptions.txt 780-801 publishes only three implant angles (HCIMPA 0, TipAng 7, HvTipAngle 40/HvTipTwist 23); at least four other implant pages in range say their SKY130 angle is not public. Reworded to match. |
 | 068-M1 | Medium | open | |
 | 068-M2 | Medium | open | |
 | 069-M1 | Medium | open | |
@@ -24,7 +24,7 @@ before being fixed or declined.
 | 065-L2 | Low | fixed | = 064-L1, same text/fix at 065-asti.md's shadowing-arithmetic bullet. |
 | 065-L3 | Low | fixed | Confirmed via Crossref that Nobili 1983 (10.1149/1.2119859) has no public abstract/paywalled text; marked the 2e20 threshold as a typical value on txt-01, kept Nobili for the precipitation mechanism. |
 | 065-L4 | Low | fixed | Confirmed axcelis-8250.txt is the Semiconductor Online 8250HT page (footnote already says so); SkyWater's own 8250 listing gives no energy range. Reworded to attribute the 3 keV floor to the 8250HT variant only. |
-| 066-L1 | Low | open | |
+| 066-L1 | Low | fixed | Fetched USPTO grant PDFs for US5795831, US6660603 and US5155336 (200 OK, verified valid PDFs) to add to the shared cache alongside the already-cached US6238982/US5811358/US20040214448/US8093128/US8796098; changed all eight patents.google.com footnote URLs (066,067,068,070,071,072,073,074,075) and their public-sources.md entries to image-ppubs.uspto.gov. |
 | 066-L2 | Low | open | |
 | 066-L3 | Low | open | |
 | 067-L1 | Low | open | |
