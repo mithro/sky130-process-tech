@@ -49,7 +49,10 @@ another variant (inference). The metal-4 design rules match metal 3's:
 0.240 µm² minimum area (m4.4a) and a 0.7 minimum oxide pattern
 density checked in 700 µm windows (m4.pd.1, m4.pd.2a).[^pdk-periph]
 
-The step list calls this step "Al Cu 2/TiW deposition";[^steps-sheet] a
+The step list calls this step "Al Cu 2/TiW deposition";[^steps-sheet]
+this page's title and the steps index normalise that to "AlCu" without
+the space, as {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>` and
+{ref}`WTIAL5 <step-161>` do for the same name at the other levels. A
 step name is not evidence of a chemistry, and no public source
 describes the metal-4 films themselves. Two Cypress reports for this
 fab describe metal stacks, and both are for three-metal technologies.
