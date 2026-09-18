@@ -21,11 +21,13 @@ lithography, {ref}`HVTPM <step-022>`. The step list used in this
 reference names it after the last implant it follows ("P-channel implant
 strip"); the resist it removes is, we infer, the N-well resist.
 
-This is the hardest strip of the module. The resist is the thickest
-in the flow so far (2–3 µm class, inferred on the
-{ref}`NWM <step-017>` page), it has been bombarded by high-energy
-ions for the longest cumulative time, and the summed dose is of order
-10¹³ cm⁻² (illustrative; {ref}`NWI <step-018>`). All three conditions
+This is the hardest strip of the module. The resist is as thick as any
+in the flow so far — the same 2–3 µm class inferred for the deep N-well
+resist at {ref}`DNM <step-007>` and for this one at
+{ref}`NWM <step-017>` — and, unlike that one, it has masked three
+implants rather than one; it has, we infer, absorbed more total dose
+than any earlier implant resist as a result, with a summed dose of
+order 10¹³ cm⁻² (illustrative; {ref}`NWI <step-018>`). Both conditions
 thicken the carbonised {term}`crust <implant crust>` and raise the risk of {term}`popping`. The wafer
 surface under the resist is, we infer, still all oxide (pad oxide and trench
 oxide), which allows the full {term}`SPM`/{term}`SC-1` sequence.
