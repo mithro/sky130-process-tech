@@ -36,10 +36,11 @@ aluminium stacks[^cyp-qtp-113005]).
 capacitor.
 
 The film's thickness is not public, but the sheet resistance bounds
-it. Sputtered Ti:W has a resistivity of some tens of µΩ·cm — Ghate et
-al. and Hill characterised the films[^ghate-1978][^hill-1980] — and
-for an industry-typical 50–100 µΩ·cm (textbook range for refractory
-barrier films[^txt-02]) a 5.8 Ω/sq sheet corresponds to
+it. Sputtered Ti:W is a resistive metal; Ghate et al. and Hill
+characterised such films, though their values are not publicly
+readable beyond the titles.[^ghate-1978][^hill-1980] Taking the
+industry-typical 50–100 µΩ·cm for refractory barrier
+films,[^txt-02] a 5.8 Ω/sq sheet corresponds to
 {math}`d = \rho / R_s \approx 0.09`–0.17 µm. We therefore read the
 top plate as roughly 0.1 µm of TiW (inferred; our arithmetic), several
 times thicker than the 300 Å TiW cap of the metal stacks[^cyp-qtp-113005]
@@ -78,9 +79,11 @@ plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
   on a flat, continuous dielectric and the capacitance is set by the
   drawn `capm` area plus a periphery term — the `CMIMA` 2 fF/µm² and
   `CMIMP` 0.19 fF/µm of the PDK.[^pdk-07] This is the
-  top-plate-first construction of the Newport Fab and Freescale
-  patents,[^pat-mim-newportfab][^pat-mim-freescale] and of the Al-BEOL MiM
-  processes Kar-Roy et al. and Babcock et al. describe.[^kar-roy-1999][^babcock-2001]
+  top-plate-first construction of the Newport Fab
+  patent,[^pat-mim-newportfab] in which the interconnect metal itself
+  becomes the bottom plate; Freescale's patent patterns the top plate
+  first too, but over a dedicated bottom electrode on a
+  CMP-planarised dielectric.[^pat-mim-freescale]
 * **Why TiW (as assumed here).** The plate must be a metal that (i) sputters at low
   temperature onto a dielectric without reacting with it, (ii) can
   be etched with high {term}`selectivity` to that dielectric
@@ -96,11 +99,16 @@ plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
   Danzl and McLaurin used to strip a TiW anti-reflective cap from
   aluminium pads,[^danzl-1997] and the fab's metal etchers are
   listed for it ("Lam 9600, Al, TiW, TiN, Pt"[^skw-01]). The
-  published alternatives — TiN top plates in the Conexant/Newport
-  Fab and TI processes,[^kar-roy-1999][^pat-mim-newportfab][^babcock-2001]
-  an aluminium cap over a Ta/TaN top electrode on a copper back end
-  in TI's later "ALCAP" scheme[^pat-mim-ti-alcap]
-  — play the same role with the fab's other refractory film.
+  published alternative is a TiN top plate, as in the Newport Fab and
+  Texas Instruments patents (US 6,430,028 names "titanium nitride,
+  tantalum nitride, aluminium or a composite stack"; US 8,110,414's
+  top electrode "comprises TiN");[^pat-mim-newportfab][^pat-mim-ti-etch]
+  the electrode materials of the Kar-Roy and Babcock papers are not
+  stated in their public abstracts.[^kar-roy-1999][^babcock-2001] TI's
+  later "ALCAP" scheme instead caps the top electrode with aluminium,
+  over a Ta- or TaN-based bottom electrode/copper-diffusion barrier
+  and sidewall spacers, on a copper back end[^pat-mim-ti-alcap] —
+  playing a similar role with the fab's other refractory film.
 * **Sheet resistance and quality factor.** A plate of 5.8 Ω/sq[^pdk-07]
   under a 2 fF/µm² dielectric gives a distributed RC whose series
   resistance limits the capacitor's {term}`quality factor` at RF; the PDK's
@@ -245,7 +253,12 @@ back end (SKY130's recipe is not public):
 * Danzl and McLaurin, IEMT 1997 — peroxide removal of a TiW cap from
   aluminium, the wet alternative.[^danzl-1997]
 * Kar-Roy et al., IITC 1999, and Babcock et al., *IEEE EDL* 2001 —
-  TiN top plates in published Al-BEOL MiM processes.[^kar-roy-1999][^babcock-2001]
+  capacitance density and frequency dispersion of published Al-BEOL
+  PECVD-nitride MiMs, though neither abstract names an electrode
+  material.[^kar-roy-1999][^babcock-2001]
+* Cathey et al. (TI), US 8,110,414 — a TiN top-electrode etch with
+  the selectivity and dimensions this reference relies
+  on.[^pat-mim-ti-etch]
 * Ng et al., *IEEE TED* 2005 — a review of MiM integration in Al–Cu
   and Cu back ends.[^ng-2005]
 * Brabazon et al. (IBM), US 5,708,559; Kar-Roy and Racanelli
@@ -386,6 +399,12 @@ back end (SKY130's recipe is not public):
     Semiconductor), *MIM capacitor in a semiconductor device and method
     therefor*, US 7,375,002 B2, filed 2005-06-28, granted 2008-05-20.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7375002>
+[^pat-mim-ti-etch]: M. O. Cathey Jr., P. Mahalingam, W. Tian,
+    D. C. Guiling, X. Chen, B. Hu and S. Chevacharoenkul (Texas
+    Instruments), *Forming integrated circuit devices with
+    metal-insulator-metal capacitors using selective etch of top
+    electrodes*, US 8,110,414 B2, filed 2009-04-30, granted 2012-02-07.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8110414>
 [^pat-mim-ti-alcap]: D. L. Crenshaw, B. L. Williams, A. Tsao,
     H. Shichijo, S. S. Papa Rao, K. D. Brennan and S. A. Lytle (Texas
     Instruments), *Metal insulator metal (MIM) capacitor fabrication
