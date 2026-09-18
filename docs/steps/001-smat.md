@@ -122,8 +122,8 @@ typically:
 5. **Initial clean.** Before the first furnace step
    ({ref}`BOX <step-002>`) the wafers receive a standard RCA-type
    clean. The RCA sequence is {term}`SC-1` (NH₄OH : H₂O₂ : H₂O, typically
-   1 : 1 : 5 at 75–80 °C for about 10 min), an optional dilute HF dip,
-   and {term}`SC-2` (HCl : H₂O₂ : H₂O, 1 : 1 : 6 at 75–80 °C).[^wiki-rca]
+   1 : 1 : 5 at 75 or 80 °C for about 10 min), an optional dilute HF dip,
+   and {term}`SC-2` (HCl : H₂O₂ : H₂O, 1 : 1 : 6 at 75 or 80 °C).[^wiki-rca]
 
 ## Machines typically used
 
@@ -299,7 +299,8 @@ any product to a step.
   shows GlobalWafers being *added* alongside "other qualified
   suppliers";[^cyp-06] who the original supplier was is not public.
 * **Incoming-inspection tooling.** The KLA SP1 is our reading of a job
-  posting that expands none of its abbreviations,[^job-01] and the Lumonics scribe[^skw-01] is not tied to any
+  posting that expands none of its abbreviations and of which no
+  archived copy exists,[^job-01] and the Lumonics scribe[^skw-01] is not tied to any
   step.
 
 <!-- footnotes -->
@@ -319,6 +320,9 @@ any product to a step.
     (copy hosted by Future Electronics). <https://media.futureelectronics.com/PCN/45887_SPCN.PDF>
 [^cyp-07]: Cypress Semiconductor Corp., Form 10-Q/A for Q1 2003.
     <https://www.sec.gov/Archives/edgar/data/0000791915/000120677403000508/d12840.htm>
+    (Wayback copy unavailable as of 2026-09-18; SEC.gov returns HTTP 403
+    to the required user agent and the Internet Archive has no snapshot
+    and could not complete one on request.)
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
     diagram), google/skywater-pdk repository. <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK

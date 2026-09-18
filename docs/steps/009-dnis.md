@@ -76,7 +76,7 @@ fab:
 2. **Wet strip / clean.** Sulphuric-peroxide mixture (H₂SO₄ : H₂O₂,
    "piranha" or {term}`SPM`) at roughly 100–130 °C[^txt-02] to remove the last
    organics, then
-   {term}`SC-1` (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles and {term}`SC-2`
+   {term}`SC-1` (NH₄OH/H₂O₂/H₂O at 75 or 80 °C) for particles and {term}`SC-2`
    (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] Because the nitride and the
    trench silicon are both exposed, the sequence avoids any long HF
    step that would undercut the pad oxide beneath the nitride (some

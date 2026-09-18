@@ -28,10 +28,10 @@ Status values: open / fixed / declined.
 
 | Finding | Page(s) | Status | Note |
 |---|---|---|---|
-| 001-L1 (= review A 001-L1) | 001-smat | open | CYP-07 needs Wayback snapshot |
-| 001-L2 | 001-smat | open | JOB-01 unarchived, add note |
-| 001-L3 | 001-smat | open | RCA temp range vs "75 or 80 C" |
-| 001-L4 | 001-smat | open | optional SC-2/HF material links |
+| 001-L1 (review B; = review A 001-L1) | 001-smat, references/public-sources | fixed | tried Wayback Save-Page-Now myself; SEC.gov blocks the Archive's own crawler too (capture failed, "internal error"), matching both reviews' independent finding of no snapshot; added the "(Wayback copy unavailable as of 2026-09-18)" fallback both reviews suggested, in the footnote and the inventory entry |
+| 001-L2 | 001-smat | fixed | verified indeed.com returns 403 and has no Wayback snapshot by fetch; added the note |
+| 001-L3 | 001-smat, 009-dnis | fixed | verified by fetch: Wikipedia says "75 or 80 °C", not a range; fixed 001-smat.md (both instances) and, since it's in this module's scope, the same wording on 009-dnis.md; 002-box.md only names the baths and needs no change (confirmed) |
+| 001-L4 | 001-smat | declined | reviewer's own text calls this "defensible" and offers it as an optional style choice only; leaving as-is |
 | 002-L1 | 002-box | open | non-verbatim US 7,439,141 quote |
 | 002-L2 | 002-box, 006-stie | open | AmberWave strained-Si/SiGe qualifier |
 | 002-L3 | 002-box | open | Deal-Grove vs thin-regime contradiction |
