@@ -127,6 +127,96 @@ def is_date(v) -> bool:
     return to_date(v) is not None
 
 
+def add_years(d: dt.date, n: int) -> dt.date:
+    try:
+        return d.replace(year=d.year + n)
+    except ValueError:
+        return d.replace(year=d.year + n, day=28)
+
+
+def earliest_family_filing(members: list) -> dt.date | None:
+    """The earliest recorded ``filing_date`` among a family's members: the
+    filing date a divisional or continuation's own term is measured from
+    (Japanese Patent Act Art. 44(2)/67(1); the same principle bounds a US
+    continuation, whose term likewise runs from the earliest non-provisional
+    US filing in its own chain, 35 U.S.C. 154(a)(2)). Using the family's
+    earliest member filing date, rather than the member's own, is a
+    conservative generalisation of this: it never gives a *later* bound than
+    the member's own filing date would."""
+    dates = [to_date(m.get("filing_date")) for m in members if isinstance(m, dict)]
+    dates = [d for d in dates if d]
+    return min(dates) if dates else None
+
+
+def member_end_bound(m: dict, fam: dict) -> dt.date | None:
+    """The latest date by which a member's own term (if it has one) must have
+    ended, per ``docs/plans/patent-index-design.md``'s "Status and expiry
+    rules", using only what is recorded for the member and the family — not
+    a live lookup. Returns ``None`` when the member has no term of its own
+    (a reexamination certificate, or a published application shown as
+    granted, whose term belongs to the granted patent, itself a member of
+    the family) or when the member's own status already shows it ended, in
+    which case it needs no forward bound. Otherwise returns the estimated
+    upper bound so the caller can compare it with today."""
+    t = m.get("document_type")
+    status = m.get("status")
+    if t == "reexamination-certificate":
+        return None
+    if t in APPLICATION_TYPES and status == "Granted":
+        return None
+    if status in ENDED:
+        return None
+    exp = m.get("expiry")
+    if isinstance(exp, dict):
+        d = to_date(exp.get("date"))
+        if d:
+            return d
+    priority = to_date((fam.get("dates") or {}).get("priority"))
+    candidates: list[dt.date] = []
+    if t in APPLICATION_TYPES:
+        # rule 2: a pending application (or one with no status recorded) is
+        # bounded by 20 years from the earliest non-provisional filing date
+        # in its own family — not necessarily its own filing date.
+        basis_filing = earliest_family_filing(fam.get("members") or []) or to_date(m.get("filing_date"))
+        if basis_filing:
+            candidates.append(add_years(basis_filing, 20))
+    if priority:
+        # rule 3: a listed-only member, or a fetched member with no
+        # recorded expiry event and a status that is neither `Active` nor
+        # ended (including no legal-status data at all), is bounded by the
+        # family's earliest priority date + 21 years.
+        candidates.append(add_years(priority, 21))
+        if (m.get("country") == "US" and t == "granted-patent" and priority < dt.date(1995, 6, 8)):
+            pub = to_date(m.get("publication_date"))
+            if pub:
+                candidates.append(add_years(pub, 17))
+    return max(candidates) if candidates else None
+
+
+def family_max_estimate(fam: dict) -> tuple[dt.date, str] | None:
+    """The latest term any member of the family could run to, taken over
+    *every* member regardless of its own status (M3): a member's own
+    recorded ``expiry.date`` counts even when its status shows a fee lapse
+    or similar, because a lapsed US patent can be reinstated (M4) and the
+    family's headline date should not understate the longest possible term.
+    A member with no recorded expiry event contributes ``member_end_bound``
+    only while it is not already shown ended (an already-ended member with
+    no recorded date contributes nothing — there is no date to use). Returns
+    ``(date, publication_number)`` of the governing member, or ``None`` if no
+    member contributes a date at all."""
+    best: tuple[dt.date, str] | None = None
+    for m in fam.get("members") or []:
+        if not isinstance(m, dict):
+            continue
+        exp = m.get("expiry")
+        d = to_date(exp.get("date")) if isinstance(exp, dict) else None
+        if d is None and m.get("status") not in ENDED:
+            d = member_end_bound(m, fam)
+        if d is not None and (best is None or d > best[0]):
+            best = (d, m.get("number"))
+    return best
+
+
 def number_forms(pn: str) -> list[str]:
     """Forms in which a publication number may be written in the docs."""
     m = PN_RE.match(pn)
@@ -302,6 +392,18 @@ def check_family(f: dict, labels: dict[str, Path], inventory: dict[str, str],
                 or (m.get("document_type") in APPLICATION_TYPES and m.get("status") == "Granted")
                 for m in members if isinstance(m, dict)):
             problems.append(f"{fid}: expired: true but expiry date {edate} is after today")
+        # H2: bound every member individually, not just the family's own
+        # expiry.date — this catches a listed-only member, a fetched member
+        # with no recorded legal status, or a still-pending application
+        # whose own bound was never computed.
+        for m in members:
+            if not isinstance(m, dict):
+                continue
+            eb = member_end_bound(m, f)
+            if eb is not None and eb > TODAY:
+                problems.append(
+                    f"{fid}: expired: true but member {m.get('number')} is not bounded ended until "
+                    f"{eb.isoformat()} (design's per-member expiry rule)")
     elif expired is False:
         if not edate or edate <= TODAY:
             problems.append(f"{fid}: expired: false but expiry date {edate} is not after today")
@@ -309,6 +411,23 @@ def check_family(f: dict, labels: dict[str, Path], inventory: dict[str, str],
             problems.append(f"{fid}: expired: false but no member is shown as in force")
     elif expired != "unknown":
         problems.append(f"{fid}: expired must be true, false or unknown")
+
+    # M3/L5: expiry.date must be the latest estimate over *every* member,
+    # not just the members shown as in force, and must name a real member.
+    best = family_max_estimate(f)
+    if edate and best and edate != best[0]:
+        problems.append(
+            f"{fid}: expiry date {edate} is not the latest member estimate "
+            f"({best[0].isoformat()}, held by {best[1]})")
+    if edate and numbers and not mentions(str(exp.get("basis", "")), [n for n in numbers if n]):
+        problems.append(f"{fid}: expiry basis does not name any member of the family")
+
+    # L6: legal_status.status must be the representative member's own status.
+    rep_m = next((m for m in members if isinstance(m, dict) and m.get("number") == f.get("representative")), None)
+    if rep_m is not None and ls.get("status") != rep_m.get("status"):
+        problems.append(
+            f"{fid}: legal_status.status ({ls.get('status')!r}) does not match the representative "
+            f"member's own status ({rep_m.get('status')!r})")
 
     # relevance
     if not f.get("relevance"):
