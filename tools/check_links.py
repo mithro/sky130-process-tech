@@ -103,7 +103,12 @@ FOOTNOTE_DEF_RE = re.compile(
 )
 BRACKETED_URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
 URL_RE = re.compile(r"https?://[^\s<>\)\]\"'`]+")
-DOI_BARE_RE = re.compile(r"\bDOI:?\s+(10\.\d{4,9}/[^\s,;)\]}>\"']+)", re.IGNORECASE)
+# Like BRACKETED_URL_RE, allow a DOI's own parentheses (pre-2000 Elsevier
+# suffixes such as "0927-796X(98)00013-8"); only whitespace and the
+# punctuation that could plausibly close an *enclosing* markdown
+# construct end the match, and a trailing sentence '.' etc. is trimmed
+# by rstrip(TRAILING_PUNCT) afterwards.
+DOI_BARE_RE = re.compile(r"\bDOI:?\s+(10\.\d{4,9}/[^\s,;\]}>\"']+)", re.IGNORECASE)
 TRAILING_PUNCT = ".,;:"
 
 # Hosts known (from experience checking this documentation) to refuse
@@ -671,6 +676,13 @@ Tier: deep dive.
     check(
         "bracketed URL keeps its parentheses",
         urls3 == {"https://en.wikipedia.org/wiki/Wafer_(electronics)"},
+    )
+    _urls4, dois4 = extract_urls_and_dois(
+        "no. 1-2, pp. 1-80, 1998, DOI 10.1016/S0927-796X(98)00013-8. Low-energy"
+    )
+    check(
+        "bare DOI mention keeps its parentheses and drops the trailing sentence period",
+        dois4 == {"10.1016/s0927-796x(98)00013-8"},
     )
 
     page_text = """
