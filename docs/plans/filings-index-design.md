@@ -217,16 +217,18 @@ Filings known to exist but not retrievable from a non-`sec.gov` copy are
 recorded in the dataset's `known_gaps` list (§2) and rendered on
 `index.md`, so that shortfall is visible on the page itself rather than
 only here; see that section for the current list (Cypress's 10-Q/A for
-Q1 2003 (inventory CYP-07), its 2019 8-K and DEFM14A for the Infineon
-merger, its fiscal 2019 10-K and 10-K/A, its 15-12B, three Cypress
-annual-report years whose text could not be extracted or that say
-nothing about the Minnesota fab, and SkyWater's DRS/A No. 1 text and the
-Process Technology License Agreement exhibit itself). The Cypress
-Minnesota-fab era (fiscal 1991-2002, 2005, 2008-2014) that round-1
-independent review finding FIL-R1-01 found largely missing has since
-been filled from annualreports.com; see
-`docs/plans/progress-index-filings.md` for the fiscal-year-by-fiscal-year
-checklist.
+Q1 2003 (inventory CYP-07), its DEFM14A for the Infineon merger, its
+fiscal 2019 10-K and 10-K/A, its 15-12B, three Cypress annual-report
+years whose text could not be extracted or that say nothing about the
+Minnesota fab, and SkyWater's DRS/A No. 1 text and the Process
+Technology License Agreement exhibit itself). The Cypress Minnesota-fab
+era (fiscal 1991-2002, 2005, 2008-2014) that round-1 independent review
+finding FIL-R1-01 found largely missing has since been filled from
+annualreports.com; see `docs/plans/progress-index-filings.md` for the
+fiscal-year-by-fiscal-year checklist. Round 5 found and added a Wayback
+capture of Cypress's own 2019-06-03 merger-agreement 8-K itself (Item
+1.01, accession 0001104659-19-033282), closing that `known_gaps` entry;
+the DEFM14A and 15-12B remain not found.
 
 Other open items, not yet resolved:
 
@@ -236,13 +238,22 @@ Other open items, not yet resolved:
 * **Dates of annual reports to shareholders and German annual reports**
   are the latest signature date printed in the copy, not a filing date;
   `by-year.md` says so in its introduction (FIL-R1-14).
-* **Not yet searched:** equipment and materials suppliers naming
+* **Not yet searched, still:** equipment and materials suppliers naming
   SkyWater as a customer (the `supplier-names-skywater` tag has no
-  records yet), QuickLogic's and D-Wave's 10-Qs, further Weebit Nano
-  annual reports older than FY2023, Infineon's half-year/quarterly
-  statements and ad-hoc (Art. 17 MAR) announcements (the
-  `ad-hoc-announcement` document type has no records yet), the German
-  company register, and Cypress's 2019 merger communications beyond the
-  one captured DEFA14A.
+  records yet -- reserved, not a fix owed); Infineon's ad-hoc (Art. 17
+  MAR) announcements specifically (the `ad-hoc-announcement` document
+  type has no records yet -- round 5 found and read Infineon's 2025-06-30
+  press release on completing the Fab 25 sale and its Q3 FY2025 earnings
+  press release, neither headed as an Art. 17 MAR ad-hoc release, so
+  neither was forced into this type); the German company register.
+* **Checked, found nothing to add (round 5):** six QuickLogic 10-Qs
+  spanning FY2023-FY2025 (fetched via `ir.quicklogic.com`), none of
+  which name SkyWater (unlike its FY2023 10-K); Infineon's Q3 FY2025
+  quarterly press release, which does not mention Austin, Fab 25 or
+  SkyWater by name; a SkyWater Form S-8 (2021-04-21) and Form S-3
+  (2022), both confirmed to be exactly design section 1's "equity
+  plans"/generic-shelf exclusions, with no fab-specific text.
+* D-Wave's 10-Qs and Infineon's half-year reports (as opposed to
+  quarterly press releases) remain entirely unsearched.
 * Whether exhibits (purchase agreements, the line-operation amendments)
   should be separate records or folded into their parent filing.

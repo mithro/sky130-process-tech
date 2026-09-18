@@ -317,3 +317,123 @@ session works through them; see the session log below for detail.
   `gen_papers.py --check`, `check_patents.py`/`gen_patents.py --check`:
   all 0 problems. `sphinx-build -W -q -b html docs tmp/build-filings`:
   clean, exit 0. Pushed to `topic/index-filings`.
+
+## Round 5 — location-check coverage (task A), new filings (task B), FIL-R1-11/-12/-15 (task C)
+
+Worktree `.worktrees/topic-index-filings-r5`, branch `topic/index-filings-r5`
+(fresh worktree off `main`, which already carried round 4's merged state).
+
+**Task A.** `check_location` previously understood only "ITEM N." captions;
+everything else (most annual-report section headings, page/paragraph
+positions, and every auditor-signature quote, which has no `location`
+field at all) abstained. Added three more checkable location shapes:
+
+* a PDF page number (`page N`), checked against `document_pages` (new:
+  per-page extracted text, not just the joined whole-document text);
+* a position (`cover page`, `first page`, `cover page note`, `first
+  paragraph`, `second paragraph`), checked against PDF page 1 or a
+  paragraph index that skips non-prose paragraphs (a press release's
+  headline and subheadline are their own blank-line-delimited
+  "paragraphs" ahead of the body text, and would otherwise be miscounted
+  as the first one or two paragraphs);
+* a prose section heading (`heading_phrase` extracts the most specific
+  comma-separated segment, or a trailing parenthetical), matched only
+  against an occurrence that starts a line (`heading_like`) -- the same
+  words also turn up mid-sentence as an ordinary cross-reference (e.g.
+  fy2006's boilerplate "The letter to Shareholders and 'MD&A' contain
+  forward-looking statements...", 55000 characters after that record's
+  real, differently-worded "FELLOW SHAREHOLDERS:" heading -- counting it
+  would have wrongly failed a correct location).
+
+Also: an `auditor_report` quote has no `location` field in the schema (it
+never claimed a position to check), so it no longer counts as an
+abstention at all -- previously every one of the ~43 auditor quotes
+abstained with "names no Item number", which was never a real gap.
+
+First full `--online` run under the new checks (still 86 records) found 6
+"problems" where the old checker had abstained. Investigated each against
+the cached fetched text before changing anything, rather than assuming
+the checker was right: three were checker false positives (fixed above,
+in `check_heading_location`'s `heading_like` filter and
+`check_positional_location`'s prose-paragraph filter) and three were real
+wrong locations, fixed in the data:
+
+* `weebit-nano-announcement-2021-09-09` quote 2: "First page" -> the
+  quote is on page 2.
+* `skywater-10-q-2025-11-12` quote 2: "...Business Combination" -> the
+  quote is actually in "Note 1 -- Nature of Business", a general
+  paragraph mentioning the Fab 25 purchase agreement, not the "Business
+  Combinations" accounting-policy note that follows a paragraph later;
+  fixed to "note 1".
+* `skywater-10-q-2026-05-08` quote 2: same shape of bug, found by
+  checking the sibling record above manually (the checker itself only
+  abstained here, since "Business Combination" does not occur at all in
+  this quarter's document -- its equivalent note is "Note 4
+  Acquisition"); fixed to "note 4".
+
+Abstention count on the original 86-record dataset, `--online`, full
+runs before and after (same records, only `check_filings.py` and the
+three location fixes above changed): **170 -> 96** locations not checked.
+The remaining 96 are genuinely unverifiable with the text extracted from
+these particular copies (a heading rendered as a stylised graphic with no
+extractable text; a phrase that recurs only far from the quote in either
+direction; a handful of styles -- "Part I" alone, "Introductory section",
+"Form 15-12G cover" -- that name no specific heading at all) rather than
+locations the checker gave up on for lack of trying.
+
+**Task B.** Fetched and verified, each against its own cached copy:
+
+* `weebit-nano-annual-report-fy2022` (annualreports.com/.../ASX_WBT_2022.pdf):
+  closes design section 7's "Weebit Nano's FY2022 annual report" gap.
+* `skywater-8-k-2024-06-26` (Item 4.01, Wayback capture): SkyWater's own
+  primary record of KPMG replacing Deloitte & Touche, previously known
+  only from the 2026 DEF 14A.
+* `cypress-8-k-2019-06-03` (Item 1.01, Wayback capture, accession
+  0001104659-19-033282): the Agreement and Plan of Merger with Infineon
+  at $23.85/share, closing the "8-K announcing the 2019 merger agreement"
+  `known_gaps` entry. Found while looking for a related, later
+  Infineon-hosted 8-K (Item 8.01, employee/customer/supplier
+  communications) in the same EDGAR "a19-10962" submission series --
+  that related 8-K was read but not added as a separate record (its
+  substance, a change-of-control announcement to stakeholders, adds
+  little beyond what the merger-agreement 8-K and the closing 8-K already
+  cover, and design section 1 does not ask for every 8-K in a submission
+  series).
+
+Checked and found nothing to add: six QuickLogic 10-Qs (FY2023-FY2025,
+via `ir.quicklogic.com`), none naming SkyWater, unlike its FY2023 10-K;
+Infineon's Q3 FY2025 quarterly press release, which does not mention
+Austin, Fab 25 or SkyWater; a SkyWater Form S-8 (2021-04-21) and Form S-3
+(2022), both squarely design section 1's "equity plans"/generic-shelf
+exclusions; Infineon's 2025-06-30 press release on completing the Fab 25
+sale (found, read, and not added -- no confirmed Art. 17 MAR "ad hoc"
+heading, so not forced into that document type; see design section 7).
+The DEFM14A and 15-12B for the 2019 Cypress/Infineon merger, the German
+company register, D-Wave's 10-Qs, Infineon's half-year reports and the
+`supplier-names-skywater` tag remain unsearched or not found (design
+section 7).
+
+**Task C.** FIL-R1-11 (cache staleness): `fetch()` now re-fetches a
+non-Wayback copy once its cache entry (the file's own mtime) is more
+than `CACHE_MAX_AGE_DAYS` (90) old; a Wayback capture, whose timestamp is
+fixed in the URL, is cached forever. FIL-R1-12 (`period.label`
+rendering): `gen_filings.py` now renders a "Period: ..." line for
+`current-report`/`exhibit` records, whose titles carry no period (10-Ks
+and 10-Qs already have their fiscal year or quarter in the title).
+FIL-R1-15 (unused vocabulary): `ad-hoc-announcement` and
+`supplier-names-skywater` are still unused after a real search this round
+(see task B); design section 7 keeps naming both as reserved, not
+silently declared done.
+
+**Provenance cleanup (found opportunistically, not a task item):**
+`weebit-nano-annual-report-fy2023`'s and `-fy2024`'s `auditor_report.quote`
+each carried the signing Nexia partner's own name between the firm name
+and the city/date (the Australian audit-report signature format
+interposes it, unlike a US "/s/ Firm City Date" line); trimmed both, and
+the new fy2022 record's quote, to just the firm name, per design section
+2's "no personal names beyond audit firms" rule.
+
+Net result: 86 -> 89 filings (+3: `weebit-nano-annual-report-fy2022`,
+`skywater-8-k-2024-06-26`, `cypress-8-k-2019-06-03`); by company, 26
+Cypress (+1), 43 SkyWater (+1), 7 Infineon, 5 Weebit Nano (+1), 4 D-Wave,
+3 IonQ, 1 QuickLogic.
