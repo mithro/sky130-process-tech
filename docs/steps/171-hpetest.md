@@ -39,14 +39,16 @@ the threshold voltage of a 7/8 µm device (`VTXNL`) has an EDR nominal of
 page says of the NPN transistors "E-test specs for the NPN devices are
 shown in the table below", of the precision poly resistors that "several
 fixed-value resistors are measured at e-test", and of the SONOS memory
-that "E-test parameters are summarized below"; the SRAM cell "is
+that "E-test parameters are summarized below for both original and star
+cells"; the SRAM cell "is
 monitored at e-test through the use of 'pinned out' devices within the
 specific arrays".[^pdk-07]
 
 **Where the structures are.** The layer table defines `areaid.mt`
 (81:10), "Location of e-test modules within the frame", and `areaid.et`
 (81:101), "e-test module identifier";[^pdk-06] the periphery rules state
-that the "Die must not overlap areaid.mt" and that drawn compatible, mask
+that "Die must not overlap areaid.mt" — waived for test chips and
+exempted for a few named cells[^pdk-periph] — and that drawn compatible, mask
 and waffle-drop layers are allowed "only inside areaid:mt (i.e., etest
 modules)", inside the seal ring or in the frame, and they allow larger
 via sizes inside `areaid.mt` (for example 0.200 µm and 0.800 µm via3
@@ -57,14 +59,16 @@ of testlines in the scribe line area between adjacent wafer
 dies".[^pat-testline-tsmc]
 
 **A published test tile.** A separate structure set is public. Google's
-raw-data repository for the PDK states that "each of the Google MPW runs
-includes two copies of a 'manufacturing test tile'", created by
-SkyWater,[^raw-data-readme] which "consists of a grid of probe points";
-its README is titled "Proprietary Manufacturing Test Tile" and states
+raw-data repository for the PDK states that its data were "collected
+under contract by CoolCAD Electronics LLC using the manufacturing test
+tile created by SkyWater",[^raw-data-readme] and that "each of the
+Google MPW runs includes two copies of a 'manufacturing test tile'"
+which "consists of a grid of probe points".[^raw-data-testtile-prop]
+Its README is headed "SkyWater 130nm Proprietary Manufacturing Test
+Tile" and states
 that "The schematics and layout of the circuits connected to these
 probe points are **not** currently available".[^raw-data-testtile-prop] Its pad documentation, released in
-the same repository under Apache 2.0, lists 273 numbered test modules
-in four "Die Row" groups, each wired to a line of up to twelve pads
+the same repository under Apache 2.0, lists 273 numbered test modules, 271 of them assigned to four "Die Row" groups, each wired to a line of up to twelve pads
 (`Pin 01`–`Pin 12`), and the photographed tile also carries a
 "Lithographic Calibration Region" and "Alignment
 Marks".[^raw-data-testtile-pads][^raw-data-testtile-prop] The repository
@@ -202,8 +206,9 @@ in place of the short devices for the low-Vt PMOS), all except the
 0.42/1 µm `nfet_01v8`.[^raw-data-lv-mosfets][^raw-data-testtile-pads][^pdk-07]
 By the same extrapolation at |V_DS| = 0.1 V, less half the drain bias,
 the 7/8 µm `nfet_01v8` gives 0.534 V against the VTXNL nominal of
-0.541 V and the 7/0.15 µm device 0.707 V against the VTXNS15 nominal
-of 0.700 V. Of the 19 e-test thresholds matched in these modules, 16 of
+0.541 V and the two 7/0.15 µm devices 0.707 V and 0.719 V against the
+VTXNS15 nominal of 0.700 V (limits 0.661–0.739 V). Of the 19 e-test
+thresholds matched in these modules, 16 of
 the 18 with a usable printed nominal lie within 0.03 V of it (two of
 them at 0.029 V, so the count depends on how the transconductance is
 differentiated); the
@@ -379,11 +384,13 @@ poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
   the note "PLACE IN CENTER, CORNER OF RETICLE" under one
   module;[^raw-data-testtile-pads] neither says how the tile relates to
   the `areaid.mt` modules.
-* The pad list's `Group` codes (1–8, 10, `Z`, `s8tet`; blank for most
-  modules) are not explained, and the schematics and layout of the tile's structures are
+* The pad list's `Group` codes (1–8, 10, `Z`, `s8tet`, and a stray
+  `3791956` on module 8404; blank for 156 of the 273 modules) are not
+  explained, and the schematics and layout of the tile's structures are
   not public.[^raw-data-testtile-pads][^raw-data-testtile-prop]
-* The published transistor I–V data have limited current resolution: an analysis
-  notebook in the repository notes that "the data gets noisy below 2nA"
+* The published transistor I–V data have limited current resolution: the
+  `sky130_plot_gm.ipynb` analysis notebook in the repository notes that
+  "the data gets noisy below 2nA"
   and that the data "cannot be used to predict the subthreshold slope
   (digital leakage)".[^raw-data-notebooks] The resolution of the fab's
   own e-test is not public.
@@ -529,10 +536,13 @@ poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
     and SkyWater PDK Authors, `docs/_static/mdm-format.png`,
     `google/skywater-pdk-sky130-raw-data` repository.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/_static/mdm-format.png>
-[^raw-data-notebooks]: Google LLC, *SKY130 plots of {IC,IB,IG}/VG*, and
-    B. Murmann, *SKY130 plots of ID-VG derivatives* (August 2022),
+[^raw-data-notebooks]: Google LLC, *SKY130 plots of {IC,IB,IG}/VG*
+    (`sky130_plot_current.ipynb`), and B. Murmann, *SKY130 plots of
+    ID-VG derivatives* (`sky130_plot_gm.ipynb`, August 2022; the source
+    of the "noisy below 2nA" and "subthreshold slope" quotations),
     Colab notebooks in the `google/skywater-pdk-sky130-raw-data`
     repository, retrieved 2026-09-13.
+    <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/notebooks/sky130_plot_gm.ipynb>,
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/notebooks>
 [^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V and
