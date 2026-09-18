@@ -122,8 +122,11 @@ fab (SKY130's energy and dose are not public):
   ({ref}`category-implant`).
 * **Tilt and twist.** The PDK records 7° for the tip implant.[^pdk-03] A
   tilted beam is {term}`shadowed <shadowing>` on one side of each gate by the gate stack —
-  0.18 µm of poly[^pdk-03] plus the roughly 0.2 µm cap read on the
-  {ref}`GATENIT <step-058>` page[^pdk-03] — so a 7° beam is blocked for
+  0.18 µm of poly[^pdk-03] plus a cap that the
+  {ref}`GATENIT <step-058>` page reads as at least the PDK's 0.2 µm
+  "poly cap after SPE" (the PDK's figure is the thickness that survives
+  the spacer etch at {ref}`SPE <step-077>`, so the cap here is no
+  thinner)[^pdk-03] — so a 7° beam is blocked for at least
   about 0.38 µm × tan 7° ≈ 47 nm beside the gate, and symmetric source
   and drain tips require either two or four wafer rotations or a 0°
   implant through a screen oxide (category page). Yoneda and Niwayama
