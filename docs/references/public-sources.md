@@ -5302,7 +5302,7 @@ formed together. Used on the cmp category page. Tier: deep dive.
 
 **PAT-CMP-IBM-1990** — K. D. Beyer et al. (IBM), *Chem-mech polishing
 method for producing coplanar metal/insulator films on a substrate*, US
-4,944,836 A, granted 1990.
+4,944,836 A, filed 1985-10-28, granted 1990-07-31.
 <https://patents.google.com/patent/US4944836A/en> The foundational
 metal/insulator CMP patent. Used on the cmp category page. Tier:
 cross-check.
