@@ -92,11 +92,15 @@ with real content instead of a "content not readable" hedge.
 
 ## Checks before finishing
 
-- [ ] `uv run python tools/check_steps.py`
-- [ ] `uv run python tools/check_refs.py`
-- [ ] `uv run python tools/check_machines.py`
-- [ ] `uv run python tools/check_materials.py`
-- [ ] `uv run python tools/check_masks.py`
-- [ ] `uv run python tools/check_papers.py`
-- [ ] `uv run python tools/gen_papers.py --check`
-- [ ] `uv run sphinx-build -W -q -b html docs tmp/build-topic-p4-149-163`
+- [x] `uv run python tools/check_steps.py` — 171 pages, 171 written, 0 stubs, 0 with missing headings
+- [x] `uv run python tools/check_refs.py` — 264 written pages checked, 0 with problems
+- [x] `uv run python tools/check_machines.py` — 30 machine pages checked, 0 problems
+- [x] `uv run python tools/check_materials.py` — 12 material pages checked, 0 problems
+- [x] `uv run python tools/check_masks.py` — 36 mask pages checked, 0 problems
+- [x] `uv run python tools/check_papers.py` — 49 papers checked, 0 problems
+- [x] `uv run python tools/gen_papers.py --check` — 8 pages checked, 0 problems
+- [x] `uv run sphinx-build -W -q -b html docs tmp/build-topic-p4-149-163` — exit 0, no warnings
+
+All findings from review-149-163.md are resolved: fixed, declined (with
+evidence), or deferred to the metal-cap/barrier sweep. Ready for
+coordinator review.
