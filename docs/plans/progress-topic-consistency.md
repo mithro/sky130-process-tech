@@ -20,3 +20,17 @@ Applying the whole-site conflict review at
 | C-012 | Low | fixed | Copied the fuller definition over the reduced one at every listed location (blonkowski-2007 and gonon-2007 in 150-capild2.md; deal-1980 in vertical-furnace-anneal.md and anneal-ambients.md; danzl-1997 in plasma-etcher-metal.md; levinson-2005 in 049-rpm.md, 055-urpm.md, 061-p1m.md; pat-vt-rrr in masks/hvtpm.md and masks/lvtnm.md; lam-10k in 108-ctme.md, 114-mm1e.md, 138-capme.md, 140-mm3e.md). Verified with dump_key.py that every definition of each of the 7 keys is now identical. |
 | C-013 | Low | fixed | Changed the three test-structure uses (categories/test.md:55,251, public-sources.md:5381) to "linewidth"; kept "line-width roughness (LWR)" at glossary.md:706 as the review allows. |
 | C-014 | Low | fixed | Chose the "add the date everywhere" option (consistent with how C-011 was handled): added "accessed 2026-09-13" to the other 31 definitions and to the ASML-30 inventory entry. Verified with dump_key.py that all 32 definitions now match. |
+
+## Final verification
+
+All 14 findings fixed; 3 of C-007's 11 locations declined (verbatim
+Wikipedia quotations; see the C-007 row). Re-ran the reviewer's scripts
+under `tmp/consistency/` (copied into this worktree with `common.py`'s
+`ROOT` repointed here, since it hardcodes the main checkout path) and
+confirmed every corrected item no longer appears. Final checks, all
+green: `uv run tools/check_steps.py` (171 pages, 0 missing headings),
+`check_refs.py` (264 pages, 0 problems), `check_machines.py` (30, 0),
+`check_materials.py` (12, 0), `check_masks.py` (36, 0), `check_papers.py`
+(49, 0), `uv run tools/gen_papers.py --check` (8, 0), and
+`uv run sphinx-build -W -q -b html docs tmp/build-topic-consistency`
+(clean, no warnings).
