@@ -261,6 +261,11 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   except* `lvtn` (and `LVTNI` is the baseline Vt-adjust implant that
   low-Vt devices skip) cannot be settled from public data; the "mask
   add/drop" purposes show only that the reticle is generated, not how.
+  One public derivation from the drawn tape-out data renders the plate
+  as `lvtn` OR (`nwell` AND (`hvtp` OR `areaid.ce`)), with `lvtn`
+  appearing positively, but its note contradicts the expression and it
+  settles nothing; see {ref}`LVTNM <mask-lvtnm>` and
+  {ref}`masks-derivations`.[^mask-renders]
 * Whether separate NMOS and PMOS reticles are derived from the one
   drawn layer, or whether `nfet_01v8_lvt` and `pfet_01v8_lvt` share a
   single physical mask, is not public.
@@ -352,6 +357,16 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^mask-renders]: *SKY130 Open MPW mask-layer renders*, public web
+    directory: `README.md`, `masks.html`, the run pages `mpw-001.html` to
+    `mpw-008.html`, and for each run × mask directory the page,
+    `job.json`, `result.json` and per-die slot JSON files, retrieved
+    2026-09-13. Run pages are `mpw-00N.html`; each render's page is
+    `<run>_<mask>/<run>_<mask>.html` (for example
+    `mpw-001_TUNM/mpw-001_TUNM.html`). Rendered from the public shuttle
+    repositories under
+    <https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>.
+    <https://data.wafer.space/big-storage/sky130-masks/>
 [^raw-data-lv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the 1.8 V
     transistors, IC-CAP `.mdm` files in `sky130_fd_pr/cells/`
