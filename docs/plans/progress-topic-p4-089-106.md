@@ -20,12 +20,12 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 094-M2 | Medium | fixed | Confirmed US6376262.txt monitors CN at 387 nm, not CO at 483 nm; the 483 nm CO figure had no citation at all. Cited it to nojiri-2015 as industry practice/typical value and kept the patent citation only for the CN/387 nm claim it actually supports. |
 | 096-M1 | Medium | fixed | Confirmed wiki-fg.txt:85 says only "typical forming gas formulations (5% H2 in N2) are not explosive" -- no percentage limit, and H2/N2 mixtures cannot burn without an oxidiser, so "4% flammability limit in nitrogen" was both uncited and not a meaningful quantity. Reworded around the cited 5% figure and the air-exposure risk.
 | 103-M1 | Medium | fixed | Confirmed lam-10k footnote's own text lists only "TCP 9400PTX/DFM, 2300, Exelan" for FY2003 -- no 9600. Recited the 9600 to skw-01 (which does name it) and kept lam-10k only for the 2300. |
-| 105-M1 | Medium | open | |
+| 105-M1 | Medium | fixed | The 0.5-0.7 um as-deposited NILD2 figure carried no reference at all (unlike 089's equivalent PMD claim, which cites [^txt-05]); added the same [^txt-05] citation (footnote definition added to the page) at both occurrences. |
 | 089-L1 | Low | fixed | Confirmed skw-facilities.txt:109 sub-bullet "high aspect (5:1) fill capability" under the HDP entry (105-nild2.md already quotes it). Added the same quotation to 089. |
 | 090-L1 | Low | open | |
 | 090-L2 | Low | open | duplicate of 091-L1 (repo-wide pdk-08 parenthetical); tracked there |
 | 091-L1 | Low | open | |
-| 091-L2 | Low | open | duplicate of 105-L1 |
+| 091-L2 | Low | fixed | Fixed at 105 per the review's own guidance (105:29-30 is the fuller list and the better place); see 105-L1. |
 | 092-L1 | Low | fixed | Confirmed ag-8800.txt lines 44-48 list "Glass re-flow" alongside "Implant annealing" and "Silicide formation and annealing" among the 8800's applications; added "Glass re-flow" to the quoted list. |
 | 093-L1 | Low | fixed | Confirmed pdk-periphery.txt:1409-1411 continues the licon.16 quotation with ", including the diff/tap straddling areaid:ce. Rule exempted inside UHVI."; added the elision marker. |
 | 093-L2 | Low | fixed | Confirmed pdk-rcx.txt Table 91 heads its column "Resistivity (mohms/sq)"; reworded the 15 Ohm/contact reading as an explicit reading of that column on 093, 098 and 099. |
@@ -40,5 +40,5 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 101-L1 | Low | fixed | Confirmed pdk-assumptions.txt:993-995: LIRESCD ("Li resistor width...", 0.29 um) sits in the Table 4 "Other" physical-criteria section, not the minimum-CD table. Named the correct table and added the matching li.7 periphery value (0.290 um). |
 | 103-L1 | Low | fixed | Confirmed no page-cited public source ties US 4,948,458 to the 9600 specifically; reworded the Deep dive bullet to mark the product-family link as an inference. |
 | 103-L2 | Low | fixed | Confirmed testtile-pads.csv:78-79 gives no unit for the two line dimensions, and :213's cell text continues "; 9520 cells" beyond what was quoted. Added the no-unit reading and an ellipsis. |
-| 105-L1 | Low | open | duplicate of 091-L2; fixed together |
+| 105-L1 | Low | fixed | Confirmed metal_stack.svg:266,281 carry "NILD3_C K=3.5" and "NILD4_C K=3.5" alongside NILD3-6; added a sentence noting the drawing does not explain them. |
 | 106-L1 | Low | open | duplicate of 090-L1 |
