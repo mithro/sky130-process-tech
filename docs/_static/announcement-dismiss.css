@@ -1,0 +1,54 @@
+/* Dismiss control for the theme's announcement bar (see
+   announcement-dismiss.js). The bar is short enough not to need the
+   theme's horizontal scrolling, so let it wrap instead and keep room on
+   the right for the button. */
+.announcement {
+  position: relative;
+  overflow-x: hidden;
+  /* The theme fixes the bar's height; let it grow when the text wraps on
+     a narrow screen instead of clipping it. */
+  height: auto;
+  min-height: var(--header-height);
+}
+
+.announcement-content {
+  padding-right: 2.5rem;
+  white-space: normal;
+}
+
+.announcement-dismiss {
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: none;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: var(--color-announcement-text);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.announcement-dismiss:hover,
+.announcement-dismiss:focus-visible {
+  opacity: 1;
+  background: rgba(127, 127, 127, 0.3);
+}
+
+/* Set by the script before the body is parsed, so a dismissed bar never
+   flashes on screen. */
+html.announcement-dismissed .announcement {
+  display: none;
+}
+
+html.announcement-dismissed .announcement + .page {
+  min-height: 100%;
+}

@@ -1,0 +1,9 @@
+{#- Furo's own scripts are loaded at the end of the body. The announcement
+    dismissal has to run before the announcement bar is painted, so load it
+    from the head instead of via html_js_files. -#}
+{% extends "!base.html" %}
+
+{% block extrahead %}
+{{ super() }}
+<script src="{{ pathto('_static/announcement-dismiss.js', 1) }}"></script>
+{% endblock %}

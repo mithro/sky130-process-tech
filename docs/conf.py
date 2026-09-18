@@ -43,6 +43,8 @@ nitpicky = True
 html_theme = "furo"
 html_title = "SKY130 Process Technology"
 html_static_path = ["_static"]
+templates_path = ["_templates"]
+html_css_files = ["announcement-dismiss.css"]
 # Shown by the theme at the top of every rendered page.
 announcement = "Warning: AI in use — use at own risk."
 
