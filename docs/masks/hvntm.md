@@ -109,8 +109,9 @@ die draws `hvntm` (our reading of x.15a).
 The PDK's *Error Messages* page, which describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
 criteria for GDS data", lists checks on a layer it calls `CLHVNTM` under
-the rule names `chvntm.1` to `chvntm.7`: "0.7 min. width of CLHVNTM",
-"0.7 min. spacing/notch of CLHVNTM" (`chvntm.2a`), "0.185 Min Enclosure
+the rule names `chvntm.1`, `chvntm.2a`, `chvntm.3`, `chvntm.4`,
+`chvntm.5`, `chvntm.6a`, `chvntm.6b` and `chvntm.7`: "0.7 min. width of
+CLHVNTM", "0.7 min. spacing/notch of CLHVNTM" (`chvntm.2a`), "0.185 Min Enclosure
 of ndiff inside hvi by chvntm" (`chvntm.3`), "CLHVNTM must not overlap
 NDIFFnoHV" and "CLHVNTM must not overlap PDIFF_noENID", each with a
 0.185 spacing (`chvntm.4`, `chvntm.5`), "CLHVNTM must not overlap ptap"
