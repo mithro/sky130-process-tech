@@ -48,11 +48,12 @@ mark all three as inferences:
    the step would then be that strip. The {term}`thermal budget` argues
    against a grown oxide here (the junctions are 0.1 µm deep[^pdk-03]),
    but a low-temperature chemical oxide is possible.
-3. **A sacrificial-layer etch in the resist sense.** The resist and
-   the {term}`BARC` of {ref}`LICM1 <step-093>` are also sacrificial,
-   and if their removal is folded into this step, the step could
-   cover the strip-and-clean sequence. This reading is compatible with either
-   of the first two.
+3. **A strip-and-clean step.** The resist and {term}`BARC` of
+   {ref}`LICM1 <step-093>` must be removed somewhere between the
+   contact etch and the liner, and no other step in the sequence this
+   reference describes is placed for it; if their removal is folded
+   in here, the step covers the strip-and-clean sequence. This
+   reading is compatible with either of the first two.
 
 On all three readings the chemistry that matters is a dilute
 aqueous HF, and the surfaces that matter are the 0.08 µm contact
@@ -62,10 +63,11 @@ about 0.5 µm deep.[^pdk-03]
 ## Step category
 
 `SACETCH` is an {ref}`Etch <category-etch>` step of the *wet oxide
-etch* type (inferred). The category page states the rule: dilute
-HF is the tool where a thin oxide must be removed "cleanly and
-gently with very high selectivity … because a plasma would damage
-the exposed silicon". What distinguishes this instance from the
+etch* type (inferred). The category page says that wet etching is
+used "where a film must be removed cleanly and gently with very high
+selectivity", and that dilute HF is the tool it infers for "the
+sacrificial-oxide removal before silicidation … because a plasma
+would damage the exposed silicon". What distinguishes this instance from the
 gate-oxide etches is geometry — the acid must reach the bottom of a
 narrow, tapered hole and be rinsed out again — and consequence: the
 oxide it leaves behind, if any, becomes a series resistance in every
