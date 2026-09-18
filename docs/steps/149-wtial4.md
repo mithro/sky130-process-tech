@@ -83,8 +83,11 @@ carries the first capacitor's top plate, so the two capacitors share
 it as a middle electrode and add in parallel — the device page says
 the capacitors "may be stacked to maximize total
 capacitance".[^pdk-07] The Newport Fab and TSMC stacked-MiM patents
-describe the same sharing of a middle electrode between an upper and a
-lower capacitor.[^pat-mim-stack-newportfab][^pat-mim-stack-tsmc]
+describe the same *idea* — an upper and a lower MiM sharing a middle
+electrode and adding in parallel — though in US 7,078,310 the shared
+electrode is a dedicated capacitor metal deposited between two
+interconnect levels rather than an interconnect level
+itself.[^pat-mim-stack-newportfab]
 
 ## Why this step exists
 
@@ -158,7 +161,8 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
    and the metal-3 descriptions of 150 Å Ti[^cyp-qtp-113005] and 500 Å
    TiW[^cyp-qtp-123907] are the nearest public analogues.
 4. **Al–0.5%Cu, of the order of 0.8 µm.** Sputtered from an
-   Al–Cu target (the Cypress reports give the film as Al-0.5%Cu) at a wafer temperature of roughly 150–300 °C
+   Al–Cu target (the Cypress reports for this fab give the film as
+   Al-0.5%Cu[^cyp-qtp-113005][^cyp-qtp-123907]) at a wafer temperature of roughly 150–300 °C
    (industry-typical[^txt-02]), in several passes or on a cooled
    pedestal so that the wafer does not drift into the hillock and
    copper-precipitation regime (industry practice[^txt-05]); grain size
