@@ -438,7 +438,11 @@ def check_one(token: str, limiter: RateLimiter, timeout: float) -> dict:
         status, final_url, chain, err, _ = fetch_with_retries(url, "GET", limiter, timeout)
     else:
         status, final_url, chain, err, _ = fetch_with_retries(url, "HEAD", limiter, timeout)
-        if status == 0 or status in (403, 405, 501) or status >= 500:
+        if status == 0 or status >= 400:
+            # Any HEAD failure gets a GET second opinion before being
+            # believed: some CDNs (media.asml.com's, verified 2026-09-19)
+            # answer HEAD with a bare 404 for a resource that a GET to the
+            # exact same URL serves fine (200).
             status_g, final_g, chain_g, err_g, _ = fetch_with_retries(url, "GET", limiter, timeout)
             if status_g != 0:
                 status, final_url, chain, err = status_g, final_g, chain_g, err_g
