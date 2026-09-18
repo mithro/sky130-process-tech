@@ -72,7 +72,7 @@ the early 1970s: it survives the source/drain anneals that a metal gate
 could not, it lets the source and drain be implanted with the gate as
 the mask, and its work function can be set by doping.[^wiki-poly] In
 SKY130 the same film also forms the two precision resistor flavours
-(300 Ω/sq "P+ poly" and 2000 Ω/sq "P− poly"),[^pdk-07] the poly plate
+(300 Ω/sq "P+ poly" and 2000 Ω/sq "P- poly"),[^pdk-07] the poly plate
 of the varactors and, as this reference describes the module, the gate
 of the SONOS memory transistor (inference).
 
