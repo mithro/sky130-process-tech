@@ -166,6 +166,13 @@ fab (SKY130's recipe is not public):
   (variable `LD`)[^pdk-03] is, if we read it as the lateral
   diffusion allowance, a hint at the scale of offset the flow is
   designed around, but it does not give the nitride thickness.
+  ITRS 2001 takes the sidewall spacer width of an extension structure
+  to equal the contact junction depth and gives 48–95 nm for the 2001
+  technology year[^itrs-01] — for an MPU of 65 nm physical gate
+  length, not for SKY130's 0.15 µm drawn gate, so the figure sets a
+  scale rather than a value (our reading of the roadmap, as on
+  {ref}`NTM <step-064>`). The PDK's 0.05 µm "oxide spacer"[^pdk-03]
+  lies at the bottom of that band.
 * **Sequence.** Pre-deposition clean (SC-1 class, no HF, so the
   oxides the etch will stop on survive); load; pump and leak check;
   temperature stabilisation; deposition to a timed thickness on
@@ -299,6 +306,9 @@ fab (SKY130's recipe is not public):
   and stress.[^smith-1990][^claassen-1985]
 * Hughey and Cook, *MRS Proc.* 2003 — irreversible stress change in
   PECVD nitride on heating.[^hughey-2003]
+* International Technology Roadmap for Semiconductors, 2001 *Front
+  End Processes* — the roadmap's sidewall-spacer-width figure, used
+  here as a scale cross-check rather than a value.[^itrs-01]
 
 ## Open questions
 
@@ -460,6 +470,9 @@ fab (SKY130's recipe is not public):
 [^hughey-2003]: M. P. Hughey and R. F. Cook, "Irreversible Tensile
     Stress Development in PECVD Silicon Nitride Films", *MRS
     Proceedings* **795** (2003). <https://doi.org/10.1557/PROC-795-U1.6>
+[^itrs-01]: International Technology Roadmap for Semiconductors, *2001
+    Edition: Front End Processes*.
+    <https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
