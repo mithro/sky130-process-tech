@@ -171,7 +171,7 @@ Read term by term: we read "SEZ223" as SEZ's Spin-Processor
 223;[^sez-223-pr] "Davinci" matches SEZ's Da Vinci
 family,[^sez-davinci-2008] though the entry names no vendor for it;
 "HF" names the etchant without a concentration; "DSP+HF"
-we read as dilute sulfuric–peroxide with HF, the mixture published as
+we read as dilute sulphuric–peroxide with HF, the mixture published as
 DSP+;[^lee-2012-dsp][^fraunhofer-dsp] and "titration controlled" we read
 as chemical concentration held by titration, which the page does not
 explain.[^skw-01] The entry does not say how many tools there are,
@@ -233,7 +233,7 @@ page names are among the rows of the
 {ref}`hardware consumables and abatement <material-hardware-consumables>`
 page.
 
-* **Acids and oxidisers.** Dilute HF;[^skw-01][^kikuyama-1994] sulfuric
+* **Acids and oxidisers.** Dilute HF;[^skw-01][^kikuyama-1994] sulphuric
   acid, hydrogen peroxide and HF for DSP and DSP+, at compositions such
   as those Fraunhofer IMM gives;[^fraunhofer-dsp][^broussous-2005] HF
   and nitric acid for silicon removal on the backside.[^oinoue-2018]
@@ -300,7 +300,7 @@ public.
   assign to this class's listed tools.
 * {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.
-* {ref}`materials-index` — HF, sulfuric acid, peroxide and solvents.
+* {ref}`materials-index` — HF, sulphuric acid, peroxide and solvents.
 * {ref}`material-wet-chemicals` — the acids, peroxide cleans and solvents,
   their grades and SkyWater's listed chemistries.
 * {ref}`material-ultrapure-water` — rinse water, its standards and

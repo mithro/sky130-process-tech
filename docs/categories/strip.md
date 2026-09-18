@@ -152,7 +152,7 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 ## Typical consumables
 
 * **Gases**: O₂, N₂, {term}`forming gas` (H₂/N₂), CF₄, water vapour.
-* **Acids and bases**: concentrated sulfuric acid[^wiki-piranha] and
+* **Acids and bases**: concentrated sulphuric acid[^wiki-piranha] and
   30 % hydrogen peroxide,[^wiki-piranha] 29 % ammonium hydroxide and
   30 % hydrogen peroxide,[^wiki-rca] 37 % hydrochloric acid, 49 % HF,
   85 % phosphoric acid; all semiconductor-grade (parts-per-trillion
