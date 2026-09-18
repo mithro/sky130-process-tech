@@ -61,6 +61,30 @@ error as the parent finding, not new independent findings):
 * UMC dual-damascene patent scope (119-L1): 145-vim3e.md, 147-wdep5.md.
 * "near-ideal" PNL patent overstatement (132-L1): 110-wdep2.md.
 
+## Verifier follow-ups (tmp/p4/verify-118-134.md), applied after rebase
+
+`main` advanced to `8f99ba3` (107-117 merged) while this branch was in
+flight; verifier flagged 4 items, all now done:
+
+1. Rebased onto `main`. Conflicts in `110-wdep2.md` (kept both main's
+   silane sentence and this branch's "improved step coverage" fix),
+   `123-tial12.md` and `134-wtial3.md` (dropped this branch's 123-L1
+   paraphrase, kept main's verbatim Cypress quotation from its commit
+   `91182ef` — main resolved the same finding the other way and had
+   already applied it repo-wide, so its resolution wins).
+2. `114-mm1e.md:121-124` — dropped the unsourced "near 261 nm", adopted
+   `125-mm2e.md:123-126`'s wording — commit 9be659e.
+3. Brought the other six `[^pat-cmp-ibm-1990]` definitions
+   (090-cmpp.md, 106-cmpl.md, 111-wcmp2.md, 116-cmpm.md, 148-wcmp5.md,
+   categories/cmp.md) and the `references/public-sources.md` inventory
+   entry to "filed 1985-10-28, granted 1990-07-31" — commit 2466122.
+4. Did not push (coordinator merges the local branch directly after a
+   rebase; a push would need `--force`).
+
+Not done: verifier's optional item 5 (dangling-clause tidy at
+108-ctme.md/114-mm1e.md) — not in the coordinator's list of required
+items for this pass.
+
 ## Checkers / build
 
 All run from the worktree in the foreground, all pass:
