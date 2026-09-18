@@ -8,7 +8,7 @@ before being fixed or declined.
 
 | id | severity | status | note |
 |---|---|---|---|
-| 061-H1 | High | open | |
+| 061-H1 | High | fixed | Confirmed m1.1/m2.1/li.1a = 0.140 µm < poly.1a 0.150 µm and difftap.1 = 0.150 µm (ties) in periphery rules cache; dropped the false "smallest drawn line" superlative, kept the CD-maps-to-gate-length point. |
 | 048-M1 | Medium | open | |
 | 048-M2 | Medium | open | |
 | 049-M1 | Medium | open | shared root cause: wright-2010 (also 053-M1, 055-M1) |
