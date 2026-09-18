@@ -4177,9 +4177,13 @@ oxidation category page. Tier: deep dive.
 **MERCKEL-1977** — G. Merckel, "Ion Implanted MOS Transistors —
 Depletion Mode Devices", in *Process and Device Modeling for Integrated
 Circuit Design*, Springer, 1977, pp. 677–688.
-<https://doi.org/10.1007/978-94-011-7583-8_24> Modelling of
-ion-implanted depletion-mode transistors. Used on step 038. Tier: deep
-dive.
+<https://doi.org/10.1007/978-94-011-7583-8_24>,
+<https://doi.org/10.1007/978-94-011-7583-8>. Modelling of
+ion-implanted depletion-mode transistors. Neither DOI resolves to a
+live page (both redirect to a link.springer.com URL that 404s, checked
+2026-09-19); no Wayback Machine or other public copy found. Used on
+step 038. Tier: deep dive; evidence weak (not independently checkable
+beyond the Crossref bibliographic record).
 
 **NOJIRI-2015** — K. Nojiri, *Dry Etching Technology for
 Semiconductors*, Springer, 2015.
@@ -11677,8 +11681,12 @@ low voltage SEM", *Proceedings, Annual Meeting, Electron Microscopy
 Society of America* **44**, 652–653 (1986).
 <https://doi.org/10.1017/S0424820100144681> Non-destructive linewidth
 measurement in resist with the low-voltage SEM and the choice of
-peak-to-peak or threshold edge methods. Used on the CD-SEM and overlay
-metrology page. Tier: deep dive.
+peak-to-peak or threshold edge methods. The DOI resolves (a redirect to
+Cambridge Core) but the destination returns HTTP 400 for both this
+User-Agent and a browser one (checked 2026-09-19); no Wayback Machine
+copy exists. Retrieved 2026-08-30, no longer online, not archived.
+Used on the CD-SEM and overlay metrology page. Tier: deep dive;
+evidence weak.
 
 **SINGH-1988** — B. Singh and W. H. Arnold, "Linewidth measurement by low
 voltage SEM", *Proc. SPIE* **0921**, 16 (1988).
