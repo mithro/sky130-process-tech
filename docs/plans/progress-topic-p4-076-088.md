@@ -8,7 +8,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 
 | id | severity | status | note |
 |---|---|---|---|
-| 079-H1 | High | open | |
+| 079-H1 | High | fixed | Confirmed via Crossref abstract of 10.1116/1.582097: Kastenmeier 1999 gets nitride-to-poly selectivity from a remote O2/N2 discharge growing a ~10 nm oxidised layer on the poly, not from "high carbon-to-fluorine ratio" or "O2-lean" RIE chemistry (absent from the paper). Reworded 079-npcme.md's "Stop on poly" bullet to attribute the RIE practice to the category page and describe Kastenmeier's actual downstream-reactor mechanism separately. |
 | 076-M1 | Medium | open | |
 | 076-M2 | Medium | open | |
 | 076-M3 | Medium | open | |

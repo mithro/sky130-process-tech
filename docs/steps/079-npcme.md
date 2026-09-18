@@ -120,13 +120,19 @@ fab (SKY130's recipe is not public):
 5. **Stop on poly.** Fluorine etches silicon faster than nitride
    unless the chemistry is arranged otherwise — Lee and Chen describe
    the CF₄/O₂ silicon etch[^lee-chen-1983] — so the last part of the
-   etch uses a chemistry with selectivity to silicon (high
-   carbon-to-fluorine ratio, or O₂-lean, per Kastenmeier
-   et al.[^kastenmeier-1999]) and a low bias, and the over-etch is
-   kept short. A few nanometres of poly loss and a damaged layer of
-   the kind Oehrlein reviewed[^oehrlein-1989] are unavoidable and
-   are, we infer, part of why the poly heads are re-doped by the
-   source/drain implants.
+   etch uses a chemistry with selectivity to silicon — a
+   fluorine-lean, polymerising fluorocarbon step in an RIE tool
+   (industry practice, category page[^txt-01]) — and a low bias, and
+   the over-etch is kept short. Kastenmeier, Matsuo and Oehrlein
+   obtained the same end by a different route in a downstream
+   reactor: a remote O₂/N₂ discharge with much smaller CF₄ or NF₃
+   flows grows an approximately 10 nm oxidised layer on the
+   polysilicon that suppresses its etching, giving nitride-to-poly
+   etch-rate ratios of about 40 with CF₄ and about 100 with NF₃, with
+   the oxide not etched at all.[^kastenmeier-1999] A few nanometres
+   of poly loss and a damaged layer of the kind Oehrlein
+   reviewed[^oehrlein-1989] are unavoidable and are, we infer, part
+   of why the poly heads are re-doped by the source/drain implants.
 6. **Loading.** Because only a small fraction of the wafer is open,
    micro-loading and aspect-ratio effects in the 0.27 µm
    windows[^pdk-periph] dominate the uniformity, as Gottscho,
