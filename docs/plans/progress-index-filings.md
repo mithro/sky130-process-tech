@@ -284,3 +284,36 @@ session works through them; see the session log below for detail.
   `check_materials.py`, `check_masks.py`, `check_papers.py` also re-run
   clean at the end. Final state: 71 filings (up from 48 at the start of
   this session), committed and pushed to `topic/index-filings`.
+* 2026-09-19 — Fixer session applying `tmp/verify-index-filings-r3.md`
+  (round 4). Verified each of the report's V-01..V-14 findings
+  independently against the cached PDFs (own extraction/decode scripts
+  under a scratch directory, not the verifier's) before changing
+  anything; agreed with all of them. Fixed the four required items
+  (V-01, V-02, V-13, V-11) and every should-fix/nice-to-have item
+  (V-03..V-10, V-12, V-14) except V-06 and V-08, where the verifier's own
+  conclusion was "no further action" / "resolved once V-03 is fixed" and
+  nothing more was needed. One small commit per item; see the round-4
+  table above for what each did. Notable fix: `check_location`'s four
+  silent-abstain paths (V-13) now each append to a printed, counted
+  `abstentions` list, and a whitespace-tolerant fallback search was added
+  before abstaining -- verified against all eight of the reviewer's
+  constructed cases in `tmp/verify-r3/cases/` (E/G/H now report instead
+  of going silent; F, the real fy2008 bug, now fails with the correct
+  message instead of passing). Decoded the FY1999 Cypress annual
+  report's constant-offset glyph encoding (V-11) and added it as a
+  record with two independently re-verified quotes, scoping the decoder
+  to that one document by `identifier.value` so it can never affect an
+  unrelated filing; removed the false `known_gaps` entry it replaces.
+  Final state: 86 filings (up from 85). `check_filings.py`: 86 filings,
+  0 problems. `gen_filings.py --check`: 6 pages, 0 problems.
+  `check_filings.py --online` (full, 86 records): **86 filings checked,
+  0 problems, 170 locations not checked** -- the first time this count
+  has ever been printed; it is not a regression, it is V-13 making
+  visible what was always true (most `location` values name a
+  non-Item-numbered section, or the document has no machine-matchable
+  "ITEM 1" heading, so `check_location` had nothing to compare).
+  `check_refs.py`, `check_steps.py`, `check_machines.py`,
+  `check_materials.py`, `check_masks.py`, `check_papers.py`/
+  `gen_papers.py --check`, `check_patents.py`/`gen_patents.py --check`:
+  all 0 problems. `sphinx-build -W -q -b html docs tmp/build-filings`:
+  clean, exit 0. Pushed to `topic/index-filings`.
