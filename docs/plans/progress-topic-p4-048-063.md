@@ -23,7 +23,7 @@ before being fixed or declined.
 | 058-M1 | Medium | fixed | = 057-M1 |
 | 062-M1 | Medium | fixed | Confirmed via OpenAlex: Noguchi 1997 measured charging during a metal etch, not the poly etch. Reworded to attribute the measurement correctly and mark the poly-etch link as inference. |
 | 062-M2 | Medium | fixed | Confirmed via OpenAlex: both Ogryzlo papers measure the ion-free spontaneous reaction, which the 1990 abstract itself contrasts with in-discharge (plasma) behaviour; a gate etch is strongly ion-assisted (cunge-2002, already cited). Reworded the doping-dependent clearing claim as an inference. |
-| 063-M1 | Medium | open | |
+| 063-M1 | Medium | fixed | Confirmed via OpenAlex: Deal 1980 standardises oxide-charge terminology, does not measure or prescribe an anneal. Kept the anneal step as a typical-industry-practice claim with its own citation. |
 | 048-L1 | Low | open | |
 | 048-L2 | Low | open | |
 | 048-L3 | Low | open | |
@@ -62,8 +62,8 @@ before being fixed or declined.
 | 061-L3 | Low | open | |
 | 062-L1 | Low | fixed | Confirmed cached ITRS FEP table: Gate Etch Bias (2001) = 25.2 nm, not 25. |
 | 062-L2 | Low | fixed | Confirmed cached snf-9400.txt: page states the TCP 9400 was "originally used for gate etching with high selectivity to thin gate oxides"; added the quote. |
-| 063-L1 | Low | open | |
-| 063-L2 | Low | open | |
+| 063-L1 | Low | fixed | Copied 002/047's correct dual-journal citation for Deal 1980. |
+| 063-L2 | Low | fixed | Confirmed via OpenAlex: Kao et al. measured retardation of curved-surface oxidation, not enhancement. Reworded the bird's-beak sentence. |
 
 ## Checkers and build
 
