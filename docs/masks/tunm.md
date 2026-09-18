@@ -191,11 +191,16 @@ SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
 tools but assigns no layer to them.[^skw-01] At the NA 0.48 low end of
 ASML's PAS 5500/275D[^asml-pas5500-275d] the same feature has
 {math}`k_1 \approx 0.54` (our arithmetic). One Cypress integration
-patent, describing its own SONOS channel window, takes the other view
-for tight layouts: "because the undercut of window 305 may become very
+patent, which may still be in force, takes the other view for tight
+layouts; its sentence is in the collapsed note below this paragraph.
+That is the patent's flow, not a statement about SKY130.
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+The Cypress integration patent, describing its own SONOS channel
+window, says that "because the undercut of window 305 may become very
 close to an adjacent logic device, critical layer lithography tools are
-employed to reduce misregistration tolerances".[^pat-03] That is the
-patent's flow, not a statement about SKY130.
+employed to reduce misregistration tolerances".[^pat-03]
+:::
 
 **Mask errors.** Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
@@ -230,18 +235,25 @@ them on the {ref}`medium-current implanter <machine-medium-current-implanter>`
 class; and {ref}`TUNME <step-039>` removes the oxide in them in dilute HF
 or buffered HF on the {ref}`wet bench <machine-wet-bench>` class, with
 the resist strip and pre-oxidation clean treated as part of that step.
-A Cypress embedded-SONOS patent describes the same sequence: "a patterned
-tunnel mask 220 is formed on or overlying the pad oxide 209, ions … are
-implanted through a window or opening in the tunnel mask to form a
-channel 224 for a NVM transistor 226", and "The tunnel mask can include
-a photoresist layer, or a hard mask formed, from a patterned nitride or
-silicon-nitride layer".[^pat-04] The isotropic etch widens each window
-beyond the resist edge; the integration patent notes that "The isotropic
-etch of the screening sacrificial dielectric layer 303 can be expected
-to undercut the photoresist 307" and that in its flow "a 0.2 um drawn
-size may be downsized to 0.18 um to compensate for an undercut of
-0.01 um on a side".[^pat-03] Whether SKY130's `ctunm` data are sized is
-not public; the renders' "sized by ctunm.3" note names no source.
+Two Cypress patents that may still be in force describe the same
+sequence, the mask it uses and the undercut the isotropic etch leaves;
+their wording is in the collapsed note below this paragraph. Whether
+SKY130's `ctunm` data are sized is not public; the renders' "sized by
+ctunm.3" note names no source.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+A Cypress embedded-SONOS patent describes the same sequence: "a
+patterned tunnel mask 220 is formed on or overlying the pad oxide 209,
+ions … are implanted through a window or opening in the tunnel mask to
+form a channel 224 for a NVM transistor 226", and "The tunnel mask can
+include a photoresist layer, or a hard mask formed, from a patterned
+nitride or silicon-nitride layer".[^pat-04] The isotropic etch widens
+each window beyond the resist edge; the integration patent notes that
+"The isotropic etch of the screening sacrificial dielectric layer 303
+can be expected to undercut the photoresist 307" and that in its flow "a
+0.2 um drawn size may be downsized to 0.18 um to compensate for an
+undercut of 0.01 um on a side".[^pat-03]
+:::
 
 **Resist edges.** Ions scattered out of an implant resist edge alter the
 threshold of nearby transistors, with shifts "of up to 100 mV … over a

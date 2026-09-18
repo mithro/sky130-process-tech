@@ -329,7 +329,7 @@ steps and 36 masks.
 |--------|-------|-----------------|------------|------------------|
 | Starting material, isolation and deep N-well | {ref}`SMAT <step-001>` – {ref}`NS19 <step-013>` | 13 | 2 (`FOM`, `DNM`) | "Bulk" substrate;[^skw-02] "FOX K=3.9" field oxide, top at 0.3262 µm on the stack diagram,[^pdk-04] 0.07 µm above the silicon under poly[^pdk-03] |
 | Wells and threshold implants | {ref}`LVTNM <step-014>` – {ref}`RTAI <step-034>` | 21 | 5 (`LVTNM`, `NWM`, `HVTPM`, `PWBM`, `PWDEM`) | ten implants and one anneal; N-well peak 6.0 × 10¹⁷ cm⁻³ and baseline vertical dimension 1.1 µm, P-well peak 4 × 10¹⁷ cm⁻³ at 0.42 µm;[^pdk-03] `PWBM` and `PWDEM` not marked as used in SKY130[^pdk-05] |
-| SONOS tunnel window and ONO stack | {ref}`TUNM <step-035>` – {ref}`ONOME <step-042>` | 8 | 2 (`TUNM`, `ONOM`) | ONO thicknesses not public, bounded by Cypress patents;[^pat-01][^pat-02] programmed and erased thresholds 1.44 V and −2.3 V (0.45/0.22 cell) in the e-test table[^pdk-07] |
+| SONOS tunnel window and ONO stack | {ref}`TUNM <step-035>` – {ref}`ONOME <step-042>` | 8 | 2 (`TUNM`, `ONOM`) | ONO thicknesses not public, bounded by Cypress patents — one of them shown as in force, see the collapsed note under this table;[^pat-01] programmed and erased thresholds 1.44 V and −2.3 V (0.45/0.22 cell) in the e-test table[^pdk-07] |
 | Gate oxides | {ref}`GOX100 <step-043>` – {ref}`LVGOX <step-047>` | 5 | 1 (`LVOM`) | high-voltage devices "use 110A gate oxide thickness";[^pdk-hv] model `toxe` 4.148 nm (1.8 V) and 11.6 nm (5 V)[^pdk-model-nfet01v8][^pdk-model-nfet5v] |
 | Poly gate and poly resistors | {ref}`SAGD <step-048>` – {ref}`IOX45 <step-063>` | 16 | 4 (`RPM`, `RRPM`, `URPM`, `P1M`) | poly 0.18 µm;[^pdk-03][^pdk-04] gate poly 48.2 Ω/sq;[^pdk-08] 300 Ω/sq and 2000 Ω/sq precision resistors;[^pdk-07] poly width 0.150 µm, space 0.210 µm;[^pdk-periph] "poly cap after SPE" 0.2 µm[^pdk-03] |
 | Tips and halos | {ref}`NTM <step-064>` – {ref}`TIPRTAD <step-075>` | 12 | 3 (`NTM`, `HVNTM`, `LDNTM`) | "N Tip (As)"; tip implant angle 7°, HV tip 40° with 23° twist;[^pdk-03] no P-tip mask in the mask table[^pdk-05] |
@@ -340,6 +340,11 @@ steps and 36 masks.
 | First MiM capacitor, metal 3 and via 3 | {ref}`CAPILD <step-135>` – {ref}`WCMP5 <step-148>` | 14 | 3 (`CAPM`, `MM3`, `VIM3`) | 2 fF/µm², top plate 5.8 Ω/sq;[^pdk-07] `met3` 0.845 µm and via-3 height 0.39 µm;[^pdk-04] 47 mΩ/sq;[^pdk-08] `CAPM` not marked as used in SKY130[^pdk-05] |
 | Metal 4, second MiM capacitor, via 4 and metal 5 | {ref}`WTIAL4 <step-149>` – {ref}`MM5E <step-163>` | 15 | 4 (`CAP2M`, `MM4`, `VIM4`, `MM5`) | `met4` 0.845 µm, via-4 height 0.505 µm, `met5` 1.26 µm;[^pdk-04] via 4 0.800 µm square, metal 5 1.600 µm width and space;[^pdk-periph] no tungsten-plug steps after via 4[^steps-sheet] |
 | Passivation, pads, alloy and test | {ref}`NFUSOX <step-164>` – {ref}`HPETEST <step-171>` | 8 | 2 (`NSM`, `PDM`) | "TOPOX K=3.9" 0.09 µm and "TOPNIT K=7.5" 0.54 µm;[^pdk-04] `pad` "Passivation cut (opening over pads)";[^pdk-06] e-test against "EDR (e-test)" specifications[^pdk-07] |
+
+:::{dropdown} From a patent shown as in force (US 2009/0179253; estimated expiry 2027-06-17) — open to read
+The *SONOS tunnel window and ONO stack* row above: the second of the
+Cypress patents that bound the ONO thicknesses.[^pat-02]
+:::
 
 The narrative below walks through the modules. Numbers already in the
 table are not repeated. The order of the steps is the step list's;
@@ -391,9 +396,15 @@ two implants set their channel doping ({ref}`PTSI <step-037>`,
 the whole wafer ({ref}`ONO <step-040>`) and then removed from everything
 except the memory cells ({ref}`ONOM <step-041>`,
 {ref}`ONOME <step-042>`). The module comes before the logic gate
-oxides, the order of Cypress's integration patent, in which the logic
-gate oxidation has "the advantage of additionally serving to reoxidize
-the ONO charge trapping dielectric stack".[^pat-03]
+oxides, the order of Cypress's integration patent, which may still be in
+force; what that patent says the logic gate oxidation does for the stack
+is in the collapsed note below this paragraph.
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+In Cypress's integration patent the logic gate oxidation has "the
+advantage of additionally serving to reoxidize the ONO charge trapping
+dielectric stack".[^pat-03]
+:::
 
 **Gate oxides.** SKY130 is a {term}`dual gate oxide` process. The thick
 oxide is grown over every active area ({ref}`GOX100 <step-043>`); the
@@ -925,8 +936,9 @@ sources, in the order in which the thermal steps occur.
    ({ref}`ONO <step-040>`).[^pat-01]
 4. **Gate oxides.** Gate oxides of this era are typically grown dry at
    750–950 °C ({ref}`GOX100 <step-043>`,
-   {ref}`LVGOX <step-047>`);[^txt-01] in Cypress's integration patent the
-   logic gate oxidation also re-oxidises the ONO.[^pat-03]
+   {ref}`LVGOX <step-047>`);[^txt-01] Cypress's integration patent, which
+   may still be in force, adds what that oxidation does for the ONO (the
+   collapsed note above).
 5. **Gate film.** Silicon deposited at low temperature and at a rate
    above the critical value is amorphous (typical value; the
    amorphous/polycrystalline boundary depends on rate as well as

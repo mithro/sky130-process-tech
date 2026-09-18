@@ -75,17 +75,23 @@ The SONOS rows matter for the resist. Rule hvi.4, "Hvi must not overlap
 tunm", keeps the memory windows outside `hvi`,[^pdk-periph] so a plate
 that was only NOT `hvi` would open the resist over the ONO islands. The
 {ref}`LVOM <step-044>` page leaves open how the mask treats the islands
-and infers from a Cypress patent that the resist protects them; the
-patent says that "while the photoresist layer 318 protects the ONO charge
-trapping dielectric stack 306 a clean which would be detrimental to the
-ONO charge trapping dielectric stack 306 if it were not protected by the
-photoresist layer 318 may be performed at this time".[^pat-03] Table
+and infers from a Cypress patent that may still be in force that the
+resist protects them; the patent's wording is in the collapsed note
+below this paragraph. Table
 F2b's `C` marks in the SONOS rows fit that inference (our reading). Diaz
 et al. describe the same kind of division in a 0.18 µm logic technology,
 where "Robust dual-gate oxides were developed to support 1.5-2 V core
 logic as well as 3.3 V periphery (I/O) circuitry",[^diaz-1999] and Togo,
 Noda and Tanigawa describe multiple-thickness gate oxides for
 logic-embedded DRAM.[^togo-1998]
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+The Cypress patent says that "while the photoresist layer 318 protects
+the ONO charge trapping dielectric stack 306 a clean which would be
+detrimental to the ONO charge trapping dielectric stack 306 if it were
+not protected by the photoresist layer 318 may be performed at this
+time".[^pat-03]
+:::
 
 ## Drawn layers and derivation
 
@@ -230,13 +236,8 @@ openings on the {ref}`medium-current implanter <machine-medium-current-implanter
 class, and {ref}`GOXETCH <step-046>` removes the thick oxide in them in
 dilute or buffered HF on the {ref}`wet bench <machine-wet-bench>` class,
 with the resist strip and clean treated as part of that etch. The
-Cypress patents describe the same mask: "a photoresist layer 318 of FIG.
-3D is deposited and patterned to have an opening 319 formed over a region
-of the substrate 302 that is to have the next insulator material and/or
-insulator layer thickness",[^pat-03] and "a patterned mask layer 242 …
-includes at least one opening 244 over a channel 218 in the second region
-208", after which "The thick, first gate oxide 240 is etched in the
-exposed regions by using a BOE etch".[^pat-04] The
+Cypress patents, which may still be in force, describe the same mask;
+their wording is in the collapsed note below this paragraph. The
 {ref}`GOXETCH <step-046>` page names thinning of the thick oxide at
 trench-isolation edges and at the mask boundary as a known problem of
 such an etch. In a dual-gate-oxide process with shallow trench
@@ -245,6 +246,16 @@ active area to 79 Å at the STI top edge, with a dent profile, and
 prevented it mainly by a thick sidewall oxide with nitride
 pullback;[^kim-2002] Lee et al. characterised the thinning at the STI
 edge in the dual-gate-oxide process.[^lee-1999-icvc]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+The Cypress patents describe the same mask: "a photoresist layer 318 of
+FIG. 3D is deposited and patterned to have an opening 319 formed over a
+region of the substrate 302 that is to have the next insulator material
+and/or insulator layer thickness",[^pat-03] and "a patterned mask layer
+242 … includes at least one opening 244 over a channel 218 in the second
+region 208", after which "The thick, first gate oxide 240 is etched in
+the exposed regions by using a BOE etch".[^pat-04]
+:::
 
 **Overlay.** The {ref}`LVOM <step-044>` page reads the mask as aligned to
 the trench pattern, with the thick/thin boundary required to land on
