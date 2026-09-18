@@ -22,7 +22,7 @@ Status values: open / fixed / declined.
 | 008-M1 | 008-dni | fixed | reworded; the MeV straggle-vs-offset physics claim in the review is standard implant physics, order-of-magnitude plausible, no public SKY130 figure exists so dropped the false-precision framing |
 | 009-M1 | 009-dnis | fixed | added the pat-sti-cr citation already used elsewhere on the page for this exact number |
 | 011-M1 | 011-filox | fixed | tied the 1.5-2x figure explicitly to the 006/003 working figures instead of restating an inconsistent number |
-| 013-M1 | 013-ns19 | open | VGH-1967 quotation unverifiable/probably not verbatim |
+| 013-M1 | 013-ns19 | declined | reviewer says the 3 A/min silicon rate and the two-sentence quote form can't be confirmed; I fetched the full abstract from OpenAlex's inverted-index (a different independent index than the reviewer used) and it reconstructs verbatim: "...silicon nitride films. The etch rate is 100 A/min. Under the same conditions deposited silicon dioxide had an etch rate of 0-25 A/min depending on the method of preparation, and elemental silicon 3 A/min." This confirms the page's quotation and the 3 A/min figure exactly; no change needed. See commit for the OpenAlex query. |
 
 ## Low
 
@@ -65,7 +65,7 @@ Status values: open / fixed / declined.
 | 012-L1 | 012-cmpnit | open | slurry selectivity numbers unverifiable, mark |
 | 012-L2 | 012-cmpnit | open | REB quote source describes LOCOS not STI |
 | 012-L3 | 012-cmpnit | open | uncited topography figure, tie to FILOX |
-| 013-L1 | 013-ns19 | open | nitride list omits GATENIT |
+| 013-L1 | 013-ns19 | fixed | verified against 058-gatenit.md's own reading; added GATENIT to the list |
 
 ## Cross-page conflicts (from B's summary, resolved as part of the above)
 
