@@ -111,12 +111,16 @@ Marangoni drying the same year as "A new extremely clean drying
 process".[^leenaars-1990] Drying also affects corrosion: Wai and Ling traced corrosion of Al–Cu lines to
 moisture left after a wet polymer clean and prevented it by lengthening
 "isopropyl-alcohol (IPA) purge time by 10 secs and wafers lift up time
-by 18 secs" in the Marangoni step.[^wai-2017] Rinse water can also leave electrostatic
-charge: an MKS Instruments patent dissolves CO₂ in DI water for wet
-cleaning "while preventing or reducing damage created by electrostatic
-charge", because "The dissolved CO2 reduces the
-resistivity of the DI water to a level that prevents surface
-charging".[^pat-dico2-mks]
+by 18 secs" in the Marangoni step.[^wai-2017] Rinse water can also leave
+electrostatic charge; an MKS Instruments patent that may still be in
+force addresses it, in the collapsed note below.
+
+:::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read
+An MKS Instruments patent dissolves CO₂ in DI water for wet cleaning
+"while preventing or reducing damage created by electrostatic charge",
+because "The dissolved CO2 reduces the resistivity of the DI water to a
+level that prevents surface charging".[^pat-dico2-mks]
+:::
 
 ### Solvent strippers
 
@@ -242,7 +246,8 @@ parameters are described on the
   lists "EKS265, EKC270 solvents" and "IPA dry".[^skw-01]
 * **Water and gases.** Ultrapure water in large volumes — Ohmi's
   room-temperature clean was designed partly to cut it[^ohmi-1996] — with
-  CO₂ dissolved where charging matters.[^pat-dico2-mks]
+  CO₂ dissolved where charging matters (the MKS patent, which may still
+  be in force, is in the collapsed note above).
 * **Bath control.** Concentration monitors, water spiking for the
   phosphoric bath and scheduled bath changes;[^liu-2007][^akrion-gama]
   quartz and fluoropolymer tanks and carriers ({ref}`category-strip`).
@@ -261,9 +266,9 @@ not public.
 * **Wet oxide etches over thin films.** {ref}`TUNME <step-039>` removes
   the oxide from the tunnel windows (the pad oxide, on that page's
   inference) and {ref}`GOXETCH <step-046>` strips the exposed thick gate
-  oxide, both with BOE, the etchant a Cypress embedded-SONOS patent
-  names for the two operations, with 20:1 BOE or 50:1 HF among its
-  alternatives for the pad oxide;[^pat-04] the
+  oxide, both with BOE — the etchant a Cypress embedded-SONOS patent
+  that may still be in force names for the two operations, with its
+  alternatives, in the collapsed note below this list; the
   {ref}`SACETCH <step-095>` page reads its etch, by inference, as a
   dilute-HF dip. At these thicknesses the slow, well-controlled rates of
   dilute HF matter.[^kikuyama-1994][^wiki-boe]
@@ -286,6 +291,12 @@ not public.
 * **Spray or single-wafer alternatives.** Several pages offer the FSI
   Mercury spray tool or the single-wafer SEZ tools for the HF steps; the
   capabilities page names HF on both.[^skw-01]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The Cypress embedded-SONOS patent names BOE for both operations, with
+20:1 BOE or 50:1 HF among its alternatives for the pad
+oxide.[^pat-04]
+:::
 
 ## Related pages
 
