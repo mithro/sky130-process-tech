@@ -22,8 +22,10 @@ describes), and the
 resist is stripped at {ref}`PWDEIS <step-033>`.
 
 The drawn layer is `pwde` (GDS 124:20), "Regions to receive p-well
-drain-extended implants".[^pdk-06] Its rules (pwdem.1–pwdem.6) have no
-public numeric values but fix the geometry: `pwde` "must be enclosed by
+drain-extended implants".[^pdk-06] Its rules (pwdem.1–pwdem.6) name the
+layer `pwdem`, not `pwde` — the PDK is inconsistent between the drawn
+layer's name and its rule set's name for it — but have no public
+numeric values; they fix the geometry: `pwde` "must be enclosed by
 UHVI" (pwdem.4), the 20 V node identifier; "pwdem.dg inside UHVI must be
 enclosed by deep nwell" (pwdem.5), with a minimum enclosure by deep
 N-well (pwdem.6); and it must be enclosed by the P-well block layer
@@ -51,8 +53,9 @@ longer still.[^pdk-07]
 ## Why this step exists
 
 SKY130 is a multi-voltage process: a 1.8 V core, 5 V I/O, and "HV
-extended-drain NMOS and PMOS"[^pdk-10] rated in the PDK at 10/16 V
-(`nfet_g5v0d16v0`, `pfet_g5v0d16v0`) and 20 V (`nfet_20v0`, `pfet_20v0`,
+extended-drain NMOS and PMOS"[^pdk-10] rated in the PDK at 11/16 V for
+the NMOS (`nfet_g5v0d16v0`) and 10/16 V for the PMOS
+(`pfet_g5v0d16v0`), and 20 V (`nfet_20v0`, `pfet_20v0`,
 `nfet_20v0_iso`, `nfet_20v0_nvt`, `nfet_20v0_zvt`);[^pdk-07] SkyWater's
 platform table lists "20+V, Drain-Extended CMOS (16V)" for
 S130.[^skw-02] A drain-extended (DE) MOSFET keeps the thin gate oxide
