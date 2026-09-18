@@ -20,7 +20,7 @@ Status values: open / fixed / declined.
 | 003-M1 | 003-isonit | fixed | verified AmberWave 500-2000 Å = 50-200 nm (already fetched by both reviews and self-consistent with the page's own later quote); lower bound of the stated range didn't match; fixed and tied the 150 nm working figure explicitly to the patent's midpoint |
 | 004-M1 | 004-fom | fixed | matched docs/masks/fom.md and docs/masks/index.md, which already mark this pairing "(inference)" |
 | 008-M1 | 008-dni | fixed | reworded; the MeV straggle-vs-offset physics claim in the review is standard implant physics, order-of-magnitude plausible, no public SKY130 figure exists so dropped the false-precision framing |
-| 009-M1 | 009-dnis | open | uncited furnace temperature |
+| 009-M1 | 009-dnis | fixed | added the pat-sti-cr citation already used elsewhere on the page for this exact number |
 | 011-M1 | 011-filox | open | fill-thickness arithmetic self-inconsistent |
 | 013-M1 | 013-ns19 | open | VGH-1967 quotation unverifiable/probably not verbatim |
 
@@ -48,15 +48,15 @@ Status values: open / fixed / declined.
 | 005-L3 | 005-stinite | open | optional: add page numbers/move support to papers |
 | 006-L1 | 006-stie | fixed | folded into the 006-H1 rewrite (ITRS "node on node" sentence dropped, Thung's 66% figure used instead) |
 | 006-L2 | 006-stie | open | HDP-void quote clipped/one step removed |
-| 006-L3 | 006-stie, 009-dnis | open | tool name spelling vs SkyWater's own |
+| 006-L3 | 006-stie, 009-dnis | fixed | quoted SkyWater's own spellings ("Gasonic PEP", "Mattson Aspen2") in both places; same commit as 009-L1 |
 | 007-L1 | 007-dnm | open | resist thickness: use patent number not book |
 | 007-L2 | 007-dnm | fixed | reworded to point at STIE instead of restating a number, as part of the 006-H1 commit |
 | 007-L3 | 007-dnm | open | "deliberate trade" overstated |
 | 008-L1 | 008-dni | fixed | verified by fetch: prnewswire release is about GSD Ovation (2021), "3 MeV" belongs to GSD/HE Ovation specifically; reworded |
 | 008-L2 | 008-dni | fixed | verified by fetch: IEEE Xplore abstract gives non-monotonic Vt-vs-dose with a peak near 1e14, not a simple "keeps dose modest" story; reworded |
 | 008-L3 | 008-dni | fixed | added citations already on the page |
-| 009-L1 | 009-dnis, 006-stie | open | same as 006-L3, one fix |
-| 009-L2 | 009-dnis | open | crust claim cite primary sources too |
+| 009-L1 | 009-dnis, 006-stie | fixed | see 006-L3 |
+| 009-L2 | 009-dnis | fixed | added orvek-1985/smith-1983, already in the page's Deep dive |
 | 010-L1 | 010-linox | open | Lattice figure is thickened 90nm-node liner |
 | 010-L2 | 010-linox | open | Spansion/Cypress lineage caveat placement |
 | 011-L1 | 011-filox | open | Nishimura numbers unverifiable, mark or drop |
