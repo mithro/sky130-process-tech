@@ -30,13 +30,13 @@ occurrence is checked and fixed if needed.
 | 110-L1 | Low | fixed | Confirmed novellus-history.html: "the company combined the modular architecture of the Concept Two and the tungsten CVD process chamber, resulting in ... Concept Two-ALTUS" -- no "multi-station"; that six-wafer-chamber description belongs to Concept One-W. Reworded per review's fix. |
 | 110-L2 | Low | fixed | Added [^domenicucci-1996] (Ti-AlCu-Ti lifetimes over two-level W stud structures, already the citation used for the same literature on 112/123) with the footnote definition added to the page. |
 | 110-L3 | Low | fixed | The PDK gives CEFC/0.14um with no explanation of "qualified down to"; marked the reading explicitly per review's fix. |
-| 111-L1 | declined | open | JOB-01 site-wide sweep item; left alone per coordinator instruction. |
+| 111-L1 | Low | declined | JOB-01 (indeed.com job listing, 403 live, no Wayback) site-wide sweep item; left alone per the coordinator's explicit instruction (separate sweep). |
 | 111-L2 | Low | fixed | Same as 107-L2; added the same pointing-back cross-reference here. |
-| 112-L1 | Low | open | "excluding top metal" belongs to the S8P row only, not all three technologies. |
-| 112-L2 | Low | open | Quotation drops a space before the hyphen in "Al -0.5%Cu". Recurs 113, 114, 123. |
-| 112-L3 | Low | open | 10 wt% Ti is the film composition per the patent, not the target's. |
-| 112-L4 | Low | open | Stack dated "2013-2014"; the report is dated March 2014 only. |
-| 112-L5 | Low | open | pdk-02 never prints "S8"; identification is properly made on the overview page. |
+| 112-L1 | Low | fixed | Reworded to say only the S8P entry reads "excluding top metal layers" and to add the report's own metal-3 line ("500A TiW/21,250A Al 0.5% Cu/300A TiW") as the better evidence, per review. |
+| 112-L2 | Low | fixed | Confirmed the recurring verbatim quotation drops a space before the hyphen. Fixed the two verbatim occurrences (112-tial6.md:36,248 and 123-tial12.md:27); 113-mm1.md and 114-mm1e.md already paraphrase without quotation marks and needed no change. |
+| 112-L3 | Low | fixed | Confirmed US 5,160,534 states 10 wt% Ti for the deposited film, while its worked target example is "10.36 wt% of hydrogenated titanium" with a three-phase structure. Reworded all three occurrences on 112-tial6.md (lines ~131, 179, 214) to attribute 10 wt% to the film, not the target. |
+| 112-L4 | Low | fixed | Confirmed qtp123907.pdf XMP metadata: CreateDate 2014-03-11. Changed "qualified in 2013-2014" to "qualified in 2014". |
+| 112-L5 | Low | fixed | Confirmed pdk-background.txt never prints "S8" (it says "8th generation SONOS technology node"); the identification is made via pdk-previous's glossary entry and cyp-22 on the overview page. Cited pdk-previous and cyp-22 here too, with a pointer to the overview. |
 | 113-L1 | Low | open | LI1MCD quoted as 0.14 without noting the table's second (0.17) row. |
 | 114-L1 | Low | open | "AlCl3 is volatile at room temperature" overstates (sublimes ~180C; etch chamber vapour pressure is temperature-assisted). |
 | 114-L2 | Low | declined | Lam 10-K uncheckable but corroborated by SkyWater's own list; no fix required per review, note only. |
@@ -45,7 +45,7 @@ occurrence is checked and fixed if needed.
 | 115-L2 | Low | open | Footnote-ordering style nit (trikon-10k-1996 out of the PDK->SkyWater->SEC->vendor->wiki->books->papers order). |
 | 116-L1 | Low | open | "first of the back-end oxide polishes" inconsistent with the page's own Related-steps list and 111's wording. |
 | 116-L2 | Low | open | Preston's law rests on an unretrievable 1927 source alone; add a retrievable secondary citation. |
-| 116-L3 | declined | open | JOB-01 site-wide sweep item; left alone per coordinator instruction. |
+| 116-L3 | Low | declined | Same JOB-01 site-wide sweep item as 111-L1; left alone per the coordinator's explicit instruction. |
 | 117-L1 | Low | open | "_C" suffix used as inference evidence from a name (Common rule 2). |
 | 117-L2 | Low | declined | amat-10k uncheckable but independently documented; no fix required per review, note only. |
 
