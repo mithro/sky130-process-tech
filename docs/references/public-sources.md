@@ -837,15 +837,6 @@ retrieved 2026-08-30.
 <https://www.indeed.com/q-skywater-technologies-l-bloomington,-mn-jobs.html>.
 Same job families; no additional tool names. Tier: high-level.
 
-**JOB-03** — Career.com, *"Plasma Etch Process Development Engineer"*,
-SkyWater Technology Foundry, Bloomington MN, posted 2024-08-09 (closed
-2024-10-30), retrieved 2026-08-30.
-<https://www.career.com/company/skywater-technology-foundry-inc/job/plasma-etch-process-development-engineer/-in-bloomington,mn?jid=83e5f3b7-6fb2-41df-9003-31e8e118e0a8>.
-Describes the role ("bringing cutting-edge eight-inch Silicon designs
-to life") but names no tools.
-Also used on the silicon and polysilicon plasma etcher page.
-Tier: high-level.
-
 **JOB-04** — LinkedIn, *"Equipment Maintenance Technician"*, SkyWater
 Technology, Austin TX (Fab 25, not Bloomington), retrieved 2026-08-30.
 <https://www.linkedin.com/jobs/view/equipment-maintenance-technician-at-skywater-technology-4434999110>.
