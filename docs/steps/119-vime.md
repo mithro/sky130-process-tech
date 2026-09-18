@@ -92,8 +92,9 @@ between metal 1 and metal 2, and the etch decides four things:
   {ref}`WDEP3 <step-121>` nucleating — the "poisoned via" that
   Kobayakawa et al. and Romero et al. traced to outgassing from
   spin-on glass in the early 1990s[^kobayakawa-1991][^romero-1991] and
-  that a UMC patent addresses by densifying the exposed dielectric
-  before the fill.[^pat-via-poison-umc] Which SKY130 dielectric is at
+  that a UMC patent addresses, for a dual-damascene flow, by
+  densifying the exposed dielectric before the fill.[^pat-via-poison-umc]
+  Which SKY130 dielectric is at
   risk is not public; the PDK's separately named "NILD3_C" (k 3.5,
   0.030 µm)[^pdk-04] is a candidate if it is a fluorinated film
   ({ref}`NILD3 <step-115>`).
@@ -275,8 +276,8 @@ recipe is not public); the shared physics is set out at
 * Kobayakawa et al., VMIC 1991, and Romero et al., *J. Mater. Res.*
   1991 — outgassing from planarising dielectrics, the origin of via
   poisoning.[^kobayakawa-1991][^romero-1991]
-* Wu and Lu (UMC), US 6,013,581 — preventing poisoned vias by
-  densifying the exposed dielectric.[^pat-via-poison-umc]
+* Wu and Lu (UMC), US 6,013,581 — preventing poisoned vias in a
+  dual-damascene flow by densifying the exposed dielectric.[^pat-via-poison-umc]
 * Xing, Cerny and Visokay (TI), US 6,090,697 — an etch stop for a
   fluorine-bearing via etch.[^pat-etchstop-ti]
 * Yin et al. (Applied Materials), US 5,540,824, and Ogle (Lam
