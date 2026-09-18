@@ -1,0 +1,66 @@
+# Progress: fixing the Phase 4 final review (steps 035-047) on `topic/p4-035-047`
+
+Source: `tmp/p4/review-035-047.md` (independent sub-agent review, not
+tracked in the repository). Work High first, then Medium, then Low.
+Each finding is verified against the public source (fetch cache under
+`tmp/p4/fetch/`, reused where already present) or by redoing the
+arithmetic before being fixed or declined.
+
+| Finding | Page(s) | Status | Note |
+|---|---|---|---|
+| 038-H1 | 038-depi.md | open | PDK "VT meas" row misread — gate is swept, not held at 0 V |
+| 035-M1 | 035-tunm.md | open | Cypress quotation put inside a PDK attribution |
+| 036-M1 | 036-tunarce.md | open | unsupported/contradictory "few nm resist loss" figure |
+| 036-M2 | 036-tunarce.md | open | "tens of keV" narrower than cited analogues |
+| 037-M1 | 037-ptsi.md | open | original/star cell W/L pairing stated as fact |
+| 037-M2 | 037-ptsi.md | open | `lvtn` block reading overstated vs step 015 |
+| 038-M1 | 038-depi.md | open | 20 V zero-Vt structure identification untraced |
+| 038-M2 | 038-depi.md | open | arsenic inference not carried into later bullets |
+| 040-M1 | 040-ono.md, 039-tunme.md | open | 1.5-3 nm tunnel oxide misattributed to pat-04 |
+| 040-M2 | 040-ono.md | open | "thinnest oxide in the flow" asserted, not shown |
+| 041-M1 | 041-onom.md | open | ONOM-from-tunm-by-oversizing inference overstated |
+| 041-M2 | 041-onom.md | open | overlay-to-TUNM inference stated with mixed hedging |
+| 042-M1 | 042-onome.md | open | 7-15 nm trapping layer merges two different quantities |
+| 043-M1 | 043-gox100.md | open | ONO-first ordering rationale not given |
+| 043-M2 | 043-gox100.md | open | "somewhat thinner than 11 nm" left unquantified |
+| 044-M1 | 044-lvom.md | open | NOT-hvi inference marked once, used as fact elsewhere |
+| 045-M1 | 045-nchi.md | open | 7 deg tilt asserted; cited analogue specifies zero tilt |
+| 045-M2 | 045-nchi.md | open | "last channel implant" claim too strong |
+| 046-M1 | 046-goxetch.md | open | category-page quote drops its inference marker |
+| 047-M1 | 047-lvgox.md | open | nitridation inference marked once, used as fact elsewhere |
+| 047-M2 | 047-lvgox.md | open | two overstated claims about oxidation control |
+| 035-L1 | 035-tunm.md | open | quotation capitalisation |
+| 035-L2 | 035-tunm.md | open | 5V regions are hvi, drawn complement at LVOM |
+| 035-L3 | 035-tunm.md | open | tunm.3 unit not given by the table |
+| 035-L4 | 035-tunm.md | open | job-01 no longer retrievable |
+| 036-L1 | 036-tunarce.md | open | "Mattson Aspen II" vs source's "Aspen2" |
+| 036-L2 | 036-tunarce.md | open | tension with Open questions (resolved by 036-M1) |
+| 037-L1 | 037-ptsi.md | open | US 5,963,801 context (n-well, "merely exemplary") |
+| 037-L2 | 037-ptsi.md | open | Axcelis indium cross-validation addition |
+| 037-L3 | 037-ptsi.md, 039-tunme.md, 040-ono.md | open | silent typo correction in PDK table (-38 -> -3.8) |
+| 038-L1 | 038-depi.md | open | nfet_05v0_nvt range 0.01 V narrow |
+| 038-L2 | 038-depi.md | open | "2 nm oxide" narrower than patent range |
+| 038-L3 | 038-depi.md | open | quotation capitalisation |
+| 038-L4 | 038-depi.md | open | dead Springer chapter page behind live DOI |
+| 039-L1 | 039-tunme.md | open | HF-last qualification vs later ONO precleans |
+| 039-L2 | 039-tunme.md | open | category-page quote splices two passages |
+| 039-L3 | 039-tunme.md | open | two numeric statements don't follow from pat-04 |
+| 040-L1 | 040-ono.md | open | dropped word "oxide" in quotation |
+| 040-L2 | 040-ono.md | open | pat-radox-cyp embodiment is polysilicon-channel |
+| 040-L3 | 040-ono.md | open | furnace capability line oversold as "decisive" |
+| 041-L1 | 041-onom.md | open | ARC-etch question left in confusing order |
+| 042-L1 | 042-onome.md | open | two quotation slips (DPS II, SNF gas list) |
+| 043-L1 | 043-gox100.md | open | dropped word "oxide" (same as 040-L1) |
+| 043-L2 | 043-gox100.md | open | "5.0V I/O" quoted differently than step 044 |
+| 044-L1 | 044-lvom.md, 045-nchi.md, 046-goxetch.md | open | "~10 nm" cited to finished-thickness source |
+| 044-L2 | 044-lvom.md | open | beverina-2003 used beyond abstract |
+| 045-L1 | 045-nchi.md | open | AMD quotation drops "zero tilt" clause (same as 045-M1) |
+| 045-L2 | 045-nchi.md | open | e-test values don't say how sweeps were combined |
+| 046-L1 | 046-goxetch.md | open | uncited/wider HF dilution range vs 039 |
+| 046-L2 | 046-goxetch.md | open | "~10 nm" (same as 044-L1) |
+| 047-L1 | 047-lvgox.md | open | "the one public hint" overstates evidence |
+| 047-L2 | 047-lvgox.md | open | raw-data module-to-device mapping not given |
+
+## Declined findings
+
+(none yet)
