@@ -113,8 +113,9 @@ are those of metals 1–3:
   Chaudhari's analysis[^chaudhari-1974] — rises with film thickness and
   heat treatment, as Zlatanović and Davinić measured;[^zlatanovic-1990]
   the TiW cap suppresses hillocks and serves as the anti-reflective
-  surface, the role Rocke and Schneegans documented for a refractory
-  cap.[^rocke-1988] Stress-induced voiding (Yue, Funsten and
+  surface, the role Rocke and Schneegans documented for a
+  titanium-nitride cap on aluminium and which a Ti:W cap plays in the
+  same way (inference).[^rocke-1988] Stress-induced voiding (Yue, Funsten and
   Taylor[^yue-1985]) and wafer bow (Stoney's relation[^stoney-1909])
   accumulate with a fourth aluminium level on the wafer.
 * **The second MiM bottom electrode.** The PDK gives the metal-4
@@ -284,8 +285,8 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
 * Yue, Funsten and Taylor, IRPS 1985, and Stoney, *Proc. R. Soc. A*
   1909 — stress-induced voids and film stress from wafer
   curvature.[^yue-1985][^stoney-1909]
-* Rocke and Schneegans (Siemens), *JVST B* 1988 — a refractory cap for
-  anti-reflection and hillock suppression.[^rocke-1988]
+* Rocke and Schneegans (Siemens), *JVST B* 1988 — a titanium-nitride
+  cap for anti-reflection and hillock suppression on aluminium.[^rocke-1988]
 * Ames, d'Heurle and Horstmann, 1970; Blech, 1976; Filippi, Biery and
   Wood, 1993; Nix and Arzt, 1992 — copper doping, the critical length,
   the short-length effect with tungsten barriers, and void

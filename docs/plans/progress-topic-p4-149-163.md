@@ -24,7 +24,7 @@ depend on the same TiW/TiN-cap-composition question or on how
 | X3 | Medium | deferred | metal-cap/barrier sweep — Open questions on metal-4 cap uncertainty (149, 153, 155, 160) |
 | X4 | Low | deferred | metal-cap/barrier sweep — 0.845/0.8 and 1.26/1.2 arithmetic argument |
 | 149-L1 | Low | fixed | "antenna-rule table" vs *Criteria & Assumptions* naming (149:37, 155:34, 161:31; 163:30 already said "assumptions table") |
-| 149-L2 | Low | open | Rocke & Schneegans (TiN paper) cited for a TiW cap (149, 152, 154, 161, 162) |
+| 149-L2 | Low | fixed | Rocke & Schneegans (TiN paper) cited for a TiW cap without saying so (149, 152, 154, 161, 162) — reworded to name TiN and mark the TiW analogy as inference, per the review's wording |
 | 149-L3 | Low | open | Al-Cu target/Cypress attribution missing footnote (149:158-159) |
 | 149-L4 | Low | open | Newport Fab/TSMC MiM patents — shared-electrode construction overstated (149:88-91) |
 | 150-M1 | Medium | fixed | step-name-as-evidence omission pattern (149:52-53, 150:19-22, 151:29-31); the 161 occurrence (line 51) sits inside the range findings X2/X3 concern (51-62), so left for the metal-cap sweep |
