@@ -15,8 +15,8 @@ applications (the family's *Publications* and *Also Published As*
 tables). This is close to, but not the same as, an EPO DOCDB simple
 family or an INPADOC extended family.
 
-Retrieved 2026-09-14. The index holds 207 families (1319 members in total). Every family's representative
-record page was fetched; 884 of the 1319 members have their own record page
+Retrieved 2026-09-18. The index holds 211 families (1345 members in total). Every family's representative
+record page was fetched; 1345 of the 1345 members have their own record page
 fetched (the rest are listed in the fetched family table of their
 representative but were not fetched separately — every possible term
 of those families' members has already ended, so nothing about
@@ -56,10 +56,10 @@ relation:
 
 | | Families | Members |
 |---|---|---|
-| Total | 207 | 1319 |
-| Shown as expired | 173 | 1053 |
-| Shown as in force | 32 | 243 |
-| Status unknown | 2 | 23 |
+| Total | 211 | 1345 |
+| Shown as expired | 171 | 1010 |
+| Shown as in force | 35 | 267 |
+| Status unknown | 5 | 68 |
 
 ## Other views
 

@@ -325,6 +325,10 @@ Steps 164–171.
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
 * {ref}`US 10,003,022 B2 <patent-gp54018263>` — in force
 * {ref}`US 9,431,609 B2 <patent-gp55302792>` — in force
+* {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
+* {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
+* {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
+* {ref}`KR 20250094623 A <patent-gp90721530>` — in force
 
 ## Equipment and metrology
 
@@ -381,7 +385,7 @@ Steps 164–171.
 * {ref}`US 6,136,654 A <patent-gp27361220>` — Method of forming thin silicon nitride or silicon oxynitride gate dielectrics (1996-06-07)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
-* {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
+* {ref}`US 6,170,428 B1 <patent-gp24728963>` — unknown
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 6,183,354 B1 <patent-gp24997773>` — Carrier head with a flexible membrane for a chemical mechanical polishing system (1996-11-08)
 * {ref}`US 5,812,403 A <patent-gp25007997>` — Methods and apparatus for cleaning surfaces in a substrate processing system (1996-11-13)
@@ -434,7 +438,7 @@ Steps 164–171.
 * {ref}`US 5,160,534 A <patent-gp27460980>` — Titanium-tungsten target material for sputtering and manufacturing method therefor (1990-06-15)
 * {ref}`US 5,334,332 A <patent-gp24443399>` — Cleaning compositions for removing etching residue and method of using (1990-11-05)
 * {ref}`US 5,303,558 A <patent-gp25448458>` — Thermal trap for gaseous materials (1992-07-30)
-* {ref}`US 5,578,362 A <patent-gp25461879>` — Polymeric polishing pad containing hollow polymeric microelements (1992-08-19)
+* {ref}`US 5,578,362 A <patent-gp25461879>` — unknown
 * {ref}`US 5,693,203 A <patent-gp27479272>` — Sputtering target assembly having solid-phase bonded interface (1992-09-29)
 * {ref}`US 5,442,828 A <patent-gp25529547>` — Double-sided wafer scrubber with a wet submersing silicon wafer indexer (1992-11-30)
 * {ref}`US 5,722,442 A <patent-gp46252077>` — On-site generation of ultra-high-purity buffered-HF for semiconductor processing (1994-01-07)
@@ -447,7 +451,7 @@ Steps 164–171.
 * {ref}`US 5,872,387 A <patent-gp24345606>` — Deuterium-treated semiconductor devices (1996-01-16)
 * {ref}`US 5,814,433 A <patent-gp26689885>` — Use of mixtures of ethyl lactate and N-methyl pyrollidone as an edge bead remover for photoresists (1996-05-17)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
-* {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
+* {ref}`US 6,170,428 B1 <patent-gp24728963>` — unknown
 * {ref}`US 6,183,354 B1 <patent-gp24997773>` — Carrier head with a flexible membrane for a chemical mechanical polishing system (1996-11-08)
 * {ref}`US 5,958,288 A <patent-gp25030826>` — Composition and slurry useful for metal CMP (1996-11-26)
 * {ref}`US 5,994,761 A <patent-gp25194044>` — Ideal oxygen precipitating silicon wafers and oxygen out-diffusion-less process therefor (1997-02-26)

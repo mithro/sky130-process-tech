@@ -63,7 +63,7 @@ first, and then by status.
 * {ref}`US 5,257,926 A <patent-gp25202080>` — Fast, safe, pyrogenic external torch assembly (1991-12-17)
 * {ref}`US 5,406,110 A <patent-gp25218688>` — Resurf lateral double diffused insulated gate field effect transistor (1991-12-30)
 * {ref}`US 5,303,558 A <patent-gp25448458>` — Thermal trap for gaseous materials (1992-07-30)
-* {ref}`US 5,578,362 A <patent-gp25461879>` — Polymeric polishing pad containing hollow polymeric microelements (1992-08-19)
+* {ref}`US 5,578,362 A <patent-gp25461879>` — unknown
 * {ref}`US 5,693,203 A <patent-gp27479272>` — Sputtering target assembly having solid-phase bonded interface (1992-09-29)
 * {ref}`US 5,346,578 A <patent-gp25518280>` — Induction plasma source (1992-11-04)
 * {ref}`US 5,442,828 A <patent-gp25529547>` — Double-sided wafer scrubber with a wet submersing silicon wafer indexer (1992-11-30)
@@ -101,7 +101,7 @@ first, and then by status.
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
-* {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
+* {ref}`US 6,170,428 B1 <patent-gp24728963>` — unknown
 * {ref}`US 6,033,943 A <patent-gp24820519>` — Dual gate oxide thickness integrated circuit and process for making same (1996-08-23)
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 6,183,354 B1 <patent-gp24997773>` — Carrier head with a flexible membrane for a chemical mechanical polishing system (1996-11-08)
@@ -229,10 +229,14 @@ first, and then by status.
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
+* {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
+* {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
+* {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
 
 ## 2020s
 
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
+* {ref}`KR 20250094623 A <patent-gp90721530>` — in force
 
 ## By status
 
@@ -284,7 +288,6 @@ first, and then by status.
 * {ref}`US 5,257,926 A <patent-gp25202080>` — Fast, safe, pyrogenic external torch assembly (1991-12-17)
 * {ref}`US 5,406,110 A <patent-gp25218688>` — Resurf lateral double diffused insulated gate field effect transistor (1991-12-30)
 * {ref}`US 5,303,558 A <patent-gp25448458>` — Thermal trap for gaseous materials (1992-07-30)
-* {ref}`US 5,578,362 A <patent-gp25461879>` — Polymeric polishing pad containing hollow polymeric microelements (1992-08-19)
 * {ref}`US 5,693,203 A <patent-gp27479272>` — Sputtering target assembly having solid-phase bonded interface (1992-09-29)
 * {ref}`US 5,346,578 A <patent-gp25518280>` — Induction plasma source (1992-11-04)
 * {ref}`US 5,442,828 A <patent-gp25529547>` — Double-sided wafer scrubber with a wet submersing silicon wafer indexer (1992-11-30)
@@ -322,7 +325,6 @@ first, and then by status.
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
-* {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
 * {ref}`US 6,033,943 A <patent-gp24820519>` — Dual gate oxide thickness integrated circuit and process for making same (1996-08-23)
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 6,183,354 B1 <patent-gp24997773>` — Carrier head with a flexible membrane for a chemical mechanical polishing system (1996-11-08)
@@ -445,9 +447,15 @@ first, and then by status.
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
+* {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
+* {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
+* {ref}`KR 20250094623 A <patent-gp90721530>` — in force
 
 ### Status unknown
 
+* {ref}`US 5,578,362 A <patent-gp25461879>` — unknown
+* {ref}`US 6,170,428 B1 <patent-gp24728963>` — unknown
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — unknown
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
+* {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
