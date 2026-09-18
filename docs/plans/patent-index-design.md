@@ -195,8 +195,8 @@ not evidence).
   because Google Patents routinely places such a continuation in a
   *different* family from its parent (see "Known blind spot" below). Added
   2026-09-19 per this section's own instruction to the agent who closes
-  it, once actually used (four `GP49580623`/`GP49580624`/`GP48743295`
-  families below).
+  it, once actually used (four families below: `GP49580623`,
+  `GP49580624`, `GP48743295` and `GP46465479`).
 
 A `discovery_note` records the searches (assignee, query, date limit,
 retrieval date) and the seed records through which the family was
@@ -216,8 +216,11 @@ systematically miss an estate's later continuations even when its
 original filing is in the index. Closing this gap needs a search *per
 lineage estate* — by inventor name, by title phrase, or by assignee plus
 a priority-date window — not just by following family/citation links
-from the seeds already held; add this as a discovery method alongside
-`assignee-search` once it is used.
+from the seeds already held. **Done, 2026-09-19 (round-3, L2):** this
+is now the `continuation-search` discovery method above, used for four
+families (`GP49580623`, `GP49580624`, `GP48743295`, `GP46465479`). The
+gap is not closed everywhere, only wherever a `continuation-search` has
+actually been run against a specific lineage estate.
 
 ## Page set (to be generated)
 
