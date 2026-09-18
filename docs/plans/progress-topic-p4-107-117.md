@@ -25,8 +25,8 @@ occurrence is checked and fixed if needed.
 | 107-L2 | Low | fixed | Confirmed pdk-rcx.txt:654 heads the column "Resistivity (mohms/sq)" for every row. Added the parenthetical on 107 and a pointing-back cross-reference on 108, 109, 110 and 111 (same fix as 111-L2). |
 | 107-L3 | Low | fixed | Confirmed categories/lithography.md:85-88 attributes the reading back to this page (round trip, no external evidence). Reworded per review's fix, naming the actual evidence (0.17/0.19um rules, ITRS 2001). |
 | 108-L1 | Low | fixed | Lam 10-K stays uncheckable (SEC 403, no contact address permitted, no Wayback copy) but is now paired with the retrievable lam-exelan 2001 press release already cited elsewhere on the page. |
-| 109-L1 | Low | open | AMAT PVD Metal film list omits "SiO2" from the source. Recurs 112. |
-| 109-L2 | Low | open | amat-endura 403; needs Wayback URL and 200mm-era framing reattributed. Recurs 112 (conflict 5). |
+| 109-L1 | Low | fixed | Confirmed skw-facilities.txt:113-123 lists a further film "SiO2" after "Niobium" under the same heading. Appended it to the quoted lists on 109 and 112. |
+| 109-L2 | Low | fixed | Confirmed the live page 403s (curl -A) and the Wayback capture (20260916190905) returns 200. Added the Wayback URL to the footnote on 109 and 112, and reworded both "200 mm-era" framings as an explicit reading since the source itself does not date the platform. |
 | 110-L1 | Low | open | "multi-station Altus family" — source doesn't say "multi-station" (that's the Concept One-W). |
 | 110-L2 | Low | fixed | Added [^domenicucci-1996] (Ti-AlCu-Ti lifetimes over two-level W stud structures, already the citation used for the same literature on 112/123) with the footnote definition added to the page. |
 | 110-L3 | Low | open | "qualified down to" is an unmarked reading of the PDK's CEFC value. |
