@@ -87,7 +87,7 @@ deep-dive entries per step page and twelve per category page
 
 ## Phase 4 — Review
 
-- [~] Technical accuracy review of every step page (independent agent; all twelve batches reviewed, fixed, verified and merged 2026-09-18; open: the job-listing citation sweep and the vendor-name spelling sweep) — per module batch: review report, fix branch `topic/p4-<range>`, verification of the fixes, merge
+- [~] Technical accuracy review of every step page (independent agent; all twelve batches reviewed, fixed, verified and merged 2026-09-18; job-listing citations moved to a live repost of the same listing (JOB-06; the coordinator re-fetched it and found the quotation; no archive copy could be made) and vendor spellings audited, merged 2026-09-19) — per module batch: review report, fix branch `topic/p4-<range>`, verification of the fixes, merge
   - [x] 001–013 — reviewed, 45 findings fixed (trench depth re-derived from the PDK metal-stack drawing, substrate-doping device name), 3 declined with evidence, verified and merged 2026-09-18
   - [x] 014–034 — reviewed, 23 findings fixed (a truncated patent quotation, a tool class the patent never names, an RTP uniformity figure for the wrong wafer size, the HVTPM reading kept open on 020, 023 and 024), verified and merged 2026-09-18
   - [x] 035–047 — reviewed, 51 findings fixed (PDK threshold-measurement row misread, tunnel-oxide range on the wrong patent, readings used as settled fact), 1 declined, verified with four follow-ups and merged 2026-09-18
