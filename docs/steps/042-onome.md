@@ -28,18 +28,24 @@ stops on the underlying oxide — we infer the pad oxide from
 {ref}`BOX <step-002>`, still present outside the tunnel
 windows — and the last oxide is then cleared, either here or at the
 gate-oxide pre-clean, by a wet etch. The Cypress integration patent
-describes exactly this two-stage approach: "a combination of dry and
-wet etch is performed to achieve a good stack sidewall profile. In one
-such embodiment, an inorganic spin-on anti-reflective coating (ARC),
-the blocking layer 304C, and the dielectric layers 304A and 304B are
-dry etched, with the dry etch process stopping on the sacrificial
-dielectric layer 303. In a subsequent wet etch operation, an etchant,
-such as BOE, is employed to clear sacrificial dielectric layer
-303."[^pat-03] In the other Cypress flow the "sacrificial oxide, cap
-layer 232, and the charge-trapping layer 230" are "etched or patterned
-to form a gate stack 236 overlying the channel 224 of the NVM
-transistor and to remove the sacrificial oxide, cap layer, and the
-charge trapping layers 230 from the second region 208".[^pat-04]
+describes exactly this two-stage approach, and the other Cypress flow
+the same patterning; both patents are shown as in force and their
+wording is in the collapsed note below.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+The Cypress integration patent: "a combination of dry and wet etch is
+performed to achieve a good stack sidewall profile. In one such
+embodiment, an inorganic spin-on anti-reflective coating (ARC), the
+blocking layer 304C, and the dielectric layers 304A and 304B are dry
+etched, with the dry etch process stopping on the sacrificial dielectric
+layer 303. In a subsequent wet etch operation, an etchant, such as BOE,
+is employed to clear sacrificial dielectric layer 303."[^pat-03] In the
+other Cypress flow the "sacrificial oxide, cap layer 232, and the
+charge-trapping layer 230" are "etched or patterned to form a gate stack
+236 overlying the channel 224 of the NVM transistor and to remove the
+sacrificial oxide, cap layer, and the charge trapping layers 230 from
+the second region 208".[^pat-04]
+:::
 
 This reference treats the resist strip and the pre-gate-oxide clean
 as part of this step; they could equally belong to the next,
@@ -51,12 +57,18 @@ as part of this step; they could equally belong to the next,
 etch* type: a nitride etch with an oxide etch above it and a very thin
 oxide stop below it, on the Lam 9400 / DPS "poly/nitride" class of tool
 (the assignment is inferred — see below). Its distinctive difficulty is
-the stop layer: the oxide beneath the nitride — the pad oxide, we infer
-— is 10–20 nm in the Cypress patent,[^pat-04] and the silicon under it
-will become the channel of every logic transistor. The etch is therefore
-run like a {term}`spacer` etch — a nitride etch with "selectivity to oxide" that
+the stop layer: the oxide beneath the nitride — the pad oxide, we infer,
+only tens of nanometres thick in the Cypress patent (collapsed note
+below this section) — and the silicon under it will become the channel
+of every logic transistor. The etch is therefore run like a
+{term}`spacer` etch — a nitride etch with "selectivity to oxide" that
 must "stop on a thin oxide without trenching the silicon"
 ({ref}`category-etch`) — rather than like a {term}`hard-mask <hard mask>` open.
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The pad oxide beneath the nitride is 10–20 nm in the Cypress
+patent.[^pat-04]
+:::
 
 ## Why this step exists
 
@@ -77,9 +89,10 @@ side:
   the oxide and finishing wet is how the damage is kept off the
   channel.
 * **The ONO edge must be clean.** The island sidewall is the boundary
-  along which the logic gate oxide will later grow; a "good stack
-  sidewall profile"[^pat-03] avoids nitride feet that would leave
-  stringers and re-entrant profiles that would trap resist.
+  along which the logic gate oxide will later grow; the "good stack
+  sidewall profile" the Cypress patent aims at (the collapsed note
+  above) avoids nitride feet that would leave stringers and re-entrant
+  profiles that would trap resist.
 
 Without `ONOME`, there would be no logic transistors in the ordinary
 sense — every gate would sit on ONO.
@@ -91,15 +104,15 @@ memory (SKY130's recipe is not public):
 
 1. **{term}`ARC` open (if used).** If the ONO mask carries an inorganic or
    organic ARC, it is opened first in the same chamber
-   ({ref}`TUNARCE <step-036>` describes the organic case; Cypress's
-   inorganic spin-on ARC is "dry etched" with the stack[^pat-03]).
-2. **Top oxide.** The blocking oxide (3–5 nm[^pat-03]) and any
-   sacrificial cap (2–4 nm[^pat-04]) are opened in a fluorocarbon
-   plasma (CF₄/CHF₃ with O₂ or Ar) — the chemistry that "etches oxide
-   as SiF₄ only under ion bombardment" ({ref}`category-etch`, citing
-   Flamm and Donnelly[^flamm-1981]).
-3. **Nitride.** The trapping layer — 9–11 nm in one Cypress
-   patent,[^pat-03] 70–150 Å in another[^pat-02] — is etched in CF₄/O₂,
+   ({ref}`TUNARCE <step-036>` describes the organic case; how Cypress
+   removes its inorganic spin-on ARC is in the collapsed note above).
+2. **Top oxide.** The blocking oxide and any sacrificial cap — the
+   Cypress thicknesses are in the collapsed note below this list — are
+   opened in a fluorocarbon plasma (CF₄/CHF₃ with O₂ or Ar) — the
+   chemistry that "etches oxide as SiF₄ only under ion bombardment"
+   ({ref}`category-etch`, citing Flamm and Donnelly[^flamm-1981]).
+3. **Nitride.** The trapping layer — the two Cypress ranges are in the
+   same note — is etched in CF₄/O₂,
    CHF₃/O₂ or SF₆-based chemistry tuned for {term}`selectivity` to the oxide
    below; a 1997 ASMC paper reports a nitride spacer etch "with high
    selectivity to oxide" of the kind required.[^regis-1997] {term}`Endpoint <endpoint>`
@@ -114,19 +127,14 @@ memory (SKY130's recipe is not public):
    and carries polymer residue that the wet step removes.
 5. **Bottom oxide.** The remaining (inferred) pad oxide (plus the
    fraction of a nanometre that the tunnel oxidation added[^deal-1965])
-   is removed in {term}`BOE` or dilute HF — "an etchant, such as BOE, is
-   employed to clear sacrificial dielectric layer 303"[^pat-03] —
-   exposing the logic silicon for gate oxidation. Whether this happens
-   here or as the {ref}`GOX100 <step-043>` pre-clean is not stated
-   publicly; the Cypress flows differ on it (see
-   {ref}`GOX100 <step-043>`). One Cypress patent warns that
-   once the stack is exposed, "Conventional HF-based gate insulator
-   pre-cleans will etch or otherwise degrade the quality of the ONO
-   charge trapping dielectric stack 306, particularly when the stack
-   includes a CVD formed blocking layer",[^pat-03] which is why its
-   pre-clean is "substantially free of HF"[^pat-03] while the other
-   protects the blocking oxide with a sacrificial cap that the BOE
-   removes.[^pat-04]
+   is removed in {term}`BOE` or dilute HF — the etchant the Cypress
+   patent names (collapsed note below this list) — exposing the logic
+   silicon for gate oxidation. Whether this happens here or as the
+   {ref}`GOX100 <step-043>` pre-clean is not stated publicly; the
+   Cypress flows differ on it (see {ref}`GOX100 <step-043>`). One of
+   them warns about what an HF-based pre-clean would do to an exposed
+   stack, and the other protects the blocking oxide with a sacrificial
+   cap; both passages are in that note.
 6. **All-wet alternative.** The stack could in principle be removed
    entirely wet — BOE for the top oxide, hot phosphoric acid for the
    nitride, whose selectivity to oxide was established by van Gelder
@@ -135,6 +143,20 @@ memory (SKY130's recipe is not public):
    describe the dry-then-wet route.
 7. **Inspection.** Patterned-wafer inspection for nitride residue and
    stringers at island edges; ellipsometry on monitor wafers.
+
+:::{dropdown} From patents shown as in force (US 2009/0179253, estimated expiry 2027-06-17; US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+The blocking oxide is 3–5 nm and the trapping layer 9–11 nm in one
+Cypress patent;[^pat-03] another gives the trapping layer as
+70–150 Å,[^pat-02] and the sacrificial cap is 2–4 nm.[^pat-04] The
+bottom oxide goes in "an etchant, such as BOE, … employed to clear
+sacrificial dielectric layer 303". The same patent warns that once the
+stack is exposed, "Conventional HF-based gate insulator pre-cleans will
+etch or otherwise degrade the quality of the ONO charge trapping
+dielectric stack 306, particularly when the stack includes a CVD formed
+blocking layer", which is why its pre-clean is "substantially free of
+HF";[^pat-03] the other protects the blocking oxide with a sacrificial
+cap that the BOE removes.[^pat-04]
+:::
 
 ## Machines typically used
 
@@ -177,7 +199,7 @@ memory (SKY130's recipe is not public):
   step is used.
 * **Oxygen/nitrogen/{ref}`forming gas <material-anneal-ambients>`** for the ash; **{term}`SPM`** for the wet
   strip ({ref}`category-strip`; {ref}`wet chemicals <material-wet-chemicals>`).
-* **BOE or dilute HF** for the bottom oxide;[^pat-03][^pat-04]
+* **BOE or dilute HF** for the bottom oxide (the collapsed note above);
   **hot phosphoric acid** only for the all-wet alternative.[^vgh-1967]
 * **{ref}`DI water <material-ultrapure-water>`, isopropanol, nitrogen**; {ref}`chamber consumables <material-hardware-consumables>`.
 * Gas and chemical suppliers named in SkyWater's filings: Air
