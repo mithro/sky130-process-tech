@@ -230,7 +230,21 @@ cross-references working inside the body and renders as a
 fallback if `sphinx_design` is removed, but MyST does not parse
 Markdown inside raw HTML, so references in the body would be lost.
 Grouped pages list non-expired families by number and status only,
-linking to the collapsed entry.
+linking to the collapsed entry (round-1 review finding M2: this must
+hold on every grouped page, `by-jurisdiction.md` included, which
+originally exposed a collapsed family's full member list — fixed by
+having it contribute only the representative's own row for a collapsed
+family, like every other grouped page).
+
+L2 (round-1 review, confirmed as intentional rather than a defect): the
+*collapsed dropdown's own title* (on `families.md`, the one place a
+reader can open to see the rest) additionally names the estimated expiry
+date, as the example above shows — this is deliberately more than
+"number and status" so a reader scanning the closed list on
+`families.md` can see roughly how long a family might run without
+opening it, while every *other* page still shows only the representative
+number and status word for a collapsed family, with no date, matching
+the "grouped pages … only" wording above.
 
 ### Links inside entries
 

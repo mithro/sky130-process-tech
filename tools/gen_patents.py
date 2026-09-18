@@ -193,9 +193,18 @@ def members_table(fam: dict) -> list[str]:
 
 
 def relevance_lines(fam: dict) -> list[str]:
-    out = []
+    # L12: several relevance entries often share one relation and reason
+    # word-for-word (the same explanation applies to every step of a
+    # module, say) — group them onto one bullet with every target linked,
+    # in the order each (relation, reason) pair first appears, instead of
+    # repeating the sentence once per target.
+    groups: dict[tuple[str, str], list[str]] = {}
     for r in fam["relevance"]:
-        out.append(f"* {{ref}}`{r['target']}` — *{RELATION_NAME[r['relation']]}*: {esc(r['reason'])}")
+        groups.setdefault((r["relation"], r["reason"]), []).append(r["target"])
+    out = []
+    for (relation, reason), targets in groups.items():
+        refs = ", ".join(f"{{ref}}`{t}`" for t in targets)
+        out.append(f"* {refs} — *{RELATION_NAME[relation]}*: {esc(reason)}")
     return out
 
 

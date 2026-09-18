@@ -372,9 +372,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-anneal` — *cited on this page*: Cited on this page as PAT-RTP-TAMARACK; the inventory describes it as: An early lamp-heating apparatus for wafer annealing.
-* {ref}`machine-rapid-thermal-processor` — *cited on this page*: Cited on this page as PAT-RTP-TAMARACK; the inventory describes it as: An early lamp-heating apparatus for wafer annealing.
-* {ref}`step-034` — *cited on this page*: Cited on this page as PAT-RTP-TAMARACK; the inventory describes it as: An early lamp-heating apparatus for wafer annealing.
+* {ref}`category-anneal`, {ref}`machine-rapid-thermal-processor`, {ref}`step-034` — *cited on this page*: Cited on this page as PAT-RTP-TAMARACK; the inventory describes it as: An early lamp-heating apparatus for wafer annealing.
 
 **Inventory:** `PAT-RTP-TAMARACK`
 
@@ -553,8 +551,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-101` — *cited on this page*: Cited on this page as PAT-LI-TI-HOLLOWAY; the inventory describes it as: The process for patterning local interconnects.
-* {ref}`step-103` — *cited on this page*: Cited on this page as PAT-LI-TI-HOLLOWAY; the inventory describes it as: The process for patterning local interconnects.
+* {ref}`step-101`, {ref}`step-103` — *cited on this page*: Cited on this page as PAT-LI-TI-HOLLOWAY; the inventory describes it as: The process for patterning local interconnects.
 
 **Inventory:** `PAT-LI-TI-HOLLOWAY`
 
@@ -747,15 +744,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-cmp` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
-* {ref}`step-090` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
-* {ref}`step-106` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
-* {ref}`step-111` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
-* {ref}`step-116` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
-* {ref}`step-122` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
-* {ref}`step-127` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
-* {ref}`step-133` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
-* {ref}`step-148` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
+* {ref}`category-cmp`, {ref}`step-090`, {ref}`step-106`, {ref}`step-111`, {ref}`step-116`, {ref}`step-122`, {ref}`step-127`, {ref}`step-133`, {ref}`step-148` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1988; the inventory describes it as: Coplanar multi-level metal/insulator films by polishing, with lines and stud vias formed together.
 
 **Inventory:** `PAT-CMP-IBM-1988`
 
@@ -797,15 +786,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-cmp` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
-* {ref}`step-090` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
-* {ref}`step-106` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
-* {ref}`step-111` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
-* {ref}`step-116` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
-* {ref}`step-122` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
-* {ref}`step-127` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
-* {ref}`step-133` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
-* {ref}`step-148` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
+* {ref}`category-cmp`, {ref}`step-090`, {ref}`step-106`, {ref}`step-111`, {ref}`step-116`, {ref}`step-122`, {ref}`step-127`, {ref}`step-133`, {ref}`step-148` — *cited on this page*: Cited on this page as PAT-CMP-IBM-1990; the inventory describes it as: The foundational metal/insulator CMP patent.
 
 **Inventory:** `PAT-CMP-IBM-1990`
 
@@ -839,12 +820,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`mask-pwbm` — *cited on this page*: Cited on this page as PAT-TWIN-HARRIS, a patent titled "Process for forming twin well CMOS integrated circuits".
-* {ref}`step-018` — *cited on this page*: Cited on this page as PAT-TWIN-HARRIS, a patent titled "Process for forming twin well CMOS integrated circuits".
-* {ref}`step-019` — *cited on this page*: Cited on this page as PAT-TWIN-HARRIS, a patent titled "Process for forming twin well CMOS integrated circuits".
-* {ref}`step-026` — *cited on this page*: Cited on this page as PAT-TWIN-HARRIS, a patent titled "Process for forming twin well CMOS integrated circuits".
-* {ref}`step-027` — *cited on this page*: Cited on this page as PAT-TWIN-HARRIS, a patent titled "Process for forming twin well CMOS integrated circuits".
-* {ref}`step-028` — *cited on this page*: Cited on this page as PAT-TWIN-HARRIS, a patent titled "Process for forming twin well CMOS integrated circuits".
+* {ref}`mask-pwbm`, {ref}`step-018`, {ref}`step-019`, {ref}`step-026`, {ref}`step-027`, {ref}`step-028` — *cited on this page*: Cited on this page as PAT-TWIN-HARRIS, a patent titled "Process for forming twin well CMOS integrated circuits".
 
 **Inventory:** `PAT-TWIN-HARRIS`
 
@@ -877,8 +853,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-plasma-etcher-metal` — *cited on this page*: Cited on this page as PAT-TIN-ETCH-TI; the inventory describes it as: A fluorine-deficient plasma etch of TiN selective to titanium silicide.
-* {ref}`step-103` — *cited on this page*: Cited on this page as PAT-TIN-ETCH-TI; the inventory describes it as: A fluorine-deficient plasma etch of TiN selective to titanium silicide.
+* {ref}`machine-plasma-etcher-metal`, {ref}`step-103` — *cited on this page*: Cited on this page as PAT-TIN-ETCH-TI; the inventory describes it as: A fluorine-deficient plasma etch of TiN selective to titanium silicide.
 
 **Inventory:** `PAT-TIN-ETCH-TI`
 
@@ -954,9 +929,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-159` — *cited on this page*: Cited on this page as PAT-SLOPED-MOTOROLA; the inventory describes it as: Sloped contact walls made by alternating oxide and resist etching, for metal step coverage.
-* {ref}`step-160` — *cited on this page*: Cited on this page as PAT-SLOPED-MOTOROLA; the inventory describes it as: Sloped contact walls made by alternating oxide and resist etching, for metal step coverage.
-* {ref}`step-161` — *cited on this page*: Cited on this page as PAT-SLOPED-MOTOROLA; the inventory describes it as: Sloped contact walls made by alternating oxide and resist etching, for metal step coverage.
+* {ref}`step-159`, {ref}`step-160`, {ref}`step-161` — *cited on this page*: Cited on this page as PAT-SLOPED-MOTOROLA; the inventory describes it as: Sloped contact walls made by alternating oxide and resist etching, for metal step coverage.
 
 **Inventory:** `PAT-SLOPED-MOTOROLA`
 
@@ -1246,10 +1219,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-plasma-etcher-metal` — *cited on this page*: Cited on this page as PAT-TAPER-ATT; the inventory describes it as: Tapered aluminium etching with CHF₃ and Cl₂, the pre-planarisation alternative to a vertical profile.
-* {ref}`step-125` — *cited on this page*: Cited on this page as PAT-TAPER-ATT; the inventory describes it as: Tapered aluminium etching with CHF₃ and Cl₂, the pre-planarisation alternative to a vertical profile.
-* {ref}`step-140` — *cited on this page*: Cited on this page as PAT-TAPER-ATT; the inventory describes it as: Tapered aluminium etching with CHF₃ and Cl₂, the pre-planarisation alternative to a vertical profile.
-* {ref}`step-163` — *cited on this page*: Cited on this page as PAT-TAPER-ATT; the inventory describes it as: Tapered aluminium etching with CHF₃ and Cl₂, the pre-planarisation alternative to a vertical profile.
+* {ref}`machine-plasma-etcher-metal`, {ref}`step-125`, {ref}`step-140`, {ref}`step-163` — *cited on this page*: Cited on this page as PAT-TAPER-ATT; the inventory describes it as: Tapered aluminium etching with CHF₃ and Cl₂, the pre-planarisation alternative to a vertical profile.
 
 **Inventory:** `PAT-TAPER-ATT`
 
@@ -1296,23 +1266,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-etch` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`machines-index` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`machine-plasma-etcher-metal` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`machine-plasma-etcher-silicon` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-005` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-062` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-103` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-108` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-114` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-119` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-125` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-130` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-138` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-140` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-153` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-155` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
-* {ref}`step-163` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
+* {ref}`category-etch`, {ref}`machines-index`, {ref}`machine-plasma-etcher-metal`, {ref}`machine-plasma-etcher-silicon`, {ref}`step-005`, {ref}`step-062`, {ref}`step-103`, {ref}`step-108`, {ref}`step-114`, {ref}`step-119`, {ref}`step-125`, {ref}`step-130`, {ref}`step-138`, {ref}`step-140`, {ref}`step-153`, {ref}`step-155`, {ref}`step-163` — *cited on this page*: Cited on this page as PAT-TCP-LAM; the inventory describes it as: The transformer-coupled planar plasma source behind the Lam TCP 9400 family.
 
 **Inventory:** `PAT-TCP-LAM`
 
@@ -1360,10 +1314,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-tungsten-cvd` — *cited on this page*: Cited on this page as PAT-WCVD-AMAT; the inventory describes it as: An early process patent for CVD tungsten deposition on semiconductor wafers.
-* {ref}`step-121` — *cited on this page*: Cited on this page as PAT-WCVD-AMAT; the inventory describes it as: An early process patent for CVD tungsten deposition on semiconductor wafers.
-* {ref}`step-132` — *cited on this page*: Cited on this page as PAT-WCVD-AMAT; the inventory describes it as: An early process patent for CVD tungsten deposition on semiconductor wafers.
-* {ref}`step-147` — *cited on this page*: Cited on this page as PAT-WCVD-AMAT; the inventory describes it as: An early process patent for CVD tungsten deposition on semiconductor wafers.
+* {ref}`machine-tungsten-cvd`, {ref}`step-121`, {ref}`step-132`, {ref}`step-147` — *cited on this page*: Cited on this page as PAT-WCVD-AMAT; the inventory describes it as: An early process patent for CVD tungsten deposition on semiconductor wafers.
 
 **Inventory:** `PAT-WCVD-AMAT`
 
@@ -1440,15 +1391,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-anneal` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
-* {ref}`machines-index` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
-* {ref}`machine-rapid-thermal-processor` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
-* {ref}`step-034` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
-* {ref}`step-063` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
-* {ref}`step-075` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
-* {ref}`step-088` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
-* {ref}`step-092` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
-* {ref}`step-098` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
+* {ref}`category-anneal`, {ref}`machines-index`, {ref}`machine-rapid-thermal-processor`, {ref}`step-034`, {ref}`step-063`, {ref}`step-075`, {ref}`step-088`, {ref}`step-092`, {ref}`step-098` — *cited on this page*: Cited on this page as PAT-RTP-AMAT; the inventory describes it as: A lamp-heated single-wafer RTP chamber design.
 
 **Inventory:** `PAT-RTP-AMAT`
 
@@ -1561,17 +1504,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-deposition` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`machine-pvd-cluster-tool` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`materials-index` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`material-sputter-targets` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`step-112` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`step-123` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`step-134` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`step-136` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`step-149` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`step-151` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
-* {ref}`step-161` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
+* {ref}`category-deposition`, {ref}`machine-pvd-cluster-tool`, {ref}`materials-index`, {ref}`material-sputter-targets`, {ref}`step-112`, {ref}`step-123`, {ref}`step-134`, {ref}`step-136`, {ref}`step-149`, {ref}`step-151`, {ref}`step-161` — *cited on this page*: Cited on this page as PAT-TIW-HITACHI; the inventory describes it as: The 10 wt.% Ti composition of Ti:W sputter targets.
 
 **Inventory:** `PAT-TIW-HITACHI`
 
@@ -1658,8 +1591,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-wet-bench` — *cited on this page*: Cited on this page as PAT-EKC-HYDROXYLAMINE; the inventory describes it as: Resist and etch-residue removers of hydroxylamine and an alkanolamine, with a chelating agent such as 1,2-dihydroxybenzene.
-* {ref}`material-wet-chemicals` — *cited on this page*: Cited on this page as PAT-EKC-HYDROXYLAMINE; the inventory describes it as: Resist and etch-residue removers of hydroxylamine and an alkanolamine, with a chelating agent such as 1,2-dihydroxybenzene.
+* {ref}`machine-wet-bench`, {ref}`material-wet-chemicals` — *cited on this page*: Cited on this page as PAT-EKC-HYDROXYLAMINE; the inventory describes it as: Resist and etch-residue removers of hydroxylamine and an alkanolamine, with a chelating agent such as 1,2-dihydroxybenzene.
 
 **Inventory:** `PAT-EKC-HYDROXYLAMINE`
 
@@ -1818,9 +1750,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-030` — *cited on this page*: Cited on this page as PAT-RESURF-TI; the inventory describes it as: A RESURF lateral DMOS with an implanted drift region.
-* {ref}`step-031` — *cited on this page*: Cited on this page as PAT-RESURF-TI; the inventory describes it as: A RESURF lateral DMOS with an implanted drift region.
-* {ref}`step-032` — *cited on this page*: Cited on this page as PAT-RESURF-TI; the inventory describes it as: A RESURF lateral DMOS with an implanted drift region.
+* {ref}`step-030`, {ref}`step-031`, {ref}`step-032` — *cited on this page*: Cited on this page as PAT-RESURF-TI; the inventory describes it as: A RESURF lateral DMOS with an implanted drift region.
 
 **Inventory:** `PAT-RESURF-TI`
 
@@ -1853,9 +1783,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-lpcvd` — *cited on this page*: Cited on this page as PAT-NH4CL-VLSI, a patent titled "Thermal trap for gaseous materials".
-* {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-NH4CL-VLSI, a patent titled "Thermal trap for gaseous materials".
-* {ref}`material-precursors` — *cited on this page*: Cited on this page as PAT-NH4CL-VLSI, a patent titled "Thermal trap for gaseous materials".
+* {ref}`machine-vertical-furnace-lpcvd`, {ref}`material-hardware-consumables`, {ref}`material-precursors` — *cited on this page*: Cited on this page as PAT-NH4CL-VLSI, a patent titled "Thermal trap for gaseous materials".
 
 **Inventory:** `PAT-NH4CL-VLSI`
 
@@ -1993,8 +1921,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-hdp-cvd` — *cited on this page*: Cited on this page as PAT-ICP-NOVELLUS, a patent titled "Induction plasma source".
-* {ref}`machine-pvd-cluster-tool` — *cited on this page*: Cited on this page as PAT-ICP-NOVELLUS, a patent titled "Induction plasma source".
+* {ref}`machine-hdp-cvd`, {ref}`machine-pvd-cluster-tool` — *cited on this page*: Cited on this page as PAT-ICP-NOVELLUS, a patent titled "Induction plasma source".
 
 **Inventory:** `PAT-ICP-NOVELLUS`
 
@@ -2028,9 +1955,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-post-cmp-cleaner` — *cited on this page*: Cited on this page as PAT-SCRUBBER-ONTRAK, a patent titled "Double-sided wafer scrubber with a wet submersing silicon wafer indexer".
-* {ref}`material-cmp-consumables` — *cited on this page*: Cited on this page as PAT-SCRUBBER-ONTRAK, a patent titled "Double-sided wafer scrubber with a wet submersing silicon wafer indexer".
-* {ref}`material-ultrapure-water` — *cited on this page*: Cited on this page as PAT-SCRUBBER-ONTRAK, a patent titled "Double-sided wafer scrubber with a wet submersing silicon wafer indexer".
+* {ref}`machine-post-cmp-cleaner`, {ref}`material-cmp-consumables`, {ref}`material-ultrapure-water` — *cited on this page*: Cited on this page as PAT-SCRUBBER-ONTRAK, a patent titled "Double-sided wafer scrubber with a wet submersing silicon wafer indexer".
 
 **Inventory:** `PAT-SCRUBBER-ONTRAK`
 
@@ -2063,9 +1988,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-159` — *cited on this page*: Cited on this page as PAT-TAPER-CHARTERED; the inventory describes it as: A tapered via profile made by three-dimensional resist pull-back.
-* {ref}`step-160` — *cited on this page*: Cited on this page as PAT-TAPER-CHARTERED; the inventory describes it as: A tapered via profile made by three-dimensional resist pull-back.
-* {ref}`step-161` — *cited on this page*: Cited on this page as PAT-TAPER-CHARTERED; the inventory describes it as: A tapered via profile made by three-dimensional resist pull-back.
+* {ref}`step-159`, {ref}`step-160`, {ref}`step-161` — *cited on this page*: Cited on this page as PAT-TAPER-CHARTERED; the inventory describes it as: A tapered via profile made by three-dimensional resist pull-back.
 
 **Inventory:** `PAT-TAPER-CHARTERED`
 
@@ -2137,8 +2060,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-066` — *cited on this page*: Cited on this page as PAT-HALO-GOLDSTAR; the inventory describes it as: An LDD transistor with a halo punch-through stopper made without extra masks.
-* {ref}`step-073` — *cited on this page*: Cited on this page as PAT-HALO-GOLDSTAR; the inventory describes it as: An LDD transistor with a halo punch-through stopper made without extra masks.
+* {ref}`step-066`, {ref}`step-073` — *cited on this page*: Cited on this page as PAT-HALO-GOLDSTAR; the inventory describes it as: An LDD transistor with a halo punch-through stopper made without extra masks.
 
 **Inventory:** `PAT-HALO-GOLDSTAR`
 
@@ -2171,10 +2093,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-medium-current-implanter` — *cited on this page*: Cited on this page as PAT-QUAD-TSMC; the inventory describes it as: Multiple tilted-angle implantation with wafer rotation for LDD devices.
-* {ref}`step-066` — *cited on this page*: Cited on this page as PAT-QUAD-TSMC; the inventory describes it as: Multiple tilted-angle implantation with wafer rotation for LDD devices.
-* {ref}`step-069` — *cited on this page*: Cited on this page as PAT-QUAD-TSMC; the inventory describes it as: Multiple tilted-angle implantation with wafer rotation for LDD devices.
-* {ref}`step-073` — *cited on this page*: Cited on this page as PAT-QUAD-TSMC; the inventory describes it as: Multiple tilted-angle implantation with wafer rotation for LDD devices.
+* {ref}`machine-medium-current-implanter`, {ref}`step-066`, {ref}`step-069`, {ref}`step-073` — *cited on this page*: Cited on this page as PAT-QUAD-TSMC; the inventory describes it as: Multiple tilted-angle implantation with wafer rotation for LDD devices.
 
 **Inventory:** `PAT-QUAD-TSMC`
 
@@ -2320,18 +2239,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-cmp` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`machine-cmp-polisher` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-090` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-100` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-111` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-116` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-122` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-127` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-133` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-142` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-148` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
-* {ref}`step-157` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
+* {ref}`category-cmp`, {ref}`machine-cmp-polisher`, {ref}`step-090`, {ref}`step-100`, {ref}`step-111`, {ref}`step-116`, {ref}`step-122`, {ref}`step-127`, {ref}`step-133`, {ref}`step-142`, {ref}`step-148`, {ref}`step-157` — *cited on this page*: Cited on this page as PAT-CMP-ENDPOINT-IBM; the inventory describes it as: In-situ optical endpoint detection through a window in the platen.
 
 **Inventory:** `PAT-CMP-ENDPOINT-IBM`
 
@@ -2403,14 +2311,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-strip` — *cited on this page*: Cited on this page as PAT-ASHER-FUSION; the inventory describes it as: A downstream microwave asher design.
-* {ref}`machine-downstream-plasma-asher` — *cited on this page*: Cited on this page as PAT-ASHER-FUSION; the inventory describes it as: A downstream microwave asher design.
-* {ref}`machines-index` — *cited on this page*: Cited on this page as PAT-ASHER-FUSION; the inventory describes it as: A downstream microwave asher design.
-* {ref}`step-054` — *cited on this page*: Cited on this page as PAT-ASHER-FUSION; the inventory describes it as: A downstream microwave asher design.
-* {ref}`step-067` — *cited on this page*: Cited on this page as PAT-ASHER-FUSION; the inventory describes it as: A downstream microwave asher design.
-* {ref}`step-070` — *cited on this page*: Cited on this page as PAT-ASHER-FUSION; the inventory describes it as: A downstream microwave asher design.
-* {ref}`step-084` — *cited on this page*: Cited on this page as PAT-ASHER-FUSION; the inventory describes it as: A downstream microwave asher design.
-* {ref}`step-087` — *cited on this page*: Cited on this page as PAT-ASHER-FUSION; the inventory describes it as: A downstream microwave asher design.
+* {ref}`category-strip`, {ref}`machine-downstream-plasma-asher`, {ref}`machines-index`, {ref}`step-054`, {ref}`step-067`, {ref}`step-070`, {ref}`step-084`, {ref}`step-087` — *cited on this page*: Cited on this page as PAT-ASHER-FUSION; the inventory describes it as: A downstream microwave asher design.
 
 **Inventory:** `PAT-ASHER-FUSION`
 
@@ -2443,11 +2344,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-implant` — *cited on this page*: Cited on this page as PAT-UMC-DC; the inventory describes it as: Retrograde well by "double charge … P++ … at an energy within a range from about 380 keV to about 400 keV" on a medium-current implanter.
-* {ref}`machine-high-energy-implanter` — *cited on this page*: Cited on this page as PAT-UMC-DC; the inventory describes it as: Retrograde well by "double charge … P++ … at an energy within a range from about 380 keV to about 400 keV" on a medium-current implanter.
-* {ref}`machine-medium-current-implanter` — *cited on this page*: Cited on this page as PAT-UMC-DC; the inventory describes it as: Retrograde well by "double charge … P++ … at an energy within a range from about 380 keV to about 400 keV" on a medium-current implanter.
-* {ref}`step-018` — *cited on this page*: Cited on this page as PAT-UMC-DC; the inventory describes it as: Retrograde well by "double charge … P++ … at an energy within a range from about 380 keV to about 400 keV" on a medium-current implanter.
-* {ref}`step-019` — *cited on this page*: Cited on this page as PAT-UMC-DC; the inventory describes it as: Retrograde well by "double charge … P++ … at an energy within a range from about 380 keV to about 400 keV" on a medium-current implanter.
+* {ref}`category-implant`, {ref}`machine-high-energy-implanter`, {ref}`machine-medium-current-implanter`, {ref}`step-018`, {ref}`step-019` — *cited on this page*: Cited on this page as PAT-UMC-DC; the inventory describes it as: Retrograde well by "double charge … P++ … at an energy within a range from about 380 keV to about 400 keV" on a medium-current implanter.
 
 **Inventory:** `PAT-UMC-DC`
 
@@ -2547,22 +2444,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-etch` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`machines-index` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`machine-plasma-etcher-metal` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`machine-plasma-etcher-silicon` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-062` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-094` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-108` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-114` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-119` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-125` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-130` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-138` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-140` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-153` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-155` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
-* {ref}`step-163` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
+* {ref}`category-etch`, {ref}`machines-index`, {ref}`machine-plasma-etcher-metal`, {ref}`machine-plasma-etcher-silicon`, {ref}`step-062`, {ref}`step-094`, {ref}`step-108`, {ref}`step-114`, {ref}`step-119`, {ref}`step-125`, {ref}`step-130`, {ref}`step-138`, {ref}`step-140`, {ref}`step-153`, {ref}`step-155`, {ref}`step-163` — *cited on this page*: Cited on this page as PAT-DPS-AMAT; the inventory describes it as: The multi-section RF coil and isolated lid of the DPS reactor.
 
 **Inventory:** `PAT-DPS-AMAT`
 
@@ -2629,10 +2511,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-high-current-implanter` — *cited on this page*: Cited on this page as PAT-SDS-ATMI, a patent titled "Storage and delivery system for gaseous hydride, halide, and organometallic group V compounds".
-* {ref}`machine-high-energy-implanter` — *cited on this page*: Cited on this page as PAT-SDS-ATMI, a patent titled "Storage and delivery system for gaseous hydride, halide, and organometallic group V compounds".
-* {ref}`machine-medium-current-implanter` — *cited on this page*: Cited on this page as PAT-SDS-ATMI, a patent titled "Storage and delivery system for gaseous hydride, halide, and organometallic group V compounds".
-* {ref}`material-dopant-sources` — *cited on this page*: Cited on this page as PAT-SDS-ATMI, a patent titled "Storage and delivery system for gaseous hydride, halide, and organometallic group V compounds".
+* {ref}`machine-high-current-implanter`, {ref}`machine-high-energy-implanter`, {ref}`machine-medium-current-implanter`, {ref}`material-dopant-sources` — *cited on this page*: Cited on this page as PAT-SDS-ATMI, a patent titled "Storage and delivery system for gaseous hydride, halide, and organometallic group V compounds".
 
 **Inventory:** `PAT-SDS-ATMI`
 
@@ -2687,20 +2566,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-cmp-polisher` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`material-cmp-consumables` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-012` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-090` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-100` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-106` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-111` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-116` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-122` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-127` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-133` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-142` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-148` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
-* {ref}`step-157` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
+* {ref}`machine-cmp-polisher`, {ref}`material-cmp-consumables`, {ref}`step-012`, {ref}`step-090`, {ref}`step-100`, {ref}`step-106`, {ref}`step-111`, {ref}`step-116`, {ref}`step-122`, {ref}`step-127`, {ref}`step-133`, {ref}`step-142`, {ref}`step-148`, {ref}`step-157` — *cited on this page*: Cited on this page as PAT-CMP-WINDOW; the inventory describes it as: A transparent window in the pad for in-situ optical endpoint detection.
 
 **Inventory:** `PAT-CMP-WINDOW`
 
@@ -2887,8 +2753,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-oxidation` — *cited on this page*: Cited on this page as PAT-VF-INSULATION-TEL, a patent titled "Vertical heat treatment apparatus".
-* {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-VF-INSULATION-TEL, a patent titled "Vertical heat treatment apparatus".
+* {ref}`machine-vertical-furnace-oxidation`, {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-VF-INSULATION-TEL, a patent titled "Vertical heat treatment apparatus".
 
 **Inventory:** `PAT-VF-INSULATION-TEL`
 
@@ -2923,8 +2788,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-oxidation` — *cited on this page*: Cited on this page as PAT-BOAT-TEL; the inventory describes it as: A vertical-furnace boat with annular ring supports so that "a surface defect called a slip generated when the wafer is heat treated can be eliminated".
-* {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-BOAT-TEL; the inventory describes it as: A vertical-furnace boat with annular ring supports so that "a surface defect called a slip generated when the wafer is heat treated can be eliminated".
+* {ref}`machine-vertical-furnace-oxidation`, {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-BOAT-TEL; the inventory describes it as: A vertical-furnace boat with annular ring supports so that "a surface defect called a slip generated when the wafer is heat treated can be eliminated".
 
 **Inventory:** `PAT-BOAT-TEL`
 
@@ -2962,9 +2826,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-135` — *cited on this page*: Cited on this page as PAT-MIM-IBM; the inventory describes it as: A precision analogue metal–metal capacitor with a damascene bottom plate.
-* {ref}`step-136` — *cited on this page*: Cited on this page as PAT-MIM-IBM; the inventory describes it as: A precision analogue metal–metal capacitor with a damascene bottom plate.
-* {ref}`step-137` — *cited on this page*: Cited on this page as PAT-MIM-IBM; the inventory describes it as: A precision analogue metal–metal capacitor with a damascene bottom plate.
+* {ref}`step-135`, {ref}`step-136`, {ref}`step-137` — *cited on this page*: Cited on this page as PAT-MIM-IBM; the inventory describes it as: A precision analogue metal–metal capacitor with a damascene bottom plate.
 
 **Inventory:** `PAT-MIM-IBM`
 
@@ -3013,20 +2875,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-cmp-polisher` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`machines-index` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-012` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-090` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-100` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-106` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-111` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-116` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-122` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-127` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-133` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-142` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-148` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
-* {ref}`step-157` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
+* {ref}`machine-cmp-polisher`, {ref}`machines-index`, {ref}`step-012`, {ref}`step-090`, {ref}`step-100`, {ref}`step-106`, {ref}`step-111`, {ref}`step-116`, {ref}`step-122`, {ref}`step-127`, {ref}`step-133`, {ref}`step-142`, {ref}`step-148`, {ref}`step-157` — *cited on this page*: Cited on this page as PAT-CMP-MIRRA; the inventory describes it as: The multi-platen "continuous processing" CMP architecture of the Mirra family.
 
 **Inventory:** `PAT-CMP-MIRRA`
 
@@ -3128,8 +2977,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-lpcvd` — *cited on this page*: Cited on this page as PAT-LPCVD-KOKUSAI, a patent titled "Vertical furnace of a semiconductor manufacturing apparatus and a boat cover thereof".
-* {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-LPCVD-KOKUSAI, a patent titled "Vertical furnace of a semiconductor manufacturing apparatus and a boat cover thereof".
+* {ref}`machine-vertical-furnace-lpcvd`, {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-LPCVD-KOKUSAI, a patent titled "Vertical furnace of a semiconductor manufacturing apparatus and a boat cover thereof".
 
 **Inventory:** `PAT-LPCVD-KOKUSAI`
 
@@ -3173,9 +3021,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-anneal` — *cited on this page*: Cited on this page as PAT-DEUTERIUM-UIUC, a patent titled "Deuterium-treated semiconductor devices".
-* {ref}`material-anneal-ambients` — *cited on this page*: Cited on this page as PAT-DEUTERIUM-UIUC, a patent titled "Deuterium-treated semiconductor devices".
-* {ref}`step-170` — *cited on this page*: Cited on this page as PAT-DEUTERIUM-UIUC, a patent titled "Deuterium-treated semiconductor devices".
+* {ref}`machine-vertical-furnace-anneal`, {ref}`material-anneal-ambients`, {ref}`step-170` — *cited on this page*: Cited on this page as PAT-DEUTERIUM-UIUC, a patent titled "Deuterium-treated semiconductor devices".
 
 **Inventory:** `PAT-DEUTERIUM-UIUC`
 
@@ -3251,8 +3097,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-066` — *cited on this page*: Cited on this page as PAT-HALO-CHARTERED; the inventory describes it as: A self-aligned halo process designed to limit the junction-capacitance penalty.
-* {ref}`step-073` — *cited on this page*: Cited on this page as PAT-HALO-CHARTERED; the inventory describes it as: A self-aligned halo process designed to limit the junction-capacitance penalty.
+* {ref}`step-066`, {ref}`step-073` — *cited on this page*: Cited on this page as PAT-HALO-CHARTERED; the inventory describes it as: A self-aligned halo process designed to limit the junction-capacitance penalty.
 
 **Inventory:** `PAT-HALO-CHARTERED`
 
@@ -3393,8 +3238,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-high-current-implanter` — *cited on this page*: Cited on this page as PAT-DOSE-EATON, a patent titled "Dose control for use in an ion implanter".
-* {ref}`machine-high-energy-implanter` — *cited on this page*: Cited on this page as PAT-DOSE-EATON, a patent titled "Dose control for use in an ion implanter".
+* {ref}`machine-high-current-implanter`, {ref}`machine-high-energy-implanter` — *cited on this page*: Cited on this page as PAT-DOSE-EATON, a patent titled "Dose control for use in an ion implanter".
 
 **Inventory:** `PAT-DOSE-EATON`
 
@@ -3427,9 +3271,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-pvd-cluster-tool` — *cited on this page*: Cited on this page as PAT-IMP-COIL-AMAT, a patent titled "Avoiding contamination from induction coil in ionized sputtering".
-* {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-IMP-COIL-AMAT, a patent titled "Avoiding contamination from induction coil in ionized sputtering".
-* {ref}`material-sputter-targets` — *cited on this page*: Cited on this page as PAT-IMP-COIL-AMAT, a patent titled "Avoiding contamination from induction coil in ionized sputtering".
+* {ref}`machine-pvd-cluster-tool`, {ref}`material-hardware-consumables`, {ref}`material-sputter-targets` — *cited on this page*: Cited on this page as PAT-IMP-COIL-AMAT, a patent titled "Avoiding contamination from induction coil in ionized sputtering".
 
 **Inventory:** `PAT-IMP-COIL-AMAT`
 
@@ -3474,8 +3316,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-hdp-cvd` — *cited on this page*: Cited on this page as PAT-HDP-REACTOR-AMAT, a patent titled "Symmetric tunable inductively coupled HDP-CVD reactor".
-* {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-HDP-REACTOR-AMAT, a patent titled "Symmetric tunable inductively coupled HDP-CVD reactor".
+* {ref}`machine-hdp-cvd`, {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-HDP-REACTOR-AMAT, a patent titled "Symmetric tunable inductively coupled HDP-CVD reactor".
 
 **Inventory:** `PAT-HDP-REACTOR-AMAT`
 
@@ -3546,18 +3387,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-strip` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`machine-downstream-plasma-asher` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-016` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-021` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-025` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-029` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-033` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-054` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-067` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-074` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-084` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
-* {ref}`step-087` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
+* {ref}`category-strip`, {ref}`machine-downstream-plasma-asher`, {ref}`step-016`, {ref}`step-021`, {ref}`step-025`, {ref}`step-029`, {ref}`step-033`, {ref}`step-054`, {ref}`step-067`, {ref}`step-074`, {ref}`step-084`, {ref}`step-087` — *cited on this page*: Cited on this page as PAT-STRIP-ULVAC; the inventory describes it as: A cold stripping and cleaning process for implanted resist, an alternative to hot ashing.
 
 **Inventory:** `PAT-STRIP-ULVAC`
 
@@ -3623,8 +3453,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-cmp-polisher` — *cited on this page*: Cited on this page as PAT-CARRIER-AMAT; the inventory describes it as: Why a non-uniform carrier load gives non-uniform removal, and a carrier head with a flexure-mounted flexible membrane, gimbal and retaining ring.
-* {ref}`material-cmp-consumables` — *cited on this page*: Cited on this page as PAT-CARRIER-AMAT; the inventory describes it as: Why a non-uniform carrier load gives non-uniform removal, and a carrier head with a flexure-mounted flexible membrane, gimbal and retaining ring.
+* {ref}`machine-cmp-polisher`, {ref}`material-cmp-consumables` — *cited on this page*: Cited on this page as PAT-CARRIER-AMAT; the inventory describes it as: Why a non-uniform carrier load gives non-uniform removal, and a carrier head with a flexure-mounted flexible membrane, gimbal and retaining ring.
 
 **Inventory:** `PAT-CARRIER-AMAT`
 
@@ -3702,13 +3531,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-cmp-polisher` — *cited on this page*: Cited on this page as PAT-CMP-CABOT; the inventory describes it as: A peroxide/ferric-catalyst tungsten slurry.
-* {ref}`material-cmp-consumables` — *cited on this page*: Cited on this page as PAT-CMP-CABOT; the inventory describes it as: A peroxide/ferric-catalyst tungsten slurry.
-* {ref}`materials-index` — *cited on this page*: Cited on this page as PAT-CMP-CABOT; the inventory describes it as: A peroxide/ferric-catalyst tungsten slurry.
-* {ref}`step-111` — *cited on this page*: Cited on this page as PAT-CMP-CABOT; the inventory describes it as: A peroxide/ferric-catalyst tungsten slurry.
-* {ref}`step-122` — *cited on this page*: Cited on this page as PAT-CMP-CABOT; the inventory describes it as: A peroxide/ferric-catalyst tungsten slurry.
-* {ref}`step-133` — *cited on this page*: Cited on this page as PAT-CMP-CABOT; the inventory describes it as: A peroxide/ferric-catalyst tungsten slurry.
-* {ref}`step-148` — *cited on this page*: Cited on this page as PAT-CMP-CABOT; the inventory describes it as: A peroxide/ferric-catalyst tungsten slurry.
+* {ref}`machine-cmp-polisher`, {ref}`material-cmp-consumables`, {ref}`materials-index`, {ref}`step-111`, {ref}`step-122`, {ref}`step-133`, {ref}`step-148` — *cited on this page*: Cited on this page as PAT-CMP-CABOT; the inventory describes it as: A peroxide/ferric-catalyst tungsten slurry.
 
 **Inventory:** `PAT-CMP-CABOT`
 
@@ -3742,15 +3565,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-anneal` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
-* {ref}`step-015` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
-* {ref}`step-020` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
-* {ref}`step-023` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
-* {ref}`step-024` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
-* {ref}`step-028` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
-* {ref}`step-034` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
-* {ref}`step-037` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
-* {ref}`step-045` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
+* {ref}`machine-vertical-furnace-anneal`, {ref}`step-015`, {ref}`step-020`, {ref}`step-023`, {ref}`step-024`, {ref}`step-028`, {ref}`step-034`, {ref}`step-037`, {ref}`step-045` — *cited on this page*: Cited on this page as PAT-VT-LSI, a patent titled "Method of forming retrograde well structures and punch-through barriers using low energy implants".
 
 **Inventory:** `PAT-VT-LSI`
 
@@ -3783,22 +3598,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-strip` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`machine-downstream-plasma-asher` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-016` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-021` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-025` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-029` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-033` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-039` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-051` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-054` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-057` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-067` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-070` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-074` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-084` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
-* {ref}`step-087` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
+* {ref}`category-strip`, {ref}`machine-downstream-plasma-asher`, {ref}`step-016`, {ref}`step-021`, {ref}`step-025`, {ref}`step-029`, {ref}`step-033`, {ref}`step-039`, {ref}`step-051`, {ref}`step-054`, {ref}`step-057`, {ref}`step-067`, {ref}`step-070`, {ref}`step-074`, {ref}`step-084`, {ref}`step-087` — *cited on this page*: Cited on this page as PAT-STRIP-MOSEL, a patent titled "Low temperature dry process for stripping photoresist after high dose ion implantation".
 
 **Inventory:** `PAT-STRIP-MOSEL`
 
@@ -3832,9 +3632,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-064` — *cited on this page*: Cited on this page as PAT-MULTI-LDD-AMD; the inventory describes it as: Separate LDD and source/drain implant steps for different transistors on one chip.
-* {ref}`step-068` — *cited on this page*: Cited on this page as PAT-MULTI-LDD-AMD; the inventory describes it as: Separate LDD and source/drain implant steps for different transistors on one chip.
-* {ref}`step-071` — *cited on this page*: Cited on this page as PAT-MULTI-LDD-AMD; the inventory describes it as: Separate LDD and source/drain implant steps for different transistors on one chip.
+* {ref}`step-064`, {ref}`step-068`, {ref}`step-071` — *cited on this page*: Cited on this page as PAT-MULTI-LDD-AMD; the inventory describes it as: Separate LDD and source/drain implant steps for different transistors on one chip.
 
 **Inventory:** `PAT-MULTI-LDD-AMD`
 
@@ -3895,8 +3693,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-substrate` — *cited on this page*: Cited on this page as PAT-MDZ-MEMC; the inventory describes it as: The "magic denuded zone" rapid-thermal treatment that sets precipitation behaviour without an oxygen out-diffusion anneal.
-* {ref}`material-substrates` — *cited on this page*: Cited on this page as PAT-MDZ-MEMC; the inventory describes it as: The "magic denuded zone" rapid-thermal treatment that sets precipitation behaviour without an oxygen out-diffusion anneal.
+* {ref}`category-substrate`, {ref}`material-substrates` — *cited on this page*: Cited on this page as PAT-MDZ-MEMC; the inventory describes it as: The "magic denuded zone" rapid-thermal treatment that sets precipitation behaviour without an oxygen out-diffusion anneal.
 
 **Inventory:** `PAT-MDZ-MEMC`
 
@@ -3934,9 +3731,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-implant` — *cited on this page*: Cited on this page as PAT-BILLI-GENUS; the inventory describes it as: The "BILLI" buried-implanted-layer approach to latch-up suppression with MeV implants.
-* {ref}`machine-high-energy-implanter` — *cited on this page*: Cited on this page as PAT-BILLI-GENUS; the inventory describes it as: The "BILLI" buried-implanted-layer approach to latch-up suppression with MeV implants.
-* {ref}`step-008` — *cited on this page*: Cited on this page as PAT-BILLI-GENUS; the inventory describes it as: The "BILLI" buried-implanted-layer approach to latch-up suppression with MeV implants.
+* {ref}`category-implant`, {ref}`machine-high-energy-implanter`, {ref}`step-008` — *cited on this page*: Cited on this page as PAT-BILLI-GENUS; the inventory describes it as: The "BILLI" buried-implanted-layer approach to latch-up suppression with MeV implants.
 
 **Inventory:** `PAT-BILLI-GENUS`
 
@@ -3982,8 +3777,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-165` — *cited on this page*: Cited on this page as PAT-CRACKSTOP-IBM; the inventory describes it as: Dielectric discontinuities in the dicing channel as crack stops.
-* {ref}`step-166` — *cited on this page*: Cited on this page as PAT-CRACKSTOP-IBM; the inventory describes it as: Dielectric discontinuities in the dicing channel as crack stops.
+* {ref}`step-165`, {ref}`step-166` — *cited on this page*: Cited on this page as PAT-CRACKSTOP-IBM; the inventory describes it as: Dielectric discontinuities in the dicing channel as crack stops.
 
 **Inventory:** `PAT-CRACKSTOP-IBM`
 
@@ -4088,8 +3882,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-hdp-cvd` — *cited on this page*: Cited on this page as PAT-SEASONING-AMAT; the inventory describes it as: Sodium from the quartz dome and alumina nozzles of an HDP-CVD chamber, and a seasoning film deposited after each clean to hold it back.
-* {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-SEASONING-AMAT; the inventory describes it as: Sodium from the quartz dome and alumina nozzles of an HDP-CVD chamber, and a seasoning film deposited after each clean to hold it back.
+* {ref}`machine-hdp-cvd`, {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-SEASONING-AMAT; the inventory describes it as: Sodium from the quartz dome and alumina nozzles of an HDP-CVD chamber, and a seasoning film deposited after each clean to hold it back.
 
 **Inventory:** `PAT-SEASONING-AMAT`
 
@@ -4122,10 +3915,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-119` — *cited on this page*: Cited on this page as PAT-ETCHSTOP-TI; the inventory describes it as: An etch stop for a fluorine-bearing via etch.
-* {ref}`step-130` — *cited on this page*: Cited on this page as PAT-ETCHSTOP-TI; the inventory describes it as: An etch stop for a fluorine-bearing via etch.
-* {ref}`step-145` — *cited on this page*: Cited on this page as PAT-ETCHSTOP-TI; the inventory describes it as: An etch stop for a fluorine-bearing via etch.
-* {ref}`step-160` — *cited on this page*: Cited on this page as PAT-ETCHSTOP-TI; the inventory describes it as: An etch stop for a fluorine-bearing via etch.
+* {ref}`step-119`, {ref}`step-130`, {ref}`step-145`, {ref}`step-160` — *cited on this page*: Cited on this page as PAT-ETCHSTOP-TI; the inventory describes it as: An etch stop for a fluorine-bearing via etch.
 
 **Inventory:** `PAT-ETCHSTOP-TI`
 
@@ -4393,14 +4183,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-hdp-cvd` — *cited on this page*: Cited on this page as PAT-HDP-NOVELLUS; the inventory describes it as: A high-throughput HDP-CVD process for filling high-aspect-ratio structures.
-* {ref}`step-011` — *cited on this page*: Cited on this page as PAT-HDP-NOVELLUS; the inventory describes it as: A high-throughput HDP-CVD process for filling high-aspect-ratio structures.
-* {ref}`step-089` — *cited on this page*: Cited on this page as PAT-HDP-NOVELLUS; the inventory describes it as: A high-throughput HDP-CVD process for filling high-aspect-ratio structures.
-* {ref}`step-105` — *cited on this page*: Cited on this page as PAT-HDP-NOVELLUS; the inventory describes it as: A high-throughput HDP-CVD process for filling high-aspect-ratio structures.
-* {ref}`step-115` — *cited on this page*: Cited on this page as PAT-HDP-NOVELLUS; the inventory describes it as: A high-throughput HDP-CVD process for filling high-aspect-ratio structures.
-* {ref}`step-126` — *cited on this page*: Cited on this page as PAT-HDP-NOVELLUS; the inventory describes it as: A high-throughput HDP-CVD process for filling high-aspect-ratio structures.
-* {ref}`step-141` — *cited on this page*: Cited on this page as PAT-HDP-NOVELLUS; the inventory describes it as: A high-throughput HDP-CVD process for filling high-aspect-ratio structures.
-* {ref}`step-156` — *cited on this page*: Cited on this page as PAT-HDP-NOVELLUS; the inventory describes it as: A high-throughput HDP-CVD process for filling high-aspect-ratio structures.
+* {ref}`machine-hdp-cvd`, {ref}`step-011`, {ref}`step-089`, {ref}`step-105`, {ref}`step-115`, {ref}`step-126`, {ref}`step-141`, {ref}`step-156` — *cited on this page*: Cited on this page as PAT-HDP-NOVELLUS; the inventory describes it as: A high-throughput HDP-CVD process for filling high-aspect-ratio structures.
 
 **Inventory:** `PAT-HDP-NOVELLUS`
 
@@ -4434,12 +4217,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-119` — *cited on this page*: Cited on this page as PAT-VIA-POISON-UMC; the inventory describes it as: Preventing poisoned vias and trenches.
-* {ref}`step-121` — *cited on this page*: Cited on this page as PAT-VIA-POISON-UMC; the inventory describes it as: Preventing poisoned vias and trenches.
-* {ref}`step-130` — *cited on this page*: Cited on this page as PAT-VIA-POISON-UMC; the inventory describes it as: Preventing poisoned vias and trenches.
-* {ref}`step-132` — *cited on this page*: Cited on this page as PAT-VIA-POISON-UMC; the inventory describes it as: Preventing poisoned vias and trenches.
-* {ref}`step-145` — *cited on this page*: Cited on this page as PAT-VIA-POISON-UMC; the inventory describes it as: Preventing poisoned vias and trenches.
-* {ref}`step-147` — *cited on this page*: Cited on this page as PAT-VIA-POISON-UMC; the inventory describes it as: Preventing poisoned vias and trenches.
+* {ref}`step-119`, {ref}`step-121`, {ref}`step-130`, {ref}`step-132`, {ref}`step-145`, {ref}`step-147` — *cited on this page*: Cited on this page as PAT-VIA-POISON-UMC; the inventory describes it as: Preventing poisoned vias and trenches.
 
 **Inventory:** `PAT-VIA-POISON-UMC`
 
@@ -4477,8 +4255,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-oxidation` — *cited on this page*: Cited on this page as PAT-TORCH-PERSYS; the inventory describes it as: A torch used "both to produce steam and to perform wet or dry dichlorethylene (DCE) oxidation".
-* {ref}`material-process-gases` — *cited on this page*: Cited on this page as PAT-TORCH-PERSYS; the inventory describes it as: A torch used "both to produce steam and to perform wet or dry dichlorethylene (DCE) oxidation".
+* {ref}`machine-vertical-furnace-oxidation`, {ref}`material-process-gases` — *cited on this page*: Cited on this page as PAT-TORCH-PERSYS; the inventory describes it as: A torch used "both to produce steam and to perform wet or dry dichlorethylene (DCE) oxidation".
 
 **Inventory:** `PAT-TORCH-PERSYS`
 
@@ -4579,9 +4356,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-127` — *cited on this page*: Cited on this page as PAT-DUMMY-UMC; the inventory describes it as: Shallow dummy patterns to improve CMP planarity.
-* {ref}`step-142` — *cited on this page*: Cited on this page as PAT-DUMMY-UMC; the inventory describes it as: Shallow dummy patterns to improve CMP planarity.
-* {ref}`step-157` — *cited on this page*: Cited on this page as PAT-DUMMY-UMC; the inventory describes it as: Shallow dummy patterns to improve CMP planarity.
+* {ref}`step-127`, {ref}`step-142`, {ref}`step-157` — *cited on this page*: Cited on this page as PAT-DUMMY-UMC; the inventory describes it as: Shallow dummy patterns to improve CMP planarity.
 
 **Inventory:** `PAT-DUMMY-UMC`
 
@@ -4614,8 +4389,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-006` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns rounding the silicon edges of a shallow trench with a sacrificial oxidation before the trench etch, and it is not evidence that the technique is used in SKY130.
-* {ref}`step-010` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns rounding the silicon edges of a shallow trench with a sacrificial oxidation before the trench etch, and it is not evidence that the technique is used in SKY130.
+* {ref}`step-006`, {ref}`step-010` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns rounding the silicon edges of a shallow trench with a sacrificial oxidation before the trench etch, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01 (retrieved 2026-09-14).
 
@@ -4647,12 +4421,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machines-index` — *cited on this page*: Cited on this page as PAT-HCM-NOVELLUS; the inventory describes it as: The hollow-cathode-magnetron ionised PVD source, a competing design.
-* {ref}`machine-pvd-cluster-tool` — *cited on this page*: Cited on this page as PAT-HCM-NOVELLUS; the inventory describes it as: The hollow-cathode-magnetron ionised PVD source, a competing design.
-* {ref}`step-109` — *cited on this page*: Cited on this page as PAT-HCM-NOVELLUS; the inventory describes it as: The hollow-cathode-magnetron ionised PVD source, a competing design.
-* {ref}`step-120` — *cited on this page*: Cited on this page as PAT-HCM-NOVELLUS; the inventory describes it as: The hollow-cathode-magnetron ionised PVD source, a competing design.
-* {ref}`step-131` — *cited on this page*: Cited on this page as PAT-HCM-NOVELLUS; the inventory describes it as: The hollow-cathode-magnetron ionised PVD source, a competing design.
-* {ref}`step-146` — *cited on this page*: Cited on this page as PAT-HCM-NOVELLUS; the inventory describes it as: The hollow-cathode-magnetron ionised PVD source, a competing design.
+* {ref}`machines-index`, {ref}`machine-pvd-cluster-tool`, {ref}`step-109`, {ref}`step-120`, {ref}`step-131`, {ref}`step-146` — *cited on this page*: Cited on this page as PAT-HCM-NOVELLUS; the inventory describes it as: The hollow-cathode-magnetron ionised PVD source, a competing design.
 
 **Inventory:** `PAT-HCM-NOVELLUS`
 
@@ -4689,16 +4458,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-anneal` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
-* {ref}`mask-pwbm` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
-* {ref}`step-018` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
-* {ref}`step-019` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
-* {ref}`step-026` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
-* {ref}`step-027` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
-* {ref}`step-028` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
-* {ref}`step-031` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
-* {ref}`step-032` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
-* {ref}`step-034` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
+* {ref}`machine-vertical-furnace-anneal`, {ref}`mask-pwbm`, {ref}`step-018`, {ref}`step-019`, {ref}`step-026`, {ref}`step-027`, {ref}`step-028`, {ref}`step-031`, {ref}`step-032`, {ref}`step-034` — *cited on this page*: Cited on this page as PAT-WELL-HYNIX; the inventory describes it as: N-well 700 keV at 2.0 × 10¹³ cm⁻² plus 120 keV at 2.0 × 10¹² cm⁻².
 
 **Inventory:** `PAT-WELL-HYNIX`
 
@@ -4734,15 +4494,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`mask-hvtpm` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
-* {ref}`step-015` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
-* {ref}`step-020` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
-* {ref}`step-022` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
-* {ref}`step-024` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
-* {ref}`step-038` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
-* {ref}`step-045` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
-* {ref}`step-066` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
-* {ref}`step-073` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
+* {ref}`mask-hvtpm`, {ref}`step-015`, {ref}`step-020`, {ref}`step-022`, {ref}`step-024`, {ref}`step-038`, {ref}`step-045`, {ref}`step-066`, {ref}`step-073` — *cited on this page*: Cited on this page as PAT-VT-AMD; the inventory describes it as: Channel implant "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²".
 
 **Inventory:** `PAT-VT-AMD`
 
@@ -4775,20 +4527,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-lithography` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`machine-i-line-stepper` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`mask-dnm` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`masks-index` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`mask-nwm` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`mask-pwbm` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`step-014` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`step-017` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`step-026` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`step-030` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`step-049` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`step-055` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`step-081` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
-* {ref}`step-085` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
+* {ref}`category-lithography`, {ref}`machine-i-line-stepper`, {ref}`mask-dnm`, {ref}`masks-index`, {ref}`mask-nwm`, {ref}`mask-pwbm`, {ref}`step-014`, {ref}`step-017`, {ref}`step-026`, {ref}`step-030`, {ref}`step-049`, {ref}`step-055`, {ref}`step-081`, {ref}`step-085` — *cited on this page*: Cited on this page as PAT-RESIST-ZILOG, a patent titled "High aspect ratio photolithographic method for high energy implantation".
 
 **Inventory:** `PAT-RESIST-ZILOG`
 
@@ -4821,8 +4560,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-165` — *cited on this page*: Cited on this page as PAT-FUSEWIN-TSMC; the inventory describes it as: Thick resist and a two-step window etch through a passivation and several inter-metal dielectrics.
-* {ref}`step-166` — *cited on this page*: Cited on this page as PAT-FUSEWIN-TSMC; the inventory describes it as: Thick resist and a two-step window etch through a passivation and several inter-metal dielectrics.
+* {ref}`step-165`, {ref}`step-166` — *cited on this page*: Cited on this page as PAT-FUSEWIN-TSMC; the inventory describes it as: Thick resist and a two-step window etch through a passivation and several inter-metal dielectrics.
 
 **Inventory:** `PAT-FUSEWIN-TSMC`
 
@@ -4855,9 +4593,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-164` — *cited on this page*: Cited on this page as PAT-FUSE-VANGUARD; the inventory describes it as: An oxide/nitride passivation stack with stated thicknesses, and bond-pad and fuse openings made with one mask.
-* {ref}`step-167` — *cited on this page*: Cited on this page as PAT-FUSE-VANGUARD; the inventory describes it as: An oxide/nitride passivation stack with stated thicknesses, and bond-pad and fuse openings made with one mask.
-* {ref}`step-168` — *cited on this page*: Cited on this page as PAT-FUSE-VANGUARD; the inventory describes it as: An oxide/nitride passivation stack with stated thicknesses, and bond-pad and fuse openings made with one mask.
+* {ref}`step-164`, {ref}`step-167`, {ref}`step-168` — *cited on this page*: Cited on this page as PAT-FUSE-VANGUARD; the inventory describes it as: An oxide/nitride passivation stack with stated thicknesses, and bond-pad and fuse openings made with one mask.
 
 **Inventory:** `PAT-FUSE-VANGUARD`
 
@@ -4897,15 +4633,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-deposition` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
-* {ref}`machines-index` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
-* {ref}`machine-pvd-cluster-tool` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
-* {ref}`step-097` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
-* {ref}`step-109` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
-* {ref}`step-110` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
-* {ref}`step-120` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
-* {ref}`step-131` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
-* {ref}`step-146` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
+* {ref}`category-deposition`, {ref}`machines-index`, {ref}`machine-pvd-cluster-tool`, {ref}`step-097`, {ref}`step-109`, {ref}`step-110`, {ref}`step-120`, {ref}`step-131`, {ref}`step-146` — *cited on this page*: Cited on this page as PAT-IMP-AMAT; the inventory describes it as: Alternating IMP and conventional sputtering to improve sidewall coverage.
 
 **Inventory:** `PAT-IMP-AMAT`
 
@@ -5056,10 +4784,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-065` — *cited on this page*: Cited on this page as PAT-SPE-AMD; the inventory describes it as: Activating extensions and halos by solid-phase epitaxy at low temperature, an alternative to spike-anneal activation.
-* {ref}`step-066` — *cited on this page*: Cited on this page as PAT-SPE-AMD; the inventory describes it as: Activating extensions and halos by solid-phase epitaxy at low temperature, an alternative to spike-anneal activation.
-* {ref}`step-072` — *cited on this page*: Cited on this page as PAT-SPE-AMD; the inventory describes it as: Activating extensions and halos by solid-phase epitaxy at low temperature, an alternative to spike-anneal activation.
-* {ref}`step-075` — *cited on this page*: Cited on this page as PAT-SPE-AMD; the inventory describes it as: Activating extensions and halos by solid-phase epitaxy at low temperature, an alternative to spike-anneal activation.
+* {ref}`step-065`, {ref}`step-066`, {ref}`step-072`, {ref}`step-075` — *cited on this page*: Cited on this page as PAT-SPE-AMD; the inventory describes it as: Activating extensions and halos by solid-phase epitaxy at low temperature, an alternative to spike-anneal activation.
 
 **Inventory:** `PAT-SPE-AMD`
 
@@ -5127,10 +4852,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-064` — *cited on this page*: Cited on this page as PAT-LDD-MICRON; the inventory describes it as: A second, lighter LDD masked onto selected transistors to cut junction leakage.
-* {ref}`step-065` — *cited on this page*: Cited on this page as PAT-LDD-MICRON; the inventory describes it as: A second, lighter LDD masked onto selected transistors to cut junction leakage.
-* {ref}`step-071` — *cited on this page*: Cited on this page as PAT-LDD-MICRON; the inventory describes it as: A second, lighter LDD masked onto selected transistors to cut junction leakage.
-* {ref}`step-072` — *cited on this page*: Cited on this page as PAT-LDD-MICRON; the inventory describes it as: A second, lighter LDD masked onto selected transistors to cut junction leakage.
+* {ref}`step-064`, {ref}`step-065`, {ref}`step-071`, {ref}`step-072` — *cited on this page*: Cited on this page as PAT-LDD-MICRON; the inventory describes it as: A second, lighter LDD masked onto selected transistors to cut junction leakage.
 
 **Inventory:** `PAT-LDD-MICRON`
 
@@ -5209,14 +4931,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`mask-nwm` — *cited on this page*: Cited on this page as PAT-DEMOS-TI, a patent titled "Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions".
-* {ref}`mask-pwdem` — *cited on this page*: Cited on this page as PAT-DEMOS-TI, a patent titled "Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions".
-* {ref}`step-017` — *cited on this page*: Cited on this page as PAT-DEMOS-TI, a patent titled "Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions".
-* {ref}`step-018` — *cited on this page*: Cited on this page as PAT-DEMOS-TI, a patent titled "Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions".
-* {ref}`step-030` — *cited on this page*: Cited on this page as PAT-DEMOS-TI, a patent titled "Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions".
-* {ref}`step-031` — *cited on this page*: Cited on this page as PAT-DEMOS-TI, a patent titled "Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions".
-* {ref}`step-032` — *cited on this page*: Cited on this page as PAT-DEMOS-TI, a patent titled "Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions".
-* {ref}`step-068` — *cited on this page*: Cited on this page as PAT-DEMOS-TI, a patent titled "Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions".
+* {ref}`mask-nwm`, {ref}`mask-pwdem`, {ref}`step-017`, {ref}`step-018`, {ref}`step-030`, {ref}`step-031`, {ref}`step-032`, {ref}`step-068` — *cited on this page*: Cited on this page as PAT-DEMOS-TI, a patent titled "Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions".
 
 **Inventory:** `PAT-DEMOS-TI`
 
@@ -5249,11 +4964,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`masks-index` — *cited on this page*: Cited on this page as PAT-BIM-TSMC, a patent titled "Method for forming binary intensity masks".
-* {ref}`mask-vim4` — *cited on this page*: Cited on this page as PAT-BIM-TSMC, a patent titled "Method for forming binary intensity masks".
-* {ref}`step-129` — *cited on this page*: Cited on this page as PAT-BIM-TSMC, a patent titled "Method for forming binary intensity masks".
-* {ref}`step-144` — *cited on this page*: Cited on this page as PAT-BIM-TSMC, a patent titled "Method for forming binary intensity masks".
-* {ref}`step-159` — *cited on this page*: Cited on this page as PAT-BIM-TSMC, a patent titled "Method for forming binary intensity masks".
+* {ref}`masks-index`, {ref}`mask-vim4`, {ref}`step-129`, {ref}`step-144`, {ref}`step-159` — *cited on this page*: Cited on this page as PAT-BIM-TSMC, a patent titled "Method for forming binary intensity masks".
 
 **Inventory:** `PAT-BIM-TSMC`
 
@@ -5286,18 +4997,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-135` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-136` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-137` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-138` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-139` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-140` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-150` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-151` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-152` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-153` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-154` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
-* {ref}`step-155` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
+* {ref}`step-135`, {ref}`step-136`, {ref}`step-137`, {ref}`step-138`, {ref}`step-139`, {ref}`step-140`, {ref}`step-150`, {ref}`step-151`, {ref}`step-152`, {ref}`step-153`, {ref}`step-154`, {ref}`step-155` — *cited on this page*: Cited on this page as PAT-MIM-NEWPORTFAB; the inventory describes it as: A nitride/TiN capacitor on an aluminium interconnect layer, etched together and protected by an oxide spacer.
 
 **Inventory:** `PAT-MIM-NEWPORTFAB`
 
@@ -5397,8 +5097,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-066` — *cited on this page*: Cited on this page as PAT-HALO-AMD-DIFF; the inventory describes it as: Two halo implants with different anneals to shape the pocket.
-* {ref}`step-073` — *cited on this page*: Cited on this page as PAT-HALO-AMD-DIFF; the inventory describes it as: Two halo implants with different anneals to shape the pocket.
+* {ref}`step-066`, {ref}`step-073` — *cited on this page*: Cited on this page as PAT-HALO-AMD-DIFF; the inventory describes it as: Two halo implants with different anneals to shape the pocket.
 
 **Inventory:** `PAT-HALO-AMD-DIFF`
 
@@ -5431,10 +5130,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-164` — *cited on this page*: Cited on this page as PAT-SEALRING-ZEEVO; the inventory describes it as: A seal ring under a passivation oxide and nitride, and the moisture path around it.
-* {ref}`step-165` — *cited on this page*: Cited on this page as PAT-SEALRING-ZEEVO; the inventory describes it as: A seal ring under a passivation oxide and nitride, and the moisture path around it.
-* {ref}`step-166` — *cited on this page*: Cited on this page as PAT-SEALRING-ZEEVO; the inventory describes it as: A seal ring under a passivation oxide and nitride, and the moisture path around it.
-* {ref}`step-167` — *cited on this page*: Cited on this page as PAT-SEALRING-ZEEVO; the inventory describes it as: A seal ring under a passivation oxide and nitride, and the moisture path around it.
+* {ref}`step-164`, {ref}`step-165`, {ref}`step-166`, {ref}`step-167` — *cited on this page*: Cited on this page as PAT-SEALRING-ZEEVO; the inventory describes it as: A seal ring under a passivation oxide and nitride, and the moisture path around it.
 
 **Inventory:** `PAT-SEALRING-ZEEVO`
 
@@ -5472,15 +5168,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-hdp-cvd` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
-* {ref}`machines-index` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
-* {ref}`step-011` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
-* {ref}`step-089` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
-* {ref}`step-105` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
-* {ref}`step-115` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
-* {ref}`step-126` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
-* {ref}`step-141` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
-* {ref}`step-156` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
+* {ref}`machine-hdp-cvd`, {ref}`machines-index`, {ref}`step-011`, {ref}`step-089`, {ref}`step-105`, {ref}`step-115`, {ref}`step-126`, {ref}`step-141`, {ref}`step-156` — *cited on this page*: Cited on this page as PAT-HDP-AMAT; the inventory describes it as: A multi-step HDP-CVD deposition/etch process for high-aspect-ratio gaps, the Applied Materials counterpart to the Novellus approach.
 
 **Inventory:** `PAT-HDP-AMAT`
 
@@ -5513,14 +5201,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machines-index` — *cited on this page*: Cited on this page as PAT-PNL-NOVELLUS; the inventory describes it as: The pulsed nucleation layer.
-* {ref}`machine-tungsten-cvd` — *cited on this page*: Cited on this page as PAT-PNL-NOVELLUS; the inventory describes it as: The pulsed nucleation layer.
-* {ref}`material-precursors` — *cited on this page*: Cited on this page as PAT-PNL-NOVELLUS; the inventory describes it as: The pulsed nucleation layer.
-* {ref}`step-099` — *cited on this page*: Cited on this page as PAT-PNL-NOVELLUS; the inventory describes it as: The pulsed nucleation layer.
-* {ref}`step-110` — *cited on this page*: Cited on this page as PAT-PNL-NOVELLUS; the inventory describes it as: The pulsed nucleation layer.
-* {ref}`step-121` — *cited on this page*: Cited on this page as PAT-PNL-NOVELLUS; the inventory describes it as: The pulsed nucleation layer.
-* {ref}`step-132` — *cited on this page*: Cited on this page as PAT-PNL-NOVELLUS; the inventory describes it as: The pulsed nucleation layer.
-* {ref}`step-147` — *cited on this page*: Cited on this page as PAT-PNL-NOVELLUS; the inventory describes it as: The pulsed nucleation layer.
+* {ref}`machines-index`, {ref}`machine-tungsten-cvd`, {ref}`material-precursors`, {ref}`step-099`, {ref}`step-110`, {ref}`step-121`, {ref}`step-132`, {ref}`step-147` — *cited on this page*: Cited on this page as PAT-PNL-NOVELLUS; the inventory describes it as: The pulsed nucleation layer.
 
 **Inventory:** `PAT-PNL-NOVELLUS`
 
@@ -5553,12 +5234,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-etch` — *cited on this page*: Cited on this page as PAT-CN-TEL; the inventory describes it as: CN emission at 387 nm as the nitride etch endpoint.
-* {ref}`machine-plasma-etcher-dielectric` — *cited on this page*: Cited on this page as PAT-CN-TEL; the inventory describes it as: CN emission at 387 nm as the nitride etch endpoint.
-* {ref}`step-042` — *cited on this page*: Cited on this page as PAT-CN-TEL; the inventory describes it as: CN emission at 387 nm as the nitride etch endpoint.
-* {ref}`step-077` — *cited on this page*: Cited on this page as PAT-CN-TEL; the inventory describes it as: CN emission at 387 nm as the nitride etch endpoint.
-* {ref}`step-079` — *cited on this page*: Cited on this page as PAT-CN-TEL; the inventory describes it as: CN emission at 387 nm as the nitride etch endpoint.
-* {ref}`step-094` — *cited on this page*: Cited on this page as PAT-CN-TEL; the inventory describes it as: CN emission at 387 nm as the nitride etch endpoint.
+* {ref}`category-etch`, {ref}`machine-plasma-etcher-dielectric`, {ref}`step-042`, {ref}`step-077`, {ref}`step-079`, {ref}`step-094` — *cited on this page*: Cited on this page as PAT-CN-TEL; the inventory describes it as: CN emission at 387 nm as the nitride etch endpoint.
 
 **Inventory:** `PAT-CN-TEL`, `PAT-ENDPOINT-TEL`
 
@@ -5591,8 +5267,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-068` — *cited on this page*: Cited on this page as PAT-HV-GRADED-CYP; the inventory describes it as: A high-voltage device with self-aligned graded junctions in a CMOS flow.
-* {ref}`step-069` — *cited on this page*: Cited on this page as PAT-HV-GRADED-CYP; the inventory describes it as: A high-voltage device with self-aligned graded junctions in a CMOS flow.
+* {ref}`step-068`, {ref}`step-069` — *cited on this page*: Cited on this page as PAT-HV-GRADED-CYP; the inventory describes it as: A high-voltage device with self-aligned graded junctions in a CMOS flow.
 * {ref}`step-068` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns high-voltage transistors with self-aligned graded junctions, the devices this page's mask serves on its reading, and it is not evidence that the technique is used in SKY130.
 
 **Inventory:** `PAT-HV-GRADED-CYP`
@@ -5710,10 +5385,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-135` — *cited on this page*: Cited on this page as PAT-MIM-PHILIPS; the inventory describes it as: Ammonia-plasma treatment of the bottom electrode and a multi-rate etch of the top electrode and insulator.
-* {ref}`step-138` — *cited on this page*: Cited on this page as PAT-MIM-PHILIPS; the inventory describes it as: Ammonia-plasma treatment of the bottom electrode and a multi-rate etch of the top electrode and insulator.
-* {ref}`step-150` — *cited on this page*: Cited on this page as PAT-MIM-PHILIPS; the inventory describes it as: Ammonia-plasma treatment of the bottom electrode and a multi-rate etch of the top electrode and insulator.
-* {ref}`step-153` — *cited on this page*: Cited on this page as PAT-MIM-PHILIPS; the inventory describes it as: Ammonia-plasma treatment of the bottom electrode and a multi-rate etch of the top electrode and insulator.
+* {ref}`step-135`, {ref}`step-138`, {ref}`step-150`, {ref}`step-153` — *cited on this page*: Cited on this page as PAT-MIM-PHILIPS; the inventory describes it as: Ammonia-plasma treatment of the bottom electrode and a multi-rate etch of the top electrode and insulator.
 
 **Inventory:** `PAT-MIM-PHILIPS`
 
@@ -5840,14 +5512,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`materials-index` — *cited on this page*: Cited on this page as PAT-STI-CR, a patent titled "Shallow trench isolation approach for improved STI corner rounding".
-* {ref}`step-002` — *cited on this page*: Cited on this page as PAT-STI-CR, a patent titled "Shallow trench isolation approach for improved STI corner rounding".
-* {ref}`step-006` — *cited on this page*: Cited on this page as PAT-STI-CR, a patent titled "Shallow trench isolation approach for improved STI corner rounding".
-* {ref}`step-007` — *cited on this page*: Cited on this page as PAT-STI-CR, a patent titled "Shallow trench isolation approach for improved STI corner rounding".
-* {ref}`step-009` — *cited on this page*: Cited on this page as PAT-STI-CR, a patent titled "Shallow trench isolation approach for improved STI corner rounding".
-* {ref}`step-010` — *cited on this page*: Cited on this page as PAT-STI-CR, a patent titled "Shallow trench isolation approach for improved STI corner rounding".
-* {ref}`step-012` — *cited on this page*: Cited on this page as PAT-STI-CR, a patent titled "Shallow trench isolation approach for improved STI corner rounding".
-* {ref}`step-013` — *cited on this page*: Cited on this page as PAT-STI-CR, a patent titled "Shallow trench isolation approach for improved STI corner rounding".
+* {ref}`materials-index`, {ref}`step-002`, {ref}`step-006`, {ref}`step-007`, {ref}`step-009`, {ref}`step-010`, {ref}`step-012`, {ref}`step-013` — *cited on this page*: Cited on this page as PAT-STI-CR, a patent titled "Shallow trench isolation approach for improved STI corner rounding".
 
 **Inventory:** `PAT-STI-CR`
 
@@ -5989,21 +5654,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-implant` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`machine-high-energy-implanter` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`mask-nwm` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`mask-pwbm` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`mask-pwdem` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-017` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-018` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-019` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-020` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-026` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-027` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-028` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-030` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-031` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
-* {ref}`step-032` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
+* {ref}`category-implant`, {ref}`machine-high-energy-implanter`, {ref}`mask-nwm`, {ref}`mask-pwbm`, {ref}`mask-pwdem`, {ref}`step-017`, {ref}`step-018`, {ref}`step-019`, {ref}`step-020`, {ref}`step-026`, {ref}`step-027`, {ref}`step-028`, {ref}`step-030`, {ref}`step-031`, {ref}`step-032` — *cited on this page*: Cited on this page as PAT-WELL-IBM; the inventory describes it as: Photoresist "typically 1800–2500 nm in thickness".
 
 **Inventory:** `PAT-WELL-IBM`
 
@@ -6041,16 +5692,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-implant` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
-* {ref}`machine-high-energy-implanter` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
-* {ref}`mask-dnm` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
-* {ref}`step-007` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
-* {ref}`step-008` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
-* {ref}`step-018` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
-* {ref}`step-019` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
-* {ref}`step-027` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
-* {ref}`step-028` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
-* {ref}`step-032` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
+* {ref}`category-implant`, {ref}`machine-high-energy-implanter`, {ref}`mask-dnm`, {ref}`step-007`, {ref}`step-008`, {ref}`step-018`, {ref}`step-019`, {ref}`step-027`, {ref}`step-028`, {ref}`step-032` — *cited on this page*: Cited on this page as PAT-DNW-HYNIX, a patent titled "Method for fabricating semiconductor device with triple well structure".
 
 **Inventory:** `PAT-DNW-HYNIX`
 
@@ -6083,13 +5725,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`materials-index` — *cited on this page*: Cited on this page as PAT-01, a patent titled "Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices".
-* {ref}`overview-index` — *cited on this page*: Cited on this page as PAT-01, a patent titled "Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices".
-* {ref}`step-003` — *cited on this page*: Cited on this page as PAT-01, a patent titled "Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices".
-* {ref}`step-039` — *cited on this page*: Cited on this page as PAT-01, a patent titled "Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices".
-* {ref}`step-040` — *cited on this page*: Cited on this page as PAT-01, a patent titled "Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices".
-* {ref}`step-041` — *cited on this page*: Cited on this page as PAT-01, a patent titled "Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices".
-* {ref}`step-042` — *cited on this page*: Cited on this page as PAT-01, a patent titled "Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices".
+* {ref}`materials-index`, {ref}`overview-index`, {ref}`step-003`, {ref}`step-039`, {ref}`step-040`, {ref}`step-041`, {ref}`step-042` — *cited on this page*: Cited on this page as PAT-01, a patent titled "Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices".
 * {ref}`step-040` — *same-lineage assignee*: Assigned by its inventors to Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming a SONOS oxide-nitride-oxide dielectric, the subject of this page on its reading, and it is not evidence that the technique is used in SKY130.
 
 **Inventory:** `PAT-01`
@@ -6143,15 +5779,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`mask-hvtpm` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
-* {ref}`mask-lvtnm` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
-* {ref}`step-014` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
-* {ref}`step-015` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
-* {ref}`step-020` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
-* {ref}`step-022` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
-* {ref}`step-023` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
-* {ref}`step-024` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
-* {ref}`step-038` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
+* {ref}`mask-hvtpm`, {ref}`mask-lvtnm`, {ref}`step-014`, {ref}`step-015`, {ref}`step-020`, {ref}`step-022`, {ref}`step-023`, {ref}`step-024`, {ref}`step-038` — *cited on this page*: Cited on this page as PAT-VT-RRR, a patent titled "Formation of standard voltage threshold and low voltage threshold mosfet devices".
 
 **Inventory:** `PAT-VT-RRR`
 
@@ -6253,9 +5881,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-lpcvd` — *cited on this page*: Cited on this page as PAT-NH4CL-TSMC, a patent titled "Cold trap for CVD furnace".
-* {ref}`material-hardware-consumables` — *cited on this page*: Cited on this page as PAT-NH4CL-TSMC, a patent titled "Cold trap for CVD furnace".
-* {ref}`material-precursors` — *cited on this page*: Cited on this page as PAT-NH4CL-TSMC, a patent titled "Cold trap for CVD furnace".
+* {ref}`machine-vertical-furnace-lpcvd`, {ref}`material-hardware-consumables`, {ref}`material-precursors` — *cited on this page*: Cited on this page as PAT-NH4CL-TSMC, a patent titled "Cold trap for CVD furnace".
 
 **Inventory:** `PAT-NH4CL-TSMC`
 
@@ -6288,8 +5914,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-101` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a local-interconnect stack of sputtered titanium nitride and tungsten, the tungsten etched with the nitride as etch stop, and it is not evidence that the technique is used in SKY130.
-* {ref}`step-103` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a local-interconnect stack of sputtered titanium nitride and tungsten, the tungsten etched with the nitride as etch stop, and it is not evidence that the technique is used in SKY130.
+* {ref}`step-101`, {ref}`step-103` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a local-interconnect stack of sputtered titanium nitride and tungsten, the tungsten etched with the nitride as etch stop, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"), priority before 2006-01-01 (retrieved 2026-09-14).
 
@@ -6400,12 +6025,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`materials-index` — *cited on this page*: Cited on this page as PAT-STI-AMBERWAVE, a patent titled "Shallow trench isolation process".
-* {ref}`step-002` — *cited on this page*: Cited on this page as PAT-STI-AMBERWAVE, a patent titled "Shallow trench isolation process".
-* {ref}`step-003` — *cited on this page*: Cited on this page as PAT-STI-AMBERWAVE, a patent titled "Shallow trench isolation process".
-* {ref}`step-006` — *cited on this page*: Cited on this page as PAT-STI-AMBERWAVE, a patent titled "Shallow trench isolation process".
-* {ref}`step-010` — *cited on this page*: Cited on this page as PAT-STI-AMBERWAVE, a patent titled "Shallow trench isolation process".
-* {ref}`step-012` — *cited on this page*: Cited on this page as PAT-STI-AMBERWAVE, a patent titled "Shallow trench isolation process".
+* {ref}`materials-index`, {ref}`step-002`, {ref}`step-003`, {ref}`step-006`, {ref}`step-010`, {ref}`step-012` — *cited on this page*: Cited on this page as PAT-STI-AMBERWAVE, a patent titled "Shallow trench isolation process".
 
 **Inventory:** `PAT-STI-AMBERWAVE`
 
@@ -6487,18 +6107,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-strip` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`machine-downstream-plasma-asher` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-016` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-021` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-025` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-029` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-033` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-051` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-067` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-070` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-084` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
-* {ref}`step-087` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
+* {ref}`category-strip`, {ref}`machine-downstream-plasma-asher`, {ref}`step-016`, {ref}`step-021`, {ref}`step-025`, {ref}`step-029`, {ref}`step-033`, {ref}`step-051`, {ref}`step-067`, {ref}`step-070`, {ref}`step-084`, {ref}`step-087` — *cited on this page*: Cited on this page as PAT-STRIP-TSMC, a patent titled "Method of ashing a photoresist".
 
 **Inventory:** `PAT-STRIP-TSMC`
 
@@ -6532,10 +6141,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-149` — *cited on this page*: Cited on this page as PAT-MIM-STACK-NEWPORTFAB; the inventory describes it as: A composite of two stacked MiM capacitors sharing a middle electrode and joined in parallel.
-* {ref}`step-150` — *cited on this page*: Cited on this page as PAT-MIM-STACK-NEWPORTFAB; the inventory describes it as: A composite of two stacked MiM capacitors sharing a middle electrode and joined in parallel.
-* {ref}`step-151` — *cited on this page*: Cited on this page as PAT-MIM-STACK-NEWPORTFAB; the inventory describes it as: A composite of two stacked MiM capacitors sharing a middle electrode and joined in parallel.
-* {ref}`step-152` — *cited on this page*: Cited on this page as PAT-MIM-STACK-NEWPORTFAB; the inventory describes it as: A composite of two stacked MiM capacitors sharing a middle electrode and joined in parallel.
+* {ref}`step-149`, {ref}`step-150`, {ref}`step-151`, {ref}`step-152` — *cited on this page*: Cited on this page as PAT-MIM-STACK-NEWPORTFAB; the inventory describes it as: A composite of two stacked MiM capacitors sharing a middle electrode and joined in parallel.
 
 **Inventory:** `PAT-MIM-STACK-NEWPORTFAB`
 
@@ -6654,11 +6260,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`mask-fom` — *cited on this page*: Cited on this page as PAT-DUMMY-TSMC; the inventory describes it as: Dummy structures for CMP planarity with reduced added capacitance.
-* {ref}`masks-index` — *cited on this page*: Cited on this page as PAT-DUMMY-TSMC; the inventory describes it as: Dummy structures for CMP planarity with reduced added capacitance.
-* {ref}`step-127` — *cited on this page*: Cited on this page as PAT-DUMMY-TSMC; the inventory describes it as: Dummy structures for CMP planarity with reduced added capacitance.
-* {ref}`step-142` — *cited on this page*: Cited on this page as PAT-DUMMY-TSMC; the inventory describes it as: Dummy structures for CMP planarity with reduced added capacitance.
-* {ref}`step-157` — *cited on this page*: Cited on this page as PAT-DUMMY-TSMC; the inventory describes it as: Dummy structures for CMP planarity with reduced added capacitance.
+* {ref}`mask-fom`, {ref}`masks-index`, {ref}`step-127`, {ref}`step-142`, {ref}`step-157` — *cited on this page*: Cited on this page as PAT-DUMMY-TSMC; the inventory describes it as: Dummy structures for CMP planarity with reduced added capacitance.
 
 **Inventory:** `PAT-DUMMY-TSMC`
 
@@ -6692,9 +6294,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-149` — *cited on this page*: Cited on this page as PAT-MIM-STACK-TSMC; the inventory describes it as: Stacked MiM capacitor plates cross-connected through filled vias.
-* {ref}`step-150` — *cited on this page*: Cited on this page as PAT-MIM-STACK-TSMC; the inventory describes it as: Stacked MiM capacitor plates cross-connected through filled vias.
-* {ref}`step-152` — *cited on this page*: Cited on this page as PAT-MIM-STACK-TSMC; the inventory describes it as: Stacked MiM capacitor plates cross-connected through filled vias.
+* {ref}`step-149`, {ref}`step-150`, {ref}`step-152` — *cited on this page*: Cited on this page as PAT-MIM-STACK-TSMC; the inventory describes it as: Stacked MiM capacitor plates cross-connected through filled vias.
 
 **Inventory:** `PAT-MIM-STACK-TSMC`
 
@@ -6766,9 +6366,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-030` — *cited on this page*: Cited on this page as PAT-DEMOS-TI2; the inventory describes it as: DE devices made "without the addition of extra masks or processing steps".
-* {ref}`step-031` — *cited on this page*: Cited on this page as PAT-DEMOS-TI2; the inventory describes it as: DE devices made "without the addition of extra masks or processing steps".
-* {ref}`step-032` — *cited on this page*: Cited on this page as PAT-DEMOS-TI2; the inventory describes it as: DE devices made "without the addition of extra masks or processing steps".
+* {ref}`step-030`, {ref}`step-031`, {ref}`step-032` — *cited on this page*: Cited on this page as PAT-DEMOS-TI2; the inventory describes it as: DE devices made "without the addition of extra masks or processing steps".
 
 **Inventory:** `PAT-DEMOS-TI2`
 
@@ -6806,8 +6404,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-136` — *cited on this page*: Cited on this page as PAT-MIM-TI-ALCAP; the inventory describes it as: An aluminium cap over a Ta/TaN top electrode, with sidewall spacers, on a copper back end.
-* {ref}`step-151` — *cited on this page*: Cited on this page as PAT-MIM-TI-ALCAP; the inventory describes it as: An aluminium cap over a Ta/TaN top electrode, with sidewall spacers, on a copper back end.
+* {ref}`step-136`, {ref}`step-151` — *cited on this page*: Cited on this page as PAT-MIM-TI-ALCAP; the inventory describes it as: An aluminium cap over a Ta/TaN top electrode, with sidewall spacers, on a copper back end.
 
 **Inventory:** `PAT-MIM-TI-ALCAP`
 
@@ -6855,15 +6452,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-strip` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
-* {ref}`machine-downstream-plasma-asher` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
-* {ref}`step-051` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
-* {ref}`step-057` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
-* {ref}`step-067` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
-* {ref}`step-070` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
-* {ref}`step-074` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
-* {ref}`step-084` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
-* {ref}`step-087` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
+* {ref}`category-strip`, {ref}`machine-downstream-plasma-asher`, {ref}`step-051`, {ref}`step-057`, {ref}`step-067`, {ref}`step-070`, {ref}`step-074`, {ref}`step-084`, {ref}`step-087` — *cited on this page*: Cited on this page as PAT-ASHER-AXCELIS; the inventory describes it as: An oxygen-free, nitrogen-free ashing chemistry for resist and post-etch residue removal over low-k dielectrics.
 
 **Inventory:** `PAT-ASHER-AXCELIS`
 
@@ -7042,14 +6631,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-135` — *cited on this page*: Cited on this page as PAT-MIM-FREESCALE; the inventory describes it as: A MiM capacitor over planarised interconnect, with a via etch that stops on the plates and the interconnect together.
-* {ref}`step-136` — *cited on this page*: Cited on this page as PAT-MIM-FREESCALE; the inventory describes it as: A MiM capacitor over planarised interconnect, with a via etch that stops on the plates and the interconnect together.
-* {ref}`step-137` — *cited on this page*: Cited on this page as PAT-MIM-FREESCALE; the inventory describes it as: A MiM capacitor over planarised interconnect, with a via etch that stops on the plates and the interconnect together.
-* {ref}`step-144` — *cited on this page*: Cited on this page as PAT-MIM-FREESCALE; the inventory describes it as: A MiM capacitor over planarised interconnect, with a via etch that stops on the plates and the interconnect together.
-* {ref}`step-145` — *cited on this page*: Cited on this page as PAT-MIM-FREESCALE; the inventory describes it as: A MiM capacitor over planarised interconnect, with a via etch that stops on the plates and the interconnect together.
-* {ref}`step-150` — *cited on this page*: Cited on this page as PAT-MIM-FREESCALE; the inventory describes it as: A MiM capacitor over planarised interconnect, with a via etch that stops on the plates and the interconnect together.
-* {ref}`step-151` — *cited on this page*: Cited on this page as PAT-MIM-FREESCALE; the inventory describes it as: A MiM capacitor over planarised interconnect, with a via etch that stops on the plates and the interconnect together.
-* {ref}`step-160` — *cited on this page*: Cited on this page as PAT-MIM-FREESCALE; the inventory describes it as: A MiM capacitor over planarised interconnect, with a via etch that stops on the plates and the interconnect together.
+* {ref}`step-135`, {ref}`step-136`, {ref}`step-137`, {ref}`step-144`, {ref}`step-145`, {ref}`step-150`, {ref}`step-151`, {ref}`step-160` — *cited on this page*: Cited on this page as PAT-MIM-FREESCALE; the inventory describes it as: A MiM capacitor over planarised interconnect, with a via etch that stops on the plates and the interconnect together.
 
 **Inventory:** `PAT-MIM-FREESCALE`
 
@@ -7088,9 +6670,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-oxidation` — *cited on this page*: Cited on this page as PAT-STI-LATTICE, a patent titled "Shallow trench isolation (STI) with trench liner of increased thickness".
-* {ref}`step-007` — *cited on this page*: Cited on this page as PAT-STI-LATTICE, a patent titled "Shallow trench isolation (STI) with trench liner of increased thickness".
-* {ref}`step-010` — *cited on this page*: Cited on this page as PAT-STI-LATTICE, a patent titled "Shallow trench isolation (STI) with trench liner of increased thickness".
+* {ref}`category-oxidation`, {ref}`step-007`, {ref}`step-010` — *cited on this page*: Cited on this page as PAT-STI-LATTICE, a patent titled "Shallow trench isolation (STI) with trench liner of increased thickness".
 
 **Inventory:** `PAT-STI-LATTICE`
 
@@ -7134,8 +6714,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-wet-bench` — *cited on this page*: Cited on this page as PAT-DICO2-MKS; the inventory describes it as: CO₂-dissolved DI water for wet cleaning, whose dissolved CO₂ lowers the water's resistivity "to a level that prevents surface charging".
-* {ref}`material-ultrapure-water` — *cited on this page*: Cited on this page as PAT-DICO2-MKS; the inventory describes it as: CO₂-dissolved DI water for wet cleaning, whose dissolved CO₂ lowers the water's resistivity "to a level that prevents surface charging".
+* {ref}`machine-wet-bench`, {ref}`material-ultrapure-water` — *cited on this page*: Cited on this page as PAT-DICO2-MKS; the inventory describes it as: CO₂-dissolved DI water for wet cleaning, whose dissolved CO₂ lowers the water's resistivity "to a level that prevents surface charging".
 
 **Inventory:** `PAT-DICO2-MKS`
 
@@ -7171,8 +6750,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming the SONOS top oxide and a logic gate oxide in the same oxidation, and it is not evidence that the technique is used in SKY130.
-* {ref}`step-043` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming the SONOS top oxide and a logic gate oxide in the same oxidation, and it is not evidence that the technique is used in SKY130.
+* {ref}`step-040`, {ref}`step-043` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming the SONOS top oxide and a logic gate oxide in the same oxidation, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01 (retrieved 2026-09-14).
 
@@ -7210,11 +6788,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`overview-index` — *cited on this page*: Cited on this page as PAT-02; the inventory describes it as: Tunnel oxide "from about 15 Å to about 22 Å", multi-layer charge-trapping layer "about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å".
-* {ref}`step-003` — *cited on this page*: Cited on this page as PAT-02; the inventory describes it as: Tunnel oxide "from about 15 Å to about 22 Å", multi-layer charge-trapping layer "about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å".
-* {ref}`step-039` — *cited on this page*: Cited on this page as PAT-02; the inventory describes it as: Tunnel oxide "from about 15 Å to about 22 Å", multi-layer charge-trapping layer "about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å".
-* {ref}`step-040` — *cited on this page*: Cited on this page as PAT-02; the inventory describes it as: Tunnel oxide "from about 15 Å to about 22 Å", multi-layer charge-trapping layer "about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å".
-* {ref}`step-042` — *cited on this page*: Cited on this page as PAT-02; the inventory describes it as: Tunnel oxide "from about 15 Å to about 22 Å", multi-layer charge-trapping layer "about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å".
+* {ref}`overview-index`, {ref}`step-003`, {ref}`step-039`, {ref}`step-040`, {ref}`step-042` — *cited on this page*: Cited on this page as PAT-02; the inventory describes it as: Tunnel oxide "from about 15 Å to about 22 Å", multi-layer charge-trapping layer "about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å".
 * {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a SONOS oxide-nitride-oxide stack with oxynitride layers, the subject of this page on its reading, and it is not evidence that the technique is used in SKY130.
 
 **Inventory:** `PAT-02`
@@ -7327,27 +6901,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-vertical-furnace-lpcvd` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`machine-vertical-furnace-oxidation` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`overview-index` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-018` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-019` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-020` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-027` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-028` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-034` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-035` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-037` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-039` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-040` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-041` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-042` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-043` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-044` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-045` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-046` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-047` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
-* {ref}`step-071` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
+* {ref}`machine-vertical-furnace-lpcvd`, {ref}`machine-vertical-furnace-oxidation`, {ref}`overview-index`, {ref}`step-018`, {ref}`step-019`, {ref}`step-020`, {ref}`step-027`, {ref}`step-028`, {ref}`step-034`, {ref}`step-035`, {ref}`step-037`, {ref}`step-039`, {ref}`step-040`, {ref}`step-041`, {ref}`step-042`, {ref}`step-043`, {ref}`step-044`, {ref}`step-045`, {ref}`step-046`, {ref}`step-047`, {ref}`step-071` — *cited on this page*: Cited on this page as PAT-03, a patent titled "Integration of non-volatile charge trap memory devices and logic CMOS devices".
 * {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns integrating a SONOS charge-trap stack with logic CMOS, the subject of this page on its reading, and it is not evidence that the technique is used in SKY130.
 
 **Inventory:** `PAT-03`
@@ -7589,8 +7143,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-168` — *cited on this page*: Cited on this page as PAT-TESTLINE-TSMC; the inventory describes it as: Parametric testlines and their probe pads in the scribe line.
-* {ref}`step-171` — *cited on this page*: Cited on this page as PAT-TESTLINE-TSMC; the inventory describes it as: Parametric testlines and their probe pads in the scribe line.
+* {ref}`step-168`, {ref}`step-171` — *cited on this page*: Cited on this page as PAT-TESTLINE-TSMC; the inventory describes it as: Parametric testlines and their probe pads in the scribe line.
 
 **Inventory:** `PAT-TESTLINE-TSMC`
 
@@ -7767,8 +7320,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming the lower ONO layers before the logic channel implants and the top ONO layer with the logic gate oxide, and it is not evidence that the technique is used in SKY130.
-* {ref}`step-043` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming the lower ONO layers before the logic channel implants and the top ONO layer with the logic gate oxide, and it is not evidence that the technique is used in SKY130.
+* {ref}`step-040`, {ref}`step-043` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming the lower ONO layers before the logic channel implants and the top ONO layer with the logic gate oxide, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search, cited-by-seed — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01; Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation), priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8796098B1, US8940645B2 (Google Patents citation tables).
 
@@ -7801,10 +7353,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-plasma-etcher-metal` — *cited on this page*: Cited on this page as PAT-MIM-TI-ETCH; the inventory describes it as: A selective plasma etch of MiM top electrodes that removes no more than 100 Å of the dielectric.
-* {ref}`material-etch-gases` — *cited on this page*: Cited on this page as PAT-MIM-TI-ETCH; the inventory describes it as: A selective plasma etch of MiM top electrodes that removes no more than 100 Å of the dielectric.
-* {ref}`step-138` — *cited on this page*: Cited on this page as PAT-MIM-TI-ETCH; the inventory describes it as: A selective plasma etch of MiM top electrodes that removes no more than 100 Å of the dielectric.
-* {ref}`step-153` — *cited on this page*: Cited on this page as PAT-MIM-TI-ETCH; the inventory describes it as: A selective plasma etch of MiM top electrodes that removes no more than 100 Å of the dielectric.
+* {ref}`machine-plasma-etcher-metal`, {ref}`material-etch-gases`, {ref}`step-138`, {ref}`step-153` — *cited on this page*: Cited on this page as PAT-MIM-TI-ETCH; the inventory describes it as: A selective plasma etch of MiM top electrodes that removes no more than 100 Å of the dielectric.
 
 **Inventory:** `PAT-MIM-TI-ETCH`
 
@@ -7969,35 +7518,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`machine-wet-bench` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`material-dopant-sources` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`materials-index` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`material-substrates` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`material-wet-chemicals` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`overview-index` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-001` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-002` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-007` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-008` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-015` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-020` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-023` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-024` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-035` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-036` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-037` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-038` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-039` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-040` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-041` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-042` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-043` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-044` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-045` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-046` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-047` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-071` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
-* {ref}`step-072` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
+* {ref}`machine-wet-bench`, {ref}`material-dopant-sources`, {ref}`materials-index`, {ref}`material-substrates`, {ref}`material-wet-chemicals`, {ref}`overview-index`, {ref}`step-001`, {ref}`step-002`, {ref}`step-007`, {ref}`step-008`, {ref}`step-015`, {ref}`step-020`, {ref}`step-023`, {ref}`step-024`, {ref}`step-035`, {ref}`step-036`, {ref}`step-037`, {ref}`step-038`, {ref}`step-039`, {ref}`step-040`, {ref}`step-041`, {ref}`step-042`, {ref}`step-043`, {ref}`step-044`, {ref}`step-045`, {ref}`step-046`, {ref}`step-047`, {ref}`step-071`, {ref}`step-072` — *cited on this page*: Cited on this page as PAT-04, a patent titled "Embedded SONOS based memory cells".
 * {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns embedded SONOS memory cells built in a CMOS flow with an ONO stack, the subject of this page on its reading, and it is not evidence that the technique is used in SKY130.
 
 **Inventory:** `PAT-04`
@@ -8239,8 +7760,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`materials-index` — *cited on this page*: Cited on this page as PAT-RRAM-OXIDE-TSMC, a patent titled "Oxide film scheme for RRAM structure".
-* {ref}`overview-sky130b-reram` — *cited on this page*: Cited on this page as PAT-RRAM-OXIDE-TSMC, a patent titled "Oxide film scheme for RRAM structure".
+* {ref}`materials-index`, {ref}`overview-sky130b-reram` — *cited on this page*: Cited on this page as PAT-RRAM-OXIDE-TSMC, a patent titled "Oxide film scheme for RRAM structure".
 
 **Inventory:** `PAT-RRAM-OXIDE-TSMC`
 
@@ -8293,8 +7813,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a two-step gate oxidation that forms the SONOS blocking oxide from a cap layer together with the logic gate oxide, and it is not evidence that the technique is used in SKY130.
-* {ref}`step-043` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a two-step gate oxidation that forms the SONOS blocking oxide from a cap layer together with the logic gate oxide, and it is not evidence that the technique is used in SKY130.
+* {ref}`step-040`, {ref}`step-043` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a two-step gate oxidation that forms the SONOS blocking oxide from a cap layer together with the logic gate oxide, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search, cited-by-seed — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14); cited by US9824895B1 (Google Patents citation tables).
 
@@ -8369,9 +7888,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-165` — *cited on this page*: Cited on this page as PAT-EDGESEAL-GF; the inventory describes it as: An edge seal etched through the dielectrics and lined with passivation, made with one mask.
-* {ref}`step-166` — *cited on this page*: Cited on this page as PAT-EDGESEAL-GF; the inventory describes it as: An edge seal etched through the dielectrics and lined with passivation, made with one mask.
-* {ref}`step-167` — *cited on this page*: Cited on this page as PAT-EDGESEAL-GF; the inventory describes it as: An edge seal etched through the dielectrics and lined with passivation, made with one mask.
+* {ref}`step-165`, {ref}`step-166`, {ref}`step-167` — *cited on this page*: Cited on this page as PAT-EDGESEAL-GF; the inventory describes it as: An edge seal etched through the dielectrics and lined with passivation, made with one mask.
 
 **Inventory:** `PAT-EDGESEAL-GF`
 
@@ -8411,8 +7928,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns integrating SONOS transistors into a CMOS flow with three gate-oxide thicknesses, and it is not evidence that the technique is used in SKY130.
-* {ref}`step-043` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns integrating SONOS transistors into a CMOS flow with three gate-oxide thicknesses, and it is not evidence that the technique is used in SKY130.
+* {ref}`step-040`, {ref}`step-043` — *same-lineage assignee*: Original assignee Cypress Semiconductor, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns integrating SONOS transistors into a CMOS flow with three gate-oxide thicknesses, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** citing-seed — cites US8796098B1 (Google Patents citation tables).
 
