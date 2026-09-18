@@ -76,8 +76,8 @@ clean, for a 200 mm, 130 nm-era fab:
 
 1. **Plasma {term}`ash`.** Downstream O₂/N₂ plasma; a single hot step often
    suffices for a light implant, though a fab that runs all implant
-   strips on one recipe will use the two-step sequence
-   anyway.[^fujimura-1989][^pat-strip-mosel] The three ashers on
+   strips on one recipe will use the cold-then-hot two-step sequence
+   anyway.[^pat-strip-mosel] The three ashers on
    SkyWater's list cover the gases and temperatures.[^skw-01]
 2. **Wet strip and clean.** {term}`SPM` for organics, SC-1 for particles and,
    because a furnace step may follow, SC-2 (HCl/H₂O₂/H₂O) for
@@ -165,8 +165,10 @@ clean, for a 200 mm, 130 nm-era fab:
   sequence.[^kern-1970]
 * Kern, *J. Electrochem. Soc.* 1990 — the evolution of wafer
   cleaning.[^kern-1990]
-* Fujimura et al., *Jpn. J. Appl. Phys.* 1989 — ashing implanted
-  resist.[^fujimura-1989]
+* Fujimura et al., *Jpn. J. Appl. Phys.* 1989 — the carbonised layer
+  of implanted resist and a two-step H₂-RIE-plus-downstream ashing
+  process, a different two-step sequence from the cold-then-hot one
+  this page describes.[^fujimura-1989]
 * Fujimura et al., *Jpn. J. Appl. Phys.* 1990 — nitrogen additions in
   downstream ashing.[^fujimura-1990]
 * Lee, *Electrochem. Solid-State Lett.* 1999 — silicon etch rate in
