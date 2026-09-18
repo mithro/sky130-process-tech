@@ -6606,6 +6606,9 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (buried well), retrieved 2026-09-19; named by the round-1 review.
 
+**Notes:**
+* Round-3 verification finding M1: this family is marked expired solely on a maintenance-fee lapse, not on its own adjusted-expiration date (2027-01-30, in the future). US8513753B1's own cached Google Patents legal events (fetched 2026-09-19) show: maintenance-fee reminder 2025-04-07 (37 CFR 1.362, large entity), lapse for non-payment 2025-09-22 (event code LAPS, "PATENT EXPIRED FOR FAILURE TO PAY MAINTENANCE FEES"), and patent discontinuation the same day (event code STCH, citing 37 CFR 1.362). As with GP50930700 (round-1 finding M4), a US patent lapsed for fees can be reinstated within an unintentional-delay petition window (37 CFR 1.378(a)/(c)); two years from the 2025-09-22 lapse puts that window open until about 2027-09-22 — still open as of this note's date, and unlike GP50930700 the window has not yet closed. Kept \`expired: true\` per the design's status rule (a legal\_status of 'Expired - Fee Related' marks a member ended whatever the date), but this family is the stronger case for treating the status as provisional; see the legal caveat on the landing page.
+
 **Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US8513753B1/en
 
 :::{dropdown} US 7,705,268 B2 — shown as in force; estimated expiry 2026-12-17
