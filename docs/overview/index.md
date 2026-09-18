@@ -700,6 +700,14 @@ TiN",[^skw-01] so the fab as publicly described can build and etch either
 stack. The one public SKY130 talk that names titanium nitride names it as
 the {term}`local interconnect`, not as a metal cap.[^ann-16]
 
+The step list is not evidence either way. It carries "TiW" in the name
+of every aluminium deposition and of both capacitor-plate depositions,
+and describes step 149 as "Al Cu 2/TiW deposition".[^steps-sheet] Under
+this reference's own rule a step name is evidence of what the sheet
+calls the step, not of the films it deposits, so those names are not
+counted here; {ref}`WTIAL4 <step-149>` sets the point out for its own
+step.
+
 (overview-metal-cap-reading)=
 ### The reading used in this reference
 
