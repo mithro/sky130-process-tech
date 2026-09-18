@@ -18,7 +18,9 @@ reading, as set out below — sputtered over the thin capacitor
 dielectric of {ref}`CAPILD <step-135>`, which itself lies on the unpatterned
 metal-3 stack of {ref}`WTIAL3 <step-134>`. At this moment the wafer
 carries, from the bottom, the metal-3 conductor (Ti/Al–Cu/TiW on the
-public description of the S8 metal stacks[^cyp-qtp-113005]), the
+2013 Cypress description of this fab's S8TNV-5R, or the Ti/TiN-clad
+stack qualified in 2013–2014 — {ref}`overview-metal-cap`
+— [^cyp-qtp-113005][^cyp-qtp-123907]), the
 capacitor dielectric and this TiW — a complete
 metal–insulator–metal sandwich across the whole wafer. The
 {ref}`CAPM <step-137>` mask and {ref}`CAPME <step-138>` etch then
@@ -30,8 +32,11 @@ page calls the top plate "a thin conductor layer on top of the
 dielectric" and gives its {term}`sheet resistance`, `RSCAPM`, as
 5.8 Ω/sq (limits 4.8–6.8);[^pdk-07] this reference describes it as
 TiW (inference: TiW is among SkyWater's PVD films and its metal
-etchers' listed materials,[^skw-01] and is the cap of the
-aluminium stacks[^cyp-qtp-113005]).
+etchers' listed materials,[^skw-01] and is the cap of the aluminium
+stacks on the 2013 Cypress description of this
+fab[^cyp-qtp-113005] — though not on the stack qualified in
+2013–2014,[^cyp-qtp-123907] which weakens that second argument; see
+{ref}`overview-metal-cap`).
 {ref}`CAPTIW2 <step-151>` is the corresponding step for the second
 capacitor.
 
@@ -43,7 +48,7 @@ industry-typical 50–100 µΩ·cm for refractory barrier
 films,[^txt-02] a 5.8 Ω/sq sheet corresponds to
 {math}`d = \rho / R_s \approx 0.09`–0.17 µm. We therefore read the
 top plate as roughly 0.1 µm of TiW (inferred; our arithmetic), several
-times thicker than the 300 Å TiW cap of the metal stacks[^cyp-qtp-113005]
+times thicker than the 300 Å TiW cap of the 2013 metal stacks[^cyp-qtp-113005]
 and several times thicker than the dielectric beneath it. Its role is
 electrical (a low-resistance plate, in series with the capacitor in
 the PDK's sub-circuit model, which "accounts for the parasitic contact
@@ -90,9 +95,12 @@ plate of the published Newport Fab process[^pat-mim-newportfab]).
   ({ref}`CAPME <step-138>`), (iii) withstands the chlorine chemistry
   of the later aluminium etch under resist and the fluorine
   chemistry of the via etch as a stop, and (iv) is already in the
-  fab. TiW satisfies all four: it is the cap of every SKY130
-  aluminium level ({ref}`TIAL6 <step-112>`; SkyWater lists "TiW"
-  among its PVD films[^skw-01]), a barrier whose properties Nicolet
+  fab. TiW satisfies all four: it caps the aluminium levels on the
+  2013 Cypress description of this fab, though not on the stack
+  qualified in 2013–2014[^cyp-qtp-113005][^cyp-qtp-123907]
+  ({ref}`TIAL6 <step-112>`, {ref}`overview-metal-cap`), and SkyWater
+  lists "TiW" among its PVD films;[^skw-01] it is a barrier whose
+  properties Nicolet
   reviewed and Ghate et al. established,[^nicolet-1978][^ghate-1978]
   it etches in fluorine plasmas (tungsten as WF₆ in SF₆,[^turban-1989]
   TiW in CF₄-based mixtures[^liu-2007-tiw]) and in hydrogen peroxide, which
@@ -104,7 +112,17 @@ plate of the published Newport Fab process[^pat-mim-newportfab]).
   tantalum nitride, aluminium or a composite stack"; US 8,110,414's
   top electrode "comprises TiN");[^pat-mim-newportfab][^pat-mim-ti-etch]
   the electrode materials of the Kar-Roy and Babcock papers are not
-  stated in their public abstracts.[^kar-roy-1999][^babcock-2001] TI's
+  stated in their public abstracts.[^kar-roy-1999][^babcock-2001] The
+  balance between the two candidates turns partly on the unresolved
+  question of what caps metal 3 ({ref}`overview-metal-cap`): if the cap
+  is TiW, a TiW plate is the film the fab already puts on this surface,
+  but plate and cap are then the same material and
+  {ref}`CAPME <step-138>` has nothing selective to stop on; if the cap
+  is TiN, a TiW plate over a TiN cap gives the etch two different films
+  — the arrangement the Philips process relies on, stopping "in the TiN
+  ARC film that coats the M5 layer and forms the bottom
+  electrode"[^pat-mim-philips] — and a TiN plate would make the fab's
+  choice the same as every MiM patent in this module.[^pat-mim-newportfab][^pat-mim-ti-etch] TI's
   later "ALCAP" scheme instead caps the top electrode with aluminium,
   over a Ta- or TaN-based bottom electrode/copper-diffusion barrier
   and sidewall spacers, on a copper back end[^pat-mim-ti-alcap] —
@@ -252,6 +270,9 @@ back end (SKY130's recipe is not public):
   tungsten and of TiW that makes the plate patternable.[^turban-1989][^liu-2007-tiw]
 * Danzl and McLaurin, IEMT 1997 — peroxide removal of a TiW cap from
   aluminium, the wet alternative.[^danzl-1997]
+* Olewine and Saiz (Philips), US 6,717,193 — a MiM whose top-electrode
+  etch stops in the TiN anti-reflective cap of the metal below, the
+  case where plate and cap are different films.[^pat-mim-philips]
 * Kar-Roy et al., IITC 1999, and Babcock et al., *IEEE EDL* 2001 —
   capacitance density and frequency dispersion of published Al-BEOL
   PECVD-nitride MiMs, though neither abstract names an electrode
@@ -269,9 +290,12 @@ back end (SKY130's recipe is not public):
 ## Open questions
 
 * The PDK names the top plate only "a thin conductor layer";[^pdk-07]
-  TiW is this reference's inference from the Cypress metal-stack
+  TiW is this reference's inference from the 2013 Cypress metal-stack
   caps[^cyp-qtp-113005] and SkyWater's film and etcher lists,[^skw-01]
-  which would equally allow TiN.
+  which would equally allow TiN. The 2014 metal-stack change weakens
+  the first of those arguments, since the stack it qualified has no TiW
+  below the top metal;[^cyp-qtp-123907] see
+  {ref}`overview-metal-cap`.
 * The top-plate thickness, composition (Ti fraction, nitrogen
   content) and deposition conditions are not public; ~0.1 µm is our
   estimate from `RSCAPM`[^pdk-07] with an assumed resistivity.
@@ -414,3 +438,16 @@ back end (SKY130's recipe is not public):
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^cyp-qtp-123907]: Cypress Semiconductor, *Fab Process Qualification
+    Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8
+    Technology, Fab 4 CMI*, document 001-91369 Rev. **, March 2014 (copy
+    hosted by Tokyo Electron Device as the attachment to Cypress Product
+    Information Notification PIN145273, 2014-03-13, which states the
+    report is attached and available from cypress.com;
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
+[^pat-mim-philips]: M. C. Olewine and K. F. Saiz (Koninklijke Philips
+    Electronics), *Metal-insulator-metal (MIM) capacitor structure and
+    methods of fabricating same*, US 6,717,193 B2, filed 2001-10-09,
+    granted 2004-04-06.
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6717193>

@@ -25,9 +25,13 @@ treats the strip and post-etch clean as part of this step.
 What makes this etch unlike any other in the process is what lies
 under the film being removed. Beneath the TiW is a dielectric some
 20–30 nm thick (our estimate at {ref}`CAPILD <step-135>`), and beneath
-*that* is the metal-3 stack — on the public description of the S8
-metal stacks, a 300 Å TiW cap over Al–0.5%Cu[^cyp-qtp-113005] — which
-is not yet patterned and must be etched, with its dielectric, at
+*that* is the metal-3 stack, whose cap is a refractory film of unknown
+identity: 300 Å of TiW on the 2013 Cypress description of this fab's
+S8TNV-5R, or 500 Å of TiN over 90 Å of titanium on the stack qualified
+in 2013–2014, the February 2014 S8P qualification having excluded only
+"top metal layers" and metal 3 not being one of them on this
+reference's reading[^cyp-qtp-113005][^cyp-qtp-123907]
+({ref}`overview-metal-cap`). It is not yet patterned and must be etched, with its dielectric, at
 {ref}`MM3E <step-140>`. If `CAPME` etched through the dielectric it
 would begin to consume the bottom plate's cap everywhere outside the
 capacitors, and the capacitor's edge would be a dielectric sidewall
@@ -53,19 +57,58 @@ top plate and the nitride dielectric together and then protects the
 stack's sidewall with an oxide spacer.[^pat-mim-newportfab]
 
 Which of the two SKY130 follows — stop on the dielectric, or cut
-through it — is not public. The PDK's `cap_mim` cross-section draws
-the thin "CAPILD" layer with exactly the lateral extent of the "CAPM"
-plate above it, over a much wider "M3 (plate 1)";[^pdk-07] read
-literally, that shows the dielectric removed outside the plate, but
-the drawing is a schematic and cannot show a few nanometres of
-residual film. Against the literal reading stands the stack itself:
-under the dielectric lies the metal-3 cap, which is the same TiW the
-etch is removing,[^cyp-qtp-113005] so an etch that cleared the
-dielectric would have no selective layer left to stop on — although
-the Philips process shows that a through-etch can be stopped by rate
-control on the bottom-electrode cap.[^pat-mim-philips] We therefore
-describe the stop-on-dielectric version as the more plausible
-(inference) and record the other under *Open questions*.
+through it — is not public, and the public numbers bear on it in two
+ways. The PDK's `cap_mim` cross-section draws the thin "CAPILD" layer
+with exactly the lateral extent of the "CAPM" plate above it, over a
+much wider "M3 (plate 1)";[^pdk-07] read literally, that shows the
+dielectric removed outside the plate, but the drawing is a schematic
+and cannot show a few nanometres of residual film.
+
+Against the literal reading stands the selectivity available. For a
+TiW plate the only public number is Liu and Kuo's: etching TiW in
+CF₄-based plasmas they report that "an etch selectivity of greater than
+2 was achieved under the low ion bombardment condition" against
+plasma-enhanced CVD silicon nitride.[^liu-2007-tiw] At a selectivity of
+2, clearing 0.1 µm of plate would cost some 50 nm of dielectric — more
+than the whole capacitor dielectric on this reference's estimate (our
+arithmetic) — so a fluorine-driven TiW etch cannot stop cleanly on a
+20–30 nm film. The comparable published figure for the other plate
+material is four times better: the Texas Instruments patent, whose top
+electrode is TiN and whose dielectric is silicon-based, reports that
+"an etch rate selectivity of the TiN to the silicon comprising
+dielectric layer is at least 8:1", and its worked Example 1 does much
+better still. There a 1 800 Å TiN top electrode over "a 250 A thick
+dielectric stack comprising silicon oxide/SiON/silicon oxide" on an
+aluminium bottom electrode was etched on an Applied Materials DPS with
+"Cl2:90 sccm, Ar:10 sccm, CHF3:10 sccm" at 15 mTorr, 25 W bias and an
+800 W source; "the TiN:oxide selectivity was found to be 210:1 and the
+TiN etch rate was found to be about 1,800 A/min", and "a 365 nm
+wavelength … was used to allow the TiN etch to endpoint on the thin
+silicon oxide layer".[^pat-mim-ti-etch] That is a published
+stop-on-dielectric etch of a MiM top plate over an aluminium bottom
+electrode, on a dielectric ten times thinner than the plate — the
+operation this step performs — and it is the strongest public reason to
+read the SKY130 recipe as chlorine-majority with a small fluorine
+addition rather than as a fluorine-driven etch (inference). It is also
+a reason to expect the plate to be TiN rather than TiW, since the
+210:1 figure is a TiN number and the only published TiW number is 2
+({ref}`CAPTIW1 <step-136>`).
+
+What the etch would have left to stop on if it did cut through depends
+on the unresolved metal-3 cap. If the cap is TiW — the same material as
+the plate on this reference's reading of {ref}`CAPTIW1 <step-136>` — a
+through-etch would have no selective layer left beneath the dielectric.
+If it is the Ti/TiN of the stack qualified in 2014, plate and cap are
+different films and the through-etch has a stop: that is exactly the
+Philips process, in which "the etch is controlled to stop in the TiN
+ARC film that coats the M5 layer and forms the bottom
+electrode".[^pat-mim-philips][^cyp-qtp-123907] So the choice between
+the two `CAPME` variants turns partly on a question about the metal-3
+cap that the public record does not settle
+({ref}`overview-metal-cap`). This reference describes the
+stop-on-dielectric version as the more plausible (inference), on the
+selectivity argument above and on the same-material case, and records
+the other under *Open questions*.
 Either way, after this step the wafer carries TiW islands a fraction
 of a micrometre high over blanket metal 3, and the
 {ref}`MM3 <step-139>` resist is coated over that topography.
@@ -80,7 +123,13 @@ and Petri, Henry and Sadeghi's[^petri-1992]), so fluorine-based
 chemistries attack the tungsten-rich TiW readily; Liu and Kuo,
 etching TiW in CF₄/O₂, CF₄/Cl₂ and CF₄/HCl plasmas, found both
 fluorine and chlorine effective etchants, with the rate set by the
-etchant concentration and the ion energy.[^liu-2007-tiw] Chlorine
+etchant concentration and the ion energy. Their selectivity to PECVD
+silicon nitride, however, was only "greater than 2 … under the low ion
+bombardment condition",[^liu-2007-tiw] against the "at least 8:1" the
+TI patent reports for a TiN top electrode over a silicon-based
+dielectric;[^pat-mim-ti-etch] at a selectivity of 2 an etch clearing
+0.1 µm of TiW would consume more dielectric than the capacitor has (our
+arithmetic). Chlorine
 also etches both metals — Fischl and Hess studied tungsten in
 chlorine discharges[^fischl-1987] — and the TI recipe's majority
 Cl₂ (or Br₂) with a small fluorocarbon addition[^pat-mim-ti-etch] is,
@@ -89,7 +138,7 @@ while the oxide-like dielectric, which chlorine alone barely etches,
 is attacked only by the small fluorine fraction. What is specific
 to this instance within the flow is the stop: the other refractory
 etches (the TiN local interconnect of {ref}`LI1ME <step-103>`, the
-TiW caps opened at the start of every aluminium etch) land on thick
+caps opened at the start of every aluminium etch) land on thick
 oxide or continue into aluminium; this one must land on a film thinner
 than its own {term}`over-etch` would normally consume.
 
@@ -103,8 +152,9 @@ than its own {term}`over-etch` would normally consume.
   into those two numbers.
 * **It must not open the dielectric.** Outside the plates the
   dielectric is all that separates the plasma from the metal-3 cap.
-  Because fluorine etches TiW, punching through would thin the cap
-  of every metal-3 line (the film {ref}`VIM3E <step-145>` later
+  Because fluorine etches both candidate caps — TiW as WF₆ and TiF₄,
+  TiN as TiF₄ — punching through would thin the cap of every metal-3
+  line (the film {ref}`VIM3E <step-145>` later
   stops on) and expose aluminium to a fluorine plasma, which forms
   involatile AlF₃ rather than etching it[^hess-1982][^pat-mim-ti-etch] — a residue the
   {ref}`MM3E <step-140>` chlorine etch would then have to break
@@ -291,7 +341,9 @@ end (SKY130's recipe is not public):
 * Danzl and McLaurin, IEMT 1997 — peroxide etching of TiW, the wet
   chemistry this etch's clean must avoid.[^danzl-1997]
 * Cathey et al. (TI), US 8,110,414 — selective plasma etch of MiM
-  top electrodes.[^pat-mim-ti-etch]
+  top electrodes; its Example 1 gives a complete Cl₂/Ar/CHF₃ recipe and
+  a 210:1 TiN-to-oxide selectivity on an aluminium bottom
+  electrode.[^pat-mim-ti-etch]
 * Olewine and Saiz (Philips), US 6,717,193 — a multi-rate etch of the
   top electrode and insulator that slows near their interface and
   stops close to the bottom electrode's TiN ARC.[^pat-mim-philips]
@@ -307,9 +359,17 @@ end (SKY130's recipe is not public):
   that the dielectric is patterned with the plate) is not public. The
   PDK's schematic cross-section draws the dielectric only under the
   plate,[^pdk-07] which read literally favours the latter; we describe
-  the former because the metal-3 TiW cap beneath offers no selective
-  stop for a through-etch (inference), although a rate-controlled
-  stop of the Philips kind[^pat-mim-philips] would be possible.
+  the former because the only published TiW-to-nitride selectivity is
+  "greater than 2"[^liu-2007-tiw] — too low for an etch that must land
+  on 20–30 nm — and because, if the metal-3 cap is the same TiW as the
+  plate, a through-etch has no selective stop (inference). A
+  rate-controlled stop of the Philips kind[^pat-mim-philips] would be
+  possible, and would be much easier if the metal-3 cap were the TiN of
+  the stack qualified in 2014;[^cyp-qtp-123907] see
+  {ref}`overview-metal-cap`.
+* Which refractory film caps metal 3 is itself not public, and this
+  page's central conclusion depends on it
+  ({ref}`overview-metal-cap`).
 * The chemistry, endpoint, over-etch and dielectric loss of the etch
   are not public.
 * Whether the plate edge receives a spacer or other edge treatment,
@@ -437,3 +497,11 @@ end (SKY130's recipe is not public):
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
+[^cyp-qtp-123907]: Cypress Semiconductor, *Fab Process Qualification
+    Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8
+    Technology, Fab 4 CMI*, document 001-91369 Rev. **, March 2014 (copy
+    hosted by Tokyo Electron Device as the attachment to Cypress Product
+    Information Notification PIN145273, 2014-03-13, which states the
+    report is attached and available from cypress.com;
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>

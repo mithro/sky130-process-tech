@@ -17,7 +17,7 @@ of the flow. Onto the polished cap oxide and tungsten via-2 plugs left
 by {ref}`WCMP4 <step-133>` a sputtering cluster tool lays down, in one
 vacuum sequence on our reading, a thin refractory bottom layer, a
 much thicker aluminium–copper alloy than at metals 1 and 2, and a
-titanium–tungsten cap. The stack is blanket and stays blanket for
+refractory cap. The stack is blanket and stays blanket for
 longer than any other metal in the flow: before {ref}`MM3 <step-139>`
 and {ref}`MM3E <step-140>` pattern it into the `met3` layer (GDS
 70:20, "Metal 3"[^pdk-06]), the MiM capacitor module of
@@ -61,6 +61,25 @@ inference. The metal-3 rules are coarser than the levels
 below: 0.300 µm width and space (m3.1, m3.2), 0.240 µm² minimum area
 (m3.6), and 0.065 µm enclosure of via 2 (m3.4).[^pdk-periph]
 
+**On the cap.** Which refractory film caps this stack is not public,
+and the same two reports point different ways. The 2013 S8TNV-5R
+description gives a 300 Å TiW cap at every level, and the R7FT-3R
+report the same at its thick metal 3;[^cyp-qtp-113005][^cyp-qtp-014807]
+the 2014 report records the S8P metal stack as qualified for a change
+"from Ti/AlCu/TiW to Ti/TiN/ALCu/Ti/TiN, excluding top metal
+layers",[^cyp-qtp-123907] and in a five-metal S8P flow metal 3 is not a
+top metal layer — a via connects it to metal 4.[^pdk-periph] Against
+that, the PDK's 0.845 µm for `met3` exceeds its 0.8 µm antenna
+thickness by exactly the 450 Å of titanium plus TiW that clad the
+Cypress stacks, where the 2014 stack's cladding is 990 Å (our
+arithmetic).[^pdk-03][^pdk-04] This reference describes the cap as
+"TiW or TiN" and writes its recipes for the TiW case; the whole of the
+evidence, the counter-checks and the statements that depend on the
+choice are set out under {ref}`overview-metal-cap`. This module is
+where the choice matters most, because the cap is also the MiM
+capacitor's bottom-electrode surface
+({ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>`).
+
 **On the bottom layer.** The public evidence allows a TiW bottom
 layer as well as a Ti one: the S8DI thick metal 3 of the 2014 report
 is "500A TiW/…/300A TiW",[^cyp-qtp-123907] and an older Fab 4 process
@@ -84,7 +103,7 @@ lower levels (and a 2 µm thick-metal option[^pdk-03] longer still),
 heats the wafer more, grows larger grains, and stores more stress; the film's
 hillocks, its wafer bow and its later etch ({ref}`MM3E <step-140>`)
 all scale with it. And the stack must serve as a capacitor electrode:
-its TiW cap is the surface on which {ref}`CAPILD <step-135>` deposits
+its cap is the surface on which {ref}`CAPILD <step-135>` deposits
 the MiM dielectric, so its roughness and its chemistry set the
 capacitor's leakage and matching as much as the dielectric does.
 
@@ -171,8 +190,11 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
    practice[^txt-05]); grain size and texture follow the
    structure-zone relations.[^thornton-1974][^ohring-2002]
    Thicknesses per the Cypress reports.[^cyp-qtp-113005][^cyp-qtp-123907]
-5. **TiW, 300 Å.** From a Ti:W target[^pat-tiw-hitachi] in argon;
-   thickness per the Cypress reports.[^cyp-qtp-113005][^cyp-qtp-123907]
+5. **Cap, 300 Å.** On the TiW reading, from a Ti:W
+   target[^pat-tiw-hitachi] in argon; thickness per the Cypress
+   reports.[^cyp-qtp-113005][^cyp-qtp-123907] On the 2014 stack it is
+   90 Å of titanium and 500 Å of reactively sputtered TiN
+   instead[^cyp-qtp-123907] (*On the cap*, above).
    Its surface must be smooth and clean enough to carry the MiM
    dielectric of {ref}`CAPILD <step-135>` (inference from the module
    order).
@@ -226,7 +248,7 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
   {ref}`MM3 <step-139>` and {ref}`MM3E <step-140>`.
 * The plugs it contacts: {ref}`TIN4 <step-131>`, {ref}`WDEP4 <step-132>`.
 * The dielectric that will surround the lines: {ref}`NILD5 <step-141>`;
-  the via etch that stops on the TiW cap: {ref}`VIM3E <step-145>`.
+  the via etch that stops on the cap: {ref}`VIM3E <step-145>`.
 * The thin stacks below, where the films are explained in full:
   {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`; the upper thick
   metals: {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>`.
@@ -316,6 +338,12 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
   S8TNV report gives Ti,[^cyp-qtp-113005] and a TiW bottom layer is
   our inference from the S8DI and RAM42HA stack
   descriptions.[^cyp-qtp-123907][^cyp-qtp-030204]
+* Whether the cap is TiW or the Ti/TiN of the stack qualified for S8P
+  in February 2014 "excluding top metal layers" is not public, and
+  neither is which levels of a five-metal S8P flow that exclusion
+  covers;[^cyp-qtp-123907] see {ref}`overview-metal-cap`. The answer
+  changes what {ref}`CAPME <step-138>` can stop on and what
+  {ref}`VIM3E <step-145>` lands on.
 * Whether the SKY130 metal 3 is the 0.765 µm Ti/AlCu/TiW stack of the
   S8TNV report,[^cyp-qtp-113005] the 0.845 µm of the PDK's
   diagram,[^pdk-04] or the 0.8–0.85 µm of its assumptions
@@ -509,3 +537,8 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^cyp-qtp-014807]: Cypress Semiconductor, *Technology Derivative
+    Qualification Report, QTP# 014807 Version 2.0: Technology Derivative
+    R7FT-3R, Fab4, Synchronous Dual-Port RAM*, June 2005 (copy hosted by
+    Infineon Technologies).
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
