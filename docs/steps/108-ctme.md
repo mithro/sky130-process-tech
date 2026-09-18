@@ -65,7 +65,9 @@ connection between a device and the metal system:
 
 * **Contact area.** The PDK's extraction tables give an `mcon`
   152 000 mΩ — 152 Ω — against 15 000 mΩ for a `licon` and 4 500 mΩ
-  for a `via`.[^pdk-08] A W-to-TiN interface of 0.09 µm bottom
+  for a `via` (per-contact reading of the PDK's "Resistivity
+  (mohms/sq)" column; see {ref}`CTM1 <step-107>`).[^pdk-08] A
+  W-to-TiN interface of 0.09 µm bottom
   {term}`CD`[^pdk-03] has little more than a quarter of the drawn area of the
   0.17 µm top, and the taper the etch leaves, together with the
   interfacial layer the {term}`liner` forms, is on our reading why the number
@@ -179,7 +181,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   labelled "gate, trench, W/WN"[^skw-01]).
 * **Lam Exelan.** No public source places an Exelan at SkyWater; it
   appears here only as the era's typical dielectric etcher, a line
-  Lam's own 10-K lists.[^lam-10k]
+  Lam's own 10-K lists,[^lam-10k][^lam-exelan] its dual-frequency
+  confined technology aimed at "sub-130 nm geometries" per the 2001
+  launch.
 * **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; Akrion
   Gamma wet bench; batch rotational tools with "EKS265, EKC270
   solvents"; SEZ 223 / Da Vinci.**[^skw-01] Strength: strong for
