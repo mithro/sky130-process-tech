@@ -185,6 +185,11 @@ a handful of records are grouped by that date rather than a true filing date.
 
 * Cypress Semiconductor Corporation, Annual Report, filed 2002-02-28: Cypress Semiconductor 2001 Annual Report to shareholders, for the fiscal year ended 2001-12-30 ({ref}`full entry <filing-cypress-annual-report-fy2001>`)
 
+(filings-year-2000)=
+## 2000
+
+* Cypress Semiconductor Corporation, Annual Report, filed 2000-03-02: Cypress Semiconductor 1999 Annual Report to shareholders, for the fiscal year ended 2000-01-02 ({ref}`full entry <filing-cypress-annual-report-fy1999>`)
+
 (filings-year-1999)=
 ## 1999
 

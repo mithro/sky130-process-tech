@@ -17,6 +17,7 @@ links the full entry on {ref}`filings-index`.
 * Cypress Semiconductor Corporation, Annual Report, filed 1997-02-25: Cypress Semiconductor 1996 Annual Report to shareholders, for the fiscal year ended 1996-12-30 ({ref}`full entry <filing-cypress-annual-report-fy1996>`)
 * Cypress Semiconductor Corporation, Annual Report, filed 1998-03-06: Cypress Semiconductor 1997 Annual Report to shareholders, for the fiscal year ended 1997-12-29 ({ref}`full entry <filing-cypress-annual-report-fy1997>`)
 * Cypress Semiconductor Corporation, Annual Report, filed 1999-01-25: Cypress Semiconductor 1998 Annual Report to shareholders, for the fiscal year ended 1999-01-03 ({ref}`full entry <filing-cypress-annual-report-fy1998>`)
+* Cypress Semiconductor Corporation, Annual Report, filed 2000-03-02: Cypress Semiconductor 1999 Annual Report to shareholders, for the fiscal year ended 2000-01-02 ({ref}`full entry <filing-cypress-annual-report-fy1999>`)
 * Cypress Semiconductor Corporation, Annual Report (with Form 10-K), filed 2004-02-27: Cypress Semiconductor 2003 Annual Report, including the Form 10-K for the fiscal year ended 2003-12-28 ({ref}`full entry <filing-cypress-annual-report-fy2003>`)
 * Cypress Semiconductor Corporation, Annual Report (with Form 10-K), filed 2005-03-18: Cypress Semiconductor 2004 Annual Report, including the Form 10-K for the fiscal year ended 2005-01-02 ({ref}`full entry <filing-cypress-annual-report-fy2004>`)
 * Cypress Semiconductor Corporation, Annual Report (with Form 10-K and proxy statement), filed 2007-03-28: Cypress Semiconductor 2006 Annual Report and 2007 Proxy Statement, including the Form 10-K for the fiscal year ended 2006-12-31 ({ref}`full entry <filing-cypress-annual-report-fy2006>`)
@@ -150,6 +151,7 @@ links the full entry on {ref}`filings-index`.
 
 * Cypress Semiconductor Corporation, 10-K, filed 1994-03-16: Cypress Semiconductor Form 10-K for the fiscal year ended 1994-01-03 (fiscal year 1993) ({ref}`full entry <filing-cypress-annual-report-fy1993>`)
 * Cypress Semiconductor Corporation, Annual Report, filed 1996-01-19: Cypress Semiconductor 1995 Annual Report to shareholders, for the fiscal year ended 1996-01-01 ({ref}`full entry <filing-cypress-annual-report-fy1995>`)
+* Cypress Semiconductor Corporation, Annual Report, filed 2000-03-02: Cypress Semiconductor 1999 Annual Report to shareholders, for the fiscal year ended 2000-01-02 ({ref}`full entry <filing-cypress-annual-report-fy1999>`)
 * Cypress Semiconductor Corporation, Annual Report, filed 2012-02-24: Cypress Semiconductor 2011 Annual Report, including the Form 10-K for the fiscal year ended 2012-01-01 ({ref}`full entry <filing-cypress-annual-report-fy2011>`)
 * SkyWater Technology, Inc., 10-Q, filed 2022-11-10: Quarterly report on Form 10-Q for the quarter ended 2022-10-02 ({ref}`full entry <filing-skywater-10-q-2022-11-10>`)
 
