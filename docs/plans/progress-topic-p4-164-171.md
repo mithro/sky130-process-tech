@@ -43,12 +43,12 @@ left untouched.
 | 166-L2 | Low | fixed (also 169-L1 pending) | Wodecki cited for inference his paper argues against (166:124-127,220) |
 | 166-L3 | Low | fixed | hyphenation mismatch inside TSMC patent quotation (166:117-118) |
 | 166-L4 | Low | fixed | unmarked mechanical assertion about nitride closing moisture path (166:84-86) |
-| 167-M1 | Medium | open | Vanguard "comparable stack" — oxide 4-8x thicker than PDK value (167:132-135) |
-| 167-M2 | Medium | open | NTSD says polyimide "not public" while overview cites SkyWater S130 "Yes" (167:254-256, also body 56-63; overview cross-ref) |
-| 167-L1 | Low | open | dual-frequency RF stress-trim practice asserted without a source that states it (167:120-122) |
-| 167-L2 | Low | open | 0.7-0.9 um range folds 0.18 um R7FT-3R tech into S8 range without saying so (167:129-131,242-244) |
-| 167-L3 | Low | open | Sinha 1978 numbers not used though on point (167:69-71,210-211) |
-| 167-L4 | Low | open | "only processing left" overlooks strip folded into PDME (167:20-23) |
+| 167-M1 | Medium | fixed | Vanguard "comparable stack" — oxide 4-8x thicker than PDK value (167:132-135) |
+| 167-M2 | Medium | fixed (step page; overview cross-ref pending) | NTSD says polyimide "not public" while overview cites SkyWater S130 "Yes" (167:254-256, also body 56-63; overview cross-ref) |
+| 167-L1 | Low | fixed | dual-frequency RF stress-trim practice asserted without a source that states it (167:120-122) |
+| 167-L2 | Low | fixed | 0.7-0.9 um range folds 0.18 um R7FT-3R tech into S8 range without saying so (167:129-131,242-244) |
+| 167-L3 | Low | fixed | Sinha 1978 numbers not used though on point (167:69-71,210-211) |
+| 167-L4 | Low | fixed | "only processing left" overlooks strip folded into PDME (167:20-23) |
 | 168-M1 | Medium | open | "same GDS layer number (76:44) as pad" mis-states pad's own layer (168:95-96) |
 | 168-L1 | Low | open | areaid.mt rule quoted without its test-chip waiver (168:89-90; also 171:48-50) |
 | 168-L2 | Low | open | k1 sentence silently uses space vs 165's feature, no note (168:56-59) |

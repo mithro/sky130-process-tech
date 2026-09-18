@@ -17,8 +17,8 @@ a blanket nitride — on our reading a plasma (PECVD) nitride — laid over the 
 {ref}`NFUSOX <step-164>`, over the metal-5 lines and pads beneath it,
 and — on our reading of {ref}`NSM <step-165>` and
 {ref}`NSME <step-166>` — into the ring-shaped opening just etched along
-the edge of every die. After it, the only processing left on the front
-of the wafer is the pad opening ({ref}`PDM <step-168>`,
+the edge of every die. After it, the only front-side processing left is
+the pad opening with its strip and clean ({ref}`PDM <step-168>`,
 {ref}`PDME <step-169>`), the final anneal ({ref}`ALLY <step-170>`) and
 electrical test ({ref}`HPETEST <step-171>`).
 
@@ -54,13 +54,18 @@ our reading, into a trench several micrometres deep at the die edge, so
 {term}`step coverage` and film stress matter more than at any earlier
 nitride. The diagram's 0.4223 µm on the sidewall against 0.54 µm on top
 is a sidewall coverage of about 78 % (our arithmetic from the
-labels[^pdk-04]). Because nothing is deposited over it in the flow
-described here except possibly a polyimide ("PI1"[^pdk-04]; the mask
-table does not flag "Polyimide" (PMM) for SKY130 but does flag
-"Polyimide 2 (2)" (PMM2), "DECA PBO" and "Cu Inductor/Redist."
-(CU1M),[^pdk-05] and SkyWater lists a "Polyimide cure" furnace
-process[^skw-01]), on a die without those options it is also the
-surface the package mould compound touches.
+labels[^pdk-04]). Whether a polyimide is applied to SKY130 wafers in
+this flow is not public. SkyWater's S130 technology table lists
+polyimide as "Yes",[^skw-02] and SkyWater lists a "Polyimide cure"
+furnace process,[^skw-01] but the mask table flags "Polyimide 2 (2)"
+(PMM2), "DECA PBO" (PBO) and "Cu Inductor/Redist." (CU1M) and not
+"Polyimide" (PMM) for SKY130,[^pdk-05] the step list has no polyimide
+step, and the PDK's stack diagram draws "PI1 K=2.94" over the
+nitride.[^pdk-04] Whether a given lot receives it is an option, not a
+property of the flow described here. Nothing is deposited over `NTSD`
+in the flow described here except possibly that polyimide; on a die
+without it, `NTSD` is also the surface the package mould compound
+touches.
 
 ## Why this step exists
 
@@ -117,22 +122,36 @@ public):
    plasma before deposition (industry practice[^txt-05]).
 2. **Chamber and temperature.** A single-wafer or multi-station PECVD
    reactor at roughly 300–400 °C (industry-typical for films on
-   aluminium[^txt-05][^wiki-pecvd]); dual-frequency RF (13.56 MHz with a
-   low-frequency component) is commonly used to trim stress towards mild
-   compression, the dependence Claassen et al. describe.[^claassen-1985]
+   aluminium[^txt-05][^wiki-pecvd]); the RF frequency is one of the
+   levers on stress — Claassen et al. measured how deposition
+   temperature, pressure, gas composition and RF frequency move the
+   composition and mechanical stress of plasma nitride[^claassen-1985] —
+   and mixed-frequency chambers are the industry-typical way to trim a
+   passivation nitride towards mild compression (industry
+   practice;[^txt-05] SKY130's recipe is not public).
 3. **Chemistry.** SiH₄ with NH₃ and N₂; Smith et al. set out the
    deposition mechanism of SiNₓHᵧ from NH₃–SiH₄ plasmas.[^smith-1990]
    The SiH₄/NH₃ ratio moves the composition, and with it the
    refractive index (Habraken and Kuiper review the
    dependence[^habraken-1994]) and the Si–H/N–H bonding that Lanford
-   and Rand calibrated by infrared absorption.[^lanford-1978]
+   and Rand calibrated by infrared absorption.[^lanford-1978] Sinha
+   et al.'s reactive-plasma films, deposited at 275 °C, spanned Si/N of
+   0.75–1.5 and refractive index 1.9–2.3 with stress ranging from
+   compressive to tensile, and gave crack-resistant 1 µm films with good
+   adhesion to aluminium — the same levers and the same
+   constraint.[^sinha-1978]
 4. **Thickness.** Of the order of 0.5–0.9 µm: 0.54 µm on the PDK's
-   diagram[^pdk-04] and 0.7–0.9 µm in the Cypress reports for the S8DI and S8TNV-5R
-   variants and the R7FT-3R technology at the fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
+   diagram[^pdk-04] and 0.7–0.9 µm in the Cypress reports for the S8DI
+   and S8TNV-5R variants of S8, and in the 0.18 µm R7FT-3R technology,
+   at the same fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
    A Vanguard fuse patent describes a passivation of "silicon oxide
    layer … between about 0.4 and 0.7 microns thick" under "silicon
-   nitride layer … between about 0.4 and 0.7 microns
-   thick",[^pat-fuse-vanguard] a comparable stack.
+   nitride layer … between about 0.4 and 0.7 microns thick" and, in its
+   claim 7, a polyimide "between about 8 and 12 microns
+   thick".[^pat-fuse-vanguard] Its nitride is of the same order as the
+   0.54 µm here; its oxide, which is the controlled dielectric over a
+   fusible link, is four to eight times the 0.09 µm the PDK draws
+   ({ref}`NFUSOX <step-164>`).
 5. **Metrology.** Thickness and refractive index by ellipsometry on
    monitors; stress by wafer bow; hydrogen content (FTIR) and wet-etch
    rate when the recipe is qualified, the correlation Chow et al.
@@ -188,6 +207,8 @@ public):
   0.4223 µm; 0.3777 µm; "TOPOX"; "PI1"; `metal5` 1.26 µm.[^pdk-04]
 * SkyWater PDK, *Masks* — PMM not flagged for SKY130; PMM2, PBO and
   CU1M flagged.[^pdk-05]
+* SkyWater Technology, *Mixed-Signal CMOS & ROIC* platform table —
+  polyimide "Yes" for S130.[^skw-02]
 * SkyWater PDK, *Periphery rules* — m5.1, m5.2.[^pdk-periph]
 * Cypress, QTP 014807, QTP 123907/132302/132301 and QTP 113005 — the
   passivation descriptions at Fab 4.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
@@ -240,8 +261,9 @@ public):
 ## Open questions
 
 * The nitride thickness for SKY130 is not public: 0.54 µm on the PDK
-  diagram[^pdk-04] against 0.7–0.9 µm in Cypress reports for the S8DI and S8TNV-5R
-  variants and the R7FT-3R technology at the same fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
+  diagram[^pdk-04] against 0.7–0.9 µm in Cypress reports for the S8DI
+  and S8TNV-5R variants of S8, and in the 0.18 µm R7FT-3R technology, at
+  the same fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
 * The diagram's 0.3777 µm beside metal 5 runs, on our reading, from the
   bottom of metal 5 to the top of the nitride, with no TOPOX drawn
   there;[^pdk-04] whether the passivation is really thinner between
@@ -251,9 +273,14 @@ public):
 * The deposition chemistry, temperature, refractive index, stress and
   hydrogen content are not public; that the film is PECVD is an
   inference from SkyWater's list and a Cypress report.[^skw-01][^cyp-qtp-014807]
-* Whether a polyimide is applied in the fab is not public: the mask
-  table flags PMM2, PBO and CU1M but not PMM for SKY130,[^pdk-05] and
-  SkyWater lists "Polyimide cure".[^skw-01]
+* Whether a polyimide is applied to SKY130 wafers in this flow is not
+  public. SkyWater's S130 technology table lists polyimide as
+  "Yes",[^skw-02] and SkyWater lists a "Polyimide cure" furnace
+  process,[^skw-01] but the mask table flags PMM2, PBO and CU1M and not
+  PMM for SKY130,[^pdk-05] the step list has no polyimide step, and the
+  PDK's stack diagram draws "PI1 K=2.94" over the
+  nitride.[^pdk-04] Whether a given lot receives it is an option, not a
+  property of the flow described here.
 
 <!-- footnotes -->
 
@@ -287,6 +314,8 @@ public):
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^skw-02]: SkyWater Technology, *Mixed-Signal CMOS & ROIC*, platform
+    table, accessed 2026-09-13. <https://www.skywatertechnology.com/cmos/>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
