@@ -14,10 +14,15 @@ families and members are counted.
 **Title:** Forming semiconductive devices by ionic bombardment
 
 **Assignees:** original Bell Telephone Laboratories Inc; current AT&T Inc
+
 **Inventors:** Shockley William
+
 **Dates:** priority 1954-10-28, filing 1954-10-28, grant 1957-04-02
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US2787564A, retrieved 2026-09-14)
+
 **Estimated expiry:** 1974-04-02 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US2787564A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23847630` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -42,10 +47,15 @@ families and members are counted.
 **Title:** Megasonic cleaning system
 
 **Assignees:** original RCA Corp; current RCA Corp
+
 **Inventors:** Alfred Mayer; Stanley Scwartzman
+
 **Dates:** priority 1974-05-31, filing 1974-05-31, grant 1975-07-08
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US3893869A, retrieved 2026-09-14)
+
 **Estimated expiry:** 1995-05-31 — all 19 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of YU40887B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `23886506` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -88,10 +98,15 @@ families and members are counted.
 **Title:** Automatic photomask inspection system and apparatus
 
 **Assignees:** original KLA Instruments Corp; current KLA Corp
+
 **Inventors:** Kenneth Levy; Paul Sandland
+
 **Dates:** priority 1978-04-03, filing 1978-04-03, grant 1981-01-27
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4247203A, retrieved 2026-09-14)
+
 **Estimated expiry:** 1998-04-03 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4247203A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25400807` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -119,10 +134,15 @@ families and members are counted.
 **Title:** Treating workpieces with beams
 
 **Assignees:** original Nova Associates Inc; current Eaton Corp
+
 **Inventors:** Geoffrey Ryding
+
 **Dates:** priority 1979-05-23, filing 1979-05-23, grant 1980-11-18
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4234797A, retrieved 2026-09-14)
+
 **Estimated expiry:** 1999-05-23 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4234797A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `21918419` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -149,10 +169,15 @@ families and members are counted.
 **Title:** Scanning contaminant and defect detector
 
 **Assignees:** original Tencor Instruments Inc; current Tencor Instruments Inc
+
 **Inventors:** Lee K. Galbraith
+
 **Dates:** priority 1981-03-30, filing 1981-03-30, grant 1983-03-29
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4378159A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2001-03-30 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4378159A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `22942562` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -179,10 +204,15 @@ families and members are counted.
 **Title:** Anti-reflective coating
 
 **Assignees:** original Brewer Science Inc; current Brewer Science Inc
+
 **Inventors:** John W. Arnold; Terry L. Brewer; Sumalee Punyakumleard
+
 **Dates:** priority 1982-09-30, filing 1984-08-06, grant 1990-03-20
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4910122A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2007-03-20 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4910122A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27029211` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -207,10 +237,15 @@ families and members are counted.
 **Title:** Method of making reference surface markings on semiconductor wafers by laser beam
 
 **Assignees:** original Wacker Siltronic AG; current Lumonics Corp
+
 **Inventors:** Franz Kuhn-Kuhnenfeld; Josef Kramler; Hans-Adolf Gerber
+
 **Dates:** priority 1983-07-07, filing 1984-04-26, grant 1985-06-11
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4522656A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2004-04-26 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4522656A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `6203424` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -241,10 +276,15 @@ families and members are counted.
 **Title:** Etchant composition
 
 **Assignees:** original Daikin Industries Ltd; current Daikin Industries Ltd
+
 **Inventors:** Naonori Enjo; Koji Tamura
+
 **Dates:** priority 1983-08-10, filing 1984-08-09, grant 1986-04-15
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4582624A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2004-08-09 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4582624A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `15425124` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -276,10 +316,15 @@ families and members are counted.
 **Title:** Light collector for optical contaminant and flaw detector
 
 **Assignees:** original Tencor Instruments Inc; current Tencor Instruments Inc
+
 **Inventors:** Lee K. Galbraith
+
 **Dates:** priority 1983-12-09, filing 1983-12-09, grant 1986-07-22
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4601576A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2003-12-09 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4601576A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24235560` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -307,10 +352,15 @@ families and members are counted.
 **Title:** Apparatus for heating semiconductor wafers in order to achieve annealing, silicide formation, reflow of glass passivation layers, etc.
 
 **Assignees:** original Tamarack Scientific Co Inc; current Tamarack Scientific Co Inc; Tamarac Scientific Co Inc
+
 **Inventors:** Ronald E. Sheets
+
 **Dates:** priority 1984-02-28, filing 1985-02-07, grant 1987-03-10
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4649261A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2004-03-10 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4649261A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27541944` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -338,10 +388,15 @@ families and members are counted.
 **Title:** Detecting thermal waves to evaluate thermal parameters
 
 **Assignees:** original THERMA WAVE PARTNERS; current Therma Wave Inc
+
 **Inventors:** Allan Rosencwaig; Jon Opsal; Walter L. Smith; David L. Willenborg
+
 **Dates:** priority 1984-05-21, filing 1984-05-21, grant 1986-04-01
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4579463A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2005-05-20 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of EP0165711B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24451614` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -372,10 +427,15 @@ families and members are counted.
 **Title:** Composite sputtering target structures and process for producing such structures
 
 **Assignees:** original Genus Inc; current Aixtron Inc
+
 **Inventors:** Donald R. Boys
+
 **Dates:** priority 1984-10-09, filing 1991-03-14, grant 1993-06-01
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5215639A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2010-06-01 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5215639A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `27493788` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -400,10 +460,15 @@ families and members are counted.
 **Title:** Apparatus and methods for resistivity testing
 
 **Assignees:** original Prometrix Corp; current Tencor Instruments Inc
+
 **Inventors:** David S. Perloff; Chester Mallory
+
 **Dates:** priority 1985-02-22, filing 1985-02-22, grant 1987-10-27
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4703252A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2005-02-22 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4703252A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24828889` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -433,10 +498,15 @@ families and members are counted.
 **Title:** Method and apparatus for evaluating surface and subsurface features in a semiconductor
 
 **Assignees:** original Therma Wave Inc; current Therma Wave Inc
+
 **Inventors:** Jon Opsal; Allan Rosencwaig; Walter L. Smith
+
 **Dates:** priority 1985-03-01, filing 1987-07-23, grant 1989-08-08
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4854710A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2006-08-08 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4854710A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24841884` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -464,10 +534,15 @@ families and members are counted.
 **Title:** Process for patterning local interconnects
 
 **Assignees:** original Texas Instruments Inc; current Texas Instruments Inc
+
 **Inventors:** Thomas C. Holloway; Thomas E. Tang; Che-Chia Wei; Roger A. Haken; David A. Bell
+
 **Dates:** priority 1985-05-01, filing 1986-03-07, grant 1987-04-14
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4657628A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2005-05-01 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4657628A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27111847` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -493,10 +568,15 @@ families and members are counted.
 **Title:** VLSI local interconnect structure
 
 **Assignees:** original Texas Instruments Inc; current Texas Instruments Inc
+
 **Inventors:** Roger A. Haken; Thomas C. Holloway
+
 **Dates:** priority 1985-05-01, filing 1985-05-01, grant 1989-04-11
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4821085A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2011-04-12 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5302539A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24930502` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -525,10 +605,15 @@ families and members are counted.
 **Title:** Accelerator for ion implantation
 
 **Assignees:** original Eaton Corp; current Axcelis Technologies Inc
+
 **Inventors:** H. F. Glavish; A. S. Denholm; G. K. Simcox
+
 **Dates:** priority 1985-05-17, filing 1985-05-17, grant 1987-05-19
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4667111A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-04-10 — all 9 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4667111A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24955302` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -561,10 +646,15 @@ families and members are counted.
 **Title:** Optical generator and detector of stress pulses
 
 **Assignees:** original Brown University Research Foundation Inc; current Brown University Research Foundation Inc
+
 **Inventors:** Jan Tauc; Humphrey J. Maris; Christian Thomsen
+
 **Dates:** priority 1985-05-17, filing 1985-05-17, grant 1987-12-01
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4710030A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2005-05-17 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4710030A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24957338` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -589,10 +679,15 @@ families and members are counted.
 **Title:** Positive-working naphthoquinone diazide photoresist composition with two cresol novolac resins
 
 **Assignees:** original Tokyo Ohka Kogyo Co Ltd; current Tokyo Ohka Kogyo Co Ltd
+
 **Inventors:** Hidekatsu Kohara; Hatsuyuki Tanaka; Masanori Miyabe; Yoshiaki Arai; Shingo Asaumi; Toshimasa Nakayama
+
 **Dates:** priority 1985-08-09, filing 1986-07-18, grant 1988-03-15
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4731319A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2009-07-20 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0654384B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `15976485` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -624,10 +719,15 @@ families and members are counted.
 **Title:** Method for producing coplanar multi-level metal/insulator films on a substrate and for forming patterned conductive lines simultaneously with stud vias
 
 **Assignees:** original International Business Machines Corp; current International Business Machines Corp; CCL Product Identification Inc
+
 **Inventors:** Melanie M. Chow; John E. Cronin; William L. Guthrie; Carter W. Kaanta; Barbara Luther; William J. Patrick; Kathleen A. Perry; Charles L. Standley
+
 **Dates:** priority 1985-10-28, filing 1985-10-28, grant 1988-12-06
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4789648A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2006-10-28 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of ATE50379T1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `25155097` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -669,10 +769,15 @@ families and members are counted.
 **Title:** Chem-mech polishing method for producing coplanar metal/insulator films on a substrate
 
 **Assignees:** original International Business Machines Corp; current International Business Machines Corp
+
 **Inventors:** Klaus D. Beyer; William L. Guthrie; Stanley R. Makarewicz; Eric Mendel; William J. Patrick; Kathleen A. Perry; William A. Pliskin; Jacob Riseman; Paul M. Schaible; Charles L. Standley
+
 **Dates:** priority 1985-10-28, filing 1985-10-28, grant 1990-07-31
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4944836A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2012-09-30 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP2659918B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25155001` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -714,10 +819,15 @@ families and members are counted.
 **Title:** Process for forming twin well CMOS integrated circuits
 
 **Assignees:** original Harris Corp; current Intersil Americas LLC
+
 **Inventors:** Dyer A. Matlock
+
 **Dates:** priority 1986-01-15, filing 1992-08-12, grant 1993-09-21
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5247199A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2012-07-04 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5429958A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27357991` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -748,10 +858,15 @@ families and members are counted.
 **Title:** Tin etch process
 
 **Assignees:** original Texas Instruments Inc; current Texas Instruments Inc
+
 **Inventors:** Monte A. Douglas
+
 **Dates:** priority 1986-03-07, filing 1986-03-07, grant 1987-06-23
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4675073A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2006-03-07 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4675073A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25274513` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -777,10 +892,15 @@ families and members are counted.
 **Title:** Surface treating composition for micro processing
 
 **Assignees:** original Hashimoto Chemical Industries Co Ltd; current Stella Chemifa Corp
+
 **Inventors:** Tadahiro Ohmi; Nobuhiro Miki; Hirohisa Kikuyama
+
 **Dates:** priority 1986-09-29, filing 1987-09-21, grant 1989-01-03
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4795582A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2007-09-28 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR960013146B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `16907918` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -809,10 +929,15 @@ families and members are counted.
 **Title:** Sloped contact etch process
 
 **Assignees:** original Motorola Inc; current NXP USA Inc
+
 **Inventors:** Robert K. Berglund; Karl E. Mautz; Roger Tyldesley
+
 **Dates:** priority 1986-11-17, filing 1986-11-17, grant 1987-10-06
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4698128A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2013-02-10 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP2711538B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `25460564` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -845,10 +970,15 @@ families and members are counted.
 **Title:** Magnetic field-enhanced plasma etch reactor
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** David Cheng; Dan Maydan; Sasson Somekh; Kenneth R. Stalder; Dana L. Andrews; Mei Chang; John M. White; Jerry Y. K. Wong; Vladimir J. Zeitlin; David N. Wang
+
 **Dates:** priority 1986-12-19, filing 1988-04-25, grant 1989-06-27
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4842683A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2013-11-11 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP2824079B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `22680079` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -882,10 +1012,15 @@ families and members are counted.
 **Title:** Thermal CVD/PECVD reactor and use for thermal chemical vapor deposition of silicon dioxide and in-situ multi-step planarized process
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** David N. Wang; John M. White; Kam S. Law; Cissy Leung; Salvador P. Umotoy; Kenneth S. Collins; John A. Adamik; Ilya Perlov; Dan Maydan
+
 **Dates:** priority 1986-12-19, filing 1986-12-19, grant 1991-03-19
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5000113A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-01-02 — all 21 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6167834B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `25481509` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -930,10 +1065,15 @@ families and members are counted.
 **Title:** Method of manufacturing semiconductor devices including rounding of corner portions by etching
 
 **Assignees:** original Toshiba Corp; current Toshiba Corp
+
 **Inventors:** Keiji Horioka; Haruo Okano; Hirotaka Nishino
+
 **Dates:** priority 1987-08-28, filing 1993-03-08, grant 1993-11-02
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5258332A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2010-11-02 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5258332A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27553885` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -958,10 +1098,15 @@ families and members are counted.
 **Title:** Support for slice-shaped articles and device for etching silicon wafers with such a support
 
 **Assignees:** original Lam Research AG; current Lam Research AG
+
 **Inventors:** Franz Sumnitsch
+
 **Dates:** priority 1987-11-09, filing 1988-11-09, grant 1990-02-27
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4903717A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2010-02-22 — all 20 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0715150B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `3543072` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1005,10 +1150,15 @@ families and members are counted.
 **Title:** Method and apparatus for measuring thickness of thin films
 
 **Assignees:** original Therma Wave Inc; current Therma Wave Inc
+
 **Inventors:** Nathan Gold; David L. Willenborg; Jon Opsal; Allan Rosencwaig
+
 **Dates:** priority 1989-05-04, filing 1989-05-04, grant 1991-03-12
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4999014A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2011-07-10 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP2514099B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23365380` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1040,10 +1190,15 @@ families and members are counted.
 **Title:** Staged-vacuum wafer processing system and method
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Avi Tepman; Howard Grunes; Sasson Somekh; Dan Maydan
+
 **Dates:** priority 1989-05-19, filing 1991-04-15, grant 1993-02-16
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5186718A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2010-02-16 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5186718A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `26998663` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1068,10 +1223,15 @@ families and members are counted.
 **Title:** Method for tapered etching
 
 **Assignees:** original AT&T Bell Laboratories Inc; current Agere Systems LLC; AT&T Inc
+
 **Inventors:** Craig N. Bredbenner; Troy A. Giniecki; Nur Selamoglu; Hans J. Stocker
+
 **Dates:** priority 1989-06-30, filing 1989-06-30, grant 1990-04-24
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4919748A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2011-06-12 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP2505914B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23476680` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1103,10 +1263,15 @@ families and members are counted.
 **Title:** Method and apparatus for producing magnetically-coupled planar plasma
 
 **Assignees:** original Lam Research Corp; current Lam Research Corp
+
 **Inventors:** John S. Ogle
+
 **Dates:** priority 1989-08-14, filing 1989-08-14, grant 1990-08-14
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4948458A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2019-07-19 — all 15 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3224529B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23554962` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1161,10 +1326,15 @@ families and members are counted.
 **Title:** Process for CVD deposition of tungsten layer on semiconductor wafer
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Mei Chang; Cissy Leung; David N. Wang; David Cheng
+
 **Dates:** priority 1989-08-25, filing 1989-08-25, grant 1991-07-02
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5028565A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-03-25 — all 16 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3094004B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `23576244` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1207,10 +1377,15 @@ families and members are counted.
 **Title:** Simultaneous multiple angle/multiple wavelength ellipsometer and method
 
 **Assignees:** original Rudolph Technologies Inc; current STATE BOARD OF ADMINISTRATION OF FLORIDA; Rudolph Technologies Inc
+
 **Inventors:** Richard F. Spanier; Robert G. Wolf; Robert M. Loiterman; Mitchell E. Haller
+
 **Dates:** priority 1990-01-11, filing 1990-01-11, grant 1992-11-24
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5166752A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2010-01-11 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5166752A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24566844` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1235,10 +1410,15 @@ families and members are counted.
 **Title:** Rapid thermal heating apparatus and method
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Christian M. Gronet; James F. Gibbons
+
 **Dates:** priority 1990-01-19, filing 1991-10-24, grant 1992-10-13
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5155336A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2013-01-23 — all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5487127A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27042189` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1282,10 +1462,15 @@ families and members are counted.
 **Title:** Collimated deposition apparatus and method
 
 **Assignees:** original Varian Associates Inc; current Novellus Systems Inc
+
 **Inventors:** R. Ernest Demaray; Vance E. Hoffman; John C. Helmer; Young H. Park; Ronald R. Cochran
+
 **Dates:** priority 1990-01-29, filing 1991-10-23, grant 1994-07-19
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5330628A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2011-07-19 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5330628A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23870722` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1316,10 +1501,15 @@ families and members are counted.
 **Title:** Multistep sputtering process for forming aluminum layer over stepped semiconductor wafer
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Chien-Rhone Wang
+
 **Dates:** priority 1990-03-30, filing 1990-03-30, grant 1992-04-28
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5108570A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2011-03-30 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR100227236B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `23997467` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1351,10 +1541,15 @@ families and members are counted.
 **Title:** Titanium-tungsten target material for sputtering and manufacturing method therefor
 
 **Assignees:** original Hitachi Metals Ltd; current Proterial Ltd
+
 **Inventors:** Akitoshi Hiraki
+
 **Dates:** priority 1990-06-15, filing 1991-05-31, grant 1992-11-03
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5160534A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2011-05-31 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5160534A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27460980` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1390,10 +1585,15 @@ families and members are counted.
 **Title:** Gas-based backside protection during substrate processing
 
 **Assignees:** original Novellus Systems Inc; current Novellus Systems Inc
+
 **Inventors:** Everhardus P. van de Ven; Eliot K. Broadbent; Jeffrey C. Benzing; Barry L. Chin; Christopher W. Burkhart
+
 **Dates:** priority 1990-07-16, filing 1993-01-22, grant 1994-12-20
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5374594A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2011-12-20 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5374594A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24212535` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1419,10 +1619,15 @@ families and members are counted.
 **Title:** Cleaning compositions for removing etching residue and method of using
 
 **Assignees:** original EKC Technology Inc; current EKC Technology Inc
+
 **Inventors:** Wai M. Lee
+
 **Dates:** priority 1990-11-05, filing 1992-07-09, grant 1994-08-02
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5334332A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2013-01-15 — all 21 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7051742B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `24443399` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1468,10 +1673,15 @@ families and members are counted.
 **Title:** Two-phase optical inspection method and apparatus for defect detection
 
 **Assignees:** original Orbot Instruments Ltd; current Applied Materials Israel Ltd; Applied Materials Inc
+
 **Inventors:** David Alumot; Gad Neumann; Rivka Sherman; Ehud Tirosh
+
 **Dates:** priority 1990-11-16, filing 1991-11-12, grant 1997-12-16
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5699447A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2014-12-16 — all 11 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5699447A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `26322164` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1506,10 +1716,15 @@ families and members are counted.
 **Title:** Method for filing substrate recesses using elevated temperature and pressure
 
 **Assignees:** original Electrotech Ltd; current Aviza Europe Ltd
+
 **Inventors:** Christopher D. Dobson
+
 **Dates:** priority 1991-05-28, filing 1994-08-16, grant 1996-06-18
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5527561A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2013-06-18 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5527561A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27450687` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1537,10 +1752,15 @@ families and members are counted.
 **Title:** Fast, safe, pyrogenic external torch assembly
 
 **Assignees:** original Individual; current Persys Technology Ltd; Kokusai Semiconductor Equipment Corp
+
 **Inventors:** Gideon Drimer; Arie Glaser; David M. Rowell
+
 **Dates:** priority 1991-12-17, filing 1991-12-17, grant 1993-11-02
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5257926A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2011-12-17 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5257926A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25202080` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1568,10 +1788,15 @@ families and members are counted.
 **Title:** Resurf lateral double diffused insulated gate field effect transistor
 
 **Assignees:** original Texas Instruments Inc; current Texas Instruments Inc
+
 **Inventors:** Oh-Kyong Kwon; Taylor R. Efland; Satwinder Malhi; Wai T. Ng
+
 **Dates:** priority 1991-12-30, filing 1994-02-01, grant 1995-04-11
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5406110A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-11-05 — all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3226650B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `25218688` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1609,10 +1834,15 @@ families and members are counted.
 **Title:** Thermal trap for gaseous materials
 
 **Assignees:** original VLSI Technology Inc; current Philips Semiconductors Inc
+
 **Inventors:** Oscar L. Caton; Craig A. Bellows; Curtis M. Hebert, Jr.; Steve J. Schaper
+
 **Dates:** priority 1992-07-30, filing 1992-07-30, grant 1994-04-19
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5303558A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2012-07-30 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5303558A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `25448458` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1639,10 +1869,15 @@ families and members are counted.
 **Title:** Polymeric polishing pad containing hollow polymeric microelements
 
 **Assignees:** original Rodel Inc; current DuPont Electronic Materials Holding Inc
+
 **Inventors:** Heinz F. Reinhardt; John V. H. Roberts; Harry G. McClain; William D. Budinger; Elmer W. Jensen
+
 **Dates:** priority 1992-08-19, filing 1994-07-12, grant 1996-11-26
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5578362A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2015-02-28 — all 30 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3013105B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25461879` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1699,10 +1934,15 @@ families and members are counted.
 **Title:** Sputtering target assembly having solid-phase bonded interface
 
 **Assignees:** original Japan Energy Corp; current JX Nippon Mining and Metals Corp
+
 **Inventors:** Tateo Ohhashi; Hideaki Fukuyo; Ichiroh Sawamura; Kenichirou Nakamura; Atsushi Fukushima; Masaru Nagasawa
+
 **Dates:** priority 1992-09-29, filing 1994-09-14, grant 1997-12-02
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5693203A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2014-12-02 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5693203A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27479272` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1727,10 +1967,15 @@ families and members are counted.
 **Title:** Induction plasma source
 
 **Assignees:** original Novellus Systems Inc; current Novellus Systems Inc
+
 **Inventors:** Jeffrey C. Benzing; Eliot K. Broadbent; Kirkwood H. Rough
+
 **Dates:** priority 1992-11-04, filing 1992-11-04, grant 1994-09-13
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5346578A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2014-02-25 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5605599A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25518280` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1763,10 +2008,15 @@ families and members are counted.
 **Title:** Double-sided wafer scrubber with a wet submersing silicon wafer indexer
 
 **Assignees:** original Ontrak Systems Inc; current Lam Research Corp
+
 **Inventors:** Rick A. Lutz
+
 **Dates:** priority 1992-11-30, filing 1992-11-30, grant 1995-08-22
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5442828A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2013-06-25 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5529638A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25529547` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1794,10 +2044,15 @@ families and members are counted.
 **Title:** Enhancing step coverage by creating a tapered profile through three dimensional resist pull back
 
 **Assignees:** original Chartered Semiconductor Manufacturing Pte Ltd; current GlobalFoundries Singapore Pte Ltd
+
 **Inventors:** Erh-Nan Chou
+
 **Dates:** priority 1992-12-31, filing 1992-12-31, grant 1994-05-03
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5308415A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2012-12-31 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5308415A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25546287` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1824,10 +2079,15 @@ families and members are counted.
 **Title:** Method to remove fluorine residues from bond pads
 
 **Assignees:** original Micron Technology Inc; current Micron Technology Inc
+
 **Inventors:** Curtis S. Jones; William J. Crane; Robin L. Gilchrist; Rod C. Langley
+
 **Dates:** priority 1993-01-14, filing 1993-01-14, grant 1995-01-10
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5380401A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2013-01-14 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5380401A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `21710466` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1852,10 +2112,15 @@ families and members are counted.
 **Title:** Method for fabricating LDD transitor utilizing halo implant
 
 **Assignees:** original Goldstar Electron Co Ltd; current Chung Cheng Holding LLC
+
 **Inventors:** Hyun S. Hwang
+
 **Dates:** priority 1993-05-14, filing 1993-10-12, grant 1994-11-15
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5364807A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2020-04-20 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3640406B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `19355404` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1887,10 +2152,15 @@ families and members are counted.
 **Title:** Multiple tilted angle ion implantation MOSFET method
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Mong-Song Liang; Chue-San Yoo; Mou-Shiung Lin
+
 **Dates:** priority 1993-07-22, filing 1993-07-22, grant 1994-12-13
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5372957A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2013-07-22 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5372957A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `22246938` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1918,10 +2188,15 @@ families and members are counted.
 **Title:** Pyrogenic wet thermal oxidation of semiconductor wafers
 
 **Assignees:** original Yamaha Corp; current Yamaha Corp
+
 **Inventors:** Tomohiro Yuuki
+
 **Dates:** priority 1993-07-24, filing 1994-07-22, grant 1997-05-27
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5633212A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2014-07-24 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0710935U (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `12697185` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1948,10 +2223,15 @@ families and members are counted.
 **Title:** Vertical low pressure CVD apparatus with an adjustable nozzle
 
 **Assignees:** original NEC Corp; current NEC Electronics Corp
+
 **Inventors:** Tatsuya Usami
+
 **Dates:** priority 1993-11-04, filing 1994-11-04, grant 1996-04-02
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5503678A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2014-11-04 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5503678A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `17554170` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1979,10 +2259,15 @@ families and members are counted.
 **Title:** Vertical heat treatment apparatus with a circulation gas passage
 
 **Assignees:** original Tokyo Electron Ltd; Tokyo Electron Tohoku Ltd; current Tokyo Electron Ltd
+
 **Inventors:** Takashi Tanahashi
+
 **Dates:** priority 1993-12-10, filing 1994-12-05, grant 1996-09-03
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5551984A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2014-12-10 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW273574B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `26377048` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2010,10 +2295,15 @@ families and members are counted.
 **Title:** In-situ endpoint detection and process monitoring method and apparatus for chemical-mechanical polishing
 
 **Assignees:** original International Business Machines Corp; current Ebara Corp
+
 **Inventors:** Naftali E. Lustig; Katherine L. Saenger; Ho-Ming Tong
+
 **Dates:** priority 1993-12-22, filing 1993-12-22, grant 1995-07-18
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5433651A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2014-11-24 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of EP0663265B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `22631367` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2055,10 +2345,15 @@ families and members are counted.
 **Title:** On-site generation of ultra-high-purity buffered-HF for semiconductor processing
 
 **Assignees:** original Startec Ventures Inc; current LAir Liquide SA pour lEtude et lExploitation des Procedes Georges Claude
+
 **Inventors:** Joe G. Hoffman; R. Scot Clark
+
 **Dates:** priority 1994-01-07, filing 1996-07-01, grant 1998-03-03
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5722442A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2014-01-07 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5722442A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `46252077` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2083,10 +2378,15 @@ families and members are counted.
 **Title:** Plasma asher with microwave trap
 
 **Assignees:** original Fusion Systems Corp; current Lam Research Corp
+
 **Inventors:** Mohammad Kamarehi; James E. Simpson
+
 **Dates:** priority 1994-02-25, filing 1994-02-25, grant 1996-03-12
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5498308A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-07-23 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3190536B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `22748832` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2124,10 +2424,15 @@ families and members are counted.
 **Title:** Use of double charge implant to improve retrograde process PMOS punch through voltage
 
 **Assignees:** original United Microelectronics Corp; current United Microelectronics Corp
+
 **Inventors:** Sheng-Hsing Yang
+
 **Dates:** priority 1994-04-05, filing 1994-04-05, grant 1995-02-28
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5393679A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2014-04-05 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5393679A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `22834355` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2156,10 +2461,15 @@ families and members are counted.
 **Title:** Surface inspection system
 
 **Assignees:** original KLA Tencor Corp; current Tencor Instruments Inc; KLA Corp
+
 **Inventors:** John R. Jordan, III; Mehrdad Nikoonahad; Keith B. Wells
+
 **Dates:** priority 1994-06-20, filing 1995-09-29, grant 1999-01-26
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5864394A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2015-12-08 — all 26 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR100669846B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27502820` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2209,10 +2519,15 @@ families and members are counted.
 **Title:** Plasma reactor with multi-section RF coil and isolated conducting lid
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Gerald Z. Yin; Hiroji Hanawa; Diana X. Ma; Donald Olgado
+
 **Dates:** priority 1994-07-18, filing 1994-07-18, grant 1996-07-30
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5540824A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2015-07-18 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3929514B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `23061269` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2261,10 +2576,15 @@ families and members are counted.
 **Title:** Storage and delivery system for gaseous hydride, halide, and organometallic group V compounds
 
 **Assignees:** original Advanced Technology Materials Inc; current ATMI Ecosys Corp; Entegris Inc
+
 **Inventors:** Glenn M. Tom; James V. McManus
+
 **Dates:** priority 1994-10-13, filing 1994-10-13, grant 1996-05-21
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5518528A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-04-11 — all 35 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6125131A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `23253952` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2326,10 +2646,15 @@ families and members are counted.
 **Title:** Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Manoocher Birang; Allan Gleason; William L. Guthrie
+
 **Dates:** priority 1995-03-28, filing 1996-08-16, grant 1999-04-13
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5893796A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-08-18 — all 20 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3327817B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24770421` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2386,10 +2711,15 @@ families and members are counted.
 **Title:** Sputter target/backing plate assembly and method of making same
 
 **Assignees:** original Sony Corp; Materials Research Corp; current Praxair ST Technology Inc
+
 **Inventors:** Thomas J. Hunt; Paul S. Gilman
+
 **Dates:** priority 1995-04-21, filing 1995-04-21, grant 1998-11-17
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5836506A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-04-21 — all 9 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW287125B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `23689967` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2422,10 +2752,15 @@ families and members are counted.
 **Title:** Semiconductor fabricating apparatus, method for controlling oxygen concentration within load-lock chamber and method for generating native oxide
 
 **Assignees:** original Kokusai Electric Co Ltd; current Kokusai Denki Electric Inc
+
 **Inventors:** Masakazu Shimada
+
 **Dates:** priority 1995-05-25, filing 1996-05-16, grant 1998-04-07
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5735961A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-05-25 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW322590B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `26456233` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2455,10 +2790,15 @@ families and members are counted.
 **Title:** Silicon oxime film
 
 **Assignees:** original Advanced Micro Devices Inc; current GlobalFoundries Inc; AMD Technologies Holdings Inc
+
 **Inventors:** David K. Foote; Subash Gupta
+
 **Dates:** priority 1995-06-07, filing 1995-06-07, grant 1998-01-20
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5710067A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2015-06-07 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5710067A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23905130` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2483,10 +2823,15 @@ families and members are counted.
 **Title:** Fuse window with controlled fuse oxide thickness
 
 **Assignees:** original International Business Machines Corp; current Qimonda AG; International Business Machines Corp
+
 **Inventors:** Pei-Ing Paul Lee; William Alan Klaasen; Alexander Mitwalsky
+
 **Dates:** priority 1995-08-28, filing 1997-08-14, grant 1999-02-16
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5872390A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-08-15 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3509049B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `24070664` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2515,10 +2860,15 @@ families and members are counted.
 **Title:** Vertical heat treatment apparatus
 
 **Assignees:** original Tokyo Electron Ltd; current Tokyo Electron Ltd
+
 **Inventors:** Tomohisa Shimazu
+
 **Dates:** priority 1995-09-06, filing 1996-09-04, grant 1998-01-20
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5709543A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-09-06 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW387092B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `17268321` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2549,10 +2899,15 @@ families and members are counted.
 **Title:** Boat for heat treatment
 
 **Assignees:** original Tokyo Electron Ltd; current Tokyo Electron Ltd
+
 **Inventors:** Tetsu Osawa
+
 **Dates:** priority 1995-09-20, filing 1996-09-18, grant 1998-10-13
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5820367A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-09-20 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0992625A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+
 **Google Patents family ID:** `17432179` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2580,10 +2935,15 @@ families and members are counted.
 **Title:** Precision analog metal-metal capacitor
 
 **Assignees:** original International Business Machines Corp; current GlobalFoundries Inc
+
 **Inventors:** Terry J. Brabazon; Badih El-Kareh; Stuart R. Martin; Matthew J. Rutten; Carter W. Kaanta
+
 **Dates:** priority 1995-10-27, filing 1995-10-27, grant 1998-01-13
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5708559A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-10-17 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3396137B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `24193081` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2615,10 +2975,15 @@ families and members are counted.
 **Title:** Continuous processing system for chemical mechanical polishing
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc; XCSI Inc; XSCI Inc
+
 **Inventors:** Robert D. Tolles; Norm Shendon; Sasson Somekh; Ilya Perlov; Eugene Gantvarg; Harry Q. Lee
+
 **Dates:** priority 1995-10-27, filing 1995-10-27, grant 1998-04-14
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5738574A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-10-28 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of EP0774323B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24192580` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2672,10 +3037,15 @@ families and members are counted.
 **Title:** Metal plug local interconnect
 
 **Assignees:** original Cypress Semiconductor Corp; current DSS Technology Management Inc
+
 **Inventors:** Ting P. Yen
+
 **Dates:** priority 1995-11-22, filing 1997-07-24, grant 1999-10-12
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5965924A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2015-11-22 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5965924A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24244177` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2698,10 +3068,15 @@ families and members are counted.
 **Title:** Structure having reduced lateral spacer erosion
 
 **Assignees:** original Cypress Semiconductor Corp; current DSS Technology Management Inc
+
 **Inventors:** James E. Nulty; Christopher J. Petti
+
 **Dates:** priority 1995-12-22, filing 2000-03-31, grant 2004-08-31
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6784552B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-12-22 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH09181181A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+
 **Google Patents family ID:** `24310003` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2727,10 +3102,15 @@ families and members are counted.
 **Title:** Vertical furnace of a semiconductor manufacturing apparatus and a boat cover thereof
 
 **Assignees:** original Kokusai Electric Co Ltd; current Kokusai Denki Electric Inc
+
 **Inventors:** Kiyohiko Maeda; Satoshi Kakizaki; Tomoshi Taniyama; Hidehiro Yanagawa; Ken-ichi Suzaki
+
 **Dates:** priority 1995-12-29, filing 1996-12-23, grant 1999-05-11
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5902103A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-12-29 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW330237B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `18429343` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2760,10 +3140,15 @@ families and members are counted.
 **Title:** Deuterium-treated semiconductor devices
 
 **Assignees:** original University of Illinois System; current University of Illinois System
+
 **Inventors:** Joseph W. Lyding; Karl Hess
+
 **Dates:** priority 1996-01-16, filing 1996-01-16, grant 1999-02-16
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5872387A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-01-16 — all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6147014A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24345606` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2801,10 +3186,15 @@ families and members are counted.
 **Title:** Chemical vapor deposition system including dedicated cleaning gas injection
 
 **Assignees:** original Novellus Systems Inc; current Novellus Systems Inc
+
 **Inventors:** Michael D. Kilgore; Wilbert G. M. van den Hoek; Christopher J. Rau; Bart J. van Schravendijk; Jeffrey A. Tobin; Thomas W. Mountsier; James C. Oswalt
+
 **Dates:** priority 1996-02-16, filing 1996-02-16, grant 2001-03-13
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6200412B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-02-17 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3141929B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `24412185` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2838,10 +3228,15 @@ families and members are counted.
 **Title:** Method of making self-aligned halo process for reducing junction capacitance
 
 **Assignees:** original Chartered Semiconductor Manufacturing Pte Ltd; current GlobalFoundries Singapore Pte Ltd
+
 **Inventors:** Yang Pan
+
 **Dates:** priority 1996-02-20, filing 1996-02-20, grant 1997-01-21
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5595919A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-02-20 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of SG66330A1 (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+
 **Google Patents family ID:** `24414167` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2868,10 +3263,15 @@ families and members are counted.
 **Title:** Use of mixtures of ethyl lactate and N-methyl pyrollidone as an edge bead remover for photoresists
 
 **Assignees:** original Clariant Finance BVI Ltd; current Merck Patent GmbH
+
 **Inventors:** William C. Nelson; Octavia Lehar
+
 **Dates:** priority 1996-05-17, filing 1997-04-03, grant 1998-09-29
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5814433A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-04-03 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5814433A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `26689885` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2896,10 +3296,15 @@ families and members are counted.
 **Title:** Method of forming thin silicon nitride or silicon oxynitride gate dielectrics
 
 **Assignees:** original Texas Instruments Inc; current Texas Instruments Inc
+
 **Inventors:** Robert Kraft; Sunil Hattangady; Douglas T. Grider
+
 **Dates:** priority 1996-06-07, filing 1997-12-04, grant 2000-10-24
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6136654A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-12-04 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6136654A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `27361220` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2924,10 +3329,15 @@ families and members are counted.
 **Title:** Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Cheng-Chung Huang; Shu Mei Chen
+
 **Dates:** priority 1996-06-10, filing 1996-06-10, grant 1998-11-03
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5830375A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-06-10 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6107642A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `24652841` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2954,10 +3364,15 @@ families and members are counted.
 **Title:** Dose control for use in an ion implanter
 
 **Assignees:** original Eaton Corp; current Axcelis Technologies Inc
+
 **Inventors:** Hank Chen; Frank Sinclair; Michiro Sugitani
+
 **Dates:** priority 1996-06-14, filing 1997-01-17, grant 1998-06-02
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5760409A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-01-17 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR100402183B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25134219` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2990,10 +3405,15 @@ families and members are counted.
 **Title:** Avoiding contamination from induction coil in ionized sputtering
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Kenny King-Tai Ngan
+
 **Dates:** priority 1996-07-12, filing 1996-07-12, grant 1998-01-13
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5707498A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-07-12 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5707498A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `24741421` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3020,10 +3440,15 @@ families and members are counted.
 **Title:** Symmetric tunable inductively coupled HDP-CVD reactor
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Fred C. Redeker; Farhad Moghadam; Hiroji Hanawa; Tetsuya Ishikawa; Dan Maydan; Shijian Li; Brian Lue; Robert J. Steger; Manus Wong; Yaxin Wong; Ashok K. Sinha
+
 **Dates:** priority 1996-07-15, filing 1996-07-15, grant 2001-01-09
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6170428B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-07-15 — all 13 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of EP0819780B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24728963` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3064,10 +3489,15 @@ families and members are counted.
 **Title:** Dual gate oxide thickness integrated circuit and process for making same
 
 **Assignees:** original Advanced Micro Devices Inc; current Advanced Micro Devices Inc
+
 **Inventors:** Mark I. Gardner
+
 **Dates:** priority 1996-08-23, filing 1996-08-23, grant 2000-03-07
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6033943A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-08-23 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6033943A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24820519` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3093,10 +3523,15 @@ families and members are counted.
 **Title:** Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers
 
 **Assignees:** original Ulvac Technologies Inc; current Ulvac Inc
+
 **Inventors:** Izumi Nakayama; Yukio Masuda; Richard L. Bersin; Han Xu; Quain Geng
+
 **Dates:** priority 1996-10-16, filing 1996-10-16, grant 1998-08-18
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5795831A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2016-10-16 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5795831A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `26794054` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3133,10 +3568,15 @@ families and members are counted.
 **Title:** Carrier head with a flexible membrane for a chemical mechanical polishing system
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Steven M. Zuniga; Manoocher Birang; Hung Chen; Sen-Hou Ko
+
 **Dates:** priority 1996-11-08, filing 1997-05-21, grant 2001-02-06
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6183354B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-11-10 — all 34 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP5216542B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24997773` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3195,10 +3635,15 @@ families and members are counted.
 **Title:** Methods and apparatus for cleaning surfaces in a substrate processing system
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Gary Fong; Li-Qun Xia; Srinivas Nemani; Ellie Yieh
+
 **Dates:** priority 1996-11-13, filing 1996-11-13, grant 1998-09-22
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5812403A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-11-13 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW358968B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `25007997` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3228,10 +3673,15 @@ families and members are counted.
 **Title:** Composition and slurry useful for metal CMP
 
 **Assignees:** original Cabot Corp; current CMC Materials LLC
+
 **Inventors:** Brian L. Mueller; Christopher C. Streinz; Steven K. Grumbine
+
 **Dates:** priority 1996-11-26, filing 1996-11-26, grant 1999-09-28
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5958288A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-11-26 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL153843A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+
 **Google Patents family ID:** `25030826` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3269,10 +3719,15 @@ families and members are counted.
 **Title:** Method of forming retrograde well structures and punch-through barriers using low energy implants
 
 **Assignees:** original LSI Logic Corp; current Bell Semiconductor LLC
+
 **Inventors:** Sheldon Aronowitz; Laique Khan; James Kimball
+
 **Dates:** priority 1996-12-19, filing 1996-12-19, grant 1999-10-05
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5963801A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-12-19 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH10189475A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+
 **Google Patents family ID:** `25087511` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3306,10 +3761,15 @@ families and members are counted.
 **Title:** Low temperature dry process for stripping photoresist after high dose ion implantation
 
 **Assignees:** original Mosel Vitelic Inc; current Promos Technologies Inc
+
 **Inventors:** Mao-Sung Tseng; Chao Feng-Hsien; Nen-Yu Tsai
+
 **Dates:** priority 1997-01-03, filing 1997-01-03, grant 1998-09-22
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5811358A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-01-03 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5811358A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25102092` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3349,10 +3809,15 @@ families and members are counted.
 **Title:** Integrated circuit having multiple LDD and/or source/drain implant steps to enhance circuit performance
 
 **Assignees:** original Advanced Micro Devices Inc; current GlobalFoundries Inc
+
 **Inventors:** Mark I. Gardner; Fred N. Hause; H. Jim Fulford, Jr.
+
 **Dates:** priority 1997-01-10, filing 1997-01-10, grant 1998-08-11
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5793090A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-01-10 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6107129A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25122771` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3380,10 +3845,15 @@ families and members are counted.
 **Title:** Ideal oxygen precipitating silicon wafers and oxygen out-diffusion-less process therefor
 
 **Assignees:** original MEMC Electronic Materials SpA; current MEMC Electronic Materials SpA
+
 **Inventors:** Robert Falster; Marco Cornara; Daniela Gambaro; Massimiliano Olmo
+
 **Dates:** priority 1997-02-26, filing 1997-02-26, grant 1999-11-30
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5994761A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-02-26 — all 29 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW528815B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `25194044` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3437,10 +3907,15 @@ families and members are counted.
 **Title:** Method for cmos latch-up improvement by mev billi (buried implanted layer for laternal isolation) plus buried layer implantation
 
 **Assignees:** original Genus Inc; current Varian Semiconductor Equipment Associates Inc
+
 **Inventors:** John O. Borland
+
 **Dates:** priority 1997-03-19, filing 1997-03-19, grant 1998-10-13
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5821589A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-03-11 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP4349658B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `25236318` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3475,10 +3950,15 @@ families and members are counted.
 **Title:** Crack stops
 
 **Assignees:** original Siemens AG; International Business Machines Corp; current Samsung Electronics Co Ltd; International Business Machines Corp
+
 **Inventors:** Alexander R. Mitwalsky; Tze-Chiang Chen
+
 **Dates:** priority 1997-03-24, filing 1997-03-24, grant 1998-08-04
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5789302A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-03-24 — all 11 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW423066B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `25239372` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3514,10 +3994,15 @@ families and members are counted.
 **Title:** Polishing head for chemical mechanical polishing using linear planarization technology
 
 **Assignees:** original Lam Research Corp; current Applied Materials Inc
+
 **Inventors:** Anil K. Pant; Douglas W. Young; Glenn Travis; Konstantin Volodarsky; Andrew Nagengast
+
 **Dates:** priority 1997-04-08, filing 1999-12-30, grant 2002-07-30
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6425812B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-04-08 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6425812B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `46276600` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3542,10 +4027,15 @@ families and members are counted.
 **Title:** Fabrication sequence employing an oxide formed with minimized inducted charge and/or maximized breakdown voltage
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Bohumil Lojek; Joseph M. McRae
+
 **Dates:** priority 1997-05-07, filing 1997-05-07, grant 1998-12-22
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5851892A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-05-07 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5851892A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25314008` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3568,10 +4058,15 @@ families and members are counted.
 **Title:** Reduction of mobile ion and metal contamination in HDP-CVD chambers using chamber seasoning film depositions
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Kent Rossman; Turgut Sahin; Hichem M'Saad; Romuald Nowak
+
 **Dates:** priority 1997-06-11, filing 1999-01-19, grant 2000-09-19
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6121161A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-06-11 — all 9 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW460943B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `25360177` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3605,10 +4100,15 @@ families and members are counted.
 **Title:** Etchstop for integrated circuits
 
 **Assignees:** original Texas Instruments Inc; current Texas Instruments Inc
+
 **Inventors:** Guoqiang Xing; Glenn A. Cerny; Mark R. Visokay
+
 **Dates:** priority 1997-06-30, filing 1998-06-26, grant 2000-07-18
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6090697A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-06-26 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6090697A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `26729228` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3636,10 +4136,15 @@ families and members are counted.
 **Title:** Rework method utilizing thinner for wafers in manufacturing of semiconductor devices
 
 **Assignees:** original Samsung Electronics Co Ltd; current Samsung Electronics Co Ltd
+
 **Inventors:** Mi-sook Jeon; Chun-deuk Lee; Bo-yong Lee
+
 **Dates:** priority 1997-09-04, filing 1998-09-04, grant 2000-12-12
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6159646A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-09-04 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6159646A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `26633062` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3669,10 +4174,15 @@ families and members are counted.
 **Title:** Sample inspection system
 
 **Assignees:** original KLA Tencor Corp; current KLA Tencor Technologies Corp
+
 **Inventors:** Mehdi Vaez-Iravani; Stanley Stokowski; Guoheng Zhao
+
 **Dates:** priority 1997-09-19, filing 1997-09-19, grant 2001-03-13
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6201601B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-09-18 — all 33 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP4499279B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25464477` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3729,10 +4239,15 @@ families and members are counted.
 **Title:** Low temperature metallization process
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Ende Shan; Gorley Lau; Sam Geha
+
 **Dates:** priority 1997-11-13, filing 1997-11-13, grant 2000-10-31
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6140228A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-11-13 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6756302B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25516451` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3756,10 +4271,15 @@ families and members are counted.
 **Title:** Vertical LPCVD furnace with reversible manifold collar and method of retrofitting same
 
 **Assignees:** original Sony Corp; Sony Electronics Inc; current Sony Corp; Sony Electronics Inc
+
 **Inventors:** Steven C. Persyn
+
 **Dates:** priority 1997-12-15, filing 1997-12-15, grant 1998-09-01
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5800616A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2017-12-15 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5800616A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `25536403` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3784,10 +4304,15 @@ families and members are counted.
 **Title:** Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Ende Shan; Gorley Lau; Anthony Chung
+
 **Dates:** priority 1998-01-14, filing 1998-01-14, grant 2005-06-14
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6906421B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2019-08-31 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6906421B1 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `34632364` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3810,10 +4335,15 @@ families and members are counted.
 **Title:** Method of reducing substrate noise coupling in mixed signal integrated circuits
 
 **Assignees:** original Individual; current Individual
+
 **Inventors:** Eugene Robert Worley
+
 **Dates:** priority 1998-03-25, filing 1998-03-25, grant 2000-02-01
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6020614A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-03-25 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6020614A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `21950172` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3838,10 +4368,15 @@ families and members are counted.
 **Title:** High throughput chemical vapor deposition process capable of filling high aspect ratio structures
 
 **Assignees:** original Novellus Systems Inc; International Business Machines Corp; current Novellus Systems Inc; International Business Machines Corp
+
 **Inventors:** George D. Papasouliotis; Ashima B. Chakravarti; Richard A. Conti; Laertis Economikos; Patrick A. Van Cleemput
+
 **Dates:** priority 1998-05-05, filing 1998-05-05, grant 2000-02-29
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6030881A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-05-05 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6030881A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `22109576` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3873,10 +4408,15 @@ families and members are counted.
 **Title:** Method for preventing poisoned vias and trenches
 
 **Assignees:** original United Microelectronics Corp; current United Microelectronics Corp
+
 **Inventors:** Kun-Lin Wu; Horng-Bor Lu
+
 **Dates:** priority 1998-07-28, filing 1998-10-05, grant 2000-01-11
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6013581A, retrieved 2026-09-14)
+
 **Estimated expiry:** 2019-07-28 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW405223B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `21630827` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3907,10 +4447,15 @@ families and members are counted.
 **Title:** Compact external torch assembly for semiconductor processing
 
 **Assignees:** original Persys Technology Ltd; current Persys Technology Ltd
+
 **Inventors:** Gideon Drimer; Leo Mendelovici; Nachum Borivker
+
 **Dates:** priority 1998-08-05, filing 1999-07-02, grant 2001-01-30
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6179609B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2019-07-02 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6179609B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `26323689` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3941,10 +4486,15 @@ families and members are counted.
 **Title:** Isolation of incompatible processes in a multi-station processing chamber
 
 **Assignees:** original Novellus Systems Inc; current Novellus Systems Inc
+
 **Inventors:** Edward J. McInerney; Thomas M. Pratt; Shawn D. Hancock
+
 **Dates:** priority 1998-10-08, filing 2000-02-28, grant 2001-11-20
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6319553B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-10-08 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6319553B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `22616474` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3970,10 +4520,15 @@ families and members are counted.
 **Title:** CMOS processing employing zero degree halo implant for P-channel transistor
 
 **Assignees:** original Advanced Micro Devices Inc; current GlobalFoundries Inc; AMD Technologies Holdings Inc
+
 **Inventors:** Dong-Hyuk Ju; Scott Luning
+
 **Dates:** priority 1998-11-06, filing 1998-11-06, grant 2001-05-15
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6232166B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-11-06 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6232166B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `22689334` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3998,10 +4553,15 @@ families and members are counted.
 **Title:** Method of improving surface planarity of chemical-mechanical polishing operation by forming shallow dummy pattern
 
 **Assignees:** original United Microelectronics Corp; current United Microelectronics Corp
+
 **Inventors:** Ming-Sheng Yang; Yimin Huang; Juan-Yuan Wu; Water Lur
+
 **Dates:** priority 1998-11-19, filing 1998-11-19, grant 2001-04-10
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6214745B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-11-19 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6214745B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `22722349` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4029,10 +4589,15 @@ families and members are counted.
 **Title:** Method for shallow trench isolation and shallow trench isolation structure
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Bo Jin
+
 **Dates:** priority 1998-12-09, filing 1998-12-09, grant 2004-11-30
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6825544B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2018-12-09 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6825544B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `33449343` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4056,10 +4621,15 @@ families and members are counted.
 **Title:** Apparatus and method for controlling plasma uniformity across a substrate
 
 **Assignees:** original Novellus Systems Inc; current Novellus Systems Inc
+
 **Inventors:** Kwok F. Lai; Andrew L. Nordquist; Kaihan A. Ashtiani; Larry D. Hartsough; Karl B. Levy
+
 **Dates:** priority 1999-01-05, filing 1999-06-30, grant 2001-01-30
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6179973B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2019-06-30 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6444105B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `26812562` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4090,10 +4660,15 @@ families and members are counted.
 **Title:** Method of forming retrograde doping file in twin well CMOS device
 
 **Assignees:** original Hyundai Electronics Industries Co Ltd; current SK Hynix Inc
+
 **Inventors:** Joo-Hyong Lee; Jeong-Hwan Son
+
 **Dates:** priority 1999-01-22, filing 2001-03-20, grant 2002-09-24
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6455402B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2020-01-21 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6455402B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `19572018` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4134,10 +4709,15 @@ families and members are counted.
 **Title:** Multiple threshold voltage semiconductor device fabrication technology
 
 **Assignees:** original Advanced Micro Devices Inc; current Advanced Micro Devices Inc
+
 **Inventors:** Zoran Krivokapic; Ognjen Milic
+
 **Dates:** priority 1999-04-13, filing 1999-04-13, grant 2001-05-29
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6238982B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2019-04-13 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6238982B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23113681` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4170,10 +4750,15 @@ families and members are counted.
 **Title:** High aspect ratio photolithographic method for high energy implantation
 
 **Assignees:** original Zilog Inc; current IXYS Intl Ltd
+
 **Inventors:** Stephen J. Buffat; Jean L. Adams
+
 **Dates:** priority 1999-07-01, filing 1999-07-01, grant 2003-06-10
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6576405B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2019-07-01 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6576405B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23358573` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4211,10 +4796,15 @@ families and members are counted.
 **Title:** Method for etching fuse windows in IC devices and devices made
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Shulan Ying; Shu-Chi Hung
+
 **Dates:** priority 1999-10-01, filing 1999-10-01, grant 2001-10-09
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6300252B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2019-10-01 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6300252B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23626242` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4240,10 +4830,15 @@ families and members are counted.
 **Title:** Process for controlling oxide thickness over a fusible link using transient etch stops
 
 **Assignees:** original Vanguard International Semiconductor Corp; current Vanguard International Semiconductor Corp
+
 **Inventors:** Wen-Tsing Tzeng; Yue-Feng Chen; Kau-Jan Wang
+
 **Dates:** priority 1999-10-25, filing 1999-10-25, grant 2001-09-25
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6294474B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2019-10-25 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6294474B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23688532` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4270,10 +4865,15 @@ families and members are counted.
 **Title:** Alternate steps of IMP and sputtering process to improve sidewall coverage
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Praburam Gopalraja; Sergio Edelstein; Avi Tepman; Peijun Ding; Debabrata Ghosh; Nirmalya Maity
+
 **Dates:** priority 1999-11-24, filing 1999-11-24, grant 2002-02-26
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6350353B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2020-11-24 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW492074B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `23783296` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4313,10 +4913,15 @@ families and members are counted.
 **Title:** Method for forming a metallization structure in an integrated circuit
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Gorley L. Lau
+
 **Dates:** priority 1999-12-30, filing 1999-12-30, grant 2005-11-29
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6969448B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-03-25 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6969448B1 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `23892778` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4344,10 +4949,15 @@ families and members are counted.
 **Title:** Integrated resonator and amplifier system
 
 **Assignees:** original Axcelis Technologies Inc; current Axcelis Technologies Inc
+
 **Inventors:** William F. Divergilio; Kourosh Saadatmand; Ernst F. Scherer
+
 **Dates:** priority 2000-05-30, filing 2000-05-30, grant 2003-11-25
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6653803B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-02-11 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6653803B1 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24331908` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4381,10 +4991,15 @@ families and members are counted.
 **Title:** Centrifugal spray processor and retrofit kit
 
 **Assignees:** original Semitool Inc; current Oemg Holdings LLC; Shellback Semiconductor Technology LLC
+
 **Inventors:** Trevor Henke; Craig Meuchel; Marvin Bernt
+
 **Dates:** priority 2000-07-07, filing 2002-07-19, grant 2007-12-11
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US7305999B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2023-08-06 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7305999B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24449421` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4416,10 +5031,15 @@ families and members are counted.
 **Title:** Solid phase epitaxy activation process for source/drain junction extensions and halo regions
 
 **Assignees:** original Advanced Micro Devices Inc; current Advanced Micro Devices Inc
+
 **Inventors:** Bin Yu
+
 **Dates:** priority 2000-08-07, filing 2000-08-07, grant 2003-02-18
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6521502B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2020-08-07 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6521502B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24538683` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4447,10 +5067,15 @@ families and members are counted.
 **Title:** Process for reducing leakage in an integrated circuit with shallow trench isolated active areas
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Krishnaswamy Ramkumar; Kaichiu Wong; Venuka Jayatilaka
+
 **Dates:** priority 2000-08-09, filing 2000-08-09, grant 2004-11-16
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6817903B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-01-15 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6817903B1 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `33418789` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4473,10 +5098,15 @@ families and members are counted.
 **Title:** Double LDD devices for improved DRAM refresh
 
 **Assignees:** original Micron Technology Inc; current Round Rock Research LLC
+
 **Inventors:** Luan C. Tran; Mark McQueen; Robert Kerr
+
 **Dates:** priority 2000-08-22, filing 2002-08-01, grant 2004-07-06
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6759288B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2020-08-22 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6759288B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `24577983` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4508,10 +5138,15 @@ families and members are counted.
 **Title:** Faraday system for ion implanters
 
 **Assignees:** original Varian Semiconductor Equipment Associates Inc; current Varian Semiconductor Equipment Associates Inc
+
 **Inventors:** Jack Bisson; Zhiyong Zhao; George Gammel; Daniel Alvarado; Craig Walker
+
 **Dates:** priority 2000-09-15, filing 2001-09-12, grant 2004-04-20
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6723998B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-09-23 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6723998B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `26926543` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4543,10 +5178,15 @@ families and members are counted.
 **Title:** Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions
 
 **Assignees:** original Texas Instruments Inc; current Texas Instruments Inc
+
 **Inventors:** Jozef Czeslaw Mitros
+
 **Dates:** priority 2000-09-21, filing 2001-09-14, grant 2003-12-09
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6660603B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-09-21 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of ATE448567T1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `22880690` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4584,10 +5224,15 @@ families and members are counted.
 **Title:** Method for forming binary intensity masks
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Shy-Jay Lin; Wen-Chuan Wang
+
 **Dates:** priority 2000-10-26, filing 2000-10-26, grant 2002-04-30
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6379849B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2020-12-12 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6379849B1 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24795638` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4616,10 +5261,15 @@ families and members are counted.
 **Title:** Method for fabrication of an MIM capacitor and related structure
 
 **Assignees:** original Newport Fab LLC; current Newport Fab LLC
+
 **Inventors:** Arjun Kar-Roy; Marco Racanelli
+
 **Dates:** priority 2000-11-22, filing 2000-11-22, grant 2002-08-06
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6430028B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2020-11-22 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6430028B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `24897586` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4655,10 +5305,15 @@ families and members are counted.
 **Title:** Sacrificial polysilicon sidewall process and rapid thermal spike annealing for advance CMOS fabrication
 
 **Assignees:** original International Business Machines Corp; current International Business Machines Corp
+
 **Inventors:** Kam Leung Lee; Ying Zhang; Maheswaran Surendra; Edmund M. Sikorski
+
 **Dates:** priority 2000-12-14, filing 2000-12-14, grant 2003-02-11
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6518136B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2020-12-14 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6743686B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `24961682` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4686,10 +5341,15 @@ families and members are counted.
 **Title:** Method of uniform polish in shallow trench isolation process
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Bo Jin
+
 **Dates:** priority 2001-02-14, filing 2001-02-14, grant 2003-07-15
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6593208B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-02-14 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6593208B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25130177` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4712,10 +5372,15 @@ families and members are counted.
 **Title:** MOSFET with differential halo implant and annealing strategy
 
 **Assignees:** original Advanced Micro Devices Inc; current GlobalFoundries US Inc
+
 **Inventors:** Bin Yu
+
 **Dates:** priority 2001-04-27, filing 2001-04-27, grant 2003-10-07
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6630385B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-04-27 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6630385B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `28675849` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4741,10 +5406,15 @@ families and members are counted.
 **Title:** Seal ring structure for IC containing integrated digital/RF/analog circuits and functions
 
 **Assignees:** original Zeevo Inc; current Avago Technologies International Sales Pte Ltd; Gatx Ventures Inc
+
 **Inventors:** Subhas Bothra; Thomas G. McKay; Ravi Jhota
+
 **Dates:** priority 2001-04-30, filing 2001-04-30, grant 2002-12-10
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6492716B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-04-30 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6492716B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25297601` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4772,10 +5442,15 @@ families and members are counted.
 **Title:** HDP-CVD deposition process for filling high aspect ratio gaps
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Zhengquan Tan; Dongqing Li; Walter Zygmunt
+
 **Dates:** priority 2001-05-11, filing 2004-01-21, grant 2005-07-05
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6914016B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-07-28 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7196021B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `25317682` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4813,10 +5488,15 @@ families and members are counted.
 **Title:** Method for producing ultra-thin tungsten layers with improved step coverage
 
 **Assignees:** original Novellus Systems Inc; current Novellus Systems Inc
+
 **Inventors:** Sang-Hyeob Lee; Joshua Collins
+
 **Dates:** priority 2001-05-22, filing 2001-10-09, grant 2003-10-21
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6635965B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-10-09 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6635965B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `46204269` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4848,10 +5528,15 @@ families and members are counted.
 **Title:** Method of forming a semiconductor device using double endpoint detection
 
 **Assignees:** original Tokyo Electron Ltd; National Semiconductor Corp; current Tokyo Electron Ltd; National Semiconductor Corp
+
 **Inventors:** Danielle Ki'ilani Kempa; Sandra Hyland
+
 **Dates:** priority 2001-05-31, filing 2001-05-31, grant 2002-04-23
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6376262B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-05-31 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6376262B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25360011` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4881,10 +5566,15 @@ families and members are counted.
 **Title:** Method and structure for high-voltage device with self-aligned graded junctions
 
 **Assignees:** original Cypress Semiconductor Corp; current Cypress Semiconductor Corp
+
 **Inventors:** Igor Kouznetsov
+
 **Dates:** priority 2001-07-12, filing 2001-07-12, grant 2003-03-11
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6531366B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-07-12 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6531366B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `25418952` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4911,10 +5601,15 @@ families and members are counted.
 **Title:** Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS) type devices
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Manuj Rathor; Krishnaswamy Ramkumar; Fred Jenne; Loren Lancaster
+
 **Dates:** priority 2001-07-31, filing 2002-06-28, grant 2004-11-16
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6818558B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-09-18 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6818558B1 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `31979047` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4938,10 +5633,15 @@ families and members are counted.
 **Title:** Method and device for sorting wafers
 
 **Assignees:** original Infineon Technologies AG; current Polaris Innovations Ltd
+
 **Inventors:** Dirk Caspary; Dorit Kaulfuss
+
 **Dates:** priority 2001-08-31, filing 2002-09-03, grant 2004-06-08
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6747230B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-11-23 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6747230B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `7697942` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4969,10 +5669,15 @@ families and members are counted.
 **Title:** Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same
 
 **Assignees:** original Koninklijke Philips Electronics NV; current NXP BV; Akzo Nobel NV
+
 **Inventors:** Michael Charles Olewine; Kevin F. Saiz
+
 **Dates:** priority 2001-10-09, filing 2001-10-09, grant 2004-04-06
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6717193B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-10-09 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW586130B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `25521092` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5016,10 +5721,15 @@ families and members are counted.
 **Title:** Method of manufacturing a top insulating layer for a sonos-type device
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Krishnaswamy Ramkumar
+
 **Dates:** priority 2001-10-22, filing 2001-10-22, grant 2004-12-07
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6828201B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2021-10-22 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6828201B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `33476239` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5042,10 +5752,15 @@ families and members are counted.
 **Title:** Textured-metastable aluminum alloy sputter targets and method of manufacture
 
 **Assignees:** original Praxair ST Technology Inc; current Praxair ST Technology Inc
+
 **Inventors:** Andrew C. Perry; Paul S. Gilman; Jaak Van den Sype
+
 **Dates:** priority 2001-11-14, filing 2001-11-14, grant 2003-08-12
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6605199B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-11-14 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL161750A0 (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+
 **Google Patents family ID:** `25537645` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5086,10 +5801,15 @@ families and members are counted.
 **Title:** Shallow trench isolation approach for improved STI corner rounding
 
 **Assignees:** original Spansion LLC; current Spansion Inc; Infineon Technologies LLC
+
 **Inventors:** Unsoon Kim; Yu Sun; Hiroyuki Kinoshita; Kuo-Tung Chang; Harpreet K. Sachar; Mark S. Chang
+
 **Dates:** priority 2001-12-27, filing 2002-10-22, grant 2008-10-21
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US7439141B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2025-12-05 — all 15 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7439141B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `26708682` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5135,10 +5855,15 @@ families and members are counted.
 **Title:** Yttrium oxide based surface coating for semiconductor IC processing vacuum chambers
 
 **Assignees:** original Individual; current Applied Materials Inc
+
 **Inventors:** Jennifer Y Sun; Shun Jackson Wu; Senh Thach; Ananda H Kumar; Robert W Wu; Hong Wang; Yixing Lin; Clifford C Stow
+
 **Dates:** priority 2002-02-14, filing 2002-02-14, grant 2004-08-17
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6776873B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-02-14 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6776873B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `32848879` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5166,10 +5891,15 @@ families and members are counted.
 **Title:** Ultra-thin gate oxide through post decoupled plasma nitridation anneal
 
 **Assignees:** original Chartered Semiconductor Manufacturing Pte Ltd; current GlobalFoundries Singapore Pte Ltd
+
 **Inventors:** Dong Zhong; Yun Tan; Chew Ang; Jia Zheng
+
 **Dates:** priority 2002-03-06, filing 2002-03-06
+
 **Legal status (representative):** Granted (Google Patents (IFI Claims) status of US20030170956A1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2023-03-06 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP2003309260A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+
 **Google Patents family ID:** `27754013` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5199,10 +5929,15 @@ families and members are counted.
 **Title:** SONOS structure including a deuterated oxide-silicon interface and method for making the same
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar; Frederick B. Jenne
+
 **Dates:** priority 2002-03-08, filing 2002-03-08, grant 2004-01-13
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6677213B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-06-30 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7042054B1 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `29778448` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5226,10 +5961,15 @@ families and members are counted.
 **Title:** Method of forming retrograde n-well and p-well
 
 **Assignees:** original International Business Machines Corp; current GlobalFoundries Inc
+
 **Inventors:** Matthew J. Breitwisch; Chung H. Lam; James A. Slinkman
+
 **Dates:** priority 2002-04-19, filing 2002-04-19, grant 2003-12-23
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6667205B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-09-22 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6967380B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `29214361` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5271,10 +6011,15 @@ families and members are counted.
 **Title:** Method for fabricating semiconductor device with triple well structure
 
 **Assignees:** original Hynix Semiconductor Inc; current SK Hynix Inc
+
 **Inventors:** Jae-Geun Oh
+
 **Dates:** priority 2002-05-16, filing 2002-12-30, grant 2004-10-19
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6806133B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-12-30 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6806133B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `29417389` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5313,10 +6058,15 @@ families and members are counted.
 **Title:** Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices
 
 **Assignees:** original Individual; current Monterey Research LLC
+
 **Inventors:** Krishnaswamy Ramkumar; Manuj Rathor; Biju Parameshwaran; Loren Lancaster
+
 **Dates:** priority 2002-06-28, filing 2002-06-28, grant 2005-11-29
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6969689B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-11-16 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6969689B1 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `35405131` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5351,10 +6101,15 @@ families and members are counted.
 **Title:** Formation of standard voltage threshold and low voltage threshold mosfet devices
 
 **Assignees:** original Round Rock Research LLC; current Round Rock Research LLC
+
 **Inventors:** Mark Helm; Xianfeng Zhou
+
 **Dates:** priority 2002-07-08, filing 2010-07-12
+
 **Legal status (representative):** Granted (Google Patents (IFI Claims) status of US20110006372A1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2023-06-30 — all 18 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7304353B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `29999977` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5404,10 +6159,15 @@ families and members are counted.
 **Title:** Optimal spike anneal ambient
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Dean Jennings; Sairaju Tallavarjula; Randhir Thakur
+
 **Dates:** priority 2002-09-20, filing 2002-09-20, grant 2004-10-12
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6803297B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2023-02-25 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6803297B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `31992738` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5433,10 +6193,15 @@ families and members are counted.
 **Title:** Advances in spike anneal processes for ultra shallow junctions
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Balasubramanian Ramachandran; Ravi Jallepally; Ryan C. Boas; Sundar Ramamurthy; Amir Al-Bayati; Houda Graoui; Joseph M. Spear
+
 **Dates:** priority 2002-09-20, filing 2003-09-22, grant 2005-05-24
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6897131B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2023-09-22 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6897131B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `32659145` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5462,10 +6227,15 @@ families and members are counted.
 **Title:** Cold trap for CVD furnace
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Leon Lin; Tom Fan; Steven Chen; Vito Lee; Yu-Hsiang Wu
+
 **Dates:** priority 2002-10-11, filing 2002-10-11
+
 **Legal status (representative):** Granted (Google Patents (IFI Claims) status of US20040069224A1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2023-06-23 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6908499B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `32068901` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5493,10 +6263,15 @@ families and members are counted.
 **Title:** Metal stack for local interconnect layer
 
 **Assignees:** original Cypress Semiconductor Corp; current Hd Silicon Solutions LLC
+
 **Inventors:** Mira Ben-Tzur; Dafna Beery; Gorley L. Lau; Krishnaswamy Ramkumar
+
 **Dates:** priority 2002-11-04, filing 2002-11-04, grant 2004-08-10
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6774033B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-11-04 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6774033B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `32823623` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5520,10 +6295,15 @@ families and members are counted.
 **Title:** Method of forming a metal fuse on semiconductor devices
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Chao-Hsiang Yang; Chun-Ming Su
+
 **Dates:** priority 2002-12-18, filing 2002-12-18, grant 2004-12-28
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6835642B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2022-12-18 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6835642B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `32593189` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5549,10 +6329,15 @@ families and members are counted.
 **Title:** Method of adjusting the threshold voltage of a mosfet
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Yanzhong Xu
+
 **Dates:** priority 2003-01-29, filing 2003-01-29, grant 2004-07-20
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6764890B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2023-01-29 — all 1 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6764890B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `32681640` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5575,10 +6360,15 @@ families and members are counted.
 **Title:** Shallow trench isolation process
 
 **Assignees:** original Amber Wave Systems Inc; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Matthew T. Currie; Anthony J. Lochtefeld
+
 **Dates:** priority 2003-03-07, filing 2004-03-05, grant 2005-11-01
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6960781B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2024-10-25 — all 16 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7504704B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `32990685` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5623,10 +6413,15 @@ families and members are counted.
 **Title:** Semiconductor device and its manufacture method
 
 **Assignees:** original Fujitsu Semiconductor Ltd; current Fujitsu Semiconductor Ltd
+
 **Inventors:** Taiji Ema; Hideyuki Kojima; Toru Anezaki
+
 **Dates:** priority 2003-04-10, filing 2007-12-07, grant 2009-10-20
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US7605041B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2024-04-10 — all 15 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TWI229450B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `33193196` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5665,10 +6460,15 @@ families and members are counted.
 **Title:** Method of ashing a photoresist
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Bor-Wen Chan; Yuan-Hung Chiu; Han-Jan Tao
+
 **Dates:** priority 2003-04-22, filing 2003-04-22
+
 **Legal status (representative):** Abandoned (Google Patents (IFI Claims) status of US20040214448A1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2024-04-22 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TWI252538B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `33298522` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5706,10 +6506,15 @@ families and members are counted.
 **Title:** Method for fabricating a high density composite MIM capacitor with flexible routing in semiconductor dies
 
 **Assignees:** original Newport Fab LLC; current Samsung Electronics Co Ltd; Newport Fab LLC
+
 **Inventors:** Arjun Kar-Roy; Marco Racanelli; Paul Kempf
+
 **Dates:** priority 2003-05-28, filing 2004-05-19, grant 2006-07-18
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US7078310B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2023-08-07 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7078310B1 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `32851038` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5738,10 +6543,15 @@ families and members are counted.
 **Title:** Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency energy
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Philip A. Kraus; Thai Cheng Chua
+
 **Dates:** priority 2003-05-28, filing 2006-05-31, grant 2009-04-07
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US7514373B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2025-02-21 — all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7514373B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `33457548` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5777,10 +6587,15 @@ families and members are counted.
 **Title:** MIM capacitor structure and method of fabrication
 
 **Assignees:** original Infineon Technologies AG; current Infineon Technologies AG
+
 **Inventors:** Sun-OO Kim; Ernst Demm
+
 **Dates:** priority 2003-11-24, filing 2003-11-24, grant 2006-09-26
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US7112507B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2024-11-17 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP4431580B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `34591550` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5812,10 +6627,15 @@ families and members are counted.
 **Title:** Method for forming dummy structures for improved CMP and reduced capacitance
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Wen-Chih Chiou; Syun-Ming Jang
+
 **Dates:** priority 2003-12-04, filing 2003-12-04, grant 2005-02-01
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6849549B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2024-12-04 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TWI241682B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `34080863` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5846,10 +6666,15 @@ families and members are counted.
 **Title:** High density MIM capacitor structure and fabrication process
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Kuan-Lun Chang; Chuan-Ying Lee; Chun-Hon Chen
+
 **Dates:** priority 2003-12-04, filing 2003-12-04, grant 2008-01-08
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US7317221B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2024-04-03 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7317221B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `34633830` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5877,10 +6702,15 @@ families and members are counted.
 **Title:** Method to remove fluorine residue from bond pads
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** How-Cheng Tsai; Hung-Hsin Liu
+
 **Dates:** priority 2003-12-18, filing 2003-12-18, grant 2006-06-06
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US7055532B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2024-12-18 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TWI333673B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `34678118` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5908,10 +6738,15 @@ families and members are counted.
 **Title:** Drain extended MOS transistors and methods for making the same
 
 **Assignees:** original Individual; current Texas Instruments Inc
+
 **Inventors:** PR Chidambaram
+
 **Dates:** priority 2004-07-08, filing 2004-07-08
+
 **Legal status (representative):** Granted (Google Patents (IFI Claims) status of US20060006461A1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2024-07-08 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7560324B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `35540402` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5935,6 +6770,7 @@ families and members are counted.
 
 **Notes:**
 * Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows name Texas Instruments Incorporated as the first assignee of the inventors' interest.
+* Round-1 review finding M5: the round-1 review re-fetched US20060006461A1 on 2026-09-18 and reports its status as "Expired - Lifetime" with an expiration event 2024-07-08, rather than the "Granted" recorded here from the 2026-09-14 fetch. This drift changes nothing (the family is already expired, and 2024-07-08 already matches the family's expiry.date), but the member record has not been re-fetched to update its own status field, because Google Patents is unreachable from the environment this correction was made in.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20060006461A1/en
 
@@ -5944,10 +6780,15 @@ families and members are counted.
 **Title:** Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode
 
 **Assignees:** original Texas Instruments Inc; current Texas Instruments Inc
+
 **Inventors:** Darius L. Crenshaw; Byron L. Williams; Alwin Tsao; Hisashi Shichijo; Satyavolu S. Papa Rao; Kenneth D. Brennan; Steven A. Lytle
+
 **Dates:** priority 2004-07-31, filing 2004-07-31, grant 2007-07-31
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US7250334B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2025-01-20 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7250334B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `35732850` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5974,10 +6815,15 @@ families and members are counted.
 **Title:** Apparatus and plasma ashing process for increasing photoresist removal rate
 
 **Assignees:** original Axcelis Technologies Inc; current Lam Research Corp
+
 **Inventors:** Alan F. Becknell; Philip Hammar; David Ferris
+
 **Dates:** priority 2004-09-01, filing 2005-09-01, grant 2008-11-11
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US7449416B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2026-04-18 — all 16 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7449416B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `35448183` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6028,10 +6874,15 @@ families and members are counted.
 **Title:** Method and system for laser soft marking
 
 **Assignees:** original GSI Group Corp; current Electro Scientific Industries Inc
+
 **Inventors:** Bo Gu; Jonathan S. Ehrmann
+
 **Dates:** priority 2004-11-11, filing 2005-11-09, grant 2010-04-27
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US7705268B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2026-12-17 — US7705268B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `36337293` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6070,10 +6921,15 @@ families and members are counted.
 **Title:** Method and system for forming an oxynitride layer
 
 **Assignees:** original Tokyo Electron Ltd; International Business Machines Corp; current Tokyo Electron Ltd; International Business Machines Corp
+
 **Inventors:** Masanobu Igeta; Cory Wajda; David L. O'Meara; Kristen Scheer; Toshihara Eurakawa
+
 **Dates:** priority 2005-03-30, filing 2005-03-30, grant 2009-03-10
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US7501352B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2026-03-30 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of CN101151718A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
+
 **Google Patents family ID:** `37073778` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6105,10 +6961,15 @@ families and members are counted.
 **Title:** Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric
 
 **Assignees:** original Applied Materials Inc; current Applied Materials Inc
+
 **Inventors:** Christopher S. Olsen
+
 **Dates:** priority 2005-06-27, filing 2005-06-27, grant 2008-09-30
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US7429538B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2026-06-27 — all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TWI343604B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
 **Google Patents family ID:** `37568096` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6144,10 +7005,15 @@ families and members are counted.
 **Title:** MIM capacitor in a semiconductor device and method therefor
 
 **Assignees:** original Freescale Semiconductor Inc; current III Holdings 12 LLC
+
 **Inventors:** Douglas R. Roberts; Gary L. Huffman
+
 **Dates:** priority 2005-06-28, filing 2005-06-28, grant 2008-05-20
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US7375002B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2026-07-07 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7375002B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment))
+
 **Google Patents family ID:** `37568077` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6186,10 +7052,15 @@ families and members are counted.
 **Title:** Shallow trench isolation (STI) with trench liner of increased thickness
 
 **Assignees:** original Lattice Semiconductor Corp; current Lattice Semiconductor Corp
+
 **Inventors:** Sunil Mehta; Stewart Logie; Steven Fong
+
 **Dates:** priority 2006-05-18, filing 2009-10-28, grant 2011-07-26
+
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US7985656B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2026-05-18 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7989911B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+
 **Google Patents family ID:** `38711248` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6218,10 +7089,15 @@ families and members are counted.
 **Title:** System and method for carbonation of deionized water
 
 **Assignees:** original MKS Instruments Inc; current MKS Instruments Inc
+
 **Inventors:** Johannes Seiwert; Ulrich Brammer; Christiane Gottschalk; Joachim Lohr
+
 **Dates:** priority 2006-10-17, filing 2007-10-17, grant 2013-04-17
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of EP2104648B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2028-05-14 — US7731161B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `39203155` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6259,10 +7135,15 @@ families and members are counted.
 **Title:** Simultaneous formation of a top oxide layer in a silicon-oxide-nitride-oxide-silicon (SONOS) transistor and a gate oxide in a metal oxide semiconductor (MOS)
 
 **Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
 **Inventors:** Jeong-Mo Hwang
+
 **Dates:** priority 2006-12-22, filing 2015-01-16, grant 2017-02-28
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US9583501B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2026-12-22 — US8222111B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+
 **Google Patents family ID:** `39541580` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6289,10 +7170,15 @@ families and members are counted.
 **Title:** Oxide-nitride-oxide stack having multiple oxynitride layers
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Sagy Levy; Krishnaswamy Ramkumar; Fredrick Jenne; Sam Geha
+
 **Dates:** priority 2007-05-25, filing 2007-06-13
+
 **Legal status (representative):** Abandoned (Google Patents (IFI Claims) status of US20090179253A1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2027-06-17 — US12266521B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `40849883` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6329,10 +7215,15 @@ families and members are counted.
 **Title:** Single-wafer process for fabricating a nonvolatile charge trap memory device
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar; Sagy Levy
+
 **Dates:** priority 2007-05-25, filing 2007-09-26, grant 2010-03-02
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US7670963B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2028-05-25 — the latest recorded or estimated term among all members belongs to TW200847344A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2028-05-25; CN101548385B is the most recent member still shown as in force, with estimated expiry 2027-09-28
+
 **Google Patents family ID:** `40072821` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6362,10 +7253,15 @@ families and members are counted.
 **Title:** Oxynitride bilayer formed using a precursor inducing a high charge trap density in a top layer of the bilayer
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Sagy Levy
+
 **Dates:** priority 2007-05-25, filing 2008-01-08, grant 2011-11-29
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8067284B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2029-04-30 — US8067284B1 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `44994327` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6389,10 +7285,15 @@ families and members are counted.
 **Title:** Integration of non-volatile charge trap memory devices and logic CMOS devices
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** William W. C. Koutny, Jr.; Sam Geha; Igor Kouznetsov; Krishnaswamy Ramkumar; Fredrick B. Jenne; Sagy Levy; Ravindra Kapre; Jeremy Warren
+
 **Dates:** priority 2007-05-25, filing 2008-05-22, grant 2012-01-10
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8093128B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2028-10-22 — US8679927B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `40072804` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6447,10 +7348,15 @@ families and members are counted.
 **Title:** Radical oxidation process for fabricating a nonvolatile charge trap memory device
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar
+
 **Dates:** priority 2007-05-25, filing 2008-05-21, grant 2012-10-09
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8283261B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2030-03-29 — US8318608B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `40072822` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6481,10 +7387,15 @@ families and members are counted.
 **Title:** SONOS ONO stack scaling
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Fredrick B. Jenne; Sagy Charel Levy
+
 **Dates:** priority 2007-05-25, filing 2007-09-26, grant 2013-12-24
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US8614124B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2031-06-02 — the latest recorded or estimated term among all members belongs to US8614124B2 (status shown: Expired - Fee Related; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related), running to 2031-06-02; US9349877B1 is the most recent member still shown as in force, with estimated expiry 2027-12-27
+
 **Google Patents family ID:** `40071593` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6517,10 +7428,15 @@ families and members are counted.
 **Title:** Oxide-nitride-oxide stack having multiple oxynitride layers
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Sagy Levy; Krishnaswamy Ramkumar; Fredrick Jenne; Sam Geha
+
 **Dates:** priority 2007-05-25, filing 2011-01-14, grant 2014-02-04
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8643124B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2027-06-13 — US9349824B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+
 **Google Patents family ID:** `44760304` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6547,10 +7463,15 @@ families and members are counted.
 **Title:** Nonvolatile charge trap memory device having a deuterated layer in a multi-layer charge-trapping region
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Sagy Levy; Fredrick B. Jenne; Krishnaswamy Ramkumar
+
 **Dates:** priority 2007-05-25, filing 2007-09-26, grant 2014-03-25
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US8680601B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2029-08-12 — the latest recorded or estimated term among all members belongs to US8680601B2 (status shown: Expired - Fee Related; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related), running to 2029-08-12; CN101636845B is the most recent member still shown as in force, with estimated expiry 2027-09-28
+
 **Google Patents family ID:** `40071592` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6584,10 +7505,15 @@ families and members are counted.
 **Title:** Radical oxidation process for fabricating a nonvolatile charge trap memory device
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar; Sagy Levy; Jeong Byun
+
 **Dates:** priority 2007-05-25, filing 2012-07-01, grant 2015-01-27
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8940645B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2029-01-14 — US8940645B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `49581632` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6621,10 +7547,15 @@ families and members are counted.
 **Title:** Parametric testline with increased test pattern areas
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Hsien-Wei Chen; Shih-Hsun Hsu; Hao-Yi Tsai; Shin-puu Jeng
+
 **Dates:** priority 2007-06-08, filing 2007-06-08, grant 2010-03-16
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US7679384B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2028-06-06 — the latest recorded or estimated term among all members belongs to CN101320725B (status shown: Expired - Fee Related; Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related), running to 2028-06-06; US7679384B2 is the most recent member still shown as in force, with estimated expiry 2027-07-19
+
 **Google Patents family ID:** `40095286` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6656,10 +7587,15 @@ families and members are counted.
 **Title:** Oxide formation in a plasma process
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Jeong Soo Byun; Krishnaswamy Ramkumar
+
 **Dates:** priority 2007-08-09, filing 2018-09-19, grant 2019-06-11
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10319733B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2027-08-09 — US9460974B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+
 **Google Patents family ID:** `56507299` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6689,10 +7625,15 @@ families and members are counted.
 **Title:** Plasma oxidation of a memory layer to form a blocking layer in non-volatile charge trap memory devices
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar; Sagy Levy; Jeong Byun
+
 **Dates:** priority 2008-03-31, filing 2008-03-31, grant 2010-09-21
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US7799670B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2028-12-04 — US7799670B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `41115772` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6717,10 +7658,15 @@ families and members are counted.
 **Title:** Sequential deposition and anneal of a dielectic layer in a charge trapping memory device
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar; Sagy Levy
+
 **Dates:** priority 2008-03-31, filing 2008-03-31, grant 2012-01-03
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8088683B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2029-01-17 — US8088683B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `41115802` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6745,10 +7691,15 @@ families and members are counted.
 **Title:** SONOS type stacks for nonvolatile change trap memory devices and methods to form the same
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Helmut Puchner; Igor Polishchuk; Sagy Levy
+
 **Dates:** priority 2008-05-15, filing 2009-03-27, grant 2012-04-24
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8163660B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2029-09-23 — US8163660B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `41681547` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6778,10 +7729,15 @@ families and members are counted.
 **Title:** Method of ONO integration into MOS flow
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar; Bo Jin; Fredrick B. Jenne
+
 **Dates:** priority 2009-04-24, filing 2009-10-29, grant 2011-12-06
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8071453B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2030-05-21 — US9023707B1 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `45034384` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6807,10 +7763,15 @@ families and members are counted.
 **Title:** Forming integrated circuit devices with metal-insulator-metal capacitors using selective etch of top electrodes
 
 **Assignees:** original Texas Instruments Inc; current Texas Instruments Inc
+
 **Inventors:** Marshall O. Cathey, Jr.; Pushpa Mahalingam; Weidong Tian; David C. Guiling; Xinfen Chen; Binghua Hu; Sopa Chevacharoenkul
+
 **Dates:** priority 2009-04-30, filing 2009-04-30, grant 2012-02-07
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8110414B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2030-01-02 — US8110414B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `43029761` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6840,10 +7801,15 @@ families and members are counted.
 **Title:** Inline method to monitor ONO stack quality
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Yu Yang; Krishnaswamy Ramkumar
+
 **Dates:** priority 2011-05-13, filing 2012-03-26, grant 2014-07-08
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8772059B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2031-08-02 — US8772059B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `48743334` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6868,10 +7834,15 @@ families and members are counted.
 **Title:** Method of integrating a charge-trapping gate stack into a CMOS flow
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar
+
 **Dates:** priority 2012-02-15, filing 2012-03-23, grant 2014-04-01
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US8685813B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2033-02-15 — the latest recorded or estimated term among all members belongs to TW201334120A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2033-02-15; CN103258798B is the most recent member still shown as in force, with estimated expiry 2032-09-06
+
 **Google Patents family ID:** `48945910` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6908,10 +7879,15 @@ families and members are counted.
 **Title:** Methods of manufacturing embedded bipolar switching resistive memory
 
 **Assignees:** original Intermolecular Inc; current Intermolecular Inc
+
 **Inventors:** Mankoo Lee; Tony Chiang; Dipankar Pramanik
+
 **Dates:** priority 2012-12-13, filing 2012-12-13, grant 2015-07-07
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US9076523B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2033-07-18 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US9076523B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
+
 **Google Patents family ID:** `50930700` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6930,6 +7906,9 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RRAM-INTERMOLECULAR.
 
+**Notes:**
+* Round-1 review finding M4: US9076523B2 is marked expired solely on a maintenance-fee lapse, not on its adjusted-expiration date (2033-07-18). The independent review reports US9076523B2's own Google Patents legal events (https://patents.google.com/patent/US9076523B2/en) as: maintenance-fee reminder 2023-02-27, lapse for non-payment 2023-08-14 (37 CFR 1.362), and the unintentional-delay petition window for reinstatement (37 CFR 1.378) closed 2025-08-14 with no petition on record. This dataset could not independently re-fetch that page (Google Patents, Espacenet, WIPO Patentscope and the USPTO PatentsView/PED/assignment APIs were all unreachable from this environment when this note was added); the reported dates are recorded here, not independently re-verified, so a future refresh should confirm them directly. If accurate, this family's reinstatement window has already closed before this note's date. A US patent lapsed for fees can be reinstated within such a window; see the legal caveat on the landing page.
+
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9076523B2/en
 
 :::{dropdown} US 8,796,098 B1 — shown as in force; estimated expiry 2034-02-26
@@ -6938,10 +7917,15 @@ families and members are counted.
 **Title:** Embedded SONOS based memory cells
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar; Igor G. Kouznetsov; Venkatraman Prabhakar
+
 **Dates:** priority 2013-02-26, filing 2013-09-04, grant 2014-08-05
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8796098B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2034-02-26 — the latest recorded or estimated term among all members belongs to TW201440178A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2034-02-26; CN104009005B is the most recent member still shown as in force, with estimated expiry 2034-02-25
+
 **Google Patents family ID:** `51229009` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7011,10 +7995,15 @@ families and members are counted.
 **Title:** Method of forming drain extended mos transistors for high voltage circuits
 
 **Assignees:** original Longitude Flash Memory Solutions Ltd; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Sungkwon Lee; Igor G. Kouznetsov; Gyu-Chul Kim
+
 **Dates:** priority 2013-07-22, filing 2019-02-14
+
 **Legal status (representative):** Abandoned (Google Patents (IFI Claims) status of US20190355583A1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2034-01-04 — US9123642B1 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `53939072` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7040,10 +8029,15 @@ families and members are counted.
 **Title:** Complementary SONOS integration into CMOS flow
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Venkatraman Prabhakar; Krishnaswamy Ramkumar; Igor Kouznetsov
+
 **Dates:** priority 2013-12-12, filing 2017-09-18, grant 2018-06-19
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10002878B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2034-12-12 — the latest recorded or estimated term among all members belongs to TW201535486A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2034-12-12; CN105531828B is the most recent member still shown as in force, with estimated expiry 2034-11-20
+
 **Google Patents family ID:** `53369470` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7075,10 +8069,15 @@ families and members are counted.
 **Title:** Drain extended MOS transistors with split channel
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Venkatraman Prabhakar; Igor Kouznetsov
+
 **Dates:** priority 2014-01-10, filing 2016-02-17, grant 2018-10-16
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US10103244B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2035-01-10 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to TW201530732A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2035-01-10
+
 **Google Patents family ID:** `53522052` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7108,10 +8107,15 @@ families and members are counted.
 **Title:** Methods to integrate SONOS into CMOS flow
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar; Venkatraman Prabhakar
+
 **Dates:** priority 2014-01-21, filing 2014-06-16, grant 2014-12-23
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8916432B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2035-01-21 — the latest recorded or estimated term among all members belongs to DE112014006222T5 (status shown: Granted; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2035-01-21; DE112014006222B4 is the most recent member still shown as in force, with estimated expiry 2034-11-20
+
 **Google Patents family ID:** `52101816` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7148,10 +8152,15 @@ families and members are counted.
 **Title:** RRAM cell structure with conductive etch-stop layer
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Ming Chyi Liu; Yuan-Tai Tseng; Chern-Yow Hsu; Shih-Chang Liu; Chia-Shiung Tsai
+
 **Dates:** priority 2014-03-04, filing 2014-03-04, grant 2018-06-19
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10003022B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2035-03-04 — the latest recorded or estimated term among all members belongs to TW201539730A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2035-03-04; KR101770456B1 is the most recent member still shown as in force, with estimated expiry 2034-12-17
+
 **Google Patents family ID:** `54018263` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7188,10 +8197,15 @@ families and members are counted.
 **Title:** Oxide film scheme for RRAM structure
 
 **Assignees:** original Taiwan Semiconductor Manufacturing Co TSMC Ltd; current Taiwan Semiconductor Manufacturing Co TSMC Ltd
+
 **Inventors:** Trinh Hai Dang; Hsing-Lien Lin; Cheng-Yuan Tsai; Chia-Shiung Tsai; Ru-Liang Lee
+
 **Dates:** priority 2014-08-14, filing 2014-08-14, grant 2016-08-30
+
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US9431609B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2035-03-31 — the latest recorded or estimated term among all members belongs to CN106159083B (status shown: Expired - Fee Related; Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related), running to 2035-03-31; KR101626222B1 is the most recent member still shown as in force, with estimated expiry 2034-12-08
+
 **Google Patents family ID:** `55302792` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7223,10 +8237,15 @@ families and members are counted.
 **Title:** Method of ONO stack formation
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar
+
 **Dates:** priority 2015-03-09, filing 2015-06-19, grant 2015-12-22
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US9218978B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2036-03-09 — the latest recorded or estimated term among all members belongs to DE112015006291T5 (status shown: Granted; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2036-03-09; DE112015006291B4 is the most recent member still shown as in force, with estimated expiry 2035-11-25
+
 **Google Patents family ID:** `54848024` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7270,10 +8289,15 @@ families and members are counted.
 **Title:** Method of integration of ONO stack formation into thick gate oxide CMOS flow
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar
+
 **Dates:** priority 2016-09-27, filing 2016-12-06, grant 2017-11-21
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US9824895B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2037-09-27 — the latest recorded or estimated term among all members belongs to TW201826352A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2037-09-27; US9824895B1 is the most recent member still shown as in force, with estimated expiry 2036-12-06
+
 **Google Patents family ID:** `60303236` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7303,10 +8327,15 @@ families and members are counted.
 **Title:** Segmented guard-ring and chip edge seals
 
 **Assignees:** original GlobalFoundries Inc; current GlobalFoundries US Inc
+
 **Inventors:** Anthony K. Stamper; Vincent J. McGahay; Zhong-Xiang He
+
 **Dates:** priority 2017-02-27, filing 2017-02-27, grant 2018-08-28
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10062748B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2038-02-27 — the latest recorded or estimated term among all members belongs to TW201841311A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2038-02-27; CN108511386B is the most recent member still shown as in force, with estimated expiry 2038-02-13
+
 **Google Patents family ID:** `63208306` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7339,10 +8368,15 @@ families and members are counted.
 **Title:** Embedded SONOS with triple gate oxide and manufacturing method of the same
 
 **Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
 **Inventors:** Krishnaswamy Ramkumar; Igor Kouznetsov; Venkatraman Prabhakar; Ali Keshavarzi
+
 **Dates:** priority 2017-06-14, filing 2017-08-22, grant 2018-08-28
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10062573B1, retrieved 2026-09-14)
+
 **Estimated expiry:** 2038-06-14 — the latest recorded or estimated term among all members belongs to TW201913880A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2038-06-14; US10062573B1 is the most recent member still shown as in force, with estimated expiry 2037-08-22
+
 **Google Patents family ID:** `63208150` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7373,10 +8407,15 @@ families and members are counted.
 **Title:** Method for manufacturing an oxram resistive memory cell
 
 **Assignees:** original Commissariat a lEnergie Atomique CEA; Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd; current Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd
+
 **Inventors:** Gabriel Molas; Guiseppe Piccolboni; Amir REGEV; Gaël CASTELLANI; Jean-François Nodin
+
 **Dates:** priority 2019-06-12, filing 2020-06-11
+
 **Legal status (representative):** Ceased (Google Patents (IFI Claims) status of WO2020249699A1, retrieved 2026-09-18)
+
 **Estimated expiry:** 2040-11-15 — US12349605B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `68072713` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7406,10 +8445,15 @@ families and members are counted.
 **Title:** Configuration and method of operation of a one-transistor two-resistors (1t2r) resistive memory (reram) cell and an array thereof
 
 **Assignees:** original Weebit Nano Ltd; current Weebit Nano Ltd
+
 **Inventors:** Yoav Nissan-Cohen
+
 **Dates:** priority 2019-07-22, filing 2021-12-30
+
 **Legal status (representative):** Pending (Google Patents (IFI Claims) status of US20220122660A1, retrieved 2026-09-18)
+
 **Estimated expiry:** 2040-07-22 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US20220122660A1 (status shown: Pending; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2040-07-22
+
 **Google Patents family ID:** `74192490` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7434,10 +8478,15 @@ families and members are counted.
 **Title:** Low forming voltage oxram memory cell, and associated method of manufacture
 
 **Assignees:** original Commissariat a lEnergie Atomique CEA; Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd; current Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd
+
 **Inventors:** Gabriel Molas; Thomas MAGIS; Jean-François Nodin; Alessandro BRICALLI; Guiseppe Piccolboni; Yifat COHEN; Amir REGEV
+
 **Dates:** priority 2019-11-21, filing 2020-11-17
+
 **Legal status (representative):** Granted (Google Patents (IFI Claims) status of EP4062463A1, retrieved 2026-09-18)
+
 **Estimated expiry:** 2042-05-26 — US12349609B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+
 **Google Patents family ID:** `69743400` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7460,6 +8509,9 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search assignee:"Weebit Nano", retrieved 2026-09-18; coordinator decision: Weebit Nano ReRAM patents in scope.
 
+**Notes:**
+* Round-1 review finding M5: the round-1 review re-fetched EP4062463A1 on 2026-09-18 (the same day as this dataset's own fetch) and reports it live as "Active" with an anticipated expiration of 2040-11-17, a member-level expiry event this dataset does not record (the member is recorded here only with a bare "Granted"/status, no expiry.date). This changes nothing about the family (already shown in force and collapsed), but the member's own record should be re-fetched to pick up its expiry event at the next refresh; not done here because Google Patents is unreachable from the environment this correction was made in.
+
 **Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/EP4062463A1/en
 :::
 
@@ -7469,10 +8521,15 @@ families and members are counted.
 **Title:** Method of forming oxide-nitride-oxide stack of non-volatile memory and integration to CMOS process flow
 
 **Assignees:** original Infineon Technologies LLC; current Infineon Technologies LLC
+
 **Inventors:** Michael Allen; Krishnaswamy Ramkumar
+
 **Dates:** priority 2022-09-27, filing 2022-09-27, grant 2025-02-18
+
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US12232324B2, retrieved 2026-09-14)
+
 **Estimated expiry:** 2043-09-27 — the latest recorded or estimated term among all members belongs to US20250185250A1 (status shown: Pending; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2043-09-27; JP7846308B2 is the most recent member still shown as in force, with estimated expiry 2043-09-26
+
 **Google Patents family ID:** `90359049` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7503,11 +8560,16 @@ families and members are counted.
 
 **Title:** Method for manufacturing an OxRAM-type resistive memory cell and associated OxRAM-type memory cell
 
-**Assignees:** original 위빗 나노 리미티드
+**Assignees:** original Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd; current Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd
+
 **Inventors:** 가브리엘 몰라스; 안토닌 베르디; 장-밥티스트 도리; 장-프랑수아 노딘
+
 **Dates:** priority 2023-12-18, filing 2024-12-18
+
 **Legal status (representative):** Granted (Google Patents (IFI Claims) status of KR20250094623A, retrieved 2026-09-18)
+
 **Estimated expiry:** 2044-12-18 — US12414485B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+
 **Google Patents family ID:** `90721530` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7528,6 +8590,10 @@ families and members are counted.
 * {ref}`overview-sky130b-reram` — *technique class*: Weebit Nano's ReRAM IP is offered in SkyWater's S130 process per SkyWater's public announcement; this family describes Weebit's class of OxRAM cell manufacturing technique, not evidence of the specific process SkyWater fabricates.
 
 **Discovery:** assignee-search — Google Patents search assignee:"Weebit Nano", retrieved 2026-09-18; coordinator decision: Weebit Nano ReRAM patents in scope.
+
+**Notes:**
+* Round-1 review finding M1: this dataset originally recorded the original assignee only as shown by the Korean representative page, "위빗 나노 리미티드" (Google's Korean rendering of "Weebit Nano Limited"), which split this family from the "Weebit Nano Ltd" heading of the other three Weebit families on the by-assignee page and omitted the CEA co-applicant entirely. Corrected using the EPO linked-data record for the family's EP member, independently fetched (https://data.epo.org/linked-data/data/publication/EP/4577029/A1/-.json, retrieved 2026-09-18), which gives the applicants as "Commissariat à l'Energie Atomique et aux Energies Alternatives" (FR) and "Weebit Nano Ltd" (IL); recorded here in the ASCII, "CEA"-suffixed form the sibling families GP68072713 and GP69743400 use, for consistency. The representative and its other fields are unchanged (Google Patents itself was not re-fetched for this correction).
+* Round-1 review finding M5: the round-1 review re-fetched KR20250094623A on 2026-09-18 and reports it live as "Active" with an anticipated expiration of 2044-12-18, a member-level expiry event this dataset does not record (the member is recorded here only with a bare "Granted" status, no expiry.date). This changes nothing about the family (already shown in force and collapsed, and the family's expiry.date of 2044-12-18 already comes from the sibling member US12414485B2's own recorded expiry), but this member's own record should be re-fetched to pick up its expiry event at the next refresh; not done here because Google Patents is unreachable from the environment this correction was made in.
 
 **Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/KR20250094623A/en
 :::

@@ -5,11 +5,15 @@
 
 Every member publication grouped by its country or office, plus a
 family-size table (members per family). A family can have members
-in several jurisdictions and so appears in several tables.
+in several jurisdictions and so appears in several tables. A family
+shown as in force or unknown is collapsed on {ref}`patents-families`;
+here it contributes only its representative's own row (number and
+status word), the same as it does on the other grouped pages, not
+its full member list — open the collapsed entry for the rest.
 
 ## United States (US)
 
-520 member publications.
+413 member publications.
 
 | Number | Family | Status |
 |---|---|---|
@@ -334,7 +338,6 @@ in several jurisdictions and so appears in several tables.
 | US 7,011,565 B2 | {ref}`US 5,893,796 A <patent-gp24770421>` | Expired - Fee Related |
 | US 7,040,971 B2 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Fee Related |
 | US 7,042,054 B1 | {ref}`US 6,677,213 B1 <patent-gp29778448>` | Expired - Lifetime |
-| US 2006/0108337 A1 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Granted |
 | US 7,051,742 B2 | {ref}`US 5,334,332 A <patent-gp24443399>` | Expired - Fee Related |
 | US 7,055,532 B2 | {ref}`US 7,055,532 B2 <patent-gp34678118>` | Expired - Fee Related |
 | US 7,064,821 B2 | {ref}`US 6,201,601 B1 <patent-gp25464477>` | Expired - Fee Related |
@@ -368,175 +371,69 @@ in several jurisdictions and so appears in several tables.
 | US 2008/0042216 A1 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Granted |
 | US 2008/0090364 A1 | {ref}`US 7,605,041 B2 <patent-gp33193196>` | Granted |
 | US 7,375,002 B2 | {ref}`US 7,375,002 B2 <patent-gp37568077>` | Active |
-| US 2008/0150002 A1 | {ref}`US 9,583,501 B1 <patent-gp39541580>` | Abandoned |
 | US 7,413,946 B2 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Expired - Fee Related |
 | US 7,429,538 B2 | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Active |
 | US 7,439,140 B2 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Expired - Fee Related |
 | US 7,439,141 B2 | {ref}`US 7,439,141 B2 <patent-gp26708682>` | Expired - Lifetime |
-| US 2008/0257738 A1 | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Granted |
 | US 7,449,416 B2 | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Expired - Fee Related |
 | US 7,456,072 B2 | {ref}`US 6,717,193 B2 <patent-gp25521092>` | Expired - Lifetime |
-| US 2008/0290399 A1 | {ref}`US 8,680,601 B2 <patent-gp40071592>` | Granted |
-| US 2008/0290400 A1 | {ref}`US 8,614,124 B2 <patent-gp40071593>` | Granted |
-| US 2008/0293207 A1 | {ref}`US 8,093,128 B2 <patent-gp40072804>` | Granted |
-| US 2008/0293254 A1 | {ref}`US 7,670,963 B2 <patent-gp40072821>` | Granted |
-| US 2008/0293255 A1 | {ref}`US 8,283,261 B2 <patent-gp40072822>` | Granted |
-| US 2008/0296661 A1 | {ref}`US 8,093,128 B2 <patent-gp40072804>` | Granted |
-| US 2008/0296664 A1 | {ref}`US 8,093,128 B2 <patent-gp40072804>` | Granted |
-| US 2008/0303539 A1 | {ref}`US 7,679,384 B2 <patent-gp40095286>` | Granted |
-| US 2009/0011609 A1 | {ref}`US 8,283,261 B2 <patent-gp40072822>` | Granted |
-| US 2009/0032863 A1 | {ref}`US 8,614,124 B2 <patent-gp40071593>` | Granted |
 | US 7,499,583 B2 | {ref}`US 5,699,447 A <patent-gp26322164>` | Expired - Fee Related |
 | US 7,501,352 B2 | {ref}`US 7,501,352 B2 <patent-gp37073778>` | Expired - Fee Related |
 | US 7,504,704 B2 | {ref}`US 6,960,781 B2 <patent-gp32990685>` | Expired - Lifetime |
 | US 7,514,373 B2 | {ref}`US 7,514,373 B2 <patent-gp33457548>` | Expired - Lifetime |
 | US 2009/0148033 A1 | {ref}`US 5,699,447 A <patent-gp26322164>` | Granted |
 | US 7,560,324 B2 | {ref}`US 2006/0006461 A1 <patent-gp35540402>` | Expired - Lifetime |
-| US 2009/0179253 A1 | {ref}`US 2009/0179253 A1 <patent-gp40849883>` | Abandoned |
-| US 2009/0242962 A1 | {ref}`US 7,799,670 B2 <patent-gp41115772>` | Granted |
-| US 2009/0243001 A1 | {ref}`US 8,088,683 B2 <patent-gp41115802>` | Granted |
+| US 2009/0179253 A1 | {ref}`US 2009/0179253 A1 <patent-gp40849883>` | in force |
 | US 7,605,041 B2 | {ref}`US 7,605,041 B2 <patent-gp33193196>` | Expired - Fee Related |
 | US 2009/0267184 A1 | {ref}`US 6,717,193 B2 <patent-gp25521092>` | Granted |
 | US 2009/0286366 A1 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Granted |
-| US 2010/0041222 A1 | {ref}`US 8,163,660 B2 <patent-gp41681547>` | Granted |
-| US 7,670,963 B2 | {ref}`US 7,670,963 B2 <patent-gp40072821>` | Active |
-| US 7,679,384 B2 | {ref}`US 7,679,384 B2 <patent-gp40095286>` | Active |
+| US 7,670,963 B2 | {ref}`US 7,670,963 B2 <patent-gp40072821>` | in force |
+| US 7,679,384 B2 | {ref}`US 7,679,384 B2 <patent-gp40095286>` | in force |
 | US 7,696,579 B2 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Expired - Fee Related |
-| US 7,705,268 B2 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Active |
-| US 7,731,161 B2 | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Active |
-| US 2010/0164521 A1 | {ref}`US 7,679,384 B2 <patent-gp40095286>` | Granted |
+| US 7,705,268 B2 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | in force |
 | US 7,755,146 B2 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Expired - Fee Related |
 | US 7,796,807 B2 | {ref}`US 5,699,447 A <patent-gp26322164>` | Expired - Fee Related |
-| US 7,799,670 B2 | {ref}`US 7,799,670 B2 <patent-gp41115772>` | Active |
-| US 2010/0276783 A1 | {ref}`US 8,110,414 B2 <patent-gp43029761>` | Granted |
+| US 7,799,670 B2 | {ref}`US 7,799,670 B2 <patent-gp41115772>` | in force |
 | US 2011/0006372 A1 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Granted |
 | US 7,985,656 B1 | {ref}`US 7,985,656 B1 <patent-gp38711248>` | Expired - Lifetime |
 | US 7,989,911 B1 | {ref}`US 7,985,656 B1 <patent-gp38711248>` | Expired - Lifetime |
-| US 2011/0248332 A1 | {ref}`US 8,643,124 B2 <patent-gp44760304>` | Granted |
 | US 8,053,321 B2 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Expired - Fee Related |
-| US 8,067,284 B1 | {ref}`US 8,067,284 B1 <patent-gp44994327>` | Active |
-| US 8,071,453 B1 | {ref}`US 8,071,453 B1 <patent-gp45034384>` | Active |
-| US 8,088,683 B2 | {ref}`US 8,088,683 B2 <patent-gp41115802>` | Active |
-| US 8,093,128 B2 | {ref}`US 8,093,128 B2 <patent-gp40072804>` | Active |
-| US 8,110,414 B2 | {ref}`US 8,110,414 B2 <patent-gp43029761>` | Active |
-| US 8,125,233 B2 | {ref}`US 7,679,384 B2 <patent-gp40095286>` | Expired - Fee Related |
-| US 8,143,129 B2 | {ref}`US 8,093,128 B2 <patent-gp40072804>` | Active |
-| US 8,163,660 B2 | {ref}`US 8,163,660 B2 <patent-gp41681547>` | Active |
+| US 8,067,284 B1 | {ref}`US 8,067,284 B1 <patent-gp44994327>` | in force |
+| US 8,071,453 B1 | {ref}`US 8,071,453 B1 <patent-gp45034384>` | in force |
+| US 8,088,683 B2 | {ref}`US 8,088,683 B2 <patent-gp41115802>` | in force |
+| US 8,093,128 B2 | {ref}`US 8,093,128 B2 <patent-gp40072804>` | in force |
+| US 8,110,414 B2 | {ref}`US 8,110,414 B2 <patent-gp43029761>` | in force |
+| US 8,163,660 B2 | {ref}`US 8,163,660 B2 <patent-gp41681547>` | in force |
 | US 8,178,404 B2 | {ref}`US 6,717,193 B2 <patent-gp25521092>` | Expired - Fee Related |
-| US 8,222,111 B1 | {ref}`US 9,583,501 B1 <patent-gp39541580>` | Active |
-| US 8,283,261 B2 | {ref}`US 8,283,261 B2 <patent-gp40072822>` | Active |
-| US 8,318,608 B2 | {ref}`US 8,283,261 B2 <patent-gp40072822>` | Active |
-| US 2013/0175599 A1 | {ref}`US 8,772,059 B2 <patent-gp48743334>` | Granted |
-| US 2013/0210209 A1 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Granted |
-| US 2013/0309826 A1 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | Granted |
-| US 8,614,124 B2 | {ref}`US 8,614,124 B2 <patent-gp40071593>` | Expired - Fee Related |
-| US 8,637,921 B2 | {ref}`US 8,614,124 B2 <patent-gp40071593>` | Expired - Fee Related |
-| US 8,643,124 B2 | {ref}`US 8,643,124 B2 <patent-gp44760304>` | Active |
-| US 8,679,927 B2 | {ref}`US 8,093,128 B2 <patent-gp40072804>` | Active |
-| US 8,680,601 B2 | {ref}`US 8,680,601 B2 <patent-gp40071592>` | Expired - Fee Related |
-| US 8,685,813 B2 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Expired - Fee Related |
-| US 2014/0103418 A1 | {ref}`US 8,163,660 B2 <patent-gp41681547>` | Granted |
+| US 8,283,261 B2 | {ref}`US 8,283,261 B2 <patent-gp40072822>` | in force |
+| US 8,614,124 B2 | {ref}`US 8,614,124 B2 <patent-gp40071593>` | in force |
+| US 8,643,124 B2 | {ref}`US 8,643,124 B2 <patent-gp44760304>` | in force |
+| US 8,680,601 B2 | {ref}`US 8,680,601 B2 <patent-gp40071592>` | in force |
+| US 8,685,813 B2 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | in force |
 | US 2014/0169062 A1 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Granted |
-| US 8,772,059 B2 | {ref}`US 8,772,059 B2 <patent-gp48743334>` | Active |
-| US 8,796,098 B1 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Active |
-| US 2014/0235046 A1 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Granted |
-| US 2014/0239374 A1 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Granted |
-| US 2014/0264550 A1 | {ref}`US 8,680,601 B2 <patent-gp40071592>` | Granted |
-| US 2014/0284696 A1 | {ref}`US 8,643,124 B2 <patent-gp44760304>` | Granted |
-| US 8,916,432 B1 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Active |
-| US 8,940,645 B2 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | Active |
-| US 2015/0041881 A1 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Granted |
-| US 8,993,453 B1 | {ref}`US 8,283,261 B2 <patent-gp40072822>` | Active |
-| US 9,023,707 B1 | {ref}`US 8,071,453 B1 <patent-gp45034384>` | Active |
-| US 2015/0171104 A1 | {ref}`US 10,002,878 B2 <patent-gp53369470>` | Abandoned |
-| US 2015/0187960 A1 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | Granted |
+| US 8,772,059 B2 | {ref}`US 8,772,059 B2 <patent-gp48743334>` | in force |
+| US 8,796,098 B1 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | in force |
+| US 8,916,432 B1 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | in force |
+| US 8,940,645 B2 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | in force |
 | US 9,076,523 B2 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Expired - Fee Related |
-| US 2015/0200295 A1 | {ref}`US 10,103,244 B2 <patent-gp53522052>` | Abandoned |
-| US 9,105,740 B2 | {ref}`US 8,163,660 B2 <patent-gp41681547>` | Active |
-| US 9,123,642 B1 | {ref}`US 2019/0355583 A1 <patent-gp53939072>` | Active |
-| US 2015/0255718 A1 | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Granted |
 | US 2015/0262663 A1 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Abandoned |
-| US 2015/0287811 A1 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Granted |
-| US 9,196,496 B2 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Active |
-| US 9,218,978 B1 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Active |
-| US 2016/0049584 A1 | {ref}`US 9,431,609 B2 <patent-gp55302792>` | Granted |
-| US 2016/0099253 A1 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Granted |
-| US 2016/0104789 A1 | {ref}`US 8,163,660 B2 <patent-gp41681547>` | Granted |
-| US 9,349,824 B2 | {ref}`US 8,643,124 B2 <patent-gp44760304>` | Active |
-| US 9,349,877 B1 | {ref}`US 8,614,124 B2 <patent-gp40071593>` | Active |
-| US 9,355,849 B1 | {ref}`US 2009/0179253 A1 <patent-gp40849883>` | Active |
-| US 9,356,035 B2 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Active |
-| US 2016/0204120 A1 | {ref}`US 10,002,878 B2 <patent-gp53369470>` | Granted |
-| US 9,406,574 B1 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | Active |
-| US 2016/0247897 A1 | {ref}`US 10,103,244 B2 <patent-gp53522052>` | Granted |
-| US 9,431,609 B2 | {ref}`US 9,431,609 B2 <patent-gp55302792>` | Expired - Fee Related |
-| US 2016/0260730 A1 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Granted |
-| US 9,460,974 B1 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | Active |
-| US 2016/0300724 A1 | {ref}`US 2009/0179253 A1 <patent-gp40849883>` | Granted |
-| US 2017/0005108 A1 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | Granted |
-| US 9,553,175 B2 | {ref}`US 8,163,660 B2 <patent-gp41681547>` | Active |
-| US 9,583,501 B1 | {ref}`US 9,583,501 B1 <patent-gp39541580>` | Expired - Fee Related |
-| US 9,620,516 B2 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Active |
-| US 2017/0263622 A1 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Granted |
-| US 9,793,284 B1 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Active |
-| US 9,824,895 B1 | {ref}`US 9,824,895 B1 <patent-gp60303236>` | Active |
-| US 2018/0040625 A1 | {ref}`US 10,002,878 B2 <patent-gp53369470>` | Granted |
-| US 9,893,172 B2 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Active |
-| US 9,922,988 B2 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Active |
-| US 2018/0083024 A1 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Granted |
-| US 9,997,528 B2 | {ref}`US 10,002,878 B2 <patent-gp53369470>` | Active |
-| US 10,002,878 B2 | {ref}`US 10,002,878 B2 <patent-gp53369470>` | Active |
-| US 10,003,022 B2 | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Active |
-| US 10,062,573 B1 | {ref}`US 10,062,573 B1 <patent-gp63208150>` | Active |
-| US 10,062,748 B1 | {ref}`US 10,062,748 B1 <patent-gp63208306>` | Active |
-| US 2018/0248001 A1 | {ref}`US 10,062,748 B1 <patent-gp63208306>` | Granted |
-| US 10,079,243 B2 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Active |
-| US 10,079,314 B2 | {ref}`US 8,680,601 B2 <patent-gp40071592>` | Active |
-| US 10,103,244 B2 | {ref}`US 10,103,244 B2 <patent-gp53522052>` | Expired - Fee Related |
-| US 2018/0309055 A1 | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Granted |
-| US 10,128,258 B2 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | Active |
-| US 2018/0351004 A1 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | Granted |
-| US 10,153,294 B2 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Active |
-| US 10,217,639 B1 | {ref}`US 2019/0355583 A1 <patent-gp53939072>` | Active |
-| US 2019/0067313 A1 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Granted |
-| US 2019/0088487 A1 | {ref}`US 10,062,573 B1 <patent-gp63208150>` | Granted |
-| US 2019/0088669 A1 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | Granted |
-| US 2019/0157286 A1 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Granted |
-| US 10,304,968 B2 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | Active |
-| US 10,319,733 B2 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | Active |
-| US 10,418,373 B2 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Active |
-| US 10,424,592 B2 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Active |
-| US 2019/0355583 A1 | {ref}`US 2019/0355583 A1 <patent-gp53939072>` | Abandoned |
-| US 2020/0020710 A1 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Granted |
-| US 2020/0020856 A1 | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Granted |
-| US 10,593,812 B2 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | Active |
-| US 2020/0111805 A1 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Abandoned |
-| US 2020/0161324 A1 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | Abandoned |
-| US 2020/0161478 A1 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | Abandoned |
-| US 2020/0287056 A1 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | Abandoned |
-| US 10,784,356 B2 | {ref}`US 10,062,573 B1 <patent-gp63208150>` | Active |
-| US 10,854,625 B2 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Active |
-| US 10,903,068 B2 | {ref}`US 2009/0179253 A1 <patent-gp40849883>` | Active |
-| US 2021/0074821 A1 | {ref}`US 10,062,573 B1 <patent-gp63208150>` | Abandoned |
-| US 2021/0249254 A1 | {ref}`US 2009/0179253 A1 <patent-gp40849883>` | Abandoned |
-| US 11,158,797 B2 | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Active |
-| US 2022/0122660 A1 | {ref}`US 2022/0122660 A1 <patent-gp74192490>` | Pending |
-| US 11,430,956 B2 | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Active |
-| US 2022/0336744 A1 | {ref}`WO 2020249699 A1 <patent-gp68072713>` | Granted |
-| US 2022/0399496 A1 | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | Granted |
-| US 2023/0017648 A1 | {ref}`US 2009/0179253 A1 <patent-gp40849883>` | Granted |
-| US 2024/0107771 A1 | {ref}`US 12,232,324 B2 <patent-gp90359049>` | Granted |
-| US 12,232,324 B2 | {ref}`US 12,232,324 B2 <patent-gp90359049>` | Active |
-| US 12,266,521 B2 | {ref}`US 2009/0179253 A1 <patent-gp40849883>` | Active |
-| US 2025/0185250 A1 | {ref}`US 12,232,324 B2 <patent-gp90359049>` | Pending |
-| US 2025/0204285 A1 | {ref}`KR 20250094623 A <patent-gp90721530>` | Granted |
-| US 12,349,605 B2 | {ref}`WO 2020249699 A1 <patent-gp68072713>` | Active |
-| US 12,349,609 B2 | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | Active |
-| US 12,414,485 B2 | {ref}`KR 20250094623 A <patent-gp90721530>` | Active |
+| US 9,218,978 B1 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | in force |
+| US 9,431,609 B2 | {ref}`US 9,431,609 B2 <patent-gp55302792>` | in force |
+| US 9,583,501 B1 | {ref}`US 9,583,501 B1 <patent-gp39541580>` | in force |
+| US 9,824,895 B1 | {ref}`US 9,824,895 B1 <patent-gp60303236>` | in force |
+| US 10,002,878 B2 | {ref}`US 10,002,878 B2 <patent-gp53369470>` | in force |
+| US 10,003,022 B2 | {ref}`US 10,003,022 B2 <patent-gp54018263>` | in force |
+| US 10,062,573 B1 | {ref}`US 10,062,573 B1 <patent-gp63208150>` | in force |
+| US 10,062,748 B1 | {ref}`US 10,062,748 B1 <patent-gp63208306>` | in force |
+| US 10,103,244 B2 | {ref}`US 10,103,244 B2 <patent-gp53522052>` | unknown |
+| US 10,319,733 B2 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | in force |
+| US 2019/0355583 A1 | {ref}`US 2019/0355583 A1 <patent-gp53939072>` | in force |
+| US 2022/0122660 A1 | {ref}`US 2022/0122660 A1 <patent-gp74192490>` | unknown |
+| US 12,232,324 B2 | {ref}`US 12,232,324 B2 <patent-gp90359049>` | in force |
 
 ## European Patent Office (EP)
 
-155 member publications.
+147 member publications.
 
 | Number | Family | Status |
 |---|---|---|
@@ -671,7 +568,6 @@ in several jurisdictions and so appears in several tables.
 | EP 1 754 571 A1 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Granted |
 | EP 1 777 511 A2 | {ref}`US 5,864,394 A <patent-gp27502820>` | Withdrawn |
 | EP 1 784 690 A2 | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Withdrawn |
-| EP 1 819 478 A2 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Granted |
 | EP 1 777 511 A3 | {ref}`US 5,864,394 A <patent-gp27502820>` | Withdrawn |
 | EP 1 444 378 A4 | {ref}`US 6,605,199 B2 <patent-gp25537645>` | Withdrawn |
 | EP 1 300 879 B1 | {ref}`US 5,994,761 A <patent-gp25194044>` | Expired - Lifetime |
@@ -679,26 +575,19 @@ in several jurisdictions and so appears in several tables.
 | EP 1 508 799 B1 | {ref}`US 6,201,601 B1 <patent-gp25464477>` | Expired - Lifetime |
 | EP 2 028 682 A1 | {ref}`US 5,994,761 A <patent-gp25194044>` | Withdrawn |
 | EP 1 754 571 B1 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Lifetime |
-| EP 2 104 648 A2 | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Granted |
 | EP 1 191 577 B1 | {ref}`US 6,660,603 B2 <patent-gp22880690>` | Expired - Lifetime |
-| EP 1 819 478 A4 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Granted |
 | EP 1 459 374 B1 | {ref}`US 7,439,141 B2 <patent-gp26708682>` | Expired - Lifetime |
 | EP 0 804 722 B1 | {ref}`US 5,864,394 A <patent-gp27502820>` | Expired - Lifetime |
 | EP 0 797 763 B1 | {ref}`US 5,864,394 A <patent-gp27502820>` | Expired - Lifetime |
 | EP 1 258 317 B1 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Lifetime |
-| EP 2 104 648 B1 | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Active |
-| EP 1 819 478 B1 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Expired - Lifetime |
+| EP 2 104 648 B1 | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | in force |
 | EP 1 612 861 B1 | {ref}`US 7,605,041 B2 <patent-gp33193196>` | Expired - Lifetime |
 | EP 1 602 125 B1 | {ref}`US 6,960,781 B2 <patent-gp32990685>` | Expired - Lifetime |
-| EP 3 984 073 A1 | {ref}`WO 2020249699 A1 <patent-gp68072713>` | Granted |
-| EP 4 062 463 A1 | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | Granted |
-| EP 3 984 073 B1 | {ref}`WO 2020249699 A1 <patent-gp68072713>` | Active |
-| EP 4 062 463 B1 | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | Active |
-| EP 4 577 029 A1 | {ref}`KR 20250094623 A <patent-gp90721530>` | Pending |
+| EP 4 062 463 A1 | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | in force |
 
 ## WIPO (PCT) (WO)
 
-60 member publications.
+42 member publications.
 
 | Number | Family | Status |
 |---|---|---|
@@ -736,36 +625,18 @@ in several jurisdictions and so appears in several tables.
 | WO 2005055292 A1 | {ref}`US 7,112,507 B2 <patent-gp34591550>` | Ceased |
 | WO 2006010055 A2 | {ref}`US 2006/0006461 A1 <patent-gp35540402>` | Ceased |
 | WO 2006026765 A2 | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Ceased |
-| WO 2006053288 A2 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Ceased |
 | WO 2006026765 A3 | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Ceased |
 | WO 2006107415 A1 | {ref}`US 7,501,352 B2 <patent-gp37073778>` | Ceased |
-| WO 2006053288 A3 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Ceased |
 | WO 2007001709 A2 | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Ceased |
 | WO 2007001783 A2 | {ref}`US 7,375,002 B2 <patent-gp37568077>` | Ceased |
 | WO 2006010055 A3 | {ref}`US 2006/0006461 A1 <patent-gp35540402>` | Ceased |
 | WO 2007001783 A3 | {ref}`US 7,375,002 B2 <patent-gp37568077>` | Ceased |
 | WO 2007001709 A3 | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Ceased |
-| WO 2008049001 A2 | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Ceased |
-| WO 2008049001 A3 | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Ceased |
-| WO 2008147385 A1 | {ref}`US 8,680,601 B2 <patent-gp40071592>` | Ceased |
-| WO 2008147386 A1 | {ref}`US 8,614,124 B2 <patent-gp40071593>` | Ceased |
-| WO 2008147388 A1 | {ref}`US 7,670,963 B2 <patent-gp40072821>` | Ceased |
-| WO 2008147529 A1 | {ref}`US 8,093,128 B2 <patent-gp40072804>` | Ceased |
-| WO 2008147541 A1 | {ref}`US 8,283,261 B2 <patent-gp40072822>` | Ceased |
-| WO 2015088731 A1 | {ref}`US 10,002,878 B2 <patent-gp53369470>` | Ceased |
-| WO 2015105904 A1 | {ref}`US 10,103,244 B2 <patent-gp53522052>` | Ceased |
-| WO 2015112245 A1 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Ceased |
-| WO 2016144397 A1 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Ceased |
-| WO 2018063459 A1 | {ref}`US 9,824,895 B1 <patent-gp60303236>` | Ceased |
-| WO 2018231410 A1 | {ref}`US 10,062,573 B1 <patent-gp63208150>` | Ceased |
-| WO 2020249699 A1 | {ref}`WO 2020249699 A1 <patent-gp68072713>` | Ceased |
-| WO 2021016237 A1 | {ref}`US 2022/0122660 A1 <patent-gp74192490>` | Ceased |
-| WO 2021099309 A1 | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | Ceased |
-| WO 2024072806 A1 | {ref}`US 12,232,324 B2 <patent-gp90359049>` | Ceased |
+| WO 2020249699 A1 | {ref}`WO 2020249699 A1 <patent-gp68072713>` | in force |
 
 ## Japan (JP)
 
-187 member publications.
+177 member publications.
 
 | Number | Family | Status |
 |---|---|---|
@@ -915,7 +786,6 @@ in several jurisdictions and so appears in several tables.
 | JP 2008091938 A | {ref}`US 6,170,428 B1 <patent-gp24728963>` | Pending |
 | JP 2008512004 A | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Granted |
 | JP 4090069 B2 | {ref}`US 5,864,394 A <patent-gp27502820>` | Expired - Lifetime |
-| JP 2008520112 A | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Granted |
 | JP 2008535243 A | {ref}`US 7,501,352 B2 <patent-gp37073778>` | Granted |
 | JP 2008238399 A | {ref}`US 5,578,362 A <patent-gp25461879>` | Pending |
 | JP 2008547220 A | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Granted |
@@ -927,14 +797,12 @@ in several jurisdictions and so appears in several tables.
 | JP 4349658 B2 | {ref}`US 5,821,589 A <patent-gp25236318>` | Expired - Fee Related |
 | JP 4351910 B2 | {ref}`US 6,605,199 B2 <patent-gp25537645>` | Expired - Fee Related |
 | JP 4368341 B2 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Fee Related |
-| JP 2010506725 A | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Granted |
 | JP 4431580 B2 | {ref}`US 7,112,507 B2 <patent-gp34591550>` | Expired - Fee Related |
 | JP 4499279 B2 | {ref}`US 6,201,601 B1 <patent-gp25464477>` | Expired - Lifetime |
 | JP 4585510 B2 | {ref}`US 6,960,781 B2 <patent-gp32990685>` | Expired - Lifetime |
 | JP 2011009760 A | {ref}`US 6,960,781 B2 <patent-gp32990685>` | Granted |
 | JP 4641540 B2 | {ref}`US 5,738,574 A <patent-gp24192580>` | Expired - Fee Related |
 | JP 4688983 B2 | {ref}`US 6,170,428 B1 <patent-gp24728963>` | Expired - Fee Related |
-| JP 4920751 B2 | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Active |
 | JP 4934526 B2 | {ref}`US 5,518,528 A <patent-gp23253952>` | Expired - Lifetime |
 | JP 4940061 B2 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Lifetime |
 | JP 4942009 B2 | {ref}`US 7,605,041 B2 <patent-gp33193196>` | Expired - Fee Related |
@@ -943,23 +811,16 @@ in several jurisdictions and so appears in several tables.
 | JP 2012191242 A | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Pending |
 | JP 5068723 B2 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Lifetime |
 | JP 5072837 B2 | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Active |
-| JP 5102041 B2 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Expired - Lifetime |
 | JP 2012256900 A | {ref}`US 7,514,373 B2 <patent-gp33457548>` | Withdrawn |
 | JP 5115798 B2 | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Expired - Fee Related |
 | JP 5216542 B2 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Lifetime |
 | JP 5508982 B2 | {ref}`US 6,960,781 B2 <patent-gp32990685>` | Expired - Lifetime |
 | JP 2015043421 A | {ref}`US 7,514,373 B2 <patent-gp33457548>` | Granted |
 | JP 5988317 B2 | {ref}`US 7,514,373 B2 <patent-gp33457548>` | Expired - Lifetime |
-| JP 2017523595 A | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Granted |
-| JP 6248212 B2 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Active |
-| JP 2018041977 A | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Granted |
-| JP 6873890 B2 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Active |
-| JP 2025531476 A | {ref}`US 12,232,324 B2 <patent-gp90359049>` | Granted |
-| JP 7846308 B2 | {ref}`US 12,232,324 B2 <patent-gp90359049>` | Active |
 
 ## China (CN)
 
-69 member publications.
+27 member publications.
 
 | Number | Family | Status |
 |---|---|---|
@@ -979,63 +840,21 @@ in several jurisdictions and so appears in several tables.
 | CN 1774799 A | {ref}`US 6,960,781 B2 <patent-gp32990685>` | Granted |
 | CN 101053063 A | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Granted |
 | CN 100349279 C | {ref}`US 7,439,141 B2 <patent-gp26708682>` | Expired - Lifetime |
-| CN 101098769 A | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Granted |
 | CN 101151718 A | {ref}`US 7,501,352 B2 <patent-gp37073778>` | Pending |
 | CN 101208782 A | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Granted |
 | CN 101213641 A | {ref}`US 7,375,002 B2 <patent-gp37568077>` | Granted |
 | CN 100437970 C | {ref}`US 6,960,781 B2 <patent-gp32990685>` | Expired - Lifetime |
-| CN 101320725 A | {ref}`US 7,679,384 B2 <patent-gp40095286>` | Granted |
 | CN 100514650 C | {ref}`US 7,605,041 B2 <patent-gp33193196>` | Expired - Fee Related |
 | CN 100524613 C | {ref}`US 6,717,193 B2 <patent-gp25521092>` | Expired - Fee Related |
-| CN 101517714 A | {ref}`US 8,614,124 B2 <patent-gp40071593>` | Granted |
-| CN 101528612 A | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Pending |
-| CN 101548385 A | {ref}`US 7,670,963 B2 <patent-gp40072821>` | Granted |
-| CN 101558481 A | {ref}`US 8,283,261 B2 <patent-gp40072822>` | Granted |
-| CN 101606236 A | {ref}`US 8,093,128 B2 <patent-gp40072804>` | Granted |
-| CN 101636845 A | {ref}`US 8,680,601 B2 <patent-gp40071592>` | Granted |
 | CN 101208782 B | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Active |
 | CN 101213641 B | {ref}`US 7,375,002 B2 <patent-gp37568077>` | Expired - Fee Related |
-| CN 101320725 B | {ref}`US 7,679,384 B2 <patent-gp40095286>` | Expired - Fee Related |
-| CN 101098769 B | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Expired - Lifetime |
-| CN 101558481 B | {ref}`US 8,283,261 B2 <patent-gp40072822>` | Active |
 | CN 102610481 A | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Granted |
-| CN 101517714 B | {ref}`US 8,614,124 B2 <patent-gp40071593>` | Active |
 | CN 101053063 B | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Expired - Fee Related |
-| CN 101548385 B | {ref}`US 7,670,963 B2 <patent-gp40072821>` | Active |
-| CN 101636845 B | {ref}`US 8,680,601 B2 <patent-gp40071592>` | Active |
-| CN 103258798 A | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Granted |
-| CN 104009005 A | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Granted |
-| CN 103258798 B | {ref}`US 8,685,813 B2 <patent-gp48945910>` | Active |
-| CN 101606236 B | {ref}`US 8,093,128 B2 <patent-gp40072804>` | Active |
-| CN 104900804 A | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Granted |
-| CN 105036284 A | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Pending |
 | CN 102610481 B | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Expired - Fee Related |
-| CN 105531828 A | {ref}`US 10,002,878 B2 <patent-gp53369470>` | Granted |
-| CN 105830214 A | {ref}`US 10,103,244 B2 <patent-gp53522052>` | Granted |
-| CN 105981158 A | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Granted |
-| CN 106159083 A | {ref}`US 9,431,609 B2 <patent-gp55302792>` | Granted |
-| CN 106471615 A | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Granted |
-| CN 108511386 A | {ref}`US 10,062,748 B1 <patent-gp63208306>` | Granted |
-| CN 106471615 B | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Active |
-| CN 104009005 B | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Active |
-| CN 106159083 B | {ref}`US 9,431,609 B2 <patent-gp55302792>` | Expired - Fee Related |
-| CN 110246805 A | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Granted |
-| CN 110349963 A | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Granted |
-| CN 105531828 B | {ref}`US 10,002,878 B2 <patent-gp53369470>` | Active |
-| CN 104900804 B | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Active |
-| CN 105981158 B | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Active |
-| CN 105830214 B | {ref}`US 10,103,244 B2 <patent-gp53522052>` | Expired - Fee Related |
-| CN 115004396 A | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | Granted |
-| CN 110246805 B | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Active |
-| CN 108511386 B | {ref}`US 10,062,748 B1 <patent-gp63208306>` | Active |
-| CN 110349963 B | {ref}`US 8,796,098 B1 <patent-gp51229009>` | Active |
-| CN 115004396 B | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | Active |
-| CN 120052068 A | {ref}`US 12,232,324 B2 <patent-gp90359049>` | Pending |
-| CN 120187033 A | {ref}`KR 20250094623 A <patent-gp90721530>` | Pending |
 
 ## South Korea (KR)
 
-111 member publications.
+100 member publications.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1128,11 +947,9 @@ in several jurisdictions and so appears in several tables.
 | KR 20070060104 A | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Granted |
 | KR 100728173 B1 | {ref}`US 6,960,781 B2 <patent-gp32990685>` | Expired - Lifetime |
 | KR 100748144 B1 | {ref}`US 6,969,448 B1 <patent-gp23892778>` | Expired - Fee Related |
-| KR 20070090180 A | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Granted |
 | KR 20080003383 A | {ref}`US 7,501,352 B2 <patent-gp37073778>` | Withdrawn |
 | KR 20080047322 A | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Granted |
 | KR 100904611 B1 | {ref}`US 6,717,193 B2 <patent-gp25521092>` | Expired - Fee Related |
-| KR 20090071597 A | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Granted |
 | KR 100951463 B1 | {ref}`US 7,439,141 B2 <patent-gp26708682>` | Expired - Lifetime |
 | KR 100993124 B1 | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Active |
 | KR 100993967 B1 | {ref}`US 6,605,199 B2 <patent-gp25537645>` | Expired - Fee Related |
@@ -1140,20 +957,11 @@ in several jurisdictions and so appears in several tables.
 | KR 20110095838 A | {ref}`US 5,958,288 A <patent-gp25030826>` | Ceased |
 | KR 101062057 B1 | {ref}`US 7,514,373 B2 <patent-gp33457548>` | Expired - Lifetime |
 | KR 101170861 B1 | {ref}`US 7,449,416 B2 <patent-gp35448183>` | Expired - Fee Related |
-| KR 101332124 B1 | {ref}`US 7,705,268 B2 <patent-gp36337293>` | Expired - Lifetime |
-| KR 101406411 B1 | {ref}`EP 2 104 648 B1 <patent-gp39203155>` | Active |
-| KR 20150104019 A | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Granted |
-| KR 20160021005 A | {ref}`US 9,431,609 B2 <patent-gp55302792>` | Granted |
-| KR 101626222 B1 | {ref}`US 9,431,609 B2 <patent-gp55302792>` | Active |
-| KR 20160108308 A | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Granted |
-| KR 101770456 B1 | {ref}`US 10,003,022 B2 <patent-gp54018263>` | Active |
-| KR 101878696 B1 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Active |
-| KR 20250094623 A | {ref}`KR 20250094623 A <patent-gp90721530>` | Granted |
-| KR 102847368 B1 | {ref}`KR 20250094623 A <patent-gp90721530>` | Active |
+| KR 20250094623 A | {ref}`KR 20250094623 A <patent-gp90721530>` | in force |
 
 ## Taiwan (TW)
 
-74 member publications.
+43 member publications.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1196,45 +1004,14 @@ in several jurisdictions and so appears in several tables.
 | TW 200707706 A | {ref}`US 7,375,002 B2 <patent-gp37568077>` | not shown |
 | TW I278959 B | {ref}`US 7,439,141 B2 <patent-gp26708682>` | not shown |
 | TW I287046 B | {ref}`US 6,605,199 B2 <patent-gp25537645>` | not shown |
-| TW 200847343 A | {ref}`US 8,614,124 B2 <patent-gp40071593>` | not shown |
-| TW 200847344 A | {ref}`US 7,670,963 B2 <patent-gp40072821>` | not shown |
-| TW 200847408 A | {ref}`US 8,680,601 B2 <patent-gp40071592>` | not shown |
 | TW I333673 B | {ref}`US 7,055,532 B2 <patent-gp34678118>` | not shown |
 | TW I343604 B | {ref}`US 7,429,538 B2 <patent-gp37568096>` | not shown |
 | TW I376748 B | {ref}`US 7,449,416 B2 <patent-gp35448183>` | not shown |
 | TW I389297 B | {ref}`US 7,375,002 B2 <patent-gp37568077>` | not shown |
-| TW 201334120 A | {ref}`US 8,685,813 B2 <patent-gp48945910>` | not shown |
-| TW I436455 B | {ref}`US 8,614,124 B2 <patent-gp40071593>` | not shown |
-| TW I455251 B | {ref}`US 7,670,963 B2 <patent-gp40072821>` | not shown |
-| TW 201440178 A | {ref}`US 8,796,098 B1 <patent-gp51229009>` | not shown |
-| TW I481013 B | {ref}`US 8,680,601 B2 <patent-gp40071592>` | not shown |
-| TW 201519414 A | {ref}`US 8,680,601 B2 <patent-gp40071592>` | not shown |
-| TW 201530696 A | {ref}`US 8,916,432 B1 <patent-gp52101816>` | not shown |
-| TW 201530732 A | {ref}`US 10,103,244 B2 <patent-gp53522052>` | not shown |
-| TW 201535486 A | {ref}`US 10,002,878 B2 <patent-gp53369470>` | not shown |
-| TW 201539730 A | {ref}`US 10,003,022 B2 <patent-gp54018263>` | not shown |
-| TW I546896 B | {ref}`US 8,685,813 B2 <patent-gp48945910>` | not shown |
-| TW 201707147 A | {ref}`US 9,218,978 B1 <patent-gp54848024>` | not shown |
-| TW I572015 B | {ref}`US 8,680,601 B2 <patent-gp40071592>` | not shown |
-| TW 201826352 A | {ref}`US 9,824,895 B1 <patent-gp60303236>` | not shown |
-| TW I630703 B | {ref}`US 8,796,098 B1 <patent-gp51229009>` | not shown |
-| TW I631698 B | {ref}`US 10,003,022 B2 <patent-gp54018263>` | not shown |
-| TW 201836126 A | {ref}`US 8,796,098 B1 <patent-gp51229009>` | not shown |
-| TW 201841311 A | {ref}`US 10,062,748 B1 <patent-gp63208306>` | not shown |
-| TW 201913880 A | {ref}`US 10,062,573 B1 <patent-gp63208150>` | not shown |
-| TW I656608 B | {ref}`US 8,916,432 B1 <patent-gp52101816>` | not shown |
-| TW I661541 B | {ref}`US 8,796,098 B1 <patent-gp51229009>` | not shown |
-| TW 201923982 A | {ref}`US 8,916,432 B1 <patent-gp52101816>` | not shown |
-| TW I683354 B | {ref}`US 9,824,895 B1 <patent-gp60303236>` | not shown |
-| TW I696246 B | {ref}`US 9,218,978 B1 <patent-gp54848024>` | not shown |
-| TW I696249 B | {ref}`US 10,062,748 B1 <patent-gp63208306>` | not shown |
-| TW I761505 B | {ref}`US 10,062,573 B1 <patent-gp63208150>` | not shown |
-| TW 202418399 A | {ref}`US 12,232,324 B2 <patent-gp90359049>` | not shown |
-| TW 202539387 A | {ref}`KR 20250094623 A <patent-gp90721530>` | not shown |
 
 ## Germany (DE)
 
-75 member publications.
+69 member publications.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1307,12 +1084,6 @@ in several jurisdictions and so appears in several tables.
 | DE 69739521 D1 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Lifetime |
 | DE 60140415 D1 | {ref}`US 6,660,603 B2 <patent-gp22880690>` | Expired - Lifetime |
 | DE 69740146 D1 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Lifetime |
-| DE 112014006222 T5 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Granted |
-| DE 112014006222 T9 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Active |
-| DE 112015006291 T5 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Granted |
-| DE 112014006222 B4 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | Active |
-| DE 112015006291 B4 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | Active |
-| DE 112023004011 T5 | {ref}`US 12,232,324 B2 <patent-gp90359049>` | Pending |
 
 ## United Kingdom (GB)
 
@@ -1330,17 +1101,12 @@ in several jurisdictions and so appears in several tables.
 
 ## France (FR)
 
-7 member publications.
+2 member publications.
 
 | Number | Family | Status |
 |---|---|---|
 | FR 2272755 A1 | {ref}`US 3,893,869 A <patent-gp23886506>` | Granted |
 | FR 2272755 B1 | {ref}`US 3,893,869 A <patent-gp23886506>` | Expired |
-| FR 3097369 A1 | {ref}`WO 2020249699 A1 <patent-gp68072713>` | Granted |
-| FR 3103633 A1 | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | Granted |
-| FR 3097369 B1 | {ref}`WO 2020249699 A1 <patent-gp68072713>` | Expired - Fee Related |
-| FR 3103633 B1 | {ref}`EP 4 062 463 A1 <patent-gp69743400>` | Active |
-| FR 3157056 A1 | {ref}`KR 20250094623 A <patent-gp90721530>` | Pending |
 
 ## Austria (AT)
 
@@ -1513,12 +1279,11 @@ in several jurisdictions and so appears in several tables.
 
 ## Portugal (PT)
 
-2 member publications.
+1 member publication.
 
 | Number | Family | Status |
 |---|---|---|
 | PT 785817 E | {ref}`US 5,518,528 A <patent-gp23253952>` | not shown |
-| PT 1819478 T | {ref}`US 7,705,268 B2 <patent-gp36337293>` | not shown |
 
 ## Sweden (SE)
 

@@ -145,6 +145,7 @@ The current assignee, where different, is shown alongside.
 
 * {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
 * {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
+* {ref}`KR 20250094623 A <patent-gp90721530>` — in force
 
 ## Daikin Industries Ltd
 
@@ -502,6 +503,7 @@ The current assignee, where different, is shown alongside.
 * {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
 * {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
+* {ref}`KR 20250094623 A <patent-gp90721530>` — in force
 
 ## Yamaha Corp
 
@@ -514,7 +516,3 @@ The current assignee, where different, is shown alongside.
 ## Zilog Inc (now IXYS Intl Ltd)
 
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
-
-## 위빗 나노 리미티드
-
-* {ref}`KR 20250094623 A <patent-gp90721530>` — in force
