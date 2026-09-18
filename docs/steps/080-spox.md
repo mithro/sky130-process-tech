@@ -82,10 +82,11 @@ does not say which SKY130 had in mind:
   arsenic and antimony,[^shibahara-1998] while Pelletier et al.
   showed that boron out-diffuses differently into oxide and nitride
   spacers.[^pelletier-2008]
-* **Lower fringing capacitance.** Oxide (k ≈ 3.9) between the gate
-  and the contacts, instead of nitride (k = 7.5 for "SPNIT"[^pdk-04]),
-  reduces the outer fringing capacitance that Shrivastava and
-  Fitzpatrick modelled.[^shrivastava-1982]
+* **Lower fringing capacitance.** The extra spacer width added here
+  is oxide (k ≈ 3.9) rather than more nitride (k = 7.5 for
+  "SPNIT"[^pdk-04]), so the outer part of the gate-to-contact
+  fringing path that Shrivastava and Fitzpatrick
+  modelled[^shrivastava-1982] sees the lower permittivity.
 
 The original sidewall spacer was itself an oxide,[^tsang-1982] and an
 oxide-over-nitride composite recovers some of its properties. Without
@@ -109,7 +110,8 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
   the arsenic tips and boron halos diffuse — a real cost after
   {ref}`TIPRTAD <step-075>`.
 * **PECVD TEOS oxide.** TEOS with O₂ in a single-wafer chamber at
-  about 350–400 °C; Raupp, Cale and Hey describe the plasma
+  250–400 °C (typical industry values, category
+  page[^wiki-pecvd]); Raupp, Cale and Hey describe the plasma
   chemistry.[^raupp-1992] Conformality is lower than LPCVD but
   adequate for 50 nm on gentle topography; the film is less dense and
   etches faster in HF, which matters when it is later stripped or
