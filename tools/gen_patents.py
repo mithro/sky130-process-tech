@@ -382,11 +382,15 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
         and "USPTO Patent Public Search record" not in m["verified"])
     listed_not_expired = listed - listed_in_expired
     ppubs_clause = (
-        [f" {plural(len(ppubs_fams), 'family')} of these rest on USPTO Patent Public Search",
-         "instead of Google Patents, which stayed unreachable while they were found (see",
-         "\"PPUBS fallback\" in `docs/plans/patent-index-design.md`); each says so in its",
-         "own *Legal status* and *Verified* lines and carries no legal status or",
-         "adjusted-expiration date, only a conservative term-arithmetic bound."]
+        [f" Separately, {len(ppubs_fams)} of the {plural(n, 'family')} in this index",
+         "rest on USPTO Patent Public Search instead of Google Patents, which stayed unreachable while",
+         "they were found (see \"PPUBS fallback\" in `docs/plans/patent-index-design.md`); each says so",
+         "in its own *Legal status* and *Verified* lines, carries no legal status or adjusted-expiration",
+         "date, and enumerates only the single member PPUBS's own search returned, not a complete family.",
+         "Its expiry is a term-arithmetic bound, conservative for the collapse decision (a family is not",
+         "shown expired unless that bound has already passed with no possible US patent term adjustment)",
+         "but not necessarily an upper bound on the true date: PPUBS does not report a term adjustment a",
+         "still-collapsed family's real term may already include."]
         if ppubs_fams else []
     )
     fetched_note = (

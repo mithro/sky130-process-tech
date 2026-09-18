@@ -35,11 +35,15 @@ publication date from the representative's own family table, says
 so in its *Verified* column, and shows no status. 15 members of these sit in 2 families already shown expired on other grounds; the remaining 44 members, in 6 families **not** shown expired, are each bounded
 conservatively (the family's earliest priority date + 21 years)
 rather than assumed ended, per the design's rule 3.
- 24 families of these rest on USPTO Patent Public Search
-instead of Google Patents, which stayed unreachable while they were found (see
-"PPUBS fallback" in `docs/plans/patent-index-design.md`); each says so in its
-own *Legal status* and *Verified* lines and carries no legal status or
-adjusted-expiration date, only a conservative term-arithmetic bound.
+ Separately, 24 of the 252 families in this index
+rest on USPTO Patent Public Search instead of Google Patents, which stayed unreachable while
+they were found (see "PPUBS fallback" in `docs/plans/patent-index-design.md`); each says so
+in its own *Legal status* and *Verified* lines, carries no legal status or adjusted-expiration
+date, and enumerates only the single member PPUBS's own search returned, not a complete family.
+Its expiry is a term-arithmetic bound, conservative for the collapse decision (a family is not
+shown expired unless that bound has already passed with no possible US patent term adjustment)
+but not necessarily an upper bound on the true date: PPUBS does not report a term adjustment a
+still-collapsed family's real term may already include.
 
 ## Legal caveat
 
