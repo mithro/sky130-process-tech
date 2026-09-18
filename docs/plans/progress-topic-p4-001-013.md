@@ -10,7 +10,7 @@ Status values: open / fixed / declined.
 
 | Finding | Page(s) | Status | Note |
 |---|---|---|---|
-| 006-H1 | 006-stie, 089-psg, overview/index, materials/index, references/public-sources | open | re-derive trench depth from the drawing's own dimension labels myself before writing |
+| 006-H1 | 006-stie, 089-psg, overview/index, materials/index, references/public-sources | fixed | re-derived the arithmetic myself from a fresh fetch of metal_stack.svg's raw coordinates: the two `licon` dimensions (0.6099 over diffusion, 0.4299 over the 0.18 µm field poly), both anchored to the `li`-bottom rung (0.9361), independently give diffusion top = field-oxide top = 0.3262 µm — confirms the review. Rewrote 006-stie.md's "How deep?" paragraph and Open questions (also folds in 006-L1). Fixed overview/index.md:365-366. 089-psg.md, materials/index.md and references/public-sources.md already read the labels the (correct) other way and needed no change (confirmed by re-reading them). Also updated 007-dnm.md's dependent wording (007-L2). |
 
 ## Medium
 
@@ -46,11 +46,11 @@ Status values: open / fixed / declined.
 | 005-L1 | 005-stinite | open | "originally designed for polysilicon" overstated |
 | 005-L2 | 005-stinite | open | nitride sidewall claim mis-cited to Thung |
 | 005-L3 | 005-stinite | open | optional: add page numbers/move support to papers |
-| 006-L1 | 006-stie | open | ITRS paraphrase overstated; cite Thung instead |
+| 006-L1 | 006-stie | fixed | folded into the 006-H1 rewrite (ITRS "node on node" sentence dropped, Thung's 66% figure used instead) |
 | 006-L2 | 006-stie | open | HDP-void quote clipped/one step removed |
 | 006-L3 | 006-stie, 009-dnis | open | tool name spelling vs SkyWater's own |
 | 007-L1 | 007-dnm | open | resist thickness: use patent number not book |
-| 007-L2 | 007-dnm | open | "~0.3 µm topography" inherits 006-H1 |
+| 007-L2 | 007-dnm | fixed | reworded to point at STIE instead of restating a number, as part of the 006-H1 commit |
 | 007-L3 | 007-dnm | open | "deliberate trade" overstated |
 | 008-L1 | 008-dni | open | Axcelis quote attributed to wrong product line |
 | 008-L2 | 008-dni | open | Bourdelle conclusion not in abstract |
