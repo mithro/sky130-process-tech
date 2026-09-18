@@ -27,8 +27,10 @@ thickness before the via-1 mask ({ref}`VIM <step-118>`) is printed on
 it. The finished dielectric above metal 1 is, per the PDK's stack
 diagram, the 0.27 µm via-1 height.[^pdk-04]
 
-"CMP over metal1" is the first of the back-end oxide polishes; the
-same operation recurs as {ref}`CMPM2 <step-127>`,
+"CMP over metal1" is the first of the *inter-metal* oxide polishes —
+the first above a wiring level; the oxide polishes below it are
+{ref}`CMPP <step-090>` and {ref}`CMPL <step-106>`. The same operation
+recurs as {ref}`CMPM2 <step-127>`,
 {ref}`CMPM3 <step-142>` and {ref}`CMPM4 <step-157>` above each metal
 level. SkyWater lists "AMAT Mirra CMP" with "oxide" first among its
 applications.[^skw-01] The PDK's design rules are written around
@@ -121,7 +123,7 @@ recipe is not public):
    Krishnan, Nalaskowski and Cook review the slurry
    chemistry.[^rev-02]
 3. **Recipe.** Removal follows Preston's law, rate proportional to
-   pressure and velocity,[^preston-1927] modified by the pad's
+   pressure and velocity,[^preston-1927][^zantye-2004] modified by the pad's
    fluid-film and contact mechanics.[^runnels-1994] Down-force of a
    few psi and platen speeds of tens of rpm are typical.[^txt-05]
    The first platen removes the bulk and planarises; a second, at
@@ -380,7 +382,8 @@ recipe is not public):
     <https://doi.org/10.1016/0022-3093(90)90200-6>
 [^preston-1927]: F. W. Preston, "The theory and design of plate glass
     polishing machines", *Journal of the Society of Glass Technology*
-    **11**, 214–256 (1927). No online copy is known.
+    **11**, 214–256 (1927). Retrieved in secondary sources only; the
+    1927 original is not online.
 [^runnels-1994]: S. R. Runnels and L. M. Eyman, "Tribology Analysis of
     Chemical-Mechanical Polishing", *Journal of The Electrochemical
     Society* **141**(6), 1698–1701 (1994).

@@ -43,8 +43,8 @@ occurrence is checked and fixed if needed.
 | 114-L3 | Low | fixed | Confirmed pdk-periphery.txt:1850-1856: m2.1/m2.2 (metal 2 width/spacing) are also 0.140/0.140um, tying metal 1's pitch. Reworded 114 to say "tied with metal 2" and 113 to say "tied with metal 2, poly and the core local interconnect", per review's fix. |
 | 115-L1 | Low | fixed | Confirmed skw-facilities.txt:108-109 lists "high aspect (5:1) fill capability" under the same HDP bullet. Quoted it and noted the 2.6:1 gap is well inside it, per review's fix. |
 | 115-L2 | Low | fixed | Moved the trikon-10k-1996 definition from before pdk-03 into the vendor group (after amat-10k), matching the page's own PDK->SkyWater->SEC->vendor order. |
-| 116-L1 | Low | open | "first of the back-end oxide polishes" inconsistent with the page's own Related-steps list and 111's wording. |
-| 116-L2 | Low | open | Preston's law rests on an unretrievable 1927 source alone; add a retrievable secondary citation. |
+| 116-L1 | Low | fixed | Confirmed the page's own line 199 and 111-wcmp2.md:41 both treat CMPP/CMPL as earlier oxide polishes. Reworded the opening sentence to "first of the inter-metal oxide polishes" and named CMPP/CMPL as the earlier ones, matching the rest of the page. |
+| 116-L2 | Low | fixed | Added [^zantye-2004] (already on the page, retrievable) beside preston-1927, and reworded the footnote to note the 1927 original is not online. |
 | 116-L3 | Low | declined | Same JOB-01 site-wide sweep item as 111-L1; left alone per the coordinator's explicit instruction. |
 | 117-L1 | Low | open | "_C" suffix used as inference evidence from a name (Common rule 2). |
 | 117-L2 | Low | declined | amat-10k uncheckable but independently documented; no fix required per review, note only. |
