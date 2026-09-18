@@ -374,7 +374,18 @@ misrepresented as Google-verified:
   distinction between the assignee "as originally filed" and "as
   currently recorded" (design's `assignees.original`/`current`): a
   PPUBS-sourced family records the single `assigneeName` list PPUBS
-  gives in both fields, with a note saying so, and `legal_status.status`
+  gives in both fields, **normalised to the spelling this index already
+  uses for that company where one exists** (round-4 N1: PPUBS's own
+  corporate-suffix conventions, e.g. "Corporation"/"Ltd.", do not match
+  Google Patents', so recording its literal string verbatim split one
+  company into two `by-assignee.md` headings differing only by a
+  trailing full stop; `tools/gen_patents.py`'s `assignee_group_key`
+  groups any two spellings differing only by trailing punctuation or
+  case under one heading regardless, and `tools/check_patents.py`
+  rejects such a pair dataset-wide as a schema problem, but the value
+  actually written to `data/patents.yaml` should still be the
+  already-established spelling, not a new one), with a note giving
+  PPUBS's own literal string and saying so, and `legal_status.status`
   and every member's own `status` are `null`, with `legal_status.source`
   naming PPUBS and stating that legal status was not determined.
 * Without a legal-status signal, `expired`/`expiry` are computed purely

@@ -585,10 +585,34 @@ def assignee_sort_key(name: str) -> tuple:
     return (1, 0, n)
 
 
+def assignee_group_key(name: str) -> str:
+    """Comparison key for grouping equivalent assignee spellings that
+    differ only by a trailing full stop or by letter case (round-4 N1):
+    a non-Google source (PPUBS) does not follow Google Patents' own
+    abbreviation conventions ("Corp" vs "Corporation", "Ltd" vs
+    "Ltd."), so two spellings of the same company can otherwise split
+    into two headings on ``by-assignee.md``."""
+    return re.sub(r"\.$", "", name.strip()).casefold()
+
+
+def assignee_canonical(variants: dict[str, list]) -> str:
+    """Pick one display spelling among the raw strings grouped under one
+    ``assignee_group_key``: prefer the spelling used by the most
+    families, then one that does not end in a full stop, then the
+    alphabetically first."""
+    return min(variants, key=lambda v: (-len(variants[v]), v.endswith("."), v))
+
+
 def gen_by_assignee(fams: list[dict]) -> str:
     body = [
         "Families grouped by original assignee, as shown by Google Patents",
-        "(its caveat applies: the lists \"may be inaccurate\"). Cypress",
+        "or, for a PPUBS-sourced family, by USPTO Patent Public Search",
+        "(its caveat applies: the lists \"may be inaccurate\"). Two spellings",
+        "of one company that differ only by a trailing full stop or by",
+        "letter case (a non-Google source's own convention, not Google's)",
+        "are grouped under a single heading, in the spelling used by the",
+        "most families; the section below on the family's own page still",
+        "gives the literal spelling that source shows. Cypress",
         "Semiconductor, SkyWater Technology and Infineon Technologies come",
         "first; a family with several original assignees appears under each.",
         "The current assignee, where different, is shown alongside. Google's",
@@ -598,13 +622,17 @@ def gen_by_assignee(fams: list[dict]) -> str:
         "heading here is not necessarily the name printed on the patent.",
         "",
     ]
-    by_ass: dict[str, list[dict]] = defaultdict(list)
+    by_key: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
     for f in fams:
         for a in f["assignees"]["original"]:
-            by_ass[a].append(f)
-    for name in sorted(by_ass, key=assignee_sort_key):
-        items = by_ass[name]
-        currents = sorted({c for f in items for c in f["assignees"]["current"] if c != name})
+            by_key[assignee_group_key(a)][a].append(f)
+    for key in sorted(by_key, key=lambda k: assignee_sort_key(assignee_canonical(by_key[k]))):
+        variants = by_key[key]
+        name = assignee_canonical(variants)
+        items = [f for vs in variants.values() for f in vs]
+        current_keys = {assignee_group_key(c): c for f in items for c in f["assignees"]["current"]}
+        current_keys.pop(key, None)
+        currents = sorted(current_keys.values())
         if name == "Individual":
             # L9: Google's placeholder for "no assignee recorded at grant",
             # not a single entity that became several — read as such.

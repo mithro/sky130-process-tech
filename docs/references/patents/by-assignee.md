@@ -4,7 +4,13 @@
 # Patents by assignee
 
 Families grouped by original assignee, as shown by Google Patents
-(its caveat applies: the lists "may be inaccurate"). Cypress
+or, for a PPUBS-sourced family, by USPTO Patent Public Search
+(its caveat applies: the lists "may be inaccurate"). Two spellings
+of one company that differ only by a trailing full stop or by
+letter case (a non-Google source's own convention, not Google's)
+are grouped under a single heading, in the spelling used by the
+most families; the section below on the family's own page still
+gives the literal spelling that source shows. Cypress
 Semiconductor, SkyWater Technology and Infineon Technologies come
 first; a family with several original assignees appears under each.
 The current assignee, where different, is shown alongside. Google's
@@ -15,28 +21,43 @@ heading here is not necessarily the name printed on the patent.
 
 ## Cypress Semiconductor Corp (now DSS Technology Management Inc, Hd Silicon Solutions LLC, Infineon Technologies LLC, Longitude Flash Memory Solutions Ltd, Longitudinal Flash Storage Solutions Co., Ltd., Monterey Research LLC, Nvidia Corp)
 
+* {ref}`US 4,986,878 A <patent-gp22827270>` — Process for improved planarization of the passivation layers for semiconductor devices (1988-07-19)
+* {ref}`US 5,443,998 A <patent-gp27012173>` — Method of forming a chlorinated silicon nitride barrier layer (1989-08-01)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
+* {ref}`US 6,707,112 B2 <patent-gp24694701>` — MOS transistor with ramped gate oxide thickness (1996-06-27)
 * {ref}`US 5,851,892 A <patent-gp25314008>` — Fabrication sequence employing an oxide formed with minimized inducted charge and/or maximized breakdown voltage (1997-05-07)
 * {ref}`US 6,140,228 A <patent-gp25516451>` — Low temperature metallization process (1997-11-13)
 * {ref}`US 6,906,421 B1 <patent-gp34632364>` — Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same (1998-01-14)
+* {ref}`US 6,255,180 B1 <patent-gp22147006>` — Semiconductor device with outwardly tapered sidewall spacers and method for forming same (1998-05-14)
 * {ref}`US 6,825,544 B1 <patent-gp33449343>` — Method for shallow trench isolation and shallow trench isolation structure (1998-12-09)
+* {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
+* {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
 * {ref}`US 6,969,448 B1 <patent-gp23892778>` — Method for forming a metallization structure in an integrated circuit (1999-12-30)
+* {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
 * {ref}`US 6,817,903 B1 <patent-gp33418789>` — Process for reducing leakage in an integrated circuit with shallow trench isolated active areas (2000-08-09)
 * {ref}`US 6,593,208 B1 <patent-gp25130177>` — Method of uniform polish in shallow trench isolation process (2001-02-14)
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001-07-12)
 * {ref}`US 6,818,558 B1 <patent-gp31979047>` — Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS) type devices (2001-07-31)
 * {ref}`US 6,828,201 B1 <patent-gp33476239>` — Method of manufacturing a top insulating layer for a sonos-type device (2001-10-22)
 * {ref}`US 6,677,213 B1 <patent-gp29778448>` — SONOS structure including a deuterated oxide-silicon interface and method for making the same (2002-03-08)
+* {ref}`US 7,151,048 B1 <patent-gp37526559>` — unknown
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,977,217 B1 <patent-gp35465546>` — Aluminum-filled via structure with barrier layer (2002-12-03)
+* {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
 * {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
+* {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
+* {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
+* {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
+* {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
+* {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 2018/0366563 A1 <patent-gp48743295>` — in force
 * {ref}`US 7,670,963 B2 <patent-gp40072821>` — in force
+* {ref}`US 7,880,219 B2 <patent-gp40071591>` — unknown
 * {ref}`US 8,067,284 B1 <patent-gp44994327>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 8,283,261 B2 <patent-gp40072822>` — in force
@@ -53,12 +74,15 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
 * {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
+* {ref}`US 9,543,262 B1 <patent-gp57705840>` — unknown
+* {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
 * {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
+* {ref}`US 9,466,496 B2 <patent-gp52808978>` — unknown
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
@@ -67,27 +91,6 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
-
-## Cypress Semiconductor Corp.
-
-* {ref}`US 4,986,878 A <patent-gp22827270>` — Process for improved planarization of the passivation layers for semiconductor devices (1988-07-19)
-* {ref}`US 5,443,998 A <patent-gp27012173>` — Method of forming a chlorinated silicon nitride barrier layer (1989-08-01)
-* {ref}`US 6,707,112 B2 <patent-gp24694701>` — MOS transistor with ramped gate oxide thickness (1996-06-27)
-* {ref}`US 6,255,180 B1 <patent-gp22147006>` — Semiconductor device with outwardly tapered sidewall spacers and method for forming same (1998-05-14)
-* {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
-* {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
-* {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
-* {ref}`US 7,151,048 B1 <patent-gp37526559>` — unknown
-* {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
-* {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
-* {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
-* {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
-* {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
-* {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
-* {ref}`US 7,880,219 B2 <patent-gp40071591>` — unknown
-* {ref}`US 9,543,262 B1 <patent-gp57705840>` — unknown
-* {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
-* {ref}`US 9,466,496 B2 <patent-gp52808978>` — unknown
 
 ## SkyWater Technology Foundry Inc
 
@@ -321,9 +324,6 @@ heading here is not necessarily the name printed on the patent.
 
 * {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
-
-## Longitude Flash Memory Solutions Ltd.
-
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
 
 ## LSI Logic Corp (now Bell Semiconductor LLC)
@@ -402,7 +402,7 @@ heading here is not necessarily the name printed on the patent.
 
 * {ref}`US 4,703,252 A <patent-gp24828889>` — Apparatus and methods for resistivity testing (1985-02-22)
 
-## Ramtron International Corp.
+## Ramtron International Corp
 
 * {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
 * {ref}`US 6,242,299 B1 <patent-gp23084824>` — Barrier layer to protect a ferroelectric capacitor after contact has been made to the capacitor electrode (1999-04-01)
