@@ -3717,7 +3717,8 @@ between regions. Used on step 008. Tier: deep dive.
 #### Standards and roadmaps
 
 **SEMI-M1** — SEMI, *SEMI M1 — Specification for Polished Single Crystal
-Silicon Wafers*, SEMI Standards store listing.
+Silicon Wafers*, revision M1-0924 (current), SEMI Standards store
+listing, accessed 2026-09-18.
 <https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>
 The industry standard that defines the diameter, thickness, notch,
 flatness and resistivity classes a fab orders against. Used on step 001
@@ -4939,7 +4940,8 @@ Tier: cross-check.
 
 **KERN-1970** — W. Kern and D. A. Puotinen, "Cleaning solutions based on
 hydrogen peroxide for use in silicon semiconductor technology", *RCA
-Review* **31**, 187–206 (1970). The original SC-1/SC-2 paper. Used on
+Review* **31**, 187–206 (1970). No DOI; *RCA Review* 31 is available in
+print and in library archives. The original SC-1/SC-2 paper. Used on
 the strip category page.
 Also used on the wet bench and spray processor page.
 Tier: cross-check.
