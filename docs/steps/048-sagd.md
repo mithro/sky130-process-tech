@@ -48,8 +48,8 @@ penetration through the gate oxide.[^wu-1993] This reference describes
 the SKY130 gate as neither: one layer, one deposition (inference; the
 PDK's stack diagram draws a single poly layer[^pdk-04]). The PDK's {term}`sheet resistance` for poly, 48.2 Ω/sq,[^pdk-08] is
 far above the few Ω/sq of a silicided or polycide gate[^txt-05] and is
-what a heavily doped, unsilicided 0.18 µm poly film gives, so there is
-no silicide strap on the gate either.
+what a heavily doped, unsilicided 0.18 µm poly film gives, so we read
+the gate as unsilicided (inference, as on {ref}`P1I <step-050>`).
 
 ## Step category
 
@@ -137,9 +137,11 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
   temperature is near the transition,[^kinsbron-1983] which is why the
   set-point sits comfortably below it.
 * **Thickness.** 0.18 µm in SKY130.[^pdk-03][^pdk-04] Deposition rates
-  of a-Si at these temperatures are of the order of a few nm/min, so
-  the run takes about an hour; batch loading of 100–150 wafers makes
-  that acceptable.
+  of a-Si at these temperatures are of the order of a few nm/min
+  (typical industry value, {ref}`category-deposition`), so a 0.18 µm
+  film takes of the order of an hour; the batch furnace amortises that
+  over a large load — the Aviza AVP-8000 listing quotes "up to 200
+  wafer batches".[^aviza-avp]
 * **Doping.** None at deposition (SkyWater: "undoped"[^skw-01]). In-situ
   phosphine doping is possible but strongly depresses the deposition
   rate and disturbs uniformity,[^meyerson-1984] and it would make a
@@ -147,9 +149,12 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
   the norm for a process with several poly doping levels (category
   page).
 * **Crystallisation.** This reference describes no dedicated anneal.
-  Solid-phase crystallisation of a-Si on oxide
-  proceeds at 600 °C over hours and much faster at higher
-  temperatures;[^iverson-1987] the later furnace and {term}`RTA` steps
+  Solid-phase crystallisation of a-Si on oxide runs over tens of
+  minutes to hours in the 580–640 °C range that Iverson and Reif
+  studied, and much faster above it (their films were amorphised by
+  implantation, and they report the growth velocity as lower than for
+  films deposited amorphous);[^iverson-1987] the later furnace and
+  {term}`RTA` steps
   ({ref}`IOX45 <step-063>`, {ref}`TIPRTAD <step-075>`,
   {ref}`RTAD <step-088>`) supply more than enough {term}`thermal budget`, so
   the film is fully polycrystalline long before contact.
