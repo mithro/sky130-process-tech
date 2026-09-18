@@ -23,8 +23,8 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 105-M1 | Medium | fixed | The 0.5-0.7 um as-deposited NILD2 figure carried no reference at all (unlike 089's equivalent PMD claim, which cites [^txt-05]); added the same [^txt-05] citation (footnote definition added to the page) at both occurrences. |
 | 089-L1 | Low | fixed | Confirmed skw-facilities.txt:109 sub-bullet "high aspect (5:1) fill capability" under the HDP entry (105-nild2.md already quotes it). Added the same quotation to 089. |
 | 090-L1 | Low | open | |
-| 090-L2 | Low | open | duplicate of 091-L1 (repo-wide pdk-08 parenthetical); tracked there |
-| 091-L1 | Low | open | |
+| 090-L2 | Low | fixed | See 091-L1 (090-L2 was itself just a forward pointer to 091-L1's fix). |
+| 091-L1 | Low | fixed | Confirmed pdk-rcx.txt has both "Resistance Values" (Table 91) and "Capacitance Values" (Table 93 ff.); the parenthetical said only "sheet-resistance table" though the footnote is also cited for capacitance (091, 104). Fixed the parenthetical on all 8 in-range pages that actually cite pdk-08 (091, 092, 093, 098, 099, 101, 104, 105) -- 100 and 103 do not cite pdk-08 despite the review listing them, so left untouched. |
 | 091-L2 | Low | fixed | Fixed at 105 per the review's own guidance (105:29-30 is the fuller list and the better place); see 105-L1. |
 | 092-L1 | Low | fixed | Confirmed ag-8800.txt lines 44-48 list "Glass re-flow" alongside "Implant annealing" and "Silicide formation and annealing" among the 8800's applications; added "Glass re-flow" to the quoted list. |
 | 093-L1 | Low | fixed | Confirmed pdk-periphery.txt:1409-1411 continues the licon.16 quotation with ", including the diff/tap straddling areaid:ce. Rule exempted inside UHVI."; added the elision marker. |

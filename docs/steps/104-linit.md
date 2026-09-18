@@ -253,7 +253,7 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
 [^pdk-04]: SkyWater PDK Authors, *metal_stack.svg* (process stack
     diagram). <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
 [^pdk-08]: SkyWater PDK Authors, *Parasitic Layout Extraction* page
-    (sheet-resistance table), SkyWater SKY130 PDK documentation.
+    (resistance and capacitance tables), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>

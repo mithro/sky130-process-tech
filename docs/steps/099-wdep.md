@@ -271,7 +271,7 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
     <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
 [^pdk-08]: SkyWater PDK Authors, *Parasitic Layout Extraction* page
-    (sheet-resistance table), SkyWater SKY130 PDK documentation.
+    (resistance and capacitance tables), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
     SKY130 PDK documentation.
