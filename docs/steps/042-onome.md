@@ -155,8 +155,8 @@ memory (SKY130's recipe is not public):
   chemistries of steps 2–3. Strength: **strong** for the tool;
   **inference** for its assignment to `ONOME`. A university
   clean-room describes the 9400 as a TCP etcher "for selective etching
-  of silicon and polysilicon" with oxygen in its gas
-  list;[^snf-9400] CF₄ comes from SkyWater's own entry.[^skw-01]
+  of silicon and polysilicon" with tetrafluoromethane
+  and oxygen in its gas list.[^snf-9400]
 * **Applied Materials DPS II** ("HBR, Cl2, NF3, CF4, CHF3, O2 – gate,
   trench, W/WN")[^skw-01] — has CHF₃ for the oxide layers. Strength: strong
   for existence; **medium** for this step, since its CF₄ and CHF₃ etch
