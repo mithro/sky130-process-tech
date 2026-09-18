@@ -4903,7 +4903,9 @@ known_gaps:
   reason: >-
     annualreports.com's Cypress archive begins at fiscal 1994
     (NASDAQ_CY_1991, _1992 and _1993 each answer HTTP 404, confirmed in this
-    session); no other public copy of these years was found.
+    session); no other public copy of these years was found. (The
+    fiscal-1993 Form 10-K itself, a different document, is held: see
+    cypress-annual-report-fy1993).
 - company_key: cypress
   description: A standalone annual report to shareholders for fiscal year 1994
   reason: >-
