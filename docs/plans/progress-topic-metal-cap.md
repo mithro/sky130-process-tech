@@ -90,11 +90,11 @@ metallisation in the literature, sputter-target and tool-capability lists
 | `docs/steps/149-wtial4.md` | 16–20, 53–61, 113–124, 140–167, 218, 300–305 | metal-4 stack; **X1 misattribution** | done |
 | `docs/steps/150-capild2.md` | 192–195 | MiM bottom-plate surface | done |
 | `docs/steps/151-captiw2.md` | top-plate material | second MiM | done |
-| `docs/steps/152-cap2m.md` | reflectivity | second MiM litho | done |
+| `docs/steps/152-cap2m.md` | reflectivity | second MiM litho | n-a — checked, carries no unconditional cap statement; no change needed |
 | `docs/steps/153-cap2me.md` | 28–35, 55–58, 93–98, 221 | stop-on-dielectric; **153-L1** | done |
 | `docs/steps/154-mm4.md` | 73–77, 108–113 | ARC | done |
 | `docs/steps/155-mm4e.md` | 20–23, 59–60, 73–79, 123–125 | breakthrough | done |
-| `docs/steps/159-vim4.md`, `160-vim4e.md` | 15–22, 46–48, 84–89, 140–155, 192–194, 269 | **the whole via-4 etch-stop argument** | done |
+| `docs/steps/160-vim4e.md` | 15–22, 46–48, 84–89, 140–155, 192–194, 269 | **the whole via-4 etch-stop argument** | done (`159-vim4.md` checked: n-a) |
 | `docs/steps/161-wtial5.md` | 51–62, 162–164, 197–215 | metal-5 stack; **X2**, **161-L1**, **161-L3** | done |
 | `docs/steps/162-mm5.md` | 102–112 | ARC | done |
 | `docs/steps/163-mm5e.md` | 17–19, 112–114, 267 | breakthrough | done |
@@ -108,16 +108,17 @@ metallisation in the literature, sputter-target and tool-capability lists
 | `docs/materials/index.md` | Ti:W row | index row wording | done |
 | `docs/machines/pvd-cluster-tool.md` | chamber set | which chambers | done |
 | `docs/machines/plasma-etcher-metal.md` | cap breakthrough | chemistry | done |
-| `docs/masks/mm1.md`, `mm2.md`, `mm5.md`, `capm.md`, `vim.md`, `vim2.md`, `vim3.md`, `pdm.md` | ARC/tone/landing sentences | mask-page readings | done |
+| `docs/masks/mm1.md`, `mm2.md`, `capm.md`, `vim.md`, `vim2.md`, `vim3.md` | ARC/tone/landing sentences | mask-page readings | done (`mm5.md` and `pdm.md` checked: n-a — metal 5, where TiW is this reference's reading) |
 | `docs/glossary.md` | ARC, Ti:W entries | definitions | done |
 | `docs/references/public-sources.md` | `CYP-PIN145273`, `CYP-QTP-113005`, `CYP-QTP-123907` glosses | inventory accuracy | done |
 
 Also changed, outside the table above because the cap is mentioned only
 in passing: `docs/steps/116-cmpm.md`, `127-cmpm2.md` (the polish must not
 break through to the cap), `121-wdep3.md`, `132-wdep4.md` (the plug floor
-is the liner over the cap), `142-cmpm3.md` and `docs/masks/vim.md`,
-`vim2.md`, `vim3.md`, `mm1.md`, `mm2.md`, `capm.md`,
+is the liner over the cap), `115-nild3.md`, `117-ncapox3.md`,
+`128-ncapox4.md`, `135-capild.md` and
 `docs/machines/film-thickness-metrology.md`, `docs/machines/index.md`.
+`142-cmpm3.md` was checked and needs no change (`n-a`).
 
 ## 4. Sources added or re-glossed
 

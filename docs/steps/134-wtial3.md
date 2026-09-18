@@ -56,7 +56,8 @@ SKY130.[^pdk-05] On our reading, then, the flow described here
 deposits a metal 3 of about 0.8 µm, and a 2 µm "S8TM" thick-metal
 option exists whose via 2 and metal 3 differ; whether its bottom layer
 matches the TiW-bottomed top metal of the 2014 S8DI report — a
-different technology — is not public, and any such match would be an
+different technology, and its **top** metal, not an intermediate level —
+is not public, and any such match would be an
 inference. The metal-3 rules are coarser than the levels
 below: 0.300 µm width and space (m3.1, m3.2), 0.240 µm² minimum area
 (m3.6), and 0.065 µm enclosure of via 2 (m3.4).[^pdk-periph]
