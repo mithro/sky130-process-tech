@@ -197,17 +197,16 @@ says which parts are typical and which are our inference for SKY130.
 2. **Bottom electrode.** A thin conductor is deposited over the whole
    wafer. Several published HfO₂ RRAMs use TiN electrodes — Lee et al. (ITRI)
    integrated an HfO₂ cell "with the TiN electrodes" in a 0.18 µm CMOS
-   process[^lee-2008-hfo2] — and TSMC's integration patent lists Ta,
-   TaN, Ti or TiN deposited by CVD, PVD or PECVD for the bottom
-   electrode.[^pat-rram-oxide-tsmc] Beckmann et al. used an inert
+   process[^lee-2008-hfo2] — and TSMC's integration patent, which may
+   still be in force, lists electrode materials and deposition methods
+   of its own, in the collapsed note below this list. Beckmann et al.
+   used an inert
    tungsten bottom electrode instead.[^beckmann-2016] SkyWater's
    electrode materials are not public; the tech file gives 0.010 µm.[^reram-ug]
 3. **Switching oxide.** HfO₂ or a doped or laminated hafnium oxide, a
    few nanometres thick, is deposited by {term}`ALD` — TSMC's patent
-   describes alternating HfCl₄ and H₂O pulses, with a long water pulse
-   to dope the film with hydrogen and raise its oxygen-vacancy
-   concentration[^pat-rram-oxide-tsmc] — or by
-   PVD, both chosen, as Intermolecular's patent puts it, "to remain
+   gives a route of its own, in the collapsed note below this list — or
+   by PVD, both chosen, as Intermolecular's patent puts it, "to remain
    within a Back End of Line (BEOL) thermal budget".[^pat-rram-intermolecular]
    ALD's self-limiting half-reactions give the thickness control a
    5 nm film needs.[^wiki-ald][^george-2010] SkyWater states the layer
@@ -219,17 +218,17 @@ says which parts are typical and which are our inference for SKY130.
    a thin reactive metal next to the oxide — the "thin reactive Ti
    buffer layer" of Lee et al., the Ti oxygen-exchange layer under the
    TiN top electrode of Beckmann et al., the capping layer of TSMC's
-   patent, the Hf of the Hf/HfOx stack of Govoreanu et al.
-   (imec)[^lee-2008-hfo2][^beckmann-2016][^pat-rram-oxide-tsmc][^govoreanu-2011]
+   patent (collapsed note below this list), the Hf of the Hf/HfOx stack
+   of Govoreanu et al.
+   (imec)[^lee-2008-hfo2][^beckmann-2016][^govoreanu-2011]
    — or a second oxide, such as the AlOx buffer that Chen et al. placed
    under the HfOx.[^chen-2009-hfox] The SkyWater tech-file slide shows
    only three RRAM layers.[^reram-ug]
-5. **Top electrode**, again a thin nitride or metal by PVD or
-   CVD;[^pat-rram-oxide-tsmc] 0.010 µm in the tech file.[^reram-ug] A
-   further layer may be added on top: TSMC's etch-stop patent deposits
-   an insulating anti-reflective layer on the top electrode that
-   "protects the underlying layers from the future etching
-   steps".[^pat-rram-etchstop-tsmc]
+5. **Top electrode**, again a thin nitride or metal by PVD or CVD (the
+   collapsed note below this list); 0.010 µm in the tech
+   file.[^reram-ug] A further layer may be added on top, as TSMC's
+   etch-stop patent — also shown as in force — describes in the same
+   note.
 6. **`r1c` lithography.** Resist islands are printed where the layout
    draws `r1c`. With a 0.230 µm minimum width and a 0.140 µm minimum
    space[^reram-ug] the layer is about as tight as metal 1 and via 1;
@@ -241,19 +240,16 @@ says which parts are typical and which are our inference for SKY130.
    islands. Beckmann et al. etched TiN/Ti by {term}`RIE` and
    compared a dilute-HF wet etch with a BCl₃/O₂ plasma for the HfO₂,
    examining the effect on structure, electrical behaviour and
-   yield;[^beckmann-2016] TSMC's patent etches the top electrode and cap
-   with a fluorine or argon plasma, forms nitride sidewall spacers, and
-   then etches the oxide and bottom electrode with the spacers as a
-   mask.[^pat-rram-oxide-tsmc][^pat-rram-etchstop-tsmc] Because SkyWater
+   yield;[^beckmann-2016] the TSMC patents give an etch sequence of
+   their own, in the collapsed note below this list. Because SkyWater
    defines all three layers by `r1c`,[^reram-ug] we infer that the
    stack is etched to one outline, in one or several steps; whether
    spacers are used is not public. The etch must stop without gouging
    the tungsten plugs and oxide beneath, which the bypass vias also
    rely on (inference).
 8. **Encapsulation and inter-level dielectric.** The patterned cells
-   are covered — in TSMC's patents with nitride spacers or a
-   dielectric protection layer, then an upper ILD[^pat-rram-oxide-tsmc][^pat-rram-etchstop-tsmc]
-   — to protect the oxide's edges and to build the roughly 0.3 µm of
+   are covered — in TSMC's patents as the collapsed note below this list
+   describes — to protect the oxide's edges and to build the roughly 0.3 µm of
    dielectric through which the upper vias will pass (0.27 µm above a
    cell, 0.295 µm where there is none; our arithmetic from the tech-file
    levels[^reram-ug]). In an aluminium
@@ -279,6 +275,23 @@ says which parts are typical and which are our inference for SKY130.
     process repeated.
 11. **Metal 2 and above** as in the base flow from
     {ref}`TIAL12 <step-123>`, shifted up by 0.295 µm.
+
+:::{dropdown} From patents shown as in force (US 9,431,609, estimated expiry 2035-03-31; US 10,003,022, estimated expiry 2035-03-04) — open to read
+TSMC's integration patent lists Ta, TaN, Ti or TiN deposited by CVD,
+PVD or PECVD for the bottom electrode; describes the switching oxide as
+alternating HfCl₄ and H₂O pulses, with a long water pulse to dope the
+film with hydrogen and raise its oxygen-vacancy concentration; adds a
+capping layer next to the oxide; makes the top electrode again a thin
+nitride or metal by PVD or CVD; etches the top electrode and cap with a
+fluorine or argon plasma, forms nitride sidewall spacers, and then
+etches the oxide and bottom electrode with the spacers as a mask; and
+covers the patterned cells with nitride spacers or a dielectric
+protection layer, then an upper ILD.[^pat-rram-oxide-tsmc] TSMC's
+etch-stop patent deposits an insulating anti-reflective layer on the top
+electrode that "protects the underlying layers from the future etching
+steps", and covers the cells in the same
+way.[^pat-rram-etchstop-tsmc]
+:::
 
 Intel's report on RRAM embedded in its 22FFL logic process describes
 the same kind of "bit cell integration into the logic flow" at
@@ -414,17 +427,24 @@ between `Tfilament_min` and `Tfilament_max` in an oxide of thickness
   by reactive and metal sputtering (Applied Materials Endura
   class[^amat-endura]; {ref}`category-deposition`).
 * **ALD chamber** for the hafnium-oxide switching layer — thermal ALD
-  from HfCl₄ and water as in TSMC's patent, or plasma-enhanced
-  ALD.[^pat-rram-oxide-tsmc][^wiki-ald]
+  as in TSMC's patent, which may still be in force (collapsed note below
+  this list), or plasma-enhanced ALD.[^wiki-ald]
 * **DUV stepper or scanner and coat/develop track** for `r1c` and `r1v`
   ({ref}`category-lithography`).
 * **Plasma etcher** able to etch the electrodes and HfO₂ — RIE of
-  TiN/Ti, fluorine- or argon-based plasmas for the top electrode, and a
-  BCl₃/O₂ plasma or a dilute-HF wet etch for the
-  oxide[^beckmann-2016][^pat-rram-oxide-tsmc] ({ref}`category-etch`).
+  TiN/Ti, and a BCl₃/O₂ plasma or a dilute-HF wet etch for the
+  oxide[^beckmann-2016] ({ref}`category-etch`); the TSMC patent's
+  chemistry for the top electrode is in the collapsed note below this
+  list.
 * **PECVD or HDP-CVD** for encapsulation and the upper dielectric,
   **oxide CMP**, and the **TiN liner, tungsten CVD and tungsten CMP**
   tools of the base via module ({ref}`category-cmp`).
+
+:::{dropdown} From a patent shown as in force (US 9,431,609; estimated expiry 2035-03-31) — open to read
+TSMC's patent deposits the hafnium oxide by thermal ALD from HfCl₄ and
+water, and etches the top electrode with a fluorine- or argon-based
+plasma.[^pat-rram-oxide-tsmc]
+:::
 
 ## Machines likely used at SkyWater
 
@@ -455,8 +475,8 @@ the tier needs:[^skw-01]
 ## Materials
 
 * **Hafnium-oxide-based switching layer** — stated by
-  SkyWater.[^reram-background] A typical ALD route uses HfCl₄ and
-  water;[^pat-rram-oxide-tsmc] the precursor at SkyWater is not public.
+  SkyWater.[^reram-background] A typical ALD route is in the collapsed
+  note below this list; the precursor at SkyWater is not public.
   Hafnia is the high-κ material of gate stacks and DRAM
   capacitors.[^wilk-2001][^wiki-hfo2]
 * **Electrodes** — not stated by SkyWater. The published HfO₂ cells
@@ -465,13 +485,20 @@ the tier needs:[^skw-01]
   titanium nitride both among materials for an inert (oxygen-resistant)
   electrode and as an example of a reactive one, noting that the
   "inert" and "reactive" naming "is relative".[^pat-rram-intermolecular]
-* **Etch chemistries** — BCl₃/O₂ plasma, fluorine- or argon-based
-  plasmas, and dilute HF as a wet
-  alternative.[^beckmann-2016][^pat-rram-oxide-tsmc]
+* **Etch chemistries** — BCl₃/O₂ plasma and dilute HF as a wet
+  alternative,[^beckmann-2016] with the TSMC patent's chemistries in the
+  collapsed note below this list.
 * **Dielectrics** — silicon oxide and silicon nitride for encapsulation
-  and the upper ILD (typical[^pat-rram-oxide-tsmc]); **TiN, tungsten
+  and the upper ILD (typical; the same note); **TiN, tungsten
   and WF₆** for the upper vias, as in the base via 1 (inference).
 * **Reticles** for `r1c` and `r1v`.
+
+:::{dropdown} From a patent shown as in force (US 9,431,609; estimated expiry 2035-03-31) — open to read
+A typical ALD route for the hafnium oxide uses HfCl₄ and water; the same
+TSMC patent gives fluorine- or argon-based plasmas for the top
+electrode, and silicon oxide and silicon nitride for the encapsulation
+and the upper ILD.[^pat-rram-oxide-tsmc]
+:::
 
 ## Related steps and cross-references
 
