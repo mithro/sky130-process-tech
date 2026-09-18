@@ -41,6 +41,7 @@ before being fixed or declined.
 | verify-N2 | Low | fixed | Verifier nit: "implanted through their whole depth" reused "depth" confusingly for the lateral 0.02 um figure; reworded to "laterally into the resist edge ... through their whole height", matching the earlier "whole height" clause. |
 | 071-L1 | Low | fixed | Confirmed Table F2b (parsed) marks LDNTM on 9 rows including "NV SONOS Diode", matching masks/ldntm.md; added the missing row to 071's list. |
 | 071-L2 | Low | fixed | Confirmed pdk-device-details.txt 2749-2757 prints V_S as "-38"; added the reviewer's caveat noting the evident typo and our reading. |
+| verify-N3 | Low | fixed | Verifier nit: "the other three cells" overcounted -- only two other cells in the Program row read -3.8V (V_D, V_B); the third occurrence is the Erase row's V_G. Reworded to name the row's two cells and the erase row's gate cell separately. |
 | 073-L1 | Low | fixed | Confirmed cyp-25.txt 48-55 is about SONOS cell scaling across nodes, explicitly mentioning 28nm; the indium recommendation belongs to that advanced-node discussion. Reworded both mentions. |
 | 073-L2 | Low | declined | = 066-L1 (declined; see above). |
 | 075-L1 | Low | fixed | Confirmed categories/anneal.md attaches stolk-1997 only to the TED statement and the 1000-1100C figure, not the "hot and fast" clause. Split the citations on 075 to match, using gibbons-1972/nobili-1983 (already on the page) for the solubility/precipitation clause. |

@@ -60,8 +60,9 @@ next to it. The PDK's {term}`e-test` parameters describe it at drawn W/L
 PDK does not say which is which; see {ref}`PTSI <step-037>`); its
 programme and erase conditions apply +6.7 V to the {term}`control gate` with
 −3.8 V on source, drain and body (the PDK's table prints the source
-voltage as "-38"; we read it as −3.8 V, the value in the other three
-cells and the only one consistent with the page's junction limits), and
+voltage as "-38"; we read it as −3.8 V, the value already in the row's
+other two cells (drain, body) and in the erase row's gate cell, and the
+only reading consistent with the page's junction limits), and
 −3.8 V on the gate with +6.7 V on
 the other three terminals; and it must keep its window over 100 000
 cycles.[^pdk-07] Three consequences follow for its source/drain
