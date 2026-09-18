@@ -18,7 +18,7 @@ Status values: open / fixed / declined.
 |---|---|---|---|
 | 001-M1 | 001-smat | fixed | verified: PDK device-details page distinguishes `nfet_20v0_zvt` (p-well+Vt blocked) from `nfet_20v0_nvt` ("similar to isolated", Vt blocked); raw-data repo has no zvt folder. But `docs/steps/026-pwbm.md` and `docs/references/public-sources.md`'s RAW-DATA-HV-MOSFETS entry already resolve this: the measurement lives in the `nfet_20v0_nvt` folder but its pad geometry (2x30/5.5, `Psub` body) matches the PDK's zvt e-test structure, not nvt's (30/1.0). Fixed 001-smat.md to read it the same way as those two already-correct pages, rather than the reviewer's simpler "must be nvt" fix, which would have put 001-smat.md at odds with 026-pwbm.md and the inventory. |
 | 003-M1 | 003-isonit | fixed | verified AmberWave 500-2000 Å = 50-200 nm (already fetched by both reviews and self-consistent with the page's own later quote); lower bound of the stated range didn't match; fixed and tied the 150 nm working figure explicitly to the patent's midpoint |
-| 004-M1 | 004-fom | open | diff/tap -> cfom stated as fact, not inference |
+| 004-M1 | 004-fom | fixed | matched docs/masks/fom.md and docs/masks/index.md, which already mark this pairing "(inference)" |
 | 008-M1 | 008-dni | open | straggle claim wrong/uncited |
 | 009-M1 | 009-dnis | open | uncited furnace temperature |
 | 011-M1 | 011-filox | open | fill-thickness arithmetic self-inconsistent |
@@ -38,11 +38,11 @@ Status values: open / fixed / declined.
 | 002-L4 | 002-box | open | pad oxide given nitride's screening job |
 | 003-L1 | 003-isonit | fixed | Google Patents fetch of US 2009/0179253 was bot-blocked this session (matches the pattern both reviews report for this host); applied the review's quoted evidence (specific patent-number + verbatim phrase claims) as given, since it is checkable in principle and highly specific |
 | 003-L2 | 003-isonit | fixed | marked the FOXSTEP link as our reading, not a documented relation |
-| 004-L1 (= review A 004-L1) | 004-fom | open | BARC quote scope qualifier dropped |
-| 004-L2 | 004-fom | open | cfom 23:0 mask-level layer omitted |
-| 004-L3 | 004-fom | open | ZeptoBars hedge quoted as certain |
-| 004-L4 | 004-fom | open | FOMCD/FOMCDSP not mentioned |
-| 004-L5 | 004-fom, masks/index | open | "30-odd" vs "36" mask steps |
+| 004-L2 (review B; = review A 004-L1) | 004-fom | fixed | verified Wikipedia's BARC sentence by fetch: confirmed the "45 nm and below" clause is dropped; added the scope note and a 130 nm-era citation |
+| 004-L1 (review B) | 004-fom | fixed | added the `cfom` 23:0 mask-level layer, matching masks/fom.md's own ordering |
+| 004-L3 | 004-fom | fixed | verified ZeptoBars page by fetch: confirmed "likely" hedge; requoted properly |
+| 004-L4 | 004-fom | fixed | added FOMCD/FOMCDSP sentence |
+| 004-L5 | 004-fom, masks/index | fixed | masks/index.md:104 says 36 mask steps; "30-odd" -> "35 other" |
 | 005-L1 | 005-stinite | open | "originally designed for polysilicon" overstated |
 | 005-L2 | 005-stinite | open | nitride sidewall claim mis-cited to Thung |
 | 005-L3 | 005-stinite | open | optional: add page numbers/move support to papers |
