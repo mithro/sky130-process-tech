@@ -16,8 +16,8 @@ arithmetic before being fixed or declined.
 | 037-M2 | 037-ptsi.md | fixed | `lvtn` block reading overstated vs step 015 |
 | 038-M1 | 038-depi.md | fixed | 20 V zero-Vt structure identification untraced |
 | 038-M2 | 038-depi.md | fixed | arsenic inference not carried into later bullets |
-| 040-M1 | 040-ono.md, 039-tunme.md | open | 1.5-3 nm tunnel oxide misattributed to pat-04 |
-| 040-M2 | 040-ono.md | open | "thinnest oxide in the flow" asserted, not shown |
+| 040-M1 | 040-ono.md, 039-tunme.md | fixed | 1.5-3 nm tunnel oxide misattributed to pat-04 |
+| 040-M2 | 040-ono.md | fixed | "thinnest oxide in the flow" asserted, not shown |
 | 041-M1 | 041-onom.md | open | ONOM-from-tunm-by-oversizing inference overstated |
 | 041-M2 | 041-onom.md | open | overlay-to-TUNM inference stated with mixed hedging |
 | 042-M1 | 042-onome.md | open | 7-15 nm trapping layer merges two different quantities |
@@ -44,12 +44,12 @@ arithmetic before being fixed or declined.
 | 039-L1 | 039-tunme.md | fixed | HF-last qualification vs later ONO precleans |
 | 039-L2 | 039-tunme.md | fixed | category-page quote splices two passages |
 | 039-L3 | 039-tunme.md | fixed | two numeric statements don't follow from pat-04 |
-| 040-L1 | 040-ono.md | open | dropped word "oxide" in quotation |
-| 040-L2 | 040-ono.md | open | pat-radox-cyp embodiment is polysilicon-channel |
-| 040-L3 | 040-ono.md | open | furnace capability line oversold as "decisive" |
+| 040-L1 | 040-ono.md | fixed | dropped word "oxide" in quotation |
+| 040-L2 | 040-ono.md | fixed | pat-radox-cyp embodiment is polysilicon-channel |
+| 040-L3 | 040-ono.md | fixed | furnace capability line oversold as "decisive" |
 | 041-L1 | 041-onom.md | open | ARC-etch question left in confusing order |
 | 042-L1 | 042-onome.md | open | two quotation slips (DPS II, SNF gas list) |
-| 043-L1 | 043-gox100.md | open | dropped word "oxide" (same as 040-L1) |
+| 043-L1 | 043-gox100.md | fixed | dropped word "oxide" (same as 040-L1) |
 | 043-L2 | 043-gox100.md | open | "5.0V I/O" quoted differently than step 044 |
 | 044-L1 | 044-lvom.md, 045-nchi.md, 046-goxetch.md | open | "~10 nm" cited to finished-thickness source |
 | 044-L2 | 044-lvom.md | open | beverina-2003 used beyond abstract |
