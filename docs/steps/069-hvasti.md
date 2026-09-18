@@ -93,10 +93,13 @@ fab (SKY130's energy and dose are not public):
   and the energy sets how far the tilted beam reaches under the gate.
   The PDK's "N+ or P+ S/D (XJ)" of 0.1 µm[^pdk-03] bounds the depth the
   later n⁺ junction will reach; the LDD is shallower.
-* **Tilt, twist and rotation.** 40° tilt with a 23° twist.[^pdk-03] The
-  twist rotates the beam's plane of incidence away from the wafer's
-  crystal planes and the gate edges; with gates on a Manhattan grid,
-  a beam at 23° to the flat reaches both gate orientations, and we
+* **Tilt, twist and rotation.** 40° tilt with a 23° twist.[^pdk-03] We
+  read the twist as rotating the beam's plane of incidence away from
+  the wafer's low-index channelling directions and away from the gate
+  edges: with gates on a Manhattan grid, a beam twisted 23° from the
+  flat has a component along both gate orientations, so neither is
+  fully shadowed (inference; the PDK publishes the angle and no
+  explanation[^pdk-03]). We further
   infer that the implant is split into rotations so that source and
   drain, and gates running in both directions, are implanted
   symmetrically.[^pat-quad-tsmc] The lateral reach under the gate is
@@ -109,8 +112,11 @@ fab (SKY130's energy and dose are not public):
 * **Resist.** Only 0.3 µm thick,[^pdk-03] so that the wall casts a
   short shadow; the PDK's 0.02 µm "Photoresist tilted implant
   penetration"[^pdk-03] allows for ions that pass through the resist
-  edge. Outgassing and charging are reduced with a thin
-  film,[^lee-1996] but an electron shower and electrostatic chuck ("ESC
+  edge. Outgassing scales with the volume of resist exposed to the
+  beam — Lee and co-workers characterised it for thick resist under MeV
+  implantation[^lee-1996] — so a 0.3 µm film outgasses less than the
+  standard 1.14 µm one (inference); charging is likewise reduced with
+  less resist volume, but an electron shower and electrostatic chuck ("ESC
   chuck, E shower" on SkyWater's medium-current tool) are, we infer,
   still used;[^skw-01] platen cooling is industry practice.
 * **Anneal.** None here; activation at {ref}`TIPRTAD <step-075>`.
