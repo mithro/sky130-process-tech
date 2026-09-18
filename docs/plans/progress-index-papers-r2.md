@@ -40,7 +40,7 @@ misses) and manually triaged with `tmp/oa_work.py <openalex id>`
 | 14 | OpenAlex | title_and_abstract.search "OpenLane" | 2026-09-19 | 224 | 84 new | 0 | 5 (book chs.) | Most hits are the lane-detection computer-vision dataset "OpenLane"; SKY130-relevant OpenLane-only hits (no SKY130/SkyWater named) are EDA-methodology papers with no fabrication, screened by title and abstract but not individually recorded (see log) |
 | 15 | OpenAlex | title_and_abstract.search "silicon-proven" | 2026-09-19 | 5856 | 100 new (sampled) | 0 | 0 | Overwhelmingly unrelated (generic phrase); only useful in combination with skywater/sky130, already covered by #1-11 |
 | 16 | OpenAlex | title_and_abstract.search "Caravel" | 2026-09-19 | 401 | 98 new (sampled) | 0 | 0 | Overwhelmingly false positives (the sailing ship, medical catheter brand, unrelated software); SKY130-relevant Caravel hits already covered by #1-11, #13 |
-| 17 | OpenAlex | citing works of key PDK/OpenLane/OpenROAD papers | not done | | | | | Deferred — see Held/open items below |
+| 17 | OpenAlex | citing works of key PDK/OpenLane/OpenROAD papers | 2026-09-19 | 41 | 41 | 0 | 2 | Only run for one seed ("Building OpenLANE", doi:10.1145/3400302.3415735); SkyWater PDK description paper has no DOI to look up by; OpenROAD's own paper not tried — time budget |
 | 18 | arXiv export API | all:sky130 | 2026-09-19 | 14 | 13 new | 0 | 13 | 1 already known (Beall); 13 new all excluded — SKY130 used only as an EDA/agent-benchmark PDK target (synthesis/PnR/SPICE), no fabrication; see log |
 | 19 | DBLP | skywater / sky130 | 2026-09-19 | n/a | — | 0 | 0 | `dblp.org` TLS connection reset (same as round 1's "connection refused"); not retried in a loop per pacing rules |
 | 20 | Crossref | query.bibliographic="sky130 skywater" (Crossref does not usefully restrict by query.container-title; tried TNS, JSSC, JINST) | 2026-09-19 | ~15/venue | all known | 0 | 0 | Every hit already in `data/papers.yaml` or `data/papers-excluded.yaml`; confirms the OpenAlex sweep above already covers this surface (same conclusion as round 1's container-title pass) |
@@ -166,8 +166,10 @@ misses) and manually triaged with `tmp/oa_work.py <openalex id>`
 
 Before this round: 49 included papers, 36 excluded/held.
 After this round: 50 included papers (+1: paper-dubey-2026a), 95
-excluded/held (+59: 58 new considered-and-rejected records plus one
-round-1 held item resolved to excluded). No topic additions were needed.
+excluded/held (+59 new considered-and-rejected records). Separately, one
+existing round-1 held record (HSWTech 2025 amplifier) was edited in
+place from held to excluded, so 95 is also the new held+excluded total
+after that reclassification. No topic additions were needed.
 No disagreements between sources were found for the one new record
 (Crossref and OpenAlex agree on title, authors, year, volume, issue,
 pages). Blocked/limited services: DBLP (TLS reset), Semantic Scholar
