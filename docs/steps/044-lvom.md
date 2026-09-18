@@ -15,8 +15,8 @@
 `LVOM` is the mask of the {term}`dual-gate-oxide <dual gate oxide>` process. After the first,
 thick gate oxide has been grown over every active area at
 {ref}`GOX100 <step-043>`, this lithography step opens resist windows
-over the *low-voltage* (1.8 V) transistors and leaves resist over the
-5 V and high-voltage ones. Through the windows the 1.8 V NMOS
+over what we read as the *low-voltage* (1.8 V) transistors and leaves
+resist over the 5 V and high-voltage ones. Through the windows the 1.8 V NMOS
 channel implant is made ({ref}`NCHI <step-045>`) and the thick oxide is
 then stripped ({ref}`GOXETCH <step-046>`), so that the thin 1.8 V gate
 oxide can be grown on bare silicon at {ref}`LVGOX <step-047>` while
@@ -100,7 +100,7 @@ at least one opening 244 over a channel 218 in the second region
 The window also serves the 1.8 V NMOS channel implant
 ({ref}`NCHI <step-045>`), which the earlier pages of this reference
 infer to be the baseline N-channel implant that all 1.8 V NMOS receive
-(see {ref}`LVTNI <step-015>`). Without `LVOM` every transistor would
+(see {ref}`LVTNI <step-015>`), on the NOT-`hvi` reading above. Without `LVOM` every transistor would
 have the thick oxide: the 1.8 V core would be slow and its thresholds
 wrong.
 
@@ -109,7 +109,9 @@ wrong.
 An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
 130 nm-era fab (SKY130's recipe is not public):
 
-1. **Surface.** Fresh thermal oxide (~10 nm[^pdk-hv]) over all active
+1. **Surface.** Fresh thermal oxide — thinner than the 110 Å the PDK
+   gives for the finished thick oxide,[^pdk-hv] by an increment that
+   is not public (see {ref}`GOX100 <step-043>`) — over all active
    areas and trench oxide over the field; the ONO islands over the
    memory cells. Dehydration bake and {term}`HMDS` prime. Resist
    adhesion to a fresh, clean thermal oxide is good, which matters
@@ -128,7 +130,8 @@ An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
 4. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse.
 5. **Hard bake.** A firm hard bake improves adhesion and reduces HF
    penetration along the resist–oxide interface at the etch, one of
-   the resist/etch couple's known failure modes.[^beverina-2003]
+   the failure modes the resist/wet-etch couple literature addresses
+   (we have not read beyond the abstract of [^beverina-2003]).
 6. **Inspection.** Overlay and {term}`CD`; after-develop inspection for
    residue in the LV windows.
 
