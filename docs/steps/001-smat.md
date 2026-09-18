@@ -353,7 +353,8 @@ any product to a step.
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098 B1,
     granted 2014-08-05. <https://patents.google.com/patent/US8796098B1/en>
 [^semi-m1]: SEMI, *SEMI M1 — Specification for Polished Single Crystal
-    Silicon Wafers*, SEMI Standards store listing.
+    Silicon Wafers*, revision M1-0924 (current), SEMI Standards store
+    listing, accessed 2026-09-18.
     <https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>
 [^shimura-1989]: F. Shimura, *Semiconductor Silicon Crystal Technology*,
     Academic Press, 1989, ISBN 978-0-12-640045-8.
