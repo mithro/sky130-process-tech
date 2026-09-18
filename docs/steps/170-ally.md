@@ -144,7 +144,8 @@ an aluminium back end (SKY130's recipe is not public):
   inside the range where a confined aluminium film relaxes stress by
   {term}`hillock` growth[^chaudhari-1974] and
   {term}`stress-induced voiding`,[^yue-1985]
-  which is why the soak is short and the ramp-down controlled. The
+  which is why we read the soak as short and the ramp-down as
+  controlled (inference). The
   University of Illinois example of about 400 °C for about 1 hour is of
   this kind.[^pat-deuterium-uiuc]
 * **Sequence.** Load; nitrogen purge; ramp; hydrogen-bearing gas at
