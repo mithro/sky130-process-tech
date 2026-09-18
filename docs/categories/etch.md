@@ -161,9 +161,10 @@ run to an {term}`endpoint` rather than a fixed time: optical emission
 spectroscopy watches a product or reactant line (for example the 387 nm
 CN band during nitride etch — "a strong peak at 387 nm indicates that CN
 is present in the plasma, usually indicating that nitride is being
-etched"[^pat-endpoint-tel] — or the 261 nm AlCl line in metal etch) and
-triggers a timed over-etch when it changes; laser interferometry on a
-monitoring pad follows the film thickness directly.[^nojiri-2015] The
+etched"[^pat-endpoint-tel] — or the aluminium or AlCl line in metal
+etch[^nojiri-2015]) and triggers a timed over-etch when it changes;
+laser interferometry on a monitoring pad follows the film thickness
+directly.[^nojiri-2015] The
 {term}`loading effect` makes the rate depend on how much material is
 exposed, and micro-loading and ARDE make dense and isolated features
 etch differently, so the over-etch must cover the slowest feature while
