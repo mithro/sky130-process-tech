@@ -57,7 +57,7 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 160-M1 | Medium | fixed, corrected | Bui et al. citation misapplied to a residue claim (160:76-83); own fresh Crossref check found the abstract IS published (contrary to the review's claim), so used its actual content (TiN ARC thickness vs EM lifetime) rather than the review's "not publicly readable" wording — see note below |
 | 160-L1 | Low | fixed | EKS265 silently read as "EKC265" without marking the reading (160:200-204) |
 | 161-L1 | Low | deferred | metal-cap/barrier sweep — 300 Å TiW analogue is top not lower metal (161:214-215) |
-| 161-L2 | Low | open | Kikuta review cited beyond its published abstract (161:87-89) |
+| 161-L2 | Low | declined | Kikuta review cited beyond its published abstract (161:91-93) — the review said no abstract is published; a fresh Crossref fetch (DOI 10.1557/S0883769400045577) returns a full abstract that says reflow sputtering "can simplify device-fabrication processes and achieve high reliability without Al/W interfaces" and that W-CVD has "greater resistivity than Al", directly supporting the page's "avoids Al/W interfaces and the higher resistivity of tungsten"; no change needed |
 | 161-L3 | Low | deferred | plural "reports" with a single footnote — line 51-53 sits inside the range finding X2 concerns (51-62); left for the metal-cap sweep |
 | 162-M1 | Medium | open | S8PIR reading uses 3 of 5 Background features, omits the strongest argument (162, 161, 163) |
 | 162-L1 | Low | open | m4.4 probe-pad exemption asymmetry not noted (162:35-37) |
