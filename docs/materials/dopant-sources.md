@@ -378,11 +378,14 @@ Status and expiry are estimates from public records and are not legal advice.
 * Entegris, *Specialty Gases and Delivery Systems for Ion Implantation*
   and EMD Electronics, *ION-X BF3* — current sub-atmospheric
   packages.[^entegris-implant-gases][^emd-ion-x]
+* Fabsurplus, *Varian E500 HP* — a medium-current gas box with SDS
+  bottles.[^fabsurplus-e500]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098, and
   Ramkumar, Prabhakar and Kapre, *Semiconductor Digest* 2020 — indium in
   Cypress SONOS channels.[^pat-04][^cyp-25]
-* Fabsurplus, *Varian E500 HP* — a medium-current gas box with SDS
-  bottles.[^fabsurplus-e500]
+:::
 
 ### High-level understanding
 

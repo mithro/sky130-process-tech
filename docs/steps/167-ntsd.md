@@ -265,12 +265,15 @@ Status and expiry are estimates from public records and are not legal advice.
   packages.[^peck-1986]
 * Hunter et al., IMAPS 2012 — probe- and bond-induced cracking in
   aluminium pad structures.[^hunter-2012]
+* Tzeng, Chen and Wang (Vanguard), US 6,294,474 — an oxide/nitride
+  passivation stack with stated thicknesses.[^pat-fuse-vanguard]
+
+:::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read
 * Bothra, McKay and Jhota (Zeevo), US 6,492,716; Stamper, McGahay and He
   (GlobalFoundries), US 10,062,748 — passivation nitride over a seal
   ring and an edge seal through the
   dielectrics.[^pat-sealring-zeevo][^pat-edgeseal-gf]
-* Tzeng, Chen and Wang (Vanguard), US 6,294,474 — an oxide/nitride
-  passivation stack with stated thicknesses.[^pat-fuse-vanguard]
+:::
 
 ## Open questions
 

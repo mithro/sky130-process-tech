@@ -202,14 +202,17 @@ Status and expiry are estimates from public records and are not legal advice.
   and dose ranges.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — BF₂
-  NMOS channel implant energies and doses.[^pat-04]
-* Koutny et al. (Cypress), US 8,093,128 — oxide degradation by
-  implantation and strips.[^pat-03]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter*.[^axcelis-8250]
 * SKY130 raw-data repository, 1.8 V transistor files — measured
   `nfet_01v8` thresholds at the e-test geometries (our
   extraction).[^raw-data-lv-mosfets]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — BF₂
+  NMOS channel implant energies and doses.[^pat-04]
+* Koutny et al. (Cypress), US 8,093,128 — oxide degradation by
+  implantation and strips.[^pat-03]
+:::
 
 ### High-level understanding
 

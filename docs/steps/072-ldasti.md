@@ -211,8 +211,6 @@ Status and expiry are estimates from public records and are not legal advice.
   cell's operation and reliability.[^pap-01]
 * Eitan et al., *IEEE EDL* 2000 — the NROM cell, for contrast on drain
   engineering of charge-trapping memories.[^eitan-2000]
-* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
-  embedded SONOS cell with its own implants.[^pat-04]
 * Tran, McQueen and Kerr (Micron), US 6,759,288 — a lighter LDD on
   selected transistors to reduce junction leakage.[^pat-ldd-micron]
 * Yu (AMD), US 6,521,502 — extension and halo activation by
@@ -221,6 +219,14 @@ Status and expiry are estimates from public records and are not legal advice.
   implants by neighbouring gates.[^chen-1995]
 * Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 — the
   thermal-wave implant monitor.[^smith-1985]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+:::
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
+  embedded SONOS cell with its own implants.[^pat-04]
+:::
 
 ## Open questions
 

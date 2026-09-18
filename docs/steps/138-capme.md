@@ -328,14 +328,17 @@ Status and expiry are estimates from public records and are not legal advice.
 * SkyWater, *Facilities & Capabilities* — Lam 9600 and 2300 Versys
   with TiW; ashers; solvents.[^skw-01]
 * Lam Research, Form 10-K (2003) — the 9600 and 2300 lines.[^lam-10k]
-* Cathey et al. (TI), US 8,110,414 — a TiN top-electrode etch that
-  removes no more than 100 Å of the dielectric.[^pat-mim-ti-etch]
 * SKY130 raw-data repository, test-tile pad documentation — the MiM
   capacitor, plate linewidth, sheet-resistance and serpentine/comb
   structures of the published test tile.[^raw-data-testtile-pads]
 * SKY130 raw-data repository, measured data — C–V sweeps of those
   capacitors; the values quoted here are our
   extraction.[^raw-data-passives]
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+* Cathey et al. (TI), US 8,110,414 — a TiN top-electrode etch that
+  removes no more than 100 Å of the dielectric.[^pat-mim-ti-etch]
+:::
 
 ### High-level understanding
 
@@ -357,22 +360,12 @@ Status and expiry are estimates from public records and are not legal advice.
   discharges, the other halogen.[^fischl-1987]
 * Flamm and Donnelly, 1981, and Winters and Coburn, 1992 — the
   surface chemistry behind metal-to-dielectric selectivity.[^flamm-1981][^winters-1992]
-* Hess, *Plasma Chem. Plasma Process.* 1982 — why fluorine does not
-  etch aluminium, the hazard of punching through (paywalled beyond
-  the title; the TI patent states the same mechanism in publicly
-  readable text — "fluorine … cannot generally damage the underlying
-  aluminum comprising layer by forming non-volatile aluminum
-  fluoride").[^hess-1982][^pat-mim-ti-etch]
 * Hwang and Giapis, *JVST B* 1997; Fang and McVittie, *IEEE EDL*
   1992; Cheung, P2ID 2000 — plasma charging and thin-dielectric
   damage.[^hwang-1997][^fang-1992][^cheung-2000]
 * Wodecki, SPIE 1999 — emission endpoint and open area.[^wodecki-1999]
 * Danzl and McLaurin, IEMT 1997 — peroxide etching of TiW, the wet
   chemistry this etch's clean must avoid.[^danzl-1997]
-* Cathey et al. (TI), US 8,110,414 — selective plasma etch of MiM
-  top electrodes; its Example 1 gives a complete Cl₂/Ar/CHF₃ recipe and
-  a 210:1 TiN-to-oxide selectivity on an aluminium bottom
-  electrode.[^pat-mim-ti-etch]
 * Olewine and Saiz (Philips), US 6,717,193 — a multi-rate etch of the
   top electrode and insulator that slows near their interface and
   stops close to the bottom electrode's TiN ARC.[^pat-mim-philips]
@@ -381,6 +374,19 @@ Status and expiry are estimates from public records and are not legal advice.
 * Ogle (Lam Research), US 4,948,458, and Yin et al. (Applied
   Materials), US 5,540,824 — the two high-density metal-etch
   sources.[^pat-tcp-lam][^pat-dps-amat]
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+* Hess, *Plasma Chem. Plasma Process.* 1982 — why fluorine does not
+  etch aluminium, the hazard of punching through (paywalled beyond
+  the title; the TI patent states the same mechanism in publicly
+  readable text — "fluorine … cannot generally damage the underlying
+  aluminum comprising layer by forming non-volatile aluminum
+  fluoride").[^hess-1982][^pat-mim-ti-etch]
+* Cathey et al. (TI), US 8,110,414 — selective plasma etch of MiM
+  top electrodes; its Example 1 gives a complete Cl₂/Ar/CHF₃ recipe and
+  a 210:1 TiN-to-oxide selectivity on an aluminium bottom
+  electrode.[^pat-mim-ti-etch]
+:::
 
 ## Open questions
 

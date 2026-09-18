@@ -251,9 +251,6 @@ Status and expiry are estimates from public records and are not legal advice.
   and its technology-requirements table: polished versus epitaxial,
   200 mm through the 130 nm node, defect and contamination
   limits.[^itrs-01]
-* Ramkumar et al. (Cypress), US 8,796,098 — states that the substrate
-  "may be a bulk wafer … or may include a top epitaxial layer", i.e. the
-  Cypress SONOS flow deliberately allows both.[^pat-04]
 * SEMI M1, *Specification for Polished Single Crystal Silicon Wafers* —
   the industry standard that defines the diameter, thickness, notch,
   flatness and resistivity classes a fab orders against.[^semi-m1]
@@ -281,6 +278,12 @@ Status and expiry are estimates from public records and are not legal advice.
   rings and wells suppress latch-up.[^troutman-1986]
 * Kern, *J. Electrochem. Soc.* 1990 — the history and chemistry of the
   RCA clean used as the incoming-wafer clean.[^kern-1990]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+* Ramkumar et al. (Cypress), US 8,796,098 — states that the substrate
+  "may be a bulk wafer … or may include a top epitaxial layer", i.e. the
+  Cypress SONOS flow deliberately allows both.[^pat-04]
+:::
 
 ## Open questions
 

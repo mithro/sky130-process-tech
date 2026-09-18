@@ -1186,11 +1186,6 @@ Status and expiry are estimates from public records and are not legal advice.
 * Ramkumar et al. (Cypress), US 6,969,689 — ONO layers formed in one
   reaction chamber, with thickness and temperature ranges from several
   embodiments.[^pat-01]
-* Koutny et al. (Cypress), US 8,093,128 — where a SONOS module sits
-  relative to the logic wells and gate oxides.[^pat-03]
-* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — an
-  embedded-SONOS flow with pad oxide, tunnel mask and dual gate
-  oxides.[^pat-04]
 * Ramkumar, Prabhakar and Kapre (Cypress), *Semiconductor Digest*
   2020 — SONOS integration cost and scaling from the 130 nm
   generation.[^cyp-25]
@@ -1217,6 +1212,14 @@ Status and expiry are estimates from public records and are not legal advice.
   an aluminium back end.[^kar-roy-1999]
 * Edwards (Efabless), WOSET 2020 — the open PDK, its process stack and
   its options, by the author of open_pdks.[^ann-15]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+* Koutny et al. (Cypress), US 8,093,128 — where a SONOS module sits
+  relative to the logic wells and gate oxides.[^pat-03]
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — an
+  embedded-SONOS flow with pad oxide, tunnel mask and dual gate
+  oxides.[^pat-04]
+:::
 
 <!-- footnotes -->
 

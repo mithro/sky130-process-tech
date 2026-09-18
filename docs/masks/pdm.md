@@ -445,8 +445,6 @@ pitch (our arithmetic from Table 2), and product openings of the order of
 
 * Lee, *Materials Transactions* 2018 — silicon nitride in the scribe
   region and sawing damage.[^lee-2018]
-* Chen, Hsu, Tsai and Jeng (TSMC), US 7,679,384 — parametric testlines in
-  the scribe line.[^pat-testline-tsmc]
 * Tzeng, Chen and Wang (Vanguard), US 6,294,474 — oxide thickness over
   fusible links.[^pat-fuse-vanguard]
 * Jones, Crane, Gilchrist and Langley (Micron), US 5,380,401, and Tsai and
@@ -470,6 +468,11 @@ pitch (our arithmetic from Table 2), and product openings of the order of
   substrates.[^brunner-1991]
 * Dammel, *Diazonaphthoquinone-based Resists* — the i-line resist
   chemistry.[^dammel-1993]
+
+:::{dropdown} From a patent shown as in force (US 7,679,384; estimated expiry 2028-06-06) — open to read
+* Chen, Hsu, Tsai and Jeng (TSMC), US 7,679,384 — parametric testlines in
+  the scribe line.[^pat-testline-tsmc]
+:::
 
 ## Open questions
 

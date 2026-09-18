@@ -216,11 +216,6 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* Koutny et al. (Cypress), US 8,093,128 — the dry-then-wet ONO etch,
-  the inorganic ARC, the HF warning and the non-HF pre-clean.[^pat-03]
-* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
-  patterned removal of sacrificial oxide, cap and trapping layers, the
-  BOE pre-clean and the pad-oxide thickness.[^pat-04]
 * SkyWater, *Facilities & Capabilities* — Lam 9400 TCP, AMAT DPS II,
   Akrion Gamma, ashers.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) —
@@ -228,6 +223,14 @@ Status and expiry are estimates from public records and are not legal advice.
 * Stanford Nanofabrication Facility, *Lam Research TCP 9400*.[^snf-9400]
 * Tokyo Electron, US 6,376,262 — CN emission at 387 nm as the nitride
   etch endpoint.[^pat-cn-tel]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+* Koutny et al. (Cypress), US 8,093,128 — the dry-then-wet ONO etch,
+  the inorganic ARC, the HF warning and the non-HF pre-clean.[^pat-03]
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
+  patterned removal of sacrificial oxide, cap and trapping layers, the
+  BOE pre-clean and the pad-oxide thickness.[^pat-04]
+:::
 
 ### High-level understanding
 

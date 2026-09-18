@@ -198,8 +198,6 @@ Status and expiry are estimates from public records and are not legal advice.
 * SkyWater PDK, *Device Details* — `pfet_01v8_hvt`.[^pdk-07]
 * SkyWater PDK, *Periphery rules* — `hvtp`: "Vt adjust implant region
   for high Vt LV PMOS".[^pdk-periph]
-* Ramkumar et al. (Cypress), US 8,796,098 — BF₂ 10–100 keV,
-  1e12–1e14 cm⁻².[^pat-04]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
 * Axcelis, *GSD Ovation* product page — fluorinated-species source
@@ -210,6 +208,11 @@ Status and expiry are estimates from public records and are not legal advice.
 * SKY130 raw-data repository, varactor C–V files — the low- and
   high-Vt varactors compared on the HVTPM page (our
   extraction).[^raw-data-passives]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+* Ramkumar et al. (Cypress), US 8,796,098 — BF₂ 10–100 keV,
+  1e12–1e14 cm⁻².[^pat-04]
+:::
 
 ### High-level understanding
 

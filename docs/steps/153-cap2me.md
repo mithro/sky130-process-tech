@@ -256,14 +256,17 @@ Status and expiry are estimates from public records and are not legal advice.
 * SkyWater, *Facilities & Capabilities* — Lam 9600 and 2300 Versys with
   TiW; strippers; solvents; etch gases on the poly/silicon etchers.[^skw-01]
 * Lam Research, Form 10-K (2003) — the 9600 and 2300 lines.[^lam-10k]
-* Cathey et al. (TI), US 8,110,414 — a top-electrode etch removing
-  ≦100 Å of a silicon-based dielectric.[^pat-mim-ti-etch]
 * SKY130 raw-data repository, test-tile pad documentation — the CAP2M
   capacitor, linewidth and serpentine/comb structures of the published
   test tile.[^raw-data-testtile-pads]
 * SKY130 raw-data repository, measured data — C–V sweeps of those
   capacitors; the values quoted here are our
   extraction.[^raw-data-passives]
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+* Cathey et al. (TI), US 8,110,414 — a top-electrode etch removing
+  ≦100 Å of a silicon-based dielectric.[^pat-mim-ti-etch]
+:::
 
 ### High-level understanding
 
@@ -275,8 +278,6 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Deep dive
 
-* Cathey et al. (TI), US 8,110,414 — selective plasma etch of MiM top
-  electrodes over a thin dielectric.[^pat-mim-ti-etch]
 * Olewine and Saiz (Philips), US 6,717,193 — a fast, slow and timed
   etch through top electrode and insulator, stopping near the bottom
   electrode's TiN coating.[^pat-mim-philips]
@@ -304,6 +305,11 @@ Status and expiry are estimates from public records and are not legal advice.
   chemistry the clean must avoid.[^danzl-1997]
 * Ogle (Lam Research), US 4,948,458, and Yin et al. (Applied Materials),
   US 5,540,824 — the two high-density metal-etch sources.[^pat-tcp-lam][^pat-dps-amat]
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+* Cathey et al. (TI), US 8,110,414 — selective plasma etch of MiM top
+  electrodes over a thin dielectric.[^pat-mim-ti-etch]
+:::
 
 ## Open questions
 

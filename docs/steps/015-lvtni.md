@@ -228,8 +228,6 @@ Status and expiry are estimates from public records and are not legal advice.
   devices "blocking out all VT implants".[^pdk-07]
 * SkyWater PDK, *Criteria & Assumptions* — implant angles
   table.[^pdk-03]
-* Ramkumar et al. (Cypress), US 8,796,098 — pad oxide 10–20 nm; BF₂
-  10–100 keV, 1e12–1e14 cm⁻²; indium 50–500 keV.[^pat-04]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — Eaton
   Semiconductor Equipment Operations product description; 3–750 keV,
   4–3500 µA.[^axcelis-8250]
@@ -237,6 +235,11 @@ Status and expiry are estimates from public records and are not legal advice.
   documentation — thresholds, currents and body effect of
   `nfet_01v8` and `nfet_01v8_lvt` (our
   extraction).[^raw-data-lv-mosfets][^raw-data-testtile-pads]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+* Ramkumar et al. (Cypress), US 8,796,098 — pad oxide 10–20 nm; BF₂
+  10–100 keV, 1e12–1e14 cm⁻²; indium 50–500 keV.[^pat-04]
+:::
 
 ### High-level understanding
 

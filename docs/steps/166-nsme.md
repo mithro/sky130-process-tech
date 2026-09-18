@@ -247,14 +247,17 @@ Status and expiry are estimates from public records and are not legal advice.
   step exploits.[^kastenmeier-1996]
 * Wodecki, SPIE 1999 — endpoint detection demonstrated at low open
   area.[^wodecki-1999]
-* Stamper, McGahay and He (GlobalFoundries), US 10,062,748 — an edge seal
-  etched through the dielectrics.[^pat-edgeseal-gf]
 * Mitwalsky and Chen (Siemens and IBM), US 5,789,302 — dielectric discontinuities as
   dicing crack stops.[^pat-crackstop-ibm]
 * Ying and Hung (TSMC), US 6,300,252 — a two-step window etch through a
   passivation and inter-metal dielectrics.[^pat-fusewin-tsmc]
 * Comizzoli et al., *Science* 1986 — corrosion of electronic devices by
   moisture and ions.[^comizzoli-1986]
+
+:::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read
+* Stamper, McGahay and He (GlobalFoundries), US 10,062,748 — an edge seal
+  etched through the dielectrics.[^pat-edgeseal-gf]
+:::
 
 ## Open questions
 

@@ -220,14 +220,6 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
-  tunnel mask, the BOE/HF pad-oxide removal, the oxygen-plasma strip,
-  the SC-1/SC-2 conditions and the tunnel-oxide thickness.[^pat-04]
-* Koutny et al. (Cypress), US 8,093,128 — oxide loss per resist
-  strip, and the ozonated-water alternative to SC-1.[^pat-03]
-* Ramkumar et al. (Cypress), US 6,969,689 and Levy et al. (Cypress),
-  US 2009/0179253 — tunnel-oxide thickness ranges from several
-  embodiments.[^pat-01][^pat-02]
 * SkyWater PDK, *Device Details* — programme/erase voltages and the
   100K-cycle endurance.[^pdk-07]
 * SkyWater PDK, *Periphery rules* — tunm.3.[^pdk-periph]
@@ -237,6 +229,17 @@ Status and expiry are estimates from public records and are not legal advice.
   — the SEZ etcher.[^skw-07]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
+
+:::{dropdown} From patents shown as in force (US 2009/0179253, estimated expiry 2027-06-17; US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
+  tunnel mask, the BOE/HF pad-oxide removal, the oxygen-plasma strip,
+  the SC-1/SC-2 conditions and the tunnel-oxide thickness.[^pat-04]
+* Koutny et al. (Cypress), US 8,093,128 — oxide loss per resist
+  strip, and the ozonated-water alternative to SC-1.[^pat-03]
+* Ramkumar et al. (Cypress), US 6,969,689 and Levy et al. (Cypress),
+  US 2009/0179253 — tunnel-oxide thickness ranges from several
+  embodiments.[^pat-01][^pat-02]
+:::
 
 ### High-level understanding
 
@@ -266,8 +269,11 @@ Status and expiry are estimates from public records and are not legal advice.
   ion-implanted resist.[^fujimura-1989]
 * Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — low-temperature
   stripping of implanted resist.[^pat-strip-mosel]
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
 * Koutny et al. (Cypress), US 8,093,128 — why HF and SC-1 cleans are
   restricted once the ONO stack exists.[^pat-03]
+:::
 
 ## Open questions
 

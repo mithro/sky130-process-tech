@@ -436,6 +436,9 @@ Status and expiry are estimates from public records and are not legal advice.
   equipment that performs it.[^kern-1990]
 
 :::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read
+:::
+
+:::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read
 * Gu and Ehrmann (GSI Group), US 7,705,268 — soft and hard marks, and
   soft-mark depth set by pulse width.[^pat-softmark-gsi]
 :::

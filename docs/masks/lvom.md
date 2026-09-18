@@ -365,10 +365,13 @@ from any active area.
   tools.[^skw-01]
 * ASML, *PAS 5500/275D* data sheet — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 * Koutny et al. (Cypress), US 8,093,128 — the gate-insulator mask that
   protects the ONO stack.[^pat-03]
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
   dual-gate-oxide mask and its BOE etch.[^pat-04]
+:::
 
 ### High-level understanding
 

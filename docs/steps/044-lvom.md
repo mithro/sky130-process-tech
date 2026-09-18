@@ -208,10 +208,13 @@ Status and expiry are estimates from public records and are not legal advice.
 * SkyWater PDK, repository README — "internal 1.8V with 5.0V I/Os".[^pdk-10]
 * SkyWater, *Facilities & Capabilities* — lithography tools.[^skw-01]
 * SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 * Koutny et al. (Cypress), US 8,093,128 — the resist opening over the
   next-oxide region and its protection of the ONO.[^pat-03]
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
   dual gate oxide mask 242.[^pat-04]
+:::
 
 ### High-level understanding
 

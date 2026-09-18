@@ -185,15 +185,18 @@ Status and expiry are estimates from public records and are not legal advice.
   `pfet_01v8_hvt`, `pfet_g5v0d10v5`.[^pdk-07]
 * SkyWater PDK, *Periphery rules* — `lvtn` and `hvtp` function
   text.[^pdk-periph]
-* Koutny et al. (Cypress), US 8,093,128 — channel implants and {term}`RTA`
-  before the {term}`SONOS` module.[^pat-03]
-* Ramkumar et al. (Cypress), US 8,796,098 — implants through a 10–20 nm
-  pad oxide.[^pat-04]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
 * SKY130 raw-data repository, 1.8 V transistor files — measured
   `pfet_01v8` thresholds at the e-test geometries (our
   extraction).[^raw-data-lv-mosfets]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+* Koutny et al. (Cypress), US 8,093,128 — channel implants and {term}`RTA`
+  before the {term}`SONOS` module.[^pat-03]
+* Ramkumar et al. (Cypress), US 8,796,098 — implants through a 10–20 nm
+  pad oxide.[^pat-04]
+:::
 
 ### High-level understanding
 
