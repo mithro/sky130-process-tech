@@ -46,8 +46,11 @@ kilo-electron volts (keV), and a dose of from about 1e12 cm⁻² to about
 
 `NCHI` is an {ref}`Ion implantation <category-implant>` step of the
 *{term}`threshold-adjust <threshold-adjust implant>` channel implant* class — low energy, medium current,
-of order 10¹²–10¹³ cm⁻² (industry-typical)[^txt-01] — and the last
-channel implant of the flow before the gate is deposited at
+of order 10¹²–10¹³ cm⁻² (industry-typical)[^txt-01] — and, in the
+order this reference describes, the last of the channel implants:
+{ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`,
+{ref}`PNCHI <step-024>`, {ref}`PTSI <step-037>` and
+{ref}`DEPI <step-038>` all precede it, and the gate is deposited at
 {ref}`SAGD <step-048>`. It is the N-channel counterpart of
 {ref}`LVTPI <step-020>`, which the 1.8 V PMOS received through the
 N-well window.
@@ -98,7 +101,7 @@ fab (SKY130's values are not public):
   the later {term}`RTA`.[^wang-1997] Cypress's flow uses BF₂;[^pat-04] an AMD
   patent of the era gives "approximately 10-20 KeV for boron or
   45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
-  ions/cm²" for a laterally doped channel implant made after gate
+  ions/cm² […]" for a laterally doped channel implant made after gate
   formation with the gate pillars as a self-aligned mask, a different
   placement from this pre-gate implant.[^pat-vt-amd]
 * **Energy.** Tens of keV for BF₂ (10–100 keV in the Cypress
@@ -111,8 +114,11 @@ fab (SKY130's values are not public):
 * **Dose.** Of order 10¹²–10¹³ cm⁻²: "1e12 cm⁻² to about 1e14
   cm⁻²" in the Cypress patent[^pat-04] and 1.0–2.5 × 10¹³ cm⁻² for the
   AMD laterally doped channel implant.[^pat-vt-amd]
-* **Tilt and twist.** 7° with twist, the textbook
-  convention.[^txt-02][^wiki-implant]
+* **Tilt and twist.** 7° with twist is the textbook
+  anti-channelling convention[^txt-02][^wiki-implant] and is what this
+  reference assumes; the AMD patent quoted above instead specifies "a
+  zero tilt implant angle" for its channel implant,[^pat-vt-amd] and
+  SKY130's tilt is not public.
 * **Wafer handling.** Single-wafer end station, electrostatic chuck,
   electron-shower neutralisation; the resist carries a light dose.
 * **Anneal.** No dedicated anneal — the {ref}`LVGOX <step-047>`
@@ -122,7 +128,8 @@ fab (SKY130's values are not public):
 * **Monitoring.** Thermal-wave measurement on product;[^smith-1985]
   the {term}`e-test` threshold of `nfet_01v8` is the ultimate monitor.
   In the published test-tile measurements that threshold is 0.534 V at
-  7/8 µm and 0.707 V at 7/0.15 µm (maximum-transconductance
+  7/8 µm and 0.707 V at 7/0.15 µm (mean of the two published sweeps at
+  each geometry; maximum-transconductance
   extrapolation at V_DS = 0.1 V, less half the drain bias; our
   extraction from the published measurements), inside the PDK's e-test
   limits of 0.515–0.567 V and 0.661–0.739 V.[^raw-data-lv-mosfets][^pdk-07]
