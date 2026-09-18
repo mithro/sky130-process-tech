@@ -18,8 +18,8 @@ arithmetic before being fixed or declined.
 | 038-M2 | 038-depi.md | fixed | arsenic inference not carried into later bullets |
 | 040-M1 | 040-ono.md, 039-tunme.md | fixed | 1.5-3 nm tunnel oxide misattributed to pat-04 |
 | 040-M2 | 040-ono.md | fixed | "thinnest oxide in the flow" asserted, not shown |
-| 041-M1 | 041-onom.md | open | ONOM-from-tunm-by-oversizing inference overstated |
-| 041-M2 | 041-onom.md | open | overlay-to-TUNM inference stated with mixed hedging |
+| 041-M1 | 041-onom.md | fixed | ONOM-from-tunm-by-oversizing inference overstated |
+| 041-M2 | 041-onom.md | fixed | overlay-to-TUNM inference stated with mixed hedging |
 | 042-M1 | 042-onome.md | open | 7-15 nm trapping layer merges two different quantities |
 | 043-M1 | 043-gox100.md | open | ONO-first ordering rationale not given |
 | 043-M2 | 043-gox100.md | open | "somewhat thinner than 11 nm" left unquantified |
@@ -47,7 +47,7 @@ arithmetic before being fixed or declined.
 | 040-L1 | 040-ono.md | fixed | dropped word "oxide" in quotation |
 | 040-L2 | 040-ono.md | fixed | pat-radox-cyp embodiment is polysilicon-channel |
 | 040-L3 | 040-ono.md | fixed | furnace capability line oversold as "decisive" |
-| 041-L1 | 041-onom.md | open | ARC-etch question left in confusing order |
+| 041-L1 | 041-onom.md | fixed | ARC-etch question left in confusing order |
 | 042-L1 | 042-onome.md | open | two quotation slips (DPS II, SNF gas list) |
 | 043-L1 | 043-gox100.md | fixed | dropped word "oxide" (same as 040-L1) |
 | 043-L2 | 043-gox100.md | open | "5.0V I/O" quoted differently than step 044 |
