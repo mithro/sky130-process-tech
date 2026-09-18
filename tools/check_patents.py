@@ -160,8 +160,8 @@ def member_end_bound(m: dict, fam: dict) -> dt.date | None:
     upper bound so the caller can compare it with today."""
     t = m.get("document_type")
     status = m.get("status")
-    if t == "reexamination-certificate":
-        return None
+    if t in ("reexamination-certificate", "translation-of-granted-patent"):
+        return None  # no term of its own; the term is that of the patent it amends or translates
     if t in APPLICATION_TYPES and status == "Granted":
         return None
     if status in ENDED:
@@ -180,6 +180,16 @@ def member_end_bound(m: dict, fam: dict) -> dt.date | None:
         basis_filing = earliest_family_filing(fam.get("members") or []) or to_date(m.get("filing_date"))
         if basis_filing:
             candidates.append(add_years(basis_filing, 20))
+    else:
+        # L3: a fetched grant with a known filing date but no recorded
+        # expiry event is also bounded by 20 years from *its own* filing
+        # date (the ordinary term formula) — tighter, and sometimes later
+        # than the priority-based fallback below (for a national-phase
+        # filing made well over a year after priority), than treating it
+        # as if only the family's priority date were known.
+        own_filing = to_date(m.get("filing_date"))
+        if own_filing:
+            candidates.append(add_years(own_filing, 20))
     if priority:
         # rule 3: a listed-only member, or a fetched member with no
         # recorded expiry event and a status that is neither `Active` nor

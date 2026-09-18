@@ -3374,7 +3374,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5760409A, retrieved 2026-09-14)
 
-**Estimated expiry:** 2018-01-17 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR100402183B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+**Estimated expiry:** 2018-02-04 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW423057B (estimated 20 years from this member's own recorded filing date (1998-02-04))
 
 **Google Patents family ID:** `25134219` (family section of the representative's own record page, linked below)
 
@@ -3960,7 +3960,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5789302A, retrieved 2026-09-14)
 
-**Estimated expiry:** 2018-03-24 — all 11 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW423066B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2018-04-02 — all 11 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW423066B (estimated 20 years from this member's own recorded filing date (1998-04-02))
 
 **Google Patents family ID:** `25239372` (family section of the representative's own record page, linked below)
 
@@ -5188,7 +5188,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6660603B2, retrieved 2026-09-14)
 
-**Estimated expiry:** 2021-09-21 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of ATE448567T1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2021-09-20 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of EP1191577B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 
 **Google Patents family ID:** `22880690` (family section of the representative's own record page, linked below)
 
