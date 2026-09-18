@@ -293,7 +293,7 @@ families:
   - number: SE7506134L
     country: SE
     kind: L
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1975-12-01
     title: WAY TO CLEAN A SURFACE.
     application_number: SE7506134A
@@ -733,7 +733,7 @@ families:
   - number: DE3462365D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1987-03-12
     title: Method of marking semiconductor surfaces using laser radiation
     application_number: DE8484107743T
@@ -856,7 +856,7 @@ families:
   - number: DE3472421D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1988-08-04
     title: Etchant composition
     application_number: DE8484109546T
@@ -1185,7 +1185,7 @@ families:
   - number: DE3583705D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1991-09-12
     title: METHOD AND DEVICE FOR DETECTING THERMAL WAVES.
     application_number: DE8585303511T
@@ -1381,7 +1381,7 @@ families:
   - number: DE3675413D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1990-12-13
     title: DEVICE AND METHOD FOR TESTING THE SPECIFIC RESISTANCE.
     application_number: DE8686301044T
@@ -2223,7 +2223,7 @@ families:
   - number: DE3669016D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1990-03-15
     title: METHOD FOR PRODUCING COPLANAR VIELLAGE METAL ISOLATOR LAYERS ON A SUBSTRATE.
     application_number: DE8686114396T
@@ -2415,7 +2415,7 @@ families:
   - number: DE3676458D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1991-02-07
     title: METHOD FOR CHEMICAL POLISHING FOR PRODUCING A COPLANAR LAYER OF INSULATOR METAL ON A SUBSTRATE.
     application_number: DE8686110461T
@@ -3060,7 +3060,7 @@ families:
   - number: DE68921234D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1995-03-30
     title: Vacuum processing reactor.
     application_number: DE68921234T
@@ -3303,7 +3303,7 @@ families:
   - number: DE3789142D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1994-03-31
     title: Plasma-assisted CVD process based on TEOS for the production of silicon dioxide.
     application_number: DE87311193T
@@ -3707,7 +3707,7 @@ families:
   - number: CA1309929C
     country: CA
     kind: C
-    document_type: application
+    document_type: granted-patent
     publication_date: 1992-11-10
     title: Carrier for use in etching disk-shaped objects
     application_number: CA000582633A
@@ -3720,7 +3720,7 @@ families:
   - number: DE3889073D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1994-05-19
     title: Carrier for disk-shaped objects and device for etching silicon wafers with such a carrier.
     application_number: DE3889073T
@@ -3733,7 +3733,7 @@ families:
   - number: DE3889672D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1994-06-23
     title: Device for treating disc-shaped objects.
     application_number: DE3889672T
@@ -3981,7 +3981,7 @@ families:
   - number: DE69017947D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1995-04-27
     title: Method and device for measuring the thickness of thin films.
     application_number: DE69017947T
@@ -4337,7 +4337,7 @@ families:
   - number: DE69031820D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1998-01-29
     title: Method and device for generating a flat plasma by means of magnetic coupling
     application_number: DE69031820T
@@ -4646,7 +4646,7 @@ families:
   - number: DE69030541D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1997-05-28
     title: Method for applying a layer of tungsten on a semiconductor wafer
     application_number: DE69030541T
@@ -5282,7 +5282,7 @@ families:
   - number: DE69129081D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1998-04-23
     title: Device and method for precipitation by a collimator
     application_number: DE69129081T
@@ -5407,7 +5407,7 @@ families:
   - number: DE69123870D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1997-02-13
     title: Sputtering process for forming an aluminum layer on a stepped wafer
     application_number: DE69123870T
@@ -5924,7 +5924,7 @@ families:
   - number: DE69130823D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1999-03-11
     title: Stripping agent and process for removing photoresists from surfaces
     application_number: DE69130823T
@@ -6006,7 +6006,7 @@ families:
   - number: GR3030070T3
     country: GR
     kind: T3
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1999-07-30
     title: Stripping compositions and method of stripping resists from substrates
     application_number: GR990401155T
@@ -6477,7 +6477,7 @@ families:
   - number: DE69218747D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1997-05-07
     title: Lateral double diffused field effect transistor with an isolated gate and method of manufacture
     application_number: DE69218747T
@@ -6892,7 +6892,7 @@ families:
   - number: DE69319435D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1998-08-06
     title: POLYMER SUBSTRATES WITH POLYMERIC MICRO ELEMENTS
     application_number: DE69319435T
@@ -6918,7 +6918,7 @@ families:
   - number: DE69332490D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2002-12-19
     title: Polymer substrates with polymeric microelements
     application_number: DE69332490T
@@ -8166,7 +8166,7 @@ families:
   - number: DE69410772D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1998-07-09
     title: In-situ control technology and device for determining the end of a chemical-mechanical leveling
       process
@@ -8414,7 +8414,7 @@ families:
   - number: DE69510576D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 1999-08-12
     title: Plasma stripping device with microwave trap
     application_number: DE69510576T
@@ -9101,7 +9101,7 @@ families:
   - number: DE69524683D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2002-01-31
     title: Inductively coupled plasma reactors
     application_number: DE69524683T
@@ -9452,7 +9452,7 @@ families:
   - number: CA2202466C
     country: CA
     kind: C
-    document_type: application
+    document_type: granted-patent
     publication_date: 2004-07-06
     title: Storage and delivery system for gaseous compounds
     application_number: CA002202466A
@@ -9508,7 +9508,7 @@ families:
   - number: DE69518657D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2000-10-05
     title: STORAGE AND DELIVERY SYSTEM FOR GASEOUS CONNECTIONS
     application_number: DE69518657T
@@ -9603,7 +9603,7 @@ families:
   - number: GR3034932T3
     country: GR
     kind: T3
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2001-02-28
     title: Storage and delivery system for gaseous compounds
     application_number: GR20000402638T
@@ -9792,7 +9792,7 @@ families:
   - number: PT785817E
     country: PT
     kind: E
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2001-03-30
     title: SYSTEM OF STORAGE AND SUPPLY OF GAS COMPOUNDS
     application_number: PT95936302T
@@ -11191,7 +11191,7 @@ families:
   - number: DE69625778D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2003-02-20
     title: Method and device for polishing substrates
     application_number: DE69625778T
@@ -12702,7 +12702,7 @@ families:
   - number: DE69727624D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2004-03-25
     title: Inductively coupled HDP-CVD reactor
     application_number: DE69727624T
@@ -13236,7 +13236,7 @@ families:
   - number: DE69739521D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2009-09-10
     title: Holder ring for a chemical mechanical polishing device
     application_number: DE69739521T
@@ -13249,7 +13249,7 @@ families:
   - number: DE69740146D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2011-04-21
     title: Support plate with a flexible membrane for a chemical mechanical polishing device
     application_number: DE69740146T
@@ -14443,7 +14443,7 @@ families:
   - number: DE69817365D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2003-09-25
     title: OXYGEN DIFFUSIONLESS OXYGEN PREPARATION PROCESS IN SILICON WAFER
     application_number: DE69817365T
@@ -14469,7 +14469,7 @@ families:
   - number: DE69840004D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2008-10-23
     title: Silicon semiconductor wafers with ideal oxygen deposition behavior
     application_number: DE69840004T
@@ -15236,7 +15236,7 @@ families:
   - number: DE69815951D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2003-08-07
     title: Process and installation for the internal coating of a treatment chamber
     application_number: DE69815951T
@@ -15844,7 +15844,7 @@ families:
   - number: DE69819929D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2003-12-24
     title: IMPROVED TESTING SYSTEM FOR SAMPLES
     application_number: DE69819929T
@@ -15870,7 +15870,7 @@ families:
   - number: DE69828827D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2005-03-03
     title: Improved test system for samples
     application_number: DE69828827T
@@ -15896,7 +15896,7 @@ families:
   - number: DE69840532D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2009-03-19
     title: Improved test system for samples
     application_number: DE69840532T
@@ -18626,7 +18626,7 @@ families:
   - number: DE60140415D1
     country: DE
     kind: D1
-    document_type: application
+    document_type: translation-of-granted-patent
     publication_date: 2009-12-24
     title: MOSFET transistor and method of making the same
     application_number: DE60140415T
