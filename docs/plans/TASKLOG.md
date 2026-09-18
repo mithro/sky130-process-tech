@@ -104,6 +104,8 @@ deep-dive entries per step page and twelve per category page
 - [ ] Provenance review — repeat after each batch
 - [ ] Full Sphinx build with `-W` (warnings as errors)
 - [x] (merged 2026-09-18) Metal cap and barrier composition: the back-end pages no longer assume Ti / Al–Cu / TiW on every level. A section of the overview (`overview-metal-cap`) sets out the 2013 TiW stack, the 2014 S8P change to Ti/TiN/AlCu/Ti/TiN "excluding top metal layers", the product notice on the move to a TiN-based stack, and the PDK thickness arithmetic; reading: metals 1–4 undecided (low confidence), metal 5 TiW (moderate). Step 138's etch-stop argument rebuilt on published selectivities; 61 files brought in line; independently reviewed (quotations and arithmetic confirmed), twelve follow-ups applied
+- [x] (merged 2026-09-19) Links from process pages to the three indexes: `tools/gen_index_links.py` writes one generated navigation block on 205 pages (144 steps, 28 machines, 13 materials, 9 categories, 9 masks, 2 overview) from the datasets; patent families in force or of unknown status appear only inside a collapsed block (verified on the built HTML of all 205 pages); the page checkers fail on a stale or hand-edited block
+- [~] (2026-09-19) Patents in force cited in page prose: 12 inventory keys, 201 sentences on 53 pages (75 verbatim quotations), two SONOS patents carrying most; the owner's rule is that unexpired patents stay behind a collapsed block, so these passages move into collapsed notes, with a checker; measurement in `tmp/verify-index-links.md`
 
 ## Provenance-review log
 
