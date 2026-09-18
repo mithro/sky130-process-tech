@@ -48,7 +48,7 @@ arithmetic before being fixed or declined.
 | 040-L2 | 040-ono.md | fixed | pat-radox-cyp embodiment is polysilicon-channel |
 | 040-L3 | 040-ono.md | fixed | furnace capability line oversold as "decisive" |
 | 041-L1 | 041-onom.md | fixed | ARC-etch question left in confusing order |
-| 042-L1 | 042-onome.md | fixed | two quotation slips (DPS II, SNF gas list) |
+| 042-L1 | 042-onome.md | fixed | DPS II suffix fixed; SNF gas list fix reverted per verifier — the Stanford page's gas list does include tetrafluoromethane, our first pass misread the cache and introduced a regression |
 | 043-L1 | 043-gox100.md | fixed | dropped word "oxide" (same as 040-L1) |
 | 043-L2 | 043-gox100.md | fixed | "5.0V I/O" quoted differently than step 044 |
 | 044-L1 | 044-lvom.md, 045-nchi.md, 046-goxetch.md | fixed | "~10 nm" cited to finished-thickness source |
