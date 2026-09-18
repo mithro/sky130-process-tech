@@ -26,8 +26,11 @@ more of it to remove per wafer and the {term}`crust <implant crust>` is
 continuous; and it has taken a p-type implant — boron or BF₂ at a dose of order
 10¹⁴–10¹⁵ cm⁻² (illustrative, {ref}`PRI <step-053>`) — which is lighter than
 the gate implant but still in the range where a carbonised crust
-forms.[^orvek-1985] If BF₂ is the species, the crust also contains fluorine,
-which downstream O₂/N₂ {term}`ashing <ash>` removes without difficulty (as
+forms.[^orvek-1985] If BF₂ is the species, the crust also contains
+fluorine; Fujimura et al. found that O₂ ashing leaves residues that
+are mainly the oxide of the implanted species,[^fujimura-1989] which
+for boron/fluorine is a lighter burden than for arsenic, but no public
+source describes the SKY130 case (as
 at {ref}`PCHIS <step-025>`, after {ref}`PNCHI <step-024>`, if that
 implant is also BF₂).
 
@@ -63,8 +66,11 @@ An industry-generic post-implant strip on a bare poly surface, for a
 1. **Plasma ash.** Downstream O₂ plasma with N₂ or {term}`forming gas`,
    beginning at low temperature to remove the crust without
    popping[^pat-strip-mosel] and finishing hot for the
-   bulk; water-vapour or H₂-containing chemistries penetrate a crust
-   faster than dry oxygen.[^fujimura-1991] Fujimura et al. also showed
+   bulk; water-vapour-containing chemistries ash faster than dry
+   oxygen — Fujimura et al. measured roughly double the atomic-oxygen
+   concentration and a fall in the ashing activation energy from about
+   0.5 to 0.39 eV with 10 % H₂O added[^fujimura-1991] — which is why a
+   fab with a crust to remove reaches for them. Fujimura et al. also showed
    that O₂ + H₂O downstream ashing is free of the sodium contamination
    that some older ashers introduced,[^fujimura-1994] which matters when
    the next film to be deposited is a gate cap. SkyWater's three ashers
