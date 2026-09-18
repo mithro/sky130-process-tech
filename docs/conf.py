@@ -43,7 +43,11 @@ nitpicky = True
 html_theme = "furo"
 html_title = "SKY130 Process Technology"
 html_static_path = ["_static"]
+# Shown by the theme at the top of every rendered page.
+announcement = "Warning: AI in use — use at own risk."
+
 html_theme_options = {
+    "announcement": announcement,
     "source_repository": "https://github.com/mithro/sky130-process-tech/",
     "source_branch": "main",
     "source_directory": "docs/",
