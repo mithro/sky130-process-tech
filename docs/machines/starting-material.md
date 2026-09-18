@@ -22,12 +22,18 @@ monitor and product wafers at later steps are on the
 |---|---|
 | What it does | Checks, identifies and sorts incoming polished wafers. KLA calls its Surfscan SP1 scanners the "Industry standard for wafer qualification – wafer manufacturer OQC and wafer fab IQC";[^kla-sp1-2021] SEMI M12 marking "links the properties of the wafer stored in an appropriate database system to each individual wafer for purposes of tracking and control during wafer and device manufacture".[^semi-m12] |
 | Surface inspection | Laser light scattering: "Oblique Illumination provides best sensitivity for particle detection on smooth surfaces", "Normal Illumination is ideal for detecting mechanical scratches", and "Haze maps graphically represent full wafer surface conditions / quality".[^kla-sp1-2021] |
-| Marking | A laser pulse melts the silicon in a dot;[^pat-lasermark-wacker] "soft marks and hard marks" are the two kinds in use, and GSI's soft Supersoftmark® is "generally characterized as 'debris free'".[^pat-softmark-gsi] A current 200 mm marker places marks "within a 25 mm band around the wafer's circumference", with dot depths of "2.4 μm - 5 μm".[^thinklaser-sigmaclean] |
+| Marking | A laser pulse melts the silicon in a dot;[^pat-lasermark-wacker] a GSI Group patent that may still be in force names the two kinds of mark in use and its own soft mark — see the collapsed note under this table. A current 200 mm marker places marks "within a 25 mm band around the wafer's circumference", with dot depths of "2.4 μm - 5 μm".[^thinklaser-sigmaclean] |
 | Sorting | A sorter reads each wafer's identifier and moves it to its slot;[^pat-sorter-infineon] a current 200 mm model can "split, merge, compress, or create custom wafer mixes by sorting wafers based on their IDs", with an ID reader "for OCR, barcode, or data matrix recognition".[^whs-t4] |
 | Standards | SEMI M1 for polished wafers;[^semi-m1] SEMI M12 and M13 for alphanumeric marks, both written so as to allow "simplification of the performance requirements of automatic optical character reading (OCR) equipment".[^semi-m12][^semi-m13] |
 | 200 mm era | Tencor and KLA-Tencor Surfscan scanners, from the Surfscan 4000[^liu-1993] to the SP1 DLS "in 200 mm/300 mm wafer process qualification";[^kla-sp1dls-2002] GSI Lumonics WaferMark markers, among them an 8-inch "WaferMark SuperClean" of 1995 vintage.[^cae-wafermark-superclean] |
 | SkyWater-listed tool | "Scribe: Lumonics Superclean"[^skw-01] |
 | SKY130 steps | 1 step; see {ref}`SKY130 steps assigned to this class <machine-starting-material-steps>` |
+
+:::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read
+The *Marking* row above: "soft marks and hard marks" are the two kinds in
+use, and GSI's soft Supersoftmark® is "generally characterized as 'debris
+free'".[^pat-softmark-gsi]
+:::
 
 ## What the machine class is and how it works
 
@@ -111,12 +117,21 @@ oxidation", and that "Marking done in dot matrix mode exhibits slag
 around the dots which is above the plane of the polished
 surface".[^christ-1983]
 
+A GSI Group patent that may still be in force distinguishes two kinds of
+laser mark, describes the laser type and the operating window its own
+soft mark needs, and says what sets the mark depth; those sentences are
+in the collapsed note below.
+
+:::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read
 A GSI Group patent distinguishes "roughly two kinds of laser marks
 currently used by the industry, namely soft marks and hard marks": its
 soft Supersoftmark® is "generally characterized as 'debris free'", is
 "typically produced with diode pumped, q-switched pulse laser systems",
 and needs the laser to run in a narrow "energy window"; the patent sets
-the mark depth by the pulse width.[^pat-softmark-gsi] A shallow soft
+the mark depth by the pulse width.[^pat-softmark-gsi]
+:::
+
+A shallow soft
 mark changes the surface very little: Khoong et al. found soft marks
 "invisible by naked eyes under room condition" but visible through
 condensation, and traced this to "a thin polycrystalline silicon layer"
@@ -165,10 +180,10 @@ gauges appears in any SkyWater source retrieved for this page.
   SP1 TBI Pro and SP1 DLS Pro for 150–300 mm wafers, quoting sensitivity
   "down to 60nm on the SP1 TBI and 50nm on the SP1 DLS on prime bare
   silicon".[^kla-sp1-2021]
-* **Lumonics / GSI Lumonics WaferMark.** GSI describes its WaferMark
-  system as "believed to be the first industrial laser marking system on
-  silicon wafer", and names the "Wafermark® Sigma Clean®" as the system
-  that produces Supersoftmarks.[^pat-softmark-gsi] A used-equipment
+* **Lumonics / GSI Lumonics WaferMark.** GSI's own account of the
+  WaferMark line and of which system produces its soft marks is in a
+  patent that may still be in force, in the collapsed note below this
+  list. A used-equipment
   listing offers a "GSI LUMONICS WaferMark SuperClean", "Laser marking
   system, 8"", of 1995 vintage.[^cae-wafermark-superclean] Thinklaser
   USA now describes the SigmaClean as a "debris-free soft marking"
@@ -180,6 +195,13 @@ gauges appears in any SkyWater source retrieved for this page.
 * **At the wafer vendor.** The pullers, saws and polishers, and the
   vendors of the period, are on the {ref}`category page
   <category-substrate>`.
+
+:::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read
+GSI describes its WaferMark system as "believed to be the first
+industrial laser marking system on silicon wafer", and names the
+"Wafermark® Sigma Clean®" as the system that produces
+Supersoftmarks.[^pat-softmark-gsi]
+:::
 
 ## At SkyWater
 
@@ -295,8 +317,9 @@ limits and marking scheme are not public.
   marked at Bloomington, or both, is not public. A mark made before the
   first oxidation must not seed slip ({ref}`BOX <step-002>`, the first
   furnace step on this reference's reading), the failure Christ and Maurantonio saw after oxidation
-  of unetched marks;[^christ-1983] a soft mark avoids the slag of a hard
-  mark.[^pat-softmark-gsi]
+  of unetched marks;[^christ-1983] whether the soft mark of the listed
+  marker helps here is answered by a patent that may still be in force,
+  in the collapsed note below this list.
 * **Incoming counts and the gate oxides.** COPs are a main cause of
   gate-oxide failure, and pair pits caused failures in oxides of about
   10 nm,[^ishii-1996][^miyazaki-1997] so the incoming
@@ -313,6 +336,10 @@ limits and marking scheme are not public.
   checks on many later steps under
   {ref}`defect and particle inspection <machine-defect-inspection>`
   ({ref}`machines-index`).
+
+:::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read
+A soft mark avoids the slag of a hard mark.[^pat-softmark-gsi]
+:::
 
 ## Related pages
 
@@ -399,8 +426,6 @@ Status and expiry are estimates from public records and are not legal advice.
 * Kuhn-Kuhnenfeld, Kramler and Gerber (Wacker Siltronic), US 4,522,656
   — slag-free laser marking by melting only the centre of the irradiated
   spot.[^pat-lasermark-wacker]
-* Gu and Ehrmann (GSI Group), US 7,705,268 — soft and hard marks, and
-  soft-mark depth set by pulse width.[^pat-softmark-gsi]
 * Khoong et al., *JAP* 2010 — the surface change a laser soft mark
   leaves.[^khoong-2010]
 * Caspary and Kaulfuss (Infineon), US 6,747,230 — sorting wafers by
@@ -409,6 +434,11 @@ Status and expiry are estimates from public records and are not legal advice.
   its correction factors.[^smits-1958]
 * Kern, *JES* 1990 — the cleaning that incoming wafers receive and the
   equipment that performs it.[^kern-1990]
+
+:::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read
+* Gu and Ehrmann (GSI Group), US 7,705,268 — soft and hard marks, and
+  soft-mark depth set by pulse width.[^pat-softmark-gsi]
+:::
 
 ## Open questions
 
