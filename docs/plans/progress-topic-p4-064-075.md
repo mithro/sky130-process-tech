@@ -12,8 +12,8 @@ before being fixed or declined.
 | 065-M1 | Medium | fixed | Confirmed wiki-implant.txt gives no arsenic dose threshold (only a yttrium/sapphire example). Cited the threshold to txt-01/rev-05 as a typical value, kept the quotation on wiki-implant. |
 | 065-M2 | Medium | fixed | Confirmed pdk-assumptions.html Table 5 column is headed "Vertical Space", not "lateral"; the reading is supported by the JCTD/LD row but was unmarked. Applied the marked formulation on 065-asti.md (both instances) and 075-tiprtad.md; 064-ntm.md already states it neutrally. |
 | 066-M1 | Medium | fixed | Confirmed pdk-assumptions.txt 780-801 publishes only three implant angles (HCIMPA 0, TipAng 7, HvTipAngle 40/HvTipTwist 23); at least four other implant pages in range say their SKY130 angle is not public. Reworded to match. |
-| 068-M1 | Medium | open | |
-| 068-M2 | Medium | open | |
+| 068-M1 | Medium | fixed | Confirmed via masks/hvntm.md's own Table F2b reading (12 of 80 rows marked C) that the "not public" open question is answered by a source the page already cites. Replaced the open question on 068 and its duplicate on 069 with the table's actual answer. |
+| 068-M2 | Medium | fixed | Confirmed Table F2b also marks HVNTM for the 3.3V native NMOS, 16V DE NMOS and HV diodes/resistors/varactors, not just the plain 5V family; fixed the device list on 068 and 069, separating the 16V (created) from the 20V UHV (not created) drain-extended devices. |
 | 069-M1 | Medium | open | |
 | 072-M1 | Medium | fixed | Same defect as 065-M1 (wiki-implant has no arsenic dose number); applied the same fix on 072-ldasti.md. |
 | 075-M1 | Medium | fixed | Same ITRS node mismatch as 065-H1 (65 nm-gate 2001 column vs SKY130's 0.15 um gate); reworded the Junction position bullet with the same 0.55x rule and ~80 nm figure. |
@@ -30,7 +30,7 @@ before being fixed or declined.
 | 067-L1 | Low | fixed | Confirmed wb-US5811358.txt 134 reads "(<220° C.)"; fixed the re-typeset instances on 067 and 070 (074 already had it right). |
 | 067-L2 | Low | fixed | Confirmed 062-p1me.md:22,159 strips the gate-etch resist in-situ inside P1ME. Reworded to "first stand-alone resist strip". |
 | 067-L3 | Low | fixed | Re-verified: Indeed URL still returns HTTP 403 (2026-09-18) to our own fetch; Wayback availability API and archive.ph show no snapshot (rate-limited/empty). Brought the footnote definitions on 067/070/074 in line with the inventory's existing 403 note; kept the quotation, which is a retrieved-and-dated public page per common rule 2. |
-| 068-L1 | Low | open | |
+| 068-L1 | Low | fixed | Confirmed pdk-background.txt 316 says only "developed by Cypress Semiconductor", no "S8" name. Removed the unsupported name attribution, kept the lineage claim on pdk-02. |
 | 069-L1 | Low | open | |
 | 070-L1 | Low | open | |
 | 070-L2 | Low | open | |

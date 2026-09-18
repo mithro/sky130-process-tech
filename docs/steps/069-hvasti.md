@@ -61,13 +61,16 @@ region sets the worst-case stress condition.[^king-2000]
 
 The PDK's 40° angle[^pdk-03] is therefore the strongest public hint
 about the nature of the SKY130 5 V NMOS: not a plain LDD but a
-gate-overlapped, tilt-implanted drain. Which devices get it is an
-inference: the 5 V/10.5 V NMOS `nfet_g5v0d10v5`, the ESD NMOS built on
-it, and the native 5 V NMOS with its 0.9 µm minimum gate
-length,[^pdk-07] all on the 110 Å oxide.[^pdk-hv] The 11 V/16 V and
-20 V {term}`drain-extended <DEMOS>` NMOS use an N-well {term}`drift region` as their drain
-extension[^pdk-hv][^mitros-2001] and would need this tip, if at all,
-only on the source side.
+gate-overlapped, tilt-implanted drain. The PDK's Table F2b marks
+`HVNTM` "created" for `nfet_g5v0d10v5`, the ESD NMOS built on it, the
+5 V and 3.3 V native NMOS, the 16 V drain-extended NMOS and several HV
+diodes, resistors and varactors,[^pdk-06] so this is where those
+devices' n-type extension is defined, all on the 110 Å
+oxide;[^pdk-hv] how the implant is placed relative to a drain-extended
+device's drift well is not stated. The
+20 V {term}`drain-extended <DEMOS>` NMOS uses an N-well {term}`drift region` as its drain
+extension[^pdk-hv][^mitros-2001] and Table F2b marks it "-" ("Layer not
+created for the device"), so it does not take this tip.
 
 Without `HVASTI`, the 5 V NMOS would be either unreliable (with the
 1.8 V tip) or non-functional (with an undoped gap under the spacer
@@ -233,8 +236,14 @@ fab (SKY130's energy and dose are not public):
   above are from textbooks.
 * The number of rotations at 40°/23°, and whether the twist is fixed or
   alternated between rotations, is not public.
-* Whether the drain-extended and 20 V NMOS take this implant on their
-  source side is not public.
+* Table F2b marks `HVNTM` "C (CREATED)" on the 5/10.5 V NMOS, the 5 V
+  and 3 V native NMOS, the 16 V drain-extended NMOS, the HV and HV
+  native ESD NMOS, the HV n-diffusion resistor, the HV varactor and
+  four n-type diodes, and "-" ("Layer not created for the device") on
+  every PMOS row and on all five UHV 5/20 V rows;[^pdk-06] see the
+  {ref}`HVNTM mask page <mask-hvntm>`. What the table does not say is
+  why the 20 V devices are excluded, or on which side of a
+  drain-extended device the implant lands.
 * Whether the 5 V PMOS has a corresponding tilted p-tip — the PDK's
   "HVPTM shadowing" parameter[^pdk-03] suggests one was at least
   contemplated, and its *High Voltage Methodology* page says hv
@@ -256,6 +265,11 @@ fab (SKY130's energy and dose are not public):
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
     <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
+[^pdk-06]: SkyWater PDK Authors, *Layers Reference* (including Table
+    F2b, mask generation by device) and `gds_layers.csv`, SkyWater
+    SKY130 PDK documentation.
+    <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
 [^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>

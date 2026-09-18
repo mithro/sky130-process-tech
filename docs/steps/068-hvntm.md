@@ -77,17 +77,22 @@ driven under the gate edge so that the drain field is graded and
 overlapped by the gate;[^hori-1989-latid][^hori-1992] Rafí and Campabadal
 compared the hot-carrier behaviour of {term}`LDD` and LATID
 devices directly.[^rafi-2001] The PDK's 40° HV tip angle[^pdk-03] is
-the signature of exactly this kind of drain, so we infer that the 5 V
-NMOS family — `nfet_g5v0d10v5`, the ESD NMOS built on it, and the
-native 5 V device whose "minimum gate length" is 0.9 µm[^pdk-07] —
-receives its extension here. The {term}`drain-extended <DEMOS>` 11 V/16 V and 20 V
-NMOS, which share the 110 Å oxide,[^pdk-hv] use an N-well {term}`drift region`
-as their drain extension[^pdk-hv][^mitros-2001] and may or may not
-also take this tip on their source side; the PDK's rule that `hvntm`
+the signature of exactly this kind of drain, and the PDK's Table F2b
+marks `HVNTM` "created" for `nfet_g5v0d10v5`, the ESD NMOS built on it,
+the 5 V and 3.3 V native NMOS, the 16 V drain-extended NMOS and several
+HV diodes, resistors and varactors,[^pdk-06] so this is where those
+devices' n-type extension is defined; how the implant is placed
+relative to a drain-extended device's drift well is not stated. The
+{term}`drain-extended <DEMOS>` 20 V
+NMOS, which shares the 110 Å oxide,[^pdk-hv] uses an N-well {term}`drift region`
+as its drain extension[^pdk-hv][^mitros-2001] and Table F2b marks it "-"
+("Layer not created for the device"), so it does not take this tip; the
+PDK's rule that `hvntm`
 "must enclose ESD_nwell_tap inside hvi" (hvntm.7)[^pdk-periph] shows
 that the layer is used on more than plain transistors.
 
-Cypress, whose S8 process is the ancestor of SKY130,[^pdk-02] patented
+Cypress, which the PDK says developed the technology SKY130 comes
+from,[^pdk-02] patented
 a "high-voltage device with self-aligned graded junctions" in a CMOS
 flow;[^pat-hv-graded-cyp] the patent's inventor is also a named
 inventor on the embedded-SONOS patent used throughout this reference,
@@ -245,9 +250,14 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 
 ## Open questions
 
-* Which devices are inside the `hvntm` reticle — whether the
-  drain-extended and 20 V NMOS take the HV tip on their source side, or
-  only the symmetric 5 V devices — is not public.
+* Table F2b marks `HVNTM` "C (CREATED)" on the 5/10.5 V NMOS, the 5 V
+  and 3 V native NMOS, the 16 V drain-extended NMOS, the HV and HV
+  native ESD NMOS, the HV n-diffusion resistor, the HV varactor and
+  four n-type diodes, and "-" ("Layer not created for the device") on
+  every PMOS row and on all five UHV 5/20 V rows;[^pdk-06] see the
+  {ref}`HVNTM mask page <mask-hvntm>`. What the table does not say is
+  why the 20 V devices are excluded, or on which side of a
+  drain-extended device the implant lands.
 * The resist chemistry used at 0.3 µm (an i-line resist thinned, or a
   dedicated thin-film product) is not public.
 * Whether "the CL" (read here as a computed layer) OR-ed with the drawn
