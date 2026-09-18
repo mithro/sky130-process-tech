@@ -261,7 +261,7 @@ and the roadmap. Tier: high-level.
 
 **ANN-02** — FOSSi Foundation, *"FOSSi Dial-Up launches with Big Bang:
 Production-ready Open Source PDK"*, 2020-06-17.
-<https://www.fossi-foundation.org/2020/06/17/fossi-dial-up>; announcement
+<https://fossi-foundation.org/blog/2020-06-17-fossi-dial-up>; announcement
 on the `skywater-pdk-announce` list, 2020-06-26:
 <https://groups.google.com/g/skywater-pdk-announce/c/4zBSayPQy4I>.
 Tier: high-level.
