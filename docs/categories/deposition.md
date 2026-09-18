@@ -344,8 +344,9 @@ must hit.
   liners.[^txt-09]
 * Bohr, IEDM 1995 — why interconnect, not the transistor, limits
   performance, motivating the metallisation stack.[^bohr-1995]
-* Broadbent and Ramiller, *JES* 1984 — WF₆/H₂ and WF₆/SiH₄ kinetics
-  behind CVD tungsten fill.[^rev-03]
+* Broadbent and Ramiller, *JES* 1984 — WF₆/H₂ and WF₆/Si kinetics for
+  *selective* tungsten deposition; the hydrogen-reduction kinetics
+  carry over to the blanket process.[^rev-03]
 * Kaanta et al. (IBM), IEDM 1987 — the tungsten-stud plus planarisation
   wiring scheme that became the standard plug process.[^kaanta-1987]
 * Rossnagel and Hopwood, *JVST B* 1994 — the first ionised-magnetron

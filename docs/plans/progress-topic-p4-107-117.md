@@ -13,7 +13,7 @@ occurrence is checked and fixed if needed.
 
 | id | severity | status | note |
 |---|---|---|---|
-| 110-H1 | High | open | Broadbent & Ramiller 1984 misattributed as WF6/SiH4 blanket kinetics; it is WF6/H2 + WF6/Si *selective* kinetics. |
+| 110-H1 | High | fixed | Confirmed via OpenAlex abstract (10.1149/1.2115864, cached tmp/p4/fetch/openalex-broadbent-1984.json): paper is WF6/H2 + WF6/Si kinetics for the *selective* process, not WF6/SiH4 blanket. Fixed 110-wdep2.md (body + Deep dive) and the same misattribution recurring at categories/deposition.md Deep dive. Other rev-03 citations in docs/ (overview/index.md, machines/tungsten-cvd.md, steps 099/121/132/147) already describe it correctly (generic "WF6 chemistry"/"hydrogen and silicon reduction") and needed no change. |
 | 112-H1 | High | open | Blech 1976 misattributed as describing a TiAl3 conductive shunt; it reports the critical-length/threshold-current-density effect. |
 | 113-H1 | High | open | "Track ammonia clean" (SkyWater capabilities page) misread as litho-track amine filtration; it is under the AMAT Mirra CMP block. |
 | 108-M1 | Medium | open | Zero-enclosure mcon floor claim: PSG/NCAPOX is reached only if the etch over-trenches; the floor beside `li` is LINIT nitride + NILD2 oxide. |
