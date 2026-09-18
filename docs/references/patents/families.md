@@ -91,7 +91,7 @@ families and members are counted.
 **Inventors:** Kenneth Levy; Paul Sandland
 **Dates:** priority 1978-04-03, filing 1978-04-03, grant 1981-01-27
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4247203A, retrieved 2026-09-14)
-**Estimated expiry:** 1999-04-03 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0150844B2 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 1998-04-03 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4247203A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `25400807` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -152,7 +152,7 @@ families and members are counted.
 **Inventors:** Lee K. Galbraith
 **Dates:** priority 1981-03-30, filing 1981-03-30, grant 1983-03-29
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4378159A, retrieved 2026-09-14)
-**Estimated expiry:** 2002-03-30 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPS632459B2 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2001-03-30 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4378159A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `22942562` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -210,7 +210,7 @@ families and members are counted.
 **Inventors:** Franz Kuhn-Kuhnenfeld; Josef Kramler; Hans-Adolf Gerber
 **Dates:** priority 1983-07-07, filing 1984-04-26, grant 1985-06-11
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4522656A, retrieved 2026-09-14)
-**Estimated expiry:** 2004-07-07 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0141245B2 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2004-04-26 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4522656A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `6203424` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -244,7 +244,7 @@ families and members are counted.
 **Inventors:** Naonori Enjo; Koji Tamura
 **Dates:** priority 1983-08-10, filing 1984-08-09, grant 1986-04-15
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4582624A, retrieved 2026-09-14)
-**Estimated expiry:** 2004-08-10 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR900000739B1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2004-08-09 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4582624A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `15425124` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -403,7 +403,7 @@ families and members are counted.
 **Inventors:** David S. Perloff; Chester Mallory
 **Dates:** priority 1985-02-22, filing 1985-02-22, grant 1987-10-27
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4703252A, retrieved 2026-09-14)
-**Estimated expiry:** 2006-02-22 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0357620B2 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2005-02-22 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US4703252A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `24828889` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -848,7 +848,7 @@ families and members are counted.
 **Inventors:** David Cheng; Dan Maydan; Sasson Somekh; Kenneth R. Stalder; Dana L. Andrews; Mei Chang; John M. White; Jerry Y. K. Wong; Vladimir J. Zeitlin; David N. Wang
 **Dates:** priority 1986-12-19, filing 1988-04-25, grant 1989-06-27
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US4842683A, retrieved 2026-09-14)
-**Estimated expiry:** 2018-07-10 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH11111700A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2013-11-11 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP2824079B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `22680079` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1422,7 +1422,7 @@ families and members are counted.
 **Inventors:** Wai M. Lee
 **Dates:** priority 1990-11-05, filing 1992-07-09, grant 1994-08-02
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5334332A, retrieved 2026-09-14)
-**Estimated expiry:** 2019-04-27 — all 21 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of GR3030070T3 (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2013-01-15 — all 21 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7051742B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
 **Google Patents family ID:** `24443399` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1633,7 +1633,7 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5303558A/en
 
-:::{dropdown} US 5,578,362 A — legal status shown as Expired - Lifetime; expiry not fully bounded from the records retrieved, estimated no later than 2028-05-19
+:::{dropdown} US 5,578,362 A — legal status shown as Expired - Lifetime; expiry not fully bounded from the records retrieved, estimated no later than 2015-02-28
 :name: patent-gp25461879
 
 **Title:** Polymeric polishing pad containing hollow polymeric microelements
@@ -1642,7 +1642,7 @@ families and members are counted.
 **Inventors:** Heinz F. Reinhardt; John V. H. Roberts; Harry G. McClain; William D. Budinger; Elmer W. Jensen
 **Dates:** priority 1992-08-19, filing 1994-07-12, grant 1996-11-26
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5578362A, retrieved 2026-09-14)
-**Estimated expiry:** 2028-05-19 — not bounded from the records retrieved: JP2008238399A; latest estimate JP2008238399A (application; any grant would expire at the latest about 20 years from filing (estimated))
+**Estimated expiry:** 2015-02-28 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to JP3013105B2 (status shown: Expired - Lifetime; Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime), running to 2015-02-28
 **Google Patents family ID:** `25461879` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2262,7 +2262,7 @@ families and members are counted.
 **Inventors:** Glenn M. Tom; James V. McManus
 **Dates:** priority 1994-10-13, filing 1994-10-13, grant 1996-05-21
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5518528A, retrieved 2026-09-14)
-**Estimated expiry:** 2020-11-29 — all 35 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of GR3034932T3 (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2017-04-11 — all 35 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6125131A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `23253952` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2550,7 +2550,7 @@ families and members are counted.
 **Inventors:** Tetsu Osawa
 **Dates:** priority 1995-09-20, filing 1996-09-18, grant 1998-10-13
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5820367A, retrieved 2026-09-14)
-**Estimated expiry:** 2016-09-18 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5820367A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
+**Estimated expiry:** 2016-09-20 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0992625A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
 **Google Patents family ID:** `17432179` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2616,7 +2616,7 @@ families and members are counted.
 **Inventors:** Robert D. Tolles; Norm Shendon; Sasson Somekh; Ilya Perlov; Eugene Gantvarg; Harry Q. Lee
 **Dates:** priority 1995-10-27, filing 1995-10-27, grant 1998-04-14
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5738574A, retrieved 2026-09-14)
-**Estimated expiry:** 2021-12-13 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP2002198329A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2016-10-28 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of EP0774323B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `24192580` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2699,7 +2699,7 @@ families and members are counted.
 **Inventors:** James E. Nulty; Christopher J. Petti
 **Dates:** priority 1995-12-22, filing 2000-03-31, grant 2004-08-31
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6784552B2, retrieved 2026-09-14)
-**Estimated expiry:** 2016-12-24 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH09181181A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2016-12-22 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH09181181A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
 **Google Patents family ID:** `24310003` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2839,7 +2839,7 @@ families and members are counted.
 **Inventors:** Yang Pan
 **Dates:** priority 1996-02-20, filing 1996-02-20, grant 1997-01-21
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5595919A, retrieved 2026-09-14)
-**Estimated expiry:** 2016-10-10 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of SG66330A1 (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2017-02-20 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of SG66330A1 (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
 **Google Patents family ID:** `24414167` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2955,7 +2955,7 @@ families and members are counted.
 **Inventors:** Hank Chen; Frank Sinclair; Michiro Sugitani
 **Dates:** priority 1996-06-14, filing 1997-01-17, grant 1998-06-02
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5760409A, retrieved 2026-09-14)
-**Estimated expiry:** 2018-01-19 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH10226880A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2018-01-17 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR100402183B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `25134219` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3012,7 +3012,7 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5707498A/en
 
-:::{dropdown} US 6,170,428 B1 — legal status shown as Expired - Lifetime; expiry not fully bounded from the records retrieved, estimated no later than 2027-11-12
+:::{dropdown} US 6,170,428 B1 — legal status shown as Expired - Lifetime; expiry not fully bounded from the records retrieved, estimated no later than 2017-07-15
 :name: patent-gp24728963
 
 **Title:** Symmetric tunable inductively coupled HDP-CVD reactor
@@ -3021,7 +3021,7 @@ families and members are counted.
 **Inventors:** Fred C. Redeker; Farhad Moghadam; Hiroji Hanawa; Tetsuya Ishikawa; Dan Maydan; Shijian Li; Brian Lue; Robert J. Steger; Manus Wong; Yaxin Wong; Ashok K. Sinha
 **Dates:** priority 1996-07-15, filing 1996-07-15, grant 2001-01-09
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6170428B1, retrieved 2026-09-14)
-**Estimated expiry:** 2027-11-12 — not bounded from the records retrieved: JP2008091938A; latest estimate JP2008091938A (application; any grant would expire at the latest about 20 years from filing (estimated))
+**Estimated expiry:** 2017-07-15 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to EP0819780B1 (status shown: Expired - Lifetime; Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime), running to 2017-07-15
 **Google Patents family ID:** `24728963` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3227,7 +3227,7 @@ families and members are counted.
 **Inventors:** Brian L. Mueller; Christopher C. Streinz; Steven K. Grumbine
 **Dates:** priority 1996-11-26, filing 1996-11-26, grant 1999-09-28
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5958288A, retrieved 2026-09-14)
-**Estimated expiry:** 2023-01-08 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL153843A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2017-11-26 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL153843A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
 **Google Patents family ID:** `25030826` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5041,7 +5041,7 @@ families and members are counted.
 **Inventors:** Andrew C. Perry; Paul S. Gilman; Jaak Van den Sype
 **Dates:** priority 2001-11-14, filing 2001-11-14, grant 2003-08-12
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6605199B2, retrieved 2026-09-14)
-**Estimated expiry:** 2024-05-03 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL161750A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2022-11-14 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL161750A0 (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
 **Google Patents family ID:** `25537645` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -5964,7 +5964,7 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7250334B2/en
 
-:::{dropdown} US 7,449,416 B2 — legal status shown as Expired - Fee Related; expiry not fully bounded from the records retrieved, estimated no later than 2032-07-02
+:::{dropdown} US 7,449,416 B2 — legal status shown as Expired - Fee Related; expiry not fully bounded from the records retrieved, estimated no later than 2026-04-18
 :name: patent-gp35448183
 
 **Title:** Apparatus and plasma ashing process for increasing photoresist removal rate
@@ -5973,7 +5973,7 @@ families and members are counted.
 **Inventors:** Alan F. Becknell; Philip Hammar; David Ferris
 **Dates:** priority 2004-09-01, filing 2005-09-01, grant 2008-11-11
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US7449416B2, retrieved 2026-09-14)
-**Estimated expiry:** 2032-07-02 — not bounded from the records retrieved: JP2012191242A; latest estimate JP2012191242A (application; any grant would expire at the latest about 20 years from filing (estimated))
+**Estimated expiry:** 2026-04-18 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US7449416B2 (status shown: Expired - Fee Related; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related), running to 2026-04-18
 **Google Patents family ID:** `35448183` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6067,7 +6067,7 @@ families and members are counted.
 **Inventors:** Masanobu Igeta; Cory Wajda; David L. O'Meara; Kristen Scheer; Toshihara Eurakawa
 **Dates:** priority 2005-03-30, filing 2005-03-30, grant 2009-03-10
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US7501352B2, retrieved 2026-09-14)
-**Estimated expiry:** 2026-03-22 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW200641997A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
+**Estimated expiry:** 2026-03-30 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of CN101151718A (estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically))
 **Google Patents family ID:** `37073778` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6317,7 +6317,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20090179253A1/en
 :::
 
-:::{dropdown} US 7,670,963 B2 — shown as in force; estimated expiry 2027-09-28
+:::{dropdown} US 7,670,963 B2 — shown as in force; estimated expiry 2028-05-25
 :name: patent-gp40072821
 
 **Title:** Single-wafer process for fabricating a nonvolatile charge trap memory device
@@ -6326,7 +6326,7 @@ families and members are counted.
 **Inventors:** Krishnaswamy Ramkumar; Sagy Levy
 **Dates:** priority 2007-05-25, filing 2007-09-26, grant 2010-03-02
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US7670963B2, retrieved 2026-09-14)
-**Estimated expiry:** 2027-09-28 — CN101548385B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2028-05-25 — the latest recorded or estimated term among all members belongs to TW200847344A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2028-05-25; CN101548385B is the most recent member still shown as in force, with estimated expiry 2027-09-28
 **Google Patents family ID:** `40072821` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6469,7 +6469,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8283261B2/en
 :::
 
-:::{dropdown} US 8,614,124 B2 — shown as in force; estimated expiry 2027-12-27
+:::{dropdown} US 8,614,124 B2 — shown as in force; estimated expiry 2031-06-02
 :name: patent-gp40071593
 
 **Title:** SONOS ONO stack scaling
@@ -6478,7 +6478,7 @@ families and members are counted.
 **Inventors:** Fredrick B. Jenne; Sagy Charel Levy
 **Dates:** priority 2007-05-25, filing 2007-09-26, grant 2013-12-24
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US8614124B2, retrieved 2026-09-14)
-**Estimated expiry:** 2027-12-27 — US9349877B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2031-06-02 — the latest recorded or estimated term among all members belongs to US8614124B2 (status shown: Expired - Fee Related; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related), running to 2031-06-02; US9349877B1 is the most recent member still shown as in force, with estimated expiry 2027-12-27
 **Google Patents family ID:** `40071593` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6535,7 +6535,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8643124B2/en
 :::
 
-:::{dropdown} US 8,680,601 B2 — shown as in force; estimated expiry 2027-09-28
+:::{dropdown} US 8,680,601 B2 — shown as in force; estimated expiry 2029-08-12
 :name: patent-gp40071592
 
 **Title:** Nonvolatile charge trap memory device having a deuterated layer in a multi-layer charge-trapping region
@@ -6544,7 +6544,7 @@ families and members are counted.
 **Inventors:** Sagy Levy; Fredrick B. Jenne; Krishnaswamy Ramkumar
 **Dates:** priority 2007-05-25, filing 2007-09-26, grant 2014-03-25
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US8680601B2, retrieved 2026-09-14)
-**Estimated expiry:** 2027-09-28 — CN101636845B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2029-08-12 — the latest recorded or estimated term among all members belongs to US8680601B2 (status shown: Expired - Fee Related; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related), running to 2029-08-12; CN101636845B is the most recent member still shown as in force, with estimated expiry 2027-09-28
 **Google Patents family ID:** `40071592` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6609,7 +6609,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8940645B2/en
 :::
 
-:::{dropdown} US 7,679,384 B2 — shown as in force; estimated expiry 2027-07-19
+:::{dropdown} US 7,679,384 B2 — shown as in force; estimated expiry 2028-06-06
 :name: patent-gp40095286
 
 **Title:** Parametric testline with increased test pattern areas
@@ -6618,7 +6618,7 @@ families and members are counted.
 **Inventors:** Hsien-Wei Chen; Shih-Hsun Hsu; Hao-Yi Tsai; Shin-puu Jeng
 **Dates:** priority 2007-06-08, filing 2007-06-08, grant 2010-03-16
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US7679384B2, retrieved 2026-09-14)
-**Estimated expiry:** 2027-07-19 — US7679384B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+**Estimated expiry:** 2028-06-06 — the latest recorded or estimated term among all members belongs to CN101320725B (status shown: Expired - Fee Related; Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related), running to 2028-06-06; US7679384B2 is the most recent member still shown as in force, with estimated expiry 2027-07-19
 **Google Patents family ID:** `40095286` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6856,7 +6856,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8772059B2/en
 :::
 
-:::{dropdown} US 8,685,813 B2 — shown as in force; estimated expiry 2032-09-06
+:::{dropdown} US 8,685,813 B2 — shown as in force; estimated expiry 2033-02-15
 :name: patent-gp48945910
 
 **Title:** Method of integrating a charge-trapping gate stack into a CMOS flow
@@ -6865,7 +6865,7 @@ families and members are counted.
 **Inventors:** Krishnaswamy Ramkumar
 **Dates:** priority 2012-02-15, filing 2012-03-23, grant 2014-04-01
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US8685813B2, retrieved 2026-09-14)
-**Estimated expiry:** 2032-09-06 — CN103258798B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2033-02-15 — the latest recorded or estimated term among all members belongs to TW201334120A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2033-02-15; CN103258798B is the most recent member still shown as in force, with estimated expiry 2032-09-06
 **Google Patents family ID:** `48945910` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6926,7 +6926,7 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9076523B2/en
 
-:::{dropdown} US 8,796,098 B1 — shown as in force; estimated expiry 2034-02-25
+:::{dropdown} US 8,796,098 B1 — shown as in force; estimated expiry 2034-02-26
 :name: patent-gp51229009
 
 **Title:** Embedded SONOS based memory cells
@@ -6935,7 +6935,7 @@ families and members are counted.
 **Inventors:** Krishnaswamy Ramkumar; Igor G. Kouznetsov; Venkatraman Prabhakar
 **Dates:** priority 2013-02-26, filing 2013-09-04, grant 2014-08-05
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8796098B1, retrieved 2026-09-14)
-**Estimated expiry:** 2034-02-25 — CN110349963B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2034-02-26 — the latest recorded or estimated term among all members belongs to TW201440178A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2034-02-26; CN104009005B is the most recent member still shown as in force, with estimated expiry 2034-02-25
 **Google Patents family ID:** `51229009` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7028,7 +7028,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20190355583A1/en
 :::
 
-:::{dropdown} US 10,002,878 B2 — shown as in force; estimated expiry 2034-11-20
+:::{dropdown} US 10,002,878 B2 — shown as in force; estimated expiry 2034-12-12
 :name: patent-gp53369470
 
 **Title:** Complementary SONOS integration into CMOS flow
@@ -7037,7 +7037,7 @@ families and members are counted.
 **Inventors:** Venkatraman Prabhakar; Krishnaswamy Ramkumar; Igor Kouznetsov
 **Dates:** priority 2013-12-12, filing 2017-09-18, grant 2018-06-19
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10002878B2, retrieved 2026-09-14)
-**Estimated expiry:** 2034-11-20 — CN105531828B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2034-12-12 — the latest recorded or estimated term among all members belongs to TW201535486A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2034-12-12; CN105531828B is the most recent member still shown as in force, with estimated expiry 2034-11-20
 **Google Patents family ID:** `53369470` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7063,7 +7063,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10002878B2/en
 :::
 
-:::{dropdown} US 10,103,244 B2 — legal status shown as Expired - Fee Related; expiry not fully bounded from the records retrieved, estimated no later than 2034-12-31
+:::{dropdown} US 10,103,244 B2 — legal status shown as Expired - Fee Related; expiry not fully bounded from the records retrieved, estimated no later than 2035-01-10
 :name: patent-gp53522052
 
 **Title:** Drain extended MOS transistors with split channel
@@ -7072,7 +7072,7 @@ families and members are counted.
 **Inventors:** Venkatraman Prabhakar; Igor Kouznetsov
 **Dates:** priority 2014-01-10, filing 2016-02-17, grant 2018-10-16
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US10103244B2, retrieved 2026-09-14)
-**Estimated expiry:** 2034-12-31 — not bounded from the records retrieved: TW201530732A; latest estimate TW201530732A (application; any grant would expire at the latest about 20 years from filing (estimated))
+**Estimated expiry:** 2035-01-10 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to TW201530732A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2035-01-10
 **Google Patents family ID:** `53522052` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7096,7 +7096,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10103244B2/en
 :::
 
-:::{dropdown} US 8,916,432 B1 — shown as in force; estimated expiry 2034-11-20
+:::{dropdown} US 8,916,432 B1 — shown as in force; estimated expiry 2035-01-21
 :name: patent-gp52101816
 
 **Title:** Methods to integrate SONOS into CMOS flow
@@ -7105,7 +7105,7 @@ families and members are counted.
 **Inventors:** Krishnaswamy Ramkumar; Venkatraman Prabhakar
 **Dates:** priority 2014-01-21, filing 2014-06-16, grant 2014-12-23
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8916432B1, retrieved 2026-09-14)
-**Estimated expiry:** 2034-11-20 — DE112014006222B4 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2035-01-21 — the latest recorded or estimated term among all members belongs to DE112014006222T5 (status shown: Granted; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2035-01-21; DE112014006222B4 is the most recent member still shown as in force, with estimated expiry 2034-11-20
 **Google Patents family ID:** `52101816` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7136,7 +7136,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8916432B1/en
 :::
 
-:::{dropdown} US 10,003,022 B2 — shown as in force; estimated expiry 2034-12-17
+:::{dropdown} US 10,003,022 B2 — shown as in force; estimated expiry 2035-03-04
 :name: patent-gp54018263
 
 **Title:** RRAM cell structure with conductive etch-stop layer
@@ -7145,7 +7145,7 @@ families and members are counted.
 **Inventors:** Ming Chyi Liu; Yuan-Tai Tseng; Chern-Yow Hsu; Shih-Chang Liu; Chia-Shiung Tsai
 **Dates:** priority 2014-03-04, filing 2014-03-04, grant 2018-06-19
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10003022B2, retrieved 2026-09-14)
-**Estimated expiry:** 2034-12-17 — KR101770456B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2035-03-04 — the latest recorded or estimated term among all members belongs to TW201539730A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2035-03-04; KR101770456B1 is the most recent member still shown as in force, with estimated expiry 2034-12-17
 **Google Patents family ID:** `54018263` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7176,7 +7176,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10003022B2/en
 :::
 
-:::{dropdown} US 9,431,609 B2 — shown as in force; estimated expiry 2034-12-08
+:::{dropdown} US 9,431,609 B2 — shown as in force; estimated expiry 2035-03-31
 :name: patent-gp55302792
 
 **Title:** Oxide film scheme for RRAM structure
@@ -7185,7 +7185,7 @@ families and members are counted.
 **Inventors:** Trinh Hai Dang; Hsing-Lien Lin; Cheng-Yuan Tsai; Chia-Shiung Tsai; Ru-Liang Lee
 **Dates:** priority 2014-08-14, filing 2014-08-14, grant 2016-08-30
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US9431609B2, retrieved 2026-09-14)
-**Estimated expiry:** 2034-12-08 — KR101626222B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2035-03-31 — the latest recorded or estimated term among all members belongs to CN106159083B (status shown: Expired - Fee Related; Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related), running to 2035-03-31; KR101626222B1 is the most recent member still shown as in force, with estimated expiry 2034-12-08
 **Google Patents family ID:** `55302792` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7211,7 +7211,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9431609B2/en
 :::
 
-:::{dropdown} US 9,218,978 B1 — shown as in force; estimated expiry 2035-11-25
+:::{dropdown} US 9,218,978 B1 — shown as in force; estimated expiry 2036-03-09
 :name: patent-gp54848024
 
 **Title:** Method of ONO stack formation
@@ -7220,7 +7220,7 @@ families and members are counted.
 **Inventors:** Krishnaswamy Ramkumar
 **Dates:** priority 2015-03-09, filing 2015-06-19, grant 2015-12-22
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US9218978B1, retrieved 2026-09-14)
-**Estimated expiry:** 2035-11-25 — DE112015006291B4 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2036-03-09 — the latest recorded or estimated term among all members belongs to DE112015006291T5 (status shown: Granted; estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2036-03-09; DE112015006291B4 is the most recent member still shown as in force, with estimated expiry 2035-11-25
 **Google Patents family ID:** `54848024` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7258,7 +7258,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9218978B1/en
 :::
 
-:::{dropdown} US 9,824,895 B1 — shown as in force; estimated expiry 2036-12-06
+:::{dropdown} US 9,824,895 B1 — shown as in force; estimated expiry 2037-09-27
 :name: patent-gp60303236
 
 **Title:** Method of integration of ONO stack formation into thick gate oxide CMOS flow
@@ -7267,7 +7267,7 @@ families and members are counted.
 **Inventors:** Krishnaswamy Ramkumar
 **Dates:** priority 2016-09-27, filing 2016-12-06, grant 2017-11-21
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US9824895B1, retrieved 2026-09-14)
-**Estimated expiry:** 2036-12-06 — US9824895B1 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2037-09-27 — the latest recorded or estimated term among all members belongs to TW201826352A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2037-09-27; US9824895B1 is the most recent member still shown as in force, with estimated expiry 2036-12-06
 **Google Patents family ID:** `60303236` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7291,7 +7291,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9824895B1/en
 :::
 
-:::{dropdown} US 10,062,748 B1 — shown as in force; estimated expiry 2038-02-13
+:::{dropdown} US 10,062,748 B1 — shown as in force; estimated expiry 2038-02-27
 :name: patent-gp63208306
 
 **Title:** Segmented guard-ring and chip edge seals
@@ -7300,7 +7300,7 @@ families and members are counted.
 **Inventors:** Anthony K. Stamper; Vincent J. McGahay; Zhong-Xiang He
 **Dates:** priority 2017-02-27, filing 2017-02-27, grant 2018-08-28
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10062748B1, retrieved 2026-09-14)
-**Estimated expiry:** 2038-02-13 — CN108511386B is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2038-02-27 — the latest recorded or estimated term among all members belongs to TW201841311A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2038-02-27; CN108511386B is the most recent member still shown as in force, with estimated expiry 2038-02-13
 **Google Patents family ID:** `63208306` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7327,7 +7327,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10062748B1/en
 :::
 
-:::{dropdown} US 10,062,573 B1 — shown as in force; estimated expiry 2037-08-22
+:::{dropdown} US 10,062,573 B1 — shown as in force; estimated expiry 2038-06-14
 :name: patent-gp63208150
 
 **Title:** Embedded SONOS with triple gate oxide and manufacturing method of the same
@@ -7336,7 +7336,7 @@ families and members are counted.
 **Inventors:** Krishnaswamy Ramkumar; Igor Kouznetsov; Venkatraman Prabhakar; Ali Keshavarzi
 **Dates:** priority 2017-06-14, filing 2017-08-22, grant 2018-08-28
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US10062573B1, retrieved 2026-09-14)
-**Estimated expiry:** 2037-08-22 — US10784356B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2038-06-14 — the latest recorded or estimated term among all members belongs to TW201913880A (status shown: None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2038-06-14; US10062573B1 is the most recent member still shown as in force, with estimated expiry 2037-08-22
 **Google Patents family ID:** `63208150` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7394,7 +7394,7 @@ families and members are counted.
 **Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/WO2020249699A1/en
 :::
 
-:::{dropdown} US 2022/0122660 A1 — legal status shown as Pending; expiry not fully bounded from the records retrieved, estimated no later than 2041-12-30
+:::{dropdown} US 2022/0122660 A1 — legal status shown as Pending; expiry not fully bounded from the records retrieved, estimated no later than 2040-07-22
 :name: patent-gp74192490
 
 **Title:** Configuration and method of operation of a one-transistor two-resistors (1t2r) resistive memory (reram) cell and an array thereof
@@ -7403,7 +7403,7 @@ families and members are counted.
 **Inventors:** Yoav Nissan-Cohen
 **Dates:** priority 2019-07-22, filing 2021-12-30
 **Legal status (representative):** Pending (Google Patents (IFI Claims) status of US20220122660A1, retrieved 2026-09-18)
-**Estimated expiry:** 2041-12-30 — not bounded from the records retrieved: US20220122660A1; latest estimate US20220122660A1 (application; any grant would expire at the latest about 20 years from filing (estimated))
+**Estimated expiry:** 2040-07-22 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US20220122660A1 (status shown: Pending; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2040-07-22
 **Google Patents family ID:** `74192490` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -7457,7 +7457,7 @@ families and members are counted.
 **Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/EP4062463A1/en
 :::
 
-:::{dropdown} US 12,232,324 B2 — shown as in force; estimated expiry 2043-09-26
+:::{dropdown} US 12,232,324 B2 — shown as in force; estimated expiry 2043-09-27
 :name: patent-gp90359049
 
 **Title:** Method of forming oxide-nitride-oxide stack of non-volatile memory and integration to CMOS process flow
@@ -7466,7 +7466,7 @@ families and members are counted.
 **Inventors:** Michael Allen; Krishnaswamy Ramkumar
 **Dates:** priority 2022-09-27, filing 2022-09-27, grant 2025-02-18
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US12232324B2, retrieved 2026-09-14)
-**Estimated expiry:** 2043-09-26 — JP7846308B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Estimated expiry:** 2043-09-27 — the latest recorded or estimated term among all members belongs to US20250185250A1 (status shown: Pending; estimated 20 years from the earliest non-provisional filing date recorded in the family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running to 2043-09-27; JP7846308B2 is the most recent member still shown as in force, with estimated expiry 2043-09-26
 **Google Patents family ID:** `90359049` (family section of the representative's own record page, linked below)
 
 **Members:**
