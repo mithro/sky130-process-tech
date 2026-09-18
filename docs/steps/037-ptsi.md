@@ -28,8 +28,9 @@ The wafer at this point carries the {ref}`TUNM <step-035>` resist,
 opened through its {term}`ARC` at {ref}`TUNARCE <step-036>`, so the implant
 enters only the tunnel windows (`tunm`, GDS 80:20, described by the PDK
 as "SONOS device tunnel implant"[^pdk-06]) and passes through the screen
-oxide there — the pad oxide, we infer — which is 10–20 nm in the Cypress
-embedded-SONOS flow.[^pat-04] Everywhere else the resist stops it. On
+oxide there — the pad oxide, we infer, whose thickness in the Cypress
+embedded-SONOS flow is in the collapsed note under the recipe list
+below. Everywhere else the resist stops it. On
 the block reading of that rule preferred on the {ref}`LVTNI <step-015>`
 page — the PDK describes `lvtn` as defining "regions to block Vt
 adjust implant for low Vt LV PMOS/NMOS, SONOS FETs and Native
@@ -103,44 +104,53 @@ memory transistor (SKY130's values are not public):
 
 * **Species.** Boron (¹¹B⁺, from BF₃) is the usual p-type barrier
   dopant; indium is the heavier alternative that gives a steeper,
-  shallower-tailed profile. The Cypress embedded-SONOS patent implants
-  the memory-transistor channel "with Indium (In) at an energy of from
-  about 50 to about 500 kilo-electron volts (keV), and a dose of from
-  about 5e11 … to about 5e12 cm⁻²",[^pat-04] and the same company's
-  2020 article recommends "heavier species such as Indium" for the
-  control-gate channel.[^cyp-25] Indium's advantage for a retrograde
+  shallower-tailed profile. The Cypress embedded-SONOS patent, which may
+  still be in force, implants the memory-transistor channel with indium
+  at an energy and dose given in the collapsed note below this list, and
+  the same company's 2020 article recommends "heavier species such as
+  Indium" for the control-gate channel.[^cyp-25] Indium's advantage for a retrograde
   channel was shown by Shahidi et al.[^shahidi-1993] and used for
   super-steep retrograde channels at 80 nm.[^huang-2000]
 * **Energy.** Chosen to place the peak below the eventual channel,
   typically a few tens of nanometres to about 0.1 µm deep. Published
   logic-era barriers: boron chained at 100, 70 and 50 keV;[^pat-vt-lsi]
-  the Cypress indium range above.[^pat-04] Hori and Kurimoto's LATIPS
+  the Cypress indium range is in the collapsed note below. Hori and
+  Kurimoto's LATIPS
   device used a large-tilt-angle implant to put the stopper under the
   channel edge only,[^hori-1988] and Lin et al. optimised a
   tilt-implanted stopper in quarter-micron MOSFETs with
   low-concentration wells.[^lin-1997]
-* **Dose.** Of order 10¹²–10¹³ cm⁻²; the Cypress patent's
-  5 × 10¹¹–5 × 10¹² cm⁻² for indium[^pat-04] and the LSI Logic patent's
-  chained boron barrier (4 × 10¹² cm⁻² at 100 keV plus 1–3 × 10¹¹ cm⁻²
-  at 70 and 50 keV)[^pat-vt-lsi] bracket it.
+* **Dose.** Of order 10¹²–10¹³ cm⁻²; the Cypress patent's indium dose
+  (collapsed note below) and the LSI Logic patent's chained boron
+  barrier (4 × 10¹² cm⁻² at 100 keV plus 1–3 × 10¹¹ cm⁻² at 70 and
+  50 keV)[^pat-vt-lsi] bracket it.
 * **Tilt and twist.** 7° with a twist is the textbook convention to
   suppress {term}`channelling`;[^txt-02][^wiki-implant] a large tilt is
   used only when the barrier is meant to be asymmetric.[^hori-1988]
-* **Screen.** Through the {term}`screen oxide` — the pad oxide, we infer;
-  10–20 nm in the Cypress patent[^pat-04] — which also randomises the
-  beam.
+* **Screen.** Through the {term}`screen oxide` — the pad oxide, we infer,
+  whose thickness in the Cypress patent is in the collapsed note below
+  — which also randomises the beam.
 * **Wafer handling.** Single-wafer, electrostatically chucked end
   station with an electron shower for charge neutralisation; the
   resist carries only a light dose here.
 * **Anneal.** No dedicated anneal; the implant is, we infer, activated
   by the {term}`ONO` furnace steps ({ref}`ONO <step-040>`) and the gate
   oxidations ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`). The
-  Cypress integration patent places the memory-cell formation "after at
-  least some of the well and channel implants for the logic MOS
-  transistors are formed",[^pat-03] and this reference places the
-  memory-cell steps accordingly.
+  Cypress integration patent, which may still be in force, says where it
+  places the memory-cell formation (collapsed note below), and this
+  reference places the memory-cell steps accordingly.
 * **Monitoring.** Thermal-wave damage measurement on product,
   {term}`sheet resistance` on monitor wafers ({ref}`category-implant`).
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+The Cypress embedded-SONOS patent implants the memory-transistor
+channel "with Indium (In) at an energy of from about 50 to about 500
+kilo-electron volts (keV), and a dose of from about 5e11 … to about
+5e12 cm⁻²", through a pad oxide of 10–20 nm.[^pat-04] The Cypress
+integration patent places the memory-cell formation "after at least some
+of the well and channel implants for the logic MOS transistors are
+formed".[^pat-03]
+:::
 
 ## Machines typically used
 

@@ -47,12 +47,17 @@ the thick-oxide regions, yet their gate dielectric is the {term}`ONO` island,
 not the thin oxide. How the generated `clvom` mask treats the ONO
 islands — whether it excludes them so that the resist protects the
 {term}`blocking oxide` during the etch and clean — is not public. The
-Cypress integration patent shows that its equivalent resist does
-exactly that: "while the photoresist layer 318 protects the ONO charge
-trapping dielectric stack 306 a clean which would be detrimental to
-the ONO charge trapping dielectric stack 306 if it were not protected
-by the photoresist layer 318 may be performed at this time".[^pat-03]
-We infer the same for SKY130 (see *Open questions*).
+Cypress integration patent, which may still be in force, shows that its
+equivalent resist does exactly that; its wording is in the collapsed
+note below. We infer the same for SKY130 (see *Open questions*).
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+The Cypress integration patent says that "while the photoresist layer
+318 protects the ONO charge trapping dielectric stack 306 a clean which
+would be detrimental to the ONO charge trapping dielectric stack 306 if
+it were not protected by the photoresist layer 318 may be performed at
+this time".[^pat-03]
+:::
 
 ## Step category
 
@@ -90,12 +95,17 @@ regions and growing the thin oxide second ({ref}`category-oxidation`,
 the late 1990s for logic-embedded DRAM,[^togo-1998] and the pairing of
 the resist with the wet etch it must survive — the "'Resist / Wet
 Etch' Couple for Dual Gate Oxide" — has its own literature.[^beverina-2003]
+Cypress's flows describe the same mask; the two patents are shown as in
+force and their wording is in the collapsed note below.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 Cypress's flows describe the same mask: "a photoresist layer 318 …
 patterned to have an opening 319 formed over a region of the substrate
-302 that is to have the next insulator material and/or insulator
-layer thickness",[^pat-03] and "a patterned mask layer 242 … includes
-at least one opening 244 over a channel 218 in the second region
+302 that is to have the next insulator material and/or insulator layer
+thickness",[^pat-03] and "a patterned mask layer 242 … includes at
+least one opening 244 over a channel 218 in the second region
 208".[^pat-04]
+:::
 
 The window also serves the 1.8 V NMOS channel implant
 ({ref}`NCHI <step-045>`), which the earlier pages of this reference
