@@ -61,13 +61,15 @@ freshly developed resist. Fujimura et al. traced the lower etching rate
 of high-dose ion-implanted resist to "carbonization of polymers of the
 resist", and found that the residues left by O₂ plasma ashing were
 mainly "oxide of the implanted species";[^fujimura-1989] problems arise
-"when this photoresist
-has undergone an implant step previously and heavy metal are embedded in
-the photoresist and it has experienced high temperatures causing it to
-be resistant to oxidizing".[^wiki-ash] If the crusted wafer is heated
-quickly, solvent and nitrogen trapped in the soft resist underneath blow
-the {term}`crust <implant crust>` off in flakes ("popping") that land elsewhere on the wafer as
-hard-to-remove particles. The standard countermeasures are a
+"when this photoresist has undergone an implant step previously and
+heavy metal are embedded in the photoresist and it has experienced
+high temperatures causing it to be resistant to
+oxidizing".[^wiki-ash] If the crusted wafer is heated
+quickly, the volatile short-chain polymer and dissolved solvent trapped
+in the subsurface resist build up pressure and rupture the
+{term}`crust <implant crust>` in flakes ("popping")[^pat-strip-mosel]
+that land elsewhere on the wafer as hard-to-remove particles. The
+standard countermeasures are a
 low-temperature first ash step or a slow ramp, forming-gas or
 H₂O-containing chemistries that penetrate the crust, and a wet SPM
 follow-up, which is why implant strips are longer and more carefully
