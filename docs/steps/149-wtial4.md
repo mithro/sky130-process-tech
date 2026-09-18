@@ -212,8 +212,9 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
   films; the platform model (Endura[^amat-endura]) and the bottom-layer
   choice are **inferences**.
 * **Metal etchers "Lam 9600, Al, TiW, TiN, Pt" and "Lam 2300 Versys,
-  Al, TiW, TiN, Nb, Pt"**[^skw-01] corroborate that TiW-capped
-  aluminium is etched in the fab (used at {ref}`MM4E <step-155>`).
+  Al, TiW, TiN, Nb, Pt"**[^skw-01] name aluminium, TiW and TiN among the
+  materials they etch, so either candidate stack is etchable in the fab
+  as publicly described (used at {ref}`MM4E <step-155>`).
 
 ## Resources required
 

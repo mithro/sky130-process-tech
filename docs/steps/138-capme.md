@@ -294,8 +294,9 @@ end (SKY130's recipe is not public):
 * SkyWater PDK, *Layers Reference* — `capm` 89:44.[^pdk-06]
 * SkyWater PDK, *Criteria & Assumptions* — `CAPMCD` 2 µm,
   `CAPMCDSP` 0.84 µm.[^pdk-03]
-* Cypress, QTP 113005 — the 300 Å TiW cap of the metal beneath the
-  dielectric.[^cyp-qtp-113005]
+* Cypress, QTP 113005 and QTP 123907 — the two candidate caps of the
+  metal beneath the
+  dielectric.[^cyp-qtp-113005][^cyp-qtp-123907]
 * SkyWater, *Facilities & Capabilities* — Lam 9600 and 2300 Versys
   with TiW; ashers; solvents.[^skw-01]
 * Lam Research, Form 10-K (2003) — the 9600 and 2300 lines.[^lam-10k]

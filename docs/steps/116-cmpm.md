@@ -82,7 +82,8 @@ fixes:
   achieves.[^boning-1994][^chang-1995]
 * **A uniform via depth.** The via-1 etch of {ref}`VIME <step-119>`
   must clear 0.27 µm of oxide[^pdk-04] over every via while not
-  over-etching the TiW cap where the oxide is thinner; the
+  over-etching the metal-1 cap where the oxide is thinner
+  ({ref}`overview-metal-cap`); the
   post-polish thickness range over metal 1 is the via etch's
   {term}`over-etch` budget.
 * **Pattern-density control.** The polish rate depends on local
@@ -134,7 +135,7 @@ recipe is not public):
    the PDK.[^pdk-04]
 4. **Endpoint.** By removal time calibrated on monitors, or by
    in-situ optical thickness measurement;[^pat-cmp-window] the polish
-   must stop *above* the metal — breaking through to the TiW cap
+   must stop *above* the metal — breaking through to the cap
    would scratch and thin the lines — so a generous margin is
    left and the {term}`cap oxide` makes up the thickness.
 5. **Post-CMP clean.** Double-sided brush scrub with dilute NH₄OH

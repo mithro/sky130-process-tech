@@ -141,7 +141,7 @@ its own:
   aluminium films — Chaudhari's analysis[^chaudhari-1974] — and its
   dependence on film thickness and heat treatment, which Zlatanović
   and Davinić measured,[^zlatanovic-1990] make a thick Al–Cu film more
-  prone to hillocks than a thin one; the TiW cap suppresses them and
+  prone to hillocks than a thin one; the refractory cap suppresses them and
   serves as the anti-reflective surface for {ref}`MM3 <step-139>`, the
   role Rocke and Schneegans documented.[^rocke-1988] Stress-induced
   voiding, described by Yue, Funsten and Taylor,[^yue-1985] and the
@@ -221,8 +221,9 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
   films; the platform model (Endura[^amat-endura]) and the choice of
   Ti or TiW as bottom layer are **inferences**.
 * **Metal etchers "Lam 9600, Al, TiW, TiN, Pt" and "Lam 2300 Versys,
-  Al, TiW, TiN, Nb, Pt"**[^skw-01] corroborate that TiW-capped
-  aluminium is etched in the fab (used at {ref}`MM3E <step-140>`).
+  Al, TiW, TiN, Nb, Pt"**[^skw-01] name aluminium, TiW and TiN among the
+  materials they etch, so either candidate stack is etchable in the fab
+  as publicly described (used at {ref}`MM3E <step-140>`).
 
 ## Resources required
 
