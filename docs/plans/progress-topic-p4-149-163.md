@@ -23,11 +23,11 @@ depend on the same TiW/TiN-cap-composition question or on how
 | X2 | Medium | deferred | metal-cap/barrier sweep — S8P line of `[^cyp-qtp-123907]` as evidence for metal-5 TiW cap (161-wtial5.md:51-62) |
 | X3 | Medium | deferred | metal-cap/barrier sweep — Open questions on metal-4 cap uncertainty (149, 153, 155, 160) |
 | X4 | Low | deferred | metal-cap/barrier sweep — 0.845/0.8 and 1.26/1.2 arithmetic argument |
-| 149-L1 | Low | open | "antenna-rule table" vs *Criteria & Assumptions* naming (149, 155, 161, 163) |
+| 149-L1 | Low | fixed | "antenna-rule table" vs *Criteria & Assumptions* naming (149:37, 155:34, 161:31; 163:30 already said "assumptions table") |
 | 149-L2 | Low | open | Rocke & Schneegans (TiN paper) cited for a TiW cap (149, 152, 154, 161, 162) |
 | 149-L3 | Low | open | Al-Cu target/Cypress attribution missing footnote (149:158-159) |
 | 149-L4 | Low | open | Newport Fab/TSMC MiM patents — shared-electrode construction overstated (149:88-91) |
-| 150-M1 | Medium | open | step-name-as-evidence omission pattern (150, 149, 151, 161) |
+| 150-M1 | Medium | fixed | step-name-as-evidence omission pattern (149:52-53, 150:19-22, 151:29-31); the 161 occurrence (line 51) sits inside the range findings X2/X3 concern (51-62), so left for the metal-cap sweep |
 | 150-L1 | Low | open | missing pad identifiers for CV extraction (150:66-70) |
 | 150-L2 | Low | open | Van Huylenbroeck et al. — nitride vs ONO finding misstated (150:175-177) |
 | 150-L3 | Low | open | Chapple-Sokol miscited for a temperature window (150:196-198) |
@@ -58,7 +58,7 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 160-L1 | Low | open | EKS265 silently read as "EKC265" without marking the reading (160:194-196) |
 | 161-L1 | Low | deferred | metal-cap/barrier sweep — 300 Å TiW analogue is top not lower metal (161:214-215) |
 | 161-L2 | Low | open | Kikuta review cited beyond its published abstract (161:87-89) |
-| 161-L3 | Low | open | plural "reports" with a single footnote (161:51-53) |
+| 161-L3 | Low | deferred | plural "reports" with a single footnote — line 51-53 sits inside the range finding X2 concerns (51-62); left for the metal-cap sweep |
 | 162-M1 | Medium | open | S8PIR reading uses 3 of 5 Background features, omits the strongest argument (162, 161, 163) |
 | 162-L1 | Low | open | m4.4 probe-pad exemption asymmetry not noted (162:35-37) |
 | 162-L2 | Low | open | circular step-list-silence reasoning (162:108-114) |

@@ -28,7 +28,7 @@ pads)".[^pdk-06]
 The PDK's numbers for metal 5 are larger than for any level below. The
 process stack diagram labels `metal5` 1.26 µm, with its bottom at
 5.3711 µm,[^pdk-04] and Edwards's slides repeat the 1.26 µm;[^ann-16]
-the antenna-rule table gives "Metal5 thickness for antenna ratio
+the assumptions table gives "Metal5 thickness for antenna ratio
 calculation" as 1.2 µm for "S8P*/SP8P* with 1.2um thick metal" and 2 µm
 for "S8P*/SP8P* with 2um thick metal";[^pdk-03] the antenna chapter's
 Table Ig, for "S8P12-10R*/S8PIR-10R/S8PF-10R*", gives 1.200 µm in its

@@ -34,7 +34,7 @@ substrate reference and the bottom of `metal5` at 5.3711 µm;[^pdk-04]
 the device page and extraction tables give metal 4 a
 {term}`sheet resistance` of 47 mΩ/sq (limits 38–56 mΩ/sq), identical to
 metal 3;[^pdk-07][^pdk-08] and Edwards's introductory slides on the
-open PDK repeat the 0.845 µm.[^ann-16] The antenna-rule table lists a
+open PDK repeat the 0.845 µm.[^ann-16] The assumptions table lists a
 "Metal4 thickness for antenna ratio calculation" of 0.8 µm for the
 "S8P*/SP8P*" flows and 2 µm for the "S8Q*/SP8Q" flows,[^pdk-03] and
 the rule tables name "SKY130P*/SP8P*" as the flow in which via 4
@@ -49,7 +49,9 @@ another variant (inference). The metal-4 design rules match metal 3's:
 0.240 µm² minimum area (m4.4a) and a 0.7 minimum oxide pattern
 density checked in 700 µm windows (m4.pd.1, m4.pd.2a).[^pdk-periph]
 
-No public source describes the metal-4 films themselves. The Cypress
+The step list calls this step "AlCu 2/TiW deposition";[^steps-sheet] a
+step name is not evidence of a chemistry, and no public source
+describes the metal-4 films themselves. The Cypress
 qualification reports that give Ti/Al–Cu/TiW thicknesses for the S8
 technologies at the same fab describe three-metal processes and stop
 at metal 3;[^cyp-qtp-113005][^cyp-qtp-123907] SkyWater's PVD film list

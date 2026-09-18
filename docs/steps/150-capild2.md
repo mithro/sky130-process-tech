@@ -16,8 +16,11 @@
 {term}`metal–insulator–metal (MiM) capacitor <MiM capacitor>`. Straight after the blanket
 metal-4 stack of {ref}`WTIAL4 <step-149>` is sputtered — and before that
 metal is patterned — a thin dielectric film is laid over the whole
-wafer by {term}`PECVD`. This reference describes the film as a PECVD
-silicon {term}`oxynitride`; the public record does not single that
+wafer by {term}`PECVD`. The step list calls this step "Capacitor ILD
+oxynitride deposition";[^steps-sheet] a step name is not evidence of a
+chemistry, and no public source describes SKY130's capacitor
+dielectric. This reference reads the film as a PECVD silicon
+{term}`oxynitride`, though the public record does not single that
 material out — SkyWater lists PECVD oxide, nitride and oxynitride with
 "range of R.I." options,[^skw-01] PECVD nitride and oxynitride have both
 served as MiM dielectrics,[^kar-roy-1999][^ng-2003] and the PDK does
