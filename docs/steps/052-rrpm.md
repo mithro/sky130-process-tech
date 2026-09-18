@@ -43,13 +43,13 @@ L = 0.33 µm) "(will not work for any routes using RRPM
 mask)".[^raw-data-testtile-pads] It says nothing about the mask's tone
 or how it is derived. The published measurements of the marked
 structures read 0.49–0.54 kΩ (0.69 µm, half a square) and 0.97 kΩ
-(0.33 µm, one square), inside the limits of the PDK's e-test table for
-its 0.69 µm half-square and 0.35 µm one-square resistors — the tile's
-0.33 µm structure is drawn narrower than the narrowest supported fixed
-width (rpm.1b, 0.350 µm) and at the poly.3 minimum resistor width of
-0.330 µm[^pdk-periph] (our extraction from the published measurements,
+(0.33 µm, one square) (our extraction from the published measurements,
 from the slope of the sweep within
-±0.1 V);[^raw-data-passives][^pdk-07] the
+±0.1 V),[^raw-data-passives] inside the limits of the PDK's e-test
+table for its 0.69 µm half-square and 0.35 µm one-square
+resistors[^pdk-07] — the tile's 0.33 µm structure is drawn narrower
+than the narrowest supported fixed width (rpm.1b, 0.350 µm) and at the
+poly.3 minimum resistor width of 0.330 µm.[^pdk-periph] The
 files do not say which process route the measured wafer
 followed.
 
