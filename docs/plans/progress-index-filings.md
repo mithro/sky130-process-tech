@@ -127,6 +127,29 @@ human/agent read the fetched copy against the summary and quotes).
   "auditor changes, material weakness or restatement disclosures" did not
   fit any of the existing controlled tags.
 
+## Round 3 — independent review findings (`tmp/review-index-filings-r1.md`)
+
+| Id | Severity | Status | Note |
+|---|---|---|---|
+| FIL-R1-01 | High | open | Coverage: add the missing Cypress Minnesota-fab fiscal years or declare the gap. Being worked in this session (task C). |
+| FIL-R1-02 | Medium | open | Add `notes` on both the 20-year and 26-year captive-period records cross-referencing the other figure. |
+| FIL-R1-03 | Medium | open | Fix `tools/gen_filings.py`'s `requires-python` / f-string mismatch. |
+| FIL-R1-04 | Medium | open | Make `--online` case-sensitive and require ellipsis fragments in order within a bounded span. |
+| FIL-R1-05 | Medium | open | Check `location` against the nearest heading/Item marker and check `period.end`/`company` against the document text where feasible. |
+| FIL-R1-06 | Medium | open | Record the missing auditor reports (or mark unread) on `audits.md`. |
+| FIL-R1-07 | Low | open | Drop the duplicated trailing full stop on "Related pages" lines. |
+| FIL-R1-08 | Low | open | Order the "By company" counts line by `COMPANY_GROUPS`, not first-appearance. |
+| FIL-R1-09 | Low | open | Assert `COMPANY_GROUPS` covers every `company_key`, like `REL_GROUPS` and `doctype_group`. |
+| FIL-R1-10 | Low | open | Reword the two timeline headlines to what their cited filings actually support. |
+| FIL-R1-11 | Low | open | `--online`: fail when a record has no fetchable source; record a fetch timestamp per cache entry and re-fetch stale entries. |
+| FIL-R1-12 | Low | open | Render `parent` (amends/filed-with) and consider `period.label` for 8-Ks. |
+| FIL-R1-13 | Low | open | Add a "known filings without a public copy" section to the generated index. |
+| FIL-R1-14 | Low | open | Note in `by-year.md`'s introduction that some `filed` dates are signature dates, not filing dates. |
+| FIL-R1-15 | Low | open | Populate `supplier-names-skywater` / `ad-hoc-announcement` where a copy can be found, else mark reserved in the design doc. |
+
+Each row is updated to `fixed` (with what was done) or `declined` (with why) as the
+session works through them; see the session log below for detail.
+
 ## Session log
 
 * 2026-09-18 — Inherited an uncommitted diff in `data/filings.yaml` from an
