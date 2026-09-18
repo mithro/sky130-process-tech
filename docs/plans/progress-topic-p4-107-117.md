@@ -37,10 +37,10 @@ occurrence is checked and fixed if needed.
 | 112-L3 | Low | fixed | Confirmed US 5,160,534 states 10 wt% Ti for the deposited film, while its worked target example is "10.36 wt% of hydrogenated titanium" with a three-phase structure. Reworded all three occurrences on 112-tial6.md (lines ~131, 179, 214) to attribute 10 wt% to the film, not the target. |
 | 112-L4 | Low | fixed | Confirmed qtp123907.pdf XMP metadata: CreateDate 2014-03-11. Changed "qualified in 2013-2014" to "qualified in 2014". |
 | 112-L5 | Low | fixed | Confirmed pdk-background.txt never prints "S8" (it says "8th generation SONOS technology node"); the identification is made via pdk-previous's glossary entry and cyp-22 on the overview page. Cited pdk-previous and cyp-22 here too, with a pointer to the overview. |
-| 113-L1 | Low | open | LI1MCD quoted as 0.14 without noting the table's second (0.17) row. |
-| 114-L1 | Low | open | "AlCl3 is volatile at room temperature" overstates (sublimes ~180C; etch chamber vapour pressure is temperature-assisted). |
+| 113-L1 | Low | fixed | Confirmed pdk-assumptions.txt:475-485 has two LI1MCD/LI1MCDSP rows (Core 0.14/0.14, and 0.17/0.17). Added the missing second row per review's fix. |
+| 114-L1 | Low | fixed | AlCl3 sublimes at ~180C at atmospheric pressure; reworded to "volatile enough at the modest wafer temperatures of an etch chamber" per review's fix. |
 | 114-L2 | Low | declined | Lam 10-K uncheckable but corroborated by SkyWater's own list; no fix required per review, note only. |
-| 114-L3 | Low | open | "tightest pitch of any metal level" overstated — metal 2 ties at 0.28um. Recurs 113 (poly/LI tie too). |
+| 114-L3 | Low | fixed | Confirmed pdk-periphery.txt:1850-1856: m2.1/m2.2 (metal 2 width/spacing) are also 0.140/0.140um, tying metal 1's pitch. Reworded 114 to say "tied with metal 2" and 113 to say "tied with metal 2, poly and the core local interconnect", per review's fix. |
 | 115-L1 | Low | open | SkyWater HDP entry's "high aspect (5:1) fill capability" sub-line omitted; strengthens the inference. |
 | 115-L2 | Low | open | Footnote-ordering style nit (trikon-10k-1996 out of the PDK->SkyWater->SEC->vendor->wiki->books->papers order). |
 | 116-L1 | Low | open | "first of the back-end oxide polishes" inconsistent with the page's own Related-steps list and 111's wording. |
