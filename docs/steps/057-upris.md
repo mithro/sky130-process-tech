@@ -227,7 +227,8 @@ clean, for a 200 mm, 130 nm-era fab:
     <https://openlibrary.org/isbn/9780130815200>
 [^kern-1970]: W. Kern and D. A. Puotinen, "Cleaning solutions based on
     hydrogen peroxide for use in silicon semiconductor technology", *RCA
-    Review* **31**, 187–206 (1970).
+    Review* **31**, 187–206 (1970). No DOI; *RCA Review* 31 is available
+    in print and in library archives.
 [^kern-1990]: W. Kern, "The Evolution of Silicon Wafer Cleaning
     Technology", *Journal of The Electrochemical Society* **137**(6),
     1887–1892 (1990). <https://doi.org/10.1149/1.2086825>
