@@ -58,9 +58,11 @@ does for `CAPM`; read literally that shows the dielectric removed
 outside the plate, but a schematic cannot show a few nanometres of
 residual film. As at {ref}`CAPME <step-138>`, we describe the
 stop-on-dielectric version, on the published selectivities set out
-there — "greater than 2" for TiW against PECVD nitride against the TI
-patent's "at least 8:1" and its Example 1's 210:1 for TiN against
-oxide[^liu-2007-tiw][^pat-mim-ti-etch] — and because, if the metal-4
+there — "greater than 2" for TiW against PECVD nitride in a CF₄-based
+plasma, a floor rather than a measured maximum, against the TI patent's
+"at least 8:1" and its Example 1's 210:1 for TiN against oxide in a
+chlorine-majority chemistry, which are not directly comparable
+figures[^liu-2007-tiw][^pat-mim-ti-etch] — and because, if the metal-4
 cap is the same TiW as the plate, a through-etch would have no
 selective stop (inference). If the cap is instead the TiN of the stack
 qualified in 2014,[^cyp-qtp-123907] plate and cap are different films
