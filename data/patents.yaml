@@ -3944,9 +3944,9 @@ families:
   title: Process for improved planarization of the passivation layers for semiconductor devices
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Malazgirt; Alp et al.
   dates:
@@ -3996,8 +3996,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US4986878A (Google Patents unreachable)
 - id: GP23365380
@@ -4354,9 +4356,9 @@ families:
   title: Method of forming a chlorinated silicon nitride barrier layer
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Meyer; George R.
   dates:
@@ -4406,8 +4408,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US5443998A (Google Patents unreachable)
 - id: GP23554962
@@ -12339,9 +12343,9 @@ families:
   title: Iridium oxide local interconnect
   assignees:
     original:
-    - Ramtron International Corp.
+    - Ramtron International Corp
     current:
-    - Ramtron International Corp.
+    - Ramtron International Corp
   inventors:
   - Bailey; Richard A.
   dates:
@@ -12393,8 +12397,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US5838605A (Google Patents unreachable)
 - id: GP26689885
@@ -12771,9 +12777,9 @@ families:
   title: MOS transistor with ramped gate oxide thickness
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Kachelmeier; Mark T.
   dates:
@@ -12823,8 +12829,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US6707112B2 (Google Patents unreachable)
 - id: GP24741421
@@ -16706,9 +16714,9 @@ families:
   title: Semiconductor device with outwardly tapered sidewall spacers and method for forming same
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Smith; Eugene C.
   dates:
@@ -16758,8 +16766,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US6255180B1 (Google Patents unreachable)
 - id: GP21630827
@@ -17517,9 +17527,9 @@ families:
   title: Barrier layer to protect a ferroelectric capacitor after contact has been made to the capacitor electrode
   assignees:
     original:
-    - Ramtron International Corp.
+    - Ramtron International Corp
     current:
-    - Ramtron International Corp.
+    - Ramtron International Corp
   inventors:
   - Hickert; George
   dates:
@@ -17571,8 +17581,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US6242299B1 (Google Patents unreachable)
 - id: GP23113681
@@ -17842,9 +17854,9 @@ families:
   title: Aluminum metallization method and product
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Smith; Mark et al.
   dates:
@@ -17896,8 +17908,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US6344281B1 (Google Patents unreachable)
 - id: GP23689290
@@ -17908,9 +17922,9 @@ families:
   title: Silicon-oxide-nitride-oxide-semiconductor (SONOS) type memory cell and method for retaining data in the same
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Jenne; Fred
   dates:
@@ -17962,8 +17976,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US6172907B1 (Google Patents unreachable)
 - id: GP23688532
@@ -18523,9 +18539,9 @@ families:
   title: Method of uniformly etching refractory metals, refractory metal alloys and refractory metal silicides
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Wang; T. Frank
   dates:
@@ -18577,8 +18593,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US7084066B1 (Google Patents unreachable)
 - id: GP24449421
@@ -21549,9 +21567,9 @@ families:
   title: Poly/silicide stack and method of forming the same
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Blosse; Alain
   dates:
@@ -21603,8 +21621,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US7151048B1 (Google Patents unreachable)
 - id: GP29214361
@@ -22725,9 +22745,9 @@ families:
   title: Semiconductor structure having alignment marks with shallow trench isolation
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Ramkumar; Krishnaswamy et al.
   dates:
@@ -22779,8 +22799,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US6774452B1 (Google Patents unreachable)
 - id: GP32593189
@@ -24638,9 +24660,9 @@ families:
   title: Increasing self-aligned contact areas in integrated circuits using a disposable spacer
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Sedigh; Mehran et al.
   dates:
@@ -24692,8 +24714,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US7323377B1 (Google Patents unreachable)
 - id: GP35540402
@@ -25536,9 +25560,9 @@ families:
   title: Self-aligned shallow trench isolation
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Narasimhan; Geethakrishnan et al.
   dates:
@@ -25590,8 +25614,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US7425489B1 (Google Patents unreachable)
 - id: GP37073778
@@ -26188,9 +26214,9 @@ families:
   title: CMOS embedded high voltage transistor
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Lee; Sungkwon et al.
   dates:
@@ -26242,8 +26268,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US7592661B1 (Google Patents unreachable)
 - id: GP38711248
@@ -26350,9 +26378,9 @@ families:
   title: Drain extended MOS transistor with increased breakdown voltage
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Jang; Kevin et al.
   dates:
@@ -26404,8 +26432,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US7768068B1 (Google Patents unreachable)
 - id: GP39047941
@@ -26471,8 +26501,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US8232175B2 (Google Patents unreachable)
 - id: GP39203155
@@ -26757,8 +26789,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US7989328B2 (Google Patents unreachable)
 - id: GP39541580
@@ -26863,9 +26897,9 @@ families:
   title: Reverse MIM capacitor
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Korobov; Vladimir et al.
   dates:
@@ -26917,8 +26951,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US7944020B1 (Google Patents unreachable)
 - id: GP49580624
@@ -29192,9 +29228,9 @@ families:
   title: Nonvolatile charge trap memory device having <100> crystal plane channel orientation
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Polishchuk; Igor et al.
   dates:
@@ -29246,8 +29282,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US7880219B2 (Google Patents unreachable)
 - id: GP40095286
@@ -30406,9 +30444,9 @@ families:
   title: Self aligned bump passivation
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Koutney, Jr.; William W. C.
   dates:
@@ -30460,8 +30498,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US9543262B1 (Google Patents unreachable)
 - id: GP48743334
@@ -30544,9 +30584,9 @@ families:
   title: Inline method to monitor ONO stack quality
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Yang; Yu
   dates:
@@ -30598,8 +30638,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US8772057B1 (Google Patents unreachable)
 - id: GP48945910
@@ -32086,9 +32128,9 @@ families:
   title: Spacer formation with straight sidewall
   assignees:
     original:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
     current:
-    - Cypress Semiconductor Corp.
+    - Cypress Semiconductor Corp
   inventors:
   - Hui; Angela Tai et al.
   dates:
@@ -32140,8 +32182,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US9466496B2 (Google Patents unreachable)
 - id: GP53369470
@@ -34264,9 +34308,9 @@ families:
   title: Embedded sonos with a high-K metal gate and manufacturing methods of the same
   assignees:
     original:
-    - Longitude Flash Memory Solutions Ltd.
+    - Longitude Flash Memory Solutions Ltd
     current:
-    - Longitude Flash Memory Solutions Ltd.
+    - Longitude Flash Memory Solutions Ltd
   inventors:
   - Ramkumar; Krishnaswamy
   dates:
@@ -34320,8 +34364,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US11641745B2 (Google Patents unreachable)
 - id: GP68072713
@@ -34605,8 +34651,10 @@ families:
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status
     or adjusted-expiration date, so this member's status and legal_status.status are null; expiry is computed purely from
     the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent),
-    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats PPUBS's single assignee
-    field; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
+    never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's
+    name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling
+    differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no
+    current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last;
     First et al." for a multi-inventor patent), not the full named list Google Patents shows.
   verified: 2026-09-19 USPTO Patent Public Search record for US11610820B2 (Google Patents unreachable)
 - id: GP69743400

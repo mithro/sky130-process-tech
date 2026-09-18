@@ -413,6 +413,35 @@ def check_member(m: dict, fam_id: str, problems: list[str]) -> None:
             problems.append(f"{where}: fee_lapse_date is only meaningful with status 'Expired - Fee Related'")
 
 
+def assignee_group_key(name: str) -> str:
+    """Same normalisation as ``tools/gen_patents.py``'s
+    ``assignee_group_key``: two spellings differing only by a trailing
+    full stop or by letter case are the same company (round-4 N1)."""
+    return re.sub(r"\.$", "", name.strip()).casefold()
+
+
+def check_assignee_near_duplicates(families: list, problems: list[str]) -> None:
+    """Global check (round-4 N1 checker guard): no two distinct
+    ``assignees.original`` (or ``current``) strings anywhere in the
+    dataset differ only by trailing punctuation or letter case — that
+    split a single company into two headings on ``by-assignee.md``
+    before ``gen_patents.py`` started grouping by this same key."""
+    variants: dict[str, set[str]] = {}
+    for f in families:
+        if not isinstance(f, dict):
+            continue
+        ass = f.get("assignees") or {}
+        for name in list(ass.get("original") or []) + list(ass.get("current") or []):
+            if not isinstance(name, str) or not name or name == "Individual":
+                continue
+            variants.setdefault(assignee_group_key(name), set()).add(name)
+    for key, names in variants.items():
+        if len(names) > 1:
+            problems.append(
+                f"assignee spellings differ only by trailing punctuation or case, "
+                f"would split one heading on by-assignee.md: {sorted(names)}")
+
+
 def check_family(f: dict, labels: dict[str, Path], inventory: dict[str, str],
                  page_text: dict[Path, str], problems: list[str]) -> None:
     fid = f.get("id", "?")
@@ -587,6 +616,7 @@ def main() -> int:
                 problems.append(f"{fid}: {pn} also listed in {seen_numbers[pn]}")
             seen_numbers.setdefault(pn, fid)
         check_family(f, labels, inventory, page_text, problems)
+    check_assignee_near_duplicates(families, problems)
     for p in problems:
         print(p)
     print(f"{len(families)} patent families checked, {len(problems)} problems")
