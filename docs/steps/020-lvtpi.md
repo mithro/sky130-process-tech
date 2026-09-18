@@ -105,15 +105,23 @@ fab (SKY130 values are not public):
   gate formation, self-aligned to the gate pillars[^pat-vt-amd]).
 * **Tilt and twist.** 7° with twist;[^wiki-implant][^txt-02] the implant
   is symmetric, so no rotation is needed.
-* **{term}`Screen oxide <screen oxide>`.** Through the pad oxide of 10–20 nm that a Cypress
-  patent describes under its well and channel implants.[^pat-04]
+* **{term}`Screen oxide <screen oxide>`.** Through the pad oxide that a Cypress patent,
+  which may still be in force, describes under its well and channel
+  implants; its thickness is in the collapsed note below this list.
 * **Charge control.** Electron shower; the resist is thick and already
   charged by two high-energy (MeV-class, we infer) implants (SkyWater
   lists "E shower" on the 8250).[^skw-01]
-* **Anneal.** {ref}`RTAI <step-034>` — "a rapid thermal anneal is
-  performed after implanting both the n-well and p-well" and "any number
-  of channel implants may also be performed … to adjust threshold
-  voltages" before it.[^pat-03]
+* **Anneal.** {ref}`RTAI <step-034>`; the Cypress integration patent,
+  which may still be in force, puts the anneal after the well implants
+  and the channel implants before it, in the collapsed note below this
+  list.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+The pad oxide is 10–20 nm.[^pat-04] "A rapid thermal anneal is performed
+after implanting both the n-well and p-well" and "any number of channel
+implants may also be performed … to adjust threshold voltages" before
+it.[^pat-03]
+:::
 
 ## Machines typically used
 

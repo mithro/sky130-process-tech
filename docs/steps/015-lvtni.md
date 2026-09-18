@@ -22,10 +22,15 @@ difference in threshold voltage between the low-Vt N-channel devices of
 the PDK and the standard ones. The dopant enters the active silicon
 through what we infer to be the pad oxide left by
 {ref}`NS19 <step-013>`, acting as the {term}`screen oxide` (see the open
-question there); a Cypress {term}`SONOS` patent from the same lineage describes
-exactly this arrangement, with "dopants … implanted into substrate 204
-through the pad oxide 209" of "about 10 nanometers (nm) to about
+question there); a Cypress {term}`SONOS` patent from the same lineage,
+which may still be in force, describes exactly this arrangement, in the
+collapsed note below.
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The Cypress {term}`SONOS` patent has "dopants … implanted into substrate
+204 through the pad oxide 209" of "about 10 nanometers (nm) to about
 20 nm".[^pat-04]
+:::
 
 Which regions receive the implant depends on the {term}`reticle` polarity
 discussed on the {ref}`LVTNM <step-014>` page. The PDK describes the
@@ -104,13 +109,10 @@ below are typical or taken from contemporaneous patents.
   species is p-type: boron (¹¹B⁺), BF₂⁺ for a shallower boron placement
   (only 11/49 of the beam energy is carried by the boron atom; category
   page), or indium, a heavy p-type dopant used for steep retrograde
-  channels.[^shahidi-1993][^huang-2000] Cypress's own patents describe
-  BF₂ "at an energy of from about 10 to about 100 kilo-electron volts
-  (keV), and a dose of from about 1e12 cm⁻² to about 1e14 cm⁻² to form
-  an N-type MOS (NMOS) transistor" channel, and an indium-doped channel
-  "implanted with Indium (In) at an energy of from about 50 to about 500
-  kilo-electron volts (keV), and a dose of from about 5e11 … to about
-  5e12 cm⁻²" for the memory transistor;[^pat-04] a 2020 Cypress article
+  channels.[^shahidi-1993][^huang-2000] Cypress's own patent, which may
+  still be in force, gives energies and doses for a BF₂ channel implant
+  and for an indium-doped memory-transistor channel; those sentences are
+  in the collapsed note below this list. A 2020 Cypress article
   describes "use of deeper channel implants with heavier species such as
   Indium" for the SONOS cell.[^cyp-25] For an implant that *lowers* the
   threshold by counter-doping, the species is n-type — arsenic or
@@ -134,8 +136,9 @@ below are typical or taken from contemporaneous patents.
   off-axis";[^wiki-implant] the PDK's assumptions table records 7° as
   the angle for tip implants,[^pdk-03] which is also the textbook
   convention for channel implants.[^txt-02]
-* **Screen oxide.** The 10–20 nm pad oxide[^pat-04] randomises the beam
-  and keeps sputtered resist off the silicon.
+* **Screen oxide.** The pad oxide randomises the beam and keeps
+  sputtered resist off the silicon; its thickness is the patent figure
+  in the collapsed note below this list.
 * **Charge control and wafer cooling.** Electron shower and cooled
   electrostatic chuck — both features SkyWater lists for its
   medium-current tool ("ESC chuck, E shower").[^skw-01]
@@ -144,6 +147,16 @@ below are typical or taken from contemporaneous patents.
 * **Monitoring.** Modulated-reflectance (Therma-Wave) on product or
   monitor wafers, since the dose is too low for {term}`sheet resistance` to be a
   sensitive check (category page).
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+Cypress's own patents describe BF₂ "at an energy of from about 10 to
+about 100 kilo-electron volts (keV), and a dose of from about 1e12 cm⁻²
+to about 1e14 cm⁻² to form an N-type MOS (NMOS) transistor" channel, and
+an indium-doped channel "implanted with Indium (In) at an energy of from
+about 50 to about 500 kilo-electron volts (keV), and a dose of from
+about 5e11 … to about 5e12 cm⁻²" for the memory transistor; the screen
+oxide is the 10–20 nm pad oxide.[^pat-04]
+:::
 
 ## Machines typically used
 
