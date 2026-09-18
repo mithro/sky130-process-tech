@@ -21,13 +21,17 @@ a small encroachment at the nitride edge). The result is a *trench
 liner* of the order of 10–30 nm of high-quality thermal SiO₂ lining
 every trench.
 
-Public numbers for comparable flows: a Spansion/Cypress-lineage {term}`STI`
-patent grows a first liner "to a thickness of approximately 100-300 Å"
+Public numbers for comparable flows: a Spansion STI patent that later
+passed to Cypress, contemporaneous with the 130 nm node but not
+evidence for S8 (see *Open questions*), grows a first liner "to a
+thickness of approximately 100-300 Å"
 at "900-1100 degrees Celsius" and, in its double-liner variant, a
-second of "approximately 100-500 Å";[^pat-sti-cr] a Lattice patent uses
-"a high temperature (for example, in excess of approximately 1000
-degrees C.) oxide growth process" to reach "a thickness in the range
-of approximately 10 nm to approximately 30 nm";[^pat-sti-lattice] an
+second of "approximately 100-500 Å";[^pat-sti-cr] a Lattice patent
+(scoped to "90 nm or less") grows a 3 nm liner everywhere and then
+thickens it, with "a high temperature (for example, in excess of
+approximately 1000 degrees C.) oxide growth process", to "a thickness
+in the range of approximately 10 nm to approximately 30 nm" in the
+trenches beside its high-voltage transistors;[^pat-sti-lattice] an
 AmberWave Systems patent (now TSMC-owned) notes the alternative that
 "the liner oxidation may take place in a wet, i.e., steam ambient
 and/or at a low temperature, i.e., <1000° C.".[^pat-sti-amberwave] No
