@@ -92,6 +92,8 @@ This index began as every patent already cited on a docs page (169 families of t
 
 Discovery methods recorded across the 252 families: 172 families `cited-in-docs`; 71 families `assignee-search`; 13 families `citing-seed`; 10 families `cited-by-seed`; 4 families `continuation-search`. A family can carry more than one method (reached more than one way), so these do not sum to the family count.
 
+A systematic assignee sweep of USPTO Patent Public Search on 2026-09-19 (Cypress Semiconductor, SkyWater Technology, Longitude Flash Memory Solutions, Infineon Technologies LLC, Spansion, Ramtron, Weebit Nano, restricted to process-module title keywords, run because Google Patents was unreachable that day) found 211 distinct families: 39 were already in this index and 24 were added (the ones whose family ID is a USPTO Patent Public Search identifier rather than a Google Patents one). That leaves **136 identified, in-scope families this index does not yet contain** -- mostly a large Spansion estate that needs the same per-family lineage reasoning as the two Spansion families already added, plus a number of Weebit Nano hits not yet triaged individually. The full sweep, every family's triage decision and the reason for each are recorded in this project's own working notes (`docs/plans/patent-discovery-log.md`), not published alongside this page.
+
 ## Other views
 
 * {ref}`patents-families` — the canonical entry for every family, in priority-date order.
