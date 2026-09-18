@@ -130,9 +130,10 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   the metal-3 etch must later cut through the dielectric wherever it
   remains ({ref}`MM3E <step-140>`).
 * **Oxynitride rather than oxide or nitride.** PECVD silicon nitride
-  gives the highest density per thickness but traps charge and shows
-  a frequency-dependent ("dispersive") capacitance, as Van
-  Huylenbroeck et al. showed;[^van-huylenbroeck-2002] oxide is more
+  has the highest permittivity of the three (k ≈ 7.5 on the PDK's own
+  labelling[^pdk-04]) and so the highest density per thickness, but it
+  traps charge and shows a frequency-dependent ("dispersive")
+  capacitance, as Van Huylenbroeck et al. showed;[^van-huylenbroeck-2002] oxide is more
   linear but needs to be thinner for the same density. Ng, Chew and
   Chu compared PECVD nitride and oxynitride MiM capacitors and found
   both gave low leakage, high breakdown field, no dispersion and good
@@ -283,10 +284,12 @@ back end (SKY130's recipe is not public):
 ### Deep dive
 
 * Kar-Roy et al. (Conexant), IITC 1999 — high-density MiM capacitors
-  with a PECVD nitride in a 0.25 µm aluminium back end.[^kar-roy-1999]
-* Babcock et al. (TI), *IEEE EDL* 2001 — analogue characteristics
-  (voltage and temperature coefficients) of PECVD-nitride
-  MiMs.[^babcock-2001]
+  with a PECVD nitride in the back end of a 0.25 µm CMOS flow
+  (aluminium, by the date; the abstract does not name the
+  metal).[^kar-roy-1999]
+* Babcock et al. (TI), *IEEE EDL* 2001 — the frequency dependence and
+  voltage linearity of PECVD-nitride MiMs, and the dispersion that
+  degrades them below 1 MHz.[^babcock-2001]
 * Van Huylenbroeck et al. (IMEC), *IEEE EDL* 2002 — dispersion in
   PECVD dielectrics and how to avoid it.[^van-huylenbroeck-2002]
 * Ng, Chew and Chu (Chartered), *IEEE EDL* 2003 — PECVD nitride
@@ -331,9 +334,12 @@ back end (SKY130's recipe is not public):
   "met2/capm to met3 in the SKY130DI* flow",[^pdk-periph] and the
   extraction table describes `cap_mim` with via2, m3 and "capm-m2"
   terminals.[^pdk-08] We follow the metal-3 reading, which the test
-  tile's pad documentation shares ("CAPM on M3");[^raw-data-testtile-pads]
-  the met2/via2 wording may come from a flow variant with the capacitor
-  one level lower (inference).
+  tile's pad documentation shares ("CAPM on M3")[^raw-data-testtile-pads]
+  and which the `cap_mim` cross-section states directly: the via that
+  lands on "CAPM" and the one beside it that lands on "M3 (plate 1)"
+  are both labelled "Via3" in the drawing;[^pdk-07] the met2/via2
+  wording may come from a flow variant with the capacitor one level
+  lower (inference).
 * Whether voltage and temperature coefficients for `cap_mim` are
   published in the PDK models is not confirmed here; the published
   test-tile sweeps give a voltage dependence but no temperature
