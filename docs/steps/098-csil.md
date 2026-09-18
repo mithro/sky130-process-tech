@@ -277,7 +277,7 @@ fab (SKY130's recipe is not public):
 <!-- footnotes -->
 
 [^pdk-08]: SkyWater PDK Authors, *Parasitic Layout Extraction* page
-    (sheet-resistance table), SkyWater SKY130 PDK documentation.
+    (resistance and capacitance tables), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
     documentation, and the `nfet_01v8` cross-section drawing.

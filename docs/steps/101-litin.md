@@ -281,7 +281,7 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
 [^pdk-08]: SkyWater PDK Authors, *Parasitic Layout Extraction* page
-    (sheet-resistance table), SkyWater SKY130 PDK documentation.
+    (resistance and capacitance tables), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
 [^pdk-06]: SkyWater PDK Authors, *Layers Reference* and
     `gds_layers.csv`, SkyWater SKY130 PDK documentation.

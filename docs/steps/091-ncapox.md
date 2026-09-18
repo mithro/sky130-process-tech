@@ -249,7 +249,7 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
 [^pdk-08]: SkyWater PDK Authors, *Parasitic Layout Extraction* page
-    (sheet-resistance table), SkyWater SKY130 PDK documentation.
+    (resistance and capacitance tables), SkyWater SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
