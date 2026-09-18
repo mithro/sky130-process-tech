@@ -1,0 +1,606 @@
+#!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["pyyaml>=6"]
+# ///
+"""Generate the patent index pages from ``data/patents.yaml``.
+
+Writes ``docs/references/patents/``:
+
+* ``index.md`` — scope, the legal caveat, how families and members are
+  counted, the relation legend, counts by status, and links to the
+  other views;
+* ``families.md`` — the canonical entry for every family, in priority
+  order, one per label ``patent-gp<google family id>``; the other pages
+  link to these entries instead of repeating them;
+* ``by-module.md`` — grouped by process module, in process order, using
+  the module table on {ref}`overview-modules`, plus separate sections
+  for the sky130B ReRAM module, equipment and metrology, materials, and
+  process-wide or category pages;
+* ``by-assignee.md`` — grouped by original assignee, Cypress
+  Semiconductor, SkyWater Technology and Infineon Technologies first;
+* ``by-jurisdiction.md`` — one table per country/office, plus a
+  family-size table (members per family);
+* ``by-date.md`` — by decade of priority date, and a status section
+  (expired, in force, unknown).
+
+A family whose ``expired`` is ``false`` or ``unknown`` is written on
+``families.md`` as a collapsed ``{dropdown}`` block whose title shows
+only the representative's publication number and its status; other
+pages then only name and link the family, never repeating its status
+or dates outside the collapsed entry.
+
+The pages are overwritten; do not edit them by hand. Before generating,
+the dataset must pass ``tools/check_patents.py``.
+
+``--check`` generates into memory and fails if a committed page differs,
+or if a page in the directory was not generated.
+
+Run with ``uv run tools/gen_patents.py [--check]``. See
+``docs/plans/patent-index-design.md``.
+"""
+
+from __future__ import annotations
+
+import argparse
+import re
+import sys
+from collections import Counter, defaultdict
+from pathlib import Path
+
+import yaml
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data" / "patents.yaml"
+OUT = ROOT / "docs" / "references" / "patents"
+HEADER = "<!-- Generated from data/patents.yaml by tools/gen_patents.py; do not edit. -->\n"
+
+sys.path.insert(0, str(ROOT / "tools"))
+import check_patents  # noqa: E402
+
+RELATION_NAME = {
+    "cited-on-page": "cited on this page",
+    "same-lineage-assignee": "same-lineage assignee",
+    "technique-class": "technique class",
+}
+RELATION_TEXT = {
+    "cited-on-page": "the page cites a member of this family.",
+    "same-lineage-assignee": "the original assignee is in the process lineage (Cypress Semiconductor, "
+                              "SkyWater Technology, or Infineon Technologies for patents that came from "
+                              "Cypress); this is not evidence that SKY130 uses the technique.",
+    "technique-class": "the family describes the class of technique the page covers, without a citation "
+                        "on that page.",
+}
+
+# Process modules in step order, from the table at (overview-modules)= on
+# docs/overview/index.md. Each entry is (slug, heading, first step, last step).
+STEP_MODULES = [
+    ("substrate-isolation-dnwell", "Starting material, isolation and deep N-well", 1, 13),
+    ("wells", "Wells and threshold implants", 14, 34),
+    ("sonos", "SONOS tunnel window and ONO stack", 35, 42),
+    ("gate-oxides", "Gate oxides", 43, 47),
+    ("poly", "Poly gate and poly resistors", 48, 63),
+    ("tips-halos", "Tips and halos", 64, 75),
+    ("spacers-sd", "Spacers and source/drain", 76, 88),
+    ("psg-li", "Pre-metal dielectric, contact silicide and local interconnect", 89, 106),
+    ("contact-m1", "Metal contact and metal 1", 107, 117),
+    ("via1-m2-via2", "Via 1, metal 2 and via 2", 118, 134),
+    ("mim1-m3-via3", "First MiM capacitor, metal 3 and via 3", 135, 148),
+    ("m4-mim2-via4-m5", "Metal 4, second MiM capacitor, via 4 and metal 5", 149, 163),
+    ("passivation", "Passivation, pads, alloy and test", 164, 171),
+]
+STEP_RE = re.compile(r"^step-(\d+)$")
+
+JURISDICTIONS = [
+    ("US", "United States"), ("EP", "European Patent Office"), ("WO", "WIPO (PCT)"),
+    ("JP", "Japan"), ("CN", "China"), ("KR", "South Korea"), ("TW", "Taiwan"),
+    ("DE", "Germany"), ("GB", "United Kingdom"), ("FR", "France"),
+]
+
+_ESC = re.compile(r"([\\`*_\[\]<>|#${}])")
+
+
+def esc(text: object) -> str:
+    return _ESC.sub(r"\\\1", " ".join(str(text).split()))
+
+
+IRREGULAR_PLURAL = {"family": "families"}
+
+
+def plural(n: int, word: str) -> str:
+    if n == 1:
+        return f"{n} {word}"
+    return f"{n} {IRREGULAR_PLURAL.get(word, word + 's')}"
+
+
+def label_of(fam: dict) -> str:
+    return f"patent-{fam['id'].lower()}"
+
+
+def display_pn(m: dict) -> str:
+    """Format a member's publication number for display, following the
+    conventions ``tools/check_patents.py``'s ``number_forms`` already
+    recognises in docs text: comma-grouped for a US granted-patent-style
+    number, ``YYYY/NNNNNNN`` for a US 11-digit pre-grant application
+    number, space-grouped for a 7-digit EP number, and left as published
+    digits (no grouping) for every other jurisdiction, whose numbering
+    is not a plain sequential count."""
+    cc = m["country"]
+    kind = m.get("kind") or ""
+    num = m["number"][len(cc):]
+    if kind and num.endswith(kind):
+        num = num[: -len(kind)]
+    if num.isdigit():
+        if cc == "US" and len(num) == 11:
+            num = f"{num[:4]}/{num[4:]}"
+        elif cc == "US":
+            num = f"{int(num):,}"
+        elif cc == "EP" and len(num) == 7:
+            num = f"{num[0]} {num[1:4]} {num[4:]}"
+    return f"{cc} {num}" + (f" {kind}" if kind else "")
+
+
+def rep_member(fam: dict) -> dict:
+    return next(m for m in fam["members"] if m["number"] == fam["representative"])
+
+
+def dropdown_title(fam: dict) -> str:
+    pn = display_pn(rep_member(fam))
+    status = fam["legal_status"]["status"]
+    exp = fam["expiry"]["date"]
+    if fam["expired"] is False:
+        return f"{pn} — shown as in force; estimated expiry {exp}"
+    return f"{pn} — legal status shown as {esc(status)}; expiry not fully bounded from the records " \
+           f"retrieved, estimated no later than {exp}"
+
+
+def status_word(fam: dict) -> str:
+    if fam["expired"] is True:
+        return "expired"
+    if fam["expired"] is False:
+        return "in force"
+    return "unknown"
+
+
+def members_table(fam: dict) -> list[str]:
+    rows = ["| Number | Type | Publication date | Status | Verified | Links |",
+            "|---|---|---|---|---|---|"]
+    for m in fam["members"]:
+        title = f" \"{esc(m['title'])}\"" if m.get("title") and m["title"] != fam["title"] else ""
+        note = f" ({esc(m['note'])})" if m.get("note") else ""
+        pn = display_pn(m) + title + note
+        typ = m["document_type"].replace("-", " ")
+        pub = m.get("publication_date") or "—"
+        status = esc(m.get("status")) if m.get("status") else "not shown"
+        verified = esc(m["verified"])
+        links = f"[Espacenet]({m['links']['espacenet']}) · [Google Patents]({m['links']['google_patents']})"
+        for name, u in m["links"].items():
+            if name not in ("espacenet", "google_patents"):
+                links += f" · [{esc(name)}]({u})"
+        rows.append(f"| {esc(pn)} | {esc(typ)} | {pub} | {status} | {verified} | {links} |")
+    return rows
+
+
+def relevance_lines(fam: dict) -> list[str]:
+    out = []
+    for r in fam["relevance"]:
+        out.append(f"* {{ref}}`{r['target']}` — *{RELATION_NAME[r['relation']]}*: {esc(r['reason'])}")
+    return out
+
+
+def family_body(fam: dict) -> list[str]:
+    body = [f"**Title:** {esc(fam['title'])}", ""]
+    ass = fam["assignees"]
+    body.append("**Assignees:** original " + "; ".join(esc(a) for a in ass["original"])
+                + ("; current " + "; ".join(esc(a) for a in ass["current"]) if ass["current"] else ""))
+    if fam.get("inventors"):
+        body.append("**Inventors:** " + "; ".join(esc(i) for i in fam["inventors"]))
+    d = fam["dates"]
+    dates = f"priority {d['priority']}"
+    if d.get("filing"):
+        dates += f", filing {d['filing']}"
+    if d.get("grant"):
+        dates += f", grant {d['grant']}"
+    body.append(f"**Dates:** {dates}")
+    body.append(f"**Legal status (representative):** {esc(fam['legal_status']['status'])} "
+                f"({esc(fam['legal_status']['source'])})")
+    body.append(f"**Estimated expiry:** {fam['expiry']['date'] or 'not bounded'} — {esc(fam['expiry']['basis'])}")
+    body.append(f"**Google Patents family ID:** `{fam['family']['google_family_id']}` "
+                f"(family section of the representative's own record page, linked below)")
+    body += ["", "**Members:**", ""] + members_table(fam)
+    body += ["", "**Relevance:**", ""] + relevance_lines(fam)
+    if fam.get("inventory_keys"):
+        body.append("")
+        body.append("**Inventory:** " + ", ".join(f"`{k}`" for k in fam["inventory_keys"]))
+    body.append("")
+    body.append(f"**Discovery:** {', '.join(fam['discovery'])} — {esc(fam.get('discovery_note', ''))}")
+    if fam.get("notes"):
+        body.append("")
+        body.append("**Notes:**")
+        for n in fam["notes"]:
+            body.append(f"* {esc(n)}")
+    body.append("")
+    body.append(f"**Verified:** {esc(fam['verified'])}")
+    return body
+
+
+def family_entry(fam: dict) -> list[str]:
+    """The canonical entry: a plain heading, or a collapsed dropdown for
+    a family that is not shown as expired."""
+    label = label_of(fam)
+    if fam["expired"] is True:
+        out = [f"({label})=", f"## {display_pn(rep_member(fam))} — {esc(fam['title'])}", ""]
+        out += family_body(fam)
+        out.append("")
+        return out
+    out = [f":::{{dropdown}} {dropdown_title(fam)}", f":name: {label}", ""]
+    out += family_body(fam)
+    out.append(":::")
+    out.append("")
+    return out
+
+
+def family_link_line(fam: dict) -> str:
+    """A one-line reference used on the grouped pages: title and link for an
+    expired family, number and status only (no repeated details) otherwise."""
+    label = label_of(fam)
+    pn = display_pn(rep_member(fam))
+    if fam["expired"] is True:
+        return f"* {{ref}}`{pn} <{label}>` — {esc(fam['title'])} ({fam['dates']['priority']})"
+    return f"* {{ref}}`{pn} <{label}>` — {esc(status_word(fam))}"
+
+
+def page(label: str, title: str, body: list[str]) -> str:
+    return HEADER + "\n" + f"({label})=\n# {title}\n\n" + "\n".join(body).rstrip() + "\n"
+
+
+CAVEAT = [
+    "Statuses, dates and estimated expiries are as shown by the public",
+    "databases (Google Patents, using IFI Claims legal-status and expiry",
+    "data) on the retrieval date named on this page. They are not a legal",
+    "opinion and are not exhaustive: maintenance-fee lapses, terminal",
+    "disclaimers, patent term extensions, oppositions, reissues and the",
+    "national validations of a European patent are not fully captured.",
+    "Before relying on the status of any family, check the linked",
+    "official record.",
+]
+
+
+def gen_index(fams: list[dict], retrieved: str) -> str:
+    n = len(fams)
+    nmembers = sum(len(f["members"]) for f in fams)
+    status = Counter(status_word(f) for f in fams)
+    fetched = sum(1 for f in fams for m in f["members"] if "record page fetched" in m["verified"])
+    body = [
+        "A worldwide index of patents and published applications related to",
+        "the SKY130 process technology and its lineage (Cypress",
+        "Semiconductor, SkyWater Technology and Infineon Technologies, and",
+        "suppliers' patents that a docs page already cites or that a public",
+        "source ties to this process lineage), generated from one curated",
+        "dataset, `data/patents.yaml`. The unit of record is the patent",
+        "**family as grouped by Google Patents**: its family ID, the",
+        "representative record page, and its other publications and",
+        "applications (the family's *Publications* and *Also Published As*",
+        "tables). This is close to, but not the same as, an EPO DOCDB simple",
+        "family or an INPADOC extended family.",
+        "",
+        f"Retrieved {retrieved}. The index holds {plural(n, 'family')} "
+        f"({plural(nmembers, 'member')} in total). Every family's representative",
+        f"record page was fetched; {fetched} of the {nmembers} members have their own record page",
+        "fetched (the rest are listed in the fetched family table of their",
+        "representative but were not fetched separately — every possible term",
+        "of those families' members has already ended, so nothing about",
+        "their status turns on the record not fetched).",
+        "",
+        "## Legal caveat",
+        "",
+        *CAVEAT,
+        "",
+        "## Unexpired and unknown-status families are collapsed",
+        "",
+        "A family shown as in force, or whose expiry could not be bounded",
+        "from the records retrieved (`unknown`), appears on {ref}`patents-families`",
+        "as a collapsed block whose title shows only the representative's",
+        "publication number and its status; open it to see the rest. A",
+        "family shown as expired is written out in full. The grouped pages",
+        "below never repeat a collapsed family's status or dates outside the",
+        "collapsed entry.",
+        "",
+        "## Relations",
+        "",
+        "Each family links to one or more pages of this reference, with a",
+        "relation:",
+        "",
+    ]
+    for rel, text in RELATION_TEXT.items():
+        body.append(f"* **{RELATION_NAME[rel]}** (`{rel}`) — {text}")
+    body += [
+        "",
+        "## Counts",
+        "",
+        "| | Families | Members |",
+        "|---|---|---|",
+        f"| Total | {n} | {nmembers} |",
+        f"| Shown as expired | {status['expired']} | "
+        f"{sum(len(f['members']) for f in fams if status_word(f) == 'expired')} |",
+        f"| Shown as in force | {status['in force']} | "
+        f"{sum(len(f['members']) for f in fams if status_word(f) == 'in force')} |",
+        f"| Status unknown | {status['unknown']} | "
+        f"{sum(len(f['members']) for f in fams if status_word(f) == 'unknown')} |",
+        "",
+        "## Other views",
+        "",
+        "* {ref}`patents-families` — the canonical entry for every family, in priority-date order.",
+        "* {ref}`patents-by-module` — grouped by process module.",
+        "* {ref}`patents-by-assignee` — grouped by original assignee.",
+        "* {ref}`patents-by-jurisdiction` — grouped by country or office, and by family size.",
+        "* {ref}`patents-by-date` — grouped by decade of priority date, and by status.",
+        "",
+        "```{toctree}",
+        ":hidden:",
+        "",
+        "families",
+        "by-module",
+        "by-assignee",
+        "by-jurisdiction",
+        "by-date",
+        "```",
+    ]
+    return page("patents-index", "Patent index", body)
+
+
+def gen_families(fams: list[dict]) -> str:
+    body = [
+        "The canonical entry for every family, sorted by priority date. Other",
+        "pages of this index link here instead of repeating an entry.",
+        "See {ref}`patents-index` for the scope, the legal caveat and how",
+        "families and members are counted.",
+        "",
+    ]
+    for f in fams:
+        body += family_entry(f)
+    return page("patents-families", "Patent families", body)
+
+
+def module_of(target: str) -> str | None:
+    m = STEP_RE.match(target)
+    if not m:
+        return None
+    n = int(m.group(1))
+    for slug, _heading, lo, hi in STEP_MODULES:
+        if lo <= n <= hi:
+            return slug
+    return None
+
+
+def gen_by_module(fams: list[dict]) -> str:
+    body = [
+        "Families grouped by the process module their relevance targets",
+        "belong to, in process order, using the module table at",
+        "{ref}`overview-modules`. A family with relevance targets in several",
+        "modules appears under each. Targets that are not a single step page",
+        "(category, mask, machine, material and overview pages) are grouped",
+        "afterwards. A family appears once per group even if several of its",
+        "relevance entries point into that group's targets.",
+        "",
+    ]
+    by_slug: dict[str, list[dict]] = defaultdict(list)
+    reram, equipment, materials, crosscutting = [], [], [], []
+    for f in fams:
+        slugs_here = set()
+        for r in f["relevance"]:
+            t = r["target"]
+            slug = module_of(t)
+            if slug:
+                slugs_here.add(slug)
+            elif t == "overview-sky130b-reram":
+                slugs_here.add("__reram__")
+            elif t.startswith("machine-") or t == "machines-index":
+                slugs_here.add("__equipment__")
+            elif t.startswith("material-") or t == "materials-index":
+                slugs_here.add("__materials__")
+            else:
+                slugs_here.add("__crosscutting__")
+        for slug in slugs_here:
+            if slug == "__reram__":
+                reram.append(f)
+            elif slug == "__equipment__":
+                equipment.append(f)
+            elif slug == "__materials__":
+                materials.append(f)
+            elif slug == "__crosscutting__":
+                crosscutting.append(f)
+            else:
+                by_slug[slug].append(f)
+    for slug, heading, lo, hi in STEP_MODULES:
+        items = by_slug.get(slug, [])
+        if not items:
+            continue
+        body += [f"## {heading}", "", f"Steps {lo}–{hi}.", ""]
+        body += [family_link_line(f) for f in sorted(items, key=lambda f: str(f["dates"]["priority"]))]
+        body.append("")
+    if reram:
+        body += ["## sky130B ReRAM module", ""]
+        body += [family_link_line(f) for f in sorted(reram, key=lambda f: str(f["dates"]["priority"]))]
+        body.append("")
+    if equipment:
+        body += ["## Equipment and metrology", ""]
+        body += [family_link_line(f) for f in sorted(equipment, key=lambda f: str(f["dates"]["priority"]))]
+        body.append("")
+    if materials:
+        body += ["## Materials", ""]
+        body += [family_link_line(f) for f in sorted(materials, key=lambda f: str(f["dates"]["priority"]))]
+        body.append("")
+    if crosscutting:
+        body += ["## Process-wide and category pages", "",
+                 "Families whose relevance targets are category, mask or overview pages",
+                 "that are not specific to one step.", ""]
+        body += [family_link_line(f) for f in sorted(crosscutting, key=lambda f: str(f["dates"]["priority"]))]
+        body.append("")
+    return page("patents-by-module", "Patents by process module", body)
+
+
+LINEAGE_FIRST = ["cypress semiconductor", "skywater technology", "infineon technologies"]
+
+
+def assignee_sort_key(name: str) -> tuple:
+    n = name.casefold()
+    for i, pref in enumerate(LINEAGE_FIRST):
+        if pref in n:
+            return (0, i, n)
+    return (1, 0, n)
+
+
+def gen_by_assignee(fams: list[dict]) -> str:
+    body = [
+        "Families grouped by original assignee, as shown by Google Patents",
+        "(its caveat applies: the lists \"may be inaccurate\"). Cypress",
+        "Semiconductor, SkyWater Technology and Infineon Technologies come",
+        "first; a family with several original assignees appears under each.",
+        "The current assignee, where different, is shown alongside.",
+        "",
+    ]
+    by_ass: dict[str, list[dict]] = defaultdict(list)
+    for f in fams:
+        for a in f["assignees"]["original"]:
+            by_ass[a].append(f)
+    for name in sorted(by_ass, key=assignee_sort_key):
+        items = by_ass[name]
+        currents = sorted({c for f in items for c in f["assignees"]["current"] if c != name})
+        heading = esc(name)
+        if currents:
+            heading += " (now " + ", ".join(esc(c) for c in currents) + ")"
+        body += [f"## {heading}", ""]
+        body += [family_link_line(f) for f in sorted(items, key=lambda f: str(f["dates"]["priority"]))]
+        body.append("")
+    return page("patents-by-assignee", "Patents by assignee", body)
+
+
+def gen_by_jurisdiction(fams: list[dict]) -> str:
+    body = [
+        "Every member publication grouped by its country or office, plus a",
+        "family-size table (members per family). A family can have members",
+        "in several jurisdictions and so appears in several tables.",
+        "",
+    ]
+    by_cc: dict[str, list[tuple[dict, dict]]] = defaultdict(list)
+    for f in fams:
+        for m in f["members"]:
+            by_cc[m["country"]].append((m, f))
+    seen_codes = {cc for cc, _ in JURISDICTIONS}
+    others = sorted(set(by_cc) - seen_codes)
+    for cc, name in JURISDICTIONS + [(c, c) for c in others]:
+        items = by_cc.get(cc)
+        if not items:
+            continue
+        body += [f"## {esc(name)} ({cc})", "", f"{plural(len(items), 'member publication')}.", "",
+                 "| Number | Family | Status |", "|---|---|---|"]
+        for m, f in sorted(items, key=lambda x: (str(x[0].get("publication_date") or ""), x[0]["number"])):
+            fam_pn = display_pn(rep_member(f))
+            body.append(f"| {esc(display_pn(m))} | {{ref}}`{fam_pn} <{label_of(f)}>` | "
+                        f"{esc(m.get('status')) if m.get('status') else 'not shown'} |")
+        body.append("")
+    sizes = Counter(len(f["members"]) for f in fams)
+    body += ["## Family size", "", "Number of members recorded per family.", "",
+             "| Members | Families |", "|---|---|"]
+    for size in sorted(sizes):
+        body.append(f"| {size} | {sizes[size]} |")
+    body.append("")
+    return page("patents-by-jurisdiction", "Patents by jurisdiction", body)
+
+
+def decade_of(iso_date: str) -> str:
+    y = int(str(iso_date)[:4])
+    d = (y // 10) * 10
+    return f"{d}s"
+
+
+def gen_by_date(fams: list[dict]) -> str:
+    body = [
+        "Families grouped by decade of earliest priority date, oldest",
+        "first, and then by status.",
+        "",
+    ]
+    by_decade: dict[str, list[dict]] = defaultdict(list)
+    for f in fams:
+        by_decade[decade_of(f["dates"]["priority"])].append(f)
+    for dec in sorted(by_decade):
+        items = by_decade[dec]
+        body += [f"## {dec}", ""]
+        body += [family_link_line(f) for f in sorted(items, key=lambda f: str(f["dates"]["priority"]))]
+        body.append("")
+    body += ["## By status", ""]
+    for word, heading in (("expired", "Shown as expired"), ("in force", "Shown as in force"),
+                          ("unknown", "Status unknown")):
+        items = [f for f in fams if status_word(f) == word]
+        body += [f"### {heading}", ""]
+        body += [family_link_line(f) for f in sorted(items, key=lambda f: str(f["dates"]["priority"]))]
+        body.append("")
+    return page("patents-by-date", "Patents by date and status", body)
+
+
+def generate() -> tuple[dict[str, str], str]:
+    # check_patents.Loader keeps ISO dates as strings (like the checker does),
+    # rather than yaml.safe_load's automatic datetime.date conversion.
+    data = yaml.load(DATA.read_text(encoding="utf-8"), Loader=check_patents.Loader)
+    if not isinstance(data, dict) or not isinstance(data.get("families"), list):
+        raise SystemExit(f"{DATA}: not the expected schema")
+    fams = data["families"]
+    labels = check_patents.doc_labels()
+    inventory = check_patents.inventory_entries()
+    page_text: dict[Path, str] = {}
+    problems: list[str] = []
+    seen_numbers: dict[str, str] = {}
+    for f in fams:
+        fid = str(f.get("id"))
+        for m in f.get("members") or []:
+            pn = m.get("number") if isinstance(m, dict) else None
+            if pn in seen_numbers and seen_numbers[pn] != fid:
+                problems.append(f"{fid}: {pn} also listed in {seen_numbers[pn]}")
+            seen_numbers.setdefault(pn, fid)
+        check_patents.check_family(f, labels, inventory, page_text, problems)
+    if problems:
+        print("\n".join(problems))
+        raise SystemExit("data/patents.yaml fails tools/check_patents.py; fix it before generating pages")
+    fams = sorted(fams, key=lambda f: (str(f["dates"]["priority"]), f["representative"]))
+    retrieved = str(data["retrieved"])
+    return {
+        "index.md": gen_index(fams, retrieved),
+        "families.md": gen_families(fams),
+        "by-module.md": gen_by_module(fams),
+        "by-assignee.md": gen_by_assignee(fams),
+        "by-jurisdiction.md": gen_by_jurisdiction(fams),
+        "by-date.md": gen_by_date(fams),
+    }, retrieved
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--check", action="store_true", help="fail if committed pages differ from the generated ones")
+    args = ap.parse_args()
+    pages, _retrieved = generate()
+    problems: list[str] = []
+    if args.check:
+        for name, text in pages.items():
+            p = OUT / name
+            if not p.exists():
+                problems.append(f"{p.relative_to(ROOT)}: missing")
+            elif p.read_text(encoding="utf-8") != text:
+                problems.append(f"{p.relative_to(ROOT)}: differs from generated output")
+        if OUT.is_dir():
+            for p in sorted(OUT.iterdir()):
+                if p.name not in pages:
+                    problems.append(f"{p.relative_to(ROOT)}: not generated by tools/gen_patents.py")
+    else:
+        OUT.mkdir(parents=True, exist_ok=True)
+        for name, text in pages.items():
+            (OUT / name).write_text(text, encoding="utf-8")
+    for p in problems:
+        print(p)
+    verb = "checked" if args.check else "written"
+    print(f"{plural(len(pages), 'page')} {verb}, {plural(len(problems), 'problem')}")
+    return 1 if problems else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
