@@ -3,17 +3,20 @@
 (patents-by-jurisdiction)=
 # Patents by jurisdiction
 
-Every member publication grouped by its country or office, plus a
-family-size table (members per family). A family can have members
-in several jurisdictions and so appears in several tables. A family
-shown as in force or unknown is collapsed on {ref}`patents-families`;
-here it contributes only its representative's own row (number and
-status word), the same as it does on the other grouped pages, not
-its full member list — open the collapsed entry for the rest.
+Every member publication of a family shown as expired, plus one
+representative row for each other family, grouped by its country
+or office, plus a family-size table (members per family). A family
+can have members in several jurisdictions and so appears in
+several tables. A family shown as in force or unknown is collapsed
+on {ref}`patents-families`; here, as on the other grouped pages, it
+contributes only its representative's own row (number and status
+word), not its full member list — open the collapsed entry for the
+rest. Each section's row count below reflects this: it is not a
+count of every member publication in that jurisdiction.
 
 ## United States (US)
 
-413 member publications.
+413 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -433,7 +436,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## European Patent Office (EP)
 
-147 member publications.
+147 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -587,7 +590,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## WIPO (PCT) (WO)
 
-42 member publications.
+42 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -636,7 +639,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Japan (JP)
 
-177 member publications.
+177 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -820,7 +823,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## China (CN)
 
-27 member publications.
+27 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -854,7 +857,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## South Korea (KR)
 
-100 member publications.
+100 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -961,7 +964,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Taiwan (TW)
 
-43 member publications.
+43 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1011,7 +1014,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Germany (DE)
 
-69 member publications.
+69 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1087,7 +1090,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## United Kingdom (GB)
 
-7 member publications.
+7 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1101,7 +1104,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## France (FR)
 
-2 member publications.
+2 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1110,7 +1113,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Austria (AT)
 
-13 member publications.
+13 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1130,7 +1133,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Australia (AU)
 
-14 member publications.
+14 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1151,7 +1154,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Belgium (BE)
 
-1 member publication.
+1 row: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1159,7 +1162,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Brazil (BR)
 
-2 member publications.
+2 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1168,7 +1171,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Canada (CA)
 
-9 member publications.
+9 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1184,7 +1187,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Denmark (DK)
 
-3 member publications.
+3 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1194,7 +1197,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Spain (ES)
 
-5 member publications.
+5 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1206,7 +1209,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Greece (GR)
 
-2 member publications.
+2 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1215,7 +1218,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Israel (IL)
 
-6 member publications.
+6 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1228,7 +1231,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## India (IN)
 
-1 member publication.
+1 row: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1236,7 +1239,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Italy (IT)
 
-1 member publication.
+1 row: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1244,7 +1247,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Mexico (MX)
 
-1 member publication.
+1 row: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1252,7 +1255,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Malaysia (MY)
 
-4 member publications.
+4 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1263,7 +1266,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Netherlands (NL)
 
-1 member publication.
+1 row: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1271,7 +1274,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## New Zealand (NZ)
 
-1 member publication.
+1 row: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1279,7 +1282,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Portugal (PT)
 
-1 member publication.
+1 row: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1287,7 +1290,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Sweden (SE)
 
-2 member publications.
+2 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1296,7 +1299,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Singapore (SG)
 
-10 member publications.
+10 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -1313,7 +1316,7 @@ its full member list — open the collapsed entry for the rest.
 
 ## Yugoslavia (historical) (YU)
 
-2 member publications.
+2 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
