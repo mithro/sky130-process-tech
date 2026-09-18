@@ -98,8 +98,8 @@ memory (SKY130's recipe is not public):
    plasma (CF₄/CHF₃ with O₂ or Ar) — the chemistry that "etches oxide
    as SiF₄ only under ion bombardment" ({ref}`category-etch`, citing
    Flamm and Donnelly[^flamm-1981]).
-3. **Nitride.** The trapping layer (7–15 nm in the Cypress
-   patents[^pat-02][^pat-03]) is etched in CF₄/O₂,
+3. **Nitride.** The trapping layer — 9–11 nm in one Cypress
+   patent,[^pat-03] 70–150 Å in another[^pat-02] — is etched in CF₄/O₂,
    CHF₃/O₂ or SF₆-based chemistry tuned for {term}`selectivity` to the oxide
    below; a 1997 ASMC paper reports a nitride spacer etch "with high
    selectivity to oxide" of the kind required.[^regis-1997] {term}`Endpoint <endpoint>`
@@ -155,10 +155,10 @@ memory (SKY130's recipe is not public):
   chemistries of steps 2–3. Strength: **strong** for the tool;
   **inference** for its assignment to `ONOME`. A university
   clean-room describes the 9400 as a TCP etcher "for selective etching
-  of silicon and polysilicon" with tetrafluoromethane and oxygen in
-  its gas list.[^snf-9400]
+  of silicon and polysilicon" with oxygen in its gas
+  list;[^snf-9400] CF₄ comes from SkyWater's own entry.[^skw-01]
 * **Applied Materials DPS II** ("HBR, Cl2, NF3, CF4, CHF3, O2 – gate,
-  trench")[^skw-01] — has CHF₃ for the oxide layers. Strength: strong
+  trench, W/WN")[^skw-01] — has CHF₃ for the oxide layers. Strength: strong
   for existence; **medium** for this step, since its CF₄ and CHF₃ etch
   nitride although the entry names no nitride application.
 * **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2").[^skw-01] Strength:
