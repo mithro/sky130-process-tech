@@ -580,13 +580,16 @@ def gen_by_assignee(fams: list[dict]) -> str:
 
 def gen_by_jurisdiction(fams: list[dict]) -> str:
     body = [
-        "Every member publication grouped by its country or office, plus a",
-        "family-size table (members per family). A family can have members",
-        "in several jurisdictions and so appears in several tables. A family",
-        "shown as in force or unknown is collapsed on {ref}`patents-families`;",
-        "here it contributes only its representative's own row (number and",
-        "status word), the same as it does on the other grouped pages, not",
-        "its full member list — open the collapsed entry for the rest.",
+        "Every member publication of a family shown as expired, plus one",
+        "representative row for each other family, grouped by its country",
+        "or office, plus a family-size table (members per family). A family",
+        "can have members in several jurisdictions and so appears in",
+        "several tables. A family shown as in force or unknown is collapsed",
+        "on {ref}`patents-families`; here, as on the other grouped pages, it",
+        "contributes only its representative's own row (number and status",
+        "word), not its full member list — open the collapsed entry for the",
+        "rest. Each section's row count below reflects this: it is not a",
+        "count of every member publication in that jurisdiction.",
         "",
     ]
     by_cc: dict[str, list[tuple[dict, dict]]] = defaultdict(list)
@@ -603,7 +606,9 @@ def gen_by_jurisdiction(fams: list[dict]) -> str:
         items = by_cc.get(cc)
         if not items:
             continue
-        body += [f"## {esc(name)} ({cc})", "", f"{plural(len(items), 'member publication')}.", "",
+        body += [f"## {esc(name)} ({cc})", "",
+                 f"{plural(len(items), 'row')}: every member of a family shown as expired, plus "
+                 "one representative row for each collapsed family.", "",
                  "| Number | Family | Status |", "|---|---|---|"]
         for m, f in sorted(items, key=lambda x: (str(x[0].get("publication_date") or ""), x[0]["number"])):
             fam_pn = display_pn(rep_member(f))
