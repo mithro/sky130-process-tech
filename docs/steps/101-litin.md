@@ -94,10 +94,12 @@ reasons:
   allow 0.17 µm lines and spaces (li.1, li.3) and 0.14 µm inside
   certain RF cells (li.1a, li.3a),[^pdk-periph] with an area minimum
   of 0.0561 µm² (li.6) and a resistor form (li.7) 0.290 µm wide.[^pdk-periph]
-  A `li1` resistor is in fact a PDK device — the minimum-CD table
-  carries a "Li resistor width" entry[^pdk-03] — which only a film
-  with a well-controlled, moderately high sheet resistance can
-  provide.
+  A `li1` resistor is in fact a PDK device — the physical-criteria
+  table carries a "Li resistor width (to drop one Licon w/o
+  dogbones)" of 0.29 µm (`LIRESCD`)[^pdk-03] and the periphery rules
+  a minimum LI-resistor width of 0.290 µm (li.7)[^pdk-periph] — which
+  only a film with a well-controlled, moderately high sheet
+  resistance can provide.
 * **Why TiN and not a metal.** TiN is refractory, so the levels
   above it can be processed at the 400–450 °C of the tungsten and
   oxide depositions without {term}`hillocks <hillock>` or interdiffusion; it does not

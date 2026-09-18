@@ -35,9 +35,9 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 098-L1 | Low | fixed | Unified the two RTA-temperature mentions on 098 (600-700 vs 600-750) at 600-750 (the wider, safer range), same citations. |
 | 098-L2 | Low | fixed | Added [^txt-01] (already used site-wide for this figure, e.g. 099-wdep.md) and a cross-reference to step-099 for the 400-450C tungsten deposition temperature. |
 | 098-L3 | Low | fixed | Fixed together with 092-M1: dropped the ramp-rate clause on 098 (a silicide soak is not ramp-limited) and kept only the 400-1200C range and "Silicide formation and annealing". |
-| 099-L1 | Low | open | |
+| 099-L1 | Low | fixed | Confirmed pi-US6635965.txt abstract has no hyphen ("tungsten containing gases"); removed the added hyphen. |
 | 100-L1 | Low | open | duplicate of 090-L1 |
-| 101-L1 | Low | open | |
+| 101-L1 | Low | fixed | Confirmed pdk-assumptions.txt:993-995: LIRESCD ("Li resistor width...", 0.29 um) sits in the Table 4 "Other" physical-criteria section, not the minimum-CD table. Named the correct table and added the matching li.7 periphery value (0.290 um). |
 | 103-L1 | Low | open | |
 | 103-L2 | Low | open | |
 | 105-L1 | Low | open | duplicate of 091-L2; fixed together |
