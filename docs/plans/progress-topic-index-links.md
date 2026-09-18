@@ -1,7 +1,7 @@
 # Topic index links — progress
 
-Status: in progress, 2026-09-19. Task: link every process page to the
-patent, paper and filings indexes that concern it, with in-force/unknown
+Status: done, 2026-09-19. Task: link every process page to the patent,
+paper and filings indexes that concern it, with in-force/unknown
 patents collapsed. This file lives in `docs/plans/`, which the Sphinx
 build excludes.
 
@@ -150,18 +150,62 @@ build excludes.
   none is a stub (`This page is a stub.`), so the insertion point is
   unambiguous everywhere and no stub page gets a premature block.
 
-## Remaining work in this pass
+## Completed
 
-* Write `tools/gen_index_links.py` with `--check` and `--selftest`.
-* Extend `check_steps.py`, `check_machines.py`, `check_materials.py`,
-  `check_masks.py` per item 8.
-* Run `tools/gen_index_links.py` to generate the 205 blocks, committed
-  separately from the code by page type (steps, then
-  machines+materials+masks+categories, then overview).
-* Add "How the indexes link to the process pages" to
-  `docs/references/index.md`.
-* Add `gen_index_links.py --check` to the README's checker list and to
-  `docs/plans/agent-briefs.md` Reviewer brief item 5.
-* Full verification pass: all `check_*.py`, all four `gen_*.py --check`,
-  `-W` Sphinx build, and an HTML grep confirming in-force patent numbers
-  only ever appear inside `<details>` on process pages.
+* `tools/gen_index_links.py` written (`--check`, `--selftest`); selftest
+  covers splice idempotence, block removal, the >12 threshold on both
+  sides of the boundary, expired/collapsed splitting, dropdown wording
+  and the empty case.
+* `check_steps.py`, `check_machines.py`, `check_materials.py` and
+  `check_masks.py` extended per item 8 (`gen_index_links.stale_pages_in`),
+  verified to detect a hand-edited block (tested, then reverted with
+  `git checkout --`) and to pass clean on the generated output.
+* All 205 blocks generated and committed separately from the code, by
+  page type: steps (144), categories (9), machines (28), materials (13),
+  masks (9), overview (2) — six commits.
+* `docs/references/index.md` gained "How the indexes link to the
+  process pages"; `README.md` gained a "Checks" section listing every
+  checker including `gen_index_links.py --check`; `agent-briefs.md`
+  Reviewer brief item 5 updated to include it.
+* Full verification pass, all clean: `check_steps.py`,
+  `check_machines.py`, `check_materials.py`, `check_masks.py`,
+  `check_refs.py`, `check_patents.py`, `check_papers.py`,
+  `check_filings.py`, `gen_patents.py --check`, `gen_papers.py --check`,
+  `gen_filings.py --check`, `gen_index_links.py --check`, and
+  `uv run sphinx-build -W -q -b html docs tmp/build-index-links`
+  (exit 0). An HTML grep of all 205 built pages' generated blocks,
+  keyed on every non-expired family's own publication number (not just
+  the words "in force"), found zero occurrences outside a `<details>`
+  element in any generated block — see the worked example below. A
+  broader site-wide grep for those same numbers does find a few
+  pre-existing hits (e.g. `US 8,796,098` on `docs/steps/001-smat.md`
+  line 254/367), but every one of them is a citation already in the
+  page's own written prose (with its own footnote), predating this
+  branch and outside its scope ("do not reflow or otherwise touch
+  existing text") — not a leak from the new block.
+
+Worked example (`docs/overview/index.md`, the filings-overflow case):
+
+```
+**Related patents.**
+
+* {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an
+  oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002)
+
+:::{dropdown} 3 families in force or status unknown
+
+Status and expiry are estimates from public records and are not legal
+advice.
+
+* {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
+* {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
+* {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
+:::
+
+**Related papers.**
+
+* {ref}`paper-edwards-2020a` — Tim Edwards, WOSET 2020 (free copy)
+
+**Related filings.** 72 filings relate to this page; see
+{ref}`filings-by-relationship` for the full, grouped list.
+```
