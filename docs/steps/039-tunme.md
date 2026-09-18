@@ -47,10 +47,12 @@ below includes them.
 
 `TUNME` is an {ref}`Etch <category-etch>` step of the (inferred) *wet
 oxide etch* type — the same class as {ref}`GOXETCH <step-046>` and
-{ref}`SACETCH <step-095>`. The category page explains the choice: dilute
-HF is used where a thin oxide must be removed "cleanly and gently with
-very high selectivity … because a plasma would damage the exposed
-silicon". Here the silicon being exposed will carry a tunnel oxide only
+{ref}`SACETCH <step-095>`. The category page describes wet chemical
+etching generally as used where a film "must be removed cleanly and
+gently with very high selectivity", and gives the same reason it gives
+for `GOXETCH` and `SACETCH` — that a plasma would damage the exposed
+silicon — for reading this class of etch as wet ({ref}`category-etch`).
+Here the silicon being exposed will carry a tunnel oxide only
 1–3 nm thick[^pat-04] whose quality decides the memory's endurance and
 retention, so the etch is the gentlest available.
 
@@ -87,7 +89,7 @@ years. Three things follow:
   oxide would inherit.
 
 Without `TUNME` the tunnel oxide would be grown on top of the pad oxide,
-giving a "tunnel" dielectric of 12–23 nm (the patent's ranges[^pat-04])
+giving a "tunnel" dielectric of 11–23 nm (the patent's ranges[^pat-04])
 through which nothing would tunnel at the PDK's ±10.5 V programme/erase
 conditions[^pdk-07] (on the reading of the published table's programme
 source bias set out on {ref}`PTSI <step-037>`).
@@ -126,9 +128,13 @@ fab (SKY130's recipe is not public):
    silicon, which the next clean removes.
 5. **Pre-oxidation clean.** An RCA-type sequence — {term}`SC-1` for particles
    and organics, {term}`SC-2` for metals[^wiki-rca] — with an HF-last or a
-   deliberately grown chemical oxide as the final surface. The choice
-   matters for a tunnel oxide of the 1.5–3 nm class the Cypress patents
-   describe:[^pat-04] the Cypress patents describe SC-1 at "50 to 80° C.
+   deliberately grown chemical oxide as the final surface. (HF is free
+   to be used here because the {term}`ONO` stack does not yet exist; see
+   {ref}`GOX100 <step-043>` for why the later pre-clean is
+   "substantially free of HF".[^pat-03]) The choice
+   matters for a tunnel oxide of the 1.0–3.0 nm class of
+   US 8,796,098[^pat-04] (US 2009/0179253 gives 15–22 Å[^pat-02]): the
+   Cypress patents describe SC-1 at "50 to 80° C.
    for about 10 minutes" and SC-2 as "a 1:1:10 solution of HCl, H₂O₂ and
    H₂O at about 50 to 80° C.",[^pat-04] and one of them replaces SC-1
    with "an ozonated water cleaning regime" in places where the ONO
