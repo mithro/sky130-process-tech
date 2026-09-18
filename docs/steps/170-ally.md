@@ -142,7 +142,8 @@ an aluminium back end (SKY130's recipe is not public):
   industry values;[^txt-02] category page) — far below the 577 °C Al–Si
   eutectic that caps any anneal on an aluminium back end,[^txt-02] but
   inside the range where a confined aluminium film relaxes stress by
-  {term}`hillock` growth and {term}`stress-induced voiding`,[^yue-1985]
+  {term}`hillock` growth[^chaudhari-1974] and
+  {term}`stress-induced voiding`,[^yue-1985]
   which is why the soak is short and the ramp-down controlled. The
   University of Illinois example of about 400 °C for about 1 hour is of
   this kind.[^pat-deuterium-uiuc]
@@ -391,6 +392,9 @@ an aluminium back end (SKY130's recipe is not public):
 [^hughey-2003]: M. P. Hughey and R. F. Cook, "Irreversible Tensile
     Stress Development in PECVD Silicon Nitride Films", *MRS
     Proceedings* **795** (2003). <https://doi.org/10.1557/PROC-795-U1.6>
+[^chaudhari-1974]: P. Chaudhari, "Hillock growth in thin films",
+    *Journal of Applied Physics* **45**(10), 4339–4346 (1974).
+    <https://doi.org/10.1063/1.1663054>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
