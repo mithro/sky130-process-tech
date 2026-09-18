@@ -114,25 +114,31 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   it can retard boron diffusion during the anneal.[^txt-01]
 * **Energy.** Tens of keV of BF₂ energy, corresponding to a boron energy
   of a few keV and a {term}`projected range` of tens of nanometres. Public
-  examples: BF₂ "at an energy of from about 10 to about 100
-  kilo-electron volts (keV)" for a channel implant in a Cypress {term}`SONOS`
-  patent;[^pat-04] "45-90 KeV for BF₂" in an AMD laterally doped
+  examples: a Cypress {term}`SONOS` patent that may still be in force gives
+  a BF₂ channel-implant energy (collapsed note below this list);
+  "45-90 KeV for BF₂" in an AMD laterally doped
   channel implant made after gate formation with the gate pillars as a
   self-aligned mask (a different placement).[^pat-vt-amd]
-* **Dose.** Light: "a dose of from about 1e12 cm⁻² to about 1e14 cm⁻²"
-  in the Cypress example;[^pat-04] "about 1.0 to 2.5×10¹³ ions/cm²" in
+* **Dose.** Light: the Cypress example's dose range is in the same
+  collapsed note; "about 1.0 to 2.5×10¹³ ions/cm²" in
   the AMD laterally doped channel implant.[^pat-vt-amd] A compensating trim in a high-Vt device
   would sit at the bottom of these ranges (inference).
 * **Tilt and twist.** 7° with twist;[^wiki-implant] with BF₂ the
   self-amorphisation makes channelling less of a concern than with bare
   boron.
-* **{term}`Screen oxide <screen oxide>`.** Through the pad oxide;[^pat-04] a shallow implant is
+* **{term}`Screen oxide <screen oxide>`.** Through the pad oxide; a shallow implant is
   sensitive to the oxide's thickness, so the oxide loss in the preceding
   strips matters (see {ref}`LVTPIS <step-021>`).
 * **Anneal.** {ref}`RTAI <step-034>`; boron in a shallow layer is the
   dopant most affected by transient enhanced diffusion, which is one
   argument for a rapid rather than a furnace anneal (category page on
   {ref}`anneal <category-anneal>`).
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The Cypress {term}`SONOS` patent implants BF₂ "at an energy of from about
+10 to about 100 kilo-electron volts (keV)" and with "a dose of from
+about 1e12 cm⁻² to about 1e14 cm⁻²", through the pad oxide.[^pat-04]
+:::
 
 ## Machines typically used
 

@@ -76,12 +76,19 @@ rather than later:
   2001 high-performance node,[^itrs-01] which is only compatible with
   short anneals.
 
-The order matters for the SONOS module too. Cypress's integration patent
-describes forming the charge-trapping stack "after at least some of the
-well and channel implants for the logic MOS transistors are formed", and
-states that "a rapid thermal anneal is performed after implanting both
-the n-well and p-well"[^pat-03] — the strongest public evidence that the
-SKY130 lineage anneals its wells by {term}`RTA` before the SONOS and gate steps.
+The order matters for the SONOS module too. Cypress's integration
+patent, which may still be in force, says where the charge-trapping
+stack and the well anneal fall relative to the logic implants; its two
+sentences are in the collapsed note below, and they are the strongest
+public evidence that the SKY130 lineage anneals its wells by
+{term}`RTA` before the SONOS and gate steps.
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+Cypress's integration patent describes forming the charge-trapping stack
+"after at least some of the well and channel implants for the logic MOS
+transistors are formed", and states that "a rapid thermal anneal is
+performed after implanting both the n-well and p-well".[^pat-03]
+:::
 
 ## How it is typically performed
 
@@ -136,8 +143,8 @@ An industry-generic well/channel activation anneal for a 200 mm,
   a single-wafer RTA with the inert ambients (Ar, N₂) and the
   temperature reach this step needs. Strength: **strong** for the tool
   (SkyWater statement); assignment to `RTAI` is an **inference** from
-  the Cypress integration patent's rapid thermal anneal after the well
-  implants.[^pat-03]
+  the Cypress integration patent, which may still be in force (collapsed
+  note below this list).
   Reseller documentation for the Heatpulse 8800/8808 family gives a
   "Recommended steady-state temperature range: 400 – 1200°C", ramp-up
   "Programmable, 1 – 180°C per second", "2 banks of 14 lamps" with
@@ -153,7 +160,14 @@ An industry-generic well/channel activation anneal for a 200 mm,
   all made by Aviza"[^skw-01] with "Ar anneal to 1150C" and "N2 anneal
   to 1150C" — the batch alternative if the fab chose a furnace well
   anneal. Strength: strong for existence; weak for assignment, since the
-  Cypress integration patent describes an RTA at this point.[^pat-03]
+  Cypress integration patent, which may still be in force, bears on it
+  (collapsed note below this list).
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+The assignment to `RTAI` follows the Cypress integration patent's rapid
+thermal anneal after the well implants; the same patent describes an RTA
+rather than a furnace anneal at this point.[^pat-03]
+:::
 
 ## Resources required
 
@@ -260,8 +274,8 @@ Status and expiry are estimates from public records and are not legal advice.
   1000 °C/10 s figure is from a contemporaneous third-party patent.
 * Whether `RTAI` is a single RTA or an RTA plus a short furnace step,
   and whether the Heatpulse 8808 or an Aviza furnace runs it, is
-  inferred from the Cypress integration patent[^pat-03] and SkyWater's
-  tool list.[^skw-01]
+  inferred from the Cypress integration patent (collapsed notes above)
+  and SkyWater's tool list.[^skw-01]
 * Whether the pad oxide is present during the anneal, and where the
   sacrificial oxide before gate oxidation is removed, is not stated
   publicly (see {ref}`NS19 <step-013>` and {ref}`PWDEIS <step-033>`).
