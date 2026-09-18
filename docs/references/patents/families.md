@@ -8791,12 +8791,12 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-deposition` — *same-lineage assignee*: Original and current assignee SkyWater Technology Foundry Inc, the company that operates the fab this documentation covers; the application does not identify which process platform or node it applies to, and its 2023 filing date is well after SKY130's own introduction, so it is not evidence that SKY130 uses a carbon film in its back-end-of-line, nor that this technique belongs to the 130 nm/90 nm CMOS flow at all -- it is recorded here as the one SkyWater-assigned family this search found, described honestly as unconfirmed for SKY130.
+* {ref}`category-deposition` — *same-lineage assignee*: Original and current assignee SkyWater Technology Foundry Inc, the company that operates the fab this documentation covers; the application names 90 nm processing technology as one application of the carbon film and calls the approach CMOS technology-agnostic, but it does not name SKY130 or a 130 nm platform, and its 2023 filing date is well after SKY130's own introduction, so it is not evidence that SKY130 uses a carbon film in its back-end-of-line.
 
-**Discovery:** assignee-search — Google Patents search (xhr/query), assignee "SkyWater Technology" (1 hit) and the broader assignee "SkyWater" (3 hits: this family, a Skywater Japan LLC plumbing/circulation-system patent, and an unrelated Merritt Thomas D potable-water patent -- both false positives on the word "Skywater", not SkyWater Technology Foundry, and not added), retrieved 2026-09-19. This is the search H1 explicitly asked for ("the index contains zero SkyWater Technology patents"); it found exactly one, filed 2023-07-21, a foundry-process application whose platform is not stated.
+**Discovery:** assignee-search — Google Patents search (xhr/query), assignee "SkyWater Technology" (1 hit) and the broader assignee "SkyWater" (3 hits: this family, a Skywater Japan LLC plumbing/circulation-system patent, and an unrelated Merritt Thomas D potable-water patent -- both false positives on the word "Skywater", not SkyWater Technology Foundry, and not added), retrieved 2026-09-19. This is the search H1 explicitly asked for ("the index contains zero SkyWater Technology patents"); it found exactly one, filed 2023-07-21, a foundry-process application naming 90 nm technology and describing itself as CMOS technology-agnostic, not tied to any named platform.
 
 **Notes:**
-* This publication does not name SKY130 or a node/platform; it is included as the search result H1 called for, not as evidence that SkyWater practises the technique in SKY130.
+* Round-3 verification finding M2. This publication names 90 nm processing technology and calls its carbon-film approach CMOS technology-agnostic; it does not name SKY130 or a 130 nm platform. It is included as the search result H1 called for, not as evidence that SkyWater practises the technique in SKY130.
 
 **Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US20250031586A1/en
 :::
