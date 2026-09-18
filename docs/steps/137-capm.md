@@ -34,9 +34,11 @@ capacitor mask a `CAPMCD` of 2 µm and a `CAPMCDSP` of
 capacitor aspect ratio of 20,[^pdk-03] and the periphery rules a
 set of twelve `capm` rules — minimum width, spacing to `capm` and to
 the bottom plate, enclosure of the plate by the metal beneath,
-enclosure of the via that contacts it, a maximum aspect ratio, a
-rectangles-only rule, a rule that `capm` must not straddle wells,
-diffusion, tap, poly, local interconnect or metal 1, and a maximum
+enclosure of the via that contacts it, three spacings (of `capm` to
+`via2`, of `via` to `capm`, and of `capm` to `met2` that does not
+overlap it), a maximum aspect ratio, a rectangles-only rule, a rule
+that `capm` must not straddle wells, diffusion, tap, poly, local
+interconnect or metal 1, and a maximum
 area — all with their numeric values shown as "N/A" on the public
 page.[^pdk-periph] The capacitance the plate defines is the PDK's
 2 fF/µm² of area plus 0.19 fF/µm of periphery.[^pdk-07] A 2 µm
@@ -87,15 +89,19 @@ model form[^pdk-07]).
   with no metal edges to reflect light into the plate corners and no
   topography under the dielectric; the plate edge lands on
   dielectric-over-metal everywhere. This is the construction of the
-  Newport Fab and Freescale
-  patents[^pat-mim-newportfab][^pat-mim-freescale] and, we infer from the
-  PDK's description of the construction,[^pdk-07] SKY130's; IBM's patent instead forms a
-  planar bottom plate by damascene and CMP.[^pat-mim-ibm] The alternative —
+  Newport Fab patent[^pat-mim-newportfab] and, we infer from the
+  PDK's description of the construction,[^pdk-07] SKY130's; IBM's and
+  Freescale's patents reach a planar bottom plate by damascene or by
+  CMP of the dielectric beneath a dedicated electrode
+  instead.[^pat-mim-ibm][^pat-mim-freescale] The alternative —
   etching the bottom metal first and depositing the dielectric and
   plate over its edges — puts the thin dielectric on a sidewall.
 * **Alignment and enclosure.** The plate must later be enclosed by
   the metal-3 bottom plate and contacted by a via-3 that the plate
-  encloses — the rules capm.3–capm.5,[^pdk-periph] whose text names
+  encloses — the rules capm.3 (enclosure of the plate by the metal
+  beneath) and capm.4 (enclosure of the via by the plate), with
+  capm.5 setting the spacing of the plate to a via it does not
+  contact,[^pdk-periph] whose text names
   `met2` and `via2`, read here for metal 3 and via 3 (inference; see
   {ref}`CAPILD <step-135>`). Because metal 3 has not yet been printed,
   `CAPM` is aligned to the last patterned layer — the via-2 holes of
