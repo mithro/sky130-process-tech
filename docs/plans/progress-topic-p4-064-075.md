@@ -25,8 +25,8 @@ before being fixed or declined.
 | 065-L3 | Low | fixed | Confirmed via Crossref that Nobili 1983 (10.1149/1.2119859) has no public abstract/paywalled text; marked the 2e20 threshold as a typical value on txt-01, kept Nobili for the precipitation mechanism. |
 | 065-L4 | Low | fixed | Confirmed axcelis-8250.txt is the Semiconductor Online 8250HT page (footnote already says so); SkyWater's own 8250 listing gives no energy range. Reworded to attribute the 3 keV floor to the 8250HT variant only. |
 | 066-L1 | Low | fixed | Fetched USPTO grant PDFs for US5795831, US6660603 and US5155336 (200 OK, verified valid PDFs) to add to the shared cache alongside the already-cached US6238982/US5811358/US20040214448/US8093128/US8796098; changed all eight patents.google.com footnote URLs (066,067,068,070,071,072,073,074,075) and their public-sources.md entries to image-ppubs.uspto.gov. |
-| 066-L2 | Low | open | |
-| 066-L3 | Low | open | |
+| 066-L2 | Low | fixed | Confirmed cache has no .mdm files for the W=0.42um L=20/25um geometries and the cited repository listing does not identify well configuration; dropped the unverifiable parenthesis rather than naming a file that isn't in the cache. |
+| 066-L3 | Low | fixed | Confirmed axcelis-8250.txt (the 8250HT page) says the 8250 platform serves "indium implants"; reworded so the claim is about SkyWater's published list, not the tool's capability. |
 | 067-L1 | Low | open | |
 | 067-L2 | Low | open | |
 | 067-L3 | Low | open | |
