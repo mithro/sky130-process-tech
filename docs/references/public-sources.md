@@ -934,7 +934,10 @@ ramping our latest 0.13-micron technology in manufacturing. We are
 simultaneously transferring our 90 nanometer technology from our
 eight-inch R&D facility in San Jose, California ("Fab 1") to our
 eight-inch manufacturing facility in Minnesota ("Fab 4")". Dates the
-0.13 µm ramp at Fab 4. Tier: cross-check.
+0.13 µm ramp at Fab 4. Wayback copy unavailable as of 2026-09-18:
+SEC.gov returns HTTP 403 to the required user agent and the Internet
+Archive has no snapshot and could not complete one on request. Tier:
+cross-check.
 
 **CYP-08** — Cypress Semiconductor Corp., 2004 Annual Report (10-K
 wrap), 2005.
