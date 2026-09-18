@@ -12,8 +12,14 @@
 
 ## What this step is
 
-`NFUSOX` is the first deposition after the last metal etch: on our reading (see below), a thin, blanket, low-temperature oxide laid over the freshly etched metal-5
-lines, pads and the {ref}`NCAPOX6 <step-158>` oxide between them. It
+`NFUSOX` is the first deposition after the last metal etch. The step
+list calls it "Fuse oxide deposition" and does not explain the film;
+this reference reads it as the thin, blanket, low-temperature oxide
+the PDK's stack diagram labels TOPOX, laid over the freshly etched
+metal-5 lines, pads and the {ref}`NCAPOX6 <step-158>` oxide between
+them — an inference set out below, and one that does not settle
+whether the same film is also the controlled dielectric over the
+PDK's metal fuses (see *Open questions*). It
 opens the {term}`passivation` module — the insulating "glass" that seals the
 finished circuit — which continues with the silicon nitride of
 {ref}`NTSD <step-167>` and is cut open over the
@@ -68,21 +74,25 @@ reasons for the oxide in SKY130 specifically are inferred.
   et al. described reactive-plasma Si–N films for MOS-LSI
   passivation,[^sinha-1978] and a later seal-ring patent describes the
   passivation nitride over its passivation oxide as "a very good barrier
-  of moisture and ionic contamination"[^pat-sealring-zeevo] — but
-  it is hydrogen-rich and highly stressed.[^lanford-1978][^claassen-1985]
+  of moisture and ionic contamination"[^pat-sealring-zeevo] — but it is
+  hydrogen-rich[^lanford-1978] and carries a large intrinsic stress
+  whose sign and magnitude depend on the deposition
+  conditions.[^claassen-1985]
   A thin oxide between the metal and the nitride separates the
-  aluminium from the nitride's deposition chemistry and adds a
-  compliant layer under a stiff film; stress in the dielectric over
-  aluminium lines drives {term}`stress-induced voiding` (Yue, Funsten
-  and Taylor[^yue-1985]) and {term}`hillock` growth
-  (Chaudhari[^chaudhari-1974]). That an oxide under the nitride serves
+  aluminium from the nitride's deposition chemistry; stress in the dielectric over
+  aluminium lines drives {term}`stress-induced voiding` (Yue, Funsten and
+  Taylor[^yue-1985]), and compressive stress in a confined metal film
+  relaxes by {term}`hillock` growth, the general mechanism Chaudhari
+  modelled for thin films.[^chaudhari-1974] That an oxide under the nitride serves
   this purpose in SKY130 is our inference from the stack and the
   industry pattern.[^txt-05]
 * **Doped or undoped.** Passivation oxides under nitride have often
   been phosphorus-doped — the seal-ring patent notes that the
   passivation oxide "is usually doped with phosphorous to form
   phosphosilicate glass (PSG) to absorb and hold the moisture", and also
-  that in 0.25 and 0.18 µm technologies a passivation oxide "without
+  that in 0.25 and 0.18 µm technologies, where the passivation oxide
+  "has been deposited by HDP (high density plasma) and it has been
+  difficult to incorporate the phosphorous initially", an oxide "without
   phosphorous has been used and has passed reliability
   tests"[^pat-sealring-zeevo] — but too much phosphorus corrodes
   aluminium, as Paulson and Kirk showed for passivation
@@ -150,7 +160,9 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 * **PECVD TEOS "C2 and Producer" with "low temp options".**[^skw-01]
   Strength: **strong** for the capability; the assignment of this film
   to the TEOS process is an **inference** from the "TEOS" of the Cypress
-  passivation descriptions at the same fab.[^cyp-qtp-123907][^cyp-qtp-014807]
+  passivation descriptions at the same fab — the S8DI variant of S8 in
+  2014[^cyp-qtp-123907] and the 0.18 µm R7FT-3R technology in
+  2005.[^cyp-qtp-014807]
   "C2" as a Novellus Concept Two and "Producer" as an Applied Materials
   Producer are readings of the names,[^novellus-history][^amat-10k] not
   stated by SkyWater.
@@ -229,9 +241,12 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   of PECVD oxide properties.[^chapple-sokol-1989]
 * Mani and Saif, *Thin Solid Films* 2007 — stress change from hydrogen
   evolution in plasma oxide.[^mani-2007]
-* Yue, Funsten and Taylor, IRPS 1985, and Chaudhari, *J. Appl. Phys.*
-  1974 — stress voids and hillocks in aluminium under
-  dielectrics.[^yue-1985][^chaudhari-1974]
+* Yue, Funsten and Taylor, IRPS 1985 — stress voids in aluminium
+  interconnects, with the void density tied to the compressive stress
+  of the passivation film.[^yue-1985]
+* Chaudhari, *J. Appl. Phys.* 1974 — the stress-relaxation model of
+  hillock growth in thin films (developed for lead and tin), the
+  mechanism invoked for aluminium here.[^chaudhari-1974]
 * Paulson and Kirk, IRPS 1974 — why the glass next to aluminium is
   undoped.[^paulson-1974]
 * Bothra, McKay and Jhota (Zeevo), US 6,492,716 — a seal ring under a
