@@ -107,10 +107,10 @@ plate of the published Newport Fab process[^pat-mim-newportfab]).
   Danzl and McLaurin used to strip a TiW anti-reflective cap from
   aluminium pads,[^danzl-1997] and the fab's metal etchers are
   listed for it ("Lam 9600, Al, TiW, TiN, Pt"[^skw-01]). The
-  published alternative is a TiN top plate, as in the Newport Fab and
-  Texas Instruments patents (US 6,430,028 names "titanium nitride,
-  tantalum nitride, aluminium or a composite stack"; US 8,110,414's
-  top electrode "comprises TiN");[^pat-mim-newportfab][^pat-mim-ti-etch]
+  published alternative is a TiN top plate, as in the Newport Fab patent
+  (US 6,430,028 names "titanium nitride, tantalum nitride, aluminium or
+  a composite stack")[^pat-mim-newportfab] and in a Texas Instruments
+  patent that may still be in force (collapsed note below this list);
   the electrode materials of the Kar-Roy and Babcock papers are not
   stated in their public abstracts.[^kar-roy-1999][^babcock-2001] The
   balance between the two candidates turns partly on the unresolved
@@ -122,7 +122,8 @@ plate of the published Newport Fab process[^pat-mim-newportfab]).
   — the arrangement the Philips process relies on, stopping "in the TiN
   ARC film that coats the M5 layer and forms the bottom
   electrode"[^pat-mim-philips] — and a TiN plate would make the fab's
-  choice the same as every MiM patent in this module.[^pat-mim-newportfab][^pat-mim-ti-etch] TI's
+  choice the same as the published MiM patents in this
+  module.[^pat-mim-newportfab] TI's
   later "ALCAP" scheme instead caps the top electrode with aluminium,
   over a Ta- or TaN-based bottom electrode/copper-diffusion barrier
   and sidewall spacers, on a copper back end[^pat-mim-ti-alcap] —
@@ -142,6 +143,12 @@ plate of the published Newport Fab process[^pat-mim-newportfab]).
   stressed 0.1 µm plate on a 25 nm dielectric can crack or lift it.
   The deposition pressure is therefore chosen for low stress as well
   as low resistivity (industry practice[^ohring-2002]).
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+The Texas Instruments patent's top electrode "comprises TiN"; with the
+Newport Fab patent it is the second MiM patent in this module whose top
+plate is TiN.[^pat-mim-ti-etch]
+:::
 
 Without `CAPTIW1` the `capm` mask would define nothing, and the
 capacitor's top terminal would not exist.

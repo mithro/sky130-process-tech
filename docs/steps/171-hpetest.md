@@ -53,10 +53,14 @@ and waffle-drop layers are allowed "only inside areaid:mt (i.e., etest
 modules)", inside the seal ring or in the frame, and they allow larger
 via sizes inside `areaid.mt` (for example 0.200 µm and 0.800 µm via3
 squares, via3.1a).[^pdk-periph] The e-test modules are therefore placed
-in the frame outside the product dice (our reading of the rules), the
-{term}`scribe line` arrangement a TSMC patent describes as "a plurality
-of testlines in the scribe line area between adjacent wafer
-dies".[^pat-testline-tsmc]
+in the frame outside the product dice (our reading of the rules) — the
+{term}`scribe line` arrangement a TSMC patent that may still be in force
+describes, in the collapsed note below.
+
+:::{dropdown} From a patent shown as in force (US 7,679,384; estimated expiry 2028-06-06) — open to read
+The TSMC patent describes "a plurality of testlines in the scribe line
+area between adjacent wafer dies".[^pat-testline-tsmc]
+:::
 
 **A published test tile.** A separate structure set is public. Google's
 raw-data repository for the PDK states that its data were "collected
