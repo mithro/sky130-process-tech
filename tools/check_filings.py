@@ -129,6 +129,7 @@ RELATIONSHIPS = {
     "infineon-wafer-supply": "Infineon as SkyWater's wafer customer (2022 frame agreement, Fab 25 supply agreement)",
     "skywater-customers": "SkyWater names its customers",
     "skywater-ionq-merger": "IonQ's acquisition of SkyWater (2026)",
+    "skywater-governance": "SkyWater's auditor appointments, material weaknesses and restatements as a public company",
     "supplier-names-skywater": "a supplier's filing names SkyWater",
     "customer-names-skywater": "a customer's filing names SkyWater",
     "partner-names-skywater": "a technology partner's filing names SkyWater",

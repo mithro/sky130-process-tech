@@ -98,7 +98,8 @@ Cypress era: `cypress-fab-operations`, `cypress-process-technology`,
 
 SkyWater: `skywater-fab-history`, `skywater-ipo`, `skywater-suppliers`,
 `skywater-customers`, `oxbow-related-party`, `minnesota-fab-investment`,
-`skywater-ionq-merger`.
+`skywater-ionq-merger`, `skywater-governance` (added 2026-09-18: auditor
+appointments, material weaknesses and restatements as a public company).
 
 Infineon: `infineon-cypress-acquisition`, `infineon-fab25-sale`,
 `infineon-wafer-supply`.
