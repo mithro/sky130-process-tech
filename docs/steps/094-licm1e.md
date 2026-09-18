@@ -20,10 +20,16 @@ phosphosilicate glass of {ref}`PSG <step-089>` — together about
 reaches its landing surface: the {ref}`SPOX <step-080>` oxide over
 a source/drain or tap, which the etch must also clear, or the bare
 poly head inside a {term}`nitride cut` ({ref}`NPCME <step-079>`). The holes
-taper — the PDK's "Licon1 etch angle" is 10°[^pdk-03] — from the
-0.17 µm drawn opening to a "Standard Licon bottom CD" of
-0.08 µm,[^pdk-03] so the aspect ratio at the bottom is about 6:1.
-After it the resist is stripped and the wafer cleaned (the
+taper — the PDK's "Licon1 etch angle" is 10°[^pdk-03] — and the
+drawn 0.17 µm opening maps to a "Standard Licon bottom CD" of
+0.08 µm on the wafer.[^pdk-03] The two numbers are not stated to
+belong to the same depth, and they do not reconcile at the full
+0.5 µm of ILD: a 10° sidewall over 0.5 µm would close the hole by
+about 0.18 µm, while the published 0.17 → 0.08 µm narrowing over
+0.5 µm is about 5° (our arithmetic). How mask bias, {term}`resist trim`
+and taper divide the 0.09 µm is not public. The aspect ratio at the
+bottom is about 6:1 either way (0.5 µm over 0.08 µm). After it the
+resist is stripped and the wafer cleaned (the
 {ref}`SACETCH <step-095>` and the head of {ref}`ALLY1 <step-096>`,
 on our reading), and the holes are lined, silicided and filled.
 
@@ -66,8 +72,9 @@ of every transistor. The specific requirements:
 * **Vertical, tapered profile.** The 10° taper[^pdk-03] is
   deliberate: it widens the mouth of the hole for the ionised-metal
   {term}`liner` ({ref}`TI/TIN1 <step-097>`) and the {term}`CVD` tungsten fill
-  ({ref}`WDEP <step-099>`), and a controlled taper is how a 0.17 µm
-  drawn contact becomes a 0.08 µm bottom. Oehrlein and Kurogi
+  ({ref}`WDEP <step-099>`), and a controlled taper is part of how a
+  0.17 µm drawn contact becomes a 0.08 µm bottom; the rest of the
+  bias is not public (see "What this step is" above). Oehrlein and Kurogi
   review the sidewall chemistry that sets the profile.[^oehrlein-1998]
 * **Aspect-ratio-dependent etching.** Narrow, deep holes etch more
   slowly than wide ones ({term}`ARDE`, "RIE lag") because ions and
@@ -121,11 +128,14 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    hundred nanometres per minute and oxide : nitride selectivities of
    order 10 : 1 are typical of the era (category page[^nojiri-2015]).
    SkyWater lists CF₄ and CHF₃ on its AMAT DPS II.[^skw-01]
-4. **Endpoint and over-etch.** Optical emission (CO at 483 nm
-   rises while oxide is etched and falls as the holes clear; the
-   double-endpoint scheme of the Tokyo Electron
-   patent[^pat-cn-tel] is one way to detect it through the
-   small open area) followed by a timed over-etch that clears the
+4. **Endpoint and over-etch.** Optical emission — the CO band near
+   483 nm is the classic oxide-etch signal (industry practice;
+   typical value[^nojiri-2015]) — rises while oxide is etched and
+   falls as the holes clear. Detecting the transition through the
+   small open area of a contact layer is itself a problem: the Tokyo
+   Electron patent's double-endpoint scheme monitors CN emission "at
+   387 nm" to find first the oxide and then the nitride
+   endpoint.[^pat-cn-tel] A timed over-etch then clears the
    {ref}`SPOX <step-080>` oxide at the bottom of the diffusion
    contacts and the shallower poly contacts' residue without
    trenching the silicon or breaching the spacers.
