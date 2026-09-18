@@ -20,8 +20,8 @@ Patents' own record page, linked alongside it, is the working
 full-text link this index relies on for every member.
 
 Records were retrieved 2026-09-14 to 2026-09-19 (individual records carry their own
-`verified` date). The index holds 227 families (1518 members in total). Every family's representative
-record page was fetched; 1459 of the 1518 members have their own record page
+`verified` date). The index holds 228 families (1519 members in total). Every family's representative
+record page was fetched; 1460 of the 1519 members have their own record page
 fetched (the rest are listed in the fetched family table of their
 representative but were not fetched separately — every possible term
 of those families' members has already ended, so nothing about
@@ -67,16 +67,16 @@ relation:
 
 | | Families | Members |
 |---|---|---|
-| Total | 227 | 1518 |
-| Shown as expired | 177 | 1089 |
+| Total | 228 | 1519 |
+| Shown as expired | 178 | 1090 |
 | Shown as in force | 47 | 419 |
 | Status unknown | 3 | 10 |
 
 ## Scope and completeness
 
-This index began as every patent already cited on a docs page (169 families of the total entered this way and no other), then widened by following each seed's Google Patents family table and citation lists, by a handful of assignee+keyword searches for specific process modules, and by an `assignee="Weebit Nano"` search once ReRAM was brought into scope. It is **not** the result of an exhaustive, systematic sweep of every process module against every lineage assignee: a round-1 independent review of this dataset (not published; see the project's own working notes) found at least a dozen absent Cypress/Infineon families from just three more searches, named six process modules never searched at all, and notes that the index holds 50 Cypress Semiconductor families and 4 Infineon Technologies families but only 1 SkyWater Technology family, though SkyWater is named in this index's own scope. Treat this index as a starting point for the SKY130/Cypress/SkyWater/Infineon patent landscape, not as proof that a family absent from it does not exist.
+This index began as every patent already cited on a docs page (169 families of the total entered this way and no other), then widened by following each seed's Google Patents family table and citation lists, by a handful of assignee+keyword searches for specific process modules, and by an `assignee="Weebit Nano"` search once ReRAM was brought into scope. It is **not** the result of an exhaustive, systematic sweep of every process module against every lineage assignee: a round-1 independent review of this dataset (not published; see the project's own working notes) found at least a dozen absent Cypress/Infineon families from just three more searches, named six process modules never searched at all, and notes that the index holds 51 Cypress Semiconductor families and 4 Infineon Technologies families but only 1 SkyWater Technology family, though SkyWater is named in this index's own scope. Treat this index as a starting point for the SKY130/Cypress/SkyWater/Infineon patent landscape, not as proof that a family absent from it does not exist.
 
-Discovery methods recorded across the 227 families: 172 families `cited-in-docs`; 46 families `assignee-search`; 13 families `citing-seed`; 10 families `cited-by-seed`; 4 families `continuation-search`. A family can carry more than one method (reached more than one way), so these do not sum to the family count.
+Discovery methods recorded across the 228 families: 172 families `cited-in-docs`; 47 families `assignee-search`; 13 families `citing-seed`; 10 families `cited-by-seed`; 4 families `continuation-search`. A family can carry more than one method (reached more than one way), so these do not sum to the family count.
 
 ## Other views
 
