@@ -272,7 +272,7 @@ fab (SKY130's energy and dose are not public):
     <https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>,
     <https://github.com/google/skywater-pdk/blob/main/docs/rules/masks.csv>
 [^pdk-06]: SkyWater PDK Authors, *Layers Reference* (including Table
-    F2b, mask generation by device) and `gds_layers.csv`, SkyWater
+    F2b, the mask generation table) and `gds_layers.csv`, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>,
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/gds_layers.csv>
