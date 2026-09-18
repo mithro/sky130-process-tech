@@ -47,7 +47,7 @@ Status values: open / fixed / declined.
 | 005-L2 | 005-stinite | fixed | Thung defines the aspect-ratio formula only; split the citation |
 | 005-L3 | 005-stinite | declined | reviewer's own text marks this optional ("strengthens the page") |
 | 006-L1 | 006-stie | fixed | folded into the 006-H1 rewrite (ITRS "node on node" sentence dropped, Thung's 66% figure used instead) |
-| 006-L2 | 006-stie | open | HDP-void quote clipped/one step removed |
+| 006-L2 | 006-stie, 011-filox | fixed | verified by fetch (open-access PDF, pypdf extraction): Thung attributes the quote to "a review it cites [7]", and the clipped page text dropped "edge fallout due to" and expanded "HDP"; fixed both step 006 and the same clipping on step 011 |
 | 006-L3 | 006-stie, 009-dnis | fixed | quoted SkyWater's own spellings ("Gasonic PEP", "Mattson Aspen2") in both places; same commit as 009-L1 |
 | 007-L1 | 007-dnm | fixed | patents.google.com bot-blocked this session (503); both independent reviews quote the same specific number from a patent already cited two paragraphs earlier on this page, applied as given |
 | 007-L2 | 007-dnm | fixed | reworded to point at STIE instead of restating a number, as part of the 006-H1 commit |
