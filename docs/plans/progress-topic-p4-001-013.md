@@ -19,7 +19,7 @@ Status values: open / fixed / declined.
 | 001-M1 | 001-smat | fixed | verified: PDK device-details page distinguishes `nfet_20v0_zvt` (p-well+Vt blocked) from `nfet_20v0_nvt` ("similar to isolated", Vt blocked); raw-data repo has no zvt folder. But `docs/steps/026-pwbm.md` and `docs/references/public-sources.md`'s RAW-DATA-HV-MOSFETS entry already resolve this: the measurement lives in the `nfet_20v0_nvt` folder but its pad geometry (2x30/5.5, `Psub` body) matches the PDK's zvt e-test structure, not nvt's (30/1.0). Fixed 001-smat.md to read it the same way as those two already-correct pages, rather than the reviewer's simpler "must be nvt" fix, which would have put 001-smat.md at odds with 026-pwbm.md and the inventory. |
 | 003-M1 | 003-isonit | fixed | verified AmberWave 500-2000 Å = 50-200 nm (already fetched by both reviews and self-consistent with the page's own later quote); lower bound of the stated range didn't match; fixed and tied the 150 nm working figure explicitly to the patent's midpoint |
 | 004-M1 | 004-fom | fixed | matched docs/masks/fom.md and docs/masks/index.md, which already mark this pairing "(inference)" |
-| 008-M1 | 008-dni | open | straggle claim wrong/uncited |
+| 008-M1 | 008-dni | fixed | reworded; the MeV straggle-vs-offset physics claim in the review is standard implant physics, order-of-magnitude plausible, no public SKY130 figure exists so dropped the false-precision framing |
 | 009-M1 | 009-dnis | open | uncited furnace temperature |
 | 011-M1 | 011-filox | open | fill-thickness arithmetic self-inconsistent |
 | 013-M1 | 013-ns19 | open | VGH-1967 quotation unverifiable/probably not verbatim |
@@ -52,9 +52,9 @@ Status values: open / fixed / declined.
 | 007-L1 | 007-dnm | open | resist thickness: use patent number not book |
 | 007-L2 | 007-dnm | fixed | reworded to point at STIE instead of restating a number, as part of the 006-H1 commit |
 | 007-L3 | 007-dnm | open | "deliberate trade" overstated |
-| 008-L1 | 008-dni | open | Axcelis quote attributed to wrong product line |
-| 008-L2 | 008-dni | open | Bourdelle conclusion not in abstract |
-| 008-L3 | 008-dni | open | uncited P-vs-As preference |
+| 008-L1 | 008-dni | fixed | verified by fetch: prnewswire release is about GSD Ovation (2021), "3 MeV" belongs to GSD/HE Ovation specifically; reworded |
+| 008-L2 | 008-dni | fixed | verified by fetch: IEEE Xplore abstract gives non-monotonic Vt-vs-dose with a peak near 1e14, not a simple "keeps dose modest" story; reworded |
+| 008-L3 | 008-dni | fixed | added citations already on the page |
 | 009-L1 | 009-dnis, 006-stie | open | same as 006-L3, one fix |
 | 009-L2 | 009-dnis | open | crust claim cite primary sources too |
 | 010-L1 | 010-linox | open | Lattice figure is thickened 90nm-node liner |
