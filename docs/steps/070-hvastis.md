@@ -64,7 +64,7 @@ moderate-dose tilted implant, 200 mm, 130 nm era:
    nitrogen[^fujimura-1990] or water vapour[^fujimura-1991] added as
    Fujimura's group established for implanted resist. A short,
    cooler first stage opens the thin crust — the "low-temperature
-   (<220 °C)" first step of the two-stage recipe[^pat-strip-mosel] —
+   (<220° C.)" first step of the two-stage recipe[^pat-strip-mosel] —
    and a hot stage clears the remaining film; {term}`endpoint` by optical
    emission followed by a timed over-ash, kept short because the film
    is thin. Horsky's and Roche's studies of resist outgassing and
@@ -216,7 +216,10 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
     Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30; listings expire. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+    retrieved 2026-08-30; listings expire, and the page refused later
+    automated retrieval (HTTP 403, 2026-09-18); no Wayback copy exists.
+    The quoted text is preserved in the source inventory.
+    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22; "Raw materials." run-in paragraph
     under "Manufacturing". <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>

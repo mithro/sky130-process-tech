@@ -16,10 +16,11 @@
 after it has masked two implants — the arsenic tip
 {ref}`ASTI <step-065>` and the boron {term}`halo` {ref}`BHI <step-066>` — and
 cleans the wafer so that the next tip mask, {ref}`HVNTM <step-068>`, can
-be coated on a bare, particle-free surface. It is the first resist strip
-after the gate etch and the first of the three strips in the tip
-module; in this reference each tip mask is followed by such a strip
-({ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`).
+be coated on a bare, particle-free surface. It is the first
+stand-alone resist strip after the gate etch — the gate-etch resist is
+stripped inside {ref}`P1ME <step-062>` — and the first of the three
+strips in the tip module; in this reference each tip mask is followed
+by such a strip ({ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`).
 
 The resist being removed is the roughly 1 µm i-line implant resist
 inferred on the {ref}`NTM <step-064>` page (the PDK's nominal
@@ -79,7 +80,7 @@ An industry-generic high-dose implant-strip sequence for a 200 mm,
    (>200° C.) dry ashing" lets the volatile bulk "build up pressure
    beneath the implant-hardened surface layer",[^pat-strip-mosel] the
    first stage runs cool — "removed by oxygen and nitrogen/hydrogen
-   plasma in a low-temperature (<220 °C) environment"[^pat-strip-mosel]
+   plasma in a low-temperature (<220° C.) environment"[^pat-strip-mosel]
    — until the crust is opened, after which a hotter bulk stage
    finishes the film. Fujimura's group showed why nitrogen[^fujimura-1990]
    and water vapour[^fujimura-1991] are added to the oxygen for
@@ -325,7 +326,10 @@ practice).[^txt-02]
     <https://en.wikipedia.org/wiki/RCA_clean>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
     Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30; listings expire. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+    retrieved 2026-08-30; listings expire, and the page refused later
+    automated retrieval (HTTP 403, 2026-09-18); no Wayback copy exists.
+    The quoted text is preserved in the source inventory.
+    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22; "Raw materials." run-in paragraph
     under "Manufacturing". <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
