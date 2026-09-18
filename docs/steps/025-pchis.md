@@ -100,7 +100,7 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 * **DNS wet bench / FSI Mercury**.[^skw-01] Strength: strong for
   existence.
 * **KLA-Tencor SP1** unpatterned surface scanner, our reading of "SP1"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
   Strength: medium.
 
 ## Resources required
@@ -128,8 +128,8 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 ### Cross-check
 
 * SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
-* Indeed, SkyWater Technology Foundry listings —
-  "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+* LinkedIn, SkyWater Technology Foundry listings —
+  "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
 * Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the popping
@@ -201,9 +201,9 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^wiki-rca]: Wikipedia, *RCA clean*.
     <https://en.wikipedia.org/wiki/RCA_clean>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page), retrieved 2026-08-30; listings expire.
-    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>

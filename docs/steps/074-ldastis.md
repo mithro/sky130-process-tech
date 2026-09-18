@@ -118,7 +118,7 @@ An industry-generic post-implant strip and pre-anneal clean for a
   pre-anneal clean needs. Strength: strong for existence; the
   assignment is an inference from the chemistry list.
 * **KLA-Tencor AIT** patterned-wafer inspection, our reading of "AIT"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
   Strength: medium.
 
 ## Resources required
@@ -154,8 +154,8 @@ An industry-generic post-implant strip and pre-anneal clean for a
   "HF/SC1/SC2".[^skw-01]
 * SkyWater PDK, *Criteria & Assumptions* — photoresist thickness
   1.14 µm.[^pdk-03]
-* Indeed, SkyWater Technology Foundry listings — defect-metrology
-  tools.[^job-01]
+* LinkedIn, SkyWater Technology Foundry listings — defect-metrology
+  tools.[^job-06]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
 * Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the two-stage
@@ -232,12 +232,9 @@ An industry-generic post-implant strip and pre-anneal clean for a
     <https://openlibrary.org/isbn/9780130815200>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30; listings expire, and the page refused later
-    automated retrieval (HTTP 403, 2026-09-18); no Wayback copy exists.
-    The quoted text is preserved in the source inventory.
-    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22; "Raw materials." run-in paragraph
     under "Manufacturing". <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>

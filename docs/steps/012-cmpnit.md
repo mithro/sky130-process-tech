@@ -127,7 +127,7 @@ polisher, which is what this step needs.
   existence; a brush scrubber is not named on any public page (open
   question).
 * **Defect inspection — KLA AIT / SP1**, our reading of "AIT" and "SP1"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
   Strength: medium.
 
 ## Resources required
@@ -173,8 +173,8 @@ polisher, which is what this step needs.
   over the active area as a stop layer".[^pat-sti-amberwave]
 * Kim et al. (Spansion), US 7,439,141 — isolation oxide "polished back
   … approximately level with the nitride mask".[^pat-sti-cr]
-* Indeed, SkyWater *Defect Technician 2* posting — inspection
-  tools.[^job-01]
+* LinkedIn, SkyWater *Defect Technician 2* posting — inspection
+  tools.[^job-06]
 
 ### High-level understanding
 
@@ -249,10 +249,9 @@ polisher, which is what this step needs.
 
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page; *Defect Technician 2* posting),
-    retrieved 2026-08-30; listings expire.
-    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^skw-07]: SkyWater Technology, *A Day in the Life of a SkyWater
     Maintenance Technician*, 2023-12-14. <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater

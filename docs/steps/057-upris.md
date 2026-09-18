@@ -114,10 +114,13 @@ clean, for a 200 mm, 130 nm-era fab:
 * **DNS wet bench or FSI Mercury** ("industry standard HF/SC1/SC2")
   for a full RCA sequence, or the **Akrion Gamma** bench.[^skw-01]
   Strength: strong for existence.
-* Particle and patterned-wafer inspection of the KLA-Tencor Surfscan
-  SP1 and AIT classes (category page); no public SkyWater source we
-  can now retrieve names an inspection tool for this strip. Strength:
-  none.
+* **Particle and patterned-wafer inspection — KLA-Tencor Surfscan SP1
+  and AIT (our reading).** A SkyWater *Defect Technician 2* posting
+  reads "General operation of semiconductor defect metrology tools:
+  SEM/AIT/KLA/SP1/EV300/1X";[^job-06] we read "SP1" and "AIT" as
+  KLA-Tencor's Surfscan SP1 unpatterned scanner and Surfscan AIT
+  patterned inspector, and the posting expands none of the
+  abbreviations. Strength: medium.
 
 ## Resources required
 
@@ -147,6 +150,9 @@ clean, for a 200 mm, 130 nm-era fab:
 
 * SkyWater, *Facilities & Capabilities* — ashers; Akrion, DNS and
   FSI benches with their chemistries.[^skw-01]
+* LinkedIn, SkyWater *Defect Technician 2* posting — the
+  defect-metrology tool list read as KLA-Tencor Surfscan SP1 and
+  AIT.[^job-06]
 * SkyWater, Form S-1 and Form 10-K — chemical suppliers.[^sec-01][^sec-02]
 * Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — two-stage
   ash.[^pat-strip-mosel]
@@ -207,6 +213,9 @@ clean, for a 200 mm, 130 nm-era fab:
 
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,

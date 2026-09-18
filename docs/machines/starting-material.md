@@ -206,7 +206,7 @@ not the SKY130 wafer (our reading).[^skw-01]
 Two other public SkyWater sources touch the class. A *Defect Technician
 2* posting asks for "General operation of semiconductor defect metrology
 tools: SEM/AIT/KLA/SP1/EV300/1X", which the step pages read as including
-KLA-Tencor SP1 unpatterned-wafer inspection.[^job-01] And the S-1 names
+KLA-Tencor SP1 unpatterned-wafer inspection.[^job-06] And the S-1 names
 the wafer suppliers: "GlobalWafers Singapore Pte. Ltd. (silicon wafers)"
 and "SEH America, subsidiary of Shin-Etsu Handotai, Ltd. (silicon
 wafers)".[^sec-01] Cypress's 2015 notice qualified GlobalWafer wafers for
@@ -222,7 +222,7 @@ not say where in any flow the scribe is used; its place at the head of
 the furnace and pre-clean group is a layout, not a statement, and the
 {ref}`SMAT <step-001>` page grades the entry "strong" while noting that
 the page "does not say which step uses it". The SP1 reading rests on a
-job posting and is **medium**;[^job-01] the S-1 supplier list is
+job posting and is **medium**;[^job-06] the S-1 supplier list is
 **strong** for the wafer vendors but names no tool.[^sec-01] The
 caveats that apply to every listed tool are under
 {ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
@@ -340,8 +340,8 @@ limits and marking scheme are not public.
   suppliers.[^sec-01]
 * Cypress Semiconductor, PIN152804 (2015) — GlobalWafer wafers qualified
   for the S8 family at Fab 4.[^cyp-06]
-* Indeed, SkyWater *Defect Technician 2* posting — the SP1 in the defect
-  tool list.[^job-01]
+* LinkedIn, SkyWater *Defect Technician 2* posting — the SP1 in the defect
+  tool list.[^job-06]
 * KLA, *Surfscan SP1TBI Pro / SP1DLS Pro* brochure (2021) — the scanner
   class's illumination modes, haze maps, IQC role and sorting
   stations.[^kla-sp1-2021]
@@ -405,7 +405,7 @@ limits and marking scheme are not public.
   and to which SEMI mark standard, is not public.
 * No incoming surface scanner, flatness or resistivity gauge or wafer
   sorter is named on the capabilities page; the SP1 reading rests on a
-  job posting.[^skw-01][^job-01]
+  job posting.[^skw-01][^job-06]
 * The incoming limits for particles, haze and COPs on the SKY130 wafer
   are not public.
 * The model list above is incomplete: it covers the Tencor/KLA-Tencor
@@ -499,10 +499,9 @@ limits and marking scheme are not public.
 [^smits-1958]: F. M. Smits, "Measurement of Sheet Resistivities with the
     Four-Point Probe", *Bell System Technical Journal* **37**(3),
     711–718 (1958). <https://doi.org/10.1002/j.1538-7305.1958.tb03883.x>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30; listings expire.
-    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22; "Raw materials." paragraph re-read from the Wayback
     Machine capture of 2021-04-13 on 2026-09-13.

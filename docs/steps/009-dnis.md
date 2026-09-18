@@ -114,7 +114,7 @@ fab:
   from their HF/SC1/SC2 chemistry, SC-2 being listed only for these two
   benches.
 * **Patterned-wafer inspection — KLA-Tencor AIT**, our reading of "AIT"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
   Strength: medium.
 
 ## Resources required
@@ -146,8 +146,8 @@ fab:
 * SkyWater, *Facilities & Capabilities* — "Gasonic PEP"; "Mattson
   Aspen2"; Iridia; Akrion Gamma with sulphuric/SC1/phosphoric/BOE and
   spin/IPA dry; DNS and FSI Mercury HF/SC1/SC2.[^skw-01]
-* Indeed, SkyWater Defect Technician 2 posting —
-  "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+* LinkedIn, SkyWater Defect Technician 2 posting —
+  "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
 * Kim et al. (Spansion), US 7,439,141 — pad-oxide undercut of
   100–300 Å before liner oxidation.[^pat-sti-cr]
 
@@ -210,9 +210,9 @@ fab:
 
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30; listings expire. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^pat-sti-cr]: U. Kim, Y. Sun, M. S. Chang et al. (Spansion LLC; later
     Cypress Semiconductor / Infineon), *Shallow trench isolation
     approach for improved STI corner rounding*, US 7,439,141 B2,
