@@ -115,10 +115,13 @@ below are typical or taken from contemporaneous patents.
   Indium" for the SONOS cell.[^cyp-25] For an implant that *lowers* the
   threshold by counter-doping, the species is n-type — arsenic or
   phosphorus — at similar doses.[^pat-vt-rrr]
-* **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻²: an LSI Logic
-  patent has the threshold-adjust boron "implanted through the
-  sacrificial gate oxide in doses between 1×10¹² and 1×10¹³ atoms/cm² …
-  at implant energies between 50 and 100 keV";[^pat-vt-lsi] an AMD
+* **Energy and dose.** Tens of keV — up to about 100 keV in published
+  examples — and 10¹²–10¹³ cm⁻²: an LSI Logic patent has the
+  threshold-adjust boron "implanted through the sacrificial gate oxide
+  in doses between 1×10¹² and 1×10¹³ atoms/cm² … at implant energies
+  between 50 and 100 keV" (that implant is made after the well anneal,
+  through a newly grown 200–500 Å sacrificial oxide, not through a pad
+  oxide).[^pat-vt-lsi] An AMD
   patent gives "approximately 10-20 KeV for boron or 45-90 KeV for BF₂
   at a concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a laterally
   doped channel implant made after gate formation with the gate pillars
