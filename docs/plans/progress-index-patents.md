@@ -534,3 +534,148 @@ Commits this round: `4505ac7` (14 named-list families), `19e15e2`
 (SkyWater + salicide), and one more after this file update (W-plug
 family + this progress-file section + final checks). All pushed to
 `topic/index-patents-coverage`.
+
+## Round 4: independent-verification fixes (H1/H2/M1-M4/L1/L2) and Part 2 (PPUBS discovery)
+
+Verification: `tmp/verify-index-patents-coverage.md` (not tracked;
+2026-09-19, verdict "fix first"). Every finding was re-verified
+independently against the branch's own `tmp/patent-cache/` before being
+fixed (nothing taken on the verifier's word alone); none was declined.
+
+**Part 1 — verification fixes**, one commit each:
+
+* **H1** — `tmp/parse_gp.py`'s `top_metadata()` read a member's status
+  from the first `itemprop="ifiStatus"` span in the page, which on a
+  published-application page belongs to the "Worldwide applications"
+  table and can disagree with the page's own Legal-status field
+  (`itemprop="legalStatusIfi"` > `"status"`). Fixed the selector,
+  re-derived every fetched member's status of the 17 families the prior
+  round added from the already-cached pages (no re-fetch), and
+  recomputed the 12 affected families' `legal_status`/`expiry`/`expired`
+  (46 `Active` -> `Granted`, 1 `Expired - Lifetime` -> `Granted`; three
+  families' published expiry estimates corrected: GP48743295
+  2032-03-31 -> 2029-04-24, GP48743335 2032-03-27 -> 2030-06-18,
+  GP58691400 2036-09-29 -> 2032-12-14). No family's `expired` value
+  flipped — every one still has a genuinely Active granted member.
+  Added a checker guard (an application-type member recorded `Active`
+  now fails `check_patents.py`) so this cannot recur silently.
+* **H2** — the landing page's listed-only-members sentence claimed
+  "every possible term... has already ended" for all 59 listed-only
+  members; false for 44 of them (6 families, not shown expired,
+  estimated to run into the 2030s). `gen_index()` now states the real
+  split (fetched vs. listed, and of the listed, expired-family vs.
+  bounded-only-by-rule-3), and the exception is recorded in
+  `patent-index-design.md`'s "Verification levels".
+* **M1** — added the round-1-M4-style reinstatement note to
+  `GP48952138` (fee lapse 2025-09-22, adjusted expiration 2027-01-30,
+  37 CFR 1.378 window open to about 2027-09-22 — verified directly
+  against the cached page's own legal events). Kept `expired: true` per
+  design rule 1 and round-2's own precedent, matching what the verifier
+  actually asked for (a note), not a flag flip.
+* **M2** — corrected the SkyWater carbon-film family's relevance
+  reason/discovery_note/notes, which said three times that no
+  platform/node was named; the application actually names 90 nm
+  processing technology and calls itself CMOS technology-agnostic
+  (verified against the cached page). Conclusion (not evidence for
+  SKY130) unchanged.
+* **M3** — normalised `GP52707807`'s Chinese-only assignee heading
+  (`## 美商賽普拉斯半導體公司`) to the Latin-script reading its own US
+  siblings (US8993457B1, US9496144B2, US9911613B2) give on their own
+  fetched pages, per round-1 finding M1's own prescribed fix; noted
+  `GP42945510`'s "Longitudinal Flash Storage Solutions Co., Ltd." as
+  Google's rendering of the same Longitude Flash Memory Solutions Ltd.
+* **M4** — narrowed the Spansion family's "no public source... ties
+  Spansion to the Cypress/SkyWater fab lineage" to the fab-lineage
+  question specifically, and acknowledged the USPTO assignment events
+  on the family's own cached page naming Cypress alongside Spansion
+  after their 2015 merger. Relation (technique-class) unchanged.
+* **L1/L2** — design-doc tidy-ups: named the fourth `continuation-search`
+  family (`GP46465479`); marked the "Known blind spot" paragraph's own
+  ask (a per-estate continuation search) done, since it now is.
+
+All six commits: `uv run tools/check_patents.py` 228 families, 0
+problems; `uv run tools/gen_patents.py --check` 6 pages, 0 problems.
+
+**Part 2 — discovery via a source that doesn't bot-block.**
+
+Google Patents confirmed still blocked this round (bare domain root
+returns the site-wide bot-check, same as every prior round). Section 7
+of the verification report documented USPTO Patent Public Search
+(PPUBS) as reachable and keyless; used it as the fixer brief's
+prescribed fallback.
+
+* Wrote `tmp/ppubs_search.py` (not tracked): paced (16s), cached
+  (`tmp/patent-cache/ppubs/`, not tracked) sweeps, one combined
+  assignee + process-module-title query per assignee (Cypress
+  Semiconductor, SkyWater Technology, Longitude Flash Memory Solutions,
+  Infineon Technologies LLC, Spansion, Ramtron, Weebit Nano) — see
+  `docs/plans/patent-discovery-log.md` for the full method, the query
+  text, and why a CPC-field restriction in the query itself had to be
+  abandoned (client-side CPC filtering used instead, on the classes the
+  brief named plus three CPC-reclassification classes discovered to
+  matter: `H10D`, `H10W`, `H10P`).
+* 377 hits, 211 distinct DOCDB families: 39 already in the dataset, 24
+  added this round, 136 in scope but left for later (mostly a large
+  Spansion estate and most of the remaining Weebit hits — see the
+  discovery log's reasoning), 12 out of scope (circuit/protection/EDA).
+* Documented a new "PPUBS fallback" verification path in
+  `patent-index-design.md`: an alternate `family.source` string so a
+  PPUBS-built family is never misrepresented as Google-verified; no
+  legal status or adjusted-expiration date (PPUBS reports neither, so
+  `status`/`legal_status.status` are `null`); expiry computed purely
+  from term arithmetic, with the crucial safety rule that a family
+  whose earliest priority is on or after 1999-05-29 is **never** marked
+  `expired: true` from arithmetic alone (a real US term adjustment could
+  extend it, and PPUBS cannot show one) — only 6 of the 24 added
+  families, all with pre-1999-05-29 priority, are `expired: true`; the
+  other 18 are `unknown` and collapsed. `tools/check_patents.py`'s
+  `FAMILY_SOURCES` accepts the new literal source string.
+* Fixed `gen_patents.py`'s dropdown/landing-page text, which
+  unconditionally claimed a fetched Google Patents "representative's
+  own record page" regardless of source; now names PPUBS where that is
+  the actual source and splits the fetched/listed member counts by
+  source.
+* **Known side effect, not a data change:** the splice script used to
+  insert the 24 new families (`tmp/add_ppubs_batch1.py`, modelled on
+  the existing `tmp/add_wplug.py` pattern) re-sorts *every* existing
+  family block by its own (quote-stripped) priority date before
+  writing the file back. The pre-existing file turned out to have 3021
+  pairwise priority inversions out of 228 families (i.e. it was not
+  actually in strict ascending-priority order, despite the design's own
+  "sorted by priority date" statement) — plausibly the residue of
+  several rounds' independent splicing scripts each sorting only their
+  own small batch. This round's write incidentally corrects that to a
+  true global sort (0 inversions) as a side effect of adding the 24
+  families, which produced a much larger textual diff on
+  `data/patents.yaml` than the 24 additions alone would need.
+  **Verified independently before and after** (not just asserted): a
+  family-by-family structural diff (by `id`, ignoring position) found
+  exactly 24 additions, 0 removals, and 0 content changes to any
+  pre-existing family. `uv run tools/check_patents.py` and
+  `uv run tools/gen_patents.py --check` both pass, and a full `-W`
+  Sphinx build is clean. Flagged here so a future reviewer diffing
+  `data/patents.yaml` understands why the diff is large rather than
+  suspecting corruption.
+
+Commits this round: one per verification finding (H1, H2, M1, M2, M3,
+M4, L1/L2), one Part 2 infra commit (PPUBS fallback schema/design-doc
+change), and one Part 2 data commit (24 families). Pushed to
+`topic/index-patents-coverage`.
+
+### Left for a future round
+
+* The ~136 in-scope PPUBS hits not added (see
+  `docs/plans/patent-discovery-log.md`): mainly the Spansion estate
+  (needs the same per-family M4-style lineage care, at scale) and most
+  of the Weebit Nano hits (mostly circuit-level programming/read-write
+  schemes, likely out of scope by the brief's own exclusion, but not
+  individually triaged).
+* `skywater`/`skywater technology foundry` returned 0 new hits under
+  this sweep's module-keyword restriction; a broader, unrestricted
+  SkyWater assignee sweep (title keywords aside) was not run.
+* Every PPUBS-sourced family records only the single US publication its
+  own query returned; no attempt was made to find its other-jurisdiction
+  or other-US-member siblings (would need either a further PPUBS query
+  per family, keyed on `familyIdentifierCur`, or Google Patents access).
+* The design's open questions (DOCDB family-unit switch, assignee-name
+  normalisation for mergers) are unchanged from round 3.
