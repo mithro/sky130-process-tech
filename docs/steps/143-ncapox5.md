@@ -38,8 +38,8 @@ not show one here, and so offers no hint of this cap's thickness
 (via3.1[^pdk-periph]) etched 0.39 µm deep to metal 3 — an
 {term}`aspect ratio` of about 1.95:1, a little below via 2's 2.1:1 —
 and, over each capacitor, a shallower via to the TiW top plate (the
-PDK's `cap_mim` cross-section draws vias from metal 4 landing on "CAPM" and on
-"M3 (plate 1)"[^pdk-07]).
+PDK's `cap_mim` cross-section draws vias labelled "Via3" from metal 4
+landing on "CAPM" and on "M3 (plate 1)"[^pdk-07]).
 
 ## Step category
 
@@ -106,9 +106,11 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
    analyse its kinetics[^raupp-1992] — or SiH₄/N₂O plasma oxide, whose
    properties depend on RF power as Chapple-Sokol, Tierney and Batey
    measured.[^chapple-sokol-1989] The Cypress Fab 4 reports list a
-   "1000A TEOS" film in the passivation stack,[^cyp-qtp-123907][^cyp-qtp-014807]
-   which shows a PECVD TEOS oxide of cap-like thickness in the same
-   fab; that this cap is of the same kind is our inference.
+   "1000A TEOS" film under a PECVD nitride in the passivation
+   stack,[^cyp-qtp-123907][^cyp-qtp-014807] which shows a TEOS oxide
+   of cap-like thickness in the same fab; that it is a plasma rather
+   than a thermal TEOS is our inference from the aluminium underneath,
+   and that this cap is of the same kind is a further inference.
 3. **Thickness.** Not public; a cap of the order of 0.05–0.15 µm is
    typical of the practice (industry-typical value[^txt-05]), sized so
    that polished NILD5 plus cap reaches the 0.39 µm via-3 height[^pdk-04].
@@ -177,7 +179,7 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
   film; met3 and met4 bottom levels; `met3` 0.845 µm.[^pdk-04]
 * SkyWater PDK, *Periphery rules* — via3.1 0.200 µm.[^pdk-periph]
 * SkyWater PDK, *Device Details* — the `cap_mim` cross-section with
-  vias landing on "CAPM" and on "M3 (plate 1)".[^pdk-07]
+  vias labelled "Via3" landing on "CAPM" and on "M3 (plate 1)".[^pdk-07]
 * SkyWater, *Facilities & Capabilities* — "PECVD TEOS, C2 and Producer
   – low temp options"; "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01]
 * Cypress, QTP 123907/132302/132301 and QTP 014807 — "1000A TEOS" in
