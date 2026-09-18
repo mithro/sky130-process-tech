@@ -32,25 +32,20 @@ table.
 * {ref}`paper-gross-2021a` — David Gross et al., ASMC 2021 (affiliation inference)
 * {ref}`paper-hsieh-2021a` — E. R. Hsieh et al., IEEE Electron Device Letters 2021 (affiliation inference)
 * {ref}`paper-le-2021a` — Binh Q. Le et al., IEEE Transactions on Electron Devices 2021 (affiliation inference)
-* {ref}`paper-yu-2022a` — Andrew Yu et al., IEEE Electron Device Letters 2022 (affiliation inference)
 * {ref}`paper-srimani-2023a` — T. Srimani et al., VLSI Symposium 2023
 * {ref}`paper-upton-2023a` — Luke R. Upton et al., ISQED 2023
 * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025
-* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
 
 ## Other institutions
 
 | Institution | Papers |
 |---|---|
-| Air Force Research Laboratory | {ref}`paper-pepel-2025a` |
 | Analog Devices | {ref}`paper-srimani-2023a` |
 | Analog Devices, Inc. | {ref}`paper-bishop-2020a` |
 | Apple | {ref}`paper-yang-2024a` |
 | Arc PBC | {ref}`paper-li-2024a` |
-| Arizona State University | {ref}`paper-pepel-2025a` |
 | BAL-TEC Innovations | {ref}`paper-wang-2006a` |
 | Barcelona Supercomputing Center | {ref}`paper-rodriguez-ferrandez-2023a` |
-| BlueHalo | {ref}`paper-pepel-2025a` |
 | Cannan Inc. | {ref}`paper-yang-2024a` |
 | Carnegie Mellon University | {ref}`paper-singhani-2023a`, {ref}`paper-choi-2025a` |
 | Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional | {ref}`paper-baungarten-leon-2024a` |
@@ -75,9 +70,11 @@ table.
 | IOActive | {ref}`paper-cirimelli-low-2023a` |
 | Johannes Kepler University Linz | {ref}`paper-olyanasab-2025a` |
 | Marmara University | {ref}`paper-karatas-2025a` |
-| Massachusetts Institute of Technology | {ref}`paper-bishop-2020a`, {ref}`paper-srimani-2020a`, {ref}`paper-yu-2022a`, {ref}`paper-srimani-2023a`, {ref}`paper-choi-2025a` |
+| Massachusetts Institute of Technology | {ref}`paper-bishop-2020a`, {ref}`paper-srimani-2020a`, {ref}`paper-srimani-2023a`, {ref}`paper-choi-2025a` |
 | Microelectronics Circuits Centre Ireland (MCCI) | {ref}`paper-montanares-2025a` |
 | NanoIntegris | {ref}`paper-srimani-2020a` |
+| National ASIC Center | {ref}`paper-wang-2024a` |
+| National Center of Technology Innovation for EDA | {ref}`paper-wang-2024a` |
 | National Central University | {ref}`paper-hsieh-2021a`, {ref}`paper-le-2021a` |
 | National Institute of Standards and Technology | {ref}`paper-li-2024a` |
 | New Mexico State University | {ref}`paper-hossain-2026a` |
@@ -92,6 +89,7 @@ table.
 | San José State University | {ref}`paper-hsieh-2021a`, {ref}`paper-le-2021a` |
 | Simtek Corporation | {ref}`paper-fliesler-2008a` |
 | Singapore University of Technology and Design | {ref}`paper-teo-2024a` |
+| Southeast University | {ref}`paper-wang-2024a` |
 | Stanford University | {ref}`paper-hsieh-2019a`, {ref}`paper-hsieh-2021a`, {ref}`paper-le-2021a`, {ref}`paper-poole-2023a`, {ref}`paper-chen-2023a`, {ref}`paper-srimani-2023a`, {ref}`paper-upton-2023a`, {ref}`paper-choi-2025a`, {ref}`paper-li-2025a` |
 | Taiwan Semiconductor Manufacturing Company | {ref}`paper-hsieh-2021a` |
 | Texas A&M University | {ref}`paper-price-2025a` |

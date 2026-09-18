@@ -9,7 +9,7 @@
   year: 2020
   venue: Proceedings of the 39th International Conference on Computer-Aided Design
   status: held
-  names_process: true
+  names_process: false
   reason: Flow paper reporting an SoC taken "from concept to silicon validation"; the reference list cites
     the SKY130 PDK, but the retrievable text does not say the silicon was made in SKY130.
   decided: '2026-09-14'
@@ -29,7 +29,7 @@
   year: 2021
   venue: WOSET
   status: excluded
-  names_process: true
+  names_process: false
   reason: FABulous framework paper; the PDF compares CLB area with OpenFPGA for a SKY130 MPW tape-out
     but reports no silicon measurements.
   decided: '2026-09-14'
@@ -393,7 +393,7 @@
   year: 2025
   venue: 2025 International Conference on Sustainable Technologies for Humanity and Smart World (HSWTech)
   status: excluded
-  names_process: false
+  names_process: true
   reason: Re-read 2026-09-19 (same OpenAlex abstract as round 1, IEEE Xplore still paywalled with no free
     copy) — the "measured" gain, noise and power figures are from "comprehensive post-layout extraction
     and parasitic-aware simulations" of a "fabricated-ready" (not yet fabricated) layout; no silicon measurement.
@@ -447,7 +447,7 @@
   year: 2025
   venue: 2025 37th International Conference on Microelectronics (ICM)
   status: excluded
-  names_process: true
+  names_process: false
   reason: The abstract says "a commercial 130-nm PDK that includes RRAM devices" and the title "Open-Source
     130-nm PDK"; the PDK is not named, SKY130 is not the only open 130 nm PDK, and the silicon status
     is unclear. Reconsider if the full text names SKY130 or sky130B.
@@ -566,7 +566,7 @@
   year: 2024
   venue: arXiv (Cornell University)
   status: excluded
-  names_process: true
+  names_process: false
   reason: A three-phase PWM generator fabricated through the Efabless AI-Generated Open-Source Chip Design
     Challenge (Caravel SoC peripheral); neither the abstract nor the arXiv PDF full text names SkyWater
     or SKY130.
@@ -588,7 +588,7 @@
   title: 'SoM-Memristor v3: Plastic Refusal-Driven Neuromorphic Hardware for Phenomenal Efficiency and
     Internal Binding'
   authors:
-  - Waterman, Alastair
+  - Alastair Waterman
   year: 2025
   venue: Zenodo (CERN European Organization for Nuclear Research)
   status: excluded
@@ -1042,7 +1042,7 @@
   year: 2025
   venue: SpringerBriefs in Computer Science
   status: excluded
-  names_process: true
+  names_process: false
   reason: Chapter of a SpringerBriefs hands-on OpenLane/SKY130 lab manual; a textbook, not a paper.
   decided: '2026-09-19'
 - id: doi:10.1007/978-3-031-92108-7_4
@@ -1054,7 +1054,7 @@
   year: 2025
   venue: SpringerBriefs in Computer Science
   status: excluded
-  names_process: true
+  names_process: false
   reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
     not a paper.
   decided: '2026-09-19'
@@ -1067,7 +1067,7 @@
   year: 2025
   venue: SpringerBriefs in Computer Science
   status: excluded
-  names_process: true
+  names_process: false
   reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
     not a paper.
   decided: '2026-09-19'
@@ -1080,7 +1080,7 @@
   year: 2025
   venue: SpringerBriefs in Computer Science
   status: excluded
-  names_process: true
+  names_process: false
   reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
     not a paper.
   decided: '2026-09-19'
@@ -1093,7 +1093,7 @@
   year: 2025
   venue: SpringerBriefs in Computer Science
   status: excluded
-  names_process: true
+  names_process: false
   reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
     not a paper.
   decided: '2026-09-19'
@@ -1221,7 +1221,7 @@
 - id: arxiv:2608.16953
   title: 'DTX: A Throughput-First Training Accelerator for Diffusion and Transformer Models'
   authors:
-  - ' Shashank'
+  - Shashank
   year: 2026
   venue: arXiv
   status: excluded
@@ -1250,7 +1250,7 @@
   title: 'Transformer Accelerator (TFA): A Macro-Op INT8 Hardware Chip for Transformer Inference and Machine
     Translation'
   authors:
-  - ' Shashank'
+  - Shashank
   year: 2026
   venue: arXiv
   status: excluded
@@ -1309,7 +1309,7 @@
   year: 2026
   venue: Electronics
   status: excluded
-  names_process: true
+  names_process: false
   reason: A general survey of the open-source EDA/PDK ecosystem, not a study specific to SKY130 or the
     SkyWater process.
   decided: '2026-09-19'
@@ -1322,7 +1322,7 @@
   year: 2024
   venue: IEEE Solid-State Circuits Magazine
   status: excluded
-  names_process: true
+  names_process: false
   reason: A general step-by-step guide to open-source ASIC design and MPW fabrication; the abstract does
     not name SKY130 or any specific process and reports no measurements.
   decided: '2026-09-19'
@@ -1385,10 +1385,14 @@
   year: 2022
   venue: 2022 International Symposium on VLSI Technology, Systems and Applications (VLSI-TSA)
   status: excluded
-  names_process: true
-  reason: 90 nm complementary CNFET foundry-integration paper with SkyWater Technology-affiliated authors
-    (Benton, Nelson); a different node from SKY130 (design's other-SkyWater-process exclusion), and the
-    abstract does not name SkyWater or SKY130.
+  names_process: false
+  reason: 'The abstract opens "We demonstrate complementary carbon nanotube (CNT) field-effect transistors
+    (CNFETs) at the 90 nm node on 200 mm substrates within a commercial silicon foundry" -- a different
+    node from SKY130 (design Sec. 1.4: the Bloomington-fab affiliation-inference basis is for the 130
+    nm flow; a 90 nm-only paper is out unless it also reports 130 nm). Same authors, same lift-off-free
+    process and same year as the held doi:10.1109/led.2022.3144936 (paper-yu-2022a was moved to held for
+    the same reason: its own abstract states no node, so the two records should not be decided differently
+    on the strength of one paper''s silence). The abstract does not name SkyWater or SKY130.'
   decided: '2026-09-19'
 - id: doi:10.1109/tns.2026.3684446
   title: Total-Ionizing-Dose Effects and Low-Frequency Noise in 90 nm, 3.3 V Input/Output CMOS Devices
@@ -1406,7 +1410,7 @@
   year: 2026
   venue: IEEE Transactions on Nuclear Science
   status: excluded
-  names_process: true
+  names_process: false
   reason: 90 nm I/O CMOS TID/RTN study with SkyWater Technology-affiliated co-authors (Nour, Chambers,
     Bloomington); a different node from SKY130 (design's other-SkyWater-process exclusion), and the abstract
     does not name SkyWater or SKY130.
@@ -1424,7 +1428,7 @@
   year: 2021
   venue: 2021 IEEE/ACM International Conference On Computer Aided Design (ICCAD)
   status: excluded
-  names_process: true
+  names_process: false
   reason: CNFET layout-mitigation paper with one SkyWater Technology-affiliated co-author (Mark Nelson,
     Bloomington); the mitigation is validated by simulation on synthesis benchmarks, not SKY130 silicon,
     and the abstract does not name SkyWater or SKY130.
@@ -1451,29 +1455,11 @@
   year: 2024
   venue: IEEE Transactions on Electron Devices
   status: excluded
-  names_process: true
+  names_process: false
   reason: MIM-capacitor process-integration paper from SkyWater's Kissimmee, FL site (BRIDG/TTCA), not
     the Bloomington SKY130 fab; the measured capacitor and dielectric results are for a different 200
     mm batch-ALD platform aimed at interposer and RF applications, and the abstract does not name SkyWater
     or SKY130.
-  decided: '2026-09-19'
-- id: doi:10.1145/3649329.3658493
-  title: 'ChatCPU: An Agile CPU Design and Verification Platform with LLM'
-  authors:
-  - Xi Wang
-  - Gwok-Waa Wan
-  - Sam-Zaak Wong
-  - Layton Zhang
-  - Tianyang Liu
-  - Qi Tian
-  - Jianmin Ye
-  year: 2024
-  venue: Proceedings of the 61st ACM/IEEE Design Automation Conference
-  status: excluded
-  names_process: true
-  reason: LLM-generated RISC-V CPU with "successful tape-out using SkyWater 130nm MPW project with Efabless";
-    the abstract reports the tape-out but no measured silicon results, matching the design's treatment
-    of tape-out-only MPW reports.
   decided: '2026-09-19'
 - id: doi:10.1109/fpl53798.2021.00085
   title: 'Taping out an FPGA in 24 hours with OpenFPGA: The SOFA Project'
@@ -1706,7 +1692,7 @@
   year: 2024
   venue: 2024 IEEE Radiation Effects Data Workshop (REDW) (in conjunction with 2024 NSREC)
   status: excluded
-  names_process: true
+  names_process: false
   reason: Companion study to the excluded S90LN RTN paper (doi:10.1109/redw61286.2024.10759147) by the
     same ASU/AFRL/SkyWater group; reports on a GlobalFoundries 12LP FinFET process, not a SkyWater product,
     despite one SkyWater Technology-affiliated co-author (M. Nour).
@@ -1966,7 +1952,7 @@
   year: 2026
   venue: Proceedings of the Canadian Engineering Education Association (CEEA)
   status: held
-  names_process: true
+  names_process: false
   reason: Reports "fabricated an ASIC using the material to demonstrate the FPGA-to-ASIC path", but the
     abstract does not name SKY130 or SkyWater for that ASIC -- it mentions the Tiny Tapeout Organization
     only in relation to a separate, earlier course. Full text needed to confirm the process.
@@ -1978,7 +1964,7 @@
   year: 2025
   venue: IEEE Spectrum
   status: held
-  names_process: true
+  names_process: false
   reason: IEEE Spectrum article on the MOSbius analog teaching chip; the retrieved abstract text does
     not name the fabrication process. Full text needed to confirm whether it is SKY130.
   decided: '2026-09-19'
@@ -2113,4 +2099,248 @@
   reason: Memristor-synapse circuit "demonstrated in simulation using the Skywater-130 nm process"; no
     fabrication reported. Also posted as the preprint doi:10.20944/preprints202405.1824.v1 (same title
     and abstract). Found via citing-works of doi:10.1109/tcsi.2024.3355070.
+  decided: '2026-09-19'
+- id: doi:10.1109/tim.2025.3635830
+  title: Frequency Decomposition for Identification and Time Constant Extraction in Random Telegraph Noise
+    Analysis
+  authors:
+  - Victor D. Pepel
+  - Julie V. Logan
+  - Christian P. Morath
+  - Fahad Al Mamun
+  - Jereme Neuendank
+  - Vince Cowan
+  - Mohamed Nour
+  - Mike Chambers
+  - Diana Maestas
+  year: 2025
+  venue: IEEE Transactions on Instrumentation and Measurement
+  status: held
+  names_process: false
+  reason: 'Two of nine authors (Nour, Chambers) are affiliated with SkyWater Technology, Bloomington,
+    MN, but the retrieved abstract names no process at all for the transistors it measures. The same ASU/AFRL/SkyWater
+    group, with the same two SkyWater co-authors, published five other RTN/TID papers this round records
+    as a different node (90 nm) or a different SkyWater process (S90LN): doi:10.1109/iirw59383.2023.10477707,
+    doi:10.1109/irps48228.2024.10529354, doi:10.1109/radecs61975.2024.11017554, doi:10.1109/redw61286.2024.10759147,
+    doi:10.1109/tns.2026.3684446. The public evidence about which devices this group measures points at
+    90 nm, not SKY130; held pending a full-text check rather than included on an inference the evidence
+    argues against.'
+  decided: '2026-09-19'
+- id: doi:10.1109/led.2022.3144936
+  title: Foundry Integration of Carbon Nanotube FETs With 320 nm Contacted Gate Pitch Using New Lift-Off-Free
+    Process
+  authors:
+  - Andrew Yu
+  - Tathagata Srimani
+  - Christian Lau
+  - Brian Benton
+  - Mark Nelson
+  - Max M. Shulaker
+  year: 2022
+  venue: IEEE Electron Device Letters
+  status: held
+  names_process: false
+  reason: 'Two authors (Benton, Nelson) are affiliated with SkyWater Technology Foundry, Bloomington,
+    MN. The abstract states the lift-off-free CNFET contact process "is implemented in a commercial silicon
+    CMOS foundry" but does not state a node. The same authors'' companion paper the same year, doi:10.1109/vlsi-tsa54299.2022.9771013
+    (excluded), states its node explicitly: "at the 90 nm node on 200 mm substrates". Design Sec. 1.4''s
+    affiliation-inference basis is for the 130 nm flow; a paper from this programme that does not itself
+    state 130 nm is held, not included, given the sibling paper''s 90 nm evidence -- held pending a full
+    text that states this paper''s own node.'
+  decided: '2026-09-19'
+- id: doi:10.1109/jphotov.2019.2948003
+  title: Improving the Thermal Stability of CIGS Photovoltaic Devices
+  authors:
+  - Timothy G. Bontrager
+  - Sreejith Karthikeyan
+  - Sehyun Hwang
+  - Mandip J. Sibakoti
+  - Brian T. Benton
+  - Stephen A. Campbell
+  year: 2020
+  venue: IEEE Journal of Photovoltaics
+  status: excluded
+  names_process: false
+  reason: One co-author (Brian Benton) is affiliated with SkyWater Technology, Bloomington, MN, but this
+    is thin-film CIGS photovoltaic device work -- a different device technology and fabrication process
+    entirely from the SKY130 CMOS flow, not merely a different node. Not part of the S8/SKY130 lineage
+    (design Sec. 1.4).
+  decided: '2026-09-19'
+- id: doi:10.1063/5.0265657
+  title: Modulated amplitude reflectance spectroscopy to map in-channel charge carrier concentration and
+    drift velocity in organic field effect transistors
+  authors:
+  - L. R. McCarthy
+  - G. Partsch
+  - H. Pihlaja
+  - T. Venenciano
+  - Y. Kashtan
+  - J. Woo
+  - T. Xiang
+  - A. Zhao
+  - G. Stecklein
+  - D. Tanenbaum
+  - J. A. Hudgings
+  year: 2025
+  venue: Applied Physics Letters
+  status: excluded
+  names_process: false
+  reason: One co-author (G. Stecklein) is affiliated with SkyWater Technology, Bloomington, MN, but the
+    paper is about organic field-effect transistors and a measurement technique, not the SKY130 CMOS process
+    or any silicon device on it.
+  decided: '2026-09-19'
+- id: doi:10.1109/tcpmt.2024.3363652
+  title: Multi-Chiplet Implementation of a Replaceable Integrated Chiplet (PINCH) Assembly
+  authors:
+  - Michael A. Nieves Calderon
+  - Shane Oh
+  - Jonathan R. Brescia
+  - Muhannad S. Bakir
+  year: 2024
+  venue: IEEE Transactions on Components, Packaging and Manufacturing Technology
+  status: excluded
+  names_process: false
+  reason: 'SkyWater-affiliated advanced-packaging (chiplet assembly) work; packaging is explicitly outside
+    scope (design Sec. 1: "another SkyWater process (S90, 90 nm FDSOI, interposers, packaging)").'
+  decided: '2026-09-19'
+- id: doi:10.1109/ectc51529.2024.00325
+  title: Annealing Effects in Sub-8 μm Pitch Die-to-Wafer Hybrid Bonding
+  authors:
+  - Partha Mukhopadhyay
+  - Laura Wenzel
+  - Catharina Rudolph
+  - Andrew Tuchman
+  - Kevin Ryan
+  - Adam Gildea
+  - Chris Nichols
+  - John Allgair
+  - Sitaram Arkalgud
+  - Anton deVilliers
+  - Jim Fulford
+  year: 2024
+  venue: 2024 IEEE 74th Electronic Components and Technology Conference (ECTC)
+  status: excluded
+  names_process: false
+  reason: SkyWater-affiliated (Kissimmee, FL) die-to-wafer hybrid-bonding packaging study; packaging is
+    explicitly outside scope (design Sec. 1).
+  decided: '2026-09-19'
+- id: doi:10.37665/wavigfo95217
+  title: Onshore Advanced Packaging as a Service with Turnkey Solution
+  authors:
+  - David Box
+  - Liang Wang
+  year: 2026
+  venue: Wafer-Level Packaging Symposium
+  status: excluded
+  names_process: false
+  reason: SkyWater advanced-packaging business overview; packaging is explicitly outside scope (design
+    Sec. 1).
+  decided: '2026-09-19'
+- id: doi:10.4071/001c.128218
+  title: 'Revitalizing Domestic Semiconductor Manufacturing: Challenges, Opportunities and Emerging Applications'
+  authors:
+  - Mark Litecky
+  year: 2025
+  venue: IMAPSource Proceedings
+  status: excluded
+  names_process: false
+  reason: SkyWater-authored overview of domestic semiconductor manufacturing and advanced packaging in
+    general; not specific to the SKY130 process or a measured device on it.
+  decided: '2026-09-19'
+- id: doi:10.4071/001c.91161
+  title: Keys to Successful and Stable On-Shore Packaging and Advanced Packaging Defense Industrial Base
+  authors:
+  - Jim Will
+  year: 2023
+  venue: IMAPSource Proceedings
+  status: excluded
+  names_process: true
+  reason: SkyWater-authored advanced-packaging overview; packaging is explicitly outside scope (design
+    Sec. 1).
+  decided: '2026-09-19'
+- id: doi:10.31274/ahac.11070
+  title: Balloon borne stratospheric night-time and day-time thermal wake differential temperature measurements
+  authors:
+  - Alisha Wiedmeier
+  - Ngozi Ezenagu
+  - Erick Paul Agrimson
+  - Rachel DuBose
+  - Brittany Craig
+  - Alynie Walter
+  - Grace Maki
+  - Ana Taylor
+  - Rachel Lang
+  - Peace Sinyigaya
+  - Viviana Montenegro Cortez
+  - Vina Onyango-Robshaw
+  - Kaye Smith
+  - James Flaten
+  - Gordon McIntosh
+  year: 2018
+  venue: 2018 Academic High Altitude Conference
+  status: excluded
+  names_process: false
+  reason: Student high-altitude-ballooning atmospheric-science paper; one author's affiliation string
+    names SkyWater Technology Foundry, but the subject is atmospheric measurement, unrelated to the SKY130
+    process.
+  decided: '2026-09-19'
+- id: doi:10.31274/ahac.3454
+  title: Thermal Wake Studies During the August 21st 2017 Total Solar Eclipse
+  authors:
+  - Alynie Xiong
+  - Ana Taylor
+  - Brittany Craig
+  - Erick Paul Agrimson
+  - Gordon McIntosh
+  - Grace Maki
+  - James Flaten
+  - Kaye Smith
+  - Peace Sinyigaya
+  - Rachel DuBose
+  - Rachel Lang
+  - Vina Onyango-Robshaw
+  year: 2017
+  venue: 2017 Academic High Altitude Conference
+  status: excluded
+  names_process: false
+  reason: Student high-altitude-ballooning atmospheric-science paper; one author's affiliation string
+    names SkyWater Technology Foundry, but the subject is atmospheric measurement, unrelated to the SKY130
+    process.
+  decided: '2026-09-19'
+- id: doi:10.31274/jhab.13033
+  title: Thermal Wake Studies During the August 21st 2017 Total Solar Eclipse
+  authors:
+  - Kaye Smith
+  - Erick Paul Agrimson
+  - Brittany Craig
+  - Alynie Xiong
+  - Grace Maki
+  - Peace Sinyigaya
+  - Vina Onyango-Robshaw
+  - Ana Taylor
+  - Rachel Lang
+  - Rachel DuBose
+  - Gordon McIntosh
+  - James Flaten
+  year: 2021
+  venue: Journal of High Altitude Ballooning
+  status: excluded
+  names_process: false
+  reason: Journal version of doi:10.31274/ahac.3454 (same student high-altitude-ballooning study); one
+    author's affiliation string names SkyWater Technology Foundry, but the subject is atmospheric measurement,
+    unrelated to the SKY130 process.
+  decided: '2026-09-19'
+- id: doi:10.22541/au.172413095.53999511/v1
+  title: Open-source Floating-Gate Cell for Analog Synapses
+  authors:
+  - Matthew Chen
+  - Charana Sonnadara
+  - Sahil Shah
+  year: 2024
+  venue: Authorea
+  status: excluded
+  names_process: true
+  reason: Authorea preprint of the included paper-chen-2024a (doi:10.1049/ell2.70036); recorded here so
+    that id- or title-based dedup (which can miss the "Analog"/"Analogue" casefold difference, R2-23)
+    does not re-add it as a new paper.
   decided: '2026-09-19'

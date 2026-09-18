@@ -27,7 +27,6 @@ Papers by type of venue, then by venue series.
 ### IEEE Electron Device Letters
 
 * {ref}`paper-hsieh-2021a` — E. R. Hsieh et al., IEEE Electron Device Letters 2021 (affiliation inference)
-* {ref}`paper-yu-2022a` — Andrew Yu et al., IEEE Electron Device Letters 2022 (affiliation inference)
 
 ### IEEE Journal on Exploratory Solid-State Computational Devices and Circuits
 
@@ -44,10 +43,6 @@ Papers by type of venue, then by venue series.
 ### IEEE Transactions on Electron Devices
 
 * {ref}`paper-le-2021a` — Binh Q. Le et al., IEEE Transactions on Electron Devices 2021 (affiliation inference)
-
-### IEEE Transactions on Instrumentation and Measurement
-
-* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
 
 ### Journal of Vacuum Science & Technology B
 
@@ -90,6 +85,10 @@ Papers by type of venue, then by venue series.
 ### CICC
 
 * {ref}`paper-mathews-2024a` — Pranav Mathews et al., CICC 2024
+
+### DAC
+
+* {ref}`paper-wang-2024a` — Xi Wang et al., DAC 2024 (free copy)
 
 ### FPL
 

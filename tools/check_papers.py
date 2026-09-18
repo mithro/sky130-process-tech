@@ -43,6 +43,9 @@ Offline checks (always run):
 * every record's label is in the label map with its id, and every label
   in the map is still used by the same paper (a published label may not be
   dropped, renamed or reused; an id correction goes in ``previous_ids``).
+  A label whose paper is later reclassified from ``papers.yaml`` to
+  ``papers-excluded.yaml`` keeps its label-map entry (reserved, never
+  reused) without needing a ``papers.yaml`` record.
 * ``data/papers-excluded.yaml`` records also carry ``authors`` (a list,
   possibly empty when not recorded), ``venue`` (a string or null) and
   ``names_process`` (true when the title or reason names SKY130 or the
@@ -146,7 +149,7 @@ ALLOWED_FREE_HOSTS = {
     "escholarship.org", "hdl.handle.net", "upcommons.upc.edu", "woset-workshop.github.io",
     "ieeexplore.ieee.org", "dl.acm.org", "www.mdpi.com", "onlinelibrary.wiley.com",
     "ietresearch.onlinelibrary.wiley.com", "iopscience.iop.org", "www.authorea.com",
-    "www.techrxiv.org", "web.archive.org",
+    "www.techrxiv.org", "web.archive.org", "hal.science",
 }
 FORBIDDEN_HOST = re.compile(
     r"(sci-hub|scihub|sci\.hub|sci-net|annas-archive|annas-blog|libgen|library\.lol|gen\.lib\.rus|"
@@ -482,8 +485,12 @@ def check_labels(entries: object, data: list, excluded: list, today: dt.date) ->
             seen_ids[x] = lab
         rec = records.get(pid)
         if rec is None:
-            probs.append(f"{where}: published label {lab!r} ({pid}) is not in papers.yaml; a published label "
-                         f"may not be dropped" + (" (the id is in the exclusions file)" if pid in excluded_ids else ""))
+            if pid not in excluded_ids:
+                probs.append(f"{where}: published label {lab!r} ({pid}) is not in papers.yaml and not in "
+                             f"the exclusions file; a published label may not be dropped")
+            # else: the paper was reclassified from papers.yaml to papers-excluded.yaml after its label
+            # was published (for example a round-2 review finding). The label stays reserved (never
+            # reused, per its own entry here) but no longer needs a papers.yaml record.
         elif rec.get("label") != lab:
             probs.append(f"{where}: {pid} has label {rec.get('label')!r}, but its published label is {lab!r}")
     for pid, rec in records.items():
@@ -518,6 +525,39 @@ def quote_in(quote: str, text: str) -> bool:
 
 def family_names(names: list[str]) -> list[str]:
     return [norm_title(n.split()[-1]) if n.split() else "" for n in names]
+
+
+NAMED_PROCESS_RE = re.compile(r"sky\s?-?130|skywater", re.I)
+
+
+def excluded_abstract_for(r: dict) -> str | None:
+    """Best-effort abstract fetch for a papers-excluded.yaml record; None if not fetchable."""
+    rid = r["id"]
+    if rid.startswith("doi:"):
+        st, body = fetch("https://api.openalex.org/works/doi:" + urllib.parse.quote(rid[4:], safe="/()"))
+        if st != 200:
+            return None
+        inv = json.loads(body).get("abstract_inverted_index") or {}
+        return " ".join(w for _, w in sorted((i, w) for w, idx in inv.items() for i in idx))
+    if rid.startswith("arxiv:"):
+        st, body = fetch("http://export.arxiv.org/api/query?id_list=" + rid[6:])
+        if st != 200:
+            return None
+        m = re.search(rb"<summary>(.*?)</summary>", body, re.S)
+        return html.unescape(m.group(1).decode()).strip() if m else ""
+    return None  # web: records have no fetchable abstract
+
+
+def names_process_check(r: dict) -> list[str]:
+    """--online: recompute names_process from the record's own title/abstract and flag disagreement."""
+    ab = excluded_abstract_for(r)
+    if ab is None:
+        return []
+    computed = bool(NAMED_PROCESS_RE.search((r.get("title") or "") + " " + ab))
+    if computed != r.get("names_process"):
+        return [f"excluded {r['id']}: names_process is {r.get('names_process')} but the record's own "
+                f"title/abstract {'names' if computed else 'does not name'} SKY130 or SkyWater"]
+    return []
 
 
 def online_check(r: dict) -> list[str]:
@@ -666,6 +706,8 @@ def main() -> int:
                 problems.append(f"excluded {r['id']}: also in {args.file.name}")
             if r["id"] in ex_seen:
                 problems.append(f"excluded {r['id']}: duplicate")
+            if args.online:
+                problems += names_process_check(r)
             ex_seen.add(r["id"])
     for p in problems:
         print(p)
