@@ -27,8 +27,11 @@ the deep n⁺ source/drain formed later at {ref}`NSDI <step-086>`,
 outside the {term}`spacer`.
 
 That the tip is arsenic is stated publicly: the PDK's junction-depth
-table has a row "N Tip (As)" with a lateral ("vertical space") value of
-0.01 µm (variable `LDNTIP`), beside the deeper "N+ or P+ S/D (XJ)" row
+table has a row "N Tip (As)" carrying 0.01 µm in the table's "Vertical
+Space" column (variable `LDNTIP`), which we read as the tip's lateral
+extent because the same column holds the source/drain lateral diffusion
+(`LD`, 0.06 µm) and the well junction "from drawn edge" (inference),
+beside the deeper "N+ or P+ S/D (XJ)" row
 at 0.1 µm vertical and 0.06 µm lateral;[^pdk-03] the same page gives the
 "Angle for tip implant" as 7°.[^pdk-03] Energy and dose are not public.
 The boron {term}`halo` {ref}`BHI <step-066>` follows through the same resist,
@@ -68,7 +71,8 @@ The extension does three jobs that the deep source/drain cannot:
   doped {term}`LDD` of the 1980 kind[^ogura-1980] would cost too much drive
   current at 1.8 V, which is why the modern "tip" is heavily doped.
 * **Gate overlap.** The extension must reach a few nanometres under the
-  gate edge — the PDK's 0.01 µm "N Tip (As)" lateral figure[^pdk-03] —
+  gate edge — the PDK's 0.01 µm "N Tip (As)" figure, which we read as
+  the tip's lateral extent (inference, above)[^pdk-03] —
   so that the channel is not separated from the source by an
   undoped gap; too much overlap adds Miller capacitance.
 
