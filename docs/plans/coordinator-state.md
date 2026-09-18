@@ -46,6 +46,8 @@ Phase 4 plan: twelve module batches (the Phase 2 groups in `TASKLOG.md`). Per ba
 
 ## Queue
 
+0. Cross-cutting: metal cap and barrier composition. The pages take the 2013 Cypress qualification report's Ti / AlCu / TiW stack for every metal level; the 2014 Cypress report already cited records a qualified S8P change to Ti/TiN/AlCu/Ti/TiN "excluding top metal layers" (review of steps 135–148, finding X1, with the TiW-to-nitride etch selectivity point 138-M1). Needs one dedicated branch over steps 112–163, the sputter-target, etch and mask pages and the overview, presenting both stacks and what depends on each, after the 135–148 and 149–163 fix rounds merge. Use the stronger model for this one: it changes an argument, not a sentence.
+
 2. Dual review of the patent and filings indexes, fix, merge.
 3. Step-page links to the patent, paper and filings indexes.
 4. Paper index second round (remaining searches, held full-text checks).
