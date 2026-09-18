@@ -43,13 +43,23 @@ With ``--online`` it also fetches each record's Wayback or
 investor-relations copy (never ``sec.gov``) with the project user agent
 and confirms that every quote occurs in the document text (whitespace,
 quotation marks and dashes normalised).  Online fetches are paced and
-cached under ``tmp/filings-cache/``.
+cached under ``tmp/filings-cache/``; a Wayback capture is cached forever
+(its timestamp is in the URL), but any other copy is re-fetched once its
+cache entry is more than ``CACHE_MAX_AGE_DAYS`` old (FIL-R1-11).
 
-Run with ``uv run tools/check_filings.py [--online] [path]``.  It prints
-"N filings checked, M problems"; the exit status is non-zero when a
-problem is found.  With ``--online`` it also prints one line for every
-``location`` it could not check (no Item number, no "ITEM 1" heading in
-the document, the quote not locatable, or no heading before it -- V-13)
+``location`` is checked (``check_location``) by whichever of these its
+text names: an "ITEM N" caption (compared with the nearest preceding
+real Item heading in the fetched text); a PDF page number ("page 12",
+checked against that 1-based page of the extracted PDF text); a
+position ("cover page", "first page", "first paragraph", "second
+paragraph"); or, covering most annual-report, exhibit and press-release
+locations that are none of the above, a prose section heading named in
+the location text (compared with the nearest preceding occurrence of
+that heading). A location the checker cannot make sense of at all, or
+one it cannot connect to text it can find, is not silently skipped: it
+is reported as one line for every ``location`` it could not check (no
+Item/page/heading found, the quote not locatable in the fetched copy,
+or nothing usable precedes it -- V-13)
 and appends "P locations not checked" to the summary, so a clean run
 never reads as "every location was verified".
 """
@@ -452,13 +462,26 @@ def normalise(t: str) -> str:
 _last = [0.0]
 
 
+CACHE_MAX_AGE_DAYS = 90  # FIL-R1-11: re-fetch a non-Wayback copy after this long
+
+
 def fetch(url: str) -> bytes:
     if "sec.gov" in url.split("/")[2]:
         raise ValueError("refusing to fetch sec.gov directly")
     CACHE.mkdir(parents=True, exist_ok=True)
     p = CACHE / hashlib.sha1(url.encode()).hexdigest()
+    is_wayback = WAYBACK_RE.match(url) is not None
     if p.exists():
-        return p.read_bytes()
+        # FIL-R1-11: a Wayback capture is an immutable snapshot (its timestamp is
+        # already in the URL), so its cache entry never goes stale; an
+        # investor-relations or other live company copy can change or disappear, so
+        # re-fetch it once its cache entry (the file's own mtime is the "fetch
+        # timestamp beside it") is older than CACHE_MAX_AGE_DAYS -- a passing
+        # ``--online`` run then means "confirmed live within the last 90 days", not
+        # "confirmed live once, arbitrarily long ago".
+        age_days = (time.time() - p.stat().st_mtime) / 86400
+        if is_wayback or age_days <= CACHE_MAX_AGE_DAYS:
+            return p.read_bytes()
     m = WAYBACK_RE.match(url)
     if m:  # raw capture, without the Wayback banner
         url = f"https://web.archive.org/web/{m.group(1)}id_/{m.group(2)}"
@@ -492,6 +515,18 @@ def document_text(b: bytes) -> str:
     t = re.sub(r"(?is)<(script|style).*?</\1>", " ", t)
     t = re.sub(r"(?s)<[^>]+>", " ", t)
     return html.unescape(t)
+
+
+def document_pages(b: bytes) -> list[str] | None:
+    """Per-page extracted text for a PDF, else None (task A: "page N" locations need
+    to know which page a quote is on; document_text alone joins every page into one
+    string)."""
+    if b[:4] != b"%PDF":
+        return None
+    import pypdf
+
+    reader = pypdf.PdfReader(io.BytesIO(b))
+    return [(page.extract_text() or "") for page in reader.pages]
 
 
 # V-11: the body pages of the Cypress FY1999 annual report (annualreports.com file
@@ -609,7 +644,7 @@ def loose_tolerant_pattern(fragment: str) -> re.Pattern:
     return re.compile(r"\s*".join(re.escape(c) for c in chars))
 
 
-def check_location(
+def check_item_location(
     quote_text: str, location: str, raw_text: str, where: str, problems: list[str], abstentions: list[str]
 ) -> None:
     """Best-effort check (FIL-R1-05): if ``location`` names an Item number, and the
@@ -623,9 +658,6 @@ def check_location(
     run no longer reads as "every location was verified" when some were not checked
     at all -- that silence is what let V-01's wrong Item number through undetected."""
     stated = location_item_number(location)
-    if not stated:
-        abstentions.append(f"{where}: location {location!r} names no Item number, so it was not checked")
-        return
     if not any(m.group(1) == "1" for m in HEADING_RE.finditer(raw_text)):
         abstentions.append(
             f"{where}: document never renders an \"ITEM 1\" heading in the expected form; "
@@ -653,6 +685,196 @@ def check_location(
         problems.append(
             f"{where}: location says Item {stated} but the quote sits nearest to "
             f"Item {nearest} in the fetched text: {quote_text[:60]!r}")
+
+
+PAGE_RE = re.compile(r"\bpage\s+(\d+)\b", re.I)
+# Locations that name a position rather than a heading or page number.  "cover page"/
+# "first page"/"cover page note" are checked against PDF page 1 when the source is a
+# PDF, and against the start of the extracted text otherwise (HTML press releases have
+# no real pages); "first paragraph"/"second paragraph" are checked against a
+# blank-line-delimited paragraph index.
+PAGE_ONE_LOCATIONS = {"cover page", "cover page note", "first page"}
+PARAGRAPH_LOCATIONS = {"first paragraph": 0, "second paragraph": 1}
+
+GENERIC_HEADING_SEGMENTS = {
+    "form 10-k section", "annual report", "part i", "part ii", "part iii", "part iv",
+    "form 10-k", "combined management report", "notes to consolidated financial statements",
+    "notes to the consolidated financial statements",
+    "notes to the condensed consolidated financial statements", "exhibit index",
+    "exhibit", "introductory section", "introductory note",
+}
+
+
+def loose_pattern_ci(fragment: str) -> re.Pattern:
+    """Like ``loose_pattern``, but case-insensitive: used for locating a prose section
+    heading, which may be rendered in a different case than the location string names
+    it (e.g. small caps, all caps, or title case in the original PDF)."""
+    pieces = [re.escape(p) for p in fragment.split()]
+    return re.compile(r"\s+".join(pieces), re.I)
+
+
+def heading_phrase(location: str) -> str | None:
+    """The most specific part of a non-Item, non-page location, to search for as a
+    prose section heading: the text after the last comma (a location like "Notes to
+    the condensed consolidated financial statements, Major Customers and
+    Concentration Risk" names its sub-heading there), preferring a trailing
+    parenthetical when one is present (e.g. "Exhibit, amendment ... (recitals)" names
+    "recitals"), with generic scaffolding segments (GENERIC_HEADING_SEGMENTS) and
+    segments under 4 characters skipped. Returns None when no segment qualifies (e.g.
+    a bare "Part I")."""
+    segments = [p.strip() for p in location.split(",")]
+    for seg in reversed(segments):
+        if not seg or seg.lower() in GENERIC_HEADING_SEGMENTS or len(seg) < 4:
+            continue
+        m = re.search(r"\(([^()]{4,})\)\s*$", seg)
+        return m.group(1).strip() if m else seg
+    return None
+
+
+def check_heading_location(
+    quote_text: str, location: str, raw_text: str, where: str, problems: list[str], abstentions: list[str]
+) -> None:
+    """Location check for a prose section heading that is not an "ITEM N" caption
+    (annual-report sections, exhibit headings, press-release headings). Finds the
+    heading phrase (heading_phrase) and the quote's position in whitespace-preserved
+    text, then requires the heading's nearest occurrence before the quote to be
+    reasonably close (HEADING_MAX_GAP characters); a heading that occurs only *after*
+    the quote, or nowhere, is a wrong location -- unless it is nowhere in the text at
+    all, when the checker cannot tell and abstains."""
+    phrase = heading_phrase(location)
+    if not phrase:
+        abstentions.append(f"{where}: location {location!r} names no specific heading; not checked")
+        return
+    first_fragment = re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote_text)[0].strip()
+    if not first_fragment:
+        abstentions.append(f"{where}: quote has no text before its first ellipsis; location not checked")
+        return
+    qm = loose_pattern(first_fragment[:120]).search(raw_text)
+    if not qm:
+        qm = loose_tolerant_pattern(first_fragment[:120]).search(raw_text)
+    if not qm:
+        abstentions.append(
+            f"{where}: quote text not found in the fetched text (even whitespace-tolerant); "
+            f"heading {phrase!r} not checked: {quote_text[:60]!r}")
+        return
+    occurrences = [hm.start() for hm in loose_pattern_ci(phrase).finditer(raw_text)]
+    if not occurrences:
+        abstentions.append(
+            f"{where}: heading {phrase!r} (from location {location!r}) not found anywhere "
+            f"in the fetched text; not checked")
+        return
+    preceding = [o for o in occurrences if o <= qm.start()]
+    HEADING_MAX_GAP = 20000  # normalised characters; prose sections run far longer than a TOC line
+    if not preceding:
+        problems.append(
+            f"{where}: location names heading {phrase!r} but that text occurs only after "
+            f"the quote in the fetched text: {quote_text[:60]!r}")
+        return
+    if qm.start() - preceding[-1] > HEADING_MAX_GAP:
+        abstentions.append(
+            f"{where}: heading {phrase!r} found but not within {HEADING_MAX_GAP} characters "
+            f"before the quote; treated as unverifiable, not checked")
+
+
+def check_page_location(
+    quote_text: str, stated_page: int, pages: list[str] | None, where: str,
+    problems: list[str], abstentions: list[str],
+) -> None:
+    """Location check for a "page N" location: confirms the quote's first fragment
+    occurs on the stated 1-based page of the fetched PDF."""
+    if pages is None:
+        abstentions.append(
+            f"{where}: location names page {stated_page} but the fetched copy is not a PDF; not checked")
+        return
+    first_fragment = re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote_text)[0].strip()
+    if not first_fragment:
+        abstentions.append(f"{where}: quote has no text before its first ellipsis; location not checked")
+        return
+    frag = normalise(first_fragment[:120])
+    found = [i + 1 for i, p in enumerate(pages) if frag and frag in normalise(p)]
+    if not found:
+        abstentions.append(f"{where}: quote text not found on any PDF page; page {stated_page} not checked")
+        return
+    if stated_page not in found:
+        problems.append(
+            f"{where}: location says page {stated_page} but the quote is on page(s) {found} "
+            f"of the fetched PDF: {quote_text[:60]!r}")
+
+
+def check_positional_location(
+    quote_text: str, location: str, raw_text: str, pages: list[str] | None, where: str,
+    problems: list[str], abstentions: list[str],
+) -> None:
+    """Location check for "cover page"/"first page"/"cover page note" (checked against
+    PDF page 1, or the start of the text when there are no PDF pages) and "first
+    paragraph"/"second paragraph" (checked against a blank-line-delimited paragraph
+    index)."""
+    loc = location.strip().lower()
+    first_fragment = re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote_text)[0].strip()
+    if not first_fragment:
+        abstentions.append(f"{where}: quote has no text before its first ellipsis; location not checked")
+        return
+    frag = normalise(first_fragment[:120])
+    if not frag:
+        abstentions.append(f"{where}: quote has no usable text; location not checked")
+        return
+    if loc in PAGE_ONE_LOCATIONS:
+        if pages is not None:
+            found = [i + 1 for i, p in enumerate(pages) if frag in normalise(p)]
+            if not found:
+                abstentions.append(f"{where}: quote text not found on any PDF page; {location!r} not checked")
+            elif 1 not in found:
+                problems.append(
+                    f"{where}: location says {location!r} but the quote is on page(s) {found}, "
+                    f"not page 1: {quote_text[:60]!r}")
+            return
+        window = normalise(raw_text)
+        idx = window.find(frag)
+        if idx == -1:
+            abstentions.append(f"{where}: quote text not found in the fetched text; {location!r} not checked")
+        elif idx > 4000:
+            problems.append(
+                f"{where}: location says {location!r} but the quote first occurs {idx} "
+                f"normalised characters into the fetched text: {quote_text[:60]!r}")
+        return
+    idx = PARAGRAPH_LOCATIONS.get(loc)
+    if idx is None:
+        abstentions.append(f"{where}: location {location!r} not recognised as a position; not checked")
+        return
+    paras = [p for p in re.split(r"\n\s*\n+", raw_text) if p.strip()]
+    matches = [i for i, p in enumerate(paras) if frag in normalise(p)]
+    if not matches:
+        abstentions.append(f"{where}: quote text not found in any extracted paragraph; {location!r} not checked")
+        return
+    if idx not in matches:
+        problems.append(
+            f"{where}: location says {location!r} but the quote is in paragraph(s) "
+            f"{[m + 1 for m in matches]} (1-based) of the fetched text: {quote_text[:60]!r}")
+
+
+def check_location(
+    quote_text: str, location: str, raw_text: str, pages: list[str] | None, where: str,
+    problems: list[str], abstentions: list[str],
+) -> None:
+    """Dispatches to the right location check for ``location``'s shape (FIL task A:
+    fewer abstentions than the Item-only checker this replaces): an "Item N" caption
+    (check_item_location, unchanged), a "page N" reference for a PDF
+    (check_page_location), a recognised position such as "cover page" or "second
+    paragraph" (check_positional_location), or -- the fallback that now covers most of
+    what used to abstain -- a prose section heading named in the location
+    (check_heading_location). Only when none of these can make sense of ``location``
+    does it abstain outright."""
+    if location_item_number(location):
+        check_item_location(quote_text, location, raw_text, where, problems, abstentions)
+        return
+    m = PAGE_RE.search(location)
+    if m:
+        check_page_location(quote_text, int(m.group(1)), pages, where, problems, abstentions)
+        return
+    if location.strip().lower() in PAGE_ONE_LOCATIONS or location.strip().lower() in PARAGRAPH_LOCATIONS:
+        check_positional_location(quote_text, location, raw_text, pages, where, problems, abstentions)
+        return
+    check_heading_location(quote_text, location, raw_text, where, problems, abstentions)
 
 
 def date_variants(d) -> list[str]:
@@ -694,10 +916,14 @@ def check_online(r: dict, where: str, problems: list[str], abstentions: list[str
     if not sources:
         problems.append(f"{where}: no fetchable copy (no wayback/ir url, and original is on sec.gov)")
         return
+    # The auditor's signature quote has no ``location`` field in the schema (it is not
+    # claimed to sit at any particular place in the document), so it is given location
+    # ``None`` and check_location is not called for it below -- that is not an
+    # abstention, since no location was ever asserted to check.
     quotes = [(q.get("text", ""), q.get("location", "")) for q in (r.get("about") or {}).get("quotes", [])]
     aud = r.get("auditor_report")
     if isinstance(aud, dict):
-        quotes.append((aud.get("quote", ""), ""))
+        quotes.append((aud.get("quote", ""), None))
     pending = list(quotes)
     fetched = []
     raw_texts = []
@@ -705,11 +931,17 @@ def check_online(r: dict, where: str, problems: list[str], abstentions: list[str
         if not pending:
             break
         try:
-            raw = document_text(fetch(source))
+            b = fetch(source)
+            raw = document_text(b)
+            pages = document_pages(b)
             offset = GLYPH_OFFSET_DOCS.get((r.get("identifier") or {}).get("value"))
             if offset is not None:
                 raw = decode_glyph_font(raw, offset)
+                if pages is not None:
+                    pages = [decode_glyph_font(p, offset) for p in pages]
             raw = tidy(raw)
+            if pages is not None:
+                pages = [tidy(p) for p in pages]
         except Exception as exc:  # noqa: BLE001
             problems.append(f"{where}: could not fetch {source}: {exc}")
             continue
@@ -719,7 +951,8 @@ def check_online(r: dict, where: str, problems: list[str], abstentions: list[str
         still_pending = []
         for q, loc in pending:
             if fragments_match_in_order(q, text):
-                check_location(q, loc, raw, where, problems, abstentions)
+                if loc is not None:
+                    check_location(q, loc, raw, pages, where, problems, abstentions)
             else:
                 still_pending.append((q, loc))
         pending = still_pending
