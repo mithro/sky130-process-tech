@@ -100,9 +100,9 @@ chemical oxide is thin and will be buried under the
   any one of them is an inference.
 * **Akrion Gamma batch bench; DNS bench; FSI Mercury.**[^skw-01]
   Strength: strong for existence.
-* **KLA-Tencor AIT** inspection, our reading of "AIT"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
-  Strength: medium.
+* Patterned-wafer inspection of the KLA-Tencor AIT class (category
+  page); no public SkyWater source we can now retrieve names an
+  inspection tool for this strip. Strength: none.
 
 ## Resources required
 
@@ -131,7 +131,6 @@ chemical oxide is thin and will be buried under the
 
 * SkyWater, *Facilities & Capabilities* — ashers, gases, temperatures;
   wet benches.[^skw-01]
-* Indeed, SkyWater listings — inspection tools.[^job-01]
 * SkyWater, Form S-1 and Form 10-K — chemical suppliers.[^sec-01][^sec-02]
 * Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the cold first
   ash step.[^pat-strip-mosel]
@@ -185,9 +184,6 @@ chemical oxide is thin and will be buried under the
 
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30; listings expire. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^sec-02]: SkyWater Technology, Inc., Form 10-K for fiscal year 2023,

@@ -214,11 +214,8 @@ On the strength scale of the {ref}`machines index <machines-index>`
 the three listings are **strong**: they are SkyWater
 statements.[^skw-01] The caveats that apply to every listed tool are
 under {ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
-For this class, a SkyWater job posting for a plasma-etch process
-development engineer, cited on the {ref}`P1ME <step-062>` page, confirms
-etch development in house but names no tool.[^job-03] Which of the
-three etchers runs which step is not stated anywhere public; the step
-pages decide by the listed gases and applications.
+Which of the three etchers runs which step is not stated anywhere
+public; the step pages decide by the listed gases and applications.
 
 (machine-plasma-etcher-silicon-steps)=
 ### SKY130 steps assigned to this class
@@ -376,8 +373,6 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   source.[^pat-tcp-lam]
 * Yin et al. (Applied Materials), US 5,540,824 — the multi-section coil
   and isolated lid of the DPS reactor.[^pat-dps-amat]
-* Career.com, SkyWater *Plasma Etch Process Development Engineer*
-  posting — etch development in house, no tool named.[^job-03]
 
 ### High-level understanding
 
@@ -570,10 +565,6 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 [^amat-300-etch-2000]: Applied Materials, *Applied Materials Unveils
     300mm Etch Product Line*, press release, 2000-07-10.
     <https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-300mm-etch-product-line>
-[^job-03]: Career.com, *Plasma Etch Process Development Engineer*,
-    SkyWater Technology Foundry, Bloomington MN, posted 2024-08-09
-    (closed 2024-10-30), retrieved 2026-08-30.
-    <https://www.career.com/company/skywater-technology-foundry-inc/job/plasma-etch-process-development-engineer/-in-bloomington,mn?jid=83e5f3b7-6fb2-41df-9003-31e8e118e0a8>
 [^wiki-hbr]: Wikipedia, *Hydrogen bromide*.
     <https://en.wikipedia.org/wiki/Hydrogen_bromide>
 [^wiki-nf3]: Wikipedia, *Nitrogen trifluoride*.

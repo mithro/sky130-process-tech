@@ -13,10 +13,10 @@ before being fixed or declined.
 | 048-M2 | Medium | open | |
 | 049-M1 | Medium | fixed | Confirmed via OpenAlex abstract: Wright 2010 is a sputtered Cr-Si-B-SiO2/Al2O3 thin-film resistor paper, no polysilicon. Annotated Deep dive bullets on 049/053/055 correctly; replaced 053's and 055's in-text sentences. |
 | 050-M1 | Medium | open | |
-| 051-M1 | Medium | open | shared root cause: job-01/job-03 unretrievable (also 054-M1, 057-L2, 060-M-ref, 062 job-03) |
+| 051-M1 | Medium | fixed | Checked Wayback (`archive.org/wayback/available`, empty) and archive.today (404, no snapshot) for both job-01 and job-03 URLs on 2026-09-18: neither is retrievable or archived. Removed the quoted strings and the specific tool claim on 051/054/057/060; removed job-03 entirely (051/054/057/060 still use job-01 for other, out-of-scope pages, so its inventory key stays; job-03 became fully unused, so its inventory entry was removed). |
 | 052-M1 | Medium | fixed | Confirmed via OpenAlex abstract: Tsang 2014's mechanism is hydrogen diffusing through eroded LPCVD-nitride corners (a bank-position effect), not the implant-mask edge. Fixed in-text and Deep dive on 049/052/055. |
 | 053-M1 | Medium | fixed | = 049-M1 |
-| 054-M1 | Medium | open | = 051-M1 |
+| 054-M1 | Medium | fixed | = 051-M1 |
 | 055-M1 | Medium | fixed | = 049-M1; replaced in-text sentence with Lane & Wrixon's design space, added lane-1989 footnote. |
 | 055-M2 | Medium | fixed | = 052-M1 |
 | 057-M1 | Medium | fixed | Confirmed via OpenAlex: Temple-Boyer 1998 is a silane/ammonia LPCVD study giving ~600 MPa, not 1 GPa DCS nitride. Reworded on 057/058 to cite it correctly and keep 1 GPa as a typical-industry-value claim. |
@@ -48,7 +48,7 @@ before being fixed or declined.
 | 056-L2 | Low | open | = 053-L1 |
 | 056-L3 | Low | open | |
 | 057-L1 | Low | open | |
-| 057-L2 | Low | open | = 051-M1 |
+| 057-L2 | Low | fixed | = 051-M1 |
 | 057-L3 | Low | open | = 051-L3 |
 | 058-L1 | Low | fixed | Added the PDK's NGNIT e-test corroboration and the Tsang et al. nitride-cap corroboration (with correct mechanism) to What this step is / Resistor protection. |
 | 059-L1 | Low | open | |
@@ -56,7 +56,7 @@ before being fixed or declined.
 | 060-L1 | Low | open | |
 | 060-L2 | Low | open | |
 | 060-L3 | Low | open | |
-| 060-M-ref | Low | open | = 051-M1 |
+| 060-M-ref | Low | fixed | = 051-M1; replaced with lederer-2003 (already on page), which names the Surfscan SP1 BSIM explicitly. |
 | 061-L1 | Low | open | |
 | 061-L2 | Low | open | |
 | 061-L3 | Low | open | |
