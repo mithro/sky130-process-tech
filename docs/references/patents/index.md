@@ -22,10 +22,17 @@ full-text link this index relies on for every member.
 Records were retrieved 2026-09-14 to 2026-09-19 (individual records carry their own
 `verified` date). The index holds 228 families (1519 members in total). Every family's representative
 record page was fetched; 1460 of the 1519 members have their own record page
-fetched (the rest are listed in the fetched family table of their
-representative but were not fetched separately — every possible term
-of those families' members has already ended, so nothing about
-their status turns on the record not fetched).
+fetched. The remaining 59 are listed in the fetched family table of
+their representative but were not fetched separately: a
+time-budgeted departure from this index's rule of fetching every
+member of a family whose earliest priority is on or after
+1999-05-29, recorded as an exception in
+`docs/plans/patent-index-design.md`'s "Verification levels". Each
+such row carries its publication number, country, kind and
+publication date from the representative's own family table, says
+so in its *Verified* column, and shows no status. 15 members of these sit in 2 families already shown expired on other grounds; the remaining 44 members, in 6 families **not** shown expired, are each bounded
+conservatively (the family's earliest priority date + 21 years)
+rather than assumed ended, per the design's rule 3.
 
 ## Legal caveat
 
