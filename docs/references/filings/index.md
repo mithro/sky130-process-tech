@@ -15,7 +15,7 @@ name SkyWater or the Cypress fab. It complements the
 the inventory only when a page cites it. See
 `docs/plans/filings-index-design.md` for the inclusion rules.
 
-The index holds 85 filings.
+The index holds 86 filings.
 
 ## Other views
 
@@ -65,11 +65,11 @@ canonical citation but was not itself fetched by this project.
 
 ## Counts
 
-By company: Cypress Semiconductor Corporation (24), SkyWater Technology, Inc. (42), Infineon Technologies AG (7), IonQ, Inc. (3), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), Weebit Nano Limited (4).
+By company: Cypress Semiconductor Corporation (25), SkyWater Technology, Inc. (42), Infineon Technologies AG (7), IonQ, Inc. (3), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), Weebit Nano Limited (4).
 
-By type: Annual reports (40), Quarterly and half-year reports (18), Current reports and exhibits (11), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
+By type: Annual reports (41), Quarterly and half-year reports (18), Current reports and exhibits (11), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
 
-By year: 1994 (1), 1996 (1), 1997 (1), 1998 (1), 1999 (1), 2002 (1), 2003 (1), 2004 (1), 2005 (1), 2006 (1), 2007 (1), 2008 (1), 2009 (1), 2010 (1), 2011 (1), 2012 (1), 2013 (1), 2014 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (9), 2022 (8), 2023 (11), 2024 (9), 2025 (9), 2026 (12).
+By year: 1994 (1), 1996 (1), 1997 (1), 1998 (1), 1999 (1), 2000 (1), 2002 (1), 2003 (1), 2004 (1), 2005 (1), 2006 (1), 2007 (1), 2008 (1), 2009 (1), 2010 (1), 2011 (1), 2012 (1), 2013 (1), 2014 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (9), 2022 (8), 2023 (11), 2024 (9), 2025 (9), 2026 (12).
 
 ## Known gaps
 
@@ -88,7 +88,6 @@ or read that is not `sec.gov` itself.
 * Form 15-12B, deregistration following the Infineon merger (2020) -- No Wayback capture and no non-EDGAR copy found.
 * Annual reports to shareholders for fiscal years 1991-1993 -- annualreports.com's Cypress archive begins at fiscal 1994 (NASDAQ\_CY\_1991, \_1992 and \_1993 each answer HTTP 404, confirmed in this session); no other public copy of these years was found.
 * A standalone annual report to shareholders for fiscal year 1994 -- annualreports.com's archive has no NASDAQ\_CY file of its own for fiscal 1994; that year's figures appear only as prior-year comparatives inside the fiscal-1995 report (cypress-annual-report-fy1995).
-* Annual report to shareholders for fiscal year 1999 (NASDAQ\_CY\_1999.pdf) -- A public copy exists and was fetched, but its embedded font encoding could not be extracted as text with the tools available in this project's environment (pypdf, with and without fontTools, and PyMuPDF all returned garbled or empty text for the document body); no quotation from it could be verified, so no record was added.
 * Annual report to shareholders for fiscal year 2000 (NASDAQ\_CY\_2000.pdf) -- A public copy exists and was fetched, but every page returned zero extractable characters of body text with the tools available in this project's environment (pypdf and PyMuPDF); no quotation from it could be verified, so no record was added.
 * Annual report to shareholders for fiscal year 2014 (NASDAQ\_CY\_2014.pdf) -- A public copy exists and its text was fully readable, but this particular edition is a short "highlights" booklet that does not mention Bloomington, Minnesota, Fab 4 or wafer manufacturing anywhere in its 8 pages; it does not meet the design's inclusion rule (section 1) of saying something specific about the Minnesota fab, so no record was added.
 
@@ -145,10 +144,19 @@ Sorted by filing date, then id.
   Related pages: {ref}`overview-index` — The report records the 1998 shutdown of the original 6-inch Minnesota Fab 3 and the consolidation of Minnesota manufacturing into the 8-inch Fab 4.
   Note: The EDGAR filing date and accession number were not retrieved; filed gives the date of the auditor's report printed in the copy, so the document was published on or after it.
 
+(filing-cypress-annual-report-fy1999)=
+* **Cypress Semiconductor Corporation — Cypress Semiconductor 1999 Annual Report to shareholders, for the fiscal year ended 2000-01-02** (filed 2000-03-02; document NASDAQ_CY_1999).
+  [Original](https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1999.pdf) · [investor-relations copy](https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1999.pdf).
+  Cypress's 1999 annual report. Its body pages are set in a font whose glyphs pypdf cannot map to Unicode, so ordinary extraction returns literal glyph-id names or garbled text; the font's glyph table turns out to be a constant offset from the character's WinAnsi code, which tools/check\_filings.py now decodes for this one document (independent review finding V-11). Decoded, the report recaps the 1998 shutdown of the original, 6-inch Minnesota Fab 3, and records a 1999-2000 capital-equipment plan to expand the Minnesota site with two further fabs, "Fab 4b" and "Fab 4c", alongside the existing 8-inch "Fab 4a" -- fab designations that appear nowhere else in this index. "A majority of the equipment purchased was for Fab 4a located in Minnesota to increase its capacity and capability." (Annual report, Management's Discussion and Analysis, Liquidity and Capital Resources); "Capital expenditures in 2000 are expected to be significantly higher compared to 1999 as Cypress continues its efforts to increase its wafer manufacturing capabilities and capacity by purchasing more equipment for Fab 4a and by constructing Fab 4b and Fab 4c, located on the same site as Fab 4a in Minnesota." (Annual report, Management's Discussion and Analysis, Liquidity and Capital Resources)
+  Auditor: PricewaterhouseCoopers LLP, 2000-03-02: "PricewaterhouseCoopers LLP San Jose, California January 26, 2000, except as to Note 12 which is as of March 2, 2000".
+  Relationships: {ref}`Cypress describes its Minnesota (Bloomington) fab <filings-rel-cypress-fab-operations>` · {ref}`investment and government funding for the Minnesota fab <filings-rel-minnesota-fab-investment>`.
+  Related pages: {ref}`overview-index` — The report is the only one in this index to name a planned "Fab 4b" and "Fab 4c" alongside "Fab 4a" on the Minnesota site, and recaps the 1998 shutdown of the original Fab 3.
+  Note: The EDGAR filing date and accession number were not retrieved; filed gives the later of the two dates in the auditor's report (a note-specific qualification), so the document was published on or after it. Ordinary PDF text extraction (pypdf, with and without fontTools, and PyMuPDF) cannot read the body pages of this particular copy; the font's glyph table happens to be a constant offset from the character's WinAnsi code, which tools/check\_filings.py decodes for this one document only (keyed by identifier.value), so the quotes above remain machine-verifiable with --online.
+
 (filing-cypress-annual-report-fy2001)=
 * **Cypress Semiconductor Corporation — Cypress Semiconductor 2001 Annual Report to shareholders, for the fiscal year ended 2001-12-30** (filed 2002-02-28; document NASDAQ_CY_2001).
   [Original](https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf) · [investor-relations copy](https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf).
-  Cypress's 2001 annual report. It records the transfer of 0.12-micron technology from the San Jose R&D fab to the Minnesota manufacturing fab (Fab 4), notes that the San Jose R&D fab was itself converted from six-inch to eight-inch wafers in fiscal 2000 to match Minnesota, and describes Fab 4 as Cypress's "technologically advanced, eight-inch wafer production facility located in Minnesota". "0.12-micron technology from our eight-inch R&D Fab in San Jose, California to our eight-inch manufacturing fab in Minnesota" (Notes to Consolidated Financial Statements); "Cypress's technologically advanced, eight-inch wafer production facility located in Minnesota (Fab 4)." (Notes to Consolidated Financial Statements, Segment Information)
+  Cypress's 2001 annual report. It records the transfer of 0.12-micron technology from the San Jose R&D fab to the Minnesota manufacturing fab (Fab 4), notes that the San Jose R&D fab was itself converted from six-inch to eight-inch wafers in fiscal 2000 to match Minnesota, and describes Fab 4 as Cypress's "technologically advanced, eight-inch wafer production facility located in Minnesota". "0.12-micron technology from our eight-inch R&D Fab in San Jose, California to our eight-inch manufacturing fab in Minnesota" (Management's Discussion and Analysis, Research and development); "Cypress's technologically advanced, eight-inch wafer production facility located in Minnesota (Fab 4)." (Notes to Consolidated Financial Statements, Segment Information)
   Auditor: PricewaterhouseCoopers LLP, 2002-02-28: "PricewaterhouseCoopers LLP San Jose, California January 23, 2002, except as to Notes 15 and 18, which are as of February 28, 2002".
   Relationships: {ref}`Cypress process technologies made or transferred at the fab (0.13 µm, S8, SONOS) <filings-rel-cypress-process-technology>`.
   Note: The EDGAR filing date and accession number were not retrieved; filed gives the later of the two dates in the auditor's report (a note-specific qualification), so the document was published on or after it.
@@ -211,7 +219,7 @@ Sorted by filing date, then id.
 (filing-cypress-annual-report-fy2008)=
 * **Cypress Semiconductor Corporation — Cypress Semiconductor 2008 Annual Report, including the Form 10-K for the fiscal year ended 2008-12-28** (filed 2009-02-26; document NASDAQ_CY_2008).
   [Original](https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf) · [investor-relations copy](https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf).
-  Cypress's 2008 annual report. In December 2007 Cypress's board approved exiting its Round Rock, Texas fab and transferring production to the more cost-competitive Minnesota fab and outside foundries, substantially completed in December 2008; from this point Minnesota (Fab 4) was Cypress's only US wafer fab. The Item 2 Properties table gives the owned Bloomington, Minnesota building as 278,000 square feet. "In December 2007, Cypress's Board of Directors approved a plan to exit its manufacturing facility in Texas and transfer production to its more cost-competitive facility in Minnesota and outside foundries." (Form 10-K, Item 7, Management's Discussion and Analysis, Manufacturing); "Bloomington, Minnesota 278,000 Manufacturing, research and development" (Form 10-K, Item 2, Properties)
+  Cypress's 2008 annual report. In December 2007 Cypress's board approved exiting its Round Rock, Texas fab and transferring production to the more cost-competitive Minnesota fab and outside foundries, substantially completed in December 2008; from this point Minnesota (Fab 4) was Cypress's only US wafer fab. The Item 2 Properties table gives the owned Bloomington, Minnesota building as 278,000 square feet. "In December 2007, Cypress's Board of Directors approved a plan to exit its manufacturing facility in Texas and transfer production to its more cost-competitive facility in Minnesota and outside foundries." (Form 10-K, Item 1, Business, Manufacturing); "Bloomington, Minnesota 278,000 Manufacturing, research and development" (Form 10-K, Item 2, Properties)
   Auditor: PricewaterhouseCoopers LLP, 2009-02-26: "PricewaterhouseCoopers LLP San Jose, California February 26, 2009".
   Relationships: {ref}`Cypress describes its Minnesota (Bloomington) fab <filings-rel-cypress-fab-operations>` · {ref}`Cypress selling wafer-line capacity to outside customers before the 2017 sale <filings-rel-cypress-third-party-foundry>`.
   Related pages: {ref}`overview-index` — The report records the 2007-2008 exit of the Texas fab that left Minnesota (Fab 4) as Cypress's only US wafer fab.

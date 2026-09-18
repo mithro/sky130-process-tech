@@ -327,6 +327,88 @@ filings:
     gives the date of the auditor's report printed in the copy, so the
     document was published on or after it.
 
+- id: cypress-annual-report-fy1999
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: Annual Report
+  document_type: annual-report-to-shareholders
+  parent: null
+  title: Cypress Semiconductor 1999 Annual Report to shareholders, for the fiscal year ended 2000-01-02
+  period:
+    label: fiscal year 1999
+    start: null
+    end: 2000-01-02
+  filed: 2000-03-02
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: company-document
+    value: NASDAQ_CY_1999
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1999.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1999.pdf
+  about:
+    summary: >-
+      Cypress's 1999 annual report. Its body pages are set in a font whose
+      glyphs pypdf cannot map to Unicode, so ordinary extraction returns
+      literal glyph-id names or garbled text; the font's glyph table turns
+      out to be a constant offset from the character's WinAnsi code, which
+      tools/check_filings.py now decodes for this one document (independent
+      review finding V-11). Decoded, the report recaps the 1998 shutdown of
+      the original, 6-inch Minnesota Fab 3, and records a 1999-2000
+      capital-equipment plan to expand the Minnesota site with two further
+      fabs, "Fab 4b" and "Fab 4c", alongside the existing 8-inch "Fab 4a" --
+      fab designations that appear nowhere else in this index.
+    quotes:
+    - text: >-
+        A majority of the equipment purchased was for Fab 4a located in
+        Minnesota to increase its capacity and capability.
+      location: Annual report, Management's Discussion and Analysis, Liquidity and Capital Resources
+    - text: >-
+        Capital expenditures in 2000 are expected to be significantly higher
+        compared to 1999 as Cypress continues its efforts to increase its
+        wafer manufacturing capabilities and capacity by purchasing more
+        equipment for Fab 4a and by constructing Fab 4b and Fab 4c, located
+        on the same site as Fab 4a in Minnesota.
+      location: Annual report, Management's Discussion and Analysis, Liquidity and Capital Resources
+  auditor_report:
+    firm: PricewaterhouseCoopers LLP
+    subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 1999
+    date: 2000-03-02
+    quote: >-
+      PricewaterhouseCoopers LLP San Jose, California January 26, 2000,
+      except as to Note 12 which is as of March 2, 2000
+  relationships:
+  - cypress-fab-operations
+  - minnesota-fab-investment
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report is the only one in this index to name a planned "Fab 4b" and "Fab 4c" alongside "Fab 4a" on the Minnesota site, and recaps the 1998 shutdown of the original Fab 3.
+  inventory_key: null
+  discovery:
+  - annualreports-com
+  discovery_note: >-
+    annualreports.com archive of Cypress annual reports (NASDAQ_CY_1999); the
+    body pages are set in a subsetted font whose glyphs pypdf cannot map to
+    Unicode, decoded with a constant WinAnsi-code offset (see
+    tools/check_filings.py's GLYPH_OFFSET_DOCS). This closes the FY1999 gap
+    that an earlier pass (FIL-R1-01) declared unreadable and listed in
+    known_gaps; independent review finding V-11 showed the body text is in
+    fact extractable.
+  verified: 2026-09-19 annualreports.com PDF fetched; body glyph encoding decoded and quotes checked
+  notes: >-
+    The EDGAR filing date and accession number were not retrieved; filed
+    gives the later of the two dates in the auditor's report (a
+    note-specific qualification), so the document was published on or after
+    it. Ordinary PDF text extraction (pypdf, with and without fontTools, and
+    PyMuPDF) cannot read the body pages of this particular copy; the font's
+    glyph table happens to be a constant offset from the character's WinAnsi
+    code, which tools/check_filings.py decodes for this one document only
+    (keyed by identifier.value), so the quotes above remain
+    machine-verifiable with --online.
+
 - id: cypress-annual-report-fy2001
   company: Cypress Semiconductor Corporation
   company_key: cypress
@@ -4809,14 +4891,6 @@ known_gaps:
     annualreports.com's archive has no NASDAQ_CY file of its own for fiscal
     1994; that year's figures appear only as prior-year comparatives inside
     the fiscal-1995 report (cypress-annual-report-fy1995).
-- company_key: cypress
-  description: Annual report to shareholders for fiscal year 1999 (NASDAQ_CY_1999.pdf)
-  reason: >-
-    A public copy exists and was fetched, but its embedded font encoding
-    could not be extracted as text with the tools available in this
-    project's environment (pypdf, with and without fontTools, and PyMuPDF
-    all returned garbled or empty text for the document body); no quotation
-    from it could be verified, so no record was added.
 - company_key: cypress
   description: Annual report to shareholders for fiscal year 2000 (NASDAQ_CY_2000.pdf)
   reason: >-
