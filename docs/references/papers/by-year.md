@@ -8,6 +8,7 @@ Papers by year of publication, newest first.
 (papers-year-2026)=
 ## 2026
 
+* {ref}`paper-dubey-2026a` — Anuj Dubey et al., IEEE Design & Test 2026
 * {ref}`paper-didin-2026a` — Irem Didin et al., IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 2026 (free copy)
 * {ref}`paper-beall-2026a` — F. Beall et al., arXiv 2026 (free copy)
 * {ref}`paper-maldonado-2026a` — Diana N. Maldonado R. et al., LASCAS 2026

@@ -10,8 +10,8 @@ Cypress S8 lineage and the Bloomington fab. The list is a catalogue: a
 paper is added to the {doc}`public sources inventory <../public-sources>`
 only when a page cites it.
 
-The index holds 49 papers. The version of record is free to read for
-9 and paywalled for 40; 3 of the paywalled papers have a free
+The index holds 50 papers. The version of record is free to read for
+9 and paywalled for 41; 3 of the paywalled papers have a free
 preprint or repository copy. Every entry was checked against its Crossref,
 arXiv or proceedings record.
 
@@ -52,7 +52,7 @@ marked "Borderline inclusion" in their entries.
 Each entry states its **basis**, how its link to the process is
 established:
 
-* **Process named** (34 papers): the abstract or full text names SKY130, the SkyWater 130 nm process or the SkyWater foundry.
+* **Process named** (35 papers): the abstract or full text names SKY130, the SkyWater 130 nm process or the SkyWater foundry.
 * **Affiliation inference** (14 papers): the process or fab is not named; the link rests on author affiliations; the entry explains the inference.
 * **Lineage inference** (1 paper): the process is not named; the link rests on public Cypress statements about the S8 lineage; the entry explains the inference.
 
@@ -73,7 +73,7 @@ against.
 
 ## Counts
 
-By year: {ref}`1999 <papers-year-1999>` (1), {ref}`2001 <papers-year-2001>` (1), {ref}`2005 <papers-year-2005>` (2), {ref}`2006 <papers-year-2006>` (3), {ref}`2008 <papers-year-2008>` (1), {ref}`2019 <papers-year-2019>` (2), {ref}`2020 <papers-year-2020>` (3), {ref}`2021 <papers-year-2021>` (3), {ref}`2022 <papers-year-2022>` (2), {ref}`2023 <papers-year-2023>` (9), {ref}`2024 <papers-year-2024>` (7), {ref}`2025 <papers-year-2025>` (9), {ref}`2026 <papers-year-2026>` (6).
+By year: {ref}`1999 <papers-year-1999>` (1), {ref}`2001 <papers-year-2001>` (1), {ref}`2005 <papers-year-2005>` (2), {ref}`2006 <papers-year-2006>` (3), {ref}`2008 <papers-year-2008>` (1), {ref}`2019 <papers-year-2019>` (2), {ref}`2020 <papers-year-2020>` (3), {ref}`2021 <papers-year-2021>` (3), {ref}`2022 <papers-year-2022>` (2), {ref}`2023 <papers-year-2023>` (9), {ref}`2024 <papers-year-2024>` (7), {ref}`2025 <papers-year-2025>` (9), {ref}`2026 <papers-year-2026>` (7).
 
 | Topic | Papers | Also among the fab publications |
 |---|---|---|
@@ -90,11 +90,11 @@ By year: {ref}`1999 <papers-year-1999>` (1), {ref}`2001 <papers-year-2001>` (1),
 | {ref}`Analog and RF circuits <papers-topic-analog-rf>` | 5 |  |
 | {ref}`Data converters and mixed-signal circuits <papers-topic-mixed-signal>` | 4 |  |
 | {ref}`Power management <papers-topic-power-management>` | 2 |  |
-| {ref}`Digital circuits <papers-topic-digital>` | 12 |  |
+| {ref}`Digital circuits <papers-topic-digital>` | 13 |  |
 | {ref}`Memory <papers-topic-memory>` | 3 |  |
 | {ref}`Sensors <papers-topic-sensors>` | 4 |  |
 | {ref}`Quantum <papers-topic-quantum>` | 1 |  |
-| {ref}`Hardware security <papers-topic-security>` | 2 |  |
+| {ref}`Hardware security <papers-topic-security>` | 3 |  |
 | {ref}`Open-source tooling <papers-topic-tooling>` | 8 |  |
 | {ref}`Shuttle programmes and education <papers-topic-education-shuttles>` | 1 |  |
 | {ref}`Cypress S8 lineage <papers-topic-lineage-s8>` | 1 | 7 |
@@ -268,6 +268,19 @@ Irem Didin, Carl Brando, Ching-Yi Lin and Sahil Shah. "Characterization and Mode
 * **Related pages:**
   * {ref}`overview-sky130b-reram` — The paper characterises ReRAM devices fabricated in the SkyWater 130 nm process; the overview page describes the sky130B ReRAM module.
 * **Checked:** 2026-09-14 against the Crossref record.
+
+(paper-dubey-2026a)=
+### ASIC Tape-Out of the First Side-Channel-Protected Neural Network Design
+
+Anuj Dubey, Aydin Aysu and Rosario Cammarota. "ASIC Tape-Out of the First Side-Channel-Protected Neural Network Design." *IEEE Design & Test*, vol. 43, no. 3, pp. 14–22, 2026.
+
+* **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11419083/) (paywalled) · DOI [10.1109/mdat.2026.3670063](https://doi.org/10.1109/mdat.2026.3670063)
+* **Free copies:** none located
+* **Basis:** process named (see {ref}`papers-scope`).
+* **Topics:** {ref}`Hardware security <papers-topic-security>`, {ref}`Digital circuits <papers-topic-digital>`
+* **Institutions:** North Carolina State University; University of California, Irvine
+* **Process and fabrication (quoted from the abstract):** "We fabricated the ASIC using the SkyWater 130nm technology node and a fully open-source design flow."
+* **Checked:** 2026-09-19 against the Crossref record.
 
 (paper-edwards-2020a)=
 ### Google/SkyWater and the Promise of the Open PDK

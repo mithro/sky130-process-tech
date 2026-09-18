@@ -48,6 +48,12 @@ Papers by type of venue, then by venue series.
 
 * {ref}`paper-wang-2006a` — N Wang et al., Microscopy and Microanalysis 2006 (affiliation inference)
 
+## Magazine articles
+
+### IEEE Design & Test
+
+* {ref}`paper-dubey-2026a` — Anuj Dubey et al., IEEE Design & Test 2026
+
 ## Conference papers
 
 ### ASMC
