@@ -104,7 +104,7 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
 * **An analogue capacitor with metal plates.** SkyWater and Google
   list MiM capacitors among SKY130's features — "Optional MiM
   capacitors" in the PDK's README, which also counts MiM capacitors
-  among the "normally *optional* features" SKY130 includes "as
+  among the "normally optional features" SKY130 includes "as
   standard";[^pdk-10] "MiM Capacitor" in the S130 platform
   table;[^skw-02] and "MiM capacitors" among the "normally optional
   features" SKY130 offers "as standard".[^ann-11] A

@@ -413,7 +413,7 @@ width.[^raw-data-testtile-pads]
   construction.[^pdk-05][^pdk-03][^pdk-periph][^pdk-07]
 * The sheet records a `CAP2M` plate on every MPW run, and the README
   lists "Optional MiM capacitors" but also counts MiM capacitors among the
-  "normally *optional* features" SKY130 includes "as standard"; whether every die or lot uses the
+  "normally optional features" SKY130 includes "as standard"; whether every die or lot uses the
   second capacitor is not public, and the renders do not say what the
   single `cap2m` shape common to most dies is.[^steps-sheet][^pdk-10][^mask-renders]
 * The *Device Details* table lists the MiM2 top-plate sheet resistance

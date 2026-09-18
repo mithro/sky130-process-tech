@@ -373,7 +373,7 @@ diagram[^pdk-04]); the aluminium limit of roughly
   and of via 4 — are not published.[^pdk-periph]
 * Whether every SKY130 lot carries the second capacitor module is not
   public: the README lists "Optional MiM capacitors" and also counts MiM
-  capacitors among the "normally *optional* features" SKY130 includes
+  capacitors among the "normally optional features" SKY130 includes
   "as standard",[^pdk-10] and the capacitor mask is not
   flagged.[^pdk-05]
 

@@ -114,7 +114,7 @@ An industry-generic source/drain activation anneal for a 200 mm,
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen or
   argon: RTP "heats silicon wafers to temperatures exceeding 1,000°C
   for not more than a few seconds" with "high intensity lamps" and
-  "*in situ* pyrometry to effect real time control".[^wiki-rtp] A
+  "in situ pyrometry to effect real time control".[^wiki-rtp] A
   small oxygen addition is sometimes used to limit dopant
   out-diffusion; a pure inert ambient avoids growing oxide on the
   poly heads and source/drain (category page).

@@ -70,7 +70,7 @@ An industry-generic drain-extension well implant for a 200 mm,
 illustrative.
 
 * **Species.** Boron (¹¹B⁺) from BF₃.[^wiki-implant] The layer name
-  ("p-well drain-extended") fixes the polarity.
+  ("P-Well Drain Extended") fixes the polarity.
 * **Energy.** A drift region wants a graded profile that is deepest near
   the drain contact; a deep member at a few hundred keV and a shallower
   one give the grading, the same architecture as the main

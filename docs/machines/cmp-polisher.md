@@ -223,7 +223,7 @@ readings — and for nitride, the stop layer of two of them on those readings; a
 for niobium, aluminium and copper, which no SKY130 step page reads as a
 polish; the page describes the Minnesota site as
 "Recently expanded in 2020 to enable additional capacity and Cu back end
-of line".[^skw-01] "High selectivity tungsten" is not explained. The
+of line".[^skw-01] "high selectivity tungsten" is not explained. The
 step pages and the {ref}`machines index <machines-index>` read the three
 undashed lines as part of the Mirra entry; the page does not say which
 tool performs "Track ammonia clean" or "IPA clean", or whether the
