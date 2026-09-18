@@ -51,3 +51,8 @@ Checkers run in the foreground from the worktree, all passing:
 `gen_papers.py --check` (8, 0), and
 `sphinx-build -W -q -b html docs tmp/build-topic-p4-076-088` (clean,
 no warnings/errors).
+
+Rebased onto main (2026-09-19) after the verifier's follow-up report;
+addressed all three requested items (verify-1, verify-2, verify-3
+above); re-ran every checker and the build after rebasing and after
+the follow-up fixes — all clean.
