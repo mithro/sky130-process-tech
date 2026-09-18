@@ -432,7 +432,7 @@ diagram[^pdk-04]); the aluminium limit of roughly
 [^ann-11]: SkyWater / Efabless, *First Google-Sponsored MPW Shuttle
     Launched at SkyWater with 40 Open Source Community Submitted
     Designs*, 2021-04-06.
-    <https://skywatertechnology.com/press-releases/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs>
+    <https://www.skywatertechnology.com/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs/>
 [^ann-15]: R. T. Edwards (Efabless), "Google/SkyWater and the Promise of
     the Open PDK", *Workshop on Open-Source EDA Technology (WOSET)
     2020*. <https://woset-workshop.github.io/PDFs/2020/a03.pdf>

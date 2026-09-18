@@ -333,7 +333,7 @@ Status and expiry are estimates from public records and are not legal advice.
 [^ann-11]: SkyWater / Efabless, *First Google-Sponsored MPW Shuttle
     Launched at SkyWater with 40 Open Source Community Submitted
     Designs*, 2021-04-06.
-    <https://skywatertechnology.com/press-releases/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs>
+    <https://www.skywatertechnology.com/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs/>
 [^cyp-22]: Cypress Semiconductor / UMC, *Cypress and UMC Deliver ICs on
     New 65-Nanometer SONOS Embedded Flash Technology*, PR Newswire,
     2011-07-27.

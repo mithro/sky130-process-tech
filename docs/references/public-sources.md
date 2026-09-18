@@ -320,7 +320,7 @@ First MPW shuttle programme: 40 slots, Q4 2020. Tier: cross-check.
 **ANN-11** — SkyWater / Efabless, *"First Google-Sponsored MPW Shuttle
 Launched at SkyWater with 40 Open Source Community Submitted Designs"*,
 2021-04-06.
-<https://skywatertechnology.com/press-releases/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs>.
+<https://www.skywatertechnology.com/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs/>.
 States that SKY130 "offers many normally optional features as
 standard — features like the local interconnect, SONOS non-volatile
 memory functionality, MiM capacitors and more". Tier: cross-check.
@@ -609,7 +609,7 @@ Overview"* and *"Careers & Jobs"* pages.
 <https://www.skywatertechnology.com/maintenance-technicians/>,
 <https://www.skywatertechnology.com/careers/>. The careers page links
 the applicant portal on Dayforce
-(<https://jobs.dayforcehcm.com/en-US/skywater/CANDIDATEPORTAL/>); the
+(<https://jobs.dayforcehcm.com/skywater/CANDIDATEPORTAL>); the
 maintenance page names no tools. Tier: high-level.
 
 **SKW-09** — SkyWater Technology press-release index.
@@ -639,7 +639,7 @@ Rad-Hard by Process Platform"*, 2020-12-02, and *"SkyWater Successfully
 Launches MPW Shuttle for 90 nm Strategic Rad-Hard by Process
 Platform"*, 2021-07-15.
 <https://www.skywatertechnology.com/skywater-releases-early-access-pdk-and-partners-with-trusted-semiconductor-solutions-to-enable-design-kit-for-90-nm-strategic-rad-hard-by-process-platform/>,
-<https://www.skywatertechnology.com/press-releases/skywater-successfully-launches-mpw-shuttle-for-90-nm-strategic-rad-hard-by-process-platform/>.
+<https://www.skywatertechnology.com/skywater-successfully-launches-mpw-shuttle-for-90-nm-strategic-rad-hard-by-process-platform/>.
 Tier: high-level.
 
 **SKW-13** — *"SkyWater Technology to Strategically Invest $56 Million
@@ -796,7 +796,7 @@ size).
 
 **GOV-04** — Alliiance (architects), *"SkyWater Technology"* project
 page, 2023-01-23.
-<https://alliiance.com/design/science-and-technology/skywater-technology/>.
+<https://alliiance.com/design/skywater-technology/>.
 "64,000 SF building addition … approximately 13,000 SF of Class 10
 semiconductor cleanroom fabrication (FAB) space; 4,800 SF of future
 FAB cleanroom; and a 15,300 SF sub-fabrication space". Tier:
@@ -845,10 +845,10 @@ here only to show that SkyWater postings do name vendors; not evidence
 for the Minnesota fab. Tier: high-level.
 
 **JOB-05** — SkyWater applicant portal (Dayforce).
-<https://jobs.dayforcehcm.com/en-US/skywater/CANDIDATEPORTAL/>. Live
+<https://jobs.dayforcehcm.com/skywater/CANDIDATEPORTAL>. Live
 listings; the portal search page renders client-side and individual
 postings could not be captured that way, but individual posting URLs
-(`jobs.dayforcehcm.com/en-US/skywater/CANDIDATEPORTAL/jobs/<id>`, e.g.
+(`jobs.dayforcehcm.com/skywater/CANDIDATEPORTAL/jobs/<id>`, e.g.
 the Bloomington postings found 2026-09-19) fetch directly and are
 plain server-rendered HTML — reconfirmed live 2026-09-19. Tier:
 high-level.
@@ -1048,7 +1048,7 @@ Also used on the TUNM mask page.
 Embedded Flash Solutions for 130-nm and 65-nm Technology Nodes"*,
 2011-02-17 (verified copy at Design & Reuse; the Business Wire
 original timed out).
-<https://www.design-reuse.com/news/25684/65-nm-sonos-embedded-nonvolatile-memory-ip.html>.
+<https://www.design-reuse.com/news/202519797-cypress-signs-innopower-to-enable-sonos-based-embedded-flash-solutions-for-130-nm-and-65-nm-technology-nodes-/>.
 "has been shipping in high volumes at 130-nm at several foundries".
 Tier: high-level.
 
@@ -4382,7 +4382,7 @@ Tier: deep dive.
 
 **BYU-OXCALC** — Brigham Young University Cleanroom, *Oxide Growth
 Calculator* (Deal–Grove with thin-oxide correction).
-<https://cleanroom.byu.edu/oxidetimecalc> Deal–Grove with the thin-oxide
+<https://cleanroom.byu.edu/OxideTimeCalc> Deal–Grove with the thin-oxide
 correction, runnable online. Used on the oxidation category page. Tier:
 high-level.
 
@@ -4751,15 +4751,15 @@ ASML platform in its historical context. Used on the lithography
 category page. Tier: deep dive.
 
 **GCE-KLA8100** — GCE Market, *KLA-Tencor 8100XP CD-SEM* (specification
-summary).
-<https://www.gcemarket.com/gce/gce.nsf/products/kla-tencor-8100xp-cd-sem-7expup>
+summary), retrieved 2026-09-13.
+<https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>
+(formerly
+<https://www.gcemarket.com/gce/gce.nsf/products/kla-tencor-8100xp-cd-sem-7expup>,
+which now redirects there).
 Marketplace specification summary for the KLA-Tencor 8100XP CD-SEM
 (accelerating voltage and resolution). Used on the lithography category
 page.
 Also used on the CD-SEM and overlay metrology page.
-The address now redirects to
-<https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>
-(checked 2026-09-13).
 Tier: cross-check.
 
 **MICROCHEMICALS-DEV** — MicroChemicals, *Development of photoresists*,
@@ -9366,21 +9366,21 @@ JIANG-2014. Tier: cross-check.
 
 **OPDKS-MAKEFILE** — R. T. Edwards et al., *open_pdks*,
 `sky130/Makefile.in`, commit 1689ac3 (2026-08-27).
-<https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/Makefile.in>
+<https://github.com/fossi-foundation/open-pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/Makefile.in>
 "sky130B = 5-metal backend stack with dual MiM and ReRAM" (line 4);
 "NOTE: ReRAM support is what distinguishes variant B from variant A."
 followed by `SKY130B_DEFS += -DRERAM` (lines 345–346); installs the
 `sky130_fd_pr_reram` library for variant B only. Tier: cross-check.
 
 **OPDKS-README** — R. T. Edwards et al., *open_pdks*, `sky130/README`,
-commit 1689ac3. <https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/README>
+commit 1689ac3. <https://github.com/fossi-foundation/open-pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/README>
 "From open_pdks version 1.0.269, there is a process variant … sky130B …
 which reflects support for ReRAM." Tier: cross-check.
 
 **OPDKS-MAGIC-TECH** — R. T. Edwards et al., *open_pdks*,
 `sky130/magic/sky130.tech` (Magic technology file source), commit
 1689ac3.
-<https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/magic/sky130.tech>
+<https://github.com/fossi-foundation/open-pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/magic/sky130.tech>
 Under `#ifdef RERAM`: a `reram` contact type between metal 1 and metal 2
 written to GDS as `via` squares on 68:44 plus "layer RERAM reram / calma
 201 20" (lines 1293–1301) and read back with "calma RERAM 201 20" (line

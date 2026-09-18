@@ -322,7 +322,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 [^ann-11]: SkyWater / Efabless, *First Google-Sponsored MPW Shuttle
     Launched at SkyWater with 40 Open Source Community Submitted
     Designs*, 2021-04-06.
-    <https://skywatertechnology.com/press-releases/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs>
+    <https://www.skywatertechnology.com/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs/>
 [^asml-30]: ASML, *Three decades of PAS 5500*, 2021, accessed
     2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^chiphistory-pas5500]: Chip History Center, *PAS 5500/400 Step & Scan

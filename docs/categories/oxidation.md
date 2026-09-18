@@ -334,7 +334,7 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
     <https://doi.org/10.1149/1.2113648>
 [^byu-oxcalc]: Brigham Young University Cleanroom, *Oxide Growth
     Calculator* (Deal–Grove with thin-oxide correction).
-    <https://cleanroom.byu.edu/oxidetimecalc>
+    <https://cleanroom.byu.edu/OxideTimeCalc>
 [^deal-1980]: B. E. Deal, "Standardized terminology for oxide charges
     associated with thermally oxidized silicon", *IEEE Transactions on
     Electron Devices* **27**(3), 606–608 (1980),
