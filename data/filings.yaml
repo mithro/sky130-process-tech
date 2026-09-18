@@ -2872,7 +2872,7 @@ filings:
     quotes:
     - text: >-
         our disclosure controls and procedures were not effective as of March
-        30, 2025 due to the material weaknesses in our internal control over
+        30, 2025 due to the material weakness in our internal control over
         financial reporting described below
       location: Part I, Item 4, Controls and Procedures
     - text: >-
@@ -3090,14 +3090,12 @@ filings:
     quotes:
     - text: >-
         our disclosure controls and procedures were not effective as of
-        September 28, 2025 due to the material weaknesses in our internal
+        September 28, 2025 due to the material weakness in our internal
         control over financial reporting described below
       location: Part I, Item 4, Controls and Procedures
     - text: >-
-        the Company entered into a Membership Interest Purchase Agreement with
-        Spansion LLC ("Spansion"), an affiliate of Infineon Technologies AG,
         pursuant to which the Company acquired all of the issued and
-        outstanding membership interests of Spansion Fab 25, LLC
+        outstanding membership interests of Spansion Fab 25, LLC ("Fab 25")
       location: Notes to the condensed consolidated financial statements, Business Combination
   auditor_report: null
   relationships:
