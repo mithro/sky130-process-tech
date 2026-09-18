@@ -93,11 +93,15 @@ cycles.[^pdk-07] Three consequences follow for its source/drain
 Because the memory transistor's channel is set by its own implants
 ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`) and its gate is poly
 over {term}`ONO` rather than over gate oxide, its junctions are co-optimised
-with them; Cypress's embedded-SONOS patents describe the cell as a
-device formed inside a logic flow with its own implant
-steps,[^pat-04][^pat-03] and a separate LDD implant for a particular
-transistor type on the same chip is a standard construction in the
-patent literature.[^pat-multi-ldd-amd]
+with them; Cypress's embedded-SONOS patents, which may still be in
+force, describe the cell in the collapsed note below, and a separate LDD
+implant for a particular transistor type on the same chip is a standard
+construction in the patent literature.[^pat-multi-ldd-amd]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+Cypress's embedded-SONOS patents describe the cell as a device formed
+inside a logic flow with its own implant steps.[^pat-04][^pat-03]
+:::
 
 Without `LDNTM`, the memory transistors would take either the logic
 tip (with leakage and disturb problems at the cell's voltages) or no

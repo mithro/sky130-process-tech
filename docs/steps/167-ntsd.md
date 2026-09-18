@@ -85,8 +85,8 @@ touches.
 * **Sealing the die edge (inference).** Deposited into the `nsm`
   opening, the nitride can form a wall through the dielectric stack at
   the seal ring, the construction a GlobalFoundries edge-seal patent
-  describes with a PECVD passivation on the sidewalls of a trench
-  through the dielectrics.[^pat-edgeseal-gf] That SKY130's nitride does
+  that may still be in force describes (collapsed note below this list).
+  That SKY130's nitride does
   this is our reading of the `nsm` rules and seal-ring layout
   ({ref}`NSM <step-165>`).
 * **Mechanical protection.** A hard nitride resists scratches during
@@ -107,6 +107,11 @@ touches.
   hot-carrier degradation by nitride passivation.[^shimaya-1995] The
   recipe is therefore a compromise between barrier quality, stress and
   hydrogen, and the {ref}`ALLY <step-170>` anneal follows it.
+
+:::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read
+The GlobalFoundries edge-seal patent describes a PECVD passivation on
+the sidewalls of a trench through the dielectrics.[^pat-edgeseal-gf]
+:::
 
 Without `NTSD` the die would be protected only by oxide, whose water
 uptake and ion permeability are what the nitride exists to block.

@@ -42,10 +42,9 @@ describe two readings (inference):
   oxides — and possibly the LINIT nitride and PSG — towards the silicon
   of the seal ring, so that the passivation nitride deposited next forms
   a continuous wall from the top of the die down into the dielectric
-  stack. This is the construction of a GlobalFoundries edge-seal patent,
-  whose seal is "formed through the low-k dielectric material to at
-  least a substrate" and covered by passivation.[^pat-edgeseal-gf] The
-  exemption of the seal ring's diffusion ring from the `nsm` keepout
+  stack. This is the construction of a GlobalFoundries edge-seal patent
+  that may still be in force, quoted in the collapsed note below this
+  list. The exemption of the seal ring's diffusion ring from the `nsm` keepout
   (nsm.3[^pdk-periph]) is consistent with an opening that reaches it.
 * **A stop on the LINIT nitride.** The oxide etch lands on the 0.075 µm
   local-interconnect nitride,[^pdk-04] so that the top passivation
@@ -53,6 +52,12 @@ describe two readings (inference):
   inter-metal oxides inside nitride. A fluorocarbon oxide etch selective
   to nitride makes such a stop possible (Schaepkens et al. studied the
   mechanism[^schaepkens-1999]).
+
+:::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read
+The GlobalFoundries edge-seal patent's seal is "formed through the low-k
+dielectric material to at least a substrate" and covered by
+passivation.[^pat-edgeseal-gf]
+:::
 
 On either of these deeper readings the opening is several micrometres
 deep and 3–5 µm wide, an
