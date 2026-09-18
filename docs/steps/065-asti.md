@@ -45,8 +45,10 @@ node),[^txt-01][^rev-05] a dose of the order of 10¹⁴–10¹⁵ cm⁻²
 (typical),[^txt-01] and a small tilt. It is the shallowest implant in
 the flow — the category page notes that a 130 nm process spans "from a
 few keV for source/drain extensions to over 1 MeV for deep
-n-wells"[^txt-01] — and, with the deep source/drain implants, one of
-the two that, at typical doses, amorphise the silicon surface.
+n-wells"[^txt-01] — and, with the deep source/drain implants
+({ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`,
+{ref}`NSDI <step-086>`), one of the implants that amorphise the silicon
+surface at typical doses.
 
 ## Why this step exists
 
@@ -81,8 +83,9 @@ choice for extensions because it is heavy (mass 75): at a given energy
 its range is short and its profile skewed towards the surface,[^txt-01]
 and it diffuses slowly and mainly by vacancies, so the junction stays
 abrupt through the anneals.[^rev-05] Its drawbacks are electrical: above
-about 2 × 10²⁰ cm⁻³ arsenic clusters and deactivates on
-annealing,[^nobili-1983] and the deactivation itself injects
+roughly 2 × 10²⁰ cm⁻³ arsenic clusters and deactivates on annealing
+(typical value)[^txt-01]; Nobili and co-workers identified precipitation
+as the mechanism.[^nobili-1983] The deactivation itself injects
 interstitials that enhance the diffusion of nearby
 boron[^rousseau-1994] — the halo. Kasnavi, Griffin and Plummer measured
 the sheet-resistance and junction-depth limits of very-low-energy
@@ -167,8 +170,10 @@ fab (SKY130's energy and dose are not public):
   for the assignment.
 * **Axcelis 8250 medium-current implanter.** SkyWater lists "Axcelis
   8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,
-  0-60 deg tilt".[^skw-01] It offers arsenic, the 7° tilt and
-  a 3 keV floor,[^axcelis-8250] but its quoted dose ceiling of
+  0-60 deg tilt".[^skw-01] It offers arsenic and the 7° tilt; the
+  platform's energy floor is 3 keV on the later 8250HT variant, for
+  which a published specification exists[^axcelis-8250] — SkyWater's own
+  listing gives no energy range. Its quoted dose ceiling of
   10¹⁴ cm⁻² would put a heavier tip out of reach. Strength: strong for
   the tool; **weak** for assignment — which tool runs `ASTI`
   depends on the (non-public) dose.

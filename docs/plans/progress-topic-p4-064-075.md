@@ -20,10 +20,10 @@ before being fixed or declined.
 | 064-L1 | Low | fixed | Confirmed OVGTTH ("poly cap after SPE", 0.2 um) is the thickness after the spacer etch (step 077), 12 steps after NTM; the cap at step 064 must be thicker. Reworded on 064 and 065. |
 | 064-L2 | Low | fixed | Confirmed Table F2b marks NTM "C" on PMOS/SONOS/flash/110A NMOS rows and "-" on 1.8V NMOS rows (matches masks/ntm.md's own reading). Added the cross-check sentence. |
 | 064-L3 | Low | fixed | Same ITRS node caveat as 065-H1/075-M1, applied to step 064's Why-this-step-exists paragraph. |
-| 065-L1 | Low | open | |
+| 065-L1 | Low | fixed | Confirmed 088-rtad.md:17 says all three deep S/D implants leave silicon amorphised; named them instead of "one of the two". |
 | 065-L2 | Low | fixed | = 064-L1, same text/fix at 065-asti.md's shadowing-arithmetic bullet. |
-| 065-L3 | Low | open | |
-| 065-L4 | Low | open | |
+| 065-L3 | Low | fixed | Confirmed via Crossref that Nobili 1983 (10.1149/1.2119859) has no public abstract/paywalled text; marked the 2e20 threshold as a typical value on txt-01, kept Nobili for the precipitation mechanism. |
+| 065-L4 | Low | fixed | Confirmed axcelis-8250.txt is the Semiconductor Online 8250HT page (footnote already says so); SkyWater's own 8250 listing gives no energy range. Reworded to attribute the 3 keV floor to the 8250HT variant only. |
 | 066-L1 | Low | open | |
 | 066-L2 | Low | open | |
 | 066-L3 | Low | open | |
