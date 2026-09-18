@@ -9,7 +9,7 @@ arithmetic before being fixed or declined.
 | Finding | Page(s) | Status | Note |
 |---|---|---|---|
 | 038-H1 | 038-depi.md | fixed | PDK "VT meas" row misread — gate is swept, not held at 0 V; verified against `pdk-device-details.txt` (V_G swept, V_D +1.1, V_B 0, V_S 0, V_WL +1.8) |
-| 035-M1 | 035-tunm.md | open | Cypress quotation put inside a PDK attribution |
+| 035-M1 | 035-tunm.md | fixed | Cypress quotation put inside a PDK attribution |
 | 036-M1 | 036-tunarce.md | open | unsupported/contradictory "few nm resist loss" figure |
 | 036-M2 | 036-tunarce.md | open | "tens of keV" narrower than cited analogues |
 | 037-M1 | 037-ptsi.md | open | original/star cell W/L pairing stated as fact |
@@ -29,10 +29,10 @@ arithmetic before being fixed or declined.
 | 046-M1 | 046-goxetch.md | open | category-page quote drops its inference marker |
 | 047-M1 | 047-lvgox.md | open | nitridation inference marked once, used as fact elsewhere |
 | 047-M2 | 047-lvgox.md | open | two overstated claims about oxidation control |
-| 035-L1 | 035-tunm.md | open | quotation capitalisation |
-| 035-L2 | 035-tunm.md | open | 5V regions are hvi, drawn complement at LVOM |
-| 035-L3 | 035-tunm.md | open | tunm.3 unit not given by the table |
-| 035-L4 | 035-tunm.md | open | job-01 no longer retrievable |
+| 035-L1 | 035-tunm.md | fixed | quotation capitalisation |
+| 035-L2 | 035-tunm.md | fixed | 5V regions are hvi, drawn complement at LVOM |
+| 035-L3 | 035-tunm.md | fixed | tunm.3 unit not given by the table |
+| 035-L4 | 035-tunm.md | fixed | job-01 no longer retrievable |
 | 036-L1 | 036-tunarce.md | open | "Mattson Aspen II" vs source's "Aspen2" |
 | 036-L2 | 036-tunarce.md | open | tension with Open questions (resolved by 036-M1) |
 | 037-L1 | 037-ptsi.md | open | US 5,963,801 context (n-well, "merely exemplary") |
