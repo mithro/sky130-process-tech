@@ -101,6 +101,7 @@ FOOTNOTE_DEF_RE = re.compile(
     r"^\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\]:(.*?)(?=^\[\^[A-Za-z0-9][A-Za-z0-9_-]*\]:|\Z)",
     re.MULTILINE | re.DOTALL,
 )
+BRACKETED_URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
 URL_RE = re.compile(r"https?://[^\s<>\)\]\"'`]+")
 DOI_BARE_RE = re.compile(r"\bDOI:?\s+(10\.\d{4,9}/[^\s,;)\]}>\"']+)", re.IGNORECASE)
 TRAILING_PUNCT = ".,;:"
@@ -141,8 +142,28 @@ def is_blocked_host(host: str) -> bool:
 # --------------------------------------------------------------------------
 
 
+def _classify_url(u: str, urls: set[str], dois: set[str]) -> None:
+    host = host_of(u)
+    if host in ("doi.org", "dx.doi.org"):
+        doi = urllib.parse.unquote(u.split("doi.org/", 1)[-1]).rstrip(TRAILING_PUNCT)
+        if doi:
+            dois.add(doi.lower())
+    else:
+        urls.add(u)
+
+
 def extract_urls_and_dois(text: str) -> tuple[set[str], set[str]]:
     """Return (urls, dois) found in a block of text.
+
+    House style (``docs/plans/citation-style.md``) always wraps a
+    citation URL in angle brackets (``<https://...>``); that delimiter
+    is unambiguous, so it is tried first and takes the *whole* interior,
+    parentheses and all -- many pre-2000 Elsevier DOIs
+    (``10.1016/0022-0248(82)90456-2``) and Wikipedia article titles
+    (``Wafer_(electronics)``) contain literal parentheses that a
+    punctuation-trimming bare-URL regex would truncate. Any text not
+    inside angle brackets still falls back to the punctuation-trimming
+    regex, in case a page ever strays from house style.
 
     A ``https://doi.org/<doi>`` (or ``dx.doi.org``) URL contributes only
     a DOI, not a URL, so it merges with a bare ``DOI 10.xxxx/yyyy``
@@ -150,16 +171,20 @@ def extract_urls_and_dois(text: str) -> tuple[set[str], set[str]]:
     """
     urls: set[str] = set()
     dois: set[str] = set()
-    for u in URL_RE.findall(text):
-        u = u.rstrip(TRAILING_PUNCT)
-        host = host_of(u)
-        if host in ("doi.org", "dx.doi.org"):
-            doi = u.split("doi.org/", 1)[-1]
-            doi = urllib.parse.unquote(doi).rstrip(TRAILING_PUNCT)
-            if doi:
-                dois.add(doi.lower())
-        else:
-            urls.add(u)
+    spans: list[tuple[int, int]] = []
+    for m in BRACKETED_URL_RE.finditer(text):
+        spans.append((m.start(), m.end()))
+        _classify_url(m.group(1), urls, dois)
+    if spans:
+        chars = list(text)
+        for s, e in spans:
+            for i in range(s, e):
+                chars[i] = " "
+        remainder = "".join(chars)
+    else:
+        remainder = text
+    for u in URL_RE.findall(remainder):
+        _classify_url(u.rstrip(TRAILING_PUNCT), urls, dois)
     for m in DOI_BARE_RE.finditer(text):
         dois.add(m.group(1).rstrip(TRAILING_PUNCT).lower())
     return urls, dois
@@ -636,6 +661,17 @@ Tier: deep dive.
     urls2, dois2 = entries.get("PDK-02", (set(), set()))
     check("PDK-02 dedups doi.org URL and bare DOI", dois2 == {"10.1109/proc.1972.8854"})
     check("PDK-02 other url kept", urls2 == {"https://example.org/mirror"})
+
+    paren_text = "See <https://doi.org/10.1016/0022-0248(82)90456-2> and " "<https://en.wikipedia.org/wiki/Wafer_(electronics)>."
+    urls3, dois3 = extract_urls_and_dois(paren_text)
+    check(
+        "bracketed DOI keeps its parentheses",
+        dois3 == {"10.1016/0022-0248(82)90456-2"},
+    )
+    check(
+        "bracketed URL keeps its parentheses",
+        urls3 == {"https://en.wikipedia.org/wiki/Wafer_(electronics)"},
+    )
 
     page_text = """
 Some claim.[^wiki-fick][^pdk-01]
