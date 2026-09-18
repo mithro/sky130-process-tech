@@ -32,10 +32,10 @@ Status values: open / fixed / declined.
 | 001-L2 | 001-smat | fixed | verified indeed.com returns 403 and has no Wayback snapshot by fetch; added the note |
 | 001-L3 | 001-smat, 009-dnis | fixed | verified by fetch: Wikipedia says "75 or 80 °C", not a range; fixed 001-smat.md (both instances) and, since it's in this module's scope, the same wording on 009-dnis.md; 002-box.md only names the baths and needs no change (confirmed) |
 | 001-L4 | 001-smat | declined | reviewer's own text calls this "defensible" and offers it as an optional style choice only; leaving as-is |
-| 002-L1 | 002-box | open | non-verbatim US 7,439,141 quote |
-| 002-L2 | 002-box, 006-stie | open | AmberWave strained-Si/SiGe qualifier |
-| 002-L3 | 002-box | open | Deal-Grove vs thin-regime contradiction |
-| 002-L4 | 002-box | open | pad oxide given nitride's screening job |
+| 002-L1 | 002-box | fixed | patents.google.com bot-blocked this session; applied review's specific claim-vs-specification wording distinction as given |
+| 002-L2 | 002-box, 006-stie | fixed | 006-stie.md side already done in the 006-H1 commit; added the same qualifier here |
+| 002-L3 | 002-box | fixed | ties to massoud-1985, already cited on the page for exactly this point |
+| 002-L4 | 002-box | fixed | page already partly read this correctly; completed the wording (nitride is doing most of the work, trenches are open) |
 | 003-L1 | 003-isonit | fixed | Google Patents fetch of US 2009/0179253 was bot-blocked this session (matches the pattern both reviews report for this host); applied the review's quoted evidence (specific patent-number + verbatim phrase claims) as given, since it is checkable in principle and highly specific |
 | 003-L2 | 003-isonit | fixed | marked the FOXSTEP link as our reading, not a documented relation |
 | 004-L2 (review B; = review A 004-L1) | 004-fom | fixed | verified Wikipedia's BARC sentence by fetch: confirmed the "45 nm and below" clause is dropped; added the scope note and a 130 nm-era citation |
