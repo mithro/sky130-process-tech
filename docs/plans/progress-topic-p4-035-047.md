@@ -10,8 +10,8 @@ arithmetic before being fixed or declined.
 |---|---|---|---|
 | 038-H1 | 038-depi.md | fixed | PDK "VT meas" row misread — gate is swept, not held at 0 V; verified against `pdk-device-details.txt` (V_G swept, V_D +1.1, V_B 0, V_S 0, V_WL +1.8) |
 | 035-M1 | 035-tunm.md | fixed | Cypress quotation put inside a PDK attribution |
-| 036-M1 | 036-tunarce.md | open | unsupported/contradictory "few nm resist loss" figure |
-| 036-M2 | 036-tunarce.md | open | "tens of keV" narrower than cited analogues |
+| 036-M1 | 036-tunarce.md | fixed | replaced uncited "few nm resist loss" with the ARC-thickness+overetch statement the page's own Selectivity section already supports |
+| 036-M2 | 036-tunarce.md | fixed | widened to "tens to several hundred keV", citing PTSI/DEPI |
 | 037-M1 | 037-ptsi.md | open | original/star cell W/L pairing stated as fact |
 | 037-M2 | 037-ptsi.md | open | `lvtn` block reading overstated vs step 015 |
 | 038-M1 | 038-depi.md | open | 20 V zero-Vt structure identification untraced |
@@ -33,8 +33,7 @@ arithmetic before being fixed or declined.
 | 035-L2 | 035-tunm.md | fixed | 5V regions are hvi, drawn complement at LVOM |
 | 035-L3 | 035-tunm.md | fixed | tunm.3 unit not given by the table |
 | 035-L4 | 035-tunm.md | fixed | job-01 no longer retrievable |
-| 036-L1 | 036-tunarce.md | open | "Mattson Aspen II" vs source's "Aspen2" |
-| 036-L2 | 036-tunarce.md | open | tension with Open questions (resolved by 036-M1) |
+| 036-L2 | 036-tunarce.md | fixed | resolved as a side effect of the 036-M1 fix (the unsupported figure is gone) |
 | 037-L1 | 037-ptsi.md | open | US 5,963,801 context (n-well, "merely exemplary") |
 | 037-L2 | 037-ptsi.md | open | Axcelis indium cross-validation addition |
 | 037-L3 | 037-ptsi.md, 039-tunme.md, 040-ono.md | open | silent typo correction in PDK table (-38 -> -3.8) |
@@ -63,4 +62,6 @@ arithmetic before being fixed or declined.
 
 ## Declined findings
 
-(none yet)
+| Finding | Reason |
+|---|---|
+| 036-L1 | The repo-wide, already-merged convention (documented at `docs/machines/downstream-plasma-asher.md:162`, "vendor 'Gasonic' ... writes 'Aspen2', which we read as the Aspen II") normalises the vendor's "Aspen2" to "Aspen II" on ~30 already-merged step and machine pages. The quoted gas-list strings on step 036 are exact; only the model name follows this repo-wide normalisation. Changing step 036 alone to the bare "Aspen2" would make it the sole outlier and fail the consistency check (Common rule 3) against every other page. Declined; no change. |
