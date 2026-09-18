@@ -93,7 +93,7 @@ deep-dive entries per step page and twelve per category page
   - [x] 035–047 — reviewed, 51 findings fixed (PDK threshold-measurement row misread, tunnel-oxide range on the wrong patent, readings used as settled fact), 1 declined, verified with four follow-ups and merged 2026-09-18
   - [x] 048–063 — reviewed, 54 findings fixed (a false smallest-line claim for the poly mask, an implanter list undercount, three papers cited for what they do not say, unretrievable job-listing quotations removed), verified with twelve follow-ups and merged 2026-09-18
   - [x] 064–075 — reviewed, 32 findings fixed (roadmap junction depth taken from the wrong gate length, HVNTM coverage answered by the PDK layer table, tilted-implant count), verified with nine follow-ups and merged 2026-09-18
-  - [~] 076–088 — reviewed, fixed, in verification
+  - [x] 076–088 — reviewed, 14 findings fixed (a nitride etch mechanism the cited paper does not describe, a post-spacer-etch thickness applied before the etch, a nitride stress figure), 2 declined, verified with follow-ups (also the unsourced sulfuric-acid grade on 016 and 067) and merged 2026-09-18
   - [x] 089–106 — reviewed, 28 findings fixed (contact taper and etch angle reconciled by arithmetic, a smallest-hole claim, two vendor documents that disagree on an RTP ramp rate now both reported), job-listing findings left for the sweep, verified with three follow-ups and merged 2026-09-18
   - [~] 107–117 — review running
   - [ ] 118–134
