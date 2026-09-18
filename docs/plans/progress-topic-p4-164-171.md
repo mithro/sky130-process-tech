@@ -38,11 +38,11 @@ left untouched.
 | 165-L2 | Low | fixed | two different areaid.sl layers (81:1 vs 81:7) not distinguished (165:37-39,263,267-269) |
 | 165-L3 | Low | fixed | seal-ring cell reading omits areaid.cr/areaid.cd stress-DRC layers (165:43-46) |
 | 165-L4 | Low | fixed | GF "one mask" sentence is about nitride/polyimide film, word dropped (165:100-102) |
-| 166-M1 | Medium | open | LINIT/LINT name split never bridged (166:29-30,47-48,179; also 167:48) |
-| 166-L1 | Low | open | Kastenmeier 1996 is downstream/remote etch, cited for biased breakthrough step (166:119-121,218-219; also 169:100-102) |
-| 166-L2 | Low | open | Wodecki cited for inference his paper argues against (166:124-127,220) |
-| 166-L3 | Low | open | hyphenation mismatch inside TSMC patent quotation (166:117-118) |
-| 166-L4 | Low | open | unmarked mechanical assertion about nitride closing moisture path (166:84-86) |
+| 166-M1 | Medium | fixed | LINIT/LINT name split never bridged (166:29-30,47-48,179; also 167:48) |
+| 166-L1 | Low | fixed (also 169-L1 pending) | Kastenmeier 1996 is downstream/remote etch, cited for biased breakthrough step (166:119-121,218-219; also 169:100-102) |
+| 166-L2 | Low | fixed (also 169-L1 pending) | Wodecki cited for inference his paper argues against (166:124-127,220) |
+| 166-L3 | Low | fixed | hyphenation mismatch inside TSMC patent quotation (166:117-118) |
+| 166-L4 | Low | fixed | unmarked mechanical assertion about nitride closing moisture path (166:84-86) |
 | 167-M1 | Medium | open | Vanguard "comparable stack" — oxide 4-8x thicker than PDK value (167:132-135) |
 | 167-M2 | Medium | open | NTSD says polyimide "not public" while overview cites SkyWater S130 "Yes" (167:254-256, also body 56-63; overview cross-ref) |
 | 167-L1 | Low | open | dual-frequency RF stress-trim practice asserted without a source that states it (167:120-122) |
