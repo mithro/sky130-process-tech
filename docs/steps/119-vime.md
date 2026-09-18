@@ -138,9 +138,10 @@ recipe is not public); the shared physics is set out at
    TiW then etches as WF₆ and TiF₄.[^petri-1992]
 5. **Strip and clean.** Oxygen or O₂/N₂ downstream {term}`ash` —
    GaSonics, Iridia or Mattson class in SkyWater's list[^skw-01] —
-   then a solvent or semi-aqueous clean (the "EKS265, EKC270
-   solvents" of SkyWater's wet-bench list,[^skw-01] EKC265/EKC270-class;
-   SkyWater writes "EKS265") to remove the
+   then a solvent or semi-aqueous clean — SkyWater lists "EKS265,
+   EKC270 solvents, CO2 injected DI" under "Batch Rotational" in its
+   resist-removal and clean list[^skw-01] (EKC265/EKC270-class;
+   SkyWater writes "EKS265") — to remove the
    fluorocarbon polymer and the titanium- and tungsten-fluoride
    residue from the via floor without attacking the TiW or the
    exposed aluminium of an unlanded via. No HF is used (inference:
