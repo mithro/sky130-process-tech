@@ -74,6 +74,17 @@ left untouched.
 | 171-L6 | Low | fixed | Group-code list omits stray `3791956` value (171:382-383) |
 | 171-L7 | Low | fixed | "four Die Row groups" passes over 2 blank rows (271 of 273 assigned) (171:66-67) |
 
+## Verifier follow-ups (`tmp/p4/verify-164-171.md`)
+
+| id | severity | status | note |
+|---|---|---|---|
+| V1 | required | fixed | 170-ally.md:145 cited Yue 1985 (voids-only paper) for hillock growth; added `[^chaudhari-1974]` (definition copied from 164-nfusox.md), kept Yue for voiding |
+| V2 | required | fixed | 168-pdm.md:66-69 gave "1000 A oxide and 7000-9000 A nitride" as if both came from both S8DI and S8TNV-5R reports; QTP 113005 (S8TNV-5R) is nitride-only. Reworded to match 169-pdme.md:28-30 |
+| N1 | nit | fixed | 167-ntsd.md: Sinha's "crack-resistant 1 um films" result is reported at 450-500 C, not the 275 C deposition temperature the rest of the sentence gives |
+| N2 | nit | fixed | 166-nsme.md: "bottle neck width" = passivation-oxide thickness is this reference's reading, now marked so |
+| N3 | nit | fixed | 170-ally.md: "which is why the soak is short and the ramp-down controlled" marked as inference (no source states the causal link) |
+| N4 | nit | not applicable to this branch | pre-existing "above the substrate" phrasing on 089-psg.md and 105-nild2.md, both outside 164-171 and on other fixers' branches; left for the site-wide datum sweep |
+
 ## Checks
 
 All run from the worktree, in the foreground, after all findings above
