@@ -2150,7 +2150,7 @@ filings:
     - text: >-
         The technology licensing agreement is for SkyWater to manufacture
         designs from customers worldwide in their Minnesota fab
-      location: First page
+      location: page 2
   auditor_report: null
   relationships:
   - partner-names-skywater
@@ -4168,7 +4168,7 @@ filings:
     - text: >-
         pursuant to which the Company acquired all of the issued and
         outstanding membership interests of Spansion Fab 25, LLC ("Fab 25")
-      location: Notes to the condensed consolidated financial statements, Business Combination
+      location: Notes to the condensed consolidated financial statements, note 1
   auditor_report: null
   relationships:
   - skywater-governance
@@ -4654,7 +4654,7 @@ filings:
     - text: >-
         related to Infineon's 200 mm fab in Austin, Texas (the "Transaction").
         The purchase price for the Transaction was $206,466
-      location: Notes to the condensed consolidated financial statements, Business Combination
+      location: Notes to the condensed consolidated financial statements, note 4
   auditor_report: null
   relationships:
   - skywater-governance
