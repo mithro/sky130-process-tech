@@ -73,7 +73,9 @@ The `pwbm` rules (pwbm.1–pwbm.5) have no public numeric values ("N/A")
 but describe the geometry: `pwbm` regions live inside the 20 V
 identifier `uhvi`; "dnwell inside UHVI must be enclosed by pwbm (exempt
 pwbm hole inside dnwell)" (pwbm.4); and the {term}`drain-extended <DEMOS>` implant layer
-`pwde` must be enclosed by `pwbm` (pwdem.3).[^pdk-periph] In words:
+must be enclosed by `pwbm` ("Min enclosure of pwdem:dg by pwbm.dg
+inside UHVI", pwdem.3 — the rule set calls the layer `pwdem`, while
+`gds_layers.csv` draws it as `pwde` 124:20).[^pdk-periph][^pdk-06] In words:
 inside a 20 V device the standard P-well is kept out of the deep-N-well
 tub, and a custom, lighter P-well is put back by
 {ref}`PWDEM <step-030>`/{ref}`PWDEI1 <step-031>` where the device needs
