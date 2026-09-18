@@ -16,7 +16,7 @@ count of every member publication in that jurisdiction.
 
 ## United States (US)
 
-427 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
+429 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -442,10 +442,12 @@ count of every member publication in that jurisdiction.
 | US 10,319,733 B2 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | in force |
 | US 2019/0355583 A1 | {ref}`US 2019/0355583 A1 <patent-gp53939072>` | in force |
 | US 10,699,901 B2 | {ref}`US 10,699,901 B2 <patent-gp49580623>` | in force |
+| US 11,183,509 B2 | {ref}`US 11,183,509 B2 <patent-gp51221986>` | in force |
 | US 2022/0122660 A1 | {ref}`US 2022/0122660 A1 <patent-gp74192490>` | unknown |
 | US 11,342,429 B2 | {ref}`US 11,342,429 B2 <patent-gp58691400>` | in force |
 | US 11,690,227 B2 | {ref}`US 11,690,227 B2 <patent-gp65016688>` | in force |
 | US 11,810,616 B2 | {ref}`US 11,810,616 B2 <patent-gp75974473>` | in force |
+| US 2025/0031586 A1 | {ref}`US 2025/0031586 A1 <patent-gp94259596>` | unknown |
 | US 12,232,324 B2 | {ref}`US 12,232,324 B2 <patent-gp90359049>` | in force |
 
 ## European Patent Office (EP)
@@ -1360,7 +1362,7 @@ Number of members recorded per family.
 
 | Members | Families |
 |---|---|
-| 1 | 54 |
+| 1 | 55 |
 | 2 | 31 |
 | 3 | 13 |
 | 4 | 13 |
@@ -1373,7 +1375,7 @@ Number of members recorded per family.
 | 11 | 3 |
 | 12 | 8 |
 | 13 | 3 |
-| 14 | 3 |
+| 14 | 4 |
 | 15 | 3 |
 | 16 | 5 |
 | 17 | 3 |

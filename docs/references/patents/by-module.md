@@ -208,6 +208,7 @@ Steps 89–106.
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
+* {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
 
 ## Metal contact and metal 1
 
@@ -524,3 +525,4 @@ that are not specific to one step.
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
+* {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
