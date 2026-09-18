@@ -41,9 +41,9 @@ before being fixed or declined.
 | 053-L2 | Low | fixed | Reworded the Open question so it no longer reads "splits" as evidence of multiple implants (Common rule 2). |
 | 054-L1 | Low | fixed | Confirmed via OpenAlex: Fujimura 1991 measures ash rate/activation energy, not crust penetration. Reworded to what it actually measured. |
 | 054-L2 | Low | fixed | Cited fujimura-1989's residue finding (oxide of implanted species) instead of an unsourced "removes without difficulty" claim. |
-| 055-L1 | Low | open | |
-| 055-L2 | Low | open | |
-| 055-L3 | Low | open | |
+| 055-L1 | Low | fixed | Redid the arithmetic: 2000/300 = 6.67, 2000/319.8 = 6.25, not 7. Fixed both occurrences ("factor of seven" and "seven times higher"). |
+| 055-L2 | Low | fixed | Confirmed 052 and 049 leave the question open; softened the "used throughout these pages" overstatement and cross-referenced 052's open question. |
+| 055-L3 | Low | fixed | Added Lane & Wrixon's published poly design space to Why this step exists, as a second independent source alongside SkyWater's own documentation. |
 | 056-L1 | Low | open | |
 | 056-L2 | Low | fixed | = 053-L1 |
 | 056-L3 | Low | open | |

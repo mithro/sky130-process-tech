@@ -69,10 +69,17 @@ low-power analogue blocks need. It cannot be made from the 300 Ω/sq
 film simply by drawing it longer: area, parasitic capacitance to the
 substrate and matching all scale badly. It also cannot be made by
 under-dosing the 300 Ω/sq implant on the same mask, because the two
-values differ by a factor of seven in {term}`sheet resistance` and, on Seto's
+values differ by between six and seven times in {term}`sheet resistance`
+(2000 Ω/sq against the device page's 300 Ω/sq and the extraction
+table's 319.8 Ω/sq)[^pdk-07][^pdk-08] and, on Seto's
 model, sit on different parts of the steep resistance-versus-doping
 curve,[^seto-1975] so they need separate, individually controlled
-doses.
+doses. Lane and Wrixon's published design space for implanted LPCVD
+poly — sheet resistances from 40 to 2400 Ω/sq within a ±500 ppm/°C
+temperature coefficient, for films 50–600 nm thick — puts 2000 Ω/sq at
+the high end of what an ordinary implanted-poly resistor process
+reaches, which is consistent with the PDK's caution about its
+specifications.[^lane-1989][^pdk-07]
 
 The price of a lightly doped poly resistor is variability. Its
 resistance is dominated by grain-boundary barriers, so it is sensitive
@@ -122,8 +129,10 @@ opened at {ref}`RRPM <step-052>` (no 300 Ω/sq implant), then
 {ref}`UPRI <step-056>` is the only implant they receive and its dose
 alone sets 2000 Ω/sq. If instead they were opened at `RRPM`, `UPRI`
 would have to be a *counter*-doping or a very small additional dose,
-which is implausible for a resistance seven times higher. The first
-reading is used throughout these pages and is marked as an inference.
+which is implausible for a resistance six to seven times higher. The
+first reading is the one this page uses, and is marked as an
+inference; {ref}`RRPM <step-052>` leaves the question open and lists
+it as an open question, so the two pages should be read together.
 
 ## Machines typically used
 
