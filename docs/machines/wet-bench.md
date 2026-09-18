@@ -484,7 +484,8 @@ not public.
     <https://doi.org/10.1143/JJAP.28.2130>
 [^kern-1970]: W. Kern and D. A. Puotinen, "Cleaning solutions based on
     hydrogen peroxide for use in silicon semiconductor technology", *RCA
-    Review* **31**, 187–206 (1970).
+    Review* **31**, 187–206 (1970). No DOI; *RCA Review* 31 is available
+    in print and in library archives.
 [^reinhardt-2008]: K. A. Reinhardt and W. Kern (eds.), *Handbook of
     Silicon Wafer Cleaning Technology*, 2nd ed., William Andrew, 2008,
     ISBN 978-0-8155-1554-8. <https://openlibrary.org/isbn/9780815515548>

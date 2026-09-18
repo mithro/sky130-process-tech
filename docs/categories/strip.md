@@ -304,7 +304,8 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
     <https://www.c2mi.ca/en/equipement/akrion-gama-acid-bench/>
 [^kern-1970]: W. Kern and D. A. Puotinen, "Cleaning solutions based on
     hydrogen peroxide for use in silicon semiconductor technology", *RCA
-    Review* **31**, 187–206 (1970).
+    Review* **31**, 187–206 (1970). No DOI; *RCA Review* 31 is available
+    in print and in library archives.
 [^wiki-hf]: Wikipedia, *Hydrofluoric acid*.
     <https://en.wikipedia.org/wiki/Hydrofluoric_acid>
 [^wiki-resist]: Wikipedia, *Photoresist*.
