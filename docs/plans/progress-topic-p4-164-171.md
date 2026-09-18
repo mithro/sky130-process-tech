@@ -54,10 +54,10 @@ left untouched.
 | 168-L2 | Low | fixed (also 165-nsm.md k1 note) | k1 sentence silently uses space vs 165's feature, no note (168:56-59) |
 | 168-L3 | Low | fixed | "any rework strips resist..." unmarked inference (168:69-70) |
 | 168-L4 | Low | fixed | applied reviewer's optional strictest wording (168:35-39) |
-| 169-M1 | Medium | open | Open-questions passivation range mixes oxide+nitride total vs nitride-only figure (169:241-245; also overview :785-792) |
-| 169-L1 | Low | open | Kastenmeier/Wodecki same two caveats as 166-L1/166-L2 (169:100-102,115-118) |
-| 169-L2 | Low | open | "hidden and later grow during bonding" over-reads Hunter et al. (169:86-88) |
-| 169-L3 | Low | open | "in sequence" wording not precise re category page (169:47-49) |
+| 169-M1 | Medium | fixed | Open-questions passivation range mixes oxide+nitride total vs nitride-only figure (169:241-245; also overview :785-792) |
+| 169-L1 | Low | fixed | Kastenmeier/Wodecki same two caveats as 166-L1/166-L2 (169:100-102,115-118) |
+| 169-L2 | Low | fixed | "hidden and later grow during bonding" over-reads Hunter et al. (169:86-88) |
+| 169-L3 | Low | fixed | "in sequence" wording not precise re category page (169:47-49) |
 | 169-L4 | Medium(cap) | deferred | metal-cap sweep — Danzl annotation on 168-pdm.md:230-231 needs cap hedge; DO NOT EDIT (scope exclusion) |
 | 170-M1 | Medium | open | Maes et al. 1981 listed as a hazard; paper reports hydrogen anneal *improved* MNOS retention (170:108-112,236-237,254-255) |
 | 170-M2 | Medium | open | "below temperatures at which Al hillocks/voids grow rapidly" unsourced and contradicts category page + own text (170:129-133) |
