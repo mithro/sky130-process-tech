@@ -64,7 +64,7 @@ An industry-generic heavy-implant-resist strip for a 200 mm,
 
 1. **Two-stage plasma ash.** First stage below the popping threshold
    with oxygen plus {term}`forming gas` — "removed by oxygen and
-   nitrogen/hydrogen plasma in a low-temperature (<220 °C)
+   nitrogen/hydrogen plasma in a low-temperature (<220° C.)
    environment"[^pat-strip-mosel] — until the crust has gone, then a hot
    oxygen stage for the bulk. Downstream plasma so that neutral atomic
    oxygen does the work.[^wiki-ash] SkyWater's ashers: "Gasonic PEP,

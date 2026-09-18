@@ -77,7 +77,7 @@ fab (SKY130's recipe is not public):
 
 1. **Plasma ash, two steps.** Downstream microwave or RF oxygen
    plasma. First a *low-temperature* step — "removed by oxygen and
-   nitrogen/hydrogen plasma in a low-temperature (<220 °C)
+   nitrogen/hydrogen plasma in a low-temperature (<220° C.)
    environment"[^pat-strip-mosel] — until the crust is gone, so that
    the bulk cannot pop under it; then a hotter step to remove the
    bulk quickly. The nitrogen addition that Fujimura et al. studied
