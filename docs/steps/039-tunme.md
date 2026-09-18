@@ -99,7 +99,9 @@ source bias set out on {ref}`PTSI <step-037>`).
 An industry-generic masked pad-oxide removal for a 200 mm, 130 nm-era
 fab (SKY130's recipe is not public):
 
-1. **Wet etch with resist in place.** Dilute HF (50:1 to 100:1) or
+1. **Wet etch with resist in place.** Dilute HF — the Cypress patent
+   names "a 50:1 hydrofluoric (HF) wet etch" alongside 10:1 and 20:1
+   BOE[^pat-04] — or
    surfactant-containing BOE in a wet bench or single-wafer spray tool.
    A 6:1 BOE etches thermal oxide at "approximately 2 nanometres per
    second at 25 degrees Celsius"[^wiki-boe] — far too fast to control

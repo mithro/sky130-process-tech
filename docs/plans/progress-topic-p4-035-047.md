@@ -26,7 +26,7 @@ arithmetic before being fixed or declined.
 | 044-M1 | 044-lvom.md | fixed | NOT-hvi inference marked once, used as fact elsewhere |
 | 045-M1 | 045-nchi.md | fixed | 7 deg tilt asserted; cited analogue specifies zero tilt |
 | 045-M2 | 045-nchi.md | fixed | "last channel implant" claim too strong |
-| 046-M1 | 046-goxetch.md | open | category-page quote drops its inference marker |
+| 046-M1 | 046-goxetch.md | fixed | category-page quote drops its inference marker |
 | 047-M1 | 047-lvgox.md | open | nitridation inference marked once, used as fact elsewhere |
 | 047-M2 | 047-lvgox.md | open | two overstated claims about oxidation control |
 | 035-L1 | 035-tunm.md | fixed | quotation capitalisation |
@@ -55,7 +55,7 @@ arithmetic before being fixed or declined.
 | 044-L2 | 044-lvom.md | fixed | beverina-2003 used beyond abstract |
 | 045-L1 | 045-nchi.md | fixed | AMD quotation drops "zero tilt" clause (same as 045-M1) |
 | 045-L2 | 045-nchi.md | fixed | e-test values don't say how sweeps were combined |
-| 046-L1 | 046-goxetch.md | open | uncited/wider HF dilution range vs 039 |
+| 046-L1 | 046-goxetch.md, 039-tunme.md | fixed | uncited/wider HF dilution range vs 039 |
 | 046-L2 | 046-goxetch.md | fixed | resolved together with 044-L1 | "~10 nm" (same as 044-L1) |
 | 047-L1 | 047-lvgox.md | open | "the one public hint" overstates evidence |
 | 047-L2 | 047-lvgox.md | open | raw-data module-to-device mapping not given |
