@@ -78,9 +78,10 @@ surface chemistry behind such selectivity.[^flamm-1981][^winters-1992]
 What is specific to this instance is the history of the wafer. Under
 the metal-4 stack lies a finished first capacitor whose plates connect,
 through via 3, to metal-4 shapes that are still one continuous sheet;
-every `capm` top plate on the wafer is electrically tied to the blanket
-metal 4 during this etch (inference from the PDK's stacked cross-section,[^pdk-07] in the sequence
-described in this reference, where metal 4 is patterned after this etch).
+every `capm` top plate that a via 3 lands on is electrically tied to
+the blanket metal 4 during this etch (inference from the PDK's stacked
+cross-section,[^pdk-07] in the sequence described in this reference,
+where metal 4 is patterned after this etch).
 
 ## Why this step exists
 
@@ -143,9 +144,11 @@ same sequence.
    dielectric.[^pat-mim-ti-etch]
 5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` — SkyWater lists
    "Gasonic PEP", Iridia and Mattson Aspen II strippers[^skw-01] — then a
-   solvent clean (the "EKS265, EKC270 solvents" of its batch rotational
-   tools[^skw-01]) that removes fluorocarbon and metal-halide residue
-   without attacking TiW or the dielectric; hydrogen peroxide etches TiW,
+   solvent clean — SkyWater's batch rotational tools are listed with
+   "EKS265, EKC270 solvents, CO2 injected DI"[^skw-01] — which must
+   remove fluorocarbon and metal-halide residue without attacking TiW
+   or the dielectric (requirement, not a property of the named
+   products); hydrogen peroxide etches TiW,
    as Danzl and McLaurin used it to,[^danzl-1997] so on our reading it is
    excluded here.
 6. **Metrology.** Plate {term}`CD` by {term}`CD-SEM`; remaining

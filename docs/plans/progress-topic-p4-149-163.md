@@ -36,9 +36,9 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 151-L3 | Low | fixed | Hartsough citation implies corroboration it can't give (151:36-40, Open questions) |
 | 152-L1 | Low | fixed | CD-bias arithmetic convention unstated (152:77-81) |
 | 152-L2 | Low | fixed | alignment-target naming inconsistency within page (152:155-158) |
-| 153-M1 | Medium | open | "every capm plate tied to metal4" overstated vs 155's correct wording (153:78-83) |
+| 153-M1 | Medium | fixed | "every capm plate tied to metal4" overstated vs 155's correct wording (153:81-83) |
 | 153-L1 | Low | deferred | metal-cap/barrier sweep — S8TNV-5R quote scope (153:31-33, :221) |
-| 153-L2 | Low | open | solvent-clean citation placement implies chemistry claim (153:144-150) |
+| 153-L2 | Low | fixed | solvent-clean citation placement implies chemistry claim (153:145-151) |
 | 154-L1 | Low | open | CU-flagged rule range incomplete (154:40-43) |
 | 154-L2 | Low | open | uncited/unmarked cap2m-edge overlay claim (154:145-150) |
 | 155-M1 | Medium | open | collective gas-list phrasing attributes all gases to all tools (155, 163) |
