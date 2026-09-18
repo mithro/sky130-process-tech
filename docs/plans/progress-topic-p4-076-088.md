@@ -20,7 +20,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 080-L1 | Low | fixed | Confirmed via Crossref (10.1116/1.586361): Raupp's abstract gives trends with temperature/pressure/power but no absolute window. Matched the category page's sourced 250-400 C, wiki-pecvd. |
 | 080-L2 | Low | fixed | Confirmed page's own reading (lines 14-27): SPOX is deposited over the SPNIT/SPE nitride spacer as an additional composite layer, not a replacement; "instead of nitride" wrongly implied substitution. Reworded to "the extra spacer width added here is oxide rather than more nitride". |
 | 082-L1 | Low | fixed | Confirmed via Crossref (10.1063/1.96079): Smith 1985's abstract says "high sensitivity even at low dose", supporting a low-dose use, not a high-dose limitation as unsourced. Reworded as an inference citing Smith (added footnote def + Deep dive entry, already used the same way on 083-2psdi.md). |
-| 083-L1 | Low | open | |
+| 083-L1 | Low | fixed | Confirmed pdk-assumptions.txt gives PrThickImplant=0.3 and PRTHICKN=1.14 with no stated rationale for either. The causal "which is why" was this reference's own reading, not the PDK's; reworded as "we read ... as a response to that, though the PDK does not say so", matching the mask-page brief's rule on design-rule purposes. |
 | 084-L1 | Low | open | |
 | 087-L1 | Low | open | |
 | 088-L1 | Low | open | |
