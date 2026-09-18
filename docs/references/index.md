@@ -77,9 +77,15 @@ The {ref}`academic paper index <papers-index>` catalogues papers about
 SKY130, devices and circuits made on it, and its Cypress lineage; a paper
 enters the inventory only when a page cites it.
 
+The {ref}`patent index <patents-index>` catalogues worldwide patents and
+published applications related to the process technology and its
+Cypress/SkyWater/Infineon lineage, verified against a fetched public
+record; a patent enters the inventory only when a page cites it.
+
 ```{toctree}
 :maxdepth: 1
 
 public-sources
 papers/index
+patents/index
 ```
