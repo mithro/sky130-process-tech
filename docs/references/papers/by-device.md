@@ -15,6 +15,7 @@ fab publications are listed on {ref}`papers-fab-publications`.
 ## Transistor models, characterisation and cryogenic operation
 
 * {ref}`paper-akturk-2023a` — Akin Akturk et al., BCICTS 2023
+* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
 * {ref}`paper-montanares-2025a` — Mauricio Montanares et al., VLSI-SoC 2025
 * {ref}`paper-castoria-2025a` — K. E. Castoria et al., arXiv 2025 (free copy)
 * {ref}`paper-beall-2026a` — F. Beall et al., arXiv 2026 (free copy)
@@ -42,7 +43,9 @@ Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
 
 ## BEOL-integrated devices
 
+* {ref}`paper-bishop-2020a` — Mindy D. Bishop et al., Nature Electronics 2020 (affiliation inference)
 * {ref}`paper-srimani-2020a` — T. Srimani et al., VLSI Symposium 2020 (affiliation inference)
+* {ref}`paper-yu-2022a` — Andrew Yu et al., IEEE Electron Device Letters 2022 (affiliation inference)
 * {ref}`paper-srimani-2023a` — T. Srimani et al., VLSI Symposium 2023
 * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025
 
@@ -50,6 +53,7 @@ Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
 
 * {ref}`paper-rodriguez-ferrandez-2023a` — Ivan Rodriguez-Ferrandez et al., IOLTS 2023 (free copy)
 * {ref}`paper-upton-2023a` — Luke R. Upton et al., ISQED 2023
+* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
 * {ref}`paper-munoz-2026a` — Ítalo Muñoz et al., CAE 2026
 
 Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
@@ -71,6 +75,7 @@ Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
 
 ## Power converters and regulators
 
+* {ref}`paper-teo-2024a` — Tee Hui Teo et al., MCSoC 2024
 * {ref}`paper-marin-2024a` — Jorge Marin et al., IEEE Design & Test 2024
 * {ref}`paper-munoz-2026a` — Ítalo Muñoz et al., CAE 2026
 
@@ -78,12 +83,14 @@ Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
 
 * {ref}`paper-fliesler-2008a` — Michael Fliesler et al., NVSMW/ICMTD 2008 (lineage inference)
 * {ref}`paper-poole-2023a` — Nikhil Poole and Amin Arbabian, IEEE Access 2023 (free copy)
+* {ref}`paper-dubey-2023a` — Anuj Dubey and Aydin Aysu, ITC 2023
 * {ref}`paper-chen-2023a` — Po-Han Chen et al., ISCAS 2023
 * {ref}`paper-shah-2023a` — Myrtle Shah et al., FPL 2023
 * {ref}`paper-singhani-2023a` — Anish Singhani, ISCAS 2023
 * {ref}`paper-cirimelli-low-2023a` — Jesse Cirimelli-Low et al., ISCAS 2023 (free copy)
 * {ref}`paper-blocklove-2024a` — Jason Blocklove et al., LAD 2024 (free copy)
 * {ref}`paper-jagielski-2024a` — Thomas Jagielski et al., WOSET 2024 (free copy)
+* {ref}`paper-baungarten-leon-2024a` — Emilio Isaac Baungarten-Leon et al., Electronics 2024 (free copy)
 * {ref}`paper-karatas-2025a` — Onur Karataş et al., ICEEE 2025
 * {ref}`paper-tarabata-2025a` — Byron Tarabata et al., SBCCI 2025
 * {ref}`paper-price-2025a` — Ryan M. Price et al., IEEE SENSORS 2025
@@ -95,5 +102,6 @@ Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
 
 * {ref}`paper-zhang-2022a` — Qirui Zhang et al., IEEE Solid-State Circuits Letters 2022
 * {ref}`paper-poole-2023a` — Nikhil Poole and Amin Arbabian, IEEE Access 2023 (free copy)
+* {ref}`paper-li-2024a` — Anhang Li et al., IEEE Solid-State Circuits Magazine 2024
 * {ref}`paper-castoria-2025a` — K. E. Castoria et al., arXiv 2025 (free copy)
 * {ref}`paper-price-2025a` — Ryan M. Price et al., IEEE SENSORS 2025

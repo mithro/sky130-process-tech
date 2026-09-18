@@ -10,8 +10,8 @@ Cypress S8 lineage and the Bloomington fab. The list is a catalogue: a
 paper is added to the {doc}`public sources inventory <../public-sources>`
 only when a page cites it.
 
-The index holds 50 papers. The version of record is free to read for
-9 and paywalled for 41; 3 of the paywalled papers have a free
+The index holds 57 papers. The version of record is free to read for
+10 and paywalled for 47; 3 of the paywalled papers have a free
 preprint or repository copy. Every entry was checked against its Crossref,
 arXiv or proceedings record.
 
@@ -24,6 +24,8 @@ arXiv or proceedings record.
 * {ref}`papers-by-venue`
 * {ref}`papers-by-institution`
 * {ref}`papers-fab-publications`
+* {ref}`papers-designed-on-sky130` — excluded papers that name the process
+  without reporting fabricated silicon; not part of the index proper.
 
 ```{toctree}
 :hidden:
@@ -35,6 +37,7 @@ by-year
 by-venue
 by-institution
 fab-publications
+designed-on-sky130
 ```
 
 (papers-scope)=
@@ -52,8 +55,8 @@ marked "Borderline inclusion" in their entries.
 Each entry states its **basis**, how its link to the process is
 established:
 
-* **Process named** (35 papers): the abstract or full text names SKY130, the SkyWater 130 nm process or the SkyWater foundry.
-* **Affiliation inference** (14 papers): the process or fab is not named; the link rests on author affiliations; the entry explains the inference.
+* **Process named** (39 papers): the abstract or full text names SKY130, the SkyWater 130 nm process or the SkyWater foundry.
+* **Affiliation inference** (17 papers): the process or fab is not named; the link rests on author affiliations; the entry explains the inference.
 * **Lineage inference** (1 paper): the process is not named; the link rests on public Cypress statements about the S8 lineage; the entry explains the inference.
 
 Process and fabrication statements are quoted from the paper itself.
@@ -73,29 +76,29 @@ against.
 
 ## Counts
 
-By year: {ref}`1999 <papers-year-1999>` (1), {ref}`2001 <papers-year-2001>` (1), {ref}`2005 <papers-year-2005>` (2), {ref}`2006 <papers-year-2006>` (3), {ref}`2008 <papers-year-2008>` (1), {ref}`2019 <papers-year-2019>` (2), {ref}`2020 <papers-year-2020>` (3), {ref}`2021 <papers-year-2021>` (3), {ref}`2022 <papers-year-2022>` (2), {ref}`2023 <papers-year-2023>` (9), {ref}`2024 <papers-year-2024>` (7), {ref}`2025 <papers-year-2025>` (9), {ref}`2026 <papers-year-2026>` (7).
+By year: {ref}`1999 <papers-year-1999>` (1), {ref}`2001 <papers-year-2001>` (1), {ref}`2005 <papers-year-2005>` (2), {ref}`2006 <papers-year-2006>` (3), {ref}`2008 <papers-year-2008>` (1), {ref}`2019 <papers-year-2019>` (2), {ref}`2020 <papers-year-2020>` (4), {ref}`2021 <papers-year-2021>` (3), {ref}`2022 <papers-year-2022>` (3), {ref}`2023 <papers-year-2023>` (10), {ref}`2024 <papers-year-2024>` (10), {ref}`2025 <papers-year-2025>` (10), {ref}`2026 <papers-year-2026>` (7).
 
 | Topic | Papers | Also among the fab publications |
 |---|---|---|
 | {ref}`PDK models and parameter extraction <papers-topic-pdk-models>` | 6 |  |
-| {ref}`Device characterisation <papers-topic-device-characterisation>` | 9 | 1 |
+| {ref}`Device characterisation <papers-topic-device-characterisation>` | 12 | 1 |
 | {ref}`Test structures and test vehicles <papers-topic-test-structures>` | 2 |  |
-| {ref}`Reliability and harsh environments <papers-topic-reliability>` | 2 | 1 |
+| {ref}`Reliability and harsh environments <papers-topic-reliability>` | 3 | 1 |
 | {ref}`Radiation effects <papers-topic-radiation>` | 1 |  |
 | {ref}`Cryogenic operation <papers-topic-cryogenic>` | 4 |  |
 | {ref}`RRAM (ReRAM) <papers-topic-rram>` | 10 |  |
 | {ref}`SONOS memory <papers-topic-sonos>` | 1 |  |
 | {ref}`Floating-gate devices <papers-topic-floating-gate>` | 2 |  |
-| {ref}`BEOL-integrated devices <papers-topic-beol-integration>` | 3 |  |
+| {ref}`BEOL-integrated devices <papers-topic-beol-integration>` | 5 |  |
 | {ref}`Analog and RF circuits <papers-topic-analog-rf>` | 5 |  |
 | {ref}`Data converters and mixed-signal circuits <papers-topic-mixed-signal>` | 4 |  |
-| {ref}`Power management <papers-topic-power-management>` | 2 |  |
-| {ref}`Digital circuits <papers-topic-digital>` | 13 |  |
+| {ref}`Power management <papers-topic-power-management>` | 3 |  |
+| {ref}`Digital circuits <papers-topic-digital>` | 15 |  |
 | {ref}`Memory <papers-topic-memory>` | 3 |  |
-| {ref}`Sensors <papers-topic-sensors>` | 4 |  |
+| {ref}`Sensors <papers-topic-sensors>` | 5 |  |
 | {ref}`Quantum <papers-topic-quantum>` | 1 |  |
-| {ref}`Hardware security <papers-topic-security>` | 3 |  |
-| {ref}`Open-source tooling <papers-topic-tooling>` | 8 |  |
+| {ref}`Hardware security <papers-topic-security>` | 4 |  |
+| {ref}`Open-source tooling <papers-topic-tooling>` | 10 |  |
 | {ref}`Shuttle programmes and education <papers-topic-education-shuttles>` | 1 |  |
 | {ref}`Cypress S8 lineage <papers-topic-lineage-s8>` | 1 | 7 |
 | {ref}`Fab publications (Bloomington) <papers-fab-publications>` | 10 | |
@@ -133,6 +136,20 @@ Abdulaziz Alshaya, Qihao Han and Christos Papavassiliou. "RRAM, Device, Model an
 * **Note:** Borderline inclusion. Simulation of the PDK's SkyWater memristor model (1R and 1T1R read and write); no silicon.
 * **Checked:** 2026-09-14 against the Crossref record.
 
+(paper-baungarten-leon-2024a)=
+### The Genesis of AI by AI Integrated Circuit: Where AI Creates AI
+
+Emilio Isaac Baungarten-Leon, Susana Ortega Cisneros, Mohamed Abdelmoneum, Ruth Yadira Vidana Morales and German Pinedo-Diaz. "The Genesis of AI by AI Integrated Circuit: Where AI Creates AI." *Electronics*, vol. 13, no. 9, p. 1704, 2024.
+
+* **Publication:** [MDPI](https://www.mdpi.com/2079-9292/13/9/1704) (free to read) · DOI [10.3390/electronics13091704](https://doi.org/10.3390/electronics13091704)
+* **Free copies:** the MDPI page above — gold (publisher version, CC BY 4.0)
+* **Basis:** process named (see {ref}`papers-scope`).
+* **Topics:** {ref}`Digital circuits <papers-topic-digital>`, {ref}`Open-source tooling <papers-topic-tooling>`
+* **Institutions:** Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional; Universidad Autónoma de Guadalajara; Intel Corporation
+* **Process and fabrication (quoted from the abstract):** "its manufacturing with the first fabricable open-source Process Design Kit (PDK), SKY130A"
+* **Note:** A CNN IC whose RTL was entirely written by an LLM (ChatGPT-4) and manufactured on SKY130A. A companion Electronics paper (doi:10.3390/electronics13091705) covers the same project's GF180 implementation instead of SKY130 and is out of scope.
+* **Checked:** 2026-09-19 against the Crossref record.
+
 (paper-beall-2026a)=
 ### DC Cryogenic Modeling of Open-Source SkyWater 130 nm MOSFETs at 77 K Using BSIM4
 
@@ -145,6 +162,18 @@ F. Beall, A. Rimal, O. Seidel, Y. Mei, A. D. McDonald, I. Parmaksiz, V. A. Chira
 * **Institutions:** University of Texas at Arlington; Rice University; Fermi National Accelerator Laboratory; Wellesley College
 * **Process and fabrication (quoted from the abstract):** "we characterize and model SKY130 low-threshold voltage transistors at 77 K"
 * **Checked:** 2026-09-14 against the arXiv abstract page.
+
+(paper-bishop-2020a)=
+### Fabrication of carbon nanotube field-effect transistors in commercial silicon manufacturing facilities
+
+Mindy D. Bishop, Gage Hills, Tathagata Srimani, Christian Lau, Denis Murphy, Samuel Fuller, Jefford Humes, Anthony Ratkovich, Mark Nelson and Max M. Shulaker. "Fabrication of carbon nanotube field-effect transistors in commercial silicon manufacturing facilities." *Nature Electronics*, vol. 3, no. 8, pp. 492–501, 2020.
+
+* **Publication:** [www.nature.com](https://www.nature.com/articles/s41928-020-0419-7) (paywalled) · DOI [10.1038/s41928-020-0419-7](https://doi.org/10.1038/s41928-020-0419-7)
+* **Free copies:** none located
+* **Basis:** affiliation inference — the process or fab is not named; the link rests on author affiliations. Fab publication: two authors (Ratkovich, Nelson) affiliated with SkyWater Technology, Bloomington, MN. Publisher restricts abstract distribution (OpenAlex and Crossref both return no abstract text), so the process link rests on the public affiliation record rather than a retrieved quotation; carbon-nanotube FETs fabricated on 200 mm wafers in a commercial silicon foundry, per the title and Crossref metadata.
+* **Topics:** {ref}`BEOL-integrated devices <papers-topic-beol-integration>`, {ref}`Device characterisation <papers-topic-device-characterisation>`
+* **Institutions:** Massachusetts Institute of Technology; Analog Devices, Inc.; Raymor NanoIntegris; SkyWater Technology
+* **Checked:** 2026-09-19 against the Crossref record.
 
 (paper-blocklove-2024a)=
 ### Evaluating LLMs for Hardware Design and Test
@@ -210,6 +239,7 @@ Matthew Chen, Charana Sonnadara and Sahil Shah. "Open-source floating-gate cell 
 * **Topics:** {ref}`Floating-gate devices <papers-topic-floating-gate>`, {ref}`Device characterisation <papers-topic-device-characterisation>`
 * **Institutions:** University of Maryland, College Park
 * **Process and fabrication (quoted from the abstract):** "specifically fabricated using the open‐source Skywater 130 nm process"
+* **Note:** The Authorea preprint doi:10.22541/au.172413095.53999511/v1 (listed above as a free copy) is this paper's preprint; its title differs only by "Analog"/"Analogue" casefold, which id- and title-based dedup checks can miss (round 3, R2-23).
 * **Checked:** 2026-09-14 against the Crossref record.
 
 (paper-choi-2025a)=
@@ -268,6 +298,20 @@ Irem Didin, Carl Brando, Ching-Yi Lin and Sahil Shah. "Characterization and Mode
 * **Related pages:**
   * {ref}`overview-sky130b-reram` — The paper characterises ReRAM devices fabricated in the SkyWater 130 nm process; the overview page describes the sky130B ReRAM module.
 * **Checked:** 2026-09-14 against the Crossref record.
+
+(paper-dubey-2023a)=
+### A Full-Stack Approach for Side-Channel Secure ML Hardware
+
+Anuj Dubey and Aydin Aysu. "A Full-Stack Approach for Side-Channel Secure ML Hardware." *2023 IEEE International Test Conference (ITC)*, pp. 186–195, 2023.
+
+* **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10351114/) (paywalled) · DOI [10.1109/itc51656.2023.00035](https://doi.org/10.1109/itc51656.2023.00035)
+* **Free copies:** none located
+* **Basis:** process named (see {ref}`papers-scope`).
+* **Topics:** {ref}`Hardware security <papers-topic-security>`, {ref}`Digital circuits <papers-topic-digital>`
+* **Institutions:** North Carolina State University
+* **Process and fabrication (quoted from the abstract):** "Fourth, we fabricate the final solution at Skywater 130nm node."
+* **Note:** Companion paper of the included paper-dubey-2026a (same first author, same side-channel-protected ML hardware project); this ITC 2023 paper is the full-stack security methodology, and the later IEEE Design & Test article reports the same design's ASIC tape-out and measurements.
+* **Checked:** 2026-09-19 against the Crossref record.
 
 (paper-dubey-2026a)=
 ### ASIC Tape-Out of the First Side-Channel-Protected Neural Network Design
@@ -474,6 +518,20 @@ Binh Q. Le, Akash Levy, Tony F. Wu, Robert M. Radway, E. Ray Hsieh, Xin Zheng, M
   * {ref}`overview-sky130b-reram` — The paper reports HfO2-based RRAM arrays in a 130 nm process with a SkyWater co-author; the overview page describes the sky130B ReRAM module, and that these arrays use it is not stated.
 * **Checked:** 2026-09-14 against the Crossref record.
 
+(paper-li-2024a)=
+### Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon: Paving the Way for Low-Cost and Robust Flexible Wearable Sensing
+
+Anhang Li, Hongyi Wu, Madhulika Lingamguntla, Ashbir Aviat Fadila, Chan-Ho Kye, Arvind Balijepalli, Tim Ansell, Nigel J. Coburn, Sachin Nadig and Mehdi Saligane. "Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon: Paving the Way for Low-Cost and Robust Flexible Wearable Sensing." *IEEE Solid-State Circuits Magazine*, vol. 16, no. 2, pp. 49–57, 2024.
+
+* **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10584418/) (paywalled) · DOI [10.1109/mssc.2024.3380586](https://doi.org/10.1109/mssc.2024.3380586)
+* **Free copies:** none located
+* **Basis:** process named (see {ref}`papers-scope`).
+* **Topics:** {ref}`Sensors <papers-topic-sensors>`
+* **Institutions:** University of Michigan; Tokyo Institute of Technology; University of Suwon; National Institute of Standards and Technology; Arc PBC; Google
+* **Process and fabrication (quoted from the abstract):** "physical chip fabrication runs over the past few years, such as OpenMPW, through semiconductor CMOS processes provided by Skywater (SKY130)"
+* **Note:** Reports the design, in-house fabrication and testing of an AFE ASIC on an OpenMPW SKY130 run, with the ASIC used to read out separately fabricated laser-induced-graphene sensors.
+* **Checked:** 2026-09-19 against the Crossref record.
+
 (paper-li-2025a)=
 ### Open-ALOE: An Analog Layout Automation Flow for the Open-Source Ecosystem
 
@@ -579,6 +637,18 @@ Ali Olyanasab, Patrick Fath, Leonhard Schreiner, Christoph Guger and Harald Pret
 * **Institutions:** g.tec Medical Engineering GmbH; Johannes Kepler University Linz
 * **Process and fabrication (quoted from the abstract):** "designed using open-source circuit design tools and the open-source SKY130 PDK, is presented. \[…\] the power consumption has been measured at 8.1 µW"
 * **Checked:** 2026-09-14 against the Crossref record.
+
+(paper-pepel-2025a)=
+### Frequency Decomposition for Identification and Time Constant Extraction in Random Telegraph Noise Analysis
+
+Victor D. Pepel, Julie V. Logan, Christian P. Morath, Fahad Al Mamun, Jereme Neuendank, Vince Cowan, Mohamed Nour, Mike Chambers and Diana Maestas. "Frequency Decomposition for Identification and Time Constant Extraction in Random Telegraph Noise Analysis." *IEEE Transactions on Instrumentation and Measurement*, vol. 74, pp. 1–11, 2025.
+
+* **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11263955/) (paywalled) · DOI [10.1109/tim.2025.3635830](https://doi.org/10.1109/tim.2025.3635830)
+* **Free copies:** none located
+* **Basis:** affiliation inference — the process or fab is not named; the link rests on author affiliations. Fab publication: two authors (Nour, Chambers) affiliated with SkyWater Technology, Bloomington, MN. Introduces an RTN time-constant-extraction algorithm benchmarked on measured low- and high-voltage pFET signals; the abstract does not name SkyWater or the process it measured, so the link rests on the public affiliation record.
+* **Topics:** {ref}`Reliability and harsh environments <papers-topic-reliability>`, {ref}`Device characterisation <papers-topic-device-characterisation>`
+* **Institutions:** BlueHalo; Air Force Research Laboratory; Arizona State University; SkyWater Technology
+* **Checked:** 2026-09-19 against the Crossref record.
 
 (paper-poole-2023a)=
 ### A 130-nm Fusion-Based Deconvolution Kernel Generator IC for Real-Time mmWave Radar Motion Compensation
@@ -731,6 +801,20 @@ Byron Tarabata, Eduardo Holguín, Martín Gavilánez, Esteban Astudillo, Ana Sal
 * **Process and fabrication (quoted from the abstract):** "fabricated via the Tiny Tapeout multi-project wafer (MPW) service using the SKY130 PDK"
 * **Checked:** 2026-09-14 against the Crossref record.
 
+(paper-teo-2024a)=
+### Open-AI Driven Open-source Open-access Sustainable ICs Design Flow
+
+Tee Hui Teo, Maoyang Xiang, Emil Goh and Huan-Ke Hsu. "Open-AI Driven Open-source Open-access Sustainable ICs Design Flow." *2024 IEEE 17th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)*, pp. 361–365, 2024.
+
+* **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10819560/) (paywalled) · DOI [10.1109/mcsoc64144.2024.00066](https://doi.org/10.1109/mcsoc64144.2024.00066)
+* **Free copies:** none located
+* **Basis:** process named (see {ref}`papers-scope`).
+* **Topics:** {ref}`Power management <papers-topic-power-management>`, {ref}`Open-source tooling <papers-topic-tooling>`
+* **Institutions:** Singapore University of Technology and Design
+* **Process and fabrication (quoted from the abstract):** "The three-phase PWM was implemented in SkyWater 130 nm CMOS technology and tapeout through a low-cost multi-project wafer (MPW)."
+* **Note:** An LLM-designed three-phase PWM taped out on a SkyWater 130 nm MPW; names the process where its two PWM-design siblings (arxiv:2405.02329, doi:10.1109/peds63958.2025.11144900, both excluded) do not, so those exclusion reasons should be read alongside this record.
+* **Checked:** 2026-09-19 against the Crossref record.
+
 (paper-upton-2023a)=
 ### Testbench on a Chip: A Yield Test Vehicle for Resistive Memory Devices
 
@@ -773,6 +857,18 @@ Raymond H. Yang and Yaqing Xia. "An Open-Source 12-bit 10-kS/s Incremental ADC i
 * **Process and fabrication (quoted from the abstract):** "using open-source tools and the Skywater 130-nm CMOS process, with an emphasis on systemlevel design, circuit implementation, and performance results from silicon measurements"
 * **Note:** The process is named in the editor's note published with the article (the only abstract text in the public records); the title says only "130-nm CMOS".
 * **Checked:** 2026-09-14 against the Crossref record.
+
+(paper-yu-2022a)=
+### Foundry Integration of Carbon Nanotube FETs With 320 nm Contacted Gate Pitch Using New Lift-Off-Free Process
+
+Andrew Yu, Tathagata Srimani, Christian Lau, Brian Benton, Mark Nelson and Max M. Shulaker. "Foundry Integration of Carbon Nanotube FETs With 320 nm Contacted Gate Pitch Using New Lift-Off-Free Process." *IEEE Electron Device Letters*, vol. 43, no. 3, pp. 486–489, 2022.
+
+* **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/9686743/) (paywalled) · DOI [10.1109/led.2022.3144936](https://doi.org/10.1109/led.2022.3144936)
+* **Free copies:** none located
+* **Basis:** affiliation inference — the process or fab is not named; the link rests on author affiliations. Fab publication: two authors (Benton, Nelson) affiliated with SkyWater Technology Foundry, Bloomington, MN. The abstract states the lift-off-free CNFET contact process "is implemented in a commercial silicon CMOS foundry" and reports measured on-current and subthreshold-swing improvements, but does not name SkyWater; the process link rests on the public affiliation record.
+* **Topics:** {ref}`BEOL-integrated devices <papers-topic-beol-integration>`, {ref}`Device characterisation <papers-topic-device-characterisation>`
+* **Institutions:** Massachusetts Institute of Technology; SkyWater Technology
+* **Checked:** 2026-09-19 against the Crossref record.
 
 (paper-zhang-2022a)=
 ### An Open-Source and Autonomous Temperature Sensor Generator Verified With 64 Instances in SkyWater 130 nm for Comprehensive Design Space Exploration

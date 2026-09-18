@@ -295,6 +295,8 @@ def gen_index(rs: list[dict]) -> str:
         "* {ref}`papers-by-venue`",
         "* {ref}`papers-by-institution`",
         "* {ref}`papers-fab-publications`",
+        "* {ref}`papers-designed-on-sky130` — excluded papers that name the process",
+        "  without reporting fabricated silicon; not part of the index proper.",
         "",
         "```{toctree}",
         ":hidden:",
@@ -306,6 +308,7 @@ def gen_index(rs: list[dict]) -> str:
         "by-venue",
         "by-institution",
         "fab-publications",
+        "designed-on-sky130",
         "```",
         "",
         "(papers-scope)=",
@@ -549,6 +552,50 @@ def gen_fab(rs: list[dict]) -> str:
     return page("papers-fab-publications", "Fab publications (Bloomington)", body)
 
 
+def excluded_link(rid: str) -> str | None:
+    if rid.startswith("doi:"):
+        doi = rid[len("doi:"):]
+        return link(doi, "https://doi.org/" + doi)
+    if rid.startswith("arxiv:"):
+        aid = rid[len("arxiv:"):]
+        return link("arxiv:" + aid, "https://arxiv.org/abs/" + aid)
+    return None
+
+
+def gen_named_process(excluded: list[dict]) -> str:
+    items = [r for r in excluded if r["names_process"]]
+    body = [
+        "These papers use the SKY130 PDK but report no fabricated silicon and no",
+        "process-specific finding. They are listed for completeness and are",
+        "deliberately not part of {ref}`the index proper <papers-scope>`: none of",
+        "them meets its inclusion rules (Sec. 1 of the design). A record shown as",
+        "**held** is awaiting a full-text check rather than settled as out of",
+        "scope; see its reason.",
+        "",
+        f"{plural(len(items))} name the process out of {plural(len(excluded))} considered",
+        "and excluded or held; the rest do not name SKY130 or the SkyWater 130 nm",
+        "process at all. Generated from `data/papers-excluded.yaml` by",
+        "`tools/gen_papers.py`; do not edit.",
+        "",
+    ]
+    for y in sorted({r["year"] for r in items}, reverse=True):
+        body += [f"## {y}", ""]
+        for r in sorted(items, key=lambda r: r["title"].casefold()):
+            if r["year"] != y:
+                continue
+            authors = join_names(r["authors"]) if r["authors"] else "authors not recorded"
+            venue = esc(r["venue"]) if r["venue"] else "venue not recorded"
+            lk = excluded_link(r["id"])
+            head = f"**{esc(r['title'])}**. {authors}. {venue}, {r['year']}."
+            if lk:
+                head += " " + lk + "."
+            if r["status"] == "held":
+                head += " **Held.**"
+            body.append(f"* {head} {esc(r['reason'])}")
+        body.append("")
+    return page("papers-designed-on-sky130", "Papers using the SKY130 PDK without fabrication results", body)
+
+
 def generate() -> dict[str, str]:
     missing = set(check_papers.TOPICS) ^ set(TOPIC_NAMES)
     if missing:
@@ -564,6 +611,8 @@ def generate() -> dict[str, str]:
     label_map = yaml.safe_load(LABELS.read_text(encoding="utf-8"))
     excluded = yaml.safe_load(check_papers.EXCLUDED.read_text(encoding="utf-8")) or []
     problems += check_papers.check_labels(label_map, rs, excluded, today)
+    for i, r in enumerate(excluded):
+        problems += check_papers.check_excluded(i, r, today)
     if problems:
         print("\n".join(problems))
         raise SystemExit("data/papers.yaml fails tools/check_papers.py; fix it before generating pages")
@@ -576,6 +625,7 @@ def generate() -> dict[str, str]:
         "by-venue.md": gen_venue(rs),
         "by-institution.md": gen_institution(rs),
         "fab-publications.md": gen_fab(rs),
+        "designed-on-sky130.md": gen_named_process(excluded),
     }
 
 

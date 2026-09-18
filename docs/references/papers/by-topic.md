@@ -28,10 +28,13 @@ Compact models, parameter extraction and model calibration for the PDK's devices
 Measured behaviour of devices fabricated in the process.
 
 * {ref}`paper-hsieh-2019a` — E.R. Hsieh et al., IEDM 2019 (affiliation inference)
+* {ref}`paper-bishop-2020a` — Mindy D. Bishop et al., Nature Electronics 2020 (affiliation inference)
 * {ref}`paper-hsieh-2021a` — E. R. Hsieh et al., IEEE Electron Device Letters 2021 (affiliation inference)
 * {ref}`paper-le-2021a` — Binh Q. Le et al., IEEE Transactions on Electron Devices 2021 (affiliation inference)
+* {ref}`paper-yu-2022a` — Andrew Yu et al., IEEE Electron Device Letters 2022 (affiliation inference)
 * {ref}`paper-akturk-2023a` — Akin Akturk et al., BCICTS 2023
 * {ref}`paper-chen-2024a` — Matthew Chen et al., Electronics Letters 2024 (free copy)
+* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
 * {ref}`paper-montanares-2025a` — Mauricio Montanares et al., VLSI-SoC 2025
 * {ref}`paper-didin-2026a` — Irem Didin et al., IEEE Journal on Exploratory Solid-State Computational Devices and Circuits 2026 (free copy)
 * {ref}`paper-beall-2026a` — F. Beall et al., arXiv 2026 (free copy)
@@ -53,6 +56,7 @@ Test chips, test vehicles and structures for process or device evaluation.
 Reliability, yield, harsh-environment operation and wear-out.
 
 * {ref}`paper-rodriguez-ferrandez-2023a` — Ivan Rodriguez-Ferrandez et al., IOLTS 2023 (free copy)
+* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
 * {ref}`paper-munoz-2026a` — Ítalo Muñoz et al., CAE 2026
 
 Also 1 fab publication with this topic: see {ref}`papers-fab-publications`.
@@ -113,7 +117,9 @@ Floating-gate devices built in the standard process.
 Devices or tiers integrated in the back end of line.
 Related pages: {ref}`overview-sky130b-reram`.
 
+* {ref}`paper-bishop-2020a` — Mindy D. Bishop et al., Nature Electronics 2020 (affiliation inference)
 * {ref}`paper-srimani-2020a` — T. Srimani et al., VLSI Symposium 2020 (affiliation inference)
+* {ref}`paper-yu-2022a` — Andrew Yu et al., IEEE Electron Device Letters 2022 (affiliation inference)
 * {ref}`paper-srimani-2023a` — T. Srimani et al., VLSI Symposium 2023
 * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025
 
@@ -145,6 +151,7 @@ Data converters and other mixed-signal circuits designed for or fabricated on th
 
 Power converters and regulators designed for or fabricated on the process.
 
+* {ref}`paper-teo-2024a` — Tee Hui Teo et al., MCSoC 2024
 * {ref}`paper-marin-2024a` — Jorge Marin et al., IEEE Design & Test 2024
 * {ref}`paper-munoz-2026a` — Ítalo Muñoz et al., CAE 2026
 
@@ -154,12 +161,14 @@ Power converters and regulators designed for or fabricated on the process.
 Digital logic, processors and accelerators designed for or fabricated on the process.
 
 * {ref}`paper-poole-2023a` — Nikhil Poole and Amin Arbabian, IEEE Access 2023 (free copy)
+* {ref}`paper-dubey-2023a` — Anuj Dubey and Aydin Aysu, ITC 2023
 * {ref}`paper-chen-2023a` — Po-Han Chen et al., ISCAS 2023
 * {ref}`paper-shah-2023a` — Myrtle Shah et al., FPL 2023
 * {ref}`paper-singhani-2023a` — Anish Singhani, ISCAS 2023
 * {ref}`paper-cirimelli-low-2023a` — Jesse Cirimelli-Low et al., ISCAS 2023 (free copy)
 * {ref}`paper-blocklove-2024a` — Jason Blocklove et al., LAD 2024 (free copy)
 * {ref}`paper-jagielski-2024a` — Thomas Jagielski et al., WOSET 2024 (free copy)
+* {ref}`paper-baungarten-leon-2024a` — Emilio Isaac Baungarten-Leon et al., Electronics 2024 (free copy)
 * {ref}`paper-karatas-2025a` — Onur Karataş et al., ICEEE 2025
 * {ref}`paper-tarabata-2025a` — Byron Tarabata et al., SBCCI 2025
 * {ref}`paper-price-2025a` — Ryan M. Price et al., IEEE SENSORS 2025
@@ -183,6 +192,7 @@ Sensor front ends and sensing systems.
 
 * {ref}`paper-zhang-2022a` — Qirui Zhang et al., IEEE Solid-State Circuits Letters 2022
 * {ref}`paper-poole-2023a` — Nikhil Poole and Amin Arbabian, IEEE Access 2023 (free copy)
+* {ref}`paper-li-2024a` — Anhang Li et al., IEEE Solid-State Circuits Magazine 2024
 * {ref}`paper-castoria-2025a` — K. E. Castoria et al., arXiv 2025 (free copy)
 * {ref}`paper-price-2025a` — Ryan M. Price et al., IEEE SENSORS 2025
 
@@ -198,6 +208,7 @@ Circuits for quantum computing or quantum devices.
 
 Hardware security and cryptographic circuits.
 
+* {ref}`paper-dubey-2023a` — Anuj Dubey and Aydin Aysu, ITC 2023
 * {ref}`paper-singhani-2023a` — Anish Singhani, ISCAS 2023
 * {ref}`paper-karatas-2025a` — Onur Karataş et al., ICEEE 2025
 * {ref}`paper-dubey-2026a` — Anuj Dubey et al., IEEE Design & Test 2026
@@ -216,6 +227,8 @@ Open-source design flows and generators as they relate to the process.
 * {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE Transactions on Circuits and Systems I 2024
 * {ref}`paper-blocklove-2024a` — Jason Blocklove et al., LAD 2024 (free copy)
 * {ref}`paper-jagielski-2024a` — Thomas Jagielski et al., WOSET 2024 (free copy)
+* {ref}`paper-teo-2024a` — Tee Hui Teo et al., MCSoC 2024
+* {ref}`paper-baungarten-leon-2024a` — Emilio Isaac Baungarten-Leon et al., Electronics 2024 (free copy)
 * {ref}`paper-li-2025a` — Yueting Li et al., ISQED 2025
 
 (papers-topic-education-shuttles)=

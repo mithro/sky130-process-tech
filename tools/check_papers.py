@@ -43,6 +43,12 @@ Offline checks (always run):
 * every record's label is in the label map with its id, and every label
   in the map is still used by the same paper (a published label may not be
   dropped, renamed or reused; an id correction goes in ``previous_ids``).
+* ``data/papers-excluded.yaml`` records also carry ``authors`` (a list,
+  possibly empty when not recorded), ``venue`` (a string or null) and
+  ``names_process`` (true when the title or reason names SKY130 or the
+  SkyWater 130 nm process); ``tools/gen_papers.py`` lists the
+  ``names_process: true`` records on a page of their own (docs/plans/
+  paper-index-design.md Sec. 4).
 
 ``--online`` re-fetches every DOI from the Crossref REST API and compares
 title, author family names, year (a record may carry an earlier
@@ -131,7 +137,7 @@ KEYS = [
     "discovery", "notes", "verified",
 ]
 LINK_KEYS = ["url", "host", "oa_type", "located_via", "checked"]
-EXCLUDED_KEYS = ["id", "title", "year", "status", "reason", "decided"]
+EXCLUDED_KEYS = ["id", "title", "authors", "year", "venue", "status", "names_process", "reason", "decided"]
 LABEL_KEYS = ["label", "id", "previous_ids", "published"]
 
 # Hosts accepted for free full-text copies (fails closed on new hosts).
@@ -425,10 +431,18 @@ def check_excluded(i: int, r: object, today: dt.date) -> list[str]:
         probs.append(f"{where}: malformed id")
     if not isinstance(r.get("title"), str) or not r["title"].strip():
         probs.append(f"{where}: title missing")
+    authors = r.get("authors")
+    if not isinstance(authors, list) or not all(isinstance(x, str) and x.strip() for x in authors):
+        probs.append(f"{where}: authors must be a list of strings (may be empty when not recorded)")
     if not isinstance(r.get("year"), int):
         probs.append(f"{where}: year must be an integer")
+    venue = r.get("venue")
+    if venue is not None and (not isinstance(venue, str) or not venue.strip()):
+        probs.append(f"{where}: venue must be null or a non-empty string")
     if r.get("status") not in EXCLUSION_STATUS:
         probs.append(f"{where}: status must be one of {sorted(EXCLUSION_STATUS)}")
+    if not isinstance(r.get("names_process"), bool):
+        probs.append(f"{where}: names_process must be true or false")
     if not isinstance(r.get("reason"), str) or not r["reason"].strip():
         probs.append(f"{where}: reason missing")
     if not date_ok(r.get("decided"), today):

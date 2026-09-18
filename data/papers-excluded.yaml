@@ -3,213 +3,451 @@
 # Checked by tools/check_papers.py; an id may not appear in both files.
 - id: doi:10.1145/3400302.3415735
   title: Building OpenLANE
+  authors:
+  - Mohamed Shalan
+  - Tim Edwards
   year: 2020
+  venue: Proceedings of the 39th International Conference on Computer-Aided Design
   status: held
+  names_process: true
   reason: Flow paper reporting an SoC taken "from concept to silicon validation"; the reference list cites
     the SKY130 PDK, but the retrievable text does not say the silicon was made in SKY130.
   decided: '2026-09-14'
 - id: web:woset-2021-a11
   title: A CMOS Programmable Analog Standard Cell Library in Skywater 130nm Open-Source Process
+  authors: []
   year: 2021
+  venue: WOSET
   status: excluded
+  names_process: true
   reason: Workshop precursor of the included IEEE TCAS-I 2024 library paper; the PDF says the cells "are
     in process for fabrication", so it has no silicon results.
   decided: '2026-09-14'
 - id: web:woset-2021-a15
   title: 'FABulous: an Open-Everything Framework for Embedded FPGAs'
+  authors: []
   year: 2021
+  venue: WOSET
   status: excluded
+  names_process: true
   reason: FABulous framework paper; the PDF compares CLB area with OpenFPGA for a SKY130 MPW tape-out
     but reports no silicon measurements.
   decided: '2026-09-14'
 - id: doi:10.1109/iscas46773.2023.10181884
   title: An Open Source Compatible Framework to Fully Autonomous Digital LDO Generation
+  authors:
+  - Yaswanth K. Cherivirala
+  - Mehdi Saligane
+  - David D. Wentzloff
   year: 2023
+  venue: 2023 IEEE International Symposium on Circuits and Systems (ISCAS)
   status: excluded
+  names_process: true
   reason: LDO generator; silicon measurements are from a 65 nm process, and designs in SkyWater 130 nm
     are reported as fabricated without results.
   decided: '2026-09-14'
 - id: doi:10.1109/mlcad58807.2023.10299874
   title: 'Chip-Chat: Challenges and Opportunities in Conversational Hardware Design'
+  authors:
+  - Jason Blocklove
+  - Siddharth Garg
+  - Ramesh Karri
+  - Hammond Pearce
   year: 2023
+  venue: 2023 ACM/IEEE 5th Workshop on Machine Learning for CAD (MLCAD)
   status: excluded
+  names_process: true
   reason: LLM-written processor sent to a SkyWater 130 nm shuttle; no silicon results in the abstract.
   decided: '2026-09-14'
 - id: doi:10.1109/lascas56464.2023.10108228
   title: Compact Time-Based Sensor-to-Digital Converters in Skywater 130nm Open-Source Technology
+  authors:
+  - Jorge Marin
+  - Ioannis Vourkas
+  - Christian A. Rojas
+  - Joel Gak
   year: 2023
+  venue: 2023 IEEE 14th Latin America Symposium on Circuits and Systems (LASCAS)
   status: excluded
+  names_process: true
   reason: Sensor-to-digital converters in SkyWater 130 nm; the abstract reports simulated results only.
   decided: '2026-09-14'
 - id: doi:10.1109/nssmicrtsd49126.2023.10338630
   title: Development of a hybrid amorphous Selenium/CMOS detector for the Selena Neutrino Experiment
+  authors:
+  - X. Ni
   year: 2023
+  venue: 2023 IEEE Nuclear Science Symposium, Medical Imaging Conference and International Symposium on
+    Room-Temperature Semiconductor Detectors (NSS MIC RTSD)
   status: excluded
+  names_process: true
   reason: Selena detector development; the abstract gives only the development status of the next detector
     version fabricated in the SkyWater 130 nm process, and its results come from the Topmetal-II- sensor.
   decided: '2026-09-14'
 - id: doi:10.1109/tcsii.2022.3207378
   title: Fully Binarized, Parallel, RRAM-Based Computing Primitive for In-Memory Similarity Search
+  authors:
+  - Sandeep Kaur Kingra
+  - Vivek Parmar
+  - Deepak Verma
+  - Alessandro Bricalli
+  - Giuseppe Piccolboni
+  - Gabriel Molas
+  - Amir Regev
+  - Manan Suri
   year: 2023
+  venue: 'IEEE Transactions on Circuits and Systems II: Express Briefs'
   status: excluded
+  names_process: true
   reason: RRAM arrays from another process; the SkyWater 130 nm PDK is used only for SPICE simulation.
   decided: '2026-09-14'
 - id: doi:10.1145/3569052.3580028
   title: Google Investment in Open Source Custom Hardware Development Including No-Cost Shuttle Program
+  authors:
+  - Tim Ansell
   year: 2023
+  venue: Proceedings of the 2023 International Symposium on Physical Design
   status: excluded
+  names_process: false
   reason: ISPD talk abstract on Google's open hardware investment and no-cost shuttle programme; the abstract
     names neither the process nor silicon results.
   decided: '2026-09-14'
 - id: arxiv:2302.01015
   title: 'OpenSpike: An OpenRAM SNN Accelerator'
+  authors:
+  - Farhad Modaresi
+  - Matthew Guthaus
+  - Jason K. Eshraghian
   year: 2023
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: Accelerator "taped out in the 130 nm SkyWater process"; the abstract gives no silicon measurements.
   decided: '2026-09-14'
 - id: doi:10.1109/iscas46773.2023.10182182
   title: 'OpenSpike: An OpenRAM SNN Accelerator'
+  authors:
+  - Farhad Modaresi
+  - Matthew Guthaus
+  - Jason K. Eshraghian
   year: 2023
+  venue: 2023 IEEE International Symposium on Circuits and Systems (ISCAS)
   status: excluded
+  names_process: true
   reason: ISCAS version of OpenSpike; taped out in the SkyWater 130 nm process with no silicon measurements
     in the abstract.
   decided: '2026-09-14'
 - id: doi:10.1109/iirw59383.2023.10477707
   title: TID Effects on Random Telegraph Signals in Bulk 90 nm MOSFET Devices
+  authors:
+  - Jereme Neuendank
+  - Fahad Al Mamun
+  - Hugh Barnaby
+  - Stefano Bonaldo
+  - Matthew Spear
+  - Trace Wallace
+  - Daniel Loveless
+  - Jacob Pew
+  - Mohamed Nour
+  - Pete Manos
+  - Zach Giorno
+  - Usman Suriono
+  - Mike Chambers
+  - Steve Kosier
   year: 2023
+  venue: 2023 IEEE International Integrated Reliability Workshop (IIRW)
   status: excluded
+  names_process: true
   reason: TID effects on random telegraph signals in SkyWater 90 nm bulk devices, a different process
     from SKY130.
   decided: '2026-09-14'
 - id: doi:10.1109/radecs61975.2024.11017554
   title: Built-In Self-Test Measurement of Single Event Transients in the Skywater S90ln 90 Nm Process
+  authors:
+  - S. Westfall
+  - T. D. Loveless
+  - J. L. Carpenter
+  - T. Peyton
+  - J. Kim
+  - H. J. Barnaby
+  - J. Neuendank
+  - M. Nour
+  - P. Manos
+  - M. Chambers
   year: 2024
+  venue: 2024 RADECS Data Workshop
   status: excluded
+  names_process: true
   reason: Single-event transients measured in the SkyWater S90LN 90 nm process, a different process from
     SKY130.
   decided: '2026-09-14'
 - id: doi:10.1109/lascas60203.2024.10506161
   title: Design and Automated Layout Generation of a PMIC Core in Skywater 130nm Open-Source Technology
+  authors:
+  - Jorge Marin
+  - Daniel Arevalos
+  - Alfonso Cortes
+  - Vicente Osorio
+  - Mario Romero
+  - Joel Gak
+  - Nicolas Calarco
+  - Matias Miguez
+  - Amro Tork
+  - Mohamed Mahmoud
+  - Mustafa Labad
+  - Christian A. Rojas
   year: 2024
+  venue: 2024 IEEE 15th Latin America Symposium on Circuits and Systems (LASCAS)
   status: excluded
+  names_process: true
   reason: PMIC core with automated layout in SkyWater 130 nm; the abstract reports designed and simulated
     results only.
   decided: '2026-09-14'
 - id: doi:10.1109/redw61286.2024.10759147
   title: Heavy-Ion SET and SEL Response of a Wide-Band Operational Amplifier Fabricated in the Sky Water
     S90LN 90 nm Process
+  authors:
+  - J. L. Carpenter
+  - T. D. Loveless
+  - J. Kim
+  - J. Pew
+  - R. Young
+  - M. Nour
+  - P. Manos
+  - M. Chambers
+  - H. J. Barnaby
+  - J. Neuendank
   year: 2024
+  venue: 2024 IEEE Radiation Effects Data Workshop (REDW) (in conjunction with 2024 NSREC)
   status: excluded
+  names_process: true
   reason: Heavy-ion SET and SEL results for the SkyWater S90LN 90 nm process, a different process from
     SKY130.
   decided: '2026-09-14'
 - id: arxiv:2412.08017
   title: Integrated probabilistic computer using voltage-controlled magnetic tunnel junctions as its entropy
     source
+  authors:
+  - Christian Duffee
+  - Jordan Athas
+  - Yixin Shao
+  - Noraica Davila Melendez
+  - Eleonora Raimondo
+  - Jordan A. Katine
+  - Kerem Y. Camsari
+  - Giovanni Finocchio
+  - Pedram Khalili Amiri
   year: 2024
+  venue: arXiv
   status: excluded
+  names_process: false
   reason: Probabilistic-computer ASIC "in 130 nm foundry CMOS"; the abstract does not name the foundry
     and no HTML full text was available.
   decided: '2026-09-14'
 - id: doi:10.1109/access.2024.3393479
   title: Macro Memory Cell Generator for SKY130 PDK
+  authors:
+  - Emilio Isaac Baungarten-Leon
+  - Susana Ortega-Cisneros
+  - German Pinedo-Diaz
+  - Miguel Angel Rivera Acosta
+  - Francisco Javier Rodriguez Navarrete
+  - Uriel Jaramillo-Toral
+  - Cristian Torres Gonzlez
+  - Juan Carlos Garcia Lopez
   year: 2024
+  venue: IEEE Access
   status: excluded
+  names_process: true
   reason: Memory-generator framework built on the SKY130 SRAM macros; the full text reports a variant
     "currently in the fabrication phase" and no silicon results.
   decided: '2026-09-14'
 - id: doi:10.1109/irps48228.2024.10529354
   title: On-Chip Characterization of Random Telegraph Signal Noise in Bulk 90 nm CMOS
+  authors:
+  - J. Kim
+  - T. D. Loveless
+  - J. Pew
+  - R. Young
+  - D. Rcising
+  - M. Nour
+  - P. Manos
+  - M. Chambers
+  - H. J. Barnaby
+  - J. Neucndank
   year: 2024
+  venue: 2024 IEEE International Reliability Physics Symposium (IRPS)
   status: excluded
+  names_process: true
   reason: On-chip RTN characterisation in SkyWater's 90 nm bulk CMOS process, a different process from
     SKY130.
   decided: '2026-09-14'
 - id: doi:10.22323/1.441.0163
   title: R&D status of the Selena Neutrino Experiment
+  authors:
+  - Alvaro Chavarria
+  - Xiaochen Ni
+  - Selena Collaboration
   year: 2024
+  venue: Proceedings of XVIII International Conference on Topics in Astroparticle and Underground Physics
+    — PoS(TAUP2023)
   status: excluded
+  names_process: false
   reason: Selena R&D status; the abstract does not name the process of the CMOS sensors.
   decided: '2026-09-14'
 - id: doi:10.1109/mwscas60917.2024.10658692
   title: 'RISC- Vcito: A Multicycle Tiny Processor Implemented with SKY130 PDK'
+  authors:
+  - Martin Gonzalez-Perez
+  - S. Ortega-Cisneros
+  - Francisco J. Rodriguez-Navarrete
+  - German Pinedo-Diaz
+  - Emilio Isaac Baungarten-Leon
+  - Miguel Rivera-Acosta
   year: 2024
+  venue: 2024 IEEE 67th International Midwest Symposium on Circuits and Systems (MWSCAS)
   status: excluded
+  names_process: true
   reason: Processor taken to a GDSII file with the SKY130 PDK "ready for the manufacturing process"; no
     silicon results.
   decided: '2026-09-14'
 - id: doi:10.1109/southeastcon52093.2024.10500120
   title: Single Event Transient Pulse Propagation Analysis in Complex Skywater 130nm Logic Gates
+  authors:
+  - Janani Aravind
+  - Daniel B Limbrick
   year: 2024
+  venue: SoutheastCon 2024
   status: excluded
+  names_process: true
   reason: Single-event transient propagation analysis for SkyWater 130 nm logic gates; the abstract reports
     no irradiation or silicon measurements.
   decided: '2026-09-14'
 - id: doi:10.1109/mssc.2024.3381097
   title: 'Tiny Tapeout: A shared silicon tape out platform accessible to everyone'
+  authors:
+  - Matt Venn
   year: 2024
+  venue: IEEE Solid-State Circuits Magazine
   status: held
+  names_process: false
   reason: Tiny Tapeout platform article; the abstract does not name the process and the full text could
     not be retrieved.
   decided: '2026-09-14'
 - id: doi:10.36227/techrxiv.172055642.27780676/v1
   title: 'Tiny Tapeout: A Shared Silicon Tapeout Platform Accessible To Everyone'
+  authors:
+  - Matthew David Venn
   year: 2024
+  venue: null
   status: held
+  names_process: false
   reason: Preprint of the Tiny Tapeout platform article; the abstract refers to open-source PDKs without
     naming the process, and the TechRxiv full text refuses scripted requests.
   decided: '2026-09-14'
 - id: doi:10.1109/mssc.2024.3385734
   title: 'Unlocking Circuits for Quantum With Open Source Silicon: A first look at measured open source
     silicon results at 4 K'
+  authors:
+  - Anhang Li
+  - Tuohang Zeng
+  - Lei Zhang
+  - Joseph Riem
+  - Gina C. Adam
+  - David L. Fleischer
+  - Alex Zaslavsky
+  - William R. Patterson
+  - Tim Ansell
+  - Akin Akturk
+  - Brian Hoskins
+  - Pragya R. Shrestha
+  - Mehdi Saligane
   year: 2024
+  venue: IEEE Solid-State Circuits Magazine
   status: held
+  names_process: false
   reason: Measured open-source-silicon results at 4 K, but the process is not named in the abstract and
     the full text could not be retrieved (IEEE, paywalled).
   decided: '2026-09-14'
 - id: doi:10.1109/les.2023.3267341
   title: Vector Accelerator Unit for Caravel
+  authors:
+  - Emilio Isaac Baungarten-Leon
+  - Susana Ortega-Cisneros
+  - Uriel Jaramillo-Toral
+  - Francisco J. Rodriguez-Navarrete
+  - L. Pizano-Escalante
+  - J. J. Raygoza Panduro
   year: 2024
+  venue: IEEE Embedded Systems Letters
   status: excluded
+  names_process: false
   reason: Vector accelerator for the Caravel SoC template; the abstract reports area only, with no fabrication
     or silicon results.
   decided: '2026-09-14'
 - id: doi:10.1109/hswtech64936.2025.11277421
   title: 'An Open-Source Nanoelectronic Analog Front-End in 130 nm CMOS: Design, Fabrication and Characterization
     of a Low-Noise Inverter-Based Neural-Interface Amplifier'
+  authors:
+  - Srisa Pranavi Medicharla
   year: 2025
+  venue: 2025 International Conference on Sustainable Technologies for Humanity and Smart World (HSWTech)
   status: excluded
-  reason: Re-read 2026-09-19 (same OpenAlex abstract as round 1, IEEE Xplore still paywalled with no
-    free copy) — the "measured" gain, noise and power figures are from "comprehensive post-layout extraction
+  names_process: false
+  reason: Re-read 2026-09-19 (same OpenAlex abstract as round 1, IEEE Xplore still paywalled with no free
+    copy) — the "measured" gain, noise and power figures are from "comprehensive post-layout extraction
     and parasitic-aware simulations" of a "fabricated-ready" (not yet fabricated) layout; no silicon measurement.
   decided: '2026-09-19'
 - id: doi:10.37665/kvva5054
   title: Development of Si-Interposers for 3D Heterogeneous Integration
+  authors:
+  - Charles Woychik
+  - John Allgair
+  - Chris Nichols
+  - Alan Huffman
   year: 2025
+  venue: Journal of Surface Mount Technology
   status: excluded
+  names_process: true
   reason: Silicon interposers with the foundry operator SkyWater; not the SKY130 process.
   decided: '2026-09-14'
 - id: doi:10.1109/tencon66050.2025.11375089
   title: Guidelines and Logistics for Manufacturing RISC-V Vanilla Silicon Chips Using SkyWater 130nm
     OpenPDK
+  authors:
+  - Anand K Vinu
+  - Sahil Athrij
+  - Asna V A
   year: 2025
+  venue: TENCON 2025 - 2025 IEEE Region 10 Conference (TENCON)
   status: excluded
+  names_process: true
   reason: Methodology from setup to GDSII layout for RISC-V chips with the SkyWater 130 nm PDK; no silicon
     results.
   decided: '2026-09-14'
 - id: doi:10.3390/electronics14061162
   title: 'Heuristic Enz–Krummenacher–Vittoz (EKV) Model Fitting for Low-Power Integrated Circuit Design:
     An Open-Source Implementation'
+  authors:
+  - Michele Dei
   year: 2025
+  venue: Electronics
   status: excluded
+  names_process: true
   reason: A generic EKV model-fitting method with a SKY130 case study; the full text's Figure 3 caption
     labels the fitted data "experimental data (SPICE)" for nfet_01v8 devices, so it fits the PDK model
     rather than measured silicon.
   decided: '2026-09-14'
 - id: doi:10.1109/icm66518.2025.11322496
   title: Hybrid Integration of Rram and Cmos Circuits Using Open-Source 130-nm PDK
+  authors:
+  - Maryam Atia
+  - Mohammed Ismail
+  - Mohammad Alhawari
   year: 2025
+  venue: 2025 37th International Conference on Microelectronics (ICM)
   status: excluded
+  names_process: true
   reason: The abstract says "a commercial 130-nm PDK that includes RRAM devices" and the title "Open-Source
     130-nm PDK"; the PDK is not named, SKY130 is not the only open 130 nm PDK, and the silicon status
     is unclear. Reconsider if the full text names SKY130 or sky130B.
@@ -217,66 +455,131 @@
 - id: doi:10.1109/vlsi-soc64688.2025.11421739
   title: Implementation of a 16:1 Multiplexer and 1:16 Demultiplexer on a Single Chip Using Sky130 PDK
     and Open-Source EDA Tools for Silicluster
+  authors:
+  - Uriel Jaramillo-Toral
+  - Susana Ortega-Cisneros
+  - Emilio Isaac Baungarten-Leon
+  - Erick Jaramillo-Toral
+  - Héctor Emmanuel Muñoz Zapata
   year: 2025
+  venue: 2025 IFIP/IEEE 33rd International Conference on Very Large Scale Integration (VLSI-SoC)
   status: excluded
+  names_process: true
   reason: Multiplexer and demultiplexer for Silicluster on SKY130; the abstract does not state that the
     reported figures are silicon measurements.
   decided: '2026-09-14'
 - id: doi:10.1109/sbcci66862.2025.11218682
   title: Process Variation Sensing and Compensation Employing a Ring Oscillator-Based Architecture in
     SkyWater 130nm Technology
+  authors:
+  - Emilia Casares López
+  - José Montahuano
+  - Esteban Astudillo
+  - Eduardo Holguín
   year: 2025
+  venue: 2025 38th SBC/SBMicro/IEEE Symposium on Integrated Circuits and Systems Design (SBCCI)
   status: excluded
+  names_process: true
   reason: Process-variation sensing and compensation in SkyWater 130 nm; the abstract reports simulations
     across corners and post-layout conditions, not silicon.
   decided: '2026-09-14'
 - id: doi:10.2172/3385109
   title: Tiny Tapeout Laser Scan
+  authors:
+  - Sandia National Laboratories (SNL-NM), Albuquerque, NM (United States)
+  - Ever Dominguez Rodriguez
+  - USDOE National Nuclear Security Administration (NNSA)
+  - Work for Others
+  - Luis Fuentes
   year: 2025
+  venue: null
   status: excluded
+  names_process: false
   reason: Poster on laser scanning microscopy of Tiny Tapeout chips; the OSTI PDF does not name the process.
   decided: '2026-09-14'
 - id: arxiv:2509.24075
   title: Wafer-Level Prototyping Tools for CMOS Bioelectronic Sensors
+  authors:
+  - Advait Madhavan
+  - Ruohong Shi
+  - Alokik Kanwal
+  - Glenn Holland
+  - Jacob M. Majikes
+  - Paul N. Patrone
+  - Anthony J. Kearsley
+  - Arvind Balijepalli
   year: 2025
+  venue: arXiv
   status: excluded
+  names_process: false
   reason: Wafer-level biosensor prototyping on open-source MPW wafers; neither the abstract nor the HTML
     full text names the foundry or process.
   decided: '2026-09-14'
 - id: doi:10.1109/access.2026.3698053
   title: 'Silicluster v2: A Scalable Open-Source Multi-Project SoC Architecture in Sky130 CMOS Enabling
     High-Density Modular Integration'
+  authors:
+  - Uriel Jaramillo-Toral
+  - Susana Ortega-Cisneros
+  - Héctor Emmanuel Muñoz-Zapata
+  - Iraam Antonio López-Salas
   year: 2026
+  venue: IEEE Access
   status: excluded
+  names_process: true
   reason: Silicluster v2 multi-project SoC on SKY130; the full text reports design verification, and its
     fabricated and measured predecessor (v1) was made in a 180 nm process.
   decided: '2026-09-14'
 - id: doi:10.2139/ssrn.7289627
   title: Silicon Verification of Novel CMOS Image Sensor Architectures Using Tiny Tapeout Fabrication
     and Open-Source Simulation Tools
+  authors:
+  - Devin  Michael Atkin
+  - Orly Yadid-Pecht
   year: 2026
+  venue: null
   status: held
+  names_process: false
   reason: Measurements from two Tiny Tapeout silicon prototypes, but the abstract does not name the process
     and the SSRN full text refuses scripted requests.
   decided: '2026-09-14'
 - id: doi:10.1109/mpot.2026.3718625
   title: Open source chip design using Efabless [Beyond the Degree]
+  authors:
+  - Ihfaz Islam
+  - Harpreet Singh
+  - Lubna Alazzawi
+  - Mohammad Asfar Khan
+  - Kunal Ghosh
   year: 2026
+  venue: IEEE Potentials
   status: excluded
+  names_process: false
   reason: IEEE Potentials "Beyond the Degree" career/education column, not a research paper.
   decided: '2026-09-19'
 - id: doi:10.48550/arxiv.2405.02329
   title: 'Digital ASIC Design with Ongoing LLMs: Strategies and Prospects'
+  authors:
+  - Maoyang Xiang
+  - Emil Goh
+  - Tee Hui Teo
   year: 2024
+  venue: arXiv (Cornell University)
   status: excluded
+  names_process: true
   reason: A three-phase PWM generator fabricated through the Efabless AI-Generated Open-Source Chip Design
     Challenge (Caravel SoC peripheral); neither the abstract nor the arXiv PDF full text names SkyWater
     or SKY130.
   decided: '2026-09-19'
 - id: doi:10.1109/peds63958.2025.11144900
   title: Digital Pulse-Width Modulation Circuit Design Using Large Language Models
+  authors:
+  - Tee Hui Teo
+  - Maoyang Xiang
   year: 2025
+  venue: 2025 IEEE 15th International Conference on Power Electronics and Drive Systems (PEDS)
   status: excluded
+  names_process: false
   reason: Companion study to arxiv:2405.02329 (same Efabless AI-Generated Chip Design Challenge PWM design);
     the abstract reports fabrication and a DRC pass but does not name the process, and the paper is paywalled
     with no retrievable free copy.
@@ -284,62 +587,108 @@
 - id: doi:10.5281/zenodo.17536015
   title: 'SoM-Memristor v3: Plastic Refusal-Driven Neuromorphic Hardware for Phenomenal Efficiency and
     Internal Binding'
+  authors:
+  - Waterman, Alastair
   year: 2025
+  venue: Zenodo (CERN European Organization for Nuclear Research)
   status: excluded
-  reason: Self-published design-file release describing a GDSII layout "ready for EFabless" (not yet
-    submitted or fabricated); the abstract's process claim is internally inconsistent ("Sky130 GDSII
-    (8×8 crossbar, 180 nm)") and reports no measured silicon.
+  names_process: true
+  reason: Self-published design-file release describing a GDSII layout "ready for EFabless" (not yet submitted
+    or fabricated); the abstract's process claim is internally inconsistent ("Sky130 GDSII (8×8 crossbar,
+    180 nm)") and reports no measured silicon.
   decided: '2026-09-19'
 - id: doi:10.5281/zenodo.20594749
   title: Analysis of Floorplan Utilization and Routing Congestion in RTL-to-GDSII Implementation of the
     PicoRV32 RISC-V Core Using SKY130 Technology
+  authors:
+  - Dr. Narayana Swamy J C Chetan V
   year: 2026
+  venue: Zenodo (CERN European Organization for Nuclear Research)
   status: excluded
+  names_process: true
   reason: An OpenLane floorplan-utilisation and routing-congestion study reporting tool-derived area,
     timing and power metrics only; no fabrication or silicon measurement.
   decided: '2026-09-19'
 - id: doi:10.5281/zenodo.22071452
   title: 'SBGR: A Surrogate Bandgap-Reference Benchmark for Constrained Metaheuristic Optimization, with
     a Transistor-Level SKY130 Cross-Check'
+  authors:
+  - Bashar Aqel Younis Alhaj Hamad
+  - Doğan Yıldız
+  - Durmuş Özkan Şahi̇n
+  - Sercan Demirci
+  - Selçuk Aslan
   year: 2026
+  venue: Zenodo (CERN European Organization for Nuclear Research)
   status: excluded
+  names_process: true
   reason: A software and data release (benchmark code and ngspice simulation-campaign data) for a paper
     under review elsewhere, not itself a paper; the SKY130 "cross-check" is simulation, not silicon.
   decided: '2026-09-19'
 - id: doi:10.1109/icmi68585.2026.11539888
   title: 'Unified Mixed-Signal Design: Integrating Memristor-Based Ternary Logic with an Open-Source Sky130
     CMOS Non-Inverting Op-AMP'
+  authors:
+  - Fawwaz Hazzazi
   year: 2026
+  venue: 2026 IEEE 5th International Conference on Computing and Machine Intelligence (ICMI)
   status: held
+  names_process: true
   reason: No abstract is publicly available (IEEE Xplore, closed access; no Crossref or OpenAlex abstract);
     held pending a full-text check.
   decided: '2026-09-19'
 - id: doi:10.2139/ssrn.7021152
   title: A Low-Power 256-Point FFT Processor on SkyWater 130 nm PDK for Edge DSP Applications
+  authors:
+  - Shyam Peraka
+  - Vinod  Babu Pusuluri
+  - Srinivasa  Reddy Badam
+  - Tejesh  Varma Vulchu
   year: 2026
+  venue: null
   status: held
+  names_process: true
   reason: No abstract is publicly available; the SSRN landing page refuses scripted requests (HTTP 403).
   decided: '2026-09-19'
 - id: doi:10.1109/icvcs69586.2026.11683180
   title: CMOS Inverter Standard Cell Library – Design and Characterization Using SKY130 PDK
+  authors:
+  - K. Ganesh
+  - G. Mamatha
   year: 2026
+  venue: 2026 1st International Conference on VLSI Circuits and Systems (ICVCS)
   status: held
+  names_process: true
   reason: No abstract is publicly available (IEEE Xplore, closed access; no Crossref or OpenAlex abstract);
     held pending a full-text check.
   decided: '2026-09-19'
 - id: doi:10.1109/sbmicro70495.2026.11684413
   title: A Design-Oriented Open-Source Cryogenic SPICE Model for Sky130 CMOS with Automated Calibration
     Using Experimental 4 K Data
+  authors:
+  - Edson Alves Da Silva
+  - Lucas Stucchi-Zucchi
+  - Marcelo A. Pavanello
+  - Jose Alexandre Diniz
+  - Francisco A. Brito-Filho
   year: 2026
+  venue: 2026 40th Symposium on Microelectronics Technology and Devices (SBMicro)
   status: held
+  names_process: true
   reason: No abstract is publicly available (IEEE Xplore, closed access; no Crossref or OpenAlex abstract);
     the title implies measured 4 K data on SKY130 devices, so this is held pending a full-text check rather
     than excluded.
   decided: '2026-09-19'
 - id: doi:10.23919/mixdes58562.2023.10203216
   title: Design and Implementation of Integrated Circuits Using Open Source Tools and SKY130 Free PDK
+  authors:
+  - Krzysztof Herman
+  - Mauricio Montanares
+  - Jorge Marin
   year: 2023
+  venue: 2023 30th International Conference on Mixed Design of Integrated Circuits and System (MIXDES)
   status: held
+  names_process: true
   reason: The abstract says three designs were "taped-out under the new alliance between Google and Skywater"
     but reports no measured results; IEEE Xplore is paywalled with no free copy, so held pending a full-text
     check.
@@ -347,252 +696,480 @@
 - id: doi:10.1109/apccas67402.2025.11378356
   title: 'Analog Blocks for 8-Bit SAR ADC: Rail-to-Rail Comparator and Two-Stage Operational Amplifier
     Designed with Open-Source Tools and Sky130 PDK'
+  authors:
+  - Uriel Jaramillo-Toral
+  - Susana Ortega-Cisneros
+  - Emilio Isaac Baungarten-Leon
+  - Erick Jaramillo-Toral
+  - Héctor Emmanuel Muñoz Zapata
   year: 2025
+  venue: 2025 IEEE Asia Pacific Conference on Circuits and Systems (APCCAS)
   status: excluded
+  names_process: true
   reason: Simulation results and layout designs only; the abstract reports no fabrication or measurement.
   decided: '2026-09-19'
 - id: doi:10.1109/icicm66614.2025.11315948
   title: Design of a Bandgap Voltage Reference for an 8-bit SAR-ADC for Powerline Monitoring using SKY130
     PDK
+  authors:
+  - Krisna M. Cañonero
+  - Jovelyn S. Bernales
+  - Abdulwarith G. Macapundag
+  - Sihawi A. Khalid
+  - Susie E. Maestre
   year: 2025
+  venue: 2025 10th International Conference on Integrated Circuits and Microsystems (ICICM)
   status: excluded
+  names_process: true
   reason: The abstract describes design and simulation of a bandgap reference; no fabrication or measurement
     is reported.
   decided: '2026-09-19'
 - id: doi:10.1109/vlsi-soc64688.2025.11421767
   title: A Low-Power 4-bit Tracking-Type Analog-to-Digital Converter in SKY130 Process
+  authors:
+  - Esteban Astudillo
+  - Eduardo Holguín
+  - Esteban Garzón
+  - Luis Miguel Prócel
   year: 2025
+  venue: 2025 IFIP/IEEE 33rd International Conference on Very Large Scale Integration (VLSI-SoC)
   status: excluded
+  names_process: true
   reason: A full-custom layout evaluated only by simulation ("Simulations show..."); no fabrication is
     reported.
   decided: '2026-09-19'
 - id: doi:10.5281/zenodo.18008454
   title: Design and Integration of Multiple Open-Source Analog Circuits Fabricated in SKY130 Technology
     within Silicluster v2
+  authors:
+  - Héctor Emmanuel Muñoz Zapata
+  - Toral Uriel Jaramillo
+  - Cisneros Ortega Susana
   year: 2025
+  venue: Zenodo (CERN European Organization for Nuclear Research)
   status: excluded
-  reason: An 18-page MOS-AK LA2025 conference slide deck (not a paper); its closing slides give measured
-    values for two blocks (comparator gain, oscillator frequency) but no fabricated paper describing the
-    portfolio was found, consistent with the exclusion of the related Silicluster v2 SoC paper (design
-    verification stage).
+  names_process: true
+  reason: An 18-page MOS-AK LA2025 conference slide deck, excluded under the design's "not a paper" rule
+    (Sec. 1) even though its closing slides give measured values for two blocks (comparator gain, oscillator
+    frequency) from SKY130 silicon; no fabricated paper describing the portfolio was found, consistent
+    with the exclusion of the related Silicluster v2 SoC paper (design verification stage). Whether measured-data
+    slide decks should be admitted is an open owner question (see docs/plans/paper-index-design.md Sec.
+    7).
   decided: '2026-09-19'
 - id: doi:10.1109/vlsi-soc64688.2025.11421732
   title: PVT-Robust Analog Control Stage for Buck DC-DC Converters in Open-Source SKY130
+  authors:
+  - Giordano De Moraes Rossa
+  - Henrique Beque
+  - Iuri Tinti
+  - Jorge Marín
+  - Juan Pablo Martínez Brito
   year: 2025
+  venue: 2025 IFIP/IEEE 33rd International Conference on Very Large Scale Integration (VLSI-SoC)
   status: excluded
+  names_process: true
   reason: The abstract describes a "tape-out ready" (not yet fabricated) design validated only by post-layout
     simulation across PVT corners.
   decided: '2026-09-19'
 - id: doi:10.1109/devic63749.2025.11012450
   title: Design of a 3-bit Full Custom Flash ADC Using Skywater 130nm PDK for Real Time Control Systems
+  authors:
+  - Mohammed Abdul Raheem
+  - Pathan Rehman Ahmed Khan
+  - Mohd Masih Hyder
+  - Mohd Zeeshan
   year: 2025
+  venue: 2025 Devices for Integrated Circuit (DevIC)
   status: excluded
-  reason: The abstract describes a layout ("silicon area of 500 uM x 300 uM") with no measured or simulated
-    performance results reported.
+  names_process: true
+  reason: The abstract's opening claim that the design 'is fabricated using the Skywater 130nm Process
+    Design Kit (PDK)' uses "fabricated" for the design's layout, not for silicon; the rest of the abstract
+    describes a layout ("silicon area of 500 uM x 300 uM") with no measured or simulated performance results
+    reported.
   decided: '2026-09-19'
 - id: doi:10.1109/iscas56072.2025.11044259
   title: Memristive Implementation of Variable Pixel MRI Imaging Using Skywater 130nm PDK
+  authors:
+  - Anitha Gopi
+  - Somayeh Davar
+  - Vineeta Vasudevan Nair
+  - Aleena Kabeer
+  - Thomas Fevens
+  - Alex James
   year: 2025
+  venue: 2025 IEEE International Symposium on Circuits and Systems (ISCAS)
   status: excluded
+  names_process: true
   reason: Describes a ReRAM/CMOS pixel-sampling concept for MRI image analysis with no fabrication or
     measurement reported.
   decided: '2026-09-19'
 - id: doi:10.1109/qpain66474.2025.11172073
   title: Physical Design Implementation of 41 Tap FIR Filter Using Open-Source Tools and Skywater 130nm
     PDK
+  authors:
+  - Atoshe Islam Sumaya
+  - Munirun Nessa
+  - Touhidur Rahman
   year: 2025
+  venue: 2025 International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)
   status: excluded
+  names_process: true
   reason: A DRC/LVS-clean GDSII layout; the reported frequency and power figures are post-layout simulation,
     not silicon measurement.
   decided: '2026-09-19'
 - id: doi:10.1109/icsc64553.2025.10968602
   title: 'Exploring SRAM Layout Using Open-Source Tools: A Case Study with Skywater 130nm PDK, Magic,
     Xschem, ngSpice, and OpenRAM'
+  authors:
+  - Om Bhatt
+  - Darshana Sankhe
+  - Avinash More
   year: 2025
+  venue: 2025 10th International Conference on Signal Processing and Communication (ICSC)
   status: excluded
+  names_process: true
   reason: '"Simulation results validate the functionality" of an SRAM layout case study; no fabrication
     is reported.'
   decided: '2026-09-19'
 - id: doi:10.5281/zenodo.18087094
   title: IAIONEX ASIC 32×32 — Fully Offline Mobile ASIC Design Flow (Sky130A)
+  authors:
+  - Johan Gärtner
   year: 2025
+  venue: Zenodo (CERN European Organization for Nuclear Research)
   status: excluded
+  names_process: true
   reason: A software and documentation record (ASIC design-flow artefacts and a prior-art disclosure),
     not a paper.
   decided: '2026-09-19'
 - id: doi:10.1109/ispacs68724.2025.11383160
   title: A Ring-Oscillator-Based 2.4 GHz Integer-N PLL Design in SkyWater 130nm Open-Source Technology
+  authors:
+  - Nahwan Faza Assaify
+  - Astria Nur Irfansyah
+  - Totok Mujiono
   year: 2025
+  venue: 2025 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)
   status: excluded
+  names_process: true
   reason: '"Simulation results show" phase noise and power for a ring-oscillator PLL; no fabrication is
     reported.'
   decided: '2026-09-19'
 - id: doi:10.1109/ispacs68724.2025.11383220
   title: A Time-Domain Comparator-Based 10-Bit SAR-ADC Design for Photoplethysmogram Signal Recording
     using Skywater 130 nm and Open-Source Tools
+  authors:
+  - M Taufiqul Huda
+  - Astria Nur Irfansyah
+  - Tasripan
   year: 2025
+  venue: 2025 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)
   status: excluded
+  names_process: true
   reason: A "tape-out-ready design"; the reported ENOB, DNL and INL are post-layout simulation results,
     not silicon measurements.
   decided: '2026-09-19'
 - id: doi:10.1109/iceeict62016.2024.10534506
   title: Standard Cell Library Characterization Flow Using Open Source Tools with Google + SkyWater 130nm
     PDK
+  authors:
+  - Md Shyeem Rahman
+  - Shabbir Hoshen Suvo
+  - Zohara Kamal
+  - Touhidur Rahman
   year: 2024
+  venue: 2024 6th International Conference on Electrical Engineering and Information &amp;amp; Communication
+    Technology (ICEEICT)
   status: excluded
+  names_process: true
   reason: A SPICE-based standard-cell library characterisation flow; no fabricated or measured device
     data is reported.
   decided: '2026-09-19'
 - id: doi:10.1109/atc63255.2024.10908312
   title: Implementation of Spiking Neural Network's Components on SKY130 CMOS Process
+  authors:
+  - Hong-Hai Thai
+  - Thao-Ly Le
+  - Duc-Hung Le
   year: 2024
+  venue: 2024 International Conference on Advanced Technologies for Communications (ATC)
   status: excluded
+  names_process: true
   reason: Spiking-neuron and synapse circuits described on the SKY130 process with no statement of fabrication
     or measurement; the reported findings read as simulated.
   decided: '2026-09-19'
 - id: doi:10.1109/melecon56669.2024.10608632
   title: 'Open Skywater130nm PDK-based IP Development Platform: A PWM Peripheral Case Study'
+  authors:
+  - Paul-Catalin Medinceanu
+  - Marius Enachescu
   year: 2024
+  venue: 2024 IEEE 22nd Mediterranean Electrotechnical Conference (MELECON)
   status: excluded
+  names_process: true
   reason: Compares FPGA and ASIC synthesis results for a PWM peripheral submitted to Tiny Tapeout; no
     measured chip results are reported.
   decided: '2026-09-19'
 - id: doi:10.1109/iemecon62401.2024.10846687
   title: Timing and Power characterization of Standard cell with Google + SkyWater 130nm PDK using Open-Source
     Tools
+  authors:
+  - Md Shyeem Rahman
+  - Shabbir Hoshen Suvo
+  - Touhidur Rahman
   year: 2024
+  venue: 2024 12th International Conference on Internet of Everything, Microwave, Embedded, Communication
+    and Networks (IEMECON)
   status: excluded
+  names_process: true
   reason: A SPICE-based timing/power characterisation flow validated against a commercial tool; no fabricated
     or measured device data.
   decided: '2026-09-19'
 - id: doi:10.1145/3649476.3658779
   title: Comprehensive Analysis of Generated Single Event Transients in Most Common Logic Cells of Skywater's
     130-nm Technology
+  authors:
+  - Janani Aravind
+  - Victor Oyadongha
+  - Daniel Limbrick
   year: 2024
+  venue: Proceedings of the Great Lakes Symposium on VLSI 2024
   status: excluded
+  names_process: true
   reason: SPICE simulations of single-event transients in SKY130 logic cells; no irradiation or silicon
     measurement.
   decided: '2026-09-19'
 - id: doi:10.1109/icaia57370.2023.10169547
   title: Design of 4-bit servo tracking type ADC using Sky-Water SKY130 PDK and eSim
+  authors:
+  - Ashwini Kumar
+  - Kunal Ghosh
+  - Sumanto Kar
+  - Rahul Paknikar
   year: 2023
+  venue: 2023 International Conference on Artificial Intelligence and Applications (ICAIA) Alliance Technology
+    Conference (ATCON-1)
   status: excluded
+  names_process: true
   reason: An ADC designed and simulated in the eSim EDA tool; no fabrication is reported.
   decided: '2026-09-19'
 - id: doi:10.1109/iccad57390.2023.10323720
   title: Design and Optimization of Low-Dropout Voltage Regulator Using Relational Graph Neural Network
     and Reinforcement Learning in Open-Source SKY130 Process
+  authors:
+  - Zonghao Li
+  - Anthony Chan Carusone
   year: 2023
+  venue: 2023 IEEE/ACM International Conference on Computer Aided Design (ICCAD)
   status: excluded
+  names_process: true
   reason: A reinforcement-learning circuit-sizing framework demonstrated "as a proof-of-concept" on an
     LDO; no fabrication or measurement is reported.
   decided: '2026-09-19'
 - id: doi:10.1109/smacd58065.2023.10192202
   title: Design of Low Power & Low Noise On-Chip BioAmplifier in Cooperation with Analog IC Synthesis
     at 130nm Skywater Technology
+  authors:
+  - Enes Sağlıcan
+  - Berkay Dur
+  - Engin Afacan
   year: 2023
+  venue: 2023 19th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and
+    Applications to Circuit Design (SMACD)
   status: excluded
+  names_process: true
   reason: '"Post-layout simulations" of a bioamplifier; no fabrication is reported.'
   decided: '2026-09-19'
 - id: doi:10.37934/sej.3.1.1421b
   title: Integrating Design for Testability Technique into OpenLane with Skywater 130-Nanometer Process
     Design Kit
+  authors:
+  - Calvin Chew
+  - Chia Yee Ooi
+  - Chuan Ning Chye
   year: 2023
+  venue: Semarak Engineering journal
   status: excluded
+  names_process: true
   reason: A design-for-testability case study reporting DRC, LVS and static-timing results from OpenLane;
     no fabrication or measurement.
   decided: '2026-09-19'
 - id: doi:10.1109/atc55345.2022.9943011
   title: A Low-Power CT Second-Order VCO-Based ΔΣADC for Audio Recording on Skywater 130-nm
+  authors:
+  - Duc-Manh Tran
+  - Duy-Hieu Bui
+  - Xuan-Tu Tran
   year: 2022
+  venue: 2022 International Conference on Advanced Technologies for Communications (ATC)
   status: excluded
+  names_process: true
   reason: '"Verified by SPICE simulation"; no fabrication is reported.'
   decided: '2026-09-19'
 - id: doi:10.1109/nics54270.2021.9701515
   title: A Highly Digital VCO-based ADC for IoT Applications on Skywater 130nm
+  authors:
+  - Duc-Manh Tran
+  - Ngo-Doanh Nguyen
+  - Duy-Hieu Bui
+  - Xuan-Tu Tran
   year: 2021
+  venue: 2021 8th NAFOSTED Conference on Information and Computer Science (NICS)
   status: excluded
+  names_process: true
   reason: '"Implemented and verified by fully open-source tools" reads as simulation-only; no fabrication
     or measurement is stated.'
   decided: '2026-09-19'
 - id: doi:10.20944/preprints202607.0137.v1
   title: 'Automated Parameter Tuning for Timing Closure in OpenROAD/OpenLane: A Comprehensive Multi-Design
     Grid Search Framework on the SkyWater 130 nm PDK'
+  authors:
+  - Md. Atair Rahman Alvi
   year: 2026
+  venue: null
   status: excluded
+  names_process: true
   reason: An automated OpenROAD/OpenLane parameter-tuning study reporting tool-derived timing, power and
     area metrics for three benchmark designs; no fabrication, and the findings are about the flow rather
     than the process. Also posted as an SSRN preprint (10.2139/ssrn.7055760).
   decided: '2026-09-19'
 - id: doi:10.1007/978-3-031-92108-7_3
   title: Process Design Kit
+  authors:
+  - Susana Ortega Cisneros
+  - Emilio Isaac Baungarten Leon
+  - Pedro Mejia Alvarez
   year: 2025
+  venue: SpringerBriefs in Computer Science
   status: excluded
+  names_process: true
   reason: Chapter of a SpringerBriefs hands-on OpenLane/SKY130 lab manual; a textbook, not a paper.
   decided: '2026-09-19'
 - id: doi:10.1007/978-3-031-92108-7_4
   title: Introduction to OpenLane
+  authors:
+  - Susana Ortega Cisneros
+  - Emilio Isaac Baungarten Leon
+  - Pedro Mejia Alvarez
   year: 2025
+  venue: SpringerBriefs in Computer Science
   status: excluded
+  names_process: true
   reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
     not a paper.
   decided: '2026-09-19'
 - id: doi:10.1007/978-3-031-92108-7_5
   title: Macro-Cells and RAM-Cells with OpenLane
+  authors:
+  - Susana Ortega Cisneros
+  - Emilio Isaac Baungarten Leon
+  - Pedro Mejia Alvarez
   year: 2025
+  venue: SpringerBriefs in Computer Science
   status: excluded
+  names_process: true
   reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
     not a paper.
   decided: '2026-09-19'
 - id: doi:10.1007/978-3-031-92108-7_6
   title: Exploring OpenLane through Case Studies and Exercises
+  authors:
+  - Susana Ortega Cisneros
+  - Emilio Isaac Baungarten Leon
+  - Pedro Mejia Alvarez
   year: 2025
+  venue: SpringerBriefs in Computer Science
   status: excluded
+  names_process: true
   reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
     not a paper.
   decided: '2026-09-19'
 - id: doi:10.1007/978-3-031-92108-7_7
   title: Caravel
+  authors:
+  - Susana Ortega Cisneros
+  - Emilio Isaac Baungarten Leon
+  - Pedro Mejia Alvarez
   year: 2025
+  venue: SpringerBriefs in Computer Science
   status: excluded
+  names_process: true
   reason: Chapter of the same SpringerBriefs OpenLane/SKY130 lab manual as 978-3-031-92108-7_3; a textbook,
     not a paper.
   decided: '2026-09-19'
 - id: arxiv:2608.26206
   title: 'Ankhdjet: An Open-Source Compiler for Mask-Programmed Ternary Compute-in-ROM on an Open PDK'
+  authors:
+  - Mohnish Pai
   year: 2026
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: A compute-in-ROM macro compiled for a future SKY130 Tiny Tapeout/ChipFoundry shuttle ("silicon
-    expected 2027"); the abstract's own reported numbers are from extracted-parasitic simulation and
-    it states no energy measurements are claimed.
+    expected 2027"); the abstract's own reported numbers are from extracted-parasitic simulation and it
+    states no energy measurements are claimed.
   decided: '2026-09-19'
 - id: arxiv:2507.00755
   title: 'LearnAFE: Circuit-Algorithm Co-design Framework for Learnable Audio Analog Front-End'
+  authors:
+  - Jinhai Hu
+  - Zhongyi Zhang
+  - Cong Sheng Leow
+  - Wang Ling Goh
+  - Yuan Gao
   year: 2025
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: An audio analog-front-end design in the SKY130 process; the arXiv PDF full text marks the reported
     accuracy, power and area results "based on post-layout simulation", with no statement of fabrication.
   decided: '2026-09-19'
 - id: arxiv:2111.14535
   title: Enabling Reusable Physical Design Flows with Modular Flow Generators
+  authors:
+  - Alex Carsello
+  - James Thomas
+  - Ankita Nayak
+  - Po-Han Chen
+  - Mark Horowitz
+  - Priyanka Raina
+  - Christopher Torng
   year: 2021
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: A flow-reuse tooling paper (mflowgen) evaluated across five technology nodes (TSMC16/28/40,
     SKY130, IBM180); the abstract reports no SKY130-specific process or silicon findings. Also published
     as doi:10.1145/3489517.3530633 (ICCAD 2022).
   decided: '2026-09-19'
 - id: arxiv:2512.22435
   title: 'AnalogSAGE: Self-evolving Analog Design Multi-Agents with Stratified Memory and Grounded Experience'
+  authors:
+  - Zining Wang
+  - Jian Gao
+  - Weimin Fu
+  - Xiaolong Guo
+  - Xuan Zhang
   year: 2025
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: An LLM analog-design agent framework "evaluated under the open-source SKY130 PDK with ngspice";
     simulation only, no fabrication.
   decided: '2026-09-19'
 - id: arxiv:2605.31141
   title: Compact and Energy-Efficient Memristive Spiking Neuromorphic Accelerator for Bio-inspired Interception
     Tasks
+  authors:
+  - Qianhou Qu
+  - Sheng Lu
+  - Sungyong Jung
+  - Qilian Liang
+  - Chenyun Pan
   year: 2026
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: A memristive neuron "implemented in the SkyWater SKY130 PDK" and evaluated by Verilog-A/SPICE
     circuit simulation; the abstract's "measured" read-noise data is drawn from a cited prior experimental
     study of a different device, not a SKY130 fabrication of this design.
@@ -600,105 +1177,940 @@
 - id: arxiv:2602.02849
   title: 'AutoSizer: Automatic Sizing of Analog and Mixed-Signal Circuits via Large Language Model (LLM)
     Agents'
+  authors:
+  - Xi Yu
+  - Dmitrii Torbunov
+  - Soumyajit Mandal
+  - Yihui Ren
   year: 2026
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: Introduces AMS-SizingBench, a simulator-based (not silicon) benchmark of 24 SKY130 circuits
     for sizing-optimization agents; no fabrication reported.
   decided: '2026-09-19'
 - id: doi:10.1002/aisy.202500351
   title: 'Harnessing Nonidealities in Analog In-Memory Computing Circuits: A Physical Modeling Approach
     for Neuromorphic Systems'
+  authors:
+  - Yusuke Sakemi
+  - Yuji Okamoto
+  - Takashi Morie
+  - Sou Nobukawa
+  - Takeo Hosomi
+  - Kazuyuki Aihara
   year: 2025
+  venue: Advanced Intelligent Systems
   status: excluded
+  names_process: true
   reason: The method is "validated through the post-layout SPICE simulations on the IMC circuit ... using
     the sky130 process"; no fabrication or measurement. Also posted as arxiv:2412.09010.
   decided: '2026-09-19'
 - id: arxiv:2609.16244
   title: The World Model Hardware Accelerator
+  authors:
+  - Shashank Chaurasia
   year: 2026
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: A diffusion-transformer accelerator with five engines "taken to routed layout in sky130 with
     parasitic-annotated timing and measured-activity power"; this is simulated switching-activity power
     estimation from place-and-route, not a fabricated or measured chip.
   decided: '2026-09-19'
 - id: arxiv:2608.16953
   title: 'DTX: A Throughput-First Training Accelerator for Diffusion and Transformer Models'
+  authors:
+  - ' Shashank'
   year: 2026
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: A "sky130 campaign hardens the systolic array to DRC-clean GDS at 83.3 MHz post-route"; DRC-clean
     post-route synthesis only, no fabrication.
   decided: '2026-09-19'
 - id: arxiv:2607.16632
   title: 'CLOSER-Bench: Evaluating Budgeted Cross-Stage Design Closure for Hardware Agents'
+  authors:
+  - Peilong Zhou
+  - Zhirong Chen
+  - Cangyuan Li
+  - Haoyu Gao
+  - Kaiyan Chang
+  - Ziming Qu
+  - Ying Wang
   year: 2026
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: An RTL-to-GDS hardware-agent benchmark built on open-source Sky130 tooling; a tool-evaluation
     benchmark with no fabrication or process-specific findings.
   decided: '2026-09-19'
 - id: arxiv:2608.23582
-  title: 'Transformer Accelerator (TFA): A Macro-Op INT8 Hardware Chip for Transformer Inference and
-    Machine Translation'
+  title: 'Transformer Accelerator (TFA): A Macro-Op INT8 Hardware Chip for Transformer Inference and Machine
+    Translation'
+  authors:
+  - ' Shashank'
   year: 2026
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: '"Completed design-rule-clean synthesis and place-and-route on SkyWater sky130"; no fabrication
     or measurement reported.'
   decided: '2026-09-19'
 - id: arxiv:2606.05253
   title: 'Alpha-RTL: Test-Time Training for RTL Hardware Optimization'
+  authors:
+  - Peilong Zhou
+  - Zhirong Chen
+  - Cangyuan Li
+  - Haoyu Gao
+  - Kaiyan Chang
+  - Ziming Qu
+  - Ying Wang
   year: 2026
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: Reports an area-delay-product reduction "under Sky130" from synthesis-derived PPA rewards in
     an RTL-optimization agent; no fabrication.
   decided: '2026-09-19'
 - id: arxiv:2604.05983
   title: 'Arch: An AI-Native Hardware Description Language for Register-Transfer Clocked Hardware Design'
+  authors:
+  - Shuqing Zhao
   year: 2026
+  venue: arXiv
   status: excluded
+  names_process: true
   reason: Case studies (L1 cache, AXI DMA) synthesized and statically timed with Yosys/OpenSTA on Sky130;
     a hardware-description-language paper with no fabrication or SKY130-specific findings.
   decided: '2026-09-19'
 - id: doi:10.3390/computers13010009
   title: Custom ASIC Design for SHA-256 Using Open-Source Tools
+  authors:
+  - Lucas Daudt Franck
+  - Gabriel Augusto Ginja
+  - João Paulo Carmo
+  - José A. Afonso
+  - Maximiliam Luppe
   year: 2023
+  venue: Computers
   status: excluded
-  reason: A SHA-256 accelerator "synthesized using SkyWater SKY130 130 nm process technology through
-    the OpenLANE automated workflow"; the reported area and clock frequency are post-synthesis/place-and-route
+  names_process: true
+  reason: A SHA-256 accelerator "synthesized using SkyWater SKY130 130 nm process technology through the
+    OpenLANE automated workflow"; the reported area and clock frequency are post-synthesis/place-and-route
     figures, not silicon measurements.
   decided: '2026-09-19'
 - id: doi:10.3390/electronics15051048
   title: 'From RTL to Fabrication: Survey of Open-Source EDA Tools and PDKs'
+  authors:
+  - Emilio Isaac Baungarten-Leon
   year: 2026
+  venue: Electronics
   status: excluded
+  names_process: true
   reason: A general survey of the open-source EDA/PDK ecosystem, not a study specific to SKY130 or the
     SkyWater process.
   decided: '2026-09-19'
 - id: doi:10.1109/mssc.2024.3367652
-  title: 'Low-Cost Open Source ASIC Design and Fabrication: Creating your own chips with open source
-    software and multiproject wafers'
+  title: 'Low-Cost Open Source ASIC Design and Fabrication: Creating your own chips with open source software
+    and multiproject wafers'
+  authors:
+  - Kristaps Jurkans
+  - Charles Fox
   year: 2024
+  venue: IEEE Solid-State Circuits Magazine
   status: excluded
+  names_process: true
   reason: A general step-by-step guide to open-source ASIC design and MPW fabrication; the abstract does
     not name SKY130 or any specific process and reports no measurements.
   decided: '2026-09-19'
 - id: doi:10.1109/mwscas47672.2021.9531753
   title: 'Digital ASIC Implementation of RISC-V: OpenLane and Commercial Approaches in Comparison'
+  authors:
+  - Sarah Hesham
+  - Mohamed Shalan
+  - M. Watheq El-Kharashi
+  - Mohamed Dessouky
   year: 2021
+  venue: 2021 IEEE International Midwest Symposium on Circuits and Systems (MWSCAS)
   status: excluded
+  names_process: false
   reason: Compares the OpenLane flow against commercial tools on timing and power for a RISC-V design;
     no process is named and no fabrication is reported.
   decided: '2026-09-19'
 - id: doi:10.1109/apccas62602.2024.10808656
   title: Physical Design of RISC-V based System-on-Chip using OpenLane
+  authors:
+  - Muhammad Fauzan
+  - Raihan Fadhil Yanuarsyah
+  - Muhammad Hanif Hibatullah
+  - Radithya Arisaputra
+  - Infall Syafalni
+  - Nana Sutisna
+  - Trio Adiono
+  - Makoto Ikeda
   year: 2024
+  venue: 2024 IEEE Asia Pacific Conference on Circuits and Systems (APCCAS)
   status: excluded
+  names_process: false
   reason: A PicoSoC physical-design case study through the OpenLane flow; no process is named and results
     are gate-level simulation, not fabrication.
   decided: '2026-09-19'
 - id: doi:10.31114/2078-7707-2022-4-87-92
   title: Analysis of Open-source EDA Tools OpenLANE for ASIC Design
+  authors:
+  - Innopolis University
+  - A.V. Zykov
+  - Innopolis University
+  - R.F. Iliasov
   year: 2022
+  venue: Problems of advanced micro- and nanoelectronic systems development
   status: excluded
+  names_process: false
   reason: Compares OpenLANE against Cadence Genus synthesis optimization; mentions that OpenLANE "was
     used to produce real microchips through chipIgnite project" as general context, but reports no fabrication
     or process name for the paper's own design.
+  decided: '2026-09-19'
+- id: doi:10.1109/vlsi-tsa54299.2022.9771013
+  title: Lift-off-Free Complementary Carbon Nanotube FETs Fabricated With Conventional Processing in a
+    Silicon Foundry
+  authors:
+  - T. Srimani
+  - A. C. Yu
+  - B. Benton
+  - M. Nelson
+  - M. M. Shulaker
+  year: 2022
+  venue: 2022 International Symposium on VLSI Technology, Systems and Applications (VLSI-TSA)
+  status: excluded
+  names_process: true
+  reason: 90 nm complementary CNFET foundry-integration paper with SkyWater Technology-affiliated authors
+    (Benton, Nelson); a different node from SKY130 (design's other-SkyWater-process exclusion), and the
+    abstract does not name SkyWater or SKY130.
+  decided: '2026-09-19'
+- id: doi:10.1109/tns.2026.3684446
+  title: Total-Ionizing-Dose Effects and Low-Frequency Noise in 90 nm, 3.3 V Input/Output CMOS Devices
+  authors:
+  - J. Neuendank
+  - T. Kirby
+  - H. J. Barnaby
+  - D. M. Fleetwood
+  - S. Bonaldo
+  - T. D. Loveless
+  - S. Westfall
+  - P. Muscat
+  - M. Nour
+  - M. Chambers
+  year: 2026
+  venue: IEEE Transactions on Nuclear Science
+  status: excluded
+  names_process: true
+  reason: 90 nm I/O CMOS TID/RTN study with SkyWater Technology-affiliated co-authors (Nour, Chambers,
+    Bloomington); a different node from SKY130 (design's other-SkyWater-process exclusion), and the abstract
+    does not name SkyWater or SKY130.
+  decided: '2026-09-19'
+- id: doi:10.1109/iccad51958.2021.9643513
+  title: 'ParaMitE: Mitigating Parasitic CNFETs in the Presence of Unetched CNTs'
+  authors:
+  - Sanmitra Banerjee
+  - Arjun Chaudhuri
+  - Jinwoo Kim
+  - Gauthaman Murali
+  - Mark Nelson
+  - Sung Kyu Lim
+  - Krishnendu Chakrabarty
+  year: 2021
+  venue: 2021 IEEE/ACM International Conference On Computer Aided Design (ICCAD)
+  status: excluded
+  names_process: true
+  reason: CNFET layout-mitigation paper with one SkyWater Technology-affiliated co-author (Mark Nelson,
+    Bloomington); the mitigation is validated by simulation on synthesis benchmarks, not SKY130 silicon,
+    and the abstract does not name SkyWater or SKY130.
+  decided: '2026-09-19'
+- id: doi:10.1109/ted.2024.3353702
+  title: High-Performance HfO2/Al2O3 Superlattice MIM Capacitor in a 200 mm High-Volume Batch-ALD Platform
+  authors:
+  - Partha Mukhopadhyay
+  - Ivan Fletcher
+  - Zuriel C. Couvertier
+  - Julio Morris
+  - Jennifer Perez
+  - Chris Nichols
+  - John Allgair
+  - Jim Vandevere
+  - Winston V. Schoenfeld
+  - Sara Aoki
+  - Enzo Novoselic
+  - Shara Lombardo
+  - Dina Triyoso
+  - Jon Kretzschmar
+  - Anton deVilliers
+  - Jim Fulford
+  year: 2024
+  venue: IEEE Transactions on Electron Devices
+  status: excluded
+  names_process: true
+  reason: MIM-capacitor process-integration paper from SkyWater's Kissimmee, FL site (BRIDG/TTCA), not
+    the Bloomington SKY130 fab; the measured capacitor and dielectric results are for a different 200
+    mm batch-ALD platform aimed at interposer and RF applications, and the abstract does not name SkyWater
+    or SKY130.
+  decided: '2026-09-19'
+- id: doi:10.1145/3649329.3658493
+  title: 'ChatCPU: An Agile CPU Design and Verification Platform with LLM'
+  authors:
+  - Xi Wang
+  - Gwok-Waa Wan
+  - Sam-Zaak Wong
+  - Layton Zhang
+  - Tianyang Liu
+  - Qi Tian
+  - Jianmin Ye
+  year: 2024
+  venue: Proceedings of the 61st ACM/IEEE Design Automation Conference
+  status: excluded
+  names_process: true
+  reason: LLM-generated RISC-V CPU with "successful tape-out using SkyWater 130nm MPW project with Efabless";
+    the abstract reports the tape-out but no measured silicon results, matching the design's treatment
+    of tape-out-only MPW reports.
+  decided: '2026-09-19'
+- id: doi:10.1109/fpl53798.2021.00085
+  title: 'Taping out an FPGA in 24 hours with OpenFPGA: The SOFA Project'
+  authors:
+  - Xifan Tang
+  - Ganesh Gore
+  - Grant Brown
+  - Pierre-Emmanuel Gaillardon
+  year: 2021
+  venue: 2021 31st International Conference on Field-Programmable Logic and Applications (FPL)
+  status: excluded
+  names_process: true
+  reason: Skywater Open-source embedded FpgAs (SOFA) project, a series of open-source embedded FPGA IPs
+    built with the Skywater 130nm technology; the abstract reports only "fabrication-ready layouts" generated
+    in 24 hours, no measured silicon result. The open-source-eFPGA sibling of the included FABulous SKY130
+    paper.
+  decided: '2026-09-19'
+- id: doi:10.1109/nano58406.2023.10231247
+  title: 'Open-RIMC: Open-Source RRAM-based IMC Co-Processor with Reconfigurable Logic Mapping'
+  authors:
+  - Vivek Parmar
+  - Ayan Ray
+  - Chithambara Moorthii
+  - Richa Mishra
+  - Deepak Verma
+  - Digamber Pandey
+  - Manan Suri
+  year: 2023
+  venue: 2023 IEEE 23rd International Conference on Nanotechnology (NANO)
+  status: excluded
+  names_process: true
+  reason: RRAM-based in-memory-computing co-processor for a RISC-V/Caravel design, "implemented using
+    the open-source Skywater-130 nm PDK"; the abstract reports only design and variability-analysis results,
+    no fabrication or measurement.
+  decided: '2026-09-19'
+- id: doi:10.1109/cae56623.2023.10087013
+  title: Integrated Three-Level Flying Capacitor DC-DC Buck Converter for CubeSat Applications
+  authors:
+  - Jorge Marin
+  - Joel Gak
+  - Alfonso Cortes
+  - Nicolas Calarco
+  - Alejandro Oliva
+  - Esteban Lindstrom
+  - Matias Miguez
+  - Alfredo Falcón
+  - Niria Osterman
+  - Christian A. Rojas
+  year: 2023
+  venue: 2023 Argentine Conference on Electronics (CAE)
+  status: excluded
+  names_process: true
+  reason: Three-level flying-capacitor buck converter "using the Skywater 130nm CMOS technology" for CubeSat
+    power; the abstract reports only simulated efficiency figures ("Simulated results shows..."), no fabrication.
+    The 2023 predecessor of the included doi:10.1109/cae69023.2026.11450324.
+  decided: '2026-09-19'
+- id: doi:10.1109/lascas64004.2025.10966307
+  title: A CMOS Instrumentation Amplifier Designed with Open-Source Tools
+  authors:
+  - Cristina Missel Adornes
+  - Gabriel Maranhão
+  - Deni Germano Alves Neto
+  - Cesar Ramos Rodrigues
+  - Márcio Cherem Schneider
+  year: 2025
+  venue: 2025 IEEE 16th Latin America Symposium on Circuits and Systems (LASCAS)
+  status: excluded
+  names_process: true
+  reason: FDDA instrumentation amplifier "developed using the open-source SkyWater 0.13 um CMOS process
+    from design to tape-out"; the abstract reports only simulated gain, bandwidth, noise and CMRR figures,
+    no measured silicon result.
+  decided: '2026-09-19'
+- id: doi:10.1109/norcas57515.2022.9934685
+  title: Open-Source Chip Design in Academic Education
+  authors:
+  - Syed Anas Alam
+  - Jakob Furbo Enevoldsen
+  - Andreas Alkjaer Eriksen
+  - Niels William Hartmann
+  - Ulrik Helk
+  - Jorgen Kragh Jakobsen
+  - Christa Skytte Jensen
+  - Nicolai Dyre Bulow Jespersen
+  - Karl Herman Krause
+  - Mads Rumle Nordstrom
+  - Tjark Petersen
+  - Luca Pezzarossa
+  - Simon Winther Rasmussen
+  - Martin Schoeberl
+  - Jonas Ingerslev Sorensen
+  year: 2022
+  venue: 2022 IEEE Nordic Circuits and Systems Conference (NorCAS)
+  status: excluded
+  names_process: true
+  reason: DTU BSc course chip "using open-source tools and the SkyWater process"; the abstract says the
+    project "has recently achieved tape-out for the next multi-project wafer manufacturing" with no measurement
+    yet reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/icesic53714.2022.9783599
+  title: Design of an All-Digital Phase-locked loop in a 130nm CMOS Process using open-source tools
+  authors:
+  - Charaan S
+  - Nalinkumar S
+  - Elavarasan P
+  - Prakash P
+  - Kasthuri P
+  year: 2022
+  venue: 2022 International Conference on Electronic Systems and Intelligent Computing (ICESIC)
+  status: excluded
+  names_process: true
+  reason: All-digital PLL run through the OpenLane RTL-to-GDSII flow "incorporated with the open-source
+    Sky130 Process Design Kit"; the abstract reports gate-level post-layout simulation only and states
+    the GDS "can be sent to foundries", i.e. not yet fabricated.
+  decided: '2026-09-19'
+- id: doi:10.1145/3526241.3530334
+  title: A Senior-Level Analog IC Design Course built on Open-Source Technologies
+  authors:
+  - Jennifer Hasler
+  year: 2022
+  venue: Proceedings of the Great Lakes Symposium on VLSI 2022
+  status: excluded
+  names_process: true
+  reason: Analog IC design course built on "open-source IC design process (Skywater 130nm CMOS)"; the
+    abstract describes the course design and student confidence-building, with circuits "that could be
+    fabricated" but no fabrication or measurement reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/iscas58744.2024.10558297
+  title: Leveraging Open Source IC Design Tools for an Undergraduate Microelectronic Circuit Design Course
+  authors:
+  - Astria Nur Irfansyah
+  year: 2024
+  venue: 2024 IEEE International Symposium on Circuits and Systems (ISCAS)
+  status: excluded
+  names_process: true
+  reason: Undergraduate IC design course using "the recently published manufacturable open-source CMOS
+    130nm PDK from Skywater"; reports course outcomes (13% of student designs error-free) and mentions
+    fabrication in the Efabless Open-MPW programme generally, but no measured result for a specific design.
+  decided: '2026-09-19'
+- id: doi:10.1109/iscas58744.2024.10558044
+  title: Research Experiences for Teachers on Chip Design
+  authors:
+  - John Hu
+  - James Stine
+  - Wooyeol Choi
+  - Erin Dyke
+  year: 2024
+  venue: 2024 IEEE International Symposium on Circuits and Systems (ISCAS)
+  status: excluded
+  names_process: true
+  reason: Teacher-training programme using "the open-source Skywater 130 nm CMOS process" via the Tiny
+    Tapeout flow; reports that six of ten participants submitted GDS files for fabrication, with no measured
+    chip results in the abstract.
+  decided: '2026-09-19'
+- id: doi:10.1109/cae59785.2024.10487167
+  title: 'Designing Silicon Brains Using LLM: Leveraging ChatGPT for Automated Description of a Spiking
+    Neuron Array'
+  authors:
+  - Michael Tomlinson
+  - Joe Li
+  - Andreas Andreou
+  year: 2024
+  venue: 2024 Argentine Conference on Electronics (CAE)
+  status: excluded
+  names_process: true
+  reason: ChatGPT4-generated spiking-neuron-array ASIC "submitted for fabrication in Skywater 130nm through
+    Tiny Tapeout 5"; the abstract reports only simulation-based verification, with fabrication pending
+    at submission. Also posted as arxiv:2402.10920 (same title and abstract).
+  decided: '2026-09-19'
+- id: doi:10.1109/icons62911.2024.00024
+  title: 'Natural Language to Verilog: Design of a Recurrent Spiking Neural Network using Large Language
+    Models and ChatGPT'
+  authors:
+  - Paola Vitolo
+  - George Psaltakis
+  - Michael Tomlinson
+  - Gian Domenico Licciardo
+  - Andreas G. Andreou
+  year: 2024
+  venue: 2024 International Conference on Neuromorphic Systems (ICONS)
+  status: excluded
+  names_process: true
+  reason: ChatGPT4-generated recurrent spiking-neural-network design "synthesized in the SkyWater 130
+    nm technology" and "submitted to Efabless Tiny Tapeout 6"; the abstract reports only FPGA and simulation-based
+    validation, no SKY130 measurement. Also posted as arxiv:2405.01419 (same title and abstract).
+  decided: '2026-09-19'
+- id: doi:10.1109/pacet60398.2024.10497015
+  title: Design and Implementation of a non-PWM DC-DC Boost Converter in SkyWater Technology
+  authors:
+  - Stefanos Kontogiannis
+  - Andreas Tsiougkos
+  - Vasiliki Gogolou
+  - Vasilis F. Pavlidis
+  - Thomas Noulis
+  year: 2024
+  venue: 2024 Panhellenic Conference on Electronics &amp;amp; Telecommunications (PACET)
+  status: excluded
+  names_process: true
+  reason: Non-PWM on-chip boost converter "implemented alongside its on-chip inductor in SkyWater 130nm
+    technology"; the reported 82% efficiency and output figures read as simulated/designed performance,
+    with no fabrication or measurement statement in the abstract.
+  decided: '2026-09-19'
+- id: doi:10.1109/mwscas67364.2026.11680747
+  title: Emulating Functionality of a Breakout Board for Hardware Validation of a Pre-TinyTapeout Design
+  authors:
+  - Carter Brady
+  - Quy Le
+  - Syed Rafay Hasan
+  - Terry Guo
+  year: 2026
+  venue: 2026 IEEE 69th International Midwest Symposium on Circuits and Systems (MWSCAS)
+  status: held
+  names_process: false
+  reason: No public abstract retrieved (OpenAlex record has an empty abstract field); the title indicates
+    hardware validation of a design ahead of a Tiny Tapeout submission, i.e. pre-fabrication. Full text
+    needed to confirm scope.
+  decided: '2026-09-19'
+- id: doi:10.1109/redw61286.2024.10759245
+  title: TID Effects on Random Telegraph Signals in GF 12LP FinFET Devices
+  authors:
+  - J. Neuendank
+  - S. Bonaldo
+  - F. Mamun
+  - Z. Giorno
+  - H. J. Barnaby
+  - T. Wallace
+  - M. Nour
+  - M. Spear
+  - T. Kirby
+  - R. Dempsey
+  year: 2024
+  venue: 2024 IEEE Radiation Effects Data Workshop (REDW) (in conjunction with 2024 NSREC)
+  status: excluded
+  names_process: true
+  reason: Companion study to the excluded S90LN RTN paper (doi:10.1109/redw61286.2024.10759147) by the
+    same ASU/AFRL/SkyWater group; reports on a GlobalFoundries 12LP FinFET process, not a SkyWater product,
+    despite one SkyWater Technology-affiliated co-author (M. Nour).
+  decided: '2026-09-19'
+- id: doi:10.3390/sym18071083
+  title: 'Exploiting Structural Symmetry of SM4 for an Asymmetric Hardware Architecture: Design and Open-Source
+    Verification on the RISC-V LicheePi 4A Platform'
+  authors:
+  - Jianxin Wang
+  - Zixuan Wang
+  - Runze Zhou
+  - Chaoen Xiao
+  - Lei Zhang
+  year: 2026
+  venue: Symmetry
+  status: excluded
+  names_process: true
+  reason: SM4 accelerator synthesised with "Yosys + SkyWater Sky130"; the abstract explicitly states "physical
+    on-board acceleration is not claimed and is left as future work", and its "measured" area/power figures
+    are post-synthesis EDA estimates, not fabricated silicon.
+  decided: '2026-09-19'
+- id: doi:10.1109/mssc.2024.3372907
+  title: 'On the Versatility of the IHP BiCMOS Open Source and Manufacturable PDK: A step towards the
+    future where anybody can design and build a chip'
+  authors:
+  - Krzysztof Herman
+  - Norbert Herfurth
+  - Tim Henkes
+  - Sergei Andreev
+  - Rene Scholz
+  - Markus Müller
+  - Mario Krattenmacher
+  - Harald Pretl
+  - Wladyslaw Grabinski
+  year: 2024
+  venue: IEEE Solid-State Circuits Magazine
+  status: excluded
+  names_process: true
+  reason: Introduces IHP's own open PDK (IHP-Open130-G2); SKY130 is named only once, in passing, as a
+    comparison point ('such as SKY130 and GF180MCU'). The paper's own subject and results are about the
+    IHP PDK, not SKY130.
+  decided: '2026-09-19'
+- id: doi:10.1109/mdat.2024.3404117
+  title: Leveraging Generative AI for Rapid Design and Verification of a Vector Processor SoC
+  authors:
+  - William Salcedo
+  - Sara Achour
+  - Courtney McBeth
+  year: 2024
+  venue: IEEE Design &amp; Test
+  status: excluded
+  names_process: true
+  reason: Generative-AI hardware-design methodology paper; SKY130 is named only as an example of the open-source
+    PDK ecosystem ('PDKs such as SKY130') in the introduction. The case-study Vector Processor SoC's own
+    fabrication process and any measured results are not stated.
+  decided: '2026-09-19'
+- id: doi:10.1109/aicecs63354.2024.10957166
+  title: 'Open-Source Tools for Undergraduate Education: Democratizing IC Design Using EDA'
+  authors:
+  - Sanskruti Sundara Rajan
+  - Vishal Narayana Raju
+  - Pallavi R Mane
+  - Shounak De
+  year: 2024
+  venue: 2024 Third International Conference on Artificial Intelligence, Computational Electronics and
+    Communication System (AICECS)
+  status: excluded
+  names_process: true
+  reason: Undergraduate-education paper on the "Skywater Process Development Kit (PDK)"; the abstract
+    describes using Xschem/Ngspice/Magic to "simulate, layout, and validate an inverter circuit", with
+    no fabrication reported.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.21425560
+  title: Cross-PDK Simulator-in-the-Loop Standard-Cell Calibration Package
+  authors:
+  - Jiaqing Chen
+  - Feng Shao
+  year: 2026
+  venue: Zenodo (CERN European Organization for Nuclear Research)
+  status: excluded
+  names_process: true
+  reason: Self-published Zenodo software/dataset release (a SPICE calibration package for GF180MCU and
+    SKY130 ngspice models); not a peer-reviewed paper, and it reports no fabricated SKY130 silicon.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.19303075
+  title: A Lightweight Hardware Security SoC for Fabless
+  authors:
+  - maomaoati-coder
+  year: 2026
+  venue: Zenodo (CERN European Organization for Nuclear Research)
+  status: excluded
+  names_process: true
+  reason: Self-published Zenodo article "targeting Fabless tapeout on the SKY130 open-source process"
+    and "Targeting ChipFoundry shuttle CI2609" (future tense); only RTL verification (Icarus Verilog,
+    61 test cases) is reported, no fabrication yet.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.22550228
+  title: 'CRYPTOGRAPHY DESTROYER OMEGA INFINITY: Silicon Acceleration of Circuit-SAT Using a 3D BEOL Mesh
+    of 500M Variables and Post-Fabrication Protocol'
+  authors:
+  - יהוה
+  - Kaoru Aguilera Katayama
+  year: 2026
+  venue: Zenodo (CERN European Organization for Nuclear Research)
+  status: excluded
+  names_process: true
+  reason: Self-published Zenodo article describing an unreviewed "ttsky" Tiny Tapeout design in the "SkyWater
+    130nm metal stack"; its claim of a 500-million-variable analogue Circuit-SAT solver "evidencing the
+    physical collapse of traditional algorithmic complexity barriers" is an extraordinary, unverified
+    claim with no independently reviewed measurement data.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.20950316
+  title: 'N-Gon Geometric Addressing in Multi-Terminal Semiconductor Devices: Theory, SPICE Verification,
+    and Four Embodiments'
+  authors:
+  - Francis X. Cunnane
+  year: 2026
+  venue: Zenodo (CERN European Organization for Nuclear Research)
+  status: excluded
+  names_process: true
+  reason: Self-published Zenodo article; verifies its multi-terminal device concept only "in SPICE DC
+    sweep simulation using SkyWater 130 nm compatible LEVEL=1 MOSFET models" (generic compatible models,
+    not fabricated devices), and reports a filed provisional patent rather than measured silicon.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.18821107
+  title: Advancements in Open Source RTL-to-GDSII Toolchains and the Integration of Artificial Intelligence
+    in Electronic Design Automation
+  authors:
+  - Chinmay Rozekar
+  year: 2026
+  venue: Zenodo (CERN European Organization for Nuclear Research)
+  status: excluded
+  names_process: true
+  reason: Self-published Zenodo survey of open-source EDA/AI trends; mentions "the release of the SkyWater
+    130nm and GlobalFoundries 180nm PDKs" as ecosystem background, with no circuit or fabrication result
+    of its own.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.20032068
+  title: 'An Agentic LLM Flow for Chip Timing Closure: Cross-Stage Context Propagation in EDA'
+  authors:
+  - Gursimran S Sodhi
+  year: 2026
+  venue: Zenodo (CERN European Organization for Nuclear Research)
+  status: excluded
+  names_process: true
+  reason: Self-published Zenodo EDA-methodology article; evaluates an LLM timing-closure flow on OpenROAD
+    benchmark designs "using the SkyWater 130nm PDK", measuring only synthesis/STA metrics (WNS), with
+    no fabrication.
+  decided: '2026-09-19'
+- id: doi:10.5281/zenodo.18008574
+  title: Silicon-Proven Learning With OpenPDKs and MPW Access for IC Education
+  authors:
+  - Eduardo Javier Holguín Weber
+  year: 2025
+  venue: Zenodo (CERN European Organization for Nuclear Research)
+  status: excluded
+  names_process: true
+  reason: Self-published Zenodo conference presentation describing a Latin American teaching programme
+    across three open PDKs (SkyWater SKY130, GlobalFoundries GF180, IHP SG13G2); no SKY130-specific measured
+    circuit result is given.
+  decided: '2026-09-19'
+- id: doi:10.1109/icct-europe63283.2025.11157664
+  title: Compact Memristive Neuromorphic Braille Keyboard
+  authors:
+  - Vasudev S Mallan
+  - Aidana Irmanova
+  - Alex P James
+  year: 2025
+  venue: 2025 IEEE International Conference on Consumer Technology-Europe (ICCT-Europe)
+  status: excluded
+  names_process: true
+  reason: Memristive Braille-keyboard circuit "designed with the open-source SkyWater 130 nm CMOS technology
+    node"; the abstract reports only "system and hardware simulations", no fabrication.
+  decided: '2026-09-19'
+- id: doi:10.1109/jmw.2025.3581235
+  title: Predicting Antenna Radiation Patterns and Types From Voxlated Measurements Using Neuro-Memristive
+    3D Crossbars
+  authors:
+  - Anitha Gopi
+  - Sruthi Pallathuvalappil
+  - Elizabeth George
+  - Alex James
+  year: 2025
+  venue: IEEE Journal of Microwaves
+  status: excluded
+  names_process: true
+  reason: The memristive-crossbar classifier is only "simulations ... based on Skywater 130 PDK"; the
+    paper's physical measurements are of the antenna hardware itself, not of SKY130 silicon.
+  decided: '2026-09-19'
+- id: doi:10.1109/icm66518.2025.11321317
+  title: 3D Memristive In-Memory GAN for Automated Design of On-Glass Patch Antenna for Ku Band
+  authors:
+  - Shilpa Pavithran
+  - Sruthi Pallathuvalappil
+  - Alex James
+  year: 2025
+  venue: 2025 37th International Conference on Microelectronics (ICM)
+  status: excluded
+  names_process: true
+  reason: The 3D memristive crossbar GAN is "based on the Skywater 130 PDK" but only trained/evaluated
+    as a dataset model; the paper's measured results (impedance bandwidth) are for the on-glass antenna
+    prototype, not SKY130 silicon.
+  decided: '2026-09-19'
+- id: doi:10.1109/ispacs68724.2025.11382815
+  title: Proposal of a Simple Perceptron Circuit Based on Neuron-CMOS with Adjustable Weights
+  authors:
+  - Tatsuya Hasegawa
+  - Naruaki Hokari
+  - Hirotaka Furukawa
+  - Masaaki Fukuhara
+  year: 2025
+  venue: 2025 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)
+  status: excluded
+  names_process: true
+  reason: Neuron-CMOS perceptron circuit "evaluated using NGSPICE simulation with the SKY 130 nm open-source
+    PDK"; the abstract reports only simulated stability and tunability at 1.8 V, no fabrication.
+  decided: '2026-09-19'
+- id: doi:10.1109/jxcdc.2026.3726699
+  title: Sensing- and Periphery-Aware Modeling of a Hybrid MTJ-CMOS Nonvolatile 1-bit Sign-Weight Memory
+    Subsystem for Energy-Constrained Edge Inference
+  authors:
+  - Byeong-Gwon Kim
+  - Byeong-Kwon Ju
+  - Ki-Young Lee
+  year: 2026
+  venue: IEEE Journal on Exploratory Solid-State Computational Devices and Circuits
+  status: excluded
+  names_process: true
+  reason: States explicitly that its "public SKY130 reconstruction is retained only as a qualitative topology
+    stress test" and that "no fabricated array, extracted layout, measured MTJ energy, physical yield,
+    or token-level speedup is claimed".
+  decided: '2026-09-19'
+- id: doi:10.1109/sbcci66862.2025.11218651
+  title: Tapeout-Oriented Strategies for Teaching Analog/Mixed-Signal IC Design and Implementation in
+    Electrical Engineering Education
+  authors:
+  - Jorge Marin
+  - Krzysztof Herman
+  - Daniel Arévalos
+  - Martin Andraud
+  - Christian A. Rojas
+  year: 2025
+  venue: 2025 38th SBC/SBMicro/IEEE Symposium on Integrated Circuits and Systems Design (SBCCI)
+  status: excluded
+  names_process: true
+  reason: AMS teaching-strategy paper describing case studies and Chipathon/MPW participation "supported
+    by resources such as the SKY130 and IHP open-source PDKs"; no SKY130-specific measured circuit result
+    is reported.
+  decided: '2026-09-19'
+- id: doi:10.24908/pceea.2026.21530
+  title: 'VLSI Education: FPGA - ASIC Pipeline and Toolchain'
+  authors:
+  - Devin Atkin
+  - Santiago Fuentes
+  - Denis Onen
+  - Orly Yadid-Pecht
+  year: 2026
+  venue: Proceedings of the Canadian Engineering Education Association (CEEA)
+  status: held
+  names_process: true
+  reason: Reports "fabricated an ASIC using the material to demonstrate the FPGA-to-ASIC path", but the
+    abstract does not name SKY130 or SkyWater for that ASIC -- it mentions the Tiny Tapeout Organization
+    only in relation to a separate, earlier course. Full text needed to confirm the process.
+  decided: '2026-09-19'
+- id: doi:10.1109/mspec.2025.11120331
+  title: 'Learning Analog System Design With the MOSbius: A Chip that will Teach you the Real-World Ropes'
+  authors:
+  - Peter Kinget
+  year: 2025
+  venue: IEEE Spectrum
+  status: held
+  names_process: true
+  reason: IEEE Spectrum article on the MOSbius analog teaching chip; the retrieved abstract text does
+    not name the fabrication process. Full text needed to confirm whether it is SKY130.
+  decided: '2026-09-19'
+- id: arxiv:2606.22635
+  title: 'Design and Development of a Neuromorphic Silicon Suite: PVT Sensing, Stochastic LIF Inference,
+    On-Chip STDP Learning, and Crossbar Programming'
+  authors:
+  - Poornima Kumaresan
+  - Santhosh Sivasubramani
+  year: 2026
+  venue: arXiv
+  status: excluded
+  names_process: true
+  reason: Four digital IP blocks "implemented as standard-cell CMOS on the SkyWater 130 nm process" (PVT
+    sensor, stochastic LIF neuron, STDP learning, crossbar programming); no fabricated silicon is reported
+    -- results are RTL/gate-level simulation only.
+  decided: '2026-09-19'
+- id: arxiv:2606.23532
+  title: 'An Open-Source LFSR-Based Stochastic Leaky Integrate-and-Fire Neuron in SkyWater 130 nm: Design,
+    Stochastic Characterisation, and Rate Coding'
+  authors:
+  - Poornima Kumaresan
+  - Santhosh Sivasubramani
+  year: 2026
+  venue: arXiv
+  status: excluded
+  names_process: true
+  reason: Stochastic LIF neuron "in standard-cell CMOS on the SkyWater 130 nm process", sized for a Tiny
+    Tapeout tile; the abstract states explicitly "All results are pre-silicon, from simulation and the
+    open flow." Companion of arxiv:2606.22635 by the same authors.
+  decided: '2026-09-19'
+- id: arxiv:2607.01526
+  title: 'LIB-TRAP: Standard Cell Library Hardware Trojan Risk Assessment and Prevention'
+  authors:
+  - Harish Kumar Dharavath
+  - Md Muhtasim Alam Chowdhury
+  - Rozhin Yasaei
+  - Soheil Salehi
+  year: 2026
+  venue: arXiv
+  status: excluded
+  names_process: true
+  reason: Standard-cell-library hardware-Trojan threat model; "Sky130nm" and "Saed32nm" standard-cell
+    libraries are synthesised and characterised (area, power) as clean vs. Trojan-infected, with no fabrication.
+  decided: '2026-09-19'
+- id: doi:10.1109/peds63958.2025.11144891
+  title: Open-Source Process Design Kits in Power Management Circuits for Educational Purposes
+  authors:
+  - Tee Hui Teo
+  - Keye Qian
+  - Kan Li
+  - Chung-Yi Li
+  year: 2025
+  venue: 2025 IEEE 15th International Conference on Power Electronics and Drive Systems (PEDS)
+  status: excluded
+  names_process: true
+  reason: Educational application of the SKY130 PDK to an inverter and a bandgap; the abstract reports
+    only simulation results (latency, temperature coefficient), no fabrication. Found via citing-works
+    of doi:10.1109/lssc.2022.3188925.
+  decided: '2026-09-19'
+- id: doi:10.1109/sbcci66862.2025.11218642
+  title: Physical Implementation of the NoX RISC-V Core Using an Open PDK
+  authors:
+  - Augusto Kessler Pires
+  - Nathan Guimarães
+  - Fernanda Kastensmitd
+  - Antonio Carlos S. Beck
+  - Mateus Grellert
+  - José Rodrigo Azambuja
+  year: 2025
+  venue: 2025 38th SBC/SBMicro/IEEE Symposium on Integrated Circuits and Systems Design (SBCCI)
+  status: excluded
+  names_process: true
+  reason: '"Complete ASIC synthesis of the NoX RISC-V processor core using the open-source SkyWater 130
+    nm PDK"; the abstract reports only synthesis-stage area, frequency and power figures, no fabrication.
+    Found via citing-works of doi:10.1109/itc51656.2023.00035.'
+  decided: '2026-09-19'
+- id: doi:10.1109/icetran66854.2025.11114230
+  title: 'Open-Source IC Design Tools: Implementation of PicoRV32 in 130nm Technology'
+  authors:
+  - Mihailo Knežević
+  - Lidija Paunović
+  year: 2025
+  venue: 2025 12th International Conference on Electrical, Electronic and Computing Engineering (IcETRAN)
+  status: excluded
+  names_process: true
+  reason: Feasibility study of implementing PicoRV32 "in a 130nm technology node using Sky130 PDK"; the
+    abstract is a feasibility statement with no measurement reported. Found via citing-works of doi:10.1109/access.2023.3336408.
+  decided: '2026-09-19'
+- id: doi:10.1109/lascas64004.2025.10966270
+  title: Design Exploration of CMOS Building Blocks for Time-Based-Controlled DC-DC Converters Using Open-Source
+    PDK and Tools
+  authors:
+  - Jorge Marin
+  - Andrés Martinez
+  - Andrea Nuñcz
+  - Christian A. Rojas
+  year: 2025
+  venue: 2025 IEEE 16th Latin America Symposium on Circuits and Systems (LASCAS)
+  status: excluded
+  names_process: true
+  reason: DC-DC buck-converter building blocks "implemented in the Skywater open-source 130-nm CMOS process";
+    the abstract reports only simulated efficiency and area figures, no fabrication. Found via citing-works
+    of doi:10.1109/bcicts54660.2023.10310944.
+  decided: '2026-09-19'
+- id: doi:10.1109/access.2024.3478832
+  title: An Open-Source AMS Circuit Optimization Framework Based on Reinforcement Learning—From Specifications
+    to Layouts
+  authors:
+  - Zonghao Li
+  - Anthony Chan Carusone
+  year: 2024
+  venue: IEEE Access
+  status: excluded
+  names_process: true
+  reason: RL-based AMS circuit-optimization framework demonstrated on "latched comparators in the SKY130
+    and GF180MCU processes"; the abstract reports simulated and LVS/DRC-clean layout results only, no
+    fabrication. Found via citing-works of doi:10.1109/isqed57927.2023.10129298.
+  decided: '2026-09-19'
+- id: doi:10.3390/math12142267
+  title: Building an Analog Circuit Synapse for Deep Learning Neuromorphic Processing
+  authors:
+  - Alejandro Juarez-Lora
+  - Victor H. Ponce-Ponce
+  - Humberto Sossa-Azuela
+  - Osvaldo Espinosa-Sosa
+  - Elsa Rubio-Espino
+  year: 2024
+  venue: Mathematics
+  status: excluded
+  names_process: true
+  reason: Memristor-synapse circuit "demonstrated in simulation using the Skywater-130 nm process"; no
+    fabrication reported. Also posted as the preprint doi:10.20944/preprints202405.1824.v1 (same title
+    and abstract). Found via citing-works of doi:10.1109/tcsi.2024.3355070.
   decided: '2026-09-19'

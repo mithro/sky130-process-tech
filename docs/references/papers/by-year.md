@@ -22,6 +22,7 @@ Papers by year of publication, newest first.
 * {ref}`paper-irfansyah-2025a` — Astria Nur Irfansyah, ISPACS 2025
 * {ref}`paper-olyanasab-2025a` — Ali Olyanasab et al., Austrochip 2025
 * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025
+* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
 * {ref}`paper-li-2025a` — Yueting Li et al., ISQED 2025
 * {ref}`paper-montanares-2025a` — Mauricio Montanares et al., VLSI-SoC 2025
 * {ref}`paper-castoria-2025a` — K. E. Castoria et al., arXiv 2025 (free copy)
@@ -37,13 +38,17 @@ Papers by year of publication, newest first.
 * {ref}`paper-yang-2024a` — Raymond H. Yang and Yaqing Xia, IEEE Design & Test 2024
 * {ref}`paper-blocklove-2024a` — Jason Blocklove et al., LAD 2024 (free copy)
 * {ref}`paper-jagielski-2024a` — Thomas Jagielski et al., WOSET 2024 (free copy)
+* {ref}`paper-teo-2024a` — Tee Hui Teo et al., MCSoC 2024
 * {ref}`paper-marin-2024a` — Jorge Marin et al., IEEE Design & Test 2024
 * {ref}`paper-chen-2024a` — Matthew Chen et al., Electronics Letters 2024 (free copy)
+* {ref}`paper-li-2024a` — Anhang Li et al., IEEE Solid-State Circuits Magazine 2024
+* {ref}`paper-baungarten-leon-2024a` — Emilio Isaac Baungarten-Leon et al., Electronics 2024 (free copy)
 
 (papers-year-2023)=
 ## 2023
 
 * {ref}`paper-poole-2023a` — Nikhil Poole and Amin Arbabian, IEEE Access 2023 (free copy)
+* {ref}`paper-dubey-2023a` — Anuj Dubey and Aydin Aysu, ITC 2023
 * {ref}`paper-chen-2023a` — Po-Han Chen et al., ISCAS 2023
 * {ref}`paper-akturk-2023a` — Akin Akturk et al., BCICTS 2023
 * {ref}`paper-shah-2023a` — Myrtle Shah et al., FPL 2023
@@ -57,6 +62,7 @@ Papers by year of publication, newest first.
 ## 2022
 
 * {ref}`paper-zhang-2022a` — Qirui Zhang et al., IEEE Solid-State Circuits Letters 2022
+* {ref}`paper-yu-2022a` — Andrew Yu et al., IEEE Electron Device Letters 2022 (affiliation inference)
 * {ref}`paper-alshaya-2022a` — Abdulaziz Alshaya et al., ICM 2022
 
 (papers-year-2021)=
@@ -70,6 +76,7 @@ Papers by year of publication, newest first.
 ## 2020
 
 * {ref}`paper-conway-2020a` — Tim Conway, ASMC 2020 (affiliation inference)
+* {ref}`paper-bishop-2020a` — Mindy D. Bishop et al., Nature Electronics 2020 (affiliation inference)
 * {ref}`paper-edwards-2020a` — Tim Edwards, WOSET 2020 (free copy)
 * {ref}`paper-srimani-2020a` — T. Srimani et al., VLSI Symposium 2020 (affiliation inference)
 
