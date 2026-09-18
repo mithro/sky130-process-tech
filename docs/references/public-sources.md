@@ -5804,7 +5804,7 @@ it. Used on steps 052 and 055. Tier: deep dive.
 polysilicon resistors for analog IC applications", *IEEE Transactions on
 Electron Devices* **36**(4), 738–744 (1989).
 <https://doi.org/10.1109/16.22479> The design of thin-film poly
-resistors for analogue ICs. Used on steps 049, 053 and 056. Tier: deep
+resistors for analogue ICs. Used on steps 049, 053, 055 and 056. Tier: deep
 dive.
 Also used on the RPM and RRPM mask pages.
 
