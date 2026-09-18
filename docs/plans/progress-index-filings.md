@@ -219,3 +219,26 @@ human/agent read the fetched copy against the summary and quotes).
   `check_materials.py`, `check_masks.py`, `check_papers.py`: all 0
   problems. A full-dataset `--online` re-run (71 records) was run in the
   background; see the next log entry for its result.
+* 2026-09-18 — Ran the full `--online` verification (71 records) three
+  times, fixing real problems each time rather than re-running blindly:
+  (1) first pass found 3 problems, all in two 2025 10-Qs
+  (`skywater-10-q-2025-05-08`, `skywater-10-q-2025-11-12`): their Item 4
+  text actually reads "the material **weakness**" (singular — SkyWater
+  had temporarily consolidated down to one reported weakness that
+  quarter), not "weaknesses" as the shared quote-building helper had
+  assumed for every quarter; fixed by making the helper take a
+  `plural` flag; (2) second pass found 1 remaining problem in
+  `skywater-10-q-2025-11-12`: the quoted text spanned across a
+  parenthetical the drafted quote had missed ("...Infineon Technologies
+  AG ("Infinion"), pursuant to which...", where "Infinion" is
+  the filing's own misspelling of "Infineon") and separately hit a PDF
+  text-extraction artifact where the opening curly quote before
+  "Spansion" is dropped by pypdf; fixed by re-quoting a nearby span of
+  the same sentence that avoids both spots, verified letter-for-letter
+  against the extracted text before re-testing; (3) third pass: **71
+  filings checked, 0 problems** — clean. `gen_filings.py` regenerated (6
+  pages, 0 problems) and `sphinx-build -W -q` re-run clean after each
+  fix. All of `check_refs.py`, `check_steps.py`, `check_machines.py`,
+  `check_materials.py`, `check_masks.py`, `check_papers.py` also re-run
+  clean at the end. Final state: 71 filings (up from 48 at the start of
+  this session), committed and pushed to `topic/index-filings`.
