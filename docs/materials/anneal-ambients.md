@@ -399,8 +399,10 @@ temperatures are not public.
     (1979). <https://doi.org/10.1149/1.2129333>
 [^deal-1980]: B. E. Deal, "Standardized terminology for oxide charges
     associated with thermally oxidized silicon", *IEEE Transactions on
-    Electron Devices* **27**(3), 606–608 (1980).
-    <https://doi.org/10.1109/T-ED.1980.19908>
+    Electron Devices* **27**(3), 606–608 (1980), DOI
+    10.1109/T-ED.1980.19908; published simultaneously in *Journal of The
+    Electrochemical Society* **127**(4), 979–981 (1980).
+    <https://doi.org/10.1109/T-ED.1980.19908>, <https://doi.org/10.1149/1.2129800>
 [^brower-1990]: K. L. Brower, "Dissociation kinetics of
     hydrogen-passivated (111) Si-SiO₂ interface defects", *Physical
     Review B* **42**(6), 3444–3453 (1990).

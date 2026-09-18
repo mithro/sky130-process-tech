@@ -538,8 +538,8 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
     <https://doi.org/10.1116/1.589258>
 [^danzl-1997]: R. B. Danzl and A. McLaurin, "The use of concentrated
     hydrogen peroxide for the removal of a TiW ARC from aluminum bond
-    pads", *Proc. 21st IEEE/CPMT International Electronics Manufacturing
-    Technology Symposium* (1997), pp. 99–104.
+    pads", *Proc. Twenty-First IEEE/CPMT International Electronics
+    Manufacturing Technology Symposium (IEMT 1997)*, pp. 99–104.
     <https://doi.org/10.1109/IEMT.1997.626884>
 [^wiki-rie]: Wikipedia, *Reactive-ion etching*.
     <https://en.wikipedia.org/wiki/Reactive-ion_etching>
