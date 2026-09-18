@@ -783,9 +783,12 @@ public.
   {ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>` and
   {ref}`CAPILD2 <step-150>`.
 * **Passivation thickness.** The stack diagram gives 0.09 µm of TOPOX
-  and 0.54 µm of TOPNIT;[^pdk-04] Cypress reports for two S8 variants at
-  the same fab give "1000A TEOS/9000A Si3N4" (S8DI) and "7000 +/- 2000A
-  Nitride" (S8TNV-5R).[^cyp-qtp-123907][^cyp-qtp-113005] Which applies to SKY130 is
+  and 0.54 µm of TOPNIT, 0.63 µm together;[^pdk-04] the two Cypress
+  reports that give both films report 1.0 µm (1000 Å TEOS plus 9000 Å
+  nitride) for the S8DI variant of S8 and, at the same fab, the 0.18 µm
+  R7FT-3R technology,[^cyp-qtp-123907][^cyp-qtp-014807] and a third
+  report gives 0.7 ± 0.2 µm of nitride with no oxide stated for the
+  S8TNV-5R variant.[^cyp-qtp-113005] Which applies to SKY130 is
   not public, and with it the thickness the pad etch must clear
   ({ref}`NTSD <step-167>`, {ref}`PDME <step-169>`); how deep the
   nitride-seal opening goes is not public either

@@ -44,7 +44,7 @@ left untouched.
 | 166-L3 | Low | fixed | hyphenation mismatch inside TSMC patent quotation (166:117-118) |
 | 166-L4 | Low | fixed | unmarked mechanical assertion about nitride closing moisture path (166:84-86) |
 | 167-M1 | Medium | fixed | Vanguard "comparable stack" — oxide 4-8x thicker than PDK value (167:132-135) |
-| 167-M2 | Medium | fixed (step page; overview cross-ref pending) | NTSD says polyimide "not public" while overview cites SkyWater S130 "Yes" (167:254-256, also body 56-63; overview cross-ref) |
+| 167-M2 | Medium | fixed | NTSD says polyimide "not public" while overview cites SkyWater S130 "Yes" (167:254-256, also body 56-63); overview already correctly cited skw-02, only NTSD needed the fix |
 | 167-L1 | Low | fixed | dual-frequency RF stress-trim practice asserted without a source that states it (167:120-122) |
 | 167-L2 | Low | fixed | 0.7-0.9 um range folds 0.18 um R7FT-3R tech into S8 range without saying so (167:129-131,242-244) |
 | 167-L3 | Low | fixed | Sinha 1978 numbers not used though on point (167:69-71,210-211) |
@@ -54,7 +54,7 @@ left untouched.
 | 168-L2 | Low | fixed (also 165-nsm.md k1 note) | k1 sentence silently uses space vs 165's feature, no note (168:56-59) |
 | 168-L3 | Low | fixed | "any rework strips resist..." unmarked inference (168:69-70) |
 | 168-L4 | Low | fixed | applied reviewer's optional strictest wording (168:35-39) |
-| 169-M1 | Medium | fixed | Open-questions passivation range mixes oxide+nitride total vs nitride-only figure (169:241-245; also overview :785-792) |
+| 169-M1 | Medium | fixed | Open-questions passivation range mixes oxide+nitride total vs nitride-only figure (169:241-245); overview cross-ref applied too (adds R7FT-3R, separates like-for-like) |
 | 169-L1 | Low | fixed | Kastenmeier/Wodecki same two caveats as 166-L1/166-L2 (169:100-102,115-118) |
 | 169-L2 | Low | fixed | "hidden and later grow during bonding" over-reads Hunter et al. (169:86-88) |
 | 169-L3 | Low | fixed | "in sequence" wording not precise re category page (169:47-49) |
