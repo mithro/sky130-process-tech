@@ -324,3 +324,30 @@ need (step-level subject data finer than the overview table gives).
   narrower patch script that only touches the newly-fetched members and
   leaves everything else byte-for-byte alone. Do not bump `FETCH_DATE`
   and rerun wholesale.
+
+## Round 3: response to the second independent review
+
+Review: `tmp/verify-index-patents-r2.md` (round 2, 2026-09-18, verdict
+"fix first — then merge"; all round-1 findings verified fixed or
+soundly declined except three new defects on the round-2 diff itself,
+N1-N3, and six further Low items, N4-N9). Every point was checked
+independently before being changed (recomputed dates and rules
+directly from the dataset, re-read the branch's own `tmp/cache/`
+fetch records) rather than taken on the review's say-so; nothing was
+declined this round — every finding held up.
+
+| ID | Finding | Status | Note |
+|---|---|---|---|
+| N1 | `by-jurisdiction.md` says "Every member publication" and calls a collapsed family's one row a "member publication" | fixed | Recomputed the actual row counts against member counts (US 413 rows vs. 520 members in the dataset) to confirm the mismatch; reworded the intro and each section's count line in `gen_by_jurisdiction()` to say what is actually listed (every member of an expired family, plus one representative row per collapsed family) and give both counts implicitly via the row count. |
+| N2 | 17 families' `expiry.basis` names the earliest-family-filing + 20 years rule when the printed date is actually priority + 21 years | fixed | Recomputed both candidates for each of the 17 governing members directly (`tmp/check17.py`): priority + 21 wins in every case, matching the printed date. Reworded each family's `basis` text to the wording already used elsewhere in the dataset for a priority + 21 governing date; verified `tools/check_patents.py` still passes (the basis still names the same member). |
+| N3 | `SE7506134L` mistyped `translation-of-granted-patent` | fixed | Checked the branch's own fetch cache: Google's `publicationDescription` for it is "Published abstract", filed 1975-05-29, before the EPC (1977) and Sweden's accession (1978) — it cannot be an EP-grant translation. Retyped `other` (round-1's own offered fallback for this ambiguous batch); recorded the reasoning in a family note. |
+| N4 | `translation-of-granted-patent`'s "no term of its own" exemption never checked that a granted patent actually exists in the family | fixed | Made the exemption in `member_end_bound()` conditional on the family containing a `granted-patent` member. No family in the current dataset changes state — the five DE T5/T9/T1 members the review named each already have their own granted-patent sibling — this only closes the gap for a future addition. |
+| N5 | Landing page says "just two more searches"; the round-1 review ran three | fixed | Confirmed against `tmp/review-index-patents-r1.md`'s own "Missing families" section (three keyword searches: "shallow trench isolation", "retrograde well", `"gate oxide" nitridation`); fixed the count. |
+| N6 | Progress table's M3 row said "36 families' dates moved (all later)" | fixed | Recomputed the diff at commit `7f820f7` directly: 19 later, 17 earlier. Fixed the row to say so and name the three JP-divisional families among the earlier moves that the M9 fix corrected again. |
+| N7 | Five family notes cite untracked `tmp/build.py`/`tmp/gp.py`; the landing page points at `docs/plans/progress-index-patents.md`, excluded from the Sphinx build | fixed | Reworded the five notes to describe the builder scripts without the unpublished path, and the landing page to describe the round-1 review without naming a path. |
+| N8 | `GP25461879`'s M9 note said `JP2008238399A` is a divisional of `JPH08500622A` (1993) as if read off the record | fixed | The cached record page's own "Related Parent Applications" table names the direct parent as `JP2006054961A` (2006-03-01, not itself a family member) instead. Reworded the note to say only what the record confirms and mark the rest as inference; the expired conclusion is unaffected either way. |
+| N9 | L2 and L11 needed the coordinator's agreement per the design doc; the round-2 fixer recorded its own confirmation instead | fixed | Reworded both notes in `patent-index-design.md` and `citation-style.md` to say plainly that they are the fixer's proposal, recorded pending the coordinator's ratification. |
+
+All six checkers, `gen_patents.py --check` and a full `-W` Sphinx build
+were rerun clean after this round's changes (see the commit history);
+`git push origin topic/index-patents` follows this table.
