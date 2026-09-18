@@ -47,6 +47,7 @@ uv run tools/check_refs.py
 uv run tools/check_papers.py
 uv run tools/check_patents.py
 uv run tools/check_filings.py
+uv run tools/check_inforce.py
 uv run tools/gen_papers.py --check
 uv run tools/gen_patents.py --check
 uv run tools/gen_filings.py --check
@@ -57,6 +58,12 @@ uv run sphinx-build -W -b html docs docs/_build/html
 `tools/gen_index_links.py` rewrites the generated "Related patents /
 papers / filings" block on every process page from the three datasets;
 `--check` fails if a page's block is missing, stale or was hand-edited.
+
+`tools/check_inforce.py` enforces the rule that a patent family which is
+not certainly expired is shown only inside a collapsed block: it fails
+if a footnote reference, a publication number or a patent title appears
+outside a `{dropdown}` on a written page, and reports collapsed notes
+kept for a family that has since expired.
 See `docs/plans/agent-briefs.md` for the full pre-merge checklist per
 kind of page.
 

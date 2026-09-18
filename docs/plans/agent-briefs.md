@@ -388,7 +388,11 @@ them. Check, and report with file and line references:
    `tools/gen_filings.py --check`, `tools/gen_index_links.py --check`
    (the generated "Related patents / papers / filings" block on every
    step, category, machine, material, mask and overview page is
-   up to date, not stale or hand-edited) and the `-W` build pass.
+   up to date, not stale or hand-edited), `tools/check_inforce.py` (no
+   footnote reference, publication number or title of a patent family
+   that is not certainly expired appears outside a collapsed
+   `{dropdown}`; footnote definitions and inventory entries carry the
+   status flag with the dataset's expiry date) and the `-W` build pass.
 
 Return a verdict (`approve`, `approve with fixes`, `reject`) and an
 itemised list of required fixes.
