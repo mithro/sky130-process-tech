@@ -78,10 +78,13 @@ The price of a lightly doped poly resistor is variability. Its
 resistance is dominated by grain-boundary barriers, so it is sensitive
 to grain size, to the exact dose and to anything that changes the trap
 density; Tsang et al. document resistance variation across banks of
-high-value poly resistors and trace it to layout and process
-edges,[^tsang-2014] and Wright et al. discuss what it takes to make
-high-sheet-resistance films with a low temperature
-coefficient.[^wright-2010] The PDK's own caution that the P− resistor
+high-value poly resistors and trace it to hydrogen diffusing through
+eroded corners of the capping nitride and the overlying
+oxide,[^tsang-2014] and Lane and Wrixon's published poly-resistor
+design space — sheet resistances from 40 to 2400 Ω/sq within a
+±500 ppm/°C temperature coefficient, for films 50–600 nm
+thick[^lane-1989] — shows how far into that space a 2000 Ω/sq target
+sits. The PDK's own caution that the P− resistor
 specifications were "TBD" until enough silicon had been
 measured[^pdk-07] is the practical face of the same physics. `URPM`
 is where the process gives this device its own, separately
@@ -206,9 +209,16 @@ reading is used throughout these pages and is marked as an inference.
 * Seto, *J. Appl. Phys.* 1975 — the model that puts 300 and
   2000 Ω/sq on different parts of the same curve.[^seto-1975]
 * Tsang et al., *IEEE TSM* 2014 — resistance variation across
-  high-value poly resistor banks.[^tsang-2014]
-* Wright et al., *J. Vac. Sci. Technol. B* 2010 — high-sheet-resistance,
-  low-TCR resistor films.[^wright-2010]
+  high-value poly resistor banks traced to hydrogen diffusion through
+  eroded LPCVD-nitride corners.[^tsang-2014]
+* Wright et al., *J. Vac. Sci. Technol. B* 2010 — rf-sputtered
+  Cr–Si–B–SiO₂/Al₂O₃ thin-film resistors reaching 20 kΩ/sq at
+  <200 ppm/°C: the non-poly route to a high-sheet-resistance, low-TCR
+  film, and the yardstick the implanted-poly resistor is measured
+  against.[^wright-2010]
+* Lane and Wrixon, *IEEE TED* 1989 — the design of thin-film poly
+  resistors for analogue ICs, and the published design space that
+  brackets the 2000 Ω/sq target.[^lane-1989]
 * Lu, Gerzberg, Lu and Meindl, *IEEE TED* 1981 — poly resistor
   optimisation.[^lu-1981]
 * Lu, Gerzberg and Meindl, *IEEE TED* 1982 — scaling limits of
@@ -306,6 +316,10 @@ reading is used throughout these pages and is marked as an inference.
     coefficient of resistance resistor films for integrated circuits",
     *Journal of Vacuum Science & Technology B* **28**(4), 834–840
     (2010). <https://doi.org/10.1116/1.3466531>
+[^lane-1989]: W. A. Lane and G. T. Wrixon, "The design of thin-film
+    polysilicon resistors for analog IC applications", *IEEE
+    Transactions on Electron Devices* **36**(4), 738–744 (1989).
+    <https://doi.org/10.1109/16.22479>
 [^lu-1981]: N. C.-C. Lu, L. Gerzberg, C.-Y. Lu and J. D. Meindl,
     "Modeling and optimization of monolithic polycrystalline silicon
     resistors", *IEEE Transactions on Electron Devices* **28**(7),

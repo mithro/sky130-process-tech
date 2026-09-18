@@ -11,14 +11,14 @@ before being fixed or declined.
 | 061-H1 | High | fixed | Confirmed m1.1/m2.1/li.1a = 0.140 µm < poly.1a 0.150 µm and difftap.1 = 0.150 µm (ties) in periphery rules cache; dropped the false "smallest drawn line" superlative, kept the CD-maps-to-gate-length point. |
 | 048-M1 | Medium | open | |
 | 048-M2 | Medium | open | |
-| 049-M1 | Medium | open | shared root cause: wright-2010 (also 053-M1, 055-M1) |
+| 049-M1 | Medium | fixed | Confirmed via OpenAlex abstract: Wright 2010 is a sputtered Cr-Si-B-SiO2/Al2O3 thin-film resistor paper, no polysilicon. Annotated Deep dive bullets on 049/053/055 correctly; replaced 053's and 055's in-text sentences. |
 | 050-M1 | Medium | open | |
 | 051-M1 | Medium | open | shared root cause: job-01/job-03 unretrievable (also 054-M1, 057-L2, 060-M-ref, 062 job-03) |
-| 052-M1 | Medium | open | shared root cause: tsang-2014 (also 055-M2, 058-L1) |
-| 053-M1 | Medium | open | = 049-M1 |
+| 052-M1 | Medium | fixed | Confirmed via OpenAlex abstract: Tsang 2014's mechanism is hydrogen diffusing through eroded LPCVD-nitride corners (a bank-position effect), not the implant-mask edge. Fixed in-text and Deep dive on 049/052/055. |
+| 053-M1 | Medium | fixed | = 049-M1 |
 | 054-M1 | Medium | open | = 051-M1 |
-| 055-M1 | Medium | open | = 049-M1 |
-| 055-M2 | Medium | open | = 052-M1 |
+| 055-M1 | Medium | fixed | = 049-M1; replaced in-text sentence with Lane & Wrixon's design space, added lane-1989 footnote. |
+| 055-M2 | Medium | fixed | = 052-M1 |
 | 057-M1 | Medium | open | shared root cause: temple-boyer-1998 (also 058-M1) |
 | 058-M1 | Medium | open | = 057-M1 |
 | 062-M1 | Medium | open | |

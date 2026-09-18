@@ -85,8 +85,11 @@ edge — so the enclosure of the resistor by `rpm` (rpm.3, 0.200 µm) and
 the ban on poly straddling `rpm` (rpm.8)[^pdk-periph] are what make R₀
 reproducible. O'Dwyer and Kennedy compared the matching of different
 poly resistor films in a CMOS process,[^odwyer-2009] and Tsang et al.
-traced resistance variation across banks of high-value poly resistors to
-exactly such edge effects.[^tsang-2014]
+show how sensitive a high-value poly resistor bank is to its
+surroundings by a different route: hydrogen diffusing through eroded
+corners of the LPCVD nitride that caps the poly passivates
+grain-boundary traps and lowers the resistance across the
+bank.[^tsang-2014]
 
 ## How it is typically performed
 
@@ -228,7 +231,8 @@ mostly chrome. Neither tone nor resist is stated publicly.
 * O'Dwyer and Kennedy, PRIME 2009 — matching of poly resistor films
   in a CMOS process.[^odwyer-2009]
 * Tsang et al., *IEEE TSM* 2014 — resistance variation across
-  high-value poly resistor banks.[^tsang-2014]
+  high-value poly resistor banks traced to hydrogen diffusion through
+  eroded LPCVD-nitride corners.[^tsang-2014]
 * Hook et al., *IEEE TED* 2003 — lateral straggle at resist edges,
   which blurs the n⁺/p boundary this mask defines.[^hook-2003]
 * Bossung, SPIE 1977 — the exposure–focus process window that every
