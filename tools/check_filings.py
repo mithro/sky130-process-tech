@@ -580,9 +580,18 @@ def check_location(quote_text: str, location: str, raw_text: str, where: str, pr
     first fragment of the quote can be found in whitespace-preserved text, compare it
     with the nearest preceding "ITEM N" heading (a table-of-contents listing is
     filtered out first; see _drop_toc_runs). Silent whenever either side is
-    unavailable -- this augments, never replaces, the verbatim check above."""
+    unavailable -- this augments, never replaces, the verbatim check above.
+
+    Abstains entirely when "ITEM 1" itself never occurs in HEADING_RE's exact form
+    anywhere in the document: some annual-report-to-shareholders PDFs render item
+    headings in a style this regex does not match at all (found on
+    cypress-annual-report-fy2002, where the whole heading list --online could find was
+    a partially-filtered table of contents, giving a confident-looking but wrong
+    "nearest heading" for a quote deep in the real Item 1 section)."""
     stated = location_item_number(location)
     if not stated:
+        return
+    if not any(m.group(1) == "1" for m in HEADING_RE.finditer(raw_text)):
         return
     first_fragment = re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote_text)[0].strip()
     if not first_fragment:
