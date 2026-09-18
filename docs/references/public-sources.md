@@ -1083,7 +1083,7 @@ Also used on the ONOM mask page.
 multiple oxynitride layers"*, S. Levy, K. Ramkumar, F. Jenne, S. Geha;
 filed 2007-06-13, published 2009-07-16.
 <https://patents.google.com/patent/US20090179253A1/en>. Tunnel oxide
-"from about 15 Å to about 22 Å", multi-layer charge-trapping layer
+"from about 15 angstrom (Å) to about 22 Å", multi-layer charge-trapping layer
 "about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å";
 LPCVD at 700–850 °C, 5–500 mTorr, N₂O/NH₃ and DCS/NH₃ gas ratios.
 Tier: deep dive.
