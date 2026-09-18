@@ -135,7 +135,9 @@ fab (SKY130's recipe is not public):
    {ref}`GOX100 <step-043>` for why the later pre-clean is
    "substantially free of HF".[^pat-03]) The choice
    matters for a tunnel oxide of the 1.0–3.0 nm class of
-   US 8,796,098[^pat-04] (US 2009/0179253 gives 15–22 Å[^pat-02]): the
+   US 8,796,098's thermal oxidation embodiment (1.0–4.0 nm for its
+   radical oxidation)[^pat-04] (US 2009/0179253 gives
+   15–22 Å[^pat-02]): the
    Cypress patents describe SC-1 at "50 to 80° C.
    for about 10 minutes" and SC-2 as "a 1:1:10 solution of HCl, H₂O₂ and
    H₂O at about 50 to 80° C.",[^pat-04] and one of them replaces SC-1

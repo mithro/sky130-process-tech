@@ -1121,7 +1121,8 @@ Also used on the TUNM, ONOM and LVOM mask pages.
 K. Ramkumar, I. Kouznetsov, V. Prabhakar (Cypress); filed 2013-09-04,
 granted 2014-08-05.
 <https://patents.google.com/patent/US8796098B1/en>. Pad oxide 10–20 nm,
-tunnel dielectric 1.0–4.0 nm, oxynitride charge-trapping layers
+tunnel dielectric 1.0–3.0 nm (thermal) or 1.0–4.0 nm (radical
+oxidation), oxynitride charge-trapping layers
 2.0–5.0 nm, blocking oxide ~3–4.5 nm, HV gate oxide 5–7 nm, LV gate
 oxide 1–3 nm, indium channel doping.
 Also used on the wet bench page. Tier: deep dive.
