@@ -26,9 +26,11 @@ lighter than the 1.8 V tip (of order 10¹³ cm⁻², typical of an
 {term}`LDD`,[^txt-04] against 10¹⁴–10¹⁵ cm⁻²). The
 {term}`crust <implant crust>` is correspondingly thinner and the strip easier.
 On the other hand the ions arrived at 40°,[^pdk-03] so the resist sidewalls
-facing the beam have been implanted along their whole height, and the PDK's
-0.02 µm "Photoresist tilted implant penetration"[^pdk-03] means the resist
-edges have been damaged through. The surface under the resist is, we infer, the
+facing the beam have been implanted along their whole height, and
+we read the PDK's 0.02 µm "Photoresist tilted implant
+penetration"[^pdk-03] as saying the ions reach 0.02 µm into the resist
+edge, so the edges are implanted through their whole depth (inference).
+The surface under the resist is, we infer, the
 {term}`screen oxide` from {ref}`IOX45 <step-063>` over silicon and poly, which
 must survive once more for {ref}`LDASTI <step-072>`.
 

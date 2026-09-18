@@ -59,7 +59,10 @@ next to it. The PDK's {term}`e-test` parameters describe it at drawn W/L
 0.45/0.22 µm and 0.35/0.15 µm, for "both original and star cells" (the
 PDK does not say which is which; see {ref}`PTSI <step-037>`); its
 programme and erase conditions apply +6.7 V to the {term}`control gate` with
-−3.8 V on source, drain and body, and −3.8 V on the gate with +6.7 V on
+−3.8 V on source, drain and body (the PDK's table prints the source
+voltage as "-38"; we read it as −3.8 V, the value in the other three
+cells and the only one consistent with the page's junction limits), and
+−3.8 V on the gate with +6.7 V on
 the other three terminals; and it must keep its window over 100 000
 cycles.[^pdk-07] Three consequences follow for its source/drain
 {term}`extensions <extension>`:
@@ -237,8 +240,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   Messages page requires `ldntm` to enclose an "nFet" by 0.125
   (`ldntm.c4`) without naming the device,[^pdk-errors] and Table F2b of
   the *Layers Reference* marks `LDNTM` as created for both "Flash npass"
-  rows and both `nmos_core NV` rows as well as the SONOS
-  rows;[^pdk-06] on our reading these may include the select
+  rows, both `nmos_core NV` rows, the four SONOS rows and the "NV SONOS
+  Diode";[^pdk-06] on our reading these may include the select
   transistor, but neither source says so.
 * The resist thickness and the tilt at which the lightly doped tip is
   implanted are inferred; the PDK publishes no `LDNTM` shadowing
