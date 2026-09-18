@@ -46,10 +46,11 @@ this step.
 
 `GOXETCH` is an {ref}`Etch <category-etch>` step of the *wet oxide
 etch* type, like {ref}`TUNME <step-039>` and
-{ref}`SACETCH <step-095>`. The category page states the rule that
-governs it: dilute HF "is the tool for stripping the thick gate oxide
-from the low-voltage active areas … because a plasma would damage the
-exposed silicon". It is the most consequential wet etch in the flow,
+{ref}`SACETCH <step-095>`. The category page gives the reasoning and
+marks it as a reading: dilute HF "is the natural tool for, and we
+infer is used at, stripping the thick gate oxide from the low-voltage
+active areas … because a plasma would damage the exposed silicon"
+({ref}`category-etch`). It is the most consequential wet etch in the flow,
 because the silicon it exposes becomes the channel of every 1.8 V
 transistor and the oxide edge it leaves becomes the boundary between
 the two gate oxides.
@@ -86,7 +87,9 @@ Without `GOXETCH` all transistors would carry the thick oxide and the
 An industry-generic thick-oxide strip for a dual-gate-oxide process
 in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
-1. **Wet etch with resist.** Dilute HF (typically 50:1 to 200:1) or
+1. **Wet etch with resist.** Dilute HF — the Cypress patent names "a
+   50:1 hydrofluoric (HF) wet etch" alongside 10:1 and 20:1
+   BOE[^pat-04] — or
    surfactant-containing BOE in a wet bench or single-wafer spray
    tool. Rate control is the issue: 6:1 BOE etches thermal oxide at
    "approximately 2 nanometres per second at 25 degrees
