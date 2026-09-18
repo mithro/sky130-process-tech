@@ -50,7 +50,7 @@ left untouched.
 | 167-L3 | Low | fixed | Sinha 1978 numbers not used though on point (167:69-71,210-211) |
 | 167-L4 | Low | fixed | "only processing left" overlooks strip folded into PDME (167:20-23) |
 | 168-M1 | Medium | fixed | "same GDS layer number (76:44) as pad" mis-states pad's own layer (168:95-96) |
-| 168-L1 | Low | fixed | areaid.mt rule quoted without its test-chip waiver (168:89-90; also 171:48-50) |
+| 168-L1 | Low | fixed | areaid.mt rule quoted without its test-chip waiver — fixed on both 168 and 171 |
 | 168-L2 | Low | fixed (also 165-nsm.md k1 note) | k1 sentence silently uses space vs 165's feature, no note (168:56-59) |
 | 168-L3 | Low | fixed | "any rework strips resist..." unmarked inference (168:69-70) |
 | 168-L4 | Low | fixed | applied reviewer's optional strictest wording (168:35-39) |
@@ -66,13 +66,13 @@ left untouched.
 | 170-L3 | Low | fixed | folded into 170-M2 fix |
 | 170-L4 | Low | declined | reviewer: no change required, recorded only for contrast with 164-M1 |
 | (n/a) | n/a | deferred | metal-cap sweep — 170-ally.md:57-58 "interfaces between aluminium, TiW and tungsten" unhedged; DO NOT EDIT (scope exclusion, cross-page conflict 6) |
-| 171-L1 | Low | open | truncated SONOS e-test quotation ("for both original and star cells" dropped) (171:41-42) |
-| 171-L2 | Low | open | "two copies" quotation footnoted to wrong README (171:59-65) |
-| 171-L3 | Low | open | README title quoted short (171:63-64) |
-| 171-L4 | Low | open | single 7/0.15um structure quoted where two exist, differ 0.012V (171:205-206) |
-| 171-L5 | Low | open | notebook quotations footnoted to directory listing, not specific file (171:385-389) |
-| 171-L6 | Low | open | Group-code list omits stray `3791956` value (171:382-383) |
-| 171-L7 | Low | open | "four Die Row groups" passes over 2 blank rows (271 of 273 assigned) (171:66-67) |
+| 171-L1 | Low | fixed | truncated SONOS e-test quotation ("for both original and star cells" dropped) (171:41-42) |
+| 171-L2 | Low | fixed | "two copies" quotation footnoted to wrong README (171:59-65) |
+| 171-L3 | Low | fixed | README title quoted short (171:63-64) |
+| 171-L4 | Low | fixed | single 7/0.15um structure quoted where two exist, differ 0.012V (171:205-206) |
+| 171-L5 | Low | fixed | notebook quotations footnoted to directory listing, not specific file (171:385-389) |
+| 171-L6 | Low | fixed | Group-code list omits stray `3791956` value (171:382-383) |
+| 171-L7 | Low | fixed | "four Die Row groups" passes over 2 blank rows (271 of 273 assigned) (171:66-67) |
 
 ## Checks
 
