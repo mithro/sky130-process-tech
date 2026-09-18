@@ -15,7 +15,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 086-M1 | Medium | fixed | Independently re-fit the raw .mdm sweep (least-squares, through-origin and endpoint methods, all agreeing to <0.01%): 3071.18 ohm / 25.06 sq = 122.55 ohm/sq (file matches text) and 3015.65 ohm / 25.0 sq = 120.63 ohm/sq, not 120.7. Fixed "120.7" to "120.6" on 086-nsdi.md; grepped docs/ for the figure, no other occurrence. |
 | 076-L1 | Low | fixed | Confirmed via Crossref (10.1149/1.1690294): no abstract available (IOP paywalled/bot-checked as the review found), title confirms only "Low-Temperature ... LPCVD"; no explicit temperature number. Labelled the 550-600 C range as a typical industry value per the review's proposed wording. |
 | 076-L2 | Low | fixed | Confirmed docs/categories/deposition.md gives 250-400 C with wiki-pecvd for PECVD; smith-1990/claassen-1985 have no Crossref abstracts to support 300-400 C. Matched the category page's range and citation. |
-| 077-L1 | Low | open | |
+| 077-L1 | Low | fixed | Confirmed both DOIs (10.1116/1.580203, 10.1116/1.582097, checked for 079-H1) are downstream/remote-plasma studies, cited inside a bullet describing the ion-driven RIE main etch. Added the review's parenthetical clarifying they describe the chemistry, not the RIE tool used here. |
 | 079-L1 | Low | open | |
 | 080-L1 | Low | open | |
 | 080-L2 | Low | open | |
