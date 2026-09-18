@@ -30,8 +30,10 @@ Tungsten" with the sub-bullets "plug fill" and "PNL option for high
 aspect ratio (up to 10:1)" among its deposition tools,[^skw-01] and
 "W plug dual damascene" among its special
 modules.[^skw-01] The PDK describes `licon1` as the "Contact to local
-interconnect"[^pdk-06] with a 15 000 mΩ per-contact
-resistance,[^pdk-08] and its physical criteria give a "min. etch and
+interconnect"[^pdk-06]; its extraction tables list the LICON contact
+at 15 000 in a column headed "Resistivity (mohms/sq)", which we read
+as 15 Ω per contact, since a contact has no sheet
+dimension[^pdk-08] (our reading), and its physical criteria give a "min. etch and
 fill capability" of 0.15 µm for licon.[^pdk-03] This reference uses
 the same blanket-fill-and-polish scheme at every level: `WDEP` here
 and {ref}`WDEP2 <step-110>` to {ref}`WDEP5 <step-147>` at the contact

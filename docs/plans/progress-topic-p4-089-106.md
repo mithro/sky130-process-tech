@@ -15,7 +15,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 089-M1 | Medium | fixed | Confirmed pdk-assumptions.txt: oxide spacer (SpThickn) = 0.05 um, poly 0.18 um + cap 0.2 um = 0.38 um capped gate. 0.38 minus two 0.05 um spacers leaves ~0.28 um narrowed gap against 0.21 um poly.2 pitch -- narrowed aspect ratio is well above 2:1, not "approaches 2:1". Reworded per review's required fix. |
 | 092-M1 | Medium | fixed | Confirmed ag-8108.txt: the AG Associates Heatpulse 8800 spec section (line 257-258) gives 100/150 C per second, not the 1-180 C/s the page attributed to the 8800; that figure is the 8108's (line 129). Reported both documents' figures per the brief's disagreement rule. Same fix applied to 098 (098-L3). |
 | 092-M2 | Medium | fixed | 700-800C/tens-of-minutes furnace densification carried no citation; attached [^txt-02] (Wolf & Tauber, already used on the page for the same topic at line 58/232) as a typical-value reference. |
-| 093-M1 | Medium | open | |
+| 093-M1 | Medium | fixed | Confirmed pdk-periphery.txt via.1a = 0.150 um (drawn smaller than licon1's 0.17 um), and 107-ctm1.md's 0.09 um mcon bottom CD vs licon's 0.08 um. Reworded the superlative to be about the etched bottom, not the drawn feature. |
 | 094-M1 | Medium | open | |
 | 094-M2 | Medium | open | |
 | 096-M1 | Medium | open | |
@@ -27,8 +27,8 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 091-L1 | Low | open | |
 | 091-L2 | Low | open | duplicate of 105-L1 |
 | 092-L1 | Low | fixed | Confirmed ag-8800.txt lines 44-48 list "Glass re-flow" alongside "Implant annealing" and "Silicide formation and annealing" among the 8800's applications; added "Glass re-flow" to the quoted list. |
-| 093-L1 | Low | open | |
-| 093-L2 | Low | open | |
+| 093-L1 | Low | fixed | Confirmed pdk-periphery.txt:1409-1411 continues the licon.16 quotation with ", including the diff/tap straddling areaid:ce. Rule exempted inside UHVI."; added the elision marker. |
+| 093-L2 | Low | fixed | Confirmed pdk-rcx.txt Table 91 heads its column "Resistivity (mohms/sq)"; reworded the 15 Ohm/contact reading as an explicit reading of that column on 093, 098 and 099. |
 | 094-L1 | Low | open | recorded as no-op pending 094-M2 fix |
 | 095-L1 | Low | open | |
 | 095-L2 | Low | open | |
