@@ -46,6 +46,7 @@ a handful of records are grouped by that date rather than a true filing date.
 * D-Wave Quantum Inc., 10-K, filed 2024-03-29: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-d-wave-10-k-2024-03-29>`)
 * SkyWater Technology, Inc., DEF 14A, filed 2024-04-10: Definitive proxy statement for the 2024 annual meeting of stockholders ({ref}`full entry <filing-skywater-def-14a-2024-04-10>`)
 * SkyWater Technology, Inc., 10-Q, filed 2024-05-10: Quarterly report on Form 10-Q for the quarter ended 2024-03-31 ({ref}`full entry <filing-skywater-10-q-2024-05-10>`)
+* SkyWater Technology, Inc., 8-K, filed 2024-06-26: Current report, item 4.01: change in independent registered public accounting firm ({ref}`full entry <filing-skywater-8-k-2024-06-26>`)
 * SkyWater Technology, Inc., 10-Q, filed 2024-08-07: Quarterly report on Form 10-Q for the quarter ended 2024-06-30 ({ref}`full entry <filing-skywater-10-q-2024-08-07>`)
 * Weebit Nano Limited, Appendix 4E and Annual Report, filed 2024-08-28: Appendix 4E and 2024 Annual Report for the year ended 30 June 2024 ({ref}`full entry <filing-weebit-nano-annual-report-fy2024>`)
 * SkyWater Technology, Inc., 10-Q, filed 2024-11-07: Quarterly report on Form 10-Q for the quarter ended 2024-09-29 ({ref}`full entry <filing-skywater-10-q-2024-11-07>`)
@@ -75,6 +76,7 @@ a handful of records are grouped by that date rather than a true filing date.
 * SkyWater Technology, Inc., DEF 14A, filed 2022-04-19: Definitive proxy statement for the 2022 annual meeting of stockholders ({ref}`full entry <filing-skywater-def-14a-2022-04-19>`)
 * SkyWater Technology, Inc., 10-Q, filed 2022-05-18: Quarterly report on Form 10-Q for the quarter ended 2022-04-03 ({ref}`full entry <filing-skywater-10-q-2022-05-18>`)
 * SkyWater Technology, Inc., 10-Q, filed 2022-08-17: Quarterly report on Form 10-Q for the quarter ended 2022-07-03 ({ref}`full entry <filing-skywater-10-q-2022-08-17>`)
+* Weebit Nano Limited, Appendix 4E and Annual Report, filed 2022-08-25: Appendix 4E and Annual Report for the year ended 30 June 2022 ({ref}`full entry <filing-weebit-nano-annual-report-fy2022>`)
 * SkyWater Technology, Inc., 10-Q, filed 2022-11-10: Quarterly report on Form 10-Q for the quarter ended 2022-10-02 ({ref}`full entry <filing-skywater-10-q-2022-11-10>`)
 * Infineon Technologies AG, Annual Report, filed 2022-11-25: Infineon Technologies Annual Report 2022 ({ref}`full entry <filing-infineon-annual-report-fy2022>`)
 

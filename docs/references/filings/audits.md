@@ -41,6 +41,7 @@ filing's own entry for that.
 | {ref}`SkyWater Technology, Inc., 2021-04-12 <filing-skywater-s-1-a-2021-04-12>` | Deloitte & Touche LLP | consolidated financial statements of CMI Acquisition, LLC and subsidiaries, fiscal years 2019 and 2020 | 2021-03-22 |
 | {ref}`Infineon Technologies AG, 2021-11-25 <filing-infineon-annual-report-fy2021>` | KPMG AG Wirtschaftsprüfungsgesellschaft | separate and consolidated financial statements of Infineon Technologies AG, fiscal year 2021 | 2021-11-25 |
 | {ref}`SkyWater Technology, Inc., 2022-03-10 <filing-skywater-10-k-2022-03-10>` | Deloitte & Touche LLP | consolidated financial statements of SkyWater Technology, Inc., fiscal year 2021 | 2022-03-09 |
+| {ref}`Weebit Nano Limited, 2022-08-25 <filing-weebit-nano-annual-report-fy2022>` | Nexia Perth Audit Services Pty Ltd | financial report of Weebit Nano Limited, fiscal year 2022 | 2022-08-25 |
 | {ref}`Infineon Technologies AG, 2022-11-25 <filing-infineon-annual-report-fy2022>` | KPMG AG Wirtschaftsprüfungsgesellschaft | separate and consolidated financial statements of Infineon Technologies AG, fiscal year 2022 | 2022-11-25 |
 | {ref}`SkyWater Technology, Inc., 2023-03-15 <filing-skywater-10-k-2023-03-15>` | Deloitte & Touche LLP | consolidated financial statements of SkyWater Technology, Inc., fiscal year 2022 | 2023-03-14 |
 | {ref}`D-Wave Quantum Inc., 2023-04-18 <filing-d-wave-10-k-2023-04-18>` | PricewaterhouseCoopers LLP | consolidated financial statements of D-Wave Quantum Inc., fiscal year 2022 | 2023-04-18 |

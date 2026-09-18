@@ -2587,6 +2587,72 @@ filings:
     (ir.skywatertechnology.com/feed/SECFiling.svc/GetEdgarFilingList), which
     lists every EDGAR filing with a PDF copy hosted off sec.gov.
   verified: 2026-09-18 investor-relations PDF copy fetched; quotes checked
+- id: weebit-nano-annual-report-fy2022
+  company: Weebit Nano Limited
+  company_key: weebit-nano
+  form: Appendix 4E and Annual Report
+  document_type: annual-report
+  parent: null
+  title: Appendix 4E and Annual Report for the year ended 30 June 2022
+  period:
+    label: financial year ended 30 June 2022
+    start: 2021-07-01
+    end: 2022-06-30
+  filed: 2022-08-25
+  jurisdiction: AU
+  regulator: ASX
+  identifier: null
+  urls:
+    original: https://www.annualreports.com/HostedData/AnnualReportArchive/w/ASX_WBT_2022.pdf
+    wayback: null
+    ir: https://www.annualreports.com/HostedData/AnnualReportArchive/w/ASX_WBT_2022.pdf
+  about:
+    summary: >-
+      Weebit Nano's FY2022 annual report, the first to cover the September
+      2021 SkyWater licensing deal for a full financial year: it recaps the
+      original commercial agreement and reports completing, within FY2022,
+      the technology transfer and first demo-chip tape-out at SkyWater's
+      production fab, ahead of the qualification the FY2023 report later
+      confirms.
+    quotes:
+    - text: >-
+        In September 2021, Weebit secured its first commercial deal with
+        US-based semiconductor foundry SkyWater Technology Inc to take its
+        technology to volume production.
+      location: First commercial deal with SkyWater Technology
+    - text: >-
+        Towards the end of FY22, Weebit Nano successfully completed the
+        transfer of its technology to SkyWater's US production fab,
+        taping-out (releasing to manufacturing) demonstration (demo) chips
+        integrating its embedded ReRAM module.
+      location: Completed technology transfer
+  auditor_report:
+    firm: Nexia Perth Audit Services Pty Ltd
+    subject: financial report of Weebit Nano Limited, fiscal year 2022
+    date: 2022-08-25
+    quote: Nexia Perth Audit Services Pty Ltd
+  relationships:
+  - partner-names-skywater
+  related_docs:
+  - label: overview-sky130b-reram
+    relation: context
+    reason: The report is the company's own account, for the year the licensing agreement was signed, of the technology transfer and tape-out that preceded the ReRAM qualification the page discusses.
+  inventory_key: null
+  discovery:
+  - web-search
+  - annualreports-com
+  discovery_note: >-
+    Found by web search for the company on annualreports.com, whose Weebit
+    company page lists ASX_WBT_2019.pdf through ASX_WBT_2024.pdf; fetched
+    directly (design's usual annualreports.com pattern for a company not
+    itself in that archive's search index).
+  verified: 2026-09-19 annualreports.com PDF fetched; quotes checked
+  notes: >-
+    filed is the date printed on both the directors' report and the
+    auditor's report (25 August 2022, Melbourne/Perth); the actual ASX
+    lodgement date was not independently confirmed (cf. fy2023's, taken
+    from the investor-relations announcement archive post date, which is
+    one day after its own document dates).
 - id: skywater-10-q-2022-11-10
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -3545,6 +3611,65 @@ filings:
     (ir.skywatertechnology.com/feed/SECFiling.svc/GetEdgarFilingList), which
     lists every EDGAR filing with a PDF copy hosted off sec.gov.
   verified: 2026-09-18 investor-relations PDF copy fetched; quotes checked
+- id: skywater-8-k-2024-06-26
+  company: SkyWater Technology, Inc.
+  company_key: skywater
+  form: 8-K
+  document_type: current-report
+  parent: null
+  title: 'Current report, item 4.01: change in independent registered public accounting firm'
+  period:
+    label: event of 2024-06-21
+    start: null
+    end: 2024-06-21
+  filed: 2024-06-26
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001819974-24-000022
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/1819974/000181997424000022/skyt-20240621.htm
+    wayback: https://web.archive.org/web/20250506203513/https://www.sec.gov/Archives/edgar/data/1819974/000181997424000022/skyt-20240621.htm
+    ir: null
+  about:
+    summary: >-
+      SkyWater's own primary record of the auditor change the 2026 DEF 14A
+      later summarised (KPMG replacing Deloitte & Touche): on 2024-06-21 the
+      audit committee dismissed Deloitte and engaged KPMG, effective the
+      same date, for the fiscal year ending 2024-12-29; the filing also
+      states that the Control Activities material weakness (including the
+      revenue-accounting-process weakness) was not remediated as of the
+      dismissal date.
+    quotes:
+    - text: >-
+        the Company selected KPMG LLP ("KPMG") to serve as the Company's new
+        independent registered public accounting firm, effective as of such
+        date, and notified Deloitte & Touche LLP ("Deloitte") of its
+        dismissal
+      location: Item 4.01
+    - text: >-
+        the material weakness in the Control Activities component of the
+        COSO framework, including the revenue accounting process material
+        weakness, was not remediated as of the date of dismissal
+      location: Item 4.01
+  auditor_report: null
+  relationships:
+  - skywater-governance
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on.
+  inventory_key: null
+  discovery:
+  - web-search
+  - wayback-cdx
+  discovery_note: >-
+    Found by web searching the auditor-change fact (already known from the
+    2026 DEF 14A) for its own 8-K; a Wayback CDX listing of the EDGAR
+    folder (sec.gov/Archives/edgar/data/1819974/000181997424000022/) has a
+    capture of the primary document.
+  verified: 2026-09-19 Wayback copy fetched; quotes checked
 - id: skywater-10-q-2024-08-07
   company: SkyWater Technology, Inc.
   company_key: skywater
