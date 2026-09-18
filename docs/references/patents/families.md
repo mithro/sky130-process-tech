@@ -7880,6 +7880,51 @@ families and members are counted.
 **Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11342429B2/en
 :::
 
+:::{dropdown} US 11,183,509 B2 — shown as in force; estimated expiry 2034-01-30
+:name: patent-gp51221986
+
+**Title:** Non-volatile memory with silicided bit line contacts
+
+**Assignees:** original Cypress Semiconductor Corp; current Infineon Technologies LLC
+
+**Inventors:** Ching-Huang Lu; Simon Siu-Sing Chan; Hidehiko Shiraiwa; Lei Xue
+
+**Dates:** priority 2013-01-30, filing 2020-06-18, grant 2021-11-23
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US11183509B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2034-01-30 — the latest recorded or estimated term among all members belongs to US20200411537A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2034-01-30
+
+**Google Patents family ID:** `51221986` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 11,183,509 B2 | granted patent | 2021-11-23 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11183509B2) · [Google Patents](https://patents.google.com/patent/US11183509B2/en) |
+| US 8,866,213 B2 "Non-Volatile memory with silicided bit line contacts" | granted patent | 2014-10-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8866213B2) · [Google Patents](https://patents.google.com/patent/US8866213B2/en) |
+| US 9,252,154 B2 | granted patent | 2016-02-02 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9252154B2) · [Google Patents](https://patents.google.com/patent/US9252154B2/en) |
+| US 9,666,591 B2 | granted patent | 2017-05-30 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9666591B2) · [Google Patents](https://patents.google.com/patent/US9666591B2/en) |
+| US 10,692,877 B2 | granted patent | 2020-06-23 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10692877B2) · [Google Patents](https://patents.google.com/patent/US10692877B2/en) |
+| US 2020/0411537 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2020-12-31 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200411537A1) · [Google Patents](https://patents.google.com/patent/US20200411537A1/en) |
+| US 2016/0211271 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2016-07-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160211271A1) · [Google Patents](https://patents.google.com/patent/US20160211271A1/en) |
+| US 2017/0250192 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2017-08-31 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170250192A1) · [Google Patents](https://patents.google.com/patent/US20170250192A1/en) |
+| US 2014/0209993 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2014-07-31 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140209993A1) · [Google Patents](https://patents.google.com/patent/US20140209993A1/en) |
+| WO 2014120921 A1 | international application | 2014-08-07 | not shown | 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2014120921A1) · [Google Patents](https://patents.google.com/patent/WO2014120921A1/en) |
+| EP 2 951 862 A1 | application | 2015-12-09 | not shown | 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP2951862A1) · [Google Patents](https://patents.google.com/patent/EP2951862A1/en) |
+| EP 2 951 862 B1 | granted patent | 2026-02-25 | not shown | 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP2951862B1) · [Google Patents](https://patents.google.com/patent/EP2951862B1/en) |
+| EP 2 951 862 A4 | application | 2017-03-15 | not shown | 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP2951862A4) · [Google Patents](https://patents.google.com/patent/EP2951862A4/en) |
+| US 2015/0017795 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2015-01-15 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150017795A1) · [Google Patents](https://patents.google.com/patent/US20150017795A1/en) |
+
+**Relevance:**
+
+* {ref}`step-098` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming a silicide on a memory cell's bit-line contact, a salicide-module technique, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search (xhr/query), assignee "Cypress Semiconductor", query "salicide" (498 hits, first page examined), retrieved 2026-09-19; this is the salicide-module search the progress log listed as outstanding (H1).
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11183509B2/en
+:::
+
 :::{dropdown} US 8,796,098 B1 — shown as in force; estimated expiry 2034-02-26
 :name: patent-gp51229009
 
@@ -8685,6 +8730,41 @@ families and members are counted.
 **Discovery:** citing-seed — cites US9824895B1 (Google Patents citation tables).
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US12232324B2/en
+:::
+
+:::{dropdown} US 2025/0031586 A1 — legal status shown as Pending; expiry not fully bounded from the records retrieved, estimated no later than 2044-07-21
+:name: patent-gp94259596
+
+**Title:** Carbon film integrated into a back end of line process
+
+**Assignees:** original SkyWater Technology Foundry Inc; current SkyWater Technology Foundry Inc
+
+**Inventors:** II Peter N. Manos; Vahid Gholizadeh; Philip Thompson; Mark Nelson; Jeremy Warren
+
+**Dates:** priority 2023-07-21, filing 2023-07-21
+
+**Legal status (representative):** Pending (Google Patents (IFI Claims) status of US20250031586A1, retrieved 2026-09-19)
+
+**Estimated expiry:** 2044-07-21 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US20250031586A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2044-07-21
+
+**Google Patents family ID:** `94259596` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 2025/0031586 A1 | application | 2025-01-23 | Pending | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250031586A1) · [Google Patents](https://patents.google.com/patent/US20250031586A1/en) |
+
+**Relevance:**
+
+* {ref}`category-deposition` — *same-lineage assignee*: Original and current assignee SkyWater Technology Foundry Inc, the company that operates the fab this documentation covers; the application does not identify which process platform or node it applies to, and its 2023 filing date is well after SKY130's own introduction, so it is not evidence that SKY130 uses a carbon film in its back-end-of-line, nor that this technique belongs to the 130 nm/90 nm CMOS flow at all -- it is recorded here as the one SkyWater-assigned family this search found, described honestly as unconfirmed for SKY130.
+
+**Discovery:** assignee-search — Google Patents search (xhr/query), assignee "SkyWater Technology" (1 hit) and the broader assignee "SkyWater" (3 hits: this family, a Skywater Japan LLC plumbing/circulation-system patent, and an unrelated Merritt Thomas D potable-water patent -- both false positives on the word "Skywater", not SkyWater Technology Foundry, and not added), retrieved 2026-09-19. This is the search H1 explicitly asked for ("the index contains zero SkyWater Technology patents"); it found exactly one, filed 2023-07-21, a foundry-process application whose platform is not stated.
+
+**Notes:**
+* This publication does not name SKY130 or a node/platform; it is included as the search result H1 called for, not as evidence that SkyWater practises the technique in SKY130.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US20250031586A1/en
 :::
 
 :::{dropdown} KR 20250094623 A — shown as in force; estimated expiry 2044-12-18

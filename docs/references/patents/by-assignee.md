@@ -55,6 +55,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
+* {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
@@ -64,6 +65,10 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
+
+## SkyWater Technology Foundry Inc
+
+* {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
 
 ## Infineon Technologies AG (now Polaris Innovations Ltd)
 

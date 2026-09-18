@@ -228,6 +228,7 @@ first, and then by status.
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
+* {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
 * {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
@@ -250,6 +251,7 @@ first, and then by status.
 ## 2020s
 
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
+* {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
 * {ref}`KR 20250094623 A <patent-gp90721530>` — in force
 
 ## By status
@@ -464,6 +466,7 @@ first, and then by status.
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
+* {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
 * {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
@@ -487,3 +490,4 @@ first, and then by status.
 
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
+* {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown

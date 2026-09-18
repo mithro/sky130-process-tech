@@ -2722,6 +2722,70 @@ families:
   discovery_note: Google Patents search, assignee Infineon Technologies, query (SONOS multi-level memory), retrieved 2026-09-19;
     named by the round-1 review. Same Ramkumar-led inventor team already seen on GP40072804.
   verified: 2026-09-19 Google Patents record page https://patents.google.com/patent/US11810616B2/en
+- id: GP94259596
+  family:
+    source: Google Patents family ID
+    google_family_id: '94259596'
+  representative: US20250031586A1
+  title: Carbon film integrated into a back end of line process
+  assignees:
+    original:
+    - SkyWater Technology Foundry Inc
+    current:
+    - SkyWater Technology Foundry Inc
+  inventors:
+  - II Peter N. Manos
+  - Vahid Gholizadeh
+  - Philip Thompson
+  - Mark Nelson
+  - Jeremy Warren
+  dates:
+    priority: '2023-07-21'
+    filing: '2023-07-21'
+    grant: null
+  legal_status:
+    status: Pending
+    source: Google Patents (IFI Claims) status of US20250031586A1, retrieved 2026-09-19
+  expiry:
+    date: '2044-07-21'
+    estimated: true
+    basis: 'not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US20250031586A1
+      (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2044-07-21'
+  expired: unknown
+  members:
+  - number: US20250031586A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: '2025-01-23'
+    title: Carbon film integrated into a back end of line process
+    application_number: US18/224,998
+    filing_date: '2023-07-21'
+    status: Pending
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250031586A1
+      google_patents: https://patents.google.com/patent/US20250031586A1/en
+    verified: 2026-09-19 Google Patents record page fetched
+  relevance:
+  - target: category-deposition
+    relation: same-lineage-assignee
+    reason: Original and current assignee SkyWater Technology Foundry Inc, the company that operates the fab this documentation
+      covers; the application does not identify which process platform or node it applies to, and its 2023 filing date is
+      well after SKY130's own introduction, so it is not evidence that SKY130 uses a carbon film in its back-end-of-line,
+      nor that this technique belongs to the 130 nm/90 nm CMOS flow at all -- it is recorded here as the one SkyWater-assigned
+      family this search found, described honestly as unconfirmed for SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: 'Google Patents search (xhr/query), assignee "SkyWater Technology" (1 hit) and the broader assignee "SkyWater"
+    (3 hits: this family, a Skywater Japan LLC plumbing/circulation-system patent, and an unrelated Merritt Thomas D potable-water
+    patent -- both false positives on the word "Skywater", not SkyWater Technology Foundry, and not added), retrieved 2026-09-19.
+    This is the search H1 explicitly asked for ("the index contains zero SkyWater Technology patents"); it found exactly
+    one, filed 2023-07-21, a foundry-process application whose platform is not stated.'
+  notes:
+  - This publication does not name SKY130 or a node/platform; it is included as the search result H1 called for, not as
+    evidence that SkyWater practises the technique in SKY130.
+  verified: 2026-09-19 Google Patents record page https://patents.google.com/patent/US20250031586A1/en
 - id: GP23847630
   family:
     source: Google Patents family ID
@@ -30650,6 +30714,238 @@ families:
     them directly. If accurate, this family''s reinstatement window has already closed before this note''s
     date. A US patent lapsed for fees can be reinstated within such a window; see the legal caveat on
     the landing page.'
+- id: GP51221986
+  family:
+    source: Google Patents family ID
+    google_family_id: '51221986'
+  representative: US11183509B2
+  title: Non-volatile memory with silicided bit line contacts
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Infineon Technologies LLC
+  inventors:
+  - Ching-Huang Lu
+  - Simon Siu-Sing Chan
+  - Hidehiko Shiraiwa
+  - Lei Xue
+  dates:
+    priority: '2013-01-30'
+    filing: '2020-06-18'
+    grant: '2021-11-23'
+  legal_status:
+    status: Active
+    source: Google Patents (IFI Claims) status of US11183509B2, retrieved 2026-09-19
+  expiry:
+    date: '2034-01-30'
+    estimated: true
+    basis: 'the latest recorded or estimated term among all members belongs to US20200411537A1 (estimated upper bound: earliest
+      priority date + 21 years (12-month priority period + 20-year term)), running to 2034-01-30'
+  expired: false
+  members:
+  - number: US11183509B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: '2021-11-23'
+    title: Non-volatile memory with silicided bit line contacts
+    application_number: US16/905,044
+    filing_date: '2020-06-18'
+    status: Active
+    expiry:
+      date: '2033-01-30'
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS11183509B2
+      google_patents: https://patents.google.com/patent/US11183509B2/en
+    verified: 2026-09-19 Google Patents record page fetched
+  - number: US8866213B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: '2014-10-21'
+    title: Non-Volatile memory with silicided bit line contacts
+    application_number: US13/753,676
+    filing_date: '2013-01-30'
+    status: Active
+    expiry:
+      date: '2033-01-30'
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS8866213B2
+      google_patents: https://patents.google.com/patent/US8866213B2/en
+    verified: 2026-09-19 Google Patents record page fetched
+  - number: US9252154B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: '2016-02-02'
+    title: Non-volatile memory with silicided bit line contacts
+    application_number: US14/501,536
+    filing_date: '2014-09-30'
+    status: Active
+    expiry:
+      date: '2033-01-30'
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9252154B2
+      google_patents: https://patents.google.com/patent/US9252154B2/en
+    verified: 2026-09-19 Google Patents record page fetched
+  - number: US9666591B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: '2017-05-30'
+    title: Non-volatile memory with silicided bit line contacts
+    application_number: US15/006,288
+    filing_date: '2016-01-26'
+    status: Active
+    expiry:
+      date: '2033-01-30'
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9666591B2
+      google_patents: https://patents.google.com/patent/US9666591B2/en
+    verified: 2026-09-19 Google Patents record page fetched
+  - number: US10692877B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: '2020-06-23'
+    title: Non-volatile memory with silicided bit line contacts
+    application_number: US15/489,695
+    filing_date: '2017-04-17'
+    status: Active
+    expiry:
+      date: '2033-01-30'
+      estimated: true
+      basis: Google Patents 'Anticipated expiration' (IFI Claims estimate)
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS10692877B2
+      google_patents: https://patents.google.com/patent/US10692877B2/en
+    verified: 2026-09-19 Google Patents record page fetched
+  - number: US20200411537A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: '2020-12-31'
+    title: Non-Volatile Memory With Silicided Bit Line Contacts
+    application_number: US16/905,044
+    filing_date: '2020-06-18'
+    status: Active
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200411537A1
+      google_patents: https://patents.google.com/patent/US20200411537A1/en
+    verified: 2026-09-19 Google Patents record page fetched
+  - number: US20160211271A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: '2016-07-21'
+    title: Non-Volatile Memory With Silicided Bit Line Contacts
+    application_number: US15/006,288
+    filing_date: '2016-01-26'
+    status: Active
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160211271A1
+      google_patents: https://patents.google.com/patent/US20160211271A1/en
+    verified: 2026-09-19 Google Patents record page fetched
+  - number: US20170250192A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: '2017-08-31'
+    title: Non-Volatile Memory With Silicided Bit Line Contacts
+    application_number: US15/489,695
+    filing_date: '2017-04-17'
+    status: Active
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170250192A1
+      google_patents: https://patents.google.com/patent/US20170250192A1/en
+    verified: 2026-09-19 Google Patents record page fetched
+  - number: US20140209993A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: '2014-07-31'
+    title: Non-Volatile Memory With Silicided Bit Line Contacts
+    application_number: US13/753,676
+    filing_date: '2013-01-30'
+    status: Active
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140209993A1
+      google_patents: https://patents.google.com/patent/US20140209993A1/en
+    verified: 2026-09-19 Google Patents record page fetched
+  - number: WO2014120921A1
+    country: WO
+    kind: A1
+    document_type: international-application
+    publication_date: '2014-08-07'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DWO2014120921A1
+      google_patents: https://patents.google.com/patent/WO2014120921A1/en
+    verified: 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched)
+  - number: EP2951862A1
+    country: EP
+    kind: A1
+    document_type: application
+    publication_date: '2015-12-09'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP2951862A1
+      google_patents: https://patents.google.com/patent/EP2951862A1/en
+    verified: 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched)
+  - number: EP2951862B1
+    country: EP
+    kind: B1
+    document_type: granted-patent
+    publication_date: '2026-02-25'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP2951862B1
+      google_patents: https://patents.google.com/patent/EP2951862B1/en
+    verified: 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched)
+  - number: EP2951862A4
+    country: EP
+    kind: A4
+    document_type: application
+    publication_date: '2017-03-15'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DEP2951862A4
+      google_patents: https://patents.google.com/patent/EP2951862A4/en
+    verified: 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched)
+  - number: US20150017795A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: '2015-01-15'
+    title: Non-Volatile Memory With Silicided Bit Line Contacts
+    application_number: US14/501,536
+    filing_date: '2014-09-30'
+    status: Active
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150017795A1
+      google_patents: https://patents.google.com/patent/US20150017795A1/en
+    verified: 2026-09-19 Google Patents record page fetched
+  relevance:
+  - target: step-098
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form
+      S-1, SEC-01); the patent concerns forming a silicide on a memory cell's bit-line contact, a salicide-module technique,
+      and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Google Patents search (xhr/query), assignee "Cypress Semiconductor", query "salicide" (498 hits, first
+    page examined), retrieved 2026-09-19; this is the salicide-module search the progress log listed as outstanding (H1).
+  verified: 2026-09-19 Google Patents record page https://patents.google.com/patent/US11183509B2/en
 - id: GP51229009
   family:
     source: Google Patents family ID
