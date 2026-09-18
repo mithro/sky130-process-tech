@@ -50,7 +50,7 @@ is safe to do so (i.e. before a batch, not while one is running).
 | Batch | Members attempted | Result | Applied to patents.yaml? |
 |---|---|---|---|
 | (pre-rebase batches 1-8, see `tmp/fetch1.log`..`fetch8.log`) | ~1666 lines total, mostly already in the 154 fully-fetched + representative fetches | done, already reflected in `data/patents.yaml` | yes |
-| this round, batch 1 | see `tmp/fetch9.log` | — | — |
+| this round, batches 1-3 (`tmp/fetch9.log`, `fetch10.log`, `fetch11.log`) | 435 members of the 53 pre-1999-05-29 families, run to a ~560s time limit each, resuming from cache | in progress; check `tmp/members_todo.txt` (regenerate with `tmp/tofetch.py`) for what remains | not yet — apply with a script that only touches the newly-fetched members' fields (see the FETCH_DATE warning below), not a wholesale `tmp/build.py` rerun |
 
 Update this table (and check it off above) as batches complete. When
 `tmp/members_todo.txt` is empty, run `tmp/build.py` to regenerate
@@ -86,23 +86,42 @@ then run `uv run tools/check_patents.py` and commit.
 
 ## Phase 3 — pages and generator
 
-- [ ] `tools/gen_patents.py` (model: `tools/gen_papers.py`) — not
-      started.
-- [ ] Six pages under `docs/references/patents/` (model:
-      `docs/references/papers/`) — not started.
-- [ ] Link from `docs/references/index.md` — not started.
-- [ ] Legal caveat on the landing page — not started.
+- [x] `tools/gen_patents.py` (model: `tools/gen_papers.py`) — done,
+      commit "Patent index: generator and the six reference pages".
+      Uses `check_patents.Loader` (not `yaml.safe_load`) to keep dates
+      as strings, matching the checker.
+- [x] Six pages under `docs/references/patents/` — done, same commit.
+      `by-module.md` groups by the 13 modules of `(overview-modules)=`
+      on `docs/overview/index.md` (a step target maps to its module by
+      step number), plus separate sections for the sky130B ReRAM
+      module (`overview-sky130b-reram` target), equipment and
+      metrology (`machine-*`/`machines-index` targets), materials
+      (`material-*`/`materials-index` targets), and a catch-all
+      "process-wide and category pages" section for everything else
+      (`category-*`, `mask-*`, `masks-index`, `overview-index`). This
+      is coarser than the design doc's 16-bucket proposal (which would
+      need per-step subject data finer than the overview table gives);
+      documented here rather than fabricated.
+- [x] Link from `docs/references/index.md` — done, same commit.
+- [x] Legal caveat on the landing page — done, same commit (see
+      `docs/references/patents/index.md` "## Legal caveat").
+- [x] `sphinx-build -W` fix: expired-family entries on `families.md`
+      must be `##` (H2), not `###` — an H1-to-H3 jump is a nitpicky
+      warning under `-W`. Fixed before the commit above; verified with
+      a full `-W` build (0 warnings).
 
 ## Phase 4 — checks
 
-- [ ] `uv run tools/check_patents.py` — passes as of the last commit on
-      the dataset alone (207 families, 0 problems), rerun after every
-      dataset change.
-- [ ] `uv run tools/gen_patents.py --check` — not applicable until the
-      generator exists.
-- [ ] All other `tools/check_*.py` — not run this round yet.
-- [ ] `uv run sphinx-build -W -b html docs <scratch dir>` — not run this
-      round yet.
+- [x] `uv run tools/check_patents.py` — 207 families, 0 problems
+      (rerun after every dataset change).
+- [x] `uv run tools/gen_patents.py --check` — 6 pages checked, 0
+      problems.
+- [x] All other `tools/check_*.py` (`check_steps`, `check_refs`,
+      `check_machines`, `check_materials`, `check_masks`,
+      `check_papers`) — 0 problems each.
+- [x] `uv run sphinx-build -W -b html docs <scratch dir>` — clean,
+      0 warnings, exit 0 (run twice: once found the H1-to-H3 issue
+      above, once confirmed clean after the fix).
 
 ## Notes for whoever resumes this
 

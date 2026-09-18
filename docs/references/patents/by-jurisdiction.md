@@ -1316,7 +1316,7 @@ in several jurisdictions and so appears in several tables.
 | FR 2272755 A1 | {ref}`US 3,893,869 A <patent-gp23886506>` | Granted |
 | FR 2272755 B1 | {ref}`US 3,893,869 A <patent-gp23886506>` | Expired |
 
-## AT (AT)
+## Austria (AT)
 
 13 member publications.
 
@@ -1336,7 +1336,7 @@ in several jurisdictions and so appears in several tables.
 | AT E231046 T1 | {ref}`US 5,738,574 A <patent-gp24192580>` | not shown |
 | AT E448567 T1 | {ref}`US 6,660,603 B2 <patent-gp22880690>` | not shown |
 
-## AU (AU)
+## Australia (AU)
 
 14 member publications.
 
@@ -1357,7 +1357,7 @@ in several jurisdictions and so appears in several tables.
 | AU 2002365427 A1 | {ref}`US 6,605,199 B2 <patent-gp25537645>` | Abandoned |
 | AU 2003236078 A1 | {ref}`US 7,605,041 B2 <patent-gp33193196>` | Abandoned |
 
-## BE (BE)
+## Belgium (BE)
 
 1 member publication.
 
@@ -1365,7 +1365,7 @@ in several jurisdictions and so appears in several tables.
 |---|---|---|
 | BE 829543 A | {ref}`US 3,893,869 A <patent-gp23886506>` | not shown |
 
-## BR (BR)
+## Brazil (BR)
 
 2 member publications.
 
@@ -1374,7 +1374,7 @@ in several jurisdictions and so appears in several tables.
 | BR 8604547 A | {ref}`US 4,789,648 A <patent-gp25155097>` | not shown |
 | BR 9509134 A | {ref}`US 5,518,528 A <patent-gp23253952>` | not shown |
 
-## CA (CA)
+## Canada (CA)
 
 9 member publications.
 
@@ -1390,7 +1390,7 @@ in several jurisdictions and so appears in several tables.
 | CA 2243170 A1 | {ref}`US 5,872,387 A <patent-gp24345606>` | not shown |
 | CA 2202466 C | {ref}`US 5,518,528 A <patent-gp23253952>` | not shown |
 
-## DK (DK)
+## Denmark (DK)
 
 3 member publications.
 
@@ -1400,7 +1400,7 @@ in several jurisdictions and so appears in several tables.
 | DK 0485161 T3 | {ref}`US 5,334,332 A <patent-gp24443399>` | not shown |
 | DK 0785817 T3 | {ref}`US 5,518,528 A <patent-gp23253952>` | not shown |
 
-## ES (ES)
+## Spain (ES)
 
 5 member publications.
 
@@ -1412,7 +1412,7 @@ in several jurisdictions and so appears in several tables.
 | ES 2129403 T3 | {ref}`US 5,334,332 A <patent-gp24443399>` | not shown |
 | ES 2150588 T3 | {ref}`US 5,518,528 A <patent-gp23253952>` | not shown |
 
-## GR (GR)
+## Greece (GR)
 
 2 member publications.
 
@@ -1421,7 +1421,7 @@ in several jurisdictions and so appears in several tables.
 | GR 3030070 T3 | {ref}`US 5,334,332 A <patent-gp24443399>` | not shown |
 | GR 3034932 T3 | {ref}`US 5,518,528 A <patent-gp23253952>` | not shown |
 
-## IL (IL)
+## Israel (IL)
 
 6 member publications.
 
@@ -1434,7 +1434,7 @@ in several jurisdictions and so appears in several tables.
 | IL 153843 A | {ref}`US 5,958,288 A <patent-gp25030826>` | not shown |
 | IL 161750 A | {ref}`US 6,605,199 B2 <patent-gp25537645>` | not shown |
 
-## IN (IN)
+## India (IN)
 
 1 member publication.
 
@@ -1442,7 +1442,7 @@ in several jurisdictions and so appears in several tables.
 |---|---|---|
 | IN 144099 B | {ref}`US 3,893,869 A <patent-gp23886506>` | not shown |
 
-## IT (IT)
+## Italy (IT)
 
 1 member publication.
 
@@ -1450,7 +1450,7 @@ in several jurisdictions and so appears in several tables.
 |---|---|---|
 | IT 1037683 B | {ref}`US 3,893,869 A <patent-gp23886506>` | not shown |
 
-## MX (MX)
+## Mexico (MX)
 
 1 member publication.
 
@@ -1458,7 +1458,7 @@ in several jurisdictions and so appears in several tables.
 |---|---|---|
 | MX 9702722 A | {ref}`US 5,518,528 A <patent-gp23253952>` | not shown |
 
-## MY (MY)
+## Malaysia (MY)
 
 4 member publications.
 
@@ -1469,7 +1469,7 @@ in several jurisdictions and so appears in several tables.
 | MY 128249 A | {ref}`US 5,958,288 A <patent-gp25030826>` | not shown |
 | MY 132868 A | {ref}`US 5,994,761 A <patent-gp25194044>` | not shown |
 
-## NL (NL)
+## Netherlands (NL)
 
 1 member publication.
 
@@ -1477,7 +1477,7 @@ in several jurisdictions and so appears in several tables.
 |---|---|---|
 | NL 7506443 A | {ref}`US 3,893,869 A <patent-gp23886506>` | not shown |
 
-## NZ (NZ)
+## New Zealand (NZ)
 
 1 member publication.
 
@@ -1485,7 +1485,7 @@ in several jurisdictions and so appears in several tables.
 |---|---|---|
 | NZ 522808 A | {ref}`US 6,653,803 B1 <patent-gp24331908>` | not shown |
 
-## PT (PT)
+## Portugal (PT)
 
 2 member publications.
 
@@ -1494,7 +1494,7 @@ in several jurisdictions and so appears in several tables.
 | PT 785817 E | {ref}`US 5,518,528 A <patent-gp23253952>` | not shown |
 | PT 1819478 T | {ref}`US 7,705,268 B2 <patent-gp36337293>` | not shown |
 
-## SE (SE)
+## Sweden (SE)
 
 2 member publications.
 
@@ -1503,7 +1503,7 @@ in several jurisdictions and so appears in several tables.
 | SE 7506134 L | {ref}`US 3,893,869 A <patent-gp23886506>` | not shown |
 | SE 418698 B | {ref}`US 3,893,869 A <patent-gp23886506>` | not shown |
 
-## SG (SG)
+## Singapore (SG)
 
 10 member publications.
 
@@ -1520,7 +1520,7 @@ in several jurisdictions and so appears in several tables.
 | SG 108313 A1 | {ref}`US 2003/0170956 A1 <patent-gp27754013>` | not shown |
 | SG 111000 A1 | {ref}`US 5,893,796 A <patent-gp24770421>` | not shown |
 
-## YU (YU)
+## Yugoslavia (historical) (YU)
 
 2 member publications.
 
