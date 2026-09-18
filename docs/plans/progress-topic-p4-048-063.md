@@ -53,9 +53,9 @@ before being fixed or declined.
 | 058-L1 | Low | fixed | Added the PDK's NGNIT e-test corroboration and the Tsang et al. nitride-cap corroboration (with correct mechanism) to What this step is / Resistor protection. |
 | 059-L1 | Low | fixed | Confirmed via OpenAlex: Hinsberg 1992 measured N-methylpyrrolidone (an amide), not amines specifically. Reworded to "amines and amides". |
 | 059-L2 | Low | fixed | Duplicated the four primary-source citations (sturtevant-1994, dijkstra-1993, he-1998, bell-1996) into Cross-check, per citation-style.md rule 5. |
-| 060-L1 | Low | open | |
-| 060-L2 | Low | open | |
-| 060-L3 | Low | open | |
+| 060-L1 | Low | fixed | Confirmed via cached facilities text: the chemistries are listed for "SEZ223, Davinci" as a pair, not the 223 alone. Fixed. |
+| 060-L2 | Low | fixed | Confirmed via OpenAlex: Broussous 2005's H2O:H2O2:H2SO4:HF recipe on an SEZ spin processor. Added detail to the Chemistry step and to Cross-check. |
+| 060-L3 | Low | fixed | Fetched the live SEMI store page and found revision "SEMI M1-0924 - Current"; added revision and access date to both 060's and 001's footnote (same key, same fix). |
 | 060-M-ref | Low | fixed | = 051-M1; replaced with lederer-2003 (already on page), which names the Surfscan SP1 BSIM explicitly. |
 | 061-L1 | Low | open | |
 | 061-L2 | Low | open | |
