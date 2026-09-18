@@ -49,11 +49,16 @@ equivalent oxide thickness of 2.0–2.4 nm for low-operating-power and
 2.4–2.8 nm for low-standby-power logic in 2001, with a thickness
 control requirement of "<± 4" % 3σ;[^itrs-01] SKY130's oxide is
 thicker because its core runs at 1.8 V rather than the roadmap's
-scaled supply. Cypress's integration patent puts its thin gate
-insulator at "between approximately 3.0 nm and 8.0 nm" against
-5–15 nm for the thick one,[^pat-03] and its later cell patent grows
-"a thin, second gate oxide 246 having a thickness from about 1 nm to
-about 3 nm"[^pat-04] — for a more advanced node than SKY130.
+scaled supply. Two Cypress patents shown as in force give thin- and
+thick-gate thickness ranges of their own; they are in the collapsed note
+below, the second for a more advanced node than SKY130.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+Cypress's integration patent puts its thin gate insulator at "between
+approximately 3.0 nm and 8.0 nm" against 5–15 nm for the thick
+one,[^pat-03] and its later cell patent grows "a thin, second gate oxide
+246 having a thickness from about 1 nm to about 3 nm".[^pat-04]
+:::
 
 ## Step category
 
@@ -107,12 +112,18 @@ and modelled for N₂O {term}`oxynitrides <oxynitride>` by Hwang et al.[^hwang-1
 nitrogen also reduces hot-carrier degradation and raises the dielectric
 constant slightly.[^hori-1997][^hori-1989] SkyWater lists "Nitrided gate
 oxide" among its special modules,[^skw-01] and Cypress's integration
-patent nitrides its gate insulators and the ONO together, "heating
-substrate 302 in an atmosphere including nitrogen at a temperature
-approximately in the range of 900-1100° C." to incorporate
-"approximately 4-10 wt % nitrogen".[^pat-03] Whether SKY130's 1.8 V
-oxide is nitrided is not stated publicly; we infer that it is, from
-the special-module listing and the Cypress lineage.
+patent, which may still be in force, nitrides its gate insulators and
+the ONO together — the conditions are in the collapsed note below.
+Whether SKY130's 1.8 V oxide is nitrided is not stated publicly; we
+infer that it is, from the special-module listing and the Cypress
+lineage.
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+Cypress's integration patent nitrides its gate insulators and the ONO
+together, "heating substrate 302 in an atmosphere including nitrogen at
+a temperature approximately in the range of 900-1100° C." to
+incorporate "approximately 4-10 wt % nitrogen".[^pat-03]
+:::
 
 ## How it is typically performed
 
@@ -128,9 +139,9 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
    regime;[^massoud-1985] alternatives are N₂O or NO ambients, which
    grow and nitride at once, and rapid thermal oxidation, whose early
    demonstration for thin gate dielectrics is Nulman's,[^nulman-1985] or
-   in-situ steam generation.[^yu-1999][^roze-2017] Cypress describes the
-   thick oxide by "dilute wet oxidation" at 800–900 °C[^pat-03] and the
-   thin one by "a thermal oxidation process".[^pat-04]
+   in-situ steam generation.[^yu-1999][^roze-2017] How Cypress describes
+   the two oxidations is in the collapsed note below this list, from
+   patents that may still be in force.
 3. **Nitridation** (inferred). Three public routes: thermal
    nitridation in NH₃, the original direct-nitridation technique
    (Ito, Nozaki and Ishikawa),[^ito-1980] which incorporates hydrogen
@@ -139,10 +150,9 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
    plasma nitridation, which puts nitrogen at the *top* surface where
    it blocks boron without degrading the interface — the remote-plasma
    method of Hattangady et al.[^hattangady-1995] and the high-density
-   plasma surface nitridation of Kraft et al.[^kraft-1997] Cypress's
-   patent lists "nitrogen (N₂), nitrous oxide (N₂O), nitrogen dioxide
-   (NO₂), nitric oxide (NO) and ammonia (NH₃)" as its nitriding
-   atmospheres at 900–1100 °C.[^pat-03]
+   plasma surface nitridation of Kraft et al.[^kraft-1997] The nitriding
+   atmospheres Cypress's patent lists are in the collapsed note below
+   this list.
 4. **Post-oxidation anneal.** Inert N₂ or Ar anneal to reduce fixed
    charge and interface traps;[^deal-1980] a post-nitridation anneal
    in O₂ or N₂ heals plasma damage if plasma nitridation is used.
@@ -153,6 +163,14 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
    order 0.1 nm) on monitor wafers and on product test sites; C–V for
    electrical thickness and nitrogen-induced flat-band shift; ITRS
    2001's "<± 4" % 3σ control[^itrs-01] is the era's target.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+Cypress describes the thick oxide by "dilute wet oxidation" at
+800–900 °C[^pat-03] and the thin one by "a thermal oxidation
+process".[^pat-04] Its integration patent lists "nitrogen (N₂), nitrous
+oxide (N₂O), nitrogen dioxide (NO₂), nitric oxide (NO) and ammonia
+(NH₃)" as its nitriding atmospheres at 900–1100 °C.[^pat-03]
+:::
 
 ## Machines typically used
 
