@@ -363,7 +363,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 [^pat-demos-ti]: J. C. Mitros (Texas Instruments), *Higher voltage drain
     extended MOS transistors with self-aligned channel and drain
     extensions*, US 6,660,603 B2, granted 2003-12-09.
-    <https://patents.google.com/patent/US6660603B2/en>
+    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6660603>
 [^pat-multi-ldd-amd]: M. I. Gardner, F. N. Hause and H. J. Fulford
     (Advanced Micro Devices), *Integrated circuit having multiple LDD
     and/or source/drain implant steps to enhance circuit performance*,
