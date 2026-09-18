@@ -8,10 +8,10 @@ Applying the whole-site conflict review at
 |---|---|---|---|
 | C-001 | Medium | fixed | 003-isonit.md:25 now reads "of the order of 150 nm — the working figure used throughout this module, not a SkyWater number", matching the module's later pages and the materials index. |
 | C-002 | Medium | fixed | 006-stie.md:49 and :268 now use 0.33 µm (matching :42 and 011-filox.md's rounding), and the fill aspect ratio corrected to ~1.8:1. |
-| C-003 | Medium | open | US 8,796,098 tunnel-oxide range: thermal (1.0–3.0 nm) vs radical (1.0–4.0 nm) embodiments not distinguished. |
+| C-003 | Medium | fixed | Verified both embodiments in cached tmp/patent-cache/US8796098B1.html; 038-depi.md, 039-tunme.md, 040-ono.md and the PAT-04 inventory entry now state both ranges. |
 | C-004 | Medium | fixed | US 5,811,358 strip quotation normalised to verbatim "(<220° C.)" at all 8 non-verbatim locations (016, 021, 029, 033, 051, 084, 087, public-sources.md:2558); verified against cached tmp/patent-cache/US5811358A.html. |
 | C-005 | Medium | fixed | Checked cached STEPS-SHEET CSV export (tmp/p4/fetch/steps-sheet1.csv row 149, also 123/134/161): sheet reads "Al Cu 2/TiW deposition" (with space) at all four levels. Fixed the one non-verbatim quotation (123-tial12.md:50, was "AlCu…") to match; 149-wtial4.md and overview/index.md:705 quotes were already verbatim. Added a clause on both 123 and 149 noting the page title/steps index normalise to "AlCu" without the space, consistent with 134/161's titles (which carry no quotation of the sheet's name). No change needed to tools/steps.csv, docs/steps/index.md or docs/categories/deposition.md — their normalised spelling was already internally consistent. |
-| C-006 | Medium | open | Overview passivation-nitride stack-table cell omits the step page's 0.7–0.9 µm Cypress reading. |
+| C-006 | Medium | fixed | Overview stack-table cell for passivation nitride now also gives the NTSD page's 0.5–0.9 µm reading and the Cypress 0.7–0.9 µm figure, matching the caption's promise to quote what the step pages say. |
 | C-007 | Low | open | "sulfuric" vs "sulphuric" (11 locations). |
 | C-008 | Low | open | Typographic markup inserted inside verbatim quotations (multiple locations/sources). |
 | C-009 | Low | open | Minus sign in "P− poly precision resistors" written 3 ways. |
