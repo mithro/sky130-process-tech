@@ -146,12 +146,11 @@ fab (SKY130's recipe is not public):
   step, and part of the reason the tip anneal precedes the spacer
   rather than following it.
 * **Low-temperature LPCVD from BTBAS.** Bis(tertiary-butylamino)silane
-  with ammonia deposits nitride in a furnace at roughly 550–600 °C
-  (typical industry value for the BTBAS process; the paper's title
-  confirms only that it is a low-temperature LPCVD
-  nitride[^gumpher-2004]) with conformality close to the DCS film;
-  Gumpher et al. characterise the process and film,[^gumpher-2004]
-  and Smith, Seutter and Iyer the
+  with ammonia deposits nitride in a furnace at 550–600 °C, which
+  Gumpher et al. demonstrated in a 200 mm vertical batch furnace at
+  deposition rates of 4–30 Å/min,[^gumpher-2004] with conformality
+  close to the DCS film; Gumpher et al. characterise the process and
+  film,[^gumpher-2004] and Smith, Seutter and Iyer the
   thermal chemistry.[^smith-2005] SkyWater lists "BTBAS" among its
   Aviza furnace processes,[^skw-01] and a low-temperature spacer
   nitride is the most common reason a 130 nm-era fab adopts it — which
