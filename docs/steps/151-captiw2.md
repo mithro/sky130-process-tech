@@ -28,8 +28,10 @@ evidence of a chemistry. The PDK calls the top plate
 only "a thin conductor layer on top of the dielectric" and does not name
 its material;[^pdk-07] this reference describes it as sputtered TiW
 (inference: TiW is on SkyWater's PVD film list[^skw-01] and caps the
-aluminium stacks, and the PDK's sheet resistance fits about 0.1 µm of
-it, as set out below). The step is the second-level repeat of
+aluminium stacks on the 2013 Cypress description of this fab, though
+not on the stack qualified in 2013–2014
+({ref}`overview-metal-cap`), and the PDK's sheet resistance fits about
+0.1 µm of it, as set out below). The step is the second-level repeat of
 {ref}`CAPTIW1 <step-136>`.
 
 The PDK gives this plate a "MiM2 top plate sheet resistance" of
@@ -89,9 +91,11 @@ stress and deposition energy matter because the layer beneath is thin
   dielectric without reacting with it, etch with high {term}`selectivity`
   to that dielectric ({ref}`CAP2ME <step-153>`), survive the chlorine
   metal etch under resist and serve as the stop for the fluorocarbon via
-  etch, and already be in the fab. TiW is the cap of the aluminium
-  levels ({ref}`TIAL6 <step-112>`; "TiW" on SkyWater's PVD
-  list[^skw-01]), a barrier whose properties Nicolet reviewed and Ghate
+  etch, and already be in the fab. TiW caps the aluminium levels on
+  the 2013 Cypress description of this fab but not on the stack
+  qualified in 2013–2014 ({ref}`TIAL6 <step-112>`,
+  {ref}`overview-metal-cap`), and "TiW" is on SkyWater's PVD
+  list;[^skw-01] it is a barrier whose properties Nicolet reviewed and Ghate
   et al. established;[^nicolet-1978][^ghate-1978] Liu and Kuo showed
   that TiW etches by reactive-ion etching in CF₄-based
   plasmas,[^liu-2007-tiw] Danzl and McLaurin removed a TiW cap from
@@ -261,7 +265,10 @@ back end (SKY130's recipe is not public); the sequence is that of
 * Whether a pre-clean precedes the deposition, and the queue-time limit
   between dielectric and plate, are not public.
 * Whether the plate is a single TiW film or carries a thin cap is not
-  public.
+  public; neither is whether the metal-4 cap beneath the dielectric is
+  TiW or TiN, which bears on the plate material and on what
+  {ref}`CAP2ME <step-153>` can stop on
+  ({ref}`overview-metal-cap`).
 * The PDK publishes no `cap2m` rules, so the plate's enclosure by
   metal 4 and of via 4 are not known;[^pdk-periph] the level
   inconsistencies in the PDK's MiM entries are set out at

@@ -194,8 +194,11 @@ back end (SKY130's recipe is not public); the sequence is that of
 {ref}`CAPILD <step-135>`.
 
 1. **Surface.** The wafer comes from the {term}`PVD` cluster with the
-   TiW cap of {ref}`WTIAL4 <step-149>` exposed; that surface is the
-   bottom electrode, and its roughness and cleanliness set the leakage.
+   cap of {ref}`WTIAL4 <step-149>` exposed — TiW on this reference's
+   reading, TiN on the stack qualified in 2013–2014, which the public
+   record does not decide between ({ref}`overview-metal-cap`); that
+   surface is the bottom electrode, and its roughness and cleanliness
+   set the leakage.
    The Philips patent treats the bottom electrode in an ammonia plasma
    before the insulator is deposited,[^pat-mim-philips] and the queue
    time from PVD to deposition is limited (industry practice[^txt-05]).
