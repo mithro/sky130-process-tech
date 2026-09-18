@@ -46,9 +46,9 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 155-L2 | Low | fixed | "via-3/via-4 oxide beneath" misnames the dielectric (155:145-147, 163:128-130) |
 | 156-M1 | Medium | fixed | HDP quote dropped "doped and phos doped" qualifier (156:50-53); verified against cached skw-facilities.txt |
 | 156-L1 | Low | fixed | "oxide" stated as fact rather than reading (156:19-23) |
-| 157-L1 | Low | open | SEZ223/Davinci vs "SEZ 223 / Da Vinci" spelling split within page (157:198) |
-| 157-L2 | Low | open | "industry-standard" slurry claim missing adjacent citation (157:20-22) |
-| 157-L3 | Low | open | no-plug-polish argument from step-list silence not marked as such (157:58-62) |
+| 157-L1 | Low | fixed | SEZ223/Davinci vs "SEZ 223 / Da Vinci" spelling split within page (157:198) |
+| 157-L2 | Low | fixed | "industry-standard" slurry claim missing adjacent citation (157:20-21) |
+| 157-L3 | Low | fixed | no-plug-polish argument from step-list silence not marked as such (157: Open questions) |
 | 158-L1 | Low | open | "PECVD TEOS" invents a deposition method not in either report (158:105-108) |
 | 158-L2 | Low | open | 650-750°C LPCVD window not clearly labelled as textbook value (158:114-116) |
 | 159-M1 | Medium | open | Skelly & Gruenke via-fill analogy ignores non-monotonic 2.8 µm result (159, 161) |
