@@ -183,6 +183,7 @@ links the full entry on {ref}`filings-index`.
 * SkyWater Technology, Inc., 10-Q, filed 2023-08-11: Quarterly report on Form 10-Q for the quarter ended 2023-07-02 ({ref}`full entry <filing-skywater-10-q-2023-08-11>`)
 * SkyWater Technology, Inc., 10-Q, filed 2023-11-09: Quarterly report on Form 10-Q for the quarter ended 2023-10-01 ({ref}`full entry <filing-skywater-10-q-2023-11-09>`)
 * SkyWater Technology, Inc., 10-Q, filed 2024-05-10: Quarterly report on Form 10-Q for the quarter ended 2024-03-31 ({ref}`full entry <filing-skywater-10-q-2024-05-10>`)
+* SkyWater Technology, Inc., 8-K, filed 2024-06-26: Current report, item 4.01: change in independent registered public accounting firm ({ref}`full entry <filing-skywater-8-k-2024-06-26>`)
 * SkyWater Technology, Inc., 10-Q, filed 2024-08-07: Quarterly report on Form 10-Q for the quarter ended 2024-06-30 ({ref}`full entry <filing-skywater-10-q-2024-08-07>`)
 * SkyWater Technology, Inc., 10-Q, filed 2024-11-07: Quarterly report on Form 10-Q for the quarter ended 2024-09-29 ({ref}`full entry <filing-skywater-10-q-2024-11-07>`)
 * SkyWater Technology, Inc., 10-Q, filed 2025-05-08: Quarterly report on Form 10-Q for the quarter ended 2025-03-30 ({ref}`full entry <filing-skywater-10-q-2025-05-08>`)
@@ -251,6 +252,7 @@ No filings yet.
 ### a technology partner's filing names SkyWater
 
 * Weebit Nano Limited, ASX announcement, filed 2021-09-09: Weebit signs first commercial deal to take its ReRAM technology to volume production with US-based SkyWater ({ref}`full entry <filing-weebit-nano-announcement-2021-09-09>`)
+* Weebit Nano Limited, Appendix 4E and Annual Report, filed 2022-08-25: Appendix 4E and Annual Report for the year ended 30 June 2022 ({ref}`full entry <filing-weebit-nano-annual-report-fy2022>`)
 * Weebit Nano Limited, ASX announcement, filed 2023-06-29: WBT's ReRAM IP now fully qualified in SkyWater S130 process ({ref}`full entry <filing-weebit-nano-announcement-2023-06-29>`)
 * Weebit Nano Limited, Appendix 4E and Annual Report, filed 2023-08-25: Appendix 4E and Annual Report for the year ended 30 June 2023 ({ref}`full entry <filing-weebit-nano-annual-report-fy2023>`)
 * Weebit Nano Limited, Appendix 4E and Annual Report, filed 2024-08-28: Appendix 4E and 2024 Annual Report for the year ended 30 June 2024 ({ref}`full entry <filing-weebit-nano-annual-report-fy2024>`)

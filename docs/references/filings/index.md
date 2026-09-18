@@ -15,7 +15,7 @@ name SkyWater or the Cypress fab. It complements the
 the inventory only when a page cites it. See
 `docs/plans/filings-index-design.md` for the inclusion rules.
 
-The index holds 86 filings.
+The index holds 88 filings.
 
 ## Other views
 
@@ -65,11 +65,11 @@ canonical citation but was not itself fetched by this project.
 
 ## Counts
 
-By company: Cypress Semiconductor Corporation (25), SkyWater Technology, Inc. (42), Infineon Technologies AG (7), IonQ, Inc. (3), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), Weebit Nano Limited (4).
+By company: Cypress Semiconductor Corporation (25), SkyWater Technology, Inc. (43), Infineon Technologies AG (7), IonQ, Inc. (3), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), Weebit Nano Limited (5).
 
-By type: Annual reports (41), Quarterly and half-year reports (18), Current reports and exhibits (11), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
+By type: Annual reports (42), Quarterly and half-year reports (18), Current reports and exhibits (12), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
 
-By year: 1994 (1), 1996 (1), 1997 (1), 1998 (1), 1999 (1), 2000 (1), 2002 (1), 2003 (1), 2004 (1), 2005 (1), 2006 (1), 2007 (1), 2008 (1), 2009 (1), 2010 (1), 2011 (1), 2012 (1), 2013 (1), 2014 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (9), 2022 (8), 2023 (11), 2024 (9), 2025 (9), 2026 (12).
+By year: 1994 (1), 1996 (1), 1997 (1), 1998 (1), 1999 (1), 2000 (1), 2002 (1), 2003 (1), 2004 (1), 2005 (1), 2006 (1), 2007 (1), 2008 (1), 2009 (1), 2010 (1), 2011 (1), 2012 (1), 2013 (1), 2014 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (9), 2022 (9), 2023 (11), 2024 (10), 2025 (9), 2026 (12).
 
 ## Known gaps
 
@@ -455,6 +455,15 @@ Sorted by filing date, then id.
   Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
   Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on.
 
+(filing-weebit-nano-annual-report-fy2022)=
+* **Weebit Nano Limited — Appendix 4E and Annual Report for the year ended 30 June 2022** (filed 2022-08-25).
+  [Original](https://www.annualreports.com/HostedData/AnnualReportArchive/w/ASX_WBT_2022.pdf) · [investor-relations copy](https://www.annualreports.com/HostedData/AnnualReportArchive/w/ASX_WBT_2022.pdf).
+  Weebit Nano's FY2022 annual report, the first to cover the September 2021 SkyWater licensing deal for a full financial year: it recaps the original commercial agreement and reports completing, within FY2022, the technology transfer and first demo-chip tape-out at SkyWater's production fab, ahead of the qualification the FY2023 report later confirms. "In September 2021, Weebit secured its first commercial deal with US-based semiconductor foundry SkyWater Technology Inc to take its technology to volume production." (First commercial deal with SkyWater Technology); "Towards the end of FY22, Weebit Nano successfully completed the transfer of its technology to SkyWater's US production fab, taping-out (releasing to manufacturing) demonstration (demo) chips integrating its embedded ReRAM module." (Completed technology transfer)
+  Auditor: Nexia Perth Audit Services Pty Ltd, 2022-08-25: "Nexia Perth Audit Services Pty Ltd".
+  Relationships: {ref}`a technology partner's filing names SkyWater <filings-rel-partner-names-skywater>`.
+  Related pages: {ref}`overview-sky130b-reram` — The report is the company's own account, for the year the licensing agreement was signed, of the technology transfer and tape-out that preceded the ReRAM qualification the page discusses.
+  Note: filed is the date printed on both the directors' report and the auditor's report (25 August 2022, Melbourne/Perth); the actual ASX lodgement date was not independently confirmed (cf. fy2023's, taken from the investor-relations announcement archive post date, which is one day after its own document dates).
+
 (filing-skywater-10-q-2022-11-10)=
 * **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2022-10-02** (filed 2022-11-10; SEC accession 0001819974-22-000085).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997422000085/0001819974-22-000085-index.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/479a15ab-361b-438c-ac9f-0e54825bcf26.pdf).
@@ -594,6 +603,14 @@ Sorted by filing date, then id.
 * **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2024-03-31** (filed 2024-05-10; SEC accession 0001819974-24-000014).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997424000014/skyt-20240331.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/ddf436d3-a775-425d-befc-43d190489d7a.pdf).
   First-quarter fiscal 2024 report, filed a few weeks after the June 2024 auditor change was set in motion; discloses that disclosure controls and procedures remained not effective as of the quarter end because of material weaknesses in internal control over financial reporting. "our disclosure controls and procedures were not effective as of March 31, 2024 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on.
+
+(filing-skywater-8-k-2024-06-26)=
+* **SkyWater Technology, Inc. — Current report, item 4.01: change in independent registered public accounting firm** (filed 2024-06-26; SEC accession 0001819974-24-000022).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997424000022/skyt-20240621.htm) · [Wayback copy](https://web.archive.org/web/20250506203513/https://www.sec.gov/Archives/edgar/data/1819974/000181997424000022/skyt-20240621.htm).
+  Period: event of 2024-06-21.
+  SkyWater's own primary record of the auditor change the 2026 DEF 14A later summarised (KPMG replacing Deloitte & Touche): on 2024-06-21 the audit committee dismissed Deloitte and engaged KPMG, effective the same date, for the fiscal year ending 2024-12-29; the filing also states that the Control Activities material weakness (including the revenue-accounting-process weakness) was not remediated as of the dismissal date. "the Company selected KPMG LLP ("KPMG") to serve as the Company's new independent registered public accounting firm, effective as of such date, and notified Deloitte & Touche LLP ("Deloitte") of its dismissal" (Item 4.01); "the material weakness in the Control Activities component of the COSO framework, including the revenue accounting process material weakness, was not remediated as of the date of dismissal" (Item 4.01)
   Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
   Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on.
 
