@@ -41,9 +41,9 @@ arithmetic before being fixed or declined.
 | 038-L2 | 038-depi.md | fixed | "2 nm oxide" narrower than patent range |
 | 038-L3 | 038-depi.md | fixed | quotation capitalisation |
 | 038-L4 | 038-depi.md | fixed | dead Springer chapter page behind live DOI |
-| 039-L1 | 039-tunme.md | open | HF-last qualification vs later ONO precleans |
-| 039-L2 | 039-tunme.md | open | category-page quote splices two passages |
-| 039-L3 | 039-tunme.md | open | two numeric statements don't follow from pat-04 |
+| 039-L1 | 039-tunme.md | fixed | HF-last qualification vs later ONO precleans |
+| 039-L2 | 039-tunme.md | fixed | category-page quote splices two passages |
+| 039-L3 | 039-tunme.md | fixed | two numeric statements don't follow from pat-04 |
 | 040-L1 | 040-ono.md | open | dropped word "oxide" in quotation |
 | 040-L2 | 040-ono.md | open | pat-radox-cyp embodiment is polysilicon-channel |
 | 040-L3 | 040-ono.md | open | furnace capability line oversold as "decisive" |
