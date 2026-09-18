@@ -41,9 +41,9 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 153-L2 | Low | fixed | solvent-clean citation placement implies chemistry claim (153:145-151) |
 | 154-L1 | Low | fixed | CU-flagged rule range incomplete (154:40-42), verified against cached pdk-periphery.txt (m4.7, m4.11-m4.16) |
 | 154-L2 | Low | fixed | uncited/unmarked cap2m-edge overlay claim (154:147-152) |
-| 155-M1 | Medium | open | collective gas-list phrasing attributes all gases to all tools (155, 163) |
-| 155-L1 | Low | open | two Cypress reports of different tech families conflated (155:38-41) |
-| 155-L2 | Low | open | "via-3 oxide beneath" misnames the dielectric (155, 163) |
+| 155-M1 | Medium | fixed | collective gas-list phrasing attributes all gases to all tools (155:146-149, 163:134-137); verified quotes against cached skw-facilities.txt |
+| 155-L1 | Low | fixed | two Cypress reports of different tech families conflated (155:38-41) |
+| 155-L2 | Low | fixed | "via-3/via-4 oxide beneath" misnames the dielectric (155:145-147, 163:128-130) |
 | 156-M1 | Medium | open | HDP quote dropped "doped and phos doped" qualifier (156:50-52) |
 | 156-L1 | Low | open | "oxide" stated as fact rather than reading (156:15,28,title area) |
 | 157-L1 | Low | open | SEZ223/Davinci vs "SEZ 223 / Da Vinci" spelling split within page (157:198) |
@@ -62,7 +62,7 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 162-M1 | Medium | open | S8PIR reading uses 3 of 5 Background features, omits the strongest argument (162, 161, 163) |
 | 162-L1 | Low | open | m4.4 probe-pad exemption asymmetry not noted (162:35-37) |
 | 162-L2 | Low | open | circular step-list-silence reasoning (162:108-114) |
-| 163-M1 | Medium | open | same as 155-M1, second page (163:134-136) |
+| 163-M1 | Medium | fixed | same as 155-M1, second page (163:134-137) |
 | 163-L1 | Low | open | via-4 aluminium-fill relationship asserted without explanation (163:186-187) |
 | 163-L2 | Low | open | 155/163 aluminium etch-rate implied rates inconsistent (163:119-122) |
 | EKC-ATTACH | (site-wide, in range) | open | EKC/EKS solvents unattached to "Batch Rotational" entry, within 149-163 (155:147, 160:145, 163:136, 160:195) — review §0 item, not excluded by coordinator, so checked/fixed here |
