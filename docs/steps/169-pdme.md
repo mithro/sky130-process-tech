@@ -33,7 +33,8 @@ TiW-capped Al–Cu stack ({ref}`WTIAL5 <step-161>`; inference from the
 300 Å TiW caps of the S8 stacks in a Cypress report[^cyp-qtp-113005]
 and from Cypress's 2014 report, which moved the lower levels to Ti/TiN
 caps but qualified the S8P change "excluding top metal layers" and kept
-"300A TiW" on the S8DI top metal[^cyp-qtp-123907]). If so, the etch or
+"300A TiW" on the S8DI top metal[^cyp-qtp-123907]; the whole of that
+evidence is set out under {ref}`overview-metal-cap`). If so, the etch or
 a following clean must remove the TiW over the pad: Danzl and McLaurin
 report that TiW left on pads causes wire-bond non-sticks and that
 plasma etching alone left a residue.[^danzl-1997] How SKY130 does this

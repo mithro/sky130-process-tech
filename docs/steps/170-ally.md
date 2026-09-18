@@ -54,8 +54,10 @@ metallisation (Plummer, Deal and Griffin and Wolf and Tauber treat the
 practice[^txt-01][^txt-02]). Its {term}`thermal budget` is
 negligible for dopants and junctions. What it changes is hydrogen
 bonding at interfaces and in the dielectrics, the microstructure and
-stress of the aluminium lines and the interfaces between aluminium,
-TiW and tungsten, and the stress of the passivation nitride. In the
+stress of the aluminium lines and the interfaces between the
+aluminium, its refractory cladding — TiW or TiN, which the public
+record does not settle ({ref}`overview-metal-cap`) — and tungsten, and
+the stress of the passivation nitride. In the
 sequence this reference describes it is the only anneal performed on a
 wafer with open {term}`bond pads <bond pad>`.
 

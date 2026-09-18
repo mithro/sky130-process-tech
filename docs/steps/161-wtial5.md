@@ -48,18 +48,29 @@ minimum area (m5.4, whose probe-pad exemption excludes
 "SKY130PIR*/SKY130PF*" flows) and 0.310 µm enclosure of via 4
 (m5.3).[^pdk-periph]
 
-No public source gives the metal-5 films. The Cypress qualification
-reports that describe stacks at the same fab are for three-metal
-processes;[^cyp-qtp-113005] the nearest analogue is the thick top metal of the S8DI
-technology in the 2014 metal-stack-change report, "Metal 3: 500A
-TiW/21,250A Al 0.5% Cu/300A TiW",[^cyp-qtp-123907] a 2.2 µm stack of
-the thickness class of the PDK's 2 µm antenna entry rather than of the
-1.2 µm film read here. This reference describes
-metal 5 as a Ti or TiW underlayer, some 1.2 µm of Al–Cu and a TiW cap
-(inference: SkyWater's PVD film list includes "Aluminum both pure and
-Cu doped", "TiW" and "Collimated Ti",[^skw-01] the Cypress stacks at
-the same fab are built this way,[^cyp-qtp-113005][^cyp-qtp-123907] and
-the PDK's thickness and sheet resistance fit such a stack).
+No public source gives the metal-5 films. The two Cypress
+qualification reports that describe stacks at the same fab are both for
+three-metal processes.[^cyp-qtp-113005][^cyp-qtp-123907] One line in
+them speaks about the SKY130 family directly: the March 2014 report
+records the S8P qualification as a "Metal Stack Change from Ti/AlCu/TiW
+to Ti/TiN/ALCu/Ti/TiN, **excluding top metal
+layers**",[^cyp-qtp-123907] so on the reading that SKY130's metal 5 is
+such a top metal layer, the TiW-capped stack described here is the one
+that change left in place (inference). The same report shows what the
+exclusion looked like in its own worked example: the S8DI top metal
+stayed "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A TiW" — TiW both under
+and over the aluminium — while its two thin levels moved to
+"150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN".[^cyp-qtp-123907]
+That top metal is a 2.2 µm stack, of the thickness class of the PDK's
+2 µm antenna entry rather than of the 1.2 µm film read here. This
+reference describes metal 5 as a Ti or TiW underlayer, some 1.2 µm of
+Al–Cu and a TiW cap (inference: the S8P line above, SkyWater's PVD film
+list, which includes "Aluminum both pure and Cu doped", "TiW" and
+"Collimated Ti",[^skw-01] and the fit of the PDK's thickness and sheet
+resistance to such a stack). Which levels of a five-metal S8P flow
+count as "top metal layers" is not public; the evidence and the
+confidence attached to this reading at each level are set out under
+{ref}`overview-metal-cap`.
 
 **How is via 4 filled?** No public source states how via 4 is filled.
 This reference describes no TiN liner, tungsten fill or plug polish for
@@ -200,7 +211,7 @@ fab (SKY130's recipe is not public); the film-by-film account is at
    walls and the oxide; Taguchi, Maeda and Aoyama improved aluminium via
    filling by controlling that outgassing.[^taguchi-1998]
 3. **Pre-clean.** A light argon {term}`sputter etch` to remove fluoride,
-   polymer and oxide residue from the TiW floors of the vias (industry
+   polymer and oxide residue from the cap floors of the vias (industry
    practice[^txt-05]); on a `cap2m` plate the same etch must not thin the
    plate (inference).
 4. **Underlayer.** Ti or TiW; {term}`collimated titanium <collimated sputtering>`[^rossnagel-1991] places
@@ -216,8 +227,10 @@ fab (SKY130's recipe is not public); the film-by-film account is at
    options; grain size and texture follow the structure-zone
    relations.[^thornton-1974] Thickness inferred from the 1.26 µm
    stack[^pdk-04] and the 1.2 µm antenna value.[^pdk-03]
-6. **TiW cap.** From a Ti:W target;[^pat-tiw-hitachi] its thickness is not
-   public (the lower-level analogue is 300 Å[^cyp-qtp-123907]).
+6. **TiW cap.** From a Ti:W target;[^pat-tiw-hitachi] its thickness is
+   not public (the nearest public analogue is the 300 Å TiW cap on the
+   **top** metal of the three-metal S8DI stack, whose lower levels are
+   capped with 500 Å of TiN instead[^cyp-qtp-123907]).
 7. **Metrology.** Sheet resistance by {term}`four-point probe` (the PDK's
    28.5 mΩ/sq[^pdk-07]); thickness by XRF or profilometry; reflectivity;
    stress by wafer bow — the largest of the flow; via-fill cross-sections
@@ -368,7 +381,16 @@ fab (SKY130's recipe is not public); the film-by-film account is at
   1.26 µm,[^pdk-04][^ann-16] the assumptions and antenna tables 1.2 µm or
   2 µm by flow;[^pdk-03][^pdk-11] that the 1.2 µm "S8PIR-10R" table
   applies to SKY130 is our reading (see {ref}`MM5 <step-162>`), and
-  whether the 1.26 µm includes the refractory layers is not public.
+  whether the 1.26 µm includes the refractory layers is not public. The
+  1.26 µm exceeds the 1.2 µm antenna value by 600 Å, which matches
+  neither published cladding: the S8DI top metal's is 500 + 300 = 800 Å
+  and the thin levels' Ti/TiW is 450 Å (our
+  arithmetic).[^cyp-qtp-123907][^cyp-qtp-014807]
+* **The cap.** That metal 5 is a "top metal layer" within the February
+  2014 S8P exclusion, and so kept its TiW cap, is this reference's
+  reading and not a published statement; the report does not say which
+  levels of a five-metal flow the exclusion covers.[^cyp-qtp-123907]
+  See {ref}`overview-metal-cap`.
 * **Metal-5 minimum width.** That SKY130 is an S8PIR* flow, under which
   the minimum-CD table and periphery rules both give 1.6 µm, is our
   reading of the background page;[^pdk-02] neither table names SKY130's
@@ -600,3 +622,8 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
     tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+[^cyp-qtp-014807]: Cypress Semiconductor, *Technology Derivative
+    Qualification Report, QTP# 014807 Version 2.0: Technology Derivative
+    R7FT-3R, Fab4, Synchronous Dual-Port RAM*, June 2005 (copy hosted by
+    Infineon Technologies).
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
