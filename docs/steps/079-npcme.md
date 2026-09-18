@@ -129,7 +129,9 @@ fab (SKY130's recipe is not public):
    flows grows an approximately 10 nm oxidised layer on the
    polysilicon that suppresses its etching, giving nitride-to-poly
    etch-rate ratios of about 40 with CF₄ and about 100 with NF₃, with
-   the oxide not etched at all.[^kastenmeier-1999] A few nanometres
+   the oxide not etched at all in the CF₄ process and a
+   nitride-to-oxide ratio of about 70 with NF₃.[^kastenmeier-1999]
+   A few nanometres
    of poly loss and a damaged layer of the kind Oehrlein
    reviewed[^oehrlein-1989] are unavoidable and are, we infer, part
    of why the poly heads are re-doped by the source/drain implants.

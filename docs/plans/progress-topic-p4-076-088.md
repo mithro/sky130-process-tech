@@ -26,6 +26,12 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 088-L1 | Low | fixed | Confirmed docs/categories/anneal.md:58-59 gives the "800-1000 C" statement unquoted with [^gibbons-1972][^txt-01], not as a quotation. Dropped the quotation marks here (txt-01 already defined on this page) so it doesn't read as Gibbons's own words. |
 | job-01 (rule 11) | — | left alone | Per coordinator instruction: a separate site-wide sweep under Common rule 11 handles `[^job-01]` everywhere; not touched in this branch. |
 
+## Verifier follow-ups (tmp/p4/verify-076-088.md)
+
+| id | status | note |
+|---|---|---|
+| verify-1 | fixed | Re-confirmed via Crossref abstract of 10.1116/1.582097: with NF3, Kastenmeier 1999 reports a nitride-to-oxide ratio of ~70, not "not etched at all" (that phrase applies only to the CF4 process, where SiO2 is not etched at all). Fixed 079-npcme.md:131-132 to state both cases correctly. |
+
 ## Final status
 
 All 16 findings resolved: 1 High fixed, 4 Medium fixed, 9 Low fixed,
