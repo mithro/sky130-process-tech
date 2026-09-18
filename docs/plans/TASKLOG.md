@@ -87,7 +87,7 @@ deep-dive entries per step page and twelve per category page
 
 ## Phase 4 — Review
 
-- [~] Technical accuracy review of every step page (independent agent) — per module batch: review report, fix branch `topic/p4-<range>`, verification of the fixes, merge
+- [~] Technical accuracy review of every step page (independent agent; all twelve batches reviewed, fixed, verified and merged 2026-09-18; open: the metal cap composition sweep, the job-listing citation sweep and the vendor-name spelling sweep) — per module batch: review report, fix branch `topic/p4-<range>`, verification of the fixes, merge
   - [x] 001–013 — reviewed, 45 findings fixed (trench depth re-derived from the PDK metal-stack drawing, substrate-doping device name), 3 declined with evidence, verified and merged 2026-09-18
   - [x] 014–034 — reviewed, 23 findings fixed (a truncated patent quotation, a tool class the patent never names, an RTP uniformity figure for the wrong wafer size, the HVTPM reading kept open on 020, 023 and 024), verified and merged 2026-09-18
   - [x] 035–047 — reviewed, 51 findings fixed (PDK threshold-measurement row misread, tunnel-oxide range on the wrong patent, readings used as settled fact), 1 declined, verified with four follow-ups and merged 2026-09-18
@@ -99,7 +99,7 @@ deep-dive entries per step page and twelve per category page
   - [x] 118–134 — reviewed, 17 findings fixed (a via called wider than the contact when it is narrower, solvents attributed to the wrong tool list, a patent filing date), recurring errors swept on pages outside the range, verified with follow-ups and merged 2026-09-18
   - [x] 135–148 — reviewed, 28 findings fixed (a phrase quoted from a patent that does not contain it, a MiM patent construction, the capacitor cross-section label used as evidence), seven metal-cap findings deferred to the dedicated sweep, verified with follow-ups and merged 2026-09-18
   - [x] 149–163 — reviewed, 33 findings fixed (via-4 fill and the S8PIR reading rest on more of the public evidence, two abstracts that had become retrievable), 11 metal-cap findings deferred to the dedicated sweep, verified with follow-ups and merged 2026-09-18
-  - [~] 164–171 — reviewed, fix round running
+  - [x] 164–171 — reviewed, 45 findings fixed (an alloy-temperature claim about hillocks and voids, a paper used against its own result, the polyimide question answered by the foundry's platform table, passivation thicknesses by report), verified with follow-ups and merged 2026-09-18
 - [ ] Conflict review across pages (consistent thicknesses, names, order)
 - [ ] Provenance review — repeat after each batch
 - [ ] Full Sphinx build with `-W` (warnings as errors)
