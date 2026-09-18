@@ -548,6 +548,8 @@ Status and expiry are estimates from public records and are not legal advice.
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.
     <https://patents.google.com/patent/US8093128B2/en>
+    Shown as in force; estimated expiry 2028-10-22 (estimate from public
+    records, not legal advice).
 [^txt-09]: Y. Nishi and R. Doering (eds.), *Handbook of Semiconductor
     Manufacturing Technology*, 2nd ed., CRC Press, 2007, ISBN
     978-1-57444-675-3. <https://openlibrary.org/isbn/9781574446753>

@@ -442,6 +442,8 @@ Status and expiry are estimates from public records and are not legal advice.
     system for laser soft marking*, US 7,705,268 B2, filed 2005-11-09,
     granted 2010-04-27.
     <https://patents.google.com/patent/US7705268B2/en>
+    Shown as in force; estimated expiry 2026-12-17 (estimate from public
+    records, not legal advice).
 [^thinklaser-sigmaclean]: Thinklaser USA, *SigmaClean: Debris-Free 100 -
     200 mm Wafer Marking*, product page, accessed 2026-09-13.
     <https://www.thinklaserusa.com/sigmaclean>

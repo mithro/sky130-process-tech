@@ -448,6 +448,8 @@ Status and expiry are estimates from public records and are not legal advice.
     metal-insulator-metal capacitors using selective etch of top
     electrodes*, US 8,110,414 B2, filed 2009-04-30, granted 2012-02-07.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8110414>
+    Shown as in force; estimated expiry 2030-01-02 (estimate from public
+    records, not legal advice).
 [^pat-mim-ti-alcap]: D. L. Crenshaw, B. L. Williams, A. Tsao,
     H. Shichijo, S. S. Papa Rao, K. D. Brennan and S. A. Lytle (Texas
     Instruments), *Metal insulator metal (MIM) capacitor fabrication

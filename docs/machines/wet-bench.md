@@ -414,6 +414,8 @@ Status and expiry are estimates from public records and are not legal advice.
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098
     B1, granted 2014-08-05.
     <https://patents.google.com/patent/US8796098B1/en>
+    Shown as in force; estimated expiry 2034-02-26 (estimate from public
+    records, not legal advice).
 [^wiki-boe]: Wikipedia, *Buffered oxide etch*.
     <https://en.wikipedia.org/wiki/Buffered_oxide_etch>
 [^vgh-1967]: W. van Gelder and V. E. Hauser, "The Etching of Silicon
@@ -483,6 +485,8 @@ Status and expiry are estimates from public records and are not legal advice.
     Instruments), *System and method for carbonation of deionized
     water*, EP 2 104 648 B1, granted 2013-04-17.
     <https://patents.google.com/patent/EP2104648B1/en>
+    Shown as in force; estimated expiry 2028-05-14 (estimate from public
+    records, not legal advice).
 [^pat-ekc-hydroxylamine]: W. M. Lee (EKC Technology), *Cleaning
     compositions for removing etching residue and method of using*,
     US 5,334,332 A, granted 1994-08-02.

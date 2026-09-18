@@ -387,6 +387,8 @@ Status and expiry are estimates from public records and are not legal advice.
     Instruments), *System and method for carbonation of deionized
     water*, EP 2 104 648 B1, granted 2013-04-17.
     <https://patents.google.com/patent/EP2104648B1/en>
+    Shown as in force; estimated expiry 2028-05-14 (estimate from public
+    records, not legal advice).
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22; the corporate-structure and lease
     passages on the Florida Center for NeoVation, the "Raw materials."

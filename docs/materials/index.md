@@ -743,9 +743,13 @@ supplier statement. The differences below remain.
     scheme for RRAM structure*, US 9,431,609 B2, filed 2014-08-14,
     granted 2016-08-30.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9431609>
+    Shown as in force; estimated expiry 2035-03-31 (estimate from public
+    records, not legal advice).
 [^pat-04]: K. Ramkumar, I. Kouznetsov and V. Prabhakar (Cypress
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098 B1,
     granted 2014-08-05. <https://patents.google.com/patent/US8796098B1/en>
+    Shown as in force; estimated expiry 2034-02-26 (estimate from public
+    records, not legal advice).
 [^pat-sti-amberwave]: M. T. Currie and A. J. Lochtefeld (AmberWave
     Systems Corporation; assigned to Taiwan Semiconductor Manufacturing
     Co. on 2010-01-26), *Shallow trench isolation process*,

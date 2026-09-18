@@ -1105,6 +1105,8 @@ filed 2007-06-13, published 2009-07-16.
 "about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å";
 LPCVD at 700–850 °C, 5–500 mTorr, N₂O/NH₃ and DCS/NH₃ gas ratios.
 Tier: deep dive.
+Shown as in force; estimated expiry 2027-06-17 (estimate from public
+records, not legal advice).
 
 **PAT-03** — US 8,093,128 B2, *"Integration of non-volatile charge trap
 memory devices and logic CMOS devices"*, W. Koutny et al. (Cypress);
@@ -1116,6 +1118,8 @@ module relative to the logic well/channel implants, gate oxidation at
 Also used on the vertical-furnace oxidation and LPCVD pages.
 Tier: deep dive.
 Also used on the TUNM, ONOM and LVOM mask pages.
+Shown as in force; estimated expiry 2028-10-22 (estimate from public
+records, not legal advice).
 
 **PAT-04** — US 8,796,098 B1, *"Embedded SONOS based memory cells"*,
 K. Ramkumar, I. Kouznetsov, V. Prabhakar (Cypress); filed 2013-09-04,
@@ -1130,6 +1134,8 @@ Also used on the wet chemicals material page.
 Also used on the substrates material page.
 Also used on the dopant gases and implant sources material page.
 Also used on the TUNM and LVOM mask pages.
+Shown as in force; estimated expiry 2034-02-26 (estimate from public
+records, not legal advice).
 
 **PAT-STI-CR** — US 7,439,141 B2, *"Shallow trench isolation approach
 for improved STI corner rounding"*, U. Kim, Y. Sun, M. S. Chang et al.;
@@ -4212,6 +4218,8 @@ integration of ONO stack formation into thick gate oxide CMOS flow*, US
 <https://patents.google.com/patent/US9824895B1/en> The alternative
 ordering with the thick gate oxide before the ONO, and why. Used on step
 043. Tier: cross-check.
+Shown as in force; estimated expiry 2037-09-27 (estimate from public
+records, not legal advice).
 
 **PAT-RADOX-CYP** — K. Ramkumar, S. Levy and J. Byun (Cypress
 Semiconductor), *Radical oxidation process for fabricating a nonvolatile
@@ -4219,6 +4227,8 @@ charge trap memory device*, US 8,940,645 B2, granted 2015-01-27.
 <https://patents.google.com/patent/US8940645B2/en> A radical oxidation
 process for the ONO stack with trap-free and trap-dense oxynitride
 layers. Used on step 040. Tier: deep dive.
+Shown as in force; estimated expiry 2029-01-14 (estimate from public
+records, not legal advice).
 
 #### SkyWater and PDK sources
 
@@ -8758,6 +8768,8 @@ section.
 Also used on the metal plasma etcher page.
 Tier: cross-check.
 Also used on the etch and chamber-clean gases material page.
+Shown as in force; estimated expiry 2030-01-02 (estimate from public
+records, not legal advice).
 
 **TURBAN-1989** — G. Turban, J. F. Coulon and N. Mutsukura, "A
 mechanistic study of SF₆ reactive ion etching of tungsten", *Thin Solid
@@ -9106,6 +9118,8 @@ US 10,062,748 B1, filed 2017-02-27, granted 2018-08-28.
 An edge seal etched through the dielectrics and lined with passivation,
 made with one mask. Used on steps 165, 166 and 167. Tier: deep dive.
 Also used on the NSM mask page.
+Shown as in force; estimated expiry 2038-02-27 (estimate from public
+records, not legal advice).
 
 **PAT-FUSE-IBM** — P.-I. P. Lee, W. A. Klaasen and A. Mitwalsky
 (International Business Machines), *Fuse window with controlled fuse
@@ -9205,6 +9219,8 @@ granted 2010-03-16.
 Parametric testlines and their probe pads in the scribe line. Used on
 steps 168 and 171. Tier: deep dive.
 Also used on the PDM mask page.
+Shown as in force; estimated expiry 2028-06-06 (estimate from public
+records, not legal advice).
 
 **PDK-IO-GPIOV2** — SkyWater PDK Authors, *skywater-pdk-libs-sky130_fd_io*
 repository, cell `sky130_fd_io__top_gpiov2`, GDS layout
@@ -9532,6 +9548,8 @@ TiN by vapour deposition), ALD HfOx from HfCl₄ and H₂O pulses plus
 HfAlOx, capping layer, top electrode, patterning by a masking layer with
 a fluorine or argon plasma, nitride sidewall spacers, bottom-electrode
 etch, upper ILD and a via landing on the top electrode. Tier: deep dive.
+Shown as in force; estimated expiry 2035-03-31 (estimate from public
+records, not legal advice).
 
 **PAT-RRAM-ETCHSTOP-TSMC** — M. C. Liu, Y.-T. Tseng, C.-Y. Hsu, S.-C. Liu
 and C.-S. Tsai (Taiwan Semiconductor Manufacturing Co.), *RRAM cell
@@ -9545,6 +9563,8 @@ and bottom electrode stopping on the etch-stop layer, and a third etch of
 that layer (Cl- or F-based dry etch, or wet); and an enveloping
 dielectric protection layer, reducing mask steps, CMP and copper etch
 by-products. Tier: deep dive.
+Shown as in force; estimated expiry 2035-03-04 (estimate from public
+records, not legal advice).
 
 **PAT-RRAM-INTERMOLECULAR** — M. Lee, T. Chiang and D. Pramanik
 (Intermolecular, Inc.), *Methods of manufacturing embedded bipolar
@@ -10749,6 +10769,8 @@ for wet cleaning, whose dissolved CO₂ lowers the water's resistivity "to
 a level that prevents surface charging". Used on the wet bench and spray
 processor page. Tier: cross-check (patent).
 Also used on the ultrapure water material page.
+Shown as in force; estimated expiry 2028-05-14 (estimate from public
+records, not legal advice).
 
 **PAT-EKC-HYDROXYLAMINE** — W. M. Lee (EKC Technology), *Cleaning
 compositions for removing etching residue and method of using*,
@@ -11867,6 +11889,8 @@ industrial laser marking system on silicon wafer", the "debris free"
 Supersoftmark® of the Wafermark Sigma Clean and its narrow energy
 window, and soft-mark depth set by pulse width. Used on the
 starting-material machine page. Tier: deep dive.
+Shown as in force; estimated expiry 2026-12-17 (estimate from public
+records, not legal advice).
 
 **PAT-LASERMARK-WACKER** — F. Kuhn-Kuhnenfeld, J. Kramler and H.-A.
 Gerber (Wacker Siltronic), *Method of making reference surface markings

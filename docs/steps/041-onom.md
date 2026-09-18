@@ -271,10 +271,14 @@ Status and expiry are estimates from public records and are not legal advice.
     Semiconductor), *Embedded SONOS based memory cells*, US 8,796,098
     B1, granted 2014-08-05.
     <https://patents.google.com/patent/US8796098B1/en>
+    Shown as in force; estimated expiry 2034-02-26 (estimate from public
+    records, not legal advice).
 [^pat-03]: W. Koutny et al. (Cypress Semiconductor), *Integration of
     non-volatile charge trap memory devices and logic CMOS devices*, US
     8,093,128 B2, granted 2012-01-10.
     <https://patents.google.com/patent/US8093128B2/en>
+    Shown as in force; estimated expiry 2028-10-22 (estimate from public
+    records, not legal advice).
 [^cyp-22]: Cypress Semiconductor / UMC, *Cypress and UMC Deliver ICs on
     New 65-Nanometer SONOS Embedded Flash Technology*, PR Newswire,
     2011-07-27.
