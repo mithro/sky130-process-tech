@@ -68,7 +68,7 @@ nanometres of argon {term}`sputter etch` would remove a large fraction
 of the capacitor dielectric, and the film's stress and its deposition energy matter
 because the dielectric beneath is thin enough to be damaged by them
 (inference from the geometry; the same concern shapes the TiN top
-plates of the published processes[^kar-roy-1999][^pat-mim-newportfab]).
+plate of the published Newport Fab process[^pat-mim-newportfab]).
 
 ## Why this step exists
 
