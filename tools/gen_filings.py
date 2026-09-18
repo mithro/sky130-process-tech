@@ -161,6 +161,13 @@ def entry_lines(r: dict) -> list[str]:
     filed_clause = f"filed {r['filed']}" + (f"; {ident}" if ident else "")
     head = f"**{esc(r['company'])} — {esc(r['title'])}** ({filed_clause})."
     out = [f"(filing-{r['id']})=", f"* {head}", f"  {links_line(r)}"]
+    # FIL-R1-12: a current report's or exhibit's title carries no period (unlike a
+    # 10-K's "fiscal year NNNN" or a 10-Q's "quarter ended ..."), so period.label
+    # (e.g. "event of 2022-03-29") would otherwise never reach a page.
+    period = r.get("period")
+    label = period.get("label") if isinstance(period, dict) else None
+    if label and r.get("document_type") in ("current-report", "exhibit"):
+        out.append(f"  Period: {esc(label)}.")
     out.append(f"  {esc(r['about']['summary'])} {quotes_text(r)}")
     aud = r.get("auditor_report")
     if aud:
