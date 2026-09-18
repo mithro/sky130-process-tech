@@ -66,7 +66,8 @@ with the via-2 numbers:
   *below* the target and adding a cap of well-controlled thickness
   tightens the final 0.42 µm[^pdk-04] (industry practice[^txt-05]),
   which in turn tightens the over-etch {ref}`VIM2E <step-130>` needs
-  to reach every TiW cap without punching through it.
+  to reach every metal-2 cap without punching through it
+  ({ref}`overview-metal-cap`).
 * **Sealing the polished surface.** Oxide CMP leaves micro-scratches
   and embedded slurry particles — Devriendt et al. relate them to
   the post-CMP clean[^devriendt-1998] — and a hydrated, hydroxyl-rich
