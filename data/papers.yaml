@@ -469,6 +469,56 @@
     abstract does not name a process.'
   verified: 2026-09-14 Crossref REST API works/10.1109/asmc49169.2020.9185229 resolved; title matches
     Crossref and OpenAlex
+- id: doi:10.1038/s41928-020-0419-7
+  label: paper-bishop-2020a
+  title: Fabrication of carbon nanotube field-effect transistors in commercial silicon manufacturing
+    facilities
+  title_display: Fabrication of carbon nanotube field-effect transistors in commercial silicon manufacturing
+    facilities
+  authors:
+  - Mindy D. Bishop
+  - Gage Hills
+  - Tathagata Srimani
+  - Christian Lau
+  - Denis Murphy
+  - Samuel Fuller
+  - Jefford Humes
+  - Anthony Ratkovich
+  - Mark Nelson
+  - Max M. Shulaker
+  year: 2020
+  venue: Nature Electronics
+  venue_series: Nature Electronics
+  venue_type: journal
+  volume: '3'
+  issue: '8'
+  pages: 492-501
+  article_number: null
+  doi: 10.1038/s41928-020-0419-7
+  landing_url: https://www.nature.com/articles/s41928-020-0419-7
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - beol-integration
+  - device-characterisation
+  basis: affiliation-inference
+  institutions:
+  - Massachusetts Institute of Technology
+  - Analog Devices, Inc.
+  - Raymor NanoIntegris
+  - SkyWater Technology
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex raw_affiliation_strings.search:SkyWater (round 3, previously unsearched surface)
+  notes: 'Fab publication: two authors (Ratkovich, Nelson) affiliated with SkyWater Technology, Bloomington,
+    MN. Publisher restricts abstract distribution (OpenAlex and Crossref both return no abstract text),
+    so the process link rests on the public affiliation record rather than a retrieved quotation; carbon-nanotube
+    FETs fabricated on 200 mm wafers in a commercial silicon foundry, per the title and Crossref metadata.'
+  verified: 2026-09-19 Crossref REST API works/10.1038/s41928-020-0419-7 resolved; title, authors, year,
+    volume, issue and pages match Crossref and OpenAlex
 - id: web:woset-2020-a03
   label: paper-edwards-2020a
   title: Google/SkyWater and the Promise of the Open PDK
@@ -775,6 +825,50 @@
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/lssc.2022.3188925 resolved; title matches Crossref
     and OpenAlex
+- id: doi:10.1109/led.2022.3144936
+  label: paper-yu-2022a
+  title: Foundry Integration of Carbon Nanotube FETs With 320 nm Contacted Gate Pitch Using New Lift-Off-Free
+    Process
+  title_display: Foundry Integration of Carbon Nanotube FETs With 320 nm Contacted Gate Pitch Using New
+    Lift-Off-Free Process
+  authors:
+  - Andrew Yu
+  - Tathagata Srimani
+  - Christian Lau
+  - Brian Benton
+  - Mark Nelson
+  - Max M. Shulaker
+  year: 2022
+  venue: IEEE Electron Device Letters
+  venue_series: IEEE Electron Device Letters
+  venue_type: journal
+  volume: '43'
+  issue: '3'
+  pages: 486-489
+  article_number: null
+  doi: 10.1109/led.2022.3144936
+  landing_url: https://ieeexplore.ieee.org/document/9686743/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - beol-integration
+  - device-characterisation
+  basis: affiliation-inference
+  institutions:
+  - Massachusetts Institute of Technology
+  - SkyWater Technology
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex raw_affiliation_strings.search:SkyWater (round 3, previously unsearched surface)
+  notes: 'Fab publication: two authors (Benton, Nelson) affiliated with SkyWater Technology Foundry, Bloomington,
+    MN. The abstract states the lift-off-free CNFET contact process "is implemented in a commercial silicon
+    CMOS foundry" and reports measured on-current and subthreshold-swing improvements, but does not name
+    SkyWater; the process link rests on the public affiliation record.'
+  verified: 2026-09-19 Crossref REST API works/10.1109/led.2022.3144936 resolved; title, authors, year,
+    volume, issue and pages match Crossref and OpenAlex
 - id: doi:10.1109/icm56065.2022.10005367
   label: paper-alshaya-2022a
   title: RRAM, Device, Model and Memory
@@ -862,6 +956,44 @@
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/access.2023.3336408 resolved; title matches Crossref
     and OpenAlex
+- id: doi:10.1109/itc51656.2023.00035
+  label: paper-dubey-2023a
+  title: A Full-Stack Approach for Side-Channel Secure ML Hardware
+  title_display: A Full-Stack Approach for Side-Channel Secure ML Hardware
+  authors:
+  - Anuj Dubey
+  - Aydin Aysu
+  year: 2023
+  venue: 2023 IEEE International Test Conference (ITC)
+  venue_series: ITC
+  venue_type: conference
+  volume: null
+  issue: null
+  pages: 186-195
+  article_number: null
+  doi: 10.1109/itc51656.2023.00035
+  landing_url: https://ieeexplore.ieee.org/document/10351114/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - security
+  - digital
+  basis: named-process
+  institutions:
+  - North Carolina State University
+  fabrication:
+    quote: Fourth, we fabricate the final solution at Skywater 130nm node.
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex fulltext.search:skywater (round 3)
+  notes: Companion paper of the included paper-dubey-2026a (same first author, same side-channel-protected
+    ML hardware project); this ITC 2023 paper is the full-stack security methodology, and the later IEEE
+    Design & Test article reports the same design's ASIC tape-out and measurements.
+  verified: 2026-09-19 Crossref REST API works/10.1109/itc51656.2023.00035 resolved; title, authors, year
+    and pages match Crossref and OpenAlex
 - id: doi:10.1109/iscas46773.2023.10182052
   label: paper-chen-2023a
   title: An Open-Source $4 \times 8$ Coarse-Grained Reconfigurable Array Using SkyWater 130 nm Technology
@@ -1452,6 +1584,47 @@
     developed custom fill insertion, and a power ring was needed for technologies "with fewer number of
     metal layers like SKY130".'
   verified: 2026-09-14 WOSET proceedings page lists the title and authors; PDF fetched (HTTP 200)
+- id: doi:10.1109/mcsoc64144.2024.00066
+  label: paper-teo-2024a
+  title: Open-AI Driven Open-source Open-access Sustainable ICs Design Flow
+  title_display: Open-AI Driven Open-source Open-access Sustainable ICs Design Flow
+  authors:
+  - Tee Hui Teo
+  - Maoyang Xiang
+  - Emil Goh
+  - Huan-Ke Hsu
+  year: 2024
+  venue: 2024 IEEE 17th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)
+  venue_series: MCSoC
+  venue_type: conference
+  volume: null
+  issue: null
+  pages: 361-365
+  article_number: null
+  doi: 10.1109/mcsoc64144.2024.00066
+  landing_url: https://ieeexplore.ieee.org/document/10819560/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - power-management
+  - tooling
+  basis: named-process
+  institutions:
+  - Singapore University of Technology and Design
+  fabrication:
+    quote: The three-phase PWM was implemented in SkyWater 130 nm CMOS technology and tapeout through
+      a low-cost multi-project wafer (MPW).
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex fulltext.search:skywater and title_and_abstract.search:"open-source 130 nm PDK" (round 3)
+  notes: An LLM-designed three-phase PWM taped out on a SkyWater 130 nm MPW; names the process where its
+    two PWM-design siblings (arxiv:2405.02329, doi:10.1109/peds63958.2025.11144900, both excluded) do not,
+    so those exclusion reasons should be read alongside this record.
+  verified: 2026-09-19 Crossref REST API works/10.1109/mcsoc64144.2024.00066 resolved; title, authors,
+    year and pages match Crossref and OpenAlex
 - id: doi:10.1109/mdat.2024.3405892
   label: paper-marin-2024a
   title: Open-Source Multilevel Converter Power IC Design and Test
@@ -1545,9 +1718,112 @@
   discovery:
   - OpenAlex title/abstract search for SKY130 and SkyWater terms
   - OpenAlex full-text search for sky130
-  notes: null
+  notes: The Authorea preprint doi:10.22541/au.172413095.53999511/v1 (listed above as a free copy) is
+    this paper's preprint; its title differs only by "Analog"/"Analogue" casefold, which id- and title-based
+    dedup checks can miss (round 3, R2-23).
   verified: 2026-09-14 Crossref REST API works/10.1049/ell2.70036 resolved; title matches Crossref and
     OpenAlex
+- id: doi:10.1109/mssc.2024.3380586
+  label: paper-li-2024a
+  title: 'Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon: Paving the Way
+    for Low-Cost and Robust Flexible Wearable Sensing'
+  title_display: 'Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon: Paving
+    the Way for Low-Cost and Robust Flexible Wearable Sensing'
+  authors:
+  - Anhang Li
+  - Hongyi Wu
+  - Madhulika Lingamguntla
+  - Ashbir Aviat Fadila
+  - Chan-Ho Kye
+  - Arvind Balijepalli
+  - Tim Ansell
+  - Nigel J. Coburn
+  - Sachin Nadig
+  - Mehdi Saligane
+  year: 2024
+  venue: IEEE Solid-State Circuits Magazine
+  venue_series: IEEE Solid-State Circuits Magazine
+  venue_type: magazine
+  volume: '16'
+  issue: '2'
+  pages: 49-57
+  article_number: null
+  doi: 10.1109/mssc.2024.3380586
+  landing_url: https://ieeexplore.ieee.org/document/10584418/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - sensors
+  basis: named-process
+  institutions:
+  - University of Michigan
+  - Tokyo Institute of Technology
+  - University of Suwon
+  - National Institute of Standards and Technology
+  - Arc PBC
+  - Google
+  fabrication:
+    quote: physical chip fabrication runs over the past few years, such as OpenMPW, through semiconductor
+      CMOS processes provided by Skywater (SKY130)
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex fulltext.search:sky130 and fulltext.search:skywater (round 3)
+  notes: Reports the design, in-house fabrication and testing of an AFE ASIC on an OpenMPW SKY130 run,
+    with the ASIC used to read out separately fabricated laser-induced-graphene sensors.
+  verified: 2026-09-19 Crossref REST API works/10.1109/mssc.2024.3380586 resolved; title, authors, year,
+    volume, issue and pages match Crossref and OpenAlex
+- id: doi:10.3390/electronics13091704
+  label: paper-baungarten-leon-2024a
+  title: 'The Genesis of AI by AI Integrated Circuit: Where AI Creates AI'
+  title_display: 'The Genesis of AI by AI Integrated Circuit: Where AI Creates AI'
+  authors:
+  - Emilio Isaac Baungarten-Leon
+  - Susana Ortega Cisneros
+  - Mohamed Abdelmoneum
+  - Ruth Yadira Vidana Morales
+  - German Pinedo-Diaz
+  year: 2024
+  venue: Electronics
+  venue_series: Electronics
+  venue_type: journal
+  volume: '13'
+  issue: '9'
+  pages: '1704'
+  article_number: null
+  doi: 10.3390/electronics13091704
+  landing_url: https://www.mdpi.com/2079-9292/13/9/1704
+  arxiv: null
+  paywalled: false
+  free_full_text:
+  - url: https://www.mdpi.com/2079-9292/13/9/1704
+    host: www.mdpi.com
+    oa_type: gold (publisher version, CC BY 4.0)
+    located_via: OpenAlex open-access data; Crossref license record
+    checked: '2026-09-19 HTTP 403 to the scripted request (site refuses automated access)'
+  topics:
+  - digital
+  - tooling
+  basis: named-process
+  institutions:
+  - Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional
+  - Universidad Autónoma de Guadalajara
+  - Intel Corporation
+  fabrication:
+    quote: its manufacturing with the first fabricable open-source Process Design Kit (PDK), SKY130A
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex citing-works of doi:10.1145/3400302.3415735 (Building OpenLANE) (round 3)
+  - OpenAlex title_and_abstract.search:"open-source 130 nm PDK" (round 3)
+  notes: A CNN IC whose RTL was entirely written by an LLM (ChatGPT-4) and manufactured on SKY130A. A companion
+    Electronics paper (doi:10.3390/electronics13091705) covers the same project's GF180 implementation
+    instead of SKY130 and is out of scope.
+  verified: 2026-09-19 Crossref REST API works/10.3390/electronics13091704 resolved; title, authors, year,
+    volume, issue and pages match Crossref and OpenAlex
 - id: doi:10.1109/ispacs68724.2025.11383342
   label: paper-irfansyah-2025a
   title: A Silicon-Proven Wide-Range Voltage Controlled Oscillator Designed Using Open-Source CMOS 130nm
@@ -1685,6 +1961,55 @@
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/iedm50572.2025.11353729 resolved; title matches
     Crossref and OpenAlex
+- id: doi:10.1109/tim.2025.3635830
+  label: paper-pepel-2025a
+  title: Frequency Decomposition for Identification and Time Constant Extraction in Random Telegraph Noise
+    Analysis
+  title_display: Frequency Decomposition for Identification and Time Constant Extraction in Random Telegraph
+    Noise Analysis
+  authors:
+  - Victor D. Pepel
+  - Julie V. Logan
+  - Christian P. Morath
+  - Fahad Al Mamun
+  - Jereme Neuendank
+  - Vince Cowan
+  - Mohamed Nour
+  - Mike Chambers
+  - Diana Maestas
+  year: 2025
+  venue: IEEE Transactions on Instrumentation and Measurement
+  venue_series: IEEE Transactions on Instrumentation and Measurement
+  venue_type: journal
+  volume: '74'
+  issue: null
+  pages: 1-11
+  article_number: null
+  doi: 10.1109/tim.2025.3635830
+  landing_url: https://ieeexplore.ieee.org/document/11263955/
+  arxiv: null
+  paywalled: true
+  free_full_text: []
+  topics:
+  - reliability
+  - device-characterisation
+  basis: affiliation-inference
+  institutions:
+  - BlueHalo
+  - Air Force Research Laboratory
+  - Arizona State University
+  - SkyWater Technology
+  fabrication: null
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex raw_affiliation_strings.search:SkyWater (round 3, previously unsearched surface)
+  notes: 'Fab publication: two authors (Nour, Chambers) affiliated with SkyWater Technology, Bloomington,
+    MN. Introduces an RTN time-constant-extraction algorithm benchmarked on measured low- and high-voltage
+    pFET signals; the abstract does not name SkyWater or the process it measured, so the link rests on
+    the public affiliation record.'
+  verified: 2026-09-19 Crossref REST API works/10.1109/tim.2025.3635830 resolved; title, authors, year,
+    volume and pages match Crossref and OpenAlex
 - id: doi:10.1109/isqed65160.2025.11014456
   label: paper-li-2025a
   title: 'Open-ALOE: An Analog Layout Automation Flow for the Open-Source Ecosystem'

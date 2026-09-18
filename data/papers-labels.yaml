@@ -1,7 +1,3 @@
-# Append-only map of published paper-index labels (docs/references/papers/) to paper ids.
-# A label, once published, is never removed, renamed or given to another paper; an id
-# correction is recorded in previous_ids.  Checked by tools/check_papers.py and, against the
-# merge base, by tools/gen_papers.py --check.
 - label: paper-akturk-2023a
   id: doi:10.1109/bcicts54660.2023.10310944
   previous_ids: []
@@ -10,10 +6,18 @@
   id: doi:10.1109/icm56065.2022.10005367
   previous_ids: []
   published: '2026-09-14'
+- label: paper-baungarten-leon-2024a
+  id: doi:10.3390/electronics13091704
+  previous_ids: []
+  published: '2026-09-19'
 - label: paper-beall-2026a
   id: arxiv:2604.21625
   previous_ids: []
   published: '2026-09-14'
+- label: paper-bishop-2020a
+  id: doi:10.1038/s41928-020-0419-7
+  previous_ids: []
+  published: '2026-09-19'
 - label: paper-blocklove-2024a
   id: doi:10.1109/lad62341.2024.10691811
   previous_ids: []
@@ -50,6 +54,10 @@
   id: doi:10.1109/jxcdc.2026.3670667
   previous_ids: []
   published: '2026-09-14'
+- label: paper-dubey-2023a
+  id: doi:10.1109/itc51656.2023.00035
+  previous_ids: []
+  published: '2026-09-19'
 - label: paper-dubey-2026a
   id: doi:10.1109/mdat.2026.3670063
   previous_ids: []
@@ -110,6 +118,10 @@
   id: doi:10.1109/ted.2021.3097975
   previous_ids: []
   published: '2026-09-14'
+- label: paper-li-2024a
+  id: doi:10.1109/mssc.2024.3380586
+  previous_ids: []
+  published: '2026-09-19'
 - label: paper-li-2025a
   id: doi:10.1109/isqed65160.2025.11014456
   previous_ids: []
@@ -142,6 +154,10 @@
   id: doi:10.1109/austrochip67945.2025.11183685
   previous_ids: []
   published: '2026-09-14'
+- label: paper-pepel-2025a
+  id: doi:10.1109/tim.2025.3635830
+  previous_ids: []
+  published: '2026-09-19'
 - label: paper-poole-2023a
   id: doi:10.1109/access.2023.3336408
   previous_ids: []
@@ -186,6 +202,10 @@
   id: doi:10.1109/sbcci66862.2025.11218693
   previous_ids: []
   published: '2026-09-14'
+- label: paper-teo-2024a
+  id: doi:10.1109/mcsoc64144.2024.00066
+  previous_ids: []
+  published: '2026-09-19'
 - label: paper-upton-2023a
   id: doi:10.1109/isqed57927.2023.10129298
   previous_ids: []
@@ -198,7 +218,12 @@
   id: doi:10.1109/mdat.2024.3444728
   previous_ids: []
   published: '2026-09-14'
+- label: paper-yu-2022a
+  id: doi:10.1109/led.2022.3144936
+  previous_ids: []
+  published: '2026-09-19'
 - label: paper-zhang-2022a
   id: doi:10.1109/lssc.2022.3188925
   previous_ids: []
   published: '2026-09-14'
+

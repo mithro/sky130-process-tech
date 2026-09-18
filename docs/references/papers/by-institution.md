@@ -27,24 +27,33 @@ table.
 * {ref}`paper-hsieh-2019a` — E.R. Hsieh et al., IEDM 2019 (affiliation inference)
 * {ref}`paper-grover-2019a` — Sidhant Grover and Philip Thompson, ASMC 2019 (affiliation inference)
 * {ref}`paper-conway-2020a` — Tim Conway, ASMC 2020 (affiliation inference)
+* {ref}`paper-bishop-2020a` — Mindy D. Bishop et al., Nature Electronics 2020 (affiliation inference)
 * {ref}`paper-srimani-2020a` — T. Srimani et al., VLSI Symposium 2020 (affiliation inference)
 * {ref}`paper-gross-2021a` — David Gross et al., ASMC 2021 (affiliation inference)
 * {ref}`paper-hsieh-2021a` — E. R. Hsieh et al., IEEE Electron Device Letters 2021 (affiliation inference)
 * {ref}`paper-le-2021a` — Binh Q. Le et al., IEEE Transactions on Electron Devices 2021 (affiliation inference)
+* {ref}`paper-yu-2022a` — Andrew Yu et al., IEEE Electron Device Letters 2022 (affiliation inference)
 * {ref}`paper-srimani-2023a` — T. Srimani et al., VLSI Symposium 2023
 * {ref}`paper-upton-2023a` — Luke R. Upton et al., ISQED 2023
 * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025
+* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
 
 ## Other institutions
 
 | Institution | Papers |
 |---|---|
+| Air Force Research Laboratory | {ref}`paper-pepel-2025a` |
 | Analog Devices | {ref}`paper-srimani-2023a` |
+| Analog Devices, Inc. | {ref}`paper-bishop-2020a` |
 | Apple | {ref}`paper-yang-2024a` |
+| Arc PBC | {ref}`paper-li-2024a` |
+| Arizona State University | {ref}`paper-pepel-2025a` |
 | BAL-TEC Innovations | {ref}`paper-wang-2006a` |
 | Barcelona Supercomputing Center | {ref}`paper-rodriguez-ferrandez-2023a` |
+| BlueHalo | {ref}`paper-pepel-2025a` |
 | Cannan Inc. | {ref}`paper-yang-2024a` |
 | Carnegie Mellon University | {ref}`paper-singhani-2023a`, {ref}`paper-choi-2025a` |
+| Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional | {ref}`paper-baungarten-leon-2024a` |
 | CONICET | {ref}`paper-marin-2024a` |
 | CoolCAD Electronics | {ref}`paper-akturk-2023a` |
 | EeroQ Corporation | {ref}`paper-castoria-2025a` |
@@ -56,32 +65,38 @@ table.
 | g.tec Medical Engineering GmbH | {ref}`paper-olyanasab-2025a` |
 | Galiso, Inc. | {ref}`paper-grenci-2001a` |
 | Georgia Institute of Technology | {ref}`paper-hasler-2024a`, {ref}`paper-mathews-2024a`, {ref}`paper-maldonado-2026a` |
-| Google | {ref}`paper-zhang-2022a` |
+| Google | {ref}`paper-zhang-2022a`, {ref}`paper-li-2024a` |
 | Harvard University | {ref}`paper-srimani-2023a` |
 | Heidelberg University | {ref}`paper-shah-2023a` |
 | Imperial College London | {ref}`paper-alshaya-2022a` |
 | Institut Teknologi Sepuluh Nopember | {ref}`paper-irfansyah-2025a` |
+| Intel Corporation | {ref}`paper-baungarten-leon-2024a` |
 | Intrinsix | {ref}`paper-srimani-2020a`, {ref}`paper-upton-2023a` |
 | IOActive | {ref}`paper-cirimelli-low-2023a` |
 | Johannes Kepler University Linz | {ref}`paper-olyanasab-2025a` |
 | Marmara University | {ref}`paper-karatas-2025a` |
-| Massachusetts Institute of Technology | {ref}`paper-srimani-2020a`, {ref}`paper-srimani-2023a`, {ref}`paper-choi-2025a` |
+| Massachusetts Institute of Technology | {ref}`paper-bishop-2020a`, {ref}`paper-srimani-2020a`, {ref}`paper-yu-2022a`, {ref}`paper-srimani-2023a`, {ref}`paper-choi-2025a` |
 | Microelectronics Circuits Centre Ireland (MCCI) | {ref}`paper-montanares-2025a` |
 | NanoIntegris | {ref}`paper-srimani-2020a` |
 | National Central University | {ref}`paper-hsieh-2021a`, {ref}`paper-le-2021a` |
+| National Institute of Standards and Technology | {ref}`paper-li-2024a` |
 | New Mexico State University | {ref}`paper-hossain-2026a` |
 | New York University | {ref}`paper-blocklove-2024a` |
-| North Carolina State University | {ref}`paper-dubey-2026a` |
+| North Carolina State University | {ref}`paper-dubey-2023a`, {ref}`paper-dubey-2026a` |
 | Oklahoma State University | {ref}`paper-hossain-2026a` |
 | Onto Innovation | {ref}`paper-gross-2021a` |
 | Open Circuit Design | {ref}`paper-edwards-2020a` |
 | Pantex Plant | {ref}`paper-price-2025a` |
+| Raymor NanoIntegris | {ref}`paper-bishop-2020a` |
 | Rice University | {ref}`paper-beall-2026a` |
 | San José State University | {ref}`paper-hsieh-2021a`, {ref}`paper-le-2021a` |
 | Simtek Corporation | {ref}`paper-fliesler-2008a` |
+| Singapore University of Technology and Design | {ref}`paper-teo-2024a` |
 | Stanford University | {ref}`paper-hsieh-2019a`, {ref}`paper-hsieh-2021a`, {ref}`paper-le-2021a`, {ref}`paper-poole-2023a`, {ref}`paper-chen-2023a`, {ref}`paper-srimani-2023a`, {ref}`paper-upton-2023a`, {ref}`paper-choi-2025a`, {ref}`paper-li-2025a` |
 | Taiwan Semiconductor Manufacturing Company | {ref}`paper-hsieh-2021a` |
 | Texas A&M University | {ref}`paper-price-2025a` |
+| Tokyo Institute of Technology | {ref}`paper-li-2024a` |
+| Universidad Autónoma de Guadalajara | {ref}`paper-baungarten-leon-2024a` |
 | Universidad Católica del Uruguay | {ref}`paper-marin-2024a` |
 | Universidad de Chile | {ref}`paper-munoz-2026a` |
 | Universidad Nacional de Colombia | {ref}`paper-maldonado-2026a` |
@@ -96,8 +111,9 @@ table.
 | University of California, Santa Cruz | {ref}`paper-cirimelli-low-2023a` |
 | University of Hawaiʻi at Mānoa | {ref}`paper-li-2025a` |
 | University of Maryland, College Park | {ref}`paper-chen-2024a`, {ref}`paper-didin-2026a`, {ref}`paper-bloomer-2026a` |
-| University of Michigan | {ref}`paper-zhang-2022a`, {ref}`paper-akturk-2023a` |
+| University of Michigan | {ref}`paper-zhang-2022a`, {ref}`paper-akturk-2023a`, {ref}`paper-li-2024a` |
 | University of New South Wales | {ref}`paper-blocklove-2024a` |
+| University of Suwon | {ref}`paper-li-2024a` |
 | University of Texas at Arlington | {ref}`paper-beall-2026a` |
 | University of Texas at El Paso | {ref}`paper-price-2025a` |
 | Wellesley College | {ref}`paper-beall-2026a` |

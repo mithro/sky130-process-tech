@@ -7,6 +7,10 @@ Papers by type of venue, then by venue series.
 
 ## Journal articles
 
+### Electronics
+
+* {ref}`paper-baungarten-leon-2024a` — Emilio Isaac Baungarten-Leon et al., Electronics 2024 (free copy)
+
 ### Electronics Letters
 
 * {ref}`paper-chen-2024a` — Matthew Chen et al., Electronics Letters 2024 (free copy)
@@ -23,6 +27,7 @@ Papers by type of venue, then by venue series.
 ### IEEE Electron Device Letters
 
 * {ref}`paper-hsieh-2021a` — E. R. Hsieh et al., IEEE Electron Device Letters 2021 (affiliation inference)
+* {ref}`paper-yu-2022a` — Andrew Yu et al., IEEE Electron Device Letters 2022 (affiliation inference)
 
 ### IEEE Journal on Exploratory Solid-State Computational Devices and Circuits
 
@@ -40,6 +45,10 @@ Papers by type of venue, then by venue series.
 
 * {ref}`paper-le-2021a` — Binh Q. Le et al., IEEE Transactions on Electron Devices 2021 (affiliation inference)
 
+### IEEE Transactions on Instrumentation and Measurement
+
+* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
+
 ### Journal of Vacuum Science & Technology B
 
 * {ref}`paper-ivanov-2006a` — Ivan P. Ivanov et al., Journal of Vacuum Science & Technology B 2006 (affiliation inference)
@@ -48,11 +57,19 @@ Papers by type of venue, then by venue series.
 
 * {ref}`paper-wang-2006a` — N Wang et al., Microscopy and Microanalysis 2006 (affiliation inference)
 
+### Nature Electronics
+
+* {ref}`paper-bishop-2020a` — Mindy D. Bishop et al., Nature Electronics 2020 (affiliation inference)
+
 ## Magazine articles
 
 ### IEEE Design & Test
 
 * {ref}`paper-dubey-2026a` — Anuj Dubey et al., IEEE Design & Test 2026
+
+### IEEE Solid-State Circuits Magazine
+
+* {ref}`paper-li-2024a` — Anhang Li et al., IEEE Solid-State Circuits Magazine 2024
 
 ## Conference papers
 
@@ -121,9 +138,17 @@ Papers by type of venue, then by venue series.
 * {ref}`paper-smith-2005a` — E. Smith and A. Raviswaran, ISSM 2005 (affiliation inference)
 * {ref}`paper-smith-2006a` — Eugene Smith and Russell Elias, ISSM 2006 (affiliation inference)
 
+### ITC
+
+* {ref}`paper-dubey-2023a` — Anuj Dubey and Aydin Aysu, ITC 2023
+
 ### LASCAS
 
 * {ref}`paper-maldonado-2026a` — Diana N. Maldonado R. et al., LASCAS 2026
+
+### MCSoC
+
+* {ref}`paper-teo-2024a` — Tee Hui Teo et al., MCSoC 2024
 
 ### SBCCI
 

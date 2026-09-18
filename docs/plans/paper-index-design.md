@@ -1,11 +1,15 @@
 # Academic paper index — design
 
-Status: 2026-09-14. Dataset, generator and pages done and reviewed twice
-(`data/papers.yaml`, `data/papers-excluded.yaml`, `data/papers-labels.yaml`,
-`tools/check_papers.py`, `tools/gen_papers.py`, `docs/references/papers/`).
-Not yet done: links to the paper pages from pages outside
-`docs/references/` (deferred on instruction; see §7). This file lives in
-`docs/plans/`, which the Sphinx build excludes.
+Status: 2026-09-19 (round 3). Dataset, generator and pages done and
+reviewed three times (`data/papers.yaml`, `data/papers-excluded.yaml`,
+`data/papers-labels.yaml`, `tools/check_papers.py`, `tools/gen_papers.py`,
+`docs/references/papers/`). Round 3 added a `names_process` field (with
+`authors` and `venue`) to `data/papers-excluded.yaml` and a generated
+page, `designed-on-sky130.md`, listing the excluded records that name the
+process without reporting fabrication (§2.2, §4). Not yet done: links to
+the paper pages from pages outside `docs/references/` (deferred on
+instruction; see §7). This file lives in `docs/plans/`, which the Sphinx
+build excludes.
 
 ## 1. Purpose and scope
 
@@ -96,12 +100,30 @@ It is the single source of truth; pages are generated from it.
 
 ### 2.2 `data/papers-excluded.yaml`
 
-A YAML list of `{id, title, year, status, reason, decided}`, where
-`status` is `excluded` (outside §1) or `held` (possibly in scope; waiting
-for a full-text check, for example because the abstract does not name
-the process and the publisher refuses scripted requests). An id may not
-appear in both files. A held paper moves to `papers.yaml` when its full
-text is read and names the process.
+A YAML list of `{id, title, authors, year, venue, status, names_process,
+reason, decided}`, where `status` is `excluded` (outside §1) or `held`
+(possibly in scope; waiting for a full-text check, for example because
+the abstract does not name the process and the publisher refuses
+scripted requests). An id may not appear in both files. A held paper
+moves to `papers.yaml` when its full text is read and names the process.
+
+`authors` (a list, empty when not recorded — for example a workshop
+paper with no proceedings page) and `venue` (a string, or null when not
+recorded) are the same citation fields as `papers.yaml`, gathered from
+Crossref, OpenAlex or the arXiv record. `names_process` is `true` when
+the record's title or reason names SKY130, the SkyWater 130 nm process
+or the SkyWater foundry (the literal test behind `basis: named-process`
+in §1, applied here to records that do not meet the inclusion rules).
+Round 3 added these three fields and backfilled them for every record
+already in the file (2026-09-19); `names_process` for the pre-round-3
+records was computed by a text match over the stored title and reason,
+which is conservative — a record whose full text names the process only
+away from the excerpt that was read is not caught, and would need a
+correction if found. `tools/gen_papers.py` lists every `names_process:
+true` record on `docs/references/papers/designed-on-sky130.md` (§4), so
+that a reader of the academic literature on SKY130 can find work that
+uses the PDK even where it stops short of the index's evidential
+standard.
 
 ### 2.3 `data/papers-labels.yaml`
 
@@ -176,6 +198,7 @@ from `docs/references/index.md`, and are generated.
 | `by-year.md` | `papers-by-year` | Newest year first, each year labelled `papers-year-<year>` |
 | `by-venue.md` | `papers-by-venue` | `venue_type`, then `venue_series` |
 | `by-institution.md` | `papers-by-institution` | Cypress Semiconductor and SkyWater Technology sections first; the other institutions in one alphabetical table with links to their papers |
+| `designed-on-sky130.md` | `papers-designed-on-sky130` | Round 3: **not part of the index** — every `data/papers-excluded.yaml` record with `names_process: true` (§2.2), grouped by year, title-then-year within a year; each line gives the title, authors, venue, year, DOI/arXiv link and the existing exclusion `reason` verbatim, with a **Held** mark for `status: held`. Linked from `index.md`'s "Other views" list with an explicit note that it does not meet §1, and given one `{ref}` back to `papers-scope`. |
 
 Full entry format (on `index.md` only):
 
@@ -273,8 +296,41 @@ Not available on 2026-09-14:
 * FSiC publishes talks and slides, not papers, so it has no proceedings
   to search.
 
-The next round should run the OpenAlex variants after the budget resets,
-retry DBLP, and read the full texts of the held papers.
+Third round (after the independent review of round 2, 2026-09-19):
+
+* OpenAlex `fulltext.search` for `sky130` (348 works) and `skywater` (696
+  works), paged through in full (round 2 had stopped at 600 of 696 for
+  `skywater`); triaged by abstract (or, where the match was full-text-only,
+  by the query tag itself as evidence that the term appears in the
+  document). Found four included papers the round 2 sweep missed
+  (paper-dubey-2023a, paper-li-2024a, paper-teo-2024a,
+  paper-baungarten-leon-2024a) and about three dozen excluded/held
+  records now in `data/papers-excluded.yaml`;
+* OpenAlex `raw_affiliation_strings.search:SkyWater` (35 works, one page —
+  round 2 had not re-run this surface since round 1). Most of the
+  SkyWater-Bloomington CNFET/RRAM/monolithic-3D strand this surfaced was
+  already in `data/papers.yaml` or `data/papers-excluded.yaml` from
+  earlier rounds; added two device papers (paper-bishop-2020a,
+  paper-yu-2022a) and one reliability paper (paper-pepel-2025a) as
+  `affiliation-inference`, and recorded five more as excluded (a
+  different node, a different SkyWater site, or a layout-only
+  contribution) so they are not re-argued. The Kissimmee, FL MIM-capacitor
+  paper and the 90 nm TID/RTN papers are recorded excluded per the design's
+  other-SkyWater-process exclusion (§1);
+* OpenAlex citing-works (`filter=cites:`) of every `named-process` paper
+  in `data/papers.yaml` that carries a `fabrication` quote and a DOI (33
+  seeds, up to 200 citing works each); no new in-scope paper found beyond
+  what the surfaces above already located. See
+  `docs/plans/progress-index-papers-r3.md` for the per-seed counts;
+* the review's own 13-item table and its "not triaged at all" list were
+  individually verified against Crossref and OpenAlex (or arXiv) and
+  added to one file or the other.
+
+The next round should retry DBLP, read the full texts of the held
+papers (leading with `doi:10.1109/sbmicro70495.2026.11684413`, the
+cryogenic SPICE model calibrated on experimental 4 K data), and consider
+a second raw-affiliation pass for "Cypress" alongside "SkyWater" to catch
+earlier Bloomington-era lineage work the same way.
 
 ## 6. Generation and checks
 
@@ -340,6 +396,19 @@ Owner decisions (2026-09-14):
 * The Stanford RRAM papers with a SkyWater co-author are kept, with the
   inference marked in `basis` and `notes`.
 
+Owner decisions (2026-09-19, round 3):
+
+* No new controlled topic was added for the SkyWater-Bloomington
+  device-R&D strand (carbon-nanotube FETs, monolithic-3D RRAM,
+  radiation/RTN reliability): the existing topics already fit the
+  records found (`beol-integration`, `rram`, `device-characterisation`,
+  `reliability`, `radiation`, as the pre-existing entries for this
+  strand already show), so §3's topic list is unchanged.
+* `data/papers-excluded.yaml` gained `authors`, `venue` and
+  `names_process` (§2.2) and a generated page listing the
+  `names_process: true` records (§4), per the round 2 review's
+  recommendation. `papers.yaml`'s inclusion rules (§1) are unchanged.
+
 Deferred and not adopted:
 
 * Links to the paper pages from outside `docs/references/` (the fab page
@@ -371,3 +440,15 @@ Open questions:
   magazine article, the ICCAD 2020 OpenLANE paper, the Tiny Tapeout
   platform article and preprint, an SSRN image-sensor preprint and the
   HSWTech 2025 amplifier) need their full texts read.
+* (Round 3, R2-21) Slide decks and conference presentations that carry
+  measured SKY130 data (for example `doi:10.5281/zenodo.18008454`,
+  Silicluster v2) are excluded under the "not a paper" rule (§1) even
+  where a closing slide reports a real measured value. Owner decision
+  needed on whether a presentation with a genuine, attributable
+  measurement should instead be included with a note that it is a
+  presentation rather than a paper.
+* (Round 3) IEEE magazine articles (*Solid-State Circuits Magazine*,
+  *Design & Test*, *Spectrum*) are judged on content like any other
+  paper (R2-22): several are included (`paper-li-2024a`,
+  `paper-dubey-2026a`) and several excluded or held on their abstract.
+  This is now stated here rather than left implicit.
