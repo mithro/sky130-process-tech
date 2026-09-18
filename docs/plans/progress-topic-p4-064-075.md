@@ -33,6 +33,7 @@ before being fixed or declined.
 | 067-L3 | Low | fixed | Re-verified: Indeed URL still returns HTTP 403 (2026-09-18) to our own fetch; Wayback availability API and archive.ph show no snapshot (rate-limited/empty). Brought the footnote definitions on 067/070/074 in line with the inventory's existing 403 note; kept the quotation, which is a retrieved-and-dated public page per common rule 2. |
 | 068-L1 | Low | fixed | Confirmed pdk-background.txt 316 says only "developed by Cypress Semiconductor", no "S8" name. Removed the unsupported name attribution, kept the lineage claim on pdk-02. |
 | 069-L1 | Low | fixed | Confirmed Lee 1996 (Crossref) is titled "Thick photoresist outgassing during MeV implantation", the opposite resist thickness/energy regime from HVASTI's 0.3 um / tens-of-keV. Reworded as a scaling inference. |
+| verify-F2 | Low | fixed | Verifier caught: the new 1.14 um figure on 069's outgassing sentence carried no citation, unlike every other use of PRTHICKN on the site. Added [^pdk-03] (already defined/used on the page). |
 | 070-L1 | Low | fixed | = 067-L1, quotation typography only (the citation-scheme part is declined; see 066-L1). |
 | 070-L2 | Low | fixed | Confirmed PDK gives the 0.02 um value with no explanation of consequence; marked the "damaged through" reading as an inference, matching 068's more careful treatment. |
 | 071-L1 | Low | fixed | Confirmed Table F2b (parsed) marks LDNTM on 9 rows including "NV SONOS Diode", matching masks/ldntm.md; added the missing row to 071's list. |

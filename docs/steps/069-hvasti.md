@@ -115,7 +115,7 @@ fab (SKY130's energy and dose are not public):
   edge. Outgassing scales with the volume of resist exposed to the
   beam — Lee and co-workers characterised it for thick resist under MeV
   implantation[^lee-1996] — so a 0.3 µm film outgasses less than the
-  standard 1.14 µm one (inference); charging is likewise reduced with
+  standard 1.14 µm one[^pdk-03] (inference); charging is likewise reduced with
   less resist volume, but an electron shower and electrostatic chuck ("ESC
   chuck, E shower" on SkyWater's medium-current tool) are, we infer,
   still used;[^skw-01] platen cooling is industry practice.
