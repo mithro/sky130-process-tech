@@ -22,12 +22,15 @@ and the liner oxidation ({ref}`LINOX <step-010>`), and acts as the
 polish stop for the oxide {term}`CMP` ({ref}`CMPNIT <step-012>`). It is removed
 at {ref}`NS19 <step-013>`.
 
-Precisely: a stoichiometric LPCVD nitride of the order of 100–200 nm
+Precisely: a stoichiometric LPCVD nitride of the order of 100 nm
 is deposited in a furnace from dichlorosilane and ammonia. An AmberWave
-Systems STI patent gives the mask nitride as
-"500-2000 Å";[^pat-sti-amberwave] Wikipedia's STI outline calls it the
+Systems STI patent gives the mask nitride as "500-2000 Å"
+(50–200 nm);[^pat-sti-amberwave] Wikipedia's STI outline calls it the
 "protective nitride".[^wiki-sti] No public SkyWater source gives the
-SKY130 value. The thickness is a compromise: thick enough to survive
+SKY130 value, and the 150 nm used as a working figure on the later
+pages of this module ({ref}`STINITE <step-005>`, {ref}`STIE <step-006>`,
+{ref}`NS19 <step-013>`) is the middle of the patent's range, not a
+SkyWater number. The thickness is a compromise: thick enough to survive
 the trench etch and the CMP with margin, thin enough to keep the trench
 {term}`aspect ratio` (trench depth *plus* nitride, divided by trench width)
 manageable for the HDP fill — a paper on 0.13 µm STI defines the fill
@@ -67,9 +70,11 @@ simultaneously:
   etches nitride at ~100 Å/min while barely touching oxide.[^vgh-1967]
 
 Its thickness also sets the height of the oxide "fence" left standing
-above the silicon after the nitride is stripped, which is why the final
-field-oxide step height above the active surface (0.07 µm under
-poly[^pdk-03]) is tied to the choices made here.
+above the silicon immediately after the nitride is stripped. We read
+the PDK's finished field-oxide step height above the active surface
+(0.07 µm under poly, `FOXSTEP`[^pdk-03]) as the residue of that fence
+after the CMP, the strip and the later oxide losses; no public source
+states the relation.
 
 ## How it is typically performed
 
@@ -83,8 +88,9 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
   stoichiometric.[^txt-02] The same DCS/NH₃ LPCVD chemistry is used for
   the {term}`SONOS` nitride: one embodiment of US 6,969,689 forms the
   nitride at temperatures "from about 700° C. to about 875° C."[^pat-01]
-  and a later Cypress patent gives 700–850 °C, 5–500 mTorr,[^pat-02]
-  which shows that this chemistry is native to the Cypress furnace set.
+  and a later Cypress patent gives 700–850 °C and 5–500 mTorr for the
+  closely related N₂O/NH₃/DCS oxynitride deposition,[^pat-02] so the
+  precursor set is native to the Cypress furnaces.
 * **Film properties.** Stoichiometric LPCVD nitride is under about
   1 GPa of tensile stress and has a refractive index near 2.0; both are
   monitored as process-control signals.[^txt-02]
@@ -209,8 +215,9 @@ which is a different (later-generation) precursor.
 ## Open questions
 
 * The SKY130 isolation-nitride thickness, deposition temperature and
-  pressure are not public; 100–200 nm and 700–800 °C are era-typical
-  values from the cited patents and textbooks.
+  pressure are not public; 50–200 nm from the cited patent and
+  700–800 °C from the cited patents and textbooks are era-typical
+  values.
 * Whether a thin oxide cap or anti-reflective layer is deposited on the
   nitride before {ref}`FOM <step-004>` (some fabs do, to control
   reflectivity at 248 nm) is unknown.
