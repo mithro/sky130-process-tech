@@ -34,6 +34,32 @@ uv sync
 uv run sphinx-build -W -b html docs docs/_build/html
 ```
 
+## Checks
+
+Before merging any branch, run:
+
+```sh
+uv run tools/check_steps.py
+uv run tools/check_machines.py
+uv run tools/check_materials.py
+uv run tools/check_masks.py
+uv run tools/check_refs.py
+uv run tools/check_papers.py
+uv run tools/check_patents.py
+uv run tools/check_filings.py
+uv run tools/gen_papers.py --check
+uv run tools/gen_patents.py --check
+uv run tools/gen_filings.py --check
+uv run tools/gen_index_links.py --check
+uv run sphinx-build -W -b html docs docs/_build/html
+```
+
+`tools/gen_index_links.py` rewrites the generated "Related patents /
+papers / filings" block on every process page from the three datasets;
+`--check` fails if a page's block is missing, stale or was hand-edited.
+See `docs/plans/agent-briefs.md` for the full pre-merge checklist per
+kind of page.
+
 ## Sources
 
 Only publicly available sources are cited. See

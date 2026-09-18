@@ -384,7 +384,11 @@ them. Check, and report with file and line references:
    citations follow `docs/plans/citation-style.md` (footnotes, no
    reference-style links, Deep dive at or above the minimum length and
    genuinely varied); `tools/check_refs.py`, `tools/check_papers.py`,
-   `tools/gen_papers.py --check` and the `-W` build pass.
+   `tools/gen_papers.py --check`, `tools/gen_patents.py --check`,
+   `tools/gen_filings.py --check`, `tools/gen_index_links.py --check`
+   (the generated "Related patents / papers / filings" block on every
+   step, category, machine, material, mask and overview page is
+   up to date, not stale or hand-edited) and the `-W` build pass.
 
 Return a verdict (`approve`, `approve with fixes`, `reject`) and an
 itemised list of required fixes.
