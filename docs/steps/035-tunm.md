@@ -174,8 +174,8 @@ and the pre-oxidation clean as part of those steps (see the
   overlay.**[^skw-01] Strength: strong for
   existence (SkyWater statement); use at this mask is an inference.
 * **Defect inspection — KLA-Tencor AIT**, our reading of "AIT"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
-  Strength: weak — the source can no longer be checked.
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
+  Strength: medium.
 
 ## Resources required
 
@@ -349,11 +349,9 @@ and the pre-oxidation clean as part of those steps (see the
     <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration
     statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30; listings expire. No longer retrievable at the
-    time of the final review; no Wayback capture exists.
-    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^pap-01]: M. H. White, D. A. Adams and J. Bu, "On the go with SONOS",
     *IEEE Circuits and Devices Magazine* **16**(4), 22–31 (2000).
     <https://doi.org/10.1109/101.857747>

@@ -144,7 +144,7 @@ typically:
   it.
 * **Unpatterned-wafer inspection — KLA-Tencor SP1 (our reading).** A SkyWater Defect
   Technician posting reads "General operation of semiconductor defect
-  metrology tools: SEM/AIT/KLA/SP1/EV300/1X";[^job-01] we read "SP1" as
+  metrology tools: SEM/AIT/KLA/SP1/EV300/1X";[^job-06] we read "SP1" as
   KLA-Tencor's Surfscan SP1, and the posting expands none of the
   abbreviations. Strength: medium
   (a job listing retrieved 2026-08-30; listings expire).
@@ -214,8 +214,8 @@ any product to a step.
   open questions is our extraction.[^raw-data-hv-mosfets]
 * google/skywater-pdk README — the device and option list built on the
   one substrate.[^pdk-10]
-* Indeed, SkyWater Defect Technician 2 posting — the
-  "SEM/AIT/KLA/SP1/EV300/1X" tool list.[^job-01]
+* LinkedIn, SkyWater Defect Technician 2 posting — the
+  "SEM/AIT/KLA/SP1/EV300/1X" tool list.[^job-06]
 
 ### High-level understanding
 
@@ -299,8 +299,7 @@ any product to a step.
   shows GlobalWafers being *added* alongside "other qualified
   suppliers";[^cyp-06] who the original supplier was is not public.
 * **Incoming-inspection tooling.** The KLA SP1 is our reading of a job
-  posting that expands none of its abbreviations and of which no
-  archived copy exists,[^job-01] and the Lumonics scribe[^skw-01] is not tied to any
+  posting that expands none of its abbreviations,[^job-06] and the Lumonics scribe[^skw-01] is not tied to any
   step.
 
 <!-- footnotes -->
@@ -331,9 +330,9 @@ any product to a step.
     <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/device-details/nfet_01v8/cross-section-nfet_01v8.svg>
 [^pdk-10]: SkyWater PDK Authors, *google/skywater-pdk* repository
     README. <https://github.com/google/skywater-pdk>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30; listings expire. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^wiki-wafer]: Wikipedia, *Wafer (electronics)*.
     <https://en.wikipedia.org/wiki/Wafer_(electronics)>
 [^wiki-rca]: Wikipedia, *RCA clean*. <https://en.wikipedia.org/wiki/RCA_clean>

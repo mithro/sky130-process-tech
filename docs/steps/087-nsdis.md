@@ -145,7 +145,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
   natural pre-anneal clean stations (inference), as at
   {ref}`PWDEIS <step-033>` and {ref}`LDASTIS <step-074>`.
 * **KLA-Tencor AIT** inspection, our reading of "AIT"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
   Strength: medium.
 
 ## Resources required
@@ -179,8 +179,8 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 * SkyWater, *Facilities & Capabilities* — GaSonics PEP, Iridia and
   Mattson Aspen II with gases and temperatures; Akrion Gamma; DNS and
   FSI benches.[^skw-01]
-* Indeed, SkyWater listings — the defect-metrology tool list
-  "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+* LinkedIn, SkyWater listings — the defect-metrology tool list
+  "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
 * Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — popping and
@@ -252,9 +252,9 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
     ISBN 978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page), retrieved 2026-08-30; listings expire.
-    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>

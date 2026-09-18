@@ -148,7 +148,7 @@ recipe is not public):
    by reflectometry or ellipsometry at many sites; die-level
    thickness maps on density test structures (the method of
    Stine et al.[^stine-1998]); scratch and particle inspection on the
-   KLA AIT class (our reading of "AIT" in SkyWater's job posting);[^job-01] via-chain
+   KLA AIT class (our reading of "AIT" in SkyWater's job posting);[^job-06] via-chain
    resistance later at {term}`e-test`.
 
 ## Machines typically used
@@ -172,7 +172,7 @@ recipe is not public):
   a "SEZ etcher tool" on the maintenance page.[^skw-07] A brush
   scrubber is not named (open question).
 * **Defect inspection — KLA AIT / SP1**, our reading of "AIT" and "SP1"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
   Strength: medium.
 
 ## Resources required
@@ -209,8 +209,8 @@ recipe is not public):
   SEZ 223 / Da Vinci.[^skw-01]
 * SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
   "a SEZ etcher tool".[^skw-07]
-* Indeed, SkyWater *Defect Technician 2* posting — inspection
-  tools.[^job-01]
+* LinkedIn, SkyWater *Defect Technician 2* posting — inspection
+  tools.[^job-06]
 * SkyWater PDK, *Periphery rules* — m1.pd.1 (0.7), the `cmm1`
   waffle-drop density check in 700 µm windows.[^pdk-periph]
 * SkyWater PDK, *Criteria & Assumptions* — "Oxide Bias for MM1" 0.6;
@@ -296,10 +296,9 @@ recipe is not public):
 [^skw-07]: SkyWater Technology, *A Day in the Life of a SkyWater
     Maintenance Technician*, 2023-12-14.
     <https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page; *Defect Technician 2* posting),
-    retrieved 2026-08-30; listings expire.
-    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^pat-cmp-mirra]: R. D. Tolles, N. Shendon, S. Somekh, I. Perlov,
     E. Gantvarg and H. Q. Lee (Applied Materials), *Continuous
     processing system for chemical mechanical polishing*,

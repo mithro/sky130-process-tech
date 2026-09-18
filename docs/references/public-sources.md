@@ -23,8 +23,8 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1719
-keyed entries as of 2026-09-18, and `tools/check_refs.py` keeps the
+written page has exactly one entry here; the inventory holds 1720
+keyed entries as of 2026-09-19, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
 8.20 and 8.21 were added to cover the sources the writers of the step,
@@ -816,29 +816,29 @@ entry records the retrieval date.
 **JOB-01** — Indeed, *"Skywater Technology Foundry Jobs, Employment in
 Bloomington, MN"* (listing page), retrieved 2026-08-30; listings
 expire, and the page refused later automated retrieval (HTTP 403,
-2026-09-13).
-<https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>.
-The *Defect Technician 2* posting reads "General operation of
-semiconductor defect metrology tools: SEM/AIT/KLA/SP1/EV300/1X" —
-which the step and machine pages read as KLA-Tencor's AIT
-(patterned-wafer) and Surfscan SP1 (unpatterned-wafer) inspectors and an
-eV300 review SEM (our reading; the posting expands none of the
-abbreviations). Other
-titles on the page (Equipment Maintenance Technician – Metrology,
-Senior Metals Process Technician, Development Engineering Senior
-Technician) name no tools.
-Also used on the starting-material machine page.
-Also used on the defect and particle inspection page.
-Tier: cross-check (medium strength).
+2026-09-13; reconfirmed HTTP 403, 2026-09-19). No Wayback capture
+exists (`archive.org/wayback/available` returns no snapshot) and no
+archive.today/archive.ph copy exists either (checked 2026-09-19; both
+report no snapshot). **No longer retrievable and not archived; do not
+cite verbatim from this entry.** The page had quoted the *Defect
+Technician 2* posting's "General operation of semiconductor defect
+metrology tools: SEM/AIT/KLA/SP1/EV300/1X" — the same text is now
+verified live via **JOB-06** below, which every step and machine page
+that used to cite this entry now cites instead. Kept only as a dated
+record of the original find. Tier: dead (superseded by JOB-06).
 
 **JOB-02** — Indeed, Minnesota-wide and Bloomington listing pages,
 retrieved 2026-08-30.
 <https://www.indeed.com/q-skywater-technology-foundry-l-minnesota-jobs.html>,
 <https://www.indeed.com/q-skywater-technologies-l-bloomington,-mn-jobs.html>.
-Same job families; no additional tool names. Tier: high-level.
+Same job families; no additional tool names. Both URLs reconfirmed HTTP
+403 on 2026-09-19; neither has a Wayback or archive.today copy (checked
+the same day). Not cited by any page (it added no tool name beyond
+JOB-01/JOB-06). Tier: dead (uncited; kept as a dated record).
 
 **JOB-04** — LinkedIn, *"Equipment Maintenance Technician"*, SkyWater
-Technology, Austin TX (Fab 25, not Bloomington), retrieved 2026-08-30.
+Technology, Austin TX (Fab 25, not Bloomington), retrieved 2026-08-30;
+reconfirmed live (HTTP 200) 2026-09-19.
 <https://www.linkedin.com/jobs/view/equipment-maintenance-technician-at-skywater-technology-4434999110>.
 Names Daifuku AMHS, Kensington and Brooks wafer sorters — recorded
 here only to show that SkyWater postings do name vendors; not evidence
@@ -846,8 +846,32 @@ for the Minnesota fab. Tier: high-level.
 
 **JOB-05** — SkyWater applicant portal (Dayforce).
 <https://jobs.dayforcehcm.com/en-US/skywater/CANDIDATEPORTAL/>. Live
-listings; the portal renders client-side and individual postings could
-not be captured. Tier: high-level.
+listings; the portal search page renders client-side and individual
+postings could not be captured that way, but individual posting URLs
+(`jobs.dayforcehcm.com/en-US/skywater/CANDIDATEPORTAL/jobs/<id>`, e.g.
+the Bloomington postings found 2026-09-19) fetch directly and are
+plain server-rendered HTML — reconfirmed live 2026-09-19. Tier:
+high-level.
+
+**JOB-06** — LinkedIn, *"SkyWater Technology hiring Defect Technician 2
+in Bloomington, MN"* (job posting), retrieved 2026-09-19; live (HTTP
+200) at time of retrieval.
+<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>.
+A repost of the same *Defect Technician 2* text previously cited via
+JOB-01: "General operation of semiconductor defect metrology tools:
+SEM/AIT/KLA/SP1/EV300/1X" — which the step and machine pages read as
+KLA-Tencor's AIT (patterned-wafer) and Surfscan SP1 (unpatterned-wafer)
+inspectors and an eV300 review SEM (our reading; the posting expands
+none of the abbreviations). Other duties listed (recipe writing,
+reject validation, SEM defect imaging) name no additional tools.
+Replaces JOB-01 as the citation on every step and machine page that
+used it, including the four resist-strip pages (P1IS, PRIS, UPRIS,
+BFR — steps 051, 054, 057, 060) whose citation had been withdrawn
+("Strength: none") while JOB-01 was unretrievable and no replacement
+had yet been found.
+Also used on the starting-material machine page.
+Also used on the defect and particle inspection page.
+Tier: cross-check (medium strength).
 
 ## 5. Cypress Semiconductor, "Fab 4" and the S8 process
 

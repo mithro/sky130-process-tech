@@ -24,7 +24,7 @@ metrology in general is on the {ref}`test category page <category-test>`.
 | Throughput | "150 wph for 200mm wafers" on the SP1;[^tencor-sp1-wp] "30 full wafer inspections/hour" on the patterned Surfscan AIT.[^tencor-patterned-1997] |
 | Requirement at 130 nm | ITRS 2001 sets, for 2001, a patterned-inspection sensitivity of 104 nm (polystyrene-latex sphere equivalent) at a yield-ramp scan rate of 1200 cm²/h and 130 nm at a volume-production rate of 3000 cm²/h, 70 nm on bare silicon and non-metal films, and 7 nm resolution for defect review.[^itrs-2001-yield] |
 | 200 mm era | Tencor's Surfscan 6220, 6420 and SP1 unpatterned scanners and the Surfscan AIT and 7700 patterned inspectors (1997 product pages);[^tencor-unpatterned-1997][^tencor-patterned-1997] KLA-Tencor's 2351 imaging inspector, AIT XP and eV300 review SEM (2002 product pages).[^kla-2351][^kla-aitxp][^kla-ev300] |
-| SkyWater-listed tool | None on the capabilities page; a job posting reads "SEM/AIT/KLA/SP1/EV300/1X"[^job-01] |
+| SkyWater-listed tool | None on the capabilities page; a job posting reads "SEM/AIT/KLA/SP1/EV300/1X"[^job-06] |
 | SKY130 steps | 64 steps; see {ref}`SKY130 steps assigned to this class <machine-defect-inspection-steps>` |
 
 ## What the machine class is and how it works
@@ -206,8 +206,10 @@ inspection" under "Photo Metrology", which as written concerns reticles,
 FIB/SEM" and "Hitachi S-4800" of the "Physical Analysis"
 group;[^skw-01] no step page assigns any of these to a SKY130 step. The
 public evidence for SkyWater's in-line inspection tools is a *Defect
-Technician 2* job posting, retrieved on 2026-08-30, which asks
-for:[^job-01]
+Technician 2* job posting — first retrieved from Indeed on 2026-08-30,
+no longer retrievable there and not archived, but still live as a
+LinkedIn repost of the same text, retrieved 2026-09-19 — which asks
+for:[^job-06]
 
 > "General operation of semiconductor defect metrology tools:
 > SEM/AIT/KLA/SP1/EV300/1X"
@@ -218,14 +220,14 @@ unpatterned scanner,[^tencor-ait-1995][^tencor-sp1-wp] and "EV300" that of
 KLA-Tencor's eV300 e-beam review SEM;[^kla-ev300] "SEM" and "KLA" could
 denote a review or analysis SEM and other KLA inspection tools, and "1X"
 is not explained. The posting gives no models, counts or process
-steps.[^job-01]
+steps.[^job-06]
 
 ### Strength of the evidence
 
 On the strength scale of the {ref}`machines index <machines-index>` the
 posting is **medium** evidence: a SkyWater job posting, retrieved on the
 date stated, which lists tool names that the posting itself does not
-expand.[^job-01] The caveats that apply to every listed tool are under
+expand.[^job-06] The caveats that apply to every listed tool are under
 {ref}`Reading the SkyWater evidence <machines-reading-evidence>`; for
 this class the first matters most, since a posting describes the
 inspection area at the time it was written. The step pages read the
@@ -245,19 +247,21 @@ after-develop inspection (identical to the
 How the step pages grade the SkyWater tools for each step ("Machines
 likely used at SkyWater"), as collected on the machines index:
 
-* **"SEM/AIT/KLA/SP1/EV300/1X" (read as KLA-Tencor AIT and SP1)** — *medium:* {ref}`SMAT <step-001>`, {ref}`DNIS <step-009>`, {ref}`CMPNIT <step-012>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNM <step-035>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>`
+* **"SEM/AIT/KLA/SP1/EV300/1X" (read as KLA-Tencor AIT and SP1)** — *medium:* {ref}`SMAT <step-001>`, {ref}`DNIS <step-009>`, {ref}`CMPNIT <step-012>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNM <step-035>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`BFR <step-060>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>`
 
-The two lists differ. {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`,
-{ref}`UPRIS <step-057>` and {ref}`BFR <step-060>` no longer grade this
-posting: their step pages now read it as unretrievable (no archived
-copy exists) and no longer cite it. The remaining grades fall on the
-starting-material page, the other resist strips after implants, the
-tunnel mask and the CMP steps; {ref}`CMPNIT <step-012>` grades the
-posting although its "Machines typically used" section names
-thickness metrology and a profiler rather than inspection. None of
-the other pages in the list above — the depositions, etches and
-implants, and the mask steps other than {ref}`TUNM <step-035>` — cites
-the posting.
+The two lists now match. {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`,
+{ref}`UPRIS <step-057>` and {ref}`BFR <step-060>` had briefly stopped
+grading this posting after the original Indeed listing went
+unretrievable with no archived copy; a live LinkedIn repost of the same
+*Defect Technician 2* text, found 2026-09-19, restored the citation on
+all four, replacing the dead `JOB-01` entry (inventory key `JOB-06`;
+see the inventory). The grades otherwise fall on the starting-material page,
+the other resist strips after implants, the tunnel mask and the CMP
+steps; {ref}`CMPNIT <step-012>` grades the posting although its
+"Machines typically used" section names thickness metrology and a
+profiler rather than inspection. None of the other pages in the list
+above — the depositions, etches and implants, and the mask steps other
+than {ref}`TUNM <step-035>` — cites the posting.
 
 ## Consumables and facilities
 
@@ -361,8 +365,8 @@ plans and defect limits are not public.
 
 ### Cross-check
 
-* Indeed, SkyWater *Defect Technician 2* posting — the defect-metrology
-  tool list "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
+* LinkedIn, SkyWater *Defect Technician 2* posting — the defect-metrology
+  tool list "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
 * SkyWater Technology, *Facilities & Capabilities* — the reticle
   inspection, outgoing-QA and physical-analysis entries; no wafer
   inspection tool.[^skw-01]
@@ -433,7 +437,7 @@ plans and defect limits are not public.
 
 * What "SEM", "KLA" and "1X" denote in the posting, which AIT and SP1
   generations it means, and how many inspection tools SkyWater has, are
-  not stated.[^job-01]
+  not stated.[^job-06]
 * Whether the "Reticle storage/handler/defect inspection" entry includes
   any wafer inspection is not stated.[^skw-01]
 * At which SKY130 steps wafers are inspected, with what sampling and
@@ -498,10 +502,9 @@ plans and defect limits are not public.
 [^itrs-2001-yield]: International Technology Roadmap for Semiconductors,
     *2001 Edition: Yield Enhancement*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001YieldEnhance.pdf>
-[^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
-    Bloomington, MN* (listing page; Defect Technician 2 posting), retrieved
-    2026-08-30; listings expire.
-    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+[^job-06]: LinkedIn, *SkyWater Technology hiring Defect Technician 2 in
+    Bloomington, MN* (job posting), retrieved 2026-09-19.
+    <https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30; entries re-checked 2026-09-13.
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
