@@ -51,3 +51,12 @@ per coordinator instruction — not this agent's scope).
 | 148-L1 (`[^job-01]`) | declined | separate site-wide sweep per coordinator instruction |
 | 148-L2 | fixed | added the published test-tile via-array/via-chain evidence, noted the inference-on-inference structure |
 | 148-L3 | declined | reviewer states "none required for accuracy"; left as is |
+
+## Verifier follow-ups (verify-135-148.md)
+
+| Item | Status | Note |
+|---|---|---|
+| 1. Via3 label attributed to two vias | fixed | confirmed against the cached SVG: exactly one "Via3" text element, on the via that lands on CAPM; corrected 135:338-341, 143:41-42 and :182, 144:117-119 and :300-302 to say the cross-section labels only that via |
+| 2. Spliced test-tile quotation | fixed | 148-wcmp5.md:55-57 now quotes the CSV row whole: "Via-3 chain, 5754 via-3, M4-CAPM over M3" |
+| 3. Kar-Roy TiN attribution survives at 136:70-71 | fixed | dropped [^kar-roy-1999] from that sentence, consistent with the corrected sentence at 136:106-107 |
+| 4. "fluorine-bearing" misquotation survives at 130/160 | fixed | 130-vim2e.md:73 (quoted) and :256, 160-vim4e.md:88 and :255 reworded like 145: quotation removed, patent's real subject (etch-stop punch-through) and selectivity numbers substituted |

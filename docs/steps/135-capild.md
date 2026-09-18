@@ -335,9 +335,9 @@ back end (SKY130's recipe is not public):
   extraction table describes `cap_mim` with via2, m3 and "capm-m2"
   terminals.[^pdk-08] We follow the metal-3 reading, which the test
   tile's pad documentation shares ("CAPM on M3")[^raw-data-testtile-pads]
-  and which the `cap_mim` cross-section states directly: the via that
-  lands on "CAPM" and the one beside it that lands on "M3 (plate 1)"
-  are both labelled "Via3" in the drawing;[^pdk-07] the met2/via2
+  and which the `cap_mim` cross-section supports further: the
+  cross-section labels the via that lands on "CAPM" — the only via it
+  labels — "Via3";[^pdk-07] the met2/via2
   wording may come from a flow variant with the capacitor one level
   lower (inference).
 * Whether voltage and temperature coefficients for `cap_mim` are
