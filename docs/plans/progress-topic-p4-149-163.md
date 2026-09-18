@@ -44,8 +44,8 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 155-M1 | Medium | fixed | collective gas-list phrasing attributes all gases to all tools (155:146-149, 163:134-137); verified quotes against cached skw-facilities.txt |
 | 155-L1 | Low | fixed | two Cypress reports of different tech families conflated (155:38-41) |
 | 155-L2 | Low | fixed | "via-3/via-4 oxide beneath" misnames the dielectric (155:145-147, 163:128-130) |
-| 156-M1 | Medium | open | HDP quote dropped "doped and phos doped" qualifier (156:50-52) |
-| 156-L1 | Low | open | "oxide" stated as fact rather than reading (156:15,28,title area) |
+| 156-M1 | Medium | fixed | HDP quote dropped "doped and phos doped" qualifier (156:50-53); verified against cached skw-facilities.txt |
+| 156-L1 | Low | fixed | "oxide" stated as fact rather than reading (156:19-23) |
 | 157-L1 | Low | open | SEZ223/Davinci vs "SEZ 223 / Da Vinci" spelling split within page (157:198) |
 | 157-L2 | Low | open | "industry-standard" slurry claim missing adjacent citation (157:20-22) |
 | 157-L3 | Low | open | no-plug-polish argument from step-list silence not marked as such (157:58-62) |
