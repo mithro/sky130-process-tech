@@ -154,7 +154,9 @@ W/WN".[^skw-01]
   **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01]) are
   alternative silicon etchers on site. Strength: strong for existence,
   inference for use here.
-* **Ash — GaSonics PEP, Mattson Aspen II.**[^skw-01] Strength: strong.
+* **Ash — "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C"
+  and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to
+  250C".**[^skw-01] Strength: strong.
 * **Post-etch clean — DNS / FSI Mercury (HF/SC1/SC2) or Akrion Gamma
   (sulphuric, SC1).**[^skw-01] Strength: strong for existence.
 

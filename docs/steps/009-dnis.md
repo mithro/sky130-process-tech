@@ -26,11 +26,12 @@ the state of the resist and of the wafer:
 
 * the resist has been bombarded by MeV phosphorus ions, which
   carbonise its top surface into a hard {term}`crust <implant crust>` that ordinary O₂ {term}`ashing <ash>`
-  removes slowly and that can {term}`pop <popping>` or flake during heating;[^txt-02]
+  removes slowly and that can {term}`pop <popping>` or flake during heating;[^orvek-1985][^smith-1983][^txt-02]
 * the wafer has open silicon trenches with bare, plasma-damaged
   sidewalls, so the clean must be gentle enough not to roughen or
   etch them, and thorough enough that no organic or metallic residue
-  goes into the 900–1100 °C furnace that follows.
+  goes into the furnace that follows — a liner oxidation which
+  comparable flows run at "900-1100 degrees Celsius".[^pat-sti-cr]
 
 ## Step category
 
@@ -99,7 +100,7 @@ fab:
 
 ## Machines likely used at SkyWater
 
-* **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** —
+* **"Gasonic PEP", Iridia RF microwave and "Mattson Aspen2" ashers** —
   named on SkyWater's facilities page with their gases and
   temperatures.[^skw-01] Strength: **strong** for existence; the
   assignment of this strip to any one of them is an inference.
@@ -142,9 +143,9 @@ fab:
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — GaSonics PEP; Mattson Aspen II;
-  Iridia; Akrion Gamma with sulphuric/SC1/phosphoric/BOE and spin/IPA
-  dry; DNS and FSI Mercury HF/SC1/SC2.[^skw-01]
+* SkyWater, *Facilities & Capabilities* — "Gasonic PEP"; "Mattson
+  Aspen2"; Iridia; Akrion Gamma with sulphuric/SC1/phosphoric/BOE and
+  spin/IPA dry; DNS and FSI Mercury HF/SC1/SC2.[^skw-01]
 * Indeed, SkyWater Defect Technician 2 posting —
   "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
 * Kim et al. (Spansion), US 7,439,141 — pad-oxide undercut of
