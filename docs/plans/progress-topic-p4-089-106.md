@@ -19,7 +19,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 094-M1 | Medium | fixed | Redid the arithmetic: 10 deg sidewall over 0.5 um ILD closes ~0.18 um (more than the whole 0.17 um opening); the published 0.17->0.08 um narrowing over 0.5 um is ~5 deg. Reworded to state both numbers without claiming they reconcile at the full depth. |
 | 094-M2 | Medium | fixed | Confirmed US6376262.txt monitors CN at 387 nm, not CO at 483 nm; the 483 nm CO figure had no citation at all. Cited it to nojiri-2015 as industry practice/typical value and kept the patent citation only for the CN/387 nm claim it actually supports. |
 | 096-M1 | Medium | fixed | Confirmed wiki-fg.txt:85 says only "typical forming gas formulations (5% H2 in N2) are not explosive" -- no percentage limit, and H2/N2 mixtures cannot burn without an oxidiser, so "4% flammability limit in nitrogen" was both uncited and not a meaningful quantity. Reworded around the cited 5% figure and the air-exposure risk.
-| 103-M1 | Medium | open | |
+| 103-M1 | Medium | fixed | Confirmed lam-10k footnote's own text lists only "TCP 9400PTX/DFM, 2300, Exelan" for FY2003 -- no 9600. Recited the 9600 to skw-01 (which does name it) and kept lam-10k only for the 2300. |
 | 105-M1 | Medium | open | |
 | 089-L1 | Low | fixed | Confirmed skw-facilities.txt:109 sub-bullet "high aspect (5:1) fill capability" under the HDP entry (105-nild2.md already quotes it). Added the same quotation to 089. |
 | 090-L1 | Low | open | |
@@ -38,7 +38,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 099-L1 | Low | fixed | Confirmed pi-US6635965.txt abstract has no hyphen ("tungsten containing gases"); removed the added hyphen. |
 | 100-L1 | Low | open | duplicate of 090-L1 |
 | 101-L1 | Low | fixed | Confirmed pdk-assumptions.txt:993-995: LIRESCD ("Li resistor width...", 0.29 um) sits in the Table 4 "Other" physical-criteria section, not the minimum-CD table. Named the correct table and added the matching li.7 periphery value (0.290 um). |
-| 103-L1 | Low | open | |
-| 103-L2 | Low | open | |
+| 103-L1 | Low | fixed | Confirmed no page-cited public source ties US 4,948,458 to the 9600 specifically; reworded the Deep dive bullet to mark the product-family link as an inference. |
+| 103-L2 | Low | fixed | Confirmed testtile-pads.csv:78-79 gives no unit for the two line dimensions, and :213's cell text continues "; 9520 cells" beyond what was quoted. Added the no-unit reading and an ellipsis. |
 | 105-L1 | Low | open | duplicate of 091-L2; fixed together |
 | 106-L1 | Low | open | duplicate of 090-L1 |
