@@ -43,7 +43,7 @@ misses) and manually triaged with `tmp/oa_work.py <openalex id>`
 | 17 | OpenAlex | citing works of key PDK/OpenLane/OpenROAD papers | not done | | | | | Deferred — see Held/open items below |
 | 18 | arXiv export API | all:sky130 | 2026-09-19 | 14 | 13 new | 0 | 13 | 1 already known (Beall); 13 new all excluded — SKY130 used only as an EDA/agent-benchmark PDK target (synthesis/PnR/SPICE), no fabrication; see log |
 | 19 | DBLP | skywater / sky130 | 2026-09-19 | n/a | — | 0 | 0 | `dblp.org` TLS connection reset (same as round 1's "connection refused"); not retried in a loop per pacing rules |
-| 20 | Crossref | bibliographic search, further container titles | not done | | | | | Deferred — time budget |
+| 20 | Crossref | query.bibliographic="sky130 skywater" (Crossref does not usefully restrict by query.container-title; tried TNS, JSSC, JINST) | 2026-09-19 | ~15/venue | all known | 0 | 0 | Every hit already in `data/papers.yaml` or `data/papers-excluded.yaml`; confirms the OpenAlex sweep above already covers this surface (same conclusion as round 1's container-title pass) |
 | 21 | Semantic Scholar | keyless public API, sky130/skywater | 2026-09-19 | n/a | — | 0 | 0 | HTTP 429 on first request and again after one 8 s back-off; not retried further per pacing rules (still rate-limited, as in round 1) |
 | 22 | Held items (round 1) | full-text re-check | 2026-09-19 | 6 items | 6 | 0 | 6 still held/excluded | See below |
 
@@ -142,11 +142,31 @@ misses) and manually triaged with `tmp/oa_work.py <openalex id>`
   run — time budget spent on the OpenAlex/arXiv passes above, which
   covered a broader surface. Left for a future round.
 
+- 2026-09-19: Spot-checked the remaining "OpenLane"-titled hits that
+  mention ASIC/RTL-to-GDSII/physical-design terms (7 candidates): none
+  name SKY130 or SkyWater in their abstract (generic OpenLane-flow
+  methodology papers) or report fabrication; three with full abstracts
+  were recorded as excluded, two with no public abstract and no SKY130
+  mention even in the title were left unrecorded (insufficient evidence
+  they are even on-topic).
+
+- 2026-09-19: `uv run tools/check_papers.py --online` — 0 problems (Crossref
+  confirms the new Dubey record's title/authors/year/volume/issue/pages,
+  and re-verifies every other DOI, arXiv id and `web:` record unchanged).
+  `--links` reported one transient result:
+  `arxiv:2604.21625`'s OSTI mirror (`https://www.osti.gov/servlets/purl/3363571`,
+  round-1 record, unrelated to this round's additions) returned HTTP 0
+  (connection timeout) three times on retry a few minutes apart; OSTI
+  appears to be temporarily unreachable from here. The paper's primary
+  arXiv copy still resolves, so the record is left as is (common rule 11
+  applies only when no copy is retrievable anywhere) — worth a re-check
+  in a later session.
+
 ## Summary
 
 Before this round: 49 included papers, 36 excluded/held.
-After this round: 50 included papers (+1: paper-dubey-2026a), 91
-excluded/held (+55: 54 new considered-and-rejected records plus one
+After this round: 50 included papers (+1: paper-dubey-2026a), 95
+excluded/held (+59: 58 new considered-and-rejected records plus one
 round-1 held item resolved to excluded). No topic additions were needed.
 No disagreements between sources were found for the one new record
 (Crossref and OpenAlex agree on title, authors, year, volume, issue,
