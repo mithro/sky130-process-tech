@@ -338,6 +338,17 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
                      sorted(discovery_counts.items(), key=lambda kv: -kv[1]))
         + ". A family can carry more than one method (reached more than one way), so these do not sum "
         "to the family count.",
+        "",
+        "A systematic assignee sweep of USPTO Patent Public Search on 2026-09-19 (Cypress Semiconductor, "
+        "SkyWater Technology, Longitude Flash Memory Solutions, Infineon Technologies LLC, Spansion, "
+        "Ramtron, Weebit Nano, restricted to process-module title keywords, run because Google Patents "
+        "was unreachable that day) found 211 distinct families: 39 were already in this index and 24 "
+        "were added (the ones whose family ID is a USPTO Patent Public Search identifier rather than a "
+        "Google Patents one). That leaves **136 identified, in-scope families this index does not yet "
+        "contain** -- mostly a large Spansion estate that needs the same per-family lineage reasoning as "
+        "the two Spansion families already added, plus a number of Weebit Nano hits not yet triaged "
+        "individually. The full sweep, every family's triage decision and the reason for each are "
+        "recorded in the repository at `docs/plans/patent-discovery-log.md` (outside the built site).",
     ]
 
 
