@@ -21,13 +21,14 @@ high-voltage transistors before their gate oxides are grown. After the
 etch the {term}`ONO` survives only as small islands, which, we infer, each cover
 a tunnel window opened at {ref}`TUNM <step-035>` and its margin.
 
-The PDK lists "ONO Mask, ONOM" as used in SKY130,[^pdk-05] with the
-generated mask layer `conom` (GDS 88:0, "ONO Mask") and a drawing
-purpose `conom` at 87:44.[^pdk-06] No `onom` design rules are
-published in the periphery-rule set, and there is no described or
-rule-bearing drawn `onom` layer for designers: we infer that the mask
-is generated from the `tunm` layer (GDS 80:20)[^pdk-06] by oversizing,
-so that the ONO island always encloses the tunnel window. That the
+The PDK lists "ONO Mask, ONOM" as used in SKY130.[^pdk-05]
+`gds_layers.csv` lists `conom` both as a mask layer (88:0, "ONO Mask")
+and with a drawing purpose (87:44) whose description cell is empty,
+and the periphery rules contain no `onom` rule at all, so designers
+are given nothing to draw for it.[^pdk-06][^pdk-periph] We infer that
+the mask is generated — most simply, by oversizing `tunm` (80:20) — so
+that the ONO island encloses the tunnel window; the generator's inputs
+and the oversize value are not published. That the
 memory cells live only inside memory blocks marked `areaid.ce` (rule
 tunm.8)[^pdk-periph] means the ONO islands are confined to the array
 areas of a design.
@@ -116,13 +117,18 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
    inference from feature size, as on {ref}`TUNM <step-035>`; ASML
    describes older exposure tools that "migrate to the lithography of
    choice for less critical layers"[^asml-30]). Overlay would be measured to the `TUNM` layer,
-   because the island-to-window enclosure is the quantity that matters.
+   because the island-to-window enclosure is the quantity that matters
+   — or, equally possible and more usual in a 200 mm fab, both layers
+   align to the same reference marks so that their enclosure is
+   controlled by the tool's alignment tree rather than by a direct
+   `ONOM`-to-`TUNM` measurement. Neither is public.
    Levinson's book has a chapter on overlay,[^levinson-2005] and van
    Haren et al. treat how alignment-mark placement limits
    overlay.[^van-haren-2019]
 5. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse,
    hard bake.
-6. **Inspection.** Overlay to `TUNM` (inferred), {term}`CD` of the islands, and
+6. **Inspection.** Overlay to `TUNM`, on either reading above, {term}`CD` of
+   the islands, and
    after-develop inspection for resist residue on the open stack, which
    would leave nitride stringers after the etch.
 
@@ -231,7 +237,8 @@ etch).
   inference from feature size.
 * Whether an ARC is used under the ONO-mask resist, and if so which
   kind, is an open question; this page describes no separate ARC etch
-  here.
+  here; if one is used, its open is part of
+  {ref}`ONOME <step-042>`, as in the Cypress flow.[^pat-03]
 * Reticle tone and the resist thickness for this layer are not public.
 
 <!-- footnotes -->
