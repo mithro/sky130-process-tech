@@ -36,7 +36,7 @@ P-diffusion.[^pdk-08] The device page's e-test table gives `RSN` as
 120 Ω/sq (limits 108–132) and the high-voltage N⁺ diffusion `RSNH` as
 114 Ω/sq (102–126).[^pdk-07] Two-terminal sweeps of the test tile's
 25-square "n+ resistor" structures, published in the SKY130 raw-data
-repository, give 122.5 Ω and 120.7 Ω per square, and the "n+ high
+repository, give 122.5 Ω and 120.6 Ω per square, and the "n+ high
 voltage resistor" 116.7 Ω per square, contacts included — inside those
 limits and, like the nominal values, lower for the high-voltage
 structure (our extraction from the published measurements; the files
