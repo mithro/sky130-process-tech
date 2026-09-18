@@ -49,11 +49,11 @@ left untouched.
 | 167-L2 | Low | fixed | 0.7-0.9 um range folds 0.18 um R7FT-3R tech into S8 range without saying so (167:129-131,242-244) |
 | 167-L3 | Low | fixed | Sinha 1978 numbers not used though on point (167:69-71,210-211) |
 | 167-L4 | Low | fixed | "only processing left" overlooks strip folded into PDME (167:20-23) |
-| 168-M1 | Medium | open | "same GDS layer number (76:44) as pad" mis-states pad's own layer (168:95-96) |
-| 168-L1 | Low | open | areaid.mt rule quoted without its test-chip waiver (168:89-90; also 171:48-50) |
-| 168-L2 | Low | open | k1 sentence silently uses space vs 165's feature, no note (168:56-59) |
-| 168-L3 | Low | open | "any rework strips resist..." unmarked inference (168:69-70) |
-| 168-L4 | Low | declined | reviewer: already correctly marked as inference, "no action strictly required"; apply reviewer's optional strictest wording anyway (168:35-39) |
+| 168-M1 | Medium | fixed | "same GDS layer number (76:44) as pad" mis-states pad's own layer (168:95-96) |
+| 168-L1 | Low | fixed | areaid.mt rule quoted without its test-chip waiver (168:89-90; also 171:48-50) |
+| 168-L2 | Low | fixed (also 165-nsm.md k1 note) | k1 sentence silently uses space vs 165's feature, no note (168:56-59) |
+| 168-L3 | Low | fixed | "any rework strips resist..." unmarked inference (168:69-70) |
+| 168-L4 | Low | fixed | applied reviewer's optional strictest wording (168:35-39) |
 | 169-M1 | Medium | open | Open-questions passivation range mixes oxide+nitride total vs nitride-only figure (169:241-245; also overview :785-792) |
 | 169-L1 | Low | open | Kastenmeier/Wodecki same two caveats as 166-L1/166-L2 (169:100-102,115-118) |
 | 169-L2 | Low | open | "hidden and later grow during bonding" over-reads Hunter et al. (169:86-88) |
