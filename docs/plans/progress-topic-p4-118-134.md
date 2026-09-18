@@ -63,4 +63,18 @@ error as the parent finding, not new independent findings):
 
 ## Checkers / build
 
-Not yet run to completion — will run before finishing per brief step 4.
+All run from the worktree in the foreground, all pass:
+
+* `uv run python tools/check_steps.py` — 171 pages, 171 written, 0 stubs, 0 missing headings
+* `uv run python tools/check_refs.py` — 264 written pages checked, 0 with problems
+* `uv run python tools/check_machines.py` — 30 machine pages checked, 0 problems
+* `uv run python tools/check_materials.py` — 12 material pages checked, 0 problems
+* `uv run python tools/check_masks.py` — 36 mask pages checked, 0 problems
+* `uv run python tools/check_papers.py` — 49 papers checked, 0 problems
+* `uv run python tools/gen_papers.py --check` — 8 pages checked, 0 problems
+* `uv run sphinx-build -W -q -b html docs tmp/build-topic-p4-118-134` — exit 0, no warnings
+
+Work on this branch is complete: all 18 findings from the review
+addressed (17 fixed, 1 declined as handled elsewhere), plus the three
+mandatory site-wide sweeps and four incidental recurrences found and
+fixed along the way (see above).
