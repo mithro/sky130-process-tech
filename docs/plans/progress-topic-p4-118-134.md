@@ -21,13 +21,13 @@ whole `docs/` tree, not just 118-134).
 | 120-L1 | Low | fixed | "lands on aluminium... rather than TiN" contradicts TiN-on-TiW stated 20 lines earlier (120-tin3.md) — commit 1a2a337 |
 | 122-L1 | Low | fixed | incomplete grant date on pat-cmp-ibm-1990 footnote (122, 127-cmpm2, 133-wcmp4) — commit 1a2a337; corrected reviewer's proposed date (1988-10-28 does not match the cached record; used 1985-10-28 filed / 1990-07-31 granted, per gp-US4944836-wb.html) |
 | 123-L1 | Low | fixed | Cypress film string re-spaced inside quotation marks (123-tial12 x2, 134-wtial3 x2; 118-vim is prose not quoted, no change needed there) — commit 1a2a337 |
-| 125-L1 | Low | open | PDK metal-layer antenna area is perimeter not plan area (125-mm2e.md) |
-| 125-L2 | Low | open | 261 nm AlCl endpoint wavelength unsupported by cited source (125-mm2e + cross-page categories/etch.md:164) |
-| 125-L3 | Low | open | unsupported "newer" claim about 2300 platform (125-mm2e.md:163-166) |
-| 126-L1 | Low | open | "still calls" wording for a 2009 press release (126-nild4.md:77-78) |
-| 129-L1 | Low | open | via2/via resistance "consistent with larger area" ignores depth (129-vim2, 130-vim2e) |
-| 129-L2 | Low | open | i-line NA cross-referenced to page that doesn't give it (129-vim2.md:62-64) |
-| 132-L1 | Low | open | "near-ideal" overstates PNL patent claim (132-wdep4.md:71-75) |
+| 125-L1 | Low | fixed | PDK metal-layer antenna area is perimeter not plan area (125-mm2e.md) — commit 3ff9b57 |
+| 125-L2 | Low | fixed | 261 nm AlCl endpoint wavelength unsupported by cited source (125-mm2e + cross-page categories/etch.md:164) — commit 3ff9b57 |
+| 125-L3 | Low | fixed | unsupported "newer" claim about 2300 platform (125-mm2e.md:163-166) — commit 3ff9b57 |
+| 126-L1 | Low | fixed | "still calls" wording for a 2009 press release (126-nild4.md:77-78) — commit 0a6b10a |
+| 129-L1 | Low | fixed | via2/via resistance "consistent with larger area" ignores depth (129-vim2, 130-vim2e) — commit 0a6b10a |
+| 129-L2 | Low | fixed | i-line NA cross-referenced to page that doesn't give it (129-vim2.md:62-64) — commit 0a6b10a |
+| 132-L1 | Low | fixed | "near-ideal" overstates PNL patent claim (132-wdep4.md:71-75; also found+fixed the same overstatement on 110-wdep2.md) — commit a13fce1 |
 
 ## Site-wide items from the review (NOT this branch's findings)
 
@@ -48,6 +48,18 @@ attribution, or the step-name ordinal soft form recur elsewhere in
 | "wider" via/contact-vs-via miscomparison | done | found and fixed one more instance, 119-vime.md:70 (mcon vs via) — commit b4f1068 |
 | solvent wrongly attributed to "wet bench" / EKS265/EKC270 | done | found and fixed four more instances outside 118-134: 108-ctme.md, 114-mm1e.md, 138-capme.md, 140-mm3e.md — commit 5a806bb |
 | step-name ordinal soft form ("the digit/suffix makes it the Nth") | done | grepped whole docs/ tree beyond 122, no other occurrence found — commit 4904894 |
+
+## Extra recurrences found and fixed beyond the review's listed sites
+
+While applying findings, grepped for each error's exact pattern and
+fixed additional occurrences the review didn't list (all same class of
+error as the parent finding, not new independent findings):
+
+* "wider" via-vs-contact miscomparison: 119-vime.md:70 (mcon vs via).
+* EKS265/EKC270 "wet-bench list" misattribution: 108-ctme.md,
+  114-mm1e.md, 138-capme.md, 140-mm3e.md.
+* UMC dual-damascene patent scope (119-L1): 145-vim3e.md, 147-wdep5.md.
+* "near-ideal" PNL patent overstatement (132-L1): 110-wdep2.md.
 
 ## Checkers / build
 
