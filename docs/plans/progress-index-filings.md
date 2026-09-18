@@ -49,7 +49,7 @@ human/agent read the fetched copy against the summary and quotes).
 
 | Form | Years | Status | Notes |
 |---|---|---|---|
-| Annual report | FY2019, FY2020, FY2025 | records added | FY2021-2024 **not searched** |
+| Annual report | FY2019, FY2020, FY2021, FY2022, FY2023, FY2024, FY2025 | records added | full FY2019-2025 series now in place; found by web search for the Infineon-hosted PDF (the investor-relations annual-reports listing page itself 404s when fetched directly, so it was not browsed) |
 | Half-year reports | none | not searched | design §7 gap |
 | German company register (Unternehmensregister) | none | not searched | design §7 gap |
 
@@ -132,3 +132,12 @@ human/agent read the fetched copy against the summary and quotes).
   <scratch>`: clean. All of `check_refs.py`, `check_steps.py`,
   `check_machines.py`, `check_materials.py`, `check_masks.py`,
   `check_papers.py` pass with 0 problems.
+* 2026-09-18 — Added Infineon's FY2021-FY2024 annual reports (found by
+  web search for the Infineon-hosted PDF, since the IR listing page 404s
+  on direct fetch; dates are the latest "Neubiberg, DD Month YYYY"
+  signature line found in each PDF). Closes the "Infineon annual reports
+  2021-2024" gap. Tried to find SkyWater's 2023-2026 DEF 14A proxies and
+  further 10-Qs and a Weebit Nano WordPress search endpoint for its 2021
+  announcement, but ran out of time to fetch a compliant (non-EDGAR)
+  copy for any of them before this session had to stop; left as open
+  items below rather than adding an unverified record.

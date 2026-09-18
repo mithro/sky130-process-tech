@@ -33,6 +33,7 @@ Filings by year of filing, newest first.
 * SkyWater Technology, Inc., 10-K, filed 2024-03-15: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-skywater-10-k-2024-03-15>`)
 * D-Wave Quantum Inc., 10-K, filed 2024-03-29: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-d-wave-10-k-2024-03-29>`)
 * Weebit Nano Limited, Appendix 4E and Annual Report, filed 2024-08-28: Appendix 4E and 2024 Annual Report for the year ended 30 June 2024 ({ref}`full entry <filing-weebit-nano-annual-report-fy2024>`)
+* Infineon Technologies AG, Annual Report, filed 2024-11-26: Infineon Technologies Annual Report 2024 ({ref}`full entry <filing-infineon-annual-report-fy2024>`)
 
 (filings-year-2023)=
 ## 2023
@@ -43,6 +44,7 @@ Filings by year of filing, newest first.
 * Weebit Nano Limited, ASX announcement, filed 2023-06-29: WBT's ReRAM IP now fully qualified in SkyWater S130 process ({ref}`full entry <filing-weebit-nano-announcement-2023-06-29>`)
 * SkyWater Technology, Inc., 8-K, filed 2023-08-04: Current report, item 1.01: Consulting Agreement with Oxbow Industries ({ref}`full entry <filing-skywater-8-k-2023-08-04>`)
 * Weebit Nano Limited, Appendix 4E and Annual Report, filed 2023-08-25: Appendix 4E and Annual Report for the year ended 30 June 2023 ({ref}`full entry <filing-weebit-nano-annual-report-fy2023>`)
+* Infineon Technologies AG, Annual Report, filed 2023-11-23: Infineon Technologies Annual Report 2023 ({ref}`full entry <filing-infineon-annual-report-fy2023>`)
 
 (filings-year-2022)=
 ## 2022
@@ -51,6 +53,7 @@ Filings by year of filing, newest first.
 * D-Wave Quantum Inc., S-4, filed 2022-03-15: Form S-4 registration statement for the business combination of D-Wave Systems and DPCM Capital ({ref}`full entry <filing-d-wave-s-4-2022-03-15>`)
 * SkyWater Technology, Inc., 8-K, filed 2022-04-04: Current report, item 1.01: Frame Agreement for the Purchase of Wafers and Services with Infineon ({ref}`full entry <filing-skywater-8-k-2022-04-04>`)
 * SkyWater Technology, Inc., DEF 14A, filed 2022-04-19: Definitive proxy statement for the 2022 annual meeting of stockholders ({ref}`full entry <filing-skywater-def-14a-2022-04-19>`)
+* Infineon Technologies AG, Annual Report, filed 2022-11-25: Infineon Technologies Annual Report 2022 ({ref}`full entry <filing-infineon-annual-report-fy2022>`)
 
 (filings-year-2021)=
 ## 2021
@@ -59,6 +62,7 @@ Filings by year of filing, newest first.
 * SkyWater Technology, Inc., S-1, filed 2021-03-22: Form S-1 registration statement (initial public offering), Registration No. 333-254580 ({ref}`full entry <filing-skywater-s-1-2021-03-22>`)
 * SkyWater Technology, Inc., S-1/A, filed 2021-04-12: Amendment No. 1 to Form S-1 registration statement, Registration No. 333-254580 ({ref}`full entry <filing-skywater-s-1-a-2021-04-12>`)
 * SkyWater Technology, Inc., 424B4, filed 2021-04-22: Final prospectus for the initial public offering of 6,960,000 shares of common stock ({ref}`full entry <filing-skywater-424b4-2021-04-22>`)
+* Infineon Technologies AG, Annual Report, filed 2021-11-25: Infineon Technologies Annual Report 2021 ({ref}`full entry <filing-infineon-annual-report-fy2021>`)
 
 (filings-year-2020)=
 ## 2020
