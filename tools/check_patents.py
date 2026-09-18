@@ -519,6 +519,32 @@ def check_family(f: dict, labels: dict[str, Path], inventory: dict[str, str],
                 problems.append(
                     f"{fid}: expired: true but member {m.get('number')} is not bounded ended until "
                     f"{eb.isoformat()} (design's per-member expiry rule)")
+        # N3 (round-4, second review): a family built through the PPUBS
+        # fallback has no legal-status or US patent term adjustment (PTA)
+        # data at all -- the design's "PPUBS fallback" section says such a
+        # family "whose bound could have been extended by a US patent term
+        # adjustment the record does not show is false or unknown". PTA
+        # under 35 U.S.C. 154(b) applies to applications filed on or after
+        # 2000-05-29 (AIPA); a late continuation off an old priority can
+        # still earn it, so every member's own filing_date is checked, not
+        # just the family's earliest priority. This must hold by
+        # construction, not merely happen to hold for the current data.
+        if fam.get("source") != "Google Patents family ID":
+            prio = to_date((f.get("dates") or {}).get("priority"))
+            if prio is None or prio >= dt.date(1999, 5, 29):
+                problems.append(
+                    f"{fid}: PPUBS-sourced family with priority {prio} cannot be expired: true "
+                    f"-- PPUBS reports no term adjustment (design's 'PPUBS fallback' rule)")
+            late_filings = sorted(
+                m.get("number") for m in members
+                if isinstance(m, dict) and (fd := to_date(m.get("filing_date"))) is not None
+                and fd >= dt.date(2000, 5, 29)
+            )
+            if late_filings:
+                problems.append(
+                    f"{fid}: PPUBS-sourced family with a member filed on or after 2000-05-29 "
+                    f"({', '.join(late_filings)}) cannot be expired: true -- a late continuation "
+                    f"off an old priority can still earn a US patent term adjustment PPUBS does not report")
     elif expired is False:
         if not edate or edate <= TODAY:
             problems.append(f"{fid}: expired: false but expiry date {edate} is not after today")

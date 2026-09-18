@@ -82,9 +82,9 @@ relation:
 | | Families | Members |
 |---|---|---|
 | Total | 252 | 1543 |
-| Shown as expired | 183 | 1095 |
+| Shown as expired | 182 | 1094 |
 | Shown as in force | 47 | 419 |
-| Status unknown | 22 | 29 |
+| Status unknown | 23 | 30 |
 
 ## Scope and completeness
 
