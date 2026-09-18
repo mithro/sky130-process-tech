@@ -38,8 +38,9 @@ not show one here, and so offers no hint of this cap's thickness
 (via3.1[^pdk-periph]) etched 0.39 µm deep to metal 3 — an
 {term}`aspect ratio` of about 1.95:1, a little below via 2's 2.1:1 —
 and, over each capacitor, a shallower via to the TiW top plate (the
-PDK's `cap_mim` cross-section draws vias labelled "Via3" from metal 4
-landing on "CAPM" and on "M3 (plate 1)"[^pdk-07]).
+PDK's `cap_mim` cross-section draws vias from metal 4 landing on "CAPM"
+and on "M3 (plate 1)"; it labels the via that lands on "CAPM" — the
+only via it labels — "Via3"[^pdk-07]).
 
 ## Step category
 
@@ -179,7 +180,8 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
   film; met3 and met4 bottom levels; `met3` 0.845 µm.[^pdk-04]
 * SkyWater PDK, *Periphery rules* — via3.1 0.200 µm.[^pdk-periph]
 * SkyWater PDK, *Device Details* — the `cap_mim` cross-section with
-  vias labelled "Via3" landing on "CAPM" and on "M3 (plate 1)".[^pdk-07]
+  vias landing on "CAPM" and on "M3 (plate 1)", the former labelled
+  "Via3".[^pdk-07]
 * SkyWater, *Facilities & Capabilities* — "PECVD TEOS, C2 and Producer
   – low temp options"; "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01]
 * Cypress, QTP 123907/132302/132301 and QTP 014807 — "1000A TEOS" in
