@@ -51,8 +51,14 @@ def main() -> int:
             print(f"{page.name}: missing {', '.join(missing)}")
         if STUB_MARKER in text:
             stubs += 1
-    print(f"{len(pages)} pages, {len(pages) - stubs} written, {stubs} stubs, {bad} with missing headings")
-    return 1 if bad else 0
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import gen_index_links
+    link_problems = gen_index_links.stale_pages_in("steps")
+    for p in link_problems:
+        print(p)
+    print(f"{len(pages)} pages, {len(pages) - stubs} written, {stubs} stubs, {bad} with missing headings, "
+          f"{len(link_problems)} with a stale index-links block")
+    return 1 if bad or link_problems else 0
 
 
 if __name__ == "__main__":

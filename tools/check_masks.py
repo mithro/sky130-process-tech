@@ -649,8 +649,16 @@ def main() -> int:
         for problem in check(page, index, pages, sheet):
             bad += 1
             print(f"{page.name}: {problem}")
-    print(f"{len(mask_pages)} mask pages checked, {bad} problems")
-    return 1 if bad else 0
+    link_problems: list[str] = []
+    if args.masks == MASKS:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import gen_index_links
+        link_problems = gen_index_links.stale_pages_in("masks")
+        for p in link_problems:
+            print(p)
+    print(f"{len(mask_pages)} mask pages checked, {bad} problems, "
+          f"{len(link_problems)} with a stale index-links block")
+    return 1 if bad or link_problems else 0
 
 
 if __name__ == "__main__":
