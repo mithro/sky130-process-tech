@@ -56,10 +56,11 @@ insulator. The fill has to be:
 * **Void-free.** A seam or void in the trench is opened by later
   etches and cleans and then fills with polysilicon at
   {ref}`SAGD <step-048>`, causing "poly stringer" shorts — precisely
-  the 0.13 µm yield-loss mechanism analysed by Thung et al. ("HDP
+  the 0.13 µm yield-loss mechanism the paper cited below reports, from
+  a review it cites: "edge fallout due to High Density Plasma (HDP)
   deposition void at the special Shallow Trench Isolation (STI) wall
   structure causes poly stringer after poly deposition
-  process").[^thung-2016]
+  process".[^thung-2016]
 * **Dense.** The oxide must survive the many HF-containing cleans that
   follow without etching faster than thermal oxide, or it will recess
   below the active surface and form divots at the active edge.

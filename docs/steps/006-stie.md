@@ -74,8 +74,9 @@ isolation module:
   polish get harder.
 * **Sidewall angle** (typically a few degrees off vertical) lets the
   HDP oxide fill without voids. The 0.13 µm STI paper cited below
-  traces a yield loss to "HDP deposition void at the special Shallow
-  Trench Isolation (STI) wall structure".[^thung-2016]
+  reports, from a review it cites, "edge fallout due to High Density
+  Plasma (HDP) deposition void at the special Shallow Trench Isolation
+  (STI) wall structure".[^thung-2016]
 * **Top-corner shape** controls the parasitic edge transistor that
   produces the "double-hump" in the sub-threshold characteristic;
   the 2001 ITRS records that manufacturers were "beginning to use etch
