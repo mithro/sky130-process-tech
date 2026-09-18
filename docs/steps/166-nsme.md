@@ -26,17 +26,20 @@ What the etch removes is not public. Its first film is the thin
 passivation oxide of {ref}`NFUSOX <step-164>` (0.09 µm "TOPOX" on the
 PDK's stack diagram[^pdk-04]). Below that, in a region with no wiring,
 lie only dielectrics: on the diagram, the inter-level dielectrics NILD6
-to NILD2 with the thin NILD3_C and NILD4_C layers, the thin "LINT
-K=7.3" nitride (0.075 µm) over the local-interconnect level, the "PSG
+to NILD2 with the thin NILD3_C and NILD4_C layers, the thin nitride
+over the local-interconnect level, which the diagram labels "LINT
+K=7.3" (0.075 µm) and the step list calls {ref}`LINIT <step-104>`, the "PSG
 K=3.9" pre-metal glass and the field oxide, the bottom of metal 5
-lying 5.3711 µm above the substrate.[^pdk-04] In the seal-ring cell
+carrying the level 5.3711 µm, measured from a datum the drawing does
+not state (this reference reads it as the trench floor,
+{ref}`STIE <step-006>`).[^pdk-04] In the seal-ring cell
 used on Efabless's Caravel shuttle designs the `nsm` band is 5 µm wide
 and overlies four 0.3 µm diffusion rings.[^caravel-sealring] The step
 list used in this reference does not say how deep `NSME` goes; we
 describe two readings (inference):
 
 * **A deep seal etch.** The opening is cut through the inter-level
-  oxides — and possibly the LINT nitride and PSG — towards the silicon
+  oxides — and possibly the LINIT nitride and PSG — towards the silicon
   of the seal ring, so that the passivation nitride deposited next forms
   a continuous wall from the top of the die down into the dielectric
   stack. This is the construction of a GlobalFoundries edge-seal patent,
@@ -44,7 +47,7 @@ describe two readings (inference):
   least a substrate" and covered by passivation.[^pat-edgeseal-gf] The
   exemption of the seal ring's diffusion ring from the `nsm` keepout
   (nsm.3[^pdk-periph]) is consistent with an opening that reaches it.
-* **A stop on the LINT nitride.** The oxide etch lands on the 0.075 µm
+* **A stop on the LINIT nitride.** The oxide etch lands on the 0.075 µm
   local-interconnect nitride,[^pdk-04] so that the top passivation
   nitride joins a nitride that already covers the front end, closing the
   inter-metal oxides inside nitride. A fluorocarbon oxide etch selective
@@ -83,7 +86,10 @@ beside the ring.
   contamination", shows "a moisture path … through the passivation
   oxide" beneath it at the die periphery.[^pat-sealring-zeevo] Even an
   opening through only the thin passivation oxide would let the nitride
-  close that path (inference). That this is the purpose of
+  close that path — the patent's own moisture-path area is the die
+  perimeter times a "bottle neck width … typically in the range of 0.5
+  to 1.0 µm", the thickness of that oxide.[^pat-sealring-zeevo] That
+  this is the purpose of
   SKY130's `nsm` ring is our inference ({ref}`NSM <step-165>`).
 * **A {term}`crack stop`.** A trench through the dielectric along the saw line
   interrupts crack propagation from dicing, the function a Siemens and IBM patent
@@ -114,17 +120,22 @@ public):
    in a high-density C₂F₆ plasma[^perry-2001] — the ratio that decides
    whether the resist of {ref}`NSM <step-165>` survives a deep etch; a
    TSMC fuse-window patent etches through a passivation and several
-   inter-metal dielectrics in two steps, the second with "high
-   selectivity to the silicon nitride etch-stop layer".[^pat-fusewin-tsmc]
-3. **Nitride layers.** If the etch is to pass the LINT nitride, a less
-   polymerising, more oxygen- or fluorine-rich step breaks through it
-   (Kastenmeier et al. give nitride and oxide rates in CF₄/O₂/N₂[^kastenmeier-1996]);
-   if it is to stop on it, a polymerising chemistry with high
-   oxide-to-nitride selectivity is used.[^schaepkens-1999]
-4. **{term}`Endpoint <endpoint>`.** Optical emission is weak at an open area of about
-   0.5 % (our estimate above) — Wodecki describes endpoint on
-   low-open-area dielectric etches[^wodecki-1999] — so a timed etch
-   calibrated on monitors, with an {term}`over-etch`, is likely (inference).
+   inter-metal dielectrics in two steps, the second with "a high
+   selectivity to the silicon nitride etch stop layer".[^pat-fusewin-tsmc]
+3. **Nitride layers.** If the etch is to pass the LINIT nitride, a less
+   polymerising, more oxygen- or fluorine-rich step breaks through it;
+   Kastenmeier et al. measured nitride and oxide rates in CF₄/O₂/N₂ in a
+   downstream reactor and found that small N₂ additions raise the
+   nitride rate sevenfold while leaving the oxide rate unchanged, the
+   chemical contrast such a step exploits.[^kastenmeier-1996] If it is to
+   stop on it, a polymerising chemistry with high oxide-to-nitride
+   selectivity is used.[^schaepkens-1999]
+4. **{term}`Endpoint <endpoint>`.** The open area is about 0.5 % (our
+   estimate above), where the emission change at endpoint is small;
+   narrow-band systems were nonetheless demonstrated on 200 mm
+   dielectric etchers at under 3 % open area.[^wodecki-1999] Whether
+   SKY130 endpoints this etch or runs it timed with an
+   {term}`over-etch` on monitor calibration is not public.
 5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` on the GaSonics,
    Iridia or Mattson strippers SkyWater lists, then a solvent polymer
    clean compatible with the exposed oxide and the aluminium beneath
@@ -214,10 +225,12 @@ public):
 * Perry et al., *JVST A* 2001 — oxide etch rates and selectivity to
   photoresist in a C₂F₆ plasma.[^perry-2001]
 * Schaepkens et al., *JVST A* 1999 — the SiO₂-to-Si₃N₄ selectivity
-  mechanism, for a stop on the LINT nitride.[^schaepkens-1999]
-* Kastenmeier et al., *JVST A* 1996 — nitride and oxide etching in
-  CF₄/O₂/N₂, for a breakthrough.[^kastenmeier-1996]
-* Wodecki, SPIE 1999 — endpoint detection at low open area.[^wodecki-1999]
+  mechanism, for a stop on the LINIT nitride.[^schaepkens-1999]
+* Kastenmeier et al., *JVST A* 1996 — nitride and oxide etch rates in a
+  downstream CF₄/O₂/N₂ reactor, for the chemical contrast a breakthrough
+  step exploits.[^kastenmeier-1996]
+* Wodecki, SPIE 1999 — endpoint detection demonstrated at low open
+  area.[^wodecki-1999]
 * Stamper, McGahay and He (GlobalFoundries), US 10,062,748 — an edge seal
   etched through the dielectrics.[^pat-edgeseal-gf]
 * Mitwalsky and Chen (Siemens and IBM), US 5,789,302 — dielectric discontinuities as
@@ -229,7 +242,7 @@ public):
 
 ## Open questions
 
-* How deep the etch goes — through the thin TOPOX only, to the LINT
+* How deep the etch goes — through the thin TOPOX only, to the LINIT
   nitride, or to the silicon of the seal ring — and whether it passes
   any nitride, are not public.
 * The chemistry, endpoint and tool are not public.
