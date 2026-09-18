@@ -30,7 +30,7 @@ arithmetic before being fixed or declined.
 | 047-M1 | 047-lvgox.md | fixed | nitridation inference marked once, used as fact elsewhere |
 | 047-M2 | 047-lvgox.md | fixed | two overstated claims about oxidation control |
 | 035-L1 | 035-tunm.md | fixed | quotation capitalisation |
-| 035-L2 | 035-tunm.md | fixed | 5V regions are hvi, drawn complement at LVOM |
+| 035-L2 | 035-tunm.md | fixed | 5V regions are hvi, drawn complement at LVOM; re-fixed per verifier to mark the NOT-hvi complement reading as an inference (044-M1), not fact |
 | 035-L3 | 035-tunm.md | fixed | tunm.3 unit not given by the table |
 | 035-L4 | 035-tunm.md | fixed | job-01 no longer retrievable |
 | 036-L2 | 036-tunarce.md | fixed | resolved as a side effect of the 036-M1 fix (the unsupported figure is gone) |
