@@ -62,7 +62,7 @@ varactors, the four SONOS rows, the p-diffusion, HV n- and p-diffusion
 and p+ poly resistors, every 110 Å row except the five UHV 5/20 V
 drain-extended rows, twelve diode rows, the parasitic PNP and the three
 HV ESD transistors.[^pdk-06] It marks `-`,
-"Layer not created for the device", in 19 rows, among them the 1.8 V
+"Layer not created for the device", in 37 rows, among them the 1.8 V
 NMOS, the low-Vt NMOS, the `nmos_core` rows, the n-diffusion resistor,
 the `nDiode`, the LV ESD NMOS and the five UHV 5/20 V drain-extended
 rows.[^pdk-06] On our reading of the rows, the created shapes lie over
