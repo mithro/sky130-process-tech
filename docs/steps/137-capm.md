@@ -48,8 +48,8 @@ and the via-3 holes 0.20 µm.[^pdk-periph]
 
 The surface is unusual for a mask step: flat (no {term}`CMP` step, no
 plug topography — the metal-3 stack was sputtered onto the polished
-via-2 level of {ref}`WCMP4 <step-133>`), highly reflective (TiW over
-aluminium) and thermally and chemically delicate, since only some
+via-2 level of {ref}`WCMP4 <step-133>`), highly reflective (the plate
+film over the metal-3 stack) and thermally and chemically delicate, since only some
 20–30 nm of dielectric (our estimate at {ref}`CAPILD <step-135>`)
 separate the resist's substrate from the aluminium below.
 
@@ -128,7 +128,8 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 1. **Surface preparation.** The wafer comes from the {term}`PVD`
    cluster; a dehydration bake, and either an organic {term}`BARC`
-   or a dyed resist to tame the reflectivity of TiW-on-aluminium
+   or a dyed resist to tame the reflectivity of the plate over the
+   metal-3 stack
    (Brunner's {term}`swing-curve <swing curve>` analysis is the basis;[^brunner-1991]
    Rocke and Schneegans documented the anti-reflective role of a
    refractory cap on aluminium[^rocke-1988]). No {term}`HMDS` is
