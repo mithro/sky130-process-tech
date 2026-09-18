@@ -112,9 +112,37 @@ metallisation in the literature, sputter-target and tool-capability lists
 | `docs/glossary.md` | ARC, Ti:W entries | definitions | done |
 | `docs/references/public-sources.md` | `CYP-PIN145273`, `CYP-QTP-113005`, `CYP-QTP-123907` glosses | inventory accuracy | done |
 
-## 4. Work log
+Also changed, outside the table above because the cap is mentioned only
+in passing: `docs/steps/116-cmpm.md`, `127-cmpm2.md` (the polish must not
+break through to the cap), `121-wdep3.md`, `132-wdep4.md` (the plug floor
+is the liner over the cap), `142-cmpm3.md` and `docs/masks/vim.md`,
+`vim2.md`, `vim3.md`, `mm1.md`, `mm2.md`, `capm.md`,
+`docs/machines/film-thickness-metrology.md`, `docs/machines/index.md`.
+
+## 4. Sources added or re-glossed
+
+No new source was fetched that the inventory did not already hold. Three
+inventory glosses were wrong or incomplete and are corrected on this
+branch:
+
+* `CYP-PIN145273` said the notification "describes the TiW-based stack
+  as Cypress's Minnesota process". It announces the move **away** from
+  it. Gloss rewritten with the quotation and its date.
+* `CYP-QTP-123907` recorded only the S8DI/S8TNV change line. Gloss now
+  gives all three qualifications with dates and scope, and both printed
+  stacks.
+* `CYP-QTP-113005` did not say that the stack it describes is
+  S8TNV-5R's and predates the change. It does now.
+
+`LIU-2007-TIW`, `PAT-MIM-TI-ETCH` and `MIN-2008` gained the selectivity
+and chemistry figures the rebuilt `CAPME` argument uses.
+
+## 5. Work log
 
 * Worktree created; briefs, citation style and the three Phase 4 reviews
   read in full; both Cypress PDFs and PIN145273 read page by page;
   PDK caches re-grepped for any metal-stack material name (none).
 * Evidence table above written from the retrieved copies only.
+* Canonical section written at {ref}`overview-metal-cap`; every
+  dependent page brought into line; the three Phase 4 progress files'
+  deferred rows marked closed.

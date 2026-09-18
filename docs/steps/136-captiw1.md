@@ -233,8 +233,9 @@ back end (SKY130's recipe is not public):
   aspect ratio 20.[^pdk-03]
 * SkyWater PDK, *Process stack diagram* — `capm` between `metal3` and
   `metal4`.[^pdk-04]
-* Cypress, QTP 113005 — the 300 Å TiW caps of the S8 metal
-  stacks, for comparison.[^cyp-qtp-113005]
+* Cypress, QTP 113005 — the 300 Å TiW caps of the S8TNV-5R metal
+  stacks, for comparison; QTP 123907 records the later change away from
+  them.[^cyp-qtp-113005][^cyp-qtp-123907]
 * SkyWater, *Facilities & Capabilities* — "AMAT PVD Metal … TiW";
   "Sputter etch, degas"; TiW on the metal etchers.[^skw-01]
 * SkyWater, Form S-1 and 10-K — sputter-target suppliers.[^sec-01][^sec-02]

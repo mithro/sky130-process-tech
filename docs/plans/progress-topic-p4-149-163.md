@@ -19,10 +19,10 @@ depend on the same TiW/TiN-cap-composition question or on how
 
 | id | severity | status | note |
 |---|---|---|---|
-| X1 | High | deferred | metal-cap/barrier sweep — misattribution of `[^cyp-qtp-123907]` (149-wtial4.md:53-55 etc.) |
-| X2 | Medium | deferred | metal-cap/barrier sweep — S8P line of `[^cyp-qtp-123907]` as evidence for metal-5 TiW cap (161-wtial5.md:51-62) |
-| X3 | Medium | deferred | metal-cap/barrier sweep — Open questions on metal-4 cap uncertainty (149, 153, 155, 160) |
-| X4 | Low | deferred | metal-cap/barrier sweep — 0.845/0.8 and 1.26/1.2 arithmetic argument |
+| X1 | High | deferred -> closed on `topic/metal-cap` | metal-cap/barrier sweep — misattribution of `[^cyp-qtp-123907]` (149-wtial4.md:53-55 etc.) |
+| X2 | Medium | deferred -> closed on `topic/metal-cap` | metal-cap/barrier sweep — S8P line of `[^cyp-qtp-123907]` as evidence for metal-5 TiW cap (161-wtial5.md:51-62) |
+| X3 | Medium | deferred -> closed on `topic/metal-cap` | metal-cap/barrier sweep — Open questions on metal-4 cap uncertainty (149, 153, 155, 160) |
+| X4 | Low | deferred -> closed on `topic/metal-cap` | metal-cap/barrier sweep — 0.845/0.8 and 1.26/1.2 arithmetic argument |
 | 149-L1 | Low | fixed | "antenna-rule table" vs *Criteria & Assumptions* naming (149:37, 155:34, 161:31; 163:30 already said "assumptions table") |
 | 149-L2 | Low | fixed | Rocke & Schneegans (TiN paper) cited for a TiW cap without saying so (149, 152, 154, 161, 162) — reworded to name TiN and mark the TiW analogy as inference, per the review's wording |
 | 149-L3 | Low | fixed | Al-Cu target/Cypress attribution missing footnote (149:161-162) |
@@ -37,7 +37,7 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 152-L1 | Low | fixed | CD-bias arithmetic convention unstated (152:77-81) |
 | 152-L2 | Low | fixed | alignment-target naming inconsistency within page (152:155-158) |
 | 153-M1 | Medium | fixed | "every capm plate tied to metal4" overstated vs 155's correct wording (153:81-83) |
-| 153-L1 | Low | deferred | metal-cap/barrier sweep — S8TNV-5R quote scope (153:31-33, :221) |
+| 153-L1 | Low | deferred -> closed on `topic/metal-cap` | metal-cap/barrier sweep — S8TNV-5R quote scope (153:31-33, :221) |
 | 153-L2 | Low | fixed | solvent-clean citation placement implies chemistry claim (153:145-151) |
 | 154-L1 | Low | fixed | CU-flagged rule range incomplete (154:40-42), verified against cached pdk-periphery.txt (m4.7, m4.11-m4.16) |
 | 154-L2 | Low | fixed | uncited/unmarked cap2m-edge overlay claim (154:147-152) |
@@ -56,9 +56,9 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 159-L2 | Low | fixed | via4/via3 resistance-per-area residual left uncomputed (159:47-51), fixed alongside 151-L1 |
 | 160-M1 | Medium | fixed, corrected | Bui et al. citation misapplied to a residue claim (160:76-83); own fresh Crossref check found the abstract IS published (contrary to the review's claim), so used its actual content (TiN ARC thickness vs EM lifetime) rather than the review's "not publicly readable" wording — see note below |
 | 160-L1 | Low | fixed | EKS265 silently read as "EKC265" without marking the reading (160:200-204) |
-| 161-L1 | Low | deferred | metal-cap/barrier sweep — 300 Å TiW analogue is top not lower metal (161:214-215) |
+| 161-L1 | Low | deferred -> closed on `topic/metal-cap` | metal-cap/barrier sweep — 300 Å TiW analogue is top not lower metal (161:214-215) |
 | 161-L2 | Low | declined | Kikuta review cited beyond its published abstract (161:91-93) — the review said no abstract is published; a fresh Crossref fetch (DOI 10.1557/S0883769400045577) returns a full abstract that says reflow sputtering "can simplify device-fabrication processes and achieve high reliability without Al/W interfaces" and that W-CVD has "greater resistivity than Al", directly supporting the page's "avoids Al/W interfaces and the higher resistivity of tungsten"; no change needed |
-| 161-L3 | Low | deferred | plural "reports" with a single footnote — line 51-53 sits inside the range finding X2 concerns (51-62); left for the metal-cap sweep |
+| 161-L3 | Low | deferred -> closed on `topic/metal-cap` | plural "reports" with a single footnote — line 51-53 sits inside the range finding X2 concerns (51-62); left for the metal-cap sweep |
 | 162-M1 | Medium | fixed | S8PIR reading uses 3 of 5 Background features, omits the strongest argument (162:31-44); required by coordinator instruction explicitly; all values verified against cached pdk-background.txt, pdk-antenna.txt, pdk-periphery.txt, pdk-assumptions.txt |
 | 162-L1 | Low | fixed | m4.4 probe-pad exemption asymmetry not noted (162:43-44); verified against cached pdk-periphery.txt |
 | 162-L2 | Low | fixed | circular step-list-silence reasoning (162:117-124) |

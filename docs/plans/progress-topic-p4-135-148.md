@@ -1,11 +1,13 @@
 # Progress — topic/p4-135-148 (fixer, review-135-148.md)
 
 Status legend: open / fixed / declined / deferred (metal-cap sweep,
-per coordinator instruction — not this agent's scope).
+per coordinator instruction — not this agent's scope). The deferred rows
+were taken up and closed on branch `topic/metal-cap`; see
+`progress-topic-metal-cap.md`.
 
 | Finding | Status | Note |
 |---|---|---|
-| X1 (High, metal-3 cap TiW vs 2014 S8P report) | deferred | scope exclusion: cross-cutting metal-cap sweep handles this on every page at once; sentences left untouched |
+| X1 (High, metal-3 cap TiW vs 2014 S8P report) | deferred -> closed on `topic/metal-cap` | cross-cutting metal-cap sweep; see `progress-topic-metal-cap.md` |
 | 135-L1 | fixed | Babcock Deep-dive annotation corrected to frequency dependence/voltage linearity/dispersion |
 | 135-L2 | fixed | Kar-Roy Deep-dive annotation: "aluminium" removed from paraphrase, marked as our inference from the date |
 | 135-L3 | fixed | split citation: PDK k=7.5 cited for "highest density per thickness", Van Huylenbroeck kept for dispersion |
@@ -17,14 +19,14 @@ per coordinator instruction — not this agent's scope).
 | 137-M1 | fixed | see 136-M1 |
 | 137-L1 | fixed | enumerated the three spacing rules (capm-via2, via-capm, capm-met2) that were missing from the list of twelve |
 | 137-L2 | fixed | corrected capm.3-capm.5 range label: capm.5 is a spacing, not an enclosure |
-| 138-M1 (TiW-to-nitride selectivity) | deferred | scope exclusion: depends on which cap the metal-3 line carries |
-| 138-M2 (= X1) | deferred | scope exclusion |
+| 138-M1 (TiW-to-nitride selectivity) | deferred -> closed on `topic/metal-cap` | Liu and Kuo's "greater than 2" is now the basis of the 138 argument |
+| 138-M2 (= X1) | deferred -> closed on `topic/metal-cap` | cross-cutting metal-cap sweep |
 | 138-L1 (EKC/wet-bench attribution) | declined | already correct on this branch's base (main); phrase "of the wet-bench list" not present, page already reads "under Batch Rotational" — no action needed |
 | 138-L2 | fixed | added `[^pat-mim-ti-etch]` beside `[^hess-1982]` with the patent's own AlF3 sentence quoted |
-| 139-M1 (= X1) | deferred | scope exclusion |
+| 139-M1 (= X1) | deferred -> closed on `topic/metal-cap` | cross-cutting metal-cap sweep |
 | 139-L1 | fixed | distinguished m3.pd.1 (0.7) from the assumptions table's global OxideMinPD (0.75) |
 | 139-L2 | fixed | added the fourth "Metal 3-Cu" CD row and its copper-flow attribution |
-| 140-M1 (= X1) | deferred | scope exclusion |
+| 140-M1 (= X1) | deferred -> closed on `topic/metal-cap` | cross-cutting metal-cap sweep |
 | 140-L1 (vendor spelling GaSonics/Aspen; EKC attribution) | declined (spelling) / declined (EKC, already correct) | vendor-spelling split is a separate site-wide sweep per coordinator instruction, left untouched; EKC attribution already correct on this branch's base |
 | 140-L2 | fixed | attributed the "begins with a dielectric" claim to "this reference's reading of CAPME" rather than stating it as fact |
 | 141-L1 | fixed | distinguished m3.pd.1 (0.7) from OxideMinPD (0.75) here too |
@@ -38,11 +40,11 @@ per coordinator instruction — not this agent's scope).
 | 144-M2 (= X3) | fixed | cross-section's explicit "Via3" label added at both open-question locations |
 | 144-L1 | fixed | linked the "digit 4" reading to ITRS 2001's stated 4x mask magnification |
 | 145-M1 | fixed | removed the "fluorine-bearing" misquotation of US 6,090,697; replaced with the patent's real subject (etch-stop punch-through) and its published 28.4:1 / 228:1 selectivity numbers |
-| 145-M2 (= X1) | deferred | scope exclusion |
+| 145-M2 (= X1) | deferred -> closed on `topic/metal-cap` | cross-cutting metal-cap sweep |
 | 145-L1 | fixed | Schaepkens et al. citation scoped to what it actually measured (SiO2-to-Si3N4/Si), extension to a refractory stop marked as inference |
 | 145-L2 | fixed | added a citation-free reword for the TiF4 claim, noting the citation covers only the tungsten half |
 | 145-L3 (vendor spelling) | declined | separate site-wide sweep per coordinator instruction |
-| 146-M1 (= X1) | deferred | scope exclusion |
+| 146-M1 (= X1) | deferred -> closed on `topic/metal-cap` | cross-cutting metal-cap sweep |
 | 146-L1 (step-name-derived ordinal) | fixed | reworded to enumerate the four TiN-only liners plus the TI/TIN1 bilayer explicitly, not an ordinal keyed to the step-code digit |
 | 146-L2 | fixed | dropped `[^rossnagel-1998]` from the numeric liner-thickness claim, kept on the mechanism sentences |
 | 147-M1 (= 144-M1) | fixed | see 144-M1 |

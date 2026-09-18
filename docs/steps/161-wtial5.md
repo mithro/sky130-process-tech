@@ -257,8 +257,9 @@ fab (SKY130's recipe is not public); the film-by-film account is at
   underlayer and any hot or high-pressure fill capability are
   **inferences** or **not public**.
 * **Metal etchers "Lam 9600, Al, TiW, TiN, Pt" and "Lam 2300 Versys, Al,
-  TiW, TiN, Nb, Pt"**[^skw-01] corroborate that TiW-capped aluminium is
-  etched in the fab (used at {ref}`MM5E <step-163>`).
+  TiW, TiN, Nb, Pt"**[^skw-01] name aluminium, TiW and TiN among the
+  materials they etch, so the stack read here is etchable in the fab as
+  publicly described (used at {ref}`MM5E <step-163>`).
 
 ## Resources required
 
