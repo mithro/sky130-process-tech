@@ -2,7 +2,7 @@
 # Wet bench and spray processor
 
 A wet bench is the batch tool a fab uses to clean, etch and strip wafers
-in liquid chemicals: a line of tanks — sulfuric–peroxide, the RCA
+in liquid chemicals: a line of tanks — sulphuric–peroxide, the RCA
 cleans, dilute HF and buffered oxide etch, hot phosphoric acid —
 through which a robot carries cassettes or bare wafer batches, ending
 in a rinse and a dryer. A spray processor does the same chemistry in a
@@ -96,7 +96,7 @@ dioxide", and used a refluxed boiling bath to hold the water
 content;[^vgh-1967] in production, Liu et al. controlled it with "a
 water concentration monitor and a water spiking apparatus", replaced
 part of the bath after each lot to reduce dissolved silicon, and added
-sulfuric acid to shorten conditioning.[^liu-2007] Room-temperature
+sulphuric acid to shorten conditioning.[^liu-2007] Room-temperature
 cleaning sequences have been developed to cut the chemical load of the
 hot RCA steps: Ohmi's five-step clean reduced chemical and ultrapure
 water use to "less than 1% and 5%, respectively".[^ohmi-1996]
@@ -171,7 +171,7 @@ and under "Pre-cleaning", in the "Furnaces/Diffusion/Pre-Clean" group of
 > "dilute HF-last with IPA dry"
 > "FSI Mercury industry standard HF/SC1/SC2 rotational"
 
-Read term by term: the Akrion bench is the only entry with sulfuric
+Read term by term: the Akrion bench is the only entry with sulphuric
 acid, phosphoric acid and BOE; the DNS bench and the FSI Mercury are the
 only entries with SC-2; the Batch Rotational tool is a solvent tool with
 CO₂-injected rinse water; and the "Single Wafer" entry that follows the
@@ -235,7 +235,7 @@ parameters are described on the
   for SPM; ammonia, hydrochloric acid and peroxide for SC-1 and
   SC-2;[^wiki-rca][^wiki-piranha] 49 % HF, NH₄F for
   BOE;[^wiki-boe][^wiki-hf] and phosphoric acid for the nitride
-  bath.[^wiki-h3po4][^vgh-1967] SkyWater lists sulfuric, SC1, SC2, HF,
+  bath.[^wiki-h3po4][^vgh-1967] SkyWater lists sulphuric, SC1, SC2, HF,
   phosphoric and BOE across its benches.[^skw-01]
 * **Solvents.** Hydroxylamine–alkanolamine strippers of the kind EKC
   Technology patented,[^pat-ekc-hydroxylamine] and IPA for drying; SkyWater
