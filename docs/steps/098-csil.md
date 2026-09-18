@@ -48,7 +48,7 @@ not public), and whether the anneal is one step or two.
 
 `CSIL` is an {ref}`Anneal / thermal processing <category-anneal>` step
 of the *silicidation* type — the class the category page describes
-for titanium: a first {term}`RTA` at roughly 600–700 °C in N₂ forms the
+for titanium: a first {term}`RTA` at roughly 600–750 °C in N₂ forms the
 metastable {term}`C49 TiSi₂` (and TiN on top), a selective strip removes
 unreacted metal, and a second RTA at roughly 800–900 °C converts C49
 to the low-resistivity C54 phase.[^maex-1993][^osburn-1993] What is
@@ -144,7 +144,8 @@ fab (SKY130's recipe is not public):
   monitors before and after; contact-chain resistance
   ({ref}`category-test`) as the electrical proof.
 * **Alternative.** Some flows omit a separate silicide anneal and let
-  the tungsten deposition temperature (400–450 °C) and later
+  the tungsten deposition temperature (400–450 °C, typical
+  industry value;[^txt-01] see {ref}`WDEP <step-099>`) and later
   anneals form the silicide in place; which SKY130 does is not stated
   publicly, and this reference describes a separate anneal.
 
@@ -161,12 +162,14 @@ fab (SKY130's recipe is not public):
 * **AG Associates Heatpulse 8808.** SkyWater lists "Ag Heatpulse
   8808 NH3, Ar, N2, O2, up to 1200C".[^skw-01] Strength: **strong**
   for the tool; assignment to `CSIL` is an **inference** from the
-  Heatpulse being the only RTA on SkyWater's list, and silicide formation is a
-  listed application of the family: reseller documentation gives a
-  400–1200 °C range and
-  "Programmable, 1 – 180°C per second" ramp-up,[^ag-8800] the family
-  specification PDF the same range for the 8108,[^ag-8108] and a
-  vendor blog post describes the 8800/8108 family.[^plasmatherm-ag]
+  Heatpulse being the only RTA on SkyWater's list, and "Silicide
+  formation and annealing" is a listed application of the
+  family:[^ag-8800] reseller documentation gives a 400–1200 °C
+  range,[^ag-8800][^ag-8108] and a vendor blog post describes the
+  8800/8108 family.[^plasmatherm-ag] (The two documents disagree on
+  the 8800's ramp rate — see {ref}`RTAD2 <step-092>` — but this step's
+  silicide soak is not ramp-limited, so the range matters more than
+  the rate here.)
 * **"Ti and Co Silicide" special module.**[^skw-01] Strength: strong
   for the capability; which metal and scheme SKY130 uses is an
   inference from the PDK numbers above.
@@ -306,6 +309,10 @@ fab (SKY130's recipe is not public):
 [^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
     Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
     978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
+[^txt-01]: J. D. Plummer, M. D. Deal and P. B. Griffin, *Silicon VLSI
+    Technology: Fundamentals, Practice and Modeling*, Prentice Hall,
+    2000, ISBN 978-0-13-085037-9.
+    <https://openlibrary.org/isbn/9780130850379>
 [^txt-10]: R. B. Fair (ed.), *Rapid Thermal Processing: Science and
     Technology*, Academic Press, 1993, ISBN 978-0-12-247690-7; R. B.
     Fair, "Junction Formation in Silicon by Rapid Thermal Annealing",
