@@ -38,8 +38,11 @@ thickness itself is not public.
 
 What the film is deposited onto matters for the etch that follows.
 On this reading of the flow, the surface is oxide everywhere: the
-0.2 µm nitride/oxide cap on top of the gates ({ref}`GATENIT <step-058>`,
-{ref}`POC <step-059>`; "poly cap after SPE" 0.2 µm[^pdk-03]), the
+nitride/oxide cap on top of the gates ({ref}`GATENIT <step-058>`,
+{ref}`POC <step-059>`), which the {ref}`GATENIT <step-058>` page reads
+as at least the PDK's 0.2 µm "poly cap after SPE" (the PDK's figure is
+the thickness that survives the spacer etch at {ref}`SPE <step-077>`,
+so the cap here is no thinner)[^pdk-03], the
 {ref}`IOX45 <step-063>` oxide on the gate sidewalls and on the
 source/drain silicon, and the trench oxide over the field. Whether
 the thin implant/re-oxidation oxide over the source/drain is still
@@ -56,8 +59,11 @@ after. What is specific to this instance is that *conformality* is
 the film property that matters most: the spacer width is the
 sidewall thickness, so the ratio of sidewall to top thickness
 ({term}`step coverage`) must be close to one and reproducible across
-the wafer, and the film must coat the foot of a roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03]) gate line
-on a 0.21 µm space (poly.2)[^pdk-periph] without seaming. The second
+the wafer, and the film must coat the foot of a gate line at least
+0.38 µm tall (0.18 µm of poly[^pdk-03] plus a cap no thinner than the
+PDK's 0.2 µm "poly cap after SPE", which is the post-{ref}`SPE
+<step-077>` figure[^pdk-03]) on a 0.21 µm space
+(poly.2)[^pdk-periph] without seaming. The second
 distinguishing property is thermal budget: the wafer now carries
 annealed arsenic tips and boron halos, and a hot furnace deposition
 would move them.
