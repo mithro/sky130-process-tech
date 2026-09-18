@@ -25,11 +25,13 @@ treats the strip and post-etch clean as part of this step, as at
 
 What the etch lands on is the difference from the contact etch. The
 floor of a `via` is not the nitride-capped titanium-nitride local
-interconnect but the top film of the metal-1 stack — on the public
-description of the S8 process, 300 Å of titanium–tungsten over
-3 200 Å of Al–0.5%Cu[^cyp-qtp-113005] — so the {term}`selectivity`
-that matters is oxide-to-TiW, and the failure to avoid is punching
-through the cap into the aluminium. The public dimensions are the
+interconnect but the top film of the metal-1 stack — on the 2013
+Cypress description of S8TNV-5R at this fab, 300 Å of
+titanium–tungsten over 3 200 Å of Al–0.5%Cu,[^cyp-qtp-113005] and on
+the stack qualified in 2013–2014, 500 Å of titanium nitride
+instead[^cyp-qtp-123907] ({ref}`overview-metal-cap`) — so the
+{term}`selectivity` that matters is oxide-to-refractory-cap, and the
+failure to avoid is punching through the cap into the aluminium. The public dimensions are the
 mask's: 0.150 µm squares (via.1a) on a 0.170 µm space (via.2), with
 metal 1 required to enclose them by only 0.055 µm (via.4a);[^pdk-periph]
 the assumptions table adds a "Via1 slope" of 0.02 and a "min. etch
@@ -64,7 +66,7 @@ fluorine-lean regime and stop on time rather than on chemistry alone
 The via hole sets the resistance and reliability of every connection
 between metal 1 and metal 2, and the etch decides four things:
 
-* **A clean, complete landing on TiW.** The PDK's `via` is 4 500 mΩ
+* **A clean, complete landing on the cap.** The PDK's `via` is 4 500 mΩ
   (4.5 Ω), thirty times lower than the 152 000 mΩ of an
   `mcon`,[^pdk-08] and on our reading that gap is largely a matter of
   the landing: a narrower, shallower hole ending on a metal cap rather
@@ -72,8 +74,9 @@ between metal 1 and metal 2, and the etch decides four things:
   polymer or oxide left on the floor raises the number; Bui et al.
   showed that the anti-reflective cap a tungsten-plug via lands on
   also sets its electromigration performance.[^bui-1994]
-* **Not punching through.** If the 300 Å TiW[^cyp-qtp-113005] is
-  consumed by the over-etch, the fluorine reaches the aluminium and
+* **Not punching through.** If the cap — 300 Å of TiW on the 2013
+  stack, 500 Å of TiN on the 2014 one[^cyp-qtp-113005][^cyp-qtp-123907] —
+  is consumed by the over-etch, the fluorine reaches the aluminium and
   forms involatile AlF₃ — fluorine does not etch aluminium, which is
   why aluminium is etched in chlorine[^hess-1982] — leaving a
   resistive fluoride at the via bottom and a cap too thin to serve as
@@ -83,7 +86,10 @@ between metal 1 and metal 2, and the etch decides four things:
   which measures an Ar/CF₄/CHF₃ oxide-to-stop selectivity of 28.4:1
   on TiN and 228:1 on TiAl₃ and argues that TiN's "selectivity to
   oxide is only 30:1 … insufficient for the long overetches"; nothing
-  public gives the corresponding figure for TiW.[^pat-etchstop-ti]
+  public gives the corresponding figure for TiW.[^pat-etchstop-ti] If
+  the cap is TiN, that published number applies to this floor directly
+  and the margin is the one the patent calls insufficient for long
+  over-etches; if it is TiW, the margin is not public at all.
 * **Tolerating a partly unlanded via.** With only 0.055 µm of
   enclosure (via.4a),[^pdk-periph] some vias will overhang their line;
   the oxide beside the line then etches on while the cap holds, and
@@ -135,11 +141,12 @@ recipe is not public); the shared physics is set out at
    — and the etch is usually run by time from the thickness the cap
    and polish left ({ref}`CMPM <step-116>`, {ref}`NCAPOX3 <step-117>`),
    with an over-etch sized to clear the deepest vias without
-   consuming the TiW. The mechanism of oxide-to-nitride selectivity
+   consuming the cap. The mechanism of oxide-to-nitride selectivity
    Schaepkens et al. describe — a thicker steady-state fluorocarbon
    film on the non-oxide surface[^schaepkens-1999] — is what protects
    the cap, and it fails if the chemistry runs fluorine-rich, since
-   TiW then etches as WF₆ and TiF₄.[^petri-1992]
+   TiW then etches as WF₆ and TiF₄[^petri-1992] and TiN as TiF₄ and
+   nitrogen.
 5. **Strip and clean.** Oxygen or O₂/N₂ downstream {term}`ash` —
    GaSonics, Iridia or Mattson class in SkyWater's list[^skw-01] —
    then a solvent or semi-aqueous clean — SkyWater lists "EKS265,
@@ -147,7 +154,7 @@ recipe is not public); the shared physics is set out at
    resist-removal and clean list[^skw-01] (EKC265/EKC270-class;
    SkyWater writes "EKS265") — to remove the
    fluorocarbon polymer and the titanium- and tungsten-fluoride
-   residue from the via floor without attacking the TiW or the
+   residue from the via floor without attacking the cap or the
    exposed aluminium of an unlanded via. No HF is used (inference:
    it would widen the via and attack the fluoride-bearing floor).
 6. **Queue time.** Because an open via can absorb moisture from the
@@ -195,12 +202,12 @@ recipe is not public); the shared physics is set out at
   CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]).
 * **Helium** for backside cooling; **NF₃** or O₂-based chamber clean.
 * **O₂/N₂** (and {ref}`forming gas <material-anneal-ambients>`) for the ash;[^skw-01] CF₄, listed on the
-  Iridia and Mattson ashers,[^skw-01] would attack the exposed TiW and
+  Iridia and Mattson ashers,[^skw-01] would attack the exposed cap and
   would, we infer, be left out. **Amine or semi-aqueous solvent**
   ({ref}`wet chemicals <material-wet-chemicals>`; EKC265/EKC270 class; SkyWater lists "EKS265, EKC270
   solvents"[^skw-01]) and {ref}`DI water <material-ultrapure-water>` for the post-etch clean.
 * **{ref}`Chamber consumables <material-hardware-consumables>`** (liners, focus and edge rings, electrodes);
-  **{ref}`monitor wafers <material-substrates>`** with blanket oxide and TiW for rate and
+  **{ref}`monitor wafers <material-substrates>`** with blanket oxide and the cap film for rate and
   selectivity checks.
 
 ## Related steps and cross-references
@@ -229,7 +236,7 @@ recipe is not public); the shared physics is set out at
 * SkyWater PDK, *Layers Reference* — `via` 68:44.[^pdk-06]
 * SkyWater PDK, *Parasitic Layout Extraction* — VIA 4 500 mΩ, MCON
   152 000 mΩ.[^pdk-08]
-* Cypress, QTP 113005 — the 300 Å TiW cap the etch stops
+* Cypress, QTP 113005 — the 300 Å TiW cap of the 2013 stack, which the etch stops
   on.[^cyp-qtp-113005]
 * SkyWater, *Facilities & Capabilities* — DPS II, Lam 9400 TCP and Lam 4400 gas
   lists; ashers; EKC solvents.[^skw-01]
@@ -290,7 +297,9 @@ recipe is not public); the shared physics is set out at
 ## Open questions
 
 * The etch chemistry, chamber, endpoint scheme and over-etch of
-  `VIME`, the TiW consumed, and the resulting profile are not public.
+  `VIME`, the cap consumed, and the resulting profile are not public;
+  neither is which refractory film the cap is
+  ({ref}`overview-metal-cap`).
 * Whether the via etch has a distinct step for the
   {ref}`NCAPOX3 <step-117>` cap and the possible "NILD3_C"
   film,[^pdk-04] or etches the whole 0.27 µm in one recipe, is not
@@ -444,3 +453,11 @@ recipe is not public); the shared physics is set out at
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
     retrieved 2026-09-13.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
+[^cyp-qtp-123907]: Cypress Semiconductor, *Fab Process Qualification
+    Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8
+    Technology, Fab 4 CMI*, document 001-91369 Rev. **, March 2014 (copy
+    hosted by Tokyo Electron Device as the attachment to Cypress Product
+    Information Notification PIN145273, 2014-03-13, which states the
+    report is attached and available from cypress.com;
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
