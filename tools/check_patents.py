@@ -74,6 +74,20 @@ DOC_TYPES = {
 RELATIONS = {"cited-on-page", "same-lineage-assignee", "technique-class"}
 DISCOVERY = {"cited-in-docs", "assignee-search", "family-resolution",
              "cited-by-seed", "citing-seed", "continuation-search"}
+# A family's own record page is normally a Google Patents page and its `id`
+# is Google's family ID (design doc, "Unit of record: the family"). Round-3
+# part 2 (2026-09-19) adds a documented fallback for when Google Patents is
+# unreachable (tmp/patent-cache/.blocked): USPTO Patent Public Search (PPUBS)
+# gives its own DOCDB family identifier (`familyIdentifierCur`), which the
+# round-3 review confirmed equals the Google family ID in 16/16 sampled
+# cases (tmp/verify-index-patents-coverage.md section 1). A PPUBS-sourced
+# family uses this second literal source string instead, so a reader can
+# tell which provenance a family rests on; see
+# docs/plans/patent-index-design.md's "PPUBS fallback" section.
+FAMILY_SOURCES = {
+    "Google Patents family ID",
+    "USPTO Patent Public Search familyIdentifierCur (Google Patents unreachable)",
+}
 ENDED = {"Expired - Lifetime", "Expired - Fee Related", "Abandoned",
          "Ceased", "Withdrawn", "Revoked", "Expired"}
 IN_FORCE = {"Active"}
@@ -376,7 +390,7 @@ def check_family(f: dict, labels: dict[str, Path], inventory: dict[str, str],
     if not ID_RE.match(str(fid)):
         problems.append(f"{fid}: id must be 'GP' followed by the Google Patents family ID")
     fam = f.get("family") or {}
-    if fam.get("source") != "Google Patents family ID" or f"GP{fam.get('google_family_id')}" != fid:
+    if fam.get("source") not in FAMILY_SOURCES or f"GP{fam.get('google_family_id')}" != fid:
         problems.append(f"{fid}: family source/google_family_id do not match the id")
     if not str(f.get("title", "")).strip():
         problems.append(f"{fid}: empty title")

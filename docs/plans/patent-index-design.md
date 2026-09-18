@@ -333,6 +333,58 @@ data service (OPS) needs registration, so Espacenet links are recorded
 but not fetched; WIPO Patentscope pages can be fetched without an
 account and are the second source for WO members.
 
+### PPUBS fallback (added 2026-09-19, round 3 part 2)
+
+Google Patents has been unreachable from this environment across
+several rounds (IP-level "unusual traffic" bot-check on the bare
+domain root, not a per-endpoint rate limit; see
+`docs/plans/progress-index-patents.md` round 2's "H1" section and
+`tmp/patent-cache/.blocked`). USPTO Patent Public Search (PPUBS), a
+different, keyless USPTO service, stays reachable
+(`tmp/verify-index-patents-coverage.md` section 7 documents its session
+and search endpoints). A family discovered and built from PPUBS data
+while Google stays blocked is recorded honestly rather than
+misrepresented as Google-verified:
+
+* `family.source` is the literal string `"USPTO Patent Public Search
+  familyIdentifierCur (Google Patents unreachable)"` instead of
+  `"Google Patents family ID"`; `id` still uses PPUBS's own
+  `familyIdentifierCur` as the numeric part (`tools/check_patents.py`'s
+  `FAMILY_SOURCES` accepts either string). The round-3 review confirmed
+  this identifier equals the Google Patents family ID in all 16 families
+  it independently cross-checked, so treating it as the same numbering
+  space is a checked, not merely assumed, equivalence — but a family
+  built this way has never had its own Google Patents page fetched, and
+  says so.
+* PPUBS gives no legal status, no adjusted-expiration date and no
+  distinction between the assignee "as originally filed" and "as
+  currently recorded" (design's `assignees.original`/`current`): a
+  PPUBS-sourced family records the single `assigneeName` list PPUBS
+  gives in both fields, with a note saying so, and `legal_status.status`
+  and every member's own `status` are `null`, with `legal_status.source`
+  naming PPUBS and stating that legal status was not determined.
+* Without a legal-status signal, `expired`/`expiry` are computed purely
+  from the same term-arithmetic bounds the design already uses for a
+  listed-only member (`member_end_bound`/`family_max_estimate` in
+  `tools/check_patents.py`, unchanged): a family whose bound has already
+  passed with no possibility of a term adjustment (earliest priority
+  before 1999-05-29, per the existing verification-level rule) is
+  `expired: true`; a family whose bound has not passed, or could have
+  been extended by a US patent term adjustment the record does not show,
+  is `false` or `unknown` and stays collapsed. This is the fixer brief's
+  own instruction: "treat its status conservatively (not certainly
+  expired -> collapsed) unless the US term arithmetic alone proves
+  expiry".
+* Only the members PPUBS's own search actually returned are recorded
+  (normally just the single US publication that matched the discovery
+  query); the family is not claimed complete. A note says so and that
+  non-US members, and any other US member of the same family PPUBS did
+  not surface, were not searched for.
+* `discovery` stays `assignee-search` (the method category is the same,
+  an assignee-restricted search read and verified before being
+  recorded); the `discovery_note` and a family `notes` entry name PPUBS
+  specifically, the query used, and the Google-unreachable circumstance.
+
 ## Open questions
 
 * Whether the family unit should switch to DOCDB simple families when a
