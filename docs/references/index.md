@@ -82,10 +82,17 @@ published applications related to the process technology and its
 Cypress/SkyWater/Infineon lineage, verified against a fetched public
 record; a patent enters the inventory only when a page cites it.
 
+The {ref}`financial filings index <filings-index>` catalogues SEC and
+other regulatory filings documenting the ownership and business lineage
+of the fab that makes SKY130 (Cypress, SkyWater, Infineon and companies
+whose filings name them); a filing enters the inventory only when a page
+cites it.
+
 ```{toctree}
 :maxdepth: 1
 
 public-sources
 papers/index
 patents/index
+filings/index
 ```
