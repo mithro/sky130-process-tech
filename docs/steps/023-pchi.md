@@ -13,11 +13,15 @@
 ## What this step is
 
 `PCHI` is the first of two channel implants placed through the resist
-windows of {ref}`HVTPM <step-022>`, the high-Vt P-channel mask. It adds
-dopant to the surface of the N-well under the future gates of the PMOS
-transistors drawn with the `hvtp` layer, on top of the baseline PMOS
-channel doping that, we infer, every N-well received at
-{ref}`LVTPI <step-020>`. Its companion, {ref}`PNCHI <step-024>`, is
+windows of {ref}`HVTPM <step-022>`, the high-Vt P-channel mask. On this
+page's reading it adds dopant to the surface of the N-well under the
+future gates of the PMOS transistors drawn with the `hvtp` layer, on
+top of the baseline PMOS channel doping that, we infer, every N-well
+received at {ref}`LVTPI <step-020>`. The {ref}`HVTPM <step-022>` page
+sets out a second reading of the `chvtpm` checks and of the public
+render derivation, under which the opening covers low-voltage N-well
+outside `lvtn` and this implant reaches every standard PMOS as well;
+which is right is not public. Its companion, {ref}`PNCHI <step-024>`, is
 described in this reference as a BF₂ implant (an inference, set out on
 that page); the species of `PCHI` is discussed below. The resist is stripped at
 {ref}`PCHIS <step-025>`.
@@ -219,12 +223,20 @@ An industry-generic high-Vt PMOS channel implant for a 200 mm,
   the PMOS threshold — and why one of them is a BF₂ (p-type) implant
   in a module that raises a PMOS threshold — is discussed on the
   {ref}`PNCHI <step-024>` page and remains open.
+* Whether `PCHI` reaches only the `hvtp` devices or every low-voltage
+  N-well outside `lvtn` — and hence whether it is an increment over
+  {ref}`LVTPI <step-020>` or the baseline itself — turns on the reading
+  of the `chvtpm` checks discussed on {ref}`HVTPM <step-022>`.[^pdk-errors]
 
 <!-- footnotes -->
 
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
     documentation, and the `nfet_01v8` cross-section drawing.
     <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>,

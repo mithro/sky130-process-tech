@@ -42,6 +42,12 @@ describes for placing boron near the surface.
 
 ## Why this step exists
 
+All three readings below assume that the {ref}`HVTPM <step-022>`
+opening covers only the drawn `hvtp` devices; if instead it covers
+every low-voltage N-well outside `lvtn`, as that page's second reading
+of the `chvtpm` checks has it, reading 2 becomes the whole story and
+this is simply the baseline PMOS counter-dope.
+
 The physics of a two-implant channel gives three candidate roles for a
 shallow boron dose in a high-Vt PMOS:
 
