@@ -63,8 +63,8 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 162-L1 | Low | fixed | m4.4 probe-pad exemption asymmetry not noted (162:43-44); verified against cached pdk-periphery.txt |
 | 162-L2 | Low | fixed | circular step-list-silence reasoning (162:117-124) |
 | 163-M1 | Medium | fixed | same as 155-M1, second page (163:134-137) |
-| 163-L1 | Low | open | via-4 aluminium-fill relationship asserted without explanation (163:186-187) |
-| 163-L2 | Low | open | 155/163 aluminium etch-rate implied rates inconsistent (163:119-122) |
+| 163-L1 | Low | fixed | via-4 aluminium-fill relationship asserted without explanation (163:186-187, new bullet in Why this step exists) |
+| 163-L2 | Low | fixed | 155/163 aluminium etch-rate implied rates inconsistent (155:131-133, 163:119-122) |
 | EKC-ATTACH | (site-wide, in range) | fixed | EKC/EKS solvents unattached to "Batch Rotational" entry, within 149-163 (155, 160, 163) — review §0 item, not excluded by coordinator, so checked/fixed here |
 
 ### Note on 160-M1
