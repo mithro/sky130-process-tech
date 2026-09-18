@@ -56,9 +56,11 @@ Implanted dopant does nothing until the lattice is repaired.
 Amorphised layers regrow by solid-phase epitaxy from about 500 °C,
 at a rate that depends on orientation[^csepregi-1978] and, for
 arsenic, on concentration,[^jeon-1989] incorporating the dopant
-substitutionally up to and beyond its solubility; "partially damaged
-layers need 800–1000 °C to dissolve the defect clusters" (category
-page, citing Gibbons).[^gibbons-1972] Two effects make the choice of
+substitutionally up to and beyond its solubility; partially damaged
+layers need 800–1000 °C to dissolve the defect clusters, as the
+category page sets out from Gibbons's review of damage production and
+annealing[^gibbons-1972] and Plummer, Deal and Griffin[^txt-01]. Two
+effects make the choice of
 temperature and time a compromise, as the category page explains:
 
 * **Transient enhanced diffusion.** The interstitials released as the
