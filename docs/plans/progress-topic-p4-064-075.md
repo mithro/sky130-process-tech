@@ -21,6 +21,7 @@ before being fixed or declined.
 | 064-L2 | Low | fixed | Confirmed Table F2b marks NTM "C" on PMOS/SONOS/flash/110A NMOS rows and "-" on 1.8V NMOS rows (matches masks/ntm.md's own reading). Added the cross-check sentence. |
 | verify-F1 | Low | fixed | Verifier caught: the 110A rows are "C" except the five UHV 5/20V DE rows (PMOS and NMOS), which masks/ntm.md:58-64 already excludes; 064's new sentence omitted the exception. Fixed the wording to match. |
 | 064-L3 | Low | fixed | Same ITRS node caveat as 065-H1/075-M1, applied to step 064's Why-this-step-exists paragraph. |
+| verify-F3 | Low | fixed | Verifier caught: 064 and 075 apply ITRS note [G]'s physical-gate-length rule to SKY130's drawn gate without the "(our reading of the roadmap)" marker that 065-H1 uses for the same substitution. Added the marker on both pages. |
 | 065-L1 | Low | fixed | Confirmed 088-rtad.md:17 says all three deep S/D implants leave silicon amorphised; named them instead of "one of the two". |
 | 065-L2 | Low | fixed | = 064-L1, same text/fix at 065-asti.md's shadowing-arithmetic bullet. |
 | 065-L3 | Low | fixed | Confirmed via Crossref that Nobili 1983 (10.1149/1.2119859) has no public abstract/paywalled text; marked the 2e20 threshold as a typical value on txt-01, kept Nobili for the precipitation mechanism. |

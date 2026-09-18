@@ -68,8 +68,9 @@ on doing it fast:
 * **Junction position.** ITRS 2001 asks for a 27–45 nm extension
   junction with 7.2 nm/decade lateral abruptness for a 2001-year MPU
   whose physical gate length is 65 nm; its rule Xj = 0.55 × physical
-  gate length puts SKY130's tip nearer 80 nm for its 0.15 µm drawn
-  gate.[^itrs-01] The PDK publishes no depth for the tip, only the
+  gate length would put SKY130's tip nearer 80 nm for its 0.15 µm drawn
+  gate (our reading; SKY130's physical gate length is not
+  published).[^itrs-01] The PDK publishes no depth for the tip, only the
   0.01 µm in the "Vertical Space" column of its "N Tip (As)" row, which
   we read as the lateral extent.[^pdk-03] The halo boron is the mobile species: the
   interstitials released as damage anneals[^eaglesham-1994] and as
