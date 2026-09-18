@@ -10864,11 +10864,9 @@ families:
   expiry:
     date: 2016-09-20
     estimated: true
-    basis: all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPH0992625A (estimated 20 years from the earliest non-provisional
-      filing date recorded in the family (a divisional or continuation is deemed filed on that date; see
-      the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied
-      here generically))
+    basis: 'all 3 members are shown as expired, lapsed or abandoned, or are past their estimated
+      term; the latest estimate is that of JPH0992625A (estimated upper bound: earliest priority
+      date + 21 years (12-month priority period + 20-year term))'
   expired: true
   members:
   - number: US5820367A
@@ -11505,11 +11503,9 @@ families:
   expiry:
     date: 2016-12-22
     estimated: true
-    basis: all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of JPH09181181A (estimated 20 years from the earliest non-provisional
-      filing date recorded in the family (a divisional or continuation is deemed filed on that date; see
-      the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied
-      here generically))
+    basis: 'all 4 members are shown as expired, lapsed or abandoned, or are past their estimated
+      term; the latest estimate is that of JPH09181181A (estimated upper bound: earliest priority
+      date + 21 years (12-month priority period + 20-year term))'
   expired: true
   members:
   - number: US6066555A
@@ -12145,11 +12141,9 @@ families:
   expiry:
     date: 2017-02-20
     estimated: true
-    basis: all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of SG66330A1 (estimated 20 years from the earliest non-provisional filing
-      date recorded in the family (a divisional or continuation is deemed filed on that date; see the
-      Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied
-      here generically))
+    basis: 'all 2 members are shown as expired, lapsed or abandoned, or are past their estimated
+      term; the latest estimate is that of SG66330A1 (estimated upper bound: earliest priority date
+      + 21 years (12-month priority period + 20-year term))'
   expired: true
   members:
   - number: US5595919A
@@ -13769,11 +13763,9 @@ families:
   expiry:
     date: 2017-11-26
     estimated: true
-    basis: all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of IL153843A (estimated 20 years from the earliest non-provisional filing
-      date recorded in the family (a divisional or continuation is deemed filed on that date; see the
-      Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied
-      here generically))
+    basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated
+      term; the latest estimate is that of IL153843A (estimated upper bound: earliest priority date
+      + 21 years (12-month priority period + 20-year term))'
   expired: true
   members:
   - number: US5958288A
@@ -20144,11 +20136,9 @@ families:
   expiry:
     date: 2022-11-14
     estimated: true
-    basis: all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of IL161750A0 (estimated 20 years from the earliest non-provisional
-      filing date recorded in the family (a divisional or continuation is deemed filed on that date; see
-      the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied
-      here generically))
+    basis: 'all 17 members are shown as expired, lapsed or abandoned, or are past their estimated
+      term; the latest estimate is that of IL161750A0 (estimated upper bound: earliest priority date
+      + 21 years (12-month priority period + 20-year term))'
   expired: true
   members:
   - number: US20030089430A1
@@ -24319,11 +24309,9 @@ families:
   expiry:
     date: 2026-03-30
     estimated: true
-    basis: all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term;
-      the latest estimate is that of CN101151718A (estimated 20 years from the earliest non-provisional
-      filing date recorded in the family (a divisional or continuation is deemed filed on that date; see
-      the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied
-      here generically))
+    basis: 'all 8 members are shown as expired, lapsed or abandoned, or are past their estimated
+      term; the latest estimate is that of CN101151718A (estimated upper bound: earliest priority
+      date + 21 years (12-month priority period + 20-year term))'
   expired: true
   members:
   - number: US20060228902A1
@@ -25484,11 +25472,10 @@ families:
   expiry:
     date: 2028-05-25
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to TW200847344A (status shown:
-      None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a
-      divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1)
-      for the clearest public statement of the principle, applied here generically)), running to 2028-05-25;
-      CN101548385B is the most recent member still shown as in force, with estimated expiry 2027-09-28'
+    basis: 'the latest recorded or estimated term among all members belongs to TW200847344A (status
+      shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority
+      period + 20-year term)), running to 2028-05-25; CN101548385B is the most recent member still
+      shown as in force, with estimated expiry 2027-09-28'
   expired: false
   members:
   - number: US20080293254A1
@@ -27612,11 +27599,10 @@ families:
   expiry:
     date: 2033-02-15
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to TW201334120A (status shown:
-      None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a
-      divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1)
-      for the clearest public statement of the principle, applied here generically)), running to 2033-02-15;
-      CN103258798B is the most recent member still shown as in force, with estimated expiry 2032-09-06'
+    basis: 'the latest recorded or estimated term among all members belongs to TW201334120A (status
+      shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority
+      period + 20-year term)), running to 2033-02-15; CN103258798B is the most recent member still
+      shown as in force, with estimated expiry 2032-09-06'
   expired: false
   members:
   - number: US20130210209A1
@@ -27957,11 +27943,10 @@ families:
   expiry:
     date: 2034-02-26
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to TW201440178A (status shown:
-      None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a
-      divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1)
-      for the clearest public statement of the principle, applied here generically)), running to 2034-02-26;
-      CN104009005B is the most recent member still shown as in force, with estimated expiry 2034-02-25'
+    basis: 'the latest recorded or estimated term among all members belongs to TW201440178A (status
+      shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority
+      period + 20-year term)), running to 2034-02-26; CN104009005B is the most recent member still
+      shown as in force, with estimated expiry 2034-02-25'
   expired: false
   members:
   - number: US8796098B1
@@ -28412,11 +28397,10 @@ families:
   expiry:
     date: 2034-12-12
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to TW201535486A (status shown:
-      None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a
-      divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1)
-      for the clearest public statement of the principle, applied here generically)), running to 2034-12-12;
-      CN105531828B is the most recent member still shown as in force, with estimated expiry 2034-11-20'
+    basis: 'the latest recorded or estimated term among all members belongs to TW201535486A (status
+      shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority
+      period + 20-year term)), running to 2034-12-12; CN105531828B is the most recent member still
+      shown as in force, with estimated expiry 2034-11-20'
   expired: false
   members:
   - number: US20150171104A1
@@ -28587,11 +28571,9 @@ families:
   expiry:
     date: 2035-01-10
     estimated: true
-    basis: 'not fully bounded from the records retrieved; the latest recorded or estimated term belongs
-      to TW201530732A (status shown: None; estimated 20 years from the earliest non-provisional filing
-      date recorded in the family (a divisional or continuation is deemed filed on that date; see the
-      Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied
-      here generically)), running to 2035-01-10'
+    basis: 'not fully bounded from the records retrieved; the latest recorded or estimated term
+      belongs to TW201530732A (status shown: None; estimated upper bound: earliest priority date +
+      21 years (12-month priority period + 20-year term)), running to 2035-01-10'
   expired: unknown
   members:
   - number: US20150200295A1
@@ -28980,11 +28962,10 @@ families:
   expiry:
     date: 2035-03-04
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to TW201539730A (status shown:
-      None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a
-      divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1)
-      for the clearest public statement of the principle, applied here generically)), running to 2035-03-04;
-      KR101770456B1 is the most recent member still shown as in force, with estimated expiry 2034-12-17'
+    basis: 'the latest recorded or estimated term among all members belongs to TW201539730A (status
+      shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority
+      period + 20-year term)), running to 2035-03-04; KR101770456B1 is the most recent member still
+      shown as in force, with estimated expiry 2034-12-17'
   expired: false
   members:
   - number: US20150255718A1
@@ -29681,11 +29662,10 @@ families:
   expiry:
     date: 2037-09-27
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to TW201826352A (status shown:
-      None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a
-      divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1)
-      for the clearest public statement of the principle, applied here generically)), running to 2037-09-27;
-      US9824895B1 is the most recent member still shown as in force, with estimated expiry 2036-12-06'
+    basis: 'the latest recorded or estimated term among all members belongs to TW201826352A (status
+      shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority
+      period + 20-year term)), running to 2037-09-27; US9824895B1 is the most recent member still
+      shown as in force, with estimated expiry 2036-12-06'
   expired: false
   members:
   - number: US9824895B1
@@ -29788,11 +29768,10 @@ families:
   expiry:
     date: 2038-02-27
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to TW201841311A (status shown:
-      None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a
-      divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1)
-      for the clearest public statement of the principle, applied here generically)), running to 2038-02-27;
-      CN108511386B is the most recent member still shown as in force, with estimated expiry 2038-02-13'
+    basis: 'the latest recorded or estimated term among all members belongs to TW201841311A (status
+      shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority
+      period + 20-year term)), running to 2038-02-27; CN108511386B is the most recent member still
+      shown as in force, with estimated expiry 2038-02-13'
   expired: false
   members:
   - number: US10062748B1
@@ -29926,11 +29905,10 @@ families:
   expiry:
     date: 2038-06-14
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to TW201913880A (status shown:
-      None; estimated 20 years from the earliest non-provisional filing date recorded in the family (a
-      divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art. 44(2)/67(1)
-      for the clearest public statement of the principle, applied here generically)), running to 2038-06-14;
-      US10062573B1 is the most recent member still shown as in force, with estimated expiry 2037-08-22'
+    basis: 'the latest recorded or estimated term among all members belongs to TW201913880A (status
+      shown: None; estimated upper bound: earliest priority date + 21 years (12-month priority
+      period + 20-year term)), running to 2038-06-14; US10062573B1 is the most recent member still
+      shown as in force, with estimated expiry 2037-08-22'
   expired: false
   members:
   - number: US10062573B1
@@ -30222,11 +30200,9 @@ families:
   expiry:
     date: 2040-07-22
     estimated: true
-    basis: 'not fully bounded from the records retrieved; the latest recorded or estimated term belongs
-      to US20220122660A1 (status shown: Pending; estimated 20 years from the earliest non-provisional
-      filing date recorded in the family (a divisional or continuation is deemed filed on that date; see
-      the Japanese Patent Act Art. 44(2)/67(1) for the clearest public statement of the principle, applied
-      here generically)), running to 2040-07-22'
+    basis: 'not fully bounded from the records retrieved; the latest recorded or estimated term
+      belongs to US20220122660A1 (status shown: Pending; estimated upper bound: earliest priority
+      date + 21 years (12-month priority period + 20-year term)), running to 2040-07-22'
   expired: unknown
   members:
   - number: US20220122660A1
@@ -30483,12 +30459,10 @@ families:
   expiry:
     date: 2043-09-27
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to US20250185250A1 (status
-      shown: Pending; estimated 20 years from the earliest non-provisional filing date recorded in the
-      family (a divisional or continuation is deemed filed on that date; see the Japanese Patent Act Art.
-      44(2)/67(1) for the clearest public statement of the principle, applied here generically)), running
-      to 2043-09-27; JP7846308B2 is the most recent member still shown as in force, with estimated expiry
-      2043-09-26'
+    basis: 'the latest recorded or estimated term among all members belongs to US20250185250A1
+      (status shown: Pending; estimated upper bound: earliest priority date + 21 years (12-month
+      priority period + 20-year term)), running to 2043-09-27; JP7846308B2 is the most recent member
+      still shown as in force, with estimated expiry 2043-09-26'
   expired: false
   members:
   - number: US20240107771A1
