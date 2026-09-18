@@ -180,6 +180,20 @@ reached.
 Search result lists are used only to find candidates; nothing is
 recorded from a result list without fetching the record page.
 
+**Known blind spot (round-1 review, coordinator note 2026-09-18):**
+`family-resolution`/`cited-by-seed`/`citing-seed` only reach patents
+Google groups into the *same* family as a seed. A later continuation or
+divisional out of the same original filing is routinely placed by Google
+in a *different* family from its parent (three confirmed examples: a
+granted continuation of the `GP40071593` estate, a continuation of the
+2007 Cypress ONO estate, and a Spansion continuation), so these methods
+systematically miss an estate's later continuations even when its
+original filing is in the index. Closing this gap needs a search *per
+lineage estate* — by inventor name, by title phrase, or by assignee plus
+a priority-date window — not just by following family/citation links
+from the seeds already held; add this as a discovery method alongside
+`assignee-search` once it is used.
+
 ## Page set (to be generated)
 
 All under `docs/references/patents/`, linked from the references index.

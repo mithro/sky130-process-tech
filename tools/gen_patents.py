@@ -302,6 +302,43 @@ CAVEAT = [
 VERIFIED_DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})")
 
 
+def scope_and_completeness(fams: list[dict]) -> list[str]:
+    """H1 (round-1 review): state plainly how the index was built and that
+    it is not a exhaustive worldwide search, instead of leaving the
+    landing page reading as if it were."""
+    n = len(fams)
+    discovery_counts = Counter(d for f in fams for d in f["discovery"])
+    seed_only = sum(1 for f in fams if f["discovery"] == ["cited-in-docs"])
+    assignees = Counter(a.casefold() for f in fams for a in f["assignees"]["original"])
+    cypress = sum(v for k, v in assignees.items() if "cypress" in k)
+    skywater = sum(v for k, v in assignees.items() if "skywater" in k)
+    infineon = sum(v for k, v in assignees.items() if "infineon" in k)
+    def count_families(n: int, label: str) -> str:
+        return f"{n} {label} {'family' if n == 1 else 'families'}"
+
+    skywater_clause = "no SkyWater Technology family" if skywater == 0 else f"only {count_families(skywater, 'SkyWater Technology')}"
+    return [
+        f"This index began as every patent already cited on a docs page ({plural(seed_only, 'family')} "
+        "of the total entered this way and no other), then widened by following each seed's Google "
+        "Patents family table and citation lists, by a handful of assignee+keyword searches for "
+        "specific process modules, and by an `assignee=\"Weebit Nano\"` search once ReRAM was brought "
+        "into scope. It is **not** the result of an exhaustive, systematic sweep of every process "
+        "module against every lineage assignee: a round-1 independent review "
+        "(`docs/plans/progress-index-patents.md`, \"Round 2\") found at least a dozen absent Cypress/"
+        "Infineon families from just two more searches, named six process modules never searched at "
+        f"all, and notes that the index holds {count_families(cypress, 'Cypress Semiconductor')} and "
+        f"{count_families(infineon, 'Infineon Technologies')} but {skywater_clause}, though SkyWater is "
+        "named in this index's own scope. Treat this index as a starting point for the SKY130/Cypress/"
+        "SkyWater/Infineon patent landscape, not as proof that a family absent from it does not exist.",
+        "",
+        f"Discovery methods recorded across the {plural(n, 'family')}: "
+        + "; ".join(f"{plural(v, 'family')} `{k}`" for k, v in
+                     sorted(discovery_counts.items(), key=lambda kv: -kv[1]))
+        + ". A family can carry more than one method (reached more than one way), so these do not sum "
+        "to the family count.",
+    ]
+
+
 def gen_index(fams: list[dict], retrieved: str) -> str:
     n = len(fams)
     nmembers = sum(len(f["members"]) for f in fams)
@@ -379,6 +416,10 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
         f"{sum(len(f['members']) for f in fams if status_word(f) == 'in force')} |",
         f"| Status unknown | {status['unknown']} | "
         f"{sum(len(f['members']) for f in fams if status_word(f) == 'unknown')} |",
+        "",
+        "## Scope and completeness",
+        "",
+        *scope_and_completeness(fams),
         "",
         "## Other views",
         "",
