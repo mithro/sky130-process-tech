@@ -49,6 +49,21 @@ written, reviewed and audited to the same standard.
     `sky130-process-tech docs checker` and never put an e-mail address,
     name or account in any request header or URL. Where a site demands
     a contact (e.g. SEC EDGAR), use the Wayback Machine copy instead.
+11. **Sources that can no longer be retrieved.** If a cited page is
+    offline, first look for a copy (Wayback Machine, archive.today) or
+    for another live page carrying the same text (for a job listing:
+    other job boards, the employer's careers site) and cite that. If no
+    copy exists anywhere, the page is not checkable: remove verbatim
+    quotations from it, do not rest a claim on it alone, and keep it at
+    most as a dated mention ("retrieved YYYY-MM-DD, no longer online,
+    not archived") with evidence strength "weak" beside a retrievable
+    source or a marked inference. The same rule applies on every page
+    that cites the source, the machine and material indexes and the
+    inventory included.
+12. **Shared fetching.** Several agents share one IP address. Look in the
+    shared fetch caches under `tmp/` before fetching, save what you
+    fetch there, pace requests, and never loop on a host that answers
+    with a bot check or HTTP 429/503.
 
 ## Writer brief (step pages)
 
