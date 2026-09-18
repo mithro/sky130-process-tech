@@ -21,8 +21,8 @@ before being fixed or declined.
 | 055-M2 | Medium | fixed | = 052-M1 |
 | 057-M1 | Medium | fixed | Confirmed via OpenAlex: Temple-Boyer 1998 is a silane/ammonia LPCVD study giving ~600 MPa, not 1 GPa DCS nitride. Reworded on 057/058 to cite it correctly and keep 1 GPa as a typical-industry-value claim. |
 | 058-M1 | Medium | fixed | = 057-M1 |
-| 062-M1 | Medium | open | |
-| 062-M2 | Medium | open | |
+| 062-M1 | Medium | fixed | Confirmed via OpenAlex: Noguchi 1997 measured charging during a metal etch, not the poly etch. Reworded to attribute the measurement correctly and mark the poly-etch link as inference. |
+| 062-M2 | Medium | fixed | Confirmed via OpenAlex: both Ogryzlo papers measure the ion-free spontaneous reaction, which the 1990 abstract itself contrasts with in-discharge (plasma) behaviour; a gate etch is strongly ion-assisted (cunge-2002, already cited). Reworded the doping-dependent clearing claim as an inference. |
 | 063-M1 | Medium | open | |
 | 048-L1 | Low | open | |
 | 048-L2 | Low | open | |
@@ -60,8 +60,8 @@ before being fixed or declined.
 | 061-L1 | Low | open | |
 | 061-L2 | Low | open | |
 | 061-L3 | Low | open | |
-| 062-L1 | Low | open | |
-| 062-L2 | Low | open | |
+| 062-L1 | Low | fixed | Confirmed cached ITRS FEP table: Gate Etch Bias (2001) = 25.2 nm, not 25. |
+| 062-L2 | Low | fixed | Confirmed cached snf-9400.txt: page states the TCP 9400 was "originally used for gate etching with high selectivity to thin gate oxides"; added the quote. |
 | 063-L1 | Low | open | |
 | 063-L2 | Low | open | |
 
