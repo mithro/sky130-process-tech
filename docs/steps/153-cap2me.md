@@ -28,9 +28,13 @@ strip and clean as part of the etch. The step repeats
 What lies under the film sets the difficulty. Beneath the plate film
 is a dielectric some 20–30 nm thick (our estimate at
 {ref}`CAPILD2 <step-150>`), and beneath that is the unpatterned
-metal-4 stack of {ref}`WTIAL4 <step-149>`, whose cap is — on the
-public description of the S8 metal stacks at lower levels — TiW over
-Al–Cu.[^cyp-qtp-113005] If the etch went through the dielectric it
+metal-4 stack of {ref}`WTIAL4 <step-149>`, whose cap is TiW over
+Al–Cu on the description of the **S8TNV-5R** stack in the 2013 Cypress
+report for this fab — which gives TiW over Al–Cu at every one of its
+three levels[^cyp-qtp-113005] — and 500 Å of TiN over 90 Å of titanium
+on the stack qualified in 2013–2014, which of the two SKY130's metal 4
+carries not being public[^cyp-qtp-123907]
+({ref}`overview-metal-cap`). If the etch went through the dielectric it
 would start on the metal-4 cap everywhere outside the capacitors. The
 etch therefore removes a refractory metal with high {term}`selectivity`
 to a very thin silicon-based dielectric. A Texas Instruments patent
@@ -53,9 +57,15 @@ lateral extent as the plate, over a wider "M4 (plate 2)",[^pdk-07] as it
 does for `CAPM`; read literally that shows the dielectric removed
 outside the plate, but a schematic cannot show a few nanometres of
 residual film. As at {ref}`CAPME <step-138>`, we describe the
-stop-on-dielectric version, because the metal-4 cap beneath is the same
-kind of film the etch is removing and offers no selective stop
-(inference), and we record the other under *Open questions*.
+stop-on-dielectric version, on the published selectivities set out
+there — "greater than 2" for TiW against PECVD nitride against the TI
+patent's "at least 8:1" and its Example 1's 210:1 for TiN against
+oxide[^liu-2007-tiw][^pat-mim-ti-etch] — and because, if the metal-4
+cap is the same TiW as the plate, a through-etch would have no
+selective stop (inference). If the cap is instead the TiN of the stack
+qualified in 2014,[^cyp-qtp-123907] plate and cap are different films
+and a through-etch would have a stop, as in the Philips
+process;[^pat-mim-philips] we record that under *Open questions*.
 
 ## Step category
 
@@ -90,8 +100,10 @@ where metal 4 is patterned after this etch).
   thickness, sets the `CMIM2A` 2 fF/µm² and `CMIM2P` 0.19 fF/µm the PDK
   models;[^pdk-07] the etch bias is folded into those two numbers.
 * **It must not open the dielectric.** Outside the plates the
-  dielectric is all that separates the plasma from the metal-4 cap. A
-  fluorine-rich punch-through would thin the cap of every metal-4 line —
+  dielectric is all that separates the plasma from the metal-4 cap,
+  which fluorine etches whether it is TiW (as WF₆ and TiF₄) or TiN (as
+  TiF₄). A fluorine-rich punch-through would thin the cap of every
+  metal-4 line —
   the film {ref}`VIM4E <step-160>` later stops on — and expose aluminium
   to fluorine, which forms involatile AlF₃ rather than etching it,[^hess-1982]
   leaving a residue the {ref}`MM4E <step-155>` chlorine etch must break
@@ -221,7 +233,8 @@ same sequence.
   5.8 Ω/sq; the stacked `cap_mim` cross-section with "CAPILD" under
   `CAP2M`.[^pdk-07]
 * SkyWater PDK, *Layers Reference* — `cap2m` 97:44.[^pdk-06]
-* Cypress, QTP 113005 — the TiW caps of the S8 metal stacks.[^cyp-qtp-113005]
+* Cypress, QTP 113005 — the Ti/Al–Cu/TiW stack of S8TNV-5R at Fab 4,
+  one of the two candidate metal-4 stacks.[^cyp-qtp-113005]
 * SkyWater, *Facilities & Capabilities* — Lam 9600 and 2300 Versys with
   TiW; strippers; solvents; etch gases on the poly/silicon etchers.[^skw-01]
 * Lam Research, Form 10-K (2003) — the 9600 and 2300 lines.[^lam-10k]
@@ -279,8 +292,12 @@ same sequence.
 * Whether `CAP2ME` stops on the dielectric or etches through it is not
   public. The PDK's schematic cross-section draws the dielectric only
   under the plate,[^pdk-07] which read literally favours a through-etch;
-  we describe a stop on the dielectric because the metal-4 cap offers no
-  selective stop (inference).
+  we describe a stop on the dielectric on the selectivity argument of
+  {ref}`CAPME <step-138>` and because, if the metal-4 cap is TiW, a
+  through-etch offers no selective stop (inference). A TiN cap would
+  give one ({ref}`overview-metal-cap`).
+* Which refractory film caps metal 4 is not public, and this page's
+  conclusion depends on it ({ref}`overview-metal-cap`).
 * The chemistry, endpoint, over-etch and dielectric loss are not public;
   the TI patent describes a TiN, not a TiW, electrode.[^pat-mim-ti-etch]
 * Whether a sidewall spacer or other edge treatment follows is not
@@ -410,3 +427,11 @@ same sequence.
     repository, 2022, retrieved 2026-09-13; values quoted from them are
     our extraction.
     <https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>
+[^cyp-qtp-123907]: Cypress Semiconductor, *Fab Process Qualification
+    Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8
+    Technology, Fab 4 CMI*, document 001-91369 Rev. **, March 2014 (copy
+    hosted by Tokyo Electron Device as the attachment to Cypress Product
+    Information Notification PIN145273, 2014-03-13, which states the
+    report is attached and available from cypress.com;
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>

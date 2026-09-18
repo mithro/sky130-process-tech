@@ -16,7 +16,7 @@
 and tungsten via-3 plugs left by {ref}`WCMP5 <step-148>` a sputtering
 {term}`cluster tool` lays down, in one vacuum sequence on our reading, a thin
 refractory bottom layer, a thick aluminium–copper alloy and a
-titanium–tungsten cap — the construction described for metal 3 at
+refractory cap — the construction described for metal 3 at
 {ref}`WTIAL3 <step-134>`. The stack is blanket, and like metal 3 it
 stays blanket while a {term}`MiM capacitor` is built on it: the second
 capacitor module — {ref}`CAPILD2 <step-150>`,
@@ -51,14 +51,27 @@ density checked in 700 µm windows (m4.pd.1, m4.pd.2a).[^pdk-periph]
 
 The step list calls this step "Al Cu 2/TiW deposition";[^steps-sheet] a
 step name is not evidence of a chemistry, and no public source
-describes the metal-4 films themselves. The Cypress
-qualification reports that give Ti/Al–Cu/TiW thicknesses for the S8
-technologies at the same fab describe three-metal processes and stop
-at metal 3;[^cyp-qtp-113005][^cyp-qtp-123907] SkyWater's PVD film list
-("Aluminum both pure and Cu doped", "TiW", "Collimated Ti"[^skw-01])
-and the 0.845 µm and 47 mΩ/sq that the PDK gives both metal 3 and
-metal 4 are the public basis for describing this stack as a repeat of
-metal 3 (inference). With 0.8 µm of Al–Cu, 47 mΩ/sq corresponds to a
+describes the metal-4 films themselves. Two Cypress reports for this
+fab describe metal stacks, and both are for three-metal technologies.
+The January 2013 plan for S8TNV-5R gives "100A Ti / 3200A Al -0.5%Cu /
+300A TiW" at metals 1 and 2 and "150A Ti / 7200A Al -0.5%Cu / 300A
+TiW" at metal 3.[^cyp-qtp-113005] The March 2014 report records a
+qualified change of the S8DI and S8TNV metal stacks "from Ti/AlCu/TiW
+to Ti/TiN/AlCu/Ti/TiN", with S8DI's metals 1 and 2 becoming "150A
+Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN" while its top metal
+stayed "500A TiW/21,250A Al 0.5% Cu/300A TiW", and records the
+corresponding S8P qualification as a "Metal Stack Change from
+Ti/AlCu/TiW to Ti/TiN/ALCu/Ti/TiN, excluding top metal
+layers".[^cyp-qtp-123907] Which levels of a five-metal S8P flow count
+as "top metal layers" is not public, so whether metal 4 carries the
+TiW cap this page describes or the later TiN-clad stack is unresolved;
+the evidence, including a thickness argument that favours a two-film
+cladding here, is set out under {ref}`overview-metal-cap`. SkyWater's
+PVD film list ("Aluminum both pure and Cu doped", "TiW", "ESC TiN",
+"Imp TiN", "Collimated Ti"[^skw-01]) allows either. The 0.845 µm and
+47 mΩ/sq that the PDK gives both metal 3 and metal 4 are the public
+basis for describing this stack as a repeat of metal 3
+(inference). With 0.8 µm of Al–Cu, 47 mΩ/sq corresponds to a
 resistivity of about 3.8 µΩ·cm, within the range expected for
 sputtered Al–0.5%Cu (typical industry value;[^txt-02] our arithmetic).
 The reading of the bottom layer as Ti or TiW is discussed at
@@ -115,16 +128,16 @@ are those of metals 1–3:
 * **Hillocks and stress.** Hillock growth in aluminium films —
   Chaudhari's analysis[^chaudhari-1974] — rises with film thickness and
   heat treatment, as Zlatanović and Davinić measured;[^zlatanovic-1990]
-  the TiW cap suppresses hillocks and serves as the anti-reflective
-  surface, the role Rocke and Schneegans documented for a
-  titanium-nitride cap on aluminium and which a Ti:W cap plays in the
+  the refractory cap suppresses hillocks and serves as the
+  anti-reflective surface, the role Rocke and Schneegans documented for
+  a titanium-nitride cap on aluminium and which a Ti:W cap plays in the
   same way (inference).[^rocke-1988] Stress-induced voiding (Yue, Funsten and
   Taylor[^yue-1985]) and wafer bow (Stoney's relation[^stoney-1909])
   accumulate with a fourth aluminium level on the wafer.
 * **The second MiM bottom electrode.** The PDK gives the metal-4
   capacitor the same electrical specification as the metal-3 one —
   `CMIM2A` 2 fF/µm², `CMIM2P` 0.19 fF/µm and a 5.8 Ω/sq top plate —
-  and calls the two constructions "identical".[^pdk-07] The TiW cap
+  and calls the two constructions "identical".[^pdk-07] The cap
   of this stack is therefore the bottom-electrode surface for
   {ref}`CAPILD2 <step-150>`, and its smoothness and cleanliness matter
   as at {ref}`WTIAL3 <step-134>`; Greenwood and Prasad describe the
@@ -169,8 +182,11 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
    and texture follow the structure-zone relations.[^thornton-1974][^ohring-2002]
    The thickness is inferred from the 0.845 µm stack of the
    PDK[^pdk-04] less the refractory layers.
-5. **TiW cap.** From a Ti:W target[^pat-tiw-hitachi]; about 300 Å by
-   analogy with the metal-3 descriptions[^cyp-qtp-113005] (inference).
+5. **Cap.** On the TiW reading, from a Ti:W
+   target[^pat-tiw-hitachi]; about 300 Å by analogy with the metal-3
+   descriptions[^cyp-qtp-113005] (inference). On the stack qualified in
+   2014 it would be 90 Å of titanium under 500 Å of reactively
+   sputtered TiN[^cyp-qtp-123907] ({ref}`overview-metal-cap`).
    Its surface receives the second MiM dielectric at
    {ref}`CAPILD2 <step-150>`, so particle and queue-time control
    matter as at {ref}`WTIAL3 <step-134>` (inference).
@@ -222,7 +238,7 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
   {ref}`MM4E <step-155>`.
 * The plugs it contacts: {ref}`TIN5 <step-146>`, {ref}`WDEP5 <step-147>`.
 * The dielectric that will surround the lines: {ref}`NILD6 <step-156>`;
-  the via etch that stops on the TiW cap: {ref}`VIM4E <step-160>`.
+  the via etch that stops on the cap: {ref}`VIM4E <step-160>`.
 * The same construction at metal 3, with its capacitor module:
   {ref}`WTIAL3 <step-134>`, {ref}`CAPILD <step-135>`; the thin stacks
   where the films are explained in full: {ref}`TIAL6 <step-112>`,
@@ -309,6 +325,14 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
   stacks stop at metal 3.[^cyp-qtp-113005][^cyp-qtp-123907] The Ti or
   TiW reading discussed at {ref}`WTIAL3 <step-134>` applies here
   unresolved.
+* Whether the cap is TiW or the Ti/TiN of the stack that the February
+  2014 S8P qualification put in its place "excluding top metal
+  layers"[^cyp-qtp-123907] is not settled, because the public record
+  does not say which levels of a five-metal S8P flow that exclusion
+  covers. The answer changes what {ref}`CAP2ME <step-153>` can stop on,
+  what {ref}`MM4E <step-155>` must break through and what
+  {ref}`VIM4E <step-160>` lands on; see
+  {ref}`overview-metal-cap`.
 * Whether the SKY130 metal 4 is the 0.845 µm of the PDK's diagram[^pdk-04]
   or the 0.8 µm of the assumptions table's P-flow entry[^pdk-03] — the same
   difference discussed for metal 3 at {ref}`MM3E <step-140>` — is not
