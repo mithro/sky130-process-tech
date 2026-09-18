@@ -200,25 +200,32 @@ def relevance_lines(fam: dict) -> list[str]:
 
 
 def family_body(fam: dict) -> list[str]:
-    body = [f"**Title:** {esc(fam['title'])}", ""]
+    # Each field is its own paragraph: CommonMark folds consecutive text
+    # lines with no blank line between them into one paragraph, so every
+    # field line is followed by a blank line (M7) rather than joined into
+    # a run-on paragraph.
+    fields = [f"**Title:** {esc(fam['title'])}"]
     ass = fam["assignees"]
-    body.append("**Assignees:** original " + "; ".join(esc(a) for a in ass["original"])
-                + ("; current " + "; ".join(esc(a) for a in ass["current"]) if ass["current"] else ""))
+    fields.append("**Assignees:** original " + "; ".join(esc(a) for a in ass["original"])
+                  + ("; current " + "; ".join(esc(a) for a in ass["current"]) if ass["current"] else ""))
     if fam.get("inventors"):
-        body.append("**Inventors:** " + "; ".join(esc(i) for i in fam["inventors"]))
+        fields.append("**Inventors:** " + "; ".join(esc(i) for i in fam["inventors"]))
     d = fam["dates"]
     dates = f"priority {d['priority']}"
     if d.get("filing"):
         dates += f", filing {d['filing']}"
     if d.get("grant"):
         dates += f", grant {d['grant']}"
-    body.append(f"**Dates:** {dates}")
-    body.append(f"**Legal status (representative):** {esc(fam['legal_status']['status'])} "
-                f"({esc(fam['legal_status']['source'])})")
-    body.append(f"**Estimated expiry:** {fam['expiry']['date'] or 'not bounded'} — {esc(fam['expiry']['basis'])}")
-    body.append(f"**Google Patents family ID:** `{fam['family']['google_family_id']}` "
-                f"(family section of the representative's own record page, linked below)")
-    body += ["", "**Members:**", ""] + members_table(fam)
+    fields.append(f"**Dates:** {dates}")
+    fields.append(f"**Legal status (representative):** {esc(fam['legal_status']['status'])} "
+                  f"({esc(fam['legal_status']['source'])})")
+    fields.append(f"**Estimated expiry:** {fam['expiry']['date'] or 'not bounded'} — {esc(fam['expiry']['basis'])}")
+    fields.append(f"**Google Patents family ID:** `{fam['family']['google_family_id']}` "
+                  f"(family section of the representative's own record page, linked below)")
+    body: list[str] = []
+    for line in fields:
+        body += [line, ""]
+    body += ["**Members:**", ""] + members_table(fam)
     body += ["", "**Relevance:**", ""] + relevance_lines(fam)
     if fam.get("inventory_keys"):
         body.append("")
@@ -271,10 +278,19 @@ CAVEAT = [
     "data) on the retrieval date named on this page. They are not a legal",
     "opinion and are not exhaustive: maintenance-fee lapses, terminal",
     "disclaimers, patent term extensions, oppositions, reissues and the",
-    "national validations of a European patent are not fully captured.",
+    "national validations of a European patent are not fully captured. A US",
+    "patent lapsed for non-payment of a maintenance fee can be reinstated on",
+    "a petition showing the delay was unintentional, within statutory time",
+    "limits that depend on which fee was missed (37 CFR 1.378(a)/(c),",
+    "Cornell LII, https://www.law.cornell.edu/cfr/text/37/1.378); a family",
+    "shown as expired solely on the strength of a fee lapse, while its term",
+    "has not otherwise run, says so in its notes.",
     "Before relying on the status of any family, check the linked",
     "official record.",
 ]
+
+
+VERIFIED_DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})")
 
 
 def gen_index(fams: list[dict], retrieved: str) -> str:
@@ -282,6 +298,21 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
     nmembers = sum(len(f["members"]) for f in fams)
     status = Counter(status_word(f) for f in fams)
     fetched = sum(1 for f in fams for m in f["members"] if "record page fetched" in m["verified"])
+    verified_dates = sorted({
+        m2.group(1) for f in fams
+        for v in [f["verified"]] + [m["verified"] for m in f["members"]]
+        if (m2 := VERIFIED_DATE_RE.match(v))
+    })
+    when = verified_dates[0] if len(verified_dates) == 1 else f"{verified_dates[0]} to {verified_dates[-1]}"
+    fetched_note = (
+        [f"record page was fetched; {fetched} of the {nmembers} members have their own record page",
+         "fetched (the rest are listed in the fetched family table of their",
+         "representative but were not fetched separately — every possible term",
+         "of those families' members has already ended, so nothing about",
+         "their status turns on the record not fetched)."]
+        if fetched < nmembers else
+        [f"record page was fetched, and so has every one of the {nmembers} members."]
+    )
     body = [
         "A worldwide index of patents and published applications related to",
         "the SKY130 process technology and its lineage (Cypress",
@@ -293,15 +324,16 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
         "representative record page, and its other publications and",
         "applications (the family's *Publications* and *Also Published As*",
         "tables). This is close to, but not the same as, an EPO DOCDB simple",
-        "family or an INPADOC extended family.",
+        "family or an INPADOC extended family. Each member's Espacenet link",
+        "is a search query for its own number, not a direct record link (the",
+        "Espacenet web interface does not accept scripted retrieval); Google",
+        "Patents' own record page, linked alongside it, is the working",
+        "full-text link this index relies on for every member.",
         "",
-        f"Retrieved {retrieved}. The index holds {plural(n, 'family')} "
+        f"Records were retrieved {when} (individual records carry their own",
+        f"`verified` date). The index holds {plural(n, 'family')} "
         f"({plural(nmembers, 'member')} in total). Every family's representative",
-        f"record page was fetched; {fetched} of the {nmembers} members have their own record page",
-        "fetched (the rest are listed in the fetched family table of their",
-        "representative but were not fetched separately — every possible term",
-        "of those families' members has already ended, so nothing about",
-        "their status turns on the record not fetched).",
+        *fetched_note,
         "",
         "## Legal caveat",
         "",
@@ -491,11 +523,19 @@ def gen_by_jurisdiction(fams: list[dict]) -> str:
     body = [
         "Every member publication grouped by its country or office, plus a",
         "family-size table (members per family). A family can have members",
-        "in several jurisdictions and so appears in several tables.",
+        "in several jurisdictions and so appears in several tables. A family",
+        "shown as in force or unknown is collapsed on {ref}`patents-families`;",
+        "here it contributes only its representative's own row (number and",
+        "status word), the same as it does on the other grouped pages, not",
+        "its full member list — open the collapsed entry for the rest.",
         "",
     ]
     by_cc: dict[str, list[tuple[dict, dict]]] = defaultdict(list)
     for f in fams:
+        if f["expired"] is not True:
+            rep = rep_member(f)
+            by_cc[rep["country"]].append((rep, f))
+            continue
         for m in f["members"]:
             by_cc[m["country"]].append((m, f))
     seen_codes = {cc for cc, _ in JURISDICTIONS}
@@ -508,8 +548,11 @@ def gen_by_jurisdiction(fams: list[dict]) -> str:
                  "| Number | Family | Status |", "|---|---|---|"]
         for m, f in sorted(items, key=lambda x: (str(x[0].get("publication_date") or ""), x[0]["number"])):
             fam_pn = display_pn(rep_member(f))
-            body.append(f"| {esc(display_pn(m))} | {{ref}}`{fam_pn} <{label_of(f)}>` | "
-                        f"{esc(m.get('status')) if m.get('status') else 'not shown'} |")
+            if f["expired"] is not True:
+                status = esc(status_word(f))
+            else:
+                status = esc(m.get("status")) if m.get("status") else "not shown"
+            body.append(f"| {esc(display_pn(m))} | {{ref}}`{fam_pn} <{label_of(f)}>` | {status} |")
         body.append("")
     sizes = Counter(len(f["members"]) for f in fams)
     body += ["## Family size", "", "Number of members recorded per family.", "",

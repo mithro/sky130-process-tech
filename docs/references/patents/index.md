@@ -13,14 +13,15 @@ dataset, `data/patents.yaml`. The unit of record is the patent
 representative record page, and its other publications and
 applications (the family's *Publications* and *Also Published As*
 tables). This is close to, but not the same as, an EPO DOCDB simple
-family or an INPADOC extended family.
+family or an INPADOC extended family. Each member's Espacenet link
+is a search query for its own number, not a direct record link (the
+Espacenet web interface does not accept scripted retrieval); Google
+Patents' own record page, linked alongside it, is the working
+full-text link this index relies on for every member.
 
-Retrieved 2026-09-18. The index holds 211 families (1345 members in total). Every family's representative
-record page was fetched; 1345 of the 1345 members have their own record page
-fetched (the rest are listed in the fetched family table of their
-representative but were not fetched separately — every possible term
-of those families' members has already ended, so nothing about
-their status turns on the record not fetched).
+Records were retrieved 2026-09-14 to 2026-09-18 (individual records carry their own
+`verified` date). The index holds 211 families (1345 members in total). Every family's representative
+record page was fetched, and so has every one of the 1345 members.
 
 ## Legal caveat
 
@@ -29,7 +30,13 @@ databases (Google Patents, using IFI Claims legal-status and expiry
 data) on the retrieval date named on this page. They are not a legal
 opinion and are not exhaustive: maintenance-fee lapses, terminal
 disclaimers, patent term extensions, oppositions, reissues and the
-national validations of a European patent are not fully captured.
+national validations of a European patent are not fully captured. A US
+patent lapsed for non-payment of a maintenance fee can be reinstated on
+a petition showing the delay was unintentional, within statutory time
+limits that depend on which fee was missed (37 CFR 1.378(a)/(c),
+Cornell LII, https://www.law.cornell.edu/cfr/text/37/1.378); a family
+shown as expired solely on the strength of a fee lapse, while its term
+has not otherwise run, says so in its notes.
 Before relying on the status of any family, check the linked
 official record.
 
