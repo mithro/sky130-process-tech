@@ -114,6 +114,21 @@ human/agent read the fetched copy against the summary and quotes).
   making many of them vaguer, e.g. "Form 10-K, Item 1, Manufacturing" ->
   "Form 10-K section"). Rebased branch onto `main` (picked up the merged
   paper-index tooling as the model to copy). Offline checker: 44 filings,
-  0 problems. Running `--online` to verify quotes and the new records'
-  URLs before deciding whether to keep, fix or revert each changed
-  location string.
+  0 problems.
+* 2026-09-18 — Verified the diff: fetched and re-extracted text for both
+  new DRS/DRS-A records (quotes and section locations confirmed against
+  the cached Wayback captures) and spot-checked several of the changed
+  locations (e.g. the fy2007 10-K's "Manufacturing" subheading really
+  exists under Item 1; the IonQ S-4's Oxbow quote really is in the
+  Summary section). `tools/check_filings.py --online` (full run, all 44
+  records): 0 problems, every quote found in its fetched copy. Committed
+  the diff as-is (commit 1fa181e).
+* 2026-09-18 — Wrote `tools/gen_filings.py` (modelled on `gen_papers.py`)
+  and generated `docs/references/filings/{index,by-company,by-year,
+  by-type,by-relationship,audits}.md`; linked from
+  `docs/references/index.md`. Fixed a `{ref}` cross-reference bug (link
+  targets need explicit text since filing entries are anchored to list
+  items, not headings). `uv run sphinx-build -W -q -b html docs
+  <scratch>`: clean. All of `check_refs.py`, `check_steps.py`,
+  `check_machines.py`, `check_materials.py`, `check_masks.py`,
+  `check_papers.py` pass with 0 problems.
