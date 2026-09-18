@@ -54,7 +54,7 @@ arithmetic before being fixed or declined.
 | 044-L1 | 044-lvom.md, 045-nchi.md, 046-goxetch.md | fixed | "~10 nm" cited to finished-thickness source |
 | 044-L2 | 044-lvom.md | fixed | beverina-2003 used beyond abstract |
 | 045-L1 | 045-nchi.md | fixed | AMD quotation drops "zero tilt" clause (same as 045-M1) |
-| 045-L2 | 045-nchi.md | fixed | e-test values don't say how sweeps were combined |
+| 045-L2 | 045-nchi.md | fixed | corrected per verifier: "mean of the two published sweeps" was false at 7/0.15 um (5 sweeps exist there); now names the actual modules used (8008, 8392) |
 | 046-L1 | 046-goxetch.md, 039-tunme.md | fixed | uncited/wider HF dilution range vs 039 |
 | 046-L2 | 046-goxetch.md | fixed | resolved together with 044-L1 | "~10 nm" (same as 044-L1) |
 | 047-L1 | 047-lvgox.md | fixed | "the one public hint" overstates evidence |
