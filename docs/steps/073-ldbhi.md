@@ -51,8 +51,8 @@ reasons:
   further under the gate; without a pocket the cell's threshold would
   roll off steeply across the 0.15–0.22 µm gate lengths of the two cell
   variants.[^pdk-07]
-* **Its surface channel must stay lightly doped.** Cypress's own
-  account of scaling the cell stresses "reduction of dopants in the
+* **Its surface channel must stay lightly doped.** Cypress's account
+  of scaling the cell to nodes below this one stresses "reduction of dopants in the
   surface of the channel" and "use of deeper channel implants with
   heavier species such as Indium … so as to keep surface dopant
   concentrations low",[^cyp-25] and the cell's depletion implant
@@ -82,8 +82,8 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 * **Species and source.** ¹¹B⁺ from BF₃, or BF₂⁺ for shallower
   placement;[^wiki-bf3][^txt-01] indium is the heavy alternative for a
   steeper pocket,[^shahidi-1993] which Cypress's article favours for
-  the cell's channel,[^cyp-25] but SkyWater lists no indium
-  source.[^skw-01]
+  the cell's channel at advanced nodes,[^cyp-25] but SkyWater lists no
+  indium source.[^skw-01]
 * **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻²
   (typical);[^txt-01] an AMD multi-threshold patent of the era
   gives "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a

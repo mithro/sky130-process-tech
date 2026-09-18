@@ -36,6 +36,6 @@ before being fixed or declined.
 | 070-L2 | Low | fixed | Confirmed PDK gives the 0.02 um value with no explanation of consequence; marked the "damaged through" reading as an inference, matching 068's more careful treatment. |
 | 071-L1 | Low | fixed | Confirmed Table F2b (parsed) marks LDNTM on 9 rows including "NV SONOS Diode", matching masks/ldntm.md; added the missing row to 071's list. |
 | 071-L2 | Low | fixed | Confirmed pdk-device-details.txt 2749-2757 prints V_S as "-38"; added the reviewer's caveat noting the evident typo and our reading. |
-| 073-L1 | Low | open | |
-| 073-L2 | Low | open | |
-| 075-L1 | Low | open | |
+| 073-L1 | Low | fixed | Confirmed cyp-25.txt 48-55 is about SONOS cell scaling across nodes, explicitly mentioning 28nm; the indium recommendation belongs to that advanced-node discussion. Reworded both mentions. |
+| 073-L2 | Low | fixed | = 066-L1; already fixed with the 066-M1/066-L1 patent-URL commit. |
+| 075-L1 | Low | fixed | Confirmed categories/anneal.md attaches stolk-1997 only to the TED statement and the 1000-1100C figure, not the "hot and fast" clause. Split the citations on 075 to match, using gibbons-1972/nobili-1983 (already on the page) for the solubility/precipitation clause. |

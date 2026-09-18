@@ -43,7 +43,8 @@ step of the *implant activation* type — a single-wafer, lamp-heated
 {term}`RTA` — in its most demanding form: an {term}`extension` anneal, in
 which the target is maximum activation with minimum diffusion. The
 category page sets out the compromise: "the highest activation is
-obtained by annealing hot and fast", and transient enhanced diffusion
+obtained by annealing hot and fast",[^gibbons-1972][^nobili-1983] and
+transient enhanced diffusion
 "is worst for slow, low-temperature anneals because the damage
 dissolves while the dopant is still mobile"; the resolution "is the
 RTA: seconds at 1000–1100 °C, or a 'spike' anneal with essentially
