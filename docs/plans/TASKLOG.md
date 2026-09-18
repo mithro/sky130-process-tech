@@ -97,9 +97,9 @@ deep-dive entries per step page and twelve per category page
   - [x] 089–106 — reviewed, 28 findings fixed (contact taper and etch angle reconciled by arithmetic, a smallest-hole claim, two vendor documents that disagree on an RTP ramp rate now both reported), job-listing findings left for the sweep, verified with three follow-ups and merged 2026-09-18
   - [x] 107–117 — reviewed, 33 findings fixed (two papers cited for what they do not report, an ammonia-filtered track claim the tool list does not make, the material beside a contact at zero enclosure), verified with follow-ups and merged 2026-09-18
   - [x] 118–134 — reviewed, 17 findings fixed (a via called wider than the contact when it is narrower, solvents attributed to the wrong tool list, a patent filing date), recurring errors swept on pages outside the range, verified with follow-ups and merged 2026-09-18
-  - [~] 135–148 — reviewed, fix round running (the metal cap composition finding goes to a dedicated sweep)
-  - [~] 149–163 — review running
-  - [ ] 164–171
+  - [x] 135–148 — reviewed, 28 findings fixed (a phrase quoted from a patent that does not contain it, a MiM patent construction, the capacitor cross-section label used as evidence), seven metal-cap findings deferred to the dedicated sweep, verified with follow-ups and merged 2026-09-18
+  - [~] 149–163 — reviewed, fix round running
+  - [~] 164–171 — reviewed, fix round running
 - [ ] Conflict review across pages (consistent thicknesses, names, order)
 - [ ] Provenance review — repeat after each batch
 - [ ] Full Sphinx build with `-W` (warnings as errors)
