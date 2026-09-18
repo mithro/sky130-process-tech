@@ -115,16 +115,21 @@ recipes are not public.
   vertical gate sidewalls and must stop on a thin oxide without
   trenching the silicon.[^txt-01]
 * **Aluminium–copper with Ti/TiN or Ti:W caps** (metal 1–5,
-  {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`; the Cypress S8
-  qualification report gives a TiW cap on metals 1–3,[^cyp-qtp-113005]
-  and this reference describes SKY130's stacks the same way): Cl₂/BCl₃ with N₂ or CHF₃ for sidewall
+  {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`; the 2013 Cypress
+  report for this fab gives a TiW cap on metals 1–3 of its
+  S8TNV-5R,[^cyp-qtp-113005] a 2014 report records a qualified change of
+  the fab's 130 nm stacks to a TiN cap "excluding top metal
+  layers",[^cyp-qtp-123907] and which SKY130 carries at each level is
+  not public — {ref}`overview-metal-cap`): Cl₂/BCl₃ with N₂ or CHF₃ for sidewall
   passivation. AlCl₃ is volatile at room temperature, so aluminium
   etches spontaneously in chlorine and anisotropy depends entirely on
   the passivation film; BCl₃ scavenges water and reduces the native
   Al₂O₃; copper chlorides are not volatile and are removed by ion
   bombardment; and residual chlorine plus atmospheric moisture corrodes
   the lines, so the etch ends with an in-situ H₂O or O₂/CF₄ passivation
-  plasma and an immediate rinse.[^nojiri-2015][^txt-02]
+  plasma and an immediate rinse.[^nojiri-2015][^txt-02] The cap is
+  opened first: a TiW cap needs a fluorine-bearing step,[^liu-2007-tiw]
+  a TiN cap clears in chlorine.[^min-2008]
 * **Ti:W and TiN** (capacitor top plates {ref}`CAPME <step-138>`,
   {ref}`CAP2ME <step-153>`): fluorine (SF₆, CF₄) or chlorine chemistries
   with high selectivity to the {term}`oxynitride` dielectric beneath.
@@ -496,3 +501,19 @@ oxidation or clean must remove.
     Technology, CMI (Fab 4)*, document 001-85611 Rev. *A, January
     2013 (copy hosted by Infineon Technologies).
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
+[^cyp-qtp-123907]: Cypress Semiconductor, *Fab Process Qualification
+    Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8
+    Technology, Fab 4 CMI*, document 001-91369 Rev. **, March 2014 (copy
+    hosted by Tokyo Electron Device as the attachment to Cypress Product
+    Information Notification PIN145273, 2014-03-13, which states the
+    report is attached and available from cypress.com;
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
+[^liu-2007-tiw]: G. Liu and Y. Kuo, "Reactive Ion Etching of Titanium
+    Tungsten Thin Films", *Journal of The Electrochemical Society*
+    **154**(7), H653 (2007). <https://doi.org/10.1149/1.2737631>
+[^min-2008]: S. R. Min, H. N. Cho, Y. L. Li, S. K. Lim, S. P. Choi and
+    C. W. Chung, "Inductively coupled plasma reactive ion etching of
+    titanium nitride thin films in a Cl₂/Ar plasma", *Journal of
+    Industrial and Engineering Chemistry* **14**(3), 297–302 (2008).
+    <https://doi.org/10.1016/j.jiec.2008.01.001>

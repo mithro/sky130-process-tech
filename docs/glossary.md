@@ -60,10 +60,11 @@ anti-reflective cap
     A thin, dull metal film sputtered on top of an aluminium
     interconnect so that the shiny aluminium does not reflect the
     exposure light back into the photoresist during the metal
-    lithography. In SKY130's metal-1 stack the cap is titanium–tungsten
-    (see {ref}`step-112`); it also suppresses {term}`hillock`s, resists
-    corrosion and gives the {term}`via` etch a hard surface to land on.
-    Also "ARC cap" or "TiW cap"; compare {term}`BARC`.
+    lithography. Whether SKY130's caps are titanium–tungsten or
+    titanium nitride is not public (see {ref}`step-112` and
+    {ref}`overview-metal-cap`); either way the cap also suppresses
+    {term}`hillock`s, resists corrosion and gives the {term}`via` etch a
+    hard surface to land on. Also "ARC cap"; compare {term}`BARC`.
 
 ARC
     Anti-reflective coating: a thin absorbing or interference layer

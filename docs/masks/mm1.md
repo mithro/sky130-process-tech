@@ -211,7 +211,8 @@ scattering", and use titanium nitride on top of the aluminium as an
 anti-reflection layer;[^rocke-1988] Brunner showed that the swing ratio
 scales with the square root of the substrate reflectivity, which an
 anti-reflective coating reduces.[^brunner-1991] The step page reads the
-TiW cap of {ref}`TIAL6 <step-112>` as a partial anti-reflective layer
+refractory cap of {ref}`TIAL6 <step-112>` — TiW or TiN,
+{ref}`overview-metal-cap` — as a partial anti-reflective layer
 with an organic {term}`BARC` as the usual further step, and a chemically
 amplified positive KrF resist; with the resist left where `met1` is
 drawn, the plate would be clear-field (inference). None of this is

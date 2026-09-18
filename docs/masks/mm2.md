@@ -211,7 +211,8 @@ magnification.[^itrs-03] How tightly SkyWater specifies the `MM2` plate
 is not public; the label above records a specification for one scribe
 feature only.
 
-**Reflective substrate.** The resist sits on the TiW-capped metal stack
+**Reflective substrate.** The resist sits on the capped metal stack
+({ref}`overview-metal-cap`)
 of {ref}`TIAL12 <step-123>` (the step page's reading). Chen, Chen and
 Tsou traced notched metal lines to "reflective notching in photo
 processing" and used TiN as an anti-reflective layer in a sub-micrometre

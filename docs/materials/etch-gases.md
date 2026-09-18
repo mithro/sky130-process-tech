@@ -332,9 +332,11 @@ public.
   metal etchers only as "Lam 9600, Al, TiW, TiN, Pt" and "Lam 2300
   Versys, Al, TiW, TiN, Nb, Pt";[^skw-01] BCl₃ appears in no SkyWater
   source cited here.
-* **Breakthroughs and caps.** The TiW cap of the metal stacks and the TiW
-  capacitor plates need fluorine as well as chlorine; Liu and Kuo etched
-  TiW in CF₄-based mixtures,[^liu-2007-tiw] and a Texas Instruments
+* **Breakthroughs and caps.** The TiW capacitor plates, and the metal
+  stacks' cap on the step pages' reading of it as TiW
+  ({ref}`overview-metal-cap`), need fluorine as well as chlorine; Liu
+  and Kuo etched TiW in CF₄-based mixtures,[^liu-2007-tiw] and a Texas
+  Instruments
   patent describes selective etching of MiM top
   electrodes.[^pat-mim-ti-etch] The materials index records that the cap
   breakthrough gases differ between analogous metal-etch pages

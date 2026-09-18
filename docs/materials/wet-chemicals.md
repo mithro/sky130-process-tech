@@ -297,7 +297,7 @@ The steps fall into groups, as the index rows describe them:
 * **Hydrogen peroxide outside a clean** — the tungsten polishes, where
   it is the slurry oxidiser, and the pad etch at
   {ref}`PDME <step-169>`, where the page names a possible wet removal of
-  the TiW cap.
+  the metal-5 cap if it is TiW ({ref}`overview-metal-cap`).
 
 ## Supply, handling, safety and facilities
 

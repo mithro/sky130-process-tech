@@ -145,7 +145,9 @@ aluminium BEOL are:
 * **Titanium–tungsten** (Ti:W, "typically composed of 10 wt% of titanium
   and the balance of tungsten"),[^pat-tiw-hitachi] a barrier and
   anti-reflective cap used in some aluminium stacks and as a capacitor
-  electrode.
+  electrode. Whether SKY130's aluminium levels are capped with Ti:W or
+  with titanium nitride is not public; the evidence is set out under
+  {ref}`overview-metal-cap`.
 * **Cobalt or titanium** for {term}`salicide` formation
   ({ref}`category-anneal`).
 

@@ -251,7 +251,8 @@ corrected is not public. The consumables are on the
 at {ref}`VIM3E <step-145>` through the cap and the
 {ref}`NILD5 <step-141>` oxide, on the
 {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>` class,
-down to the TiW cap of the metal-3 lines and to the capacitor plates, and
+down to the refractory cap of the metal-3 lines
+({ref}`overview-metal-cap`) and to the capacitor plates, and
 the resist is stripped within that step. A Freescale patent describes a
 via etch that stops on MiM plates and interconnect
 together;[^pat-mim-freescale] Le, Banerjee and McPherson found that via

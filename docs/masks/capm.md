@@ -238,7 +238,7 @@ terms.[^raw-data-testtile-pads]
 
 **Reflective substrate.** On the step pages' readings the resist sits on
 the plate film over a few tens of nanometres of dielectric (the
-{ref}`CAPILD <step-135>` page's estimate) on the TiW-capped metal-3
+{ref}`CAPILD <step-135>` page's estimate) on the capped metal-3
 stack. Brunner showed that the swing ratio scales with
 the square root of the substrate reflectivity;[^brunner-1991] Rocke and
 Schneegans used titanium nitride on aluminium as an anti-reflection
