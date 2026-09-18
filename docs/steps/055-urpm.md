@@ -87,11 +87,9 @@ to grain size, to the exact dose and to anything that changes the trap
 density; Tsang et al. document resistance variation across banks of
 high-value poly resistors and trace it to hydrogen diffusing through
 eroded corners of the capping nitride and the overlying
-oxide,[^tsang-2014] and Lane and Wrixon's published poly-resistor
-design space — sheet resistances from 40 to 2400 Ω/sq within a
-±500 ppm/°C temperature coefficient, for films 50–600 nm
-thick[^lane-1989] — shows how far into that space a 2000 Ω/sq target
-sits. The PDK's own caution that the P− resistor
+oxide,[^tsang-2014] and Lane and Wrixon's design space (above) shows
+how far into it a 2000 Ω/sq target sits. The PDK's own caution that
+the P− resistor
 specifications were "TBD" until enough silicon had been
 measured[^pdk-07] is the practical face of the same physics. `URPM`
 is where the process gives this device its own, separately
