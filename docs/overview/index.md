@@ -601,7 +601,17 @@ Three things follow from the reports themselves.
   "no electrical changes"[^cyp-pin145273] would require. The 2014 report
   does not print S8DI's pre-change stack, so this is a comparison across
   two technologies and not a before-and-after within
-  one.[^cyp-qtp-113005][^cyp-qtp-123907]
+  one.[^cyp-qtp-113005][^cyp-qtp-123907] Note further that the S8DI
+  qualification line carries **no** exclusion clause — it reads simply
+  "Qualification of S8DI Technology Metal Stack Change from Ti/AlCu/TiW
+  to Ti/TiN/AlCu/Ti/TiN in CMI Fab 4" — and yet that technology's top
+  metal still stands at "500A TiW/21,250A Al 0.5% Cu/300A
+  TiW".[^cyp-qtp-123907] Keeping TiW on a thick top level was therefore
+  the fab's practice even where the wording of the qualification does
+  not say so. That cuts both ways for this reference, and strengthens
+  both of its readings: it makes it more likely that the S8P exclusion
+  does mean the top level kept TiW, and more likely that the thin levels
+  genuinely moved (inference).
 
 ### Which levels are "top metal layers"
 
