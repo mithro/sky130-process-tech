@@ -433,7 +433,7 @@ count of every member publication in that jurisdiction.
 | US 8,178,404 B2 | {ref}`US 6,717,193 B2 <patent-gp25521092>` | Expired - Fee Related |
 | US 8,232,175 B2 | {ref}`US 8,232,175 B2 <patent-gp39047941>` | unknown |
 | US 8,283,261 B2 | {ref}`US 8,283,261 B2 <patent-gp40072822>` | in force |
-| US 8,513,753 B1 | {ref}`US 8,513,753 B1 <patent-gp48952138>` | Expired - Fee Related |
+| US 8,513,753 B1 | {ref}`US 8,513,753 B1 <patent-gp48952138>` | unknown |
 | US 8,614,124 B2 | {ref}`US 8,614,124 B2 <patent-gp40071593>` | in force |
 | US 8,643,124 B2 | {ref}`US 8,643,124 B2 <patent-gp44760304>` | in force |
 | US 8,680,601 B2 | {ref}`US 8,680,601 B2 <patent-gp40071592>` | in force |

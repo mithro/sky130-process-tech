@@ -39,6 +39,13 @@ checker verifies:
   Legal-status field; a parser reading the page's first
   ``itemprop="ifiStatus"`` span instead of ``legalStatusIfi`` > ``status``
   produces this on a published-application page).
+* **Fee lapses.** A member shown ``Expired - Fee Related`` whose own
+  recorded expiry date is still in the future is not treated as ended
+  unless its ``fee_lapse_date`` is recorded and the 37 CFR 1.378(b)
+  unintentional-delay petition window (two years from that date) has
+  already closed; otherwise it keeps contributing its own recorded
+  expiry date as a live bound, so a family cannot be ``expired: true``
+  on that member alone while the window is still open.
 
 Run with ``uv run tools/check_patents.py [path]``; the exit status is non-zero
 when a problem is found.
@@ -119,6 +126,7 @@ MEMBER_KEYS = {
 OPTIONAL_MEMBER_KEYS = {
     "title": (str, type(None)), "application_number": (str, type(None)),
     "filing_date": (str, type(None)), "expiry": dict, "note": str,
+    "fee_lapse_date": str,
 }
 
 
@@ -194,6 +202,24 @@ def member_end_bound(m: dict, fam: dict) -> dt.date | None:
         return None  # no term of its own; the term is that of the patent it translates
     if t in APPLICATION_TYPES and status == "Granted":
         return None
+    if status == "Expired - Fee Related":
+        # Coordinator decision, 2026-09-19 (round 4, M1 follow-up): a fee
+        # lapse is not certainly an ended term while its own 37 CFR 1.378(b)
+        # unintentional-delay petition window (two years from the lapse
+        # date) is still open -- unlike Expired - Lifetime/Abandoned/Ceased,
+        # which do end the term outright. If the member's own recorded
+        # expiry date has already passed regardless, the lapse changes
+        # nothing and the member is ended anyway; otherwise it needs a
+        # `fee_lapse_date` with a window that has already closed, or it
+        # keeps contributing its own recorded expiry date as a live bound.
+        exp = m.get("expiry")
+        natural = to_date(exp.get("date")) if isinstance(exp, dict) else None
+        if natural is None or natural <= TODAY:
+            return None
+        lapse = to_date(m.get("fee_lapse_date"))
+        if lapse is not None and add_years(lapse, 2) <= TODAY:
+            return None
+        return natural
     if status in ENDED:
         return None
     exp = m.get("expiry")
@@ -381,6 +407,10 @@ def check_member(m: dict, fam_id: str, problems: list[str]) -> None:
             check_date_field(e["date"], f"{where} expiry date", problems)
             if e["estimated"] is not True:
                 problems.append(f"{where}: expiry must be marked estimated: true")
+    if "fee_lapse_date" in m:
+        check_date_field(m["fee_lapse_date"], f"{where} fee_lapse_date", problems, nullable=False)
+        if m.get("status") != "Expired - Fee Related":
+            problems.append(f"{where}: fee_lapse_date is only meaningful with status 'Expired - Fee Related'")
 
 
 def check_family(f: dict, labels: dict[str, Path], inventory: dict[str, str],

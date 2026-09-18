@@ -110,8 +110,22 @@ Per member:
 
 1. A fetched grant takes Google Patents' "Adjusted expiration"
    (includes US patent term adjustment) or "Anticipated expiration";
-   a status of `Expired - Lifetime`, `Expired - Fee Related`,
-   `Abandoned` or `Ceased` marks it ended whatever the date.
+   a status of `Expired - Lifetime`, `Abandoned` or `Ceased` marks it
+   ended whatever the date. **`Expired - Fee Related` (coordinator
+   decision, 2026-09-19, round 4 M1 follow-up) marks it ended only
+   once its own recorded expiry date has already passed anyway (the
+   natural term was already over, so the lapse changes nothing), or
+   once the 37 CFR 1.378(b) unintentional-delay petition window has
+   closed — two years from the lapse date (Cornell LII,
+   `https://www.law.cornell.edu/cfr/text/37/1.378`) — because a lapse
+   whose reinstatement window is still open is not *certainly* expired,
+   and the owner's rule is that anything not certainly expired is
+   collapsed, not shown open. A member recorded `Expired - Fee Related`
+   whose own expiry date is in the future must carry a `fee_lapse_date`
+   (the lapse event's own date); without one, or while the window it
+   implies is still open, the member contributes its own recorded
+   expiry date as a live bound rather than being treated as ended, so
+   the family cannot be `expired: true` on that member alone.**
 2. A fetched application with no expiry event is ended if it is shown
    as abandoned, withdrawn or ceased, or if 20 years from its filing
    date have passed. One shown as `Granted` is covered by its patent,
