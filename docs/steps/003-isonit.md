@@ -29,7 +29,7 @@ Systems STI patent gives the mask nitride as "500-2000 Å"
 "protective nitride".[^wiki-sti] No public SkyWater source gives the
 SKY130 value, and the 150 nm used as a working figure on the later
 pages of this module ({ref}`STINITE <step-005>`, {ref}`STIE <step-006>`,
-{ref}`NS19 <step-013>`) is the middle of the patent's range, not a
+{ref}`NS19 <step-013>`) sits in the upper half of the patent's range and is not a
 SkyWater number. The thickness is a compromise: thick enough to survive
 the trench etch and the CMP with margin, thin enough to keep the trench
 {term}`aspect ratio` (trench depth *plus* nitride, divided by trench width)
