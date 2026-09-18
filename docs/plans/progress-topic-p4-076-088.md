@@ -22,8 +22,8 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 082-L1 | Low | fixed | Confirmed via Crossref (10.1063/1.96079): Smith 1985's abstract says "high sensitivity even at low dose", supporting a low-dose use, not a high-dose limitation as unsourced. Reworded as an inference citing Smith (added footnote def + Deep dive entry, already used the same way on 083-2psdi.md). |
 | 083-L1 | Low | fixed | Confirmed pdk-assumptions.txt gives PrThickImplant=0.3 and PRTHICKN=1.14 with no stated rationale for either. The causal "which is why" was this reference's own reading, not the PDK's; reworded as "we read ... as a response to that, though the PDK does not say so", matching the mask-page brief's rule on design-rule purposes. |
 | 084-L1 | Low | fixed | Confirmed wiki-piranha.txt gives no percentage for the sulfuric acid, only "concentrated sulfuric acid" and "30 wt.% hydrogen peroxide"; 96-98% is unsourced. Fixed 084-pdis.md per the review's wording, and the same unsourced pair on docs/categories/strip.md (the shared strip category page, in my range's citation list) to keep it sourced. Grepped further: 016-lvtnis.md and 067-astis.md have the identical unsourced text but are outside steps 076-088 and outside this review; left untouched as out of scope for this branch. |
-| 087-L1 | Low | open | |
-| 088-L1 | Low | open | |
+| 087-L1 | Low | declined | Confirmed page already does both correctly (verbatim quotations vs normalised prose); the review itself says "no change is needed" here and asks the coordinator to settle the repo-wide spelling split once, same as 079-L1. |
+| 088-L1 | Low | fixed | Confirmed docs/categories/anneal.md:58-59 gives the "800-1000 C" statement unquoted with [^gibbons-1972][^txt-01], not as a quotation. Dropped the quotation marks here (txt-01 already defined on this page) so it doesn't read as Gibbons's own words. |
 | job-01 (rule 11) | — | left alone | Per coordinator instruction: a separate site-wide sweep under Common rule 11 handles `[^job-01]` everywhere; not touched in this branch. |
 
 Checkers/build not yet run to completion; will run before finishing.
