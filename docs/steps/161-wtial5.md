@@ -174,8 +174,9 @@ Metal 5 is the top routing level and the interface to the package:
 * **Film functions.** Copper doping slows electromigration;[^ames-1970] a
   refractory underlayer promotes (111) texture;[^knorr-1996] the TiW cap
   suppresses hillocks and serves as the anti-reflective surface for
-  {ref}`MM5 <step-162>`, the role Rocke and Schneegans
-  documented;[^rocke-1988] Chaudhari analysed hillock growth, which rises
+  {ref}`MM5 <step-162>`, the role Rocke and Schneegans documented for a
+  titanium-nitride cap and which a Ti:W cap plays in the same way
+  (inference);[^rocke-1988] Chaudhari analysed hillock growth, which rises
   with film thickness.[^chaudhari-1974][^zlatanovic-1990]
 
 Without `WTIAL5` there is no top metal, no bond pads and no connection to
