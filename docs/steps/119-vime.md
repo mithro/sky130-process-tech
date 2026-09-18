@@ -78,9 +78,12 @@ between metal 1 and metal 2, and the etch decides four things:
   why aluminium is etched in chlorine[^hess-1982] — leaving a
   resistive fluoride at the via bottom and a cap too thin to serve as
   the electromigration shunt and barrier the metal-1 page describes
-  ({ref}`TIAL6 <step-112>`). Texas Instruments' patent on a Ti–Al or
-  Ti–Al–N etch stop for a "fluorine-bearing" via etch is a public
-  statement of the same problem and one answer to it.[^pat-etchstop-ti]
+  ({ref}`TIAL6 <step-112>`). How much over-etch a refractory stop can
+  absorb is the subject of Texas Instruments' via-etch-stop patent,
+  which measures an Ar/CF₄/CHF₃ oxide-to-stop selectivity of 28.4:1
+  on TiN and 228:1 on TiAl₃ and argues that TiN's "selectivity to
+  oxide is only 30:1 … insufficient for the long overetches"; nothing
+  public gives the corresponding figure for TiW.[^pat-etchstop-ti]
 * **Tolerating a partly unlanded via.** With only 0.055 µm of
   enclosure (via.4a),[^pdk-periph] some vias will overhang their line;
   the oxide beside the line then etches on while the cap holds, and
@@ -278,8 +281,8 @@ recipe is not public); the shared physics is set out at
   poisoning.[^kobayakawa-1991][^romero-1991]
 * Wu and Lu (UMC), US 6,013,581 — preventing poisoned vias in a
   dual-damascene flow by densifying the exposed dielectric.[^pat-via-poison-umc]
-* Xing, Cerny and Visokay (TI), US 6,090,697 — an etch stop for a
-  fluorine-bearing via etch.[^pat-etchstop-ti]
+* Xing, Cerny and Visokay (TI), US 6,090,697 — a refractory via-etch
+  stop's oxide selectivity, measured against punch-through.[^pat-etchstop-ti]
 * Yin et al. (Applied Materials), US 5,540,824, and Ogle (Lam
   Research), US 4,948,458 — the two high-density plasma sources of
   the era.[^pat-dps-amat][^pat-tcp-lam]
