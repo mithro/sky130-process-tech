@@ -41,9 +41,10 @@ stop and only this one determines the height of the silicon islands.
 
 ## Why this step exists
 
-Without planarisation the STI module would leave 0.5 µm of oxide
-topography over every active area, which no lithography or gate etch
-could handle. Beyond simply flattening, the polish controls:
+Without planarisation the STI module would leave the whole fill
+thickness ({ref}`FILOX <step-011>`) of oxide topography over every
+active area, which no lithography or gate etch could handle. Beyond
+simply flattening, the polish controls:
 
 * **Active-area nitride thickness after polish**, which sets how much
   oxide is left standing above the silicon once the nitride is
@@ -55,9 +56,7 @@ could handle. Beyond simply flattening, the polish controls:
   pattern-density effects, and they are the reason wide field regions
   are filled with dummy active "waffles" (the PDK's "fom_waffles" of
   0.5–4.08 µm[^pdk-06]) and the reason some flows once used a
-  reverse-mask etch-back before the polish — Wikipedia mentions "the
-  combination of resist etching-back (REB) and chemical mechanical
-  polishing (CMP)" for STI.[^wiki-cmp]
+  reverse-mask etch-back before the polish.[^rev-01][^txt-05]
 * **Defectivity** — scratches and residual slurry particles at this
   step become gate-oxide and poly defects.
 
@@ -75,14 +74,15 @@ An industry-generic STI polish for a 200 mm, 130 nm-era fab:
    node:[^rev-02]
    * *Fumed or colloidal silica* in an alkaline (KOH or NH₄OH)
      solution — the classic oxide slurry, with oxide : nitride
-     {term}`selectivity` of only about 3–4 : 1, which needs {term}`endpoint` control or
+     {term}`selectivity` of only about 3–4 : 1 (from the review's body,
+     which is paywalled), which needs {term}`endpoint` control or
      a reverse-mask scheme to avoid over-polishing the nitride.
    * *Ceria (CeO₂)* with surfactant additives — Wikipedia's general
      description of {term}`CMP` names cerium dioxide as a typical
      abrasive[^wiki-cmp] —
-     giving oxide : nitride selectivity of tens to one and a
-     self-stopping polish, the "direct STI" approach that removed the
-     reverse mask.
+     giving oxide : nitride selectivity of tens to one (from the
+     review's body, which is paywalled) and a self-stopping polish, the
+     "direct STI" approach that removed the reverse mask.
 3. **Recipe.** A first platen removes the bulk oxide at high rate; a
    second platen with the selective slurry clears the oxide over the
    active areas and stops on nitride; a final platen buffs with
@@ -179,7 +179,7 @@ polisher, which is what this step needs.
 ### High-level understanding
 
 * Wikipedia, *Chemical-mechanical polishing* — pads, conditioners,
-  abrasives, endpoint and REB + CMP for STI.[^wiki-cmp]
+  abrasives and endpoint.[^wiki-cmp]
 * Wikipedia, *Shallow trench isolation* — the polish and nitride
   removal steps.[^wiki-sti]
 * Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — the CMP
