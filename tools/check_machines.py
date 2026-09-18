@@ -144,8 +144,14 @@ def main() -> int:
         for problem in check(page, rows):
             bad += 1
             print(f"{page.name}: {problem}")
-    print(f"{len(pages)} machine pages checked, {bad} problems")
-    return 1 if bad else 0
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import gen_index_links
+    link_problems = gen_index_links.stale_pages_in("machines")
+    for p in link_problems:
+        print(p)
+    print(f"{len(pages)} machine pages checked, {bad} problems, "
+          f"{len(link_problems)} with a stale index-links block")
+    return 1 if bad or link_problems else 0
 
 
 if __name__ == "__main__":
