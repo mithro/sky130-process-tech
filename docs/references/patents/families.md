@@ -6441,7 +6441,7 @@ families and members are counted.
 |---|---|---|---|---|---|
 | US 7,105,413 B2 | granted patent | 2006-09-12 | Expired - Lifetime | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7105413B2) · [Google Patents](https://patents.google.com/patent/US7105413B2/en) |
 | WO 2005104209 A1 | international application | 2005-11-03 | not shown | 2026-09-19 listed in the Google Patents family table of US7105413B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2005104209A1) · [Google Patents](https://patents.google.com/patent/WO2005104209A1/en) |
-| US 2005/0215024 A1 | application | 2005-09-29 | Expired - Lifetime | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050215024A1) · [Google Patents](https://patents.google.com/patent/US20050215024A1/en) |
+| US 2005/0215024 A1 | application | 2005-09-29 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050215024A1) · [Google Patents](https://patents.google.com/patent/US20050215024A1/en) |
 
 **Relevance:**
 
@@ -6927,9 +6927,9 @@ families and members are counted.
 | US 9,997,641 B2 | granted patent | 2018-06-12 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9997641B2) · [Google Patents](https://patents.google.com/patent/US9997641B2/en) |
 | US 2021/0104402 A1 "Sonos ono stack scaling" | application | 2021-04-08 | Abandoned | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210104402A1) · [Google Patents](https://patents.google.com/patent/US20210104402A1/en) |
 | US 2023/0074163 A1 "Sonos ono stack scaling" | application | 2023-03-09 | Pending | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20230074163A1) · [Google Patents](https://patents.google.com/patent/US20230074163A1/en) |
-| US 2018/0351003 A1 "Sonos ono stack scaling" | application | 2018-12-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180351003A1) · [Google Patents](https://patents.google.com/patent/US20180351003A1/en) |
-| US 2013/0307052 A1 "Sonos ono stack scaling" | application | 2013-11-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130307052A1) · [Google Patents](https://patents.google.com/patent/US20130307052A1/en) |
-| US 2016/0300959 A1 "Sonos ono stack scaling" | application | 2016-10-13 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160300959A1) · [Google Patents](https://patents.google.com/patent/US20160300959A1/en) |
+| US 2018/0351003 A1 "Sonos ono stack scaling" | application | 2018-12-06 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180351003A1) · [Google Patents](https://patents.google.com/patent/US20180351003A1/en) |
+| US 2013/0307052 A1 "Sonos ono stack scaling" | application | 2013-11-21 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130307052A1) · [Google Patents](https://patents.google.com/patent/US20130307052A1/en) |
+| US 2016/0300959 A1 "Sonos ono stack scaling" | application | 2016-10-13 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160300959A1) · [Google Patents](https://patents.google.com/patent/US20160300959A1/en) |
 
 **Relevance:**
 
@@ -6981,7 +6981,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20090179253A1/en
 :::
 
-:::{dropdown} US 2018/0366563 A1 — shown as in force; estimated expiry 2032-03-31
+:::{dropdown} US 2018/0366563 A1 — shown as in force; estimated expiry 2029-04-24
 :name: patent-gp48743295
 
 **Title:** Oxide-nitride-oxide stack having multiple oxynitride layers
@@ -6992,9 +6992,9 @@ families and members are counted.
 
 **Dates:** priority 2007-05-25, filing 2018-05-30
 
-**Legal status (representative):** Active (Google Patents (IFI Claims) status of US20180366563A1, retrieved 2026-09-19)
+**Legal status (representative):** Granted (Google Patents (IFI Claims) status of US20180366563A1, retrieved 2026-09-19)
 
-**Estimated expiry:** 2032-03-31 — the latest recorded or estimated term among all members belongs to US20180366563A1 (estimated upper bound: earliest family filing date + 20 years), running to 2032-03-31
+**Estimated expiry:** 2029-04-24 — the latest recorded or estimated term among all members belongs to US9449831B2 (status shown: Active; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)), running to 2029-04-24
 
 **Google Patents family ID:** `48743295` (family section of the representative's own record page, linked below)
 
@@ -7002,7 +7002,7 @@ families and members are counted.
 
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
-| US 2018/0366563 A1 | application | 2018-12-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366563A1) · [Google Patents](https://patents.google.com/patent/US20180366563A1/en) |
+| US 2018/0366563 A1 | application | 2018-12-20 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366563A1) · [Google Patents](https://patents.google.com/patent/US20180366563A1/en) |
 | US 9,449,831 B2 | granted patent | 2016-09-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9449831B2) · [Google Patents](https://patents.google.com/patent/US9449831B2/en) |
 | US 10,374,067 B2 | granted patent | 2019-08-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10374067B2) · [Google Patents](https://patents.google.com/patent/US10374067B2/en) |
 | US 10,903,342 B2 | granted patent | 2021-01-26 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10903342B2) · [Google Patents](https://patents.google.com/patent/US10903342B2/en) |
@@ -7010,11 +7010,11 @@ families and members are counted.
 | US 11,222,965 B2 | granted patent | 2022-01-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11222965B2) · [Google Patents](https://patents.google.com/patent/US11222965B2/en) |
 | US 11,784,243 B2 | granted patent | 2023-10-10 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11784243B2) · [Google Patents](https://patents.google.com/patent/US11784243B2/en) |
 | US 2024/0234550 A1 "Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers" | application | 2024-07-11 | Abandoned | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240234550A1) · [Google Patents](https://patents.google.com/patent/US20240234550A1/en) |
-| US 2022/0093773 A1 "Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers" | application | 2022-03-24 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220093773A1) · [Google Patents](https://patents.google.com/patent/US20220093773A1/en) |
-| US 2020/0144399 A1 "Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers" | application | 2020-05-07 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200144399A1) · [Google Patents](https://patents.google.com/patent/US20200144399A1/en) |
-| US 2018/0366564 A1 | application | 2018-12-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366564A1) · [Google Patents](https://patents.google.com/patent/US20180366564A1/en) |
-| US 2013/0175504 A1 | application | 2013-07-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175504A1) · [Google Patents](https://patents.google.com/patent/US20130175504A1/en) |
-| US 2016/0308033 A1 | application | 2016-10-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160308033A1) · [Google Patents](https://patents.google.com/patent/US20160308033A1/en) |
+| US 2022/0093773 A1 "Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers" | application | 2022-03-24 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220093773A1) · [Google Patents](https://patents.google.com/patent/US20220093773A1/en) |
+| US 2020/0144399 A1 "Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers" | application | 2020-05-07 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200144399A1) · [Google Patents](https://patents.google.com/patent/US20200144399A1/en) |
+| US 2018/0366564 A1 | application | 2018-12-20 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366564A1) · [Google Patents](https://patents.google.com/patent/US20180366564A1/en) |
+| US 2013/0175504 A1 | application | 2013-07-11 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175504A1) · [Google Patents](https://patents.google.com/patent/US20130175504A1/en) |
+| US 2016/0308033 A1 | application | 2016-10-20 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160308033A1) · [Google Patents](https://patents.google.com/patent/US20160308033A1/en) |
 
 **Relevance:**
 
@@ -7373,16 +7373,16 @@ families and members are counted.
 | US 11,721,733 B2 | granted patent | 2023-08-08 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11721733B2) · [Google Patents](https://patents.google.com/patent/US11721733B2/en) |
 | US 12,009,401 B2 | granted patent | 2024-06-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12009401B2) · [Google Patents](https://patents.google.com/patent/US12009401B2/en) |
 | US 2024/0332385 A1 | application | 2024-10-03 | Pending | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240332385A1) · [Google Patents](https://patents.google.com/patent/US20240332385A1/en) |
-| US 2013/0307053 A1 | application | 2013-11-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130307053A1) · [Google Patents](https://patents.google.com/patent/US20130307053A1/en) |
-| US 2018/0158919 A1 | application | 2018-06-07 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180158919A1) · [Google Patents](https://patents.google.com/patent/US20180158919A1/en) |
-| US 2020/0013863 A1 | application | 2020-01-09 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200013863A1) · [Google Patents](https://patents.google.com/patent/US20200013863A1/en) |
-| US 2020/0152752 A1 | application | 2020-05-14 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200152752A1) · [Google Patents](https://patents.google.com/patent/US20200152752A1/en) |
-| US 2022/0005929 A1 | application | 2022-01-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220005929A1) · [Google Patents](https://patents.google.com/patent/US20220005929A1/en) |
-| US 2017/0186883 A1 | application | 2017-06-29 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170186883A1) · [Google Patents](https://patents.google.com/patent/US20170186883A1/en) |
-| US 2023/0023852 A1 | application | 2023-01-26 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20230023852A1) · [Google Patents](https://patents.google.com/patent/US20230023852A1/en) |
-| US 2017/0092729 A1 "Method of manufacturing for memory transistor with multiple charge storing layers and a high work function gate electrode" | application | 2017-03-30 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170092729A1) · [Google Patents](https://patents.google.com/patent/US20170092729A1/en) |
-| US 2021/0217862 A1 | application | 2021-07-15 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210217862A1) · [Google Patents](https://patents.google.com/patent/US20210217862A1/en) |
-| US 2014/0264551 A1 | application | 2014-09-18 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140264551A1) · [Google Patents](https://patents.google.com/patent/US20140264551A1/en) |
+| US 2013/0307053 A1 | application | 2013-11-21 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130307053A1) · [Google Patents](https://patents.google.com/patent/US20130307053A1/en) |
+| US 2018/0158919 A1 | application | 2018-06-07 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180158919A1) · [Google Patents](https://patents.google.com/patent/US20180158919A1/en) |
+| US 2020/0013863 A1 | application | 2020-01-09 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200013863A1) · [Google Patents](https://patents.google.com/patent/US20200013863A1/en) |
+| US 2020/0152752 A1 | application | 2020-05-14 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200152752A1) · [Google Patents](https://patents.google.com/patent/US20200152752A1/en) |
+| US 2022/0005929 A1 | application | 2022-01-06 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220005929A1) · [Google Patents](https://patents.google.com/patent/US20220005929A1/en) |
+| US 2017/0186883 A1 | application | 2017-06-29 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170186883A1) · [Google Patents](https://patents.google.com/patent/US20170186883A1/en) |
+| US 2023/0023852 A1 | application | 2023-01-26 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20230023852A1) · [Google Patents](https://patents.google.com/patent/US20230023852A1/en) |
+| US 2017/0092729 A1 "Method of manufacturing for memory transistor with multiple charge storing layers and a high work function gate electrode" | application | 2017-03-30 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170092729A1) · [Google Patents](https://patents.google.com/patent/US20170092729A1/en) |
+| US 2021/0217862 A1 | application | 2021-07-15 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210217862A1) · [Google Patents](https://patents.google.com/patent/US20210217862A1/en) |
+| US 2014/0264551 A1 | application | 2014-09-18 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140264551A1) · [Google Patents](https://patents.google.com/patent/US20140264551A1/en) |
 
 **Relevance:**
 
@@ -7637,11 +7637,11 @@ families and members are counted.
 | US 10,790,364 B2 | granted patent | 2020-09-29 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10790364B2) · [Google Patents](https://patents.google.com/patent/US10790364B2/en) |
 | US 11,257,912 B2 "Sonos stack with split nitride memory layer" | granted patent | 2022-02-22 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11257912B2) · [Google Patents](https://patents.google.com/patent/US11257912B2/en) |
 | US 2022/0173216 A1 "Sonos stack with split nitride memory layer" | application | 2022-06-02 | Abandoned | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220173216A1) · [Google Patents](https://patents.google.com/patent/US20220173216A1/en) |
-| US 2021/0074822 A1 "Sonos stack with split nitride memory layer" | application | 2021-03-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210074822A1) · [Google Patents](https://patents.google.com/patent/US20210074822A1/en) |
-| US 2019/0198329 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2019-06-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190198329A1) · [Google Patents](https://patents.google.com/patent/US20190198329A1/en) |
-| US 2016/0141180 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2016-05-19 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160141180A1) · [Google Patents](https://patents.google.com/patent/US20160141180A1/en) |
-| US 2014/0374813 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2014-12-25 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140374813A1) · [Google Patents](https://patents.google.com/patent/US20140374813A1/en) |
-| US 2018/0053657 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2018-02-22 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180053657A1) · [Google Patents](https://patents.google.com/patent/US20180053657A1/en) |
+| US 2021/0074822 A1 "Sonos stack with split nitride memory layer" | application | 2021-03-11 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210074822A1) · [Google Patents](https://patents.google.com/patent/US20210074822A1/en) |
+| US 2019/0198329 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2019-06-27 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190198329A1) · [Google Patents](https://patents.google.com/patent/US20190198329A1/en) |
+| US 2016/0141180 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2016-05-19 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160141180A1) · [Google Patents](https://patents.google.com/patent/US20160141180A1/en) |
+| US 2014/0374813 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2014-12-25 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140374813A1) · [Google Patents](https://patents.google.com/patent/US20140374813A1/en) |
+| US 2018/0053657 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2018-02-22 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180053657A1) · [Google Patents](https://patents.google.com/patent/US20180053657A1/en) |
 
 **Relevance:**
 
@@ -7685,7 +7685,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8071453B1/en
 :::
 
-:::{dropdown} US 8,710,578 B2 — shown as in force; estimated expiry 2032-03-27
+:::{dropdown} US 8,710,578 B2 — shown as in force; estimated expiry 2030-06-18
 :name: patent-gp48743335
 
 **Title:** SONOS stack with split nitride memory layer
@@ -7698,7 +7698,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US8710578B2, retrieved 2026-09-19)
 
-**Estimated expiry:** 2032-03-27 — the latest recorded or estimated term among all members belongs to US20130175600A1 (estimated upper bound: earliest family filing date + 20 years), running to 2032-03-27
+**Estimated expiry:** 2030-06-18 — the latest recorded or estimated term among all members belongs to US8710578B2 (status shown: Active; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)), running to 2030-06-18
 
 **Google Patents family ID:** `48743335` (family section of the representative's own record page, linked below)
 
@@ -7707,7 +7707,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 8,710,578 B2 | granted patent | 2014-04-29 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8710578B2) · [Google Patents](https://patents.google.com/patent/US8710578B2/en) |
-| US 2013/0175600 A1 "Sonos stack with split nitride memory layer" | application | 2013-07-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175600A1) · [Google Patents](https://patents.google.com/patent/US20130175600A1/en) |
+| US 2013/0175600 A1 "Sonos stack with split nitride memory layer" | application | 2013-07-11 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175600A1) · [Google Patents](https://patents.google.com/patent/US20130175600A1/en) |
 
 **Relevance:**
 
@@ -7872,7 +7872,7 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9076523B2/en
 
-:::{dropdown} US 11,342,429 B2 — shown as in force; estimated expiry 2036-09-29
+:::{dropdown} US 11,342,429 B2 — shown as in force; estimated expiry 2032-12-14
 :name: patent-gp58691400
 
 **Title:** Memory first process flow and device
@@ -7885,7 +7885,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US11342429B2, retrieved 2026-09-19)
 
-**Estimated expiry:** 2036-09-29 — the latest recorded or estimated term among all members belongs to US20210091198A1 (estimated upper bound: earliest family filing date + 20 years), running to 2036-09-29
+**Estimated expiry:** 2032-12-14 — the latest recorded or estimated term among all members belongs to US11342429B2 (status shown: Active; Google Patents 'Anticipated expiration' (IFI Claims estimate)), running to 2032-12-14
 
 **Google Patents family ID:** `58691400` (family section of the representative's own record page, linked below)
 
@@ -7897,10 +7897,10 @@ families and members are counted.
 | US 10,014,380 B2 | granted patent | 2018-07-03 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10014380B2) · [Google Patents](https://patents.google.com/patent/US10014380B2/en) |
 | US 10,403,731 B2 | granted patent | 2019-09-03 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10403731B2) · [Google Patents](https://patents.google.com/patent/US10403731B2/en) |
 | US 10,818,761 B2 | granted patent | 2020-10-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10818761B2) · [Google Patents](https://patents.google.com/patent/US10818761B2/en) |
-| US 2021/0091198 A1 "Memory First Process Flow and Device" | application | 2021-03-25 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210091198A1) · [Google Patents](https://patents.google.com/patent/US20210091198A1/en) |
-| US 2017/0141201 A1 "Memory First Process Flow and Device" | application | 2017-05-18 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170141201A1) · [Google Patents](https://patents.google.com/patent/US20170141201A1/en) |
-| US 2019/0386109 A1 "Memory First Process Flow and Device" | application | 2019-12-19 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190386109A1) · [Google Patents](https://patents.google.com/patent/US20190386109A1/en) |
-| US 2018/0366551 A1 "Memory First Process Flow and Device" | application | 2018-12-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366551A1) · [Google Patents](https://patents.google.com/patent/US20180366551A1/en) |
+| US 2021/0091198 A1 "Memory First Process Flow and Device" | application | 2021-03-25 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210091198A1) · [Google Patents](https://patents.google.com/patent/US20210091198A1/en) |
+| US 2017/0141201 A1 "Memory First Process Flow and Device" | application | 2017-05-18 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170141201A1) · [Google Patents](https://patents.google.com/patent/US20170141201A1/en) |
+| US 2019/0386109 A1 "Memory First Process Flow and Device" | application | 2019-12-19 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190386109A1) · [Google Patents](https://patents.google.com/patent/US20190386109A1/en) |
+| US 2018/0366551 A1 "Memory First Process Flow and Device" | application | 2018-12-20 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366551A1) · [Google Patents](https://patents.google.com/patent/US20180366551A1/en) |
 
 **Relevance:**
 
@@ -7924,7 +7924,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US11183509B2, retrieved 2026-09-19)
 
-**Estimated expiry:** 2034-01-30 — the latest recorded or estimated term among all members belongs to US20200411537A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2034-01-30
+**Estimated expiry:** 2034-01-30 — the latest recorded or estimated term among all members belongs to WO2014120921A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2034-01-30
 
 **Google Patents family ID:** `51221986` (family section of the representative's own record page, linked below)
 
@@ -7937,15 +7937,15 @@ families and members are counted.
 | US 9,252,154 B2 | granted patent | 2016-02-02 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9252154B2) · [Google Patents](https://patents.google.com/patent/US9252154B2/en) |
 | US 9,666,591 B2 | granted patent | 2017-05-30 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9666591B2) · [Google Patents](https://patents.google.com/patent/US9666591B2/en) |
 | US 10,692,877 B2 | granted patent | 2020-06-23 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10692877B2) · [Google Patents](https://patents.google.com/patent/US10692877B2/en) |
-| US 2020/0411537 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2020-12-31 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200411537A1) · [Google Patents](https://patents.google.com/patent/US20200411537A1/en) |
-| US 2016/0211271 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2016-07-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160211271A1) · [Google Patents](https://patents.google.com/patent/US20160211271A1/en) |
-| US 2017/0250192 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2017-08-31 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170250192A1) · [Google Patents](https://patents.google.com/patent/US20170250192A1/en) |
-| US 2014/0209993 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2014-07-31 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140209993A1) · [Google Patents](https://patents.google.com/patent/US20140209993A1/en) |
+| US 2020/0411537 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2020-12-31 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200411537A1) · [Google Patents](https://patents.google.com/patent/US20200411537A1/en) |
+| US 2016/0211271 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2016-07-21 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160211271A1) · [Google Patents](https://patents.google.com/patent/US20160211271A1/en) |
+| US 2017/0250192 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2017-08-31 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170250192A1) · [Google Patents](https://patents.google.com/patent/US20170250192A1/en) |
+| US 2014/0209993 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2014-07-31 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140209993A1) · [Google Patents](https://patents.google.com/patent/US20140209993A1/en) |
 | WO 2014120921 A1 | international application | 2014-08-07 | not shown | 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2014120921A1) · [Google Patents](https://patents.google.com/patent/WO2014120921A1/en) |
 | EP 2 951 862 A1 | application | 2015-12-09 | not shown | 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP2951862A1) · [Google Patents](https://patents.google.com/patent/EP2951862A1/en) |
 | EP 2 951 862 B1 | granted patent | 2026-02-25 | not shown | 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP2951862B1) · [Google Patents](https://patents.google.com/patent/EP2951862B1/en) |
 | EP 2 951 862 A4 | application | 2017-03-15 | not shown | 2026-09-19 listed in the Google Patents family table of US11183509B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP2951862A4) · [Google Patents](https://patents.google.com/patent/EP2951862A4/en) |
-| US 2015/0017795 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2015-01-15 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150017795A1) · [Google Patents](https://patents.google.com/patent/US20150017795A1/en) |
+| US 2015/0017795 A1 "Non-Volatile Memory With Silicided Bit Line Contacts" | application | 2015-01-15 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150017795A1) · [Google Patents](https://patents.google.com/patent/US20150017795A1/en) |
 
 **Relevance:**
 
@@ -8053,7 +8053,7 @@ families and members are counted.
 
 **Legal status (representative):** Active (Google Patents (IFI Claims) status of US9911747B2, retrieved 2026-09-19)
 
-**Estimated expiry:** 2034-09-27 — the latest recorded or estimated term among all members belongs to US20180166452A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2034-09-27
+**Estimated expiry:** 2034-09-27 — the latest recorded or estimated term among all members belongs to JP2019204964A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2034-09-27
 
 **Google Patents family ID:** `51845734` (family section of the representative's own record page, linked below)
 
@@ -8066,13 +8066,13 @@ families and members are counted.
 | US 9,911,746 B1 | granted patent | 2018-03-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9911746B1) · [Google Patents](https://patents.google.com/patent/US9911746B1/en) |
 | US 9,721,962 B1 | granted patent | 2017-08-01 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9721962B1) · [Google Patents](https://patents.google.com/patent/US9721962B1/en) |
 | US 10,784,277 B2 "Integration of a memory transistor into High-k, metal gate CMOS process flow" | granted patent | 2020-09-22 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10784277B2) · [Google Patents](https://patents.google.com/patent/US10784277B2/en) |
-| US 2018/0166452 A1 "Integration of a memory transistor into high-k, metal gate cmos process flow" | application | 2018-06-14 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180166452A1) · [Google Patents](https://patents.google.com/patent/US20180166452A1/en) |
+| US 2018/0166452 A1 "Integration of a memory transistor into high-k, metal gate cmos process flow" | application | 2018-06-14 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180166452A1) · [Google Patents](https://patents.google.com/patent/US20180166452A1/en) |
 | JP 2019204964 A | application | 2019-11-28 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2019204964A) · [Google Patents](https://patents.google.com/patent/JP2019204964A/en) |
 | CN 105340068 B | granted patent | 2018-03-27 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN105340068B) · [Google Patents](https://patents.google.com/patent/CN105340068B/en) |
 | WO 2015047701 A1 | international application | 2015-04-02 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015047701A1) · [Google Patents](https://patents.google.com/patent/WO2015047701A1/en) |
 | TW 201513311 A | application | 2015-04-01 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW201513311A) · [Google Patents](https://patents.google.com/patent/TW201513311A/en) |
 | KR 20160064041 A | application | 2016-06-07 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20160064041A) · [Google Patents](https://patents.google.com/patent/KR20160064041A/en) |
-| US 2017/0278853 A1 "Integration of a memory transistor into high-k, metal gate cmos process flow" | application | 2017-09-28 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170278853A1) · [Google Patents](https://patents.google.com/patent/US20170278853A1/en) |
+| US 2017/0278853 A1 "Integration of a memory transistor into high-k, metal gate cmos process flow" | application | 2017-09-28 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170278853A1) · [Google Patents](https://patents.google.com/patent/US20170278853A1/en) |
 | TW 201843812 A | application | 2018-12-16 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW201843812A) · [Google Patents](https://patents.google.com/patent/TW201843812A/en) |
 | TW I697100 B | granted patent | 2020-06-21 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTWI697100B) · [Google Patents](https://patents.google.com/patent/TWI697100B/en) |
 | CN 105340068 A | application | 2016-02-17 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN105340068A) · [Google Patents](https://patents.google.com/patent/CN105340068A/en) |
@@ -8245,8 +8245,8 @@ families and members are counted.
 | US 9,911,613 B2 "Method of fabricating a charge-trapping gate stack using a CMOS process flow" | granted patent | 2018-03-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9911613B2) · [Google Patents](https://patents.google.com/patent/US9911613B2/en) |
 | KR 20160141705 A | application | 2016-12-09 | not shown | 2026-09-19 listed in the Google Patents family table of TWI640082B (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20160141705A) · [Google Patents](https://patents.google.com/patent/KR20160141705A/en) |
 | WO 2015119893 A3 | international application | 2015-11-12 | not shown | 2026-09-19 listed in the Google Patents family table of TWI640082B (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015119893A3) · [Google Patents](https://patents.google.com/patent/WO2015119893A3/en) |
-| US 2016/0005610 A1 "Method of fabricating a charge-trapping gate stack using a cmos process flow" | application | 2016-01-07 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160005610A1) · [Google Patents](https://patents.google.com/patent/US20160005610A1/en) |
-| US 2017/0084465 A1 "Method of fabricating a charge-trapping gate stack using a cmos process flow" | application | 2017-03-23 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170084465A1) · [Google Patents](https://patents.google.com/patent/US20170084465A1/en) |
+| US 2016/0005610 A1 "Method of fabricating a charge-trapping gate stack using a cmos process flow" | application | 2016-01-07 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160005610A1) · [Google Patents](https://patents.google.com/patent/US20160005610A1/en) |
+| US 2017/0084465 A1 "Method of fabricating a charge-trapping gate stack using a cmos process flow" | application | 2017-03-23 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170084465A1) · [Google Patents](https://patents.google.com/patent/US20170084465A1/en) |
 
 **Relevance:**
 
@@ -8539,15 +8539,15 @@ families and members are counted.
 | CN 110832639 B | granted patent | 2024-01-09 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN110832639B) · [Google Patents](https://patents.google.com/patent/CN110832639B/en) |
 | CN 117750773 B | granted patent | 2025-07-11 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN117750773B) · [Google Patents](https://patents.google.com/patent/CN117750773B/en) |
 | JP 2020528212 A | application | 2020-09-17 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2020528212A) · [Google Patents](https://patents.google.com/patent/JP2020528212A/en) |
-| US 2019/0027487 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2019-01-24 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190027487A1) · [Google Patents](https://patents.google.com/patent/US20190027487A1/en) |
+| US 2019/0027487 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2019-01-24 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190027487A1) · [Google Patents](https://patents.google.com/patent/US20190027487A1/en) |
 | TW I712160 B | granted patent | 2020-12-01 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTWI712160B) · [Google Patents](https://patents.google.com/patent/TWI712160B/en) |
 | CN 117750773 A | application | 2024-03-22 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN117750773A) · [Google Patents](https://patents.google.com/patent/CN117750773A/en) |
-| US 2021/0296343 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2021-09-23 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210296343A1) · [Google Patents](https://patents.google.com/patent/US20210296343A1/en) |
+| US 2021/0296343 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2021-09-23 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210296343A1) · [Google Patents](https://patents.google.com/patent/US20210296343A1/en) |
 | DE 112018003712 T5 | translation of granted patent | 2020-04-09 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE112018003712T5) · [Google Patents](https://patents.google.com/patent/DE112018003712T5/en) |
 | WO 2019018194 A1 | international application | 2019-01-24 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2019018194A1) · [Google Patents](https://patents.google.com/patent/WO2019018194A1/en) |
 | CN 110832639 A | application | 2020-02-21 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN110832639A) · [Google Patents](https://patents.google.com/patent/CN110832639A/en) |
 | TW 202121663 A | application | 2021-06-01 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW202121663A) · [Google Patents](https://patents.google.com/patent/TW202121663A/en) |
-| US 2024/0008279 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2024-01-04 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240008279A1) · [Google Patents](https://patents.google.com/patent/US20240008279A1/en) |
+| US 2024/0008279 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2024-01-04 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240008279A1) · [Google Patents](https://patents.google.com/patent/US20240008279A1/en) |
 | JP 7160849 B2 | granted patent | 2022-10-25 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP7160849B2) · [Google Patents](https://patents.google.com/patent/JP7160849B2/en) |
 
 **Relevance:**
@@ -8700,15 +8700,15 @@ families and members are counted.
 | US 11,367,481 B2 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | granted patent | 2022-06-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11367481B2) · [Google Patents](https://patents.google.com/patent/US11367481B2/en) |
 | US 12,183,395 B2 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | granted patent | 2024-12-31 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12183395B2) · [Google Patents](https://patents.google.com/patent/US12183395B2/en) |
 | CN 114747010 B | granted patent | 2023-04-04 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN114747010B) · [Google Patents](https://patents.google.com/patent/CN114747010B/en) |
-| US 2021/0158868 A1 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | application | 2021-05-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210158868A1) · [Google Patents](https://patents.google.com/patent/US20210158868A1/en) |
-| US 2021/0159346 A1 | application | 2021-05-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210159346A1) · [Google Patents](https://patents.google.com/patent/US20210159346A1/en) |
+| US 2021/0158868 A1 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | application | 2021-05-27 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210158868A1) · [Google Patents](https://patents.google.com/patent/US20210158868A1/en) |
+| US 2021/0159346 A1 | application | 2021-05-27 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210159346A1) · [Google Patents](https://patents.google.com/patent/US20210159346A1/en) |
 | CN 116129957 B | granted patent | 2024-04-05 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN116129957B) · [Google Patents](https://patents.google.com/patent/CN116129957B/en) |
-| US 2022/0284951 A1 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | application | 2022-09-08 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220284951A1) · [Google Patents](https://patents.google.com/patent/US20220284951A1/en) |
+| US 2022/0284951 A1 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | application | 2022-09-08 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220284951A1) · [Google Patents](https://patents.google.com/patent/US20220284951A1/en) |
 | CN 114747010 A | application | 2022-07-12 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN114747010A) · [Google Patents](https://patents.google.com/patent/CN114747010A/en) |
 | CN 116129957 A | application | 2023-05-16 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN116129957A) · [Google Patents](https://patents.google.com/patent/CN116129957A/en) |
 | CN 114730603 A | application | 2022-07-08 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN114730603A) · [Google Patents](https://patents.google.com/patent/CN114730603A/en) |
-| US 2021/0350850 A1 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | application | 2021-11-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210350850A1) · [Google Patents](https://patents.google.com/patent/US20210350850A1/en) |
-| US 2022/0359006 A1 | application | 2022-11-10 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220359006A1) · [Google Patents](https://patents.google.com/patent/US20220359006A1/en) |
+| US 2021/0350850 A1 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | application | 2021-11-11 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210350850A1) · [Google Patents](https://patents.google.com/patent/US20210350850A1/en) |
+| US 2022/0359006 A1 | application | 2022-11-10 | Granted | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220359006A1) · [Google Patents](https://patents.google.com/patent/US20220359006A1/en) |
 | DE 112020005820 T5 | translation of granted patent | 2022-09-08 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE112020005820T5) · [Google Patents](https://patents.google.com/patent/DE112020005820T5/en) |
 | DE 112020005797 T5 | translation of granted patent | 2022-10-06 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE112020005797T5) · [Google Patents](https://patents.google.com/patent/DE112020005797T5/en) |
 | WO 2021108339 A1 | international application | 2021-06-03 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2021108339A1) · [Google Patents](https://patents.google.com/patent/WO2021108339A1/en) |

@@ -294,7 +294,7 @@ families:
     title: Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies
     application_number: US11/069,501
     filing_date: '2005-03-01'
-    status: Expired - Lifetime
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050215024A1
       google_patents: https://patents.google.com/patent/US20050215024A1/en
@@ -606,7 +606,7 @@ families:
     title: Memory transistor with multiple charge storing layers and a high work function gate electrode
     application_number: US13/539,466
     filing_date: '2012-07-01'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130307053A1
       google_patents: https://patents.google.com/patent/US20130307053A1/en
@@ -619,7 +619,7 @@ families:
     title: Memory transistor with multiple charge storing layers and a high work function gate electrode
     application_number: US15/864,832
     filing_date: '2018-01-08'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180158919A1
       google_patents: https://patents.google.com/patent/US20180158919A1/en
@@ -632,7 +632,7 @@ families:
     title: Memory transistor with multiple charge storing layers and a high work function gate electrode
     application_number: US16/429,464
     filing_date: '2019-06-03'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200013863A1
       google_patents: https://patents.google.com/patent/US20200013863A1/en
@@ -645,7 +645,7 @@ families:
     title: Memory transistor with multiple charge storing layers and a high work function gate electrode
     application_number: US16/600,768
     filing_date: '2019-10-14'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200152752A1
       google_patents: https://patents.google.com/patent/US20200152752A1/en
@@ -658,7 +658,7 @@ families:
     title: Memory transistor with multiple charge storing layers and a high work function gate electrode
     application_number: US17/366,934
     filing_date: '2021-07-02'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220005929A1
       google_patents: https://patents.google.com/patent/US20220005929A1/en
@@ -671,7 +671,7 @@ families:
     title: Memory transistor with multiple charge storing layers and a high work function gate electrode
     application_number: US15/376,282
     filing_date: '2016-12-12'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170186883A1
       google_patents: https://patents.google.com/patent/US20170186883A1/en
@@ -684,7 +684,7 @@ families:
     title: Memory transistor with multiple charge storing layers and a high work function gate electrode
     application_number: US17/952,796
     filing_date: '2022-09-26'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20230023852A1
       google_patents: https://patents.google.com/patent/US20230023852A1/en
@@ -698,7 +698,7 @@ families:
       electrode
     application_number: US15/335,180
     filing_date: '2016-10-26'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170092729A1
       google_patents: https://patents.google.com/patent/US20170092729A1/en
@@ -711,7 +711,7 @@ families:
     title: Memory transistor with multiple charge storing layers and a high work function gate electrode
     application_number: US17/157,350
     filing_date: '2021-01-25'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210217862A1
       google_patents: https://patents.google.com/patent/US20210217862A1/en
@@ -724,7 +724,7 @@ families:
     title: Memory transistor with multiple charge storing layers and a high work function gate electrode
     application_number: US14/159,315
     filing_date: '2014-01-20'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140264551A1
       google_patents: https://patents.google.com/patent/US20140264551A1/en
@@ -765,13 +765,13 @@ families:
     filing: '2018-05-30'
     grant: null
   legal_status:
-    status: Active
+    status: Granted
     source: Google Patents (IFI Claims) status of US20180366563A1, retrieved 2026-09-19
   expiry:
-    date: '2032-03-31'
+    date: '2029-04-24'
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to US20180366563A1 (estimated upper bound: earliest
-      family filing date + 20 years), running to 2032-03-31'
+    basis: 'the latest recorded or estimated term among all members belongs to US9449831B2 (status shown: Active; Google
+      Patents ''Adjusted expiration'' (IFI Claims estimate, includes term adjustment)), running to 2029-04-24'
   expired: false
   members:
   - number: US20180366563A1
@@ -782,7 +782,7 @@ families:
     title: Oxide-nitride-oxide stack having multiple oxynitride layers
     application_number: US15/993,165
     filing_date: '2018-05-30'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366563A1
       google_patents: https://patents.google.com/patent/US20180366563A1/en
@@ -910,7 +910,7 @@ families:
     title: Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers
     application_number: US17/541,029
     filing_date: '2021-12-02'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220093773A1
       google_patents: https://patents.google.com/patent/US20220093773A1/en
@@ -923,7 +923,7 @@ families:
     title: Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers
     application_number: US16/726,582
     filing_date: '2019-12-24'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200144399A1
       google_patents: https://patents.google.com/patent/US20200144399A1/en
@@ -936,7 +936,7 @@ families:
     title: Oxide-nitride-oxide stack having multiple oxynitride layers
     application_number: US15/993,224
     filing_date: '2018-05-30'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366564A1
       google_patents: https://patents.google.com/patent/US20180366564A1/en
@@ -949,7 +949,7 @@ families:
     title: Oxide-nitride-oxide stack having multiple oxynitride layers
     application_number: US13/436,872
     filing_date: '2012-03-31'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175504A1
       google_patents: https://patents.google.com/patent/US20130175504A1/en
@@ -962,7 +962,7 @@ families:
     title: Oxide-nitride-oxide stack having multiple oxynitride layers
     application_number: US15/189,668
     filing_date: '2016-06-22'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160308033A1
       google_patents: https://patents.google.com/patent/US20160308033A1/en
@@ -1094,7 +1094,7 @@ families:
     title: Sonos ono stack scaling
     application_number: US15/988,981
     filing_date: '2018-05-24'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180351003A1
       google_patents: https://patents.google.com/patent/US20180351003A1/en
@@ -1107,7 +1107,7 @@ families:
     title: Sonos ono stack scaling
     application_number: US13/539,461
     filing_date: '2012-07-01'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130307052A1
       google_patents: https://patents.google.com/patent/US20130307052A1/en
@@ -1120,7 +1120,7 @@ families:
     title: Sonos ono stack scaling
     application_number: US15/051,279
     filing_date: '2016-02-23'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160300959A1
       google_patents: https://patents.google.com/patent/US20160300959A1/en
@@ -1248,10 +1248,10 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US8710578B2, retrieved 2026-09-19
   expiry:
-    date: '2032-03-27'
+    date: '2030-06-18'
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to US20130175600A1 (estimated upper bound: earliest
-      family filing date + 20 years), running to 2032-03-27'
+    basis: 'the latest recorded or estimated term among all members belongs to US8710578B2 (status shown: Active; Google
+      Patents ''Adjusted expiration'' (IFI Claims estimate, includes term adjustment)), running to 2030-06-18'
   expired: false
   members:
   - number: US8710578B2
@@ -1279,7 +1279,7 @@ families:
     title: Sonos stack with split nitride memory layer
     application_number: US13/431,069
     filing_date: '2012-03-27'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175600A1
       google_patents: https://patents.google.com/patent/US20130175600A1/en
@@ -1469,7 +1469,7 @@ families:
     title: Sonos stack with split nitride memory layer
     application_number: US17/035,129
     filing_date: '2020-09-28'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210074822A1
       google_patents: https://patents.google.com/patent/US20210074822A1/en
@@ -1482,7 +1482,7 @@ families:
     title: SONOS Stack With Split Nitride Memory Layer
     application_number: US16/240,366
     filing_date: '2019-01-04'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190198329A1
       google_patents: https://patents.google.com/patent/US20190198329A1/en
@@ -1495,7 +1495,7 @@ families:
     title: SONOS Stack With Split Nitride Memory Layer
     application_number: US14/824,007
     filing_date: '2015-08-11'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160141180A1
       google_patents: https://patents.google.com/patent/US20160141180A1/en
@@ -1508,7 +1508,7 @@ families:
     title: SONOS Stack With Split Nitride Memory Layer
     application_number: US14/265,129
     filing_date: '2014-04-29'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140374813A1
       google_patents: https://patents.google.com/patent/US20140374813A1/en
@@ -1521,7 +1521,7 @@ families:
     title: SONOS Stack With Split Nitride Memory Layer
     application_number: US15/663,413
     filing_date: '2017-07-28'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180053657A1
       google_patents: https://patents.google.com/patent/US20180053657A1/en
@@ -1567,10 +1567,10 @@ families:
     status: Active
     source: Google Patents (IFI Claims) status of US11342429B2, retrieved 2026-09-19
   expiry:
-    date: '2036-09-29'
+    date: '2032-12-14'
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to US20210091198A1 (estimated upper bound: earliest
-      family filing date + 20 years), running to 2036-09-29'
+    basis: 'the latest recorded or estimated term among all members belongs to US11342429B2 (status shown: Active; Google
+      Patents ''Anticipated expiration'' (IFI Claims estimate)), running to 2032-12-14'
   expired: false
   members:
   - number: US11342429B2
@@ -1649,7 +1649,7 @@ families:
     title: Memory First Process Flow and Device
     application_number: US17/039,603
     filing_date: '2020-09-30'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210091198A1
       google_patents: https://patents.google.com/patent/US20210091198A1/en
@@ -1662,7 +1662,7 @@ families:
     title: Memory First Process Flow and Device
     application_number: US15/281,010
     filing_date: '2016-09-29'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170141201A1
       google_patents: https://patents.google.com/patent/US20170141201A1/en
@@ -1675,7 +1675,7 @@ families:
     title: Memory First Process Flow and Device
     application_number: US16/517,393
     filing_date: '2019-07-19'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190386109A1
       google_patents: https://patents.google.com/patent/US20190386109A1/en
@@ -1688,7 +1688,7 @@ families:
     title: Memory First Process Flow and Device
     application_number: US16/009,543
     filing_date: '2018-06-15'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366551A1
       google_patents: https://patents.google.com/patent/US20180366551A1/en
@@ -1731,7 +1731,7 @@ families:
   expiry:
     date: '2034-01-30'
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to US20200411537A1 (estimated upper bound: earliest
+    basis: 'the latest recorded or estimated term among all members belongs to WO2014120921A1 (estimated upper bound: earliest
       priority date + 21 years (12-month priority period + 20-year term)), running to 2034-01-30'
   expired: false
   members:
@@ -1828,7 +1828,7 @@ families:
     title: Non-Volatile Memory With Silicided Bit Line Contacts
     application_number: US16/905,044
     filing_date: '2020-06-18'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200411537A1
       google_patents: https://patents.google.com/patent/US20200411537A1/en
@@ -1841,7 +1841,7 @@ families:
     title: Non-Volatile Memory With Silicided Bit Line Contacts
     application_number: US15/006,288
     filing_date: '2016-01-26'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160211271A1
       google_patents: https://patents.google.com/patent/US20160211271A1/en
@@ -1854,7 +1854,7 @@ families:
     title: Non-Volatile Memory With Silicided Bit Line Contacts
     application_number: US15/489,695
     filing_date: '2017-04-17'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170250192A1
       google_patents: https://patents.google.com/patent/US20170250192A1/en
@@ -1867,7 +1867,7 @@ families:
     title: Non-Volatile Memory With Silicided Bit Line Contacts
     application_number: US13/753,676
     filing_date: '2013-01-30'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140209993A1
       google_patents: https://patents.google.com/patent/US20140209993A1/en
@@ -1920,7 +1920,7 @@ families:
     title: Non-Volatile Memory With Silicided Bit Line Contacts
     application_number: US14/501,536
     filing_date: '2014-09-30'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150017795A1
       google_patents: https://patents.google.com/patent/US20150017795A1/en
@@ -1960,7 +1960,7 @@ families:
   expiry:
     date: '2034-09-27'
     estimated: true
-    basis: 'the latest recorded or estimated term among all members belongs to US20180166452A1 (estimated upper bound: earliest
+    basis: 'the latest recorded or estimated term among all members belongs to JP2019204964A (estimated upper bound: earliest
       priority date + 21 years (12-month priority period + 20-year term)), running to 2034-09-27'
   expired: false
   members:
@@ -2057,7 +2057,7 @@ families:
     title: Integration of a memory transistor into high-k, metal gate cmos process flow
     application_number: US15/862,272
     filing_date: '2018-01-04'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180166452A1
       google_patents: https://patents.google.com/patent/US20180166452A1/en
@@ -2120,7 +2120,7 @@ families:
     title: Integration of a memory transistor into high-k, metal gate cmos process flow
     application_number: US15/459,230
     filing_date: '2017-03-15'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170278853A1
       google_patents: https://patents.google.com/patent/US20170278853A1/en
@@ -2376,7 +2376,7 @@ families:
     title: Method of fabricating a charge-trapping gate stack using a cmos process flow
     application_number: US14/675,037
     filing_date: '2015-03-31'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160005610A1
       google_patents: https://patents.google.com/patent/US20160005610A1/en
@@ -2389,7 +2389,7 @@ families:
     title: Method of fabricating a charge-trapping gate stack using a cmos process flow
     application_number: US15/335,209
     filing_date: '2016-10-26'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170084465A1
       google_patents: https://patents.google.com/patent/US20170084465A1/en
@@ -2555,7 +2555,7 @@ families:
     title: Method of Forming High-Voltage Transistor with Thin Gate Poly
     application_number: US15/848,327
     filing_date: '2017-12-20'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190027487A1
       google_patents: https://patents.google.com/patent/US20190027487A1/en
@@ -2588,7 +2588,7 @@ families:
     title: Method of Forming High-Voltage Transistor with Thin Gate Poly
     application_number: US17/323,819
     filing_date: '2021-05-18'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210296343A1
       google_patents: https://patents.google.com/patent/US20210296343A1/en
@@ -2641,7 +2641,7 @@ families:
     title: Method of Forming High-Voltage Transistor with Thin Gate Poly
     application_number: US18/214,072
     filing_date: '2023-06-26'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240008279A1
       google_patents: https://patents.google.com/patent/US20240008279A1/en
@@ -2804,7 +2804,7 @@ families:
     title: Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof
     application_number: US16/827,948
     filing_date: '2020-03-24'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210158868A1
       google_patents: https://patents.google.com/patent/US20210158868A1/en
@@ -2817,7 +2817,7 @@ families:
     title: Silicon-oxide-nitride-oxide-silicon multi-level non-volatile memory device and methods of fabrication thereof
     application_number: US16/827,924
     filing_date: '2020-03-24'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210159346A1
       google_patents: https://patents.google.com/patent/US20210159346A1/en
@@ -2840,7 +2840,7 @@ families:
     title: Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof
     application_number: US17/750,492
     filing_date: '2022-05-23'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220284951A1
       google_patents: https://patents.google.com/patent/US20220284951A1/en
@@ -2883,7 +2883,7 @@ families:
     title: Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof
     application_number: US17/330,179
     filing_date: '2021-05-25'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210350850A1
       google_patents: https://patents.google.com/patent/US20210350850A1/en
@@ -2896,7 +2896,7 @@ families:
     title: Silicon-oxide-nitride-oxide-silicon multi-level non-volatile memory device and methods of fabrication thereof
     application_number: US17/748,818
     filing_date: '2022-05-19'
-    status: Active
+    status: Granted
     links:
       espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220359006A1
       google_patents: https://patents.google.com/patent/US20220359006A1/en
