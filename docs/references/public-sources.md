@@ -1085,7 +1085,7 @@ Tier: deep dive.
 **PAT-03** — US 8,093,128 B2, *"Integration of non-volatile charge trap
 memory devices and logic CMOS devices"*, W. Koutny et al. (Cypress);
 filed 2008-05-22, granted 2012-01-10.
-<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8093128>. Order of the SONOS
+<https://patents.google.com/patent/US8093128B2/en>. Order of the SONOS
 module relative to the logic well/channel implants, gate oxidation at
 "800° C. and 900° C.", nitridation at "900-1100° C.", blocking oxide
 3.0–5.0 nm.
@@ -1096,7 +1096,7 @@ Also used on the TUNM, ONOM and LVOM mask pages.
 **PAT-04** — US 8,796,098 B1, *"Embedded SONOS based memory cells"*,
 K. Ramkumar, I. Kouznetsov, V. Prabhakar (Cypress); filed 2013-09-04,
 granted 2014-08-05.
-<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8796098>. Pad oxide 10–20 nm,
+<https://patents.google.com/patent/US8796098B1/en>. Pad oxide 10–20 nm,
 tunnel dielectric 1.0–4.0 nm, oxynitride charge-trapping layers
 2.0–5.0 nm, blocking oxide ~3–4.5 nm, HV gate oxide 5–7 nm, LV gate
 oxide 1–3 nm, indium channel doping.
@@ -2436,7 +2436,7 @@ Tier: deep dive.
 **PAT-VT-AMD** — US 6,238,982 B1, *"Multiple threshold voltage
 semiconductor device fabrication technology"*, Z. Krivokapic and
 O. Milic (AMD), granted 2001-05-29.
-<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6238982>. A laterally doped
+<https://patents.google.com/patent/US6238982B1/en>. A laterally doped
 channel (LDC) implant, made after gate formation with the gate pillars
 as a self-aligned mask, at "approximately 10-20 KeV for boron or 45-90
 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³ ions/cm²"; its
@@ -2501,7 +2501,7 @@ Also used on the DNM, NWM and PWBM mask pages.
 **PAT-DEMOS-TI** — US 6,660,603 B2, *"Higher voltage drain extended
 MOS transistors with self-aligned channel and drain extensions"*,
 J. C. Mitros (Texas Instruments), granted 2003-12-09.
-<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6660603>. Drain-extended
+<https://patents.google.com/patent/US6660603B2/en>. Drain-extended
 transistors "use a very lightly doped extension region adjacent to the
 drain that depletes at high drain voltages", formed from "the n-well
 region … as the lightly doped drain extension region"; boron "at doses
@@ -2527,7 +2527,7 @@ integration. Tier: deep dive.
 **PAT-STRIP-MOSEL** — US 5,811,358 A, *"Low temperature dry process
 for stripping photoresist after high dose ion implantation"*,
 M.-S. Tseng, F.-H. Chao and N.-Y. Tsai (Mosel Vitelic), granted
-1998-09-22. <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5811358>. The
+1998-09-22. <https://patents.google.com/patent/US5811358A/en>. The
 popping mechanism — volatile bulk resist that can "build up pressure
 beneath the implant-hardened surface layer" during a conventional
 "high temperature (>200° C.) dry ashing" — and a first stage "removed
@@ -2538,7 +2538,7 @@ Tier: deep dive.
 
 **PAT-STRIP-TSMC** — US 2004/0214448 A1, *"Method of ashing a
 photoresist"*, B.-W. Chan, Y.-H. Chiu and H.-J. Tao (TSMC), published
-2004-10-28. <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20040214448>.
+2004-10-28. <https://patents.google.com/patent/US20040214448A1/en>.
 After implantation "the top portion of the photoresist layer is
 transformed into a carbonized crust that is difficult to remove because
 of its low solubility in wet strippers".
@@ -2548,7 +2548,7 @@ Tier: deep dive.
 **PAT-STRIP-ULVAC** — US 5,795,831 A, *"Cold processes for cleaning
 and stripping photoresist from surfaces of semiconductor wafers"*,
 I. Nakayama et al. (ULVAC Technologies), granted 1998-08-18.
-<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5795831>. A cold stripping
+<https://patents.google.com/patent/US5795831A/en>. A cold stripping
 and cleaning process for implanted resist, an alternative to hot
 ashing.
 Also used on the downstream plasma asher page.
@@ -2562,7 +2562,7 @@ DMOS with an implanted drift region. Tier: deep dive.
 
 **PAT-RTP-AMAT** — US 5,155,336 A, *"Rapid thermal heating apparatus
 and method"*, C. M. Gronet and J. F. Gibbons (Applied Materials),
-granted 1992-10-13. <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5155336>.
+granted 1992-10-13. <https://patents.google.com/patent/US5155336A/en>.
 A lamp-heated single-wafer RTP chamber design.
 Also used on the rapid thermal processor page.
 Tier: deep dive.

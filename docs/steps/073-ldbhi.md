@@ -261,7 +261,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 [^pat-vt-amd]: Z. Krivokapic and O. Milic (AMD), *Multiple threshold
     voltage semiconductor device fabrication technology*, US 6,238,982
     B1, granted 2001-05-29.
-    <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6238982>
+    <https://patents.google.com/patent/US6238982B1/en>
 [^wiki-implant]: Wikipedia, *Ion implantation*.
     <https://en.wikipedia.org/wiki/Ion_implantation>
 [^wiki-bf3]: Wikipedia, *Boron trifluoride*.

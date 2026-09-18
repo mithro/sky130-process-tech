@@ -24,7 +24,7 @@ before being fixed or declined.
 | 065-L2 | Low | fixed | = 064-L1, same text/fix at 065-asti.md's shadowing-arithmetic bullet. |
 | 065-L3 | Low | fixed | Confirmed via Crossref that Nobili 1983 (10.1149/1.2119859) has no public abstract/paywalled text; marked the 2e20 threshold as a typical value on txt-01, kept Nobili for the precipitation mechanism. |
 | 065-L4 | Low | fixed | Confirmed axcelis-8250.txt is the Semiconductor Online 8250HT page (footnote already says so); SkyWater's own 8250 listing gives no energy range. Reworded to attribute the 3 keV floor to the 8250HT variant only. |
-| 066-L1 | Low | fixed | Fetched USPTO grant PDFs for US5795831, US6660603 and US5155336 (200 OK, verified valid PDFs) to add to the shared cache alongside the already-cached US6238982/US5811358/US20040214448/US8093128/US8796098; changed all eight patents.google.com footnote URLs (066,067,068,070,071,072,073,074,075) and their public-sources.md entries to image-ppubs.uspto.gov. |
+| 066-L1 | Low | declined | Coordinator correction: the fetch-etiquette note governs where agents fetch from, not what pages cite; readers are better served by Google Patents full-text links, which the rest of the site and the patent index use. Restored all eight patents.google.com URLs (066,067,068,070,071,072,073,074,075) and their public-sources.md entries; kept the three newly fetched USPTO grant PDFs in the shared cache (used to verify the patents this session) but did not cite them. |
 | 066-L2 | Low | fixed | Confirmed cache has no .mdm files for the W=0.42um L=20/25um geometries and the cited repository listing does not identify well configuration; dropped the unverifiable parenthesis rather than naming a file that isn't in the cache. |
 | 066-L3 | Low | fixed | Confirmed axcelis-8250.txt (the 8250HT page) says the 8250 platform serves "indium implants"; reworded so the claim is about SkyWater's published list, not the tool's capability. |
 | 067-L1 | Low | fixed | Confirmed wb-US5811358.txt 134 reads "(<220° C.)"; fixed the re-typeset instances on 067 and 070 (074 already had it right). |
@@ -32,10 +32,10 @@ before being fixed or declined.
 | 067-L3 | Low | fixed | Re-verified: Indeed URL still returns HTTP 403 (2026-09-18) to our own fetch; Wayback availability API and archive.ph show no snapshot (rate-limited/empty). Brought the footnote definitions on 067/070/074 in line with the inventory's existing 403 note; kept the quotation, which is a retrieved-and-dated public page per common rule 2. |
 | 068-L1 | Low | fixed | Confirmed pdk-background.txt 316 says only "developed by Cypress Semiconductor", no "S8" name. Removed the unsupported name attribution, kept the lineage claim on pdk-02. |
 | 069-L1 | Low | fixed | Confirmed Lee 1996 (Crossref) is titled "Thick photoresist outgassing during MeV implantation", the opposite resist thickness/energy regime from HVASTI's 0.3 um / tens-of-keV. Reworded as a scaling inference. |
-| 070-L1 | Low | fixed | = 067-L1, fixed together with the 066-L1/067-L1 patent-URL and typography commit. |
+| 070-L1 | Low | fixed | = 067-L1, quotation typography only (the citation-scheme part is declined; see 066-L1). |
 | 070-L2 | Low | fixed | Confirmed PDK gives the 0.02 um value with no explanation of consequence; marked the "damaged through" reading as an inference, matching 068's more careful treatment. |
 | 071-L1 | Low | fixed | Confirmed Table F2b (parsed) marks LDNTM on 9 rows including "NV SONOS Diode", matching masks/ldntm.md; added the missing row to 071's list. |
 | 071-L2 | Low | fixed | Confirmed pdk-device-details.txt 2749-2757 prints V_S as "-38"; added the reviewer's caveat noting the evident typo and our reading. |
 | 073-L1 | Low | fixed | Confirmed cyp-25.txt 48-55 is about SONOS cell scaling across nodes, explicitly mentioning 28nm; the indium recommendation belongs to that advanced-node discussion. Reworded both mentions. |
-| 073-L2 | Low | fixed | = 066-L1; already fixed with the 066-M1/066-L1 patent-URL commit. |
+| 073-L2 | Low | declined | = 066-L1 (declined; see above). |
 | 075-L1 | Low | fixed | Confirmed categories/anneal.md attaches stolk-1997 only to the TED statement and the 1000-1100C figure, not the "hot and fast" clause. Split the citations on 075 to match, using gibbons-1972/nobili-1983 (already on the page) for the solubility/precipitation clause. |
