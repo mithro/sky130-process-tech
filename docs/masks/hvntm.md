@@ -55,7 +55,7 @@ The PDK's mask generation table, Table F2b, marks the `HVNTM` column `C`
 the HV varactor, the 5/10.5 V NMOS, the 5 V and 3 V native NMOS, the
 16 V drain-extended NMOS, the HV, RF ESD HV, RF ESD deep-N-well and
 native n-type diodes, and the HV and HV native ESD NMOS.[^pdk-06] It marks
-`-`, "Layer not created for the device", in 46 rows, among them every
+`-`, "Layer not created for the device", in 68 rows, among them every
 1.8 V row, the SONOS and flash pass-gate rows, the 5/10.5 V and 16 V
 PMOS and the five UHV 5/20 V drain-extended rows.[^pdk-06] On our reading
 the created shapes follow the n-type devices on thick oxide up to the
