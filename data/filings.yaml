@@ -980,6 +980,55 @@ filings:
     (2025-05-08) of SkyWater's EDGAR company filing list.
   verified: 2026-09-14 Wayback capture 20230805173604 of the EDGAR document fetched; quotes checked
 
+- id: infineon-annual-report-fy2021
+  company: Infineon Technologies AG
+  company_key: infineon
+  form: Annual Report
+  document_type: annual-report
+  parent: null
+  title: Infineon Technologies Annual Report 2021
+  period:
+    label: fiscal year 2021 (1 October 2020 to 30 September 2021)
+    start: 2020-10-01
+    end: 2021-09-30
+  filed: 2021-11-25
+  jurisdiction: DE
+  regulator: BaFin
+  identifier: null
+  urls:
+    original: https://www.infineon.com/dgdl/Infineon+Annual+Report+2021.pdf?fileId=8ac78c8b7d507352017d622b5bfb0161
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Infineon's second annual report after closing the Cypress acquisition.
+      The CEO's letter says the integration of Cypress increased Infineon's
+      system-solutions expertise, and the management report attributes part
+      of the year's revenue shortfall to a winter storm at the Austin, Texas
+      site (the former Cypress fab, later sold to SkyWater as Fab 25).
+    quotes:
+    - text: >-
+        With Cypress, we have significantly increased our expertise in system
+        solutions, especially with regard to the IoT.
+      location: Introductory section
+    - text: the aftermath of the winter storm in Austin (Texas, USA) held down revenue growth
+      location: Combined management report
+  auditor_report: null
+  relationships:
+  - infineon-cypress-acquisition
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report continues Infineon's account of integrating Cypress, including the Austin site later sold to SkyWater.
+  inventory_key: null
+  discovery:
+  - web-search
+  discovery_note: Found by a web search for the Infineon-hosted PDF and fetched directly; the investor-relations annual-reports listing page itself returned 404 when fetched.
+  verified: 2026-09-18 Infineon-hosted PDF fetched; quotes checked
+  notes: >-
+    filed gives the latest signature date printed in the report (Neubiberg,
+    25 November 2021); the publication date was not retrieved.
+
 - id: skywater-10-k-2022-03-10
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -1196,6 +1245,54 @@ filings:
     Listed in the Wayback capture (2025-05-08) of SkyWater's EDGAR company
     filing list; document found through a CDX listing of its folder.
   verified: 2026-09-14 Wayback capture 20250403124257 of the EDGAR document fetched; quotes checked
+
+- id: infineon-annual-report-fy2022
+  company: Infineon Technologies AG
+  company_key: infineon
+  form: Annual Report
+  document_type: annual-report
+  parent: null
+  title: Infineon Technologies Annual Report 2022
+  period:
+    label: fiscal year 2022 (1 October 2021 to 30 September 2022)
+    start: 2021-10-01
+    end: 2022-09-30
+  filed: 2022-11-25
+  jurisdiction: DE
+  regulator: BaFin
+  identifier: null
+  urls:
+    original: https://www.infineon.com/assets/row/public/documents/corporate/investors/annual-reports/2022/infineon-annual-report-report-v12-00-en.pdf
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Infineon's annual report crediting outgoing Chief Marketing Officer
+      Helmut Gassel's contribution to the acquisition and integration of
+      Cypress, and recording that Austin, Texas manufacturing (the former
+      Cypress fab) moved to renewable electricity during the year.
+    quotes:
+    - text: >-
+        he made a decisive contribution to the successful acquisition and
+        integration of Cypress and accelerated the digitalization of sales
+        and marketing
+      location: Introductory section
+  auditor_report: null
+  relationships:
+  - infineon-cypress-acquisition
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report continues Infineon's account of integrating Cypress, including the Austin site later sold to SkyWater.
+  inventory_key: null
+  discovery:
+  - web-search
+  discovery_note: Found by a web search for the Infineon-hosted PDF and fetched directly.
+  verified: 2026-09-18 Infineon-hosted PDF fetched; quote checked
+  notes: >-
+    filed gives the latest signature date printed in the report (Neubiberg,
+    25 November 2022; an earlier statement in the same report is dated 21
+    November 2022); the publication date was not retrieved.
 
 - id: d-wave-8-k-2023-03-03
   company: D-Wave Quantum Inc.
@@ -1502,6 +1599,55 @@ filings:
   discovery_note: Weebit Nano website ASX announcements archive (post 14125, dated 2023-08-25), retrieved 2026-09-14.
   verified: 2026-09-14 Weebit Nano investor PDF fetched; quotes checked
 
+- id: infineon-annual-report-fy2023
+  company: Infineon Technologies AG
+  company_key: infineon
+  form: Annual Report
+  document_type: annual-report
+  parent: null
+  title: Infineon Technologies Annual Report 2023
+  period:
+    label: fiscal year 2023 (1 October 2022 to 30 September 2023)
+    start: 2022-10-01
+    end: 2023-09-30
+  filed: 2023-11-23
+  jurisdiction: DE
+  regulator: BaFin
+  identifier: null
+  urls:
+    original: https://www.infineon.com/assets/row/public/documents/corporate/investors/annual-reports/2023/2023-infineon-annual-report-v01-00-en.pdf
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Infineon's annual report lists the Cypress acquisition, alongside
+      Industrial Analytics and Imagimob, among the strategic acquisitions
+      behind its software ecosystem, and records a PFC-abatement project
+      launched during the year at the Austin, Texas site (the former Cypress
+      fab).
+    quotes:
+    - text: >-
+        through our own organic growth and strategic partnerships, as well as
+        through the acquisitions of Cypress, Industrial Analytics and
+        Imagimob
+      location: Combined management report, Group strategy
+  auditor_report: null
+  relationships:
+  - infineon-cypress-acquisition
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report continues Infineon's account of integrating Cypress, including the Austin site later sold to SkyWater.
+  inventory_key: null
+  discovery:
+  - web-search
+  discovery_note: Found by a web search for the Infineon-hosted PDF and fetched directly.
+  verified: 2026-09-18 Infineon-hosted PDF fetched; quote checked
+  notes: >-
+    filed gives the latest signature date printed in the report (Neubiberg,
+    23 November 2023; an earlier statement in the same report is dated 21
+    November 2023); the publication date was not retrieved.
+
 - id: skywater-10-k-2024-03-15
   company: SkyWater Technology, Inc.
   company_key: skywater
@@ -1662,6 +1808,55 @@ filings:
   - ir-archive
   discovery_note: Weebit Nano website ASX announcements archive (post 15303, dated 2024-08-28), retrieved 2026-09-14.
   verified: 2026-09-14 Weebit Nano investor PDF fetched; quotes checked
+
+- id: infineon-annual-report-fy2024
+  company: Infineon Technologies AG
+  company_key: infineon
+  form: Annual Report
+  document_type: annual-report
+  parent: null
+  title: Infineon Technologies Annual Report 2024
+  period:
+    label: fiscal year 2024 (1 October 2023 to 30 September 2024)
+    start: 2023-10-01
+    end: 2024-09-30
+  filed: 2024-11-26
+  jurisdiction: DE
+  regulator: BaFin
+  identifier: null
+  urls:
+    original: https://www.infineon.com/dgdl/Infineon+Annual+Report+2024.pdf?fileId=8ac78c8b92bced620193694bfb970095
+    wayback: null
+    ir: null
+  about:
+    summary: >-
+      Infineon's last annual report before agreeing to sell its Austin,
+      Texas fab (the former Cypress fab) to SkyWater. It repeats, in the
+      same wording as the 2023 report, that the Cypress acquisition
+      contributed to its software ecosystem, and lists Austin among its
+      manufacturing sites.
+    quotes:
+    - text: >-
+        through our own organic growth and strategic partnerships, as well as
+        through the acquisitions of Cypress, Industrial Analytics and
+        Imagimob
+      location: Combined management report, Group strategy
+  auditor_report: null
+  relationships:
+  - infineon-cypress-acquisition
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The report is Infineon's last annual account of the Austin site before agreeing, in 2025, to sell it to SkyWater.
+  inventory_key: null
+  discovery:
+  - web-search
+  discovery_note: Found by a web search for the Infineon-hosted PDF and fetched directly.
+  verified: 2026-09-18 Infineon-hosted PDF fetched; quote checked
+  notes: >-
+    filed gives the latest signature date printed in the report (Neubiberg,
+    26 November 2024; an earlier statement in the same report is dated 21
+    November 2024); the publication date was not retrieved.
 
 - id: skywater-8-k-2025-02-26
   company: SkyWater Technology, Inc.

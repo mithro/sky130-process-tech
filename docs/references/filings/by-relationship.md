@@ -141,6 +141,10 @@ No filings yet.
 * Infineon Technologies AG, Annual Report, filed 2019-11-22: Infineon Technologies Annual Report 2019 ({ref}`full entry <filing-infineon-annual-report-fy2019>`)
 * Cypress Semiconductor Corporation, 8-K, filed 2020-04-16: Current report: completion of the merger with IFX Merger Sub (Infineon) ({ref}`full entry <filing-cypress-8-k-2020-04-16>`)
 * Infineon Technologies AG, Annual Report, filed 2020-11-20: Infineon Technologies Annual Report 2020 ({ref}`full entry <filing-infineon-annual-report-fy2020>`)
+* Infineon Technologies AG, Annual Report, filed 2021-11-25: Infineon Technologies Annual Report 2021 ({ref}`full entry <filing-infineon-annual-report-fy2021>`)
+* Infineon Technologies AG, Annual Report, filed 2022-11-25: Infineon Technologies Annual Report 2022 ({ref}`full entry <filing-infineon-annual-report-fy2022>`)
+* Infineon Technologies AG, Annual Report, filed 2023-11-23: Infineon Technologies Annual Report 2023 ({ref}`full entry <filing-infineon-annual-report-fy2023>`)
+* Infineon Technologies AG, Annual Report, filed 2024-11-26: Infineon Technologies Annual Report 2024 ({ref}`full entry <filing-infineon-annual-report-fy2024>`)
 
 (filings-rel-infineon-fab25-sale)=
 ### SkyWater's purchase of Infineon's Austin fab (Fab 25)

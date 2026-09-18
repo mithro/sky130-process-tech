@@ -15,7 +15,7 @@ name SkyWater or the Cypress fab. It complements the
 the inventory only when a page cites it. See
 `docs/plans/filings-index-design.md` for the inclusion rules.
 
-The index holds 44 filings.
+The index holds 48 filings.
 
 ## Other views
 
@@ -64,11 +64,11 @@ canonical citation but was not itself fetched by this project.
 
 ## Counts
 
-By company: Cypress Semiconductor Corporation (10), Infineon Technologies AG (3), SkyWater Technology, Inc. (21), D-Wave Quantum Inc. (4), Weebit Nano Limited (3), IonQ, Inc. (3).
+By company: Cypress Semiconductor Corporation (10), Infineon Technologies AG (7), SkyWater Technology, Inc. (21), D-Wave Quantum Inc. (4), Weebit Nano Limited (3), IonQ, Inc. (3).
 
-By type: Annual reports (21), Quarterly and half-year reports (2), Current reports and exhibits (11), Registration statements and prospectuses (7), Proxy statements (2), Announcements and deregistrations (1).
+By type: Annual reports (25), Quarterly and half-year reports (2), Current reports and exhibits (11), Registration statements and prospectuses (7), Proxy statements (2), Announcements and deregistrations (1).
 
-By year: 2004 (1), 2005 (1), 2007 (1), 2008 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (4), 2022 (4), 2023 (6), 2024 (3), 2025 (6), 2026 (8).
+By year: 2004 (1), 2005 (1), 2007 (1), 2008 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (5), 2022 (5), 2023 (7), 2024 (4), 2025 (6), 2026 (8).
 
 ## All filings
 
@@ -213,6 +213,14 @@ Sorted by filing date, then id.
   Inventory: SEC-01.
   Related pages: {ref}`materials-index` — The materials index cites the S-1 family, including the final prospectus, as SEC-01..
 
+(filing-infineon-annual-report-fy2021)=
+* **Infineon Technologies AG — Infineon Technologies Annual Report 2021** (filed 2021-11-25).
+  [Original](https://www.infineon.com/dgdl/Infineon+Annual+Report+2021.pdf?fileId=8ac78c8b7d507352017d622b5bfb0161).
+  Infineon's second annual report after closing the Cypress acquisition. The CEO's letter says the integration of Cypress increased Infineon's system-solutions expertise, and the management report attributes part of the year's revenue shortfall to a winter storm at the Austin, Texas site (the former Cypress fab, later sold to SkyWater as Fab 25). "With Cypress, we have significantly increased our expertise in system solutions, especially with regard to the IoT." (Introductory section); "the aftermath of the winter storm in Austin (Texas, USA) held down revenue growth" (Combined management report)
+  Relationships: {ref}`Infineon's acquisition of Cypress (2019-2020) <filings-rel-infineon-cypress-acquisition>`.
+  Related pages: {ref}`overview-index` — The report continues Infineon's account of integrating Cypress, including the Austin site later sold to SkyWater..
+  Note: filed gives the latest signature date printed in the report (Neubiberg, 25 November 2021); the publication date was not retrieved.
+
 (filing-skywater-10-k-2022-03-10)=
 * **SkyWater Technology, Inc. — Annual report on Form 10-K for the fiscal year ended 2022-01-02** (filed 2022-03-10; SEC accession 0001819974-22-000013).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997422000013/skyt-20220102.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/16ff78f5-a540-4c2e-9a6b-f9b923443e02.pdf).
@@ -241,6 +249,14 @@ Sorted by filing date, then id.
   SkyWater's first proxy statement. Its related-party section describes the management fee agreement with Oxbow entered into at the 2017 divestiture from Cypress, and the 2020 sale of the Bloomington office and manufacturing facility (2401 and 2411 East 86th Street) to Oxbow Realty Partners for \$39 million. "In connection with our divestiture from Cypress Semiconductor Corporation on March 1, 2017, our wholly-owned subsidiary, SkyWater Technology Foundry, entered into a management fee agreement with Oxbow" (Certain Relationships and Related Party Transactions); "we sold our property, consisting of our office and manufacturing facility, located at 2401 and 2411 East 86th Street, in Bloomington, Minnesota, to Oxbow Realty for a purchase price of \$39 million" (Certain Relationships and Related Party Transactions)
   Relationships: {ref}`Oxbow ownership, management fees and property transactions <filings-rel-oxbow-related-party>` · {ref}`sale of the Minnesota fab subsidiary to SkyWater's owners (2017) <filings-rel-cypress-fab-sale>`.
   Related pages: {ref}`overview-index` — The overview's account of the fab's ownership is complemented by the proxy's description of the 2020 sale-leaseback of the Bloomington site..
+
+(filing-infineon-annual-report-fy2022)=
+* **Infineon Technologies AG — Infineon Technologies Annual Report 2022** (filed 2022-11-25).
+  [Original](https://www.infineon.com/assets/row/public/documents/corporate/investors/annual-reports/2022/infineon-annual-report-report-v12-00-en.pdf).
+  Infineon's annual report crediting outgoing Chief Marketing Officer Helmut Gassel's contribution to the acquisition and integration of Cypress, and recording that Austin, Texas manufacturing (the former Cypress fab) moved to renewable electricity during the year. "he made a decisive contribution to the successful acquisition and integration of Cypress and accelerated the digitalization of sales and marketing" (Introductory section)
+  Relationships: {ref}`Infineon's acquisition of Cypress (2019-2020) <filings-rel-infineon-cypress-acquisition>`.
+  Related pages: {ref}`overview-index` — The report continues Infineon's account of integrating Cypress, including the Austin site later sold to SkyWater..
+  Note: filed gives the latest signature date printed in the report (Neubiberg, 25 November 2022; an earlier statement in the same report is dated 21 November 2022); the publication date was not retrieved.
 
 (filing-d-wave-8-k-2023-03-03)=
 * **D-Wave Quantum Inc. — Current report: Thirteenth Amendment to the Agreement for Semiconductor Line Operation with SkyWater Technology Foundry** (filed 2023-03-03; investor-relations filing 16461334; SEC accession not retrieved).
@@ -285,6 +301,14 @@ Sorted by filing date, then id.
   Relationships: {ref}`a technology partner's filing names SkyWater <filings-rel-partner-names-skywater>`.
   Related pages: {ref}`overview-sky130b-reram` — The report describes the commercial status of the ReRAM IP offered in SkyWater's S130 process..
 
+(filing-infineon-annual-report-fy2023)=
+* **Infineon Technologies AG — Infineon Technologies Annual Report 2023** (filed 2023-11-23).
+  [Original](https://www.infineon.com/assets/row/public/documents/corporate/investors/annual-reports/2023/2023-infineon-annual-report-v01-00-en.pdf).
+  Infineon's annual report lists the Cypress acquisition, alongside Industrial Analytics and Imagimob, among the strategic acquisitions behind its software ecosystem, and records a PFC-abatement project launched during the year at the Austin, Texas site (the former Cypress fab). "through our own organic growth and strategic partnerships, as well as through the acquisitions of Cypress, Industrial Analytics and Imagimob" (Combined management report, Group strategy)
+  Relationships: {ref}`Infineon's acquisition of Cypress (2019-2020) <filings-rel-infineon-cypress-acquisition>`.
+  Related pages: {ref}`overview-index` — The report continues Infineon's account of integrating Cypress, including the Austin site later sold to SkyWater..
+  Note: filed gives the latest signature date printed in the report (Neubiberg, 23 November 2023; an earlier statement in the same report is dated 21 November 2023); the publication date was not retrieved.
+
 (filing-skywater-10-k-2024-03-15)=
 * **SkyWater Technology, Inc. — Annual report on Form 10-K for the fiscal year ended 2023-12-31** (filed 2024-03-15; SEC accession 0001819974-24-000008).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm) · [Wayback copy](https://web.archive.org/web/20240323004216/https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/0a08518f-8844-432d-b3dd-6a066589bb98.pdf).
@@ -307,6 +331,14 @@ Sorted by filing date, then id.
   Weebit Nano's FY2024 annual report lists qualification at 125 °C in SkyWater S130 among its highlights and says missing IP in SkyWater's foundry offering delayed licensing agreements with companies wanting to manufacture at SkyWater. "Factors beyond our control, such as missing IPs in SkyWater's foundry offering, have delayed licensing agreements with product companies wanting to manufacture at SkyWater" (Introductory section); "Weebit ReRAM qualified 125⁰C in SkyWater S130" (Highlights)
   Relationships: {ref}`a technology partner's filing names SkyWater <filings-rel-partner-names-skywater>`.
   Related pages: {ref}`overview-sky130b-reram` — The report gives the partner's view of adoption of the ReRAM IP in SkyWater's S130 process..
+
+(filing-infineon-annual-report-fy2024)=
+* **Infineon Technologies AG — Infineon Technologies Annual Report 2024** (filed 2024-11-26).
+  [Original](https://www.infineon.com/dgdl/Infineon+Annual+Report+2024.pdf?fileId=8ac78c8b92bced620193694bfb970095).
+  Infineon's last annual report before agreeing to sell its Austin, Texas fab (the former Cypress fab) to SkyWater. It repeats, in the same wording as the 2023 report, that the Cypress acquisition contributed to its software ecosystem, and lists Austin among its manufacturing sites. "through our own organic growth and strategic partnerships, as well as through the acquisitions of Cypress, Industrial Analytics and Imagimob" (Combined management report, Group strategy)
+  Relationships: {ref}`Infineon's acquisition of Cypress (2019-2020) <filings-rel-infineon-cypress-acquisition>`.
+  Related pages: {ref}`overview-index` — The report is Infineon's last annual account of the Austin site before agreeing, in 2025, to sell it to SkyWater..
+  Note: filed gives the latest signature date printed in the report (Neubiberg, 26 November 2024; an earlier statement in the same report is dated 21 November 2024); the publication date was not retrieved.
 
 (filing-skywater-8-k-2025-02-26)=
 * **SkyWater Technology, Inc. — Current report, item 1.01: Membership Interest Purchase Agreement for Infineon's Austin fab** (filed 2025-02-26; SEC accession 0001819974-25-000007).
