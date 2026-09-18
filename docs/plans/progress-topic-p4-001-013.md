@@ -49,9 +49,9 @@ Status values: open / fixed / declined.
 | 006-L1 | 006-stie | fixed | folded into the 006-H1 rewrite (ITRS "node on node" sentence dropped, Thung's 66% figure used instead) |
 | 006-L2 | 006-stie | open | HDP-void quote clipped/one step removed |
 | 006-L3 | 006-stie, 009-dnis | fixed | quoted SkyWater's own spellings ("Gasonic PEP", "Mattson Aspen2") in both places; same commit as 009-L1 |
-| 007-L1 | 007-dnm | open | resist thickness: use patent number not book |
+| 007-L1 | 007-dnm | fixed | patents.google.com bot-blocked this session (503); both independent reviews quote the same specific number from a patent already cited two paragraphs earlier on this page, applied as given |
 | 007-L2 | 007-dnm | fixed | reworded to point at STIE instead of restating a number, as part of the 006-H1 commit |
-| 007-L3 | 007-dnm | open | "deliberate trade" overstated |
+| 007-L3 | 007-dnm | fixed | dropped "deliberate", added the inherited-flow alternative |
 | 008-L1 | 008-dni | fixed | verified by fetch: prnewswire release is about GSD Ovation (2021), "3 MeV" belongs to GSD/HE Ovation specifically; reworded |
 | 008-L2 | 008-dni | fixed | verified by fetch: IEEE Xplore abstract gives non-monotonic Vt-vs-dose with a peak near 1e14, not a simple "keeps dose modest" story; reworded |
 | 008-L3 | 008-dni | fixed | added citations already on the page |
