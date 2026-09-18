@@ -103,7 +103,7 @@ first, and then by status.
 * {ref}`US 6,136,654 A <patent-gp27361220>` — Method of forming thin silicon nitride or silicon oxynitride gate dielectrics (1996-06-07)
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
-* {ref}`US 6,707,112 B2 <patent-gp24694701>` — MOS transistor with ramped gate oxide thickness (1996-06-27)
+* {ref}`US 6,707,112 B2 <patent-gp24694701>` — unknown
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
 * {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
 * {ref}`US 6,033,943 A <patent-gp24820519>` — Dual gate oxide thickness integrated circuit and process for making same (1996-08-23)
@@ -369,7 +369,6 @@ first, and then by status.
 * {ref}`US 6,136,654 A <patent-gp27361220>` — Method of forming thin silicon nitride or silicon oxynitride gate dielectrics (1996-06-07)
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
-* {ref}`US 6,707,112 B2 <patent-gp24694701>` — MOS transistor with ramped gate oxide thickness (1996-06-27)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
 * {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
 * {ref}`US 6,033,943 A <patent-gp24820519>` — Dual gate oxide thickness integrated circuit and process for making same (1996-08-23)
@@ -519,6 +518,7 @@ first, and then by status.
 
 ### Status unknown
 
+* {ref}`US 6,707,112 B2 <patent-gp24694701>` — unknown
 * {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
 * {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
 * {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown

@@ -12793,10 +12793,12 @@ families:
   expiry:
     date: '2022-06-04'
     estimated: true
-    basis: the only recorded member, US6707112B2, has priority before 1999-05-29 (no US term adjustment possible) and is
-      bounded by its own filing date + 20 years or the family's earliest priority date + 21 years, whichever is later (no
-      legal-status data; PPUBS was not able to report a maintenance-fee lapse), running to 2022-06-04, already past
-  expired: true
+    basis: the only recorded member, US6707112B2, has priority before 1999-05-29 but was itself filed 2002-06-04, on or
+      after the 2000-05-29 AIPA cut-in for US patent term adjustment (PTA) under 35 U.S.C. 154(b) -- a late continuation
+      off an old priority can still earn PTA, which PPUBS does not report -- so per the design's PPUBS-fallback rule this
+      is not treated as proof of expiry; bounded by its own filing date + 20 years or the family's earliest priority date
+      + 21 years, whichever is later, running to 2022-06-04, but not certainly ended
+  expired: unknown
   members:
   - number: US6707112B2
     country: US
@@ -12824,6 +12826,15 @@ families:
     for the exact query text), title field restricted to process-module keywords, retrieved 2026-09-19; found while Google
     Patents remained unreachable (patent-index-design.md's "PPUBS fallback").
   notes:
+  - 'Round-4 (r2) verification finding N3: this family was originally marked expired: true because its priority
+    (1996-06-27) is before the 1999-05-29 cut-off the design uses elsewhere, but that cut-off only bounds the
+    *priority* date, not a later continuation''s own filing -- and this representative was itself filed 2002-06-04,
+    after the 2000-05-29 AIPA cut-in for US patent term adjustment (PTA). Independent USPTO grant-front-page evidence
+    (round-4 r2 review) shows this particular patent''s printed PTA was 0 days, so it is very likely genuinely expired
+    -- but PPUBS itself does not report PTA, and this dataset does not otherwise have that printed figure, so
+    `tools/check_patents.py` now refuses `expired: true` for any PPUBS-sourced family with a member filed on or after
+    2000-05-29, by construction, rather than relying on this specific case happening to be safe. Corrected to
+    `expired: unknown` (collapsed).'
   - Built from USPTO Patent Public Search, not Google Patents (unreachable this round; tmp/patent-cache/.blocked). Only
     the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other
     US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status

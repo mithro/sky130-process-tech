@@ -275,7 +275,7 @@ count of every member publication in that jurisdiction.
 | US 2004/0005752 A1 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Granted |
 | US 6,677,213 B1 | {ref}`US 6,677,213 B1 <patent-gp29778448>` | Expired - Lifetime |
 | US 2004/0033769 A1 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Granted |
-| US 6,707,112 B2 | {ref}`US 6,707,112 B2 <patent-gp24694701>` | not shown |
+| US 6,707,112 B2 | {ref}`US 6,707,112 B2 <patent-gp24694701>` | unknown |
 | US 6,709,928 B1 | {ref}`US 6,818,558 B1 <patent-gp31979047>` | Expired - Lifetime |
 | US 2004/0058512 A1 | {ref}`US 6,803,297 B2 <patent-gp31992738>` | Granted |
 | US 6,717,193 B2 | {ref}`US 6,717,193 B2 <patent-gp25521092>` | Expired - Lifetime |

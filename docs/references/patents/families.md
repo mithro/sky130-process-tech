@@ -3351,8 +3351,8 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5760409A/en
 
-(patent-gp24694701)=
-## US 6,707,112 B2 — MOS transistor with ramped gate oxide thickness
+:::{dropdown} US 6,707,112 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-06-04
+:name: patent-gp24694701
 
 **Title:** MOS transistor with ramped gate oxide thickness
 
@@ -3364,7 +3364,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6707112B2; not independently determined (Google Patents unreachable))
 
-**Estimated expiry:** 2022-06-04 — the only recorded member, US6707112B2, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years or the family's earliest priority date + 21 years, whichever is later (no legal-status data; PPUBS was not able to report a maintenance-fee lapse), running to 2022-06-04, already past
+**Estimated expiry:** 2022-06-04 — the only recorded member, US6707112B2, has priority before 1999-05-29 but was itself filed 2002-06-04, on or after the 2000-05-29 AIPA cut-in for US patent term adjustment (PTA) under 35 U.S.C. 154(b) -- a late continuation off an old priority can still earn PTA, which PPUBS does not report -- so per the design's PPUBS-fallback rule this is not treated as proof of expiry; bounded by its own filing date + 20 years or the family's earliest priority date + 21 years, whichever is later, running to 2022-06-04, but not certainly ended
 
 **Family ID:** `24694701` (USPTO Patent Public Search familyIdentifierCur (Google Patents unreachable))
 
@@ -3381,9 +3381,11 @@ families and members are counted.
 **Discovery:** assignee-search — USPTO Patent Public Search, assignee "cypress"-restricted query (see docs/plans/patent-discovery-log.md for the exact query text), title field restricted to process-module keywords, retrieved 2026-09-19; found while Google Patents remained unreachable (patent-index-design.md's "PPUBS fallback").
 
 **Notes:**
+* Round-4 (r2) verification finding N3: this family was originally marked expired: true because its priority (1996-06-27) is before the 1999-05-29 cut-off the design uses elsewhere, but that cut-off only bounds the \*priority\* date, not a later continuation's own filing -- and this representative was itself filed 2002-06-04, after the 2000-05-29 AIPA cut-in for US patent term adjustment (PTA). Independent USPTO grant-front-page evidence (round-4 r2 review) shows this particular patent's printed PTA was 0 days, so it is very likely genuinely expired -- but PPUBS itself does not report PTA, and this dataset does not otherwise have that printed figure, so \`tools/check\_patents.py\` now refuses \`expired: true\` for any PPUBS-sourced family with a member filed on or after 2000-05-29, by construction, rather than relying on this specific case happening to be safe. Corrected to \`expired: unknown\` (collapsed).
 * Built from USPTO Patent Public Search, not Google Patents (unreachable this round; tmp/patent-cache/.blocked). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound (earliest priority + 21 years, or this member's own filing date + 20 years for a granted patent), never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats the same company's name, normalised (round-4 N1) to the spelling already used elsewhere in this index where PPUBS's own spelling differs only by trailing punctuation or letter case (e.g. "Corporation" vs "Corp", "Ltd." vs "Ltd"); no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field ("Last; First et al." for a multi-inventor patent), not the full named list Google Patents shows.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US6707112B2 (Google Patents unreachable)
+:::
 
 (patent-gp24741421)=
 ## US 5,707,498 A — Avoiding contamination from induction coil in ionized sputtering
