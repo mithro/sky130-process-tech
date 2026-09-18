@@ -6994,8 +6994,8 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7449416B2/en
 
-(patent-gp48952138)=
-## US 8,513,753 B1 — Photodiode having a buried well region
+:::{dropdown} US 8,513,753 B1 — legal status shown as Expired - Fee Related; expiry not fully bounded from the records retrieved, estimated no later than 2027-01-30
+:name: patent-gp48952138
 
 **Title:** Photodiode having a buried well region
 
@@ -7007,7 +7007,7 @@ families and members are counted.
 
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US8513753B1, retrieved 2026-09-19)
 
-**Estimated expiry:** 2027-01-30 — all 1 members are shown as expired, lapsed, abandoned or ceased, or are past their estimated term; the latest estimate is that of US8513753B1 (status shown: Expired - Fee Related; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment))
+**Estimated expiry:** 2027-01-30 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US8513753B1 (status shown: Expired - Fee Related; own recorded expiry date not yet passed, and the 37 CFR 1.378(b) unintentional-delay petition window from its fee\_lapse\_date 2025-09-22 has not closed, so it is not certainly ended), running to 2027-01-30
 
 **Google Patents family ID:** `48952138` (family section of the representative's own record page, linked below)
 
@@ -7024,9 +7024,10 @@ families and members are counted.
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (buried well), retrieved 2026-09-19; named by the round-1 review.
 
 **Notes:**
-* Round-3 verification finding M1: this family is marked expired solely on a maintenance-fee lapse, not on its own adjusted-expiration date (2027-01-30, in the future). US8513753B1's own cached Google Patents legal events (fetched 2026-09-19) show: maintenance-fee reminder 2025-04-07 (37 CFR 1.362, large entity), lapse for non-payment 2025-09-22 (event code LAPS, "PATENT EXPIRED FOR FAILURE TO PAY MAINTENANCE FEES"), and patent discontinuation the same day (event code STCH, citing 37 CFR 1.362). As with GP50930700 (round-1 finding M4), a US patent lapsed for fees can be reinstated within an unintentional-delay petition window (37 CFR 1.378(a)/(c)); two years from the 2025-09-22 lapse puts that window open until about 2027-09-22 — still open as of this note's date, and unlike GP50930700 the window has not yet closed. Kept \`expired: true\` per the design's status rule (a legal\_status of 'Expired - Fee Related' marks a member ended whatever the date), but this family is the stronger case for treating the status as provisional; see the legal caveat on the landing page.
+* Round-3 verification finding M1, resolved per the coordinator's round-4 decision: this family is marked expired solely on a maintenance-fee lapse, not on its own adjusted-expiration date (2027-01-30, in the future). US8513753B1's own cached Google Patents legal events (fetched 2026-09-19) show: maintenance-fee reminder 2025-04-07 (37 CFR 1.362, large entity), lapse for non-payment 2025-09-22 (event code LAPS, "PATENT EXPIRED FOR FAILURE TO PAY MAINTENANCE FEES", recorded as fee\_lapse\_date), and patent discontinuation the same day (event code STCH, citing 37 CFR 1.362). A US patent lapsed for fees can be reinstated within an unintentional-delay petition window (37 CFR 1.378(b)); two years from the 2025-09-22 lapse puts that window open until about 2027-09-22 — still open today, unlike GP50930700's (closed 2025-08-14). The coordinator's decision (2026-09-19): a fee lapse whose reinstatement window is still open is not certainly expired, so this family is \`expired: unknown\` (collapsed) rather than \`true\` until the window closes or its own recorded expiry date (2027-01-30) passes anyway; \`tools/check\_patents.py\` now enforces this generally (a member \`Expired - Fee Related\` with a future recorded expiry needs a closed-window \`fee\_lapse\_date\` to count as ended). See the legal caveat on the landing page.
 
 **Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US8513753B1/en
+:::
 
 :::{dropdown} US 7,705,268 B2 — shown as in force; estimated expiry 2026-12-17
 :name: patent-gp36337293
@@ -8606,7 +8607,7 @@ families and members are counted.
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RRAM-INTERMOLECULAR.
 
 **Notes:**
-* Round-1 review finding M4: US9076523B2 is marked expired solely on a maintenance-fee lapse, not on its adjusted-expiration date (2033-07-18). The independent review reports US9076523B2's own Google Patents legal events (https://patents.google.com/patent/US9076523B2/en) as: maintenance-fee reminder 2023-02-27, lapse for non-payment 2023-08-14 (37 CFR 1.362), and the unintentional-delay petition window for reinstatement (37 CFR 1.378) closed 2025-08-14 with no petition on record. This dataset could not independently re-fetch that page (Google Patents, Espacenet, WIPO Patentscope and the USPTO PatentsView/PED/assignment APIs were all unreachable from this environment when this note was added); the reported dates are recorded here, not independently re-verified, so a future refresh should confirm them directly. If accurate, this family's reinstatement window has already closed before this note's date. A US patent lapsed for fees can be reinstated within such a window; see the legal caveat on the landing page.
+* Round-1 review finding M4, re-checked per the coordinator's round-4 decision: US9076523B2 is marked expired on a maintenance-fee lapse, not on its adjusted-expiration date (2033-07-18, in the future). The independent review reports US9076523B2's own Google Patents legal events (https://patents.google.com/patent/US9076523B2/en) as: maintenance-fee reminder 2023-02-27, lapse for non-payment 2023-08-14 (37 CFR 1.362, recorded as fee\_lapse\_date), and the unintentional-delay petition window for reinstatement (37 CFR 1.378(b)) closed 2025-08-14 with no petition on record. This dataset could not independently re-fetch that page (Google Patents, Espacenet, WIPO Patentscope and the USPTO PatentsView/PED/assignment APIs were all unreachable from this environment when this note was added); the reported dates are recorded here, not independently re-verified, so a future refresh should confirm them directly. \`tools/check\_patents.py\` now computes the window itself from fee\_lapse\_date (2 years): 2025-08-14, already closed as of today, so this family correctly stays \`expired: true\` under the coordinator's new rule (a fee lapse ends the term once its window has closed) — unlike GP48952138, whose window is still open.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9076523B2/en
 
