@@ -153,15 +153,26 @@ def member_end_bound(m: dict, fam: dict) -> dt.date | None:
     ended, per ``docs/plans/patent-index-design.md``'s "Status and expiry
     rules", using only what is recorded for the member and the family — not
     a live lookup. Returns ``None`` when the member has no term of its own
-    (a reexamination certificate, or a published application shown as
-    granted, whose term belongs to the granted patent, itself a member of
-    the family) or when the member's own status already shows it ended, in
-    which case it needs no forward bound. Otherwise returns the estimated
-    upper bound so the caller can compare it with today."""
+    (a reexamination certificate, always presupposing the patent it amends;
+    a translation of a granted patent, *provided* some member of the family
+    is actually recorded as a granted patent — a DE/GB/... `T5`-style
+    "translation publ. of international applic." kind code translates a
+    still-pending application, not a grant, so without a granted-patent
+    member to own the term this exemption would hide it entirely; or a
+    published application shown as granted, whose term belongs to the
+    granted patent, itself a member of the family) or when the member's own
+    status already shows it ended, in which case it needs no forward bound.
+    Otherwise returns the estimated upper bound so the caller can compare it
+    with today."""
     t = m.get("document_type")
     status = m.get("status")
-    if t in ("reexamination-certificate", "translation-of-granted-patent"):
-        return None  # no term of its own; the term is that of the patent it amends or translates
+    if t == "reexamination-certificate":
+        return None  # no term of its own; the term is that of the patent it amends
+    if t == "translation-of-granted-patent" and any(
+        isinstance(m2, dict) and m2.get("document_type") == "granted-patent"
+        for m2 in fam.get("members") or []
+    ):
+        return None  # no term of its own; the term is that of the patent it translates
     if t in APPLICATION_TYPES and status == "Granted":
         return None
     if status in ENDED:
