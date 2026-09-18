@@ -15,7 +15,7 @@ name SkyWater or the Cypress fab. It complements the
 the inventory only when a page cites it. See
 `docs/plans/filings-index-design.md` for the inclusion rules.
 
-The index holds 88 filings.
+The index holds 89 filings.
 
 ## Other views
 
@@ -65,11 +65,11 @@ canonical citation but was not itself fetched by this project.
 
 ## Counts
 
-By company: Cypress Semiconductor Corporation (25), SkyWater Technology, Inc. (43), Infineon Technologies AG (7), IonQ, Inc. (3), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), Weebit Nano Limited (5).
+By company: Cypress Semiconductor Corporation (26), SkyWater Technology, Inc. (43), Infineon Technologies AG (7), IonQ, Inc. (3), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), Weebit Nano Limited (5).
 
-By type: Annual reports (42), Quarterly and half-year reports (18), Current reports and exhibits (12), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
+By type: Annual reports (42), Quarterly and half-year reports (18), Current reports and exhibits (13), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
 
-By year: 1994 (1), 1996 (1), 1997 (1), 1998 (1), 1999 (1), 2000 (1), 2002 (1), 2003 (1), 2004 (1), 2005 (1), 2006 (1), 2007 (1), 2008 (1), 2009 (1), 2010 (1), 2011 (1), 2012 (1), 2013 (1), 2014 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (9), 2022 (9), 2023 (11), 2024 (10), 2025 (9), 2026 (12).
+By year: 1994 (1), 1996 (1), 1997 (1), 1998 (1), 1999 (1), 2000 (1), 2002 (1), 2003 (1), 2004 (1), 2005 (1), 2006 (1), 2007 (1), 2008 (1), 2009 (1), 2010 (1), 2011 (1), 2012 (1), 2013 (1), 2014 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (3), 2020 (3), 2021 (9), 2022 (9), 2023 (11), 2024 (10), 2025 (9), 2026 (12).
 
 ## Known gaps
 
@@ -81,7 +81,6 @@ or read that is not `sec.gov` itself.
 **Cypress Semiconductor Corporation**
 
 * Form 10-Q/A for the quarter ended 2003-03-30 -- No Wayback capture of the EDGAR folder exists; the document is EDGAR-only. Cited elsewhere in this reference as inventory key CYP-07.
-* 8-K announcing the 2019 merger agreement with Infineon (~June 2019) -- No Wayback capture and no non-EDGAR copy found; only a DEFA14A capture from the same period has been located.
 * DEFM14A, definitive merger proxy statement for the 2019-2020 Infineon acquisition -- No Wayback capture and no non-EDGAR copy found.
 * Form 10-K for fiscal year 2019 (last Cypress 10-K, filed in early 2020) -- annualreports.com has no NASDAQ\_CY\_2019 file (confirmed HTTP 404 again in this session); no Wayback capture found either.
 * Form 10-K/A, 2020 -- No Wayback capture and no non-EDGAR copy found.
@@ -305,6 +304,15 @@ Sorted by filing date, then id.
   Auditor: PricewaterhouseCoopers LLP, 2019-02-27: "/s/ PricewaterhouseCoopers LLP San Jose, California February 27, 2019".
   Relationships: {ref}`sale of the Minnesota fab subsidiary to SkyWater's owners (2017) <filings-rel-cypress-fab-sale>` · {ref}`Cypress (later Infineon) as SkyWater's wafer customer under the foundry services agreement <filings-rel-cypress-foundry-services>`.
   Related pages: {ref}`overview-index` — The report confirms that Cypress remained a customer of the fab after the sale.
+
+(filing-cypress-8-k-2019-06-03)=
+* **Cypress Semiconductor Corporation — Current report, item 1.01: Agreement and Plan of Merger with Infineon Technologies AG** (filed 2019-06-03; SEC accession 0001104659-19-033282).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/791915/000110465919033282/a19-10962_18k.htm) · [Wayback copy](https://web.archive.org/web/20250420053533/https://www.sec.gov/Archives/edgar/data/791915/000110465919033282/a19-10962_18k.htm).
+  Period: event of 2019-06-03.
+  Cypress's primary record of entering into the Agreement and Plan of Merger with Infineon Technologies AG and its subsidiary IFX Merger Sub Inc. on 2019-06-03, under which Merger Sub would merge into Cypress for \$23.85 per share in cash; closes the gap this index previously recorded (only a DEFA14A capture from the same period had been found). "entered into an Agreement and Plan of Merger (the "Merger Agreement"), pursuant to which, on the terms and subject to the conditions set forth in the Merger Agreement, Merger Sub will merge with and into Cypress" (Item 1.01); "will be converted into the right to receive \$23.85 in cash (the "Per Share Merger Consideration")" (Item 1.01)
+  Relationships: {ref}`Infineon's acquisition of Cypress (2019-2020) <filings-rel-infineon-cypress-acquisition>`.
+  Related pages: {ref}`overview-index` — The filing dates the agreement that began the change of ownership of the Cypress process IP that SkyWater licenses.
+  Note: filed is the "Date of Report" event date; no Wayback capture of the EDGAR filing-index page was found to confirm the actual filing date independently, but an Item 1.01 merger-agreement 8-K accompanying a same-day joint press release is conventionally filed the same day.
 
 (filing-infineon-annual-report-fy2019)=
 * **Infineon Technologies AG — Infineon Technologies Annual Report 2019** (filed 2019-11-22).

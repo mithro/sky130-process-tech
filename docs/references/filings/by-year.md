@@ -104,6 +104,7 @@ a handful of records are grouped by that date rather than a true filing date.
 ## 2019
 
 * Cypress Semiconductor Corporation, 10-K, filed 2019-02-27: Annual report on Form 10-K for the fiscal year ended 2018-12-30 ({ref}`full entry <filing-cypress-10-k-2019-02-27>`)
+* Cypress Semiconductor Corporation, 8-K, filed 2019-06-03: Current report, item 1.01: Agreement and Plan of Merger with Infineon Technologies AG ({ref}`full entry <filing-cypress-8-k-2019-06-03>`)
 * Infineon Technologies AG, Annual Report, filed 2019-11-22: Infineon Technologies Annual Report 2019 ({ref}`full entry <filing-infineon-annual-report-fy2019>`)
 
 (filings-year-2018)=

@@ -1540,6 +1540,72 @@ filings:
     copy (NASDAQ_CY_2018), which reproduces the 10-K.
   verified: 2026-09-14 annualreports.com PDF fetched; quotes checked
 
+- id: cypress-8-k-2019-06-03
+  company: Cypress Semiconductor Corporation
+  company_key: cypress
+  form: 8-K
+  document_type: current-report
+  parent: null
+  title: 'Current report, item 1.01: Agreement and Plan of Merger with Infineon Technologies AG'
+  period:
+    label: event of 2019-06-03
+    start: null
+    end: 2019-06-03
+  filed: 2019-06-03
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0001104659-19-033282
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/791915/000110465919033282/a19-10962_18k.htm
+    wayback: https://web.archive.org/web/20250420053533/https://www.sec.gov/Archives/edgar/data/791915/000110465919033282/a19-10962_18k.htm
+    ir: null
+  about:
+    summary: >-
+      Cypress's primary record of entering into the Agreement and Plan of
+      Merger with Infineon Technologies AG and its subsidiary IFX Merger
+      Sub Inc. on 2019-06-03, under which Merger Sub would merge into
+      Cypress for $23.85 per share in cash; closes the gap this index
+      previously recorded (only a DEFA14A capture from the same period had
+      been found).
+    quotes:
+    - text: >-
+        entered into an Agreement and Plan of Merger (the "Merger
+        Agreement"), pursuant to which, on the terms and subject to the
+        conditions set forth in the Merger Agreement, Merger Sub will merge
+        with and into Cypress
+      location: Item 1.01
+    - text: >-
+        will be converted into the right to receive $23.85 in cash (the
+        "Per Share Merger Consideration")
+      location: Item 1.01
+  auditor_report: null
+  relationships:
+  - infineon-cypress-acquisition
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The filing dates the agreement that began the change of ownership of the Cypress process IP that SkyWater licenses.
+  inventory_key: null
+  discovery:
+  - web-search
+  - wayback-cdx
+  discovery_note: >-
+    Found by web search while looking for the Infineon-hosted
+    communications 8-K (a later, different accession in the same
+    "a19-10962" EDGAR submission series); a Wayback CDX listing of the
+    EDGAR folder (sec.gov/Archives/edgar/data/791915/000110465919033282/)
+    has a capture of the primary document, and also of Exhibit 2.1 (the
+    Merger Agreement itself), though only the primary document was used
+    for these quotes.
+  verified: 2026-09-19 Wayback copy fetched; quotes checked
+  notes: >-
+    filed is the "Date of Report" event date; no Wayback capture of the
+    EDGAR filing-index page was found to confirm the actual filing date
+    independently, but an Item 1.01 merger-agreement 8-K accompanying a
+    same-day joint press release is conventionally filed the same day.
+
 - id: infineon-annual-report-fy2019
   company: Infineon Technologies AG
   company_key: infineon
@@ -5004,11 +5070,6 @@ known_gaps:
   reason: >-
     No Wayback capture of the EDGAR folder exists; the document is EDGAR-only.
     Cited elsewhere in this reference as inventory key CYP-07.
-- company_key: cypress
-  description: 8-K announcing the 2019 merger agreement with Infineon (~June 2019)
-  reason: >-
-    No Wayback capture and no non-EDGAR copy found; only a DEFA14A capture
-    from the same period has been located.
 - company_key: cypress
   description: DEFM14A, definitive merger proxy statement for the 2019-2020 Infineon acquisition
   reason: No Wayback capture and no non-EDGAR copy found.
