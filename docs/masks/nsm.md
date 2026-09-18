@@ -67,17 +67,23 @@ the opening as a path for the passivation nitride to seal the edge of
 the dielectric stack; the {ref}`NSME <step-166>` page describes a deep
 etch towards the seal ring's silicon and a stop on the local-interconnect
 nitride as two readings, and leaves the depth open (inferences on those
-pages). The step pages compare the construction with a GlobalFoundries
-patent on chip edge seals etched through the dielectrics, a Siemens and
-IBM patent on crack stops in the dicing channel and a Zeevo seal-ring
-patent that shows a moisture path through a passivation
-oxide;[^pat-edgeseal-gf][^pat-crackstop-ibm][^pat-sealring-zeevo]
-Comizzoli et al. reviewed the corrosion of electronic materials and
-devices,[^comizzoli-1986] and Peck gave a model for correlating
-humidity tests.[^peck-1986] Gambino et al. name the edge seal ring as
-one source of noise coupling between RF devices and propose a segmented
-guard ring, which they demonstrate "is reliable for a 0.18 μm RF
-technology".[^gambino-2014]
+pages). The step pages compare the construction with a Siemens and IBM
+patent on crack stops in the dicing channel and a Zeevo seal-ring patent
+that shows a moisture path through a passivation
+oxide,[^pat-crackstop-ibm][^pat-sealring-zeevo] and with a
+GlobalFoundries patent that may still be in force, in the collapsed note
+below this paragraph. Comizzoli et al. reviewed the corrosion of
+electronic materials and devices,[^comizzoli-1986] and Peck gave a model
+for correlating humidity tests.[^peck-1986] Gambino et al. name the edge
+seal ring as one source of noise coupling between RF devices and propose
+a segmented guard ring, which they demonstrate "is reliable for a
+0.18 μm RF technology".[^gambino-2014]
+
+:::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read
+The step pages also compare the construction with a GlobalFoundries
+patent on chip edge seals etched through the
+dielectrics.[^pat-edgeseal-gf]
+:::
 
 The PDK's general rules add what a seal ring is allowed to be: `areaid.sl`
 "must not overlap tap, poly, li1 and metX" (x.23c), and "areaid:sl must

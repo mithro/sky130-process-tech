@@ -336,9 +336,8 @@ public.
   stacks' cap on the step pages' reading of it as TiW
   ({ref}`overview-metal-cap`), need fluorine as well as chlorine; Liu
   and Kuo etched TiW in CF₄-based mixtures,[^liu-2007-tiw] and a Texas
-  Instruments
-  patent describes selective etching of MiM top
-  electrodes.[^pat-mim-ti-etch] The materials index records that the cap
+  Instruments patent that may still be in force is the second published
+  account, in the collapsed note below this list. The materials index records that the cap
   breakthrough gases differ between analogous metal-etch pages
   ({ref}`materials-open-questions`).
 * **Nitride over oxide.** The spacer and nitride-cut etches need nitride
@@ -356,6 +355,11 @@ public.
   and 2023, while its NF₃ figure stayed
   of the order of 1,000–3,500;[^epa-ghgrp-skywater] the public tables do
   not say whether production, process changes or abatement caused this.
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+A Texas Instruments patent describes selective etching of MiM top
+electrodes.[^pat-mim-ti-etch]
+:::
 
 ## Related pages
 
