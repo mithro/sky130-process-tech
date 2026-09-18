@@ -402,6 +402,12 @@ def gen_audits(rs: list[dict]) -> str:
     body = [
         "The auditor's reports found in the filings below, in filing order.",
         "",
+        "Only the firm, subject and report date are recorded (V-09):",
+        "the schema has no field for opinion type, so this page cannot say",
+        "whether an opinion was unqualified, dual-dated or carried a",
+        "going-concern paragraph -- read the quoted signature block on the",
+        "filing's own entry for that.",
+        "",
         "| Filing | Firm | Subject | Report date |",
         "|---|---|---|---|",
     ]
