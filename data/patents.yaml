@@ -9845,15 +9845,16 @@ families:
   discovery_note: Cited on docs pages; inventory PAT-SDS-ATMI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5518528A/en
   notes:
-  - 'Round-1 review finding M10: the round-1 review re-fetched AU3830095A on 2026-09-18 and reports its
-    live status as Expired, not the "Granted" recorded here from the 2026-09-14 fetch. Checked tmp/build.py
-    and tmp/gp.py for a substitution bug: none found — a member''s status is copied verbatim from the
-    parsed record page''s own IFI legal-status field at fetch time, so "Granted" is what that page showed
-    on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication''s
-    displayed status can apparently change once the patent that supersedes it changes status) or Google-side
-    rendering variation, not a dataset defect; not independently re-verified because Google Patents is
-    unreachable from the environment this note was added in. Does not change this family''s expired/collapsed
-    state.'
+  - 'Round-1 review finding M10: the round-1 review re-fetched AU3830095A on 2026-09-18 and
+    reports its live status as Expired, not the "Granted" recorded here from the 2026-09-14
+    fetch. Checked the builder scripts used to produce this dataset (not published) for a
+    substitution bug: none found — a member''s status is copied verbatim from the parsed record
+    page''s own IFI legal-status field at fetch time, so "Granted" is what that page showed on
+    2026-09-14. The discrepancy is therefore either genuine drift (an application-type
+    publication''s displayed status can apparently change once the patent that supersedes it
+    changes status) or Google-side rendering variation, not a dataset defect; not independently
+    re-verified because Google Patents is unreachable from the environment this note was added
+    in. Does not change this family''s expired/collapsed state.'
 - id: GP24770421
   family:
     source: Google Patents family ID
@@ -24036,15 +24037,16 @@ families:
     a patent ends 20 years after the filing date of the patent application"), English translation, Japanese
     Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097,
     retrieved 2026-09-18.'
-  - 'Round-1 review finding M10: the round-1 review re-fetched CN101053063A on 2026-09-18 and reports
-    its live status as Expired - Fee Related (expiry 2025-09-01), not the "Granted" recorded here from
-    the 2026-09-14 fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member''s
-    status is copied verbatim from the parsed record page''s own IFI legal-status field at fetch time,
-    so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift
-    (an application-type publication''s displayed status can apparently change once the patent that supersedes
-    it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified
-    because Google Patents is unreachable from the environment this note was added in. Does not change
-    this family''s expired/collapsed state.'
+  - 'Round-1 review finding M10: the round-1 review re-fetched CN101053063A on 2026-09-18 and
+    reports its live status as Expired - Fee Related (expiry 2025-09-01), not the "Granted"
+    recorded here from the 2026-09-14 fetch. Checked the builder scripts used to produce this
+    dataset (not published) for a substitution bug: none found — a member''s status is copied
+    verbatim from the parsed record page''s own IFI legal-status field at fetch time, so
+    "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either
+    genuine drift (an application-type publication''s displayed status can apparently change
+    once the patent that supersedes it changes status) or Google-side rendering variation, not a
+    dataset defect; not independently re-verified because Google Patents is unreachable from the
+    environment this note was added in. Does not change this family''s expired/collapsed state.'
 - id: GP36337293
   family:
     source: Google Patents family ID
@@ -24661,15 +24663,16 @@ families:
   discovery_note: Cited on docs pages; inventory PAT-PNA-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7429538B2/en
   notes:
-  - 'Round-1 review finding M10: the round-1 review re-fetched CN101208782A on 2026-09-18 and reports
-    its live status as Active (expiry 2026-05-26), not the "Granted" recorded here from the 2026-09-14
-    fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member''s status
-    is copied verbatim from the parsed record page''s own IFI legal-status field at fetch time, so "Granted"
-    is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type
-    publication''s displayed status can apparently change once the patent that supersedes it changes status)
-    or Google-side rendering variation, not a dataset defect; not independently re-verified because Google
-    Patents is unreachable from the environment this note was added in. Does not change this family''s
-    expired/collapsed state.'
+  - 'Round-1 review finding M10: the round-1 review re-fetched CN101208782A on 2026-09-18 and
+    reports its live status as Active (expiry 2026-05-26), not the "Granted" recorded here from
+    the 2026-09-14 fetch. Checked the builder scripts used to produce this dataset (not
+    published) for a substitution bug: none found — a member''s status is copied verbatim from
+    the parsed record page''s own IFI legal-status field at fetch time, so "Granted" is what
+    that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an
+    application-type publication''s displayed status can apparently change once the patent that
+    supersedes it changes status) or Google-side rendering variation, not a dataset defect; not
+    independently re-verified because Google Patents is unreachable from the environment this
+    note was added in. Does not change this family''s expired/collapsed state.'
   - 'Round-1 review finding L4: US7429538B2, CN101208782B, JP5072837B2 and KR100993124B1 are all shown
     with status Active in this dataset, yet the family is correctly marked expired: true, because each
     one''s own recorded adjusted/anticipated expiration date (2026-05-25/26) is in the past relative to
@@ -24856,15 +24859,16 @@ families:
   discovery_note: Cited on docs pages; inventory PAT-MIM-FREESCALE.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7375002B2/en
   notes:
-  - 'Round-1 review finding M10: the round-1 review re-fetched CN101213641A on 2026-09-18 and reports
-    its live status as Expired - Fee Related (expiry 2026-06-08), not the "Granted" recorded here from
-    the 2026-09-14 fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member''s
-    status is copied verbatim from the parsed record page''s own IFI legal-status field at fetch time,
-    so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift
-    (an application-type publication''s displayed status can apparently change once the patent that supersedes
-    it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified
-    because Google Patents is unreachable from the environment this note was added in. Does not change
-    this family''s expired/collapsed state.'
+  - 'Round-1 review finding M10: the round-1 review re-fetched CN101213641A on 2026-09-18 and
+    reports its live status as Expired - Fee Related (expiry 2026-06-08), not the "Granted"
+    recorded here from the 2026-09-14 fetch. Checked the builder scripts used to produce this
+    dataset (not published) for a substitution bug: none found — a member''s status is copied
+    verbatim from the parsed record page''s own IFI legal-status field at fetch time, so
+    "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either
+    genuine drift (an application-type publication''s displayed status can apparently change
+    once the patent that supersedes it changes status) or Google-side rendering variation, not a
+    dataset defect; not independently re-verified because Google Patents is unreachable from the
+    environment this note was added in. Does not change this family''s expired/collapsed state.'
   - 'Round-1 review finding L4: US7375002B2 is shown with status Active in this dataset, yet the family
     is correctly marked expired: true, because its own recorded adjusted expiration date (2026-07-07)
     is in the past relative to today even though the public database has not yet updated its Active/
@@ -25926,15 +25930,16 @@ families:
   discovery_note: Cited on docs pages; inventory PAT-03.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8093128B2/en
   notes:
-  - 'Round-1 review finding M10: the round-1 review re-fetched CN101606236A on 2026-09-18 and reports
-    its live status as Active (expiry 2028-05-23), not the "Granted" recorded here from the 2026-09-14
-    fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member''s status
-    is copied verbatim from the parsed record page''s own IFI legal-status field at fetch time, so "Granted"
-    is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type
-    publication''s displayed status can apparently change once the patent that supersedes it changes status)
-    or Google-side rendering variation, not a dataset defect; not independently re-verified because Google
-    Patents is unreachable from the environment this note was added in. Does not change this family''s
-    expired/collapsed state.'
+  - 'Round-1 review finding M10: the round-1 review re-fetched CN101606236A on 2026-09-18 and
+    reports its live status as Active (expiry 2028-05-23), not the "Granted" recorded here from
+    the 2026-09-14 fetch. Checked the builder scripts used to produce this dataset (not
+    published) for a substitution bug: none found — a member''s status is copied verbatim from
+    the parsed record page''s own IFI legal-status field at fetch time, so "Granted" is what
+    that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an
+    application-type publication''s displayed status can apparently change once the patent that
+    supersedes it changes status) or Google-side rendering variation, not a dataset defect; not
+    independently re-verified because Google Patents is unreachable from the environment this
+    note was added in. Does not change this family''s expired/collapsed state.'
 - id: GP40072822
   family:
     source: Google Patents family ID
