@@ -72,9 +72,13 @@ and reasoning (all inference):
   (via4.1, via4.3) and is 0.505 µm deep,[^pdk-periph][^pdk-04] an
   {term}`aspect ratio` of about 0.63:1, while the metal-5 stack is more
   than twice as thick as the via is deep (our arithmetic). Skelly and
-  Gruenke showed that straight-walled vias 1.3 µm wide and 1 µm deep —
-  a steeper hole — could be planarised by bias-sputtered aluminium,
-  where unbiased sputtering gave 20 % coverage,[^skelly-1986] and Taylor,
+  Gruenke found that 1.3 µm-wide, straight-walled vias 1 µm deep were
+  planarised (100 % step coverage) by bias sputtering under conditions
+  that gave only 60 % coverage in 2.8 µm vias, while unbiased
+  deposition gave 20 %;[^skelly-1986] their result is not a simple
+  function of aspect ratio, and neither of their geometries is via 4's,
+  so it shows that a hole of this class can be filled by sputtering,
+  not that this one is (inference). Taylor,
   Jain and Cale found that the step coverage of sputtered Al–Cu improves
   with temperature and lower deposition rate.[^taylor-1998] A single
   fixed via size lets one deposition recipe serve every via.

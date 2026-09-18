@@ -51,8 +51,8 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 157-L3 | Low | fixed | no-plug-polish argument from step-list silence not marked as such (157: Open questions) |
 | 158-L1 | Low | fixed | "PECVD TEOS" invents a deposition method not in either report (158:105-110); verified both Cypress PDFs with pdftotext |
 | 158-L2 | Low | fixed | 650-750°C LPCVD window not clearly labelled as textbook value (158:116-119) |
-| 159-M1 | Medium | open | Skelly & Gruenke via-fill analogy ignores non-monotonic 2.8 µm result (159, 161) |
-| 159-L1 | Low | open | Le, Banerjee & McPherson EM finding is conditional, cited as unconditional (159:128-131) |
+| 159-M1 | Medium | fixed | Skelly & Gruenke via-fill analogy ignores non-monotonic 2.8 µm result (159:90-97, 161:73-79); verified abstract via Crossref |
+| 159-L1 | Low | fixed | Le, Banerjee & McPherson EM finding is conditional, cited as unconditional (159:137-141); verified abstract via OpenAlex |
 | 159-L2 | Low | fixed | via4/via3 resistance-per-area residual left uncomputed (159:47-51), fixed alongside 151-L1 |
 | 160-M1 | Medium | open | Bui et al. cited beyond its published abstract (160:76-79) |
 | 160-L1 | Low | open | EKS265 silently read as "EKC265" without marking the reading (160:194-196) |
