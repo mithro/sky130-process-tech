@@ -537,7 +537,7 @@ Sorted by filing date, then id.
 * **Weebit Nano Limited — Appendix 4E and Annual Report for the year ended 30 June 2023** (filed 2023-08-25).
   [Original](https://investors.weebit-nano.com/site/pdf/6036278c-d1ec-4ecf-be9c-dc8ba1e945a9/Appendix-4E-and-Annual-Report.pdf).
   Weebit Nano's FY2023 annual report says its embedded ReRAM IP is commercially available in SkyWater's 130 nm CMOS process, lists full qualification in S130 among the year's highlights and calls SkyWater a partner instrumental to its progress. "Our proven embedded ReRAM intellectual property (IP) is now commercially available in SkyWater Technology's 130nm CMOS process" (Introductory section); "Weebit ReRAM fully qualified in SkyWater S130 process" (2022-2023 highlights)
-  Auditor: Nexia Perth Audit Services Pty Ltd, 2023-08-24: "Nexia Perth Audit Services Pty Ltd M. Janse Van Nieuwenhuizen Director Perth 24 August 2023".
+  Auditor: Nexia Perth Audit Services Pty Ltd, 2023-08-24: "Nexia Perth Audit Services Pty Ltd".
   Relationships: {ref}`a technology partner's filing names SkyWater <filings-rel-partner-names-skywater>`.
   Related pages: {ref}`overview-sky130b-reram` — The report describes the commercial status of the ReRAM IP offered in SkyWater's S130 process.
 
@@ -608,7 +608,7 @@ Sorted by filing date, then id.
 * **Weebit Nano Limited — Appendix 4E and 2024 Annual Report for the year ended 30 June 2024** (filed 2024-08-28).
   [Original](https://investors.weebit-nano.com/site/pdf/ff240513-07ab-46f3-a651-17a5cb22204b/Appendix-4E-and-2024-Annual-Report.pdf).
   Weebit Nano's FY2024 annual report lists qualification at 125 °C in SkyWater S130 among its highlights and says missing IP in SkyWater's foundry offering delayed licensing agreements with companies wanting to manufacture at SkyWater. "Factors beyond our control, such as missing IPs in SkyWater's foundry offering, have delayed licensing agreements with product companies wanting to manufacture at SkyWater" (Introductory section); "Weebit ReRAM qualified 125⁰C in SkyWater S130" (Highlights)
-  Auditor: Nexia Perth Audit Services Pty Ltd, 2024-08-27: "Nexia Perth Audit Services Pty Ltd Michael Fay Director Perth, Western Australia 27 August 2024".
+  Auditor: Nexia Perth Audit Services Pty Ltd, 2024-08-27: "Nexia Perth Audit Services Pty Ltd".
   Relationships: {ref}`a technology partner's filing names SkyWater <filings-rel-partner-names-skywater>`.
   Related pages: {ref}`overview-sky130b-reram` — The report gives the partner's view of adoption of the ReRAM IP in SkyWater's S130 process.
 
