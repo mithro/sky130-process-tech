@@ -5,6 +5,12 @@
 
 The auditor's reports found in the filings below, in filing order.
 
+Only the firm, subject and report date are recorded (V-09):
+the schema has no field for opinion type, so this page cannot say
+whether an opinion was unqualified, dual-dated or carried a
+going-concern paragraph -- read the quoted signature block on the
+filing's own entry for that.
+
 | Filing | Firm | Subject | Report date |
 |---|---|---|---|
 | {ref}`Cypress Semiconductor Corporation, 1994-03-16 <filing-cypress-annual-report-fy1993>` | Price Waterhouse | consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 1993 | 1994-01-25 |

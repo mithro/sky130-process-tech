@@ -675,6 +675,7 @@ Sorted by filing date, then id.
   Auditor: Deloitte & Touche LLP, 2025-09-11: "/s/ Deloitte & Touche LLP San Jose, California September 15, 2025".
   Relationships: {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>`.
   Related pages: {ref}`overview-index` — The statements give audited figures for the Austin fab that joined the Minnesota fab's owner in 2025.
+  Amends/filed with: {ref}`full entry <filing-skywater-8-k-2025-07-03>`.
 
 (filing-skywater-10-q-2025-11-12)=
 * **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2025-09-28** (filed 2025-11-12; SEC accession 0001819974-25-000052).
