@@ -672,3 +672,33 @@
   reason: A general survey of the open-source EDA/PDK ecosystem, not a study specific to SKY130 or the
     SkyWater process.
   decided: '2026-09-19'
+- id: doi:10.1109/mssc.2024.3367652
+  title: 'Low-Cost Open Source ASIC Design and Fabrication: Creating your own chips with open source
+    software and multiproject wafers'
+  year: 2024
+  status: excluded
+  reason: A general step-by-step guide to open-source ASIC design and MPW fabrication; the abstract does
+    not name SKY130 or any specific process and reports no measurements.
+  decided: '2026-09-19'
+- id: doi:10.1109/mwscas47672.2021.9531753
+  title: 'Digital ASIC Implementation of RISC-V: OpenLane and Commercial Approaches in Comparison'
+  year: 2021
+  status: excluded
+  reason: Compares the OpenLane flow against commercial tools on timing and power for a RISC-V design;
+    no process is named and no fabrication is reported.
+  decided: '2026-09-19'
+- id: doi:10.1109/apccas62602.2024.10808656
+  title: Physical Design of RISC-V based System-on-Chip using OpenLane
+  year: 2024
+  status: excluded
+  reason: A PicoSoC physical-design case study through the OpenLane flow; no process is named and results
+    are gate-level simulation, not fabrication.
+  decided: '2026-09-19'
+- id: doi:10.31114/2078-7707-2022-4-87-92
+  title: Analysis of Open-source EDA Tools OpenLANE for ASIC Design
+  year: 2022
+  status: excluded
+  reason: Compares OpenLANE against Cadence Genus synthesis optimization; mentions that OpenLANE "was
+    used to produce real microchips through chipIgnite project" as general context, but reports no fabrication
+    or process name for the paper's own design.
+  decided: '2026-09-19'
