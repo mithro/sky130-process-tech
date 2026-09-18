@@ -38,7 +38,23 @@ name and date; the full audit reports are collected on
 ## Quarterly and half-year reports
 
 * Cypress Semiconductor Corporation, 10-Q, filed 2017-05-02: Quarterly report on Form 10-Q for the quarter ended 2017-04-02 ({ref}`full entry <filing-cypress-10-q-2017-05-02>`)
+* SkyWater Technology, Inc., 10-Q, filed 2021-05-19: Quarterly report on Form 10-Q for the quarter ended 2021-04-04 ({ref}`full entry <filing-skywater-10-q-2021-05-19>`)
+* SkyWater Technology, Inc., 10-Q, filed 2021-08-04: Quarterly report on Form 10-Q for the quarter ended 2021-07-04 ({ref}`full entry <filing-skywater-10-q-2021-08-04>`)
+* SkyWater Technology, Inc., 10-Q, filed 2021-11-08: Quarterly report on Form 10-Q for the quarter ended 2021-10-03 ({ref}`full entry <filing-skywater-10-q-2021-11-08>`)
+* SkyWater Technology, Inc., 10-Q, filed 2022-05-18: Quarterly report on Form 10-Q for the quarter ended 2022-04-03 ({ref}`full entry <filing-skywater-10-q-2022-05-18>`)
+* SkyWater Technology, Inc., 10-Q, filed 2022-08-17: Quarterly report on Form 10-Q for the quarter ended 2022-07-03 ({ref}`full entry <filing-skywater-10-q-2022-08-17>`)
+* SkyWater Technology, Inc., 10-Q, filed 2022-11-10: Quarterly report on Form 10-Q for the quarter ended 2022-10-02 ({ref}`full entry <filing-skywater-10-q-2022-11-10>`)
+* SkyWater Technology, Inc., 10-Q, filed 2023-05-12: Quarterly report on Form 10-Q for the quarter ended 2023-04-02 ({ref}`full entry <filing-skywater-10-q-2023-05-12>`)
+* SkyWater Technology, Inc., 10-Q, filed 2023-08-11: Quarterly report on Form 10-Q for the quarter ended 2023-07-02 ({ref}`full entry <filing-skywater-10-q-2023-08-11>`)
+* SkyWater Technology, Inc., 10-Q, filed 2023-11-09: Quarterly report on Form 10-Q for the quarter ended 2023-10-01 ({ref}`full entry <filing-skywater-10-q-2023-11-09>`)
+* SkyWater Technology, Inc., 10-Q, filed 2024-05-10: Quarterly report on Form 10-Q for the quarter ended 2024-03-31 ({ref}`full entry <filing-skywater-10-q-2024-05-10>`)
+* SkyWater Technology, Inc., 10-Q, filed 2024-08-07: Quarterly report on Form 10-Q for the quarter ended 2024-06-30 ({ref}`full entry <filing-skywater-10-q-2024-08-07>`)
+* SkyWater Technology, Inc., 10-Q, filed 2024-11-07: Quarterly report on Form 10-Q for the quarter ended 2024-09-29 ({ref}`full entry <filing-skywater-10-q-2024-11-07>`)
+* SkyWater Technology, Inc., 10-Q, filed 2025-05-08: Quarterly report on Form 10-Q for the quarter ended 2025-03-30 ({ref}`full entry <filing-skywater-10-q-2025-05-08>`)
 * SkyWater Technology, Inc., 10-Q, filed 2025-08-07: Quarterly report on Form 10-Q for the quarter ended 2025-06-29 ({ref}`full entry <filing-skywater-10-q-2025-08-07>`)
+* SkyWater Technology, Inc., 10-Q, filed 2025-11-12: Quarterly report on Form 10-Q for the quarter ended 2025-09-28 ({ref}`full entry <filing-skywater-10-q-2025-11-12>`)
+* SkyWater Technology, Inc., 10-Q, filed 2026-05-08: Quarterly report on Form 10-Q for the quarter ended 2026-03-29 ({ref}`full entry <filing-skywater-10-q-2026-05-08>`)
+* SkyWater Technology, Inc., 10-Q, filed 2026-08-07: Quarterly report on Form 10-Q for the quarter ended 2026-06-28 ({ref}`full entry <filing-skywater-10-q-2026-08-07>`)
 
 ## Current reports and exhibits
 
@@ -67,8 +83,14 @@ name and date; the full audit reports are collected on
 ## Proxy statements
 
 * SkyWater Technology, Inc., DEF 14A, filed 2022-04-19: Definitive proxy statement for the 2022 annual meeting of stockholders ({ref}`full entry <filing-skywater-def-14a-2022-04-19>`)
+* SkyWater Technology, Inc., DEF 14A, filed 2023-04-25: Definitive proxy statement for the 2023 annual meeting of stockholders ({ref}`full entry <filing-skywater-def-14a-2023-04-25>`)
+* SkyWater Technology, Inc., DEF 14A, filed 2024-04-10: Definitive proxy statement for the 2024 annual meeting of stockholders ({ref}`full entry <filing-skywater-def-14a-2024-04-10>`)
+* SkyWater Technology, Inc., DEF 14A, filed 2025-04-08: Definitive proxy statement for the 2025 annual meeting of stockholders ({ref}`full entry <filing-skywater-def-14a-2025-04-08>`)
 * SkyWater Technology, Inc., DEFM14A, filed 2026-03-31: Definitive merger proxy statement for the special meeting on the IonQ merger ({ref}`full entry <filing-skywater-defm14a-2026-03-31>`)
+* SkyWater Technology, Inc., DEF 14A, filed 2026-04-27: Definitive proxy statement for the 2026 annual meeting of stockholders ({ref}`full entry <filing-skywater-def-14a-2026-04-27>`)
 
 ## Announcements and deregistrations
 
+* Weebit Nano Limited, ASX announcement, filed 2021-09-09: Weebit signs first commercial deal to take its ReRAM technology to volume production with US-based SkyWater ({ref}`full entry <filing-weebit-nano-announcement-2021-09-09>`)
 * Weebit Nano Limited, ASX announcement, filed 2023-06-29: WBT's ReRAM IP now fully qualified in SkyWater S130 process ({ref}`full entry <filing-weebit-nano-announcement-2023-06-29>`)
+* SkyWater Technology, LLC, 15-12G, filed 2026-08-10: Form 15-12G, certification and notice of termination of registration ({ref}`full entry <filing-skywater-15-12g-2026-08-10>`)

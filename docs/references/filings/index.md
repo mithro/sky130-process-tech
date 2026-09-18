@@ -15,7 +15,7 @@ name SkyWater or the Cypress fab. It complements the
 the inventory only when a page cites it. See
 `docs/plans/filings-index-design.md` for the inclusion rules.
 
-The index holds 48 filings.
+The index holds 70 filings.
 
 ## Other views
 
@@ -42,6 +42,7 @@ audits
 * **2021-04-22** — SkyWater Technology completes its initial public offering. See {ref}`the filing <filing-skywater-424b4-2021-04-22>`.
 * **2025-06-30** — SkyWater completes the purchase of Infineon's Austin fab (Fab 25). See {ref}`the filing <filing-skywater-8-k-2025-07-03>`.
 * **2026-07-31** — IonQ completes its acquisition of SkyWater Technology. See {ref}`the filing <filing-skywater-8-k-2026-07-31>`.
+* **2026-08-10** — SkyWater deregisters from SEC reporting following the IonQ merger. See {ref}`the filing <filing-skywater-15-12g-2026-08-10>`.
 
 ## How to read an entry
 
@@ -64,11 +65,11 @@ canonical citation but was not itself fetched by this project.
 
 ## Counts
 
-By company: Cypress Semiconductor Corporation (10), Infineon Technologies AG (7), SkyWater Technology, Inc. (21), D-Wave Quantum Inc. (4), Weebit Nano Limited (3), IonQ, Inc. (3).
+By company: Cypress Semiconductor Corporation (10), Infineon Technologies AG (7), SkyWater Technology, Inc. (42), Weebit Nano Limited (4), D-Wave Quantum Inc. (4), IonQ, Inc. (3).
 
-By type: Annual reports (25), Quarterly and half-year reports (2), Current reports and exhibits (11), Registration statements and prospectuses (7), Proxy statements (2), Announcements and deregistrations (1).
+By type: Annual reports (25), Quarterly and half-year reports (18), Current reports and exhibits (11), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
 
-By year: 2004 (1), 2005 (1), 2007 (1), 2008 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (5), 2022 (5), 2023 (7), 2024 (4), 2025 (6), 2026 (8).
+By year: 2004 (1), 2005 (1), 2007 (1), 2008 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (2), 2020 (3), 2021 (9), 2022 (8), 2023 (11), 2024 (8), 2025 (9), 2026 (12).
 
 ## All filings
 
@@ -213,6 +214,34 @@ Sorted by filing date, then id.
   Inventory: SEC-01.
   Related pages: {ref}`materials-index` — The materials index cites the S-1 family, including the final prospectus, as SEC-01..
 
+(filing-skywater-10-q-2021-05-19)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2021-04-04** (filed 2021-05-19; SEC accession 0001193125-21-166596).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000119312521166596/d155085d10q.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/39e36151-3d18-495a-af24-8fc05f5e7b7a.pdf).
+  SkyWater's first quarterly report as a public company, covering the quarter that ended two days after its IPO. It already discloses that disclosure controls and procedures were not effective because of material weaknesses, and describes the Oxbow management fee agreement dating from the 2017 divestiture from Cypress. "our disclosure controls and procedures were not effective as of April 4, 2021 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures); "Oxbow Industries, LLC ("Oxbow"), our principal owner, provides management and financial consulting services to us for an annual management fee not to exceed \$700" (Notes to the condensed consolidated financial statements, Related Party Transactions)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>` · {ref}`Oxbow ownership, management fees and property transactions <filings-rel-oxbow-related-party>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-skywater-10-q-2021-08-04)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2021-07-04** (filed 2021-08-04; SEC accession 0001819974-21-000012).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997421000012/0001819974-21-000012-index.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/69fd7163-93f6-4597-843a-c4f7f73d8b61.pdf).
+  SkyWater's second quarterly report as a public company. It discloses that disclosure controls and procedures were not effective as of the quarter end because of material weaknesses in internal control over financial reporting, and gives customer-concentration data for accounts receivable. "our disclosure controls and procedures were not effective as of July 4, 2021 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures); "We had four major customers that accounted for 26%, 19%, 10% and 10% of outstanding trade accounts receivable as of July 4, 2021" (Notes to the condensed consolidated financial statements, Major Customers and Concentration Risk)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>` · {ref}`SkyWater names its customers <filings-rel-skywater-customers>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-weebit-nano-announcement-2021-09-09)=
+* **Weebit Nano Limited — Weebit signs first commercial deal to take its ReRAM technology to volume production with US-based SkyWater** (filed 2021-09-09).
+  [Original](https://www.weebit-nano.com/wp-content/uploads/2021/09/2262984_ASX_Weebit-Nano-signs-first-commercial-deal-to-take-its-ReRAM-technology-to-volume-production-with-US-based-SkyWater.pdf).
+  Weebit Nano's original 2021 announcement of its ReRAM licensing agreement with SkyWater, made before the technology was qualified in S130 (see the 2023 follow-up announcement); it names SkyWater's Minnesota fab as the manufacturing site and the 130 nm PDK as the target process. "SkyWater intends to add Weebit's qualified memory module (and later additional variants of it) to its 130nm Process Design Kit (PDK)" (First page); "The technology licensing agreement is for SkyWater to manufacture designs from customers worldwide in their Minnesota fab" (First page)
+  Relationships: {ref}`a technology partner's filing names SkyWater <filings-rel-partner-names-skywater>`.
+  Related pages: {ref}`overview-sky130b-reram` — The announcement is the partner's own record of the original 2021 agreement that led to the ReRAM qualification the page discusses..
+
+(filing-skywater-10-q-2021-11-08)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2021-10-03** (filed 2021-11-08; SEC accession 0001819974-21-000020).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997421000020/0001819974-21-000020-index.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/f1e9cf45-ca6b-4a94-a570-32de7363558e.pdf).
+  SkyWater's third quarterly report as a public company, again disclosing that controls and procedures were not effective as of the quarter end due to material weaknesses, and giving customer-concentration data. "our disclosure controls and procedures were not effective as of October 3, 2021 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures); "We had four major customers that accounted for 19%, 16%, 12% and 10% of outstanding trade accounts receivable as of October 3, 2021" (Notes to the condensed consolidated financial statements, Major Customers and Concentration Risk)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>` · {ref}`SkyWater names its customers <filings-rel-skywater-customers>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
 (filing-infineon-annual-report-fy2021)=
 * **Infineon Technologies AG — Infineon Technologies Annual Report 2021** (filed 2021-11-25).
   [Original](https://www.infineon.com/dgdl/Infineon+Annual+Report+2021.pdf?fileId=8ac78c8b7d507352017d622b5bfb0161).
@@ -250,6 +279,28 @@ Sorted by filing date, then id.
   Relationships: {ref}`Oxbow ownership, management fees and property transactions <filings-rel-oxbow-related-party>` · {ref}`sale of the Minnesota fab subsidiary to SkyWater's owners (2017) <filings-rel-cypress-fab-sale>`.
   Related pages: {ref}`overview-index` — The overview's account of the fab's ownership is complemented by the proxy's description of the 2020 sale-leaseback of the Bloomington site..
 
+(filing-skywater-10-q-2022-05-18)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2022-04-03** (filed 2022-05-18; SEC accession 0001819974-22-000021).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997422000021/0001819974-22-000021-index.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/7b98390b-a523-4439-9fa5-10dc62321af2.pdf).
+  First-quarter fiscal 2022 report; discloses continuing material weaknesses in internal control over financial reporting and gives customer-concentration data for receivables. "our disclosure controls and procedures were not effective as of April 3, 2022 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures); "We had two major customers that accounted for 33% and 29% of outstanding trade accounts receivable as of April 3, 2022" (Notes to the condensed consolidated financial statements, Major Customers and Concentration Risk)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>` · {ref}`SkyWater names its customers <filings-rel-skywater-customers>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-skywater-10-q-2022-08-17)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2022-07-03** (filed 2022-08-17; SEC accession 0001819974-22-000069).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997422000069/0001819974-22-000069-index.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/95b788aa-d2d5-4446-8c51-c192dde6015d.pdf).
+  Second-quarter fiscal 2022 report; discloses that disclosure controls and procedures remained not effective as of the quarter end because of material weaknesses in internal control over financial reporting. "our disclosure controls and procedures were not effective as of July 3, 2022 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-skywater-10-q-2022-11-10)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2022-10-02** (filed 2022-11-10; SEC accession 0001819974-22-000085).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997422000085/0001819974-22-000085-index.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/479a15ab-361b-438c-ac9f-0e54825bcf26.pdf).
+  Third-quarter fiscal 2022 report; discloses that disclosure controls and procedures remained not effective as of the quarter end because of material weaknesses in internal control over financial reporting, and gives the size of SkyWater's two DoD rad-hard manufacturing awards. "our disclosure controls and procedures were not effective as of October 2, 2022 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures); "In September 2019, we entered into a contract with the DoD to receive up to \$170 million to expand and upgrade our manufacturing capabilities, specifically to build next-generation rad-hard wafer solutions" (Part I, Item 2, Overview)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>` · {ref}`investment and government funding for the Minnesota fab <filings-rel-minnesota-fab-investment>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+  Note: The same quarter's MD&A also states: "In September 2022, the DoD awarded us up to an additional \$99 million as a continuation of the previous initiative to broaden onshore production capabilities for strategic rad-hard electronics" (not quoted verbatim above to stay within the two-quote limit).
+
 (filing-infineon-annual-report-fy2022)=
 * **Infineon Technologies AG — Infineon Technologies Annual Report 2022** (filed 2022-11-25).
   [Original](https://www.infineon.com/assets/row/public/documents/corporate/investors/annual-reports/2022/infineon-annual-report-report-v12-00-en.pdf).
@@ -280,6 +331,21 @@ Sorted by filing date, then id.
   Relationships: {ref}`a customer's filing names SkyWater <filings-rel-customer-names-skywater>` · {ref}`Cypress selling wafer-line capacity to outside customers before the 2017 sale <filings-rel-cypress-third-party-foundry>`.
   Related pages: {ref}`overview-index` — The report shows Cypress selling wafer-line capacity to an outside customer from 2006, before the fab became a foundry..
 
+(filing-skywater-def-14a-2023-04-25)=
+* **SkyWater Technology, Inc. — Definitive proxy statement for the 2023 annual meeting of stockholders** (filed 2023-04-25; SEC accession 0001140361-23-020146).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000114036123020146/ny20006439x1_def14a.htm) · [Wayback copy](https://web.archive.org/web/20230502184124/https://www.sec.gov/Archives/edgar/data/1819974/000114036123020146/ny20006439x1_def14a.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/212963f3-8d41-40a9-b748-88ad1f583d42.pdf).
+  The 2023 proxy statement's related-party section gives CMI Oxbow's ownership share and the 2020 sale-leaseback of the Bloomington land and building to Oxbow Realty, including the fiscal 2022 lease payment and the future minimum payments outstanding. "On September 29, 2020, we entered into an agreement to sell the land and building representing our primary operating location in Bloomington, Minnesota to an Oxbow Realty Partners, LLC ("Oxbow Realty"), an affiliate of our principal stockholder, CMI Oxbow" (Certain Relationships and Transactions with Related Persons, Sale Leaseback Transaction with Oxbow Realty); "CMI Oxbow Partners, LLC ("CMI Oxbow"), an affiliate of Oxbow, owns approximately 44.56% of our outstanding common stock as of the Record Date" (Certain Relationships and Transactions with Related Persons)
+  Relationships: {ref}`Oxbow ownership, management fees and property transactions <filings-rel-oxbow-related-party>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-skywater-10-q-2023-05-12)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2023-04-02** (filed 2023-05-12; SEC accession 0001819974-23-000022).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997423000022/skyt-20230402.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/a2d39029-ae99-4c82-aeb0-79d99808961c.pdf).
+  First-quarter fiscal 2023 report. Its Item 4 evaluation date reads "April 3, 2022" rather than the quarter's own end date of April 2, 2023, an internal dating inconsistency in the filed document; the material weaknesses it describes are the same ones reported each quarter. "our disclosure controls and procedures were not effective as of April 3, 2022 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+  Note: The evaluation date in Item 4 ("April 3, 2022") does not match the cover page's quarterly period ended April 2, 2023, or the filing date; the apparent copy-paste error is quoted verbatim rather than corrected here.
+
 (filing-weebit-nano-announcement-2023-06-29)=
 * **Weebit Nano Limited — WBT's ReRAM IP now fully qualified in SkyWater S130 process** (filed 2023-06-29).
   [Original](https://investors.weebit-nano.com/site/pdf/d613063e-b334-434d-b33a-d120ca071bd9/WBTs-ReRAM-IP-now-fully-qualified-in-SkyWater-S130-process.pdf).
@@ -294,12 +360,26 @@ Sorted by filing date, then id.
   Relationships: {ref}`Oxbow ownership, management fees and property transactions <filings-rel-oxbow-related-party>`.
   Related pages: {ref}`machines-index` — The filing is one of the few public statements about how the Minnesota fab's operations were managed after the Cypress era..
 
+(filing-skywater-10-q-2023-08-11)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2023-07-02** (filed 2023-08-11; SEC accession 0001819974-23-000059).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997423000059/skyt-20230702.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/43a7c607-bf24-4451-a832-4e5cff8c5478.pdf).
+  Second-quarter fiscal 2023 report; discloses that disclosure controls and procedures remained not effective as of the quarter end because of material weaknesses in internal control over financial reporting. "our disclosure controls and procedures were not effective as of July 2, 2023 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
 (filing-weebit-nano-annual-report-fy2023)=
 * **Weebit Nano Limited — Appendix 4E and Annual Report for the year ended 30 June 2023** (filed 2023-08-25).
   [Original](https://investors.weebit-nano.com/site/pdf/6036278c-d1ec-4ecf-be9c-dc8ba1e945a9/Appendix-4E-and-Annual-Report.pdf).
   Weebit Nano's FY2023 annual report says its embedded ReRAM IP is commercially available in SkyWater's 130 nm CMOS process, lists full qualification in S130 among the year's highlights and calls SkyWater a partner instrumental to its progress. "Our proven embedded ReRAM intellectual property (IP) is now commercially available in SkyWater Technology's 130nm CMOS process" (Introductory section); "Weebit ReRAM fully qualified in SkyWater S130 process" (2022-2023 highlights)
   Relationships: {ref}`a technology partner's filing names SkyWater <filings-rel-partner-names-skywater>`.
   Related pages: {ref}`overview-sky130b-reram` — The report describes the commercial status of the ReRAM IP offered in SkyWater's S130 process..
+
+(filing-skywater-10-q-2023-11-09)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2023-10-01** (filed 2023-11-09; SEC accession 0001819974-23-000117).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997423000117/skyt-20231001.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/8634d45f-b73c-446c-a319-5ff48d9ade21.pdf).
+  Third-quarter fiscal 2023 report; discloses that disclosure controls and procedures remained not effective as of the quarter end because of material weaknesses in internal control over financial reporting. "our disclosure controls and procedures were not effective as of October 1, 2023 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
 
 (filing-infineon-annual-report-fy2023)=
 * **Infineon Technologies AG — Infineon Technologies Annual Report 2023** (filed 2023-11-23).
@@ -325,12 +405,40 @@ Sorted by filing date, then id.
   Relationships: {ref}`a customer's filing names SkyWater <filings-rel-customer-names-skywater>`.
   Related pages: {ref}`overview-index` — The report keeps the SkyWater line-operation agreement inherited from Cypress on the public record..
 
+(filing-skywater-def-14a-2024-04-10)=
+* **SkyWater Technology, Inc. — Definitive proxy statement for the 2024 annual meeting of stockholders** (filed 2024-04-10; SEC accession 0001140361-24-019075).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000114036124019075/ny20018380x1_def14a.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/b7768f8c-19df-4a51-8d52-e198a9f786cc.pdf).
+  The 2024 proxy statement repeats the Oxbow Realty sale-leaseback of the Bloomington fab site, updates the fiscal 2023 lease payment and outstanding balance, and shows CMI Oxbow's ownership share falling as SkyWater's public float grew. "In fiscal 2023, we paid \$4.9 million to Oxbow Realty pursuant to the lease agreement. Future contractual payments to Oxbow Realty as of December 31, 2023 were \$98.7 million" (Certain Relationships and Transactions with Related Persons, Sale Leaseback Transaction with Oxbow Realty); "CMI Oxbow Partners, LLC ("CMI Oxbow"), an affiliate of Oxbow, beneficially owns approximately 27.51% of our outstanding common stock as of the Record Date" (Certain Relationships and Transactions with Related Persons)
+  Relationships: {ref}`Oxbow ownership, management fees and property transactions <filings-rel-oxbow-related-party>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-skywater-10-q-2024-05-10)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2024-03-31** (filed 2024-05-10; SEC accession 0001819974-24-000014).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997424000014/skyt-20240331.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/ddf436d3-a775-425d-befc-43d190489d7a.pdf).
+  First-quarter fiscal 2024 report, filed a few weeks after the June 2024 auditor change was set in motion; discloses that disclosure controls and procedures remained not effective as of the quarter end because of material weaknesses in internal control over financial reporting. "our disclosure controls and procedures were not effective as of March 31, 2024 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-skywater-10-q-2024-08-07)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2024-06-30** (filed 2024-08-07; SEC accession 0001819974-24-000028).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997424000028/skyt-20240630.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/48b19fa6-fd36-4c34-9b56-e798e9b019d3.pdf).
+  Second-quarter fiscal 2024 report, the first quarterly report after the June 2024 change of auditor to KPMG LLP; discloses that disclosure controls and procedures remained not effective as of the quarter end because of material weaknesses in internal control over financial reporting. "our disclosure controls and procedures were not effective as of June 30, 2024 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
 (filing-weebit-nano-annual-report-fy2024)=
 * **Weebit Nano Limited — Appendix 4E and 2024 Annual Report for the year ended 30 June 2024** (filed 2024-08-28).
   [Original](https://investors.weebit-nano.com/site/pdf/ff240513-07ab-46f3-a651-17a5cb22204b/Appendix-4E-and-2024-Annual-Report.pdf).
   Weebit Nano's FY2024 annual report lists qualification at 125 °C in SkyWater S130 among its highlights and says missing IP in SkyWater's foundry offering delayed licensing agreements with companies wanting to manufacture at SkyWater. "Factors beyond our control, such as missing IPs in SkyWater's foundry offering, have delayed licensing agreements with product companies wanting to manufacture at SkyWater" (Introductory section); "Weebit ReRAM qualified 125⁰C in SkyWater S130" (Highlights)
   Relationships: {ref}`a technology partner's filing names SkyWater <filings-rel-partner-names-skywater>`.
   Related pages: {ref}`overview-sky130b-reram` — The report gives the partner's view of adoption of the ReRAM IP in SkyWater's S130 process..
+
+(filing-skywater-10-q-2024-11-07)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2024-09-29** (filed 2024-11-07; SEC accession 0001819974-24-000040).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997424000040/skyt-20240929.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/dd08d284-e824-44ac-b520-1b11565ad93d.pdf).
+  Third-quarter fiscal 2024 report; discloses that disclosure controls and procedures remained not effective as of the quarter end because of material weaknesses in internal control over financial reporting. "our disclosure controls and procedures were not effective as of September 29, 2024 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
 
 (filing-infineon-annual-report-fy2024)=
 * **Infineon Technologies AG — Infineon Technologies Annual Report 2024** (filed 2024-11-26).
@@ -355,6 +463,20 @@ Sorted by filing date, then id.
   Relationships: {ref}`SkyWater describes the fab's Cypress origin <filings-rel-skywater-fab-history>` · {ref}`the 2017 Process Technology License Agreement and its amendments <filings-rel-cypress-technology-license>` · {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>`.
   Related pages: {ref}`overview-index` — The 26-year figure differs from the 20 years of the S-1 that the overview's history relies on..
 
+(filing-skywater-def-14a-2025-04-08)=
+* **SkyWater Technology, Inc. — Definitive proxy statement for the 2025 annual meeting of stockholders** (filed 2025-04-08; SEC accession 0001140361-25-012823).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000114036125012823/ny20041354x1_def14a.htm) · [Wayback copy](https://web.archive.org/web/20250803205251/https://www.sec.gov/Archives/edgar/data/1819974/000114036125012823/ny20041354x1_def14a.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/f9865520-b380-4f31-9343-229aa9cf97ed.pdf).
+  The 2025 proxy statement, filed shortly before the Fab 25 purchase agreement was announced, again repeats the Oxbow Realty sale-leaseback of the Bloomington site and shows CMI Oxbow's ownership share continuing to decline. "CMI Oxbow Partners, LLC ("CMI Oxbow"), an affiliate of Oxbow, beneficially owns approximately 23.23% of our outstanding common stock as of the Record Date" (Certain Relationships and Transactions with Related Persons)
+  Relationships: {ref}`Oxbow ownership, management fees and property transactions <filings-rel-oxbow-related-party>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-skywater-10-q-2025-05-08)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2025-03-30** (filed 2025-05-08; SEC accession 0001819974-25-000018).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997425000018/skyt-20250330.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/571da460-02a1-4e04-bf37-124208325864.pdf).
+  First-quarter fiscal 2025 report, filed while the Fab 25 (Austin) purchase from Infineon was pending; lists completing the acquisition among the risk factors and discloses that disclosure controls and procedures remained not effective because of a material weakness. "our disclosure controls and procedures were not effective as of March 30, 2025 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures); "our ability to complete our acquisition of Infineon's Fab 25 facility on anticipated timing and terms" (Part I, Item 2, forward-looking statements)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>` · {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
 (filing-skywater-8-k-2025-07-03)=
 * **SkyWater Technology, Inc. — Current report, items 1.01, 2.01 and 2.03: completion of the Fab 25 acquisition** (filed 2025-07-03; SEC accession 0001193125-25-155467).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000119312525155467/d90812d8k.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/1b266a26-2e16-4886-80ee-7e7baab63f52.pdf).
@@ -376,6 +498,13 @@ Sorted by filing date, then id.
   Auditor: Deloitte & Touche LLP, 2025-09-11: "/s/ Deloitte & Touche LLP San Jose, California September 15, 2025".
   Relationships: {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>`.
   Related pages: {ref}`overview-index` — The statements give audited figures for the Austin fab that joined the Minnesota fab's owner in 2025..
+
+(filing-skywater-10-q-2025-11-12)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2025-09-28** (filed 2025-11-12; SEC accession 0001819974-25-000052).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997425000052/skyt-20250928.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/d24b279d-c983-4376-a089-7a960f374046.pdf).
+  Third-quarter fiscal 2025 report, the first full quarter after the Fab 25 purchase closed; gives the Membership Interest Purchase Agreement structure (Spansion LLC selling Spansion Fab 25, LLC) and the purchase price, and discloses a continuing material weakness. "our disclosure controls and procedures were not effective as of September 28, 2025 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures); "the Company entered into a Membership Interest Purchase Agreement with Spansion LLC ("Spansion"), an affiliate of Infineon Technologies AG, pursuant to which the Company acquired all of the issued and outstanding membership interests of Spansion Fab 25, LLC" (Notes to the condensed consolidated financial statements, Business Combination)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>` · {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
 
 (filing-infineon-annual-report-fy2025)=
 * **Infineon Technologies AG — Infineon Technologies Annual Report 2025** (filed 2025-11-27).
@@ -429,6 +558,20 @@ Sorted by filing date, then id.
   Relationships: {ref}`IonQ's acquisition of SkyWater (2026) <filings-rel-skywater-ionq-merger>`.
   Related pages: {ref}`overview-index` — The merger changes the ownership of the fab whose history the overview gives..
 
+(filing-skywater-def-14a-2026-04-27)=
+* **SkyWater Technology, Inc. — Definitive proxy statement for the 2026 annual meeting of stockholders** (filed 2026-04-27; SEC accession 0001140361-26-016806).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000114036126016806/ny20064068x1_def14a.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/640878fa-0e76-4252-97ef-295516dfc5ee.pdf).
+  The 2026 proxy statement, for a routine annual meeting held while the IonQ merger was pending, asks stockholders to ratify KPMG LLP as auditor and discloses that KPMG replaced Deloitte & Touche LLP as SkyWater's independent registered public accounting firm in mid-2024. "On June 21, 2024, the audit committee selected KPMG LLP to serve as our independent registered public accounting firm, effective as of such date, and notified Deloitte & Touche LLP ("Deloitte") of its dismissal as our independent registered public accounting firm effective as of that date" (Proposal to ratify the appointment of the independent registered public accounting firm, Change in Auditors); "Deloitte's reports on our consolidated financial statements for each of the fiscal years ended December 31, 2023 and January 1, 2023 did not contain any adverse opinion or a disclaimer of opinion, nor were they qualified or modified as to uncertainty, audit scope, or accounting principles" (Proposal to ratify the appointment of the independent registered public accounting firm, Change in Auditors)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-skywater-10-q-2026-05-08)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2026-03-29** (filed 2026-05-08; SEC accession 0001819974-26-000014).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997426000014/skyt-20260329.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/093d3206-7e3f-4bca-8e02-20c0acfb1d14.pdf).
+  First-quarter fiscal 2026 report, filed after the IonQ merger agreement was signed (2026-01-25) and while the Fab 25 (Austin) purchase price of \$206,466 thousand from Infineon's Spansion affiliate was on the balance sheet; discloses a material weakness specific to Fab 25 account reconciliation. "our disclosure controls and procedures were not effective as of March 29, 2026 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures); "related to Infineon's 200 mm fab in Austin, Texas (the "Transaction"). The purchase price for the Transaction was \$206,466" (Notes to the condensed consolidated financial statements, Business Combination)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>` · {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>` · {ref}`IonQ's acquisition of SkyWater (2026) <filings-rel-skywater-ionq-merger>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
 (filing-ionq-8-k-2026-07-31)=
 * **IonQ, Inc. — Current report: completion of the acquisition of SkyWater Technology** (filed 2026-07-31; investor-relations filing 19650888; SEC accession not retrieved).
   [Original](https://investors.ionq.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=19650888) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001824920/530109bf-a75a-43c0-bf8f-e757dffff526.pdf).
@@ -442,3 +585,17 @@ Sorted by filing date, then id.
   SkyWater reports the completion of the IonQ mergers on 2026-07-31: it became a wholly-owned subsidiary of IonQ and then merged into SkyWater Technology, LLC, and its revolving credit facility was repaid. "On July 31, 2026 (the "Closing Date"), pursuant to the Merger Agreement, (i) Merger Subsidiary 1 merged with and into the Company, with the Company surviving as a wholly-owned subsidiary of Parent" (Introductory Note); "the Registrant merged with and into SkyWater Technology, LLC (formerly known as Iris Merger Subsidiary 2 LLC), with SkyWater Technology, LLC surviving the merger" (Cover page note)
   Relationships: {ref}`IonQ's acquisition of SkyWater (2026) <filings-rel-skywater-ionq-merger>`.
   Related pages: {ref}`overview-index` — The filing dates the change of ownership of the fab whose history the overview gives..
+
+(filing-skywater-10-q-2026-08-07)=
+* **SkyWater Technology, Inc. — Quarterly report on Form 10-Q for the quarter ended 2026-06-28** (filed 2026-08-07; SEC accession 0001819974-26-000031).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997426000031/skyt-20260628.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/66d4e736-03c2-4909-86da-e9dc76376884.pdf).
+  SkyWater's last quarterly report as a Nasdaq-listed filer, covering the quarter in which the IonQ merger closed (2026-07-31); still filed under Commission file number 001-40345, and still discloses material weaknesses in internal control over financial reporting, including one specific to Fab 25 account reconciliation. "our disclosure controls and procedures were not effective as of June 28, 2026 due to the material weaknesses in our internal control over financial reporting described below" (Part I, Item 4, Controls and Procedures); "As of June 28, 2026, we have a material weakness in our revenue accounting process and a material weakness in our Fab 25 account reconciliation processes" (Part I, Item 4, Controls and Procedures)
+  Relationships: {ref}`SkyWater's auditor appointments, material weaknesses and restatements as a public company <filings-rel-skywater-governance>` · {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>` · {ref}`IonQ's acquisition of SkyWater (2026) <filings-rel-skywater-ionq-merger>`.
+  Related pages: {ref}`overview-index` — The report is one of the periodic filings the overview's account of SkyWater's public-company history draws on..
+
+(filing-skywater-15-12g-2026-08-10)=
+* **SkyWater Technology, LLC — Form 15-12G, certification and notice of termination of registration** (filed 2026-08-10; SEC accession 0000950142-26-002290).
+  [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000095014226002290/eh260818332_1512g-sky.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/9db539a8-ff58-4a9b-b002-7686653cbd62.pdf).
+  SkyWater's deregistration filing after the IonQ merger closed (2026-07-31), filed under the surviving entity's new name, SkyWater Technology, LLC, certifying that its common stock has one holder of record. "Approximate number of holders of record as of the certification or notice date: One (1)" (Form 15-12G cover)
+  Relationships: {ref}`IonQ's acquisition of SkyWater (2026) <filings-rel-skywater-ionq-merger>`.
+  Related pages: {ref}`overview-index` — The filing marks the end of SkyWater's life as a Nasdaq-listed company that the overview's history covers..

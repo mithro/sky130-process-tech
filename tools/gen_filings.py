@@ -75,7 +75,8 @@ REL_GROUPS = [
     ("Cypress era", ["cypress-fab-operations", "cypress-process-technology", "cypress-third-party-foundry",
                      "cypress-fab-sale", "cypress-technology-license", "cypress-foundry-services"]),
     ("SkyWater", ["skywater-fab-history", "skywater-ipo", "skywater-suppliers", "skywater-customers",
-                  "oxbow-related-party", "minnesota-fab-investment", "skywater-ionq-merger"]),
+                  "oxbow-related-party", "minnesota-fab-investment", "skywater-ionq-merger",
+                  "skywater-governance"]),
     ("Infineon", ["infineon-cypress-acquisition", "infineon-fab25-sale", "infineon-wafer-supply"]),
     ("Others", ["supplier-names-skywater", "customer-names-skywater", "partner-names-skywater"]),
 ]
@@ -88,6 +89,7 @@ TIMELINE = [
     ("2021-04-22", "SkyWater Technology completes its initial public offering.", "skywater-424b4-2021-04-22"),
     ("2025-06-30", "SkyWater completes the purchase of Infineon's Austin fab (Fab 25).", "skywater-8-k-2025-07-03"),
     ("2026-07-31", "IonQ completes its acquisition of SkyWater Technology.", "skywater-8-k-2026-07-31"),
+    ("2026-08-10", "SkyWater deregisters from SEC reporting following the IonQ merger.", "skywater-15-12g-2026-08-10"),
 ]
 
 IDENT_TEXT = {
