@@ -36,7 +36,7 @@ Table Ig, for "S8P12-10R*/S8PIR-10R/S8PF-10R*", gives 1.200 µm in its
 `met5` row and gives 2.000 µm in a row labelled
 `waffle_chip`;[^pdk-11] and the device page gives `RSM5` 28.5 mΩ/sq
 (limits 21.2–35.8), which the extraction table rounds to
-29 mΩ/sq.[^pdk-07][^pdk-08] On the S8PIR* reading set out at
+29 mΩ/sq.[^pdk-07][^pdk-08] On the S8PIR\* reading set out at
 {ref}`MM5 <step-162>` the 1.2 µm table applies (inference). About
 1.2 µm of Al–Cu at 28.5 mΩ/sq implies a resistivity of about
 3.4 µΩ·cm, within the range expected for sputtered Al–0.5%Cu (typical
@@ -392,7 +392,7 @@ fab (SKY130's recipe is not public); the film-by-film account is at
   reading and not a published statement; the report does not say which
   levels of a five-metal flow the exclusion covers.[^cyp-qtp-123907]
   See {ref}`overview-metal-cap`.
-* **Metal-5 minimum width.** That SKY130 is an S8PIR* flow, under which
+* **Metal-5 minimum width.** That SKY130 is an S8PIR\* flow, under which
   the minimum-CD table and periphery rules both give 1.6 µm, is our
   reading of the background page;[^pdk-02] neither table names SKY130's
   flow.

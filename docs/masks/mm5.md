@@ -23,7 +23,7 @@ on the {ref}`masks index <masks-index>`.
 | PDK mask (`masks.csv`) | "Metal 5", `MM5`, marked `X` in `Used in SKY130`[^pdk-05] |
 | Mask-level layer (`gds_layers.csv`) | `cmm5` mask 59:0, "Metal 5 mask"; waffle drop 117:4[^pdk-06] |
 | Drawn layer (`gds_layers.csv`) | `met5` drawing 72:20, "Metal 5"[^pdk-06] |
-| Minimum CD, feature / space | `MM5CD` / `MM5CDSP`: "All flows except S8PF*/S8PIR*" 0.8 / 0.8; "S8PF*/S8PIR*" 1.6 / 1.6[^pdk-03] |
+| Minimum CD, feature / space | `MM5CD` / `MM5CDSP`: "All flows except S8PF\*/S8PIR\*" 0.8 / 0.8; "S8PF\*/S8PIR\*" 1.6 / 1.6[^pdk-03] |
 | Polarity and tone | Not published; the PDK's `cmm5.nikon` checks name a polarity but not the plate's tone. On the step page's reading the resist remains where `met5` is drawn, which with a positive resist would make the plate clear-field (inference). |
 | Exposure class | i-line, an inference on the step page from the 1.6 µm rules; no public source names the tool ({ref}`machine-i-line-stepper`) |
 | Mask type (process-steps sheet) | None recorded; the sheet codes a type for the via 2, via 3 and via 4 plates only[^steps-sheet] |
@@ -41,10 +41,10 @@ Fifth level of metal interconnects;", and the PDK's Table F4 shows metal
 The `m5` rules are four: a minimum width and spacing of 1.600 µm (m5.1,
 m5.2), an enclosure of via 4 of 0.310 µm (m5.3) and a minimum area of
 4.000 µm², with probe pads of exactly 1.42 µm × 1.42 µm exempted "For all
-flows except SKY130PIR*/SKY130PF*" (m5.4).[^pdk-periph] Table 2 of
+flows except SKY130PIR\*/SKY130PF\*" (m5.4).[^pdk-periph] Table 2 of
 *Criteria & Assumptions* gives two rows for the mask, 0.8 for "All flows
-except S8PF*/S8PIR*" and 1.6 for "S8PF*/S8PIR*".[^pdk-03] The
-{ref}`MM5 <step-162>` page reads SKY130 as an S8PIR* flow, from the
+except S8PF\*/S8PIR\*" and 1.6 for "S8PF\*/S8PIR\*".[^pdk-03] The
+{ref}`MM5 <step-162>` page reads SKY130 as an S8PIR\* flow, from the
 background page's "5 levels of metal (p - penta)", "Inductor or
 Inductor-Capable (i)" and "Poly resistor (r)",[^pdk-02] so that both
 tables give 1.6 µm and the m5.4 exemption does not apply (inference on
@@ -323,7 +323,7 @@ as a guideline only."[^pdk-periph]
 | m5.1 | "Min width of met5" | 1.600 µm |
 | m5.2 | "Min spacing between two met5" | 1.600 µm |
 | m5.3 | "via4 must  be enclosed by met5 by atleast" | 0.310 µm |
-| m5.4 | "Min area of met5 (For all flows except SKY130PIR*/SKY130PF*, the rule is exempted for probe pads which are exactly 1.42um by 1.42um)" | 4.000 µm² |
+| m5.4 | "Min area of met5 (For all flows except SKY130PIR\*/SKY130PF\*, the rule is exempted for probe pads which are exactly 1.42um by 1.42um)" | 4.000 µm² |
 | pad.3 | "Max area of hugePad NOT top_metal" | 30000 µm² |
 | nsm.3 | "Min spacing, no overlap, between NSM_keepout to […] metX.dg (X=1 to 5) and cmmX.mk (X=1 to 5). Exempt the following from the check: (a) cell name "nikon\*" and (b) diff ring inside areaid.sl" (AL) | 1.000 µm |
 | nsm.3a | "Min enclosure of […] metX.dg (X=1 to 5) and cmmX.mk (X=1 to 5) by areaid.ft. […]" | 3.000 µm |
@@ -346,8 +346,8 @@ periphery rules do not list: the bond-pad enclosure of 2.7 (pad.4/4a), a
 moduleCutAREA & q0met5notBuildSpace" (x.12a), "2.50um min. enclosure of
 Etest pad by met5" (scribe.13) and "3.295 min. spacing of target & met5"
 (mf.24).[^pdk-errors] Table 2 of *Criteria & Assumptions* gives `MM5CD`
-and `MM5CDSP` as 0.8 and 0.8 for "All flows except S8PF*/S8PIR*" and
-1.6 and 1.6 for "S8PF*/S8PIR*"; Table 4 adds, in its "Material
+and `MM5CDSP` as 0.8 and 0.8 for "All flows except S8PF\*/S8PIR\*" and
+1.6 and 1.6 for "S8PF\*/S8PIR\*"; Table 4 adds, in its "Material
 Thicknesses" block, the metal-5 antenna thicknesses of 2 and 1.2 and, in
 its "Waffling / Pattern Density" block, the 0.3 of `MMPDrange`; Table 7 a
 "Huge metal X min. W and L" of 3 (`HugeM`) in its column headed "CD"; and
@@ -460,7 +460,7 @@ them.
   waffle-drop purpose is not published; the renders' fill layer 59:28 is
   not in `gds_layers.csv`, and neither the periphery rules nor the Error
   Messages page gives a metal-5 density rule.[^pdk-06][^pdk-periph][^pdk-errors][^mask-renders]
-* That SKY130 is an S8PIR* flow, so that the 1.6 µm row of Table 2
+* That SKY130 is an S8PIR\* flow, so that the 1.6 µm row of Table 2
   applies, is the step page's reading; neither table names SKY130's
   flow.[^pdk-03][^pdk-02]
 * The PDK does not describe the "nikon cross" or say which form a mask
