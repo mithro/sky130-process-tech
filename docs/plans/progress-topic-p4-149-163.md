@@ -34,8 +34,8 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 151-L1 | Low | fixed | via3.1a 0.8 µm square not mentioned (151:51-52, 159:47-48) |
 | 151-L2 | Low | fixed | per-contact via count stated as fact, not reading (151:104-108) |
 | 151-L3 | Low | fixed | Hartsough citation implies corroboration it can't give (151:36-40, Open questions) |
-| 152-L1 | Low | open | CD-bias arithmetic convention unstated (152:77-79) |
-| 152-L2 | Low | open | alignment-target naming inconsistency within page (152:151-154) |
+| 152-L1 | Low | fixed | CD-bias arithmetic convention unstated (152:77-81) |
+| 152-L2 | Low | fixed | alignment-target naming inconsistency within page (152:155-158) |
 | 153-M1 | Medium | open | "every capm plate tied to metal4" overstated vs 155's correct wording (153:78-83) |
 | 153-L1 | Low | deferred | metal-cap/barrier sweep — S8TNV-5R quote scope (153:31-33, :221) |
 | 153-L2 | Low | open | solvent-clean citation placement implies chemistry claim (153:144-150) |
