@@ -1633,8 +1633,8 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5303558A/en
 
-:::{dropdown} US 5,578,362 A — legal status shown as Expired - Lifetime; expiry not fully bounded from the records retrieved, estimated no later than 2015-02-28
-:name: patent-gp25461879
+(patent-gp25461879)=
+## US 5,578,362 A — Polymeric polishing pad containing hollow polymeric microelements
 
 **Title:** Polymeric polishing pad containing hollow polymeric microelements
 
@@ -1642,7 +1642,7 @@ families and members are counted.
 **Inventors:** Heinz F. Reinhardt; John V. H. Roberts; Harry G. McClain; William D. Budinger; Elmer W. Jensen
 **Dates:** priority 1992-08-19, filing 1994-07-12, grant 1996-11-26
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5578362A, retrieved 2026-09-14)
-**Estimated expiry:** 2015-02-28 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to JP3013105B2 (status shown: Expired - Lifetime; Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime), running to 2015-02-28
+**Estimated expiry:** 2015-02-28 — all 30 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3013105B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `25461879` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1688,8 +1688,10 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PAD-RODEL.
 
+**Notes:**
+* Round-1 review correction (M9): JP2008238399A is a divisional of JPH08500622A (filed 1993-08-02, a member of this same family); under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own, so the correct bound is 1993-08-02 + 20 years, already past today, not 2008-05-19 + 20 years as an earlier version of this dataset computed. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097, retrieved 2026-09-18.
+
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5578362A/en
-:::
 
 (patent-gp27479272)=
 ## US 5,693,203 A — Sputtering target assembly having solid-phase bonded interface
@@ -3012,8 +3014,8 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5707498A/en
 
-:::{dropdown} US 6,170,428 B1 — legal status shown as Expired - Lifetime; expiry not fully bounded from the records retrieved, estimated no later than 2017-07-15
-:name: patent-gp24728963
+(patent-gp24728963)=
+## US 6,170,428 B1 — Symmetric tunable inductively coupled HDP-CVD reactor
 
 **Title:** Symmetric tunable inductively coupled HDP-CVD reactor
 
@@ -3021,7 +3023,7 @@ families and members are counted.
 **Inventors:** Fred C. Redeker; Farhad Moghadam; Hiroji Hanawa; Tetsuya Ishikawa; Dan Maydan; Shijian Li; Brian Lue; Robert J. Steger; Manus Wong; Yaxin Wong; Ashok K. Sinha
 **Dates:** priority 1996-07-15, filing 1996-07-15, grant 2001-01-09
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6170428B1, retrieved 2026-09-14)
-**Estimated expiry:** 2017-07-15 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to EP0819780B1 (status shown: Expired - Lifetime; Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime), running to 2017-07-15
+**Estimated expiry:** 2017-07-15 — all 13 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of EP0819780B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `24728963` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3051,8 +3053,10 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HDP-REACTOR-AMAT.
 
+**Notes:**
+* Round-1 review correction (M9): JP2008091938A is a divisional of JPH10116826A (filed 1997-07-15, a member of this same family); under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own, so the correct bound is 1997-07-15 + 20 years, already past today, not 2007-11-12 + 20 years as an earlier version of this dataset computed. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097, retrieved 2026-09-18.
+
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6170428B1/en
-:::
 
 (patent-gp24820519)=
 ## US 6,033,943 A — Dual gate oxide thickness integrated circuit and process for making same
@@ -5964,8 +5968,8 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7250334B2/en
 
-:::{dropdown} US 7,449,416 B2 — legal status shown as Expired - Fee Related; expiry not fully bounded from the records retrieved, estimated no later than 2026-04-18
-:name: patent-gp35448183
+(patent-gp35448183)=
+## US 7,449,416 B2 — Apparatus and plasma ashing process for increasing photoresist removal rate
 
 **Title:** Apparatus and plasma ashing process for increasing photoresist removal rate
 
@@ -5973,7 +5977,7 @@ families and members are counted.
 **Inventors:** Alan F. Becknell; Philip Hammar; David Ferris
 **Dates:** priority 2004-09-01, filing 2005-09-01, grant 2008-11-11
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US7449416B2, retrieved 2026-09-14)
-**Estimated expiry:** 2026-04-18 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US7449416B2 (status shown: Expired - Fee Related; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related), running to 2026-04-18
+**Estimated expiry:** 2026-04-18 — all 16 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7449416B2 (Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment); status shown: Expired - Fee Related)
 **Google Patents family ID:** `35448183` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -6013,8 +6017,10 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-ASHER-AXCELIS.
 
+**Notes:**
+* Round-1 review correction (M9): JP2012191242A is a divisional of JP2008512004A (filed 2005-09-01, a member of this same family); under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own, so the correct bound is 2005-09-01 + 20 years, already past today, not 2012-07-02 + 20 years as an earlier version of this dataset computed. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097, retrieved 2026-09-18.
+
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7449416B2/en
-:::
 
 :::{dropdown} US 7,705,268 B2 — shown as in force; estimated expiry 2026-12-17
 :name: patent-gp36337293

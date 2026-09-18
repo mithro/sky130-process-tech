@@ -57,9 +57,9 @@ relation:
 | | Families | Members |
 |---|---|---|
 | Total | 211 | 1345 |
-| Shown as expired | 171 | 1010 |
+| Shown as expired | 174 | 1069 |
 | Shown as in force | 35 | 267 |
-| Status unknown | 5 | 68 |
+| Status unknown | 2 | 9 |
 
 ## Other views
 

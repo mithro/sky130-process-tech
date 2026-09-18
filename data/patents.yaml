@@ -6714,10 +6714,10 @@ families:
   expiry:
     date: 2015-02-28
     estimated: true
-    basis: 'not fully bounded from the records retrieved; the latest recorded or estimated term belongs
-      to JP3013105B2 (status shown: Expired - Lifetime; Google Patents ''Anticipated expiration'' (IFI
-      Claims estimate); status shown: Expired - Lifetime), running to 2015-02-28'
-  expired: unknown
+    basis: 'all 30 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of JP3013105B2 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US5578362A
     country: US
@@ -7164,6 +7164,16 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-PAD-RODEL.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5578362A/en
+  notes:
+  - 'Round-1 review correction (M9): JP2008238399A is a divisional of JPH08500622A (filed 1993-08-02,
+    a member of this same family); under the Japanese Patent Act a divisional''s term is deemed to run
+    from the original application''s filing date, not its own, so the correct bound is 1993-08-02 + 20
+    years, already past today, not 2008-05-19 + 20 years as an earlier version of this dataset computed.
+    Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have
+    been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of
+    a patent ends 20 years after the filing date of the patent application"), English translation, Japanese
+    Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097,
+    retrieved 2026-09-18.'
 - id: GP27479272
   family:
     source: Google Patents family ID
@@ -12640,10 +12650,10 @@ families:
   expiry:
     date: 2017-07-15
     estimated: true
-    basis: 'not fully bounded from the records retrieved; the latest recorded or estimated term belongs
-      to EP0819780B1 (status shown: Expired - Lifetime; Google Patents ''Anticipated expiration'' (IFI
-      Claims estimate); status shown: Expired - Lifetime), running to 2017-07-15'
-  expired: unknown
+    basis: 'all 13 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of EP0819780B1 (Google Patents ''Anticipated expiration'' (IFI Claims
+      estimate); status shown: Expired - Lifetime)'
+  expired: true
   members:
   - number: US6170428B1
     country: US
@@ -12849,6 +12859,16 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-HDP-REACTOR-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6170428B1/en
+  notes:
+  - 'Round-1 review correction (M9): JP2008091938A is a divisional of JPH10116826A (filed 1997-07-15,
+    a member of this same family); under the Japanese Patent Act a divisional''s term is deemed to run
+    from the original application''s filing date, not its own, so the correct bound is 1997-07-15 + 20
+    years, already past today, not 2007-11-12 + 20 years as an earlier version of this dataset computed.
+    Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have
+    been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of
+    a patent ends 20 years after the filing date of the patent application"), English translation, Japanese
+    Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097,
+    retrieved 2026-09-18.'
 - id: GP24820519
   family:
     source: Google Patents family ID
@@ -23708,10 +23728,10 @@ families:
   expiry:
     date: 2026-04-18
     estimated: true
-    basis: 'not fully bounded from the records retrieved; the latest recorded or estimated term belongs
-      to US7449416B2 (status shown: Expired - Fee Related; Google Patents ''Adjusted expiration'' (IFI
-      Claims estimate, includes term adjustment); status shown: Expired - Fee Related), running to 2026-04-18'
-  expired: unknown
+    basis: 'all 16 members are shown as expired, lapsed or abandoned, or are past their estimated term;
+      the latest estimate is that of US7449416B2 (Google Patents ''Adjusted expiration'' (IFI Claims estimate,
+      includes term adjustment); status shown: Expired - Fee Related)'
+  expired: true
   members:
   - number: US20060046470A1
     country: US
@@ -23988,6 +24008,16 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-ASHER-AXCELIS.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7449416B2/en
+  notes:
+  - 'Round-1 review correction (M9): JP2012191242A is a divisional of JP2008512004A (filed 2005-09-01,
+    a member of this same family); under the Japanese Patent Act a divisional''s term is deemed to run
+    from the original application''s filing date, not its own, so the correct bound is 2005-09-01 + 20
+    years, already past today, not 2012-07-02 + 20 years as an earlier version of this dataset computed.
+    Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have
+    been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of
+    a patent ends 20 years after the filing date of the patent application"), English translation, Japanese
+    Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097,
+    retrieved 2026-09-18.'
 - id: GP36337293
   family:
     source: Google Patents family ID
