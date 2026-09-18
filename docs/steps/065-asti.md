@@ -98,14 +98,21 @@ fab (SKY130's energy and dose are not public):
   arsenic charge; Wikipedia lists "Arsine gas or phosphine gas" as the
   sources for arsenic and phosphorus.[^wiki-implant] The PDK's "N Tip
   (As)" row confirms the species for SKY130.[^pdk-03]
-* **Energy.** A few keV to about 20 keV (typical of the
-  node),[^txt-01][^rev-05] chosen for the ITRS-class 27–45 nm junction
-  depth after anneal.[^itrs-01] The implant passes through the screen
-  oxide, which absorbs part of the range and randomises the beam.
+* **Energy.** A few keV to a few tens of keV (typical of the
+  node).[^txt-01][^rev-05] ITRS 2001 defines the extension junction
+  depth at the channel as 0.55 times the physical gate length; for
+  SKY130's 0.15 µm drawn gate that rule gives roughly 80 nm, against the
+  27–45 nm its 2001 column tabulates for a 65 nm-gate MPU, so the
+  SKY130 tip is deeper than the roadmap's leading-edge entry and the
+  energy is correspondingly higher (our reading of the
+  roadmap).[^itrs-01] The implant passes through the screen oxide, which
+  absorbs part of the range and randomises the beam.
 * **Dose.** Of order 10¹⁴–10¹⁵ cm⁻² (typical).[^txt-01] Above roughly
-  10¹⁴–10¹⁵ cm⁻² for arsenic "the amount of crystallographic damage can
-  be enough to completely amorphize the surface",[^wiki-implant] so the
-  implanted layer is amorphous and regrows by {term}`solid-phase epitaxy` at
+  10¹⁴ cm⁻² at room temperature, a heavy ion such as arsenic amorphises
+  the silicon surface (typical value);[^txt-01][^rev-05] "the amount of
+  crystallographic damage can be enough to completely amorphize the
+  surface",[^wiki-implant] so the implanted layer is amorphous and
+  regrows by {term}`solid-phase epitaxy` at
   {ref}`TIPRTAD <step-075>`, which gives high activation but leaves
   end-of-range defects at the old amorphous/crystalline boundary
   ({ref}`category-implant`).

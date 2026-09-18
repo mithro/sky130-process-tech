@@ -78,8 +78,11 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
   used so that the junction is deeper and more graded (LDD
   practice).[^txt-04]
 * **Dose.** Of order 10¹³ cm⁻² (typical of an LDD);[^txt-04] below the
-  arsenic amorphisation threshold of roughly 10¹⁴–10¹⁵
-  cm⁻²,[^wiki-implant] so — unlike {ref}`ASTI <step-065>` — the
+  room-temperature amorphisation threshold for arsenic, which is of
+  order 10¹⁴ cm⁻² (typical value)[^rev-05][^txt-01] — above which "the
+  amount of crystallographic damage can be enough to completely
+  amorphize the surface"[^wiki-implant] — so, unlike
+  {ref}`ASTI <step-065>`, the
   silicon stays crystalline and the implant leaves point-defect damage
   rather than an amorphous layer. That changes what the halo boron
   sees ({ref}`LDBHI <step-073>`) and how much transient enhanced
