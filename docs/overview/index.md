@@ -712,7 +712,11 @@ are the places where it changes the answer.
   first open the cap. Liu and Kuo etched TiW in CF₄/O₂, CF₄/Cl₂ and
   CF₄/HCl and report that "Both F and Cl are effective etchants for the
   titanium tungsten film";[^liu-2007-tiw] Min et al. characterise TiN
-  removal in a Cl₂/Ar plasma.[^min-2008] Either cap can therefore be
+  removal in a Cl₂/Ar plasma.[^min-2008] (The selectivity figures the
+  two literatures publish are not directly comparable — TiW against
+  nitride in a CF₄-based plasma, TiN against oxide in a
+  chlorine-majority one — so they bear on the chemistry, not on which
+  cap is present.) Either cap can therefore be
   opened on the same etcher, but a TiW cap is usually opened with a
   fluorine step and a TiN cap can be cleared in the chlorine chemistry
   that follows it ({ref}`MM1E <step-114>`, {ref}`MM3E <step-140>`,

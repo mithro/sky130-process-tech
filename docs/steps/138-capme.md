@@ -64,16 +64,18 @@ much wider "M3 (plate 1)";[^pdk-07] read literally, that shows the
 dielectric removed outside the plate, but the drawing is a schematic
 and cannot show a few nanometres of residual film.
 
-Against the literal reading stands the selectivity available. For a
-TiW plate the only public number is Liu and Kuo's: etching TiW in
-CF₄-based plasmas they report that "an etch selectivity of greater than
-2 was achieved under the low ion bombardment condition" against
-plasma-enhanced CVD silicon nitride.[^liu-2007-tiw] At a selectivity of
-2, clearing 0.1 µm of plate would cost some 50 nm of dielectric — more
+Against the literal reading stands the selectivity available, so far as
+it is published. For a TiW plate the only figure this reference has
+found is Liu and Kuo's: etching TiW in CF₄-based plasmas they report
+that "an etch selectivity of greater than 2 was achieved under the low
+ion bombardment condition" against plasma-enhanced CVD silicon
+nitride.[^liu-2007-tiw] That is a floor they reached, not a maximum they
+measured, and the abstract gives no upper figure. Taken at that floor it
+is an illustration rather than a prediction: an etch clearing 0.1 µm of
+plate at a selectivity of 2 would cost some 50 nm of dielectric, more
 than the whole capacitor dielectric on this reference's estimate (our
-arithmetic) — so a fluorine-driven TiW etch cannot stop cleanly on a
-20–30 nm film. The comparable published figure for the other plate
-material is four times better: the Texas Instruments patent, whose top
+arithmetic). What can be said is that no published TiW figure shows the
+margin such an etch needs. The Texas Instruments patent, whose top
 electrode is TiN and whose dielectric is silicon-based, reports that
 "an etch rate selectivity of the TiN to the silicon comprising
 dielectric layer is at least 8:1", and its worked Example 1 does much
@@ -87,12 +89,20 @@ wavelength … was used to allow the TiN etch to endpoint on the thin
 silicon oxide layer".[^pat-mim-ti-etch] That is a published
 stop-on-dielectric etch of a MiM top plate over an aluminium bottom
 electrode, on a dielectric ten times thinner than the plate — the
-operation this step performs — and it is the strongest public reason to
-read the SKY130 recipe as chlorine-majority with a small fluorine
-addition rather than as a fluorine-driven etch (inference). It is also
-a reason to expect the plate to be TiN rather than TiW, since the
-210:1 figure is a TiN number and the only published TiW number is 2
-({ref}`CAPTIW1 <step-136>`).
+operation this step performs.
+
+The two sets of numbers are not directly comparable, and this page does
+not treat them as though they were: Liu and Kuo etch **TiW** against
+**silicon nitride** in a **CF₄-based** plasma, while the TI figures are
+**TiN** against silicon **oxide** in a **chlorine-majority** chemistry
+with 10 sccm of CHF₃ — a different film, a different dielectric and a
+different chemistry.[^liu-2007-tiw][^pat-mim-ti-etch] What the
+comparison supports is the chemistry: a chlorine-majority recipe with a
+small fluorine addition is the one for which a stop on a thin
+silicon-based dielectric is publicly demonstrated, and this reference
+reads the SKY130 recipe that way (inference). It is a consideration that
+{ref}`CAPTIW1 <step-136>` weighs in choosing between a TiW and a TiN
+plate, not a settled argument about the plate material.
 
 What the etch would have left to stop on if it did cut through depends
 on the unresolved metal-3 cap. If the cap is TiW — the same material as
@@ -123,13 +133,15 @@ and Petri, Henry and Sadeghi's[^petri-1992]), so fluorine-based
 chemistries attack the tungsten-rich TiW readily; Liu and Kuo,
 etching TiW in CF₄/O₂, CF₄/Cl₂ and CF₄/HCl plasmas, found both
 fluorine and chlorine effective etchants, with the rate set by the
-etchant concentration and the ion energy. Their selectivity to PECVD
-silicon nitride, however, was only "greater than 2 … under the low ion
-bombardment condition",[^liu-2007-tiw] against the "at least 8:1" the
-TI patent reports for a TiN top electrode over a silicon-based
-dielectric;[^pat-mim-ti-etch] at a selectivity of 2 an etch clearing
-0.1 µm of TiW would consume more dielectric than the capacitor has (our
-arithmetic). Chlorine
+etchant concentration and the ion energy. The only selectivity they
+report against plasma-enhanced CVD silicon nitride is "greater than 2 …
+under the low ion bombardment condition" — a floor, with no upper figure
+given[^liu-2007-tiw] — where the TI patent reports "at least 8:1" for a
+TiN top electrode over a silicon-based dielectric in a
+chlorine-majority chemistry;[^pat-mim-ti-etch] the two are not directly
+comparable (different film, dielectric and chemistry), and at that floor
+an etch clearing 0.1 µm of TiW would consume more dielectric than the
+capacitor has (our arithmetic). Chlorine
 also etches both metals — Fischl and Hess studied tungsten in
 chlorine discharges[^fischl-1987] — and the TI recipe's majority
 Cl₂ (or Br₂) with a small fluorocarbon addition[^pat-mim-ti-etch] is,
@@ -360,10 +372,11 @@ end (SKY130's recipe is not public):
   that the dielectric is patterned with the plate) is not public. The
   PDK's schematic cross-section draws the dielectric only under the
   plate,[^pdk-07] which read literally favours the latter; we describe
-  the former because the only published TiW-to-nitride selectivity is
-  "greater than 2"[^liu-2007-tiw] — too low for an etch that must land
-  on 20–30 nm — and because, if the metal-3 cap is the same TiW as the
-  plate, a through-etch has no selective stop (inference). A
+  the former because no published TiW-to-dielectric selectivity shows
+  the margin such an etch needs — the only figure found is a floor of
+  "greater than 2"[^liu-2007-tiw] — and because, if the metal-3 cap is
+  the same TiW as the plate, a through-etch has no selective stop
+  (inference). A
   rate-controlled stop of the Philips kind[^pat-mim-philips] would be
   possible, and would be much easier if the metal-3 cap were the TiN of
   the stack qualified in 2014;[^cyp-qtp-123907] see
