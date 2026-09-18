@@ -36,15 +36,18 @@ following steps do, and this reference accordingly describes two
 implants between this mask and its etch. The `tunm`
 rules (function: "Defines SONOS FETs") give the geometry: minimum width
 0.410 µm (tunm.1), minimum spacing 0.500 µm (tunm.2), an extension of
-`tunm` beyond the poly-over-active gate of 0.095 µm (tunm.3) and the
+`tunm` beyond the poly-over-active gate of 0.095 (tunm.3; the published
+table leaves the unit cell empty — µm by analogy with
+tunm.4)[^pdk-periph] and the
 same 0.095 µm clearance to any other gate (tunm.4); "(poly and diff) may
 not straddle tunm" (tunm.5); "Tunm outside deep n-well is not allowed"
 (tunm.6a); a minimum area of 0.672 µm² (tunm.7); and `tunm` "must be
 enclosed by areaid.ce" (tunm.8),[^pdk-periph] the "Memory (SRAM) core
 cell identifier" layer.[^pdk-06] A separate rule on the thick-oxide
 layer, "Hvi must not overlap tunm" (hvi.4),[^pdk-periph] keeps the
-memory transistor out of the 5 V gate-oxide regions defined at
-{ref}`LVOM <step-044>`.
+memory transistor out of the 5 V thick-oxide regions, which designers
+draw as `hvi` and which are printed as the complement of the
+{ref}`LVOM <step-044>` window.
 
 Together these say that the tunnel window is drawn tightly around the
 gate of each SONOS transistor, that every memory cell sits inside a
@@ -72,10 +75,11 @@ node (130nm)",[^pdk-02] and SkyWater lists "SONOS non-volatile memory
 functionality" among the features the process offers as
 standard.[^ann-11] The memory transistor is a MOSFET whose gate
 dielectric is an oxide–nitride–oxide sandwich that stores charge in
-the nitride; the PDK offers it as a two-transistor cell, "a SONOS
-Control Gate (CG) in series with a CMOS Select Gate", in which
-"Charge injected from the Si substrate across the thin tunnel oxide
-by Fowler-Nordheim tunneling is trapped in the Nitride (N)
+the nitride; the PDK supports a two-transistor cell and shows "the
+schematic for the 2-T SONOS memory cell".[^pdk-07] Cypress describes it
+as "a SONOS Control Gate (CG) in series with a CMOS Select Gate", in
+which "charge injected from the Si substrate across the thin tunnel
+oxide by Fowler-Nordheim tunneling is trapped in the Nitride (N)
 layer".[^cyp-25] A 2011 Cypress/UMC press release says that the
 65 nm S65 SONOS process "only requires three additional mask layers to
 a standard CMOS process";[^cyp-22] it gives no mask count for the
@@ -170,7 +174,7 @@ and the pre-oxidation clean as part of those steps (see the
   existence (SkyWater statement); use at this mask is an inference.
 * **Defect inspection — KLA-Tencor AIT**, our reading of "AIT"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-01]
-  Strength: medium.
+  Strength: weak — the source can no longer be checked.
 
 ## Resources required
 
@@ -346,7 +350,9 @@ and the pre-oxidation clean as part of those steps (see the
     statement), filed 2021-03-22. <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
 [^job-01]: Indeed, *Skywater Technology Foundry Jobs, Employment in
     Bloomington, MN* (listing page; Defect Technician 2 posting),
-    retrieved 2026-08-30; listings expire. <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
+    retrieved 2026-08-30; listings expire. No longer retrievable at the
+    time of the final review; no Wayback capture exists.
+    <https://www.indeed.com/q-skywater-technology-foundry-l-bloomington,-mn-jobs.html>
 [^pap-01]: M. H. White, D. A. Adams and J. Bu, "On the go with SONOS",
     *IEEE Circuits and Devices Magazine* **16**(4), 22–31 (2000).
     <https://doi.org/10.1109/101.857747>
