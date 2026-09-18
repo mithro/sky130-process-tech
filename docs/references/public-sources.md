@@ -14905,7 +14905,9 @@ Tier: deep dive.
 A table of DRC message IDs, rule names and descriptions; the page says
 the file "provides a raw description for many of the automated DRC
 rules that are checked by SkyWater as part of the acceptance criteria
-for GDS data". Several descriptions give values for rules the periphery
+for GDS data" — the page calls the file `messages.csv`, though it is
+served at `docs/rules/errors.csv` in the repository and both URLs
+above resolve. Several descriptions give values for rules the periphery
 tables list as "N/A" — `pwbm.5` "0.84 min. spacing of pwbm_holes",
 `pwde.6` "1.00 min. enclosure of pwde_uhvi by dnwell_uhvi", `rpm.10` "2
 min. spacing of rpmNotXmt & pwbm" — and some differ from them (`lvtn.3b`
