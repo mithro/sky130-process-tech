@@ -349,10 +349,9 @@ public.
   {ref}`wet bench page <machine-wet-bench>` assigns those cleans.
 * **Thin oxides.** {ref}`TUNME <step-039>` and
   {ref}`GOXETCH <step-046>` etch thin oxides with dilute HF or BOE, as
-  their pages read them; a Cypress embedded-SONOS patent names BOE for
-  both operations (10:1 with surfactant for the pad oxide, and a BOE etch
-  under similar conditions for the thick gate oxide), with 20:1 BOE or
-  50:1 HF among its alternatives for the pad oxide;[^pat-04] slow, buffered etches keep such steps
+  their pages read them; a Cypress embedded-SONOS patent that may still
+  be in force names the chemistries it uses for both operations, in the
+  collapsed note below this list; slow, buffered etches keep such steps
   controllable.[^wiki-boe][^kikuyama-1994]
 * **The nitride strip.** The {ref}`NS19 <step-013>` page reads the
   isolation nitride strip as hot phosphoric acid, whose water content
@@ -374,6 +373,13 @@ public.
 * **Peroxide in polishing.** The tungsten polishes list hydrogen
   peroxide as the slurry oxidiser ({ref}`category-cmp`); the slurry
   itself belongs to the CMP consumables class.
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The Cypress embedded-SONOS patent names BOE for both operations (10:1
+with surfactant for the pad oxide, and a BOE etch under similar
+conditions for the thick gate oxide), with 20:1 BOE or 50:1 HF among
+its alternatives for the pad oxide.[^pat-04]
+:::
 
 ## Related pages
 

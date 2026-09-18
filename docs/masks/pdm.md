@@ -91,8 +91,13 @@ that reading (our reading), but the PDK does not define either variant.
 Lee found that the silicon nitride coverage of the scribe region can
 carry sawing damage towards the active region, and that "appropriate
 design of the amorphous Si3N4 layer in the scribe region is
-essential";[^lee-2018] a TSMC patent describes parametric testlines in
-the scribe line.[^pat-testline-tsmc]
+essential";[^lee-2018] a TSMC patent that may still be in force is
+cited here too, in the collapsed note below this paragraph.
+
+:::{dropdown} From a patent shown as in force (US 7,679,384; estimated expiry 2028-06-06) — open to read
+A TSMC patent describes parametric testlines in the scribe
+line.[^pat-testline-tsmc]
+:::
 
 **Polyimide, redistribution and packaging.** Several PDK entries set the
 opening against layers above it. Table F4 of the *Summary of Key

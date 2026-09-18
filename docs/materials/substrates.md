@@ -286,9 +286,9 @@ conditions of their own. SKY130's wafer specification and monitor plans
 are not public.
 
 * **Bulk wafer, no epitaxial layer.** The {ref}`SMAT <step-001>` page reads
-  S130's "Bulk" substrate[^skw-02] as a polished CZ wafer, notes that the
-  Cypress SONOS patent allows a bulk wafer or one with an epitaxial
-  layer,[^pat-04] and leaves open whether the original S8 wafer was
+  S130's "Bulk" substrate[^skw-02] as a polished CZ wafer, notes what a
+  Cypress patent that may still be in force allows (collapsed note below
+  this list), and leaves open whether the original S8 wafer was
   epitaxial. The step pages rely on STI, retrograde wells and the optional
   deep N-well for latch-up control, the combination the ITRS says reduces
   the need for epi.[^itrs-01]
@@ -319,6 +319,11 @@ are not public.
   public SKY130 test tile "consists of a grid of probe
   points",[^raw-data-testtile-prop] and it and monitor wafers answer
   different questions (the step page's reading).
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The Cypress SONOS patent allows a bulk wafer or one with an epitaxial
+layer.[^pat-04]
+:::
 
 ## Related pages
 

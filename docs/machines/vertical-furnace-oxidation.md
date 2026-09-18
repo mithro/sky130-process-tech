@@ -316,12 +316,11 @@ and thicknesses are not public.
   furnace's load-lock ambient and ramp are part of the thickness
   budget.[^pat-loadlock-kokusai]
 * **The ONO stack in one furnace.** The {ref}`ONO <step-040>` page cites
-  a Cypress patent in which the blocking layer is preferably "formed in
-  the same processing tool as is both the charge trapping layer(s) … and
-  the tunneling layer … without removing the substrate between
-  operations",[^pat-03] and SkyWater lists "LPCVD oxide/nitride/oxide"
-  among its furnace processes.[^skw-01] The page therefore spans this
-  class and the {ref}`LPCVD class <machine-vertical-furnace-lpcvd>`.
+  a Cypress patent that may still be in force on whether the stack is
+  formed in one tool — the passage is in the collapsed note below this
+  list — and SkyWater lists "LPCVD oxide/nitride/oxide" among its
+  furnace processes.[^skw-01] The page therefore spans this class and
+  the {ref}`LPCVD class <machine-vertical-furnace-lpcvd>`.
 * **Furnace or rapid thermal oxidation.** Five of the six pages offer
   single-wafer rapid thermal oxidation — as an equal option for
   {ref}`LVGOX <step-047>` and {ref}`IOX45 <step-063>` and as the
@@ -344,6 +343,13 @@ and thicknesses are not public.
   SKY130's recipe is not public); SkyWater's furnace list has "Ar anneal to 1150C" and
   "N2 anneal to 1150C".[^skw-01] The ambient of that anneal and of the
   cool-down affects the interface-state density.[^razouk-1979]
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+In the Cypress patent the blocking layer is preferably "formed in the
+same processing tool as is both the charge trapping layer(s) … and the
+tunneling layer … without removing the substrate between
+operations".[^pat-03]
+:::
 
 ## Related pages
 
