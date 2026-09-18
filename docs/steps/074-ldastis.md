@@ -69,7 +69,7 @@ An industry-generic post-implant strip and pre-anneal clean for a
 
 1. **Plasma ash.** Downstream microwave or RF oxygen plasma with
    nitrogen[^fujimura-1990] or water vapour[^fujimura-1994] additions;
-   a cooler first stage — "low-temperature (<220 °C)"[^pat-strip-mosel]
+   a cooler first stage — "low-temperature (<220° C.)"[^pat-strip-mosel]
    — to open the crust without {term}`popping`,[^pat-strip-mosel] then a hot
    stage to clear the bulk, with optical-emission {term}`endpoint` and a timed
    over-ash. SkyWater's ashers offer these chemistries: "Gasonic PEP,
