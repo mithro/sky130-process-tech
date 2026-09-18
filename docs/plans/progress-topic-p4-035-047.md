@@ -12,8 +12,8 @@ arithmetic before being fixed or declined.
 | 035-M1 | 035-tunm.md | fixed | Cypress quotation put inside a PDK attribution |
 | 036-M1 | 036-tunarce.md | fixed | replaced uncited "few nm resist loss" with the ARC-thickness+overetch statement the page's own Selectivity section already supports |
 | 036-M2 | 036-tunarce.md | fixed | widened to "tens to several hundred keV", citing PTSI/DEPI |
-| 037-M1 | 037-ptsi.md | open | original/star cell W/L pairing stated as fact |
-| 037-M2 | 037-ptsi.md | open | `lvtn` block reading overstated vs step 015 |
+| 037-M1 | 037-ptsi.md | fixed | original/star cell W/L pairing stated as fact |
+| 037-M2 | 037-ptsi.md | fixed | `lvtn` block reading overstated vs step 015 |
 | 038-M1 | 038-depi.md | open | 20 V zero-Vt structure identification untraced |
 | 038-M2 | 038-depi.md | open | arsenic inference not carried into later bullets |
 | 040-M1 | 040-ono.md, 039-tunme.md | open | 1.5-3 nm tunnel oxide misattributed to pat-04 |
@@ -34,9 +34,9 @@ arithmetic before being fixed or declined.
 | 035-L3 | 035-tunm.md | fixed | tunm.3 unit not given by the table |
 | 035-L4 | 035-tunm.md | fixed | job-01 no longer retrievable |
 | 036-L2 | 036-tunarce.md | fixed | resolved as a side effect of the 036-M1 fix (the unsupported figure is gone) |
-| 037-L1 | 037-ptsi.md | open | US 5,963,801 context (n-well, "merely exemplary") |
-| 037-L2 | 037-ptsi.md | open | Axcelis indium cross-validation addition |
-| 037-L3 | 037-ptsi.md, 039-tunme.md, 040-ono.md | open | silent typo correction in PDK table (-38 -> -3.8) |
+| 037-L1 | 037-ptsi.md | fixed | US 5,963,801 context (n-well, "merely exemplary") |
+| 037-L2 | 037-ptsi.md | fixed | Axcelis indium cross-validation addition |
+| 037-L3 | 037-ptsi.md, 039-tunme.md, 040-ono.md | fixed | silent typo correction in PDK table (-38 -> -3.8) |
 | 038-L1 | 038-depi.md | open | nfet_05v0_nvt range 0.01 V narrow |
 | 038-L2 | 038-depi.md | open | "2 nm oxide" narrower than patent range |
 | 038-L3 | 038-depi.md | open | quotation capitalisation |

@@ -89,7 +89,8 @@ years. Three things follow:
 Without `TUNME` the tunnel oxide would be grown on top of the pad oxide,
 giving a "tunnel" dielectric of 12–23 nm (the patent's ranges[^pat-04])
 through which nothing would tunnel at the PDK's ±10.5 V programme/erase
-conditions.[^pdk-07]
+conditions[^pdk-07] (on the reading of the published table's programme
+source bias set out on {ref}`PTSI <step-037>`).
 
 ## How it is typically performed
 

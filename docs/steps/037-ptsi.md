@@ -29,12 +29,14 @@ opened through its {term}`ARC` at {ref}`TUNARCE <step-036>`, so the implant
 enters only the tunnel windows (`tunm`, GDS 80:20, described by the PDK
 as "SONOS device tunnel implant"[^pdk-06]) and passes through the screen
 oxide there — the pad oxide, we infer — which is 10–20 nm in the Cypress
-embedded-SONOS flow.[^pat-04] Everywhere else the resist stops it. The
-PDK's rule that the low-Vt block layer defines "regions to block Vt
+embedded-SONOS flow.[^pat-04] Everywhere else the resist stops it. On
+the block reading of that rule preferred on the {ref}`LVTNI <step-015>`
+page — the PDK describes `lvtn` as defining "regions to block Vt
 adjust implant for low Vt LV PMOS/NMOS, SONOS FETs and Native
-NMOS"[^pdk-periph] shows that the memory transistors do *not* receive
-the standard NMOS channel implants; we read `PTSI` and `DEPI` as their
-replacements.
+NMOS"[^pdk-periph] — the memory transistors skip the standard NMOS
+channel implants, and we read `PTSI` and `DEPI` as their replacements
+(inference; the alternative counter-dope reading is set out on
+{ref}`LVTNI <step-015>`).
 
 No public source gives the species, energy or dose. We describe the
 Cypress-published analogue and era-typical values below.
@@ -58,22 +60,29 @@ underneath the channel", and drain-induced barrier lowering as the
 drain "lowering the source–channel barrier".[^wiki-sce] The standard
 cure is a doping peak below the channel that stops the drain depletion
 region from spreading, without raising the surface doping that sets the
-threshold and degrades mobility: the LSI Logic patent on the technique
-describes "punch-through barriers using low energy implants", chained
-at 100, 70 and 50 keV,[^pat-vt-lsi] and ITRS 2001 asks for a "Retrograde
+threshold and degrades mobility. An LSI Logic patent describes such a
+technique — chained low-energy "punch-through barriers", there formed
+with boron in an n-well beneath p-channel transistors and with
+energies the patent itself calls "merely exemplary" (100, 70 and
+50 keV)[^pat-vt-lsi] — and ITRS 2001 asks for a "Retrograde
 channel depth" of 21–30 nm for its 2001 high-performance
 device.[^itrs-01]
 
 Three things make the SONOS transistor need its own barrier:
 
 * **It is short.** The PDK's {term}`e-test` parameters are defined on memory
-  transistors of drawn W/L 0.45/0.22 µm for the original cell and
-  0.35/0.15 µm for the "star" cell,[^pdk-07] i.e. gate lengths at or
-  near the process minimum.
+  transistors of drawn W/L 0.45/0.22 µm and 0.35/0.15 µm, for "both
+  original and star cells"; the PDK does not say which geometry
+  belongs to which cell, and we read 0.35/0.15 µm as the "star" cell
+  because the PDK says it "is approximately 25% smaller than the
+  original cell" (inference).[^pdk-07] Either way, both are gate
+  lengths at or near the process minimum.
 * **It sees high voltages.** The PDK's programme and erase table
   applies +6.7 V to the {term}`control gate` with −3.8 V on source, drain and
   body, and −3.8 V on the gate with +6.7 V on the other three
-  terminals,[^pdk-07] and unselected cells on shared lines see partial
+  terminals[^pdk-07] (the published table prints the programme source
+  bias as "-38"; we read it as −3.8 V, the mirror of the erase
+  condition), and unselected cells on shared lines see partial
   versions of these ("program inhibit" thresholds are also
   specified[^pdk-07]). A logic-style channel would not hold off these
   conditions at 0.22 µm.
@@ -250,7 +259,10 @@ memory transistor (SKY130's values are not public):
   not public; the values above are from a Cypress patent for a later
   node and from era-typical logic patents.
 * Indium is absent from SkyWater's public implanter species lists; if
-  it is used, the tool configuration is not described publicly.
+  it is used, the tool configuration is not described publicly. The
+  tool class SkyWater lists is nevertheless an indium-capable one:
+  Axcelis markets the 8250HT as removing the need for "a dedicated
+  implanter for indium processes".[^axcelis-8250]
 * Whether `PTSI` is a single implant or a chain of energies is unknown.
 * Whether the implant is symmetric (7° tilt) or a large-tilt
   asymmetric stopper of the LATIPS kind is unknown.
