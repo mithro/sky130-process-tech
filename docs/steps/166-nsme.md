@@ -88,7 +88,8 @@ beside the ring.
   opening through only the thin passivation oxide would let the nitride
   close that path — the patent's own moisture-path area is the die
   perimeter times a "bottle neck width … typically in the range of 0.5
-  to 1.0 µm", the thickness of that oxide.[^pat-sealring-zeevo] That
+  to 1.0 µm", which we read as the thickness of that
+  oxide.[^pat-sealring-zeevo] That
   this is the purpose of
   SKY130's `nsm` ring is our inference ({ref}`NSM <step-165>`).
 * **A {term}`crack stop`.** A trench through the dielectric along the saw line
