@@ -87,7 +87,19 @@ deep-dive entries per step page and twelve per category page
 
 ## Phase 4 — Review
 
-- [ ] Technical accuracy review of every step page (independent agent)
+- [~] Technical accuracy review of every step page (independent agent) — per module batch: review report, fix branch `topic/p4-<range>`, verification of the fixes, merge
+  - [x] 001–013 — reviewed, 45 findings fixed (trench depth re-derived from the PDK metal-stack drawing, substrate-doping device name), 3 declined with evidence, verified and merged 2026-09-18
+  - [~] 014–034 — reviewed, fixed, in verification
+  - [~] 035–047 — reviewed, fix round running
+  - [~] 048–063 — review running
+  - [ ] 064–075
+  - [ ] 076–088
+  - [ ] 089–106
+  - [ ] 107–117
+  - [ ] 118–134
+  - [ ] 135–148
+  - [ ] 149–163
+  - [ ] 164–171
 - [ ] Conflict review across pages (consistent thicknesses, names, order)
 - [ ] Provenance review — repeat after each batch
 - [ ] Full Sphinx build with `-W` (warnings as errors)
