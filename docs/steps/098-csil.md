@@ -31,8 +31,10 @@ poly and diffusion {term}`sheet resistances <sheet resistance>` fall to a few oh
 (category page[^wiki-salicide][^txt-05]). The SKY130 extraction
 tables give poly 48 200 mΩ/sq (48.2 Ω/sq), N-diffusion
 120 000 mΩ/sq and P-diffusion 197 000 mΩ/sq[^pdk-08] — the values of
-heavily doped but *unsilicided* poly and diffusion — and a per-contact
-resistance of 15 000 mΩ (15 Ω) for a licon.[^pdk-08] The
+heavily doped but *unsilicided* poly and diffusion — and the LICON
+contact listed at 15 000 in the same "Resistivity (mohms/sq)" column,
+which we read as 15 Ω per contact, since a contact has no sheet
+dimension (our reading).[^pdk-08] The
 {ref}`P1I <step-050>` page draws the same conclusion from the poly
 value. On that evidence this reference describes a *contact-only*
 titanium silicide, formed by an anneal after the {term}`liner` and
