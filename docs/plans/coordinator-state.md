@@ -50,5 +50,7 @@ Phase 4 plan: twelve module batches (the Phase 2 groups in `TASKLOG.md`). Per ba
 5. Phase 4: technical accuracy review of every step page by process
    module, conflict review across pages, bibliography page, final
    provenance review of the tree and the whole history.
-6. Build polish: tracked lock file and frozen export for the hosted
+6. Sweep of the job-listing citations (JOB-01 and the others) on about 35 pages under Common rule 11, after the Phase 4 batches that touch them.
+7. Patent index coverage round on `topic/index-patents-coverage` once the patent search site stops answering with a bot check (alternative: EPO linked data as the discovery source).
+8. Build polish: tracked lock file and frozen export for the hosted
    build, checker jobs before the build.
