@@ -84,10 +84,12 @@ REL_GROUPS = [
 
 # The lineage timeline on the index page: (date, headline, record id).
 TIMELINE = [
-    ("2017-03-01", "Cypress completes the sale of its Minnesota fab (Fab 4, Bloomington) to SkyWater's owners.",
+    ("2017-03-01", "Cypress reports the sale of its Minnesota fab (Fab 4, Bloomington) to SkyWater's owners as "
+                   "completed during the first quarter of fiscal 2017.",
      "cypress-10-q-2017-05-02"),
     ("2020-04-16", "Infineon completes its acquisition of Cypress Semiconductor.", "cypress-8-k-2020-04-16"),
-    ("2021-04-22", "SkyWater Technology completes its initial public offering.", "skywater-424b4-2021-04-22"),
+    ("2021-04-22", "SkyWater Technology files the final prospectus for its initial public offering.",
+     "skywater-424b4-2021-04-22"),
     ("2025-06-30", "SkyWater completes the purchase of Infineon's Austin fab (Fab 25).", "skywater-8-k-2025-07-03"),
     ("2026-07-31", "IonQ completes its acquisition of SkyWater Technology.", "skywater-8-k-2026-07-31"),
     ("2026-08-10", "SkyWater deregisters from SEC reporting following the IonQ merger.", "skywater-15-12g-2026-08-10"),

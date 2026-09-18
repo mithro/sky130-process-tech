@@ -37,9 +37,9 @@ audits
 
 ## Lineage timeline
 
-* **2017-03-01** — Cypress completes the sale of its Minnesota fab (Fab 4, Bloomington) to SkyWater's owners. See {ref}`the filing <filing-cypress-10-q-2017-05-02>`.
+* **2017-03-01** — Cypress reports the sale of its Minnesota fab (Fab 4, Bloomington) to SkyWater's owners as completed during the first quarter of fiscal 2017. See {ref}`the filing <filing-cypress-10-q-2017-05-02>`.
 * **2020-04-16** — Infineon completes its acquisition of Cypress Semiconductor. See {ref}`the filing <filing-cypress-8-k-2020-04-16>`.
-* **2021-04-22** — SkyWater Technology completes its initial public offering. See {ref}`the filing <filing-skywater-424b4-2021-04-22>`.
+* **2021-04-22** — SkyWater Technology files the final prospectus for its initial public offering. See {ref}`the filing <filing-skywater-424b4-2021-04-22>`.
 * **2025-06-30** — SkyWater completes the purchase of Infineon's Austin fab (Fab 25). See {ref}`the filing <filing-skywater-8-k-2025-07-03>`.
 * **2026-07-31** — IonQ completes its acquisition of SkyWater Technology. See {ref}`the filing <filing-skywater-8-k-2026-07-31>`.
 * **2026-08-10** — SkyWater deregisters from SEC reporting following the IonQ merger. See {ref}`the filing <filing-skywater-15-12g-2026-08-10>`.
