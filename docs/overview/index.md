@@ -595,9 +595,13 @@ Three things follow from the reports themselves.
   S8DI's metal 3: the two thin levels take the five-film TiN stack while
   the 2.125 µm top level keeps TiW **both** under and over the
   aluminium.[^cyp-qtp-123907] Note also that the aluminium is 3 200 Å in
-  both S8DI stacks, so the change moves the film total from 3 600 Å to
-  4 190 Å without moving the conductor thickness (our arithmetic) —
-  which is what "no electrical changes"[^cyp-pin145273] would require.
+  the 2013 S8TNV-5R metal-1 recipe and in the 2014 S8DI one, so across
+  the two reports the film total differs — 3 600 Å against 4 190 Å (our
+  arithmetic) — while the conductor thickness does not; that is what
+  "no electrical changes"[^cyp-pin145273] would require. The 2014 report
+  does not print S8DI's pre-change stack, so this is a comparison across
+  two technologies and not a before-and-after within
+  one.[^cyp-qtp-113005][^cyp-qtp-123907]
 
 ### Which levels are "top metal layers"
 
