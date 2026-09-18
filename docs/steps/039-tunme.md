@@ -344,5 +344,5 @@ fab (SKY130's recipe is not public):
     after high dose ion implantation*, US 5,811,358 A, granted
     1998-09-22. <https://patents.google.com/patent/US5811358A/en>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

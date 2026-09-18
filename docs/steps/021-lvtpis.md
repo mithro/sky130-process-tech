@@ -287,5 +287,5 @@ crust stage cannot be hurried.
     on Ion Implantation Technology*, vol. 1, pp. 654–657.
     <https://doi.org/10.1109/IIT.1999.812201>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

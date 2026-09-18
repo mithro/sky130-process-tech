@@ -301,5 +301,5 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
     ISBN 978-0-470-01893-4. <https://doi.org/10.1002/9780470723876>
     (companion site <https://www.lithoguru.com/textbook/>)
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

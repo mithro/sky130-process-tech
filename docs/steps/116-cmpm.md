@@ -419,5 +419,5 @@ recipe is not public):
     *Materials Science and Engineering: R* **45**(3–6), 89–220 (2004).
     <https://doi.org/10.1016/j.mser.2004.06.002>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

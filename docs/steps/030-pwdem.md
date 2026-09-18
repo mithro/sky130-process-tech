@@ -301,7 +301,7 @@ An industry-generic drain-extension well lithography for a 200 mm,
 [^pdk-10]: SkyWater PDK Authors, *google/skywater-pdk* repository
     README. <https://github.com/google/skywater-pdk>
 [^skw-02]: SkyWater Technology, *Mixed-Signal CMOS & ROIC*, platform
-    table, accessed 2026-08-30.
+    table, accessed 2026-09-13.
     <https://www.skywatertechnology.com/cmos/>
 [^pat-demos-ti]: J. C. Mitros (Texas Instruments), *Higher voltage drain
     extended MOS transistors with self-aligned channel and drain
@@ -371,13 +371,13 @@ An industry-generic drain-extension well lithography for a 200 mm,
     Conference on Ion Implantation Technology* (1996), pp. 186–189.
     <https://doi.org/10.1109/IIT.1996.586180>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
     Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
     E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
-    retrieved 2026-09-13.
+    retrieved 2026-09-14.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
 [^raw-data-hv-mosfets]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the 5 V, 10/16 V and

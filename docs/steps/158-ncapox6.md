@@ -340,5 +340,5 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
     *Electrochemical and Solid-State Letters* **12**(3), H84 (2009).
     <https://doi.org/10.1149/1.3058994>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

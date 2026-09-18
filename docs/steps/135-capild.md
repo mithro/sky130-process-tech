@@ -383,7 +383,7 @@ back end (SKY130's recipe is not public):
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^skw-02]: SkyWater Technology, *Mixed-Signal CMOS & ROIC*, platform
-    table, accessed 2026-08-30. <https://www.skywatertechnology.com/cmos/>
+    table, accessed 2026-09-13. <https://www.skywatertechnology.com/cmos/>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.
     <https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>
@@ -494,13 +494,13 @@ back end (SKY130's recipe is not public):
     of Plasma Discharges and Materials Processing*, 2nd ed., Wiley,
     2005, ISBN 978-0-471-72001-0. <https://doi.org/10.1002/0471724254>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^raw-data-testtile-pads]: SkyWater PDK Authors, *Manufacturing Test Tile
     Pad Documentation* ("Pad documentation for SKY130 MPW Manufacturing
     E-Test Tile"), `sky130-testtile-pad-documentation.csv` (also `.ods`
     and `.pdf`), `google/skywater-pdk-sky130-raw-data` repository, 2022,
-    retrieved 2026-09-13.
+    retrieved 2026-09-14.
     <https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>
 [^raw-data-passives]: SkyWater PDK Authors (measurements by CoolCAD
     Electronics LLC), measured I–V and C–V data for the poly, diffusion

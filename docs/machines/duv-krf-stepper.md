@@ -563,7 +563,7 @@ settings and resists per layer are not public.
     SKY130 PDK documentation (Table 2).
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google
-    Sheet, tab "Sheet4" (mask types), retrieved 2026-09-13.
+    Sheet, tab "Sheet4" (mask types), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
     filed 2021-03-22.

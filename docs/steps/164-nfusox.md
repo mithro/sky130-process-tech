@@ -400,5 +400,5 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
     2002-12-10.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6492716>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

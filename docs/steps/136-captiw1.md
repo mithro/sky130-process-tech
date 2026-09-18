@@ -437,7 +437,7 @@ back end (SKY130's recipe is not public):
     US 7,250,334 B2, filed 2004-07-31, granted 2007-07-31.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7250334>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
 [^cyp-qtp-123907]: Cypress Semiconductor, *Fab Process Qualification
     Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8

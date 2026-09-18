@@ -358,5 +358,5 @@ fab (SKY130's recipe is not public):
     Workshop (ASMC 97) Proceedings*, pp. 252–256.
     <https://doi.org/10.1109/ASMC.1997.630744>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

@@ -374,5 +374,5 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
     Asher", *MRS Proceedings* **495** (1997).
     <https://doi.org/10.1557/PROC-495-345>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

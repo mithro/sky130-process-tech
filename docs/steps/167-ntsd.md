@@ -399,5 +399,5 @@ public):
     US 6,294,474 B1, filed 1999-10-25, granted 2001-09-25.
     <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6294474>
 [^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
-    tab "Sheet1" (step number, code and description), retrieved 2026-09-13.
+    tab "Sheet1" (step number, code and description), retrieved 2026-09-14.
     <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>

@@ -387,7 +387,7 @@ papers that *use* the PDK (e.g. standard-cell characterisation) but
 none that describe the process flow.
 
 **STEPS-SHEET** — *[external] S8 / SKY130 Process Steps* (public Google
-Sheet), retrieved 2026-09-13.
+Sheet), retrieved 2026-09-14.
 <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>.
 The source of the 171-step list used in this reference (tab "Sheet1":
 step number, code and description, `SMAT` to `HPETEST`). Further tabs:
@@ -416,7 +416,7 @@ LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, MM4, VIM4, MM5,
 NSM and PDM mask pages.
 
 **MASK-RENDERS** — *SKY130 Open MPW mask-layer renders* (public web
-directory), retrieved 2026-09-13.
+directory), retrieved 2026-09-14.
 <https://data.wafer.space/big-storage/sky130-masks/> (start pages
 <https://data.wafer.space/big-storage/sky130-masks/README.md> and
 <https://data.wafer.space/big-storage/sky130-masks/masks.html>, and one
@@ -548,7 +548,7 @@ LI1M, CTM1, MM1, VIM, MM2, VIM2, CAPM, MM3, VIM3, CAP2M, MM4, VIM4, MM5,
 NSM and PDM mask pages.
 
 **SKW-02** — SkyWater Technology, *"Mixed-Signal CMOS & Read Out IC
-(ROIC)"* platform page, accessed 2026-08-30.
+(ROIC)"* platform page, accessed 2026-09-13.
 <https://www.skywatertechnology.com/cmos/>. Table of platforms: S130 —
 "130nm CMOS", "200mm", metal layers "5: Al", local interconnect "1",
 core 1.8 V, I/O "3.3V, 5.0V", high voltage "20+V, Drain-Extended CMOS
@@ -4774,7 +4774,7 @@ Also used on the lithography materials material page.
 **NIKON-S204B** — Nikon, *NSR-S204B 248 nm Scanner Exposure System
 Overview* (specification summary, reseller copy), attached to the
 listing Tara Semiconductor Technology, *Used 2002 NIKON S204 Scanner*
-(listing LITV25-01), accessed 2026-09-12.
+(listing LITV25-01), accessed 2026-09-13.
 <https://f.machineryhost.com/fc49306d97602c8ed1be1dfbf0835ead/aa008f2897d7d4a224ff92839b4299e9/SpecSummary_LITV25-01_NSR-S204B.pdf>,
 <https://www.tarasemi.com/listings/5223879-used-2002-nikon-s204-scanner>
 Field size, NA and wavelength of the NSR-S204B KrF scanner. Used on the
@@ -6279,7 +6279,7 @@ Also used on the single-wafer spin processor machine page.
 Also used on the wet chemicals material page.
 
 **SEZ-223-MOOV** — Moov used-equipment marketplace, *Lam Research / SEZ
-SP223* listing, accessed 2026-09-12.
+SP223* listing, accessed 2026-09-13.
 <https://moov.co/marketplace/wet-etch/sez-lam-research/lam-research-sez-sp223>
 Used-equipment listing for a 200 mm SEZ SP223 spin processor that names
 backside film removal among its applications (weak evidence). Used on
@@ -14798,7 +14798,7 @@ sensitivities. Used on the VIM4 mask page. Tier: deep dive.
 #### LICM1 mask page (first cited there)
 
 **PDK-SUMMARY** — SkyWater PDK Authors, *Summary of Key Periphery Rules*,
-SkyWater SKY130 PDK documentation, retrieved 2026-09-13.
+SkyWater SKY130 PDK documentation, retrieved 2026-09-14.
 <https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>,
 <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/summary/table-f4-connectivity-of-drawn-and-mask.csv>.
 Summary tables of widths, spacings and enclosures for the front-end and

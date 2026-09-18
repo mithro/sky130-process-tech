@@ -419,7 +419,7 @@ are not public.
 
 [^semi-m1]: SEMI, *SEMI M1 — Specification for Polished Single Crystal
     Silicon Wafers*, SEMI Standards store listing (revision M1-0924,
-    current), accessed 2026-09-13.
+    current), accessed 2026-09-18.
     <https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>
 [^gw-products]: GlobalWafers, *Products*, product page (polished,
     annealed, test and monitor, epitaxial and high-resistivity wafers),
