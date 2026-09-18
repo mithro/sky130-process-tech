@@ -37,8 +37,9 @@ The PDK gives this plate a "MiM2 top plate sheet resistance" of
 plate.[^pdk-07] Its thickness is not public, but the sheet resistance
 bounds it as at {ref}`CAPTIW1 <step-136>`: for a sputtered Ti:W
 resistivity of 50–100 µΩ·cm (textbook range for refractory barrier
-films;[^txt-02] Hartsough measured the resistivity of bias-sputtered
-TiW[^hartsough-1979]) a 5.8 Ω/sq sheet corresponds to
+films;[^txt-02] Hartsough's 1979 paper is titled *Resistivity of
+bias-sputtered TiW films*; its values are not publicly
+readable[^hartsough-1979]) a 5.8 Ω/sq sheet corresponds to
 {math}`d = \rho / R_s \approx 0.09`–0.17 µm. We therefore read the plate
 as roughly 0.1 µm of TiW (inference; our arithmetic), the same as the
 first plate because the PDK calls the two constructions
@@ -49,7 +50,9 @@ be buried in the via-4 dielectric of {ref}`NILD6 <step-156>`, 0.505 µm
 thick above metal 4 on the PDK's stack diagram against 0.39 µm for via 3
 above metal 3,[^pdk-04] and it will be contacted by a via-4 opening that
 the rules allow only as a 0.800 µm square (via4.1, via4.3)[^pdk-periph]
-— four times the width of a via 3 — which lands on the plate as the
+— four times the width of the ordinary 0.200 µm via 3 (via3.1); the
+rules also allow a 0.800 µm square via 3 inside `areaid.mt`
+(via3.1a)[^pdk-periph] — which lands on the plate as the
 {ref}`VIM4E <step-160>` etch finishes. In the PDK's stacked
 cross-section the plate is joined upward to "M5 (plate 1)", the label
 the drawing also gives the metal-5 shape joined through metal 4 to "M3
@@ -100,9 +103,10 @@ stress and deposition energy matter because the layer beneath is thin
   Freescale's[^pat-mim-freescale] and TI's aluminium-capped Ta/TaN top
   electrode for a copper back end ("ALCAP").[^pat-mim-ti-alcap]
 * **Series resistance of a stacked pair.** The plate's 5.8 Ω/sq[^pdk-07]
-  sits in series with the capacitor; in the PDK's stacked cross-section
-  it is contacted from above by two via-4 shapes and the `CAPM`
-  plate below by two via-3 shapes,[^pdk-07] the layout by which the
+  sits in series with the capacitor; the PDK's stacked cross-section
+  shows more than one via shape on each plate (our reading of the
+  artwork; the drawing labels the vias only as "Via3" and
+  "Via4"[^pdk-07]), the layout by which the
   PDK's sub-circuit model — which "accounts for the parasitic contact
   resistance"[^pdk-07] — keeps that resistance small (inference from
   the drawing). Ng et al. review MiM integration choices in Al–Cu and
@@ -262,6 +266,9 @@ back end (SKY130's recipe is not public); the sequence is that of
   metal 4 and of via 4 are not known;[^pdk-periph] the level
   inconsistencies in the PDK's MiM entries are set out at
   {ref}`CAPILD2 <step-150>`.
+* The 0.1 µm plate thickness follows from a textbook resistivity range
+  that cannot be checked from a public abstract; a factor of two in
+  resistivity is a factor of two in thickness.
 
 <!-- footnotes -->
 

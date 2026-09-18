@@ -31,9 +31,9 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 150-L1 | Low | fixed | missing pad identifiers for CV extraction (150:68-71) |
 | 150-L2 | Low | fixed | Van Huylenbroeck et al. — nitride vs ONO finding misstated (150:168-171) |
 | 150-L3 | Low | fixed | Chapple-Sokol miscited for a temperature window (150:203-204) |
-| 151-L1 | Low | open | via3.1a 0.8 µm square not mentioned (151, 159) |
-| 151-L2 | Low | open | per-contact via count stated as fact, not reading (151:100-103) |
-| 151-L3 | Low | open | Hartsough citation implies corroboration it can't give (151:36-40) |
+| 151-L1 | Low | fixed | via3.1a 0.8 µm square not mentioned (151:51-52, 159:47-48) |
+| 151-L2 | Low | fixed | per-contact via count stated as fact, not reading (151:104-108) |
+| 151-L3 | Low | fixed | Hartsough citation implies corroboration it can't give (151:36-40, Open questions) |
 | 152-L1 | Low | open | CD-bias arithmetic convention unstated (152:77-79) |
 | 152-L2 | Low | open | alignment-target naming inconsistency within page (152:151-154) |
 | 153-M1 | Medium | open | "every capm plate tied to metal4" overstated vs 155's correct wording (153:78-83) |
@@ -53,7 +53,7 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 158-L2 | Low | open | 650-750°C LPCVD window not clearly labelled as textbook value (158:114-116) |
 | 159-M1 | Medium | open | Skelly & Gruenke via-fill analogy ignores non-monotonic 2.8 µm result (159, 161) |
 | 159-L1 | Low | open | Le, Banerjee & McPherson EM finding is conditional, cited as unconditional (159:128-131) |
-| 159-L2 | Low | open | via4/via3 resistance-per-area residual left uncomputed (159:47-51) |
+| 159-L2 | Low | fixed | via4/via3 resistance-per-area residual left uncomputed (159:47-51), fixed alongside 151-L1 |
 | 160-M1 | Medium | open | Bui et al. cited beyond its published abstract (160:76-79) |
 | 160-L1 | Low | open | EKS265 silently read as "EKC265" without marking the reading (160:194-196) |
 | 161-L1 | Low | deferred | metal-cap/barrier sweep — 300 Å TiW analogue is top not lower metal (161:214-215) |
