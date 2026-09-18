@@ -231,7 +231,7 @@ waste treatment. Ultrapure water, its standards and its quality
 parameters are described on the
 {ref}`ultrapure water <material-ultrapure-water>` page.
 
-* **Acids, bases and oxidisers.** Sulfuric acid and hydrogen peroxide
+* **Acids, bases and oxidisers.** Sulphuric acid and hydrogen peroxide
   for SPM; ammonia, hydrochloric acid and peroxide for SC-1 and
   SC-2;[^wiki-rca][^wiki-piranha] 49 % HF, NH₄F for
   BOE;[^wiki-boe][^wiki-hf] and phosphoric acid for the nitride

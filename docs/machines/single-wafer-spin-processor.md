@@ -106,7 +106,7 @@ a metal etch, SEZ and EKC used room-temperature semi-aqueous removers on
 an SEZ spin processor, on "oxide/titanium/TiN/AlCu metal stack etched by
 a LAM TCP9600 etcher", with cleaning times from 10 to 120 seconds and
 blanket etch rates below 5 Å/min for AlCu.[^sez-polymer-1999] For
-post-etch residues around metals, dilute sulfuric–peroxide with HF (DSP+) "is
+post-etch residues around metals, dilute sulphuric–peroxide with HF (DSP+) "is
 currently used for the removal of post etch residues on device surface,
 to replace the conventional SPM cleaning".[^lee-2012-dsp] A monitoring
 system described by Fraunhofer IMM gives one DSP composition, "3.7 wt%

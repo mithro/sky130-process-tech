@@ -846,7 +846,7 @@ where no number is given, none is public.
 | Via 4 | "NILD6 K=4.0"[^pdk-04] | via 0.505 µm[^pdk-04] | — | {ref}`NILD6 <step-156>` – {ref}`VIM4E <step-160>` |
 | Metal 5 | `metal5` | 1.26 µm[^pdk-04] | bottom 5.3711[^pdk-04] | {ref}`WTIAL5 <step-161>` – {ref}`MM5E <step-163>` |
 | Passivation oxide | "TOPOX K=3.9"[^pdk-04] | 0.09 µm on the metal, 0.070 µm on its sidewall[^pdk-04] | — | {ref}`NFUSOX <step-164>` |
-| Passivation nitride | "TOPNIT K=7.5"[^pdk-04] | 0.54 µm on the metal, 0.4223 µm on its sidewall on the diagram;[^pdk-04] the {ref}`NTSD <step-167>` page reads 0.5–0.9 µm, the Cypress reports for this fab giving 0.7–0.9 µm[^cyp-qtp-123907][^cyp-qtp-014807] | — | {ref}`NTSD <step-167>` |
+| Passivation nitride | "TOPNIT K=7.5"[^pdk-04] | 0.54 µm on the metal, 0.4223 µm on its sidewall on the diagram;[^pdk-04] the {ref}`NTSD <step-167>` page reads 0.5–0.9 µm, the Cypress reports for this fab giving 0.7–0.9 µm[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807] | — | {ref}`NTSD <step-167>` |
 | Polyimide | "PI1 K=2.94"[^pdk-04] | — | top 11.8834[^pdk-04] | no step in the step list |
 
 Most of the labels are consistent with one another. From metal 1
