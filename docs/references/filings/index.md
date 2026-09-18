@@ -240,7 +240,7 @@ Sorted by filing date, then id.
   Auditor: PricewaterhouseCoopers LLP, 2011-02-25: "PricewaterhouseCoopers LLP San Jose, California February 25, 2011".
   Relationships: {ref}`Cypress process technologies made or transferred at the fab (0.13 µm, S8, SONOS) <filings-rel-cypress-process-technology>` · {ref}`Cypress selling wafer-line capacity to outside customers before the 2017 sale <filings-rel-cypress-third-party-foundry>`.
   Related pages: {ref}`overview-index` — The report is the earliest filing in this index to name Cypress's "S8" process, the 0.13 µm SONOS lineage this reference traces to SKY130.
-  Note: The EDGAR filing date and accession number were not retrieved; filed gives the date of the auditor's report printed in the copy, so the document was published on or after it.
+  Note: The EDGAR filing date and accession number were not retrieved; filed gives the date of the auditor's report printed in the copy, so the document was published on or after it. "Stop investing in Moore's Law" describes a 2005 decision not to develop process nodes below what was already in flight at Fab 4; it does not contradict cypress-annual-report-fy2005 and the existing (already in the index) cypress-annual-report-fy2006, which describe continuing the already-underway 90 nm transition at Fab 4 through 2005 and into 2006 production.
 
 (filing-cypress-annual-report-fy2011)=
 * **Cypress Semiconductor Corporation — Cypress Semiconductor 2011 Annual Report, including the Form 10-K for the fiscal year ended 2012-01-01** (filed 2012-02-24; document NASDAQ_CY_2011).

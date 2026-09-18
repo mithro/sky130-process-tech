@@ -1054,7 +1054,13 @@ filings:
   notes: >-
     The EDGAR filing date and accession number were not retrieved; filed
     gives the date of the auditor's report printed in the copy, so the
-    document was published on or after it.
+    document was published on or after it. "Stop investing in Moore's Law"
+    describes a 2005 decision not to develop process nodes below what was
+    already in flight at Fab 4; it does not contradict
+    cypress-annual-report-fy2005 and the existing (already in the index)
+    cypress-annual-report-fy2006, which describe continuing the
+    already-underway 90 nm transition at Fab 4 through 2005 and into 2006
+    production.
 
 - id: cypress-annual-report-fy2011
   company: Cypress Semiconductor Corporation
