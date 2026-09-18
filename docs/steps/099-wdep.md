@@ -85,7 +85,7 @@ Broadbent and Ramiller had established the WF₆ chemistry in
   which is why the pulsed nucleation layer was developed: Novellus's
   patent describes a tungsten nucleation film formed "by
   alternatively providing to that surface, reducing gases and
-  tungsten-containing gases" so that the film "is conformal and has
+  tungsten containing gases" so that the film "is conformal and has
   improved step coverage, even for a high aspect ratio contact
   hole",[^pat-pnl-novellus] and Kim et al. characterise pulsed CVD
   tungsten as a nucleation layer for plug fill.[^kim-2004] Petri et
