@@ -37,13 +37,13 @@ filings:
       development programme with Honeywell in Fab 4.
     quotes:
     - text: In 2003 these processes accounted for approximately 65% of the output of Fab 4.
-      location: Form 10-K, Item 1, Manufacturing
+      location: Form 10-K section
     - text: >-
         Fab 2, located in Texas and Fab 4, located in Minnesota. These
         fabrication facilities utilize our proprietary 0.13 through 0.8-micron
         CMOS, 0.25 and 0.8-micron BiCMOS, and 0.35-micron Silicon Nitride Oxide
         Silicon (SONOS) processes.
-      location: Form 10-K, Item 1, Manufacturing
+      location: Form 10-K section
   auditor_report:
     firm: PricewaterhouseCoopers LLP
     subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2003
@@ -98,7 +98,7 @@ filings:
       Fab 4 in Bloomington.
     quotes:
     - text: Our 90-nanometer technology is now in production at our Minnesota facility.
-      location: Form 10-K, Item 1, Research and development
+      location: Form 10-K section
     - text: >-
         The Belgian team has already produced a working image sensor in
         Cypress's Fab 4 wafer fabrication plant in Bloomington, Minn.
@@ -165,7 +165,7 @@ filings:
         These fabrication facilities utilize our proprietary 90-nanometer and
         0.13 through 0.8-micron CMOS, 0.25 and 0.8-micron BiCMOS, and
         0.35-micron Silicon Nitride Oxide Silicon ("SONOS") processes.
-      location: Form 10-K, Item 1, Manufacturing
+      location: Form 10-K section, Item 1, Business
   auditor_report:
     firm: PricewaterhouseCoopers LLP
     subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2006
@@ -221,9 +221,9 @@ filings:
         In December 2007, Cypress's Board of Directors approved a plan to exit
         its manufacturing facility in Texas and transfer production to its more
         cost-competitive facility in Minnesota and outside foundries.
-      location: Item 1, Manufacturing
+      location: Item 1, Business
     - text: During fiscal 2006, Cypress completed the transfer of its 0.35-micron SONOS process to Grace
-      location: Item 1, Manufacturing
+      location: Item 1, Business
   auditor_report:
     firm: PricewaterhouseCoopers LLP
     subject: consolidated financial statements of Cypress Semiconductor Corporation, fiscal year 2007
@@ -279,7 +279,7 @@ filings:
         We currently manufacture approximately 50% of our semiconductor
         products at our wafer manufacturing facilities in Bloomington,
         Minnesota and Austin, Texas.
-      location: Item 1, Manufacturing
+      location: Item 1, Business, Manufacturing
     - text: Bloomington, Minnesota 337,000 Manufacturing, research and development
       location: Item 2, Properties
   auditor_report: null
@@ -496,7 +496,7 @@ filings:
         a fab or foundry) located in Bloomington, Minnesota, which reduced our
         internal manufacturing capacity though we continue to outsource
         manufacturing services from this facility.
-      location: Item 1, Manufacturing
+      location: Part I
     - text: >-
         Sale of Cypress Minnesota Incorporated In fiscal 2017, we completed the
         sale of our wafer fabrication facility in Minnesota for gross proceeds
@@ -552,9 +552,9 @@ filings:
       company founded in 1982 in San José.
     quotes:
     - text: the most significant event is the planned acquisition of Cypress
-      location: Letter from the Management Board
+      location: Introductory section
     - text: Cypress Semiconductor Corporation was founded in 1982 in San José (USA)
-      location: Business focus and strategy
+      location: Introductory section
   auditor_report: null
   relationships:
   - infineon-cypress-acquisition
@@ -621,6 +621,69 @@ filings:
     found by a web search and fetched.
   verified: 2026-09-14 Wayback capture 20250414174141 of the EDGAR index page and the Infineon-hosted copy fetched; quotes checked
 
+- id: skywater-drs-2020-08-12
+  company: SkyWater Technology, Inc.
+  company_key: skywater
+  form: DRS
+  document_type: registration-statement
+  parent: null
+  title: Draft registration statement on Form S-1, confidentially submitted 2020-08-12 (EDGAR filer CMI Acquisition, LLC)
+  period:
+    label: fiscal years 2018 and 2019 (financial statements to 2019-12-29)
+    start: null
+    end: 2019-12-29
+  filed: 2020-08-12
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0000950123-20-008396
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/1819974/000095012320008396/filename1.htm
+    wayback: https://web.archive.org/web/20260501234934/https://www.sec.gov/Archives/edgar/data/1819974/000095012320008396/filename1.htm
+    ir: null
+  about:
+    summary: >-
+      The first draft of SkyWater's IPO registration statement, submitted
+      confidentially in August 2020 and later released on EDGAR. It already
+      gives the 20-year Cypress captive history, the 2017 S130 licence and
+      Cypress's (by then Infineon's) share of revenue: 48 % in 2019 and 65 %
+      in 2018.
+    quotes:
+    - text: >-
+        Our foundry business was owned and operated by Cypress Semiconductor
+        Corporation, or Cypress, as a captive manufacturing facility for 20
+        years.
+      location: Prospectus Summary
+    - text: >-
+        Cypress, which was acquired in April 2020 by Infineon Technologies AG,
+        accounted for approximately 48% and 65% of our revenue for the fiscal
+        years ended December 29, 2019 and December 30, 2018, respectively.
+      location: Risk Factors
+  auditor_report: null
+  relationships:
+  - skywater-ipo
+  - skywater-fab-history
+  - cypress-technology-license
+  - cypress-foundry-services
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The draft is the earliest public SkyWater statement of the fab's Cypress history that the overview relies on.
+  inventory_key: null
+  discovery:
+  - wayback-cdx
+  discovery_note: >-
+    Found through a Wayback CDX listing of SkyWater's EDGAR folders; form
+    (DRS) and filing date read from the captured filing index page
+    (2025-03-09). The EDGAR company title for the submission is CMI
+    Acquisition, LLC; the document's cover names SkyWater Technology, Inc.
+  verified: 2026-09-14 Wayback capture 20260501234934 of the EDGAR document and 20250309161401 of its index page fetched; quotes checked
+  notes: >-
+    The cover legend says the draft "has not been publicly filed"; that
+    describes its status when submitted. The SEC has since released it on
+    EDGAR, and it is cited here from that public copy.
+
 - id: infineon-annual-report-fy2020
   company: Infineon Technologies AG
   company_key: infineon
@@ -668,6 +731,67 @@ filings:
   notes: >-
     filed gives the signature date printed in the report (Neubiberg, 20
     November 2020); the publication date was not retrieved.
+
+- id: skywater-drs-a-2021-01-20
+  company: SkyWater Technology, Inc.
+  company_key: skywater
+  form: DRS/A
+  document_type: registration-statement
+  parent: null
+  title: Amendment No. 2 to the draft registration statement on Form S-1, confidentially submitted 2021-01-20
+  period:
+    label: nine months to 2020-09-27 and fiscal years 2018 and 2019
+    start: null
+    end: 2020-09-27
+  filed: 2021-01-20
+  jurisdiction: US
+  regulator: SEC
+  identifier:
+    scheme: sec-accession
+    value: 0000950123-21-000456
+  urls:
+    original: https://www.sec.gov/Archives/edgar/data/1819974/000095012321000456/filename1.htm
+    wayback: https://web.archive.org/web/20250212175424/https://www.sec.gov/Archives/edgar/data/1819974/000095012321000456/filename1.htm
+    ir: null
+  about:
+    summary: >-
+      The second amendment to the draft IPO registration statement. It adds
+      interim figures (Cypress/Infineon 32 % of revenue for the nine months
+      to September 2020) and an exhibit index listing the Process Technology
+      License Agreement with Cypress and its first amendment.
+    quotes:
+    - text: >-
+        Cypress, which was acquired in April 2020 by Infineon Technologies AG,
+        accounted for approximately 32% and 54% of our revenues for the nine
+        months ended September 27, 2020 and September 29, 2019
+      location: Risk Factors
+    - text: >-
+        Process Technology License Agreement, dated as of March 1, 2017, between
+        Cypress Semiconductor Corporation and Cypress Semiconductor (Minnesota)
+        Inc.
+      location: Exhibit index, exhibit 10.6
+  auditor_report: null
+  relationships:
+  - skywater-ipo
+  - skywater-fab-history
+  - cypress-technology-license
+  - cypress-foundry-services
+  related_docs:
+  - label: overview-index
+    relation: context
+    reason: The draft adds the exhibit index that first names the Cypress process licence behind the S130 platform.
+  inventory_key: null
+  discovery:
+  - wayback-cdx
+  discovery_note: >-
+    Found through a Wayback CDX listing of SkyWater's EDGAR folders; form
+    (DRS/A) and filing date read from the captured filing index page.
+  verified: 2026-09-14 Wayback capture 20250212175424 of the EDGAR document fetched; quotes checked
+  notes: >-
+    The cover legend describes the draft's status when submitted; the SEC
+    has since released it on EDGAR. Amendment No. 1 (DRS/A, 2020-09-30,
+    accession 0000950123-20-010026) has a captured index page but no
+    captured document.
 
 - id: skywater-s-1-2021-03-22
   company: SkyWater Technology, Inc.
@@ -1217,12 +1341,12 @@ filings:
         On July 31, 2006, we entered into an agreement with Cypress
         Semiconductor Corporation ("Cypress") for the purchase of available
         capacity of Cypress' 8" wafer pilot line
-      location: Management's discussion and analysis, Operation Agreements
+      location: Item 1, Business, Operation Agreements
     - text: >-
         On September 30, 2017, Cypress assigned the Semiconductor Line Operation
         Agreement to SkyWater Technology Foundry, Inc., to which we consented on
         November 9, 2017.
-      location: Management's discussion and analysis, Operation Agreements
+      location: Item 1, Business, Operation Agreements
   auditor_report: null
   relationships:
   - customer-names-skywater
@@ -1362,7 +1486,7 @@ filings:
     - text: >-
         Our proven embedded ReRAM intellectual property (IP) is now
         commercially available in SkyWater Technology's 130nm CMOS process
-      location: Chair's and CEO's letter
+      location: Introductory section
     - text: Weebit ReRAM fully qualified in SkyWater S130 process
       location: 2022-2023 highlights
   auditor_report: null
@@ -1479,7 +1603,7 @@ filings:
         On September 30, 2017, Cypress assigned the Semiconductor Line Operation
         Agreement to SkyWater Technology Foundry, Inc., to which we consented on
         November 9, 2017.
-      location: Management's discussion and analysis, Operation Agreements
+      location: Item 1, Business, Operation Agreements
   auditor_report: null
   relationships:
   - customer-names-skywater
@@ -1523,7 +1647,7 @@ filings:
         Factors beyond our control, such as missing IPs in SkyWater's foundry
         offering, have delayed licensing agreements with product companies
         wanting to manufacture at SkyWater
-      location: Chair's and CEO's letter
+      location: Introductory section
     - text: Weebit ReRAM qualified 125⁰C in SkyWater S130
       location: Highlights
   auditor_report: null
@@ -1850,7 +1974,7 @@ filings:
         In June 2025, we sold our 200-millimeter fab in Austin (Texas, USA) to
         the U.S.-based company SkyWater and entered into a long-term supply
         agreement.
-      location: Letter from the Management Board
+      location: Introductory section
     - text: >-
         On 30 June 2025, the 200-millimeter fab in Austin (USA) was sold to
         SkyWater Technology, Inc. ("SkyWater").
@@ -2117,7 +2241,7 @@ filings:
         IonQ expects to retain (i) SkyWater's lease agreement for the SkyWater
         Minnesota facility with Oxbow Realty Partners, LLC ("Oxbow Realty"), a
         consolidated variable interest entity of SkyWater
-      location: Unaudited pro forma condensed combined financial information, notes
+      location: Summary
     - text: >-
         Its principal executive offices are located at 2401 East 86th Street,
         Bloomington, Minnesota 55425
