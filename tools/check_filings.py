@@ -737,10 +737,18 @@ def check_heading_location(
     """Location check for a prose section heading that is not an "ITEM N" caption
     (annual-report sections, exhibit headings, press-release headings). Finds the
     heading phrase (heading_phrase) and the quote's position in whitespace-preserved
-    text, then requires the heading's nearest occurrence before the quote to be
-    reasonably close (HEADING_MAX_GAP characters); a heading that occurs only *after*
-    the quote, or nowhere, is a wrong location -- unless it is nowhere in the text at
-    all, when the checker cannot tell and abstains."""
+    text, then compares it with the nearest occurrence of that phrase that actually
+    looks like a heading -- starting a line, not sitting mid-sentence -- since the
+    same words also turn up as an ordinary cross-reference (e.g. "...as described
+    under Risk Factors, the Company...", or fy2006's boilerplate "The letter to
+    Shareholders and 'MD&A' contain forward-looking statements...", found 55000
+    characters after that record's real, differently-worded "FELLOW SHAREHOLDERS:"
+    heading -- counting it would have wrongly failed a correct location). Only a
+    heading-like occurrence within HEADING_MAX_GAP characters of the quote counts;
+    when the nearest one *follows* the quote instead of preceding it, that is a wrong
+    location (e.g. a quote actually in a 10-Q's general "Note 1 -- Nature of Business"
+    but whose location instead names the "Business Combinations" accounting-policy
+    note that follows a paragraph later)."""
     phrase = heading_phrase(location)
     if not phrase:
         abstentions.append(f"{where}: location {location!r} names no specific heading; not checked")
@@ -763,17 +771,25 @@ def check_heading_location(
             f"{where}: heading {phrase!r} (from location {location!r}) not found anywhere "
             f"in the fetched text; not checked")
         return
-    preceding = [o for o in occurrences if o <= qm.start()]
-    HEADING_MAX_GAP = 20000  # normalised characters; prose sections run far longer than a TOC line
-    if not preceding:
-        problems.append(
-            f"{where}: location names heading {phrase!r} but that text occurs only after "
-            f"the quote in the fetched text: {quote_text[:60]!r}")
+    heading_like = [o for o in occurrences if o == 0 or raw_text[:o].rstrip(" \t").endswith("\n")]
+    if not heading_like:
+        abstentions.append(
+            f"{where}: heading {phrase!r} only occurs mid-sentence (e.g. a cross-reference), "
+            f"never starting a line, in the fetched text; not checked")
         return
-    if qm.start() - preceding[-1] > HEADING_MAX_GAP:
+    HEADING_MAX_GAP = 20000  # normalised characters; prose sections run far longer than a TOC line
+    nearest = min(heading_like, key=lambda o: abs(o - qm.start()))
+    gap = qm.start() - nearest  # positive: heading precedes the quote; negative: it follows
+    if abs(gap) > HEADING_MAX_GAP:
         abstentions.append(
             f"{where}: heading {phrase!r} found but not within {HEADING_MAX_GAP} characters "
-            f"before the quote; treated as unverifiable, not checked")
+            f"of the quote; treated as unverifiable, not checked")
+        return
+    if gap < 0:
+        problems.append(
+            f"{where}: location names heading {phrase!r} but the nearest such heading in the "
+            f"fetched text follows the quote by {-gap} characters instead of preceding it: "
+            f"{quote_text[:60]!r}")
 
 
 def check_page_location(
@@ -841,7 +857,15 @@ def check_positional_location(
     if idx is None:
         abstentions.append(f"{where}: location {location!r} not recognised as a position; not checked")
         return
-    paras = [p for p in re.split(r"\n\s*\n+", raw_text) if p.strip()]
+    # A press release's headline and subheadline are their own blank-line-delimited
+    # "paragraphs" ahead of the real body text, so a naive index would call the
+    # headline "the first paragraph". Keep only paragraphs that read as prose (contain
+    # a lower-case letter immediately followed by ". " or end-of-paragraph, i.e. an
+    # actual sentence boundary) before indexing; fall back to the unfiltered list if a
+    # document happens to have no such paragraph at all, rather than checking nothing.
+    all_paras = [p for p in re.split(r"\n\s*\n+", raw_text) if p.strip()]
+    prose_re = re.compile(r"[a-z]\.(?:\s|$)")
+    paras = [p for p in all_paras if prose_re.search(p)] or all_paras
     matches = [i for i, p in enumerate(paras) if frag in normalise(p)]
     if not matches:
         abstentions.append(f"{where}: quote text not found in any extracted paragraph; {location!r} not checked")
@@ -849,7 +873,8 @@ def check_positional_location(
     if idx not in matches:
         problems.append(
             f"{where}: location says {location!r} but the quote is in paragraph(s) "
-            f"{[m + 1 for m in matches]} (1-based) of the fetched text: {quote_text[:60]!r}")
+            f"{[m + 1 for m in matches]} (1-based, headline/subheadline paragraphs excluded) "
+            f"of the fetched text: {quote_text[:60]!r}")
 
 
 def check_location(
