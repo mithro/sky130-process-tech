@@ -99,9 +99,15 @@ etchant concentration and the ion bombardment energy", with a peak near
 "fluorine-deficient plasma" selective to titanium silicide, as a Texas
 Instruments patent describes.[^pat-tin-etch-ti] Where a conductor film
 sits on a thin dielectric, as a MiM capacitor top plate of any material
-does, the over-etch must stop quickly: a later Texas Instruments patent etches a MiM top electrode
-with two halogen gases, one containing fluorine, in a way that "removes
-≦100 A of the thickness of the dielectric layer".[^pat-mim-ti-etch]
+does, the over-etch must stop quickly; a later Texas Instruments patent
+that may still be in force gives such an etch and the dielectric loss it
+allows, in the collapsed note below.
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+A later Texas Instruments patent etches a MiM top electrode with two
+halogen gases, one containing fluorine, in a way that "removes ≦100 A of
+the thickness of the dielectric layer".[^pat-mim-ti-etch]
+:::
 
 ### Corrosion control and integrated strip
 
@@ -226,7 +232,9 @@ page.
   as CHF₃ for sidewall passivation;[^chen-1989][^allen-1994][^pat-taper-att]
   BCl₃ "is also used in plasma etching in semiconductor
   manufacturing".[^wiki-bcl3] Fluorine-bearing additions serve the TiW
-  and TiN layers.[^liu-2007-tiw][^pat-mim-ti-etch]
+  and TiN layers[^liu-2007-tiw] (and, in the Texas Instruments patent
+  that may still be in force, the MiM top electrode: collapsed note
+  below this list).
 * **Integrated strip.** A downstream stripper on the etch platform
   removes the resist and, in Applied's design, runs a passivation step
   before the wafer leaves the system.[^lam-9600se-stripper-1998][^amat-300-etch-2000]
@@ -239,6 +247,12 @@ page.
   resist etch rates;[^cooperberg-2002] the metal-level pages
   add corrosion inspection after a queue-time delay
   ({ref}`MM1E <step-114>`).
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+Fluorine-bearing additions also serve the MiM top electrode of the Texas
+Instruments patent, which uses two halogen gases, one of them containing
+fluorine.[^pat-mim-ti-etch]
+:::
 
 ## Process-integration notes for SKY130
 
@@ -273,9 +287,9 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   tungsten at no more than 90 nm/min in Fischl and Hess's
   conditions;[^fischl-1987] the capacitor
   top-plate etches, whatever the plate material, land on the thin MiM
-  dielectric, where the step pages
-  cite a patent that removes no more than about 100 Å of
-  it.[^pat-mim-ti-etch]
+  dielectric, where the step pages cite a patent that may still be in
+  force for how little of it such an etch may remove (collapsed note
+  below this list).
 * **Profiles for gap fill.** The inter-level oxides deposited over each
   metal level must fill the spaces the etch leaves; a tapered profile
   is one way to ease the fill, set by the N₂ or carbon
@@ -289,6 +303,11 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   gates; the SKY130 antenna rules exist for this reason
   ({ref}`category-etch`), and electron shading during metal etching is
   the mechanism Noguchi et al. studied.[^noguchi-1997]
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+The patent the step pages cite removes no more than about 100 Å of the
+MiM dielectric.[^pat-mim-ti-etch]
+:::
 
 ## Related pages
 

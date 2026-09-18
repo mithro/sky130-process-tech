@@ -19,13 +19,18 @@ shared with oxidation is described on the
 | | Vertical batch furnace: LPCVD |
 |---|---|
 | What it does | Deposits films from gases at reduced pressure on a batch of wafers in a hot-wall tube; LPCVD "dominates for multi-wafer furnace tube tools", and "Reduced pressures tend to reduce unwanted gas-phase reactions and improve film uniformity across the wafer".[^wiki-cvd] |
-| Pressure | "several hundred m Torr" for a dichlorosilane nitride in a vertical furnace;[^pat-nh4cl-tsmc] "5-500 mTorr" for the oxynitride layers of a Cypress ONO stack "in a batch furnace";[^pat-03] below 1 Torr for TEOS oxide.[^becker-1987] |
+| Pressure | "several hundred m Torr" for a dichlorosilane nitride in a vertical furnace;[^pat-nh4cl-tsmc] a Cypress ONO-stack patent that may still be in force gives a range of its own (collapsed note under this table); below 1 Torr for TEOS oxide.[^becker-1987] |
 | Films and temperatures | Nitride from dichlorosilane and ammonia at about 750–800 °C;[^pat-nh4cl-tsmc] nitride from BTBAS and ammonia "at 550-600°C in a 200 mm vertical batch furnace system";[^gumpher-2004] silicon films "polycrystalline … above 600°C" and amorphous below;[^kamins-1980] TEOS oxide at 650–800 °C.[^becker-1987] |
 | By-products | Ammonium chloride from the dichlorosilane–ammonia reaction, "gaseous … typically about 700° C." but "a solid condensate at temperatures below about 125° C."[^pat-nh4cl-vlsi] |
 | Wafer handling | Batch: "150 product, test, and filler wafers" in a typical VTR LPCVD load;[^expertech-vtr] "a batch of up to 150" on TEL's ALPHA-8SE i;[^tel-telindy] a boat "supported by a boat elevator and boat pedestal" inside an inner sleeve.[^pat-lpcvd-sony] |
 | 200 mm era | TEL's Alpha-8 "diffusion and LP-CVD furnaces"[^tel-alpha8se] and the VCF-615S LP-TEOS furnace;[^pat-lpcvd-sony] Aviza's AVP-8000 for "silicon nitride (stoichiometric and low stress), TEOS, SiH4 and DCS-based SiO2, doped (P, As, B) and un-doped polysilicon";[^aviza-avp] ASM's A400 for "doped silicon and silicon nitride films".[^asm-a400] |
 | SkyWater-listed tool | "LPCVD nitride, with NH3 and also DH3", "LPCVD polysilicon (undoped), both amorphous and crystalline", "LPCVD silane oxide", "LPCVD oxide/nitride/oxide", "LPCVD BTBAS low temp nitride" (Aviza)[^skw-01] |
 | SKY130 steps | 6 steps, plus 2 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-vertical-furnace-lpcvd-steps>` |
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+The *Pressure* row above: "5-500 mTorr" for the oxynitride layers of a
+Cypress ONO stack "in a batch furnace".[^pat-03]
+:::
 
 ## What the machine class is and how it works
 
@@ -113,10 +118,16 @@ increase and the thickness uniformity to degrade".[^adams-1979]
   and dichlorosilane-based oxide are the other furnace
   chemistries.[^aviza-avp]
 * **Stacks.** A furnace that can oxidise and deposit can build an
-  oxide–nitride–oxide stack in one load; Cypress forms its oxynitride
-  layers from "N₂O, NH₃ and SiH₂Cl₂" "in a batch furnace",[^pat-03] and
-  Aviza's 300 mm RVP-300 offered "sequential processing for nitrided
-  oxides or composite oxide-nitride stacks".[^aviza-vert]
+  oxide–nitride–oxide stack in one load; the gases Cypress uses for its
+  oxynitride layers are in the collapsed note below this list, from a
+  patent that may still be in force, and Aviza's 300 mm RVP-300 offered
+  "sequential processing for nitrided oxides or composite oxide-nitride
+  stacks".[^aviza-vert]
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+Cypress forms its oxynitride layers from "N₂O, NH₃ and SiH₂Cl₂" "in a
+batch furnace".[^pat-03]
+:::
 
 ### By-products, pumping and particles
 
@@ -254,7 +265,9 @@ page.
 * **Precursors.** Dichlorosilane and ammonia for nitride; BTBAS, a
   liquid delivered as vapour, with ammonia for low-temperature
   nitride;[^gumpher-2004] silane for silicon and silane
-  oxide;[^kamins-1980] N₂O for oxide and oxynitride layers;[^pat-03] TEOS
+  oxide;[^kamins-1980] N₂O for oxide and oxynitride layers (the Cypress
+  patent naming it may still be in force: see the collapsed notes
+  above); TEOS
   for TEOS oxide where it is used.[^becker-1987] SkyWater names ammonia,
   BTBAS and silane in its process lines.[^skw-01]
 * **Vacuum and exhaust.** Dry pumps, heated exhaust lines and traps for
