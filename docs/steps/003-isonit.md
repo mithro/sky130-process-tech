@@ -22,8 +22,9 @@ and the liner oxidation ({ref}`LINOX <step-010>`), and acts as the
 polish stop for the oxide {term}`CMP` ({ref}`CMPNIT <step-012>`). It is removed
 at {ref}`NS19 <step-013>`.
 
-Precisely: a stoichiometric LPCVD nitride of the order of 100 nm
-is deposited in a furnace from dichlorosilane and ammonia. An AmberWave
+Precisely: a stoichiometric LPCVD nitride of the order of 150 nm — the
+working figure used throughout this module, not a SkyWater number — is
+deposited in a furnace from dichlorosilane and ammonia. An AmberWave
 Systems STI patent gives the mask nitride as "500-2000 Å"
 (50–200 nm);[^pat-sti-amberwave] Wikipedia's STI outline calls it the
 "protective nitride".[^wiki-sti] No public SkyWater source gives the

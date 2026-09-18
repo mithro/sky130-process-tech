@@ -46,9 +46,9 @@ range: an AmberWave Systems STI patent (now TSMC-owned) gives "a depth
 d1 within a range of, for example, 3000-4000 Å" for a strained-Si/
 relaxed-SiGe module,[^pat-sti-amberwave] and Thung et al. record that
 the STI "aspect ratio is increased by 66% from 0.18µm technology to
-0.13µm technology".[^thung-2016] On a 0.3 µm depth and a ~150 nm
+0.13µm technology".[^thung-2016] On the 0.33 µm depth above and a ~150 nm
 nitride, a 0.27 µm minimum trench width (difftap.3)[^pdk-periph] gives a
-fill aspect ratio of roughly 1.7 : 1 by Thung et al.'s
+fill aspect ratio of roughly 1.8 : 1 by Thung et al.'s
 definition.[^thung-2016]
 
 ## Step category
@@ -265,7 +265,7 @@ W/WN".[^skw-01]
 * **Trench depth.** No SkyWater document states it, and the PDK stack
   drawing does not settle it either way: its datum (whether `0.0` is
   the trench floor or the substrate surface) is not documented, and the
-  drawing says "not to scale". A ~0.3 µm figure follows only if the
+  drawing says "not to scale". A ~0.33 µm figure follows only if the
   zero is the trench floor.[^pdk-04][^pdk-03] No measured cross-section
   of SKY130 STI is public.
 * **Where the FOM resist is stripped** — inside `STIE`, or before the
