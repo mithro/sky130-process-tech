@@ -38,6 +38,7 @@ Filings by year of filing, newest first.
 ## 2024
 
 * SkyWater Technology, Inc., 10-K, filed 2024-03-15: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-skywater-10-k-2024-03-15>`)
+* QuickLogic Corporation, 10-K, filed 2024-03-27: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-quicklogic-10-k-2024-03-27>`)
 * D-Wave Quantum Inc., 10-K, filed 2024-03-29: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-d-wave-10-k-2024-03-29>`)
 * SkyWater Technology, Inc., DEF 14A, filed 2024-04-10: Definitive proxy statement for the 2024 annual meeting of stockholders ({ref}`full entry <filing-skywater-def-14a-2024-04-10>`)
 * SkyWater Technology, Inc., 10-Q, filed 2024-05-10: Quarterly report on Form 10-Q for the quarter ended 2024-03-31 ({ref}`full entry <filing-skywater-10-q-2024-05-10>`)

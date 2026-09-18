@@ -217,6 +217,7 @@ No filings yet.
 * D-Wave Quantum Inc., S-4, filed 2022-03-15: Form S-4 registration statement for the business combination of D-Wave Systems and DPCM Capital ({ref}`full entry <filing-d-wave-s-4-2022-03-15>`)
 * D-Wave Quantum Inc., 8-K, filed 2023-03-03: Current report: Thirteenth Amendment to the Agreement for Semiconductor Line Operation with SkyWater Technology Foundry ({ref}`full entry <filing-d-wave-8-k-2023-03-03>`)
 * D-Wave Quantum Inc., 10-K, filed 2023-04-18: Annual report on Form 10-K for the fiscal year ended 2022-12-31 ({ref}`full entry <filing-d-wave-10-k-2023-04-18>`)
+* QuickLogic Corporation, 10-K, filed 2024-03-27: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-quicklogic-10-k-2024-03-27>`)
 * D-Wave Quantum Inc., 10-K, filed 2024-03-29: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-d-wave-10-k-2024-03-29>`)
 
 (filings-rel-partner-names-skywater)=
