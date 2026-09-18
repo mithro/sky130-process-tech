@@ -434,8 +434,8 @@ alignment corrections.
     Junctions for VLSI Circuits", arXiv:1408.5829 (2014) — describes a
     Canon FPA-3000EX4 248 nm stepper with 5× reduction and NA 0.6.
     <https://arxiv.org/abs/1408.5829>
-[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
-    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021, accessed
+    2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^tel-act8]: Semiconductor Online, *CLEAN TRACK ACT 8 System for Spin-On
     Dielectric (SOD) Applications*.
     <https://www.semiconductoronline.com/doc/clean-track-act-8-system-for-spin-on-dielectr-0001>

@@ -292,8 +292,8 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
-[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
-    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021, accessed
+    2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
     Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
     ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>

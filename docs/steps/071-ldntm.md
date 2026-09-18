@@ -295,8 +295,8 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
-[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
-    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021, accessed
+    2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^pap-01]: M. H. White, D. A. Adams and J. Bu, "On the go with SONOS",
     *IEEE Circuits and Devices Magazine* **16**(4), 22–31 (2000).
     <https://doi.org/10.1109/101.857747>

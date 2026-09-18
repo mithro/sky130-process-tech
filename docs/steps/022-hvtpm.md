@@ -302,8 +302,8 @@ fab:
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
-[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
-    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021, accessed
+    2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^txt-05]: S. Wolf, *Silicon Processing for the VLSI Era, Vol. 4:
     Deep-Submicron Process Technology*, Lattice Press, 2002, ISBN
     978-0-9616721-7-1. <https://openlibrary.org/isbn/9780961672171>
