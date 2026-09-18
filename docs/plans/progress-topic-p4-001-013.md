@@ -62,9 +62,9 @@ Status values: open / fixed / declined.
 | 011-L1 | 011-filox | fixed | verified: iopscience.iop.org bot-blocks the checker's UA (302 to bot-challenge); marked numbers as unverified rather than dropped |
 | 011-L2 | 011-filox | fixed | verified by fetch: Wikipedia sentence carries the unsourced-statement category tag; added nguyen-1999 on both uses |
 | 011-L3 | 011-filox | fixed | quoted the 10-K's actual IMD-CVD wording so the tool isn't implied to be an STI-fill tool |
-| 012-L1 | 012-cmpnit | open | slurry selectivity numbers unverifiable, mark |
-| 012-L2 | 012-cmpnit | open | REB quote source describes LOCOS not STI |
-| 012-L3 | 012-cmpnit | open | uncited topography figure, tie to FILOX |
+| 012-L1 | 012-cmpnit | fixed | verified pubs.acs.org returns 403 to the checker's UA; marked both selectivity numbers as from the paywalled review's body |
+| 012-L2 | 012-cmpnit | fixed | verified by fetch: the Wikipedia REB sentence is followed by a thermally-grown (LOCOS-style) oxidation description, not deposited STI fill; recited to rev-01/txt-05 and fixed the reading-list bullet too |
+| 012-L3 | 012-cmpnit | fixed | tied to FILOX's fill thickness instead of a standalone number |
 | 013-L1 | 013-ns19 | fixed | verified against 058-gatenit.md's own reading; added GATENIT to the list |
 
 ## Cross-page conflicts (from B's summary, resolved as part of the above)
