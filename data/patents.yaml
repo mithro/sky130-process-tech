@@ -215,11 +215,12 @@ families:
   relevance:
   - target: step-030
     relation: technique-class
-    reason: Assignee Spansion LLC, the AMD-Fujitsu NOR-flash joint venture; no public source found by this search ties Spansion
-      to the Cypress/SkyWater fab lineage (unlike Cypress, SkyWater and Infineon Technologies LLC), so this is recorded
-      as general prior art, not as a same-lineage-assignee family. The patent describes a class of technique for reducing
-      short-channel effects in a memory array's well/channel engineering, and it is not evidence of SKY130 practice or of
-      any lineage connection.
+    reason: Assignee Spansion LLC, the AMD-Fujitsu NOR-flash joint venture; no public source found by this search ties Spansion's
+      fab lineage to the Bloomington fab, though this patent's own USPTO assignment record shows Cypress Semiconductor Corporation
+      and Spansion LLC as co-assignors after the 2015 Cypress-Spansion merger (a security interest, 2015-03-21, and a further
+      assignment, 2022-03-16) -- corporate history, not fab lineage, so this is recorded as general prior art, not as a
+      same-lineage-assignee family. The patent describes a class of technique for reducing short-channel effects in a memory
+      array's well/channel engineering, and it is not evidence of SKY130 practice or of any lineage connection.
   inventory_keys: []
   discovery:
   - assignee-search
@@ -227,6 +228,16 @@ families:
     named by the round-1 review, which described it as "Spansion (the Cypress/AMD flash joint venture)"; this addition checked
     that description independently and did not find a public source establishing a Spansion/Cypress-fab-lineage tie, so
     the relation is recorded as technique-class rather than same-lineage-assignee.
+  notes:
+  - 'Round-3 verification finding M4: this family''s own cached record page carries USPTO assignment events naming
+    Cypress alongside Spansion (2015-03-21 security interest, "Assignors: CYPRESS SEMICONDUCTOR CORPORATION, SPANSION
+    LLC"; 2022-03-16, "Assigned to SPANSION LLC, CYPRESS SEMICONDUCTOR CORPORATION") -- verified directly against the
+    cached page. This reflects the 2015 Cypress-Spansion corporate merger and later intellectual-property financing,
+    not the Bloomington fab''s own history; Spansion LLC is the AMD/Fujitsu NOR-flash lineage the design doc''s
+    same-lineage-assignee definition does not name, so the technique-class relation stands. The reason above was
+    narrowed from "no public source ... ties Spansion to the Cypress/SkyWater fab lineage" (which read as if no
+    connection to Cypress existed at all) to name the fab-lineage question specifically and acknowledge the
+    assignment record.'
   verified: 2026-09-19 Google Patents record page https://patents.google.com/patent/US6963106B1/en
 - id: GP34964103
   family:
