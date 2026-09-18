@@ -250,7 +250,8 @@ originally exposed a collapsed family's full member list — fixed by
 having it contribute only the representative's own row for a collapsed
 family, like every other grouped page).
 
-L2 (round-1 review, confirmed as intentional rather than a defect): the
+L2 (round-1 review; the fixer's proposal, recorded here pending the
+coordinator's ratification — round-3 review finding N9): the
 *collapsed dropdown's own title* (on `families.md`, the one place a
 reader can open to see the rest) additionally names the estimated expiry
 date, as the example above shows — this is deliberately more than

@@ -78,4 +78,5 @@ for the paper index (L11, round-1 patent-index review, 2026-09-18);
 recorded here as the exception the patent-index design doc asked the
 coordinator to agree before generating
 `docs/references/patents/` (`docs/plans/patent-index-design.md`,
-"Links inside entries").
+"Links inside entries") — the fixer's proposal, pending that
+ratification (round-3 review finding N9).
