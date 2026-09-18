@@ -71,8 +71,9 @@ high-value resistor banks;[^tsang-2014] both are consequences of the
 same barrier-limited conduction that this implant sets up.
 
 The published SKY130 {term}`test tile` carries the structures such a
-film is characterised with: eleven modules of "2K ohm/sq P- POLY
-RESISTOR" at the same five widths as the 300 Ω/sq set, from 0.5 to 20
+film is characterised with: eleven modules of "2K ohm/sq P-  POLY
+RESISTOR" (spacing as printed in the CSV) at the same five widths as
+the 300 Ω/sq set, from 0.5 to 20
 squares and many as "Mismatch" pairs, and a van der Pauw "RSRP - 2K
 ohm/sq poly resistor sheet resistance: VDP".[^raw-data-testtile-pads]
 Measurements of 88 of those resistors are public: the SKY130 raw-data
