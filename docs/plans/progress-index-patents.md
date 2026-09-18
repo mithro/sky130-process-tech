@@ -13,6 +13,119 @@ cache: `tmp/qcache/` (gitignored). The dataset is rebuilt from
 publication number, `relevance`, `inventory_keys`, `discovery`,
 `discovery_note`, `notes`) plus the fetch cache by `tmp/build.py`.
 
+## Round 2: response to the independent review
+
+Review: `tmp/review-index-patents-r1.md` (round 1, 2026-09-18, 2 High, 10
+Medium, 13 Low). Environment note that applies to several rows below:
+**Google Patents, Espacenet's web interface, WIPO Patentscope and the
+USPTO PatentsView/PED/assignment-search APIs are all unreachable from
+this fixer's environment** — persistent HTTP 503 (Google Patents, paced
+with backoff up to 120 s per the design's own pacing rule, repeated
+across the round) or 403/timeout (the others) with the required user
+agent `sky130-process-tech docs checker`. `data.epo.org` (EPO linked
+data) and `image-ppubs.uspto.gov` (USPTO grant-PDF images) do work and
+were used directly wherever they could settle a finding. This blocks new
+Google-Patents-family discovery (H1's main ask) and re-fetching any
+member already in the dataset (M5, M10, parts of H2's manual spot-checks);
+every fix below that needed a fresh fetch is marked accordingly rather
+than silently worked around.
+
+| ID | Finding | Status | Note |
+|---|---|---|---|
+| H1 | Coverage far short of "comprehensive"; no SkyWater patent | open | Blocked: new-family discovery needs Google Patents searches and record-page fetches; confirmed unreachable — every request, including the bare domain root, gets Google's own site-wide "unusual traffic" bot-check page (IP-level block, not a per-endpoint rate limit), across three separate attempts this round. The 15 families the review now lists by number (extended mid-round with 3 more, plus a continuation/divisional discovery lesson — see below) could not be added either — the schema's `id` is the Google Patents family ID, only obtainable from a Google Patents page, and `data.epo.org` does not substitute for a US-only document. Added the review's own coverage-gap statement to the landing page instead of leaving the index looking exhaustive; see "H1" section below for what a next attempt should do first. |
+| H2 | Checker can't detect a genuinely-unexpired family shown collapsed | fixed | `member_end_bound()` in `tools/check_patents.py` implements the design's per-member bounds and is checked against every member of an `expired: true` family. |
+| M1 | `GP90721530` Korean-only assignee, CEA missing | fixed | Verified independently against `data.epo.org` (not just the review's report of it); recorded in the family's `notes`. |
+| M2 | `by-jurisdiction.md` exposes a collapsed family's full member list | fixed | Collapsed families now contribute only the representative's row (number + status word), like every other grouped page. |
+| M3 | `expiry.date` can understate the family's latest member term | fixed | `family_max_estimate()` takes the maximum over every member, not just the ones shown in force; 36 families' dates moved (all later), 2 more after the L3 fix. |
+| M4 | Fee lapse treated as final; reinstatement not modelled | fixed | Added 37 CFR 1.378 (verified via Cornell LII) to the legal caveat; `notes` on `GP50930700` recording the lapse date and window as the review reported them (not independently re-verified — Google Patents unreachable). |
+| M5 | 3 representative statuses already drifted since retrieval | documented, not refreshed | Recorded each drift as a `notes` entry attributed to the review's 2026-09-18 re-fetch; could not re-fetch `GP35540402`, `GP69743400`, `GP90721530` myself (Google Patents unreachable). None changes a collapsed/open state. |
+| M6 | Espacenet "links" are search queries, not records | fixed | Landing page now says so and names Google Patents as the working full-text link; declined to add further official-database links (would need fetches this environment can't make). |
+| M7 | Every entry renders as one run-on paragraph | fixed | `family_body()` puts a blank line after every field line. |
+| M8 | ~40 members mislabelled `document_type: application` | fixed | `tmp/build.py`'s `doc_type()` extended (DE `D1`, GR `T3`, PT `E`, SE `L`, CA `C`); 40 members' `document_type` corrected directly. |
+| M9 | Japanese-divisional term rule wrong; 3 `unknown` families really expired | fixed | Verified the law myself from the Ministry of Justice's English translation of the Patent Act (Art. 44(2)/67(1), `japaneselawtranslation.go.jp`); design doc, checker and the 3 families (`GP25461879`, `GP24728963`, `GP35448183`, now `expired: true`) all corrected. |
+| M10 | 5 re-fetched application members show a status other than recorded `Granted` | investigated; declined as a builder defect | Read `tmp/build.py`/`tmp/gp.py`: no substitution logic exists — `status` is copied verbatim from the parsed page at fetch time. Recorded the review's re-fetch findings as `notes` on the 5 families; could not independently re-verify (Google Patents unreachable). |
+| L1 | Landing sentence describes an empty "the rest" set | fixed | `gen_index()` only emits that sentence when some member actually is listed-only. |
+| L2 | Collapsed dropdown title shows more than "number and status" | confirmed intentional | Design doc now says explicitly this is deliberate for the one place a reader can open the entry; every other page still shows number + status only. |
+| L3 | Listed-only bound applied to a fetched member with a known filing date | fixed | `member_end_bound()` also bounds by the member's own filing date + 20 years; found and fixed a related issue while at it (a `translation-of-granted-patent` had been given an independent bound it shouldn't have, per M8's own reasoning). |
+| L4 | `expired: true` accepted while a member is shown `Active`, no note | fixed | `notes` added to `GP37568077` and `GP37568096`. |
+| L5 | Checker never checks `expiry.date` against the members | fixed | Added alongside H2 (`family_max_estimate()` equality check, and a basis-names-a-member check). |
+| L6 | `legal_status.status` duplicates the representative's `status` unchecked | fixed | Added alongside H2. |
+| L7 | 2 families' `expiry.date` rests entirely on a derived bound, not clearly marked | fixed (side effect) | The M3/L3 basis-text rewrite already states "estimated 20 years from …" / "estimated upper bound: …" for both; verified, no further change needed. |
+| L8 | `by-module` step ranges hard-coded, could drift from the overview table | fixed | `check_step_modules()` parses `(overview-modules)=` on `docs/overview/index.md` and fails page generation if the two disagree. |
+| L9 | "Individual" heading reads as one company that became five | fixed | Heading changed to "No assignee recorded at grant (Google Patents "Individual")"; `notes` added to the one family (`GP21950172`) with no USPTO-assignment-derived name (couldn't look one up — USPTO assignment API unreachable). |
+| L10 | Google's "original assignee" is sometimes the renamed successor | fixed | Added a caveat sentence to `by-assignee.md`. |
+| L11 | Citation-style exception for generated pages never recorded | fixed | Recorded in `docs/plans/citation-style.md`; no checker behaviour changed (already outside `check_refs.py`'s targets). |
+| L12 | Relevance reasons repeat verbatim up to 15 times per entry | fixed | `relevance_lines()` groups entries sharing one relation+reason onto a single bullet with every target linked. |
+| L13 | `retrieved` date doesn't reflect all fetch dates | fixed | Landing page states the range of `verified` dates found in the dataset when they differ. |
+
+### H1: what was and wasn't possible this round
+
+Attempted, at intervals through this round (initial probe, then a
+5-step exponential backoff up to 120 s, then a further round after the
+review file was extended — three separate attempts in total, spread
+over the session), to reach Google Patents with the required user agent,
+no account or key — persistent HTTP 503 every time. The response body is
+Google's own site-wide "Sorry... unusual traffic from your computer
+network" bot-check page, and `https://patents.google.com/` (bare root)
+returns the same 503, not just record-page or search-query URLs — this
+is an IP-level block on the whole `google.com` domain from this
+environment's egress address, not a per-endpoint rate limit that a
+longer per-request delay would clear (plausibly from the volume of
+fetching this dataset's earlier rounds already did against the same
+address). Espacenet's web interface, WIPO Patentscope, and USPTO's
+PatentsView/PED/assignment-search APIs were also tried and are
+unreachable (403 or no route) from this host. `data.epo.org` and
+`image-ppubs.uspto.gov` work and were used for the findings above that
+they could settle; `data.epo.org` was also tried directly for a pure-US
+publication number (`US10699901B2`, no EP filing) and returns only a
+stub with no bibliographic content — confirmed it only carries full
+records for EP/WO-published documents, matching what the review's own
+Sample 2 already relied on (EP members only).
+
+The coordinator extended the review (now 776 lines) with an additional
+lesson while this round was in progress: **a lineage estate's later
+continuations and divisionals are often filed as, and grouped by Google
+into, a *different* family from the original priority filing** — three
+more examples named (`US 10,699,901 B2`, a granted continuation of the
+exact estate this index holds as `GP40071593`/`US8614124B2`, same
+title and Jenne/Levy/Ramkumar inventors, citing `CN101517714A` which
+*is* a `GP40071593` member; `US 9,929,240 B2`, same 2007 Cypress ONO
+estate; `US 6,963,106 B1`, Spansion wells/short-channel), bringing the
+review's own named-missing-family table to 15. The lesson for whichever
+agent resumes this with working Google Patents access: **family-based
+discovery (following a seed's own family table, citing/cited-by lists)
+structurally cannot find these** — a per-lineage-estate search for later
+continuations/divisionals (by inventor name, by title-phrase, or by
+assignee + priority-date window) is needed in addition to the per-module
+assignee+keyword searches already planned, and needs the same wide
+pacing/backoff/caching discipline the review itself had to fall back to
+(three-figure-second spacing, `data.epo.org` as the keyless alternative
+for anything with an EP/WO member).
+
+Without Google Patents, this round could not:
+
+* Add any of the 15 families the review now lists by number, or any
+  further family found by a fresh assignee/module/continuation search —
+  the schema's family `id` is the Google Patents family ID from a
+  fetched record page; there is no way to mint a compliant record
+  without one, and `data.epo.org` does not substitute for a US-only
+  document (above).
+* Run the per-module searches Phase 2 lists as outstanding (wells,
+  salicide, W plugs, fuses, passivation, ReRAM beyond Weebit), a
+  `assignee="SkyWater Technology"` search, or the new per-estate
+  continuation/divisional sweep the coordinator's lesson calls for.
+* Do the second-source EPO cross-check for a *new* family (there are
+  none to check), though the EPO service itself is reachable and was
+  used for M1's assignee correction on an existing family.
+
+Added an honest completeness statement to
+`docs/references/patents/index.md` (the M6/M1 commit's neighbourhood)
+rather than leave the landing page reading as if the index were
+exhaustive — see "## Scope and completeness" there. **Next agent with
+working Google Patents access should start from the review's 15-family
+table, its six named unsearched modules, and the continuation/divisional
+lesson above, in that order**, before running fresh assignee searches.
+
 ## Phase 1 — dataset: fetching
 
 - [x] Seed set: every patent cited in `docs/` with a `PAT-…` inventory
