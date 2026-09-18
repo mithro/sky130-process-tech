@@ -18,7 +18,7 @@ microwave or RF oxygen plasma at 200–300 °C (a typical industry value;
 the GaSonics L3510's platen range is 100–300 °C),[^gasonics-l3510] often
 with a low-power first stage to break through the hardened "crust" that
 a high-dose implant leaves on the resist surface; a wet strip in
-sulfuric acid–hydrogen peroxide ({term}`SPM`, "piranha") which "is used
+sulphuric acid–hydrogen peroxide ({term}`SPM`, "piranha") which "is used
 to clean organic residues off substrates";[^wiki-piranha] and a final
 {term}`SC-1` (and sometimes {term}`SC-2`) clean of the {term}`RCA clean`
 family to remove particles and metals.[^wiki-rca] Post-etch strips add a
