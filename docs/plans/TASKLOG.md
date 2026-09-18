@@ -96,9 +96,9 @@ deep-dive entries per step page and twelve per category page
   - [x] 076–088 — reviewed, 14 findings fixed (a nitride etch mechanism the cited paper does not describe, a post-spacer-etch thickness applied before the etch, a nitride stress figure), 2 declined, verified with follow-ups (also the unsourced sulfuric-acid grade on 016 and 067) and merged 2026-09-18
   - [x] 089–106 — reviewed, 28 findings fixed (contact taper and etch angle reconciled by arithmetic, a smallest-hole claim, two vendor documents that disagree on an RTP ramp rate now both reported), job-listing findings left for the sweep, verified with three follow-ups and merged 2026-09-18
   - [x] 107–117 — reviewed, 33 findings fixed (two papers cited for what they do not report, an ammonia-filtered track claim the tool list does not make, the material beside a contact at zero enclosure), verified with follow-ups and merged 2026-09-18
-  - [~] 118–134 — reviewed, fixed, in verification
-  - [~] 135–148 — review running
-  - [ ] 149–163
+  - [x] 118–134 — reviewed, 17 findings fixed (a via called wider than the contact when it is narrower, solvents attributed to the wrong tool list, a patent filing date), recurring errors swept on pages outside the range, verified with follow-ups and merged 2026-09-18
+  - [~] 135–148 — reviewed, fix round running (the metal cap composition finding goes to a dedicated sweep)
+  - [~] 149–163 — review running
   - [ ] 164–171
 - [ ] Conflict review across pages (consistent thicknesses, names, order)
 - [ ] Provenance review — repeat after each batch
