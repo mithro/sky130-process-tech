@@ -80,6 +80,22 @@ Member:
   1999-05-29 (so that a US term adjustment or an unexpired term is
   possible) are fetched; older families' members may be listed only,
   because every possible term has ended (see the bound below).
+* **Exception, recorded 2026-09-19 (round-3 verification finding H2):**
+  the "13 named-missing families" and "SkyWater/salicide" discovery
+  batches left 59 members of 8 post-1999-05-29 families listed only, a
+  time-budgeted departure from the rule above (large continuation
+  chains' non-US siblings, fetched for the representative's own family
+  table but not individually). This is not silent: each such member's
+  `status` is `null` and its `verified` field says so, and — because the
+  rule above was not followed — its term is **not** assumed ended;
+  instead it is bounded by rule 3 below (earliest family priority + 21
+  years) like any other listed-only member, whether or not that leaves
+  the family shown expired. 6 of the 8 families are *not* shown expired
+  on this basis. The landing page states the split (members fetched vs.
+  listed, and of the listed, how many sit in an already-expired family
+  vs. a family bounded only by rule 3) instead of asserting that every
+  possible term has ended, which would be true only of the pre-1999-05-29
+  members the rule above already treats as listed-only for that reason.
 
 ### Status and expiry rules
 

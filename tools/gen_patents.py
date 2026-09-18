@@ -349,12 +349,34 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
         if (m2 := VERIFIED_DATE_RE.match(v))
     })
     when = verified_dates[0] if len(verified_dates) == 1 else f"{verified_dates[0]} to {verified_dates[-1]}"
+    listed = nmembers - fetched
+    fams_with_listed = [
+        f for f in fams
+        if any("record page fetched" not in m["verified"] for m in f["members"])
+    ]
+    fams_listed_expired = [f for f in fams_with_listed if f["expired"] is True]
+    fams_listed_not_expired = [f for f in fams_with_listed if f["expired"] is not True]
+    listed_in_expired = sum(
+        1 for f in fams_listed_expired for m in f["members"]
+        if "record page fetched" not in m["verified"])
+    listed_not_expired = listed - listed_in_expired
     fetched_note = (
         [f"record page was fetched; {fetched} of the {nmembers} members have their own record page",
-         "fetched (the rest are listed in the fetched family table of their",
-         "representative but were not fetched separately — every possible term",
-         "of those families' members has already ended, so nothing about",
-         "their status turns on the record not fetched)."]
+         f"fetched. The remaining {listed} are listed in the fetched family table of",
+         "their representative but were not fetched separately: a",
+         "time-budgeted departure from this index's rule of fetching every",
+         "member of a family whose earliest priority is on or after",
+         "1999-05-29, recorded as an exception in",
+         "`docs/plans/patent-index-design.md`'s \"Verification levels\". Each",
+         "such row carries its publication number, country, kind and",
+         "publication date from the representative's own family table, says",
+         "so in its *Verified* column, and shows no status. "
+         f"{plural(listed_in_expired, 'member')} of these sit in "
+         f"{plural(len(fams_listed_expired), 'family')} already shown expired "
+         f"on other grounds; the remaining {plural(listed_not_expired, 'member')}, in "
+         f"{plural(len(fams_listed_not_expired), 'family')} **not** shown expired, are each bounded",
+         "conservatively (the family's earliest priority date + 21 years)",
+         "rather than assumed ended, per the design's rule 3."]
         if fetched < nmembers else
         [f"record page was fetched, and so has every one of the {nmembers} members."]
     )
