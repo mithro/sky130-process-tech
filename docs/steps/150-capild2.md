@@ -66,9 +66,10 @@ Published measurements bear on that reading without settling it. The
 SKY130 raw-data repository holds capacitance–voltage sweeps of the test
 tile's "CAP2M over M4" capacitors beside the first-level
 ones.[^raw-data-testtile-pads][^raw-data-passives] The two large
-second-level capacitors (11 plates, 17 600 µm²) measure 35.27 pF and
-35.29 pF at 0 V, 2.00 fF/µm² including periphery, against 33.26 pF and
-33.28 pF for the first-level ones; one of the two second-level files is
+second-level capacitors (11 plates, 17 600 µm²; pads 4541 and 4549)
+measure 35.27 pF and 35.29 pF at 0 V, 2.00 fF/µm² including periphery,
+against 33.26 pF and 33.28 pF for the first-level ones (pads 4530 and
+4546); one of the two second-level files is
 named `large_mim_cap`, but its module is the one the pad list describes
 as CAP2M over M4, and its value matches the other second-level
 capacitor. The area-intensive structures differ by only about 1 %
@@ -164,9 +165,9 @@ difference in thickness or permittivity between this film and
   stack over a planarised dielectric.[^pat-mim-freescale] The price is that the metal-4 etch must
   later cut through whatever dielectric remains ({ref}`MM4E <step-155>`).
 * **Oxynitride, oxide or nitride.** PECVD silicon nitride gives the most
-  capacitance per thickness, but Van Huylenbroeck et al. showed that
-  PECVD dielectrics can give a frequency-dependent capacitance and
-  investigated how to avoid it;[^van-huylenbroeck-2002] Ng, Chew and
+  capacitance per thickness, but Van Huylenbroeck et al. found that
+  PECVD-nitride MiMs show trap-induced dispersion while PECVD ONO
+  stacks do not;[^van-huylenbroeck-2002] Ng, Chew and
   Chu compared PECVD nitride and oxynitride as MiM dielectrics and found
   both suitable.[^ng-2003] The composition — and hence {math}`k` — of a
   PECVD oxynitride is set by the N₂O/NH₃ flow ratio, which Denisse et al.
@@ -200,7 +201,7 @@ back end (SKY130's recipe is not public); the sequence is that of
    time from PVD to deposition is limited (industry practice[^txt-05]).
 2. **Chamber and temperature.** A single-wafer or multi-station PECVD
    reactor at 300–400 °C (industry-typical for films on
-   aluminium[^txt-05][^chapple-sokol-1989]); SkyWater's "C1" silane
+   aluminium[^txt-05]); SkyWater's "C1" silane
    chamber with its "low temp" option[^skw-01] is the candidate.
 3. **Chemistry.** SiH₄ with N₂O and NH₃ (and N₂ or He) in an RF plasma;
    the N₂O:NH₃ ratio moves the film between oxide and nitride, with

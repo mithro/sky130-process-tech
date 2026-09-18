@@ -28,9 +28,9 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 149-L3 | Low | fixed | Al-Cu target/Cypress attribution missing footnote (149:161-162) |
 | 149-L4 | Low | fixed | Newport Fab/TSMC MiM patents — shared-electrode construction overstated (149:85-87) |
 | 150-M1 | Medium | fixed | step-name-as-evidence omission pattern (149:52-53, 150:19-22, 151:29-31); the 161 occurrence (line 51) sits inside the range findings X2/X3 concern (51-62), so left for the metal-cap sweep |
-| 150-L1 | Low | open | missing pad identifiers for CV extraction (150:66-70) |
-| 150-L2 | Low | open | Van Huylenbroeck et al. — nitride vs ONO finding misstated (150:175-177) |
-| 150-L3 | Low | open | Chapple-Sokol miscited for a temperature window (150:196-198) |
+| 150-L1 | Low | fixed | missing pad identifiers for CV extraction (150:68-71) |
+| 150-L2 | Low | fixed | Van Huylenbroeck et al. — nitride vs ONO finding misstated (150:168-171) |
+| 150-L3 | Low | fixed | Chapple-Sokol miscited for a temperature window (150:203-204) |
 | 151-L1 | Low | open | via3.1a 0.8 µm square not mentioned (151, 159) |
 | 151-L2 | Low | open | per-contact via count stated as fact, not reading (151:100-103) |
 | 151-L3 | Low | open | Hartsough citation implies corroboration it can't give (151:36-40) |
