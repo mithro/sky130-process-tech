@@ -21,7 +21,7 @@ Status values: open / fixed / declined.
 | 004-M1 | 004-fom | fixed | matched docs/masks/fom.md and docs/masks/index.md, which already mark this pairing "(inference)" |
 | 008-M1 | 008-dni | fixed | reworded; the MeV straggle-vs-offset physics claim in the review is standard implant physics, order-of-magnitude plausible, no public SKY130 figure exists so dropped the false-precision framing |
 | 009-M1 | 009-dnis | fixed | added the pat-sti-cr citation already used elsewhere on the page for this exact number |
-| 011-M1 | 011-filox | open | fill-thickness arithmetic self-inconsistent |
+| 011-M1 | 011-filox | fixed | tied the 1.5-2x figure explicitly to the 006/003 working figures instead of restating an inconsistent number |
 | 013-M1 | 013-ns19 | open | VGH-1967 quotation unverifiable/probably not verbatim |
 
 ## Low
@@ -59,9 +59,9 @@ Status values: open / fixed / declined.
 | 009-L2 | 009-dnis | fixed | added orvek-1985/smith-1983, already in the page's Deep dive |
 | 010-L1 | 010-linox | open | Lattice figure is thickened 90nm-node liner |
 | 010-L2 | 010-linox | open | Spansion/Cypress lineage caveat placement |
-| 011-L1 | 011-filox | open | Nishimura numbers unverifiable, mark or drop |
-| 011-L2 | 011-filox | open | Wikipedia [citation needed] sentence needs Nguyen cite |
-| 011-L3 | 011-filox | open | Trikon Flowfill is IMD tool not STI-fill |
+| 011-L1 | 011-filox | fixed | verified: iopscience.iop.org bot-blocks the checker's UA (302 to bot-challenge); marked numbers as unverified rather than dropped |
+| 011-L2 | 011-filox | fixed | verified by fetch: Wikipedia sentence carries the unsourced-statement category tag; added nguyen-1999 on both uses |
+| 011-L3 | 011-filox | fixed | quoted the 10-K's actual IMD-CVD wording so the tool isn't implied to be an STI-fill tool |
 | 012-L1 | 012-cmpnit | open | slurry selectivity numbers unverifiable, mark |
 | 012-L2 | 012-cmpnit | open | REB quote source describes LOCOS not STI |
 | 012-L3 | 012-cmpnit | open | uncited topography figure, tie to FILOX |

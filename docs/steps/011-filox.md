@@ -24,8 +24,10 @@ first interconnect run.
 
 The film must be thick enough to fill the deepest trench and still
 stand well above the nitride everywhere — typically 1.5–2 × the
-(trench + nitride) height, i.e. of the order of 0.5–0.7 µm for a
-~0.3 µm trench (era-typical figures[^txt-05]). At the 130 nm node the
+(trench + nitride) height, which for the ~0.33 µm trench and ~0.15 µm
+nitride read elsewhere in this module ({ref}`STIE <step-006>`,
+{ref}`ISONIT <step-003>`) is of the order of 0.7–0.9 µm (era-typical
+ratio;[^txt-05] no SKY130 figure is public). At the 130 nm node the
 deposition method is high-density-plasma chemical vapour deposition
 ({term}`HDP-CVD`): "High Density Plasma (HDP) and Chemical Vapor Deposition
 (CVD) is the industry standard for STI oxide",[^thung-2016] and
@@ -62,8 +64,8 @@ insulator. The fill has to be:
   follow without etching faster than thermal oxide, or it will recess
   below the active surface and form divots at the active edge.
 * **Low in hydrogen and moisture.** HDP oxide from silane is "a nearly
-  hydrogen-free film",[^wiki-pecvd] but residual hydrogen and moisture
-  remain a concern for the gate oxide grown later.[^txt-05]
+  hydrogen-free film",[^wiki-pecvd][^nguyen-1999] but residual hydrogen
+  and moisture remain a concern for the gate oxide grown later.[^txt-05]
 * **Uniform in thickness** over dense and isolated patterns, because
   the polish at {ref}`CMPNIT <step-012>` has to clear it everywhere
   without over-polishing the nitride. This is why the FOM layer carries
@@ -104,14 +106,18 @@ An industry-generic HDP-CVD {term}`STI` fill for a 200 mm, 130 nm-era fab:
 2. **Chemistry.** Silane, oxygen and argon: "High-density plasma
    deposition of silicon dioxide from silane and oxygen/argon has been
    widely used to create a nearly hydrogen-free film with good
-   conformality over complex surfaces".[^wiki-pecvd] Argon (and the
+   conformality over complex surfaces" — Wikipedia's own text, which
+   flags the sentence as unsourced, and a peer-reviewed review of the
+   same film.[^wiki-pecvd][^nguyen-1999] Argon (and the
    oxygen ions) provide the simultaneous sputter component; the
    deposition-to-sputter ratio is the key tuning parameter for
    gap-fill[^thung-2016] (the Novellus release speaks of "tailoring the
    deposition, etch, and sputter-to-deposition (S/D)
    ratio"[^lam-speed]). A published 0.13 µm STI gap-fill study (space
-   width 0.13 µm, {term}`aspect ratio` 3.9) models the same sputter/deposition
-   balance in HDP-CVD.[^nishimura-2002]
+   width 0.13 µm, {term}`aspect ratio` 3.9; from the paper's body, which
+   IOP blocks automated access to and which we were unable to
+   re-verify) models the same sputter/deposition balance in
+   HDP-CVD.[^nishimura-2002]
 3. **Sequence.** A short *in-situ* sputter-clean or a thin protective
    liner deposition at low bias (so that the sputter component does
    not clip the nitride corners and redeposit silicon-rich material on
@@ -137,8 +143,10 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
   Novellus SPEED, Applied Materials Ultima HDP-CVD (Centura), Lam
   (post-2012 Novellus SPEED Max/NExT). Novellus'
   SPEED platform was the market's long-running STI fill
-  tool.[^lam-speed] Trikon offered its Planar 200 Flowfill as an
-  alternative to HDP gap fill, not as an HDP system.[^trikon-10k-1996]
+  tool.[^lam-speed] Trikon's Planar 200 Flowfill, which its 1996 annual
+  report offers "for inter-metal dielectric CVD", is the era's
+  best-known non-HDP gap-fill alternative, not an STI-fill
+  tool.[^trikon-10k-1996]
 * **{ref}`Furnace <machine-vertical-furnace-anneal>` or {ref}`RTP <machine-rapid-thermal-processor>`** for optional densification.
 * **{ref}`Reflectometer <machine-film-thickness-metrology>` / ellipsometer**; **{ref}`cross-section SEM <machine-cross-section-sem-profilers>`**.
 
