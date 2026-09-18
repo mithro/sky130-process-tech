@@ -33,31 +33,39 @@ standing rules are `agent-briefs.md`.
   linked from step pages, also collapsed.
 * The five-hour usage window is the tighter limit in practice: on 2026-09-18 it filled in under five hours with five or six agents running and cut one agent off in mid-work. Keep to about three agents at a time, launch nothing new once the window is above 80 %, and require agents to commit at least every 15 minutes so that a cut-off loses little. The usage endpoint allows only a few reads per hour; the ledger script reads it at most hourly.
 
-## In flight
+## In flight (2026-09-18 evening)
 
 | Branch | Agent task | Model | State |
 |---|---|---|---|
-| `topic/index-filings` | round 3: review findings and Cypress annual-report coverage | Sonnet | running |
-| none (read-only) | Phase 4 reviews of steps 076–088 and 089–106, reports under `tmp/p4/` | Opus | running |
+| `topic/index-patents-coverage` | fix the verification findings (member-status parser, listed-only members, fee-lapse family), then discovery through the patent office's keyless public search; triage log in `docs/plans/patent-discovery-log.md` | Sonnet | running; needs independent verification before merge |
+| `topic/index-papers-r3` | add the 13 papers the review found, full-text and affiliation searches, extra generated page of excluded papers that name the process | Sonnet | running; needs review |
+| `topic/link-check` | `tools/check_links.py`, site-wide run, repairs under Common rule 11 | Sonnet | running; needs review |
+| `topic/consistency` | 14 findings of the whole-site conflict review (`tmp/review-consistency.md`) | Sonnet | running; needs verification |
 
-Phase 4 status is in `TASKLOG.md` (001–075 merged 2026-09-18).
+Reports and prompts are under `tmp/` (not tracked): `tmp/p4/` (Phase 4
+reviews and verifications), `tmp/prompts/` (reviewer, fixer and verifier
+briefs used for every batch), `tmp/review-*.md`, `tmp/verify-*.md`.
+Spend is logged by `tmp/tools/ledger.py` in `tmp/quota-ledger.jsonl`.
 
-Phase 4 plan: twelve module batches (the Phase 2 groups in `TASKLOG.md`). Per batch: read-only review report, then a fixer on `topic/p4-<range>` applying it, then verification of the fixes, then merge. Reviewer brief: `tmp/prompts/p4-review.txt` (not tracked; its content is the Reviewer brief plus source re-fetching, second-source checks and distrust of any single source).
+Done on 2026-09-18: Phase 4 technical review of all 171 step pages in
+twelve batches; metal cap composition sweep; job-listing citation sweep;
+first versions of the patent and filings indexes; paper index round 2.
 
 ## Queue
 
-0. (done 2026-09-18) Metal cap and barrier composition sweep, merged.
-
-2. Dual review of the patent and filings indexes, fix, merge.
-3. Step-page links to the patent, paper and filings indexes.
-4. Paper index second round (remaining searches, held full-text checks).
-5. Phase 4: technical accuracy review of every step page by process
-   module, conflict review across pages, bibliography page, final
-   provenance review of the tree and the whole history.
-6. Sweep of the job-listing citations (JOB-01 and the others) on about 35 pages under Common rule 11, after the Phase 4 batches that touch them.
-7. Patent index coverage round on `topic/index-patents-coverage` once the patent search site stops answering with a bot check (alternative: EPO linked data as the discovery source).
-8. Build polish: tracked lock file and frozen export for the hosted
+1. Verify and merge the four branches in flight.
+2. Filings index next round: the review's remaining prioritised
+   additions, the three deferred Low findings, and a location check that
+   abstains less often (170 of the quotation locations are unchecked).
+3. Links from step, machine, material and mask pages to the patent,
+   paper and filings indexes (patents still in force inside collapsed
+   blocks); needs the patent coverage round merged first.
+4. Final provenance review of the tree and of the whole git history (the
+   hosted repository is public), then the last full build.
+5. Build polish: tracked lock file and frozen export for the hosted
    build, checker jobs before the build.
+6. Close-out: TASKLOG brought up to date, progress files under
+   `docs/plans/` kept as the record of each branch.
 
 ## Notes
 
