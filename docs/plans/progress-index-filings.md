@@ -137,7 +137,19 @@ human/agent read the fetched copy against the summary and quotes).
   on direct fetch; dates are the latest "Neubiberg, DD Month YYYY"
   signature line found in each PDF). Closes the "Infineon annual reports
   2021-2024" gap. Tried to find SkyWater's 2023-2026 DEF 14A proxies and
-  further 10-Qs and a Weebit Nano WordPress search endpoint for its 2021
-  announcement, but ran out of time to fetch a compliant (non-EDGAR)
-  copy for any of them before this session had to stop; left as open
-  items below rather than adding an unverified record.
+  further 10-Qs, a QuickLogic 10-K naming SkyWater's RH90 process, and a
+  Weebit Nano WordPress search endpoint for its 2021 announcement, but
+  ran out of time to fetch a compliant (non-EDGAR) copy for any of them
+  before this session had to stop; left as open items below rather than
+  adding an unverified record.
+* 2026-09-18 — Each new Infineon quote was individually fetched and
+  grep-verified against the extracted PDF text before being added
+  (exact substring match, all four). Offline `check_filings.py`: 48
+  filings, 0 problems (twice, before and after the Infineon commit). A
+  full-dataset `--online` re-run (48 records) was started in the
+  background before this session had to stop; the previous full run (44
+  records, before the Infineon commit) passed with 0 problems. The next
+  session should re-check the `--online` result before adding more
+  records (the fetch cache is warm so no new network access is needed,
+  but the run still takes ~10 CPU-minutes for PDF text extraction —
+  redirect to a log file and background it rather than waiting inline).
