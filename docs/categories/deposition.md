@@ -60,10 +60,11 @@ compared with the wafer spacing.[^txt-01] The
 standard LPCVD films and their typical industry conditions are:
 
 * **Polysilicon or amorphous silicon** from silane, SiH₄ → Si + 2H₂, at
-  roughly 580–650 °C. At low temperature and low deposition rate the
-  film deposits amorphous and crystallises during later anneals,
-  giving a smoother surface and finer grain, which helps gate etch and
-  {term}`CD` control; SKY130's gate is deposited amorphous
+  roughly 580–650 °C. At low temperature and a deposition rate above a
+  critical value the film deposits amorphous and crystallises during
+  later anneals, giving a smoother surface and finer grain, which
+  helps gate etch and {term}`CD` control; SKY130's gate is deposited
+  amorphous
   ({ref}`SAGD <step-048>`). Phosphine or diborane
   can be co-flowed for in-situ doping, but gates in a dual-work-function
   CMOS process are usually implanted instead.[^wiki-poly][^txt-01]
