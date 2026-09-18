@@ -32,15 +32,23 @@ The implant passes through the thick gate oxide grown at
 thick-oxide figure[^pdk-hv] by an amount that is not public — and through
 the resist windows; the 5 V and high-voltage regions are covered. That
 the oxide it goes through is about to be etched away is not incidental:
-Cypress notes that implanted oxide is degraded and loses more in every
-strip,[^pat-03] and an implant placed *before* the oxide strip leaves
-the damaged oxide to be discarded rather than kept as a gate dielectric.
+a Cypress patent that may still be in force says what an implant does to
+an oxide that is then stripped (collapsed note below), and an implant
+placed *before* the oxide strip leaves the damaged oxide to be discarded
+rather than kept as a gate dielectric.
 
 No public source gives the species, energy or dose. The Cypress
-embedded-SONOS patent describes the equivalent implant in its flow:
-"BF₂ can be implanted at an energy of from about 10 to about 100
-kilo-electron volts (keV), and a dose of from about 1e12 cm⁻² to about
-1e14 cm⁻² to form an N-type MOS (NMOS) transistor".[^pat-04]
+embedded-SONOS patent, also shown as in force, describes the equivalent
+implant in its flow; the energies and doses are in the same note.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+Cypress notes that implanted oxide is degraded and loses more in every
+strip.[^pat-03] The Cypress embedded-SONOS patent describes the
+equivalent implant in its flow: "BF₂ can be implanted at an energy of
+from about 10 to about 100 kilo-electron volts (keV), and a dose of from
+about 1e12 cm⁻² to about 1e14 cm⁻² to form an N-type MOS (NMOS)
+transistor".[^pat-04]
+:::
 
 ## Step category
 
@@ -98,22 +106,23 @@ fab (SKY130's values are not public):
 * **Species.** Boron, as ¹¹B⁺ or BF₂⁺; BF₂⁺ gives a shallower profile
   for the same accelerator voltage because the molecule shares its
   energy, and the fluorine it carries affects boron diffusion during
-  the later {term}`RTA`.[^wang-1997] Cypress's flow uses BF₂;[^pat-04] an AMD
+  the later {term}`RTA`.[^wang-1997] Cypress's flow uses BF₂ (collapsed
+  note above); an AMD
   patent of the era gives "approximately 10-20 KeV for boron or
   45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
   ions/cm² […]" for a laterally doped channel implant made after gate
   formation with the gate pillars as a self-aligned mask, a different
   placement from this pre-gate implant.[^pat-vt-amd]
-* **Energy.** Tens of keV for BF₂ (10–100 keV in the Cypress
-  patent[^pat-04]), set so that the peak lies just under the eventual
+* **Energy.** Tens of keV for BF₂ (the Cypress range is in the collapsed
+  note above), set so that the peak lies just under the eventual
   gate oxide after allowing for the {term}`screen oxide` — thinner
   than the PDK's 110 Å finished thick-oxide figure[^pdk-hv] by an
   amount that is not public (see {ref}`GOX100 <step-043>`) — the
   ions must cross — the screen also randomises the beam and reduces
   {term}`channelling`.[^txt-02]
-* **Dose.** Of order 10¹²–10¹³ cm⁻²: "1e12 cm⁻² to about 1e14
-  cm⁻²" in the Cypress patent[^pat-04] and 1.0–2.5 × 10¹³ cm⁻² for the
-  AMD laterally doped channel implant.[^pat-vt-amd]
+* **Dose.** Of order 10¹²–10¹³ cm⁻²: the Cypress range is in the
+  collapsed note above, and 1.0–2.5 × 10¹³ cm⁻² is the AMD laterally
+  doped channel implant.[^pat-vt-amd]
 * **Tilt and twist.** 7° with twist is the textbook
   anti-channelling convention[^txt-02][^wiki-implant] and is what this
   reference assumes; the AMD patent quoted above instead specifies "a
