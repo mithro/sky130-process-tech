@@ -7896,8 +7896,8 @@ CMI (Fab 4)*, document 001-85611 Rev. *A, January 2013 (copy hosted by
 Infineon Technologies).
 <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
 S8TNV-5R metal composition at Bloomington: Metal 1 "100A Ti / 3200A
-Al-0.5%Cu / 300A TiW", Metal 2 the same, Metal 3 "150A Ti / 7200A
-Al-0.5%Cu / 300A TiW". Used on steps 112–114, 118–121, 123–125,
+Al -0.5%Cu / 300A TiW", Metal 2 the same, Metal 3 "150A Ti / 7200A
+Al -0.5%Cu / 300A TiW". Used on steps 112–114, 118–121, 123–125,
 129–132, 134, 136, 138–141, 145 and 146 and on the etch category page.
 Also used on the metal plasma etcher page.
 Also used on the PVD cluster tool page.

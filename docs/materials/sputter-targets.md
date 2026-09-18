@@ -21,7 +21,7 @@ film physics on the {ref}`deposition category page <category-deposition>`.
 | | Sputter targets |
 |---|---|
 | What they do | Supply the atoms of a sputtered film: "A sputtering target is the object of the ion bombardment when sputtering takes place."[^jx-sputtering] |
-| Materials in the SKY130 steps | Titanium (also sputtered {term}`reactively <reactive sputtering>` to TiN), aluminium–copper, titanium–tungsten (step-page readings); a report by Cypress, which ran the fab before SkyWater,[^sec-01] gives "Metal 1: 100A Ti / 3200A Al-0.5%Cu / 300A TiW".[^cyp-qtp-113005] |
+| Materials in the SKY130 steps | Titanium (also sputtered {term}`reactively <reactive sputtering>` to TiN), aluminium–copper, titanium–tungsten (step-page readings); a report by Cypress, which ran the fab before SkyWater,[^sec-01] gives "Metal 1: 100A Ti / 3200A Al -0.5%Cu / 300A TiW".[^cyp-qtp-113005] |
 | Purity | Titanium "4N5 (Ti 99.995% or above) 5N 5N5";[^jx-semi-targets] Al–Cu and Al–Si–Cu "99.99% (4N)-99.9995% (5N5)".[^solstice-targets] |
 | Microstructure | Grain size and "crystallographic orientation and surface relief affect the I–V characteristics" of aluminium targets.[^leybovich-1993] |
 | Construction | Monolithic or bonded to a backing plate; "The bond between sputtering target and its supporting backing plate is a critical reliability element in a sputter deposition system".[^astm-f1512] |
@@ -210,7 +210,7 @@ Cypress Semiconductor Corporation, or Cypress, as a captive
 manufacturing facility for 20 years",[^sec-01] and Cypress's documents
 name that fab "Cypress Minnesota" and "CMI (Fab 4)".[^cyp-pin145273][^cyp-qtp-113005] A 2013 Cypress
 qualification report for an S8 product from the fab gives "Metal 1: 100A Ti / 3200A
-Al-0.5%Cu / 300A TiW",[^cyp-qtp-113005] and a 2014 notification
+Al -0.5%Cu / 300A TiW",[^cyp-qtp-113005] and a 2014 notification
 announced aligning "our internal Cypress Minnesota process, Titanium
 Tungsten (TiW) based metal stack, with the industry-wide Best Known Method
 Titanium Nitride (TiN) based metal stack", with a qualified stack of

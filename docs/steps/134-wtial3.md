@@ -30,7 +30,7 @@ metal 3 becomes the capacitor's bottom electrode.
 The public description of the stack is again the Cypress
 qualification reports, and here they show two versions. The 2013
 report for a 64 K nvSRAM family on "S8TNV-5R" technology gives
-"Metal 3: 150A Ti / 7200A Al-0.5%Cu / 300A TiW", a 7 650 Å
+"Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW", a 7 650 Å
 (0.765 µm) stack against the 3 600 Å of its metals 1 and
 2;[^cyp-qtp-113005] the 2014 metal-stack-change report gives, for the
 S8DI technology, "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A TiW", a
@@ -237,7 +237,7 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
 ### Cross-check
 
 * Cypress, QTP 113005 (2013) — S8TNV-5R "Metal 3: 150A Ti / 7200A
-  Al-0.5%Cu / 300A TiW".[^cyp-qtp-113005]
+  Al -0.5%Cu / 300A TiW".[^cyp-qtp-113005]
 * Cypress, QTP 123907/132302/132301 (2014) — S8DI "Metal 3: 500A
   TiW/21,250A Al 0.5% Cu/300A TiW"; the S8P change "excluding top
   metal layers".[^cyp-qtp-123907]

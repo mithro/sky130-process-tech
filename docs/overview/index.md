@@ -335,7 +335,7 @@ steps and 36 masks.
 | Tips and halos | {ref}`NTM <step-064>` – {ref}`TIPRTAD <step-075>` | 12 | 3 (`NTM`, `HVNTM`, `LDNTM`) | "N Tip (As)"; tip implant angle 7°, HV tip 40° with 23° twist;[^pdk-03] no P-tip mask in the mask table[^pdk-05] |
 | Spacers and source/drain | {ref}`SPNIT <step-076>` – {ref}`RTAD <step-088>` | 13 | 3 (`NPCM`, `PSDM`, `NSDM`) | "SPNIT K=7.5";[^pdk-04] "oxide spacer" 0.05 µm, "N+ or P+ S/D (XJ)" 0.1 µm;[^pdk-03] N- and P-diffusion 120 Ω/sq and 197 Ω/sq[^pdk-08] |
 | Pre-metal dielectric, contact silicide and local interconnect | {ref}`PSG <step-089>` – {ref}`CMPL <step-106>` | 18 | 2 (`LICM1`, `LI1M`) | "PSG K=3.9", 0.6099 µm from the field-oxide top to the `li` bottom and 0.4299 µm from the field-poly top to the `li` bottom;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm;[^pdk-03] `li` 0.1 µm,[^pdk-04] 12.8 Ω/sq;[^pdk-08] "LINT K=7.3" 0.075 µm and "NILD2 K=4.05" 0.265 µm[^pdk-04] |
-| Metal contact and metal 1 | {ref}`CTM1 <step-107>` – {ref}`NCAPOX3 <step-117>` | 11 | 2 (`CTM1`, `MM1`) | `mcon` 0.170 µm square;[^pdk-periph] S8 metal 1 "100A Ti / 3200A Al-0.5%Cu / 300A TiW";[^cyp-qtp-113005] `met1` 0.36 µm;[^pdk-04] 125 mΩ/sq[^pdk-08] |
+| Metal contact and metal 1 | {ref}`CTM1 <step-107>` – {ref}`NCAPOX3 <step-117>` | 11 | 2 (`CTM1`, `MM1`) | `mcon` 0.170 µm square;[^pdk-periph] S8 metal 1 "100A Ti / 3200A Al -0.5%Cu / 300A TiW";[^cyp-qtp-113005] `met1` 0.36 µm;[^pdk-04] 125 mΩ/sq[^pdk-08] |
 | Via 1, metal 2 and via 2 | {ref}`VIM <step-118>` – {ref}`WTIAL3 <step-134>` | 17 | 3 (`VIM`, `MM2`, `VIM2`) | via 0.150 µm and via 2 0.200 µm squares;[^pdk-periph] via heights 0.27 µm and 0.42 µm, `met2` 0.36 µm[^pdk-04] |
 | First MiM capacitor, metal 3 and via 3 | {ref}`CAPILD <step-135>` – {ref}`WCMP5 <step-148>` | 14 | 3 (`CAPM`, `MM3`, `VIM3`) | 2 fF/µm², top plate 5.8 Ω/sq;[^pdk-07] `met3` 0.845 µm and via-3 height 0.39 µm;[^pdk-04] 47 mΩ/sq;[^pdk-08] `CAPM` not marked as used in SKY130[^pdk-05] |
 | Metal 4, second MiM capacitor, via 4 and metal 5 | {ref}`WTIAL4 <step-149>` – {ref}`MM5E <step-163>` | 15 | 4 (`CAP2M`, `MM4`, `VIM4`, `MM5`) | `met4` 0.845 µm, via-4 height 0.505 µm, `met5` 1.26 µm;[^pdk-04] via 4 0.800 µm square, metal 5 1.600 µm width and space;[^pdk-periph] no tungsten-plug steps after via 4[^steps-sheet] |
@@ -757,7 +757,7 @@ public.
 * **Metal-3 and metal-4 thickness.** The stack diagram labels both
   0.845 µm;[^pdk-04] the antenna table gives 0.8 µm for the S8P flows and
   0.85 µm for "S8T\* other than S8TM\*";[^pdk-03] Cypress's S8TNV report
-  gives "Metal 3: 150A Ti / 7200A Al-0.5%Cu / 300A TiW", which sums to
+  gives "Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW", which sums to
   0.765 µm;[^cyp-qtp-113005] and a 0.18 µm Fab 4 derivative's
   "150Å Ti / 8,000Å Al / 300Å TiW" metal 3 sums to exactly
   0.845 µm[^cyp-qtp-014807] (our arithmetic). The difference is not
