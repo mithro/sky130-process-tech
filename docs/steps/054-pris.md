@@ -68,8 +68,9 @@ An industry-generic post-implant strip on a bare poly surface, for a
    popping[^pat-strip-mosel] and finishing hot for the
    bulk; water-vapour-containing chemistries ash faster than dry
    oxygen — Fujimura et al. measured roughly double the atomic-oxygen
-   concentration and a fall in the ashing activation energy from about
-   0.5 to 0.39 eV with 10 % H₂O added[^fujimura-1991] — which is why a
+   concentration with 10 % H₂O added, and a fall in the ashing
+   activation energy from about 0.5 to 0.39 eV with more than 1 % H₂O
+   added[^fujimura-1991] — which is why a
    fab with a crust to remove reaches for them. Fujimura et al. also showed
    that O₂ + H₂O downstream ashing is free of the sodium contamination
    that some older ashers introduced,[^fujimura-1994] which matters when
