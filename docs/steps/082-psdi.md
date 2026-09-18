@@ -158,8 +158,11 @@ fab (SKY130's recipe is not public):
   the resist, but the spacer-edge oxide over the extensions is
   exposed.
 * **Monitoring.** Sheet resistance by {term}`four-point probe` on
-  bare monitor wafers after a monitor anneal; the dose is too high
-  for thermal-wave metrology to be sensitive. Particles and resist
+  bare monitor wafers after a monitor anneal; we infer that the dose
+  is beyond the sensitive range of the thermal-wave monitor that
+  Smith describes for implant process control[^smith-1985] and that
+  the four-point probe is used instead (inference; no public source
+  states SKY130's monitor). Particles and resist
   condition after the implant.
 * **Anneal.** None here; the dopant sits in an amorphised layer
   until {ref}`RTAD <step-088>`, with {ref}`2PSDI <step-083>` and the
@@ -273,6 +276,9 @@ fab (SKY130's recipe is not public):
 * Dixon, Lukaszek and Heden, IIT 1996; Mehta et al., IIT 1996;
   Current, Vella and Lukaszek, IIT 1996 — wafer charging and flood-gun
   control during high-current implants.[^dixon-1996][^mehta-1996][^current-1996-iit]
+* Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 —
+  thermal-wave implant monitoring, and its low-dose sensitivity
+  range.[^smith-1985]
 * Pfiester et al. (Motorola), *IEEE TED* 1990 — boron penetration
   through p⁺ gates, the problem a capped n⁺ gate avoids.[^pfiester-1990]
 * Lifshitz (Bell Labs), *IEEE TED* 1985 — poly gate work function
@@ -419,6 +425,10 @@ fab (SKY130's recipe is not public):
     implantation", *Proc. 11th International Conference on Ion
     Implantation Technology* (1996), pp. 53–56.
     <https://doi.org/10.1109/IIT.1996.586119>
+[^smith-1985]: W. L. Smith, A. Rosencwaig and D. L. Willenborg, "Ion
+    implant monitoring with thermal wave technology", *Applied Physics
+    Letters* **47**(6), 584–586 (1985).
+    <https://doi.org/10.1063/1.96079>
 [^pfiester-1990]: J. R. Pfiester, F. K. Baker, T. C. Mele, H.-H. Tseng,
     P. J. Tobin, J. D. Hayden, J. W. Miller, C. D. Gunderson and
     L. C. Parrillo, "The effects of boron penetration on p⁺

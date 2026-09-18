@@ -19,7 +19,7 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 079-L1 | Low | declined | Confirmed skw-facilities.txt reads "Gasonic PEP"/"Mattson Aspen2" and the repo has a real, pre-existing split (38x "GaSonics PEP" vs 34x "Gasonic PEP"; 31x "Aspen2" vs 57x "Aspen II"). Not a factual error on this page (corporate name is GaSonics International); the review itself concludes "no change is strictly required" and asks the coordinator to settle the repo-wide spelling once. Declining a page-local fix that would leave the branch inconsistent with the rest of the site; left for the coordinator's site-wide pass. |
 | 080-L1 | Low | fixed | Confirmed via Crossref (10.1116/1.586361): Raupp's abstract gives trends with temperature/pressure/power but no absolute window. Matched the category page's sourced 250-400 C, wiki-pecvd. |
 | 080-L2 | Low | fixed | Confirmed page's own reading (lines 14-27): SPOX is deposited over the SPNIT/SPE nitride spacer as an additional composite layer, not a replacement; "instead of nitride" wrongly implied substitution. Reworded to "the extra spacer width added here is oxide rather than more nitride". |
-| 082-L1 | Low | open | |
+| 082-L1 | Low | fixed | Confirmed via Crossref (10.1063/1.96079): Smith 1985's abstract says "high sensitivity even at low dose", supporting a low-dose use, not a high-dose limitation as unsourced. Reworded as an inference citing Smith (added footnote def + Deep dive entry, already used the same way on 083-2psdi.md). |
 | 083-L1 | Low | open | |
 | 084-L1 | Low | open | |
 | 087-L1 | Low | open | |
