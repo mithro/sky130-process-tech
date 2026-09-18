@@ -325,7 +325,7 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
         "into scope. It is **not** the result of an exhaustive, systematic sweep of every process "
         "module against every lineage assignee: a round-1 independent review "
         "(`docs/plans/progress-index-patents.md`, \"Round 2\") found at least a dozen absent Cypress/"
-        "Infineon families from just two more searches, named six process modules never searched at "
+        "Infineon families from just three more searches, named six process modules never searched at "
         f"all, and notes that the index holds {count_families(cypress, 'Cypress Semiconductor')} and "
         f"{count_families(infineon, 'Infineon Technologies')} but {skywater_clause}, though SkyWater is "
         "named in this index's own scope. Treat this index as a starting point for the SKY130/Cypress/"
