@@ -2638,6 +2638,9 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SDS-ATMI.
 
+**Notes:**
+* Round-1 review finding M10: the round-1 review re-fetched AU3830095A on 2026-09-18 and reports its live status as Expired, not the "Granted" recorded here from the 2026-09-14 fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
+
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5518528A/en
 
 (patent-gp24770421)=
@@ -6865,6 +6868,7 @@ families and members are counted.
 
 **Notes:**
 * Round-1 review correction (M9): JP2012191242A is a divisional of JP2008512004A (filed 2005-09-01, a member of this same family); under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own, so the correct bound is 2005-09-01 + 20 years, already past today, not 2012-07-02 + 20 years as an earlier version of this dataset computed. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097, retrieved 2026-09-18.
+* Round-1 review finding M10: the round-1 review re-fetched CN101053063A on 2026-09-18 and reports its live status as Expired - Fee Related (expiry 2025-09-01), not the "Granted" recorded here from the 2026-09-14 fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7449416B2/en
 
@@ -6997,6 +7001,9 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PNA-AMAT.
 
+**Notes:**
+* Round-1 review finding M10: the round-1 review re-fetched CN101208782A on 2026-09-18 and reports its live status as Active (expiry 2026-05-26), not the "Granted" recorded here from the 2026-09-14 fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
+
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7429538B2/en
 
 (patent-gp37568077)=
@@ -7043,6 +7050,9 @@ families and members are counted.
 **Inventory:** `PAT-MIM-FREESCALE`
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MIM-FREESCALE.
+
+**Notes:**
+* Round-1 review finding M10: the round-1 review re-fetched CN101213641A on 2026-09-18 and reports its live status as Expired - Fee Related (expiry 2026-06-08), not the "Granted" recorded here from the 2026-09-14 fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7375002B2/en
 
@@ -7338,6 +7348,9 @@ families and members are counted.
 **Inventory:** `PAT-03`
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-03.
+
+**Notes:**
+* Round-1 review finding M10: the round-1 review re-fetched CN101606236A on 2026-09-18 and reports its live status as Active (expiry 2028-05-23), not the "Granted" recorded here from the 2026-09-14 fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8093128B2/en
 :::

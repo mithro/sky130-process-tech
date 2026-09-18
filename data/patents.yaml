@@ -9838,6 +9838,16 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-SDS-ATMI.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US5518528A/en
+  notes:
+  - 'Round-1 review finding M10: the round-1 review re-fetched AU3830095A on 2026-09-18 and reports its
+    live status as Expired, not the "Granted" recorded here from the 2026-09-14 fetch. Checked tmp/build.py
+    and tmp/gp.py for a substitution bug: none found — a member''s status is copied verbatim from the
+    parsed record page''s own IFI legal-status field at fetch time, so "Granted" is what that page showed
+    on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication''s
+    displayed status can apparently change once the patent that supersedes it changes status) or Google-side
+    rendering variation, not a dataset defect; not independently re-verified because Google Patents is
+    unreachable from the environment this note was added in. Does not change this family''s expired/collapsed
+    state.'
 - id: GP24770421
   family:
     source: Google Patents family ID
@@ -23624,9 +23634,9 @@ families:
   - 'Round-1 review finding M5: the round-1 review re-fetched US20060006461A1 on 2026-09-18 and reports
     its status as "Expired - Lifetime" with an expiration event 2024-07-08, rather than the "Granted"
     recorded here from the 2026-09-14 fetch. This drift changes nothing (the family is already expired,
-    and 2024-07-08 already matches the family''s expiry.date), but the member record has not been
-    re-fetched to update its own status field, because Google Patents is unreachable from the
-    environment this correction was made in.'
+    and 2024-07-08 already matches the family''s expiry.date), but the member record has not been re-fetched
+    to update its own status field, because Google Patents is unreachable from the environment this correction
+    was made in.'
 - id: GP35732850
   family:
     source: Google Patents family ID
@@ -24024,6 +24034,15 @@ families:
     a patent ends 20 years after the filing date of the patent application"), English translation, Japanese
     Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097,
     retrieved 2026-09-18.'
+  - 'Round-1 review finding M10: the round-1 review re-fetched CN101053063A on 2026-09-18 and reports
+    its live status as Expired - Fee Related (expiry 2025-09-01), not the "Granted" recorded here from
+    the 2026-09-14 fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member''s
+    status is copied verbatim from the parsed record page''s own IFI legal-status field at fetch time,
+    so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift
+    (an application-type publication''s displayed status can apparently change once the patent that supersedes
+    it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified
+    because Google Patents is unreachable from the environment this note was added in. Does not change
+    this family''s expired/collapsed state.'
 - id: GP36337293
   family:
     source: Google Patents family ID
@@ -24641,6 +24660,16 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-PNA-AMAT.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7429538B2/en
+  notes:
+  - 'Round-1 review finding M10: the round-1 review re-fetched CN101208782A on 2026-09-18 and reports
+    its live status as Active (expiry 2026-05-26), not the "Granted" recorded here from the 2026-09-14
+    fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member''s status
+    is copied verbatim from the parsed record page''s own IFI legal-status field at fetch time, so "Granted"
+    is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type
+    publication''s displayed status can apparently change once the patent that supersedes it changes status)
+    or Google-side rendering variation, not a dataset defect; not independently re-verified because Google
+    Patents is unreachable from the environment this note was added in. Does not change this family''s
+    expired/collapsed state.'
 - id: GP37568077
   family:
     source: Google Patents family ID
@@ -24821,6 +24850,16 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-MIM-FREESCALE.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US7375002B2/en
+  notes:
+  - 'Round-1 review finding M10: the round-1 review re-fetched CN101213641A on 2026-09-18 and reports
+    its live status as Expired - Fee Related (expiry 2026-06-08), not the "Granted" recorded here from
+    the 2026-09-14 fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member''s
+    status is copied verbatim from the parsed record page''s own IFI legal-status field at fetch time,
+    so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift
+    (an application-type publication''s displayed status can apparently change once the patent that supersedes
+    it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified
+    because Google Patents is unreachable from the environment this note was added in. Does not change
+    this family''s expired/collapsed state.'
 - id: GP38711248
   family:
     source: Google Patents family ID
@@ -25877,6 +25916,16 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-03.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US8093128B2/en
+  notes:
+  - 'Round-1 review finding M10: the round-1 review re-fetched CN101606236A on 2026-09-18 and reports
+    its live status as Active (expiry 2028-05-23), not the "Granted" recorded here from the 2026-09-14
+    fetch. Checked tmp/build.py and tmp/gp.py for a substitution bug: none found — a member''s status
+    is copied verbatim from the parsed record page''s own IFI legal-status field at fetch time, so "Granted"
+    is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type
+    publication''s displayed status can apparently change once the patent that supersedes it changes status)
+    or Google-side rendering variation, not a dataset defect; not independently re-verified because Google
+    Patents is unreachable from the environment this note was added in. Does not change this family''s
+    expired/collapsed state.'
 - id: GP40072822
   family:
     source: Google Patents family ID
@@ -27856,17 +27905,17 @@ families:
   discovery_note: Cited on docs pages; inventory PAT-RRAM-INTERMOLECULAR.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US9076523B2/en
   notes:
-  - 'Round-1 review finding M4: US9076523B2 is marked expired solely on a maintenance-fee lapse, not
-    on its adjusted-expiration date (2033-07-18). The independent review reports US9076523B2''s own
-    Google Patents legal events (https://patents.google.com/patent/US9076523B2/en) as: maintenance-fee
-    reminder 2023-02-27, lapse for non-payment 2023-08-14 (37 CFR 1.362), and the unintentional-delay
-    petition window for reinstatement (37 CFR 1.378) closed 2025-08-14 with no petition on record.
-    This dataset could not independently re-fetch that page (Google Patents, Espacenet, WIPO Patentscope
-    and the USPTO PatentsView/PED/assignment APIs were all unreachable from this environment when this
-    note was added); the reported dates are recorded here, not independently re-verified, so a future
-    refresh should confirm them directly. If accurate, this family''s reinstatement window has already
-    closed before this note''s date. A US patent lapsed for fees can be reinstated within such a window;
-    see the legal caveat on the landing page.'
+  - 'Round-1 review finding M4: US9076523B2 is marked expired solely on a maintenance-fee lapse, not on
+    its adjusted-expiration date (2033-07-18). The independent review reports US9076523B2''s own Google
+    Patents legal events (https://patents.google.com/patent/US9076523B2/en) as: maintenance-fee reminder
+    2023-02-27, lapse for non-payment 2023-08-14 (37 CFR 1.362), and the unintentional-delay petition
+    window for reinstatement (37 CFR 1.378) closed 2025-08-14 with no petition on record. This dataset
+    could not independently re-fetch that page (Google Patents, Espacenet, WIPO Patentscope and the USPTO
+    PatentsView/PED/assignment APIs were all unreachable from this environment when this note was added);
+    the reported dates are recorded here, not independently re-verified, so a future refresh should confirm
+    them directly. If accurate, this family''s reinstatement window has already closed before this note''s
+    date. A US patent lapsed for fees can be reinstated within such a window; see the legal caveat on
+    the landing page.'
 - id: GP51229009
   family:
     source: Google Patents family ID
@@ -30387,12 +30436,12 @@ families:
   verified: 2026-09-18 Google Patents record page https://patents.google.com/patent/EP4062463A1/en
   notes:
   - 'Round-1 review finding M5: the round-1 review re-fetched EP4062463A1 on 2026-09-18 (the same day
-    as this dataset''s own fetch) and reports it live as "Active" with an anticipated expiration of
-    2040-11-17, a member-level expiry event this dataset does not record (the member is recorded here
-    only with a bare "Granted"/status, no expiry.date). This changes nothing about the family (already
-    shown in force and collapsed), but the member''s own record should be re-fetched to pick up its
-    expiry event at the next refresh; not done here because Google Patents is unreachable from the
-    environment this correction was made in.'
+    as this dataset''s own fetch) and reports it live as "Active" with an anticipated expiration of 2040-11-17,
+    a member-level expiry event this dataset does not record (the member is recorded here only with a
+    bare "Granted"/status, no expiry.date). This changes nothing about the family (already shown in force
+    and collapsed), but the member''s own record should be re-fetched to pick up its expiry event at the
+    next refresh; not done here because Google Patents is unreachable from the environment this correction
+    was made in.'
 - id: GP90359049
   family:
     source: Google Patents family ID
@@ -30735,21 +30784,19 @@ families:
     Weebit Nano ReRAM patents in scope.'
   verified: 2026-09-18 Google Patents record page https://patents.google.com/patent/KR20250094623A/en
   notes:
-  - 'Round-1 review finding M1: this dataset originally recorded the original assignee only as shown
-    by the Korean representative page, "위빗 나노 리미티드" (Google''s Korean rendering of "Weebit Nano
-    Limited"), which split this family from the "Weebit Nano Ltd" heading of the other three Weebit
-    families on the by-assignee page and omitted the CEA co-applicant entirely. Corrected using the
-    EPO linked-data record for the family''s EP member, independently fetched
-    (https://data.epo.org/linked-data/data/publication/EP/4577029/A1/-.json, retrieved 2026-09-18),
-    which gives the applicants as "Commissariat à l''Energie Atomique et aux Energies Alternatives"
-    (FR) and "Weebit Nano Ltd" (IL); recorded here in the ASCII, "CEA"-suffixed form the sibling
-    families GP68072713 and GP69743400 use, for consistency. The representative and its other fields
-    are unchanged (Google Patents itself was not re-fetched for this correction).'
+  - 'Round-1 review finding M1: this dataset originally recorded the original assignee only as shown by
+    the Korean representative page, "위빗 나노 리미티드" (Google''s Korean rendering of "Weebit Nano Limited"),
+    which split this family from the "Weebit Nano Ltd" heading of the other three Weebit families on the
+    by-assignee page and omitted the CEA co-applicant entirely. Corrected using the EPO linked-data record
+    for the family''s EP member, independently fetched (https://data.epo.org/linked-data/data/publication/EP/4577029/A1/-.json,
+    retrieved 2026-09-18), which gives the applicants as "Commissariat à l''Energie Atomique et aux Energies
+    Alternatives" (FR) and "Weebit Nano Ltd" (IL); recorded here in the ASCII, "CEA"-suffixed form the
+    sibling families GP68072713 and GP69743400 use, for consistency. The representative and its other
+    fields are unchanged (Google Patents itself was not re-fetched for this correction).'
   - 'Round-1 review finding M5: the round-1 review re-fetched KR20250094623A on 2026-09-18 and reports
     it live as "Active" with an anticipated expiration of 2044-12-18, a member-level expiry event this
-    dataset does not record (the member is recorded here only with a bare "Granted" status, no
-    expiry.date). This changes nothing about the family (already shown in force and collapsed, and
-    the family''s expiry.date of 2044-12-18 already comes from the sibling member US12414485B2''s own
-    recorded expiry), but this member''s own record should be re-fetched to pick up its expiry event
-    at the next refresh; not done here because Google Patents is unreachable from the environment
-    this correction was made in.'
+    dataset does not record (the member is recorded here only with a bare "Granted" status, no expiry.date).
+    This changes nothing about the family (already shown in force and collapsed, and the family''s expiry.date
+    of 2044-12-18 already comes from the sibling member US12414485B2''s own recorded expiry), but this
+    member''s own record should be re-fetched to pick up its expiry event at the next refresh; not done
+    here because Google Patents is unreachable from the environment this correction was made in.'
