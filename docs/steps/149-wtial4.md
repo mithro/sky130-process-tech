@@ -49,7 +49,7 @@ another variant (inference). The metal-4 design rules match metal 3's:
 0.240 µm² minimum area (m4.4a) and a 0.7 minimum oxide pattern
 density checked in 700 µm windows (m4.pd.1, m4.pd.2a).[^pdk-periph]
 
-The step list calls this step "AlCu 2/TiW deposition";[^steps-sheet] a
+The step list calls this step "Al Cu 2/TiW deposition";[^steps-sheet] a
 step name is not evidence of a chemistry, and no public source
 describes the metal-4 films themselves. The Cypress
 qualification reports that give Ti/Al–Cu/TiW thicknesses for the S8
@@ -310,7 +310,7 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
   TiW reading discussed at {ref}`WTIAL3 <step-134>` applies here
   unresolved.
 * Whether the SKY130 metal 4 is the 0.845 µm of the PDK's diagram[^pdk-04]
-  or the 0.8 µm of the antenna table's P-flow entry[^pdk-03] — the same
+  or the 0.8 µm of the assumptions table's P-flow entry[^pdk-03] — the same
   difference discussed for metal 3 at {ref}`MM3E <step-140>` — is not
   public; the 2 µm "S8Q*/SP8Q" entry[^pdk-03] is read here as another
   flow.
