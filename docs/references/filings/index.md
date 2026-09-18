@@ -318,6 +318,7 @@ Sorted by filing date, then id.
 (filing-cypress-8-k-2020-04-16)=
 * **Cypress Semiconductor Corporation — Current report: completion of the merger with IFX Merger Sub (Infineon)** (filed 2020-04-16; SEC accession 0001104659-20-047540).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/791915/000110465920047540/0001104659-20-047540-index.htm) · [Wayback copy](https://web.archive.org/web/20250414174141/https://www.sec.gov/Archives/edgar/data/791915/000110465920047540/0001104659-20-047540-index.htm) · [investor-relations copy](https://www.infineon.com/assets/row/public/documents/corporate/investors/infineon-8k-cypress-legaldocument-v50-00-en.pdf).
+  Period: event of 2020-04-16.
   Cypress's current report on the closing of its acquisition by Infineon on 2020-04-16, including the termination of its credit agreement and employee stock purchase plan; Infineon hosts a copy on its investor site. "On the Closing Date, Infineon completed the acquisition of Cypress through the Merger." (Item 2.01); "Date of Report (Date of the earliest event reported): April 16, 2020" (Cover page)
   Relationships: {ref}`Infineon's acquisition of Cypress (2019-2020) <filings-rel-infineon-cypress-acquisition>`.
   Related pages: {ref}`overview-index` — The filing dates the change of ownership of the Cypress process IP that SkyWater licenses.
@@ -428,6 +429,7 @@ Sorted by filing date, then id.
 (filing-skywater-8-k-2022-04-04)=
 * **SkyWater Technology, Inc. — Current report, item 1.01: Frame Agreement for the Purchase of Wafers and Services with Infineon** (filed 2022-04-04; SEC accession 0001819974-22-000015).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997422000015/skyt-20220329.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/b783ce86-6080-43b7-acf9-ba70ac32097b.pdf).
+  Period: event of 2022-03-29.
   SkyWater Technology Foundry entered into a frame agreement with Infineon for the manufacture and delivery of wafers and foundry services, with an initial four-year term; the agreement is filed as an exhibit. "entered into a Frame Agreement for the Purchase of Wafers and Services (the "Frame Agreement") with Infineon Technologies AG ("Infineon")" (Item 1.01); "The Frame Agreement has an initial four year term" (Item 1.01)
   Relationships: {ref}`Infineon as SkyWater's wafer customer (2022 frame agreement, Fab 25 supply agreement) <filings-rel-infineon-wafer-supply>` · {ref}`Cypress (later Infineon) as SkyWater's wafer customer under the foundry services agreement <filings-rel-cypress-foundry-services>`.
   Related pages: {ref}`overview-index` — The agreement continues the Cypress-era wafer supply that the overview describes in the fab's history.
@@ -473,6 +475,7 @@ Sorted by filing date, then id.
 (filing-d-wave-8-k-2023-03-03)=
 * **D-Wave Quantum Inc. — Current report: Thirteenth Amendment to the Agreement for Semiconductor Line Operation with SkyWater Technology Foundry** (filed 2023-03-03; investor-relations filing 16461334; SEC accession not retrieved).
   [Original](https://ir.dwavequantum.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=16461334) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001907982/50391077-e63b-41de-b592-5e0f37ea99fe.pdf).
+  Period: event of 2023-03-01.
   D-Wave files the Thirteenth Amendment (2023-03-01) to its 2012 semiconductor line operation agreement, originally with Cypress and assigned to SkyWater Technology Foundry, revising SkyWater's activity billing rates. "Thirteenth Amendment, dated March 1, 2023, between D-Wave Systems Inc. and SkyWater Technology Foundry, Inc. to the Agreement for Semiconductor Line Operation, dated as of December 23, 2012, by and between Cypress Semiconductor Corporation and D-Wave Systems Inc." (Item 9.01, exhibit 10.1); "to address the SkyWater's revised Activity Billing rates as of January 2022" (Exhibit 10.1, recitals)
   Relationships: {ref}`a customer's filing names SkyWater <filings-rel-customer-names-skywater>` · {ref}`Cypress selling wafer-line capacity to outside customers before the 2017 sale <filings-rel-cypress-third-party-foundry>`.
   Related pages: {ref}`overview-index` — The exhibit is a public contract between SkyWater and a foundry customer inherited from Cypress.
@@ -518,6 +521,7 @@ Sorted by filing date, then id.
 (filing-skywater-8-k-2023-08-04)=
 * **SkyWater Technology, Inc. — Current report, item 1.01: Consulting Agreement with Oxbow Industries** (filed 2023-08-04; SEC accession 0001193125-23-203313).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000119312523203313/d494973d8k.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/421c650f-42bd-48c1-a73a-87ca4096994e.pdf).
+  Period: event of 2023-08-01.
   SkyWater Technology Foundry engaged Oxbow Industries (an affiliate of which acquired the business from Cypress in 2017) to provide an employee as a consultant on fab operations (efficiency, lot velocity and wafer-services loading). "entered into a Consulting Agreement (the "Consulting Agreement") with Oxbow Industries, LLC ("Oxbow")" (Item 1.01); "evaluating and implementing changes to fab operations to improve fab efficiency and lot velocity" (Item 1.01)
   Relationships: {ref}`Oxbow ownership, management fees and property transactions <filings-rel-oxbow-related-party>`.
   Related pages: {ref}`machines-index` — The filing is one of the few public statements about how the Minnesota fab's operations were managed after the Cypress era.
@@ -627,6 +631,7 @@ Sorted by filing date, then id.
 (filing-skywater-8-k-2025-02-26)=
 * **SkyWater Technology, Inc. — Current report, item 1.01: Membership Interest Purchase Agreement for Infineon's Austin fab** (filed 2025-02-26; SEC accession 0001819974-25-000007).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997425000007/0001819974-25-000007-index.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/f35511a4-f771-44da-9bda-5de8585580bd.pdf).
+  Period: event of 2025-02-25.
   SkyWater agreed to buy, from Spansion LLC (an Infineon affiliate), a new company holding the assets and liabilities of Infineon's 200 mm fab in Austin, Texas, for about \$110 million, part of it payable through wafer credits under a wafer supply agreement with a seller affiliate. "entered into a Membership Interest Purchase Agreement (the "Purchase Agreement") with Spansion LLC ("Seller"), an affiliate of Infineon Technologies AG" (Item 1.01); "certain assets and liabilities related to Infineon Technologies AG's 200 mm fab in Austin, Texas (the "Transaction")" (Item 1.01)
   Relationships: {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>` · {ref}`Infineon as SkyWater's wafer customer (2022 frame agreement, Fab 25 supply agreement) <filings-rel-infineon-wafer-supply>`.
   Related pages: {ref}`overview-index` — The purchase adds a second 200 mm fab to the company that runs the Minnesota fab the overview describes.
@@ -657,6 +662,7 @@ Sorted by filing date, then id.
 (filing-skywater-8-k-2025-07-03)=
 * **SkyWater Technology, Inc. — Current report, items 1.01, 2.01 and 2.03: completion of the Fab 25 acquisition** (filed 2025-07-03; SEC accession 0001193125-25-155467).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000119312525155467/d90812d8k.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/1b266a26-2e16-4886-80ee-7e7baab63f52.pdf).
+  Period: event of 2025-06-30.
   SkyWater completed the purchase of Spansion Fab 25, LLC, holding substantially all of the property, plant, equipment and employees of Infineon's 200 mm Austin fab, on 2025-06-30 for about \$93 million in cash; an amendment removed the \$25 million payable at the end of the multi-year supply agreement. "On June 30, 2025, the Company and the Seller completed the Transaction in accordance with the terms and conditions of Purchase Agreement, as amended by the Amendment." (Item 2.01); "to eliminate the \$25 million payable at the conclusion of the multi-year supply agreement entered into in connection with the Transaction" (Item 1.01)
   Relationships: {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>` · {ref}`Infineon as SkyWater's wafer customer (2022 frame agreement, Fab 25 supply agreement) <filings-rel-infineon-wafer-supply>`.
   Related pages: {ref}`overview-index` — The acquisition adds a second 200 mm fab to the company that runs the Minnesota fab the overview describes.
@@ -671,6 +677,7 @@ Sorted by filing date, then id.
 (filing-skywater-8-k-a-2025-09-15)=
 * **SkyWater Technology, Inc. — Amendment No. 1 to current report, item 9.01: financial statements of the Fab 25 Business of Infineon Technologies AG** (filed 2025-09-15; SEC accession 0001819974-25-000037).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000181997425000037/0001819974-25-000037-index.htm) · [Wayback copy](https://web.archive.org/web/20251014015221/https://www.sec.gov/Archives/edgar/data/1819974/000181997425000037/0001819974-25-000037-index.htm) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/8d1da1bd-cbff-4677-b8bc-cb02f7d3d82a.pdf).
+  Period: Fab 25 Business fiscal years ended 2023-09-30 and 2024-09-30.
   Files the audited combined abbreviated financial statements of the Fab 25 Business of Infineon Technologies AG (assets acquired and liabilities assumed; revenues and direct expenses) and pro forma combined information for the acquisition, with Deloitte & Touche's consent. "The audited Combined Abbreviated Financial Statements of the Fab 25 Business of Infineon Technologies" (Item 9.01(a)); "our report dated September 11, 2025, relating to the financial statements of the Fab 25 Business of Infineon Technologies AG" (Exhibit 23.1, consent of independent auditors)
   Auditor: Deloitte & Touche LLP, 2025-09-11: "/s/ Deloitte & Touche LLP San Jose, California September 15, 2025".
   Relationships: {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>`.
@@ -696,6 +703,7 @@ Sorted by filing date, then id.
 (filing-skywater-8-k-2026-01-26)=
 * **SkyWater Technology, Inc. — Current report: Agreement and Plan of Merger with IonQ, Inc.** (filed 2026-01-26; SEC accession 0001193125-26-021606).
   [EDGAR](https://www.sec.gov/Archives/edgar/data/1819974/000119312526021606/d20158d8k.htm) · [Wayback copy](https://web.archive.org/web/20260131215354/https://www.sec.gov/Archives/edgar/data/1819974/000119312526021606/d20158d8k.htm).
+  Period: event of 2026-01-25.
   SkyWater reports its merger agreement with IonQ, under which IonQ would acquire SkyWater through two mergers with IonQ subsidiaries; the forward-looking statements refer to the newly acquired Texas operations (Fab 25). "entered into an Agreement and Plan of Merger (the "Merger Agreement") with IonQ, Inc., a Delaware corporation ("Parent" or "IonQ")" (Item 8.01); "our ability to integrate the operations of our newly-acquired operations in Texas ("Fab 25") with our existing operations" (Forward-looking statements)
   Relationships: {ref}`IonQ's acquisition of SkyWater (2026) <filings-rel-skywater-ionq-merger>` · {ref}`SkyWater's purchase of Infineon's Austin fab (Fab 25) <filings-rel-infineon-fab25-sale>`.
   Related pages: {ref}`overview-index` — The merger changes the ownership of the fab whose history the overview gives.
@@ -757,6 +765,7 @@ Sorted by filing date, then id.
 (filing-ionq-8-k-2026-07-31)=
 * **IonQ, Inc. — Current report: completion of the acquisition of SkyWater Technology** (filed 2026-07-31; investor-relations filing 19650888; SEC accession not retrieved).
   [Original](https://investors.ionq.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=19650888) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001824920/530109bf-a75a-43c0-bf8f-e757dffff526.pdf).
+  Period: event of 2026-07-31.
   IonQ's current report on completing the two-step merger by which SkyWater became a wholly owned subsidiary of IonQ. "Merger Sub 1 merged with and into SkyWater, with SkyWater surviving as a wholly owned subsidiary of the Company (the "First Merger")" (Introductory note)
   Relationships: {ref}`IonQ's acquisition of SkyWater (2026) <filings-rel-skywater-ionq-merger>`.
   Related pages: {ref}`overview-index` — The acquirer's filing dates the change of ownership of the fab whose history the overview gives.
@@ -764,6 +773,7 @@ Sorted by filing date, then id.
 (filing-skywater-8-k-2026-07-31)=
 * **SkyWater Technology, Inc. — Current report: completion of the mergers with IonQ subsidiaries** (filed 2026-07-31; investor-relations filing 19650903; SEC accession not retrieved).
   [Original](https://ir.skywatertechnology.com/financials/sec-filings/sec-filings-details/default.aspx?FilingId=19650903) · [investor-relations copy](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819974/b6e5e06b-f163-4568-ac5a-c5a78fa919c6.pdf).
+  Period: event of 2026-07-31.
   SkyWater reports the completion of the IonQ mergers on 2026-07-31: it became a wholly-owned subsidiary of IonQ and then merged into SkyWater Technology, LLC, and its revolving credit facility was repaid. "On July 31, 2026 (the "Closing Date"), pursuant to the Merger Agreement, (i) Merger Subsidiary 1 merged with and into the Company, with the Company surviving as a wholly-owned subsidiary of Parent" (Introductory Note); "the Registrant merged with and into SkyWater Technology, LLC (formerly known as Iris Merger Subsidiary 2 LLC), with SkyWater Technology, LLC surviving the merger" (Cover page note)
   Relationships: {ref}`IonQ's acquisition of SkyWater (2026) <filings-rel-skywater-ionq-merger>`.
   Related pages: {ref}`overview-index` — The filing dates the change of ownership of the fab whose history the overview gives.
