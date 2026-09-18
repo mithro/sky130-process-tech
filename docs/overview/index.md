@@ -665,9 +665,10 @@ sources, in the order in which the thermal steps occur.
    750–950 °C ({ref}`GOX100 <step-043>`,
    {ref}`LVGOX <step-047>`);[^txt-01] in Cypress's integration patent the
    logic gate oxidation also re-oxidises the ONO.[^pat-03]
-5. **Gate film.** Silicon deposited at low temperature and low rate is
-   amorphous (typical value; the amorphous/polycrystalline boundary
-   depends on rate as well as temperature);[^voutsas-1992] the
+5. **Gate film.** Silicon deposited at low temperature and at a rate
+   above the critical value is amorphous (typical value; the
+   amorphous/polycrystalline boundary depends on rate as well as
+   temperature);[^voutsas-1992] the
    {ref}`SAGD <step-048>` page reads
    SKY130's gate film as amorphous from SkyWater's "LPCVD polysilicon
    (undoped), both amorphous and crystalline"[^skw-01] (inference); the caps and the post-etch re-oxidation
