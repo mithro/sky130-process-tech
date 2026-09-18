@@ -26,21 +26,26 @@ and the wafer cleaned for the thin gate oxidation at
 process described on the {ref}`category-oxidation` page: "a mask and wet
 etch to strip it from the low-voltage active areas".
 
-Both Cypress flows describe the operation. In one, "The thick, first
-gate oxide 240 is etched in the exposed regions by using a BOE etch …
-and the patterned mask layer 242 is then removed"; afterwards "the
-substrate 206 is cleaned using a wet etch that does not etch oxide in
-order to protect the first gate oxide 240 of the HV MOS transistor
-212, and the blocking oxide layer 238 of the gate stack 236".[^pat-04]
-In the other, "any previously formed gate insulator layers, such as
-gate insulator layer 314 … are selectively removed to expose the
-substrate 302", a pre-clean is done "while the photoresist layer 318
-protects the ONO charge trapping dielectric stack 306", and "the
-photoresist layer 318 is stripped … for example with conventional
-piranha clean and/or plasma ash operations, subsequent to the
-selective removal of the gate insulator layer(s)".[^pat-03] Following
-that sequence, this reference treats the strip and clean as part of
-this step.
+Both Cypress flows describe the operation, and both patents are shown as
+in force: they give the etchant, the order of etch, strip and clean, and
+what the clean must not attack. The two passages are in the collapsed
+note below. Following the sequence they set out, this reference treats
+the strip and clean as part of this step.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+In one, "The thick, first gate oxide 240 is etched in the exposed
+regions by using a BOE etch … and the patterned mask layer 242 is then
+removed"; afterwards "the substrate 206 is cleaned using a wet etch that
+does not etch oxide in order to protect the first gate oxide 240 of the
+HV MOS transistor 212, and the blocking oxide layer 238 of the gate
+stack 236".[^pat-04] In the other, "any previously formed gate insulator
+layers, such as gate insulator layer 314 … are selectively removed to
+expose the substrate 302", a pre-clean is done "while the photoresist
+layer 318 protects the ONO charge trapping dielectric stack 306", and
+"the photoresist layer 318 is stripped … for example with conventional
+piranha clean and/or plasma ash operations, subsequent to the selective
+removal of the gate insulator layer(s)".[^pat-03]
+:::
 
 ## Step category
 
@@ -87,9 +92,8 @@ Without `GOXETCH` all transistors would carry the thick oxide and the
 An industry-generic thick-oxide strip for a dual-gate-oxide process
 in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
-1. **Wet etch with resist.** Dilute HF — the Cypress patent names "a
-   50:1 hydrofluoric (HF) wet etch" alongside 10:1 and 20:1
-   BOE[^pat-04] — or
+1. **Wet etch with resist.** Dilute HF — the dilutions the Cypress
+   patent names are in the collapsed note below this list — or
    surfactant-containing BOE in a wet bench or single-wafer spray
    tool. Rate control is the issue: 6:1 BOE etches thermal oxide at
    "approximately 2 nanometres per second at 25 degrees
@@ -98,7 +102,8 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    follows the HF and HF₂⁻ concentrations[^judge-1971] and, at very low
    concentration, the dissociation state of the acid.[^kikuyama-1994]
    Monk, Soane and Howe give the kinetics and a model for HF etching
-   of oxide films.[^monk-1994] Cypress uses "a BOE etch"[^pat-04] here.
+   of oxide films.[^monk-1994] What Cypress uses here is in the same
+   note.
 2. **{term}`Over-etch <over-etch>`.** Timed to clear the thickest oxide on the wafer plus
    margin; the hydrophobic (dewetting) silicon surface is the classic
    visual sign that the oxide is gone. Every second of over-etch
@@ -107,24 +112,35 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    ({ref}`category-etch`).
 3. **Rinse.** DI water; the bare silicon is now hydrogen-terminated
    and hydrophobic.[^cerofolini-1998]
-4. **Resist strip.** Oxygen-plasma {term}`ash` and {term}`SPM` ("conventional piranha
-   clean and/or plasma ash operations"[^pat-03]) — the resist has seen
-   one light implant and an HF bath ({ref}`category-strip`).
+4. **Resist strip.** Oxygen-plasma {term}`ash` and {term}`SPM`, the
+   combination the Cypress patent names (collapsed note below this list)
+   — the resist has seen one light implant and an HF bath
+   ({ref}`category-strip`).
 5. **Pre-gate clean.** An RCA-type clean whose final surface state
    is chosen for the thin oxide: {term}`SC-1` for particles, {term}`SC-2` for
    metals,[^wiki-rca] then either an HF-last (hydrogen-terminated
    silicon) or a thin chemical oxide. Two constraints are public. The
-   clean must not remove the thick oxide that is now exposed — Cypress
-   uses "a wet etch that does not etch oxide"[^pat-04] — and it must
-   not attack the {term}`ONO` {term}`blocking oxide` of the memory cells, which SC-1
-   etches at "approximately 0.2 to 0.3 nm/minute" and can roughen or
-   pit, so that an "ultra-dilute SC1" is preferred.[^pat-03] Kern's
+   clean must not remove the thick oxide that is now exposed, and it
+   must not attack the {term}`ONO` {term}`blocking oxide` of the memory
+   cells; what the two Cypress patents say about each, including an
+   etch rate and the dilution they prefer, is in the collapsed note
+   below this list. Kern's
    review gives the chemistry of these cleans,[^kern-1990] Ohmi the
    room-temperature alternatives,[^ohmi-1996] and the handbook edited by
    Reinhardt and Reidy the pre-gate practice.[^reinhardt-2010]
 6. **Queue time.** Straight to the thin oxidation; bare silicon
    regrows native oxide within hours (industry practice; Reinhardt and
    Reidy[^reinhardt-2010]).
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+The Cypress patent names "a 50:1 hydrofluoric (HF) wet etch" alongside
+10:1 and 20:1 BOE, and uses "a BOE etch" here; its clean is "a wet etch
+that does not etch oxide".[^pat-04] The resist is stripped "for example
+with conventional piranha clean and/or plasma ash operations"; SC-1
+etches the blocking oxide at "approximately 0.2 to 0.3 nm/minute" and
+can roughen or pit it, so that an "ultra-dilute SC1" is
+preferred.[^pat-03]
+:::
 
 ## Machines typically used
 
@@ -140,8 +156,8 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
   BOE, spin or IPA dry")[^skw-01] — BOE is the etchant Cypress names for
-  this step.[^pat-04] Strength: **strong** for the tool; **inference**
-  for the assignment.
+  this step (the collapsed note above). Strength: **strong** for the
+  tool; **inference** for the assignment.
 * **DNS wet bench** ("industry standard HF/SC1/SC2"; "dilute HF-last
   with IPA dry")[^skw-01] — a pre-gate clean with HF-last is exactly the
   option listed. Strength: strong for existence; inference for
@@ -156,8 +172,8 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 ## Resources required
 
 * **Hydrofluoric acid (49 %)** ({ref}`wet chemicals <material-wet-chemicals>`) diluted, or **BOE** (NH₄F/HF) with
-  **surfactant**;[^pat-04][^wiki-boe] {term}`BOE` is on SkyWater's
-  Akrion list.[^skw-01]
+  **surfactant**[^wiki-boe] (the collapsed note above); {term}`BOE` is
+  on SkyWater's Akrion list.[^skw-01]
 * **Sulphuric acid, hydrogen peroxide, ammonium hydroxide,
   hydrochloric acid** for SPM/SC-1/SC-2.[^wiki-rca]
 * **{ref}`Oxygen <material-process-gases>`, nitrogen, {ref}`forming gas <material-anneal-ambients>`** for the ash.[^skw-01]
