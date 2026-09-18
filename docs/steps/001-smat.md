@@ -312,13 +312,19 @@ Status and expiry are estimates from public records and are not legal advice.
   only public statement and it is a marketing table written years
   after the S8 flow was developed. Whether the original Cypress S8
   wafer was polished CZ or a thin p/p⁻ epi wafer cannot be confirmed;
-  the Cypress SONOS patent deliberately allows both.[^pat-04]
+  a Cypress patent that may still be in force speaks to the choice, in
+  the collapsed note at the end of this list.
 * **Wafer vendor at the time of development.** The 2015 Cypress notice
   shows GlobalWafers being *added* alongside "other qualified
   suppliers";[^cyp-06] who the original supplier was is not public.
 * **Incoming-inspection tooling.** The KLA SP1 is our reading of a job
   posting that expands none of its abbreviations,[^job-06] and the Lumonics scribe[^skw-01] is not tied to any
   step.
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The Cypress SONOS patent deliberately allows a bulk wafer or one with
+an epitaxial layer.[^pat-04]
+:::
 
 <!-- footnotes -->
 

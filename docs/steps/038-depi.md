@@ -149,9 +149,9 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   confined to the top few tens of nanometres above the `PTSI` barrier;
   the {term}`tunnel oxide` grown at {ref}`ONO <step-040>` consumes 46 %
   of its own thickness of silicon[^wiki-thox] — of order 1 nm for a
-  tunnel oxide in the 1.0–4.0 nm range the Cypress patent gives for
-  its radical-oxidation embodiment (1.0–3.0 nm for the thermal
-  one)[^pat-04] — which the target must allow for.
+  tunnel oxide of the thickness a Cypress patent that may still be in
+  force gives it (collapsed note below this list) — which the target
+  must allow for.
 * **Dose.** Of order 10¹² cm⁻²: enough to swing the threshold by a
   volt or two against the p-well surface doping, in line with
   {term}`threshold-adjust <threshold-adjust implant>` practice[^macpherson-1971] and with the "about 8×10¹²
@@ -171,6 +171,12 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 * **Monitoring.** Thermal-wave measurement on product; the cell
   threshold itself is monitored at e-test (the `VTE`/`VTP` parameters
   above[^pdk-07]).
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+The Cypress patent's tunnel-dielectric ranges are 1.0–4.0 nm for the
+radical-oxidation embodiment and 1.0–3.0 nm for the thermal
+one.[^pat-04]
+:::
 
 ## Machines typically used
 

@@ -89,9 +89,9 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
   stoichiometric.[^txt-02] The same DCS/NH₃ LPCVD chemistry is used for
   the {term}`SONOS` nitride: one embodiment of US 6,969,689 forms the
   nitride at temperatures "from about 700° C. to about 875° C."[^pat-01]
-  and a later Cypress patent gives 700–850 °C and 5–500 mTorr for the
-  closely related N₂O/NH₃/DCS oxynitride deposition,[^pat-02] so the
-  precursor set is native to the Cypress furnaces.
+  A later Cypress patent that may still be in force gives conditions for
+  the closely related oxynitride deposition, in the collapsed note below
+  this list, so the precursor set is native to the Cypress furnaces.
 * **Film properties.** Stoichiometric LPCVD nitride is under about
   1 GPa of tensile stress and has a refractive index near 2.0; both are
   monitored as process-control signals.[^txt-02]
@@ -101,6 +101,11 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
   nm/min, so a 150 nm film takes tens of minutes.
 * **Metrology.** Thickness and index by ellipsometry; stress by wafer
   bow on monitor wafers; particle scan.
+
+:::{dropdown} From a patent shown as in force (US 2009/0179253; estimated expiry 2027-06-17) — open to read
+A later Cypress patent gives 700–850 °C and 5–500 mTorr for the
+closely related N₂O/NH₃/DCS oxynitride deposition.[^pat-02]
+:::
 
 SkyWater's capability page lists LPCVD nitride explicitly among its
 furnace processes,[^skw-01] along with BTBAS low-temperature nitride,
