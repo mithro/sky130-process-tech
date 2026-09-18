@@ -33,25 +33,30 @@ memory cells live only inside memory blocks marked `areaid.ce` (rule
 tunm.8)[^pdk-periph] means the ONO islands are confined to the array
 areas of a design.
 
-The Cypress patents describe the same operation. In one, "a patterned
-mask layer … is formed on or overlying the sacrificial oxide layer
-234, and the sacrificial oxide, cap layer 232, and the charge-trapping
-layer 230 etched or patterned to form a gate stack 236 overlying the
-channel 224 of the NVM transistor and to remove the sacrificial oxide,
-cap layer, and the charge trapping layers 230 from the second region
-208 of the substrate 204"; "The patterned mask layer can include a
-photoresist layer patterned using standard lithographic
-techniques".[^pat-04] In another, "Conventional lithography and etching
-techniques may be employed to remove the charge trapping dielectric
-layers from other regions of the substrate, such as the HV MOS region
-350 and MOS region 370".[^pat-03]
+The Cypress patents describe the same operation; both are shown as in
+force, and their wording is in the collapsed note below.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+In one, "a patterned mask layer … is formed on or overlying the
+sacrificial oxide layer 234, and the sacrificial oxide, cap layer 232,
+and the charge-trapping layer 230 etched or patterned to form a gate
+stack 236 overlying the channel 224 of the NVM transistor and to remove
+the sacrificial oxide, cap layer, and the charge trapping layers 230
+from the second region 208 of the substrate 204"; "The patterned mask
+layer can include a photoresist layer patterned using standard
+lithographic techniques".[^pat-04] In another, "Conventional lithography
+and etching techniques may be employed to remove the charge trapping
+dielectric layers from other regions of the substrate, such as the HV
+MOS region 350 and MOS region 370".[^pat-03]
+:::
 
 ## Step category
 
 `ONOM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *etch mask* type, printed on a dielectric stack rather than
 on resist-friendly oxide alone: the top surface is the {term}`blocking oxide`
-(or a sacrificial oxide cap over it[^pat-04]), which behaves like any
+(or a sacrificial oxide cap over it, as in the Cypress flow described in
+the collapsed note above), which behaves like any
 other oxide for coating purposes. Its features are the tunnel windows
 plus an overlap — 0.410 µm windows[^pdk-periph] grown by a margin that
 is not public — so it is a relaxed layer, and we infer an i-line
@@ -68,9 +73,9 @@ thermal oxidation of bare silicon, which the stack would block. The
 stack therefore has to be removed everywhere except the cells, and it
 has to be removed *before* the gate oxidations
 ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`), which is where
-Cypress's flow puts it: the ONO is formed and patterned, then "the
-logic MOS gate insulator" is formed by a thermal process that
-"additionally" reoxidises the ONO.[^pat-03] A 2011 Cypress/UMC
+Cypress's flow puts it — what that patent, which may still be in force,
+says the later gate oxidation does for the stack is in the collapsed
+note below this section. A 2011 Cypress/UMC
 press release puts the cost of the module in the 65 nm S65 process at
 "three additional mask layers" (it gives no count for S8),[^cyp-22] and
 Cypress's 2020 article credits {term}`SONOS` with "the
@@ -81,15 +86,24 @@ out of the logic.
 Two geometric facts about the island matter. It must enclose the
 tunnel window with margin, because the silicon inside the window has
 only the {term}`tunnel oxide` on it: if the ONO etch reached it, the etch
-would land on 1–3 nm of oxide[^pat-04] and then on the channel. And the
+would land on a tunnel oxide only a few nanometres thick (the thickness
+is in the collapsed note below) and then on the channel. And the
 island edge is where the logic gate oxide will later grow up against
 the nitride sidewall, so the edge must lie on field oxide or on
 silicon that becomes part of the select transistor's structure, never
 inside a logic channel — which the "(poly and diff) may not straddle
 tunm" rule (tunm.5)[^pdk-periph] already guarantees for the window.
-The Cypress integration patent notes for its window that "the
-dimensions and alignment of window 305 and ONO charge trapping
-dielectric stack 306 are important".[^pat-03]
+The Cypress integration patent makes the same point about its own
+window, in the collapsed note below.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+The ONO is formed and patterned, then "the logic MOS gate insulator" is
+formed by a thermal process that "additionally" reoxidises the ONO; the
+patent notes for its window that "the dimensions and alignment of window
+305 and ONO charge trapping dielectric stack 306 are
+important".[^pat-03] The tunnel oxide inside the window is
+1–3 nm.[^pat-04]
+:::
 
 Without `ONOM` the ONO etch would remove the memory stack too, or —
 if the etch were skipped — every logic transistor would be a SONOS
@@ -101,15 +115,14 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
 130 nm-era fab (SKY130's recipe is not public):
 
 1. **Surface.** The wafer's top surface is the blocking oxide of the
-   ONO stack (or a thin sacrificial oxide over it, "between 2.0 nm and
-   4.0 nm" in one Cypress flow[^pat-04]). Dehydration bake and
-   {term}`HMDS` prime.
-2. **Anti-reflective layer.** Optional. The Cypress integration patent
-   uses "an inorganic spin-on anti-reflective coating (ARC)" on top of
-   the stack, etched together with it;[^pat-03] on a relaxed i-line
-   layer many fabs would omit an {term}`ARC`. If one is used, this
-   reference treats its open as part of {ref}`ONOME <step-042>`, as in
-   the Cypress flow where the ARC is etched with the stack.[^pat-03]
+   ONO stack, or a thin sacrificial oxide over it whose thickness in one
+   Cypress flow is in the collapsed note below this list. Dehydration
+   bake and {term}`HMDS` prime.
+2. **Anti-reflective layer.** Optional. What the Cypress integration
+   patent uses, and how it is removed, is in the same note; on a relaxed
+   i-line layer many fabs would omit an {term}`ARC`. If one is used,
+   this reference treats its open as part of {ref}`ONOME <step-042>`, as
+   in the Cypress flow.
 3. **Resist coat, soft bake.** A positive i-line resist of about 1 µm
    (the PDK's generic 1.14 µm[^pdk-03]); etch {term}`selectivity`, not implant
    stopping, sets the thickness here.
@@ -131,6 +144,13 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
    the islands, and
    after-develop inspection for resist residue on the open stack, which
    would leave nitride stringers after the etch.
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+The sacrificial oxide over the blocking oxide is "between 2.0 nm and
+4.0 nm" in one Cypress flow.[^pat-04] The Cypress integration patent
+uses "an inorganic spin-on anti-reflective coating (ARC)" on top of the
+stack, etched together with it.[^pat-03]
+:::
 
 The resist is consumed as the etch mask at {ref}`ONOME <step-042>`
 and stripped there (this reference treats the strip as part of that
@@ -156,8 +176,8 @@ etch).
 ## Resources required
 
 * **i-line photoresist** ({ref}`lithography materials <material-lithography-materials>`; Dow, JSR, TOK are SkyWater's named
-  suppliers[^sec-01]), **HMDS**, optional **inorganic or organic
-  ARC**.[^pat-03]
+  suppliers[^sec-01]), **HMDS**, optional **inorganic or organic ARC**
+  (the collapsed note above).
 * **2.38 % (0.26 N) TMAH developer**,[^txt-02] edge-bead remover, {ref}`DI water <material-ultrapure-water>`,
   {ref}`nitrogen <material-process-gases>`.
 * **The ONO reticle** — chrome on quartz; relaxed features.
@@ -255,7 +275,8 @@ Status and expiry are estimates from public records and are not legal advice.
 * Whether an ARC is used under the ONO-mask resist, and if so which
   kind, is an open question; this page describes no separate ARC etch
   here; if one is used, its open is part of
-  {ref}`ONOME <step-042>`, as in the Cypress flow.[^pat-03]
+  {ref}`ONOME <step-042>`, as in the Cypress flow (collapsed notes
+  above).
 * Reticle tone and the resist thickness for this layer are not public.
 
 <!-- footnotes -->
