@@ -103,17 +103,21 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
    analyse its kinetics[^raupp-1992] — or SiH₄/N₂O plasma oxide, whose
    properties depend on RF power as Chapple-Sokol, Tierney and Batey
    measured.[^chapple-sokol-1989] The Cypress Fab 4 reports list a 1 000 Å
-   TEOS film in their passivation stacks,[^cyp-qtp-123907][^cyp-qtp-014807]
-   which shows a PECVD TEOS oxide of cap-like thickness in the same fab;
-   that this cap is of the same kind is our inference.
+   TEOS film in their passivation
+   stacks;[^cyp-qtp-123907][^cyp-qtp-014807] neither says by what method
+   it was deposited, and a 1 000 Å TEOS film in a post-metal stack is
+   necessarily below the aluminium limit, so it is a plasma process
+   (inference). That this cap is of the same kind is a further
+   inference.
 3. **Thickness.** Not public; a cap of the order of 0.05–0.15 µm is
    typical of the practice (industry-typical value[^txt-05]), sized so
    that polished NILD6 plus cap reaches the 0.505 µm via-4 height.[^pdk-04]
 4. **Film properties.** A dense, low-hydrogen film; hydrogen evolution
    from plasma oxide on later heating changes its stress,[^mani-2007] and
-   a wet cap defeats its purpose. LPCVD TEOS[^adams-1979][^becker-1987]
-   would give a denser film but at 650–750 °C, far above the aluminium
-   limit (inference from the temperature).
+   a wet cap defeats its purpose. LPCVD TEOS would give a denser film
+   but at 650–750 °C, the industry-typical LPCVD TEOS window (textbook
+   value[^txt-05]; Adams and Capio and Becker et al. characterise the
+   process[^adams-1979][^becker-1987]), far above the aluminium limit.
 5. **Plasma exposure.** The deposition plasma reaches a wafer whose
    `cap2m` top plates are still floating under the dielectric; a gentle,
    low-bias PECVD step limits the charging Cheung described for

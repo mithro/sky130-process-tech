@@ -49,8 +49,8 @@ depend on the same TiW/TiN-cap-composition question or on how
 | 157-L1 | Low | fixed | SEZ223/Davinci vs "SEZ 223 / Da Vinci" spelling split within page (157:198) |
 | 157-L2 | Low | fixed | "industry-standard" slurry claim missing adjacent citation (157:20-21) |
 | 157-L3 | Low | fixed | no-plug-polish argument from step-list silence not marked as such (157: Open questions) |
-| 158-L1 | Low | open | "PECVD TEOS" invents a deposition method not in either report (158:105-108) |
-| 158-L2 | Low | open | 650-750°C LPCVD window not clearly labelled as textbook value (158:114-116) |
+| 158-L1 | Low | fixed | "PECVD TEOS" invents a deposition method not in either report (158:105-110); verified both Cypress PDFs with pdftotext |
+| 158-L2 | Low | fixed | 650-750°C LPCVD window not clearly labelled as textbook value (158:116-119) |
 | 159-M1 | Medium | open | Skelly & Gruenke via-fill analogy ignores non-monotonic 2.8 µm result (159, 161) |
 | 159-L1 | Low | open | Le, Banerjee & McPherson EM finding is conditional, cited as unconditional (159:128-131) |
 | 159-L2 | Low | fixed | via4/via3 resistance-per-area residual left uncomputed (159:47-51), fixed alongside 151-L1 |
