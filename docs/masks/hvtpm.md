@@ -534,7 +534,7 @@ created layer the same 0.38 width and spacing (`chvtpm.1`,
     <https://patents.google.com/patent/US6238982B1/en>
 [^pat-vt-rrr]: M. Helm and X. Zhou (Round Rock Research), *Formation of
     standard voltage threshold and low voltage threshold MOSFET
-    devices*, US 2011/0006372 A1, published 2011-01-13.
+    devices*, US 2011/0006372 A1, published 2011-01-13 (priority 2002-07-08).
     <https://patents.google.com/patent/US20110006372A1/en>
 [^taur-2009]: Y. Taur and T. H. Ning, *Fundamentals of Modern VLSI
     Devices*, 2nd ed., Cambridge University Press, 2009, ISBN

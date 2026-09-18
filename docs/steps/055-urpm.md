@@ -362,7 +362,7 @@ it as an open question, so the two pages should be read together.
     *Proc. SPIE* **100**, 80–85 (1977).
     <https://doi.org/10.1117/12.955357>
 [^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
-    SPIE Press, 2005. <https://doi.org/10.1117/3.601520>
+    SPIE Press, 2005, ISBN 978-0-8194-5660-1. <https://doi.org/10.1117/3.601520>
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>

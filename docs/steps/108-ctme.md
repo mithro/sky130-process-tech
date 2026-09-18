@@ -316,7 +316,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
     Performance*, press release, 2001-07-09.
     <https://newsroom.lamresearch.com/2001-07-09-Lam-Research-Corporation-Advances-Dielectric-Etch-Capabilities-With-Launch-Of-Exelan-R-High-Performance>
 [^lam-10k]: Lam Research Corporation, Form 10-K for the fiscal year
-    ended 2003-06-29.
+    ended 2003-06-29 (product line: TCP 9400PTX/DFM, 2300, Exelan).
     <https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm>
 [^wiki-rie]: Wikipedia, *Reactive-ion etching*.
     <https://en.wikipedia.org/wiki/Reactive-ion_etching>
