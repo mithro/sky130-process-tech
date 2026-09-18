@@ -325,7 +325,8 @@ thicknesses are not public.
   polished to the nitride ({ref}`CMPNIT <step-012>`), and the FILOX page
   names a furnace or RTP densification as optional.
 * **Glass over the gates.** The {ref}`PSG <step-089>` page describes a
-  gap between spacer-clad gates that "approaches 2:1" and reads the
+  gap between spacer-clad gates whose aspect ratio is well above 2 : 1
+  and reads the
   pre-metal glass as HDP PSG; HDP PSG over finished transistors carries
   "the plasma damage concern",[^chen-2002-psg] and its phosphorus
   activation depends on the later thermal budget.[^hsiao-2005]

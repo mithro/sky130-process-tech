@@ -50,7 +50,9 @@ not public), and whether the anneal is one step or two.
 
 `CSIL` is an {ref}`Anneal / thermal processing <category-anneal>` step
 of the *silicidation* type — the class the category page describes
-for titanium: a first {term}`RTA` at roughly 600–750 °C in N₂ forms the
+for titanium (it gives roughly 600–700 °C for the first anneal; this
+page uses the wider 600–750 °C of its sources below): a first
+{term}`RTA` at roughly 600–750 °C in N₂ forms the
 metastable {term}`C49 TiSi₂` (and TiN on top), a selective strip removes
 unreacted metal, and a second RTA at roughly 800–900 °C converts C49
 to the low-resistivity C54 phase.[^maex-1993][^osburn-1993] What is

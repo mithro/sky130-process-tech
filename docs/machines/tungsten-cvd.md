@@ -22,7 +22,7 @@ described on the category page and the step pages.
 | What it does | Deposits blanket tungsten for plugs: "WF6 is commonly used by the semiconductor industry to form tungsten films, through the process of chemical vapor deposition";[^wiki-wf6] Novellus sold "blanket tungsten deposition for plug fill and low-stress composite interconnects".[^novellus-wcvd-1998] |
 | Chemistry | WF₆ + 3H₂ → W + 6HF;[^wiki-wf6] hydrogen and silicon reduction of WF₆ studied "within a pressure range of 0.1–5 torr and a temperature range of 250°–500°C";[^rev-03] hydrogen reduction "one‐half order in hydrogen, zero order in tungsten hexafluoride".[^mcconica-1986] |
 | Pressure and temperature | "from about 20 to 760 Torr to improve the deposition rate" in an Applied Materials patent;[^pat-wcvd-amat] "80 torr and 475°C" on an Applied P5000 WCVD;[^riley-1991] "300 Torr" for Applied's Sprint;[^amat-ism-2000] pulsed nucleation at "approximately 250 and 475° C.".[^pat-pnl-novellus] |
-| Nucleation | Novellus's pulsed nucleation "alternatively" provides "reducing gases and tungsten-containing gases", each cycle giving "one or more monolayers";[^pat-pnl-novellus] conventional nucleation layers "approximately 1000 Å thick" on "the TiN/Ti glue layer stack" in Hegde et al.'s study.[^hegde-1997] |
+| Nucleation | Novellus's pulsed nucleation "alternatively" provides "reducing gases and tungsten containing gases", each cycle giving "one or more monolayers";[^pat-pnl-novellus] conventional nucleation layers "approximately 1000 Å thick" on "the TiN/Ti glue layer stack" in Hegde et al.'s study.[^hegde-1997] |
 | Wafer handling | Multi-station: the Concept One-W had "six-wafer chambers, where five were used for deposition and one for loading";[^novellus-history] the Dual Altus "a total of 10 stations".[^novellus-wcvd-1998] Single-wafer: the Precision 5000 WCVD of 1989[^amat-1997] and the WxZ Centura.[^amat-ism-2000] |
 | 200 mm era | Applied's Precision 5000 WCVD (1989),[^amat-1997] WxZ Centura and Sprint;[^amat-ism-2000] Novellus's Concept One-W (1990) and Concept Two Altus (1993).[^novellus-history] |
 | SkyWater-listed tool | "Lam/Novellus PECVD Tungsten" ("plug fill", "{term}`PNL` option for high aspect ratio (up to 10:1)")[^skw-01] |
@@ -90,7 +90,7 @@ gas to improve the reflectivity of the surface".[^pat-wcvd-amat]
 Novellus's pulsed nucleation layer ({term}`PNL`) replaces the continuous
 silane–WF₆ nucleation with alternating doses: "A tungsten nucleation film
 is formed on a surface of a semiconductor substrate by alternatively
-providing to that surface, reducing gases and tungsten-containing gases.
+providing to that surface, reducing gases and tungsten containing gases.
 Each cycle of the method provides for one or more monolayers of the
 tungsten film. The film is conformal and has improved step coverage, even
 for a high aspect ratio contact hole."[^pat-pnl-novellus] The patent heats

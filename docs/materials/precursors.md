@@ -128,7 +128,7 @@ pyrophoric gas",[^wiki-diborane] which NIOSH notes is "Usually shipped in
 pressurized cylinders diluted with hydrogen, argon, nitrogen, or
 helium";[^niosh-diborane] Novellus's pulsed nucleation patent forms the
 nucleation film "by alternatively providing to that surface, reducing
-gases and tungsten-containing gases".[^pat-pnl-novellus]
+gases and tungsten containing gases".[^pat-pnl-novellus]
 
 ## Representative materials and grades
 
@@ -330,7 +330,7 @@ not public.
 * **Tungsten nucleation.** The WDEP pages read a silane or diborane
   nucleation followed by hydrogen reduction, and we read SkyWater's "PNL option" as the pulsed nucleation layer that
   Novellus patented, formed "by alternatively providing to that surface,
-  reducing gases and tungsten-containing gases".[^skw-01][^pat-pnl-novellus]
+  reducing gases and tungsten containing gases".[^skw-01][^pat-pnl-novellus]
   Silicon reduction of WF₆ is self-limiting,[^mcconica-1986] and the TiN
   liner protects the silicon and oxide beneath
   ({ref}`category-deposition`).
