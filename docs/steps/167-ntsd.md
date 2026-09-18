@@ -137,8 +137,8 @@ public):
    and Rand calibrated by infrared absorption.[^lanford-1978] Sinha
    et al.'s reactive-plasma films, deposited at 275 °C, spanned Si/N of
    0.75–1.5 and refractive index 1.9–2.3 with stress ranging from
-   compressive to tensile, and gave crack-resistant 1 µm films with good
-   adhesion to aluminium — the same levers and the same
+   compressive to tensile, and at 450–500 °C gave crack-resistant 1 µm
+   films with good adhesion to aluminium — the same levers and the same
    constraint.[^sinha-1978]
 4. **Thickness.** Of the order of 0.5–0.9 µm: 0.54 µm on the PDK's
    diagram[^pdk-04] and 0.7–0.9 µm in the Cypress reports for the S8DI
