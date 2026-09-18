@@ -63,15 +63,20 @@ The island has two jobs on the step pages' readings. It must enclose the
 window with margin, because inside the window the silicon carries only
 the tunnel oxide; and it must keep the stack off every logic channel,
 whose gate oxide is grown afterwards at {ref}`GOX100 <step-043>` and
-{ref}`LVGOX <step-047>`. Cypress's integration patent says of its own
-flow that "If the overlay of the ONO charge trapping dielectric stack
-306 and the window 305 is not adequate (e.g. D2 becomes zero) the
-substrate region of SONOS device 300 may be rendered non-functional by
-subsequent processes. Thus, for this reason too, the dimensions and
-alignment of window 305 and ONO charge trapping dielectric stack 306 are
-important."[^pat-03] What the mask does not define is the gate of the
+{ref}`LVGOX <step-047>`. Cypress's integration patent, which may still
+be in force, says the same of its own flow; the passage is in the
+collapsed note below this paragraph. What the mask does not define is the gate of the
 memory transistor: the {ref}`ONOME <step-042>` page reads the islands as
 etched again, self-aligned to the poly, at {ref}`P1ME <step-062>`.
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+Cypress's integration patent says of its own flow that "If the overlay
+of the ONO charge trapping dielectric stack 306 and the window 305 is
+not adequate (e.g. D2 becomes zero) the substrate region of SONOS device
+300 may be rendered non-functional by subsequent processes. Thus, for
+this reason too, the dimensions and alignment of window 305 and ONO
+charge trapping dielectric stack 306 are important."[^pat-03]
+:::
 
 ## Drawn layers and derivation
 
@@ -194,12 +199,17 @@ that NA (our arithmetic).
 resist of about 1 µm, the PDK's generic "Photoresist thickness" being
 1.14 µm,[^pdk-03] with etch selectivity rather than implant stopping
 setting the thickness, and leaves open whether an anti-reflective coating
-is used; the Cypress integration patent uses "an inorganic spin-on
+is used; what the Cypress integration patent, which may still be in
+force, uses is in the collapsed note below this paragraph. The surface
+under the resist is the blocking oxide of the stack. SkyWater's resist
+and any ARC are not public; the consumables are on the
+{ref}`lithography materials <material-lithography-materials>` page.
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+The Cypress integration patent uses "an inorganic spin-on
 anti-reflective coating (ARC)" that is dry-etched with the
-stack.[^pat-03] The surface under the resist is the blocking oxide of
-the stack. SkyWater's resist and any ARC are not public; the consumables
-are on the {ref}`lithography materials <material-lithography-materials>`
-page.
+stack.[^pat-03]
+:::
 
 **Pattern transfer.** On the step pages' readings the pattern is
 transferred by {ref}`ONOME <step-042>`: a plasma etch of the top oxide
@@ -210,15 +220,21 @@ class, followed by a wet clearing of the remaining oxide on the
 {ref}`wet bench <machine-wet-bench>` class, with the resist strip and
 pre-gate-oxide clean treated as part of that step. Regis et al. report a
 nitride etch "with high selectivity to oxide" of the kind such a stop
-needs.[^regis-1997] The Cypress integration patent describes the same
-combination — "the blocking layer 304C, and the dielectric layers 304A
-and 304B are dry etched, with the dry etch process stopping on the
-sacrificial dielectric layer 303. In a subsequent wet etch operation, an
-etchant, such as BOE, is employed to clear sacrificial dielectric layer
-303" — and notes that "the isotropic wet etch may undercut the masked
-region".[^pat-03] The undercut shrinks the island's overlap of the
-window, which is why the patent calls the dimensions and alignment of
-the two important (above).
+needs.[^regis-1997] The Cypress integration patent, which may still be
+in force, describes the same combination and notes what the wet step
+does to the masked region; the passage is in the collapsed note below
+this paragraph. The undercut it describes shrinks the island's overlap
+of the window, which is why the patent calls the dimensions and
+alignment of the two important (above).
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+The Cypress integration patent describes the same combination — "the
+blocking layer 304C, and the dielectric layers 304A and 304B are dry
+etched, with the dry etch process stopping on the sacrificial dielectric
+layer 303. In a subsequent wet etch operation, an etchant, such as BOE,
+is employed to clear sacrificial dielectric layer 303" — and notes that
+"the isotropic wet etch may undercut the masked region".[^pat-03]
+:::
 
 **Overlay.** The {ref}`ONOM <step-041>` page infers that the critical
 overlay of this mask is to the tunnel mask rather than to active, which
