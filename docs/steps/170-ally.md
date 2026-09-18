@@ -91,7 +91,12 @@ conditions in SKY130 are not public.
   systems,[^kizilyalli-1998] and the University of Illinois patent
   describes an example anneal "in an ambient of 10% deuterium in
   nitrogen for a period of about 1 hour" at "about 400° C".[^pat-deuterium-uiuc]
-  The isotope effect shows how directly the final sinter's hydrogen sets
+  Kizilyalli et al. note that earlier accounts of the isotope effect
+  "had been limited to CMOS structures with one-level of
+  dielectric/metal and to about a 10 fold improvement in reliability",
+  and report the first demonstration for multilevel metal/dielectric
+  systems.[^kizilyalli-1998] The isotope effect shows how directly the
+  final sinter's hydrogen sets
   the Si–H bonds at the interface. Whether SKY130 uses hydrogen or
   deuterium is not public; SkyWater lists hydrogen and forming
   gas.[^skw-01]
@@ -107,9 +112,16 @@ conditions in SKY130 are not public.
   Cook[^hughey-2003]).
 * **Side-effects that bound the recipe.** Hydrogen can deactivate boron
   acceptors in silicon (Sah, Sun and Tzou;[^sah-1983] Pankove et
-  al.[^pankove-1983]) and a hydrogen anneal affects the retention of
-  nitride charge-trapping memories (Maes, Usmani and Heyns[^maes-1981]),
-  relevant to the {term}`SONOS` cells of {ref}`ONO <step-040>`.
+  al.[^pankove-1983]).
+* **Nitride memory.** The flow's {term}`SONOS` cells store charge in a
+  nitride ({ref}`ONO <step-040>`), so hydrogen reaching that nitride
+  matters. Maes, Usmani and Heyns found that a post-nitridation
+  high-temperature hydrogen anneal *improved* retention in p-channel
+  MNOS transistors, cutting the threshold-voltage decay at 125 °C by
+  more than 20 % and attributing the gain to suppressed back-tunnelling
+  of holes to Si/SiO₂ interface states.[^maes-1981] Their anneal is not
+  this one, and what a 350–450 °C sinter through a finished five-metal
+  stack does to SKY130's cells is not public.
 
 Without `ALLY`, on this reading, the transistors would be tested with
 the interface-trap density and plasma damage left by the back end, and
@@ -127,10 +139,13 @@ an aluminium back end (SKY130's recipe is not public):
   before hydrogen is admitted, so that the exposed aluminium pads are not
   oxidised further (inference).
 * **Temperature and time.** 350–450 °C for tens of minutes (typical
-  industry values;[^txt-02] category page), below the temperatures at
-  which aluminium {term}`hillocks <hillock>` and voids grow rapidly and far below the
-  Al–Si eutectic; the University of Illinois example of about 400 °C for
-  about 1 hour is of this kind.[^pat-deuterium-uiuc]
+  industry values;[^txt-02] category page) — far below the 577 °C Al–Si
+  eutectic that caps any anneal on an aluminium back end,[^txt-02] but
+  inside the range where a confined aluminium film relaxes stress by
+  {term}`hillock` growth and {term}`stress-induced voiding`,[^yue-1985]
+  which is why the soak is short and the ramp-down controlled. The
+  University of Illinois example of about 400 °C for about 1 hour is of
+  this kind.[^pat-deuterium-uiuc]
 * **Sequence.** Load; nitrogen purge; ramp; hydrogen-bearing gas at
   temperature; soak; purge; controlled ramp-down to limit thermal-stress
   cycling of the metal; unload.
@@ -158,8 +173,12 @@ an aluminium back end (SKY130's recipe is not public):
   "Furnaces are all made by Aviza" and lists "H2 and forming gas alloy"
   among the furnace processes.[^skw-01] Strength: **strong** for the
   existence of a furnace alloy process; the assignment to `ALLY` is an
-  **inference** — it is the only anneal listed with H₂ or forming gas
-  (the furnaces' "H2 and forming gas alloy").
+  **inference** — it is the only *anneal* listed with H₂ or forming gas
+  (the furnaces' "H2 and forming gas alloy"). (SkyWater's asher entries
+  also carry hydrogen — "Iridia RF microwave, N2, O2, H2, CF4, NH3,
+  H2/N2, 40C-270C" and "Mattson Aspen2 … H2>N2, up to
+  250C"[^skw-01] — but those are downstream plasma strippers running at
+  or below 270 °C, not furnace anneals.)
   Dealer documentation describes the Aviza/SVG AVP-8000 as a vertical
   batch furnace for 150–200 mm wafers.[^aviza-avp]
 * **AG Associates Heatpulse 8808** — no H₂ or forming gas among its
@@ -233,8 +252,9 @@ an aluminium back end (SKY130's recipe is not public):
   nitride, a source within the stack.[^lanford-1978]
 * Sah, Sun and Tzou, *Appl. Phys. Lett.* 1983, and Pankove et al., *Phys.
   Rev. Lett.* 1983 — hydrogen deactivation of boron.[^sah-1983][^pankove-1983]
-* Maes, Usmani and Heyns, *J. Appl. Phys.* 1981 — hydrogen anneals and
-  nitride-memory retention.[^maes-1981]
+* Maes, Usmani and Heyns, *J. Appl. Phys.* 1981 — a post-nitridation
+  hydrogen anneal that improved MNOS memory retention, a different
+  anneal from this one.[^maes-1981]
 * Learn, *J. Electrochem. Soc.* 1976 — aluminium metallisation and its
   processing.[^learn-1976]
 * Yue, Funsten and Taylor, IRPS 1985, and Hughey and Cook, MRS 2003 —
@@ -251,8 +271,9 @@ an aluminium back end (SKY130's recipe is not public):
 * Whether the anneal is a batch furnace process or single-wafer is not
   public; the furnace reading rests on SkyWater's "H2 and forming gas
   alloy" entry.[^skw-01]
-* How the SONOS cells' retention and programming window are protected
-  against the hydrogen of this anneal is not public.
+* What this anneal does to the SONOS cells' retention and programming
+  window is not public; the one public measurement of a hydrogen
+  anneal on a nitride memory reports an improvement.[^maes-1981]
 
 <!-- footnotes -->
 
