@@ -98,7 +98,7 @@ deep-dive entries per step page and twelve per category page
   - [x] 107–117 — reviewed, 33 findings fixed (two papers cited for what they do not report, an ammonia-filtered track claim the tool list does not make, the material beside a contact at zero enclosure), verified with follow-ups and merged 2026-09-18
   - [x] 118–134 — reviewed, 17 findings fixed (a via called wider than the contact when it is narrower, solvents attributed to the wrong tool list, a patent filing date), recurring errors swept on pages outside the range, verified with follow-ups and merged 2026-09-18
   - [x] 135–148 — reviewed, 28 findings fixed (a phrase quoted from a patent that does not contain it, a MiM patent construction, the capacitor cross-section label used as evidence), seven metal-cap findings deferred to the dedicated sweep, verified with follow-ups and merged 2026-09-18
-  - [~] 149–163 — reviewed, fix round running
+  - [x] 149–163 — reviewed, 33 findings fixed (via-4 fill and the S8PIR reading rest on more of the public evidence, two abstracts that had become retrievable), 11 metal-cap findings deferred to the dedicated sweep, verified with follow-ups and merged 2026-09-18
   - [~] 164–171 — reviewed, fix round running
 - [ ] Conflict review across pages (consistent thicknesses, names, order)
 - [ ] Provenance review — repeat after each batch
