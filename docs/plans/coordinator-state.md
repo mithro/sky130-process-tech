@@ -58,3 +58,11 @@ Phase 4 plan: twelve module batches (the Phase 2 groups in `TASKLOG.md`). Per ba
 7. Patent index coverage round on `topic/index-patents-coverage` once the patent search site stops answering with a bot check (alternative: EPO linked data as the discovery source).
 8. Build polish: tracked lock file and frozen export for the hosted
    build, checker jobs before the build.
+
+## Notes
+
+* 2026-09-18: pushes hung because the forwarded SSH agent socket stopped
+  answering once the owner's terminal went away. The repository has its
+  own key file configured for the remote's host alias, so the local git
+  config now sets `core.sshCommand` to ssh with `IdentityAgent=none`.
+  Remove that setting if the key is ever moved back into an agent.
