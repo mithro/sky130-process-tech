@@ -96,8 +96,9 @@ An industry-generic well/channel activation anneal for a 200 mm,
   surface; a pure inert ambient avoids growing oxide (category page).
 * **Temperature and time.** Published well anneals of the era: "an
   annealing at 1000 C for 10 sec in an RTA (Rapid Thermal Anneal)
-  apparatus", after which "the gate insulating layer is formed on the N
-  well and P well regions by a thermal oxidation";[^pat-well-hynix] in
+  apparatus", after which "the gate insulating layer … is formed on the
+  N Well and P Well regions … by a thermal oxidation or CVD (Chemical
+  Vapor Deposition) method";[^pat-well-hynix] in
   older flows a well anneal "at approximately 900° C. in a neutral
   ambient such as nitrogen for approximately 30 minutes" (the patent does
   not name the tool).[^pat-vt-lsi] A
@@ -145,8 +146,9 @@ An industry-generic well/channel activation anneal for a 200 mm,
   applications[^ag-8800] (the reseller's family specification PDF gives, in its
   Heatpulse 8108 section, the same 400–1200 °C range, a programmable
   1–180 °C/s ramp-up, a maximum ramp-down of 150 °C/s and ±5 °C
-  uniformity across a 150 mm wafer at 1150 °C; its Heatpulse 4100
-  section differs: 400–1300 °C, 10–200 °C/s ramp-up).[^ag-8108]
+  uniformity across an 8-inch (200 mm) wafer at 1150 °C; its Heatpulse
+  4100 section differs: 400–1300 °C, 10–200 °C/s ramp-up and ±5 °C
+  across a 6-inch (150 mm) wafer).[^ag-8108]
 * **Aviza furnaces.** SkyWater's facilities page states "Furnaces are
   all made by Aviza"[^skw-01] with "Ar anneal to 1150C" and "N2 anneal
   to 1150C" — the batch alternative if the fab chose a furnace well
