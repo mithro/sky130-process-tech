@@ -89,7 +89,7 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   gives "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a
   concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a zero-tilt laterally
   doped channel implant made with the gate pillars as a self-aligned
-  mask,[^pat-vt-amd] and a halo sits in the same range.
+  mask,[^pat-vt-amd] and a halo sits in the same range (inference).
 * **Tilt and rotation.** Large tilt with two or four rotations to make
   the pocket symmetric[^pat-quad-tsmc] (20–45° is typical[^txt-04]); in
   the dense memory array the neighbouring control-gate lines {term}`shadow <shadowing>` a
