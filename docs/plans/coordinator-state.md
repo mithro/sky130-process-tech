@@ -36,13 +36,11 @@ standing rules are `agent-briefs.md`.
 
 | Branch | Agent task | Model | State |
 |---|---|---|---|
-| `topic/followups-masks` | second fix round from the review | Sonnet | running (2026-09-18) |
 | `topic/index-patents` | finish member records, discovery, generator, pages | Sonnet | running (2026-09-18) |
 | `topic/index-filings` | commit pending records, fill gaps, generator, pages | Sonnet | running (2026-09-18) |
 
 ## Queue
 
-1. Dual review (Sonnet and Opus) of `topic/followups-masks`, then merge.
 2. Dual review of the patent and filings indexes, fix, merge.
 3. Step-page links to the patent, paper and filings indexes.
 4. Paper index second round (remaining searches, held full-text checks).
