@@ -321,17 +321,17 @@ def map_keys_and_labels(fams: list[Restricted], page_text: dict[Path, str]) -> N
     matcher = Matcher(fams)
     inv = inventory_entries(page_text.get(INVENTORY, ""))
     for key, (_lines, para) in inv.items():
-        for _m, fam, kind, _v in matcher.finditer(flatten(para)[0]):
+        for _m, owners, kind, _v in matcher.finditer(flatten(para)[0]):
             if kind == "number":
-                fam.keys.add(key)
-                fam.labels.add(key.lower())
+                owners[0].keys.add(key)
+                owners[0].labels.add(key.lower())
     for path, text in page_text.items():
         if path == INVENTORY:
             continue
         for label, (_l, _ls, body) in footnote_defs(text).items():
-            for _m, fam, kind, _v in matcher.finditer(flatten(body)[0]):
+            for _m, owners, kind, _v in matcher.finditer(flatten(body)[0]):
                 if kind == "number":
-                    fam.labels.add(label)
+                    owners[0].labels.add(label)
 
 
 # --------------------------------------------------------------------------
@@ -368,11 +368,22 @@ class Matcher:
                 m = re.match(r"^[A-Z]{2}(\d+)[A-Z]?\d?$", n)
                 if m:
                     self.by_number.setdefault(m.group(1), fam)
-        self.titles: list[tuple[str, re.Pattern, Restricted]] = []
+        # sibling families often share a title, so a title match names every
+        # restricted family that carries it: the citation is legitimate if
+        # any one of them owns the line.
+        shared: dict[str, list[Restricted]] = {}
+        for fam in fams:
+            for tt, _pat in fam.title_res:
+                shared.setdefault(tt.lower(), []).append(fam)
+        self.titles: list[tuple[str, re.Pattern, tuple[Restricted, ...]]] = []
+        seen: set[str] = set()
         for fam in fams:
             for tt, pat in fam.title_res:
+                if tt.lower() in seen:
+                    continue
+                seen.add(tt.lower())
                 anchor = max(tt.replace("-", " ").split(), key=len).lower()
-                self.titles.append((anchor, pat, fam))
+                self.titles.append((anchor, pat, tuple(shared[tt.lower()])))
 
     def finditer(self, flat: str):
         for m in CANDIDATE_RE.finditer(flat):
@@ -380,13 +391,13 @@ class Matcher:
                                             m.group("kind"))
             fam = self.by_number.get(full) or self.by_number.get(digits)
             if fam is not None:
-                yield m, fam, "number", full
+                yield m, (fam,), "number", full
         low = flat.lower()
-        for anchor, pat, fam in self.titles:
+        for anchor, pat, owners in self.titles:
             if anchor not in low:
                 continue
             for m in pat.finditer(flat):
-                yield m, fam, "title", m.group(0)
+                yield m, owners, "title", m.group(0)
 
 
 def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Restricted],
@@ -423,10 +434,11 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
             f"{fam.representative} ({fam.id}) outside a collapsed block")
 
     # (b) publication numbers, (c) titles
-    for m, fam, kind, _value in matcher.finditer(flat):
+    for m, owners, kind, _value in matcher.finditer(flat):
         lineno = line_of(m.start())
-        if lineno in inside or lineno in own_lines.get(fam.id, ()):
+        if lineno in inside or any(lineno in own_lines.get(f.id, ()) for f in owners):
             continue
+        fam = owners[0]
         problems.append(
             f"{rel}:{lineno}: {kind} of {fam.representative} ({fam.id}) "
             f"outside a collapsed block: {flat[m.start():m.end()][:60]!r}")
@@ -450,9 +462,10 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
         tflat = flatten(title)[0]
         if "in force" not in tflat.lower():
             continue
-        for _m, fam, kind, _v in expired.finditer(tflat):
+        for _m, owners, kind, _v in expired.finditer(tflat):
             if kind != "number":
                 continue
+            fam = owners[0]
             reverse.append(
                 f"{rel}:{start}: collapsed note for {fam.representative} "
                 f"({fam.id}), now shown as expired — it can be opened up")
@@ -461,9 +474,10 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
         bflat = flatten(body)[0]
         if not FLAG_RE.search(bflat):
             continue
-        for _m, fam, kind, _v in expired.finditer(bflat):
+        for _m, owners, kind, _v in expired.finditer(bflat):
             if kind != "number":
                 continue
+            fam = owners[0]
             reverse.append(
                 f"{rel}:{lineno}: in-force flag on [^{label}] for "
                 f"{fam.representative} ({fam.id}), now shown as expired")
@@ -472,9 +486,10 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
         bflat = flatten(body)[0]
         if not FLAG_RE.search(bflat):
             continue
-        for _m, fam, kind, _v in expired.finditer(bflat):
+        for _m, owners, kind, _v in expired.finditer(bflat):
             if kind != "number":
                 continue
+            fam = owners[0]
             reverse.append(
                 f"{rel}:{min(lines)}: in-force flag on inventory entry {key} "
                 f"for {fam.representative} ({fam.id}), now shown as expired")
