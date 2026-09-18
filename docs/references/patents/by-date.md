@@ -63,7 +63,7 @@ first, and then by status.
 * {ref}`US 5,257,926 A <patent-gp25202080>` — Fast, safe, pyrogenic external torch assembly (1991-12-17)
 * {ref}`US 5,406,110 A <patent-gp25218688>` — Resurf lateral double diffused insulated gate field effect transistor (1991-12-30)
 * {ref}`US 5,303,558 A <patent-gp25448458>` — Thermal trap for gaseous materials (1992-07-30)
-* {ref}`US 5,578,362 A <patent-gp25461879>` — unknown
+* {ref}`US 5,578,362 A <patent-gp25461879>` — Polymeric polishing pad containing hollow polymeric microelements (1992-08-19)
 * {ref}`US 5,693,203 A <patent-gp27479272>` — Sputtering target assembly having solid-phase bonded interface (1992-09-29)
 * {ref}`US 5,346,578 A <patent-gp25518280>` — Induction plasma source (1992-11-04)
 * {ref}`US 5,442,828 A <patent-gp25529547>` — Double-sided wafer scrubber with a wet submersing silicon wafer indexer (1992-11-30)
@@ -101,7 +101,7 @@ first, and then by status.
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
-* {ref}`US 6,170,428 B1 <patent-gp24728963>` — unknown
+* {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
 * {ref}`US 6,033,943 A <patent-gp24820519>` — Dual gate oxide thickness integrated circuit and process for making same (1996-08-23)
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 6,183,354 B1 <patent-gp24997773>` — Carrier head with a flexible membrane for a chemical mechanical polishing system (1996-11-08)
@@ -188,7 +188,7 @@ first, and then by status.
 * {ref}`US 7,055,532 B2 <patent-gp34678118>` — Method to remove fluorine residue from bond pads (2003-12-18)
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
-* {ref}`US 7,449,416 B2 <patent-gp35448183>` — unknown
+* {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 7,705,268 B2 <patent-gp36337293>` — in force
 * {ref}`US 7,501,352 B2 <patent-gp37073778>` — Method and system for forming an oxynitride layer (2005-03-30)
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
@@ -288,6 +288,7 @@ first, and then by status.
 * {ref}`US 5,257,926 A <patent-gp25202080>` — Fast, safe, pyrogenic external torch assembly (1991-12-17)
 * {ref}`US 5,406,110 A <patent-gp25218688>` — Resurf lateral double diffused insulated gate field effect transistor (1991-12-30)
 * {ref}`US 5,303,558 A <patent-gp25448458>` — Thermal trap for gaseous materials (1992-07-30)
+* {ref}`US 5,578,362 A <patent-gp25461879>` — Polymeric polishing pad containing hollow polymeric microelements (1992-08-19)
 * {ref}`US 5,693,203 A <patent-gp27479272>` — Sputtering target assembly having solid-phase bonded interface (1992-09-29)
 * {ref}`US 5,346,578 A <patent-gp25518280>` — Induction plasma source (1992-11-04)
 * {ref}`US 5,442,828 A <patent-gp25529547>` — Double-sided wafer scrubber with a wet submersing silicon wafer indexer (1992-11-30)
@@ -325,6 +326,7 @@ first, and then by status.
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
+* {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
 * {ref}`US 6,033,943 A <patent-gp24820519>` — Dual gate oxide thickness integrated circuit and process for making same (1996-08-23)
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 6,183,354 B1 <patent-gp24997773>` — Carrier head with a flexible membrane for a chemical mechanical polishing system (1996-11-08)
@@ -408,6 +410,7 @@ first, and then by status.
 * {ref}`US 7,055,532 B2 <patent-gp34678118>` — Method to remove fluorine residue from bond pads (2003-12-18)
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
+* {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 7,501,352 B2 <patent-gp37073778>` — Method and system for forming an oxynitride layer (2005-03-30)
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
@@ -454,8 +457,5 @@ first, and then by status.
 
 ### Status unknown
 
-* {ref}`US 5,578,362 A <patent-gp25461879>` — unknown
-* {ref}`US 6,170,428 B1 <patent-gp24728963>` — unknown
-* {ref}`US 7,449,416 B2 <patent-gp35448183>` — unknown
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown

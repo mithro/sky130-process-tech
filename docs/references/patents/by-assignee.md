@@ -90,7 +90,7 @@ The current assignee, where different, is shown alongside.
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
 * {ref}`US 5,738,574 A <patent-gp24192580>` — Continuous processing system for chemical mechanical polishing (1995-10-27)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
-* {ref}`US 6,170,428 B1 <patent-gp24728963>` — unknown
+* {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
 * {ref}`US 6,183,354 B1 <patent-gp24997773>` — Carrier head with a flexible membrane for a chemical mechanical polishing system (1996-11-08)
 * {ref}`US 5,812,403 A <patent-gp25007997>` — Methods and apparatus for cleaning surfaces in a substrate processing system (1996-11-13)
 * {ref}`US 6,121,161 A <patent-gp25360177>` — Reduction of mobile ion and metal contamination in HDP-CVD chambers using chamber seasoning film depositions (1997-06-11)
@@ -108,7 +108,7 @@ The current assignee, where different, is shown alongside.
 ## Axcelis Technologies Inc (now Lam Research Corp)
 
 * {ref}`US 6,653,803 B1 <patent-gp24331908>` — Integrated resonator and amplifier system (2000-05-30)
-* {ref}`US 7,449,416 B2 <patent-gp35448183>` — unknown
+* {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 
 ## Bell Telephone Laboratories Inc (now AT&T Inc)
 
@@ -358,7 +358,7 @@ The current assignee, where different, is shown alongside.
 
 ## Rodel Inc (now DuPont Electronic Materials Holding Inc)
 
-* {ref}`US 5,578,362 A <patent-gp25461879>` — unknown
+* {ref}`US 5,578,362 A <patent-gp25461879>` — Polymeric polishing pad containing hollow polymeric microelements (1992-08-19)
 
 ## Round Rock Research LLC
 

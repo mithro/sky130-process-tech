@@ -100,9 +100,23 @@ Per member:
    as abandoned, withdrawn or ceased, or if 20 years from its filing
    date have passed. One shown as `Granted` is covered by its patent,
    which is a member of the same family, and has no term of its own.
-   An application still pending (for example a Japanese divisional)
-   is bounded by 20 years from the filing date shown, which may be
-   later than the parent's; the family then stays `unknown`.
+   An application still pending is bounded by 20 years from the
+   earliest non-provisional filing date recorded anywhere in its own
+   family, not necessarily its own filing date: a divisional or
+   continuation is deemed filed on the original application's filing
+   date for term purposes. For a Japanese divisional this is Patent
+   Act (Act No. 121 of 1959) Art. 44(2), "a new patent application is
+   deemed to have been filed at the time of filing of the original
+   patent application", read with Art. 67(1), "the term of a patent
+   ends 20 years after the filing date of the patent application"
+   (English translation, Japanese Law Translation database, Ministry
+   of Justice, `https://www.japaneselawtranslation.go.jp/en/laws/view/4097`,
+   retrieved 2026-09-18); a US continuation's term is likewise measured
+   from the earliest non-provisional US filing in its chain (35 U.S.C.
+   154(a)(2)). Using the family's earliest recorded member filing date
+   is therefore the generically correct bound, not the member's own
+   filing date; if that bound is already past, the family is bounded
+   ended even though the application itself is shown pending.
 3. A listed-only member is bounded by the family's earliest priority
    date + 21 years (12-month priority period + 20-year term); for a US
    grant on an application filed before 1995-06-08 the bound is the
