@@ -63,8 +63,8 @@ The PDK's 40° angle[^pdk-03] is therefore the strongest public hint
 about the nature of the SKY130 5 V NMOS: not a plain LDD but a
 gate-overlapped, tilt-implanted drain. The PDK's Table F2b marks
 `HVNTM` "created" for `nfet_g5v0d10v5`, the ESD NMOS built on it, the
-5 V and 3.3 V native NMOS, the 16 V drain-extended NMOS and several HV
-diodes, resistors and varactors,[^pdk-06] so this is where those
+5 V and 3.3 V native NMOS, the 16 V drain-extended NMOS, four HV
+diodes, an HV n-diffusion resistor and an HV varactor,[^pdk-06] so this is where those
 devices' n-type extension is defined, all on the 110 Å
 oxide;[^pdk-hv] how the implant is placed relative to a drain-extended
 device's drift well is not stated. The
