@@ -7,7 +7,11 @@ Families grouped by original assignee, as shown by Google Patents
 (its caveat applies: the lists "may be inaccurate"). Cypress
 Semiconductor, SkyWater Technology and Infineon Technologies come
 first; a family with several original assignees appears under each.
-The current assignee, where different, is shown alongside.
+The current assignee, where different, is shown alongside. Google's
+"original assignee" is sometimes the entity's current, renamed name
+rather than the name on the published document itself (five cases
+found by the round-1 review's cross-check against EPO data); a
+heading here is not necessarily the name printed on the patent.
 
 ## Cypress Semiconductor Corp (now DSS Technology Management Inc, Hd Silicon Solutions LLC, Longitude Flash Memory Solutions Ltd, Monterey Research LLC)
 
@@ -213,7 +217,7 @@ The current assignee, where different, is shown alongside.
 
 * {ref}`US 6,455,402 B2 <patent-gp19572018>` — Method of forming retrograde doping file in twin well CMOS device (1999-01-22)
 
-## Individual (now Applied Materials Inc, Kokusai Semiconductor Equipment Corp, Monterey Research LLC, Persys Technology Ltd, Texas Instruments Inc)
+## No assignee recorded at grant (Google Patents "Individual")
 
 * {ref}`US 5,257,926 A <patent-gp25202080>` — Fast, safe, pyrogenic external torch assembly (1991-12-17)
 * {ref}`US 6,020,614 A <patent-gp21950172>` — Method of reducing substrate noise coupling in mixed signal integrated circuits (1998-03-25)

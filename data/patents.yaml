@@ -16340,6 +16340,12 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-WORLEY-2000.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US6020614A/en
+  notes:
+  - 'Round-1 review finding L9: Google Patents shows the original assignee as "Individual" (no assignee
+    recorded at grant) and this dataset found no USPTO assignment record naming a first assignee, unlike
+    the other four "Individual" families in this index. The USPTO assignment-search API is unreachable
+    from the environment this note was added in, so this remains an open question rather than a named
+    assignee.'
 - id: GP22109576
   family:
     source: Google Patents family ID
@@ -24670,6 +24676,11 @@ families:
     or Google-side rendering variation, not a dataset defect; not independently re-verified because Google
     Patents is unreachable from the environment this note was added in. Does not change this family''s
     expired/collapsed state.'
+  - 'Round-1 review finding L4: US7429538B2, CN101208782B, JP5072837B2 and KR100993124B1 are all shown
+    with status Active in this dataset, yet the family is correctly marked expired: true, because each
+    one''s own recorded adjusted/anticipated expiration date (2026-05-25/26) is in the past relative to
+    today even though the public database has not yet updated its Active/Expired badge. The public
+    databases lag reality here; check the linked record for the current badge before relying on it.'
 - id: GP37568077
   family:
     source: Google Patents family ID
@@ -24860,6 +24871,11 @@ families:
     it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified
     because Google Patents is unreachable from the environment this note was added in. Does not change
     this family''s expired/collapsed state.'
+  - 'Round-1 review finding L4: US7375002B2 is shown with status Active in this dataset, yet the family
+    is correctly marked expired: true, because its own recorded adjusted expiration date (2026-07-07)
+    is in the past relative to today even though the public database has not yet updated its Active/
+    Expired badge. The public databases lag reality here; check the linked record for the current badge
+    before relying on it.'
 - id: GP38711248
   family:
     source: Google Patents family ID
