@@ -131,21 +131,21 @@ human/agent read the fetched copy against the summary and quotes).
 
 | Id | Severity | Status | Note |
 |---|---|---|---|
-| FIL-R1-01 | High | open | Coverage: add the missing Cypress Minnesota-fab fiscal years or declare the gap. Being worked in this session (task C). |
-| FIL-R1-02 | Medium | open | Add `notes` on both the 20-year and 26-year captive-period records cross-referencing the other figure. |
-| FIL-R1-03 | Medium | open | Fix `tools/gen_filings.py`'s `requires-python` / f-string mismatch. |
-| FIL-R1-04 | Medium | open | Make `--online` case-sensitive and require ellipsis fragments in order within a bounded span. |
-| FIL-R1-05 | Medium | open | Check `location` against the nearest heading/Item marker and check `period.end`/`company` against the document text where feasible. |
-| FIL-R1-06 | Medium | open | Record the missing auditor reports (or mark unread) on `audits.md`. |
-| FIL-R1-07 | Low | open | Drop the duplicated trailing full stop on "Related pages" lines. |
-| FIL-R1-08 | Low | open | Order the "By company" counts line by `COMPANY_GROUPS`, not first-appearance. |
-| FIL-R1-09 | Low | open | Assert `COMPANY_GROUPS` covers every `company_key`, like `REL_GROUPS` and `doctype_group`. |
-| FIL-R1-10 | Low | open | Reword the two timeline headlines to what their cited filings actually support. |
-| FIL-R1-11 | Low | open | `--online`: fail when a record has no fetchable source; record a fetch timestamp per cache entry and re-fetch stale entries. |
-| FIL-R1-12 | Low | open | Render `parent` (amends/filed-with) and consider `period.label` for 8-Ks. |
-| FIL-R1-13 | Low | open | Add a "known filings without a public copy" section to the generated index. |
-| FIL-R1-14 | Low | open | Note in `by-year.md`'s introduction that some `filed` dates are signature dates, not filing dates. |
-| FIL-R1-15 | Low | open | Populate `supplier-names-skywater` / `ad-hoc-announcement` where a copy can be found, else mark reserved in the design doc. |
+| FIL-R1-01 | High | mostly fixed | Added 14 Cypress records (FY1993, 1995-1998, 2001, 2002, 2005, 2008-2013). Remaining Minnesota-fab-era years (FY1991-1992, 1994, 1999-2000, 2019, plus the previously-known EDGAR-only 2003 10-Q/A, 2019 merger 8-K/DEFM14A, 2020 10-K/A and 15-12B) are declared with reasons in `known_gaps`, rendered on `index.md`. FY2014 has a public copy but says nothing about the Minnesota fab, so it stays a declared gap rather than a record, per design section 1's inclusion rule. |
+| FIL-R1-02 | Medium | fixed | Added `notes` cross-referencing the other figure on all four records (`skywater-drs-2020-08-12`, `skywater-s-1-2021-03-22`, `skywater-10-k-2025-03-14`, `skywater-10-k-2026-03-11`). |
+| FIL-R1-03 | Medium | fixed | (inherited from the earlier session) `f"(filing-{r['id']})="`, no nested f-string. |
+| FIL-R1-04 | Medium | fixed | (inherited) case-sensitive `normalise()`; `fragments_match_in_order()` requires ellipsis fragments in order within `FRAGMENT_MAX_GAP` (4000 chars). |
+| FIL-R1-05 | Medium | fixed | (inherited, with a bug found and fixed this session) `check_location()` and `check_metadata()` added. `_drop_toc_runs`'s 700-character gap threshold falsely dropped three genuine, tightly-spaced Part III item headings on `skywater-10-k-2026-03-11` (Items 10-15 are one-sentence stubs there), misreporting the Item 15 exhibit-index quote as nearest Item 12; tightened to 200 characters (real TOC entries in the record checked are all under 150 characters apart) and re-verified clean. |
+| FIL-R1-06 | Medium | fixed | Added the auditor's report for all 15 records the reviewer listed (2 Cypress, 7 Infineon, 2 D-Wave, QuickLogic, IonQ, 2 Weebit Nano); `audits.md` now lists 43 reports (was 13). |
+| FIL-R1-07 | Low | fixed | (inherited) `related_docs` line no longer appends a second full stop. |
+| FIL-R1-08 | Low | fixed | (inherited) `company_keys_in_order()` drives the "By company" counts line. |
+| FIL-R1-09 | Low | fixed | (inherited) `company_keys_in_order()` raises `SystemExit` on an uncovered `company_key`. |
+| FIL-R1-10 | Low | fixed | Reworded both timeline headlines to what the cited filing itself supports (see session log). |
+| FIL-R1-11 | Low | partially fixed | (inherited) `--online` now reports "no fetchable copy" instead of silently skipping. Cache-staleness / re-fetch-after-N-days not implemented (declined for this session: no record's cached copy is known to have changed, and the 1-in-5 external link sample the reviewer ran already found every non-`sec.gov` URL live). |
+| FIL-R1-12 | Low | fixed | (inherited) `parent` renders as "Amends/filed with: {ref}`...`"; `period.label` still not rendered for 8-Ks (accepted as a minor cosmetic gap, not required by the design's entry format). |
+| FIL-R1-13 | Low | fixed | Added the `known_gaps` dataset list, checker validation and a "Known gaps" section on `index.md`, grouped by company. |
+| FIL-R1-14 | Low | fixed | (inherited) `by-year.md`'s introduction explains that some `filed` dates are signature dates. |
+| FIL-R1-15 | Low | declined for this session | `supplier-names-skywater` and `ad-hoc-announcement` remain unpopulated; finding a compliant (non-EDGAR) copy for either is genuinely new research, not a fix to existing records, and was out of time this session. Design doc section 7 now names them explicitly as not-yet-searched rather than leaving them silently empty. |
 
 Each row is updated to `fixed` (with what was done) or `declined` (with why) as the
 session works through them; see the session log below for detail.
