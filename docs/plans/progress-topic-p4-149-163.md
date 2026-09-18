@@ -1,0 +1,87 @@
+# Progress — topic/p4-149-163 (fixer for review-149-163.md)
+
+Source review: `tmp/p4/review-149-163.md`. Working Medium -> Low (no High
+findings are in this branch's scope; the sole High, X1, is deferred). Steps
+135-148 are another fixer's branch in verification; edits here stay inside
+149-163 and shared files are touched minimally.
+
+## Scope exclusion — metal-cap/barrier sweep
+
+Per coordinator instruction, the metal cap/barrier composition item
+(section 1 of the review: findings X1, X2, X3, X4, and the whole "metal
+cap / barrier composition" section) is NOT this branch's to fix — a
+dedicated cross-cutting sweep handles every page at once. Two more findings
+depend on the same TiW/TiN-cap-composition question or on how
+`[^cyp-qtp-123907]` is read, so they are deferred too: **153-L1** and
+**161-L1**. The sentences these concern are left untouched.
+
+## Findings
+
+| id | severity | status | note |
+|---|---|---|---|
+| X1 | High | deferred | metal-cap/barrier sweep — misattribution of `[^cyp-qtp-123907]` (149-wtial4.md:53-55 etc.) |
+| X2 | Medium | deferred | metal-cap/barrier sweep — S8P line of `[^cyp-qtp-123907]` as evidence for metal-5 TiW cap (161-wtial5.md:51-62) |
+| X3 | Medium | deferred | metal-cap/barrier sweep — Open questions on metal-4 cap uncertainty (149, 153, 155, 160) |
+| X4 | Low | deferred | metal-cap/barrier sweep — 0.845/0.8 and 1.26/1.2 arithmetic argument |
+| 149-L1 | Low | open | "antenna-rule table" vs *Criteria & Assumptions* naming (149, 155, 161, 163) |
+| 149-L2 | Low | open | Rocke & Schneegans (TiN paper) cited for a TiW cap (149, 152, 154, 161, 162) |
+| 149-L3 | Low | open | Al-Cu target/Cypress attribution missing footnote (149:158-159) |
+| 149-L4 | Low | open | Newport Fab/TSMC MiM patents — shared-electrode construction overstated (149:88-91) |
+| 150-M1 | Medium | open | step-name-as-evidence omission pattern (150, 149, 151, 161) |
+| 150-L1 | Low | open | missing pad identifiers for CV extraction (150:66-70) |
+| 150-L2 | Low | open | Van Huylenbroeck et al. — nitride vs ONO finding misstated (150:175-177) |
+| 150-L3 | Low | open | Chapple-Sokol miscited for a temperature window (150:196-198) |
+| 151-L1 | Low | open | via3.1a 0.8 µm square not mentioned (151, 159) |
+| 151-L2 | Low | open | per-contact via count stated as fact, not reading (151:100-103) |
+| 151-L3 | Low | open | Hartsough citation implies corroboration it can't give (151:36-40) |
+| 152-L1 | Low | open | CD-bias arithmetic convention unstated (152:77-79) |
+| 152-L2 | Low | open | alignment-target naming inconsistency within page (152:151-154) |
+| 153-M1 | Medium | open | "every capm plate tied to metal4" overstated vs 155's correct wording (153:78-83) |
+| 153-L1 | Low | deferred | metal-cap/barrier sweep — S8TNV-5R quote scope (153:31-33, :221) |
+| 153-L2 | Low | open | solvent-clean citation placement implies chemistry claim (153:144-150) |
+| 154-L1 | Low | open | CU-flagged rule range incomplete (154:40-43) |
+| 154-L2 | Low | open | uncited/unmarked cap2m-edge overlay claim (154:145-150) |
+| 155-M1 | Medium | open | collective gas-list phrasing attributes all gases to all tools (155, 163) |
+| 155-L1 | Low | open | two Cypress reports of different tech families conflated (155:38-41) |
+| 155-L2 | Low | open | "via-3 oxide beneath" misnames the dielectric (155, 163) |
+| 156-M1 | Medium | open | HDP quote dropped "doped and phos doped" qualifier (156:50-52) |
+| 156-L1 | Low | open | "oxide" stated as fact rather than reading (156:15,28,title area) |
+| 157-L1 | Low | open | SEZ223/Davinci vs "SEZ 223 / Da Vinci" spelling split within page (157:198) |
+| 157-L2 | Low | open | "industry-standard" slurry claim missing adjacent citation (157:20-22) |
+| 157-L3 | Low | open | no-plug-polish argument from step-list silence not marked as such (157:58-62) |
+| 158-L1 | Low | open | "PECVD TEOS" invents a deposition method not in either report (158:105-108) |
+| 158-L2 | Low | open | 650-750°C LPCVD window not clearly labelled as textbook value (158:114-116) |
+| 159-M1 | Medium | open | Skelly & Gruenke via-fill analogy ignores non-monotonic 2.8 µm result (159, 161) |
+| 159-L1 | Low | open | Le, Banerjee & McPherson EM finding is conditional, cited as unconditional (159:128-131) |
+| 159-L2 | Low | open | via4/via3 resistance-per-area residual left uncomputed (159:47-51) |
+| 160-M1 | Medium | open | Bui et al. cited beyond its published abstract (160:76-79) |
+| 160-L1 | Low | open | EKS265 silently read as "EKC265" without marking the reading (160:194-196) |
+| 161-L1 | Low | deferred | metal-cap/barrier sweep — 300 Å TiW analogue is top not lower metal (161:214-215) |
+| 161-L2 | Low | open | Kikuta review cited beyond its published abstract (161:87-89) |
+| 161-L3 | Low | open | plural "reports" with a single footnote (161:51-53) |
+| 162-M1 | Medium | open | S8PIR reading uses 3 of 5 Background features, omits the strongest argument (162, 161, 163) |
+| 162-L1 | Low | open | m4.4 probe-pad exemption asymmetry not noted (162:35-37) |
+| 162-L2 | Low | open | circular step-list-silence reasoning (162:108-114) |
+| 163-M1 | Medium | open | same as 155-M1, second page (163:134-136) |
+| 163-L1 | Low | open | via-4 aluminium-fill relationship asserted without explanation (163:186-187) |
+| 163-L2 | Low | open | 155/163 aluminium etch-rate implied rates inconsistent (163:119-122) |
+| EKC-ATTACH | (site-wide, in range) | open | EKC/EKS solvents unattached to "Batch Rotational" entry, within 149-163 (155:147, 160:145, 163:136, 160:195) — review §0 item, not excluded by coordinator, so checked/fixed here |
+
+## Site-wide items from the review left alone (per coordinator instruction)
+
+| item | status | note |
+|---|---|---|
+| `[^job-01]` job-listing citation, verbatim quotation | left alone | separate site-wide sweep |
+| Mattson Aspen II / Aspen2 spelling split | left alone | separate site-wide sweep |
+| "Gasonic PEP" spelling | no action | reviewer confirms this is the correct published string |
+
+## Checks before finishing
+
+- [ ] `uv run python tools/check_steps.py`
+- [ ] `uv run python tools/check_refs.py`
+- [ ] `uv run python tools/check_machines.py`
+- [ ] `uv run python tools/check_materials.py`
+- [ ] `uv run python tools/check_masks.py`
+- [ ] `uv run python tools/check_papers.py`
+- [ ] `uv run python tools/gen_papers.py --check`
+- [ ] `uv run sphinx-build -W -q -b html docs tmp/build-topic-p4-149-163`
