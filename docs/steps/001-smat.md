@@ -275,12 +275,20 @@ any product to a step.
   norms, not SkyWater data. Two indirect figures exist. The PDK's
   process assumptions give a "background concentration" of
   8 × 10¹⁴ cm⁻³ among the n-well entries (variable `NWBCONC`) of their
-  basic-parameters table without saying that it is the wafer doping.[^pdk-03] And the 20 V zero-Vt NMOS, whose P-well and
-  threshold implants are blocked,[^pdk-07] has a body-effect coefficient
-  of about 0.07 √V on SkyWater's test tile, which with a uniform-doping
-  model and the 11.3 nm electrical oxide thickness we extracted from the
-  tile's C–V data corresponds to an effective body doping of about 1.4 × 10¹⁵ cm⁻³ (our extraction
-  from the published measurements; see {ref}`PWBM <step-026>`).[^raw-data-hv-mosfets]
+  basic-parameters table without saying that it is the wafer doping.[^pdk-03] And the 20 V zero-Vt
+  NMOS, whose p-well and all Vt implants are blocked to reach a zero
+  VT,[^pdk-07] has a body-effect coefficient of about 0.07 √V on
+  SkyWater's test tile — the raw-data repository files the measurement
+  under the folder name `nfet_20v0_nvt`, but the {ref}`PWBM <step-026>`
+  page reads the pad's own geometry (a "2× 30/5.5" structure with its
+  body tied to `Psub`) as matching the PDK's zero-Vt e-test structure
+  rather than the native device's "2× 30/1.0", and reads it as the
+  zero-Vt (p-well-less) device despite the folder name — which with a
+  uniform-doping model and the 11.3 nm electrical oxide thickness we
+  extracted from the tile's C–V data corresponds to an effective body
+  doping of about 1.4 × 10¹⁵ cm⁻³ (our extraction from the published
+  measurements; see {ref}`PWBM <step-026>` for the geometry
+  argument).[^raw-data-hv-mosfets]
   Neither is a wafer specification, and neither gives the orientation.
 * **Bulk versus epitaxial.** SkyWater's "Bulk" entry[^skw-02] is the
   only public statement and it is a marketing table written years

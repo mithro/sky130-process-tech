@@ -16,7 +16,7 @@ Status values: open / fixed / declined.
 
 | Finding | Page(s) | Status | Note |
 |---|---|---|---|
-| 001-M1 | 001-smat | open | body-doping extraction attributed to wrong device |
+| 001-M1 | 001-smat | fixed | verified: PDK device-details page distinguishes `nfet_20v0_zvt` (p-well+Vt blocked) from `nfet_20v0_nvt` ("similar to isolated", Vt blocked); raw-data repo has no zvt folder. But `docs/steps/026-pwbm.md` and `docs/references/public-sources.md`'s RAW-DATA-HV-MOSFETS entry already resolve this: the measurement lives in the `nfet_20v0_nvt` folder but its pad geometry (2x30/5.5, `Psub` body) matches the PDK's zvt e-test structure, not nvt's (30/1.0). Fixed 001-smat.md to read it the same way as those two already-correct pages, rather than the reviewer's simpler "must be nvt" fix, which would have put 001-smat.md at odds with 026-pwbm.md and the inventory. |
 | 003-M1 | 003-isonit | open | nitride thickness lower bound unsupported |
 | 004-M1 | 004-fom | open | diff/tap -> cfom stated as fact, not inference |
 | 008-M1 | 008-dni | open | straggle claim wrong/uncited |
