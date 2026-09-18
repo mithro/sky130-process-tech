@@ -39,8 +39,8 @@ before being fixed or declined.
 | 052-L1 | Low | fixed | Noted the 0.33 µm test structures are narrower than the narrowest supported fixed width (rpm.1b) and at the poly.3 minimum, unlike the PDK's 0.35 µm e-test comparator. |
 | 053-L1 | Low | fixed | Confirmed via cached CSV: double space after "P+"/"P-" in the module header. Restored the exact spacing with a note. Shared with 056-L2. |
 | 053-L2 | Low | fixed | Reworded the Open question so it no longer reads "splits" as evidence of multiple implants (Common rule 2). |
-| 054-L1 | Low | open | |
-| 054-L2 | Low | open | |
+| 054-L1 | Low | fixed | Confirmed via OpenAlex: Fujimura 1991 measures ash rate/activation energy, not crust penetration. Reworded to what it actually measured. |
+| 054-L2 | Low | fixed | Cited fujimura-1989's residue finding (oxide of implanted species) instead of an unsourced "removes without difficulty" claim. |
 | 055-L1 | Low | open | |
 | 055-L2 | Low | open | |
 | 055-L3 | Low | open | |
