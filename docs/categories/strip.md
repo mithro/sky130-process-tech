@@ -152,9 +152,11 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 ## Typical consumables
 
 * **Gases**: O₂, N₂, {term}`forming gas` (H₂/N₂), CF₄, water vapour.
-* **Acids and bases**: 96–98 % sulfuric acid, 30 % hydrogen peroxide,
-  29 % ammonium hydroxide, 37 % hydrochloric acid, 49 % HF, 85 %
-  phosphoric acid; all semiconductor-grade (parts-per-trillion metals).
+* **Acids and bases**: concentrated sulfuric acid[^wiki-piranha] and
+  30 % hydrogen peroxide,[^wiki-piranha] 29 % ammonium hydroxide and
+  30 % hydrogen peroxide,[^wiki-rca] 37 % hydrochloric acid, 49 % HF,
+  85 % phosphoric acid; all semiconductor-grade (parts-per-trillion
+  metals).
 * **Solvents**: NMP, DMSO, hydroxylamine-based strippers, isopropanol
   for drying.
 * **Water**: ultrapure de-ionised water at 18 MΩ·cm with sub-ppb

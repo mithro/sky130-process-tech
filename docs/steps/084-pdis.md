@@ -145,7 +145,9 @@ fab (SKY130's recipe is not public):
   gases), for the two-step ash;[^skw-01][^fujimura-1994] **{ref}`CF₄ <material-etch-gases>`**, listed
   on the Iridia and Mattson ashers,[^skw-01] attacks the oxide and would,
   we infer, be omitted here.
-* **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** ({ref}`wet chemicals <material-wet-chemicals>`) for SPM;
+* **Sulphuric acid and hydrogen peroxide** (semiconductor-grade
+  concentrated acid and 30 % peroxide, the usual SPM
+  reagents[^wiki-piranha]) ({ref}`wet chemicals <material-wet-chemicals>`);
   **ammonium hydroxide** for SC-1; **hydrochloric acid** for
   SC-2.[^wiki-rca]
 * **{ref}`Ultrapure DI water <material-ultrapure-water>`**, **isopropanol**, **nitrogen**.
