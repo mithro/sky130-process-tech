@@ -345,15 +345,22 @@ def classify(
 ) -> str:
     hosts = hosts_in_chain(url, chain, final_url)
     blocked = any(is_blocked_host(h) for h in hosts)
-    permanent = any(code in (301, 308) for code, _ in chain)
-    has_redirect = bool(chain)
 
     if status == 0:
         return "blocked-to-scripts" if blocked else "dead"
     if blocked and status in (403, 401, 429, 999):
         return "blocked-to-scripts"
-    if is_doi and has_redirect and status == 403:
-        return "ok"  # resolves, access-controlled
+    if is_doi:
+        # The doi.org -> publisher hop is the DOI resolver doing its job, not
+        # a citation to fix: the citation stays "the DOI", forever, regardless
+        # of how the redirect happens to be coded today. Only the final
+        # outcome matters.
+        if 200 <= status < 400:
+            return "ok"
+        if status == 403:
+            return "ok"  # resolves, access-controlled
+        return "dead"
+    permanent = any(code in (301, 308) for code, _ in chain)
     if 200 <= status < 300:
         return "redirected-permanently" if permanent else "ok"
     return "dead"
@@ -678,6 +685,10 @@ Some claim.[^wiki-fick][^pdk-01]
         classify("https://doi.org/x", True, 403, "https://pub/x", [(302, "https://pub/x")], None) == "ok",
     )
     check(
+        "doi 301 redirect is ok, not redirected-permanently (the DOI is the permanent citation)",
+        classify("https://doi.org/x", True, 200, "https://pub/x", [(301, "https://pub/x")], None) == "ok",
+    )
+    check(
         "sec.gov 403 is blocked-to-scripts",
         classify("https://www.sec.gov/x", False, 403, "https://www.sec.gov/x", [], None)
         == "blocked-to-scripts",
@@ -724,10 +735,31 @@ def main() -> int:
     ap.add_argument("--list-hosts", action="store_true", help="print pending-check counts per host and exit")
     ap.add_argument("--report", type=Path, default=None, help="write the Markdown report here (default: stdout)")
     ap.add_argument("--strict", action="store_true", help="exit non-zero if any token is classified dead")
+    ap.add_argument(
+        "--reclassify",
+        action="store_true",
+        help="recompute every cached entry's category from its stored HTTP result "
+        "(no network access) -- use after a classify() logic change, then rerun "
+        "normally to fill in anything newly dead (e.g. a missing wayback lookup)",
+    )
     args = ap.parse_args()
 
     if args.selftest:
         return run_selftest()
+
+    if args.reclassify:
+        cache = load_cache(args.cache)
+        changed = 0
+        for t, entry in cache.items():
+            new_cat = classify(
+                entry["url"], t.startswith("doi:"), entry["status"], entry["final_url"], entry["chain"], entry.get("error")
+            )
+            if new_cat != entry.get("category"):
+                changed += 1
+                entry["category"] = new_cat
+        save_cache(args.cache, cache)
+        print(f"reclassified {len(cache)} entries, {changed} changed", file=sys.stderr)
+        return 0
 
     reg = build_registry()
     tokens = reg.tokens()
