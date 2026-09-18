@@ -21,17 +21,17 @@ occurrence is checked and fixed if needed.
 | 112-M1 | Medium | fixed | Redid the arithmetic (0.125 ohm/sq x 0.32um = 4.0 uOhm-cm) and confirmed sputtered Al-0.5%Cu is typically ~3 uOhm-cm and that Ti/TiW conduct in parallel (lowering, not raising, apparent resistivity) -- the original reasoning had both points backwards. Reworded per review's fix. |
 | 114-M1 | Medium | fixed | Confirmed nojiri-2015 is already used elsewhere on the page (dry-etch textbook, industry-typical per rule 3); attached it to the two OES wavelengths in place of the bawolek-1987 citation that was explicitly disclaimed as general. |
 | 115-M1 | Medium | fixed | Confirmed tmp/patent-cache/US6914016B2.html abstract: single-step fluorine-assisted HDP deposition above 450C, fluorine <1 at.%, not a deposition/etch sequence (that is US 6,030,881/pat-hdp-novellus, whose abstract does say "a sequence of deposition and etch"). Reworded both Deep dive bullets per review's fix; body citations at lines 74/120 already correct, left alone. |
-| 107-L1 | Low | open | ct.3 quotation cut short without ellipsis and drops the 0.170*L value. |
-| 107-L2 | Low | open | "152000 mOhm each" — PDK heads the column "Resistivity (mohms/sq)"; per-contact reading not marked. Recurs 108, 109, 110, 111. |
-| 107-L3 | Low | open | Category-page cross-reference is circular; add the actual evidence. |
-| 108-L1 | Low | open | Lam 10-K uncheckable (SEC 403, no Wayback); pair with the retrievable 2001 press release. |
+| 107-L1 | Low | fixed | Confirmed pdk-periphery.txt:1484 continues ct.3 with "…die seal ring where mcons are…" and value "0.170*L". Added the elision marker and value per review's fix. |
+| 107-L2 | Low | fixed | Confirmed pdk-rcx.txt:654 heads the column "Resistivity (mohms/sq)" for every row. Added the parenthetical on 107 and a pointing-back cross-reference on 108, 109, 110 and 111 (same fix as 111-L2). |
+| 107-L3 | Low | fixed | Confirmed categories/lithography.md:85-88 attributes the reading back to this page (round trip, no external evidence). Reworded per review's fix, naming the actual evidence (0.17/0.19um rules, ITRS 2001). |
+| 108-L1 | Low | fixed | Lam 10-K stays uncheckable (SEC 403, no contact address permitted, no Wayback copy) but is now paired with the retrievable lam-exelan 2001 press release already cited elsewhere on the page. |
 | 109-L1 | Low | open | AMAT PVD Metal film list omits "SiO2" from the source. Recurs 112. |
 | 109-L2 | Low | open | amat-endura 403; needs Wayback URL and 200mm-era framing reattributed. Recurs 112 (conflict 5). |
 | 110-L1 | Low | open | "multi-station Altus family" — source doesn't say "multi-station" (that's the Concept One-W). |
-| 110-L2 | Low | open | W-plug/electromigration sentence has no citation at all. |
+| 110-L2 | Low | fixed | Added [^domenicucci-1996] (Ti-AlCu-Ti lifetimes over two-level W stud structures, already the citation used for the same literature on 112/123) with the footnote definition added to the page. |
 | 110-L3 | Low | open | "qualified down to" is an unmarked reading of the PDK's CEFC value. |
 | 111-L1 | declined | open | JOB-01 site-wide sweep item; left alone per coordinator instruction. |
-| 111-L2 | Low | open | Same as 107-L2 (per-contact reading); fixed once on 107, pages point back. |
+| 111-L2 | Low | fixed | Same as 107-L2; added the same pointing-back cross-reference here. |
 | 112-L1 | Low | open | "excluding top metal" belongs to the S8P row only, not all three technologies. |
 | 112-L2 | Low | open | Quotation drops a space before the hyphen in "Al -0.5%Cu". Recurs 113, 114, 123. |
 | 112-L3 | Low | open | 10 wt% Ti is the film composition per the patent, not the target's. |
