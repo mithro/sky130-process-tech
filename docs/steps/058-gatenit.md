@@ -35,7 +35,10 @@ poly through gate etch, spacer formation and the source/drain
 implants, and is opened only where the local-interconnect contacts
 must reach the poly; this reference accordingly places the nitride
 cut ({ref}`NPCM <step-078>`/{ref}`NPCME <step-079>`) after the spacer
-etch ({ref}`SPE <step-077>`) and before the source/drain masks.
+etch ({ref}`SPE <step-077>`) and before the source/drain masks. The
+PDK's e-test table gives the poly sheet-resistance parameter as "poly
+sheet resistance, with NGNIT",[^pdk-07] a second public sign that the
+production poly is measured with a nitride on it.
 
 ## Step category
 
@@ -86,7 +89,12 @@ public evidence supports more than one of them:
   `npc` with a defined margin,[^pdk-periph] so their bodies remain
   capped and are contacted only at their ends through the cut; the
   cap is part of what makes the resistor's end resistance
-  reproducible.
+  reproducible. Tsang et al. describe a commercial high-value poly
+  resistor bank with exactly this construction — an LPCVD nitride
+  barrier over the poly lines — and trace a resistance shift to
+  hydrogen diffusing through eroded corners of that
+  nitride,[^tsang-2014] which is what a cap over a resistor body is
+  there to prevent.
 * **A stop layer.** This reference describes a polish over the poly
   ({ref}`CMPP <step-090>`) after the sacrificial {term}`PSG` deposition;
   a nitride on top of the poly is the natural polish stop for such a step, as
@@ -105,8 +113,13 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
   at roughly 700–800 °C and a few hundred mTorr (typical industry
   values, category page[^txt-02][^wiki-sin]); Roenigk and Jensen model
   the reactor,[^roenigk-1987] and Habraken and Kuiper review the film
-  properties.[^habraken-1994] The film is stoichiometric, dense, about
-  1 GPa tensile[^temple-boyer-1998] and deposits on both sides of the
+  properties.[^habraken-1994] The film is stoichiometric, dense and
+  strongly tensile — of the order of 1 GPa for stoichiometric LPCVD
+  nitride (typical industry value, {ref}`category-deposition`;[^txt-02]);
+  Temple-Boyer et al. measured ≈600 MPa for the lowest-stress
+  stoichiometric films in a silane/ammonia LPCVD process and showed
+  that the NH₃/SiH₄ ratio dominates the stress[^temple-boyer-1998] —
+  and it deposits on both sides of the
   wafer — one reason a {term}`backside film removal`
   ({ref}`BFR <step-060>`) follows. The deposition temperature would
   crystallise the amorphous gate film and begin activating its
@@ -216,6 +229,9 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
   sub-0.1 µm gate etch with hard masks and its limits.[^desvoivres-2000]
 * Wong et al. (IBM), IEDM 1988 — gate doping by source/drain implants,
   the route a capped gate forgoes.[^wong-1988]
+* Tsang et al., *IEEE TSM* 2014 — a commercial high-value poly
+  resistor bank capped by exactly this construction, and what goes
+  wrong when the cap's corners erode.[^tsang-2014]
 * Smith et al., *J. Electrochem. Soc.* 1990 — mechanism of PECVD SiNₓHᵧ
   deposition from NH₃/SiH₄.[^smith-1990]
 * Claassen et al., *J. Electrochem. Soc.* 1985 — PECVD nitride
@@ -225,7 +241,8 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 * Habraken and Kuiper, *Mater. Sci. Eng. R* 1994 — nitride and
   oxynitride film properties.[^habraken-1994]
 * Temple-Boyer et al., *J. Vac. Sci. Technol. A* 1998 — residual
-  stress of LPCVD nitride.[^temple-boyer-1998]
+  stress of LPCVD SiNₓ from silane and ammonia, ≈600 MPa for the
+  lowest-stress stoichiometric films.[^temple-boyer-1998]
 * Teasdale et al., *Electrochem. Solid-State Lett.* 2001 —
   single-wafer RTCVD nitride, a third route.[^teasdale-2001]
 * ITRS 2001, *Lithography* — reflectivity control and hard masks at
@@ -261,6 +278,8 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 [^pdk-03]: SkyWater PDK Authors, *Criteria & Assumptions*, SkyWater
     SKY130 PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>
+[^pdk-07]: SkyWater PDK Authors, *Device Details*, SkyWater SKY130 PDK
+    documentation. <https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^pat-oxime-amd]: D. K. Foote and S. Gupta (Advanced Micro Devices),
@@ -309,6 +328,12 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
     and B. Davari, "Doping of n⁺ and p⁺ polysilicon in a dual-gate CMOS
     process", *IEDM 1988 Technical Digest*, pp. 238–241.
     <https://doi.org/10.1109/IEDM.1988.32800>
+[^tsang-2014]: Y. Tsang, R. Shiono, G. Pfeffer and S. Kwan,
+    "Characterization and Understanding of High Valued Polysilicon
+    Resistor Resistance Variation Across a Resistor Bank With Parallel
+    Resistor Fingers", *IEEE Transactions on Semiconductor
+    Manufacturing* **27**(2), 294–300 (2014).
+    <https://doi.org/10.1109/TSM.2014.2311375>
 [^smith-1990]: D. L. Smith, A. S. Alimonda, C.-C. Chen, S. E. Ready and
     B. Wacker, "Mechanism of SiNₓHᵧ Deposition from NH₃-SiH₄ Plasma",
     *Journal of The Electrochemical Society* **137**(2), 614–623 (1990).

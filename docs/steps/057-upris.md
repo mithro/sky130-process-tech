@@ -50,7 +50,11 @@ the surface also matters for the film that is deposited on it. A silicon
 nitride deposited by {term}`LPCVD` or PECVD on silicon nucleates and adheres
 well; on a contaminated or rough surface it can blister or deposit
 non-uniformly. A thin, uniform chemical oxide under the cap is harmless,
-and LPCVD nitride's tensile stress of order 1 GPa[^temple-boyer-1998] is
+and a strongly tensile film — of the order of 1 GPa for stoichiometric
+LPCVD nitride (typical industry value[^txt-02]; Temple-Boyer et al.
+measured ≈600 MPa for the lowest-stress stoichiometric films in their
+silane/ammonia LPCVD process and found the NH₃/SiH₄ ratio to be the
+dominant parameter[^temple-boyer-1998]) — is
 one of the film-stress problems Hu reviews,[^hu-1991] so the surface it
 is deposited on should at least be clean and uniform. The clean here is
 therefore designed to leave that oxide, not remove it — an inference
@@ -169,9 +173,11 @@ clean, for a 200 mm, 130 nm-era fab:
   SC-1.[^lee-kt-1999]
 * Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature cleaning as
   the alternative to hot RCA steps.[^ohmi-1996]
-* Hu, *J. Appl. Phys.* 1991, and Temple-Boyer et al., *J. Vac. Sci.
-  Technol. A* 1998 — nitride film stress and why a thin oxide under a
-  nitride is welcome.[^hu-1991][^temple-boyer-1998]
+* Hu, *J. Appl. Phys.* 1991 — nitride film stress and why a thin
+  oxide under a nitride is welcome.[^hu-1991] Temple-Boyer et al.,
+  *J. Vac. Sci. Technol. A* 1998 — ≈600 MPa for the lowest-stress
+  stoichiometric silane/ammonia LPCVD films, and the NH₃/SiH₄ ratio as
+  the dominant stress parameter.[^temple-boyer-1998]
 * Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
   Technology* — pre-deposition cleaning and drying.[^reinhardt-2008]
 * Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor

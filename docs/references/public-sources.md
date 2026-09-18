@@ -5854,7 +5854,7 @@ Resistance Variation Across a Resistor Bank With Parallel Resistor
 Fingers", *IEEE Transactions on Semiconductor Manufacturing* **27**(2),
 294–300 (2014). <https://doi.org/10.1109/TSM.2014.2311375> Resistance
 variation across banks of high-value poly resistors, a modern
-manufacturing view. Used on steps 049, 052, 055 and 056. Tier: deep
+manufacturing view. Used on steps 049, 052, 055, 056 and 058. Tier: deep
 dive.
 Also used on the RPM, RRPM and URPM mask pages.
 
