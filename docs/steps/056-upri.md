@@ -209,8 +209,10 @@ An industry-generic light poly-resistor implant for a 200 mm,
   of poly resistors.[^chen-2000]
 * Tsang et al., *IEEE TSM* 2014 — variation of high-value poly
   resistors in manufacturing.[^tsang-2014]
-* Wright et al., *J. Vac. Sci. Technol. B* 2010 — high-sheet-resistance
-  low-TCR films.[^wright-2010]
+* Wright et al., *J. Vac. Sci. Technol. B* 2010 — rf-sputtered
+  Cr–Si–B–SiO₂/Al₂O₃ thin-film resistors reaching 20 kΩ/sq at
+  <200 ppm/°C: the non-poly alternative route to a
+  high-sheet-resistance, low-TCR film.[^wright-2010]
 * Hook et al., *IEEE TED* 2003 — straggle at resist edges.[^hook-2003]
 * Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 —
   thermal-wave dose monitoring.[^smith-1985]

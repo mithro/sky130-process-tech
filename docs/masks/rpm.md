@@ -394,8 +394,10 @@ to this plate.
   CMOS process.[^odwyer-2009]
 * Tsang et al., *IEEE TSM* 2014 — resistance variation across banks of
   high-value poly resistors.[^tsang-2014]
-* Wright et al., *JVST B* 2010 — high-sheet-resistance, low-TCR resistor
-  films for ICs.[^wright-2010]
+* Wright et al., *JVST B* 2010 — rf-sputtered Cr–Si–B–SiO₂/Al₂O₃
+  thin-film resistors reaching 20 kΩ/sq at <200 ppm/°C: the non-poly
+  alternative route to a high-sheet-resistance, low-TCR
+  film.[^wright-2010]
 * Orvek and Huffman, *NIM B* 1985 — the carbonised layer on ion-implanted
   resist masks.[^orvek-1985]
 * Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and

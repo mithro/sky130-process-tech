@@ -19,8 +19,8 @@ before being fixed or declined.
 | 054-M1 | Medium | open | = 051-M1 |
 | 055-M1 | Medium | fixed | = 049-M1; replaced in-text sentence with Lane & Wrixon's design space, added lane-1989 footnote. |
 | 055-M2 | Medium | fixed | = 052-M1 |
-| 057-M1 | Medium | open | shared root cause: temple-boyer-1998 (also 058-M1) |
-| 058-M1 | Medium | open | = 057-M1 |
+| 057-M1 | Medium | fixed | Confirmed via OpenAlex: Temple-Boyer 1998 is a silane/ammonia LPCVD study giving ~600 MPa, not 1 GPa DCS nitride. Reworded on 057/058 to cite it correctly and keep 1 GPa as a typical-industry-value claim. |
+| 058-M1 | Medium | fixed | = 057-M1 |
 | 062-M1 | Medium | open | |
 | 062-M2 | Medium | open | |
 | 063-M1 | Medium | open | |
@@ -50,7 +50,7 @@ before being fixed or declined.
 | 057-L1 | Low | open | |
 | 057-L2 | Low | open | = 051-M1 |
 | 057-L3 | Low | open | = 051-L3 |
-| 058-L1 | Low | open | = 052-M1 (Tsang) plus NGNIT cross-ref |
+| 058-L1 | Low | fixed | Added the PDK's NGNIT e-test corroboration and the Tsang et al. nitride-cap corroboration (with correct mechanism) to What this step is / Resistor protection. |
 | 059-L1 | Low | open | |
 | 059-L2 | Low | open | |
 | 060-L1 | Low | open | |

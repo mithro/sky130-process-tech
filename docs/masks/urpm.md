@@ -366,8 +366,10 @@ and 0.84 spacing of the `urpm` checks would set their smallest features
   poly resistors and its dependence on processing.[^brederlow-2001]
 * Tsang et al., *IEEE TSM* 2014 — resistance variation across banks of
   high-value poly resistors.[^tsang-2014]
-* Wright et al., *JVST B* 2010 — high-sheet-resistance, low-TCR resistor
-  films for ICs.[^wright-2010]
+* Wright et al., *JVST B* 2010 — rf-sputtered Cr–Si–B–SiO₂/Al₂O₃
+  thin-film resistors reaching 20 kΩ/sq at <200 ppm/°C: the non-poly
+  alternative route to a high-sheet-resistance, low-TCR
+  film.[^wright-2010]
 * Chen et al., *Solid-State Electron.* 2000 — the voltage coefficient of
   poly resistors in high-voltage CMOS.[^chen-2000]
 * Upreti and Singh, *Bull. Mater. Sci.* 1991 — grain-boundary effects in
