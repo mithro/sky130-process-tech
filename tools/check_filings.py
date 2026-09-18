@@ -34,6 +34,10 @@ checker verifies, offline:
   ``docs/`` as ``(label)=``; a ``cites`` relation requires the page to
   cite the record's inventory key as a footnote; every inventory key
   exists in ``docs/references/public-sources.md``.
+* **Known gaps.** The optional top-level ``known_gaps`` list (filings
+  known to exist but for which no non-``sec.gov`` copy could be found or
+  read) has a ``company_key`` from the controlled list, a
+  ``description`` and a ``reason`` ending with a full stop.
 
 With ``--online`` it also fetches each record's Wayback or
 investor-relations copy (never ``sec.gov``) with the project user agent
@@ -423,15 +427,22 @@ def check_record(r: dict, where: str, labels: dict[str, Path], keys: set[str],
             break
 
 
-def normalise(t: str) -> str:
+def tidy(t: str) -> str:
+    """NFKC-normalise and unify quotes/dashes, without changing case or removing whitespace."""
     t = unicodedata.normalize("NFKC", t)
     t = t.replace(" ", " ")
     t = re.sub(r"[‘’‚′]", "'", t)
-    t = re.sub(r"[“”„″]", '"', t)
+    t = re.sub(r'[“”„″]', '"', t)
     t = re.sub(r"[‐-―−]", "-", t)
     t = t.replace("…", "...")
-    # PDF text extraction drops or inserts spaces, so compare without any.
-    return re.sub(r"\s+", "", t).lower()
+    return t
+
+
+def normalise(t: str) -> str:
+    # PDF text extraction drops or inserts spaces (and hyphenates words split across a
+    # justified line break, e.g. "Bloom- ington"), so compare without either.
+    # Case-SENSITIVE: FIL-R1-04, a mis-cased quotation must not pass as verbatim.
+    return re.sub(r"[\s-]+", "", tidy(t))
 
 
 _last = [0.0]
@@ -479,33 +490,206 @@ def document_text(b: bytes) -> str:
     return html.unescape(t)
 
 
+FRAGMENT_MAX_GAP = 4000  # normalised (whitespace-stripped) characters between ellipsis fragments
+
+
+def fragments_match_in_order(quote: str, text: str) -> bool:
+    """True if every ellipsis-separated fragment of ``quote`` occurs in ``text``, in
+    order, each starting no more than FRAGMENT_MAX_GAP characters after the previous
+    fragment ends (FIL-R1-04: a quote stitched from distant or reordered passages must
+    not pass)."""
+    parts = [p for p in re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote) if p.strip()]
+    if not parts:
+        return False
+    pos = 0
+    for part in parts:
+        idx = text.find(normalise(part), pos)
+        if idx == -1:
+            return False
+        if pos and idx - pos > FRAGMENT_MAX_GAP:
+            return False
+        pos = idx + len(normalise(part))
+    return True
+
+
+def loose_pattern(fragment: str) -> re.Pattern:
+    """A case-sensitive regex matching ``fragment`` with runs of whitespace relaxed to
+    ``\\s+``, for locating a quote's position in whitespace-preserved text."""
+    pieces = [re.escape(p) for p in fragment.split()]
+    return re.compile(r"\s+".join(pieces))
+
+
+def location_item_number(location: str) -> str | None:
+    m = re.search(r"item\s*(\d+[a-z]?)", location, re.I)
+    return m.group(1).upper() if m else None
+
+
+HEADING_RE = re.compile(r"ITEM\s+(\d+[A-Z]?)\s*[.:]")  # literal caps: a real 10-K heading, not an inline "see Item 8" cross-reference
+
+
+def _item_num(s: str) -> float:
+    m = re.match(r"(\d+)([a-z]?)", s.lower())
+    return int(m.group(1)) + (0.5 if m.group(2) else 0)
+
+
+def _drop_toc_runs(matches: list[re.Match]) -> list[re.Match]:
+    """A table of contents lists "ITEM 1.", "ITEM 2.", ... in close, ascending
+    succession, each entry typically under 150 characters (a short title plus a page
+    number); a real section heading does not. Drop any match that is part of such a
+    tightly-spaced run of 3 or more, so a TOC near the top of the document is not
+    mistaken for the nearest real heading.
+
+    The gap is intentionally tight (200 characters, not a larger figure): Part III of
+    a modern 10-K that incorporates everything by reference to the proxy statement
+    often has items 10-15 as one-sentence stubs, so their headings can legitimately
+    land 400-1800 characters apart -- close enough to look like a run under a looser
+    threshold, but far looser than an actual TOC line, whose next entry follows within
+    a couple of hundred characters. A 700-character threshold falsely dropped the real
+    Item 15 heading on skywater-10-k-2026-03-11's exhibit index (found by --online),
+    reporting it as nearest to Item 12 instead; 200 characters keeps the real TOC (all
+    gaps under 150 characters in the record checked) while no longer catching that
+    run."""
+    kept: list[re.Match] = []
+    run: list[re.Match] = []
+
+    def flush():
+        if len(run) < 3:
+            kept.extend(run)
+        run.clear()
+
+    prev_end = None
+    prev_num = None
+    for m in matches:
+        num = _item_num(m.group(1))
+        in_run = (
+            prev_end is not None and m.start() - prev_end < 200
+            and prev_num is not None and num > prev_num
+        )
+        if in_run:
+            run.append(m)
+        else:
+            flush()
+            run.append(m)
+        prev_end, prev_num = m.end(), num
+    flush()
+    return kept
+
+
+def check_location(quote_text: str, location: str, raw_text: str, where: str, problems: list[str]) -> None:
+    """Best-effort check (FIL-R1-05): if ``location`` names an Item number, and the
+    first fragment of the quote can be found in whitespace-preserved text, compare it
+    with the nearest preceding "ITEM N" heading (a table-of-contents listing is
+    filtered out first; see _drop_toc_runs). Silent whenever either side is
+    unavailable -- this augments, never replaces, the verbatim check above."""
+    stated = location_item_number(location)
+    if not stated:
+        return
+    first_fragment = re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote_text)[0].strip()
+    if not first_fragment:
+        return
+    m = loose_pattern(first_fragment[:120]).search(raw_text)
+    if not m:
+        return
+    all_matches = list(HEADING_RE.finditer(raw_text[:m.start()]))
+    headings = _drop_toc_runs(all_matches)
+    if not headings:
+        return
+    nearest = headings[-1].group(1).upper()
+    if nearest != stated:
+        problems.append(
+            f"{where}: location says Item {stated} but the quote sits nearest to "
+            f"Item {nearest} in the fetched text: {quote_text[:60]!r}")
+
+
+def date_variants(d) -> list[str]:
+    if not isinstance(d, dt.date):
+        return []
+    out = [d.isoformat(), d.strftime("%B %-d, %Y") if hasattr(d, "strftime") else ""]
+    try:
+        out.append(f"{d.strftime('%B')} {d.day}, {d.year}")
+        out.append(f"{d.day} {d.strftime('%B')} {d.year}")
+    except ValueError:
+        pass
+    return [v for v in out if v]
+
+
+def check_metadata(r: dict, raw_text: str, where: str, problems: list[str]) -> None:
+    """Best-effort check (FIL-R1-05): the filer's name and the period-end date, in some
+    common rendering, should occur somewhere in the fetched text. Silent (not a
+    problem) when the text is too different in style to say either way -- this is a
+    supplement to, not a replacement for, the verbatim quote check."""
+    company = (r.get("company") or "").split()
+    if company:
+        first = normalise(company[0])
+        if len(first) >= 3 and first not in normalise(raw_text):
+            problems.append(f"{where}: company name {company[0]!r} not found in the fetched text")
+    end = to_date((r.get("period") or {}).get("end"))
+    variants = date_variants(end)
+    if variants and not any(normalise(v) in normalise(raw_text) for v in variants):
+        problems.append(
+            f"{where}: period.end {end} not found in the fetched text in any common rendering "
+            f"(tried {variants}) -- may be printed only as a fiscal-year label; verify by hand")
+
+
 def check_online(r: dict, where: str, problems: list[str]) -> None:
     """Confirm the quotes in the Wayback copy, else in the investor-relations copy."""
     urls = r.get("urls") or {}
     sources = [u for u in (urls.get("wayback"), urls.get("ir")) if u]
     if not sources and urls.get("original") and "sec.gov" not in urls["original"]:
         sources = [urls["original"]]
-    quotes = [q.get("text", "") for q in (r.get("about") or {}).get("quotes", [])]
+    if not sources:
+        problems.append(f"{where}: no fetchable copy (no wayback/ir url, and original is on sec.gov)")
+        return
+    quotes = [(q.get("text", ""), q.get("location", "")) for q in (r.get("about") or {}).get("quotes", [])]
     aud = r.get("auditor_report")
     if isinstance(aud, dict):
-        quotes.append(aud.get("quote", ""))
+        quotes.append((aud.get("quote", ""), ""))
     pending = list(quotes)
     fetched = []
+    raw_texts = []
     for source in sources:
         if not pending:
             break
         try:
-            text = normalise(document_text(fetch(source)))
+            raw = tidy(document_text(fetch(source)))
         except Exception as exc:  # noqa: BLE001
             problems.append(f"{where}: could not fetch {source}: {exc}")
             continue
         fetched.append(source)
-        pending = [q for q in pending if not all(
-            normalise(part) in text
-            for part in re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", q) if part.strip())]
+        raw_texts.append(raw)
+        text = normalise(raw)
+        still_pending = []
+        for q, loc in pending:
+            if fragments_match_in_order(q, text):
+                check_location(q, loc, raw, where, problems)
+            else:
+                still_pending.append((q, loc))
+        pending = still_pending
     if fetched:
-        for q in pending:
+        for q, _loc in pending:
             problems.append(f"{where}: quote not found in {', '.join(fetched)}: {q[:60]!r}")
+        if not pending and raw_texts:
+            check_metadata(r, "\n".join(raw_texts), where, problems)
+
+
+def check_known_gaps(gaps, problems: list[str]) -> None:
+    """Validate the top-level ``known_gaps`` list (FIL-R1-13): filings known to exist
+    but for which no non-sec.gov copy could be found or read. Each entry names the
+    company, describes the filing and gives the reason no record was added."""
+    if not isinstance(gaps, list):
+        problems.append("known_gaps must be a list")
+        return
+    for i, g in enumerate(gaps):
+        where = f"known_gaps[{i}]"
+        if not isinstance(g, dict) or set(g) != {"company_key", "description", "reason"}:
+            problems.append(f"{where}: must have exactly company_key, description and reason")
+            continue
+        if g["company_key"] not in COMPANIES:
+            problems.append(f"{where}: company_key {g['company_key']!r} not in the controlled list")
+        if not isinstance(g["description"], str) or not g["description"]:
+            problems.append(f"{where}: description must be a non-empty string")
+        if not isinstance(g["reason"], str) or not g["reason"].endswith("."):
+            problems.append(f"{where}: reason must be a string ending with a full stop")
 
 
 def main() -> int:
@@ -558,6 +742,8 @@ def main() -> int:
             check_online(f, where, problems)
     if order != sorted(order):
         problems.append("filings are not sorted by filing date, then id")
+    if "known_gaps" in data:
+        check_known_gaps(data["known_gaps"], problems)
     for p in problems:
         print(p)
     print(f"{len(filings)} filings checked, {len(problems)} problems")

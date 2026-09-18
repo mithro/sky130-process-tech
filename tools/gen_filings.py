@@ -8,9 +8,10 @@
 Writes ``docs/references/filings/``:
 
 * ``index.md`` -- scope, a short timeline of the lineage events, counts by
-  company/type/year, how to read an entry, the EDGAR access note, links to
-  the other views and the one full entry per filing (under its own label
-  ``filing-<id>``), in date order;
+  company/type/year, how to read an entry, the EDGAR access note, a list of
+  filings known to exist but not found in a fetchable copy (from the
+  dataset's ``known_gaps``), links to the other views and the one full
+  entry per filing (under its own label ``filing-<id>``), in date order;
 * ``by-company.md`` -- Cypress, SkyWater and Infineon first (the lineage),
   then the acquirer, customers and partners; within a company, by date;
 * ``by-year.md`` -- year of filing, newest first;
@@ -157,7 +158,7 @@ def entry_lines(r: dict) -> list[str]:
     ident = identifier_text(r)
     filed_clause = f"filed {r['filed']}" + (f"; {ident}" if ident else "")
     head = f"**{esc(r['company'])} — {esc(r['title'])}** ({filed_clause})."
-    out = [f"({f'filing-{r['id']}'})=", f"* {head}", f"  {links_line(r)}"]
+    out = [f"(filing-{r['id']})=", f"* {head}", f"  {links_line(r)}"]
     out.append(f"  {esc(r['about']['summary'])} {quotes_text(r)}")
     aud = r.get("auditor_report")
     if aud:
@@ -168,7 +169,9 @@ def entry_lines(r: dict) -> list[str]:
         out.append(f"  Inventory: {esc(r['inventory_key'])}.")
     if r.get("related_docs"):
         rd = "; ".join(f"{{ref}}`{d['label']}` — {esc(d['reason'])}" for d in r["related_docs"])
-        out.append(f"  Related pages: {rd}.")
+        out.append(f"  Related pages: {rd}")
+    if r.get("parent"):
+        out.append(f"  Amends/filed with: {{ref}}`full entry <filing-{r['parent']}>`.")
     if r.get("notes"):
         out.append(f"  Note: {esc(r['notes'])}")
     out.append("")
@@ -187,7 +190,49 @@ def doctype_group(dt: str) -> str:
     raise SystemExit(f"document_type {dt!r} not covered by DOCTYPE_GROUPS")
 
 
-def gen_index(rs: list[dict]) -> str:
+def company_keys_in_order() -> list[str]:
+    """The company_key values in COMPANY_GROUPS order, asserting every key in
+    check_filings.COMPANIES is covered (FIL-R1-09, mirroring doctype_group's and
+    gen_by_relationship's own completeness guards)."""
+    covered = [k for _, keys in COMPANY_GROUPS for k in keys]
+    missing = sorted(set(check_filings.COMPANIES) - set(covered))
+    if missing:
+        raise SystemExit(f"company_key values not covered by COMPANY_GROUPS: {missing}")
+    return covered
+
+
+def gen_known_gaps(gaps: list[dict]) -> list[str]:
+    """FIL-R1-13: a short section on index.md naming filings known to exist (from
+    another filing's exhibit index, an inventory entry, or a discovery note) but for
+    which no copy could be found or read that is not sec.gov itself, so a reader does
+    not have to go looking in docs/plans/ to see what is missing and why."""
+    if not gaps:
+        return []
+    by_company: dict[str, list[dict]] = defaultdict(list)
+    for g in gaps:
+        by_company[g["company_key"]].append(g)
+    body = [
+        "## Known gaps",
+        "",
+        "Filings known to exist -- named in another filing's exhibit index, an",
+        "inventory entry already cited elsewhere in this reference, or this",
+        "project's own discovery notes -- but for which no copy could be found",
+        "or read that is not `sec.gov` itself.",
+        "",
+    ]
+    for key in company_keys_in_order():
+        items = by_company.get(key)
+        if not items:
+            continue
+        body.append(f"**{esc(check_filings.COMPANIES[key][0])}**")
+        body.append("")
+        for g in items:
+            body.append(f"* {esc(g['description'])} -- {esc(g['reason'])}")
+        body.append("")
+    return body
+
+
+def gen_index(rs: list[dict], gaps: list[dict]) -> str:
     n = len(rs)
     companies = Counter(r["company_key"] for r in rs)
     types = Counter(doctype_group(r["document_type"]) for r in rs)
@@ -255,12 +300,16 @@ def gen_index(rs: list[dict]) -> str:
         "## Counts",
         "",
         "By company: " + ", ".join(
-            f"{esc(check_filings.COMPANIES[k][0])} ({companies[k]})" for k in companies) + ".",
+            f"{esc(check_filings.COMPANIES[k][0])} ({companies[k]})"
+            for k in company_keys_in_order() if companies[k]) + ".",
         "",
         "By type: " + ", ".join(f"{esc(name)} ({types[name]})" for name, _ in DOCTYPE_GROUPS if types[name]) + ".",
         "",
         "By year: " + ", ".join(f"{y} ({years[y]})" for y in sorted(years)) + ".",
         "",
+    ]
+    body += gen_known_gaps(gaps)
+    body += [
         "## All filings",
         "",
         "Sorted by filing date, then id.",
@@ -288,7 +337,14 @@ def gen_by_company(rs: list[dict]) -> str:
 
 
 def gen_by_year(rs: list[dict]) -> str:
-    body = ["Filings by year of filing, newest first.", ""]
+    body = [
+        "Filings by year of filing, newest first. For most records `filed` is the",
+        "EDGAR filing date; for some annual reports to shareholders and German annual",
+        "reports it is instead the latest signature or auditor's-report date printed",
+        "in the copy (each such record's `Note:` on {ref}`filings-index` says so), so",
+        "a handful of records are grouped by that date rather than a true filing date.",
+        "",
+    ]
     for y in sorted({r["filed"].year for r in rs}, reverse=True):
         items = [r for r in rs if r["filed"].year == y]
         body += [f"(filings-year-{y})=", f"## {y}", ""] + [short_line(r) for r in items] + [""]
@@ -357,12 +413,13 @@ def gen_audits(rs: list[dict]) -> str:
 
 
 def generate() -> dict[str, str]:
-    rs = yaml.safe_load(DATA.read_text(encoding="utf-8"))
-    if not isinstance(rs, dict) or not isinstance(rs.get("filings"), list):
+    data = yaml.safe_load(DATA.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or not isinstance(data.get("filings"), list):
         raise SystemExit(f"{DATA}: top level must be a mapping with a 'filings' list")
-    rs = rs["filings"]
+    rs = data["filings"]
+    gaps = data.get("known_gaps") or []
     return {
-        "index.md": gen_index(rs),
+        "index.md": gen_index(rs, gaps),
         "by-company.md": gen_by_company(rs),
         "by-year.md": gen_by_year(rs),
         "by-type.md": gen_by_type(rs),
