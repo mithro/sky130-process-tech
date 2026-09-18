@@ -26,12 +26,12 @@ left untouched.
 
 | id | severity | status | note |
 |---|---|---|---|
-| 164-M1 | Medium | open | TOPOX identification stated before its fuse-oxide caveat (164:15-16) |
-| 164-M2 | Medium | open | Chaudhari 1974 (Pb/Sn hillock model) cited for Al hillocks (164:77-78, 232-234) |
-| 164-L1 | Low | open | "highly stressed" over-generalises Lanford/Claassen (164:71-72) |
-| 164-L2 | Low | open | Zeevo quote drops HDP-doping-difficulty reason (164:84-87) |
-| 164-L3 | Low | open | "compliant layer under a stiff film" unsourced (164:74-76) |
-| 164-L4 | Low | open | R7FT-3R is 0.18 um tech, not flagged in machines-inference section (164:150-153) |
+| 164-M1 | Medium | fixed | TOPOX identification stated before its fuse-oxide caveat (164:15-16) |
+| 164-M2 | Medium | fixed | Chaudhari 1974 (Pb/Sn hillock model) cited for Al hillocks (164:77-78, 232-234) |
+| 164-L1 | Low | fixed | "highly stressed" over-generalises Lanford/Claassen (164:71-72) |
+| 164-L2 | Low | fixed | Zeevo quote drops HDP-doping-difficulty reason (164:84-87) |
+| 164-L3 | Low | fixed | "compliant layer under a stiff film" unsourced (164:74-76) |
+| 164-L4 | Low | fixed | R7FT-3R is 0.18 um tech, not flagged in machines-inference section (164:150-153) |
 | 165-M1 | Medium | open | TSMC patent has three IMD layers not "three or four" (165:136-139) |
 | 165-M2 | Medium | open | "5.3711 um above the substrate" contradicts overview's datum note (165:77-78; also fix 166:31-32) |
 | 165-L1 | Low | open | nsm.3a is enclosure not spacing rule, paraphrase conflates with nsm.3b (165:33-35) |
