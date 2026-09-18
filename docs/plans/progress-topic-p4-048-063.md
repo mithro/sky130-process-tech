@@ -27,9 +27,9 @@ before being fixed or declined.
 | 048-L1 | Low | fixed | Confirmed via cached Moov listing: verbatim "up to 200 wafer batches" (not 100-150); added citation and typical-value label. |
 | 048-L2 | Low | fixed | Confirmed via OpenAlex: Iverson & Reif's films were amorphised by implantation and give no wall-clock crystallisation time; reworded with their actual anneal range and growth-velocity caveat. |
 | 048-L3 | Low | fixed | Matched 050's "we infer ... unsilicided" phrasing for consistency. |
-| 049-L1 | Low | open | |
-| 049-L2 | Low | open | |
-| 049-L3 | Low | open | |
+| 049-L1 | Low | fixed | Confirmed via cached periphery.txt: rpm.6 is "min spacing, no overlap" (0.200 µm), not just "no overlap". |
+| 049-L2 | Low | fixed | Confirmed via cached periphery.txt: poly.3 = 0.330 µm, poly.9 = 0.480 µm; added them to the body. |
+| 049-L3 | Low | fixed | Moved the SkyWater-specific KLA tool name out of the industry-generic recipe sentence. |
 | 050-L1 | Low | fixed | [^axcelis-8250] (no dose spec) dropped from the 1e14 sentence as part of the 050-M1 rewrite; it remains correctly used in Cross-check for the medium-current tool class. |
 | 050-L2 | Low | fixed | Confirmed via OpenAlex: Kamins 1972 says poly diffusion is "more rapid" with lower activation energy, no order-of-magnitude figure. Reworded. |
 | 050-L3 | Low | fixed | Added the NGNIT e-test cross-reference to 050, pointing at 058's npc-mask reading. |
