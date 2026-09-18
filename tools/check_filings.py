@@ -47,7 +47,11 @@ cached under ``tmp/filings-cache/``.
 
 Run with ``uv run tools/check_filings.py [--online] [path]``.  It prints
 "N filings checked, M problems"; the exit status is non-zero when a
-problem is found.
+problem is found.  With ``--online`` it also prints one line for every
+``location`` it could not check (no Item number, no "ITEM 1" heading in
+the document, the quote not locatable, or no heading before it -- V-13)
+and appends "P locations not checked" to the summary, so a clean run
+never reads as "every location was verified".
 """
 
 from __future__ import annotations
@@ -490,6 +494,25 @@ def document_text(b: bytes) -> str:
     return html.unescape(t)
 
 
+# V-11: the body pages of the Cypress FY1999 annual report (annualreports.com file
+# NASDAQ_CY_1999.pdf) are set in a subsetted font that pypdf cannot map to Unicode at
+# all; instead of dropping the glyph, pypdf names it literally, e.g. "/G4B". This
+# particular font's glyph table is a constant offset from the character's WinAnsi
+# code -- chr(int(hex, 16) + 29) recovers it -- and a handful of its glyphs (kerning
+# artifacts with no visible letter of their own) have no ToUnicode entry and come out
+# as a literal ".", "_" pair that decodes to nothing. Keyed by identifier.value so this
+# document-specific offset can never be applied to an unrelated filing.
+GLYPH_OFFSET_DOCS = {"NASDAQ_CY_1999": 29}
+
+
+def decode_glyph_font(text: str, offset: int) -> str:
+    def sub(m: re.Match) -> str:
+        return "".join(chr(int(h, 16) + offset) for h in re.findall(r"/G([0-9A-Fa-f]{2})", m.group(0)))
+
+    text = re.sub(r"(?:/G[0-9A-Fa-f]{2})+", sub, text)
+    return text.replace("._", "")
+
+
 FRAGMENT_MAX_GAP = 4000  # normalised (whitespace-stripped) characters between ellipsis fragments
 
 
@@ -575,33 +598,55 @@ def _drop_toc_runs(matches: list[re.Match]) -> list[re.Match]:
     return kept
 
 
-def check_location(quote_text: str, location: str, raw_text: str, where: str, problems: list[str]) -> None:
+def loose_tolerant_pattern(fragment: str) -> re.Pattern:
+    """Like ``loose_pattern``, but also tolerant of stray whitespace a broken PDF
+    extraction inserts *inside* a word (e.g. "ex it" for "exit", "ap lan" for "a
+    plan") rather than only between words. V-13: tried as a fallback before
+    abstaining, since a mangled extraction must not hide a wrong Item number the way
+    it did for cypress-annual-report-fy2008 (V-01) -- ``loose_pattern`` alone missed
+    that quote because "exit" had a space inserted inside it."""
+    chars = [c for c in fragment if not c.isspace()]
+    return re.compile(r"\s*".join(re.escape(c) for c in chars))
+
+
+def check_location(
+    quote_text: str, location: str, raw_text: str, where: str, problems: list[str], abstentions: list[str]
+) -> None:
     """Best-effort check (FIL-R1-05): if ``location`` names an Item number, and the
     first fragment of the quote can be found in whitespace-preserved text, compare it
     with the nearest preceding "ITEM N" heading (a table-of-contents listing is
-    filtered out first; see _drop_toc_runs). Silent whenever either side is
-    unavailable -- this augments, never replaces, the verbatim check above.
+    filtered out first; see _drop_toc_runs). This augments, never replaces, the
+    verbatim check above.
 
-    Abstains entirely when "ITEM 1" itself never occurs in HEADING_RE's exact form
-    anywhere in the document: some annual-report-to-shareholders PDFs render item
-    headings in a style this regex does not match at all (found on
-    cypress-annual-report-fy2002, where the whole heading list --online could find was
-    a partially-filtered table of contents, giving a confident-looking but wrong
-    "nearest heading" for a quote deep in the real Item 1 section)."""
+    V-13: every case this cannot check records one line in ``abstentions`` (printed
+    and counted by ``main``) instead of returning silently, so a clean "0 problems"
+    run no longer reads as "every location was verified" when some were not checked
+    at all -- that silence is what let V-01's wrong Item number through undetected."""
     stated = location_item_number(location)
     if not stated:
+        abstentions.append(f"{where}: location {location!r} names no Item number, so it was not checked")
         return
     if not any(m.group(1) == "1" for m in HEADING_RE.finditer(raw_text)):
+        abstentions.append(
+            f"{where}: document never renders an \"ITEM 1\" heading in the expected form; "
+            f"Item {stated} was not checked")
         return
     first_fragment = re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote_text)[0].strip()
     if not first_fragment:
+        abstentions.append(f"{where}: quote has no text before its first ellipsis; location not checked")
         return
     m = loose_pattern(first_fragment[:120]).search(raw_text)
     if not m:
+        m = loose_tolerant_pattern(first_fragment[:120]).search(raw_text)
+    if not m:
+        abstentions.append(
+            f"{where}: quote text not found in the fetched text (even whitespace-tolerant); "
+            f"Item {stated} not checked: {quote_text[:60]!r}")
         return
     all_matches = list(HEADING_RE.finditer(raw_text[:m.start()]))
     headings = _drop_toc_runs(all_matches)
     if not headings:
+        abstentions.append(f"{where}: no Item heading precedes the quote in the fetched text; Item {stated} not checked")
         return
     nearest = headings[-1].group(1).upper()
     if nearest != stated:
@@ -640,7 +685,7 @@ def check_metadata(r: dict, raw_text: str, where: str, problems: list[str]) -> N
             f"(tried {variants}) -- may be printed only as a fiscal-year label; verify by hand")
 
 
-def check_online(r: dict, where: str, problems: list[str]) -> None:
+def check_online(r: dict, where: str, problems: list[str], abstentions: list[str]) -> None:
     """Confirm the quotes in the Wayback copy, else in the investor-relations copy."""
     urls = r.get("urls") or {}
     sources = [u for u in (urls.get("wayback"), urls.get("ir")) if u]
@@ -660,7 +705,11 @@ def check_online(r: dict, where: str, problems: list[str]) -> None:
         if not pending:
             break
         try:
-            raw = tidy(document_text(fetch(source)))
+            raw = document_text(fetch(source))
+            offset = GLYPH_OFFSET_DOCS.get((r.get("identifier") or {}).get("value"))
+            if offset is not None:
+                raw = decode_glyph_font(raw, offset)
+            raw = tidy(raw)
         except Exception as exc:  # noqa: BLE001
             problems.append(f"{where}: could not fetch {source}: {exc}")
             continue
@@ -670,7 +719,7 @@ def check_online(r: dict, where: str, problems: list[str]) -> None:
         still_pending = []
         for q, loc in pending:
             if fragments_match_in_order(q, text):
-                check_location(q, loc, raw, where, problems)
+                check_location(q, loc, raw, where, problems, abstentions)
             else:
                 still_pending.append((q, loc))
         pending = still_pending
@@ -734,6 +783,7 @@ def main() -> int:
         problems.append(f"duplicate ids: {dup}")
     seen_docs: dict[tuple, str] = {}
     order = []
+    abstentions: list[str] = []
     for n, f in enumerate(filings):
         where = f"filings[{n}] {f.get('id') if isinstance(f, dict) else ''}".strip()
         if not isinstance(f, dict):
@@ -748,14 +798,20 @@ def main() -> int:
         seen_docs[k] = f.get("id")
         order.append((str(f.get("filed")), str(f.get("id"))))
         if online:
-            check_online(f, where, problems)
+            check_online(f, where, problems, abstentions)
     if order != sorted(order):
         problems.append("filings are not sorted by filing date, then id")
     if "known_gaps" in data:
         check_known_gaps(data["known_gaps"], problems)
     for p in problems:
         print(p)
-    print(f"{len(filings)} filings checked, {len(problems)} problems")
+    # V-13: report every location abstention (never just swallow it), and count them
+    # in the summary, so "0 problems" cannot be misread as "every location was
+    # verified" -- it now means only that none of the *checked* locations were wrong.
+    for a in abstentions:
+        print(a)
+    print(f"{len(filings)} filings checked, {len(problems)} problems", end="")
+    print(f", {len(abstentions)} locations not checked" if online else "")
     return 1 if problems else 0
 
 
