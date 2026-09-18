@@ -131,8 +131,10 @@ cleanliness.[^txt-02]
 * **{ref}`Oxygen <material-process-gases>`, nitrogen, {term}`forming gas` ({ref}`H₂/N₂ <material-anneal-ambients>`)** for the ash; **{ref}`CF₄ <material-etch-gases>`**,
   listed on the Iridia and Mattson ashers,[^skw-01] attacks the pad and
   trench oxide and would, we infer, be omitted here (category page).
-* **Sulphuric acid (96–98 %) and hydrogen peroxide (30 %)** ({ref}`wet chemicals <material-wet-chemicals>`) for
-  SPM;[^wiki-rca] **ammonium hydroxide** for SC-1; **hydrochloric acid**
+* **Sulphuric acid and hydrogen peroxide** (semiconductor-grade
+  concentrated acid and 30 % peroxide, the usual SPM
+  reagents[^wiki-piranha]) ({ref}`wet chemicals <material-wet-chemicals>`);
+  **ammonium hydroxide** for SC-1; **hydrochloric acid**
   for SC-2[^wiki-rca] (category page).
 * **{ref}`Ultrapure DI water <material-ultrapure-water>`**, **isopropanol** for drying, **nitrogen**.
 * Chemical suppliers named in SkyWater's filings: KMG Chemicals (2021
@@ -234,6 +236,8 @@ cleanliness.[^txt-02]
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^wiki-ash]: Wikipedia, *Plasma ashing*.
     <https://en.wikipedia.org/wiki/Plasma_ashing>
+[^wiki-piranha]: Wikipedia, *Piranha solution*.
+    <https://en.wikipedia.org/wiki/Piranha_solution>
 [^wiki-rca]: Wikipedia, *RCA clean*.
     <https://en.wikipedia.org/wiki/RCA_clean>
 [^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
