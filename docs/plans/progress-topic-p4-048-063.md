@@ -57,9 +57,9 @@ before being fixed or declined.
 | 060-L2 | Low | fixed | Confirmed via OpenAlex: Broussous 2005's H2O:H2O2:H2SO4:HF recipe on an SEZ spin processor. Added detail to the Chemistry step and to Cross-check. |
 | 060-L3 | Low | fixed | Fetched the live SEMI store page and found revision "SEMI M1-0924 - Current"; added revision and access date to both 060's and 001's footnote (same key, same fix). |
 | 060-M-ref | Low | fixed | = 051-M1; replaced with lederer-2003 (already on page), which names the Surfscan SP1 BSIM explicitly. |
-| 061-L1 | Low | open | |
-| 061-L2 | Low | open | |
-| 061-L3 | Low | open | |
+| 061-L1 | Low | fixed | Confirmed cached itrs-litho.txt: MPU row 2001 = 90->65 (25 nm bias), matching 062's FEP figure; ASIC/LP row = 130->90 (40 nm). Noted the difference. |
+| 061-L2 | Low | fixed | Confirmed both the 46 nm overlay and 15.9 nm CD-control rows sit under the DRAM half-pitch block, not the ASIC/LP row quoted for the gate CD. Fixed in the same edit as 061-L1. |
+| 061-L3 | Low | fixed | Checked Wayback (empty) and attempted Save Page Now (500 error, could not archive); the PDF is still live as of 2026-09-18. Added a fragility note rather than inventing an archive URL. |
 | 062-L1 | Low | fixed | Confirmed cached ITRS FEP table: Gate Etch Bias (2001) = 25.2 nm, not 25. |
 | 062-L2 | Low | fixed | Confirmed cached snf-9400.txt: page states the TCP 9400 was "originally used for gate etching with high selectivity to thin gate oxides"; added the quote. |
 | 063-L1 | Low | fixed | Copied 002/047's correct dual-journal citation for Deal 1980. |
