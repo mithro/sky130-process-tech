@@ -1319,7 +1319,7 @@ families and members are counted.
 **Inventors:** Chien-Rhone Wang
 **Dates:** priority 1990-03-30, filing 1990-03-30, grant 1992-04-28
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5108570A, retrieved 2026-09-14)
-**Estimated expiry:** 2011-03-30 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR100227236B1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2011-03-30 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR100227236B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `23997467` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1327,13 +1327,13 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,108,570 A | granted patent | 1992-04-28 | Expired - Fee Related | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5108570A) · [Google Patents](https://patents.google.com/patent/US5108570A/en) |
-| DE 69123870 D1 | application | 1997-02-13 | not shown | 2026-09-14 listed in the Google Patents family table of US5108570A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69123870D1) · [Google Patents](https://patents.google.com/patent/DE69123870D1/en) |
-| DE 69123870 T2 | translation of granted patent | 1997-05-22 | not shown | 2026-09-14 listed in the Google Patents family table of US5108570A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69123870T2) · [Google Patents](https://patents.google.com/patent/DE69123870T2/en) |
-| EP 0 451 571 A2 | application | 1991-10-16 | not shown | 2026-09-14 listed in the Google Patents family table of US5108570A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0451571A2) · [Google Patents](https://patents.google.com/patent/EP0451571A2/en) |
-| EP 0 451 571 A3 | search report | 1992-07-22 | not shown | 2026-09-14 listed in the Google Patents family table of US5108570A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0451571A3) · [Google Patents](https://patents.google.com/patent/EP0451571A3/en) |
-| EP 0 451 571 B1 | granted patent | 1997-01-02 | not shown | 2026-09-14 listed in the Google Patents family table of US5108570A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0451571B1) · [Google Patents](https://patents.google.com/patent/EP0451571B1/en) |
-| ES 2098279 T3 | translation of granted patent | 1997-05-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5108570A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DES2098279T3) · [Google Patents](https://patents.google.com/patent/ES2098279T3/en) |
-| KR 100227236 B1 | granted patent | 1999-11-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5108570A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100227236B1) · [Google Patents](https://patents.google.com/patent/KR100227236B1/en) |
+| DE 69123870 D1 "Sputtering process for forming an aluminum layer on a stepped wafer" | application | 1997-02-13 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69123870D1) · [Google Patents](https://patents.google.com/patent/DE69123870D1/en) |
+| DE 69123870 T2 "Sputtering process for forming an aluminum layer on a stepped wafer" | translation of granted patent | 1997-05-22 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69123870T2) · [Google Patents](https://patents.google.com/patent/DE69123870T2/en) |
+| EP 0 451 571 A2 "Sputtering process for forming aluminum layer over stepped semiconductor wafer" | application | 1991-10-16 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0451571A2) · [Google Patents](https://patents.google.com/patent/EP0451571A2/en) |
+| EP 0 451 571 A3 "Sputtering process for forming aluminum layer over stepped semiconductor wafer" | search report | 1992-07-22 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0451571A3) · [Google Patents](https://patents.google.com/patent/EP0451571A3/en) |
+| EP 0 451 571 B1 "Sputtering process for forming aluminum layer over stepped semiconductor wafer" | granted patent | 1997-01-02 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0451571B1) · [Google Patents](https://patents.google.com/patent/EP0451571B1/en) |
+| ES 2098279 T3 "IONIC BOMBING PROCESS FOR THE FORMATION OF AN ALUMINUM LAYER ON A STEPPED SEMI-CONDUCTIVE WAFER." | translation of granted patent | 1997-05-01 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DES2098279T3) · [Google Patents](https://patents.google.com/patent/ES2098279T3/en) |
+| KR 100227236 B1 | granted patent | 1999-11-01 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100227236B1) · [Google Patents](https://patents.google.com/patent/KR100227236B1/en) |
 
 **Relevance:**
 
@@ -1354,7 +1354,7 @@ families and members are counted.
 **Inventors:** Akitoshi Hiraki
 **Dates:** priority 1990-06-15, filing 1991-05-31, grant 1992-11-03
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5160534A, retrieved 2026-09-14)
-**Estimated expiry:** 2011-06-15 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of EP0575654A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2011-05-31 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5160534A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `27460980` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1362,7 +1362,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,160,534 A | granted patent | 1992-11-03 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5160534A) · [Google Patents](https://patents.google.com/patent/US5160534A/en) |
-| EP 0 575 654 A1 | application | 1993-12-29 | not shown | 2026-09-14 listed in the Google Patents family table of US5160534A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0575654A1) · [Google Patents](https://patents.google.com/patent/EP0575654A1/en) |
+| EP 0 575 654 A1 | application | 1993-12-29 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0575654A1) · [Google Patents](https://patents.google.com/patent/EP0575654A1/en) |
 
 **Relevance:**
 
@@ -1400,7 +1400,7 @@ families and members are counted.
 
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
-| US 5,230,741 A | granted patent | 1993-07-27 | not shown | 2026-09-14 listed in the Google Patents family table of US5374594A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5230741A) · [Google Patents](https://patents.google.com/patent/US5230741A/en) |
+| US 5,230,741 A | granted patent | 1993-07-27 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5230741A) · [Google Patents](https://patents.google.com/patent/US5230741A/en) |
 | US 5,374,594 A | granted patent | 1994-12-20 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5374594A) · [Google Patents](https://patents.google.com/patent/US5374594A/en) |
 
 **Relevance:**
@@ -1422,34 +1422,34 @@ families and members are counted.
 **Inventors:** Wai M. Lee
 **Dates:** priority 1990-11-05, filing 1992-07-09, grant 1994-08-02
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5334332A, retrieved 2026-09-14)
-**Estimated expiry:** 2023-05-30 — all 21 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7051742B2 (estimated upper bound: grant date + 17 years (US application filed before 1995-06-08))
+**Estimated expiry:** 2019-04-27 — all 21 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of GR3030070T3 (estimated: 20 years from the filing date shown; no term remains for any grant on it)
 **Google Patents family ID:** `24443399` (family section of the representative's own record page, linked below)
 
 **Members:**
 
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
-| US 5,279,771 A | granted patent | 1994-01-18 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5279771A) · [Google Patents](https://patents.google.com/patent/US5279771A/en) |
+| US 5,279,771 A "Stripping compositions comprising hydroxylamine and alkanolamine" | granted patent | 1994-01-18 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5279771A) · [Google Patents](https://patents.google.com/patent/US5279771A/en) |
 | US 5,334,332 A | granted patent | 1994-08-02 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5334332A) · [Google Patents](https://patents.google.com/patent/US5334332A/en) |
-| US 5,381,807 A | granted patent | 1995-01-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5381807A) · [Google Patents](https://patents.google.com/patent/US5381807A/en) |
-| US 5,482,566 A | granted patent | 1996-01-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5482566A) · [Google Patents](https://patents.google.com/patent/US5482566A/en) |
-| US 5,672,577 A | granted patent | 1997-09-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5672577A) · [Google Patents](https://patents.google.com/patent/US5672577A/en) |
-| US 5,902,780 A | granted patent | 1999-05-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5902780A) · [Google Patents](https://patents.google.com/patent/US5902780A/en) |
-| US 6,140,287 A | granted patent | 2000-10-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6140287A) · [Google Patents](https://patents.google.com/patent/US6140287A/en) |
-| US 6,319,885 B1 | granted patent | 2001-11-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6319885B1) · [Google Patents](https://patents.google.com/patent/US6319885B1/en) |
-| US 2002/0052301 A1 | application | 2002-05-02 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020052301A1) · [Google Patents](https://patents.google.com/patent/US20020052301A1/en) |
-| US 2004/0198621 A1 | application | 2004-10-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040198621A1) · [Google Patents](https://patents.google.com/patent/US20040198621A1/en) |
-| US 7,051,742 B2 | granted patent | 2006-05-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7051742B2) · [Google Patents](https://patents.google.com/patent/US7051742B2/en) |
-| AT E176337 T1 | translation of granted patent | 1999-02-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DATE176337T1) · [Google Patents](https://patents.google.com/patent/ATE176337T1/en) |
-| DE 69130823 D1 | application | 1999-03-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69130823D1) · [Google Patents](https://patents.google.com/patent/DE69130823D1/en) |
-| DE 69130823 T2 | translation of granted patent | 1999-09-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69130823T2) · [Google Patents](https://patents.google.com/patent/DE69130823T2/en) |
-| DK 0485161 T3 | translation of granted patent | 1999-09-13 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDK0485161T3) · [Google Patents](https://patents.google.com/patent/DK0485161T3/en) |
-| EP 0 485 161 A1 | application | 1992-05-13 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0485161A1) · [Google Patents](https://patents.google.com/patent/EP0485161A1/en) |
-| EP 0 485 161 B1 | granted patent | 1999-01-27 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0485161B1) · [Google Patents](https://patents.google.com/patent/EP0485161B1/en) |
-| ES 2129403 T3 | translation of granted patent | 1999-06-16 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DES2129403T3) · [Google Patents](https://patents.google.com/patent/ES2129403T3/en) |
-| GR 3030070 T3 | application | 1999-07-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DGR3030070T3) · [Google Patents](https://patents.google.com/patent/GR3030070T3/en) |
-| JP H04289866 A | application | 1992-10-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH04289866A) · [Google Patents](https://patents.google.com/patent/JPH04289866A/en) |
-| JP 2691952 B2 | granted patent | 1997-12-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5334332A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2691952B2) · [Google Patents](https://patents.google.com/patent/JP2691952B2/en) |
+| US 5,381,807 A "Method of stripping resists from substrates using hydroxylamine and alkanolamine" | granted patent | 1995-01-17 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5381807A) · [Google Patents](https://patents.google.com/patent/US5381807A/en) |
+| US 5,482,566 A "Method for removing etching residue using a hydroxylamine-containing composition" | granted patent | 1996-01-09 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5482566A) · [Google Patents](https://patents.google.com/patent/US5482566A/en) |
+| US 5,672,577 A "Cleaning compositions for removing etching residue with hydroxylamine, alkanolamine, and chelating agent" | granted patent | 1997-09-30 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5672577A) · [Google Patents](https://patents.google.com/patent/US5672577A/en) |
+| US 5,902,780 A | granted patent | 1999-05-11 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5902780A) · [Google Patents](https://patents.google.com/patent/US5902780A/en) |
+| US 6,140,287 A | granted patent | 2000-10-31 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6140287A) · [Google Patents](https://patents.google.com/patent/US6140287A/en) |
+| US 6,319,885 B1 "Cleaning solutions including nucleophilic amine compound having reduction and oxidation potentials" | granted patent | 2001-11-20 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6319885B1) · [Google Patents](https://patents.google.com/patent/US6319885B1/en) |
+| US 2002/0052301 A1 "Cleaning solutions including nucleophilic amine compound having reduction and oxidation potentials" | application | 2002-05-02 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020052301A1) · [Google Patents](https://patents.google.com/patent/US20020052301A1/en) |
+| US 2004/0198621 A1 "Cleaning solutions including nucleophilic amine compound having reduction and oxidation potentials" | application | 2004-10-07 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040198621A1) · [Google Patents](https://patents.google.com/patent/US20040198621A1/en) |
+| US 7,051,742 B2 "Cleaning solutions including nucleophilic amine compound having reduction and oxidation potentials" | granted patent | 2006-05-30 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7051742B2) · [Google Patents](https://patents.google.com/patent/US7051742B2/en) |
+| AT E176337 T1 "DECOATING AGENT AND METHOD FOR REMOVAL OF PHOTOGRAPHIC PAINTS FROM SURFACES" | translation of granted patent | 1999-02-15 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DATE176337T1) · [Google Patents](https://patents.google.com/patent/ATE176337T1/en) |
+| DE 69130823 D1 "Stripping agent and process for removing photoresists from surfaces" | application | 1999-03-11 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69130823D1) · [Google Patents](https://patents.google.com/patent/DE69130823D1/en) |
+| DE 69130823 T2 "Stripping agent and process for removing photoresists from surfaces" | translation of granted patent | 1999-09-09 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69130823T2) · [Google Patents](https://patents.google.com/patent/DE69130823T2/en) |
+| DK 0485161 T3 "Means and method for cleaning substrates of cover materials" | translation of granted patent | 1999-09-13 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDK0485161T3) · [Google Patents](https://patents.google.com/patent/DK0485161T3/en) |
+| EP 0 485 161 A1 "Stripping compositions and method of stripping resists from substrates" | application | 1992-05-13 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0485161A1) · [Google Patents](https://patents.google.com/patent/EP0485161A1/en) |
+| EP 0 485 161 B1 "Stripping compositions and method of stripping resists from substrates" | granted patent | 1999-01-27 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0485161B1) · [Google Patents](https://patents.google.com/patent/EP0485161B1/en) |
+| ES 2129403 T3 "DETACHMENT COMPOSITION AND PROCEDURE FOR REMOVING PHOTOPROTECTORS FROM A SUBSTRATE." | translation of granted patent | 1999-06-16 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DES2129403T3) · [Google Patents](https://patents.google.com/patent/ES2129403T3/en) |
+| GR 3030070 T3 "Stripping compositions and method of stripping resists from substrates" | application | 1999-07-30 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DGR3030070T3) · [Google Patents](https://patents.google.com/patent/GR3030070T3/en) |
+| JP H04289866 A "Composition and method for removing anti-corrosive membrane from supporting body" | application | 1992-10-14 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH04289866A) · [Google Patents](https://patents.google.com/patent/JPH04289866A/en) |
+| JP 2691952 B2 "Composition for removing corrosion resistant film from support and method for removing the same" | granted patent | 1997-12-17 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2691952B2) · [Google Patents](https://patents.google.com/patent/JP2691952B2/en) |
 
 **Relevance:**
 
@@ -1571,25 +1571,25 @@ families and members are counted.
 **Inventors:** Oh-Kyong Kwon; Taylor R. Efland; Satwinder Malhi; Wai T. Ng
 **Dates:** priority 1991-12-30, filing 1994-02-01, grant 1995-04-11
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5406110A, retrieved 2026-09-14)
-**Estimated expiry:** 2013-11-26 — all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5578514A (estimated upper bound: grant date + 17 years (US application filed before 1995-06-08))
+**Estimated expiry:** 2016-11-05 — all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3226650B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `25218688` (family section of the representative's own record page, linked below)
 
 **Members:**
 
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
-| US 5,306,652 A | granted patent | 1994-04-26 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5306652A) · [Google Patents](https://patents.google.com/patent/US5306652A/en) |
+| US 5,306,652 A "Lateral double diffused insulated gate field effect transistor fabrication process" | granted patent | 1994-04-26 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5306652A) · [Google Patents](https://patents.google.com/patent/US5306652A/en) |
 | US 5,406,110 A | granted patent | 1995-04-11 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5406110A) · [Google Patents](https://patents.google.com/patent/US5406110A/en) |
-| US 5,578,514 A | granted patent | 1996-11-26 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5578514A) · [Google Patents](https://patents.google.com/patent/US5578514A/en) |
-| DE 69218747 D1 | application | 1997-05-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69218747D1) · [Google Patents](https://patents.google.com/patent/DE69218747D1/en) |
-| DE 69218747 T2 | translation of granted patent | 1997-07-10 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69218747T2) · [Google Patents](https://patents.google.com/patent/DE69218747T2/en) |
-| EP 0 550 015 A1 | application | 1993-07-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0550015A1) · [Google Patents](https://patents.google.com/patent/EP0550015A1/en) |
-| EP 0 550 015 B1 | granted patent | 1997-04-02 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0550015B1) · [Google Patents](https://patents.google.com/patent/EP0550015B1/en) |
-| JP H05343675 A | application | 1993-12-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH05343675A) · [Google Patents](https://patents.google.com/patent/JPH05343675A/en) |
-| JP 3226650 B2 | granted patent | 2001-11-05 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3226650B2) · [Google Patents](https://patents.google.com/patent/JP3226650B2/en) |
-| KR 930015099 A | application | 1993-07-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR930015099A) · [Google Patents](https://patents.google.com/patent/KR930015099A/en) |
-| KR 100292567 B1 | granted patent | 2001-09-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100292567B1) · [Google Patents](https://patents.google.com/patent/KR100292567B1/en) |
-| TW 273040 B | granted patent | 1996-03-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5406110A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW273040B) · [Google Patents](https://patents.google.com/patent/TW273040B/en) |
+| US 5,578,514 A "Lateral double diffused insulated gate field effect transistor and fabrication process" | granted patent | 1996-11-26 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5578514A) · [Google Patents](https://patents.google.com/patent/US5578514A/en) |
+| DE 69218747 D1 "Lateral double diffused field effect transistor with an isolated gate and method of manufacture" | application | 1997-05-07 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69218747D1) · [Google Patents](https://patents.google.com/patent/DE69218747D1/en) |
+| DE 69218747 T2 "Lateral double diffused field effect transistor with an isolated gate and method of manufacture" | translation of granted patent | 1997-07-10 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69218747T2) · [Google Patents](https://patents.google.com/patent/DE69218747T2/en) |
+| EP 0 550 015 A1 "Lateral double diffused insulated gate field effect transistor and fabrication process" | application | 1993-07-07 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0550015A1) · [Google Patents](https://patents.google.com/patent/EP0550015A1/en) |
+| EP 0 550 015 B1 "Lateral double diffused insulated gate field effect transistor and fabrication process" | granted patent | 1997-04-02 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0550015B1) · [Google Patents](https://patents.google.com/patent/EP0550015B1/en) |
+| JP H05343675 A "Lateral-type doubly diffused insulating gate field effect transistor and its manufacture" | application | 1993-12-24 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH05343675A) · [Google Patents](https://patents.google.com/patent/JPH05343675A/en) |
+| JP 3226650 B2 "Lateral double diffusion insulated gate field effect transistor and method of manufacturing the same" | granted patent | 2001-11-05 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3226650B2) · [Google Patents](https://patents.google.com/patent/JP3226650B2/en) |
+| KR 930015099 A "Side double diffusion insulated gate field effect transistor and manufacturing method thereof" | application | 1993-07-23 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR930015099A) · [Google Patents](https://patents.google.com/patent/KR930015099A/en) |
+| KR 100292567 B1 "Side double diffused insulated gate field effect transistor and its manufacturing method" | granted patent | 2001-09-17 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100292567B1) · [Google Patents](https://patents.google.com/patent/KR100292567B1/en) |
+| TW 273040 B | granted patent | 1996-03-21 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW273040B) · [Google Patents](https://patents.google.com/patent/TW273040B/en) |
 
 **Relevance:**
 
@@ -1633,8 +1633,8 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5303558A/en
 
-(patent-gp25461879)=
-## US 5,578,362 A — Polymeric polishing pad containing hollow polymeric microelements
+:::{dropdown} US 5,578,362 A — legal status shown as Expired - Lifetime; expiry not fully bounded from the records retrieved, estimated no later than 2028-05-19
+:name: patent-gp25461879
 
 **Title:** Polymeric polishing pad containing hollow polymeric microelements
 
@@ -1642,7 +1642,7 @@ families and members are counted.
 **Inventors:** Heinz F. Reinhardt; John V. H. Roberts; Harry G. McClain; William D. Budinger; Elmer W. Jensen
 **Dates:** priority 1992-08-19, filing 1994-07-12, grant 1996-11-26
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5578362A, retrieved 2026-09-14)
-**Estimated expiry:** 2022-06-07 — all 30 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6903021B2 (estimated upper bound: grant date + 17 years (US application filed before 1995-06-08))
+**Estimated expiry:** 2028-05-19 — not bounded from the records retrieved: JP2008238399A; latest estimate JP2008238399A (application; any grant would expire at the latest about 20 years from filing (estimated))
 **Google Patents family ID:** `25461879` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1650,35 +1650,35 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,578,362 A | granted patent | 1996-11-26 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5578362A) · [Google Patents](https://patents.google.com/patent/US5578362A/en) |
-| US 5,900,164 A | granted patent | 1999-05-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5900164A) · [Google Patents](https://patents.google.com/patent/US5900164A/en) |
-| US 6,439,989 B1 | granted patent | 2002-08-27 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6439989B1) · [Google Patents](https://patents.google.com/patent/US6439989B1/en) |
-| US 2003/0068960 A1 | application | 2003-04-10 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030068960A1) · [Google Patents](https://patents.google.com/patent/US20030068960A1/en) |
-| US 2004/0224142 A1 | application | 2004-11-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040224142A1) · [Google Patents](https://patents.google.com/patent/US20040224142A1/en) |
-| US 6,899,611 B2 | granted patent | 2005-05-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6899611B2) · [Google Patents](https://patents.google.com/patent/US6899611B2/en) |
-| US 6,903,021 B2 | granted patent | 2005-06-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6903021B2) · [Google Patents](https://patents.google.com/patent/US6903021B2/en) |
-| US 2005/0221741 A1 | application | 2005-10-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050221741A1) · [Google Patents](https://patents.google.com/patent/US20050221741A1/en) |
-| AU 4798493 A | application | 1994-03-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU4798493A) · [Google Patents](https://patents.google.com/patent/AU4798493A/en) |
-| CN 1082567 A | application | 1994-02-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1082567A) · [Google Patents](https://patents.google.com/patent/CN1082567A/en) |
-| CN 1059219 C | granted patent | 2000-12-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1059219C) · [Google Patents](https://patents.google.com/patent/CN1059219C/en) |
-| DE 69319435 D1 | application | 1998-08-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69319435D1) · [Google Patents](https://patents.google.com/patent/DE69319435D1/en) |
-| DE 69319435 T2 | translation of granted patent | 1999-02-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69319435T2) · [Google Patents](https://patents.google.com/patent/DE69319435T2/en) |
-| DE 69332490 D1 | application | 2002-12-19 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69332490D1) · [Google Patents](https://patents.google.com/patent/DE69332490D1/en) |
-| DE 69332490 T2 | translation of granted patent | 2003-09-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69332490T2) · [Google Patents](https://patents.google.com/patent/DE69332490T2/en) |
-| EP 0 656 031 A1 | application | 1995-06-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0656031A1) · [Google Patents](https://patents.google.com/patent/EP0656031A1/en) |
-| EP 0 656 031 A4 | search report | 1995-07-26 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0656031A4) · [Google Patents](https://patents.google.com/patent/EP0656031A4/en) |
-| EP 0 829 328 A2 | application | 1998-03-18 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0829328A2) · [Google Patents](https://patents.google.com/patent/EP0829328A2/en) |
-| EP 0 656 031 B1 | granted patent | 1998-07-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0656031B1) · [Google Patents](https://patents.google.com/patent/EP0656031B1/en) |
-| EP 0 829 328 A3 | search report | 1998-12-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0829328A3) · [Google Patents](https://patents.google.com/patent/EP0829328A3/en) |
-| EP 0 829 328 B1 | granted patent | 2002-11-13 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0829328B1) · [Google Patents](https://patents.google.com/patent/EP0829328B1/en) |
-| JP H08500622 A | application | 1996-01-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH08500622A) · [Google Patents](https://patents.google.com/patent/JPH08500622A/en) |
-| JP 3013105 B2 | granted patent | 2000-02-28 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3013105B2) · [Google Patents](https://patents.google.com/patent/JP3013105B2/en) |
-| JP 2008238399 A | application | 2008-10-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008238399A) · [Google Patents](https://patents.google.com/patent/JP2008238399A/en) |
-| KR 950703019 A | application | 1995-08-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR950703019A) · [Google Patents](https://patents.google.com/patent/KR950703019A/en) |
-| KR 100191227 B1 | granted patent | 1999-06-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100191227B1) · [Google Patents](https://patents.google.com/patent/KR100191227B1/en) |
-| MY 114512 A | application | 2002-11-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMY114512A) · [Google Patents](https://patents.google.com/patent/MY114512A/en) |
-| SG 43335 A1 | application | 1997-10-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG43335A1) · [Google Patents](https://patents.google.com/patent/SG43335A1/en) |
-| TW 264493 B | granted patent | 1995-12-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW264493B) · [Google Patents](https://patents.google.com/patent/TW264493B/en) |
-| WO 1994004599 A1 | international application | 1994-03-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5578362A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1994004599A1) · [Google Patents](https://patents.google.com/patent/WO1994004599A1/en) |
+| US 5,900,164 A "Method for planarizing a semiconductor device surface with polymeric pad containing hollow polymeric microelements" | granted patent | 1999-05-04 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5900164A) · [Google Patents](https://patents.google.com/patent/US5900164A/en) |
+| US 6,439,989 B1 "Polymeric polishing pad having continuously regenerated work surface" | granted patent | 2002-08-27 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6439989B1) · [Google Patents](https://patents.google.com/patent/US6439989B1/en) |
+| US 2003/0068960 A1 "Polymeric polishing pad having continuously regenerated work surface" | application | 2003-04-10 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030068960A1) · [Google Patents](https://patents.google.com/patent/US20030068960A1/en) |
+| US 2004/0224142 A1 "Method of polishing a semiconductor device" | application | 2004-11-11 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040224142A1) · [Google Patents](https://patents.google.com/patent/US20040224142A1/en) |
+| US 6,899,611 B2 "Polishing pad for a semiconductor device having a dissolvable substance" | granted patent | 2005-05-31 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6899611B2) · [Google Patents](https://patents.google.com/patent/US6899611B2/en) |
+| US 6,903,021 B2 "Method of polishing a semiconductor device" | granted patent | 2005-06-07 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6903021B2) · [Google Patents](https://patents.google.com/patent/US6903021B2/en) |
+| US 2005/0221741 A1 "Polymeric polishing pad having continuously regenerated work surface" | application | 2005-10-06 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050221741A1) · [Google Patents](https://patents.google.com/patent/US20050221741A1/en) |
+| AU 4798493 A "Polymeric substrate with polymeric microelements" | application | 1994-03-15 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU4798493A) · [Google Patents](https://patents.google.com/patent/AU4798493A/en) |
+| CN 1082567 A "The polymeric substrate and the making and use method thereof that contain the polymerization microelements" | application | 1994-02-23 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1082567A) · [Google Patents](https://patents.google.com/patent/CN1082567A/en) |
+| CN 1059219 C "A polymeric substrate containing polymeric microelements and methods of making and using the same" | granted patent | 2000-12-06 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1059219C) · [Google Patents](https://patents.google.com/patent/CN1059219C/en) |
+| DE 69319435 D1 "POLYMER SUBSTRATES WITH POLYMERIC MICRO ELEMENTS" | application | 1998-08-06 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69319435D1) · [Google Patents](https://patents.google.com/patent/DE69319435D1/en) |
+| DE 69319435 T2 "POLYMER SUBSTRATES WITH POLYMERIC MICRO ELEMENTS" | translation of granted patent | 1999-02-25 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69319435T2) · [Google Patents](https://patents.google.com/patent/DE69319435T2/en) |
+| DE 69332490 D1 "Polymer substrates with polymeric microelements" | application | 2002-12-19 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69332490D1) · [Google Patents](https://patents.google.com/patent/DE69332490D1/en) |
+| DE 69332490 T2 "Polymer substrates with polymeric microelements" | translation of granted patent | 2003-09-25 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69332490T2) · [Google Patents](https://patents.google.com/patent/DE69332490T2/en) |
+| EP 0 656 031 A1 "Polymeric substrate with polymeric microelements" | application | 1995-06-07 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0656031A1) · [Google Patents](https://patents.google.com/patent/EP0656031A1/en) |
+| EP 0 656 031 A4 "Polymeric substrate with polymeric microelements." | search report | 1995-07-26 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0656031A4) · [Google Patents](https://patents.google.com/patent/EP0656031A4/en) |
+| EP 0 829 328 A2 "Polymeric substrate with polymeric microelements" | application | 1998-03-18 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0829328A2) · [Google Patents](https://patents.google.com/patent/EP0829328A2/en) |
+| EP 0 656 031 B1 "Polymeric substrate with polymeric microelements" | granted patent | 1998-07-01 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0656031B1) · [Google Patents](https://patents.google.com/patent/EP0656031B1/en) |
+| EP 0 829 328 A3 "Polymeric substrate with polymeric microelements" | search report | 1998-12-09 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0829328A3) · [Google Patents](https://patents.google.com/patent/EP0829328A3/en) |
+| EP 0 829 328 B1 "Polymeric substrate with polymeric microelements" | granted patent | 2002-11-13 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0829328B1) · [Google Patents](https://patents.google.com/patent/EP0829328B1/en) |
+| JP H08500622 A "Polymer base material containing polymer microelements" | application | 1996-01-23 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH08500622A) · [Google Patents](https://patents.google.com/patent/JPH08500622A/en) |
+| JP 3013105 B2 "Polymer substrate containing polymer microelements" | granted patent | 2000-02-28 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3013105B2) · [Google Patents](https://patents.google.com/patent/JP3013105B2/en) |
+| JP 2008238399 A "Polishing pad" | application | 2008-10-09 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008238399A) · [Google Patents](https://patents.google.com/patent/JP2008238399A/en) |
+| KR 950703019 A "POLYMERIC SUBSTRATE WITH POLYMERIC MICROELEMENTS" | application | 1995-08-23 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR950703019A) · [Google Patents](https://patents.google.com/patent/KR950703019A/en) |
+| KR 100191227 B1 "Polymeric substrate with polymeric microelements" | granted patent | 1999-06-15 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100191227B1) · [Google Patents](https://patents.google.com/patent/KR100191227B1/en) |
+| MY 114512 A "Polymeric substrate with polymeric microelements" | application | 2002-11-30 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMY114512A) · [Google Patents](https://patents.google.com/patent/MY114512A/en) |
+| SG 43335 A1 "A polymeric substrate containing polymeric microelements and methods of making and using the same" | application | 1997-10-17 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG43335A1) · [Google Patents](https://patents.google.com/patent/SG43335A1/en) |
+| TW 264493 B | granted patent | 1995-12-01 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW264493B) · [Google Patents](https://patents.google.com/patent/TW264493B/en) |
+| WO 1994004599 A1 "Polymeric substrate with polymeric microelements" | international application | 1994-03-03 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1994004599A1) · [Google Patents](https://patents.google.com/patent/WO1994004599A1/en) |
 
 **Relevance:**
 
@@ -1689,6 +1689,7 @@ families and members are counted.
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PAD-RODEL.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5578362A/en
+:::
 
 (patent-gp27479272)=
 ## US 5,693,203 A — Sputtering target assembly having solid-phase bonded interface
@@ -1727,7 +1728,7 @@ families and members are counted.
 **Inventors:** Jeffrey C. Benzing; Eliot K. Broadbent; Kirkwood H. Rough
 **Dates:** priority 1992-11-04, filing 1992-11-04, grant 1994-09-13
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5346578A, retrieved 2026-09-14)
-**Estimated expiry:** 2014-02-25 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5605599A (estimated upper bound: grant date + 17 years (US application filed before 1995-06-08))
+**Estimated expiry:** 2014-02-25 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5605599A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `25518280` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1735,13 +1736,13 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,346,578 A | granted patent | 1994-09-13 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5346578A) · [Google Patents](https://patents.google.com/patent/US5346578A/en) |
-| US 5,405,480 A | granted patent | 1995-04-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5346578A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5405480A) · [Google Patents](https://patents.google.com/patent/US5405480A/en) |
-| US 5,605,599 A | granted patent | 1997-02-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5346578A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5605599A) · [Google Patents](https://patents.google.com/patent/US5605599A/en) |
-| EP 0 596 551 A1 | application | 1994-05-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5346578A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0596551A1) · [Google Patents](https://patents.google.com/patent/EP0596551A1/en) |
-| JP H07326494 A | application | 1995-12-12 | not shown | 2026-09-14 listed in the Google Patents family table of US5346578A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH07326494A) · [Google Patents](https://patents.google.com/patent/JPH07326494A/en) |
-| JP 2804879 B2 | granted patent | 1998-09-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5346578A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2804879B2) · [Google Patents](https://patents.google.com/patent/JP2804879B2/en) |
-| KR 940012512 A | application | 1994-06-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5346578A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR940012512A) · [Google Patents](https://patents.google.com/patent/KR940012512A/en) |
-| KR 970006209 B1 | granted patent | 1997-04-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5346578A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970006209B1) · [Google Patents](https://patents.google.com/patent/KR970006209B1/en) |
+| US 5,405,480 A | granted patent | 1995-04-11 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5405480A) · [Google Patents](https://patents.google.com/patent/US5405480A/en) |
+| US 5,605,599 A "Method of generating plasma having high ion density for substrate processing operation" | granted patent | 1997-02-25 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5605599A) · [Google Patents](https://patents.google.com/patent/US5605599A/en) |
+| EP 0 596 551 A1 | application | 1994-05-11 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0596551A1) · [Google Patents](https://patents.google.com/patent/EP0596551A1/en) |
+| JP H07326494 A "Plasma process equipment" | application | 1995-12-12 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH07326494A) · [Google Patents](https://patents.google.com/patent/JPH07326494A/en) |
+| JP 2804879 B2 "Plasma processing method and apparatus" | granted patent | 1998-09-30 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2804879B2) · [Google Patents](https://patents.google.com/patent/JP2804879B2/en) |
+| KR 940012512 A "Induction plasma processing apparatus" | application | 1994-06-23 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR940012512A) · [Google Patents](https://patents.google.com/patent/KR940012512A/en) |
+| KR 970006209 B1 "Induction plasma processing apparatus" | granted patent | 1997-04-24 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970006209B1) · [Google Patents](https://patents.google.com/patent/KR970006209B1/en) |
 
 **Relevance:**
 
@@ -1763,7 +1764,7 @@ families and members are counted.
 **Inventors:** Rick A. Lutz
 **Dates:** priority 1992-11-30, filing 1992-11-30, grant 1995-08-22
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5442828A, retrieved 2026-09-14)
-**Estimated expiry:** 2013-11-30 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5529638A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2013-06-25 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5529638A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `25529547` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1771,7 +1772,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,442,828 A | granted patent | 1995-08-22 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5442828A) · [Google Patents](https://patents.google.com/patent/US5442828A/en) |
-| US 5,529,638 A | granted patent | 1996-06-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5442828A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5529638A) · [Google Patents](https://patents.google.com/patent/US5529638A/en) |
+| US 5,529,638 A "Method for wafer scrubbing" | granted patent | 1996-06-25 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5529638A) · [Google Patents](https://patents.google.com/patent/US5529638A/en) |
 
 **Relevance:**
 
@@ -1852,7 +1853,7 @@ families and members are counted.
 **Inventors:** Hyun S. Hwang
 **Dates:** priority 1993-05-14, filing 1993-10-12, grant 1994-11-15
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5364807A, retrieved 2026-09-14)
-**Estimated expiry:** 2014-05-14 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR960014718B1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2020-04-20 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3640406B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `19355404` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1860,12 +1861,12 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,364,807 A | granted patent | 1994-11-15 | Expired - Fee Related | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5364807A) · [Google Patents](https://patents.google.com/patent/US5364807A/en) |
-| DE 4344285 A1 | application | 1994-11-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5364807A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE4344285A1) · [Google Patents](https://patents.google.com/patent/DE4344285A1/en) |
-| DE 4344285 B4 | granted patent | 2004-04-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5364807A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE4344285B4) · [Google Patents](https://patents.google.com/patent/DE4344285B4/en) |
-| JP H06333942 A | application | 1994-12-02 | not shown | 2026-09-14 listed in the Google Patents family table of US5364807A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH06333942A) · [Google Patents](https://patents.google.com/patent/JPH06333942A/en) |
-| JP 3640406 B2 | granted patent | 2005-04-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5364807A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3640406B2) · [Google Patents](https://patents.google.com/patent/JP3640406B2/en) |
-| KR 940027104 A | application | 1994-12-10 | not shown | 2026-09-14 listed in the Google Patents family table of US5364807A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR940027104A) · [Google Patents](https://patents.google.com/patent/KR940027104A/en) |
-| KR 960014718 B1 | granted patent | 1996-10-19 | not shown | 2026-09-14 listed in the Google Patents family table of US5364807A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR960014718B1) · [Google Patents](https://patents.google.com/patent/KR960014718B1/en) |
+| DE 4344285 A1 "Method of making a transistor" | application | 1994-11-17 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE4344285A1) · [Google Patents](https://patents.google.com/patent/DE4344285A1/en) |
+| DE 4344285 B4 "Method of making a transistor" | granted patent | 2004-04-15 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE4344285B4) · [Google Patents](https://patents.google.com/patent/DE4344285B4/en) |
+| JP H06333942 A "Transistor manufacturing method" | application | 1994-12-02 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH06333942A) · [Google Patents](https://patents.google.com/patent/JPH06333942A/en) |
+| JP 3640406 B2 "Method for manufacturing transistor" | granted patent | 2005-04-20 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3640406B2) · [Google Patents](https://patents.google.com/patent/JP3640406B2/en) |
+| KR 940027104 A "Transistor Manufacturing Method" | application | 1994-12-10 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR940027104A) · [Google Patents](https://patents.google.com/patent/KR940027104A/en) |
+| KR 960014718 B1 "Method of manufacturing transistor" | granted patent | 1996-10-19 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR960014718B1) · [Google Patents](https://patents.google.com/patent/KR960014718B1/en) |
 
 **Relevance:**
 
@@ -1918,7 +1919,7 @@ families and members are counted.
 **Inventors:** Tomohiro Yuuki
 **Dates:** priority 1993-07-24, filing 1994-07-22, grant 1997-05-27
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5633212A, retrieved 2026-09-14)
-**Estimated expiry:** 2015-09-22 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5810929A (estimated upper bound: grant date + 17 years (US application filed before 1995-06-08))
+**Estimated expiry:** 2014-07-24 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0710935U (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 **Google Patents family ID:** `12697185` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -1926,8 +1927,8 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,633,212 A | granted patent | 1997-05-27 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5633212A) · [Google Patents](https://patents.google.com/patent/US5633212A/en) |
-| US 5,810,929 A | granted patent | 1998-09-22 | not shown | 2026-09-14 listed in the Google Patents family table of US5633212A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5810929A) · [Google Patents](https://patents.google.com/patent/US5810929A/en) |
-| JP H0710935 U | utility model | 1995-02-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5633212A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0710935U) · [Google Patents](https://patents.google.com/patent/JPH0710935U/en) |
+| US 5,810,929 A | granted patent | 1998-09-22 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5810929A) · [Google Patents](https://patents.google.com/patent/US5810929A/en) |
+| JP H0710935 U "Vertical heat treatment furnace" | utility model | 1995-02-14 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0710935U) · [Google Patents](https://patents.google.com/patent/JPH0710935U/en) |
 
 **Relevance:**
 
@@ -1956,9 +1957,9 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,503,678 A | granted patent | 1996-04-02 | Expired - Fee Related | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5503678A) · [Google Patents](https://patents.google.com/patent/US5503678A/en) |
-| JP H07130662 A | application | 1995-05-19 | not shown | 2026-09-14 listed in the Google Patents family table of US5503678A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH07130662A) · [Google Patents](https://patents.google.com/patent/JPH07130662A/en) |
-| KR 950015558 A | application | 1995-06-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5503678A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR950015558A) · [Google Patents](https://patents.google.com/patent/KR950015558A/en) |
-| KR 0148616 B1 | granted patent | 1998-12-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5503678A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR0148616B1) · [Google Patents](https://patents.google.com/patent/KR0148616B1/en) |
+| JP H07130662 A "Vertical low pressure CVD equipment" | application | 1995-05-19 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH07130662A) · [Google Patents](https://patents.google.com/patent/JPH07130662A/en) |
+| KR 950015558 A "Vertical Vertical Pressure Reduction CVD System" | application | 1995-06-17 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR950015558A) · [Google Patents](https://patents.google.com/patent/KR950015558A/en) |
+| KR 0148616 B1 "Vertical Vertical Pressure Reduction CVD System" | granted patent | 1998-12-01 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR0148616B1) · [Google Patents](https://patents.google.com/patent/KR0148616B1/en) |
 
 **Relevance:**
 
@@ -1987,9 +1988,9 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,551,984 A | granted patent | 1996-09-03 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5551984A) · [Google Patents](https://patents.google.com/patent/US5551984A/en) |
-| KR 950021004 A | application | 1995-07-26 | not shown | 2026-09-14 listed in the Google Patents family table of US5551984A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR950021004A) · [Google Patents](https://patents.google.com/patent/KR950021004A/en) |
-| KR 100269413 B1 | granted patent | 2000-11-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5551984A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100269413B1) · [Google Patents](https://patents.google.com/patent/KR100269413B1/en) |
-| TW 273574 B | granted patent | 1996-04-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5551984A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW273574B) · [Google Patents](https://patents.google.com/patent/TW273574B/en) |
+| KR 950021004 A "Heat treatment equipment" | application | 1995-07-26 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR950021004A) · [Google Patents](https://patents.google.com/patent/KR950021004A/en) |
+| KR 100269413 B1 "Heat treatment equipment" | granted patent | 2000-11-01 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100269413B1) · [Google Patents](https://patents.google.com/patent/KR100269413B1/en) |
+| TW 273574 B | granted patent | 1996-04-01 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW273574B) · [Google Patents](https://patents.google.com/patent/TW273574B/en) |
 
 **Relevance:**
 
@@ -2010,7 +2011,7 @@ families and members are counted.
 **Inventors:** Naftali E. Lustig; Katherine L. Saenger; Ho-Ming Tong
 **Dates:** priority 1993-12-22, filing 1993-12-22, grant 1995-07-18
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5433651A, retrieved 2026-09-14)
-**Estimated expiry:** 2014-12-22 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH07235520A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2014-11-24 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of EP0663265B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `22631367` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2018,12 +2019,12 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,433,651 A | granted patent | 1995-07-18 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5433651A) · [Google Patents](https://patents.google.com/patent/US5433651A/en) |
-| DE 69410772 D1 | application | 1998-07-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5433651A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69410772D1) · [Google Patents](https://patents.google.com/patent/DE69410772D1/en) |
-| DE 69410772 T2 | translation of granted patent | 1999-02-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5433651A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69410772T2) · [Google Patents](https://patents.google.com/patent/DE69410772T2/en) |
-| EP 0 663 265 A1 | application | 1995-07-19 | not shown | 2026-09-14 listed in the Google Patents family table of US5433651A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0663265A1) · [Google Patents](https://patents.google.com/patent/EP0663265A1/en) |
-| EP 0 663 265 B1 | granted patent | 1998-06-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5433651A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0663265B1) · [Google Patents](https://patents.google.com/patent/EP0663265B1/en) |
-| JP H07235520 A | application | 1995-09-05 | not shown | 2026-09-14 listed in the Google Patents family table of US5433651A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH07235520A) · [Google Patents](https://patents.google.com/patent/JPH07235520A/en) |
-| JP 2561812 B2 | granted patent | 1996-12-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5433651A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2561812B2) · [Google Patents](https://patents.google.com/patent/JP2561812B2/en) |
+| DE 69410772 D1 "In-situ control technology and device for determining the end of a chemical-mechanical leveling process" | application | 1998-07-09 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69410772D1) · [Google Patents](https://patents.google.com/patent/DE69410772D1/en) |
+| DE 69410772 T2 "In-situ control technology and device for determining the end of a chemical-mechanical leveling process" | translation of granted patent | 1999-02-25 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69410772T2) · [Google Patents](https://patents.google.com/patent/DE69410772T2/en) |
+| EP 0 663 265 A1 | application | 1995-07-19 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0663265A1) · [Google Patents](https://patents.google.com/patent/EP0663265A1/en) |
+| EP 0 663 265 B1 "In-situ endpoint detection and process monitoring apparatus for chemical-mechanical polishing" | granted patent | 1998-06-03 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0663265B1) · [Google Patents](https://patents.google.com/patent/EP0663265B1/en) |
+| JP H07235520 A "Polishing process monitoring device and monitoring method thereof" | application | 1995-09-05 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH07235520A) · [Google Patents](https://patents.google.com/patent/JPH07235520A/en) |
+| JP 2561812 B2 "Polishing process monitoring device and monitoring method thereof" | granted patent | 1996-12-11 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2561812B2) · [Google Patents](https://patents.google.com/patent/JP2561812B2/en) |
 
 **Relevance:**
 
@@ -2083,7 +2084,7 @@ families and members are counted.
 **Inventors:** Mohammad Kamarehi; James E. Simpson
 **Dates:** priority 1994-02-25, filing 1994-02-25, grant 1996-03-12
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5498308A, retrieved 2026-09-14)
-**Estimated expiry:** 2015-02-25 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH0864584A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-07-23 — all 7 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3190536B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `22748832` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2091,12 +2092,12 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,498,308 A | granted patent | 1996-03-12 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5498308A) · [Google Patents](https://patents.google.com/patent/US5498308A/en) |
-| DE 69510576 D1 | application | 1999-08-12 | not shown | 2026-09-14 listed in the Google Patents family table of US5498308A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69510576D1) · [Google Patents](https://patents.google.com/patent/DE69510576D1/en) |
-| DE 69510576 T2 | translation of granted patent | 2000-01-13 | not shown | 2026-09-14 listed in the Google Patents family table of US5498308A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69510576T2) · [Google Patents](https://patents.google.com/patent/DE69510576T2/en) |
-| EP 0 670 587 A1 | application | 1995-09-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5498308A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0670587A1) · [Google Patents](https://patents.google.com/patent/EP0670587A1/en) |
-| EP 0 670 587 B1 | granted patent | 1999-07-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5498308A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0670587B1) · [Google Patents](https://patents.google.com/patent/EP0670587B1/en) |
-| JP H0864584 A | application | 1996-03-08 | not shown | 2026-09-14 listed in the Google Patents family table of US5498308A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0864584A) · [Google Patents](https://patents.google.com/patent/JPH0864584A/en) |
-| JP 3190536 B2 | granted patent | 2001-07-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5498308A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3190536B2) · [Google Patents](https://patents.google.com/patent/JP3190536B2/en) |
+| DE 69510576 D1 "Plasma stripping device with microwave trap" | application | 1999-08-12 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69510576D1) · [Google Patents](https://patents.google.com/patent/DE69510576D1/en) |
+| DE 69510576 T2 "Plasma stripping device with microwave trap" | translation of granted patent | 2000-01-13 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69510576T2) · [Google Patents](https://patents.google.com/patent/DE69510576T2/en) |
+| EP 0 670 587 A1 | application | 1995-09-06 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0670587A1) · [Google Patents](https://patents.google.com/patent/EP0670587A1/en) |
+| EP 0 670 587 B1 | granted patent | 1999-07-07 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0670587B1) · [Google Patents](https://patents.google.com/patent/EP0670587B1/en) |
+| JP H0864584 A | application | 1996-03-08 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0864584A) · [Google Patents](https://patents.google.com/patent/JPH0864584A/en) |
+| JP 3190536 B2 | granted patent | 2001-07-23 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3190536B2) · [Google Patents](https://patents.google.com/patent/JP3190536B2/en) |
 
 **Relevance:**
 
@@ -2156,7 +2157,7 @@ families and members are counted.
 **Inventors:** John R. Jordan, III; Mehrdad Nikoonahad; Keith B. Wells
 **Dates:** priority 1994-06-20, filing 1995-09-29, grant 1999-01-26
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5864394A, retrieved 2026-09-14)
-**Estimated expiry:** 2015-06-20 — all 26 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of WO1996018094A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2015-12-08 — all 26 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR100669846B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `27502820` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2164,31 +2165,31 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,864,394 A | granted patent | 1999-01-26 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5864394A) · [Google Patents](https://patents.google.com/patent/US5864394A/en) |
-| EP 0 797 763 A1 | application | 1997-10-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0797763A1) · [Google Patents](https://patents.google.com/patent/EP0797763A1/en) |
-| EP 0 804 722 A1 | application | 1997-11-05 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0804722A1) · [Google Patents](https://patents.google.com/patent/EP0804722A1/en) |
-| EP 0 797 763 A4 | search report | 1999-03-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0797763A4) · [Google Patents](https://patents.google.com/patent/EP0797763A4/en) |
-| EP 0 804 722 A4 | search report | 1999-03-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0804722A4) · [Google Patents](https://patents.google.com/patent/EP0804722A4/en) |
-| EP 1 777 511 A2 | application | 2007-04-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1777511A2) · [Google Patents](https://patents.google.com/patent/EP1777511A2/en) |
-| EP 1 777 511 A3 | search report | 2007-12-12 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1777511A3) · [Google Patents](https://patents.google.com/patent/EP1777511A3/en) |
-| EP 0 804 722 B1 | granted patent | 2010-11-10 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0804722B1) · [Google Patents](https://patents.google.com/patent/EP0804722B1/en) |
-| EP 0 797 763 B1 | granted patent | 2010-12-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0797763B1) · [Google Patents](https://patents.google.com/patent/EP0797763B1/en) |
-| JP H10510359 A | application | 1998-10-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10510359A) · [Google Patents](https://patents.google.com/patent/JPH10510359A/en) |
-| JP 2001525918 A | application | 2001-12-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001525918A) · [Google Patents](https://patents.google.com/patent/JP2001525918A/en) |
-| JP 2006220667 A | application | 2006-08-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2006220667A) · [Google Patents](https://patents.google.com/patent/JP2006220667A/en) |
-| JP 2006276026 A | application | 2006-10-12 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2006276026A) · [Google Patents](https://patents.google.com/patent/JP2006276026A/en) |
-| JP 3874421 B2 | granted patent | 2007-01-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3874421B2) · [Google Patents](https://patents.google.com/patent/JP3874421B2/en) |
-| JP 3874422 B2 | granted patent | 2007-01-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3874422B2) · [Google Patents](https://patents.google.com/patent/JP3874422B2/en) |
-| JP 4090069 B2 | granted patent | 2008-05-28 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4090069B2) · [Google Patents](https://patents.google.com/patent/JP4090069B2/en) |
-| JP 4298720 B2 | granted patent | 2009-07-22 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4298720B2) · [Google Patents](https://patents.google.com/patent/JP4298720B2/en) |
-| KR 19980700562 A | application | 1998-03-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980700562A) · [Google Patents](https://patents.google.com/patent/KR19980700562A/en) |
-| KR 20040033059 A | application | 2004-04-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20040033059A) · [Google Patents](https://patents.google.com/patent/KR20040033059A/en) |
-| KR 20040033060 A | application | 2004-04-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20040033060A) · [Google Patents](https://patents.google.com/patent/KR20040033060A/en) |
-| KR 100457803 B1 | granted patent | 2005-04-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100457803B1) · [Google Patents](https://patents.google.com/patent/KR100457803B1/en) |
-| KR 100481118 B1 | granted patent | 2005-09-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100481118B1) · [Google Patents](https://patents.google.com/patent/KR100481118B1/en) |
-| KR 100669845 B1 | granted patent | 2007-01-16 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100669845B1) · [Google Patents](https://patents.google.com/patent/KR100669845B1/en) |
-| KR 100669846 B1 | granted patent | 2007-01-16 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100669846B1) · [Google Patents](https://patents.google.com/patent/KR100669846B1/en) |
-| WO 1996018093 A1 | international application | 1996-06-13 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1996018093A1) · [Google Patents](https://patents.google.com/patent/WO1996018093A1/en) |
-| WO 1996018094 A1 | international application | 1996-06-13 | not shown | 2026-09-14 listed in the Google Patents family table of US5864394A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1996018094A1) · [Google Patents](https://patents.google.com/patent/WO1996018094A1/en) |
+| EP 0 797 763 A1 "Scanning system for inspecting anomalies on surfaces" | application | 1997-10-01 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0797763A1) · [Google Patents](https://patents.google.com/patent/EP0797763A1/en) |
+| EP 0 804 722 A1 | application | 1997-11-05 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0804722A1) · [Google Patents](https://patents.google.com/patent/EP0804722A1/en) |
+| EP 0 797 763 A4 "SCANNING DEVICE FOR INSPECTING SURFACE ANOMALIES" | search report | 1999-03-24 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0797763A4) · [Google Patents](https://patents.google.com/patent/EP0797763A4/en) |
+| EP 0 804 722 A4 "SURFACE INSPECTION SYSTEM" | search report | 1999-03-24 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0804722A4) · [Google Patents](https://patents.google.com/patent/EP0804722A4/en) |
+| EP 1 777 511 A2 "Scanning system for inspecting anomalies on surfaces" | application | 2007-04-25 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1777511A2) · [Google Patents](https://patents.google.com/patent/EP1777511A2/en) |
+| EP 1 777 511 A3 "Scanning system for inspecting anomalies on surfaces" | search report | 2007-12-12 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1777511A3) · [Google Patents](https://patents.google.com/patent/EP1777511A3/en) |
+| EP 0 804 722 B1 | granted patent | 2010-11-10 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0804722B1) · [Google Patents](https://patents.google.com/patent/EP0804722B1/en) |
+| EP 0 797 763 B1 "Scanning system for inspecting anomalies on surfaces" | granted patent | 2010-12-01 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0797763B1) · [Google Patents](https://patents.google.com/patent/EP0797763B1/en) |
+| JP H10510359 A "Scanning system for inspecting surface abnormalities" | application | 1998-10-06 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10510359A) · [Google Patents](https://patents.google.com/patent/JPH10510359A/en) |
+| JP 2001525918 A | application | 2001-12-11 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001525918A) · [Google Patents](https://patents.google.com/patent/JP2001525918A/en) |
+| JP 2006220667 A | application | 2006-08-24 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2006220667A) · [Google Patents](https://patents.google.com/patent/JP2006220667A/en) |
+| JP 2006276026 A "Scanning system for inspecting surface anomalies" | application | 2006-10-12 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2006276026A) · [Google Patents](https://patents.google.com/patent/JP2006276026A/en) |
+| JP 3874421 B2 "Scanning system for inspecting surface anomalies" | granted patent | 2007-01-31 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3874421B2) · [Google Patents](https://patents.google.com/patent/JP3874421B2/en) |
+| JP 3874422 B2 | granted patent | 2007-01-31 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3874422B2) · [Google Patents](https://patents.google.com/patent/JP3874422B2/en) |
+| JP 4090069 B2 "Optical system and method for detecting surface anomalies" | granted patent | 2008-05-28 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4090069B2) · [Google Patents](https://patents.google.com/patent/JP4090069B2/en) |
+| JP 4298720 B2 "Surface inspection system and surface inspection method" | granted patent | 2009-07-22 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4298720B2) · [Google Patents](https://patents.google.com/patent/JP4298720B2/en) |
+| KR 19980700562 A | application | 1998-03-30 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980700562A) · [Google Patents](https://patents.google.com/patent/KR19980700562A/en) |
+| KR 20040033059 A "Scanning method and system for inspecting anomalies on surface" | application | 2004-04-17 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20040033059A) · [Google Patents](https://patents.google.com/patent/KR20040033059A/en) |
+| KR 20040033060 A "Scanning method and system for inspecting anomalies on surface" | application | 2004-04-17 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20040033060A) · [Google Patents](https://patents.google.com/patent/KR20040033060A/en) |
+| KR 100457803 B1 "Surface Inspection System" | granted patent | 2005-04-20 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100457803B1) · [Google Patents](https://patents.google.com/patent/KR100457803B1/en) |
+| KR 100481118 B1 "Scanning method and system for inspecting anomalies on surface" | granted patent | 2005-09-07 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100481118B1) · [Google Patents](https://patents.google.com/patent/KR100481118B1/en) |
+| KR 100669845 B1 "Scanning method and system for inspecting abnormalities on the surface" | granted patent | 2007-01-16 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100669845B1) · [Google Patents](https://patents.google.com/patent/KR100669845B1/en) |
+| KR 100669846 B1 "Scanning method and system for inspecting abnormalities on the surface" | granted patent | 2007-01-16 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100669846B1) · [Google Patents](https://patents.google.com/patent/KR100669846B1/en) |
+| WO 1996018093 A1 "Scanning system for inspecting anomalies on surfaces" | international application | 1996-06-13 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1996018093A1) · [Google Patents](https://patents.google.com/patent/WO1996018093A1/en) |
+| WO 1996018094 A1 | international application | 1996-06-13 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1996018094A1) · [Google Patents](https://patents.google.com/patent/WO1996018094A1/en) |
 
 **Relevance:**
 
@@ -2209,7 +2210,7 @@ families and members are counted.
 **Inventors:** Gerald Z. Yin; Hiroji Hanawa; Diana X. Ma; Donald Olgado
 **Dates:** priority 1994-07-18, filing 1994-07-18, grant 1996-07-30
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5540824A, retrieved 2026-09-14)
-**Estimated expiry:** 2015-07-18 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR960005832A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2015-07-18 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3929514B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `23061269` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2217,15 +2218,15 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,540,824 A | granted patent | 1996-07-30 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5540824A) · [Google Patents](https://patents.google.com/patent/US5540824A/en) |
-| AT E211304 T1 | translation of granted patent | 2002-01-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5540824A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DATE211304T1) · [Google Patents](https://patents.google.com/patent/ATE211304T1/en) |
-| DE 69524683 D1 | application | 2002-01-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5540824A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69524683D1) · [Google Patents](https://patents.google.com/patent/DE69524683D1/en) |
-| DE 69524683 T2 | translation of granted patent | 2002-08-08 | not shown | 2026-09-14 listed in the Google Patents family table of US5540824A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69524683T2) · [Google Patents](https://patents.google.com/patent/DE69524683T2/en) |
-| EP 0 694 949 A2 | application | 1996-01-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5540824A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0694949A2) · [Google Patents](https://patents.google.com/patent/EP0694949A2/en) |
-| EP 0 694 949 A3 | search report | 1998-12-16 | not shown | 2026-09-14 listed in the Google Patents family table of US5540824A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0694949A3) · [Google Patents](https://patents.google.com/patent/EP0694949A3/en) |
-| EP 0 694 949 B1 | granted patent | 2001-12-19 | not shown | 2026-09-14 listed in the Google Patents family table of US5540824A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0694949B1) · [Google Patents](https://patents.google.com/patent/EP0694949B1/en) |
-| JP H08213196 A | application | 1996-08-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5540824A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH08213196A) · [Google Patents](https://patents.google.com/patent/JPH08213196A/en) |
-| JP 3929514 B2 | granted patent | 2007-06-13 | not shown | 2026-09-14 listed in the Google Patents family table of US5540824A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3929514B2) · [Google Patents](https://patents.google.com/patent/JP3929514B2/en) |
-| KR 960005832 A | application | 1996-02-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5540824A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR960005832A) · [Google Patents](https://patents.google.com/patent/KR960005832A/en) |
+| AT E211304 T1 "INDUCTIVELY COUPLED PLASMA REACTORS" | translation of granted patent | 2002-01-15 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DATE211304T1) · [Google Patents](https://patents.google.com/patent/ATE211304T1/en) |
+| DE 69524683 D1 "Inductively coupled plasma reactors" | application | 2002-01-31 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69524683D1) · [Google Patents](https://patents.google.com/patent/DE69524683D1/en) |
+| DE 69524683 T2 "Inductively coupled plasma reactors" | translation of granted patent | 2002-08-08 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69524683T2) · [Google Patents](https://patents.google.com/patent/DE69524683T2/en) |
+| EP 0 694 949 A2 "Inductively coupled plasma reactors" | application | 1996-01-31 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0694949A2) · [Google Patents](https://patents.google.com/patent/EP0694949A2/en) |
+| EP 0 694 949 A3 "Inductively coupled plasma reactors" | search report | 1998-12-16 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0694949A3) · [Google Patents](https://patents.google.com/patent/EP0694949A3/en) |
+| EP 0 694 949 B1 "Inductively coupled plasma reactors" | granted patent | 2001-12-19 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0694949B1) · [Google Patents](https://patents.google.com/patent/EP0694949B1/en) |
+| JP H08213196 A "Plasma reactor with multi-section RF coil and isolated conductive lid" | application | 1996-08-20 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH08213196A) · [Google Patents](https://patents.google.com/patent/JPH08213196A/en) |
+| JP 3929514 B2 "Plasma reactor with multi-section RF coil and isolated conductive lid" | granted patent | 2007-06-13 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3929514B2) · [Google Patents](https://patents.google.com/patent/JP3929514B2/en) |
+| KR 960005832 A | application | 1996-02-23 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR960005832A) · [Google Patents](https://patents.google.com/patent/KR960005832A/en) |
 
 **Relevance:**
 
@@ -2261,7 +2262,7 @@ families and members are counted.
 **Inventors:** Glenn M. Tom; James V. McManus
 **Dates:** priority 1994-10-13, filing 1994-10-13, grant 1996-05-21
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5518528A, retrieved 2026-09-14)
-**Estimated expiry:** 2017-09-26 — all 35 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6125131A (estimated upper bound: grant date + 17 years (US application filed before 1995-06-08))
+**Estimated expiry:** 2020-11-29 — all 35 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of GR3034932T3 (estimated: 20 years from the filing date shown; no term remains for any grant on it)
 **Google Patents family ID:** `23253952` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2269,40 +2270,40 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,518,528 A | granted patent | 1996-05-21 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5518528A) · [Google Patents](https://patents.google.com/patent/US5518528A/en) |
-| US 5,704,965 A | granted patent | 1998-01-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5704965A) · [Google Patents](https://patents.google.com/patent/US5704965A/en) |
-| US 5,935,305 A | granted patent | 1999-08-10 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5935305A) · [Google Patents](https://patents.google.com/patent/US5935305A/en) |
-| US 6,125,131 A | granted patent | 2000-09-26 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6125131A) · [Google Patents](https://patents.google.com/patent/US6125131A/en) |
-| AT E195888 T1 | translation of granted patent | 2000-09-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DATE195888T1) · [Google Patents](https://patents.google.com/patent/ATE195888T1/en) |
-| AU 3830095 A | application | 1996-05-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU3830095A) · [Google Patents](https://patents.google.com/patent/AU3830095A/en) |
-| AU 710453 B2 | granted patent | 1999-09-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU710453B2) · [Google Patents](https://patents.google.com/patent/AU710453B2/en) |
-| BR 9509134 A | application | 1998-11-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DBR9509134A) · [Google Patents](https://patents.google.com/patent/BR9509134A/en) |
-| CA 2202466 A1 | application | 1996-04-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCA2202466A1) · [Google Patents](https://patents.google.com/patent/CA2202466A1/en) |
-| CA 2202466 C | application | 2004-07-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCA2202466C) · [Google Patents](https://patents.google.com/patent/CA2202466C/en) |
-| CN 1177307 A | application | 1998-03-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1177307A) · [Google Patents](https://patents.google.com/patent/CN1177307A/en) |
-| CN 1132662 C | granted patent | 2003-12-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1132662C) · [Google Patents](https://patents.google.com/patent/CN1132662C/en) |
-| DE 785817 T1 | translation of granted patent | 1998-01-29 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE785817T1) · [Google Patents](https://patents.google.com/patent/DE785817T1/en) |
-| DE 69518657 D1 | application | 2000-10-05 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69518657D1) · [Google Patents](https://patents.google.com/patent/DE69518657D1/en) |
-| DE 69518657 T2 | translation of granted patent | 2001-05-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69518657T2) · [Google Patents](https://patents.google.com/patent/DE69518657T2/en) |
-| DK 0785817 T3 | translation of granted patent | 2001-01-08 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDK0785817T3) · [Google Patents](https://patents.google.com/patent/DK0785817T3/en) |
-| EP 0 785 817 A1 | application | 1997-07-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0785817A1) · [Google Patents](https://patents.google.com/patent/EP0785817A1/en) |
-| EP 0 785 817 A4 | search report | 1998-07-29 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0785817A4) · [Google Patents](https://patents.google.com/patent/EP0785817A4/en) |
-| EP 0 785 817 B1 | granted patent | 2000-08-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0785817B1) · [Google Patents](https://patents.google.com/patent/EP0785817B1/en) |
-| ES 2150588 T3 | translation of granted patent | 2000-12-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DES2150588T3) · [Google Patents](https://patents.google.com/patent/ES2150588T3/en) |
-| GR 3034932 T3 | application | 2001-02-28 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DGR3034932T3) · [Google Patents](https://patents.google.com/patent/GR3034932T3/en) |
-| IL 115619 A0 | application | 1996-01-19 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DIL115619A0) · [Google Patents](https://patents.google.com/patent/IL115619A0/en) |
-| IL 115619 A | application | 2000-12-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DIL115619A) · [Google Patents](https://patents.google.com/patent/IL115619A/en) |
-| JP H10503268 A | application | 1998-03-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10503268A) · [Google Patents](https://patents.google.com/patent/JPH10503268A/en) |
-| JP H11264500 A | application | 1999-09-28 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH11264500A) · [Google Patents](https://patents.google.com/patent/JPH11264500A/en) |
-| JP 3058918 B2 | granted patent | 2000-07-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3058918B2) · [Google Patents](https://patents.google.com/patent/JP3058918B2/en) |
-| JP 2004278799 A | application | 2004-10-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2004278799A) · [Google Patents](https://patents.google.com/patent/JP2004278799A/en) |
-| JP 3916788 B2 | granted patent | 2007-05-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3916788B2) · [Google Patents](https://patents.google.com/patent/JP3916788B2/en) |
-| JP 2007309524 A | application | 2007-11-29 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2007309524A) · [Google Patents](https://patents.google.com/patent/JP2007309524A/en) |
-| JP 4279191 B2 | granted patent | 2009-06-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4279191B2) · [Google Patents](https://patents.google.com/patent/JP4279191B2/en) |
-| JP 4934526 B2 | granted patent | 2012-05-16 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4934526B2) · [Google Patents](https://patents.google.com/patent/JP4934526B2/en) |
-| KR 100199885 B1 | granted patent | 1999-06-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100199885B1) · [Google Patents](https://patents.google.com/patent/KR100199885B1/en) |
-| MX 9702722 A | application | 1998-02-28 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMX9702722A) · [Google Patents](https://patents.google.com/patent/MX9702722A/en) |
-| PT 785817 E | application | 2001-03-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DPT785817E) · [Google Patents](https://patents.google.com/patent/PT785817E/en) |
-| WO 1996011739 A1 | international application | 1996-04-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5518528A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1996011739A1) · [Google Patents](https://patents.google.com/patent/WO1996011739A1/en) |
+| US 5,704,965 A "Fluid storage and delivery system utilizing carbon sorbent medium" | granted patent | 1998-01-06 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5704965A) · [Google Patents](https://patents.google.com/patent/US5704965A/en) |
+| US 5,935,305 A "Storage and delivery system for gaseous compounds" | granted patent | 1999-08-10 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5935305A) · [Google Patents](https://patents.google.com/patent/US5935305A/en) |
+| US 6,125,131 A "Laser system utilizing sorbent-based gas storage and delivery system" | granted patent | 2000-09-26 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6125131A) · [Google Patents](https://patents.google.com/patent/US6125131A/en) |
+| AT E195888 T1 "STORAGE AND DISPENSING SYSTEM FOR GASEOUS COMPOUNDS" | translation of granted patent | 2000-09-15 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DATE195888T1) · [Google Patents](https://patents.google.com/patent/ATE195888T1/en) |
+| AU 3830095 A "Storage and delivery system for gaseous compounds" | application | 1996-05-06 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU3830095A) · [Google Patents](https://patents.google.com/patent/AU3830095A/en) |
+| AU 710453 B2 "Storage and delivery system for gaseous compounds" | granted patent | 1999-09-23 | Expired | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU710453B2) · [Google Patents](https://patents.google.com/patent/AU710453B2/en) |
+| BR 9509134 A "Adsorption-desorption apparatus ion implantation system process for the supply of gaseous reagent adsorption-desorption process and process for storage and distribution of sorbable gas" | application | 1998-11-03 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DBR9509134A) · [Google Patents](https://patents.google.com/patent/BR9509134A/en) |
+| CA 2202466 A1 "Storage and delivery system for gaseous compounds" | application | 1996-04-25 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCA2202466A1) · [Google Patents](https://patents.google.com/patent/CA2202466A1/en) |
+| CA 2202466 C "Storage and delivery system for gaseous compounds" | application | 2004-07-06 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCA2202466C) · [Google Patents](https://patents.google.com/patent/CA2202466C/en) |
+| CN 1177307 A "Storage and release systems for gaseous compounds" | application | 1998-03-25 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1177307A) · [Google Patents](https://patents.google.com/patent/CN1177307A/en) |
+| CN 1132662 C "Storage and release systems for gaseous compounds" | granted patent | 2003-12-31 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1132662C) · [Google Patents](https://patents.google.com/patent/CN1132662C/en) |
+| DE 785817 T1 "STORAGE AND DELIVERY SYSTEM FOR GASEOUS CONNECTIONS" | translation of granted patent | 1998-01-29 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE785817T1) · [Google Patents](https://patents.google.com/patent/DE785817T1/en) |
+| DE 69518657 D1 "STORAGE AND DELIVERY SYSTEM FOR GASEOUS CONNECTIONS" | application | 2000-10-05 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69518657D1) · [Google Patents](https://patents.google.com/patent/DE69518657D1/en) |
+| DE 69518657 T2 "STORAGE AND DELIVERY SYSTEM FOR GASEOUS CONNECTIONS" | translation of granted patent | 2001-05-03 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69518657T2) · [Google Patents](https://patents.google.com/patent/DE69518657T2/en) |
+| DK 0785817 T3 "Gaseous storage and distribution system" | translation of granted patent | 2001-01-08 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDK0785817T3) · [Google Patents](https://patents.google.com/patent/DK0785817T3/en) |
+| EP 0 785 817 A1 "Storage and delivery system for gaseous compounds" | application | 1997-07-30 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0785817A1) · [Google Patents](https://patents.google.com/patent/EP0785817A1/en) |
+| EP 0 785 817 A4 "Storage and delivery system for gaseous compounds" | search report | 1998-07-29 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0785817A4) · [Google Patents](https://patents.google.com/patent/EP0785817A4/en) |
+| EP 0 785 817 B1 "Storage and delivery system for gaseous compounds" | granted patent | 2000-08-30 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0785817B1) · [Google Patents](https://patents.google.com/patent/EP0785817B1/en) |
+| ES 2150588 T3 "STORAGE AND DOSAGE SYSTEM OF GASEOUS COMPOUNDS." | translation of granted patent | 2000-12-01 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DES2150588T3) · [Google Patents](https://patents.google.com/patent/ES2150588T3/en) |
+| GR 3034932 T3 "Storage and delivery system for gaseous compounds" | application | 2001-02-28 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DGR3034932T3) · [Google Patents](https://patents.google.com/patent/GR3034932T3/en) |
+| IL 115619 A0 "Storage and delivery system for gaseous hydride halide, and organometallic group v compounds" | application | 1996-01-19 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DIL115619A0) · [Google Patents](https://patents.google.com/patent/IL115619A0/en) |
+| IL 115619 A "Storage and delivery system for gaseous hydride halide and organometallic group V compounds" | application | 2000-12-06 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DIL115619A) · [Google Patents](https://patents.google.com/patent/IL115619A/en) |
+| JP H10503268 A "System for storage and delivery of gaseous compounds" | application | 1998-03-24 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10503268A) · [Google Patents](https://patents.google.com/patent/JPH10503268A/en) |
+| JP H11264500 A "Storage and feed system for gas compound" | application | 1999-09-28 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH11264500A) · [Google Patents](https://patents.google.com/patent/JPH11264500A/en) |
+| JP 3058918 B2 "System for storage and delivery of gaseous compounds" | granted patent | 2000-07-04 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3058918B2) · [Google Patents](https://patents.google.com/patent/JP3058918B2/en) |
+| JP 2004278799 A "System for storing and delivering gas compound" | application | 2004-10-07 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2004278799A) · [Google Patents](https://patents.google.com/patent/JP2004278799A/en) |
+| JP 3916788 B2 "Gas compound storage and delivery system" | granted patent | 2007-05-23 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3916788B2) · [Google Patents](https://patents.google.com/patent/JP3916788B2/en) |
+| JP 2007309524 A "Storage and delivery system for gaseous compound" | application | 2007-11-29 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2007309524A) · [Google Patents](https://patents.google.com/patent/JP2007309524A/en) |
+| JP 4279191 B2 "Gas compound storage and delivery system" | granted patent | 2009-06-17 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4279191B2) · [Google Patents](https://patents.google.com/patent/JP4279191B2/en) |
+| JP 4934526 B2 "Gas compound storage and delivery system" | granted patent | 2012-05-16 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4934526B2) · [Google Patents](https://patents.google.com/patent/JP4934526B2/en) |
+| KR 100199885 B1 "Storage and distribution system for gaseous compounds" | granted patent | 1999-06-15 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100199885B1) · [Google Patents](https://patents.google.com/patent/KR100199885B1/en) |
+| MX 9702722 A "Storage and delivery system for gaseous compounds." | application | 1998-02-28 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMX9702722A) · [Google Patents](https://patents.google.com/patent/MX9702722A/en) |
+| PT 785817 E "SYSTEM OF STORAGE AND SUPPLY OF GAS COMPOUNDS" | application | 2001-03-30 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DPT785817E) · [Google Patents](https://patents.google.com/patent/PT785817E/en) |
+| WO 1996011739 A1 "Storage and delivery system for gaseous compounds" | international application | 1996-04-25 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1996011739A1) · [Google Patents](https://patents.google.com/patent/WO1996011739A1/en) |
 
 **Relevance:**
 
@@ -2326,7 +2327,7 @@ families and members are counted.
 **Inventors:** Manoocher Birang; Allan Gleason; William L. Guthrie
 **Dates:** priority 1995-03-28, filing 1996-08-16, grant 1999-04-13
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5893796A, retrieved 2026-09-14)
-**Estimated expiry:** 2024-08-14 — all 20 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7255629B2 (estimated upper bound: grant date + 17 years (US application filed before 1995-06-08))
+**Estimated expiry:** 2017-08-18 — all 20 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3327817B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `24770421` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2334,25 +2335,25 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,893,796 A | granted patent | 1999-04-13 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5893796A) · [Google Patents](https://patents.google.com/patent/US5893796A/en) |
-| US 6,045,439 A | granted patent | 2000-04-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6045439A) · [Google Patents](https://patents.google.com/patent/US6045439A/en) |
-| US 6,280,290 B1 | granted patent | 2001-08-28 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6280290B1) · [Google Patents](https://patents.google.com/patent/US6280290B1/en) |
-| US 2001/0036805 A1 | application | 2001-11-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010036805A1) · [Google Patents](https://patents.google.com/patent/US20010036805A1/en) |
-| US 2003/0190867 A1 | application | 2003-10-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030190867A1) · [Google Patents](https://patents.google.com/patent/US20030190867A1/en) |
-| US 6,910,944 B2 | granted patent | 2005-06-28 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6910944B2) · [Google Patents](https://patents.google.com/patent/US6910944B2/en) |
-| US 2006/0014476 A1 | application | 2006-01-19 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060014476A1) · [Google Patents](https://patents.google.com/patent/US20060014476A1/en) |
-| US 7,011,565 B2 | granted patent | 2006-03-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7011565B2) · [Google Patents](https://patents.google.com/patent/US7011565B2/en) |
-| US 7,118,450 B2 | granted patent | 2006-10-10 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7118450B2) · [Google Patents](https://patents.google.com/patent/US7118450B2/en) |
-| US 2007/0021037 A1 | application | 2007-01-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20070021037A1) · [Google Patents](https://patents.google.com/patent/US20070021037A1/en) |
-| US 7,255,629 B2 | granted patent | 2007-08-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7255629B2) · [Google Patents](https://patents.google.com/patent/US7255629B2/en) |
-| EP 0 824 995 A1 | application | 1998-02-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0824995A1) · [Google Patents](https://patents.google.com/patent/EP0824995A1/en) |
-| JP H1083977 A | application | 1998-03-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH1083977A) · [Google Patents](https://patents.google.com/patent/JPH1083977A/en) |
-| JP 3327817 B2 | granted patent | 2002-09-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3327817B2) · [Google Patents](https://patents.google.com/patent/JP3327817B2/en) |
-| KR 19980018667 A | application | 1998-06-05 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980018667A) · [Google Patents](https://patents.google.com/patent/KR19980018667A/en) |
-| KR 19980018668 A | application | 1998-06-05 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980018668A) · [Google Patents](https://patents.google.com/patent/KR19980018668A/en) |
-| KR 100334203 B1 | granted patent | 2002-06-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100334203B1) · [Google Patents](https://patents.google.com/patent/KR100334203B1/en) |
-| SG 54539 A1 | application | 1998-11-16 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG54539A1) · [Google Patents](https://patents.google.com/patent/SG54539A1/en) |
-| SG 111000 A1 | application | 2005-05-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG111000A1) · [Google Patents](https://patents.google.com/patent/SG111000A1/en) |
-| TW 339460 B | granted patent | 1998-09-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5893796A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW339460B) · [Google Patents](https://patents.google.com/patent/TW339460B/en) |
+| US 6,045,439 A | granted patent | 2000-04-04 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6045439A) · [Google Patents](https://patents.google.com/patent/US6045439A/en) |
+| US 6,280,290 B1 "Method of forming a transparent window in a polishing pad" | granted patent | 2001-08-28 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6280290B1) · [Google Patents](https://patents.google.com/patent/US6280290B1/en) |
+| US 2001/0036805 A1 "Forming a transparent window in a polishing pad for a chemical mehcanical polishing apparatus" | application | 2001-11-01 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010036805A1) · [Google Patents](https://patents.google.com/patent/US20010036805A1/en) |
+| US 2003/0190867 A1 | application | 2003-10-09 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030190867A1) · [Google Patents](https://patents.google.com/patent/US20030190867A1/en) |
+| US 6,910,944 B2 "Method of forming a transparent window in a polishing pad" | granted patent | 2005-06-28 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6910944B2) · [Google Patents](https://patents.google.com/patent/US6910944B2/en) |
+| US 2006/0014476 A1 "Method of fabricating a window in a polishing pad" | application | 2006-01-19 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20060014476A1) · [Google Patents](https://patents.google.com/patent/US20060014476A1/en) |
+| US 7,011,565 B2 | granted patent | 2006-03-14 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7011565B2) · [Google Patents](https://patents.google.com/patent/US7011565B2/en) |
+| US 7,118,450 B2 "Polishing pad with window and method of fabricating a window in a polishing pad" | granted patent | 2006-10-10 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7118450B2) · [Google Patents](https://patents.google.com/patent/US7118450B2/en) |
+| US 2007/0021037 A1 "Polishing Assembly With A Window" | application | 2007-01-25 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20070021037A1) · [Google Patents](https://patents.google.com/patent/US20070021037A1/en) |
+| US 7,255,629 B2 "Polishing assembly with a window" | granted patent | 2007-08-14 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7255629B2) · [Google Patents](https://patents.google.com/patent/US7255629B2/en) |
+| EP 0 824 995 A1 | application | 1998-02-25 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0824995A1) · [Google Patents](https://patents.google.com/patent/EP0824995A1/en) |
+| JP H1083977 A "Formation of transparent window in polishing pad for mechanochemical polishing equipment" | application | 1998-03-31 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH1083977A) · [Google Patents](https://patents.google.com/patent/JPH1083977A/en) |
+| JP 3327817 B2 "Formation of transparent window in polishing pad for mechanochemical polishing equipment" | granted patent | 2002-09-24 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3327817B2) · [Google Patents](https://patents.google.com/patent/JP3327817B2/en) |
+| KR 19980018667 A "Method of forming transparent window in polishing pad for chemical mechanical polishing device" | application | 1998-06-05 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980018667A) · [Google Patents](https://patents.google.com/patent/KR19980018667A/en) |
+| KR 19980018668 A "Method for forming transparent window in polishing pad for chemical mechanical polishing device" | application | 1998-06-05 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980018668A) · [Google Patents](https://patents.google.com/patent/KR19980018668A/en) |
+| KR 100334203 B1 | granted patent | 2002-06-20 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100334203B1) · [Google Patents](https://patents.google.com/patent/KR100334203B1/en) |
+| SG 54539 A1 "Polishing pad with transparent window" | application | 1998-11-16 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG54539A1) · [Google Patents](https://patents.google.com/patent/SG54539A1/en) |
+| SG 111000 A1 "Polishing pad with transparent window" | application | 2005-05-30 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG111000A1) · [Google Patents](https://patents.google.com/patent/SG111000A1/en) |
+| TW 339460 B "Method of forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus" | granted patent | 1998-09-01 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW339460B) · [Google Patents](https://patents.google.com/patent/TW339460B/en) |
 
 **Relevance:**
 
@@ -2386,7 +2387,7 @@ families and members are counted.
 **Inventors:** Thomas J. Hunt; Paul S. Gilman
 **Dates:** priority 1995-04-21, filing 1995-04-21, grant 1998-11-17
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5836506A, retrieved 2026-09-14)
-**Estimated expiry:** 2016-04-21 — all 9 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of WO1996033294A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-04-21 — all 9 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW287125B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 **Google Patents family ID:** `23689967` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2394,14 +2395,14 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,836,506 A | granted patent | 1998-11-17 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5836506A) · [Google Patents](https://patents.google.com/patent/US5836506A/en) |
-| AU 4007295 A | application | 1996-11-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5836506A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU4007295A) · [Google Patents](https://patents.google.com/patent/AU4007295A/en) |
-| CA 2218022 A1 | application | 1996-10-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5836506A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCA2218022A1) · [Google Patents](https://patents.google.com/patent/CA2218022A1/en) |
-| CN 1198191 A | application | 1998-11-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5836506A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1198191A) · [Google Patents](https://patents.google.com/patent/CN1198191A/en) |
-| EP 0 826 075 A1 | application | 1998-03-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5836506A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0826075A1) · [Google Patents](https://patents.google.com/patent/EP0826075A1/en) |
-| JP H11510557 A | application | 1999-09-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5836506A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH11510557A) · [Google Patents](https://patents.google.com/patent/JPH11510557A/en) |
-| KR 19990007896 A | application | 1999-01-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5836506A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19990007896A) · [Google Patents](https://patents.google.com/patent/KR19990007896A/en) |
-| TW 287125 B | granted patent | 1996-10-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5836506A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW287125B) · [Google Patents](https://patents.google.com/patent/TW287125B/en) |
-| WO 1996033294 A1 | international application | 1996-10-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5836506A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1996033294A1) · [Google Patents](https://patents.google.com/patent/WO1996033294A1/en) |
+| AU 4007295 A "Method of making sputter target/backing plate assembly" | application | 1996-11-07 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU4007295A) · [Google Patents](https://patents.google.com/patent/AU4007295A/en) |
+| CA 2218022 A1 "Method of making sputter target/backing plate assembly" | application | 1996-10-24 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCA2218022A1) · [Google Patents](https://patents.google.com/patent/CA2218022A1/en) |
+| CN 1198191 A "Sputtering target/base plate assembly method" | application | 1998-11-04 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1198191A) · [Google Patents](https://patents.google.com/patent/CN1198191A/en) |
+| EP 0 826 075 A1 "Method of making sputter target/backing plate assembly" | application | 1998-03-04 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0826075A1) · [Google Patents](https://patents.google.com/patent/EP0826075A1/en) |
+| JP H11510557 A "Assembly of sputtering target and backing plate and method of manufacturing the same" | application | 1999-09-14 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH11510557A) · [Google Patents](https://patents.google.com/patent/JPH11510557A/en) |
+| KR 19990007896 A "Manufacturing method of sputter target / support plate assembly" | application | 1999-01-25 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19990007896A) · [Google Patents](https://patents.google.com/patent/KR19990007896A/en) |
+| TW 287125 B | granted patent | 1996-10-01 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW287125B) · [Google Patents](https://patents.google.com/patent/TW287125B/en) |
+| WO 1996033294 A1 "Method of making sputter target/backing plate assembly" | international application | 1996-10-24 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1996033294A1) · [Google Patents](https://patents.google.com/patent/WO1996033294A1/en) |
 
 **Relevance:**
 
@@ -2422,7 +2423,7 @@ families and members are counted.
 **Inventors:** Masakazu Shimada
 **Dates:** priority 1995-05-25, filing 1996-05-16, grant 1998-04-07
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5735961A, retrieved 2026-09-14)
-**Estimated expiry:** 2016-05-25 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5879415A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-05-25 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW322590B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 **Google Patents family ID:** `26456233` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2430,11 +2431,11 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,735,961 A | granted patent | 1998-04-07 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5735961A) · [Google Patents](https://patents.google.com/patent/US5735961A/en) |
-| US 5,879,415 A | granted patent | 1999-03-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5735961A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5879415A) · [Google Patents](https://patents.google.com/patent/US5879415A/en) |
-| JP H0945597 A | application | 1997-02-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5735961A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0945597A) · [Google Patents](https://patents.google.com/patent/JPH0945597A/en) |
-| KR 960043020 A | application | 1996-12-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5735961A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR960043020A) · [Google Patents](https://patents.google.com/patent/KR960043020A/en) |
-| KR 100245259 B1 | granted patent | 2000-02-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5735961A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100245259B1) · [Google Patents](https://patents.google.com/patent/KR100245259B1/en) |
-| TW 322590 B | granted patent | 1997-12-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5735961A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW322590B) · [Google Patents](https://patents.google.com/patent/TW322590B/en) |
+| US 5,879,415 A | granted patent | 1999-03-09 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5879415A) · [Google Patents](https://patents.google.com/patent/US5879415A/en) |
+| JP H0945597 A "Semiconductor manufacturing apparatus, load lock chamber, oxygen concentration control method, and natural oxide film generation method" | application | 1997-02-14 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0945597A) · [Google Patents](https://patents.google.com/patent/JPH0945597A/en) |
+| KR 960043020 A "Method for controlling oxygen concentration in semiconductor manufacturing apparatus and load lock chamber" | application | 1996-12-21 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR960043020A) · [Google Patents](https://patents.google.com/patent/KR960043020A/en) |
+| KR 100245259 B1 "Semiconductor fabricating apparatus, method for controlling oxygen concentration within load-lock chamber" | granted patent | 2000-02-15 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100245259B1) · [Google Patents](https://patents.google.com/patent/KR100245259B1/en) |
+| TW 322590 B | granted patent | 1997-12-11 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW322590B) · [Google Patents](https://patents.google.com/patent/TW322590B/en) |
 
 **Relevance:**
 
@@ -2483,7 +2484,7 @@ families and members are counted.
 **Inventors:** Pei-Ing Paul Lee; William Alan Klaasen; Alexander Mitwalsky
 **Dates:** priority 1995-08-28, filing 1997-08-14, grant 1999-02-16
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5872390A, retrieved 2026-09-14)
-**Estimated expiry:** 2016-08-28 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH09115414A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-08-15 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3509049B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `24070664` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2491,10 +2492,10 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,872,390 A | granted patent | 1999-02-16 | Expired - Fee Related | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5872390A) · [Google Patents](https://patents.google.com/patent/US5872390A/en) |
-| EP 0 762 498 A2 | application | 1997-03-12 | not shown | 2026-09-14 listed in the Google Patents family table of US5872390A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0762498A2) · [Google Patents](https://patents.google.com/patent/EP0762498A2/en) |
-| EP 0 762 498 A3 | search report | 1998-06-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5872390A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0762498A3) · [Google Patents](https://patents.google.com/patent/EP0762498A3/en) |
-| JP H09115414 A | application | 1997-05-02 | not shown | 2026-09-14 listed in the Google Patents family table of US5872390A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09115414A) · [Google Patents](https://patents.google.com/patent/JPH09115414A/en) |
-| JP 3509049 B2 | granted patent | 2004-03-22 | not shown | 2026-09-14 listed in the Google Patents family table of US5872390A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3509049B2) · [Google Patents](https://patents.google.com/patent/JP3509049B2/en) |
+| EP 0 762 498 A2 | application | 1997-03-12 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0762498A2) · [Google Patents](https://patents.google.com/patent/EP0762498A2/en) |
+| EP 0 762 498 A3 | search report | 1998-06-24 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0762498A3) · [Google Patents](https://patents.google.com/patent/EP0762498A3/en) |
+| JP H09115414 A "Fuse window with adjusted fuse oxide thickness" | application | 1997-05-02 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09115414A) · [Google Patents](https://patents.google.com/patent/JPH09115414A/en) |
+| JP 3509049 B2 "Fuse window with adjusted fuse oxide thickness" | granted patent | 2004-03-22 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3509049B2) · [Google Patents](https://patents.google.com/patent/JP3509049B2/en) |
 
 **Relevance:**
 
@@ -2523,11 +2524,11 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,709,543 A | granted patent | 1998-01-20 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5709543A) · [Google Patents](https://patents.google.com/patent/US5709543A/en) |
-| JP H0974071 A | application | 1997-03-18 | not shown | 2026-09-14 listed in the Google Patents family table of US5709543A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0974071A) · [Google Patents](https://patents.google.com/patent/JPH0974071A/en) |
-| JP 3471144 B2 | granted patent | 2003-11-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5709543A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3471144B2) · [Google Patents](https://patents.google.com/patent/JP3471144B2/en) |
-| KR 970018285 A | application | 1997-04-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5709543A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970018285A) · [Google Patents](https://patents.google.com/patent/KR970018285A/en) |
-| KR 100385818 B1 | granted patent | 2003-08-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5709543A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100385818B1) · [Google Patents](https://patents.google.com/patent/KR100385818B1/en) |
-| TW 387092 B | granted patent | 2000-04-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5709543A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW387092B) · [Google Patents](https://patents.google.com/patent/TW387092B/en) |
+| JP H0974071 A "Vertical heat treatment equipment" | application | 1997-03-18 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0974071A) · [Google Patents](https://patents.google.com/patent/JPH0974071A/en) |
+| JP 3471144 B2 "Vertical heat treatment apparatus, heat insulation structure thereof, and heat shield plate" | granted patent | 2003-11-25 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3471144B2) · [Google Patents](https://patents.google.com/patent/JP3471144B2/en) |
+| KR 970018285 A "Vertical Heat Treatment Equipment" | application | 1997-04-30 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970018285A) · [Google Patents](https://patents.google.com/patent/KR970018285A/en) |
+| KR 100385818 B1 "Vertical type heat treatment device" | granted patent | 2003-08-21 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100385818B1) · [Google Patents](https://patents.google.com/patent/KR100385818B1/en) |
+| TW 387092 B | granted patent | 2000-04-11 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW387092B) · [Google Patents](https://patents.google.com/patent/TW387092B/en) |
 
 **Relevance:**
 
@@ -2549,7 +2550,7 @@ families and members are counted.
 **Inventors:** Tetsu Osawa
 **Dates:** priority 1995-09-20, filing 1996-09-18, grant 1998-10-13
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5820367A, retrieved 2026-09-14)
-**Estimated expiry:** 2016-09-20 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of KR970018349A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-09-18 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5820367A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `17432179` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2557,8 +2558,8 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,820,367 A | granted patent | 1998-10-13 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5820367A) · [Google Patents](https://patents.google.com/patent/US5820367A/en) |
-| JP H0992625 A | application | 1997-04-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5820367A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0992625A) · [Google Patents](https://patents.google.com/patent/JPH0992625A/en) |
-| KR 970018349 A | application | 1997-04-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5820367A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970018349A) · [Google Patents](https://patents.google.com/patent/KR970018349A/en) |
+| JP H0992625 A "Heat treatment boat" | application | 1997-04-04 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH0992625A) · [Google Patents](https://patents.google.com/patent/JPH0992625A/en) |
+| KR 970018349 A | application | 1997-04-30 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970018349A) · [Google Patents](https://patents.google.com/patent/KR970018349A/en) |
 
 **Relevance:**
 
@@ -2580,7 +2581,7 @@ families and members are counted.
 **Inventors:** Terry J. Brabazon; Badih El-Kareh; Stuart R. Martin; Matthew J. Rutten; Carter W. Kaanta
 **Dates:** priority 1995-10-27, filing 1995-10-27, grant 1998-01-13
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5708559A, retrieved 2026-09-14)
-**Estimated expiry:** 2016-10-27 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6008083A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-10-17 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3396137B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `24193081` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2588,11 +2589,11 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,708,559 A | granted patent | 1998-01-13 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5708559A) · [Google Patents](https://patents.google.com/patent/US5708559A/en) |
-| US 6,008,083 A | granted patent | 1999-12-28 | not shown | 2026-09-14 listed in the Google Patents family table of US5708559A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6008083A) · [Google Patents](https://patents.google.com/patent/US6008083A/en) |
-| EP 0 771 022 A2 | application | 1997-05-02 | not shown | 2026-09-14 listed in the Google Patents family table of US5708559A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0771022A2) · [Google Patents](https://patents.google.com/patent/EP0771022A2/en) |
-| EP 0 771 022 A3 | search report | 1998-08-12 | not shown | 2026-09-14 listed in the Google Patents family table of US5708559A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0771022A3) · [Google Patents](https://patents.google.com/patent/EP0771022A3/en) |
-| JP H09181258 A | application | 1997-07-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5708559A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09181258A) · [Google Patents](https://patents.google.com/patent/JPH09181258A/en) |
-| JP 3396137 B2 | granted patent | 2003-04-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5708559A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3396137B2) · [Google Patents](https://patents.google.com/patent/JP3396137B2/en) |
+| US 6,008,083 A | granted patent | 1999-12-28 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6008083A) · [Google Patents](https://patents.google.com/patent/US6008083A/en) |
+| EP 0 771 022 A2 "Precision metal-metal capacitor for analog circuit" | application | 1997-05-02 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0771022A2) · [Google Patents](https://patents.google.com/patent/EP0771022A2/en) |
+| EP 0 771 022 A3 "Precision metal-metal capacitor for analog circuit" | search report | 1998-08-12 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0771022A3) · [Google Patents](https://patents.google.com/patent/EP0771022A3/en) |
+| JP H09181258 A "Capacitor and manufacturing method thereof" | application | 1997-07-11 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09181258A) · [Google Patents](https://patents.google.com/patent/JPH09181258A/en) |
+| JP 3396137 B2 "Capacitor and manufacturing method thereof" | granted patent | 2003-04-14 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3396137B2) · [Google Patents](https://patents.google.com/patent/JP3396137B2/en) |
 
 **Relevance:**
 
@@ -2615,7 +2616,7 @@ families and members are counted.
 **Inventors:** Robert D. Tolles; Norm Shendon; Sasson Somekh; Ilya Perlov; Eugene Gantvarg; Harry Q. Lee
 **Dates:** priority 1995-10-27, filing 1995-10-27, grant 1998-04-14
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5738574A, retrieved 2026-09-14)
-**Estimated expiry:** 2016-10-27 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6126517A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2021-12-13 — all 17 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP2002198329A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
 **Google Patents family ID:** `24192580` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2623,22 +2624,22 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,738,574 A | granted patent | 1998-04-14 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5738574A) · [Google Patents](https://patents.google.com/patent/US5738574A/en) |
-| US 6,080,046 A | granted patent | 2000-06-27 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6080046A) · [Google Patents](https://patents.google.com/patent/US6080046A/en) |
-| US 6,086,457 A | granted patent | 2000-07-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6086457A) · [Google Patents](https://patents.google.com/patent/US6086457A/en) |
-| US 6,126,517 A | granted patent | 2000-10-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6126517A) · [Google Patents](https://patents.google.com/patent/US6126517A/en) |
-| AT E231046 T1 | translation of granted patent | 2003-02-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DATE231046T1) · [Google Patents](https://patents.google.com/patent/ATE231046T1/en) |
-| DE 69625778 D1 | application | 2003-02-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69625778D1) · [Google Patents](https://patents.google.com/patent/DE69625778D1/en) |
-| DE 69625778 T2 | translation of granted patent | 2003-10-16 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69625778T2) · [Google Patents](https://patents.google.com/patent/DE69625778T2/en) |
-| EP 0 774 323 A2 | application | 1997-05-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0774323A2) · [Google Patents](https://patents.google.com/patent/EP0774323A2/en) |
-| EP 0 774 323 A3 | search report | 1997-10-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0774323A3) · [Google Patents](https://patents.google.com/patent/EP0774323A3/en) |
-| EP 0 774 323 B1 | granted patent | 2003-01-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0774323B1) · [Google Patents](https://patents.google.com/patent/EP0774323B1/en) |
-| JP H09174420 A | application | 1997-07-08 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09174420A) · [Google Patents](https://patents.google.com/patent/JPH09174420A/en) |
-| JP 2002198329 A | application | 2002-07-12 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2002198329A) · [Google Patents](https://patents.google.com/patent/JP2002198329A/en) |
-| JP 2008078673 A | application | 2008-04-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008078673A) · [Google Patents](https://patents.google.com/patent/JP2008078673A/en) |
-| JP 4641540 B2 | granted patent | 2011-03-02 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4641540B2) · [Google Patents](https://patents.google.com/patent/JP4641540B2/en) |
-| KR 970023803 A | application | 1997-05-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970023803A) · [Google Patents](https://patents.google.com/patent/KR970023803A/en) |
-| KR 100395153 B1 | granted patent | 2003-11-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100395153B1) · [Google Patents](https://patents.google.com/patent/KR100395153B1/en) |
-| KR 100412478 B1 | granted patent | 2003-12-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5738574A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100412478B1) · [Google Patents](https://patents.google.com/patent/KR100412478B1/en) |
+| US 6,080,046 A "Underwater wafer storage and wafer picking for chemical mechanical polishing" | granted patent | 2000-06-27 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6080046A) · [Google Patents](https://patents.google.com/patent/US6080046A/en) |
+| US 6,086,457 A "Washing transfer station in a system for chemical mechanical polishing" | granted patent | 2000-07-11 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6086457A) · [Google Patents](https://patents.google.com/patent/US6086457A/en) |
+| US 6,126,517 A "System for chemical mechanical polishing having multiple polishing stations" | granted patent | 2000-10-03 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6126517A) · [Google Patents](https://patents.google.com/patent/US6126517A/en) |
+| AT E231046 T1 "METHOD AND DEVICE FOR POLISHING SUBSTRATES" | translation of granted patent | 2003-02-15 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DATE231046T1) · [Google Patents](https://patents.google.com/patent/ATE231046T1/en) |
+| DE 69625778 D1 "Method and device for polishing substrates" | application | 2003-02-20 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69625778D1) · [Google Patents](https://patents.google.com/patent/DE69625778D1/en) |
+| DE 69625778 T2 "Method and device for polishing substrates" | translation of granted patent | 2003-10-16 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69625778T2) · [Google Patents](https://patents.google.com/patent/DE69625778T2/en) |
+| EP 0 774 323 A2 "Apparatus and method for polishing substrates" | application | 1997-05-21 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0774323A2) · [Google Patents](https://patents.google.com/patent/EP0774323A2/en) |
+| EP 0 774 323 A3 "Method and device for polishing substrates" | search report | 1997-10-01 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0774323A3) · [Google Patents](https://patents.google.com/patent/EP0774323A3/en) |
+| EP 0 774 323 B1 "Apparatus and method for polishing substrates" | granted patent | 2003-01-15 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0774323B1) · [Google Patents](https://patents.google.com/patent/EP0774323B1/en) |
+| JP H09174420 A | application | 1997-07-08 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09174420A) · [Google Patents](https://patents.google.com/patent/JPH09174420A/en) |
+| JP 2002198329 A | application | 2002-07-12 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2002198329A) · [Google Patents](https://patents.google.com/patent/JP2002198329A/en) |
+| JP 2008078673 A "Polishing apparatus and polishing method" | application | 2008-04-03 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008078673A) · [Google Patents](https://patents.google.com/patent/JP2008078673A/en) |
+| JP 4641540 B2 "Polishing apparatus and polishing method" | granted patent | 2011-03-02 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4641540B2) · [Google Patents](https://patents.google.com/patent/JP4641540B2/en) |
+| KR 970023803 A | application | 1997-05-30 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970023803A) · [Google Patents](https://patents.google.com/patent/KR970023803A/en) |
+| KR 100395153 B1 "Chemical mechanical polishing apparatus and method" | granted patent | 2003-11-20 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100395153B1) · [Google Patents](https://patents.google.com/patent/KR100395153B1/en) |
+| KR 100412478 B1 "Processing system for chemical mechanical polishing" | granted patent | 2003-12-31 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100412478B1) · [Google Patents](https://patents.google.com/patent/KR100412478B1/en) |
 
 **Relevance:**
 
@@ -2698,17 +2699,17 @@ families and members are counted.
 **Inventors:** James E. Nulty; Christopher J. Petti
 **Dates:** priority 1995-12-22, filing 2000-03-31, grant 2004-08-31
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6784552B2, retrieved 2026-09-14)
-**Estimated expiry:** 2016-12-22 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6066555A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-12-24 — all 4 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH09181181A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
 **Google Patents family ID:** `24310003` (family section of the representative's own record page, linked below)
 
 **Members:**
 
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
-| US 6,066,555 A | granted patent | 2000-05-23 | not shown | 2026-09-14 listed in the Google Patents family table of US6784552B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6066555A) · [Google Patents](https://patents.google.com/patent/US6066555A/en) |
-| US 2002/0146897 A1 | application | 2002-10-10 | not shown | 2026-09-14 listed in the Google Patents family table of US6784552B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020146897A1) · [Google Patents](https://patents.google.com/patent/US20020146897A1/en) |
+| US 6,066,555 A "Method for eliminating lateral spacer erosion on enclosed contact topographies during RF sputter cleaning" | granted patent | 2000-05-23 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6066555A) · [Google Patents](https://patents.google.com/patent/US6066555A/en) |
+| US 2002/0146897 A1 | application | 2002-10-10 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020146897A1) · [Google Patents](https://patents.google.com/patent/US20020146897A1/en) |
 | US 6,784,552 B2 | granted patent | 2004-08-31 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6784552B2) · [Google Patents](https://patents.google.com/patent/US6784552B2/en) |
-| JP H09181181 A | application | 1997-07-11 | not shown | 2026-09-14 listed in the Google Patents family table of US6784552B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09181181A) · [Google Patents](https://patents.google.com/patent/JPH09181181A/en) |
+| JP H09181181 A "Processing method and semiconductor device for minimizing corrosion of lateral spacers on contact areas" | application | 1997-07-11 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09181181A) · [Google Patents](https://patents.google.com/patent/JPH09181181A/en) |
 
 **Relevance:**
 
@@ -2735,10 +2736,10 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,902,103 A | granted patent | 1999-05-11 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5902103A) · [Google Patents](https://patents.google.com/patent/US5902103A/en) |
-| KR 970054530 A | application | 1997-07-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5902103A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970054530A) · [Google Patents](https://patents.google.com/patent/KR970054530A/en) |
-| KR 100296998 B1 | granted patent | 2001-11-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5902103A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100296998B1) · [Google Patents](https://patents.google.com/patent/KR100296998B1/en) |
-| KR 100302199 B1 | granted patent | 2001-11-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5902103A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100302199B1) · [Google Patents](https://patents.google.com/patent/KR100302199B1/en) |
-| TW 330237 B | granted patent | 1998-04-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5902103A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW330237B) · [Google Patents](https://patents.google.com/patent/TW330237B/en) |
+| KR 970054530 A "Longitudinal furnace of semiconductor manufacturing apparatus and its boat cover" | application | 1997-07-31 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970054530A) · [Google Patents](https://patents.google.com/patent/KR970054530A/en) |
+| KR 100296998 B1 "a semiconductor manufacturing apparatus" | granted patent | 2001-11-03 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100296998B1) · [Google Patents](https://patents.google.com/patent/KR100296998B1/en) |
+| KR 100302199 B1 "Semiconductor manufacturing device" | granted patent | 2001-11-30 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100302199B1) · [Google Patents](https://patents.google.com/patent/KR100302199B1/en) |
+| TW 330237 B | granted patent | 1998-04-21 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW330237B) · [Google Patents](https://patents.google.com/patent/TW330237B/en) |
 
 **Relevance:**
 
@@ -2760,7 +2761,7 @@ families and members are counted.
 **Inventors:** Joseph W. Lyding; Karl Hess
 **Dates:** priority 1996-01-16, filing 1996-01-16, grant 1999-02-16
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5872387A, retrieved 2026-09-14)
-**Estimated expiry:** 2017-01-16 — all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of WO1997026676A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2017-01-16 — all 12 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6147014A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `24345606` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2768,17 +2769,17 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,872,387 A | granted patent | 1999-02-16 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5872387A) · [Google Patents](https://patents.google.com/patent/US5872387A/en) |
-| US 6,147,014 A | granted patent | 2000-11-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6147014A) · [Google Patents](https://patents.google.com/patent/US6147014A/en) |
-| US 6,444,533 B1 | granted patent | 2002-09-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6444533B1) · [Google Patents](https://patents.google.com/patent/US6444533B1/en) |
-| US 6,888,204 B1 | granted patent | 2005-05-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6888204B1) · [Google Patents](https://patents.google.com/patent/US6888204B1/en) |
-| AU 1579697 A | application | 1997-08-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU1579697A) · [Google Patents](https://patents.google.com/patent/AU1579697A/en) |
-| CA 2243170 A1 | application | 1997-07-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCA2243170A1) · [Google Patents](https://patents.google.com/patent/CA2243170A1/en) |
-| EP 0 875 074 A1 | application | 1998-11-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0875074A1) · [Google Patents](https://patents.google.com/patent/EP0875074A1/en) |
-| EP 0 875 074 A4 | search report | 2000-01-12 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0875074A4) · [Google Patents](https://patents.google.com/patent/EP0875074A4/en) |
-| JP 2000503479 A | application | 2000-03-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2000503479A) · [Google Patents](https://patents.google.com/patent/JP2000503479A/en) |
-| KR 19990077255 A | application | 1999-10-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19990077255A) · [Google Patents](https://patents.google.com/patent/KR19990077255A/en) |
-| KR 100484340 B1 | granted patent | 2005-08-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100484340B1) · [Google Patents](https://patents.google.com/patent/KR100484340B1/en) |
-| WO 1997026676 A1 | international application | 1997-07-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5872387A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1997026676A1) · [Google Patents](https://patents.google.com/patent/WO1997026676A1/en) |
+| US 6,147,014 A "Forming of deuterium containing nitride spacers and fabrication of semiconductor devices" | granted patent | 2000-11-14 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6147014A) · [Google Patents](https://patents.google.com/patent/US6147014A/en) |
+| US 6,444,533 B1 "Semiconductor devices and methods for same" | granted patent | 2002-09-03 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6444533B1) · [Google Patents](https://patents.google.com/patent/US6444533B1/en) |
+| US 6,888,204 B1 "Semiconductor devices, and methods for same" | granted patent | 2005-05-03 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6888204B1) · [Google Patents](https://patents.google.com/patent/US6888204B1/en) |
+| AU 1579697 A "Semiconductor devices, and methods for same" | application | 1997-08-11 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU1579697A) · [Google Patents](https://patents.google.com/patent/AU1579697A/en) |
+| CA 2243170 A1 "Semiconductor devices, and methods for same" | application | 1997-07-24 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCA2243170A1) · [Google Patents](https://patents.google.com/patent/CA2243170A1/en) |
+| EP 0 875 074 A1 "Semiconductor devices, and methods for same" | application | 1998-11-04 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0875074A1) · [Google Patents](https://patents.google.com/patent/EP0875074A1/en) |
+| EP 0 875 074 A4 "SEMICONDUCTOR COMPONENTS AND METHOD FOR THE PRODUCTION" | search report | 2000-01-12 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0875074A4) · [Google Patents](https://patents.google.com/patent/EP0875074A4/en) |
+| JP 2000503479 A "Semiconductor device and method of manufacturing the device" | application | 2000-03-21 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2000503479A) · [Google Patents](https://patents.google.com/patent/JP2000503479A/en) |
+| KR 19990077255 A "Semiconductor device and processing method" | application | 1999-10-25 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19990077255A) · [Google Patents](https://patents.google.com/patent/KR19990077255A/en) |
+| KR 100484340 B1 "Semiconductor device and processing method" | granted patent | 2005-08-24 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100484340B1) · [Google Patents](https://patents.google.com/patent/KR100484340B1/en) |
+| WO 1997026676 A1 "Semiconductor devices, and methods for same" | international application | 1997-07-24 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1997026676A1) · [Google Patents](https://patents.google.com/patent/WO1997026676A1/en) |
 
 **Relevance:**
 
@@ -2801,7 +2802,7 @@ families and members are counted.
 **Inventors:** Michael D. Kilgore; Wilbert G. M. van den Hoek; Christopher J. Rau; Bart J. van Schravendijk; Jeffrey A. Tobin; Thomas W. Mountsier; James C. Oswalt
 **Dates:** priority 1996-02-16, filing 1996-02-16, grant 2001-03-13
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6200412B1, retrieved 2026-09-14)
-**Estimated expiry:** 2017-02-16 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW289836B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2017-02-17 — all 10 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP3141929B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `24412185` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2809,15 +2810,15 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,200,412 B1 | granted patent | 2001-03-13 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6200412B1) · [Google Patents](https://patents.google.com/patent/US6200412B1/en) |
-| DE 790635 T1 | translation of granted patent | 1998-03-12 | not shown | 2026-09-14 listed in the Google Patents family table of US6200412B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE790635T1) · [Google Patents](https://patents.google.com/patent/DE790635T1/en) |
-| EP 0 790 635 A2 | application | 1997-08-20 | not shown | 2026-09-14 listed in the Google Patents family table of US6200412B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0790635A2) · [Google Patents](https://patents.google.com/patent/EP0790635A2/en) |
-| EP 0 790 635 A3 | search report | 1998-04-15 | not shown | 2026-09-14 listed in the Google Patents family table of US6200412B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0790635A3) · [Google Patents](https://patents.google.com/patent/EP0790635A3/en) |
-| JP H09249976 A | application | 1997-09-22 | not shown | 2026-09-14 listed in the Google Patents family table of US6200412B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09249976A) · [Google Patents](https://patents.google.com/patent/JPH09249976A/en) |
-| JP 3141929 B2 | granted patent | 2001-03-07 | not shown | 2026-09-14 listed in the Google Patents family table of US6200412B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3141929B2) · [Google Patents](https://patents.google.com/patent/JP3141929B2/en) |
-| KR 970063445 A | application | 1997-09-12 | not shown | 2026-09-14 listed in the Google Patents family table of US6200412B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970063445A) · [Google Patents](https://patents.google.com/patent/KR970063445A/en) |
-| KR 100269559 B1 | granted patent | 2000-12-01 | not shown | 2026-09-14 listed in the Google Patents family table of US6200412B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100269559B1) · [Google Patents](https://patents.google.com/patent/KR100269559B1/en) |
-| SG 76499 A1 | application | 2000-11-21 | not shown | 2026-09-14 listed in the Google Patents family table of US6200412B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG76499A1) · [Google Patents](https://patents.google.com/patent/SG76499A1/en) |
-| TW 289836 B | granted patent | 1996-11-01 | not shown | 2026-09-14 listed in the Google Patents family table of US6200412B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW289836B) · [Google Patents](https://patents.google.com/patent/TW289836B/en) |
+| DE 790635 T1 "Device for chemical vapor deposition with a separate injection of cleaning gas" | translation of granted patent | 1998-03-12 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE790635T1) · [Google Patents](https://patents.google.com/patent/DE790635T1/en) |
+| EP 0 790 635 A2 | application | 1997-08-20 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0790635A2) · [Google Patents](https://patents.google.com/patent/EP0790635A2/en) |
+| EP 0 790 635 A3 | search report | 1998-04-15 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0790635A3) · [Google Patents](https://patents.google.com/patent/EP0790635A3/en) |
+| JP H09249976 A "Substrate processing apparatus and chemical vapor deposition apparatus cleaning method" | application | 1997-09-22 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH09249976A) · [Google Patents](https://patents.google.com/patent/JPH09249976A/en) |
+| JP 3141929 B2 "Substrate processing apparatus and chemical vapor deposition apparatus cleaning method" | granted patent | 2001-03-07 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3141929B2) · [Google Patents](https://patents.google.com/patent/JP3141929B2/en) |
+| KR 970063445 A "Chemical vapor deposition system with dedicated cleaning gas injector" | application | 1997-09-12 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR970063445A) · [Google Patents](https://patents.google.com/patent/KR970063445A/en) |
+| KR 100269559 B1 | granted patent | 2000-12-01 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100269559B1) · [Google Patents](https://patents.google.com/patent/KR100269559B1/en) |
+| SG 76499 A1 | application | 2000-11-21 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG76499A1) · [Google Patents](https://patents.google.com/patent/SG76499A1/en) |
+| TW 289836 B | granted patent | 1996-11-01 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW289836B) · [Google Patents](https://patents.google.com/patent/TW289836B/en) |
 
 **Relevance:**
 
@@ -2838,7 +2839,7 @@ families and members are counted.
 **Inventors:** Yang Pan
 **Dates:** priority 1996-02-20, filing 1996-02-20, grant 1997-01-21
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5595919A, retrieved 2026-09-14)
-**Estimated expiry:** 2017-02-20 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of SG66330A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-10-10 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of SG66330A1 (estimated: 20 years from the filing date shown; no term remains for any grant on it)
 **Google Patents family ID:** `24414167` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2846,7 +2847,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,595,919 A | granted patent | 1997-01-21 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5595919A) · [Google Patents](https://patents.google.com/patent/US5595919A/en) |
-| SG 66330 A1 | application | 1999-07-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5595919A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG66330A1) · [Google Patents](https://patents.google.com/patent/SG66330A1/en) |
+| SG 66330 A1 "Self-aligned halo process for reducing junction capacitance" | application | 1999-07-20 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG66330A1) · [Google Patents](https://patents.google.com/patent/SG66330A1/en) |
 
 **Relevance:**
 
@@ -2924,7 +2925,7 @@ families and members are counted.
 **Inventors:** Cheng-Chung Huang; Shu Mei Chen
 **Dates:** priority 1996-06-10, filing 1996-06-10, grant 1998-11-03
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5830375A, retrieved 2026-09-14)
-**Estimated expiry:** 2017-06-10 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6107642A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-06-10 — all 3 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6107642A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `24652841` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2932,8 +2933,8 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,830,375 A | granted patent | 1998-11-03 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5830375A) · [Google Patents](https://patents.google.com/patent/US5830375A/en) |
-| US 5,938,885 A | granted patent | 1999-08-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5830375A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5938885A) · [Google Patents](https://patents.google.com/patent/US5938885A/en) |
-| US 6,107,642 A | granted patent | 2000-08-22 | not shown | 2026-09-14 listed in the Google Patents family table of US5830375A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6107642A) · [Google Patents](https://patents.google.com/patent/US6107642A/en) |
+| US 5,938,885 A | granted patent | 1999-08-17 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5938885A) · [Google Patents](https://patents.google.com/patent/US5938885A/en) |
+| US 6,107,642 A "SRAM cell with thin film transistor using two polysilicon layers" | granted patent | 2000-08-22 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6107642A) · [Google Patents](https://patents.google.com/patent/US6107642A/en) |
 
 **Relevance:**
 
@@ -2954,7 +2955,7 @@ families and members are counted.
 **Inventors:** Hank Chen; Frank Sinclair; Michiro Sugitani
 **Dates:** priority 1996-06-14, filing 1997-01-17, grant 1998-06-02
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5760409A, retrieved 2026-09-14)
-**Estimated expiry:** 2017-06-14 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW423057B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2018-01-19 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH10226880A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
 **Google Patents family ID:** `25134219` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -2962,13 +2963,13 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,760,409 A | granted patent | 1998-06-02 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5760409A) · [Google Patents](https://patents.google.com/patent/US5760409A/en) |
-| CN 1208245 A | application | 1999-02-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5760409A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1208245A) · [Google Patents](https://patents.google.com/patent/CN1208245A/en) |
-| EP 0 854 494 A2 | application | 1998-07-22 | not shown | 2026-09-14 listed in the Google Patents family table of US5760409A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0854494A2) · [Google Patents](https://patents.google.com/patent/EP0854494A2/en) |
-| EP 0 854 494 A3 | search report | 2001-04-18 | not shown | 2026-09-14 listed in the Google Patents family table of US5760409A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0854494A3) · [Google Patents](https://patents.google.com/patent/EP0854494A3/en) |
-| JP H10226880 A | application | 1998-08-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5760409A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10226880A) · [Google Patents](https://patents.google.com/patent/JPH10226880A/en) |
-| KR 19980070586 A | application | 1998-10-26 | not shown | 2026-09-14 listed in the Google Patents family table of US5760409A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980070586A) · [Google Patents](https://patents.google.com/patent/KR19980070586A/en) |
-| KR 100402183 B1 | granted patent | 2004-03-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5760409A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100402183B1) · [Google Patents](https://patents.google.com/patent/KR100402183B1/en) |
-| TW 423057 B | granted patent | 2001-02-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5760409A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW423057B) · [Google Patents](https://patents.google.com/patent/TW423057B/en) |
+| CN 1208245 A "Dose control for use in ion implanter" | application | 1999-02-17 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1208245A) · [Google Patents](https://patents.google.com/patent/CN1208245A/en) |
+| EP 0 854 494 A2 | application | 1998-07-22 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0854494A2) · [Google Patents](https://patents.google.com/patent/EP0854494A2/en) |
+| EP 0 854 494 A3 | search report | 2001-04-18 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0854494A3) · [Google Patents](https://patents.google.com/patent/EP0854494A3/en) |
+| JP H10226880 A "Ion implantation equipment, method for calculating amount of ion implantation by using the equipment, and controlling method" | application | 1998-08-25 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10226880A) · [Google Patents](https://patents.google.com/patent/JPH10226880A/en) |
+| KR 19980070586 A "Dose control used in ion implanters" | application | 1998-10-26 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980070586A) · [Google Patents](https://patents.google.com/patent/KR19980070586A/en) |
+| KR 100402183 B1 "Injection quantity control device and method used in ion implanter" | granted patent | 2004-03-20 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100402183B1) · [Google Patents](https://patents.google.com/patent/KR100402183B1/en) |
+| TW 423057 B | granted patent | 2001-02-21 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW423057B) · [Google Patents](https://patents.google.com/patent/TW423057B/en) |
 
 **Relevance:**
 
@@ -3011,8 +3012,8 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5707498A/en
 
-(patent-gp24728963)=
-## US 6,170,428 B1 — Symmetric tunable inductively coupled HDP-CVD reactor
+:::{dropdown} US 6,170,428 B1 — legal status shown as Expired - Lifetime; expiry not fully bounded from the records retrieved, estimated no later than 2027-11-12
+:name: patent-gp24728963
 
 **Title:** Symmetric tunable inductively coupled HDP-CVD reactor
 
@@ -3020,7 +3021,7 @@ families and members are counted.
 **Inventors:** Fred C. Redeker; Farhad Moghadam; Hiroji Hanawa; Tetsuya Ishikawa; Dan Maydan; Shijian Li; Brian Lue; Robert J. Steger; Manus Wong; Yaxin Wong; Ashok K. Sinha
 **Dates:** priority 1996-07-15, filing 1996-07-15, grant 2001-01-09
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6170428B1, retrieved 2026-09-14)
-**Estimated expiry:** 2017-07-15 — all 13 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6182602B1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2027-11-12 — not bounded from the records retrieved: JP2008091938A; latest estimate JP2008091938A (application; any grant would expire at the latest about 20 years from filing (estimated))
 **Google Patents family ID:** `24728963` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3028,18 +3029,18 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,170,428 B1 | granted patent | 2001-01-09 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6170428B1) · [Google Patents](https://patents.google.com/patent/US6170428B1/en) |
-| US 6,182,602 B1 | granted patent | 2001-02-06 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6182602B1) · [Google Patents](https://patents.google.com/patent/US6182602B1/en) |
-| DE 69727624 D1 | application | 2004-03-25 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69727624D1) · [Google Patents](https://patents.google.com/patent/DE69727624D1/en) |
-| DE 69727624 T2 | translation of granted patent | 2004-10-14 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69727624T2) · [Google Patents](https://patents.google.com/patent/DE69727624T2/en) |
-| EP 0 819 780 A2 | application | 1998-01-21 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0819780A2) · [Google Patents](https://patents.google.com/patent/EP0819780A2/en) |
-| EP 0 819 780 A3 | search report | 1998-05-27 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0819780A3) · [Google Patents](https://patents.google.com/patent/EP0819780A3/en) |
-| EP 0 819 780 B1 | granted patent | 2004-02-18 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0819780B1) · [Google Patents](https://patents.google.com/patent/EP0819780B1/en) |
-| JP H10116826 A | application | 1998-05-06 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10116826A) · [Google Patents](https://patents.google.com/patent/JPH10116826A/en) |
-| JP 2008091938 A | application | 2008-04-17 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008091938A) · [Google Patents](https://patents.google.com/patent/JP2008091938A/en) |
-| JP 4688983 B2 | granted patent | 2011-05-25 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4688983B2) · [Google Patents](https://patents.google.com/patent/JP4688983B2/en) |
-| KR 980011769 A | application | 1998-04-30 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR980011769A) · [Google Patents](https://patents.google.com/patent/KR980011769A/en) |
-| KR 100268158 B1 | granted patent | 2000-12-01 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100268158B1) · [Google Patents](https://patents.google.com/patent/KR100268158B1/en) |
-| TW 363212 B | granted patent | 1999-07-01 | not shown | 2026-09-14 listed in the Google Patents family table of US6170428B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW363212B) · [Google Patents](https://patents.google.com/patent/TW363212B/en) |
+| US 6,182,602 B1 "Inductively coupled HDP-CVD reactor" | granted patent | 2001-02-06 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6182602B1) · [Google Patents](https://patents.google.com/patent/US6182602B1/en) |
+| DE 69727624 D1 "Inductively coupled HDP-CVD reactor" | application | 2004-03-25 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69727624D1) · [Google Patents](https://patents.google.com/patent/DE69727624D1/en) |
+| DE 69727624 T2 "Inductively coupled HDP-CVD reactor" | translation of granted patent | 2004-10-14 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69727624T2) · [Google Patents](https://patents.google.com/patent/DE69727624T2/en) |
+| EP 0 819 780 A2 "Inductively coupled HDP-CVD reactor" | application | 1998-01-21 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0819780A2) · [Google Patents](https://patents.google.com/patent/EP0819780A2/en) |
+| EP 0 819 780 A3 "Inductively coupled HDP-CVD reactor" | search report | 1998-05-27 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0819780A3) · [Google Patents](https://patents.google.com/patent/EP0819780A3/en) |
+| EP 0 819 780 B1 "Inductively coupled HDP-CVD reactor" | granted patent | 2004-02-18 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0819780B1) · [Google Patents](https://patents.google.com/patent/EP0819780B1/en) |
+| JP H10116826 A "Inductively coupled HDP-CVD reactor" | application | 1998-05-06 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10116826A) · [Google Patents](https://patents.google.com/patent/JPH10116826A/en) |
+| JP 2008091938 A "Process kit, wafer processing apparatus, and process kit heating method" | application | 2008-04-17 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2008091938A) · [Google Patents](https://patents.google.com/patent/JP2008091938A/en) |
+| JP 4688983 B2 "Inductively coupled HDP-CVD reactor" | granted patent | 2011-05-25 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4688983B2) · [Google Patents](https://patents.google.com/patent/JP4688983B2/en) |
+| KR 980011769 A "Inductively Coupled HDP-CVD Reactor" | application | 1998-04-30 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR980011769A) · [Google Patents](https://patents.google.com/patent/KR980011769A/en) |
+| KR 100268158 B1 "Inductively coupled hdp-cvd reactor" | granted patent | 2000-12-01 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100268158B1) · [Google Patents](https://patents.google.com/patent/KR100268158B1/en) |
+| TW 363212 B | granted patent | 1999-07-01 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW363212B) · [Google Patents](https://patents.google.com/patent/TW363212B/en) |
 
 **Relevance:**
 
@@ -3051,6 +3052,7 @@ families and members are counted.
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HDP-REACTOR-AMAT.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6170428B1/en
+:::
 
 (patent-gp24820519)=
 ## US 6,033,943 A — Dual gate oxide thickness integrated circuit and process for making same
@@ -3061,7 +3063,7 @@ families and members are counted.
 **Inventors:** Mark I. Gardner
 **Dates:** priority 1996-08-23, filing 1996-08-23, grant 2000-03-07
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6033943A, retrieved 2026-09-14)
-**Estimated expiry:** 2017-08-23 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of WO1998008253A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-08-23 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6033943A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `24820519` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3069,7 +3071,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,033,943 A | granted patent | 2000-03-07 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6033943A) · [Google Patents](https://patents.google.com/patent/US6033943A/en) |
-| WO 1998008253 A1 | international application | 1998-02-26 | not shown | 2026-09-14 listed in the Google Patents family table of US6033943A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1998008253A1) · [Google Patents](https://patents.google.com/patent/WO1998008253A1/en) |
+| WO 1998008253 A1 | international application | 1998-02-26 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1998008253A1) · [Google Patents](https://patents.google.com/patent/WO1998008253A1/en) |
 
 **Relevance:**
 
@@ -3090,7 +3092,7 @@ families and members are counted.
 **Inventors:** Izumi Nakayama; Yukio Masuda; Richard L. Bersin; Han Xu; Quain Geng
 **Dates:** priority 1996-10-16, filing 1996-10-16, grant 1998-08-18
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5795831A, retrieved 2026-09-14)
-**Estimated expiry:** 2017-10-16 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of WO1999052134A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2016-10-16 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US5795831A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `26794054` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3098,7 +3100,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,795,831 A | granted patent | 1998-08-18 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5795831A) · [Google Patents](https://patents.google.com/patent/US5795831A/en) |
-| WO 1999052134 A1 | international application | 1999-10-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5795831A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1999052134A1) · [Google Patents](https://patents.google.com/patent/WO1999052134A1/en) |
+| WO 1999052134 A1 | international application | 1999-10-14 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1999052134A1) · [Google Patents](https://patents.google.com/patent/WO1999052134A1/en) |
 
 **Relevance:**
 
@@ -3130,7 +3132,7 @@ families and members are counted.
 **Inventors:** Steven M. Zuniga; Manoocher Birang; Hung Chen; Sen-Hou Ko
 **Dates:** priority 1996-11-08, filing 1997-05-21, grant 2001-02-06
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6183354B1, retrieved 2026-09-14)
-**Estimated expiry:** 2017-11-08 — all 34 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US7040971B2 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2017-11-10 — all 34 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP5216542B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `24997773` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3138,39 +3140,39 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,183,354 B1 | granted patent | 2001-02-06 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6183354B1) · [Google Patents](https://patents.google.com/patent/US6183354B1/en) |
-| US 2001/0000775 A1 | application | 2001-05-03 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010000775A1) · [Google Patents](https://patents.google.com/patent/US20010000775A1/en) |
-| US 6,386,955 B2 | granted patent | 2002-05-14 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6386955B2) · [Google Patents](https://patents.google.com/patent/US6386955B2/en) |
-| US 2002/0086624 A1 | application | 2002-07-04 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020086624A1) · [Google Patents](https://patents.google.com/patent/US20020086624A1/en) |
-| US 6,540,594 B2 | granted patent | 2003-04-01 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6540594B2) · [Google Patents](https://patents.google.com/patent/US6540594B2/en) |
-| US 2004/0033769 A1 | application | 2004-02-19 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040033769A1) · [Google Patents](https://patents.google.com/patent/US20040033769A1/en) |
-| US 2005/0037698 A1 | application | 2005-02-17 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050037698A1) · [Google Patents](https://patents.google.com/patent/US20050037698A1/en) |
-| US 6,857,946 B2 | granted patent | 2005-02-22 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6857946B2) · [Google Patents](https://patents.google.com/patent/US6857946B2/en) |
-| US 7,040,971 B2 | granted patent | 2006-05-09 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7040971B2) · [Google Patents](https://patents.google.com/patent/US7040971B2/en) |
-| DE 69739521 D1 | application | 2009-09-10 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69739521D1) · [Google Patents](https://patents.google.com/patent/DE69739521D1/en) |
-| DE 69740146 D1 | application | 2011-04-21 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69740146D1) · [Google Patents](https://patents.google.com/patent/DE69740146D1/en) |
-| EP 0 841 123 A1 | application | 1998-05-13 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0841123A1) · [Google Patents](https://patents.google.com/patent/EP0841123A1/en) |
-| EP 1 258 317 A1 | application | 2002-11-20 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1258317A1) · [Google Patents](https://patents.google.com/patent/EP1258317A1/en) |
-| EP 0 841 123 B1 | granted patent | 2003-01-29 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0841123B1) · [Google Patents](https://patents.google.com/patent/EP0841123B1/en) |
-| EP 1 754 571 A1 | application | 2007-02-21 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1754571A1) · [Google Patents](https://patents.google.com/patent/EP1754571A1/en) |
-| EP 1 754 571 B1 | granted patent | 2009-07-29 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1754571B1) · [Google Patents](https://patents.google.com/patent/EP1754571B1/en) |
-| EP 1 258 317 B1 | granted patent | 2011-03-09 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1258317B1) · [Google Patents](https://patents.google.com/patent/EP1258317B1/en) |
-| JP H10180627 A | application | 1998-07-07 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10180627A) · [Google Patents](https://patents.google.com/patent/JPH10180627A/en) |
-| JP 3439970 B2 | granted patent | 2003-08-25 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3439970B2) · [Google Patents](https://patents.google.com/patent/JP3439970B2/en) |
-| JP 2003264162 A | application | 2003-09-19 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2003264162A) · [Google Patents](https://patents.google.com/patent/JP2003264162A/en) |
-| JP 2005328103 A | application | 2005-11-24 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2005328103A) · [Google Patents](https://patents.google.com/patent/JP2005328103A/en) |
-| JP 2007335895 A | application | 2007-12-27 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2007335895A) · [Google Patents](https://patents.google.com/patent/JP2007335895A/en) |
-| JP 2009033197 A | application | 2009-02-12 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2009033197A) · [Google Patents](https://patents.google.com/patent/JP2009033197A/en) |
-| JP 4233339 B2 | granted patent | 2009-03-04 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4233339B2) · [Google Patents](https://patents.google.com/patent/JP4233339B2/en) |
-| JP 2009065195 A | application | 2009-03-26 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2009065195A) · [Google Patents](https://patents.google.com/patent/JP2009065195A/en) |
-| JP 4368341 B2 | granted patent | 2009-11-18 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4368341B2) · [Google Patents](https://patents.google.com/patent/JP4368341B2/en) |
-| JP 4940061 B2 | granted patent | 2012-05-30 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4940061B2) · [Google Patents](https://patents.google.com/patent/JP4940061B2/en) |
-| JP 5068723 B2 | granted patent | 2012-11-07 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP5068723B2) · [Google Patents](https://patents.google.com/patent/JP5068723B2/en) |
-| JP 5216542 B2 | granted patent | 2013-06-19 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP5216542B2) · [Google Patents](https://patents.google.com/patent/JP5216542B2/en) |
-| KR 19980042123 A | application | 1998-08-17 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980042123A) · [Google Patents](https://patents.google.com/patent/KR19980042123A/en) |
-| KR 100366425 B1 | granted patent | 2003-02-19 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100366425B1) · [Google Patents](https://patents.google.com/patent/KR100366425B1/en) |
-| SG 70042 A1 | application | 2000-01-25 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG70042A1) · [Google Patents](https://patents.google.com/patent/SG70042A1/en) |
-| SG 87925 A1 | application | 2002-04-16 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG87925A1) · [Google Patents](https://patents.google.com/patent/SG87925A1/en) |
-| TW 344694 B | granted patent | 1998-11-11 | not shown | 2026-09-14 listed in the Google Patents family table of US6183354B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW344694B) · [Google Patents](https://patents.google.com/patent/TW344694B/en) |
+| US 2001/0000775 A1 | application | 2001-05-03 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010000775A1) · [Google Patents](https://patents.google.com/patent/US20010000775A1/en) |
+| US 6,386,955 B2 | granted patent | 2002-05-14 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6386955B2) · [Google Patents](https://patents.google.com/patent/US6386955B2/en) |
+| US 2002/0086624 A1 | application | 2002-07-04 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020086624A1) · [Google Patents](https://patents.google.com/patent/US20020086624A1/en) |
+| US 6,540,594 B2 | granted patent | 2003-04-01 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6540594B2) · [Google Patents](https://patents.google.com/patent/US6540594B2/en) |
+| US 2004/0033769 A1 | application | 2004-02-19 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20040033769A1) · [Google Patents](https://patents.google.com/patent/US20040033769A1/en) |
+| US 2005/0037698 A1 "Carrier head with a flexible membrane" | application | 2005-02-17 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050037698A1) · [Google Patents](https://patents.google.com/patent/US20050037698A1/en) |
+| US 6,857,946 B2 "Carrier head with a flexure" | granted patent | 2005-02-22 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6857946B2) · [Google Patents](https://patents.google.com/patent/US6857946B2/en) |
+| US 7,040,971 B2 "Carrier head with a flexible membrane" | granted patent | 2006-05-09 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7040971B2) · [Google Patents](https://patents.google.com/patent/US7040971B2/en) |
+| DE 69739521 D1 "Holder ring for a chemical mechanical polishing device" | application | 2009-09-10 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69739521D1) · [Google Patents](https://patents.google.com/patent/DE69739521D1/en) |
+| DE 69740146 D1 "Support plate with a flexible membrane for a chemical mechanical polishing device" | application | 2011-04-21 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69740146D1) · [Google Patents](https://patents.google.com/patent/DE69740146D1/en) |
+| EP 0 841 123 A1 "A carrier head with a flexible membrane for a chemical mechanical polishing system" | application | 1998-05-13 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0841123A1) · [Google Patents](https://patents.google.com/patent/EP0841123A1/en) |
+| EP 1 258 317 A1 "A carrier head with flexible membrane for a chemical mechanical polishing system" | application | 2002-11-20 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1258317A1) · [Google Patents](https://patents.google.com/patent/EP1258317A1/en) |
+| EP 0 841 123 B1 "A carrier head with a flexible membrane for a chemical mechanical polishing system" | granted patent | 2003-01-29 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0841123B1) · [Google Patents](https://patents.google.com/patent/EP0841123B1/en) |
+| EP 1 754 571 A1 "Retaining ring in a carrier head for a chemical mechanical polishing system" | application | 2007-02-21 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1754571A1) · [Google Patents](https://patents.google.com/patent/EP1754571A1/en) |
+| EP 1 754 571 B1 "Retaining ring for a chemical mechanical polishing system" | granted patent | 2009-07-29 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1754571B1) · [Google Patents](https://patents.google.com/patent/EP1754571B1/en) |
+| EP 1 258 317 B1 "A carrier head with flexible membrane for a chemical mechanical polishing system" | granted patent | 2011-03-09 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1258317B1) · [Google Patents](https://patents.google.com/patent/EP1258317B1/en) |
+| JP H10180627 A "Support head with flexible membrane for chemical mechanical polishing system" | application | 1998-07-07 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10180627A) · [Google Patents](https://patents.google.com/patent/JPH10180627A/en) |
+| JP 3439970 B2 "Support head with flexible membrane for chemical mechanical polishing system" | granted patent | 2003-08-25 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3439970B2) · [Google Patents](https://patents.google.com/patent/JP3439970B2/en) |
+| JP 2003264162 A "Support head with flexible membrane for chemical mechanical polishing system" | application | 2003-09-19 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2003264162A) · [Google Patents](https://patents.google.com/patent/JP2003264162A/en) |
+| JP 2005328103 A "Support head with flexible membrane for chemical mechanical polishing system" | application | 2005-11-24 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2005328103A) · [Google Patents](https://patents.google.com/patent/JP2005328103A/en) |
+| JP 2007335895 A "Film for chemical mechanical polishing" | application | 2007-12-27 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2007335895A) · [Google Patents](https://patents.google.com/patent/JP2007335895A/en) |
+| JP 2009033197 A "Support head with flexible membrane for chemical mechanical polishing system" | application | 2009-02-12 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2009033197A) · [Google Patents](https://patents.google.com/patent/JP2009033197A/en) |
+| JP 4233339 B2 "Support head with flexible membrane for chemical mechanical polishing system" | granted patent | 2009-03-04 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4233339B2) · [Google Patents](https://patents.google.com/patent/JP4233339B2/en) |
+| JP 2009065195 A "Retaining ring for chemical mechanical polishing head" | application | 2009-03-26 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2009065195A) · [Google Patents](https://patents.google.com/patent/JP2009065195A/en) |
+| JP 4368341 B2 "Retaining ring for chemical mechanical polishing support head" | granted patent | 2009-11-18 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4368341B2) · [Google Patents](https://patents.google.com/patent/JP4368341B2/en) |
+| JP 4940061 B2 "Film for chemical mechanical polishing" | granted patent | 2012-05-30 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4940061B2) · [Google Patents](https://patents.google.com/patent/JP4940061B2/en) |
+| JP 5068723 B2 "Support head with flexible membrane for chemical mechanical polishing system" | granted patent | 2012-11-07 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP5068723B2) · [Google Patents](https://patents.google.com/patent/JP5068723B2/en) |
+| JP 5216542 B2 "Retaining ring for chemical mechanical polishing head" | granted patent | 2013-06-19 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP5216542B2) · [Google Patents](https://patents.google.com/patent/JP5216542B2/en) |
+| KR 19980042123 A "Carrier head with flexible thin film for chemical mechanical polishing apparatus" | application | 1998-08-17 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980042123A) · [Google Patents](https://patents.google.com/patent/KR19980042123A/en) |
+| KR 100366425 B1 "A carrier head with a flexible membrane for a chemical mechanical polishing system" | granted patent | 2003-02-19 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100366425B1) · [Google Patents](https://patents.google.com/patent/KR100366425B1/en) |
+| SG 70042 A1 "A carrier head with a flexible membrane for a chemical mechanical polishing system" | application | 2000-01-25 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG70042A1) · [Google Patents](https://patents.google.com/patent/SG70042A1/en) |
+| SG 87925 A1 "A carrier head with a flexible membrane for a chemical mechanical polishing system" | application | 2002-04-16 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG87925A1) · [Google Patents](https://patents.google.com/patent/SG87925A1/en) |
+| TW 344694 B "A carrier head with a flexible membrane for a chemical mechanical polishing system" | granted patent | 1998-11-11 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW344694B) · [Google Patents](https://patents.google.com/patent/TW344694B/en) |
 
 **Relevance:**
 
@@ -3200,11 +3202,11 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,812,403 A | granted patent | 1998-09-22 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5812403A) · [Google Patents](https://patents.google.com/patent/US5812403A/en) |
-| JP H10178004 A | application | 1998-06-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5812403A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10178004A) · [Google Patents](https://patents.google.com/patent/JPH10178004A/en) |
-| KR 19980042360 A | application | 1998-08-17 | not shown | 2026-09-14 listed in the Google Patents family table of US5812403A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980042360A) · [Google Patents](https://patents.google.com/patent/KR19980042360A/en) |
-| KR 100472108 B1 | granted patent | 2005-04-14 | not shown | 2026-09-14 listed in the Google Patents family table of US5812403A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100472108B1) · [Google Patents](https://patents.google.com/patent/KR100472108B1/en) |
-| SG 67997 A1 | application | 1999-10-19 | not shown | 2026-09-14 listed in the Google Patents family table of US5812403A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG67997A1) · [Google Patents](https://patents.google.com/patent/SG67997A1/en) |
-| TW 358968 B | granted patent | 1999-05-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5812403A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW358968B) · [Google Patents](https://patents.google.com/patent/TW358968B/en) |
+| JP H10178004 A "Method and apparatus for cleaning a surface in a substrate processing system" | application | 1998-06-30 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10178004A) · [Google Patents](https://patents.google.com/patent/JPH10178004A/en) |
+| KR 19980042360 A "Method and apparatus for cleaning surfaces of substrate processing system" | application | 1998-08-17 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980042360A) · [Google Patents](https://patents.google.com/patent/KR19980042360A/en) |
+| KR 100472108 B1 | granted patent | 2005-04-14 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100472108B1) · [Google Patents](https://patents.google.com/patent/KR100472108B1/en) |
+| SG 67997 A1 "Methods and apparatus or cleaning surfaces in a substrate processing system" | application | 1999-10-19 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSG67997A1) · [Google Patents](https://patents.google.com/patent/SG67997A1/en) |
+| TW 358968 B "Method and apparatus for cleaning surfaces in a substrate processing system" | granted patent | 1999-05-21 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW358968B) · [Google Patents](https://patents.google.com/patent/TW358968B/en) |
 
 **Relevance:**
 
@@ -3225,7 +3227,7 @@ families and members are counted.
 **Inventors:** Brian L. Mueller; Christopher C. Streinz; Steven K. Grumbine
 **Dates:** priority 1996-11-26, filing 1996-11-26, grant 1999-09-28
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5958288A, retrieved 2026-09-14)
-**Estimated expiry:** 2017-11-26 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6015506A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2023-01-08 — all 8 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of IL153843A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
 **Google Patents family ID:** `25030826` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3233,13 +3235,13 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,958,288 A | granted patent | 1999-09-28 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5958288A) · [Google Patents](https://patents.google.com/patent/US5958288A/en) |
-| US 5,980,775 A | granted patent | 1999-11-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5958288A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5980775A) · [Google Patents](https://patents.google.com/patent/US5980775A/en) |
-| US 6,015,506 A | granted patent | 2000-01-18 | not shown | 2026-09-14 listed in the Google Patents family table of US5958288A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6015506A) · [Google Patents](https://patents.google.com/patent/US6015506A/en) |
-| IL 153843 A | application | 2007-02-11 | not shown | 2026-09-14 listed in the Google Patents family table of US5958288A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DIL153843A) · [Google Patents](https://patents.google.com/patent/IL153843A/en) |
-| KR 20110063400 A | application | 2011-06-10 | not shown | 2026-09-14 listed in the Google Patents family table of US5958288A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20110063400A) · [Google Patents](https://patents.google.com/patent/KR20110063400A/en) |
-| KR 20110095838 A | application | 2011-08-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5958288A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20110095838A) · [Google Patents](https://patents.google.com/patent/KR20110095838A/en) |
-| MY 121663 A | application | 2006-02-28 | not shown | 2026-09-14 listed in the Google Patents family table of US5958288A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMY121663A) · [Google Patents](https://patents.google.com/patent/MY121663A/en) |
-| MY 128249 A | application | 2007-01-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5958288A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMY128249A) · [Google Patents](https://patents.google.com/patent/MY128249A/en) |
+| US 5,980,775 A | granted patent | 1999-11-09 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5980775A) · [Google Patents](https://patents.google.com/patent/US5980775A/en) |
+| US 6,015,506 A "Composition and method for polishing rigid disks" | granted patent | 2000-01-18 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6015506A) · [Google Patents](https://patents.google.com/patent/US6015506A/en) |
+| IL 153843 A "Chemical mechanical metal polishing precursor compositions and method of polishing therewith" | application | 2007-02-11 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DIL153843A) · [Google Patents](https://patents.google.com/patent/IL153843A/en) |
+| KR 20110063400 A "Compositions and slurries useful for chemical mechanical polishing of metals" | application | 2011-06-10 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20110063400A) · [Google Patents](https://patents.google.com/patent/KR20110063400A/en) |
+| KR 20110095838 A "Compositions and slurries useful for chemical mechanical polishing of metals" | application | 2011-08-25 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20110095838A) · [Google Patents](https://patents.google.com/patent/KR20110095838A/en) |
+| MY 121663 A "Composition and method for polishing rigid disks" | application | 2006-02-28 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMY121663A) · [Google Patents](https://patents.google.com/patent/MY121663A/en) |
+| MY 128249 A "Composition and method for polishing rigid disks" | application | 2007-01-31 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMY128249A) · [Google Patents](https://patents.google.com/patent/MY128249A/en) |
 
 **Relevance:**
 
@@ -3266,7 +3268,7 @@ families and members are counted.
 **Inventors:** Sheldon Aronowitz; Laique Khan; James Kimball
 **Dates:** priority 1996-12-19, filing 1996-12-19, grant 1999-10-05
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5963801A, retrieved 2026-09-14)
-**Estimated expiry:** 2017-12-19 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH10189475A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2017-12-19 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JPH10189475A (estimated: 20 years from the filing date shown; no term remains for any grant on it)
 **Google Patents family ID:** `25087511` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3274,7 +3276,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,963,801 A | granted patent | 1999-10-05 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5963801A) · [Google Patents](https://patents.google.com/patent/US5963801A/en) |
-| JP H10189475 A | application | 1998-07-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5963801A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10189475A) · [Google Patents](https://patents.google.com/patent/JPH10189475A/en) |
+| JP H10189475 A "Method for forming retrograde well structure and punch-through barrier using low energy implantation" | application | 1998-07-21 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10189475A) · [Google Patents](https://patents.google.com/patent/JPH10189475A/en) |
 
 **Relevance:**
 
@@ -3346,7 +3348,7 @@ families and members are counted.
 **Inventors:** Mark I. Gardner; Fred N. Hause; H. Jim Fulford, Jr.
 **Dates:** priority 1997-01-10, filing 1997-01-10, grant 1998-08-11
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5793090A, retrieved 2026-09-14)
-**Estimated expiry:** 2018-01-10 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6107129A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2017-01-10 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6107129A (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `25122771` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3354,7 +3356,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,793,090 A | granted patent | 1998-08-11 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5793090A) · [Google Patents](https://patents.google.com/patent/US5793090A/en) |
-| US 6,107,129 A | granted patent | 2000-08-22 | not shown | 2026-09-14 listed in the Google Patents family table of US5793090A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6107129A) · [Google Patents](https://patents.google.com/patent/US6107129A/en) |
+| US 6,107,129 A | granted patent | 2000-08-22 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6107129A) · [Google Patents](https://patents.google.com/patent/US6107129A/en) |
 
 **Relevance:**
 
@@ -3377,7 +3379,7 @@ families and members are counted.
 **Inventors:** Robert Falster; Marco Cornara; Daniela Gambaro; Massimiliano Olmo
 **Dates:** priority 1997-02-26, filing 1997-02-26, grant 1999-11-30
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5994761A, retrieved 2026-09-14)
-**Estimated expiry:** 2018-02-26 — all 29 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of WO1998038675A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2018-02-26 — all 29 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW528815B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 **Google Patents family ID:** `25194044` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3385,34 +3387,34 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,994,761 A | granted patent | 1999-11-30 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5994761A) · [Google Patents](https://patents.google.com/patent/US5994761A/en) |
-| US 6,180,220 B1 | granted patent | 2001-01-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6180220B1) · [Google Patents](https://patents.google.com/patent/US6180220B1/en) |
-| US 6,204,152 B1 | granted patent | 2001-03-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6204152B1) · [Google Patents](https://patents.google.com/patent/US6204152B1/en) |
-| US 6,306,733 B1 | granted patent | 2001-10-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6306733B1) · [Google Patents](https://patents.google.com/patent/US6306733B1/en) |
-| US 2002/0026893 A1 | application | 2002-03-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020026893A1) · [Google Patents](https://patents.google.com/patent/US20020026893A1/en) |
-| US 6,537,368 B2 | granted patent | 2003-03-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6537368B2) · [Google Patents](https://patents.google.com/patent/US6537368B2/en) |
-| US 6,586,068 B1 | granted patent | 2003-07-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6586068B1) · [Google Patents](https://patents.google.com/patent/US6586068B1/en) |
-| US 2003/0196586 A1 | application | 2003-10-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030196586A1) · [Google Patents](https://patents.google.com/patent/US20030196586A1/en) |
-| US 6,849,119 B2 | granted patent | 2005-02-01 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6849119B2) · [Google Patents](https://patents.google.com/patent/US6849119B2/en) |
-| CN 1251206 A | application | 2000-04-19 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1251206A) · [Google Patents](https://patents.google.com/patent/CN1251206A/en) |
-| CN 1158696 C | granted patent | 2004-07-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1158696C) · [Google Patents](https://patents.google.com/patent/CN1158696C/en) |
-| DE 69817365 D1 | application | 2003-09-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69817365D1) · [Google Patents](https://patents.google.com/patent/DE69817365D1/en) |
-| DE 69817365 T2 | translation of granted patent | 2004-06-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69817365T2) · [Google Patents](https://patents.google.com/patent/DE69817365T2/en) |
-| DE 69840004 D1 | application | 2008-10-23 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69840004D1) · [Google Patents](https://patents.google.com/patent/DE69840004D1/en) |
-| EP 1 002 335 A1 | application | 2000-05-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1002335A1) · [Google Patents](https://patents.google.com/patent/EP1002335A1/en) |
-| EP 1 002 335 A4 | search report | 2000-05-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1002335A4) · [Google Patents](https://patents.google.com/patent/EP1002335A4/en) |
-| EP 1 300 879 A2 | application | 2003-04-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1300879A2) · [Google Patents](https://patents.google.com/patent/EP1300879A2/en) |
-| EP 1 002 335 B1 | granted patent | 2003-08-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1002335B1) · [Google Patents](https://patents.google.com/patent/EP1002335B1/en) |
-| EP 1 300 879 A3 | search report | 2005-03-16 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1300879A3) · [Google Patents](https://patents.google.com/patent/EP1300879A3/en) |
-| EP 1 300 879 B1 | granted patent | 2008-09-10 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1300879B1) · [Google Patents](https://patents.google.com/patent/EP1300879B1/en) |
-| EP 2 028 682 A1 | application | 2009-02-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP2028682A1) · [Google Patents](https://patents.google.com/patent/EP2028682A1/en) |
-| JP 2001509319 A | application | 2001-07-10 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001509319A) · [Google Patents](https://patents.google.com/patent/JP2001509319A/en) |
-| JP 3288721 B2 | granted patent | 2002-06-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3288721B2) · [Google Patents](https://patents.google.com/patent/JP3288721B2/en) |
-| KR 20000075744 A | application | 2000-12-26 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20000075744A) · [Google Patents](https://patents.google.com/patent/KR20000075744A/en) |
-| KR 100395391 B1 | granted patent | 2003-08-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100395391B1) · [Google Patents](https://patents.google.com/patent/KR100395391B1/en) |
-| KR 20030097601 A | application | 2003-12-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20030097601A) · [Google Patents](https://patents.google.com/patent/KR20030097601A/en) |
-| MY 132868 A | application | 2007-10-31 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMY132868A) · [Google Patents](https://patents.google.com/patent/MY132868A/en) |
-| TW 528815 B | granted patent | 2003-04-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW528815B) · [Google Patents](https://patents.google.com/patent/TW528815B/en) |
-| WO 1998038675 A1 | international application | 1998-09-03 | not shown | 2026-09-14 listed in the Google Patents family table of US5994761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1998038675A1) · [Google Patents](https://patents.google.com/patent/WO1998038675A1/en) |
+| US 6,180,220 B1 "Ideal Oxygen precipitating silicon wafers and oxygen out-diffusion-less process therefor" | granted patent | 2001-01-30 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6180220B1) · [Google Patents](https://patents.google.com/patent/US6180220B1/en) |
+| US 6,204,152 B1 | granted patent | 2001-03-20 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6204152B1) · [Google Patents](https://patents.google.com/patent/US6204152B1/en) |
+| US 6,306,733 B1 "Ideal oxygen precipitating epitaxial silicon wafers and oxygen out-diffusion-less process therefor" | granted patent | 2001-10-23 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6306733B1) · [Google Patents](https://patents.google.com/patent/US6306733B1/en) |
+| US 2002/0026893 A1 "Ideal oxygen precipitating epitaxial silicon wafers and oxygen out-diffusion-less process therefor" | application | 2002-03-07 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020026893A1) · [Google Patents](https://patents.google.com/patent/US20020026893A1/en) |
+| US 6,537,368 B2 "Ideal oxygen precipitating epitaxial silicon wafers and oxygen out-diffusion-less process therefor" | granted patent | 2003-03-25 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6537368B2) · [Google Patents](https://patents.google.com/patent/US6537368B2/en) |
+| US 6,586,068 B1 "Ideal oxygen precipitating silicon wafer having an asymmetrical vacancy concentration profile and a process for the preparation thereof" | granted patent | 2003-07-01 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6586068B1) · [Google Patents](https://patents.google.com/patent/US6586068B1/en) |
+| US 2003/0196586 A1 | application | 2003-10-23 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030196586A1) · [Google Patents](https://patents.google.com/patent/US20030196586A1/en) |
+| US 6,849,119 B2 | granted patent | 2005-02-01 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6849119B2) · [Google Patents](https://patents.google.com/patent/US6849119B2/en) |
+| CN 1251206 A | application | 2000-04-19 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1251206A) · [Google Patents](https://patents.google.com/patent/CN1251206A/en) |
+| CN 1158696 C "Ideal oxygen precipitating silicon wafers and process with reduced oxygen out-diffusion" | granted patent | 2004-07-21 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1158696C) · [Google Patents](https://patents.google.com/patent/CN1158696C/en) |
+| DE 69817365 D1 "OXYGEN DIFFUSIONLESS OXYGEN PREPARATION PROCESS IN SILICON WAFER" | application | 2003-09-25 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69817365D1) · [Google Patents](https://patents.google.com/patent/DE69817365D1/en) |
+| DE 69817365 T2 "OXYGEN DIFFUSIONLESS OXYGEN PREPARATION PROCESS IN SILICON WAFER" | translation of granted patent | 2004-06-24 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69817365T2) · [Google Patents](https://patents.google.com/patent/DE69817365T2/en) |
+| DE 69840004 D1 "Silicon semiconductor wafers with ideal oxygen deposition behavior" | application | 2008-10-23 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69840004D1) · [Google Patents](https://patents.google.com/patent/DE69840004D1/en) |
+| EP 1 002 335 A1 | application | 2000-05-24 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1002335A1) · [Google Patents](https://patents.google.com/patent/EP1002335A1/en) |
+| EP 1 002 335 A4 "SILICON WAFER WITH IDEAL OXYGEN PRECIPITATION AND PROCESS WITHOUT EXTERNAL OXYGEN DIFFUSION FOR SUCH SLICES" | search report | 2000-05-24 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1002335A4) · [Google Patents](https://patents.google.com/patent/EP1002335A4/en) |
+| EP 1 300 879 A2 "Ideal oxygen precipating silicon wafers and oxygen out-diffusion-less process therefor" | application | 2003-04-09 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1300879A2) · [Google Patents](https://patents.google.com/patent/EP1300879A2/en) |
+| EP 1 002 335 B1 "Oxygen precipitating process without oxygen outdiffusion in silicon wafer" | granted patent | 2003-08-20 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1002335B1) · [Google Patents](https://patents.google.com/patent/EP1002335B1/en) |
+| EP 1 300 879 A3 "Ideal oxygen precipating silicon wafers and oxygen out-diffusion-less process therefor" | search report | 2005-03-16 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1300879A3) · [Google Patents](https://patents.google.com/patent/EP1300879A3/en) |
+| EP 1 300 879 B1 "Ideal oxygen precipitating silicon wafers" | granted patent | 2008-09-10 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1300879B1) · [Google Patents](https://patents.google.com/patent/EP1300879B1/en) |
+| EP 2 028 682 A1 "Ideal oxygen precipitating silicon wafers and oxygen out-diffusion-less process thereof" | application | 2009-02-25 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP2028682A1) · [Google Patents](https://patents.google.com/patent/EP2028682A1/en) |
+| JP 2001509319 A "An ideal oxygen-precipitated silicon wafer and an oxygen outdiffusion-free method therefor" | application | 2001-07-10 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001509319A) · [Google Patents](https://patents.google.com/patent/JP2001509319A/en) |
+| JP 3288721 B2 "Ideal oxygen-precipitated silicon wafers and oxygen-free diffusion-free method therefor" | granted patent | 2002-06-04 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3288721B2) · [Google Patents](https://patents.google.com/patent/JP3288721B2/en) |
+| KR 20000075744 A | application | 2000-12-26 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20000075744A) · [Google Patents](https://patents.google.com/patent/KR20000075744A/en) |
+| KR 100395391 B1 | granted patent | 2003-08-25 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100395391B1) · [Google Patents](https://patents.google.com/patent/KR100395391B1/en) |
+| KR 20030097601 A | application | 2003-12-31 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20030097601A) · [Google Patents](https://patents.google.com/patent/KR20030097601A/en) |
+| MY 132868 A | application | 2007-10-31 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DMY132868A) · [Google Patents](https://patents.google.com/patent/MY132868A/en) |
+| TW 528815 B | granted patent | 2003-04-21 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW528815B) · [Google Patents](https://patents.google.com/patent/TW528815B/en) |
+| WO 1998038675 A1 | international application | 1998-09-03 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1998038675A1) · [Google Patents](https://patents.google.com/patent/WO1998038675A1/en) |
 
 **Relevance:**
 
@@ -3434,7 +3436,7 @@ families and members are counted.
 **Inventors:** John O. Borland
 **Dates:** priority 1997-03-19, filing 1997-03-19, grant 1998-10-13
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US5821589A, retrieved 2026-09-14)
-**Estimated expiry:** 2018-03-19 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of WO1998042023A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2018-03-11 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP4349658B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `25236318` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3442,11 +3444,11 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,821,589 A | granted patent | 1998-10-13 | Expired - Fee Related | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5821589A) · [Google Patents](https://patents.google.com/patent/US5821589A/en) |
-| EP 0 912 998 A1 | application | 1999-05-06 | not shown | 2026-09-14 listed in the Google Patents family table of US5821589A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0912998A1) · [Google Patents](https://patents.google.com/patent/EP0912998A1/en) |
-| EP 0 912 998 A4 | search report | 2005-04-20 | not shown | 2026-09-14 listed in the Google Patents family table of US5821589A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0912998A4) · [Google Patents](https://patents.google.com/patent/EP0912998A4/en) |
-| JP 2001517366 A | application | 2001-10-02 | not shown | 2026-09-14 listed in the Google Patents family table of US5821589A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001517366A) · [Google Patents](https://patents.google.com/patent/JP2001517366A/en) |
-| JP 4349658 B2 | granted patent | 2009-10-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5821589A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4349658B2) · [Google Patents](https://patents.google.com/patent/JP4349658B2/en) |
-| WO 1998042023 A1 | international application | 1998-09-24 | not shown | 2026-09-14 listed in the Google Patents family table of US5821589A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1998042023A1) · [Google Patents](https://patents.google.com/patent/WO1998042023A1/en) |
+| EP 0 912 998 A1 "Method for cmos latch-up improvement by mev billi (buried implanted layer for lateral isolation) plus buried layer implantation" | application | 1999-05-06 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0912998A1) · [Google Patents](https://patents.google.com/patent/EP0912998A1/en) |
+| EP 0 912 998 A4 "Method for cmos latch-up improvement by mev billi (buried implanted layer for lateral isolation) plus buried layer implantation" | search report | 2005-04-20 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0912998A4) · [Google Patents](https://patents.google.com/patent/EP0912998A4/en) |
+| JP 2001517366 A "Method of improving CMOS latch-up by MEV BILLI (Buried Implanted Layer For Lateral Isolation) and implantation of buried layer" | application | 2001-10-02 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001517366A) · [Google Patents](https://patents.google.com/patent/JP2001517366A/en) |
+| JP 4349658 B2 "Method of improving CMOS latch-up by MEV BILLI (BURIED IMPLANTED LAYER FOR LATERAL ISOLATION) and buried layer implantation" | granted patent | 2009-10-21 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4349658B2) · [Google Patents](https://patents.google.com/patent/JP4349658B2/en) |
+| WO 1998042023 A1 "Method for cmos latch-up improvement by mev billi (buried implanted layer for lateral isolation) plus buried layer implantation" | international application | 1998-09-24 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1998042023A1) · [Google Patents](https://patents.google.com/patent/WO1998042023A1/en) |
 
 **Relevance:**
 
@@ -3472,7 +3474,7 @@ families and members are counted.
 **Inventors:** Alexander R. Mitwalsky; Tze-Chiang Chen
 **Dates:** priority 1997-03-24, filing 1997-03-24, grant 1998-08-04
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US5789302A, retrieved 2026-09-14)
-**Estimated expiry:** 2018-03-24 — all 11 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6271578B1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2018-03-24 — all 11 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of TW423066B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
 **Google Patents family ID:** `25239372` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3480,16 +3482,16 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 5,789,302 A | granted patent | 1998-08-04 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS5789302A) · [Google Patents](https://patents.google.com/patent/US5789302A/en) |
-| US 6,025,639 A | granted patent | 2000-02-15 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6025639A) · [Google Patents](https://patents.google.com/patent/US6025639A/en) |
-| US 6,084,287 A | granted patent | 2000-07-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6084287A) · [Google Patents](https://patents.google.com/patent/US6084287A/en) |
-| US 6,271,578 B1 | granted patent | 2001-08-07 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6271578B1) · [Google Patents](https://patents.google.com/patent/US6271578B1/en) |
-| CN 1198007 A | application | 1998-11-04 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1198007A) · [Google Patents](https://patents.google.com/patent/CN1198007A/en) |
-| CN 1127133 C | granted patent | 2003-11-05 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1127133C) · [Google Patents](https://patents.google.com/patent/CN1127133C/en) |
-| EP 0 867 934 A1 | application | 1998-09-30 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0867934A1) · [Google Patents](https://patents.google.com/patent/EP0867934A1/en) |
-| JP H10270388 A | application | 1998-10-09 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10270388A) · [Google Patents](https://patents.google.com/patent/JPH10270388A/en) |
-| KR 19980080583 A | application | 1998-11-25 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980080583A) · [Google Patents](https://patents.google.com/patent/KR19980080583A/en) |
-| KR 100482385 B1 | granted patent | 2005-08-05 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100482385B1) · [Google Patents](https://patents.google.com/patent/KR100482385B1/en) |
-| TW 423066 B | granted patent | 2001-02-21 | not shown | 2026-09-14 listed in the Google Patents family table of US5789302A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW423066B) · [Google Patents](https://patents.google.com/patent/TW423066B/en) |
+| US 6,025,639 A | granted patent | 2000-02-15 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6025639A) · [Google Patents](https://patents.google.com/patent/US6025639A/en) |
+| US 6,084,287 A | granted patent | 2000-07-04 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6084287A) · [Google Patents](https://patents.google.com/patent/US6084287A/en) |
+| US 6,271,578 B1 | granted patent | 2001-08-07 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6271578B1) · [Google Patents](https://patents.google.com/patent/US6271578B1/en) |
+| CN 1198007 A | application | 1998-11-04 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1198007A) · [Google Patents](https://patents.google.com/patent/CN1198007A/en) |
+| CN 1127133 C | granted patent | 2003-11-05 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1127133C) · [Google Patents](https://patents.google.com/patent/CN1127133C/en) |
+| EP 0 867 934 A1 "A method of fabricating an integrated circuit using crack stops" | application | 1998-09-30 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0867934A1) · [Google Patents](https://patents.google.com/patent/EP0867934A1/en) |
+| JP H10270388 A "How to form a crack stopper" | application | 1998-10-09 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH10270388A) · [Google Patents](https://patents.google.com/patent/JPH10270388A/en) |
+| KR 19980080583 A "How to Form Crack Stops" | application | 1998-11-25 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19980080583A) · [Google Patents](https://patents.google.com/patent/KR19980080583A/en) |
+| KR 100482385 B1 | granted patent | 2005-08-05 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100482385B1) · [Google Patents](https://patents.google.com/patent/KR100482385B1/en) |
+| TW 423066 B | granted patent | 2001-02-21 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW423066B) · [Google Patents](https://patents.google.com/patent/TW423066B/en) |
 
 **Relevance:**
 
@@ -3573,14 +3575,14 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,121,161 A | granted patent | 2000-09-19 | Expired - Fee Related | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6121161A) · [Google Patents](https://patents.google.com/patent/US6121161A/en) |
-| DE 69815951 D1 | application | 2003-08-07 | not shown | 2026-09-14 listed in the Google Patents family table of US6121161A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69815951D1) · [Google Patents](https://patents.google.com/patent/DE69815951D1/en) |
-| DE 69815951 T2 | translation of granted patent | 2003-12-24 | not shown | 2026-09-14 listed in the Google Patents family table of US6121161A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69815951T2) · [Google Patents](https://patents.google.com/patent/DE69815951T2/en) |
-| EP 0 884 401 A1 | application | 1998-12-16 | not shown | 2026-09-14 listed in the Google Patents family table of US6121161A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0884401A1) · [Google Patents](https://patents.google.com/patent/EP0884401A1/en) |
-| EP 0 884 401 B1 | granted patent | 2003-07-02 | not shown | 2026-09-14 listed in the Google Patents family table of US6121161A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0884401B1) · [Google Patents](https://patents.google.com/patent/EP0884401B1/en) |
-| JP H1116845 A | application | 1999-01-22 | not shown | 2026-09-14 listed in the Google Patents family table of US6121161A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH1116845A) · [Google Patents](https://patents.google.com/patent/JPH1116845A/en) |
-| KR 19990006869 A | application | 1999-01-25 | not shown | 2026-09-14 listed in the Google Patents family table of US6121161A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19990006869A) · [Google Patents](https://patents.google.com/patent/KR19990006869A/en) |
-| KR 100562208 B1 | granted patent | 2006-05-25 | not shown | 2026-09-14 listed in the Google Patents family table of US6121161A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100562208B1) · [Google Patents](https://patents.google.com/patent/KR100562208B1/en) |
-| TW 460943 B | granted patent | 2001-10-21 | not shown | 2026-09-14 listed in the Google Patents family table of US6121161A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW460943B) · [Google Patents](https://patents.google.com/patent/TW460943B/en) |
+| DE 69815951 D1 "Process and installation for the internal coating of a treatment chamber" | application | 2003-08-07 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69815951D1) · [Google Patents](https://patents.google.com/patent/DE69815951D1/en) |
+| DE 69815951 T2 "Process and installation for the internal coating of a treatment chamber" | translation of granted patent | 2003-12-24 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69815951T2) · [Google Patents](https://patents.google.com/patent/DE69815951T2/en) |
+| EP 0 884 401 A1 "Method and system for coating the inside of a processing chamber" | application | 1998-12-16 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0884401A1) · [Google Patents](https://patents.google.com/patent/EP0884401A1/en) |
+| EP 0 884 401 B1 "Method and system for coating the inside of a processing chamber" | granted patent | 2003-07-02 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP0884401B1) · [Google Patents](https://patents.google.com/patent/EP0884401B1/en) |
+| JP H1116845 A "Reduction of mobile ion and metal contamination in HDP-CVD chambers using chamber seasoning film deposition" | application | 1999-01-22 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH1116845A) · [Google Patents](https://patents.google.com/patent/JPH1116845A/en) |
+| KR 19990006869 A "Method and apparatus for removing mobile ions and metal contaminants in HDP-CVD chamber by coating season thin film in chamber" | application | 1999-01-25 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19990006869A) · [Google Patents](https://patents.google.com/patent/KR19990006869A/en) |
+| KR 100562208 B1 "Reduction of mobile ion and metal contamination in hdp-cvd chambers using chamber seasoning film depositions" | granted patent | 2006-05-25 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100562208B1) · [Google Patents](https://patents.google.com/patent/KR100562208B1/en) |
+| TW 460943 B | granted patent | 2001-10-21 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW460943B) · [Google Patents](https://patents.google.com/patent/TW460943B/en) |
 
 **Relevance:**
 
@@ -3641,11 +3643,11 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,159,646 A | granted patent | 2000-12-12 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6159646A) · [Google Patents](https://patents.google.com/patent/US6159646A/en) |
-| JP H11109654 A | application | 1999-04-23 | not shown | 2026-09-14 listed in the Google Patents family table of US6159646A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH11109654A) · [Google Patents](https://patents.google.com/patent/JPH11109654A/en) |
-| JP 3654771 B2 | granted patent | 2005-06-02 | not shown | 2026-09-14 listed in the Google Patents family table of US6159646A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3654771B2) · [Google Patents](https://patents.google.com/patent/JP3654771B2/en) |
-| KR 19990029141 A | application | 1999-04-26 | not shown | 2026-09-14 listed in the Google Patents family table of US6159646A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19990029141A) · [Google Patents](https://patents.google.com/patent/KR19990029141A/en) |
-| KR 100265766 B1 | granted patent | 2000-09-15 | not shown | 2026-09-14 listed in the Google Patents family table of US6159646A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100265766B1) · [Google Patents](https://patents.google.com/patent/KR100265766B1/en) |
-| TW 392231 B | granted patent | 2000-06-01 | not shown | 2026-09-14 listed in the Google Patents family table of US6159646A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW392231B) · [Google Patents](https://patents.google.com/patent/TW392231B/en) |
+| JP H11109654 A "Semiconductor device manufacturing wafer rework method and semiconductor device manufacturing method" | application | 1999-04-23 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPH11109654A) · [Google Patents](https://patents.google.com/patent/JPH11109654A/en) |
+| JP 3654771 B2 "Semiconductor device manufacturing wafer rework method and semiconductor device manufacturing method" | granted patent | 2005-06-02 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP3654771B2) · [Google Patents](https://patents.google.com/patent/JP3654771B2/en) |
+| KR 19990029141 A "Reworking method of wafer for semiconductor device manufacturing and manufacturing method of semiconductor device" | application | 1999-04-26 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR19990029141A) · [Google Patents](https://patents.google.com/patent/KR19990029141A/en) |
+| KR 100265766 B1 "Method of reworking wafer for semiconductor device and of manufacturing semiconductor device" | granted patent | 2000-09-15 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100265766B1) · [Google Patents](https://patents.google.com/patent/KR100265766B1/en) |
+| TW 392231 B "Rework method for wafers of manufacturing semiconductor devices using the same, and method of manufacturing semiconductor devices thereby" | granted patent | 2000-06-01 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW392231B) · [Google Patents](https://patents.google.com/patent/TW392231B/en) |
 
 **Relevance:**
 
@@ -3666,7 +3668,7 @@ families and members are counted.
 **Inventors:** Mehdi Vaez-Iravani; Stanley Stokowski; Guoheng Zhao
 **Dates:** priority 1997-09-19, filing 1997-09-19, grant 2001-03-13
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6201601B1, retrieved 2026-09-14)
-**Estimated expiry:** 2018-09-19 — all 33 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of WO1999014575B1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2018-09-18 — all 33 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of JP4499279B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `25464477` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3674,38 +3676,38 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,201,601 B1 | granted patent | 2001-03-13 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6201601B1) · [Google Patents](https://patents.google.com/patent/US6201601B1/en) |
-| US 2001/0000679 A1 | application | 2001-05-03 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010000679A1) · [Google Patents](https://patents.google.com/patent/US20010000679A1/en) |
-| US 2001/0000977 A1 | application | 2001-05-10 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010000977A1) · [Google Patents](https://patents.google.com/patent/US20010000977A1/en) |
-| US 2001/0002149 A1 | application | 2001-05-31 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010002149A1) · [Google Patents](https://patents.google.com/patent/US20010002149A1/en) |
-| US 6,384,910 B2 | granted patent | 2002-05-07 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6384910B2) · [Google Patents](https://patents.google.com/patent/US6384910B2/en) |
-| US 2002/0080346 A1 | application | 2002-06-27 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020080346A1) · [Google Patents](https://patents.google.com/patent/US20020080346A1/en) |
-| US 6,618,134 B2 | granted patent | 2003-09-09 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6618134B2) · [Google Patents](https://patents.google.com/patent/US6618134B2/en) |
-| US 6,639,662 B2 | granted patent | 2003-10-28 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6639662B2) · [Google Patents](https://patents.google.com/patent/US6639662B2/en) |
-| US 2003/0206295 A1 | application | 2003-11-06 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030206295A1) · [Google Patents](https://patents.google.com/patent/US20030206295A1/en) |
-| US 6,657,715 B2 | granted patent | 2003-12-02 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6657715B2) · [Google Patents](https://patents.google.com/patent/US6657715B2/en) |
-| US 6,891,611 B1 | granted patent | 2005-05-10 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6891611B1) · [Google Patents](https://patents.google.com/patent/US6891611B1/en) |
-| US 2005/0174568 A1 | application | 2005-08-11 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050174568A1) · [Google Patents](https://patents.google.com/patent/US20050174568A1/en) |
-| US 2005/0206886 A1 | application | 2005-09-22 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050206886A1) · [Google Patents](https://patents.google.com/patent/US20050206886A1/en) |
-| US 7,064,821 B2 | granted patent | 2006-06-20 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7064821B2) · [Google Patents](https://patents.google.com/patent/US7064821B2/en) |
-| US 7,079,238 B2 | granted patent | 2006-07-18 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7079238B2) · [Google Patents](https://patents.google.com/patent/US7079238B2/en) |
-| AU 9400098 A | application | 1999-04-05 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU9400098A) · [Google Patents](https://patents.google.com/patent/AU9400098A/en) |
-| DE 69819929 D1 | application | 2003-12-24 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69819929D1) · [Google Patents](https://patents.google.com/patent/DE69819929D1/en) |
-| DE 69819929 T2 | translation of granted patent | 2004-11-11 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69819929T2) · [Google Patents](https://patents.google.com/patent/DE69819929T2/en) |
-| DE 69828827 D1 | application | 2005-03-03 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69828827D1) · [Google Patents](https://patents.google.com/patent/DE69828827D1/en) |
-| DE 69828827 T2 | translation of granted patent | 2006-01-05 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69828827T2) · [Google Patents](https://patents.google.com/patent/DE69828827T2/en) |
-| DE 69840532 D1 | application | 2009-03-19 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69840532D1) · [Google Patents](https://patents.google.com/patent/DE69840532D1/en) |
-| EP 1 023 582 A1 | application | 2000-08-02 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1023582A1) · [Google Patents](https://patents.google.com/patent/EP1023582A1/en) |
-| EP 1 023 582 A4 | search report | 2000-11-29 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1023582A4) · [Google Patents](https://patents.google.com/patent/EP1023582A4/en) |
-| EP 1 265 063 A1 | application | 2002-12-11 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1265063A1) · [Google Patents](https://patents.google.com/patent/EP1265063A1/en) |
-| EP 1 023 582 B1 | granted patent | 2003-11-19 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1023582B1) · [Google Patents](https://patents.google.com/patent/EP1023582B1/en) |
-| EP 1 265 063 B1 | granted patent | 2005-01-26 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1265063B1) · [Google Patents](https://patents.google.com/patent/EP1265063B1/en) |
-| EP 1 508 799 A2 | application | 2005-02-23 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1508799A2) · [Google Patents](https://patents.google.com/patent/EP1508799A2/en) |
-| EP 1 508 799 A3 | search report | 2005-05-18 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1508799A3) · [Google Patents](https://patents.google.com/patent/EP1508799A3/en) |
-| EP 1 508 799 B1 | granted patent | 2009-02-04 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1508799B1) · [Google Patents](https://patents.google.com/patent/EP1508799B1/en) |
-| JP 2001516874 A | application | 2001-10-02 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001516874A) · [Google Patents](https://patents.google.com/patent/JP2001516874A/en) |
-| JP 4499279 B2 | granted patent | 2010-07-07 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4499279B2) · [Google Patents](https://patents.google.com/patent/JP4499279B2/en) |
-| WO 1999014575 A1 | international application | 1999-03-25 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1999014575A1) · [Google Patents](https://patents.google.com/patent/WO1999014575A1/en) |
-| WO 1999014575 B1 | international application | 1999-06-03 | not shown | 2026-09-14 listed in the Google Patents family table of US6201601B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1999014575B1) · [Google Patents](https://patents.google.com/patent/WO1999014575B1/en) |
+| US 2001/0000679 A1 | application | 2001-05-03 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010000679A1) · [Google Patents](https://patents.google.com/patent/US20010000679A1/en) |
+| US 2001/0000977 A1 | application | 2001-05-10 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010000977A1) · [Google Patents](https://patents.google.com/patent/US20010000977A1/en) |
+| US 2001/0002149 A1 | application | 2001-05-31 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010002149A1) · [Google Patents](https://patents.google.com/patent/US20010002149A1/en) |
+| US 6,384,910 B2 | granted patent | 2002-05-07 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6384910B2) · [Google Patents](https://patents.google.com/patent/US6384910B2/en) |
+| US 2002/0080346 A1 | application | 2002-06-27 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020080346A1) · [Google Patents](https://patents.google.com/patent/US20020080346A1/en) |
+| US 6,618,134 B2 | granted patent | 2003-09-09 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6618134B2) · [Google Patents](https://patents.google.com/patent/US6618134B2/en) |
+| US 6,639,662 B2 | granted patent | 2003-10-28 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6639662B2) · [Google Patents](https://patents.google.com/patent/US6639662B2/en) |
+| US 2003/0206295 A1 | application | 2003-11-06 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20030206295A1) · [Google Patents](https://patents.google.com/patent/US20030206295A1/en) |
+| US 6,657,715 B2 | granted patent | 2003-12-02 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6657715B2) · [Google Patents](https://patents.google.com/patent/US6657715B2/en) |
+| US 6,891,611 B1 | granted patent | 2005-05-10 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6891611B1) · [Google Patents](https://patents.google.com/patent/US6891611B1/en) |
+| US 2005/0174568 A1 | application | 2005-08-11 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050174568A1) · [Google Patents](https://patents.google.com/patent/US20050174568A1/en) |
+| US 2005/0206886 A1 | application | 2005-09-22 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050206886A1) · [Google Patents](https://patents.google.com/patent/US20050206886A1/en) |
+| US 7,064,821 B2 | granted patent | 2006-06-20 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7064821B2) · [Google Patents](https://patents.google.com/patent/US7064821B2/en) |
+| US 7,079,238 B2 | granted patent | 2006-07-18 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7079238B2) · [Google Patents](https://patents.google.com/patent/US7079238B2/en) |
+| AU 9400098 A "Improved sample inspection system" | application | 1999-04-05 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU9400098A) · [Google Patents](https://patents.google.com/patent/AU9400098A/en) |
+| DE 69819929 D1 "IMPROVED TESTING SYSTEM FOR SAMPLES" | application | 2003-12-24 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69819929D1) · [Google Patents](https://patents.google.com/patent/DE69819929D1/en) |
+| DE 69819929 T2 "IMPROVED TESTING SYSTEM FOR SAMPLES" | translation of granted patent | 2004-11-11 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69819929T2) · [Google Patents](https://patents.google.com/patent/DE69819929T2/en) |
+| DE 69828827 D1 "Improved test system for samples" | application | 2005-03-03 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69828827D1) · [Google Patents](https://patents.google.com/patent/DE69828827D1/en) |
+| DE 69828827 T2 "Improved test system for samples" | translation of granted patent | 2006-01-05 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69828827T2) · [Google Patents](https://patents.google.com/patent/DE69828827T2/en) |
+| DE 69840532 D1 "Improved test system for samples" | application | 2009-03-19 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE69840532D1) · [Google Patents](https://patents.google.com/patent/DE69840532D1/en) |
+| EP 1 023 582 A1 "Improved sample inspection system" | application | 2000-08-02 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1023582A1) · [Google Patents](https://patents.google.com/patent/EP1023582A1/en) |
+| EP 1 023 582 A4 "Improved sample inspection system" | search report | 2000-11-29 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1023582A4) · [Google Patents](https://patents.google.com/patent/EP1023582A4/en) |
+| EP 1 265 063 A1 "Improved sample inspection system" | application | 2002-12-11 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1265063A1) · [Google Patents](https://patents.google.com/patent/EP1265063A1/en) |
+| EP 1 023 582 B1 "Improved sample inspection system" | granted patent | 2003-11-19 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1023582B1) · [Google Patents](https://patents.google.com/patent/EP1023582B1/en) |
+| EP 1 265 063 B1 "Improved sample inspection system" | granted patent | 2005-01-26 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1265063B1) · [Google Patents](https://patents.google.com/patent/EP1265063B1/en) |
+| EP 1 508 799 A2 "Improved sample inspection system" | application | 2005-02-23 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1508799A2) · [Google Patents](https://patents.google.com/patent/EP1508799A2/en) |
+| EP 1 508 799 A3 "Improved sample inspection system" | search report | 2005-05-18 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1508799A3) · [Google Patents](https://patents.google.com/patent/EP1508799A3/en) |
+| EP 1 508 799 B1 "Improved sample inspection system" | granted patent | 2009-02-04 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1508799B1) · [Google Patents](https://patents.google.com/patent/EP1508799B1/en) |
+| JP 2001516874 A "Improved sample inspection system" | application | 2001-10-02 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2001516874A) · [Google Patents](https://patents.google.com/patent/JP2001516874A/en) |
+| JP 4499279 B2 "Improved sample inspection system" | granted patent | 2010-07-07 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP4499279B2) · [Google Patents](https://patents.google.com/patent/JP4499279B2/en) |
+| WO 1999014575 A1 "Improved sample inspection system" | international application | 1999-03-25 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1999014575A1) · [Google Patents](https://patents.google.com/patent/WO1999014575A1/en) |
+| WO 1999014575 B1 "Improved sample inspection system" | international application | 1999-06-03 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO1999014575B1) · [Google Patents](https://patents.google.com/patent/WO1999014575B1/en) |
 
 **Relevance:**
 
@@ -3726,7 +3728,7 @@ families and members are counted.
 **Inventors:** Ende Shan; Gorley Lau; Sam Geha
 **Dates:** priority 1997-11-13, filing 1997-11-13, grant 2000-10-31
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6140228A, retrieved 2026-09-14)
-**Estimated expiry:** 2018-11-13 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6756302B1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2017-11-13 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6756302B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `25516451` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3734,7 +3736,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,140,228 A | granted patent | 2000-10-31 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6140228A) · [Google Patents](https://patents.google.com/patent/US6140228A/en) |
-| US 6,756,302 B1 | granted patent | 2004-06-29 | not shown | 2026-09-14 listed in the Google Patents family table of US6140228A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6756302B1) · [Google Patents](https://patents.google.com/patent/US6756302B1/en) |
+| US 6,756,302 B1 | granted patent | 2004-06-29 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6756302B1) · [Google Patents](https://patents.google.com/patent/US6756302B1/en) |
 
 **Relevance:**
 
@@ -3878,7 +3880,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,013,581 A | granted patent | 2000-01-11 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6013581A) · [Google Patents](https://patents.google.com/patent/US6013581A/en) |
-| TW 405223 B | granted patent | 2000-09-11 | not shown | 2026-09-14 listed in the Google Patents family table of US6013581A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW405223B) · [Google Patents](https://patents.google.com/patent/TW405223B/en) |
+| TW 405223 B "Method for avoiding the poisoning at the trench of the dual damascene structure and the dielectric hole" | granted patent | 2000-09-11 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW405223B) · [Google Patents](https://patents.google.com/patent/TW405223B/en) |
 
 **Relevance:**
 
@@ -3904,7 +3906,7 @@ families and members are counted.
 **Inventors:** Gideon Drimer; Leo Mendelovici; Nachum Borivker
 **Dates:** priority 1998-08-05, filing 1999-07-02, grant 2001-01-30
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6179609B1, retrieved 2026-09-14)
-**Estimated expiry:** 2019-08-05 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of WO2000008389A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2019-07-02 — all 6 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6179609B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `26323689` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -3912,11 +3914,11 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,179,609 B1 | granted patent | 2001-01-30 | Expired - Fee Related | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6179609B1) · [Google Patents](https://patents.google.com/patent/US6179609B1/en) |
-| AU 5063599 A | application | 2000-02-28 | not shown | 2026-09-14 listed in the Google Patents family table of US6179609B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU5063599A) · [Google Patents](https://patents.google.com/patent/AU5063599A/en) |
-| EP 1 071 913 A1 | application | 2001-01-31 | not shown | 2026-09-14 listed in the Google Patents family table of US6179609B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1071913A1) · [Google Patents](https://patents.google.com/patent/EP1071913A1/en) |
-| EP 1 071 913 A4 | search report | 2003-08-13 | not shown | 2026-09-14 listed in the Google Patents family table of US6179609B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1071913A4) · [Google Patents](https://patents.google.com/patent/EP1071913A4/en) |
-| JP 2002522897 A | application | 2002-07-23 | not shown | 2026-09-14 listed in the Google Patents family table of US6179609B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2002522897A) · [Google Patents](https://patents.google.com/patent/JP2002522897A/en) |
-| WO 2000008389 A1 | international application | 2000-02-17 | not shown | 2026-09-14 listed in the Google Patents family table of US6179609B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2000008389A1) · [Google Patents](https://patents.google.com/patent/WO2000008389A1/en) |
+| AU 5063599 A | application | 2000-02-28 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DAU5063599A) · [Google Patents](https://patents.google.com/patent/AU5063599A/en) |
+| EP 1 071 913 A1 | application | 2001-01-31 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1071913A1) · [Google Patents](https://patents.google.com/patent/EP1071913A1/en) |
+| EP 1 071 913 A4 | search report | 2003-08-13 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP1071913A4) · [Google Patents](https://patents.google.com/patent/EP1071913A4/en) |
+| JP 2002522897 A "Small external torch assembly for semiconductor processing" | application | 2002-07-23 | Withdrawn | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2002522897A) · [Google Patents](https://patents.google.com/patent/JP2002522897A/en) |
+| WO 2000008389 A1 | international application | 2000-02-17 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2000008389A1) · [Google Patents](https://patents.google.com/patent/WO2000008389A1/en) |
 
 **Relevance:**
 
@@ -3938,14 +3940,14 @@ families and members are counted.
 **Inventors:** Edward J. McInerney; Thomas M. Pratt; Shawn D. Hancock
 **Dates:** priority 1998-10-08, filing 2000-02-28, grant 2001-11-20
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6319553B1, retrieved 2026-09-14)
-**Estimated expiry:** 2019-10-08 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6143082A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2018-10-08 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6319553B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `22616474` (family section of the representative's own record page, linked below)
 
 **Members:**
 
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
-| US 6,143,082 A | granted patent | 2000-11-07 | not shown | 2026-09-14 listed in the Google Patents family table of US6319553B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6143082A) · [Google Patents](https://patents.google.com/patent/US6143082A/en) |
+| US 6,143,082 A | granted patent | 2000-11-07 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6143082A) · [Google Patents](https://patents.google.com/patent/US6143082A/en) |
 | US 6,319,553 B1 | granted patent | 2001-11-20 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6319553B1) · [Google Patents](https://patents.google.com/patent/US6319553B1/en) |
 
 **Relevance:**
@@ -3995,7 +3997,7 @@ families and members are counted.
 **Inventors:** Ming-Sheng Yang; Yimin Huang; Juan-Yuan Wu; Water Lur
 **Dates:** priority 1998-11-19, filing 1998-11-19, grant 2001-04-10
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6214745B1, retrieved 2026-09-14)
-**Estimated expiry:** 2019-11-19 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US20020025689A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2018-11-19 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6214745B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `22722349` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4003,7 +4005,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,214,745 B1 | granted patent | 2001-04-10 | Expired - Fee Related | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6214745B1) · [Google Patents](https://patents.google.com/patent/US6214745B1/en) |
-| US 2002/0025689 A1 | application | 2002-02-28 | not shown | 2026-09-14 listed in the Google Patents family table of US6214745B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020025689A1) · [Google Patents](https://patents.google.com/patent/US20020025689A1/en) |
+| US 2002/0025689 A1 "Method of improving surface planarity of chemical-mechanical polishing operation by forming shallow dummy" | application | 2002-02-28 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020025689A1) · [Google Patents](https://patents.google.com/patent/US20020025689A1/en) |
 
 **Relevance:**
 
@@ -4053,7 +4055,7 @@ families and members are counted.
 **Inventors:** Kwok F. Lai; Andrew L. Nordquist; Kaihan A. Ashtiani; Larry D. Hartsough; Karl B. Levy
 **Dates:** priority 1999-01-05, filing 1999-06-30, grant 2001-01-30
 **Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6179973B1, retrieved 2026-09-14)
-**Estimated expiry:** 2020-01-05 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6444105B1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2019-06-30 — all 2 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6444105B1 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Lifetime)
 **Google Patents family ID:** `26812562` (family section of the representative's own record page, linked below)
 
 **Members:**
@@ -4061,7 +4063,7 @@ families and members are counted.
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
 | US 6,179,973 B1 | granted patent | 2001-01-30 | Expired - Lifetime | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6179973B1) · [Google Patents](https://patents.google.com/patent/US6179973B1/en) |
-| US 6,444,105 B1 | granted patent | 2002-09-03 | not shown | 2026-09-14 listed in the Google Patents family table of US6179973B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6444105B1) · [Google Patents](https://patents.google.com/patent/US6444105B1/en) |
+| US 6,444,105 B1 "Physical vapor deposition reactor including magnet to control flow of ions" | granted patent | 2002-09-03 | Expired - Lifetime | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6444105B1) · [Google Patents](https://patents.google.com/patent/US6444105B1/en) |
 
 **Relevance:**
 
@@ -4087,18 +4089,18 @@ families and members are counted.
 **Inventors:** Joo-Hyong Lee; Jeong-Hwan Son
 **Dates:** priority 1999-01-22, filing 2001-03-20, grant 2002-09-24
 **Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US6455402B2, retrieved 2026-09-14)
-**Estimated expiry:** 2020-01-22 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US20020024102A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+**Estimated expiry:** 2020-01-21 — all 5 members are shown as expired, lapsed or abandoned, or are past their estimated term; the latest estimate is that of US6455402B2 (Google Patents 'Anticipated expiration' (IFI Claims estimate); status shown: Expired - Fee Related)
 **Google Patents family ID:** `19572018` (family section of the representative's own record page, linked below)
 
 **Members:**
 
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
-| US 2001/0014500 A1 | application | 2001-08-16 | not shown | 2026-09-14 listed in the Google Patents family table of US6455402B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010014500A1) · [Google Patents](https://patents.google.com/patent/US20010014500A1/en) |
-| US 2002/0024102 A1 | application | 2002-02-28 | not shown | 2026-09-14 listed in the Google Patents family table of US6455402B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020024102A1) · [Google Patents](https://patents.google.com/patent/US20020024102A1/en) |
+| US 2001/0014500 A1 "Method of forming retrograde doping profile in twin well CMOS device" | application | 2001-08-16 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20010014500A1) · [Google Patents](https://patents.google.com/patent/US20010014500A1/en) |
+| US 2002/0024102 A1 "Retrograde doping profile in twin well CMOS device" | application | 2002-02-28 | Abandoned | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20020024102A1) · [Google Patents](https://patents.google.com/patent/US20020024102A1/en) |
 | US 6,455,402 B2 | granted patent | 2002-09-24 | Expired - Fee Related | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6455402B2) · [Google Patents](https://patents.google.com/patent/US6455402B2/en) |
-| KR 20000051431 A | application | 2000-08-16 | not shown | 2026-09-14 listed in the Google Patents family table of US6455402B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20000051431A) · [Google Patents](https://patents.google.com/patent/KR20000051431A/en) |
-| KR 100324931 B1 | granted patent | 2002-02-28 | not shown | 2026-09-14 listed in the Google Patents family table of US6455402B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100324931B1) · [Google Patents](https://patents.google.com/patent/KR100324931B1/en) |
+| KR 20000051431 A "Method of Fabricating a Twin Well CMOS Device" | application | 2000-08-16 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20000051431A) · [Google Patents](https://patents.google.com/patent/KR20000051431A/en) |
+| KR 100324931 B1 "Method of Fabricating a Twin Well CMOS Device" | granted patent | 2002-02-28 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR100324931B1) · [Google Patents](https://patents.google.com/patent/KR100324931B1/en) |
 
 **Relevance:**
 
@@ -7359,6 +7361,102 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10062573B1/en
 :::
 
+:::{dropdown} WO 2020249699 A1 — shown as in force; estimated expiry 2040-11-15
+:name: patent-gp68072713
+
+**Title:** Method for manufacturing an oxram resistive memory cell
+
+**Assignees:** original Commissariat a lEnergie Atomique CEA; Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd; current Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd
+**Inventors:** Gabriel Molas; Guiseppe Piccolboni; Amir REGEV; Gaël CASTELLANI; Jean-François Nodin
+**Dates:** priority 2019-06-12, filing 2020-06-11
+**Legal status (representative):** Ceased (Google Patents (IFI Claims) status of WO2020249699A1, retrieved 2026-09-18)
+**Estimated expiry:** 2040-11-15 — US12349605B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+**Google Patents family ID:** `68072713` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 2022/0336744 A1 "Method for manufacturing an oxram type resistive memory cell" | application | 2022-10-20 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220336744A1) · [Google Patents](https://patents.google.com/patent/US20220336744A1/en) |
+| US 12,349,605 B2 "Method for manufacturing an OxRAM type resistive memory cell" | granted patent | 2025-07-01 | Active | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12349605B2) · [Google Patents](https://patents.google.com/patent/US12349605B2/en) |
+| EP 3 984 073 A1 | application | 2022-04-20 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP3984073A1) · [Google Patents](https://patents.google.com/patent/EP3984073A1/en) |
+| EP 3 984 073 B1 | granted patent | 2023-08-30 | Active | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP3984073B1) · [Google Patents](https://patents.google.com/patent/EP3984073B1/en) |
+| FR 3097369 A1 "METHOD OF MANUFACTURING AN OXRAM-TYPE RESISTIVE MEMORY CELL" | application | 2020-12-18 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DFR3097369A1) · [Google Patents](https://patents.google.com/patent/FR3097369A1/en) |
+| FR 3097369 B1 "PROCESS FOR MANUFACTURING AN OXRAM-TYPE RESISTIVE MEMORY CELL" | granted patent | 2021-06-25 | Expired - Fee Related | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DFR3097369B1) · [Google Patents](https://patents.google.com/patent/FR3097369B1/en) |
+| WO 2020249699 A1 | international application | 2020-12-17 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2020249699A1) · [Google Patents](https://patents.google.com/patent/WO2020249699A1/en) |
+
+**Relevance:**
+
+* {ref}`overview-sky130b-reram` — *technique class*: Weebit Nano's ReRAM IP is offered in SkyWater's S130 process per SkyWater's public announcement; this family describes Weebit's class of OxRAM cell manufacturing technique, not evidence of the specific process SkyWater fabricates.
+
+**Discovery:** assignee-search — Google Patents search assignee:"Weebit Nano", retrieved 2026-09-18; coordinator decision: Weebit Nano ReRAM patents in scope.
+
+**Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/WO2020249699A1/en
+:::
+
+:::{dropdown} US 2022/0122660 A1 — legal status shown as Pending; expiry not fully bounded from the records retrieved, estimated no later than 2041-12-30
+:name: patent-gp74192490
+
+**Title:** Configuration and method of operation of a one-transistor two-resistors (1t2r) resistive memory (reram) cell and an array thereof
+
+**Assignees:** original Weebit Nano Ltd; current Weebit Nano Ltd
+**Inventors:** Yoav Nissan-Cohen
+**Dates:** priority 2019-07-22, filing 2021-12-30
+**Legal status (representative):** Pending (Google Patents (IFI Claims) status of US20220122660A1, retrieved 2026-09-18)
+**Estimated expiry:** 2041-12-30 — not bounded from the records retrieved: US20220122660A1; latest estimate US20220122660A1 (application; any grant would expire at the latest about 20 years from filing (estimated))
+**Google Patents family ID:** `74192490` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 2022/0122660 A1 | application | 2022-04-21 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220122660A1) · [Google Patents](https://patents.google.com/patent/US20220122660A1/en) |
+| WO 2021016237 A1 "A configuration and method of operation of a one-transistor two-resistors (1t2r) resistive memory (reram)" | international application | 2021-01-28 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2021016237A1) · [Google Patents](https://patents.google.com/patent/WO2021016237A1/en) |
+
+**Relevance:**
+
+* {ref}`overview-sky130b-reram` — *technique class*: Weebit Nano's ReRAM IP is offered in SkyWater's S130 process per SkyWater's public announcement; this family describes Weebit's 1T2R cell configuration class of technique, not evidence of the specific process SkyWater fabricates.
+
+**Discovery:** assignee-search — Google Patents search assignee:"Weebit Nano", retrieved 2026-09-18; coordinator decision: Weebit Nano ReRAM patents in scope.
+
+**Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/US20220122660A1/en
+:::
+
+:::{dropdown} EP 4 062 463 A1 — shown as in force; estimated expiry 2042-05-26
+:name: patent-gp69743400
+
+**Title:** Low forming voltage oxram memory cell, and associated method of manufacture
+
+**Assignees:** original Commissariat a lEnergie Atomique CEA; Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd; current Commissariat a lEnergie Atomique et aux Energies Alternatives CEA; Weebit Nano Ltd
+**Inventors:** Gabriel Molas; Thomas MAGIS; Jean-François Nodin; Alessandro BRICALLI; Guiseppe Piccolboni; Yifat COHEN; Amir REGEV
+**Dates:** priority 2019-11-21, filing 2020-11-17
+**Legal status (representative):** Granted (Google Patents (IFI Claims) status of EP4062463A1, retrieved 2026-09-18)
+**Estimated expiry:** 2042-05-26 — US12349609B2 is shown as in force; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment)
+**Google Patents family ID:** `69743400` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 2022/0399496 A1 | application | 2022-12-15 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220399496A1) · [Google Patents](https://patents.google.com/patent/US20220399496A1/en) |
+| US 12,349,609 B2 "Low forming voltage OxRAM memory cell, and associated method of manufacture" | granted patent | 2025-07-01 | Active | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12349609B2) · [Google Patents](https://patents.google.com/patent/US12349609B2/en) |
+| CN 115004396 A "Low formation voltage OxRAM memory cell and related method of manufacture" | application | 2022-09-02 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN115004396A) · [Google Patents](https://patents.google.com/patent/CN115004396A/en) |
+| CN 115004396 B "Low formation voltage OxRAM memory cell and related manufacturing method" | granted patent | 2025-01-10 | Active | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN115004396B) · [Google Patents](https://patents.google.com/patent/CN115004396B/en) |
+| EP 4 062 463 A1 | application | 2022-09-28 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP4062463A1) · [Google Patents](https://patents.google.com/patent/EP4062463A1/en) |
+| EP 4 062 463 B1 | granted patent | 2024-01-03 | Active | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP4062463B1) · [Google Patents](https://patents.google.com/patent/EP4062463B1/en) |
+| FR 3103633 A1 "Low forming voltage OxRAM type memory cell, and associated manufacturing process" | application | 2021-05-28 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DFR3103633A1) · [Google Patents](https://patents.google.com/patent/FR3103633A1/en) |
+| FR 3103633 B1 "Memory cell of the OxRAM type with low forming voltage, and associated manufacturing method" | granted patent | 2023-05-26 | Active | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DFR3103633B1) · [Google Patents](https://patents.google.com/patent/FR3103633B1/en) |
+| WO 2021099309 A1 | international application | 2021-05-27 | Ceased | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2021099309A1) · [Google Patents](https://patents.google.com/patent/WO2021099309A1/en) |
+
+**Relevance:**
+
+* {ref}`overview-sky130b-reram` — *technique class*: Weebit Nano's ReRAM IP is offered in SkyWater's S130 process per SkyWater's public announcement; this family describes Weebit's class of OxRAM cell and forming-voltage technique, not evidence of the specific process SkyWater fabricates.
+
+**Discovery:** assignee-search — Google Patents search assignee:"Weebit Nano", retrieved 2026-09-18; coordinator decision: Weebit Nano ReRAM patents in scope.
+
+**Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/EP4062463A1/en
+:::
+
 :::{dropdown} US 12,232,324 B2 — shown as in force; estimated expiry 2043-09-26
 :name: patent-gp90359049
 
@@ -7392,4 +7490,38 @@ families and members are counted.
 **Discovery:** citing-seed — cites US9824895B1 (Google Patents citation tables).
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US12232324B2/en
+:::
+
+:::{dropdown} KR 20250094623 A — shown as in force; estimated expiry 2044-12-18
+:name: patent-gp90721530
+
+**Title:** Method for manufacturing an OxRAM-type resistive memory cell and associated OxRAM-type memory cell
+
+**Assignees:** original 위빗 나노 리미티드
+**Inventors:** 가브리엘 몰라스; 안토닌 베르디; 장-밥티스트 도리; 장-프랑수아 노딘
+**Dates:** priority 2023-12-18, filing 2024-12-18
+**Legal status (representative):** Granted (Google Patents (IFI Claims) status of KR20250094623A, retrieved 2026-09-18)
+**Estimated expiry:** 2044-12-18 — US12414485B2 is shown as in force; Google Patents 'Anticipated expiration' (IFI Claims estimate)
+**Google Patents family ID:** `90721530` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 2025/0204285 A1 "Method for manufacturing an oxram-type resistive memory cell and associated oxram-type memory cell" | application | 2025-06-19 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250204285A1) · [Google Patents](https://patents.google.com/patent/US20250204285A1/en) |
+| US 12,414,485 B2 | granted patent | 2025-09-09 | Active | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12414485B2) · [Google Patents](https://patents.google.com/patent/US12414485B2/en) |
+| CN 120187033 A "Method for manufacturing OxRAM type resistive memory cell and related OxRAM type memory cell" | application | 2025-06-20 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN120187033A) · [Google Patents](https://patents.google.com/patent/CN120187033A/en) |
+| EP 4 577 029 A1 "Method for manufacturing an oxram resistive memory cell and associated oxram memory cell" | application | 2025-06-25 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DEP4577029A1) · [Google Patents](https://patents.google.com/patent/EP4577029A1/en) |
+| FR 3157056 A1 "Method of manufacturing a resistive memory cell of the OxRAM type and associated OxRAM type memory cell" | application | 2025-06-20 | Pending | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DFR3157056A1) · [Google Patents](https://patents.google.com/patent/FR3157056A1/en) |
+| KR 20250094623 A | application | 2025-06-25 | Granted | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20250094623A) · [Google Patents](https://patents.google.com/patent/KR20250094623A/en) |
+| KR 102847368 B1 | granted patent | 2025-08-18 | Active | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR102847368B1) · [Google Patents](https://patents.google.com/patent/KR102847368B1/en) |
+| TW 202539387 A "Method for manufacturing an oxram-type resistive memory cell and associated oxram-type memory cell" | application | 2025-10-01 | not shown | 2026-09-18 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW202539387A) · [Google Patents](https://patents.google.com/patent/TW202539387A/en) |
+
+**Relevance:**
+
+* {ref}`overview-sky130b-reram` — *technique class*: Weebit Nano's ReRAM IP is offered in SkyWater's S130 process per SkyWater's public announcement; this family describes Weebit's class of OxRAM cell manufacturing technique, not evidence of the specific process SkyWater fabricates.
+
+**Discovery:** assignee-search — Google Patents search assignee:"Weebit Nano", retrieved 2026-09-18; coordinator decision: Weebit Nano ReRAM patents in scope.
+
+**Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/KR20250094623A/en
 :::

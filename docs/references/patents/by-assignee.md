@@ -90,7 +90,7 @@ The current assignee, where different, is shown alongside.
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
 * {ref}`US 5,738,574 A <patent-gp24192580>` — Continuous processing system for chemical mechanical polishing (1995-10-27)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
-* {ref}`US 6,170,428 B1 <patent-gp24728963>` — Symmetric tunable inductively coupled HDP-CVD reactor (1996-07-15)
+* {ref}`US 6,170,428 B1 <patent-gp24728963>` — unknown
 * {ref}`US 6,183,354 B1 <patent-gp24997773>` — Carrier head with a flexible membrane for a chemical mechanical polishing system (1996-11-08)
 * {ref}`US 5,812,403 A <patent-gp25007997>` — Methods and apparatus for cleaning surfaces in a substrate processing system (1996-11-13)
 * {ref}`US 6,121,161 A <patent-gp25360177>` — Reduction of mobile ion and metal contamination in HDP-CVD chambers using chamber seasoning film depositions (1997-06-11)
@@ -135,6 +135,16 @@ The current assignee, where different, is shown alongside.
 ## Clariant Finance BVI Ltd (now Merck Patent GmbH)
 
 * {ref}`US 5,814,433 A <patent-gp26689885>` — Use of mixtures of ethyl lactate and N-methyl pyrollidone as an edge bead remover for photoresists (1996-05-17)
+
+## Commissariat a lEnergie Atomique CEA (now Commissariat a lEnergie Atomique et aux Energies Alternatives CEA, Weebit Nano Ltd)
+
+* {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
+* {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
+
+## Commissariat a lEnergie Atomique et aux Energies Alternatives CEA (now Weebit Nano Ltd)
+
+* {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
+* {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
 
 ## Daikin Industries Ltd
 
@@ -348,7 +358,7 @@ The current assignee, where different, is shown alongside.
 
 ## Rodel Inc (now DuPont Electronic Materials Holding Inc)
 
-* {ref}`US 5,578,362 A <patent-gp25461879>` — Polymeric polishing pad containing hollow polymeric microelements (1992-08-19)
+* {ref}`US 5,578,362 A <patent-gp25461879>` — unknown
 
 ## Round Rock Research LLC
 
@@ -487,6 +497,12 @@ The current assignee, where different, is shown alongside.
 
 * {ref}`US 4,522,656 A <patent-gp6203424>` — Method of making reference surface markings on semiconductor wafers by laser beam (1983-07-07)
 
+## Weebit Nano Ltd (now Commissariat a lEnergie Atomique et aux Energies Alternatives CEA)
+
+* {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
+* {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
+* {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
+
 ## Yamaha Corp
 
 * {ref}`US 5,633,212 A <patent-gp12697185>` — Pyrogenic wet thermal oxidation of semiconductor wafers (1993-07-24)
@@ -498,3 +514,7 @@ The current assignee, where different, is shown alongside.
 ## Zilog Inc (now IXYS Intl Ltd)
 
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
+
+## 위빗 나노 리미티드
+
+* {ref}`KR 20250094623 A <patent-gp90721530>` — in force

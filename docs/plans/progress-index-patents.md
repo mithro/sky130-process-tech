@@ -31,14 +31,27 @@ publication number, `relevance`, `inventory_keys`, `discovery`,
       `tmp/tofetch.py`, which lists only-listed members and their
       family's `expired` flag: the outstanding 435 are all in `true`
       (pre-1999-05-29-priority, already-bounded-expired) families).
-- [ ] Fetching the remaining only-listed members of 53 pre-1999-05-29
+- [x] Fetching the remaining only-listed members of 53 pre-1999-05-29
       families (435 members) for completeness, even though the design's
       verification-level rule does not require it once a family is
-      already bounded expired. In progress this round; batch status
-      below.
+      already bounded expired. Done: `tmp/tofetch.py` now reports 0
+      outstanding. Applied to `data/patents.yaml` with
+      `tmp/refresh_old_members.py` (only touches the newly-fetched
+      members' fields; leaves every other family's `verified` dates,
+      relevance, discovery and notes untouched). Two families' `expired`
+      flipped from `true` to `unknown` once their full member list was
+      known (`GP25461879`, a polishing-pad family, and `GP24728963`, an
+      HDP-CVD reactor family — both equipment/materials patents, not
+      core process-module ones): each has a JP member filed years after
+      the family's priority date, so its own 20-year-from-filing bound
+      is not yet past. This is the correction the extra fetching was
+      for; both are now correctly shown as collapsed/unknown rather
+      than open/expired.
 - [ ] Second-source cross-check (Patentscope/Espacenet/USPTO) for a
       sample of members, recording disagreements in `notes` rather than
-      silently choosing one source — not started.
+      silently choosing one source — not started (lower priority; the
+      dataset already passes with single-source verification as the
+      design requires at minimum).
 
 ### Member-fetch batches (post-rebase, this round)
 
@@ -62,11 +75,11 @@ then run `uv run tools/check_patents.py` and commit.
 
 ## Phase 2 — widen discovery
 
-- [ ] Cross-check every patent already cited anywhere under `docs/`
-      (grep for `US `, `EP `, `WO ` + digits and Google Patents URLs)
-      against the dataset; add any missing family. Not yet re-verified
-      after the paper/filings rebase pulled in new pages — redo the grep
-      on the post-rebase tree.
+- [x] Cross-check every patent already cited anywhere under `docs/`
+      (grep for `US `, `EP `, `WO `, etc. + digits, and Google Patents
+      URLs) against the dataset. Re-run on the post-rebase tree
+      (`tmp/docs_cited_check.py`): 287 distinct cited numbers/URLs
+      found, 0 missing from the dataset's 1319+ member numbers.
 - [ ] Per-module assignee searches (Cypress/SkyWater/Infineon, 130 nm
       CMOS + SONOS flow): STI, wells, gate oxide/nitridation, poly,
       LDD/spacers, salicide, local interconnect TiN, W plugs, Al
@@ -77,12 +90,32 @@ then run `uv run tools/check_patents.py` and commit.
       specific), salicide, W plugs specifically, fuses, passivation,
       ReRAM (ties to Weebit Nano — in scope per coordinator decision),
       equipment/materials from suppliers already cited on a docs page.
-- [ ] Weebit Nano ReRAM patents (coordinator: in scope, unexpired ones
-      collapsed) — not yet searched.
-- [ ] Supplier equipment/material patents where a docs page already
+- [x] Weebit Nano ReRAM patents (coordinator: in scope, unexpired ones
+      collapsed) — done. Google Patents search `assignee="Weebit Nano"`
+      (35 results, `tmp/qcache/`), narrowed to the 4 families that
+      describe the OxRAM cell/manufacturing technique itself (not
+      peripheral circuit IP such as bandgap references or current-limit
+      circuitry, which are out of the process-technology scope of this
+      index): `GP68072713` (WO2020249699A1, with CEA-Leti),
+      `GP69743400` (EP4062463A1), `GP74192490` (US20220122660A1, 1T2R
+      cell configuration) and `GP90721530` (KR20250094623A). Every
+      member of all four fully fetched (recent priority dates, so the
+      full-fetch rule applies); all four are unexpired/unknown and
+      collapsed. Relation `technique-class` (Weebit is not in the
+      Cypress/SkyWater/Infineon lineage, so `same-lineage-assignee`
+      does not apply), target `overview-sky130b-reram`, reason
+      states SkyWater's public Weebit-in-S130 announcement and
+      explicitly is not evidence of what SkyWater fabricates. Applied
+      with `tmp/add_weebit.py`. 211 families total after this addition.
+- [x] Supplier equipment/material patents where a docs page already
       cites them or a public source ties them to this process lineage —
-      not yet searched (distinct from a general supplier-patent trawl,
-      which is out of scope).
+      the docs-citation cross-check in Phase 2's first bullet already
+      covers the "docs page already cites them" half (0 missing); no
+      further public-source ties to the lineage were found for
+      supplier equipment/material patents beyond what's already in the
+      dataset. A deeper trawl was out of scope per the coordinator's
+      note ("only where ... a public source ties them to this process
+      lineage", not a general search).
 
 ## Phase 3 — pages and generator
 
@@ -112,16 +145,47 @@ then run `uv run tools/check_patents.py` and commit.
 
 ## Phase 4 — checks
 
-- [x] `uv run tools/check_patents.py` — 207 families, 0 problems
-      (rerun after every dataset change).
+- [x] `uv run tools/check_patents.py` — 211 families, 0 problems as of
+      the final commit this round (rerun after every dataset change).
 - [x] `uv run tools/gen_patents.py --check` — 6 pages checked, 0
-      problems.
+      problems, regenerated after the fetch/refresh and Weebit
+      additions.
 - [x] All other `tools/check_*.py` (`check_steps`, `check_refs`,
       `check_machines`, `check_materials`, `check_masks`,
-      `check_papers`) — 0 problems each.
+      `check_papers`) — 0 problems each, rerun after the final dataset
+      change.
 - [x] `uv run sphinx-build -W -b html docs <scratch dir>` — clean,
-      0 warnings, exit 0 (run twice: once found the H1-to-H3 issue
-      above, once confirmed clean after the fix).
+      0 warnings, exit 0. Run four times over the round: found and
+      fixed the families.md H1-to-H3 heading-level issue, then
+      confirmed clean after the generator fix, after the old-member
+      fetch/refresh, and after the Weebit addition.
+
+## Summary of this round's changes (for the next agent or reviewer)
+
+1. Rebased onto `main` (pulled in the merged paper-index work) and
+   force-pushed with lease.
+2. Added this progress log.
+3. Finished fetching every remaining "listed only" member (435 of them,
+   53 pre-1999-05-29 families) and applied the results without
+   disturbing any other family's data (`tmp/refresh_old_members.py`).
+   Two families' `expired` correctly flipped from `true` to `unknown`.
+4. Wrote `tools/gen_patents.py` and generated the six
+   `docs/references/patents/` pages; linked from
+   `docs/references/index.md`; fixed a heading-level `-W` warning.
+5. Added 4 Weebit Nano ReRAM families (211 total), each fully
+   member-fetched per the verification-level rule for recent-priority
+   families, via `tmp/add_weebit.py`.
+6. Re-ran every checker and a full `-W` Sphinx build after each
+   substantive change; all clean at the final commit.
+
+Not done this round (left for the coordinator/reviewer to decide
+priority): the second-source cross-check sample (Phase 1), and the
+design's open questions (DOCDB family-unit switch, assignee-name
+normalisation for mergers — the by-assignee page already groups by
+raw original-assignee string, which is a reasonable interim reading).
+The `by-module` page's grouping is coarser than the design's 16-bucket
+proposal; see Phase 3 above for why and what a future refinement would
+need (step-level subject data finer than the overview table gives).
 
 ## Notes for whoever resumes this
 
