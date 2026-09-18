@@ -30,8 +30,8 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 093-L1 | Low | fixed | Confirmed pdk-periphery.txt:1409-1411 continues the licon.16 quotation with ", including the diff/tap straddling areaid:ce. Rule exempted inside UHVI."; added the elision marker. |
 | 093-L2 | Low | fixed | Confirmed pdk-rcx.txt Table 91 heads its column "Resistivity (mohms/sq)"; reworded the 15 Ohm/contact reading as an explicit reading of that column on 093, 098 and 099. |
 | 094-L1 | Low | declined | No rename needed: after the 094-M2 fix, pat-cn-tel is used only for the CN/387 nm claim it supports, so the label is consistent (review said no action needed once M2 is fixed). |
-| 095-L1 | Low | open | |
-| 095-L2 | Low | open | |
+| 095-L1 | Low | fixed | Confirmed the two fragments are separate sentences ~120 lines apart in categories/etch.md (:26 general wet-etch statement, :147-148 the SACETCH-specific inference). Split into two separately-quoted sentences. |
+| 095-L2 | Low | fixed | Reading 3 leaned on the word "sacrificial" in its own heading; reworded to justify it by the gap in the sequence (resist/BARC removal has no other placed step) instead. |
 | 098-L1 | Low | fixed | Unified the two RTA-temperature mentions on 098 (600-700 vs 600-750) at 600-750 (the wider, safer range), same citations. |
 | 098-L2 | Low | fixed | Added [^txt-01] (already used site-wide for this figure, e.g. 099-wdep.md) and a cross-reference to step-099 for the 400-450C tungsten deposition temperature. |
 | 098-L3 | Low | fixed | Fixed together with 092-M1: dropped the ramp-rate clause on 098 (a silicide soak is not ramp-limited) and kept only the 400-1200C range and "Silicide formation and annealing". |
