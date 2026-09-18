@@ -5378,7 +5378,7 @@ Tier: deep dive.
 and van der Pauw Sheet Resistors for Characterizing the Line Width of
 Conducting Layers", *Journal of The Electrochemical Society* **125**(4),
 650–654 (1978). <https://doi.org/10.1149/1.2131517> Bridge and van der
-Pauw resistors for line-width (electrical CD) measurement. Used on the
+Pauw resistors for linewidth (electrical CD) measurement. Used on the
 test category page.
 Also used on the parametric tester and prober page.
 Tier: deep dive.

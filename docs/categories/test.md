@@ -52,7 +52,7 @@ typically contains:
   resistance of a single contact, and long chains of thousands of
   contacts or vias for yield and average resistance.
 * **Interconnect structures** — comb and serpentine patterns that
-  detect shorts and opens at minimum pitch, and line-width
+  detect shorts and opens at minimum pitch, and linewidth
   ("electrical CD") monitors.
 * **Capacitors** — MOS capacitors whose C–V curve gives the gate-oxide
   thickness and flat-band voltage; MiM capacitors for capacitance
@@ -248,7 +248,7 @@ device.
 * Valdes, *Proc. IRE* 1954 — the original four-point-probe resistivity
   measurement.[^valdes-1954]
 * Buehler, Grant and Thurber (NBS), *JES* 1978 — bridge and van der
-  Pauw resistors for line-width (electrical {term}`CD`)
+  Pauw resistors for linewidth (electrical {term}`CD`)
   measurement.[^buehler-1978]
 * Proctor, Linholm and Mazer (NBS), *IEEE TED* 1983 — Kelvin
   measurement of interfacial contact resistance and its
