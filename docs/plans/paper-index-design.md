@@ -1,15 +1,21 @@
 # Academic paper index — design
 
-Status: 2026-09-19 (round 3). Dataset, generator and pages done and
-reviewed three times (`data/papers.yaml`, `data/papers-excluded.yaml`,
+Status: 2026-09-19 (round 3, verified). Dataset, generator and pages
+done and reviewed four times (`data/papers.yaml`, `data/papers-excluded.yaml`,
 `data/papers-labels.yaml`, `tools/check_papers.py`, `tools/gen_papers.py`,
 `docs/references/papers/`). Round 3 added a `names_process` field (with
 `authors` and `venue`) to `data/papers-excluded.yaml` and a generated
-page, `designed-on-sky130.md`, listing the excluded records that name the
-process without reporting fabrication (§2.2, §4). Not yet done: links to
-the paper pages from pages outside `docs/references/` (deferred on
-instruction; see §7). This file lives in `docs/plans/`, which the Sphinx
-build excludes.
+page, `designed-on-sky130.md`, listing the excluded/held records that
+name the process (§2.2, §4). An independent verification of round 3
+(`tmp/verify-index-papers-r3.md`, findings V3-01…V3-12) found two
+inclusion decisions that contradicted exclusions made in the same
+commit and a `names_process` definition drawn from the wrong text; all
+required and follow-up fixes are applied (`paper-pepel-2025a` and
+`paper-yu-2022a` moved to `held`, §1.4's 130 nm-flow rule and §1.3's
+tape-out rule written down, `names_process` recomputed from each
+record's own title/abstract). Not yet done: links to the paper pages
+from pages outside `docs/references/` (deferred on instruction; see §7).
+This file lives in `docs/plans/`, which the Sphinx build excludes.
 
 ## 1. Purpose and scope
 
@@ -32,11 +38,24 @@ A paper is **included** when it is one of:
    MiM, photonic or MEMS devices fabricated on the process.
 3. **Silicon on SKY130 shuttles** — circuits and chips fabricated on the
    process (open MPW, ChipIgnite, Tiny Tapeout or other runs) where the
-   paper reports silicon measurements or process-specific results.
+   paper reports silicon measurements or process-specific results, **or**
+   states that the design achieved tape-out on a named SKY130 run, even
+   without a reported measurement (round 3, V3-05: this is the test the
+   index actually applies in practice, e.g. `paper-singhani-2023a`,
+   `paper-teo-2024a`, `paper-wang-2024a`; a "fabrication-ready" or
+   pre-tape-out layout is not enough).
 4. **Lineage and the fab** — the Cypress S8 / SONOS 130 nm lineage, work
    from the Bloomington fab (Cypress Fab 4, later SkyWater), and the RRAM
    and monolithic-3D work at SkyWater from which the sky130B ReRAM module
-   descends.
+   descends. This basis is for the **130 nm flow specifically**: a paper
+   from a Bloomington-fab programme that reports work at another node
+   (for example the MIT × SkyWater CNFET programme's 90 nm devices) is
+   out under the other-SkyWater-process clause below unless it also
+   reports the 130 nm line, the way `paper-srimani-2023a` does ("90/130nm
+   technology node"); a paper from the same programme whose own abstract
+   does not state a node is `held`, not included, once a sibling paper
+   from the same authors and year states a different node (round 3,
+   V3-02).
 
 Every record carries a **`basis`** that says how its link to the process
 is established:
@@ -111,19 +130,29 @@ moves to `papers.yaml` when its full text is read and names the process.
 paper with no proceedings page) and `venue` (a string, or null when not
 recorded) are the same citation fields as `papers.yaml`, gathered from
 Crossref, OpenAlex or the arXiv record. `names_process` is `true` when
-the record's title or reason names SKY130, the SkyWater 130 nm process
-or the SkyWater foundry (the literal test behind `basis: named-process`
-in §1, applied here to records that do not meet the inclusion rules).
+the record's own title or retrieved abstract names SKY130, the SkyWater
+130 nm process or the SkyWater foundry — the literal test behind `basis:
+named-process` in §1, applied here to records that do not meet the
+inclusion rules. It is computed from the paper's own text, **never**
+from the `reason` prose (a record can be excluded *because* its own text
+does not name the process, and the reason then has to say so; that
+sentence must not make the record read as if it names the process).
 Round 3 added these three fields and backfilled them for every record
-already in the file (2026-09-19); `names_process` for the pre-round-3
-records was computed by a text match over the stored title and reason,
-which is conservative — a record whose full text names the process only
-away from the excerpt that was read is not caught, and would need a
-correction if found. `tools/gen_papers.py` lists every `names_process:
-true` record on `docs/references/papers/designed-on-sky130.md` (§4), so
-that a reader of the academic literature on SKY130 can find work that
-uses the PDK even where it stops short of the index's evidential
-standard.
+already in the file (2026-09-19), fetching each record's own abstract
+(OpenAlex, or the arXiv summary) to compute `names_process`; two
+`web:woset-*` records have no fetchable abstract, so their `title` alone
+was used. `tools/gen_papers.py` lists every `names_process: true` record
+on `docs/references/papers/designed-on-sky130.md` (§4); because some
+records genuinely do name a SkyWater process or site (S90, a 90 nm
+node, a different fab location) while reporting real measured silicon
+just not on SKY130, and one (a slide deck) genuinely reports measured
+SKY130 values, the page's lead says this explicitly rather than
+claiming every listed record reports no fabrication. The offline check
+only validates that `names_process` is a boolean; `--online` re-fetches
+each record's own abstract and fails if the stored value disagrees with
+a fresh recomputation. The page lets a reader of the academic literature
+on SKY130 find work that uses the PDK even where it stops short of the
+index's evidential standard.
 
 ### 2.3 `data/papers-labels.yaml`
 
@@ -131,7 +160,12 @@ An append-only YAML list of `{label, id, previous_ids, published}`, one
 entry for every page label ever published. `check_papers.py` requires
 every record's label to be in the map with its id and every mapped label
 to be still used by the same paper, so a label cannot be dropped, renamed
-or reused; an id correction adds the old id to `previous_ids`.
+or reused; an id correction adds the old id to `previous_ids`. A paper
+that turns out not to meet §1 after its label was published (round 3,
+V3-01/V3-02) moves to `papers-excluded.yaml`; its label-map entry is
+left exactly as published (same id, same `published` date) so the label
+stays reserved, and `check_labels()` treats a label whose id is in the
+exclusions file as a valid reclassification rather than a dropped label.
 `gen_papers.py --check` also compares the map with its versions at the
 merge base with `main` and at `HEAD`, so a change that is already
 committed on a branch still fails.
@@ -427,6 +461,14 @@ Deferred and not adopted:
 
 Open questions:
 
+* `paper-bishop-2020a`'s `fabrication.quote` is sourced from the
+  publisher's own abstract (nature.com meta description, retrieved
+  2026-09-19), because OpenAlex and Crossref both carry no abstract for
+  this record; `--online`'s quote check only fetches OpenAlex or arXiv,
+  so it reports "quote not found" for this one record even though the
+  quote is correct (verified by hand against the publisher page). Worth
+  teaching `--online` to fall back to a publisher-page fetch when
+  OpenAlex has no abstract, rather than special-casing this one id.
 * Several free copies (MDPI, Wiley, TechRxiv, Authorea, eScholarship)
   answer scripted requests with HTTP 403, and IEEE sometimes with 202;
   they are kept with that result recorded, because the open-access

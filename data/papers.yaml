@@ -508,17 +508,23 @@
   - Analog Devices, Inc.
   - Raymor NanoIntegris
   - SkyWater Technology
-  fabrication: null
+  fabrication:
+    quote: We demonstrate uniform and reproducible CNFET fabrication across industry-standard 200 mm
+      wafers, employing the same equipment currently being used to fabricate silicon product wafers.
+    source: abstract
   related_docs: []
   inventory_key: null
   discovery:
   - OpenAlex raw_affiliation_strings.search:SkyWater (round 3, previously unsearched surface)
   notes: 'Fab publication: two authors (Ratkovich, Nelson) affiliated with SkyWater Technology, Bloomington,
-    MN. Publisher restricts abstract distribution (OpenAlex and Crossref both return no abstract text),
-    so the process link rests on the public affiliation record rather than a retrieved quotation; carbon-nanotube
-    FETs fabricated on 200 mm wafers in a commercial silicon foundry, per the title and Crossref metadata.'
+    MN; a third author (Murphy) is affiliated with Analog Devices, Inc., so the abstract does not establish
+    that SkyWater alone did every fabrication step described (the title says "facilities", plural). OpenAlex
+    and Crossref carry no abstract text for this record; the abstract quoted above is the publisher''s own
+    (nature.com meta description, retrieved 2026-09-19). Neither the abstract nor the title names SKY130
+    or SkyWater; the process link rests on the public affiliation record.'
   verified: 2026-09-19 Crossref REST API works/10.1038/s41928-020-0419-7 resolved; title, authors, year,
-    volume, issue and pages match Crossref and OpenAlex
+    volume, issue and pages match Crossref and OpenAlex; abstract retrieved from nature.com (meta description)
+    2026-09-19
 - id: web:woset-2020-a03
   label: paper-edwards-2020a
   title: Google/SkyWater and the Promise of the Open PDK
@@ -825,50 +831,6 @@
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/lssc.2022.3188925 resolved; title matches Crossref
     and OpenAlex
-- id: doi:10.1109/led.2022.3144936
-  label: paper-yu-2022a
-  title: Foundry Integration of Carbon Nanotube FETs With 320 nm Contacted Gate Pitch Using New Lift-Off-Free
-    Process
-  title_display: Foundry Integration of Carbon Nanotube FETs With 320 nm Contacted Gate Pitch Using New
-    Lift-Off-Free Process
-  authors:
-  - Andrew Yu
-  - Tathagata Srimani
-  - Christian Lau
-  - Brian Benton
-  - Mark Nelson
-  - Max M. Shulaker
-  year: 2022
-  venue: IEEE Electron Device Letters
-  venue_series: IEEE Electron Device Letters
-  venue_type: journal
-  volume: '43'
-  issue: '3'
-  pages: 486-489
-  article_number: null
-  doi: 10.1109/led.2022.3144936
-  landing_url: https://ieeexplore.ieee.org/document/9686743/
-  arxiv: null
-  paywalled: true
-  free_full_text: []
-  topics:
-  - beol-integration
-  - device-characterisation
-  basis: affiliation-inference
-  institutions:
-  - Massachusetts Institute of Technology
-  - SkyWater Technology
-  fabrication: null
-  related_docs: []
-  inventory_key: null
-  discovery:
-  - OpenAlex raw_affiliation_strings.search:SkyWater (round 3, previously unsearched surface)
-  notes: 'Fab publication: two authors (Benton, Nelson) affiliated with SkyWater Technology Foundry, Bloomington,
-    MN. The abstract states the lift-off-free CNFET contact process "is implemented in a commercial silicon
-    CMOS foundry" and reports measured on-current and subthreshold-swing improvements, but does not name
-    SkyWater; the process link rests on the public affiliation record.'
-  verified: 2026-09-19 Crossref REST API works/10.1109/led.2022.3144936 resolved; title, authors, year,
-    volume, issue and pages match Crossref and OpenAlex
 - id: doi:10.1109/icm56065.2022.10005367
   label: paper-alshaya-2022a
   title: RRAM, Device, Model and Memory
@@ -1489,6 +1451,58 @@
     in the public records); the title says only "130-nm CMOS".
   verified: 2026-09-14 Crossref REST API works/10.1109/mdat.2024.3444728 resolved; title matches Crossref
     and OpenAlex
+- id: doi:10.1145/3649329.3658493
+  label: paper-wang-2024a
+  title: 'ChatCPU: An Agile CPU Design and Verification Platform with LLM'
+  title_display: 'ChatCPU: An Agile CPU Design and Verification Platform with LLM'
+  authors:
+  - Xi Wang
+  - Gwok-Waa Wan
+  - Sam-Zaak Wong
+  - Layton Zhang
+  - Tianyang Liu
+  - Qi Tian
+  - Jianmin Ye
+  year: 2024
+  venue: Proceedings of the 61st ACM/IEEE Design Automation Conference
+  venue_series: DAC
+  venue_type: conference
+  volume: null
+  issue: null
+  pages: 1-6
+  article_number: null
+  doi: 10.1145/3649329.3658493
+  landing_url: https://dl.acm.org/doi/10.1145/3649329.3658493
+  arxiv: null
+  paywalled: true
+  free_full_text:
+  - url: https://hal.science/hal-04642833/document
+    host: hal.science
+    oa_type: green (repository copy)
+    located_via: OpenAlex open-access data
+    checked: '2026-09-19 not fetched; OpenAlex records this as the open-access location'
+  topics:
+  - digital
+  - tooling
+  basis: named-process
+  institutions:
+  - National Center of Technology Innovation for EDA
+  - Southeast University
+  - National ASIC Center
+  fabrication:
+    quote: achieving successful tape-out using SkyWater 130nm MPW project with Efabless
+    source: abstract
+  related_docs: []
+  inventory_key: null
+  discovery:
+  - OpenAlex fulltext.search:sky130 (round 3, previously recorded as excluded by mistake)
+  notes: 'Round 3 correction: this record was first recorded in data/papers-excluded.yaml as "tape-out
+    named, no measurement", which is a test the index does not otherwise apply -- several other included
+    records (for example paper-singhani-2023a, paper-teo-2024a) are included on a bare tape-out claim
+    with no measurement. Included here on the same basis for consistency (design Sec. 1.3); see
+    docs/plans/paper-index-design.md Sec. 1 for the clarified rule.'
+  verified: 2026-09-19 Crossref REST API works/10.1145/3649329.3658493 resolved; title, authors, year and
+    pages match Crossref and OpenAlex
 - id: doi:10.1109/lad62341.2024.10691811
   label: paper-blocklove-2024a
   title: Evaluating LLMs for Hardware Design and Test
@@ -1764,15 +1778,18 @@
   - Arc PBC
   - Google
   fabrication:
-    quote: physical chip fabrication runs over the past few years, such as OpenMPW, through semiconductor
-      CMOS processes provided by Skywater (SKY130)
+    quote: "[…] physical chip fabrication runs over the past few years, such as OpenMPW, through\
+      \ semiconductor CMOS processes provided by Skywater (SKY130) […]"
     source: abstract
   related_docs: []
   inventory_key: null
   discovery:
   - OpenAlex fulltext.search:sky130 and fulltext.search:skywater (round 3)
-  notes: Reports the design, in-house fabrication and testing of an AFE ASIC on an OpenMPW SKY130 run,
-    with the ASIC used to read out separately fabricated laser-induced-graphene sensors.
+  notes: The quoted sentence (about Google's OpenMPW programme generally, omitting "and GlobalFoundries
+    (GF180)[1]" mid-sentence) is where the abstract names SKY130; the sentence that describes this paper's
+    own chip ("The effort includes the design, fabrication, and testing of an AFE ASIC") does not itself
+    name the process. Reports the design, in-house fabrication and testing of an AFE ASIC on an OpenMPW
+    SKY130 run, with the ASIC used to read out separately fabricated laser-induced-graphene sensors.
   verified: 2026-09-19 Crossref REST API works/10.1109/mssc.2024.3380586 resolved; title, authors, year,
     volume, issue and pages match Crossref and OpenAlex
 - id: doi:10.3390/electronics13091704
@@ -1961,55 +1978,6 @@
   notes: null
   verified: 2026-09-14 Crossref REST API works/10.1109/iedm50572.2025.11353729 resolved; title matches
     Crossref and OpenAlex
-- id: doi:10.1109/tim.2025.3635830
-  label: paper-pepel-2025a
-  title: Frequency Decomposition for Identification and Time Constant Extraction in Random Telegraph Noise
-    Analysis
-  title_display: Frequency Decomposition for Identification and Time Constant Extraction in Random Telegraph
-    Noise Analysis
-  authors:
-  - Victor D. Pepel
-  - Julie V. Logan
-  - Christian P. Morath
-  - Fahad Al Mamun
-  - Jereme Neuendank
-  - Vince Cowan
-  - Mohamed Nour
-  - Mike Chambers
-  - Diana Maestas
-  year: 2025
-  venue: IEEE Transactions on Instrumentation and Measurement
-  venue_series: IEEE Transactions on Instrumentation and Measurement
-  venue_type: journal
-  volume: '74'
-  issue: null
-  pages: 1-11
-  article_number: null
-  doi: 10.1109/tim.2025.3635830
-  landing_url: https://ieeexplore.ieee.org/document/11263955/
-  arxiv: null
-  paywalled: true
-  free_full_text: []
-  topics:
-  - reliability
-  - device-characterisation
-  basis: affiliation-inference
-  institutions:
-  - BlueHalo
-  - Air Force Research Laboratory
-  - Arizona State University
-  - SkyWater Technology
-  fabrication: null
-  related_docs: []
-  inventory_key: null
-  discovery:
-  - OpenAlex raw_affiliation_strings.search:SkyWater (round 3, previously unsearched surface)
-  notes: 'Fab publication: two authors (Nour, Chambers) affiliated with SkyWater Technology, Bloomington,
-    MN. Introduces an RTN time-constant-extraction algorithm benchmarked on measured low- and high-voltage
-    pFET signals; the abstract does not name SkyWater or the process it measured, so the link rests on
-    the public affiliation record.'
-  verified: 2026-09-19 Crossref REST API works/10.1109/tim.2025.3635830 resolved; title, authors, year,
-    volume and pages match Crossref and OpenAlex
 - id: doi:10.1109/isqed65160.2025.11014456
   label: paper-li-2025a
   title: 'Open-ALOE: An Analog Layout Automation Flow for the Open-Source Ecosystem'

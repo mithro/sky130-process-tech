@@ -22,7 +22,6 @@ Papers by year of publication, newest first.
 * {ref}`paper-irfansyah-2025a` — Astria Nur Irfansyah, ISPACS 2025
 * {ref}`paper-olyanasab-2025a` — Ali Olyanasab et al., Austrochip 2025
 * {ref}`paper-choi-2025a` — S. Choi et al., IEDM 2025
-* {ref}`paper-pepel-2025a` — Victor D. Pepel et al., IEEE Transactions on Instrumentation and Measurement 2025 (affiliation inference)
 * {ref}`paper-li-2025a` — Yueting Li et al., ISQED 2025
 * {ref}`paper-montanares-2025a` — Mauricio Montanares et al., VLSI-SoC 2025
 * {ref}`paper-castoria-2025a` — K. E. Castoria et al., arXiv 2025 (free copy)
@@ -36,6 +35,7 @@ Papers by year of publication, newest first.
 * {ref}`paper-hasler-2024a` — Jennifer Hasler et al., IEEE Transactions on Circuits and Systems I 2024
 * {ref}`paper-mathews-2024a` — Pranav Mathews et al., CICC 2024
 * {ref}`paper-yang-2024a` — Raymond H. Yang and Yaqing Xia, IEEE Design & Test 2024
+* {ref}`paper-wang-2024a` — Xi Wang et al., DAC 2024 (free copy)
 * {ref}`paper-blocklove-2024a` — Jason Blocklove et al., LAD 2024 (free copy)
 * {ref}`paper-jagielski-2024a` — Thomas Jagielski et al., WOSET 2024 (free copy)
 * {ref}`paper-teo-2024a` — Tee Hui Teo et al., MCSoC 2024
@@ -62,7 +62,6 @@ Papers by year of publication, newest first.
 ## 2022
 
 * {ref}`paper-zhang-2022a` — Qirui Zhang et al., IEEE Solid-State Circuits Letters 2022
-* {ref}`paper-yu-2022a` — Andrew Yu et al., IEEE Electron Device Letters 2022 (affiliation inference)
 * {ref}`paper-alshaya-2022a` — Abdulaziz Alshaya et al., ICM 2022
 
 (papers-year-2021)=

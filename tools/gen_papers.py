@@ -254,8 +254,8 @@ def entry(r: dict) -> list[str]:
     return out
 
 
-def page(label: str, title: str, body: list[str]) -> str:
-    return HEADER + "\n" + f"({label})=\n# {title}\n\n" + "\n".join(body).rstrip() + "\n"
+def page(label: str, title: str, body: list[str], header: str = HEADER) -> str:
+    return header + "\n" + f"({label})=\n# {title}\n\n" + "\n".join(body).rstrip() + "\n"
 
 
 def fab_note(n: int) -> list[str]:
@@ -295,8 +295,8 @@ def gen_index(rs: list[dict]) -> str:
         "* {ref}`papers-by-venue`",
         "* {ref}`papers-by-institution`",
         "* {ref}`papers-fab-publications`",
-        "* {ref}`papers-designed-on-sky130` — excluded papers that name the process",
-        "  without reporting fabricated silicon; not part of the index proper.",
+        "* {ref}`papers-designed-on-sky130` — excluded or held papers that name",
+        "  SKY130 or SkyWater; not part of the index proper.",
         "",
         "```{toctree}",
         ":hidden:",
@@ -562,20 +562,28 @@ def excluded_link(rid: str) -> str | None:
     return None
 
 
+NAMED_PROCESS_HEADER = "<!-- Generated from data/papers-excluded.yaml by tools/gen_papers.py; do not edit. -->\n"
+
+
 def gen_named_process(excluded: list[dict]) -> str:
     items = [r for r in excluded if r["names_process"]]
     body = [
-        "These papers use the SKY130 PDK but report no fabricated silicon and no",
-        "process-specific finding. They are listed for completeness and are",
-        "deliberately not part of {ref}`the index proper <papers-scope>`: none of",
-        "them meets its inclusion rules (Sec. 1 of the design). A record shown as",
-        "**held** is awaiting a full-text check rather than settled as out of",
-        "scope; see its reason.",
+        "Every excluded or held record whose own title or retrieved abstract names",
+        "SKY130, the SkyWater 130 nm process or the SkyWater foundry",
+        "(`names_process: true` in `data/papers-excluded.yaml`).",
+        "They are listed for completeness and are deliberately not part of",
+        "{ref}`the index proper <papers-scope>`: none of them meets its inclusion",
+        "rules (Sec. 1 of the design). Most report no fabrication or measurement at",
+        "all; a few report a measured result on a **different** SkyWater process or",
+        "site (S90, a 90 nm node, another fab location) rather than SKY130, or are",
+        "excluded for a reason other than a missing measurement (for example, a",
+        "slide deck rather than a paper) — each entry's reason says which. A",
+        "record shown as **held** is awaiting a full-text check rather than",
+        "settled as out of scope.",
         "",
         f"{plural(len(items))} name the process out of {plural(len(excluded))} considered",
         "and excluded or held; the rest do not name SKY130 or the SkyWater 130 nm",
-        "process at all. Generated from `data/papers-excluded.yaml` by",
-        "`tools/gen_papers.py`; do not edit.",
+        "process anywhere in their own title or abstract.",
         "",
     ]
     for y in sorted({r["year"] for r in items}, reverse=True):
@@ -593,7 +601,8 @@ def gen_named_process(excluded: list[dict]) -> str:
                 head += " **Held.**"
             body.append(f"* {head} {esc(r['reason'])}")
         body.append("")
-    return page("papers-designed-on-sky130", "Papers using the SKY130 PDK without fabrication results", body)
+    return page("papers-designed-on-sky130", "Papers naming SKY130 that are not part of the index", body,
+                header=NAMED_PROCESS_HEADER)
 
 
 def generate() -> dict[str, str]:

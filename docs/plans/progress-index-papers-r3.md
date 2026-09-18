@@ -243,3 +243,87 @@ the 4 K cryogenic SPICE model), a second raw-affiliation pass for
 citing-works pass for the SkyWater PDK description paper
 (`paper-edwards-2020a`, no DOI — needs an OpenAlex title search rather
 than `cites:<doi>`).
+
+## Response to independent verification (`tmp/verify-index-papers-r3.md`, V3-01…V3-12)
+
+All twelve findings applied, verified independently before committing
+(fresh Crossref/OpenAlex/arXiv/nature.com fetches, not just re-reading the
+verifier's quotes).
+
+* **V3-01** `paper-pepel-2025a` moved to `data/papers-excluded.yaml` as
+  `held`: its abstract names no process, and the same five sibling
+  RTN/TID papers from the same SkyWater co-authors this round already
+  records as 90 nm or S90LN are named in the reason.
+* **V3-02** `paper-yu-2022a` moved to `held` alongside its excluded twin
+  `doi:10.1109/vlsi-tsa54299.2022.9771013`: one rule now applies to both
+  (design §1.4, new paragraph) — a Bloomington CNFET-programme paper that
+  does not itself state 130 nm is held/excluded once a same-year sibling
+  from the same authors states a different node. Both records' reasons
+  cross-reference each other.
+* **V3-03** `paper-bishop-2020a`'s `notes` no longer attributes the
+  "200 mm" claim to "the title and Crossref metadata" (neither says it);
+  the record now carries a `fabrication.quote` from the paper's own
+  publisher abstract (nature.com meta description, fetched 2026-09-19,
+  since OpenAlex/Crossref carry no abstract for it), and the notes say
+  Analog Devices, Inc. is a co-affiliation so SkyWater-only fabrication
+  is not established.
+* **V3-04** `paper-li-2024a`'s `fabrication.quote` now marks its
+  omissions with `[…]` on both ends and the `notes` say which sentence
+  actually describes the paper's own ASIC.
+* **V3-05** `doi:10.1145/3649329.3658493` (ChatCPU) moved from
+  `data/papers-excluded.yaml` into `data/papers.yaml`
+  (`paper-wang-2024a`): a bare tape-out claim is the test the index
+  already applies in practice (`paper-singhani-2023a`, `paper-teo-2024a`);
+  design §1.3 now states this explicitly. SOFA (R2-13, "fabrication-ready
+  layouts", weaker than a tape-out) stays excluded.
+* **V3-06** `names_process` is now computed from each record's own title
+  and retrieved abstract (OpenAlex, or the arXiv summary; `web:` records
+  fall back to title only), never from the `reason` text: recomputing
+  over all 154 records flipped 18. `designed-on-sky130.md`'s lead no
+  longer claims every listed record reports no fabrication — it now says
+  plainly that a few report measured results on a different SkyWater
+  process, node or site, or are excluded for a reason other than a
+  missing measurement, and names each case in its own reason.
+* **V3-07** The page's generator banner now reads "Generated from
+  `data/papers-excluded.yaml`", not the shared `data/papers.yaml` banner.
+* **V3-08** The 7 previously-unrecorded genuine SkyWater-affiliated works
+  from `raw_affiliation_strings.search:SkyWater` are now recorded in
+  `data/papers-excluded.yaml` with reasons (packaging/interposer papers,
+  a CIGS photovoltaic paper, an organic-FET paper, and the high-altitude
+  ballooning papers) — 10 records added in total, one more than the 7
+  the verifier counted as clearly needing a decision, since the CIGS
+  paper needed its own reasoned exclusion rather than a rubber stamp.
+* **V3-09** The Authorea preprint of `paper-chen-2024a`
+  (`doi:10.22541/au.172413095.53999511/v1`) is now also recorded as its
+  own `excluded` entry (reason: preprint of the included paper), so an
+  id-based dedup pass will find it and not re-add it.
+* **V3-10** `10.5281/zenodo.17536015`'s author is stored as "Alastair
+  Waterman" (reordered from OpenAlex's inverted "Waterman, Alastair"
+  form); the two `arxiv:2608.*` records' leading-space " Shashank" is
+  trimmed.
+* **V3-11** `tools/check_papers.py --online` now recomputes
+  `names_process` for every excluded/held record from a fresh abstract
+  fetch and fails on disagreement (`names_process_check`); run after all
+  the above fixes with **zero** disagreements.
+* **V3-12** `data/papers-labels.yaml`'s four-line header comment and its
+  append-only contract wording are restored; the stray trailing blank
+  line is gone.
+
+Moving `paper-pepel-2025a` and `paper-yu-2022a` out of `papers.yaml`
+after their labels were published on this same branch created a tension
+with `gen_papers.py`'s append-only label-map guard (a published label's
+paper "may not be dropped" from `papers.yaml`). Resolved by keeping both
+labels' entries in `data/papers-labels.yaml` exactly as published (same
+id, same date) and changing `check_labels()` to treat a label whose id
+has moved to `papers-excluded.yaml` as a valid reclassification rather
+than a dropped label — the label stays reserved and can never be reused,
+which is the guarantee the append-only file exists to provide; only the
+requirement that the id also appear in `papers.yaml` is relaxed. Design
+§2.3 records this.
+
+Counts after V3 fixes: 56 included (57 − 2 held + 1 ChatCPU), 154
+excluded/held (142 + 2 held-moves + 10 V3-08 + 1 V3-09 − 1 ChatCPU-moved-in),
+109 of which name the process. All fifteen `check_*.py`/`gen_*.py --check`
+commands and the `-W` Sphinx build pass; `--online` (including the new
+`names_process` recomputation) finds zero problems except the documented,
+expected `paper-bishop-2020a` quote-source gap (design §7).

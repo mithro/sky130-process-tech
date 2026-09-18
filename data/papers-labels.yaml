@@ -1,3 +1,7 @@
+# Append-only map of published paper-index labels (docs/references/papers/) to paper ids.
+# A label, once published, is never removed, renamed or given to another paper; an id
+# correction is recorded in previous_ids.  Checked by tools/check_papers.py and, against the
+# merge base, by tools/gen_papers.py --check.
 - label: paper-akturk-2023a
   id: doi:10.1109/bcicts54660.2023.10310944
   previous_ids: []
@@ -214,6 +218,10 @@
   id: doi:10.1017/s1431927606063112
   previous_ids: []
   published: '2026-09-14'
+- label: paper-wang-2024a
+  id: doi:10.1145/3649329.3658493
+  previous_ids: []
+  published: '2026-09-19'
 - label: paper-yang-2024a
   id: doi:10.1109/mdat.2024.3444728
   previous_ids: []
@@ -226,4 +234,3 @@
   id: doi:10.1109/lssc.2022.3188925
   previous_ids: []
   published: '2026-09-14'
-
