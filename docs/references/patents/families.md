@@ -7608,6 +7608,9 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (ONO multi-layer oxynitride, Chinese filing), retrieved 2026-09-19; named by the round-1 review. Priority 2009-04-10, close to but distinct from the 2009-04-24 GP48743335/GP46465479 priority date; not confirmed as the same estate, so filed as a separate family rather than assumed a continuation.
 
+**Notes:**
+* Round-3 verification finding M3: "Longitudinal Flash Storage Solutions Co., Ltd." is Google Patents' own machine rendering of the Chinese-language current-assignee text on the CN106653761A representative page; it is the same company recorded elsewhere in this dataset (e.g. GP49580623) as "Longitude Flash Memory Solutions Ltd", the Cypress spin-off. Recorded here as Google shows it on this family's representative page rather than silently substituted, so the by-assignee page's "Longitudinal Flash Storage Solutions Co., Ltd." heading should be read as the same entity as "Longitude Flash Memory Solutions Ltd".
+
 **Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/CN106653761A/en
 :::
 
@@ -8222,7 +8225,7 @@ families and members are counted.
 
 **Title:** Method of fabricating a charge trapping gate stack using a complementary MOS fabrication process
 
-**Assignees:** original 美商賽普拉斯半導體公司
+**Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
 
 **Inventors:** 克里希納斯瓦米 庫馬爾; 謝慧美
 
@@ -8253,12 +8256,12 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-040` — *same-lineage assignee*: Original assignee shown in Chinese (see this family's own assignees.original field); read, not independently confirmed beyond the literal characters, as "(American company) Cypress Semiconductor Corporation"; SkyWater's Form S-1 (SEC-01) names Cypress Semiconductor Corporation as the company that owned and operated the fab before SkyWater; the patent concerns a charge-trapping gate stack fabricated with a complementary-MOS process, and it is not evidence that the technique is used in SKY130.
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp (the representative TWI640082B shows this in Chinese, 美商賽普拉斯半導體公司; the family's US members US8993457B1, US9496144B2 and US9911613B2 each give it in Latin script); SkyWater's Form S-1 (SEC-01) names Cypress Semiconductor Corporation as the company that owned and operated the fab before SkyWater; the patent concerns a charge-trapping gate stack fabricated with a complementary-MOS process, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (charge trapping gate stack, Taiwan filing), retrieved 2026-09-19; named by the round-1 review as a non-US member of a family absent from the index.
 
 **Notes:**
-* The original-assignee text is shown only in Chinese on Google Patents; read here as Cypress Semiconductor Corporation but not independently confirmed against a second source (data.epo.org does not carry TW-only documents).
+* Round-3 verification finding M3: the representative TWI640082B shows the original assignee only in Chinese (美商賽普拉斯半導體公司) and no current assignee, which produced a non-Latin-script "\#\# 美商賽普拉斯半導體公司" heading on by-assignee.md, the same structural defect round-1 finding M1 fixed for a different family. Corrected assignees.original/current to the Latin-script reading its own US members US8993457B1, US9496144B2 and US9911613B2 each give on their own fetched record pages (original: Cypress Semiconductor Corp; current: Longitude Flash Memory Solutions Ltd, all three agree), independently confirmed by USPTO Patent Public Search (round-3 review, family id 52707807, assignee "Cypress Semiconductor Corporation" on all three US siblings). The representative and its other fields are unchanged.
 
 **Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/TWI640082B/en
 :::

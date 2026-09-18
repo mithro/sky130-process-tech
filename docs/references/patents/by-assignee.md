@@ -62,6 +62,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
+* {ref}`TW I640082 B <patent-gp52707807>` — in force
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
@@ -539,7 +540,3 @@ heading here is not necessarily the name printed on the patent.
 ## Zilog Inc (now IXYS Intl Ltd)
 
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
-
-## 美商賽普拉斯半導體公司
-
-* {ref}`TW I640082 B <patent-gp52707807>` — in force
