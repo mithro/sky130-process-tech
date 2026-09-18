@@ -28,8 +28,9 @@ lighter than the 1.8 V tip (of order 10¹³ cm⁻², typical of an
 On the other hand the ions arrived at 40°,[^pdk-03] so the resist sidewalls
 facing the beam have been implanted along their whole height, and
 we read the PDK's 0.02 µm "Photoresist tilted implant
-penetration"[^pdk-03] as saying the ions reach 0.02 µm into the resist
-edge, so the edges are implanted through their whole depth (inference).
+penetration"[^pdk-03] as saying the ions reach 0.02 µm laterally into
+the resist edge, so the sidewalls facing the beam are implanted through
+their whole height (inference).
 The surface under the resist is, we infer, the
 {term}`screen oxide` from {ref}`IOX45 <step-063>` over silicon and poly, which
 must survive once more for {ref}`LDASTI <step-072>`.

@@ -38,6 +38,7 @@ before being fixed or declined.
 | verify-F2 | Low | fixed | Verifier caught: the new 1.14 um figure on 069's outgassing sentence carried no citation, unlike every other use of PRTHICKN on the site. Added [^pdk-03] (already defined/used on the page). |
 | 070-L1 | Low | fixed | = 067-L1, quotation typography only (the citation-scheme part is declined; see 066-L1). |
 | 070-L2 | Low | fixed | Confirmed PDK gives the 0.02 um value with no explanation of consequence; marked the "damaged through" reading as an inference, matching 068's more careful treatment. |
+| verify-N2 | Low | fixed | Verifier nit: "implanted through their whole depth" reused "depth" confusingly for the lateral 0.02 um figure; reworded to "laterally into the resist edge ... through their whole height", matching the earlier "whole height" clause. |
 | 071-L1 | Low | fixed | Confirmed Table F2b (parsed) marks LDNTM on 9 rows including "NV SONOS Diode", matching masks/ldntm.md; added the missing row to 071's list. |
 | 071-L2 | Low | fixed | Confirmed pdk-device-details.txt 2749-2757 prints V_S as "-38"; added the reviewer's caveat noting the evident typo and our reading. |
 | 073-L1 | Low | fixed | Confirmed cyp-25.txt 48-55 is about SONOS cell scaling across nodes, explicitly mentioning 28nm; the indium recommendation belongs to that advanced-node discussion. Reworded both mentions. |
