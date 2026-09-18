@@ -12,7 +12,7 @@ before being fixed or declined.
 | 048-M1 | Medium | fixed | Confirmed 058-gatenit.md leaves LPCVD-vs-PECVD open and 060-bfr.md hedges the same way; 048 stated it as an inference without noting the open question. Fixed the cross-reference. |
 | 048-M2 | Medium | fixed | Confirmed via OpenAlex: Voutsas & Hatalis 1992 shows the amorphous/poly boundary depends on deposition rate, not just temperature (as-deposited poly obtained at 530 °C by controlling rate); Kamins/Kinsbron place the conventional boundary near 600 °C. Fixed on 048, and the same oversimplified "<580 °C" claim on overview/index.md and categories/deposition.md (minimal edits, shared files). |
 | 049-M1 | Medium | fixed | Confirmed via OpenAlex abstract: Wright 2010 is a sputtered Cr-Si-B-SiO2/Al2O3 thin-film resistor paper, no polysilicon. Annotated Deep dive bullets on 049/053/055 correctly; replaced 053's and 055's in-text sentences. |
-| 050-M1 | Medium | open | |
+| 050-M1 | Medium | fixed | Confirmed via cached facilities text: SkyWater lists 3 implanters (8250 to 1e14, GSD High current/energy to 5e15, GSD Hi dose to 5e16); the page's own Cross-check already said "three Axcelis implanters" while the body claimed the Hi-dose GSD was the only one reaching gate-doping doses. Fixed to name both GSD tools. |
 | 051-M1 | Medium | fixed | Checked Wayback (`archive.org/wayback/available`, empty) and archive.today (404, no snapshot) for both job-01 and job-03 URLs on 2026-09-18: neither is retrievable or archived. Removed the quoted strings and the specific tool claim on 051/054/057/060; removed job-03 entirely (051/054/057/060 still use job-01 for other, out-of-scope pages, so its inventory key stays; job-03 became fully unused, so its inventory entry was removed). |
 | 052-M1 | Medium | fixed | Confirmed via OpenAlex abstract: Tsang 2014's mechanism is hydrogen diffusing through eroded LPCVD-nitride corners (a bank-position effect), not the implant-mask edge. Fixed in-text and Deep dive on 049/052/055. |
 | 053-M1 | Medium | fixed | = 049-M1 |
@@ -30,9 +30,9 @@ before being fixed or declined.
 | 049-L1 | Low | open | |
 | 049-L2 | Low | open | |
 | 049-L3 | Low | open | |
-| 050-L1 | Low | open | |
-| 050-L2 | Low | open | |
-| 050-L3 | Low | open | |
+| 050-L1 | Low | fixed | [^axcelis-8250] (no dose spec) dropped from the 1e14 sentence as part of the 050-M1 rewrite; it remains correctly used in Cross-check for the medium-current tool class. |
+| 050-L2 | Low | fixed | Confirmed via OpenAlex: Kamins 1972 says poly diffusion is "more rapid" with lower activation energy, no order-of-magnitude figure. Reworded. |
+| 050-L3 | Low | fixed | Added the NGNIT e-test cross-reference to 050, pointing at 058's npc-mask reading. |
 | 051-L1 | Low | open | |
 | 051-L2 | Low | open | |
 | 051-L3 | Low | open | shared with 057-L3 |
