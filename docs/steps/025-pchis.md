@@ -62,8 +62,11 @@ carried into the {ref}`RTAI <step-034>` anneal.
 An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 
 1. **Plasma ash.** Downstream oxygen plasma with a nitrogen or
-   forming-gas addition. For light doses a single-stage recipe at
-   200–270 °C is typical;[^txt-02] fabs that run one standard
+   forming-gas addition. For light doses a single-stage recipe is
+   typical, at a temperature in the 200–270 °C class
+   (industry-typical);[^txt-02] SkyWater's published asher ranges
+   (120–270 °C, 40–270 °C and up to 250 °C) span it,[^skw-01] which is
+   a capability, not a recipe. Fabs that run one standard
    implant-strip recipe use the two-stage sequence anyway — a first
    stage below about 220 °C "by oxygen and nitrogen/hydrogen plasma"
    until the crust is gone, then a hotter bulk stage.[^pat-strip-mosel]
