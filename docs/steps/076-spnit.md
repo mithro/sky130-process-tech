@@ -147,14 +147,18 @@ fab (SKY130's recipe is not public):
   rather than following it.
 * **Low-temperature LPCVD from BTBAS.** Bis(tertiary-butylamino)silane
   with ammonia deposits nitride in a furnace at roughly 550–600 °C
-  with conformality close to the DCS film; Gumpher et al. characterise
-  the process and film,[^gumpher-2004] and Smith, Seutter and Iyer the
+  (typical industry value for the BTBAS process; the paper's title
+  confirms only that it is a low-temperature LPCVD
+  nitride[^gumpher-2004]) with conformality close to the DCS film;
+  Gumpher et al. characterise the process and film,[^gumpher-2004]
+  and Smith, Seutter and Iyer the
   thermal chemistry.[^smith-2005] SkyWater lists "BTBAS" among its
   Aviza furnace processes,[^skw-01] and a low-temperature spacer
   nitride is the most common reason a 130 nm-era fab adopts it — which
   is why we consider it the leading candidate for this step
   (inference; see below).
-* **PECVD from silane and ammonia.** Single-wafer, 300–400 °C, with
+* **PECVD from silane and ammonia.** Single-wafer, 250–400 °C
+  (typical industry values, category page[^wiki-pecvd]), with
   hydrogen content and stress set by the plasma conditions;[^smith-1990][^claassen-1985]
   the film's stress can drift irreversibly with later heating.[^hughey-2003]
   Conformality is poorer than LPCVD, which makes the spacer width
