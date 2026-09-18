@@ -28,9 +28,9 @@ continuous; and it has taken a p-type implant — boron or BF₂ at a dose of or
 the gate implant but still in the range where a carbonised crust
 forms.[^orvek-1985] If BF₂ is the species, the crust also contains
 fluorine; Fujimura et al. found that O₂ ashing leaves residues that
-are mainly the oxide of the implanted species,[^fujimura-1989] which
-for boron/fluorine is a lighter burden than for arsenic, but no public
-source describes the SKY130 case (as
+are mainly the oxide of the implanted species,[^fujimura-1989] but no
+public source describes the SKY130 case, or compares the residue
+burden between species (as
 at {ref}`PCHIS <step-025>`, after {ref}`PNCHI <step-024>`, if that
 implant is also BF₂).
 
