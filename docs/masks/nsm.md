@@ -386,8 +386,6 @@ from nsm.1 and nsm.2), kept 1.000 µm from all wiring.
 
 * Gambino et al., IITC 2014 — the reliability of a segmented edge
   seal ring in a 0.18 µm RF technology.[^gambino-2014]
-* Stamper, McGahay and He (GlobalFoundries), US 10,062,748 — segmented
-  guard rings and chip edge seals.[^pat-edgeseal-gf]
 * Mitwalsky and Chen (Siemens and IBM), US 5,789,302 — crack
   stops.[^pat-crackstop-ibm]
 * Bothra, McKay and Jhota (Zeevo), US 6,492,716 — a seal-ring structure
@@ -409,6 +407,11 @@ from nsm.1 and nsm.2), kept 1.000 µm from all wiring.
   masks.[^buck-1994]
 * Dammel, *Diazonaphthoquinone-based Resists* — the i-line resist
   chemistry.[^dammel-1993]
+
+:::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read
+* Stamper, McGahay and He (GlobalFoundries), US 10,062,748 — segmented
+  guard rings and chip edge seals.[^pat-edgeseal-gf]
+:::
 
 ## Open questions
 

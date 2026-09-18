@@ -278,11 +278,6 @@ Status and expiry are estimates from public records and are not legal advice.
   platform with three added masks.[^pap-05]
 * Jiew, Chien and Yung, NVMTS 2012 — development of a robust 2T-SONOS
   cell for embedded flash, the same cell topology as SKY130's.[^jiew-2012]
-* Koutny et al. (Cypress), US 8,093,128 — where the charge-trap
-  module sits relative to the logic well and channel implants.[^pat-03]
-* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
-  memory-cell region opened through a mask for its own channel
-  implants before the tunnel dielectric is formed.[^pat-04]
 * Baker and Capsuto, SPIE 1996 — CD control for an i-line 0.35 µm
   device using a new anti-reflective coating.[^baker-1996]
 * Levinson, *Principles of Lithography* — chapters on wafer steppers,
@@ -290,6 +285,14 @@ Status and expiry are estimates from public records and are not legal advice.
 * Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge
   shift the threshold of devices near an implant-mask edge, relevant
   to the 0.095 µm `tunm` clearances.[^hook-2003]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+* Koutny et al. (Cypress), US 8,093,128 — where the charge-trap
+  module sits relative to the logic well and channel implants.[^pat-03]
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
+  memory-cell region opened through a mask for its own channel
+  implants before the tunnel dielectric is formed.[^pat-04]
+:::
 
 ## Open questions
 

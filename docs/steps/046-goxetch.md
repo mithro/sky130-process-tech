@@ -194,12 +194,6 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — BOE
-  etch of the first gate oxide through the mask; the oxide-safe clean
-  before the second oxide.[^pat-04]
-* Koutny et al. (Cypress), US 8,093,128 — selective removal of the
-  first gate insulator, the protected pre-clean, the strip, and SC-1's
-  effect on the blocking oxide.[^pat-03]
 * SkyWater PDK, SPICE model of `nfet_01v8` — `toxe`
   4.148 nm.[^pdk-model-nfet01v8]
 * SkyWater, *Facilities & Capabilities* — Akrion, DNS, FSI and SEZ wet
@@ -208,6 +202,15 @@ Status and expiry are estimates from public records and are not legal advice.
   — the SEZ etcher.[^skw-07]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — BOE
+  etch of the first gate oxide through the mask; the oxide-safe clean
+  before the second oxide.[^pat-04]
+* Koutny et al. (Cypress), US 8,093,128 — selective removal of the
+  first gate insulator, the protected pre-clean, the strip, and SC-1's
+  effect on the blocking oxide.[^pat-03]
+:::
 
 ### High-level understanding
 

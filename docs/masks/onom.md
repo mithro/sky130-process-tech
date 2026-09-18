@@ -325,8 +325,11 @@ marked `areaid.ce`.
   tools.[^skw-01]
 * ASML, *PAS 5500/275D* data sheet — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
 * Koutny et al. (Cypress), US 8,093,128 — the dry-then-wet stack etch,
   its undercut and the window-to-stack overlay.[^pat-03]
+:::
 
 ### High-level understanding
 

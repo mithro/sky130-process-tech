@@ -205,13 +205,16 @@ Status and expiry are estimates from public records and are not legal advice.
   1150 °C.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* Koutny et al. (Cypress), US 8,093,128 — "a rapid thermal anneal is
-  performed after implanting both the n-well and p-well".[^pat-03]
 * SemiStar, *AG Associates Heatpulse 8800 / 8808* reseller page —
   temperature range, ramp rates, lamp banks and applications.[^ag-8800]
 * SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
   Specifications* (PDF) — operating specifications and facility tables
   of the Heatpulse 4100 and 8108.[^ag-8108]
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+* Koutny et al. (Cypress), US 8,093,128 — "a rapid thermal anneal is
+  performed after implanting both the n-well and p-well".[^pat-03]
+:::
 
 ### High-level understanding
 

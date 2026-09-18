@@ -196,10 +196,13 @@ Status and expiry are estimates from public records and are not legal advice.
   suppliers.[^sec-01][^sec-02]
 * SkyWater PDK, *Periphery rules* — tunm.1, tunm.3 and tunm.4, the
   dimensions the ARC protects.[^pdk-periph]
-* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
-  10–20 nm pad oxide on which the ARC etch stops.[^pat-04]
 * Stanford Nanofabrication Facility, *Lam Research TCP 9400* — the
   reactor class and its gases.[^snf-9400]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
+  10–20 nm pad oxide on which the ARC etch stops.[^pat-04]
+:::
 
 ### High-level understanding
 

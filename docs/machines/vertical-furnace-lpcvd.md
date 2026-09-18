@@ -364,10 +364,13 @@ Status and expiry are estimates from public records and are not legal advice.
   films.[^tel-telindy]
 * ASM International, A400 DUO press release (2019) — the A400 LPCVD
   processes.[^asm-a400]
-* Koutny et al. (Cypress), US 8,093,128 — ONO oxynitride layers in a batch
-  furnace.[^pat-03]
 * Persyn (Sony), US 5,800,616 — the TEL VCF-615S LP-TEOS furnace and its
   exhaust.[^pat-lpcvd-sony]
+
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+* Koutny et al. (Cypress), US 8,093,128 — ONO oxynitride layers in a batch
+  furnace.[^pat-03]
+:::
 
 ### High-level understanding
 

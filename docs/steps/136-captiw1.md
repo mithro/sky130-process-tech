@@ -296,15 +296,18 @@ Status and expiry are estimates from public records and are not legal advice.
   capacitance density and frequency dispersion of published Al-BEOL
   PECVD-nitride MiMs, though neither abstract names an electrode
   material.[^kar-roy-1999][^babcock-2001]
-* Cathey et al. (TI), US 8,110,414 — a TiN top-electrode etch with
-  the selectivity and dimensions this reference relies
-  on.[^pat-mim-ti-etch]
 * Ng et al., *IEEE TED* 2005 — a review of MiM integration in Al–Cu
   and Cu back ends.[^ng-2005]
 * Brabazon et al. (IBM), US 5,708,559; Kar-Roy and Racanelli
   (Newport Fab), US 6,430,028; Crenshaw et al. (TI), US 7,250,334 —
   plate materials and constructions from three assignees, including
   IBM's damascene bottom plate.[^pat-mim-ibm][^pat-mim-newportfab][^pat-mim-ti-alcap]
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+* Cathey et al. (TI), US 8,110,414 — a TiN top-electrode etch with
+  the selectivity and dimensions this reference relies
+  on.[^pat-mim-ti-etch]
+:::
 
 ## Open questions
 

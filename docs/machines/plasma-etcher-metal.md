@@ -401,8 +401,6 @@ Status and expiry are estimates from public records and are not legal advice.
 * Liu and Kuo, *JES* 2007 — reactive ion etching of TiW.[^liu-2007-tiw]
 * Douglas (Texas Instruments), US 4,675,073 — a fluorine-deficient TiN
   etch selective to silicide.[^pat-tin-etch-ti]
-* Cathey et al. (Texas Instruments), US 8,110,414 — a MiM top-electrode
-  etch that stops on a thin dielectric.[^pat-mim-ti-etch]
 * Danzl and McLaurin, IEMT 1997 — hydrogen peroxide removal of a TiW
   cap from aluminium pads.[^danzl-1997]
 * Wai and Ling, ASMC 2017 — Al–Cu corrosion after metal etch and wet
@@ -415,6 +413,11 @@ Status and expiry are estimates from public records and are not legal advice.
   plasmas.[^hwang-1997]
 * Donnelly and Kornblit, *JVST A* 2013 — a review of plasma
   etching.[^donnelly-2013]
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+* Cathey et al. (Texas Instruments), US 8,110,414 — a MiM top-electrode
+  etch that stops on a thin dielectric.[^pat-mim-ti-etch]
+:::
 
 ## Open questions
 

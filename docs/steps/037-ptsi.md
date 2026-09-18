@@ -219,15 +219,18 @@ Status and expiry are estimates from public records and are not legal advice.
   species, dose and tilt ranges.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
+* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest —
+  deeper, heavier channel implants for the control gate.[^cyp-25]
+* Semiconductor Online, *8250HT Medium Current Ion Implanter* — energy
+  and current range of the tool class.[^axcelis-8250]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — indium
   channel implant energies and doses for the memory transistor; pad
   oxide thickness.[^pat-04]
 * Koutny et al. (Cypress), US 8,093,128 — the memory cell formed after
   the logic well and channel implants.[^pat-03]
-* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest —
-  deeper, heavier channel implants for the control gate.[^cyp-25]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — energy
-  and current range of the tool class.[^axcelis-8250]
+:::
 
 ### High-level understanding
 
@@ -263,9 +266,12 @@ Status and expiry are estimates from public records and are not legal advice.
   edges, relevant to the 0.095 µm `tunm` clearances.[^hook-2003]
 * ITRS 2001, *Front End Processes* — retrograde channel depth
   targets.[^itrs-01]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
   published channel-engineering recipe for an embedded SONOS
   transistor.[^pat-04]
+:::
 
 ## Open questions
 

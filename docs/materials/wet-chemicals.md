@@ -417,11 +417,14 @@ Status and expiry are estimates from public records and are not legal advice.
   hydrofluoric acid, buffered oxide etchants, hydrogen peroxide,
   sulphuric acid and
   2-propanol.[^semi-c28][^semi-c23][^semi-c30][^semi-c44][^semi-c41]
+* Lee (EKC Technology), US 5,334,332 — hydroxylamine and alkanolamine
+  residue removers.[^pat-ekc-hydroxylamine]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — BOE and
   HF for the pad and thick gate oxides in an embedded-SONOS
   flow.[^pat-04]
-* Lee (EKC Technology), US 5,334,332 — hydroxylamine and alkanolamine
-  residue removers.[^pat-ekc-hydroxylamine]
+:::
 
 ### High-level understanding
 

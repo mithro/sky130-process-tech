@@ -370,12 +370,15 @@ a memory array cannot be derived from these rules alone (the
   tools.[^skw-01]
 * ASML, *PAS 5500/275D* data sheet — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
+* Cypress/UMC press release — "three additional mask layers" for the
+  S65 process; no count is given for S8.[^cyp-22]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 * Koutny et al. (Cypress), US 8,093,128 — window undercut, window sizing
   and critical-layer lithography in one SONOS integration.[^pat-03]
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
   tunnel mask, the implant through it and its removal.[^pat-04]
-* Cypress/UMC press release — "three additional mask layers" for the
-  S65 process; no count is given for S8.[^cyp-22]
+:::
 
 ### High-level understanding
 

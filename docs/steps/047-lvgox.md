@@ -234,13 +234,16 @@ Status and expiry are estimates from public records and are not legal advice.
   8808 with NH₃; "Nitrided gate oxide" special module.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
+* ITRS 2001, *Front End Processes* — {term}`EOT` targets and thickness
+  control; oxynitride evolution.[^itrs-01]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 * Koutny et al. (Cypress), US 8,093,128 — thin versus thick gate
   insulator thicknesses; nitridation at 900–1100 °C with 4–10 wt %
   nitrogen; nitriding gases.[^pat-03]
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
   thin second gate oxide grown by thermal oxidation.[^pat-04]
-* ITRS 2001, *Front End Processes* — {term}`EOT` targets and thickness
-  control; oxynitride evolution.[^itrs-01]
+:::
 
 ### High-level understanding
 

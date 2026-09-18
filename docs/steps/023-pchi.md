@@ -173,8 +173,6 @@ Status and expiry are estimates from public records and are not legal advice.
 * SkyWater PDK, *Device Details* — `pfet_01v8_hvt`, `cap_var_hvt`,
   inverter delay tables.[^pdk-07]
 * SkyWater PDK, *Periphery rules* — `hvtp` function text.[^pdk-periph]
-* Ramkumar et al. (Cypress), US 8,796,098 — pad oxide under the
-  implants.[^pat-04]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
 * SKY130 raw-data repository, 1.8 V transistor files — `pfet_01v8_hvt`
@@ -184,6 +182,11 @@ Status and expiry are estimates from public records and are not legal advice.
   documentation — the low- and high-Vt varactors and the pad list that
   names them; the capacitances quoted here are our
   extraction.[^raw-data-passives][^raw-data-testtile-pads]
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+* Ramkumar et al. (Cypress), US 8,796,098 — pad oxide under the
+  implants.[^pat-04]
+:::
 
 ### High-level understanding
 

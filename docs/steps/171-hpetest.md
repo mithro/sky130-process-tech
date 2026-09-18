@@ -373,11 +373,14 @@ Status and expiry are estimates from public records and are not legal advice.
   TSM* 1999 — defect sensitivities and defect-density extraction from
   test structures.[^stapper-1983][^hess-1999]
 * Maly, *Proc. IEEE* 1990 — design for manufacturability.[^maly-1990]
-* Chen, Hsu, Tsai and Jeng (TSMC), US 7,679,384 — parametric testlines
-  in the scribe line.[^pat-testline-tsmc]
 * Hunter et al., IMAPS 2012 — probe damage in aluminium pads.[^hunter-2012]
 * Schroder, *Semiconductor Material and Device Characterization* — the
   measurement methods.[^schroder-2006]
+
+:::{dropdown} From a patent shown as in force (US 7,679,384; estimated expiry 2028-06-06) — open to read
+* Chen, Hsu, Tsai and Jeng (TSMC), US 7,679,384 — parametric testlines
+  in the scribe line.[^pat-testline-tsmc]
+:::
 
 ## Open questions
 

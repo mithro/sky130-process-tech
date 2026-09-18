@@ -202,15 +202,18 @@ Status and expiry are estimates from public records and are not legal advice.
 * SkyWater, *Facilities & Capabilities* — lithography tools, tracks
   and metrology.[^skw-01]
 * SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
+* Cypress/UMC press release — "three additional mask layers" for the
+  S65 process; no count is given for S8.[^cyp-22]
+* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest —
+  "fewer extra lithography masks".[^cyp-25]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
   patterned mask over the stack and what the etch removes.[^pat-04]
 * Koutny et al. (Cypress), US 8,093,128 — removal of the stack from
   the HV and LV MOS regions; the inorganic spin-on ARC; the
   importance of window alignment.[^pat-03]
-* Cypress/UMC press release — "three additional mask layers" for the
-  S65 process; no count is given for S8.[^cyp-22]
-* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest —
-  "fewer extra lithography masks".[^cyp-25]
+:::
 
 ### High-level understanding
 

@@ -337,13 +337,16 @@ Status and expiry are estimates from public records and are not legal advice.
   wafer sizes, installed base and scope.[^tel-mercury-2018]
 * Meuchel, Bernt and Henke (Semitool), US 7,305,999 — the centrifugal
   spray processor.[^pat-spray-semitool]
-* Gottschalk et al. (MKS Instruments), EP 2 104 648 B1 — CO₂ in DI rinse
-  water against surface charging.[^pat-dico2-mks]
 * Lee (EKC Technology), US 5,334,332 — hydroxylamine and alkanolamine
   residue removers.[^pat-ekc-hydroxylamine]
+
+:::{dropdown} From patents shown as in force (EP 2 104 648, estimated expiry 2028-05-14; US 8,796,098, estimated expiry 2034-02-26) — open to read
+* Gottschalk et al. (MKS Instruments), EP 2 104 648 B1 — CO₂ in DI rinse
+  water against surface charging.[^pat-dico2-mks]
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — BOE
   etches of the pad and thick gate oxides, with HF alternatives, in an
   embedded-SONOS flow.[^pat-04]
+:::
 
 ### High-level understanding
 

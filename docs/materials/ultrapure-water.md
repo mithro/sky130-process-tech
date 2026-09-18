@@ -278,8 +278,11 @@ Status and expiry are estimates from public records and are not legal advice.
   industries.[^astm-d5127]
 * ITRS 2001, *Yield Enhancement* — UPW definition, requirements, test
   methods and recycling.[^itrs-2001-yield]
+
+:::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read
 * Gottschalk et al. (MKS), EP 2 104 648 — carbonated DI water against
   surface charging.[^pat-dico2-mks]
+:::
 
 ### High-level understanding
 

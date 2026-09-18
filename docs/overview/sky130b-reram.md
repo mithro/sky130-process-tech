@@ -619,13 +619,16 @@ Status and expiry are estimates from public records and are not legal advice.
 * George, *Chem. Rev.* 2010 — atomic layer deposition.[^george-2010]
 * Wilk, Wallace and Anthony, *J. Appl. Phys.* 2001 — high-κ dielectrics
   and their process compatibility.[^wilk-2001]
+* Lee, Chiang and Pramanik (Intermolecular), US 9,076,523 B2 — embedded
+  bipolar ReRAM, BEOL thermal budget, inert and reactive electrodes and
+  forming as part of fabrication.[^pat-rram-intermolecular]
+
+:::{dropdown} From patents shown as in force (US 10,003,022, estimated expiry 2035-03-04; US 9,431,609, estimated expiry 2035-03-31) — open to read
 * Dang et al. (TSMC), US 9,431,609 B2 — an RRAM stack with ALD HfOx,
   capping layer, spacers and top-electrode via.[^pat-rram-oxide-tsmc]
 * Liu et al. (TSMC), US 10,003,022 B2 — a conductive etch stop and a
   three-etch, spacer-defined stack patterning.[^pat-rram-etchstop-tsmc]
-* Lee, Chiang and Pramanik (Intermolecular), US 9,076,523 B2 — embedded
-  bipolar ReRAM, BEOL thermal budget, inert and reactive electrodes and
-  forming as part of fabrication.[^pat-rram-intermolecular]
+:::
 
 ## Open questions
 

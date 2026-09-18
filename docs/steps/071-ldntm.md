@@ -230,10 +230,6 @@ Status and expiry are estimates from public records and are not legal advice.
   tunnelling-programmed cell.[^eitan-2000]
 * Seo et al. (Samsung), *IEEE JSSC* 2005 — a 130 nm embedded SONOS
   flash, for comparison of cell voltages and array design.[^pap-02]
-* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
-  embedded SONOS cell and its own implant steps.[^pat-04]
-* Koutny et al. (Cypress), US 8,093,128 — integration of the
-  charge-trap cell into a logic flow.[^pat-03]
 * Ogura et al. (IBM), *IEEE TED* 1980 — the lightly doped drain, the
   design this "LD" tip returns to.[^ogura-1980]
 * Codella and Ogura (IBM), IEDM 1985 — the halo that accompanies
@@ -248,6 +244,13 @@ Status and expiry are estimates from public records and are not legal advice.
   critical layers.[^itrs-03]
 * Levinson, *Principles of Lithography* — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
+
+:::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
+* Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
+  embedded SONOS cell and its own implant steps.[^pat-04]
+* Koutny et al. (Cypress), US 8,093,128 — integration of the
+  charge-trap cell into a logic flow.[^pat-03]
+:::
 
 ## Open questions
 

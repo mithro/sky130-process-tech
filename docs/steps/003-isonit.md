@@ -173,14 +173,17 @@ Status and expiry are estimates from public records and are not legal advice.
   surface) … underneath poly" 0.07 µm.[^pdk-03]
 * Ramkumar et al. (Cypress), US 6,969,689 — DCS/NH₃ LPCVD nitride in
   the ONO stack.[^pat-01]
-* Levy et al. (Cypress), US 2009/0179253 — LPCVD at 700–850 °C,
-  5–500 mTorr.[^pat-02]
 * Currie and Lochtefeld (AmberWave), US 6,960,781 — nitride mask
   500–2000 Å; CMP stop on nitride.[^pat-sti-amberwave]
 * van Gelder and Hauser, *J. Electrochem. Soc.* 1967 — hot phosphoric
   etch rates.[^vgh-1967]
 * Moov marketplace, Aviza / SVG / Thermco AVP-8000 listing
   (weak).[^aviza-avp]
+
+:::{dropdown} From a patent shown as in force (US 2009/0179253; estimated expiry 2027-06-17) — open to read
+* Levy et al. (Cypress), US 2009/0179253 — LPCVD at 700–850 °C,
+  5–500 mTorr.[^pat-02]
+:::
 
 ### High-level understanding
 
