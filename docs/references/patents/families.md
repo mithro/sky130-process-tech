@@ -6118,6 +6118,52 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20040214448A1/en
 
+(patent-gp32825106)=
+## US 6,963,106 B1 — Memory array with memory cells having reduced short channel effects
+
+**Title:** Memory array with memory cells having reduced short channel effects
+
+**Assignees:** original Spansion LLC; current Spansion LLC; AMD US Holdings Inc
+
+**Inventors:** Richard Fastow; Yue-Song He; Kazuhiro Mizutani; Timothy Thurgate
+
+**Dates:** priority 2003-05-03, filing 2004-05-04, grant 2005-11-08
+
+**Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US6963106B1, retrieved 2026-09-19)
+
+**Estimated expiry:** 2024-05-03 — all 16 members are shown as expired, lapsed, abandoned or ceased, or are past their estimated term; the latest estimate is that of WO2004100230A2 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
+**Google Patents family ID:** `32825106` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 6,963,106 B1 | granted patent | 2005-11-08 | Expired - Lifetime | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6963106B1) · [Google Patents](https://patents.google.com/patent/US6963106B1/en) |
+| US 6,773,990 B1 "Method for reducing short channel effects in memory cells and related structure" | granted patent | 2004-08-10 | Expired - Lifetime | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6773990B1) · [Google Patents](https://patents.google.com/patent/US6773990B1/en) |
+| WO 2004100230 A2 | international application | 2004-11-18 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2004100230A2) · [Google Patents](https://patents.google.com/patent/WO2004100230A2/en) |
+| GB 2434030 A | application | 2007-07-11 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DGB2434030A) · [Google Patents](https://patents.google.com/patent/GB2434030A/en) |
+| DE 112004000753 B4 | granted patent | 2008-06-26 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE112004000753B4) · [Google Patents](https://patents.google.com/patent/DE112004000753B4/en) |
+| TW I339437 B | granted patent | 2011-03-21 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTWI339437B) · [Google Patents](https://patents.google.com/patent/TWI339437B/en) |
+| CN 1826692 A | application | 2006-08-30 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN1826692A) · [Google Patents](https://patents.google.com/patent/CN1826692A/en) |
+| TW 200503253 A | application | 2005-01-16 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW200503253A) · [Google Patents](https://patents.google.com/patent/TW200503253A/en) |
+| KR 20070012181 A | application | 2007-01-25 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20070012181A) · [Google Patents](https://patents.google.com/patent/KR20070012181A/en) |
+| CN 100433334 C | granted patent | 2008-11-12 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN100433334C) · [Google Patents](https://patents.google.com/patent/CN100433334C/en) |
+| GB 0518595 D0 | other | 2005-10-19 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DGB0518595D0) · [Google Patents](https://patents.google.com/patent/GB0518595D0/en) |
+| WO 2004100230 A3 | international application | 2005-04-21 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2004100230A3) · [Google Patents](https://patents.google.com/patent/WO2004100230A3/en) |
+| JP 5258193 B2 | granted patent | 2013-08-07 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP5258193B2) · [Google Patents](https://patents.google.com/patent/JP5258193B2/en) |
+| GB 2434030 B | granted patent | 2008-01-09 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DGB2434030B) · [Google Patents](https://patents.google.com/patent/GB2434030B/en) |
+| DE 112004000753 T5 | translation of granted patent | 2006-07-06 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE112004000753T5) · [Google Patents](https://patents.google.com/patent/DE112004000753T5/en) |
+| JP 2006525673 A | application | 2006-11-09 | not shown | 2026-09-19 listed in the Google Patents family table of US6963106B1 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2006525673A) · [Google Patents](https://patents.google.com/patent/JP2006525673A/en) |
+
+**Relevance:**
+
+* {ref}`step-030` — *technique class*: Assignee Spansion LLC, the AMD-Fujitsu NOR-flash joint venture; no public source found by this search ties Spansion to the Cypress/SkyWater fab lineage (unlike Cypress, SkyWater and Infineon Technologies LLC), so this is recorded as general prior art, not as a same-lineage-assignee family. The patent describes a class of technique for reducing short-channel effects in a memory array's well/channel engineering, and it is not evidence of SKY130 practice or of any lineage connection.
+
+**Discovery:** assignee-search — Google Patents search, query (memory array reduced short channel effects, wells module), retrieved 2026-09-19; named by the round-1 review, which described it as "Spansion (the Cypress/AMD flash joint venture)"; this addition checked that description independently and did not find a public source establishing a Spansion/Cypress-fab-lineage tie, so the relation is recorded as technique-class rather than same-lineage-assignee.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US6963106B1/en
+
 (patent-gp32851038)=
 ## US 7,078,310 B1 — Method for fabricating a high density composite MIM capacitor with flexible routing in semiconductor dies
 
@@ -6341,6 +6387,39 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7055532B2/en
 
+(patent-gp34964103)=
+## US 7,105,413 B2 — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies
+
+**Title:** Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies
+
+**Assignees:** original Cypress Semiconductor Corp; current Monterey Research LLC
+
+**Inventors:** Jeong-Yeop Nahm; Helmut Puchner; Oliver Pohland; Yangzhong Xu
+
+**Dates:** priority 2004-03-26, filing 2005-03-01, grant 2006-09-12
+
+**Legal status (representative):** Expired - Lifetime (Google Patents (IFI Claims) status of US7105413B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2025-03-26 — all 3 members are shown as expired, lapsed, abandoned or ceased, or are past their estimated term; the latest estimate is that of WO2005104209A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term))
+
+**Google Patents family ID:** `34964103` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 7,105,413 B2 | granted patent | 2006-09-12 | Expired - Lifetime | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7105413B2) · [Google Patents](https://patents.google.com/patent/US7105413B2/en) |
+| WO 2005104209 A1 | international application | 2005-11-03 | not shown | 2026-09-19 listed in the Google Patents family table of US7105413B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2005104209A1) · [Google Patents](https://patents.google.com/patent/WO2005104209A1/en) |
+| US 2005/0215024 A1 | application | 2005-09-29 | Expired - Lifetime | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20050215024A1) · [Google Patents](https://patents.google.com/patent/US20050215024A1/en) |
+
+**Relevance:**
+
+* {ref}`step-030` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming a graded ("super-steep") diffusion region profile in a MOS device, a wells/threshold-implant technique, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (wells / threshold implant, diffusion profile), retrieved 2026-09-19; named by the round-1 review as evidence that the wells module had not been searched.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US7105413B2/en
+
 (patent-gp35540402)=
 ## US 2006/0006461 A1 — Drain extended MOS transistors and methods for making the same
 
@@ -6466,6 +6545,37 @@ families and members are counted.
 * Round-1 review finding M10: the round-1 review re-fetched CN101053063A on 2026-09-18 and reports its live status as Expired - Fee Related (expiry 2025-09-01), not the "Granted" recorded here from the 2026-09-14 fetch. Checked the builder scripts used to produce this dataset (not published) for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7449416B2/en
+
+(patent-gp48952138)=
+## US 8,513,753 B1 — Photodiode having a buried well region
+
+**Title:** Photodiode having a buried well region
+
+**Assignees:** original Cypress Semiconductor Corp; current Nvidia Corp
+
+**Inventors:** Fredrick B. Jenne
+
+**Dates:** priority 2004-09-14, filing 2005-04-01, grant 2013-08-20
+
+**Legal status (representative):** Expired - Fee Related (Google Patents (IFI Claims) status of US8513753B1, retrieved 2026-09-19)
+
+**Estimated expiry:** 2027-01-30 — all 1 members are shown as expired, lapsed, abandoned or ceased, or are past their estimated term; the latest estimate is that of US8513753B1 (status shown: Expired - Fee Related; Google Patents 'Adjusted expiration' (IFI Claims estimate, includes term adjustment))
+
+**Google Patents family ID:** `48952138` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 8,513,753 B1 | granted patent | 2013-08-20 | Expired - Fee Related | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8513753B1) · [Google Patents](https://patents.google.com/patent/US8513753B1/en) |
+
+**Relevance:**
+
+* {ref}`step-030` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a photodiode with a buried well region, a wells-module structure, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (buried well), retrieved 2026-09-19; named by the round-1 review.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US8513753B1/en
 
 :::{dropdown} US 7,705,268 B2 — shown as in force; estimated expiry 2026-12-17
 :name: patent-gp36337293
@@ -6760,6 +6870,45 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9583501B1/en
 :::
 
+:::{dropdown} US 10,699,901 B2 — shown as in force; estimated expiry 2032-07-01
+:name: patent-gp49580623
+
+**Title:** SONOS ONO stack scaling
+
+**Assignees:** original Longitude Flash Memory Solutions Ltd; current Longitude Flash Memory Solutions Ltd
+
+**Inventors:** Frederick B. Jenne; Sagy Charel Levy; Krishnaswamy Ramkumar
+
+**Dates:** priority 2007-05-25, filing 2018-05-24, grant 2020-06-30
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US10699901B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2032-07-01 — the latest recorded or estimated term among all members belongs to US20230074163A1 (estimated upper bound: earliest family filing date + 20 years), running to 2032-07-01
+
+**Google Patents family ID:** `49580623` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 10,699,901 B2 | granted patent | 2020-06-30 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10699901B2) · [Google Patents](https://patents.google.com/patent/US10699901B2/en) |
+| US 9,299,568 B2 | granted patent | 2016-03-29 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9299568B2) · [Google Patents](https://patents.google.com/patent/US9299568B2/en) |
+| US 9,997,641 B2 | granted patent | 2018-06-12 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9997641B2) · [Google Patents](https://patents.google.com/patent/US9997641B2/en) |
+| US 2021/0104402 A1 "Sonos ono stack scaling" | application | 2021-04-08 | Abandoned | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210104402A1) · [Google Patents](https://patents.google.com/patent/US20210104402A1/en) |
+| US 2023/0074163 A1 "Sonos ono stack scaling" | application | 2023-03-09 | Pending | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20230074163A1) · [Google Patents](https://patents.google.com/patent/US20230074163A1/en) |
+| US 2018/0351003 A1 "Sonos ono stack scaling" | application | 2018-12-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180351003A1) · [Google Patents](https://patents.google.com/patent/US20180351003A1/en) |
+| US 2013/0307052 A1 "Sonos ono stack scaling" | application | 2013-11-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130307052A1) · [Google Patents](https://patents.google.com/patent/US20130307052A1/en) |
+| US 2016/0300959 A1 "Sonos ono stack scaling" | application | 2016-10-13 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160300959A1) · [Google Patents](https://patents.google.com/patent/US20160300959A1/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee shown as Longitude Flash Memory Solutions Ltd on this publication's own record; a sibling member of this same family, US20180351003A1, shows Cypress Semiconductor Corp as its original assignee (both filed 2018-05-24, same priority 2007-05-25), and the existing dataset's GP40071593 entry already documents Longitude Flash Memory Solutions Ltd as the current assignee of the same 2007 Cypress SONOS ONO estate; SkyWater's Form S-1 (SEC-01) names Cypress Semiconductor Corporation as the company that owned and operated the fab before SkyWater. The patent concerns SONOS ONO stack scaling, the same subject as GP40071593, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** continuation-search — Google Patents record page for US10699901B2, retrieved 2026-09-19: the granted continuation of exactly the estate this index holds as GP40071593 (same title "SONOS ONO stack scaling", same Jenne/Levy/Ramkumar inventor team, and it cites CN101517714A which is a GP40071593 member) that Google Patents places in a different family (GP49580623), the design doc's own worked example of the continuation/divisional blind spot. Found by checking GP40071593's own later continuations rather than by family/citation-table traversal.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US10699901B2/en
+:::
+
 :::{dropdown} US 2009/0179253 A1 — shown as in force; estimated expiry 2027-06-17
 :name: patent-gp40849883
 
@@ -6799,6 +6948,50 @@ families and members are counted.
 **Discovery:** cited-in-docs, assignee-search, citing-seed — Cited on docs pages; inventory PAT-02. Also reached through member US9355849B1: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01 (retrieved 2026-09-14); cites US20090179253A1, US6136654A, US8093128B2 (Google Patents citation tables).
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20090179253A1/en
+:::
+
+:::{dropdown} US 2018/0366563 A1 — shown as in force; estimated expiry 2032-03-31
+:name: patent-gp48743295
+
+**Title:** Oxide-nitride-oxide stack having multiple oxynitride layers
+
+**Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
+**Inventors:** Sagy Levy; Krishnaswamy Ramkumar; Fredrick Jenne; Sam Geha
+
+**Dates:** priority 2007-05-25, filing 2018-05-30
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US20180366563A1, retrieved 2026-09-19)
+
+**Estimated expiry:** 2032-03-31 — the latest recorded or estimated term among all members belongs to US20180366563A1 (estimated upper bound: earliest family filing date + 20 years), running to 2032-03-31
+
+**Google Patents family ID:** `48743295` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 2018/0366563 A1 | application | 2018-12-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366563A1) · [Google Patents](https://patents.google.com/patent/US20180366563A1/en) |
+| US 9,449,831 B2 | granted patent | 2016-09-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9449831B2) · [Google Patents](https://patents.google.com/patent/US9449831B2/en) |
+| US 10,374,067 B2 | granted patent | 2019-08-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10374067B2) · [Google Patents](https://patents.google.com/patent/US10374067B2/en) |
+| US 10,903,342 B2 | granted patent | 2021-01-26 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10903342B2) · [Google Patents](https://patents.google.com/patent/US10903342B2/en) |
+| US 10,896,973 B2 | granted patent | 2021-01-19 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10896973B2) · [Google Patents](https://patents.google.com/patent/US10896973B2/en) |
+| US 11,222,965 B2 | granted patent | 2022-01-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11222965B2) · [Google Patents](https://patents.google.com/patent/US11222965B2/en) |
+| US 11,784,243 B2 | granted patent | 2023-10-10 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11784243B2) · [Google Patents](https://patents.google.com/patent/US11784243B2/en) |
+| US 2024/0234550 A1 "Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers" | application | 2024-07-11 | Abandoned | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240234550A1) · [Google Patents](https://patents.google.com/patent/US20240234550A1/en) |
+| US 2022/0093773 A1 "Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers" | application | 2022-03-24 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220093773A1) · [Google Patents](https://patents.google.com/patent/US20220093773A1/en) |
+| US 2020/0144399 A1 "Oxide-Nitride-Oxide Stack Having Multiple Oxynitride Layers" | application | 2020-05-07 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200144399A1) · [Google Patents](https://patents.google.com/patent/US20200144399A1/en) |
+| US 2018/0366564 A1 | application | 2018-12-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366564A1) · [Google Patents](https://patents.google.com/patent/US20180366564A1/en) |
+| US 2013/0175504 A1 | application | 2013-07-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175504A1) · [Google Patents](https://patents.google.com/patent/US20130175504A1/en) |
+| US 2016/0308033 A1 | application | 2016-10-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160308033A1) · [Google Patents](https://patents.google.com/patent/US20160308033A1/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns an oxide-nitride-oxide stack with multiple oxynitride layers, part of the same 2007 Cypress ONO estate as GP44760304 and GP40071593, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** continuation-search — Google Patents record page for US20180366563A1, retrieved 2026-09-19: the round-1 review's own words, "late continuations of the two most heavily cited families in this index (GP44760304, GP40071593) that Google groups separately"; found by an estate-targeted continuation search off those two seeds' later filings.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US20180366563A1/en
 :::
 
 :::{dropdown} US 7,670,963 B2 — shown as in force; estimated expiry 2028-05-25
@@ -7116,6 +7309,59 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8940645B2/en
 :::
 
+:::{dropdown} US 9,929,240 B2 — shown as in force; estimated expiry 2032-07-01
+:name: patent-gp49580624
+
+**Title:** Memory transistor with multiple charge storing layers and a high work function gate electrode
+
+**Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
+**Inventors:** Igor Polishchuk; Sagy Charel Levy; Krishnaswamy Ramkumar
+
+**Dates:** priority 2007-05-25, filing 2016-10-26, grant 2018-03-27
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US9929240B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2032-07-01 — the latest recorded or estimated term among all members belongs to US20240332385A1 (estimated upper bound: earliest family filing date + 20 years), running to 2032-07-01
+
+**Google Patents family ID:** `49580624` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 9,929,240 B2 | granted patent | 2018-03-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9929240B2) · [Google Patents](https://patents.google.com/patent/US9929240B2/en) |
+| US 8,633,537 B2 | granted patent | 2014-01-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8633537B2) · [Google Patents](https://patents.google.com/patent/US8633537B2/en) |
+| US 9,093,318 B2 | granted patent | 2015-07-28 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9093318B2) · [Google Patents](https://patents.google.com/patent/US9093318B2/en) |
+| US 9,502,543 B1 "Method of manufacturing for memory transistor with multiple charge storing layers and a high work function gate electrode" | granted patent | 2016-11-22 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9502543B1) · [Google Patents](https://patents.google.com/patent/US9502543B1/en) |
+| US 10,446,656 B2 | granted patent | 2019-10-15 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10446656B2) · [Google Patents](https://patents.google.com/patent/US10446656B2/en) |
+| US 10,312,336 B2 | granted patent | 2019-06-04 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10312336B2) · [Google Patents](https://patents.google.com/patent/US10312336B2/en) |
+| US 10,903,325 B2 | granted patent | 2021-01-26 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10903325B2) · [Google Patents](https://patents.google.com/patent/US10903325B2/en) |
+| US 11,056,565 B2 "Flash memory device and method" | granted patent | 2021-07-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11056565B2) · [Google Patents](https://patents.google.com/patent/US11056565B2/en) |
+| US 11,456,365 B2 | granted patent | 2022-09-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11456365B2) · [Google Patents](https://patents.google.com/patent/US11456365B2/en) |
+| US 11,721,733 B2 | granted patent | 2023-08-08 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11721733B2) · [Google Patents](https://patents.google.com/patent/US11721733B2/en) |
+| US 12,009,401 B2 | granted patent | 2024-06-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12009401B2) · [Google Patents](https://patents.google.com/patent/US12009401B2/en) |
+| US 2024/0332385 A1 | application | 2024-10-03 | Pending | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240332385A1) · [Google Patents](https://patents.google.com/patent/US20240332385A1/en) |
+| US 2013/0307053 A1 | application | 2013-11-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130307053A1) · [Google Patents](https://patents.google.com/patent/US20130307053A1/en) |
+| US 2018/0158919 A1 | application | 2018-06-07 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180158919A1) · [Google Patents](https://patents.google.com/patent/US20180158919A1/en) |
+| US 2020/0013863 A1 | application | 2020-01-09 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200013863A1) · [Google Patents](https://patents.google.com/patent/US20200013863A1/en) |
+| US 2020/0152752 A1 | application | 2020-05-14 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20200152752A1) · [Google Patents](https://patents.google.com/patent/US20200152752A1/en) |
+| US 2022/0005929 A1 | application | 2022-01-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220005929A1) · [Google Patents](https://patents.google.com/patent/US20220005929A1/en) |
+| US 2017/0186883 A1 | application | 2017-06-29 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170186883A1) · [Google Patents](https://patents.google.com/patent/US20170186883A1/en) |
+| US 2023/0023852 A1 | application | 2023-01-26 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20230023852A1) · [Google Patents](https://patents.google.com/patent/US20230023852A1/en) |
+| US 2017/0092729 A1 "Method of manufacturing for memory transistor with multiple charge storing layers and a high work function gate electrode" | application | 2017-03-30 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170092729A1) · [Google Patents](https://patents.google.com/patent/US20170092729A1/en) |
+| US 2021/0217862 A1 | application | 2021-07-15 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210217862A1) · [Google Patents](https://patents.google.com/patent/US20210217862A1/en) |
+| US 2014/0264551 A1 | application | 2014-09-18 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140264551A1) · [Google Patents](https://patents.google.com/patent/US20140264551A1/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a memory transistor with multiple charge-storing layers and a high-work-function gate electrode, part of the 2007 Cypress ONO estate, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** continuation-search — Google Patents record page for US9929240B2, retrieved 2026-09-19: a continuation of the 2007-05-25 Cypress ONO estate (the same estate as GP44760304 and GP40071593) that Google Patents places in a separate family (GP49580624); the round-1 review named its sibling US10446656B2 (also a member of this family, original assignee Longitude Flash Memory Solutions Ltd) as absent. Found by an estate-targeted continuation search, not by following an existing seed's family table.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US9929240B2/en
+:::
+
 :::{dropdown} US 7,679,384 B2 — shown as in force; estimated expiry 2028-06-06
 :name: patent-gp40095286
 
@@ -7297,6 +7543,84 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8163660B2/en
 :::
 
+:::{dropdown} CN 106653761 A — shown as in force; estimated expiry 2030-04-10
+:name: patent-gp42945510
+
+**Title:** Oxide-nitride-oxide stack comprising multi-layer oxynitride layer
+
+**Assignees:** original Cypress Semiconductor Corp; current Longitudinal Flash Storage Solutions Co., Ltd.
+
+**Inventors:** 赛格·利维; 克里希纳斯瓦米·库马尔; 弗雷德里克·詹纳
+
+**Dates:** priority 2009-04-10, filing 2009-04-10
+
+**Legal status (representative):** Pending (Google Patents (IFI Claims) status of CN106653761A, retrieved 2026-09-19)
+
+**Estimated expiry:** 2030-04-10 — the latest recorded or estimated term among all members belongs to CN106653761A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2030-04-10
+
+**Google Patents family ID:** `42945510` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| CN 106653761 A | application | 2017-05-10 | Pending | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN106653761A) · [Google Patents](https://patents.google.com/patent/CN106653761A/en) |
+| CN 101859702 B "Oxide-nitride-oxide stack with multiple oxynitride layers" | granted patent | 2016-12-07 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN101859702B) · [Google Patents](https://patents.google.com/patent/CN101859702B/en) |
+| CN 101859702 A | application | 2010-10-13 | not shown | 2026-09-19 listed in the Google Patents family table of CN106653761A (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN101859702A) · [Google Patents](https://patents.google.com/patent/CN101859702A/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns an oxide-nitride-oxide stack comprising a multi-layer oxynitride layer, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (ONO multi-layer oxynitride, Chinese filing), retrieved 2026-09-19; named by the round-1 review. Priority 2009-04-10, close to but distinct from the 2009-04-24 GP48743335/GP46465479 priority date; not confirmed as the same estate, so filed as a separate family rather than assumed a continuation.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/CN106653761A/en
+:::
+
+:::{dropdown} US 10,199,229 B2 — shown as in force; estimated expiry 2030-04-26
+:name: patent-gp46465479
+
+**Title:** SONOS stack with split nitride memory layer
+
+**Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
+**Inventors:** Fredrick B. Jenne; Krishnaswamy Ramkumar
+
+**Dates:** priority 2009-04-24, filing 2017-07-28, grant 2019-02-05
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US10199229B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2030-04-26 — the latest recorded or estimated term among all members belongs to US10199229B2 (status shown: Active; Google Patents 'Anticipated expiration' (IFI Claims estimate)), running to 2030-04-26
+
+**Google Patents family ID:** `46465479` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 10,199,229 B2 | granted patent | 2019-02-05 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10199229B2) · [Google Patents](https://patents.google.com/patent/US10199229B2/en) |
+| US 8,222,688 B1 | granted patent | 2012-07-17 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8222688B1) · [Google Patents](https://patents.google.com/patent/US8222688B1/en) |
+| US 8,710,579 B1 | granted patent | 2014-04-29 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8710579B1) · [Google Patents](https://patents.google.com/patent/US8710579B1/en) |
+| US 9,105,512 B2 | granted patent | 2015-08-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9105512B2) · [Google Patents](https://patents.google.com/patent/US9105512B2/en) |
+| US 9,793,125 B2 | granted patent | 2017-10-17 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9793125B2) · [Google Patents](https://patents.google.com/patent/US9793125B2/en) |
+| US 10,790,364 B2 | granted patent | 2020-09-29 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10790364B2) · [Google Patents](https://patents.google.com/patent/US10790364B2/en) |
+| US 11,257,912 B2 "Sonos stack with split nitride memory layer" | granted patent | 2022-02-22 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11257912B2) · [Google Patents](https://patents.google.com/patent/US11257912B2/en) |
+| US 2022/0173216 A1 "Sonos stack with split nitride memory layer" | application | 2022-06-02 | Abandoned | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220173216A1) · [Google Patents](https://patents.google.com/patent/US20220173216A1/en) |
+| US 2021/0074822 A1 "Sonos stack with split nitride memory layer" | application | 2021-03-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210074822A1) · [Google Patents](https://patents.google.com/patent/US20210074822A1/en) |
+| US 2019/0198329 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2019-06-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190198329A1) · [Google Patents](https://patents.google.com/patent/US20190198329A1/en) |
+| US 2016/0141180 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2016-05-19 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160141180A1) · [Google Patents](https://patents.google.com/patent/US20160141180A1/en) |
+| US 2014/0374813 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2014-12-25 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140374813A1) · [Google Patents](https://patents.google.com/patent/US20140374813A1/en) |
+| US 2018/0053657 A1 "SONOS Stack With Split Nitride Memory Layer" | application | 2018-02-22 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180053657A1) · [Google Patents](https://patents.google.com/patent/US20180053657A1/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns the same split-nitride SONOS ONO stack as GP48743335, continued in a later application that Google Patents groups into a separate family, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** continuation-search — Google Patents record page for US10199229B2, retrieved 2026-09-19: a continuation of the GP48743335 estate (same title, same priority 2009-04-24) that Google Patents places in a different family (GP46465479) from its parent, the exact phenomenon patent-index-design.md's "Known blind spot" describes; found by checking GP48743335's own continuations rather than by family/citation-table traversal.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US10199229B2/en
+:::
+
 :::{dropdown} US 8,071,453 B1 — shown as in force; estimated expiry 2030-05-21
 :name: patent-gp45034384
 
@@ -7328,6 +7652,42 @@ families and members are counted.
 **Discovery:** assignee-search, cited-by-seed — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01; Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation), priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8796098B1, US8940645B2 (Google Patents citation tables).
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8071453B1/en
+:::
+
+:::{dropdown} US 8,710,578 B2 — shown as in force; estimated expiry 2032-03-27
+:name: patent-gp48743335
+
+**Title:** SONOS stack with split nitride memory layer
+
+**Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
+**Inventors:** Fredrick Jenne; Krishnaswamy Ramkumar
+
+**Dates:** priority 2009-04-24, filing 2012-03-27, grant 2014-04-29
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US8710578B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2032-03-27 — the latest recorded or estimated term among all members belongs to US20130175600A1 (estimated upper bound: earliest family filing date + 20 years), running to 2032-03-27
+
+**Google Patents family ID:** `48743335` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 8,710,578 B2 | granted patent | 2014-04-29 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8710578B2) · [Google Patents](https://patents.google.com/patent/US8710578B2/en) |
+| US 2013/0175600 A1 "Sonos stack with split nitride memory layer" | application | 2013-07-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130175600A1) · [Google Patents](https://patents.google.com/patent/US20130175600A1/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a SONOS ONO stack whose charge-trapping nitride layer is split into two sub-layers, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS split nitride), retrieved 2026-09-19; named by the round-1 review, which also flagged it as the clearest terminal-disclaimer example in this index's scope (not modelled by the dataset's expiry rules).
+
+**Notes:**
+* Subject to a terminal disclaimer per the round-1 review's USPTO front-page check; the dataset's expiry rules do not model terminal disclaimers (design doc, M4's neighbouring caveat), so this family's own estimated expiry may overstate the true term.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US8710578B2/en
 :::
 
 :::{dropdown} US 8,110,414 B2 — shown as in force; estimated expiry 2030-01-02
@@ -7481,6 +7841,45 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9076523B2/en
 
+:::{dropdown} US 11,342,429 B2 — shown as in force; estimated expiry 2036-09-29
+:name: patent-gp58691400
+
+**Title:** Memory first process flow and device
+
+**Assignees:** original Cypress Semiconductor Corp; current Infineon Technologies LLC
+
+**Inventors:** Shenqing Fang; Chun Chen; Unsoon Kim; Mark T. Ramsbey; Kuo Tung CHANG; Sameer S. Haddad; James Pak
+
+**Dates:** priority 2012-12-14, filing 2020-09-30, grant 2022-05-24
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US11342429B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2036-09-29 — the latest recorded or estimated term among all members belongs to US20210091198A1 (estimated upper bound: earliest family filing date + 20 years), running to 2036-09-29
+
+**Google Patents family ID:** `58691400` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 11,342,429 B2 | granted patent | 2022-05-24 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11342429B2) · [Google Patents](https://patents.google.com/patent/US11342429B2/en) |
+| US 10,014,380 B2 | granted patent | 2018-07-03 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10014380B2) · [Google Patents](https://patents.google.com/patent/US10014380B2/en) |
+| US 10,403,731 B2 | granted patent | 2019-09-03 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10403731B2) · [Google Patents](https://patents.google.com/patent/US10403731B2/en) |
+| US 10,818,761 B2 | granted patent | 2020-10-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10818761B2) · [Google Patents](https://patents.google.com/patent/US10818761B2/en) |
+| US 2021/0091198 A1 "Memory First Process Flow and Device" | application | 2021-03-25 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210091198A1) · [Google Patents](https://patents.google.com/patent/US20210091198A1/en) |
+| US 2017/0141201 A1 "Memory First Process Flow and Device" | application | 2017-05-18 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170141201A1) · [Google Patents](https://patents.google.com/patent/US20170141201A1/en) |
+| US 2019/0386109 A1 "Memory First Process Flow and Device" | application | 2019-12-19 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190386109A1) · [Google Patents](https://patents.google.com/patent/US20190386109A1/en) |
+| US 2018/0366551 A1 "Memory First Process Flow and Device" | application | 2018-12-20 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180366551A1) · [Google Patents](https://patents.google.com/patent/US20180366551A1/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a "memory-first" process flow that forms a SONOS memory transistor before the rest of the CMOS flow, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS memory integration), retrieved 2026-09-19; found while chasing the round-1 review's named-missing-family table (tmp/review-index-patents-r1.md).
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11342429B2/en
+:::
+
 :::{dropdown} US 8,796,098 B1 — shown as in force; estimated expiry 2034-02-26
 :name: patent-gp51229009
 
@@ -7563,6 +7962,57 @@ families and members are counted.
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation), priority before 2016-01-01 (retrieved 2026-09-14).
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20190355583A1/en
+:::
+
+:::{dropdown} US 9,911,747 B2 — shown as in force; estimated expiry 2034-09-27
+:name: patent-gp51845734
+
+**Title:** Integration of a memory transistor into high-k, metal gate CMOS process flow
+
+**Assignees:** original Cypress Semiconductor Corp; current Longitude Flash Memory Solutions Ltd
+
+**Inventors:** Krishnaswamy Ramkumar
+
+**Dates:** priority 2013-09-27, filing 2017-03-15, grant 2018-03-06
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US9911747B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2034-09-27 — the latest recorded or estimated term among all members belongs to US20180166452A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2034-09-27
+
+**Google Patents family ID:** `51845734` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 9,911,747 B2 | granted patent | 2018-03-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9911747B2) · [Google Patents](https://patents.google.com/patent/US9911747B2/en) |
+| US 8,883,624 B1 "Integration of a memory transistor into high-K, metal gate CMOS process flow" | granted patent | 2014-11-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8883624B1) · [Google Patents](https://patents.google.com/patent/US8883624B1/en) |
+| US 9,911,746 B1 | granted patent | 2018-03-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9911746B1) · [Google Patents](https://patents.google.com/patent/US9911746B1/en) |
+| US 9,721,962 B1 | granted patent | 2017-08-01 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9721962B1) · [Google Patents](https://patents.google.com/patent/US9721962B1/en) |
+| US 10,784,277 B2 "Integration of a memory transistor into High-k, metal gate CMOS process flow" | granted patent | 2020-09-22 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10784277B2) · [Google Patents](https://patents.google.com/patent/US10784277B2/en) |
+| US 2018/0166452 A1 "Integration of a memory transistor into high-k, metal gate cmos process flow" | application | 2018-06-14 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180166452A1) · [Google Patents](https://patents.google.com/patent/US20180166452A1/en) |
+| JP 2019204964 A | application | 2019-11-28 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2019204964A) · [Google Patents](https://patents.google.com/patent/JP2019204964A/en) |
+| CN 105340068 B | granted patent | 2018-03-27 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN105340068B) · [Google Patents](https://patents.google.com/patent/CN105340068B/en) |
+| WO 2015047701 A1 | international application | 2015-04-02 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015047701A1) · [Google Patents](https://patents.google.com/patent/WO2015047701A1/en) |
+| TW 201513311 A | application | 2015-04-01 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW201513311A) · [Google Patents](https://patents.google.com/patent/TW201513311A/en) |
+| KR 20160064041 A | application | 2016-06-07 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20160064041A) · [Google Patents](https://patents.google.com/patent/KR20160064041A/en) |
+| US 2017/0278853 A1 "Integration of a memory transistor into high-k, metal gate cmos process flow" | application | 2017-09-28 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170278853A1) · [Google Patents](https://patents.google.com/patent/US20170278853A1/en) |
+| TW 201843812 A | application | 2018-12-16 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW201843812A) · [Google Patents](https://patents.google.com/patent/TW201843812A/en) |
+| TW I697100 B | granted patent | 2020-06-21 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTWI697100B) · [Google Patents](https://patents.google.com/patent/TWI697100B/en) |
+| CN 105340068 A | application | 2016-02-17 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN105340068A) · [Google Patents](https://patents.google.com/patent/CN105340068A/en) |
+| JP 6562518 B2 | granted patent | 2019-08-21 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP6562518B2) · [Google Patents](https://patents.google.com/patent/JP6562518B2/en) |
+| JP 2016536807 A | application | 2016-11-24 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2016536807A) · [Google Patents](https://patents.google.com/patent/JP2016536807A/en) |
+| CN 108493101 B | granted patent | 2022-11-18 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN108493101B) · [Google Patents](https://patents.google.com/patent/CN108493101B/en) |
+| CN 108493101 A | application | 2018-09-04 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN108493101A) · [Google Patents](https://patents.google.com/patent/CN108493101A/en) |
+| TW I637486 B | granted patent | 2018-10-01 | not shown | 2026-09-19 listed in the Google Patents family table of US9911747B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTWI637486B) · [Google Patents](https://patents.google.com/patent/TWI637486B/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns integrating a SONOS charge-trap memory transistor into a high-k, metal-gate CMOS process flow, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS high-k metal gate integration), retrieved 2026-09-19; named by the round-1 review.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US9911747B2/en
 :::
 
 :::{dropdown} US 10,002,878 B2 — shown as in force; estimated expiry 2034-12-12
@@ -7686,6 +8136,52 @@ families and members are counted.
 **Discovery:** citing-seed — cites US8093128B2, US8796098B1 (Google Patents citation tables).
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8916432B1/en
+:::
+
+:::{dropdown} TW I640082 B — shown as in force; estimated expiry 2035-02-06
+:name: patent-gp52707807
+
+**Title:** Method of fabricating a charge trapping gate stack using a complementary MOS fabrication process
+
+**Assignees:** original 美商賽普拉斯半導體公司
+
+**Inventors:** 克里希納斯瓦米 庫馬爾; 謝慧美
+
+**Dates:** priority 2014-02-06, filing 2015-01-06, grant 2018-11-01
+
+**Legal status (representative):** None (Google Patents (IFI Claims) status of TWI640082B, retrieved 2026-09-19)
+
+**Estimated expiry:** 2035-02-06 — the latest recorded or estimated term among all members belongs to TWI640082B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2035-02-06
+
+**Google Patents family ID:** `52707807` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| TW I640082 B | granted patent | 2018-11-01 | not shown | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTWI640082B) · [Google Patents](https://patents.google.com/patent/TWI640082B/en) |
+| US 8,993,457 B1 "Method of fabricating a charge-trapping gate stack using a CMOS process flow" | granted patent | 2015-03-31 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8993457B1) · [Google Patents](https://patents.google.com/patent/US8993457B1/en) |
+| DE 112015000701 T5 | translation of granted patent | 2016-10-20 | not shown | 2026-09-19 listed in the Google Patents family table of TWI640082B (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE112015000701T5) · [Google Patents](https://patents.google.com/patent/DE112015000701T5/en) |
+| US 9,496,144 B2 "Method of fabricating a charge-trapping gate stack using a CMOS process flow" | granted patent | 2016-11-15 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9496144B2) · [Google Patents](https://patents.google.com/patent/US9496144B2/en) |
+| TW 201533890 A | application | 2015-09-01 | not shown | 2026-09-19 listed in the Google Patents family table of TWI640082B (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW201533890A) · [Google Patents](https://patents.google.com/patent/TW201533890A/en) |
+| KR 101947363 B1 | granted patent | 2019-02-12 | not shown | 2026-09-19 listed in the Google Patents family table of TWI640082B (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR101947363B1) · [Google Patents](https://patents.google.com/patent/KR101947363B1/en) |
+| WO 2015119893 A2 | international application | 2015-08-13 | not shown | 2026-09-19 listed in the Google Patents family table of TWI640082B (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015119893A2) · [Google Patents](https://patents.google.com/patent/WO2015119893A2/en) |
+| US 9,911,613 B2 "Method of fabricating a charge-trapping gate stack using a CMOS process flow" | granted patent | 2018-03-06 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9911613B2) · [Google Patents](https://patents.google.com/patent/US9911613B2/en) |
+| KR 20160141705 A | application | 2016-12-09 | not shown | 2026-09-19 listed in the Google Patents family table of TWI640082B (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DKR20160141705A) · [Google Patents](https://patents.google.com/patent/KR20160141705A/en) |
+| WO 2015119893 A3 | international application | 2015-11-12 | not shown | 2026-09-19 listed in the Google Patents family table of TWI640082B (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015119893A3) · [Google Patents](https://patents.google.com/patent/WO2015119893A3/en) |
+| US 2016/0005610 A1 "Method of fabricating a charge-trapping gate stack using a cmos process flow" | application | 2016-01-07 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160005610A1) · [Google Patents](https://patents.google.com/patent/US20160005610A1/en) |
+| US 2017/0084465 A1 "Method of fabricating a charge-trapping gate stack using a cmos process flow" | application | 2017-03-23 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170084465A1) · [Google Patents](https://patents.google.com/patent/US20170084465A1/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee shown in Chinese (see this family's own assignees.original field); read, not independently confirmed beyond the literal characters, as "(American company) Cypress Semiconductor Corporation"; SkyWater's Form S-1 (SEC-01) names Cypress Semiconductor Corporation as the company that owned and operated the fab before SkyWater; the patent concerns a charge-trapping gate stack fabricated with a complementary-MOS process, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (charge trapping gate stack, Taiwan filing), retrieved 2026-09-19; named by the round-1 review as a non-US member of a family absent from the index.
+
+**Notes:**
+* The original-assignee text is shown only in Chinese on Google Patents; read here as Cypress Semiconductor Corporation but not independently confirmed against a second source (data.epo.org does not carry TW-only documents).
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/TWI640082B/en
 :::
 
 :::{dropdown} US 10,003,022 B2 — shown as in force; estimated expiry 2035-03-04
@@ -7938,6 +8434,55 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10062573B1/en
 :::
 
+:::{dropdown} US 11,690,227 B2 — shown as in force; estimated expiry 2038-07-19
+:name: patent-gp65016688
+
+**Title:** Method of forming high-voltage transistor with thin gate poly
+
+**Assignees:** original Cypress Semiconductor Corp; current Cypress Semiconductor Corp
+
+**Inventors:** Chun Chen; James Pak; Unsoon Kim; Inkuk Kang; Sung-taeg Kang; Kuo Tung CHANG
+
+**Dates:** priority 2017-07-19, filing 2021-05-18, grant 2023-06-27
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US11690227B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2038-07-19 — the latest recorded or estimated term among all members belongs to TW201919207A (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2038-07-19
+
+**Google Patents family ID:** `65016688` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 11,690,227 B2 | granted patent | 2023-06-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11690227B2) · [Google Patents](https://patents.google.com/patent/US11690227B2/en) |
+| US 10,242,996 B2 | granted patent | 2019-03-26 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10242996B2) · [Google Patents](https://patents.google.com/patent/US10242996B2/en) |
+| US 2019/0304990 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2019-10-03 | Abandoned | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190304990A1) · [Google Patents](https://patents.google.com/patent/US20190304990A1/en) |
+| US 12,029,041 B2 | granted patent | 2024-07-02 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12029041B2) · [Google Patents](https://patents.google.com/patent/US12029041B2/en) |
+| TW 201919207 A | application | 2019-05-16 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW201919207A) · [Google Patents](https://patents.google.com/patent/TW201919207A/en) |
+| CN 110832639 B | granted patent | 2024-01-09 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN110832639B) · [Google Patents](https://patents.google.com/patent/CN110832639B/en) |
+| CN 117750773 B | granted patent | 2025-07-11 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN117750773B) · [Google Patents](https://patents.google.com/patent/CN117750773B/en) |
+| JP 2020528212 A | application | 2020-09-17 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP2020528212A) · [Google Patents](https://patents.google.com/patent/JP2020528212A/en) |
+| US 2019/0027487 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2019-01-24 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190027487A1) · [Google Patents](https://patents.google.com/patent/US20190027487A1/en) |
+| TW I712160 B | granted patent | 2020-12-01 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTWI712160B) · [Google Patents](https://patents.google.com/patent/TWI712160B/en) |
+| CN 117750773 A | application | 2024-03-22 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN117750773A) · [Google Patents](https://patents.google.com/patent/CN117750773A/en) |
+| US 2021/0296343 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2021-09-23 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210296343A1) · [Google Patents](https://patents.google.com/patent/US20210296343A1/en) |
+| DE 112018003712 T5 | translation of granted patent | 2020-04-09 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE112018003712T5) · [Google Patents](https://patents.google.com/patent/DE112018003712T5/en) |
+| WO 2019018194 A1 | international application | 2019-01-24 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2019018194A1) · [Google Patents](https://patents.google.com/patent/WO2019018194A1/en) |
+| CN 110832639 A | application | 2020-02-21 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN110832639A) · [Google Patents](https://patents.google.com/patent/CN110832639A/en) |
+| TW 202121663 A | application | 2021-06-01 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DTW202121663A) · [Google Patents](https://patents.google.com/patent/TW202121663A/en) |
+| US 2024/0008279 A1 "Method of Forming High-Voltage Transistor with Thin Gate Poly" | application | 2024-01-04 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20240008279A1) · [Google Patents](https://patents.google.com/patent/US20240008279A1/en) |
+| JP 7160849 B2 | granted patent | 2022-10-25 | not shown | 2026-09-19 listed in the Google Patents family table of US11690227B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJP7160849B2) · [Google Patents](https://patents.google.com/patent/JP7160849B2/en) |
+
+**Relevance:**
+
+* {ref}`step-048` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming a high-voltage transistor with a thinner gate polysilicon layer than the rest of the CMOS flow, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (high-voltage poly gate), retrieved 2026-09-19; named by the round-1 review (tmp/review-index-patents-r1.md).
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11690227B2/en
+:::
+
 :::{dropdown} WO 2020249699 A1 — shown as in force; estimated expiry 2040-11-15
 :name: patent-gp68072713
 
@@ -8050,6 +8595,56 @@ families and members are counted.
 * Round-1 review finding M5: the round-1 review re-fetched EP4062463A1 on 2026-09-18 (the same day as this dataset's own fetch) and reports it live as "Active" with an anticipated expiration of 2040-11-17, a member-level expiry event this dataset does not record (the member is recorded here only with a bare "Granted"/status, no expiry.date). This changes nothing about the family (already shown in force and collapsed), but the member's own record should be re-fetched to pick up its expiry event at the next refresh; not done here because Google Patents is unreachable from the environment this correction was made in.
 
 **Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/EP4062463A1/en
+:::
+
+:::{dropdown} US 11,810,616 B2 — shown as in force; estimated expiry 2040-11-26
+:name: patent-gp75974473
+
+**Title:** Silicon-oxide-nitride-oxide-silicon multi-level non-volatile memory device and methods of fabrication thereof
+
+**Assignees:** original Infineon Technologies LLC; current Cypress Semiconductor Corp; Infineon Technologies LLC
+
+**Inventors:** Krishnaswamy Ramkumar; Venkatraman Prabhakar; Vineet Agrawal; Long Hinh; Santanu Kumar Samanta; Ravindra Kapre
+
+**Dates:** priority 2019-11-26, filing 2022-05-19, grant 2023-11-07
+
+**Legal status (representative):** Active (Google Patents (IFI Claims) status of US11810616B2, retrieved 2026-09-19)
+
+**Estimated expiry:** 2040-11-26 — the latest recorded or estimated term among all members belongs to CN114747010B (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2040-11-26
+
+**Google Patents family ID:** `75974473` (family section of the representative's own record page, linked below)
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 11,810,616 B2 | granted patent | 2023-11-07 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11810616B2) · [Google Patents](https://patents.google.com/patent/US11810616B2/en) |
+| US 11,355,185 B2 | granted patent | 2022-06-07 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11355185B2) · [Google Patents](https://patents.google.com/patent/US11355185B2/en) |
+| US 11,017,851 B1 "Silicon-oxide-nitride-oxide-silicon based multi level non-volatile memory device and methods of operation thereof" | granted patent | 2021-05-25 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11017851B1) · [Google Patents](https://patents.google.com/patent/US11017851B1/en) |
+| US 11,367,481 B2 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | granted patent | 2022-06-21 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS11367481B2) · [Google Patents](https://patents.google.com/patent/US11367481B2/en) |
+| US 12,183,395 B2 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | granted patent | 2024-12-31 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12183395B2) · [Google Patents](https://patents.google.com/patent/US12183395B2/en) |
+| CN 114747010 B | granted patent | 2023-04-04 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN114747010B) · [Google Patents](https://patents.google.com/patent/CN114747010B/en) |
+| US 2021/0158868 A1 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | application | 2021-05-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210158868A1) · [Google Patents](https://patents.google.com/patent/US20210158868A1/en) |
+| US 2021/0159346 A1 | application | 2021-05-27 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210159346A1) · [Google Patents](https://patents.google.com/patent/US20210159346A1/en) |
+| CN 116129957 B | granted patent | 2024-04-05 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN116129957B) · [Google Patents](https://patents.google.com/patent/CN116129957B/en) |
+| US 2022/0284951 A1 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | application | 2022-09-08 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220284951A1) · [Google Patents](https://patents.google.com/patent/US20220284951A1/en) |
+| CN 114747010 A | application | 2022-07-12 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN114747010A) · [Google Patents](https://patents.google.com/patent/CN114747010A/en) |
+| CN 116129957 A | application | 2023-05-16 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN116129957A) · [Google Patents](https://patents.google.com/patent/CN116129957A/en) |
+| CN 114730603 A | application | 2022-07-08 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DCN114730603A) · [Google Patents](https://patents.google.com/patent/CN114730603A/en) |
+| US 2021/0350850 A1 "Silicon-oxide-nitride-oxide-silicon based multi-level non-volatile memory device and methods of operation thereof" | application | 2021-11-11 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20210350850A1) · [Google Patents](https://patents.google.com/patent/US20210350850A1/en) |
+| US 2022/0359006 A1 | application | 2022-11-10 | Active | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20220359006A1) · [Google Patents](https://patents.google.com/patent/US20220359006A1/en) |
+| DE 112020005820 T5 | translation of granted patent | 2022-09-08 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE112020005820T5) · [Google Patents](https://patents.google.com/patent/DE112020005820T5/en) |
+| DE 112020005797 T5 | translation of granted patent | 2022-10-06 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DDE112020005797T5) · [Google Patents](https://patents.google.com/patent/DE112020005797T5/en) |
+| WO 2021108339 A1 | international application | 2021-06-03 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2021108339A1) · [Google Patents](https://patents.google.com/patent/WO2021108339A1/en) |
+| WO 2021108354 A1 | international application | 2021-06-03 | not shown | 2026-09-19 listed in the Google Patents family table of US11810616B2 (record page not fetched) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DWO2021108354A1) · [Google Patents](https://patents.google.com/patent/WO2021108354A1/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Infineon Technologies LLC; SkyWater's Form S-1 (SEC-01) refers to "Cypress (now Infineon)", the company that owned and operated the fab before SkyWater; the patent concerns a multi-level SONOS (silicon-oxide-nitride-oxide-silicon) non-volatile memory device storing more than one bit per cell, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Google Patents search, assignee Infineon Technologies, query (SONOS multi-level memory), retrieved 2026-09-19; named by the round-1 review. Same Ramkumar-led inventor team already seen on GP40072804.
+
+**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11810616B2/en
 :::
 
 :::{dropdown} US 12,232,324 B2 — shown as in force; estimated expiry 2043-09-27

@@ -180,15 +180,18 @@ first, and then by status.
 * {ref}`US 6,960,781 B2 <patent-gp32990685>` — Shallow trench isolation process (2003-03-07)
 * {ref}`US 7,605,041 B2 <patent-gp33193196>` — Semiconductor device and its manufacture method (2003-04-10)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
+* {ref}`US 6,963,106 B1 <patent-gp32825106>` — Memory array with memory cells having reduced short channel effects (2003-05-03)
 * {ref}`US 7,078,310 B1 <patent-gp32851038>` — Method for fabricating a high density composite MIM capacitor with flexible routing in semiconductor dies (2003-05-28)
 * {ref}`US 7,514,373 B2 <patent-gp33457548>` — Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency energy (2003-05-28)
 * {ref}`US 7,112,507 B2 <patent-gp34591550>` — MIM capacitor structure and method of fabrication (2003-11-24)
 * {ref}`US 6,849,549 B1 <patent-gp34080863>` — Method for forming dummy structures for improved CMP and reduced capacitance (2003-12-04)
 * {ref}`US 7,317,221 B2 <patent-gp34633830>` — High density MIM capacitor structure and fabrication process (2003-12-04)
 * {ref}`US 7,055,532 B2 <patent-gp34678118>` — Method to remove fluorine residue from bond pads (2003-12-18)
+* {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
+* {ref}`US 8,513,753 B1 <patent-gp48952138>` — Photodiode having a buried well region (2004-09-14)
 * {ref}`US 7,705,268 B2 <patent-gp36337293>` — in force
 * {ref}`US 7,501,352 B2 <patent-gp37073778>` — Method and system for forming an oxynitride layer (2005-03-30)
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
@@ -196,7 +199,9 @@ first, and then by status.
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)
 * {ref}`EP 2 104 648 B1 <patent-gp39203155>` — in force
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
+* {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
+* {ref}`US 2018/0366563 A1 <patent-gp48743295>` — in force
 * {ref}`US 7,670,963 B2 <patent-gp40072821>` — in force
 * {ref}`US 8,067,284 B1 <patent-gp44994327>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
@@ -205,12 +210,16 @@ first, and then by status.
 * {ref}`US 8,643,124 B2 <patent-gp44760304>` — in force
 * {ref}`US 8,680,601 B2 <patent-gp40071592>` — in force
 * {ref}`US 8,940,645 B2 <patent-gp49581632>` — in force
+* {ref}`US 9,929,240 B2 <patent-gp49580624>` — in force
 * {ref}`US 7,679,384 B2 <patent-gp40095286>` — in force
 * {ref}`US 10,319,733 B2 <patent-gp56507299>` — in force
 * {ref}`US 7,799,670 B2 <patent-gp41115772>` — in force
 * {ref}`US 8,088,683 B2 <patent-gp41115802>` — in force
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
+* {ref}`CN 106653761 A <patent-gp42945510>` — in force
+* {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
+* {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
 
 ## 2010s
@@ -218,20 +227,25 @@ first, and then by status.
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
+* {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
+* {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
+* {ref}`TW I640082 B <patent-gp52707807>` — in force
 * {ref}`US 10,003,022 B2 <patent-gp54018263>` — in force
 * {ref}`US 9,431,609 B2 <patent-gp55302792>` — in force
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
+* {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 * {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
 * {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
+* {ref}`US 11,810,616 B2 <patent-gp75974473>` — in force
 
 ## 2020s
 
@@ -402,15 +416,18 @@ first, and then by status.
 * {ref}`US 6,960,781 B2 <patent-gp32990685>` — Shallow trench isolation process (2003-03-07)
 * {ref}`US 7,605,041 B2 <patent-gp33193196>` — Semiconductor device and its manufacture method (2003-04-10)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
+* {ref}`US 6,963,106 B1 <patent-gp32825106>` — Memory array with memory cells having reduced short channel effects (2003-05-03)
 * {ref}`US 7,078,310 B1 <patent-gp32851038>` — Method for fabricating a high density composite MIM capacitor with flexible routing in semiconductor dies (2003-05-28)
 * {ref}`US 7,514,373 B2 <patent-gp33457548>` — Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency energy (2003-05-28)
 * {ref}`US 7,112,507 B2 <patent-gp34591550>` — MIM capacitor structure and method of fabrication (2003-11-24)
 * {ref}`US 6,849,549 B1 <patent-gp34080863>` — Method for forming dummy structures for improved CMP and reduced capacitance (2003-12-04)
 * {ref}`US 7,317,221 B2 <patent-gp34633830>` — High density MIM capacitor structure and fabrication process (2003-12-04)
 * {ref}`US 7,055,532 B2 <patent-gp34678118>` — Method to remove fluorine residue from bond pads (2003-12-18)
+* {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
+* {ref}`US 8,513,753 B1 <patent-gp48952138>` — Photodiode having a buried well region (2004-09-14)
 * {ref}`US 7,501,352 B2 <patent-gp37073778>` — Method and system for forming an oxynitride layer (2005-03-30)
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
@@ -422,7 +439,9 @@ first, and then by status.
 * {ref}`US 7,705,268 B2 <patent-gp36337293>` — in force
 * {ref}`EP 2 104 648 B1 <patent-gp39203155>` — in force
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
+* {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
+* {ref}`US 2018/0366563 A1 <patent-gp48743295>` — in force
 * {ref}`US 7,670,963 B2 <patent-gp40072821>` — in force
 * {ref}`US 8,067,284 B1 <patent-gp44994327>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
@@ -431,27 +450,36 @@ first, and then by status.
 * {ref}`US 8,643,124 B2 <patent-gp44760304>` — in force
 * {ref}`US 8,680,601 B2 <patent-gp40071592>` — in force
 * {ref}`US 8,940,645 B2 <patent-gp49581632>` — in force
+* {ref}`US 9,929,240 B2 <patent-gp49580624>` — in force
 * {ref}`US 7,679,384 B2 <patent-gp40095286>` — in force
 * {ref}`US 10,319,733 B2 <patent-gp56507299>` — in force
 * {ref}`US 7,799,670 B2 <patent-gp41115772>` — in force
 * {ref}`US 8,088,683 B2 <patent-gp41115802>` — in force
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
+* {ref}`CN 106653761 A <patent-gp42945510>` — in force
+* {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
+* {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
+* {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
+* {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
+* {ref}`TW I640082 B <patent-gp52707807>` — in force
 * {ref}`US 10,003,022 B2 <patent-gp54018263>` — in force
 * {ref}`US 9,431,609 B2 <patent-gp55302792>` — in force
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
+* {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 * {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
 * {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
+* {ref}`US 11,810,616 B2 <patent-gp75974473>` — in force
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
 * {ref}`KR 20250094623 A <patent-gp90721530>` — in force
 

@@ -57,7 +57,10 @@ Steps 14–34.
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
 * {ref}`US 7,605,041 B2 <patent-gp33193196>` — Semiconductor device and its manufacture method (2003-04-10)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
+* {ref}`US 6,963,106 B1 <patent-gp32825106>` — Memory array with memory cells having reduced short channel effects (2003-05-03)
+* {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
+* {ref}`US 8,513,753 B1 <patent-gp48952138>` — Photodiode having a buried well region (2004-09-14)
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
@@ -77,7 +80,9 @@ Steps 35–42.
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
 * {ref}`US 2011/0006372 A1 <patent-gp29999977>` — Formation of standard voltage threshold and low voltage threshold mosfet devices (2002-07-08)
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
+* {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
+* {ref}`US 2018/0366563 A1 <patent-gp48743295>` — in force
 * {ref}`US 7,670,963 B2 <patent-gp40072821>` — in force
 * {ref}`US 8,067,284 B1 <patent-gp44994327>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
@@ -86,18 +91,26 @@ Steps 35–42.
 * {ref}`US 8,643,124 B2 <patent-gp44760304>` — in force
 * {ref}`US 8,680,601 B2 <patent-gp40071592>` — in force
 * {ref}`US 8,940,645 B2 <patent-gp49581632>` — in force
+* {ref}`US 9,929,240 B2 <patent-gp49580624>` — in force
 * {ref}`US 10,319,733 B2 <patent-gp56507299>` — in force
 * {ref}`US 7,799,670 B2 <patent-gp41115772>` — in force
 * {ref}`US 8,088,683 B2 <patent-gp41115802>` — in force
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
+* {ref}`CN 106653761 A <patent-gp42945510>` — in force
+* {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
+* {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
+* {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
+* {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
+* {ref}`TW I640082 B <patent-gp52707807>` — in force
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
+* {ref}`US 11,810,616 B2 <patent-gp75974473>` — in force
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
 
 ## Gate oxides
@@ -129,6 +142,7 @@ Steps 48–63.
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
+* {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 
 ## Tips and halos
 

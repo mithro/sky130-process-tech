@@ -172,6 +172,15 @@ not evidence).
 * `cited-by-seed`, `citing-seed` — in a seed record's citation tables
   (cited by a seed, or citing one), kept only where the patent concerns
   the same module.
+* `continuation-search` — a later continuation or divisional of a lineage
+  estate already in the index, found by a search targeted at that specific
+  estate (by inventor name, title phrase, or assignee + priority-date
+  window) rather than by following the seed's own family/citation tables,
+  because Google Patents routinely places such a continuation in a
+  *different* family from its parent (see "Known blind spot" below). Added
+  2026-09-19 per this section's own instruction to the agent who closes
+  it, once actually used (four `GP49580623`/`GP49580624`/`GP48743295`
+  families below).
 
 A `discovery_note` records the searches (assignee, query, date limit,
 retrieval date) and the seed records through which the family was

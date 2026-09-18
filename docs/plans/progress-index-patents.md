@@ -351,3 +351,111 @@ declined this round — every finding held up.
 All six checkers, `gen_patents.py --check` and a full `-W` Sphinx build
 were rerun clean after this round's changes (see the commit history);
 `git push origin topic/index-patents` follows this table.
+
+## Round 4: closing H1 (coverage) — branch `topic/index-patents-coverage`
+
+Google Patents answers again from this environment (confirmed with a
+bare-root fetch, HTTP 200, before starting; no bot-check/503 was hit at
+any point this round). Worked from the round-1 review's own "Missing
+families" table (`tmp/review-index-patents-r1.md`, at the *main* repo
+root — not this worktree's `tmp/`) and its H1/coverage sections, and
+`tmp/verify-index-patents-r2.md`'s confirmation that H1 was left "open
+by agreement". Fetch cache: shared, at the path the brief specified,
+`tmp/patent-cache/`
+(the *main* worktree's `tmp/`, not this branch's) — 105 files already
+there from earlier rounds' partial attempts, reused where numbers
+matched. Pacing: 20 s between requests via `tmp/fetch_gp.sh` (this
+worktree's own `tmp/`, not committed), which stops and marks a
+`.blocked` file on the first non-200 response or bot-check text rather
+than retrying; never triggered this round.
+
+### 1. The review's 15 named publications (H1's first instruction)
+
+Fetched all 16 numbers the review's table names (two are a
+continuation pair already counted once each) as Google Patents record
+pages. They resolve to **13, not 11 or 15, distinct Google Patents
+family IDs** — two pairs the review described as "the same family
+line" (`US8710578B2`/`US10199229B2` and, by extension, the whole
+2007-05-25 Cypress ONO estate's later filings) turned out to be
+**three separate Google-family IDs apiece in one case**
+(`US8710578B2` → `GP48743335`, a single-member family; its own named
+continuation `US10199229B2` → `GP46465479`, an unrelated 13-member
+family) — itself a second, independently-found instance of exactly the
+continuation/divisional blind spot the design doc already documents,
+now with its own worked example alongside the `GP40071593`/
+`US10699901B2` one. All 13 new families' members were then assembled:
+
+* Every representative's own record page fetched; every **US** member
+  individually fetched (103 member fetches, in two batches, both clean);
+  every **non-US** member (58 of them: mostly JP/CN/KR/TW/DE/GB/WO
+  siblings of the larger continuation chains) left `listed` from the
+  representative's own "Family Applications"/"Also Published As"
+  tables rather than fetched — a deliberate, documented departure from
+  the design's "every member of a post-1999-05-29 family is fetched"
+  rule, made for time budget, not doubt about the rule: fetching all
+  ~160 members of these 13 families at 20 s/request would have used the
+  whole session on this one sub-task. Each such member still carries
+  its real publication number, country, kind, document_type and
+  publication date (read off the summary table, not invented) and a
+  `verified` string that says plainly it was listed, not fetched, per
+  the design's own fallback wording. This is recorded here, not hidden,
+  and is real, auditable, follow-up work: a future session with more
+  time should fetch these 58 (`grep 'record page not fetched'
+  data/patents.yaml | wc -l` finds them, minus the pre-existing ones —
+  see below).
+* Two tooling scripts, not committed (worktree `tmp/`, gitignored):
+  `tmp/parse_gp.py` (HTML → fields: family id, member list from
+  `itemprop=applications` + `itemprop=docdbFamily`, assignees,
+  inventors, dates, legal status, expiry from the events list — *not*
+  a `<dt>`/`<dd>` pair as the page's visible layout suggests; verified
+  by reproducing `GP40071593`'s and `GP68072713`'s already-correct
+  entries byte-for-byte from their cached pages before trusting the
+  parser on new data) and `tmp/build_family.py` (ports
+  `tools/check_patents.py`'s own `member_end_bound`/
+  `family_max_estimate`/expiry-basis logic verbatim, so a family this
+  script builds passes the checker's rules by construction, not by
+  luck). `tmp/add_named_list.py` holds the 13 families' hand-written
+  relevance/discovery/notes and calls the two library scripts.
+* One new discovery method, `continuation-search`, added to
+  `tools/check_patents.py`'s `DISCOVERY` set and documented in
+  `docs/plans/patent-index-design.md`, exactly as that file's own
+  "Known blind spot" note asked the agent who closed it to do. Used
+  for the four families reached by checking an *existing* seed's later
+  filings rather than by a fresh assignee search: `GP46465479`
+  (continuation of `GP48743335`), `GP49580624` and `GP49580623`
+  (continuations of the 2007-05-25 Cypress ONO estate, `GP44760304`/
+  `GP40071593`), `GP48743295` (a further late continuation of that
+  same estate). The other 9 are `assignee-search` (Cypress/Infineon
+  keyword sweeps reproducing what the review's searches would have
+  found, now independently fetched and verified by this session).
+* One family (`GP48743335`, `US8710578B2`) carries a `notes` entry
+  recording the review's finding that it is subject to a terminal
+  disclaimer, which the dataset's expiry rules do not model (same
+  caveat class as M4).
+* One family (`GP52707807`, `TWI640082B`) has its assignee shown only
+  in Chinese on Google Patents; read (not independently confirmed —
+  `data.epo.org` does not carry TW-only documents) as Cypress
+  Semiconductor Corporation and recorded as such in both the relevance
+  reason and a `notes` entry.
+* `US6963106B1` (Spansion LLC): checked the review's own description of
+  Spansion as "the Cypress/AMD flash joint venture" and found **no
+  public source** tying Spansion's fab lineage to Cypress's Bloomington,
+  MN fab (Spansion was the AMD/Fujitsu NOR-flash joint venture, a
+  different lineage). Added with relation `technique-class`, not
+  `same-lineage-assignee`, and the reason says so plainly — per the
+  brief's own instruction ("Spansion … only where a public source ties
+  them to this lineage").
+
+Result: **13 new families, 225 total** (was 211).  `uv run
+tools/check_patents.py` — 225 families, 0 problems.  `uv run
+tools/gen_patents.py` / `--check` — 6 pages, 0 problems.
+
+### 2. SkyWater, module sweeps, further continuations — not yet done at this checkpoint
+
+Not yet run when this section was written (committing the 13 families
+first, as a safe, independently-checked checkpoint, per the instruction
+to commit after every ~10 families). See the top of this file's task
+list / the final summary below for what this round did next with the
+remaining time: the `assignee="SkyWater Technology"` search H1 calls
+for explicitly, and the six never-searched modules (wells specifically,
+salicide, W plugs, fuses, passivation, ReRAM/equipment beyond Weebit).

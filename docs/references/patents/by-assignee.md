@@ -13,7 +13,7 @@ rather than the name on the published document itself (five cases
 found by the round-1 review's cross-check against EPO data); a
 heading here is not necessarily the name printed on the patent.
 
-## Cypress Semiconductor Corp (now DSS Technology Management Inc, Hd Silicon Solutions LLC, Longitude Flash Memory Solutions Ltd, Monterey Research LLC)
+## Cypress Semiconductor Corp (now DSS Technology Management Inc, Hd Silicon Solutions LLC, Infineon Technologies LLC, Longitude Flash Memory Solutions Ltd, Longitudinal Flash Storage Solutions Co., Ltd., Monterey Research LLC, Nvidia Corp)
 
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
@@ -30,8 +30,11 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,677,213 B1 <patent-gp29778448>` — SONOS structure including a deuterated oxide-silicon interface and method for making the same (2002-03-08)
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
+* {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
+* {ref}`US 8,513,753 B1 <patent-gp48952138>` — Photodiode having a buried well region (2004-09-14)
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
+* {ref}`US 2018/0366563 A1 <patent-gp48743295>` — in force
 * {ref}`US 7,670,963 B2 <patent-gp40072821>` — in force
 * {ref}`US 8,067,284 B1 <patent-gp44994327>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
@@ -40,28 +43,36 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 8,643,124 B2 <patent-gp44760304>` — in force
 * {ref}`US 8,680,601 B2 <patent-gp40071592>` — in force
 * {ref}`US 8,940,645 B2 <patent-gp49581632>` — in force
+* {ref}`US 9,929,240 B2 <patent-gp49580624>` — in force
 * {ref}`US 10,319,733 B2 <patent-gp56507299>` — in force
 * {ref}`US 7,799,670 B2 <patent-gp41115772>` — in force
 * {ref}`US 8,088,683 B2 <patent-gp41115802>` — in force
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
+* {ref}`CN 106653761 A <patent-gp42945510>` — in force
+* {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
+* {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
+* {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
+* {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
+* {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 
 ## Infineon Technologies AG (now Polaris Innovations Ltd)
 
 * {ref}`US 6,747,230 B2 <patent-gp7697942>` — Method and device for sorting wafers (2001-08-31)
 * {ref}`US 7,112,507 B2 <patent-gp34591550>` — MIM capacitor structure and method of fabrication (2003-11-24)
 
-## Infineon Technologies LLC
+## Infineon Technologies LLC (now Cypress Semiconductor Corp)
 
+* {ref}`US 11,810,616 B2 <patent-gp75974473>` — in force
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
 
 ## Advanced Micro Devices Inc (now AMD Technologies Holdings Inc, GlobalFoundries Inc, GlobalFoundries US Inc)
@@ -279,6 +290,7 @@ heading here is not necessarily the name printed on the patent.
 
 ## Longitude Flash Memory Solutions Ltd
 
+* {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
 
 ## LSI Logic Corp (now Bell Semiconductor LLC)
@@ -394,9 +406,10 @@ heading here is not necessarily the name printed on the patent.
 
 * {ref}`US 5,800,616 A <patent-gp25536403>` — Vertical LPCVD furnace with reversible manifold collar and method of retrofitting same (1997-12-15)
 
-## Spansion LLC (now Infineon Technologies LLC, Spansion Inc)
+## Spansion LLC (now AMD US Holdings Inc, Infineon Technologies LLC, Spansion Inc)
 
 * {ref}`US 7,439,141 B2 <patent-gp26708682>` — Shallow trench isolation approach for improved STI corner rounding (2001-12-27)
+* {ref}`US 6,963,106 B1 <patent-gp32825106>` — Memory array with memory cells having reduced short channel effects (2003-05-03)
 
 ## Startec Ventures Inc (now LAir Liquide SA pour lEtude et lExploitation des Procedes Georges Claude)
 
@@ -520,3 +533,7 @@ heading here is not necessarily the name printed on the patent.
 ## Zilog Inc (now IXYS Intl Ltd)
 
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
+
+## 美商賽普拉斯半導體公司
+
+* {ref}`TW I640082 B <patent-gp52707807>` — in force
