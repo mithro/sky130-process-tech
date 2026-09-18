@@ -245,15 +245,19 @@ after-develop inspection (identical to the
 How the step pages grade the SkyWater tools for each step ("Machines
 likely used at SkyWater"), as collected on the machines index:
 
-* **"SEM/AIT/KLA/SP1/EV300/1X" (read as KLA-Tencor AIT and SP1)** — *medium:* {ref}`SMAT <step-001>`, {ref}`DNIS <step-009>`, {ref}`CMPNIT <step-012>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNM <step-035>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`BFR <step-060>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>`
+* **"SEM/AIT/KLA/SP1/EV300/1X" (read as KLA-Tencor AIT and SP1)** — *medium:* {ref}`SMAT <step-001>`, {ref}`DNIS <step-009>`, {ref}`CMPNIT <step-012>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNM <step-035>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>`
 
-The two lists differ. The grades fall on the starting-material page, the
-resist strips after implants, the tunnel mask, the backside film removal
-and the CMP steps; {ref}`CMPNIT <step-012>` grades the posting although
-its "Machines typically used" section names thickness metrology and a
-profiler rather than inspection. None of the other 36 pages in the list
-above — the depositions, etches and implants, and the mask steps other
-than {ref}`TUNM <step-035>` — cites the posting.
+The two lists differ. {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`,
+{ref}`UPRIS <step-057>` and {ref}`BFR <step-060>` no longer grade this
+posting: their step pages now read it as unretrievable (no archived
+copy exists) and no longer cite it. The remaining grades fall on the
+starting-material page, the other resist strips after implants, the
+tunnel mask and the CMP steps; {ref}`CMPNIT <step-012>` grades the
+posting although its "Machines typically used" section names
+thickness metrology and a profiler rather than inspection. None of
+the other pages in the list above — the depositions, etches and
+implants, and the mask steps other than {ref}`TUNM <step-035>` — cites
+the posting.
 
 ## Consumables and facilities
 
