@@ -59,11 +59,11 @@ left untouched.
 | 169-L2 | Low | fixed | "hidden and later grow during bonding" over-reads Hunter et al. (169:86-88) |
 | 169-L3 | Low | fixed | "in sequence" wording not precise re category page (169:47-49) |
 | 169-L4 | Medium(cap) | deferred | metal-cap sweep — Danzl annotation on 168-pdm.md:230-231 needs cap hedge; DO NOT EDIT (scope exclusion) |
-| 170-M1 | Medium | open | Maes et al. 1981 listed as a hazard; paper reports hydrogen anneal *improved* MNOS retention (170:108-112,236-237,254-255) |
-| 170-M2 | Medium | open | "below temperatures at which Al hillocks/voids grow rapidly" unsourced and contradicts category page + own text (170:129-133) |
-| 170-L1 | Low | open | deuterium 10-50x factor quoted without Kizilyalli's one-level-only caveat (170:85-89) |
-| 170-L2 | Low | open | "only anneal listed with H2" true but Iridia/Aspen2 asher H2 entries unmentioned (170:160-162) |
-| 170-L3 | Low | open | Al-Si eutectic invoked with no citation (170:132-133) — folded into 170-M2 fix |
+| 170-M1 | Medium | fixed | Maes et al. 1981 listed as a hazard; paper reports hydrogen anneal *improved* MNOS retention (170:108-112,236-237,254-255) |
+| 170-M2 | Medium | fixed | "below temperatures at which Al hillocks/voids grow rapidly" unsourced and contradicts category page + own text (170:129-133) |
+| 170-L1 | Low | fixed | deuterium 10-50x factor quoted without Kizilyalli's one-level-only caveat (170:85-89) |
+| 170-L2 | Low | fixed | "only anneal listed with H2" true but Iridia/Aspen2 asher H2 entries unmentioned (170:160-162) |
+| 170-L3 | Low | fixed | folded into 170-M2 fix |
 | 170-L4 | Low | declined | reviewer: no change required, recorded only for contrast with 164-M1 |
 | (n/a) | n/a | deferred | metal-cap sweep — 170-ally.md:57-58 "interfaces between aluminium, TiW and tungsten" unhedged; DO NOT EDIT (scope exclusion, cross-page conflict 6) |
 | 171-L1 | Low | open | truncated SONOS e-test quotation ("for both original and star cells" dropped) (171:41-42) |
