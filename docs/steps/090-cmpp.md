@@ -329,7 +329,9 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
     <https://doi.org/10.1109/IEDM.1987.191389>
 [^preston-1927]: F. W. Preston, "The theory and design of plate glass
     polishing machines", *Journal of the Society of Glass Technology*
-    **11**, 214–256 (1927).
+    **11**, 214–256 (1927). No DOI or online copy of the article
+    itself is public; library record for the volume:
+    <https://books.google.com/books/about/Journal_of_the_Society_of_Glass_Technolo.html?id=3CTyAAAAMAAJ>
 [^nanz-1995]: G. Nanz and L. E. Camilletti, "Modeling of
     chemical-mechanical polishing: a review", *IEEE Transactions on
     Semiconductor Manufacturing* **8**(4), 382–389 (1995).
