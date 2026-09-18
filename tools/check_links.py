@@ -129,6 +129,23 @@ SLOW_HOSTS = {
     "patents.google.com": 20.0,
 }
 
+# Hosts where a HEAD request gets a different (and misleading) answer than
+# a GET: verified 2026-09-19 that a HEAD to a resolved openlibrary.org book
+# page 303s to /verify_human (a bot challenge) while a GET to the very same
+# URL, same User-Agent, correctly 301s to the human-readable slug. Skip
+# HEAD entirely for these and go straight to GET.
+HEAD_UNRELIABLE_HOSTS = {
+    "openlibrary.org",
+}
+
+# A redirect landing on one of these paths is a bot challenge, not a real
+# new home for the content, no matter what HTTP status carried it there
+# (openlibrary.org's is a 200 on the challenge page itself). Extend as more
+# are found.
+CHALLENGE_PATH_MARKERS = (
+    "/verify_human",  # openlibrary.org / archive.org
+)
+
 
 def host_of(url: str) -> str:
     return urllib.parse.urlparse(url).netloc.lower()
@@ -365,6 +382,10 @@ def hosts_in_chain(url: str, chain: list[tuple[int, str]], final_url: str) -> se
     return hosts
 
 
+def is_challenge_url(u: str) -> bool:
+    return any(marker in u for marker in CHALLENGE_PATH_MARKERS)
+
+
 def classify(
     url: str,
     is_doi: bool,
@@ -378,6 +399,14 @@ def classify(
 
     if status == 0:
         return "blocked-to-scripts" if blocked else "dead"
+    # A 200 that landed on a bot-challenge page (e.g. openlibrary.org's HEAD
+    # *and* GET occasionally 303ing a perfectly good book URL to
+    # /verify_human -- verified 2026-09-19, apparently IP-request-volume
+    # triggered rather than UA-based) is not a real "it moved here"
+    # redirect: the numeric status lies, so check the actual URLs in the
+    # chain regardless of status.
+    if is_challenge_url(final_url) or any(is_challenge_url(u) for _, u in chain):
+        return "blocked-to-scripts"
     if blocked and status in (403, 401, 429, 999):
         return "blocked-to-scripts"
     if is_doi:
@@ -400,13 +429,16 @@ def check_one(token: str, limiter: RateLimiter, timeout: float) -> dict:
     is_doi = token.startswith("doi:")
     url = f"https://doi.org/{urllib.parse.quote(token[4:], safe='/:')}" if is_doi else token
 
-    status, final_url, chain, err, _ = fetch_with_retries(url, "HEAD", limiter, timeout)
-    if status == 0 or status in (403, 405, 501) or status >= 500:
-        status_g, final_g, chain_g, err_g, _ = fetch_with_retries(url, "GET", limiter, timeout)
-        if status_g != 0:
-            status, final_url, chain, err = status_g, final_g, chain_g, err_g
-        elif status == 0:
-            err = err or err_g
+    if any(host_matches(host_of(url), h) for h in HEAD_UNRELIABLE_HOSTS):
+        status, final_url, chain, err, _ = fetch_with_retries(url, "GET", limiter, timeout)
+    else:
+        status, final_url, chain, err, _ = fetch_with_retries(url, "HEAD", limiter, timeout)
+        if status == 0 or status in (403, 405, 501) or status >= 500:
+            status_g, final_g, chain_g, err_g, _ = fetch_with_retries(url, "GET", limiter, timeout)
+            if status_g != 0:
+                status, final_url, chain, err = status_g, final_g, chain_g, err_g
+            elif status == 0:
+                err = err or err_g
 
     category = classify(url, is_doi, status, final_url, chain, err)
     result = {
@@ -742,6 +774,18 @@ Some claim.[^wiki-fick][^pdk-01]
         == "blocked-to-scripts",
     )
     check("404 is dead", classify("https://a/", False, 404, "https://a/", [], None) == "dead")
+    check(
+        "a 200 landing on a bot-challenge page is blocked-to-scripts, not ok",
+        classify(
+            "https://openlibrary.org/isbn/x",
+            False,
+            200,
+            "https://openlibrary.org/verify_human?next=/books/OLxM",
+            [(302, "https://openlibrary.org/books/OLxM"), (303, "https://openlibrary.org/verify_human?next=/books/OLxM")],
+            None,
+        )
+        == "blocked-to-scripts",
+    )
     check(
         "connection failure is dead",
         classify("https://a/", False, 0, "https://a/", [], "timed out") == "dead",
