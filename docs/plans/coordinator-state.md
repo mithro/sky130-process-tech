@@ -31,14 +31,16 @@ standing rules are `agent-briefs.md`.
   context small: state lives in these files, not in the conversation.
 * Patents still in force are listed behind a collapsed block and may be
   linked from step pages, also collapsed.
+* The five-hour usage window is the tighter limit in practice: on 2026-09-18 it filled in under five hours with five or six agents running and cut one agent off in mid-work. Keep to about three agents at a time, launch nothing new once the window is above 80 %, and require agents to commit at least every 15 minutes so that a cut-off loses little. The usage endpoint allows only a few reads per hour; the ledger script reads it at most hourly.
 
 ## In flight
 
 | Branch | Agent task | Model | State |
 |---|---|---|---|
-| `topic/index-patents` | finish member records, discovery, generator, pages | Sonnet | running (2026-09-18) |
-| `topic/index-filings` | commit pending records, fill gaps, generator, pages | Sonnet | running (2026-09-18) |
-| none (read-only, `main`) | Phase 4 technical review of steps 001–013, run on both models as the second comparison; reports under `tmp/p4/` | Sonnet and Opus | running (2026-09-18) |
+| `topic/index-filings` | round 3: review findings and Cypress annual-report coverage | Sonnet | running |
+| none (read-only) | Phase 4 reviews of steps 076–088 and 089–106, reports under `tmp/p4/` | Opus | running |
+
+Phase 4 status is in `TASKLOG.md` (001–075 merged 2026-09-18).
 
 Phase 4 plan: twelve module batches (the Phase 2 groups in `TASKLOG.md`). Per batch: read-only review report, then a fixer on `topic/p4-<range>` applying it, then verification of the fixes, then merge. Reviewer brief: `tmp/prompts/p4-review.txt` (not tracked; its content is the Reviewer brief plus source re-fetching, second-source checks and distrust of any single source).
 
