@@ -22,7 +22,9 @@ metal-4 conductor, the capacitor dielectric and this plate film. The
 leave the film only where the layout draws `cap2m`, "MiM capacitor plate
 over metal 4" (GDS 97:44),[^pdk-06] and {ref}`MM4 <step-154>` /
 {ref}`MM4E <step-155>` afterwards cut the metal beneath into bottom
-plates and the rest of the metal-4 wiring. The PDK calls the top plate
+plates and the rest of the metal-4 wiring. The step list calls this
+step "Capacitor TiW deposition";[^steps-sheet] a step name is not
+evidence of a chemistry. The PDK calls the top plate
 only "a thin conductor layer on top of the dielectric" and does not name
 its material;[^pdk-07] this reference describes it as sputtered TiW
 (inference: TiW is on SkyWater's PVD film list[^skw-01] and caps the
