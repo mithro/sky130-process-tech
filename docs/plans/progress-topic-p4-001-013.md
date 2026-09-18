@@ -43,9 +43,9 @@ Status values: open / fixed / declined.
 | 004-L3 | 004-fom | fixed | verified ZeptoBars page by fetch: confirmed "likely" hedge; requoted properly |
 | 004-L4 | 004-fom | fixed | added FOMCD/FOMCDSP sentence |
 | 004-L5 | 004-fom, masks/index | fixed | masks/index.md:104 says 36 mask steps; "30-odd" -> "35 other" |
-| 005-L1 | 005-stinite | open | "originally designed for polysilicon" overstated |
-| 005-L2 | 005-stinite | open | nitride sidewall claim mis-cited to Thung |
-| 005-L3 | 005-stinite | open | optional: add page numbers/move support to papers |
+| 005-L1 | 005-stinite | fixed | verified by fetch (URL had moved; found via the footnote's own link) — "for selective etching of silicon and polysilicon", no design-intent claim; requoted |
+| 005-L2 | 005-stinite | fixed | Thung defines the aspect-ratio formula only; split the citation |
+| 005-L3 | 005-stinite | declined | reviewer's own text marks this optional ("strengthens the page") |
 | 006-L1 | 006-stie | fixed | folded into the 006-H1 rewrite (ITRS "node on node" sentence dropped, Thung's 66% figure used instead) |
 | 006-L2 | 006-stie | open | HDP-void quote clipped/one step removed |
 | 006-L3 | 006-stie, 009-dnis | fixed | quoted SkyWater's own spellings ("Gasonic PEP", "Mattson Aspen2") in both places; same commit as 009-L1 |

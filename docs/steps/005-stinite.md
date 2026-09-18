@@ -43,8 +43,10 @@ stack provides that, but it must first be opened in the field with a
 clean, vertical profile. The nitride-etch profile matters because:
 
 * the nitride sidewall becomes the upper part of the trench sidewall
-  and sets the top of the trench opening, hence the trench width and
-  the fill {term}`aspect ratio`;[^thung-2016]
+  and sets the top of the trench opening, hence the trench width; the
+  fill {term}`aspect ratio` is defined on the sum of the trench depth
+  and the nitride thickness,[^thung-2016] so both enter the HDP fill
+  window;[^txt-05]
 * any nitride *foot* or *taper* would be copied into the silicon by
   the subsequent trench etch and shift the active {term}`CD`;
 * any pad-oxide residue left in the field would micro-mask the silicon
@@ -99,8 +101,9 @@ page[^pdk-03] is comfortable for a ~200 nm stack).
   CF4, SF6, O2".[^skw-01] Strength: strong that a nitride-capable TCP
   etcher exists; **inference** for this step, the entry being the only
   one on the list that names nitride. The 9400 is a
-  transformer-coupled high-density plasma etcher originally designed
-  for polysilicon.[^snf-9400]
+  transformer-coupled high-density plasma etcher which Stanford's
+  facility describes as being "for selective etching of silicon and
+  polysilicon".[^snf-9400]
 * **AMAT DPS II (Centura).** SkyWater lists it with CF₄ and CHF₃ among
   its gases and "trench" among its applications.[^skw-01] Strength:
   strong that the tool and gases exist; **medium** for this step,
