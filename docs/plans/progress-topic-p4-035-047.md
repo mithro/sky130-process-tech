@@ -14,8 +14,8 @@ arithmetic before being fixed or declined.
 | 036-M2 | 036-tunarce.md | fixed | widened to "tens to several hundred keV", citing PTSI/DEPI |
 | 037-M1 | 037-ptsi.md | fixed | original/star cell W/L pairing stated as fact |
 | 037-M2 | 037-ptsi.md | fixed | `lvtn` block reading overstated vs step 015 |
-| 038-M1 | 038-depi.md | open | 20 V zero-Vt structure identification untraced |
-| 038-M2 | 038-depi.md | open | arsenic inference not carried into later bullets |
+| 038-M1 | 038-depi.md | fixed | 20 V zero-Vt structure identification untraced |
+| 038-M2 | 038-depi.md | fixed | arsenic inference not carried into later bullets |
 | 040-M1 | 040-ono.md, 039-tunme.md | open | 1.5-3 nm tunnel oxide misattributed to pat-04 |
 | 040-M2 | 040-ono.md | open | "thinnest oxide in the flow" asserted, not shown |
 | 041-M1 | 041-onom.md | open | ONOM-from-tunm-by-oversizing inference overstated |
@@ -37,10 +37,10 @@ arithmetic before being fixed or declined.
 | 037-L1 | 037-ptsi.md | fixed | US 5,963,801 context (n-well, "merely exemplary") |
 | 037-L2 | 037-ptsi.md | fixed | Axcelis indium cross-validation addition |
 | 037-L3 | 037-ptsi.md, 039-tunme.md, 040-ono.md | fixed | silent typo correction in PDK table (-38 -> -3.8) |
-| 038-L1 | 038-depi.md | open | nfet_05v0_nvt range 0.01 V narrow |
-| 038-L2 | 038-depi.md | open | "2 nm oxide" narrower than patent range |
-| 038-L3 | 038-depi.md | open | quotation capitalisation |
-| 038-L4 | 038-depi.md | open | dead Springer chapter page behind live DOI |
+| 038-L1 | 038-depi.md | fixed | nfet_05v0_nvt range 0.01 V narrow |
+| 038-L2 | 038-depi.md | fixed | "2 nm oxide" narrower than patent range |
+| 038-L3 | 038-depi.md | fixed | quotation capitalisation |
+| 038-L4 | 038-depi.md | fixed | dead Springer chapter page behind live DOI |
 | 039-L1 | 039-tunme.md | open | HF-last qualification vs later ONO precleans |
 | 039-L2 | 039-tunme.md | open | category-page quote splices two passages |
 | 039-L3 | 039-tunme.md | open | two numeric statements don't follow from pat-04 |
