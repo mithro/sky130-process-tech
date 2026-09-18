@@ -77,7 +77,7 @@ families and members are counted.
 | IT 1037683 B "METHOD AND SYSTEM FOR MEGASONIC CLEANING" | granted patent | 1979-11-20 | not shown | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DIT1037683B) · [Google Patents](https://patents.google.com/patent/IT1037683B/en) |
 | JP S512264 A "Butsupinno hyomenosenjosuruhoho" | application | 1976-01-09 | Pending | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DJPS512264A) · [Google Patents](https://patents.google.com/patent/JPS512264A/en) |
 | NL 7506443 A "PROCEDURE FOR CLEANING A SURFACE OF AN ARTICLE AND DEVICE FOR APPLYING THIS PROCEDURE." | application | 1975-12-02 | not shown | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DNL7506443A) · [Google Patents](https://patents.google.com/patent/NL7506443A/en) |
-| SE 7506134 L "WAY TO CLEAN A SURFACE." | translation of granted patent | 1975-12-01 | not shown | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSE7506134L) · [Google Patents](https://patents.google.com/patent/SE7506134L/en) |
+| SE 7506134 L "WAY TO CLEAN A SURFACE." | other | 1975-12-01 | not shown | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSE7506134L) · [Google Patents](https://patents.google.com/patent/SE7506134L/en) |
 | SE 418698 B "MAKE CLEANING A SURFACE WITH A FLAT ARTICLE" | granted patent | 1981-06-22 | not shown | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DSE418698B) · [Google Patents](https://patents.google.com/patent/SE418698B/en) |
 | YU 135775 A "Cleaning device" | application | 1982-05-31 | not shown | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DYU135775A) · [Google Patents](https://patents.google.com/patent/YU135775A/en) |
 | YU 40887 B "Claning device" | granted patent | 1986-08-31 | not shown | 2026-09-14 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DYU40887B) · [Google Patents](https://patents.google.com/patent/YU40887B/en) |
@@ -89,6 +89,9 @@ families and members are counted.
 **Inventory:** `PAT-MEGASONIC-RCA`
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MEGASONIC-RCA.
+
+**Notes:**
+* Round-2 review finding N3: SE7506134L is typed \`other\`, not \`translation-of-granted-patent\`. Google Patents' own publicationDescription for it is "Published abstract", filed 1975-05-29 — a Swedish national application publication, not a translation of a European patent, since it predates both the EPC's entry into force (1977) and Sweden's accession (1978). The Swedish grant from the same application, SE418698B, is a separate member of this family.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US3893869A/en
 

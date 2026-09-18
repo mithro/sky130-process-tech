@@ -293,7 +293,7 @@ families:
   - number: SE7506134L
     country: SE
     kind: L
-    document_type: translation-of-granted-patent
+    document_type: other
     publication_date: 1975-12-01
     title: WAY TO CLEAN A SURFACE.
     application_number: SE7506134A
@@ -353,6 +353,12 @@ families:
   - cited-in-docs
   discovery_note: Cited on docs pages; inventory PAT-MEGASONIC-RCA.
   verified: 2026-09-14 Google Patents record page https://patents.google.com/patent/US3893869A/en
+  notes:
+  - 'Round-2 review finding N3: SE7506134L is typed `other`, not `translation-of-granted-patent`.
+    Google Patents'' own publicationDescription for it is "Published abstract", filed 1975-05-29 —
+    a Swedish national application publication, not a translation of a European patent, since it
+    predates both the EPC''s entry into force (1977) and Sweden''s accession (1978). The Swedish
+    grant from the same application, SE418698B, is a separate member of this family.'
 - id: GP25400807
   family:
     source: Google Patents family ID
