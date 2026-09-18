@@ -66,6 +66,38 @@ Only publicly available sources are cited. See
 `docs/references/` for the bibliography and the source policy in
 `docs/plans/`.
 
+## Checkers
+
+`tools/` holds offline (and a few `--online`) checkers that enforce the
+documentation's own house style; run each with `uv run`:
+
+* `check_steps.py`, `check_machines.py`, `check_materials.py`,
+  `check_masks.py` — page-template and cross-reference checks for the
+  step, machine, material and mask pages respectively.
+* `check_refs.py` — every page's footnote citations resolve to an
+  inventory entry, are all defined and all used, and the Deep dive
+  reading list meets its minimum length (`docs/plans/citation-style.md`).
+* `check_papers.py`, `check_patents.py`, `check_filings.py` — validate
+  the `data/papers*.yaml`, `data/patents.yaml` and `data/filings.yaml`
+  datasets behind the generated indexes; `check_papers.py
+  --online`/`--links` and `check_filings.py --online` re-fetch sources
+  over the network to cross-check metadata and free-text links.
+* `check_links.py` — re-fetches every URL and DOI cited anywhere in the
+  documentation (the public-sources inventory and every page's footnote
+  definitions) and reports which are OK, permanently redirected, blocked
+  to scripted clients, or dead (with a Wayback Machine snapshot for
+  each dead one). Polite by default: a per-host rate limit, HEAD before
+  GET, retries with backoff, and a resumable on-disk cache under
+  `tmp/`. Run with `uv run tools/check_links.py`; useful flags include
+  `--only-host`/`--skip-host` and `--time-budget` for chunked runs,
+  `--max-age-days`/`--force` for cache freshness, `--list-hosts` to plan
+  a chunked run, `--report FILE` to save the Markdown report, `--strict`
+  to fail on any dead link, and `--selftest` for the offline extraction
+  unit tests. It is not part of the Read the Docs build.
+* `gen_papers.py --check`, `gen_patents.py --check`, `gen_filings.py
+  --check` — confirm the generated index pages under `docs/references/`
+  are up to date with their datasets.
+
 ## Licence
 
 Apache License 2.0 — see `LICENSE`.
