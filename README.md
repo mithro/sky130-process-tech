@@ -1,3 +1,5 @@
+> **Warning: AI in use — use at own risk.**
+
 # SKY130 Process Technology — a step-by-step manufacturing reference
 
 This project documents, step by step, how the SKY130 130 nm CMOS process
