@@ -65,7 +65,13 @@ infer, the 5 V `pfet_g5v0d10v5`. The other PMOS flavours are derived
 from it — `pfet_01v8_hvt` by the additional implants of
 {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>` under
 {ref}`HVTPM <step-022>`, and `pfet_01v8_lvt` through the `lvtn` blocking
-layer[^pdk-07][^pdk-periph] (see {ref}`LVTNM <step-014>`).
+layer[^pdk-07][^pdk-periph] (see {ref}`LVTNM <step-014>`). This is one
+reading of the `HVTPM` opening; the {ref}`HVTPM <step-022>` page sets
+out a second reading of the `chvtpm` checks and of the public render
+derivation, under which that opening instead covers low-voltage N-well
+outside `lvtn`, `PCHI`/`PNCHI` reach every standard PMOS, and they —
+not `LVTPI` — would be the baseline; which is right is not
+public.[^pdk-errors]
 
 In the published test-tile measurements the standard PMOS has a
 threshold magnitude of 1.065 V at 7/8 µm and 0.798 V at 7/0.15 µm
@@ -83,7 +89,10 @@ fab (SKY130 values are not public):
 * **Species.** If, as the gate pages infer ({ref}`P1I <step-050>`),
   SKY130 uses n⁺ poly on the PMOS, the baseline threshold implant is a
   *p-type* counter-doping (boron or BF₂) that brings a buried-channel
-  PMOS from the roughly −1.2 V that an uncompensated n⁺-gate PMOS of this oxide thickness and well doping would show (an illustrative estimate, not a published value) towards the
+  PMOS from the roughly −1.2 V that an uncompensated n⁺-gate PMOS of
+  this oxide thickness and well doping would show (our estimate from
+  the n⁺-gate work-function shift of about one band gap; not a
+  published SKY130 value)[^taur-2009] towards the
   PDK's −1.05 V long-channel value;[^pdk-07] if the gate were p⁺, an
   *n-type* species (arsenic or phosphorus) would set the threshold
   instead — the Round Rock/Micron patent uses "an implant of
@@ -187,8 +196,10 @@ fab (SKY130 values are not public):
 
 * ITRS 2001, *Front End Processes* — Table 51: channel concentration,
   retrograde channel depth.[^itrs-01]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — 50 keV phosphorus
-  channel-side implant through the N-well mask.[^pat-well-ibm]
+* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — a 50 keV
+  phosphorus low-dose implant as the shallowest member of the N-well
+  chain, with a further optional implant "to more precisely control
+  dopant levels at the surface".[^pat-well-ibm]
 * Helm and Zhou (Round Rock Research), US 2011/0006372 — arsenic first
   Vt adjust.[^pat-vt-rrr]
 * Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
@@ -228,6 +239,10 @@ fab (SKY130 values are not public):
   the absence of a P⁺ poly mask, the capped gate and the −1.05 V
   long-channel threshold; the species reading above follows from that
   inference.
+* Whether `PCHI`/`PNCHI` reach only the `hvtp` devices or every
+  low-voltage N-well outside `lvtn` — and hence whether `LVTPI` is the
+  baseline PMOS implant or an increment over it — turns on the reading
+  of the `chvtpm` checks discussed on {ref}`HVTPM <step-022>`.[^pdk-errors]
 
 <!-- footnotes -->
 
@@ -249,6 +264,10 @@ fab (SKY130 values are not public):
 [^pdk-periph]: SkyWater PDK Authors, *Periphery rules*, SkyWater SKY130
     PDK documentation.
     <https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>
+[^pdk-errors]: SkyWater PDK Authors, *Error Messages* page and
+    `errors.csv`, SkyWater SKY130 PDK documentation, retrieved
+    2026-09-14. <https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>,
+    <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/rules/errors.csv>
 [^pat-vt-rrr]: M. Helm and X. Zhou (Round Rock Research), *Formation of
     standard voltage threshold and low voltage threshold MOSFET
     devices*, US 2011/0006372 A1, published 2011-01-13 (priority
