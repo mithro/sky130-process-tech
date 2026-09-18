@@ -36,7 +36,8 @@ test tile's `cap_var_lvt` and `cap_var_hvt` structures, five sizes of
 each from one 40 × 40 µm device to 462 devices of 5 × 0.5 µm, whose
 dimensions the pad list gives.[^raw-data-testtile-pads][^raw-data-passives]
 Splitting the accumulation capacitance at 1.8 V into an area and an
-edge term gives 8.52 fF/µm² (low-Vt) and 8.40 fF/µm² (high-Vt); for a
+edge term gives 8.52 fF/µm² (low-Vt; raw-data module 3320, as the pad
+list names it) and 8.40 fF/µm² (high-Vt; raw-data module 3316); for a
 relative permittivity of 3.9 these correspond to an electrical
 thickness of about 4.06 nm and 4.11 nm (our extraction from the
 published measurements, without corrections for gate depletion, the
@@ -61,8 +62,10 @@ the *thin gate oxide* class, grown in the regime where "very thin
 oxides (less than about 25 nanometres) grow much more quickly in O₂
 than the model predicts"[^wiki-dg] and where recipes are calibrated on
 the tool rather than from {term}`Deal–Grove <Deal–Grove model>`.[^massoud-1985] It is the second
-pass of the {term}`dual-gate-oxide <dual gate oxide>` process and the most tightly controlled
-oxidation in the flow. The category page's *Nitrided oxides and ONO
+pass of the {term}`dual-gate-oxide <dual gate oxide>` process and, in a 130 nm flow, generally
+the most tightly controlled oxidation (ITRS 2001 asks for EOT control
+of "<± 4" % 3σ on the gate dielectric[^itrs-01]; SKY130 publishes no
+control data). The category page's *Nitrided oxides and ONO
 stacks* section gives the background on nitridation.
 
 ## Why this step exists
@@ -79,9 +82,12 @@ limits of thin oxides[^stathis-2002][^wright-1990] leave margin at
 dielectric,[^buchanan-1999] and Green et al. the processing and physical
 limits of sub-4 nm SiO₂ and Si–O–N films.[^green-2001]
 
-**Why thin second.** The thin oxide is the film least able to tolerate
-subsequent processing: every furnace step thickens it, every HF
-exposure thins it, every implant through it damages it. Growing it
+**Why thin second.** In general, a thin gate oxide tolerates subsequent
+processing worse than a thick one: every furnace step thickens it
+proportionally more, every HF exposure thins it by a larger fraction,
+every implant through it damages it more severely (a generality about
+dual-gate-oxide flows; SKY130 publishes no process-sensitivity data of
+its own). Growing it
 last in the gate-dielectric module, on freshly cleaned silicon, after
 the thick oxide has absorbed the long oxidation and the masked etch,
 gives it the smallest thermal and chemical history
@@ -166,16 +172,18 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
   **inference** for the assignment to `LVGOX`.
 * **AG Associates Heatpulse 8808** — "NH3, Ar, N2, O2, up to
   1200C".[^skw-01] An RTP with ammonia and oxygen is a rapid thermal
-  oxidation/nitridation tool; its NH₃ capability is the one public
-  hint of how SkyWater's "Nitrided gate oxide" module might be run.
+  oxidation/nitridation tool; its NH₃ capability is one public route
+  by which a nitrided gate oxide could be produced in this fab.
   Strength: strong for existence; **weak** for assignment.
 * **"Nitrided gate oxide"** is listed by SkyWater as a special
-  module.[^skw-01] Strength: strong for the capability; inference for
+  module.[^skw-01] The listing shows that SkyWater offers nitrided
+  gate oxide as a capability; it does not say which process or which
+  product uses it. Strength: strong for the capability; inference for
   its use on SKY130's 1.8 V oxide.
 
 ## Resources required
 
-* **{ref}`Oxygen <material-process-gases>`**, **nitrogen/argon**; **N₂O, NO or {ref}`NH₃ <material-precursors>`** for nitridation
+* **{ref}`Oxygen <material-process-gases>`**, **nitrogen/argon**; if the oxide is nitrided, **N₂O, NO or {ref}`NH₃ <material-precursors>`**
   ({ref}`category-oxidation`); the Heatpulse 8808's listed gases are
   NH₃, Ar, N₂ and O₂.[^skw-01]
 * **HCl or DCE** as chlorine source for furnace oxidation
