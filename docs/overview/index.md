@@ -136,12 +136,12 @@ internal 1.8V with 5.0V I/Os (operable at 2.5V)", "1 level of local
 interconnect", "5 levels of metal", "Is inductor-capable", "Has high
 sheet rho poly resistor", "Optional MiM capacitors", "Includes SONOS
 shrunken cell", "Supports 10V regulated supply" and "HV extended-drain
-NMOS and PMOS", and adds that SKY130 includes "many normally *optional*
+NMOS and PMOS", and adds that SKY130 includes "many normally optional
 features as standard (features like the local interconnect, SONOS
 functionality, MiM capacitors, and more)".[^pdk-10] The *Background*
-page lists the stack as "5 levels of metal (`p` - penta)", "Inductor or
-Inductor-Capable (`i`)", "Poly resistor (`r`)", "SONOS shrunken cell
-(`s`)" and "Supports 10V regulated supply (`10R`)".[^pdk-02]
+page lists the stack as "5 levels of metal (p - penta)", "Inductor or
+Inductor-Capable (i)", "Poly resistor (r)", "SONOS shrunken cell
+(s)" and "Supports 10V regulated supply (10R)".[^pdk-02]
 
 The PDK's device pages document 1.8 V NMOS and PMOS transistors,
 low-threshold NMOS and PMOS and a high-threshold PMOS, 1.8 V

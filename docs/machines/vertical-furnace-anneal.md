@@ -20,7 +20,7 @@ oxidation is described on the
 |---|---|
 | What it does | Heats a batch of wafers in an inert or reducing ambient; furnaces "are capable of processing many wafers at a time, but each process can last between several hours and a day".[^wiki-furnace] |
 | Temperature | Alloy anneals typically 350–450 °C (typical industry range);[^txt-02] a published hydrogen and deuterium anneal "at a temperature of about 400° C." for "about 1 hour";[^pat-deuterium-uiuc] a published well anneal "at approximately 900° C. in a neutral ambient such as nitrogen for approximately 30 minutes", a furnace-length soak (our reading).[^pat-vt-lsi] |
-| Ambients | Nitrogen or argon;[^ohashi-2007] forming gas, where "Typical forming gas formulations (5% H₂ in N₂) are not explosive";[^wiki-fg] "10% by volume hydrogen in nitrogen" or 10 % deuterium in nitrogen in a published sinter.[^pat-deuterium-uiuc] |
+| Ambients | Nitrogen or argon;[^ohashi-2007] forming gas, where "Typical forming gas formulations (5% H2 in N2) are not explosive";[^wiki-fg] "10% by volume hydrogen in nitrogen" or 10 % deuterium in nitrogen in a published sinter.[^pat-deuterium-uiuc] |
 | Interface passivation | Molecular hydrogen passivates both interface defects of (100) Si/SiO₂ with activation energies "determined as 1.51 and 1.57±0.04 eV".[^stesmans-1996] |
 | Wafer handling | Batch, on the same vertical platforms as oxidation: TEL's ALPHA-8SE i serves "oxidation/annealing" in "a batch of up to 150";[^tel-telindy] the AVP-8000 lists "anneal and cure from 100 to >1200°C".[^aviza-avp] |
 | 200 mm era | ASM's A400 for "wet oxidation and anneal processes";[^asm-a400] Aviza's AVP/RVP;[^aviza-vert] TEL's Alpha-8 series;[^tel-alpha8se] the Thermco horizontal furnaces, whose line Aviza sold to Tetreon Technologies in 2004.[^tetreon-htr-2004] |
@@ -95,7 +95,7 @@ The furnace suits the alloy because the anneal is long and cool: tens of
 minutes at a few hundred degrees for a full batch (category
 page).[^txt-01][^txt-02] Hydrogen is
 supplied as forming gas, a mixture of hydrogen and nitrogen of which
-"Typical forming gas formulations (5% H₂ in N₂) are not explosive", and
+"Typical forming gas formulations (5% H2 in N2) are not explosive", and
 "a high-temperature anneal in forming gas assists in silicon-silicon
 dioxide interface passivation",[^wiki-fg] or as hydrogen diluted at the
 tool; a University of Illinois patent anneals in "10% by volume hydrogen

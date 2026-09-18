@@ -72,8 +72,8 @@ abruptness and {term}`sheet resistance` to be met simultaneously.[^itrs-01]
 ### Rapid thermal processing
 
 {term}`RTP` "heats silicon wafers to temperatures exceeding 1,000°C for not more
-than a few seconds" using "high intensity lamps or lasers", with "*in
-situ* pyrometry to effect real time control" because the chamber never
+than a few seconds" using "high intensity lamps or lasers", with "in
+situ pyrometry to effect real time control" because the chamber never
 reaches thermal equilibrium; applications include "dopant activation,
 thermal oxidation, metal reflow and chemical vapor
 deposition".[^wiki-rtp] A single-wafer RTA chamber uses banks of

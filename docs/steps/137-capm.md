@@ -277,7 +277,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
   aligned to, is not public.
 * The mask table does not flag "Capacitor MiM, CAPM" as used in
   SKY130,[^pdk-05] while the README lists "Optional MiM capacitors"
-  yet also counts them among the "normally *optional* features"
+  yet also counts them among the "normally optional features"
   included "as standard",[^pdk-10] and the shuttle announcements
   offer them as standard;[^ann-11] whether the mask is run on every lot is not
   public.
