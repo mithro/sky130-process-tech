@@ -23,8 +23,8 @@ Entries carry a short key (for example `PDK-03`) so that other pages can
 refer to them unambiguously. The footnote labels on the step, category,
 landing and glossary pages are these keys in lower case (`PDK-03` →
 `[^pdk-03]`, `DEAL-1965` → `[^deal-1965]`), so every label used on a
-written page has exactly one entry here; the inventory holds 1720
-keyed entries as of 2026-09-14, and `tools/check_refs.py` keeps the
+written page has exactly one entry here; the inventory holds 1719
+keyed entries as of 2026-09-18, and `tools/check_refs.py` keeps the
 page-side labels well formed. Sections 8.4 (keyed Wikipedia entries),
 8.8, 8.9, 8.10, 8.11, 8.12, 8.13, 8.14, 8.15, 8.16, 8.17, 8.18, 8.19,
 8.20 and 8.21 were added to cover the sources the writers of the step,
