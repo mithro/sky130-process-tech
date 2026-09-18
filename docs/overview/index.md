@@ -659,6 +659,16 @@ flagged for S8D\* flows rather than S8P\*.[^pdk-03][^pdk-04] Metal 5's
 neither published cladding — S8DI's top metal is clad 500 + 300 =
 800 Å (our arithmetic).[^pdk-03][^pdk-04][^cyp-qtp-123907]
 
+A stronger objection runs the other way. That same 0.85 entry, read
+against the 2013 report's S8TNV-5R metal 3 of 150 Å Ti + 7 200 Å Al +
+300 Å TiW = 7 650 Å (our arithmetic), *exceeds* that stack's whole
+thickness by about a tenth — on the reading, itself ours, that S8TNV
+falls under "S8T\*".[^pdk-03][^cyp-qtp-113005] An antenna entry larger
+than the film it describes is not derived from film thicknesses at all,
+so the 450 Å coincidence at metals 3 and 4 may be exactly that. It is
+recorded here as the strongest argument against the inference this
+section draws from it.
+
 What the PDK's electrical numbers do **not** do is discriminate. The
 published sheet resistances — 125 mΩ/sq at metals 1 and 2, 47 mΩ/sq at
 metals 3 and 4 and 29 mΩ/sq at metal 5[^pdk-08] — are set by the

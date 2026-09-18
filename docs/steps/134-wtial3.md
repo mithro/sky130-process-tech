@@ -72,7 +72,11 @@ top metal layer — a via connects it to metal 4.[^pdk-periph] Against
 that, the PDK's 0.845 µm for `met3` exceeds its 0.8 µm antenna
 thickness by exactly the 450 Å of titanium plus TiW that clad the
 Cypress stacks, where the 2014 stack's cladding is 990 Å (our
-arithmetic).[^pdk-03][^pdk-04] This reference describes the cap as
+arithmetic).[^pdk-03][^pdk-04] That argument has its own counter-check:
+the same table's 0.85 µm for "S8T\* other than S8TM\*" exceeds the whole
+7 650 Å of the 2013 report's S8TNV-5R metal 3 by about a tenth (our
+arithmetic), so its antenna entries are not uniformly derived from film
+thicknesses.[^pdk-03][^cyp-qtp-113005] This reference describes the cap as
 "TiW or TiN" and writes its recipes for the TiW case; the whole of the
 evidence, the counter-checks and the statements that depend on the
 choice are set out under {ref}`overview-metal-cap`. This module is
