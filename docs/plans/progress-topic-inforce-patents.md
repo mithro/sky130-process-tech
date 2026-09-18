@@ -175,19 +175,23 @@ mechanical passes).
 | `docs/masks/pdm.md` | 1 | done |
 | `docs/masks/tunm.md` | 3 | done |
 | `docs/overview/index.md` | 3 | done |
-| `docs/overview/sky130b-reram.md` | 14 | TODO |
-| `docs/steps/037-ptsi.md` | 6 | TODO |
-| `docs/steps/039-tunme.md` | 24 | TODO (heavy) |
-| `docs/steps/040-ono.md` | 27 | TODO (heavy) |
-| `docs/steps/041-onom.md` | 11 | TODO |
-| `docs/steps/042-onome.md` | 15 | TODO (heavy) |
-| `docs/steps/043-gox100.md` | 17 | TODO (heavy) |
-| `docs/steps/044-lvom.md` | 3 | TODO |
-| `docs/steps/045-nchi.md` | 5 | TODO |
-| `docs/steps/046-goxetch.md` | 9 | TODO |
-| `docs/steps/047-lvgox.md` | 6 | TODO |
-| `docs/steps/138-capme.md` | 10 | TODO |
-| `docs/steps/153-cap2me.md` | 8 | TODO |
+| `docs/overview/sky130b-reram.md` | 14 | done |
+| `docs/steps/037-ptsi.md` | 6 | done |
+| `docs/steps/039-tunme.md` | 24 | done |
+| `docs/steps/040-ono.md` | 27 | done |
+| `docs/steps/041-onom.md` | 11 | done |
+| `docs/steps/042-onome.md` | 15 | done |
+| `docs/steps/043-gox100.md` | 17 | done |
+| `docs/steps/044-lvom.md` | 3 | done |
+| `docs/steps/045-nchi.md` | 5 | done |
+| `docs/steps/046-goxetch.md` | 9 | done |
+| `docs/steps/047-lvgox.md` | 6 | done |
+| `docs/steps/138-capme.md` | 10 | done |
+| `docs/steps/153-cap2me.md` | 8 | done |
+
+All 55 pages are done: 0 problems from `tools/check_inforce.py`, and the
+audit of the built HTML (below) finds no publication number and no title
+of a restricted family outside a `<details>` element or a flagged entry.
 
 ## Decisions in hard cases
 
@@ -220,6 +224,55 @@ mechanical passes).
   title, so the checker treats a title match as owned by every
   restricted family carrying it; otherwise a footnote definition that
   legitimately names one family was reported for its siblings.
+* **The heavy pages (040, 039, 043, 042).** Each keeps its visible
+  argument from sources that are not in force — the PDK models and
+  e-test tables, the published test-tile measurements, the step list,
+  the *expired* Cypress ONO patent US 6,969,689, the AmberWave STI
+  patent, Deal–Grove and Massoud, Liu and Kuo, ITRS, Wikipedia's generic
+  SONOS figures and SkyWater's own capability entries — and puts the
+  Cypress ranges, chemistries and temperatures in notes placed inside
+  the section that used them (one per argument, not one per sentence).
+  `040-ono.md` needed four; `039-tunme.md` three; `043-gox100.md` and
+  `042-onome.md` two and three. Where the recipe list would otherwise
+  have read as a list of empty headings, the step still names the *kind*
+  of operation (dry or radical oxidation; LPCVD from dichlorosilane and
+  ammonia with nitrous oxide; three blocking-oxide routes) and the note
+  carries the conditions, thicknesses and quotations.
+* **A conclusion that is only arithmetic on collapsed numbers.**
+  `039-tunme.md`'s "a tunnel dielectric of 11–23 nm" is the sum of two
+  patent ranges, so the visible text says the dielectric would be an
+  order of magnitude too thick and the note carries the arithmetic with
+  the ranges.
+* **Lead-ins that promised numbers.** Where a section's lead-in said
+  "values are from the Cypress patents", it was rewritten to say that
+  the ranges sit in the note after the list — otherwise the visible text
+  promises figures it no longer shows.
+
+## Verification
+
+Run from the worktree, all exit 0:
+
+```
+check_inforce.py    70 families not certainly expired (12 inventory keys,
+                    12 footnote labels), 285 pages, 0 problems, 0 notes
+                    that can be opened up
+check_inforce.py --selftest          selftest OK
+check_steps.py      171 pages, 0 missing headings, 0 stale blocks
+check_refs.py       264 written pages, 0 with problems
+check_machines.py / check_materials.py / check_masks.py   0 problems
+check_papers.py / check_patents.py / check_filings.py     0 problems
+gen_papers.py / gen_patents.py / gen_filings.py --check   0 problems
+gen_index_links.py --check   0 pages differ, 205 pages linked
+sphinx-build -W -q -b html   exit 0, no output
+```
+
+The built HTML was then audited with a real HTML parser
+(`tmp/inforce/html_audit.py`, tracking `<details>` nesting and block
+boundaries) over all 285 built pages: **372** occurrences of a
+restricted number or title sit inside a `<details>`, **276** in a
+footnote definition or inventory entry carrying the flag sentence, and
+**0** anywhere else. Every one of the 94 distinct `<summary>` strings
+gives number, status and estimated expiry only.
 
 ## Commits
 
