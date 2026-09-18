@@ -163,8 +163,8 @@ end (SKY130's recipe is not public):
    (the TI patent's ≤100 Å[^pat-mim-ti-etch]).
 5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` — the "Gasonic
    PEP", Iridia or Mattson class in SkyWater's list[^skw-01] — then a
-   solvent or semi-aqueous clean (the "EKS265, EKC270 solvents" of
-   the wet-bench list[^skw-01]) that removes fluorocarbon and
+   solvent or semi-aqueous clean (SkyWater lists "EKS265, EKC270
+   solvents" under "Batch Rotational"[^skw-01]) that removes fluorocarbon and
    metal-fluoride residue without attacking TiW or the dielectric;
    no HF and no peroxide (H₂O₂ etches TiW — the wet route Danzl and
    McLaurin describe for stripping a TiW cap[^danzl-1997] — so it is
