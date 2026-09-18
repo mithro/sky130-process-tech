@@ -237,11 +237,14 @@ linking to the collapsed entry.
 Entries are data listings. Each member's Espacenet and Google Patents
 links are written as autolinks in the member table rather than as
 footnotes. The citation style (`docs/plans/citation-style.md`) is
-written for prose pages; the proposal is to add a short exception for
-generated index pages under `docs/references/patents/` (no footnotes,
-no reading-tier lists), and to keep `tools/check_refs.py` from treating
-them as written pages (they are not in its target directories today).
-This needs the coordinator's agreement before the pages are generated.
+written for prose pages; a short exception for generated index pages
+under `docs/references/papers/` and `docs/references/patents/` (no
+footnotes, no reading-tier lists) is recorded in
+`docs/plans/citation-style.md`'s "Exception: generated index pages"
+(round-1 review finding L11, 2026-09-18) rather than left as an
+unrecorded proposal — this was already `tools/check_refs.py`'s de-facto
+behaviour (neither directory is in its target list), so nothing in the
+checker changed.
 
 ## Generator and checks
 

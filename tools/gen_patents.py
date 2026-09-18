@@ -500,7 +500,11 @@ def gen_by_assignee(fams: list[dict]) -> str:
         "(its caveat applies: the lists \"may be inaccurate\"). Cypress",
         "Semiconductor, SkyWater Technology and Infineon Technologies come",
         "first; a family with several original assignees appears under each.",
-        "The current assignee, where different, is shown alongside.",
+        "The current assignee, where different, is shown alongside. Google's",
+        "\"original assignee\" is sometimes the entity's current, renamed name",
+        "rather than the name on the published document itself (five cases",
+        "found by the round-1 review's cross-check against EPO data); a",
+        "heading here is not necessarily the name printed on the patent.",
         "",
     ]
     by_ass: dict[str, list[dict]] = defaultdict(list)
@@ -510,9 +514,14 @@ def gen_by_assignee(fams: list[dict]) -> str:
     for name in sorted(by_ass, key=assignee_sort_key):
         items = by_ass[name]
         currents = sorted({c for f in items for c in f["assignees"]["current"] if c != name})
-        heading = esc(name)
-        if currents:
-            heading += " (now " + ", ".join(esc(c) for c in currents) + ")"
+        if name == "Individual":
+            # L9: Google's placeholder for "no assignee recorded at grant",
+            # not a single entity that became several — read as such.
+            heading = "No assignee recorded at grant (Google Patents \"Individual\")"
+        else:
+            heading = esc(name)
+            if currents:
+                heading += " (now " + ", ".join(esc(c) for c in currents) + ")"
         body += [f"## {heading}", ""]
         body += [family_link_line(f) for f in sorted(items, key=lambda f: str(f["dates"]["priority"]))]
         body.append("")
@@ -593,7 +602,37 @@ def gen_by_date(fams: list[dict]) -> str:
     return page("patents-by-date", "Patents by date and status", body)
 
 
+OVERVIEW_MODULE_ROW = re.compile(
+    r"^\|\s*(?P<name>[^|]+?)\s*\|\s*\{ref\}`[^<]*<step-(?P<lo>\d+)>`\s*[–-]\s*\{ref\}`[^<]*<step-(?P<hi>\d+)>`")
+
+
+def check_step_modules() -> None:
+    """L8: STEP_MODULES hard-codes the module boundaries and headings from
+    the table at {ref}`overview-modules` on docs/overview/index.md; fail
+    loudly if that table is ever edited without updating this copy, rather
+    than silently drifting out of sync."""
+    text = (ROOT / "docs" / "overview" / "index.md").read_text(encoding="utf-8")
+    label_at = text.index("(overview-modules)=")
+    # the label is immediately followed by its own "## " heading; the
+    # table runs from there to the *next* "## " heading.
+    heading_at = text.index("\n## ", label_at) + 1
+    rest = text[heading_at + 1:]
+    end = heading_at + 1 + rest.index("\n## ") if "\n## " in rest else len(text)
+    section = text[heading_at:end]
+    rows = [OVERVIEW_MODULE_ROW.match(line) for line in section.splitlines()]
+    rows = [m for m in rows if m]
+    overview = [(m["name"], int(m["lo"]), int(m["hi"])) for m in rows]
+    ours = [(heading, lo, hi) for _slug, heading, lo, hi in STEP_MODULES]
+    if overview != ours:
+        raise SystemExit(
+            "tools/gen_patents.py STEP_MODULES no longer matches the module table at "
+            "(overview-modules)= on docs/overview/index.md (L8). Overview table:\n"
+            + "\n".join(f"  {n!r} {lo}-{hi}" for n, lo, hi in overview)
+            + "\nSTEP_MODULES:\n" + "\n".join(f"  {n!r} {lo}-{hi}" for n, lo, hi in ours))
+
+
 def generate() -> tuple[dict[str, str], str]:
+    check_step_modules()
     # check_patents.Loader keeps ISO dates as strings (like the checker does),
     # rather than yaml.safe_load's automatic datetime.date conversion.
     data = yaml.load(DATA.read_text(encoding="utf-8"), Loader=check_patents.Loader)
