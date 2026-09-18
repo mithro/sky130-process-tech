@@ -16,9 +16,9 @@ the arithmetic/cross-page check) before being fixed or declined.
 | 076-L1 | Low | fixed | Confirmed via Crossref (10.1149/1.1690294): no abstract available (IOP paywalled/bot-checked as the review found), title confirms only "Low-Temperature ... LPCVD"; no explicit temperature number. Labelled the 550-600 C range as a typical industry value per the review's proposed wording. |
 | 076-L2 | Low | fixed | Confirmed docs/categories/deposition.md gives 250-400 C with wiki-pecvd for PECVD; smith-1990/claassen-1985 have no Crossref abstracts to support 300-400 C. Matched the category page's range and citation. |
 | 077-L1 | Low | fixed | Confirmed both DOIs (10.1116/1.580203, 10.1116/1.582097, checked for 079-H1) are downstream/remote-plasma studies, cited inside a bullet describing the ion-driven RIE main etch. Added the review's parenthetical clarifying they describe the chemistry, not the RIE tool used here. |
-| 079-L1 | Low | open | |
-| 080-L1 | Low | open | |
-| 080-L2 | Low | open | |
+| 079-L1 | Low | declined | Confirmed skw-facilities.txt reads "Gasonic PEP"/"Mattson Aspen2" and the repo has a real, pre-existing split (38x "GaSonics PEP" vs 34x "Gasonic PEP"; 31x "Aspen2" vs 57x "Aspen II"). Not a factual error on this page (corporate name is GaSonics International); the review itself concludes "no change is strictly required" and asks the coordinator to settle the repo-wide spelling once. Declining a page-local fix that would leave the branch inconsistent with the rest of the site; left for the coordinator's site-wide pass. |
+| 080-L1 | Low | fixed | Confirmed via Crossref (10.1116/1.586361): Raupp's abstract gives trends with temperature/pressure/power but no absolute window. Matched the category page's sourced 250-400 C, wiki-pecvd. |
+| 080-L2 | Low | fixed | Confirmed page's own reading (lines 14-27): SPOX is deposited over the SPNIT/SPE nitride spacer as an additional composite layer, not a replacement; "instead of nitride" wrongly implied substitution. Reworded to "the extra spacer width added here is oxide rather than more nitride". |
 | 082-L1 | Low | open | |
 | 083-L1 | Low | open | |
 | 084-L1 | Low | open | |
