@@ -56,7 +56,8 @@ SONOS test structures are opened.
 
 The SONOS memory transistor is a different animal from the logic NMOS
 next to it. The PDK's {term}`e-test` parameters describe it at drawn W/L
-0.45/0.22 µm (original cell) and 0.35/0.15 µm ("star" cell); its
+0.45/0.22 µm and 0.35/0.15 µm, for "both original and star cells" (the
+PDK does not say which is which; see {ref}`PTSI <step-037>`); its
 programme and erase conditions apply +6.7 V to the {term}`control gate` with
 −3.8 V on source, drain and body, and −3.8 V on the gate with +6.7 V on
 the other three terminals; and it must keep its window over 100 000
