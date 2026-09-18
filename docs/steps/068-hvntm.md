@@ -326,8 +326,8 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
-[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
-    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021, accessed
+    2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^hori-1989-latid]: T. Hori, "1/4-μm LATID (LArge-Tilt-angle Implanted
     Drain) technology for 3.3-V operation", *IEDM 1989 Technical
     Digest*, pp. 777–780. <https://doi.org/10.1109/IEDM.1989.74169>

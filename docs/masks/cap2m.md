@@ -479,8 +479,8 @@ width.[^raw-data-testtile-pads]
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30; lithography entries re-checked 2026-09-13.
     <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
-[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
-    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021, accessed
+    2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^wiki-mask]: Wikipedia, *Photomask*.
     <https://en.wikipedia.org/wiki/Photomask>
 [^wiki-litho]: Wikipedia, *Photolithography*.

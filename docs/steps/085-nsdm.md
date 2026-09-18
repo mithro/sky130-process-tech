@@ -282,8 +282,8 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
-[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
-    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021, accessed
+    2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^hook-2003]: T. B. Hook, J. Brown, P. Cottrell, E. Adler, D. Hoyniak,
     J. Johnson and R. Mann, "Lateral Ion Implant Straggle and Mask
     Proximity Effect", *IEEE Transactions on Electron Devices*

@@ -4715,8 +4715,8 @@ Also used on the VIM4 mask page.
 
 ##### Vendor, regulatory, marketplace and press pages
 
-**ASML-30** — ASML, *Three decades of PAS 5500*, 2021.
-<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+**ASML-30** — ASML, *Three decades of PAS 5500*, 2021, accessed
+2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 ASML's own account of the PAS 5500 platform's three-decade lifetime.
 States that "older systems remain in constant use but migrate to the
 lithography of choice for less critical layers" (a general statement,

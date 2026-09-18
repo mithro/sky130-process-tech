@@ -275,8 +275,8 @@ etch).
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001
     Edition: Lithography*.
     <https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>
-[^asml-30]: ASML, *Three decades of PAS 5500*, 2021.
-    <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
+[^asml-30]: ASML, *Three decades of PAS 5500*, 2021, accessed
+    2026-09-13. <https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>
 [^levinson-2005]: H. J. Levinson, *Principles of Lithography*, 2nd ed.,
     SPIE Press, 2005, ISBN 978-0-8194-5660-1.
     <https://doi.org/10.1117/3.601520>
