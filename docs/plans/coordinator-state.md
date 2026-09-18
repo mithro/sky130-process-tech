@@ -38,6 +38,9 @@ standing rules are `agent-briefs.md`.
 |---|---|---|---|
 | `topic/index-patents` | finish member records, discovery, generator, pages | Sonnet | running (2026-09-18) |
 | `topic/index-filings` | commit pending records, fill gaps, generator, pages | Sonnet | running (2026-09-18) |
+| none (read-only, `main`) | Phase 4 technical review of steps 001–013, run on both models as the second comparison; reports under `tmp/p4/` | Sonnet and Opus | running (2026-09-18) |
+
+Phase 4 plan: twelve module batches (the Phase 2 groups in `TASKLOG.md`). Per batch: read-only review report, then a fixer on `topic/p4-<range>` applying it, then verification of the fixes, then merge. Reviewer brief: `tmp/prompts/p4-review.txt` (not tracked; its content is the Reviewer brief plus source re-fetching, second-source checks and distrust of any single source).
 
 ## Queue
 
