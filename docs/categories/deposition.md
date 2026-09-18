@@ -137,9 +137,9 @@ aluminium BEOL are:
   improves electromigration lifetime relative to pure
   aluminium.[^wiki-em][^txt-02]
 * **Titanium** as an adhesion/contact layer and **titanium nitride** by
-  reactive sputtering of Ti in Ar/N₂. A conductive TiN underlayer keeps
-  a line open after an Al void forms, and it was on Al stripes over TiN
-  that Blech discovered the critical-length ("Blech length")
+  reactive sputtering of Ti in Ar/N₂. It was on Al stripes over TiN
+  that Blech measured the threshold current density below which no
+  electromigration is seen — the critical-length ("Blech length")
   effect;[^blech-1976] on top of Al it serves as an anti-reflective
   coating for lithography and as a diffusion barrier.[^wiki-tin]
 * **Titanium–tungsten** (Ti:W, "typically composed of 10 wt% of titanium
