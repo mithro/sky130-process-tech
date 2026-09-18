@@ -683,10 +683,12 @@ filings:
       foundry partnership with China's Grace Semiconductor Manufacturing
       Corporation (which the FY2006 report already in the inventory
       describes as taking effect), continued transition of the Bloomington,
-      Minnesota facility to 90 nm and 0.13 µm CMOS, and gives the leased
-      Bloomington building's size as 108,000 square feet (one of several
-      differing footprint figures for the site across this index's Cypress
-      annual reports; see the fy1993, fy2008 and existing fy2016 records).
+      Minnesota facility to 90 nm and 0.13 µm CMOS, and, in its Item 2
+      Properties table, lists Bloomington, Minnesota twice: 170,000 square
+      feet owned and a further 108,000 square feet leased under a synthetic
+      lease, 278,000 square feet in total -- the same total the
+      cypress-annual-report-fy2008 record quotes as wholly owned, after
+      that synthetic lease was terminated in fiscal 2007.
     quotes:
     - text: >-
         During fiscal 2005, we continued our transition to more advanced
@@ -724,10 +726,13 @@ filings:
     The EDGAR filing date and accession number were not retrieved; filed
     gives the date of the auditor's report printed in the copy, so the
     document was published on or after it. The Item 2 Properties table
-    gives the leased Bloomington, Minnesota building as 108,000 square
-    feet, one of several buildings at the site under a synthetic lease
-    (compare the owned-property figure in cypress-annual-report-fy2008);
-    these figures are not straightforwardly comparable across years.
+    lists 170,000 square feet owned and 108,000 square feet leased (one
+    building under a synthetic lease with San Jose, footnote 2) at
+    Bloomington, Minnesota, 278,000 square feet in total; this matches the
+    278,000 square feet cypress-annual-report-fy2008 gives as wholly owned
+    once that synthetic lease was terminated in fiscal 2007, and the
+    170,000 square feet cypress-annual-report-fy1993 gives earlier. The
+    figures are consistent across these three records, not conflicting.
 
 - id: cypress-annual-report-fy2006
   company: Cypress Semiconductor Corporation
