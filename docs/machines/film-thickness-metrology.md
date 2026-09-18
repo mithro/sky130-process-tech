@@ -306,7 +306,7 @@ targets, limits and sampling plans are not public.
 * **Doped glass.** {ref}`PSG <step-089>` names ellipsometry and FTIR for
   thickness and phosphorus content, the infrared band method Stout and
   Krishnan describe.[^stout-1989]
-* **Metal films.** The liner, TiN, TiW and Ti/Al–Cu stack pages and the
+* **Metal films.** The liner, TiN, TiW and Ti/Al–Cu stack pages ({ref}`overview-metal-cap` sets out which cap the metal stacks carry) and the
   first tungsten fill ({ref}`WDEP <step-099>`) name XRF, a four-point
   probe and a stress gauge; the later tungsten-fill pages
   ({ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`,

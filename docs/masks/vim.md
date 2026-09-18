@@ -235,7 +235,8 @@ the {ref}`lithography materials <material-lithography-materials>` page.
 {ref}`VIME <step-119>` through the cap oxide and inter-metal oxide, 0.27
 µm in the PDK's stack diagram,[^pdk-04] on the
 {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>` class,
-down to the TiW cap of the metal-1 lines, and the resist is stripped
+down to the refractory cap of the metal-1 lines
+({ref}`overview-metal-cap`), and the resist is stripped
 within that step.
 
 **Overlay.** Metal 1 must enclose a 0.150 µm via by 0.055 µm (via.4a),

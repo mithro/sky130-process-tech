@@ -257,7 +257,7 @@ corrected, and how, is not public.
 
 **Substrate and tone.** On the step pages' readings the resist sits on
 the {ref}`NCAPOX4 <step-128>` cap over 0.42 µm of via-2 oxide, the
-height of the PDK's stack diagram,[^pdk-04] above TiW-capped metal-2
+height of the PDK's stack diagram,[^pdk-04] above capped metal-2
 lines, so the reflection under it changes with the metal pattern.
 Brunner showed that the swing ratio scales with the square root of the
 substrate reflectivity, which an anti-reflective coating
@@ -275,7 +275,8 @@ published. The consumables are on the
 at {ref}`VIM2E <step-130>` through the cap oxide and the
 {ref}`NILD4 <step-126>` oxide, on the
 {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>` class,
-down to the TiW cap of the metal-2 lines, and the resist is stripped
+down to the refractory cap of the metal-2 lines
+({ref}`overview-metal-cap`), and the resist is stripped
 within that step. Le, Banerjee and McPherson found that via size strongly
 affects the electromigration failure-time spread of tungsten-plug vias
 for one direction of electron flow with a TiN-capped metallisation, and

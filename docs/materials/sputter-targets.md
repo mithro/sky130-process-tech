@@ -255,8 +255,11 @@ These are the same thirteen steps the
 {ref}`PVD cluster tool page <machine-pvd-cluster-tool>` assigns to its
 class. On the step pages' readings, titanium serves the contact liner,
 the TiN via liners, the TiN local interconnect and the underlayer of the
-metal stacks; aluminium–copper the five metal stacks; and TiW the stack
-caps and the two capacitor top plates.
+metal stacks; aluminium–copper the five metal stacks; and TiW the two
+capacitor top plates and, on the reading the step pages take, the stack
+caps. Whether the stack caps need a Ti:W target at all, or a titanium
+target sputtered reactively to TiN, turns on the unresolved question set
+out under {ref}`overview-metal-cap`.
 
 ## Supply, handling, safety and facilities
 
@@ -304,9 +307,13 @@ sputtering recipes are not public.
   mode.[^mao-2004]
 * **TiW or TiN stack.** The step pages describe the Ti/Al–Cu/TiW stack of
   the 2013 report; after the 2014 change a TiN-capped stack would use
-  titanium targets where the older stack used TiW (our
-  reading).[^cyp-qtp-113005][^cyp-pin145273] Which stack SKY130 lots use
-  is not public.
+  titanium targets and nitrogen where the older stack used a Ti:W target
+  (our reading).[^cyp-qtp-113005][^cyp-pin145273] Which stack SKY130
+  lots use is not public: the evidence on both sides is set out under
+  {ref}`overview-metal-cap`. The choice changes how much Ti:W target is
+  consumed and how much titanium, but not the set of targets the fab
+  must hold, since the MiM plates need Ti:W on the step pages' reading
+  either way.
 * **The capacitor plates.** {ref}`CAPTIW1 <step-136>` and
   {ref}`CAPTIW2 <step-151>` read the MiM top plate, "a thin conductor
   layer on top of the dielectric",[^pdk-07] as TiW on SkyWater's "TiW"
@@ -417,7 +424,8 @@ sputtering recipes are not public.
   stated.[^skw-01][^sec-01][^sec-02]
 * Whether SKY130 lots use the TiW-capped or the TiN-capped metal stack,
   and so whether TiW targets serve anything besides the capacitor plates,
-  is not public.[^cyp-pin145273]
+  is not public;[^cyp-pin145273] see
+  {ref}`overview-metal-cap`.
 * What "ESC" and "Imp" denote on SkyWater's TiN entries, and whether
   they are separate titanium-target chambers, is not stated.[^skw-01]
 * Whether "Honeywell Electronic Materials, Inc." in SkyWater's filings

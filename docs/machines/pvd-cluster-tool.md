@@ -345,7 +345,11 @@ its film thicknesses are not public.
   process, Titanium Tungsten (TiW) based metal stack, with the
   industry-wide Best Known Method Titanium Nitride (TiN) based metal
   stack";[^cyp-pin145273] which stack SKY130 lots use is not public, and
-  the step pages describe the TiW stack (inference).
+  the step pages describe the TiW stack (inference). The chambers
+  needed differ: the TiW stack needs a Ti:W chamber, the other a
+  titanium chamber run reactively in nitrogen, and the 2014 stack has
+  five films to the 2013 one's three. The evidence on both sides is set
+  out under {ref}`overview-metal-cap`.
 * **The capacitor top plates.** The PDK calls the MiM top plate "a thin
   conductor layer on top of the dielectric";[^pdk-07] the
   {ref}`CAPTIW1 <step-136>` and {ref}`CAPTIW2 <step-151>` pages read it
@@ -469,7 +473,8 @@ its film thicknesses are not public.
 * What "ESC" and "Imp" denote on SkyWater's TiN entries is not stated.
 * Whether the contact titanium is collimated or ionised, and whether the
   SKY130 metal stacks are the TiW or the TiN version of the Cypress
-  stack, are not public.
+  stack, are not public; on the second, see
+  {ref}`overview-metal-cap`.
 * The model list above is incomplete: it covers the Applied Materials,
   Novellus and Varian systems for which a public description was found,
   not the MRC, ULVAC, Anelva, Electrotech and other sputtering systems of

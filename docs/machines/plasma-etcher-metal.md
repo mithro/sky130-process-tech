@@ -249,14 +249,20 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   interconnect ({ref}`LI1ME <step-103>`), titanium nitride in Edwards's
   PDK lecture;[^ann-16] the five metal levels ({ref}`MM1E <step-114>`
   to {ref}`MM5E <step-163>`),[^pdk-10] "5 layers of aluminum metal" in
-  the same lecture,[^ann-16] which a Cypress qualification report
-  describes, for metals 1 to 3, as Ti/Al–Cu/TiW
-  stacks;[^cyp-qtp-113005] and the two capacitor top plates ({ref}`CAPME <step-138>`,
+  the same lecture,[^ann-16] which a 2013 Cypress qualification
+  report describes, for metals 1 to 3 of an S8 sibling at this fab, as
+  Ti/Al–Cu/TiW stacks[^cyp-qtp-113005] — though a 2014 report records a
+  qualified change
+  of the fab's 130 nm stacks away from TiW "excluding top metal
+  layers",[^cyp-qtp-123907] so which cap each level carries, and
+  therefore whether the cap breakthrough needs fluorine, is not public
+  ({ref}`overview-metal-cap`) — and the two capacitor top plates ({ref}`CAPME <step-138>`,
   {ref}`CAP2ME <step-153>`). The PDK calls the top plate only "a thin
   conductor layer on top of the dielectric";[^pdk-07] this reference
   reads it as TiW (inference, set out on the {ref}`CAPTIW1 <step-136>`
-  page: TiW caps the Cypress S8 aluminium stacks[^cyp-qtp-113005] and is
-  on SkyWater's PVD and metal-etch lists[^skw-01]), and the same
+  page: TiW caps the aluminium stacks of the 2013 Cypress
+  report[^cyp-qtp-113005] and is on SkyWater's PVD and metal-etch
+  lists[^skw-01]), and the same
   evidence would equally allow TiN. SkyWater's two entries name Al, TiN
   and TiW.[^skw-01]
 * **Stopping on tungsten plugs and thin dielectrics.** The aluminium
@@ -312,6 +318,9 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   Etch" entries quoted on this page.[^skw-01]
 * SkyWater PDK, *Device Details* — the MiM top plate as "a thin
   conductor layer", its material unnamed.[^pdk-07]
+* Cypress, QTP 123907 — the 2014 qualified change of the fab's 130 nm
+  metal stacks from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN "excluding top
+  metal layers".[^cyp-qtp-123907]
 * Cypress, QTP 113005 — the Ti/Al–Cu/TiW composition of the S8 metal
   stacks.[^cyp-qtp-113005]
 * SkyWater PDK, *google/skywater-pdk* README — "1 level of local
@@ -539,3 +548,11 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 [^txt-02]: S. Wolf and R. N. Tauber, *Silicon Processing for the VLSI
     Era, Vol. 1: Process Technology*, 2nd ed., Lattice Press, 2000,
     ISBN 978-0-9616721-6-4. <https://openlibrary.org/isbn/9780961672164>
+[^cyp-qtp-123907]: Cypress Semiconductor, *Fab Process Qualification
+    Report, QTP# 123907, 132302, 132301: Metal Stack Change, S8
+    Technology, Fab 4 CMI*, document 001-91369 Rev. **, March 2014 (copy
+    hosted by Tokyo Electron Device as the attachment to Cypress Product
+    Information Notification PIN145273, 2014-03-13, which states the
+    report is attached and available from cypress.com;
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
+    <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
