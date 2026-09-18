@@ -663,15 +663,15 @@ Status and expiry are estimates from public records and are not legal advice.
 [^opdks-makefile]: R. T. Edwards et al., *open_pdks*,
     `sky130/Makefile.in`, lines 4 and 345–346, commit 1689ac3
     (2026-08-27), accessed 2026-09-13.
-    <https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/Makefile.in>
+    <https://github.com/fossi-foundation/open-pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/Makefile.in>
 [^opdks-readme]: R. T. Edwards et al., *open_pdks*, `sky130/README`,
     commit 1689ac3, accessed 2026-09-13.
-    <https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/README>
+    <https://github.com/fossi-foundation/open-pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/README>
 [^opdks-magic-tech]: R. T. Edwards et al., *open_pdks*,
     `sky130/magic/sky130.tech` (Magic technology file source), lines
     1293–1301, 4194, 4821–4842, 5303–5336 and 5421–5547, commit 1689ac3,
     accessed 2026-09-13.
-    <https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/magic/sky130.tech>
+    <https://github.com/fossi-foundation/open-pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/magic/sky130.tech>
 [^reram-index]: SkyWater PDK Authors, *sky130_fd_pr_reram - SKY130
     ReRAM (SkyWater Provided)*, documentation index page, accessed
     2026-09-13. <https://sky130-fd-pr-reram.readthedocs.io/en/latest/>

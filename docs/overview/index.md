@@ -1288,10 +1288,10 @@ Status and expiry are estimates from public records and are not legal advice.
 [^opdks-makefile]: R. T. Edwards et al., *open_pdks*,
     `sky130/Makefile.in`, lines 3–4, commit 1689ac3 (2026-08-27),
     accessed 2026-09-13.
-    <https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/Makefile.in>
+    <https://github.com/fossi-foundation/open-pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/Makefile.in>
 [^opdks-readme]: R. T. Edwards et al., *open_pdks*, `sky130/README`,
     commit 1689ac3, accessed 2026-09-13.
-    <https://github.com/RTimothyEdwards/open_pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/README>
+    <https://github.com/fossi-foundation/open-pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/README>
 [^reram-index]: SkyWater PDK Authors, *sky130_fd_pr_reram - SKY130
     ReRAM (SkyWater Provided)*, documentation index page, accessed
     2026-09-13. <https://sky130-fd-pr-reram.readthedocs.io/en/latest/>

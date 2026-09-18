@@ -721,8 +721,11 @@ state:
 [^tel-act]: Tokyo Electron, *Coater/Developer ACT Series*, product page.
     <https://www.tel.com/product/act.html>
 [^gce-kla8100]: GCE Market, *KLA-Tencor 8100XP CD-SEM* (specification
-    summary).
-    <https://www.gcemarket.com/gce/gce.nsf/products/kla-tencor-8100xp-cd-sem-7expup>
+    summary), retrieved 2026-09-13.
+    <https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>
+    (formerly
+    <https://www.gcemarket.com/gce/gce.nsf/products/kla-tencor-8100xp-cd-sem-7expup>,
+    which now redirects there)
 [^pat-tcp-lam]: J. S. Ogle (Lam Research Corporation), *Method and apparatus
     for producing magnetically-coupled planar plasma*, US 4,948,458 A,
     granted 1990-08-14. <https://patents.google.com/patent/US4948458A/en>

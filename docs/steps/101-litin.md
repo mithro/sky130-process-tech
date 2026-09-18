@@ -308,7 +308,7 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 [^ann-11]: SkyWater Technology / Efabless, *First Google-Sponsored MPW
     Shuttle Launched at SkyWater with 40 Open Source Community
     Submitted Designs*, press release, 2021-04-06.
-    <https://skywatertechnology.com/press-releases/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs>
+    <https://www.skywatertechnology.com/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs/>
 [^skw-01]: SkyWater Technology, *Facilities & Capabilities*, accessed
     2026-08-30. <https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>
 [^sec-01]: SkyWater Technology, Inc., Form S-1 (registration statement),
