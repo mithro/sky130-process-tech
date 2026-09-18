@@ -67,8 +67,8 @@ between metal 1 and metal 2, and the etch decides four things:
 * **A clean, complete landing on TiW.** The PDK's `via` is 4 500 mΩ
   (4.5 Ω), thirty times lower than the 152 000 mΩ of an
   `mcon`,[^pdk-08] and on our reading that gap is largely a matter of
-  the landing: a wider, shallower hole ending on a metal cap rather
-  than a narrow one ending on 0.10 µm of TiN.[^pdk-04] Fluorocarbon
+  the landing: a narrower, shallower hole ending on a metal cap rather
+  than a wider one ending on 0.10 µm of TiN.[^pdk-04] Fluorocarbon
   polymer or oxide left on the floor raises the number; Bui et al.
   showed that the anti-reflective cap a tungsten-plug via lands on
   also sets its electromigration performance.[^bui-1994]
