@@ -197,6 +197,7 @@ links the full entry on {ref}`filings-index`.
 (filings-rel-infineon-cypress-acquisition)=
 ### Infineon's acquisition of Cypress (2019-2020)
 
+* Cypress Semiconductor Corporation, 8-K, filed 2019-06-03: Current report, item 1.01: Agreement and Plan of Merger with Infineon Technologies AG ({ref}`full entry <filing-cypress-8-k-2019-06-03>`)
 * Infineon Technologies AG, Annual Report, filed 2019-11-22: Infineon Technologies Annual Report 2019 ({ref}`full entry <filing-infineon-annual-report-fy2019>`)
 * Cypress Semiconductor Corporation, 8-K, filed 2020-04-16: Current report: completion of the merger with IFX Merger Sub (Infineon) ({ref}`full entry <filing-cypress-8-k-2020-04-16>`)
 * Infineon Technologies AG, Annual Report, filed 2020-11-20: Infineon Technologies Annual Report 2020 ({ref}`full entry <filing-infineon-annual-report-fy2020>`)

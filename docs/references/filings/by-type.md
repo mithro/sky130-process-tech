@@ -75,6 +75,7 @@ name and date; the full audit reports are collected on
 
 ## Current reports and exhibits
 
+* Cypress Semiconductor Corporation, 8-K, filed 2019-06-03: Current report, item 1.01: Agreement and Plan of Merger with Infineon Technologies AG ({ref}`full entry <filing-cypress-8-k-2019-06-03>`)
 * Cypress Semiconductor Corporation, 8-K, filed 2020-04-16: Current report: completion of the merger with IFX Merger Sub (Infineon) ({ref}`full entry <filing-cypress-8-k-2020-04-16>`)
 * SkyWater Technology, Inc., 8-K, filed 2022-04-04: Current report, item 1.01: Frame Agreement for the Purchase of Wafers and Services with Infineon ({ref}`full entry <filing-skywater-8-k-2022-04-04>`)
 * D-Wave Quantum Inc., 8-K, filed 2023-03-03: Current report: Thirteenth Amendment to the Agreement for Semiconductor Line Operation with SkyWater Technology Foundry ({ref}`full entry <filing-d-wave-8-k-2023-03-03>`)

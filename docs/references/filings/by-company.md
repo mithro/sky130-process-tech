@@ -34,6 +34,7 @@ Within a company, by filing date. Each line links the full entry on
 * Cypress Semiconductor Corporation, 10-Q, filed 2017-05-02: Quarterly report on Form 10-Q for the quarter ended 2017-04-02 ({ref}`full entry <filing-cypress-10-q-2017-05-02>`)
 * Cypress Semiconductor Corporation, 10-K, filed 2018-02-26: Annual report on Form 10-K for the fiscal year ended 2017-12-31 ({ref}`full entry <filing-cypress-10-k-2018-02-26>`)
 * Cypress Semiconductor Corporation, 10-K, filed 2019-02-27: Annual report on Form 10-K for the fiscal year ended 2018-12-30 ({ref}`full entry <filing-cypress-10-k-2019-02-27>`)
+* Cypress Semiconductor Corporation, 8-K, filed 2019-06-03: Current report, item 1.01: Agreement and Plan of Merger with Infineon Technologies AG ({ref}`full entry <filing-cypress-8-k-2019-06-03>`)
 * Cypress Semiconductor Corporation, 8-K, filed 2020-04-16: Current report: completion of the merger with IFX Merger Sub (Infineon) ({ref}`full entry <filing-cypress-8-k-2020-04-16>`)
 
 ## SkyWater Technology, Inc. (bought the fab in 2017)
