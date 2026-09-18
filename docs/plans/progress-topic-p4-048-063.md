@@ -37,15 +37,15 @@ before being fixed or declined.
 | 051-L2 | Low | fixed | Added the missing citation/typical-value label for the SPM temperature. |
 | 051-L3 | Low | fixed | Confirmed via OpenAlex: Fujimura 1989's two-step process is H2-RIE-plus-downstream, a different sequence from the cold-then-hot O2 one this page describes (from pat-strip-mosel). Fixed the Deep dive annotation. Shared with 057-L3. |
 | 052-L1 | Low | fixed | Noted the 0.33 µm test structures are narrower than the narrowest supported fixed width (rpm.1b) and at the poly.3 minimum, unlike the PDK's 0.35 µm e-test comparator. |
-| 053-L1 | Low | open | shared with 056-L2 |
-| 053-L2 | Low | open | |
+| 053-L1 | Low | fixed | Confirmed via cached CSV: double space after "P+"/"P-" in the module header. Restored the exact spacing with a note. Shared with 056-L2. |
+| 053-L2 | Low | fixed | Reworded the Open question so it no longer reads "splits" as evidence of multiple implants (Common rule 2). |
 | 054-L1 | Low | open | |
 | 054-L2 | Low | open | |
 | 055-L1 | Low | open | |
 | 055-L2 | Low | open | |
 | 055-L3 | Low | open | |
 | 056-L1 | Low | open | |
-| 056-L2 | Low | open | = 053-L1 |
+| 056-L2 | Low | fixed | = 053-L1 |
 | 056-L3 | Low | open | |
 | 057-L1 | Low | open | |
 | 057-L2 | Low | fixed | = 051-M1 |
