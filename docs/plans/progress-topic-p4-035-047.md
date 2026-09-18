@@ -60,6 +60,15 @@ arithmetic before being fixed or declined.
 | 047-L1 | 047-lvgox.md | fixed | "the one public hint" overstates evidence |
 | 047-L2 | 047-lvgox.md | fixed | raw-data module-to-device mapping not given |
 
+## Verifier follow-ups (post-review)
+
+| Item | Page(s) | Status | Note |
+|---|---|---|---|
+| Verifier fix 1 | 042-onome.md | fixed | reverted the 042-L1 SNF-gas-list regression (tetrafluoromethane is on the Stanford page) |
+| Verifier fix 2 | 045-nchi.md | fixed | "mean of the two published sweeps" corrected to name modules 8008/8392 (5 sweeps exist at 7/0.15 um) |
+| Verifier fix 3 | 035-tunm.md | fixed | marked the NOT-hvi complement reading as an inference, matching 044-M1 |
+| Verifier fix 4 | 071-ldntm.md | fixed | leftover of 037-M1: original/star cell W/L pairing marked as unassigned by the PDK, cross-referenced to PTSI |
+
 ## Declined findings
 
 | Finding | Reason |
