@@ -121,6 +121,11 @@ BLOCKED_HOSTS = {
     "glassdoor.com",  # Cloudflare/bot challenge for non-browser clients
     "researchgate.net",  # blocks non-browser clients with 403
     "astm.org",  # 403 to this UA, 307 to a browser UA (verified 2026-09-19); Akamai bot check
+    "cdc.gov",  # 403 to curl regardless of User-Agent string (verified 2026-09-19); Wayback shows the pages live
+    "appliedmaterials.com",  # 403 to curl regardless of User-Agent string (verified 2026-09-19); Wayback shows the page live
+    "forbes.com",  # 403 to curl regardless of User-Agent string (verified 2026-09-19); Wayback shows the page live
+    "businesswire.com",  # 403/connection-drop to every automated client tried, including Anthropic's own fetch infra (verified 2026-09-19); Wayback shows the page live
+    "startribune.com",  # persistent 429 to curl regardless of User-Agent string (verified 2026-09-19); Wayback shows the pages live and recent
 }
 
 # Per-host request pacing, in seconds.  Anything not listed uses
