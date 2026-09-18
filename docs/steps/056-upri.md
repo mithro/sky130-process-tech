@@ -21,7 +21,7 @@ The resist is stripped at {ref}`UPRIS <step-057>`, after which the
 poly doping of the process is complete and the film can be capped.
 
 The target is public and unusually explicit: the PDK says of the
-"P− poly precision resistors" that "a separate implant is used to set
+"P- poly precision resistors" that "a separate implant is used to set
 the sheet resistance to 2000 ohm/sq",[^pdk-07] the extraction table
 gives 2000 Ω/sq for the "UHR poly resistor",[^pdk-08] and the drawn
 layer `urpm` is described as the "2000 ohms/square polysilicon

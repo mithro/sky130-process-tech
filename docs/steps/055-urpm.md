@@ -18,7 +18,7 @@ implant, {ref}`UPRI <step-056>`. Everything else — the n⁺ gate film and
 the 300 Ω/sq resistor bodies doped at {ref}`PRI <step-053>` — stays
 under resist. The resist is stripped at {ref}`UPRIS <step-057>`.
 
-The device it serves is public. The PDK lists "P− poly precision
+The device it serves is public. The PDK lists "P- poly precision
 resistors" (`res_xhigh_po`) with the same five fixed widths and layout
 footprints as the 300 Ω/sq family, and states that "a separate implant
 is used to set the sheet resistance to 2000 ohm/sq"; at the time the
