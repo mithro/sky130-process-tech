@@ -91,8 +91,8 @@ deep-dive entries per step page and twelve per category page
   - [x] 001–013 — reviewed, 45 findings fixed (trench depth re-derived from the PDK metal-stack drawing, substrate-doping device name), 3 declined with evidence, verified and merged 2026-09-18
   - [x] 014–034 — reviewed, 23 findings fixed (a truncated patent quotation, a tool class the patent never names, an RTP uniformity figure for the wrong wafer size, the HVTPM reading kept open on 020, 023 and 024), verified and merged 2026-09-18
   - [x] 035–047 — reviewed, 51 findings fixed (PDK threshold-measurement row misread, tunnel-oxide range on the wrong patent, readings used as settled fact), 1 declined, verified with four follow-ups and merged 2026-09-18
-  - [~] 048–063 — reviewed, fix round running
-  - [ ] 064–075
+  - [x] 048–063 — reviewed, 54 findings fixed (a false smallest-line claim for the poly mask, an implanter list undercount, three papers cited for what they do not say, unretrievable job-listing quotations removed), verified with twelve follow-ups and merged 2026-09-18
+  - [~] 064–075 — reviewed, fix round running
   - [ ] 076–088
   - [ ] 089–106
   - [ ] 107–117
