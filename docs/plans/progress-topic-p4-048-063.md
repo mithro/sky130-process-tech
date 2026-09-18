@@ -9,8 +9,8 @@ before being fixed or declined.
 | id | severity | status | note |
 |---|---|---|---|
 | 061-H1 | High | fixed | Confirmed m1.1/m2.1/li.1a = 0.140 µm < poly.1a 0.150 µm and difftap.1 = 0.150 µm (ties) in periphery rules cache; dropped the false "smallest drawn line" superlative, kept the CD-maps-to-gate-length point. |
-| 048-M1 | Medium | open | |
-| 048-M2 | Medium | open | |
+| 048-M1 | Medium | fixed | Confirmed 058-gatenit.md leaves LPCVD-vs-PECVD open and 060-bfr.md hedges the same way; 048 stated it as an inference without noting the open question. Fixed the cross-reference. |
+| 048-M2 | Medium | fixed | Confirmed via OpenAlex: Voutsas & Hatalis 1992 shows the amorphous/poly boundary depends on deposition rate, not just temperature (as-deposited poly obtained at 530 °C by controlling rate); Kamins/Kinsbron place the conventional boundary near 600 °C. Fixed on 048, and the same oversimplified "<580 °C" claim on overview/index.md and categories/deposition.md (minimal edits, shared files). |
 | 049-M1 | Medium | fixed | Confirmed via OpenAlex abstract: Wright 2010 is a sputtered Cr-Si-B-SiO2/Al2O3 thin-film resistor paper, no polysilicon. Annotated Deep dive bullets on 049/053/055 correctly; replaced 053's and 055's in-text sentences. |
 | 050-M1 | Medium | open | |
 | 051-M1 | Medium | fixed | Checked Wayback (`archive.org/wayback/available`, empty) and archive.today (404, no snapshot) for both job-01 and job-03 URLs on 2026-09-18: neither is retrievable or archived. Removed the quoted strings and the specific tool claim on 051/054/057/060; removed job-03 entirely (051/054/057/060 still use job-01 for other, out-of-scope pages, so its inventory key stays; job-03 became fully unused, so its inventory entry was removed). |

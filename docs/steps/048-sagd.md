@@ -54,8 +54,10 @@ no silicide strap on the gate either.
 ## Step category
 
 `SAGD` is a {ref}`Thin-film deposition <category-deposition>` step — a
-furnace LPCVD deposition like {ref}`ISONIT <step-003>` and, we infer,
-{ref}`GATENIT <step-058>`. The category page explains the general
+furnace LPCVD deposition like {ref}`ISONIT <step-003>`;
+{ref}`GATENIT <step-058>` reads the gate nitride as either furnace
+LPCVD or PECVD and does not choose between them.[^skw-01] The category
+page explains the general
 choice between amorphous and polycrystalline deposition; what is
 specific here is that this is the only film in the flow whose grain
 structure is a device parameter. Its grains set the roughness of the
@@ -77,14 +79,21 @@ of the SONOS memory transistor (inference).
 Depositing the film *amorphous* rather than polycrystalline is a
 deliberate choice with three documented benefits:
 
-* **Smoother, finer-grained film.** Below about 580 °C LPCVD silicon
-  deposits amorphous; when it later crystallises it does so by
-  solid-phase nucleation and growth, giving a smooth surface and a
-  grain size controlled by the anneal rather than by the deposition.
-  Voutsas and Hatalis mapped the amorphous-to-polycrystalline
-  transition against deposition temperature and pressure,[^voutsas-1992]
-  and Hatalis and Greve showed that low-temperature annealing of LPCVD
-  a-Si yields grains much larger than as-deposited poly.[^hatalis-1988]
+* **Smoother, finer-grained film.** LPCVD silicon deposited at low
+  temperature is amorphous or polycrystalline depending on the
+  deposition *rate* as well as the temperature: Voutsas and Hatalis
+  obtained as-deposited polycrystalline films at temperatures as low
+  as 530 °C by holding the rate below a critical value, and amorphous
+  films above it,[^voutsas-1992] while Kamins and Kinsbron place the
+  conventional boundary near 600 °C.[^kamins-1980][^kinsbron-1983] A
+  set-point in the 520–560 °C range with a rate above the critical
+  value is the usual industry choice for an amorphous film (typical
+  value, {ref}`category-deposition`). When it later crystallises it
+  does so by solid-phase nucleation and growth, giving a smooth
+  surface and a grain size controlled by the anneal rather than by the
+  deposition. Hatalis and Greve showed that low-temperature annealing
+  of LPCVD a-Si yields grains much larger than as-deposited
+  poly.[^hatalis-1988]
   A smooth top surface matters for the 0.15 µm gate
   lithography[^pdk-periph] ({ref}`P1M <step-061>`) and a smooth, fine-grained sidewall for the
   gate etch ({ref}`P1ME <step-062>`), because columnar as-deposited
@@ -287,8 +296,9 @@ them to a process.
 ## Open questions
 
 * The deposition temperature, pressure, precursor (silane or
-  disilane) and rate are not public; the amorphous regime below about
-  580 °C is an era-typical value from the cited literature.
+  disilane) and rate are not public; a 520–560 °C set-point with the
+  rate held above the critical value is an era-typical choice from the
+  cited literature.
 * This page describes the gate as one layer deposited in one furnace
   run; an in-situ seed or interface layer would also be consistent
   with the public sources.
