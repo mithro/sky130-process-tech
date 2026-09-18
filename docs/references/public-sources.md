@@ -7585,7 +7585,10 @@ C. W. Chung, "Inductively coupled plasma reactive ion etching of
 titanium nitride thin films in a Cl₂/Ar plasma", *Journal of Industrial
 and Engineering Chemistry* **14**(3), 297–302 (2008).
 <https://doi.org/10.1016/j.jiec.2008.01.001> TiN etching in a Cl₂/Ar
-inductively coupled plasma. Used on step 103. Tier: deep dive.
+inductively coupled plasma — the breakthrough chemistry if a metal
+stack's cap is TiN rather than TiW. Used on steps 103, 114 and 125, on
+the etch category page and in the overview's metal-cap section. Tier:
+deep dive.
 
 **PAT-LI-TI-HAKEN** — R. A. Haken and T. C. Holloway (Texas
 Instruments), *VLSI local interconnect structure*, US 4,821,085 A, filed
@@ -7866,9 +7869,17 @@ Notification PIN145273: Improvement of Cypress Minnesota
 Back-End-of-Line Integration for 130nm SONOS Product Families*, document
 001-11741 Rev. *H, 2014-03-13 (copy hosted by Tokyo Electron Device).
 <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>
-The product-change notification that carries the QTP 123907 report and
-describes the TiW-based stack as Cypress's Minnesota process. Used on
-steps 112 and 123. Tier: cross-check.
+The product-change notification that carries the QTP 123907 report. It
+announces the qualification of "industry standard Back-End-of-Line
+(BEOL) integration" for "130nm SONOS Product Families" and says the
+change "aligns our internal Cypress Minnesota process, Titanium Tungsten
+(TiW) based metal stack, with the industry-wide Best Known Method
+Titanium Nitride (TiN) based metal stack", effective from its date of
+2014-03-13, with the integration "tuned to ensure that there are no
+electrical changes". It is therefore evidence that the TiW stack was the
+Minnesota fab's before March 2014 and the TiN one after it, not that the
+TiW stack is current. Used on steps 112 and 123 and in the overview's
+metal-cap section. Tier: cross-check.
 Also used on the PVD cluster tool page.
 Also used on the sputter targets material page.
 
@@ -7897,8 +7908,12 @@ Infineon Technologies).
 <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
 S8TNV-5R metal composition at Bloomington: Metal 1 "100A Ti / 3200A
 Al -0.5%Cu / 300A TiW", Metal 2 the same, Metal 3 "150A Ti / 7200A
-Al -0.5%Cu / 300A TiW". Used on steps 112–114, 118–121, 123–125,
-129–132, 134, 136, 138–141, 145 and 146 and on the etch category page.
+Al -0.5%Cu / 300A TiW". The technology described is **S8TNV-5R**, a
+three-metal 0.13 µm sibling of S8P, and the description predates the
+2013–2014 metal-stack change recorded in CYP-QTP-123907. Used on steps
+112–114, 118–121, 123–125, 129–132, 134, 136, 138–141, 145, 146, 149,
+153, 155 and 160, on the etch category page and in the overview's
+metal-cap section.
 Also used on the metal plasma etcher page.
 Also used on the PVD cluster tool page.
 Tier: cross-check.
@@ -7913,7 +7928,14 @@ and available from cypress.com;
 <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>).
 <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
 S8 "Metal Stack Change from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN in CMI Fab
-4". Used on steps 112 and 117. Tier: cross-check.
+4", qualified for S8DI in June 2013, S8TNV in July 2013 and, "excluding
+top metal layers", for S8P in February 2014. Its only process
+description is S8DI's ("S8DIN-5R", "1P3M, 0.15 um"), giving metals 1 and
+2 as "150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN" and metal 3 as
+"500A TiW/21,250A Al 0.5% Cu/300A TiW". Used on steps 112 and 117, on
+the back-end step pages that depend on the cap composition, and in the
+overview's metal-cap section, which sets out both readings.
+Tier: cross-check.
 Also used on the sputter targets material page.
 
 **DALTON-1990** — C. M. Dalton, "Enhanced selective tungsten
@@ -8603,8 +8625,14 @@ Also used on the PECVD page.
 **LIU-2007-TIW** — G. Liu and Y. Kuo, "Reactive Ion Etching of Titanium
 Tungsten Thin Films", *Journal of The Electrochemical Society*
 **154**(7), H653 (2007). <https://doi.org/10.1149/1.2737631> Reactive
-ion etching of TiW in CF₄/O₂, CF₄/Cl₂ and CF₄/HCl. Used on steps 114,
-125, 136, 138 and 140.
+ion etching of TiW in CF₄/O₂, CF₄/Cl₂ and CF₄/HCl; the abstract reports
+that "Both F and Cl are effective etchants for the titanium tungsten
+film" and that against plasma-enhanced CVD silicon nitride "an etch
+selectivity of greater than 2 was achieved under the low ion
+bombardment condition" — the only public TiW-to-dielectric selectivity
+figure this reference has found, and the basis of the CAPME argument.
+Used on steps 114, 125, 136, 138, 140, 151, 153, 155 and 163, on the
+etch category page and in the overview's metal-cap section.
 Also used on the metal plasma etcher page.
 Tier: deep dive.
 Also used on the etch and chamber-clean gases material page.
@@ -8689,7 +8717,13 @@ using selective etch of top electrodes*, US 8,110,414 B2, filed
 2009-04-30, granted 2012-02-07.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8110414>
 A selective plasma etch of MiM top electrodes that removes no more than
-100 Å of the dielectric. Used on step 138.
+100 Å of the dielectric, with "an etch rate selectivity of the TiN to
+the silicon comprising dielectric layer … at least 8:1" and a worked
+Example 1 in which a 1 800 Å TiN top electrode over a 250 Å
+oxide/SiON/oxide stack on an aluminium bottom electrode is etched in
+"Cl2:90 sccm, Ar:10 sccm, CHF3:10 sccm" at a TiN-to-oxide selectivity of
+210:1. Used on steps 138 and 153 and in the overview's metal-cap
+section.
 Also used on the metal plasma etcher page.
 Tier: cross-check.
 Also used on the etch and chamber-clean gases material page.
