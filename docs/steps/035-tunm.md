@@ -46,8 +46,9 @@ enclosed by areaid.ce" (tunm.8),[^pdk-periph] the "Memory (SRAM) core
 cell identifier" layer.[^pdk-06] A separate rule on the thick-oxide
 layer, "Hvi must not overlap tunm" (hvi.4),[^pdk-periph] keeps the
 memory transistor out of the 5 V thick-oxide regions, which designers
-draw as `hvi` and which are printed as the complement of the
-{ref}`LVOM <step-044>` window.
+draw as `hvi` and which we read as printed by the complement of the
+{ref}`LVOM <step-044>` window (the NOT-`hvi` inference set out
+there).
 
 Together these say that the tunnel window is drawn tightly around the
 gate of each SONOS transistor, that every memory cell sits inside a
