@@ -88,7 +88,7 @@ deliberate choice with three documented benefits:
   conventional boundary near 600 °C.[^kamins-1980][^kinsbron-1983] A
   set-point in the 520–560 °C range with a rate above the critical
   value is the usual industry choice for an amorphous film (typical
-  value, {ref}`category-deposition`). When it later crystallises it
+  value;[^txt-01][^wiki-poly]). When it later crystallises it
   does so by solid-phase nucleation and growth, giving a smooth
   surface and a grain size controlled by the anneal rather than by the
   deposition. Hatalis and Greve showed that low-temperature annealing
@@ -138,8 +138,9 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
   set-point sits comfortably below it.
 * **Thickness.** 0.18 µm in SKY130.[^pdk-03][^pdk-04] Deposition rates
   of a-Si at these temperatures are of the order of a few nm/min
-  (typical industry value, {ref}`category-deposition`), so a 0.18 µm
-  film takes of the order of an hour; the batch furnace amortises that
+  (typical industry value; no public source gives a rate), so a
+  0.18 µm film takes of the order of an hour; the batch furnace
+  amortises that
   over a large load — the Aviza AVP-8000 listing quotes "up to 200
   wafer batches".[^aviza-avp]
 * **Doping.** None at deposition (SkyWater: "undoped"[^skw-01]). In-situ
