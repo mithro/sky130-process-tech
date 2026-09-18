@@ -36,9 +36,12 @@ and that {ref}`LINIT <step-104>` deposits — so the etch is an oxide
 etch that must first stop on nitride, then open the nitride to reach
 the 0.10 µm `li`,[^pdk-04] without punching through it. Where an
 `mcon` sits with zero enclosure at the edge of an `li` line
-(ct.4),[^pdk-periph] part of the hole floor is the {ref}`PSG <step-089>`
-or {ref}`NCAPOX <step-091>` oxide beside the line (inference), and
-the etch must not dig a trench there.
+(ct.4),[^pdk-periph] part of the hole floor is the
+{ref}`LINIT <step-104>` nitride and the {ref}`NILD2 <step-105>` oxide
+that fills the space beside the line (inference); the etch must not
+trench there, since a further 0.10 µm[^pdk-04] would take it past the
+bottom of `li` into the {ref}`PSG <step-089>` or
+{ref}`NCAPOX <step-091>` pre-metal dielectric.
 
 ## Step category
 
