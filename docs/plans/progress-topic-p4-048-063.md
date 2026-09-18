@@ -65,6 +65,28 @@ before being fixed or declined.
 | 063-L1 | Low | fixed | Copied 002/047's correct dual-journal citation for Deal 1980. |
 | 063-L2 | Low | fixed | Confirmed via OpenAlex: Kao et al. measured retardation of curved-surface oxidation, not enhancement. Reworded the bird's-beak sentence. |
 
+## Verifier follow-up (tmp/p4/verify-048-063.md)
+
+An independent verifier found 3 blocking items and 9 low items in the
+first round of fixes above. All independently re-verified and fixed;
+item 4 (JOB-01 on ~29 other pages) is explicitly out of this branch's
+scope per the coordinator (separate sweep).
+
+| id | status | note |
+|---|---|---|
+| B1 | fixed | `categories/deposition.md:63` and `overview/index.md:668` had the amorphous/poly rate direction backwards ("low rate is amorphous"); Voutsas & Hatalis 1992 (re-checked via OpenAlex) says amorphous forms **above** a critical rate. Fixed both to match the already-correct wording on 048-sagd.md. |
+| B2 | fixed | Inventory header said "1720 keyed entries"; confirmed main has exactly 1720 `**KEY** —` lines and the branch's JOB-03 removal left 1719 uncounted. Updated the header. |
+| B3 | fixed | `machines/defect-inspection.md:248` and `machines/index.md:351` still carried P1IS/PRIS/UPRIS/BFR as medium-strength JOB-01 evidence after their own step pages dropped it. Removed the four refs from both rows; added an explanatory sentence on defect-inspection.md. |
+| L1 | fixed | Added step 055 to `LANE-1989`'s "Used on" list (confirmed 049/053/055/056 all cite it). |
+| L2 | fixed | Synced `SEMI-M1` (revision/access date) and `KERN-1970` ("no DOI" note) inventory entries with the page-footnote text added earlier. |
+| L3 | fixed | Lane & Wrixon's design-space figures were stated twice verbatim on 055 (055-M1 and 055-L3 each added them); kept one, made the other a back-reference. |
+| L4 | fixed | 053 called Wright's 20 kOhm/sq film "a comparable sheet resistance" to its own 300 Ohm/sq target (~67x off); reused the accurate "non-poly route / yardstick" wording from 049/055/056. |
+| L5 | fixed | Dropped the unsourced "lighter burden than for arsenic" comparison on 054; Fujimura 1989 makes no species comparison. |
+| L6 | fixed | Fujimura 1991 ties the atomic-oxygen doubling to 10% H2O and the activation-energy fall separately to ">1%" H2O; the page had merged both under 10%. Split them. |
+| L7 | fixed | `categories/deposition.md` gives no deposition rate and only "580-650 C", not 520-560 C; two wrong `{ref}`category-deposition`` cross-references on 048 pointed there. Repointed one to the correct existing citation, dropped the false cross-ref from the uncited (pre-existing, not a regression) rate figure. |
+| L8 | fixed | 063's "which lowers the field at the drain corner" had drifted onto the shrinking of the bird's-beak effect rather than the beak itself, inverting the argument. Reattached it correctly. |
+| L9 | fixed | On 052, the "(our extraction ... slope of the sweep)" qualifier had drifted next to the rpm.1b/poly.3 design-rule clause, implying those published rule values were measured. Moved it back next to the actual measured resistances. |
+
 ## Checkers and build
 
 To run from the worktree in the foreground before finishing:
