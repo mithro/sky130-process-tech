@@ -40,21 +40,27 @@ metal with very high {term}`selectivity` to a very thin dielectric —
 for a TiW plate on an oxynitride, as assumed here (see
 {ref}`CAPTIW1 <step-136>` and {ref}`CAPILD <step-135>`), a
 fluorine-etchable metal over a fluorine-etchable dielectric — and to
-stop within a few nanometres. A Texas
-Instruments patent on the same operation for a TiN top electrode
-states the target: a silicon-based dielectric "<1,000 Å" thick
-(typically 150–400 Å), and a dry etch of the top electrode that
-removes no more than 100 Å (typically under 50 Å) of it, using a
-chlorine- or bromine-based first halogen gas, a fluorocarbon (CHF₃,
-CH₂F₂ or CF₄) as the fluorine-bearing second halogen gas, and a
-noble-gas carrier.[^pat-mim-ti-etch] The other two patents take the
-alternative, in which the dielectric is patterned with the plate. The
-Philips patent etches its ~3000 Å TiN top electrode and the insulator
-in a multi-rate etch, slowing near the TiN/insulator interface and
-stopping close to the TiN ARC on the bottom
-electrode;[^pat-mim-philips] the Newport Fab process etches the TiN
-top plate and the nitride dielectric together and then protects the
-stack's sidewall with an oxide spacer.[^pat-mim-newportfab]
+stop within a few nanometres. A Texas Instruments patent that may still
+be in force states the target for exactly this operation — the
+dielectric thickness it assumes, how little of it the etch may remove
+and the gas scheme it uses; those sentences are in the collapsed note
+below. The other two patents take the alternative, in which the
+dielectric is patterned with the plate. The Philips patent etches its
+~3000 Å TiN top electrode and the insulator in a multi-rate etch,
+slowing near the TiN/insulator interface and stopping close to the TiN
+ARC on the bottom electrode;[^pat-mim-philips] the Newport Fab process
+etches the TiN top plate and the nitride dielectric together and then
+protects the stack's sidewall with an oxide spacer.[^pat-mim-newportfab]
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+A Texas Instruments patent on the same operation for a TiN top
+electrode states the target: a silicon-based dielectric "<1,000 Å" thick
+(typically 150–400 Å), and a dry etch of the top electrode that removes
+no more than 100 Å (typically under 50 Å) of it, using a chlorine- or
+bromine-based first halogen gas, a fluorocarbon (CHF₃, CH₂F₂ or CF₄) as
+the fluorine-bearing second halogen gas, and a noble-gas
+carrier.[^pat-mim-ti-etch]
+:::
 
 Which of the two SKY130 follows — stop on the dielectric, or cut
 through it — is not public, and the public numbers bear on it in two
@@ -76,33 +82,39 @@ plate at a selectivity of 2 would cost some 50 nm of dielectric, more
 than the whole capacitor dielectric on this reference's estimate (our
 arithmetic). What can be said is that no published TiW figure shows the
 margin such an etch needs. The Texas Instruments patent, whose top
-electrode is TiN and whose dielectric is silicon-based, reports that
-"an etch rate selectivity of the TiN to the silicon comprising
-dielectric layer is at least 8:1", and its worked Example 1 does much
-better still. There a 1 800 Å TiN top electrode over "a 250 A thick
-dielectric stack comprising silicon oxide/SiON/silicon oxide" on an
-aluminium bottom electrode was etched on an Applied Materials DPS with
-"Cl2:90 sccm, Ar:10 sccm, CHF3:10 sccm" at 15 mTorr, 25 W bias and an
-800 W source; "the TiN:oxide selectivity was found to be 210:1 and the
-TiN etch rate was found to be about 1,800 A/min", and "a 365 nm
-wavelength … was used to allow the TiN etch to endpoint on the thin
-silicon oxide layer".[^pat-mim-ti-etch] That is a published
-stop-on-dielectric etch of a MiM top plate over an aluminium bottom
-electrode, on a dielectric ten times thinner than the plate — the
+electrode is TiN and whose dielectric is silicon-based, reports a
+selectivity and a worked example that do have that margin; the figures,
+the chemistry and the tool are in the collapsed note below. That is a
+published stop-on-dielectric etch of a MiM top plate over an aluminium
+bottom electrode, on a dielectric ten times thinner than the plate — the
 operation this step performs.
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+The Texas Instruments patent reports that "an etch rate selectivity of
+the TiN to the silicon comprising dielectric layer is at least 8:1", and
+its worked Example 1 does much better still. There a 1 800 Å TiN top
+electrode over "a 250 A thick dielectric stack comprising silicon
+oxide/SiON/silicon oxide" on an aluminium bottom electrode was etched on
+an Applied Materials DPS with "Cl2:90 sccm, Ar:10 sccm, CHF3:10 sccm" at
+15 mTorr, 25 W bias and an 800 W source; "the TiN:oxide selectivity was
+found to be 210:1 and the TiN etch rate was found to be about
+1,800 A/min", and "a 365 nm wavelength … was used to allow the TiN etch
+to endpoint on the thin silicon oxide layer".[^pat-mim-ti-etch]
+:::
 
 The two sets of numbers are not directly comparable, and this page does
 not treat them as though they were: Liu and Kuo etch **TiW** against
-**silicon nitride** in a **CF₄-based** plasma, while the TI figures are
-**TiN** against silicon **oxide** in a **chlorine-majority** chemistry
-with 10 sccm of CHF₃ — a different film, a different dielectric and a
-different chemistry.[^liu-2007-tiw][^pat-mim-ti-etch] What the
-comparison supports is the chemistry: a chlorine-majority recipe with a
-small fluorine addition is the one for which a stop on a thin
-silicon-based dielectric is publicly demonstrated, and this reference
-reads the SKY130 recipe that way (inference). It is a consideration that
-{ref}`CAPTIW1 <step-136>` weighs in choosing between a TiW and a TiN
-plate, not a settled argument about the plate material.
+**silicon nitride** in a **CF₄-based** plasma,[^liu-2007-tiw] while the
+Texas Instruments figures are for a different film, a different
+dielectric and a different chemistry — which, the collapsed note above
+sets out. What the comparison supports is the chemistry: this reference
+reads the SKY130 recipe as a chlorine-majority one with a small
+fluorine addition (inference; Liu and Kuo found both fluorine and
+chlorine effective etchants on TiW,[^liu-2007-tiw] and the published
+stop-on-dielectric demonstration is the one in the collapsed note
+above). It is a consideration that {ref}`CAPTIW1 <step-136>` weighs in
+choosing between a TiW and a TiN plate, not a settled argument about the
+plate material.
 
 What the etch would have left to stop on if it did cut through depends
 on the unresolved metal-3 cap. If the cap is TiW — the same material as
@@ -136,18 +148,17 @@ fluorine and chlorine effective etchants, with the rate set by the
 etchant concentration and the ion energy. The only selectivity they
 report against plasma-enhanced CVD silicon nitride is "greater than 2 …
 under the low ion bombardment condition" — a floor, with no upper figure
-given[^liu-2007-tiw] — where the TI patent reports "at least 8:1" for a
-TiN top electrode over a silicon-based dielectric in a
-chlorine-majority chemistry;[^pat-mim-ti-etch] the two are not directly
-comparable (different film, dielectric and chemistry), and at that floor
-an etch clearing 0.1 µm of TiW would consume more dielectric than the
-capacitor has (our arithmetic). Chlorine
-also etches both metals — Fischl and Hess studied tungsten in
-chlorine discharges[^fischl-1987] — and the TI recipe's majority
-Cl₂ (or Br₂) with a small fluorocarbon addition[^pat-mim-ti-etch] is,
-on our reading, a blend chosen so that the metal etches by chlorine
-while the oxide-like dielectric, which chlorine alone barely etches,
-is attacked only by the small fluorine fraction. What is specific
+given[^liu-2007-tiw] — where the Texas Instruments patent, which may
+still be in force, reports a much higher figure for a different film,
+dielectric and chemistry (collapsed notes above), so that the two are
+not directly comparable; and at that floor an etch clearing 0.1 µm of
+TiW would consume more dielectric than the capacitor has (our
+arithmetic). Chlorine also etches both metals — Fischl and Hess studied
+tungsten in chlorine discharges[^fischl-1987] — and a majority chlorine
+flow with a small fluorocarbon addition is, on our reading, a blend
+chosen so that the metal etches by chlorine while the oxide-like
+dielectric, which chlorine alone barely etches, is attacked only by the
+small fluorine fraction. What is specific
 to this instance within the flow is the stop: the other refractory
 etches (the TiN local interconnect of {ref}`LI1ME <step-103>`, the
 caps opened at the start of every aluminium etch) land on thick
@@ -168,10 +179,10 @@ than its own {term}`over-etch` would normally consume.
   TiN as TiF₄ — punching through would thin the cap of every metal-3
   line (the film {ref}`VIM3E <step-145>` later
   stops on) and expose aluminium to a fluorine plasma, which forms
-  involatile AlF₃ rather than etching it[^hess-1982][^pat-mim-ti-etch] — a residue the
+  involatile AlF₃ rather than etching it[^hess-1982] — a residue the
   {ref}`MM3E <step-140>` chlorine etch would then have to break
-  through. The ≤100 Å loss the TI patent allows[^pat-mim-ti-etch] is
-  the scale of the margin.
+  through. The dielectric loss the Texas Instruments patent allows (the
+  collapsed notes above) is the scale of the margin.
 * **It must not damage the dielectric under the plates.** Ion
   bombardment and {term}`charging <plasma charging>` during the over-etch reach the capacitor
   through its top plate: the plate is a metal island on a thin
@@ -209,8 +220,8 @@ end (SKY130's recipe is not public):
    short O₂/N₂ step.
 3. **Main etch.** A halogen chemistry — Cl₂ (or BCl₃) with a small
    fluorine-bearing addition such as CF₄, CHF₃ or SF₆, in argon (the
-   TI patent's Cl₂ or Br₂ / fluorocarbon / noble-gas
-   scheme[^pat-mim-ti-etch]) — at moderate bias; for a ~0.1 µm
+   scheme of the Texas Instruments patent in the collapsed notes above)
+   — at moderate bias; for a ~0.1 µm
    film the main etch is short (our estimate), and Turban et al. and
    Liu and Kuo give the dependence of the rate on chemistry, power
    and pressure.[^turban-1989][^liu-2007-tiw] Flamm and Donnelly and
@@ -222,7 +233,7 @@ end (SKY130's recipe is not public):
    — the reverse of Wodecki's low-open-area via problem.[^wodecki-1999]
    The over-etch is short and at reduced bias, sized to clear TiW
    stringers while removing at most a few nanometres of the dielectric
-   (the TI patent's ≤100 Å[^pat-mim-ti-etch]).
+   (the target in the collapsed notes above).
 5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` — the "Gasonic
    PEP", Iridia or Mattson class in SkyWater's list[^skw-01] — then a
    solvent or semi-aqueous clean (SkyWater lists "EKS265, EKC270
@@ -273,7 +284,8 @@ end (SKY130's recipe is not public):
 * **{ref}`Cl₂ <material-etch-gases>`** (or **BCl₃**, **Br₂** or **HBr**) with a small flow of a
   fluorine-bearing gas (**CF₄**, **CHF₃**, **CH₂F₂** or **SF₆**) in
   **{ref}`Ar <material-process-gases>`**, **He** or **N₂** for the etch (industry
-  practice;[^nojiri-2015][^pat-mim-ti-etch] SkyWater lists no gases
+  practice[^nojiri-2015] and the collapsed notes above; SkyWater lists
+  no gases
   for its metal etchers, but names Cl₂, HBr, CF₄, CHF₃ and SF₆ on its
   poly/silicon etchers[^skw-01]); **He** for backside cooling. The
   gas set is the one given at {ref}`CAP2ME <step-153>`, since the PDK
