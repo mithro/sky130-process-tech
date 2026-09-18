@@ -546,7 +546,8 @@ serial nvSRAM family describes the technology as "S8TNV-5R", the fab as
 "Fab4 / S8TNV-5" and the design rule as "S8TNV-5R/0.13m", and gives
 "Metal 1: 100A Ti / 3200A Al -0.5%Cu / 300A TiW", the same for metal 2,
 and "Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW".[^cyp-qtp-113005]
-Two older reports for the same fab show the sandwich's lineage: a 0.18 µm
+Two reports for older technologies at the same fab show the sandwich's
+lineage: a 0.18 µm
 derivative with "Metal 1: 150Å Ti / 4,200Å Al / 300Å TiW" and
 "Metal 3: 150Å Ti / 8,000Å Al / 300Å TiW",[^cyp-qtp-014807] and a 0.42 µm
 process with "TiW, AlCu, TiW / 500A, 6000A, 300A".[^cyp-qtp-030204]
@@ -683,9 +684,15 @@ What the PDK's electrical numbers do **not** do is discriminate. The
 published sheet resistances — 125 mΩ/sq at metals 1 and 2, 47 mΩ/sq at
 metals 3 and 4 and 29 mΩ/sq at metal 5[^pdk-08] — are set by the
 aluminium, which is 3 200 Å in both the 2013 and the 2014
-stack;[^cyp-qtp-113005][^cyp-qtp-123907] 750–990 Å of titanium and
-titanium nitride conducting in parallel with 0.125 Ω/sq shifts the sheet
-resistance by well under one per cent (our arithmetic). Neither does
+stack.[^cyp-qtp-113005][^cyp-qtp-123907] The claddings conduct in
+parallel with it, but weakly: at 50–200 µΩ·cm for a refractory film
+(typical industry values[^txt-02]), 300 Å of TiW lowers a 0.125 Ω/sq
+sheet by 0.2–0.7 % and the 990 Å of the 2014 cladding by 0.6–2.4 %, so
+the two differ from each other by 0.4–1.7 % (our arithmetic) — smaller
+than the discrepancy in the aluminium's own resistivity that
+{ref}`TIAL6 <step-112>` records, where 125 mΩ/sq over 3 200 Å implies
+about 4.0 µΩ·cm against the ≈3 µΩ·cm typical of sputtered
+Al–0.5%Cu.[^pdk-08][^txt-02] Neither does
 SkyWater's capability list discriminate: its {term}`PVD` films include
 "Aluminum both pure and Cu doped", "TiW", "ESC TiN", "Imp TiN" and
 "Collimated Ti", and both metal etchers are qualified for "Al, TiW,
@@ -720,12 +727,15 @@ are the places where it changes the answer.
   {ref}`CAP2ME <step-153>`).
 * **The via landing layer.** Vias 1 to 4 land on the cap of the metal
   below. Both films etch in fluorine to volatile fluorides, so a
-  fluorine-rich over-etch thins either; but a TiN floor is the ordinary
-  case of the via-etch literature and of the contemporaneous patents,
-  which measure oxide-to-stop selectivities against TiN — 28.4:1 for an
-  Ar/CF₄/CHF₃ etch in Texas Instruments' etch-stop patent — while nothing
-  public gives the corresponding figure for TiW,[^pat-etchstop-ti]
-  whereas a TiW floor is the less common one ({ref}`VIME <step-119>`,
+  fluorine-rich over-etch thins either; but it is a TiN floor that the
+  contemporaneous patents describe and measure. Texas Instruments'
+  etch-stop patent says that "TiN may be used as the via etch stop and
+  ARC layer over the interconnect conductor or the top electrode in
+  memory cells, but its etch selectivity to oxide is only 30:1", and
+  measures 28.4:1 for an Ar/CF₄/CHF₃ etch; nothing public gives the
+  corresponding figure for TiW.[^pat-etchstop-ti] So on a TiN cap the
+  margin is the one that patent calls insufficient for long over-etches,
+  and on a TiW cap it is not public at all ({ref}`VIME <step-119>`,
   {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`,
   {ref}`VIM4E <step-160>`).
 * **The metal-etch breakthrough.** A chlorine-based aluminium etch must
