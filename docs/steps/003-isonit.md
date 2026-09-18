@@ -80,10 +80,11 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
   nitride is deposited at roughly 700–800 °C and a few hundred mTorr in
   a hot-wall furnace; an NH₃ : DCS ratio well above the stoichiometric
   4 : 3 is used to keep the film silicon-poor and
-  stoichiometric.[^txt-02] The Cypress {term}`ONO` patents describe the same
-  DCS/NH₃ LPCVD chemistry for the {term}`SONOS` nitride, at "about 700° C. to
-  about 875° C."[^pat-01] and 700–850 °C, 5–500 mTorr,[^pat-02] which
-  shows that this chemistry is native to the Cypress furnace set.
+  stoichiometric.[^txt-02] The same DCS/NH₃ LPCVD chemistry is used for
+  the {term}`SONOS` nitride: one embodiment of US 6,969,689 forms the
+  nitride at temperatures "from about 700° C. to about 875° C."[^pat-01]
+  and a later Cypress patent gives 700–850 °C, 5–500 mTorr,[^pat-02]
+  which shows that this chemistry is native to the Cypress furnace set.
 * **Film properties.** Stoichiometric LPCVD nitride is under about
   1 GPa of tensile stress and has a refractive index near 2.0; both are
   monitored as process-control signals.[^txt-02]
