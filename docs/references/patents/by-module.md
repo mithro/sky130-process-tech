@@ -90,6 +90,8 @@ Steps 14–34.
 
 Steps 35–42.
 
+* {ref}`US 5,648,669 A <patent-gp23795580>` — High speed flash memory cell structure and method (1995-05-26)
+* {ref}`US 5,635,765 A <patent-gp24428538>` — Multi-layer gate structure (1996-02-26)
 * {ref}`US 5,897,354 A <patent-gp25083775>` — Method of forming a non-volatile memory device with ramped tunnel dielectric layer (1996-12-17)
 * {ref}`US 5,963,801 A <patent-gp25087511>` — Method of forming retrograde well structures and punch-through barriers using low energy implants (1996-12-19)
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
@@ -104,6 +106,7 @@ Steps 35–42.
 * {ref}`US 2011/0006372 A1 <patent-gp29999977>` — Formation of standard voltage threshold and low voltage threshold mosfet devices (2002-07-08)
 * {ref}`US 6,943,126 B1 <patent-gp34910591>` — unknown
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
+* {ref}`US 9,196,495 B2 <patent-gp39675401>` — unknown
 * {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 2013/0178031 A1 <patent-gp48744178>` — unknown
@@ -135,6 +138,8 @@ Steps 35–42.
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 2013/0178030 A1 <patent-gp48744177>` — unknown
+* {ref}`US 9,564,331 B2 <patent-gp49777200>` — unknown
+* {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,614,105 B2 <patent-gp51728382>` — unknown
@@ -144,6 +149,7 @@ Steps 35–42.
 * {ref}`TW I640082 B <patent-gp52707807>` — in force
 * {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
+* {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
@@ -416,6 +422,7 @@ Steps 164–171.
 * {ref}`US 4,986,878 A <patent-gp22827270>` — Process for improved planarization of the passivation layers for semiconductor devices (1988-07-19)
 * {ref}`US 5,380,401 A <patent-gp21710466>` — Method to remove fluorine residues from bond pads (1993-01-14)
 * {ref}`US 5,872,390 A <patent-gp24070664>` — Fuse window with controlled fuse oxide thickness (1995-08-28)
+* {ref}`US 5,650,666 A <patent-gp24244903>` — Method and apparatus for preventing cracks in semiconductor die (1995-11-22)
 * {ref}`US 5,872,387 A <patent-gp24345606>` — Deuterium-treated semiconductor devices (1996-01-16)
 * {ref}`US 5,911,887 A <patent-gp24743931>` — Method of etching a bond pad (1996-07-19)
 * {ref}`US 5,789,302 A <patent-gp25239372>` — Crack stops (1997-03-24)
@@ -435,6 +442,7 @@ Steps 164–171.
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
 * {ref}`US 10,003,022 B2 <patent-gp54018263>` — in force
 * {ref}`US 9,431,609 B2 <patent-gp55302792>` — in force
+* {ref}`US 9,461,247 B2 <patent-gp40431642>` — unknown
 * {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
 * {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
@@ -655,6 +663,7 @@ that are not specific to one step.
 * {ref}`US 6,660,603 B2 <patent-gp22880690>` — Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions (2000-09-21)
 * {ref}`US 6,379,849 B1 <patent-gp24795638>` — Method for forming binary intensity masks (2000-10-26)
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
+* {ref}`US 6,461,904 B1 <patent-gp25047874>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)

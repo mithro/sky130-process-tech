@@ -19,6 +19,10 @@ rather than the name on the published document itself (five cases
 found by the round-1 review's cross-check against EPO data); a
 heading here is not necessarily the name printed on the patent.
 
+## Cypress Semiconductor
+
+* {ref}`US 5,648,669 A <patent-gp23795580>` — High speed flash memory cell structure and method (1995-05-26)
+
 ## Cypress Semiconductor Company
 
 * {ref}`US 7,396,773 B1 <patent-gp39589560>` — unknown
@@ -33,6 +37,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 5,562,801 A <patent-gp23382383>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,441,596 A <patent-gp23077300>` — Method for forming a stable plasma (1994-07-27)
 * {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-04)
+* {ref}`US 5,650,666 A <patent-gp24244903>` — Method and apparatus for preventing cracks in semiconductor die (1995-11-22)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
 * {ref}`US 6,579,777 B1 <patent-gp24349726>` — Method of forming local oxidation with sloped silicon recess (1996-01-16)
@@ -80,6 +85,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 8,030,172 B1 <patent-gp44676718>` — unknown
 * {ref}`US 6,756,315 B1 <patent-gp32508386>` — unknown
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
+* {ref}`US 6,461,904 B1 <patent-gp25047874>` — unknown
 * {ref}`US 6,593,208 B1 <patent-gp25130177>` — Method of uniform polish in shallow trench isolation process (2001-02-14)
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
@@ -204,6 +210,7 @@ heading here is not necessarily the name printed on the patent.
 
 ## Cypress Semiconductor Corporation
 
+* {ref}`US 5,635,765 A <patent-gp24428538>` — Multi-layer gate structure (1996-02-26)
 * {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997-09-03)
 * {ref}`US 6,273,098 B1 <patent-gp25524224>` — Extension of the useful life of a chemical bath used to process a substrate (1997-11-24)
 * {ref}`US 6,638,856 B1 <patent-gp29249879>` — Method of depositing metal onto a substrate (1998-09-11)
@@ -211,6 +218,11 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 9,831,113 B2 <patent-gp39594663>` — unknown
+* {ref}`US 9,196,495 B2 <patent-gp39675401>` — unknown
+* {ref}`US 9,564,331 B2 <patent-gp49777200>` — unknown
+* {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
+* {ref}`US 9,461,247 B2 <patent-gp40431642>` — unknown
+* {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
 
 ## SkyWater Technology Foundry Inc
 
