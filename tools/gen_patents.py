@@ -326,7 +326,8 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
         "Patents family table and citation lists, by a handful of assignee+keyword searches for "
         "specific process modules, and by an `assignee=\"Weebit Nano\"` search once ReRAM was brought "
         "into scope. It is **not** the result of an exhaustive, systematic sweep of every process "
-        "module against every lineage assignee: a round-1 independent review of this dataset (recorded in the planning files) found at least a dozen absent Cypress/"
+        "module against every lineage assignee: an independent review of this dataset during its "
+        "construction found at least a dozen absent Cypress/"
         "Infineon families from just three more searches, named six process modules never searched at "
         f"all, and notes that the index holds {count_families(cypress, 'Cypress Semiconductor')} and "
         f"{count_families(infineon, 'Infineon Technologies')} but {skywater_clause}, though SkyWater is "
@@ -348,7 +349,8 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
         "contain** -- mostly a large Spansion estate that needs the same per-family lineage reasoning as "
         "the two Spansion families already added, plus a number of Weebit Nano hits not yet triaged "
         "individually. The full sweep, every family's triage decision and the reason for each are "
-        "recorded in the repository at `docs/plans/patent-discovery-log.md` (outside the built site).",
+        "recorded in the repository at `docs/plans/patent-discovery-log.md` (outside the built "
+        "site).",
     ]
 
 
