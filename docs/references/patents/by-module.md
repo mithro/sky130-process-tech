@@ -123,6 +123,8 @@ Steps 35–42.
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
 * {ref}`US 2011/0006372 A1 <patent-gp29999977>` — Formation of standard voltage threshold and low voltage threshold mosfet devices (2002-07-08)
 * {ref}`US 6,943,126 B1 <patent-gp34910591>` — unknown
+* {ref}`US 9,472,563 B2 <patent-gp37683063>` — unknown
+* {ref}`US 9,159,568 B2 <patent-gp39526088>` — unknown
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
 * {ref}`US 9,196,495 B2 <patent-gp39675401>` — unknown
 * {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
@@ -165,6 +167,7 @@ Steps 35–42.
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
 * {ref}`TW I640082 B <patent-gp52707807>` — in force
+* {ref}`US 9,917,211 B2 <patent-gp38470761>` — unknown
 * {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
@@ -249,6 +252,7 @@ Steps 64–75.
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
+* {ref}`US 7,936,023 B1 <patent-gp43903297>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 
 ## Spacers and source/drain
@@ -325,12 +329,14 @@ Steps 89–106.
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 7,253,094 B1 <patent-gp38324318>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
+* {ref}`US 8,399,360 B1 <patent-gp47844682>` — unknown
 * {ref}`US 7,901,976 B1 <patent-gp43639265>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,299,643 B2 <patent-gp42056520>` — unknown
 * {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
 * {ref}`US 9,209,197 B2 <patent-gp50929922>` — unknown
 * {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
+* {ref}`US 10,516,044 B2 <patent-gp39318438>` — unknown
 * {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
 
@@ -616,6 +622,7 @@ Steps 164–171.
 * {ref}`US 8,236,151 B1 <patent-gp46583180>` — unknown
 * {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
+* {ref}`US 9,318,373 B2 <patent-gp39542510>` — unknown
 
 ## Materials
 
@@ -818,9 +825,11 @@ that are not specific to one step.
 * {ref}`US 7,678,640 B1 <patent-gp41819476>` — unknown
 * {ref}`US 9,171,936 B2 <patent-gp39272978>` — unknown
 * {ref}`US 9,728,414 B2 <patent-gp39527860>` — unknown
+* {ref}`US 9,318,333 B2 <patent-gp39582617>` — unknown
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 8,119,538 B1 <patent-gp45571996>` — unknown
+* {ref}`US 8,154,088 B1 <patent-gp45922088>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,334,578 B2 <patent-gp42171130>` — unknown
 * {ref}`US 2011/0308955 A1 <patent-gp44483291>` — unknown
