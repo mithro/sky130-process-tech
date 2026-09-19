@@ -765,11 +765,9 @@ heading here is not necessarily the name printed on the patent.
 ## Spansion LLC (now AMD US Holdings Inc, Infineon Technologies LLC, Spansion Inc)
 
 * {ref}`US 7,439,141 B2 <patent-gp26708682>` — Shallow trench isolation approach for improved STI corner rounding (2001-12-27)
-* {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 6,963,106 B1 <patent-gp32825106>` — Memory array with memory cells having reduced short channel effects (2003-05-03)
 * {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
 * {ref}`US 7,989,328 B2 <patent-gp39526963>` — unknown
-* {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 
 ## Startec Ventures Inc (now LAir Liquide SA pour lEtude et lExploitation des Procedes Georges Claude)
 

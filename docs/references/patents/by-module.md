@@ -629,7 +629,6 @@ Steps 164–171.
 * {ref}`US 6,866,571 B1 <patent-gp34271789>` — unknown
 * {ref}`US 2004/0069224 A1 <patent-gp32068901>` — Cold trap for CVD furnace (2002-10-11)
 * {ref}`US 7,024,954 B1 <patent-gp36127565>` — unknown
-* {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,514,373 B2 <patent-gp33457548>` — Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency energy (2003-05-28)
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
@@ -647,7 +646,6 @@ Steps 164–171.
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
 * {ref}`US 8,236,151 B1 <patent-gp46583180>` — unknown
-* {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,318,373 B2 <patent-gp39542510>` — unknown
 
