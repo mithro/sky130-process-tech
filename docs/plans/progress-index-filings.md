@@ -456,3 +456,17 @@ tools/check_patents.py`: 252 patent families, 0 problems. `uv run
 tools/gen_patents.py --check`: 6 pages, 0 problems. `uv run
 sphinx-build -W -q -b html docs tmp/build-filings-r5`: clean, exit 0.
 Pushed to `topic/index-filings-r5`.
+
+### Round 5 — verification follow-ups (2026-09-19)
+
+* The FY2022 Weebit Nano summary no longer says the report covers the
+  licensing deal "for a full financial year"; it is the first annual
+  report to cover it. Earlier Weebit annual reports (FY2019–FY2021)
+  predate the deal and are out of scope.
+* Open, for a later round: of the 100 quotation locations the online
+  check does not verify, about 44 are documents whose Item captions are
+  mixed-case (the caption test is upper-case only) and about 15 are HTML
+  documents flattened without line breaks (the heading test wants a line
+  start); sub-item numbers such as "4.01" are read as "4"; the quotation
+  should be located on the same normalised text as the verbatim check;
+  PDFs are parsed twice per run.
