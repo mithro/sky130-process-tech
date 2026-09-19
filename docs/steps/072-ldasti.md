@@ -221,9 +221,6 @@ Status and expiry are estimates from public records and are not legal advice.
   thermal-wave implant monitor.[^smith-1985]
 
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
-:::
-
-:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 * Ramkumar, Kouznetsov and Prabhakar (Cypress), US 8,796,098 — the
   embedded SONOS cell with its own implants.[^pat-04]
 :::

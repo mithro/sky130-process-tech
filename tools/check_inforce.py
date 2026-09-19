@@ -405,6 +405,7 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
                problems: list[str], reverse: list[str]) -> None:
     rel = path.relative_to(ROOT) if ROOT in path.parents else path.name
     flat, linemap = flatten(text)
+    lines = text.split("\n")
     inside = dropdown_lines(text)
     defs = footnote_defs(text)
     inv = inventory_entries(text) if path.name == INVENTORY.name else {}
@@ -454,6 +455,14 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
             continue
         lines, body = inv[key]
         check_flag(f"{rel}:{min(lines)}: inventory entry {key}", body, fam, problems)
+
+    # An empty collapsed block renders as a collapsible with nothing in it:
+    # the note's content was lost, or the block is a duplicate artefact.
+    for start, title, body in dropdown_blocks(text):
+        content = [lines[i - 1] for i in sorted(body) if i - 1 < len(lines)]
+        if not any(l.strip() and not FENCE_BARE_RE.match(l) for l in content):
+            problems.append(f"{rel}:{start}: empty {{dropdown}} block "
+                            f"({title[:60]!r}) — it renders as an empty collapsible")
 
     # reverse report: collapsed notes and flags kept for a family that the
     # dataset now shows as expired, so they can be opened up again.
@@ -583,6 +592,20 @@ def selftest() -> int:
         fail("a number split over a line break was not found")
     if lines[flat.index("8,093,128")] != 2:
         fail("line map wrong for a wrapped match")
+
+    # 3b. An empty dropdown is reported.
+    ps = []
+    check_page(Path("e.md"),
+               "# P\n\n:::{dropdown} t\n:::\n\ntext\n",
+               Matcher([]), {}, {}, Matcher([]), ps, [])
+    if not any("empty {dropdown}" in x for x in ps):
+        fail(f"an empty dropdown was not reported: {ps}")
+    ps = []
+    check_page(Path("f.md"),
+               "# P\n\n:::{dropdown} t\nbody\n:::\n",
+               Matcher([]), {}, {}, Matcher([]), ps, [])
+    if ps:
+        fail(f"a non-empty dropdown was reported: {ps}")
 
     # 4. Dropdown detection, colon and backtick fences, and nesting.
     text = ("a\n"
