@@ -106,10 +106,13 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,817,903 B1 <patent-gp33418789>` — Process for reducing leakage in an integrated circuit with shallow trench isolated active areas (2000-08-09)
 * {ref}`US 2004/0183199 A1 <patent-gp32991247>` — unknown
 * {ref}`US 8,030,172 B1 <patent-gp44676718>` — unknown
+* {ref}`US 6,803,318 B1 <patent-gp33098477>` — unknown
 * {ref}`US 6,756,315 B1 <patent-gp32508386>` — unknown
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
 * {ref}`US 6,461,904 B1 <patent-gp25047874>` — unknown
+* {ref}`US 6,780,771 B1 <patent-gp32869920>` — unknown
 * {ref}`US 6,593,208 B1 <patent-gp25130177>` — Method of uniform polish in shallow trench isolation process (2001-02-14)
+* {ref}`US 6,509,270 B1 <patent-gp25239028>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
@@ -265,6 +268,12 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,734,108 B1 <patent-gp32230148>` — unknown
 * {ref}`US 6,525,962 B1 <patent-gp24168163>` — unknown
 * {ref}`US 6,518,591 B1 <patent-gp22757080>` — unknown
+* {ref}`US 6,635,566 B1 <patent-gp24376952>` — unknown
+* {ref}`US 6,808,944 B1 <patent-gp33159967>` — unknown
+* {ref}`US 6,911,395 B1 <patent-gp34681120>` — unknown
+* {ref}`US 7,172,914 B1 <patent-gp37696594>` — unknown
+* {ref}`US 6,844,237 B1 <patent-gp33565426>` — unknown
+* {ref}`US 6,852,649 B1 <patent-gp34104919>` — unknown
 * {ref}`US 6,887,784 B1 <patent-gp34520316>` — unknown
 * {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
@@ -275,6 +284,10 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
 * {ref}`US 9,461,247 B2 <patent-gp40431642>` — unknown
 * {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
+
+## Cypress Semiconductor, Corporation
+
+* {ref}`US 6,436,799 B1 <patent-gp24688938>` — unknown
 
 ## SkyWater Technology Foundry Inc
 

@@ -248,24 +248,34 @@ first, and then by status.
 * {ref}`US 6,518,591 B1 <patent-gp22757080>` — unknown
 * {ref}`US 6,653,803 B1 <patent-gp24331908>` — Integrated resonator and amplifier system (2000-05-30)
 * {ref}`US 6,399,512 B1 <patent-gp24376957>` — unknown
+* {ref}`US 6,635,566 B1 <patent-gp24376952>` — unknown
 * {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
 * {ref}`US 7,305,999 B2 <patent-gp24449421>` — Centrifugal spray processor and retrofit kit (2000-07-07)
 * {ref}`US 6,841,008 B1 <patent-gp33552841>` — unknown
+* {ref}`US 6,808,944 B1 <patent-gp33159967>` — unknown
 * {ref}`US 6,521,502 B1 <patent-gp24538683>` — Solid phase epitaxy activation process for source/drain junction extensions and halo regions (2000-08-07)
 * {ref}`US 6,817,903 B1 <patent-gp33418789>` — Process for reducing leakage in an integrated circuit with shallow trench isolated active areas (2000-08-09)
 * {ref}`US 6,759,288 B2 <patent-gp24577983>` — Double LDD devices for improved DRAM refresh (2000-08-22)
 * {ref}`US 2004/0183199 A1 <patent-gp32991247>` — unknown
 * {ref}`US 8,030,172 B1 <patent-gp44676718>` — unknown
+* {ref}`US 6,803,318 B1 <patent-gp33098477>` — unknown
 * {ref}`US 6,723,998 B2 <patent-gp26926543>` — Faraday system for ion implanters (2000-09-15)
 * {ref}`US 6,660,603 B2 <patent-gp22880690>` — Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions (2000-09-21)
+* {ref}`US 6,911,395 B1 <patent-gp34681120>` — unknown
+* {ref}`US 6,436,799 B1 <patent-gp24688938>` — unknown
 * {ref}`US 6,756,315 B1 <patent-gp32508386>` — unknown
 * {ref}`US 6,379,849 B1 <patent-gp24795638>` — Method for forming binary intensity masks (2000-10-26)
 * {ref}`US 6,430,028 B1 <patent-gp24897586>` — Method for fabrication of an MIM capacitor and related structure (2000-11-22)
 * {ref}`US 6,518,136 B2 <patent-gp24961682>` — Sacrificial polysilicon sidewall process and rapid thermal spike annealing for advance CMOS fabrication (2000-12-14)
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
+* {ref}`US 7,172,914 B1 <patent-gp37696594>` — unknown
 * {ref}`US 6,461,904 B1 <patent-gp25047874>` — unknown
+* {ref}`US 6,780,771 B1 <patent-gp32869920>` — unknown
+* {ref}`US 6,844,237 B1 <patent-gp33565426>` — unknown
 * {ref}`US 6,593,208 B1 <patent-gp25130177>` — Method of uniform polish in shallow trench isolation process (2001-02-14)
+* {ref}`US 6,509,270 B1 <patent-gp25239028>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
+* {ref}`US 6,852,649 B1 <patent-gp34104919>` — unknown
 * {ref}`US 6,630,385 B1 <patent-gp28675849>` — MOSFET with differential halo implant and annealing strategy (2001-04-27)
 * {ref}`US 6,492,716 B1 <patent-gp25297601>` — Seal ring structure for IC containing integrated digital/RF/analog circuits and functions (2001-04-30)
 * {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
@@ -810,14 +820,24 @@ first, and then by status.
 * {ref}`US 6,350,665 B1 <patent-gp24241366>` — unknown
 * {ref}`US 6,518,591 B1 <patent-gp22757080>` — unknown
 * {ref}`US 6,399,512 B1 <patent-gp24376957>` — unknown
+* {ref}`US 6,635,566 B1 <patent-gp24376952>` — unknown
 * {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
 * {ref}`US 6,841,008 B1 <patent-gp33552841>` — unknown
+* {ref}`US 6,808,944 B1 <patent-gp33159967>` — unknown
 * {ref}`US 2004/0183199 A1 <patent-gp32991247>` — unknown
 * {ref}`US 8,030,172 B1 <patent-gp44676718>` — unknown
+* {ref}`US 6,803,318 B1 <patent-gp33098477>` — unknown
+* {ref}`US 6,911,395 B1 <patent-gp34681120>` — unknown
+* {ref}`US 6,436,799 B1 <patent-gp24688938>` — unknown
 * {ref}`US 6,756,315 B1 <patent-gp32508386>` — unknown
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
+* {ref}`US 7,172,914 B1 <patent-gp37696594>` — unknown
 * {ref}`US 6,461,904 B1 <patent-gp25047874>` — unknown
+* {ref}`US 6,780,771 B1 <patent-gp32869920>` — unknown
+* {ref}`US 6,844,237 B1 <patent-gp33565426>` — unknown
+* {ref}`US 6,509,270 B1 <patent-gp25239028>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
+* {ref}`US 6,852,649 B1 <patent-gp34104919>` — unknown
 * {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
 * {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
