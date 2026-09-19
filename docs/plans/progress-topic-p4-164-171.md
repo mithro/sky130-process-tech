@@ -104,7 +104,7 @@ were fixed/declined/deferred:
 * `uv run python tools/gen_papers.py --check` — 8 pages checked, 0
   problems.
 * `uv run sphinx-build -W -q -b html docs
-  /home/admin/github/mithro/sky130-process-tech/tmp/build-topic-p4-164-171`
+  tmp/build-topic-p4-164-171`
   — exit 0, no warnings.
 
 All pass.

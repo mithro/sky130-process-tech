@@ -99,7 +99,7 @@ with real content instead of a "content not readable" hedge.
 - [x] `uv run python tools/check_masks.py` — 36 mask pages checked, 0 problems
 - [x] `uv run python tools/check_papers.py` — 49 papers checked, 0 problems
 - [x] `uv run python tools/gen_papers.py --check` — 8 pages checked, 0 problems
-- [x] `uv run sphinx-build -W -q -b html docs /home/admin/github/mithro/sky130-process-tech/tmp/build-topic-p4-149-163` — exit 0, no warnings
+- [x] `uv run sphinx-build -W -q -b html docs tmp/build-topic-p4-149-163` — exit 0, no warnings
 
 All findings from review-149-163.md are resolved: fixed, declined (with
 evidence), or deferred to the metal-cap/barrier sweep. Ready for

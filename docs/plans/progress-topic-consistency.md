@@ -1,7 +1,7 @@
 # Progress — topic/consistency
 
 Applying the whole-site conflict review at
-`/home/admin/github/mithro/sky130-process-tech/tmp/review-consistency.md`
+`tmp/review-consistency.md`
 (0 High, 6 Medium, 8 Low; findings C-001 … C-014).
 
 | ID | Severity | Status | Note |

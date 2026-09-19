@@ -243,7 +243,7 @@ session works through them; see the session log below for detail.
   SkyWater's own Q1 FY2023 10-Q (Item 4 evaluation date reads "April 3,
   2022" instead of the quarter's own April 2, 2023) and flagged it in
   that record's `notes` rather than silently correcting it. Removed a
-  personal name ("Mr. Unterseher") from a drafted DEF 14A quote before
+  director's personal name from a drafted DEF 14A quote before
   committing, per the design's "no personal names beyond audit firms"
   rule. Added Weebit Nano's original 2021-09-09 ASX announcement (found
   as a company-hosted PDF, not the ASX archive itself) of the SkyWater

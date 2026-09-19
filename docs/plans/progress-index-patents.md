@@ -361,7 +361,7 @@ families" table (`tmp/review-index-patents-r1.md`, at the *main* repo
 root — not this worktree's `tmp/`) and its H1/coverage sections, and
 `tmp/verify-index-patents-r2.md`'s confirmation that H1 was left "open
 by agreement". Fetch cache: shared, at the path the brief specified,
-`/home/admin/github/mithro/sky130-process-tech/tmp/patent-cache/`
+`tmp/patent-cache/`
 (the *main* worktree's `tmp/`, not this branch's) — 105 files already
 there from earlier rounds' partial attempts, reused where numbers
 matched. Pacing: 20 s between requests via `tmp/fetch_gp.sh` (this
