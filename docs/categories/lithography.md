@@ -261,11 +261,12 @@ alignment corrections.
 * {ref}`US 6,172,409 B1 <patent-gp25382979>` — Buffer grated structure for metrology mark and method for making the same (1997)
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999)
 
-:::{dropdown} 4 families in force or status unknown
+:::{dropdown} 5 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
+* {ref}`US 6,620,715 B1 <patent-gp27804437>` — unknown
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 9,733,574 B2 <patent-gp52825918>` — unknown
