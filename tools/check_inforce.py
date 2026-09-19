@@ -23,8 +23,15 @@ This checker enforces the rule on the written pages:
 * **The rule.** On every page under ``docs/`` outside
   ``docs/references/patents/`` and ``docs/plans/``, a footnote *reference* to
   such a label, a member's publication number in any of its usual spellings,
-  or a restricted title, must sit inside a collapsed block — a ``{dropdown}``
+  a restricted title, or one of the distinctive phrases below, must sit
+  inside a collapsed block — a ``{dropdown}``
   directive written as a colon fence or a backtick fence.
+* **The phrases.** ``PHRASES`` lists, per family, distinctive wording taken
+  from the passages that were moved into notes. A phrase is the patent's
+  *content* rather than a citation, so it is refused everywhere outside a
+  collapsed block — in a footnote definition and in the inventory entry
+  included. That is what narrows the inventory's exemption to the
+  bibliographic line, the "Used on …" lines, the tier and the status flag.
 * **The exceptions.** A footnote *definition* at the foot of a page, and the
   patent's own entry in the inventory, may stay open — a citation must stay
   resolvable — but each must carry the flag sentence
@@ -38,6 +45,10 @@ This checker enforces the rule on the written pages:
 * **The reverse report.** A collapsed note or a flag kept for a family that
   the dataset now shows as expired is reported, so the note can be opened up
   again. This is a report, not a failure.
+
+* **Empty blocks.** A ``{dropdown}`` whose body holds nothing but blank
+  lines is reported: its content was lost, or the block is a duplicate
+  artefact that renders as an empty collapsible.
 
 Run with ``uv run tools/check_inforce.py [--selftest]``; the exit status is
 non-zero when a problem is found.
@@ -73,6 +84,80 @@ FLAG_RE = re.compile(
     r"(?:Shown as in force; estimated expiry (\d{4}-\d{2}-\d{2})"
     r"|Status shown as unknown; estimated expiry no later than (\d{4}-\d{2}-\d{2}))"
     r" \(estimate from public records, not legal advice\)\.")
+
+# Distinctive phrases taken from the passages that were moved into collapsed
+# notes, keyed by the family's representative publication number. Unlike a
+# number or a title, a phrase is the patent's *content*, so it is never
+# exempt: not in a footnote definition, and not in the inventory entry
+# either — the inventory's exemption covers the bibliographic line, the
+# "Used on …" lines, the tier and the status flag, and nothing more. Add a
+# phrase here whenever a quotation is moved into a note, and the checker will
+# keep it there. Matching is case-insensitive and tolerant of line wrapping.
+PHRASES: dict[str, list[str]] = {
+    "US20090179253A1": [
+        "from about 15 angstrom",
+        "about 70 \u00c5 to about 150 \u00c5",
+        "about 30 \u00c5 to about 70 \u00c5",
+    ],
+    "US8093128B2": [
+        "a rapid thermal anneal is performed after implanting both",
+        "additionally serving to reoxidize",
+        "densifying a CVD formed blocking oxide layer",
+        "the dimensions and alignment of window 305",
+        "an inorganic spin-on anti-reflective coating",
+        "good stack sidewall profile",
+        "the isotropic wet etch may undercut the masked region",
+        "Conventional HF-based gate insulator",
+        "substantially free of HF",
+        "ultra-dilute SC1",
+        "the H\u2082:O\u2082 ratio is between 1 and 1.3",
+        "between 5.0 nm and 15.0 nm of silicon dioxide",
+        "critical layer lithography tools are employed",
+        "without removing the substrate between operations",
+        "approximately 4-10 wt % nitrogen",
+        "between 1.5 nm and 2.5 nm of silicon dioxide may be removed",
+        "may also etch a non-volatile charge trapping dielectric stack",
+        "while the photoresist layer 318 protects",
+    ],
+    "US8796098B1": [
+        "10:1 buffered oxide etch",
+        "50:1 hydrofluoric",
+        "GOX preclean",
+        "a wet etch that does not etch oxide",
+        "dry oxidation at 750 degrees centigrade",
+        "about 1.0 nanometers (nm) to about 3.0 nm",
+        "substantially fewer hydrogen atoms",
+        "a patterned tunnel mask 220",
+        "ashed or stripped using oxygen plasma",
+        "from about 50 to about 500 kilo-electron volts",
+        "from about 10 to about 100 kilo-electron volts",
+        "about 1e12 cm",
+        "between 2.0 nm and 4.0 nm",
+        "the pad oxide 209",
+        "a thin, second gate oxide 246",
+    ],
+    "US8110414B2": [
+        "an etch rate selectivity of the TiN to the silicon comprising",
+        "Cl2:90 sccm",
+        "the TiN:oxide selectivity was found to be 210:1",
+        "removes \u2266100 A of the thickness of the dielectric layer",
+        "comprises TiN",
+    ],
+    "US9431609B2": ["HfCl", "HfAlOx"],
+    "US10003022B2": ["protects the underlying layers from the future etching"],
+    "EP2104648B1": ["prevents surface charging"],
+    "US7705268B2": [
+        "soft marks and hard marks",
+        "debris free",
+        "believed to be the first industrial laser marking system",
+    ],
+    "US7679384B2": ["testlines in the scribe line area"],
+    "US9824895B1": [
+        "it may be grown to be too thick",
+        "whether the thick gate oxide is formed by a furnace",
+    ],
+    "US8940645B2": ["being trap dense", "substantially trap free"],
+}
 
 # A title shorter than this many words is too generic to match safely in
 # running prose ("Self-aligned shallow trench isolation"); the number is
@@ -147,6 +232,9 @@ class Restricted:
         self.titles = sorted(t for t in titles if t)
         self.title_res = [(t, p) for t, p in
                           ((t, title_pattern(t)) for t in self.titles) if p]
+        self.phrase_res = [(s, re.compile(r"\s+".join(re.escape(w) for w in s.split()),
+                                          re.I))
+                           for s in PHRASES.get(self.representative, [])]
         self.keys: set[str] = set()      # inventory keys
         self.labels: set[str] = set()    # footnote labels
 
@@ -375,6 +463,11 @@ class Matcher:
         for fam in fams:
             for tt, _pat in fam.title_res:
                 shared.setdefault(tt.lower(), []).append(fam)
+        self.phrases: list[tuple[str, re.Pattern, Restricted, str]] = []
+        for fam in fams:
+            for s, pat in fam.phrase_res:
+                anchor = max(s.replace("-", " ").split(), key=len).lower()
+                self.phrases.append((anchor, pat, fam, s))
         self.titles: list[tuple[str, re.Pattern, tuple[Restricted, ...]]] = []
         seen: set[str] = set()
         for fam in fams:
@@ -393,6 +486,11 @@ class Matcher:
             if fam is not None:
                 yield m, (fam,), "number", full
         low = flat.lower()
+        for anchor, pat, fam, s in self.phrases:
+            if anchor not in low:
+                continue
+            for m in pat.finditer(flat):
+                yield m, (fam,), "phrase", s
         for anchor, pat, owners in self.titles:
             if anchor not in low:
                 continue
@@ -437,7 +535,9 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
     # (b) publication numbers, (c) titles
     for m, owners, kind, _value in matcher.finditer(flat):
         lineno = line_of(m.start())
-        if lineno in inside or any(lineno in own_lines.get(f.id, ()) for f in owners):
+        if lineno in inside:
+            continue
+        if kind != "phrase" and any(lineno in own_lines.get(f.id, ()) for f in owners):
             continue
         fam = owners[0]
         problems.append(
@@ -453,8 +553,8 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
     for key, fam in sorted(key_fam.items()):
         if key not in inv:
             continue
-        lines, body = inv[key]
-        check_flag(f"{rel}:{min(lines)}: inventory entry {key}", body, fam, problems)
+        entry_lines, body = inv[key]
+        check_flag(f"{rel}:{min(entry_lines)}: inventory entry {key}", body, fam, problems)
 
     # An empty collapsed block renders as a collapsible with nothing in it:
     # the note's content was lost, or the block is a duplicate artefact.
@@ -491,7 +591,7 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
                 f"{rel}:{lineno}: in-force flag on [^{label}] for "
                 f"{fam.representative} ({fam.id}), now shown as expired")
             break
-    for key, (lines, body) in inv.items():
+    for key, (entry_lines, body) in inv.items():
         bflat = flatten(body)[0]
         if not FLAG_RE.search(bflat):
             continue
@@ -500,7 +600,7 @@ def check_page(path: Path, text: str, matcher: Matcher, label_fam: dict[str, Res
                 continue
             fam = owners[0]
             reverse.append(
-                f"{rel}:{min(lines)}: in-force flag on inventory entry {key} "
+                f"{rel}:{min(entry_lines)}: in-force flag on inventory entry {key} "
                 f"for {fam.representative} ({fam.id}), now shown as expired")
             break
 
@@ -606,6 +706,34 @@ def selftest() -> int:
                Matcher([]), {}, {}, Matcher([]), ps, [])
     if ps:
         fail(f"a non-empty dropdown was reported: {ps}")
+
+    # 3c. A distinctive phrase is content: it is refused even inside a
+    #     footnote definition or an inventory entry that carries the flag.
+    fam_p = Restricted(_fam())
+    fam_p.phrase_res = [("good stack sidewall profile",
+                         __import__("re").compile(r"good\s+stack\s+sidewall\s+profile",
+                                                  __import__("re").I))]
+    mp = Matcher([fam_p])
+    ps = []
+    check_page(Path("p.md"),
+               "# P\n\nA good stack sidewall profile is wanted.\n\n## References\n",
+               mp, {}, {}, Matcher([]), ps, [])
+    if not any("phrase of" in x for x in ps):
+        fail(f"an open distinctive phrase was not reported: {ps}")
+    ps = []
+    check_page(Path("q.md"),
+               "# P\n\n:::{dropdown} t\nA good stack sidewall profile is wanted.\n:::\n",
+               mp, {}, {}, Matcher([]), ps, [])
+    if ps:
+        fail(f"a phrase inside a dropdown was reported: {ps}")
+    ps = []
+    check_page(Path("r.md"),
+               "# P\n\n## References\n\n<!-- footnotes -->\n"
+               "[^pat-03]: US 8,093,128 B2. A good stack sidewall profile. "
+               + fam_p.flag + "\n",
+               mp, {"pat-03": fam_p}, {}, Matcher([]), ps, [])
+    if not any("phrase of" in x for x in ps):
+        fail(f"a phrase in a flagged footnote definition was not reported: {ps}")
 
     # 4. Dropdown detection, colon and backtick fences, and nesting.
     text = ("a\n"

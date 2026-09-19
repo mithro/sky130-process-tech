@@ -1100,35 +1100,46 @@ Also used on the ONOM mask page.
 **PAT-02** — US 2009/0179253 A1, *"Oxide-nitride-oxide stack having
 multiple oxynitride layers"*, S. Levy, K. Ramkumar, F. Jenne, S. Geha;
 filed 2007-06-13, published 2009-07-16.
-<https://patents.google.com/patent/US20090179253A1/en>. Tunnel oxide
-"from about 15 angstrom (Å) to about 22 Å", multi-layer charge-trapping layer
-"about 70 Å to about 150 Å", blocking oxide "about 30 Å to about 70 Å";
-LPCVD at 700–850 °C, 5–500 mTorr, N₂O/NH₃ and DCS/NH₃ gas ratios.
+<https://patents.google.com/patent/US20090179253A1/en>. A Cypress
+application on a multi-layer oxynitride ONO stack; layer thicknesses and
+deposition conditions are in the collapsed note below this entry.
 Tier: deep dive.
 Shown as in force; estimated expiry 2027-06-17 (estimate from public
 records, not legal advice).
 
+:::{dropdown} From a patent shown as in force (US 2009/0179253; estimated expiry 2027-06-17) — open to read
+Tunnel oxide "from about 15 angstrom (Å) to about 22 Å", multi-layer
+charge-trapping layer "about 70 Å to about 150 Å", blocking oxide "about
+30 Å to about 70 Å"; LPCVD at 700–850 °C, 5–500 mTorr, N₂O/NH₃ and
+DCS/NH₃ gas ratios.
+:::
+
 **PAT-03** — US 8,093,128 B2, *"Integration of non-volatile charge trap
 memory devices and logic CMOS devices"*, W. Koutny et al. (Cypress);
 filed 2008-05-22, granted 2012-01-10.
-<https://patents.google.com/patent/US8093128B2/en>. Order of the SONOS
-module relative to the logic well/channel implants, gate oxidation at
-"800° C. and 900° C.", nitridation at "900-1100° C.", blocking oxide
-3.0–5.0 nm.
+<https://patents.google.com/patent/US8093128B2/en>. A Cypress patent on
+integrating a SONOS module into a logic CMOS flow; its module ordering,
+temperatures and layer thicknesses are in the collapsed note below this
+entry.
 Also used on the vertical-furnace oxidation and LPCVD pages.
 Tier: deep dive.
 Also used on the TUNM, ONOM and LVOM mask pages.
 Shown as in force; estimated expiry 2028-10-22 (estimate from public
 records, not legal advice).
 
+:::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+Order of the SONOS module relative to the logic well/channel implants,
+gate oxidation at "800° C. and 900° C.", nitridation at
+"900-1100° C.", blocking oxide 3.0–5.0 nm.
+:::
+
 **PAT-04** — US 8,796,098 B1, *"Embedded SONOS based memory cells"*,
 K. Ramkumar, I. Kouznetsov, V. Prabhakar (Cypress); filed 2013-09-04,
 granted 2014-08-05.
-<https://patents.google.com/patent/US8796098B1/en>. Pad oxide 10–20 nm,
-tunnel dielectric 1.0–3.0 nm (thermal) or 1.0–4.0 nm (radical
-oxidation), oxynitride charge-trapping layers
-2.0–5.0 nm, blocking oxide ~3–4.5 nm, HV gate oxide 5–7 nm, LV gate
-oxide 1–3 nm, indium channel doping.
+<https://patents.google.com/patent/US8796098B1/en>. A Cypress patent on
+an embedded SONOS cell and the flow that builds it; its layer
+thicknesses and channel doping are in the collapsed note below this
+entry.
 Also used on the wet bench page. Tier: deep dive.
 Also used on the wet chemicals material page.
 Also used on the substrates material page.
@@ -1136,6 +1147,13 @@ Also used on the dopant gases and implant sources material page.
 Also used on the TUNM and LVOM mask pages.
 Shown as in force; estimated expiry 2034-02-26 (estimate from public
 records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
+Pad oxide 10–20 nm, tunnel dielectric 1.0–3.0 nm (thermal) or
+1.0–4.0 nm (radical oxidation), oxynitride charge-trapping layers
+2.0–5.0 nm, blocking oxide ~3–4.5 nm, HV gate oxide 5–7 nm, LV gate
+oxide 1–3 nm, indium channel doping.
+:::
 
 **PAT-STI-CR** — US 7,439,141 B2, *"Shallow trench isolation approach
 for improved STI corner rounding"*, U. Kim, Y. Sun, M. S. Chang et al.;
@@ -4215,20 +4233,32 @@ Also used on the NPCM mask page.
 **PAT-ONO-THICK-CYP** — K. Ramkumar (Cypress Semiconductor), *Method of
 integration of ONO stack formation into thick gate oxide CMOS flow*, US
 9,824,895 B1, granted 2017-11-21.
-<https://patents.google.com/patent/US9824895B1/en> The alternative
-ordering with the thick gate oxide before the ONO, and why. Used on step
-043. Tier: cross-check.
+<https://patents.google.com/patent/US9824895B1/en> A Cypress patent on
+where an ONO module sits in a thick-gate-oxide CMOS flow; the ordering
+it takes, and why, are in the collapsed note below this entry. Used on
+step 043. Tier: cross-check.
 Shown as in force; estimated expiry 2037-09-27 (estimate from public
 records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (US 9,824,895; estimated expiry 2037-09-27) — open to read
+The alternative ordering with the thick gate oxide before the ONO, and
+why.
+:::
 
 **PAT-RADOX-CYP** — K. Ramkumar, S. Levy and J. Byun (Cypress
 Semiconductor), *Radical oxidation process for fabricating a nonvolatile
 charge trap memory device*, US 8,940,645 B2, granted 2015-01-27.
-<https://patents.google.com/patent/US8940645B2/en> A radical oxidation
-process for the ONO stack with trap-free and trap-dense oxynitride
-layers. Used on step 040. Tier: deep dive.
+<https://patents.google.com/patent/US8940645B2/en> A Cypress patent on
+forming an ONO stack by radical oxidation; what it makes of the
+oxynitride layers is in the collapsed note below this entry. Used on
+step 040. Tier: deep dive.
 Shown as in force; estimated expiry 2029-01-14 (estimate from public
 records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (US 8,940,645; estimated expiry 2029-01-14) — open to read
+A radical oxidation process for the ONO stack with trap-free and
+trap-dense oxynitride layers.
+:::
 
 #### SkyWater and PDK sources
 
@@ -8757,19 +8787,25 @@ Guiling, X. Chen, B. Hu and S. Chevacharoenkul (Texas Instruments),
 using selective etch of top electrodes*, US 8,110,414 B2, filed
 2009-04-30, granted 2012-02-07.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8110414>
+A selective plasma etch of metal-insulator-metal top electrodes; its
+dielectric-loss target, selectivities, gas flows and worked example are
+in the collapsed note below this entry. Used on steps 138 and 153 and in
+the overview's metal-cap section.
+Also used on the metal plasma etcher page.
+Tier: cross-check.
+Also used on the etch and chamber-clean gases material page.
+Shown as in force; estimated expiry 2030-01-02 (estimate from public
+records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
 A selective plasma etch of MiM top electrodes that removes no more than
 100 Å of the dielectric, with "an etch rate selectivity of the TiN to
 the silicon comprising dielectric layer … at least 8:1" and a worked
 Example 1 in which a 1 800 Å TiN top electrode over a 250 Å
 oxide/SiON/oxide stack on an aluminium bottom electrode is etched in
 "Cl2:90 sccm, Ar:10 sccm, CHF3:10 sccm" at a TiN-to-oxide selectivity of
-210:1. Used on steps 138 and 153 and in the overview's metal-cap
-section.
-Also used on the metal plasma etcher page.
-Tier: cross-check.
-Also used on the etch and chamber-clean gases material page.
-Shown as in force; estimated expiry 2030-01-02 (estimate from public
-records, not legal advice).
+210:1.
+:::
 
 **TURBAN-1989** — G. Turban, J. F. Coulon and N. Mutsukura, "A
 mechanistic study of SF₆ reactive ion etching of tungsten", *Thin Solid
@@ -9115,11 +9151,17 @@ Also used on the NSM mask page.
 (GlobalFoundries), *Segmented guard-ring and chip edge seals*,
 US 10,062,748 B1, filed 2017-02-27, granted 2018-08-28.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10062748>
-An edge seal etched through the dielectrics and lined with passivation,
-made with one mask. Used on steps 165, 166 and 167. Tier: deep dive.
+A GlobalFoundries patent on chip edge seals; how the seal is built is in
+the collapsed note below this entry. Used on steps 165, 166 and 167.
+Tier: deep dive.
 Also used on the NSM mask page.
 Shown as in force; estimated expiry 2038-02-27 (estimate from public
 records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read
+An edge seal etched through the dielectrics and lined with passivation,
+made with one mask.
+:::
 
 **PAT-FUSE-IBM** — P.-I. P. Lee, W. A. Klaasen and A. Mitwalsky
 (International Business Machines), *Fuse window with controlled fuse
@@ -9216,11 +9258,16 @@ Also used on the PDM mask page.
 increased test pattern areas*, US 7,679,384 B2, filed 2007-06-08,
 granted 2010-03-16.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7679384>
-Parametric testlines and their probe pads in the scribe line. Used on
-steps 168 and 171. Tier: deep dive.
+A TSMC patent on parametric test structures in the wafer frame; where it
+puts them is in the collapsed note below this entry. Used on steps 168
+and 171. Tier: deep dive.
 Also used on the PDM mask page.
 Shown as in force; estimated expiry 2028-06-06 (estimate from public
 records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (US 7,679,384; estimated expiry 2028-06-06) — open to read
+Parametric testlines and their probe pads in the scribe line.
+:::
 
 **PDK-IO-GPIOV2** — SkyWater PDK Authors, *skywater-pdk-libs-sky130_fd_io*
 repository, cell `sky130_fd_io__top_gpiov2`, GDS layout
@@ -9543,28 +9590,40 @@ and R.-L. Lee (Taiwan Semiconductor Manufacturing Co.), *Oxide film
 scheme for RRAM structure*, US 9,431,609 B2, filed 2014-08-14, granted
 2016-08-30.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9431609>
-An RRAM stack over a lower interconnect: bottom electrode (Ta, TaN, Ti or
-TiN by vapour deposition), ALD HfOx from HfCl₄ and H₂O pulses plus
-HfAlOx, capping layer, top electrode, patterning by a masking layer with
-a fluorine or argon plasma, nitride sidewall spacers, bottom-electrode
-etch, upper ILD and a via landing on the top electrode. Tier: deep dive.
+A TSMC patent on an RRAM stack built over a lower interconnect; its
+materials, deposition route and patterning sequence are in the collapsed
+note below this entry. Tier: deep dive.
 Shown as in force; estimated expiry 2035-03-31 (estimate from public
 records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (US 9,431,609; estimated expiry 2035-03-31) — open to read
+An RRAM stack over a lower interconnect: bottom electrode (Ta, TaN, Ti
+or TiN by vapour deposition), ALD HfOx from HfCl₄ and H₂O pulses plus
+HfAlOx, capping layer, top electrode, patterning by a masking layer with
+a fluorine or argon plasma, nitride sidewall spacers, bottom-electrode
+etch, upper ILD and a via landing on the top electrode.
+:::
 
 **PAT-RRAM-ETCHSTOP-TSMC** — M. C. Liu, Y.-T. Tseng, C.-Y. Hsu, S.-C. Liu
 and C.-S. Tsai (Taiwan Semiconductor Manufacturing Co.), *RRAM cell
 structure with conductive etch-stop layer*, US 10,003,022 B2, filed
 2014-03-04, granted 2018-06-19.
 <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10003022>
+A TSMC patent on an RRAM cell with a conductive etch-stop layer; the
+stack, the etch sequence and the claimed advantages are in the collapsed
+note below this entry. Tier: deep dive.
+Shown as in force; estimated expiry 2035-03-04 (estimate from public
+records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (US 10,003,022; estimated expiry 2035-03-04) — open to read
 A conductive etch-stop layer between the lower interconnect and the
 bottom electrode; a SiON anti-reflective layer on the top electrode; a
 top-electrode etch, SiN sidewall spacers, a second etch through the HfO₂
-and bottom electrode stopping on the etch-stop layer, and a third etch of
-that layer (Cl- or F-based dry etch, or wet); and an enveloping
+and bottom electrode stopping on the etch-stop layer, and a third etch
+of that layer (Cl- or F-based dry etch, or wet); and an enveloping
 dielectric protection layer, reducing mask steps, CMP and copper etch
-by-products. Tier: deep dive.
-Shown as in force; estimated expiry 2035-03-04 (estimate from public
-records, not legal advice).
+by-products.
+:::
 
 **PAT-RRAM-INTERMOLECULAR** — M. Lee, T. Chiang and D. Pramanik
 (Intermolecular, Inc.), *Methods of manufacturing embedded bipolar
@@ -10764,13 +10823,18 @@ Also used on the ultrapure water material page.
 **PAT-DICO2-MKS** — C. Gottschalk, U. Brammer, J. Lohr and J. Seiwert
 (MKS Instruments), *System and method for carbonation of deionized
 water*, EP 2 104 648 B1, granted 2013-04-17.
-<https://patents.google.com/patent/EP2104648B1/en> CO₂-dissolved DI water
-for wet cleaning, whose dissolved CO₂ lowers the water's resistivity "to
-a level that prevents surface charging". Used on the wet bench and spray
-processor page. Tier: cross-check (patent).
+<https://patents.google.com/patent/EP2104648B1/en> An MKS patent on
+carbonated de-ionised water for wet cleaning; what it says the dissolved
+gas does is in the collapsed note below this entry. Used on the wet
+bench and spray processor page. Tier: cross-check (patent).
 Also used on the ultrapure water material page.
 Shown as in force; estimated expiry 2028-05-14 (estimate from public
 records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read
+CO₂-dissolved DI water for wet cleaning, whose dissolved CO₂ lowers the
+water's resistivity "to a level that prevents surface charging".
+:::
 
 **PAT-EKC-HYDROXYLAMINE** — W. M. Lee (EKC Technology), *Cleaning
 compositions for removing etching residue and method of using*,
@@ -11884,13 +11948,19 @@ Also used on the substrates material page.
 **PAT-SOFTMARK-GSI** — B. Gu and J. S. Ehrmann (GSI Group), *Method and
 system for laser soft marking*, US 7,705,268 B2, filed 2005-11-09,
 granted 2010-04-27. <https://patents.google.com/patent/US7705268B2/en>
+A GSI Group patent on laser marking of silicon wafers; the kinds of mark
+it distinguishes, the system it names and what sets a mark's depth are
+in the collapsed note below this entry. Used on the starting-material
+machine page. Tier: deep dive.
+Shown as in force; estimated expiry 2026-12-17 (estimate from public
+records, not legal advice).
+
+:::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read
 Soft and hard laser marks, the WaferMark as "believed to be the first
 industrial laser marking system on silicon wafer", the "debris free"
 Supersoftmark® of the Wafermark Sigma Clean and its narrow energy
-window, and soft-mark depth set by pulse width. Used on the
-starting-material machine page. Tier: deep dive.
-Shown as in force; estimated expiry 2026-12-17 (estimate from public
-records, not legal advice).
+window, and soft-mark depth set by pulse width.
+:::
 
 **PAT-LASERMARK-WACKER** — F. Kuhn-Kuhnenfeld, J. Kramler and H.-A.
 Gerber (Wacker Siltronic), *Method of making reference surface markings
