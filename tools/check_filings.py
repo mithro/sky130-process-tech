@@ -48,20 +48,52 @@ cached under ``tmp/filings-cache/``; a Wayback capture is cached forever
 cache entry is more than ``CACHE_MAX_AGE_DAYS`` old (FIL-R1-11).
 
 ``location`` is checked (``check_location``) by whichever of these its
-text names: an "ITEM N" caption (compared with the nearest preceding
-real Item heading in the fetched text); a PDF page number ("page 12",
-checked against that 1-based page of the extracted PDF text); a
-position ("cover page", "first page", "first paragraph", "second
-paragraph"); or, covering most annual-report, exhibit and press-release
-locations that are none of the above, a prose section heading named in
-the location text (compared with the nearest preceding occurrence of
-that heading). A location the checker cannot make sense of at all, or
-one it cannot connect to text it can find, is not silently skipped: it
-is reported as one line for every ``location`` it could not check (no
-Item/page/heading found, the quote not locatable in the fetched copy,
-or nothing usable precedes it -- V-13)
-and appends "P locations not checked" to the summary, so a clean run
-never reads as "every location was verified".
+text names: an "ITEM N" caption, case-insensitive and with the full
+sub-item number for an 8-K ("Item 4.01", not truncated to "Item 4"),
+compared with the nearest preceding occurrence of a real Item heading
+in the fetched text (a heading is one that starts a line -- a
+table-of-contents run of closely-spaced items is dropped first, and an
+inline "see Item 1A" cross-reference is excluded because it never
+starts a line); a PDF page number ("page 12", checked against that
+1-based page of the extracted PDF text); a position ("cover page",
+"first page", "first paragraph", "second paragraph"); or, covering most
+annual-report, exhibit and press-release locations that are none of the
+above, a prose section heading named in the location text (compared
+with the nearest preceding occurrence of that heading, again only one
+that starts a line). An HTML document is flattened to text with a line
+break at every block-level tag boundary (``<p>``, ``<div>``, ``<tr>``,
+``<br>``, headings, list items, ...) precisely so a heading in HTML can
+be recognised as starting a line the same way a PDF-extracted one does;
+without that a heading-based check on an HTML filing always abstained.
+A quote is located, for both the Item and the prose-heading checks, on
+exactly the same fully normalised text (whitespace and hyphens
+stripped, via ``normalise``) that the verbatim check uses -- not a
+separate, whitespace-only search -- so a quote that already passed the
+verbatim check can never fail to be located merely because of a
+mid-word hyphen or line-wrap ``normalise`` already tolerates.
+
+**Known limitation.** The prose-heading check (unlike the Item check,
+where "Item N" values are enumerable and ordered) has no way to know
+what the *correct* heading for a quote is; it only confirms that the
+heading named in ``location`` occurs, heading-like, within
+``HEADING_MAX_GAP`` characters and precedes the quote rather than
+following it. A location naming the *wrong* heading, when that wrong
+heading also happens to precede the quote within range, passes
+silently -- this is a real gap, not a bug, and is not caught by any
+check here. A location whose correct preceding heading cannot be
+determined at all (heading absent, only mid-sentence, or too far away)
+is reported as an abstention, never as a silent pass.
+
+A location the checker cannot make sense of at all, or one it cannot
+connect to text it can find, is not silently skipped: it is reported as
+one line for every ``location`` it could not check (no Item/page/heading
+found, the quote not locatable in the fetched copy, or nothing usable
+precedes it -- V-13) and appends "P locations not checked" to the
+summary, so a clean run never reads as "every location was verified" --
+only as "no *checked* location was found wrong".
+
+Run with ``--selftest`` to run the offline unit tests below and exit
+(touches no files, makes no network request).
 """
 
 from __future__ import annotations
@@ -459,6 +491,56 @@ def normalise(t: str) -> str:
     return re.sub(r"[\s-]+", "", tidy(t))
 
 
+def normalise_map(t: str) -> tuple[str, list[int]]:
+    """``normalise(t)``, plus a map from each kept character's index in the result
+    back to its index in ``tidy(t)`` -- the whitespace/case-preserving text the
+    heading and page-position checks work on. A quote is located (``locate_fragment``)
+    by searching this fully normalised text, exactly as the verbatim check does,
+    then mapping the match back to a ``tidy(t)`` offset -- rather than a separate,
+    laxer whitespace-only regex search, which could miss a quote ``normalise``
+    finds (e.g. a mid-word hyphen, or a line-wrap hyphen in a different place)."""
+    tidied = tidy(t)
+    out: list[str] = []
+    idx: list[int] = []
+    for i, c in enumerate(tidied):
+        if c.isspace() or c == "-":
+            continue
+        out.append(c)
+        idx.append(i)
+    return "".join(out), idx
+
+
+def locate_fragment(
+    quote_text: str, raw_text: str, where: str, what: str, abstentions: list[str]
+) -> int | None:
+    """Return the offset into ``raw_text`` (``tidy``-ed, whitespace/case preserved)
+    of the quote's first ellipsis-delimited fragment, found on exactly the same
+    fully normalised text the verbatim check (``fragments_match_in_order``) uses.
+    Appends one abstention and returns ``None`` when the fragment is empty or
+    cannot be located at all."""
+    first_fragment = re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote_text)[0].strip()
+    if not first_fragment:
+        abstentions.append(f"{where}: quote has no text before its first ellipsis; location not checked")
+        return None
+    frag = normalise(first_fragment)
+    if not frag:
+        abstentions.append(f"{where}: quote has no usable text; location not checked")
+        return None
+    norm_text, idx_map = normalise_map(raw_text)
+    idx = norm_text.find(frag)
+    if idx == -1:
+        abstentions.append(
+            f"{where}: quote text not found in the fetched text (even fully normalised); "
+            f"{what} not checked: {quote_text[:60]!r}")
+        return None
+    return idx_map[idx]
+
+
+def _line_initial(pos: int, text: str) -> bool:
+    """True when the character at ``pos`` in ``text`` starts a line (or the text)."""
+    return pos == 0 or text[:pos].rstrip(" \t").endswith("\n")
+
+
 _last = [0.0]
 
 
@@ -505,28 +587,45 @@ def fetch(url: str) -> bytes:
     raise RuntimeError(f"could not fetch {url}")
 
 
-def document_text(b: bytes) -> str:
-    if b[:4] == b"%PDF":
-        import pypdf
-
-        reader = pypdf.PdfReader(io.BytesIO(b))
-        return "\n".join((page.extract_text() or "") for page in reader.pages)
-    t = b.decode("utf-8", "replace")
-    t = re.sub(r"(?is)<(script|style).*?</\1>", " ", t)
-    t = re.sub(r"(?s)<[^>]+>", " ", t)
-    return html.unescape(t)
+# Block-level tags: a document flattened by simply blanking every tag (the old
+# behaviour) never has a heading start a line, because "<h2>Risk Factors</h2>Some
+# text" collapses to "Risk Factors Some text" with nothing between them -- the
+# heading check requires a preceding newline, so it silently abstained on every
+# HTML filing. Turning each block boundary into a newline first (before the
+# generic tag-stripping pass) restores that line structure, the same as a PDF
+# extraction naturally has it.
+BLOCK_TAG_RE = re.compile(
+    r"(?is)</?(?:p|div|tr|table|thead|tbody|tfoot|td|th|li|ul|ol|h[1-6]|section|"
+    r"article|header|footer|blockquote|hr|br)\b[^>]*>")
 
 
 def document_pages(b: bytes) -> list[str] | None:
     """Per-page extracted text for a PDF, else None (task A: "page N" locations need
     to know which page a quote is on; document_text alone joins every page into one
-    string)."""
+    string). The sole place a PDF is parsed with pypdf, so document_text (below)
+    never re-parses it -- a second, redundant pypdf pass through the same bytes."""
     if b[:4] != b"%PDF":
         return None
     import pypdf
 
     reader = pypdf.PdfReader(io.BytesIO(b))
     return [(page.extract_text() or "") for page in reader.pages]
+
+
+def document_text(b: bytes, pages: list[str] | None = None) -> str:
+    """Whole-document text. For a PDF this only joins pages already extracted by
+    document_pages (pass them in to avoid parsing the PDF a second time); for HTML,
+    block-level tags become newlines (see BLOCK_TAG_RE) before the remaining tags
+    are blanked, so a heading keeps its line boundary."""
+    if b[:4] == b"%PDF":
+        if pages is None:
+            pages = document_pages(b)
+        return "\n".join(pages or [])
+    t = b.decode("utf-8", "replace")
+    t = re.sub(r"(?is)<(script|style).*?</\1>", " ", t)
+    t = BLOCK_TAG_RE.sub("\n", t)
+    t = re.sub(r"(?s)<[^>]+>", " ", t)
+    return html.unescape(t)
 
 
 # V-11: the body pages of the Cypress FY1999 annual report (annualreports.com file
@@ -570,24 +669,38 @@ def fragments_match_in_order(quote: str, text: str) -> bool:
     return True
 
 
-def loose_pattern(fragment: str) -> re.Pattern:
-    """A case-sensitive regex matching ``fragment`` with runs of whitespace relaxed to
-    ``\\s+``, for locating a quote's position in whitespace-preserved text."""
-    pieces = [re.escape(p) for p in fragment.split()]
-    return re.compile(r"\s+".join(pieces))
-
-
 def location_item_number(location: str) -> str | None:
-    m = re.search(r"item\s*(\d+[a-z]?)", location, re.I)
+    """The Item number a ``location`` string names, keeping a sub-item number in
+    full (an 8-K's "Item 4.01" must not be truncated to "4" -- doing so made the
+    checker unable to tell Item 1.01 from Item 1.02, or 4.01 from 5.02)."""
+    m = re.search(r"item\s*(\d+(?:\.\d+)?[a-z]?)", location, re.I)
     return m.group(1).upper() if m else None
 
 
-HEADING_RE = re.compile(r"ITEM\s+(\d+[A-Z]?)\s*[.:]")  # literal caps: a real 10-K heading, not an inline "see Item 8" cross-reference
+# Case-insensitive (modern EDGAR HTML renders "Item 1.01", not "ITEM 1.01" --
+# requiring literal caps made every mixed-case document abstain outright) and with
+# an optional sub-item number ("4.01", "5.02"), not just a trailing letter ("1A").
+# Losing case as a signal of "this is a real heading, not an inline cross-reference"
+# means that signal now comes from _line_initial instead: callers only keep a match
+# that starts a line.
+HEADING_RE = re.compile(r"Item\s+(\d+(?:\.\d+)?[A-Za-z]?)(?:\s*[.:]|(?=\s+[A-Z]))", re.I)
+# A caption is either followed by its own punctuation ("Item 1. Business", "ITEM
+# 1A. RISK FACTORS") or, common for 8-K items, by no punctuation at all before the
+# capitalised title ("Item 4.01 Changes in Registrant's Certifying Accountant") --
+# the second alternative is a lookahead so it does not swallow the space before the
+# title into the match.
 
 
 def _item_num(s: str) -> float:
-    m = re.match(r"(\d+)([a-z]?)", s.lower())
-    return int(m.group(1)) + (0.5 if m.group(2) else 0)
+    """A sortable number for an Item value: "1" -> 1, "1A" -> 1.5, "4.01" -> 4.01,
+    "5.02" -> 5.02. Used only to detect an ascending run (a table of contents);
+    the letter-suffix and decimal-sub-item schemes never collide in EDGAR's own
+    numbering, so a shared "add a fraction" encoding is enough for that purpose."""
+    m = re.match(r"(\d+)(?:\.(\d+))?([a-z]?)", s.lower())
+    whole = int(m.group(1))
+    if m.group(2):
+        return whole + int(m.group(2)) / (10 ** len(m.group(2)))
+    return whole + (0.5 if m.group(3) else 0)
 
 
 def _drop_toc_runs(matches: list[re.Match]) -> list[re.Match]:
@@ -633,49 +746,32 @@ def _drop_toc_runs(matches: list[re.Match]) -> list[re.Match]:
     return kept
 
 
-def loose_tolerant_pattern(fragment: str) -> re.Pattern:
-    """Like ``loose_pattern``, but also tolerant of stray whitespace a broken PDF
-    extraction inserts *inside* a word (e.g. "ex it" for "exit", "ap lan" for "a
-    plan") rather than only between words. V-13: tried as a fallback before
-    abstaining, since a mangled extraction must not hide a wrong Item number the way
-    it did for cypress-annual-report-fy2008 (V-01) -- ``loose_pattern`` alone missed
-    that quote because "exit" had a space inserted inside it."""
-    chars = [c for c in fragment if not c.isspace()]
-    return re.compile(r"\s*".join(re.escape(c) for c in chars))
-
-
 def check_item_location(
     quote_text: str, location: str, raw_text: str, where: str, problems: list[str], abstentions: list[str]
 ) -> None:
     """Best-effort check (FIL-R1-05): if ``location`` names an Item number, and the
-    first fragment of the quote can be found in whitespace-preserved text, compare it
-    with the nearest preceding "ITEM N" heading (a table-of-contents listing is
-    filtered out first; see _drop_toc_runs). This augments, never replaces, the
-    verbatim check above.
+    quote can be located (``locate_fragment``, on the same fully normalised text as
+    the verbatim check), compare it with the nearest preceding "ITEM N[.NN]" heading.
+    A heading must start a line -- this drops both a table-of-contents listing
+    (_drop_toc_runs, a tightly-spaced ascending run) and an inline "see Item 1A"
+    cross-reference, which HEADING_RE's now-case-insensitive match would otherwise
+    treat the same as a real caption. This augments, never replaces, the verbatim
+    check above.
 
     V-13: every case this cannot check records one line in ``abstentions`` (printed
     and counted by ``main``) instead of returning silently, so a clean "0 problems"
     run no longer reads as "every location was verified" when some were not checked
     at all -- that silence is what let V-01's wrong Item number through undetected."""
     stated = location_item_number(location)
-    if not any(m.group(1) == "1" for m in HEADING_RE.finditer(raw_text)):
+    if not any(_line_initial(m.start(), raw_text) for m in HEADING_RE.finditer(raw_text)):
         abstentions.append(
-            f"{where}: document never renders an \"ITEM 1\" heading in the expected form; "
+            f"{where}: document never renders an \"Item N\" heading in the expected form; "
             f"Item {stated} was not checked")
         return
-    first_fragment = re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote_text)[0].strip()
-    if not first_fragment:
-        abstentions.append(f"{where}: quote has no text before its first ellipsis; location not checked")
+    offset = locate_fragment(quote_text, raw_text, where, f"Item {stated}", abstentions)
+    if offset is None:
         return
-    m = loose_pattern(first_fragment[:120]).search(raw_text)
-    if not m:
-        m = loose_tolerant_pattern(first_fragment[:120]).search(raw_text)
-    if not m:
-        abstentions.append(
-            f"{where}: quote text not found in the fetched text (even whitespace-tolerant); "
-            f"Item {stated} not checked: {quote_text[:60]!r}")
-        return
-    all_matches = list(HEADING_RE.finditer(raw_text[:m.start()]))
+    all_matches = [m for m in HEADING_RE.finditer(raw_text[:offset]) if _line_initial(m.start(), raw_text)]
     headings = _drop_toc_runs(all_matches)
     if not headings:
         abstentions.append(f"{where}: no Item heading precedes the quote in the fetched text; Item {stated} not checked")
@@ -706,9 +802,10 @@ GENERIC_HEADING_SEGMENTS = {
 
 
 def loose_pattern_ci(fragment: str) -> re.Pattern:
-    """Like ``loose_pattern``, but case-insensitive: used for locating a prose section
-    heading, which may be rendered in a different case than the location string names
-    it (e.g. small caps, all caps, or title case in the original PDF)."""
+    """A case-insensitive regex matching ``fragment`` with runs of whitespace relaxed
+    to ``\\s+``, for locating a prose section heading's occurrences in whitespace-
+    preserved text, which may be rendered in a different case than the location
+    string names it (e.g. small caps, all caps, or title case in the original PDF)."""
     pieces = [re.escape(p) for p in fragment.split()]
     return re.compile(r"\s+".join(pieces), re.I)
 
@@ -736,34 +833,38 @@ def check_heading_location(
 ) -> None:
     """Location check for a prose section heading that is not an "ITEM N" caption
     (annual-report sections, exhibit headings, press-release headings). Finds the
-    heading phrase (heading_phrase) and the quote's position in whitespace-preserved
-    text, then compares it with the nearest occurrence of that phrase that actually
-    looks like a heading -- starting a line, not sitting mid-sentence -- since the
-    same words also turn up as an ordinary cross-reference (e.g. "...as described
-    under Risk Factors, the Company...", or fy2006's boilerplate "The letter to
+    heading phrase (heading_phrase) and the quote's position (locate_fragment, on
+    the same fully normalised text the verbatim check uses), then compares it with
+    the nearest occurrence of that phrase that actually looks like a heading --
+    starting a line (_line_initial), not sitting mid-sentence -- since the same
+    words also turn up as an ordinary cross-reference (e.g. "...as described under
+    Risk Factors, the Company...", or fy2006's boilerplate "The letter to
     Shareholders and 'MD&A' contain forward-looking statements...", found 55000
     characters after that record's real, differently-worded "FELLOW SHAREHOLDERS:"
-    heading -- counting it would have wrongly failed a correct location). Only a
-    heading-like occurrence within HEADING_MAX_GAP characters of the quote counts;
-    when the nearest one *follows* the quote instead of preceding it, that is a wrong
-    location (e.g. a quote actually in a 10-Q's general "Note 1 -- Nature of Business"
-    but whose location instead names the "Business Combinations" accounting-policy
-    note that follows a paragraph later)."""
+    heading -- counting it would have wrongly failed a correct location). A
+    heading in an HTML document can only start a line because document_text turns
+    block-tag boundaries into newlines first; without that, no HTML heading could
+    ever satisfy _line_initial and this check would always abstain on HTML filings.
+    Only a heading-like occurrence within HEADING_MAX_GAP characters of the quote
+    counts; when the nearest one *follows* the quote instead of preceding it, that
+    is a wrong location (e.g. a quote actually in a 10-Q's general "Note 1 --
+    Nature of Business" but whose location instead names the "Business
+    Combinations" accounting-policy note that follows a paragraph later).
+
+    Known limitation: unlike an Item number, a prose heading is not enumerable, so
+    this check has no way to determine which heading actually precedes a given
+    quote -- it only confirms that the heading *named in* ``location`` is
+    heading-like and precedes the quote within range. A location naming the wrong
+    heading, when that wrong heading happens to also precede the quote within
+    HEADING_MAX_GAP, passes silently; only a named heading that is absent,
+    mid-sentence-only, too far away, or on the wrong side of the quote is caught.
+    """
     phrase = heading_phrase(location)
     if not phrase:
         abstentions.append(f"{where}: location {location!r} names no specific heading; not checked")
         return
-    first_fragment = re.split(r"\s*(?:…|\.\.\.|\[…\])\s*", quote_text)[0].strip()
-    if not first_fragment:
-        abstentions.append(f"{where}: quote has no text before its first ellipsis; location not checked")
-        return
-    qm = loose_pattern(first_fragment[:120]).search(raw_text)
-    if not qm:
-        qm = loose_tolerant_pattern(first_fragment[:120]).search(raw_text)
-    if not qm:
-        abstentions.append(
-            f"{where}: quote text not found in the fetched text (even whitespace-tolerant); "
-            f"heading {phrase!r} not checked: {quote_text[:60]!r}")
+    offset = locate_fragment(quote_text, raw_text, where, f"heading {phrase!r}", abstentions)
+    if offset is None:
         return
     occurrences = [hm.start() for hm in loose_pattern_ci(phrase).finditer(raw_text)]
     if not occurrences:
@@ -771,15 +872,15 @@ def check_heading_location(
             f"{where}: heading {phrase!r} (from location {location!r}) not found anywhere "
             f"in the fetched text; not checked")
         return
-    heading_like = [o for o in occurrences if o == 0 or raw_text[:o].rstrip(" \t").endswith("\n")]
+    heading_like = [o for o in occurrences if _line_initial(o, raw_text)]
     if not heading_like:
         abstentions.append(
             f"{where}: heading {phrase!r} only occurs mid-sentence (e.g. a cross-reference), "
             f"never starting a line, in the fetched text; not checked")
         return
-    HEADING_MAX_GAP = 20000  # normalised characters; prose sections run far longer than a TOC line
-    nearest = min(heading_like, key=lambda o: abs(o - qm.start()))
-    gap = qm.start() - nearest  # positive: heading precedes the quote; negative: it follows
+    HEADING_MAX_GAP = 20000  # tidy()-ed, whitespace-preserving characters; prose sections run far longer than a TOC line
+    nearest = min(heading_like, key=lambda o: abs(o - offset))
+    gap = offset - nearest  # positive: heading precedes the quote; negative: it follows
     if abs(gap) > HEADING_MAX_GAP:
         abstentions.append(
             f"{where}: heading {phrase!r} found but not within {HEADING_MAX_GAP} characters "
@@ -957,8 +1058,8 @@ def check_online(r: dict, where: str, problems: list[str], abstentions: list[str
             break
         try:
             b = fetch(source)
-            raw = document_text(b)
             pages = document_pages(b)
+            raw = document_text(b, pages)
             offset = GLYPH_OFFSET_DOCS.get((r.get("identifier") or {}).get("value"))
             if offset is not None:
                 raw = decode_glyph_font(raw, offset)
@@ -1008,8 +1109,129 @@ def check_known_gaps(gaps, problems: list[str]) -> None:
             problems.append(f"{where}: reason must be a string ending with a full stop")
 
 
+# --------------------------------------------------------------------------
+# self-test
+
+
+def selftest() -> int:
+    """Offline unit tests for the location-check machinery (FIL task: constructed
+    cases for each new behaviour). Touches no files, makes no network request."""
+    problems: list[str] = []
+
+    def fail(msg: str) -> None:
+        problems.append(msg)
+
+    # 1. Full sub-item numbers are kept, not truncated ("4.01" must not become "4").
+    if location_item_number("Item 4.01, Departure of Directors") != "4.01":
+        fail("location_item_number truncated a sub-item number")
+    if location_item_number("Item 1A, Risk Factors") != "1A":
+        fail("location_item_number lost a letter suffix")
+    if location_item_number("Item 2") != "2":
+        fail("location_item_number failed on a bare item number")
+
+    # 2. HEADING_RE is case-insensitive and captures the full sub-item number.
+    ms = list(HEADING_RE.finditer("Item 4.01 Changes in Registrant's Certifying Accountant"))
+    if not ms or ms[0].group(1) != "4.01":
+        fail(f"HEADING_RE did not capture a mixed-case sub-item caption: {ms}")
+    if not HEADING_RE.search("ITEM 1A. RISK FACTORS"):
+        fail("HEADING_RE regressed on an all-caps caption")
+
+    # 3. _item_num orders sub-item and letter-suffix values as expected, and
+    #    _drop_toc_runs still drops a tightly-spaced ascending run in mixed case.
+    if not (_item_num("1") < _item_num("1.01") < _item_num("1.02") < _item_num("2")):
+        fail("_item_num does not order sub-item numbers correctly")
+    if not (_item_num("7") < _item_num("7A") < _item_num("8")):
+        fail("_item_num does not order a letter suffix correctly")
+    toc_text = ("Item 1. Business .... 3\nItem 1A. Risk Factors .... 9\n"
+                "Item 2. Properties .... 15\n" + ("x" * 5000) +
+                "\nItem 1. Business\nSome real body text about the business.")
+    toc_matches = [m for m in HEADING_RE.finditer(toc_text) if _line_initial(m.start(), toc_text)]
+    kept = _drop_toc_runs(toc_matches)
+    if len(kept) != 1 or kept[0].start() < 5000:
+        fail(f"_drop_toc_runs did not drop a mixed-case table-of-contents run: {[m.group(0) for m in kept]}")
+
+    # 4. document_text turns HTML block-tag boundaries into newlines, so a heading
+    #    embedded in a paragraph flow still starts a line once flattened.
+    html_doc = (b"<html><body><h2>Item 1.01 Entry into a Material Definitive "
+                b"Agreement</h2><p>The Company entered into an agreement.</p>"
+                b"<p>See <a href=\"#\">Item 1A</a> for risk factors.</p></body></html>")
+    flat = document_text(html_doc)
+    if "\nItem 1.01" not in flat and not flat.lstrip().startswith("Item 1.01"):
+        fail(f"document_text did not give the HTML heading a line start: {flat!r}")
+    if not any(_line_initial(m.start(), flat) for m in HEADING_RE.finditer(flat)):
+        fail("no heading-like Item match survived HTML flattening")
+
+    # 5. locate_fragment finds a quote via the same normalise() the verbatim check
+    #    uses, tolerating a mid-word hyphen/line-wrap a whitespace-only search would
+    #    not have (this is the fix for the four "quote text not found" abstentions).
+    hyphenated = "The wafer reaches a temperature of 125°-\nC during the anneal."
+    abst: list[str] = []
+    off = locate_fragment("temperature of 125°C during", hyphenated, "w", "test", abst)
+    if off is None or abst:
+        fail(f"locate_fragment failed on a hyphen/line-wrap the verbatim check tolerates: {abst}")
+
+    # 6. check_item_location: wrong sub-item number fails; correct mixed-case
+    #    sub-item passes; a heading that appears only in the table of contents does
+    #    not count as the section start (the quote sits right after the table of
+    #    contents, well before the document's one real "Item 1" heading, so only
+    #    the TOC's own "Item 2" entry is anywhere near it).
+    body = ("Item 1. Business\nBody text here.\n\n"
+            "Item 4.01 Changes in Registrant's Certifying Accountant\n"
+            "The Company dismissed its auditor on May 1.\n\n"
+            "Item 5.02 Departure of Directors\n"
+            "A director resigned. See Item 4.01 above for the auditor change.")
+    quote = "The Company dismissed its auditor on May 1."
+
+    ps, ab = [], []
+    check_item_location(quote, "Item 4.01, Changes in Registrant's Certifying Accountant", body, "w", ps, ab)
+    if ps or ab:
+        fail(f"a correct mixed-case sub-item location was rejected: problems={ps} abstentions={ab}")
+
+    ps, ab = [], []
+    check_item_location(quote, "Item 5.02, Departure of Directors", body, "w", ps, ab)
+    if not ps:
+        fail("a wrong sub-item number (5.02 instead of 4.01) was not caught as a problem")
+
+    toc_doc = ("Item 1. Business .... 3\nItem 1A. Risk Factors .... 8\n"
+               "Item 2. Properties .... 15\n"
+               "This section discusses our real and personal properties.\n" +
+               ("x" * 3000) + "\nItem 1. Business\nBody text.\n")
+    ps, ab = [], []
+    check_item_location("This section discusses our real and personal properties.",
+                         "Item 2, Properties", toc_doc, "w", ps, ab)
+    if ps or not ab:
+        fail(f"a heading only in the table of contents was wrongly treated as the "
+             f"section start: problems={ps} abstentions={ab}")
+
+    # 7. check_heading_location: mirror the mid-sentence case for a prose heading
+    #    (not an Item caption): a correct, line-initial heading passes; the same
+    #    words occurring only inside a sentence must abstain, not silently pass.
+    prose = ("Overview\nThe Company makes semiconductors.\n\n"
+             "Risk Factors\nOur business faces several risks.")
+    ps, ab = [], []
+    check_heading_location("Our business faces several risks.", "Risk Factors", prose, "w", ps, ab)
+    if ps or ab:
+        fail(f"a correct prose heading location was rejected: problems={ps} abstentions={ab}")
+    mid = ("Overview\nThe Company makes semiconductors.\n\n"
+           "As noted under Risk Factors, our business faces several risks.")
+    ps, ab = [], []
+    check_heading_location("our business faces several risks.", "Risk Factors", mid, "w", ps, ab)
+    if ps or not ab:
+        fail(f"a prose heading only mid-sentence was not abstained on: problems={ps} abstentions={ab}")
+
+    if problems:
+        for p in problems:
+            print("SELFTEST FAIL:", p)
+        print(f"{len(problems)} selftest problem(s)")
+        return 1
+    print("selftest OK")
+    return 0
+
+
 def main() -> int:
     args = sys.argv[1:]
+    if "--selftest" in args:
+        return selftest()
     online = "--online" in args
     args = [a for a in args if a != "--online"]
     path = Path(args[0]) if args else DATA
