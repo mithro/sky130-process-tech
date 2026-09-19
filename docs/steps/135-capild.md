@@ -254,11 +254,12 @@ back end (SKY130's recipe is not public):
 * {ref}`US 6,717,193 B2 <patent-gp25521092>` — Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same (2001)
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005)
 
-:::{dropdown} 1 family in force or status unknown
+:::{dropdown} 2 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
+* {ref}`US 10,141,393 B1 <patent-gp50929963>` — unknown
 :::
 <!-- index-links:end -->
 

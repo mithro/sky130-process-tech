@@ -282,11 +282,12 @@ diagram[^pdk-04]); the aluminium limit of roughly
 * {ref}`US 7,317,221 B2 <patent-gp34633830>` — High density MIM capacitor structure and fabrication process (2003)
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005)
 
-:::{dropdown} 1 family in force or status unknown
+:::{dropdown} 2 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
+* {ref}`US 10,141,393 B1 <patent-gp50929963>` — unknown
 :::
 <!-- index-links:end -->
 

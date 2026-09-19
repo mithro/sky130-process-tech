@@ -169,6 +169,7 @@ Steps 35–42.
 * {ref}`US 9,564,331 B2 <patent-gp49777200>` — unknown
 * {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
+* {ref}`US 9,368,606 B2 <patent-gp50929931>` — unknown
 * {ref}`US 9,190,531 B2 <patent-gp39590729>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,614,105 B2 <patent-gp51728382>` — unknown
@@ -178,9 +179,12 @@ Steps 35–42.
 * {ref}`US 9,425,325 B2 <patent-gp42006435>` — unknown
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
 * {ref}`TW I640082 B <patent-gp52707807>` — in force
+* {ref}`US 9,570,458 B2 <patent-gp42539704>` — unknown
 * {ref}`US 9,917,211 B2 <patent-gp38470761>` — unknown
+* {ref}`US 9,368,588 B2 <patent-gp50929930>` — unknown
 * {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
+* {ref}`US 10,038,004 B2 <patent-gp57775841>` — unknown
 * {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
@@ -445,6 +449,7 @@ Steps 135–148.
 * {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
 * {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
+* {ref}`US 10,141,393 B1 <patent-gp50929963>` — unknown
 
 ## Metal 4, second MiM capacitor, via 4 and metal 5
 
@@ -477,6 +482,7 @@ Steps 149–163.
 * {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
+* {ref}`US 10,141,393 B1 <patent-gp50929963>` — unknown
 
 ## Passivation, pads, alloy and test
 
@@ -848,12 +854,16 @@ that are not specific to one step.
 * {ref}`US 9,157,150 B2 <patent-gp40675994>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,334,578 B2 <patent-gp42171130>` — unknown
+* {ref}`US 9,153,596 B2 <patent-gp42630210>` — unknown
+* {ref}`US 9,412,598 B2 <patent-gp46233256>` — unknown
 * {ref}`US 2011/0308955 A1 <patent-gp44483291>` — unknown
 * {ref}`US 9,431,503 B2 <patent-gp46876619>` — unknown
 * {ref}`US 9,396,959 B2 <patent-gp37595085>` — unknown
+* {ref}`US 9,318,498 B2 <patent-gp51061267>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,735,289 B2 <patent-gp52808963>` — unknown
 * {ref}`US 9,733,574 B2 <patent-gp52825918>` — unknown
 * {ref}`US 2017/0263459 A1 <patent-gp59786922>` — unknown
 * {ref}`US 9,624,094 B1 <patent-gp58772128>` — unknown
+* {ref}`US 2019/0043751 A1 <patent-gp50727163>` — unknown
 * {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown

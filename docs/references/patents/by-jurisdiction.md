@@ -16,7 +16,7 @@ count of every member publication in that jurisdiction.
 
 ## United States (US)
 
-726 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
+735 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -669,6 +669,7 @@ count of every member publication in that jurisdiction.
 | US 9,076,523 B2 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Expired - Fee Related |
 | US 9,111,985 B1 | {ref}`US 9,111,985 B1 <patent-gp53786102>` | unknown |
 | US 2015/0262663 A1 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Abandoned |
+| US 9,153,596 B2 | {ref}`US 9,153,596 B2 <patent-gp42630210>` | unknown |
 | US 9,157,150 B2 | {ref}`US 9,157,150 B2 <patent-gp40675994>` | unknown |
 | US 9,159,568 B2 | {ref}`US 9,159,568 B2 <patent-gp39526088>` | unknown |
 | US 9,171,936 B2 | {ref}`US 9,171,936 B2 <patent-gp39272978>` | unknown |
@@ -689,9 +690,13 @@ count of every member publication in that jurisdiction.
 | US 9,299,643 B2 | {ref}`US 9,299,643 B2 <patent-gp42056520>` | unknown |
 | US 9,318,333 B2 | {ref}`US 9,318,333 B2 <patent-gp39582617>` | unknown |
 | US 9,318,373 B2 | {ref}`US 9,318,373 B2 <patent-gp39542510>` | unknown |
+| US 9,318,498 B2 | {ref}`US 9,318,498 B2 <patent-gp51061267>` | unknown |
 | US 9,331,180 B2 | {ref}`US 9,331,180 B2 <patent-gp36227553>` | unknown |
 | US 9,334,578 B2 | {ref}`US 9,334,578 B2 <patent-gp42171130>` | unknown |
+| US 9,368,588 B2 | {ref}`US 9,368,588 B2 <patent-gp50929930>` | unknown |
+| US 9,368,606 B2 | {ref}`US 9,368,606 B2 <patent-gp50929931>` | unknown |
 | US 9,396,959 B2 | {ref}`US 9,396,959 B2 <patent-gp37595085>` | unknown |
+| US 9,412,598 B2 | {ref}`US 9,412,598 B2 <patent-gp46233256>` | unknown |
 | US 9,425,325 B2 | {ref}`US 9,425,325 B2 <patent-gp42006435>` | unknown |
 | US 9,431,503 B2 | {ref}`US 9,431,503 B2 <patent-gp46876619>` | unknown |
 | US 9,431,609 B2 | {ref}`US 9,431,609 B2 <patent-gp55302792>` | in force |
@@ -705,6 +710,7 @@ count of every member publication in that jurisdiction.
 | US 9,543,262 B1 | {ref}`US 9,543,262 B1 <patent-gp57705840>` | unknown |
 | US 9,564,331 B2 | {ref}`US 9,564,331 B2 <patent-gp49777200>` | unknown |
 | US 9,570,396 B2 | {ref}`US 9,570,396 B2 <patent-gp37588477>` | unknown |
+| US 9,570,458 B2 | {ref}`US 9,570,458 B2 <patent-gp42539704>` | unknown |
 | US 9,583,501 B1 | {ref}`US 9,583,501 B1 <patent-gp39541580>` | in force |
 | US 9,614,105 B2 | {ref}`US 9,614,105 B2 <patent-gp51728382>` | unknown |
 | US 9,624,094 B1 | {ref}`US 9,624,094 B1 <patent-gp58772128>` | unknown |
@@ -721,12 +727,15 @@ count of every member publication in that jurisdiction.
 | US 9,929,240 B2 | {ref}`US 9,929,240 B2 <patent-gp49580624>` | in force |
 | US 10,002,878 B2 | {ref}`US 10,002,878 B2 <patent-gp53369470>` | in force |
 | US 10,003,022 B2 | {ref}`US 10,003,022 B2 <patent-gp54018263>` | in force |
+| US 10,038,004 B2 | {ref}`US 10,038,004 B2 <patent-gp57775841>` | unknown |
 | US 10,062,573 B1 | {ref}`US 10,062,573 B1 <patent-gp63208150>` | in force |
 | US 10,062,748 B1 | {ref}`US 10,062,748 B1 <patent-gp63208306>` | in force |
 | US 10,103,244 B2 | {ref}`US 10,103,244 B2 <patent-gp53522052>` | unknown |
+| US 10,141,393 B1 | {ref}`US 10,141,393 B1 <patent-gp50929963>` | unknown |
 | US 2018/0366563 A1 | {ref}`US 2018/0366563 A1 <patent-gp48743295>` | in force |
 | US 2019/0027484 A1 | {ref}`US 2019/0027484 A1 <patent-gp65016335>` | unknown |
 | US 10,199,229 B2 | {ref}`US 10,199,229 B2 <patent-gp46465479>` | in force |
+| US 2019/0043751 A1 | {ref}`US 2019/0043751 A1 <patent-gp50727163>` | unknown |
 | US 10,319,733 B2 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | in force |
 | US 2019/0355583 A1 | {ref}`US 2019/0355583 A1 <patent-gp53939072>` | in force |
 | US 10,516,044 B2 | {ref}`US 10,516,044 B2 <patent-gp39318438>` | unknown |
@@ -1659,7 +1668,7 @@ Number of members recorded per family.
 
 | Members | Families |
 |---|---|
-| 1 | 350 |
+| 1 | 359 |
 | 2 | 33 |
 | 3 | 13 |
 | 4 | 13 |
