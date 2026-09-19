@@ -581,8 +581,8 @@ heading here is not necessarily the name printed on the patent.
 ## Monterey Research LLC
 
 * {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
-* {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
+* {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
 * {ref}`US 11,069,789 B2 <patent-gp60807919>` — unknown
 

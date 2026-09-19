@@ -16722,6 +16722,45 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8916432B1/en
 :::
 
+:::{dropdown} US 10,622,370 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2035-09-25
+:name: patent-gp50002947
+
+**Title:** System and method for manufacturing self-aligned STI with single poly
+
+**Assignees:** original Monterey Research LLC; current Monterey Research LLC
+
+**Inventors:** Thurgate; Tim et al.
+
+**Dates:** priority 2014-01-29, filing 2015-09-25, grant 2020-04-14
+
+**Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US10622370B1; not independently determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because Google Patents was unreachable))
+
+**Estimated expiry:** 2035-09-25 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by the later of US10622370B1's own filing date + 20 years (2035-09-25) and the family's earliest priority date + 21 years (2035-01-29), running to 2035-09-25, not yet past -- collapsed per the design's rule (not certainly expired)
+
+**Family ID:** `50002947` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 9,276,007 B2 | granted patent | 2016-03-01 | not shown | 2026-09-21 USPTO Patent Public Search record (round-6 H1 re-triage, found via the "cypress" query's own default-bucket residue -- the same DOCDB family as the "monterey research" query's US10622370B1) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS9276007B2) · [Google Patents](https://patents.google.com/patent/US9276007B2/en) |
+| US 10,622,370 B1 | granted patent | 2020-04-14 | not shown | 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10622370B1) · [Google Patents](https://patents.google.com/patent/US10622370B1/en) |
+
+**Relevance:**
+
+* {ref}`step-002`, {ref}`step-006`, {ref}`step-007`, {ref}`step-009`, {ref}`step-010`, {ref}`step-012` — *technique class*: Monterey Research LLC holds the Cypress-originated embedded-flash patent estate (a 2019 assignment); the patent describes rounding STI active-region corners before forming the charge-trapping structure, the class of technique the STI step pages cover, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — USPTO Patent Public Search, query "monterey research".as. AND (H01L21\$ OR H01L23\$ OR H01L27\$ OR H01L29\$ OR H10B\$ OR H10N70\$ OR G03F\$ OR C23C\$ OR C30B\$ OR H10D\$ OR H10P\$ OR H10W\$).cpc. -- a round-6 supplementary sweep for the post-2019 Monterey Research assignee spelling the round-5 sweep never queried (point-4 finding: Cypress sold a tranche of patents to Monterey Research, LLC in 2019, so patents granted after the transfer print Monterey rather than Cypress as assignee), retrieved 2026-09-20, this family's title and abstract read in round 6.
+
+**Notes:**
+* Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4 Monterey Research sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
+* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10622370 (retrieved 2026-09-21, 785087 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check (US9276007B2): the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9276007 (retrieved 2026-09-21, 788346 bytes) exists and is a granted-patent PDF for this number.
+* Mixed provenance (round-6 H1 re-triage finding): the round-5 "cypress" query's own default-bucket residue separately found US9276007B2, an earlier member of this same DOCDB family (filed 2014-01-29 by the same inventor, Thurgate; Tim), whose PPUBS record shows applicantName "SPANSION LLC" despite an assigneeName of "Cypress Semiconductor Corporation" at grant -- the same applicant/assignee split the round-6 fixer treats as a Spansion tie elsewhere (GP44188074, GP50681947). US10622370B1 itself, the later continuation, was filed directly by Monterey Research LLC as both applicant and assignee. Recorded here rather than excluded, because the technique (self-aligned STI with charge-trap corner rounding) is the same one already cited from US10622370B1 as technique-class, and the two members are one family, not a choice between two.
+
+**Verified:** 2026-09-21 USPTO Patent Public Search record for US10622370B1 (classification sweep, round 5)
+:::
+
 :::{dropdown} TW I640082 B — shown as in force; estimated expiry 2035-02-06
 :name: patent-gp52707807
 
@@ -17009,42 +17048,6 @@ families and members are counted.
 **Discovery:** assignee-search, cited-by-seed — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14); cited by US9824895B1 (Google Patents citation tables).
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9218978B1/en
-:::
-
-:::{dropdown} US 10,622,370 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2036-09-25
-:name: patent-gp50002947
-
-**Title:** System and method for manufacturing self-aligned STI with single poly
-
-**Assignees:** original Monterey Research LLC; current Monterey Research LLC
-
-**Inventors:** Thurgate; Tim et al.
-
-**Dates:** priority 2015-09-25, filing 2015-09-25, grant 2020-04-14
-
-**Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US10622370B1; not independently determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because Google Patents was unreachable))
-
-**Estimated expiry:** 2036-09-25 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US10622370B1's own filing date + 20 years or the family's priority date + 21 years, running to 2036-09-25, not yet past -- collapsed per the design's rule (not certainly expired)
-
-**Family ID:** `50002947` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
-
-**Members:**
-
-| Number | Type | Publication date | Status | Verified | Links |
-|---|---|---|---|---|---|
-| US 10,622,370 B1 | granted patent | 2020-04-14 | not shown | 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS10622370B1) · [Google Patents](https://patents.google.com/patent/US10622370B1/en) |
-
-**Relevance:**
-
-* {ref}`step-002`, {ref}`step-006`, {ref}`step-007`, {ref}`step-009`, {ref}`step-010`, {ref}`step-012` — *technique class*: Monterey Research LLC holds the Cypress-originated embedded-flash patent estate (a 2019 assignment); the patent describes rounding STI active-region corners before forming the charge-trapping structure, the class of technique the STI step pages cover, and it is not evidence that the technique is used in SKY130.
-
-**Discovery:** assignee-search — USPTO Patent Public Search, query "monterey research".as. AND (H01L21\$ OR H01L23\$ OR H01L27\$ OR H01L29\$ OR H10B\$ OR H10N70\$ OR G03F\$ OR C23C\$ OR C30B\$ OR H10D\$ OR H10P\$ OR H10W\$).cpc. -- a round-6 supplementary sweep for the post-2019 Monterey Research assignee spelling the round-5 sweep never queried (point-4 finding: Cypress sold a tranche of patents to Monterey Research, LLC in 2019, so patents granted after the transfer print Monterey rather than Cypress as assignee), retrieved 2026-09-20, this family's title and abstract read in round 6.
-
-**Notes:**
-* Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4 Monterey Research sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10622370 (retrieved 2026-09-21, 785087 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
-
-**Verified:** 2026-09-21 USPTO Patent Public Search record for US10622370B1 (classification sweep, round 5)
 :::
 
 :::{dropdown} US 9,624,094 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2036-11-13

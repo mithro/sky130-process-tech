@@ -1616,8 +1616,8 @@ Number of members recorded per family.
 
 | Members | Families |
 |---|---|
-| 1 | 308 |
-| 2 | 32 |
+| 1 | 307 |
+| 2 | 33 |
 | 3 | 13 |
 | 4 | 13 |
 | 5 | 8 |
