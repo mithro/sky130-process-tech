@@ -323,6 +323,7 @@ Steps 89–106.
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
+* {ref}`US 7,253,094 B1 <patent-gp38324318>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 7,901,976 B1 <patent-gp43639265>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
@@ -475,6 +476,7 @@ Steps 164–171.
 * {ref}`US 7,192,867 B1 <patent-gp37863803>` — unknown
 * {ref}`US 6,835,642 B2 <patent-gp32593189>` — Method of forming a metal fuse on semiconductor devices (2002-12-18)
 * {ref}`US 7,055,532 B2 <patent-gp34678118>` — Method to remove fluorine residue from bond pads (2003-12-18)
+* {ref}`US 8,093,719 B1 <patent-gp45419097>` — unknown
 * {ref}`US 7,679,384 B2 <patent-gp40095286>` — in force
 * {ref}`US 9,543,262 B1 <patent-gp57705840>` — unknown
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
@@ -803,11 +805,17 @@ that are not specific to one step.
 * {ref}`US 7,268,052 B1 <patent-gp38473220>` — unknown
 * {ref}`US 7,071,124 B1 <patent-gp36613702>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
+* {ref}`US 9,331,180 B2 <patent-gp36227553>` — unknown
 * {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
 * {ref}`US 7,256,087 B1 <patent-gp38337006>` — unknown
+* {ref}`US 7,390,750 B1 <patent-gp39529976>` — unknown
+* {ref}`US 7,352,444 B1 <patent-gp39227311>` — unknown
+* {ref}`US 7,351,663 B1 <patent-gp39227268>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
+* {ref}`US 7,446,063 B1 <patent-gp39916467>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)
+* {ref}`US 7,678,640 B1 <patent-gp41819476>` — unknown
 * {ref}`US 9,171,936 B2 <patent-gp39272978>` — unknown
 * {ref}`US 9,728,414 B2 <patent-gp39527860>` — unknown
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
@@ -817,6 +825,7 @@ that are not specific to one step.
 * {ref}`US 9,334,578 B2 <patent-gp42171130>` — unknown
 * {ref}`US 2011/0308955 A1 <patent-gp44483291>` — unknown
 * {ref}`US 9,431,503 B2 <patent-gp46876619>` — unknown
+* {ref}`US 9,396,959 B2 <patent-gp37595085>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,735,289 B2 <patent-gp52808963>` — unknown
 * {ref}`US 9,733,574 B2 <patent-gp52825918>` — unknown

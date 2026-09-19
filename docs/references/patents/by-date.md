@@ -393,21 +393,29 @@ first, and then by status.
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
 * {ref}`US 7,071,124 B1 <patent-gp36613702>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
+* {ref}`US 9,331,180 B2 <patent-gp36227553>` — unknown
 * {ref}`US 7,705,268 B2 <patent-gp36337293>` — in force
 * {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
 * {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
+* {ref}`US 7,253,094 B1 <patent-gp38324318>` — unknown
 * {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
 * {ref}`US 7,256,087 B1 <patent-gp38337006>` — unknown
+* {ref}`US 7,390,750 B1 <patent-gp39529976>` — unknown
 * {ref}`US 7,501,352 B2 <patent-gp37073778>` — Method and system for forming an oxynitride layer (2005-03-30)
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
+* {ref}`US 7,352,444 B1 <patent-gp39227311>` — unknown
+* {ref}`US 7,351,663 B1 <patent-gp39227268>` — unknown
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
+* {ref}`US 8,093,719 B1 <patent-gp45419097>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
 * {ref}`US 7,394,075 B1 <patent-gp39561114>` — unknown
+* {ref}`US 7,446,063 B1 <patent-gp39916467>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)
 * {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
+* {ref}`US 7,678,640 B1 <patent-gp41819476>` — unknown
 * {ref}`US 7,981,800 B1 <patent-gp44261896>` — unknown
 * {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
 * {ref}`EP 2 104 648 B1 <patent-gp39203155>` — in force
@@ -464,6 +472,7 @@ first, and then by status.
 * {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 2013/0178030 A1 <patent-gp48744177>` — unknown
+* {ref}`US 9,396,959 B2 <patent-gp37595085>` — unknown
 * {ref}`US 9,564,331 B2 <patent-gp49777200>` — unknown
 * {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
@@ -952,16 +961,24 @@ first, and then by status.
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
 * {ref}`US 7,071,124 B1 <patent-gp36613702>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
+* {ref}`US 9,331,180 B2 <patent-gp36227553>` — unknown
 * {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
 * {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
+* {ref}`US 7,253,094 B1 <patent-gp38324318>` — unknown
 * {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
 * {ref}`US 7,256,087 B1 <patent-gp38337006>` — unknown
+* {ref}`US 7,390,750 B1 <patent-gp39529976>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
+* {ref}`US 7,352,444 B1 <patent-gp39227311>` — unknown
+* {ref}`US 7,351,663 B1 <patent-gp39227268>` — unknown
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
+* {ref}`US 8,093,719 B1 <patent-gp45419097>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
 * {ref}`US 7,394,075 B1 <patent-gp39561114>` — unknown
+* {ref}`US 7,446,063 B1 <patent-gp39916467>` — unknown
 * {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
+* {ref}`US 7,678,640 B1 <patent-gp41819476>` — unknown
 * {ref}`US 7,981,800 B1 <patent-gp44261896>` — unknown
 * {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
 * {ref}`US 9,171,936 B2 <patent-gp39272978>` — unknown
@@ -989,6 +1006,7 @@ first, and then by status.
 * {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
 * {ref}`US 2013/0178030 A1 <patent-gp48744177>` — unknown
+* {ref}`US 9,396,959 B2 <patent-gp37595085>` — unknown
 * {ref}`US 9,564,331 B2 <patent-gp49777200>` — unknown
 * {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
 * {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
