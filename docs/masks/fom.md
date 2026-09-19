@@ -554,7 +554,11 @@ space.
     "Challenges for 0.13µm Generation Shallow Trench Isolation on
     0.18µm Equipment Platform", *Journal of Telecommunication,
     Electronic and Computer Engineering* **8**(5), 15–21 (2016).
-    <https://jtec.utem.edu.my/jtec/article/view/697>
+    <https://jtec.utem.edu.my/jtec/article/view/697> (times out as of
+    2026-09-19, both this User-Agent and a browser one; a Wayback
+    Machine copy from 2026-04-11 confirms it was up; the PDF link
+    below still works directly) (PDF:
+    <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>).
 [^otto-1994]: O. W. Otto, J. G. Garofalo, K. K. Low, C.-M. Yuan,
     R. C. Henderson, C. Pierrat, R. L. Kostelak, S. Vaidya and
     P. K. Vasudev, "Automated optical proximity correction: a
