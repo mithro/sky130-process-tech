@@ -195,6 +195,7 @@ Steps 35–42.
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
+* {ref}`US 2019/0147960 A1 <patent-gp66433658>` — unknown
 * {ref}`US 11,610,820 B2 <patent-gp73016725>` — unknown
 * {ref}`US 11,810,616 B2 <patent-gp75974473>` — in force
 * {ref}`US 11,069,789 B2 <patent-gp60807919>` — unknown
