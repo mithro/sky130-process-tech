@@ -77,11 +77,10 @@ rather than later:
   short anneals.
 
 The order matters for the SONOS module too. Cypress's integration
-patent, which may still be in force, says where the charge-trapping
-stack and the well anneal fall relative to the logic implants; its two
-sentences are in the collapsed note below, and they are the strongest
-public evidence that the SKY130 lineage anneals its wells by
-{term}`RTA` before the SONOS and gate steps.
+patent, which may still be in force, bears on where this step falls and
+on what kind of anneal it is; its two sentences are in the collapsed
+note below, and they are the strongest public evidence this reference
+has on either question.
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
 Cypress's integration patent describes forming the charge-trapping stack

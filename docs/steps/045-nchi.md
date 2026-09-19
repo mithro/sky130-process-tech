@@ -106,8 +106,8 @@ fab (SKY130's values are not public):
 * **Species.** Boron, as ¹¹B⁺ or BF₂⁺; BF₂⁺ gives a shallower profile
   for the same accelerator voltage because the molecule shares its
   energy, and the fluorine it carries affects boron diffusion during
-  the later {term}`RTA`.[^wang-1997] Cypress's flow uses BF₂ (collapsed
-  note above); an AMD
+  the later {term}`RTA`.[^wang-1997] The species and conditions Cypress's
+  flow uses are in the collapsed note above; an AMD
   patent of the era gives "approximately 10-20 KeV for boron or
   45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
   ions/cm² […]" for a laterally doped channel implant made after gate

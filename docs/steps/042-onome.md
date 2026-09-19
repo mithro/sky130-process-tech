@@ -89,10 +89,10 @@ side:
   the oxide and finishing wet is how the damage is kept off the
   channel.
 * **The ONO edge must be clean.** The island sidewall is the boundary
-  along which the logic gate oxide will later grow; the "good stack
-  sidewall profile" the Cypress patent aims at (the collapsed note
-  above) avoids nitride feet that would leave stringers and re-entrant
-  profiles that would trap resist.
+  along which the logic gate oxide will later grow; the sidewall
+  profile the Cypress patent aims at (the collapsed note above) avoids
+  nitride feet that would leave stringers and re-entrant profiles that
+  would trap resist.
 
 Without `ONOME`, there would be no logic transistors in the ordinary
 sense — every gate would sit on ONO.

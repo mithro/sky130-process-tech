@@ -19,9 +19,10 @@ step, {ref}`ONO <step-040>`. The resist patterned at
 {ref}`TUNM <step-035>` — opened through its {term}`ARC` at
 {ref}`TUNARCE <step-036>` and just used as the mask for the
 {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants — now serves
-a third time, as the mask for an oxide etch that we infer to be wet: the
-Cypress patent, which may still be in force, uses an HF-based chemistry,
-and a plasma would damage the silicon. Inside each window the oxide —
+a third time, as the mask for an oxide etch that we infer to be wet: a
+plasma would damage the silicon, and the Cypress patent, which may still
+be in force, uses a wet chemistry of its own (collapsed note below).
+Inside each window the oxide —
 the pad oxide, we infer — is dissolved in dilute hydrofluoric acid or
 buffered HF down to the silicon; outside the windows the resist keeps
 the oxide intact. The patent's own chemistries, its pad-oxide thickness
@@ -136,9 +137,8 @@ fab (SKY130's recipe is not public):
 3. **Rinse and dry.** DI-water rinse; the freshly exposed silicon is
    hydrophobic.
 4. **Resist strip.** The resist has seen two light implants and one
-   plasma. An oxygen (or O₂/N₂, O₂/forming-gas) downstream {term}`ash`,
-   as in the Cypress flow (collapsed note above), followed by a
-   sulphuric-peroxide ({term}`SPM`) wet strip
+   plasma. An oxygen (or O₂/N₂, O₂/forming-gas) downstream {term}`ash`
+   followed by a sulphuric-peroxide ({term}`SPM`) wet strip
    ({ref}`category-strip`). The ash regrows a thin oxide on the exposed
    silicon, which the next clean removes.
 5. **Pre-oxidation clean.** An RCA-type sequence — {term}`SC-1` for particles

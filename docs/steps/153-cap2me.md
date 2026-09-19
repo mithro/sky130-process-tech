@@ -154,11 +154,12 @@ same sequence.
 2. **BARC open** (if a BARC was used at {ref}`CAP2M <step-152>`): a
    short O₂/N₂ step.
 3. **Main etch.** A chlorine- or bromine-based chemistry with a small
-   fluorocarbon addition in a noble-gas carrier — the scheme of the
-   Texas Instruments patent in the collapsed note above, whose
-   top-electrode etch rates are given there — so that about 0.1 µm of
-   TiW clears in well under a minute (our arithmetic; the patent
-   describes TiN, not TiW).
+   fluorocarbon addition in a noble-gas carrier (industry practice;
+   Nojiri sets out the regime[^nojiri-2015]); the Texas Instruments
+   patent's own scheme and its top-electrode etch rates are in the
+   collapsed note above, and at those rates about 0.1 µm of TiW clears
+   in well under a minute (our arithmetic; the patent describes TiN, not
+   TiW).
 4. **Endpoint and {term}`over-etch`.** Optical emission as the plate film clears; the
    open area is most of the wafer, so the signal is strong — the reverse
    of the low-open-area problem Wodecki describes for via

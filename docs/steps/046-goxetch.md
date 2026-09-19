@@ -155,9 +155,9 @@ preferred.[^pat-03]
 ## Machines likely used at SkyWater
 
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
-  BOE, spin or IPA dry")[^skw-01] — BOE is the etchant Cypress names for
-  this step (the collapsed note above). Strength: **strong** for the
-  tool; **inference** for the assignment.
+  BOE, spin or IPA dry")[^skw-01] — the bench carries the chemistry the
+  Cypress patent names for this step (the collapsed note above).
+  Strength: **strong** for the tool; **inference** for the assignment.
 * **DNS wet bench** ("industry standard HF/SC1/SC2"; "dilute HF-last
   with IPA dry")[^skw-01] — a pre-gate clean with HF-last is exactly the
   option listed. Strength: strong for existence; inference for

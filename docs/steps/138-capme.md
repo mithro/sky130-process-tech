@@ -219,9 +219,11 @@ end (SKY130's recipe is not public):
 2. **BARC open** (if a BARC was used at {ref}`CAPM <step-137>`): a
    short O₂/N₂ step.
 3. **Main etch.** A halogen chemistry — Cl₂ (or BCl₃) with a small
-   fluorine-bearing addition such as CF₄, CHF₃ or SF₆, in argon (the
-   scheme of the Texas Instruments patent in the collapsed notes above)
-   — at moderate bias; for a ~0.1 µm
+   fluorine-bearing addition such as CF₄, CHF₃ or SF₆, in argon
+   (industry practice for a refractory metal over a thin dielectric;
+   Nojiri sets out the regime[^nojiri-2015]) — at moderate bias; the
+   Texas Instruments patent's own scheme is in the collapsed notes
+   above; for a ~0.1 µm
    film the main etch is short (our estimate), and Turban et al. and
    Liu and Kuo give the dependence of the rate on chemistry, power
    and pressure.[^turban-1989][^liu-2007-tiw] Flamm and Donnelly and
