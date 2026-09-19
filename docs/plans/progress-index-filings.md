@@ -470,3 +470,121 @@ Pushed to `topic/index-filings-r5`.
   start); sub-item numbers such as "4.01" are read as "4"; the quotation
   should be located on the same normalised text as the verbatim check;
   PDFs are parsed twice per run.
+
+## Round 6 — location-check coverage: case, sub-items, HTML headings
+
+Worktree `.worktrees/topic-filings-locations`, branch `topic/filings-locations`
+(fresh worktree off `main`, which already carried round 5's merged state, 89
+filings).
+
+**Task: close the round-5 follow-up items.** `tools/check_filings.py`'s
+`check_item_location`/`check_heading_location` (formerly `HEADING_RE`
+literal-caps-only, sub-item numbers truncated to their leading digit, HTML
+flattened with no line breaks, and the location checks searching a separate,
+laxer whitespace-only text than the verbatim check) were rewritten:
+
+* `HEADING_RE` is now case-insensitive and captures a full sub-item number
+  ("Item 4.01", "Item 5.02"), not just its leading digit; `location_item_number`
+  no longer truncates one either. Losing case as the "this is a real heading,
+  not a cross-reference" signal is replaced by `_line_initial` (a match must
+  start a line, or -- new -- immediately follow a sentence-terminal period/colon
+  with no line break at all, which some PDF extractions insert between a
+  paragraph and the following heading).
+* `document_text` now turns HTML block-level tag boundaries (`<p>`, `<div>`,
+  `<tr>`, `<br>`, headings, list items, ...) into newlines before stripping
+  tags, so a heading in an HTML filing can start a line the same way a
+  PDF-extracted one does; this was the direct fix for the ~15 "heading only
+  mid-sentence" HTML abstentions.
+* A quote is now located, for the Item and prose-heading checks, via
+  `locate_fragment`/`normalise_map` on exactly the same fully normalised text
+  (whitespace and hyphens stripped) the verbatim check uses, instead of a
+  separate whitespace-only regex search -- fixing the 4 "quote text not found"
+  abstentions the round-5 report attributed to this inconsistency.
+* `document_pages`/`document_text` no longer parse a PDF twice per record:
+  `document_text` takes pages already extracted by `document_pages`.
+* Added `--selftest` (check_filings.py had none before) with constructed
+  cases for each new behaviour: a full sub-item number, a mixed-case caption,
+  a heading only in a table-of-contents run, and a heading only mid-sentence
+  (both for an Item caption and for a prose heading), plus the HTML
+  block-boundary fix.
+* Documented, in the module docstring and `check_heading_location`, the
+  remaining limitation: a wrong location naming a heading that also happens
+  to precede the quote within `HEADING_MAX_GAP` is not caught, since prose
+  headings (unlike Item numbers) are not enumerable/orderable the way the
+  Item check can order and compare them.
+
+**First `--online` run under the rewritten checker** (89 records, byte cache
+pre-populated via a scratch driver since the branch's own `tmp/filings-cache/`
+did not survive the round-5 worktree's removal -- documents were re-fetched
+once, through the same `fetch()`, same cache, same user agent, same
+Wayback/IR-only rule, not re-fetched again after) found **9 new "problems"**
+where round 5 had only ever abstained. Investigated each against its own
+cached document before changing anything (never guessed):
+
+| record | quote | checker said | actual (verified in the cached copy) |
+|---|---|---|---|
+| `cypress-annual-report-fy2002` (both quotes) | Honeywell agreement; manufacturing | nearest Item 15 (then Item 9 after the TOC-tail fix below) | this annual report never renders a proper "Item 1" caption for this content at all -- confirmed by searching the whole fetched text for "item 1" in any form |
+| `cypress-10-k-2008-03-03` (both quotes) | Texas exit plan; SONOS transfer | nearest Item 1A | a cross-reference ("these factors are discussed under\nItem 1A.\nBusiness Segments...") coincidentally ends its own line by an ordinary word-wrap |
+| `skywater-10-q-2021-05-19`, `-2021-08-04`, `-2021-11-08` (disclosure-controls quote) | "...were not effective..." | nearest Item 3 | the PDF extraction runs the previous paragraph straight into "Item 4. Controls and Procedures" with no line break at all |
+| `skywater-10-q-2025-05-08` (Fab 25 quote) | "...anticipated timing and terms" | nearest Item 1 | quote is in the front-matter "Special Note Regarding Forward-Looking Statements" section, before Part I even starts -- not under any Item |
+| `skywater-ex-99-1-2026-01-26` | "$35.00 per share..." | in paragraph 2, not 1 | a subheadline ("...at 8:30 a.m. ET") satisfied the "is this prose" filter by containing an abbreviation, and only became its own paragraph once the HTML block-boundary fix (above) gave it a line break of its own |
+
+Only one of the nine was a genuine data error: `skywater-10-q-2025-05-08`'s
+second quote's `location` was corrected from "Part I, Item 2,
+forward-looking statements" to "Special Note Regarding Forward-Looking
+Statements" (matching the document's own heading and the convention already
+used by two other records for this recurring boilerplate section). The other
+eight were checker false positives, fixed in `tools/check_filings.py` with
+three additional, narrow heuristics rather than by touching correct data:
+
+* `_looks_like_toc_entry`: a table-of-contents entry survives
+  `_drop_toc_runs`'s run-of-3 threshold when a "PART II" line, a non-Item
+  sub-entry, or the entry's own title wrapping onto a second physical line
+  widens the gap to its neighbours. Looks instead, within a short window
+  after the match (stopping at a blank-line break), for a trailing page
+  number or dot leader -- the shape of a TOC line regardless of how isolated
+  it ends up.
+* `_looks_like_cross_reference`: excludes a line-initial match immediately
+  (within ~30 characters, crossing the line break) preceded by a
+  reference-introducing word ("under", "see", "discussed", "described",
+  "regarding", "pursuant", "refer(red)").
+* `check_positional_location`'s "is this paragraph prose" filter now also
+  requires at least 20 characters of further text after the sentence-ending
+  period, not just "a period or the paragraph ends there" -- closing the
+  abbreviation false-positive above.
+
+After these fixes: `uv run tools/check_filings.py --selftest`: selftest OK.
+`uv run tools/check_filings.py`: 89 filings, 0 problems. Each of the nine
+previously-wrong locations re-checked individually against `check_online`:
+0 problems, and `cypress-annual-report-fy2002`'s two quotes now correctly
+abstain (genuinely undeterminable, per the investigation above) rather than
+silently passing or wrongly failing.
+
+**Abstentions, before and after (same 89 records, only the checker and the
+one data fix above changed):** round 5 baseline **100** locations not
+checked -> round 6 **48**. `gen_filings.py` regenerated (6 pages, 0 problems)
+for the one corrected location.
+
+**Final checks (this session).** `uv run tools/check_filings.py --selftest`:
+selftest OK. `uv run tools/check_filings.py`: 89 filings, 0 problems. `uv run
+tools/check_filings.py --online` (full, all 89 records, run to completion
+watched in this session -- a single foreground call's timeout is shorter
+than the total PDF-parsing time across 89 documents, so the run itself was
+started and awaited rather than chunked, with no network wait since every
+source was already cached): **89 filings checked, 0 problems, 48 locations
+not checked**, confirming the 100 -> 48 count above and the same 48 lines a
+per-record cross-check with the rewritten checker's own functions had
+already produced. `uv run tools/check_refs.py`: 264 written pages, 0 with
+problems. `uv run
+tools/check_steps.py`: 171 pages, 0 missing headings. `uv run
+tools/check_machines.py`: 30 pages, 0 problems. `uv run
+tools/check_materials.py`: 12 pages, 0 problems. `uv run
+tools/check_masks.py`: 36 pages, 0 problems. `uv run tools/check_papers.py`:
+56 papers, 0 problems. `uv run tools/check_patents.py`: 542 patent families,
+0 problems. `uv run tools/check_inforce.py`: 285 pages checked, 0 problems.
+`uv run tools/gen_filings.py --check`: 6 pages, 0 problems. `uv run
+tools/gen_papers.py --check`: 9 pages, 0 problems. `uv run
+tools/gen_patents.py --check`: 6 pages, 0 problems. `uv run python
+tools/gen_index_links.py --check`: 0 pages differ. `uv run sphinx-build -W -q
+-b html docs tmp/build-filings-loc`: clean, exit 0. Pushed to
+`topic/filings-locations`.
