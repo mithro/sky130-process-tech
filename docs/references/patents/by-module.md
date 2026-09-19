@@ -15,6 +15,7 @@ relevance entries point into that group's targets.
 
 Steps 1–13.
 
+* {ref}`US 4,764,248 A <patent-gp21893791>` — Rapid thermal nitridized oxide locos process (1987-04-13)
 * {ref}`US 5,258,332 A <patent-gp27553885>` — Method of manufacturing semiconductor devices including rounding of corner portions by etching (1987-08-28)
 * {ref}`US 4,948,458 A <patent-gp23554962>` — Method and apparatus for producing magnetically-coupled planar plasma (1989-08-14)
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
@@ -262,9 +263,13 @@ Steps 89–106.
 * {ref}`US 4,675,073 A <patent-gp25274513>` — Tin etch process (1986-03-07)
 * {ref}`US 4,948,458 A <patent-gp23554962>` — Method and apparatus for producing magnetically-coupled planar plasma (1989-08-14)
 * {ref}`US 5,155,336 A <patent-gp27042189>` — Rapid thermal heating apparatus and method (1990-01-19)
+* {ref}`US 5,043,790 A <patent-gp24009558>` — Sealed self aligned contacts using two nitrides process (1990-04-05)
+* {ref}`US 5,216,281 A <patent-gp27055077>` — Self sealed aligned contact incorporating a dopant source (1991-08-26)
 * {ref}`US 5,433,651 A <patent-gp22631367>` — In-situ endpoint detection and process monitoring method and apparatus for chemical-mechanical polishing (1993-12-22)
+* {ref}`US 5,610,099 A <patent-gp23018112>` — Process for fabricating transistors using composite nitride structure (1994-06-28)
 * {ref}`US 5,540,824 A <patent-gp23061269>` — Plasma reactor with multi-section RF coil and isolated conducting lid (1994-07-18)
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
+* {ref}`US 5,710,061 A <patent-gp22657288>` — Disposable post processing for semiconductor device fabrication (1995-08-17)
 * {ref}`US 5,738,574 A <patent-gp24192580>` — Continuous processing system for chemical mechanical polishing (1995-10-27)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
@@ -357,10 +362,12 @@ Steps 135–148.
 
 * {ref}`US 4,789,648 A <patent-gp25155097>` — Method for producing coplanar multi-level metal/insulator films on a substrate and for forming patterned conductive lines simultaneously with stud vias (1985-10-28)
 * {ref}`US 4,944,836 A <patent-gp25155001>` — Chem-mech polishing method for producing coplanar metal/insulator films on a substrate (1985-10-28)
+* {ref}`US 5,005,102 A <patent-gp23452232>` — Multilayer electrodes for integrated circuit capacitors (1989-06-20)
 * {ref}`US 4,919,748 A <patent-gp23476680>` — Method for tapered etching (1989-06-30)
 * {ref}`US 4,948,458 A <patent-gp23554962>` — Method and apparatus for producing magnetically-coupled planar plasma (1989-08-14)
 * {ref}`US 5,028,565 A <patent-gp23576244>` — Process for CVD deposition of tungsten layer on semiconductor wafer (1989-08-25)
 * {ref}`US 5,160,534 A <patent-gp27460980>` — Titanium-tungsten target material for sputtering and manufacturing method therefor (1990-06-15)
+* {ref}`US 5,170,242 A <patent-gp27034223>` — Reaction barrier for a multilayer structure in an integrated circuit (1991-05-10)
 * {ref}`US 5,433,651 A <patent-gp22631367>` — In-situ endpoint detection and process monitoring method and apparatus for chemical-mechanical polishing (1993-12-22)
 * {ref}`US 5,540,824 A <patent-gp23061269>` — Plasma reactor with multi-section RF coil and isolated conducting lid (1994-07-18)
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
@@ -391,10 +398,12 @@ Steps 135–148.
 Steps 149–163.
 
 * {ref}`US 4,698,128 A <patent-gp25460564>` — Sloped contact etch process (1986-11-17)
+* {ref}`US 5,005,102 A <patent-gp23452232>` — Multilayer electrodes for integrated circuit capacitors (1989-06-20)
 * {ref}`US 4,919,748 A <patent-gp23476680>` — Method for tapered etching (1989-06-30)
 * {ref}`US 4,948,458 A <patent-gp23554962>` — Method and apparatus for producing magnetically-coupled planar plasma (1989-08-14)
 * {ref}`US 5,108,570 A <patent-gp23997467>` — Multistep sputtering process for forming aluminum layer over stepped semiconductor wafer (1990-03-30)
 * {ref}`US 5,160,534 A <patent-gp27460980>` — Titanium-tungsten target material for sputtering and manufacturing method therefor (1990-06-15)
+* {ref}`US 5,170,242 A <patent-gp27034223>` — Reaction barrier for a multilayer structure in an integrated circuit (1991-05-10)
 * {ref}`US 5,527,561 A <patent-gp27450687>` — Method for filing substrate recesses using elevated temperature and pressure (1991-05-28)
 * {ref}`US 5,308,415 A <patent-gp25546287>` — Enhancing step coverage by creating a tapered profile through three dimensional resist pull back (1992-12-31)
 * {ref}`US 5,433,651 A <patent-gp22631367>` — In-situ endpoint detection and process monitoring method and apparatus for chemical-mechanical polishing (1993-12-22)
@@ -625,6 +634,8 @@ that are not specific to one step.
 * {ref}`US 5,393,679 A <patent-gp22834355>` — Use of double charge implant to improve retrograde process PMOS punch through voltage (1994-04-05)
 * {ref}`US 5,468,342 A <patent-gp22881554>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,562,801 A <patent-gp23382383>` — Method of etching an oxide layer (1994-04-28)
+* {ref}`US 5,523,258 A <patent-gp22885803>` — Method for avoiding lithographic rounding effects for semiconductor fabrication (1994-04-29)
+* {ref}`US 5,401,691 A <patent-gp23028910>` — Method of fabrication an inverse open frame alignment mark (1994-07-01)
 * {ref}`US 5,540,824 A <patent-gp23061269>` — Plasma reactor with multi-section RF coil and isolated conducting lid (1994-07-18)
 * {ref}`US 5,441,596 A <patent-gp23077300>` — Method for forming a stable plasma (1994-07-27)
 * {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-04)

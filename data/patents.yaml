@@ -46501,3 +46501,814 @@ families:
     PPUBS''s own search-hit metadata against a second USPTO system.'
 
 
+- id: GP21893791
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '21893791'
+  representative: US4764248A
+  title: Rapid thermal nitridized oxide locos process
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Bhattacherjee; Arya et al.
+  dates:
+    priority: '1987-04-13'
+    filing: '1987-04-13'
+    grant: '1988-08-16'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US4764248A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2008-04-13'
+    estimated: true
+    basis: 'the only recorded member, US4764248A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2007-04-13),
+      grant date + 17 years for its pre-1995-06-08 filing (2005-08-16), and the family''s earliest priority
+      date + 21 years (2008-04-13) -- running to 2008-04-13, already past'
+  expired: true
+  members:
+  - number: US4764248A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1988-08-16'
+    title: Rapid thermal nitridized oxide locos process
+    application_number: US07/037334
+    filing_date: '1987-04-13'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS4764248A
+      google_patents: https://patents.google.com/patent/US4764248A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-002
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns minimising LOCOS bird's-beak by rapid-thermal-nitridizing
+      the pad oxide before the nitride mask and field oxidation, and it is not evidence that the technique
+      is used in SKY130.
+  - target: step-006
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns minimising LOCOS bird's-beak by rapid-thermal-nitridizing
+      the pad oxide before the nitride mask and field oxidation, and it is not evidence that the technique
+      is used in SKY130.
+  - target: step-007
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns minimising LOCOS bird's-beak by rapid-thermal-nitridizing
+      the pad oxide before the nitride mask and field oxidation, and it is not evidence that the technique
+      is used in SKY130.
+  - target: step-009
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns minimising LOCOS bird's-beak by rapid-thermal-nitridizing
+      the pad oxide before the nitride mask and field oxidation, and it is not evidence that the technique
+      is used in SKY130.
+  - target: step-010
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns minimising LOCOS bird's-beak by rapid-thermal-nitridizing
+      the pad oxide before the nitride mask and field oxidation, and it is not evidence that the technique
+      is used in SKY130.
+  - target: step-012
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns minimising LOCOS bird's-beak by rapid-thermal-nitridizing
+      the pad oxide before the nitride mask and field oxidation, and it is not evidence that the technique
+      is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US4764248A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4764248
+    (retrieved 2026-09-21, 745574 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP23452232
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '23452232'
+  representative: US5005102A
+  title: Multilayer electrodes for integrated circuit capacitors
+  assignees:
+    original:
+    - Ramtron Corporation
+    current:
+    - Ramtron Corporation
+  inventors:
+  - Larson; William L.
+  dates:
+    priority: '1989-06-20'
+    filing: '1989-06-20'
+    grant: '1991-04-02'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5005102A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2010-06-20'
+    estimated: true
+    basis: 'the only recorded member, US5005102A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2009-06-20),
+      grant date + 17 years for its pre-1995-06-08 filing (2008-04-02), and the family''s earliest priority
+      date + 21 years (2010-06-20) -- running to 2010-06-20, already past'
+  expired: true
+  members:
+  - number: US5005102A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1991-04-02'
+    title: Multilayer electrodes for integrated circuit capacitors
+    application_number: US07/368668
+    filing_date: '1989-06-20'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5005102A
+      google_patents: https://patents.google.com/patent/US5005102A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-135
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a generic multilayer capacitor electrode/plate structure
+      formed over a substrate with an oxidised lower layer, a MIM-style capacitor technique (abstract
+      names no ferroelectric material), and it is not evidence that the technique is used in SKY130.
+  - target: step-138
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a generic multilayer capacitor electrode/plate structure
+      formed over a substrate with an oxidised lower layer, a MIM-style capacitor technique (abstract
+      names no ferroelectric material), and it is not evidence that the technique is used in SKY130.
+  - target: step-150
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a generic multilayer capacitor electrode/plate structure
+      formed over a substrate with an oxidised lower layer, a MIM-style capacitor technique (abstract
+      names no ferroelectric material), and it is not evidence that the technique is used in SKY130.
+  - target: step-153
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a generic multilayer capacitor electrode/plate structure
+      formed over a substrate with an oxidised lower layer, a MIM-style capacitor technique (abstract
+      names no ferroelectric material), and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5005102A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5005102
+    (retrieved 2026-09-21, 383865 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP27034223
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '27034223'
+  representative: US5170242A
+  title: Reaction barrier for a multilayer structure in an integrated circuit
+  assignees:
+    original:
+    - Ramtron Corporation
+    - NMB Semiconductor Company Ltd
+    current:
+    - Ramtron Corporation
+    - NMB Semiconductor Company Ltd
+  inventors:
+  - Stevens; E. Henry et al.
+  dates:
+    priority: '1991-05-10'
+    filing: '1991-05-10'
+    grant: '1992-12-08'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5170242A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2012-05-10'
+    estimated: true
+    basis: 'the only recorded member, US5170242A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2011-05-10),
+      grant date + 17 years for its pre-1995-06-08 filing (2009-12-08), and the family''s earliest priority
+      date + 21 years (2012-05-10) -- running to 2012-05-10, already past'
+  expired: true
+  members:
+  - number: US5170242A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1992-12-08'
+    title: Reaction barrier for a multilayer structure in an integrated circuit
+    application_number: US07/698841
+    filing_date: '1991-05-10'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5170242A
+      google_patents: https://patents.google.com/patent/US5170242A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-135
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns implanting active ionic species at a multilayer interface,
+      then annealing, to form a reaction barrier (a generic barrier-layer technique, abstract names no
+      ferroelectric material), and it is not evidence that the technique is used in SKY130.
+  - target: step-138
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns implanting active ionic species at a multilayer interface,
+      then annealing, to form a reaction barrier (a generic barrier-layer technique, abstract names no
+      ferroelectric material), and it is not evidence that the technique is used in SKY130.
+  - target: step-150
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns implanting active ionic species at a multilayer interface,
+      then annealing, to form a reaction barrier (a generic barrier-layer technique, abstract names no
+      ferroelectric material), and it is not evidence that the technique is used in SKY130.
+  - target: step-153
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns implanting active ionic species at a multilayer interface,
+      then annealing, to form a reaction barrier (a generic barrier-layer technique, abstract names no
+      ferroelectric material), and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5170242A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5170242
+    (retrieved 2026-09-21, 492116 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP27055077
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '27055077'
+  representative: US5216281A
+  title: Self sealed aligned contact incorporating a dopant source
+  assignees:
+    original:
+    - Ramtron Corporation
+    current:
+    - Ramtron Corporation
+  inventors:
+  - Butler; Douglas
+  dates:
+    priority: '1991-08-26'
+    filing: '1991-08-26'
+    grant: '1993-06-01'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5216281A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2012-08-26'
+    estimated: true
+    basis: 'the only recorded member, US5216281A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2011-08-26),
+      grant date + 17 years for its pre-1995-06-08 filing (2010-06-01), and the family''s earliest priority
+      date + 21 years (2012-08-26) -- running to 2012-08-26, already past'
+  expired: true
+  members:
+  - number: US5216281A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1993-06-01'
+    title: Self sealed aligned contact incorporating a dopant source
+    application_number: US07/750098
+    filing_date: '1991-08-26'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5216281A
+      google_patents: https://patents.google.com/patent/US5216281A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-093
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a contact structure with a doped-silicon dopant-source remnant
+      along the sidewall of the gate insulation, laterally displacing the contact from the source/drain
+      region, and it is not evidence that the technique is used in SKY130.
+  - target: step-101
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a contact structure with a doped-silicon dopant-source remnant
+      along the sidewall of the gate insulation, laterally displacing the contact from the source/drain
+      region, and it is not evidence that the technique is used in SKY130.
+  - target: step-103
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a contact structure with a doped-silicon dopant-source remnant
+      along the sidewall of the gate insulation, laterally displacing the contact from the source/drain
+      region, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5216281A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5216281
+    (retrieved 2026-09-21, 596138 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP24009558
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '24009558'
+  representative: US5043790A
+  title: Sealed self aligned contacts using two nitrides process
+  assignees:
+    original:
+    - Ramtron Corporation
+    - NMB Semiconductor Company Ltd
+    current:
+    - Ramtron Corporation
+    - NMB Semiconductor Company Ltd
+  inventors:
+  - Butler; Douglas
+  dates:
+    priority: '1990-04-05'
+    filing: '1990-04-05'
+    grant: '1991-08-27'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5043790A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2011-04-05'
+    estimated: true
+    basis: 'the only recorded member, US5043790A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2010-04-05),
+      grant date + 17 years for its pre-1995-06-08 filing (2008-08-27), and the family''s earliest priority
+      date + 21 years (2011-04-05) -- running to 2011-04-05, already past'
+  expired: true
+  members:
+  - number: US5043790A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1991-08-27'
+    title: Sealed self aligned contacts using two nitrides process
+    application_number: US07/505242
+    filing_date: '1990-04-05'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5043790A
+      google_patents: https://patents.google.com/patent/US5043790A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-093
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a titanium-silicide/TiN self-aligned contact sidewall structure
+      using two nitride layers -- the false negative the round-5 progress notes themselves already named,
+      and it is not evidence that the technique is used in SKY130.
+  - target: step-101
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a titanium-silicide/TiN self-aligned contact sidewall structure
+      using two nitride layers -- the false negative the round-5 progress notes themselves already named,
+      and it is not evidence that the technique is used in SKY130.
+  - target: step-103
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron Corporation, which owned and operated the fab before SkyWater (SkyWater's
+      Form S-1, SEC-01); the patent concerns a titanium-silicide/TiN self-aligned contact sidewall structure
+      using two nitride layers -- the false negative the round-5 progress notes themselves already named,
+      and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5043790A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5043790
+    (retrieved 2026-09-21, 496097 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP22657288
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '22657288'
+  representative: US5710061A
+  title: Disposable post processing for semiconductor device fabrication
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Cypress Semiconductor Corp
+  inventors:
+  - Cleeves; James M.
+  dates:
+    priority: '1995-08-17'
+    filing: '1995-08-17'
+    grant: '1998-01-20'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5710061A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2016-08-17'
+    estimated: true
+    basis: 'the only recorded member, US5710061A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2015-08-17),
+      or grant date + 17 years for a pre-1995-06-08 filing (2015-01-20, not applicable here), and the
+      family''s earliest priority date + 21 years (2016-08-17) -- running to 2016-08-17, already past'
+  expired: true
+  members:
+  - number: US5710061A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1998-01-20'
+    title: Disposable post processing for semiconductor device fabrication
+    application_number: US08/515675
+    filing_date: '1995-08-17'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5710061A
+      google_patents: https://patents.google.com/patent/US5710061A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-093
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns sacrificial posts patterned to define self-aligned-contact
+      opening locations before a planar layer is formed around them, and it is not evidence that the technique
+      is used in SKY130.
+  - target: step-101
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns sacrificial posts patterned to define self-aligned-contact
+      opening locations before a planar layer is formed around them, and it is not evidence that the technique
+      is used in SKY130.
+  - target: step-103
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns sacrificial posts patterned to define self-aligned-contact
+      opening locations before a planar layer is formed around them, and it is not evidence that the technique
+      is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5710061A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5710061
+    (retrieved 2026-09-21, 1020607 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP22885803
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '22885803'
+  representative: US5523258A
+  title: Method for avoiding lithographic rounding effects for semiconductor fabrication
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Cypress Semiconductor Corp
+  inventors:
+  - Petti; Christopher J. et al.
+  dates:
+    priority: '1994-04-29'
+    filing: '1994-04-29'
+    grant: '1996-06-04'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5523258A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2015-04-29'
+    estimated: true
+    basis: 'the only recorded member, US5523258A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2014-04-29),
+      grant date + 17 years for its pre-1995-06-08 filing (2013-06-04), and the family''s earliest priority
+      date + 21 years (2015-04-29) -- running to 2015-04-29, already past'
+  expired: true
+  members:
+  - number: US5523258A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1996-06-04'
+    title: Method for avoiding lithographic rounding effects for semiconductor fabrication
+    application_number: US08/235509
+    filing_date: '1994-04-29'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5523258A
+      google_patents: https://patents.google.com/patent/US5523258A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: category-lithography
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns patterning a layer with two separate, mutually
+      perpendicular masks to avoid lithographic corner rounding, e.g. for transistor gates, and it is
+      not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5523258A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5523258
+    (retrieved 2026-09-21, 1618122 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP23018112
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '23018112'
+  representative: US5610099A
+  title: Process for fabricating transistors using composite nitride structure
+  assignees:
+    original:
+    - Ramtron International Corporation
+    current:
+    - Ramtron International Corporation
+  inventors:
+  - Stevens; E. Henry et al.
+  dates:
+    priority: '1994-06-28'
+    filing: '1994-06-28'
+    grant: '1997-03-11'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5610099A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2015-06-28'
+    estimated: true
+    basis: 'the only recorded member, US5610099A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2014-06-28),
+      grant date + 17 years for its pre-1995-06-08 filing (2014-03-11), and the family''s earliest priority
+      date + 21 years (2015-06-28) -- running to 2015-06-28, already past'
+  expired: true
+  members:
+  - number: US5610099A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1997-03-11'
+    title: Process for fabricating transistors using composite nitride structure
+    application_number: US08/267278
+    filing_date: '1994-06-28'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5610099A
+      google_patents: https://patents.google.com/patent/US5610099A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-093
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron International Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a source/drain contact window formed
+      through a dielectric with a moderate implant through it before the contact window is fully opened,
+      and it is not evidence that the technique is used in SKY130.
+  - target: step-101
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron International Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a source/drain contact window formed
+      through a dielectric with a moderate implant through it before the contact window is fully opened,
+      and it is not evidence that the technique is used in SKY130.
+  - target: step-103
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron International Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a source/drain contact window formed
+      through a dielectric with a moderate implant through it before the contact window is fully opened,
+      and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5610099A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5610099
+    (retrieved 2026-09-21, 1374557 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP23028910
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '23028910'
+  representative: US5401691A
+  title: Method of fabrication an inverse open frame alignment mark
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Caldwell; Roger F.
+  dates:
+    priority: '1994-07-01'
+    filing: '1994-07-01'
+    grant: '1995-03-28'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5401691A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2015-07-01'
+    estimated: true
+    basis: 'the only recorded member, US5401691A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2014-07-01),
+      grant date + 17 years for its pre-1995-06-08 filing (2012-03-28), and the family''s earliest priority
+      date + 21 years (2015-07-01) -- running to 2015-07-01, already past'
+  expired: true
+  members:
+  - number: US5401691A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1995-03-28'
+    title: Method of fabrication an inverse open frame alignment mark
+    application_number: US08/269850
+    filing_date: '1994-07-01'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5401691A
+      google_patents: https://patents.google.com/patent/US5401691A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: category-lithography
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns replicating an alignment mark into a
+      subsequent layer, then removing that layer outside the mark region -- an "open frame" alignment
+      technique, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5401691A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5401691
+    (retrieved 2026-09-21, 1088028 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+

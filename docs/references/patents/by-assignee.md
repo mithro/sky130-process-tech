@@ -35,8 +35,10 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 5,665,639 A <patent-gp22742690>` — Process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal (1994-02-23)
 * {ref}`US 5,468,342 A <patent-gp22881554>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,562,801 A <patent-gp23382383>` — Method of etching an oxide layer (1994-04-28)
+* {ref}`US 5,523,258 A <patent-gp22885803>` — Method for avoiding lithographic rounding effects for semiconductor fabrication (1994-04-29)
 * {ref}`US 5,441,596 A <patent-gp23077300>` — Method for forming a stable plasma (1994-07-27)
 * {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-04)
+* {ref}`US 5,710,061 A <patent-gp22657288>` — Disposable post processing for semiconductor device fabrication (1995-08-17)
 * {ref}`US 5,650,666 A <patent-gp24244903>` — Method and apparatus for preventing cracks in semiconductor die (1995-11-22)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
@@ -210,6 +212,8 @@ heading here is not necessarily the name printed on the patent.
 
 ## Cypress Semiconductor Corporation
 
+* {ref}`US 4,764,248 A <patent-gp21893791>` — Rapid thermal nitridized oxide locos process (1987-04-13)
+* {ref}`US 5,401,691 A <patent-gp23028910>` — Method of fabrication an inverse open frame alignment mark (1994-07-01)
 * {ref}`US 5,635,765 A <patent-gp24428538>` — Multi-layer gate structure (1996-02-26)
 * {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997-09-03)
 * {ref}`US 6,273,098 B1 <patent-gp25524224>` — Extension of the useful life of a chemical bath used to process a substrate (1997-11-24)
@@ -514,6 +518,11 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,430,028 B1 <patent-gp24897586>` — Method for fabrication of an MIM capacitor and related structure (2000-11-22)
 * {ref}`US 7,078,310 B1 <patent-gp32851038>` — Method for fabricating a high density composite MIM capacitor with flexible routing in semiconductor dies (2003-05-28)
 
+## NMB Semiconductor Company Ltd (now Ramtron Corporation)
+
+* {ref}`US 5,043,790 A <patent-gp24009558>` — Sealed self aligned contacts using two nitrides process (1990-04-05)
+* {ref}`US 5,170,242 A <patent-gp27034223>` — Reaction barrier for a multilayer structure in an integrated circuit (1991-05-10)
+
 ## Nova Associates Inc (now Eaton Corp)
 
 * {ref}`US 4,234,797 A <patent-gp21918419>` — Treating workpieces with beams (1979-05-23)
@@ -548,10 +557,21 @@ heading here is not necessarily the name printed on the patent.
 
 * {ref}`US 4,703,252 A <patent-gp24828889>` — Apparatus and methods for resistivity testing (1985-02-22)
 
+## Ramtron Corporation (now NMB Semiconductor Company Ltd)
+
+* {ref}`US 5,005,102 A <patent-gp23452232>` — Multilayer electrodes for integrated circuit capacitors (1989-06-20)
+* {ref}`US 5,043,790 A <patent-gp24009558>` — Sealed self aligned contacts using two nitrides process (1990-04-05)
+* {ref}`US 5,170,242 A <patent-gp27034223>` — Reaction barrier for a multilayer structure in an integrated circuit (1991-05-10)
+* {ref}`US 5,216,281 A <patent-gp27055077>` — Self sealed aligned contact incorporating a dopant source (1991-08-26)
+
 ## Ramtron International Corp
 
 * {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
 * {ref}`US 6,242,299 B1 <patent-gp23084824>` — Barrier layer to protect a ferroelectric capacitor after contact has been made to the capacitor electrode (1999-04-01)
+
+## Ramtron International Corporation
+
+* {ref}`US 5,610,099 A <patent-gp23018112>` — Process for fabricating transistors using composite nitride structure (1994-06-28)
 
 ## RCA Corp
 
