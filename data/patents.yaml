@@ -48031,3 +48031,752 @@ families:
     PPUBS''s own search-hit metadata against a second USPTO system.'
 
 
+- id: GP24323213
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '24323213'
+  representative: US5573971A
+  title: Planar antifuse and method of fabrication
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Cleeves; James M.
+  dates:
+    priority: '1995-12-29'
+    filing: '1995-12-29'
+    grant: '1996-11-12'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5573971A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2016-12-29'
+    estimated: true
+    basis: 'the only recorded member, US5573971A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2015-12-29),
+      or grant date + 17 years for a pre-1995-06-08 filing (2013-11-12, not applicable here), and the
+      family''s earliest priority date + 21 years (2016-12-29) -- running to 2016-12-29, already past'
+  expired: true
+  members:
+  - number: US5573971A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1996-11-12'
+    title: Planar antifuse and method of fabrication
+    application_number: US08/580938
+    filing_date: '1995-12-29'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5573971A
+      google_patents: https://patents.google.com/patent/US5573971A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: category-deposition
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns depositing and patterning a conductive/capping/antifuse/barrier
+      metal stack into a planar antifuse structure, and it is not evidence that the technique is used
+      in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5573971A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5573971
+    (retrieved 2026-09-21, 404444 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP24675318
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '24675318'
+  representative: US6091129A
+  title: Self-aligned trench isolated structure
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Cleeves; James M.
+  dates:
+    priority: '1996-06-19'
+    filing: '1996-06-19'
+    grant: '2000-07-18'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US6091129A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2017-06-19'
+    estimated: true
+    basis: 'the only recorded member, US6091129A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-06-19),
+      or grant date + 17 years for a pre-1995-06-08 filing (2017-07-18, not applicable here), and the
+      family''s earliest priority date + 21 years (2017-06-19) -- running to 2017-06-19, already past'
+  expired: true
+  members:
+  - number: US6091129A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '2000-07-18'
+    title: Self-aligned trench isolated structure
+    application_number: US08/666754
+    filing_date: '1996-06-19'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6091129A
+      google_patents: https://patents.google.com/patent/US6091129A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-002
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a trench-isolated active device whose
+      overlying conductive layer is self-aligned with the isolation trench, and it is not evidence that
+      the technique is used in SKY130.
+  - target: step-006
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a trench-isolated active device whose
+      overlying conductive layer is self-aligned with the isolation trench, and it is not evidence that
+      the technique is used in SKY130.
+  - target: step-007
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a trench-isolated active device whose
+      overlying conductive layer is self-aligned with the isolation trench, and it is not evidence that
+      the technique is used in SKY130.
+  - target: step-009
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a trench-isolated active device whose
+      overlying conductive layer is self-aligned with the isolation trench, and it is not evidence that
+      the technique is used in SKY130.
+  - target: step-010
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a trench-isolated active device whose
+      overlying conductive layer is self-aligned with the isolation trench, and it is not evidence that
+      the technique is used in SKY130.
+  - target: step-012
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a trench-isolated active device whose
+      overlying conductive layer is self-aligned with the isolation trench, and it is not evidence that
+      the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US6091129A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6091129
+    (retrieved 2026-09-21, 1967526 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP24702105
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '24702105'
+  representative: US5830804A
+  title: Encapsulated dielectric and method of fabrication
+  assignees:
+    original:
+    - Cypress Semiconductor Corp
+    current:
+    - Cypress Semiconductor Corp
+  inventors:
+  - Cleeves; James M. et al.
+  dates:
+    priority: '1996-06-28'
+    filing: '1996-06-28'
+    grant: '1998-11-03'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5830804A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2017-06-28'
+    estimated: true
+    basis: 'the only recorded member, US5830804A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-06-28),
+      or grant date + 17 years for a pre-1995-06-08 filing (2015-11-03, not applicable here), and the
+      family''s earliest priority date + 21 years (2017-06-28) -- running to 2017-06-28, already past'
+  expired: true
+  members:
+  - number: US5830804A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1998-11-03'
+    title: Encapsulated dielectric and method of fabrication
+    application_number: US08/673304
+    filing_date: '1996-06-28'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5830804A
+      google_patents: https://patents.google.com/patent/US5830804A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-093
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a disposable post surrounded by successive dielectric
+      layers, then removed to reveal a defined opening -- a dielectric encapsulation/contact-opening technique,
+      and it is not evidence that the technique is used in SKY130.
+  - target: step-101
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a disposable post surrounded by successive dielectric
+      layers, then removed to reveal a defined opening -- a dielectric encapsulation/contact-opening technique,
+      and it is not evidence that the technique is used in SKY130.
+  - target: step-103
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
+      (SkyWater's Form S-1, SEC-01); the patent concerns a disposable post surrounded by successive dielectric
+      layers, then removed to reveal a defined opening -- a dielectric encapsulation/contact-opening technique,
+      and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5830804A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5830804
+    (retrieved 2026-09-21, 561959 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP24786919
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '24786919'
+  representative: US6309971B1
+  title: Hot metallization process
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Geha; Sam G.
+  dates:
+    priority: '1996-08-01'
+    filing: '1996-08-01'
+    grant: '2001-10-30'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US6309971B1; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2017-08-01'
+    estimated: true
+    basis: 'the only recorded member, US6309971B1, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-08-01),
+      or grant date + 17 years for a pre-1995-06-08 filing (2018-10-30, not applicable here), and the
+      family''s earliest priority date + 21 years (2017-08-01) -- running to 2017-08-01, already past'
+  expired: true
+  members:
+  - number: US6309971B1
+    country: US
+    kind: B1
+    document_type: granted-patent
+    publication_date: '2001-10-30'
+    title: Hot metallization process
+    application_number: US08/693978
+    filing_date: '1996-08-01'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6309971B1
+      google_patents: https://patents.google.com/patent/US6309971B1/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: category-deposition
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a cold-deposition step followed by a
+      hot-deposition step to form a void-free metal layer without raising substrate temperature excessively,
+      and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US6309971B1 (classification sweep, round
+    5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6309971
+    (retrieved 2026-09-21, 891329 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP24926077
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '24926077'
+  representative: US5990513A
+  title: Yield enhancement technique for integrated circuit processing to reduce effects of undesired
+    dielectric moisture retention and subsequent hydrogen out-diffusion
+  assignees:
+    original:
+    - Ramtron International Corporation
+    current:
+    - Ramtron International Corporation
+  inventors:
+  - Perino; Stanley C. et al.
+  dates:
+    priority: '1996-10-08'
+    filing: '1996-10-08'
+    grant: '1999-11-23'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5990513A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2017-10-08'
+    estimated: true
+    basis: 'the only recorded member, US5990513A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-10-08),
+      or grant date + 17 years for a pre-1995-06-08 filing (2016-11-23, not applicable here), and the
+      family''s earliest priority date + 21 years (2017-10-08) -- running to 2017-10-08, already past'
+  expired: true
+  members:
+  - number: US5990513A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1999-11-23'
+    title: Yield enhancement technique for integrated circuit processing to reduce effects of undesired
+      dielectric moisture retention and subsequent hydrogen out-diffusion
+    application_number: US08/728256
+    filing_date: '1996-10-08'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5990513A
+      google_patents: https://patents.google.com/patent/US5990513A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: category-deposition
+    relation: same-lineage-assignee
+    reason: Original assignee Ramtron International Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a technique reducing dielectric-film
+      moisture absorption and subsequent hydrogen out-diffusion during high-temperature processing (abstract
+      names no ferroelectric material), and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5990513A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5990513
+    (retrieved 2026-09-21, 773619 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP24975872
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '24975872'
+  representative: US6156645A
+  title: Method of forming a metal layer on a substrate, including formation of wetting layer at a high
+    temperature
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Geha; Sam G. et al.
+  dates:
+    priority: '1996-10-25'
+    filing: '1996-10-25'
+    grant: '2000-12-05'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US6156645A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2017-10-25'
+    estimated: true
+    basis: 'the only recorded member, US6156645A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-10-25),
+      or grant date + 17 years for a pre-1995-06-08 filing (2017-12-05, not applicable here), and the
+      family''s earliest priority date + 21 years (2017-10-25) -- running to 2017-10-25, already past'
+  expired: true
+  members:
+  - number: US6156645A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '2000-12-05'
+    title: Method of forming a metal layer on a substrate, including formation of wetting layer at a high
+      temperature
+    application_number: US08/740290
+    filing_date: '1996-10-25'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6156645A
+      google_patents: https://patents.google.com/patent/US6156645A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: category-deposition
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns forming a high-temperature wetting layer
+      so a subsequently formed metallisation layer adheres better, and it is not evidence that the technique
+      is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US6156645A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6156645
+    (retrieved 2026-09-21, 1018793 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP24992029
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '24992029'
+  representative: US6016012A
+  title: Thin liner layer providing reduced via resistance
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Chatila; Ahmad et al.
+  dates:
+    priority: '1996-11-05'
+    filing: '1996-11-05'
+    grant: '2000-01-18'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US6016012A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2017-11-05'
+    estimated: true
+    basis: 'the only recorded member, US6016012A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-11-05),
+      or grant date + 17 years for a pre-1995-06-08 filing (2017-01-18, not applicable here), and the
+      family''s earliest priority date + 21 years (2017-11-05) -- running to 2017-11-05, already past'
+  expired: true
+  members:
+  - number: US6016012A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '2000-01-18'
+    title: Thin liner layer providing reduced via resistance
+    application_number: US08/744248
+    filing_date: '1996-11-05'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS6016012A
+      google_patents: https://patents.google.com/patent/US6016012A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: step-093
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a thin liner layer in a via reducing
+      via resistance, and it is not evidence that the technique is used in SKY130.
+  - target: step-101
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a thin liner layer in a via reducing
+      via resistance, and it is not evidence that the technique is used in SKY130.
+  - target: step-103
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns a thin liner layer in a via reducing
+      via resistance, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US6016012A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6016012
+    (retrieved 2026-09-21, 501837 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP25076960
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '25076960'
+  representative: US5763021A
+  title: Method of forming a dielectric film
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Young; Andrew W. et al.
+  dates:
+    priority: '1996-12-13'
+    filing: '1996-12-13'
+    grant: '1998-06-09'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5763021A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2017-12-13'
+    estimated: true
+    basis: 'the only recorded member, US5763021A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-12-13),
+      or grant date + 17 years for a pre-1995-06-08 filing (2015-06-09, not applicable here), and the
+      family''s earliest priority date + 21 years (2017-12-13) -- running to 2017-12-13, already past'
+  expired: true
+  members:
+  - number: US5763021A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1998-06-09'
+    title: Method of forming a dielectric film
+    application_number: US08/766608
+    filing_date: '1996-12-13'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5763021A
+      google_patents: https://patents.google.com/patent/US5763021A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: category-deposition
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns operating a plasma-enhanced chemical
+      vapour deposition apparatus to form a dielectric film, and it is not evidence that the technique
+      is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5763021A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5763021
+    (retrieved 2026-09-21, 385471 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
+- id: GP25357416
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)
+    google_family_id: '25357416'
+  representative: US5931173A
+  title: Monitoring cleaning effectiveness of a cleaning system
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Schiele; Norman K.
+  dates:
+    priority: '1997-06-09'
+    filing: '1997-06-09'
+    grant: '1999-08-03'
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US5931173A; not independently
+      determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
+      Google Patents was unreachable)
+  expiry:
+    date: '2018-06-09'
+    estimated: true
+    basis: 'the only recorded member, US5931173A, has priority before 1999-05-29 (no US term
+
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-06-09),
+      or grant date + 17 years for a pre-1995-06-08 filing (2016-08-03, not applicable here), and the
+      family''s earliest priority date + 21 years (2018-06-09) -- running to 2018-06-09, already past'
+  expired: true
+  members:
+  - number: US5931173A
+    country: US
+    kind: A
+    document_type: granted-patent
+    publication_date: '1999-08-03'
+    title: Monitoring cleaning effectiveness of a cleaning system
+    application_number: US08/871428
+    filing_date: '1997-06-09'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS5931173A
+      google_patents: https://patents.google.com/patent/US5931173A/en
+    verified: 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5)
+  relevance:
+  - target: machine-wet-bench
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns monitoring the effectiveness of a megasonic/ultrasonic
+      wet-cleaning system on an immersed substrate, and it is not evidence that the technique is used
+      in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query and rejected
+    by the round-5 title-keyword default rule (H1 finding); re-triaged in round 6 by reading this member's
+    own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), retrieved
+    2026-09-21.
+  verified: 2026-09-21 USPTO Patent Public Search record for US5931173A (classification sweep, round 5)
+  notes:
+  - Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification
+    sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged
+    in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page
+    (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected
+    it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction
+    members and any other US member of the same family were not searched for, so this family is not claimed
+    complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal_status.status
+    are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term
+    adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership
+    lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full
+    named list a full record page would show.
+  - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5931173
+    (retrieved 2026-09-21, 1116383 bytes) exists and is a granted-patent PDF for this number, cross-checking
+    PPUBS''s own search-hit metadata against a second USPTO system.'
+
+
