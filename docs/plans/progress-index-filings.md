@@ -437,3 +437,22 @@ Net result: 86 -> 89 filings (+3: `weebit-nano-annual-report-fy2022`,
 `skywater-8-k-2024-06-26`, `cypress-8-k-2019-06-03`); by company, 26
 Cypress (+1), 43 SkyWater (+1), 7 Infineon, 5 Weebit Nano (+1), 4 D-Wave,
 3 IonQ, 1 QuickLogic.
+
+**Final checks (foreground, this session).** `uv run tools/check_filings.py`:
+89 filings, 0 problems. `uv run tools/gen_filings.py --check`: 6 pages, 0
+problems. `uv run tools/check_filings.py --online` (full, all 89
+records): **89 filings checked, 0 problems, 100 locations not checked**
+(up from 96 on the 86-record dataset before task B's three additions,
+each of which added a couple of abstained locations of its own; none of
+the three new records' locations were wrong). `uv run
+tools/check_refs.py`: 264 written pages, 0 with problems. `uv run
+tools/check_steps.py`: 171 pages, 0 missing headings. `uv run
+tools/check_machines.py`: 30 pages, 0 problems. `uv run
+tools/check_materials.py`: 12 pages, 0 problems. `uv run
+tools/check_masks.py`: 36 pages, 0 problems. `uv run
+tools/check_papers.py`: 56 papers, 0 problems. `uv run
+tools/gen_papers.py --check`: 9 pages, 0 problems. `uv run
+tools/check_patents.py`: 252 patent families, 0 problems. `uv run
+tools/gen_patents.py --check`: 6 pages, 0 problems. `uv run
+sphinx-build -W -q -b html docs tmp/build-filings-r5`: clean, exit 0.
+Pushed to `topic/index-filings-r5`.
