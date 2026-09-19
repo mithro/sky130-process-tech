@@ -524,13 +524,14 @@ and the upper ILD.[^pat-rram-oxide-tsmc]
 
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012)
 
-:::{dropdown} 8 families in force or status unknown
+:::{dropdown} 9 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 7,989,328 B2 <patent-gp39526963>` — unknown
 * {ref}`US 10,003,022 B2 <patent-gp54018263>` — in force
 * {ref}`US 9,431,609 B2 <patent-gp55302792>` — in force
+* {ref}`US 9,461,247 B2 <patent-gp40431642>` — unknown
 * {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
 * {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
