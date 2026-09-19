@@ -322,7 +322,7 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
         if 'query "cypress semiconductor".as. AND (B24B' in (f.get("discovery_note") or ""))
     h1_added = sum(1 for f in fams if "H1 finding" in (f.get("discovery_note") or ""))
     r7_added = sum(1 for f in fams
-                   if "round-4 unrestricted-assignee gap-close sweep" in (f.get("discovery_note") or ""))
+                   if "round-7 unrestricted-assignee gap-close sweep" in (f.get("discovery_note") or ""))
     def count_families(n: int, label: str) -> str:
         return f"{n} {label} {'family' if n == 1 else 'families'}"
 
@@ -410,25 +410,33 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
         "\"cypress semiconductor\".as. query, read from just its first 999 hits without grouping by "
         "family, had reported \"roughly 586\" distinct families against this index's 494 CPC-restricted "
         "ones. Properly paginating that same query round 7 found the true total is **3,142** distinct "
-        "families -- the round-5 figure was itself an undercount, not a completed sweep -- of which the "
-        "494 already indexed were confirmed complete with no paging gap, 2,499 more were decided out of "
-        "scope by their own CPC classes and title (overwhelmingly recent wireless/IoT/analog patents from "
-        "Cypress's non-process product lines, continued under Infineon ownership through 2026, using the "
-        "same CPC-facet method this index's own design already uses to define the swept boundary), 124 "
-        "more were decided out of scope individually by abstract (CMOS image-sensor structures, packaging, "
-        f"test circuits and assorted circuit schemes), and {plural(r7_added, 'family')} "
-        f"{'was' if r7_added == 1 else 'were'} added (an antifuse device structure in a CPC class no "
-        "earlier round queried). The same unrestricted "
-        "query, re-run for every other lineage assignee whose CPC-restricted total looked incomplete "
-        "(Longitude Flash Memory Solutions, Infineon Technologies LLC, Monterey Research), found and "
-        "decided a further 68 previously-unswept families the same way, with no additions. "
-        "`docs/plans/patent-discovery-log.md`'s \"Round 7\" section records every decision. "
-        "What remains: the 2,499-family CPC-classification bucket was decided by CPC facet and title, not "
-        "read individually -- a future round could spot-check a sample the way round 6 did for round 5's "
-        "own classifier residue; no round's sweep has looked outside the United States -- PPUBS indexes "
-        "only US grants, US pre-grant publications and USOCR, so a lineage family with no US member is "
-        "invisible to this index however it was found; and no attempt has been made to find a "
-        "PPUBS-sourced family's other-jurisdiction or other-US-member siblings.",
+        "families -- the round-5 figure was itself an undercount, not a completed sweep. Of the 3,142: "
+        "494 were already covered by the CPC-restricted sweep (no paging gap) and 24 more were already "
+        "decided in an earlier discovery-log round under a different query; of the remaining 2,624, "
+        "2,473 were decided out of scope by their own CPC classes and title (predominantly circuit "
+        "content spanning Cypress's full history -- programmable logic, PLL/clock, sense-amplifier, "
+        "CAM/FIFO, USB-PD, touch-sensing and wireless/IoT patents -- using the same CPC-facet method "
+        "this index's own design already uses to define the swept boundary), 141 more were decided out "
+        "of scope individually by abstract (packaging, test circuits and assorted circuit schemes), and "
+        f"{plural(r7_added, 'family')} {'was' if r7_added == 1 else 'were'} added: an antifuse device "
+        "structure, seven CMOS image-sensor/photodiode device structures (wells, junction and "
+        "implant/isolation structures -- this index has a public source, filing CYP-08, for image-sensor "
+        "fabrication at this lineage's own fab, and an existing precedent family, so the exclusion an "
+        "earlier draft of this round gave them was withdrawn), and two MEMS/SAW wafer-fabrication device "
+        "structures. The same unrestricted query, re-run for every other lineage assignee whose "
+        "CPC-restricted total looked incomplete (Longitude Flash Memory Solutions, Infineon Technologies "
+        "LLC, Monterey Research), found 68 previously-unswept rows, 20 of them the same DOCDB family as "
+        "a Cypress row above (found again under a second assignee query) and recorded as such rather than "
+        "duplicated -- 48 distinct new families, all out of scope; no additions from these three. "
+        "`docs/plans/patent-discovery-log.md`'s \"Round 7\" section records every decision, including a "
+        "small number of borderline rulings. "
+        "What remains: the 2,473-family CPC-classification bucket was decided by CPC facet and title, not "
+        "read individually -- a random and a targeted adversarial sample (`tmp/verify-index-patents-r4.md`) "
+        "found the split reliable once two narrow leaks in the CPC exclusion list were closed, but a "
+        "future round could still spot-check a further sample; no round's sweep has looked outside the "
+        "United States -- PPUBS indexes only US grants, US pre-grant publications and USOCR, so a lineage "
+        "family with no US member is invisible to this index however it was found; and no attempt has "
+        "been made to find a PPUBS-sourced family's other-jurisdiction or other-US-member siblings.",
     ]
 
 

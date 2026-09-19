@@ -71,14 +71,18 @@ Steps 14–34.
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 5,963,801 A <patent-gp25087511>` — Method of forming retrograde well structures and punch-through barriers using low energy implants (1996-12-19)
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
+* {ref}`US 7,253,019 B2 <patent-gp27238821>` — unknown
 * {ref}`US 6,455,402 B2 <patent-gp19572018>` — Method of forming retrograde doping file in twin well CMOS device (1999-01-22)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
+* {ref}`US 7,199,410 B2 <patent-gp24960722>` — unknown
 * {ref}`US 6,660,603 B2 <patent-gp22880690>` — Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions (2000-09-21)
 * {ref}`US 6,667,205 B2 <patent-gp29214361>` — Method of forming retrograde n-well and p-well (2002-04-19)
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
 * {ref}`US 2011/0006372 A1 <patent-gp29999977>` — Formation of standard voltage threshold and low voltage threshold mosfet devices (2002-07-08)
+* {ref}`US 7,173,299 B1 <patent-gp37696617>` — unknown
+* {ref}`US 7,180,111 B1 <patent-gp37744964>` — unknown
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
 * {ref}`US 7,605,041 B2 <patent-gp33193196>` — Semiconductor device and its manufacture method (2003-04-10)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
@@ -86,10 +90,13 @@ Steps 14–34.
 * {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
+* {ref}`US 7,151,287 B1 <patent-gp37053863>` — unknown
+* {ref}`US 7,808,022 B1 <patent-gp42797741>` — unknown
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
 * {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
+* {ref}`US 2009/0230289 A1 <patent-gp38441979>` — unknown
 * {ref}`US 2017/0221768 A1 <patent-gp51222001>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
@@ -790,6 +797,7 @@ that are not specific to one step.
 * {ref}`US 6,667,224 B1 <patent-gp29737310>` — unknown
 * {ref}`US 6,562,675 B1 <patent-gp25461872>` — unknown
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
+* {ref}`US 6,621,184 B1 <patent-gp27805698>` — unknown
 * {ref}`US 6,803,330 B2 <patent-gp25522834>` — unknown
 * {ref}`US 6,841,491 B1 <patent-gp33550813>` — unknown
 * {ref}`US 6,777,307 B1 <patent-gp32848681>` — unknown
@@ -831,6 +839,7 @@ that are not specific to one step.
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
 * {ref}`US 6,849,549 B1 <patent-gp34080863>` — Method for forming dummy structures for improved CMP and reduced capacitance (2003-12-04)
 * {ref}`US 7,112,975 B1 <patent-gp37018897>` — unknown
+* {ref}`US 7,750,420 B2 <patent-gp34964287>` — unknown
 * {ref}`US 7,329,934 B1 <patent-gp32311685>` — unknown
 * {ref}`US 7,320,944 B1 <patent-gp38950897>` — unknown
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
