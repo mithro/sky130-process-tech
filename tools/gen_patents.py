@@ -321,6 +321,8 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
         1 for f in fams
         if 'query "cypress semiconductor".as. AND (B24B' in (f.get("discovery_note") or ""))
     h1_added = sum(1 for f in fams if "H1 finding" in (f.get("discovery_note") or ""))
+    r7_added = sum(1 for f in fams
+                   if "round-4 unrestricted-assignee gap-close sweep" in (f.get("discovery_note") or ""))
     def count_families(n: int, label: str) -> str:
         return f"{n} {label} {'family' if n == 1 else 'families'}"
 
@@ -402,16 +404,31 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
         "plasma conditioning, wet-process carriers, electroplating) the original sweep's own class list did "
         "not reach; both gaps were swept and triaged the same way, by abstract. Every decision this round, "
         "and the reason for each, is recorded in the repository at `docs/plans/patent-discovery-log.md` "
-        "(outside the built site). What is left: the round-5 sweep's own residue has now been read and "
-        "decided in full, not merely triaged by keyword, but neither round's sweep looked beyond these six "
-        "core assignees (the five above, plus Monterey Research), nor beyond the CPC classes actually "
-        "queried -- the round-5 verification report ran a full unrestricted \"cypress semiconductor\".as. "
-        "sweep and found roughly 586 distinct families in its first 999 hits, against 494 in this index's "
-        "own CPC-restricted queries against the same assignee, a substantially larger corpus neither round "
-        "has triaged -- nor outside the United States -- PPUBS indexes only US grants, US pre-grant "
-        "publications and USOCR, so a lineage family with no US member is invisible to this index however "
-        "it was found; and no attempt has been made to find a PPUBS-sourced family's other-jurisdiction or "
-        "other-US-member siblings.",
+        "(outside the built site). The round-5 sweep's own residue has now been read and decided in full, "
+        "not merely triaged by keyword, and round 7 closed the class-restriction gap the round-5 "
+        "verification report had flagged but only sampled: that report's own unrestricted "
+        "\"cypress semiconductor\".as. query, read from just its first 999 hits without grouping by "
+        "family, had reported \"roughly 586\" distinct families against this index's 494 CPC-restricted "
+        "ones. Properly paginating that same query round 7 found the true total is **3,142** distinct "
+        "families -- the round-5 figure was itself an undercount, not a completed sweep -- of which the "
+        "494 already indexed were confirmed complete with no paging gap, 2,499 more were decided out of "
+        "scope by their own CPC classes and title (overwhelmingly recent wireless/IoT/analog patents from "
+        "Cypress's non-process product lines, continued under Infineon ownership through 2026, using the "
+        "same CPC-facet method this index's own design already uses to define the swept boundary), 124 "
+        "more were decided out of scope individually by abstract (CMOS image-sensor structures, packaging, "
+        f"test circuits and assorted circuit schemes), and {plural(r7_added, 'family')} "
+        f"{'was' if r7_added == 1 else 'were'} added (an antifuse device structure in a CPC class no "
+        "earlier round queried). The same unrestricted "
+        "query, re-run for every other lineage assignee whose CPC-restricted total looked incomplete "
+        "(Longitude Flash Memory Solutions, Infineon Technologies LLC, Monterey Research), found and "
+        "decided a further 68 previously-unswept families the same way, with no additions. "
+        "`docs/plans/patent-discovery-log.md`'s \"Round 7\" section records every decision. "
+        "What remains: the 2,499-family CPC-classification bucket was decided by CPC facet and title, not "
+        "read individually -- a future round could spot-check a sample the way round 6 did for round 5's "
+        "own classifier residue; no round's sweep has looked outside the United States -- PPUBS indexes "
+        "only US grants, US pre-grant publications and USOCR, so a lineage family with no US member is "
+        "invisible to this index however it was found; and no attempt has been made to find a "
+        "PPUBS-sourced family's other-jurisdiction or other-US-member siblings.",
     ]
 
 
