@@ -39,9 +39,12 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 5,441,596 A <patent-gp23077300>` — Method for forming a stable plasma (1994-07-27)
 * {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-04)
 * {ref}`US 5,710,061 A <patent-gp22657288>` — Disposable post processing for semiconductor device fabrication (1995-08-17)
+* {ref}`US 5,844,271 A <patent-gp24060050>` — Single layer polycrystalline silicon split-gate EEPROM cell having a buried control gate (1995-08-21)
 * {ref}`US 5,650,666 A <patent-gp24244903>` — Method and apparatus for preventing cracks in semiconductor die (1995-11-22)
+* {ref}`US 5,780,889 A <patent-gp24245163>` — Gate overlap drain source flash structure (1995-11-22)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
+* {ref}`US 5,693,556 A <patent-gp24323626>` — Method of making an antifuse metal post structure (1995-12-29)
 * {ref}`US 6,579,777 B1 <patent-gp24349726>` — Method of forming local oxidation with sloped silicon recess (1996-01-16)
 * {ref}`US 5,770,521 A <patent-gp24638394>` — Anti-shear method and system for semiconductor wafer removal (1996-05-30)
 * {ref}`US 5,830,797 A <patent-gp24703979>` — Interconnect methods and apparatus (1996-06-20)
@@ -214,9 +217,15 @@ heading here is not necessarily the name printed on the patent.
 
 * {ref}`US 4,764,248 A <patent-gp21893791>` — Rapid thermal nitridized oxide locos process (1987-04-13)
 * {ref}`US 5,401,691 A <patent-gp23028910>` — Method of fabrication an inverse open frame alignment mark (1994-07-01)
+* {ref}`US 5,503,962 A <patent-gp23053758>` — Chemical-mechanical alignment mark and method of fabrication (1994-07-15)
+* {ref}`US 5,514,622 A <patent-gp23147089>` — Method for the formation of interconnects and landing pads having a thin, conductive film underlying the plug or an associated contact of via hole (1994-08-29)
+* {ref}`US 5,652,182 A <patent-gp24323742>` — Disposable posts for self-aligned non-enclosed contacts (1995-12-29)
+* {ref}`US 6,786,998 B1 <patent-gp32927824>` — Wafer temperature control apparatus and method (1995-12-29)
 * {ref}`US 5,635,765 A <patent-gp24428538>` — Multi-layer gate structure (1996-02-26)
+* {ref}`US 5,652,084 A <patent-gp23422662>` — Method for reduced pitch lithography (1996-10-22)
 * {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997-09-03)
 * {ref}`US 6,273,098 B1 <patent-gp25524224>` — Extension of the useful life of a chemical bath used to process a substrate (1997-11-24)
+* {ref}`US 6,162,682 A <patent-gp24141350>` — Structure and process for a gouge-free stacked non-volatile memory cell with select gate (1998-01-22)
 * {ref}`US 6,638,856 B1 <patent-gp29249879>` — Method of depositing metal onto a substrate (1998-09-11)
 * {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
