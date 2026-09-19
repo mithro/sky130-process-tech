@@ -16,7 +16,7 @@ count of every member publication in that jurisdiction.
 
 ## United States (US)
 
-710 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
+717 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -626,6 +626,7 @@ count of every member publication in that jurisdiction.
 | US 7,989,911 B1 | {ref}`US 7,985,656 B1 <patent-gp38711248>` | Expired - Lifetime |
 | US 8,030,172 B1 | {ref}`US 8,030,172 B1 <patent-gp44676718>` | unknown |
 | US 8,053,321 B2 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Expired - Fee Related |
+| US 8,063,434 B1 | {ref}`US 8,063,434 B1 <patent-gp44936795>` | unknown |
 | US 8,067,284 B1 | {ref}`US 8,067,284 B1 <patent-gp44994327>` | in force |
 | US 8,071,453 B1 | {ref}`US 8,071,453 B1 <patent-gp45034384>` | in force |
 | US 8,080,453 B1 | {ref}`US 8,080,453 B1 <patent-gp45219187>` | unknown |
@@ -640,6 +641,7 @@ count of every member publication in that jurisdiction.
 | US 8,178,404 B2 | {ref}`US 6,717,193 B2 <patent-gp25521092>` | Expired - Fee Related |
 | US 8,232,175 B2 | {ref}`US 8,232,175 B2 <patent-gp39047941>` | unknown |
 | US 8,236,151 B1 | {ref}`US 8,236,151 B1 <patent-gp46583180>` | unknown |
+| US 8,269,287 B2 | {ref}`US 8,269,287 B2 <patent-gp40071582>` | unknown |
 | US 8,283,261 B2 | {ref}`US 8,283,261 B2 <patent-gp40072822>` | in force |
 | US 8,399,360 B1 | {ref}`US 8,399,360 B1 <patent-gp47844682>` | unknown |
 | US 2013/0175604 A1 | {ref}`US 2013/0175604 A1 <patent-gp48743336>` | unknown |
@@ -647,10 +649,12 @@ count of every member publication in that jurisdiction.
 | US 2013/0178031 A1 | {ref}`US 2013/0178031 A1 <patent-gp48744178>` | unknown |
 | US 8,513,753 B1 | {ref}`US 8,513,753 B1 <patent-gp48952138>` | unknown |
 | US 2013/0306975 A1 | {ref}`US 2013/0306975 A1 <patent-gp49580585>` | unknown |
+| US 8,592,891 B1 | {ref}`US 8,592,891 B1 <patent-gp49596628>` | unknown |
 | US 8,614,124 B2 | {ref}`US 8,614,124 B2 <patent-gp40071593>` | in force |
 | US 8,643,124 B2 | {ref}`US 8,643,124 B2 <patent-gp44760304>` | in force |
 | US 8,680,601 B2 | {ref}`US 8,680,601 B2 <patent-gp40071592>` | in force |
 | US 8,685,813 B2 | {ref}`US 8,685,813 B2 <patent-gp48945910>` | in force |
+| US 8,691,648 B1 | {ref}`US 8,691,648 B1 <patent-gp50391780>` | unknown |
 | US 8,710,578 B2 | {ref}`US 8,710,578 B2 <patent-gp48743335>` | in force |
 | US 2014/0169062 A1 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Granted |
 | US 8,772,057 B1 | {ref}`US 8,772,057 B1 <patent-gp51031728>` | unknown |
@@ -662,15 +666,18 @@ count of every member publication in that jurisdiction.
 | US 8,916,432 B1 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | in force |
 | US 8,940,645 B2 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | in force |
 | US 9,076,523 B2 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Expired - Fee Related |
+| US 9,111,985 B1 | {ref}`US 9,111,985 B1 <patent-gp53786102>` | unknown |
 | US 2015/0262663 A1 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Abandoned |
 | US 9,159,568 B2 | {ref}`US 9,159,568 B2 <patent-gp39526088>` | unknown |
 | US 9,171,936 B2 | {ref}`US 9,171,936 B2 <patent-gp39272978>` | unknown |
+| US 9,190,531 B2 | {ref}`US 9,190,531 B2 <patent-gp39590729>` | unknown |
 | US 9,196,495 B2 | {ref}`US 9,196,495 B2 <patent-gp39675401>` | unknown |
 | US 9,196,624 B2 | {ref}`US 9,196,624 B2 <patent-gp49913307>` | unknown |
 | US 9,202,758 B1 | {ref}`US 9,202,758 B1 <patent-gp54609329>` | unknown |
 | US 9,209,197 B2 | {ref}`US 9,209,197 B2 <patent-gp50929922>` | unknown |
 | US 9,218,978 B1 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | in force |
 | US 9,236,448 B2 | {ref}`US 9,236,448 B2 <patent-gp41726088>` | unknown |
+| US 9,245,895 B2 | {ref}`US 9,245,895 B2 <patent-gp39874038>` | unknown |
 | US 9,252,026 B2 | {ref}`US 9,252,026 B2 <patent-gp54069643>` | unknown |
 | US 9,299,578 B2 | {ref}`US 9,299,578 B2 <patent-gp36614601>` | unknown |
 | US 9,299,643 B2 | {ref}`US 9,299,643 B2 <patent-gp42056520>` | unknown |
@@ -1643,7 +1650,7 @@ Number of members recorded per family.
 
 | Members | Families |
 |---|---|
-| 1 | 334 |
+| 1 | 341 |
 | 2 | 33 |
 | 3 | 13 |
 | 4 | 13 |
