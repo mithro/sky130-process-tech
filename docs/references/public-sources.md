@@ -2197,9 +2197,8 @@ Isolation on 0.18µm Equipment Platform"*, Journal of Telecommunication,
 Electronic and Computer Engineering (JTEC), vol. 8, no. 5, pp. 15–21,
 2016.
 <https://jtec.utem.edu.my/jtec/article/view/697> (times out as of
-2026-09-19, both this User-Agent and a browser one; a Wayback Machine
-copy from 2026-04-11 confirms it was up; the PDF link below still
-works directly) (PDF:
+2026-09-19; a Wayback Machine copy from 2026-04-11 confirms it was up;
+the PDF link below still works directly) (PDF:
 <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>). A
 foundry account of running 0.13 µm STI on 0.18 µm-generation tools:
 definition of the fill aspect ratio, HDP void / poly-stringer yield
@@ -11685,9 +11684,9 @@ Society of America* **44**, 652–653 (1986).
 <https://doi.org/10.1017/S0424820100144681> Non-destructive linewidth
 measurement in resist with the low-voltage SEM and the choice of
 peak-to-peak or threshold edge methods. The DOI resolves (a redirect to
-Cambridge Core) but the destination returns HTTP 400 for both this
-User-Agent and a browser one (checked 2026-09-19); no Wayback Machine
-copy exists. Retrieved 2026-08-30, no longer online, not archived.
+Cambridge Core) but the destination returns HTTP 400 (checked
+2026-09-19); no Wayback Machine copy exists. Retrieved 2026-08-30, no
+longer online, not archived.
 Used on the CD-SEM and overlay metrology page. Tier: deep dive;
 evidence weak.
 
