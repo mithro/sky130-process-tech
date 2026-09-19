@@ -144,9 +144,11 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,866,571 B1 <patent-gp34271789>` — unknown
 * {ref}`US 7,192,867 B1 <patent-gp37863803>` — unknown
 * {ref}`US 6,682,996 B1 <patent-gp30113994>` — unknown
+* {ref}`US 6,803,289 B1 <patent-gp33096364>` — unknown
 * {ref}`US 7,256,083 B1 <patent-gp38337005>` — unknown
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
+* {ref}`US 6,893,974 B1 <patent-gp34572555>` — unknown
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,774,012 B1 <patent-gp32823630>` — unknown
 * {ref}`US 7,115,462 B1 <patent-gp37037236>` — unknown
@@ -293,8 +295,15 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,835,616 B1 <patent-gp33516618>` — unknown
 * {ref}`US 7,094,707 B1 <patent-gp36821686>` — unknown
 * {ref}`US 6,770,566 B1 <patent-gp32776909>` — unknown
+* {ref}`US 7,078,334 B1 <patent-gp36659074>` — unknown
 * {ref}`US 6,887,784 B1 <patent-gp34520316>` — unknown
+* {ref}`US 6,660,661 B1 <patent-gp29711392>` — unknown
+* {ref}`US 6,881,634 B2 <patent-gp31977042>` — unknown
+* {ref}`US 6,903,002 B1 <patent-gp34619169>` — unknown
+* {ref}`US 6,869,853 B1 <patent-gp34272234>` — unknown
+* {ref}`US 7,024,954 B1 <patent-gp36127565>` — unknown
 * {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
+* {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 9,831,113 B2 <patent-gp39594663>` — unknown
