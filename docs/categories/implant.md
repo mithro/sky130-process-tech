@@ -254,11 +254,12 @@ commercial implanters is given by Current.[^current-2017]
 * {ref}`US 6,667,205 B2 <patent-gp29214361>` — Method of forming retrograde n-well and p-well (2002)
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002)
 
-:::{dropdown} 2 families in force or status unknown
+:::{dropdown} 3 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
+* {ref}`US 9,171,936 B2 <patent-gp39272978>` — unknown
 * {ref}`US 9,735,289 B2 <patent-gp52808963>` — unknown
 :::
 <!-- index-links:end -->
