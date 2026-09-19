@@ -679,3 +679,172 @@ change), and one Part 2 data commit (24 families). Pushed to
   per family, keyed on `familyIdentifierCur`, or Google Patents access).
 * The design's open questions (DOCDB family-unit switch, assignee-name
   normalisation for mergers) are unchanged from round 3.
+
+## Round 5: CPC-classification sweep (2026-09-20), branch `topic/index-patents-r3`
+
+Coordinator brief: make the lineage coverage systematic by CPC class
+instead of keyword. Full method, sweep totals and family-level triage
+are in `docs/plans/patent-discovery-log.md`'s "Round 5" section; summary
+here.
+
+**Method.** Round 4's per-assignee sweep restricted each query to
+process-module title keywords. This round dropped the keyword
+restriction and queried by CPC class instead: `<assignee>.as. AND
+(H01L21$ OR H01L23$ OR H01L27$ OR H01L29$ OR H10B$ OR H10N70$ OR G03F$
+OR C23C$ OR C30B$ OR H10D$ OR H10P$ OR H10W$).cpc.` against Cypress
+Semiconductor, SkyWater Technology, Longitude Flash Memory Solutions,
+Infineon Technologies LLC and Ramtron -- the brief's own CPC list plus
+the H10D/H10P/H10W reclassification targets round 4 already found
+necessary. Getting the CPC wildcard syntax right took some
+experimentation (`tmp/ppubs_cpc_sweep.py`, not tracked): PPUBS's
+`.cpc.` field only recognises a bare `$`-truncation on the whole symbol
+string (`H10B41$`), not a slash-plus-wildcard (`H10B41/$` works only
+when a real subgroup follows a class that itself has no further
+digits, `H01L21/$`, and even then only matches the shrinking legacy
+part of that class); and `docFamilyFiltering=familyIdFiltering` with a
+single request sized to the query's own `numberOfFamilies` avoids a
+pagination bug where offset-based paging (`start=0,100,200,...`) was
+found to drop and duplicate families (confirmed on the cypress query:
+494 `numberOfFamilies` but only 300 distinct families after three
+paged requests, vs. 494 distinct in one appropriately-sized request).
+
+**SkyWater.** Round 4's `"skywater technology".as.` query returned 0
+hits and was written up as "no new hits". PPUBS actually indexes the
+company as **"Sky Water Technology Foundry, Inc."** (two words, no
+compound "SkyWater"). `"sky water".as.` returns exactly one family
+worldwide, the already-in-the-dataset GP94259596 "carbon film"
+application -- plus its just-granted patent US12740332, found under a
+*different* PPUBS `familyIdentifierCur` (a PPUBS indexing quirk on a
+very recent grant, not a second real family), added as a new member of
+GP94259596 rather than a new family. This closes round 4's "left for
+later" item asking for a broader, unrestricted SkyWater sweep: there
+is nothing else to find under any spelling.
+
+**Totals.** 494 Cypress + 16 Longitude + 13 Infineon Technologies LLC +
+63 Ramtron + 1 SkyWater = 587 CPC-restricted hits (a family can count
+under more than one assignee query), 559 distinct DOCDB families.
+93 already present, 81 added, 385 out of scope (title-triaged: FRAM/
+ferroelectric, circuits, packaging, test structures, EDA/software,
+USB/PSoC, or a technology the lineage fab never ran), 0 explicitly left
+for later this round (every hit was triaged to a decision; see the
+discovery log for the full per-family table and the individually-
+reasoned exclusions).
+
+**Additions.** 81 new families (79 Cypress-attributed, 2 Infineon
+Technologies LLC-attributed, one of which doubles as a Longitude hit):
+process/device-structure patents spanning isolation (STI/LOCOS),
+wells, gate stack/gate oxide, spacers, salicide/silicide, local
+interconnect and contacts, tungsten and copper/ruthenium interconnect,
+CMP, lithography (reticles, phase-shift photomasks), implant, etch,
+deposition, and SONOS/charge-trap memory (including two 2021-2024
+Infineon Technologies LLC continuations of the embedded-SONOS/HKMG
+platform). Priority years 1994-2024; 13 have priority before
+1999-05-29 and are `expired: true` (their 20-year/17-year term bound
+has long passed); the other 68 have priority on or after 1999-05-29
+and are `expired: unknown` (collapsed -- PPUBS reports no legal status
+or term-adjustment data, so the design's safety rule never marks these
+`true`). Every addition was second-sourced: a USPTO grant PDF
+(`image-ppubs.uspto.gov`) for a granted patent, or an EPO linked-data
+page (`data.epo.org/linked-data/data/publication/US/<num>/A1`) for a
+pre-grant publication -- 81/81 confirmed to exist with a matching
+number, cross-checking PPUBS's own search-hit metadata against a
+second, independent database (`tmp/second_source_check.py`, not
+tracked; results cached).
+
+**Explicitly excluded, not left for later.** 3 Ramtron CPC hits
+(passivation, local interconnect, Pt/TiOx bottom-electrode deposition)
+are all ferroelectric-capacitor-specific -- FRAM, excluded per the
+brief's Ramtron restriction to FRAM-unrelated CMOS process. 5 more
+Cypress hits are F-RAM device fabrication (Cypress inherited Ramtron's
+FRAM line in the 2012 acquisition -- a different product from the
+Bloomington fab's embedded-SONOS flow, never shown by any public
+source to be part of the SKY130 lineage). One Cypress hit is an
+ESD-protection circuit (circuit, not process). One is a mask-layout
+*software* tool (EDA, not a fabrication step -- the same class of
+exclusion round 4's own sweep already used once). Two 2024 Infineon
+Technologies LLC hits describe a vertical-channel (3D) non-volatile
+memory architecture -- the SKY130/Fab25 lineage is a planar-transistor
+process and no public source shows this fab running a 3D memory
+architecture, so excluded as a technology the lineage fab never ran.
+
+**Family-source provenance, honestly stated.** Google Patents was
+reachable this round (a plain fetch returned 200 with real content),
+unlike rounds 2-4. The coordinating brief nonetheless directed sourcing
+new families via the PPUBS fallback path with an EPO/grant-PDF
+second-source check, for consistency with this round's own
+PPUBS-based CPC-classification discovery method. Reusing the existing
+`"... (Google Patents unreachable)"` `family.source` literal for these
+would misstate why Google was not used, so `tools/check_patents.py`'s
+`FAMILY_SOURCES` gained a third literal, `"USPTO Patent Public Search
+familyIdentifierCur (classification sweep, round 5)"`, documented in
+`patent-index-design.md`'s "PPUBS fallback" section.
+
+**Spansion re-triage (coordinator decision).** The coordinator ruled
+the ~120-family Spansion estate does not belong wholesale (no public
+source ties Spansion's own fabs to the Cypress/SkyWater Bloomington
+lineage; the 2015 merger is ownership, not process lineage), and asked
+for a re-triage to "out of scope (no lineage; technique only)" except
+for up to about 15 individually-justified `technique-class` additions
+where a docs page discusses a technique the index has no lineage or
+expired example for. A systematic check against every Spansion topic
+in the discovery log (spacer, salicide, SONOS/ONO/charge-trap, gate
+oxide, HV/drain-extended transistor, local interconnect, MIM,
+passivation, trench isolation, ReRAM) found **every one already has an
+existing same-lineage-assignee or technique-class entry in the index**,
+several already `expired: true` -- so the coordinator's own exception
+condition ("the index has no lineage or expired example") does not
+actually hold for any of the deferred Spansion families. Result: **0**
+new Spansion technique-class additions this round (the two already
+added in round 4, GP39047941 and GP39526963, are unaffected); all 91
+Spansion-original "left for later" rows from round 4 (85 found only by
+the Spansion query, plus 6 more that round 4's log mistakenly
+double-tagged "cypress,spansion" -- checked against the raw PPUBS
+record and confirmed `assigneeName`/`applicantName` both "Spansion
+LLC", no Cypress tie at all) are re-triaged "out of scope (no lineage;
+technique already covered elsewhere in the index)" in the discovery
+log, each naming the existing family that already covers its
+technique. This is a deliberately conservative, evidence-based
+conclusion rather than a padded count against the "about 15" ceiling.
+
+**Weebit Nano ReRAM (coordinator decision).** Re-ran the sweep for
+Weebit Nano restricted to `H10N70$` (its only relevant class; no
+process/device-structure content appears outside it) with no title
+keywords: 10 distinct families, of which 3 already exist in the
+dataset (OxRAM cell manufacturing methods) and one is new -- **GP93840812,
+"Stack Structure For Retention of High and Low Resistive States of an
+OxRAM..."** (US20260068542, filed 2026, a device/process patent on
+retention of the two ReRAM resistance states), added as
+`technique-class` on `overview-sky130b-reram`, matching the existing
+Weebit entries' relation. The other 6 CPC-sweep hits, and all 14 of
+round 4's own "left for later" Weebit hits (checked individually
+again this round), are circuit-level programming/read/write/sensing or
+binning schemes -- out of scope per the design's circuit exclusion --
+except one, "Method for determining a manufacturing parameter of a
+resistive random access memory cell" (US12224007B2), which is
+ambiguous (its CPC codes span both `H10N70` device classes and
+`G11C13` memory-circuit classes); its grant PDF has no extractable text
+layer to resolve the ambiguity from the abstract, so it is excluded
+conservatively as a test/metrology method characterising cells
+electrically (the design's "test methods without process content"
+exclusion) rather than included on the strength of its title alone.
+
+**Checks.** `uv run tools/check_patents.py`: 333 families, 0 problems.
+`uv run tools/gen_patents.py --check`: 6 pages, 0 problems.
+`uv run python tools/gen_index_links.py --check`: 0 pages differ.
+`uv run tools/check_inforce.py`: 0 problems. Landing page's "Scope and
+completeness" text (`tools/gen_patents.py`) still to be updated to
+describe this round's sweep -- next commit.
+
+### Left for a future round
+
+* GP93840812 (new Weebit) and the GP94259596 SkyWater grant-member
+  addition are recorded in this section's own text above; if not yet
+  spliced into `data/patents.yaml` when this file is read, they are
+  the very next commit.
+* Every PPUBS-sourced family (round 3-5 alike) still records only the
+  single US publication its own query returned; no attempt has been
+  made to find other-jurisdiction or other-US-member siblings.
+* The design's open questions (DOCDB family-unit switch, assignee-name
+  normalisation for mergers) are unchanged.
+* The landing page's "Scope and completeness" paragraph (`tools/gen_patents.py`)
+  needs updating for round 5 before this branch is considered finished.
