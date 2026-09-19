@@ -413,6 +413,12 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
                          if "USPTO Patent Public Search record" in m["verified"])
     fetched = google_fetched + ppubs_fetched
     ppubs_fams = [f for f in fams if f["family"]["source"] != "Google Patents family ID"]
+    ppubs_unreachable = [
+        f for f in ppubs_fams
+        if f["family"]["source"] == "USPTO Patent Public Search familyIdentifierCur (Google Patents unreachable)"
+    ]
+    unreachable_ids = {f["id"] for f in ppubs_unreachable}
+    ppubs_sweep = [f for f in ppubs_fams if f["id"] not in unreachable_ids]
     verified_dates = sorted({
         m2.group(1) for f in fams
         for v in [f["verified"]] + [m["verified"] for m in f["members"]]
@@ -435,8 +441,13 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
     listed_not_expired = listed - listed_in_expired
     ppubs_clause = (
         [f" Separately, {len(ppubs_fams)} of the {plural(n, 'family')} in this index",
-         "rest on USPTO Patent Public Search instead of Google Patents, which stayed unreachable while",
-         "they were found (see \"PPUBS fallback\" in `docs/plans/patent-index-design.md`); each says so",
+         "rest on USPTO Patent Public Search instead of Google Patents, for two different reasons:",
+         f"{plural(len(ppubs_unreachable), 'family')} because Google Patents stayed unreachable while",
+         f"they were found, and {plural(len(ppubs_sweep), 'family')} by design, sourced via PPUBS for",
+         "consistency with the round's own PPUBS-based classification-sweep discovery method even though",
+         "a plain fetch showed Google Patents reachable that day",
+         "(see \"PPUBS fallback\" and its \"round 5 source variant\" in",
+         "`docs/plans/patent-index-design.md`); each says which reason applies",
          "in its own *Legal status* and *Verified* lines, carries no legal status or adjusted-expiration",
          "date, and enumerates only the single member PPUBS's own search returned, not a complete family.",
          "Its expiry is a term-arithmetic bound, conservative for the collapse decision (a family is not",

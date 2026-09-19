@@ -36,8 +36,13 @@ so in its *Verified* column, and shows no status. 15 members of these sit in 2 f
 conservatively (the family's earliest priority date + 21 years)
 rather than assumed ended, per the design's rule 3.
  Separately, 315 of the 543 families in this index
-rest on USPTO Patent Public Search instead of Google Patents, which stayed unreachable while
-they were found (see "PPUBS fallback" in `docs/plans/patent-index-design.md`); each says so
+rest on USPTO Patent Public Search instead of Google Patents, for two different reasons:
+24 families because Google Patents stayed unreachable while
+they were found, and 291 families by design, sourced via PPUBS for
+consistency with the round's own PPUBS-based classification-sweep discovery method even though
+a plain fetch showed Google Patents reachable that day
+(see "PPUBS fallback" and its "round 5 source variant" in
+`docs/plans/patent-index-design.md`); each says which reason applies
 in its own *Legal status* and *Verified* lines, carries no legal status or adjusted-expiration
 date, and enumerates only the single member PPUBS's own search returned, not a complete family.
 Its expiry is a term-arithmetic bound, conservative for the collapse decision (a family is not
