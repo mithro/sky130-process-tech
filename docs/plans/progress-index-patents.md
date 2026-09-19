@@ -993,3 +993,78 @@ for the actual pass/fail results.
   made to find other-jurisdiction or other-US-member siblings, though
   round 6 did find and merge two same-family cross-query duplicates
   (GP50002947, GP60807919) as a byproduct of its own re-triage.
+
+### Round 6b (fixer response to the round-6 verification report, `tmp/verify-index-patents-r3b.md`)
+
+**F1.** The landing page's PPUBS-source sentence (`gen_patents.py`'s
+`ppubs_clause`) said all 315 PPUBS-sourced families rest on PPUBS
+"instead of Google Patents, which stayed unreachable while they were
+found" -- true for only 24 of them; the other 291 carry the round-5
+"(classification sweep, round 5)" literal, and the design doc's own
+"PPUBS fallback" section says Google was reachable that day and PPUBS
+was a brief-directed choice. The sentence now splits the two
+populations and states each one's real reason and count (24 / 291).
+
+**F2.** `GP37072391` and `GP50929927` (Spansion) were added under the
+M1 exception ("the index has no lineage-assignee or expired example of
+process-induced charging damage protection"); the same round's own H1
+re-triage then added two Cypress (lineage-assignee) families of that
+identical technique class (`GP36190984`, `GP39542510`), overturning the
+premise. Both Spansion families are removed (542 -> 541 -> 542 net,
+see L-d below); the discovery log's rows 223/291 now name the two
+Cypress families as the covering entries (this also resolves L-a's
+stale "out of scope" wording, which turns out to have been correct);
+the landing page's Spansion-exception sentence narrates the sequence
+honestly instead of stating the exception as settled fact.
+
+**L-b.** The L4 provenance guard decided "Google-sourced" by testing
+whether a member's `verified` line contained the substring "Google
+Patents" anywhere, so the 24 families whose line reads "... (Google
+Patents unreachable)" -- genuinely PPUBS-sourced -- could have
+`family.source` relabelled to the Google literal and still pass with 0
+problems. `check_patents.py` now also requires the line not to be a
+PPUBS line for that substring to count; verified with a one-field
+mutation (`tmp/fixer-patents-r3b/l4_mutation_test.py`, gitignored) that
+now fails where it previously passed.
+
+**L-c.** The landing page hardcoded "eight process/equipment families"
+for the additional-CPC-class sweep gap; the log and progress file both
+record 13 added. `gen_patents.py` now counts this from the dataset
+itself, the same pattern already used for the Monterey Research count.
+Also states the size of the unswept remainder in the same sentence:
+~586 distinct families in the round-5 verification report's own
+unrestricted `"cypress semiconductor".as.` query, against 494 in this
+index's CPC-restricted ones against the same assignee (previously only
+in this progress file, not on the built page).
+
+**L-d.** `GP66433658` (US20190147960A1) was rejected in round 6's H1
+pass by its title alone ("a circuit/operation scheme"); its cached
+USPTO Patent Public Search full-text page shows the abstract describes
+a device/implant structure (angled LDD implant on the memory
+transistor, halo implant on the select transistor) -- the same
+title-over-abstract slip H1 existed to fix. Added, targeting step-040,
+collapsed (`expired: unknown`, term-arithmetic bound 2038-11-14). No
+second-source check was performed or claimed for it, since this round
+involved no new web fetching.
+
+**Family count.** 543 (round 6 close) -> 541 (F2 removes 2) -> 542
+(L-d adds 1).
+
+**Checks (foreground, before finishing).** `uv run tools/check_patents.py`
+(542 families, 0 problems); all four generators' `--check`; `uv run
+python tools/check_inforce.py`; every other `tools/check_*.py` except
+`check_links.py` (not run, per the fixer brief -- Google Patents
+bot-blocks this machine); `uv run sphinx-build -W -q -b html docs
+tmp/build-patents-r3` -- see the round's final commit message for the
+actual pass/fail results.
+
+### Left open after round 6b
+
+* The round-5 verification report's unrestricted Cypress query gap
+  (~586 vs. 494 families, above) is stated on the landing page now but
+  still not swept or triaged.
+* Every other item the round-5 verification report carried over
+  unchanged (`dates.priority` not always earliest for PPUBS families,
+  the gold-bump family under `category-anneal`, PPUBS's own inventor
+  name truncation) remains as described in that report; none of them
+  are safety issues and none were in this round's brief.
