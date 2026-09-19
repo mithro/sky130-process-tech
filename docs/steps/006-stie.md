@@ -325,7 +325,11 @@ W/WN".[^skw-01]
     "Challenges for 0.13µm Generation Shallow Trench Isolation on
     0.18µm Equipment Platform", *Journal of Telecommunication,
     Electronic and Computer Engineering* **8**(5), 15–21 (2016).
-    <https://jtec.utem.edu.my/jtec/article/view/697>
+    <https://jtec.utem.edu.my/jtec/article/view/697> (times out as of
+    2026-09-19, both this User-Agent and a browser one; a Wayback
+    Machine copy from 2026-04-11 confirms it was up; the PDF link
+    below still works directly) (PDF:
+    <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>).
 [^pat-sti-cr]: U. Kim, Y. Sun, M. S. Chang et al. (Spansion LLC; later
     Cypress Semiconductor / Infineon), *Shallow trench isolation
     approach for improved STI corner rounding*, US 7,439,141 B2,

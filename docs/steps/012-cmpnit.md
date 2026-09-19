@@ -303,7 +303,11 @@ polisher, which is what this step needs.
     "Challenges for 0.13µm Generation Shallow Trench Isolation on
     0.18µm Equipment Platform", *Journal of Telecommunication,
     Electronic and Computer Engineering* **8**(5), 15–21 (2016).
-    <https://jtec.utem.edu.my/jtec/article/view/697>
+    <https://jtec.utem.edu.my/jtec/article/view/697> (times out as of
+    2026-09-19, both this User-Agent and a browser one; a Wayback
+    Machine copy from 2026-04-11 confirms it was up; the PDF link
+    below still works directly) (PDF:
+    <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>).
 [^cook-1990]: L. M. Cook, "Chemical processes in glass polishing",
     *Journal of Non-Crystalline Solids* **120**(1–3), 152–171 (1990).
     <https://doi.org/10.1016/0022-3093(90)90200-6>
