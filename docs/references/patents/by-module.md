@@ -37,6 +37,7 @@ Steps 1–13.
 * {ref}`US 6,593,208 B1 <patent-gp25130177>` — Method of uniform polish in shallow trench isolation process (2001-02-14)
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
+* {ref}`US 6,890,859 B1 <patent-gp34552978>` — unknown
 * {ref}`US 7,439,141 B2 <patent-gp26708682>` — Shallow trench isolation approach for improved STI corner rounding (2001-12-27)
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
@@ -312,6 +313,7 @@ Steps 89–106.
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
+* {ref}`US 6,630,643 B2 <patent-gp25437421>` — unknown
 * {ref}`US 6,979,640 B1 <patent-gp35482531>` — unknown
 * {ref}`US 6,887,784 B1 <patent-gp34520316>` — unknown
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
@@ -735,12 +737,18 @@ that are not specific to one step.
 * {ref}`US 6,509,270 B1 <patent-gp25239028>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,852,649 B1 <patent-gp34104919>` — unknown
+* {ref}`US 6,586,296 B1 <patent-gp25298594>` — unknown
 * {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
+* {ref}`US 6,492,710 B1 <patent-gp25370957>` — unknown
+* {ref}`US 6,761,619 B1 <patent-gp32682933>` — unknown
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
+* {ref}`US 6,667,224 B1 <patent-gp29737310>` — unknown
 * {ref}`US 6,562,675 B1 <patent-gp25461872>` — unknown
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
+* {ref}`US 6,803,330 B2 <patent-gp25522834>` — unknown
 * {ref}`US 6,841,491 B1 <patent-gp33550813>` — unknown
+* {ref}`US 6,777,307 B1 <patent-gp32848681>` — unknown
 * {ref}`US 7,026,235 B1 <patent-gp36127689>` — unknown
 * {ref}`US 7,129,178 B1 <patent-gp37189185>` — unknown
 * {ref}`US 6,699,795 B1 <patent-gp31713884>` — unknown
@@ -754,6 +762,7 @@ that are not specific to one step.
 * {ref}`US 2011/0006372 A1 <patent-gp29999977>` — Formation of standard voltage threshold and low voltage threshold mosfet devices (2002-07-08)
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
 * {ref}`US 6,774,012 B1 <patent-gp32823630>` — unknown
+* {ref}`US 7,115,462 B1 <patent-gp37037236>` — unknown
 * {ref}`US 6,680,516 B1 <patent-gp30000311>` — unknown
 * {ref}`US 7,189,652 B1 <patent-gp37833374>` — unknown
 * {ref}`US 7,229,929 B2 <patent-gp32468458>` — unknown

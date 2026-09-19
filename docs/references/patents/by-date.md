@@ -278,22 +278,30 @@ first, and then by status.
 * {ref}`US 6,852,649 B1 <patent-gp34104919>` — unknown
 * {ref}`US 6,630,385 B1 <patent-gp28675849>` — MOSFET with differential halo implant and annealing strategy (2001-04-27)
 * {ref}`US 6,492,716 B1 <patent-gp25297601>` — Seal ring structure for IC containing integrated digital/RF/analog circuits and functions (2001-04-30)
+* {ref}`US 6,586,296 B1 <patent-gp25298594>` — unknown
 * {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
+* {ref}`US 6,492,710 B1 <patent-gp25370957>` — unknown
 * {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
+* {ref}`US 6,761,619 B1 <patent-gp32682933>` — unknown
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001-07-12)
+* {ref}`US 6,630,643 B2 <patent-gp25437421>` — unknown
 * {ref}`US 6,818,558 B1 <patent-gp31979047>` — Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS) type devices (2001-07-31)
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
+* {ref}`US 6,890,859 B1 <patent-gp34552978>` — unknown
+* {ref}`US 6,667,224 B1 <patent-gp29737310>` — unknown
 * {ref}`US 6,562,675 B1 <patent-gp25461872>` — unknown
 * {ref}`US 6,747,230 B2 <patent-gp7697942>` — Method and device for sorting wafers (2001-08-31)
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
 * {ref}`US 6,717,193 B2 <patent-gp25521092>` — Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same (2001-10-09)
+* {ref}`US 6,803,330 B2 <patent-gp25522834>` — unknown
 * {ref}`US 6,828,201 B1 <patent-gp33476239>` — Method of manufacturing a top insulating layer for a sonos-type device (2001-10-22)
 * {ref}`US 6,841,491 B1 <patent-gp33550813>` — unknown
 * {ref}`US 6,605,199 B2 <patent-gp25537645>` — Textured-metastable aluminum alloy sputter targets and method of manufacture (2001-11-14)
+* {ref}`US 6,777,307 B1 <patent-gp32848681>` — unknown
 * {ref}`US 7,439,141 B2 <patent-gp26708682>` — Shallow trench isolation approach for improved STI corner rounding (2001-12-27)
 * {ref}`US 7,026,235 B1 <patent-gp36127689>` — unknown
 * {ref}`US 7,129,178 B1 <patent-gp37189185>` — unknown
@@ -320,6 +328,7 @@ first, and then by status.
 * {ref}`US 2004/0069224 A1 <patent-gp32068901>` — Cold trap for CVD furnace (2002-10-11)
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,774,012 B1 <patent-gp32823630>` — unknown
+* {ref}`US 7,115,462 B1 <patent-gp37037236>` — unknown
 * {ref}`US 6,977,217 B1 <patent-gp35465546>` — Aluminum-filled via structure with barrier layer (2002-12-03)
 * {ref}`US 6,680,516 B1 <patent-gp30000311>` — unknown
 * {ref}`US 6,803,321 B1 <patent-gp33096598>` — unknown
@@ -838,13 +847,21 @@ first, and then by status.
 * {ref}`US 6,509,270 B1 <patent-gp25239028>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,852,649 B1 <patent-gp34104919>` — unknown
+* {ref}`US 6,586,296 B1 <patent-gp25298594>` — unknown
 * {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
+* {ref}`US 6,492,710 B1 <patent-gp25370957>` — unknown
 * {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
+* {ref}`US 6,761,619 B1 <patent-gp32682933>` — unknown
+* {ref}`US 6,630,643 B2 <patent-gp25437421>` — unknown
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
+* {ref}`US 6,890,859 B1 <patent-gp34552978>` — unknown
+* {ref}`US 6,667,224 B1 <patent-gp29737310>` — unknown
 * {ref}`US 6,562,675 B1 <patent-gp25461872>` — unknown
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
+* {ref}`US 6,803,330 B2 <patent-gp25522834>` — unknown
 * {ref}`US 6,841,491 B1 <patent-gp33550813>` — unknown
+* {ref}`US 6,777,307 B1 <patent-gp32848681>` — unknown
 * {ref}`US 7,026,235 B1 <patent-gp36127689>` — unknown
 * {ref}`US 7,129,178 B1 <patent-gp37189185>` — unknown
 * {ref}`US 7,151,048 B1 <patent-gp37526559>` — unknown
@@ -859,6 +876,7 @@ first, and then by status.
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
 * {ref}`US 6,774,012 B1 <patent-gp32823630>` — unknown
+* {ref}`US 7,115,462 B1 <patent-gp37037236>` — unknown
 * {ref}`US 6,680,516 B1 <patent-gp30000311>` — unknown
 * {ref}`US 6,803,321 B1 <patent-gp33096598>` — unknown
 * {ref}`US 6,943,126 B1 <patent-gp34910591>` — unknown
