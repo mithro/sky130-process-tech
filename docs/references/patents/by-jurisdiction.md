@@ -16,7 +16,7 @@ count of every member publication in that jurisdiction.
 
 ## United States (US)
 
-717 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
+726 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -665,9 +665,11 @@ count of every member publication in that jurisdiction.
 | US 8,860,122 B1 | {ref}`US 8,860,122 B1 <patent-gp40752056>` | unknown |
 | US 8,916,432 B1 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | in force |
 | US 8,940,645 B2 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | in force |
+| US 9,041,203 B2 | {ref}`US 9,041,203 B2 <patent-gp42098125>` | unknown |
 | US 9,076,523 B2 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Expired - Fee Related |
 | US 9,111,985 B1 | {ref}`US 9,111,985 B1 <patent-gp53786102>` | unknown |
 | US 2015/0262663 A1 | {ref}`US 9,076,523 B2 <patent-gp50930700>` | Abandoned |
+| US 9,157,150 B2 | {ref}`US 9,157,150 B2 <patent-gp40675994>` | unknown |
 | US 9,159,568 B2 | {ref}`US 9,159,568 B2 <patent-gp39526088>` | unknown |
 | US 9,171,936 B2 | {ref}`US 9,171,936 B2 <patent-gp39272978>` | unknown |
 | US 9,190,531 B2 | {ref}`US 9,190,531 B2 <patent-gp39590729>` | unknown |
@@ -677,8 +679,12 @@ count of every member publication in that jurisdiction.
 | US 9,209,197 B2 | {ref}`US 9,209,197 B2 <patent-gp50929922>` | unknown |
 | US 9,218,978 B1 | {ref}`US 9,218,978 B1 <patent-gp54848024>` | in force |
 | US 9,236,448 B2 | {ref}`US 9,236,448 B2 <patent-gp41726088>` | unknown |
+| US 9,240,418 B2 | {ref}`US 9,240,418 B2 <patent-gp41214862>` | unknown |
 | US 9,245,895 B2 | {ref}`US 9,245,895 B2 <patent-gp39874038>` | unknown |
 | US 9,252,026 B2 | {ref}`US 9,252,026 B2 <patent-gp54069643>` | unknown |
+| US 9,263,249 B2 | {ref}`US 9,263,249 B2 <patent-gp40221797>` | unknown |
+| US 9,269,828 B2 | {ref}`US 9,269,828 B2 <patent-gp40403033>` | unknown |
+| US 9,281,384 B2 | {ref}`US 9,281,384 B2 <patent-gp40234348>` | unknown |
 | US 9,299,578 B2 | {ref}`US 9,299,578 B2 <patent-gp36614601>` | unknown |
 | US 9,299,643 B2 | {ref}`US 9,299,643 B2 <patent-gp42056520>` | unknown |
 | US 9,318,333 B2 | {ref}`US 9,318,333 B2 <patent-gp39582617>` | unknown |
@@ -686,13 +692,16 @@ count of every member publication in that jurisdiction.
 | US 9,331,180 B2 | {ref}`US 9,331,180 B2 <patent-gp36227553>` | unknown |
 | US 9,334,578 B2 | {ref}`US 9,334,578 B2 <patent-gp42171130>` | unknown |
 | US 9,396,959 B2 | {ref}`US 9,396,959 B2 <patent-gp37595085>` | unknown |
+| US 9,425,325 B2 | {ref}`US 9,425,325 B2 <patent-gp42006435>` | unknown |
 | US 9,431,503 B2 | {ref}`US 9,431,503 B2 <patent-gp46876619>` | unknown |
 | US 9,431,609 B2 | {ref}`US 9,431,609 B2 <patent-gp55302792>` | in force |
 | US 9,437,470 B2 | {ref}`US 9,437,470 B2 <patent-gp52776290>` | unknown |
+| US 9,455,352 B2 | {ref}`US 9,455,352 B2 <patent-gp42264766>` | unknown |
 | US 9,461,247 B2 | {ref}`US 9,461,247 B2 <patent-gp40431642>` | unknown |
 | US 9,466,496 B2 | {ref}`US 9,466,496 B2 <patent-gp52808978>` | unknown |
 | US 9,472,563 B2 | {ref}`US 9,472,563 B2 <patent-gp37683063>` | unknown |
 | US 9,496,275 B2 | {ref}`US 9,496,275 B2 <patent-gp36692048>` | unknown |
+| US 9,515,081 B2 | {ref}`US 9,515,081 B2 <patent-gp39761810>` | unknown |
 | US 9,543,262 B1 | {ref}`US 9,543,262 B1 <patent-gp57705840>` | unknown |
 | US 9,564,331 B2 | {ref}`US 9,564,331 B2 <patent-gp49777200>` | unknown |
 | US 9,570,396 B2 | {ref}`US 9,570,396 B2 <patent-gp37588477>` | unknown |
@@ -1650,7 +1659,7 @@ Number of members recorded per family.
 
 | Members | Families |
 |---|---|
-| 1 | 341 |
+| 1 | 350 |
 | 2 | 33 |
 | 3 | 13 |
 | 4 | 13 |

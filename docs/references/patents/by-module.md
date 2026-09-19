@@ -127,6 +127,7 @@ Steps 35–42.
 * {ref}`US 9,159,568 B2 <patent-gp39526088>` — unknown
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
 * {ref}`US 9,196,495 B2 <patent-gp39675401>` — unknown
+* {ref}`US 9,515,081 B2 <patent-gp39761810>` — unknown
 * {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 2013/0178031 A1 <patent-gp48744178>` — unknown
@@ -144,6 +145,7 @@ Steps 35–42.
 * {ref}`US 9,929,240 B2 <patent-gp49580624>` — in force
 * {ref}`US 2009/0020831 A1 <patent-gp40264143>` — unknown
 * {ref}`US 2014/0225116 A1 <patent-gp51296891>` — unknown
+* {ref}`US 9,269,828 B2 <patent-gp40403033>` — unknown
 * {ref}`US 10,319,733 B2 <patent-gp56507299>` — in force
 * {ref}`US 2013/0175604 A1 <patent-gp48743336>` — unknown
 * {ref}`US 8,860,122 B1 <patent-gp40752056>` — unknown
@@ -156,6 +158,7 @@ Steps 35–42.
 * {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
 * {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
+* {ref}`US 9,240,418 B2 <patent-gp41214862>` — unknown
 * {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,691,648 B1 <patent-gp50391780>` — unknown
@@ -171,6 +174,8 @@ Steps 35–42.
 * {ref}`US 9,614,105 B2 <patent-gp51728382>` — unknown
 * {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
+* {ref}`US 9,455,352 B2 <patent-gp42264766>` — unknown
+* {ref}`US 9,425,325 B2 <patent-gp42006435>` — unknown
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
 * {ref}`TW I640082 B <patent-gp52707807>` — in force
 * {ref}`US 9,917,211 B2 <patent-gp38470761>` — unknown
@@ -340,6 +345,7 @@ Steps 89–106.
 * {ref}`US 7,901,976 B1 <patent-gp43639265>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,299,643 B2 <patent-gp42056520>` — unknown
+* {ref}`US 9,041,203 B2 <patent-gp42098125>` — unknown
 * {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
 * {ref}`US 9,209,197 B2 <patent-gp50929922>` — unknown
 * {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
@@ -624,6 +630,7 @@ Steps 164–171.
 * {ref}`US 7,394,075 B1 <patent-gp39561114>` — unknown
 * {ref}`EP 2 104 648 B1 <patent-gp39203155>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
+* {ref}`US 9,281,384 B2 <patent-gp40234348>` — unknown
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
 * {ref}`US 8,236,151 B1 <patent-gp46583180>` — unknown
@@ -835,8 +842,10 @@ that are not specific to one step.
 * {ref}`US 9,318,333 B2 <patent-gp39582617>` — unknown
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
+* {ref}`US 9,263,249 B2 <patent-gp40221797>` — unknown
 * {ref}`US 8,119,538 B1 <patent-gp45571996>` — unknown
 * {ref}`US 8,154,088 B1 <patent-gp45922088>` — unknown
+* {ref}`US 9,157,150 B2 <patent-gp40675994>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,334,578 B2 <patent-gp42171130>` — unknown
 * {ref}`US 2011/0308955 A1 <patent-gp44483291>` — unknown
