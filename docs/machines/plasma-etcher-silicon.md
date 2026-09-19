@@ -351,14 +351,12 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 * {ref}`US 4,948,458 A <patent-gp23554962>` — Method and apparatus for producing magnetically-coupled planar plasma (1989)
 * {ref}`US 5,540,824 A <patent-gp23061269>` — Plasma reactor with multi-section RF coil and isolated conducting lid (1994)
 
-:::{dropdown} 5 families in force or status unknown
+:::{dropdown} 3 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
-* {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 7,033,900 B1 <patent-gp36190984>` — unknown
 * {ref}`US 9,281,384 B2 <patent-gp40234348>` — unknown
-* {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 * {ref}`US 9,318,373 B2 <patent-gp39542510>` — unknown
 :::
 <!-- index-links:end -->

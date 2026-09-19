@@ -360,7 +360,6 @@ first, and then by status.
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
 * {ref}`US 7,024,954 B1 <patent-gp36127565>` — unknown
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
-* {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 6,833,622 B1 <patent-gp33510264>` — unknown
 * {ref}`US 6,960,781 B2 <patent-gp32990685>` — Shallow trench isolation process (2003-03-07)
 * {ref}`US 6,885,955 B1 <patent-gp34434758>` — unknown
@@ -498,7 +497,6 @@ first, and then by status.
 * {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
-* {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 * {ref}`US 9,209,197 B2 <patent-gp50929922>` — unknown
 * {ref}`US 9,368,606 B2 <patent-gp50929931>` — unknown
 * {ref}`US 9,190,531 B2 <patent-gp39590729>` — unknown
@@ -986,7 +984,6 @@ first, and then by status.
 * {ref}`US 6,794,269 B1 <patent-gp32987143>` — unknown
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
 * {ref}`US 7,024,954 B1 <patent-gp36127565>` — unknown
-* {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 6,833,622 B1 <patent-gp33510264>` — unknown
 * {ref}`US 6,885,955 B1 <patent-gp34434758>` — unknown
 * {ref}`US 6,902,993 B2 <patent-gp32989791>` — unknown
@@ -1074,7 +1071,6 @@ first, and then by status.
 * {ref}`US 8,592,891 B1 <patent-gp49596628>` — unknown
 * {ref}`US 9,564,331 B2 <patent-gp49777200>` — unknown
 * {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
-* {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 * {ref}`US 9,209,197 B2 <patent-gp50929922>` — unknown
 * {ref}`US 9,368,606 B2 <patent-gp50929931>` — unknown
 * {ref}`US 9,190,531 B2 <patent-gp39590729>` — unknown

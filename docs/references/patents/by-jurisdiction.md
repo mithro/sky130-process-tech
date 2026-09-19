@@ -16,7 +16,7 @@ count of every member publication in that jurisdiction.
 
 ## United States (US)
 
-745 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
+743 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -536,7 +536,6 @@ count of every member publication in that jurisdiction.
 | US 2006/0216944 A1 | {ref}`US 7,514,373 B2 <patent-gp33457548>` | Granted |
 | US 7,115,462 B1 | {ref}`US 7,115,462 B1 <patent-gp37037236>` | unknown |
 | US 7,118,450 B2 | {ref}`US 5,893,796 A <patent-gp24770421>` | Expired - Fee Related |
-| US 7,118,967 B1 | {ref}`US 7,118,967 B1 <patent-gp37072391>` | unknown |
 | US 2006/0228902 A1 | {ref}`US 7,501,352 B2 <patent-gp37073778>` | Granted |
 | US 2006/0231920 A1 | {ref}`US 7,112,507 B2 <patent-gp34591550>` | Granted |
 | US 7,129,178 B1 | {ref}`US 7,129,178 B1 <patent-gp37189185>` | unknown |
@@ -661,7 +660,6 @@ count of every member publication in that jurisdiction.
 | US 8,772,059 B2 | {ref}`US 8,772,059 B2 <patent-gp48743334>` | in force |
 | US 8,796,098 B1 | {ref}`US 8,796,098 B1 <patent-gp51229009>` | in force |
 | US 2014/0225116 A1 | {ref}`US 2014/0225116 A1 <patent-gp51296891>` | unknown |
-| US 8,816,438 B2 | {ref}`US 8,816,438 B2 <patent-gp50929927>` | unknown |
 | US 8,860,122 B1 | {ref}`US 8,860,122 B1 <patent-gp40752056>` | unknown |
 | US 8,916,432 B1 | {ref}`US 8,916,432 B1 <patent-gp52101816>` | in force |
 | US 8,940,645 B2 | {ref}`US 8,940,645 B2 <patent-gp49581632>` | in force |
@@ -1678,7 +1676,7 @@ Number of members recorded per family.
 
 | Members | Families |
 |---|---|
-| 1 | 369 |
+| 1 | 367 |
 | 2 | 33 |
 | 3 | 13 |
 | 4 | 13 |

@@ -12475,42 +12475,6 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6764890B1/en
 
-:::{dropdown} US 7,118,967 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2024-02-19
-:name: patent-gp37072391
-
-**Title:** Protection of charge trapping dielectric flash memory devices from UV-induced charging in BEOL processing
-
-**Assignees:** original Spansion LLC; current Spansion LLC
-
-**Inventors:** Ngo; Minh V. et al.
-
-**Dates:** priority 2003-02-19, filing 2003-02-19, grant 2006-10-10
-
-**Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7118967B1; not independently determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because Google Patents was unreachable))
-
-**Estimated expiry:** 2024-02-19 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7118967B1's own filing date + 20 years or the family's priority date + 21 years, running to 2024-02-19 on this conservative calculation, already past -- but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
-
-**Family ID:** `37072391` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
-
-**Members:**
-
-| Number | Type | Publication date | Status | Verified | Links |
-|---|---|---|---|---|---|
-| US 7,118,967 B1 | granted patent | 2006-10-10 | not shown | 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS7118967B1) · [Google Patents](https://patents.google.com/patent/US7118967B1/en) |
-
-**Relevance:**
-
-* {ref}`machine-plasma-etcher-silicon` — *technique class*: Spansion LLC is not in the SKY130/Cypress/SkyWater process lineage (coordinator decision), but no lineage-assignee or expired example of process-induced plasma/UV charging damage protection exists anywhere else in this index (M1 finding), which is the coordinator's own stated exception; the patent describes choosing BEOL processes that avoid UV exposure sufficient to charge a charge-trapping flash cell, the same class of technique as this page's "Damage and charging" section, and it is not evidence that the technique is used in SKY130.
-
-**Discovery:** assignee-search — USPTO Patent Public Search, query "spansion".as. AND (H01L21\$ OR H01L23\$ OR H01L27\$ OR H01L29\$ OR H10B\$ OR H10N70\$ OR G03F\$ OR C23C\$ OR C30B\$ OR H10D\$ OR H10P\$ OR H10W\$).cpc. -- round-4/5 sweep hit, re-triaged in round 6 as the coordinator's own named exception (M1: a technique with no lineage-assignee or expired example anywhere in the index), after reading the abstract on this member's USPTO Patent Public Search full-text front page.
-
-**Notes:**
-* Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (M1 Spansion-exception re-decision), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7118967 (retrieved 2026-09-21, 1131620 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
-
-**Verified:** 2026-09-21 USPTO Patent Public Search record for US7118967B1 (classification sweep, round 5)
-:::
-
 :::{dropdown} US 6,833,622 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2024-02-27
 :name: patent-gp33510264
 
@@ -17497,42 +17461,6 @@ families and members are counted.
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS memory integration), retrieved 2026-09-19; found while chasing the round-1 review's named-missing-family table (tmp/review-index-patents-r1.md).
 
 **Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11342429B2/en
-:::
-
-:::{dropdown} US 8,816,438 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2033-12-14
-:name: patent-gp50929927
-
-**Title:** Process charging protection for split gate charge trapping flash
-
-**Assignees:** original Spansion LLC; current Spansion LLC
-
-**Inventors:** Chen; Chun et al.
-
-**Dates:** priority 2012-12-14, filing 2012-12-14, grant 2014-08-26
-
-**Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US8816438B2; not independently determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because Google Patents was unreachable))
-
-**Estimated expiry:** 2033-12-14 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US8816438B2's own filing date + 20 years or the family's priority date + 21 years, running to 2033-12-14, not yet past -- collapsed per the design's rule (not certainly expired)
-
-**Family ID:** `50929927` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
-
-**Members:**
-
-| Number | Type | Publication date | Status | Verified | Links |
-|---|---|---|---|---|---|
-| US 8,816,438 B2 | granted patent | 2014-08-26 | not shown | 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS8816438B2) · [Google Patents](https://patents.google.com/patent/US8816438B2/en) |
-
-**Relevance:**
-
-* {ref}`machine-plasma-etcher-silicon` — *technique class*: Spansion LLC is not in the SKY130/Cypress/SkyWater process lineage (coordinator decision), but no lineage-assignee or expired example of process-induced charging damage protection exists anywhere else in this index (M1 finding), which is the coordinator's own stated exception; the patent describes electrically-isolated p-n junctions that bleed off process-induced charge from a split-gate charge-trapping memory cell, the same class of technique as this page's "Damage and charging" section, and it is not evidence that the technique is used in SKY130.
-
-**Discovery:** assignee-search — USPTO Patent Public Search, query "spansion".as. AND (H01L21\$ OR H01L23\$ OR H01L27\$ OR H01L29\$ OR H10B\$ OR H10N70\$ OR G03F\$ OR C23C\$ OR C30B\$ OR H10D\$ OR H10P\$ OR H10W\$).cpc. -- round-4/5 sweep hit, re-triaged in round 6 as the coordinator's own named exception (M1: a technique with no lineage-assignee or expired example anywhere in the index), after reading the abstract on this member's USPTO Patent Public Search full-text front page.
-
-**Notes:**
-* Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (M1 Spansion-exception re-decision), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8816438 (retrieved 2026-09-21, 1039280 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
-
-**Verified:** 2026-09-21 USPTO Patent Public Search record for US8816438B2 (classification sweep, round 5)
 :::
 
 :::{dropdown} US 9,209,197 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2033-12-14
