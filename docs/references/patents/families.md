@@ -12470,7 +12470,7 @@ families and members are counted.
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US12232324B2/en
 :::
 
-:::{dropdown} US 2025/0031586 A1 — legal status shown as Pending; expiry not fully bounded from the records retrieved, estimated no later than 2044-07-21
+:::{dropdown} US 2025/0031586 A1 — legal status shown as Granted; expiry not fully bounded from the records retrieved, estimated no later than 2044-07-21
 :name: patent-gp94259596
 
 **Title:** Carbon film integrated into a back end of line process
@@ -12481,9 +12481,9 @@ families and members are counted.
 
 **Dates:** priority 2023-07-21, filing 2023-07-21
 
-**Legal status (representative):** Pending (Google Patents (IFI Claims) status of US20250031586A1, retrieved 2026-09-19)
+**Legal status (representative):** Granted (Google Patents (IFI Claims) status of US20250031586A1, retrieved 2026-09-19; updated to Granted 2026-09-20 after PPUBS's round-5 sweep found the application's own patent, US12740332B2, had just issued (2026-09-15))
 
-**Estimated expiry:** 2044-07-21 — not fully bounded from the records retrieved; the latest recorded or estimated term belongs to US20250031586A1 (estimated upper bound: earliest priority date + 21 years (12-month priority period + 20-year term)), running to 2044-07-21
+**Estimated expiry:** 2044-07-21 — not fully bounded from the records retrieved; the application US20250031586A1 issued as US12740332B2 on 2026-09-15 (found via the round-5 PPUBS CPC sweep under a different PPUBS familyIdentifierCur, a PPUBS indexing quirk on a very recent grant, not a second family), which PPUBS reports no legal status or term-adjustment data for; the latest recorded or estimated term is the term-arithmetic bound for US12740332B2 (own filing date + 20 years, or the family's earliest priority date + 21 years, whichever is later), running to 2044-07-21
 
 **Google Patents family ID:** `94259596` (family section of the representative's own record page, linked below)
 
@@ -12491,7 +12491,8 @@ families and members are counted.
 
 | Number | Type | Publication date | Status | Verified | Links |
 |---|---|---|---|---|---|
-| US 2025/0031586 A1 | application | 2025-01-23 | Pending | 2026-09-19 Google Patents record page fetched | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250031586A1) · [Google Patents](https://patents.google.com/patent/US20250031586A1/en) |
+| US 2025/0031586 A1 | application | 2025-01-23 | Granted | 2026-09-20 Google Patents record page fetched 2026-09-19; status updated to Granted after cross-checking the just-issued US12740332B2 (round-5 PPUBS sweep, same application 18/224,998) -- the Google Patents page for this application had not yet been re-fetched to confirm this directly | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20250031586A1) · [Google Patents](https://patents.google.com/patent/US20250031586A1/en) |
+| US 12,740,332 B2 | granted patent | 2026-09-15 | not shown | 2026-09-20 USPTO Patent Public Search record (classification sweep, round 5); Google Patents does not yet show a record page for this very recent grant (404, retrieved 2026-09-20 -- indexing lag, not unreachability: other Google Patents pages were fetched successfully the same day) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12740332B2) · [Google Patents](https://patents.google.com/patent/US12740332B2/en) |
 
 **Relevance:**
 
@@ -12501,8 +12502,9 @@ families and members are counted.
 
 **Notes:**
 * Round-3 verification finding M2. This publication names 90 nm processing technology and calls its carbon-film approach CMOS technology-agnostic; it does not name SKY130 or a 130 nm platform. It is included as the search result H1 called for, not as evidence that SkyWater practises the technique in SKY130.
+* Round-5 (2026-09-20) update: the application US20250031586A1 issued as US12740332B2 on 2026-09-15. USPTO Patent Public Search's CPC-classification sweep found this grant under familyIdentifierCur 1000009540762 -- a different number from this family's own 94259596 -- a PPUBS indexing quirk on a very recent grant (same title, same application number 18/224,998, the only SkyWater-assigned document either sweep found), not evidence of a second real family. Added here as a new member rather than as a separate GP entry. Google Patents does not yet show a record page for the grant (indexing lag); its own legal-status/expiration data were not yet obtainable, so the grant's expiry is a term-arithmetic bound, not a Google Patents estimate.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US20250031586A1/en
+**Verified:** 2026-09-20 member US12740332B2 added via USPTO Patent Public Search (classification sweep, round 5)
 :::
 
 :::{dropdown} KR 20250094623 A — shown as in force; estimated expiry 2044-12-18
@@ -12582,4 +12584,40 @@ families and members are counted.
 * Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12250815 (retrieved 2026-09-20, 1930383 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US12250815B1 (classification sweep, round 5)
+:::
+
+:::{dropdown} US 2026/0068542 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2045-09-02
+:name: patent-gp93840812
+
+**Title:** Stack Structure For Retention of High and Low Resistive States of an Oxide-Based Random-Access Memory
+
+**Assignees:** original Weebit Nano Ltd; current Weebit Nano Ltd
+
+**Inventors:** Molas; Gabriel
+
+**Dates:** priority 2024-09-02, filing 2025-08-29
+
+**Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US20260068542A1; not independently determined (sourced via the PPUBS fallback path per the coordinating brief's round-5 CPC-classification-sweep instruction, not because Google Patents was unreachable))
+
+**Estimated expiry:** 2045-09-02 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US20260068542A1's own filing date + 20 years or the family's priority date + 21 years, running to 2045-09-02, not yet past -- collapsed per the design's rule (not certainly expired)
+
+**Family ID:** `93840812` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 2026/0068542 A1 | application | 2026-03-05 | not shown | 2026-09-20 USPTO Patent Public Search record (classification sweep, round 5) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20260068542A1) · [Google Patents](https://patents.google.com/patent/US20260068542A1/en) |
+
+**Relevance:**
+
+* {ref}`overview-sky130b-reram` — *technique class*: Weebit Nano's ReRAM IP is offered in SkyWater's S130 process per SkyWater's public announcement; this family describes Weebit's technique for retaining an OxRAM cell's high- and low-resistance states, not evidence of the specific process SkyWater fabricates.
+
+**Discovery:** assignee-search — USPTO Patent Public Search, CPC-classification sweep, query 'weebit nano'.as. AND (H01L21/23/27/29, H10B, H10N70, G03F, C23C, C30B, H10D, H10P, H10W)\$.cpc. -- a supplementary round-5 re-run of the round-4 Weebit sweep, this time by CPC class instead of title keywords, per docs/plans/patent-discovery-log.md's round-5 method, retrieved 2026-09-20.
+
+**Notes:**
+* Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method. Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. inventors reproduces PPUBS's own truncated "inventorsShort" field.
+* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20260068542/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+
+**Verified:** 2026-09-20 USPTO Patent Public Search record for US20260068542A1 (classification sweep, round 5)
 :::

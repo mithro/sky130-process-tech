@@ -649,6 +649,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
 * {ref}`EP 4 062 463 A1 <patent-gp69743400>` — in force
 * {ref}`KR 20250094623 A <patent-gp90721530>` — in force
+* {ref}`US 2026/0068542 A1 <patent-gp93840812>` — unknown
 
 ## Yamaha Corp
 

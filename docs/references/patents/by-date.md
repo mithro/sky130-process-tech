@@ -359,6 +359,7 @@ first, and then by status.
 * {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
 * {ref}`KR 20250094623 A <patent-gp90721530>` — in force
 * {ref}`US 12,250,815 B1 <patent-gp94878875>` — unknown
+* {ref}`US 2026/0068542 A1 <patent-gp93840812>` — unknown
 
 ## By status
 
@@ -703,3 +704,4 @@ first, and then by status.
 * {ref}`US 2023/0081072 A1 <patent-gp85479282>` — unknown
 * {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
 * {ref}`US 12,250,815 B1 <patent-gp94878875>` — unknown
+* {ref}`US 2026/0068542 A1 <patent-gp93840812>` — unknown
