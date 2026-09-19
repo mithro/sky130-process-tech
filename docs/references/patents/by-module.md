@@ -108,8 +108,10 @@ Steps 35–42.
 * {ref}`US 6,207,991 B1 <patent-gp21936928>` — Integrated non-volatile and CMOS memories having substantially the same thickness gates and methods of forming the same (1998-03-20)
 * {ref}`US 6,114,724 A <patent-gp21979781>` — Nonvolatile semiconductor memory cell with select gate (1998-03-31)
 * {ref}`US 6,140,676 A <patent-gp22169469>` — Semiconductor non-volatile memory device having an improved write speed (1998-05-20)
+* {ref}`US 6,100,560 A <patent-gp23061646>` — Nonvolatile cell (1999-03-26)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
 * {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
+* {ref}`US 6,525,962 B1 <patent-gp24168163>` — unknown
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
 * {ref}`US 6,818,558 B1 <patent-gp31979047>` — Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS) type devices (2001-07-31)
 * {ref}`US 6,828,201 B1 <patent-gp33476239>` — Method of manufacturing a top insulating layer for a sonos-type device (2001-10-22)
@@ -292,7 +294,10 @@ Steps 89–106.
 * {ref}`US 5,861,676 A <patent-gp25050977>` — Method of forming robust interconnect and contact structures in a semiconductor and/or integrated circuit (1996-11-27)
 * {ref}`US 6,906,421 B1 <patent-gp34632364>` — Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same (1998-01-14)
 * {ref}`US 6,030,881 A <patent-gp22109576>` — High throughput chemical vapor deposition process capable of filling high aspect ratio structures (1998-05-05)
+* {ref}`US 6,303,496 B1 <patent-gp23160710>` — Methods of filling constrained spaces with insulating materials and/or of forming contact holes and/or contacts in an integrated circuit (1999-04-27)
+* {ref}`US 6,214,743 B1 <patent-gp23272176>` — unknown
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
+* {ref}`US 6,734,108 B1 <patent-gp32230148>` — unknown
 * {ref}`US 6,350,353 B2 <patent-gp23783296>` — Alternate steps of IMP and sputtering process to improve sidewall coverage (1999-11-24)
 * {ref}`US 6,596,466 B1 <patent-gp23950559>` — unknown
 * {ref}`US 6,350,665 B1 <patent-gp24241366>` — unknown
@@ -303,6 +308,7 @@ Steps 89–106.
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
 * {ref}`US 6,979,640 B1 <patent-gp35482531>` — unknown
+* {ref}`US 6,887,784 B1 <patent-gp34520316>` — unknown
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
@@ -551,11 +557,13 @@ Steps 164–171.
 * {ref}`US 6,232,231 B1 <patent-gp22505307>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect (1998-08-31)
 * {ref}`US 6,319,553 B1 <patent-gp22616474>` — Isolation of incompatible processes in a multi-station processing chamber (1998-10-08)
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
+* {ref}`US 6,121,156 A <patent-gp26769194>` — Contact monitor, method of forming same and method of analyzing contact-, via-and/or trench-forming processes in an integrated circuit (1998-12-02)
 * {ref}`US 6,179,973 B1 <patent-gp26812562>` — Apparatus and method for controlling plasma uniformity across a substrate (1999-01-05)
 * {ref}`US 6,455,402 B2 <patent-gp19572018>` — Method of forming retrograde doping file in twin well CMOS device (1999-01-22)
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
 * {ref}`US 6,350,353 B2 <patent-gp23783296>` — Alternate steps of IMP and sputtering process to improve sidewall coverage (1999-11-24)
 * {ref}`US 6,969,448 B1 <patent-gp23892778>` — Method for forming a metallization structure in an integrated circuit (1999-12-30)
+* {ref}`US 6,518,591 B1 <patent-gp22757080>` — unknown
 * {ref}`US 6,653,803 B1 <patent-gp24331908>` — Integrated resonator and amplifier system (2000-05-30)
 * {ref}`US 7,305,999 B2 <patent-gp24449421>` — Centrifugal spray processor and retrofit kit (2000-07-07)
 * {ref}`US 6,723,998 B2 <patent-gp26926543>` — Faraday system for ion implanters (2000-09-15)
@@ -699,14 +707,17 @@ that are not specific to one step.
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
 * {ref}`US 6,372,150 B1 <patent-gp22801618>` — High vapor plasma strip methods and devices to enhance the reduction of organic residues over metal surfaces (1998-12-18)
 * {ref}`US 6,455,402 B2 <patent-gp19572018>` — Method of forming retrograde doping file in twin well CMOS device (1999-01-22)
+* {ref}`US 6,436,848 B1 <patent-gp23078311>` — Method for forming nitrogen-rich silicon oxide-based dielectric materials (1999-03-30)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
 * {ref}`US 6,372,634 B1 <patent-gp23302890>` — unknown
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,890,860 B1 <patent-gp34549094>` — unknown
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
+* {ref}`US 6,373,679 B1 <patent-gp23363694>` — unknown
 * {ref}`US 6,322,716 B1 <patent-gp23520394>` — unknown
 * {ref}`US 6,302,766 B1 <patent-gp22508214>` — unknown
 * {ref}`US 6,350,353 B2 <patent-gp23783296>` — Alternate steps of IMP and sputtering process to improve sidewall coverage (1999-11-24)
+* {ref}`US 6,455,427 B1 <patent-gp23885256>` — unknown
 * {ref}`US 6,841,008 B1 <patent-gp33552841>` — unknown
 * {ref}`US 2004/0183199 A1 <patent-gp32991247>` — unknown
 * {ref}`US 6,660,603 B2 <patent-gp22880690>` — Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions (2000-09-21)
