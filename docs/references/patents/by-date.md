@@ -517,6 +517,10 @@ first, and then by status.
 * {ref}`US 10,516,044 B2 <patent-gp39318438>` — unknown
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 9,455,352 B2 <patent-gp42264766>` — unknown
+* {ref}`US 9,466,489 B2 <patent-gp53369466>` — unknown
+* {ref}`US 9,494,853 B2 <patent-gp53368275>` — unknown
+* {ref}`US 9,368,644 B2 <patent-gp53401003>` — unknown
+* {ref}`US 9,252,221 B2 <patent-gp53482791>` — unknown
 * {ref}`US 2017/0263459 A1 <patent-gp59786922>` — unknown
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 9,425,325 B2 <patent-gp42006435>` — unknown
@@ -527,8 +531,11 @@ first, and then by status.
 * {ref}`US 10,003,022 B2 <patent-gp54018263>` — in force
 * {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
 * {ref}`US 9,917,211 B2 <patent-gp38470761>` — unknown
+* {ref}`US 9,589,805 B2 <patent-gp55180778>` — unknown
+* {ref}`US 9,343,470 B2 <patent-gp55302727>` — unknown
 * {ref}`US 9,431,609 B2 <patent-gp55302792>` — in force
 * {ref}`US 9,368,588 B2 <patent-gp50929930>` — unknown
+* {ref}`US 9,362,287 B2 <patent-gp55912872>` — unknown
 * {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 9,461,247 B2 <patent-gp40431642>` — unknown
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
@@ -536,8 +543,10 @@ first, and then by status.
 * {ref}`US 10,141,393 B1 <patent-gp50929963>` — unknown
 * {ref}`US 10,038,004 B2 <patent-gp57775841>` — unknown
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
+* {ref}`US 10,074,438 B2 <patent-gp60573117>` — unknown
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
 * {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
+* {ref}`US 10,068,912 B1 <patent-gp63295246>` — unknown
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
@@ -557,6 +566,7 @@ first, and then by status.
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
 * {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
 * {ref}`KR 20250094623 A <patent-gp90721530>` — in force
+* {ref}`US 2024/0206183 A1 <patent-gp91472718>` — unknown
 * {ref}`US 12,250,815 B1 <patent-gp94878875>` — unknown
 * {ref}`US 2026/0068542 A1 <patent-gp93840812>` — unknown
 
@@ -1078,6 +1088,10 @@ first, and then by status.
 * {ref}`US 9,733,574 B2 <patent-gp52825918>` — unknown
 * {ref}`US 10,516,044 B2 <patent-gp39318438>` — unknown
 * {ref}`US 9,455,352 B2 <patent-gp42264766>` — unknown
+* {ref}`US 9,466,489 B2 <patent-gp53369466>` — unknown
+* {ref}`US 9,494,853 B2 <patent-gp53368275>` — unknown
+* {ref}`US 9,368,644 B2 <patent-gp53401003>` — unknown
+* {ref}`US 9,252,221 B2 <patent-gp53482791>` — unknown
 * {ref}`US 2017/0263459 A1 <patent-gp59786922>` — unknown
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 9,425,325 B2 <patent-gp42006435>` — unknown
@@ -1085,13 +1099,18 @@ first, and then by status.
 * {ref}`US 9,570,458 B2 <patent-gp42539704>` — unknown
 * {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
 * {ref}`US 9,917,211 B2 <patent-gp38470761>` — unknown
+* {ref}`US 9,589,805 B2 <patent-gp55180778>` — unknown
+* {ref}`US 9,343,470 B2 <patent-gp55302727>` — unknown
 * {ref}`US 9,368,588 B2 <patent-gp50929930>` — unknown
+* {ref}`US 9,362,287 B2 <patent-gp55912872>` — unknown
 * {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 9,461,247 B2 <patent-gp40431642>` — unknown
 * {ref}`US 9,624,094 B1 <patent-gp58772128>` — unknown
 * {ref}`US 10,141,393 B1 <patent-gp50929963>` — unknown
 * {ref}`US 10,038,004 B2 <patent-gp57775841>` — unknown
+* {ref}`US 10,074,438 B2 <patent-gp60573117>` — unknown
 * {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
+* {ref}`US 10,068,912 B1 <patent-gp63295246>` — unknown
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
 * {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
@@ -1101,5 +1120,6 @@ first, and then by status.
 * {ref}`US 11,069,789 B2 <patent-gp60807919>` — unknown
 * {ref}`US 2023/0081072 A1 <patent-gp85479282>` — unknown
 * {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
+* {ref}`US 2024/0206183 A1 <patent-gp91472718>` — unknown
 * {ref}`US 12,250,815 B1 <patent-gp94878875>` — unknown
 * {ref}`US 2026/0068542 A1 <patent-gp93840812>` — unknown

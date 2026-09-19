@@ -355,15 +355,25 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 9,318,373 B2 <patent-gp39542510>` — unknown
 * {ref}`US 10,516,044 B2 <patent-gp39318438>` — unknown
 * {ref}`US 9,455,352 B2 <patent-gp42264766>` — unknown
+* {ref}`US 9,466,489 B2 <patent-gp53369466>` — unknown
+* {ref}`US 9,494,853 B2 <patent-gp53368275>` — unknown
+* {ref}`US 9,368,644 B2 <patent-gp53401003>` — unknown
+* {ref}`US 9,252,221 B2 <patent-gp53482791>` — unknown
 * {ref}`US 9,425,325 B2 <patent-gp42006435>` — unknown
 * {ref}`US 9,570,458 B2 <patent-gp42539704>` — unknown
 * {ref}`US 9,917,211 B2 <patent-gp38470761>` — unknown
+* {ref}`US 9,589,805 B2 <patent-gp55180778>` — unknown
+* {ref}`US 9,343,470 B2 <patent-gp55302727>` — unknown
 * {ref}`US 9,368,588 B2 <patent-gp50929930>` — unknown
+* {ref}`US 9,362,287 B2 <patent-gp55912872>` — unknown
 * {ref}`US 9,461,247 B2 <patent-gp40431642>` — unknown
 * {ref}`US 10,141,393 B1 <patent-gp50929963>` — unknown
 * {ref}`US 10,038,004 B2 <patent-gp57775841>` — unknown
+* {ref}`US 10,074,438 B2 <patent-gp60573117>` — unknown
 * {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
+* {ref}`US 10,068,912 B1 <patent-gp63295246>` — unknown
 * {ref}`US 2019/0043751 A1 <patent-gp50727163>` — unknown
+* {ref}`US 2024/0206183 A1 <patent-gp91472718>` — unknown
 
 ## Cypress Semiconductor, Corporation
 

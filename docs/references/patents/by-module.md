@@ -57,6 +57,7 @@ Steps 1–13.
 * {ref}`US 9,437,470 B2 <patent-gp52776290>` — unknown
 * {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
 * {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
+* {ref}`US 9,362,287 B2 <patent-gp55912872>` — unknown
 
 ## Wells and threshold implants
 
@@ -176,16 +177,21 @@ Steps 35–42.
 * {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 9,455,352 B2 <patent-gp42264766>` — unknown
+* {ref}`US 9,368,644 B2 <patent-gp53401003>` — unknown
 * {ref}`US 9,425,325 B2 <patent-gp42006435>` — unknown
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
 * {ref}`TW I640082 B <patent-gp52707807>` — in force
 * {ref}`US 9,570,458 B2 <patent-gp42539704>` — unknown
 * {ref}`US 9,917,211 B2 <patent-gp38470761>` — unknown
+* {ref}`US 9,589,805 B2 <patent-gp55180778>` — unknown
+* {ref}`US 9,343,470 B2 <patent-gp55302727>` — unknown
 * {ref}`US 9,368,588 B2 <patent-gp50929930>` — unknown
 * {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 10,038,004 B2 <patent-gp57775841>` — unknown
+* {ref}`US 10,074,438 B2 <patent-gp60573117>` — unknown
 * {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
+* {ref}`US 10,068,912 B1 <patent-gp63295246>` — unknown
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
@@ -194,6 +200,7 @@ Steps 35–42.
 * {ref}`US 11,069,789 B2 <patent-gp60807919>` — unknown
 * {ref}`US 2023/0081072 A1 <patent-gp85479282>` — unknown
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
+* {ref}`US 2024/0206183 A1 <patent-gp91472718>` — unknown
 * {ref}`US 12,250,815 B1 <patent-gp94878875>` — unknown
 
 ## Gate oxides
@@ -863,6 +870,9 @@ that are not specific to one step.
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,735,289 B2 <patent-gp52808963>` — unknown
 * {ref}`US 9,733,574 B2 <patent-gp52825918>` — unknown
+* {ref}`US 9,466,489 B2 <patent-gp53369466>` — unknown
+* {ref}`US 9,494,853 B2 <patent-gp53368275>` — unknown
+* {ref}`US 9,252,221 B2 <patent-gp53482791>` — unknown
 * {ref}`US 2017/0263459 A1 <patent-gp59786922>` — unknown
 * {ref}`US 9,624,094 B1 <patent-gp58772128>` — unknown
 * {ref}`US 2019/0043751 A1 <patent-gp50727163>` — unknown
