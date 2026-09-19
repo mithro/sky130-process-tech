@@ -844,6 +844,7 @@ that are not specific to one step.
 * {ref}`US 7,390,750 B1 <patent-gp39529976>` — unknown
 * {ref}`US 7,352,444 B1 <patent-gp39227311>` — unknown
 * {ref}`US 7,351,663 B1 <patent-gp39227268>` — unknown
+* {ref}`US 2007/0008800 A1 <patent-gp37567141>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
 * {ref}`US 7,446,063 B1 <patent-gp39916467>` — unknown

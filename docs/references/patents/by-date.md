@@ -405,6 +405,7 @@ first, and then by status.
 * {ref}`US 7,352,444 B1 <patent-gp39227311>` — unknown
 * {ref}`US 7,351,663 B1 <patent-gp39227268>` — unknown
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
+* {ref}`US 2007/0008800 A1 <patent-gp37567141>` — unknown
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
 * {ref}`US 9,472,563 B2 <patent-gp37683063>` — unknown
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
@@ -1013,6 +1014,7 @@ first, and then by status.
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 7,352,444 B1 <patent-gp39227311>` — unknown
 * {ref}`US 7,351,663 B1 <patent-gp39227268>` — unknown
+* {ref}`US 2007/0008800 A1 <patent-gp37567141>` — unknown
 * {ref}`US 9,472,563 B2 <patent-gp37683063>` — unknown
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
 * {ref}`US 8,093,719 B1 <patent-gp45419097>` — unknown

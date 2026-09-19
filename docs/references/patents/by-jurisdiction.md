@@ -16,7 +16,7 @@ count of every member publication in that jurisdiction.
 
 ## United States (US)
 
-744 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
+745 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -542,6 +542,7 @@ count of every member publication in that jurisdiction.
 | US 7,151,048 B1 | {ref}`US 7,151,048 B1 <patent-gp37526559>` | unknown |
 | US 2006/0292815 A1 | {ref}`US 7,375,002 B2 <patent-gp37568077>` | Granted |
 | US 2006/0292844 A1 | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Granted |
+| US 2007/0008800 A1 | {ref}`US 2007/0008800 A1 <patent-gp37567141>` | unknown |
 | US 7,166,902 B1 | {ref}`US 7,166,902 B1 <patent-gp37663627>` | unknown |
 | US 2007/0021037 A1 | {ref}`US 5,893,796 A <patent-gp24770421>` | Granted |
 | US 7,172,914 B1 | {ref}`US 7,172,914 B1 <patent-gp37696594>` | unknown |
@@ -1677,7 +1678,7 @@ Number of members recorded per family.
 
 | Members | Families |
 |---|---|
-| 1 | 368 |
+| 1 | 369 |
 | 2 | 33 |
 | 3 | 13 |
 | 4 | 13 |

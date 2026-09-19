@@ -59407,3 +59407,73 @@ families:
   - No second-source check was performed for this addition (this round's brief involved no new web
     fetching); unlike the round's other PPUBS-sourced additions, this family's data rests on the single
     cached USPTO Patent Public Search full-text page alone.
+- id: GP37567141
+  family:
+    source: USPTO Patent Public Search familyIdentifierCur (Google Patents unreachable)
+    google_family_id: '37567141'
+  representative: US20070008800A1
+  title: Antifuse capacitor for configuring integrated circuits
+  assignees:
+    original:
+    - Cypress Semiconductor Corporation
+    current:
+    - Cypress Semiconductor Corporation
+  inventors:
+  - Jenne; Fredrick B.
+  dates:
+    priority: '2005-06-28'
+    filing: '2005-06-28'
+    grant: null
+  legal_status:
+    status: null
+    source: USPTO Patent Public Search does not report legal status for US20070008800A1; not independently
+      determined
+  expiry:
+    date: '2026-06-28'
+    estimated: true
+    basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
+      1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by the later of US20070008800A1's
+      own filing date + 20 years (2025-06-28) and the family's priority date + 21 years (2026-06-28),
+      running to 2026-06-28 on this conservative calculation, already past -- but a US patent term adjustment
+      PPUBS does not report could still extend the true term beyond it, so the family stays collapsed
+      per the design's rule (not certainly expired) rather than shown expired
+  expired: unknown
+  members:
+  - number: US20070008800A1
+    country: US
+    kind: A1
+    document_type: application
+    publication_date: '2007-01-11'
+    title: Antifuse capacitor for configuring integrated circuits
+    application_number: 11/169986
+    filing_date: '2005-06-28'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS20070008800A1
+      google_patents: https://patents.google.com/patent/US20070008800A1/en
+    verified: 2026-09-19 USPTO Patent Public Search record for US20070008800A1 (round-4 unrestricted-assignee
+      sweep)
+  relevance:
+  - target: category-oxidation
+    relation: same-lineage-assignee
+    reason: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before
+      SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns an antifuse capacitor formed from a
+      gate over a gate oxide with an n-well beneath it, programmed by permanently rupturing the gate oxide
+      to form a conductive path, and it is not evidence that the technique is used in SKY130.
+  inventory_keys: []
+  discovery:
+  - assignee-search
+  discovery_note: Found by the round-4 unrestricted-assignee gap-close sweep (an unrestricted `"cypress
+    semiconductor".as.` PPUBS query with no CPC or date restriction, run to close the round-6b progress
+    file's open ~586-vs-494 gap), in a CPC class (G11C17, antifuse memory) the round-5/6 CPC-restricted
+    sweep never queried; read individually from this member's own USPTO Patent Public Search full-text
+    abstract, retrieved 2026-09-19.
+  verified: 2026-09-19 USPTO Patent Public Search record for US20070008800A1 (round-4 unrestricted-assignee
+    sweep)
+  notes:
+  - Only the single US published application PPUBS's search returned is recorded as a member; other-jurisdiction
+    members and any granted patent that may have issued from this application were not searched for, so
+    this family is not claimed complete.
+  - 'Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20070008800/A1
+    (retrieved 2026-09-19, 16972 bytes) returns a record for this publication, cross-checking PPUBS''s
+    own search-hit metadata against a second, independent database.'
