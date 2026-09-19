@@ -318,6 +318,7 @@ Steps 89–106.
 * {ref}`US 6,713,831 B1 <patent-gp31989889>` — unknown
 * {ref}`US 6,979,640 B1 <patent-gp35482531>` — unknown
 * {ref}`US 6,770,566 B1 <patent-gp32776909>` — unknown
+* {ref}`US 7,078,334 B1 <patent-gp36659074>` — unknown
 * {ref}`US 6,887,784 B1 <patent-gp34520316>` — unknown
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
@@ -591,6 +592,7 @@ Steps 164–171.
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
 * {ref}`US 6,866,571 B1 <patent-gp34271789>` — unknown
 * {ref}`US 2004/0069224 A1 <patent-gp32068901>` — Cold trap for CVD furnace (2002-10-11)
+* {ref}`US 7,024,954 B1 <patent-gp36127565>` — unknown
 * {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,514,373 B2 <patent-gp33457548>` — Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency energy (2003-05-28)
@@ -764,12 +766,17 @@ that are not specific to one step.
 * {ref}`US 6,964,929 B1 <patent-gp35266339>` — unknown
 * {ref}`US 7,094,707 B1 <patent-gp36821686>` — unknown
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
+* {ref}`US 6,660,661 B1 <patent-gp29711392>` — unknown
 * {ref}`US 6,682,996 B1 <patent-gp30113994>` — unknown
+* {ref}`US 6,803,289 B1 <patent-gp33096364>` — unknown
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
 * {ref}`US 7,256,083 B1 <patent-gp38337005>` — unknown
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
 * {ref}`US 2011/0006372 A1 <patent-gp29999977>` — Formation of standard voltage threshold and low voltage threshold mosfet devices (2002-07-08)
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
+* {ref}`US 6,881,634 B2 <patent-gp31977042>` — unknown
+* {ref}`US 6,893,974 B1 <patent-gp34572555>` — unknown
+* {ref}`US 6,903,002 B1 <patent-gp34619169>` — unknown
 * {ref}`US 6,774,012 B1 <patent-gp32823630>` — unknown
 * {ref}`US 7,115,462 B1 <patent-gp37037236>` — unknown
 * {ref}`US 6,680,516 B1 <patent-gp30000311>` — unknown
@@ -777,6 +784,7 @@ that are not specific to one step.
 * {ref}`US 7,229,929 B2 <patent-gp32468458>` — unknown
 * {ref}`US 7,396,773 B1 <patent-gp39589560>` — unknown
 * {ref}`US 6,857,938 B1 <patent-gp34134936>` — unknown
+* {ref}`US 6,869,853 B1 <patent-gp34272234>` — unknown
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
@@ -786,6 +794,7 @@ that are not specific to one step.
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
+* {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)

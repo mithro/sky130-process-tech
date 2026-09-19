@@ -373,12 +373,13 @@ plans and defect limits are not public.
 * {ref}`US 6,201,601 B1 <patent-gp25464477>` — Sample inspection system (1997)
 * {ref}`US 6,121,156 A <patent-gp26769194>` — Contact monitor, method of forming same and method of analyzing contact-, via-and/or trench-forming processes in an integrated circuit (1998)
 
-:::{dropdown} 2 families in force or status unknown
+:::{dropdown} 3 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 6,518,591 B1 <patent-gp22757080>` — unknown
 * {ref}`US 6,808,944 B1 <patent-gp33159967>` — unknown
+* {ref}`US 7,024,954 B1 <patent-gp36127565>` — unknown
 :::
 
 **Related papers.**
