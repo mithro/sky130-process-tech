@@ -420,6 +420,7 @@ Steps 135–148.
 * {ref}`US 7,112,507 B2 <patent-gp34591550>` — MIM capacitor structure and method of fabrication (2003-11-24)
 * {ref}`US 6,849,549 B1 <patent-gp34080863>` — Method for forming dummy structures for improved CMP and reduced capacitance (2003-12-04)
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
+* {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
 * {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
 * {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
@@ -453,6 +454,7 @@ Steps 149–163.
 * {ref}`US 6,849,549 B1 <patent-gp34080863>` — Method for forming dummy structures for improved CMP and reduced capacitance (2003-12-04)
 * {ref}`US 7,317,221 B2 <patent-gp34633830>` — High density MIM capacitor structure and fabrication process (2003-12-04)
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
+* {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
 
@@ -597,6 +599,7 @@ Steps 164–171.
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,514,373 B2 <patent-gp33457548>` — Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency energy (2003-05-28)
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
+* {ref}`US 7,033,900 B1 <patent-gp36190984>` — unknown
 * {ref}`US 7,112,790 B1 <patent-gp37018887>` — unknown
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
@@ -785,16 +788,23 @@ that are not specific to one step.
 * {ref}`US 7,396,773 B1 <patent-gp39589560>` — unknown
 * {ref}`US 6,857,938 B1 <patent-gp34134936>` — unknown
 * {ref}`US 6,869,853 B1 <patent-gp34272234>` — unknown
+* {ref}`US 6,885,955 B1 <patent-gp34434758>` — unknown
+* {ref}`US 6,902,993 B2 <patent-gp32989791>` — unknown
+* {ref}`US 6,939,792 B1 <patent-gp34885859>` — unknown
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
 * {ref}`US 6,849,549 B1 <patent-gp34080863>` — Method for forming dummy structures for improved CMP and reduced capacitance (2003-12-04)
+* {ref}`US 7,112,975 B1 <patent-gp37018897>` — unknown
 * {ref}`US 7,329,934 B1 <patent-gp32311685>` — unknown
 * {ref}`US 7,320,944 B1 <patent-gp38950897>` — unknown
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
+* {ref}`US 7,268,052 B1 <patent-gp38473220>` — unknown
+* {ref}`US 7,071,124 B1 <patent-gp36613702>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
 * {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
+* {ref}`US 7,256,087 B1 <patent-gp38337006>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)

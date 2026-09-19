@@ -363,6 +363,9 @@ first, and then by status.
 * {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 6,833,622 B1 <patent-gp33510264>` — unknown
 * {ref}`US 6,960,781 B2 <patent-gp32990685>` — Shallow trench isolation process (2003-03-07)
+* {ref}`US 6,885,955 B1 <patent-gp34434758>` — unknown
+* {ref}`US 6,902,993 B2 <patent-gp32989791>` — unknown
+* {ref}`US 6,939,792 B1 <patent-gp34885859>` — unknown
 * {ref}`US 7,605,041 B2 <patent-gp33193196>` — Semiconductor device and its manufacture method (2003-04-10)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 6,963,106 B1 <patent-gp32825106>` — Memory array with memory cells having reduced short channel effects (2003-05-03)
@@ -374,6 +377,8 @@ first, and then by status.
 * {ref}`US 6,849,549 B1 <patent-gp34080863>` — Method for forming dummy structures for improved CMP and reduced capacitance (2003-12-04)
 * {ref}`US 7,317,221 B2 <patent-gp34633830>` — High density MIM capacitor structure and fabrication process (2003-12-04)
 * {ref}`US 7,055,532 B2 <patent-gp34678118>` — Method to remove fluorine residue from bond pads (2003-12-18)
+* {ref}`US 7,112,975 B1 <patent-gp37018897>` — unknown
+* {ref}`US 7,033,900 B1 <patent-gp36190984>` — unknown
 * {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
 * {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
 * {ref}`US 7,329,934 B1 <patent-gp32311685>` — unknown
@@ -384,11 +389,15 @@ first, and then by status.
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
 * {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
+* {ref}`US 7,268,052 B1 <patent-gp38473220>` — unknown
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
+* {ref}`US 7,071,124 B1 <patent-gp36613702>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
 * {ref}`US 7,705,268 B2 <patent-gp36337293>` — in force
 * {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
+* {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
 * {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
+* {ref}`US 7,256,087 B1 <patent-gp38337006>` — unknown
 * {ref}`US 7,501,352 B2 <patent-gp37073778>` — Method and system for forming an oxynitride layer (2005-03-30)
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
@@ -926,18 +935,27 @@ first, and then by status.
 * {ref}`US 7,024,954 B1 <patent-gp36127565>` — unknown
 * {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 6,833,622 B1 <patent-gp33510264>` — unknown
+* {ref}`US 6,885,955 B1 <patent-gp34434758>` — unknown
+* {ref}`US 6,902,993 B2 <patent-gp32989791>` — unknown
+* {ref}`US 6,939,792 B1 <patent-gp34885859>` — unknown
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
+* {ref}`US 7,112,975 B1 <patent-gp37018897>` — unknown
+* {ref}`US 7,033,900 B1 <patent-gp36190984>` — unknown
 * {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
 * {ref}`US 7,329,934 B1 <patent-gp32311685>` — unknown
 * {ref}`US 7,320,944 B1 <patent-gp38950897>` — unknown
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
 * {ref}`US 7,112,790 B1 <patent-gp37018887>` — unknown
 * {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
+* {ref}`US 7,268,052 B1 <patent-gp38473220>` — unknown
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
+* {ref}`US 7,071,124 B1 <patent-gp36613702>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
 * {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
+* {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
 * {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
+* {ref}`US 7,256,087 B1 <patent-gp38337006>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown

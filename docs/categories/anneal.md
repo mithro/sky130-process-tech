@@ -188,11 +188,12 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
 * {ref}`US 5,155,336 A <patent-gp27042189>` — Rapid thermal heating apparatus and method (1990)
 * {ref}`US 5,665,639 A <patent-gp22742690>` — Process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal (1994)
 
-:::{dropdown} 1 family in force or status unknown
+:::{dropdown} 2 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 6,436,799 B1 <patent-gp24688938>` — unknown
+* {ref}`US 6,902,993 B2 <patent-gp32989791>` — unknown
 :::
 <!-- index-links:end -->
 
