@@ -196,11 +196,12 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004)
 
-:::{dropdown} 1 family in force or status unknown
+:::{dropdown} 2 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 7,396,773 B1 <patent-gp39589560>` — unknown
+* {ref}`US 7,351,663 B1 <patent-gp39227268>` — unknown
 :::
 
 **Related papers.**
