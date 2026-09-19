@@ -1068,3 +1068,106 @@ actual pass/fail results.
   the gold-bump family under `category-anneal`, PPUBS's own inventor
   name truncation) remains as described in that report; none of them
   are safety issues and none were in this round's brief.
+
+## Round 7: unrestricted-assignee sweep gap close (branch `topic/index-patents-r4`, 2026-09-19)
+
+**The open item.** Round 6b left one item open: the round-5
+verification report's unrestricted `"cypress semiconductor".as."`
+PPUBS query had reported "roughly 586" distinct families in its first
+999 hits, against 494 in this index's own CPC-restricted sweep, and
+neither round had swept or triaged the difference.
+
+**What was actually found.** Re-running that query properly (sliced by
+publication year into 47 sub-999 requests, `docFamilyFiltering:
+familyIdFiltering`, so every year's results were captured rather than
+only the newest 999) found the round-5 "586" was itself an artifact of
+reading only the first, undeduplicated page: **the true unrestricted
+total is 3,142 distinct families**, roughly 6.4x the number the
+progress file had been carrying forward. Of the 3,142: 494 were
+already indexed (confirmed complete against the official CPC-swept
+cache, no paging gap); of the remaining 2,648, 2,497 were decided out
+of scope by their own CPC classes (the same CPC-facet method the
+design already uses to define the swept boundary, extended with a
+"clear-out" class list — wireless/networking, analog/power circuits,
+computing, memory-circuit operation, batteries, packaging subclasses,
+and similar); 127 (2 more from the CPC-classification recompute, plus
+125 the classifier couldn't place) had their own USPTO Patent Public
+Search full-text abstract read individually. Of those 127: 1 was added
+(`GP37567141`, US20070008800A1, "Antifuse capacitor for configuring
+integrated circuits" — a gate-oxide antifuse device structure, CPC
+class `G11C17`, never queried by round 5/6); the other 126 were
+confirmed out of scope with a family-specific reason each (12 CMOS
+image-sensor/photodiode device structures — excluded on the same
+"no public source ties this lineage's PDK to the technology" basis
+already used for MRAM/FinFET/3-D NAND — 3 antifuse-programming
+circuits around the device just added, 14 test/BIST circuits, 2
+packaging techniques, 1 MTJ/MRAM fabrication method, 13 unrelated-
+industry consumer/industrial products, and 80 assorted memory/timing/
+sensing circuit schemes). The same unrestricted query was re-run for
+every other lineage assignee whose CPC-restricted total looked
+incomplete — SkyWater (both spellings: 0 and 1, both already matching
+this index, no gap), Longitude Flash Memory Solutions (18 vs. 16),
+Infineon Technologies LLC (61 vs. 13) and Monterey Research (24 vs.
+6) — and found 68 further previously-unswept families (2 + 48 + 18),
+all decided out of scope the same way (one Infineon Technologies LLC
+family fell in an unswept `G11C13` class but is a firmware remapping
+scheme, not a device structure); no additions from these three.
+
+**Families before/after.** 542 → 543 (net +1, `GP37567141`).
+
+**Method notes.** `tmp/fixer-patents-r4/classify.py` implements the
+CPC-facet split (SWEPT = the round-5/6 class list plus `G11C13` for
+ReRAM/FeRAM and the round-6 point-4 equipment classes; CLEAR_OUT = a
+list of CPC top-level symbols the design already treats as circuit/
+system/software/packaging/test-without-process-content). Every family
+was deduplicated against `data/patents.yaml` (by DOCDB family id) and
+against every row already in `docs/plans/patent-discovery-log.md`
+(by the same id, extracted from the log's own tables) before being
+classified, so no family already decided by an earlier round is
+re-decided here. The discovery log's new "Round 7" section carries one
+row per family, with a reason citing that family's own CPC codes and
+title (for the CPC-classification bucket) or its own abstract (for the
+127 read individually).
+
+**Landing page.** `tools/gen_patents.py`'s `scope_and_completeness()`
+"What is left" paragraph, which previously stated the wrong 586-vs-494
+figures as an open, untriaged gap, now states the corrected 3,142
+total, the CPC-classification/individual-read/added breakdown (the
+added count computed from the dataset via a `discovery_note`
+substring, the same pattern as the existing H1/Monterey/extra-CPC
+counters), and the 68-family result for the other three assignees.
+
+**Checks (foreground, before finishing).** `uv run tools/check_patents.py`
+(543 families, 0 problems); `uv run tools/gen_patents.py` and `--check`
+(6 pages, 0 problems); `uv run python tools/gen_index_links.py` and
+`--check` (0 pages differ); `uv run python tools/check_inforce.py`
+(278 families not certainly expired, 285 pages, 0 problems); every
+other `tools/check_*.py` except `check_links.py`; `uv run sphinx-build
+-W -q -b html docs tmp/build-patents-r4` — see this round's final
+commit message for the actual pass/fail results.
+
+### Left open after round 7
+
+* The 2,497-family CPC-classification bucket (clear-out by CPC facet
+  and title, not read individually) is a residue of the same kind
+  round 5's classifier left and round 6 later read in full; a future
+  round could spot-read a sample of it the way round 6 did, though a
+  sample of the newest 999 families found the CPC/title split
+  consistent with the CPC codes actually present in every case
+  checked.
+* The photodiode/image-sensor exclusion (12 of the 127 individually-
+  read families, plus a few among the 2,497) is this round's own new
+  judgement call: no public source was checked for whether SKY130/S8
+  actually supports an image-sensor process option, only that this
+  index has no image-sensor module page to target today.
+* PPUBS's own numbering assigns some very recent (2025-2026) US
+  applications a `familyIdentifierCur` outside the normal ~8-digit
+  DOCDB range (e.g. `1000009537990`); these appear only in this
+  round's rejected-family log rows (never in `data/patents.yaml`), so
+  no schema question arises, but a future round adding one of these
+  very recent families should check whether PPUBS later reassigns it
+  a normal DOCDB id.
+* Every item the round-6b progress file listed as still open besides
+  the 586/494 gap (non-US members, other-jurisdiction siblings,
+  `dates.priority` not always earliest for PPUBS families) remains
+  unchanged; none were in this round's brief.
