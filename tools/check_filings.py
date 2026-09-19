@@ -537,8 +537,62 @@ def locate_fragment(
 
 
 def _line_initial(pos: int, text: str) -> bool:
-    """True when the character at ``pos`` in ``text`` starts a line (or the text)."""
-    return pos == 0 or text[:pos].rstrip(" \t").endswith("\n")
+    """True when the character at ``pos`` in ``text`` starts a line (or the text),
+    or immediately follows a sentence-terminal period or colon with no line break
+    at all. Some PDF extractions run a paragraph's last sentence straight into the
+    next heading with no newline whatsoever (e.g. "...other market conditions and
+    other factors.Item 4. Controls and Procedures"), which a plain "starts a line"
+    test would miss entirely. A genuine cross-reference ("as described under Item
+    8") is preceded by a lower-case word and a space, never by punctuation
+    touching the match directly, so this does not reopen that hole."""
+    if pos == 0:
+        return True
+    before = text[:pos].rstrip(" \t")
+    return before.endswith("\n") or before.endswith(".") or before.endswith(":")
+
+
+REFERENCE_CUE_RE = re.compile(r"(?:under|see|discussed|described|regarding|pursuant|refer(?:red)?)\s*$", re.I)
+
+
+def _looks_like_cross_reference(pos: int, text: str) -> bool:
+    """True when the ~30 characters immediately before ``pos`` -- crossing a line
+    break, since a cross-reference can coincidentally end its own line by an
+    ordinary word-wrap -- end with a reference-introducing word ("...these
+    factors are discussed under\\nItem 1A.\\nBusiness Segments..."). Such a match
+    starts a line only by coincidence: the sentence naming the item continues
+    right there, into unrelated heading-shaped text on the next line. A real
+    heading is never preceded by "discussed under"/"see"/etc."""
+    before = text[max(0, pos - 30):pos].rstrip()
+    return bool(REFERENCE_CUE_RE.search(before))
+
+
+TOC_ENTRY_TAIL_RE = re.compile(r"(?:\.{2,}|\s)\d+\s*$")
+TOC_DOT_LEADER_RE = re.compile(r"\.{4,}")
+TOC_ENTRY_WINDOW = 250  # characters; long enough to cross one wrapped title line
+
+
+def _looks_like_toc_entry(m: re.Match, text: str) -> bool:
+    """True when the text shortly after this match -- up to TOC_ENTRY_WINDOW
+    characters, or a blank-line paragraph break, whichever comes first -- ends
+    in a page number or contains a dot leader ("Item 14. Controls and
+    Procedures ....... 75", a dot-leader-free "Item 1. Financial Statements 4",
+    or a title that itself wraps onto a second line before the dots and page
+    number: "ITEM 9.CHANGES IN ... FINANCIAL\\nDISCLOSURES ..... 73"). This is
+    the standard shape of a table-of-contents entry regardless of how many
+    other entries sit near it, and catches a TOC entry _drop_toc_runs cannot:
+    one left isolated (run length under 3) by an intervening "PART II" line, a
+    non-Item sub-entry, or its own title wrapping to a second physical line --
+    any of which can widen the gap to its neighbours past the run threshold. A
+    real section heading's line(s) are just its title, continuing into prose,
+    not a leader-and-number, and stop at the first blank-line paragraph break
+    checked here, well short of the window."""
+    window = text[m.end():m.end() + TOC_ENTRY_WINDOW]
+    brk = re.search(r"\n[ \t]*\n", window)
+    if brk:
+        window = window[:brk.start()]
+    if not window.strip():
+        return False
+    return bool(TOC_DOT_LEADER_RE.search(window)) or bool(TOC_ENTRY_TAIL_RE.search(window.rstrip()))
 
 
 _last = [0.0]
@@ -762,8 +816,16 @@ def check_item_location(
     and counted by ``main``) instead of returning silently, so a clean "0 problems"
     run no longer reads as "every location was verified" when some were not checked
     at all -- that silence is what let V-01's wrong Item number through undetected."""
+    def candidates(matches):
+        return [
+            m for m in matches
+            if _line_initial(m.start(), raw_text)
+            and not _looks_like_cross_reference(m.start(), raw_text)
+            and not _looks_like_toc_entry(m, raw_text)
+        ]
+
     stated = location_item_number(location)
-    if not any(_line_initial(m.start(), raw_text) for m in HEADING_RE.finditer(raw_text)):
+    if not candidates(HEADING_RE.finditer(raw_text)):
         abstentions.append(
             f"{where}: document never renders an \"Item N\" heading in the expected form; "
             f"Item {stated} was not checked")
@@ -771,7 +833,7 @@ def check_item_location(
     offset = locate_fragment(quote_text, raw_text, where, f"Item {stated}", abstentions)
     if offset is None:
         return
-    all_matches = [m for m in HEADING_RE.finditer(raw_text[:offset]) if _line_initial(m.start(), raw_text)]
+    all_matches = candidates(HEADING_RE.finditer(raw_text[:offset]))
     headings = _drop_toc_runs(all_matches)
     if not headings:
         abstentions.append(f"{where}: no Item heading precedes the quote in the fetched text; Item {stated} not checked")
@@ -960,12 +1022,19 @@ def check_positional_location(
         return
     # A press release's headline and subheadline are their own blank-line-delimited
     # "paragraphs" ahead of the real body text, so a naive index would call the
-    # headline "the first paragraph". Keep only paragraphs that read as prose (contain
-    # a lower-case letter immediately followed by ". " or end-of-paragraph, i.e. an
-    # actual sentence boundary) before indexing; fall back to the unfiltered list if a
-    # document happens to have no such paragraph at all, rather than checking nothing.
+    # headline "the first paragraph". Keep only paragraphs that read as prose --
+    # a lower-case letter immediately followed by ". " and at least 20 more
+    # characters of text in the same paragraph (i.e. a real sentence boundary with
+    # another sentence or clause following, not just the paragraph ending there).
+    # Requiring more text after the period, not merely "a period or the end of the
+    # paragraph", matters because a short headline/subheadline can itself contain a
+    # sentence-shaped abbreviation ("Companies to Host Joint Webcast Today at 8:30
+    # a.m. ET" satisfies "lower-case letter, period, end of paragraph" on its own,
+    # which the previous, looser test wrongly counted as prose). Fall back to the
+    # unfiltered list if a document happens to have no such paragraph at all,
+    # rather than checking nothing.
     all_paras = [p for p in re.split(r"\n\s*\n+", raw_text) if p.strip()]
-    prose_re = re.compile(r"[a-z]\.(?:\s|$)")
+    prose_re = re.compile(r"[a-z]\.\s+\S.{19,}", re.S)
     paras = [p for p in all_paras if prose_re.search(p)] or all_paras
     matches = [i for i, p in enumerate(paras) if frag in normalise(p)]
     if not matches:
