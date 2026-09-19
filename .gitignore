@@ -14,7 +14,6 @@ __pycache__/
 .venv/
 venv/
 .uv/
-uv.lock
 
 # Editors / OS
 *.swp
