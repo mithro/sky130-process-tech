@@ -20,6 +20,7 @@ build:
       - python tools/check_papers.py
       - python tools/check_patents.py
       - python tools/check_filings.py
+      - python tools/check_inforce.py
       - python tools/gen_papers.py --check
       - python tools/gen_patents.py --check
       - python tools/gen_filings.py --check
