@@ -385,6 +385,14 @@ This sweep replaces the round-4 sweep's per-assignee title-keyword restriction w
 | ramtron | 63 | 2 | 0 | 61 | 0 |
 | skywater | 1 | 0 (see note) | 0 | 0 | 0 |
 
+**L5 note (round 6):** this table's columns are *per query* -- a family
+matching more than one assignee query (27 cases) is counted in each
+row it matches, so the columns sum to 93/81/411 rather than the 79/81/
+399 distinct-family counts in the "Full family-level triage" table
+below and in `docs/plans/progress-index-patents.md`'s "Totals"
+paragraph. Read the per-family table as the source of truth for
+distinct counts.
+
 81 families added this round (79 attributed to the Cypress query, 2 to Infineon Technologies LLC -- one of which also matched the Longitude Flash Memory Solutions query and so is double-counted across those two rows above); 3 Ramtron CPC hits and 8 Cypress/Infineon-LLC hits excluded individually (table below) as ferroelectric/FRAM, circuit, EDA-software or a 3D memory architecture the lineage fab never ran; the rest of the Cypress hits either already exist in the dataset or are logged below as in scope, left for a future round (mostly older, already-clearly-expired or unremarkable process variants not reviewed individually this round).
 
 **SkyWater note.** The one "sky water" hit, US12740332 "Carbon film integrated into a back end of line process", is the *granted patent* for the exact same invention as GP94259596 ("Carbon film integrated into a back end of line process", application US20250031586A1, already in the dataset since round 2) -- same title, same one-family SkyWater corpus -- but PPUBS assigns it a completely different `familyIdentifierCur` (1000009540762 vs. 94259596), a PPUBS indexing quirk this round found on a very recently granted patent rather than a second real family. Handled as a member addition to the existing GP94259596 (see below), not a new family, so it is not in the "added" counts above.
