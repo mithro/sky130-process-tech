@@ -317,6 +317,9 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
     skywater = sum(v for k, v in assignees.items() if "skywater" in k)
     infineon = sum(v for k, v in assignees.items() if "infineon" in k)
     monterey = sum(v for k, v in assignees.items() if "monterey" in k)
+    extra_cpc_added = sum(
+        1 for f in fams
+        if 'query "cypress semiconductor".as. AND (B24B' in (f.get("discovery_note") or ""))
     h1_added = sum(1 for f in fams if "H1 finding" in (f.get("discovery_note") or ""))
     def count_families(n: int, label: str) -> str:
         return f"{n} {label} {'family' if n == 1 else 'families'}"
@@ -393,18 +396,22 @@ def scope_and_completeness(fams: list[dict]) -> list[str]:
         "bucket pattern for the same phrase. The same audit found two further gaps in the CPC-classification "
         f"sweep itself: {count_families(monterey, 'Monterey Research')}, the entity Cypress sold a tranche "
         "of its flash-memory patents to in 2019 (patents granted after the transfer print Monterey, not "
-        "Cypress, so the original sweep's assignee list never found them), and eight process/equipment "
-        "families in CPC classes (B24B, B08B, H01J37, H05H, C25D and neighbours -- CMP, chamber cleaning, "
+        f"Cypress, so the original sweep's assignee list never found them), and {extra_cpc_added} "
+        f"process/equipment {'family' if extra_cpc_added == 1 else 'families'} in CPC classes (B24B, "
+        "B08B, H01J37, H05H, C25D and neighbours -- CMP, chamber cleaning, "
         "plasma conditioning, wet-process carriers, electroplating) the original sweep's own class list did "
         "not reach; both gaps were swept and triaged the same way, by abstract. Every decision this round, "
         "and the reason for each, is recorded in the repository at `docs/plans/patent-discovery-log.md` "
         "(outside the built site). What is left: the round-5 sweep's own residue has now been read and "
         "decided in full, not merely triaged by keyword, but neither round's sweep looked beyond these six "
         "core assignees (the five above, plus Monterey Research), nor beyond the CPC classes actually "
-        "queried, nor outside the United States -- PPUBS indexes only US grants, US pre-grant publications "
-        "and USOCR, so a lineage family with no US member is invisible to this index however it was found; "
-        "and no attempt has been made to find a PPUBS-sourced family's other-jurisdiction or other-US-member "
-        "siblings.",
+        "queried -- the round-5 verification report ran a full unrestricted \"cypress semiconductor\".as. "
+        "sweep and found roughly 586 distinct families in its first 999 hits, against 494 in this index's "
+        "own CPC-restricted queries against the same assignee, a substantially larger corpus neither round "
+        "has triaged -- nor outside the United States -- PPUBS indexes only US grants, US pre-grant "
+        "publications and USOCR, so a lineage family with no US member is invisible to this index however "
+        "it was found; and no attempt has been made to find a PPUBS-sourced family's other-jurisdiction or "
+        "other-US-member siblings.",
     ]
 
 
