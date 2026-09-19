@@ -258,6 +258,7 @@ alignment corrections.
 * {ref}`US 5,523,258 A <patent-gp22885803>` — Method for avoiding lithographic rounding effects for semiconductor fabrication (1994)
 * {ref}`US 5,401,691 A <patent-gp23028910>` — Method of fabrication an inverse open frame alignment mark (1994)
 * {ref}`US 5,652,084 A <patent-gp23422662>` — Method for reduced pitch lithography (1996)
+* {ref}`US 6,172,409 B1 <patent-gp25382979>` — Buffer grated structure for metrology mark and method for making the same (1997)
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999)
 
 :::{dropdown} 4 families in force or status unknown
