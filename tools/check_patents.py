@@ -610,7 +610,12 @@ def check_family(f: dict, labels: dict[str, Path], inventory: dict[str, str],
     if rep_m is not None:
         rep_verified = str(rep_m.get("verified", ""))
         rep_is_ppubs = "USPTO Patent Public Search" in rep_verified
-        rep_is_google = "Google Patents" in rep_verified
+        # L4 residue (round-3 verification, round 6b): a PPUBS-sourced member's
+        # own 'verified' line can legitimately say "(Google Patents
+        # unreachable)" in passing -- that substring must not, by itself, make
+        # this count as a Google-sourced record, or the guard above is
+        # silently disabled for exactly the families it exists to police.
+        rep_is_google = "Google Patents" in rep_verified and not rep_is_ppubs
         if rep_is_ppubs and not rep_is_google and fam.get("source") == "Google Patents family ID":
             problems.append(
                 f"{fid}: family.source is 'Google Patents family ID' but the representative member "
