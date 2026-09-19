@@ -372,6 +372,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 10,074,438 B2 <patent-gp60573117>` — unknown
 * {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
 * {ref}`US 10,068,912 B1 <patent-gp63295246>` — unknown
+* {ref}`US 2019/0147960 A1 <patent-gp66433658>` — unknown
 * {ref}`US 2019/0043751 A1 <patent-gp50727163>` — unknown
 * {ref}`US 2024/0206183 A1 <patent-gp91472718>` — unknown
 

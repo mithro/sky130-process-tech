@@ -19445,6 +19445,42 @@ families and members are counted.
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US11641745B2 (Google Patents unreachable)
 :::
 
+:::{dropdown} US 2019/0147960 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2038-11-14
+:name: patent-gp66433658
+
+**Title:** Bias scheme for word programming in non-volatile memory and inhibit disturb reduction
+
+**Assignees:** original Cypress Semiconductor Corporation; current Cypress Semiconductor Corporation
+
+**Inventors:** Menezes; Gary et al.
+
+**Dates:** priority 2017-11-14, filing 2018-03-12
+
+**Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US20190147960A1; not independently determined (round-6b re-decision from this member's own abstract, not because Google Patents was unreachable))
+
+**Estimated expiry:** 2038-11-14 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by the later of US20190147960A1's own filing date + 20 years (2038-03-12) and the family's earliest priority date (its own provisional application 62/585,739 of 2017-11-14) + 21 years (2038-11-14), running to 2038-11-14, not yet past -- collapsed per the design's rule (not certainly expired)
+
+**Family ID:** `66433658` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 2019/0147960 A1 | application | 2019-05-16 | not shown | 2026-09-21 USPTO Patent Public Search record (classification sweep, round 5) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190147960A1) · [Google Patents](https://patents.google.com/patent/US20190147960A1/en) |
+
+**Relevance:**
+
+* {ref}`step-040` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corporation, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the abstract describes a charge-trapping NVM array (flash and EEPROM portions on one die) whose memory transistor has an angled lightly doped drain (LDD) implant and whose select transistor has a shared source region with a halo implant -- a device/implant structure, not the bias/programming circuit scheme its title alone suggests -- and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — Found by the round-5 CPC-classification sweep's "cypress"/"longitude" query; rejected in round 6's H1 re-triage as a circuit/operation scheme going by its title (docs/plans/patent-discovery-log.md row for family 66433658). A round-6 verification report read the abstract itself and found it describes an implant/device structure (angled LDD implant on the memory transistor, halo implant on the select transistor), the same title-over-abstract slip H1 existed to fix; re-decided in scope this round by reading the same cached USPTO Patent Public Search full-text "Text View" front page again (title, abstract, claim 1), retrieved 2026-09-21.
+
+**Notes:**
+* Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit, re-decided in scope this round by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the title alone that had led round 6's own H1 re-triage to reject it. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show. dates.priority is the earliest of the two US provisional applications named in this member's own "Related U.S. Application Data" (62/585,739 filed 2017-11-14; 62/591,048 filed 2017-11-27), read directly from the cached front page, not a PPUBS priorityClaimsDate field.
+* No second-source check was performed for this addition (this round's brief involved no new web fetching); unlike the round's other PPUBS-sourced additions, this family's data rests on the single cached USPTO Patent Public Search full-text page alone.
+
+**Verified:** 2026-09-21 USPTO Patent Public Search record for US20190147960A1 (classification sweep, round 5)
+:::
+
 :::{dropdown} US 10,833,009 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2039-09-28
 :name: patent-gp41266159
 

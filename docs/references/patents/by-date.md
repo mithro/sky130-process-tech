@@ -549,6 +549,7 @@ first, and then by status.
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
+* {ref}`US 2019/0147960 A1 <patent-gp66433658>` — unknown
 * {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
 * {ref}`US 2019/0043751 A1 <patent-gp50727163>` — unknown
 * {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
@@ -1109,6 +1110,7 @@ first, and then by status.
 * {ref}`US 10,068,912 B1 <patent-gp63295246>` — unknown
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
+* {ref}`US 2019/0147960 A1 <patent-gp66433658>` — unknown
 * {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
 * {ref}`US 2019/0043751 A1 <patent-gp50727163>` — unknown
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown

@@ -16,7 +16,7 @@ count of every member publication in that jurisdiction.
 
 ## United States (US)
 
-743 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
+744 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -743,6 +743,7 @@ count of every member publication in that jurisdiction.
 | US 2019/0027484 A1 | {ref}`US 2019/0027484 A1 <patent-gp65016335>` | unknown |
 | US 10,199,229 B2 | {ref}`US 10,199,229 B2 <patent-gp46465479>` | in force |
 | US 2019/0043751 A1 | {ref}`US 2019/0043751 A1 <patent-gp50727163>` | unknown |
+| US 2019/0147960 A1 | {ref}`US 2019/0147960 A1 <patent-gp66433658>` | unknown |
 | US 10,319,733 B2 | {ref}`US 10,319,733 B2 <patent-gp56507299>` | in force |
 | US 2019/0355583 A1 | {ref}`US 2019/0355583 A1 <patent-gp53939072>` | in force |
 | US 10,516,044 B2 | {ref}`US 10,516,044 B2 <patent-gp39318438>` | unknown |
@@ -1676,7 +1677,7 @@ Number of members recorded per family.
 
 | Members | Families |
 |---|---|
-| 1 | 367 |
+| 1 | 368 |
 | 2 | 33 |
 | 3 | 13 |
 | 4 | 13 |
