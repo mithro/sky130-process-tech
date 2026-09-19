@@ -553,6 +553,7 @@ Status and expiry are estimates from public records and are not legal advice.
 **Related filings.**
 
 * Weebit Nano Limited, ASX announcement, filed 2021-09-09: Weebit signs first commercial deal to take its ReRAM technology to volume production with US-based SkyWater ({ref}`full entry <filing-weebit-nano-announcement-2021-09-09>`)
+* Weebit Nano Limited, Appendix 4E and Annual Report, filed 2022-08-25: Appendix 4E and Annual Report for the year ended 30 June 2022 ({ref}`full entry <filing-weebit-nano-annual-report-fy2022>`)
 * Weebit Nano Limited, ASX announcement, filed 2023-06-29: WBT's ReRAM IP now fully qualified in SkyWater S130 process ({ref}`full entry <filing-weebit-nano-announcement-2023-06-29>`)
 * Weebit Nano Limited, Appendix 4E and Annual Report, filed 2023-08-25: Appendix 4E and Annual Report for the year ended 30 June 2023 ({ref}`full entry <filing-weebit-nano-annual-report-fy2023>`)
 * Weebit Nano Limited, Appendix 4E and Annual Report, filed 2024-08-28: Appendix 4E and 2024 Annual Report for the year ended 30 June 2024 ({ref}`full entry <filing-weebit-nano-annual-report-fy2024>`)
