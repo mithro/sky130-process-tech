@@ -302,8 +302,17 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,903,002 B1 <patent-gp34619169>` — unknown
 * {ref}`US 6,869,853 B1 <patent-gp34272234>` — unknown
 * {ref}`US 7,024,954 B1 <patent-gp36127565>` — unknown
+* {ref}`US 6,885,955 B1 <patent-gp34434758>` — unknown
+* {ref}`US 6,902,993 B2 <patent-gp32989791>` — unknown
+* {ref}`US 6,939,792 B1 <patent-gp34885859>` — unknown
+* {ref}`US 7,112,975 B1 <patent-gp37018897>` — unknown
+* {ref}`US 7,033,900 B1 <patent-gp36190984>` — unknown
 * {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
+* {ref}`US 7,268,052 B1 <patent-gp38473220>` — unknown
+* {ref}`US 7,071,124 B1 <patent-gp36613702>` — unknown
 * {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
+* {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
+* {ref}`US 7,256,087 B1 <patent-gp38337006>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 9,831,113 B2 <patent-gp39594663>` — unknown

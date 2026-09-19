@@ -247,10 +247,11 @@ same sequence.
 * {ref}`US 6,430,028 B1 <patent-gp24897586>` — Method for fabrication of an MIM capacitor and related structure (2000)
 * {ref}`US 6,717,193 B2 <patent-gp25521092>` — Metal-insulator-metal (MIM) capacitor structure and methods of fabricating same (2001)
 
-:::{dropdown} 1 family in force or status unknown
+:::{dropdown} 2 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
+* {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
 :::
 <!-- index-links:end -->
