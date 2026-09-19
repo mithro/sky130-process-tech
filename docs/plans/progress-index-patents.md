@@ -1072,102 +1072,115 @@ actual pass/fail results.
 ## Round 7: unrestricted-assignee sweep gap close (branch `topic/index-patents-r4`, 2026-09-19)
 
 **The open item.** Round 6b left one item open: the round-5
-verification report's unrestricted `"cypress semiconductor".as."`
-PPUBS query had reported "roughly 586" distinct families in its first
-999 hits, against 494 in this index's own CPC-restricted sweep, and
-neither round had swept or triaged the difference.
+verification report's unrestricted `"cypress semiconductor".as.`
+PPUBS query had reported "roughly 586" distinct families against 494
+in this index's own CPC-restricted sweep, and neither round had swept
+or triaged the difference.
 
 **What was actually found.** Re-running that query properly (sliced by
-publication year into 47 sub-999 requests, `docFamilyFiltering:
-familyIdFiltering`, so every year's results were captured rather than
-only the newest 999) found the round-5 "586" was itself an artifact of
-reading only the first, undeduplicated page: **the true unrestricted
-total is 3,142 distinct families**, roughly 6.4x the number the
-progress file had been carrying forward. Of the 3,142: 494 were
-already indexed (confirmed complete against the official CPC-swept
-cache, no paging gap); of the remaining 2,648, 2,497 were decided out
-of scope by their own CPC classes (the same CPC-facet method the
-design already uses to define the swept boundary, extended with a
-"clear-out" class list — wireless/networking, analog/power circuits,
-computing, memory-circuit operation, batteries, packaging subclasses,
-and similar); 127 (2 more from the CPC-classification recompute, plus
-125 the classifier couldn't place) had their own USPTO Patent Public
-Search full-text abstract read individually. Of those 127: 1 was added
-(`GP37567141`, US20070008800A1, "Antifuse capacitor for configuring
-integrated circuits" — a gate-oxide antifuse device structure, CPC
-class `G11C17`, never queried by round 5/6); the other 126 were
-confirmed out of scope with a family-specific reason each (12 CMOS
-image-sensor/photodiode device structures — excluded on the same
-"no public source ties this lineage's PDK to the technology" basis
-already used for MRAM/FinFET/3-D NAND — 3 antifuse-programming
-circuits around the device just added, 14 test/BIST circuits, 2
-packaging techniques, 1 MTJ/MRAM fabrication method, 13 unrelated-
-industry consumer/industrial products, and 80 assorted memory/timing/
-sensing circuit schemes). The same unrestricted query was re-run for
-every other lineage assignee whose CPC-restricted total looked
-incomplete — SkyWater (both spellings: 0 and 1, both already matching
-this index, no gap), Longitude Flash Memory Solutions (18 vs. 16),
-Infineon Technologies LLC (61 vs. 13) and Monterey Research (24 vs.
-6) — and found 68 further previously-unswept families (2 + 48 + 18),
-all decided out of scope the same way (one Infineon Technologies LLC
-family fell in an unswept `G11C13` class but is a firmware remapping
-scheme, not a device structure); no additions from these three.
+publication year into 47 sub-999 requests) found the round-5 "586" was
+itself an artifact of reading only the first, undeduplicated page: the
+true unrestricted total is **3,142** distinct families. Of the 3,142:
+494 were already indexed (no paging gap) and 24 more were already
+decided in an earlier discovery-log round; of the remaining 2,624,
+2,473 were decided out of scope by CPC classification, 141 individually
+by abstract, and 10 added. The same query, re-run for Longitude Flash
+Memory Solutions, Infineon Technologies LLC and Monterey Research,
+found 68 previously-unswept rows (48 distinct families, 20 the same
+DOCDB family as a Cypress row above), all out of scope; no additions
+from these three.
 
-**Families before/after.** 542 → 543 (net +1, `GP37567141`).
+**Families before/after (this branch, both commits).** 542 -> 552 (net
++10): `GP37567141` (antifuse device structure), seven CMOS
+image-sensor/photodiode device structures, and two MEMS/SAW
+wafer-fabrication device structures (the last nine added in the
+verification-fixer pass below).
 
-**Method notes.** `tmp/fixer-patents-r4/classify.py` implements the
-CPC-facet split (SWEPT = the round-5/6 class list plus `G11C13` for
-ReRAM/FeRAM and the round-6 point-4 equipment classes; CLEAR_OUT = a
-list of CPC top-level symbols the design already treats as circuit/
-system/software/packaging/test-without-process-content). Every family
-was deduplicated against `data/patents.yaml` (by DOCDB family id) and
-against every row already in `docs/plans/patent-discovery-log.md`
-(by the same id, extracted from the log's own tables) before being
-classified, so no family already decided by an earlier round is
-re-decided here. The discovery log's new "Round 7" section carries one
-row per family, with a reason citing that family's own CPC codes and
-title (for the CPC-classification bucket) or its own abstract (for the
-127 read individually).
+### Verification fixer pass (`tmp/verify-index-patents-r4.md`)
 
-**Landing page.** `tools/gen_patents.py`'s `scope_and_completeness()`
-"What is left" paragraph, which previously stated the wrong 586-vs-494
-figures as an open, untriaged gap, now states the corrected 3,142
-total, the CPC-classification/individual-read/added breakdown (the
-added count computed from the dataset via a `discovery_note`
-substring, the same pattern as the existing H1/Monterey/extra-CPC
-counters), and the 68-family result for the other three assignees.
+An independent verification confirmed the sweep's paging, its 494/3,142
+totals and the CPC-only classification method were sound (point
+estimate of in-scope families missed by the CPC-only bucket: 2, out of
+2,497), but found two substantive defects and a cluster of count/
+wording errors, all fixed on this branch:
+
+* **F1 (image-sensor scope).** The round's new photodiode/image-sensor
+  exclusion rested on a false premise ("no public source ties this
+  lineage to image sensors"), contradicted by this repository's own
+  filing record CYP-08 (Cypress's 2004 annual report: "a working image
+  sensor in Cypress's Fab 4 wafer fabrication plant in Bloomington,
+  Minn.") and by the already-indexed `GP48952138` ("Photodiode having a
+  buried well region", `same-lineage-assignee` to `step-030`). Seven of
+  the twelve originally-excluded families are wells/junction/implant
+  device structures and are added; four stay out on their own merits
+  (readout/biasing circuits, an optics-layout microlens); the twelfth's
+  reason is corrected to "packaging", not "pixel device structure"
+  (F8). The scope rule (device structure and its own fabrication in
+  scope regardless of the end product; the circuit that reads, biases
+  or packages it is not) is now recorded in
+  `docs/plans/patent-index-design.md`, not left as an unstated
+  judgement call.
+* **F2 (MEMS/SAW false reasons; CLEAR_OUT narrowing).** Two families
+  (`27805698`, a MEMS pendulum motor "formed on a semiconductor
+  substrate using process steps completely compatible with current
+  CMOS technology"; `34964287`, a SAW/MEMS sealed-cavity structure with
+  its own fabrication method) had reached the CPC-only "out of scope"
+  bucket with a false "circuit" reason, because
+  `tmp/fixer-patents-r4/classify.py`'s `CLEAR_OUT` list carried bare
+  `H02`/`H03` prefixes that swallowed `H02N` (electrostatic
+  MEMS actuators) and `H03H` (acoustic-wave devices and their
+  manufacture). Both families are added; `CLEAR_OUT` is narrowed to
+  explicit sub-classes excluding `H02N`/`H03H`; the 24 families this
+  narrowing surfaces were each read individually (22 confirmed
+  genuinely circuit content, reasons corrected to say so; the 2 above
+  added). Four borderline rows the verifier flagged are ruled: all four
+  stay out of scope (fab-equipment control circuit; manufacturing-test
+  scheduling; a SONOS operating method, not fabrication; an EDA/layout
+  tool), each for the reason already given.
+* **F3-F6 (counts).** The landing page, discovery log and progress file
+  previously disagreed with each other and with the data (an
+  unexplained 24-family gap in "of the remaining 2,648"; a 2,499/124
+  split that miscounted 2 individually-read families as CPC-only; "13"
+  read individually for the other three assignees where the rows show
+  14; a false "overwhelmingly recent" characterisation of the
+  CPC-only bucket, which actually spans Cypress's full history; and a
+  68-family "no additions" figure that silently double-counted 20
+  families also listed under Cypress). All three texts now state one
+  arithmetic: 3,142 = 494 + 24 + 2,624 (2,473 + 141 + 10 added), and
+  68 = 48 distinct + 20 duplicate.
+* **F7 (CPC truncation).** `gen_log_rows.py` silently truncated every
+  row's displayed CPC list to six codes; 641 rows in the Round 7 table
+  actually carry more, and in a few the code that drove the stated
+  category was the one cut off. Every row's CPC cell now shows the
+  family's complete code list.
+* **F9 (round naming).** Every new log row and the new `discovery_note`
+  said "round-4" (this branch's own directory name); renamed to
+  "round-7" throughout (the log section, the dataset and
+  `gen_patents.py`'s counter), matching the section heading, this
+  progress file, the commit messages and the landing page.
 
 **Checks (foreground, before finishing).** `uv run tools/check_patents.py`
-(543 families, 0 problems); `uv run tools/gen_patents.py` and `--check`
-(6 pages, 0 problems); `uv run python tools/gen_index_links.py` and
-`--check` (0 pages differ); `uv run python tools/check_inforce.py`
-(278 families not certainly expired, 285 pages, 0 problems); every
-other `tools/check_*.py` except `check_links.py`; `uv run sphinx-build
--W -q -b html docs tmp/build-patents-r4` — see this round's final
-commit message for the actual pass/fail results.
+(552 families, 0 problems); all four generators' `--check` (0 problems/
+0 differ); `uv run python tools/check_inforce.py`; every other
+`tools/check_*.py` except `check_links.py`; `uv run sphinx-build -W -q
+-b html docs tmp/build-patents-r4` -- see this round's final commit
+message for the actual pass/fail results.
 
 ### Left open after round 7
 
-* The 2,497-family CPC-classification bucket (clear-out by CPC facet
-  and title, not read individually) is a residue of the same kind
-  round 5's classifier left and round 6 later read in full; a future
-  round could spot-read a sample of it the way round 6 did, though a
-  sample of the newest 999 families found the CPC/title split
-  consistent with the CPC codes actually present in every case
-  checked.
-* The photodiode/image-sensor exclusion (12 of the 127 individually-
-  read families, plus a few among the 2,497) is this round's own new
-  judgement call: no public source was checked for whether SKY130/S8
-  actually supports an image-sensor process option, only that this
-  index has no image-sensor module page to target today.
-* PPUBS's own numbering assigns some very recent (2025-2026) US
-  applications a `familyIdentifierCur` outside the normal ~8-digit
-  DOCDB range (e.g. `1000009537990`); these appear only in this
-  round's rejected-family log rows (never in `data/patents.yaml`), so
-  no schema question arises, but a future round adding one of these
-  very recent families should check whether PPUBS later reassigns it
-  a normal DOCDB id.
-* Every item the round-6b progress file listed as still open besides
-  the 586/494 gap (non-US members, other-jurisdiction siblings,
-  `dates.priority` not always earliest for PPUBS families) remains
-  unchanged; none were in this round's brief.
+* The 2,473-family CPC-classification bucket was decided by CPC facet
+  and title, not read individually; the verification's random (100)
+  and targeted-adversarial (62) samples found the split reliable once
+  the two H02N/H03H leaks were closed, but a future round could still
+  spot-read a further sample.
+* Whether other technologies this index excludes on a "no public
+  source" ground (MRAM, FinFET, 3-D NAND) would survive the same check
+  against this repository's own filing records that the image-sensor
+  exclusion did not survive has not been re-examined.
+* `docs/plans/TASKLOG.md`'s "STILL OPEN: ... about 586 families
+  against 494" line is stale (the figure this round disproved);
+  refreshing it is a merge-time action, per repo practice, not a
+  branch defect.
+* No round's sweep has looked outside the United States, nor for a
+  PPUBS-sourced family's other-jurisdiction or other-US-member
+  siblings.
