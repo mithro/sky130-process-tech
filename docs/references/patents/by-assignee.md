@@ -85,13 +85,17 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
 * {ref}`US 6,825,544 B1 <patent-gp33449343>` — Method for shallow trench isolation and shallow trench isolation structure (1998-12-09)
 * {ref}`US 6,372,150 B1 <patent-gp22801618>` — High vapor plasma strip methods and devices to enhance the reduction of organic residues over metal surfaces (1998-12-18)
+* {ref}`US 6,100,560 A <patent-gp23061646>` — Nonvolatile cell (1999-03-26)
+* {ref}`US 6,436,848 B1 <patent-gp23078311>` — Method for forming nitrogen-rich silicon oxide-based dielectric materials (1999-03-30)
 * {ref}`US 6,372,634 B1 <patent-gp23302890>` — unknown
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,890,860 B1 <patent-gp34549094>` — unknown
+* {ref}`US 6,373,679 B1 <patent-gp23363694>` — unknown
 * {ref}`US 6,322,716 B1 <patent-gp23520394>` — unknown
 * {ref}`US 6,302,766 B1 <patent-gp22508214>` — unknown
 * {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
 * {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
+* {ref}`US 6,455,427 B1 <patent-gp23885256>` — unknown
 * {ref}`US 6,969,448 B1 <patent-gp23892778>` — Method for forming a metallization structure in an integrated circuit (1999-12-30)
 * {ref}`US 6,596,466 B1 <patent-gp23950559>` — unknown
 * {ref}`US 6,727,161 B2 <patent-gp24011612>` — unknown
@@ -255,6 +259,13 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,114,724 A <patent-gp21979781>` — Nonvolatile semiconductor memory cell with select gate (1998-03-31)
 * {ref}`US 6,171,180 B1 <patent-gp21976173>` — Planarizing a trench dielectric having an upper surface within a trench spaced below an adjacent polish stop surface (1998-03-31)
 * {ref}`US 6,638,856 B1 <patent-gp29249879>` — Method of depositing metal onto a substrate (1998-09-11)
+* {ref}`US 6,121,156 A <patent-gp26769194>` — Contact monitor, method of forming same and method of analyzing contact-, via-and/or trench-forming processes in an integrated circuit (1998-12-02)
+* {ref}`US 6,303,496 B1 <patent-gp23160710>` — Methods of filling constrained spaces with insulating materials and/or of forming contact holes and/or contacts in an integrated circuit (1999-04-27)
+* {ref}`US 6,214,743 B1 <patent-gp23272176>` — unknown
+* {ref}`US 6,734,108 B1 <patent-gp32230148>` — unknown
+* {ref}`US 6,525,962 B1 <patent-gp24168163>` — unknown
+* {ref}`US 6,518,591 B1 <patent-gp22757080>` — unknown
+* {ref}`US 6,887,784 B1 <patent-gp34520316>` — unknown
 * {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
