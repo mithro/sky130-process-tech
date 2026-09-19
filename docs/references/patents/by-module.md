@@ -55,8 +55,8 @@ Steps 1–13.
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,437,470 B2 <patent-gp52776290>` — unknown
-* {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
 * {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
+* {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
 
 ## Wells and threshold implants
 

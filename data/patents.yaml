@@ -43473,7 +43473,7 @@ families:
   inventors:
   - Thurgate; Tim et al.
   dates:
-    priority: '2015-09-25'
+    priority: '2014-01-29'
     filing: '2015-09-25'
     grant: '2020-04-14'
   legal_status:
@@ -43482,14 +43482,30 @@ families:
       determined (round-6 abstract re-triage of the round-5 CPC-classification sweep's residue, not because
       Google Patents was unreachable)
   expiry:
-    date: '2036-09-25'
+    date: '2035-09-25'
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
-      1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US10622370B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2036-09-25, not
-      yet past -- collapsed per the design's rule (not certainly expired)
+      1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by the later of
+      US10622370B1's own filing date + 20 years (2035-09-25) and the family's earliest priority date +
+      21 years (2035-01-29), running to 2035-09-25, not yet past -- collapsed per the design's rule (not
+      certainly expired)
   expired: unknown
   members:
+  - number: US9276007B2
+    country: US
+    kind: B2
+    document_type: granted-patent
+    publication_date: '2016-03-01'
+    title: System and method for manufacturing self-aligned STI with single poly
+    application_number: US14/167845
+    filing_date: '2014-01-29'
+    status: null
+    links:
+      espacenet: https://worldwide.espacenet.com/patent/search?q=pn%3DUS9276007B2
+      google_patents: https://patents.google.com/patent/US9276007B2/en
+    verified: 2026-09-21 USPTO Patent Public Search record (round-6 H1 re-triage, found via the "cypress"
+      query's own default-bucket residue -- the same DOCDB family as the "monterey research" query's
+      US10622370B1)
   - number: US10622370B1
     country: US
     kind: B1
@@ -43566,8 +43582,17 @@ families:
   - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10622370
     (retrieved 2026-09-21, 785087 bytes) exists and is a granted-patent PDF for this number, cross-checking
     PPUBS''s own search-hit metadata against a second USPTO system.'
-
-
+  - 'Second-source check (US9276007B2): the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9276007
+    (retrieved 2026-09-21, 788346 bytes) exists and is a granted-patent PDF for this number.'
+  - 'Mixed provenance (round-6 H1 re-triage finding): the round-5 "cypress" query''s own default-bucket
+    residue separately found US9276007B2, an earlier member of this same DOCDB family (filed 2014-01-29
+    by the same inventor, Thurgate; Tim), whose PPUBS record shows applicantName "SPANSION LLC" despite
+    an assigneeName of "Cypress Semiconductor Corporation" at grant -- the same applicant/assignee split
+    the round-6 fixer treats as a Spansion tie elsewhere (GP44188074, GP50681947). US10622370B1 itself,
+    the later continuation, was filed directly by Monterey Research LLC as both applicant and assignee.
+    Recorded here rather than excluded, because the technique (self-aligned STI with charge-trap corner
+    rounding) is the same one already cited from US10622370B1 as technique-class, and the two members
+    are one family, not a choice between two.'
 - id: GP37588477
   family:
     source: USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)

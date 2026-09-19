@@ -20,9 +20,9 @@ Patents' own record page, linked alongside it, is the working
 full-text link this index relies on for every member.
 
 Records were retrieved 2026-09-14 to 2026-09-21 (individual records carry their own
-`verified` date). The index holds 481 families (1773 members in total). Every family's representative
-record page was fetched; 1714 of the 1773 members have their own record page
-fetched (1460 from Google Patents, 254 from USPTO Patent Public
+`verified` date). The index holds 481 families (1774 members in total). Every family's representative
+record page was fetched; 1715 of the 1774 members have their own record page
+fetched (1460 from Google Patents, 255 from USPTO Patent Public
 Search).
 The remaining 59 are listed in the fetched Google Patents family table of
 their representative but were not fetched separately: a
@@ -85,10 +85,10 @@ relation:
 
 | | Families | Members |
 |---|---|---|
-| Total | 481 | 1773 |
+| Total | 481 | 1774 |
 | Shown as expired | 265 | 1177 |
 | Shown as in force | 47 | 419 |
-| Status unknown | 169 | 177 |
+| Status unknown | 169 | 178 |
 
 ## Scope and completeness
 
