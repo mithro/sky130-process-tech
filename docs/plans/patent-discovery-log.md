@@ -973,3 +973,102 @@ One row per distinct DOCDB family this round's five assignee queries found;
 | already present | infineon-llc | 73016725 | 11610820 | 2019 | Embedded SONOS and high voltage select gate with a high-K metal gate and manufac | matches an existing family (by DOCDB family id) |
 | already present | cypress,infineon-llc | 75974473 | 11017851 | 2019 | Silicon-oxide-nitride-oxide-silicon based multi level non-volatile memory device | matches an existing family (by DOCDB family id) |
 | already present | infineon-llc | 90359049 | 20240107771 | 2022 | METHOD OF FORMING OXIDE-NITRIDE-OXIDE STACK OF NON-VOLATILE MEMORY AND INTEGRATI | matches an existing family (by DOCDB family id) |
+
+## Round 6: fixer response to the round-5 verification report (2026-09-21)
+
+This section records the fixer's response to `tmp/verify-index-patents-r3.md`
+(independent verification, round 5, dated 2026-09-19). Point references
+(H1, H2, M1-M3, L1-L5) are that report's own numbering.
+
+### Point 4: the Monterey Research sweep and the additional CPC classes
+
+The verifier found two sweep gaps (§4.2, §4.3 of the report), both closed
+this round using the verifier's own cached PPUBS search results
+(`tmp/verify-patents-r3/cache/q7_monterey_cpc.json`,
+`tmp/verify-patents-r3/cache/q9_cyp_otherclasses.json`; the searches
+themselves reproduce exactly and were not re-run) plus this round's own
+abstract-level triage of every result (this round's helper scripts, not
+tracked, under `tmp/fixer-patents-r3/`; the fetched USPTO Patent Public
+Search full-text pages are cached under `tmp/patent-cache/ppubs/ft/`).
+
+**Monterey Research, LLC** (Cypress sold a tranche of patents to this
+entity in 2019; patents granted after the transfer print Monterey, not
+Cypress, as assignee, so the round-5 `"cypress semiconductor".as.` query
+never found them): `"monterey research".as. AND (<sweep's own CPC
+class list>).cpc.` returns 6 distinct families. All 6 abstracts were
+read. 5 are in scope and added: `GP60807919` (US11069789, silicon-rich
+nitride charge-trapping film -- ONO), `GP41266159` (US10833009, staggered
+bit-line/source-line contacts and vias -- local interconnect/contact),
+`GP50002947` (US10622370, STI active-region corner rounding before the
+charge-trapping structure -- STI), `GP37588477` (US9570396, damascene
+interconnect on a barrier layer -- local interconnect/contact) and
+`GP36692048` (US9496275, ONO film with a low-resistance bit-line contact
+layer -- ONO + contact). None of the 5 is recorded `same-lineage-assignee`:
+Monterey Research is not in the design's named lineage list (Cypress,
+SkyWater, Infineon-from-Cypress), so each is `technique-class`, with the
+reason naming what is actually known about Monterey's provenance (two of
+the five, `GP36692048` and `GP37588477`, were originally filed by Cypress
+Semiconductor Corporation and an individual applicant respectively, and
+only later assigned to Monterey; the other three were filed by Monterey
+itself). The 6th, `GP39345373` (US10256246, "Convex shaped thin-film
+transistor device having elongated channel ... in a groove of a
+semiconductor substrate"), is excluded: its abstract describes a
+non-planar, groove/side-wall-channel thin-film-transistor memory cell,
+the same class of 3-D/non-planar architecture round 5 already excluded
+twice (`GP99313578`, `GP99313612`) as "technology the lineage fab never
+ran" (the SKY130/Fab25 lineage is a planar-transistor process) -- so
+excluded on the same ground, not added.
+
+| Family | Publication | Title | Decision | Reason |
+|---|---|---|---|---|
+| 60807919 | US11069789B2 | Varied silicon richness silicon nitride formation | added | Monterey-filed; silicon-rich charge-trapping nitride film -- ONO/charge-trap technique class (step-040). |
+| 41266159 | US10833009B2 | Memory device interconnects and method of manufacture | added | Monterey-filed; staggered bit-line/source-line contacts and vias through two ILDs -- local-interconnect/contact technique class (steps 093/101/103). |
+| 50002947 | US10622370B1 | System and method for manufacturing self-aligned STI with single poly | added | Monterey-filed; STI active-region corner rounding before the charge-trap structure -- STI technique class (steps 002/006/007/009/010/012). |
+| 39345373 | US10256246B2 | Convex shaped thin-film transistor device having elongated channel ... in a groove of a semiconductor substrate | out of scope | Non-planar/groove-channel TFT memory architecture -- same "technology the lineage fab never ran" exclusion as GP99313578/GP99313612 (round 5). |
+| 37588477 | US9570396B2 | Method of forming a damascene interconnect on a barrier layer | added | Originally filed by an individual applicant, now Monterey-assigned; damascene interconnect on a barrier layer -- local-interconnect/contact technique class (steps 093/101/103). |
+| 36692048 | US9496275B2 | Semiconductor memory device having lowered bit line resistance | added | Originally Cypress-filed, now Monterey-assigned; ONO film with a low-resistance bit-line contact layer -- ONO + contact technique class (step-040, steps 093/101/103). |
+
+**Additional CPC classes** (M3): `"cypress semiconductor".as. AND (B24B$
+OR B08B$ OR C11D$ OR C09G$ OR C09K$ OR H01J37$ OR G01N$ OR H01L22$ OR
+F27B$ OR G01R31$ OR C01B$ OR H05H$ OR B05D$ OR C25D$).cpc.` returns 123
+distinct families, of which 5 are already in the index and 8 were
+already in the round-5 sweep's own 387-row reject bucket (re-triaged
+with the rest of that bucket below: `32682933`, `34215443`, `22508214`,
+`25416046`, `25357416`, `25499744`, `29709141`, `34434758`). Of the
+remaining 110, the great majority are electrical-test/JTAG/BIST/touch
+circuit patents, correctly out of scope by this index's circuit
+exclusion. 14 abstracts were read (the report's own 8 named "clear" +
+4 "borderline" candidates, plus 2 more found this round by scanning
+every title in the 123-family result for a process/tool phrase the
+report's own list did not name): 13 are in scope and added, 1 excluded.
+
+| Family | Publication | Title | Decision | Reason |
+|---|---|---|---|---|
+| 34134936 | US6857938B1 | Lot-to-lot feed forward CMP process | added | CMP process-control scheme -- category-cmp. |
+| 24040492 | US5913712A | Scratch reduction in semiconductor circuit fabrication using chemical-mechanical polishing | added | Multi-step CMP procedure reducing scratches -- category-cmp. Pre-1999-05-29 priority: expired: true. |
+| 36045460 | US7014552B1 | Method and system for cleaning a polishing pad | added | CMP polishing-pad cleaning system -- machine-cmp-polisher. |
+| 34271789 | US6866571B1 | Boltless carrier ring/carrier plate attachment assembly | added | CMP carrier-ring/plate o-ring hardware -- machine-cmp-polisher. |
+| 23520394 | US6322716B1 | Method for conditioning a plasma etch chamber | added | Plasma etch chamber conditioning process -- category-etch. |
+| 33552841 | US6841008B1 | Method for cleaning plasma etch chamber structures | added | Plasma etch chamber cleaning sequence -- category-etch. |
+| 23077300 | US5441596A | Method for forming a stable plasma | added | Plasma etch stabilisation method -- category-etch. Pre-1999-05-29 priority: expired: true. |
+| 46583180 | US8236151B1 | Substrate carrier for wet chemical processing | added | Wafer carrier for wet chemical/electroplating processing -- machine-wet-bench. |
+| 42171130 | US9334578B2 | Electroplating apparatus and method with uniformity improvement | added | Divided-electrode electroplating tool -- category-deposition. Not in the report's named list; found this round by scanning the 123 titles for a process/tool phrase. |
+| 44483291 | US20110308955A1 | Integrated shielding for wafer plating | added | Wafer electroplating carrier with an integrated field-shaping shield -- category-deposition. Not in the report's named list, found the same way. |
+| 37018887 | US7112790B1 | Method to prepare TEM samples | added | Focused-ion-beam TEM cross-section sample preparation -- machine-cross-section-sem-profilers (borderline in the report; abstract confirms a physical fabrication/preparation technique, not a circuit). |
+| 39561114 | US7394075B1 | Preparation of integrated circuit device samples for observation and analysis | added | TEM-grid-based IC sample preparation -- machine-cross-section-sem-profilers, same ground as GP37018887. |
+| 24638394 | US5770521A | Anti-shear method and system for semiconductor wafer removal | added | Oscillation procedure to remove a wafer from a CMP polishing pad without shear damage -- machine-cmp-polisher. Pre-1999-05-29 priority: expired: true. |
+| 64657229 | US20190162650A1 | Optical monitoring of target characteristics | out of scope | Abstract describes a generic optical corrosion monitor with no mention of a wafer, substrate or semiconductor process; the CPC class (G01N21) is broad materials-testing, and nothing in the abstract or claim 1 ties this to wafer fabrication, so it is not counted as in scope on the evidence read. |
+
+**Saifun / Cypress Semiconductor Ltd.** (§4.4): the verifier found 31
+Saifun-assigned NROM/ONO families with 0 in the index. This round makes
+no change there: Saifun merged into Spansion in 2008, so its estate is
+excluded by the same coordinator decision that excludes the rest of the
+Spansion estate (Spansion is not in the process lineage; see the round-5
+Spansion re-triage above and M1 below) -- it is not a separate gap, and
+the landing page says so (H2 below).
+
+**Checks after this batch**: `uv run tools/check_patents.py` (354
+families, 0 problems); `uv run tools/gen_patents.py --check` (6 pages, 0
+problems); `uv run python tools/gen_index_links.py --check` (0 pages
+differ); `uv run python tools/check_inforce.py` (149 families not
+certainly expired, 285 pages, 0 problems).

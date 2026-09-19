@@ -45,6 +45,7 @@ Steps 1–13.
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,437,470 B2 <patent-gp52776290>` — unknown
 * {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
+* {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
 
 ## Wells and threshold implants
 
@@ -137,12 +138,14 @@ Steps 35–42.
 * {ref}`US 10,002,878 B2 <patent-gp53369470>` — in force
 * {ref}`US 8,916,432 B1 <patent-gp52101816>` — in force
 * {ref}`TW I640082 B <patent-gp52707807>` — in force
+* {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
 * {ref}`US 11,610,820 B2 <patent-gp73016725>` — unknown
 * {ref}`US 11,810,616 B2 <patent-gp75974473>` — in force
+* {ref}`US 11,069,789 B2 <patent-gp60807919>` — unknown
 * {ref}`US 2023/0081072 A1 <patent-gp85479282>` — unknown
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
 * {ref}`US 12,250,815 B1 <patent-gp94878875>` — unknown
@@ -271,8 +274,11 @@ Steps 89–106.
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,299,643 B2 <patent-gp42056520>` — unknown
+* {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
 * {ref}`US 9,209,197 B2 <patent-gp50929922>` — unknown
 * {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
+* {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
+* {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
 
 ## Metal contact and metal 1
 
@@ -477,6 +483,7 @@ Steps 164–171.
 * {ref}`US 5,902,103 A <patent-gp18429343>` — Vertical furnace of a semiconductor manufacturing apparatus and a boat cover thereof (1995-12-29)
 * {ref}`US 5,872,387 A <patent-gp24345606>` — Deuterium-treated semiconductor devices (1996-01-16)
 * {ref}`US 6,200,412 B1 <patent-gp24412185>` — Chemical vapor deposition system including dedicated cleaning gas injection (1996-02-16)
+* {ref}`US 5,770,521 A <patent-gp24638394>` — Anti-shear method and system for semiconductor wafer removal (1996-05-30)
 * {ref}`US 6,136,654 A <patent-gp27361220>` — Method of forming thin silicon nitride or silicon oxynitride gate dielectrics (1996-06-07)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
 * {ref}`US 5,707,498 A <patent-gp24741421>` — Avoiding contamination from induction coil in ionized sputtering (1996-07-12)
@@ -509,24 +516,31 @@ Steps 164–171.
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
+* {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
 * {ref}`US 6,747,230 B2 <patent-gp7697942>` — Method and device for sorting wafers (2001-08-31)
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
 * {ref}`US 2003/0170956 A1 <patent-gp27754013>` — Ultra-thin gate oxide through post decoupled plasma nitridation anneal (2002-03-06)
 * {ref}`US 6,667,205 B2 <patent-gp29214361>` — Method of forming retrograde n-well and p-well (2002-04-19)
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
+* {ref}`US 6,866,571 B1 <patent-gp34271789>` — unknown
 * {ref}`US 2004/0069224 A1 <patent-gp32068901>` — Cold trap for CVD furnace (2002-10-11)
+* {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,514,373 B2 <patent-gp33457548>` — Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency energy (2003-05-28)
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
+* {ref}`US 7,112,790 B1 <patent-gp37018887>` — unknown
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
 * {ref}`US 7,705,268 B2 <patent-gp36337293>` — in force
 * {ref}`US 7,501,352 B2 <patent-gp37073778>` — Method and system for forming an oxynitride layer (2005-03-30)
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
+* {ref}`US 7,394,075 B1 <patent-gp39561114>` — unknown
 * {ref}`EP 2 104 648 B1 <patent-gp39203155>` — in force
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
 * {ref}`US 8,110,414 B2 <patent-gp43029761>` — in force
+* {ref}`US 8,236,151 B1 <patent-gp46583180>` — unknown
+* {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 
 ## Materials
@@ -592,6 +606,7 @@ that are not specific to one step.
 * {ref}`US 5,468,342 A <patent-gp22881554>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,562,801 A <patent-gp23382383>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,540,824 A <patent-gp23061269>` — Plasma reactor with multi-section RF coil and isolated conducting lid (1994-07-18)
+* {ref}`US 5,441,596 A <patent-gp23077300>` — Method for forming a stable plasma (1994-07-27)
 * {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-04)
 * {ref}`US 6,579,777 B1 <patent-gp24349726>` — Method of forming local oxidation with sloped silicon recess (1996-01-16)
 * {ref}`US 5,830,797 A <patent-gp24703979>` — Interconnect methods and apparatus (1996-06-20)
@@ -602,6 +617,7 @@ that are not specific to one step.
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
 * {ref}`US 5,994,761 A <patent-gp25194044>` — Ideal oxygen precipitating silicon wafers and oxygen out-diffusion-less process therefor (1997-02-26)
+* {ref}`US 5,913,712 A <patent-gp24040492>` — Scratch reduction in semiconductor circuit fabrication using chemical-mechanical polishing (1997-03-12)
 * {ref}`US 5,821,589 A <patent-gp25236318>` — Method for cmos latch-up improvement by mev billi (buried implanted layer for laternal isolation) plus buried layer implantation (1997-03-19)
 * {ref}`US 5,968,851 A <patent-gp25231985>` — Controlled isotropic etch process and method of forming an opening in a dielectric layer (1997-03-19)
 * {ref}`US 6,555,484 B1 <patent-gp25372701>` — Method for controlling the oxidation of implanted silicon (1997-06-19)
@@ -616,7 +632,9 @@ that are not specific to one step.
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,890,860 B1 <patent-gp34549094>` — unknown
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
+* {ref}`US 6,322,716 B1 <patent-gp23520394>` — unknown
 * {ref}`US 6,350,353 B2 <patent-gp23783296>` — Alternate steps of IMP and sputtering process to improve sidewall coverage (1999-11-24)
+* {ref}`US 6,841,008 B1 <patent-gp33552841>` — unknown
 * {ref}`US 2004/0183199 A1 <patent-gp32991247>` — unknown
 * {ref}`US 6,660,603 B2 <patent-gp22880690>` — Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions (2000-09-21)
 * {ref}`US 6,379,849 B1 <patent-gp24795638>` — Method for forming binary intensity masks (2000-10-26)
@@ -640,6 +658,7 @@ that are not specific to one step.
 * {ref}`US 7,189,652 B1 <patent-gp37833374>` — unknown
 * {ref}`US 7,229,929 B2 <patent-gp32468458>` — unknown
 * {ref}`US 7,396,773 B1 <patent-gp39589560>` — unknown
+* {ref}`US 6,857,938 B1 <patent-gp34134936>` — unknown
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
@@ -656,6 +675,8 @@ that are not specific to one step.
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 8,119,538 B1 <patent-gp45571996>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
+* {ref}`US 9,334,578 B2 <patent-gp42171130>` — unknown
+* {ref}`US 2011/0308955 A1 <patent-gp44483291>` — unknown
 * {ref}`US 9,431,503 B2 <patent-gp46876619>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,735,289 B2 <patent-gp52808963>` — unknown

@@ -320,11 +320,12 @@ oxide.[^pat-04]
 * {ref}`US 5,334,332 A <patent-gp24443399>` — Cleaning compositions for removing etching residue and method of using (1990)
 * {ref}`US 7,305,999 B2 <patent-gp24449421>` — Centrifugal spray processor and retrofit kit (2000)
 
-:::{dropdown} 2 families in force or status unknown
+:::{dropdown} 3 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`EP 2 104 648 B1 <patent-gp39203155>` — in force
+* {ref}`US 8,236,151 B1 <patent-gp46583180>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 :::
 <!-- index-links:end -->

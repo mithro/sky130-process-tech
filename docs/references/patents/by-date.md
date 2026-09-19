@@ -85,6 +85,7 @@ first, and then by status.
 * {ref}`US 5,562,801 A <patent-gp23382383>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,864,394 A <patent-gp27502820>` — Surface inspection system (1994-06-20)
 * {ref}`US 5,540,824 A <patent-gp23061269>` — Plasma reactor with multi-section RF coil and isolated conducting lid (1994-07-18)
+* {ref}`US 5,441,596 A <patent-gp23077300>` — Method for forming a stable plasma (1994-07-27)
 * {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-04)
 * {ref}`US 5,518,528 A <patent-gp23253952>` — Storage and delivery system for gaseous hydride, halide, and organometallic group V compounds (1994-10-13)
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
@@ -105,6 +106,7 @@ first, and then by status.
 * {ref}`US 5,595,919 A <patent-gp24414167>` — Method of making self-aligned halo process for reducing junction capacitance (1996-02-20)
 * {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
 * {ref}`US 5,814,433 A <patent-gp26689885>` — Use of mixtures of ethyl lactate and N-methyl pyrollidone as an edge bead remover for photoresists (1996-05-17)
+* {ref}`US 5,770,521 A <patent-gp24638394>` — Anti-shear method and system for semiconductor wafer removal (1996-05-30)
 * {ref}`US 6,136,654 A <patent-gp27361220>` — Method of forming thin silicon nitride or silicon oxynitride gate dielectrics (1996-06-07)
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
@@ -127,6 +129,7 @@ first, and then by status.
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
 * {ref}`US 5,793,090 A <patent-gp25122771>` — Integrated circuit having multiple LDD and/or source/drain implant steps to enhance circuit performance (1997-01-10)
 * {ref}`US 5,994,761 A <patent-gp25194044>` — Ideal oxygen precipitating silicon wafers and oxygen out-diffusion-less process therefor (1997-02-26)
+* {ref}`US 5,913,712 A <patent-gp24040492>` — Scratch reduction in semiconductor circuit fabrication using chemical-mechanical polishing (1997-03-12)
 * {ref}`US 5,821,589 A <patent-gp25236318>` — Method for cmos latch-up improvement by mev billi (buried implanted layer for laternal isolation) plus buried layer implantation (1997-03-19)
 * {ref}`US 5,968,851 A <patent-gp25231985>` — Controlled isotropic etch process and method of forming an opening in a dielectric layer (1997-03-19)
 * {ref}`US 5,789,302 A <patent-gp25239372>` — Crack stops (1997-03-24)
@@ -163,6 +166,7 @@ first, and then by status.
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,890,860 B1 <patent-gp34549094>` — unknown
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
+* {ref}`US 6,322,716 B1 <patent-gp23520394>` — unknown
 * {ref}`US 6,300,252 B1 <patent-gp23626242>` — Method for etching fuse windows in IC devices and devices made (1999-10-01)
 * {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
 * {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
@@ -177,6 +181,7 @@ first, and then by status.
 * {ref}`US 6,653,803 B1 <patent-gp24331908>` — Integrated resonator and amplifier system (2000-05-30)
 * {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
 * {ref}`US 7,305,999 B2 <patent-gp24449421>` — Centrifugal spray processor and retrofit kit (2000-07-07)
+* {ref}`US 6,841,008 B1 <patent-gp33552841>` — unknown
 * {ref}`US 6,521,502 B1 <patent-gp24538683>` — Solid phase epitaxy activation process for source/drain junction extensions and halo regions (2000-08-07)
 * {ref}`US 6,817,903 B1 <patent-gp33418789>` — Process for reducing leakage in an integrated circuit with shallow trench isolated active areas (2000-08-09)
 * {ref}`US 6,759,288 B2 <patent-gp24577983>` — Double LDD devices for improved DRAM refresh (2000-08-22)
@@ -196,6 +201,7 @@ first, and then by status.
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
+* {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001-07-12)
 * {ref}`US 6,818,558 B1 <patent-gp31979047>` — Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS) type devices (2001-07-31)
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
@@ -216,6 +222,7 @@ first, and then by status.
 * {ref}`US 6,667,205 B2 <patent-gp29214361>` — Method of forming retrograde n-well and p-well (2002-04-19)
 * {ref}`US 6,964,929 B1 <patent-gp35266339>` — unknown
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
+* {ref}`US 6,866,571 B1 <patent-gp34271789>` — unknown
 * {ref}`US 7,192,867 B1 <patent-gp37863803>` — unknown
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
 * {ref}`US 7,256,083 B1 <patent-gp38337005>` — unknown
@@ -233,12 +240,14 @@ first, and then by status.
 * {ref}`US 7,189,652 B1 <patent-gp37833374>` — unknown
 * {ref}`US 7,229,929 B2 <patent-gp32468458>` — unknown
 * {ref}`US 7,396,773 B1 <patent-gp39589560>` — unknown
+* {ref}`US 6,857,938 B1 <patent-gp34134936>` — unknown
 * {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
 * {ref}`US 6,835,642 B2 <patent-gp32593189>` — Method of forming a metal fuse on semiconductor devices (2002-12-18)
 * {ref}`US 6,773,975 B1 <patent-gp32823653>` — unknown
 * {ref}`US 6,794,269 B1 <patent-gp32987143>` — unknown
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
+* {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 6,960,781 B2 <patent-gp32990685>` — Shallow trench isolation process (2003-03-07)
 * {ref}`US 7,605,041 B2 <patent-gp33193196>` — Semiconductor device and its manufacture method (2003-04-10)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
@@ -256,6 +265,7 @@ first, and then by status.
 * {ref}`US 7,320,944 B1 <patent-gp38950897>` — unknown
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
+* {ref}`US 7,112,790 B1 <patent-gp37018887>` — unknown
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
@@ -267,6 +277,7 @@ first, and then by status.
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
+* {ref}`US 7,394,075 B1 <patent-gp39561114>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)
 * {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
 * {ref}`US 7,981,800 B1 <patent-gp44261896>` — unknown
@@ -304,6 +315,7 @@ first, and then by status.
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,299,643 B2 <patent-gp42056520>` — unknown
+* {ref}`US 9,334,578 B2 <patent-gp42171130>` — unknown
 * {ref}`CN 106653761 A <patent-gp42945510>` — in force
 * {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
@@ -313,12 +325,16 @@ first, and then by status.
 
 ## 2010s
 
+* {ref}`US 8,236,151 B1 <patent-gp46583180>` — unknown
+* {ref}`US 2011/0308955 A1 <patent-gp44483291>` — unknown
 * {ref}`US 9,431,503 B2 <patent-gp46876619>` — unknown
 * {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
+* {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
+* {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 * {ref}`US 9,209,197 B2 <patent-gp50929922>` — unknown
 * {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
 * {ref}`US 2017/0221768 A1 <patent-gp51222001>` — unknown
@@ -338,7 +354,9 @@ first, and then by status.
 * {ref}`US 10,003,022 B2 <patent-gp54018263>` — in force
 * {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
 * {ref}`US 9,431,609 B2 <patent-gp55302792>` — in force
+* {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
+* {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
 * {ref}`US 9,624,094 B1 <patent-gp58772128>` — unknown
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
@@ -346,6 +364,7 @@ first, and then by status.
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
+* {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
 * {ref}`WO 2020249699 A1 <patent-gp68072713>` — in force
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
 * {ref}`US 11,610,820 B2 <patent-gp73016725>` — unknown
@@ -354,6 +373,7 @@ first, and then by status.
 
 ## 2020s
 
+* {ref}`US 11,069,789 B2 <patent-gp60807919>` — unknown
 * {ref}`US 2023/0081072 A1 <patent-gp85479282>` — unknown
 * {ref}`US 12,232,324 B2 <patent-gp90359049>` — in force
 * {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
@@ -433,6 +453,7 @@ first, and then by status.
 * {ref}`US 5,562,801 A <patent-gp23382383>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,864,394 A <patent-gp27502820>` — Surface inspection system (1994-06-20)
 * {ref}`US 5,540,824 A <patent-gp23061269>` — Plasma reactor with multi-section RF coil and isolated conducting lid (1994-07-18)
+* {ref}`US 5,441,596 A <patent-gp23077300>` — Method for forming a stable plasma (1994-07-27)
 * {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-04)
 * {ref}`US 5,518,528 A <patent-gp23253952>` — Storage and delivery system for gaseous hydride, halide, and organometallic group V compounds (1994-10-13)
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
@@ -453,6 +474,7 @@ first, and then by status.
 * {ref}`US 5,595,919 A <patent-gp24414167>` — Method of making self-aligned halo process for reducing junction capacitance (1996-02-20)
 * {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
 * {ref}`US 5,814,433 A <patent-gp26689885>` — Use of mixtures of ethyl lactate and N-methyl pyrollidone as an edge bead remover for photoresists (1996-05-17)
+* {ref}`US 5,770,521 A <patent-gp24638394>` — Anti-shear method and system for semiconductor wafer removal (1996-05-30)
 * {ref}`US 6,136,654 A <patent-gp27361220>` — Method of forming thin silicon nitride or silicon oxynitride gate dielectrics (1996-06-07)
 * {ref}`US 5,830,375 A <patent-gp24652841>` — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers (1996-06-10)
 * {ref}`US 5,760,409 A <patent-gp25134219>` — Dose control for use in an ion implanter (1996-06-14)
@@ -474,6 +496,7 @@ first, and then by status.
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
 * {ref}`US 5,793,090 A <patent-gp25122771>` — Integrated circuit having multiple LDD and/or source/drain implant steps to enhance circuit performance (1997-01-10)
 * {ref}`US 5,994,761 A <patent-gp25194044>` — Ideal oxygen precipitating silicon wafers and oxygen out-diffusion-less process therefor (1997-02-26)
+* {ref}`US 5,913,712 A <patent-gp24040492>` — Scratch reduction in semiconductor circuit fabrication using chemical-mechanical polishing (1997-03-12)
 * {ref}`US 5,821,589 A <patent-gp25236318>` — Method for cmos latch-up improvement by mev billi (buried implanted layer for laternal isolation) plus buried layer implantation (1997-03-19)
 * {ref}`US 5,968,851 A <patent-gp25231985>` — Controlled isotropic etch process and method of forming an opening in a dielectric layer (1997-03-19)
 * {ref}`US 5,789,302 A <patent-gp25239372>` — Crack stops (1997-03-24)
@@ -624,16 +647,19 @@ first, and then by status.
 * {ref}`US 6,372,634 B1 <patent-gp23302890>` — unknown
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,890,860 B1 <patent-gp34549094>` — unknown
+* {ref}`US 6,322,716 B1 <patent-gp23520394>` — unknown
 * {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
 * {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
 * {ref}`US 6,596,466 B1 <patent-gp23950559>` — unknown
 * {ref}`US 6,727,161 B2 <patent-gp24011612>` — unknown
 * {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
+* {ref}`US 6,841,008 B1 <patent-gp33552841>` — unknown
 * {ref}`US 2004/0183199 A1 <patent-gp32991247>` — unknown
 * {ref}`US 8,030,172 B1 <patent-gp44676718>` — unknown
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
+* {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
 * {ref}`US 6,841,491 B1 <patent-gp33550813>` — unknown
@@ -642,6 +668,7 @@ first, and then by status.
 * {ref}`US 6,699,795 B1 <patent-gp31713884>` — unknown
 * {ref}`US 6,979,640 B1 <patent-gp35482531>` — unknown
 * {ref}`US 6,964,929 B1 <patent-gp35266339>` — unknown
+* {ref}`US 6,866,571 B1 <patent-gp34271789>` — unknown
 * {ref}`US 7,192,867 B1 <patent-gp37863803>` — unknown
 * {ref}`US 7,256,083 B1 <patent-gp38337005>` — unknown
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
@@ -652,20 +679,24 @@ first, and then by status.
 * {ref}`US 7,189,652 B1 <patent-gp37833374>` — unknown
 * {ref}`US 7,229,929 B2 <patent-gp32468458>` — unknown
 * {ref}`US 7,396,773 B1 <patent-gp39589560>` — unknown
+* {ref}`US 6,857,938 B1 <patent-gp34134936>` — unknown
 * {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
 * {ref}`US 6,773,975 B1 <patent-gp32823653>` — unknown
 * {ref}`US 6,794,269 B1 <patent-gp32987143>` — unknown
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
+* {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
 * {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
 * {ref}`US 7,320,944 B1 <patent-gp38950897>` — unknown
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
+* {ref}`US 7,112,790 B1 <patent-gp37018887>` — unknown
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
 * {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
+* {ref}`US 7,394,075 B1 <patent-gp39561114>` — unknown
 * {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
 * {ref}`US 7,981,800 B1 <patent-gp44261896>` — unknown
 * {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
@@ -683,9 +714,14 @@ first, and then by status.
 * {ref}`US 8,860,122 B1 <patent-gp40752056>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,299,643 B2 <patent-gp42056520>` — unknown
+* {ref}`US 9,334,578 B2 <patent-gp42171130>` — unknown
 * {ref}`US 9,543,262 B1 <patent-gp57705840>` — unknown
+* {ref}`US 8,236,151 B1 <patent-gp46583180>` — unknown
+* {ref}`US 2011/0308955 A1 <patent-gp44483291>` — unknown
 * {ref}`US 9,431,503 B2 <patent-gp46876619>` — unknown
 * {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
+* {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
+* {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 * {ref}`US 9,209,197 B2 <patent-gp50929922>` — unknown
 * {ref}`US 2017/0221768 A1 <patent-gp51222001>` — unknown
 * {ref}`US 9,614,105 B2 <patent-gp51728382>` — unknown
@@ -696,11 +732,15 @@ first, and then by status.
 * {ref}`US 2017/0263459 A1 <patent-gp59786922>` — unknown
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
+* {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
+* {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
 * {ref}`US 9,624,094 B1 <patent-gp58772128>` — unknown
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
+* {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
 * {ref}`US 2022/0122660 A1 <patent-gp74192490>` — unknown
 * {ref}`US 11,610,820 B2 <patent-gp73016725>` — unknown
+* {ref}`US 11,069,789 B2 <patent-gp60807919>` — unknown
 * {ref}`US 2023/0081072 A1 <patent-gp85479282>` — unknown
 * {ref}`US 2025/0031586 A1 <patent-gp94259596>` — unknown
 * {ref}`US 12,250,815 B1 <patent-gp94878875>` — unknown

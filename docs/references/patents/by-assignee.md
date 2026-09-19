@@ -30,10 +30,12 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 5,665,639 A <patent-gp22742690>` — Process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal (1994-02-23)
 * {ref}`US 5,468,342 A <patent-gp22881554>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,562,801 A <patent-gp23382383>` — Method of etching an oxide layer (1994-04-28)
+* {ref}`US 5,441,596 A <patent-gp23077300>` — Method for forming a stable plasma (1994-07-27)
 * {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-04)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
 * {ref}`US 6,579,777 B1 <patent-gp24349726>` — Method of forming local oxidation with sloped silicon recess (1996-01-16)
+* {ref}`US 5,770,521 A <patent-gp24638394>` — Anti-shear method and system for semiconductor wafer removal (1996-05-30)
 * {ref}`US 5,830,797 A <patent-gp24703979>` — Interconnect methods and apparatus (1996-06-20)
 * {ref}`US 6,004,874 A <patent-gp24696949>` — Method for forming an interconnect (1996-06-26)
 * {ref}`US 6,707,112 B2 <patent-gp24694701>` — unknown
@@ -42,6 +44,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 5,977,638 A <patent-gp25035177>` — Edge metal for interconnect layers (1996-11-21)
 * {ref}`US 5,861,676 A <patent-gp25050977>` — Method of forming robust interconnect and contact structures in a semiconductor and/or integrated circuit (1996-11-27)
 * {ref}`US 5,897,354 A <patent-gp25083775>` — Method of forming a non-volatile memory device with ramped tunnel dielectric layer (1996-12-17)
+* {ref}`US 5,913,712 A <patent-gp24040492>` — Scratch reduction in semiconductor circuit fabrication using chemical-mechanical polishing (1997-03-12)
 * {ref}`US 5,968,851 A <patent-gp25231985>` — Controlled isotropic etch process and method of forming an opening in a dielectric layer (1997-03-19)
 * {ref}`US 5,851,892 A <patent-gp25314008>` — Fabrication sequence employing an oxide formed with minimized inducted charge and/or maximized breakdown voltage (1997-05-07)
 * {ref}`US 6,555,484 B1 <patent-gp25372701>` — Method for controlling the oxidation of implanted silicon (1997-06-19)
@@ -58,12 +61,14 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,372,634 B1 <patent-gp23302890>` — unknown
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,890,860 B1 <patent-gp34549094>` — unknown
+* {ref}`US 6,322,716 B1 <patent-gp23520394>` — unknown
 * {ref}`US 6,344,281 B1 <patent-gp23670081>` — unknown
 * {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
 * {ref}`US 6,969,448 B1 <patent-gp23892778>` — Method for forming a metallization structure in an integrated circuit (1999-12-30)
 * {ref}`US 6,596,466 B1 <patent-gp23950559>` — unknown
 * {ref}`US 6,727,161 B2 <patent-gp24011612>` — unknown
 * {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
+* {ref}`US 6,841,008 B1 <patent-gp33552841>` — unknown
 * {ref}`US 6,817,903 B1 <patent-gp33418789>` — Process for reducing leakage in an integrated circuit with shallow trench isolated active areas (2000-08-09)
 * {ref}`US 2004/0183199 A1 <patent-gp32991247>` — unknown
 * {ref}`US 8,030,172 B1 <patent-gp44676718>` — unknown
@@ -71,6 +76,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,593,208 B1 <patent-gp25130177>` — Method of uniform polish in shallow trench isolation process (2001-02-14)
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
+* {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001-07-12)
 * {ref}`US 6,818,558 B1 <patent-gp31979047>` — Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS) type devices (2001-07-31)
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
@@ -83,6 +89,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,699,795 B1 <patent-gp31713884>` — unknown
 * {ref}`US 6,979,640 B1 <patent-gp35482531>` — unknown
 * {ref}`US 6,964,929 B1 <patent-gp35266339>` — unknown
+* {ref}`US 6,866,571 B1 <patent-gp34271789>` — unknown
 * {ref}`US 7,192,867 B1 <patent-gp37863803>` — unknown
 * {ref}`US 7,256,083 B1 <patent-gp38337005>` — unknown
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
@@ -94,6 +101,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,943,126 B1 <patent-gp34910591>` — unknown
 * {ref}`US 7,189,652 B1 <patent-gp37833374>` — unknown
 * {ref}`US 7,229,929 B2 <patent-gp32468458>` — unknown
+* {ref}`US 6,857,938 B1 <patent-gp34134936>` — unknown
 * {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
 * {ref}`US 6,773,975 B1 <patent-gp32823653>` — unknown
 * {ref}`US 6,794,269 B1 <patent-gp32987143>` — unknown
@@ -105,11 +113,13 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
 * {ref}`US 7,320,944 B1 <patent-gp38950897>` — unknown
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
+* {ref}`US 7,112,790 B1 <patent-gp37018887>` — unknown
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
 * {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
+* {ref}`US 7,394,075 B1 <patent-gp39561114>` — unknown
 * {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
 * {ref}`US 7,981,800 B1 <patent-gp44261896>` — unknown
 * {ref}`US 9,171,936 B2 <patent-gp39272978>` — unknown
@@ -141,11 +151,14 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,299,643 B2 <patent-gp42056520>` — unknown
+* {ref}`US 9,334,578 B2 <patent-gp42171130>` — unknown
 * {ref}`CN 106653761 A <patent-gp42945510>` — in force
 * {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
 * {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
 * {ref}`US 9,543,262 B1 <patent-gp57705840>` — unknown
+* {ref}`US 8,236,151 B1 <patent-gp46583180>` — unknown
+* {ref}`US 2011/0308955 A1 <patent-gp44483291>` — unknown
 * {ref}`US 9,431,503 B2 <patent-gp46876619>` — unknown
 * {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
@@ -435,6 +448,14 @@ heading here is not necessarily the name printed on the patent.
 
 * {ref}`EP 2 104 648 B1 <patent-gp39203155>` — in force
 
+## Monterey Research LLC
+
+* {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
+* {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
+* {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
+* {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
+* {ref}`US 11,069,789 B2 <patent-gp60807919>` — unknown
+
 ## Mosel Vitelic Inc (now Promos Technologies Inc)
 
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
@@ -535,9 +556,11 @@ heading here is not necessarily the name printed on the patent.
 ## Spansion LLC (now AMD US Holdings Inc, Infineon Technologies LLC, Spansion Inc)
 
 * {ref}`US 7,439,141 B2 <patent-gp26708682>` — Shallow trench isolation approach for improved STI corner rounding (2001-12-27)
+* {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
 * {ref}`US 6,963,106 B1 <patent-gp32825106>` — Memory array with memory cells having reduced short channel effects (2003-05-03)
 * {ref}`US 8,232,175 B2 <patent-gp39047941>` — unknown
 * {ref}`US 7,989,328 B2 <patent-gp39526963>` — unknown
+* {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 
 ## Startec Ventures Inc (now LAir Liquide SA pour lEtude et lExploitation des Procedes Georges Claude)
 

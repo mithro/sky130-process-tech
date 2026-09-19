@@ -145,7 +145,7 @@ fab:
 * {ref}`US 6,033,991 A <patent-gp25473825>` — Isolation scheme based on recessed locos using a sloped Si etch and dry field oxidation (1997)
 * {ref}`US 7,439,141 B2 <patent-gp26708682>` — Shallow trench isolation approach for improved STI corner rounding (2001)
 
-:::{dropdown} 8 families in force or status unknown
+:::{dropdown} 9 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
@@ -157,6 +157,7 @@ Status and expiry are estimates from public records and are not legal advice.
 * {ref}`US 7,981,800 B1 <patent-gp44261896>` — unknown
 * {ref}`US 9,437,470 B2 <patent-gp52776290>` — unknown
 * {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
+* {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
 :::
 <!-- index-links:end -->
 
