@@ -343,6 +343,13 @@ targets, limits and sampling plans are not public.
 * {ref}`US 4,710,030 A <patent-gp24957338>` — Optical generator and detector of stress pulses (1985)
 * {ref}`US 4,999,014 A <patent-gp23365380>` — Method and apparatus for measuring thickness of thin films (1989)
 * {ref}`US 5,166,752 A <patent-gp24566844>` — Simultaneous multiple angle/multiple wavelength ellipsometer and method (1990)
+
+:::{dropdown} 1 family in force or status unknown
+
+Status and expiry are estimates from public records and are not legal advice.
+
+* {ref}`US 6,664,120 B1 <patent-gp29709141>` — unknown
+:::
 <!-- index-links:end -->
 
 ## References

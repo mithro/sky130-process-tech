@@ -39,6 +39,7 @@ Steps 1–13.
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
 * {ref}`US 6,890,859 B1 <patent-gp34552978>` — unknown
 * {ref}`US 7,439,141 B2 <patent-gp26708682>` — Shallow trench isolation approach for improved STI corner rounding (2001-12-27)
+* {ref}`US 6,838,392 B1 <patent-gp33538646>` — unknown
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
 * {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
@@ -314,7 +315,9 @@ Steps 89–106.
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
 * {ref}`US 6,630,643 B2 <patent-gp25437421>` — unknown
+* {ref}`US 6,713,831 B1 <patent-gp31989889>` — unknown
 * {ref}`US 6,979,640 B1 <patent-gp35482531>` — unknown
+* {ref}`US 6,770,566 B1 <patent-gp32776909>` — unknown
 * {ref}`US 6,887,784 B1 <patent-gp34520316>` — unknown
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
@@ -582,6 +585,7 @@ Steps 164–171.
 * {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
 * {ref}`US 6,747,230 B2 <patent-gp7697942>` — Method and device for sorting wafers (2001-08-31)
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
+* {ref}`US 6,664,120 B1 <patent-gp29709141>` — unknown
 * {ref}`US 2003/0170956 A1 <patent-gp27754013>` — Ultra-thin gate oxide through post decoupled plasma nitridation anneal (2002-03-06)
 * {ref}`US 6,667,205 B2 <patent-gp29214361>` — Method of forming retrograde n-well and p-well (2002-04-19)
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
@@ -749,11 +753,16 @@ that are not specific to one step.
 * {ref}`US 6,803,330 B2 <patent-gp25522834>` — unknown
 * {ref}`US 6,841,491 B1 <patent-gp33550813>` — unknown
 * {ref}`US 6,777,307 B1 <patent-gp32848681>` — unknown
+* {ref}`US 6,863,595 B1 <patent-gp34215443>` — unknown
+* {ref}`US 6,835,616 B1 <patent-gp33516618>` — unknown
 * {ref}`US 7,026,235 B1 <patent-gp36127689>` — unknown
 * {ref}`US 7,129,178 B1 <patent-gp37189185>` — unknown
+* {ref}`US 7,365,403 B1 <patent-gp39321653>` — unknown
 * {ref}`US 6,699,795 B1 <patent-gp31713884>` — unknown
+* {ref}`US 6,620,715 B1 <patent-gp27804437>` — unknown
 * {ref}`US 6,667,205 B2 <patent-gp29214361>` — Method of forming retrograde n-well and p-well (2002-04-19)
 * {ref}`US 6,964,929 B1 <patent-gp35266339>` — unknown
+* {ref}`US 7,094,707 B1 <patent-gp36821686>` — unknown
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
 * {ref}`US 6,682,996 B1 <patent-gp30113994>` — unknown
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
@@ -772,6 +781,7 @@ that are not specific to one step.
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
 * {ref}`US 6,849,549 B1 <patent-gp34080863>` — Method for forming dummy structures for improved CMP and reduced capacitance (2003-12-04)
+* {ref}`US 7,329,934 B1 <patent-gp32311685>` — unknown
 * {ref}`US 7,320,944 B1 <patent-gp38950897>` — unknown
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)

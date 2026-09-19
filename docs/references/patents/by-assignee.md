@@ -128,12 +128,18 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
 * {ref}`US 6,828,201 B1 <patent-gp33476239>` — Method of manufacturing a top insulating layer for a sonos-type device (2001-10-22)
 * {ref}`US 6,841,491 B1 <patent-gp33550813>` — unknown
+* {ref}`US 6,713,831 B1 <patent-gp31989889>` — unknown
+* {ref}`US 6,664,120 B1 <patent-gp29709141>` — unknown
+* {ref}`US 6,863,595 B1 <patent-gp34215443>` — unknown
 * {ref}`US 7,026,235 B1 <patent-gp36127689>` — unknown
 * {ref}`US 7,129,178 B1 <patent-gp37189185>` — unknown
+* {ref}`US 7,365,403 B1 <patent-gp39321653>` — unknown
 * {ref}`US 6,677,213 B1 <patent-gp29778448>` — SONOS structure including a deuterated oxide-silicon interface and method for making the same (2002-03-08)
 * {ref}`US 7,151,048 B1 <patent-gp37526559>` — unknown
 * {ref}`US 6,699,795 B1 <patent-gp31713884>` — unknown
+* {ref}`US 6,620,715 B1 <patent-gp27804437>` — unknown
 * {ref}`US 6,979,640 B1 <patent-gp35482531>` — unknown
+* {ref}`US 6,838,392 B1 <patent-gp33538646>` — unknown
 * {ref}`US 6,964,929 B1 <patent-gp35266339>` — unknown
 * {ref}`US 6,866,571 B1 <patent-gp34271789>` — unknown
 * {ref}`US 7,192,867 B1 <patent-gp37863803>` — unknown
@@ -161,6 +167,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
 * {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
 * {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
+* {ref}`US 7,329,934 B1 <patent-gp32311685>` — unknown
 * {ref}`US 7,320,944 B1 <patent-gp38950897>` — unknown
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
 * {ref}`US 7,112,790 B1 <patent-gp37018887>` — unknown
@@ -283,6 +290,9 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,890,859 B1 <patent-gp34552978>` — unknown
 * {ref}`US 6,803,330 B2 <patent-gp25522834>` — unknown
 * {ref}`US 6,777,307 B1 <patent-gp32848681>` — unknown
+* {ref}`US 6,835,616 B1 <patent-gp33516618>` — unknown
+* {ref}`US 7,094,707 B1 <patent-gp36821686>` — unknown
+* {ref}`US 6,770,566 B1 <patent-gp32776909>` — unknown
 * {ref}`US 6,887,784 B1 <patent-gp34520316>` — unknown
 * {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
