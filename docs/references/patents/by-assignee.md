@@ -50,6 +50,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 5,830,797 A <patent-gp24703979>` — Interconnect methods and apparatus (1996-06-20)
 * {ref}`US 6,004,874 A <patent-gp24696949>` — Method for forming an interconnect (1996-06-26)
 * {ref}`US 6,707,112 B2 <patent-gp24694701>` — unknown
+* {ref}`US 5,830,804 A <patent-gp24702105>` — Encapsulated dielectric and method of fabrication (1996-06-28)
 * {ref}`US 6,004,399 A <patent-gp24705136>` — Ultra-low particle semiconductor cleaner for removal of particle contamination and residues from surface oxide formation on semiconductor wafers (1996-07-01)
 * {ref}`US 5,911,887 A <patent-gp24743931>` — Method of etching a bond pad (1996-07-19)
 * {ref}`US 5,977,638 A <patent-gp25035177>` — Edge metal for interconnect layers (1996-11-21)
@@ -219,10 +220,17 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 5,401,691 A <patent-gp23028910>` — Method of fabrication an inverse open frame alignment mark (1994-07-01)
 * {ref}`US 5,503,962 A <patent-gp23053758>` — Chemical-mechanical alignment mark and method of fabrication (1994-07-15)
 * {ref}`US 5,514,622 A <patent-gp23147089>` — Method for the formation of interconnects and landing pads having a thin, conductive film underlying the plug or an associated contact of via hole (1994-08-29)
+* {ref}`US 5,573,971 A <patent-gp24323213>` — Planar antifuse and method of fabrication (1995-12-29)
 * {ref}`US 5,652,182 A <patent-gp24323742>` — Disposable posts for self-aligned non-enclosed contacts (1995-12-29)
 * {ref}`US 6,786,998 B1 <patent-gp32927824>` — Wafer temperature control apparatus and method (1995-12-29)
 * {ref}`US 5,635,765 A <patent-gp24428538>` — Multi-layer gate structure (1996-02-26)
+* {ref}`US 6,091,129 A <patent-gp24675318>` — Self-aligned trench isolated structure (1996-06-19)
+* {ref}`US 6,309,971 B1 <patent-gp24786919>` — Hot metallization process (1996-08-01)
 * {ref}`US 5,652,084 A <patent-gp23422662>` — Method for reduced pitch lithography (1996-10-22)
+* {ref}`US 6,156,645 A <patent-gp24975872>` — Method of forming a metal layer on a substrate, including formation of wetting layer at a high temperature (1996-10-25)
+* {ref}`US 6,016,012 A <patent-gp24992029>` — Thin liner layer providing reduced via resistance (1996-11-05)
+* {ref}`US 5,763,021 A <patent-gp25076960>` — Method of forming a dielectric film (1996-12-13)
+* {ref}`US 5,931,173 A <patent-gp25357416>` — Monitoring cleaning effectiveness of a cleaning system (1997-06-09)
 * {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997-09-03)
 * {ref}`US 6,273,098 B1 <patent-gp25524224>` — Extension of the useful life of a chemical bath used to process a substrate (1997-11-24)
 * {ref}`US 6,162,682 A <patent-gp24141350>` — Structure and process for a gouge-free stacked non-volatile memory cell with select gate (1998-01-22)
@@ -581,6 +589,7 @@ heading here is not necessarily the name printed on the patent.
 ## Ramtron International Corporation
 
 * {ref}`US 5,610,099 A <patent-gp23018112>` — Process for fabricating transistors using composite nitride structure (1994-06-28)
+* {ref}`US 5,990,513 A <patent-gp24926077>` — Yield enhancement technique for integrated circuit processing to reduce effects of undesired dielectric moisture retention and subsequent hydrogen out-diffusion (1996-10-08)
 
 ## RCA Corp
 
