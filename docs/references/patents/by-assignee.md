@@ -269,6 +269,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,156,645 A <patent-gp24975872>` — Method of forming a metal layer on a substrate, including formation of wetting layer at a high temperature (1996-10-25)
 * {ref}`US 6,016,012 A <patent-gp24992029>` — Thin liner layer providing reduced via resistance (1996-11-05)
 * {ref}`US 5,763,021 A <patent-gp25076960>` — Method of forming a dielectric film (1996-12-13)
+* {ref}`US 7,253,019 B2 <patent-gp27238821>` — unknown
 * {ref}`US 5,931,173 A <patent-gp25357416>` — Monitoring cleaning effectiveness of a cleaning system (1997-06-09)
 * {ref}`US 6,399,462 B1 <patent-gp25386002>` — Method and structure for isolating integrated circuit components and/or semiconductor active devices (1997-06-30)
 * {ref}`US 6,015,718 A <patent-gp25430292>` — Indentification of the composition of particles in a process chamber (1997-08-14)
@@ -285,6 +286,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,303,496 B1 <patent-gp23160710>` — Methods of filling constrained spaces with insulating materials and/or of forming contact holes and/or contacts in an integrated circuit (1999-04-27)
 * {ref}`US 6,214,743 B1 <patent-gp23272176>` — unknown
 * {ref}`US 6,734,108 B1 <patent-gp32230148>` — unknown
+* {ref}`US 7,199,410 B2 <patent-gp24960722>` — unknown
 * {ref}`US 6,525,962 B1 <patent-gp24168163>` — unknown
 * {ref}`US 6,518,591 B1 <patent-gp22757080>` — unknown
 * {ref}`US 6,635,566 B1 <patent-gp24376952>` — unknown
@@ -295,6 +297,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,852,649 B1 <patent-gp34104919>` — unknown
 * {ref}`US 6,630,643 B2 <patent-gp25437421>` — unknown
 * {ref}`US 6,890,859 B1 <patent-gp34552978>` — unknown
+* {ref}`US 6,621,184 B1 <patent-gp27805698>` — unknown
 * {ref}`US 6,803,330 B2 <patent-gp25522834>` — unknown
 * {ref}`US 6,777,307 B1 <patent-gp32848681>` — unknown
 * {ref}`US 6,835,616 B1 <patent-gp33516618>` — unknown
@@ -306,12 +309,15 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,881,634 B2 <patent-gp31977042>` — unknown
 * {ref}`US 6,903,002 B1 <patent-gp34619169>` — unknown
 * {ref}`US 6,869,853 B1 <patent-gp34272234>` — unknown
+* {ref}`US 7,173,299 B1 <patent-gp37696617>` — unknown
+* {ref}`US 7,180,111 B1 <patent-gp37744964>` — unknown
 * {ref}`US 7,024,954 B1 <patent-gp36127565>` — unknown
 * {ref}`US 6,885,955 B1 <patent-gp34434758>` — unknown
 * {ref}`US 6,902,993 B2 <patent-gp32989791>` — unknown
 * {ref}`US 6,939,792 B1 <patent-gp34885859>` — unknown
 * {ref}`US 7,112,975 B1 <patent-gp37018897>` — unknown
 * {ref}`US 7,033,900 B1 <patent-gp36190984>` — unknown
+* {ref}`US 7,750,420 B2 <patent-gp34964287>` — unknown
 * {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 7,268,052 B1 <patent-gp38473220>` — unknown
 * {ref}`US 7,071,124 B1 <patent-gp36613702>` — unknown
@@ -319,6 +325,8 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 7,018,942 B1 <patent-gp36084580>` — unknown
 * {ref}`US 7,166,902 B1 <patent-gp37663627>` — unknown
 * {ref}`US 7,256,087 B1 <patent-gp38337006>` — unknown
+* {ref}`US 7,151,287 B1 <patent-gp37053863>` — unknown
+* {ref}`US 7,808,022 B1 <patent-gp42797741>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 7,351,663 B1 <patent-gp39227268>` — unknown
 * {ref}`US 2007/0008800 A1 <patent-gp37567141>` — unknown
@@ -343,6 +351,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 8,269,287 B2 <patent-gp40071582>` — unknown
 * {ref}`US 9,041,203 B2 <patent-gp42098125>` — unknown
 * {ref}`US 9,153,596 B2 <patent-gp42630210>` — unknown
+* {ref}`US 2009/0230289 A1 <patent-gp38441979>` — unknown
 * {ref}`US 9,240,418 B2 <patent-gp41214862>` — unknown
 * {ref}`US 9,412,598 B2 <patent-gp46233256>` — unknown
 * {ref}`US 8,691,648 B1 <patent-gp50391780>` — unknown
