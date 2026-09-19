@@ -57,13 +57,65 @@ inventory entries and every page's footnotes.
 
 ## Task 2 — full run
 
-Status: not started / in progress / done (update as it proceeds).
-Run in foreground chunks (`--time-budget`, `--only-host`/`--skip-host`)
-because of the per-host pacing (doi.org alone is ~930 tokens at ~3-5 s
-each; patents.google.com 121 tokens at 20 s each). Cache resumes
-between chunks. Final report saved to
-`docs/plans/link-check-2026-09.md`.
+Status: **done.** Ran in foreground chunks (`--time-budget`,
+`--only-host`/`--skip-host`) because of the per-host pacing (doi.org
+~930 tokens at ~3-5 s each; patents.google.com 121 tokens at 20 s
+each); cache resumed between chunks. While triaging the first pass,
+found and fixed three real bugs in the checker itself (each its own
+commit, each with a new `--selftest` case):
+
+1. A DOI's own `doi.org` -> publisher redirect hop was being read as
+   "please update this citation" (`redirected-permanently`) — 336
+   DOIs affected. The DOI is the permanent citation regardless of the
+   resolver's current HTTP code; only the final outcome matters now.
+2. The bare-URL fallback regex (and the bare "DOI 10.xxx" regex)
+   excluded `)`, truncating every pre-2000 Elsevier DOI
+   (`10.1016/0022-0248(82)90456-2` -> `...82`) and Wikipedia title with
+   a disambiguator (`Wafer_(electronics)`) at the first `(` — ~55 bogus
+   404s. House style always wraps a citation URL in `<...>`; that
+   delimiter is now tried first and takes the whole interior verbatim.
+3. `HEAD` was trusted alone; media.asml.com's CDN answers `HEAD` with a
+   bare 404 for a PDF that `GET` serves fine — now any `HEAD` failure
+   (not just a fixed status list) gets a `GET` second opinion.
+
+Also: openlibrary.org's HEAD *and* occasionally GET 303-redirect a
+perfectly good book URL to a `/verify_human` challenge page while
+still reporting the ordinary final 200 — added challenge-URL detection
+that overrides the numeric status. Final report: `docs/plans/
+link-check-2026-09.md` (has its own "Investigation and remediation
+notes" section — read that before re-doing any of this triage).
 
 ## Task 3 — fixes
 
-(filled in as sources are repaired)
+Status: **done.** See `docs/plans/link-check-2026-09.md`'s notes
+section for the full per-source detail. Summary:
+
+* 10 permanent redirects fixed (citation + every repeating footnote
+  updated, new URL verified live first): GOV-04, BYU-OXCALC,
+  OPDKS-MAKEFILE/README/MAGIC-TECH, JOB-05/SKW-08, ANN-11, SKW-12,
+  CYP-23, ANN-02, GCE-KLA8100 (restructured to new-URL-primary with a
+  "formerly ..." note, matching a pre-existing model on
+  cd-sem-overlay-metrology.md).
+* `BLOCKED_HOSTS` extended (glassdoor.com, researchgate.net, astm.org,
+  cdc.gov, appliedmaterials.com, forbes.com, businesswire.com,
+  startribune.com) after confirming with both this tool's User-Agent
+  and a browser one that these hosts block automated fetches
+  generically, not just this project — no citations needed changing,
+  51 tokens moved from dead/ok to the correctly-labelled
+  blocked-to-scripts.
+* Rule 11 applied to 2 sources with no retrievable copy anywhere:
+  MERCKEL-1977 (evidence marked weak; no verbatim quote to remove) and
+  ROSENFIELD-1986 (had a verbatim quote — removed and replaced with a
+  weak paraphrase).
+* THUNG-2016: not actually dead — the citation's own PDF link works;
+  surfaced it identically on all 11 repeating footnotes.
+* 2 sources (AMAT-RTP / edn.com, TEL-PROBER / telcertifiedused.com)
+  independently confirmed live and NOT edited — the first is
+  unreachable only from this checking sandbox (Akamai/IPv6 routing),
+  the second is a flaky load-balancer backend. Both still show "dead"
+  in the saved report's counts, which is an honest record of what this
+  run's network could reach, not an outstanding fix.
+
+Finishing checklist run in the foreground and clean: all
+`tools/check_*.py`, `gen_papers/patents/filings.py --check`,
+`uv run sphinx-build -W -q -b html docs tmp/build-link-check`.
