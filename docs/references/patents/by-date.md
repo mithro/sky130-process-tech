@@ -92,12 +92,14 @@ first, and then by status.
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
 * {ref}`US 5,836,506 A <patent-gp23689967>` — Sputter target/backing plate assembly and method of making same (1995-04-21)
 * {ref}`US 5,735,961 A <patent-gp26456233>` — Semiconductor fabricating apparatus, method for controlling oxygen concentration within load-lock chamber and method for generating native oxide (1995-05-25)
+* {ref}`US 5,648,669 A <patent-gp23795580>` — High speed flash memory cell structure and method (1995-05-26)
 * {ref}`US 5,710,067 A <patent-gp23905130>` — Silicon oxime film (1995-06-07)
 * {ref}`US 5,872,390 A <patent-gp24070664>` — Fuse window with controlled fuse oxide thickness (1995-08-28)
 * {ref}`US 5,709,543 A <patent-gp17268321>` — Vertical heat treatment apparatus (1995-09-06)
 * {ref}`US 5,820,367 A <patent-gp17432179>` — Boat for heat treatment (1995-09-20)
 * {ref}`US 5,708,559 A <patent-gp24193081>` — Precision analog metal-metal capacitor (1995-10-27)
 * {ref}`US 5,738,574 A <patent-gp24192580>` — Continuous processing system for chemical mechanical polishing (1995-10-27)
+* {ref}`US 5,650,666 A <patent-gp24244903>` — Method and apparatus for preventing cracks in semiconductor die (1995-11-22)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
 * {ref}`US 5,902,103 A <patent-gp18429343>` — Vertical furnace of a semiconductor manufacturing apparatus and a boat cover thereof (1995-12-29)
@@ -105,6 +107,7 @@ first, and then by status.
 * {ref}`US 6,579,777 B1 <patent-gp24349726>` — Method of forming local oxidation with sloped silicon recess (1996-01-16)
 * {ref}`US 6,200,412 B1 <patent-gp24412185>` — Chemical vapor deposition system including dedicated cleaning gas injection (1996-02-16)
 * {ref}`US 5,595,919 A <patent-gp24414167>` — Method of making self-aligned halo process for reducing junction capacitance (1996-02-20)
+* {ref}`US 5,635,765 A <patent-gp24428538>` — Multi-layer gate structure (1996-02-26)
 * {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
 * {ref}`US 5,814,433 A <patent-gp26689885>` — Use of mixtures of ethyl lactate and N-methyl pyrollidone as an edge bead remover for photoresists (1996-05-17)
 * {ref}`US 5,770,521 A <patent-gp24638394>` — Anti-shear method and system for semiconductor wafer removal (1996-05-30)
@@ -203,6 +206,7 @@ first, and then by status.
 * {ref}`US 6,430,028 B1 <patent-gp24897586>` — Method for fabrication of an MIM capacitor and related structure (2000-11-22)
 * {ref}`US 6,518,136 B2 <patent-gp24961682>` — Sacrificial polysilicon sidewall process and rapid thermal spike annealing for advance CMOS fabrication (2000-12-14)
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
+* {ref}`US 6,461,904 B1 <patent-gp25047874>` — unknown
 * {ref}`US 6,593,208 B1 <patent-gp25130177>` — Method of uniform polish in shallow trench isolation process (2001-02-14)
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,630,385 B1 <patent-gp28675849>` — MOSFET with differential halo implant and annealing strategy (2001-04-27)
@@ -308,6 +312,7 @@ first, and then by status.
 * {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
 * {ref}`US 9,831,113 B2 <patent-gp39594663>` — unknown
+* {ref}`US 9,196,495 B2 <patent-gp39675401>` — unknown
 * {ref}`US 7,901,976 B1 <patent-gp43639265>` — unknown
 * {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
@@ -354,6 +359,8 @@ first, and then by status.
 * {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 2013/0178030 A1 <patent-gp48744177>` — unknown
+* {ref}`US 9,564,331 B2 <patent-gp49777200>` — unknown
+* {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
 * {ref}`US 9,076,523 B2 <patent-gp50930700>` — Methods of manufacturing embedded bipolar switching resistive memory (2012-12-13)
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
 * {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
@@ -377,11 +384,13 @@ first, and then by status.
 * {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
 * {ref}`US 9,431,609 B2 <patent-gp55302792>` — in force
 * {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
+* {ref}`US 9,461,247 B2 <patent-gp40431642>` — unknown
 * {ref}`US 9,218,978 B1 <patent-gp54848024>` — in force
 * {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
 * {ref}`US 9,624,094 B1 <patent-gp58772128>` — unknown
 * {ref}`US 9,824,895 B1 <patent-gp60303236>` — in force
 * {ref}`US 10,062,748 B1 <patent-gp63208306>` — in force
+* {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
@@ -482,12 +491,14 @@ first, and then by status.
 * {ref}`US 5,893,796 A <patent-gp24770421>` — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus (1995-03-28)
 * {ref}`US 5,836,506 A <patent-gp23689967>` — Sputter target/backing plate assembly and method of making same (1995-04-21)
 * {ref}`US 5,735,961 A <patent-gp26456233>` — Semiconductor fabricating apparatus, method for controlling oxygen concentration within load-lock chamber and method for generating native oxide (1995-05-25)
+* {ref}`US 5,648,669 A <patent-gp23795580>` — High speed flash memory cell structure and method (1995-05-26)
 * {ref}`US 5,710,067 A <patent-gp23905130>` — Silicon oxime film (1995-06-07)
 * {ref}`US 5,872,390 A <patent-gp24070664>` — Fuse window with controlled fuse oxide thickness (1995-08-28)
 * {ref}`US 5,709,543 A <patent-gp17268321>` — Vertical heat treatment apparatus (1995-09-06)
 * {ref}`US 5,820,367 A <patent-gp17432179>` — Boat for heat treatment (1995-09-20)
 * {ref}`US 5,708,559 A <patent-gp24193081>` — Precision analog metal-metal capacitor (1995-10-27)
 * {ref}`US 5,738,574 A <patent-gp24192580>` — Continuous processing system for chemical mechanical polishing (1995-10-27)
+* {ref}`US 5,650,666 A <patent-gp24244903>` — Method and apparatus for preventing cracks in semiconductor die (1995-11-22)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
 * {ref}`US 5,902,103 A <patent-gp18429343>` — Vertical furnace of a semiconductor manufacturing apparatus and a boat cover thereof (1995-12-29)
@@ -495,6 +506,7 @@ first, and then by status.
 * {ref}`US 6,579,777 B1 <patent-gp24349726>` — Method of forming local oxidation with sloped silicon recess (1996-01-16)
 * {ref}`US 6,200,412 B1 <patent-gp24412185>` — Chemical vapor deposition system including dedicated cleaning gas injection (1996-02-16)
 * {ref}`US 5,595,919 A <patent-gp24414167>` — Method of making self-aligned halo process for reducing junction capacitance (1996-02-20)
+* {ref}`US 5,635,765 A <patent-gp24428538>` — Multi-layer gate structure (1996-02-26)
 * {ref}`US 5,838,605 A <patent-gp24479530>` — Iridium oxide local interconnect (1996-03-20)
 * {ref}`US 5,814,433 A <patent-gp26689885>` — Use of mixtures of ethyl lactate and N-methyl pyrollidone as an edge bead remover for photoresists (1996-05-17)
 * {ref}`US 5,770,521 A <patent-gp24638394>` — Anti-shear method and system for semiconductor wafer removal (1996-05-30)
@@ -689,6 +701,7 @@ first, and then by status.
 * {ref}`US 8,030,172 B1 <patent-gp44676718>` — unknown
 * {ref}`US 6,756,315 B1 <patent-gp32508386>` — unknown
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
+* {ref}`US 6,461,904 B1 <patent-gp25047874>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
@@ -746,6 +759,7 @@ first, and then by status.
 * {ref}`US 9,728,414 B2 <patent-gp39527860>` — unknown
 * {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
 * {ref}`US 9,831,113 B2 <patent-gp39594663>` — unknown
+* {ref}`US 9,196,495 B2 <patent-gp39675401>` — unknown
 * {ref}`US 7,901,976 B1 <patent-gp43639265>` — unknown
 * {ref}`US 2013/0178031 A1 <patent-gp48744178>` — unknown
 * {ref}`US 2013/0306975 A1 <patent-gp49580585>` — unknown
@@ -765,6 +779,8 @@ first, and then by status.
 * {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
 * {ref}`US 2013/0178030 A1 <patent-gp48744177>` — unknown
+* {ref}`US 9,564,331 B2 <patent-gp49777200>` — unknown
+* {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
 * {ref}`US 8,816,438 B2 <patent-gp50929927>` — unknown
 * {ref}`US 9,209,197 B2 <patent-gp50929922>` — unknown
 * {ref}`US 2017/0221768 A1 <patent-gp51222001>` — unknown
@@ -777,8 +793,10 @@ first, and then by status.
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 * {ref}`US 9,252,026 B2 <patent-gp54069643>` — unknown
 * {ref}`US 9,496,275 B2 <patent-gp36692048>` — unknown
+* {ref}`US 9,461,247 B2 <patent-gp40431642>` — unknown
 * {ref}`US 10,622,370 B1 <patent-gp50002947>` — unknown
 * {ref}`US 9,624,094 B1 <patent-gp58772128>` — unknown
+* {ref}`US 9,853,039 B1 <patent-gp60788514>` — unknown
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
 * {ref}`US 11,641,745 B2 <patent-gp65897319>` — unknown
 * {ref}`US 10,833,009 B2 <patent-gp41266159>` — unknown
