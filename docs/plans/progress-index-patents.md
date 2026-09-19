@@ -722,14 +722,17 @@ is nothing else to find under any spelling.
 
 **Totals.** 494 Cypress + 16 Longitude + 13 Infineon Technologies LLC +
 63 Ramtron + 1 SkyWater = 587 CPC-restricted hits (a family can count
-under more than one assignee query), 559 distinct DOCDB families.
-93 already present, 81 added, 385 out of scope, 0 explicitly left for
-later this round (every hit was triaged to a decision; see the
-discovery log for the full per-family table and the individually-
-reasoned exclusions). Of the 385: 12 were individually reasoned
+under more than one assignee query, giving 27 cross-query duplicates),
+559 distinct DOCDB families. **Corrected in round 6** (L5, the
+round-5-verification report found this paragraph's own numbers wrong:
+93/385/373 are the *per-query* sums, not the distinct-family counts):
+**79** already present, 81 added, **399** out of scope, 0 explicitly
+left for later this round (every hit was triaged to a decision; see
+the discovery log for the full per-family table and the individually-
+reasoned exclusions). Of the 399: 12 were individually reasoned
 (ferroelectric/FRAM, circuit, EDA-software, or a technology the
 lineage fab never ran -- see "Explicitly excluded" in the discovery
-log); the other 373 were triaged by a scripted title-keyword
+log); the other **387** were triaged by a scripted title-keyword
 classifier, not a full read of each patent, and default to out of
 scope when the title names no unambiguous in-scope phrase -- a spot
 check afterwards found real false negatives in this bucket (e.g.
@@ -738,6 +741,11 @@ GP24009558, is plainly a process patent the keyword list simply didn't
 cover). The discovery log's reason column for these says so honestly
 (a title-only heuristic default, not an individual finding that the
 patent is out of scope) rather than asserting a specific false reason;
+**round 6 has since re-read every one of these 387 rows from its own
+abstract and recorded a decision and reason for each (see "Round 6" in
+the discovery log): 189 were added, 195 confirmed out of scope, and 3
+were the same DOCDB family as one already decided elsewhere this
+round.**
 **a future round should read this 373-family bucket's titles again
 with a broader keyword list, or individually**, rather than treat it
 as settled.
@@ -884,3 +892,104 @@ actual pass/fail results.
   layer, an image-only scan, so its abstract could not be read); a
   future round with OCR or a working Google Patents fetch for it could
   revisit this call either way.
+
+## Round 6 (fixer response to the round-5 verification report, 2026-09-21)
+
+Full detail is in `docs/plans/patent-discovery-log.md`'s "Round 6"
+section; summary here for continuity.
+
+**H1 (the main work).** Every one of the 387 round-5 rows marked
+"out of scope (title/CPC)" was re-triaged from that family's own USPTO
+Patent Public Search full-text title and abstract (fetched this round,
+cached under `tmp/patent-cache/ppubs/ft/`), not the round-5
+title-keyword classifier's default text. Result: **189 added, 195
+confirmed out of scope with a family-specific reason, 3 turned out to
+be the same DOCDB family as one already decided elsewhere this round**
+(cited rather than duplicated). One family's abstract could not be
+fetched (persistent HTTP 500 after retries) and was decided from title
+and CPC alone. Families before/after this round: 334 to 543 (209 net
+new: 189 from H1, 20 from point 4 below). Status split of the round's
+209 additions: mostly `unknown` (collapsed, priority on or after
+1999-05-29), a smaller number `expired: true` (pre-1999-05-29
+priority, term-arithmetic proof as in round 5).
+
+**Point 4 (Monterey Research + additional CPC classes).** 6 Monterey
+Research families found (assignee never queried in round 5, since
+Cypress sold it a tranche of patents in 2019); 5 added, 1 excluded (a
+non-planar TFT architecture). 14 families found in CPC classes outside
+the round-5 sweep's own list (B24B, B08B, H01J37, H05H, C25D and
+neighbours); 13 added, 1 excluded (a generic sensor unrelated to
+wafer fabrication). The Saifun/Cypress Semiconductor Ltd. NROM estate
+is excluded by the same Spansion decision as the rest of that estate,
+stated explicitly on the landing page and in the log rather than left
+for a reader to discover.
+
+**M1 (Spansion re-triage naming).** The 91 round-4 "left for later"
+Spansion rows now each name the specific existing index entry (family
+id and publication number) that already covers their technique,
+instead of an unfalsifiable generic claim. Two rows (process/UV-
+induced-charging damage protection) had no covering entry anywhere in
+the index; both are added this round via the fallback path as the
+coordinator's own named exception, targeting the `machine-plasma-
+etcher-silicon` page's "Damage and charging" section.
+
+**M2 (expiry-basis text generator bug).** Fixed the script bug (not by
+hand) that produced two classes of false sentence in round 5's
+additions: 35 of 62 collapsed families said "not yet past" for a bound
+date already in the past (decision was always right; only the
+sentence was wrong), and 20 expired families' basis text omitted the
+priority+21 candidate that actually governs their printed date (3 of
+the 20, where priority differs from filing, had mislabeled candidates
+entirely). Added a dynamic checker test (`check_patents.py`) comparing
+"not yet past"/"already past" in the basis text against today's date.
+
+**L1-L4.** L1: reworded the discovery log's "(second-source checked)"
+phrasing on the 81 round-5 additions to say what was actually checked
+(a record/PDF exists at that number). L2: fixed 5 of 6 wrong relevance
+targets (the 6th left as the report itself found it, defensible). L3:
+corrected two families' `dates.priority` to the earliest priority
+actually shown on their front page. L4: closed the N3-guard bypass by
+cross-checking `family.source` against the representative member's own
+`verified` line (confirmed by the same mutation the report used).
+
+**H2.** Rewrote the landing page's "Scope and completeness" section
+(`tools/gen_patents.py:scope_and_completeness()`) to state plainly how
+much of the sweep was triaged by keyword vs. read individually, what
+was added this round and why, and to stop claiming the round-5
+residue was empty. Counts are computed from the dataset where the data
+supports it (family counts, Monterey count, H1-added count via a
+`discovery_note` tag); the round-5 historical sweep numbers remain
+hardcoded prose, as in round 5's own text, but corrected (L5).
+
+**L5.** Fixed the "Totals" paragraph above (93/385/373 were per-query
+sums, not distinct-family counts; corrected to 79/399/387) and added a
+note on the discovery log's own per-query summary table making the
+same point. Every count on the landing page itself is generated from
+`data/patents.yaml` at build time.
+
+**Checks (foreground, before finishing).** `uv run tools/check_patents.py`
+(543 families, 0 problems); `uv run tools/check_inforce.py` (278
+families not certainly expired, 285 pages, 0 problems); all other
+`tools/check_*.py` except `check_links.py` (not run per the fixer
+brief); all four generators' `--check`; `uv run sphinx-build -W -q -b
+html docs tmp/build-patents-r3` -- see the round's final commit message
+for the actual pass/fail results.
+
+### Left for a future round
+
+* Point 4's own two structural limits (US-only sweep; reassignment
+  direction) are now stated on the landing page, not just noted here.
+* The design's open questions (DOCDB family-unit switch, assignee-name
+  normalisation for mergers) are unchanged.
+* Neither round's sweep looked beyond the six core assignees now
+  covered (Cypress, SkyWater, Longitude, Infineon Technologies LLC,
+  Ramtron, Monterey Research), nor beyond the CPC classes actually
+  queried (a full unrestricted `"cypress semiconductor".as.` sweep
+  the round-5 verification report ran turned up ~586 distinct families
+  in its first 999 hits against this index's 494 CPC-restricted ones --
+  a substantially larger corpus than either round has fully triaged).
+* Every PPUBS-sourced family (round 3-6 alike) still records only the
+  single US publication its own query returned; no attempt has been
+  made to find other-jurisdiction or other-US-member siblings, though
+  round 6 did find and merge two same-family cross-query duplicates
+  (GP50002947, GP60807919) as a byproduct of its own re-triage.
