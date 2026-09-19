@@ -16,7 +16,7 @@ count of every member publication in that jurisdiction.
 
 ## United States (US)
 
-645 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
+655 rows: every member of a family shown as expired, plus one representative row for each collapsed family.
 
 | Number | Family | Status |
 |---|---|---|
@@ -311,6 +311,7 @@ count of every member publication in that jurisdiction.
 | US 6,425,812 B1 | {ref}`US 6,425,812 B1 <patent-gp46276600>` | Expired - Fee Related |
 | US 6,430,028 B1 | {ref}`US 6,430,028 B1 <patent-gp24897586>` | Expired - Lifetime |
 | US 6,434,327 B1 | {ref}`US 5,155,336 A <patent-gp27042189>` | Expired - Fee Related |
+| US 6,436,799 B1 | {ref}`US 6,436,799 B1 <patent-gp24688938>` | unknown |
 | US 6,436,848 B1 | {ref}`US 6,436,848 B1 <patent-gp23078311>` | not shown |
 | US 6,439,989 B1 | {ref}`US 5,578,362 A <patent-gp25461879>` | Expired - Fee Related |
 | US 6,444,105 B1 | {ref}`US 6,179,973 B1 <patent-gp26812562>` | Expired - Lifetime |
@@ -325,6 +326,7 @@ count of every member publication in that jurisdiction.
 | US 6,492,716 B1 | {ref}`US 6,492,716 B1 <patent-gp25297601>` | Expired - Lifetime |
 | US 2002/0187655 A1 | {ref}`US 6,914,016 B2 <patent-gp25317682>` | Granted |
 | US 2002/0195626 A1 | {ref}`US 6,759,288 B2 <patent-gp24577983>` | Granted |
+| US 6,509,270 B1 | {ref}`US 6,509,270 B1 <patent-gp25239028>` | unknown |
 | US 6,518,136 B2 | {ref}`US 6,518,136 B2 <patent-gp24961682>` | Expired - Fee Related |
 | US 6,518,591 B1 | {ref}`US 6,518,591 B1 <patent-gp22757080>` | unknown |
 | US 6,521,502 B1 | {ref}`US 6,521,502 B1 <patent-gp24538683>` | Expired - Lifetime |
@@ -354,6 +356,7 @@ count of every member publication in that jurisdiction.
 | US 2003/0176043 A1 | {ref}`US 7,439,141 B2 <patent-gp26708682>` | Granted |
 | US 6,630,385 B1 | {ref}`US 6,630,385 B1 <patent-gp28675849>` | Expired - Lifetime |
 | US 2003/0190867 A1 | {ref}`US 5,893,796 A <patent-gp24770421>` | Granted |
+| US 6,635,566 B1 | {ref}`US 6,635,566 B1 <patent-gp24376952>` | unknown |
 | US 6,635,965 B1 | {ref}`US 6,635,965 B1 <patent-gp46204269>` | Expired - Lifetime |
 | US 2003/0196586 A1 | {ref}`US 5,994,761 A <patent-gp25194044>` | Granted |
 | US 2003/0197227 A1 | {ref}`US 6,667,205 B2 <patent-gp29214361>` | Granted |
@@ -401,6 +404,7 @@ count of every member publication in that jurisdiction.
 | US 2004/0157418 A1 | {ref}`US 6,667,205 B2 <patent-gp29214361>` | Granted |
 | US 6,776,873 B1 | {ref}`US 6,776,873 B1 <patent-gp32848879>` | Expired - Lifetime |
 | US 6,777,777 B1 | {ref}`US 7,078,310 B1 <patent-gp32851038>` | Expired - Lifetime |
+| US 6,780,771 B1 | {ref}`US 6,780,771 B1 <patent-gp32869920>` | unknown |
 | US 6,784,552 B2 | {ref}`US 6,784,552 B2 <patent-gp24310003>` | Expired - Lifetime |
 | US 6,786,809 B1 | {ref}`US 6,786,809 B1 <patent-gp32928137>` | unknown |
 | US 6,786,998 B1 | {ref}`US 6,786,998 B1 <patent-gp32927824>` | not shown |
@@ -409,8 +413,10 @@ count of every member publication in that jurisdiction.
 | US 2004/0183199 A1 | {ref}`US 2004/0183199 A1 <patent-gp32991247>` | unknown |
 | US 2004/0198621 A1 | {ref}`US 5,334,332 A <patent-gp24443399>` | Granted |
 | US 6,803,297 B2 | {ref}`US 6,803,297 B2 <patent-gp31992738>` | Expired - Fee Related |
+| US 6,803,318 B1 | {ref}`US 6,803,318 B1 <patent-gp33098477>` | unknown |
 | US 6,803,321 B1 | {ref}`US 6,803,321 B1 <patent-gp33096598>` | unknown |
 | US 6,806,133 B2 | {ref}`US 6,806,133 B2 <patent-gp29417389>` | Expired - Fee Related |
+| US 6,808,944 B1 | {ref}`US 6,808,944 B1 <patent-gp33159967>` | unknown |
 | US 2004/0214448 A1 | {ref}`US 2004/0214448 A1 <patent-gp33298522>` | Abandoned |
 | US 2004/0218807 A1 | {ref}`US 5,699,447 A <patent-gp26322164>` | Granted |
 | US 2004/0219757 A1 | {ref}`US 6,717,193 B2 <patent-gp25521092>` | Granted |
@@ -427,11 +433,13 @@ count of every member publication in that jurisdiction.
 | US 6,841,008 B1 | {ref}`US 6,841,008 B1 <patent-gp33552841>` | unknown |
 | US 6,841,491 B1 | {ref}`US 6,841,491 B1 <patent-gp33550813>` | unknown |
 | US 6,844,235 B1 | {ref}`US 6,844,235 B1 <patent-gp33565467>` | unknown |
+| US 6,844,237 B1 | {ref}`US 6,844,237 B1 <patent-gp33565426>` | unknown |
 | US 6,844,262 B1 | {ref}`US 6,844,262 B1 <patent-gp33565470>` | unknown |
 | US 6,849,119 B2 | {ref}`US 5,994,761 A <patent-gp25194044>` | Expired - Lifetime |
 | US 6,849,492 B2 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Expired - Fee Related |
 | US 6,849,549 B1 | {ref}`US 6,849,549 B1 <patent-gp34080863>` | Expired - Lifetime |
 | US 2005/0026352 A1 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Granted |
+| US 6,852,649 B1 | {ref}`US 6,852,649 B1 <patent-gp34104919>` | unknown |
 | US 2005/0037698 A1 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Granted |
 | US 6,857,938 B1 | {ref}`US 6,857,938 B1 <patent-gp34134936>` | unknown |
 | US 6,857,946 B2 | {ref}`US 6,183,354 B1 <patent-gp24997773>` | Expired - Lifetime |
@@ -451,6 +459,7 @@ count of every member publication in that jurisdiction.
 | US 6,908,499 B2 | {ref}`US 2004/0069224 A1 <patent-gp32068901>` | Expired - Fee Related |
 | US 2005/0136662 A1 | {ref}`US 7,055,532 B2 <patent-gp34678118>` | Granted |
 | US 6,910,944 B2 | {ref}`US 5,893,796 A <patent-gp24770421>` | Expired - Fee Related |
+| US 6,911,395 B1 | {ref}`US 6,911,395 B1 <patent-gp34681120>` | unknown |
 | US 6,914,016 B2 | {ref}`US 6,914,016 B2 <patent-gp25317682>` | Expired - Fee Related |
 | US 2005/0174568 A1 | {ref}`US 6,201,601 B1 <patent-gp25464477>` | Granted |
 | US 2005/0181632 A1 | {ref}`US 6,914,016 B2 <patent-gp25317682>` | Granted |
@@ -503,6 +512,7 @@ count of every member publication in that jurisdiction.
 | US 2006/0292815 A1 | {ref}`US 7,375,002 B2 <patent-gp37568077>` | Granted |
 | US 2006/0292844 A1 | {ref}`US 7,429,538 B2 <patent-gp37568096>` | Granted |
 | US 2007/0021037 A1 | {ref}`US 5,893,796 A <patent-gp24770421>` | Granted |
+| US 7,172,914 B1 | {ref}`US 7,172,914 B1 <patent-gp37696594>` | unknown |
 | US 7,176,094 B2 | {ref}`US 2003/0170956 A1 <patent-gp27754013>` | Expired - Lifetime |
 | US 7,179,754 B2 | {ref}`US 7,514,373 B2 <patent-gp33457548>` | Expired - Lifetime |
 | US 7,189,607 B2 | {ref}`US 2011/0006372 A1 <patent-gp29999977>` | Expired - Fee Related |
@@ -1578,7 +1588,7 @@ Number of members recorded per family.
 
 | Members | Families |
 |---|---|
-| 1 | 270 |
+| 1 | 280 |
 | 2 | 32 |
 | 3 | 13 |
 | 4 | 13 |
