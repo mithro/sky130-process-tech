@@ -12,6 +12,48 @@ modules and their lineage, generated from one curated dataset,
 `data/patents.yaml`, and checked by `tools/check_patents.py`. The first
 phase (this branch) builds and checks the dataset; the pages come later.
 
+## Scope rule (recorded 2026-09-19, round-7 verification F1)
+
+In scope: wafer-process and device-structure technology of a
+0.35 µm–90 nm CMOS/SONOS flow of this lineage (Cypress Semiconductor,
+SkyWater Technology, Infineon Technologies LLC and the other lineage
+assignees). Out of scope: circuits, chip/system design, packaging,
+system/software content, and test methods without process content.
+
+**A device structure and its own fabrication are in scope even when the
+end product built from it (a camera, a memory module, an RFID tag, …)
+is not one the index otherwise tracks.** The test is what the family's
+own abstract claims, not what product category the title names: a well,
+junction, implant, gate, spacer, film or similar structure formed in
+or on the substrate, and the process steps that form it, are in scope;
+the circuit built around that structure to read, drive, calibrate,
+test or package it is not. This is why a CMOS image sensor's own
+photodiode/well/junction device structure is in scope (round-7
+verification F1 found this repository's own filing record CYP-08,
+Cypress's 2004 annual report, already cites a "working image sensor in
+Cypress's Fab 4 wafer fabrication plant in Bloomington, Minn.", and
+`GP48952138`, "Photodiode having a buried well region", was already
+indexed with a `same-lineage-assignee` relevance to `step-030`) while
+that same sensor's readout amplifier, auto-zero biasing circuit, or
+non-planar packaging frame is not. The same test governs a MEMS or
+SAW/acoustic-wave family found by the round-7 sweep (`GP27805698`,
+`GP34964287`): the abstract's own account of a device formed on a
+semiconductor substrate by process steps, or a fabrication method for
+an integrated structure, is in scope even though no public source ties
+this lineage's fab to MEMS or SAW production specifically — the
+relevance reason states plainly that the family is not evidence the
+technique is used in SKY130, per the standard `same-lineage-assignee`
+caveat, rather than excluding the family on an unstated or invented
+premise. A "no public source ties this lineage to technology X" ground
+is not, by itself, a reason to exclude a device-structure family the
+lineage assignee actually filed; it was used (before this correction)
+to invent a false premise for the image-sensor exclusion, contradicted
+by CYP-08 and by the index's own `GP48952138` precedent. Where a
+technology is excluded on that ground going forward (as MRAM, FinFET
+and 3-D NAND already are), the exclusion is a scope judgement made
+explicitly, checked against the repository's own cited sources first,
+not a default.
+
 ## Dataset: `data/patents.yaml`
 
 ### Unit of record: the family
