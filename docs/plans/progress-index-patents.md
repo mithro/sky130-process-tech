@@ -835,16 +835,40 @@ exclusion) rather than included on the strength of its title alone.
 completeness" text (`tools/gen_patents.py`) still to be updated to
 describe this round's sweep -- next commit.
 
+### Round 5 close-out
+
+GP93840812 (new Weebit ReRAM family) and the GP94259596 SkyWater
+grant-member addition are spliced into `data/patents.yaml` (commit
+`49c4dce`); the landing page's "Scope and completeness" paragraph is
+updated for round 5 in the same commit. Final foreground checks for
+this round: `uv run tools/check_patents.py` (334 families, 0
+problems), all four generators' `--check` (`gen_patents.py`,
+`gen_index_links.py`, `gen_filings.py`, `gen_papers.py`), every
+`tools/check_*.py`, and `uv run sphinx-build -W -q -b html docs
+tmp/build-patents-r3` -- see this round's final commit message for the
+actual pass/fail results.
+
 ### Left for a future round
 
-* GP93840812 (new Weebit) and the GP94259596 SkyWater grant-member
-  addition are recorded in this section's own text above; if not yet
-  spliced into `data/patents.yaml` when this file is read, they are
-  the very next commit.
 * Every PPUBS-sourced family (round 3-5 alike) still records only the
   single US publication its own query returned; no attempt has been
   made to find other-jurisdiction or other-US-member siblings.
 * The design's open questions (DOCDB family-unit switch, assignee-name
   normalisation for mergers) are unchanged.
-* The landing page's "Scope and completeness" paragraph (`tools/gen_patents.py`)
-  needs updating for round 5 before this branch is considered finished.
+* This round's sweep covered only the five core assignees the brief
+  named (Cypress, SkyWater, Longitude, Infineon Technologies LLC,
+  Ramtron); it did not look at any other assignee, nor beyond the
+  named CPC classes (e.g. packaging classes, other memory classes).
+* GP94259596's newly-added grant member, US12740332B2, has no Google
+  Patents record page yet (indexing lag on a very recent grant, 404 as
+  of 2026-09-20); a future round should re-fetch it once Google
+  Patents has indexed the grant, to replace its term-arithmetic expiry
+  with Google's own adjusted-expiration estimate and confirm its legal
+  status directly rather than inferring "Granted" from the application
+  record alone.
+* The ambiguous Weebit family (US12224007B2, "Method for determining a
+  manufacturing parameter of a resistive random access memory cell")
+  was excluded conservatively (its grant PDF has no extractable text
+  layer, an image-only scan, so its abstract could not be read); a
+  future round with OCR or a working Google Patents fetch for it could
+  revisit this call either way.
