@@ -1106,7 +1106,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`paper-edwards-2020a` — Tim Edwards, WOSET 2020 (free copy)
 
-**Related filings.** 72 filings relate to this page; see {ref}`filings-by-relationship` for the full, grouped list.
+**Related filings.** 74 filings relate to this page; see {ref}`filings-by-relationship` for the full, grouped list.
 <!-- index-links:end -->
 
 ## References
