@@ -181,6 +181,7 @@ fab (SKY130's energy and dose are not public):
 **Related patents.**
 
 * {ref}`US 5,372,957 A <patent-gp22246938>` — Multiple tilted angle ion implantation MOSFET method (1993)
+* {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997)
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001)
 <!-- index-links:end -->
 

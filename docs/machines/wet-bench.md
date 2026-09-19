@@ -318,6 +318,7 @@ oxide.[^pat-04]
 **Related patents.**
 
 * {ref}`US 5,334,332 A <patent-gp24443399>` — Cleaning compositions for removing etching residue and method of using (1990)
+* {ref}`US 6,273,098 B1 <patent-gp25524224>` — Extension of the useful life of a chemical bath used to process a substrate (1997)
 * {ref}`US 7,305,999 B2 <patent-gp24449421>` — Centrifugal spray processor and retrofit kit (2000)
 
 :::{dropdown} 3 families in force or status unknown

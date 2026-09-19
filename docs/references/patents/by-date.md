@@ -140,11 +140,14 @@ first, and then by status.
 * {ref}`US 6,121,161 A <patent-gp25360177>` — Reduction of mobile ion and metal contamination in HDP-CVD chambers using chamber seasoning film depositions (1997-06-11)
 * {ref}`US 6,555,484 B1 <patent-gp25372701>` — Method for controlling the oxidation of implanted silicon (1997-06-19)
 * {ref}`US 6,090,697 A <patent-gp26729228>` — Etchstop for integrated circuits (1997-06-30)
+* {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997-09-03)
 * {ref}`US 6,159,646 A <patent-gp26633062>` — Rework method utilizing thinner for wafers in manufacturing of semiconductor devices (1997-09-04)
 * {ref}`US 6,201,601 B1 <patent-gp25464477>` — Sample inspection system (1997-09-19)
 * {ref}`US 6,165,375 A <patent-gp25467538>` — Plasma etching method (1997-09-23)
 * {ref}`US 6,033,991 A <patent-gp25473825>` — Isolation scheme based on recessed locos using a sloped Si etch and dry field oxidation (1997-09-29)
 * {ref}`US 6,140,228 A <patent-gp25516451>` — Low temperature metallization process (1997-11-13)
+* {ref}`US 6,273,098 B1 <patent-gp25524224>` — Extension of the useful life of a chemical bath used to process a substrate (1997-11-24)
+* {ref}`US 5,976,900 A <patent-gp25532345>` — Method of reducing impurity contamination in semiconductor process chambers (1997-12-08)
 * {ref}`US 5,800,616 A <patent-gp25536403>` — Vertical LPCVD furnace with reversible manifold collar and method of retrofitting same (1997-12-15)
 * {ref}`US 6,906,421 B1 <patent-gp34632364>` — Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same (1998-01-14)
 * {ref}`US 6,403,488 B1 <patent-gp26761865>` — Selective SAC etch process (1998-03-19)
@@ -155,6 +158,7 @@ first, and then by status.
 * {ref}`US 6,013,581 A <patent-gp21630827>` — Method for preventing poisoned vias and trenches (1998-07-28)
 * {ref}`US 6,179,609 B1 <patent-gp26323689>` — Compact external torch assembly for semiconductor processing (1998-08-05)
 * {ref}`US 6,232,231 B1 <patent-gp22505307>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect (1998-08-31)
+* {ref}`US 6,638,856 B1 <patent-gp29249879>` — Method of depositing metal onto a substrate (1998-09-11)
 * {ref}`US 6,319,553 B1 <patent-gp22616474>` — Isolation of incompatible processes in a multi-station processing chamber (1998-10-08)
 * {ref}`US 6,232,166 B1 <patent-gp22689334>` — CMOS processing employing zero degree halo implant for P-channel transistor (1998-11-06)
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
@@ -203,6 +207,7 @@ first, and then by status.
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,630,385 B1 <patent-gp28675849>` — MOSFET with differential halo implant and annealing strategy (2001-04-27)
 * {ref}`US 6,492,716 B1 <patent-gp25297601>` — Seal ring structure for IC containing integrated digital/RF/analog circuits and functions (2001-04-30)
+* {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
@@ -242,6 +247,7 @@ first, and then by status.
 * {ref}`US 6,897,131 B2 <patent-gp32659145>` — Advances in spike anneal processes for ultra shallow junctions (2002-09-20)
 * {ref}`US 2004/0069224 A1 <patent-gp32068901>` — Cold trap for CVD furnace (2002-10-11)
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
+* {ref}`US 6,774,012 B1 <patent-gp32823630>` — unknown
 * {ref}`US 6,977,217 B1 <patent-gp35465546>` — Aluminum-filled via structure with barrier layer (2002-12-03)
 * {ref}`US 6,680,516 B1 <patent-gp30000311>` — unknown
 * {ref}`US 6,803,321 B1 <patent-gp33096598>` — unknown
@@ -257,6 +263,7 @@ first, and then by status.
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
 * {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
+* {ref}`US 6,833,622 B1 <patent-gp33510264>` — unknown
 * {ref}`US 6,960,781 B2 <patent-gp32990685>` — Shallow trench isolation process (2003-03-07)
 * {ref}`US 7,605,041 B2 <patent-gp33193196>` — Semiconductor device and its manufacture method (2003-04-10)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
@@ -276,6 +283,7 @@ first, and then by status.
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004-07-08)
 * {ref}`US 7,112,790 B1 <patent-gp37018887>` — unknown
 * {ref}`US 7,250,334 B2 <patent-gp35732850>` — Metal insulator metal (MIM) capacitor fabrication with sidewall spacers and aluminum cap (ALCAP) top electrode (2004-07-31)
+* {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
@@ -286,6 +294,7 @@ first, and then by status.
 * {ref}`US 7,429,538 B2 <patent-gp37568096>` — Manufacturing method for two-step post nitridation annealing of plasma nitrided gate dielectric (2005-06-27)
 * {ref}`US 7,375,002 B2 <patent-gp37568077>` — MIM capacitor in a semiconductor device and method therefor (2005-06-28)
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
+* {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
 * {ref}`US 7,394,075 B1 <patent-gp39561114>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)
@@ -298,6 +307,7 @@ first, and then by status.
 * {ref}`US 9,728,414 B2 <patent-gp39527860>` — unknown
 * {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
+* {ref}`US 9,831,113 B2 <patent-gp39594663>` — unknown
 * {ref}`US 7,901,976 B1 <patent-gp43639265>` — unknown
 * {ref}`US 10,699,901 B2 <patent-gp49580623>` — in force
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
@@ -519,11 +529,14 @@ first, and then by status.
 * {ref}`US 6,121,161 A <patent-gp25360177>` — Reduction of mobile ion and metal contamination in HDP-CVD chambers using chamber seasoning film depositions (1997-06-11)
 * {ref}`US 6,555,484 B1 <patent-gp25372701>` — Method for controlling the oxidation of implanted silicon (1997-06-19)
 * {ref}`US 6,090,697 A <patent-gp26729228>` — Etchstop for integrated circuits (1997-06-30)
+* {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997-09-03)
 * {ref}`US 6,159,646 A <patent-gp26633062>` — Rework method utilizing thinner for wafers in manufacturing of semiconductor devices (1997-09-04)
 * {ref}`US 6,201,601 B1 <patent-gp25464477>` — Sample inspection system (1997-09-19)
 * {ref}`US 6,165,375 A <patent-gp25467538>` — Plasma etching method (1997-09-23)
 * {ref}`US 6,033,991 A <patent-gp25473825>` — Isolation scheme based on recessed locos using a sloped Si etch and dry field oxidation (1997-09-29)
 * {ref}`US 6,140,228 A <patent-gp25516451>` — Low temperature metallization process (1997-11-13)
+* {ref}`US 6,273,098 B1 <patent-gp25524224>` — Extension of the useful life of a chemical bath used to process a substrate (1997-11-24)
+* {ref}`US 5,976,900 A <patent-gp25532345>` — Method of reducing impurity contamination in semiconductor process chambers (1997-12-08)
 * {ref}`US 5,800,616 A <patent-gp25536403>` — Vertical LPCVD furnace with reversible manifold collar and method of retrofitting same (1997-12-15)
 * {ref}`US 6,906,421 B1 <patent-gp34632364>` — Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same (1998-01-14)
 * {ref}`US 6,403,488 B1 <patent-gp26761865>` — Selective SAC etch process (1998-03-19)
@@ -534,6 +547,7 @@ first, and then by status.
 * {ref}`US 6,013,581 A <patent-gp21630827>` — Method for preventing poisoned vias and trenches (1998-07-28)
 * {ref}`US 6,179,609 B1 <patent-gp26323689>` — Compact external torch assembly for semiconductor processing (1998-08-05)
 * {ref}`US 6,232,231 B1 <patent-gp22505307>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect (1998-08-31)
+* {ref}`US 6,638,856 B1 <patent-gp29249879>` — Method of depositing metal onto a substrate (1998-09-11)
 * {ref}`US 6,319,553 B1 <patent-gp22616474>` — Isolation of incompatible processes in a multi-station processing chamber (1998-10-08)
 * {ref}`US 6,232,166 B1 <patent-gp22689334>` — CMOS processing employing zero degree halo implant for P-channel transistor (1998-11-06)
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
@@ -676,6 +690,7 @@ first, and then by status.
 * {ref}`US 6,756,315 B1 <patent-gp32508386>` — unknown
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
+* {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
 * {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
@@ -694,6 +709,7 @@ first, and then by status.
 * {ref}`US 7,256,083 B1 <patent-gp38337005>` — unknown
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
+* {ref}`US 6,774,012 B1 <patent-gp32823630>` — unknown
 * {ref}`US 6,680,516 B1 <patent-gp30000311>` — unknown
 * {ref}`US 6,803,321 B1 <patent-gp33096598>` — unknown
 * {ref}`US 6,943,126 B1 <patent-gp34910591>` — unknown
@@ -706,17 +722,20 @@ first, and then by status.
 * {ref}`US 6,794,269 B1 <patent-gp32987143>` — unknown
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
 * {ref}`US 7,118,967 B1 <patent-gp37072391>` — unknown
+* {ref}`US 6,833,622 B1 <patent-gp33510264>` — unknown
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
 * {ref}`US 7,323,377 B1 <patent-gp38973874>` — unknown
 * {ref}`US 7,320,944 B1 <patent-gp38950897>` — unknown
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
 * {ref}`US 7,112,790 B1 <patent-gp37018887>` — unknown
+* {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
 * {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 * {ref}`US 7,592,661 B1 <patent-gp41076959>` — unknown
+* {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
 * {ref}`US 7,394,075 B1 <patent-gp39561114>` — unknown
 * {ref}`US 7,768,068 B1 <patent-gp42358802>` — unknown
@@ -726,6 +745,7 @@ first, and then by status.
 * {ref}`US 7,989,328 B2 <patent-gp39526963>` — unknown
 * {ref}`US 9,728,414 B2 <patent-gp39527860>` — unknown
 * {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
+* {ref}`US 9,831,113 B2 <patent-gp39594663>` — unknown
 * {ref}`US 7,901,976 B1 <patent-gp43639265>` — unknown
 * {ref}`US 2013/0178031 A1 <patent-gp48744178>` — unknown
 * {ref}`US 2013/0306975 A1 <patent-gp49580585>` — unknown

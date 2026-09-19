@@ -37,10 +37,13 @@ Steps 1–13.
 * {ref}`US 6,774,452 B1 <patent-gp32823649>` — unknown
 * {ref}`US 6,773,975 B1 <patent-gp32823653>` — unknown
 * {ref}`US 6,794,269 B1 <patent-gp32987143>` — unknown
+* {ref}`US 6,833,622 B1 <patent-gp33510264>` — unknown
 * {ref}`US 6,960,781 B2 <patent-gp32990685>` — Shallow trench isolation process (2003-03-07)
+* {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 7,425,489 B1 <patent-gp39743211>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)
 * {ref}`US 7,981,800 B1 <patent-gp44261896>` — unknown
+* {ref}`US 9,831,113 B2 <patent-gp39594663>` — unknown
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,437,470 B2 <patent-gp52776290>` — unknown
@@ -208,6 +211,7 @@ Steps 64–75.
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
 * {ref}`US 5,793,090 A <patent-gp25122771>` — Integrated circuit having multiple LDD and/or source/drain implant steps to enhance circuit performance (1997-01-10)
+* {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997-09-03)
 * {ref}`US 6,232,166 B1 <patent-gp22689334>` — CMOS processing employing zero degree halo implant for P-channel transistor (1998-11-06)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
 * {ref}`US 6,521,502 B1 <patent-gp24538683>` — Solid phase epitaxy activation process for source/drain junction extensions and halo regions (2000-08-07)
@@ -505,6 +509,7 @@ Steps 164–171.
 * {ref}`US 6,425,812 B1 <patent-gp46276600>` — Polishing head for chemical mechanical polishing using linear planarization technology (1997-04-08)
 * {ref}`US 6,121,161 A <patent-gp25360177>` — Reduction of mobile ion and metal contamination in HDP-CVD chambers using chamber seasoning film depositions (1997-06-11)
 * {ref}`US 6,201,601 B1 <patent-gp25464477>` — Sample inspection system (1997-09-19)
+* {ref}`US 6,273,098 B1 <patent-gp25524224>` — Extension of the useful life of a chemical bath used to process a substrate (1997-11-24)
 * {ref}`US 5,800,616 A <patent-gp25536403>` — Vertical LPCVD furnace with reversible manifold collar and method of retrofitting same (1997-12-15)
 * {ref}`US 6,030,881 A <patent-gp22109576>` — High throughput chemical vapor deposition process capable of filling high aspect ratio structures (1998-05-05)
 * {ref}`US 6,179,609 B1 <patent-gp26323689>` — Compact external torch assembly for semiconductor processing (1998-08-05)
@@ -631,8 +636,10 @@ that are not specific to one step.
 * {ref}`US 6,555,484 B1 <patent-gp25372701>` — Method for controlling the oxidation of implanted silicon (1997-06-19)
 * {ref}`US 6,165,375 A <patent-gp25467538>` — Plasma etching method (1997-09-23)
 * {ref}`US 6,033,991 A <patent-gp25473825>` — Isolation scheme based on recessed locos using a sloped Si etch and dry field oxidation (1997-09-29)
+* {ref}`US 5,976,900 A <patent-gp25532345>` — Method of reducing impurity contamination in semiconductor process chambers (1997-12-08)
 * {ref}`US 6,403,488 B1 <patent-gp26761865>` — Selective SAC etch process (1998-03-19)
 * {ref}`US 6,232,231 B1 <patent-gp22505307>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect (1998-08-31)
+* {ref}`US 6,638,856 B1 <patent-gp29249879>` — Method of depositing metal onto a substrate (1998-09-11)
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
 * {ref}`US 6,372,150 B1 <patent-gp22801618>` — High vapor plasma strip methods and devices to enhance the reduction of organic residues over metal surfaces (1998-12-18)
 * {ref}`US 6,455,402 B2 <patent-gp19572018>` — Method of forming retrograde doping file in twin well CMOS device (1999-01-22)
@@ -649,6 +656,7 @@ that are not specific to one step.
 * {ref}`US 6,379,849 B1 <patent-gp24795638>` — Method for forming binary intensity masks (2000-10-26)
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
+* {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
 * {ref}`US 6,562,675 B1 <patent-gp25461872>` — unknown
@@ -666,6 +674,7 @@ that are not specific to one step.
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
 * {ref}`US 2011/0006372 A1 <patent-gp29999977>` — Formation of standard voltage threshold and low voltage threshold mosfet devices (2002-07-08)
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
+* {ref}`US 6,774,012 B1 <patent-gp32823630>` — unknown
 * {ref}`US 6,680,516 B1 <patent-gp30000311>` — unknown
 * {ref}`US 7,189,652 B1 <patent-gp37833374>` — unknown
 * {ref}`US 7,229,929 B2 <patent-gp32468458>` — unknown
@@ -679,6 +688,7 @@ that are not specific to one step.
 * {ref}`US 7,915,175 B1 <patent-gp43769849>` — unknown
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
+* {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
 * {ref}`US 7,384,833 B2 <patent-gp38334583>` — unknown
 * {ref}`US 7,985,656 B1 <patent-gp38711248>` — Shallow trench isolation (STI) with trench liner of increased thickness (2006-05-18)
 * {ref}`US 9,171,936 B2 <patent-gp39272978>` — unknown

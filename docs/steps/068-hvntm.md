@@ -185,6 +185,7 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 **Related patents.**
 
 * {ref}`US 5,793,090 A <patent-gp25122771>` — Integrated circuit having multiple LDD and/or source/drain implant steps to enhance circuit performance (1997)
+* {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997)
 * {ref}`US 6,660,603 B2 <patent-gp22880690>` — Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions (2000)
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001)
 <!-- index-links:end -->
