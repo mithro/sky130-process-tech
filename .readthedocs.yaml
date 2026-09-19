@@ -8,8 +8,22 @@ build:
     pre_install:
       - pip install uv
     install:
-      - uv export --no-hashes --format requirements-txt > requirements.txt
+      - uv export --frozen --no-hashes --format requirements-txt > requirements.txt
       - pip install -r requirements.txt
+    pre_build:
+      # Offline consistency checks; a failure stops the build.
+      - python tools/check_steps.py
+      - python tools/check_refs.py
+      - python tools/check_machines.py
+      - python tools/check_materials.py
+      - python tools/check_masks.py
+      - python tools/check_papers.py
+      - python tools/check_patents.py
+      - python tools/check_filings.py
+      - python tools/gen_papers.py --check
+      - python tools/gen_patents.py --check
+      - python tools/gen_filings.py --check
+      - python tools/gen_index_links.py --check
 
 sphinx:
   configuration: docs/conf.py
