@@ -248,6 +248,51 @@ of a restricted family outside a `<details>` element or a flagged entry.
   the ranges sit in the note after the list — otherwise the visible text
   promises figures it no longer shows.
 
+## Round-1 review fixes (2026-09-19)
+
+The independent review (`tmp/verify-inforce-patents.md`, verdict "fix
+first": nothing lost, no number or title leak, all checks passing)
+required five changes; all are applied.
+
+1. **Two empty `{dropdown}` blocks** (`machines/starting-material.md`,
+   `steps/072-ldasti.md`) — the reading-list pass ran twice on those two
+   pages. Deleted, and `check_inforce.py` now reports any dropdown whose
+   body holds nothing but blank lines.
+2. **A verbatim fragment in visible text** on `042-onome.md` ("good
+   stack sidewall profile") — dropped.
+3. **A second fragment and both pre-clean chemistries** on
+   `043-gox100.md` ("GOX preclean"; "a non-HF clean, and a BOE …") —
+   reduced to a pointer.
+4. **Fourteen visible pointers that stated a patent's chemistry,
+   species, sequence or mechanism** now name only the kind of evidence.
+   Three of them keep their statement visible on an independent public
+   source instead: the module ordering on `overview/index.md`,
+   `041-onom.md` and `043-gox100.md` is taken from the step list
+   (`[^steps-sheet]`), the growth routes on `043-gox100.md` from
+   `{ref}`category-oxidation``, and the generic refractory-metal etch
+   chemistry on `138-capme.md` and `153-cap2me.md` from Nojiri
+   (`[^nojiri-2015]`, already cited on both pages).
+5. **The inventory** — each of the twelve restricted entries keeps its
+   bibliographic line, URL, "Used on …" lines, tier and status flag
+   open, with a neutral one-line description of the subject, and its
+   detailed annotation moved into a collapsed note directly under the
+   entry. `check_patents.py` still finds a member number in every
+   entry paragraph and `check_refs.py` still reads the key list.
+
+### The phrase list
+
+`check_inforce.py` now carries `PHRASES`: distinctive wording per family,
+taken from the quotations that were moved. A phrase is the patent's
+*content*, not a citation, so it is refused **everywhere** outside a
+collapsed block — inside a flagged footnote definition and inside the
+inventory entry included. That is the mechanism that narrows the
+inventory's exemption to the bibliographic line and the flag, and it is
+what a future writer will trip over if a quotation creeps back into open
+prose. **When you move a new quotation into a note, add a distinctive
+fragment of it to `PHRASES` under that family's representative number.**
+All 53 phrases are checked to match inside a note today, so the list
+cannot go quietly vacuous.
+
 ## Verification
 
 Run from the worktree, all exit 0:
