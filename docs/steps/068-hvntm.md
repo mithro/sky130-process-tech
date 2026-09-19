@@ -189,10 +189,11 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 * {ref}`US 6,660,603 B2 <patent-gp22880690>` — Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions (2000)
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001)
 
-:::{dropdown} 1 family in force or status unknown
+:::{dropdown} 2 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
+* {ref}`US 9,111,985 B1 <patent-gp53786102>` — unknown
 * {ref}`US 7,936,023 B1 <patent-gp43903297>` — unknown
 :::
 <!-- index-links:end -->

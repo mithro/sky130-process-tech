@@ -184,10 +184,11 @@ fab (SKY130's energy and dose are not public):
 * {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997)
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001)
 
-:::{dropdown} 1 family in force or status unknown
+:::{dropdown} 2 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
+* {ref}`US 9,111,985 B1 <patent-gp53786102>` — unknown
 * {ref}`US 7,936,023 B1 <patent-gp43903297>` — unknown
 :::
 <!-- index-links:end -->

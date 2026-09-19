@@ -149,18 +149,24 @@ Steps 35–42.
 * {ref}`US 8,860,122 B1 <patent-gp40752056>` — unknown
 * {ref}`US 7,799,670 B2 <patent-gp41115772>` — in force
 * {ref}`US 8,088,683 B2 <patent-gp41115802>` — in force
+* {ref}`US 8,063,434 B1 <patent-gp44936795>` — unknown
 * {ref}`US 8,163,660 B2 <patent-gp41681547>` — in force
+* {ref}`US 8,269,287 B2 <patent-gp40071582>` — unknown
 * {ref}`CN 106653761 A <patent-gp42945510>` — in force
 * {ref}`US 10,199,229 B2 <patent-gp46465479>` — in force
 * {ref}`US 8,071,453 B1 <patent-gp45034384>` — in force
 * {ref}`US 8,710,578 B2 <patent-gp48743335>` — in force
 * {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
+* {ref}`US 8,691,648 B1 <patent-gp50391780>` — unknown
+* {ref}`US 9,245,895 B2 <patent-gp39874038>` — unknown
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
 * {ref}`US 2013/0178030 A1 <patent-gp48744177>` — unknown
+* {ref}`US 8,592,891 B1 <patent-gp49596628>` — unknown
 * {ref}`US 9,564,331 B2 <patent-gp49777200>` — unknown
 * {ref}`US 9,196,624 B2 <patent-gp49913307>` — unknown
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
+* {ref}`US 9,190,531 B2 <patent-gp39590729>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,614,105 B2 <patent-gp51728382>` — unknown
 * {ref}`US 9,911,747 B2 <patent-gp51845734>` — in force
@@ -251,6 +257,7 @@ Steps 64–75.
 * {ref}`US 6,897,131 B2 <patent-gp32659145>` — Advances in spike anneal processes for ultra shallow junctions (2002-09-20)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003-04-22)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004-09-01)
+* {ref}`US 9,111,985 B1 <patent-gp53786102>` — unknown
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
 * {ref}`US 7,936,023 B1 <patent-gp43903297>` — unknown
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
