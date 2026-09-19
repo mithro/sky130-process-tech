@@ -197,11 +197,12 @@ An industry-generic drain-extension well lithography for a 200 mm,
 * {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004)
 * {ref}`US 2006/0006461 A1 <patent-gp35540402>` — Drain extended MOS transistors and methods for making the same (2004)
 
-:::{dropdown} 3 families in force or status unknown
+:::{dropdown} 4 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 8,513,753 B1 <patent-gp48952138>` — unknown
+* {ref}`US 2017/0221768 A1 <patent-gp51222001>` — unknown
 * {ref}`US 2019/0355583 A1 <patent-gp53939072>` — in force
 * {ref}`US 10,103,244 B2 <patent-gp53522052>` — unknown
 :::

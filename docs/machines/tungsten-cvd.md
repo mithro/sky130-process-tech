@@ -332,6 +332,13 @@ thicknesses are not public.
 * {ref}`US 6,319,553 B1 <patent-gp22616474>` — Isolation of incompatible processes in a multi-station processing chamber (1998)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001)
 
+:::{dropdown} 1 family in force or status unknown
+
+Status and expiry are estimates from public records and are not legal advice.
+
+* {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
+:::
+
 **Related papers.**
 
 * {ref}`paper-ivanov-2006a` — Ivan P. Ivanov et al., Journal of Vacuum Science & Technology B 2006 (affiliation inference)

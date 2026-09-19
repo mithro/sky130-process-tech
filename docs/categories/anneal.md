@@ -186,6 +186,7 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
 
 * {ref}`US 4,649,261 A <patent-gp27541944>` — Apparatus for heating semiconductor wafers in order to achieve annealing, silicide formation, reflow of glass passivation layers, etc. (1984)
 * {ref}`US 5,155,336 A <patent-gp27042189>` — Rapid thermal heating apparatus and method (1990)
+* {ref}`US 5,665,639 A <patent-gp22742690>` — Process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal (1994)
 <!-- index-links:end -->
 
 ## References

@@ -19,10 +19,10 @@ Espacenet web interface does not accept scripted retrieval); Google
 Patents' own record page, linked alongside it, is the working
 full-text link this index relies on for every member.
 
-Records were retrieved 2026-09-14 to 2026-09-19 (individual records carry their own
-`verified` date). The index holds 252 families (1543 members in total). Every family's representative
-record page was fetched; 1484 of the 1543 members have their own record page
-fetched (1460 from Google Patents, 24 from USPTO Patent Public
+Records were retrieved 2026-09-14 to 2026-09-20 (individual records carry their own
+`verified` date). The index holds 333 families (1624 members in total). Every family's representative
+record page was fetched; 1565 of the 1624 members have their own record page
+fetched (1460 from Google Patents, 105 from USPTO Patent Public
 Search).
 The remaining 59 are listed in the fetched Google Patents family table of
 their representative but were not fetched separately: a
@@ -35,7 +35,7 @@ publication date from the representative's own family table, says
 so in its *Verified* column, and shows no status. 15 members of these sit in 2 families already shown expired on other grounds; the remaining 44 members, in 6 families **not** shown expired, are each bounded
 conservatively (the family's earliest priority date + 21 years)
 rather than assumed ended, per the design's rule 3.
- Separately, 24 of the 252 families in this index
+ Separately, 105 of the 333 families in this index
 rest on USPTO Patent Public Search instead of Google Patents, which stayed unreachable while
 they were found (see "PPUBS fallback" in `docs/plans/patent-index-design.md`); each says so
 in its own *Legal status* and *Verified* lines, carries no legal status or adjusted-expiration
@@ -85,16 +85,16 @@ relation:
 
 | | Families | Members |
 |---|---|---|
-| Total | 252 | 1543 |
-| Shown as expired | 182 | 1094 |
+| Total | 333 | 1624 |
+| Shown as expired | 202 | 1114 |
 | Shown as in force | 47 | 419 |
-| Status unknown | 23 | 30 |
+| Status unknown | 84 | 91 |
 
 ## Scope and completeness
 
-This index began as every patent already cited on a docs page (169 families of the total entered this way and no other), then widened by following each seed's Google Patents family table and citation lists, by a handful of assignee+keyword searches for specific process modules, and by an `assignee="Weebit Nano"` search once ReRAM was brought into scope. It is **not** the result of an exhaustive, systematic sweep of every process module against every lineage assignee: an independent review of this dataset during its construction found at least a dozen absent Cypress/Infineon families from just three more searches, named six process modules never searched at all, and notes that the index holds 70 Cypress Semiconductor families and 5 Infineon Technologies families but only 1 SkyWater Technology family, though SkyWater is named in this index's own scope. Treat this index as a starting point for the SKY130/Cypress/SkyWater/Infineon patent landscape, not as proof that a family absent from it does not exist.
+This index began as every patent already cited on a docs page (169 families of the total entered this way and no other), then widened by following each seed's Google Patents family table and citation lists, by a handful of assignee+keyword searches for specific process modules, and by an `assignee="Weebit Nano"` search once ReRAM was brought into scope. It is **not** the result of an exhaustive, systematic sweep of every process module against every lineage assignee: an independent review of this dataset during its construction found at least a dozen absent Cypress/Infineon families from just three more searches, named six process modules never searched at all, and notes that the index holds 149 Cypress Semiconductor families and 7 Infineon Technologies families but only 1 SkyWater Technology family, though SkyWater is named in this index's own scope. Treat this index as a starting point for the SKY130/Cypress/SkyWater/Infineon patent landscape, not as proof that a family absent from it does not exist.
 
-Discovery methods recorded across the 252 families: 172 families `cited-in-docs`; 71 families `assignee-search`; 13 families `citing-seed`; 10 families `cited-by-seed`; 4 families `continuation-search`. A family can carry more than one method (reached more than one way), so these do not sum to the family count.
+Discovery methods recorded across the 333 families: 172 families `cited-in-docs`; 152 families `assignee-search`; 13 families `citing-seed`; 10 families `cited-by-seed`; 4 families `continuation-search`. A family can carry more than one method (reached more than one way), so these do not sum to the family count.
 
 A systematic assignee sweep of USPTO Patent Public Search on 2026-09-19 (Cypress Semiconductor, SkyWater Technology, Longitude Flash Memory Solutions, Infineon Technologies LLC, Spansion, Ramtron, Weebit Nano, restricted to process-module title keywords, run because Google Patents was unreachable that day) found 211 distinct families: 39 were already in this index and 24 were added (the ones whose family ID is a USPTO Patent Public Search identifier rather than a Google Patents one). That leaves **136 identified, in-scope families this index does not yet contain** -- mostly a large Spansion estate that needs the same per-family lineage reasoning as the two Spansion families already added, plus a number of Weebit Nano hits not yet triaged individually. The full sweep, every family's triage decision and the reason for each are recorded in the repository at `docs/plans/patent-discovery-log.md` (outside the built site).
 
