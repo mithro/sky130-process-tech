@@ -369,6 +369,7 @@ plans and defect limits are not public.
 * {ref}`US 4,601,576 A <patent-gp24235560>` — Light collector for optical contaminant and flaw detector (1983)
 * {ref}`US 5,699,447 A <patent-gp26322164>` — Two-phase optical inspection method and apparatus for defect detection (1990)
 * {ref}`US 5,864,394 A <patent-gp27502820>` — Surface inspection system (1994)
+* {ref}`US 6,015,718 A <patent-gp25430292>` — Indentification of the composition of particles in a process chamber (1997)
 * {ref}`US 6,201,601 B1 <patent-gp25464477>` — Sample inspection system (1997)
 
 **Related papers.**
