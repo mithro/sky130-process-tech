@@ -90,10 +90,19 @@ DISCOVERY = {"cited-in-docs", "assignee-search", "family-resolution",
 # cases (tmp/verify-index-patents-coverage.md section 1). A PPUBS-sourced
 # family uses this second literal source string instead, so a reader can
 # tell which provenance a family rests on; see
-# docs/plans/patent-index-design.md's "PPUBS fallback" section.
+# docs/plans/patent-index-design.md's "PPUBS fallback" section. Round 5
+# (2026-09-20) adds a third literal for the classification-sweep round: this
+# round found Google Patents reachable again, but the coordinating brief
+# explicitly directed sourcing new families via the PPUBS fallback path (data)
+# plus an EPO-linked-data or USPTO-grant-PDF second-source check, for
+# consistency with the round's own PPUBS-based classification-sweep discovery
+# method -- not because Google was blocked. Reusing the "(Google Patents
+# unreachable)" wording for these would misstate why Google was not used, so
+# they carry their own literal instead.
 FAMILY_SOURCES = {
     "Google Patents family ID",
     "USPTO Patent Public Search familyIdentifierCur (Google Patents unreachable)",
+    "USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5)",
 }
 ENDED = {"Expired - Lifetime", "Expired - Fee Related", "Abandoned",
          "Ceased", "Withdrawn", "Revoked", "Expired"}

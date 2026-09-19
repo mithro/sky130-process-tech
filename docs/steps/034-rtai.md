@@ -201,11 +201,13 @@ rather than a furnace anneal at this point.[^pat-03]
 * {ref}`US 5,963,801 A <patent-gp25087511>` — Method of forming retrograde well structures and punch-through barriers using low energy implants (1996)
 * {ref}`US 6,455,402 B2 <patent-gp19572018>` — Method of forming retrograde doping file in twin well CMOS device (1999)
 
-:::{dropdown} 1 family in force or status unknown
+:::{dropdown} 3 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
+* {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 8,093,128 B2 <patent-gp40072804>` — in force
+* {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 :::
 <!-- index-links:end -->
 

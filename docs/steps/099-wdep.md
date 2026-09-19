@@ -191,6 +191,13 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 **Related patents.**
 
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001)
+
+:::{dropdown} 1 family in force or status unknown
+
+Status and expiry are estimates from public records and are not legal advice.
+
+* {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
+:::
 <!-- index-links:end -->
 
 ## References

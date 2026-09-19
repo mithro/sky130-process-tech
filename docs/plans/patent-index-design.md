@@ -370,6 +370,25 @@ misrepresented as Google-verified:
   space is a checked, not merely assumed, equivalence — but a family
   built this way has never had its own Google Patents page fetched, and
   says so.
+* **Round 5 (2026-09-20) source variant.** Round 5 ran a systematic
+  CPC-classification sweep of PPUBS (see `docs/plans/patent-discovery-log.md`)
+  and found Google Patents reachable again that day (a plain fetch of a
+  record page returned 200 with real content). The coordinating brief for
+  that round nonetheless directed sourcing every newly-added family's data
+  via the PPUBS fallback path, with a second, independent source check per
+  family (an EPO linked-data page at `data.epo.org`, or a USPTO grant PDF at
+  `image-ppubs.uspto.gov`) rather than switching to Google — for consistency
+  with the round's own PPUBS-based discovery method, not because Google was
+  blocked. Labelling these families `"... (Google Patents unreachable)"`
+  would misstate the reason, so they carry a third literal instead,
+  `"USPTO Patent Public Search familyIdentifierCur (classification sweep,
+  round 5)"` (also accepted by `FAMILY_SOURCES`), and their `notes` name the
+  second-source check actually performed instead of a Google-unreachable
+  claim. Every other rule in this section (no legal status, term-arithmetic
+  expiry only, members limited to what PPUBS actually returned) applies to
+  these families unchanged; `tools/check_patents.py`'s PPUBS-only safety
+  checks (the N3 term-adjustment guard) key off "not the Google source
+  string", so they cover this literal automatically.
 * PPUBS gives no legal status, no adjusted-expiration date and no
   distinction between the assignee "as originally filed" and "as
   currently recorded" (design's `assignees.original`/`current`): a

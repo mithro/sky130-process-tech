@@ -250,8 +250,17 @@ commercial implanters is given by Current.[^current-2017]
 * {ref}`US 2,787,564 A <patent-gp23847630>` — Forming semiconductive devices by ionic bombardment (1954)
 * {ref}`US 5,393,679 A <patent-gp22834355>` — Use of double charge implant to improve retrograde process PMOS punch through voltage (1994)
 * {ref}`US 5,821,589 A <patent-gp25236318>` — Method for cmos latch-up improvement by mev billi (buried implanted layer for laternal isolation) plus buried layer implantation (1997)
+* {ref}`US 6,555,484 B1 <patent-gp25372701>` — Method for controlling the oxidation of implanted silicon (1997)
 * {ref}`US 6,667,205 B2 <patent-gp29214361>` — Method of forming retrograde n-well and p-well (2002)
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002)
+
+:::{dropdown} 2 families in force or status unknown
+
+Status and expiry are estimates from public records and are not legal advice.
+
+* {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
+* {ref}`US 9,735,289 B2 <patent-gp52808963>` — unknown
+:::
 <!-- index-links:end -->
 
 ## References

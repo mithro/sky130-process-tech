@@ -212,11 +212,13 @@ fab (SKY130's recipe is not public):
 
 * {ref}`US 5,155,336 A <patent-gp27042189>` — Rapid thermal heating apparatus and method (1990)
 
-:::{dropdown} 2 families in force or status unknown
+:::{dropdown} 4 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
+* {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
+* {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
 :::
 <!-- index-links:end -->
