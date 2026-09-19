@@ -8533,9 +8533,9 @@ families:
   expiry:
     date: '2015-02-23'
     estimated: true
-    basis: the only recorded member, US5665639A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2015-02-23, already past
+    basis: the only recorded member, US5665639A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2014-02-23), grant date + 17 years for its pre-1995-06-08 filing (2014-09-09), and the family's earliest priority date + 21 years (2015-02-23) —
+      running to 2015-02-23, already past
   expired: true
   members:
   - number: US5665639A
@@ -8552,12 +8552,6 @@ families:
       google_patents: https://patents.google.com/patent/US5665639A/en
     verified: 2026-09-20 USPTO Patent Public Search record (classification sweep, round 5)
   relevance:
-  - target: step-164
-    relation: same-lineage-assignee
-    reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
-      (SkyWater's Form S-1, SEC-01); the patent concerns process for manufacturing a semiconductor device
-      bump electrode using a rapid thermal anneal, and it is not evidence that the technique is used in
-      SKY130.
   - target: category-anneal
     relation: same-lineage-assignee
     reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
@@ -8582,6 +8576,11 @@ families:
     adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the
     spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces
     PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
+  - 'L3 correction (round 6): dates.priority originally recorded 1999-02-22 (the filing date), because
+    PPUBS''s search record gives a null priorityClaimsDate for this family. US6403488B1''s own printed
+    front page ("Text View") states "This application claims the benefit of U.S. Provisional Application
+    No. 60/079,319, filed Mar. 19, 1998" -- the true earliest priority, now recorded. expiry.date moved
+    from 2020-02-22 to 2019-03-19 accordingly (still well before today, still expired: true).'
   - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5665639
     (retrieved 2026-09-20, 938706 bytes) exists and is a granted-patent PDF for this number, cross-checking
     PPUBS''s own search-hit metadata against a second USPTO system.'
@@ -8859,9 +8858,9 @@ families:
   expiry:
     date: '2015-04-28'
     estimated: true
-    basis: the only recorded member, US5562801A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2015-04-28, already past
+    basis: the only recorded member, US5562801A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2014-12-07), grant date + 17 years for its pre-1995-06-08 filing (2013-10-08), and the family's earliest priority date + 21 years (2015-04-28) —
+      running to 2015-04-28, already past
   expired: true
   members:
   - number: US5562801A
@@ -8935,9 +8934,9 @@ families:
   expiry:
     date: '2015-04-28'
     estimated: true
-    basis: the only recorded member, US5468342A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2015-04-28, already past
+    basis: the only recorded member, US5468342A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2014-04-28), grant date + 17 years for its pre-1995-06-08 filing (2012-11-21), and the family's earliest priority date + 21 years (2015-04-28) —
+      running to 2015-04-28, already past
   expired: true
   members:
   - number: US5468342A
@@ -9668,7 +9667,7 @@ families:
   inventors:
   - Caldwell; Roger F. et al.
   dates:
-    priority: '1994-09-07'
+    priority: '1994-09-04'
     filing: '1996-03-27'
     grant: '1998-12-22'
   legal_status:
@@ -9679,9 +9678,9 @@ families:
   expiry:
     date: '2016-03-27'
     estimated: true
-    basis: the only recorded member, US5851887A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2016-03-27, already past
+    basis: the only recorded member, US5851887A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-03-27), or grant date + 17 years for a pre-1995-06-08 filing (2015-12-22, not applicable here), and the family's earliest priority date + 21 years (2015-09-04) —
+      running to 2016-03-27, already past
   expired: true
   members:
   - number: US5851887A
@@ -9698,7 +9697,7 @@ families:
       google_patents: https://patents.google.com/patent/US5851887A/en
     verified: 2026-09-20 USPTO Patent Public Search record (classification sweep, round 5)
   relevance:
-  - target: category-substrate
+  - target: category-etch
     relation: same-lineage-assignee
     reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
       (SkyWater's Form S-1, SEC-01); the patent concerns deep sub-micron polysilicon gap formation, and
@@ -9724,6 +9723,11 @@ families:
   - 'Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5851887
     (retrieved 2026-09-20, 522085 bytes) exists and is a granted-patent PDF for this number, cross-checking
     PPUBS''s own search-hit metadata against a second USPTO system.'
+  - 'L3 correction (round 6): dates.priority originally recorded 1994-09-07 (PPUBS''s priorityClaimsDate
+    was null, so this defaulted to a value derived from the search record). US5851887A''s own printed
+    front page ("Text View") states the parent application, Ser. No. 08/302,615, was filed Sep. 4, 1994
+    -- three days earlier -- now recorded as the priority date. expiry.date is unchanged (2016-03-27,
+    governed by this member''s own filing date + 20 years, not by the priority-based candidate).'
   verified: 2026-09-20 USPTO Patent Public Search record for US5851887A (classification sweep, round 5)
 - id: GP23253952
   family:
@@ -12402,9 +12406,9 @@ families:
   expiry:
     date: '2017-01-16'
     estimated: true
-    basis: the only recorded member, US6579777B1, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2017-01-16, already past
+    basis: the only recorded member, US6579777B1, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-01-16), or grant date + 17 years for a pre-1995-06-08 filing (2020-06-17, not applicable here), and the family's earliest priority date + 21 years (2017-01-16) —
+      running to 2017-01-16, already past
   expired: true
   members:
   - number: US6579777B1
@@ -13171,9 +13175,9 @@ families:
   expiry:
     date: '2017-06-20'
     estimated: true
-    basis: the only recorded member, US5830797A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2017-06-20, already past
+    basis: the only recorded member, US5830797A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-06-20), or grant date + 17 years for a pre-1995-06-08 filing (2015-11-03, not applicable here), and the family's earliest priority date + 21 years (2017-06-20) —
+      running to 2017-06-20, already past
   expired: true
   members:
   - number: US5830797A
@@ -13190,7 +13194,7 @@ families:
       google_patents: https://patents.google.com/patent/US5830797A/en
     verified: 2026-09-20 USPTO Patent Public Search record (classification sweep, round 5)
   relevance:
-  - target: category-substrate
+  - target: category-etch
     relation: same-lineage-assignee
     reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
       (SkyWater's Form S-1, SEC-01); the patent concerns interconnect methods and apparatus, and it is
@@ -13242,9 +13246,9 @@ families:
   expiry:
     date: '2017-06-26'
     estimated: true
-    basis: the only recorded member, US6004874A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2017-06-26, already past
+    basis: the only recorded member, US6004874A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-06-26), or grant date + 17 years for a pre-1995-06-08 filing (2016-12-21, not applicable here), and the family's earliest priority date + 21 years (2017-06-26) —
+      running to 2017-06-26, already past
   expired: true
   members:
   - number: US6004874A
@@ -13261,7 +13265,7 @@ families:
       google_patents: https://patents.google.com/patent/US6004874A/en
     verified: 2026-09-20 USPTO Patent Public Search record (classification sweep, round 5)
   relevance:
-  - target: category-substrate
+  - target: category-etch
     relation: same-lineage-assignee
     reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
       (SkyWater's Form S-1, SEC-01); the patent concerns method for forming an interconnect, and it is
@@ -13393,9 +13397,9 @@ families:
   expiry:
     date: '2017-07-01'
     estimated: true
-    basis: the only recorded member, US6004399A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2017-07-01, already past
+    basis: the only recorded member, US6004399A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-01-15), or grant date + 17 years for a pre-1995-06-08 filing (2016-12-21, not applicable here), and the family's earliest priority date + 21 years (2017-07-01) —
+      running to 2017-07-01, already past
   expired: true
   members:
   - number: US6004399A
@@ -13788,9 +13792,9 @@ families:
   expiry:
     date: '2017-07-19'
     estimated: true
-    basis: the only recorded member, US5911887A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2017-07-19, already past
+    basis: the only recorded member, US5911887A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-07-19), or grant date + 17 years for a pre-1995-06-08 filing (2016-06-15, not applicable here), and the family's earliest priority date + 21 years (2017-07-19) —
+      running to 2017-07-19, already past
   expired: true
   members:
   - number: US5911887A
@@ -14729,9 +14733,9 @@ families:
   expiry:
     date: '2017-11-21'
     estimated: true
-    basis: the only recorded member, US5977638A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2017-11-21, already past
+    basis: the only recorded member, US5977638A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-11-21), or grant date + 17 years for a pre-1995-06-08 filing (2016-11-02, not applicable here), and the family's earliest priority date + 21 years (2017-11-21) —
+      running to 2017-11-21, already past
   expired: true
   members:
   - number: US5977638A
@@ -14992,9 +14996,9 @@ families:
   expiry:
     date: '2017-11-27'
     estimated: true
-    basis: the only recorded member, US5861676A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2017-11-27, already past
+    basis: the only recorded member, US5861676A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-11-27), or grant date + 17 years for a pre-1995-06-08 filing (2016-01-19, not applicable here), and the family's earliest priority date + 21 years (2017-11-27) —
+      running to 2017-11-27, already past
   expired: true
   members:
   - number: US5861676A
@@ -15077,9 +15081,9 @@ families:
   expiry:
     date: '2017-12-17'
     estimated: true
-    basis: the only recorded member, US5897354A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2017-12-17, already past
+    basis: the only recorded member, US5897354A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-12-17), or grant date + 17 years for a pre-1995-06-08 filing (2016-04-27, not applicable here), and the family's earliest priority date + 21 years (2017-12-17) —
+      running to 2017-12-17, already past
   expired: true
   members:
   - number: US5897354A
@@ -16070,9 +16074,9 @@ families:
   expiry:
     date: '2018-03-19'
     estimated: true
-    basis: the only recorded member, US5968851A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2018-03-19, already past
+    basis: the only recorded member, US5968851A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-03-19), or grant date + 17 years for a pre-1995-06-08 filing (2016-10-19, not applicable here), and the family's earliest priority date + 21 years (2018-03-19) —
+      running to 2018-03-19, already past
   expired: true
   members:
   - number: US5968851A
@@ -16659,9 +16663,9 @@ families:
   expiry:
     date: '2018-06-19'
     estimated: true
-    basis: the only recorded member, US6555484B1, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2018-06-19, already past
+    basis: the only recorded member, US6555484B1, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-06-19), or grant date + 17 years for a pre-1995-06-08 filing (2020-04-29, not applicable here), and the family's earliest priority date + 21 years (2018-06-19) —
+      running to 2018-06-19, already past
   expired: true
   members:
   - number: US6555484B1
@@ -17458,9 +17462,9 @@ families:
   expiry:
     date: '2018-09-23'
     estimated: true
-    basis: the only recorded member, US6165375A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2018-09-23, already past
+    basis: the only recorded member, US6165375A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-09-23), or grant date + 17 years for a pre-1995-06-08 filing (2017-12-26, not applicable here), and the family's earliest priority date + 21 years (2018-09-23) —
+      running to 2018-09-23, already past
   expired: true
   members:
   - number: US6165375A
@@ -17529,9 +17533,9 @@ families:
   expiry:
     date: '2018-09-29'
     estimated: true
-    basis: the only recorded member, US6033991A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2018-09-29, already past
+    basis: the only recorded member, US6033991A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-09-29), or grant date + 17 years for a pre-1995-06-08 filing (2017-03-07, not applicable here), and the family's earliest priority date + 21 years (2018-09-29) —
+      running to 2018-09-29, already past
   expired: true
   members:
   - number: US6033991A
@@ -18052,9 +18056,9 @@ families:
   expiry:
     date: '2019-05-20'
     estimated: true
-    basis: the only recorded member, US6140676A, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2019-05-20, already past
+    basis: the only recorded member, US6140676A, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2018-05-20), or grant date + 17 years for a pre-1995-06-08 filing (2017-10-31, not applicable here), and the family's earliest priority date + 21 years (2019-05-20) —
+      running to 2019-05-20, already past
   expired: true
   members:
   - number: US6140676A
@@ -18342,9 +18346,9 @@ families:
   expiry:
     date: '2019-08-31'
     estimated: true
-    basis: the only recorded member, US6232231B1, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2019-08-31, already past
+    basis: the only recorded member, US6232231B1, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2018-08-31), or grant date + 17 years for a pre-1995-06-08 filing (2018-05-15, not applicable here), and the family's earliest priority date + 21 years (2019-08-31) —
+      running to 2019-08-31, already past
   expired: true
   members:
   - number: US6232231B1
@@ -18556,9 +18560,9 @@ families:
   expiry:
     date: '2019-11-09'
     estimated: true
-    basis: the only recorded member, US6566249B1, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2019-11-09, already past
+    basis: the only recorded member, US6566249B1, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2018-11-09), or grant date + 17 years for a pre-1995-06-08 filing (2020-05-20, not applicable here), and the family's earliest priority date + 21 years (2019-11-09) —
+      running to 2019-11-09, already past
   expired: true
   members:
   - number: US6566249B1
@@ -19021,7 +19025,7 @@ families:
   inventors:
   - Yang; Chan-Lon et al.
   dates:
-    priority: '1999-02-22'
+    priority: '1998-03-19'
     filing: '1999-02-22'
     grant: '2002-06-11'
   legal_status:
@@ -19030,11 +19034,11 @@ families:
       determined (this round sourced the family via the PPUBS fallback path per the coordinating brief,
       not because Google Patents was unreachable)
   expiry:
-    date: '2020-02-22'
+    date: '2019-03-19'
     estimated: true
-    basis: the only recorded member, US6403488B1, has priority before 1999-05-29 (no US term adjustment
-      possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08
-      filing), running to 2020-02-22, already past
+    basis: the only recorded member, US6403488B1, has priority before 1999-05-29 (no US term
+      adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2019-02-22), or grant date + 17 years for a pre-1995-06-08 filing (2019-06-11, not applicable here), and the family's earliest priority date + 21 years (2019-03-19) —
+      running to 2019-03-19, already past
   expired: true
   members:
   - number: US6403488B1
@@ -19268,8 +19272,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6372634B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2020-06-15, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2020-06-15 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6372634B1
@@ -19341,8 +19347,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US20020090817A1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2022-02-07, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2022-02-07 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US20020090817A1
@@ -19429,8 +19437,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6890860B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2020-06-30, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2020-06-30 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6890860B1
@@ -20183,8 +20193,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6596466B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2021-01-25, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2021-01-25 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6596466B1
@@ -20266,8 +20278,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6727161B2's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2021-02-16, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2021-02-16 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6727161B2
@@ -21031,8 +21045,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US20040183199A1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2024-01-28, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2024-01-28 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US20040183199A1
@@ -21104,8 +21120,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US8030172B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-05-12, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-05-12 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US8030172B1
@@ -21793,8 +21811,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6693042B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2021-12-28, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2021-12-28 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6693042B1
@@ -21924,8 +21944,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6786809B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2022-03-30, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2022-03-30 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6786809B1
@@ -22135,8 +22157,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6831346B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2022-05-04, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2022-05-04 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6831346B1
@@ -22708,8 +22732,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6844235B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2022-07-31, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2022-07-31 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6844235B1
@@ -22881,8 +22907,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6844262B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2022-08-31, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2022-08-31 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6844262B1
@@ -23315,8 +23343,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6841491B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2022-11-08, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2022-11-08 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6841491B1
@@ -23951,8 +23981,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7026235B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-02-07, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-02-07 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7026235B1
@@ -24362,8 +24394,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6699795B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-03-15, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-03-15 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6699795B1
@@ -24435,8 +24469,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6979640B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-03-29, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-03-29 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6979640B1
@@ -24675,8 +24711,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6964929B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-05-02, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-05-02 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6964929B1
@@ -24918,8 +24956,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7192867B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-26, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-26 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7192867B1
@@ -25083,8 +25123,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US8080453B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-28, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-28 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US8080453B1
@@ -25166,8 +25208,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7256083B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-28, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-28 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7256083B1
@@ -25591,8 +25635,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6866986B2's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-07-10, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-07-10 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6866986B2
@@ -26023,8 +26069,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7396773B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7396773B1
@@ -26106,8 +26154,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7229929B2's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7229929B2
@@ -26184,8 +26234,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7189652B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7189652B1
@@ -26262,8 +26314,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6943126B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6943126B1
@@ -26335,8 +26389,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6803321B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6803321B1
@@ -26418,8 +26474,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6680516B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6680516B1
@@ -26636,8 +26694,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6869850B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6869850B1
@@ -26719,8 +26779,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6794269B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6794269B1
@@ -26817,8 +26879,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6773975B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US6773975B1
@@ -28181,8 +28245,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7371637B2's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2024-09-26, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2024-09-26 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7371637B2
@@ -28259,8 +28325,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7323411B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2024-09-26, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2024-09-26 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7323411B1
@@ -28939,8 +29007,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7915175B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2025-06-27, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2025-06-27 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7915175B1
@@ -29017,8 +29087,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7320944B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2025-06-27, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2025-06-27 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7320944B1
@@ -29681,8 +29753,10 @@ families:
     estimated: true
     basis: no legal-status data (USPTO Patent Public Search does not report it) and priority on or after
       1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7361602B1's
-      own filing date + 20 years or the family's priority date + 21 years, running to 2025-10-22, not
-      yet past — collapsed per the design's rule (not certainly expired)
+      own filing date + 20 years or the family's priority date + 21 years, running to 2025-10-22 on this conservative calculation, already past —
+      but a US patent term adjustment PPUBS does not report could still extend the true
+      term beyond it, so the family stays collapsed per the design's rule (not certainly
+      expired) rather than shown expired
   expired: unknown
   members:
   - number: US7361602B1
@@ -31366,7 +31440,7 @@ families:
       google_patents: https://patents.google.com/patent/US9171936B2/en
     verified: 2026-09-20 USPTO Patent Public Search record (classification sweep, round 5)
   relevance:
-  - target: category-substrate
+  - target: category-implant
     relation: same-lineage-assignee
     reason: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater
       (SkyWater's Form S-1, SEC-01); the patent concerns barrier region underlying source/drain regions

@@ -199,7 +199,6 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 **Related patents.**
 
 * {ref}`US 4,986,878 A <patent-gp22827270>` — Process for improved planarization of the passivation layers for semiconductor devices (1988)
-* {ref}`US 5,665,639 A <patent-gp22742690>` — Process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal (1994)
 * {ref}`US 5,872,390 A <patent-gp24070664>` — Fuse window with controlled fuse oxide thickness (1995)
 * {ref}`US 5,911,887 A <patent-gp24743931>` — Method of etching a bond pad (1996)
 * {ref}`US 6,294,474 B1 <patent-gp23688532>` — Process for controlling oxide thickness over a fusible link using transient etch stops (1999)

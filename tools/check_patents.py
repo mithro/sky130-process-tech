@@ -572,12 +572,55 @@ def check_family(f: dict, labels: dict[str, Path], inventory: dict[str, str],
     if edate and numbers and not mentions(str(exp.get("basis", "")), [n for n in numbers if n]):
         problems.append(f"{fid}: expiry basis does not name any member of the family")
 
+    # M2 (round-3 verification finding, closed round 6): the basis text's own
+    # claim about whether its bound date is past or future must agree with
+    # `exp.date` vs. today -- checked dynamically (not just at write time), so
+    # a family whose "not yet past" bound date later slips into the past is
+    # caught here too, the same way `expired` itself is re-evaluated against
+    # today on every run.
+    basis_text = str(exp.get("basis", ""))
+    if edate:
+        if "not yet past" in basis_text and edate <= TODAY:
+            problems.append(
+                f"{fid}: expiry basis says 'not yet past' but {edate.isoformat()} is not after "
+                f"today ({TODAY.isoformat()}); M2")
+        if "already past" in basis_text and edate > TODAY:
+            problems.append(
+                f"{fid}: expiry basis says 'already past' but {edate.isoformat()} is after "
+                f"today ({TODAY.isoformat()}); M2")
+
     # L6: legal_status.status must be the representative member's own status.
     rep_m = next((m for m in members if isinstance(m, dict) and m.get("number") == f.get("representative")), None)
     if rep_m is not None and ls.get("status") != rep_m.get("status"):
         problems.append(
             f"{fid}: legal_status.status ({ls.get('status')!r}) does not match the representative "
             f"member's own status ({rep_m.get('status')!r})")
+
+    # L4 (round-3 verification finding, closed round 6): the N3 guard above
+    # keys off `family.source != "Google Patents family ID"`, so mislabelling
+    # a PPUBS-sourced family's `family.source` as the Google literal silently
+    # disables it. A family-level narrative field (`legal_status.source`, the
+    # family's own `verified`) can legitimately mention the other source in
+    # passing (e.g. a Google-sourced family that later gained a PPUBS-found
+    # member, GP94259596), so those are not checked here. What must agree is
+    # `family.source` and the *representative* member's own `verified` line,
+    # since the representative is what was actually fetched to build the
+    # family record: a family cannot claim a Google Patents source while its
+    # own representative was only ever confirmed via PPUBS, or vice versa.
+    if rep_m is not None:
+        rep_verified = str(rep_m.get("verified", ""))
+        rep_is_ppubs = "USPTO Patent Public Search" in rep_verified
+        rep_is_google = "Google Patents" in rep_verified
+        if rep_is_ppubs and not rep_is_google and fam.get("source") == "Google Patents family ID":
+            problems.append(
+                f"{fid}: family.source is 'Google Patents family ID' but the representative member "
+                f"{rep_m.get('number')}'s own 'verified' line names USPTO Patent Public Search instead "
+                f"-- provenance fields disagree (this would disable the N3 PPUBS-only expiry guard; L4)")
+        if rep_is_google and not rep_is_ppubs and fam.get("source") != "Google Patents family ID":
+            problems.append(
+                f"{fid}: family.source is a PPUBS literal but the representative member "
+                f"{rep_m.get('number')}'s own 'verified' line names Google Patents instead -- "
+                f"provenance fields disagree (L4)")
 
     # relevance
     if not f.get("relevance"):

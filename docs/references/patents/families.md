@@ -2364,7 +2364,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5665639A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2015-02-23 — the only recorded member, US5665639A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2015-02-23, already past
+**Estimated expiry:** 2015-02-23 — the only recorded member, US5665639A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2014-02-23), grant date + 17 years for its pre-1995-06-08 filing (2014-09-09), and the family's earliest priority date + 21 years (2015-02-23) — running to 2015-02-23, already past
 
 **Family ID:** `22742690` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -2376,12 +2376,13 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`step-164`, {ref}`category-anneal` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal, and it is not evidence that the technique is used in SKY130.
+* {ref}`category-anneal` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search — USPTO Patent Public Search, CPC-classification sweep, query 'cypress'.as. AND (H01L21/23/27/29, H10B, H10N70, G03F, C23C, C30B, H10D, H10P, H10W)\$.cpc., no title keywords, per docs/plans/patent-discovery-log.md's round-5 method, retrieved 2026-09-20.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
+* L3 correction (round 6): dates.priority originally recorded 1999-02-22 (the filing date), because PPUBS's search record gives a null priorityClaimsDate for this family. US6403488B1's own printed front page ("Text View") states "This application claims the benefit of U.S. Provisional Application No. 60/079,319, filed Mar. 19, 1998" -- the true earliest priority, now recorded. expiry.date moved from 2020-02-22 to 2019-03-19 accordingly (still well before today, still expired: true).
 * Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5665639 (retrieved 2026-09-20, 938706 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5665639A (classification sweep, round 5)
@@ -2471,7 +2472,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5468342A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2015-04-28 — the only recorded member, US5468342A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2015-04-28, already past
+**Estimated expiry:** 2015-04-28 — the only recorded member, US5468342A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2014-04-28), grant date + 17 years for its pre-1995-06-08 filing (2012-11-21), and the family's earliest priority date + 21 years (2015-04-28) — running to 2015-04-28, already past
 
 **Family ID:** `22881554` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -2506,7 +2507,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5562801A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2015-04-28 — the only recorded member, US5562801A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2015-04-28, already past
+**Estimated expiry:** 2015-04-28 — the only recorded member, US5562801A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2014-12-07), grant date + 17 years for its pre-1995-06-08 filing (2013-10-08), and the family's earliest priority date + 21 years (2015-04-28) — running to 2015-04-28, already past
 
 **Family ID:** `23382383` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -2637,11 +2638,11 @@ families and members are counted.
 
 **Inventors:** Caldwell; Roger F. et al.
 
-**Dates:** priority 1994-09-07, filing 1996-03-27, grant 1998-12-22
+**Dates:** priority 1994-09-04, filing 1996-03-27, grant 1998-12-22
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5851887A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2016-03-27 — the only recorded member, US5851887A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2016-03-27, already past
+**Estimated expiry:** 2016-03-27 — the only recorded member, US5851887A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-03-27), or grant date + 17 years for a pre-1995-06-08 filing (2015-12-22, not applicable here), and the family's earliest priority date + 21 years (2015-09-04) — running to 2016-03-27, already past
 
 **Family ID:** `23168517` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -2653,13 +2654,14 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-substrate` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns deep sub-micron polysilicon gap formation, and it is not evidence that the technique is used in SKY130.
+* {ref}`category-etch` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns deep sub-micron polysilicon gap formation, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search — USPTO Patent Public Search, CPC-classification sweep, query 'cypress'.as. AND (H01L21/23/27/29, H10B, H10N70, G03F, C23C, C30B, H10D, H10P, H10W)\$.cpc., no title keywords, per docs/plans/patent-discovery-log.md's round-5 method, retrieved 2026-09-20.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
 * Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5851887 (retrieved 2026-09-20, 522085 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* L3 correction (round 6): dates.priority originally recorded 1994-09-07 (PPUBS's priorityClaimsDate was null, so this defaulted to a value derived from the search record). US5851887A's own printed front page ("Text View") states the parent application, Ser. No. 08/302,615, was filed Sep. 4, 1994 -- three days earlier -- now recorded as the priority date. expiry.date is unchanged (2016-03-27, governed by this member's own filing date + 20 years, not by the priority-based candidate).
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5851887A (classification sweep, round 5)
 
@@ -3253,7 +3255,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6579777B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2017-01-16 — the only recorded member, US6579777B1, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2017-01-16, already past
+**Estimated expiry:** 2017-01-16 — the only recorded member, US6579777B1, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-01-16), or grant date + 17 years for a pre-1995-06-08 filing (2020-06-17, not applicable here), and the family's earliest priority date + 21 years (2017-01-16) — running to 2017-01-16, already past
 
 **Family ID:** `24349726` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -3539,7 +3541,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5830797A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2017-06-20 — the only recorded member, US5830797A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2017-06-20, already past
+**Estimated expiry:** 2017-06-20 — the only recorded member, US5830797A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-06-20), or grant date + 17 years for a pre-1995-06-08 filing (2015-11-03, not applicable here), and the family's earliest priority date + 21 years (2017-06-20) — running to 2017-06-20, already past
 
 **Family ID:** `24703979` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -3551,7 +3553,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-substrate` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns interconnect methods and apparatus, and it is not evidence that the technique is used in SKY130.
+* {ref}`category-etch` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns interconnect methods and apparatus, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search — USPTO Patent Public Search, CPC-classification sweep, query 'cypress'.as. AND (H01L21/23/27/29, H10B, H10N70, G03F, C23C, C30B, H10D, H10P, H10W)\$.cpc., no title keywords, per docs/plans/patent-discovery-log.md's round-5 method, retrieved 2026-09-20.
 
@@ -3574,7 +3576,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6004874A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2017-06-26 — the only recorded member, US6004874A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2017-06-26, already past
+**Estimated expiry:** 2017-06-26 — the only recorded member, US6004874A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-06-26), or grant date + 17 years for a pre-1995-06-08 filing (2016-12-21, not applicable here), and the family's earliest priority date + 21 years (2017-06-26) — running to 2017-06-26, already past
 
 **Family ID:** `24696949` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -3586,7 +3588,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-substrate` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns method for forming an interconnect, and it is not evidence that the technique is used in SKY130.
+* {ref}`category-etch` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns method for forming an interconnect, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search — USPTO Patent Public Search, CPC-classification sweep, query 'cypress'.as. AND (H01L21/23/27/29, H10B, H10N70, G03F, C23C, C30B, H10D, H10P, H10W)\$.cpc., no title keywords, per docs/plans/patent-discovery-log.md's round-5 method, retrieved 2026-09-20.
 
@@ -3645,7 +3647,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6004399A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2017-07-01 — the only recorded member, US6004399A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2017-07-01, already past
+**Estimated expiry:** 2017-07-01 — the only recorded member, US6004399A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-01-15), or grant date + 17 years for a pre-1995-06-08 filing (2016-12-21, not applicable here), and the family's earliest priority date + 21 years (2017-07-01) — running to 2017-07-01, already past
 
 **Family ID:** `24705136` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -3761,7 +3763,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5911887A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2017-07-19 — the only recorded member, US5911887A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2017-07-19, already past
+**Estimated expiry:** 2017-07-19 — the only recorded member, US5911887A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-07-19), or grant date + 17 years for a pre-1995-06-08 filing (2016-06-15, not applicable here), and the family's earliest priority date + 21 years (2017-07-19) — running to 2017-07-19, already past
 
 **Family ID:** `24743931` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -3968,7 +3970,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5977638A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2017-11-21 — the only recorded member, US5977638A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2017-11-21, already past
+**Estimated expiry:** 2017-11-21 — the only recorded member, US5977638A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-11-21), or grant date + 17 years for a pre-1995-06-08 filing (2016-11-02, not applicable here), and the family's earliest priority date + 21 years (2017-11-21) — running to 2017-11-21, already past
 
 **Family ID:** `25035177` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -4043,7 +4045,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5861676A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2017-11-27 — the only recorded member, US5861676A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2017-11-27, already past
+**Estimated expiry:** 2017-11-27 — the only recorded member, US5861676A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-11-27), or grant date + 17 years for a pre-1995-06-08 filing (2016-01-19, not applicable here), and the family's earliest priority date + 21 years (2017-11-27) — running to 2017-11-27, already past
 
 **Family ID:** `25050977` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -4078,7 +4080,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5897354A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2017-12-17 — the only recorded member, US5897354A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2017-12-17, already past
+**Estimated expiry:** 2017-12-17 — the only recorded member, US5897354A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2016-12-17), or grant date + 17 years for a pre-1995-06-08 filing (2016-04-27, not applicable here), and the family's earliest priority date + 21 years (2017-12-17) — running to 2017-12-17, already past
 
 **Family ID:** `25083775` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -4316,7 +4318,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US5968851A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2018-03-19 — the only recorded member, US5968851A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2018-03-19, already past
+**Estimated expiry:** 2018-03-19 — the only recorded member, US5968851A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-03-19), or grant date + 17 years for a pre-1995-06-08 filing (2016-10-19, not applicable here), and the family's earliest priority date + 21 years (2018-03-19) — running to 2018-03-19, already past
 
 **Family ID:** `25231985` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -4499,7 +4501,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6555484B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2018-06-19 — the only recorded member, US6555484B1, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2018-06-19, already past
+**Estimated expiry:** 2018-06-19 — the only recorded member, US6555484B1, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-06-19), or grant date + 17 years for a pre-1995-06-08 filing (2020-04-29, not applicable here), and the family's earliest priority date + 21 years (2018-06-19) — running to 2018-06-19, already past
 
 **Family ID:** `25372701` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -4670,7 +4672,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6165375A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2018-09-23 — the only recorded member, US6165375A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2018-09-23, already past
+**Estimated expiry:** 2018-09-23 — the only recorded member, US6165375A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-09-23), or grant date + 17 years for a pre-1995-06-08 filing (2017-12-26, not applicable here), and the family's earliest priority date + 21 years (2018-09-23) — running to 2018-09-23, already past
 
 **Family ID:** `25467538` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -4705,7 +4707,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6033991A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2018-09-29 — the only recorded member, US6033991A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2018-09-29, already past
+**Estimated expiry:** 2018-09-29 — the only recorded member, US6033991A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2017-09-29), or grant date + 17 years for a pre-1995-06-08 filing (2017-03-07, not applicable here), and the family's earliest priority date + 21 years (2018-09-29) — running to 2018-09-29, already past
 
 **Family ID:** `25473825` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -4823,6 +4825,41 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6906421B1/en
 
+(patent-gp26761865)=
+## US 6,403,488 B1 — Selective SAC etch process
+
+**Title:** Selective SAC etch process
+
+**Assignees:** original Cypress Semiconductor Corp; current Cypress Semiconductor Corp
+
+**Inventors:** Yang; Chan-Lon et al.
+
+**Dates:** priority 1998-03-19, filing 1999-02-22, grant 2002-06-11
+
+**Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6403488B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
+
+**Estimated expiry:** 2019-03-19 — the only recorded member, US6403488B1, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2019-02-22), or grant date + 17 years for a pre-1995-06-08 filing (2019-06-11, not applicable here), and the family's earliest priority date + 21 years (2019-03-19) — running to 2019-03-19, already past
+
+**Family ID:** `26761865` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
+
+**Members:**
+
+| Number | Type | Publication date | Status | Verified | Links |
+|---|---|---|---|---|---|
+| US 6,403,488 B1 | granted patent | 2002-06-11 | not shown | 2026-09-20 USPTO Patent Public Search record (classification sweep, round 5) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6403488B1) · [Google Patents](https://patents.google.com/patent/US6403488B1/en) |
+
+**Relevance:**
+
+* {ref}`category-etch` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns selective SAC etch process, and it is not evidence that the technique is used in SKY130.
+
+**Discovery:** assignee-search — USPTO Patent Public Search, CPC-classification sweep, query 'cypress'.as. AND (H01L21/23/27/29, H10B, H10N70, G03F, C23C, C30B, H10D, H10P, H10W)\$.cpc., no title keywords, per docs/plans/patent-discovery-log.md's round-5 method, retrieved 2026-09-20.
+
+**Notes:**
+* Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
+* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6403488 (retrieved 2026-09-20, 437577 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+
+**Verified:** 2026-09-20 USPTO Patent Public Search record for US6403488B1 (classification sweep, round 5)
+
 (patent-gp21950172)=
 ## US 6,020,614 A — Method of reducing substrate noise coupling in mixed signal integrated circuits
 
@@ -4939,7 +4976,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6140676A; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2019-05-20 — the only recorded member, US6140676A, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2019-05-20, already past
+**Estimated expiry:** 2019-05-20 — the only recorded member, US6140676A, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2018-05-20), or grant date + 17 years for a pre-1995-06-08 filing (2017-10-31, not applicable here), and the family's earliest priority date + 21 years (2019-05-20) — running to 2019-05-20, already past
 
 **Family ID:** `22169469` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -5046,7 +5083,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6232231B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2019-08-31 — the only recorded member, US6232231B1, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2019-08-31, already past
+**Estimated expiry:** 2019-08-31 — the only recorded member, US6232231B1, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2018-08-31), or grant date + 17 years for a pre-1995-06-08 filing (2018-05-15, not applicable here), and the family's earliest priority date + 21 years (2019-08-31) — running to 2019-08-31, already past
 
 **Family ID:** `22505307` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -5148,7 +5185,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6566249B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2019-11-09 — the only recorded member, US6566249B1, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2019-11-09, already past
+**Estimated expiry:** 2019-11-09 — the only recorded member, US6566249B1, has priority before 1999-05-29 (no US term adjustment possible); the applicable bound is the latest of its own filing date + 20 years (2018-11-09), or grant date + 17 years for a pre-1995-06-08 filing (2020-05-20, not applicable here), and the family's earliest priority date + 21 years (2019-11-09) — running to 2019-11-09, already past
 
 **Family ID:** `22697217` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -5309,41 +5346,6 @@ families and members are counted.
 
 **Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6455402B2/en
 
-(patent-gp26761865)=
-## US 6,403,488 B1 — Selective SAC etch process
-
-**Title:** Selective SAC etch process
-
-**Assignees:** original Cypress Semiconductor Corp; current Cypress Semiconductor Corp
-
-**Inventors:** Yang; Chan-Lon et al.
-
-**Dates:** priority 1999-02-22, filing 1999-02-22, grant 2002-06-11
-
-**Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6403488B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
-
-**Estimated expiry:** 2020-02-22 — the only recorded member, US6403488B1, has priority before 1999-05-29 (no US term adjustment possible) and is bounded by its own filing date + 20 years (or grant date + 17 years for a pre-1995-06-08 filing), running to 2020-02-22, already past
-
-**Family ID:** `26761865` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
-
-**Members:**
-
-| Number | Type | Publication date | Status | Verified | Links |
-|---|---|---|---|---|---|
-| US 6,403,488 B1 | granted patent | 2002-06-11 | not shown | 2026-09-20 USPTO Patent Public Search record (classification sweep, round 5) | [Espacenet](https://worldwide.espacenet.com/patent/search?q=pn%3DUS6403488B1) · [Google Patents](https://patents.google.com/patent/US6403488B1/en) |
-
-**Relevance:**
-
-* {ref}`category-etch` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns selective SAC etch process, and it is not evidence that the technique is used in SKY130.
-
-**Discovery:** assignee-search — USPTO Patent Public Search, CPC-classification sweep, query 'cypress'.as. AND (H01L21/23/27/29, H10B, H10N70, G03F, C23C, C30B, H10D, H10P, H10W)\$.cpc., no title keywords, per docs/plans/patent-discovery-log.md's round-5 method, retrieved 2026-09-20.
-
-**Notes:**
-* Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6403488 (retrieved 2026-09-20, 437577 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
-
-**Verified:** 2026-09-20 USPTO Patent Public Search record for US6403488B1 (classification sweep, round 5)
-
 (patent-gp23084824)=
 ## US 6,242,299 B1 — Barrier layer to protect a ferroelectric capacitor after contact has been made to the capacitor electrode
 
@@ -5424,7 +5426,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6372634B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2020-06-15 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6372634B1's own filing date + 20 years or the family's priority date + 21 years, running to 2020-06-15, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2020-06-15 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6372634B1's own filing date + 20 years or the family's priority date + 21 years, running to 2020-06-15 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `23302890` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -5460,7 +5462,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US20020090817A1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2022-02-07 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US20020090817A1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-02-07, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2022-02-07 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US20020090817A1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-02-07 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `23341388` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -5496,7 +5498,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6890860B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2020-06-30 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6890860B1's own filing date + 20 years or the family's priority date + 21 years, running to 2020-06-30, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2020-06-30 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6890860B1's own filing date + 20 years or the family's priority date + 21 years, running to 2020-06-30 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `34549094` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -5777,7 +5779,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6596466B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2021-01-25 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6596466B1's own filing date + 20 years or the family's priority date + 21 years, running to 2021-01-25, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2021-01-25 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6596466B1's own filing date + 20 years or the family's priority date + 21 years, running to 2021-01-25 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `23950559` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -5813,7 +5815,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6727161B2; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2021-02-16 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6727161B2's own filing date + 20 years or the family's priority date + 21 years, running to 2021-02-16, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2021-02-16 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6727161B2's own filing date + 20 years or the family's priority date + 21 years, running to 2021-02-16 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `24011612` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -6067,7 +6069,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US20040183199A1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2024-01-28 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US20040183199A1's own filing date + 20 years or the family's priority date + 21 years, running to 2024-01-28, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2024-01-28 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US20040183199A1's own filing date + 20 years or the family's priority date + 21 years, running to 2024-01-28 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `32991247` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -6103,7 +6105,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US8030172B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-05-12 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US8030172B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-05-12, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-05-12 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US8030172B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-05-12 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `44676718` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -6320,7 +6322,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6693042B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2021-12-28 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6693042B1's own filing date + 20 years or the family's priority date + 21 years, running to 2021-12-28, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2021-12-28 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6693042B1's own filing date + 20 years or the family's priority date + 21 years, running to 2021-12-28 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `31188927` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -6387,7 +6389,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6786809B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2022-03-30 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6786809B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-03-30, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2022-03-30 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6786809B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-03-30 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `32928137` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -6489,7 +6491,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6831346B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2022-05-04 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6831346B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-05-04, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2022-05-04 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6831346B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-05-04 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `33491100` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -6695,7 +6697,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6844235B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2022-07-31 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6844235B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-07-31, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2022-07-31 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6844235B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-07-31 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `33565467` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -6767,7 +6769,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6844262B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2022-08-31 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6844262B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-08-31, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2022-08-31 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6844262B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-08-31 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `33565470` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -6883,7 +6885,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6841491B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2022-11-08 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6841491B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-11-08, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2022-11-08 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6841491B1's own filing date + 20 years or the family's priority date + 21 years, running to 2022-11-08 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `33550813` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7015,7 +7017,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7026235B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-02-07 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7026235B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-02-07, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-02-07 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7026235B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-02-07 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `36127689` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7192,7 +7194,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6699795B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-03-15 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6699795B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-03-15, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-03-15 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6699795B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-03-15 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `31713884` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7228,7 +7230,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6979640B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-03-29 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6979640B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-03-29, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-03-29 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6979640B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-03-29 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `35482531` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7300,7 +7302,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6964929B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-05-02 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6964929B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-05-02, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-05-02 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6964929B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-05-02 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `35266339` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7374,7 +7376,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7192867B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-06-26 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7192867B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-26, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-06-26 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7192867B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-26 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `37863803` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7447,7 +7449,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7256083B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-06-28 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7256083B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-28, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-06-28 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7256083B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-28 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `38337005` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7483,7 +7485,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US8080453B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-06-28 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US8080453B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-28, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-06-28 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US8080453B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-06-28 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `45219187` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7569,7 +7571,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6866986B2; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-07-10 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6866986B2's own filing date + 20 years or the family's priority date + 21 years, running to 2023-07-10, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-07-10 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6866986B2's own filing date + 20 years or the family's priority date + 21 years, running to 2023-07-10 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `30114169` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7769,7 +7771,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6680516B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6680516B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6680516B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `30000311` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7805,7 +7807,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6803321B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6803321B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6803321B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `33096598` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7841,7 +7843,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6943126B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6943126B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6943126B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `34910591` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7877,7 +7879,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7189652B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7189652B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7189652B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `37833374` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7913,7 +7915,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7229929B2; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7229929B2's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7229929B2's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `32468458` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -7949,7 +7951,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7396773B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7396773B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-12-06 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7396773B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-06 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `39589560` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -8054,7 +8056,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6773975B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-12-20 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6773975B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-12-20 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6773975B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `32823653` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -8090,7 +8092,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6794269B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-12-20 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6794269B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-12-20 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6794269B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `32987143` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -8126,7 +8128,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US6869850B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2023-12-20 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6869850B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2023-12-20 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US6869850B1's own filing date + 20 years or the family's priority date + 21 years, running to 2023-12-20 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `34272235` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -8450,7 +8452,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7323411B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2024-09-26 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7323411B1's own filing date + 20 years or the family's priority date + 21 years, running to 2024-09-26, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2024-09-26 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7323411B1's own filing date + 20 years or the family's priority date + 21 years, running to 2024-09-26 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `38973875` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -8486,7 +8488,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7371637B2; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2024-09-26 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7371637B2's own filing date + 20 years or the family's priority date + 21 years, running to 2024-09-26, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2024-09-26 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7371637B2's own filing date + 20 years or the family's priority date + 21 years, running to 2024-09-26 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `34381269` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -8735,7 +8737,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7320944B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2025-06-27 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7320944B1's own filing date + 20 years or the family's priority date + 21 years, running to 2025-06-27, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2025-06-27 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7320944B1's own filing date + 20 years or the family's priority date + 21 years, running to 2025-06-27 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `38950897` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -8771,7 +8773,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7915175B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2025-06-27 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7915175B1's own filing date + 20 years or the family's priority date + 21 years, running to 2025-06-27, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2025-06-27 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7915175B1's own filing date + 20 years or the family's priority date + 21 years, running to 2025-06-27 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `43769849` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -8968,7 +8970,7 @@ families and members are counted.
 
 **Legal status (representative):** None (USPTO Patent Public Search does not report legal status for US7361602B1; not independently determined (this round sourced the family via the PPUBS fallback path per the coordinating brief, not because Google Patents was unreachable))
 
-**Estimated expiry:** 2025-10-22 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7361602B1's own filing date + 20 years or the family's priority date + 21 years, running to 2025-10-22, not yet past — collapsed per the design's rule (not certainly expired)
+**Estimated expiry:** 2025-10-22 — no legal-status data (USPTO Patent Public Search does not report it) and priority on or after 1999-05-29 so a US term adjustment cannot be ruled out; bounded conservatively by US7361602B1's own filing date + 20 years or the family's priority date + 21 years, running to 2025-10-22 on this conservative calculation, already past — but a US patent term adjustment PPUBS does not report could still extend the true term beyond it, so the family stays collapsed per the design's rule (not certainly expired) rather than shown expired
 
 **Family ID:** `39310141` (USPTO Patent Public Search familyIdentifierCur (classification sweep, round 5))
 
@@ -9487,7 +9489,7 @@ families and members are counted.
 
 **Relevance:**
 
-* {ref}`category-substrate` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns barrier region underlying source/drain regions for dual-bit memory devices, and it is not evidence that the technique is used in SKY130.
+* {ref}`category-implant` — *same-lineage assignee*: Original assignee Cypress Semiconductor Corp, which owned and operated the fab before SkyWater (SkyWater's Form S-1, SEC-01); the patent concerns barrier region underlying source/drain regions for dual-bit memory devices, and it is not evidence that the technique is used in SKY130.
 
 **Discovery:** assignee-search — USPTO Patent Public Search, CPC-classification sweep, query 'cypress'.as. AND (H01L21/23/27/29, H10B, H10N70, G03F, C23C, C30B, H10D, H10P, H10W)\$.cpc., no title keywords, per docs/plans/patent-discovery-log.md's round-5 method, retrieved 2026-09-20.
 

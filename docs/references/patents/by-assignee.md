@@ -30,7 +30,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 5,665,639 A <patent-gp22742690>` — Process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal (1994-02-23)
 * {ref}`US 5,468,342 A <patent-gp22881554>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,562,801 A <patent-gp23382383>` — Method of etching an oxide layer (1994-04-28)
-* {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-07)
+* {ref}`US 5,851,887 A <patent-gp23168517>` — Deep sub-micron polysilicon gap formation (1994-09-04)
 * {ref}`US 5,965,924 A <patent-gp24244177>` — Metal plug local interconnect (1995-11-22)
 * {ref}`US 6,784,552 B2 <patent-gp24310003>` — Structure having reduced lateral spacer erosion (1995-12-22)
 * {ref}`US 6,579,777 B1 <patent-gp24349726>` — Method of forming local oxidation with sloped silicon recess (1996-01-16)
@@ -49,12 +49,12 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,033,991 A <patent-gp25473825>` — Isolation scheme based on recessed locos using a sloped Si etch and dry field oxidation (1997-09-29)
 * {ref}`US 6,140,228 A <patent-gp25516451>` — Low temperature metallization process (1997-11-13)
 * {ref}`US 6,906,421 B1 <patent-gp34632364>` — Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same (1998-01-14)
+* {ref}`US 6,403,488 B1 <patent-gp26761865>` — Selective SAC etch process (1998-03-19)
 * {ref}`US 6,255,180 B1 <patent-gp22147006>` — Semiconductor device with outwardly tapered sidewall spacers and method for forming same (1998-05-14)
 * {ref}`US 6,140,676 A <patent-gp22169469>` — Semiconductor non-volatile memory device having an improved write speed (1998-05-20)
 * {ref}`US 6,232,231 B1 <patent-gp22505307>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect (1998-08-31)
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
 * {ref}`US 6,825,544 B1 <patent-gp33449343>` — Method for shallow trench isolation and shallow trench isolation structure (1998-12-09)
-* {ref}`US 6,403,488 B1 <patent-gp26761865>` — Selective SAC etch process (1999-02-22)
 * {ref}`US 6,372,634 B1 <patent-gp23302890>` — unknown
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,890,860 B1 <patent-gp34549094>` — unknown
