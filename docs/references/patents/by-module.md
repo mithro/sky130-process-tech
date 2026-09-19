@@ -26,6 +26,7 @@ Steps 1–13.
 * {ref}`US 6,399,462 B1 <patent-gp25386002>` — Method and structure for isolating integrated circuit components and/or semiconductor active devices (1997-06-30)
 * {ref}`US 6,033,991 A <patent-gp25473825>` — Isolation scheme based on recessed locos using a sloped Si etch and dry field oxidation (1997-09-29)
 * {ref}`US 6,020,614 A <patent-gp21950172>` — Method of reducing substrate noise coupling in mixed signal integrated circuits (1998-03-25)
+* {ref}`US 6,171,180 B1 <patent-gp21976173>` — Planarizing a trench dielectric having an upper surface within a trench spaced below an adjacent polish stop surface (1998-03-31)
 * {ref}`US 6,030,881 A <patent-gp22109576>` — High throughput chemical vapor deposition process capable of filling high aspect ratio structures (1998-05-05)
 * {ref}`US 6,825,544 B1 <patent-gp33449343>` — Method for shallow trench isolation and shallow trench isolation structure (1998-12-09)
 * {ref}`US 6,727,161 B2 <patent-gp24011612>` — unknown
@@ -102,6 +103,10 @@ Steps 35–42.
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
 * {ref}`US 5,914,895 A <patent-gp25453449>` — Non-volatile random access memory and methods for making and configuring same (1997-09-10)
 * {ref}`US 6,162,682 A <patent-gp24141350>` — Structure and process for a gouge-free stacked non-volatile memory cell with select gate (1998-01-22)
+* {ref}`US 6,069,382 A <patent-gp21808483>` — Non-volatile memory cell having a high coupling ratio (1998-02-11)
+* {ref}`US 6,124,157 A <patent-gp21937074>` — Integrated non-volatile and random access memory and method of forming the same (1998-03-20)
+* {ref}`US 6,207,991 B1 <patent-gp21936928>` — Integrated non-volatile and CMOS memories having substantially the same thickness gates and methods of forming the same (1998-03-20)
+* {ref}`US 6,114,724 A <patent-gp21979781>` — Nonvolatile semiconductor memory cell with select gate (1998-03-31)
 * {ref}`US 6,140,676 A <patent-gp22169469>` — Semiconductor non-volatile memory device having an improved write speed (1998-05-20)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
 * {ref}`US 6,172,907 B1 <patent-gp23689290>` — unknown
@@ -683,8 +688,13 @@ that are not specific to one step.
 * {ref}`US 6,033,991 A <patent-gp25473825>` — Isolation scheme based on recessed locos using a sloped Si etch and dry field oxidation (1997-09-29)
 * {ref}`US 6,105,435 A <patent-gp25499744>` — Circuit and apparatus for verifying a chamber seal, and method of depositing a material onto a substrate using the same (1997-10-24)
 * {ref}`US 5,976,900 A <patent-gp25532345>` — Method of reducing impurity contamination in semiconductor process chambers (1997-12-08)
+* {ref}`US 6,143,663 A <patent-gp21753349>` — Employing deionized water and an abrasive surface to polish a semiconductor topography (1998-01-22)
+* {ref}`US 6,200,896 B1 <patent-gp21753000>` — Employing an acidic liquid and an abrasive surface to polish a semiconductor topography (1998-01-22)
 * {ref}`US 6,403,488 B1 <patent-gp26761865>` — Selective SAC etch process (1998-03-19)
+* {ref}`US 6,221,776 B1 <patent-gp22111311>` — Anti-reflective coating used as a disposable etch stop (1998-05-05)
+* {ref}`US 6,187,667 B1 <patent-gp22276025>` — Method of forming metal layer(s) and/or antireflective coating layer(s) on an integrated circuit (1998-06-17)
 * {ref}`US 6,232,231 B1 <patent-gp22505307>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect (1998-08-31)
+* {ref}`US 6,534,378 B1 <patent-gp22506168>` — Method for forming an integrated circuit device (1998-08-31)
 * {ref}`US 6,638,856 B1 <patent-gp29249879>` — Method of depositing metal onto a substrate (1998-09-11)
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
 * {ref}`US 6,372,150 B1 <patent-gp22801618>` — High vapor plasma strip methods and devices to enhance the reduction of organic residues over metal surfaces (1998-12-18)
@@ -695,6 +705,7 @@ that are not specific to one step.
 * {ref}`US 6,890,860 B1 <patent-gp34549094>` — unknown
 * {ref}`US 6,576,405 B1 <patent-gp23358573>` — High aspect ratio photolithographic method for high energy implantation (1999-07-01)
 * {ref}`US 6,322,716 B1 <patent-gp23520394>` — unknown
+* {ref}`US 6,302,766 B1 <patent-gp22508214>` — unknown
 * {ref}`US 6,350,353 B2 <patent-gp23783296>` — Alternate steps of IMP and sputtering process to improve sidewall coverage (1999-11-24)
 * {ref}`US 6,841,008 B1 <patent-gp33552841>` — unknown
 * {ref}`US 2004/0183199 A1 <patent-gp32991247>` — unknown
