@@ -192,6 +192,7 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 * {ref}`US 6,004,399 A <patent-gp24705136>` — Ultra-low particle semiconductor cleaner for removal of particle contamination and residues from surface oxide formation on semiconductor wafers (1996)
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996)
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997)
+* {ref}`US 6,372,150 B1 <patent-gp22801618>` — High vapor plasma strip methods and devices to enhance the reduction of organic residues over metal surfaces (1998)
 * {ref}`US 2004/0214448 A1 <patent-gp33298522>` — Method of ashing a photoresist (2003)
 * {ref}`US 7,449,416 B2 <patent-gp35448183>` — Apparatus and plasma ashing process for increasing photoresist removal rate (2004)
 

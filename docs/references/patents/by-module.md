@@ -131,6 +131,7 @@ Steps 35–42.
 * {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
+* {ref}`US 2013/0178030 A1 <patent-gp48744177>` — unknown
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
 * {ref}`US 8,796,098 B1 <patent-gp51229009>` — in force
 * {ref}`US 9,614,105 B2 <patent-gp51728382>` — unknown
@@ -264,7 +265,10 @@ Steps 89–106.
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,350,353 B2 <patent-gp23783296>` — Alternate steps of IMP and sputtering process to improve sidewall coverage (1999-11-24)
 * {ref}`US 6,596,466 B1 <patent-gp23950559>` — unknown
+* {ref}`US 6,350,665 B1 <patent-gp24241366>` — unknown
+* {ref}`US 6,399,512 B1 <patent-gp24376957>` — unknown
 * {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
+* {ref}`US 6,756,315 B1 <patent-gp32508386>` — unknown
 * {ref}`US 6,914,016 B2 <patent-gp25317682>` — HDP-CVD deposition process for filling high aspect ratio gaps (2001-05-11)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001-05-22)
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
@@ -272,6 +276,8 @@ Steps 89–106.
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
+* {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
+* {ref}`US 7,901,976 B1 <patent-gp43639265>` — unknown
 * {ref}`US 9,236,448 B2 <patent-gp41726088>` — unknown
 * {ref}`US 9,299,643 B2 <patent-gp42056520>` — unknown
 * {ref}`US 9,570,396 B2 <patent-gp37588477>` — unknown
@@ -465,6 +471,7 @@ Steps 164–171.
 * {ref}`US 5,303,558 A <patent-gp25448458>` — Thermal trap for gaseous materials (1992-07-30)
 * {ref}`US 5,346,578 A <patent-gp25518280>` — Induction plasma source (1992-11-04)
 * {ref}`US 5,442,828 A <patent-gp25529547>` — Double-sided wafer scrubber with a wet submersing silicon wafer indexer (1992-11-30)
+* {ref}`US 5,366,929 A <patent-gp22085430>` — Method for making reliable selective via fills (1993-05-28)
 * {ref}`US 5,372,957 A <patent-gp22246938>` — Multiple tilted angle ion implantation MOSFET method (1993-07-22)
 * {ref}`US 5,633,212 A <patent-gp12697185>` — Pyrogenic wet thermal oxidation of semiconductor wafers (1993-07-24)
 * {ref}`US 5,503,678 A <patent-gp17554170>` — Vertical low pressure CVD apparatus with an adjustable nozzle (1993-11-04)
@@ -615,6 +622,7 @@ that are not specific to one step.
 * {ref}`US 5,911,887 A <patent-gp24743931>` — Method of etching a bond pad (1996-07-19)
 * {ref}`US 6,033,943 A <patent-gp24820519>` — Dual gate oxide thickness integrated circuit and process for making same (1996-08-23)
 * {ref}`US 5,795,831 A <patent-gp26794054>` — Cold processes for cleaning and stripping photoresist from surfaces of semiconductor wafers (1996-10-16)
+* {ref}`US 5,897,371 A <patent-gp25086438>` — Alignment process compatible with chemical mechanical polishing (1996-12-19)
 * {ref}`US 5,811,358 A <patent-gp25102092>` — Low temperature dry process for stripping photoresist after high dose ion implantation (1997-01-03)
 * {ref}`US 5,994,761 A <patent-gp25194044>` — Ideal oxygen precipitating silicon wafers and oxygen out-diffusion-less process therefor (1997-02-26)
 * {ref}`US 5,913,712 A <patent-gp24040492>` — Scratch reduction in semiconductor circuit fabrication using chemical-mechanical polishing (1997-03-12)
@@ -626,6 +634,7 @@ that are not specific to one step.
 * {ref}`US 6,403,488 B1 <patent-gp26761865>` — Selective SAC etch process (1998-03-19)
 * {ref}`US 6,232,231 B1 <patent-gp22505307>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect (1998-08-31)
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
+* {ref}`US 6,372,150 B1 <patent-gp22801618>` — High vapor plasma strip methods and devices to enhance the reduction of organic residues over metal surfaces (1998-12-18)
 * {ref}`US 6,455,402 B2 <patent-gp19572018>` — Method of forming retrograde doping file in twin well CMOS device (1999-01-22)
 * {ref}`US 6,238,982 B1 <patent-gp23113681>` — Multiple threshold voltage semiconductor device fabrication technology (1999-04-13)
 * {ref}`US 6,372,634 B1 <patent-gp23302890>` — unknown
@@ -642,13 +651,16 @@ that are not specific to one step.
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,376,262 B1 <patent-gp25360011>` — Method of forming a semiconductor device using double endpoint detection (2001-05-31)
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
+* {ref}`US 6,562,675 B1 <patent-gp25461872>` — unknown
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
 * {ref}`US 6,841,491 B1 <patent-gp33550813>` — unknown
 * {ref}`US 7,026,235 B1 <patent-gp36127689>` — unknown
+* {ref}`US 7,129,178 B1 <patent-gp37189185>` — unknown
 * {ref}`US 6,699,795 B1 <patent-gp31713884>` — unknown
 * {ref}`US 6,667,205 B2 <patent-gp29214361>` — Method of forming retrograde n-well and p-well (2002-04-19)
 * {ref}`US 6,964,929 B1 <patent-gp35266339>` — unknown
 * {ref}`US 6,806,133 B2 <patent-gp29417389>` — Method for fabricating semiconductor device with triple well structure (2002-05-16)
+* {ref}`US 6,682,996 B1 <patent-gp30113994>` — unknown
 * {ref}`US 6,969,689 B1 <patent-gp35405131>` — Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices (2002-06-28)
 * {ref}`US 7,256,083 B1 <patent-gp38337005>` — unknown
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
