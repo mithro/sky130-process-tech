@@ -329,6 +329,7 @@ thicknesses are not public.
 
 * {ref}`US 5,028,565 A <patent-gp23576244>` — Process for CVD deposition of tungsten layer on semiconductor wafer (1989)
 * {ref}`US 5,374,594 A <patent-gp24212535>` — Gas-based backside protection during substrate processing (1990)
+* {ref}`US 5,366,929 A <patent-gp22085430>` — Method for making reliable selective via fills (1993)
 * {ref}`US 6,319,553 B1 <patent-gp22616474>` — Isolation of incompatible processes in a multi-station processing chamber (1998)
 * {ref}`US 6,635,965 B1 <patent-gp46204269>` — Method for producing ultra-thin tungsten layers with improved step coverage (2001)
 

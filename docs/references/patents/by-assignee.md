@@ -27,6 +27,7 @@ heading here is not necessarily the name printed on the patent.
 
 * {ref}`US 4,986,878 A <patent-gp22827270>` — Process for improved planarization of the passivation layers for semiconductor devices (1988-07-19)
 * {ref}`US 5,443,998 A <patent-gp27012173>` — Method of forming a chlorinated silicon nitride barrier layer (1989-08-01)
+* {ref}`US 5,366,929 A <patent-gp22085430>` — Method for making reliable selective via fills (1993-05-28)
 * {ref}`US 5,665,639 A <patent-gp22742690>` — Process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal (1994-02-23)
 * {ref}`US 5,468,342 A <patent-gp22881554>` — Method of etching an oxide layer (1994-04-28)
 * {ref}`US 5,562,801 A <patent-gp23382383>` — Method of etching an oxide layer (1994-04-28)
@@ -44,6 +45,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 5,977,638 A <patent-gp25035177>` — Edge metal for interconnect layers (1996-11-21)
 * {ref}`US 5,861,676 A <patent-gp25050977>` — Method of forming robust interconnect and contact structures in a semiconductor and/or integrated circuit (1996-11-27)
 * {ref}`US 5,897,354 A <patent-gp25083775>` — Method of forming a non-volatile memory device with ramped tunnel dielectric layer (1996-12-17)
+* {ref}`US 5,897,371 A <patent-gp25086438>` — Alignment process compatible with chemical mechanical polishing (1996-12-19)
 * {ref}`US 5,913,712 A <patent-gp24040492>` — Scratch reduction in semiconductor circuit fabrication using chemical-mechanical polishing (1997-03-12)
 * {ref}`US 5,968,851 A <patent-gp25231985>` — Controlled isotropic etch process and method of forming an opening in a dielectric layer (1997-03-19)
 * {ref}`US 5,851,892 A <patent-gp25314008>` — Fabrication sequence employing an oxide formed with minimized inducted charge and/or maximized breakdown voltage (1997-05-07)
@@ -58,6 +60,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,232,231 B1 <patent-gp22505307>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect (1998-08-31)
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998-11-09)
 * {ref}`US 6,825,544 B1 <patent-gp33449343>` — Method for shallow trench isolation and shallow trench isolation structure (1998-12-09)
+* {ref}`US 6,372,150 B1 <patent-gp22801618>` — High vapor plasma strip methods and devices to enhance the reduction of organic residues over metal surfaces (1998-12-18)
 * {ref}`US 6,372,634 B1 <patent-gp23302890>` — unknown
 * {ref}`US 2002/0090817 A1 <patent-gp23341388>` — unknown
 * {ref}`US 6,890,860 B1 <patent-gp34549094>` — unknown
@@ -67,11 +70,14 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,969,448 B1 <patent-gp23892778>` — Method for forming a metallization structure in an integrated circuit (1999-12-30)
 * {ref}`US 6,596,466 B1 <patent-gp23950559>` — unknown
 * {ref}`US 6,727,161 B2 <patent-gp24011612>` — unknown
+* {ref}`US 6,350,665 B1 <patent-gp24241366>` — unknown
+* {ref}`US 6,399,512 B1 <patent-gp24376957>` — unknown
 * {ref}`US 7,084,066 B1 <patent-gp36710501>` — unknown
 * {ref}`US 6,841,008 B1 <patent-gp33552841>` — unknown
 * {ref}`US 6,817,903 B1 <patent-gp33418789>` — Process for reducing leakage in an integrated circuit with shallow trench isolated active areas (2000-08-09)
 * {ref}`US 2004/0183199 A1 <patent-gp32991247>` — unknown
 * {ref}`US 8,030,172 B1 <patent-gp44676718>` — unknown
+* {ref}`US 6,756,315 B1 <patent-gp32508386>` — unknown
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
 * {ref}`US 6,593,208 B1 <patent-gp25130177>` — Method of uniform polish in shallow trench isolation process (2001-02-14)
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
@@ -80,10 +86,12 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001-07-12)
 * {ref}`US 6,818,558 B1 <patent-gp31979047>` — Method of manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS) type devices (2001-07-31)
 * {ref}`US 6,844,235 B1 <patent-gp33565467>` — unknown
+* {ref}`US 6,562,675 B1 <patent-gp25461872>` — unknown
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
 * {ref}`US 6,828,201 B1 <patent-gp33476239>` — Method of manufacturing a top insulating layer for a sonos-type device (2001-10-22)
 * {ref}`US 6,841,491 B1 <patent-gp33550813>` — unknown
 * {ref}`US 7,026,235 B1 <patent-gp36127689>` — unknown
+* {ref}`US 7,129,178 B1 <patent-gp37189185>` — unknown
 * {ref}`US 6,677,213 B1 <patent-gp29778448>` — SONOS structure including a deuterated oxide-silicon interface and method for making the same (2002-03-08)
 * {ref}`US 7,151,048 B1 <patent-gp37526559>` — unknown
 * {ref}`US 6,699,795 B1 <patent-gp31713884>` — unknown
@@ -91,6 +99,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,964,929 B1 <patent-gp35266339>` — unknown
 * {ref}`US 6,866,571 B1 <patent-gp34271789>` — unknown
 * {ref}`US 7,192,867 B1 <patent-gp37863803>` — unknown
+* {ref}`US 6,682,996 B1 <patent-gp30113994>` — unknown
 * {ref}`US 7,256,083 B1 <patent-gp38337005>` — unknown
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
@@ -126,6 +135,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 9,728,414 B2 <patent-gp39527860>` — unknown
 * {ref}`US 7,944,020 B1 <patent-gp43981552>` — unknown
 * {ref}`US 9,583,501 B1 <patent-gp39541580>` — in force
+* {ref}`US 7,901,976 B1 <patent-gp43639265>` — unknown
 * {ref}`US 2009/0179253 A1 <patent-gp40849883>` — in force
 * {ref}`US 2013/0178031 A1 <patent-gp48744178>` — unknown
 * {ref}`US 2013/0306975 A1 <patent-gp49580585>` — unknown
@@ -163,6 +173,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 8,772,057 B1 <patent-gp51031728>` — unknown
 * {ref}`US 8,772,059 B2 <patent-gp48743334>` — in force
 * {ref}`US 8,685,813 B2 <patent-gp48945910>` — in force
+* {ref}`US 2013/0178030 A1 <patent-gp48744177>` — unknown
 * {ref}`US 11,342,429 B2 <patent-gp58691400>` — in force
 * {ref}`US 9,209,197 B2 <patent-gp50929922>` — unknown
 * {ref}`US 11,183,509 B2 <patent-gp51221986>` — in force
@@ -186,6 +197,10 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 10,062,573 B1 <patent-gp63208150>` — in force
 * {ref}`US 11,690,227 B2 <patent-gp65016688>` — in force
 * {ref}`US 2019/0027484 A1 <patent-gp65016335>` — unknown
+
+## Cypress Semiconductor Corporation
+
+* {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
 
 ## SkyWater Technology Foundry Inc
 
