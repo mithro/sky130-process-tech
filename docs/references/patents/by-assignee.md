@@ -53,6 +53,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,165,375 A <patent-gp25467538>` — Plasma etching method (1997-09-23)
 * {ref}`US 6,033,991 A <patent-gp25473825>` — Isolation scheme based on recessed locos using a sloped Si etch and dry field oxidation (1997-09-29)
 * {ref}`US 6,140,228 A <patent-gp25516451>` — Low temperature metallization process (1997-11-13)
+* {ref}`US 5,976,900 A <patent-gp25532345>` — Method of reducing impurity contamination in semiconductor process chambers (1997-12-08)
 * {ref}`US 6,906,421 B1 <patent-gp34632364>` — Method of forming a low resistivity Ti-containing interconnect and semiconductor device comprising the same (1998-01-14)
 * {ref}`US 6,403,488 B1 <patent-gp26761865>` — Selective SAC etch process (1998-03-19)
 * {ref}`US 6,255,180 B1 <patent-gp22147006>` — Semiconductor device with outwardly tapered sidewall spacers and method for forming same (1998-05-14)
@@ -81,6 +82,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,693,042 B1 <patent-gp31188927>` — unknown
 * {ref}`US 6,593,208 B1 <patent-gp25130177>` — Method of uniform polish in shallow trench isolation process (2001-02-14)
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
+* {ref}`US 6,969,684 B1 <patent-gp35405129>` — unknown
 * {ref}`US 6,831,346 B1 <patent-gp33491100>` — unknown
 * {ref}`US 7,014,552 B1 <patent-gp36045460>` — unknown
 * {ref}`US 6,531,366 B1 <patent-gp25418952>` — Method and structure for high-voltage device with self-aligned graded junctions (2001-07-12)
@@ -104,6 +106,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 8,080,453 B1 <patent-gp45219187>` — unknown
 * {ref}`US 6,866,986 B2 <patent-gp30114169>` — unknown
 * {ref}`US 6,774,033 B1 <patent-gp32823623>` — Metal stack for local interconnect layer (2002-11-04)
+* {ref}`US 6,774,012 B1 <patent-gp32823630>` — unknown
 * {ref}`US 6,977,217 B1 <patent-gp35465546>` — Aluminum-filled via structure with barrier layer (2002-12-03)
 * {ref}`US 6,680,516 B1 <patent-gp30000311>` — unknown
 * {ref}`US 6,803,321 B1 <patent-gp33096598>` — unknown
@@ -116,6 +119,7 @@ heading here is not necessarily the name printed on the patent.
 * {ref}`US 6,794,269 B1 <patent-gp32987143>` — unknown
 * {ref}`US 6,869,850 B1 <patent-gp34272235>` — unknown
 * {ref}`US 6,764,890 B1 <patent-gp32681640>` — Method of adjusting the threshold voltage of a mosfet (2003-01-29)
+* {ref}`US 6,833,622 B1 <patent-gp33510264>` — unknown
 * {ref}`US 7,323,411 B1 <patent-gp38973875>` — unknown
 * {ref}`US 7,371,637 B2 <patent-gp34381269>` — unknown
 * {ref}`US 7,105,413 B2 <patent-gp34964103>` — Methods for forming super-steep diffusion region profiles in MOS devices and resulting semiconductor topographies (2004-03-26)
@@ -200,7 +204,13 @@ heading here is not necessarily the name printed on the patent.
 
 ## Cypress Semiconductor Corporation
 
+* {ref}`US 6,586,806 B1 <patent-gp26739424>` — Method and structure for a single-sided non-self-aligned transistor (1997-09-03)
+* {ref}`US 6,273,098 B1 <patent-gp25524224>` — Extension of the useful life of a chemical bath used to process a substrate (1997-11-24)
+* {ref}`US 6,638,856 B1 <patent-gp29249879>` — Method of depositing metal onto a substrate (1998-09-11)
+* {ref}`US 7,659,180 B1 <patent-gp41646422>` — unknown
 * {ref}`US 9,202,758 B1 <patent-gp54609329>` — unknown
+* {ref}`US 9,299,578 B2 <patent-gp36614601>` — unknown
+* {ref}`US 9,831,113 B2 <patent-gp39594663>` — unknown
 
 ## SkyWater Technology Foundry Inc
 
