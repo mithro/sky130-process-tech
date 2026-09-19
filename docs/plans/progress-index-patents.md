@@ -723,12 +723,24 @@ is nothing else to find under any spelling.
 **Totals.** 494 Cypress + 16 Longitude + 13 Infineon Technologies LLC +
 63 Ramtron + 1 SkyWater = 587 CPC-restricted hits (a family can count
 under more than one assignee query), 559 distinct DOCDB families.
-93 already present, 81 added, 385 out of scope (title-triaged: FRAM/
-ferroelectric, circuits, packaging, test structures, EDA/software,
-USB/PSoC, or a technology the lineage fab never ran), 0 explicitly left
-for later this round (every hit was triaged to a decision; see the
+93 already present, 81 added, 385 out of scope, 0 explicitly left for
+later this round (every hit was triaged to a decision; see the
 discovery log for the full per-family table and the individually-
-reasoned exclusions).
+reasoned exclusions). Of the 385: 12 were individually reasoned
+(ferroelectric/FRAM, circuit, EDA-software, or a technology the
+lineage fab never ran -- see "Explicitly excluded" in the discovery
+log); the other 373 were triaged by a scripted title-keyword
+classifier, not a full read of each patent, and default to out of
+scope when the title names no unambiguous in-scope phrase -- a spot
+check afterwards found real false negatives in this bucket (e.g.
+"Sealed self aligned contacts using two nitrides process",
+GP24009558, is plainly a process patent the keyword list simply didn't
+cover). The discovery log's reason column for these says so honestly
+(a title-only heuristic default, not an individual finding that the
+patent is out of scope) rather than asserting a specific false reason;
+**a future round should read this 373-family bucket's titles again
+with a broader keyword list, or individually**, rather than treat it
+as settled.
 
 **Additions.** 81 new families (79 Cypress-attributed, 2 Infineon
 Technologies LLC-attributed, one of which doubles as a Longitude hit):
