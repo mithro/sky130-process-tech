@@ -112,11 +112,10 @@ and modelled for N₂O {term}`oxynitrides <oxynitride>` by Hwang et al.[^hwang-1
 nitrogen also reduces hot-carrier degradation and raises the dielectric
 constant slightly.[^hori-1997][^hori-1989] SkyWater lists "Nitrided gate
 oxide" among its special modules,[^skw-01] and Cypress's integration
-patent, which may still be in force, nitrides its gate insulators and
-the ONO together — the conditions are in the collapsed note below.
-Whether SKY130's 1.8 V oxide is nitrided is not stated publicly; we
-infer that it is, from the special-module listing and the Cypress
-lineage.
+patent, which may still be in force, bears on the question; what it
+says is in the collapsed note below. Whether SKY130's 1.8 V oxide is
+nitrided is not stated publicly; we infer that it is, from the
+special-module listing and the Cypress lineage.
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
 Cypress's integration patent nitrides its gate insulators and the ONO

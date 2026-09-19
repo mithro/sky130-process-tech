@@ -396,9 +396,9 @@ two implants set their channel doping ({ref}`PTSI <step-037>`,
 the whole wafer ({ref}`ONO <step-040>`) and then removed from everything
 except the memory cells ({ref}`ONOM <step-041>`,
 {ref}`ONOME <step-042>`). The module comes before the logic gate
-oxides, the order of Cypress's integration patent, which may still be in
-force; what that patent says the logic gate oxidation does for the stack
-is in the collapsed note below this paragraph.
+oxides, the order the step list gives;[^steps-sheet] a Cypress patent
+that may still be in force bears on that ordering, in the collapsed note
+below this paragraph.
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
 In Cypress's integration patent the logic gate oxidation has "the

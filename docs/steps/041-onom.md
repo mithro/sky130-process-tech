@@ -73,9 +73,10 @@ thermal oxidation of bare silicon, which the stack would block. The
 stack therefore has to be removed everywhere except the cells, and it
 has to be removed *before* the gate oxidations
 ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`), which is where
-Cypress's flow puts it — what that patent, which may still be in force,
-says the later gate oxidation does for the stack is in the collapsed
-note below this section. A 2011 Cypress/UMC
+the step list puts it, `ONO` being step 40 and `GOX100`
+step 43;[^steps-sheet] a Cypress patent that may still be in force bears
+on the same point, in the collapsed note below this section. A 2011
+Cypress/UMC
 press release puts the cost of the module in the 65 nm S65 process at
 "three additional mask layers" (it gives no count for S8),[^cyp-22] and
 Cypress's 2020 article credits {term}`SONOS` with "the
