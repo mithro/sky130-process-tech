@@ -196,15 +196,17 @@ values.[^steigerwald-1997][^zantye-2004]
 * {ref}`US 4,789,648 A <patent-gp25155097>` — Method for producing coplanar multi-level metal/insulator films on a substrate and for forming patterned conductive lines simultaneously with stud vias (1985)
 * {ref}`US 4,944,836 A <patent-gp25155001>` — Chem-mech polishing method for producing coplanar metal/insulator films on a substrate (1985)
 * {ref}`US 5,433,651 A <patent-gp22631367>` — In-situ endpoint detection and process monitoring method and apparatus for chemical-mechanical polishing (1993)
+* {ref}`US 5,913,712 A <patent-gp24040492>` — Scratch reduction in semiconductor circuit fabrication using chemical-mechanical polishing (1997)
 * {ref}`US 6,232,231 B1 <patent-gp22505307>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect (1998)
 * {ref}`US 6,566,249 B1 <patent-gp22697217>` — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures (1998)
 
-:::{dropdown} 3 families in force or status unknown
+:::{dropdown} 4 families in force or status unknown
 
 Status and expiry are estimates from public records and are not legal advice.
 
 * {ref}`US 6,786,809 B1 <patent-gp32928137>` — unknown
 * {ref}`US 6,844,262 B1 <patent-gp33565470>` — unknown
+* {ref}`US 6,857,938 B1 <patent-gp34134936>` — unknown
 * {ref}`US 7,361,602 B1 <patent-gp39310141>` — unknown
 :::
 <!-- index-links:end -->
