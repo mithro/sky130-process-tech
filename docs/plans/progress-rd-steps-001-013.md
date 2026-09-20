@@ -67,6 +67,20 @@ task boundaries, "declare additions only when the guide tells you to add text").
    exists:* sub-bullet form as the others, and included in the required four-tool recap table,
    even though "Tool" is a slight misnomer for a wafer supplier. Recorded rather than silently
    left out, since the rule gives no exception for this case.
+5. **R-RELATED's six labels don't cover a "same category, several modules away" bullet.**
+   Several step pages list sibling steps of the same process category that are scattered across
+   different flow modules (e.g. 002-box.md's "other thermal oxidations in the flow"). None of
+   Previous/Next/Same module/Depends on/Feeds/Category is a clean fit. Conservative choice:
+   "Same module" as the least-wrong label, since it is the closest in spirit (a same-kind
+   sibling list) even where the steps are not literally in one module.
+6. **`check_preserved.py`'s `NUMBER_RE` has no word-boundary guard.** Unlike
+   `measure.py`/`measure2.py`'s number regex, `check_preserved.py`'s matches any digit run
+   anywhere, including inside identifiers such as "SKY130" (→ "130"), "EV300" (→ "300"), "1X"
+   (→ "1"), "SC-1"/"SC-2" (→ "1"/"2"). Any new sentence that so much as says "SKY130" registers
+   as an "ADDED numbers" difference. This is harmless (verified by hand each time) but means the
+   `numbers` category is essentially always touched by an "At a glance" box or any new sentence
+   mentioning the technology name, and `--allow-added numbers` ends up declared on nearly every
+   page in this batch, not just ones with a genuine new figure.
 
 ## Per-page log
 
@@ -107,6 +121,40 @@ real change. All other checkers (`check_steps`, `check_refs`, `check_machines`,
 --check`) pass. `-W` build clean. Screenshots (desktop + 400 px) read top to bottom: the new
 derivation table, category bullet, and Machines-likely-used-at-SkyWater recap table all render
 without overflow at 400 px; no other issue seen.
+
+### 002-box.md — done
+
+Rules applied: R-SENTENCE (first sentence of "What this step is" split at its colon for the
+≤25-word cap), R-CATEGORY (classification sentence + one "Specific to this step:" bullet — Guide
+problem 3 again, only one sentence remained), R-HEDGE step 1 (the "industry-generic recipe for a
+200 mm fab of the 130 nm era:" opener wrapped in `:::{note}` word for word), R-TOOLS (two
+"Strength:" bullets, both < 4 tools so no recap table per the rule's own threshold — split into
+SkyWater says/Tool exists/Runs this step sub-bullets), R-RELATED ("Feeds:" added to the
+pad-oxide-fate bullet; "Same module:" added to the "other thermal oxidations in the flow" bullet
+— see Guide problem 5, a new one: the bullet spans several modules, not one, and none of the six
+labels fits cleanly; "Same module" was the least-wrong choice), R-OPENQ (bold labels added to all
+three previously unlabelled bullets), R-GLANCE (box added last; "Public numbers" is "none
+published" per the rule's own fallback, since the only published range for SKY130 lives inside
+the in-force-patent dropdown and R-GLANCE point 4 forbids drawing from it — the AmberWave-patent
+range in open prose has no number-of-its-own attached at the point it would need one, so it was
+left out rather than restated loosely). R-H3: evaluated, not applied — "What this step is" is
+already exactly 2 paragraphs and only slightly over 120 words (~130), and the content is
+narrative rather than an evidence list or derivation that the H3 vocabulary fits; left alone per
+"if a rule does not clearly apply, leave the text alone." R-TABLE/R-DERIVATION/R-LIST: no
+candidate (measure3/measure4 found none on this page). R-CODE: no candidate.
+
+No paragraph or list item on this page was over its cap before editing (per-page
+`measure_batch.py` run: 0 paragraphs ≥120, 1 item ≥80 words — the "Furnace" Machines-likely-used
+bullet, resolved by the R-TOOLS split above).
+
+`check_preserved.py docs/steps/002-box.md --allow-added markers,numbers,hedges`: exit 0, no
+`number_order` involvement at all (no multi-number unit was split this page). The `numbers`
+addition is two more instances of literal "130" — traced to `check_preserved.py`'s `NUMBER_RE`,
+which (unlike `measure.py`'s) has no word-boundary guard, so it matches "130" inside "SKY130"
+every time that word appears in new prose (also explains the "'130'"/"'300'"/"'1'" additions on
+page 001, which come from "SKY130", "EV300" and "1X" the same way) — recorded as Guide problem 2b
+below. All other checkers and the `-W` build pass; screenshots at both widths read cleanly, note
+admonition and both tool sub-bullet blocks render without overflow.
 
 ## Batch measurements (all 13 pages, before editing)
 
