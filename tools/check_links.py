@@ -235,6 +235,21 @@ BLOCKED_HOSTS = {
     "businesswire.com",  # connection dropped for scripted clients (verified 2026-09-19); Wayback shows the page live
     "startribune.com",  # persistent 429 to scripted clients (verified 2026-09-19); Wayback shows the pages live and recent
     "semimarket.com",  # 403 to scripted clients, 200 to a browser one (verified 2026-09-20); found via --soft-dead's thin-body check
+    # Found via --include-generated (2026-09-20), which checks these hosts
+    # for the first time -- 403 to this checker on every one of the
+    # dozens/hundreds of distinct patent-office or paper records tried,
+    # a live, actively maintained platform in every case, not a pattern
+    # consistent with the specific records having been individually
+    # removed:
+    "espacenet.com",  # 403 to both this UA and a browser one (EPO's Espacenet; verified 2026-09-20)
+    "academic.oup.com",  # 403 to both UAs (verified 2026-09-20)
+    "dl.acm.org",  # 403 to both UAs (verified 2026-09-20)
+    "escholarship.org",  # 403 to this UA, 202 to a browser one (verified 2026-09-20)
+    "wiley.com",  # 403 to both UAs, onlinelibrary and ietresearch.onlinelibrary subdomains (verified 2026-09-20)
+    "pubs.aip.org",  # 403 to both UAs (verified 2026-09-20)
+    "authorea.com",  # 403 to both UAs (verified 2026-09-20)
+    "mdpi.com",  # 403 to both UAs (verified 2026-09-20)
+    "techrxiv.org",  # 403 to both UAs (verified 2026-09-20)
 }
 
 # Per-host request pacing, in seconds.  Anything not listed uses
