@@ -35,6 +35,14 @@ by-relationship
 audits
 ```
 
+## Counts
+
+By company: Cypress Semiconductor Corporation (26), SkyWater Technology, Inc. (43), Infineon Technologies AG (7), IonQ, Inc. (3), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), Weebit Nano Limited (5).
+
+By type: Annual reports (42), Quarterly and half-year reports (18), Current reports and exhibits (13), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
+
+By year: 1994 (1), 1996 (1), 1997 (1), 1998 (1), 1999 (1), 2000 (1), 2002 (1), 2003 (1), 2004 (1), 2005 (1), 2006 (1), 2007 (1), 2008 (1), 2009 (1), 2010 (1), 2011 (1), 2012 (1), 2013 (1), 2014 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (3), 2020 (3), 2021 (9), 2022 (9), 2023 (11), 2024 (10), 2025 (9), 2026 (12).
+
 ## How to read an entry
 
 Each entry gives the filer, the form and what it covers, the filing
@@ -62,12 +70,6 @@ which this project's checking tools do not send. Every EDGAR
 document below is therefore read from a Wayback Machine capture or a
 company investor-relations copy; the `sec.gov` link is kept as the
 canonical citation but was not itself fetched by this project.
-
-By company: Cypress Semiconductor Corporation (26), SkyWater Technology, Inc. (43), Infineon Technologies AG (7), IonQ, Inc. (3), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), Weebit Nano Limited (5).
-
-By type: Annual reports (42), Quarterly and half-year reports (18), Current reports and exhibits (13), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
-
-By year: 1994 (1), 1996 (1), 1997 (1), 1998 (1), 1999 (1), 2000 (1), 2002 (1), 2003 (1), 2004 (1), 2005 (1), 2006 (1), 2007 (1), 2008 (1), 2009 (1), 2010 (1), 2011 (1), 2012 (1), 2013 (1), 2014 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (3), 2020 (3), 2021 (9), 2022 (9), 2023 (11), 2024 (10), 2025 (9), 2026 (12).
 
 **Known gaps.**
 

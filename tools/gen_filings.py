@@ -280,6 +280,20 @@ def gen_index(rs: list[dict], gaps: list[dict]) -> str:
         "audits",
         "```",
         "",
+        # review M6: patents and papers both keep their counts visible
+        # ("browse the views, with counts", report-C C11); filings had
+        # moved them into the closing dropdown, the only one of the
+        # three to hide them.
+        "## Counts",
+        "",
+        "By company: " + ", ".join(
+            f"{esc(check_filings.COMPANIES[k][0])} ({companies[k]})"
+            for k in company_keys_in_order() if companies[k]) + ".",
+        "",
+        "By type: " + ", ".join(f"{esc(name)} ({types[name]})" for name, _ in DOCTYPE_GROUPS if types[name]) + ".",
+        "",
+        "By year: " + ", ".join(f"{y} ({years[y]})" for y in sorted(years)) + ".",
+        "",
         "## How to read an entry",
         "",
         "Each entry gives the filer, the form and what it covers, the filing",
@@ -296,10 +310,11 @@ def gen_index(rs: list[dict], gaps: list[dict]) -> str:
     ]
     for date, headline, rid in TIMELINE:
         body.append(f"* **{date}** — {esc(headline)} See {{ref}}`the filing <filing-{rid}>`.")
-    # report-C C11: the EDGAR access note, the counts and the known-gaps
-    # list are methodology/accounting, not something a reader browsing
-    # the filings needs first -- collapsed, verbatim, alongside patents'
-    # and papers' identically titled dropdown.
+    # report-C C11: the EDGAR access note and the known-gaps list are
+    # methodology/accounting, not something a reader browsing the
+    # filings needs first -- collapsed, verbatim, alongside patents' and
+    # papers' identically titled dropdown. The counts stay visible above
+    # (review M6).
     body += [
         "",
         ":::{dropdown} Scope, method and counts",
@@ -309,14 +324,6 @@ def gen_index(rs: list[dict], gaps: list[dict]) -> str:
         "document below is therefore read from a Wayback Machine capture or a",
         "company investor-relations copy; the `sec.gov` link is kept as the",
         "canonical citation but was not itself fetched by this project.",
-        "",
-        "By company: " + ", ".join(
-            f"{esc(check_filings.COMPANIES[k][0])} ({companies[k]})"
-            for k in company_keys_in_order() if companies[k]) + ".",
-        "",
-        "By type: " + ", ".join(f"{esc(name)} ({types[name]})" for name, _ in DOCTYPE_GROUPS if types[name]) + ".",
-        "",
-        "By year: " + ", ".join(f"{y} ({years[y]})" for y in sorted(years)) + ".",
         "",
     ]
     body += gen_known_gaps(gaps)
