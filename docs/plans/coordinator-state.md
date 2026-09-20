@@ -41,9 +41,12 @@ check list of `agent-briefs.md`, one worktree and branch each, and a progress fi
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-theme` | W0a theme CSS and footnote popover; W0b `tools/check_preserved.py` | Sonnet | running |
-| `topic/rd-generators` | W0d generators (step index, index-links block, patent/paper/filing indexes, step-link text) | Sonnet | running |
-| `topic/rd-guide` | `docs/plans/readability-guide.md` from the four reports | Opus | running |
+| `topic/rd-links` | W0f link checker, dead links to Wayback copies, soft-404 detection, generated pages | Sonnet | running (second round) |
+| `topic/rd-citelinks` | W0c citation links: style rule 5, `check_refs.py` invariant, `tools/fix_reading_list_links.py`, site-wide run | Sonnet | started 2026-09-20 |
+| `topic/rd-steps-001-013` | W2 pilot: readability rules on steps 001–013 (validates the guide) | Sonnet | started 2026-09-20 |
+
+Merged so far: guide, theme + `check_preserved.py`, generators, figure tooling + 16 figures (see the plan's
+status column). Reviews live under the git-ignored `tmp/reviews/`.
 
 Next: Opus review of each branch (rendered pages included), fixes, merge; then W0c (citation links — after the
 generators branch, which touches the same region of 206 pages), W0e, W0f, W1a; then the page batches W2–W4.

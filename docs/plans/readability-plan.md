@@ -28,19 +28,19 @@ is the order of work and its status.
 
 | Id | Task | Source | Status |
 |---|---|---|---|
-| W0a | `docs/_static/custom.css` (footnote back-reference wrap, table cell alignment and zebra rows, sticky header, first-column stickiness on phones, 44 em text measure, caption and glossary-term styling), `footnote-popover.js`, `conf.py` entries | C2, C3, C12, B §3.2 | [ ] |
-| W0b | `tools/check_preserved.py` — before/after preservation check used by every hand-edit branch | A §2, B §3.4 | [ ] |
+| W0a | `docs/_static/custom.css` (footnote back-reference wrap, table cell alignment and zebra rows, sticky header, first-column stickiness on phones, 44 em text measure, caption and glossary-term styling), `footnote-popover.js`, `conf.py` entries | C2, C3, C12, B §3.2 | [x] merged 2026-09-20 (reviewed; sticky first column and keyboard navigation dropped after review) |
+| W0b | `tools/check_preserved.py` — before/after preservation check used by every hand-edit branch | A §2, B §3.4 | [x] merged 2026-09-20 (run the branch's own copy: it resolves the repository from its file location) |
 | W0c | Citation policy: reword citation-style rule 5; add the "inline URL must equal a URL in the page's own footnote definitions" invariant to `check_refs.py` with a self-test; promote the dry-run script to `tools/fix_reading_list_links.py`; run it site-wide (about 6,200 bullets); hand-finish the leftovers under C1 rules 2–3; link named titles in prose (C4, 172 cases) | C1, C4, A F14, B10 | [ ] |
-| W0d | Generators: sync `gen_steps.py` with the committed index intro, group the step index by module, short sidebar titles, `Machine class` and `Mask` columns, `--check`; `gen_index_links.py` heading and title link text; `gen_patents.py` clickable URLs and index order (papers, filings the same) | A F13, F17, B2, B11, C8, C11 | [ ] |
+| W0d | Generators: sync `gen_steps.py` with the committed index intro, group the step index by module, short sidebar titles, `Machine class` and `Mask` columns, `--check`; `gen_index_links.py` heading and title link text; `gen_patents.py` clickable URLs and index order (papers, filings the same) | A F13, F17, B2, B11, C8, C11 | [x] merged 2026-09-20 (reviewed; B9 step-link text done here too) |
 | W0e | Checker changes that unlock layout fixes: `check_machines.index_rows` (two-column main table), `check_materials.Index` (steps from a second table), `check_masks.OPTIONAL_H3` | B2, B8 | [ ] |
-| W0f | Links: fix the Wayback lookup in `check_links.py` (retry, no long-lived negative cache, CDX fallback), add `--suggest-archive` and `--include-generated`; apply the archive-first citation form to every dead link; re-check THUNG-2016 | C5 | [ ] |
+| W0f | Links: fix the Wayback lookup in `check_links.py` (retry, no long-lived negative cache, CDX fallback), add `--suggest-archive` and `--include-generated`; apply the archive-first citation form to every dead link; re-check THUNG-2016 | C5 | [~] `topic/rd-links`: tool fixed; conversion of dead links, soft-404 detection and generated pages in progress |
 
 ### W1 — figures
 
 | Id | Task | Status |
 |---|---|---|
-| W1a | Productionise the prototype: `tools/gen_figures.py` (+ `--check`, embedded width table, no new dependency), `data/figures/`, `docs/_static/figures/`, `figure-theme.js`, tokens file, "Figure conventions" page, `check_inforce.py` hook for figure specs | [ ] |
-| W1b | First set for a look before scaling: isolation series S1 (steps 001–013), the module flow map on the overview, the back-end stack chart | [ ] |
+| W1a | Productionise the prototype: `tools/gen_figures.py` (+ `--check`, embedded width table, no new dependency), `data/figures/`, `docs/_static/figures/`, `figure-theme.js`, tokens file, "Figure conventions" page, `check_inforce.py` hook for figure specs | [x] merged 2026-09-20 (reviewed; leader routing rewritten, in-force screen covers all figure text) |
+| W1b | First set for a look before scaling: isolation series S1 (steps 001–013), the module flow map on the overview, the back-end stack chart | [x] merged 2026-09-20 — 16 figures; authoring guide `docs/plans/figure-authoring.md` |
 | W1c | Remaining series S2–S11 (series files by Opus, fact-checked against their pages; per-step figure specs by Sonnet) | [ ] |
 | W1d | Machine block-chains (30), mask derivation chains (36), category mechanism sketches (10), remaining charts | [ ] |
 
@@ -86,3 +86,4 @@ references index table.
 | Date | Event |
 |---|---|
 | 2026-09-20 | Four review reports and prototypes in; plan written. |
+| 2026-09-20 | Guide, theme + preservation checker, generators, figure tooling + first 16 figures merged, each after an Opus review and a fix round. W0c and the step-page pilot (001–013) started. |
