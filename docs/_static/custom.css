@@ -23,7 +23,18 @@ aside.footnote {
    2. Footnote popover card (footnote-popover.js). Appended to <body>, so
    it is never clipped by a table wrapper's or a dropdown's overflow. */
 .fn-popover {
-  position: absolute;
+  /* "fixed", not "absolute": the card now sits next to its marker in
+     DOM order (for Tab order, review finding M4) rather than appended
+     to <body>, and a marker inside a sphinx_design {dropdown} lives
+     inside ".sd-card", which sphinx-design gives "position: relative"
+     — that would become the containing block for an absolutely
+     positioned card, breaking the viewport-relative math in
+     footnote-popover.js. "fixed" is anchored to the viewport
+     regardless of any ancestor's "position: relative", and still
+     escapes a ".table-wrapper" or ".sd-card"'s own overflow clipping,
+     which is what keeps the card visible over a scrolled table or an
+     open dropdown. */
+  position: fixed;
   z-index: 60;
   box-sizing: border-box;
   padding: 0.6rem 0.8rem;
@@ -49,8 +60,12 @@ aside.footnote {
   margin-bottom: 0;
 }
 
-/* A slightly larger hit area on the marker itself, and keep a run of
-   several markers ("[18][19][20]") from splitting across a line break. */
+/* A slightly larger hit area on the marker itself. This does not stop a
+   marker splitting from the word before it onto the next line ("fab.
+   ⏎ [1][2]" — report-C C12 records that case as not fixable in CSS);
+   it only keeps adjacent markers such as "[18][19][20]" from breaking
+   between each other, which they would not do anyway since there is no
+   space between them for the line breaker to use. */
 a.footnote-reference {
   padding: 0 0.1em;
   white-space: nowrap;
@@ -58,20 +73,21 @@ a.footnote-reference {
 
 /* --------------------------------------------------------------------
    3. Tables (report-C C12, report-B section 3 item 2): top-aligned
-   cells, zebra rows, sticky header. */
+   cells and zebra rows.
+   A sticky header was tried and dropped (review finding M1, 2026-09-20):
+   furo wraps every table in ".table-wrapper.container" with
+   "overflow-x: auto", which computes to "overflow-y: auto" too, so the
+   wrapper is the scroll container on both axes and never itself scrolls
+   vertically (the page around it does). "position: sticky; top: 0" on
+   thead th therefore never has anything to stick to — it is dead code,
+   and its background painted a spurious grey stub row over the empty
+   "| | Title |" header cell that every quick-facts table uses. */
 table.docutils td {
   vertical-align: top;
 }
 
 table.docutils tbody tr:nth-child(even) {
-  background: var(--color-background-secondary);
-}
-
-table.docutils thead th {
-  position: sticky;
-  top: 0;
-  background: var(--color-background-secondary);
-  z-index: 1;
+  background: var(--color-background-hover);
 }
 
 /* No-wrap labels in the first column of a two-column "quick facts"
@@ -82,35 +98,22 @@ table.docutils tr > td:first-child:nth-last-child(2) > p:only-child > strong:onl
   white-space: nowrap;
 }
 
-/* On a narrow screen: a smaller table font and a sticky first column,
-   inside furo's own table-wrapper div, so long tables stay readable
-   without the reader losing the row label while scrolling sideways. */
+/* On a narrow screen, a smaller table font inside furo's own
+   table-wrapper div, so long tables stay readable.
+   A sticky first column was tried and dropped (review finding M2,
+   2026-09-20): it helps a table whose first column is a short code or
+   key (materials/index's "Key" column), but it mutilates one whose
+   first column is wrapped prose (machines/index's "Machine class",
+   masks/index's "Two-level masters" or similar) — the stuck cell then
+   permanently covers the first ~50 px of the adjacent column with no
+   border to show it is doing so, so "polishing" reads "lishing". Doing
+   this safely needs the table itself to say which kind of column it
+   has (a class emitted by the generators, W0d/W0e — this branch does
+   not own them and does not edit content pages), so for now every
+   table just gets the smaller font. */
 @media (max-width: 40em) {
   .table-wrapper table.docutils {
     font-size: var(--font-size--small);
-  }
-
-  .table-wrapper td:first-child,
-  .table-wrapper th:first-child {
-    position: sticky;
-    left: 0;
-    z-index: 2;
-  }
-
-  .table-wrapper thead th:first-child {
-    z-index: 3;
-  }
-
-  .table-wrapper tbody tr:nth-child(odd) td:first-child {
-    background: var(--color-background-primary);
-  }
-
-  .table-wrapper tbody tr:nth-child(even) td:first-child {
-    background: var(--color-background-secondary);
-  }
-
-  .table-wrapper thead th {
-    background: var(--color-background-secondary);
   }
 }
 
@@ -122,7 +125,12 @@ dl.glossary dt {
 
 /* --------------------------------------------------------------------
    5. Prose measure: keep running text near 44em while tables, code,
-   figures and admonitions keep the full column width (report-C C12). */
+   figures and admonitions keep the full column width (report-C C12).
+   Note (review finding L2, 2026-09-20): furo's own ".content" box is
+   already capped at 46em, so today this only trims ~4%, not the ~20%
+   C12 asked for; kept anyway; a real reduction needs a narrower
+   article width and so belongs with any decision to lower furo's own
+   "--content-width" article-wide, not this rule alone. */
 article[role="main"] p,
 article[role="main"] li,
 article[role="main"] dd {

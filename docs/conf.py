@@ -54,6 +54,10 @@ html_theme_options = {
     "source_repository": "https://github.com/mithro/sky130-process-tech/",
     "source_branch": "main",
     "source_directory": "docs/",
-    # Left/Right arrow keys move between previous/next page (report-C C12).
-    "navigation_with_keys": True,
+    # "navigation_with_keys" (C12 listed it as optional polish) was tried
+    # and dropped: Sphinx's own doctools.js sends every unmodified
+    # ArrowLeft/ArrowRight to previous/next-page navigation except inside
+    # a handful of form controls, so it hijacks the arrow keys a reader
+    # uses to scroll one of this site's many horizontally-scrollable
+    # tables sideways (review finding M3, 2026-09-20).
 }

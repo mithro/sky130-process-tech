@@ -83,24 +83,50 @@ uv run python tools/check_preserved.py [--base main] [paths…]
 
 With no paths it finds every `docs/**/*.md` file outside `docs/plans` that
 differs from `--base` (default `main`) and compares each one, base revision
-against the working tree, in six categories: footnote markers and
-definitions, numeric tokens, quoted strings, `{ref}`/`{term}`/`{doc}`
-targets and URLs, hedge-phrase counts, and the text inside every
-`{dropdown}` block. Anything **lost** always fails the check. Anything
-**added** is printed either way, and fails unless its category is declared
-with `--allow-added` (a comma-separated list, e.g.
-`--allow-added refs,numbers` for a page where a new table adds step
-numbers already present in prose elsewhere on the page). A changed
-`{dropdown}` body always fails unless the edit is deliberately one the
-dropdown text itself, with `--allow-dropdown-edits`. Exit status is 1 on
-any undeclared difference; `uv run python tools/check_preserved.py
---selftest` exercises the checker itself and touches no files.
+against the working tree, in eight categories: footnote markers and
+definitions, numeric tokens, the *ordered* sequence of numbers that share
+a table row, list item or sentence (`number_order` — see below), quoted
+strings, `{ref}`/`{term}`/`{doc}` targets and URLs, hedge-phrase counts,
+and the text inside every `{dropdown}` block. Anything **lost** always
+fails the check. Anything **added** is printed either way (tagged
+"(declared)" when it was), and fails unless its category is declared with
+`--allow-added` (a comma-separated list, e.g. `--allow-added refs,numbers`
+for a page where a new table adds step numbers already present in prose
+elsewhere on the page). A changed `{dropdown}` body always fails unless
+the edit is deliberately one the dropdown text itself, with
+`--allow-dropdown-edits`. Exit status is 1 on any undeclared difference;
+`uv run python tools/check_preserved.py --selftest` exercises the checker
+itself and touches no files.
 
-Read every reported line: an addition you did not expect, or a loss in a
-category you meant to leave untouched, usually means the edit moved or
-reworded something incorrectly rather than only re-presenting it. A model
-that finds an arithmetic slip or factual doubt while re-presenting text
-reports it in the branch's progress file; it does not fix it here.
+**`number_order`.** The plain `numbers` category is a multiset: "6 of
+171" and "171 of 6" are the same two numbers, so a transposition inside
+one claim is invisible to it. `number_order` additionally tracks, per
+table row / list item / (heuristically split) sentence that holds two or
+more numbers, their left-to-right order, and catches exactly that kind of
+swap. It cannot catch a number moved *between* two units — two figures
+exchanged between adjacent table rows, or a marker moved from one claim
+to the next — because each unit's own internal order is still unchanged
+in that case; nor can it catch new prose that introduces no number at
+all. Sentence boundaries are found with a punctuation heuristic, not
+parsed, so an unusual sentence can be split the wrong way — this changes
+what counts as "one unit", not whether the table-row case works.
+
+**Read every reported line regardless.** The check is necessary, not
+sufficient: besides `number_order`'s own limits above, it has no notion
+of "the same claim" across a move, so a fact relocated to a different
+table cell, a footnote marker moved from one claim to an adjacent one
+that already carries a citation, or invented prose that carries no
+number, quotation, marker or hedge, can all pass with nothing printed.
+An addition you did not expect, or a loss in a category you meant to
+leave untouched, usually means the edit moved or reworded something
+incorrectly rather than only re-presenting it — but a silent page is not
+proof the edit is safe, only that this tool's checks did not catch a
+problem; read the diff itself, particularly around any table a weaker
+edit might have "completed" with an invented value. Record, in the
+branch's progress file, every `--allow-added` category used on a page and
+why. A model that finds an arithmetic slip or factual doubt while
+re-presenting text reports it in the branch's progress file; it does not
+fix it here.
 
 ## Writer brief (step pages)
 

@@ -10,6 +10,12 @@
  * <a class="footnote-reference" href="#label"> and
  * <aside class="footnote" id="label"> that docutils already renders,
  * so no page content changes, and it has no dependency.
+ *
+ * The card is inserted right after its marker in DOM order (not
+ * appended to <body>) so that Tab reaches its links immediately after
+ * the marker, and the marker carries aria-expanded/aria-describedby
+ * while the card is open, but nothing moves focus into the card and
+ * nothing traps it there — Tab continues past it as normal.
  */
 (function () {
   "use strict";
@@ -17,9 +23,22 @@
   var card = null;
   var owner = null;
   var hideTimer = null;
+  var cardSeq = 0;
+  /* Touch state, tracked independently of "owner": a real tap on a
+     touch device fires an emulated "mouseenter" (which shows the card
+     and sets "owner") *before* "click", so gating the tap purely on
+     "owner !== marker" never fires (review finding H2) — the first tap
+     would already own the card by the time click ran, and so would
+     follow the link instead of only opening it. */
+  var tappedMarker = null;
 
   function hide() {
+    tappedMarker = null;
     if (card) {
+      if (owner) {
+        owner.removeAttribute("aria-expanded");
+        owner.removeAttribute("aria-describedby");
+      }
       card.remove();
       card = null;
       owner = null;
@@ -40,17 +59,12 @@
     if (owner === marker) {
       return;
     }
-    hide();
 
     var id = decodeURIComponent(marker.getAttribute("href").slice(1));
     var note = document.getElementById(id);
     if (!note) {
       return;
     }
-
-    card = document.createElement("div");
-    card.className = "fn-popover";
-    card.setAttribute("role", "note");
     /* Only the definition's own content (paragraphs, lists): skip the
        "[18]" label and the "(1,2,3)" back-reference list, so a
        many-times-cited footnote still shows a short, readable card. */
@@ -58,26 +72,48 @@
     if (!content.length) {
       return;
     }
+
+    hide();
+
+    cardSeq += 1;
+    card = document.createElement("div");
+    card.className = "fn-popover";
+    card.id = "fn-popover-" + cardSeq;
+    card.setAttribute("role", "tooltip");
+    card.setAttribute("tabindex", "-1");
     content.forEach(function (node) {
       card.appendChild(node.cloneNode(true));
     });
-    document.body.appendChild(card);
+    marker.insertAdjacentElement("afterend", card);
+    marker.setAttribute("aria-expanded", "true");
+    marker.setAttribute("aria-describedby", card.id);
 
+    // The card is "position: fixed" (see custom.css), so every measure
+    // here is viewport-relative: no window.scrollX/scrollY term, and
+    // this stays correct however deep in the DOM the card ends up
+    // (inside a table cell or an open {dropdown}, both of which can be
+    // — or sit inside — a positioned or overflow-clipping ancestor).
     var rect = marker.getBoundingClientRect();
     var width = Math.min(420, window.innerWidth - 16);
-    var left = Math.max(
-      8,
-      Math.min(
-        rect.left + window.scrollX - 20,
-        window.scrollX + window.innerWidth - width - 8
-      )
-    );
+    var left = Math.max(8, Math.min(rect.left - 20, window.innerWidth - width - 8));
     card.style.width = width + "px";
     card.style.left = left + "px";
-    card.style.top = rect.bottom + window.scrollY + 6 + "px";
+
+    /* Below the marker by default; flip above it when there is not
+       room below in the viewport (review finding L5), using the
+       card's real height now that it is in the document. */
+    var below = rect.bottom + 6;
+    var cardHeight = card.offsetHeight;
+    if (rect.bottom + cardHeight + 6 > window.innerHeight && rect.top - cardHeight - 6 > 0) {
+      card.style.top = rect.top - cardHeight - 6 + "px";
+    } else {
+      card.style.top = below + "px";
+    }
 
     card.addEventListener("mouseenter", keep);
     card.addEventListener("mouseleave", hideSoon);
+    card.addEventListener("focusin", keep);
+    card.addEventListener("focusout", hideSoon);
     owner = marker;
   }
 
@@ -92,13 +128,28 @@
         show(marker);
       });
       marker.addEventListener("blur", hideSoon);
+
+      /* Touch: a pointerdown with pointerType "touch" is the actual
+         tap, independent of any emulated mouse events the browser
+         also sends for it. First tap opens the card and is prevented
+         from navigating; the second tap on the same marker navigates
+         (state resets). */
+      marker.addEventListener("pointerdown", function (event) {
+        if (event.pointerType !== "touch") {
+          return;
+        }
+        if (tappedMarker === marker) {
+          tappedMarker = null; // second tap: let the click through
+          return;
+        }
+        tappedMarker = marker;
+        show(marker);
+      });
       marker.addEventListener("click", function (event) {
-        /* Touch device: the first tap previews, the second tap (once
-           this marker already owns the open card) follows the link
-           as it would without this script. */
-        if (window.matchMedia("(hover: none)").matches && owner !== marker) {
+        if (tappedMarker === marker) {
+          // A pointerdown just opened the card for this marker: this
+          // click is the same first tap, not a second one. Consume it.
           event.preventDefault();
-          show(marker);
         }
       });
     });

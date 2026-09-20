@@ -6,7 +6,7 @@ report-B.md section 3 item 4).
 
 Compares each page under ``docs/`` (outside ``docs/plans``) between a base
 git revision and the working tree, and reports, per page, anything **LOST**
-or **ADDED** in six categories:
+or **ADDED** in eight categories:
 
 1. ``markers`` — the multiset of footnote markers (``[^label]``) in the
    body, and ``footnotes`` — the set of footnote definitions, each with its
@@ -15,29 +15,53 @@ or **ADDED** in six categories:
    points, thin-space/normal-space/comma thousands separators, ``x10``
    exponents and Unicode superscripts, signs and ranges. Only whitespace is
    normalised; nothing else about a number is touched or interpreted.
-3. ``quotes`` — the multiset of quoted strings (straight ``"..."`` and
-   curly “...”), whitespace-normalised.
-4. ``refs`` — the multiset of ``{ref}``/``{term}``/``{doc}`` targets, and
+3. ``number_order`` — per table row, list item or (heuristically split)
+   sentence that contains two or more numbers, the *ordered* tuple of
+   those numbers. ``numbers`` alone is a multiset and cannot tell
+   "6 of 171" from "171 of 6" apart — both are the same two numbers;
+   comparing the order within the unit that holds them both catches that
+   swap. It cannot catch a swap *between* two units (a number moved from
+   one table row or claim to another): see ``extract_number_order``'s
+   docstring and "Checking a readability edit" in agent-briefs.md for
+   that and other limitations.
+4. ``quotes`` — the multiset of quoted strings (straight ``"..."`` and
+   curly “...”), matched against the whitespace-*flattened* page so a
+   quotation that spans a hard-wrapped source line is still seen as one
+   run, then whitespace-normalised for comparison like everything else.
+5. ``refs`` — the multiset of ``{ref}``/``{term}``/``{doc}`` targets, and
    ``urls`` — the multiset of URLs written anywhere on the page.
-5. ``hedges`` — counts of the hedge phrases in HEDGES below (e.g. "about",
+6. ``hedges`` — counts of the hedge phrases in HEDGES below (e.g. "about",
    "typical", "our reading", "~").
-6. The text inside every ``{dropdown}`` block, which must be unchanged
+7. The text inside every ``{dropdown}`` block, which must be unchanged
    apart from whitespace and list/table markup, unless
-   ``--allow-dropdown-edits`` is given. This is not one of the seven
+   ``--allow-dropdown-edits`` is given. This is not one of the eight
    categories above and has no ``--allow-added`` equivalent: a dropdown
    either passes unedited, or the whole check is disabled for the run.
 
 A **loss** in any category is always an error. An **addition** is an error
 unless its category is named in ``--allow-added`` (comma-separated); every
-addition is printed either way, so the coordinator can see what changed
-even when it was declared. Exit status is 1 if any undeclared difference
-(a loss, or an addition outside ``--allow-added``, or a changed dropdown)
-was found on any checked page.
+addition is printed either way (a declared one tagged "(declared)"), so
+the coordinator can see what changed even when it was permitted. Exit
+status is 1 if any undeclared difference (a loss, or an addition outside
+``--allow-added``, or a changed dropdown) was found on any checked page.
+
+**This check is necessary, not sufficient.** It cannot see a number moved
+between two table cells or two claims (only reordered *within* one unit,
+via ``number_order``), a footnote marker moved from one claim to another
+where both claims already cite something, or new prose added that
+introduces no number, quotation, marker or hedge at all — all multisets
+and per-unit comparisons by construction, with no notion of "the same
+claim" across a move. A page with zero reported lines is not proof the
+edit is safe: the reviewer still reads the diff itself, the way
+report-B.md section 3 item 4 originally asked. Any ``--allow-added``
+category used on a page should be named, with the reason, in the branch's
+progress file, since it is exactly where an unnoticed bad addition (a
+"weaker model completing a table" with an invented figure) can hide.
 
 Usage::
 
     uv run python tools/check_preserved.py [--base main] \\
-        [--allow-added markers,footnotes,numbers,quotes,refs,urls,hedges] \\
+        [--allow-added markers,footnotes,numbers,number_order,quotes,refs,urls,hedges] \\
         [--allow-dropdown-edits] [paths ...]
 
 With no ``paths``, every ``docs/**/*.md`` file outside ``docs/plans`` that
@@ -49,10 +73,12 @@ has nothing to compare against.
 
 Run ``uv run python tools/check_preserved.py --selftest`` to run the
 built-in self-tests (touches no files, needs no git history):
-paragraph splits, a sentence moved between sections, and prose turned into
-a table with the same values all pass; a dropped footnote marker, a
-changed number, a dropped hedge, an altered quotation and text moved out
-of a dropdown all fail.
+paragraph splits, a sentence moved between sections, a re-wrapped
+paragraph whose quotation now crosses a different line break, and prose
+turned into a table with the same values all pass; a dropped footnote
+marker, a changed number, two numbers swapped in place ("6 of 171" to
+"171 of 6"), a dropped hedge, an altered quotation (including one that
+spans a source line break), and text moved out of a dropdown all fail.
 """
 
 from __future__ import annotations
@@ -80,7 +106,7 @@ DEF_RE = re.compile(
 MARKER_RE = re.compile(r"\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\](?!:)")
 ROLE_RE = re.compile(r"\{(?:ref|term|doc)\}`([^`]+)`")
 URL_RE = re.compile(r"https?://[^\s<>\)\]\"'`]+")
-QUOTE_RE = re.compile(r'"([^"\n]{1,200})"|“([^”\n]{1,200})”')
+QUOTE_RE = re.compile(r'"([^"\n]{1,400})"|“([^”\n]{1,400})”')
 
 _SIGN = r"[+\-−±]"
 _SUP_DIGITS = "⁰¹²³⁴⁵⁶⁷⁸⁹"
@@ -113,7 +139,17 @@ def _hedge_pattern(phrase: str) -> re.Pattern:
 
 HEDGE_PATTERNS = [(h, _hedge_pattern(h)) for h in HEDGES]
 
-CATEGORIES = ["markers", "footnotes", "numbers", "quotes", "refs", "urls", "hedges"]
+CATEGORIES = [
+    "markers", "footnotes", "numbers", "quotes", "refs", "urls", "hedges",
+    "number_order",
+]
+
+# A line that opens a list item ("* ", "- ", "1. ") or a table row ("| ").
+_LIST_ITEM_RE = re.compile(r"^(?:[*-]|\d+[.)])\s+")
+_TABLE_ROW_RE = re.compile(r"^\|")
+# A rough sentence boundary: end punctuation followed by a capital, a
+# digit, or an opening quote. Heuristic only — see extract_number_order.
+_SENTENCE_SPLIT_RE = re.compile(r'(?<=[.!?])\s+(?=[A-Z0-9"“])')
 
 
 def normalize_ws(s: str) -> str:
@@ -128,14 +164,108 @@ def role_target(content: str) -> str:
     return content
 
 
-def extract_numbers(text: str) -> Counter:
+def _number_token_spans(text: str) -> list[tuple[int, int, str]]:
     spans: list[tuple[int, int, str]] = []
     for m in NUMBER_RE.finditer(text):
         spans.append((m.start(), m.end(), m.group(0)))
     for m in SUP_STANDALONE_RE.finditer(text):
         if not any(m.start() < e and m.end() > s for s, e, _ in spans):
             spans.append((m.start(), m.end(), m.group(0)))
-    return Counter(normalize_ws(t) for _, _, t in spans if normalize_ws(t))
+    spans.sort(key=lambda t: t[0])
+    return spans
+
+
+def _number_tokens_ordered(text: str) -> list[str]:
+    """Numeric tokens in ``text``, left to right, whitespace-normalised."""
+    return [normalize_ws(t) for _, _, t in _number_token_spans(text) if normalize_ws(t)]
+
+
+def extract_numbers(text: str) -> Counter:
+    return Counter(_number_tokens_ordered(text))
+
+
+def extract_number_order(text: str) -> Counter:
+    """Counter of ordered numeric-token tuples, one per "unit" (a table
+    row, a list item, or a rough sentence) that carries two or more
+    numbers.
+
+    This is the check report-B.md section 3 item 4 and the coordinator's
+    2026-09-20 follow-up review both asked for: the plain multiset in
+    ``numbers`` cannot tell "6 of 171" from "171 of 6" apart, because it
+    is the same two numbers either way. Comparing the ordered sequence
+    *within a unit that already held both numbers* catches exactly that
+    swap, at the cost of two things worth knowing:
+
+    * **Sentence and list-item boundaries are found heuristically**
+      (a regex on end punctuation, or a leading list/table marker), not
+      parsed. An unusual sentence may be split wrongly; this only
+      widens or narrows what counts as "together", it does not stop the
+      table-row case from working.
+    * **It cannot see a swap *between* two units** — two numbers
+      exchanged between adjacent table rows, or a marker moved from one
+      claim to the next, produce no ordered-tuple difference at all,
+      because each unit's own internal order is unchanged. Nor can it
+      see prose added that introduces no number. Report-B.md section 3
+      item 4's actual worry ("a weaker model completing a table") is
+      only partly covered: a same-row transposition is caught; a
+      cross-row substitution is not. The reviewer still reads the diff;
+      see "Checking a readability edit" in agent-briefs.md.
+    """
+    tuples: list[tuple[str, ...]] = []
+    paragraph: list[str] = []
+
+    def add_unit(unit_text: str) -> None:
+        nums = _number_tokens_ordered(unit_text)
+        if len(nums) >= 2:
+            tuples.append(tuple(nums))
+
+    def add_prose(text_block: str) -> None:
+        # A list item can itself hold several sentences (e.g. a reading-
+        # list bullet); split it the same way a paragraph is, so a
+        # number in one sentence is not lumped together with a number
+        # in the next merely because they share one bullet.
+        for sentence in _SENTENCE_SPLIT_RE.split(text_block.strip()):
+            add_unit(sentence)
+
+    def flush_paragraph() -> None:
+        if not paragraph:
+            return
+        para = " ".join(paragraph)
+        paragraph.clear()
+        add_prose(para)
+
+    lines = text.split("\n")
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+        if _TABLE_ROW_RE.match(stripped):
+            flush_paragraph()
+            add_unit(line)
+            i += 1
+            continue
+        if _LIST_ITEM_RE.match(stripped):
+            flush_paragraph()
+            item_lines = [line]
+            i += 1
+            while (
+                i < len(lines)
+                and lines[i].strip()
+                and not _LIST_ITEM_RE.match(lines[i].strip())
+                and not _TABLE_ROW_RE.match(lines[i].strip())
+            ):
+                item_lines.append(lines[i])
+                i += 1
+            add_prose(" ".join(item_lines))
+            continue
+        if not stripped:
+            flush_paragraph()
+            i += 1
+            continue
+        paragraph.append(line)
+        i += 1
+    flush_paragraph()
+    return Counter(tuples)
 
 
 def extract_quotes(text: str) -> Counter:
@@ -175,8 +305,19 @@ def extract_all(text: str) -> dict[str, Counter]:
     masked = MARKER_RE.sub(" ", masked)
 
     numbers = extract_numbers(masked)
-    quotes = extract_quotes(masked)
+    # Flatten before matching (review finding H1): the repository's
+    # markdown is hard-wrapped, so a quotation frequently spans a source
+    # line break. QUOTE_RE forbids "\n" inside a match, so applied to the
+    # raw text it silently misses every such quotation (measured: ~29% of
+    # all quotations on this repository's pages) — invisible to a wording
+    # change inside one, and it flags a false LOST/ADDED pair whenever a
+    # harmless re-wrap moves where a quotation happens to cross a line.
+    # Flattening first (as the hand recipe in readability-guide.md §7
+    # already does) fixes both: a wrapped quotation is matched as one
+    # run, and re-wrapping it changes no character of that run.
+    quotes = extract_quotes(normalize_ws(masked))
     hedges = extract_hedges(masked)
+    number_order = extract_number_order(masked)
     footnotes = Counter(f"[^{label}]: {text}" for label, text in defs.items())
 
     return {
@@ -187,6 +328,7 @@ def extract_all(text: str) -> dict[str, Counter]:
         "refs": refs,
         "urls": urls,
         "hedges": hedges,
+        "number_order": number_order,
     }
 
 
@@ -235,6 +377,12 @@ def compare_dropdowns(old_text: str, new_text: str) -> list[str]:
 # Diffing and reporting.
 
 
+# A near-URL or a whole footnote definition truncated at 100 characters
+# often differs only after the cut, making the two printed lines look
+# identical (review finding L10); those categories get a longer limit.
+_DISPLAY_LIMIT = {"footnotes": 300, "urls": 300}
+
+
 def format_counter(c: Counter, limit: int = 100) -> str:
     def short(s: str) -> str:
         return s if len(s) <= limit else s[: limit - 1] + "…"
@@ -259,10 +407,13 @@ def diff_page(
     for cat in CATEGORIES:
         lost = old[cat] - new[cat]
         added = new[cat] - old[cat]
+        limit = _DISPLAY_LIMIT.get(cat, 100)
         if lost:
-            results.append((True, f"LOST {cat}: {format_counter(lost)}"))
+            results.append((True, f"LOST {cat}: {format_counter(lost, limit)}"))
         if added:
-            results.append((cat not in allowed, f"ADDED {cat}: {format_counter(added)}"))
+            is_fail = cat not in allowed
+            tag = "ADDED" if is_fail else "ADDED (declared)"
+            results.append((is_fail, f"{tag} {cat}: {format_counter(added, limit)}"))
     if not allow_dropdown_edits:
         for msg in compare_dropdowns(old_text, new_text):
             results.append((True, msg))
@@ -355,6 +506,14 @@ def selftest() -> int:
         True,
     )
     case(
+        "a re-wrapped paragraph whose quotation crosses a different line break",
+        "# P\n\nA source says \"first line\nsecond line\" here.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nA source says \"first\nline second line\" here.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
+        True,
+    )
+    case(
         "prose converted to a table with the same values",
         "# P\n\n"
         "* **ASML.** Its first KrF stepper, the PAS 5000/70 of 1991, had "
@@ -394,6 +553,20 @@ def selftest() -> int:
         "an altered quotation",
         '# P\n\nThe datasheet says "double-hump profile".[^a]\n\n[^a]: Source. <https://example.com/a>\n',
         '# P\n\nThe datasheet says "double hump profile".[^a]\n\n[^a]: Source. <https://example.com/a>\n',
+        False,
+    )
+    case(
+        "a changed word inside a quotation that spans a source line break",
+        "# P\n\nA source says \"a depth d1 within a range\nof, for example, 3000-4000 Å\".[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nA source says \"a depth d1 within a range\nof, for instance, 3000-4000 Å\".[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
+        False,
+    )
+    case(
+        "two numbers swapped in place",
+        "# P\n\n| Step number | 6 of 171[^a] |\n\n[^a]: Source. <https://example.com/a>\n",
+        "# P\n\n| Step number | 171 of 6[^a] |\n\n[^a]: Source. <https://example.com/a>\n",
         False,
     )
     case(
@@ -483,7 +656,12 @@ def main() -> int:
     checked = 0
     bad = 0
     for page in pages:
-        rel = page.relative_to(ROOT).as_posix()
+        try:
+            rel = page.relative_to(ROOT).as_posix()
+        except ValueError:
+            print(f"{page}: not inside the repository ({ROOT}); skipped", file=sys.stderr)
+            bad += 1
+            continue
         old_text = get_base_text(args.base, rel)
         if old_text is None:
             print(f"{rel}: new file (not present at {args.base}); skipped")
